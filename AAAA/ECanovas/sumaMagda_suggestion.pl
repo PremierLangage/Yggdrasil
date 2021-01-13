@@ -58,7 +58,7 @@ if mathinput==solu :
     feedback = "Bonne réponse !"
 else:
     score = 0
-    feedback = "Mauvaise réponse !"
+    feedback = "Mauvaise réponse, la réponse était : "+str(solu)
 ==
 
 rappels==#|markdown|
