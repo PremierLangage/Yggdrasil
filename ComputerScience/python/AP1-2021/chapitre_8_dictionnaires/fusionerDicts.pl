@@ -9,6 +9,15 @@ title= Fusionner deux dictionnaires
 
 text==
 Ecrire une fonction ``fusionnerDicts(dict1,dict2)``. Elle fusionne les deux dictionnaires (dict1 et dict2) dans un dictionnaire et puis le retourne.
+
+Voici un exemple.
+``>>> dict1={4: 'X', 2: 'Y', 1: 'Z'}``
+
+``>>> dict2={6: 'X', 2: 'Y', 1: 'Z'}``
+
+``>>> fusionnerDicts(dict1,dict2)``
+
+``{3: 'X', 2: 'Y', 1: 'Z', 4: 'X'}``
 ==
 
 tag=dictionary
