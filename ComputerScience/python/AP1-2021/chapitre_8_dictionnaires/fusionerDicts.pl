@@ -33,8 +33,10 @@ before==
 ==
 
 pltest0==
->>> dict1={3: 'X', 2: 'Y', 1: 'Z'}
->>> dict2={4: 'X', 2: 'Y', 1: 'Z'}
->>> fusionnerDicts(dict1,dict2) == {3: 'X', 2: 'Y', 1: 'Z', 4: 'X'}
+>>> dict1={3: 'X', 2: 'Y', 1: 'Z'}  # 
+>>> fusionnerDicts(dict1, {}) == {3: 'X', 2: 'Y', 1: 'Z'}  # Test Avec Vide
+True
+>>> dict2={4: 'X', 2: 'Y', 1: 'Z'}  # 
+>>> fusionnerDicts(dict1,dict2) == {3: 'X', 2: 'Y', 1: 'Z', 4: 'X'}  # Test Non Vide
 True
 ==
