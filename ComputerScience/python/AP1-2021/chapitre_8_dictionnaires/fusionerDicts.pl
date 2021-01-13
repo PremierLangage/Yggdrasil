@@ -17,7 +17,7 @@ Voici un exemple.
 
 ``>>> fusionnerDicts(dict1,dict2)``
 
-``{3: 'X', 2: 'Y', 1: 'Z', 4: 'X'}``
+``{4: 'X', 2: 'Y', 1: 'Z', 6: 'X'}``
 ==
 
 tag=dictionary
