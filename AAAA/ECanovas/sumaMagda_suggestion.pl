@@ -9,13 +9,19 @@ title= Somme finie
 
 text==#|markdown|
 
-Calculer la somme $! A= {{somm}} !$
-<br/>
-$!{{solu|latex}}!$
-<br/>
-$!{{f|latex}}!$
-<br/>
-{{feedback}}
+Calculer la somme $% A= {{somm}} %$
+
+<br>
+
+$% {{solu|latex}} %$
+
+<br>
+
+$% {{f|latex}}%$
+
+<br>
+
+{{rappels}}
 ==
 
 before==#|python|
@@ -29,14 +35,14 @@ c= randint(0,3)
 d= randint(1,9)
 
 if c==1 :
- c=""
- somm="\sum_{k={{a}}}^{ {{b}}} {{d}}k"
- f="k"
- if d>1:
-  f=str(d)+"*k"
+    c=""
+    somm="\sum_{k={{a}}}^{ {{b}}} {{d}}k"
+    f="k"
+    if d>1:
+        f=str(d)+"*k"
 else:
- somm="\sum_{k={{a}}}^{ {{b}}} {{d}}k^{{c}}"
- f=str(d)+'*k**'+str(c)
+    somm="\sum_{k={{a}}}^{ {{b}}} {{d}}k^{{c}}"
+    f=str(d)+'*k**'+str(c)
 
 solu=summation(f, (i, a, b))
 ==
@@ -52,10 +58,10 @@ if mathinput==solu :
     feedback = "Bonne réponse !"
 else:
     score = 0
- feedback = "Mauvaise réponse !"
+    feedback = "Mauvaise réponse !"
 ==
 
-rappels==
+rappels==#|markdown|
 On rappelle que si $!n \ge 1!$ on a
 <ul>
 <li>$!\sum_k=1^n 1 = n,!$</li>
