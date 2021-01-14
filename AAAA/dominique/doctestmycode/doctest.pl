@@ -1,7 +1,7 @@
 
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
+builder =@ /builder/none.py
 
 editor =: CodeEditor
 editor.theme = dark
@@ -21,7 +21,7 @@ form==
 {{ editor|component }}
 ==
 
-before==
+evaluator==
 import doctest
 import io
 import sys
