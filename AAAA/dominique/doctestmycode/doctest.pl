@@ -25,11 +25,14 @@ evaluator==
 import doctest
 import io
 import sys
-import code
-    
+
+with open("student.py","w") as f:
+    print(editor.code,file=f)
+
+
 oldout=sys.stdout 
 sys.stdout=io.StringIO()
-doctest.testmod(editor.code)
+doctest.testmod("student.py")
 text= sys.stdout.getvalue()
 sys.stdout = oldout 
 
