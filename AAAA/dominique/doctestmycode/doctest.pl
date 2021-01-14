@@ -28,11 +28,11 @@ import sys
 
 with open("student.py","w") as f:
     print(editor.code,file=f)
-
+import student 
 
 oldout=sys.stdout 
 sys.stdout=io.StringIO()
-doctest.testmod("student.py")
+doctest.testmod(student)
 text= sys.stdout.getvalue()
 sys.stdout = oldout 
 
