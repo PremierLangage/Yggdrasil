@@ -52,7 +52,7 @@ failurecount,testscount = doctest.testmod(student,name="Votre code")
 sortie= sys.stdout.getvalue()
 sys.stdout = oldout 
 
-if testcount == 0:
+if testscount == 0:
     grade = (0, "il n'y a pas de doctest dans votre fichier.")
 elif sortie :
     grade = (100, f"Test result \n<pre>"+sortie+"\n</pre>")
