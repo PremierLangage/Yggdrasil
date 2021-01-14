@@ -48,7 +48,7 @@ import student
 
 oldout=sys.stdout 
 sys.stdout=io.StringIO()
-doctest.testmod(student)
+doctest.testmod(student,name="Votre code")
 text= sys.stdout.getvalue()
 sys.stdout = oldout 
 
