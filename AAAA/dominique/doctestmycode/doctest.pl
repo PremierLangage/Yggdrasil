@@ -19,6 +19,7 @@ Saisissez dans l'éditeur un code avec un doctest.
 L'évaluation vous donnera le resulta du test.
 
 exemple de code :
+```
 """# n'oublier pas une chaine multiligne est inspectée par doctest pour y trouver des tests   
 
 >>> import math # Ici le test c'est pour savoir si il y a l'import math sur PlaTon :)   
@@ -28,6 +29,7 @@ exemple de code :
 3   
 
 """   
+```
 
 Biensur ce test vas vous retourner un test incorrect. 
 Quand cela ce passe bien rien n'est affiché !!!! 
