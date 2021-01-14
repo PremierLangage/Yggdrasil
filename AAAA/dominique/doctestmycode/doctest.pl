@@ -52,8 +52,8 @@ doctest.testmod(student,name="Votre code")
 text= sys.stdout.getvalue()
 sys.stdout = oldout 
 
-#grade = (100, f"Test result\n<pre>"+text+"\n</pre>")
-grade=(100,"-")
+grade = (100, f"Test result \n<pre>"+text+"\n</pre>")
+#grade=(100,"-")
 
 ==
 
