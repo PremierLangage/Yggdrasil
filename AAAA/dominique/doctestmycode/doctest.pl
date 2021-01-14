@@ -7,7 +7,17 @@ editor =: CodeEditor
 editor.theme = dark
 editor.language = python
 editor.code ==
-# write your code here
+"""# n'oublier pas une chaine multiligne est inspectée par doctest pour y trouver des tests   
+>>> import math # Ici le test c'est pour savoir si il y a l'import math sur PlaTon :)   
+>>> math.pi   
+3   
+>>> f(3)
+4
+"""
+
+def f(n):
+    return n+1
+
 ==
 
 
@@ -20,15 +30,7 @@ L'évaluation vous donnera le resulta du test.
 
 exemple de code :
 ```
-"""# n'oublier pas une chaine multiligne est inspectée par doctest pour y trouver des tests   
-
->>> import math # Ici le test c'est pour savoir si il y a l'import math sur PlaTon :)   
-
->>> math.pi   
-
-3   
-
-"""   
+ 
 ```
 
 Biensur ce test vas vous retourner un test incorrect. 
