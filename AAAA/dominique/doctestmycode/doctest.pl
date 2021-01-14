@@ -28,12 +28,7 @@ text==
 Saisissez dans l'éditeur un code avec un doctest.
 L'évaluation vous donnera le resulta du test.
 
-exemple de code :
-```
- 
-```
-
-Biensur ce test vas vous retourner un test incorrect. 
+l'exemple de code dans l'éditeur vas vous retourner un test incorrect (pi != 3). 
 Quand cela ce passe bien rien n'est affiché !!!! 
 
 ==
@@ -57,7 +52,7 @@ doctest.testmod(student)
 text= sys.stdout.getvalue()
 sys.stdout = oldout 
 
-grade = (100, f"Test result\n"+text)
+grade = (100, f"Test result\n<pre>"+text+"\n</pre>")
 
 ==
 
