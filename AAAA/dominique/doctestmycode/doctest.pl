@@ -26,9 +26,9 @@ title = Tester votre code
 
 text==
 Saisissez dans l'éditeur un code avec un doctest.
-L'évaluation vous donnera le resulta du test.
+L'évaluation vous donnera le résultat du test.
 
-l'exemple de code dans l'éditeur vas vous retourner un test incorrect (pi != 3). 
+L'exemple de code dans l'éditeur vas vous retourner un test incorrect (pi != 3). 
 Quand cela ce passe bien rien n'est affiché !!!! 
 
 ==
