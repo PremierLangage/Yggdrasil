@@ -57,7 +57,7 @@ if testscount == 0:
 elif sortie :
     grade = (100, f"Test result \n<pre>"+sortie+"\n</pre>")
 else:
-    grade = (100,f" Bravo vos tests {testscount} sont tous passé.")
+    grade = (100,f" Bravo vos {testscount} tests sont tous passés.")
 
 ==
 
