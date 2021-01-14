@@ -48,12 +48,16 @@ import student
 
 oldout=sys.stdout 
 sys.stdout=io.StringIO()
-doctest.testmod(student,name="Votre code")
+failurecount,testscount = doctest.testmod(student,name="Votre code")
 sortie= sys.stdout.getvalue()
 sys.stdout = oldout 
 
-grade = (100, f"Test result \n<pre>"+sortie+"\n</pre>")
-#grade=(100,"-")
+if testcount == 0:
+    grade = (0, "il n'y a pas de doctest dans votre fichier.")
+elif sortie :
+    grade = (100, f"Test result \n<pre>"+sortie+"\n</pre>")
+else:
+    grade = (100,f" Bravo vos tests {testcount} sont tous passé.")
 
 ==
 
