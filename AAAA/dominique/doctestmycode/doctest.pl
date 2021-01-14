@@ -49,10 +49,10 @@ import student
 oldout=sys.stdout 
 sys.stdout=io.StringIO()
 doctest.testmod(student,name="Votre code")
-text= sys.stdout.getvalue()
+sortie= sys.stdout.getvalue()
 sys.stdout = oldout 
 
-grade = (100, f"Test result \n<pre>"+text+"\n</pre>")
+grade = (100, f"Test result \n<pre>"+sortie+"\n</pre>")
 #grade=(100,"-")
 
 ==
