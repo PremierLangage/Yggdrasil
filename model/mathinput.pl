@@ -18,6 +18,11 @@ settings.feedback = rightwrong
 
 settings.maxattempt % 1
 
+evaluator ==
+score, error = eval_expr(input.value, sol)
+feedback = message[error]
+==
+
 
 
 
