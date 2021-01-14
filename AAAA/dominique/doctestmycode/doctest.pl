@@ -29,7 +29,7 @@ import code
     
 oldout=sys.stdout 
 sys.stdout=io.StringIO()
-doctest.testmod(code)
+doctest.testmod(editor.code)
 text= sys.stdout.getvalue()
 sys.stdout = oldout 
 
