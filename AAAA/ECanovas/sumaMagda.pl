@@ -6,7 +6,7 @@ param.boundtype % 1
 
 text==
 
-Calculer la somme $! A= \sum_{k=a}^b dk^c !$
+Calculer la somme $! A= \sum_{k={{a}}}^{{b}} dk^c !$
 
 <br/>
 {{feedback}}
