@@ -7,7 +7,7 @@ before ==
 v=Symbol('v')
 n=randitem([Symbol('n'),Symbol('m'),Symbol('p')])
 
-i, k, a = symbols('i k a', integer=True)
+i, k  = symbols('i k', integer=True)
 
 niveau=param['boundtype']
 if niveau==1:
