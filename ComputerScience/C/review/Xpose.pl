@@ -190,18 +190,18 @@ form==#|html|
   <div style="margin-left:15%; margin-right:15%;">
   Ce vendredi 15 janvier 2021 :<br>
   <ul>
-    <li>Sujet1 : elève 1, élève 2, élève 3</li>
-    <li>Sujet2 : elève 1, élève 2, élève 3</li>
-    <li>Sujet3 : elève 1, élève 2, élève 3</li>
-    <li>Sujet4 : elève 1, élève 2, élève 3</li>
-    <li>Sujet5 : elève 1, élève 2, élève 3</li>
-    <li>Sujet6 : elève 1, élève 2, élève 3</li>
-    <li>Sujet7 : elève 1, élève 2, élève 3</li>
-    <li>Sujet8 : elève 1, élève 2, élève 3</li>
-    <li>Sujet9 : elève 1, élève 2, élève 3</li>
-    <li>Sujet10 : elève 1, élève 2, élève 3</li>
-    <li>Sujet11 : elève 1, élève 2, élève 3</li>
-    <li>Sujet12 : elève 1, élève 2, élève 3</li>
+    <li>Nicolas FAU, Kevin MARTIN : NodeJS is dead, long live Deno ?</li>
+    <li>Vincent AGULLO, Guillaume CAU, Emilie MARTI : Java, Scala, Kotlin</li>
+    <li>Sacha OUZIEL, Lisa MECHOUK, Yohann JOLIVET, Block-chain : Quand utiliser et quand s'en passer ?</li>
+    <li>Jonathan CRETE, Judicaël KOFFI, Mélissa DA COSTA : Openshift</li>
+    <li>Kylian, Raphaël, Dylan : SDWAN vs MPLS : le fight !</li>
+    <li>Christelle, Leo, Salim : GraphQL vs REST</li>
+    <li>Rémi, Tanguy, Yoann S : Microservices: Simple buzzwork ou concept utile ?</li>
+    <li>Julien, Guillaume M : Voiture 1: On en est où des techniques de prises de vue à 360 degrés ?</li>
+    <li>Karim, Abdou, Benoît : Quarkus vs Spring Boot</li>
+    <li>Jean-Philippe WINCKLER, Nathan LEMOINE, Anaïs DESCOMBES : Industrie 4.0 : que faut-il en retenir de pertinent pour les informaticiens ?</li>
+    <li>Altan, Nils, Nicolas B : IA : buzz word pour “algorithmes malins” ou théories/techniques révolutionnaires?</li>
+    <li>Ludovic SOUSTRE, Axel DURAND, Chahinaz DINDANE : Pourquoi GraphQl fait un tabac ?</li>
   </ul>
   </div>
   <div style="margin-left:15%; margin-right:15%;">
