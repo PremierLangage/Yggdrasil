@@ -23,6 +23,13 @@ elif niveau==2:
     c= randint(0,3)
     d= randint(1,9)
     f= d*k**c
+elif niveau==3.1:
+    #a entre 2 et 5, b  =n-1, n, n+1, 2n-1, 2n+1, n^2, n^2-1, n^2+1,  c entre 0 et 3, d=1,..9
+    a=randitem([2..5])
+    b=randitem([n+1,n-1,n,én-1,2n+1,n^2, n^2-1, n^2+1])
+    c= randint(0,3)
+    d= randint(1,9)
+    f= d*k**c
 #n0=int(max([0,max(solve(a-b,n))]))
 S = Sum(f, (k, a, b)).doit()
 Ssol= simplify(S)
