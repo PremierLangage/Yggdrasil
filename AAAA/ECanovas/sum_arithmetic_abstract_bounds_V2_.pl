@@ -5,7 +5,10 @@ title = Somme d'entiers successifs
 before ==
 v=randitem([Symbol('i'),Symbol('j'),Symbol('k')])
 n=randitem([Symbol('n'),Symbol('m'),Symbol('p')])
-if param['boundtype']==1:
+
+niveau=param[]'boundtype']
+if niveau==1:
+    # a = 1 ,   b= n-1,  n+1, c= 0,1,2,3, d =1,...., 9
     a=randint(1,4)
     b0=randint(-4,4,[0])
     b=n+b0
