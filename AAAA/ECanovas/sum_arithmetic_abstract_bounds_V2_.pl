@@ -1,4 +1,4 @@
-extends = Mathematics/exercices/algebra/finitesums/sum_.pl
+extends = home/Mathematics/exercices/algebra/finitesums/sum_.pl
 
 title = Somme d'entiers successifs
 
