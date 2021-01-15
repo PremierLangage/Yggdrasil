@@ -22,7 +22,7 @@ elif param['boundtype']==2:
     b=bn+b0
 n0=int(max([0,max(solve(a-b,n))]))
 S = Sum(v, (v, a, b))
-sol=simplify((b-a+1)*(a+b)/2)
+sol=S
 ==
 
 text ==
