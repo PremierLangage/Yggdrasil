@@ -19,9 +19,6 @@ $% {{solu|latex}} %$
 
 $% {{f|latex}}%$
 
-<br>
-
-{{rappels}}
 ==
 
 before==#|python|
