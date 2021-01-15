@@ -35,7 +35,7 @@ elif niveau==3.2:
     # cas 3.2.1  a, entre 10 et 20,  b  =n-1, n, n+1, 2n-1, 2n+1, n^2, n^2-1, n^2+1, 
     # ou
     # cas 3.2.2  a,=n-1, n, n+1 et b = n-1, 2n+1, n^2, n^2-1, n^2+1, ET c entre 1 et 3, d=1,..9
-    an,bn=randitem([(randint(10,20),randitem([n-1,n,n+1,2*n-1,2*n+1,n**2,n**2-1,n**2+1])),
+    a,b=randitem([(randint(10,20),randitem([n-1,n,n+1,2*n-1,2*n+1,n**2,n**2-1,n**2+1])),
                     (randitem([n-1,n,n+1]),randitem([n-1,2*n+1,n**2,n**2-1,n**2+1]))])
     c= randint(1,3)
     d= randint(1,9)
