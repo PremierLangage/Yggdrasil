@@ -2,7 +2,7 @@ extends = sum_arithmetic_abstract_bounds_V2_.pl
 
 title= Somme finie Niveau 1
 
-param.boundtype=1
+param.boundtype % 1
 
 text==
 
