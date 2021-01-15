@@ -161,8 +161,9 @@ text==#|html|
 
 Pas de papier cette année! Nous allons économiser (34 + 6)*3 feuilles A4 pour
 les évaluations. En contrepartie, vous devrez chacun, et chaque semaine, envoyer 
-un mail à **nicolas.borie@univ-eiffel.fr** avec les 4 lignes CSV générés par cet utilitaire 
-après chaque présentation et assemblées par vos soins.
+un mail à **nicolas.borie@univ-eiffel.fr** (ou bien en DM discords, c'est bien aussi....) 
+avec les 4 lignes CSV générés par cet utilitaire après chaque présentation et assemblées 
+(juste mettre vos 3 ou 4 lignes ensembles avant de me les donner) par vos soins.
 
 <br>
 
