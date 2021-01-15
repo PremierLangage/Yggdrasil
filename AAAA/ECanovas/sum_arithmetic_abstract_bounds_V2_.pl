@@ -4,10 +4,10 @@ title = Somme d'entiers successifs
 
 before ==
 #v=randitem([Symbol('i'),Symbol('j'),Symbol('k')])
-v=Symbol('v')
+#v=Symbol('v')
 n=randitem([Symbol('n'),Symbol('m'),Symbol('p')])
 
-i, k  = symbols('i k', integer=True)
+k  = symbols('k', integer=True)
 
 niveau=param['boundtype']
 if niveau==1:
