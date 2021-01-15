@@ -4,7 +4,7 @@ title = Somme d'entiers successifs
 
 before ==
 #v=randitem([Symbol('i'),Symbol('j'),Symbol('k')])
-#v=Symbol('v')
+v=Symbol('v')
 n=randitem([Symbol('n'),Symbol('m'),Symbol('p')])
 
 k  = symbols('k', integer=True)
@@ -26,7 +26,7 @@ elif niveau==2:
     b0=randint(-4,4,[0])
     b=bn+b0
 n0=int(max([0,max(solve(a-b,n))]))
-S = Sum(v, (v, a, b))
+S = Sum(1, (v, a, b))
 sol=S
 ==
 
