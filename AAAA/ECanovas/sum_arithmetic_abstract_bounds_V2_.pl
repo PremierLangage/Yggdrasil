@@ -1,4 +1,4 @@
-extends = Yggdrasil/Mathematics/exercises/algebra/finitesums/sum_.pl
+extends = /Mathematics/exercises/algebra/finitesums/sum_.pl
 
 title = Somme d'entiers successifs
 
