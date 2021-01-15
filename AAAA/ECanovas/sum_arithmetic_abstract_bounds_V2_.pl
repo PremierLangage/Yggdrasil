@@ -14,7 +14,7 @@ if niveau==1:
     b=n+b0
     c= randint(0,3)
     d= randint(1,9)
-elif param['boundtype']==2:
+elif niveau==2:
     an,bn=randitem([(n,2*n),(2*n,3*n),(n,3*n),(n,4*n)])
     a0=randint(1,4)
     a=a0+an
