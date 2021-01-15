@@ -1,6 +1,6 @@
 extends = sum_arithmetic_abstract_bounds_V2_.pl
 
-title= Somme finie Niveau 1
+title= Somme finie Niveau 3.1
 
 param.boundtype % 3.1
 
