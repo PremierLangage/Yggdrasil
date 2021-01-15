@@ -188,20 +188,22 @@ form==#|html|
 
 <div class="item active">
   <div style="margin-left:15%; margin-right:15%;">
-  Ce vendredi 15 janvier 2021 :<br>
+  <u>Ce vendredi 15 janvier 2021 :<u><br>
   <ul>
-    <li>Nicolas FAU, Kevin MARTIN : NodeJS is dead, long live Deno ?</li>
-    <li>Vincent AGULLO, Guillaume CAU, Emilie MARTI : Java, Scala, Kotlin</li>
-    <li>Sacha OUZIEL, Lisa MECHOUK, Yohann JOLIVET, Block-chain : Quand utiliser et quand s'en passer ?</li>
-    <li>Jonathan CRETE, Judicaël KOFFI, Mélissa DA COSTA : Openshift</li>
-    <li>Kylian, Raphaël, Dylan : SDWAN vs MPLS : le fight !</li>
-    <li>Christelle, Leo, Salim : GraphQL vs REST</li>
-    <li>Rémi, Tanguy, Yoann S : Microservices: Simple buzzwork ou concept utile ?</li>
-    <li>Julien, Guillaume M : Voiture 1: On en est où des techniques de prises de vue à 360 degrés ?</li>
-    <li>Karim, Abdou, Benoît : Quarkus vs Spring Boot</li>
-    <li>Jean-Philippe WINCKLER, Nathan LEMOINE, Anaïs DESCOMBES : Industrie 4.0 : que faut-il en retenir de pertinent pour les informaticiens ?</li>
-    <li>Altan, Nils, Nicolas B : IA : buzz word pour “algorithmes malins” ou théories/techniques révolutionnaires?</li>
-    <li>Ludovic SOUSTRE, Axel DURAND, Chahinaz DINDANE : Pourquoi GraphQl fait un tabac ?</li>
+    <li>Ludovic SOUSTRE, Axel DURAND, Chahinaz DINDANE : <br><b>Pourquoi GraphQl fait un tabac ?</b></li>
+    <li>Karim, Abdou, Benoît : <br><b>Quarkus vs Spring Boot</b></li>
+    <li>Jonathan CRETE, Judicaël KOFFI, Mélissa DA COSTA : <br><b>Openshift</b></li>
+    <li>Vincent AGULLO, Guillaume CAU, Emilie MARTI : <br><b>Java, Scala, Kotlin</b></li>
+
+    <li>Rémi, Tanguy, Yoann S : <br><b>Microservices: Simple buzzwork ou concept utile ?</b></li>
+    <li>Julien, Guillaume M : <br><b>Voiture 1: Prises de vue à 360 degrés ?</b></li>
+    <li>Jean-Philippe WINCKLER, Nathan LEMOINE, Anaïs DESCOMBES : <br><b>Industrie 4.0</b></li>
+    <li>Altan, Nils, Nicolas B : <br><b>IA : buzz word pour “algorithmes malins” ou théories/techniques révolutionnaires?</b></li>
+
+    <li>Nicolas FAU, Kevin MARTIN : <br><b>NodeJS is dead, long live Deno ?</b></li>
+    <li>Sacha OUZIEL, Lisa MECHOUK, Yohann JOLIVET, Block-chain : <br><b>Quand utiliser et quand s'en passer ?</b></li>
+    <li>Kylian, Raphaël, Dylan : SDWAN vs MPLS : <br><b>le fight !</b></li>
+    <li>Christelle, Leo, Salim : <br><b>GraphQL vs REST</b></li>
   </ul>
   </div>
   <div style="margin-left:15%; margin-right:15%;">
