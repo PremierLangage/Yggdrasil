@@ -6,7 +6,7 @@ param.boundtype % 3.1
 
 text==#|markdown|
 
-Calculer la somme $! A= \sum_{k={{a}}}^{ {{b}}} {{d}}k^{{c}} \footnote{On suppose {{a}}\le {{b}}}!$
+Calculer la somme $! A= \sum_{k={{a}}}^{ {{b}}} {{d}}k^{{c}} \footnote {On suppose {{a}}\le {{b}}}!$
 
 <br/>
 {{feedback}}
