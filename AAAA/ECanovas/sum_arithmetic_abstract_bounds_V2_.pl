@@ -26,7 +26,7 @@ elif niveau==2:
     b0=randint(-4,4,[0])
     b=bn+b0
 n0=int(max([0,max(solve(a-b,n))]))
-#S = Sum(v, (v, a, b))
+S = Sum(v, (v, a, b))
 sol=S
 ==
 
