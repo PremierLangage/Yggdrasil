@@ -18,7 +18,7 @@ if niveau==1:
     b=randitem([n+1,n-1])
     c= randint(0,3)
     d= randint(1,9)
-    v= d*k**c
+    f= d*k**c
 elif niveau==2:
     an,bn=randitem([(n,2*n),(2*n,3*n),(n,3*n),(n,4*n)])
     a0=randint(1,4)
@@ -26,7 +26,7 @@ elif niveau==2:
     b0=randint(-4,4,[0])
     b=bn+b0
 n0=int(max([0,max(solve(a-b,n))]))
-S = Sum(1, (v, a, b))
+S = Sum(f, (v, a, b))
 sol=S
 ==
 
