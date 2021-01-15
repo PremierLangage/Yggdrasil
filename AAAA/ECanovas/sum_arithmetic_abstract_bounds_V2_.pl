@@ -27,7 +27,7 @@ elif niveau==2:
 elif niveau==3.1:
     #a entre 2 et 5, b  =n-1, n, n+1, 2n-1, 2n+1, n^2, n^2-1, n^2+1,  c entre 0 et 3, d=1,..9
     a=randitem([2,3,4,5])
-    b=randitem([n+1,n-1,n,2n-1,2n+1,n^2, n^2-1, n^2+1])
+    b=randitem([n+1,n-1,n,2*n-1,2*n+1,n**2, n**2-1, n**2+1])
     c= randint(0,3)
     d= randint(1,9)
     f= d*k**c
