@@ -188,7 +188,7 @@ form==#|html|
 
 <div class="item active">
   <div style="margin-left:15%; margin-right:15%;">
-  <u>Ce vendredi 15 janvier 2021 :<u><br>
+  <u>Ce vendredi 15 janvier 2021 :</u><br>
   <ul>
     <li>Ludovic SOUSTRE, Axel DURAND, Chahinaz DINDANE : <br><b>Pourquoi GraphQl fait un tabac ?</b></li>
     <li>Karim, Abdou, Benoît : <br><b>Quarkus vs Spring Boot</b></li>
