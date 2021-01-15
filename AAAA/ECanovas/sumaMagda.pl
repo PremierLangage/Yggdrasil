@@ -11,6 +11,7 @@ Calculer la somme $! A= \sum_{k={{a}}}^{ {{b}}} {{d}}k^{{c}} !$
 <br/>
 {{feedback}}
 <br/>
+Soluce <br/>
 {{Ssol|latex}}
 ==
 
