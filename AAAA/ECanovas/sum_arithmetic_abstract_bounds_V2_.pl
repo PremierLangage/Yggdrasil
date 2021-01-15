@@ -3,8 +3,10 @@ extends = /Mathematics/exercises/algebra/finitesums/sum_.pl
 title = Somme d'entiers successifs
 
 before ==
-v=randitem([Symbol('i'),Symbol('j'),Symbol('k')])
+#v=randitem([Symbol('i'),Symbol('j'),Symbol('k')])
 n=randitem([Symbol('n'),Symbol('m'),Symbol('p')])
+
+i, k = symbols('i k', integer=True)
 
 niveau=param['boundtype']
 if niveau==1:
