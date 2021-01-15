@@ -18,6 +18,7 @@ if niveau==1:
     d= randint(1,9)
     f= d*k**c
 elif niveau==2:
+    #a= 0 ou 2,3,4,5 , b idem,
     a=randitem([0,2..5])
     b=randitem([n+1,n-1])
     c= randint(0,3)
