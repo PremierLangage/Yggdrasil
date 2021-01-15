@@ -4,12 +4,14 @@ title= Somme finie Niveau 1
 
 param.boundtype % 1
 
-text==
+text==#|markdown|
 
 Calculer la somme $! A= \sum_{k={{a}}}^{ {{b}}} {{d}}k^{{c}} !$
 
 <br/>
 {{feedback}}
+<br/>
+{{Ssol}}
 ==
 
 
