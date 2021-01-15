@@ -26,8 +26,8 @@ elif niveau==2:
     b0=randint(-4,4,[0])
     b=bn+b0
 #n0=int(max([0,max(solve(a-b,n))]))
-S = Sum(f, (k, a, b))
-Ssol= Sum(f, (k, a, b)).doit()
+S = Sum(f, (k, a, b)).doit()
+Ssol= simplify(Sum(f, (k, a, b)).doit())
 sol=S
 ==
 
