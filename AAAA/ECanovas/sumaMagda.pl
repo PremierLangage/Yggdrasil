@@ -12,7 +12,7 @@ Calculer la somme $! A= \sum_{k={{a}}}^{ {{b}}} {{d}}k^{{c}} !$
 {{feedback}}
 <br/>
 Soluce <br/>
-$$ {{Ssol|latex}} $$
+$$ {{S|latex}} $$
 ==
 
 
