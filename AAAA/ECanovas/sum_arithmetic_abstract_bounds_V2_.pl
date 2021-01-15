@@ -15,7 +15,7 @@ if niveau==1:
     a=1 
     b0=randint(-1,1,[0])
     b=n+b0
-    b=str(b)
+    b=randitem([n+1,n-1])
     c= randint(0,3)
     d= randint(1,9)
     v= d*k**c
