@@ -11,7 +11,7 @@ Supposons qu'on a une liste des informations des individus saisies à la main, c
 (par exemple ``('Linux', 16, '2B110', True)``). Cependant, on s'est rendu compte qu'il y a des erreurs dans la saisie,
 et il faut les corriger systèmatiquement. Les corrections sont aussi données en une liste de couples (tuples de longueur 2),
 avec le premier élément l'erreur, et le second la correction.
-Par exemple, ``('Linus', 'Linux')`` veut dire que tous les saisies ``'Linux'`` sont incorrect, et il faut les corriger en ``'Linux'``.
+Par exemple, ``('Linus', 'Linux')`` veut dire que tous les saisies ``'Linus'`` sont incorrect, et il faut les corriger en ``'Linux'``.
 
 Ecrire une fonction ``corriger(info, correction)`` qui corrige la liste des tuples ``info`` selon les corrections données dans ``correction``.
 **La fonction ne retourne rien.** Après l'appel de ``corriger(info, correction)``, la liste ``info`` doit être corrigée. Les tuples dans ``info`` ne sont pas forcément de la même longueur.
