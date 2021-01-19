@@ -47,12 +47,18 @@ typedef struct node{
   struct node * right;
 }Node, *Tree;
 
-int count_leaf(Tree t){
-  if (t == NULL)
-    return 0;
-  if ((t->left == NULL) && (t->right == NULL))
+int ajoute(Tree *t,int valeur){
+  if (*t == NULL){
+    if ((*t=allocate_node(valeur))==NULL)
+     return 0;
     return 1;
-  return count_leaf(t->left) + count_leaf(t->right);
+  }
+  if (((*t)->value <valeur))
+    return ajoute(t,valeur);
+if (((*t)->value >valeur))
+    return ajoute(t,valeur);
+
+  return 1;
 }
 ==
 
@@ -77,24 +83,13 @@ Node* allocate_node(int val){
 
 int build_tree(Tree* t){
     int val;
-    char c;
-    
-    scanf("%c", &c);
-    scanf("%d", &val);
-    if ((*t = allocate_node(val)) == NULL){
+   
+    while(1==    scanf("%d", &val);
+    if (0=ajoute(t,val){
       fprintf(stderr, "problème allocation mémoire\n");
       return 0;
     }
-    switch(c) {
-    case 'd': return build_tree(&((*t)->left)) && build_tree(&((*t)->right));
-    case 'l': return build_tree(&((*t)->left));
-    case 'r': return build_tree(&((*t)->right));
-    case 'f': return 1;
-      break;
-    default :
-      fprintf(stderr, "Arbre mal formé\n");
-      return 0;
-    }
+ 
     return 1;
 }
 
@@ -104,10 +99,7 @@ int main(int argc, char* argv[]){
 
   build_tree(&t);
   
-  if ((n = count_leaf(t)) <= 1)
-    printf("L'arbre transmis sur l'entrée standard contient : %d feuille\n", n);
-  else
-    printf("L'arbre transmis sur l'entrée standard contient : %d feuilles\n", n);
+;
   return 0;
 }
 ==
