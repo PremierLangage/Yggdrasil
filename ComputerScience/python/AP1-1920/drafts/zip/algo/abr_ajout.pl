@@ -17,7 +17,7 @@
 
 extends=/ComputerScience/Algo/Tree/templates/std_progC_with_tree.pl
 
-author=Nicolas Borie
+#author=Marc Zipstein
 title=Ajouter dans un arbre binaire de recherche
 tag=arbre binaire de recherche
 
@@ -25,7 +25,7 @@ editor.height=300px
 
 text== 
 Écrire une fonction C **ajoute** ajoute une valeur à un **arbre bianaire de recherche**.
-La fonctio renvoie 1 en cas d'ajout réussit ou si la valeur est déjà dans l'arbre, et 0 sinon
+La fonction renvoie 1 en cas d'ajout réussit ou si la valeur est déjà dans l'arbre, et 0 sinon
 ==
 
 editor.code==#|c|
@@ -53,21 +53,21 @@ int ajoute(Tree *t,int valeur){
      return 0;
     return 1;
   }
-  if (((*t)->value <valeur))
-    return ajoute(t,valeur);
-if (((*t)->value >valeur))
-    return ajoute(t,valeur);
+  if (((*t)->value >valeur))
+    return ajoute(&((*t)->left),valeur);
+if (((*t)->value <valeur))
+  return ajoute(&((*t)->right),valeur);
 
   return 1;
-}
+} 
+
 ==
 
 code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
-==
+#include <string>
 
-code_after==#|c|
 Node* allocate_node(int val){
   Node* n = malloc(sizeof(Node));
 
@@ -81,40 +81,61 @@ Node* allocate_node(int val){
   return n;
 }
 
+==
+
+code_after==#|c|
+
 int build_tree(Tree* t){
     int val;
    
-    while(1==    scanf("%d", &val);
-    if (0=ajoute(t,val){
+    while(1==    scanf("%d", &val))
+      if (0==ajoute(t,val)){
       fprintf(stderr, "problème allocation mémoire\n");
       return 0;
     }
  
     return 1;
 }
+void arbre_vers_code_aux(Tree t,char* s){ 
+      char c;
+      if(t->left !=NULL && t->right!=NULL)  c='d';
+  else if(t->left !=NULL && t->right==NULL) c='l';
+  else if(t->left ==NULL && t->right!=NULL) c='r';
+  else c='f';
+      s[strlen(s)]=c;
+     sprintf(s+strlen(s),"%d",t->value);
+     printf("%s\n",s);
+     if(t->left)
+       arbre_vers_code_aux(t->left,s+strlen(s));
+     if(t->right)
+       arbre_vers_code_aux(t->right,s+strlen(s));
+     }
 
+  char *arbre_vers_code(Tree t){
+  static char s[300] ;
+  if(NULL!=t)
+    arbre_vers_code_aux(t,s);
+  s[strlen(s)]='\0';
+  return s;
+}
+   
 int main(int argc, char* argv[]){
   Tree t=NULL;
-  int n;
+char *code;
 
-  build_tree(&t);
-  
-;
+  build_tree(&t);printf("opoiu\n");
+  code=arbre_vers_code(t);
+  printf("%s\n",code)    ;
   return 0;
 }
 ==
 
 checks_args_stdin==#|python|
-[["Arbre feuille", [], "f1"],
- ["Abre à 3 nœuds", [], "d2f1f3"],
- ["Peigne gauche", [], "l5l4l3l2l1f0"],
- ["Arbre aléatoire à 6 nœuds", [], random_binary_tree(6)[0].to_string_code().replace(' ', '')],
- ["Arbre aléatoire à 8 nœuds", [], random_binary_tree(8)[0].to_string_code().replace(' ', '')],
- ["Arbre aléatoire à 10 nœuds", [], random_binary_tree(10)[0].to_string_code().replace(' ', '')],
- ["Arbre aléatoire à 12 nœuds", [], random_binary_tree(12)[0].to_string_code().replace(' ', '')],
- ["Arbre aléatoire à 14 nœuds", [], random_binary_tree(14)[0].to_string_code().replace(' ', '')],
- ["Arbre aléatoire à 100 nœuds", [], random_binary_tree(100)[0].to_string_code().replace(' ', '')],
- ["Arbre aléatoire à 500 nœuds", [], random_binary_tree(500)[0].to_string_code().replace(' ', '')] ]
+[["Arbre feuille", [], "4"],
+ ["Abre à 3 nœuds", [], "4 2 5"],
+ ["Peigne gauche", [], "12 10 9 8 7 0"],
+ ["Arbre aléatoire à 6 nœuds", [], random.choise [[42 22 52 5 66 70],[1 2 3 1 7 42 12]],
+]
 ==
 
 
