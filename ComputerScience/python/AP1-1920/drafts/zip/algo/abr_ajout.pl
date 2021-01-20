@@ -66,7 +66,7 @@ if (((*t)->value <valeur))
 code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
-#include <string>
+#include <string.h>
 
 Node* allocate_node(int val){
   Node* n = malloc(sizeof(Node));
@@ -134,7 +134,7 @@ checks_args_stdin==#|python|
 [["Arbre feuille", [], "4"],
  ["Abre à 3 nœuds", [], "4 2 5"],
  ["Peigne gauche", [], "12 10 9 8 7 0"],
- ["Arbre aléatoire à 6 nœuds", [], random.choice (["42 22 52 5 66 70","1 2 3 1 7 42 12"]),
+ ["Arbre aléatoire ", [], random.choice (["42 22 52 5 66 70","1 2 3 1 7 42 12"]),
 ]
 ==
 
