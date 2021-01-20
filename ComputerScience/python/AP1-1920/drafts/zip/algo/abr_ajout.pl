@@ -24,7 +24,7 @@ tag=arbre binaire de recherche
 editor.height=300px
 
 text== 
-Écrire une fonction C **ajoute** ajoute une valeur à un **arbre bianaire de recherche**.
+Écrire une fonction C **ajoute** ajoute une valeur à un **arbre binaire de recherche**.
 La fonction renvoie 1 en cas d'ajout réussit ou si la valeur est déjà dans l'arbre, et 0 sinon
 ==
 
