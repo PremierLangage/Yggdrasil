@@ -12,3 +12,5 @@
 #
 #                  http://www.gnu.org/licenses/
 #*****************************************************************************
+
+extends = /ComputerScience/OperatingSystem/templates/bash_template.pl
