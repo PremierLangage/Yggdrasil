@@ -49,11 +49,7 @@ else:
 
     form += display_as_shell_this(editor.code, spout, str(response["user_hack"]), errout, returncode)
 
-    if expected_stdout == spout:
-        feedback = "Bravo, votre code fait le travail !"
-        grade = (100, frame_message(feedback, "ok"))
-    else:
-        feedback = "Désolé, votre code ne produit pas le résultat attendu. Modifiez votre commande."
-        grade = (0, frame_message(feedback, "error"))
+    feedback = " "
+    grade = (-1, feedback)
 
 ==
