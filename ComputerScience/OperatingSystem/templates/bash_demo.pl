@@ -14,3 +14,9 @@
 #*****************************************************************************
 
 extends = /ComputerScience/OperatingSystem/templates/bash_template.pl
+
+title=Terminal en sandbox
+
+text==
+Taper une commande dans l'éditeur et cliquer sur valider pour visualiser son effet.
+==
