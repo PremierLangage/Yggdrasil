@@ -1,4 +1,4 @@
-extends = /Mathematics/exercises/algebra/finitesums/sum_.pl
+extends = sum_V2_.pl
 
 title = Somme d'entiers successifs
 
