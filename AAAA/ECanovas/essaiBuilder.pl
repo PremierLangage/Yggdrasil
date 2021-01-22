@@ -21,8 +21,8 @@ text==#|markdown|
 Exo qui n'est pas un exo
 ==
 
-##form==
-##==
+form==
+==
 solution==
 Pas de solution
 ==
