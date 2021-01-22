@@ -1,4 +1,4 @@
-extends = /model/basic/input.pl
+##extends = /model/basic/input.pl
 
 title=Un essai pour voir le contexte d'exécution des exos
 
