@@ -23,3 +23,6 @@ Exo qui n'est pas un exo
 
 ##form==
 ##==
+solution==
+Pas de solution
+==
