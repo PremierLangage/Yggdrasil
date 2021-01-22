@@ -9,3 +9,7 @@ if __name__ == "__main__":
     print(context, file=sys.stderr)
     sys.exit(0)
 ==
+
+text==#|markdown|
+Exo qui n'est pas un exo
+==
