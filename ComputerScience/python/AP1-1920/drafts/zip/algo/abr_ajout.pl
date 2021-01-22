@@ -134,8 +134,9 @@ checks_args_stdin==#|python|
 [["Arbre feuille", [], "4"],
  ["Abre à 3 nœuds", [], "4 2 5"],
  ["Peigne gauche", [], "12 10 9 8 7 0"],
- ["Arbre aléatoire ", [], random.choice (["42 22 52 5 66 70","1 2 3 1 7 42 12"])],
+ ["Arbre aléatoire ", [],"77 55 3 6 7 8 9"],
 ]
 ==
 
 
+kiki= random.choice (["42 22 52 5 66 70","1 2 3 1 7 42 12"])
