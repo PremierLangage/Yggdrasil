@@ -16,7 +16,8 @@ if __name__ == "__main__":
             o.write(i.read()) # pas de conversion
     sys.exit(1)
 ==
-
+grader==
+==
 text==#|markdown|
 Exo qui n'est pas un exo
 ==
