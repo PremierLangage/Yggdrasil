@@ -1,3 +1,5 @@
+extends = /model/basic.pl
+
 title=Un essai pour voir le contexte d'exécution des exos
 
 builder==
