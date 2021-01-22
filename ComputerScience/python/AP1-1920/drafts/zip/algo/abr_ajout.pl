@@ -26,14 +26,16 @@ editor.height=300px
 text== 
 Écrire une fonction C **ajoute** ajoute une valeur à un **arbre binaire de recherche**.
 La fonction renvoie 1 en cas d'ajout réussit ou si la valeur est déjà dans l'arbre, et 0 sinon
-==
-
-editor.code==#|c|
+On utilisera le type 
 typedef struct node{
   int value;
   struct node * left;
   struct node * right;
 }Node, *Tree;
+
+==
+
+editor.code==#|c|
 
 ... ajoute(...){
   /* Votre code ici... */
@@ -41,11 +43,6 @@ typedef struct node{
 ==
 
 solution==#|c|
-typedef struct node{
-  int value;
-  struct node * left;
-  struct node * right;
-}Node, *Tree;
 
 int ajoute(Tree *t,int valeur){
   if (*t == NULL){
@@ -67,6 +64,11 @@ code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+typedef struct node{
+  int value;
+  struct node * left;
+  struct node * right;
+}Node, *Tree;
 
 Node * allocate_node(int val){
   Node * n = malloc(sizeof(Node));
