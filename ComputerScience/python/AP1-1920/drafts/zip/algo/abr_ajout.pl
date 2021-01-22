@@ -68,6 +68,10 @@ code_before==#|c|
 #include <stdlib.h>
 #include <string.h>
 
+==
+
+code_after==#|c|
+
 Node * allocate_node(int val){
   Node * n = malloc(sizeof(Node));
 
@@ -80,10 +84,6 @@ Node * allocate_node(int val){
   n->value = val;
   return n;
 }
-
-==
-
-code_after==#|c|
 
 int build_tree(Tree* t){
     int val;
