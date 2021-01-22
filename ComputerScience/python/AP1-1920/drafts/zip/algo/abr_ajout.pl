@@ -68,8 +68,8 @@ code_before==#|c|
 #include <stdlib.h>
 #include <string.h>
 
-Node* allocate_node(int val){
-  Node* n = malloc(sizeof(Node));
+Node * allocate_node(int val){
+  Node * n = malloc(sizeof(Node));
 
   if (!n){
     fprintf(stderr, "problème allocation mémoire\n");
