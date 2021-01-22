@@ -189,22 +189,22 @@ form==#|html|
 
 <div class="item active">
   <div style="margin-left:15%; margin-right:15%;">
-  <u>Ce vendredi 15 janvier 2021 :</u><br>
+  <u>Ce vendredi 22 janvier 2021 :</u><br>
   <ul>
-    <li>Ludovic SOUSTRE, Axel DURAND, Chahinaz DINDANE : <br><b>Pourquoi GraphQl fait un tabac ?</b></li>
-    <li>Karim, Abdou, Benoît : <br><b>Quarkus vs Spring Boot</b></li>
-    <li>Jonathan CRETE, Judicaël KOFFI, Mélissa DA COSTA : <br><b>Openshift</b></li>
-    <li>Vincent AGULLO, Guillaume CAU, Emilie MARTI : <br><b>Java, Scala, Kotlin</b></li>
+    <li>Kevin MARTIN, Nathan LEMOINE, Raphaël BOURJOT :<br><b>Les Hooks de ReactJS</b></li>
+    <li>Karim KHEROUA, Abdou FALL, Benoît QUANTIN :<br><b>Paiement mobile : SE vs HCE</b></li>
+    <li>Anais DESCOMBES, Axel DURAND, Ludovic SOUSTRE :<br><b>RGPD et sa mise en oeuvre</b></li>
+    <li>Mélissa DA COSTA, Altan SORAN, Tanguy Traina :<br><b>React VS Svelte</b></li>
 
-    <li>Rémi, Tanguy, Yoann S : <br><b>Microservices: Simple buzzwork ou concept utile ?</b></li>
-    <li>Julien, Guillaume M : <br><b>Voiture 1: Prises de vue à 360 degrés ?</b></li>
-    <li>Jean-Philippe WINCKLER, Nathan LEMOINE, Anaïs DESCOMBES : <br><b>Industrie 4.0</b></li>
-    <li>Altan, Nils, Nicolas B : <br><b>IA : buzz word pour “algorithmes malins” ou théories/techniques révolutionnaires?</b></li>
+    <li>Lisa, Julien, Jonathan :<br><b>Galileo</b></li>
+    <li>Yoann Sicot, Nicolas Fau, Salim Merchermek :<br><b>React VS Vue</b></li>
+    <li>Kylian, Jean-Philippe, Dylan :<br><b>SAN, un bon investissement ?</b></li>
+    <li>Yohann Jolivet, Rémi Marsal, Sacha Ouziel :<br><b>Gaz à Effet de Serre et Internet</b></li>
 
-    <li>Nicolas FAU, Kevin MARTIN : <br><b>NodeJS is dead, long live Deno ?</b></li>
-    <li>Sacha OUZIEL, Lisa MECHOUK, Yohann JOLIVET, Block-chain : <br><b>Quand utiliser et quand s'en passer ?</b></li>
-    <li>Kylian, Raphaël, Dylan : SDWAN vs MPLS : <br><b>le fight !</b></li>
-    <li>Christelle, Leo, Salim : <br><b>GraphQL vs REST</b></li>
+    <li>Léo, Christelle, Emilie :<br><b>Green IT : forcément des sacrifices ou bien des opportunités économiques?</b></li>
+    <li>Guillaume Matheco, Nils Pernet :<br><b>Géolocalisation Indoor</b></li>
+    <li>Nicolas Baticle, Chanhinaz Dindane :<br><b>Précision du signal et qualité du service</b></li>
+    <li>Guillaume Cau, Vincent Agullo, Judicaël Koffi :<br><b>Le futur de SD-WAN à 3 ans ?</b></li>
   </ul>
   </div>
   <div style="margin-left:15%; margin-right:15%;">
