@@ -10,7 +10,7 @@ if __name__ == "__main__":
     input_json = sys.argv[1]
     output_json = sys.argv[2]
     with open(input_json,'r') as i:
-        print(i.read(), file=sys.stderr)
+        print(i.read()+"\n", file=sys.stderr)
         sys.stderr.flush()
         with open(output_json,"w") as o:
             o.write(i.read()) # pas de conversion
