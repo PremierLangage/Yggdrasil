@@ -1,4 +1,4 @@
-extends = /model/basic.pl
+extends = /model/basic/input.pl
 
 title=Un essai pour voir le contexte d'exécution des exos
 
@@ -16,5 +16,5 @@ text==#|markdown|
 Exo qui n'est pas un exo
 ==
 
-form==
-==
+##form==
+##==
