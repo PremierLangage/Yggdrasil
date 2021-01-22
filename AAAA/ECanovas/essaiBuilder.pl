@@ -4,7 +4,8 @@ title=Un essai pour voir le contexte d'exécution des exos
 
 builder==
 import sys
-
+import json
+sys.exit(34)
 if __name__ == "__main__":
     input_json = sys.argv[1]
     output_json = sys.argv[2]
