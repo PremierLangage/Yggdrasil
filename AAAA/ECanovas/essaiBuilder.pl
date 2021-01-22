@@ -8,10 +8,11 @@ import sys
 if __name__ == "__main__":
     with open(sys.argv[1],'r') as f:
     context = json.load(f)
-    print(context, file=sys.stderr)
+    
     input_json = sys.argv[1]
     output_json = sys.argv[2]
     with open(input_json,'r') as i:
+        print(i.read(), file=sys.stderr)
         with open(output_json,"w") as o:
             o.write(i.read()) # pas de conversion
     sys.exit(1)
