@@ -15,7 +15,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/Algo/Tree/templates/std_progC_with_tree.pl
+ extends=/ComputerScience/Algo/Tree/templates/std_progC_with_tree.pl
 
 #author=Marc Zipstein
 title=Ajouter dans un arbre binaire de recherche
@@ -37,9 +37,20 @@ typedef struct node{
 
 editor.code==#|c|
 
-... ajoute(...){
-  /* Votre code ici... */
-}
+int ajoute(Tree *t,int valeur){
+  if (*t == NULL){
+    if ((*t=allocate_node(valeur))==NULL)
+     return 0;
+    return 1;
+  }
+  if (((*t)->value >valeur))
+    return ajoute(&((*t)->left),valeur);
+if (((*t)->value <valeur))
+  return ajoute(&((*t)->right),valeur);
+
+  return 1;
+} 
+
 ==
 
 solution==#|c|
@@ -106,7 +117,7 @@ void arbre_vers_code_aux(Tree t,char* s){
   else c='f';
       s[strlen(s)]=c;
      sprintf(s+strlen(s),"%d",t->value);
-     printf("%s\n",s);
+     printf("*->%s\n",s);
      if(t->left)
        arbre_vers_code_aux(t->left,s+strlen(s));
      if(t->right)
