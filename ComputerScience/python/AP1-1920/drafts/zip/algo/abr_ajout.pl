@@ -15,7 +15,8 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
- extends=/ComputerScience/Algo/Tree/templates/std_progC_with_tree.pl
+
+#extends=/ComputerScience/Algo/Tree/templates/std_progC_with_tree.pl
 
 #author=Marc Zipstein
 title=Ajouter dans un arbre binaire de recherche
