@@ -101,12 +101,13 @@ code_after==#|c|
 int build_tree(Tree* t){
     int val;
    
-    while(1==    scanf("%d", &val))
+    while(1==    scanf("%d", &val))   {
+      printf("%d\n",val);
       if (0==ajoute(t,val)){
       fprintf(stderr, "problème allocation mémoire\n");
       return 0;
+      }
     }
- 
     return 1;
 }
 void arbre_vers_code_aux(Tree t,char* s){ 
