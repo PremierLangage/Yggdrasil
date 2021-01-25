@@ -118,16 +118,16 @@ void arbre_vers_code_aux(Tree t,char* s){
   else if(t->left ==NULL && t->right!=NULL) c='r';
   else c='f';
       s[strlen(s)]=c;
-     sprintf(s+strlen(s),"%d",t->value);
-     printf("*->%s\n",s);
-     if(t->left)
+  sprintf(s+strlen(s),"%d",t->value); 
+  printf("*->%s\n",s);
+  if(t->left) 
        arbre_vers_code_aux(t->left,s+strlen(s));
-     if(t->right)
+ if(t->right)
        arbre_vers_code_aux(t->right,s+strlen(s));
-     }
+}
 
-  char *arbre_vers_code(Tree t){
-  static char s[300] ;
+char *arbre_vers_code(Tree t){
+  static char s[300]={'\0'} ;
   if(NULL!=t)
     arbre_vers_code_aux(t,s);
   s[strlen(s)]='\0';
