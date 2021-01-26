@@ -16,17 +16,17 @@
 #*****************************************************************************
 
 
-#extends=/ComputerScience/Algo/Tree/templates/std_progC_with_tree.pl
+extends=/ComputerScience/Algo/Tree/templates/std_progC_with_tree.pl
 
 #author=Marc Zipstein
 title=Ajouter dans un arbre binaire de recherche
-tag=arbre binaire de recherche
+tag=recherche
 
 editor.height=300px
 
 text== 
-Écrire une fonction C **ajoute** ajoute une valeur à un **arbre binaire de recherche**.
-La fonction renvoie 1 en cas d'ajout réussit ou si la valeur est déjà dans l'arbre, et 0 sinon
+Écrire une fonction C **ajoute** qui ajoute une valeur à un **arbre binaire de recherche**.
+La fonction renvoie 1 en cas d'ajout réussi ou si la valeur est déjà dans l'arbre, et 0 sinon
 On utilisera le type 
 typedef struct node{
   int value;
@@ -44,9 +44,9 @@ int ajoute(Tree *t,int valeur){
      return 0;
     return 1;
   }
-  if (((*t)->value >valeur))
+  if ((*t)->value >valeur)
     return ajoute(&((*t)->left),valeur);
-if (((*t)->value <valeur))
+if ((*t)->value <valeur)
   return ajoute(&((*t)->right),valeur);
 
   return 1;
@@ -62,9 +62,9 @@ int ajoute(Tree *t,int valeur){
      return 0;
     return 1;
   }
-  if (((*t)->value >valeur))
+  if ((*t)->value >valeur)
     return ajoute(&((*t)->left),valeur);
-if (((*t)->value <valeur))
+if ((*t)->value <valeur)
   return ajoute(&((*t)->right),valeur);
 
   return 1;
