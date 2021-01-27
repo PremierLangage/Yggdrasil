@@ -35,10 +35,10 @@ questions==
 + $%a%$ est un majorant de $%A%$ si ($% \forall x \in A \quad x \le a%$).
 - $%A%$ est majorée si ($% \forall x \in A \quad \exists m \in E \quad  x \le m%$).
 + $%A%$ est majorée si ($% \exists m \in E \quad \forall x \in A \quad  x \le m%$).
-+ $%a%$ est le plus grand élément de $%A%$ si : \quad  ($% \forall x \in A \quad x \le a%$ et $% a \in A%$).
++ $%a%$ est le plus grand élément de $%A%$ si : \quad  ($% \forall x \in A \quad x \le a \quad %$ et $% \quad a \in A%$).
 - $%a%$ est le plus petit élément de $%A%$ si  : \quad ($% \forall x \in A \quad a \le x%$).
 + $%a= \sup(A)%$ si [($% \forall x \in A \quad x \le a%$) et ($% \forall b \in E \quad  (\forall x \in A \quad x \le b) \implies a \le b %$)
-- $%a= \inf(A)%$ si et seulement si [($% \forall x \in A \quad a \le x%$) et ($% \forall b \in E \quad  (\forall x \in A \quad b \le x) \implies a \le b %$)
+- $%a= \inf(A)%$ si :  [($% \forall x \in A \quad a \le x%$) et ($% \forall b \in E \quad  (\forall x \in A \quad b \le x) \implies a \le b %$)
 
 ** Cocher les propositions vraies :
 - Si $% f %$ est une fonction numérique croissante et $% I %$ est un intervalle borné, alors $%f(I)%$ est borné et $% \sup(f(I)) = f(\sup(I)) %$
