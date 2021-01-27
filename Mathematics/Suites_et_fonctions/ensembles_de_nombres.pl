@@ -33,7 +33,7 @@ questions==
 ** Cocher les propositions vraies :
 + $%\forall x \in \mathbb{D} \quad x \in \mathbb{Q} %$
 + $%\forall x, y \in \mathbb{D}  \quad xy \in \mathbb{D} %$
-- $%\forall x, y \in \mathbb{Q} \setminus \mathbb{D} \quad xy \in \mathbb{D} %$
+- $%\forall x, y \in \mathbb{Q} \setminus \mathbb{D} \quad xy \in  \mathbb{Q} \setminus \mathbb{D} %$
 -  $% \forall x, y \in \mathbb{R} \setminus \mathbb{Q}  \quad x+y \in \mathbb{R} \setminus \mathbb{Q} %$
 
 
