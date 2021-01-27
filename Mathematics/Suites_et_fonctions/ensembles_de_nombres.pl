@@ -32,19 +32,20 @@ questions==
 
 ** Cocher les propositions vraies :
 + $%\forall x \in \mathbb{D} \quad x \in \mathbb{Q} %$
-+ $%\forall x, y \in \mathbb{D}  \quad xy \in mathbb{D} %$
++ $%\forall x, y \in \mathbb{D}  \quad xy \in \mathbb{D} %$
 - $%\forall x, y \in \mathbb{Q} \setminus \mathbb{D} \quad xy \in \mathbb{D} %$
--  $%\forall x, y \in \mathbb{R} \setminus \mathbb{Q}  \quad x+y \in mathbb{R} \setminus \mathbb{Q} %$
-
+-  $% \forall x, y \in \mathbb{R} \setminus \mathbb{Q}  \quad x+y \in \mathbb{R} \setminus \mathbb{Q} %$
 
 
 ** Cocher les propositions vraies :
-- $%\{{1,-2,3\}} \subset \mathbb{N} %$
+- $% \\{1,-2,3\\} \subset \mathbb{N} %$
 - $% [1,2] \subset \mathbb{N} %$ 
-+  $%\{{ \frac{1}{2}, \frac{1}{5}, \frac{7}{4}\}} \subset \mathbb{D} %$ 
--  $%\{{ \frac{1}{2}, \frac{1}{3}, \frac{7}{4}\}} \subset \mathbb{D} %$ 
-+  $%\{{ \sqrt{2}, e, \frac{\pi}{2} \}} \subset \mathbb{R}\setminus \mathbb{Q} %$
--  $%\{{ \sqrt{2},\sqrt{3},\sqrt{4}  \}} \subset \mathbb{R}\setminus \mathbb{Q} %$  
++  $%\\{ \frac{1}{2}, \frac{1}{5}, \frac{7}{4}\\} \subset \mathbb{D} %$ 
+-  $%\\{ \frac{1}{2}, \frac{1}{3}, \frac{7}{4}\\} \subset \mathbb{D} %$ 
++  $%\\{ \sqrt{2}, e, \frac{\pi}{2} \\} \subset \mathbb{R}\setminus \mathbb{Q} %$
+-  $%\\{ \sqrt{2},\sqrt{3},\sqrt{4}  \\} \subset \mathbb{R}\setminus \mathbb{Q} %$  
+
+
 
 
 
