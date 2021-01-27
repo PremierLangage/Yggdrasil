@@ -25,6 +25,7 @@ questions==
 - $% \frac{1}{3} \in \mathbb{D}%$
 + $% \sqrt{2} \in \mathbb{R} \setminus \mathbb{Q} %$
 - $% 3-7 \in \mathbb{N} %$
+- $% \frac{e}{2} \in \mathbb{Q} %$
 
 
 
@@ -40,6 +41,10 @@ questions==
 ** Cocher les propositions vraies :
 - $% \\{1,-2,3\\} \subset \mathbb{N} %$
 - $% [1,2] \subset \mathbb{N} %$ 
++ $% \forall x \in \mathbb{Q} \quad -x \in \mathbb{Q} %$
++ $% \forall x \in \mathbb{Q}^* \quad \frac{1}{x} \in \mathbb{Q} %$
+- $% \forall x \in \mathbb{N} \quad -x \in \mathbb{N} %$
++ $% \forall x \in \mathbb{Z}^* \quad \frac{1}{x} \in \mathbb{Z} %$
 +  $%\\{ \frac{1}{2}, \frac{1}{5}, \frac{7}{4}\\} \subset \mathbb{D} %$ 
 -  $%\\{ \frac{1}{2}, \frac{1}{3}, \frac{7}{4}\\} \subset \mathbb{D} %$ 
 +  $%\\{ \sqrt{2}, e, \frac{\pi}{2} \\} \subset \mathbb{R}\setminus \mathbb{Q} %$
