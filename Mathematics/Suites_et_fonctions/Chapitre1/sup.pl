@@ -7,7 +7,7 @@ tag=system|shell
 extends=/model/AMC_TXT.pl
 
 title==
-QCM sur les inégalités 
+QCM sur la borne supérieure 
 ==
 
 intro ==
@@ -37,7 +37,8 @@ questions==
 + $%A%$ est majorée si ($% \exists m \in E \quad \forall x \in A \quad  x \le m%$).
 + $%a%$ est le plus grand élément de $%A%$ si ($% \forall x \in A \quad x \le a%$ et $% a \in A%$).
 - $%a%$ est le plus petit élément de $%A%$ si ($% \forall x \in A \quad a \le x%$).
-+ $%a= \sup(A)%$ si [($% \forall x \in A \quad x \le a%$) et 
++ $%a= \sup(A)%$ si [($% \forall x \in A \quad x \le a%$) et ($% \forall b \in E \quad  (\forall x \in A \quad x \le b) \Longleftrightarrow a \le b %$)
+- $%a= \inf(A)%$ ssi [($% \forall x \in A \quad a \le x%$) et ($% \forall b \in E \quad  (\forall x \in A \quad b \le x) \Longleftrightarrow a \le b %$)
 
 ** Cocher les propositions vraies :
 - Si $% f %$ est une fonction numérique croissante et $% I %$ est un intervalle borné, alors $%f(I)%$ est borné et $% \sup(f(I)) = f(\sup(I)) %$
