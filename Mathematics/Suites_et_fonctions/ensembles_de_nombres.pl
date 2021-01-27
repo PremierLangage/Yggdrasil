@@ -30,12 +30,13 @@ questions==
 
 
 
-** $%\lim_{x\to +\infty} f(x) = 3 %$ signifie :
-+ $%\forall \varepsilon >0 \quad \exists A \in \mathbb{R} \quad \forall x\in D_f \quad x \ge A  \implies |f(x)-3|\le \varepsilon %$
-+ $%\forall \varepsilon >0 \quad \exists A>0 \quad \forall x\in D_f \quad x \ge A  \implies |f(x)-3|\le \varepsilon %$
-+ $%\forall \varepsilon >0 \quad \exists \eta >0 \quad \forall x\in D_f \quad x \ge \eta  \implies |f(x)-3|\le \varepsilon %$
-- $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \quad |x|\le \eta \implies |f(x)-3|\le \varepsilon %$
-- $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \quad |x-3|\ge \eta \implies |f(x)-3|\le A %$
+** Cocher les propositions vraies 
++ $%\forall x \in \mathbb{D} \quad x \in \mathbb{Q} %$
++ $%\forall x, y \in \mathbb{D}  \quad xy \in mathbb{D} %$
+- $%\forall x, y \in \mathbb{Q} \setminus \mathbb{D} \quad xy \in \mathbb{D} %$
+-  $%\forall x, y \in \mathbb{R} \setminus \mathbb{Q}  \quad x+y \in mathbb{R} \setminus \mathbb{Q} %$
+
+
 
 ** $%\lim_{x\to 1^+} f(x) = 5 %$ signifie :
 + $%\forall \varepsilon >0 \quad \exists \eta>0 \quad \forall x\in D_f \quad 1<x\le 1+ \eta  \implies |f(x)-5|\le \varepsilon %$
