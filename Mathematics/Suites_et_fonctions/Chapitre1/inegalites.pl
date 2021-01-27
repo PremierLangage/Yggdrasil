@@ -31,7 +31,7 @@ questions==
 -  $% \forall a,b,c  \in \mathbb{R} \quad a \le b  \implies ac \le bc %$ 
 + $% \forall a,b  \in \mathbb{R}\; \forall c \in \mathbb{R}^+ \quad a \le b  \implies ac \le bc %$ 
 + $% \forall a,b,c  \in \mathbb{R} \quad a \le b  \implies a + c \le b+ c %$ 
-- $% \forall a,b  \in \mathbb{R}\; \forall c \in \mathbb{R}^+ \quad a \le b  \implies \frac{a}{c} \le \frac{b}{c} %$ 
+- $% \forall a,b  \in \mathbb{R}\quad  \forall c \in \mathbb{R}^+ \quad a \le b  \implies \frac{a}{c} \le \frac{b}{c} %$ 
 
 
 
