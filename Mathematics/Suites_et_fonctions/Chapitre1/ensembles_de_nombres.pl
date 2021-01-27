@@ -52,7 +52,7 @@ questions==
 ** Cocher les propositions vraies 
 + Si $% I %$ et $% J %$ sont des intervalles de $%\mathbb{R}%$  alors $% I \cap J%$ est un intervalle de $%\mathbb{R}%$
 - Si $% I %$ et $% J %$ sont des intervalles de $%\mathbb{R}%$  alors $% I \cup J%$ est un intervalle de $%\mathbb{R}%$
-- Si $% I %$ est un intervalle borné de $% \mathbb{R}%$, alors $%a = \inf(A)%$ et $% b = \sup(B)%$ sont des réeles et $%I=[a,b]%$
+- Si $% I %$ est un intervalle borné de $% \mathbb{R}%$, alors $%a = \inf(A)%$ et $% b = \sup(B)%$ sont des réels et $%I=[a,b]%$
 + Si $% I %$ est un intervalle ni majoré ni minoré  de $% \mathbb{R}%$, alors $%A= \mathbb{R}%$
 + Si $% A %$ et $% B %$ sont des parties bornées de $% \mathbb{R} %$, alors $%\sup (A \cup B)= \max( \sup(A), \sup (B))%$
 + Si $% A %$ et $% B %$ sont des parties bornées de $% \mathbb{R} %$, alors $%\sup (A \cap B)= \min( \sup(A), \sup (B))%$
