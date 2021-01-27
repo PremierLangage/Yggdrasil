@@ -117,8 +117,8 @@ void arbre_vers_code_aux(Tree t,char* s){
   else if(t->left !=NULL && t->right==NULL) c='l';
   else if(t->left ==NULL && t->right!=NULL) c='r';
   else c='f';
-  sprintf(s[strlen(s)],"%c",c);
-  sprintf(s+strlen(s),"%d",t->value); 
+  sprintf(s[strlen(s)],"%c\0",c);
+  sprintf(s+strlen(s),"%d\0",t->value); 
   printf("*->%s\n",s);
   if(t->left) 
        arbre_vers_code_aux(t->left,s+strlen(s));
