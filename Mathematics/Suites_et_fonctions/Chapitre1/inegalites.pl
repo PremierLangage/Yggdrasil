@@ -36,13 +36,6 @@ questions==
 
 
 
-
-** Cocher les propositions vraies :
-- Si $% f %$ est une fonction numérique croissante et $% I %$ est un intervalle borné, alors $%f(I)%$ est borné et $% \sup(f(I)) = f(\sup(I)) %$
-- Si $% f %$ est une fonction numérique croissante et $% I %$ est un intervalle borné, alors $%f(I)%$ est borné et $% \sup(f(I)) > f(\sup(I)) %$
-+ Si $% f %$ est une fonction numérique croissante et $% I %$ est une partie majorée, alors $%f(I)%$ est majorée et $% \sup(f(I)) \le  f(\sup(I)) %$
-+  Si $% f %$ est une fonction numérique croissante et $% I %$ est une partie majorée qui admet un plus grand élément, alors $%f(I)%$ admet un plus grand élément et  et $% \max(f(I)) = f(\max(I)) %$
-  
  
 
 ** Cocher les propositions vraies 
