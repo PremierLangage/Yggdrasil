@@ -21,8 +21,8 @@ questions==
 ** Parmi les affirmations suivantes, lesquelles sont vraies 
 + $%\frac{1}{2} \in \mathbb{Q}%$
 + $% \frac{1}{3} \in \mathbb{Q}%$
-- $%\frac{1}{2} \in \mathbb{D}%$
-+ $% \frac{1}{3} \in \mathbb{Q}%$
++ $%\frac{1}{2} \in \mathbb{D}%$
+- $% \frac{1}{3} \in \mathbb{D}%$
 + $% \sqrt{2} \in \mathbb{R} \setminus \mathbb{Q} %$
 - $% 3-7 \in \mathbb{N} %$
 
