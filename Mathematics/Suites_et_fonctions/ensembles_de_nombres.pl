@@ -30,7 +30,7 @@ questions==
 
 
 
-** Cocher les propositions vraies 
+** Cocher les propositions vraies :
 + $%\forall x \in \mathbb{D} \quad x \in \mathbb{Q} %$
 + $%\forall x, y \in \mathbb{D}  \quad xy \in mathbb{D} %$
 - $%\forall x, y \in \mathbb{Q} \setminus \mathbb{D} \quad xy \in \mathbb{D} %$
@@ -38,12 +38,15 @@ questions==
 
 
 
-** $%\lim_{x\to 1^+} f(x) = 5 %$ signifie :
-+ $%\forall \varepsilon >0 \quad \exists \eta>0 \quad \forall x\in D_f \quad 1<x\le 1+ \eta  \implies |f(x)-5|\le \varepsilon %$
-- $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \quad |x-1|\le \eta \mbox{ et } x>1 \implies |f(x)-5|\le \varepsilon %$
-- $%\forall \varepsilon >0 \quad \exists \eta>0 \quad \forall x\in D_f \quad 1<x\le 1+ \eta  \implies |f(x)-3|\le \varepsilon %$
-- $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \quad |x-1|\le \eta \mbox{ et } x>1 \implies |f(x)-5|\ge \varepsilon %$
- 
+** Cocher les propositions vraies :
+- $%\{{1,-2,3\}} \subset \mathbb{N} %$
+- $% [1,2] \subset \mathbb{N} %$ 
++  $%\{{ \frac{1}{2}, \frac{1}{5}, \frac{7}{4}\}} \subset \mathbb{D} %$ 
+-  $%\{{ \frac{1}{2}, \frac{1}{3}, \frac{7}{4}\}} \subset \mathbb{D} %$ 
++  $%\{{ \sqrt{2}, e, \frac{\pi}{2} \}} \subset \mathbb{R}\setminus \mathbb{Q} %$
+-  $%\{{ \sqrt{2},\sqrt{3},\sqrt{4}  \}} \subset \mathbb{R}\setminus \mathbb{Q} %$  
+
+
 
 
 
