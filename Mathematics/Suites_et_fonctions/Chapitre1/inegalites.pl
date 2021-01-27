@@ -41,14 +41,13 @@ questions==
 - Si $% f %$ est une fonction numérique croissante et $% I %$ est un intervalle borné, alors $%f(I)%$ est borné et $% \sup(f(I)) = f(\sup(I)) %$
 - Si $% f %$ est une fonction numérique croissante et $% I %$ est un intervalle borné, alors $%f(I)%$ est borné et $% \sup(f(I)) > f(\sup(I)) %$
 + Si $% f %$ est une fonction numérique croissante et $% I %$ est une partie majorée, alors $%f(I)%$ est majorée et $% \sup(f(I)) \ge  f(\sup(I)) %$
-- 
   
 
 ** Cocher les propositions vraies 
-+  $% \forall a,b \in \mathbb{R}  |a| \le |a+b| + |b| %$
-+  $% \forall a,b \in \mathbb{R}  |a| \le |a-b| + |b| %$
--  $% \forall x,y \in \mathbb{R}  |x| \le |x+y| - |y| %$
-+ $% \forall x,y \in \mathbb{R}  |x| - |y| \le |x-y| %$
-+ $% \forall x,y \in \mathbb{R}  |x| \le a  \leftrightarrow  -a \le x \le a %$
++  $% \forall a,b \in \mathbb{R}  \quad  |a| \le |a+b| + |b| %$
++  $% \forall a,b \in \mathbb{R} \quad   |a| \le |a-b| + |b| %$
+-  $% \forall x,y \in \mathbb{R} \quad  |x| \le |x+y| - |y| %$
++ $% \forall x,y \in \mathbb{R}  \quad  |x| - |y| \le |x-y| %$
++ $% \forall x,y \in \mathbb{R} \quad   |x| \le a  \Leftrightarrow  -a \le x \le a %$
 
 ==
