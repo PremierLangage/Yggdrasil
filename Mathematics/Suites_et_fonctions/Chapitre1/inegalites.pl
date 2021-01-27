@@ -20,7 +20,7 @@ questions==
 ** Cocher les propositions vraies
 - Si $% a, b %$ sont des réels et $%a \le b %$, alors $% \frac{1}{a} \ge \frac{1}{b} %$
 + Si $% a, b %$ sont des réels strictement négatifs  et $%a \le b %$, alors $% \frac{1}{a} \ge \frac{1}{b} %$
-- Si $%a,b %$ sont des réels et $%a \le b %$, alors $% a^2 \ge b^2 %$
+- Si $%a,b %$ sont des réels et $%a \le b %$, alors $% a^2 \le b^2 %$
 + Si $% a, b %$ sont des réels strictement négatifs  et $%a \le b %$, alors $% a^2 \ge b^2 %$
 - Si $%f%$ est une fonction strictement croissante sur la partie $%I%$ et strictement croissante sur la partie $%J%$, alors $% f%$ est strictement croissante sur $%I \cup J%$.
 + Si $%f%$ est une fonction strictement croissante sur la partie $%I%$ et strictement croissante sur la partie $%J%$ et $% I \cap J \neq \emptyset %$, alors $% f%$ est strictement croissante sur $%I \cup J%$.
