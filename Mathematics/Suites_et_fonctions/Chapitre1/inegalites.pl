@@ -20,10 +20,10 @@ questions==
 ** Cocher les propositions vraies
 - Si $% a, b %$ sont des réels et $%a \le b %$, alors $% \frac{1}{a} \ge \frac{1}{b} %$
 + Si $% a, b %$ sont des réels strictement négatifs  et $%a \le b %$, alors $% \frac{1}{a} \ge \frac{1}{b} %$
-- Si $%a,b $ sont des réels et $%a \le b %$, alors $% a^2 \ge b^2 %$
+- Si $%a,b %$ sont des réels et $%a \le b %$, alors $% a^2 \ge b^2 %$
 + Si $% a, b %$ sont des réels strictement négatifs  et $%a \le b %$, alors $% a^2 \ge b^2 %$
 - Si $%f%$ est une fonction strictement croissante sur la partie $%I%$ et strictement croissante sur la partie $%J%$, alors $% f%$ est strictement croissante sur $%I \cup J%$.
-
++ Si $%f%$ est une fonction strictement croissante sur la partie $%I%$ et strictement croissante sur la partie $%J%$ et $I \cap J \neq \emptyset %$, alors $% f%$ est strictement croissante sur $%I \cup J%$.
 
 
 
@@ -38,12 +38,7 @@ questions==
 
 
 ** Cocher les propositions vraies :
-- $% \\{1,-2,3\\} \subset \mathbb{N} %$
-- $% [1,2] \subset \mathbb{N} %$ 
-+  $%\\{ \frac{1}{2}, \frac{1}{5}, \frac{7}{4}\\} \subset \mathbb{D} %$ 
--  $%\\{ \frac{1}{2}, \frac{1}{3}, \frac{7}{4}\\} \subset \mathbb{D} %$ 
-+  $%\\{ \sqrt{2}, e, \frac{\pi}{2} \\} \subset \mathbb{R}\setminus \mathbb{Q} %$
--  $%\\{ \sqrt{2},\sqrt{3},\sqrt{4}  \\} \subset \mathbb{R}\setminus \mathbb{Q} %$  
+  
 
 ** Cocher les propositions vraies 
 + Si $% I %$ et $% J %$ sont des intervalles de $%\mathbb{R}%$  alors $% I \cap J%$ est un intervalle de $%\mathbb{R}%$
