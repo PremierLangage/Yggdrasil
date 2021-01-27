@@ -1,5 +1,5 @@
 # Copyright 2020 Magdalena Kobylanski <magdalena.kobylanski@u-pem.fr>
-author=Magdalena Kobylanski
+# author=Magdalena Kobylanski
 
 title=Commandes Unix en terminal
 tag=system|shell
@@ -23,6 +23,7 @@ questions==
 + La borne sup d'une partie d'un ensemble ordonné est le plus petit des majorants de cette partie. 
 - Toute partie majorée de $%\mathbb{R} %$ admet une borne sup.
 - Toute partie non vide majorée de $%\mathbb{Q} %$ admet une borne sup.
++ Toute partie non vide majorée de $%\mathbb{Z}%$ admet un plus grand élément. 
 
 ** Soit $%A%$ une partie de $%\mathbb{R} %$ et $%a %$ un réel. Cocher les propositions vraies : 
 - Si $% a%$ est la borne sup de $%A%$, alors  $% a%$ est le plus grand élément de $%A%$.
