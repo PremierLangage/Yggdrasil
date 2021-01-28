@@ -13,17 +13,20 @@ QCM sur la partie entière
 intro ==
 Ce quiz contient {{nbstep}} questions.
 
+La fonction partie entière d'un réel $%x%$, que l'on note $%E(x)%$  est définie,  comme l'unique entier $%n%$ tel que $%n\le x < n+1%$
+
 ==
 
 questions==
 
-La fonction partie entière d'un réel $%x%$, que l'on note $%E(x)%$  est définie,  comme l'unique entier $%n%$ tel que $%n\le x < n+1%$
 
 ** Cocher les bonnes réponses 
 + $%E(3/2) = 1%$ 
 + $%E(\pi) =3 %$
+- $%E(\pi) =4 %$
 - $%E(-3/2)=-1%$ 
-+ $%E(-\pi)=4%$
++ $%E(-\pi)= -4%$
+- $%E(-\pi)= -3%$
 
 
 ** Cocher les bonnes réponses 
@@ -34,11 +37,11 @@ La fonction partie entière d'un réel $%x%$, que l'on note $%E(x)%$  est défin
 + La fonction $%x \mapsto x-E(x)%$ est périodique de période $%1%$
 
 ** Cocher les bonnes réponses 
-+ $% \forall x \in \mathbb{R}  \quad E(x) \le x < E(x)+1 $%
-+ $% \forall x \in \mathbb{R} \quad E(x) \le x \le E(x)+1 $%
-- $% \forall x \in \mathbb{R} \quad E(x) +1 \ge x > E(x) $%
-+ $% \forall x \in \mathbb{R} \quad x-1 < E(x) \le x  $%
-- $% \forall x \in \mathbb{R}\quad  x-1 \le E(x) < x  $%
-- $% \forall x \in \mathbb{R} \quad x \le E(x) \le x +1 $%
-+ $% \forall x,y \in \mathbb{R} \quad E(x)+E(y) \le E(x+y) \le E(x)+E(y) +1 $%
++ $% \forall x \in \mathbb{R}  \quad E(x) \le x < E(x)+1 %$
++ $% \forall x \in \mathbb{R} \quad E(x) \le x \le E(x)+1 %$
+- $% \forall x \in \mathbb{R} \quad E(x) +1 \ge x > E(x) %$
++ $% \forall x \in \mathbb{R} \quad x-1 < E(x) \le x  %$
+- $% \forall x \in \mathbb{R}\quad  x-1 \le E(x) < x  %$
+- $% \forall x \in \mathbb{R} \quad x \le E(x) \le x +1 %$
++ $% \forall x,y \in \mathbb{R} \quad E(x)+E(y) \le E(x+y) \le E(x)+E(y) +1 %$
 ==
