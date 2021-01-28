@@ -20,13 +20,13 @@ Ce quiz contient {{nbstep}} questions.
 
 questions==
 
-** Cocher les propositions vraies
+**  $%f%$ désigne une fonction numérique et $%I%$ et $%J%$ des parties de $%\mathbb{R}%$. Cocher les propositions vraies
 - Si $% a, b %$ sont des réels et $%a \le b %$, alors $% \frac{1}{a} \ge \frac{1}{b} %$
 + Si $% a, b %$ sont des réels strictement négatifs  et $%a \le b %$, alors $% \frac{1}{a} \ge \frac{1}{b} %$
 - Si $%a,b %$ sont des réels et $%a \le b %$, alors $% a^2 \le b^2 %$
 + Si $% a, b %$ sont des réels strictement négatifs  et $%a \le b %$, alors $% a^2 \ge b^2 %$
-- Si $%f%$ est une fonction strictement croissante sur la partie $%I%$ et strictement croissante sur la partie $%J%$, alors $% f%$ est strictement croissante sur $%I \cup J%$.
-+ Si $%f%$ est une fonction strictement croissante sur la partie $%I%$ et strictement croissante sur la partie $%J%$ et $% I \cap J \neq \emptyset %$, alors $% f%$ est strictement croissante sur $%I \cup J%$.
+- Si $%f%$ est  croissante sur  $%I%$ et  croissante sur $%J%$, alors $% f%$ est croissante sur $%I \cup J%$.
++ Si $%f%$ est  croissante sur  $%I%$ et croissante sur $%J%$ et $% I \cap J \neq \emptyset %$, alors $% f%$ est croissante sur $%I \cup J%$.
 
 
 
