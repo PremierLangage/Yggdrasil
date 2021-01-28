@@ -6,8 +6,9 @@ tag=system|shell
 
 extends=/model/AMC_TXT.pl
 
+
 title==
-QCM sur les ensembles de nombre
+QCM "ensembles de nombre"
 ==
 
 intro ==
