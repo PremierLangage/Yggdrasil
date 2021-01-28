@@ -25,8 +25,8 @@ questions==
 + Si $% a, b %$ sont des réels strictement négatifs  et $%a \le b %$, alors $% \frac{1}{a} \ge \frac{1}{b} %$
 - Si $%a,b %$ sont des réels et $%a \le b %$, alors $% a^2 \le b^2 %$
 + Si $% a, b %$ sont des réels strictement négatifs  et $%a \le b %$, alors $% a^2 \ge b^2 %$
-- Si $%f%$ est  croissante sur  $%I%$ et  croissante sur $%J%$, alors $% f%$ est croissante sur $%I \cup J%$.
-+ Si $%f%$ est  croissante sur  $%I%$ et croissante sur $%J%$ et $% I \cap J \neq \emptyset %$, alors $% f%$ est croissante sur $%I \cup J%$.
+- Si $%f%$ est  croissante sur  $%I%$ et sur $%J%$, alors $% f%$ est croissante sur $%I \cup J%$.
++ Si $%f%$ est  croissante sur  $%I%$ et sur $%J%$ et $% I \cap J \neq \emptyset %$, alors $% f%$ est croissante sur $%I \cup J%$.
 
 
 
