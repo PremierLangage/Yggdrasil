@@ -1,15 +1,18 @@
 
-
 # template Tout nouveau malheuresement... feedback pas encore programmé...
 extends=/ComputerScience/C/examples/Stoi_le_caroussel.pl
 
 
-author = Enseignants de suites et fonctions (MK) 
+author = Enseignants Suites et Fonctions (MK)
 
 
-title==
-QCM "ensembles de nombre"
-==
+# pour changer le nombre de question, c'est en dessous (10 MAX)
+# si le nombre est plus petit que 10, ce sera un tirage aléatoire
+# sans remise parmi le tas de questions.
+nb_quest_voulu = 4
+
+title= carroussel ensembles de nombres
+
 
 intro ==
 Ce quiz contient {{nbstep}} questions.
