@@ -4,10 +4,10 @@ Voici quelques exercices à faire de préférence après avoir relu vos notes de
 
 == 
 title= QCM Semaine 1
-@ensembles_de_nombres.pl
-@inegalites.pl
-@sup.pl
-@QCMPartie_entière.pl
+@Mathematics/Suites_et_fonctions/Chapitre1/ensembles_de_nombres.pl
+@Mathematics/Suites_et_fonctions/Chapitre1/inegalites.pl
+@Mathematics/Suites_et_fonctions/Chapitre1/sup.pl
+@Mathematics/Suites_et_fonctions/Chapitre1/QCMPartie_entière.pl
 
 
 
