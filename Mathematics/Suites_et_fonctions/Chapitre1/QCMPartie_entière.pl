@@ -1,19 +1,23 @@
-# Copyright 2020 Magdalena Kobylanski <magdalena.kobylanski@u-pem.fr>
-# author=Magdalena Kobylanski
 
-title=Commandes Unix en terminal
-tag=system|shell
+# template Tout nouveau malheuresement... feedback pas encore programmé...
+extends=/ComputerScience/C/examples/Stoi_le_caroussel.pl
 
-extends=/model/AMC_TXT.pl
 
-title==
-QCM sur la partie entière 
-==
+author = Enseignants Suites et Fonctions (MK)
+
+
+# pour changer le nombre de question, c'est en dessous (10 MAX)
+# si le nombre est plus petit que 10, ce sera un tirage aléatoire
+# sans remise parmi le tas de questions.
+nb_quest_voulu = 4
+
+title= carroussel partie entière
+
 
 intro ==
 Ce quiz contient {{nbstep}} questions.
 
-La fonction partie entière d'un réel $%x%$, que l'on note $%E(x)%$  est définie,  comme l'unique entier $%n%$ tel que $%n\le x < n+1%$
+La partie entière d'un réel $%x%$, notée $%E(x)%$  est définie,  comme l'unique entier $%n%$ tel que $%n\le x < n+1%$
 
 ==
 
