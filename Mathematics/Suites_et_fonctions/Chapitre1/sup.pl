@@ -45,10 +45,10 @@ questions==
 + $%a= \sup(A)%$ si [($% \forall x \in A \quad x \le a%$) et ($% \forall b \in E \quad  (\forall x \in A \quad x \le b) \implies a \le b %$)
 - $%a= \inf(A)%$ si :  [($% \forall x \in A \quad a \le x%$) et ($% \forall b \in E \quad  (\forall x \in A \quad b \le x) \implies a \le b %$)
 
-** Cocher les propositions vraies :
-- Si $% f %$ est une fonction numérique croissante et $% I %$ est un intervalle borné, alors $%f(I)%$ est borné et $% \sup(f(I)) = f(\sup(I)) %$
-- Si $% f %$ est une fonction numérique croissante et $% I %$ est un intervalle borné, alors $%f(I)%$ est borné et $% \sup(f(I)) > f(\sup(I)) %$
-+ Si $% f %$ est une fonction numérique croissante et $% I %$ est une partie majorée, alors $%f(I)%$ est majorée et $% \sup(f(I)) \le  f(\sup(I)) %$
-+  Si $% f %$ est une fonction numérique croissante et $% I %$ est une partie majorée qui admet un plus grand élément, alors $%f(I)%$ admet un plus grand élément et  et $% \max(f(I)) = f(\max(I)) %$
+** Dans cette exercice $%f%$ désigne une fonction numérique et $% I%$ une partie de $%\mathbb{R}%$. Cocher les propositions vraies :
+- Si $% f %$ est croissante et $% I %$ est borné, alors $%f(I)%$ est borné et $% \sup(f(I)) = f(\sup(I)) %$
+- Si $% f %$ est croissante et $% I %$ est borné, alors $%f(I)%$ est borné et $% \sup(f(I)) > f(\sup(I)) %$
++ Si $% f %$ est croissante et $% I %$ est  majorée, alors $%f(I)%$ est majorée et $% \sup(f(I)) \le  f(\sup(I)) %$
++  Si $% f %$ est croissante et $% I %$ est admet un plus grand élément, alors $%f(I)%$ aussi et $% \max(f(I)) = f(\max(I)) %$
   
 ==
