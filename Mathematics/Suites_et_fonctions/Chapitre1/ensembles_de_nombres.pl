@@ -1,10 +1,10 @@
-# Copyright 2020 Magdalena Kobylanski <magdalena.kobylanski@u-pem.fr>
-author=Magdalena Kobylanski
 
-title=Commandes Unix en terminal
-tag=system|shell
 
-extends=/model/AMC_TXT.pl
+# template Tout nouveau malheuresement... feedback pas encore programmé...
+extends=/ComputerScience/C/examples/Stoi_le_caroussel.pl
+
+
+author = Enseignants de suites et fonctions (MK) 
 
 
 title==
