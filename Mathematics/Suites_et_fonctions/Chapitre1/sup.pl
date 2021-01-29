@@ -30,6 +30,7 @@ questions==
 + Toute partie non vide majorée de $%\mathbb{Z}%$ admet un plus grand élément. 
 
 ** Soit $%A%$ une partie de $%\mathbb{R} %$ et $%a %$ un réel. Cocher les propositions vraies : 
+- Si $% a%$ est un majorant de $%A%$, alors  $% a \notin A%$.
 - Si $% a%$ est la borne sup de $%A%$, alors  $% a%$ est le plus grand élément de $%A%$.
 + Si $% a%$ est le plus grand élément de $%A%$, alors  $% a%$ est la borne sup de $%A%$.
 + Si $% a%$ est le plus grand élément de $%A%$, alors $% a \in A%$.
@@ -45,7 +46,7 @@ questions==
 + $%a= \sup(A)%$ si [($% \forall x \in A \quad x \le a%$) et ($% \forall b \in E \quad  (\forall x \in A \quad x \le b) \implies a \le b %$)
 - $%a= \inf(A)%$ si :  [($% \forall x \in A \quad a \le x%$) et ($% \forall b \in E \quad  (\forall x \in A \quad b \le x) \implies a \le b %$)
 
-** Dans cette exercice $%f%$ désigne une fonction numérique et $% I%$ une partie de $%\mathbb{R}%$. Cocher les propositions vraies :
+** Dans cet exercice $%f%$ désigne une application de $%\mathbb{R}%$ dans $%\mathbb{R}%$  et $% I%$ une partie de $%\mathbb{R}%$. Cocher les propositions vraies :
 - Si $% f %$ est croissante et $% I %$ est borné, alors $%f(I)%$ est borné et $% \sup(f(I)) = f(\sup(I)) %$
 - Si $% f %$ est croissante et $% I %$ est borné, alors $%f(I)%$ est borné et $% \sup(f(I)) > f(\sup(I)) %$
 + Si $% f %$ est croissante et $% I %$ est  majorée, alors $%f(I)%$ est majorée et $% \sup(f(I)) \le  f(\sup(I)) %$
