@@ -191,20 +191,19 @@ form==#|html|
   <div style="margin-left:15%; margin-right:15%;">
   <u>Ce vendredi 22 janvier 2021 :</u><br>
   <ul>
-    <li>Kevin MARTIN, Nathan LEMOINE, Raphaël BOURJOT :<br><b>Les Hooks de ReactJS</b></li>
-    <li>Karim KHEROUA, Abdou FALL, Benoît QUANTIN :<br><b>Paiement mobile : SE vs HCE</b></li>
-    <li>Anais DESCOMBES, Axel DURAND, Ludovic SOUSTRE :<br><b>RGPD et sa mise en oeuvre</b></li>
-    <li>Mélissa DA COSTA, Altan SORAN, Tanguy Traina :<br><b>React VS Svelte</b></li>
+    <li>Anaïs DESCOMBES, Axel DURAND, Tanguy TRAINA :<br><b>practical Byzantine Fault Tolerance (pBFT) vs Sybil attacks</b></li>
+    <li>Judicaël Koffi, Emilie Marti, Christelle Nguyen :<br><b>LoRa, Sigfox ou NB-IoT …. Quel réseau IoT choisir ?</b></li>
+    <li>Kylian BOHL, Raphaël BOURJOT, Dylan JOLIVET :<br><b>Quel niveau RAID est le mieux adapté à mes besoins ?</b></li>
+    <li>Abdou FALL, Karim KHEROUA, Benoit QUANTIN :<br><b>Expliquer les solutions SDNs et NFVs et leurs apports. Montrer sur en exemple la mise en oeuvre de ces deux solutions</b></li>
 
-    <li>Lisa, Julien, Jonathan :<br><b>Galileo</b></li>
-    <li>Yoann Sicot, Nicolas Fau, Salim Merchermek :<br><b>React VS Vue</b></li>
-    <li>Kylian, Jean-Philippe, Dylan :<br><b>SAN, un bon investissement ?</b></li>
-    <li>Yohann Jolivet, Rémi Marsal, Sacha Ouziel :<br><b>Gaz à Effet de Serre et Internet</b></li>
+    <li>Yoann SICOT, Jean-Philippe WINCKLER , Nathan LEMOINE :<br><b>Pourquoi Kubernetes est en train de devenir un standard de facto ?<br><b>
+    <li>Guillaume C, Salim M, Jonathan CRÉTÉ :<br><b>Flutter vs React native vs Xamarin<br><b>
+    <li>Kevin MARTIN, Altan SORAN, Mélissa DA COSTA :<br><b>Rust, est-il vraiment le langage de l'avenir ?<br><b>
+    <li>Nicolas FAU, Léo Ouch, Vincent A. :<br><b>VueJS vs AngularJS<br><b>
 
-    <li>Léo, Christelle, Emilie :<br><b>Green IT : forcément des sacrifices ou bien des opportunités économiques?</b></li>
-    <li>Guillaume Matheco, Nils Pernet :<br><b>Géolocalisation Indoor</b></li>
-    <li>Nicolas Baticle, Chanhinaz Dindane :<br><b>Précision du signal et qualité du service</b></li>
-    <li>Guillaume Cau, Vincent Agullo, Judicaël Koffi :<br><b>Le futur de SD-WAN à 3 ans ?</b></li>
+    <li>Guillaume MATHECOWITSCH, Julien BESSODES, Nils PERNET :<br><b>Voiture 3<br><b>
+    <li>Nicolas B, Chahinaz, Ludovic :<br><b>Positionnement<br><b>
+    <li>Lisa Mechouk, Sacha Ouziel, Yohann JOLIVET :<br><b>Cloud<br><b>
   </ul>
   </div>
   <div style="margin-left:15%; margin-right:15%;">
