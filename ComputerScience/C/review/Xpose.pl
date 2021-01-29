@@ -196,14 +196,14 @@ form==#|html|
     <li>Kylian BOHL, Raphaël BOURJOT, Dylan JOLIVET :<br><b>Quel niveau RAID est le mieux adapté à mes besoins ?</b></li>
     <li>Abdou FALL, Karim KHEROUA, Benoit QUANTIN :<br><b>Expliquer les solutions SDNs et NFVs et leurs apports. Montrer sur en exemple la mise en oeuvre de ces deux solutions</b></li>
 
-    <li>Yoann SICOT, Jean-Philippe WINCKLER , Nathan LEMOINE :<br><b>Pourquoi Kubernetes est en train de devenir un standard de facto ?<br><b>
-    <li>Guillaume C, Salim M, Jonathan CRÉTÉ :<br><b>Flutter vs React native vs Xamarin<br><b>
-    <li>Kevin MARTIN, Altan SORAN, Mélissa DA COSTA :<br><b>Rust, est-il vraiment le langage de l'avenir ?<br><b>
-    <li>Nicolas FAU, Léo Ouch, Vincent A. :<br><b>VueJS vs AngularJS<br><b>
+    <li>Yoann SICOT, Jean-Philippe WINCKLER , Nathan LEMOINE :<br><b>Pourquoi Kubernetes est en train de devenir un standard de facto ?</b></li>
+    <li>Guillaume C, Salim M, Jonathan CRÉTÉ :<br><b>Flutter vs React native vs Xamarin</b></li>
+    <li>Kevin MARTIN, Altan SORAN, Mélissa DA COSTA :<br><b>Rust, est-il vraiment le langage de l'avenir ?</b></li>
+    <li>Nicolas FAU, Léo Ouch, Vincent A. :<br><b>VueJS vs AngularJS</b></li>
 
-    <li>Guillaume MATHECOWITSCH, Julien BESSODES, Nils PERNET :<br><b>Voiture 3<br><b>
-    <li>Nicolas B, Chahinaz, Ludovic :<br><b>Positionnement<br><b>
-    <li>Lisa Mechouk, Sacha Ouziel, Yohann JOLIVET :<br><b>Cloud<br><b>
+    <li>Guillaume MATHECOWITSCH, Julien BESSODES, Nils PERNET :<br><b>Voiture 3</b></li>
+    <li>Nicolas B, Chahinaz, Ludovic :<br><b>Positionnement</b></li>
+    <li>Lisa Mechouk, Sacha Ouziel, Yohann JOLIVET :<br><b>Cloud</b></li>
   </ul>
   </div>
   <div style="margin-left:15%; margin-right:15%;">
