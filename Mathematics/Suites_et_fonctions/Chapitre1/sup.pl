@@ -37,7 +37,7 @@ questions==
 - Si $% a%$ est la borne sup de $%A%$, alors $% a \in A%$.
 -  Si $% a%$ est la borne sup de $%A%$, alors $% a \notin A%$.
 
-** Soit $%(E, \le )%$ un ensemble ordonné $%A%$ une partie de $%E%$ et $%a\in E%$. 
+** Soit $%(E, \le )%$ un ensemble ordonné, $%A%$ une partie de $%E%$ et $%a\in E%$. 
 + $%a%$ est un majorant de $%A%$ si ($% \forall x \in A \quad x \le a%$).
 - $%A%$ est majorée si ($% \forall x \in A \quad \exists m \in E \quad  x \le m%$).
 + $%A%$ est majorée si ($% \exists m \in E \quad \forall x \in A \quad  x \le m%$).
