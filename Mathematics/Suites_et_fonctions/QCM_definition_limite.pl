@@ -5,7 +5,7 @@ author=Magdalena Kobylanski
 title=Commandes Unix en terminal
 tag=system|shell
 
-extends=/model/AMC_TXT.pl
+extends=/ComputerScience/C/examples/Stoi_le_caroussel.pl
 
 title==
 QCM sur la défintion des limites de fonctions
@@ -22,7 +22,7 @@ questions==
 * $%\lim_{x\to 0} f(x) = 2 %$ signifie :
 + $%\forall \varepsilon >0 \quad \exists \eta>0 \quad \forall x\in D_f \quad |x|\le \eta  \implies |f(x)-2|\le \varepsilon %$
 - $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \quad |x|\le \eta \implies |f(x)-2|\le \varepsilon %$
-
+- $%\forall \varepsilon \ge 0 \quad \exists \eta\ge 0  \quad \forall x\in D_f \quad |x|\le \eta \implies |f(x)-2|\le \varepsilon %$
 
 
 
