@@ -43,8 +43,8 @@ questions==
 + $%A%$ est majorée si ($% \exists m \in E \quad \forall x \in A \quad  x \le m%$).
 + $%a%$ est le plus grand élément de $%A%$ si : $%  \quad  ( \forall x \in A \quad x \le a \quad %$ et $% \quad a \in A%$).
 - $%a%$ est le plus petit élément de $%A%$ si  : $%  \quad  ( \forall x \in A \quad a \le x%$).
-+ $%a= \sup(A)%$ si [($% \forall x \in A \quad x \le a%$) et ($% \forall b \in E \quad  (\forall x \in A \quad x \le b) \implies a \le b %$)
-- $%a= \inf(A)%$ si :  [($% \forall x \in A \quad a \le x%$) et ($% \forall b \in E \quad  (\forall x \in A \quad b \le x) \implies a \le b %$)
++ $%a= \sup(A) \quad %$ si $% \quad ( \forall x \in A \quad x \le a%$) et ($% \forall b \in E \quad  (\forall x \in A \quad x \le b) \implies a \le b %$)
+- $%a= \inf(A) \quad %$ si : $%\quad ( \forall x \in A \quad a \le x%$) et ($% \forall b \in E \quad  (\forall x \in A \quad b \le x) \implies a \le b %$)
 
 ** Dans cet exercice $%f%$ désigne une application de $%\mathbb{R}%$ dans $%\mathbb{R}%$  et $% I%$ une partie de $%\mathbb{R}%$. Cocher les propositions vraies :
 - Si $% f %$ est croissante et $% I %$ est borné, alors $%f(I)%$ est borné et $% \sup(f(I)) = f(\sup(I)) %$
