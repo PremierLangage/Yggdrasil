@@ -33,13 +33,18 @@ questions==
 - $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \quad |x|\le \eta \implies |f(x)-3|\le \varepsilon %$
 - $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \quad |x-3|\ge \eta \implies |f(x)-3|\le A %$
 
-** $%\lim_{x\to 1^+} f(x) = 5 %$ signifie :
+* $%\lim_{x\to 1^+} f(x) = 5 %$ signifie :
 + $%\forall \varepsilon >0 \quad \exists \eta>0 \quad \forall x\in D_f \quad 1<x\le 1+ \eta  \implies |f(x)-5|\le \varepsilon %$
 - $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \quad |x-1|\le \eta \mbox{ et } x>1 \implies |f(x)-5|\le \varepsilon %$
 - $%\forall \varepsilon >0 \quad \exists \eta>0 \quad \forall x\in D_f \quad 1<x\le 1+ \eta  \implies |f(x)-3|\le \varepsilon %$
 - $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \quad |x-1|\le \eta \mbox{ et } x>1 \implies |f(x)-5|\ge \varepsilon %$
  
-
+** $%\lim_{x\to 5^-} f(x) = -\infty %$ signifie :
++ $%\forall A \in \mathbb{R} \quad \exists \eta>0 \quad \forall x\in D_f \quad 5-\eta \le x\le 5 \implies f(x)\le A %$
+- $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \quad |x-5|\le \eta \mbox{ et } x<5 \implies |f(x)-5|\ge \varepsilon %$
++ $%\forall \varepsilon >0 \quad \exists \eta>0 \quad \forall x\in D_f \quad |x-5|\le \eta \mbox{ et } x<5  \implies f(x)\le -\varepsilon %$
+- $%\forall \varepsilon \ge 0 \quad \exists \eta>0  \quad \forall x\in D_f \quad |x-1|\le \eta \mbox{ et } x>1 \implies |f(x)-5|\ge \varepsilon %$
+ 
 
 
 ==
