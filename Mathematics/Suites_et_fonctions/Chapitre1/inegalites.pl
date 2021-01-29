@@ -47,6 +47,6 @@ questions==
 -  $% \forall x,y \in \mathbb{R} \quad  |x| \le |x+y| - |y| %$
 + $% \forall x,y \in \mathbb{R}  \quad  |x| - |y| \le |x-y| %$
 + $% \forall x,y \in \mathbb{R} \quad   |x| \le a  \Leftrightarrow  -a \le x \le a %$
-+ $% \forall x,y \in \mathbb{R} \quad  ||x|-|y|| \le |x+y| \le [x] + |y| %$
++ $% \forall x,y \in \mathbb{R} \quad  ||x|-|y|| \le |x-y| \le |x| + |y| %$
 
 ==
