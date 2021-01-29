@@ -189,7 +189,7 @@ form==#|html|
 
 <div class="item active">
   <div style="margin-left:15%; margin-right:15%;">
-  <u>Ce vendredi 22 janvier 2021 :</u><br>
+  <u>Ce vendredi 29 janvier 2021 :</u><br>
   <ul>
     <li>Anaïs DESCOMBES, Axel DURAND, Tanguy TRAINA :<br><b>practical Byzantine Fault Tolerance (pBFT) vs Sybil attacks</b></li>
     <li>Judicaël Koffi, Emilie Marti, Christelle Nguyen :<br><b>LoRa, Sigfox ou NB-IoT …. Quel réseau IoT choisir ?</b></li>
