@@ -60,8 +60,10 @@ actualisation sinon le bouton valider semblent inopérant.
 
 @ /ComputerScience/OperatingSystem/exercises/Bash/sandbox_investigation/logiciel_sandbox.pl
 
-@ /ComputerScience/C/examples/mouse.pl
-
 @ /ComputerScience/OperatingSystem/exercises/Bash/sandbox_investigation/gcc_version.pl
 
+@ /ComputerScience/C/examples/mouse.pl
+
 @ /ComputerScience/OperatingSystem/exercises/Bash/sandbox_investigation/user_name.pl
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/sandbox_investigation/moo.pl
