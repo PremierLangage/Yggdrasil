@@ -15,6 +15,7 @@
 #*****************************************************************************
 
 @ /utils/sandboxio.py
+@ utils_bash.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
@@ -33,7 +34,7 @@ Quel est le système d'exploitation ?
 ==
 
 text==#|markdown|
-Essayer de determiner quel est le système d'exploitation utilisé dans les sandbox 
+Essayer de determiner quel est la distribution du système d'exploitation utilisé dans les sandbox 
 docker de PLaTon. Vous devriez trouver votre bonheur avec la fonction **uname**.
 
 Pour cela, utiliser 
@@ -48,10 +49,13 @@ form==#|markdown|
 ==
 
 evaluator==#|python|
-moyen = ['Linux', '']
+from utils_bash import display_as_shell_this, frame_message
 
-if r == inputbox.value:
-    grade = (100, '<span class="success-state">Good 👏👏👏</span>')
+moyen = ['Linux', 'linux', 'GNU/Linux']
+good = ['Debian', 'debian']
+
+if r in good:
+    grade = (100, frame_message("C'est bien cela !", "ok"))
 else:
     grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
 ==
