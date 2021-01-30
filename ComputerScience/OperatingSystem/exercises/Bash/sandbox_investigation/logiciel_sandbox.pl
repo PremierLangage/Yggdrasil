@@ -52,6 +52,18 @@ Copernic, inutile d'y installer un environement graphique. Parmi les
 logiciels et utilitaires qui suivent, sélectionner lesquels sont installés sur 
 les sandbox ?
 
+<br>
+
+Pour cela, utiliser 
+<a href="https://pl.u-pem.fr/filebrowser/demo/38096/" target="blank">
+l'émulateur de terminal sur sandbox
+</a>.
+
+<br>
+
+*Si le bouton valider ne fait rien, copier votre réponse dans le presse-papier, 
+actualiser et recoller votre réponse avant de revalider.*
+
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
