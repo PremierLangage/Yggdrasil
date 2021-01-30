@@ -60,10 +60,6 @@ Pour cela, utiliser
 l'émulateur de terminal sur sandbox
 </a>.
 
-<br>
-
-*Si le bouton valider ne fait rien, actualiser et refaites votre sélection avant de revalider.*
-
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
