@@ -30,15 +30,13 @@ before==#|python|
 ==
 
 title==#|markdown|
-Taille de la partition contentant la racine ?
+Quelle est l'heure des sandbox ?
 ==
 
 text==#|markdown|
-Quelle la taille totale (en version lisible par un humain (human-readable)) 
-du disque logique (système de fichiers Unix) qui cotient le repertoire 
-racine des sandbox ? Si votre taille est en Méga, il faudra fournir une 
-réponse du type xxxM (745M par exemple). Il se peut aussi que la taille 
-soit en Giga, auquel cas la réponse sera de la forme yyyG (121G par exemple).
+En utilisant la commande **date** judiscieusement, essayer de trouver l'heure 
+des sandbox. On veut juste l'entier entre 0 et 23 qui décrit l'heure du 
+système en cours d'éxécution sur les sandbox.
 
 <br>
 
