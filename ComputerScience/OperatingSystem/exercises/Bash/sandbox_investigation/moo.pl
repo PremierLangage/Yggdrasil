@@ -47,7 +47,7 @@ Debian, une distribution gratuite réputée pour sa robustesse.
 
 Donner la commande donc l'exécution sur l'émulateur de terminal donne ça :
 
-![Avez-vous meuglé aujourd'hui ?]({{ img_moo }}=100x)
+![Avez-vous meuglé aujourd'hui ?]({{ img_moo }}=100x200)
 
 
 <br>
