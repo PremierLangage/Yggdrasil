@@ -29,7 +29,7 @@ un système d'exploiation, c'est une application web. Mais cette application
 web résout vraiment des problèmes extrêment fins de système, comme par exemple
 exécuter massivement du code proposé par des élèves dans un environement 
 sécurisé (imaginez, en deux ans et sur 880 000 propositions, combien de 
-boucles infinies, dans divers langage, ont été envoyées à PLaTon ?). 
+boucles infinies, dans divers langages, ont été envoyées à PLaTon ?). 
 
 Ménagez les fragiles sandbox de PLaTon ! Il y a une différence entre ouvrir le
 capot de la voiture et donner des coups de masse sur ce dernier. Ce TP est 
