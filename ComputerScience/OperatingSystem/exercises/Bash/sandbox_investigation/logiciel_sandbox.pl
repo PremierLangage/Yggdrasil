@@ -15,7 +15,7 @@
 #*****************************************************************************
 
 @ /utils/sandboxio.py
-
+@ /ComputerScience/OperatingSystem/templates/utils_bash.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
@@ -74,6 +74,8 @@ form==#|markdown|
 
 # EVALUATE THE STUDENT ANSWER
 evaluator==#|python|
+from utils_bash import display_as_shell_this, frame_message
+
 right = 0
 total = 0
 for item in group.items:
@@ -92,12 +94,12 @@ for item in group.items:
 
 
 if total == right:
-    grade = (100, "C'est exactement ça !")
+    grade = (100, frame_message("C'est exactement ça !", "ok"))
 else:
-    feedb = "Vous avez fait "+str(total-right)
+    feedb = "Bravo Vous avez fait "+str(total-right)
     if total-right > 1 :
         feedb += " erreurs."
     else:
         feedb += " erreur."
-    grade = ((right*100 // total), feedb)
+    grade = ((right*100 // total), frame_message(feedb, "error"))
 ==
