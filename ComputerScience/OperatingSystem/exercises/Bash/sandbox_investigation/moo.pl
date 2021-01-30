@@ -47,7 +47,7 @@ Debian, une distribution gratuite réputée pour sa robustesse.
 
 Donner la commande donc l'exécution sur l'émulateur de terminal donne ça :
 
-<img src="{{ img_moo }}" alt="Avez-vous meuglé aujourd'hui ?" width="50%" />
+<img src="{{ img_moo }}" alt="Avez-vous meuglé aujourd'hui ?" width="50px" />
 
 
 <br>
