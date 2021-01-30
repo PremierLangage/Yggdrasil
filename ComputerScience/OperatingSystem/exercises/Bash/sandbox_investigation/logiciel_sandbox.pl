@@ -49,7 +49,7 @@ rapides et performants, il faut que ces systèmes soient les plus légers
 possibles. Comme ce sont des systèmes virtuels réveillés à la
 demande sur une énorme bête de course située dans le sous-sol du bâtiment 
 Copernic, inutile d'y installer un environement graphique. Parmi les 
-logiciels et utilitaires qui suivent, dire lesquels sont installé sur 
+logiciels et utilitaires qui suivent, sélectionner lesquels sont installés sur 
 les sandbox ?
 
 ==
