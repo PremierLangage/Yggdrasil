@@ -46,7 +46,9 @@ pour sa robustesse.
 
 <br>
 
-Donner la commande donc l'exécution sur l'émulateur de terminal donne ça :
+Donner la commande dont l'exécution sur l'émulateur de terminal donne ce qui 
+suit (sauf la tâche rouge bien sûr, c'est l'anti-spoiler ça !)
+
 
 <img src="{{ img_moo }}" alt="Avez-vous meuglé aujourd'hui ?" style="width:50%" />
 
