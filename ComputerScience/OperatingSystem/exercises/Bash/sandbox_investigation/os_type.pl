@@ -34,8 +34,9 @@ Quel est le système d'exploitation ?
 ==
 
 text==#|markdown|
-Essayer de determiner quel est la distribution du système d'exploitation utilisé dans les sandbox 
-docker de PLaTon. Vous devriez trouver votre bonheur avec la fonction **uname**.
+Essayer de determiner quel est la **distribution** du système d'exploitation utilisé 
+dans les sandbox docker de PLaTon. Vous devriez trouver votre bonheur avec la 
+fonction **uname** par exemple.
 
 <br>
 
