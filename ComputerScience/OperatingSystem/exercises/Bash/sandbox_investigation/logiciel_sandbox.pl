@@ -32,11 +32,12 @@ group.items = []
 group.items.append({"id": "y1", "content": "la suite de compilation **gcc**"})
 group.items.append({"id": "y2", "content": "le compilateur Haskell **ghc**"})
 group.items.append({"id": "y3", "content": "un interprèteur **python3**"})
+group.items.append({"id": "y4", "content": "l'utilitaire Unix **make**"})
 
 group.items.append({"id": "n1", "content": "le compilateur C **clang**"})
 group.items.append({"id": "n2", "content": "le manuel Unix **man**"})
 group.items.append({"id": "n3", "content": "l'utilitaire Unix **less**"})
-
+group.items.append({"id": "n4", "content": "la librairie graphiqe **libMLV**"})
 
 random.shuffle(group.items)
 ==
@@ -77,15 +78,17 @@ right = 0
 total = 0
 for item in group.items:
     checked = item['checked']
-    content = int(item['content'])
-    if content % 2 == 0:
-        total += 1
-        item['css'] = 'success-border animated pulse infinite'
-        if checked:
-            right += 1
-            item['css'] = 'success-border'
-    elif checked:
-        item['css'] = 'error-border'
+    total += 1
+    if ('y' in item['id'] and checked):
+        item['css'] = 'success-border'
+        right += 1
+    elif ('n' in item['id'] and not checked):
+        right += 1
+    else:
+        if checked :
+            item['css'] = 'error-border'
+        else:
+            item['css'] = 'success-border animated pulse infinite'
 
 
 if total == 0:
