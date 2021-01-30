@@ -59,16 +59,14 @@ import subprocess
 from utils_bash import display_as_shell_this, frame_message
 
 sp = subprocess.run(["/bin/uname", "-r"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
-spout = sp.stdout.decode()
+solution = sp.stdout.decode()
 # errout = sp.stderr.decode()
 # returncode = sp.returncode
-
-solution = spout
 
 if inputbox.value == solution:
     grade = (100, frame_message("C'est bien cela !", "ok"))
 else:
-    grade = (0, frame_message("Ce n'est pas la bonne réponse...", "error"))
+    grade = (0, frame_message("Ce n'est pas la bonne réponse..."+solution, "error"))
 ==
 
 
