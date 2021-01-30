@@ -43,7 +43,7 @@ Inutile donc indispensable ! Comme vos enseignants les plus ravagés, les
 developpeurs de Debian sont des sacrés bout en train. C'est très sérieux 
 Debian, une distribution gratuite réputée pour sa robustesse. 
 
-<br>
+<br> 
 
 Donner la commande donc l'exécution sur l'émulateur de terminal donne ça :
 
