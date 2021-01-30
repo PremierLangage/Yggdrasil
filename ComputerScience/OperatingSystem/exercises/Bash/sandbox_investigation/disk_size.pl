@@ -20,7 +20,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 author=Nicolas Borie
-tag=système|Unix|terminal|disques|fichiers
+tag=système|Unix|terminal|disques|système de fichiers
 
 inputbox =: Input
 inputbox.type = text
