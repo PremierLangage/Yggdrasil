@@ -54,10 +54,10 @@ from utils_bash import display_as_shell_this, frame_message
 moyen = ['Linux', 'linux', 'GNU/Linux']
 good = ['Debian', 'debian']
 
-if r in good:
+if inputbox.value in good:
     grade = (100, frame_message("C'est bien cela !", "ok"))
 else:
-    if r in moyen:
+    if inputbox.value in moyen:
         grade = (50, frame_message("C'est presque ça, vous avez donné le système d'exploitation mais pas la distribution.", "warning"))
     else:
         grade = (0, frame_message("Ce n'est pas la bonne réponse", "error"))
