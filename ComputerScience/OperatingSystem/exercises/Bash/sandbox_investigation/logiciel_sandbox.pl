@@ -92,7 +92,12 @@ for item in group.items:
 
 
 if total == 0:
-    grade = (100, 'Right')
+    grade = (100, "C'est exactement ça !")
 else:
-    grade = ((right / total) * 100, f"{right} / {total}")
+    feedb = "Vous avez fait "+str(total-right)
+    if total-right > 1 :
+        feedb += " erreurs."
+    else:
+        feedb += " erreur."
+    grade = ((right*100 // total), feedb)
 ==
