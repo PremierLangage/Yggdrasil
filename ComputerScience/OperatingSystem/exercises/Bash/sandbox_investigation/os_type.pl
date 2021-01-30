@@ -41,7 +41,7 @@ fonction **uname** par exemple.
 <br>
 
 Pour cela, utiliser 
-<a href="https://pl.u-pem.fr/filebrowser/demo/38058/" target="blank">
+<a href="https://pl.u-pem.fr/filebrowser/demo/38096/" target="blank">
 l'émulateur de terminal sur sandbox
 </a>.
 
