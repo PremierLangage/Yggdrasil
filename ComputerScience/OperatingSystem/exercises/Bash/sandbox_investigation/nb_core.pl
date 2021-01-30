@@ -58,8 +58,9 @@ evaluator==#|python|
 import subprocess
 from utils_bash import display_as_shell_this, frame_message
 
-sp = subprocess.run(['cat /proc/cpuinfo | grep -e "^pro" | wc -l'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
-solution = sp.stdout.decode().replace(' ', '').replace('\n', '')
+cmd = 'cat /proc/cpuinfo | grep -e "^pro" | wc -l'
+sp = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+solution = ps.communicate()[0].decode().replace(' ', '').replace('\n', '')
 # errout = sp.stderr.decode()
 # returncode = sp.returncode
 student_ans = (inputbox.value).replace(' ', '').replace('\n', '')
