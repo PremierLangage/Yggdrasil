@@ -20,20 +20,20 @@ title=À l'assault des sandbox!
 
 introduction==
 Voici des exercices introductifs pour manipuler un peu le terminal. Ici, ce
-sera malheursement un terminal simulé. Ce n'est pas la réalité des entrées 
+sera malheureusement un terminal simulé. Ce n'est pas la réalité des entrées 
 sorties propres du shell. Toutefois, ces petits exercices fonctionneront 
 aussi depuis un smartphone ou une tablette.
 
 Le but est de mettre son nez à l'intérieur du projet PLaTon. PLaTon n'est pas 
-un système d'exploiation, c'est une application web. Mais cette application 
-web résout vraiment des problèmes extrêment fins de système, comme par exemple
-exécuter massivement du code proposé par des élèves dans un environement 
+un système d’exploitation, c'est une application web. Mais cette application 
+web résout vraiment des problèmes extrêmement fins de système, comme par exemple
+exécuter massivement du code proposé par des élèves dans un environnement 
 sécurisé (imaginez, en deux ans et sur 880 000 propositions, combien de 
 boucles infinies, dans divers langages, ont été envoyées à PLaTon ?). 
 
 Ménagez les fragiles sandbox de PLaTon ! Il y a une différence entre ouvrir le
 capot de la voiture et donner des coups de masse sur ce dernier. Ce TP est 
-potentiellement dangeureux pour la plateforme en terme de sécurité mais on 
+potentiellement dangereux pour la plateforme en terme de sécurité mais on 
 vous fait confiance justement. Actuellement, 1750 utilisateurs utilisent la
 plateforme de manière régulière, ne rajoutons pas trop de travail aux 
 développeurs (qui sont des étudiants I.G.M. en L3, M1 et M2 d'informatique 
@@ -45,7 +45,7 @@ vous devez systématiquement actualiser les pages, puis remplir la zone de
 réponse, puis valider (lorsque vous avez plusieurs onglets ouverts sur PLaTon 
 seulement). C'est cette actualisation qui va resynchroniser votre 
 onglet (même si vous en avez plusieurs d'ouverts...). Si vous oubliez cette 
-actualisation, le bouton valider semblent devenir inopérant (voire déclanche 
+actualisation, le bouton valider semblent devenir inopérant (voire déclenche 
 des bugs qui ne sont pas dans le manuel).
 
 Have Fun !
