@@ -22,6 +22,12 @@ Taper une commande dans l'éditeur et cliquer sur valider pour visualiser son ef
 dans un terminal Unix. Cet utilitaire fonctionne sur tout support (smartphone, 
 tablette ou PC) mais essayer d'avoir un linux fonctionnel chez vous pour survivre 
 au second semestre.
+
+<br>
+
+*Si le bouton valider ne fait rien, copier votre réponse dans le presse-papier, 
+actualiser et recoller votre réponse avant de revalider.*
+
 ==
 
 evaluator==#|python|
