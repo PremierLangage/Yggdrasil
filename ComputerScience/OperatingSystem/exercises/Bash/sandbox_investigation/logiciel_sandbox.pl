@@ -31,10 +31,12 @@ group.items = []
 
 group.items.append({"id": "y1", "content": "la suite de compilation **gcc**"})
 group.items.append({"id": "y2", "content": "le compilateur Haskell **ghc**"})
-
-
+group.items.append({"id": "y3", "content": "un interprèteur **python3**"})
 
 group.items.append({"id": "n1", "content": "le compilateur C **clang**"})
+group.items.append({"id": "n2", "content": "le manuel Unix **man**"})
+group.items.append({"id": "n3", "content": "l'utilitaire Unix **less**"})
+
 
 random.shuffle(group.items)
 ==
