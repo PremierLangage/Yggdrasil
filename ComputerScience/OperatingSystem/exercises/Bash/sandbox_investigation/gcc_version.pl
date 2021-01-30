@@ -20,7 +20,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 author=Nicolas Borie
-tag=système|date|Unix|terminal
+tag=système|gcc|Unix|terminal|version
 
 inputbox =: Input
 inputbox.type = text
@@ -33,13 +33,16 @@ before==#|python|
 ==
 
 title==#|markdown|
-Quelle est l'heure des sandbox ?
+Quelle est la version de gcc ?
 ==
 
 text==#|markdown|
-En utilisant la commande **date** judiscieusement, essayer de trouver l'heure 
-des sandbox. On veut juste l'entier entre 0 et 23 qui décrit l'heure du 
-système en cours d'éxécution sur les sandbox.
+On voudrait connaitre le numéro de version complet de l'utilitaire **gcc** 
+installé sur les sandbox. Comme cet utilitaire est très sérieux et que son 
+développement est assuré par des experts, ce numéro de version est composé 
+de trois nombre séparés par des points. Le premier nombre est numéro de 
+**version majeure**, le second est le numéro de **version mineure** et enfin 
+le dernier entier désigne le **numéro de correctif**.
 
 <br>
 
