@@ -68,6 +68,6 @@ student_ans = (inputbox.value).replace(' ', '').replace('\n', '')
 if student_ans == solution:
     grade = (100, frame_message("C'est bien cela !", "ok"))
 else:
-    grade = (0, frame_message("Ce n'est pas la bonne réponse..."+solution, "error"))
+    grade = (0, frame_message("Ce n'est pas la bonne réponse...", "error"))
 ==
 
