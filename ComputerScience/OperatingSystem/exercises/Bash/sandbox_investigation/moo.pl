@@ -39,9 +39,9 @@ Trêve de plaisanterie !
 ==
 
 text==#|markdown|
-Inutile donc indispensable ! Tout comme vos enseignants les plus ravagés, les 
-developpeurs de Debian sont des sacrés bout-en-train, une joyeuse bande de 
-déconneurs. C'est très sérieux Debian, une distribution gratuite réputée 
+Inutile donc indispensable! Tout comme vos enseignants les plus ravagés, les 
+developpeurs de Debian sont des sacrés boute-en-trains, une joyeuse bande de 
+déconneurs. C'est très sérieux Debian, une distribution gratuite et réputée 
 pour sa robustesse. 
 
 <br>
