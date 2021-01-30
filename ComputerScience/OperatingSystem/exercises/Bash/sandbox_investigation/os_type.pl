@@ -57,7 +57,10 @@ good = ['Debian', 'debian']
 if r in good:
     grade = (100, frame_message("C'est bien cela !", "ok"))
 else:
-    grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
+    if r in moyen:
+        grade = (50, frame_message("C'est presque ça, vous avez donné le système d'exploitation mais pas la distribution.", "warning"))
+    else:
+        grade = (0, frame_message("Ce n'est pas la bonne réponse", "error"))
 ==
 
 
