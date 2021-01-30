@@ -61,8 +61,7 @@ l'émulateur de terminal sur sandbox
 
 <br>
 
-*Si le bouton valider ne fait rien, copier votre réponse dans le presse-papier, 
-actualiser et recoller votre réponse avant de revalider.*
+*Si le bouton valider ne fait rien, actualiser et refaites votre sélection avant de revalider.*
 
 ==
 
