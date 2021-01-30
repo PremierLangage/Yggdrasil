@@ -30,7 +30,11 @@ import random
 group.items = []
 
 group.items.append({"id": "y1", "content": "la suite de compilation **gcc**"})
-group.items.append({"id": "y1", "content": "le compilateur Haskell **ghc**"})
+group.items.append({"id": "y2", "content": "le compilateur Haskell **ghc**"})
+
+
+
+group.items.append({"id": "n1", "content": "le compilateur C **clang**"})
 
 random.shuffle(group.items)
 ==
