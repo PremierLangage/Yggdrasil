@@ -71,7 +71,7 @@ from utils_bash import display_as_shell_this, frame_message
 
 cmd = '''gcc --version | head -1'''
 sp = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
-solution = sp.communicate()[0].decode().replace(' ', '').replace('\n', '').split(' ')[-1]
+solution = sp.communicate()[0].decode().split(' ')[-1]
 # errout = sp.stderr.decode()
 # returncode = sp.returncode
 student_ans = (inputbox.value).replace(' ', '').replace('\n', '')
