@@ -66,7 +66,7 @@ else:
     if inputbox.value in moyen:
         grade = (50, frame_message("C'est presque ça, vous avez donné le système d'exploitation mais pas la distribution.", "warning"))
     else:
-        grade = (0, frame_message("Ce n'est pas la bonne réponse", "error"))
+        grade = (0, frame_message("Ce n'est pas la bonne réponse.", "error"))
 ==
 
 
