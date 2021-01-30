@@ -91,7 +91,7 @@ for item in group.items:
             item['css'] = 'success-border animated pulse infinite'
 
 
-if total == 0:
+if total == right:
     grade = (100, "C'est exactement ça !")
 else:
     feedb = "Vous avez fait "+str(total-right)
