@@ -33,16 +33,17 @@ before==#|python|
 ==
 
 title==#|markdown|
-Quelle est la version de gcc ?
+Quel est le nom de l'utilisateur ?
 ==
 
 text==#|markdown|
-On voudrait connaitre le numéro de version complet de l'utilitaire **gcc** 
-installé sur les sandbox. Comme cet utilitaire est très sérieux et que son 
-développement est assuré par des experts, ce numéro de version est composé 
-de trois nombre séparés par des points. Le premier nombre est numéro de 
-**version majeure**, le second est le numéro de **version mineure** et enfin 
-le dernier entier désigne le **numéro de correctif**.
+Quand un exercice s'exécute en sandbox, ça lance un programme. 
+L'utilisateur **root** par exemple peut exécuter des tâches de fond sur 
+les systèmes de type Unix. Comment s'appelle l'utilisateur qui exploite 
+les sandbox ? Attention, le `username@PLaTon:~$>` est un leurre graphique
+html car les sandbox ne connaissent pas les étudiants. Django, par contre,
+sait qui envoie quoi à l'éxécution via une API Rest (plutôt étudiée en 
+master ces API)...
 
 <br>
 
