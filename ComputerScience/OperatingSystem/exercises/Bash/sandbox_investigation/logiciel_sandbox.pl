@@ -25,29 +25,36 @@ tag=système|Unix|terminal|logiciel|utilitaire
 group =: CheckboxGroup
 
 # GENERATE A RANDOM QUESTION
-before==
+before==#|python|
 import random
 group.items = []
-for i in range(4):
-    group.items.append({
-        "id": str(i),
-        "content": str(random.randint(0, 100))
-    })
+
+group.items.append({"id": "y1", "content": "gcc"})
+
+group.items.shuffle()
 ==
 
 title=Quels logiciels/utilitaires peut on trouver sur les sandbox ?
 
-text==
-Quels logiciels/utilitaires peut on trouver sur les sandbox ?
+text==#|markdown|
+Les sandbox sont des systèmes virtuels utilisables à la demande. Pour être 
+rapides et performants, il faut que ces systèmes soient les plus légers 
+possibles. Comme ce sont des systèmes virtuels réveillés à la
+demande sur une énorme bête de course située dans le sous-sol du bâtiment 
+Copernic, inutile d'y installer un environement graphique. Parmi les 
+logiciels et utilitaires qui suivent, dire lesquels sont installé sur 
+les sandbox ?
+
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
-form==
+form==#|markdown|
+
 {{ group|component }}
 ==
 
 # EVALUATE THE STUDENT ANSWER
-evaluator==
+evaluator==#|python|
 right = 0
 total = 0
 for item in group.items:
