@@ -22,21 +22,30 @@ introduction==
 Voici des exercices introductifs pour manipuler un peu le terminal. Ici, ce
 sera malheursement un terminal simulé. Ce n'est pas la réalité des entrées 
 sorties propres du shell. Toutefois, ces petits exercices fonctionneront 
-aussi même depuis un smartphone ou une tablette.
+aussi depuis un smartphone ou une tablette.
 
 Le but est de mettre son nez à l'intérieur du projet PLaTon. PLaTon n'est pas 
 un système d'exploiation, c'est une application web. Mais cette application 
 web résout vraiment des problèmes extrêment fins de système, comme par exemple
-exécuter massivement du code proposé dans des élèves dans un environement 
-sécurisé. 
+exécuter massivement du code proposé par des élèves dans un environement 
+sécurisé (imaginez, en deux ans et sur 880 000 propositions, combien de 
+boucles infinies, dans divers langage, ont été envoyées à PLaTon ?). 
 
 Ménagez les fragiles sandbox de PLaTon ! Il y a une différence entre ouvrir le
 capot de la voiture et donner des coups de masse sur ce dernier. Ce TP est 
 potentiellement dangeureux pour la plateforme en terme de sécurité mais on 
 vous fait confiance justement. Actuellement, 1750 utilisateurs utilisent la
-plateforme de manière régulière.
+plateforme de manière régulière, ne rajoutons pas trop de travail aux 
+développeurs (qui sont des étudiants I.G.M. en L3, M1 et M2 d'informatique 
+et qui ont accès à tous les logs comme D. Revuz ou N. Borie).
 
-Je précise aussi que j'ai accès à tous les logs sur la plateforme...
+Attention, PLaTon semble fragile : il ne veut pas que les utilisateurs 
+utilisent plusieurs onglets en même temps. Pour pallier à ce problème, 
+vous devez systématiquement actualiser les pages, puis remplir la zone de 
+réponse, puis valider (lorsque vous avez plusieurs onglets ouverts sur PLaTon 
+seulement). C'est cette actualisation qui va resynchroniser votre 
+onglet (même si vous en avez plusieurs d'ouverts...). Si vous oubliez cette 
+actualisation sinon le bouton valider semblent inopérant.
 ==
 
 @ /ComputerScience/OperatingSystem/exercises/Bash/sandbox_investigation/os_type.pl
