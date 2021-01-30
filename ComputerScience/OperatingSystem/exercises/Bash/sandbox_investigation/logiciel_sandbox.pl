@@ -31,7 +31,6 @@ group.items = []
 
 group.items.append({"id": "y1", "content": "gcc"})
 
-group.items.shuffle()
 ==
 
 title=Quels logiciels/utilitaires peut on trouver sur les sandbox ?
