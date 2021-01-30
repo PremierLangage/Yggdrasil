@@ -1,0 +1,47 @@
+#*****************************************************************************
+#  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+author=Nicolas Borie
+
+title=À l'assault des sandbox !
+
+introduction==
+Voici des exercices introductifs pour manipuler un peu le terminal. Ici, ce
+sera malheursement un terminal simulé. Ce n'est pas la réalité des entrées 
+sorties propres du shell. Toutefois, ces petits exercices fonctionneront 
+aussi même depuis un smartphone ou une tablette.
+
+Le but est de mettre son nez à l'intérieur du projet PLaTon. PLaTon n'est pas 
+un système d'exploiation, c'est une application web. Mais cette application 
+web résout vraiment des problèmes extrêment fins de système, comme par exemple
+exécuter massivement du code proposé dans des élèves dans un environement 
+sécurisé. 
+
+Ménagez les fragiles sandbox de PLaTon ! Il y a une différence entre ouvrir le
+capot de la voiture et donner des coups de masse sur ce dernier. Ce TP est 
+potentiellement dangeureux pour la plateforme en terme de sécurité mais on 
+vous fait confiance justement. Actuellement, 1750 utilisateurs utilisent la
+plateforme de manière régulière.
+
+Je précise aussi que j'ai accès à tous les logs sur la plateforme...
+==
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/sandbox_investigation/os_type.pl
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/sandbox_investigation/kernel_version.pl
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/sandbox_investigation/nb_core.pl
+
