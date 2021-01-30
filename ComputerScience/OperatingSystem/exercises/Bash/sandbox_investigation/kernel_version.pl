@@ -62,8 +62,9 @@ sp = subprocess.run(["/bin/uname", "-r"], stdout=subprocess.PIPE, stderr=subproc
 solution = sp.stdout.decode().replace(' ', '').replace('\n', '')
 # errout = sp.stderr.decode()
 # returncode = sp.returncode
+student_ans = (inputbox.value).replace(' ', '').replace('\n', '')
 
-if inputbox.value == solution:
+if student_ans == solution:
     grade = (100, frame_message("C'est bien cela !", "ok"))
 else:
     grade = (0, frame_message("Ce n'est pas la bonne réponse..."+solution, "error"))
