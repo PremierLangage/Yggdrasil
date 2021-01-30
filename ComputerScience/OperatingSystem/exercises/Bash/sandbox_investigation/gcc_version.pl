@@ -40,7 +40,7 @@ text==#|markdown|
 On voudrait connaitre le numéro de version complet de l'utilitaire **gcc** 
 installé sur les sandbox. Comme cet utilitaire est très sérieux et que son 
 développement est assuré par des experts, ce numéro de version est composé 
-de trois nombre séparés par des points. Le premier nombre est numéro de 
+de trois nombres séparés par des points. Le premier nombre est le numéro de 
 **version majeure**, le second est le numéro de **version mineure** et enfin 
 le dernier entier désigne le **numéro de correctif**.
 
