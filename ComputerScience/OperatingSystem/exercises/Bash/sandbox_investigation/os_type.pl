@@ -36,7 +36,10 @@ text==#|markdown|
 Essayer de determiner quel est le système d'exploitation utilisé dans les sandbox 
 docker de PLaTon. Vous devriez trouver votre bonheur avec la fonction **uname**.
 
-Pour cela, utiliser [l'émulateur de terminal sur sandbox](https://pl.u-pem.fr/filebrowser/demo/38058/).
+Pour cela, utiliser 
+<a href="https://pl.u-pem.fr/filebrowser/demo/38058/" target="blank">
+l'émulateur de terminal sur sandbox
+</a>.
 
 ==
 
