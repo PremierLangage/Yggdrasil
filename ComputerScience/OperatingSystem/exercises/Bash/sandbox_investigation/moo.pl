@@ -49,6 +49,7 @@ pour sa robustesse.
 Donner la commande dont l'exécution sur l'émulateur de terminal donne ce qui 
 suit (sauf la tâche rouge bien sûr, c'est l'anti-spoiler ça !)
 
+<br>
 
 <img src="{{ img_moo }}" alt="Avez-vous meuglé aujourd'hui ?" style="width:50%" />
 
