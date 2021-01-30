@@ -29,7 +29,8 @@ before==#|python|
 import random
 group.items = []
 
-group.items.append({"id": "y1", "content": "gcc"})
+group.items.append({"id": "y1", "content": "la suite de compilation **gcc**"})
+group.items.append({"id": "y1", "content": "le compilateur Haskell **ghc**"})
 
 random.shuffle(group.items)
 ==
