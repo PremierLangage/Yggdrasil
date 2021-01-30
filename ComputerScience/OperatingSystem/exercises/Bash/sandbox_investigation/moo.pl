@@ -22,7 +22,7 @@ builder =@ /builder/before.py
 img_moo =$ /ComputerScience/OperatingSystem/exercises/Bash/sandbox_investigation/moo_today.png
 
 author=Nicolas Borie
-tag=système|Unix|terminal
+tag=système|Unix|terminal|humour
 
 inputbox =: Input
 inputbox.type = text
