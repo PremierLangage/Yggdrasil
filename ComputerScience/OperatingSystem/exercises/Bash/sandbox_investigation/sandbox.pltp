@@ -19,6 +19,8 @@ author=Nicolas Borie
 title=À l'assault des sandbox!
 
 introduction==
+Un petit TP à faire avec google sous la main...
+
 Voici des exercices introductifs pour manipuler un peu le terminal. Ici, ce
 sera malheureusement un terminal simulé. Ce n'est pas la réalité des entrées 
 sorties propres du shell. Toutefois, ces petits exercices fonctionneront 
