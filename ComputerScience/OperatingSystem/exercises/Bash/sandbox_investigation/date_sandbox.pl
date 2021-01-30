@@ -19,6 +19,9 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+author=Nicolas Borie
+tag=système|date|Unix|terminal
+
 inputbox =: Input
 inputbox.type = text
 inputbox.placeholder = Votre réponse
