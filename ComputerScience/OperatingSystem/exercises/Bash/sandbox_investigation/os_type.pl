@@ -42,6 +42,7 @@ Pour cela, utiliser
 l'émulateur de terminal sur sandbox
 </a>.
 
+<br>
 ==
 
 form==#|markdown|
