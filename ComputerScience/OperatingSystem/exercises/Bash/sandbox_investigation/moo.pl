@@ -73,17 +73,11 @@ form==#|markdown|
 ==
 
 evaluator==#|python|
-import subprocess
 from utils_bash import display_as_shell_this, frame_message
 
-cmd = '''whoami'''
-sp = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
-solution = sp.communicate()[0].decode().replace(' ', '').replace('\n', '')
-# errout = sp.stderr.decode()
-# returncode = sp.returncode
 student_ans = (inputbox.value).replace(' ', '').replace('\n', '')
 
-if student_ans == solution:
+if "apt" in student_ans and "moo" in student_ans:
     grade = (100, frame_message("C'est bien cela !", "ok"))
 else:
     grade = (0, frame_message("Ce n'est pas la bonne réponse...", "error"))
