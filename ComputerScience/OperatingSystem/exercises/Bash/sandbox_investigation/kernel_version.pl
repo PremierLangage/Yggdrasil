@@ -46,6 +46,11 @@ Pour cela, utiliser
 l'émulateur de terminal sur sandbox
 </a>.
 
+<br>
+
+*Si le bouton valider ne fait rien, copier votre réponse dans le presse-papier, 
+actualiser et recoller votre réponse avant de revalider.*
+
 ==
 
 form==#|markdown|
