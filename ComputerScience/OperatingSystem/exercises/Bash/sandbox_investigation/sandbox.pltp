@@ -41,15 +41,6 @@ plateforme de manière régulière, ne rajoutons pas trop de travail aux
 développeurs (qui sont des étudiants I.G.M. en L3, M1 et M2 d'informatique 
 et qui ont accès à tous les logs comme D. Revuz ou N. Borie).
 
-Attention, PLaTon semble fragile : PLaTon ne veut pas que les utilisateurs 
-utilisent plusieurs onglets en même temps. Pour pallier à ce problème, 
-vous devez systématiquement actualiser les pages, puis remplir la zone de 
-réponse, puis valider (lorsque vous avez plusieurs onglets ouverts sur PLaTon 
-seulement). C'est cette actualisation qui va resynchroniser votre 
-onglet (même si vous en avez plusieurs d'ouverts...). Si vous oubliez cette 
-actualisation, le bouton valider semblent devenir inopérant (voire déclenche 
-des bugs qui ne sont pas dans le manuel).
-
 Have Fun !
 ==
 
