@@ -1,5 +1,5 @@
 #*****************************************************************************
-#  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#  Copyright (C) 2021 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
 #  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
 #  Creative Commons CC-by-SA 3.0
@@ -55,5 +55,7 @@ actualisation sinon le bouton valider semblent inopérant.
 @ /ComputerScience/OperatingSystem/exercises/Bash/sandbox_investigation/nb_core.pl
 
 @ /ComputerScience/OperatingSystem/exercises/Bash/sandbox_investigation/disk_size.pl
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/sandbox_investigation/date_sandbox.pl
 
 @ /ComputerScience/C/examples/mouse.pl
