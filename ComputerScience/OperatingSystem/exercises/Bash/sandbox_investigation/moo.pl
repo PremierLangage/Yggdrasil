@@ -39,9 +39,10 @@ Trêve de plaisanterie !
 ==
 
 text==#|markdown|
-Inutile donc indispensable ! Comme vos enseignants les plus ravagés, les 
-developpeurs de Debian sont des sacrés bout en train. C'est très sérieux 
-Debian, une distribution gratuite réputée pour sa robustesse. 
+Inutile donc indispensable ! Tout comme vos enseignants les plus ravagés, les 
+developpeurs de Debian sont des sacrés bout-en-train, une joyeuse bande de 
+déconneurs. C'est très sérieux Debian, une distribution gratuite réputée 
+pour sa robustesse. 
 
 <br>
 
