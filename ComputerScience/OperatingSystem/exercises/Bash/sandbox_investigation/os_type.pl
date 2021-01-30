@@ -28,19 +28,25 @@ before==#|python|
 
 ==
 
-title==
+title==#|markdown|
 Quel est le système d'exploitation ?
 ==
 
-text==
-Essayer de determiner quel est le système d'exploitation utilisé dans les sandbox docker de PLaTon. 
+text==#|markdown|
+Essayer de determiner quel est le système d'exploitation utilisé dans les sandbox 
+docker de PLaTon. Vous devriez trouver votre bonheur avec la fonction **uname**.
+
+Pour cela, utiliser [l'émulateur de terminal sur sandbox](https://pl.u-pem.fr/filebrowser/demo/38058/).
+
 ==
 
-form==
+form==#|markdown|
 {{ inputbox|component}}
 ==
 
-evaluator==
+evaluator==#|python|
+moyen = ['Linux', '']
+
 if r == inputbox.value:
     grade = (100, '<span class="success-state">Good 👏👏👏</span>')
 else:
