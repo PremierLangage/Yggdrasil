@@ -34,8 +34,11 @@ Taille de la partition contentant la racine ?
 ==
 
 text==#|markdown|
-Quelle la taille (en version lisible par un humain (human-readable)) du disque 
-qui cotient le repertoire racine des sandbox ?
+Quelle la taille totale (en version lisible par un humain (human-readable)) 
+du disque logique (système de fichiers Unix) qui cotient le repertoire 
+racine des sandbox ? Si votre taille est en Méga, il faudra fournir une 
+réponse du type xxxM (745M par exemple). Il se peut aussi que la taille 
+soit en Giga, auquel cas la réponse sera de la forme yyyG (121G par exemple).
 
 <br>
 
