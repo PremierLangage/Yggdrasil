@@ -59,7 +59,7 @@ import subprocess
 from utils_bash import display_as_shell_this, frame_message
 
 sp = subprocess.run(["/bin/uname", "-r"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
-solution = sp.stdout.decode()
+solution = sp.stdout.decode().replace(' ', '').replace('\n', '')
 # errout = sp.stderr.decode()
 # returncode = sp.returncode
 
