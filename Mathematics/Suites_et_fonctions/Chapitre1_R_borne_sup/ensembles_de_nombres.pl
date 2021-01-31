@@ -17,7 +17,7 @@ title= carroussel ensembles de nombres
 intro ==
 Ce quiz contient {{nbstep}} questions.
 
-Dans toutes les questions $%\mathbb{D}%$ désigne l'ensemble des nombres décimaux (qui s'écrivent avec un nombre fini de décimales derrière la virgule), $! e = \exp(1)!$
+ 
 ==
 
 questions==
@@ -35,18 +35,23 @@ questions==
 
 
 
-** Cocher les propositions vraies :
+** $%\mathbb{D}%$ désigne l'ensemble des nombres décimaux (qui s'écrivent avec un nombre fini de décimales derrière la virgule), $! e = \exp(1)!$ $% \newline%$ Cocher les propositions vraies :
+- $% \forall x \in \mathbb{N} \quad -x \in \mathbb{N} %$
+- $% \forall x \in \mathbb{Z}^* \quad \frac{1}{x} \in \mathbb{Z} %$
+- $% \forall x \in mathbb{D} \quad \frac{1}{x} \in \mathbb{D} %$
 + $%\forall x \in \mathbb{D} \quad x \in \mathbb{Q} %$
 + $%\forall x, y \in \mathbb{D}  \quad xy \in \mathbb{D} %$
 + $%\forall x, y \in \mathbb{D}  \quad x+y \in \mathbb{D} %$
-+ $%\forall x,y \in \mathbb{R} \quad  x\in \mathbb{Q} \quad  et \quad y \notin \mathbb{Q} \implies x+y \notin  \mathbb{Q} %$
 - $%\forall x, y \in \mathbb{Q} \setminus \mathbb{D} \quad xy \in  \mathbb{Q} \setminus \mathbb{D} %$
+
+
+** Cocher les propositions vraies :
++ $%\forall x,y \in \mathbb{R} \quad  x\in \mathbb{Q} \quad  et \quad y \notin \mathbb{Q} \implies x+y \notin  \mathbb{Q} %$
 - $% \forall x, y \in \mathbb{R}  \quad x\notin \mathbb{Q} \quad  et \quad y \notin \mathbb{Q} \implies x+y \notin \mathbb{Q} %$
 + $% \forall x, y \in \mathbb{R}  \quad x\in \mathbb{Q} \quad  et \quad y \in \mathbb{Q} \implies x+y \in \mathbb{Q} %$
 + $% \forall x \in \mathbb{Q} \quad -x \in \mathbb{Q} %$
 + $% \forall x \in \mathbb{Q}^* \quad \frac{1}{x} \in \mathbb{Q} %$
-- $% \forall x \in \mathbb{N} \quad -x \in \mathbb{N} %$
-+ $% \forall x \in \mathbb{Z}^* \quad \frac{1}{x} \in \mathbb{Z} %$
+
 
 ** Cocher les propositions vraies :
 - $% \\{1,-2,3\\} \subset \mathbb{N} %$
