@@ -22,7 +22,7 @@ Ce quiz contient {{nbstep}} questions.
 
 questions==
 
-** Parmi les affirmations suivantes, lesquelles sont vraies 
+** $! e = \exp(1)!$. Parmi les affirmations suivantes, lesquelles sont vraies 
 + $%\frac{1}{2} \in \mathbb{Q}%$
 + $% \frac{1}{3} \in \mathbb{Q}%$
 + $%\frac{1}{2} \in \mathbb{D}%$
@@ -32,10 +32,7 @@ questions==
 - $% \frac{e}{2} \in \mathbb{Q} %$
 
 
-
-
-
-** $%\mathbb{D}%$ désigne l'ensemble des nombres décimaux (qui s'écrivent avec un nombre fini de décimales derrière la virgule), $! e = \exp(1)!$ $% \newline%$ Cocher les propositions vraies :
+** $%\mathbb{D}%$ désigne l'ensemble des nombres décimaux (qui s'écrivent avec un nombre fini de décimales derrière la virgule). Cocher les propositions vraies :
 - $% \forall x \in \mathbb{N} \quad -x \in \mathbb{N} %$
 - $% \forall x \in \mathbb{Z}^* \quad \frac{1}{x} \in \mathbb{Z} %$
 - $% \forall x \in \mathbb{D} \quad \frac{1}{x} \in \mathbb{D} %$
@@ -69,7 +66,6 @@ Cocher les propositions vraies
 - Si $% I %$ et $% J %$ sont des intervalles de $%\mathbb{R}%$  alors $% I \cup J%$ est un intervalle de $%\mathbb{R}%$
 - Si $% I %$ est un intervalle borné de $% \mathbb{R}%$, alors $%a = \inf(A)%$ et $% b = \sup(B)%$ sont des réels et $%I=[a,b]%$
 + Si $% I %$ est un intervalle ni majoré ni minoré  de $% \mathbb{R}%$, alors $%A= \mathbb{R}%$
-+ Si $% A %$ et $% B %$ sont des parties bornées de $% \mathbb{R} %$, alors $%\sup (A \cup B)= \max( \sup(A), \sup (B))%$
-+ Si $% A %$ et $% B %$ sont des parties bornées de $% \mathbb{R} %$, alors $%\sup (A \cap B)= \min( \sup(A), \sup (B))%$
+
 ==
 
