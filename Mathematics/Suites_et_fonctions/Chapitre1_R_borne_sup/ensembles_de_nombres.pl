@@ -9,7 +9,7 @@ author = Enseignants Suites et Fonctions (MK)
 # pour changer le nombre de question, c'est en dessous (10 MAX)
 # si le nombre est plus petit que 10, ce sera un tirage aléatoire
 # sans remise parmi le tas de questions.
-nb_quest_voulu = 4
+nb_quest_voulu = 5
 
 title= carroussel ensembles de nombres
 
@@ -64,7 +64,7 @@ questions==
 ** On rappelle qu'une partie $%I%$ de $%\mathbb{R}%$ est un intervalle si $% (\forall x,y \in I \quad \forall z \in \mathbb{R} \quad x \le z \le y \implies z \in I %$. $% \quad %$
 Cocher les propositions vraies 
 - $%[0,1] \cup [2,3[%$ est un intervalle de $%\mathbb{R}%$ 
-- $% \\{frac{1}{n} | \quad n \ge 1 \\} %$ est un intervalle de $%\mathbb{R}%$
+- $% \\{\frac{1}{n} | \quad n \ge 1 \\} %$ est un intervalle de $%\mathbb{R}%$
 + Si $% I %$ et $% J %$ sont des intervalles de $%\mathbb{R}%$  alors $% I \cap J%$ est un intervalle de $%\mathbb{R}%$
 - Si $% I %$ et $% J %$ sont des intervalles de $%\mathbb{R}%$  alors $% I \cup J%$ est un intervalle de $%\mathbb{R}%$
 - Si $% I %$ est un intervalle borné de $% \mathbb{R}%$, alors $%a = \inf(A)%$ et $% b = \sup(B)%$ sont des réels et $%I=[a,b]%$
