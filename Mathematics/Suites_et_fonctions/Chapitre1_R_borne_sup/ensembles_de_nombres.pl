@@ -56,8 +56,7 @@ questions==
 +  $%\\{ \sqrt{2}, e, \frac{\pi}{2} \\} \subset \mathbb{R}\setminus \mathbb{Q} %$
 -  $%\\{ \sqrt{2},\sqrt{3},\sqrt{4}  \\} \subset \mathbb{R}\setminus \mathbb{Q} %$  
 
-** On rappelle qu'une partie $%I%$ de $%\mathbb{R}%$ est un intervalle si $% (\forall x,y \in I \quad \forall z \in \mathbb{R} \quad x \le z \le y \implies z \in I %$). 
-
+** On rappelle qu'une partie $%I%$ de $%\mathbb{R}%$ est un intervalle si $% (\forall x,y \in I \quad \forall z \in \mathbb{R} \quad x \le z \le y \implies z \in I %$. $% \quad %$
 Cocher les propositions vraies 
 - $%[0,1] \cup [2,3[%$ est un intervalle de $%\mathbb{R}%$ 
 + Si $% I %$ et $% J %$ sont des intervalles de $%\mathbb{R}%$  alors $% I \cap J%$ est un intervalle de $%\mathbb{R}%$
