@@ -38,7 +38,7 @@ questions==
 ** $%\mathbb{D}%$ désigne l'ensemble des nombres décimaux (qui s'écrivent avec un nombre fini de décimales derrière la virgule), $! e = \exp(1)!$ $% \newline%$ Cocher les propositions vraies :
 - $% \forall x \in \mathbb{N} \quad -x \in \mathbb{N} %$
 - $% \forall x \in \mathbb{Z}^* \quad \frac{1}{x} \in \mathbb{Z} %$
-- $% \forall x \in mathbb{D} \quad \frac{1}{x} \in \mathbb{D} %$
+- $% \forall x \in \mathbb{D} \quad \frac{1}{x} \in \mathbb{D} %$
 + $%\forall x \in \mathbb{D} \quad x \in \mathbb{Q} %$
 + $%\forall x, y \in \mathbb{D}  \quad xy \in \mathbb{D} %$
 + $%\forall x, y \in \mathbb{D}  \quad x+y \in \mathbb{D} %$
