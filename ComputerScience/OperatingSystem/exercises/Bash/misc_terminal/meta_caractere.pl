@@ -63,8 +63,13 @@ cmd1 = 'touch '+' '.join(list_word)
 sp = subprocess.Popen(cmd1, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 cmd2 = 'ls '+pattern
 sp = subprocess.Popen(cmd2, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-solution = sp.communicate()[0].decode().replace('\n', ' ')
+output = sp.communicate()[0].decode().replace(' ', '\n')
 
+solution = []
+if not 'cannot' in output:
+    for w in output.strip('\n'):
+        if w not in solution:
+            solution.append(w)
 
 # shuffle the items
 random.shuffle(group.items)
@@ -82,7 +87,7 @@ On se trouve dans un répertoire contenant les fichiers suivants:
 
 <br>
 
-    Solution : {{ solution }}
+    Solution : {% for w in solution %}{{ w }} {% endfor %}
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
