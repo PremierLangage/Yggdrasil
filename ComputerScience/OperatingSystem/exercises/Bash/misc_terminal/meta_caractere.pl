@@ -53,9 +53,9 @@ random.shuffle(group.items)
 ==
 
 text==#|markdown|
-On se trouve dans un répertoire contenant les fichiers suivants:
+On se trouve dans un répertoire contenant les fichiers suivants:   
+   
 
-<br>
 
     @PLaTon:~$ ls
     {% for w in list_word %}{{ w }} {% endfor %}
