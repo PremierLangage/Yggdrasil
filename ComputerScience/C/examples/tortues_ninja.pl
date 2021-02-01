@@ -20,7 +20,7 @@ builder =@ /builder/before.py
 
 group =: RadioGroup
 
-@ /tortues_ninjas.mp3
+@ /ComputerScience/C/examples/tortues_ninja.pl
 
 url_clip =$ tortues_ninjas.mp3
 
