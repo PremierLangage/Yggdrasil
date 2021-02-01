@@ -38,6 +38,7 @@ typedef struct node{
 
 editor.code==#|c|
 
+
 int ajoute(Tree *t,int valeur){
   if (*t == NULL){
     if ((*t=allocate_node(valeur))==NULL)
@@ -46,11 +47,12 @@ int ajoute(Tree *t,int valeur){
   }
   if ((*t)->value >valeur)
     return ajoute(&((*t)->left),valeur);
-if ((*t)->value <valeur)
-  return ajoute(&((*t)->right),valeur);
+  if ((*t)->value <valeur)
+   return ajoute(&((*t)->right),valeur);
 
   return 1;
 } 
+
 
 ==
 
