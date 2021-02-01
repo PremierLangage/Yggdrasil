@@ -19,7 +19,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 author=Nicolas Borie
-title=Méta caractère * et ?
+title=Méta caractères * et ?
 
 group =: RadioGroup
 
@@ -29,6 +29,7 @@ import random
 
 alphabet_size=5
 max_len_word=8
+nb_words=8
 
 def aleaword(alphabet, max_len):
     w = ""
@@ -38,7 +39,7 @@ def aleaword(alphabet, max_len):
     return w
 
 list_word = []
-while len(list_word) < 15:
+while len(list_word) < nb_words:
     w = aleaword(alphabet_size, max_len_word)
     if w not in list_word:
         list_word.append(w)
