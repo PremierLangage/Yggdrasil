@@ -63,7 +63,7 @@ cmd1 = 'touch '+' '.join(list_word)
 sp = subprocess.Popen(cmd1, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 cmd2 = 'ls '+pattern
 sp = subprocess.Popen(cmd2, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-solution = sp.communicate()[0].decode().replace(' ', '').replace('\n', '')
+solution = sp.communicate()[0].decode()
 
 
 # shuffle the items
