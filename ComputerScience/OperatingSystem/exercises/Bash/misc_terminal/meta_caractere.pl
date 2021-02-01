@@ -59,12 +59,8 @@ group.items = []
 for w in list_word:
     group.items.append({"id": w, "content": w})
 
-cmd = 'mkdir plop; cd plop'
+cmd = 'mkdir plop; cd plop; touch '+' '.join(list_word)+'; ls '+pattern
 sp = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-cmd1 = 'touch '+' '.join(list_word)
-sp = subprocess.Popen(cmd1, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-cmd2 = 'ls '+pattern
-sp = subprocess.Popen(cmd2, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 output = sp.communicate()[0].decode().replace(' ', '\n')
 
 solution = []
