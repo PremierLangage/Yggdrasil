@@ -87,7 +87,9 @@ On se trouve dans un répertoire contenant les fichiers suivants:
 
 <br>
 
-    Solution : {% for w in solution %}{{ w }} {% endfor %}
+{% for w in solution %}
+{{ w }} 
+{% endfor %}
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
