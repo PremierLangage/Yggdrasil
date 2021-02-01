@@ -80,7 +80,7 @@ for item in group.items:
         if S == R:
             item['css'] = 'success-border'
             score = 100
-            feedback = '''<span class="success-state animated pulse infinite">Parfait, vous avez l'oreille!</span>'''
+            feedback = '''<span class="success-state">Parfait, vous avez l'oreille!</span>'''
         else:
             item['css'] = 'error-border'
     elif item['id'] == R:
