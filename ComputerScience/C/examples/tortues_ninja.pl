@@ -69,7 +69,7 @@ form==
 ==
 
 # EVALUATE THE STUDENT ANSWER
-evaluator==
+evaluator==#|python|
 S = group.selection
 score = 0
 feedback = '<span class="error-state animated pulse infinite">Non, il faut mieux écouter...</span>'
