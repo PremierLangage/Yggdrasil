@@ -84,12 +84,7 @@ On se trouve dans un répertoire contenant les fichiers suivants:
     nborie@PLaTon:~$ ls
     {% for w in list_word %}{{ w }} {% endfor %}
     nborie@PLaTon:~$ ls {{ pattern }}
-
-<br>
-
-{% for w in solution %}
-{{ w }} 
-{% endfor %}
+    {% for w in solution %}{{ w }} {% endfor %}
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
