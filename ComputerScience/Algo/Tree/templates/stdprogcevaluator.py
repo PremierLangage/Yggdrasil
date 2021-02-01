@@ -172,7 +172,7 @@ if compil_state != 'error':
                 if True :
                     stdin_explain += "%"+spout + "%\n" 
                 elif True :
-                    Tree_exo = binary_tree_from_code(spout) # test_c[2])
+                    Tree_exo = binary_tree_from_code(spout[:-1]) # test_c[2])
                     viewer = GraphDrawer()
                     viewer.graph = Tree_exo.to_dot_code_BST_point()
                     stdin_explain += f" \n\n <c-graph-viewer graph='{viewer.graph}'></c-graph-viewer> \n\n"
