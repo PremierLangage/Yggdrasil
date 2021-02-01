@@ -30,7 +30,11 @@ tag=audio|écoute|simple|humour
 # GENERATE A RANDOM QUESTION
 before==#|python|
 group.items = []
-group.items.append({"id": R, "content": "J'en peux plus le confinement avec toi."})
+group.items.append({"id": "n1", "content": "J'en peux plus le confinement avec toi."})
+group.items.append({"id": "n2", "content": "Je préfère boumbo, petite automobile."})
+group.items.append({"id": "n3", "content": "Pourquoi le père noël a ramené ce pédalier multi-effets pour guitare electrique?"})
+group.items.append({"id": "n4", "content": "Ce soir, tu dors dehors si ça continue."})
+group.items.append({"id": "y1", "content": "Tortues ninja, ça suffit maintenant!"})
 
 # shuffle the items
 random.shuffle(group.items)
@@ -38,8 +42,15 @@ random.shuffle(group.items)
 
 title=Écoute attentive d'un 
 
-text==
-On enttend Madame Borie ouvrir une porte puis dire quelque chose durant le clip audio. Mais que dit madame Borie ?
+text==#|markdown|
+On enttend Madame Borie ouvrir une porte puis dire quelque chose durant ce clip 
+audio. Mais que dit madame Borie exactement ?
+
+<audio controls>
+  <source src="{{ url_clip }}" type="audio/mp3">
+  Votre navigateur ne supporte pas la lecture du clip audio.
+</audio>
+
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
