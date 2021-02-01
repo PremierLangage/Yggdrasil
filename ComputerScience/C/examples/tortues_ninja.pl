@@ -71,7 +71,7 @@ form==
 evaluator==
 S = group.selection
 score = 0
-feedback = '<span class="error-state animated pulse infinite">Bad answer</span>'
+feedback = '<span class="error-state animated pulse infinite">Non, il faut mieux écouter...</span>'
 
 for item in group.items:
     item['css'] = ''
@@ -79,7 +79,7 @@ for item in group.items:
         if S == R:
             item['css'] = 'success-border'
             score = 100
-            feedback = '<span class="success-state animated pulse infinite">Good answer</span>'
+            feedback = '<span class="success-state animated pulse infinite">Parfait, vous avez l'oreille!</span>'
         else:
             item['css'] = 'error-border'
     elif item['id'] == R:
