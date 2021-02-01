@@ -141,7 +141,7 @@ char *code;
   build_tree(&t);
 
   code=arbre_vers_code(t);
-  fprintf(stderr,"%s\n",code)    ;
+  fprintf(stderr,"%s",code)    ;
   return 0;
 }
 ==
