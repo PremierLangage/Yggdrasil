@@ -56,9 +56,7 @@ text==#|markdown|
 On se trouve dans un répertoire contenant les fichiers suivants:
 
     @PLaTon:~$ ls
-    {% for w in list_word %}
-    {{ w }} 
-    {% endfor %}
+    {% for w in list_word %}{{w }}{% endfor %}
 
 ==
 
