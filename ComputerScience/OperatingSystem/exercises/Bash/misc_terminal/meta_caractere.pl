@@ -26,6 +26,7 @@ group =: RadioGroup
 # GENERATE A RANDOM QUESTION
 before==#|python|
 import random
+import subprocess
 
 alphabet_size=5
 max_len_word=8
@@ -58,6 +59,13 @@ group.items = []
 for w in list_word:
     group.items.append({"id": w, "content": w})
 
+cmd1 = 'touch '+' '.join(list_word)
+sp = subprocess.Popen(cmd1, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+cmd2 = 'ls '+pattern
+sp = subprocess.Popen(cmd2, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+solution = sp.communicate()[0].decode().replace(' ', '').replace('\n', '')
+
+
 # shuffle the items
 random.shuffle(group.items)
 ==
@@ -72,6 +80,9 @@ On se trouve dans un répertoire contenant les fichiers suivants:
     {% for w in list_word %}{{ w }} {% endfor %}
     nborie@PLaTon:~$ ls {{ pattern }}
 
+<br>
+
+    Solution : {{ solution }}
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
