@@ -16,7 +16,7 @@
 #*****************************************************************************
 
 
-extends=/ComputerScience/Algo/Tree/templates/std_progC_with_tree.pl
+extends= /ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
 
 #author=Marc Zipstein
 title=Ajouter dans un arbre binaire de recherche
