@@ -103,7 +103,7 @@ int build_tree(Tree* t){
     int val;
    
     while(1==    scanf("%d", &val))   {
-      printf("%d\n",val);
+      fprintf(stderr,"%d\n",val);
       if (0==ajoute(t,val)){
       fprintf(stderr, "problème allocation mémoire\n");
       return 0;
@@ -119,7 +119,7 @@ void arbre_vers_code_aux(Tree t,char* s){
   else c='f';
   sprintf(s+strlen(s),"%c",c);
   sprintf(s+strlen(s),"%d",t->value); 
-  printf("*->%s\n",s);
+  fprintf(stderr,"*->%s\n",s);
   if(t->left) 
        arbre_vers_code_aux(t->left,s+strlen(s));
  if(t->right)
@@ -138,9 +138,10 @@ int main(int argc, char* argv[]){
   Tree t=NULL;
 char *code;
 
-  build_tree(&t);printf("opoiu\n");
+  build_tree(&t);
+
   code=arbre_vers_code(t);
-  printf("%s\n",code)    ;
+  fprintf(stderr,"%s\n",code)    ;
   return 0;
 }
 ==
