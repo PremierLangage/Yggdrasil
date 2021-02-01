@@ -20,7 +20,7 @@ builder =@ /builder/before.py
 
 group =: RadioGroup
 
-
+@ /tortues_ninjas.mp3
 
 url_clip =$ tortues_ninjas.mp3
 
@@ -44,7 +44,7 @@ group.items.append({"id": "y1", "content": "Tortues ninja, ça suffit maintenant
 random.shuffle(group.items)
 ==
 
-title=Écoute attentive d'un 
+title=Écoute attentive d'un clip audio
 
 text==#|markdown|
 On enttend Madame Borie ouvrir une porte puis dire quelque chose durant ce clip 
