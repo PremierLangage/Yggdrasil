@@ -62,9 +62,9 @@ int ajoute(Tree *t,int valeur){
      return 0;
     return 1;
   }
-  if ((*t)->value >valeur)
+  if (*t && (*t)->value >valeur)
     return ajoute(&((*t)->left),valeur);
-if ((*t)->value <valeur)
+if (*t && (*t)->value <valeur)
   return ajoute(&((*t)->right),valeur);
 
   return 1;
