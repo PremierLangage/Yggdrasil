@@ -166,7 +166,7 @@ if compil_state != 'error':
                 stdin_explain += subnlbybr(test_c[2])
                 if test_c[2][-1] != '\n':
                     stdin_explain += "<br />"
-                tdin_explain += spout
+                stdin_explain += spout
                 # Tree inscrustation if not too big (around 20 nodes...)
                 if len(spout) < 60:
                     Tree_exo = binary_tree_from_code(spout) # test_c[2])
