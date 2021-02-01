@@ -44,7 +44,9 @@ def aleapattern(alphabet, max_len):
     letters = [chr(ord('a')+i) for i in range(alphabet)] + ['*', '?']
     for i in range(len_word):
         w += random.choice(letters)
-    return w
+    if '*' in w or '?' in w:
+        return w
+    return aleapattern(alphabet, max_len)
 
 pattern = aleapattern(alphabet_size, max_len_word)
 
