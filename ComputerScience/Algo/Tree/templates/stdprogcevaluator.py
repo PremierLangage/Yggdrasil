@@ -166,7 +166,7 @@ if compil_state != 'error':
                 stdin_explain += subnlbybr(test_c[2])
                 if test_c[2][-1] != '\n':
                     stdin_explain += "<br />"
-
+                tdin_explain += spout
                 # Tree inscrustation if not too big (around 20 nodes...)
                 if len(spout) < 60:
                     Tree_exo = binary_tree_from_code(spout) # test_c[2])
@@ -174,7 +174,7 @@ if compil_state != 'error':
                     viewer.graph = Tree_exo.to_dot_code_BST_point()
                     stdin_explain += f" \n\n <c-graph-viewer graph='{viewer.graph}'></c-graph-viewer> \n\n"
                 else:
-                    stdin_explain += "\n\n Arbre trop imposant pour être dessiné \n\n MARCHE PAS DR \n \n" # FIXME 
+                    stdin_explain += "\n\n Arbre trop imposant pour être dessiné \n\n" 
             else:
                 stdin_explain = ""
             feedback_checks += make_hide_block_on_click("details_check"+str(nb_good+nb_bad), test_c[0], stdin_explain + terminal_code(terminal_log), "")
