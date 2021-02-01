@@ -168,7 +168,9 @@ if compil_state != 'error':
                     stdin_explain += "<br />"
 
                 # Tree inscrustation if not too big (around 20 nodes...)
-                if len(test_c[2]) < 60 : # FIXME 
+                # if len(test_c[2]) < 60 and False : # FIXME 
+                if True :
+                    stdin_explain += spout + "\n" 
                     Tree_exo = binary_tree_from_code(spout) # test_c[2])
                     viewer = GraphDrawer()
                     viewer.graph = Tree_exo.to_dot_code_BST_point()
