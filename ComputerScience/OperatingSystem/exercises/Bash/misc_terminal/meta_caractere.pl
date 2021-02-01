@@ -19,7 +19,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 author=Nicolas Borie
-title=Méta caractères * et ?
+title=Méta-caractères * et ? en terminal
 
 group =: RadioGroup
 
