@@ -61,7 +61,7 @@ for w in list_word:
 
 cmd = 'mkdir plop'
 sp = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-cmd = 'cp plop'
+cmd = 'cd plop'
 sp = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 cmd1 = 'touch '+' '.join(list_word)
 sp = subprocess.Popen(cmd1, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
