@@ -31,6 +31,8 @@ tag=audio|écoute|simple|humour
 
 # GENERATE A RANDOM QUESTION
 before==#|python|
+import random
+
 group.items = []
 group.items.append({"id": "n1", "content": "J'en peux plus le confinement avec toi."})
 group.items.append({"id": "n2", "content": "Je préfère boumbo, petite automobile."})
