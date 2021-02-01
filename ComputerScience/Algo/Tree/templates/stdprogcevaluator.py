@@ -193,8 +193,8 @@ if compil_state != 'error':
                     stdin_explain += "<br />"
                 
                 # Tree inscrustation
-                if len(test_c[2]) < 60:
-                    Tree_exo = binary_tree_from_code(test_c[2])
+                if len(expected_ouput) < 60:
+                    Tree_exo = binary_tree_from_code(expected_ouput)
                     viewer = GraphDrawer()
                     viewer.graph = Tree_exo.to_dot_code_BST_point()
                     stdin_explain += f" \n\n <c-graph-viewer graph='{viewer.graph}'></c-graph-viewer> \n\n"
