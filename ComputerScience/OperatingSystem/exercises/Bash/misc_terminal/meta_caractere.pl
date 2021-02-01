@@ -41,7 +41,7 @@ def aleaword(alphabet, max_len):
 def aleapattern(alphabet, max_len):
     w = ""
     len_word = random.randint(1, max_len)
-    letters = [chr(ord('a')+i) for i in range(alphabet)] + ['*', '?']
+    letters = [chr(ord('a')+i) for i in range(alphabet)] + ['*']*alphabet + ['?']*alphabet
     for i in range(len_word):
         w += random.choice(letters)
     if '*' in w or '?' in w:
