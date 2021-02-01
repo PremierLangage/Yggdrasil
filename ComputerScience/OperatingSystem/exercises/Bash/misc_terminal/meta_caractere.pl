@@ -80,7 +80,6 @@ On se trouve dans un répertoire contenant les fichiers suivants:
 
 <br>
 
-
     nborie@PLaTon:~$ ls
     {% for w in list_word %}{{ w }} {% endfor %}
     nborie@PLaTon:~$ ls {{ pattern }}
