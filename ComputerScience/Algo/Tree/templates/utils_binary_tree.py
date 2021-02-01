@@ -583,7 +583,7 @@ def split_tree(s):
             acc += s[i]
             i += 1
         return ['r', int(acc), split_tree(s[i:])]
-    assert(s[0] == 'd'), "Arbre mal formée"
+    assert(s[0] == 'd'), "Arbre mal formée: "+s
     acc = ''
     i = 1
     while s[i] not in ['d', 'l', 'r', 'f']:
