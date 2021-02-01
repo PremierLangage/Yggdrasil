@@ -38,6 +38,16 @@ def aleaword(alphabet, max_len):
         w += chr(ord('a')+random.randint(0, alphabet-1))
     return w
 
+def aleapattern(alphabet, max_len):
+    w = ""
+    len_word = random.randint(1, max_len)
+    letters = [chr(ord('a')+i) for i in range(alphabet)] + ['*', '?']
+    for i in range(len_word):
+        w += random.choice(letters)
+    return w
+
+pattern = aleapattern(alphabet_size, max_len_word)
+
 list_word = []
 while len(list_word) < nb_words:
     w = aleaword(alphabet_size, max_len_word)
@@ -53,12 +63,14 @@ random.shuffle(group.items)
 ==
 
 text==#|markdown|
-On se trouve dans un répertoire contenant les fichiers suivants:   
-   
+On se trouve dans un répertoire contenant les fichiers suivants:
+
+<br>
 
 
-    @PLaTon:~$ ls
+    nborie@PLaTon:~$ ls
     {% for w in list_word %}{{ w }} {% endfor %}
+    nborie@PLaTon:~$ ls {{ pattern }}
 
 ==
 
