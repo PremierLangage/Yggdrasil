@@ -46,7 +46,7 @@ random.shuffle(group.items)
 title=Écoute attentive d'un clip audio
 
 text==#|markdown|
-On enttend Madame Borie ouvrir une porte puis dire quelque chose durant ce clip 
+On entend Madame Borie ouvrir une porte puis dire quelque chose durant ce clip 
 audio. Mais que dit madame Borie exactement ? 
 
 <br>
