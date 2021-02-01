@@ -18,42 +18,41 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+author=Nicolas Borie
+title=Méta caractère * et ?
+
 group =: RadioGroup
 
 # GENERATE A RANDOM QUESTION
-before==
+before==#|python|
 import random
-import uuid
 
-A = random.randint(0, 10)
-B = random.randint(0, 10)
-R = uuid.uuid4()
+alphabet_size=5
+max_len_word=8
 
-# append random false answers to group.items array.
+def aleaword(alphabet, max_len):
+    w = ""
+    len_word = random.randint(1, max_len)
+    for i in range(len_word):
+        w += chr(ord('a')+random.randint(0, alphabet-1))
+    return w
+
+list_word = []
+while len(list_word) < 15:
+    w = aleaword(alphabet_size, max_len_word)
+    if w not in list_word:
+        list_word.append(w)
+
 group.items = []
-for i in range(4):
-    n = random.randint(0, 100)
-    while n == A * B:
-        n = random.randint(0, 100)
-    group.items.append({
-        "id": uuid.uuid4(), # generate a random id instead of an hardcoded to avoid cheat
-        "content": str(n)
-    })
-
-# append random right answer to group.items array.
-group.items.append({
-    "id": R,
-    "content": str(A * B)
-})
+for w in list_word:
+    group.items.append({"id": w, "content": w})
 
 # shuffle the items
 random.shuffle(group.items)
 ==
 
-title = Radio Group Component
-
 text==
-Select the result of **{{ A }}** x **{{ B }}**.
+
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
