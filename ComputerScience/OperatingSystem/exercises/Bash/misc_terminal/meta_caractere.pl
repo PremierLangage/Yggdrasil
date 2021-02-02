@@ -81,6 +81,7 @@ On se trouve dans un répertoire contenant les fichiers suivants:
     {% for w in list_word %}{{ w }} {% endfor %}
     nborie@PLaTon:~$ ls {{ pattern }}
     {% if solution %}{% for w in solution %}{{ w }} {% endfor %}{% else %} {% endif %}
+    nborie@PLaTon:~$
 
 ==
 
