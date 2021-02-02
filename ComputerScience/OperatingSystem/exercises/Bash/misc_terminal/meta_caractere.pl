@@ -91,9 +91,8 @@ On se trouve dans un répertoire contenant les fichiers suivants:
     nborie@PLaTon:~$ ls
     {% for w in list_word %}{{ w }} {% endfor %}
     nborie@PLaTon:~$ ls {{ pattern }}
-    {% if solution %}{% for w in solution %}{{ w }} {% endfor %}{% else %} {% endif %}
-    nborie@PLaTon:~$
 
+Selectionner les nons de fichiers qui seront attrapés et affichés par la commande `ls` précédante !
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
