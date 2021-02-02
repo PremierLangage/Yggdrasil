@@ -88,7 +88,6 @@ for item in group.items:
         else:
             item['css'] = 'success-border animated pulse infinite'
 
-
 if total == right:
     grade = (100, frame_message("C'est exactement ça !", "ok"))
 else:
