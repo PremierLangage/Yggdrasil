@@ -20,7 +20,7 @@ builder =@ /builder/before.py
 
 author=Nicolas Borie
 
-title=les couches dans PLaTon
+title=les couches systèmes et logicielles dans PLaTon
 
 
 
