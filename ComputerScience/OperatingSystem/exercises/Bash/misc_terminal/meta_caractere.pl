@@ -67,7 +67,10 @@ def full_exp(alphabet, max_len, nb):
     if len(solution) > 0 and len(solution) < nb:
         return (list_word, pattern, solution)
     else:
-        full_exp(alphabet, max_len, nb)
+        cmd = 'cd.. ;rm -rf plop'
+        sp = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        output = sp.communicate(timeout=1)[0].decode()
+        return full_exp(alphabet, max_len, nb)
 
 list_word, pattern, solution = full_exp(alphabet_size, max_len_word, nb_words)
 
