@@ -35,6 +35,8 @@ group.items = []
 
 group.items.append({"id": "g1", "content": "Utiliser au maximum la tab-completion pour éviter les fautes de frappe."})
 group.items.append({"id": "g2", "content": "Rappeler les commandes avec les flèches plutôt que de les retaper."})
+group.items.append({"id": "g3", "content": "Ne jamais oublier que le résultat de certaines commandes dépendent de la taille du terminal."})
+
 
 random.shuffle(group.items)
 ==
