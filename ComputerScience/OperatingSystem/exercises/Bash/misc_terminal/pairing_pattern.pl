@@ -77,7 +77,7 @@ text==#|markdown|
  * `*` méta-caractères se substituant à n'importe quel mot (y compris le mot vide).   
  * `?` méta-caractères se substituant à n'importe quel caractère (mais au moins un caractère).   
 
-Joignez chaque pattern à gauche avec à droite la description la plus stricte des éléments recherchés.
+Joignez chaque pattern à gauche avec à droite la description des éléments recherchés.
 ==
 
 
