@@ -116,7 +116,6 @@ for item in group.items:
     elif checked:
         item['css'] = 'error-border'
 
-
 if total == 0:
     grade = (100, 'Right')
 else:
