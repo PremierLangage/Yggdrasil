@@ -65,7 +65,7 @@ output = sp.communicate()[0].decode().replace('\n', ' ')
 
 solution = []
 if not 'cannot' in output:
-    for w in output.strip('\n'):
+    for w in output.strip(' '):
         if w not in solution:
             solution.append(w)
 
