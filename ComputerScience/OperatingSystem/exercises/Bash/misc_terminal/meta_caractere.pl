@@ -106,7 +106,7 @@ right = 0
 total = 0
 for item in group.items:
     checked = item['checked']
-    content = int(item['content'])
+    content = item['content']
     total += 1
     if content in solution == 0:
         item['css'] = 'success-border animated pulse infinite'
