@@ -64,11 +64,9 @@ sp = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess
 output = sp.communicate()[0].decode()
 
 solution = output
-#solution = []
-#if not 'cannot' in output:
-#    for w in output.strip(' '):
-#        if w not in solution:
-#            solution.append(w)
+solution = []
+if not 'cannot' in output:
+    solution = output.split(' ')
 
 # shuffle the items
 random.shuffle(group.items)
