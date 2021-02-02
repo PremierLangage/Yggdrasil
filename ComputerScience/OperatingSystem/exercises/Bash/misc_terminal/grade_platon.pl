@@ -51,6 +51,9 @@ random.shuffle(sortlist.items)
 
 
 text==#|markdown|
+Tenter de replacer dans l'ordre toutes les couches "plus ou moins système" que
+traverse le code d'un élève qui fait un exercice de programmation sous PLaTon.
+
 
 ==
 
