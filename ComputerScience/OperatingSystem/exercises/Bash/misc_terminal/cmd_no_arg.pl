@@ -21,7 +21,7 @@ builder =@ /builder/before.py
 
 author=Nicolas Borie
 
-title=Des commandes sans arguments
+title=Des commandes Unix sans arguments
 
 tag=terminal|unix|commande|argument
 
