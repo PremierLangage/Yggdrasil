@@ -92,7 +92,7 @@ for item in group.items:
 if total == right:
     grade = (100, frame_message("C'est exactement ça !", "ok"))
 else:
-    feedb = "Bravo Vous avez fait "+str(total-right)
+    feedb = "Vous avez fait "+str(total-right)
     if total-right > 1 :
         feedb += " erreurs."
     else:
