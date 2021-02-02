@@ -85,8 +85,8 @@ for i, e in enumerate(sortlist.items):
         errors += 1
 
 if errors == 0:
-    grade = (100, '''<span class="success-state animated pulse infinite" style="padding: 10px">Mais c'est bien sûr!</span>''')
+    grade = (100, '''<center><span class="success-state animated pulse infinite" style="padding: 10px">Mais c'est bien sûr!</span></center>''')
 else:
-    grade = (0, f'<span class="error-state animated pulse infinite" style="padding: 10px">{ errors } éléments mal positionés</span>')
+    grade = (0, f'<center><span class="error-state animated pulse infinite" style="padding: 10px">{ errors } éléments mal positionés</span></center>')
 ==
 
