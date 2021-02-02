@@ -15,7 +15,7 @@
 #*****************************************************************************
 
 @ /utils/sandboxio.py
-
+@ /ComputerScience/OperatingSystem/templates/utils_bash.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
@@ -56,6 +56,8 @@ form==
 
 # EVALUATE THE STUDENT ANSWER
 evaluator==#|python|
+
+
 right = 0
 total = 0
 for item in group.items:
