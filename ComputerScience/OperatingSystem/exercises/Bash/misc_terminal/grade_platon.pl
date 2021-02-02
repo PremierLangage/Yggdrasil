@@ -55,8 +55,17 @@ random.shuffle(sortlist.items)
 
 
 text==#|markdown|
+Encore une fois, PLaTon n'est pas un système d'exploitation mais une application 
+web. Mais c'est toutefois une application web qui résout
+des problèmes relativement avancés et ces problèmes relèvent principalement du système 
+(être multi-utilisateurs et résister à plein de boucles infinies...).
+
+<br>
+
 Tenter de replacer, dans l'ordre, toutes les couches "plus ou moins système" que
 traverse le code d'un élève qui fait un exercice de programmation sous PLaTon.
+
+<br>
 
 Placer en haut la réponse de l'étudiant et en bas le matériel qui devra exécuter 
 potentiellement cette réponse.
