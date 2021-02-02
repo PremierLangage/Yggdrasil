@@ -18,7 +18,11 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+author=Nicolas Borie
+
 title=les couches dans PLaTon
+
+
 
 # DECLARATION
 sortlist =: SortList
