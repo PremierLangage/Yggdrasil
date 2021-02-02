@@ -54,7 +54,8 @@ text==#|markdown|
 Tenter de replacer dans l'ordre toutes les couches "plus ou moins système" que
 traverse le code d'un élève qui fait un exercice de programmation sous PLaTon.
 
-
+Placer en haut la réponse de l'étudiant et en bas le matériel qui devra exécuter 
+potentiellement cette réponse.
 ==
 
 form==#|markdown|
