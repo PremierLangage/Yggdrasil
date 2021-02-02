@@ -63,17 +63,26 @@ match.nodes.append({"id": "s3", "content": "`???`", "source": True,})
 match.nodes.append({"id": "t3", "content": "noms de fichiers contenant exactement 3 lettres", "target": True,})
 expected.append({ "source": "s3", "target": "t3" })
 
+match.nodes.append({"id": "s3", "content": "`*/*`", "source": True,})
+match.nodes.append({"id": "t3", "content": "noms de fichiers dans un sous répertoire", "target": True,})
+expected.append({ "source": "rep1", "target": "trep1" })
+
+
 random.shuffle(match.nodes)
 ==
 
 text==#|markdown|
 <u>Rappels:</u>
 
- * `*` méta-caractères se substituant à l'importe quel mot (y compris le mot vide).   
- * `?` méta-caractères se substituant à n'importe quel caractère.   
+ * `*` méta-caractères se substituant à n'importe quel mot (y compris le mot vide).   
+ * `?` méta-caractères se substituant à n'importe quel caractère (mais au moins un caractère).   
 
-Joignez chaque pattern à gauche avec une description à droite des éléments recherchés.
+Joignez chaque pattern à gauche avec à droite la description la plus stricte des éléments recherchés.
+
+remarque à DR  les noms de fichiers contenant un '.' en premier caractère ne sont pas vus par les méta-caractères `*`, et `?`
+
 ==
+
 
 form==#|markdown|
 {{ match|component }}
