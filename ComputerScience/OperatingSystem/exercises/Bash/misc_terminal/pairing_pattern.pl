@@ -79,7 +79,7 @@ text==#|markdown|
 
 Joignez chaque pattern à gauche avec à droite la description la plus stricte des éléments recherchés.
 
-remarque à DR  les noms de fichiers contenant un '.' en premier caractère ne sont pas vus par les méta-caractères `*`, et `?`
+Remarque à DR  les noms de fichiers contenant un '.' en premier caractère ne sont pas vus par les méta-caractères `*`, et `?`
 
 ==
 
