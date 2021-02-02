@@ -23,6 +23,8 @@ author=Nicolas Borie
 
 title=Patterns et recherches
 
+tag=méta-caractère|terminal|fichier
+
 # STEP 1
 match =: MatchList
 
