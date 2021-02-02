@@ -49,13 +49,13 @@ form==
 ==
 
 # EVALUATE THE STUDENT ANSWER
-evaluator==
+evaluator==#|python|
 right = 0
 total = 0
 for item in group.items:
     checked = item['checked']
-    content = int(item['content'])
-    if content % 2 == 0:
+    content = item['id']
+    if "g"in content:
         total += 1
         item['css'] = 'success-border animated pulse infinite'
         if checked:
