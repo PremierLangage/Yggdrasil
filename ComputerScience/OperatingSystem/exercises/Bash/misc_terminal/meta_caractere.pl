@@ -21,7 +21,7 @@ builder =@ /builder/before.py
 author=Nicolas Borie
 title=Méta-caractères * et ? en terminal
 
-group =: RadioGroup
+group =: CheckboxGroup
 
 # GENERATE A RANDOM QUESTION
 before==#|python|
@@ -101,22 +101,24 @@ form==
 ==
 
 # EVALUATE THE STUDENT ANSWER
-evaluator==
-S = group.selection
-score = 0
-feedback = '<span class="error-state animated pulse infinite">Bad answer</span>'
-
+evaluator==#|python|
+right = 0
+total = 0
 for item in group.items:
-    item['css'] = ''
-    if item['id'] == S:
-        if S == R:
-            item['css'] = 'success-border'
-            score = 100
-            feedback = '<span class="success-state animated pulse infinite">Good answer</span>'
-        else:
-            item['css'] = 'error-border'
-    elif item['id'] == R:
+    checked = item['checked']
+    content = int(item['content'])
+    if content in solution == 0:
+        total += 1
         item['css'] = 'success-border animated pulse infinite'
+        if checked:
+            right += 1
+            item['css'] = 'success-border'
+    elif checked:
+        item['css'] = 'error-border'
 
-grade = (score, feedback)
+
+if total == 0:
+    grade = (100, 'Right')
+else:
+    grade = ((right / total) * 100, f"{right} / {total}")
 ==
