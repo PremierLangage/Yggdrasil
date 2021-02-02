@@ -28,7 +28,7 @@ sortlist.items %= #|json|
     { "id": "", "content": "Code proposé en ligne par un élève logué sur PLaTon" },
     { "id": "", "content": "Script Python d'évaluation de l'enseignant" },
     { "id": "", "content": "Bibliothèque subprocess de Python (pour exécuter un script dans un programme)" },
-    { "id": "", "content": "Programme python jouant une ressource de type exercice de programmation" },
+    { "id": "", "content": "Programme PLaTon (écrit en Python) jouant un exercice" },
     { "id": "", "content": "Containeur Docker simulant un système sécurisé" },
     { "id": "", "content": "Application Docker manageant les containeurs" },
     { "id": "", "content": "Système d'exploitation du serveur du CRI" },
