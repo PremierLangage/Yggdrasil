@@ -66,7 +66,7 @@ output = sp.communicate()[0].decode()
 solution = output
 solution = []
 if not 'cannot' in output:
-    solution = output.split(' ')
+    solution = output[:-1].split('\n')
 
 # shuffle the items
 random.shuffle(group.items)
