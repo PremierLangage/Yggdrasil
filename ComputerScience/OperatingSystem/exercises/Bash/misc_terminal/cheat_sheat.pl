@@ -75,7 +75,7 @@ for item in group.items:
             item['css'] = 'success-border animated pulse infinite'
 
 if total == right:
-    grade = (100, frame_message("C'est un question de survie ces réflexes!", "ok"))
+    grade = (100, frame_message("C'est une question de survie ces réflexes!", "ok"))
 else:
     feedb = "Bravo Vous avez fait "+str(total-right)
     if total-right > 1 :
