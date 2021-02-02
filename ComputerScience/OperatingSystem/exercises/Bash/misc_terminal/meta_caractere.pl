@@ -104,7 +104,7 @@ form==
 evaluator==#|python|
 from utils_bash import display_as_shell_this, frame_message
 
-from=''
+form=''
 
 right = 0
 total = 0
