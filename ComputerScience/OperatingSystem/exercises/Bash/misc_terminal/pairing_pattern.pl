@@ -31,9 +31,13 @@ import random
 match.nodes = []
 expected = []
 
-match.nodes.append({"id": "spy", "content": "*.py", "source": True,})
+match.nodes.append({"id": "spy", "content": "`*.py`", "source": True,})
 match.nodes.append({"id": "tpy", "content": "Scripts Python", "target": True,})
 expected.append({ "source": "spy", "target": "tpy" })
+
+match.nodes.append({"id": "s3max", "content": "`? ?? ???`", "source": True,})
+match.nodes.append({"id": "t3max", "content": "fichiers de nom d'au plus 3 lettres", "target": True,})
+expected.append({ "source": "s3max", "target": "t3max" })
 
 random.shuffle(match.nodes)
 ==
