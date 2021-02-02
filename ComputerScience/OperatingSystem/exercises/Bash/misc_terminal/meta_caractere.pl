@@ -67,7 +67,7 @@ def full_exp(alphabet, max_len, nb):
     if len(solution) > 0 and len(solution) < nb:
         return (list_word, pattern, solution)
     else:
-        return full_exp(alphabet, max_len, nb)
+        full_exp(alphabet, max_len, nb)
 
 list_word, pattern, solution = full_exp(alphabet_size, max_len_word, nb_words)
 
