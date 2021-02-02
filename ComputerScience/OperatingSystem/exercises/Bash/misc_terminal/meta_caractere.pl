@@ -107,14 +107,16 @@ total = 0
 for item in group.items:
     checked = item['checked']
     content = int(item['content'])
+    total += 1
     if content in solution == 0:
-        total += 1
         item['css'] = 'success-border animated pulse infinite'
         if checked:
             right += 1
             item['css'] = 'success-border'
     elif checked:
         item['css'] = 'error-border'
+    else:
+        right += 1
 
 if total == 0:
     grade = (100, 'Right')
