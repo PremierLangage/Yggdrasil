@@ -30,24 +30,11 @@ before==#|python|
 import random
 match.nodes = []
 expected = []
-for i in range(4):
-    a = random.randint(1, 10)
-    b = random.randint(1, 10)
-    sourceId = "source" + str(i)
-    targetId = "target" + str(i)
 
-    match.nodes.append({
-        "id": sourceId,
-        "content": "%d * %d" % (a, b),
-        "source": True,
-    })
+match.nodes.append({"id": "spy", "content": "*.py", "source": True,})
+match.nodes.append({"id": "tpy", "content": "Scripts Python", "target": True,})
+expected.append({ "source": "spy", "target": "tpy" })
 
-    match.nodes.append({
-        "id": targetId,
-        "content": "%d" % (a * b),
-        "target": True,
-    })
-    expected.append({ "source": sourceId, "target": targetId })
 random.shuffle(match.nodes)
 ==
 
