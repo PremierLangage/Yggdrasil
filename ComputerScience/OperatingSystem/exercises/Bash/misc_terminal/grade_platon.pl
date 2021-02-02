@@ -30,13 +30,13 @@ sortlist =: SortList
 sortlist.items %= #|json|
 [
     { "id": "", "content": "**Morceau de code** proposé en ligne par un élève" },
-    { "id": "", "content": "Code contextuel d'évaluation de l'enseignant et mettant en scène les codes élève" },
-    { "id": "", "content": "Bibliothèque subprocess de Python (pour exécuter un programme dans un autre)" },
-    { "id": "", "content": "Partie de PLaTon (écrit en Python) jouant un exercice" },
-    { "id": "", "content": "Containeur Docker simulant un système sécurisé" },
-    { "id": "", "content": "Application Docker manageant les containeurs" },
-    { "id": "", "content": "Système d'exploitation du serveur du CRI" },
-    { "id": "", "content": "Serveur du C.R.I. dans le sous-sol de Copernic" }
+    { "id": "", "content": "**Code contextuel d'évaluation** de l'enseignant et mettant en scène les codes élève" },
+    { "id": "", "content": "Bibliothèque **subprocess** de Python (pour exécuter un programme dans un autre)" },
+    { "id": "", "content": "Partie de **PLaTon** (écrit en Python) jouant un exercice" },
+    { "id": "", "content": "**Containeur** Docker simulant un système sécurisé" },
+    { "id": "", "content": "Application **Docker** manageant les containeurs" },
+    { "id": "", "content": "**Système d'exploitation** du serveur du CRI" },
+    { "id": "", "content": "**Matériel** : serveur du C.R.I. dans le sous-sol de Copernic" }
 ]
 ==
 
