@@ -51,7 +51,7 @@ questions==
 - Si $% f: I \to I %$ est croissante et $% I %$ est borné, alors $%f(I)%$ est borné
 - Si $% f: \mathbb{R} \to \mathbb{R} %$ est croissante et $% I %$ est non borné, alors $%f(I)%$ est non borné 
 + Si $% f: \mathbb{R} \to \mathbb{R} %$ est croissante et $% I %$ est  majorée, alors $%f(I)%$ est majoré
-+  Si $% f : I \tp I %$ est croissante et $% I %$ est admet un plus grand élément, alors $%f(I)%$ aussi et $% \max(f(I)) = f(\max(I)) %$
++  Si $% f : I \to I %$ est croissante et $% I %$ est admet un plus grand élément, alors $%f(I)%$ aussi et $% \max(f(I)) = f(\max(I)) %$
 + Si $% A %$ et $% B %$ sont des parties non vides bornées de $% \mathbb{R} %$, alors $%\sup (A \cup B)= \max( \sup(A), \sup (B))%$
 + Si $% A %$ et $% B %$ sont des parties non vides bornées de $% \mathbb{R} %$, alors $%\sup (A \cap B)= \min( \sup(A), \sup (B))%$
 ==
