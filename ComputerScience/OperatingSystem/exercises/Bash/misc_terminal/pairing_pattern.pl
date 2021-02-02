@@ -51,6 +51,10 @@ match.nodes.append({"id": "smin3", "content": "`???*`", "source": True,})
 match.nodes.append({"id": "tmin3", "content": "fichiers de nons contenant au moins 3 lettres", "target": True,})
 expected.append({ "source": "smin3", "target": "tmin3" })
 
+match.nodes.append({"id": "smil", "content": "`*?tree?*`", "source": True,})
+match.nodes.append({"id": "tmil", "content": "fichiers de noms contenant `tree` strictement au milieu", "target": True,})
+expected.append({ "source": "smil", "target": "tmil" })
+
 random.shuffle(match.nodes)
 ==
 
