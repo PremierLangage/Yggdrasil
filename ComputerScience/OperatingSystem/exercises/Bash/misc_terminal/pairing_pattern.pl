@@ -39,6 +39,10 @@ match.nodes.append({"id": "s3max", "content": "`? ?? ???`", "source": True,})
 match.nodes.append({"id": "t3max", "content": "fichiers de nom d'au plus 3 lettres", "target": True,})
 expected.append({ "source": "s3max", "target": "t3max" })
 
+match.nodes.append({"id": "spref", "content": "`tree*`", "source": True,})
+match.nodes.append({"id": "tpref", "content": "fichiers de nons préfixé par `tree`", "target": True,})
+expected.append({ "source": "spref", "target": "tpref" })
+
 random.shuffle(match.nodes)
 ==
 
