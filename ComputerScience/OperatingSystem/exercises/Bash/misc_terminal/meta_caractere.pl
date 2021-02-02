@@ -59,7 +59,7 @@ def full_exp(alphabet, max_len, nb):
     pattern = aleapattern(alphabet_size, max_len_word)
 
     cmd = 'mkdir plop; cd plop; touch '+' '.join(list_word)+'; ls '+pattern
-    sp = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    sp = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=1)
     output = sp.communicate()[0].decode()
     solution = []
     if not 'cannot' in output:
