@@ -56,26 +56,32 @@ form==
 
 # EVALUATE THE STUDENT ANSWER
 evaluator==#|python|
-
+from utils_bash import display_as_shell_this, frame_message
 
 right = 0
 total = 0
 for item in group.items:
     checked = item['checked']
-    content = item['id']
-    if "g"in content:
-        total += 1
-        item['css'] = 'success-border animated pulse infinite'
-        if checked:
-            right += 1
-            item['css'] = 'success-border'
-    elif checked:
-        item['css'] = 'error-border'
+    total += 1
+    if ('g' in item['id'] and checked):
+        item['css'] = 'success-border'
+        right += 1
+    elif ('b' in item['id'] and not checked):
+        right += 1
+    else:
+        if checked :
+            item['css'] = 'error-border'
+        else:
+            item['css'] = 'success-border animated pulse infinite'
 
-
-if total == 0:
-    grade = (100, 'Right')
+if total == right:
+    grade = (100, frame_message("C'est un question de survie ces réflexes!", "ok"))
 else:
-    grade = ((right / total) * 100, f"{right} / {total}")
+    feedb = "Bravo Vous avez fait "+str(total-right)
+    if total-right > 1 :
+        feedb += " erreurs."
+    else:
+        feedb += " erreur."
+    grade = ((right*100 // total), frame_message(feedb, "error"))
 ==
 
