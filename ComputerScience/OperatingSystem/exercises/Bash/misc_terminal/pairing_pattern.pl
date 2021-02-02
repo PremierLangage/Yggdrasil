@@ -40,19 +40,19 @@ match.nodes.append({"id": "t3max", "content": "fichiers de nom d'au plus 3 lettr
 expected.append({ "source": "s3max", "target": "t3max" })
 
 match.nodes.append({"id": "spref", "content": "`tree*`", "source": True,})
-match.nodes.append({"id": "tpref", "content": "fichiers de nons préfixé par `tree`", "target": True,})
+match.nodes.append({"id": "tpref", "content": "noms de fichiers préfixé par `tree`", "target": True,})
 expected.append({ "source": "spref", "target": "tpref" })
 
 match.nodes.append({"id": "scont", "content": "`*tree*`", "source": True,})
-match.nodes.append({"id": "tcont", "content": "fichiers de nons contenant `tree`", "target": True,})
+match.nodes.append({"id": "tcont", "content": "noms de fichiers contenant `tree`", "target": True,})
 expected.append({ "source": "scont", "target": "tcont" })
 
 match.nodes.append({"id": "smin3", "content": "`???*`", "source": True,})
-match.nodes.append({"id": "tmin3", "content": "fichiers de nons contenant au moins 3 lettres", "target": True,})
+match.nodes.append({"id": "tmin3", "content": "noms de fichiers contenant au moins 3 lettres", "target": True,})
 expected.append({ "source": "smin3", "target": "tmin3" })
 
 match.nodes.append({"id": "smil", "content": "`*?tree?*`", "source": True,})
-match.nodes.append({"id": "tmil", "content": "fichiers de noms contenant `tree` strictement au milieu", "target": True,})
+match.nodes.append({"id": "tmil", "content": "noms de fichiers contenant `tree` strictement au milieu", "target": True,})
 expected.append({ "source": "smil", "target": "tmil" })
 
 match.nodes.append({"id": "scomp", "content": "`*.o *.so`", "source": True,})
@@ -60,7 +60,7 @@ match.nodes.append({"id": "tcomp", "content": "fichiers contenant du code compil
 expected.append({ "source": "scomp", "target": "tcomp" })
 
 match.nodes.append({"id": "s3", "content": "`???`", "source": True,})
-match.nodes.append({"id": "t3", "content": "fichiers de nons contenant exactement 3 lettres", "target": True,})
+match.nodes.append({"id": "t3", "content": "noms de fichiers contenant exactement 3 lettres", "target": True,})
 expected.append({ "source": "s3", "target": "t3" })
 
 random.shuffle(match.nodes)
