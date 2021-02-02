@@ -19,10 +19,12 @@ author=Nicolas Borie
 title=À la découverte du terminal
 
 introduction==
-C'est vraiment pour prendre connaissance des types d'exercices de base sur 
-PLaTus et du terminal...
-==
+Une petite fiche d'exercices simples et tranquilles pour des astuces et rappels
+autour de la découverte du terminal Unix.
 
+Ça vous permettra aussi de faire un tour des différents types d'exercices de base 
+que l'on peut croiser sur PLaTus...
+==
 
 @ /ComputerScience/OperatingSystem/exercises/Bash/misc_terminal/pairing_pattern.pl
 
