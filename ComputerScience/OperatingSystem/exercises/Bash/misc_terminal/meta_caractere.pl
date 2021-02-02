@@ -15,6 +15,7 @@
 #*****************************************************************************
 
 @ /utils/sandboxio.py
+@ /ComputerScience/OperatingSystem/templates/utils_bash.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
