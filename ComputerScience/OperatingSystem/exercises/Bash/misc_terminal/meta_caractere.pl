@@ -102,6 +102,10 @@ form==
 
 # EVALUATE THE STUDENT ANSWER
 evaluator==#|python|
+from utils_bash import display_as_shell_this, frame_message
+
+from=''
+
 right = 0
 total = 0
 for item in group.items:
@@ -119,9 +123,8 @@ for item in group.items:
         right += 1
 
 score = max([0, 100 - ((total-right)*50) ])
-
-if total == 0:
-    grade = (100, 'Right')
+if score == 100:
+    grade = (score, frame_message("Quel talent!", "ok"))
 else:
-    grade = ((right / total) * 100, f"{right} / {total}")
+    grade = (score, frame_message("Quelques erreurs ici et là...", "error"))
 ==
