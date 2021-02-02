@@ -80,6 +80,7 @@ form==#|markdown|
 ==
 
 evaluator== #|python|
+from utils_bash import display_as_shell_this, frame_message
 
 def in_links(conn, links):
     for e in links:
@@ -98,8 +99,9 @@ for e in match.links:
         e['css'] = 'success-state  animated rotateIn'
 
 if error == 0:
-    grade = (100, '<span class="success-state animated pulse infinite">Good answser</span>')
+    grade = (100, frame_message("Excellent, vous avez un truc nan?", "ok"))
 else:
-    grade = (0, '<span class="error-state animated pulse infinite">Bad answer, you made %d mistakes</span>' % error)
+    score = 100*(8 - error) // 8
+    grade = (score, frame_message("Il y a des éléments non correctement reliés...", "error"))
 ==
 
