@@ -63,9 +63,9 @@ match.nodes.append({"id": "s3", "content": "`???`", "source": True,})
 match.nodes.append({"id": "t3", "content": "noms de fichiers contenant exactement 3 lettres", "target": True,})
 expected.append({ "source": "s3", "target": "t3" })
 
-match.nodes.append({"id": "s3", "content": "`*/*`", "source": True,})
-match.nodes.append({"id": "t3", "content": "noms de fichiers dans un sous répertoire", "target": True,})
-expected.append({ "source": "rep1", "target": "trep1" })
+match.nodes.append({"id": "srep1", "content": "`*/*`", "source": True,})
+match.nodes.append({"id": "trep1", "content": "noms des fichiers situés un sous répertoire", "target": True,})
+expected.append({ "source": "srep1", "target": "trep1" })
 
 
 random.shuffle(match.nodes)
