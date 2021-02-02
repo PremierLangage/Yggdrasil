@@ -61,7 +61,7 @@ for w in list_word:
 
 cmd = 'mkdir plop; cd plop; touch '+' '.join(list_word)+'; ls '+pattern
 sp = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-output = sp.communicate()[0].decode().replace('\n', ' ')
+output = sp.stdout.decode().replace('\n', ' ')
 
 solution = []
 if not 'cannot' in output:
