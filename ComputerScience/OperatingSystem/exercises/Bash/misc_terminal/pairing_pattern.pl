@@ -21,6 +21,7 @@ builder =@ /builder/before.py
 
 author=Nicolas Borie
 
+title=Patterns et recherches
 
 # STEP 1
 match =: MatchList
@@ -50,15 +51,16 @@ for i in range(4):
 random.shuffle(match.nodes)
 ==
 
-title==
-Match List Component
+text==#|markdown|
+<u>Rappels:</u>
+
+ * `*` méta-caractères se substituant à l'importe quel mot (y compris le mot vide).   
+ * `?` méta-caractères se substituant à n'importe quel caractère.   
+
+Joignez chaque pattern à gauche avec une description à droite des éléments recherchés.
 ==
 
-text==
-*Link each operation to the appropriate result.*
-==
-
-form==
+form==#|markdown|
 {{ match|component }}
 ==
 
