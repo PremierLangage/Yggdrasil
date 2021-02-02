@@ -22,6 +22,8 @@ builder =@ /builder/before.py
 author=Nicolas Borie
 title=Méta-caractères * et ? en terminal
 
+tag=méta-caractère|terminal|ls
+
 group =: CheckboxGroup
 
 # GENERATE A RANDOM QUESTION
