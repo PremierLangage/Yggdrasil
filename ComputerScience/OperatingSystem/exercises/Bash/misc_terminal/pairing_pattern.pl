@@ -99,7 +99,7 @@ for e in match.links:
         e['css'] = 'success-state  animated rotateIn'
 
 if error == 0:
-    grade = (100, frame_message("Excellent, vous avez un truc nan?", "ok"))
+    grade = (100, frame_message("Excellent, vous avez un truc sérieux?", "ok"))
 else:
     score = 100*(8 - error) // 8
     grade = (score, frame_message("Il y a des éléments non correctement reliés...", "error"))
