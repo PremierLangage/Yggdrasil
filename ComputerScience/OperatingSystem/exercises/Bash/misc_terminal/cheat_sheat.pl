@@ -37,6 +37,7 @@ group.items.append({"id": "g1", "content": "Utiliser au maximum la tab-completio
 group.items.append({"id": "g2", "content": "Rappeler les commandes avec les flèches plutôt que de les retaper."})
 group.items.append({"id": "g3", "content": "Ne jamais oublier que le résultat de certaines commandes dépendent de la taille du terminal."})
 
+group.items.append({"id": "b1", "content": "Penser à gratter les puces informatiques entre chaque reboot."})
 
 random.shuffle(group.items)
 ==
