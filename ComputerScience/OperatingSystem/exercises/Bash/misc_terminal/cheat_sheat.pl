@@ -42,7 +42,7 @@ group.items.append({"id": "g6", "content": "Les touches `q` et `escape` sont les
 group.items.append({"id": "g7", "content": "Le manuel `man`, les options `-help` et `--help` donne souvent de l'aide."})
 
 group.items.append({"id": "b1", "content": "Penser à gratter les puces informatiques entre chaque reboot."})
-group.items.append({"id": "b2", "content": ""})
+group.items.append({"id": "b2", "content": "Faire toujours bruler un peu d'encens mais pas juste à coté de l'ordinateur."})
 
 random.shuffle(group.items)
 ==
