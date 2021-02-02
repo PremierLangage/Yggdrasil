@@ -1,0 +1,16 @@
+
+C0;C1:type; C2:Partie de $%R%$ ; C3:majoré ; C4:minorée ; C5:sup ; C6:inf ; C7:p.g.e (max); C8:p.p.e. (min)
+1;1a; $%[\sqrt{3}, 2[%$ ; +; +; 2; $%\sqrt{3}%$; -; +
+2;1a; $%[\sqrt{3}, 2]%$ ; +; +; 2; $%\sqrt{3}%$; +;+
+3;1b; $%[\sqrt{3}, 2[\cap \mathbb{Q}%$ ; +; +; -; -; -; -
+4; 1a; $%[\sqrt{3}, 2]%$ ; +; +; 2; 2; +; +
+5; 1a;$%]\sqrt{3}, +\infty[%$ ; -; +; -; $%\sqrt{3}%$; -; +
+6; 1a;$%]-\infty, 2[%$ ; +; -; 2; -; +; -
+7; 2a; $% \\{\frac{1}{n}| \quad n \in \mathbb{N}^*\\}%$; +, +, 1, 0, +, -
+8; 2a; $%\\{\frac{n+3}{n+5} \quad | \quad n \in \mathbb{N} \quad n \ge 5\\}%$; +;+; 1; \frac{4}{5}; -; +
+9; 2b; $% \\{\frac{(-1)^n}{n}| \quad n \in \mathbb{N}^*\\}%$; +; +; \frac{1}{2}; -1; +, +
+10; 2b; $% \\{\frac{n+ (-1)^n}{n}| \quad n \in \mathbb{N} \quad  n \ge 3 \\}%$; +; +; \frac{5}{4}; \frac{2}{3}; +, +
+11; 2c; $% \\{0,333 \quad %$ avec $%n%$ décimales, $%n\ge 1 \\} %$;+;         }
+12; 2c;  
+13; 3a; 
+14; 3a; 
