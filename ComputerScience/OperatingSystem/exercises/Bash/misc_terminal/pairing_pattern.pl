@@ -78,9 +78,6 @@ text==#|markdown|
  * `?` méta-caractères se substituant à n'importe quel caractère (mais au moins un caractère).   
 
 Joignez chaque pattern à gauche avec à droite la description la plus stricte des éléments recherchés.
-
-Remarque à DR  les noms de fichiers contenant un '.' en premier caractère ne sont pas vus par les méta-caractères `*`, et `?`
-
 ==
 
 
