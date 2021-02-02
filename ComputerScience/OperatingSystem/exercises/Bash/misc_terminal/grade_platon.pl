@@ -29,10 +29,10 @@ sortlist =: SortList
 
 sortlist.items %= #|json|
 [
-    { "id": "", "content": "Code proposé en ligne par un élève logué sur PLaTon" },
-    { "id": "", "content": "Script Python d'évaluation de l'enseignant" },
-    { "id": "", "content": "Bibliothèque subprocess de Python (pour exécuter un script dans un programme)" },
-    { "id": "", "content": "Programme PLaTon (écrit en Python) jouant un exercice" },
+    { "id": "", "content": "Morceau de code proposé en ligne par un élève" },
+    { "id": "", "content": "Code contextuel d'évaluation de l'enseignant et mettant en scène les codes élève" },
+    { "id": "", "content": "Bibliothèque subprocess de Python (pour exécuter un programme dans un autre)" },
+    { "id": "", "content": "Partie de PLaTon (écrit en Python) jouant un exercice" },
     { "id": "", "content": "Containeur Docker simulant un système sécurisé" },
     { "id": "", "content": "Application Docker manageant les containeurs" },
     { "id": "", "content": "Système d'exploitation du serveur du CRI" },
