@@ -43,6 +43,10 @@ match.nodes.append({"id": "spref", "content": "`tree*`", "source": True,})
 match.nodes.append({"id": "tpref", "content": "fichiers de nons préfixé par `tree`", "target": True,})
 expected.append({ "source": "spref", "target": "tpref" })
 
+match.nodes.append({"id": "scont", "content": "`*tree*`", "source": True,})
+match.nodes.append({"id": "tcont", "content": "fichiers de nons contenant `tree`", "target": True,})
+expected.append({ "source": "scont", "target": "tcont" })
+
 random.shuffle(match.nodes)
 ==
 
