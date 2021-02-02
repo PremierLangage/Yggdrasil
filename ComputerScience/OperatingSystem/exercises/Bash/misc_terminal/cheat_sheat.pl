@@ -39,7 +39,7 @@ group.items.append({"id": "g3", "content": "Ne jamais oublier que le résultat d
 group.items.append({"id": "g4", "content": "Remplir plutôt son `.bashrc` que saturer sa mémoire."})
 group.items.append({"id": "g5", "content": "Ne pas démarrer de terminal en mode `root`."})
 group.items.append({"id": "g6", "content": "Les touches `q` et `escape` sont les plus courantes pour quitter une application."})
-group.items.append({"id": "g7", "content": "Le manuel `man`, les options `-help` et `--help` donne souvent de l'aide."})
+group.items.append({"id": "g7", "content": "Le manuel `man`, les options `-help` et `--help` donnent souvent de l'aide."})
 
 group.items.append({"id": "b1", "content": "Penser à gratter les puces informatiques entre chaque reboot."})
 group.items.append({"id": "b2", "content": "Faire toujours bruler un peu d'encens mais pas juste à coté de l'ordinateur."})
