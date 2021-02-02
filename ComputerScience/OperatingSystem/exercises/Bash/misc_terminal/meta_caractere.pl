@@ -47,26 +47,33 @@ def aleapattern(alphabet, max_len):
         w += random.choice(letters)
     return '*'+w+'*'
 
-pattern = aleapattern(alphabet_size, max_len_word)
+def full_exp(alphabet, max_len, nb):
+    """
+    Return a nice triplet (words, patten, solutions) to learn what is wild cards.
+    """
+    list_word = []
+    while len(list_word) < nb:
+        w = aleaword(alphabet_size, max_len_word)
+        if w not in list_word:
+            list_word.append(w)
+    pattern = aleapattern(alphabet_size, max_len_word)
 
-list_word = []
-while len(list_word) < nb_words:
-    w = aleaword(alphabet_size, max_len_word)
-    if w not in list_word:
-        list_word.append(w)
+    cmd = 'mkdir plop; cd plop; touch '+' '.join(list_word)+'; ls '+pattern
+    sp = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    output = sp.communicate()[0].decode()
+    solution = []
+    if not 'cannot' in output:
+        solution = output[:-1].split('\n')
+    if len(solution) > 0 and len(solution) < nb:
+        return (list_word, pattern, solution)
+    else:
+        return full_exp(alphabet, max_len, nb)
+
+list_word, pattern, solution = full_exp(alphabet_size, max_len_word, nb_words)
 
 group.items = []
 for w in list_word:
     group.items.append({"id": w, "content": w})
-
-cmd = 'mkdir plop; cd plop; touch '+' '.join(list_word)+'; ls '+pattern
-sp = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-output = sp.communicate()[0].decode()
-
-solution = output
-solution = []
-if not 'cannot' in output:
-    solution = output[:-1].split('\n')
 
 # shuffle the items
 random.shuffle(group.items)
