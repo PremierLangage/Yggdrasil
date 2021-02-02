@@ -55,6 +55,10 @@ match.nodes.append({"id": "smil", "content": "`*?tree?*`", "source": True,})
 match.nodes.append({"id": "tmil", "content": "fichiers de noms contenant `tree` strictement au milieu", "target": True,})
 expected.append({ "source": "smil", "target": "tmil" })
 
+match.nodes.append({"id": "scomp", "content": "`*.o *.so`", "source": True,})
+match.nodes.append({"id": "tcomp", "content": "fichiers contenant du code compilé", "target": True,})
+expected.append({ "source": "scomp", "target": "tcomp" })
+
 random.shuffle(match.nodes)
 ==
 
