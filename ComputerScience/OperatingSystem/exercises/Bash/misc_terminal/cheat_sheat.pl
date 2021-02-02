@@ -34,6 +34,7 @@ import random
 group.items = []
 
 group.items.append({"id": "g1", "content": "Utiliser au maximum la tab-completion pour éviter les fautes de frappe."})
+group.items.append({"id": "g2", "content": "Rappeler les commandes avec les flèches plutôt que de les retaper."})
 
 random.shuffle(group.items)
 ==
