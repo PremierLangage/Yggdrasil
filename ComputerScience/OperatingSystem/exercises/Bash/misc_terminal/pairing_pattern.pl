@@ -59,6 +59,10 @@ match.nodes.append({"id": "scomp", "content": "`*.o *.so`", "source": True,})
 match.nodes.append({"id": "tcomp", "content": "fichiers contenant du code compilé", "target": True,})
 expected.append({ "source": "scomp", "target": "tcomp" })
 
+match.nodes.append({"id": "s3", "content": "`???`", "source": True,})
+match.nodes.append({"id": "t3", "content": "fichiers de nons contenant exactement 3 lettres", "target": True,})
+expected.append({ "source": "s3", "target": "t3" })
+
 random.shuffle(match.nodes)
 ==
 
