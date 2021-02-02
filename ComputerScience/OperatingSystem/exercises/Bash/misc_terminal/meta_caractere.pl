@@ -118,6 +118,8 @@ for item in group.items:
     else:
         right += 1
 
+score = max([0, 100 - ((total-right)*50) ])
+
 if total == 0:
     grade = (100, 'Right')
 else:
