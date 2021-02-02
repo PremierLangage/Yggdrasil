@@ -86,6 +86,11 @@ random.shuffle(group.items)
 ==
 
 text==#|markdown|
+<u>Rappels:</u>
+
+ * `*` méta-caractères se substituant à l'importe quel mot (y compris le mot vide).   
+ * `?` méta-caractères se substituant à n'importe quel caractère.   
+
 On se trouve dans un répertoire contenant les fichiers suivants:
 
 <br>
