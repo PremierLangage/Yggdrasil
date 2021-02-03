@@ -44,7 +44,7 @@ group.items.append({"id": R, "content": "Partenaire particulier du groupe Parten
 random.shuffle(group.items)
 ==
 
-title=Écoute attentive d'un clip audio
+title=Blind test
 
 text==#|markdown|
 Un animal orchestre (un peu comme un homme orchestre mais en plus sauvage) a tenté 
