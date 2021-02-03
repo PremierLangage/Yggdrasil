@@ -20,6 +20,7 @@ builder =@ /builder/before.py
 
 group =: RadioGroup
 
+url_phot =$ flute.jpg
 url_clip =$ partenaire.mp3
 
 author=Nicolas Borie
