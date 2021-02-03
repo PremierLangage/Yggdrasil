@@ -44,11 +44,12 @@ group.items.append({"id": R, "content": "Partenaire particulier du groupe Parten
 random.shuffle(group.items)
 ==
 
-title=Blind test
+title=Cette flûte va vous terminer...
 
 text==#|markdown|
-Un animal orchestre (un peu comme un homme orchestre mais en plus sauvage) a tenté 
-une réinterprétation d'une célèbre chanson des années 80. Quelle est cette chanson ?
+Entre deux exercices à propos du terminal Unix, un animal orchestre (un peu comme 
+un homme orchestre mais en plus sauvage) a tenté une réinterprétation d'une 
+célèbre chanson des années 80. Quelle est cette chanson ?
 
 <br>
 
