@@ -54,6 +54,7 @@ une réinterprétation d'une célèbre chanson des années 80. Quelle est cette 
 
 <center>
 <div>
+<img src="{{ url_phot }}" style="width:30%" alt="les instruments de musiques de l'enfer"/><br>
 <audio controls>
   <source src="{{ url_clip }}" type="audio/mp3">
   Votre navigateur ne supporte pas la lecture du clip audio.
