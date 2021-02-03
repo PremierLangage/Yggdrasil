@@ -16,11 +16,12 @@
 
 author=Nicolas Borie
 
-title=À la découverte du terminal (Compléments au TP1)
+title=Re-découverte du terminal (Compléments au TP1)
 
 introduction==
 Voici une petite fiche d'exercices simples et tranquilles pour des astuces et 
-des rappels autour de la découverte du terminal Unix.
+des rappels autour de la découverte du terminal Unix. Normalement, vous 
+pratiquer le terminal Unix depuis 2 ans en TP d'informatique.
 
 Ça vous permettra aussi de faire un tour des différents types d'exercices de base 
 que l'on peut croiser sur PLaTus...
