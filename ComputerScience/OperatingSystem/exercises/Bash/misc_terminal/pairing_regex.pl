@@ -26,6 +26,7 @@ Relier les expressions régulières à droites avec ce que pourrait obtenir un
 utilisateur en terminal unix en les branchant correctement dans un bon appel 
 à **grep**.
 
+<br>
 
 Attention, comme dans la théorie des langages, l'étoile signifie maintenant 
 toutes répétitions (possiblement vide) du pattern qui le précède. L'étoile des 
