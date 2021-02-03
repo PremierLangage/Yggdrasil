@@ -67,14 +67,14 @@ random.shuffle(match.nodes)
 ==
 
 text==#|markdown|
-Relier les expressions régulières à droites avec ce que pourrait obtenir un 
+Relier les expressions régulières à droite avec ce que pourrait obtenir un 
 utilisateur en terminal unix en les branchant correctement dans un bon appel 
 à **grep**.
 
 <br>
 
 Attention, comme dans la théorie des langages, l'étoile signifie maintenant 
-toutes répétitions (possiblement vide) du pattern qui le précède. L'étoile des 
+toutes répétitions (possiblement vide) du pattern qui la précède. L'étoile des 
 méta-caractères n'est pas la même que l'étoile des expressions régulières.
 ==
 
