@@ -37,8 +37,8 @@ group.items.append({"id": "g1", "content": "Utiliser au maximum la tab-completio
 group.items.append({"id": "g2", "content": "Rappeler les commandes avec les flèches plutôt que de les retaper."})
 group.items.append({"id": "g3", "content": "Se souvenir que le résultat de certaines commandes dépendent de la taille de la fenêtre du terminal."})
 group.items.append({"id": "g4", "content": "Remplir plutôt son `.bashrc` que saturer sa mémoire."})
-group.items.append({"id": "g5", "content": "Ne pas démarrer de terminal en mode `root`, utilisez plutôt `sudo` ponstuellement."})
-group.items.append({"id": "g6", "content": "Les touches `q` et `escape` sont les plus courantes pour quitter une application."})
+group.items.append({"id": "g5", "content": "Ne pas démarrer de terminal en mode `root`, utilisez plutôt `sudo` ponctuellement."})
+group.items.append({"id": "g6", "content": "Les touches `q` et `escape` sont les plus courantes pour quitter une application unix."})
 group.items.append({"id": "g7", "content": "Le manuel `man`, les options `-help` et `--help` donnent souvent de l'aide."})
 
 group.items.append({"id": "b1", "content": "Penser à gratter les puces informatiques entre chaque reboot."})
