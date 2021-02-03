@@ -36,7 +36,7 @@ méta-caractères n'est pas la même que l'étoile des expressions régulières.
 pairs==
 `^[a-z]*$`§lignes composées que de lettres minuscules
 `[1-9][0-9][0-9]`§lignes contenants un nombre compris entre 100 à 999
-`[A-H][1-8]`§lignes contenant un index de case sur un échiquier
+`[A-H][1-8]`§lignes contenant l'index d'une case d'échiquier
 `^[aeiouy]*$`§lignes composées que de voyelles
 `^[^0-9]*$`§lignes sans aucun chiffre
 ==
