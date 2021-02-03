@@ -43,10 +43,6 @@ import random
 match.nodes = []
 expected = []
 
-`[A-H][1-8]`§lignes contenant l'index d'une case d'échiquier
-`^[aeiouy]*$`§lignes composées que de voyelles
-`^[^0-9]*$`§lignes sans aucun chiffre
-
 match.nodes.append({"id": "sminus", "content": "`^[a-z]*$`", "source": True,})
 match.nodes.append({"id": "tminus", "content": "lignes composées que de lettres minuscules", "target": True,})
 expected.append({ "source": "sminus", "target": "tminus" })
@@ -55,34 +51,17 @@ match.nodes.append({"id": "snumber", "content": "`[1-9][0-9][0-9]`", "source": T
 match.nodes.append({"id": "tnumber", "content": "lignes contenants un nombre compris entre 100 à 999", "target": True,})
 expected.append({ "source": "snumber", "target": "tnumber" })
 
-match.nodes.append({"id": "spref", "content": "`tree*`", "source": True,})
-match.nodes.append({"id": "tpref", "content": "noms de fichiers préfixé par `tree`", "target": True,})
-expected.append({ "source": "spref", "target": "tpref" })
+match.nodes.append({"id": "sechec", "content": "`[A-H][1-8]`", "source": True,})
+match.nodes.append({"id": "techec", "content": "lignes contenant l'index d'une case d'échiquier", "target": True,})
+expected.append({ "source": "sechec", "target": "techec" })
 
-match.nodes.append({"id": "scont", "content": "`*tree*`", "source": True,})
-match.nodes.append({"id": "tcont", "content": "noms de fichiers contenant `tree`", "target": True,})
+match.nodes.append({"id": "scont", "content": "`^[aeiouy]*$`", "source": True,})
+match.nodes.append({"id": "tcont", "content": "lignes composées que de voyelles", "target": True,})
 expected.append({ "source": "scont", "target": "tcont" })
 
-match.nodes.append({"id": "smin3", "content": "`???*`", "source": True,})
-match.nodes.append({"id": "tmin3", "content": "noms de fichiers contenant au moins 3 lettres", "target": True,})
+match.nodes.append({"id": "smin3", "content": "`^[^0-9]*$`", "source": True,})
+match.nodes.append({"id": "tmin3", "content": "lignes sans aucun chiffre", "target": True,})
 expected.append({ "source": "smin3", "target": "tmin3" })
-
-match.nodes.append({"id": "smil", "content": "`*?tree?*`", "source": True,})
-match.nodes.append({"id": "tmil", "content": "noms de fichiers contenant `tree` strictement au milieu", "target": True,})
-expected.append({ "source": "smil", "target": "tmil" })
-
-match.nodes.append({"id": "scomp", "content": "`*.o *.so`", "source": True,})
-match.nodes.append({"id": "tcomp", "content": "fichiers contenant du code compilé", "target": True,})
-expected.append({ "source": "scomp", "target": "tcomp" })
-
-match.nodes.append({"id": "s3", "content": "`???`", "source": True,})
-match.nodes.append({"id": "t3", "content": "noms de fichiers contenant exactement 3 lettres", "target": True,})
-expected.append({ "source": "s3", "target": "t3" })
-
-match.nodes.append({"id": "srep1", "content": "`*/*`", "source": True,})
-match.nodes.append({"id": "trep1", "content": "noms des fichiers situés un sous répertoire", "target": True,})
-expected.append({ "source": "srep1", "target": "trep1" })
-
 
 random.shuffle(match.nodes)
 ==
