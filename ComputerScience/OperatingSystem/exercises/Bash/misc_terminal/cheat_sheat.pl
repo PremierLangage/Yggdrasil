@@ -39,7 +39,7 @@ group.items.append({"id": "g3", "content": "Se souvenir que le résultat de cert
 group.items.append({"id": "g4", "content": "Remplir plutôt son `.bashrc` que saturer sa mémoire."})
 group.items.append({"id": "g5", "content": "Ne pas démarrer de terminal en mode `root`, utilisez plutôt `sudo` ponctuellement."})
 group.items.append({"id": "g6", "content": "Les touches `q` et `escape` sont les plus courantes pour quitter une application unix."})
-group.items.append({"id": "g7", "content": "Le manuel `man`, les options `-help` et `--help` donnent souvent de l'aide."})
+group.items.append({"id": "g7", "content": "Le manuel `man`, les options `-help` et `--help` donnent très souvent de l'aide."})
 
 group.items.append({"id": "b1", "content": "Penser à gratter les puces informatiques entre chaque reboot."})
 group.items.append({"id": "b2", "content": "Faire toujours bruler un peu d'encens mais pas juste à coté de l'ordinateur."})
