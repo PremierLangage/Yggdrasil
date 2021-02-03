@@ -25,7 +25,7 @@ Pour chaque ligne proposer l'exercice suivant :
 # $%a%$ est-il un minorant de I ?  oui/non (réponse  oui si ((C6 est une valeur numérique) et (a\ge  C6)) ou  (C6=-) 
 
 
-Mode entrainement 6 fois de suite.
+Mode entrainement 15 questions.
 
 Parcourir suivant les types (C1 x) croissants. 
 - on commence à x= 1, toutes les versions ont le poids 2.
