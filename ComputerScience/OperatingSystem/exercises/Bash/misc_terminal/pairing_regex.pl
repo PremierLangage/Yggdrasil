@@ -16,7 +16,7 @@
 
 extends = /model/matchlist/matchlist.pl
 
-title = Nourrire vos animaux 
+title=Recherche à l'intérieur des fichiers
 
 tag=grep|regex|expression régulière|terminal|unix
 
@@ -27,7 +27,7 @@ utilisateur en terminal unix en les branchant correctement dans un bon appel
 
 
 Attention, comme dans la théorie des langages, l'étoile signifie maintenant 
-toute répétition (possiblement vide) du pattern qui le précède. L'étoile des 
+toutes répétitions (possiblement vide) du pattern qui le précède. L'étoile des 
 méta-caractères n'est pas la même que l'étoile des expressions régulières.
 ==
 
