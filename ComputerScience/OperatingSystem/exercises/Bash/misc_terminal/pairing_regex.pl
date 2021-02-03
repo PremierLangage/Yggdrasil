@@ -17,7 +17,7 @@
 extends = /model/matchlist/matchlist.pl
 
 author=Nicolas Borie
-title=Recherche à l'intérieur des fichiers
+title=Recherches à l'intérieur des fichiers
 
 tag=grep|regex|expression régulière|terminal|unix
 
