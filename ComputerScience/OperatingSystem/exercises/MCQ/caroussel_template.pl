@@ -58,7 +58,7 @@ def ParseQuestion(big_str):
                 goods = []
                 bads = []
 
-            if line[1] == '*':
+            if len(line)>1 and line[1] == '*':
                 text = line[2:]
             else:
                 text = line[1:]
