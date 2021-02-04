@@ -113,7 +113,20 @@ Node * allocate_node(int val){
 
 code_after==#|c|
 
-int build_tree(Tree* t){
+
+int ajoute(Tree *t,int valeur){
+  if (*t == NULL){
+    if ((*t=allocate_node(valeur))==NULL)
+     return 0;
+    return 1;
+  }
+  if (((*t)->value >valeur))
+    return ajoute(&((*t)->left),valeur);
+  if (((*t)->value <valeur))
+    return ajoute(&((*t)->right),valeur);
+
+  return 1;
+} int build_tree(Tree* t){
     int val;
    
     while(1==    scanf("%d", &val))   {
