@@ -34,7 +34,10 @@ before==#|python|
 
 nb_volets=int(nb_question)
 
-s = (feedback == True)
+if feedback:
+    s = True
+else:
+    s = False
 ==
 
 
