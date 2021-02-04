@@ -45,7 +45,7 @@ text==#|markdown|
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
-    <div class="item active" height="500px">
+    <div class="item active" style="height:500px">
       J'aime les pommes
     </div>
 
