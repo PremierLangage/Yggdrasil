@@ -39,7 +39,7 @@ group.items = []
 
 group.items.append({"id": "y1", "content": ' ![Le style 1]({{ url_phot_1 }}) '})
 group.items.append({"id": "y2", "content": '<img src=" {{ url_phot_2 }} " style="width:40%" alt="le style2"/>'})
-group.items.append({"id": "y3", "content": """<img src=" {{ url_phot_3 }} " style="width:40%" alt="le style3"/>"""})
+group.items.append({"id": "y3", "content": """<img src="{{ url_phot_3 }}" style="width:40%" alt="le style3"/>"""})
 group.items.append({"id": "y4", "content": """<img src=" {{ url_phot_4 }} " style="width:40%" alt="le style4"/>"""})
 group.items.append({"id": "y5", "content": """<img src=" {{ url_phot_5 }} " style="width:40%" alt="le style5"/>"""})
 
