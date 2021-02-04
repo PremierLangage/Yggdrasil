@@ -72,7 +72,7 @@ def ParseQuestion(big_str):
             if last == 0:
                 text += line
             elif last == 1:
-                good[-1] += line
+                goods[-1] += line
             else:
                 bads[-1] += line
 
