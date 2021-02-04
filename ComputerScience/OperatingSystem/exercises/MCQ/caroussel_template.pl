@@ -23,17 +23,24 @@ title==
 Fork me please, do not modify me please !
 ==
 
+#****************************************************************************
+# PANNEAU DE CONTROLE ICI
+#****************************************************************************
 questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
-
 nb_question=3
+feedback=True
 
 before==#|python|
 
 nb_volets=int(nb_question)
+
+s = (feedback == True)
 ==
 
 
 text==#|markdown|
+
+--> {{ s }}
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
