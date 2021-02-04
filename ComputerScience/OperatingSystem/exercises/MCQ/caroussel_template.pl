@@ -76,6 +76,8 @@ text==#|markdown|
 Veuillez à bien remplir les {{ nb_volets }} volets avant de valier!
 </p>
 
+<br>
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <!-- Indicators -->
   <ol class="carousel-indicators">
