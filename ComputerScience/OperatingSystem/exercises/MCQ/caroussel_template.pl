@@ -101,7 +101,7 @@ q_mix_item = []
 for q, g, b in q_lst:
     nb_options = random.randint(int(min_options), int(max_options))
     nb_options = min([nb_options, len(g)+len(b)])
-    nb_good = random.randint(max([nb_options-len(b), 0]), nb_options)
+    nb_good = random.randint(max([nb_options-len(b), 0]), min([nb_options, len(g)]))
     nb_bad = nb_options - nb_good
     q_mix_item.append([q, random.sample(g, nb_good), random.sample(b, nb_bad)])
 
