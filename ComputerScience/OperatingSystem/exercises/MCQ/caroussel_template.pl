@@ -35,6 +35,17 @@ max_options=8
 # FIN DU PANNEAU DE CONTROLE : NE PLUS RIEN TOUCHER APRES
 #****************************************************************************
 
+group0 =: CheckboxGroup
+group1 =: CheckboxGroup
+group2 =: CheckboxGroup
+group3 =: CheckboxGroup
+group4 =: CheckboxGroup
+group5 =: CheckboxGroup
+group6 =: CheckboxGroup
+group7 =: CheckboxGroup
+group8 =: CheckboxGroup
+group9 =: CheckboxGroup
+
 before==#|python|
 import random
 
@@ -95,6 +106,12 @@ for q, g, b in q_lst:
     q_mix_item.append([q, random.sample(g, nb_good), random.sample(b, nb_bad)])
 
 
+group.items = []
+for i in range(4):
+    group.items.append({
+        "id": str(i),
+        "content": str(random.randint(0, 100))
+    })
 
 ==
 
