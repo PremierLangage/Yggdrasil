@@ -69,7 +69,7 @@ text==#|markdown|
     padding-top: 10px;
     padding-left: 15%;
     padding-right: 15%;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 </style>
 
