@@ -54,7 +54,7 @@ group.items.append({"id": "y5", "content": simg5})
 random.shuffle(group.items)
 ==
 
-title=Évolution des modes
+title=Évolution des modes, prédire l'avenir
 
 text==#|markdown|
 Votre enseignant ayant 30 années d'avance sur le méta-game, Jean-Louis David et 
