@@ -218,9 +218,9 @@ text==
 
 Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 
-
-Liste des questions : {{ list_questions }}
-
+{% for q in list_questions %}
+QUESTION --> : {{ q }}
+{% endfor %}
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
