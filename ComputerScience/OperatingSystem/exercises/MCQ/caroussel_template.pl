@@ -81,7 +81,7 @@ def ParseQuestion(opened_file):
             current += line
     return MCQ_lst
 
-
+MSQ_lst = ParseQuestion(questions)
 
 
 ==
