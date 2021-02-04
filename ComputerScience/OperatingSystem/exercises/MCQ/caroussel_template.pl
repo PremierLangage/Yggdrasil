@@ -30,9 +30,13 @@ questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
 nb_question=3
 feedback=True
 min_options=4
-max_options=8 
+max_options=8
+#****************************************************************************
+# FIN DU PANNEAU DE CONTROLE : NE PLUS RIEN TOUCHER APRES
+#****************************************************************************
 
 before==#|python|
+import random
 
 nb_volets=int(nb_question)
 
