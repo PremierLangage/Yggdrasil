@@ -65,8 +65,8 @@ text==#|markdown|
 }
 .item{
     padding-top: 10px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 </style>
 
