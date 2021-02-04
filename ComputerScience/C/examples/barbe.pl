@@ -57,8 +57,13 @@ random.shuffle(group.items)
 title=Évolution des modes
 
 text==#|markdown|
-Votre enseignant ayant 30 années d'avance sur la méta. Déterminer quelle sera 
-la dernière manière à la mode pour la barbe durant l'année 2056.
+Votre enseignant ayant 30 années d'avance sur le méta-game, Jean-Louis David et 
+Jacques Dessange sont complètement en sueur.
+
+<br>
+
+Pour aider tous coiffeurs/barbers en panne d'inspiration, tenter de déterminer quelle 
+sera la dernière manière à la mode pour la barbe durant l'année 2056.
 
 <br>
 
