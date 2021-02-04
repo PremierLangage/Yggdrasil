@@ -25,8 +25,10 @@ Fork me please, do not modify me please !
 
 questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
 
-before==
 
+before==#|python|
+
+nb_volets=5
 ==
 
 
@@ -70,6 +72,9 @@ text==#|markdown|
 }
 </style>
 
+<p>
+Veuillez à bien remplir les {{ nb_volets }} avant de valier
+</p>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <!-- Indicators -->
