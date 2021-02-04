@@ -36,7 +36,7 @@ before==#|python|
 
 nb_volets=int(nb_question)
 
-def ParseQuestion(opened_file):
+def ParseQuestion(big_str):
     """
     Parse a Python open file of formated questions in AMC style and return a 
     list of parsed questions together with theirs answers.
@@ -46,39 +46,17 @@ def ParseQuestion(opened_file):
     bads = []
     current = None
     MCQ_lst = []
-    # We manually add a last "*" in the parsing to register the last question 
-    for line in opened_file.split('\n')+["*"]:
-        if line[0] in "*+-":
-            # We did read a new item
-            # First, we register the last item
-            if current is not None:
-                if current[0] == "*":
-                    if current[1] == "*":
-                        text = current[2:]
-                    else:
-                        text = current[1:]
-                elif current[0] == "+":
-                    goods.append(current[1:])
-                elif current[0] == "-":
-                    bads.append(current[1:])
-                else:
-                    raise ValueError("Error during parsing the questions file.")
-            
-            if line[0] == "*":
-                # In this case, the new item is a new question
-                # It is time to insert a potential question
-                if text is not None:
-                    MCQ_lst.append([text, goods, bads])
-                    text = None
-                    goods = []
-                    bads = []
-            
-            # the new item overwrite the current one
-            current = line 
-        else:
-            # If this is not a new item, we concat to the previous item.
-            current = current.replace("\n", " ")
-            current += line
+    for line in big_str.split('\n')+['*']:
+        if line[0] in '*':
+            # first, register the last parsed question if relevant
+            if text is not None:
+                MCQ_lst.append([text, goods, bads])
+                text = None
+                goods = []
+                bads = []
+
+            if line[1] == '*'
+
     return MCQ_lst
 
 MSQ_lst = ParseQuestion(questions)
