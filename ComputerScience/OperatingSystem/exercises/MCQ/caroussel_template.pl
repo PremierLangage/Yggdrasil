@@ -29,7 +29,7 @@ nb_question=3
 
 before==#|python|
 
-nb_volets=nb_question
+nb_volets=int(nb_question)
 ==
 
 
