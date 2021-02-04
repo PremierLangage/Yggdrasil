@@ -23,6 +23,11 @@ title==
 Fork me please, do not modify me please !
 ==
 
+before==
+
+==
+
+
 text==#|markdown|
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
