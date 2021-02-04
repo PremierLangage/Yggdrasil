@@ -28,7 +28,7 @@ Fork me please, do not modify me please !
 #****************************************************************************
 questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
 nb_question=3
-feedback=0
+feedback=False
 
 before==#|python|
 
