@@ -24,7 +24,7 @@ matchlist.setdata_from_matches([(row['nom'], row['dates']) for row in sample_row
 ==
 
 text ==
-Relier chaque mmathématiciens à ses dates de naissances et de mort.
+Relier chaque mathématiciens à ses dates de naissances et de mort.
 ==
 
 matchlist =: MatchList
