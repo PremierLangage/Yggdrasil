@@ -107,9 +107,9 @@ for q, g, b in q_lst:
 
 group0.items = []
 for i, s in enumerate(q_mix_item[1]):
-    group.items.append({"id": "g"+str(i), "content": s})
+    group0.items.append({"id": "g"+str(i), "content": s})
 for i, s in enumerate(q_mix_item[2]):
-    group.items.append({"id": "b"+str(i), "content": s})
+    group0.items.append({"id": "b"+str(i), "content": s})
 
 
 
