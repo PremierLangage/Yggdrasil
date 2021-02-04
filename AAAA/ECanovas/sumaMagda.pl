@@ -27,3 +27,6 @@ On rappelle que si $!n \ge 1!$ on a
 <li>$! \displaystyle\sum_{k=1}^n k^3 = \frac{n^2(n+1)^2}{4}.!$</li>
 </ul>
 ==
+# k^1 doit s'afficher comme  k
+# k^0(=1) ne doit pas s'afficher
+# question : faut-il le recoder ? Quand ? (à discuter avec David)
