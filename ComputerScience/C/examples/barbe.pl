@@ -55,7 +55,7 @@ la dernière manière à la mode pour la barbe durant l'année 2056.
 
 <br>
 
-<!-- <img src="{{ url_phot_5 }}" style="width:40%" alt="le style5"/> -->
+<img src="{{ url_phot_5 }}" alt="le style5"/>
 
 ==
 
