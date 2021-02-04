@@ -26,8 +26,8 @@ tag=recherche
 editor.height=300px
 
 text== 
-Écrire une fonction C **extraire_minimume** qui extrait le eminimumun d'un **arbre binaire de recherche**.
-La fonction renvoie 1 en cas d'extraction réussie ou si la valeur est déjà dans l'arbre, et 0 sinon
+Écrire une fonction C **extraire_minimum** qui extrait le eminimumun d'un **arbre binaire de recherche**.
+La fonction renvoie 1 en cas d'extraction réussie et 0 sinon
 On utilisera le type 
 typedef struct node{
   int value;
