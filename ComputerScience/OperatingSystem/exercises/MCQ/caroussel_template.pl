@@ -73,7 +73,7 @@ text==#|markdown|
 </style>
 
 <p>
-Veuillez à bien remplir les {{ nb_volets }} avant de valier
+Veuillez à bien remplir les {{ nb_volets }} volets avant de valier!
 </p>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
