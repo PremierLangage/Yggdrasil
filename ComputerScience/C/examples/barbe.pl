@@ -43,7 +43,6 @@ group.items.append({"id": "y3", "content": """<img src=" {{ url_phot_3 }} " styl
 group.items.append({"id": "y4", "content": """<img src=" {{ url_phot_4 }} " style="width:40%" alt="le style4"/>"""})
 group.items.append({"id": "y5", "content": """<img src=" {{ url_phot_5 }} " style="width:40%" alt="le style5"/>"""})
 
-
 # shuffle the items
 random.shuffle(group.items)
 ==
@@ -56,7 +55,7 @@ la dernière manière à la mode pour la barbe durant l'année 2056.
 
 <br>
 
-<img src="{{ url_phot_5 }}" style="width:40%" alt="le style5"/>
+<!-- <img src="{{ url_phot_5 }}" style="width:40%" alt="le style5"/> -->
 
 ==
 
