@@ -25,7 +25,7 @@ Fork me please, do not modify me please !
 
 questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
 
-nb_question=5
+nb_question=3
 
 before==#|python|
 
