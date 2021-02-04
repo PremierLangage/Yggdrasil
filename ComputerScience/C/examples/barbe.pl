@@ -38,10 +38,11 @@ import random
 group.items = []
 
 simg1 = '<table><tr><td><img src="'+str(url_phot_1)+'" alt="le style1"/></td><td>La moustache suspendue assymétrique</td></tr></table>'
-simg2 = '<img src="'+str(url_phot_2)+'" alt="le style2"/>'
-simg3 = '<img src="'+str(url_phot_3)+'" alt="le style3"/>'
-simg4 = '<img src="'+str(url_phot_4)+'" alt="le style4"/>'
-simg5 = '<img src="'+str(url_phot_5)+'" alt="le style5"/>'
+simg2 = '<table><tr><td><img src="'+str(url_phot_2)+'" alt="le style2"/></td><td>La taille de stéréoisomérie (zusammen) </td></tr></table>'
+simg3 = '<table><tr><td><img src="'+str(url_phot_3)+'" alt="le style3"/></td><td>La moustache suspendue assymétrique</td></tr></table>'
+simg4 = '<table><tr><td><img src="'+str(url_phot_4)+'" alt="le style4"/></td><td>La moustache suspendue assymétrique</td></tr></table>'
+simg5 = '<table><tr><td><img src="'+str(url_phot_5)+'" alt="le style5"/></td><td>La moustache suspendue assymétrique</td></tr></table>'
+
 
 group.items.append({"id": "y1", "content": simg1})
 group.items.append({"id": "y2", "content": simg2})
