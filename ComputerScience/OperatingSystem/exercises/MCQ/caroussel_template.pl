@@ -45,12 +45,34 @@ text==#|markdown|
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
-    <div class="item active" style="height:500px">
-      
+    <div class="item active">
+      Parmi les commandes suivantes, lesquelles permettent de visualiser un flux ou un fichier ?<br>
+      <ul>
+        <li>pwd</li>
+        <li>chmod</li>
+        <li>chgrp</li>
+        <li>mkdir</li>
+        <li>less</li>
+        <li>more</li>
+        <li>cat</li>
+        <li>head</li>
+        <li>tail</li>
+      </ul>
     </div>
 
     <div class="item">
-      
+      Parmi les commandes suivantes, lesquelles permettent de visualiser un flux ou un fichier ?<br>
+      <ul>
+        <li>pwd</li>
+        <li>chmod</li>
+        <li>chgrp</li>
+        <li>mkdir</li>
+        <li>less</li>
+        <li>more</li>
+        <li>cat</li>
+        <li>head</li>
+        <li>tail</li>
+      </ul>
     </div>
 
     <div class="item">
