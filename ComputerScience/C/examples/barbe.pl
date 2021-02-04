@@ -43,7 +43,7 @@ simg3 = '<img src="'+str(url_phot_3)+'" alt="le style3"/>'
 simg4 = '<img src="'+str(url_phot_4)+'" alt="le style4"/>'
 simg5 = '<img src="'+str(url_phot_5)+'" alt="le style5"/>'
 
-group.items.append({"id": "y1", "content": simg1+"  La moustache suspendue assymétrique"})
+group.items.append({"id": "y1", "content": simg1+"La moustache suspendue assymétrique"})
 group.items.append({"id": "y2", "content": simg2})
 group.items.append({"id": "y3", "content": simg3})
 group.items.append({"id": "y4", "content": simg4})
