@@ -44,10 +44,11 @@ def ParseQuestion(big_str):
     text = None
     goods = []
     bads = []
-    current = None
+    last = 0
     MCQ_lst = []
     for line in big_str.split('\n')+['*']:
-        if line[0] in '*':
+        if line[0] == '*':
+            last = 0
             # first, register the last parsed question if relevant
             if text is not None:
                 MCQ_lst.append([text, goods, bads])
@@ -55,7 +56,23 @@ def ParseQuestion(big_str):
                 goods = []
                 bads = []
 
-            if line[1] == '*'
+            if line[1] == '*':
+                text = line[2:]
+            else:
+                text = line[1:]
+        elif line[0] == '+':
+            goods.append(line[1:])
+            last = 1
+        elif line[0] == '-':
+            bads.append(line[1:])
+            last = 2
+        else:
+            if last == 0:
+                text += line
+            elif last == 1:
+                good[-1] += line
+            else:
+                bads[-1] += line
 
     return MCQ_lst
 
