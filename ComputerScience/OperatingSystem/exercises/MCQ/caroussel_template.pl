@@ -105,13 +105,13 @@ for q, g, b in q_lst:
     nb_bad = nb_options - nb_good
     q_mix_item.append([q, random.sample(g, nb_good), random.sample(b, nb_bad)])
 
+group0.items = []
+for i, s in enumerate(q_mix_item[1]):
+    group.items.append({"id": "g"+str(i), "content": s})
+for i, s in enumerate(q_mix_item[2]):
+    group.items.append({"id": "b"+str(i), "content": s})
 
-group.items = []
-for i in range(4):
-    group.items.append({
-        "id": str(i),
-        "content": str(random.randint(0, 100))
-    })
+
 
 ==
 
