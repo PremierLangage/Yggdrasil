@@ -23,6 +23,8 @@ title==
 Fork me please, do not modify me please !
 ==
 
+questions
+
 before==
 
 ==
@@ -34,6 +36,38 @@ text==#|markdown|
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    margin: auto;
+    width: 70%;
+  }
+  #myCarousel{
+    min-height: 300px;
+  }
+.carousel-indicators li {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #0000ff;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+.carousel-indicators .active {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    background-color: #ffff99;
+}
+.item{
+    padding-top: 10px;
+}
+</style>
+
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
