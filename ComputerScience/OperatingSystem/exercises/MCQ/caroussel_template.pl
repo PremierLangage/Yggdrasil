@@ -25,10 +25,11 @@ Fork me please, do not modify me please !
 
 questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
 
+nb_question=5
 
 before==#|python|
 
-nb_volets=5
+nb_volets=nb_question
 ==
 
 
