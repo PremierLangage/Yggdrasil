@@ -23,7 +23,7 @@ title==
 Fork me please, do not modify me please !
 ==
 
-questions
+questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
 
 before==
 
