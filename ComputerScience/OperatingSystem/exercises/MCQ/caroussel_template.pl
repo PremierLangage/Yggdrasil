@@ -47,6 +47,8 @@ def ParseQuestion(big_str):
     last = 0
     MCQ_lst = []
     for line in big_str.split('\n')+['*']:
+        if len(line) == 0:
+            continue
         if line[0] == '*':
             last = 0
             # first, register the last parsed question if relevant
