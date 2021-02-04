@@ -47,7 +47,7 @@ def ParseQuestion(opened_file):
     current = None
     MCQ_lst = []
     # We manually add a last "*" in the parsing to register the last question 
-    for line in opened_file.readlines()+["*"]:
+    for line in opened_file.split('\n')+["*"]:
         if line[0] in "*+-":
             # We did read a new item
             # First, we register the last item
