@@ -38,7 +38,7 @@ max_options=8
 before==#|python|
 import random
 
-nb_volets=int(nb_question)
+nb_volets=max([1, int(nb_question)])
 
 def ParseQuestion(big_str):
     """
@@ -83,6 +83,8 @@ def ParseQuestion(big_str):
     return MCQ_lst
 
 MSQ_lst = ParseQuestion(questions)
+
+q_lst = random.sample(MSQ_lst, min([nb_volets, len(MSQ_lst), 10]))
 
 
 ==
