@@ -46,15 +46,40 @@ text==#|markdown|
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active" style="height:500px">
-      J'aime les pommes
+      ** Parmi les assertions suivantes, sélectionnez celle qui sont correctes ?
+- Les commandes Unix travaille page par page.
+- Unix tente de proposer une commande différente pour chaque tâche, simple ou évoluée.
++ La plupart des commandes en terminal travaillent ligne par ligne.
++ L'entrée et la sortie standard sont bufferisés ligne par ligne.
++ En terminal Unix, tout est chaîne de caractères.
++ Les exécutions de commande Unix sont paramètrées par des arguments et l'entrée standard.
     </div>
 
     <div class="item">
-      J'aime les poires
+      ** Sélectionner dans la liste suivante les programmes fonctionnels sans entrée (fonctionnant sans argument ou entrée standard).
+- mkdir
+- rm
+- sort
+- cut
+- grep
+- find
++ date
++ cal
++ pwd
++ whoami
     </div>
 
     <div class="item">
-      J'aime les patates
+      ** Parmi les commandes suivantes, lesquelles permettent de visualiser un flux ou un fichier ?
+- pwd
+- chmod
+- chgrp
+- mkdir
++ less
++ more
++ cat
++ head
++ tail
     </div>
   </div>
 
