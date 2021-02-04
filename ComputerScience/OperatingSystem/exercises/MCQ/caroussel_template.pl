@@ -219,7 +219,9 @@ text==
 Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 
 {% for q in list_questions %}
+<br>
 QUESTION --> : {{ q }}
+<br>
 {% endfor %}
 
 
