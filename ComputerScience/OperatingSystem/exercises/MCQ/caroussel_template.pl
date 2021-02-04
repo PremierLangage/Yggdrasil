@@ -56,17 +56,17 @@ text==#|markdown|
     </div>
 
     <div class="item">
-      ** Sélectionner dans la liste suivante les programmes fonctionnels sans entrée (fonctionnant sans argument ou entrée standard).
-- mkdir
-- rm
-- sort
-- cut
-- grep
-- find
-+ date
-+ cal
-+ pwd
-+ whoami
+      Sélectionner dans la liste suivante les programmes fonctionnels sans entrée (fonctionnant sans argument ou entrée standard).
+ * mkdir   
+ * rm   
+ * sort   
+ * cut   
+ * grep   
+ * find   
+ * date   
+ * cal   
+ * pwd   
+ * whoami   
     </div>
 
     <div class="item">
