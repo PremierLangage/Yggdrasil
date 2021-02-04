@@ -77,9 +77,13 @@ form==
 
 # EVALUATE THE STUDENT ANSWER
 evaluator==#|python|
-feedback = '''<span class="success-state animated pulse infinite" style="padding: 10px">Mais oui, ce style est si insane!</span>'''
-
-grade = (100, feedback)
+S = group.selection
+if S == "":
+    feedback = '''<span class="error-state animated pulse infinite" style="padding: 10px">Enfin, il faut choisir !</span>'''
+    grade = (-1, feedback)
+else:
+    feedback = '''<span class="success-state animated pulse infinite" style="padding: 10px">Mais oui, ce style est si insane!</span>'''
+    grade = (100, feedback)
 ==
 
 
