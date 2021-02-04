@@ -46,7 +46,7 @@ def ParseQuestion(big_str):
     bads = []
     last = 0
     MCQ_lst = []
-    for line in big_str.split('\n')+['*']:
+    for line in big_str.split('\n')+['* ']:
         if len(line) == 0:
             continue
         if line[0] == '*':
@@ -58,7 +58,7 @@ def ParseQuestion(big_str):
                 goods = []
                 bads = []
 
-            if len(line)>1 and line[1] == '*':
+            if line[1] == '*':
                 text = line[2:]
             else:
                 text = line[1:]
