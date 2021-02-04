@@ -99,17 +99,17 @@ q_lst = random.sample(MSQ_lst, min([nb_volets, len(MSQ_lst), 10]))
 
 q_mix_item = []
 for q, g, b in q_lst:
-    nb_options = random.randint(min_options, max_options)
-#    nb_options = min([nb_options, len(g)+len(b)])
-#    nb_good = random.randint(max([nb_options-len(b), 0]), nb_options)
-#    nb_bad = nb_options - nb_good
-#    q_mix_item.append([q, random.sample(g, nb_good), random.sample(b, nb_bad)])
+    nb_options = random.randint(int(min_options), int(max_options))
+    nb_options = min([nb_options, len(g)+len(b)])
+    nb_good = random.randint(max([nb_options-len(b), 0]), nb_options)
+    nb_bad = nb_options - nb_good
+    q_mix_item.append([q, random.sample(g, nb_good), random.sample(b, nb_bad)])
 
-#group0.items = []
-#for i, s in enumerate(q_mix_item[1]):
-#    group0.items.append({"id": "g"+str(i), "content": s})
-#for i, s in enumerate(q_mix_item[2]):
-#    group0.items.append({"id": "b"+str(i), "content": s})
+group0.items = []
+for i, s in enumerate(q_mix_item[1]):
+    group0.items.append({"id": "g"+str(i), "content": s})
+for i, s in enumerate(q_mix_item[2]):
+    group0.items.append({"id": "b"+str(i), "content": s})
 
 
 
