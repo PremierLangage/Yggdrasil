@@ -37,11 +37,12 @@ import random
 
 group.items = []
 
-group.items.append({"id": "y2", ""})
-group.items.append({"id": "y3", "content": "Je préfère boumbo, petite automobile."})
-group.items.append({"id": "y4", "content": "Pourquoi le père noël a ramené ce pédalier multi-effets pour guitare electrique?"})
-group.items.append({"id": "y5", "content": "Ce soir, tu dors dehors si ça continue."})
-group.items.append({"id": "y1", "content": "Tortues ninja, ça suffit maintenant!"})
+group.items.append({"id": "y1", """<img src="{{ url_phot_1 }}" style="width:40%" alt="le style1"/>"""})
+group.items.append({"id": "y2", """<img src="{{ url_phot_2 }}" style="width:40%" alt="le style2"/>"""})
+group.items.append({"id": "y3", """<img src="{{ url_phot_3 }}" style="width:40%" alt="le style3"/>"""})
+group.items.append({"id": "y4", """<img src="{{ url_phot_4 }}" style="width:40%" alt="le style4"/>"""})
+group.items.append({"id": "y5", """<img src="{{ url_phot_5 }}" style="width:40%" alt="le style5"/>"""})
+
 
 # shuffle the items
 random.shuffle(group.items)
@@ -55,11 +56,6 @@ la dernière manière à la mode pour la barbe durant l'année 2056.
 
 <br>
 
-<center>
-<div>
-<img src="{{ url_phot }}" style="width:40%" alt="les instruments de musiques de l'enfer"/><br>
-</div>
-</center>
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
