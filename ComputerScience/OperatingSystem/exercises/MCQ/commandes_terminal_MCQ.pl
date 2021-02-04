@@ -1,7 +1,7 @@
 # Copyright 2020 Nicolas Borie <nicolas.borie@u-pem.fr>
 tag=system|unix|terminal|bash
 
-extends = /model/AMC_TXT.pl
+extends = /ComputerScience/OperatingSystem/templates/parametrized_MCQ.pl
 
 title = Quizz sur quelques commandes terminal Unix
 
