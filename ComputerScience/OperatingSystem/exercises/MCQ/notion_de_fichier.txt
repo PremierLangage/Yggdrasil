@@ -22,7 +22,7 @@
 + Le propriétaire du fichier.
 
 
-** Parmi les types suivants, lesquels sont des types de fichiers Unix ?
+** Parmi les types suivants, lesquels sont des types de fichiers au sens du système Unix ?
 - Archive oubliée.
 - Lien du sang.
 - Tube musical de l'été.
@@ -58,12 +58,11 @@
 + L'entrée standard **stdin** est bufferisée par ligne.
 
 
-** Sélectionner les fonctionalités de redirection valides en Unix.
+** Sélectionner les fonctionalités de redirection valides en bash .
 -     <2
 -     ><
 -     XD
 -     :-;
--     3>
 -     1&3>
 -     <3
 +     |
@@ -121,6 +120,7 @@
 ** Quel(s) sont les flux d'octets standard en Unix ?
 - setin, le flux conventionnel.
 - bloodout, le flux mensuel.
+- corsa, le canal habituel.
 - errno, le flux entier.
 - errin, l'entrée standard d'erreur.
 + stdin, l'entrée standard.
@@ -139,12 +139,13 @@
 + La commande rajoute la documentation de printf à la fin du fichier.
 
 
-** Que fais la commande : ./is_abr < abr.txt ?
+** Que fais la ligne de commande : ./is_abr < abr.txt ?
 - La commmande exécute le programme is_abr avec les deux arguments '<' et 'abr.txt'.
 - La commande trouve les chaînes de texte contenues dans le fichier 'is_abr'.
+- La commande construit un arbre binaire de recherche 'abr'.
 - La commande redirige la sortie vers le fichier 'abr.txt'.
 - La commande n'affichera plus rien à l'écran.
-+ Cela exécute is_abr en plaçant le contenu du fichier 'abr.txt' sur l'entrée standard.
++ Cela exécute is_abr en connectant une ouverture du fichier 'abr.txt' sur l'entrée standard .
 + les scanf dans le programme is_abr seront opérés sur le contenu du fichier 'abr.txt'.
 + Cela s'appelle faire une redirection en entrée du programme is_abr.
 + Le clavier n'est plus utile durant l'exécution de la commande.
