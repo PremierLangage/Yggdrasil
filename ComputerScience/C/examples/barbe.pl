@@ -58,12 +58,13 @@ title=Évolution des modes, prédire l'avenir
 
 text==#|markdown|
 Votre enseignant ayant 30 années d'avance sur le méta-game, Jean-Louis David et 
-Jacques Dessange sont complètement en sueur.
+Jacques Dessange sont complètement en sueur. Les plus grands jardiniers lui 
+demandent régulièrement conseil pour procéder à des élagages sauvages.
 
 <br>
 
-Pour aider tous coiffeurs/barbers en panne d'inspiration, tenter de déterminer quelle 
-sera la dernière manière à la mode pour la barbe durant l'année 2056.
+Pour aider tous les coiffeurs et barbeurs en panne d'inspiration, tenter de déterminer 
+quelle sera la dernière manière taille à la mode pour la barbe pour l'année 2056.
 
 <br>
 
