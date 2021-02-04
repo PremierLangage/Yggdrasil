@@ -17,12 +17,12 @@
 author=Nicolas Borie
 
 title=Le pltp WTF 
-tag=system
+tag=humour
 
 introduction==
-Des exercices de toute beauté !
+Des exercices PLaTon de toute beauté !
 ==
 
 @ /ComputerScience/C/examples/tortues_ninja.pl
 @ /ComputerScience/C/examples/partenaire.pl
- 
+@ 
