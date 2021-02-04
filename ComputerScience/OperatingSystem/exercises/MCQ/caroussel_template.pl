@@ -46,15 +46,15 @@ text==#|markdown|
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="la.jpg" alt="Los Angeles">
+      J'aime les pommes
     </div>
 
     <div class="item">
-      <img src="chicago.jpg" alt="Chicago">
+      J'aime les poires
     </div>
 
     <div class="item">
-      <img src="ny.jpg" alt="New York">
+      J'aime les patates
     </div>
   </div>
 
