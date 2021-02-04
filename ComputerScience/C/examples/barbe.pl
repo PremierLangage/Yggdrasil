@@ -20,12 +20,15 @@ builder =@ /builder/before.py
 
 group =: RadioGroup
 
-url_phot =$ pedalier.jpg
-url_clip =$ tortues_ninjas.mp3
+url_phot_1 =$ /ComputerScience/C/examples/barbe/Style_1.jpg
+url_phot_2 =$ /ComputerScience/C/examples/barbe/Style_2.jpg
+url_phot_3 =$ /ComputerScience/C/examples/barbe/Style_3.jpg
+url_phot_4 =$ /ComputerScience/C/examples/barbe/Style_4.jpg
+url_phot_5 =$ /ComputerScience/C/examples/barbe/Style_5.jpg
 
 author=Nicolas Borie
 
-tag=audio|écoute|simple|humour
+tag=simple|humour|style
 
 
 # GENERATE A RANDOM QUESTION
@@ -33,32 +36,28 @@ before==#|python|
 import random
 
 group.items = []
-R = 'y1'
-group.items.append({"id": "n1", "content": "J'en peux plus le confinement avec toi."})
-group.items.append({"id": "n2", "content": "Je préfère boumbo, petite automobile."})
-group.items.append({"id": "n3", "content": "Pourquoi le père noël a ramené ce pédalier multi-effets pour guitare electrique?"})
-group.items.append({"id": "n4", "content": "Ce soir, tu dors dehors si ça continue."})
-group.items.append({"id": R, "content": "Tortues ninja, ça suffit maintenant!"})
+
+group.items.append({"id": "y2", ""})
+group.items.append({"id": "y3", "content": "Je préfère boumbo, petite automobile."})
+group.items.append({"id": "y4", "content": "Pourquoi le père noël a ramené ce pédalier multi-effets pour guitare electrique?"})
+group.items.append({"id": "y5", "content": "Ce soir, tu dors dehors si ça continue."})
+group.items.append({"id": "y1", "content": "Tortues ninja, ça suffit maintenant!"})
 
 # shuffle the items
 random.shuffle(group.items)
 ==
 
-title=Écoute attentive d'un clip audio
+title=Évolution des modes
 
 text==#|markdown|
-On entend Madame Borie ouvrir une porte puis dire quelque chose durant ce clip 
-audio. Mais que dit madame Borie exactement ? 
+Votre enseignant ayant 30 années d'avance sur la méta. Déterminer quelle sera 
+la dernière manière à la mode pour la barbe durant l'année 2056.
 
 <br>
 
 <center>
 <div>
 <img src="{{ url_phot }}" style="width:40%" alt="les instruments de musiques de l'enfer"/><br>
-<audio controls>
-  <source src="{{ url_clip }}" type="audio/mp3">
-  Votre navigateur ne supporte pas la lecture du clip audio.
-</audio>
 </div>
 </center>
 ==
@@ -70,23 +69,9 @@ form==
 
 # EVALUATE THE STUDENT ANSWER
 evaluator==#|python|
-S = group.selection
-score = 0
-feedback = '<span class="error-state animated pulse infinite" style="padding: 10px">Non, il faut mieux écouter...</span>'
+feedback = '''<span class="success-state animated pulse infinite" style="padding: 10px">Mais oui, ce style est si insane!</span>'''
 
-for item in group.items:
-    item['css'] = ''
-    if item['id'] == S:
-        if S == R:
-            item['css'] = 'success-border'
-            score = 100
-            feedback = '''<span class="success-state animated pulse infinite" style="padding: 10px">Parfait, vous avez l'oreille!</span>'''
-        else:
-            item['css'] = 'error-border'
-    elif item['id'] == R:
-        item['css'] = 'success-border animated pulse infinite'
-
-grade = (score, feedback)
+grade = (100, feedback)
 ==
 
 
