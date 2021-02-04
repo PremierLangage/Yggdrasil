@@ -37,7 +37,7 @@ import random
 
 group.items = []
 
-simg1 = '<img src="'+str(url_phot_1)+'" alt="le style1"/>La moustache suspendue assymétrique'
+simg1 = 'salut <img src="'+str(url_phot_1)+'" alt="le style1"/>La moustache suspendue assymétrique'
 simg2 = '<img src="'+str(url_phot_2)+'" alt="le style2"/>'
 simg3 = '<img src="'+str(url_phot_3)+'" alt="le style3"/>'
 simg4 = '<img src="'+str(url_phot_4)+'" alt="le style4"/>'
