@@ -18,6 +18,8 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+group =: RadioGroup
+
 url_phot_1 =$ /ComputerScience/C/examples/barbe/Style_1.jpg
 url_phot_2 =$ /ComputerScience/C/examples/barbe/Style_2.jpg
 url_phot_3 =$ /ComputerScience/C/examples/barbe/Style_3.jpg
@@ -31,7 +33,18 @@ tag=simple|humour|style
 
 # GENERATE A RANDOM QUESTION
 before==#|python|
+import random
 
+group.items = []
+
+group.items.append({"id": "y1", "content": '![Le style 1]({{ url_phot_1 }})'})
+group.items.append({"id": "y2", "content": '<img src=" {{ url_phot_2 }} " style="width:40%" alt="le style2"/>'})
+group.items.append({"id": "y3", "content": """<img src=" {{ url_phot_3 }} " style="width:40%" alt="le style3"/>"""})
+group.items.append({"id": "y4", "content": """<img src=" {{ url_phot_4 }} " style="width:40%" alt="le style4"/>"""})
+group.items.append({"id": "y5", "content": """<img src=" {{ url_phot_5 }} " style="width:40%" alt="le style5"/>"""})
+
+# shuffle the items
+random.shuffle(group.items)
 ==
 
 title=Évolution des modes
@@ -42,26 +55,13 @@ la dernière manière à la mode pour la barbe durant l'année 2056.
 
 <br>
 
+<img src="{{ url_phot_5 }}" style="width:20%" alt="le style5"/>
+
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
-form==#|markdown|
-
-<input type="radio" id="bs1" name="form_bs" value="bs1">
-<label for="other">Le style 1 : <img src="{{ url_phot_1 }}" style="width:20%" alt="le style1"/></label>
-<br>
-<input type="radio" id="bs2" name="form_bs" value="bs2">
-<label for="other">Le style 2 : <img src="{{ url_phot_2 }}" style="width:20%" alt="le style2"/></label>
-<br>
-<input type="radio" id="bs3" name="form_bs" value="bs3">
-<label for="other">Le style 3 : <img src="{{ url_phot_3 }}" style="width:20%" alt="le style3"/></label>
-<br>
-<input type="radio" id="bs4" name="form_bs" value="bs4">
-<label for="other">Le style 4 : <img src="{{ url_phot_4 }}" style="width:20%" alt="le style4"/></label>
-<br>
-<input type="radio" id="bs5" name="form_bs" value="bs5">
-<label for="other">Le style 5 : <img src="{{ url_phot_5 }}" style="width:20%" alt="le style5"/></label>
-
+form==
+{{ group|component }}
 ==
 
 # EVALUATE THE STUDENT ANSWER
