@@ -2,6 +2,7 @@
 
 title= qsdsd
 text=
+form=
 
 # Justine soit tu utilise une ligne comme ceci 
 
