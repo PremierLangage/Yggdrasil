@@ -9,6 +9,10 @@ class CustomRadio(Component):
         self.decorator = 'CustomRadio'
         self.selection = None
         super().__init__(**kwargs)
+        self.text =''
+
+    def settext(s):
+        self.text = s 
 
     def setitems(self, contents):
         """
