@@ -9,6 +9,10 @@ class CustomCheckbox(Component):
         self.selector = 'c-checkbox-group'
         self.decorator = 'CustomCheckbox'
         super().__init__(**kwargs)
+        self.statement =''
+
+    def setStatement(self, s):
+        self.statement = s 
 
     def setitems(self, contents):
         """
