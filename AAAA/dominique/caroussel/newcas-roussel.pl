@@ -39,6 +39,22 @@ questions==
 - bad
 
 
+=**[nbb=2,nbg=3] Dans un programme, quels sont les noms de variables que vous utiliseriez pour gérer des données liés au temps? 
++=["tmp","cmpt","hours","heures","years","annees","days","jours","mnt","minutes","sec","seconds","period","duree"]
+-=["and","if","for","while","variable","variable_3","x","a","toto","chat"]
+
+
+=**[group=operateurs_jf,nbg=3,nbb=4]Lesquels de ces opérateurs sont des opérateurs de comparaison ?
++=["<","<=","==","!="]
+-=["and","or","not","=","+","*"]
+
+=**[group=operateurs_jf,nbg=3,nbb=4]Lesquels de ces opérateurs sont des opérateurs logiques ?
+-=["<","<=","==","!=","=","+","*"]
++=["and","or","not"]
+
+=**[group=operateurs_jf,nbg=3,nbb=4]Lesquels de ces opérateurs ne sont ni des opérateurs logiques ni des opérateurs de comparaison?
+-=["<","<=","==","!=","and","or","not"]
++=["=","+","*"]
 
 ==
 
@@ -62,13 +78,6 @@ nb_tot_quest = len(list_questions)
 nb_quest = min([int(nb_quest_voulu), nb_tot_quest, 10])
 indices_questions = knuth_mixing( subset_index(nb_tot_quest, nb_quest) )
 
-def make_html_answer(question):
-    question["html_form"] = '''<br><div style="margin-left:15%; margin-right:15%;">'''
-    for it in question["items"]:
-        it_rep = it.replace("'", "_").replace('"', '_')
-        question["html_form"] += '<input type="checkbox" id="'+it_rep+'" name="'+it_rep+'" value="'+it_rep+'"> '
-        question["html_form"] += ' <label for="'+it_rep+'"> '+it+' </label><br>'
-    question["html_form"] += '</div>'
 
 comp = []
 statement  = []
@@ -93,10 +102,6 @@ for i, q in enumerate(list_questions):
         statement.append(q['text'])
         cst.setdata_from_textDR(q['items'][0])
         comp.append(cst)
-
-
-for i in indices_questions:
-    make_html_answer(list_questions[i])
 
 def make_rotation_str(nb_quest):
     ans = '''<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" >'''
