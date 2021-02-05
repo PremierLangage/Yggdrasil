@@ -161,7 +161,6 @@ void arbre_vers_code_aux(Tree t,char* s){
   sprintf(s+strlen(s),"%c",c);
   sprintf(s+strlen(s),"%d",t->value); 
   
-  if(t->left) 
        arbre_vers_code_aux(t->left,s+strlen(s));
  if(t->right)
        arbre_vers_code_aux(t->right,s+strlen(s));
@@ -181,16 +180,17 @@ int main(int argc, char* argv[]){
   Tree t=NULL;
 char *code;
 int x;
-  construit_tree(&t);
+  construit_tree(&t,argv);
 extraire_minimum(&t,&x);
   code=arbre_vers_code(t);
-  fprintf("%d\n",x);
+  fprintf(stderr,"%d\n",x);
   fprintf(stderr,"%s",code)    ;
   return 0;
 }
 ==
 
 checks_args_stdin==#|python|
+[["Arbre feuille", "4","f4"],
  ]
 ==
 
