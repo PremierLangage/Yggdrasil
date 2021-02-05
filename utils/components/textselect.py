@@ -23,6 +23,10 @@ class CustomTextSelect(Component):
         self.text = ""
         self._sol = []
         super().__init__(**kwargs)
+        self.statement =''
+
+    def setStatement(self, s):
+        self.statement = s 
 
     def settext(self, text):
         """
