@@ -11,7 +11,7 @@ class CustomRadio(Component):
         super().__init__(**kwargs)
         self.text =''
 
-    def settext(s):
+    def settext(self, s):
         self.text = s 
 
     def setitems(self, contents):
