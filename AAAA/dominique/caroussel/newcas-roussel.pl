@@ -224,10 +224,6 @@ text += end_text
 ==
 
 
-title==
-Stoi le caroussel !
-==
-
 text==
 
 Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
