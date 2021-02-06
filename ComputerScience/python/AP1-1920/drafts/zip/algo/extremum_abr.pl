@@ -178,7 +178,7 @@ int main(int argc, char* argv[]){
   Tree t=NULL;
 char *code;
 int x;
-  construit_tree(&t,argv);
+  construit_abr(&t,argv);
 extraire_minimum(&t,&x);
   code=arbre_vers_code(t);
   fprintf(stderr,"%d\n",x);
