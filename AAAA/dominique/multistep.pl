@@ -144,6 +144,7 @@ elif step<nbstep:
         if 'ordered' not in q['options']:
             radio.shuffle()
     elif q['type'] == "Checkbox":
+        check=CustomCheckbox()
         check.setitems(q['items'])
         check.setsol_from_index(q['index'])
         if 'ordered' not in q['options']:
