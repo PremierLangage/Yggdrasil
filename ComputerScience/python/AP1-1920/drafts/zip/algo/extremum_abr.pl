@@ -135,8 +135,7 @@ for(i=1;val[i]!=NULL;i+=1)
       fprintf(stderr, "problème allocation mémoire\n");
       return 0;
       }
-    }
-    return 1;
+return 1;
 }
 int build_tree(Tree* t){
     int val;
