@@ -185,8 +185,7 @@ extraire_minimum(&t,&x);
   return 0;
 }
 ==
-
-checks_args_stdin==#|python|
+test==#|python|
 [["Arbre feuille", "4","f4"],
  ]
 ==
