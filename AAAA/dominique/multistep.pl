@@ -132,7 +132,7 @@ if step> -1:
     currentscore=sum(scores)//nbstep
 
 step = step+1
-if 1:
+if True:
     text = str(list_questions[step])
 elif step<nbstep:
 
