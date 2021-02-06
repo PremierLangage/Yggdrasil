@@ -17,7 +17,8 @@
 #*****************************************************************************
 
 
-extends= /ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
+extends= extends=/ComputerScience/C/template/stdsandboxC.pl
+#/ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
 
 #author=Marc Zipstein
 title=Extraire l'extremum dans un arbre binaire de recherche
