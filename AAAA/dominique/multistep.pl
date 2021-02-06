@@ -34,20 +34,26 @@ from AMC import parse_AMC_TXT
 
 from aleaq import buildquestion, onefromeachgroup,getmultioption
 
+# Parsing du fichier format AMC
 list_questions = parse_AMC_TXT(questions)
+
+# Traitement des options de gestion de l'aléa 
+# getmultioption -> possibilité d'utiliser une question plusieurs fois 
 
 l2=[]
 for q in list_questions:
-    n=getmultioption(q)
+    n=getmultioption(q) # default value 1 
     for _ in range(n):
         l2.append(buildquestion(q))
 list_questions=l2
+# onepergroup -> possibilité de faire une tirage aléatoire dans un groupe de questions
 
-onepergroup = True
+onepergroup = 1
 
-if "onepergroup" in globals() and onepergroup :
-    list_questions=onefromeachgroup(list_questions)
-elif 'nbstep' in globals():
+if "onepergroup" in globals() and onepergroup > 0 :
+    list_questions=onefromeachgroup(list_questions,onepergroup)
+# nbstep réduire la complexité 
+if 'nbstep' in globals():
     list_questions = random.sample(list_questions, nbstep)
 
 
