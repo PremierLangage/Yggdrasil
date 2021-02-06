@@ -133,11 +133,12 @@ if step> -1:
 
 step = step+1
 
-title = str(step)+str(list_questions[step])
+
 
 if step<nbstep:
 
     q=list_questions[step]
+    title = str(step)+str(q)
     if q['type'] == "Radio":
         radio.setitems(q['items'])
         radio.setsol_from_index(q['index'])
