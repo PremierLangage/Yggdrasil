@@ -11,6 +11,7 @@
 
 
 import random
+from collections import defaultdict
 
 def onefromeachgroup(questions, nbpergroup):
     """
