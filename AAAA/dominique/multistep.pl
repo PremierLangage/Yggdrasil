@@ -140,12 +140,13 @@ if step<nbstep:
     q=list_questions[step]
     title = str(step)+str(q)
     if q['type'] == "Radio":
+        radio = CustomRadio() 
         radio.setitems(q['items'])
         radio.setsol_from_index(q['index'])
         if 'ordered' not in q['options']:
             radio.shuffle()
     elif q['type'] == "Checkbox":
-        #check=CustomCheckbox()
+        check=CustomCheckbox()
         check.setitems(q['items'])
         check.setsol_from_index(q['index'])
         if 'ordered' not in q['options']:
