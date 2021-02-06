@@ -131,9 +131,7 @@ int ajoute(Tree *t,int valeur){
 int construit_abr(Tree *t,char * val[]){
 int i=1;
 for(i=1;val[i]!=NULL;i+=1)
-  if(0==ajoute(t,strtod(val[i ],NULL)))}
-      
-      if (0==ajoute(t,val)){
+  if(0==ajoute(t,strtod(val[i ],NULL))){
       fprintf(stderr, "problème allocation mémoire\n");
       return 0;
       }
