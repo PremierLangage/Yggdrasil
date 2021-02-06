@@ -17,7 +17,7 @@
 #*****************************************************************************
 
 
-extends= extends=/ComputerScience/C/template/stdsandboxC.pl
+extends=/ComputerScience/C/template/stdsandboxC.pl
 #/ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
 
 #author=Marc Zipstein
