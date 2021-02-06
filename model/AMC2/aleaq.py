@@ -12,7 +12,7 @@
 
 import random
 
-def onefromeachgroup(questions):
+def onefromeachgroup(questions, nbpergroup):
     """
     >>> a=onefromeachgroup([{"options":["group=1"]},{"options":["group=1"]},{"options":[],"moules":"frittes"},{"options":["group=toto"]}])
     >>> a == [{'options': [], 'moules': 'frittes'}, {'options': ['group=1']}, {'options': ['group=toto']}]    
@@ -20,22 +20,18 @@ def onefromeachgroup(questions):
     
     """
     nogroup=[]
-    groups={}
+    # organisation des questions en groupes
+    groups= defaultdict(list)
     for q in questions:
-        G= [ x for x in q.get('options',{}) if x.startswith('group=') ]
-
+        G= [ x[6:] for x in q.get('options',[]) if x.startswith('group=') ]
         if len(G)==0:
             nogroup.append(q)
-        elif len(G) > 1:
-            print('trop de groupes',str(G))
-            return None
-        else:
-            g=G[0][6:]
-            if g not in groups:
-                groups[g]=[]
-            groups.get(g).append(q)
+        else:# si il y a deux groupes définis pour une question la question peut apparaitre deux fois 
+            for ng in G:
+                groups[ng].append(q)
+    # création de la sélection de nbpergroup questions par groupes
     for gl in groups.values():
-        nogroup.append(random.choice(gl))
+        nogroup.append(random.sample(gl,min(len(gl),nbpergroup)))
     return nogroup
 
 def getmultioption(q):
