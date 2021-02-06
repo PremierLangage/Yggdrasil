@@ -133,6 +133,7 @@ if step> -1:
 
 step = step+1
 if True:
+    grade=(100,str(list_questions[step]))
     text = str(list_questions[step])
 elif step<nbstep:
 
