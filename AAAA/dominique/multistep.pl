@@ -132,7 +132,7 @@ if step> -1:
     currentscore=sum(scores)//nbstep
 
 step = step+1
-if True:
+if list_questions[step]['type']=="Radio":
     grade=(100,str(list_questions[step]))
     text = str(list_questions[step])
 elif step<nbstep:
