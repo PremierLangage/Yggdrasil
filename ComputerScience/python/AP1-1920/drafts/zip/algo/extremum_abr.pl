@@ -28,13 +28,13 @@ editor.height=300px
 
 text== 
 Écrire une fonction C **extraire_minimum** qui extrait le eminimumun d'un **arbre binaire de recherche**.
-La fonction renvoie 1 en cas d'extraction réussie et 0 sinon;
-On utilisera le type 
-typedef struct node{
-  int value;
-  struct node * left;
-  struct node * right;
-}Node, *Tree;
+La fonction renvoie 1 en cas d'extraction réussie et 0 sinon;  
+On utilisera le type   
+typedef struct node{  
+  int value;  
+  struct node * left;  
+  struct node * right;  
+}Node, *Tree;  
 
 ==
 
@@ -186,7 +186,7 @@ extraire_minimum(&t,&x);
   return 0;
 }
 ==
-test==#|python|
+tests==#|python|
 [["Arbre feuille", "4","f4"],
  ]
 ==
