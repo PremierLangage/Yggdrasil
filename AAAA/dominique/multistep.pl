@@ -132,10 +132,10 @@ if step> -1:
     currentscore=sum(scores)//nbstep
 
 step = step+1
-if list_questions[step]['type']=="Radio":
-    grade=(100,str(list_questions[step]))
-    text = str(list_questions[step])
-elif step<nbstep:
+
+title = str(list_questions[step])
+
+if step<nbstep:
 
     q=list_questions[step]
     if q['type'] == "Radio":
@@ -144,7 +144,7 @@ elif step<nbstep:
         if 'ordered' not in q['options']:
             radio.shuffle()
     elif q['type'] == "Checkbox":
-        check=CustomCheckbox()
+        #check=CustomCheckbox()
         check.setitems(q['items'])
         check.setsol_from_index(q['index'])
         if 'ordered' not in q['options']:
