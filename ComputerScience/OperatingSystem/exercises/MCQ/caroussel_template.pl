@@ -35,19 +35,6 @@ max_options=8
 # FIN DU PANNEAU DE CONTROLE : NE PLUS RIEN TOUCHER APRES
 #****************************************************************************
 
-group0 =: CheckboxGroup
-group1 =: CheckboxGroup
-group2 =: CheckboxGroup
-group3 =: CheckboxGroup
-group4 =: CheckboxGroup
-group5 =: CheckboxGroup
-group6 =: CheckboxGroup
-group7 =: CheckboxGroup
-group8 =: CheckboxGroup
-group9 =: CheckboxGroup
-
-q_mix_item = []
-
 before==#|python|
 import random
 from components import CheckboxGroup
