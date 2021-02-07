@@ -115,8 +115,7 @@ for q, g, b in q_mix_item:
         CG.items.append({"id": "g"+str(i), "content": s})
     for i, s in enumerate(b):
         CG.items.append({"id": "b"+str(i), "content": s})
-
-
+    compo.append(CG)
 
 ==
 
@@ -179,48 +178,15 @@ Veuillez à bien remplir les {{ nb_volets }} volets avant de valier!
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      Parmi les commandes suivantes, lesquelles permettent de visualiser un flux ou un fichier ?<br>
-      <ul>
-        <li>pwd</li>
-        <li>chmod</li>
-        <li>chgrp</li>
-        <li>mkdir</li>
-        <li>less</li>
-        <li>more</li>
-        <li>cat</li>
-        <li>head</li>
-        <li>tail</li>
-      </ul>
+      
     </div>
 
     <div class="item">
-      Parmi les commandes suivantes, lesquelles permettent de visualiser un flux ou un fichier ?<br>
-      <ul>
-        <li>pwd</li>
-        <li>chmod</li>
-        <li>chgrp</li>
-        <li>mkdir</li>
-        <li>less</li>
-        <li>more</li>
-        <li>cat</li>
-        <li>head</li>
-        <li>tail</li>
-      </ul>
+      
     </div>
 
     <div class="item">
-      Parmi les commandes suivantes, lesquelles permettent de visualiser un flux ou un fichier ?<br>
-      <ul>
-        <li>pwd</li>
-        <li>chmod</li>
-        <li>chgrp</li>
-        <li>mkdir</li>
-        <li>less</li>
-        <li>more</li>
-        <li>cat</li>
-        <li>head</li>
-        <li>tail</li>
-      </ul>
+      
     </div>
   </div>
 
