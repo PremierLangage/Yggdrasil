@@ -115,6 +115,7 @@ for q, g, b in q_mix_item:
         CG.items.append({"id": "g"+str(i), "content": s})
     for i, s in enumerate(b):
         CG.items.append({"id": "b"+str(i), "content": s})
+    random.shuffle(CG.items)
     compo.append(CG)
 
 ==
@@ -178,16 +179,21 @@ Veuillez à bien remplir les {{ nb_volets }} volets avant de valier!
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      
+      {% q_mix_item[0][0] %}
     </div>
 
-    <div class="item">
-      
-    </div>
+    {% for q, b, g in q_mix_item %}
+      {% if loop.index0 == 0 %}
+        <div class="item active">
+      {% else %}
+        <div class="item">
+      {% endif %}
+      {{ q }}
 
-    <div class="item">
-      
-    </div>
+      {{ compo[loop.index0]|component }}
+
+        </div>
+    {% endfor %}
   </div>
 
   <!-- Left and right controls -->
