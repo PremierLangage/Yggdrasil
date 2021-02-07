@@ -173,9 +173,13 @@ Veuillez à bien remplir les {{ nb_volets }} volets avant de valier!
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
+    {% for q in q_mix_item %}
+      {% if loop.index0 == 0 %}
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      {% else %}
+        <li data-target="#myCarousel" data-slide-to="{{ loop.index0 }}"></li>
+      {% endif %}
+    {% endfor %}
   </ol>
 
   <!-- Wrapper for slides -->
