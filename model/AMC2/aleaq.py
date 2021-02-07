@@ -76,9 +76,9 @@ def buildquestion(questionp):
     """
     #if question.get('extended') == False:
     #    return question
-
+    question=dict(questionp)
     try:
-        question=dict(questionp)
+        
         d=optiondic(question.get('options'))
         nb =int(d.get("nb",4))
         if questionp.get('type') == 'TextSelect' :# j'ai pas de syntaxe etendue pour le moment 
