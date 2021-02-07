@@ -184,13 +184,13 @@ Veuillez à bien remplir les {{ nb_volets }} volets avant de valier!
       {% q_mix_item[0][0] %}
     </div>
 
-    {% for q, b, g in q_mix_item %}
+    {% for q in q_mix_item %}
       {% if loop.index0 == 0 %}
         <div class="item active">
       {% else %}
         <div class="item">
       {% endif %}
-      {{ q }}
+      {{ q[0] }}
 
       {{ compo[loop.index0]|component }}
 
