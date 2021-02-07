@@ -12,17 +12,11 @@
 @ /grader/evaluator.py [grader.py]
 
 settings.cumulative % false
-
-
+title=
+text=
 questions=@ /AAAA/Justine/justine_questions.txt
 
-
-title= Quizz
-
-text = Pas de text 
-
 before==
-
 from customradio import CustomRadio
 from customcheckbox import CustomCheckbox
 from customtextselect import CustomTextSelect
@@ -30,6 +24,7 @@ radio = CustomRadio()
 check = CustomCheckbox()
 ztext = CustomTextSelect()
 import random
+random.seed(42) # DEBUG FIXME
 from AMC import parse_AMC_TXT
 
 from aleaq import buildquestion, onefromeachgroup,getmultioption
@@ -48,6 +43,7 @@ for q in list_questions:
 list_questions=l2
 # onepergroup -> possibilité de faire une tirage aléatoire dans un groupe de questions
 
+title= str(l2)
 onepergroup = 1
 
 if "onepergroup" in globals() and onepergroup > 0 :
@@ -62,9 +58,9 @@ nb_quest = len(list_questions)
 random.shuffle(list_questions)
 
 comp = []
-
+import sys # DEBUG
 for i, q in enumerate(list_questions):
-    q=buildquestion(q) # Gestion de l'aléa 
+    print(type(q),file=sys.stderr)
     if q['type'] == "Radio":
         newcomp = CustomRadio()
         
