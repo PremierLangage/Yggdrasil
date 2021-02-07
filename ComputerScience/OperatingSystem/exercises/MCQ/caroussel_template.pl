@@ -48,6 +48,7 @@ group9 =: CheckboxGroup
 
 before==#|python|
 import random
+from components import CheckboxGroup
 
 nb_volets=max([1, int(nb_question)])
 
@@ -105,11 +106,15 @@ for q, g, b in q_lst:
     nb_bad = nb_options - nb_good
     q_mix_item.append([q, random.sample(g, nb_good), random.sample(b, nb_bad)])
 
-group0.items = []
-for i, s in enumerate(q_mix_item[1]):
-    group0.items.append({"id": "g"+str(i), "content": s})
-for i, s in enumerate(q_mix_item[2]):
-    group0.items.append({"id": "b"+str(i), "content": s})
+
+compo = []
+for q, g, b in q_mix_item:
+    CG = CheckboxGroup()
+    CG.items = []
+    for i, s in enumerate(g):
+        CG.items.append({"id": "g"+str(i), "content": s})
+    for i, s in enumerate(b):
+        CG.items.append({"id": "b"+str(i), "content": s})
 
 
 
