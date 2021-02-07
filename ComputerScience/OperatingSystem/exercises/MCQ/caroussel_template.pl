@@ -180,9 +180,6 @@ Veuillez à bien remplir les {{ nb_volets }} volets avant de valier!
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
-    <div class="item active">
-      {% q_mix_item[0][0] %}
-    </div>
 
     {% for q in q_mix_item %}
       {% if loop.index0 == 0 %}
