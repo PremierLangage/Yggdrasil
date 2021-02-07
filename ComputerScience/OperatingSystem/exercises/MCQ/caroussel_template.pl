@@ -27,7 +27,7 @@ Fork me please, do not modify me please !
 # PANNEAU DE CONTROLE ICI
 #****************************************************************************
 questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
-nb_question=3
+nb_question=5
 feedback=True
 min_options=4
 max_options=8
