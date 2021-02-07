@@ -189,6 +189,7 @@ extraire_minimum(&t,&x);
 tests==#|python|
 [["Arbre feuille", "4","f4"],
  ["3 feuilles","25 12 52",""],
+ ]
 ==
 
 
