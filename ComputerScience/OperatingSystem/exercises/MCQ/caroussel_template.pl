@@ -181,6 +181,8 @@ Veuillez à bien remplir les {{ nb_volets }} volets avant de valier!
       {% endif %}
       {{ q[0] }}
 
+      <br>
+      
       {{ compo[loop.index0]|component }}
 
         </div>
