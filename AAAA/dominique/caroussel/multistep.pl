@@ -7,7 +7,7 @@
 
 @ /model/AMC2/AMC2.py [AMC.py]
 @ /model/AMC2/aleaq.py 
-@ /utils/sandboxio.py
+
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
 
@@ -60,7 +60,8 @@ random.shuffle(list_questions)
 comp = []
 import sys # DEBUG
 for i, q in enumerate(list_questions):
-    print(type(q),file=sys.stderr)
+    if type(q)== list :
+        exit()
     if q['type'] == "Radio":
         newcomp = CustomRadio()
         
