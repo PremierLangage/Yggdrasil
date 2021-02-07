@@ -157,6 +157,9 @@ Veuillez à bien remplir les {{ nb_volets }} volets avant de valier!
 </p>
 
 <br>
+==
+
+form==#|markdown|
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <!-- Indicators -->
@@ -182,7 +185,7 @@ Veuillez à bien remplir les {{ nb_volets }} volets avant de valier!
       {{ q[0] }}
 
       <br>
-      
+
       {{ compo[loop.index0]|component }}
 
         </div>
@@ -199,11 +202,6 @@ Veuillez à bien remplir les {{ nb_volets }} volets avant de valier!
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-==
-
-form==#|markdown|
-
 ==
 
 evaluator==#|python|
