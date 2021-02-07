@@ -98,7 +98,8 @@ def ParseQuestion(big_str):
 
 MSQ_lst = ParseQuestion(questions)
 
-q_lst = random.sample(MSQ_lst, min([nb_volets, len(MSQ_lst), 10]))
+nb_volets = min([nb_volets, len(MSQ_lst), 10])
+q_lst = random.sample(MSQ_lst, nb_volets)
 
 q_mix_item = []
 for q, g, b in q_lst:
