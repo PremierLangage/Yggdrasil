@@ -46,6 +46,8 @@ group7 =: CheckboxGroup
 group8 =: CheckboxGroup
 group9 =: CheckboxGroup
 
+q_mix_item = []
+
 before==#|python|
 import random
 from components import CheckboxGroup
