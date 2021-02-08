@@ -139,7 +139,7 @@ random.shuffle(radio0.items)
 # première question
 text += '''<div class="item active">'''
 text += '''<p style="margin-left:15%; margin-right:15%;"><b><u>Question 1 : </u></b></p><br>'''
-text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[0]]["text"]+'</div>'
+text += '<div style="margin-left:15%; margin-right:15%;">'+q_mix_item[0][0]+'</div>'
 text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio0.selector} cid='{radio0.cid}'></{radio0.selector}></div>"""
 # text += list_questions[indices_questions[0]]["html_form"]
 text += '''<br><br><br><br></div>'''
@@ -149,7 +149,7 @@ if nb_quest >= 2:
     radio1 = CheckboxGroup()
     text += '''<div class="item">'''
     text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 2 : </u></b></p><br>'
-    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[1]]["text"]+'</div>'
+    text += '<div style="margin-left:15%; margin-right:15%;">'+q_mix_item[1][0]+'</div>'
     # text += list_questions[indices_questions[i]]["html_form"]
     text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio1.selector} cid='{radio1.cid}'></{radio1.selector}></div>"""
     text += '<br><br><br><br></div>'
