@@ -29,13 +29,17 @@ builder =@ /builder/before.py
 @ /utils/components/textselect.py [customtextselect.py]
 
 
-# LES TRUCS QUE L'ON PEUT CHANGER SONT LA :
-nb_quest_voulu = 5
-# questions=@ /ComputerScience/C_Initiation/QCM/QCM-1-a-4.txt
-# questions=@ /ComputerScience/C/exercices/program/qcm_questions/generalites_C.txt
-# questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/donnees_binaire.txt
+#****************************************************************************
+# PANNEAU DE CONTROLE ICI
+#****************************************************************************
 questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
-
+nb_quest_voulu=5
+feedback=True
+min_options=4
+max_options=6
+#****************************************************************************
+# FIN DU PANNEAU DE CONTROLE : NE PLUS RIEN TOUCHER APRES
+#****************************************************************************
 
 before==#|python|
 # Le même parseur que AMC2 sinon ça va encore chialer grave !!!
