@@ -26,7 +26,7 @@ Fork me please, do not modify me please !
 #****************************************************************************
 # PANNEAU DE CONTROLE ICI
 #****************************************************************************
-title=Notion de fichier en Unix
+title=Notion de fichiers en Unix
 questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
 nb_question=5
 feedback=True
