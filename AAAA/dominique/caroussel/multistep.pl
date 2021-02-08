@@ -175,6 +175,38 @@ text += """
         </div>
 """
 
+
+if 0<len(comp): xcomp0=comp[0]
+if 1<len(comp): xcomp1=comp[1]
+if 2<len(comp): xcomp2=comp[2]
+if 3<len(comp): xcomp3=comp[3]
+if 4<len(comp): xcomp4=comp[4]
+if 5<len(comp): xcomp5=comp[5]
+if 6<len(comp): xcomp6=comp[6]
+if 7<len(comp): xcomp7=comp[7]
+if 8<len(comp): xcomp8=comp[8]
+if 9<len(comp): xcomp9=comp[9]
+if 10<len(comp): xcomp10=comp[10]
+if 11<len(comp): xcomp11=comp[11]
+if 12<len(comp): xcomp12=comp[12]
+if 13<len(comp): xcomp13=comp[13]
+if 14<len(comp): xcomp14=comp[14]
+if 15<len(comp): xcomp15=comp[15]
+if 16<len(comp): xcomp16=comp[16]
+if 17<len(comp): xcomp17=comp[17]
+if 18<len(comp): xcomp18=comp[18]
+if 19<len(comp): xcomp19=comp[19]
+if 20<len(comp): xcomp20=comp[20]
+if 21<len(comp): xcomp21=comp[21]
+if 22<len(comp): xcomp22=comp[22]
+if 23<len(comp): xcomp23=comp[23]
+if 24<len(comp): xcomp24=comp[24]
+if 25<len(comp): xcomp25=comp[25]
+if 26<len(comp): xcomp26=comp[26]
+if 27<len(comp): xcomp27=comp[27]
+if 28<len(comp): xcomp28=comp[28]
+if 29<len(comp): xcomp29=comp[29]
+
 ==
 
 
