@@ -246,6 +246,40 @@ if nb_quest >= 7:
     # text += list_questions[indices_questions[i]]["html_form"]
     text += f"""<div><{radio6.selector} cid='{radio6.cid}'></{radio6.selector}></div>"""
     text += '</div>'
+
+# question suivante --> 7
+if nb_quest >= 8:
+    radio7 = CheckboxGroup()
+    q, g, b = q_mix_item[7]
+    radio7.items = []
+    for i, s in enumerate(g):
+        radio7.items.append({"id": "g"+str(i), "content": s})
+    for i, s in enumerate(b):
+        radio7.items.append({"id": "b"+str(i), "content": s})
+    random.shuffle(radio7.items)
+    text += '''<div class="item">'''
+    text += '<p><b><u>Question 8 : </u></b></p><br>'
+    text += '<div>'+q_mix_item[7][0]+'</div><br>'
+    # text += list_questions[indices_questions[i]]["html_form"]
+    text += f"""<div><{radio7.selector} cid='{radio7.cid}'></{radio7.selector}></div>"""
+    text += '</div>'
+
+# question suivante --> 8
+if nb_quest >= 9:
+    radio8 = CheckboxGroup()
+    q, g, b = q_mix_item[8]
+    radio8.items = []
+    for i, s in enumerate(g):
+        radio8.items.append({"id": "g"+str(i), "content": s})
+    for i, s in enumerate(b):
+        radio8.items.append({"id": "b"+str(i), "content": s})
+    random.shuffle(radio8.items)
+    text += '''<div class="item">'''
+    text += '<p><b><u>Question 9 : </u></b></p><br>'
+    text += '<div>'+q_mix_item[8][0]+'</div><br>'
+    # text += list_questions[indices_questions[i]]["html_form"]
+    text += f"""<div><{radio8.selector} cid='{radio8.cid}'></{radio8.selector}></div>"""
+    text += '</div>'
 ==
 
 
