@@ -11,7 +11,7 @@ import random
 for toto in range(2):
     b=random.randint(1,10)
     a=random.randint(-10,0)
-** Soit $%A=[{a} , {b}[%$ un intervalle dans $% \mathbb{R} %$. 
+* Soit $%A=[{a} , {b}[%$ un intervalle dans $% \mathbb{R} %$. 
 Cliquez sur les affirmations que vous pensez être correctes :
 + $%A%$ est borné
 - $%{b}%$ est le maximum de $%A%$
