@@ -155,11 +155,11 @@ if nb_quest >= 2:
         radio1.items.append({"id": "b"+str(i), "content": s})
     random.shuffle(radio1.items)
     text += '''<div class="item">'''
-    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 2 : </u></b></p><br>'
-    text += '<div style="margin-left:15%; margin-right:15%;">'+q_mix_item[1][0]+'</div>'
+    text += '<p><b><u>Question 2 : </u></b></p><br>'
+    text += '<div>'+q_mix_item[1][0]+'</div>'
     # text += list_questions[indices_questions[i]]["html_form"]
-    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio1.selector} cid='{radio1.cid}'></{radio1.selector}></div>"""
-    text += '<br><br><br><br></div>'
+    text += f"""<div><{radio1.selector} cid='{radio1.cid}'></{radio1.selector}></div>"""
+    text += '</div>'
 
 
 ==
