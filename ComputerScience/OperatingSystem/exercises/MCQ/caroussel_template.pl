@@ -35,10 +35,13 @@ max_options=6
 # FIN DU PANNEAU DE CONTROLE : NE PLUS RIEN TOUCHER APRES
 #****************************************************************************
 
+
+
 before==#|python|
 import random
 from components import CheckboxGroup
 
+# mettre au moins une question sinon le Caroussel est vide
 nb_volets=max([1, int(nb_question)])
 
 def ParseQuestion(big_str):
@@ -107,6 +110,10 @@ for q, g, b in q_mix_item:
         CG.items.append({"id": "b"+str(i), "content": s})
     random.shuffle(CG.items)
     compo.append(CG)
+
+
+
+
 
 ==
 
