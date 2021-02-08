@@ -364,6 +364,9 @@ form==#|markdown|
 ==
 
 evaluator==#|python|
+text=""
+form=""
+
 feedback = "Voici les erreurs que vous avez faites : "
 errors=0
 ok=0
