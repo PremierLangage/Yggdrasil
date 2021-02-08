@@ -370,7 +370,7 @@ form=""
 
 fb_err = "Voici les erreurs que vous avez faites : <br>"
 fb_err += '<span style="color:darkgreen">En vert</span> les bonnes réponses non selectionnées<br>'
-fb_err += '<span style="color:darkgreen"><strike>En rouge barré</strike></span> les mauvaises réponses selectionnées<br><br>'
+fb_err += '<span style="color:darkred"><strike>En rouge barré</strike></span> les mauvaises réponses selectionnées<br><br>'
 errors=0
 ok=0
 
