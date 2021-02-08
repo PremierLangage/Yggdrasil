@@ -15,7 +15,7 @@
 settings.cumulative % false
 title=
 
-text==x
+text==
 
 Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 
