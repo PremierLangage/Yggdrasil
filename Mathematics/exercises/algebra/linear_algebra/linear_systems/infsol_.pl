@@ -1,5 +1,4 @@
-extends = /model/mathinput.pl
-
+extends = /model/math/finite_sets.pl
 title = Système linéaire
 
 
