@@ -133,15 +133,6 @@ for i, q in enumerate(list_questions):
 
 
 
-text += "<div id='debut'></div>"
-
-text += "bande de moules"
-
-
-
-
-
-
 
 text += """<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" >
     <!-- Indicators -->
@@ -153,7 +144,7 @@ text +=   """</ol>
     <div class="carousel-inner">"""
 
 text += f"""
-                <div class="item activate">
+                <div class="item active">
                 <p style="margin-left:15%; margin-right:15%;"><b><u>Question 1 : </u></b></p><br>
                 <div style="margin-left:15%; margin-right:15%;">{comp[0].statement}</div>
                 <div style="margin-left:15%; margin-right:15%;">\n<{comp[0].selector} cid='{comp[0].cid}'></{comp[0].selector}></div>
