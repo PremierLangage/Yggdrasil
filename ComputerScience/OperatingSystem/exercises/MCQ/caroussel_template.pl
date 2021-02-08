@@ -364,10 +364,11 @@ form==#|markdown|
 ==
 
 evaluator==#|python|
+
 text=""
 form=""
 
-feedback = "Voici les erreurs que vous avez faites : "
+fb_err = "Voici les erreurs que vous avez faites : <br>"
 errors=0
 ok=0
 
@@ -392,10 +393,13 @@ if nb_quest >= 10:
     L.append(radio9)
 
 for i, cb in enumerate(L):
+    fb_q = q_mix_item[i][0]+"<br>"
+    q_ok = True
     for item in cb.items:
         if item['checked']:
             if 'b' in item['id']:
                 errors += 1
+                q_ok = False
             else:
                 ok += 1
         else:
@@ -403,9 +407,18 @@ for i, cb in enumerate(L):
                 ok += 1
             else:
                 errors += 1
+                q_ok = False
+    if not q_ok:
+        fb_err += fb_q
 
 note_finale = (100 * max([0, ok - errors])) // (ok + errors)
 
-grade = (note_finale, "Vous avez obtenur la note de "+str(note_finale)+"%<br>")
+if not feedback:
+    grade = (note_finale, "Vous avez obtenur la note de "+str(note_finale)+"%<br>")
+else:
+    if note_finale == 100:
+        grade = (note_finale, "Bravo, vous avez obtenur la note de "+str(note_finale)+"%<br>")
+    else:
+        grade = (note_finale, "Vous obtenez la note de "+str(note_finale)+"%<br><br>"+fb_err)
 ==
 
