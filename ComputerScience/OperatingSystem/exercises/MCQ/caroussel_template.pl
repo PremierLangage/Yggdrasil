@@ -370,8 +370,29 @@ form=""
 feedback = "Voici les erreurs que vous avez faites : "
 errors=0
 ok=0
-if nb_quest >= 1:
-    for item in radio0.items:
+
+L = [radio0]
+if nb_quest >= 2:
+    L.append(radio1)
+if nb_quest >= 3:
+    L.append(radio2)
+if nb_quest >= 4:
+    L.append(radio3)
+if nb_quest >= 5:
+    L.append(radio4)
+if nb_quest >= 6:
+    L.append(radio5)
+if nb_quest >= 7:
+    L.append(radio6)
+if nb_quest >= 8:
+    L.append(radio7)
+if nb_quest >= 9:
+    L.append(radio8)
+if nb_quest >= 10:
+    L.append(radio9)
+
+if i, cb in enumerate(L):
+    for item in cb.items:
         if item['checked']:
             if 'b' in item['id']:
                 errors += 1
