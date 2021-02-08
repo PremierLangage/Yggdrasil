@@ -20,5 +20,4 @@ questions += """
 - $%{a | latex }%$ est la borne inférieure de $%A%$
 """
 
-questions+="""
 ==
