@@ -411,7 +411,7 @@ for i, cb in enumerate(L):
                 q_ok = False
                 fb_q += '<li><span style="color:darkgreen">'+item['content']+'</span></li>'
     if not q_ok:
-        fb_err += "</ul><br>"+fb_q
+        fb_err += "</ul>"+fb_q
 
 note_finale = (100 * max([0, ok - errors])) // (ok + errors)
 
