@@ -154,6 +154,7 @@ def make_rotation_str(nb_quest):
 # entêtes du mnaège
 text += make_rotation_str(nb_quest)
 
+radio0 = CheckboxGroup()
 radio0 = comp[indices_questions[0]]
 # première question
 text += '''<div class="item active">'''
@@ -172,87 +173,6 @@ if nb_quest >= 2:
     # text += list_questions[indices_questions[i]]["html_form"]
     text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio1.selector} cid='{radio1.cid}'></{radio1.selector}></div>"""
     text += '<br><br><br><br></div>'
-
-# question suivante --> 2
-if nb_quest >= 3:
-    radio2 = comp[indices_questions[2]]
-    text += '''<div class="item">'''
-    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 3 : </u></b></p><br>'
-    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[2]]["text"]+'</div>'
-    # text += list_questions[indices_questions[i]]["html_form"]
-    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio2.selector} cid='{radio2.cid}'></{radio2.selector}></div>"""
-    text += '<br><br><br><br></div>'
-
-# question suivante --> 3
-if nb_quest >= 4:
-    radio3 = comp[indices_questions[3]]
-    text += '''<div class="item">'''
-    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 4 : </u></b></p><br>'
-    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[3]]["text"]+'</div>'
-    # text += list_questions[indices_questions[i]]["html_form"]
-    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio3.selector} cid='{radio3.cid}'></{radio3.selector}></div>"""
-    text += '<br><br><br><br></div>'
-
-# question suivante --> 4
-if nb_quest >= 5:
-    radio4 = comp[indices_questions[4]]
-    text += '''<div class="item">'''
-    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 5 : </u></b></p><br>'
-    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[4]]["text"]+'</div>'
-    # text += list_questions[indices_questions[i]]["html_form"]
-    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio4.selector} cid='{radio4.cid}'></{radio4.selector}></div>"""
-    text += '<br><br><br><br></div>'
-
-# question suivante --> 5
-if nb_quest >= 6:
-    radio5 = comp[indices_questions[5]]
-    text += '''<div class="item">'''
-    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 6 : </u></b></p><br>'
-    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[5]]["text"]+'</div>'
-    # text += list_questions[indices_questions[i]]["html_form"]
-    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio5.selector} cid='{radio5.cid}'></{radio5.selector}></div>"""
-    text += '<br><br><br><br></div>'
-
-# question suivante --> 6
-if nb_quest >= 7:
-    radio6 = comp[indices_questions[6]]
-    text += '''<div class="item">'''
-    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 7 : </u></b></p><br>'
-    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[6]]["text"]+'</div>'
-    # text += list_questions[indices_questions[i]]["html_form"]
-    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio6.selector} cid='{radio6.cid}'></{radio6.selector}></div>"""
-    text += '<br><br><br><br></div>'
-
-# question suivante --> 7
-if nb_quest >= 8:
-    radio7 = comp[indices_questions[7]]
-    text += '''<div class="item">'''
-    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 8 : </u></b></p><br>'
-    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[7]]["text"]+'</div>'
-    # text += list_questions[indices_questions[i]]["html_form"]
-    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio7.selector} cid='{radio7.cid}'></{radio7.selector}></div>"""
-    text += '<br><br><br><br></div>'
-
-# question suivante --> 8
-if nb_quest >= 9:
-    radio8 = comp[indices_questions[8]]
-    text += '''<div class="item">'''
-    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 9 : </u></b></p><br>'
-    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[8]]["text"]+'</div>'
-    # text += list_questions[indices_questions[i]]["html_form"]
-    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio8.selector} cid='{radio8.cid}'></{radio8.selector}></div>"""
-    text += '<br><br><br><br></div>'
-
-# question suivante --> 9
-if nb_quest >= 10:
-    radio9 = comp[indices_questions[9]]
-    text += '''<div class="item">'''
-    text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 10 : </u></b></p><br>'
-    text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[9]]["text"]+'</div>'
-    # text += list_questions[indices_questions[i]]["html_form"]
-    text += f"""<div style="margin-left:15%; margin-right:15%;"><{radio9.selector} cid='{radio9.cid}'></{radio9.selector}></div>"""
-    text += '<br><br><br><br></div>'
-
 
 
 ==
@@ -307,6 +227,19 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 ==
 
 form==#|markdown|
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+==
+
+form2==#|markdown|
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <!-- Indicators -->
