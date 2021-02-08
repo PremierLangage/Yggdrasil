@@ -1,9 +1,5 @@
 
 
-title= qsdsd
-text=
-form=
-
 # Justine soit tu utilise une ligne comme ceci 
 
 # questions=@ justine_questions.txt
