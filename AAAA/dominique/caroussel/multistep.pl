@@ -43,23 +43,30 @@ for q in list_questions:
 list_questions=l2
 # onepergroup -> possibilité de faire une tirage aléatoire dans un groupe de questions
 
-title= str(l2)
+
 onepergroup = 1
 
 if "onepergroup" in globals() and onepergroup > 0 :
     list_questions=onefromeachgroup(list_questions,onepergroup)
 # nbstep réduire la complexité 
+
+# FIXME
+nbstep = 4
 if 'nbstep' in globals():
     list_questions = random.sample(list_questions, nbstep)
 
+title= str(list_questions)
 
 
 nb_quest = len(list_questions)
 random.shuffle(list_questions)
 
 comp = []
+import sys # DEBUG
 for i, q in enumerate(list_questions):
-
+    if type(q)== list :
+        print(" bizarre !!!!!")
+        continue
     if q['type'] == "Radio":
         newcomp = CustomRadio()
         
@@ -84,7 +91,7 @@ for i, q in enumerate(list_questions):
         comp.append(newcomp)
 
 
-# entêtes du manège
+# entêtes du mnaège
 text +=  """
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" >
     <!-- Indicators -->
@@ -95,11 +102,11 @@ text +=   """</ol>
     <!-- Wrapper for slides -->
     <div class="carousel-inner">"""
 
-for indice in range(len(list_questions)):
+for indice in range(len(comp)):
        text += f"""
                 <div class="item active">
                 <p style="margin-left:15%; margin-right:15%;"><b><u>Question {indice+1} : </u></b></p><br>
-                <div style="margin-left:15%; margin-right:15%;">{list_questions[indice]["text"]}</div>
+                <div style="margin-left:15%; margin-right:15%;">{comp[indice].statement}</div>
                 <div style="margin-left:15%; margin-right:15%;">\n<{comp[indice].selector} cid='{comp[indice].cid}'></{comp[indice].selector}></div>
                 <br><br><br><br></div>"""
 
