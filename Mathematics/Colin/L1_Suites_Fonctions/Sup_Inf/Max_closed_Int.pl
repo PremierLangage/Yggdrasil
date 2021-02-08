@@ -8,10 +8,10 @@ tag= Majorant|Minorant|Borne supérieure|Borne inférieure
 buildquestions==
 import random
 # questions=""
-b=random.randint(1,10)
-a=random.randint(-10,0)
-
-questions += f"""
+for toto in range(1):
+    b=random.randint(1,10)
+    a=random.randint(-10,0)
+    questions += f"""
 ** Soit $%A=[{a | latex } , {b | latex }[%$ un intervalle dans $% \mathbb{R} %$. Cliquez sur les affirmations que vous pensez être correctes :
 + $%A%$ est borné
 - $%{b | latex }%$ est le maximum de $%A%$
@@ -19,5 +19,4 @@ questions += f"""
 - $%{b | latex }%$ est la borne supérieure de $%A%$
 - $%{a | latex }%$ est la borne inférieure de $%A%$
 """
-
 ==
