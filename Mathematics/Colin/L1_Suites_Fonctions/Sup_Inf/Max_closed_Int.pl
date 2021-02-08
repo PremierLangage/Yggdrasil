@@ -16,5 +16,4 @@ Cliquez sur les affirmations que vous pensez être correctes :
 + $%{a | latex }%$ est le minimum de $%A%$
 - $%{b | latex }%$ est la borne supérieure de $%A%$
 - $%{a | latex }%$ est la borne inférieure de $%A%$
-"""
 ==
