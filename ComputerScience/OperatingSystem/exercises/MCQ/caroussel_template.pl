@@ -35,8 +35,6 @@ max_options=6
 # FIN DU PANNEAU DE CONTROLE : NE PLUS RIEN TOUCHER APRES
 #****************************************************************************
 
-
-
 before==#|python|
 import random
 from components import CheckboxGroup
@@ -89,6 +87,7 @@ def ParseQuestion(big_str):
 MSQ_lst = ParseQuestion(questions)
 
 nb_volets = min([nb_volets, len(MSQ_lst), 10])
+nb_quest = nb_volets
 q_lst = random.sample(MSQ_lst, nb_volets)
 
 q_mix_item = []
@@ -160,7 +159,7 @@ text==#|markdown|
 </style>
 
 <p>
-Veuillez à bien remplir les {{ nb_volets }} volets avant de valier!
+Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 </p>
 
 <br>
