@@ -1,4 +1,4 @@
-
+extends=/model/AMC_TXT.pl
 
 title= Majorant-Minorant/Sup-Inf/Max-Min
 tag= Majorant|Minorant|Borne supérieure|Borne inférieure 
