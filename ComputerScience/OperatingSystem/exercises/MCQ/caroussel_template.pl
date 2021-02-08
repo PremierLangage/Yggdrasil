@@ -196,6 +196,23 @@ if nb_quest >= 4:
     text += f"""<div><{radio3.selector} cid='{radio3.cid}'></{radio3.selector}></div>"""
     text += '</div>'
 
+# question suivante --> 4
+if nb_quest >= 5:
+    radio4 = CheckboxGroup()
+    q, g, b = q_mix_item[4]
+    radio4.items = []
+    for i, s in enumerate(g):
+        radio4.items.append({"id": "g"+str(i), "content": s})
+    for i, s in enumerate(b):
+        radio4.items.append({"id": "b"+str(i), "content": s})
+    random.shuffle(radio4.items)
+    text += '''<div class="item">'''
+    text += '<p><b><u>Question 5 : </u></b></p><br>'
+    text += '<div>'+q_mix_item[4][0]+'</div><br>'
+    # text += list_questions[indices_questions[i]]["html_form"]
+    text += f"""<div><{radio4.selector} cid='{radio4.cid}'></{radio4.selector}></div>"""
+    text += '</div>'
+
 ==
 
 
