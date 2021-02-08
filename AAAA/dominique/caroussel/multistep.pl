@@ -92,11 +92,10 @@ for i, q in enumerate(list_questions):
 
 
 # entêtes du mnaège
-text +=  """
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" >
+text +=  """<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" >
     <!-- Indicators -->
     <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>\n"""
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>"""
 text += "\n".join(['      <li data-target="#myCarousel" data-slide-to="'+str(i)+'"></li>' for i in range(1, len(list_questions))])
 text +=   """</ol>
     <!-- Wrapper for slides -->
