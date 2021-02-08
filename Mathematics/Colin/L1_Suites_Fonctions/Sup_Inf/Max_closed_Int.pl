@@ -11,8 +11,7 @@ import random
 for toto in range(2):
     b=random.randint(1,10)
     a=random.randint(-10,0)
-    A= ["{a}x{b}"]
-    questions += A"""
+    questions += """
 ** Soit $%A=[{a} , {b}[%$ un intervalle dans $% \mathbb{R} %$. 
 Cliquez sur les affirmations que vous pensez être correctes :
 + $%A%$ est borné
