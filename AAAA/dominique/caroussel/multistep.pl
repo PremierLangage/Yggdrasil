@@ -13,7 +13,52 @@
 
 settings.cumulative % false
 title=
-text=
+
+text==
+
+Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    margin: auto;
+    width: 70%;
+  }
+  #myCarousel{
+    min-height: 300px;
+  }
+.carousel-indicators li {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #0000ff;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+.carousel-indicators .active {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    background-color: #ffff99;
+}
+.item{
+    padding-top: 10px;
+}
+  </style>
+
+==
+
 questions=@ /AAAA/Justine/justine_questions.txt
 
 before==
@@ -97,7 +142,7 @@ text +=  """<div id="myCarousel" class="carousel slide" data-ride="carousel" dat
     <!-- Indicators -->
     <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>"""
-text += "\n".join(['      <li data-target="#myCarousel" data-slide-to="'+str(i)+'"></li>' for i in range(1, len(list_questions))])
+text += "\n".join(['<li data-target="#myCarousel" data-slide-to="'+str(i)+'"></li>' for i in range(1, len(list_questions))])
 text +=   """</ol>
     <!-- Wrapper for slides -->
     <div class="carousel-inner">"""
@@ -127,51 +172,6 @@ text += """
 
 ==
 
-
-text==
-
-Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
-
-  <style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-    margin: auto;
-    width: 70%;
-  }
-  #myCarousel{
-    min-height: 300px;
-  }
-.carousel-indicators li {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin: 5px;
-    text-indent: 0;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    background-color: #0000ff;
-    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
-}
-.carousel-indicators .active {
-    width: 24px;
-    height: 24px;
-    margin: 5px;
-    background-color: #ffff99;
-}
-.item{
-    padding-top: 10px;
-}
-  </style>
-
-==
 
 
 end_text==
