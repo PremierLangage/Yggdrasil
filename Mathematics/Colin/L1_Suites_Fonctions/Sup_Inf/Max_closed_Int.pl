@@ -13,7 +13,7 @@ questions==
     c=random.randint(-10,0)
     e=c+1
 
-** Soit $%A=[{a} , {b}[%$ un intervalle dans $% \mathbb{R} %$. 
+** Soit A=[a , b[ un intervalle dans $% \mathbb{R} %$. 
 Cliquez sur les affirmations que vous pensez être correctes :
 + $%A%$ est borné
 - $%{b}%$ est le maximum de $%A%$
