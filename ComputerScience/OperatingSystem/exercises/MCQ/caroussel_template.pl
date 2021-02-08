@@ -408,8 +408,23 @@ form2==#|markdown|
 ==
 
 evaluator==#|python|
+feedback = "Voici les erreurs que vous avez faites : "
+errors=0
+ok=0
+if nb_quest >= 1:
+    for item in radio0.items:
+        if item['checked']:
+            if 'b' in item['id']:
+                errors += 1
+            else:
+                ok += 1
+        else:
+            if 'b' in item['id']:
+                ok += 1
+            else:
+                errors += 1
 
-note_finale = 100
+note_finale = (100 * max([0, ok - errors])) // (ok + errors)
 
 grade = (note_finale, "Vous avez obtenur la note de "+str(note_finale)+"%<br>")
 ==
