@@ -145,7 +145,7 @@
 - La commande construit un arbre binaire de recherche 'abr'.
 - La commande redirige la sortie vers le fichier 'abr.txt'.
 - La commande n'affichera plus rien à l'écran.
-+ Cela exécute is_abr en connectant une ouverture du fichier 'abr.txt' sur l'entrée standard .
++ Cela exécute is_abr en connectant une ouverture du fichier 'abr.txt' <br> sur l'entrée standard .
 + les scanf dans le programme is_abr seront opérés sur le contenu du fichier 'abr.txt'.
 + Cela s'appelle faire une redirection en entrée du programme is_abr.
 + Le clavier n'est plus utile durant l'exécution de la commande.
