@@ -139,7 +139,8 @@ for i, q in enumerate(list_questions):
 
 # entêtes du mnaège
 text += "<div id='debut'></div>"
-text +=  """<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" >
+text += "abdend d e moiles "
+text += """<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" >
     <!-- Indicators -->
     <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>"""
