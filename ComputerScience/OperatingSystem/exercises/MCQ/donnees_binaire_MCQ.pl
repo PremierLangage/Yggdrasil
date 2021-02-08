@@ -16,11 +16,18 @@
 
 tag=system|unix|donnees|binaire
 
-extends = /model/AMC_TXT.pl
+extends = /ComputerScience/OperatingSystem/exercises/MCQ/caroussel_template.pl
 
-title = Quizz sur les données binaires
-
+#****************************************************************************
+# PANNEAU DE CONTROLE ICI
+#****************************************************************************
+title=Quizz sur les données binaires
 questions=@ donnees_binaire.txt
-
-
+nb_question=5
+feedback=True
+min_options=4
+max_options=8
+#****************************************************************************
+# FIN DU PANNEAU DE CONTROLE : NE PLUS RIEN TOUCHER APRES
+#****************************************************************************
 
