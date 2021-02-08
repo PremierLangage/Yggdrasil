@@ -88,7 +88,7 @@
 - L'affichage : pouvoir afficher à l'écran le contenu des fichiers.
 - La programmation : planifier les futures tâches que le C.P.U. devra traiter.
 - L'élagage : pouvoir couper les branches dans l'arborecence des fichiers.
-+ Le partage : assurer l'utilisation simultanée de plusieurs disques et/ou plusieurs fichiers.
++ Le partage : assurer l'utilisation simultanée de plusieurs disques <br> et/ou plusieurs fichiers.
 + L'efficacité : optimisation via des caches, accès standardisés et uniformes.
 + Les droits : protection du système, protections entre les utilisateurs.
 + La cohérence : assurer l'alignement et la cohérence du contenu <br> des fichiers sur les disques.
