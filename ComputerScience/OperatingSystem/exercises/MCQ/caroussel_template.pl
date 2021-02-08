@@ -400,7 +400,7 @@ for i, cb in enumerate(L):
             if 'b' in item['id']:
                 errors += 1
                 q_ok = False
-                fb_q += '<span style="color:red"><strike>'+item['content']+'</strike></span>'
+                fb_q += '<span style="color:red"><strike>'+item['content']+'</strike></span><br>'
             else:
                 ok += 1
         else:
@@ -410,7 +410,7 @@ for i, cb in enumerate(L):
                 errors += 1
                 q_ok = False
     if not q_ok:
-        fb_err += fb_q
+        fb_err += "<br>"+fb_q
 
 note_finale = (100 * max([0, ok - errors])) // (ok + errors)
 
