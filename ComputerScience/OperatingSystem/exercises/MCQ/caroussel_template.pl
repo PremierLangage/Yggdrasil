@@ -368,7 +368,7 @@ evaluator==#|python|
 text=""
 form=""
 
-fb_err = "Voici les erreurs que vous avez faites : <br>"
+fb_err = "Voici les erreurs que vous avez faites : <br><br>"
 errors=0
 ok=0
 
