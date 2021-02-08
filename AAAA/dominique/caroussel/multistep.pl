@@ -23,8 +23,6 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-
-
   <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -58,8 +56,6 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
   </style>
 
 ==
-
-questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
 
 
 before==
@@ -224,6 +220,10 @@ note_finale = int(sum(scores) / nb_quest)
 grade = (note_finale, "Vous avez obtenur la note de "+str(note_finale)+"%<br>")
 ==
 
+
+
+
+questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
 
 
 
