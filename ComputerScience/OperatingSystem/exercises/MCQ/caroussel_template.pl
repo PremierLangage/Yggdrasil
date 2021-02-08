@@ -147,6 +147,13 @@ text += '''<br><br><br><br></div>'''
 # question suivante --> 1
 if nb_quest >= 2:
     radio1 = CheckboxGroup()
+    q, g, b = q_mix_item[1]
+    radio1.items = []
+    for i, s in enumerate(g):
+        radio1.items.append({"id": "g"+str(i), "content": s})
+    for i, s in enumerate(b):
+        radio1.items.append({"id": "b"+str(i), "content": s})
+    random.shuffle(radio1.items)
     text += '''<div class="item">'''
     text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 2 : </u></b></p><br>'
     text += '<div style="margin-left:15%; margin-right:15%;">'+q_mix_item[1][0]+'</div>'
