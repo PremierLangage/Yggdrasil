@@ -12,7 +12,7 @@ for toto in range(1):
     b=random.randint(1,10)
     a=random.randint(-10,0)
 
-** Soit $%A=[{a | latex } , {b | latex }[%$ un intervalle dans $% \mathbb{R} %$. 
+** Soit $%A=[{{a | latex }} , {{b | latex }}[%$ un intervalle dans $% \mathbb{R} %$. 
 Cliquez sur les affirmations que vous pensez être correctes :
 + $%A%$ est borné
 - $%{b | latex }%$ est le maximum de $%A%$
