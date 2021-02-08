@@ -136,7 +136,6 @@ for i, s in enumerate(b):
     radio0.items.append({"id": "b"+str(i), "content": s})
 random.shuffle(radio0.items)
 
-radio0 = comp[indices_questions[0]]
 # première question
 text += '''<div class="item active">'''
 text += '''<p style="margin-left:15%; margin-right:15%;"><b><u>Question 1 : </u></b></p><br>'''
@@ -147,7 +146,7 @@ text += '''<br><br><br><br></div>'''
 
 # question suivante --> 1
 if nb_quest >= 2:
-    radio1 = comp[indices_questions[1]]
+    radio1 = CheckboxGroup()
     text += '''<div class="item">'''
     text += '<p style="margin-left:15%; margin-right:15%;"><b><u>Question 2 : </u></b></p><br>'
     text += '<div style="margin-left:15%; margin-right:15%;">'+list_questions[indices_questions[1]]["text"]+'</div>'
