@@ -363,51 +363,6 @@ form==#|markdown|
 </div>
 ==
 
-form2==#|markdown|
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    {% for q in q_mix_item %}
-      {% if loop.index0 == 0 %}
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      {% else %}
-        <li data-target="#myCarousel" data-slide-to="{{ loop.index0 }}"></li>
-      {% endif %}
-    {% endfor %}
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-
-    {% for q in q_mix_item %}
-      {% if loop.index0 == 0 %}
-        <div class="item active">
-      {% else %}
-        <div class="item">
-      {% endif %}
-      {{ q[0] }}
-
-      <br>
-
-      {{ compo[loop.index0]|component }}
-
-        </div>
-    {% endfor %}
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-==
-
 evaluator==#|python|
 feedback = "Voici les erreurs que vous avez faites : "
 errors=0
