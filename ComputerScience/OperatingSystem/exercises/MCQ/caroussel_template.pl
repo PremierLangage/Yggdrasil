@@ -400,7 +400,7 @@ for i, cb in enumerate(L):
             if 'b' in item['id']:
                 errors += 1
                 q_ok = False
-                fb_q += '<span style="color:red"><strike>'+item['content']+'</strike></span><br>'
+                fb_q += '<span style="color:darkred"><strike>'+item['content']+'</strike></span><br>'
             else:
                 ok += 1
         else:
@@ -409,6 +409,7 @@ for i, cb in enumerate(L):
             else:
                 errors += 1
                 q_ok = False
+                fb_q += '<span style="color:drakgreen">'+item['content']+'</span><br>'
     if not q_ok:
         fb_err += "<br>"+fb_q
 
