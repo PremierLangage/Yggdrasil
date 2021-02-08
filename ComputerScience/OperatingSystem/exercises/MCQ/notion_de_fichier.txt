@@ -54,7 +54,7 @@
 - Les deux sorties standards ne sont pas bufferisées.
 + La sortie standard **stdout** est bufferisée par ligne.
 + La sortie standard d'erreur **stderr** n'est pas bufferisée.
-+ La bufferisation permet d'éviter de soliciter des mécanismes lourds pour trop peu de données transférées.
++ La bufferisation permet d'éviter de soliciter des mécanismes lourds <br> pour trop peu de données transférées.
 + L'entrée standard **stdin** est bufferisée par ligne.
 
 
