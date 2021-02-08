@@ -350,6 +350,7 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 ==
 
 form==#|markdown|
+    </div>
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
