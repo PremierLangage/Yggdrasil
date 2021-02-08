@@ -152,9 +152,15 @@ text +=   """</ol>
     <!-- Wrapper for slides -->
     <div class="carousel-inner">"""
 
-for indice in range(len(comp)):
+text += f"""
+                <div class="item activate">
+                <p style="margin-left:15%; margin-right:15%;"><b><u>Question {indice+1} : </u></b></p><br>
+                <div style="margin-left:15%; margin-right:15%;">{comp[indice].statement}</div>
+                <div style="margin-left:15%; margin-right:15%;">\n<{comp[indice].selector} cid='{comp[indice].cid}'></{comp[indice].selector}></div>
+                <br><br><br><br></div>"""
+for indice in range(1,len(comp)):
        text += f"""
-                <div class="item active">
+                <div class="item ">
                 <p style="margin-left:15%; margin-right:15%;"><b><u>Question {indice+1} : </u></b></p><br>
                 <div style="margin-left:15%; margin-right:15%;">{comp[indice].statement}</div>
                 <div style="margin-left:15%; margin-right:15%;">\n<{comp[indice].selector} cid='{comp[indice].cid}'></{comp[indice].selector}></div>
