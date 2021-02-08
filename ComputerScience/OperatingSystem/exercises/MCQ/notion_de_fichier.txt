@@ -59,17 +59,17 @@
 
 
 ** Sélectionner les fonctionalités de redirection valides en bash .
--     <2
--     ><
--     XD
--     :-;
--     1&3>
--     <3
-+     |
-+     <
-+     <<
-+     2>
-+     2&1>
+- `<2`
+- `><`
+- `XD`
+- `:-;`
+- `1&3>`
+- `<3`
++ `|`
++ `<`
++ `<<`
++ `2>`
++ `2&1>`
 
 
 ** Quelle(s) action(s) replace(nt) l'indicateur de position au début d'un fichier en C ?
