@@ -59,7 +59,8 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 
 ==
 
-questions=@ /AAAA/Justine/justine_questions.txt
+questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
+
 
 before==
 from customradio import CustomRadio
@@ -100,7 +101,7 @@ nbstep = 4
 if 'nbstep' in globals():
     list_questions = random.sample(list_questions, nbstep)
 
-title= str(list_questions)
+
 
 
 nb_quest = len(list_questions)
