@@ -47,6 +47,8 @@ def ParseQuestion(big_str):
     """
     Parse a Python open file of formated questions in AMC style and return a 
     list of parsed questions together with theirs answers.
+
+    * and ** are ignored... Everything ic checkboxgroup (even name is radio)
     """
     text = None
     goods = []
