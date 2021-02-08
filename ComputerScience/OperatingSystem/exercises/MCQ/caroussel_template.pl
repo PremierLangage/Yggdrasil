@@ -393,7 +393,7 @@ if nb_quest >= 10:
     L.append(radio9)
 
 for i, cb in enumerate(L):
-    fb_q = q_mix_item[i][0]+"<ul>"
+    fb_q = '<span style="color:black">'+q_mix_item[i][0]+'</span><ul>'
     q_ok = True
     for item in cb.items:
         if item['checked']:
