@@ -63,9 +63,9 @@ before==
 from customradio import CustomRadio
 from customcheckbox import CustomCheckbox
 from customtextselect import CustomTextSelect
-radio = CustomRadio() 
-check = CustomCheckbox()
-ztext = CustomTextSelect()
+#radio = CustomRadio() 
+#check = CustomCheckbox()
+#ztext = CustomTextSelect()
 import random
 random.seed(42) # DEBUG FIXME
 from AMC import parse_AMC_TXT
