@@ -391,7 +391,7 @@ if nb_quest >= 9:
 if nb_quest >= 10:
     L.append(radio9)
 
-if i, cb in enumerate(L):
+for i, cb in enumerate(L):
     for item in cb.items:
         if item['checked']:
             if 'b' in item['id']:
