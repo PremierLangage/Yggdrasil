@@ -14,6 +14,30 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+#  Documentation pour utiliser ce template bien moche....
+#
+#  Objectifs du template : faire un carousel d'au plus 10 questions tirées
+#  au hasard dans un sac(un fichier) de questions.
+#  Les bonnes et mauvaises réponses sont elles aussi choisi au hasard, 
+#  l'utilisateur enseignant peut customiser le nombre min et max d'options.
+#  Ce template de 400 lignes est moche et pourra être réécrit proprement
+#  en 100 lignes pour avec la V1. C'est un template qui gère l'urgence et
+#  adapté aux besoins de la banque de questions pour le Système Unix.
+#
+#  Les questions doivent être sous la forme suivante :
+#  * énoncé de la question
+#  + bonne réponse 1
+#  + bonne réponse 2
+#  - mauvaise réponse
+#
+#  Pour savoir comment utiliser ce template, allez voir le fichier
+#  Yggdrasil/ComputerScience/OperatingSystem/exercises/MCQ/commandes_terminal_MCQ.pl
+#
+#  Le feedback synthétique est activable/désactivable
+#
+
+
+
 @ /utils/sandboxio.py
 
 grader  =@ /grader/evaluator.py
