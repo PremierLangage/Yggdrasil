@@ -139,7 +139,7 @@ random.shuffle(radio0.items)
 # première question
 text += '''<div class="item active">'''
 text += '''<p><b><u>Question 1 : </u></b></p><br>'''
-text += '<div>'+q_mix_item[0][0]+'</div>'
+text += '<div>'+q_mix_item[0][0]+'</div><br>'
 text += f"""<div><{radio0.selector} cid='{radio0.cid}'></{radio0.selector}></div>"""
 # text += list_questions[indices_questions[0]]["html_form"]
 text += '''</div>'''
