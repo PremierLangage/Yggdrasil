@@ -393,14 +393,14 @@ if nb_quest >= 10:
     L.append(radio9)
 
 for i, cb in enumerate(L):
-    fb_q = q_mix_item[i][0]+"<br>"
+    fb_q = q_mix_item[i][0]+"<ul>"
     q_ok = True
     for item in cb.items:
         if item['checked']:
             if 'b' in item['id']:
                 errors += 1
                 q_ok = False
-                fb_q += '<span style="color:darkred"><strike>'+item['content']+'</strike></span><br>'
+                fb_q += '<li><span style="color:darkred"><strike>'+item['content']+'</strike></span></li>'
             else:
                 ok += 1
         else:
@@ -409,9 +409,9 @@ for i, cb in enumerate(L):
             else:
                 errors += 1
                 q_ok = False
-                fb_q += '<span style="color:darkgreen">'+item['content']+'</span><br>'
+                fb_q += '<li><span style="color:darkgreen">'+item['content']+'</span></li>'
     if not q_ok:
-        fb_err += "<br>"+fb_q
+        fb_err += "</ul><br>"+fb_q
 
 note_finale = (100 * max([0, ok - errors])) // (ok + errors)
 
