@@ -58,10 +58,8 @@ nb_quest = len(list_questions)
 random.shuffle(list_questions)
 
 comp = []
-import sys # DEBUG
 for i, q in enumerate(list_questions):
-    if type(q)== list :
-        exit()
+
     if q['type'] == "Radio":
         newcomp = CustomRadio()
         
