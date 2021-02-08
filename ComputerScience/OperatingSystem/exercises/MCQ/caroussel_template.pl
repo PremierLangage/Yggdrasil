@@ -162,7 +162,7 @@ if nb_quest >= 2:
     text += f"""<div><{radio1.selector} cid='{radio1.cid}'></{radio1.selector}></div>"""
     text += '</div>'
 
-# question suivante --> 1
+# question suivante --> 2
 if nb_quest >= 3:
     radio2 = CheckboxGroup()
     q, g, b = q_mix_item[2]
@@ -173,12 +173,28 @@ if nb_quest >= 3:
         radio2.items.append({"id": "b"+str(i), "content": s})
     random.shuffle(radio2.items)
     text += '''<div class="item">'''
-    text += '<p><b><u>Question 2 : </u></b></p><br>'
+    text += '<p><b><u>Question 3 : </u></b></p><br>'
     text += '<div>'+q_mix_item[2][0]+'</div><br>'
     # text += list_questions[indices_questions[i]]["html_form"]
     text += f"""<div><{radio2.selector} cid='{radio2.cid}'></{radio2.selector}></div>"""
     text += '</div>'
 
+# question suivante --> 3
+if nb_quest >= 4:
+    radio3 = CheckboxGroup()
+    q, g, b = q_mix_item[3]
+    radio3.items = []
+    for i, s in enumerate(g):
+        radio3.items.append({"id": "g"+str(i), "content": s})
+    for i, s in enumerate(b):
+        radio3.items.append({"id": "b"+str(i), "content": s})
+    random.shuffle(radio3.items)
+    text += '''<div class="item">'''
+    text += '<p><b><u>Question 4 : </u></b></p><br>'
+    text += '<div>'+q_mix_item[3][0]+'</div><br>'
+    # text += list_questions[indices_questions[i]]["html_form"]
+    text += f"""<div><{radio3.selector} cid='{radio3.cid}'></{radio3.selector}></div>"""
+    text += '</div>'
 
 ==
 
