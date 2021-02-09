@@ -142,7 +142,7 @@ fprintf(stderr,"%d\n",x);
 
 checks_args_stdin==#|python|
 [["Arbre feuille", [], "4"],
- ["Abre à 3 nœuds", [], "4 2 5"],
+ ["Arbre à 3 nœuds", [], "4 2 5"],
  ["Peigne gauche", [], "12 10 9 8 7 0"],
  ["Peigne droit", [], "7 8 9 10 12 55"],
  ["Arbre aléatoire ", [],choice (["42 22 52 5 66 70","1 2 3 1 7 42 12"])],
