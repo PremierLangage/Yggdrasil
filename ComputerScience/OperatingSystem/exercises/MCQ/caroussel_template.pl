@@ -25,7 +25,7 @@
 #  adapté aux besoins de la banque de questions pour le Système Unix.
 #
 #  Les questions doivent être sous la forme suivante :
-#  * énoncé de la question
+#  * énoncé de la question   (** autorisé donera le même comportement)
 #  + bonne réponse 1
 #  + bonne réponse 2
 #  - mauvaise réponse
@@ -34,7 +34,6 @@
 #  Yggdrasil/ComputerScience/OperatingSystem/exercises/MCQ/commandes_terminal_MCQ.pl
 #
 #  Le feedback synthétique est activable/désactivable
-#
 
 
 
