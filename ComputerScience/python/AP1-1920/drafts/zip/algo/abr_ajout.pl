@@ -59,12 +59,12 @@ int ajoute(Tree *t,int valeur){
 solution==#|c|
 
 ==
- (*t == NULL){
+int ajoute(Tree *t,int valeur){
+  if (*t == NULL){
     if ((*t=allocate_node(valeur))==NULL)
      return 0;
     return 1;
-  }int ajoute(Tree *t,int valeur){
-  if
+  }
   if ((*t)->value >valeur)
     return ajoute(&((*t)->left),valeur);
   if ((*t)->value <valeur)
