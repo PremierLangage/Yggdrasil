@@ -1,4 +1,4 @@
-00000000000000000000000000000000
+
 #*****************************************************************************
 #  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
@@ -58,7 +58,7 @@ int ajoute(Tree *t,int valeur){
 
 solution==#|c|
 
-==
+
 int ajoute(Tree *t,int valeur){
   if (*t == NULL){
     if ((*t=allocate_node(valeur))==NULL)
@@ -74,7 +74,7 @@ int ajoute(Tree *t,int valeur){
 } 
 
 
-
+==
 
 code_before==#|c|
 #include <stdio.h>
