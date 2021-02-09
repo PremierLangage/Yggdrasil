@@ -11,7 +11,8 @@ from gendec import question
 
 text, sol = question()
 
-
+nbq=0
+nbbr=0
 
 ==
 
@@ -33,10 +34,18 @@ form==
 ==
 
 evaluator==
+nbq=0
+
 if sol == inputbox.value:
-    grade = (100, '<span class="success-state">Good 👏👏👏</span>')
+    nbbr += 1 
+    grade = (100, '<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
 else:
-    grade = (0, f'<span class="error-state">Bad answer  la bonne réponse : {sol}</span>')
+    grade = (0, f'<span class="error-state">Bad answer <br>{text} la bonne réponse  était : {sol}</span> <span > {nbbr}/{nbq} </span>')
+
+
+from gendec import question
+
+text, sol = question()
 ==
 
 
