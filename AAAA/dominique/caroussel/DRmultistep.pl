@@ -236,8 +236,8 @@ from evaluatorstep import env
 
 text=""
 
-scores = [xcom0.eval()]
-form =  env.from_string(xcom0.statement+f" \n <{xcom0.selector} cid='{xcom0.cid}'></{xcom0.selector}> \n ").render(dic)
+scores = [xcomp0.eval()]
+form =  env.from_string(xcomp0.statement+f" \n <{xcomp0.selector} cid='{xcomp0.cid}'></{xcomp0.selector}> \n ").render(dic)
 for x in range(1,len(comp)):
     scores.append(comp[x].eval())
     form +=  env.from_string(comp[x].statement+f" \n <{comp[x].selector} cid='{comp[x].cid}'></{comp[x].selector}> \n ").render(dic)
