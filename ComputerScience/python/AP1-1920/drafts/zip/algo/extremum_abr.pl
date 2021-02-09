@@ -11,14 +11,12 @@
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 #
 #  The full text of the CC-By-SA 3.0 is available at:
+
 #
 #            https://creativecommons.org/licenses/by-sa/3.0/
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
-#*****************************************************************************
-
-
-extends=/ComputerScience/C/template/stdsandboxC.pl
-#/ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
+#**************************************************************************
+extends=/ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
 
 #author=Marc Zipstein
 title=Extraire l'extremum dans un arbre binaire de recherche
@@ -28,7 +26,8 @@ editor.height=300px
 
 text== 
 Écrire une fonction C **extraire_minimum** qui extrait le eminimumun d'un **arbre binaire de recherche**.
-La fonction renvoie 1 en cas d'extraction réussie et 0 sinon;  
+La fonction renvoie 1 en cas d'extraction réussie et 0 sinon.La valeur extraite est transmise par adresse.
+
 On utilisera le type   
 typedef struct node{  
   int value;  
