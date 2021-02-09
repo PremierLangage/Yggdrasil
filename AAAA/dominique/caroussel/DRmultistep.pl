@@ -223,10 +223,7 @@ end_text==
 </div>
 ==
 
-form==
-
-==
-
+form=
 
 @ /grader/evaluatorstep.py
 evaluator==#|python|
