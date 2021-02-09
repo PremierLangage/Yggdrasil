@@ -125,7 +125,7 @@ def createquestion(row):
         nombre=1
         nombres="Pluriel"
     cas= random.choice(CAS)
-    tx = f"""Donnez la déclinaison du mot **{row['nom']}** qui veut dire __{row['sens']}  
+    tx = f"""Donnez la déclinaison du mot **{row['nom']}** qui veut dire __{row['sens']}__  
     pour le *{cas}* au *{nombres}*"""
     sol = declinaison(row, cas, nombre)
 
