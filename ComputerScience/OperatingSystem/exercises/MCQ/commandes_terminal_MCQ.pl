@@ -23,7 +23,6 @@ extends = /ComputerScience/OperatingSystem/exercises/MCQ/caroussel_template.pl
 #****************************************************************************
 title=Quizz sur quelques commandes terminal Unix
 questions=@ commandes_terminal.txt
-# questions=@ /ComputerScience/C_Initiation/QCM/QCM-1-a-4.txt
 nb_question=5
 feedback=True
 min_options=4
