@@ -133,9 +133,9 @@ int x;
 
   build_tree(&t);
 x=ext(4);
-fprintf(stderr,"%d\n",x);
+fprintf(stderr,"%d",x);
   code=arbre_vers_code(t);
-  fprintf(stderr,"%s",code)    ;
+  /*fprintf(stderr,"%s",code) */   ;
   return 0;
 }
 ==
