@@ -34,13 +34,13 @@ form==
 ==
 
 evaluator==
-nbq=0
+nbq += 1
 
 if sol == inputbox.value:
     nbbr += 1 
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
 else:
-    grade = (0, f'<span class="error-state">Bad answer <br>{text} la bonne réponse  était : {sol}</span> <span > {nbbr}/{nbq} </span>')
+    grade = (0, f'<span class="error-state">Bad answer <br>{text| markdown }<br> la bonne réponse  était : {sol}</span> <span > {nbbr}/{nbq} </span>')
 
 
 from gendec import question
