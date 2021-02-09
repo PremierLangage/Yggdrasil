@@ -128,15 +128,6 @@ int ajoute(Tree *t,int valeur){
   return 1;
 } 
 
-int construit_abr(Tree *t,char * val[]){
-int i=1;
-for(i=1;val[i]!=NULL;i+=1)
-  if(0==ajoute(t,strtod(val[i ],NULL))){
-      fprintf(stderr, "problème allocation mémoire\n");
-      return 0;
-      }
-return 1;
-}
 int build_tree(Tree* t){
     int val;
    
@@ -177,7 +168,7 @@ int main(int argc, char* argv[]){
   Tree t=NULL;
 char *code;
 int x;
-  construit_abr(&t,argv);
+ build_tree(&t);
 extraire_minimum(&t,&x);
   code=arbre_vers_code(t);
   fprintf(stderr,"%d\n",x);
@@ -185,10 +176,17 @@ extraire_minimum(&t,&x);
   return 0;
 }
 ==
-tests==#|python|
-[["Arbre feuille", "4","f4"],
- ["3 feuilles","25 12 52",""],
- ]
+
+checks_args_stdin==#|python|
+[["Arbre feuille", [], "4"],
+ ["Abre à 3 nœuds", [], "4 2 5"],
+ ["Peigne gauche", [], "12 10 9 8 7 0"],
+ ["Peigne droit", [], "7 8 9 10 12 55"],
+ ["Arbre aléatoire ", [],choice (["42 22 52 5 66 70","1 2 3 1 7 42 12"])],
+  ["Arbre aléatoire II", []," ".join([ str(randint(1,100)) for i in range(10) ])]
+]
+==
+
 ==
 
 
