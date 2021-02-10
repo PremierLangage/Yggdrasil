@@ -30,7 +30,8 @@ inputbox.appearance = outline
 
 
 form==
-{{ inputbox|component}}
+if nbq <= borneq:
+ {{ inputbox|component}}
 ==
 
 evaluator==
