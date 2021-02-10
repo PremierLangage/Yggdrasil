@@ -53,6 +53,7 @@ else:
     grade = (100, f'<span class="success-state">BRAVO!tout est bon 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
   else:
     grade = (0, f'<span class="error-state">Quelques bonnes réponses tout de même</span> <br/><span >{text}<br>  {nbbr}/{nbq} </span>')
+  exit
 ==
 
 
