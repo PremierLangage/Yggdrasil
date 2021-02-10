@@ -36,7 +36,7 @@ form==
 evaluator==
 nbq += 1
 
-if sol.lowercase() == inputbox.value.():
+if sol.lowercase() == inputbox.value.lowercase():
     nbbr += 1 
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
 else:
