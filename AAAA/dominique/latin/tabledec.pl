@@ -33,7 +33,7 @@ before==
 
 from gendec import question
 
-text, sol = question()
+textx, solx = question()
 
 nbq=0
 nbbr=0
@@ -51,9 +51,6 @@ inputbox.placeholder = Answer
 inputbox.appearance = outline
 
 
-form==
-{{ inputbox|component}}
-==
 
 evaluator==
 nbq += 1
