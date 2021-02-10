@@ -15,7 +15,7 @@ nbq=0
 nbbr=0
 
 # Nombre de tentatives
-borneq=5
+borneq=3
 ==
 
 
