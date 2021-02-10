@@ -52,7 +52,7 @@ else:
   if nbbr == nbq :
     grade = (100, '<span class="success-state">BRAVO!tout est bon 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
   else:
-    grade = (0, '<span class="error-state">Quelques bonnes réponses tout de même? =</span> <br/><span >{nbbr}/{nbq} </span>')
+    grade = (-nbbr/nbq, '<span class="error-state">Quelques bonnes réponses tout de même? = {nbbr}/{nbq} </span>')
   exit
 ==
 
