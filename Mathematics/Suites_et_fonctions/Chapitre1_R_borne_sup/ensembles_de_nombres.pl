@@ -1,6 +1,5 @@
 
-# template Tout nouveau malheuresement... feedback pas encore programmé...
-extends=/ComputerScience/C/examples/Stoi_le_caroussel.pl
+extends=/model/AMC_TXT.pl
 
 
 author = Enseignants Suites et Fonctions (MK)
