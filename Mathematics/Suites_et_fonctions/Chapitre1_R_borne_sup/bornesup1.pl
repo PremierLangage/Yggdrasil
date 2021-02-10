@@ -1,6 +1,6 @@
 
 # template Tout nouveau malheuresement... feedback pas encore programmé...
-extends=/ComputerScience/C/examples/Stoi_le_caroussel.pl
+extends=/model/AMC_TXT.pl
 
 
 author = Enseignants Suites et Fonctions (MK)
@@ -11,7 +11,7 @@ author = Enseignants Suites et Fonctions (MK)
 # sans remise parmi le tas de questions.
 nb_quest_voulu = 4
 
-title= carroussel borne supérieure
+title= Borne supérieure
 
 
 intro ==
