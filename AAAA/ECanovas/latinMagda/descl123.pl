@@ -30,8 +30,7 @@ inputbox.appearance = outline
 
 
 form==
-if nbq <= borneq:
- {{ inputbox|component}}
+{{ inputbox|component}}
 ==
 
 evaluator==
@@ -51,9 +50,9 @@ if nbq <= borneq:
  text, sol = question()
 else:
   if nbbr == nbq :
-    grade = (100, '<span class="success-state">BRAVO!tout est bon 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
+    grade = (100, f'<span class="success-state">BRAVO!tout est bon 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
   else:
-    grade = (-nbbr/nbq, '<span class="error-state">Quelques bonnes réponses tout de même? = {nbbr}/{nbq} </span>')
+    grade = (-nbbr/nbq, f'<span class="error-state">Quelques bonnes réponses tout de même? = {nbbr}/{nbq} </span>')
   exit
 ==
 
