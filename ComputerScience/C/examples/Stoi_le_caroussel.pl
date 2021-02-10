@@ -15,10 +15,10 @@ builder =@ /builder/before.py
 
 # LES TRUCS QUE L'ON PEUT CHANGER SONT LA :
 nb_quest_voulu = 5
-# questions=@ /ComputerScience/C_Initiation/QCM/QCM-1-a-4.txt
+questions=@ /ComputerScience/C_Initiation/QCM/QCM-1-a-4.txt
 # questions=@ /ComputerScience/C/exercices/program/qcm_questions/generalites_C.txt
 # questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/donnees_binaire.txt
-questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
+# questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
 
 
 before==#|python|
