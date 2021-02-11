@@ -168,8 +168,9 @@ int main(int argc, char* argv[]){
   Tree t=NULL;
 char *code;
 int x;
-  exit(0);
+
    printf("toto\n");
+     exit(0);
   build_tree(&t);
    
    code=arbre_vers_code(t);
