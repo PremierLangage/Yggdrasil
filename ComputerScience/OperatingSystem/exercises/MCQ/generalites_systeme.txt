@@ -67,7 +67,7 @@
 + Cette mémoire est montée sur des barrettes amovibles clipsées sur carte mère.
 
 
-** Quels sont les objectifs d'un système d'exploitation ?
+** Quels sont les objectifs d'un système d'exploitation?
 - Éviter que la souris attrape des puces.
 - Assurer que l'écran ne chauffe pas trop.
 - Augmenter la durée de vie des cartouches d'encres en limitant l'encre utilisée.
