@@ -144,9 +144,9 @@
 - Elle est responsable de la mise à jour du système.
 - Elle facilite la portabilité des codes sources entre les systèmes.
 - Elle diminue la complexité des algorithmes de tris.
-+ Elle possèdent des jeux d'instructions basiques pouvant être exécutées très rapidement.
++ Elle possèdent des jeux d'instructions basiques pouvant être exécutées <br>très rapidement.
 + Elle manipule des mots machines de taille 64 bits ou plus de nos jours.
-+ Elle exploite des registres et mémoires caches très proche physiquement de ces circuits.
++ Elle exploite des registres et mémoires caches très proche physiquement <br>de ces circuits.
 + Elle ne manipule que des données binaires.
 
 
