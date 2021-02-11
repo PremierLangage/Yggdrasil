@@ -138,7 +138,7 @@
 + Ça permet une montée en puissance des fonctionnalités via des niveaux d'abstraction : compilateur, bibliothèque bas-niveau, framework évolué, application haut niveau (différent langage et traduction d'un niveau à un autre).
 
 
-** Quelles sont les caractéristiques d'une unité arithmétique et logique ?
+** Quelles sont les caractéristiques d'une unité arithmétique et logique?
 - Elle permet de connecter l'ordinateur à internet.
 - Elle évite les fuites mémoires dans les gros programmes.
 - Elle est responsable de la mise à jour du système.
