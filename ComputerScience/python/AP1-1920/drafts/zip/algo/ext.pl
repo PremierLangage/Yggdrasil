@@ -32,7 +32,7 @@ lst.append(( maximum,left,right))
 nom,reste,part=choice(list)
 ==
 text== 
-Écrire une fonction C **extraire_minimum** qui extrait le eminimumun d'un **arbre binaire de recherche**.
+Écrire une fonction C **extraire_{{nom}}** qui extrait le {{nom}} d'un **arbre binaire de recherche**.
 La fonction renvoie 1 en cas d'extraction réussie et 0 sinon.La valeur extraite est transmise par adresse.
 
 On utilisera le type   
@@ -46,21 +46,21 @@ typedef struct node{
 
 editor.code==#|c|
 
-int extraire_minimum(Tree *t,int *min){
+int extraire_{{nom}}(Tree *t,int *min){
   Tree a,tmp;
   if(*t==NULL)
     return 0;
   a=*t;
-  if(a->left==NULL){
+  if(a->{{part}}==NULL){
     *min=(*t)->value;
-    *t=(*t)->right;
+    *t=(*t)->{{reste}};
     free(a);
     return 1;
   }
   while(a->left->left!=NULL)
     a=a->left;
   *min=a->left->value;
-  tmp=a->left;
+  tmp->left;
   a->left=a->left->right;
   free(tmp);
   return 1;
