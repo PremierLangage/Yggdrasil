@@ -173,9 +173,9 @@ int x;
   build_tree(&t);
 
    code=arbre_vers_code(t);
-     printf("toto\n");
+     printf("toto\n");exit(0);
   fprintf(stderr,"%s\n",code) ;
-  printf("toto\n");exit(0);
+  printf("toto\n");
  extraire_minimum(&t,&x);
    
   fprintf(stderr,"%d\n",x);
