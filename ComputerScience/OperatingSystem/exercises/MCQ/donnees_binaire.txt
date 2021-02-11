@@ -31,7 +31,7 @@
 - 95 
 - 97 ou encore le caractère ascii 'a'
 + 85
-+ ((1*4 + 1)*4 + 1)*4 + 1
++ ((1 * 4 + 1) * 4 + 1) * 4 + 1
 
 
 ** Quelle est l'écriture en base 2 du nombre écrit en base décimale 77?
