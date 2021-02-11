@@ -93,7 +93,7 @@
 
 
 ** Combien vaut l'entier positif binaire 111111 en base 10?
-+ \displaysum\sum_{i=0}^5 2^i
++ $% \displaysum\sum_{i=0}^5 2^i %$
 + 2^6 - 1
 + 63
 - 31
