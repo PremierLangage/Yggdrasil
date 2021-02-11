@@ -89,9 +89,12 @@
 - Les puissances de 2 sont stables par complément à 1.
 - Les puissances de 2 sont des palindromes en binaire <br> (on peut les lire de droite à gauche).
 - Les puissances de 2 comportent toujours plus de bits à 1 que de bits à 0.
+- Les puissances de 2 ne s'écrivent justement pas en binaire.
 
 
 ** Combien vaut l'entier positif binaire 111111 en base 10?
++ \displaysum\sum_{i=0}^5 2^i
++ 2^6 - 1
 + 63
 - 31
 - 127
