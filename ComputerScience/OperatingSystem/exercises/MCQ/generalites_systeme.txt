@@ -159,3 +159,12 @@
 + L'unité arithmétique et logique, l'unité de contrôle, la mémoire et les entrées/sorties.
 
 
+** Où sont nées les systèmes d'exploiations de type Unix ?
+- En laponie, les lutins ayant fournis la plupart des bibliothèques.
+- Dans les laboratoires de recherches d'Orange.
+- C'est Apple qui a fourni OS X en premier et Linux en a dérivé.
+- C'est Astérix et Obélix qui ont écrit la première version d'Unix.
+- Unix est allemand, né à la stuttgart universität.
+- Richard Stallman a imaginé en premier Unix aux état-unis.
++ Aux états-unis, dans les laboratoire de AT&T.
++ Dans les têtes de Ken Thompson, Dennis Ritchie et Brian Kernighan.
