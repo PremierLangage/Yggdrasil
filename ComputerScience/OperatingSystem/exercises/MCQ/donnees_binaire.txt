@@ -46,6 +46,7 @@
 
 ** Quelles données ne sont pas binaires dans un ordinateur?
 + Non, toute donnée est binaire dans nos ordinateurs.
++ Tout est binaire, les supports mémoires stockent des bits, rien d'autre.
 - Les fichiers textes sont constitués de symboles non binaires.
 - Les sons, comme les fichiers mp3, ne sont pas binaires.
 - Certaines images ne sont pas binaires.
