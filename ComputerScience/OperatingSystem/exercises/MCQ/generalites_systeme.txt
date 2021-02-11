@@ -46,10 +46,12 @@
 
 
 ** De nos jours, les microprocesseurs contiennent dans leurs coeurs ?
+- un et un seul transistor, c'est le coeur de l'ordinateur
 - soit 2, soit 4 transistors
 - une dizaine de transistors
 - jamais plus de 128 transistors
 - quelques centaines de transistors
+- certains supercalculaturs cumullent plus de 1000 transistors
 + de l'ordre d'un milliard de transistors
 
 
