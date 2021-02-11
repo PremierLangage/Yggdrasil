@@ -150,7 +150,7 @@
 + Elle ne manipule que des données binaires.
 
 
-** Quels sont les éléments définissant l'architecture de Von Neumann ?
+** Quels sont les éléments définissant l'architecture de Von Neumann?
 - Le processeur, la carte mère, la mémoire vive et le couple clavier/écran.
 - L'unité centrale, l'écran, le clavier et la souris.
 - L'unité arithmétique et logique, la mémoire vive, la mémoire morte et les entrées/sorties.
