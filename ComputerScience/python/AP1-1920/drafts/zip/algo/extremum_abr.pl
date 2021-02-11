@@ -171,8 +171,7 @@ int x;
 
 
   build_tree(&t);
-   printf("toto\n");
-     exit(0);
+
    code=arbre_vers_code(t);
      printf("toto\n");
   fprintf(stderr,"%s\n",code) ;
