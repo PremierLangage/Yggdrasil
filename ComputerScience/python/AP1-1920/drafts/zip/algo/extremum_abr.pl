@@ -148,7 +148,7 @@ void arbre_vers_code_aux(Tree t,char* s){
   else c='f';
   sprintf(s+strlen(s),"%c",c);
   sprintf(s+strlen(s),"%d",t->value); 
-  
+  if(t->left)
        arbre_vers_code_aux(t->left,s+strlen(s));
  if(t->right)
        arbre_vers_code_aux(t->right,s+strlen(s));
@@ -171,7 +171,7 @@ int x;
 
 
   build_tree(&t);
- printf("toto\n");exit(0);
+ 
    code=arbre_vers_code(t);
     
   fprintf(stderr,"%s\n",code) ;
