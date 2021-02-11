@@ -159,7 +159,7 @@
 + L'unité arithmétique et logique, l'unité de contrôle, la mémoire et les entrées/sorties.
 
 
-** Où sont nées les systèmes d'exploiations de type Unix ?
+** Où sont nées les systèmes d'exploiations de type Unix?
 - En laponie, les lutins ayant fournis la plupart des bibliothèques.
 - Dans les laboratoires de recherches d'Orange.
 - C'est Apple qui a fourni OS X en premier et Linux en a dérivé.
