@@ -114,7 +114,7 @@
 + Des mécanismes de sécurité, de mise à jour et de diagnostic.
 
 
-** Quelles sont les spécificités des systèmes d'exploitation de type Unix ?
+** Quelles sont les spécificités des systèmes d'exploitation de type Unix?
 - Unix ne propose que des sessions graphiques.
 - Un seul utilisateur peut se loger à la fois.
 - Unix augmente les capacités des barrettes mémoires.
