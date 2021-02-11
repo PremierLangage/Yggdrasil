@@ -1,4 +1,4 @@
-** À quoi sert le système d'exploitation sur un ordinateur ?
+** À quoi sert le système d'exploitation sur un ordinateur?
 - Il met en place un régime d'oppression sur les micropuces informatiques.
 - Il est responsable de charger le CSS dans les pages web HTML.
 - Il produit le bytecode Java à partir du code source Java.
