@@ -1,4 +1,5 @@
 
+
 #*****************************************************************************
 #  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
@@ -10,49 +11,92 @@
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 #
 #  The full text of the CC-By-SA 3.0 is available at:
+
 #
 #            https://creativecommons.org/licenses/by-sa/3.0/
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
-#*****************************************************************************
-
-
-extends= /ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
-
+#**************************************************************************
+#extends=/ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
+extends=/ComputerScience/C/template/std_progC.pl
 #author=Marc Zipstein
-title=Ajouter dans un arbre binaire de recherche
+title=Extraire l'extremum dans un arbre binaire de recherche
 tag=recherche
 
 editor.height=300px
+before==#|python|
+from random import choice, randint
 
+lst=[]
+lst.append(( minimum,right,left))
+lst.append(( maximum,left,right))
+nom,reste,part=choice(list)
+==
 text== 
-Écrire une fonction C **ajoute** qui ajoute une valeur à un **arbre binaire de recherche**.
-La fonction renvoie 1 en cas d'ajout réussi ou si la valeur est déjà dans l'arbre, et 0 sinon
-On utilisera le type 
-typedef struct node{
-  int value;
-  struct node * left;
-  struct node * right;
-}Node, *Tree;
+Écrire une fonction C **extraire_minimum** qui extrait le eminimumun d'un **arbre binaire de recherche**.
+La fonction renvoie 1 en cas d'extraction réussie et 0 sinon.La valeur extraite est transmise par adresse.
+
+On utilisera le type   
+typedef struct node{  
+  int value;  
+  struct node * left;  
+  struct node * right;  
+}Node, *Tree;  
 
 ==
 
 editor.code==#|c|
-int ext(int n){
-return 1;
-    }
+
+int extraire_minimum(Tree *t,int *min){
+  Tree a,tmp;
+  if(*t==NULL)
+    return 0;
+  a=*t;
+  if(a->left==NULL){
+    *min=(*t)->value;
+    *t=(*t)->right;
+    free(a);
+    return 1;
+  }
+  while(a->left->left!=NULL)
+    a=a->left;
+  *min=a->left->value;
+  tmp=a->left;
+  a->left=a->left->right;
+  free(tmp);
+  return 1;
+}
+
 ==
 
 solution==#|c|
+int extraire_minimum(Tree *t,int *min){
+  Tree a,tmp;
+  if(*t==NULL)
+    return 0;
+  a=*t;
+  if(a->left==NULL){
+    *min=(*t)->value;
+    *t=(*t)->right;
+    free(a);
+    return 1;
+  }
+  while(a->left->left!=NULL)
+    a=a->left;
+  *min=a->left->value;
+  tmp=a->left;
+  a->left=a->left->right;
+  free(tmp);
+  return 1;
+}
 
-int ext(int n){
-return 1;
-    }
+
 ==
 
 code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define TCODE 300
 typedef struct node{
   int value;
   struct node * left;
@@ -76,20 +120,20 @@ Node * allocate_node(int val){
 
 code_after==#|c|
 
+
 int ajoute(Tree *t,int valeur){
   if (*t == NULL){
     if ((*t=allocate_node(valeur))==NULL)
      return 0;
     return 1;
   }
-  if ((*t)->value >valeur)
+  if (((*t)->value >valeur))
     return ajoute(&((*t)->left),valeur);
-  if ((*t)->value <valeur)
-   return ajoute(&((*t)->right),valeur);
+  if (((*t)->value <valeur))
+    return ajoute(&((*t)->right),valeur);
 
   return 1;
 } 
-
 
 int build_tree(Tree* t){
     int val;
@@ -111,15 +155,15 @@ void arbre_vers_code_aux(Tree t,char* s){
   else c='f';
   sprintf(s+strlen(s),"%c",c);
   sprintf(s+strlen(s),"%d",t->value); 
-  
-  if(t->left) 
+  if(t->left)
        arbre_vers_code_aux(t->left,s+strlen(s));
  if(t->right)
        arbre_vers_code_aux(t->right,s+strlen(s));
 }
 
 char *arbre_vers_code(Tree t){
-  static char s[300]={0} ;
+  static char s[300] ;
+    s[0]='\0';
   if(NULL!=t)
     arbre_vers_code_aux(t,s);
   s[strlen(s)]= 0;
@@ -131,23 +175,33 @@ int main(int argc, char* argv[]){
 char *code;
 int x;
 
+
   build_tree(&t);
-x=ext(4);
-fprintf(stderr,"%d",x);
-  code=arbre_vers_code(t);
-  /*fprintf(stderr,"%s",code) */   ;
+ 
+   code=arbre_vers_code(t);
+    
+  fprintf(stderr,"arbre avant %s\n",code) ;
+
+ extraire_minimum(&t,&x);
+   
+   code=arbre_vers_code(t);
+    
+  fprintf(stderr,"arbre après %s\n",code) ;
+ 
   return 0;
 }
 ==
 
 checks_args_stdin==#|python|
 [["Arbre feuille", [], "4"],
- ["Arbre à 3 nœuds", [], "4 2 5"],
+ ["Abre à 3 nœuds", [], "4 2 5"],
  ["Peigne gauche", [], "12 10 9 8 7 0"],
  ["Peigne droit", [], "7 8 9 10 12 55"],
  ["Arbre aléatoire ", [],choice (["42 22 52 5 66 70","1 2 3 1 7 42 12"])],
   ["Arbre aléatoire II", []," ".join([ str(randint(1,100)) for i in range(10) ])]
 ]
 ==
+
+
 
 
