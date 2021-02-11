@@ -25,6 +25,7 @@
 
 ** Combien vaut le nombre binaire 1010101 en base 10?
 - 12
+- un million dix mille cent un
 - Ce nombre n'existe pas en base 10.
 - 105
 - 53
