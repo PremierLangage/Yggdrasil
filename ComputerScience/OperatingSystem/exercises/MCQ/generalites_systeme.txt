@@ -27,8 +27,8 @@
 + Sauvegarder un fichier.
 + Parcourir le contenu d'un répertoire.
 + Bouger le pointeur de la souris à l'écran.
-+ Éteindre le système avant une décharge complète d'une batterie Lithium et donc sa détérioration.
-+ Partager la puissance de calcul du processeur entre plusieurs programmes exécutés en même temps.
++ Éteindre le système avant une décharge complète d'une batterie Lithium <br>et donc sa détérioration.
++ Partager la puissance de calcul du processeur entre plusieurs programmes <br>exécutés en même temps.
 + Demander de la mémoire pérenne supplémentaire dans un programme C (avec malloc).
 
 
