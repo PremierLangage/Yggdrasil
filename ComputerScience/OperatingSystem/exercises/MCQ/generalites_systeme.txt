@@ -100,7 +100,7 @@
 + iOS (iphone OS)
 
 
-** Que contient un système d'exploitation en termes logiciels ?
+** Que contient un système d'exploitation en termes logiciels?
 - Des algorithmes de traitement d'images.
 - Des lecteurs de fichiers mp3.
 - Des MMORPG.
