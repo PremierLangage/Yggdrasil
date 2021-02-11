@@ -62,7 +62,7 @@
 - C'est la mémoire qu'on trouve en plus grande capacité dans un ordinateur.
 - Cette mémoire à besoin d'être rembobinée avant utilisation.
 + C'est la mémoire principalement utilisée lors de la réalisation de calculs.
-+ Chaque morceau ou cellule de cette mémoire est accessible directement via son adresse.
++ Chaque morceau ou cellule de cette mémoire est accessible <br>directement via son adresse.
 + Les ordinateurs en comportent plusieurs GigaOctets de nos jours.
 + Cette mémoire est montée sur des barrettes amovibles clipsées sur carte mère.
 
