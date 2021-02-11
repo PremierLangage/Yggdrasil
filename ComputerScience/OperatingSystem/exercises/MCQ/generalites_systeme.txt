@@ -15,7 +15,7 @@
 + Il fait l'interface entre le matériel (hardware) et les logiciels applicatifs (software).
 
 
-** Parmi les opérations informatiques suivantes, laquelle(lesquelles) sollicite(nt) le système d'exploitation ?
+** Parmi les opérations informatiques suivantes, laquelle(lesquelles) sollicite(nt) le système d'exploitation?
 - Changer la pile bouton de la carte mère alimentant la puce du BIOS.
 - Nettoyer les circuits imprimés et les dissipateurs de chaleurs avec de l'air pulsé.
 - Changer une touche en plastique cassée du clavier.
