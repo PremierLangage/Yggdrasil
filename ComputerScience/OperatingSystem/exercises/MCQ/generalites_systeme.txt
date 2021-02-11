@@ -20,7 +20,7 @@
 - Nettoyer les circuits imprimés et les dissipateurs de chaleurs avec de l'air pulsé.
 - Changer une touche en plastique cassée du clavier.
 - Calculer la complexité d'un algorithme de tri.
-- Établir une bijection entre les séquences binaires sur 32 bits et les entiers positifs plus petits que 4294967296.
+- Établir une bijection entre les séquences binaires sur 32 bits et <br>les entiers positifs plus petits que 4294967296.
 - Vérifier que les bases de données sont structurées en forme normale.
 - Utiliser une méthode algorithmique diviser pour régner.
 + Lancer l'exécution d'un programme.
