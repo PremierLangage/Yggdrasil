@@ -81,7 +81,7 @@
 + Proposer des interfaces standardisés pour chaques ressources.
 
 
-** Parmi les logiciels suivants, lesquels sont des systèmes d'exploitation ?
+** Parmi les logiciels suivants, lesquels sont des systèmes d'exploitation?
 - Photoshop
 - Powerpoint
 - Excel
