@@ -156,8 +156,6 @@ void arbre_vers_code_aux(Tree t,char* s){
 
 char *arbre_vers_code(Tree t){
   static char s[300] ;
-
-
     s[0]='\0';
   if(NULL!=t)
     arbre_vers_code_aux(t,s);
