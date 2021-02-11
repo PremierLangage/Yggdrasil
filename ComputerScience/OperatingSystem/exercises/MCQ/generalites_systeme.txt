@@ -32,7 +32,7 @@
 + Demander de la mémoire pérenne supplémentaire dans un programme C (avec malloc).
 
 
-** Parmi les organes matériels qui suivent, lequel ou lesquels sont vitaux pour un ordinateur (un ordinateur ne pourrait ainsi pas fonctionner sans un de ces organes) ?
+** Parmi les organes matériels qui suivent, lequel ou lesquels sont vitaux pour un ordinateur (un ordinateur ne pourrait ainsi pas fonctionner sans un de ces organes)?
 - une souris
 - un écran
 - une imprimante
@@ -168,4 +168,5 @@
 - Richard Stallman a imaginé en premier Unix aux état-unis.
 + Aux états-unis, dans les laboratoire de AT&T.
 + Dans les têtes de Ken Thompson, Dennis Ritchie et Brian Kernighan.
+
 
