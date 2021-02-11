@@ -164,7 +164,7 @@
 - Dans les laboratoires de recherches d'Orange.
 - C'est Apple qui a fourni OS X en premier et Linux en a dérivé.
 - C'est Astérix et Obélix qui ont écrit la première version d'Unix.
-- Unix est allemand, né à la stuttgart universität.
+- Unix est allemand, né à la Stuttgart Universität.
 - Richard Stallman a imaginé en premier Unix aux état-unis.
 + Aux états-unis, dans les laboratoire de AT&T.
 + Dans les têtes de Ken Thompson, Dennis Ritchie et Brian Kernighan.
