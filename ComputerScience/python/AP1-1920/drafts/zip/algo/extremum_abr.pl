@@ -16,8 +16,8 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #**************************************************************************
-extends=/ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
-
+#extends=/ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
+extends=/ComputerScience/C/template/std_progC.pl
 #author=Marc Zipstein
 title=Extraire l'extremum dans un arbre binaire de recherche
 tag=recherche
