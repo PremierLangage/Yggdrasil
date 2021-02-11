@@ -11,6 +11,7 @@
 
 ** Parmi les nombres binaires suivants, lesquels sont les multiples de 4?
 - 10010101
+- 10
 - 10110111
 - 110010
 - 1
@@ -118,8 +119,4 @@
 - C'est pas du tout astucieux, les ordinateurs sont lents et ne font rien.
 - Ça permet de mieux enregistrer et restituer les sons.
 - Les images s'encodent naturellement en binaire.
-
-
-
-
 
