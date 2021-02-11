@@ -153,6 +153,7 @@
 - L'unité centrale, l'écran, le clavier et la souris.
 - L'unité arithmétique et logique, la mémoire vive, la mémoire morte et les entrées/sorties.
 - L'unité arithmétique et logique, la mémoire, le quartz et le bus central.
+- Les colonnes, les arches sculptées, les coins arrondis et les toits plats.
 + L'unité arithmétique et logique, l'unité de contrôle, la mémoire et les entrées/sorties.
 
 
