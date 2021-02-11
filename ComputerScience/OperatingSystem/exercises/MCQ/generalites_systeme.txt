@@ -157,4 +157,3 @@
 + L'unité arithmétique et logique, l'unité de contrôle, la mémoire et les entrées/sorties.
 
 
-
