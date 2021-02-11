@@ -55,7 +55,7 @@ else:
     grade = (100, f'<span class="success-state">BRAVO!tout est bon 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
   else:
     grade = (-nbbr/nbq, f'<span class="error-state">Quelques bonnes réponses tout de même? = {nbbr}/{nbq} </span>')
-  exit
+    
 ==
 
 
