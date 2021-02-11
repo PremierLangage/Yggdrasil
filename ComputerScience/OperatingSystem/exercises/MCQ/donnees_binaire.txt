@@ -40,7 +40,9 @@
 - 1101011
 - 1011101
 - 1101111
+- 111111
 + 1001101
+
 
 ** Quelles données ne sont pas binaires dans un ordinateur?
 + Non, toute donnée est binaire dans nos ordinateurs.
