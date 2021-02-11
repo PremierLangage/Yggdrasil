@@ -168,13 +168,18 @@ int main(int argc, char* argv[]){
   Tree t=NULL;
 char *code;
 int x;
+  print("toto\n");
   build_tree(&t);
+    print("toto\n");
    code=arbre_vers_code(t);
+     print("toto\n");
   fprintf(stderr,"%s\n",code) ;
-
+  print("toto\n");
  extraire_minimum(&t,&x);
+   print("toto\n");
   fprintf(stderr,"%d\n",x);
- ;
+    print("toto\n");
+ 
   return 0;
 }
 ==
