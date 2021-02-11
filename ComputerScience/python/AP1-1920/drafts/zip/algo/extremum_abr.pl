@@ -169,8 +169,9 @@ int main(int argc, char* argv[]){
 char *code;
 int x;
   exit(0);
+   printf("toto\n");
   build_tree(&t);
-    printf("toto\n");
+   
    code=arbre_vers_code(t);
      printf("toto\n");
   fprintf(stderr,"%s\n",code) ;
