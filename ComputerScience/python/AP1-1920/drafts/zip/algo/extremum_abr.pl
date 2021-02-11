@@ -177,7 +177,7 @@ int x;
   fprintf(stderr,"%s\n",code) ;
   printf("toto\n");
  extraire_minimum(&t,&x);
-   printf("toto\n");
+   printf("toto\n");exit(0);
   fprintf(stderr,"%d\n",x);
     printf("toto\n");
  
