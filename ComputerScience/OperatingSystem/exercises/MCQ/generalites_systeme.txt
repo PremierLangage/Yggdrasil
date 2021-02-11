@@ -5,7 +5,7 @@
 - Il recharge la pile des appels avec du courant alternatif.
 - Il permet de visualiser le débogage dans un Traceback Python.
 - Il détecte les erreurs de syntaxe dans un code source C.
-- Il est responsable de la détection des variables Python non utilisées afin de prévoir leur libération.
+- Il est responsable de la détection des variables Python non utilisées <br>afin de prévoir leur libération.
 + Il gère les entrées/sorties et les interactions avec le monde extérieur.
 + Il propose des interfaces de haut niveau avec les ressources matérielles.
 + Il cache les spécificités matérielles du hardware (avec des pilotes).
