@@ -135,7 +135,7 @@
 - Ça limite la latence lors des chargements (lags).
 + Ça permet de faire des programmes prenant en argument d'autres programmes.
 + Ça permet de considérer des programmes qui fabriquent d'autres programmes.
-+ Ça permet une montée en puissance des fonctionnalités via des niveaux d'abstraction : compilateur, bibliothèque bas-niveau, framework évolué, application haut niveau (différent langage et traduction d'un niveau à un autre).
++ Ça permet une montée en puissance des fonctionnalités via des niveaux <br >d'abstraction : compilateur, bibliothèque bas-niveau, framework évolué, <br>application haut niveau (différent langage et traduction d'un niveau à un autre).
 
 
 ** Quelles sont les caractéristiques d'une unité arithmétique et logique?
