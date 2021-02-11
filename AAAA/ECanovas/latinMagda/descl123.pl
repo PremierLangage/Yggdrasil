@@ -49,6 +49,8 @@ if nbq <= borneq:
 
  text, sol = question()
 else:
+  text=""
+  form=""
   if nbbr == nbq :
     grade = (100, f'<span class="success-state">BRAVO!tout est bon 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
   else:
