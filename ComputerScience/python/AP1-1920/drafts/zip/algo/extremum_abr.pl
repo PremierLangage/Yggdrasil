@@ -175,11 +175,12 @@ int x;
    code=arbre_vers_code(t);
     
   fprintf(stderr,"%s\n",code) ;
-  printf("toto\n");
+
  extraire_minimum(&t,&x);
    
-  fprintf(stderr,"%d\n",x);
-    printf("toto\n");
+   code=arbre_vers_code(t);
+    
+  fprintf(stderr,"%s\n",code) ;
  
   return 0;
 }
