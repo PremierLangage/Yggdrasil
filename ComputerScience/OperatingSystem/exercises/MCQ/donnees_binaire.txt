@@ -1,10 +1,11 @@
-** Parmi les données suivantes, lesquels sont en binaire dans un ordinateur?
+** Parmi les données suivantes, lesquelles sont en binaire dans un ordinateur?
 + Un fichier audio wav
 + Un fichier audio mp3
 + Une image jpeg
 + Une image png
 + Un entier négatif
 + Un entier positif
++ Une feuille de calcul Excel
 + Le texte intégral de Germinal dans un fichier texte
 + La position du pointeur de la souris
 
