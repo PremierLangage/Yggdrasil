@@ -118,7 +118,7 @@
 - Unix ne propose que des sessions graphiques.
 - Un seul utilisateur peut se loger à la fois.
 - Unix augmente les capacités des barrettes mémoires.
-- Le développement d'Unix est focalisé sur le user-friendly au détriment de la robustesse.
+- Le développement d'Unix est focalisé sur le user-friendly <br>au détriment de la robustesse.
 - Unix tente de cacher les bogues pour éviter la mauvaise pub.
 + Unix attribut des droits spécifiques à tous les fichiers ainsi qu'aux processus.
 + Ils sont multi-utilisateurs et multi-tâches.
