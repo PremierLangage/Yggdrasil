@@ -14,6 +14,11 @@ questions==
 -=[x for x in range(2,20) if x%2==0 ]
 
 
+=*+ Exo avec click sur un mot ici bonne est le bon mot 
+ Vous  pouvez en mettre plusieurs séparer vos mots par des espace 
+ si vous souhaiter mettre un espace ajouter des crochet autour des caractères en question   
+>j'indique avec des doubles curly brackets la {{bonne}} réponse
+
 ==
 
 
