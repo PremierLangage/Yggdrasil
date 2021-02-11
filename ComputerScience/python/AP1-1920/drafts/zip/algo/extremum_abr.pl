@@ -170,7 +170,7 @@ char *code;
 int x;
   build_tree(&t);
    code=arbre_vers_code(t);
-  fprintf(stderr,"%s/n",code) ;
+  fprintf(stderr,"%s\n",code) ;
 
  extraire_minimum(&t,&x);
   fprintf(stderr,"%d\n",x);
