@@ -128,7 +128,7 @@
 + La philosophie d'Unix est de proposer des programmes basiques mais robustes pouvant se combiner très facilement.
 
 
-** Quelles sont les conséquences de l'idée de Von Neumann de mélanger les données et les programmes dans la mémoire et de les considérer sur un pied d'égalité ?
+** Quelles sont les conséquences de l'idée de Von Neumann de mélanger les données et les programmes dans la mémoire et de les considérer sur un pied d'égalité?
 - Paf, ça fait des chocapics !
 - Ça permet de limiter l'énergie utilisée par la RAM.
 - Ça permet d'augmenter la cadence du CPU (overclocking).
