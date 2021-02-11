@@ -34,18 +34,18 @@ form==
 ==
 
 evaluator==
-nbq += 1
-
-if sol == inputbox.value:
-    nbbr += 1 
-    grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
-else:
-    grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {sol}  {nbbr}/{nbq} </span>')
 
 
 if nbq <= borneq:
  # réinitialisation des alea mais aussi des définitions , un impact sur l'exécution ?
  from gendec import question
+ nbq += 1
+
+ if sol == inputbox.value:
+    nbbr += 1 
+    grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
+ else:
+    grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {sol}  {nbbr}/{nbq} </span>')
 
  text, sol = question()
 else:
