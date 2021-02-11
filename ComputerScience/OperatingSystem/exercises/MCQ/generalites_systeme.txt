@@ -169,4 +169,3 @@
 + Aux états-unis, dans les laboratoire de AT&T.
 + Dans les têtes de Ken Thompson, Dennis Ritchie et Brian Kernighan.
 
-
