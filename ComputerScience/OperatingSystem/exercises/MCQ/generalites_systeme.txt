@@ -29,7 +29,7 @@
 + Bouger le pointeur de la souris à l'écran.
 + Éteindre le système avant une décharge complète d'une batterie Lithium <br>et donc sa détérioration.
 + Partager la puissance de calcul du processeur entre plusieurs programmes <br>exécutés en même temps.
-+ Demander de la mémoire pérenne supplémentaire dans un programme C (avec malloc).
++ Demander de la mémoire pérenne supplémentaire dans un programme C (malloc).
 
 
 ** Parmi les organes matériels qui suivent, lequel ou lesquels sont vitaux pour un ordinateur (un ordinateur ne pourrait ainsi pas fonctionner sans un de ces organes)?
