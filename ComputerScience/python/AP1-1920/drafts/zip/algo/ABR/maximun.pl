@@ -239,7 +239,7 @@ typedef struct node{
 
 editor.code==#|c|
 
-iint extraire_maximum(Tree *t,int *min){
+int extraire_maximum(Tree *t,int *min){
   Tree a,tmp;
   if(*t==NULL)
     return 0;
