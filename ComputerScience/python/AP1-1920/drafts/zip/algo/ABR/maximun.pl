@@ -239,22 +239,22 @@ typedef struct node{
 
 editor.code==#|c|
 
-int extraire_minimum(Tree *t,int *min){
+iint extraire_maximum(Tree *t,int *min){
   Tree a,tmp;
   if(*t==NULL)
     return 0;
   a=*t;
-  if(a->left==NULL){
+  if(a->right==NULL){
     *min=(*t)->value;
-    *t=(*t)->right;
+    *t=(*t)->left;
     free(a);
     return 1;
   }
-  while(a->left->left!=NULL)
-    a=a->left;
-  *min=a->left->value;
-  tmp=a->left;
-  a->left=a->left->right;
+  while(a->right->right!=NULL)
+    a=a->right;
+  *min=a->right->value;
+  tmp=a->right;
+  a->right=a->right->left;
   free(tmp);
   return 1;
 }
