@@ -219,13 +219,13 @@ checks_args_stdin==#|python|
 #extends=/ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
 extends=/ComputerScience/C/template/std_progC.pl
 #author=Marc Zipstein
-title=Extraire l'extremum dans un arbre binaire de recherche
+title=Extraire le maximum dans un arbre binaire de recherche
 tag=recherche
 
 editor.height=300px
 
 text== 
-Écrire une fonction C **extraire_minimum** qui extrait le minimumun d'un **arbre binaire de recherche**.
+Écrire une fonction C **extraire_maximum** qui extrait le maximumun d'un **arbre binaire de recherche**.
 La fonction renvoie 1 en cas d'extraction réussie et 0 sinon.La valeur extraite est transmise par adresse.
 
 On utilisera le type   
