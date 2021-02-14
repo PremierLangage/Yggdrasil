@@ -152,7 +152,7 @@ if look_code:
     note_eff = 50
 
 note_finale = (note_eff * note_tests) // 100
-best_grade = max([note_current, best_grade])
+best_grade = max([note_finale, best_grade])
 
 feedback_note = "<br>Note finale : "+str(best_grade)+"% <i>(Toute proposition confondue)</i><br>"
 feedback_note += "Note pour cette tentative : "+str(note_finale)+"% <br>"
@@ -161,9 +161,9 @@ feedback_note += "Partie efficacité : "+str(note_eff)+"% <br>"
 
 if 'megafeed' in response:
     look_code = True
-    grade = (note_current, feedback+feedback2)
+    grade = (note_finale, feedback_note+feedback+feedback2)
 else:
-    grade = (note_current, feedback)
+    grade = (note_finale, feedback_note+feedback)
 ==
 
 
