@@ -35,6 +35,8 @@ nb_attempt = 0
 
 title = Doctest me bro template...
 
+author = Nicolas Borie
+
 text==
 Vous devez écraser ce texte en héritant du template....
 ==
