@@ -29,7 +29,8 @@ La réponse attendue
 before==#|python|
 
 look_code = False
-
+best_grade = 0
+nb_attempt = 0
 ==
 
 title = Doctest me bro template...
@@ -133,25 +134,36 @@ for k in b_code_keys:
     feedback2 += '<br />' + out.replace('\n', '<br />') + '<br />'
 
 # last feedback recommandation : displayed at the top
+nb_attempt += 1
+note_eff = 50 + (200 // (3+nb_attempt))
+
 if g_with_fail > 0 :
     feedback = '<br><span class="error-state animated pulse infinite" style="padding: 1em;">Vos tests sont incohérents car il existe au moins une bonne réponse ne passant pas tous vos tests.</span><br /><br><br>' + feedback
-    note_finale = 0
+    note_tests = 0
 else:
     if b_with_no_fail > 0:
         feedback = '<br><span class="error-state animated pulse infinite" style="padding: 1em;">Il manque des tests car il existe au moins une mauvaise réponse passant tous vos tests.</span><br /><br><br>' + feedback
-        note_finale = (100*(len(b_code_keys) - b_with_no_fail)) // len(b_code_keys)
+        note_tests = (100*(len(b_code_keys) - b_with_no_fail)) // len(b_code_keys)
     else:
         feedback = '<br><span class="success-state animated pulse infinite" style="padding: 1em;">Bravo, vos tests discriminent correctement les bons et mauvais codes.</span><br /><br><br>' + feedback
-        note_finale = 100
+        note_tests = 100
 
 if look_code:
-    note_finale = note_finale // 2
+    note_eff = 50
+
+note_finale = (note_eff * note_tests) // 100
+best_grade = max([note_current, best_grade])
+
+feedback_note = "<br>Note finale : "+str(best_grade)+"% <i>(Toute proposition confondue)</i><br>"
+feedback_note += "Note pour cette tentative : "+str(note_finale)+"% <br>"
+feedback_note += "Partie tests : "+str(note_tests)+"% <br>"
+feedback_note += "Partie efficacité : "+str(note_eff)+"% <br>"
 
 if 'megafeed' in response:
     look_code = True
-    grade = (note_finale, feedback+feedback2)
+    grade = (note_current, feedback+feedback2)
 else:
-    grade = (note_finale, feedback)
+    grade = (note_current, feedback)
 ==
 
 
