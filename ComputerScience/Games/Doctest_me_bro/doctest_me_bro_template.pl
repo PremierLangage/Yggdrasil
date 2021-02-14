@@ -138,10 +138,10 @@ if g_with_fail > 0 :
     note_finale = 0
 else:
     if b_with_no_fail > 0:
-        feedback = '<span class="error-state animated pulse infinite">Il manque des tests car il existe au moins une mauvaise réponse passant tous vos tests.</span><br /><br />' + feedback
+        feedback = '<span class="error-state animated pulse infinite" style="padding: 1em;">Il manque des tests car il existe au moins une mauvaise réponse passant tous vos tests.</span><br /><br />' + feedback
         note_finale = (100*(len(b_code_keys) - b_with_no_fail)) // len(b_code_keys)
     else:
-        feedback = '<span class="success-state animated pulse infinite">Bravo, vos tests discriminent correctement les bons et mauvais codes.</span><br /><br />' + feedback
+        feedback = '<span class="success-state animated pulse infinite" style="padding: 1em;">Bravo, vos tests discriminent correctement les bons et mauvais codes.</span><br /><br />' + feedback
         note_finale = 100
 
 if look_code:
