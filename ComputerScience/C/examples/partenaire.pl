@@ -44,7 +44,7 @@ group.items.append({"id": R, "content": "Partenaire particulier du groupe Parten
 random.shuffle(group.items)
 ==
 
-title=Cette flûte va vous terminer...
+title=Flûte alors, il faudrait que ça marche !
 
 text==#|markdown|
 Entre deux exercices à propos du terminal Unix, un animal orchestre (un peu comme 
