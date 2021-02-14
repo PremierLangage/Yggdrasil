@@ -45,7 +45,7 @@ form==
 {{ editor|component }}
 
 <input type="checkbox" id="form_megafeed" name="form_megafeed" value="mega">
-<label for="form_megafeed"> Activer le méga-feedback (mode triche quand on en peut plus...)</label>
+<label for="form_megafeed"> Activer le méga-feedback (mode triche quand on en peut plus... Fait tomber la note d'efficacité à 50%)</label>
 ==
 
 style_add==
