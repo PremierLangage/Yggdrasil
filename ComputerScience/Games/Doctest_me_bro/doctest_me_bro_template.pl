@@ -153,13 +153,17 @@ if look_code:
     note_eff = 50
     feed_rmrq = ", méga-feedback activé"
 
+tent_rmrq = str(nb_attempt)+" Tentative"
+if nb_attempt > 1:
+    tent_rmrq = str(nb_attempt)+" Tentatives"
+
 note_finale = (note_eff * note_tests) // 100
 best_grade = max([note_finale, best_grade])
 
 feedback_note = "<u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toute proposition confondue)</i><br>"
 feedback_note += "Note pour cette tentative : "+str(note_finale)+"% <br>"
 feedback_note += "Partie tests : "+str(note_tests)+"% <br>"
-feedback_note += "Partie efficacité : "+str(note_eff)+"% ("+str(nb_attempt)+" Tentative(s)"+feed_rmrq+")<br><br>"
+feedback_note += "Partie efficacité : "+str(note_eff)+"% ("+tent_rmrq+feed_rmrq+")<br><br>"
 
 if 'megafeed' in response:
     look_code = True
