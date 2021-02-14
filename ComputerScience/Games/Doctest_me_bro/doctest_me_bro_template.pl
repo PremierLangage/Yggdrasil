@@ -148,8 +148,10 @@ else:
         feedback = '<br><span class="success-state animated pulse infinite" style="padding: 1em;">Bravo, vos tests discriminent correctement les bons et mauvais codes.</span><br /><br><br>' + feedback
         note_tests = 100
 
+feed_rmrq = ""
 if look_code:
     note_eff = 50
+    feed_rmrq = ", méga-feedback activé"
 
 note_finale = (note_eff * note_tests) // 100
 best_grade = max([note_finale, best_grade])
@@ -157,7 +159,7 @@ best_grade = max([note_finale, best_grade])
 feedback_note = "<br><u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toute proposition confondue)</i><br>"
 feedback_note += "Note pour cette tentative : "+str(note_finale)+"% <br>"
 feedback_note += "Partie tests : "+str(note_tests)+"% <br>"
-feedback_note += "Partie efficacité : "+str(note_eff)+"% ("+str(nb_attempt)+" Tentatives)<br>"
+feedback_note += "Partie efficacité : "+str(note_eff)+"% ("+str(nb_attempt)+" Tentative(s)"+feed_rmrq+")<br>"
 
 if 'megafeed' in response:
     look_code = True
