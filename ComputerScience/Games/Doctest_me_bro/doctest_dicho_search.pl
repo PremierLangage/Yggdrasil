@@ -18,15 +18,15 @@ title=Doctest challenge : recherche dichotomique
 
 extends=doctest_me_bro_template.pl
 
-text==
+text==#|markdown|
 Les élèves avaient la consigne suivante :   
 
 <div style="color:white; background-color: black; padding: 0.5em; border-radius: 0.5em;">
-Écrivez une fonction python <b>rechercheDicho</b> qui prend en argument une liste <b>L</b> (de manière croissante)  
-puis trois entiers <b>debut</b>, <b>fin</b> et <b>elem</b>. Votre fonction devra rechercher
-récursivement l'entier <b>elem</b> dans la liste triée <b>L</b> entre ses indices <b>debut</b> 
-et <b>fin</b> inclus. Si l'élément est trouvé, vous devrez retourner son indice, sinon votre 
-fonction devra retourner <b>-1</b>.
+Écrivez une fonction python <b>rechercheDicho</b> qui prend en argument une liste triée <b>L</b> 
+(de manière croissante) puis trois entiers <b>debut</b>, <b>fin</b> et <b>elem</b>. Votre fonction 
+devra rechercher récursivement l'entier <b>elem</b> dans la liste triée <b>L</b> entre ses 
+indices <b>debut</b> et <b>fin</b> inclus. Si l'élément est trouvé, vous devrez retourner son 
+indice, sinon votre fonction devra retourner <b>-1</b>.
 </div>
 
 Proposez des doctests Python pour detecter la validité et les erreurs 
