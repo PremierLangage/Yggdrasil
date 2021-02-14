@@ -47,14 +47,14 @@ form==
 
 style_add==
 <style>
-#cercle_vert {
+.cercle_vert {
     width: 1em;
     height: 1em;
     border-radius: 0.5em;
     background: #CCFFCC;
     border: 1px solid black;
 }
-#cercle_rouge {
+.cercle_rouge {
     width: 1em;
     height: 1em;
     border-radius: 0.5em;
