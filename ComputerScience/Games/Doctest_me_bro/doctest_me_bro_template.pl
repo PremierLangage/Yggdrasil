@@ -134,7 +134,7 @@ for k in b_code_keys:
 
 # last feedback recommandation : displayed at the top
 if g_with_fail > 0 :
-    feedback = '<span class="error-state animated pulse infinite" style="padding: 1em;">Vos tests sont incohérents car il existe au moins une bonne réponse ne passant pas tous vos tests.</span><br /><br />' + feedback
+    feedback = '<br><span class="error-state animated pulse infinite" style="padding: 1em;">Vos tests sont incohérents car il existe au moins une bonne réponse ne passant pas tous vos tests.</span><br /><br><br>' + feedback
     note_finale = 0
 else:
     if b_with_no_fail > 0:
