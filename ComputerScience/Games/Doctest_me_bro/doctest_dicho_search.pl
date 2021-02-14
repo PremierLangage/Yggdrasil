@@ -14,9 +14,13 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+tag=doctest|garantir|test|python|recherche
+
 title=Doctest challenge : recherche dichotomique
 
 extends=doctest_me_bro_template.pl
+
+author = Nicolas Borie
 
 text==#|markdown|
 Les élèves avaient la consigne suivante :   
