@@ -107,9 +107,9 @@ for k in g_code_keys:
     dt_res, out = nb_failled_test(k)
     if " 0 failed." not in dt_res:
         g_with_fail += 1
-        feedback += '<div id="cercle_rouge" style="display: inline-block"></div> '
+        feedback += '<div class="cercle_rouge" style="display: inline-block"></div> '
     else:
-        feedback += '<div id="cercle_vert" style="display: inline-block"></div> '
+        feedback += '<div class="cercle_vert" style="display: inline-block"></div> '
     feedback += '<div style="display: inline">' + dt_res + '</div>'
     feedback += "<br />"
     feedback2 += '<br />' + out.replace('\n', '<br />') + '<br />'
@@ -124,10 +124,10 @@ feedback += "<br /><u><b>"+str_b_c+" :</b></u> On veut du rouge!<br />"
 for k in b_code_keys:
     dt_res, out = nb_failled_test(k)
     if " 0 failed." not in dt_res:
-        feedback += '<div id="cercle_rouge" style="display: inline-block"></div> '
+        feedback += '<div class="cercle_rouge" style="display: inline-block"></div> '
     else:
         b_with_no_fail += 1
-        feedback += '<div id="cercle_vert" style="display: inline-block"></div> '
+        feedback += '<div class="cercle_vert" style="display: inline-block"></div> '
     feedback += '<div style="display: inline">' + dt_res + '</div>'
     feedback += "<br />"
     feedback2 += '<br />' + out.replace('\n', '<br />') + '<br />'
