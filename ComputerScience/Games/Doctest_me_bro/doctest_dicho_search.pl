@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-tag=doctest|garantir|test|python|recherche
+tag=doctest|garantir|test|python|recherche|liste
 
 title=Doctest challenge : recherche dichotomique
 
