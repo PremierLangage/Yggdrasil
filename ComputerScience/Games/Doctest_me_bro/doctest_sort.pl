@@ -20,7 +20,9 @@ title=Doctest challenge : tri d'une liste
 
 extends=doctest_me_bro_template.pl
 
-text==
+author = Nicolas Borie
+
+text==#|markdown|
 Les élèves avaient la consigne suivante :   
 
 <div style="color:white; background-color: black; padding: 0.5em; border-radius: 0.5em;">
