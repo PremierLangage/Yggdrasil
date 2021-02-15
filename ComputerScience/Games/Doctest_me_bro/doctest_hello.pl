@@ -36,7 +36,7 @@ potentielles des codes rendus par les élèves.
 ==
 
 good_code_1==#|python|
-def trois_max(L):
+def hello():
     """
     TEST_INCLUSION
     """
@@ -44,7 +44,7 @@ def trois_max(L):
 ==
 
 bad_code_1==#|python|
-def trois_max(L):
+def hello():
     """
     TEST_INCLUSION
     """
@@ -53,7 +53,7 @@ def trois_max(L):
 ==
 
 bad_code_2==#|python|
-def trois_max(L):
+def hello():
     """
     TEST_INCLUSION
     """
@@ -61,7 +61,7 @@ def trois_max(L):
 ==
 
 bad_code_3==#|python|
-def trois_max(L):
+def hello():
     """
     TEST_INCLUSION
     """
@@ -69,9 +69,17 @@ def trois_max(L):
 ==
 
 bad_code_4==#|python|
-def trois_max(L):
+def hello():
     """
     TEST_INCLUSION
     """
     print('hello world!')
+==
+
+bad_code_5==#|python|
+def hello(n):
+    """
+    TEST_INCLUSION
+    """
+    print('Hello World!')
 ==
