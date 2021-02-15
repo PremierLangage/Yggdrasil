@@ -4,15 +4,30 @@ text==
 
 ==
 
+inputbox1 =: Input
+inputbox2 =: Input
+inputbox3 =: Input
+inputbox4 =: Input
+inputbox5 =: Input
+inputbox6 =: Input
+inputbox7 =: Input
+inputbox8 =: Input
+inputbox9 =: Input
+inputbox10 =: Input
+inputbox11 =: Input
+inputbox12 =: Input
+
+
+
 form==
 <table>
 <th>cas</th><th>Singulier</th><th>Pluriel</th>
-<tr><td>nominatif</td><td>{{ inputbox|component}}</td><td>{{ inputbox|component}}</td></tr>
-<tr><td>vocatif</td><td>{{ inputbox|component}}</td><td>{{ inputbox|component}}</td></tr>
-<tr><td>accusatif</td><td>{{ inputbox|component}}</td><td>{{ inputbox|component}}</td></tr>
-<tr><td>génitif</td><td>{{ inputbox|component}}</td><td>{{ inputbox|component}}</td></tr>
-<tr><td>datif</td><td>{{ inputbox|component}}</td><td>{{ inputbox|component}}</td></tr>
-<tr><td>ablatif</td><td>{{ inputbox|component}}</td><td>{{ inputbox|component}}</td></tr>
+<tr><td>nominatif</td><td>{{ inputbox1|component}}</td><td>{{ inputbox7|component}}</td></tr>
+<tr><td>vocatif</td><td>{{ inputbox2|component}}</td><td>{{ inputbox8|component}}</td></tr>
+<tr><td>accusatif</td><td>{{ inputbox3component}}</td><td>{{ inputbox9|component}}</td></tr>
+<tr><td>génitif</td><td>{{ inputbox4|component}}</td><td>{{ inputbox10|component}}</td></tr>
+<tr><td>datif</td><td>{{ inputbox5|component}}</td><td>{{ inputbox11|component}}</td></tr>
+<tr><td>ablatif</td><td>{{ inputbox6|component}}</td><td>{{ inputbox12|component}}</td></tr>
 </table>
 ==
 
