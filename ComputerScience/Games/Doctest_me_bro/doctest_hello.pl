@@ -27,7 +27,7 @@ Les élèves avaient la consigne suivante :
 
 <div style="color:white; background-color: black; padding: 0.5em; border-radius: 0.5em;">
 Écrivez une fonction Python <b>hello</b> qui ne prend aucun argument et qui affiche 
-**Hello World!** sur la sortie standard (à l'écran) avant de retourner à la ligne. Votre
+<b>Hello World!</b> sur la sortie standard (à l'écran) avant de retourner à la ligne. Votre
 fonction ne devra retourner aucune valeur.
 </div>
 
