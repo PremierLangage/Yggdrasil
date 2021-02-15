@@ -1,26 +1,19 @@
 
 title= table
 text==
-|  cas     | Singulier | Pluriel |
-|----------|----------|----------|
-|nominatif|{{ inputbox|component}}|{{ inputbox|component}}|
-|vocatif|{{ inputbox|component}}|{{ inputbox|component}}|
-|accusatif|{{ inputbox|component}}|{{ inputbox|component}}|
-|génitif|{{ inputbox|component}}|{{ inputbox|component}}|
-|datif|{{ inputbox|component}}|{{ inputbox|component}}|
-|ablatif|{{ inputbox|component}}|{{ inputbox|component}}|
+
 ==
 
 form==
-|  cas     | Singulier | Pluriel |
-|----------|----------|----------|
-|nominatif|{{ inputbox|component}}|{{ inputbox|component}}|
-|vocatif|{{ inputbox|component}}|{{ inputbox|component}}|
-|accusatif|{{ inputbox|component}}|{{ inputbox|component}}|
-|génitif|{{ inputbox|component}}|{{ inputbox|component}}|
-|datif|{{ inputbox|component}}|{{ inputbox|component}}|
-|ablatif|{{ inputbox|component}}|{{ inputbox|component}}|
-
+<table>
+<th>cas</th><th>Singulier</th><th>Pluriel</th>
+<tr><td>nominatif</td><td>{{ inputbox|component}}</td><td>{{ inputbox|component}}</td></tr>
+<tr><td>vocatif</td><td>{{ inputbox|component}}</td><td>{{ inputbox|component}}</td></tr>
+<tr><td>accusatif</td><td>{{ inputbox|component}}</td><td>{{ inputbox|component}}</td></tr>
+<tr><td>génitif</td><td>{{ inputbox|component}}</td><td>{{ inputbox|component}}</td></tr>
+<tr><td>datif</td><td>{{ inputbox|component}}</td><td>{{ inputbox|component}}</td></tr>
+<tr><td>ablatif</td><td>{{ inputbox|component}}</td><td>{{ inputbox|component}}</td></tr>
+</table>
 ==
 
 title= Exos de latin  desclinaisons 1,2,3
