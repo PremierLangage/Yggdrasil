@@ -14,6 +14,8 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+tag=doctest|garantir|test|python|liste|tri
+
 title=Doctest challenge : tri d'une liste
 
 extends=doctest_me_bro_template.pl
