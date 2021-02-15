@@ -25,7 +25,7 @@ tag=recherche
 editor.height=300px
 
 text== 
-Écrire une fonction C **extraire_minimum** qui extrait le minimumun d'un **arbre binaire de recherche**.
+Écrire une fonction C **extraire_maximum** qui extrait le maximumun d'un **arbre binaire de recherche**.
 La fonction renvoie 1 en cas d'extraction réussie et 0 sinon.La valeur extraite est transmise par adresse.
 
 On utilisera le type   
@@ -39,22 +39,22 @@ typedef struct node{
 
 editor.code==#|c|
 
-int extraire_minimum(Tree *t,int *min){
+int extraire_maximum(Tree *t,int *min){
   Tree a,tmp;
   if(*t==NULL)
     return 0;
   a=*t;
-  if(a->left==NULL){
+  if(a->right==NULL){
     *min=(*t)->value;
-    *t=(*t)->right;
+    *t=(*t)->left;
     free(a);
     return 1;
   }
-  while(a->left->left!=NULL)
-    a=a->left;
+  while(a->right-right!=NULL)
+    a=a-right;
   *min=a->left->value;
-  tmp=a->left;
-  a->left=a->left->right;
+  tmp=a->right;
+  a->right=a->right->leftt;
   free(tmp);
   return 1;
 }
@@ -62,22 +62,23 @@ int extraire_minimum(Tree *t,int *min){
 ==
 
 solution==#|c|
-int extraire_minimum(Tree *t,int *min){
+
+int extraire_maximum(Tree *t,int *min){
   Tree a,tmp;
   if(*t==NULL)
     return 0;
   a=*t;
-  if(a->left==NULL){
+  if(a->right==NULL){
     *min=(*t)->value;
-    *t=(*t)->right;
+    *t=(*t)->left;
     free(a);
     return 1;
   }
-  while(a->left->left!=NULL)
-    a=a->left;
+  while(a->right-right!=NULL)
+    a=a-right;
   *min=a->left->value;
-  tmp=a->left;
-  a->left=a->left->right;
+  tmp=a->right;
+  a->right=a->right->leftt;
   free(tmp);
   return 1;
 }
@@ -175,7 +176,7 @@ int x;
     
   fprintf(stderr,"arbre avant %s\n",code) ;
 
- extraire_minimum(&t,&x);
+ extraire_maximum(&t,&x);
    
    code=arbre_vers_code(t);
     
