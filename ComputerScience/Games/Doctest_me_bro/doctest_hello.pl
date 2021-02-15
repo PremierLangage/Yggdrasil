@@ -65,7 +65,7 @@ def hello():
     """
     TEST_INCLUSION
     """
-    print('Hello World!', end="")
+    print('Hello World!', end="\n\n")
 ==
 
 bad_code_4==#|python|
