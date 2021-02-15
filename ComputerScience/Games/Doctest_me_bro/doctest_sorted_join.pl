@@ -30,7 +30,9 @@ Les élèves avaient la consigne suivante :
 d'entiers triées de manière croissante et qui retourne un nouvelle liste qui est la 
 fusion triée des deux listes en arguments. Ainsi la nouvelle liste retournée a pour 
 nombre d'élément la somme du nombre d'éléments des deux listes en entrée. Attention, 
-vous ne devez pas modifier les deux listes en argument.
+vous ne devez pas modifier les deux listes en argument. Votre fonction ne doit pas 
+vérifier que les listes en arguments sont correctement triées, ce sera bien toujours 
+le cas.
 </div>
 
 Proposez des doctests Python pour detecter la validité et les erreurs 
