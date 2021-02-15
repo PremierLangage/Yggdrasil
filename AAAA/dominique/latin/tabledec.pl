@@ -24,7 +24,7 @@ form==
 <th>cas</th><th>Singulier</th><th>Pluriel</th>
 <tr><td>nominatif</td><td>{{ inputbox1|component}}</td><td>{{ inputbox7|component}}</td></tr>
 <tr><td>vocatif</td><td>{{ inputbox2|component}}</td><td>{{ inputbox8|component}}</td></tr>
-<tr><td>accusatif</td><td>{{ inputbox3component}}</td><td>{{ inputbox9|component}}</td></tr>
+<tr><td>accusatif</td><td>{{ inputbox3 | component}}</td><td>{{ inputbox9|component}}</td></tr>
 <tr><td>génitif</td><td>{{ inputbox4|component}}</td><td>{{ inputbox10|component}}</td></tr>
 <tr><td>datif</td><td>{{ inputbox5|component}}</td><td>{{ inputbox11|component}}</td></tr>
 <tr><td>ablatif</td><td>{{ inputbox6|component}}</td><td>{{ inputbox12|component}}</td></tr>
