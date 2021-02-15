@@ -27,9 +27,9 @@ Les élèves avaient la consigne suivante :
 
 <div style="color:white; background-color: black; padding: 0.5em; border-radius: 0.5em;">
 Écrivez une fonction Python <b>fusion_ordonnee</b> qui prend en argument deux listes
-d'entiers triées de manière croissante et qui retourne un nouvelle liste qui est la 
+d'entiers triées de manière croissante et qui retourne une nouvelle liste qui est la 
 fusion triée des deux listes en arguments. Ainsi la nouvelle liste retournée a pour 
-nombre d'élément la somme du nombre d'éléments des deux listes en entrée. Attention, 
+nombre d'éléments la somme du nombre d'éléments des deux listes en entrée. Attention, 
 vous ne devez pas modifier les deux listes en argument. Votre fonction ne doit pas 
 vérifier que les listes en arguments sont correctement triées, ce sera bien toujours 
 le cas.
