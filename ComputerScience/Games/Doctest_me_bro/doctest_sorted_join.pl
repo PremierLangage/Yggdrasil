@@ -173,7 +173,7 @@ def fusion_ordonnee(l1, l2):
     ans = []
     i=0
     j=0
-    if l1 == []:  #pas bien, pas une nouvelle liste de retourner
+    if l1 == []:
         return l2 #pas bien, pas une nouvelle liste de retourner
     if l2 == []:
         return l1
