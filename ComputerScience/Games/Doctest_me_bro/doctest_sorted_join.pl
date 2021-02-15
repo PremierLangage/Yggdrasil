@@ -144,3 +144,21 @@ def fusion_ordonnee(l1, l2):
         j += 1
     return ans
 ==
+
+bad_code_5==#|python|
+def fusion_ordonnee(l1, l2):
+    """
+    TEST_INCLUSION
+    """
+    ans = []
+    i=0
+    j=0
+    while i<len(l1) and j<len(l2):
+        if l1[i] < l2[j]:
+            ans.append(l1[i])
+            i += 1
+        else:
+            ans.append(l2[j])
+            j += 1
+    return ans
+==
