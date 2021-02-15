@@ -14,9 +14,13 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=doctest_me_bro_template.pl
+tag=doctest|garantir|test|python|liste|médiane
 
 title=Doctest challenge : calcul de la médiane
+
+extends=doctest_me_bro_template.pl
+
+author = Nicolas Borie
 
 text==
 Les élèves avaient la consigne suivante :   
