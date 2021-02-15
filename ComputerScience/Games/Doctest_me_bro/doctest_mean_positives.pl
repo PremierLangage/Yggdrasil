@@ -14,16 +14,20 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+tag=doctest|garantir|test|python|liste|moyenne
+
 title=Doctest challenge : moyenne entière des positifs
 
 extends=doctest_me_bro_template.pl
+
+author = Nicolas Borie
 
 text==
 Les élèves avaient la consigne suivante :
 
 <div style="color:white; background-color: black; padding: 0.5em; border-radius: 0.5em;">
 Écrire une fonction Python <b>moyenneEntiere</b> qui prend en argument une liste 
-d'entiers et qui retourne la moyenne des éléments positifs de cette liste. La moyenne 
+d'entiers et qui retourne la moyenne des éléments positifs ou nuls de cette liste. La moyenne 
 retournée devra être un entier qui est la troncature entière de la moyenne mathématique réelle.
 </div>
 
