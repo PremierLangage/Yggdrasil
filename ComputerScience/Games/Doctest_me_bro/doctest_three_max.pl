@@ -26,7 +26,7 @@ text==#|markdown|
 Les élèves avaient la consigne suivante :   
 
 <div style="color:white; background-color: black; padding: 0.5em; border-radius: 0.5em;">
-Écrivez une fonction python <b>trois_max</b> qui prend en argument une liste de nombres 
+Écrivez une fonction Python <b>trois_max</b> qui prend en argument une liste de nombres 
 entiers et retourne un tuple des trois plus grandes valeurs dans la liste 
 (max, second max, troisième max). Si la liste est trop courte (deux éléments ou moins)
 remplacez petit à petit le troisième max puis le second max puis le max par la 
