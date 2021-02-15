@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-tag=doctest|garantir|test|python|liste|médiane
+tag=doctest|garantir|test|python|liste|max
 
 title=Doctest challenge : indice du dernier max parmi les positifs
 
