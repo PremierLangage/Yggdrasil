@@ -29,6 +29,7 @@ Les élèves avaient la consigne suivante :
 Écrire une fonction Python <b>moyenneEntiere</b> qui prend en argument une liste 
 d'entiers et qui retourne la moyenne des éléments positifs ou nuls de cette liste. La moyenne 
 retournée devra être un entier qui est la troncature entière de la moyenne mathématique réelle.
+Si la liste ne contient aucun élément positif ou nul, votre fonction devra retourner 0.
 </div>
 
 Proposez des doctests Python pour detecter la validité et les erreurs 
