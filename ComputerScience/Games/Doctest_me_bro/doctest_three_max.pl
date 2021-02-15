@@ -14,11 +14,15 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=doctest_me_bro_template.pl
+tag=doctest|garantir|test|python|liste|max
 
 title=Doctest challenge : les trois plus grands
 
-text==
+extends=doctest_me_bro_template.pl
+
+author = Nicolas Borie
+
+text==#|markdown|
 Les élèves avaient la consigne suivante :   
 
 <div style="color:white; background-color: black; padding: 0.5em; border-radius: 0.5em;">
