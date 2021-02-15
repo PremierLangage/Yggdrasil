@@ -50,11 +50,11 @@ int extraire_maximum(Tree *t,int *min){
     free(a);
     return 1;
   }
-  while(a->right-right!=NULL)
+  while(a->right->right!=NULL)
     a=a-right;
   *min=a->left->value;
   tmp=a->right;
-  a->right=a->right->leftt;
+  a->right=a->right->left;
   free(tmp);
   return 1;
 }
@@ -74,11 +74,11 @@ int extraire_maximum(Tree *t,int *min){
     free(a);
     return 1;
   }
-  while(a->right-right!=NULL)
+  while(a->right->right!=NULL)
     a=a-right;
   *min=a->left->value;
   tmp=a->right;
-  a->right=a->right->leftt;
+  a->right=a->right->left;
   free(tmp);
   return 1;
 }
