@@ -35,7 +35,7 @@ flotant Ptyhon.
 
 Proposez des doctests Python pour detecter la validité et les erreurs 
 potentielles des codes rendus par les élèves. Attention, la médiane n'est pas toujours 
-unique (notament pour certaines listes contenant un nombre pair d'éléments).
+unique (quand les listes contenient un nombre pair d'éléments).
 ==
 
 good_code_1==#|python|
