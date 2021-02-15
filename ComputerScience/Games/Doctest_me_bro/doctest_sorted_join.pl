@@ -29,9 +29,8 @@ Les élèves avaient la consigne suivante :
 Écrivez une fonction Python <b>fusion_ordonnee</b> qui prend en argument deux listes
 d'entiers triées de manière croissante et qui retourne un nouvelle liste qui est la 
 fusion triée des deux listes en arguments. Ainsi la nouvelle liste retournée a pour 
-nombre d'élément
-
-
+nombre d'élément la somme du nombre d'éléments des deux listes en entrée. Attention, 
+vous ne devez pas modifier les deux listes en argument.
 </div>
 
 Proposez des doctests Python pour detecter la validité et les erreurs 
@@ -43,7 +42,23 @@ def fusion_ordonnee(l1, l2):
     """
     TEST_INCLUSION
     """
-    return []
+    ans = []
+    i=0
+    j=0
+    while i<len(l1) and j<len(l2):
+        if l1[i] < l2[j]:
+            ans.append(l1[i])
+            i += 1
+        else:
+            ans.append(l2[j])
+            j += 1
+    while i<len(l1):
+        ans.append(l1[i])
+        i += 1
+    while j<len(l2):
+        ans.append(l2[j])
+        j += 1
+    return ans
 ==
 
 bad_code_1==#|python|
@@ -51,5 +66,39 @@ def fusion_ordonnee(l1, l2):
     """
     TEST_INCLUSION
     """
-    return []
+    ans = []
+    i=0
+    j=0
+    while i<len(l1) and j<len(l2):
+        if l1[i] < l2[j]:
+            ans.append(l1[i])
+            i += 1
+        else:
+            ans.append(l2[j])
+            j += 1
+    while i<len(l1):
+        ans.append(l1[i])
+        i += 1
+    return ans
+==
+
+bad_code_2==#|python|
+def fusion_ordonnee(l1, l2):
+    """
+    TEST_INCLUSION
+    """
+    ans = []
+    i=0
+    j=0
+    while i<len(l1) and j<len(l2):
+        if l1[i] < l2[j]:
+            ans.append(l1[i])
+            i += 1
+        else:
+            ans.append(l2[j])
+            j += 1
+    while j<len(l2):
+        ans.append(l2[j])
+        j += 1
+    return ans
 ==
