@@ -14,15 +14,19 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+tag=doctest|garantir|test|python|liste|médiane
+
 title=Doctest challenge : indice du dernier max parmi les positifs
 
 extends=doctest_me_bro_template.pl
 
-text==
+author = Nicolas Borie
+
+text==#|markdown|
 Les élèves avaient la consigne suivante :   
 
 <div style="color:white; background-color: black; padding: 0.5em; border-radius: 0.5em;">
-Écrivez une fonction python <b>lastMaxPositif</b> qui prend en argument une liste 
+Écrivez une fonction Python <b>lastMaxPositif</b> qui prend en argument une liste 
 d'entiers et qui retourne l'indice du maximum de la liste parmi les nombres positifs.
 Si le maximum est contenu plusieurs fois dans la liste, retournez l'index de la 
 dernière occurrence. Si la liste ne contient aucun nombre positif, retourner <b>-1</b>.
