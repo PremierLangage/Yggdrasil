@@ -49,7 +49,7 @@ int extraire(Tree *t,int val){
     return extraire(&((*t)->left),val);
   }
   if(a->value<val)
-  return  extraire'(&((*t)->right),val);
+  return  extraire(&((*t)->right),val);
   if(a->value!=val)
   return 0;
    if((*t)->left==NULL && (*t=->right==null){
@@ -86,7 +86,7 @@ int extraire(Tree *t,int val){
     return extraire(&((*t)->left),val);
   }
   if(a->value<val)
-  return  extraire'(&((*t)->right),val);
+  return  extraire(&((*t)->right),val);
   if(a->value!=val)
   return 0;
    if((*t)->left==NULL && (*t=->right==null){
