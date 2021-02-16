@@ -75,24 +75,39 @@ return 1;
 ==
 
 solution==#|c|
-int extraire_minimum(Tree *t,int *min){
-  Tree a,tmp;
+
+int extraire(Tree *t,int val){
+  Tree a;
+  int n;
   if(*t==NULL)
     return 0;
   a=*t;
-  if(a->left==NULL){
-    *min=(*t)->value;
+  if(a->value>val){
+    return extraire(&((*t)->left),val);
+  }
+  if(a->value<val)
+  return  extraire'(&((*t)->right),val);
+  if(a->value!=val)
+  return 0;
+   if((*t)->left==NULL && (*t=->right==null){
+    free(*t);
+    *t=NULL;return 1;
+    }
+  if((*t)->left==NULL){
+      a=*t;
     *t=(*t)->right;
     free(a);
     return 1;
-  }
-  while(a->left->left!=NULL)
-    a=a->left;
-  *min=a->left->value;
-  tmp=a->left;
-  a->left=a->left->right;
-  free(tmp);
-  return 1;
+    }   
+    if((*t)->right==NULL){
+         a=*t;
+    *t=(*t)->left;
+    free(a);
+    return 1;
+    }   
+extraire_minimum(&((*t)->right,&n);
+('*t)->value=nicolas;
+return 1;
 }
 
 
@@ -126,6 +141,26 @@ Node * allocate_node(int val){
 
 code_after==#|c|
 
+
+int extraire_minimum(Tree *t,int *min){
+  Tree a,tmp;
+  if(*t==NULL)
+    return 0;
+  a=*t;
+  if(a->left==NULL){
+    *min=(*t)->value;
+    *t=(*t)->right;
+    free(a);
+    return 1;
+  }
+  while(a->left->left!=NULL)
+    a=a->left;
+  *min=a->left->value;
+  tmp=a->left;
+  a->left=a->left->right;
+  free(tmp);
+  return 1;
+}
 
 int ajoute(Tree *t,int valeur){
   if (*t == NULL){
