@@ -213,8 +213,8 @@ char *arbre_vers_code(Tree t){
    
 int main(int argc, char* argv[]){
   Tree t=NULL;
-char *code;
-int x;
+  char *code;
+
 
 
   build_tree(&t);
