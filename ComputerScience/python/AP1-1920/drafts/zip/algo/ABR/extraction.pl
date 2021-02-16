@@ -69,7 +69,7 @@ int extraire(Tree *t,int val){
     return 1;
     }   
 extraire_minimum(&((*t)->right),&n);
-('*t)->value=n;
+(*t)->value=n;
 return 1;
 }
 ==
@@ -106,7 +106,7 @@ int extraire(Tree *t,int val){
     return 1;
     }   
 extraire_minimum(&((*t)->right),&n);
-('*t)->value=n;
+(*t)->value=n;
 return 1;
 }
 
