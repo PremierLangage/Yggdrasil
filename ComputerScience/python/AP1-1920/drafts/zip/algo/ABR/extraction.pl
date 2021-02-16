@@ -223,7 +223,7 @@ int x;
     
   fprintf(stderr,"arbre avant %s\n",code) ;
 
- extraire_minimum(&t,&x);
+ extraire(&t,4);
    
    code=arbre_vers_code(t);
     
