@@ -68,7 +68,7 @@ int extraire(Tree *t,int val){
     free(a);
     return 1;
     }   
-extraire_minimum(&((*t)->right,&n);
+extraire_minimum(&((*t)->right),&n);
 ('*t)->value=n;
 return 1;
 }
@@ -105,7 +105,7 @@ int extraire(Tree *t,int val){
     free(a);
     return 1;
     }   
-extraire_minimum(&((*t)->right,&n);
+extraire_minimum(&((*t)->right),&n);
 ('*t)->value=n;
 return 1;
 }
@@ -137,11 +137,6 @@ Node * allocate_node(int val){
   return n;
 }
 
-==
-
-code_after==#|c|
-
-
 int extraire_minimum(Tree *t,int *min){
   Tree a,tmp;
   if(*t==NULL)
@@ -161,6 +156,11 @@ int extraire_minimum(Tree *t,int *min){
   free(tmp);
   return 1;
 }
+
+==
+
+code_after==#|c|
+
 
 int ajoute(Tree *t,int valeur){
   if (*t == NULL){
