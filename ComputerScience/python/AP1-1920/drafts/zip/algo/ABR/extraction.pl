@@ -52,7 +52,7 @@ int extraire(Tree *t,int val){
   return  extraire(&((*t)->right),val);
   if(a->value!=val)
   return 0;
-   if((*t)->left==NULL && (*t=->right==null){
+   if((*t)->left==NULL && (*t)->right==NULL){
     free(*t);
     *t=NULL;return 1;
     }
@@ -69,7 +69,7 @@ int extraire(Tree *t,int val){
     return 1;
     }   
 extraire_minimum(&((*t)->right,&n);
-('*t)->value=nicolas;
+('*t)->value=n;
 return 1;
 }
 ==
@@ -89,7 +89,7 @@ int extraire(Tree *t,int val){
   return  extraire(&((*t)->right),val);
   if(a->value!=val)
   return 0;
-   if((*t)->left==NULL && (*t=->right==null){
+   if((*t)->left==NULL && (*t)->right==NULL){
     free(*t);
     *t=NULL;return 1;
     }
@@ -106,7 +106,7 @@ int extraire(Tree *t,int val){
     return 1;
     }   
 extraire_minimum(&((*t)->right,&n);
-('*t)->value=nicolas;
+('*t)->value=n;
 return 1;
 }
 
