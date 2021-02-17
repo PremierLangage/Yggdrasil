@@ -26,7 +26,7 @@ uneLigne=random.choice(listeBornesup)
 ==
 
 text==#|markdown|
-$%uneLigne%$
+{{uneLigne}}
 On considère la partie $%I = C2%$ de $%\mathbb{R}%$
 
 ==
