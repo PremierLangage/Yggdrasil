@@ -7,12 +7,14 @@ extends=/ComputerScience/C/examples/Stoi_le_caroussel.pl
 title= Borne Sup
 
 before ==
+import csv
+import random
+
 # Chargement du dictionnaire des Questions depuis un fichier csv
 with open("bornesupQ.csv", newline='') as csvfile:
      readerBornesupQ = csv.DictReader(csvfile)
 
 # Chargement du dictionnaire des données depuis un fichier csv
-import csv
 with open("bornesup.csv", newline='') as csvfile:
      readerBornesup = csv.DictReader(csvfile)
 ==
