@@ -26,15 +26,15 @@ nbQuestion=3
 nbbr=0
 
 question1="Quel est le sup de l'ensemble {{uneLigne['C1:type']}}"
-indication1=(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)
+indication1="(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)"
 breponse1=uneLigne['C5:sup']
 
 question2="Donner un majorant de l'ensemble {{uneLigne['C1:type']}}"
-indication1=(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)
+indication1="(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)"
 breponse2=uneLigne['C5:sup']
 
 question3="L'ensemble {{uneLigne['C1:type']}} a-t-il un plus grand élément ?"
-indication3=(On écrira le texte oui ou le texte non)
+indication3="(On écrira le texte oui ou le texte non)"
 if uneLigne['C5:sup'] ==' +':
  breponse3=oui
 else:
