@@ -46,9 +46,7 @@ text==#|markdown|
 
 <p>{{inviteSuite}}</p>
 ==
-form==
 
-==
 evaluator==#|python|
 if nbQuestion > 0 :
  # premiere question
