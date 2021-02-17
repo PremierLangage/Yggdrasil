@@ -30,7 +30,9 @@ def initDonnees():
         listeBornesup=list(csv.DictReader(csvfile, delimiter=';'))
     return random.choice(listeBornesup)
 
-def question(numero,uneLigne):
+def question(numero,uneLigne,flagD):
+  if flagD == init:
+    initDonnees()
   if numero == 1:    
     intiQuestion="Quel est le sup de l'ensemble {{uneLigne['C1:type']}}"
     indication="(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)"
