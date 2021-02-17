@@ -7,7 +7,6 @@ extends=/model/mathinput.pl
 
 title= Borne Sup
 
-@ bornesupQ.csv
 @ bornesup.csv
 
 before ==
