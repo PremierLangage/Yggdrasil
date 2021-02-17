@@ -10,7 +10,7 @@ title= Borne Sup
 
 before ==#|python|
 
-from genQuest import question
+from genQuest import question,initDonnees
 
 import csv
 import random
