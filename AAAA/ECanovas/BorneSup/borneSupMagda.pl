@@ -25,7 +25,7 @@ intituleQuestion, indicQuestion, bReponse = question(1,uneLigne)
 ==
 
 text==#|markdown|
-<p><strong>Question {{iQuestion}}</strong></p>
+<p><strong>Question {{iQuestion}} sur {{nbQuestion}}</strong></p>
 <p>{{intituleQuestion}} </p>
 ==
 form==
