@@ -22,6 +22,7 @@ uneLigne=random.choice(listeBornesup)
 
 # ENCHAINEMENT Exercice à 3 questions puis reboucle
 nbQuestion=3
+iQuestion=1
 # nombre de bonnes réponses
 nbbr=0
 
@@ -44,8 +45,8 @@ inviteSuite="Valider permet de répondre à la question {{nbQuestion-2}}"
 ==
 
 text==#|markdown|
-{{uneLigne}}
-<titre2>Question {{nbQuestion-2}}</titre2>
+
+<titre2>Question {{iQuestion}}</titre2>
 <p>Quel est le sup de l'ensemble {{uneLigne['C1:type']}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>
 
 <p>{{inviteSuite}}</p>
@@ -58,10 +59,10 @@ if nbQuestion > 0 :
  if nbQuestion==3:
    if bReponse3 == inputbox.value:
     nbbr += 1 
-    grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
+    grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>')
    else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse3}  {nbbr}/{nbQuestion} </span>')
-   text="<titre2>Question {{nbQuestion-2}}</titre2>
+   text="<titre2>Question {{iQuestion}}</titre2>
     <p>{{question2}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
 
 <p>{{inviteSuite}}</p>question2
@@ -73,7 +74,7 @@ if nbQuestion > 0 :
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
    else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse2}  {nbbr}/{nbQuestion} </span>')
-   text="<titre2>Question {{nbQuestion-2}}</titre2>
+   text="<titre2>Question {{iQuestion}}</titre2>
     <p>{{question3}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
 
  # premiere question
@@ -83,10 +84,11 @@ if nbQuestion > 0 :
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
    else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse1}  {nbbr}/{nbQuestion} </span>')
-   text="<titre2>Question {{nbQuestion-2}}</titre2>
+   text="<titre2>Question {{iQuestion}}</titre2>
     <p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
  # boucle sur les 3 questions
  nbQuestion -= 1
+ iQuestion += 1
  #text, sol = question()
 else:
   if nbbr == nbQuestion :
