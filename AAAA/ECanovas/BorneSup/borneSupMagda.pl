@@ -10,7 +10,7 @@ title= Borne Sup
 @ bornesup.csv
 
 before ==
-# import csv
+import csv
 # import random
 
 # Chargement du dictionnaire des Questions depuis un fichier csv
