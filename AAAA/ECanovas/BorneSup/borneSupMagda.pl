@@ -1,5 +1,5 @@
 
-extends=/model/basic.pl
+#extends=/model/basic.pl
 
 title= Borne Sup
 
