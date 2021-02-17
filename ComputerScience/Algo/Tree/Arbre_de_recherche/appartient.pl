@@ -55,8 +55,9 @@ if (t->value>val)
     return appartient(t->left,val) ;   
 if(t->value<val)
     return appartient(t->right,val);
-return 1
+return 1;
  }
+ 
 ==
 
 code_before==#|c|
