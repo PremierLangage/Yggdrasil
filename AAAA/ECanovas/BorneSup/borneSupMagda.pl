@@ -12,7 +12,7 @@ title= Borne Sup
 
 before ==
 import csv
-# import random
+import random
 
 # Chargement du dictionnaire des Questions depuis un fichier csv
 # with open("bornesupQ.csv",newline='') as csvfileQ:
@@ -20,13 +20,13 @@ import csv
 
 # Chargement du dictionnaire des données depuis un fichier csv
 with open("bornesup.csv", newline='') as csvfile:
-     readerBornesup = csv.DictReader(csvfile, delimiter=';')
-     for row in readerBornesup:
-        print(row['C1:type'])
+     listeBornesup = csv.DictReader(csvfile, delimiter=';')
+
+uneLigne=random.choice(listeBornesup)
 ==
 
 text==#|markdown|
-
+$%uneLigne%$
 On considère la partie $%I = C2%$ de $%\mathbb{R}%$
 
 ==
