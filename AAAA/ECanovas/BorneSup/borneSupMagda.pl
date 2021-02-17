@@ -4,6 +4,7 @@ extends=/model/mathinput.pl
 title= Borne Sup
 
 @ bornesup.csv
+@ genQuest.py
 
 before ==#|python|
 import csv
@@ -51,7 +52,7 @@ if nbQuestion > 0:
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>')
    else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse1} score {nbbr}/{nbQuestion} </span>')
-   text="#|markdown|<p><strong>Question {{iQuestion}}</strong></p><p>{{question2}} càd {{uneLigne['C2:Partie de $%R%$']}}</p> "
+   text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question2}} càd {{uneLigne['C2:Partie de $%R%$']}}</p> "
  # seconde question
  if nbQuestion==2:
    if bReponse2 == input.value:
@@ -59,7 +60,7 @@ if nbQuestion > 0:
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
    else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse2} score {nbbr}/{nbQuestion} </span>')
-   text="#|markdown|<p><strong>Question {{iQuestion}}</strong></p><p>{{question3}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
+   text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question3}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
 
  # premiere question
  if nbQuestion==1:
@@ -68,7 +69,7 @@ if nbQuestion > 0:
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
    else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse1} score {nbbr}/{nbQuestion} </span>')
-   text="#|markdown|<p><strong>Question {{iQuestion}}</strong></p><p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
+   text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
 
  # boucle sur les 3 questions
  nbQuestion -= 1
@@ -85,6 +86,6 @@ else:
   uneLigne=random.choice(listeBornesup)
   nbQuestion = 3
   iQuestion = 1
-  text="#|markdown|<p><strong>Question {{iQuestion}}</strong></p><p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
+  text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
 
 ==
