@@ -47,10 +47,11 @@ if nbQuestion > 0:
  # boucle sur les 3 questions
   nbQuestion -= 1
   iQuestion += 1
-  form="{{ input|component}}"
 
   intituleQuestion, indicQuestion, bReponse = question(2,uneLigne)
-  #text=intituleQuestion
+  text=intituleQuestion
+  form="{{ input|component}}"
+
 else:
   if nbbr == nbQuestion :
     grade = (100, f'<span class="success-state">BRAVO!tout est bon 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>')
