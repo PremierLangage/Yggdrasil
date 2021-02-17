@@ -49,8 +49,8 @@ if nbQuestion > 0:
   iQuestion += 1
 
   intituleQuestion, indicQuestion, bReponse = question(2,uneLigne)
-  text=f'<p><strong>Question {{iQuestion}}</strong></p>
-<p>{intituleQuestion}</p>'
+  text=f'<p><strong>Question {iQuestion}</strong></p>
+    <p>{intituleQuestion}</p>'
   #form="{{ input|component}}"
 
 else:
