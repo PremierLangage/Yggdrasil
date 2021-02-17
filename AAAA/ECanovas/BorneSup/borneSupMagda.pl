@@ -1,8 +1,5 @@
 
-#extends=/model/basic.pl
-@ /utils/sandboxio.py
-grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
+extends = /model/mathinput.pl
 
 title= Borne Sup
 
