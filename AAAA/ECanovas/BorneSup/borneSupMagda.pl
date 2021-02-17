@@ -9,13 +9,8 @@ before ==
 import csv
 import random
 
-# Chargement du dictionnaire des Questions depuis un fichier csv
-# with open("bornesupQ.csv",newline='') as csvfileQ:
-#     readerBornesupQ = csv.DictReader(csvfileQ)
-
 # Chargement du dictionnaire des données depuis un fichier csv
 with open("bornesup.csv", newline='') as csvfile:
-     #listeBornesup = csv.DictReader(csvfile, delimiter=';')
      listeBornesup=list(csv.DictReader(csvfile, delimiter=';'))
 
 uneLigne=random.choice(listeBornesup)
@@ -41,7 +36,7 @@ if uneLigne['C5:sup'] ==' +':
 else:
  breponse3="non"
 
-inviteSuite="Valider permet de répondre à la question {{nbQuestion-2}}"
+inviteSuite="Valider permet de répondre à la question {{iQuestion}}"
 ==
 
 text==#|markdown|
