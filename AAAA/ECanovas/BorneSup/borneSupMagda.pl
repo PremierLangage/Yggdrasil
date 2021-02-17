@@ -5,7 +5,7 @@ title= Borne Sup
 
 @ bornesup.csv
 
-before ==
+before ==#|python|
 import csv
 import random
 
@@ -49,7 +49,7 @@ text==#|markdown|
 form==
 {{inputbox|component}}
 ==
-evaluator==
+evaluator==#|python|
 if nbQuestion > 0 :
  # premiere question
  if nbQuestion==3:
