@@ -32,7 +32,7 @@ text==#|markdown|
 <p>{{intituleQuestion}} </p>
 ==
 form==
-{{ Input|component}}
+{{ input|component}}
 ==
 
 evaluator==
