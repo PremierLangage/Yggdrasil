@@ -20,7 +20,7 @@
 #extends=/ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
 extends=/ComputerScience/C/template/std_progC.pl
 #author=Marc Zipstein
-title=ERechercher dans un arbre binaire de recherche
+title=Rechercher dans un arbre binaire de recherche
 tag=recherche
 
 editor.height=300px
@@ -40,7 +40,7 @@ typedef struct node{
 
 editor.code==#|c|
 
-int appartient(Tree *t,int val){
+int appartient(Tree t,int val){
  
 }
 
@@ -122,6 +122,6 @@ checks_args_stdin==#|python|
  ["Peigne gauche", [], "12 10 9  4 8 7 0"],
  ["Peigne droit", [], "7 8 9 10 12 55"],
  ["Arbre aléatoire ", [],choice (["42 22 52 5 66 70","1 2 3 1 7 42 12"])],
-  ["Arbre aléatoire II", []," ".join([ str(randint(1,100)) for i in range(10) ])+"4']
+  ["Arbre aléatoire II", []," ".join([ str(randint(1,100)) for i in range(10) ])+"4"]
 ]
 ==
