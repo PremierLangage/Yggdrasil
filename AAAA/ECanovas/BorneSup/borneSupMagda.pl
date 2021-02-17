@@ -43,7 +43,7 @@ nbbr=0
 # bReponse3="oui"
 #else:
 # bReponse3="non"
-intituleQuestion, bReponse = question(1,uneLigne)
+intituleQuestion, indicQuestion, bReponse = question(1,uneLigne)
 ==
 
 text==#|markdown|
