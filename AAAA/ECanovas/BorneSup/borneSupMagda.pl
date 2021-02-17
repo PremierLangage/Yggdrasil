@@ -36,9 +36,9 @@ breponse2=uneLigne['C5:sup']
 question3="L'ensemble {{uneLigne['C1:type']}} a-t-il un plus grand élément ?"
 indication3="(On écrira le texte oui ou le texte non)"
 if uneLigne['C5:sup'] ==' +':
- breponse3=oui
+ breponse3="oui"
 else:
- breponse3=non
+ breponse3="non"
 
 inviteSuite="Valider permet de répondre à la question {{nbQuestion-2}}"
 ==
