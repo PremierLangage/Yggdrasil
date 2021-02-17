@@ -53,7 +53,6 @@ if nbQuestion > 0:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse3}  {nbbr}/{nbQuestion} </span>')
    text="<p><strong>Question {{iQuestion}}</strong></p> \
     <p>{{question2}} càd {{uneLigne['C2:Partie de $%R%$']}}</p> "
- in
  # seconde question
  if nbQuestion==2:
    if bReponse2 == inputbox.value:
