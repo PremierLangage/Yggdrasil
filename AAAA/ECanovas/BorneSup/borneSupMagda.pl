@@ -61,6 +61,11 @@ if nbQuestion > 0 :
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
    else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse3}  {nbbr}/{nbQuestion} </span>')
+   text="<titre2>Question {{nbQuestion-2}}</titre2>
+    <p>{{question2}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
+
+<p>{{inviteSuite}}</p>question2
+ in
  # seconde question
  if nbQuestion==2:
    if bReponse2 == inputbox.value:
@@ -68,6 +73,9 @@ if nbQuestion > 0 :
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
    else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse2}  {nbbr}/{nbQuestion} </span>')
+   text="<titre2>Question {{nbQuestion-2}}</titre2>
+    <p>{{question3}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
+
  # premiere question
  if nbQuestion==1:
    if bReponse1 == inputbox.value:
@@ -75,16 +83,20 @@ if nbQuestion > 0 :
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
    else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse1}  {nbbr}/{nbQuestion} </span>')
+   text="<titre2>Question {{nbQuestion-2}}</titre2>
+    <p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
+ # boucle sur les 3 questions
  nbQuestion -= 1
-  text, sol = question()
+ #text, sol = question()
 else:
-  # réinitialisation des alea mais aussi des définitions , un impact sur l'exécution ?
+  if nbbr == nbQuestion :
+    grade = (100, f'<span class="success-state">BRAVO!tout est bon 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>')
+  else:
+    grade = (-nbbr/nbq, f'<span class="error-state">Quelques bonnes réponses tout de même ?? = {nbbr}/{nbQuestion} </span>')
+
+  # réinitialisation des alea mais aussi des définitions
   uneLigne=random.choice(listeBornesup)
   nbQuestion = 3
   text=""
   form=""
-  if nbbr == nbq :
-    grade = (100, f'<span class="success-state">BRAVO!tout est bon 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
-  else:
-    grade = (-nbbr/nbq, f'<span class="error-state">Quelques bonnes réponses tout de même? = {nbbr}/{nbq} </span>')
 ==
