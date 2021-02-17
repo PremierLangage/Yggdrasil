@@ -54,44 +54,19 @@ text==#|markdown|
 
 evaluator==#|python|
 if nbQuestion > 0:
- # premiere question
- #if nbQuestion==3:
- #  if bReponse1 == input.value:
- #   nbbr += 1 
- #   grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>')
- #  else:
- #   grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse1} score {nbbr}/{nbQuestion} </span>')
- #  text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question2}} càd {{uneLigne['C2:Partie de $%R%$']}}</p> "
- # seconde question
- #if nbQuestion==2:
- #  if bReponse2 == input.value:
- #   nbbr += 1 
- #   grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
- #  else:
- #   grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse2} score {nbbr}/{nbQuestion} </span>')
- #  text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question3}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
 
- # premiere question
- #if nbQuestion==1:
- #  if bReponse3 == input.value:
- #   nbbr += 1 
- #   grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
- #  else:
- #   grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse1} score {nbbr}/{nbQuestion} </span>')
- #  text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
-
- if bReponse == input.value:
+  if bReponse == input.value:
     nbbr += 1 
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
-   else:
+  else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse1} score {nbbr}/{nbQuestion} </span>')
-   text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
+    text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
  
  # boucle sur les 3 questions
- nbQuestion -= 1
- iQuestion += 1
- form="{{ input|component}}"
- text, indicQuestion, bReponse = question()
+  nbQuestion -= 1
+  iQuestion += 1
+  form="{{ input|component}}"
+  text, indicQuestion, bReponse = question()
 else:
   if nbbr == nbQuestion :
     grade = (100, f'<span class="success-state">BRAVO!tout est bon 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>')
