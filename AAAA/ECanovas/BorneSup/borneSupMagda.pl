@@ -35,20 +35,15 @@ if uneLigne['C5:sup'] ==' +':
  breponse3="oui"
 else:
  breponse3="non"
-
-inviteSuite="Valider permet de répondre à la question {{iQuestion}}"
 ==
 
 text==#|markdown|
-
 <p><strong>Question {{iQuestion}}</strong></p>
 <p>Quel est le sup de l'ensemble {{uneLigne['C1:type']}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>
-
-<p>{{inviteSuite}}</p>
 ==
 
 evaluator==#|python|
-if nbQuestion > 0 :
+if nbQuestion > 0:
  # premiere question
  if nbQuestion==3:
    if bReponse3 == inputbox.value:
