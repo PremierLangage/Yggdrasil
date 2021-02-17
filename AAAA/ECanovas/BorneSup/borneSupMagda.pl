@@ -46,13 +46,12 @@ evaluator==#|python|
 if nbQuestion > 0:
  # premiere question
  if nbQuestion==3:
-   if bReponse3 == input.value:
+   if bReponse1 == input.value:
     nbbr += 1 
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>')
    else:
-    grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse3}  {nbbr}/{nbQuestion} </span>')
-   text="<p><strong>Question {{iQuestion}}</strong></p> \
-    <p>{{question2}} càd {{uneLigne['C2:Partie de $%R%$']}}</p> "
+    grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse1}  {nbbr}/{nbQuestion} </span>')
+   text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question2}} càd {{uneLigne['C2:Partie de $%R%$']}}</p> "
  # seconde question
  if nbQuestion==2:
    if bReponse2 == input.value:
@@ -60,18 +59,17 @@ if nbQuestion > 0:
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
    else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse2}  {nbbr}/{nbQuestion} </span>')
-   text="<p><strong>Question {{iQuestion}}</strong></p> \
-    <p>{{question3}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
+   text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question3}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
 
  # premiere question
  if nbQuestion==1:
-   if bReponse1 == input.value:
+   if bReponse3 == input.value:
     nbbr += 1 
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
    else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse1}  {nbbr}/{nbQuestion} </span>')
-   text="<p><strong>Question {{iQuestion}}</strong></p> \
-    <p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
+   text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
+
  # boucle sur les 3 questions
  nbQuestion -= 1
  iQuestion += 1
