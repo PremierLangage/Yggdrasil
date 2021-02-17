@@ -6,6 +6,12 @@ title= Borne Sup
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
+inputbox =: Input
+inputbox.type = text
+inputbox.placeholder = Answer
+inputbox.appearance = outline
+
+
 form==
 {{ inputbox|component}}
 ==
