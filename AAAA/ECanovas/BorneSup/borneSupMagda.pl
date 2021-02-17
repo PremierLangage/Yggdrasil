@@ -65,6 +65,7 @@ if nbQuestion > 0:
   nbQuestion -= 1
   iQuestion += 1
   #form="{{ input|component}}"
+  
   intituleQuestion, indicQuestion, bReponse = question(2,uneLigne)
   text=intituleQuestion
 else:
