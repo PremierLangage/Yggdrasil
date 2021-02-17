@@ -21,7 +21,7 @@ before ==
 with open("bornesup.csv", newline='') as csvfile:
      readerBornesup = csv.DictReader(csvfile, delimiter=';')
      for row in readerBornesup:
-        print(row)
+        print(row['C1'])
 ==
 
 text==#|markdown|
