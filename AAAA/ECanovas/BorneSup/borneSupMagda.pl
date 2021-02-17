@@ -73,7 +73,7 @@ if nbQuestion > 0:
  # boucle sur les 3 questions
  nbQuestion -= 1
  iQuestion += 1
- form="{{ inputbox|component}}"
+ form="{{ input|component}}"
  #text, sol = question()
 else:
   if nbbr == nbQuestion :
