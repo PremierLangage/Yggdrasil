@@ -29,26 +29,12 @@ iQuestion=1
 # nombre de bonnes réponses
 nbbr=0
 
-#question1="Quel est le sup de l'ensemble {{uneLigne['C1:type']}}"
-#indication1="(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)"
-#bReponse1=uneLigne['C5:sup']
-
-#question2="Donner un majorant de l'ensemble {{uneLigne['C1:type']}}"
-#indication2="(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)"
-#bReponse2=uneLigne['C5:sup']
-
-#question3="L'ensemble {{uneLigne['C1:type']}} a-t-il un plus grand élément ?"
-#indication3="(On écrira le texte oui ou le texte non)"
-#if uneLigne['C5:sup'] ==' +':
-# bReponse3="oui"
-#else:
-# bReponse3="non"
 intituleQuestion, indicQuestion, bReponse = question(1,uneLigne)
+
 ==
 
 text==#|markdown|
 <p><strong>Question {{iQuestion}}</strong></p>
-<p>Quel est le sup de l'ensemble {{uneLigne['C1:type']}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>
 <p>{{intituleQuestion}} </p>
 ==
 
@@ -65,7 +51,7 @@ if nbQuestion > 0:
   nbQuestion -= 1
   iQuestion += 1
   #form="{{ input|component}}"
-  
+
   intituleQuestion, indicQuestion, bReponse = question(2,uneLigne)
   text=intituleQuestion
 else:
