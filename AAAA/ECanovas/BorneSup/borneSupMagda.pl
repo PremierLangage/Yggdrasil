@@ -28,9 +28,9 @@ text==#|markdown|
 <p><strong>Question {{iQuestion}} sur {{nbQuestion}}</strong></p>
 <p>{{intituleQuestion}} </p>
 ==
-#form==
-#{{ input|component}}
-#==
+form==
+{{ basic|component}}
+==
 
 evaluator==
 
