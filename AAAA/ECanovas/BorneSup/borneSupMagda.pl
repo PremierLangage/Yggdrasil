@@ -1,20 +1,7 @@
 
-# extends=/model/mathinput.pl
+extends=/model/mathinput.pl
 
 title= Borne Sup
-
-@ /utils/sandboxio.py
-grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
-inputbox =: Input
-inputbox.type = text
-inputbox.placeholder = Answer
-inputbox.appearance = outline
-
-
-form==
-{{ inputbox|component}}
-==
 
 @ bornesup.csv
 
@@ -59,7 +46,7 @@ evaluator==#|python|
 if nbQuestion > 0:
  # premiere question
  if nbQuestion==3:
-   if bReponse1 == inputbox.value:
+   if bReponse1 == input.value:
     nbbr += 1 
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>')
    else:
@@ -67,7 +54,7 @@ if nbQuestion > 0:
    text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question2}} càd {{uneLigne['C2:Partie de $%R%$']}}</p> "
  # seconde question
  if nbQuestion==2:
-   if bReponse2 == inputbox.value:
+   if bReponse2 == input.value:
     nbbr += 1 
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
    else:
@@ -76,7 +63,7 @@ if nbQuestion > 0:
 
  # premiere question
  if nbQuestion==1:
-   if bReponse3 == inputbox.value:
+   if bReponse3 == input.value:
     nbbr += 1 
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
    else:
