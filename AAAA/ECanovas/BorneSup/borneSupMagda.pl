@@ -6,9 +6,12 @@ title= Borne Sup
 @ bornesup.csv
 @ genQuest.py
 
-from genQuest import question
+
 
 before ==#|python|
+
+from genQuest import question
+
 import csv
 import random
 
