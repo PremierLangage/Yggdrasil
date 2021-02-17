@@ -50,7 +50,7 @@ if nbQuestion > 0:
 
   intituleQuestion, indicQuestion, bReponse = question(2,uneLigne)
   text=intituleQuestion
-  form="{{ input|component}}"
+  #form="{{ input|component}}"
 
 else:
   if nbbr == nbQuestion :
@@ -63,7 +63,7 @@ else:
   uneLigne=initDonnees()
   nbQuestion = 3
   iQuestion = 1
-  #text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
+  
   intituleQuestion, indicQuestion, bReponse = question(3,uneLigne)
   text=intituleQuestion
 ==
