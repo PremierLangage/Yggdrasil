@@ -8,6 +8,7 @@ title= Borne Sup
 
 @ bornesupQ.csv
 @ bornesup.csv
+
 before ==
 import csv
 import random
@@ -17,7 +18,7 @@ import random
 #     readerBornesupQ = csv.DictReader(csvfile)
 
 # Chargement du dictionnaire des données depuis un fichier csv
-with open("bornesup.csv", newline='') as csvfile:
+with open("bornesup.csv",Dialect.delimiter=';', newline='') as csvfile:
      readerBornesup = csv.DictReader(csvfile)
 ==
 
