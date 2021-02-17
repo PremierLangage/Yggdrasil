@@ -99,9 +99,10 @@ else:
     grade = (nbbr/nbq, f'<span class="error-state">Quelques bonnes réponses tout de même ?? = {nbbr}/{nbQuestion} </span>')
 
   # réinitialisation des alea mais aussi des définitions
-  uneLigne=random.choice(listeBornesup)
+  from genQuest import initDonnees,question
+  uneLigne=initDonnees()
   nbQuestion = 3
   iQuestion = 1
-  text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
-
+  #text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
+  text, indicQuestion, bReponse = question()
 ==
