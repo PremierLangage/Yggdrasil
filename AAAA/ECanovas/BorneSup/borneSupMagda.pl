@@ -1,5 +1,5 @@
 
-extends=/model/mathinput.pl
+extends=/model/basic.pl
 
 title= Borne Sup
 
