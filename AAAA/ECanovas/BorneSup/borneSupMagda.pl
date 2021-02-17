@@ -2,7 +2,8 @@
 
 # template Tout nouveau malheureusement... feedback pas encore programmé...
 # from @magdalena bornesup1.pl
-extends=/ComputerScience/C/examples/Stoi_le_caroussel.pl
+# extends=/ComputerScience/C/examples/Stoi_le_caroussel.pl
+extends=/model/mathinput.pl
 
 title= Borne Sup
 
