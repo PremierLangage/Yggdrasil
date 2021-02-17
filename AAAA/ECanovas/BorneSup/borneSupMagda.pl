@@ -10,11 +10,11 @@ title= Borne Sup
 @ bornesup.csv
 
 before ==
-import csv
-import random
+# import csv
+# import random
 
 # Chargement du dictionnaire des Questions depuis un fichier csv
-#with open("bornesupQ.csv",newline='') as csvfileQ:
+# with open("bornesupQ.csv",newline='') as csvfileQ:
 #     readerBornesupQ = csv.DictReader(csvfileQ)
 
 # Chargement du dictionnaire des données depuis un fichier csv
