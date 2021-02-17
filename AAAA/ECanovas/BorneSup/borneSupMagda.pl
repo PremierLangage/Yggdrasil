@@ -42,7 +42,7 @@ if iQuestion <= nbQuestion:
     nbbr += 1 
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>')
   else:
-    grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse} score {nbbr}/{nbQuestion} </span>')
+    grade = (1, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse} score {nbbr}/{nbQuestion} </span>')
  
   # boucle sur les 3 questions
   iQuestion += 1
