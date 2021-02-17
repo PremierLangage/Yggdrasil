@@ -8,7 +8,7 @@ title= Borne Sup
 
 before ==
 # Chargement du dictionnaire des Questions depuis un fichier csv
-with open('bornesupQ.csv', newline='') as csvfile:
+with open('AAAA/ECanovas/BorneSup/bornesupQ.csv', newline='') as csvfile:
      readerBornesupQ = csv.DictReader(csvfile)
 
 # Chargement du dictionnaire des données depuis un fichier csv
