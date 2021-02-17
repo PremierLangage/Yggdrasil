@@ -1,5 +1,5 @@
 
-#extends=/model/basic.pl
+extends=/model/basic.pl
 
 title= Borne Sup
 
@@ -28,9 +28,9 @@ text==#|markdown|
 <p><strong>Question {{iQuestion}} sur {{nbQuestion}}</strong></p>
 <p>{{intituleQuestion}} </p>
 ==
-form==
-{{ input|component}}
-==
+#form==
+#{{ input|component}}
+#==
 
 evaluator==
 
