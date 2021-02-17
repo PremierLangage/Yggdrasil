@@ -52,7 +52,7 @@ if iQuestion > nbQuestion:
   #form="{{ input|component}}"
 
 else:
-  if nbbr == nbQuestion :
+  if nbbr == nbQuestion:
     grade = (100, f'<span class="success-state">BRAVO!tout est bon 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>')
   else:
     grade = (nbbr/nbQuestion, f'<span class="error-state">Quelques bonnes réponses tout de même ?? = {nbbr}/{nbQuestion} </span>')
