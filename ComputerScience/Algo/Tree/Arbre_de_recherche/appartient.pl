@@ -52,9 +52,9 @@ int appartient(Tree t,int val){
 if(t== NULL)
     return 0;
 if (t->value>val)
-    return appartient(t->left,val)    
+    return appartient(t->left,val) ;   
 if(t->value<val)
-    return appartient(t->right,val)
+    return appartient(t->right,val);
 return 1
  }
 ==
@@ -86,6 +86,20 @@ Node * allocate_node(int val){
 
 code_after==#|c|
 
+int ajoute(Tree *t,int valeur){
+  if (*t == NULL){
+    if ((*t=allocate_node(valeur))==NULL)
+     return 0;
+    return 1;
+  }
+  if ((*t)->value >valeur)
+    return ajoute(&((*t)->left),valeur);
+  if ((*t)->value <valeur)
+   return ajoute(&((*t)->right),valeur);
+
+  return 1;
+} 
+
 int build_tree(Tree* t){
     int val;
    
@@ -101,7 +115,7 @@ int build_tree(Tree* t){
 
 int main(int argc, char* argv[]){
   Tree t=NULL;
-char *code;
+
 
   build_tree(&t);
   if(appartient(t,4))
