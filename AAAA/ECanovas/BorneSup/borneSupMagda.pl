@@ -10,16 +10,8 @@ title= Borne Sup
 
 before ==#|python|
 
-from genQuest import question,initDonnees
-
-#import csv
-#import random
-
-# Chargement du dictionnaire des données depuis un fichier csv
-#with open("bornesup.csv", newline='') as csvfile:
-#     listeBornesup=list(csv.DictReader(csvfile, delimiter=';'))
-
-#uneLigne=random.choice(listeBornesup)
+from genQuest import initDonnees
+from genQuest import question
 
 uneLigne=initDonnees()
 
