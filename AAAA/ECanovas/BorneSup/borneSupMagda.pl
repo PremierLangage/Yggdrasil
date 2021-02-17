@@ -23,20 +23,17 @@ uneLigne=random.choice(listeBornesup)
 # ENCHAINEMENT Exercice à 3 questions puis reboucle
 nbQuestion=3
 
-question1="Quel est le sup de l'ensemble"
+question1="Quel est le sup de l'ensemble {{uneLigne['C1:type']}}"
 indication1=(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)
 breponse1=uneLigne['C5:sup']
 
-question2="Donner un majorant de l'ensemble C1"
+question2="Donner un majorant de l'ensemble {{uneLigne['C1:type']}}"
 indication1=(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)
-bonne réponse si a >= sup
 breponse2=uneLigne['C5:sup']
 
-question3="L'ensemble C1 a-t-il un plus grand élément ?"
+question3="L'ensemble {{uneLigne['C1:type']}} a-t-il un plus grand élément ?"
 indication3=(On écrira le texte oui ou le texte non)
-oui/non
-bonne réponse oui si +
-if uneLigne['C5:sup'] =='+':
+if uneLigne['C5:sup'] ==' +':
  breponse3=oui
 else:
  breponse3=non
@@ -46,7 +43,7 @@ inviteSuite="Valider permet de répondre à la question {{nbQuestion-2}}"
 
 text==#|markdown|
 {{uneLigne}}
-
+<titre2>Question {{nbQuestion-2}}</titre2>
 <p>Quel est le sup de l'ensemble {{uneLigne['C1:type']}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>
 
 <p>{{inviteSuite}}</p>
