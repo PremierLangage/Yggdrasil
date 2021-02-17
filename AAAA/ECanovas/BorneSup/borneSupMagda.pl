@@ -31,6 +31,9 @@ text==#|markdown|
 ==
 
 evaluator==#|python|
+from genQuest import initDonnees
+from genQuest import question
+
 if nbQuestion > 0:
 
   if bReponse == input.value:
