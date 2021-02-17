@@ -79,7 +79,7 @@ else:
   if nbbr == nbQuestion :
     grade = (100, f'<span class="success-state">BRAVO!tout est bon 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>')
   else:
-    grade = (-nbbr/nbq, f'<span class="error-state">Quelques bonnes réponses tout de même ?? = {nbbr}/{nbQuestion} </span>')
+    grade = (nbbr/nbq, f'<span class="error-state">Quelques bonnes réponses tout de même ?? = {nbbr}/{nbQuestion} </span>')
 
   # réinitialisation des alea mais aussi des définitions
   uneLigne=random.choice(listeBornesup)
