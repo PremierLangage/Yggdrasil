@@ -34,8 +34,12 @@ def question(numero,uneLigne):
 
   if numero == 1:
     intiQuestion="Quel est le sup de l'ensemble {{uneLigne['C1:type']}} {{uneLigne['C2:Partie de $%R%$']}} "
-    indication="(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)"
+    indication="(On écrira +oo si l'ensemble n'est pas majoré et -oo si l'ensemble est vide)"
     bReponse=uneLigne['C5:sup']
+    if uneLigne['C5:sup'] ==' +':
+     bReponse="+oo"
+    else:
+     bReponse="-oo"
   if numero == 2:
     intiQuestion="Donner un majorant de l'ensemble {{uneLigne['C1:type']}} {{uneLigne['C2:Partie de $%R%$']}}"
     indication="(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)"
