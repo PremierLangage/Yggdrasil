@@ -22,6 +22,8 @@ uneLigne=random.choice(listeBornesup)
 
 # ENCHAINEMENT Exercice à 3 questions puis reboucle
 nbQuestion=3
+# nombre de bonnes réponses
+nbbr=0
 
 question1="Quel est le sup de l'ensemble {{uneLigne['C1:type']}}"
 indication1=(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)
@@ -54,13 +56,27 @@ evaluator==
 if nbQuestion > 0 :
  # premiere question
  if nbQuestion==3:
-  if uneLigne[] == inputbox.value:
+   if bReponse3 == inputbox.value:
     nbbr += 1 
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
-  else:
-    grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {sol}  {nbbr}/{nbq} </span>')
+   else:
+    grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse3}  {nbbr}/{nbQuestion} </span>')
  # seconde question
- text, sol = question()
+ if nbQuestion==2:
+   if bReponse2 == inputbox.value:
+    nbbr += 1 
+    grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
+   else:
+    grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse2}  {nbbr}/{nbQuestion} </span>')
+ # premiere question
+ if nbQuestion==1:
+   if bReponse1 == inputbox.value:
+    nbbr += 1 
+    grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
+   else:
+    grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse1}  {nbbr}/{nbQuestion} </span>')
+ nbQuestion -= 1
+  text, sol = question()
 else:
   # réinitialisation des alea mais aussi des définitions , un impact sur l'exécution ?
   uneLigne=random.choice(listeBornesup)
