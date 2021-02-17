@@ -6,8 +6,8 @@ title= Borne Sup
 @ bornesup.csv
 @ genQuest.py
 
-from genQuest import initDonnees,question
-#from genQuest import question
+from genQuest import initDonnees
+from genQuest import question
 
 before ==#|python|
 import csv
