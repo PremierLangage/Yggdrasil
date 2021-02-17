@@ -51,7 +51,7 @@ if nbQuestion > 0:
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>')
    else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse1} score {nbbr}/{nbQuestion} </span>')
-   text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question2}} càd {{uneLigne['C2:Partie de $%R%$']}}</p> "
+   text="<p><strong>Question {iQuestion}</strong></p><p>{question2} càd {{uneLigne['C2:Partie de $%R%$']}}</p> "
  # seconde question
  if nbQuestion==2:
    if bReponse2 == input.value:
