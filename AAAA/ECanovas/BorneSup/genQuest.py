@@ -131,12 +131,27 @@ def createquestion(row):
 
     return tx,sol 
 
-
-def question():
+def initDonnees():
     with open("bornesup.csv","r") as csvfile:
         listeBornesup=list(csv.DictReader(csvfile, delimiter=';'))
-    
-    return createquestion(random.choice(laliste))
-    
-    
-    return 0
+    return random.choice(listeBornesup)
+
+def question(numero,uneLigne):
+  if numero == 1:    
+    intiQuestion="Quel est le sup de l'ensemble {{uneLigne['C1:type']}}"
+    indication="(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)"
+    bReponse=uneLigne['C5:sup']
+  if numero == 2:
+    intiQuestion="Donner un majorant de l'ensemble {{uneLigne['C1:type']}}"
+    indication="(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)"
+    bReponse=uneLigne['C5:sup']
+  if numero == 3:
+    intiQuestion="L'ensemble {{uneLigne['C1:type']}} a-t-il un plus grand élément ?"
+    indication="(On écrira le texte oui ou le texte non)"
+    if uneLigne['C5:sup'] ==' +':
+     bReponse="oui"
+    else:
+     bReponse="non"
+
+  return intiQuestion,indication,bReponse
+
