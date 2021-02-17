@@ -84,6 +84,6 @@ else:
   uneLigne=random.choice(listeBornesup)
   nbQuestion = 3
   iQuestion = 1
-  text=""
-  form=""
+  text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
+
 ==
