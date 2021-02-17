@@ -41,7 +41,7 @@ inviteSuite="Valider permet de répondre à la question {{iQuestion}}"
 
 text==#|markdown|
 
-<titre2>Question {{iQuestion}}</titre2>
+<p><strong>Question {{iQuestion}}</strong></p>
 <p>Quel est le sup de l'ensemble {{uneLigne['C1:type']}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>
 
 <p>{{inviteSuite}}</p>
@@ -57,7 +57,7 @@ if nbQuestion > 0 :
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>')
    else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse3}  {nbbr}/{nbQuestion} </span>')
-   text="<titre2>Question {{iQuestion}}</titre2> \
+   text="<p><strong>Question {{iQuestion}}</strong></p> \
     <p>{{question2}} càd {{uneLigne['C2:Partie de $%R%$']}}</p> \
     <p>{{inviteSuite}}</p>question2"
  in
@@ -68,7 +68,7 @@ if nbQuestion > 0 :
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
    else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse2}  {nbbr}/{nbQuestion} </span>')
-   text="<titre2>Question {{iQuestion}}</titre2> \
+   text="<p><strong>Question {{iQuestion}}</strong></p> \
     <p>{{question3}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
 
  # premiere question
@@ -78,7 +78,7 @@ if nbQuestion > 0 :
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
    else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse1}  {nbbr}/{nbQuestion} </span>')
-   text="<titre2>Question {{iQuestion}}</titre2> \
+   text="<p><strong>Question {{iQuestion}}</strong></p> \
     <p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
  # boucle sur les 3 questions
  nbQuestion -= 1
