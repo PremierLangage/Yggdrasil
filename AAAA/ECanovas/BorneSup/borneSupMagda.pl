@@ -65,7 +65,8 @@ if nbQuestion > 0:
   nbQuestion -= 1
   iQuestion += 1
   #form="{{ input|component}}"
-  text, indicQuestion, bReponse = question(2,uneLigne)
+  intituleQuestion, indicQuestion, bReponse = question(2,uneLigne)
+  text=intituleQuestion
 else:
   if nbbr == nbQuestion :
     grade = (100, f'<span class="success-state">BRAVO!tout est bon 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>')
@@ -78,5 +79,6 @@ else:
   nbQuestion = 3
   iQuestion = 1
   #text="<p><strong>Question {{iQuestion}}</strong></p><p>{{question1}} càd {{uneLigne['C2:Partie de $%R%$']}}</p>"
-  text, indicQuestion, bReponse = question(3,uneLigne)
+  intituleQuestion, indicQuestion, bReponse = question(3,uneLigne)
+  text=intituleQuestion
 ==
