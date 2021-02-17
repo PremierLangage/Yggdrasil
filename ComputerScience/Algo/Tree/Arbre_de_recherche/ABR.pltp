@@ -1,0 +1,18 @@
+
+#author=Marc zipstein
+title=Les arbres binaires en C
+
+introduction==
+
+Des exercices sur les arbres binaires de recherche, sans doublons;
+==
+
+@ /ComputerScience/Algo/Tree/Arbre_de_recherche/ajout_abr.pl
+
+@ /ComputerScience/Algo/Tree/Arbre_de_recherche/minimum_abr.pl
+
+@ /ComputerScience/Algo/Tree/Arbre_de_recherche/maximum.pl
+
+@ /ComputerScience/Algo/Tree/Arbre_de_recherche/extraction.pl
+
+
