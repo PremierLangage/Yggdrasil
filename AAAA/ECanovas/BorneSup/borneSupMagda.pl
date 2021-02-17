@@ -19,7 +19,8 @@ import random
 
 # Chargement du dictionnaire des données depuis un fichier csv
 with open("bornesup.csv", newline='') as csvfile:
-     listeBornesup = csv.DictReader(csvfile, delimiter=';')
+     #listeBornesup = csv.DictReader(csvfile, delimiter=';')
+     listeBornesup=list(csv.DictReader(csvfile, delimiter=';'))
 
 uneLigne=random.choice(listeBornesup)
 ==
