@@ -65,4 +65,5 @@ else:
   
   intituleQuestion, indicQuestion, bReponse = question(1,uneLigne)
   text=f'<p><strong>Question {iQuestion} pic</strong></p><p>{intituleQuestion}</p>'
+
 ==
