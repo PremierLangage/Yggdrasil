@@ -93,6 +93,7 @@ else:
   # réinitialisation des alea mais aussi des définitions
   uneLigne=random.choice(listeBornesup)
   nbQuestion = 3
+  iQuestion = 1
   text=""
   form=""
 ==
