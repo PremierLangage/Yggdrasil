@@ -32,7 +32,7 @@ form==
 {{ input|component}}
 ==
 
-evaluator==#|python|
+evaluator==
 
 from genQuest import initDonnees,question
 
