@@ -13,7 +13,7 @@ import csv
 import random
 
 # Chargement du dictionnaire des Questions depuis un fichier csv
-with open("bornesupQ.csv",delimiter=';') as csvfile:
+with open("bornesupQ.csv",Dialect.delimiter=';') as csvfile:
      readerBornesupQ = csv.DictReader(csvfile)
 
 # Chargement du dictionnaire des données depuis un fichier csv
