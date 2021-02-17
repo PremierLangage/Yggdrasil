@@ -2,6 +2,9 @@
 # extends=/model/mathinput.pl
 
 title= Borne Sup
+@ /utils/sandboxio.py
+grader  =@ /grader/evaluator.py
+builder =@ /builder/before.py
 form==
 {{ inputbox|component}}
 ==
