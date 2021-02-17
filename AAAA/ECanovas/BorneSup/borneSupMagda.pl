@@ -28,7 +28,7 @@ uneLigne=random.choice(listeBornesup)
 text==#|markdown|
 {{uneLigne}}
 
-Quel est le sup de l'ensemble {{uneLigne['C1:type']}} càd {{uneLigne['C2:Partie de $%R%$ ']}} }
+Quel est le sup de l'ensemble {{uneLigne['C1:type']}} càd {{uneLigne['C2:Partie de $%R%$ ']}}
 ==
 form==
 ==
