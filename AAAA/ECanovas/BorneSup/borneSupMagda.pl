@@ -40,7 +40,7 @@ if iQuestion > nbQuestion:
 
   if bReponse == input.value:
     nbbr += 1 
-    grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
+    grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>')
   else:
     grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {bReponse} score {nbbr}/{nbQuestion} </span>')
  
@@ -60,9 +60,9 @@ else:
   # réinitialisation des alea mais aussi des définitions
   from genQuest import initDonnees,question
   uneLigne=initDonnees()
-  nbQuestion = 3
-  iQuestion = 1
+  nbQuestion=3
+  iQuestion=1
   
   intituleQuestion, indicQuestion, bReponse = question(1,uneLigne)
-  text=f'<p><strong>Question {iQuestion}</strong></p><p>{intituleQuestion}</p>'
+  text=f'<p><strong>Question {iQuestion} pic</strong></p><p>{intituleQuestion}</p>'
 ==
