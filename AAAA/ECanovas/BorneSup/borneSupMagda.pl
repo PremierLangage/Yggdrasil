@@ -5,7 +5,7 @@
 extends=/ComputerScience/C/examples/Stoi_le_caroussel.pl
 
 title= Borne Sup
-
+@ bornesupQ.csv
 before ==
 import csv
 import random
