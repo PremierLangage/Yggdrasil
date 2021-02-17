@@ -14,12 +14,12 @@ import csv
 import random
 
 # Chargement du dictionnaire des Questions depuis un fichier csv
-#with open("bornesupQ.csv",Dialect.delimiter=';') as csvfile:
-#     readerBornesupQ = csv.DictReader(csvfile)
+#with open("bornesupQ.csv",newline='') as csvfileQ:
+#     readerBornesupQ = csv.DictReader(csvfileQ)
 
 # Chargement du dictionnaire des données depuis un fichier csv
 with open("bornesup.csv", newline='') as csvfile:
-     readerBornesup = csv.DictReader(csvfile,delimiter=';')
+     readerBornesup = csv.DictReader(csvfile, delimiter=';')
 ==
 
 text==#|markdown|
