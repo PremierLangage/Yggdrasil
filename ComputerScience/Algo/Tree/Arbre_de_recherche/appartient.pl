@@ -17,7 +17,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #**************************************************************************
-#extends=/ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
+
 extends=/ComputerScience/C/template/std_progC.pl
 #author=Marc Zipstein
 title=Rechercher dans un arbre binaire de recherche
@@ -57,7 +57,7 @@ if(t->value<val)
     return appartient(t->right,value)
 return 1
  }
- ==
+==
 
 code_before==#|c|
 #include <stdio.h>
