@@ -36,7 +36,7 @@ evaluator==
 
 from genQuest import initDonnees,question
 
-if iQuestion > nbQuestion:
+if iQuestion <= nbQuestion:
 
   if bReponse == input.value:
     nbbr += 1 
