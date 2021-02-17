@@ -47,6 +47,7 @@ text==#|markdown|
 <p>{{inviteSuite}}</p>
 ==
 form==
+{ inputbox|component}}
 ==
 evaluator==
 if nbQuestion > 0 :
