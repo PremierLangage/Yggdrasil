@@ -2,7 +2,9 @@
 # extends=/model/mathinput.pl
 
 title= Borne Sup
-
+form==
+{{ inputbox|component}}
+==
 @ bornesup.csv
 
 before ==#|python|
