@@ -21,7 +21,7 @@ import csv
 with open("bornesup.csv", newline='') as csvfile:
      readerBornesup = csv.DictReader(csvfile, delimiter=';')
      for row in readerBornesup:
-        print(row['C1'])
+        print(row['C1:type'])
 ==
 
 text==#|markdown|
