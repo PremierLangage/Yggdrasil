@@ -10,8 +10,7 @@ title= Borne Sup
 
 before ==#|python|
 
-from genQuest import initDonnees
-from genQuest import question
+from genQuest import initDonnees, question
 
 uneLigne=initDonnees()
 
@@ -31,8 +30,8 @@ text==#|markdown|
 ==
 
 evaluator==#|python|
-from genQuest import initDonnees
-from genQuest import question
+
+from genQuest import initDonnees,question
 
 if nbQuestion > 0:
 
