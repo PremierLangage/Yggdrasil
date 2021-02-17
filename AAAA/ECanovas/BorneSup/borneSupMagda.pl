@@ -1,5 +1,8 @@
 
-extends=/model/basic.pl
+#extends=/model/basic.pl
+@ /utils/sandboxio.py
+grader  =@ /grader/evaluator.py
+builder =@ /builder/before.py
 
 title= Borne Sup
 
@@ -29,7 +32,7 @@ text==#|markdown|
 <p>{{intituleQuestion}} </p>
 ==
 form==
-{{ basic|component}}
+{{ Input|component}}
 ==
 
 evaluator==
