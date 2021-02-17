@@ -28,6 +28,9 @@ text==#|markdown|
 <p><strong>Question {{iQuestion}}</strong></p>
 <p>{{intituleQuestion}} </p>
 ==
+form==
+{{ input|component}}
+==
 
 evaluator==#|python|
 
