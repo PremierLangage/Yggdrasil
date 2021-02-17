@@ -62,7 +62,6 @@ else:
   uneLigne=initDonnees()
   nbQuestion=3
   iQuestion=1
-  
   intituleQuestion, indicQuestion, bReponse = question(1,uneLigne)
   text=f'<p><strong>Question {iQuestion} pic {nbQuestion}</strong></p><p>{intituleQuestion}</p>'
 
