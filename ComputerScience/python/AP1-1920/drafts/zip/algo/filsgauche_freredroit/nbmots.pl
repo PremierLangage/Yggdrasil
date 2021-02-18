@@ -41,11 +41,13 @@ ecrire une fonction nbarbre qui reçoit un arbre et renvoie son nombre de mots
 editor.code==#|c|
 
 
-int nbmots(...){
-  
-} 
-
-
+int nbmots(Arbre t){
+  if (t == NULL)
+     return 0;
+  if (t->lettre=='\0')
+      return 1+nbmots(t->frered);
+  return nbmots(t->filsg)+nbmots(t->frered) ;
+}
 ==
 
 solution==#|c|
@@ -117,7 +119,7 @@ else
  int build_tree(Arbre * t){
     char mot[257];
    
-    while(1==    scanf("%256s", &mot))   {
+    while(1==    scanf("%256s", mot))   {
       if (0==ajoute_mot(t,mot)){
       fprintf(stderr, "problème allocation mémoire\n");
       return 0;
