@@ -136,7 +136,7 @@ else
 int main(int argn,char * argv[]){
     Arbre t;
     build_tree(&t);
-    printf("%d",nbmots(t));
+    fprintf(stderr,"%d",nbmots(t));
     return 0;
     }
 ==
