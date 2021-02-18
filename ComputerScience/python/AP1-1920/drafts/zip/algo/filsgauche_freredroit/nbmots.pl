@@ -117,7 +117,7 @@ else
  int build_tree(Arbre * t){
     char mot[257];
    
-    while(1==    scanf("%256", &mot))   {
+    while(1==    scanf("%256s", &mot))   {
       if (0==ajoute_mot(t,mot)){
       fprintf(stderr, "problème allocation mémoire\n");
       return 0;
