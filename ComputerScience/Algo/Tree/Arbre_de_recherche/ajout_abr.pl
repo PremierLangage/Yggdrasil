@@ -36,61 +36,6 @@ typedef struct node{
 
 ==
 
-editor.code==#|c|
-
-
-int ajoute(...){
-  
-} 
-
-
-==
-
-solution==#|c|
-
-
-int ajoute(Tree *t,int valeur){
-  if (*t == NULL){
-    if ((*t=allocate_node(valeur))==NULL)
-     return 0;
-    return 1;
-  }
-  if ((*t)->value >valeur)
-    return ajoute(&((*t)->left),valeur);
-  if ((*t)->value <valeur)
-   return ajoute(&((*t)->right),valeur);
-
-  return 1;
-} 
-
-
-==
-
-code_before==#|c|
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-typedef struct node{
-  int value;
-  struct node * left;
-  struct node * right;
-}Node, *Tree;
-
-Node * allocate_node(int val){
-  Node * n = malloc(sizeof(Node));
-
-  if (!n){
-    fprintf(stderr, "problème allocation mémoire\n");
-    return NULL;
-  }
-  n->left = NULL;
-  n->right = NULL;
-  n->value = val;
-  return n;
-}
-
-==
-
 code_after==#|c|
 
 int build_tree(Tree* t){
@@ -142,7 +87,7 @@ char *code;
 
 checks_args_stdin==#|python|
 [["Arbre feuille", [], "4"],
- ["Abre à 3 nœuds", [], "4 2 5"],
+ ["Abrre à 3 nœuds", [], "4 2 5"],
  ["Peigne gauche", [], "12 10 9 8 7 0"],
  ["Peigne droit", [], "7 8 9 10 12 55"],
  ["Arbre aléatoire ", [],choice (["42 22 52 5 66 70","1 2 3 1 7 42 12"])],
