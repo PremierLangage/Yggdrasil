@@ -16,8 +16,8 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+extends=/ComputerScience/C/template/std_progC.pl
 
-extends= /ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
 
 #author=Marc Zipstein
 title=Ajout dans un arbre lexical fils gauche frère droit
