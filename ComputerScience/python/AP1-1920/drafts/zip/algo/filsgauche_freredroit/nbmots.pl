@@ -100,14 +100,14 @@ void ajoute_mot(Arbre *a, char *mot){
 	ajoute_branche(a,mot);
     else {
 	if( (*a)->lettre < *mot) 
-  ajoute_mot(&((*A)->frered),mot);
+  ajoute_mot(&((*a)->frered),mot);
 else
   if(( (*a)->lettre == *mot) && (*mot != '\0')) 
     ajoute_mot(&((*a)->filsg),mot+1);
   else
     if(*mot != '\0'){
       Arbre tmp=NULL;
-      ajoutebranche(& tmp,mot);
+      ajoute_branche(& tmp,mot);
       tmp->frered=*a;
       *a=tmp;
     }
@@ -115,7 +115,7 @@ else
 }
 
  int build_tree(Arbre * t){
-    char mot|257];
+    char mot[257];
    
     while(1==    scanf("%256", &mot))   {
       if (0==ajoute_mot(t,mot)){
@@ -131,7 +131,7 @@ int main(int argn,char * argv[]){
     build_tree(&t);
     printf("%d",nbmots(t));
     return 0;
-    +
+    }
 ==
 
 
