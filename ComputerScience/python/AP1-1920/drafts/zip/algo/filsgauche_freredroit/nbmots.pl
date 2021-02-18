@@ -78,7 +78,7 @@ Noeud * allocate_node(char val){
   Noeud * n = malloc(sizeof(Noeud));
 
   if (!n){
-    fprintf(stderr, "problème allocation mémoire\n");
+    fprintf(stderr, "problème allocation mémoire.\n");
     return NULL;
   }
   n->filsg = NULL;
@@ -100,16 +100,13 @@ int ajoute_branche  (Arbre *a,char *mot){
  }
 
 int ajoute_mot(Arbre *a, char *mot){
-    if (*a==NULL)
-	return ajoute_branche(a,mot);
-    else {
-	if( (*a)->lettre < *mot) 
-  return ajoute_mot(&((*a)->frered),mot);
-else
+  if (*a==NULL)
+  	return ajoute_branche(a,mot);
+  if( (*a)->lettre < *mot) 
+    return ajoute_mot(&((*a)->frered),mot);
   if(( (*a)->lettre == *mot) && (*mot != '\0')) 
     return ajoute_mot(&((*a)->filsg),mot+1);
-  else
-    if(*mot != '\0'){
+  if(*mot != '\0'){
       Arbre tmp=NULL;
       if(ajoute_branche(& tmp,mot)){
         tmp->frered=*a;
@@ -118,8 +115,9 @@ else
         }
       return 0;  
     }
+  return 1;
  }
-}
+
 
  int build_tree(Arbre * t){
     char mot[257];
