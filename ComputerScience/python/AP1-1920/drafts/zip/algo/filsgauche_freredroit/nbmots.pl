@@ -70,7 +70,7 @@ typedef struct noeud{
   char lettre;
   struct noeud *filsg;
   struct noeud *frered;
-}Noeud,Arbre;
+}Noeud,*Arbre;
 
 Noeud * allocate_node(char val){
   Noeud * n = malloc(sizeof(Noeud));
