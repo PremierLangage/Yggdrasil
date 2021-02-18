@@ -20,7 +20,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 
 #author=Marc Zipstein
-title=Ajout dans un arbre lexical fils gauche frère droit
+title=nombre de mots dans un arbre lexical fils gauche frère droit
 tag=recherche
 
 editor.height=300px
@@ -94,7 +94,7 @@ int ajoute_branche  (Arbre *a,char *mot){
   if((*a=allocate_node(*mot))!=NULL){
     if (*mot != '\0')
      return ajoute_branche  (&((*a)->filsg),mot+1);
-    
+  return 1;    
   }
   return 0;
  }
@@ -124,7 +124,7 @@ int ajoute_mot(Arbre *a, char *mot){
    
     while(1==    scanf("%256s", mot))   {
       if (0==ajoute_mot(t,mot)){
-      fprintf(stderr, "problème allocation mémoire\n");
+      fprintf(stderr, "problème allocation mémoire*\n");
       return 0;
       }
     }
@@ -134,7 +134,7 @@ int ajoute_mot(Arbre *a, char *mot){
 int main(int argn,char * argv[]){
     Arbre t;
     build_tree(&t);
-    fprintf(stderr,"%d",nbmots(t));
+    fprintf(stderr,"%d mots",nbmots(t));
     return 0;
     }
 ==
