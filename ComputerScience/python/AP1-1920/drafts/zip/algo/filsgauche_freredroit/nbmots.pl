@@ -51,7 +51,7 @@ int nbmots(...){
 solution==#|c|
 
 
-int nbmots(arbre t){
+int nbmots(Arbre t){
   if (t == NULL)
      return 0;
   if (t->lettre=='\0')
@@ -67,12 +67,12 @@ code_before==#|c|
 #include <stdlib.h>
 #include <string.h>
 typedef struct noeud{
-  char letrre;
+  char lettre;
   struct noeud *filsg;
   struct noeud *frered;
 }Noeud,Arbre;
 
-Node * allocate_node(char val){
+Noeud * allocate_node(char val){
   Noeud * n = malloc(sizeof(Noeud));
 
   if (!n){
@@ -80,7 +80,7 @@ Node * allocate_node(char val){
     return NULL;
   }
   n->filsg = NULL;
-  n->frere = NULL;
+  n->frered = NULL;
   n->lettre = val;
   return n;
 }
@@ -91,7 +91,7 @@ code_after==#|c|
 void ajoute_branche  (Arbre *a,char *mot){
   if((*a=allocate_node(*mot))!=NULL){
     if (*mot != '\0')
-      ajoute_branche  (&((*A)->filsg),mot+1);
+      ajoute_branche  (&((*a)->filsg),mot+1);
   }
 }
 
