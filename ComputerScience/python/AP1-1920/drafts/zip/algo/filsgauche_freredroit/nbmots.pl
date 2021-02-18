@@ -90,28 +90,33 @@ Noeud * allocate_node(char val){
 
 code_after==#|c|
 
-void ajoute_branche  (Arbre *a,char *mot){
+int ajoute_branche  (Arbre *a,char *mot){
   if((*a=allocate_node(*mot))!=NULL){
     if (*mot != '\0')
-      ajoute_branche  (&((*a)->filsg),mot+1);
+     return ajoute_branche  (&((*a)->filsg),mot+1);
+    
   }
-}
+  return 0;
+ }
 
-void ajoute_mot(Arbre *a, char *mot){
+int ajoute_mot(Arbre *a, char *mot){
     if (*a==NULL)
-	ajoute_branche(a,mot);
+	return ajoute_branche(a,mot);
     else {
 	if( (*a)->lettre < *mot) 
-  ajoute_mot(&((*a)->frered),mot);
+  return ajoute_mot(&((*a)->frered),mot);
 else
   if(( (*a)->lettre == *mot) && (*mot != '\0')) 
-    ajoute_mot(&((*a)->filsg),mot+1);
+    return ajoute_mot(&((*a)->filsg),mot+1);
   else
     if(*mot != '\0'){
       Arbre tmp=NULL;
-      ajoute_branche(& tmp,mot);
-      tmp->frered=*a;
-      *a=tmp;
+      if(ajoute_branche(& tmp,mot)){
+        tmp->frered=*a;
+        *a=tmp;
+        return 1;
+        }
+      return 0;  
     }
  }
 }
