@@ -144,6 +144,6 @@ int main(int argn,char * argv[]){
 checks_args_stdin==#|python|
 	[["Arbre feuille","","a"],
 	 ["arbre à 3 mots","","le ,la ,les "],
-   ["arbre aléatoire","","un ,une ,du ,de ,des"+choise(['dune',"deux","rote"])]
+   ["arbre aléatoire","","un ,une ,du ,de ,des"+choice(['dune',"deux","rote"])]
 	]
 ==
