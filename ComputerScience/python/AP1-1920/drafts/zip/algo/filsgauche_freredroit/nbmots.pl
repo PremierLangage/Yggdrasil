@@ -73,7 +73,7 @@ typedef struct noeud{
 }Noeud,Arbre;
 
 Node * allocate_node(char val){
-  Node * n = malloc(sizeof(Node));
+  Noeud * n = malloc(sizeof(Noeud));
 
   if (!n){
     fprintf(stderr, "problème allocation mémoire\n");
