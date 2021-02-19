@@ -42,7 +42,7 @@ int appartient(Arbre t,char *mot){
     if (t == NULL)
         return 0;
     if (t->lettre<*mot)
-        return appartient(t->frered,mot)
+        return appartient(t->frered,mot);
     if (t->lettre > *mot)
         return 0;
 
@@ -60,7 +60,7 @@ int appartient(Arbre t,char *mot){
     if (t == NULL)
         return 0;
     if (t->lettre<*mot)
-        return appartient(t->frered,mot)
+        return appartient(t->frered,mot);
     if (t->lettre > *mot)
         return 0;
 
