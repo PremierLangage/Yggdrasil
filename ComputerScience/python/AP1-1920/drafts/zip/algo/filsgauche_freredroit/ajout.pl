@@ -43,34 +43,11 @@ Ecrire une fonction **pluslong** qui reçoit un arbre et renvoie la longueur du 
 editor.code==#|c|
 
 
-int pluslong(Arbre t){
-    int fg ,frd;
-    if (t == NULL)
-        return -1;
-    frd=pluslong(t->frered);
-    if (t->lettre=='\0')
-          return 0>frd?0:frd;
-    fg=pluslong(t->filsg);
-return 1+fg>frd?1+fg:frd;
-}
-   
-
 ==
 
 solution==#|c|
 
 
-int pluslong(Arbre t){
-    int fg, frd;
-    if (t == NULL)
-        return -1;
-      frd=pluslong(t->frered);
-    if (t->lettre=='\0')
-          return 0>frd?0:frd;
-    fg=pluslong(t->filsg);
-    frd=pluslong(t->frered);
-return 1+fg>frd?1+fg:frd;
-}
    
 ==
 
@@ -148,19 +125,28 @@ void arbre_vers_code(arbre t,char *s){
     */
     if(t==NULL){
         s|len(s)]=' ';
-        s|len(s)]="\0'
+        s|len(s)]="\0';
+
         return;
     }
     if(t->lettre=='\0')'
         s[len(s)='.'
-        
+        s|len(s)]="\0';
+        arbre_vers_code(t->frered,s);
+        return;
+        }
+    s[len(s)=t->lettre;
+        s|len(s)]="\0';   
+    arbre_vers_code(t->filsg,s);
+    arbre_vers_code(t->frered,s);
+}
 int main(int argn,char * argv[]){
     Arbre t;
     char s[300];='\0'
     
     build_tree(&t);
     
-        fprintf(stderr,"code avant :sd",arbre_vers_code(t,s));
+        fprintf(stderr,"code avant %s",arbre_vers_code(t,s));
     return 0;
     }
 ==
