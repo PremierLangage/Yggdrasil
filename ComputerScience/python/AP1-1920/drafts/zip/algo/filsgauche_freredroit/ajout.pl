@@ -189,14 +189,14 @@ void arbre_vers_code(  Arbre t,char *s){
         arbre_vers_code(t->frered,s);
         return;
         }
-    s[strlen(s)|=t->lettre;
+    s[strlen(s)]=t->lettre;
         s|strlen(s)]='\0';   
     arbre_vers_code(t->filsg,s);
     arbre_vers_code(t->frered,s);
 }
 int main(int argn,char * argv[]){
     Arbre t;
-    char s[300]='\0';
+    char s[300]={'\0'};
     
     build_tree(&t);
     
