@@ -49,7 +49,6 @@ int pluslong(Arbre t){
     if (t->lettre=='\0')
           return 0>frd?0:frd;
     fg=pluslong(t->filsg);
-   x
 return 1+fg>frd?1+fg:frd;
 }
    
