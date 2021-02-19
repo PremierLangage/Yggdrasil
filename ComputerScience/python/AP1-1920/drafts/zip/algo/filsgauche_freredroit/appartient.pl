@@ -48,7 +48,7 @@ int appartient(Arbre t,char *mot){
 
     if (*mot=='\0')
       return 1;
-    return appartient((t->filsg,mot+1) ;
+    return appartient(t->filsg,mot+1) ;
 } 
 
 ==
@@ -66,7 +66,7 @@ int appartient(Arbre t,char *mot){
 
     if (*mot=='\0')
       return 1;
-    return appartient((t->filsg,mot+1) ;
+    return appartient(t->filsg,mot+1) ;
 } 
 ==
 
