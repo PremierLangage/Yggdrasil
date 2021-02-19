@@ -39,16 +39,16 @@ le mot appartient au lexique rerésenté par l'arbre.
 editor.code==#|c|
 
 int appartient(Arbre t,char *mot){
-  if (t == NULL)
-     return 0;
-     if (t->lettre<*mot)
+    if (t == NULL)
+        return 0;
+    if (t->lettre<*mot)
         return appartient(t->frered,mot;
     if (t->lettre > *mot)
-     return 0;
+        return 0;
 
-  if (*mot=='\0')
+    if (*mot=='\0')
       return 1;
-  return appartient((t->filsg,mot+1) ;
+    return appartient((t->filsg,mot+1) ;
 } 
 
 ==
@@ -57,16 +57,16 @@ solution==#|c|
 
 
 int appartient(Arbre t,char *mot){
-  if (t == NULL)
-     return 0;
-     if (t->lettre<*mot)
+    if (t == NULL)
+        return 0;
+    if (t->lettre<*mot)
         return appartient(t->frered,mot;
     if (t->lettre > *mot)
-     return 0;
+        return 0;
 
-  if (*mot=='\0')
+    if (*mot=='\0')
       return 1;
-  return appartient((t->filsg,mot+1) ;
+    return appartient((t->filsg,mot+1) ;
 } 
 ==
 
