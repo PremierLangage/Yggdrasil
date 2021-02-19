@@ -28,20 +28,21 @@ tag=recherche
 editor.height=300px
 
 text== 
-On représente un lexique avec un arbre fils gauche frère droit. On utilise le type:  
-    typedef struct noeud{
-        char lettre;
-        struct noeud *filsg,*frered;
-}Noeud,*Arbre;
-Ecrire une fonction **pluslong** qui reçoit un arbre et un mot. a fonction renvoie 1 si 
-le mot appartient au lexique rerésenté par l'arbre.
+On représente un lexique avec un arbre fils gauche frère droit.  
+On utilise le type:   
+    typedef struct noeud{  
+        char lettre;  
+        struct noeud *filsg,*frered;  
+}Noeud,*Arbre;  
+Ecrire une fonction **pluslong** qui reçoit un arbre et renvoie la longueur du pluslong mot.
+
 ==
 
 editor.code==#|c|
 
 
 int pluslong(Arbre t){
-    int fg frd;;
+    int fg ,frd;
     if (t == NULL)
         return -1;
     if (t->lettre='\0')
@@ -58,7 +59,7 @@ solution==#|c|
 
 
 int pluslong(Arbre t){
-    int fg frd;;
+    int fg, frd;
     if (t == NULL)
         return -1;
     if (t->lettre='\0')
