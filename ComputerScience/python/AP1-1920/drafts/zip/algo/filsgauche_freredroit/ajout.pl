@@ -190,7 +190,7 @@ void arbre_vers_code(  Arbre t,char *s){
         return;
         }
     s[strlen(s)]=t->lettre;
-        s|strlen(s)]='\0';   
+        s[strlen(s)]='\0';   
     arbre_vers_code(t->filsg,s);
     arbre_vers_code(t->frered,s);
 }
