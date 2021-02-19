@@ -1,4 +1,8 @@
 
+#il faut une fonction de codage pourcomparer l'arbre
+
+
+
 
 #*****************************************************************************
 #  Copyright (C) 2020 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
@@ -16,48 +20,58 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+extends=/ComputerScience/C/template/std_progC.pl
 
-extends= /ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
 
 #author=Marc Zipstein
-title=Ajout dans un arbre lexical fils gauche frère droit
+title=Appartenance dans un arbre lexical fils gauche frère droit
 tag=recherche
 
 editor.height=300px
 
 text== 
-On représente un lexique avec un arbre fils gauche frère droit. On utilise le type:  
-    typedef struct noeud{
-        char lettre;
-        struct noeud *filsg,*frered;
-}Noeud,*Arbre;
-Les noeuds freressont ordonnés dans l'ordre ascii,  
-On ne traite  pas les accents- on confond "interne" et "interné"
-un mot est une suite de moins de 257 caratères (telle que lue par scanf("%256s,mot))
-Le caratère de fin de mot est conservé dans l'arbre.
-ecrire une fonction nbarbre qui reçoit un arbre et renvoie son nombre de mots
+On représente un lexique avec un arbre fils gauche frère droit.  
+On utilise le type:   
+    typedef struct noeud{  
+        char lettre;  
+        struct noeud *filsg,*frered;  
+}Noeud,*Arbre;  
+Ecrire une fonction **pluslong** qui reçoit un arbre et renvoie la longueur du pluslong mot.
+
 ==
 
 editor.code==#|c|
 
 
-int nbmots(...){
-  
-} 
-
+int pluslong(Arbre t){
+    int fg ,frd;
+    if (t == NULL)
+        return -1;
+    frd=pluslong(t->frered);
+    if (t->lettre=='\0')
+          return 0>frd?0:frd;
+    fg=pluslong(t->filsg);
+return 1+fg>frd?1+fg:frd;
+}
+   
 
 ==
 
 solution==#|c|
 
 
-int nbmots(arbre t){
-  if (t == NULL)
-     return 0;
-  if (t->lettre=='\0')
-      return 1+nbmots(t->frered);
-  return nbmots(t->filsg)+nbmots(t->frered) ;
-} 
+int pluslong(Arbre t){
+    int fg, frd;
+    if (t == NULL)
+        return -1;
+      frd=pluslong(t->frered);
+    if (t->lettre=='\0')
+          return 0>frd?0:frd;
+    fg=pluslong(t->filsg);
+    frd=pluslong(t->frered);
+return 1+fg>frd?1+fg:frd;
+}
+   
 ==
 
 
@@ -67,20 +81,20 @@ code_before==#|c|
 #include <stdlib.h>
 #include <string.h>
 typedef struct noeud{
-  char letrre;
+  char lettre;
   struct noeud *filsg;
   struct noeud *frered;
-}Noeud,Arbre;
+}Noeud,*Arbre;
 
-Node * allocate_node(char val){
-  Node * n = malloc(sizeof(Node));
+Noeud * allocate_node(char val){
+  Noeud * n = malloc(sizeof(Noeud));
 
   if (!n){
-    fprintf(stderr, "problème allocation mémoire\n");
+    fprintf(stderr, "problème allocation mémoire.\n");
     return NULL;
   }
   n->filsg = NULL;
-  n->frere = NULL;
+  n->frered = NULL;
   n->lettre = val;
   return n;
 }
@@ -88,55 +102,74 @@ Node * allocate_node(char val){
 
 code_after==#|c|
 
-void ajoute_branche  (Arbre *a,char *mot){
+int ajoute_branche  (Arbre *a,char *mot){
   if((*a=allocate_node(*mot))!=NULL){
     if (*mot != '\0')
-      ajoute_branche  (&((*A)->filsg),mot+1);
+     return ajoute_branche  (&((*a)->filsg),mot+1);
+  return 1;    
   }
-}
-
-void ajoute_mot(Arbre *a, char *mot){
-    if (*a==NULL)
-	ajoute_branche(a,mot);
-    else {
-	if( (*a)->lettre < *mot) 
-  ajoute_mot(&((*A)->frered),mot);
-else
-  if(( (*a)->lettre == *mot) && (*mot != '\0')) 
-    ajoute_mot(&((*a)->filsg),mot+1);
-  else
-    if(*mot != '\0'){
-      Arbre tmp=NULL;
-      ajoutebranche(& tmp,mot);
-      tmp->frered=*a;
-      *a=tmp;
-    }
+  return 0;
  }
-}
+
+int ajoute_mot(Arbre *a, char *mot){
+  if (*a==NULL)
+  	return ajoute_branche(a,mot);
+  if( (*a)->lettre < *mot) 
+    return ajoute_mot(&((*a)->frered),mot);
+  if(( (*a)->lettre == *mot) && (*mot != '\0')) 
+    return ajoute_mot(&((*a)->filsg),mot+1);
+  if(*mot != '\0'){
+      Arbre tmp=NULL;
+      if(ajoute_branche(& tmp,mot)){
+        tmp->frered=*a;
+        *a=tmp;
+        return 1;
+        }
+      return 0;  
+    }
+  return 1;
+ }
+
 
  int build_tree(Arbre * t){
-    char mot|257];
+    char mot[257];
    
-    while(1==    scanf("%256", &mot))   {
+    while(1==    scanf("%256s", mot))   {
       if (0==ajoute_mot(t,mot)){
-      fprintf(stderr, "problème allocation mémoire\n");
+      fprintf(stderr, "problème allocation mémoire*\n");
       return 0;
       }
     }
     return 1;
 } 
-
+void arbre_vers_code(arbre t,char *s){
+    /*l'arbre vide est codé par ' '
+    '\0' est codé par '.'
+    */
+    if(t==NULL){
+        s|len(s)]=' ';
+        s|len(s)]="\0'
+        return;
+    }
+    if(t->lettre=='\0')'
+        s[len(s)='.'
+        
 int main(int argn,char * argv[]){
     Arbre t;
+    char s[300];='\0'
+    
     build_tree(&t);
-    printf("%d",nbmots(t));
+    
+        fprintf(stderr,"code avant :sd",arbre_vers_code(t,s));
     return 0;
-    +
+    }
 ==
 
 
 
 checks_args_stdin==#|python|
 	[["Arbre feuille","","a"],
-	 ["arbre à 3 mots","","le,la,les"]
+	 ["arbre à 3 mots","","le la les "],
+   ["arbre aléatoire","","un une du de des"+" "+choice(['dune',"deux","le","route","un","une"])]
 	]
+==
