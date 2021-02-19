@@ -178,19 +178,19 @@ void arbre_vers_code(  Arbre t,char *s){
     '\0' est codé par '.'
     */
     if(t==NULL){
-        s|len(s)]=' ';
-        s|len(s)]='\0';
+        s|strlen(s)]=' ';
+        s|strlen(s)]='\0';
 
         return;
     }
     if(t->lettre=='\0')'
-        s[len(s)='.'
-        s|len(s)]='\0';
+        s[strlen(s)='.'
+        s|strlen(s)]='\0';
         arbre_vers_code(t->frered,s);
         return;
         }
     s[len(s)=t->lettre;
-        s|len(s)]='\0';   
+        s|strlen(s)]='\0';   
     arbre_vers_code(t->filsg,s);
     arbre_vers_code(t->frered,s);
 }
