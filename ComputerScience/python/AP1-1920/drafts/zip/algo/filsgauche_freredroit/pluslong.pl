@@ -61,7 +61,7 @@ solution==#|c|
 int pluslong(Arbre t){
     int fg, frd;
     if (t == NULL)
-        return 0;
+        return -1;
     if (t->lettre=='\0') 
             return pluslong(t->frered);
 
