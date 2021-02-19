@@ -144,7 +144,7 @@ int main(int argn,char * argv[]){
     Arbre t;
     build_tree(&t);
     
-        fprintf(stderr,"le plus long :%d"pluslong(t));
+        fprintf(stderr,"le plus long :%d",pluslong(t));
     return 0;
     }
 ==
