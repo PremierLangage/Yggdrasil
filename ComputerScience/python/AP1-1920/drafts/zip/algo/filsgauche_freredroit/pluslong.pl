@@ -45,10 +45,11 @@ int pluslong(Arbre t){
     int fg ,frd;
     if (t == NULL)
         return -1;
-    if (t->lettre=='\0')
-          return pluslong(t->frered);
-    fg=pluslong(t->filsg);
     frd=pluslong(t->frered);
+    if (t->lettre=='\0')
+          return 0>frd?0:frd;
+    fg=pluslong(t->filsg);
+   x
 return 1+fg>frd?1+fg:frd;
 }
    
@@ -62,9 +63,9 @@ int pluslong(Arbre t){
     int fg, frd;
     if (t == NULL)
         return -1;
-    if (t->lettre=='\0') 
-            return pluslong(t->frered);
-
+      frd=pluslong(t->frered);
+    if (t->lettre=='\0')
+          return 0>frd?0:frd;
     fg=pluslong(t->filsg);
     frd=pluslong(t->frered);
 return 1+fg>frd?1+fg:frd;
