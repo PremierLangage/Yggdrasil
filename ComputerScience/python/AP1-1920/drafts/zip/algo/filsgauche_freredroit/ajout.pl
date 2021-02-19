@@ -174,7 +174,7 @@ int ajoute_mot(Arbre *a, char *mot){
     return 1;
 } 
 void arbre_vers_code(  Arbre t,char *s){
-    /*l'arbre vide est codé par ' '
+    /*l'arbre vide est codé par '-'
     '\0' est codé par '.'
     */
     if(t==NULL){
@@ -197,15 +197,16 @@ void arbre_vers_code(  Arbre t,char *s){
 int main(int argn,char * argv[]){
     Arbre t;
     char s[300]={'\0'};
-    
+    int i;
+
     build_tree(&t);
-    arbre_vers_code(t,s);
-      
+    arbre_vers_code(t,s);  
 
     fprintf(stderr,"code avant %s",s);
     ajoute(&t,"toto");
-    
-    s[0]='\0'; arbre_vers_code(t,s);
+    for'i=0;i<300;i++)
+        s[i]='\0'; 
+    arbre_vers_code(t,s);
     fprintf(stderr,"code apres %s",s);
 
     return 0;
