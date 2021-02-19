@@ -183,8 +183,8 @@ void arbre_vers_code(  Arbre t,char *s){
 
         return;
     }
-    if(t->lettre=='\0')'
-        s[strlen(s)='.'
+    if(t->lettre=='\0')
+        s[strlen(s)]='.'
         s[strlen(s)]='\0';
         arbre_vers_code(t->frered,s);
         return;
