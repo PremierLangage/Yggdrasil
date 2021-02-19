@@ -36,17 +36,71 @@ On utilise le type:
         char lettre;  
         struct noeud *filsg,*frered;  
 }Noeud,*Arbre;  
-Ecrire une fonction **pluslong** qui reçoit un arbre et renvoie la longueur du pluslong mot.
+Ecrire une fonction **ajoute** qui reçoit un arbre et un mot et aloute le mot à l'arbre. La fonction renvoie 1 si le mot appartient à  l'arbre ou si  l'ajout est réussi. En cas d'échec elle renvoie 0;
 
 ==
 
 editor.code==#|c|
 
+int ajoute_b  (Arbre *a,char *mot){
+  if((*a=allocate_node(*mot))!=NULL){
+    if (*mot != '\0')
+     return ajoute_b (&((*a)->filsg),mot+1);
+  return 1;    
+  }
+  return 0;
+ }
 
+int ajoute(Arbre *a, char *mot){
+  if (*a==NULL)
+  	return ajoute_b(a,mot);
+  if( (*a)->lettre < *mot) 
+    return ajoute(&((*a)->frered),mot);
+  if(( (*a)->lettre == *mot) && (*mot != '\0')) 
+    return ajoute(&((*a)->filsg),mot+1);
+  if(*mot != '\0'){
+      Arbre tmp=NULL;
+      if(ajoute_b(& tmp,mot)){
+        tmp->frered=*a;
+        *a=tmp;
+        return 1;
+        }
+      return 0;  
+    }
+  return 1;
+ }
+
+   
 ==
 
 solution==#|c|
+int ajoute_b  (Arbre *a,char *mot){
+  if((*a=allocate_node(*mot))!=NULL){
+    if (*mot != '\0')
+     return ajoute_b (&((*a)->filsg),mot+1);
+  return 1;    
+  }
+  return 0;
+ }
 
+int ajoute(Arbre *a, char *mot){
+  if (*a==NULL)
+  	return ajoute_b(a,mot);
+  if( (*a)->lettre < *mot) 
+    return ajoute(&((*a)->frered),mot);
+  if(( (*a)->lettre == *mot) && (*mot != '\0')) 
+    return ajoute(&((*a)->filsg),mot+1);
+  if(*mot != '\0'){
+      Arbre tmp=NULL;
+      if(ajoute_b(& tmp,mot)){
+        tmp->frered=*a;
+        *a=tmp;
+        return 1;
+        }
+      return 0;  
+    }
+  return 1;
+ }
 
    
 ==
@@ -119,24 +173,24 @@ int ajoute_mot(Arbre *a, char *mot){
     }
     return 1;
 } 
-void arbre_vers_code(arbre t,char *s){
+void arbre_vers_code(  Arbre t,char *s){
     /*l'arbre vide est codé par ' '
     '\0' est codé par '.'
     */
     if(t==NULL){
         s|len(s)]=' ';
-        s|len(s)]="\0';
+        s|len(s)]='\0';
 
         return;
     }
     if(t->lettre=='\0')'
         s[len(s)='.'
-        s|len(s)]="\0';
+        s|len(s)]='\0';
         arbre_vers_code(t->frered,s);
         return;
         }
     s[len(s)=t->lettre;
-        s|len(s)]="\0';   
+        s|len(s)]='\0';   
     arbre_vers_code(t->filsg,s);
     arbre_vers_code(t->frered,s);
 }
@@ -146,7 +200,14 @@ int main(int argn,char * argv[]){
     
     build_tree(&t);
     
-        fprintf(stderr,"code avant %s",arbre_vers_code(t,s));
+      
+
+    fprintf(stderr,"code avant %s",s);
+    ajoute(&t,"toto");
+    
+    s[0]='\0'
+    fprintf(stderr,"code apres %s",s);
+
     return 0;
     }
 ==
