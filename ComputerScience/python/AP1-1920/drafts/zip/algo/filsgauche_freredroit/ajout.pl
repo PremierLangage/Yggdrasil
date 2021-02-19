@@ -178,14 +178,14 @@ void arbre_vers_code(  Arbre t,char *s){
     '\0' est codé par '.'
     */
     if(t==NULL){
-        s|strlen(s)]=' ';
-        s|strlen(s)]='\0';
+        s[strlen(s)]=' ';
+        s[strlen(s)]='\0';
 
         return;
     }
     if(t->lettre=='\0')'
         s[strlen(s)='.'
-        s|strlen(s)]='\0';
+        s[strlen(s)]='\0';
         arbre_vers_code(t->frered,s);
         return;
         }
@@ -196,7 +196,7 @@ void arbre_vers_code(  Arbre t,char *s){
 }
 int main(int argn,char * argv[]){
     Arbre t;
-    char s[300];='\0'
+    char s[300];='\0';
     
     build_tree(&t);
     
@@ -205,7 +205,7 @@ int main(int argn,char * argv[]){
     fprintf(stderr,"code avant %s",s);
     ajoute(&t,"toto");
     
-    s[0]='\0'
+    s[0]='\0';
     fprintf(stderr,"code apres %s",s);
 
     return 0;
