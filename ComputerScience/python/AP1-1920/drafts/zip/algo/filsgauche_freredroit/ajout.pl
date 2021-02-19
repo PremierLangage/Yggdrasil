@@ -178,7 +178,7 @@ void arbre_vers_code(  Arbre t,char *s){
     '\0' est codé par '.'
     */
     if(t==NULL){
-        s[strlen(s)]=' ';
+        s[strlen(s)]='+';
         s[strlen(s)]='\0';
 
         return;
@@ -194,14 +194,15 @@ void arbre_vers_code(  Arbre t,char *s){
     arbre_vers_code(t->filsg,s);
     arbre_vers_code(t->frered,s);
 }
-int main(int argn,char * argv[]){
+int main(int argc,char * argv[]){
     Arbre t;
     char s[300]={'\0'};
     int i;
 
     build_tree(&t);
-    arbre_vers_code(t,s);  
+    arbre_vers_code(t,s);
 
+    fprintf(stderr,"arbre");
     fprintf(stderr,"code avant %s",s);
     ajoute(&t,"toto");
     for(i=0;i<300;i++)
