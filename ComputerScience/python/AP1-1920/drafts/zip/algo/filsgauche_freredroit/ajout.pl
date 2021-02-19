@@ -199,13 +199,13 @@ int main(int argn,char * argv[]){
     char s[300]={'\0'};
     
     build_tree(&t);
-    
+    arbre_vers_code(t,s);
       
 
     fprintf(stderr,"code avant %s",s);
     ajoute(&t,"toto");
     
-    s[0]='\0';
+    s[0]='\0'; arbre_vers_code(t,s);
     fprintf(stderr,"code apres %s",s);
 
     return 0;
