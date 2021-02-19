@@ -44,7 +44,7 @@ editor.code==#|c|
 int pluslong(Arbre t){
     int fg ,frd;
     if (t == NULL)
-        return -1;
+        return 0;
     if (t->lettre=='\0')
         return pluslong(t->frered);
     fg=pluslong(t->filsg);
@@ -61,7 +61,7 @@ solution==#|c|
 int pluslong(Arbre t){
     int fg, frd;
     if (t == NULL)
-        return -1;
+        return 0;
     if (t->lettre=='\0')
         return pluslong(t->frered);
     fg=pluslong(t->filsg);
