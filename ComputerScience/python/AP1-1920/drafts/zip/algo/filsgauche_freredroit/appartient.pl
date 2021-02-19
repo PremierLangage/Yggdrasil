@@ -143,9 +143,9 @@ int main(int argn,char * argv[]){
     Arbre t;
     build_tree(&t);
     if(appartient (t,"le"))
-        printf(" le est dans le lexique");
+        fprintf(stderr," le est dans le lexique");
     else
-        printf(stderr,"le n'est pas dans le lexique");
+        fprintf(stderr,"le n'est pas dans le lexique");
     return 0;
     }
 ==
