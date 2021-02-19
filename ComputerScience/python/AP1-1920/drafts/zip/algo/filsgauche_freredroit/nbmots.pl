@@ -35,7 +35,7 @@ Les noeuds freressont ordonnés dans l'ordre ascii,
 On ne traite  pas les accents- on confond "interne" et "interné"
 un mot est une suite de moins de 257 caratères (telle que lue par scanf("%256s,mot))
 Le caratère de fin de mot est conservé dans l'arbre.
-ecrire une fonction nbarbre qui reçoit un arbre et renvoie son nombre de mots
+Ecrire une fonction **nbmots** qui reçoit un arbre et renvoie son nombre de mots
 ==
 
 editor.code==#|c|
@@ -144,6 +144,6 @@ int main(int argn,char * argv[]){
 checks_args_stdin==#|python|
 	[["Arbre feuille","","a"],
 	 ["arbre à 3 mots","","le ,la ,les "],
-   ["arbre aléatoire","","un ,une ,du ,de ,des"+choice(['dune',"deux","rote"])]
+   ["arbre aléatoire","","un ,une ,du ,de ,des"+" ",choice(['dune',"deux","route","un","une"])]
 	]
 ==
