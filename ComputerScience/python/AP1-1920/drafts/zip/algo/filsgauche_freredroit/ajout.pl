@@ -200,7 +200,7 @@ int main(int argc,char * argv[]){
     int i;
 
     build_tree(&t);
-    fprintf(stderr,"arbre");
+    
     arbre_vers_code(t,s);
 
     fprintf(stderr,"code avant %s\n",s);
