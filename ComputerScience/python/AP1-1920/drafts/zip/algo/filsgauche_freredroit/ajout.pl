@@ -24,7 +24,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 
 #author=Marc Zipstein
-title=Appartenance dans un arbre lexical fils gauche frère droit
+title=Ajout dans un arbre lexical fils gauche frère droit
 tag=recherche
 
 editor.height=300px
