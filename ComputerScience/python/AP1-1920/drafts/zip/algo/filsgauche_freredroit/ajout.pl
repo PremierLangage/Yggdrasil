@@ -36,7 +36,7 @@ On utilise le type:
         char lettre;  
         struct noeud *filsg,*frered;  
 }Noeud,*Arbre;  
-Ecrire une fonction **ajoute** qui reçoit un arbre et un mot et aloute le mot à l'arbre. La fonction renvoie 1 si le mot appartient à  l'arbre ou si  l'ajout est réussi. En cas d'échec elle renvoie 0;
+Ecrire une fonction **ajoute** qui reçoit un arbre et un mot et ajoute le mot à l'arbre. La fonction renvoie 1 si le mot appartient à  l'arbre ou si  l'ajout est réussi. En cas d'échec elle renvoie 0;
 
 ==
 
@@ -121,7 +121,7 @@ Noeud * allocate_node(char val){
   Noeud * n = malloc(sizeof(Noeud));
 
   if (!n){
-    fprintf(stderr, "problème allocation mémoire.\n");
+    fprintf(stderr, "problème allocation mémoire\n");
     return NULL;
   }
   n->filsg = NULL;
@@ -167,7 +167,7 @@ int ajoute_mot(Arbre *a, char *mot){
    
     while(1==    scanf("%256s", mot))   {
       if (0==ajoute_mot(t,mot)){
-      fprintf(stderr, "problème allocation mémoire*\n");
+      fprintf(stderr, "problème allocation mémoire\n");
       return 0;
       }
     }
@@ -197,7 +197,7 @@ void arbre_vers_code(  Arbre t,char *s){
 int main(int argc,char * argv[]){
     Arbre t=NULL;
     char s[300]={'\0'};
-    int i;
+    
 
     build_tree(&t);
     
@@ -205,8 +205,7 @@ int main(int argc,char * argv[]){
 
     fprintf(stderr,"code avant %s\n",s);
     ajoute(&t,"toto");
-    for(i=0;i<300;i++)
-        s[i]='\0'; 
+    s[0]={'\0'};
     arbre_vers_code(t,s);
     fprintf(stderr,"code apres %s\n",s);
 
