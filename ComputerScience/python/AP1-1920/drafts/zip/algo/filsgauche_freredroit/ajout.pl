@@ -205,7 +205,7 @@ int main(int argc,char * argv[]){
 
     fprintf(stderr,"code avant %s\n",s);
     ajoute(&t,"toto");
-    s[0]={'\0'};
+    s[0]=['\0'];
     arbre_vers_code(t,s);
     fprintf(stderr,"code apres %s\n",s);
 
