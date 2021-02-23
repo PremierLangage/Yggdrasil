@@ -198,7 +198,7 @@ void arbre_vers_code(  Arbre t,char *s){
 int main(int argc,char * argv[]){
     Arbre t=NULL;
     char s[300]={'\0'};
-    
+int i;    
 
     build_tree(&t);
     
@@ -206,7 +206,8 @@ int main(int argc,char * argv[]){
 
     fprintf(stderr,"code avant %s\n",s);
     ajoute(&t,"toto");
-    s[0]='\0';
+    for(i=0;i<300;i++)
+        s[i]='\0';
     arbre_vers_code(t,s);
     fprintf(stderr,"code apres %s\n",s);
 
