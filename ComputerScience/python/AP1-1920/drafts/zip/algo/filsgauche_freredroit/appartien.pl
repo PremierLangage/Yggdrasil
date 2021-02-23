@@ -160,12 +160,11 @@ void arbre_vers_code(  Arbre t,char *s){
 }
 int main(int argc,char * argv[]){
     Arbre t=NULL;
-    char s[300]={'\0'};
-int i;    
+     
 
     build_tree(&t);
     
-    if(appartient(t,"le")
+    if(appartient(t,"le"))
     fprintf(stderr,"-le- est dans l'arbre");
     else
     fprintf(stderr,"-le- n'est pas dans l'arbre");
