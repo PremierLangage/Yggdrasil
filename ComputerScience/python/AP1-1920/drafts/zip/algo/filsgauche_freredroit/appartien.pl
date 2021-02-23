@@ -41,12 +41,12 @@ La fonction renvoie 1 si le mot appartient à  l'arbre et 0 sinon..
 editor.code==#|c|
 
 int appartient(Arbre a,char *mot){
-    if((a==NULL){
+    if(a==NULL){
         return 0;
     if (*mot<a->lettre)
         return appartient(a->frered,mot);
     if(*mot> a->lettre)
-     return 1;
+     return 0;
 
     if (*mot != '\0')
         return appartient(a->filsg,mot+1);
@@ -56,7 +56,7 @@ int appartient(Arbre a,char *mot){
 
 solution==#|c|
 int appartient(Arbre a,char *mot){
-    if((a==NULL){
+    if(a==NULL){
         return 0;
     if (*mot<a->lettre)
         return appartient(a->frered,mot);
