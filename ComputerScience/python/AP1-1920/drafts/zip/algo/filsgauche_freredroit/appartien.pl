@@ -61,7 +61,7 @@ int appartient(Arbre a,char *mot){
     if (*mot<a->lettre)
         return appartient(a->frered,mot);
     if(*mot> a->lettre)
-     return 1;
+     return 0;
 
     if (*mot != '\0')
         return appartient(a->filsg,mot+1);
