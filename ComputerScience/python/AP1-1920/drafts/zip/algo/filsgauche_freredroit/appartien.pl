@@ -43,9 +43,9 @@ editor.code==#|c|
 int appartient(Arbre a,char *mot){
     if(a==NULL)
         return 0;
-    if (*mot<a->lettre)
+    if (*mot>a->lettre)
         return appartient(a->frered,mot);
-    if(*mot> a->lettre)
+    if(*mot<a->lettre)
      return 0;
 
     if (*mot != '\0')
@@ -58,7 +58,7 @@ solution==#|c|
 int appartient(Arbre a,char *mot){
     if(a==NULL)
         return 0;
-    if (*mot<a->lettre)
+    if (*mot>a->lettre)
         return appartient(a->frered,mot);
     if(*mot> a->lettre)
      return 0;
