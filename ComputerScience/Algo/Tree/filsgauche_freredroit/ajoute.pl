@@ -42,8 +42,6 @@ Ecrire une fonction **ajoute** qui re√ßoit un arbre et un mot et ajoute le mot √
 ==
 
 editor.code==#|c|
-
-
 int ajoute(Arbre *a, char *mot){
  
  }
