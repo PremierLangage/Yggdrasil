@@ -130,10 +130,10 @@ int init(Tas *t){
 }
 
 int main(int argvc,char* argv[]){
-  Tas t;
-  int i,x;
-  if(init(&t)==0)
-    return 1; 
+    Tas t;
+    int i,x;
+    if(init(&t)==0)
+        return 1; 
     i=0;
     while(1==    scanf("%d",&x)){
         ajoute(&t,x);
