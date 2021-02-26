@@ -131,7 +131,7 @@ int init(Tas *t){
 
 int main(int argvc,char* argv[]){
     Tas t;
-    int i,x;
+    int x;
     if(init(&t)==0)
         return 1; 
     i=0;
@@ -139,7 +139,7 @@ int main(int argvc,char* argv[]){
         ajoute(&t,x);
         affiche(t);
     }
-  }
+
   return 0;
 }
 ==
