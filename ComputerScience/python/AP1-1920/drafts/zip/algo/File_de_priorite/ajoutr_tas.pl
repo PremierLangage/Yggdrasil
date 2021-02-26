@@ -149,9 +149,10 @@ int main(int argvc,char* argv[]){
 
 
 checks_args_stdin==#|python|
-	[["Arbre feuille","","a"],
-	 ["arbre à 3 mots","","le la les "],
-   ["arbre aléatoire","","un une du de des"+" "+choice(['dune',"deux","le","route","un","une"])]
-	]
+	[["Arbre feuille","","4"],
+	 ["arbre à 3 mots","","l12 , 5 ;2"],
+     ["Arbre aléatoire II", []," ".join([ str(randint(1,100)) for i in range(10) ])]
+]
 ==
+
 
