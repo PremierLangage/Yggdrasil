@@ -132,7 +132,7 @@ int init(Tas *t){
 
 int main(int argvc,char* argv[]){
     Tas t;
-    int x;
+    int i,x;
     if(init(&t)==0)
         return 1; 
     i=0;
