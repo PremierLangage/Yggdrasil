@@ -118,7 +118,8 @@ void affiche(Tas t){
     printf("%d \n",t.taille);
     for(i=0;i<t.taille;i++)
       printf("%d ",t.arbre[i]);
-  }}
+  }
+}
 int init(Tas *t){
   t->taille=0;
   t->arbre=malloc(BLOC*sizeof(int));
