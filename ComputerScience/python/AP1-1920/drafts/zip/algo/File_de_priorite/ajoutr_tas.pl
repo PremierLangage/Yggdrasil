@@ -63,7 +63,7 @@ int ajoute  (Tas *t,int val){
     }
     return 1;
 }
-=
+==
 
 solution==#|c|
 int ajoute  (Tas *t,int val){
