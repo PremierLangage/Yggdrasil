@@ -115,7 +115,7 @@ void affiche(Tas t){
   int i;
   printf(" \n");
   if (t.arbre!=NULL){
-    printf("%d element%s :",t.taille,t.taille)>1?"s":"");
+    printf("%d element%s :",t.taille,t.taille>1?"s":"");
     for(i=0;i<t.taille;i++)
       printf("%d ",t.arbre[i]);
   }
