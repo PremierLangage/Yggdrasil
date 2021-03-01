@@ -50,7 +50,7 @@ if iQuestion <= nbQuestion:
   intituleQuestion, indicQuestion, bReponse = question(iQuestion,uneLigne)
   text=f'<p><strong>Question {iQuestion} sur {nbQuestion}</strong></p><p>{intituleQuestion}</p>'
   form="{{ input|component}}"
-  grade=""
+  grade=()
 
 else:
   if nbbr == nbQuestion:
