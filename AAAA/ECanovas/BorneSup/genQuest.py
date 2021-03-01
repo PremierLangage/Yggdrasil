@@ -37,9 +37,9 @@ def question(numero,uneLigne):
     indication="(On écrira +oo si l'ensemble n'est pas majoré et -oo si l'ensemble est vide)"
     bReponse=uneLigne['C5:sup']
     if uneLigne['C5:sup'] ==' +':
-     bReponse="$%+\infty%$ "
+     bReponse="$%+\infty%$"
     else:
-     bReponse="$%-\infty%$ "
+     bReponse="$%-\infty%$"
   if numero == 2:
     intiQuestion="Donner un majorant de l'ensemble {{uneLigne['C2:Partie de $%R%$']}}"
     indication="(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)"
