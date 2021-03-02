@@ -2,7 +2,7 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-text=From builder to grader
+title=From builder to grader
 
 text=Il faut cliquer sur valider, normalement ça suffit
 
