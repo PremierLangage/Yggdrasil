@@ -32,14 +32,14 @@ On représente un tas dynamique avec la structure:
         int max;/* nombre maximum d'éléments */
     }Tas;
 On alloue BLOC éléments lorsque le tableau est pleIn et on libère BLOC élémentslorsque 2*BLOC sont vides.
-Ceci écite des allocations_désallocations succéssives.
- Ecrire une fonction **otermin** qui reçoit un Tas et un entier et ajoute l'entier au  tas. La fonction renvoie le
- minimum du tas. Si 2 BLOC sont libres, ils sont libérés.
+Ceci écite des allocations_désallocations succéssives.   
+ Ecrire une fonction **otermin** qui reçoit un Tas et un entier et donne à l'entier la valeur du minimum du  tas.  
+La fonction renvoie 1 si un minimum a été trouvé, 0 sinon;  . Si 2 BLOC sont libres, un BlOc est libéré.
 
 ==
 
 editor.code==#|c|
-int otermin  (Tas *t,int val){
+int otermin  (Tas *t){
     int enfant,parent,tmp;
     int min;
 
