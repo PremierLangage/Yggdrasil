@@ -3,7 +3,7 @@ extends = /model/mathinput.pl
 
 title= Borne Sup
 
-@ bornesup.csv
+@ bornesup0.csv
 @ genQuest.py
 
 
