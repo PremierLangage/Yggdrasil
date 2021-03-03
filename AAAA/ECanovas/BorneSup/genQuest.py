@@ -30,10 +30,18 @@ def initDonnees():
         listeBornesup=list(csv.DictReader(csvfile, delimiter=';'))
     return random.choice(listeBornesup)
 
-def bonneRepQ3(essai,bReponse):
-    if essai.lower() == bReponse:
-      return True
-    return False
+def functype2(a,b):
+  return a==b
+
+def functype2(a,b=true):
+  if (a.eqgal("oui") and b) return true
+  if (a.eqgal("non") and ! b )return true
+  return false
+
+
+
+lafonction=functype2
+
 
 def question(numero,uneLigne):
 
@@ -42,23 +50,25 @@ def question(numero,uneLigne):
     intiQuestion="Quelle est la borne supérieure de l'ensemble {{uneLigne['C2:Partie de $%R%$']}} "
     indication="(On écrira +oo si l'ensemble n'est pas majoré et -oo si l'ensemble est vide)"
     if uneLigne['C5:sup'] =='+':
-      bReponse="+\infty"
+     bReponse="+\infty"
     if uneLigne['C5:sup'] =='-':
-      bReponse="-\infty"
+     bReponse="-\infty"
   if numero == 2:
     intiQuestion="Donner un majorant de l'ensemble {{uneLigne['C2:Partie de $%R%$']}}"
     indication="(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)"
     if uneLigne['C5:sup'] =='+':
-      bReponse="+\infty"
+     bReponse="+\infty"
     if uneLigne['C5:sup'] =='-':
-      bReponse="-\infty"
+     bReponse="-\infty"
+
+     lafonction=functype2
   if numero == 3:
     intiQuestion="L'ensemble {{uneLigne['C2:Partie de $%R%$']}} a-t-il un plus grand élément ?"
     indication="(On écrira le texte oui ou le texte non)"
-    if uneLigne['C5:sup'] !='+':
-      bReponse="oui"
+    if uneLigne['C5:sup'] =='+':
+     bReponse="oui"
     else:
-      bReponse="non"
+     bReponse="non"
 
   return intiQuestion,indication,bReponse
 
