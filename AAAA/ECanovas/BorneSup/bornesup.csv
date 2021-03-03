@@ -1,8 +1,8 @@
 C1:type;C2:Partie de $%R%$;C3:majoré;C4:minoré;C5:sup;C6:inf;C7:pge (max);C8:ppe (min)
 I1;$%[0,2[%$;+;+;2;0;-;+
 I1;$%[\sqrt{3},3[%$;+;+;3;$%\sqrt{3}%$;-;+
-I1;$%[\sqrt{3}, 2]%$;+;+;2;$%\sqrt{3}%$;+;+
-I2;$%[\sqrt{3}, 2[\cap\mathbb{Q}%$;+;+;2;$%\sqrt{3}%$;-;-
-I2;$%]1,\frac{pi}{2}[\cap\mathbb{Q}%$;+;+;$%\frac{pi}{2}%$;1;-;-
-I2;$%[\sqrt{3},2]\cap\mathbb{Q}%$;+;+;2;$%\sqrt{3}%$;+;+
-I3;$%[\sqrt{3},+\infty[%$;-;+;+;$%\sqrt{3}%$;-;+
+I1;$%[\sqrt{3},4]%$;+;+;4;$%\sqrt{3}%$;+;+
+I2;$%[\sqrt{3},5[\cap\mathbb{Q}%$;+;+;5;$%\sqrt{3}%$;-;-
+I2;$%]1,\frac{6\pi}{5}[\cap\mathbb{Q}%$;+;+;$%\frac{6\pi}{5}%$;1;-;-
+I2;$%[\sqrt{7},7]\cap\mathbb{Q}%$;+;+;7;$%\sqrt{7}%$;+;+
+I3;$%[8\sqrt{3},+\infty[%$;-;+;+;$%8\sqrt{3}%$;-;+
