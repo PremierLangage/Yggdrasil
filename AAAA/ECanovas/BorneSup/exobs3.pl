@@ -37,9 +37,9 @@ form==
 ==
 
 evaluator==
-from genQuest import bonneRepQ3,testReponse
+from genQuest import bonneRepQ3
 
-if testReponse(input.value,bReponse) == True:
+if bonneRepQ3(input.value,bReponse) == True:
     nbbr += 1 
     kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr} </span>'
     grade = (100, kback)
