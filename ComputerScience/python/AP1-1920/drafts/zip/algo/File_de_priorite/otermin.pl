@@ -107,7 +107,8 @@ int otermin  (Tas *t,int *min){
     }
     else
       break;
-  }}                            
+  }return 1;
+  }                            
 
 ==
 
@@ -161,7 +162,7 @@ void affiche(Tas t){
     for(i=0;i<t.taille;i++)
       printf("%d ",t.arbre[i]);
   }
-  printf("\n")
+  printf("\n");
 }
 int init(Tas *t){
   t->taille=0;
