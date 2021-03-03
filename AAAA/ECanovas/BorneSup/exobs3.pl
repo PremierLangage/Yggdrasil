@@ -12,7 +12,7 @@ title= Borne Sup 3
 
 before ==#|python|
 
-from genQuest import initDonnees, question
+from genQuest import initDonnees, question, testQuestion
 
 uneLigne=initDonnees()
 
@@ -39,7 +39,7 @@ form==
 evaluator==
 
 
-if bReponse == input.value:
+if testQuestion(input.value,bReponse == input.value):
     nbbr += 1 
     kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr} </span>'
     grade = (100, kback)
