@@ -16,7 +16,7 @@ from genQuest import initDonnees, question
 uneLigne=initDonnees()
 
 # ENCHAINEMENT Exercice à 3 questions puis reboucle
-nbQuestion=3
+
 iQuestion=1
 # nombre de bonnes réponses
 nbbr=0
@@ -26,8 +26,10 @@ intituleQuestion, indicQuestion, bReponse = question(1,uneLigne)
 ==
 
 text==#|markdown|
-<p><strong>Question {{iQuestion}} sur {{nbQuestion}}</strong></p>
-<p>{{intituleQuestion}} ?</p>
+
+# titre 
+{{intituleQuestion}} 
+
 ==
 form==
 {{ input|component}}
