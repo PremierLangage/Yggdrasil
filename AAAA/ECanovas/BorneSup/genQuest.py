@@ -34,9 +34,9 @@ def functype2(a,b):
   return a==b
 
 def functype3(a,b=true):
-  if a.eqgal("oui") and b:
+  if (a.lower()=="oui" or a[0].lower()=="o") and b:
     return true
-  if  a.eqgal("non") and ! b:
+  if (a.lower()=="non" or a[0].lower()=="n" ) and ! b:
     return true
   return false
 
