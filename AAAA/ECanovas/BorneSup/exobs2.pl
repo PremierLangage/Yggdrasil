@@ -3,7 +3,7 @@
 
 extends = /model/mathinput.pl
 
-title= Borne Sup 2
+title= Borne Sup
 
 @ bornesup.csv
 @ genQuest.py
@@ -30,7 +30,7 @@ text==#|markdown|
 
 
 {{intituleQuestion}} 
-{{indicQuestion}}
+
 ==
 form==
 {{ input|component}}
@@ -39,12 +39,12 @@ form==
 evaluator==
 
 
-if bReponse == input.value:
+if lafonction(bReponse ,input.value):
     nbbr += 1 
     kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr} </span>'
     grade = (100, kback)
 else:
-    kback =  f'<span class="error-state">la bonne réponse $%{bReponse}%$ est différente de {input.value} </span>'
+    kback =  f'<span class="error-state">la bonne réponse $%{bReponse}%$ est différente de  {input.value} </span>'
     grade = (0,kback)
 
 ==
