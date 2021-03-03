@@ -41,7 +41,7 @@ evaluator==
 
 if bReponse == input.value:
     nbbr += 1 
-    kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>'
+    kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr} </span>'
     grade = (100, kback)
 else:
     kback =  f'<span class="error-state">la bonne réponse $%{bReponse}%$ est différente de  {input.value} </span>'
