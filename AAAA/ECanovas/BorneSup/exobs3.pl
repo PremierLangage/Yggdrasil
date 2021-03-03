@@ -37,6 +37,7 @@ form==
 ==
 
 evaluator==
+from genQuest import bonneRepQ3
 bRep=bonneRepQ3(input.value,bReponse)
 
 if bonneRepQ3(input.value,bReponse) == true:
