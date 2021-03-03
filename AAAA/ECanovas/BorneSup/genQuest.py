@@ -32,18 +32,21 @@ def initDonnees():
 
 def question(numero,uneLigne):
 
+  bReponse=uneLigne['C5:sup']
   if numero == 1:
-    intiQuestion="Quelle est la borne supérieure de l'ensemble {{uneLigne['C2:Partie de $%R%$']}} "
+    intiQuestion="Quel est la borne supérieure de l'ensemble {{uneLigne['C2:Partie de $%R%$']}} "
     indication="(On écrira +oo si l'ensemble n'est pas majoré et -oo si l'ensemble est vide)"
-    bReponse=uneLigne['C5:sup']
     if uneLigne['C5:sup'] ==' +':
      bReponse="+\infty"
-    else:
+    if uneLigne['C5:sup'] ==' -':
      bReponse="-\infty"
   if numero == 2:
     intiQuestion="Donner un majorant de l'ensemble {{uneLigne['C2:Partie de $%R%$']}}"
     indication="(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)"
-    bReponse=uneLigne['C5:sup']
+    if uneLigne['C5:sup'] ==' +':
+     bReponse="+\infty"
+    if uneLigne['C5:sup'] ==' -':
+     bReponse="-\infty"
   if numero == 3:
     intiQuestion="L'ensemble {{uneLigne['C2:Partie de $%R%$']}} a-t-il un plus grand élément ?"
     indication="(On écrira le texte oui ou le texte non)"
