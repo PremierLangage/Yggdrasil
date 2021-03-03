@@ -12,7 +12,7 @@ title= Borne Sup
 
 before ==#|python|
 
-from genQuest import initDonnees, question
+from genQuest import initDonnees, question,lafonction
 
 uneLigne=initDonnees()
 
