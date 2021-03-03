@@ -22,7 +22,7 @@ iQuestion=1
 # nombre de bonnes réponses
 nbbr=0
 
-intituleQuestion, indicQuestion, bReponse = question(1,uneLigne)
+intituleQuestion, indicQuestion, bReponse = question(2,uneLigne)
 
 ==
 
