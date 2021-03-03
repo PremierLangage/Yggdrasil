@@ -33,7 +33,7 @@ def initDonnees():
 def question(numero,uneLigne):
 
   if numero == 1:
-    intiQuestion="Quel est la borne supérieure de l'ensemble {{uneLigne['C2:Partie de $%R%$']}} "
+    intiQuestion="Quelle est la borne supérieure de l'ensemble {{uneLigne['C2:Partie de $%R%$']}} "
     indication="(On écrira +oo si l'ensemble n'est pas majoré et -oo si l'ensemble est vide)"
     bReponse=uneLigne['C5:sup']
     if uneLigne['C5:sup'] ==' +':
