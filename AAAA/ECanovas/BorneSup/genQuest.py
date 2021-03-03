@@ -34,7 +34,8 @@ def bonneRepQ3(essai,bReponse):
     if essai.lower() == bReponse:
       return True
     return False
-def testReponse
+def testReponse:
+    return False
 
 def question(numero,uneLigne):
 
