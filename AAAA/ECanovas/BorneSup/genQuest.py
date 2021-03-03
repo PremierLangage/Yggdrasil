@@ -36,7 +36,7 @@ def functype2(a,b):
 def functype3(a,b=true):
   if (a.lower()=="oui" or a[0].lower()=="o") and b:
     return true
-  if (a.lower()=="non" or a[0].lower()=="n" ) and ! b:
+  if (a.lower()=="non" or a[0].lower()=="n" ) and not b:
     return true
   return false
 
