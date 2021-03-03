@@ -30,8 +30,8 @@ def initDonnees():
         listeBornesup=list(csv.DictReader(csvfile, delimiter=';'))
     return random.choice(listeBornesup)
 
-def bonneRepQ3(essai):
-    if essai in ("Oui","oui","yes","Yes"):
+def bonneRepQ3(essai,bReponse):
+    if essai.lower() == bReponse:
       return true
     return false
 
