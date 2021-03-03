@@ -195,7 +195,7 @@ int main(int argvc,char* argv[]){
 checks_args_stdin==#|python|
 	[["Arbre feuille","","4"],
 	 ["arbre à 3 mots","","12  5 2"],
-     ["Arbre aléatoire II", []," ".join([ str(randint(1,100)) for i in range(10) ])]
+     ["Arbre aléatoire II", []," ".join([ str(randint(1,100)) for i in range(11) ])]
 ]
 ==
 
