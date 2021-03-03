@@ -34,8 +34,6 @@ def bonneRepQ3(essai,bReponse):
     if essai.lower() == bReponse:
       return True
     return False
-def testReponse():
-    return False
 
 def question(numero,uneLigne):
 
@@ -55,7 +53,6 @@ def question(numero,uneLigne):
     if uneLigne['C5:sup'] =='-':
      bReponse="-\infty"
   if numero == 3:
-    testReponse=bonneRepQ3
     intiQuestion="L'ensemble {{uneLigne['C2:Partie de $%R%$']}} a-t-il un plus grand élément ?"
     indication="(On écrira le texte oui ou le texte non)"
     if uneLigne['C5:sup'] =='+':
