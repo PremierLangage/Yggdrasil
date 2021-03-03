@@ -27,7 +27,7 @@ intituleQuestion, indicQuestion, bReponse = question(1,uneLigne)
 
 text==#|markdown|
 
-# titre 
+
 {{intituleQuestion}} 
 
 ==
