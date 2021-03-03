@@ -37,7 +37,7 @@ form==
 ==
 
 evaluator==
-
+bRep=bReponse.lower()
 
 if bonneRepQ3(input.value,bReponse) == true:
     nbbr += 1 
