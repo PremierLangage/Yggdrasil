@@ -78,37 +78,7 @@ int otermin  (Tas *t,int *min){
 solution==#|c|
 
 int otermin  (Tas *t,int *min){
-    int enfantg,enfantd,parent,temp;
-  if(t->taille <=0)
-    return 0;
-  *min=t->arbre[0];
-  t->arbre[0]=t->arbre[t->taille -1];
-  if(t->taille==t->max-2*BLOC+1){
-    int *tmp;
-    if((tmp=realloc(t->arbre,(t->taille+BLOC)*sizeof(int)))==NULL)
-	    return 0;
-    else{
-      t->arbre=tmp;
-      t->max-=BLOC;
-    }
-  }
-
-  t->taille--;
-  parent=0;
-  enfantg=1;enfantd=2;
-  while(enfantg<t->taille){
-    if(enfantd<t->taille && t->arbre[enfantd]< t->arbre[enfantg])
-      enfantg=enfantd;
-    if  (t->arbre[parent]> t->arbre[enfantg]){
-      temp=t->arbre[parent];
-      t->arbre[parent]=t->arbre[enfantg];
-      t->arbre[enfantg]=temp;
-      parent=enfantg;
-      enfantg=2*parent+1;enfantd=enfantg+1;
-    }
-    else
-      break;
-  }return 1;
+ 
   }                            
 
 ==
