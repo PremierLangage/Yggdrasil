@@ -44,7 +44,7 @@ if bonneRepQ3(input.value,bReponse) == True:
     kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr} </span>'
     grade = (100, kback)
 else:
-    kback =  f'<span class="error-state">la bonne réponse $%{bReponse}%$ est différente de {input.value} </span>'
+    kback =  f'<span class="error-state">la bonne réponse $%{bReponse}%$ est différente de {input.value.lower()} </span>'
     grade = (0,kback)
 
 ==
