@@ -46,7 +46,6 @@ lafonction=functype2
 
 
 def question(numero,uneLigne):
-  lafonction=[functype2,functype2,functype3][numero-1]
   bReponse=uneLigne['C5:sup']
   if numero == 1:
     intiQuestion="Quelle est la borne supérieure de l'ensemble {{uneLigne['C2:Partie de $%R%$']}} "
