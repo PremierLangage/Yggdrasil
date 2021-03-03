@@ -33,12 +33,12 @@ def initDonnees():
 def functype2(a,b):
   return a==b
 
-def functype3(a,b=true):
+def functype3(a,b=True):
   if (a.lower()=="oui" or a[0].lower()=="o") and b:
-    return true
+    return True
   if (a.lower()=="non" or a[0].lower()=="n" ) and not b:
-    return true
-  return false
+    return True
+  return False
 
 
 
