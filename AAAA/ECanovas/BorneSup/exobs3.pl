@@ -3,7 +3,7 @@
 
 extends = /model/mathinput.pl
 
-title= Borne Sup
+title= Borne Sup 3
 
 @ bornesup.csv
 @ genQuest.py
@@ -44,7 +44,7 @@ if bReponse == input.value:
     kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr} </span>'
     grade = (100, kback)
 else:
-    kback =  f'<span class="error-state">la bonne réponse $%{bReponse}%$ est différente de  {input.value} </span>'
+    kback =  f'<span class="error-state">la bonne réponse $%{bReponse}%$ est différente de {input.value} </span>'
     grade = (0,kback)
 
 ==
