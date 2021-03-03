@@ -39,41 +39,96 @@ La fonction renvoie 1 si un minimum a été trouvé, 0 sinon;  . Si 2 BLOC sont 
 ==
 
 editor.code==#|c|
-int otermin  (Tas *t){
-    int enfant,parent,tmp;
-    int min;
 
-    min=t->arbre[0];
-t->arbre[0]=t->arbre[t->taille -1];
-    if(t->taille==t->max-2*BLOC+1){
-        int *tmp;
-	if((tmp=realloc(t->arbre,(t-taille+BLOC)*sizeof(int)))==NULL)
+int otermin  (Tas *t,int *min){
+    int enfantg,enfantd,parent,temp;
+  if(t->taille <=0)
+    return 0;
+  *min=t->arbre[0];
+  t->arbre[0]=t->arbre[t->taille -1];
+  if(t->taille==t->max-2*BLOC+1){
+    int *tmp;
+    if((tmp=realloc(t->arbre,(t->taille+BLOC)*sizeof(int)))==NULL)
 	    return 0;
-	else{
-	    t->arbre=tmp;
-	    t->max-=BLOC;
-	    }
+    else{
+      t->arbre=tmp;
+      t->max-=BLOC;
     }
+  }
 
-    t->taille--;
-
-
-
-    enfant=t->taille -1;
-    parent=(enfant -1)/2;
-    while (enfant>0 && t->arbre[enfant]<t->arbre[parent]){
-      tmp= t->arbre[enfant];
-      t->arbre[enfant]=t->arbre[parent];
-      t->arbre[parent]=tmp;
-      enfant=parent;
-      parent=(parent-1)/2;
+  t->taille--;
+  parent=0;
+  enfantg=1;enfantd=2;
+  while(enfantg<t->taille){
+    if(enfantd<t->taille && t->arbre[enfantd]< t->arbre[enfantg])
+      enfantg=enfantd;
+    if  (t->arbre[parent]> t->arbre[enfantg]){
+      temp=t->arbre[parent];
+      t->arbre[parent]=t->arbre[enfantg];
+      t->arbre[enfantg]=temp;
+      parent=enfantg;
+      enfantg=2*parent+1;enfantd=enfantg+1;
     }
-    return 1;
-}
+    else
+      break;
+  }}                            
 ==
 
 solution==#|c|
-int ajoute  (Tas *t,int val){
+
+int otermin  (Tas *t,int *min){
+    int enfantg,enfantd,parent,temp;
+  if(t->taille <=0)
+    return 0;
+  *min=t->arbre[0];
+  t->arbre[0]=t->arbre[t->taille -1];
+  if(t->taille==t->max-2*BLOC+1){
+    int *tmp;
+    if((tmp=realloc(t->arbre,(t->taille+BLOC)*sizeof(int)))==NULL)
+	    return 0;
+    else{
+      t->arbre=tmp;
+      t->max-=BLOC;
+    }
+  }
+
+  t->taille--;
+  parent=0;
+  enfantg=1;enfantd=2;
+  while(enfantg<t->taille){
+    if(enfantd<t->taille && t->arbre[enfantd]< t->arbre[enfantg])
+      enfantg=enfantd;
+    if  (t->arbre[parent]> t->arbre[enfantg]){
+      temp=t->arbre[parent];
+      t->arbre[parent]=t->arbre[enfantg];
+      t->arbre[enfantg]=temp;
+      parent=enfantg;
+      enfantg=2*parent+1;enfantd=enfantg+1;
+    }
+    else
+      break;
+  }}                            
+
+==
+
+
+
+code_before==#|c|
+#include<stdio.h>
+#include<stdlib.h>
+#define BLOC 5
+
+typedef struct{
+  int taille;
+  int *arbre;
+  int max;
+}Tas;
+
+
+==
+
+code_after==#|c|
+  int ajoute  (Tas *t,int val){
   int enfant,parent,tmp;
 
   if(t->taille==t->max){
@@ -98,34 +153,15 @@ int ajoute  (Tas *t,int val){
     }
     return 1;
 }
-==
-
-
-
-code_before==#|c|
-#include<stdio.h>
-#include<stdlib.h>
-#define BLOC 5
-
-typedef struct{
-  int taille;
-  int *arbre;
-  int max;
-}Tas;
-
-
-==
-
-code_after==#|c|
-
 void affiche(Tas t){
   int i;
-  printf(" \n");
+  printf(" \n taille%d max %d, ",t.taille,t.max );
   if (t.arbre!=NULL){
     printf("%d element%s :",t.taille,t.taille>1?"s":"");
     for(i=0;i<t.taille;i++)
       printf("%d ",t.arbre[i]);
   }
+  printf("\n")
 }
 int init(Tas *t){
   t->taille=0;
@@ -143,10 +179,11 @@ int main(int argvc,char* argv[]){
     if(init(&t)==0)
         return 1; 
     
-    while(1==    scanf("%d",&x)){
+    while(1==    scanf("%d",&x))
         ajoute(&t,x);
-        affiche(t);
-    }
+    printf("avant ");affiche(t);
+    otermin(&t,&x); printf("extrait %d \n",x);
+    printf("apres ");affiche(t);  
 
   return 0;
 }
