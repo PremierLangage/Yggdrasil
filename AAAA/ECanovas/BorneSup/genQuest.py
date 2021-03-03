@@ -42,23 +42,23 @@ def question(numero,uneLigne):
     intiQuestion="Quelle est la borne supérieure de l'ensemble {{uneLigne['C2:Partie de $%R%$']}} "
     indication="(On écrira +oo si l'ensemble n'est pas majoré et -oo si l'ensemble est vide)"
     if uneLigne['C5:sup'] =='+':
-     bReponse="+\infty"
+      bReponse="+\infty"
     if uneLigne['C5:sup'] =='-':
-     bReponse="-\infty"
+      bReponse="-\infty"
   if numero == 2:
     intiQuestion="Donner un majorant de l'ensemble {{uneLigne['C2:Partie de $%R%$']}}"
     indication="(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)"
     if uneLigne['C5:sup'] =='+':
-     bReponse="+\infty"
+      bReponse="+\infty"
     if uneLigne['C5:sup'] =='-':
-     bReponse="-\infty"
+      bReponse="-\infty"
   if numero == 3:
     intiQuestion="L'ensemble {{uneLigne['C2:Partie de $%R%$']}} a-t-il un plus grand élément ?"
     indication="(On écrira le texte oui ou le texte non)"
     if uneLigne['C5:sup'] =='+':
-     bReponse="oui"
+      bReponse="oui"
     else:
-     bReponse="non"
+      bReponse="non"
 
   return intiQuestion,indication,bReponse
 
