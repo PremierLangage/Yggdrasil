@@ -26,7 +26,7 @@ import random
 
 
 def initDonnees():
-    with open("bornesup.csv","r") as csvfile:
+    with open("bornesup0.csv","r") as csvfile:
         listeBornesup=list(csv.DictReader(csvfile, delimiter=';'))
     return random.choice(listeBornesup)
 
