@@ -32,8 +32,8 @@ def initDonnees():
 
 def bonneRepQ3(essai,bReponse):
     if essai.lower == bReponse:
-      return true
-    return false
+      return True
+    return False
 
 def question(numero,uneLigne):
 
