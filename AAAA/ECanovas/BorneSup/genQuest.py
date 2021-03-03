@@ -35,7 +35,8 @@ def bonneRepQ3(essai,bReponse):
       return true
     return false
 
-def testReponse()
+def testReponse():
+    return true
 
 def question(numero,uneLigne):
 
