@@ -38,7 +38,7 @@ evaluator==
 
 if bReponse == input.value:
     nbbr += 1 
-    kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span><p>{intituleQuestion}</p>'
+    kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>'
     grade = (100, kback)
 else:
     kback =  f'<span class="error-state">$%{input.value}%$ et {input.value}</span><span >{text}<br> la bonne réponse  était : {bReponse} </span>'
