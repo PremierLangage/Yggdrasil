@@ -31,7 +31,7 @@ def initDonnees():
     return random.choice(listeBornesup)
 
 def bonneRepQ3(essai,bReponse):
-    if essai.lower() == bReponse:
+    if essai.lower == bReponse:
       return true
     return false
 
