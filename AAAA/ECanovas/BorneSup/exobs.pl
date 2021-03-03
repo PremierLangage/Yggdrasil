@@ -41,7 +41,7 @@ if bReponse == input.value:
     kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span><p>{intituleQuestion}</p>'
     grade = (100, kback)
 else:
-    kback =  f'<span class="error-state">$%{input.value}%$ et {input.value}</span><p>{intituleQuestion}</p><span >{text}<br> la bonne réponse  était : {bReponse} score {nbbr}/{nbQuestion} </span>'
+    kback =  f'<span class="error-state">$%{input.value}%$ et {input.value}</span><span >{text}<br> la bonne réponse  était : {bReponse} </span>'
     grade = (0,kback)
 
 ==
