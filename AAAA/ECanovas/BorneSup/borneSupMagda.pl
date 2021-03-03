@@ -39,17 +39,17 @@ from genQuest import initDonnees,question
 if iQuestion <= nbQuestion:
   if bReponse == input.value:
     nbbr += 1 
-    kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>'
+    kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span><p>{intituleQuestion}</p>'
     grade = (100, ' ')
   else:
-    kback =  f'<span class="error-state">$%{input.value}%$ et {input.value}</span><span >{text}<br> la bonne réponse  était : {bReponse} score {nbbr}/{nbQuestion} </span>'
+    kback =  f'<span class="error-state">$%{input.value}%$ et {input.value}</span><p>{intituleQuestion}</p><span >{text}<br> la bonne réponse  était : {bReponse} score {nbbr}/{nbQuestion} </span>'
     grade = (0,' ')
  
   # boucle sur les 3 questions
   iQuestion += 1
   intituleQuestion, indicQuestion, bReponse = question(iQuestion,uneLigne)
   text=f'{kback} <p><strong>Question {iQuestion} sur {nbQuestion}</strong></p><p>{intituleQuestion}</p>'
-  #form="{{ input|component}}"
+
 else:
   if nbbr == nbQuestion:
     kback=f'<span class="success-state">BRAVO!tout est bon 👏👏👏 </span> <span > {nbbr}/{nbQuestion} </span>'
