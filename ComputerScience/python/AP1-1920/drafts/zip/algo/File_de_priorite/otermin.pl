@@ -71,7 +71,8 @@ int otermin  (Tas *t,int *min){
     }
     else
       break;
-  }}                            
+  }return 1;
+  }                            
 ==
 
 solution==#|c|
