@@ -68,6 +68,6 @@ def question(numero,uneLigne):
      bReponse="oui"
     else:
      bReponse="non"
-
+     lafonction=functype3
   return intiQuestion,indication,bReponse
 
