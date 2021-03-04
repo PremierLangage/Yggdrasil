@@ -37,7 +37,7 @@ form==
 ==
 
 evaluator==
-
+from genQuest import *
 
 if lafonction(input.value,bReponse):
     nbbr += 1 
