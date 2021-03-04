@@ -62,8 +62,8 @@ def question(numero,uneLigne):
     if uneLigne['C5:sup'] =='-':
      bReponse="-\infty"
 
-     lafonction=functype2
   if numero == 3:
+    lafonction=functype3
     intiQuestion="L'ensemble {{uneLigne['C2:Partie de $%R%$']}} a-t-il un plus grand élément ?"
     indication="(On écrira le texte oui ou le texte non)"
     if uneLigne['C5:sup'] =='+':
