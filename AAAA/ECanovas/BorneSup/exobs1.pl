@@ -37,7 +37,7 @@ form==
 ==
 
 evaluator==
-from genQuest import initDonnees, question, lafonction,functype2
+from genQuest import *
 if lafonction(bReponse ,input.value) :
     nbbr += 1 
     kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr} </span>'
