@@ -3,7 +3,7 @@
 
 extends = /model/mathinput.pl
 
-title= Borne Sup 3
+title= Borne Sup
 
 @ bornesup.csv
 @ genQuest.py
@@ -37,9 +37,9 @@ form==
 ==
 
 evaluator==
-from genQuest import *
 
-if lafonction(bReponse ,input.value):
+
+if lafonction(input.value,bReponse):
     nbbr += 1 
     kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr} </span>'
     grade = (100, kback)
