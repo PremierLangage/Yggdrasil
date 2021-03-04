@@ -33,10 +33,8 @@ def initDonnees():
 def functype2(a,b):
   return a==b
 
-def functype3(a,b=True):
-  if (a.lower()=="oui" or a[0].lower()=="o") and b:
-    return True
-  if (a.lower()=="non" or a[0].lower()=="n" ) and not b:
+def functype3(a,b="oui"):
+  if (a.lower()==b or a[0].lower()==b[0]):
     return True
   return False
 
@@ -62,8 +60,8 @@ def question(numero,uneLigne):
     if uneLigne['C5:sup'] =='-':
      bReponse="-\infty"
 
+     lafonction=functype2
   if numero == 3:
-    lafonction=functype3
     intiQuestion="L'ensemble {{uneLigne['C2:Partie de $%R%$']}} a-t-il un plus grand élément ?"
     indication="(On écrira le texte oui ou le texte non)"
     if uneLigne['C5:sup'] =='+':
