@@ -25,7 +25,7 @@ answer=bReponse
 if answer != 'T' and answer != 'F':
     raise Exception('you must define a variable "answer = T or F"')
 
-radio.horizontal = vertical
+radio.horizontal = True
 radio.items = [
     { "id": "choice1", "content": "<i class='fas fa-check'></i>" },
     { "id": "choice2", "content": "<i class='fas fa-times'></i>" }
