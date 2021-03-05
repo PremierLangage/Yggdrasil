@@ -14,7 +14,7 @@ from genQuest import initDonnees, question
 
 uneLigne=initDonnees()
 
-intituleQuestion, indicQuestion, bReponse = question(2,uneLigne)
+intituleQuestion, indicQuestion, bReponse = question(3,uneLigne)
 
 ==
 
