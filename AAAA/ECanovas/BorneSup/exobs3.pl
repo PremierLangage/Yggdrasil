@@ -3,7 +3,9 @@
 #extends = /model/mathinput.pl
 extends = /gift/templates/qtruefalse.pl
 
-title= Borne Sup 3
+title==
+ Borne Sup 3
+==
 
 @ bornesup.csv
 @ genQuest.py
