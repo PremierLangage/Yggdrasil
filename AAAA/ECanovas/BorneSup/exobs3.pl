@@ -45,5 +45,5 @@ Bonne réponse !  👏👏👏
 
 # Feedback shown when the student gives the wrong answer
 feedback_wrong==
-Non la réponse était {% bReponse %}
+Non la réponse était {{bReponse}}
 ==
