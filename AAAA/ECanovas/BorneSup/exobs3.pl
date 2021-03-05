@@ -18,6 +18,8 @@ uneLigne=initDonnees()
 
 intituleQuestion, indicQuestion, bReponse = question(3,uneLigne)
 
+#expected F or T
+answer=bReponse
 
 # FROM templates !!
 if answer != 'T' and answer != 'F':
@@ -35,9 +37,6 @@ text==#|markdown|
 <span>$%{{intituleQuestion}}%$</span> 
 <span>{{indicQuestion}}</span> 
 ==
-
-# Expected answer (T or F)
-answer = T
 
 # Feedback shown when the student gives the right answer
 feedback_correct==
