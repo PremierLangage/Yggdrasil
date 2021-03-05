@@ -60,7 +60,7 @@ def question(numero,uneLigne):
      testReponse=functest2
   if numero == 3:
     intiQuestion="L'ensemble {{uneLigne['C2:Partie de $%R%$']}} a-t-il un plus grand élément ?"
-    indication="(On écrira le texte oui ou le texte non)"
+    indication="(Choississez vrai ou faux)"
     if uneLigne['C5:sup'] =='+':
      bReponse="T"
     else:
