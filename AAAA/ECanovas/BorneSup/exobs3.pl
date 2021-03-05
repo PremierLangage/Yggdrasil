@@ -3,11 +3,8 @@ extends = /gift/templates/qtruefalse.pl
 
 title= Borne Sup 3
 
-
-
 @ bornesup.csv
 @ genQuest.py
-
 
 before ==#|python|
 
@@ -15,18 +12,11 @@ from genQuest import initDonnees, question,lafonction
 
 uneLigne=initDonnees()
 
-# ENCHAINEMENT Exercice à 3 questions puis reboucle
-
-iQuestion=1
-# nombre de bonnes réponses
-nbbr=0
-
 intituleQuestion, indicQuestion, bReponse = question(3,uneLigne)
 
 ==
 
 text==#|markdown|
-
 
 <span>{{intituleQuestion}}</span> 
 <span>{{indicQuestion}}</span> 
