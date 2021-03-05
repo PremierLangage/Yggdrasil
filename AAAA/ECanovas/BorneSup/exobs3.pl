@@ -1,6 +1,6 @@
 
 
-#extends = /model/mathinput.pl
+extends = /model/mathinput.pl
 extends = /gift/templates/qtruefalse.pl
 
 title==
