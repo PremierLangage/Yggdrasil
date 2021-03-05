@@ -23,9 +23,9 @@ answer=bReponse
 
 feedback_wrong="Non la réponse était "+ bReponse
 if bReponse=="F":
-  feedback_wrong+=" X"
+  feedback_wrong += " X"
 else:
-  feedback_wrong+=" V"
+  feedback_wrong += " V"
 
 # FROM templates !!
 if answer != 'T' and answer != 'F':
