@@ -1,7 +1,7 @@
 
 
 #extends = /model/mathinput.pl
-extends = /lib/gift/templates/qtruefalse.pl
+extends = /gift/templates/qtruefalse.pl
 
 title==
  Borne Sup 3
@@ -18,6 +18,14 @@ uneLigne=initDonnees()
 
 intituleQuestion, indicQuestion, bReponse = question(3,uneLigne)
 
+if answer != 'T' and answer != 'F':
+    raise Exception('you must define a variable "answer = T or F"')
+
+radio.horizontal = horizontal
+radio.items = [
+    { "id": "choice1", "content": "<i class='fas fa-check'></i>" },
+    { "id": "choice2", "content": "<i class='fas fa-times'></i>" }
+]
 ==
 
 text==#|markdown|
