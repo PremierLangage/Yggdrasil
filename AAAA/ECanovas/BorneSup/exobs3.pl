@@ -20,7 +20,7 @@ intituleQuestion, indicQuestion, bReponse = question(3,uneLigne)
 
 #expected F or T
 answer=bReponse
-feedback_wrong="Non la réponse était {bReponse}"
+feedback_wrong="Non la réponse était {%bReponse%}"
 
 # FROM templates !!
 if answer != 'T' and answer != 'F':
