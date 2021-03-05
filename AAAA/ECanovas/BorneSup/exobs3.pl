@@ -32,12 +32,12 @@ radio.items = [
 
 text==#|markdown|
 
-<span>$%{intituleQuestion}%$</span> 
+<span>$%{{intituleQuestion}}%$</span> 
 <span>{{indicQuestion}}</span> 
 ==
 
 # Expected answer (T or F)
-answer = F
+answer = bReponse
 
 # Feedback shown when the student gives the right answer
 feedback_correct==
