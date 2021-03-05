@@ -28,8 +28,8 @@ intituleQuestion, indicQuestion, bReponse = question(3,uneLigne)
 text==#|markdown|
 
 
-{{intituleQuestion}} 
-{{indicQuestion}} 
+<span>{{intituleQuestion}}</span> 
+<span>{{indicQuestion}}</span> 
 ==
 
 # Expected answer (T or F)
