@@ -21,11 +21,11 @@ intituleQuestion, indicQuestion, bReponse = question(3,uneLigne)
 #expected F or T
 answer=bReponse
 
-feedback_wrong="Non la réponse était "+ bReponse
+feedback_wrong="Non la réponse était "
 if bReponse=="F":
-  feedback_wrong += " X"
+  feedback_wrong += " vrai (X)"
 else:
-  feedback_wrong += " V"
+  feedback_wrong += " non (V)"
 
 # FROM templates !!
 if answer != 'T' and answer != 'F':
