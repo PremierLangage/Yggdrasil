@@ -1,5 +1,5 @@
 
-extends = /gift/templates/qtruefalse.pl
+##extends = /gift/templates/qtruefalse.pl
 extends = /model/mathinput.pl
 
 title= Borne Sup 3
