@@ -8,7 +8,7 @@ title= Borne Sup 3
 
 before ==#|python|
 
-from genQuest import initDonnees, question,lafonction
+from genQuest import initDonnees, question
 
 uneLigne=initDonnees()
 
