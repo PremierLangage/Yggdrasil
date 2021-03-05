@@ -34,7 +34,7 @@ radio.items = [
 
 text==#|markdown|
 
-<span>$%{{intituleQuestion}}%$</span> 
+<span>{{intituleQuestion}}</span> 
 <span>{{indicQuestion}}</span> 
 ==
 
