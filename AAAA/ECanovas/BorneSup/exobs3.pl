@@ -37,7 +37,7 @@ text==#|markdown|
 ==
 
 # Expected answer (T or F)
-answer = {bReponse}
+answer = T
 
 # Feedback shown when the student gives the right answer
 feedback_correct==
