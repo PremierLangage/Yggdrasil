@@ -42,7 +42,7 @@ Non la réponse était $%{bReponse}%$
 #evaluator==
 #from genQuest import *
 
-#if lafonction(input.value,bReponse):
+#if testReponse(input.value,bReponse):
 #    nbbr += 1 
 #    kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr} </span>'
 #    grade = (100, kback)
