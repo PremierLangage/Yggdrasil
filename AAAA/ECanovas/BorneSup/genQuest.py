@@ -36,7 +36,7 @@ def functest2(a,b):
 def functest3(a,b="oui"):
   if (a.lower()==b or a[0].lower()==b[0]):
     return T
-  return 
+  return F
 
 testReponse=functest2
 
