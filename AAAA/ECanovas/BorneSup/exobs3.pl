@@ -1,13 +1,12 @@
 
+extends = /gift/templates/qtruefalse.pl
+
+title= Borne Sup 3
 
 
-extends = /model/mathinput.pl
-
-title= Borne Sup
 
 @ bornesup.csv
 @ genQuest.py
-
 
 
 before ==#|python|
@@ -32,20 +31,34 @@ text==#|markdown|
 {{intituleQuestion}} 
 {{indicQuestion}} 
 ==
-form==
-{{ input|component}}
+
+# Expected answer (T or F)
+answer = {bReponse}
+
+# Feedback shown when the student gives the right answer
+feedback_correct==
+Bonne réponse !  👏👏👏 
 ==
 
-evaluator==
-from genQuest import *
-
-if lafonction(input.value,bReponse):
-    nbbr += 1 
-    kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr} </span>'
-    grade = (100, kback)
-else:
-    kback =  f'<span class="error-state">la bonne réponse $%{bReponse}%$ est différente de  {input.value} </span>'
-    grade = (0,kback)
-
+# Feedback shown when the student gives the wrong answer
+feedback_wrong==
+Non la réponse était $%{bReponse}%$
 ==
+
+#form==
+#{{ input|component}}
+#==
+
+#evaluator==
+#from genQuest import *
+
+#if lafonction(input.value,bReponse):
+#    nbbr += 1 
+#    kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr} </span>'
+#    grade = (100, kback)
+#else:
+#    kback =  f'<span class="error-state">la bonne réponse $%{bReponse}%$ est différente de  {input.value} </span>'
+#    grade = (0,kback)
+
+#==
 
