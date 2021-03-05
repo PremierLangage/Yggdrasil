@@ -22,7 +22,7 @@ intituleQuestion, indicQuestion, bReponse = question(3,uneLigne)
 answer=bReponse
 
 feedback_wrong="Non la réponse était "+ bReponse
-if bReponse==F:
+if bReponse=="F":
   feedback_wrong+=" X"
 else:
   feedback_wrong+=" V"
