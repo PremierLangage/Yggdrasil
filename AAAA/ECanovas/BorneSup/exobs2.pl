@@ -30,7 +30,7 @@ form==
 ==
 
 evaluator==
-
+from genQuest import *
 
 if testReponse(bReponse ,input.value):
     nbbr += 1 
