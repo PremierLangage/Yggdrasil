@@ -30,18 +30,15 @@ def initDonnees():
         listeBornesup=list(csv.DictReader(csvfile, delimiter=';'))
     return random.choice(listeBornesup)
 
-def functype2(a,b):
+def functest2(a,b):
   return a==b
 
-def functype3(a,b="oui"):
+def functest3(a,b="oui"):
   if (a.lower()==b or a[0].lower()==b[0]):
-    return True
-  return False
+    return T
+  return 
 
-
-
-lafonction=functype2
-
+testReponse=functest2
 
 def question(numero,uneLigne):
   bReponse=uneLigne['C5:sup']
@@ -60,7 +57,7 @@ def question(numero,uneLigne):
     if uneLigne['C5:sup'] =='-':
      bReponse="-\infty"
 
-     lafonction=functype2
+     testReponse=functest2
   if numero == 3:
     intiQuestion="L'ensemble {{uneLigne['C2:Partie de $%R%$']}} a-t-il un plus grand élément ?"
     indication="(On écrira le texte oui ou le texte non)"
@@ -68,6 +65,6 @@ def question(numero,uneLigne):
      bReponse="oui"
     else:
      bReponse="non"
-     lafonction=functype3
+     testReponse=functest3
   return intiQuestion,indication,bReponse
 
