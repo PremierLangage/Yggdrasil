@@ -18,6 +18,8 @@ uneLigne=initDonnees()
 
 intituleQuestion, indicQuestion, bReponse = question(3,uneLigne)
 
+
+# FROM templates !!
 if answer != 'T' and answer != 'F':
     raise Exception('you must define a variable "answer = T or F"')
 
@@ -30,7 +32,7 @@ radio.items = [
 
 text==#|markdown|
 
-<span>{{intituleQuestion}}</span> 
+<span>$%{intituleQuestion}%$</span> 
 <span>{{indicQuestion}}</span> 
 ==
 
