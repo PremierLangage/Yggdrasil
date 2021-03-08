@@ -36,7 +36,7 @@ else:
 feedback_wrong += "</div>"
 
 
-checkbox.setdata_from_rw(mult3, other, 5, rd.randint(1, 4))
+checkbox.setdata_from_rw(bReponse, mReponse, 4, rd.randint(1, 4))
 
 ==
 
