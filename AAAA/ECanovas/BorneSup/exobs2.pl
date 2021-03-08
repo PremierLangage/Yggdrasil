@@ -27,7 +27,7 @@ text==#|markdown|
 
 
 <div>{{intituleQuestion}} ?</div>
-<div style="small">{{indicQuestion}} </div>
+<div><small>{{indicQuestion}}</small></div>
 
 ==
 form==
