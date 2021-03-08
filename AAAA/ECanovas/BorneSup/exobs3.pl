@@ -21,7 +21,7 @@ intituleQuestion, indicQuestion, bReponse = question(3,uneLigne)
 #expected F or T
 answer=bReponse
 
-feedback_wrong="<div class="success-state"><h1>Mauvaise réponse</h1>Non la réponse était "
+feedback_wrong="<div class='success-state'><h1>Mauvaise réponse</h1>Non la réponse était "
 if bReponse=="F":
   feedback_wrong += " vrai (<i class='fas fa-times'></i>)"
 else:
