@@ -37,7 +37,7 @@ feedback_wrong += "</div>"
 
 bVal=bReponse['bonnes']
 aVal=bReponse['autres']
-#checkbox.setdata_from_rw([bReponse['bonnes']], [bReponse['autres']], 4, rd.randint(1, 4))
+#checkbox.setdata_from_rw([bReponse['bonnes']], [bReponse['autres']], 1, rd.randint(1, 4))
 
 ==
 
