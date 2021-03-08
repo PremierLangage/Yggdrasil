@@ -1,11 +1,11 @@
 
 
-#extends = /model/mathinput.pl
+# pour avoir du Latex dans le builder et le grader
 extends = /model/basic.pl
 
 extends = /gift/templates/qtruefalse.pl
 
-@ /model/jinja_env/jinja_env_math.pl [jinja_env.py]
+# @ /model/jinja_env/jinja_env_math.pl [jinja_env.py]
 
 title==
  Borne Sup.
