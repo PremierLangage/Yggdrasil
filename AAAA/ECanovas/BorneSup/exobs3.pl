@@ -3,7 +3,7 @@
 # pour avoir du Latex dans le builder et le grader
 extends = /model/basic.pl
 # nombre de tentatives
-settings.maxattempt % 5
+settings.maxattempt % 1
 
 extends = /gift/templates/qtruefalse.pl
 
