@@ -29,6 +29,7 @@ text==#|markdown|
 form==
 {{ input|component}}
 ==
+
 settings.maxattempt % 1
 
 evaluator==
@@ -36,7 +37,7 @@ from genQuest import *
 
 if testReponse(bReponse ,input.value):
     nbbr += 1 
-    kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr} </span>'
+    kback = f'<span class="success-state">Good 👏👏👏 </span>'
     grade = (100, kback)
 else:
     kback =  f'<span class="error-state">la bonne réponse est $%{bReponse}%$ , différente de {input.value} </span>'
