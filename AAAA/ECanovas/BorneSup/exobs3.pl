@@ -23,9 +23,9 @@ answer=bReponse
 
 feedback_wrong="Non la réponse était "
 if bReponse=="F":
-  feedback_wrong += " vrai (X)"
+  feedback_wrong += " vrai (<i class='fas fa-check'></i>)"
 else:
-  feedback_wrong += " non (V)"
+  feedback_wrong += " non (<i class='fas fa-times'></i>)"
 
 # FROM templates !!
 if answer != 'T' and answer != 'F':
