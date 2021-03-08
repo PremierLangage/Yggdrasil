@@ -66,5 +66,10 @@ def question(numero,uneLigne):
     else:
      bReponse="F"
      testReponse=functest3
+  if numero == 4:
+    intiQuestion="Parmi les valeurs suivantes, cochez les majorants de l'ensemble {{uneLigne['C2:Partie de $%R%$']}}"
+    indication=""
+    bReponse=uneLigne['C9:des_majorants']
+    testReponse=functest2
   return intiQuestion,indication,bReponse
 
