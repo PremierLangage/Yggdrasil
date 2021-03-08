@@ -38,7 +38,7 @@ form==
 
 evaluator==
 from genQuest import *
-if testQuestion(bReponse ,input.value) :
+if testReponse(bReponse ,input.value) :
     nbbr += 1 
     kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr} </span>'
     grade = (100, kback)
