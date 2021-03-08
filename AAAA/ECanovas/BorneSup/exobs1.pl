@@ -23,7 +23,7 @@ intituleQuestion, indicQuestion, bReponse = question(2,uneLigne)
 text==#|markdown|
 
 <div>{{intituleQuestion}} ?</div>
-<div style="small">{{indicQuestion}} </div>
+<div><small>{{indicQuestion}}</small></div>
 ==
 form==
 {{ input|component}}
@@ -37,7 +37,7 @@ if testReponse(bReponse ,input.value):
     kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr} </span>'
     grade = (100, kback)
 else:
-    kback =  f'<span class="error-state">la bonne réponse $%{bReponse}%$ est différente de  {input.value} </span>'
+    kback =  f'<span class="error-state">la bonne réponse est $%{bReponse}%$ , différente de {input.value} </span>'
     grade = (0,kback)
 
 ==
