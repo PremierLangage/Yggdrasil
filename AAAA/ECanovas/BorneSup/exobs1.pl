@@ -1,36 +1,29 @@
 
-
-
 extends = /model/mathinput.pl
 
-title= Borne Sup 1
+title= Borne Sup.
 
 @ bornesup.csv
 @ genQuest.py
 
 
-
 before ==#|python|
 
-from genQuest import initDonnees, question, lafonction
+from genQuest import initDonnees, question
 
 uneLigne=initDonnees()
 
-# ENCHAINEMENT Exercice à 3 questions puis reboucle
-
-iQuestion=1
 # nombre de bonnes réponses
 nbbr=0
 
-intituleQuestion, indicQuestion, bReponse = question(1,uneLigne)
+intituleQuestion, indicQuestion, bReponse = question(2,uneLigne)
 
 ==
 
 text==#|markdown|
 
-
-{{intituleQuestion}} 
-
+<span>{{intituleQuestion}}</span> 
+<span>{{indicQuestion}}</span> 
 ==
 form==
 {{ input|component}}
@@ -38,7 +31,8 @@ form==
 
 evaluator==
 from genQuest import *
-if lafonction(bReponse ,input.value) :
+
+if testReponse(bReponse ,input.value):
     nbbr += 1 
     kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr} </span>'
     grade = (100, kback)
