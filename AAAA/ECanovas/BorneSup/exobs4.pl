@@ -5,6 +5,9 @@ extends = /model/basic.pl
 # nombre de tentatives
 settings.maxattempt % 1
 
+checkbox =: CheckboxGroup
+checkbox.decorator = CustomCheckbox
+
 extends = /gift/templates/qtruefalse.pl
 
 title==
@@ -20,7 +23,7 @@ from genQuest import initDonnees, question
 
 uneLigne=initDonnees()
 
-intituleQuestion, indicQuestion, bReponse = question(3,uneLigne)
+intituleQuestion, indicQuestion, bReponse = question(4,uneLigne)
 
 #expected F or T
 answer=bReponse
@@ -32,17 +35,9 @@ else:
   feedback_wrong += " non (<i class='fas fa-check'></i>)"
 feedback_wrong += "</div>"
 
-# FROM templates !!
-if answer != 'T' and answer != 'F':
-    raise Exception('you must define a variable "answer = T or F"')
 
-radio.horizontal = True
-radio.items = [
-    { "id": "choice1", "content": "<i class='fas fa-check'></i>" },
-    { "id": "choice2", "content": "<i class='fas fa-times'></i>" },
-    { "id": "choice3", "content": "<i class='fas fa-times'></i>" },
-    { "id": "choice4", "content": "<i class='fas fa-times'></i>" }
-]
+checkbox.setdata_from_rw(mult3, other, 5, rd.randint(1, 4))
+
 ==
 
 text==#|markdown|
@@ -50,6 +45,10 @@ text==#|markdown|
 <div>{{intituleQuestion}} ?</div>
 <div><small>{{indicQuestion}}</small></div>
 
+==
+
+form==
+{{ checkbox|component }}
 ==
 
 # Feedback shown when the student gives the right answer
