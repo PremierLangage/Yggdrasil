@@ -52,9 +52,14 @@ form==
 {{ checkbox|component }}
 ==
 
-# Feedback shown when the student gives the right answer
-feedback_correct==
-<div class="success-state"><h1>Bonne réponse</h1>Good 👏👏👏 </div>
+settings.feedback = lightscore
+evaluator ==
+feedback = " "
+score = checkbox.eval()
 ==
+# Feedback shown when the student gives the right answer
+#feedback_correct==
+#<div class="success-state"><h1>Bonne réponse</h1>Good 👏👏👏 </div>
+#==
 
 
