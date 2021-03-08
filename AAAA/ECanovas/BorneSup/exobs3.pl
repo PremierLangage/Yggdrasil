@@ -41,7 +41,7 @@ radio.items = [
 text==#|markdown|
 
 <div>{{intituleQuestion}} ?</div>
-<div style="small">{{indicQuestion}} </div>
+<div><small>{{indicQuestion}}</small></div>
 ==
 
 # Feedback shown when the student gives the right answer
