@@ -47,6 +47,6 @@ text==#|markdown|
 
 # Feedback shown when the student gives the right answer
 feedback_correct==
-Bonne réponse !  👏👏👏 
+<span class="success-state">Good 👏👏👏 </span>
 ==
 
