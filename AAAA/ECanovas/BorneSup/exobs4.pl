@@ -18,7 +18,7 @@ title==
 @ genQuest.py
 
 before ==#|python|
-
+import random as rd
 from genQuest import initDonnees, question
 
 uneLigne=initDonnees()
