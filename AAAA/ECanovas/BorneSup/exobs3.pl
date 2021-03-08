@@ -3,6 +3,8 @@
 # pour avoir du Latex dans le builder et le grader
 extends = /model/basic.pl
 
+settings.maxattempt % 5
+
 extends = /gift/templates/qtruefalse.pl
 
 
