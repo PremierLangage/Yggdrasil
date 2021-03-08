@@ -21,11 +21,12 @@ intituleQuestion, indicQuestion, bReponse = question(3,uneLigne)
 #expected F or T
 answer=bReponse
 
-feedback_wrong="Non la réponse était "
+feedback_wrong="<div class="success-state"><h1>Mauvaise réponse</h1>Non la réponse était "
 if bReponse=="F":
   feedback_wrong += " vrai (<i class='fas fa-times'></i>)"
 else:
   feedback_wrong += " non (<i class='fas fa-check'></i>)"
+feedback_wrong += "</div>"
 
 # FROM templates !!
 if answer != 'T' and answer != 'F':
@@ -47,6 +48,6 @@ text==#|markdown|
 
 # Feedback shown when the student gives the right answer
 feedback_correct==
-<div class="success-state"><h2>Bonne réponse</h2>Good 👏👏👏 </div>
+<div class="success-state"><h1>Bonne réponse</h1>Good 👏👏👏 </div>
 ==
 
