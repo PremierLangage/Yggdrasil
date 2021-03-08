@@ -4,7 +4,7 @@
 extends = /gift/templates/qtruefalse.pl
 
 title==
- Borne Sup 3
+ Borne Sup.
 ==
 
 @ bornesup.csv
