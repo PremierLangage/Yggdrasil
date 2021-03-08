@@ -35,9 +35,12 @@ else:
   feedback_wrong += " non (<i class='fas fa-check'></i>)"
 feedback_wrong += "</div>"
 
-bVal=bReponse['bonnes']
-aVal=bReponse['autres']
-checkbox.setdata_from_rw([bReponse['bonnes']], [bReponse['autres']], 1, rd.randint(1, 4))
+def Convert(string): 
+    li = list(string.split(",")) 
+    return li 
+bVal=list(bReponse['bonnes'].split(","))
+aVal=list(bReponse['autres'].split(","))
+#checkbox.setdata_from_rw([bReponse['bonnes']], [bReponse['autres']], 1, rd.randint(1, 4))
 
 ==
 
