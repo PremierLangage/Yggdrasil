@@ -36,7 +36,7 @@ else:
 feedback_wrong += "</div>"
 
 
-checkbox.setdata_from_rw(bReponse, mReponse, 4, rd.randint(1, 4))
+checkbox.setdata_from_rw(bReponse["bonnes"], bReponse["autres"], 4, rd.randint(1, 4))
 
 ==
 
@@ -44,7 +44,7 @@ text==#|markdown|
 
 <div>{{intituleQuestion}} ?</div>
 <div><small>{{indicQuestion}}</small></div>
-
+<div><small>{{bReponse}}</small></div>
 ==
 
 form==
