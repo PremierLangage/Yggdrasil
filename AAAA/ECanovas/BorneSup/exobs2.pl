@@ -1,13 +1,12 @@
 
-
+# Scénarion/Enchainement par le pltp
 
 extends = /model/mathinput.pl
 
-title= Borne Sup 1
+title= Borne Sup.
 
 @ bornesup.csv
 @ genQuest.py
-
 
 
 before ==#|python|
@@ -15,8 +14,6 @@ before ==#|python|
 from genQuest import initDonnees, question
 
 uneLigne=initDonnees()
-
-# ENCHAINEMENT Exercice à 3 questions puis reboucle
 
 iQuestion=1
 # nombre de bonnes réponses
