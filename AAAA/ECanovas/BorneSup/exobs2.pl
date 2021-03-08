@@ -26,7 +26,7 @@ intituleQuestion, indicQuestion, bReponse = question(1,uneLigne)
 text==#|markdown|
 
 
-<div>{{intituleQuestion}} </div>
+<div>{{intituleQuestion}} ?</div>
 <div style="small">{{indicQuestion}} </div>
 
 ==
