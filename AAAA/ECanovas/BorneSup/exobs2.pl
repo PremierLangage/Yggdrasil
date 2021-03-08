@@ -26,7 +26,8 @@ intituleQuestion, indicQuestion, bReponse = question(1,uneLigne)
 text==#|markdown|
 
 
-{{intituleQuestion}} 
+<div>{{intituleQuestion}} </div>
+<div style="small">{{indicQuestion}} </div>
 
 ==
 form==
