@@ -35,7 +35,7 @@ else:
   feedback_wrong += " non (<i class='fas fa-check'></i>)"
 feedback_wrong += "</div>"
 
-bVal=[bReponse['bonnes']]
+bVal=bReponse['bonnes']
 aVal=bReponse['autres']
 checkbox.setdata_from_rw(bReponse['bonnes'], bReponse['autres'], 4, rd.randint(1, 4))
 
