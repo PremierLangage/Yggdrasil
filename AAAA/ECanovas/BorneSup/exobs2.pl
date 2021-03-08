@@ -15,10 +15,6 @@ from genQuest import initDonnees, question
 
 uneLigne=initDonnees()
 
-iQuestion=1
-# nombre de bonnes réponses
-nbbr=0
-
 intituleQuestion, indicQuestion, bReponse = question(1,uneLigne)
 
 ==
@@ -37,7 +33,7 @@ evaluator==
 from genQuest import *
 if testReponse(bReponse ,input.value) :
     nbbr += 1 
-    kback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr} </span>'
+    kback = f'<span class="success-state">Good 👏👏👏 </span>'
     grade = (100, kback)
 else:
     kback =  f'<span class="error-state">la bonne réponse $%{bReponse}%$ est différente de  {input.value} </span>'
