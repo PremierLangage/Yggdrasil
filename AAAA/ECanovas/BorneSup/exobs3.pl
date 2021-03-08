@@ -42,6 +42,7 @@ text==#|markdown|
 
 <div>{{intituleQuestion}} ?</div>
 <div><small>{{indicQuestion}}</small></div>
+
 ==
 
 # Feedback shown when the student gives the right answer
@@ -49,7 +50,3 @@ feedback_correct==
 Bonne réponse !  👏👏👏 
 ==
 
-# Feedback shown when the student gives the wrong answer
-#feedback_wrong==
-#Non la réponse était {{bReponse}}
-#==
