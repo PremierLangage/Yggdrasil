@@ -15,7 +15,7 @@ checkbox.setdata_from_rw(mult3, other, 5, rd.randint(1, 4))
 ==
 
 text ==
-Parmi les nombres suivants, lesquels sont des multiples de 3 ?
+Parmi les nombres suivants, lesquels sont des multiples de 3 ? {{mult3}}
 ==
 
 settings.feedback = lightscore
