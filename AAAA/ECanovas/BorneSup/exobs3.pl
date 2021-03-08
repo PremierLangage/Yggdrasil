@@ -47,6 +47,6 @@ text==#|markdown|
 
 # Feedback shown when the student gives the right answer
 feedback_correct==
-<div class="success-state"><h3>Bonne réponse</h3>Good 👏👏👏 </div>
+<div class="success-state"><h2>Bonne réponse</h2>Good 👏👏👏 </div>
 ==
 
