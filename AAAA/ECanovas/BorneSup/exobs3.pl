@@ -5,7 +5,6 @@ extends = /model/basic.pl
 
 extends = /gift/templates/qtruefalse.pl
 
-# @ /model/jinja_env/jinja_env_math.pl [jinja_env.py]
 
 title==
  Borne Sup.
