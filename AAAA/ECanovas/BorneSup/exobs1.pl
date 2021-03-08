@@ -29,6 +29,7 @@ text==#|markdown|
 form==
 {{ input|component}}
 ==
+settings.maxattempt % 1
 
 evaluator==
 from genQuest import *
