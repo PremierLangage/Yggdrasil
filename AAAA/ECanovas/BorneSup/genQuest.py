@@ -56,8 +56,7 @@ def question(numero,uneLigne):
      bReponse="+\infty"
     if uneLigne['C5:sup'] =='-':
      bReponse="-\infty"
-
-     testReponse=functest2
+    testReponse=functest2
   if numero == 3:
     intiQuestion="L'ensemble {{uneLigne['C2:Partie de $%R%$']}} a-t-il un plus grand élément"
     indication=""
@@ -65,7 +64,7 @@ def question(numero,uneLigne):
      bReponse="T"
     else:
      bReponse="F"
-     testReponse=functest3
+    testReponse=functest3
   if numero == 4:
     intiQuestion="Parmi les valeurs suivantes, cochez les majorants de l'ensemble {{uneLigne['C2:Partie de $%R%$']}}"
     indication=""
