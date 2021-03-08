@@ -39,8 +39,8 @@ if answer != 'T' and answer != 'F':
 radio.horizontal = True
 radio.items = [
     { "id": "choice1", "content": "<i class='fas fa-check'></i>" },
-    { "id": "choice2", "content": "<i class='fas fa-times'></i>" }
-    { "id": "choice3", "content": "<i class='fas fa-times'></i>" }
+    { "id": "choice2", "content": "<i class='fas fa-times'></i>" },
+    { "id": "choice3", "content": "<i class='fas fa-times'></i>" },
     { "id": "choice4", "content": "<i class='fas fa-times'></i>" }
 ]
 ==
