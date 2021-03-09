@@ -21,6 +21,8 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Taille d'une famille donnée
 
+tag=bash|unix|terminal|cut|grep
+
 before==#|python|
 import random
 
