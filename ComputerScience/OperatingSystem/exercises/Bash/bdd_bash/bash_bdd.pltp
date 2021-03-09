@@ -16,7 +16,7 @@
 author=Nicolas Borie
 title=Système : Base de données primitive en bash (cut, grep, etc)
 
-introduction==
+introduction==#|markdown|
 Un fichier **MJC.txt** a été placé dans votre répertoire courant de travail. 
 Ce fichier est structuré de manière très sérieuse en ligne. Chaque ligne correspond à
 un membre de la MJC(Maison des Jeunes et de la Culture) de la capitale de la Syldavie. 
@@ -88,8 +88,3 @@ occurence est gardé par groupe de lignes réppétées).
 # List of all possibles activities at the MJC
 @ /ComputerScience/OperatingSystem/exercises/Bash/bdd_bash/all_activities.pl
 
-# EXTRA SECOND bdd
-@ /ComputerScience/OperatingSystem/exercises/Bash/bdd2_bash/bdd_size.pl
-@ /ComputerScience/OperatingSystem/exercises/Bash/bdd2_bash/info1.pl
-@ /ComputerScience/OperatingSystem/exercises/Bash/bdd2_bash/list_products.pl
-@ /ComputerScience/OperatingSystem/exercises/Bash/bdd2_bash/heavy_product.pl
