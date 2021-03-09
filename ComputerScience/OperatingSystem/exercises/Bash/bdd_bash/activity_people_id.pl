@@ -21,6 +21,8 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Activités suivies d'un membre connu par son Id
 
+tag=bash|unix|terminal|
+
 before==#|python|
 import random
 
@@ -41,7 +43,7 @@ instructions, expected_stdout = random.choice(experiences)
 
 ==
 
-text==
+text==#|markdown|
 Rappel de la structuration du fichier **MJC.txt**:   
 <br />
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
@@ -52,7 +54,9 @@ Rappel de la structuration du fichier **MJC.txt**:
 `activité lundi, activité mardi, ..., activité dimanche` associé au bon 
 membre (laissez les virgules). Veuillez à faire en sorte que votre 
 commande ne produise que l'affichage demandé seul sur une 
-ligne. N'hésitez à faire plusieus essais.
+ligne.
 ==
 
-
+solution==
+grep MJC.txt -e "756416762" | cut -d ':' -f 5
+==
