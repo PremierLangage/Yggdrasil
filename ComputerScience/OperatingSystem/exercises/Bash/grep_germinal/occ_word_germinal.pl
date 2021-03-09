@@ -44,5 +44,6 @@ solution==
 # voici une solution avec sed qui fait une ligne par mot : sale !
 cat Germinal.txt | sed -e "s/\W/\n/g" | grep -c -e "^[cC]harbon$" -e "^[cC]harbons$"
 cat Germinal.txt | sed -e "s/\W/\n/g" | grep -c -e "^[pP]ère[s]*$"
+sed -e "s/\W/\n/g" Germinal.txt | grep -c -e "^[Mm]aison[s]*$"
 ==
 
