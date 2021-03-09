@@ -33,6 +33,7 @@ editor.code ==
 #! linter:require:before
 
 nb_attempt=0
+best_grade = 0
 
 before==
 ==
@@ -52,11 +53,6 @@ form==
 evaluator==#|python|
 import subprocess
 from utils_bash import display_as_shell_this, frame_message
-
-if not nb_attempt:
-    nb_attempt = 1
-else:
-    nb_attempt += 1
 
 # some initialisations
 feedback = f"    "
@@ -81,6 +77,28 @@ else:
     returncode = sp.returncode
 
     form += display_as_shell_this(editor.code, spout, str(response["user_hack"]), errout, returncode)
+
+    if not nb_attempt:
+        nb_attempt = 1
+    else:
+        nb_attempt += 1
+
+    if not best_grade:
+        best_grade=0
+
+    note_eff = 50 + (200 // (3+nb_attempt))
+
+    tent_rmrq = str(nb_attempt)+" Tentative"
+    if nb_attempt > 1:
+        tent_rmrq = str(nb_attempt)+" Tentatives"
+
+    note_finale = (note_eff * note_tests) // 100
+    best_grade = max([note_finale, best_grade])
+
+    feedback_note = "<u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toutes propositions confondues)</i><br>"
+    feedback_note += "Note pour cette tentative : "+str(note_finale)+"% <br>"
+    feedback_note += "Partie tests : "+str(note_tests)+"% <br>"
+    feedback_note += "Partie efficacité : "+str(note_eff)+"% ("+tent_rmrq+feed_rmrq+")<br><br>"
 
     if expected_stdout == spout:
         feedback = "Bravo, votre code fait le travail !"
