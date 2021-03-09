@@ -14,7 +14,7 @@
 #*****************************************************************************
 
 author=Nicolas Borie
-title=Recherche et comptage textuels dans Germinal
+title=Recherches et comptages textuels dans Germinal
 
 introduction==
 Pour les exercices de shell qui suivent, un fichier texte **Germinal.txt** a été 
