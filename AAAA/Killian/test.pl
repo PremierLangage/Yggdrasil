@@ -8,10 +8,10 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 text = Initialise 2 variables a et b ayant respectivement pour valeurs 2 et 3 puis additionne les dans une variables c
 
 pltest0==
->>> a #Raté
+>>> a #Test initialisation a
 2
->>> b #Encore raté
+>>> b #Test initialisation b
 3
->>> c
+>>> c #Test addition
 5
 ==
