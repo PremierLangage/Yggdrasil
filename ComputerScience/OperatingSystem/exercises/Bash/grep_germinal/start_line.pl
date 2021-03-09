@@ -41,5 +41,7 @@ solution==
 # dépend de la question tirée ! ? .
 # Dans cet exo, les solutions sont hardcodées dans le builder
 grep Germinal.txt -e "{!?.}$" | wc -l
+ou bien 
+grep Germinal.txt -c -e "{!?.}$"
 ==
 
