@@ -44,3 +44,6 @@ résultat numérique seul sur une ligne.
 
 # search long words in Germinals.txt
 @ /ComputerScience/OperatingSystem/exercises/Bash/grep_germinal/long_words.pl
+
+# l'exo WTF pour calmer les gens NRV...
+@ /ComputerScience/C/examples/nb_malloc_one_free.pl
