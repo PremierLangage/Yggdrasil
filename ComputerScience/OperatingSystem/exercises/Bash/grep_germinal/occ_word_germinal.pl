@@ -36,5 +36,11 @@ vous pour que votre résultat numérique soit affiché seul sur une ligne. N'hé
 faire plusieurs essais.
 ==
 
-
+solution==
+# EXO super dur !!!!!
+# dépend de la question tirée
+# Dans cet exo, les solutions sont hardcodées dans le builder
+# voici une solution avec sed qui fait une ligne par mot : sale !
+cat Germinal.txt | sed -e "s/\W/\n/g" | grep -c -e "^[cC]harbon$" -e "^[cC]harbons$"
+==
 
