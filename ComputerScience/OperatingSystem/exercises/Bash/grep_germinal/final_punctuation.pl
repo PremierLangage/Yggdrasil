@@ -21,6 +21,8 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Ponctuation finale des lignes de Germinal.
 
+tag=bash|unix|terminal|grep|regex
+
 before==#|python|
 import random
 
