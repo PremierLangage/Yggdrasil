@@ -21,6 +21,8 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Comptage textuel dans Germinal
 
+tag=bash|unix|terminal|wc
+
 before==
 import random
 
