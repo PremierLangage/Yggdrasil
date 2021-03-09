@@ -26,7 +26,7 @@ tag=bash|unix|terminal|grep|regex
 before==#|python|
 import random
 
-things = [("le nombre de lignes composées uniquement de lettres majuscules", "40\n"),
+things = [("le nombre de lignes non vides composées uniquement de lettres majuscules", "40\n"),
           ("le nombre de lignes contenant un mot de 16 lettres minuscules ou plus", "25\n"),
           ("le nombre de lignes contenant un chiffre", "12\n")]
 (name_thing, expected_stdout) = random.choice(things)
@@ -42,7 +42,7 @@ vous pour que votre résultat numérique soit affiché seul sur une ligne.
 solution==
 # dépend de la question tirée
 # Dans cet exo, les solutions sont hardcodées dans le builder
-
+grep Germinal.txt -c -e "^[A-Z]*$"
 ==
 
 
