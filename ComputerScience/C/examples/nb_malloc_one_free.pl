@@ -41,6 +41,10 @@ Dans le clip du single **Erreur de segmentation** du groupe **Super Core Crazy D
 apparaît un rapport d'analyse d'un programme avec l'utilitaire Valgrind. Sur ce rapport, 
 on peut voir que le programmeur n'a prévu qu'un seul appel à la fonction **free**. Mais 
 combien d'appels à la fonction **malloc** ont été opéré par le programme ?
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gNxTlgc-Ye8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ==
 
 form==
