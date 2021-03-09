@@ -37,7 +37,8 @@ qui affiche **{{ name_thing }}** apparaissant dans le fichier. Débrouillez
 vous pour que votre résultat numérique soit affiché seul sur une ligne. Attention, 
 **!** et **?** ne sont pas des caractères spéciaux pour les expressions régulières 
 mais **.** en est un. Pour forcer un point, il faut soit le déspécialiser avec `\.`
-ou encore le placer entre crochet `[.]`.
+ou encore le placer entre crochet `[.]` quand se dernier est inclus dans une 
+expression régulière **Unix**.
 ==
 
 solution==
