@@ -36,11 +36,11 @@ title==
 Lire un rapport de Valgrind
 ==
 
-text==#|makdown|
-Dans le clip du single **Erreur de segmentation** 
-
-
-
+text==#|markdown|
+Dans le clip du single **Erreur de segmentation** du groupe **Super Core Crazy Dumped**, il 
+apparaît un rapport d'analyse d'un programme avec l'utilitaire Valgrind. Sur ce rapport, 
+on peut voir que le programmeur n'a prévu qu'un seul appel à la fonction **free**. Mais 
+combien d'appels à la fonction **malloc** ont été opéré par le programme ?
 ==
 
 form==
@@ -60,5 +60,5 @@ evaluator==#|python|
 if 2 == int(inputbox.value):
     grade = (100, '''<span class="success-state">Mais oui, c'est clair!</span> <br> <br>''')
 else:
-    grade = (0, '''<span class="error-state">Regardez mieux! Le chat, c'est celui qui a le plus de poil...</span> <br> <br>''')
+    grade = (0, '''<span class="error-state">Regardez mieux! Même si libérer c'est pourri, il faut le faire quand même !</span> <br> <br>''')
 ==
