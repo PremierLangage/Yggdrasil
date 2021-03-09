@@ -84,15 +84,20 @@ else:
         nb_attempt += 1
 
     if not best_grade:
-        best_grade=0
+        best_grade = 0
 
     note_eff = 50 + (200 // (3+nb_attempt))
 
-    tent_rmrq = str(nb_attempt)+" Tentative"
+    tent_rmrq = str(nb_attempt) + " Tentative"
     if nb_attempt > 1:
-        tent_rmrq = str(nb_attempt)+" Tentatives"
+        tent_rmrq = str(nb_attempt) + " Tentatives"
 
-    note_finale = (note_eff * note_tests) // 100
+    if expected_stdout == spout:
+        grade_now = 100
+    else:
+        grade_now = 0
+
+    note_finale = (note_eff * grade_now) // 100
     best_grade = max([note_finale, best_grade])
 
     feedback_note = "<u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toutes propositions confondues)</i><br>"
@@ -102,10 +107,10 @@ else:
 
     if expected_stdout == spout:
         feedback = "Bravo, votre code fait le travail !"
-        grade = (100, frame_message(feedback, "ok"))
+        grade = (note_finale, frame_message(feedback, "ok") + feedback_note)
     else:
         feedback = "Désolé, votre code ne produit pas le résultat attendu. Modifiez votre commande."
-        grade = (0, frame_message(feedback, "error"))
+        grade = (note_finale, frame_message(feedback, "error") + feedback_note)
 
 ==
 
