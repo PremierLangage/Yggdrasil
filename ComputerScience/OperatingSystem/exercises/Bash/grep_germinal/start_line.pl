@@ -37,5 +37,9 @@ qui affiche **{{ name_thing }}** apparaissant dans le fichier. Débrouillez
 vous pour que votre résultat numérique soit affiché seul sur une ligne.
 ==
 
-
+solution==
+# dépend de la question tirée ! ? .
+# Dans cet exo, les solutions sont hardcodées dans le builder
+grep Germinal.txt -e "{!?.}$" | wc -l
+==
 
