@@ -21,6 +21,8 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Quelques lignes par leur contenu
 
+tag=bash|unix|terminal|grep|regex
+
 before==#|python|
 import random
 
