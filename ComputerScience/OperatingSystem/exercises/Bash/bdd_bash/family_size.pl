@@ -42,7 +42,7 @@ instructions, expected_stdout = random.choice(experiences)
 
 ==
 
-text==
+text==#|markdown|
 Rappel de la structuration du fichier **MJC.txt**:   
 <br />
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
@@ -51,7 +51,10 @@ Rappel de la structuration du fichier **MJC.txt**:
 **Donnez le nombre de personnes membres de la MJC dans la famille 
 {{ instructions }}.** Veuillez à faire en sorte que votre 
 commande ne produise que l'affichage numérique seul sur une 
-ligne. N'hésitez à faire plusieus essais.
+ligne.
 ==
 
+solution==
+cut MJC.txt -f 3 -d ':' | grep -e "^NOM_DE_FAMILLE$" | wc -l
+==
 
