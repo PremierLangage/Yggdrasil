@@ -34,7 +34,10 @@ text==#|markdown|
 Un fichier **Germinal.txt** (contenant le texte intégral de l'oeuvre de E. Zola) a 
 été placé dans le répertoire courant de travail. Établissez une **commande shell** 
 qui affiche **{{ name_thing }}** apparaissant dans le fichier. Débrouillez 
-vous pour que votre résultat numérique soit affiché seul sur une ligne.
+vous pour que votre résultat numérique soit affiché seul sur une ligne. Attention, 
+**!** et **?** ne sont pas des caractères spéciaux pour les expressions régulières 
+mais **.** en est un. Pour forcer un point, il faut soit le déspécialiser avec **\.**
+ou encore le placer entre crochet **[.]**.
 ==
 
 solution==
