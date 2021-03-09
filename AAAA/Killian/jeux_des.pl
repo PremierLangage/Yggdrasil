@@ -45,7 +45,9 @@ editor.code==
 from random import randint
 
 def random_value():
+    
 
 def fight():
+    
 
 ==
