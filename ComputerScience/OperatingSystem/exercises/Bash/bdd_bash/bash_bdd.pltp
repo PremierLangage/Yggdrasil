@@ -32,8 +32,7 @@ Chaque ligne suit la structure suivante :
 le **théâtre** le lundi ; les autres jours de la semaine, Daniel ne suit aucune activité. 
 Daniel est membre de la MJC depuis le **12 Juin 2017**.
 
-Rappels pour cette salve d'exercices :
-======================================
+## Rappels pour cette salve d'exercices :
 
     grep -e "MOTIF REGEXP" [fichier ou stdin]
 `grep` permet de selectionner des lignes contenant
