@@ -43,8 +43,7 @@ text==#|markdown|
 Un fichier **Germinal.txt** (contenant le texte intégral de l'oeuvre de E. Zola) a 
 été placé dans le répertoire courant de travail. Établissez une **commande shell** 
 qui affiche **{{ name_thing }}** apparaissant dans le fichier. Débrouillez 
-vous pour que votre résultat numérique soit affiché seul sur une ligne. N'hésitez pas à
-faire plusieurs essais.
+vous pour que votre résultat numérique soit affiché seul sur une ligne.
 ==
 
 solution==
@@ -52,6 +51,6 @@ solution==
 # dépend de la question tirée
 # Dans cet exo, les solutions sont hardcodées dans le builder
 # voici une solution avec sed qui fait une ligne par mot : sale !
-
+sed Germinal.txt -e "s/\W/\n/g" | grep -e "^[a-z]\{19\}$" | sort -u
 ==
 
