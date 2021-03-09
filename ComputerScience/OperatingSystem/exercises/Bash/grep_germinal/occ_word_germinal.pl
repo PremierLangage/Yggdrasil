@@ -21,6 +21,8 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Comptage d'occurences dans Germinal
 
+tag=bash|unix|terminal|grep|regex|difficile
+
 before==#|python|
 import random
 
