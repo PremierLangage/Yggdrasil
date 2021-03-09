@@ -38,7 +38,7 @@ Lire un rapport de Valgrind
 
 text==#|markdown|
 Dans le clip du single **Erreur de segmentation** du groupe **Super Core Crazy Dumped**, il 
-apparaît un rapport d'analyse d'un programme avec l'utilitaire Valgrind. Sur ce rapport, 
+apparaît un rapport d'analyse d'un programme avec l'utilitaire **Valgrind**. Sur ce rapport, 
 on peut voir que le programmeur n'a prévu qu'un seul appel à la fonction **free**. Mais 
 combien d'appels à la fonction **malloc** ont été opéré par le programme ?
 
