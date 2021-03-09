@@ -21,6 +21,8 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Information sur les débuts de ligne
 
+tag=bash|unix|terminal|grep|regex
+
 before==#|python|
 import random
 
