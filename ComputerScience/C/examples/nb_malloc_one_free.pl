@@ -43,7 +43,7 @@ on peut voir que le programmeur n'a prévu qu'un seul appel à la fonction **fre
 combien d'appels à la fonction **malloc** ont été opéré par le programme ?
 
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/gNxTlgc-Ye8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<br><center><iframe width="560" height="315" src="https://www.youtube.com/embed/gNxTlgc-Ye8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br>
 
 ==
 
