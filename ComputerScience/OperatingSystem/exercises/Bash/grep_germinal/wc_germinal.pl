@@ -35,3 +35,7 @@ vous pour votre résultat numérique soit affiché seul sur une ligne. Le nom du
 doit pas être répété, il faudra juste faire afficher la grandeur numérique.
 ==
 
+solution==
+# depend de la question tirée lwc ligne, mot ou caractère
+cat Germinal.txt | wc -{lwc}
+==
