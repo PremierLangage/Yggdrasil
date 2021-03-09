@@ -81,7 +81,7 @@ else:
     if not nb_attempt:
         nb_attempt = 1
     else:
-        nb_attempt = int(nb_atempt) + 1
+        nb_attempt = int(nb_attempt) + 1
 
     best_grade = int(best_grade) if best_grade else 0
     note_eff = 50 + (200 // (3+nb_attempt))
