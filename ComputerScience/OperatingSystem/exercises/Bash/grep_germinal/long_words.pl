@@ -21,9 +21,9 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Lister des mots très longs dans germinals
 
-tag=bash|unix|terminal|grep|regex
+tag=bash|unix|terminal|grep|regex|sort|uniq
 
-before==
+before==#|python|
 import random
 
 things = [
@@ -39,7 +39,7 @@ things = [
 (name_thing, expected_stdout) = random.choice(things)
 ==
 
-text==
+text==#|markdown|
 Un fichier **Germinal.txt** (contenant le texte intégral de l'oeuvre de E. Zola) a 
 été placé dans le répertoire courant de travail. Établissez une **commande shell** 
 qui affiche **{{ name_thing }}** apparaissant dans le fichier. Débrouillez 
