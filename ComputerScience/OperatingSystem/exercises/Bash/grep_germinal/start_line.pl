@@ -34,8 +34,7 @@ text==
 Un fichier **Germinal.txt** (contenant le texte intégral de l'oeuvre de E. Zola) a 
 été placé dans le répertoire courant de travail. Établissez une **commande shell** 
 qui affiche **{{ name_thing }}** apparaissant dans le fichier. Débrouillez 
-vous pour que votre résultat numérique soit affiché seul sur une ligne. N'hésitez pas à
-faire plusieurs essais.
+vous pour que votre résultat numérique soit affiché seul sur une ligne.
 ==
 
 
