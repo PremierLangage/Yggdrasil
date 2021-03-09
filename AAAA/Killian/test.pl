@@ -10,8 +10,14 @@ text = Initialise 2 variables a et b ayant respectivement pour valeurs 2 et 3 pu
 pltest0==
 >>> a #Test initialisation a
 2
+==
+
+pltest1==
 >>> b #Test initialisation b
 3
+==
+
+pltest2==
 >>> c #Test addition
 5
 ==
