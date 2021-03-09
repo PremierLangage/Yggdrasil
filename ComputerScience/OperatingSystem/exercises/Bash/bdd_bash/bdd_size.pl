@@ -41,3 +41,7 @@ commande ne produise que l'affichage numérique seul sur une
 ligne.
 ==
 
+solution==
+# faut pas faire le wc -l directement sur le fichier, stout...
+cat MJC.txt | wc -l
+==
