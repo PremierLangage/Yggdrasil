@@ -21,7 +21,7 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Quelques lignes par leur contenu
 
-before==
+before==#|python|
 import random
 
 things = [("le nombre de lignes composées uniquement de lettres majuscules", "40\n"),
@@ -30,7 +30,7 @@ things = [("le nombre de lignes composées uniquement de lettres majuscules", "4
 (name_thing, expected_stdout) = random.choice(things)
 ==
 
-text==
+text==#|markdown|
 Un fichier **Germinal.txt** (contenant le texte intégral de l'oeuvre de E. Zola) a 
 été placé dans le répertoire courant de travail. Établissez une **commande shell** 
 qui affiche **{{ name_thing }}** apparaissant dans le fichier. Débrouillez 
