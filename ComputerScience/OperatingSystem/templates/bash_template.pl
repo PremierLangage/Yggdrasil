@@ -32,6 +32,8 @@ editor.code ==
 #! linter:require:title::string
 #! linter:require:before
 
+nb_attempt=0
+
 before==
 ==
 
@@ -50,6 +52,11 @@ form==
 evaluator==#|python|
 import subprocess
 from utils_bash import display_as_shell_this, frame_message
+
+if not nb_attempt:
+    nb_attempt = 1
+else:
+    nb_attempt += 1
 
 # some initialisations
 feedback = f"    "
