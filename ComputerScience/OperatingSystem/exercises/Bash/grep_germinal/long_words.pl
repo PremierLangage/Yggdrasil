@@ -21,6 +21,8 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Lister des mots très longs dans germinals
 
+tag=bash|unix|terminal|grep|regex
+
 before==
 import random
 
