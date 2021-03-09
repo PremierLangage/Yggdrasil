@@ -98,7 +98,7 @@ else:
     note_finale = (note_eff * grade_now) // 100
     best_grade = max([note_finale, best_grade])
 
-    feedback_note = "<u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toutes propositions confondues)</i><br>"
+    feedback_note = "<br><u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toutes propositions confondues)</i><br>"
     feedback_note += "Note pour cette tentative : "+str(note_finale)+"% <br>"
     feedback_note += "Partie tests : "+str(grade_now)+"% <br>"
     feedback_note += "Partie efficacité : "+str(note_eff)+"% ("+tent_rmrq+")<br><br>"
