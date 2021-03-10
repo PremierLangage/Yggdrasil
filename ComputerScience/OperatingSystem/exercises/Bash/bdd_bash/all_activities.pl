@@ -21,7 +21,7 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Liste de toutes les activités pratiquées
 
-tag=bash|unix|terminal|
+tag=bash|unix|terminal|cut|sed|grep|sort
 
 before==#|python|
 
@@ -39,6 +39,6 @@ le jour. Ordonner ces activités alphabétiquement, une par ligne.**
 ==
 
 solution==
-cut MJC.txt -d ':' -f 5 | cut -d ',' -f 5 | grep -v -e "^$" | sort -u
+cut MJC.txt -d ':' -f 5 | sed -e "s/,/\n/g" | grep -v -e "^$" | sort -u
 ==
 
