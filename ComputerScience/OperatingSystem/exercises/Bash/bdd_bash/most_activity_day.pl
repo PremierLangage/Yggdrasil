@@ -19,7 +19,7 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 @ MJC.txt
 
 author=Nicolas Borie
-title=Activité la plus pratiquée
+title=Activité la plus pratiquée un jour de la semaine donné
 
 tag=bash|unix|terminal|cut|sort|uniq|grep|sed|head
 
