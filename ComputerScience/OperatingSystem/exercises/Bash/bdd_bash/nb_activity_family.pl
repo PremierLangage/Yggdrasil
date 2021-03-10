@@ -46,8 +46,8 @@ Rappel de la structuration du fichier **MJC.txt**:
 <br />
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
 <br />
-**Étabilissez une commande qui affiche le nombre d'activités différentes pratiquée au 
-sein de la famille {{ instructions }}.** Veuillez à faire en sorte que votre 
+**Étabilissez une commande qui affiche le nombre total d'activités différentes 
+pratiquées au sein de la famille {{ instructions }}.** Veuillez à faire en sorte que votre 
 commande (ou ensemble de commandes) ne produise que l'affichage demandé sans 
 espace ou ligne en trop.
 ==
