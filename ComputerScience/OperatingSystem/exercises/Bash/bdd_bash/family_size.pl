@@ -56,5 +56,6 @@ ligne.
 
 solution==
 cut MJC.txt -f 3 -d ':' | grep -e "^NOM_DE_FAMILLE$" | wc -l
+cut MJC.txt -f 3 -d ':' | grep -c -e "^NOM_DE_FAMILLE$"
 ==
 
