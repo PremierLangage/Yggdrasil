@@ -57,5 +57,7 @@ Rappel de la structuration du fichier **MJC.txt**:
 
 solution==
 grep MJC.txt -e ":Alice:Peltier:" | cut -d ':' -f 4 | sort -n
+grep MJC.txt -e ":D.*:R.*:" | cut -d ':' -f 4 | sort
+grep MJC.txt -e ":.*z.*:.*.z.*:" | cut -d ':' -f 4 | sort
 ==
 
