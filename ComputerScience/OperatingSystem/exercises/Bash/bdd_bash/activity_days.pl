@@ -50,7 +50,7 @@ instructions, expected_stdout = random.choice(experiences)
 
 ==
 
-text==
+text==#|markdown|
 Rappel de la structuration du fichier **MJC.txt**:   
 <br />
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
@@ -59,7 +59,7 @@ Rappel de la structuration du fichier **MJC.txt**:
 **Listez dans l'ordre alphabétique toutes les activités qui sont pratiquées le 
 {{ instructions }} à la MJC, une par ligne.** Veuillez à faire en sorte que votre 
 commande (ou ensemble de commandes) ne produise que l'affichage demandé sans 
-espace ou ligne en trop.
+espace ou ligne en trop (Donc sans ligne vide par exemple).
 ==
 
 solution==
