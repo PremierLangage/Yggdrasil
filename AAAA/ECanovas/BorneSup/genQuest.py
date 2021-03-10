@@ -70,7 +70,7 @@ def question(numero,uneLigne):
      bReponse="F"
     testReponse=functest3
   if numero == 4:
-    intiQuestion="Parmi les valeurs suivantes, cochez les majorants de l'ensemble {{uneLigne['C2:Partie de $%R%$']}}"
+    intiQuestion="Cochez les nombres réels qui sont des majorants de l'ensemble {{uneLigne['C2:Partie de $%R%$']}}"
     indication=""
     bReponse={'bonnes':uneLigne['C9:des_majorants'],'autres':uneLigne['C10:des non-majorants']}
 
