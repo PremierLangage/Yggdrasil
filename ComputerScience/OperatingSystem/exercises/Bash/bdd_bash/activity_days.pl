@@ -21,6 +21,8 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Extraction des activités d'un jour donné
 
+tag=bash|unix|terminal|cut|grep|sort
+
 before==#|python|
 import random
 
@@ -60,7 +62,7 @@ commande (ou ensemble de commandes) ne produise que l'affichage demandé sans
 espace ou ligne en trop. N'hésitez à faire plusieus essais.
 ==
 
-
-
-
+solution==
+cut MJC.txt -d ':' -f 5 | cut -d ',' -f 5 | grep -v -e "^$" | sort -u
+==
 
