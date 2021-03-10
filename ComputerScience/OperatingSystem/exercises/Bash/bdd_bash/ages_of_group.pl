@@ -21,7 +21,7 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Ages des personnes d'un groupe
 
-tag=bash|unix|terminal|
+tag=bash|unix|terminal|grep|cut|sort
 
 before==#|python|
 import random
@@ -55,4 +55,7 @@ Rappel de la structuration du fichier **MJC.txt**:
 (un age par ligne) {{ instructions }}**.
 ==
 
+solution==
+grep MJC.txt -e ":Alice:Peltier:" | cut -d ':' -f 4 | sort -n
+==
 
