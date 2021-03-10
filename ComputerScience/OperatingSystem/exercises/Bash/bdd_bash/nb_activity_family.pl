@@ -21,7 +21,7 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Activités pratiquées dans une famille
 
-tag=bash|unix|terminal|cut|grep|sort
+tag=bash|unix|terminal|cut|grep|sort|wc
 
 before==#|python|
 import random
