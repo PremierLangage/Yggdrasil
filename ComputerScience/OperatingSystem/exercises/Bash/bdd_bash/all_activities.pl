@@ -21,6 +21,8 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Liste de toutes les activités pratiquées
 
+tag=bash|unix|terminal|
+
 before==#|python|
 
 expected_stdout = "Anglais\nArt plastique\nChorale\nCinema\nCirque\nCouture\nCuisine\nDanse\nHistoire\nPate a sel\nPiano\nPoterie\nSophrologie\nSport\nTheatre\nYoga\n"
