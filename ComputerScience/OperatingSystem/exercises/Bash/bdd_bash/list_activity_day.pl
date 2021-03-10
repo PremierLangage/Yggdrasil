@@ -28,9 +28,9 @@ import random
 
 experiences = [
 ("lundis", 
- "     44 Danse\n     41 Piano\n     36 Theatre\n     35 Chorale\n     34 Yoga\n     34 Sophrologie\n"
- "     32 Art plastique\n     31 Histoire\n     30 Cirque\n     29 Anglais\n     27 Sport\n     27 Cuisine\n"
- "     24 Couture\n     20 Cinema"),
+ "    44 Danse\n    41 Piano\n    36 Theatre\n    35 Chorale\n    34 Yoga\n    34 Sophrologie\n"
+ "    32 Art plastique\n    31 Histoire\n    30 Cirque\n    29 Anglais\n    27 Sport\n    27 Cuisine\n"
+ "    24 Couture\n    20 Cinema"),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
