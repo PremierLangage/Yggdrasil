@@ -33,8 +33,7 @@ Rappel de la structuration du fichier **MJC.txt**:
 <br />
 
 **Listez l'ensemble de toutes les activités pratiquées à la MJC peu importe 
-le jour. Ordonner ces activités alphabétiquement, une par ligne.** N'hésitez 
-à faire plusieurs essais.
+le jour. Ordonner ces activités alphabétiquement, une par ligne.**
 ==
 
 
