@@ -33,6 +33,8 @@ experiences = [
 ("Perrin", "12\n"),
 ("Damiens", "7\n"),
 ("Besson", "13\n"),
+("Robin", "9\n"),
+("Kramer", "14\n"),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
