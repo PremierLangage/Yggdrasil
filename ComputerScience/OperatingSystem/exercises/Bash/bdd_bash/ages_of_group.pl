@@ -52,7 +52,7 @@ Rappel de la structuration du fichier **MJC.txt**:
 <br>
 
 **Affichez en ordre croissant l'ensemble des ages avec répétition possible 
-(un age par ligne) {{ instructions }}.**
+(un age par ligne) {{ instructions }}**.
 ==
 
 
