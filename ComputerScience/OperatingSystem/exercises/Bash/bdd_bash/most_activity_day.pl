@@ -19,9 +19,9 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 @ MJC.txt
 
 author=Nicolas Borie
-title=Activité la plus pratiquée un jour de la semaine donné
+title=Activité la plus pratiquée un jour donné
 
-tag=bash|unix|terminal|cut|sort|uniq|grep|sed|head
+tag=bash|unix|terminal|cut|sort|uniq|grep|sed|head|difficile
 
 before==#|python|
 import random
