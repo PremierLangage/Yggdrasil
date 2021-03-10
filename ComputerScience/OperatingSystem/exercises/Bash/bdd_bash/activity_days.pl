@@ -59,7 +59,7 @@ Rappel de la structuration du fichier **MJC.txt**:
 **Listez dans l'ordre alphabétique toutes les activités qui sont pratiquées le 
 {{ instructions }} à la MJC, une par ligne.** Veuillez à faire en sorte que votre 
 commande (ou ensemble de commandes) ne produise que l'affichage demandé sans 
-espace ou ligne en trop. N'hésitez à faire plusieus essais.
+espace ou ligne en trop.
 ==
 
 solution==
