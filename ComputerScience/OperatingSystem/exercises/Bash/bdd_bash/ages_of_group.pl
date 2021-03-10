@@ -21,6 +21,8 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Ages des personnes d'un groupe
 
+tag=bash|unix|terminal|
+
 before==#|python|
 import random
 
