@@ -15,7 +15,7 @@
 #*****************************************************************************
 
 author=Nicolas Borie
-title=Système : Des circuits logiques et des tables de vérité
+title=Des circuits logiques et des tables de vérité
 
 introduction==
 Les exercices suivants génèrent des circuits de portes logiques aléatoires. Vous 
