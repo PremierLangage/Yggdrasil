@@ -21,7 +21,7 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Comptage des couples (prénom, nom) des homonymes
 
-tag=bash|unix|terminal|
+tag=bash|unix|terminal|cut|sort|uniq|wc
 
 before==#|python|
 
@@ -43,4 +43,7 @@ commande ne produise que l'affichage numérique seul sur une
 ligne.
 ==
 
+solution==
+cut MJC.txt -d ':' -f 2,3 | sort | uniq -d | wc -l
+==
 
