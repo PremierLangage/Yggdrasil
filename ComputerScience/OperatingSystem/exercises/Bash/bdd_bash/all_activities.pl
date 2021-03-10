@@ -36,4 +36,7 @@ Rappel de la structuration du fichier **MJC.txt**:
 le jour. Ordonner ces activités alphabétiquement, une par ligne.**
 ==
 
+solution==
+cut MJC.txt -d ':' -f 5 | cut -d ',' -f 5 | grep -v -e "^$" | sort -u
+==
 
