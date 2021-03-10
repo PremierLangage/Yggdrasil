@@ -45,14 +45,14 @@ instructions, expected_stdout = random.choice(experiences)
 
 ==
 
-text==
+text==#|markdown|
 Rappel de la structuration du fichier **MJC.txt**:   
-<br />
+<br>
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
-<br />
+<br>
 
 **Affichez en ordre croissant l'ensemble des ages avec répétition possible 
-(un age par ligne) {{ instructions }}**.
+(un age par ligne) {{ instructions }}.**
 ==
 
 
