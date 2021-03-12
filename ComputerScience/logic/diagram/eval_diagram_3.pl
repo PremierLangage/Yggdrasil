@@ -128,7 +128,7 @@ for item in group.items:
     elif item['content'] == str(final_value):
         item['css'] = 'success-border animated pulse infinite'
 
-feedback = '<center>' + feedback + '</center>'
+feedback = '<center>' + feedback + '</center><br>'
 
 grade = (score, feedback)
 ==
