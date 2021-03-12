@@ -40,7 +40,7 @@ def Convert(string):
     return li 
 bVal=list(bReponse['bonnes'].split(","))
 aVal=list(bReponse['autres'].split(","))
-checkbox.setdata_from_rw(bVal,aVal, 4, rd.randint(1, 4))
+checkbox.setdata_from_rw(bVal,aVal, 4, rd.randint(1, 3))
 
 ==
 
