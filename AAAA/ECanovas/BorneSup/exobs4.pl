@@ -11,7 +11,7 @@ checkbox.decorator = CustomCheckbox
 extends = /gift/templates/qtruefalse.pl
 
 title==
- Borne Sup.
+ Majorants
 ==
 
 @ bornesup.csv
