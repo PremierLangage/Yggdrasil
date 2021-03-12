@@ -5,7 +5,7 @@ extends = /model/mathinput.pl
 # nombre de tentatives
 settings.maxattempt % 1
 
-title= Borne Sup.
+title= Borne supérieure
 
 @ bornesup.csv
 @ genQuest.py
