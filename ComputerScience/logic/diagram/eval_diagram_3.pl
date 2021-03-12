@@ -56,7 +56,7 @@ group.items.append({
 
 title=Évaluation d'un petit circuit logique
 
-text==
+text==#|markdown|
 <style>
  .graph-viewer-component {
  pointer-events: none;
@@ -91,7 +91,7 @@ variables en entrées.
 </center>
 ==
 
-form==
+form==#|markdown|
 
 ==
 
