@@ -9,7 +9,7 @@ extends = /gift/templates/qtruefalse.pl
 
 
 title==
- Borne Sup.
+ Plus grand élément
 ==
 
 @ bornesup.csv
