@@ -48,14 +48,14 @@ def question(numero,uneLigne):
   bReponse=uneLigne['C5:sup']
   if numero == 1:
     intiQuestion="Quelle est la borne supérieure de l'ensemble {{uneLigne['C2:Partie de $%R%$']}} "
-    indication="(On écrira +oo si l'ensemble n'est pas majoré et -oo si l'ensemble est vide)"
+    indication=" "
     if uneLigne['C5:sup'] =='+':
      bReponse="+\infty"
     if uneLigne['C5:sup'] =='-':
      bReponse="-\infty"
   if numero == 2:
     intiQuestion="Donner un majorant de l'ensemble {{uneLigne['C2:Partie de $%R%$']}}"
-    indication="(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)"
+    indication=" "
     if uneLigne['C5:sup'] =='+':
      bReponse="+\infty"
     if uneLigne['C5:sup'] =='-':
