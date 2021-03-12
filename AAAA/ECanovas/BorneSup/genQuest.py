@@ -49,16 +49,16 @@ def question(numero,uneLigne):
   if numero == 1:
     intiQuestion="Quelle est la borne supérieure de l'ensemble {{uneLigne['C2:Partie de $%R%$']}} "
     indication=" "
-    if uneLigne['C5:sup'] =='+':
+    if uneLigne['C5:sup'].strip() =='+':
      bReponse="+\infty"
-    if uneLigne['C5:sup'] =='-':
+    if uneLigne['C5:sup'].strip() =='-':
      bReponse="-\infty"
   if numero == 2:
     intiQuestion="Donner un majorant de l'ensemble {{uneLigne['C2:Partie de $%R%$']}}"
     indication=" "
-    if uneLigne['C5:sup'] =='+':
+    if uneLigne['C5:sup'].strip() =='+':
      bReponse="+\infty"
-    if uneLigne['C5:sup'] =='-':
+    if uneLigne['C5:sup'].strip() =='-':
      bReponse="-\infty"
     testReponse=functest2
   if numero == 3:
