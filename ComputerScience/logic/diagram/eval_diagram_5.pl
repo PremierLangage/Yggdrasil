@@ -20,6 +20,8 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+tag=logique|booléen|circuit
+
 group =: RadioGroup
 
 before==#|python|
