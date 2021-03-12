@@ -20,16 +20,22 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+tag=logique|booléen|circuit|simple|
+
 group =: RadioGroup
+
+size_diagram=3
+complexity_diagram=4
 
 before==#|python|
 from utils_diagram import generate_random_diagram, diagram_to_string, eval_diagram, diagram_to_string_color
 from components import GraphDrawer
 from random import randint
 
-size_diagram = 3
+size_diagram=int(size_diagram)
+complexity_diagram=int(complexity_diagram)
 
-diagram = generate_random_diagram(size_diagram, 4)
+diagram = generate_random_diagram(size_diagram, complexity_diagram)
 
 viewer = GraphDrawer(graph = diagram_to_string(diagram))
 
