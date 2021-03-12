@@ -27,7 +27,7 @@ intituleQuestion, indicQuestion, bReponse = question(3,uneLigne)
 answer=bReponse
 
 feedback_wrong="<div class='error-state'><h1>Mauvaise réponse</h1>Non la réponse était "
-if bReponse=="F":
+if bReponse=="T":
   feedback_wrong += " vrai (<i class='fas fa-times'></i>)"
 else:
   feedback_wrong += " non (<i class='fas fa-check'></i>)"
