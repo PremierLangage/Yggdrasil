@@ -96,7 +96,7 @@ variables en entrées.
 evaluator==#|python|
 
 form="""
-Évaluer l'unique sortie **f** de ce circuit logique dont voici les valeurs des 
+Évaluer l'unique sortie <b>f</b> de ce circuit logique dont voici les valeurs des 
 variables en entrées.   
 {% for k,v in eval_point.items() %} <b>{{k}}</b> : <b>{{v}}</b>, {% endfor %}
 <center>
