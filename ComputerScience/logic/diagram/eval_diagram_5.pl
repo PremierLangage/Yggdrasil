@@ -21,4 +21,4 @@ tag=logique|booléen|circuit
 size_diagram=5
 complexity_diagram=8
 
-title=Évaluation d'un circuit logique
+title=Évaluation d'un grand circuit logique
