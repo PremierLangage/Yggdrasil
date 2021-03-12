@@ -65,9 +65,9 @@ def question(numero,uneLigne):
     intiQuestion="L'ensemble {{uneLigne['C2:Partie de $%R%$']}} a-t-il un plus grand élément"
     indication=""
     if uneLigne['C5:sup'].strip() =='+':
-     bReponse="T"
-    else:
      bReponse="F"
+    else:
+     bReponse="T"
     testReponse=functest3
   if numero == 4:
     intiQuestion="Cochez les nombres réels qui sont des majorants de l'ensemble {{uneLigne['C2:Partie de $%R%$']}}"
