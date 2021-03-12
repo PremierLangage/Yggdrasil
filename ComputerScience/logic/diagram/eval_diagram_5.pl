@@ -14,6 +14,15 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+extends=/ComputerScience/logic/diagram/eval_diagram_3.pl
+
+tag=logique|booléen|circuit
+
+size_diagram=5
+complexity_diagram=8
+
+title=Évaluation d'un circuit logique
+
 @ utils_diagram.py
 
 @ /utils/sandboxio.py
