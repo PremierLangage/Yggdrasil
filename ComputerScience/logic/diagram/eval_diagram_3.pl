@@ -70,7 +70,9 @@ text==#|markdown|
  font-weight: bold;
 }
 </style>
+==
 
+form==#|markdown|
 Évaluer l'unique sortie **f** de ce circuit logique dont voici les valeurs des 
 variables en entrées.   
 {% for k,v in eval_point.items() %} <b>{{k}}</b> : <b>{{v}}</b>, {% endfor %}
@@ -91,11 +93,23 @@ variables en entrées.
 </center>
 ==
 
-form==#|markdown|
-
-==
-
 evaluator==#|python|
+
+form="""
+Évaluer l'unique sortie **f** de ce circuit logique dont voici les valeurs des 
+variables en entrées.   
+{% for k,v in eval_point.items() %} <b>{{k}}</b> : <b>{{v}}</b>, {% endfor %}
+<center>
+<table>
+<tr>
+<td>
+{{ viewer | component }}
+</td>
+</tr>
+</table>
+</center>
+"""
+
 S = group.selection
 score=50
 
