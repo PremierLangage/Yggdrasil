@@ -255,7 +255,12 @@ correction_display==#|markdown|
 evaluator==#|python|
 nb_goods = 0
 # Beurk, this will load the student function...
-exec(editor.code)
+try:
+    exec(editor.code)
+    code_python = True
+except:
+    Karnaugh = lambda x,y,z,t: False
+    code_python = False
 
 nb_attempt += 1
 
@@ -406,6 +411,11 @@ if Karnaugh(True, False, True, False) == v1010:
 else:
     color_back1010 = "#f8d7da"
     color1010 = "red"
+
+comemnt_code = ""
+if not code_python:
+    nb_goods = 0
+    comemnt_code = "<b>Il y a une erreur dans votre fonction Python, l'interprêteur Python refuse sa définition</b><br>"
 
 note_eff = 50 + (200 // (3+nb_attempt))
 final_grade = (max(0, int((100*(nb_goods-8))/8) ) * note_eff) // 100
