@@ -100,7 +100,7 @@
 - 127
 - 111
 - 132
-+ $% \displaystyle\sum_{i=1}^5 2^i %$
+- $% \displaystyle\sum_{i=1}^5 2^i %$
 
 
 ** Comment reconnaître un nombre positif pair en binaire?
