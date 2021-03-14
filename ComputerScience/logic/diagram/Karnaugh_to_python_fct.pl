@@ -418,7 +418,7 @@ note_finale = final_grade*note_eff
 best_grade = max([note_finale, best_grade])
 
 feedback_note = "<br><u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toutes propositions confondues)</i><br>"
-feedback_note += "Votre fonction respectent "+str(nb_goods)+" cases du tableau de Karnaugh. <br>"
+feedback_note += "Votre fonction respectent "+str(nb_goods)+" / 16 cases du tableau de Karnaugh. <br>"
 feedback_note += "Partie tests : "+str(max(0, int((100*(nb_goods-8))/8) ))+"% <br>"
 feedback_note += "Partie efficacité : "+str(note_eff)+"% ("+tent_rmrq+")<br><br>"
 
