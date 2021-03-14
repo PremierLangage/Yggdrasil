@@ -2,6 +2,8 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+tag=logique|booléen|circuit|karnaugh|table de vérité|Python
+
 editor =: CodeEditor
 editor.theme = dark
 editor.language = python
@@ -35,12 +37,12 @@ v1001 = randint(0, 1)
 v1011 = randint(0, 1)
 v1010 = randint(0, 1)
 
-
+nb_attempt = 0
 ==
 
 title=Une fonction Python pour un tableau de Karnaugh.
 
-text==
+text==#|markdown|
 <style>
 .karnaugh{
  border: solid black 1px;
