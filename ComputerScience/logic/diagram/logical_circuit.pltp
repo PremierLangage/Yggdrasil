@@ -19,8 +19,11 @@ title=Des circuits logiques et des tables de vérité
 
 introduction==
 Les exercices suivants génèrent des circuits de portes logiques aléatoires. Vous 
-devrez les conprendre, les évaluer voire les transcrire vers d'autres représentations. 
-Prenez votre temps car certains de ces exercices ne peuvent pas se relancer.
+devrez les conprendre, les évaluer, voire les transcrire vers d'autres représentations. 
+Prenez votre temps car certains de ces exercices ne peuvent pas se relancer (tous les 
+exercices à deux réponses vrai ou faux n'autorisent pas deux réponses par exemple). 
+Les exercices dans lesquels un code python est demandé autorisent autant de tentatives 
+que nécessaire mais utilise une note d'efficacité.
 
 En utilisant un papier et un stylo calmement, vous devriez y arriver sans problème, 
 ce sont plus des exercices de concentration au final.
