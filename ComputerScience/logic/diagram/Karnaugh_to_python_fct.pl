@@ -246,7 +246,7 @@ correction_display==
 </center>
 <br />
 <center>
-<b>Note finale {{ final_grade }} / 100</b>
+<b>Note pour cette tentative {{ final_grade }} / 100</b>
 <center>
 Votre fonction respectent {{ nb_goods }} case(s) du tableau de Karnaugh.
 ==
@@ -408,17 +408,20 @@ else:
     color1010 = "red"
 
 
-
 final_grade = max(0, int((100*(nb_goods-8))/8) )
 
 text=correction_display
 
+note_finale = (note_eff * grade_now) // 100
+best_grade = max([note_finale, best_grade])
+
+feedback_note = "<br><u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toutes propositions confondues)</i><br>"
+feedback_note += "Note pour cette tentative : "+str(note_finale)+"% <br>"
+feedback_note += "Partie tests : "+str(grade_now)+"% <br>"
+feedback_note += "Partie efficacité : "+str(note_eff)+"% ("+tent_rmrq+")<br><br>"
+
+
 grade = (final_grade, "&nbsp;")
-
-
-
-
-
 
 ==
 
