@@ -257,6 +257,7 @@ nb_goods = 0
 # Beurk, this will load the student function...
 exec(editor.code)
 
+nb_attempt += 1
 
 # fisrt line checks
 o0000 = int(Karnaugh(0,0,0,0))
