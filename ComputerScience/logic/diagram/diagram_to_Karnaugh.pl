@@ -307,6 +307,7 @@ form="""
 </table>
 """
 
+evaluator='grade = (final_grade, "&nbsp;")'
 
 grade = (final_grade, "&nbsp;")
 ==
