@@ -35,8 +35,8 @@ title=Table de vérité d'un circuit logique
 
 text==
 Remplir le tableau de Karnaugh associé au circuit logique suivant. Prenez 
-votre temps et utilisez un stylo et du papier avant de remplir votre 
-proposition.
+votre temps, utilisez un stylo et du papier avant de remplir votre 
+proposition car une seulement une tentative sera autorisée.
 ==
 
 form==
