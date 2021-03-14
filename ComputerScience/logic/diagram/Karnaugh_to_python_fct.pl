@@ -408,13 +408,13 @@ else:
     color1010 = "red"
 
 note_eff = 50 + (200 // (3+nb_attempt))
-final_grade = (max(0, int((100*(nb_goods-8))/8) )*note_eff) / 100
+final_grade = (max(0, int((100*(nb_goods-8))/8) ) * note_eff) // 100
 
 tent_rmrq = str(nb_attempt) + " Tentative"
 if nb_attempt > 1:
     tent_rmrq = str(nb_attempt) + " Tentatives"
 
-note_finale = final_grade*note_eff
+note_finale = final_grade
 best_grade = max([note_finale, best_grade])
 
 feedback_note = "<br><u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toutes propositions confondues)</i><br>"
