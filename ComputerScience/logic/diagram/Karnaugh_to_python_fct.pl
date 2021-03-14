@@ -248,7 +248,7 @@ correction_display==#|markdown|
 <center>
 <b>Note pour cette tentative {{ final_grade }} / 100</b>
 </center>
-Votre fonction respectent {{ nb_goods }} case(s) du tableau de Karnaugh.
+
 ==
 
 
@@ -410,11 +410,16 @@ else:
 note_eff = 50 + (200 // (3+nb_attempt))
 final_grade = max(0, int((100*(nb_goods-8))/8) )*note_eff
 
+tent_rmrq = str(nb_attempt) + " Tentative"
+if nb_attempt > 1:
+    tent_rmrq = str(nb_attempt) + " Tentatives"
+
 note_finale = final_grade*note_eff
 best_grade = max([note_finale, best_grade])
 
 feedback_note = "<br><u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toutes propositions confondues)</i><br>"
-feedback_note += "Partie tests : "+str(grade_now)+"% <br>"
+feedback_note += "Votre fonction respectent "+str(nb_goods)+" cases du tableau de Karnaugh. <br>"
+feedback_note += "Partie tests : "+str(max(0, int((100*(nb_goods-8))/8) ))+"% <br>"
 feedback_note += "Partie efficacité : "+str(note_eff)+"% ("+tent_rmrq+")<br><br>"
 
 text=correction_display+feedback_note
