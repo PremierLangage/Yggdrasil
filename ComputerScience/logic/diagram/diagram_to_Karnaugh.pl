@@ -20,6 +20,8 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+tag=logique|booléen|circuit|karnaugh|table de vérité
+
 before==#|python|
 from utils_diagram import generate_random_diagram, diagram_to_string, karnaugh_table
 from components import GraphDrawer
