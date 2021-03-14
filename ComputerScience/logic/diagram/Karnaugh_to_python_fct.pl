@@ -113,8 +113,7 @@ form==
 {{ editor|component }}
 ==
 
-
-correction_display==
+correction_display==#|markdown|
 <style>
 .karnaugh{
  border: solid black 1px;
@@ -248,7 +247,7 @@ correction_display==
 <br />
 <center>
 <b>Note pour cette tentative {{ final_grade }} / 100</b>
-<center>
+</center>
 Votre fonction respectent {{ nb_goods }} case(s) du tableau de Karnaugh.
 ==
 
@@ -408,18 +407,17 @@ else:
     color_back1010 = "#f8d7da"
     color1010 = "red"
 
+note_eff = 50 + (200 // (3+nb_attempt))
+final_grade = max(0, int((100*(nb_goods-8))/8) )*note_eff
 
-final_grade = max(0, int((100*(nb_goods-8))/8) )
-
-note_finale = final_grade
+note_finale = final_grade*note_eff
 best_grade = max([note_finale, best_grade])
 
 feedback_note = "<br><u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toutes propositions confondues)</i><br>"
-feedback_note += "Note pour cette tentative : "+str(note_finale)+"% <br>"
 feedback_note += "Partie tests : "+str(grade_now)+"% <br>"
 feedback_note += "Partie efficacité : "+str(note_eff)+"% ("+tent_rmrq+")<br><br>"
 
-text=correction_display
+text=correction_display+feedback_note
 
 grade = (final_grade, "&nbsp;")
 
