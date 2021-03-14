@@ -415,7 +415,7 @@ else:
 comemnt_code = ""
 if not code_python:
     nb_goods = 0
-    comemnt_code = "<b>Il y a une erreur dans votre fonction Python, l'interprêteur Python refuse sa définition</b><br>"
+    comemnt_code = """<span style="font-size: 1.5em; color: darkred;"><b>Il y a une erreur dans votre fonction Python, l'interprêteur Python refuse sa définition</b><br><br>"""
 
 note_eff = 50 + (200 // (3+nb_attempt))
 final_grade = (max(0, int((100*(nb_goods-8))/8) ) * note_eff) // 100
