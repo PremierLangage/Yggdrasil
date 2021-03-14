@@ -432,7 +432,7 @@ feedback_note += "Votre fonction respectent "+str(nb_goods)+" / 16 cases du tabl
 feedback_note += "Partie tests : "+str(max(0, int((100*(nb_goods-8))/8) ))+"% <br>"
 feedback_note += "Partie efficacité : "+str(note_eff)+"% ("+tent_rmrq+")<br><br>"
 
-text=correction_display+feedback_note
+text=comemnt_code+correction_display+feedback_note
 
 grade = (final_grade, "&nbsp;")
 
