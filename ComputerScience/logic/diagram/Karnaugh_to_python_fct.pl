@@ -38,6 +38,7 @@ v1011 = randint(0, 1)
 v1010 = randint(0, 1)
 
 nb_attempt = 0
+best_grade = 0
 ==
 
 title=Une fonction Python pour un tableau de Karnaugh.
@@ -410,9 +411,7 @@ else:
 
 final_grade = max(0, int((100*(nb_goods-8))/8) )
 
-text=correction_display
-
-note_finale = (note_eff * grade_now) // 100
+note_finale = final_grade
 best_grade = max([note_finale, best_grade])
 
 feedback_note = "<br><u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toutes propositions confondues)</i><br>"
@@ -420,6 +419,7 @@ feedback_note += "Note pour cette tentative : "+str(note_finale)+"% <br>"
 feedback_note += "Partie tests : "+str(grade_now)+"% <br>"
 feedback_note += "Partie efficacité : "+str(note_eff)+"% ("+tent_rmrq+")<br><br>"
 
+text=correction_display
 
 grade = (final_grade, "&nbsp;")
 
