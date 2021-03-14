@@ -408,7 +408,7 @@ else:
     color1010 = "red"
 
 note_eff = 50 + (200 // (3+nb_attempt))
-final_grade = max(0, int((100*(nb_goods-8))/8) )*note_eff
+final_grade = (max(0, int((100*(nb_goods-8))/8) )*note_eff) / 100
 
 tent_rmrq = str(nb_attempt) + " Tentative"
 if nb_attempt > 1:
