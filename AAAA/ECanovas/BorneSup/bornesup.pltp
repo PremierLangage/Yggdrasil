@@ -49,8 +49,8 @@ de toute partie non vide majorée ou minorée est l'ensemble $%\mathbb{R}%$ des 
 `toute partie non vide majorée de $%\mathbb{R}%$ admet une borne supérieure` et `toute partie non vide minorée de $%\mathbb{R}%$ admet une borne inférieure`. 
 
 Avec $%\mathbb{R}%$ on a un ensemble qui posséde une structure algébrique intéressante, un ordre naturel total, 
-la propriété d'infini divisibilité, la propriété de la borne supérieure. Les suites croissantes majorées ont des limites. 
-On dispose d'un cadre pour pouvoir faire de l'analyse. 
+la propriété d'infini divisibilité, la propriété de la borne supérieure. Les suites croissantes majorées ont donc des limites. 
+On dispose enfin d'un cadre pour pouvoir faire de l'analyse. 
 
 ==
 
