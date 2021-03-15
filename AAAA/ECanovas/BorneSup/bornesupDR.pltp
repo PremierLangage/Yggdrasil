@@ -25,11 +25,6 @@ C'est très pratique pour attraper les bouts de l'ensemble. Si $%\cal{A}%$ est u
  pour pouvoir écrire et parler de max($%\cal{A}%$) et de min($%\cal{A}%$) (aussi appelé $%pge(\cal{A})%$ et $%ppe(\cal{A})%$ ),
   il suffit de vérifier que $%\cal{A}%$ est non vide majoré ou minoré.
 
-    Mais si les entiers permettent de compter des éléments, ils ne suffisent pas pour mesurer des longueurs.
-
-    Pour cela les nombres décimaux ou les nombres rationnels sont meilleurs, mais demeurent insuffisants, dans la vie, puisque ils ne permettent pas de rendre compte de longueurs réelles comme la diagonale d'un carré de côté 1 ou le rapport entre le périmètre d'un cercle et son diamètre.
-
-Ces deux ensembles possèdent de plus la ...
 
 ==
 
