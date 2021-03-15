@@ -64,7 +64,7 @@ def question(numero,uneLigne):
   if numero == 3:
     intiQuestion="L'ensemble {{uneLigne['C2:Partie de $%R%$']}} a-t-il un plus grand élément"
     indication=""
-    if uneLigne['C7:pge (max)'].strip() =='-':
+    if uneLigne['C7:pge'].strip() =='-':
      bReponse="F"
     else:
      bReponse="T"
