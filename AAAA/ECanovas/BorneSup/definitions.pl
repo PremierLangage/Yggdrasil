@@ -11,6 +11,12 @@ questions==
 + $%\exists \epsilon > 0 \quad  \forall n_0 \in \mathbb{N} \quad  \exists n \ge n_0 \quad  |u_n| > \varepsilon %$
 - $%\exists \epsilon > 0 \quad  \forall n_0 \in \mathbb{N} \quad  \exists n \ge n_0 \quad  |u_n| > \varepsilon %$
 
+** Comment s'écrit "la suite $%(u_n)_{n\ge 0}%$ tend vers  $%+\infty%$"?
+- $%\forall A > 0 \quad \forall \epsilon > 0 \quad \exists n_0 \in \mathbb{N} \quad  \forall n \ge n_0 \quad  |u_n-a| \le \varepsilon %$
++ $%\forall A > 0 \quad \exists n_0 \in \mathbb{N} \quad  \forall n \ge n_0 \quad  u_n \ge A %$
+- $%\forall A > 0 \quad \exists n_0 \in \mathbb{N} \quad  \forall n \ge n_0 \quad  u_n \le A %$
++ $%\forall A \in \mathbb{R} \quad \exists n_0 \in \mathbb{N} \quad  \forall n \ge n_0 \quad  u_n \ge A %$
+
 ** Soit $%A%$ une partie de $%\mathbb{R}%$. Que signifie "$%\forall x \in \mathbb{R} \quad  \exists x \in A \quad y > x %$"?
 - $%A%$ est majorée. 
 - $%A%$ est minorée.
