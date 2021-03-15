@@ -8,7 +8,7 @@ questions==
 - $%\forall \epsilon > 0 \quad \exists n_0 \in \mathbb{N} \quad \forall n \ge n_0 \quad  |u_n| > \varepsilon %$
 - $%\forall \epsilon > 0 \quad \exists n_0 \in \mathbb{N} \quad  \forall n \ge n_0 \quad  |u_n| \le \varepsilon %$
 - $%\exists \epsilon > 0 \quad  \forall n_0 \in \mathbb{N} \quad  \exists n \ge n_0 \quad  |u_n| \le \varepsilon %$
-- $%\exists \epsilon > 0 \quad  \forall n_0 \in \mathbb{N} \quad  \exists n \ge n_0 \quad  |u_n| > \varepsilon %$
++ $%\exists \epsilon > 0 \quad  \forall n_0 \in \mathbb{N} \quad  \exists n \ge n_0 \quad  |u_n| > \varepsilon %$
 - $%\exists \epsilon > 0 \quad  \forall n_0 \in \mathbb{N} \quad  \exists n \ge n_0 \quad  |u_n| > \varepsilon %$
 
 ** Soit $%A%$ une partie de $%\mathbb{R}%$. Que signifie "$%\forall x \in \mathbb{R} \quad  \exists x \in A \quad y > x %$"?
