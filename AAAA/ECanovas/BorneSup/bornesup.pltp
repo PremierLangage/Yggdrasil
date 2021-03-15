@@ -1,20 +1,53 @@
 
 introduction==
 
-# Les bornes supérieures, rappel de cours
+## Rappel de cours
 --------------------------------
-L'ensemble des entiers relatifs $%\mathbb{Z}%$ possède la propriété suivante :
-
-    ceci est du code 
-    Toute partie non vide majorée admet un plus grand élément
-
-
- et 
-`Toute partie non vide minorée admet un plus petit élément.`
+Les eniers ont tous la propriété d'avoir un unique successeur. Cette propriété à la propriété fondamentale  
+de ensemble des entiers relatifs $%\mathbb{Z}%$ :
+`toute partie non vide majorée de $%\mathbb{Z}%$ admet un plus grand élément.` et `toute partie non vide minorée de $%\mathbb{Z}%$ admet un plus petit élément.`
 
 
-> Mais si les entiers permettent de compter des éléments, ils ne suffisent pas pour mesurer des longueurs. 
-> Pour cela les **nombres rationnels** sont _meilleurs_, mais demeurent insuffisants
+C'est très pratique pour attraper les **bouts** de l'ensemble. Si $%A%$ est une partie de $%\mathbb{Z}%$, 
+pour pouvoir écrire et parler de $%\max(A)%$ et de $%\min(A)%$ (aussi appelé $%pge(A)%$ et $ppe(A)%$), 
+il suffit de vérifier que **$%A%$ est une partie non vide majorée ou minorée.  
+
+
+ Mais si les entiers permettent de compter des éléments, ils ne suffisent pas pour mesurer des longueurs. Comment mesure la moitié de longueur qui sépare 0 de 1? 
+Pour cela les **nombres décimaux** ou les **nombres rationnels** sont meilleurs. 
+Ces deux ensembles possèdent la propriété *d'infini divisibilité* qui indique qu'entre deux éléments on peut toujours en trouver un autre 
+(la moitié entre les deux précédents par exemple) et partant de cela, une infinité d'autres. 
+
+Cette propriété fait disparaître bien évidemment la propriété de successeur. 
+
+Cependant, pour utiles que soient les nombres rationels ou décimaux, ils demeurent insuffisants,
+puisque ils ne permettent pas de rendre compte de longueurs *réelles* comme la diagonale
+d'un carré de côté 1 (qui vaut $%\sqrt{2}%$ d'après le théorème de Pythagore) 
+ou le rapport entre le périmètre d'un cercle et son diamètre (qui vaut $%\pi%$, un nombre utile aux sages). Et la propriété 
+
+Avec la notion de successeur disparaît l'existence d'un plus petit ou d'un plus grand élément pour *toute* partie non vide majorée ou minorée.
+A titre d'exemple, les ensembles $%\{x\in \mathbb{Q} 0<x<1\}%$ ou $%\{x\in \mathbb{D} 0<x<1\}%$ n'ont pas de plus petit ni de plus grand élément. 
+Pourtant 0 et 1 sont bien les **bouts** de ces ensembles, puisque il n'y a pas de minorant plus grand que 0 ni de majorant plus petit que 1. 
+Ces ensembles, qui sont non vides bornés, admettent donc une borne inférieure et une borne supérieure. 
+
+Si on ne peut plus espérer que la propriété fondamentale survive dans $%\mathbb{D}%$  ou $%\mathbb{Q}%$, 
+peut-être peut-on la remplacer par la propriété de la borne supérieure ? A savoir 
+`Toute partie non vide majorée admet une borne supérieure`.
+
+La réponse est encore non comme le montre l'exemple de l'ensemble suivant $%\{x\in \mathbb{Q} \;|\; x^2<2 \}%$. 
+Cet ensemble n'admet pas de borne supérieure dans $%\mathbb{Q}%$, car l'unique *candidat* est en effet $%\sqrt{2}%$ qui n'est pas rationnel.
+
+L'absence de la propriété de la borne supérieure ne permet donc pas de passer à la limite pour une suite croissante majorée. 
+Or c'est en passant à la limite que les perspectives se dégagent. 
+
+L'ensemble qui va permettre de résoudre ces différents problèmes qui se posent dans des ensembles comme $%\mathbb{D}%$  ou $%\mathbb{Q}%$ 
+est l'ensemble $%\mathbb{R}%$ des nombres réels.  
+
+
+
+
+
+
 
 
 
