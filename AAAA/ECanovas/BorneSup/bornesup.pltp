@@ -40,7 +40,7 @@ peut-être peut-on la remplacer par la propriété de la borne supérieure ? A s
  entraine que toute suite croissante majorée admet une limite. Ce qui est très intéressant car c'est souvent à la limite que les perspectives mathématiques se dégagent.
 
 Mais l'ensemble des rationnels ne possède pas la proriété de la borne supérieure, comme le montre l'exemple suivant $%\\{x\in \mathbb{Q} \;|\; x^2<2 \\}%$. 
-Cet ensemble, bien que non vide majoré, n'admet pas de borne supérieure dans $%\mathbb{Q}%$. L'unique *candidat* est en effet $%\sqrt{2}%$ qui n'est pas rationnel.
+Cet ensemble, bien que non vide majoré, n'admet pas de borne supérieure dans $%\mathbb{Q}%$ : l'unique *candidat*, $%\sqrt{2}%$, n'est pas rationnel.
 
 ### $%\mathbb{R}%$, un ensemble où on peut parler de limites 
 
