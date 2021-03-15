@@ -33,12 +33,11 @@ form==
 
 evaluator==
 from genQuest import *
-if testReponse(bReponse ,input.value) :
-    nbbr += 1 
+if testReponse(bReponse ,input.value)
     kback = f'<span class="success-state">Good 👏👏👏 </span>'
     grade = (100, kback)
 else:
-    kback =  f'<span class="error-state">la bonne réponse $%{bReponse}%$ est différente de  {input.value} </span>'
+    kback =  f'<span class="error-state">la bonne réponse $%{bReponse}%$ est différente de  $%{input.value}%$ </span>'
     grade = (0,kback)
 
 ==
