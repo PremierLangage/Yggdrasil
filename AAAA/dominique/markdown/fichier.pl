@@ -1,6 +1,7 @@
 
 
-@ /lib/builder/none.py [builder.py]
+@ /builder/none.py [builder.py]
+@ /grader/evaluator.py [grader.py]
 title=
 form=
 
