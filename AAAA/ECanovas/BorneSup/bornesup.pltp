@@ -5,7 +5,13 @@ introduction==
 --------------------------------
 L'ensemble des entiers relatifs $%\mathbb{Z}%$ possède la propriété suivante :
 
-'Toute partie non vide majorée admet un plus grand élément' et 
+```
+
+Toute partie non vide majorée admet un plus grand élément
+
+```
+
+ et 
 `Toute partie non vide minorée admet un plus petit élément.`
 
 > Mais si les entiers permettent de compter des éléments, ils ne suffisent pas pour mesurer des longueurs. 
