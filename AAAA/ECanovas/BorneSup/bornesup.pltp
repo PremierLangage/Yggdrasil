@@ -25,15 +25,15 @@ d'un carré de côté 1 (qui vaut $%\sqrt{2}%$ d'après le théorème de Pythago
 ou le rapport entre le périmètre d'un cercle et son diamètre (qui vaut $%\pi%$, un nombre utile aux sages). Et la propriété 
 
 Avec la notion de successeur, disparaît aussi l'existence d'un plus petit ou d'un plus grand élément pour *toute* partie non vide majorée ou minorée.
-A titre d'exemple, les ensembles $%\{x\in \mathbb{Q} 0<x<1\}%$ ou $%\{x\in \mathbb{D} 0<x<1\}%$ n'ont pas de plus petit ni de plus grand élément. 
+A titre d'exemple, les ensembles $%\\{x\in \mathbb{Q} 0<x<1\\}%$ ou $%\\{x\in \mathbb{D} 0<x<1\\}%$ n'ont pas de plus petit ni de plus grand élément. 
 Pourtant 0 et 1 sont bien les **bouts** de ces ensembles, puisque il n'y a pas de minorant plus grand que 0 ni de majorant plus petit que 1. 
 Ces ensembles, qui sont non vides bornés, admettent donc une borne inférieure et une borne supérieure. 
 
-Si on ne peut plus espérer que la propriété fondamentale survive dans $%\mathbb{D}%$  ou $%\mathbb{Q}%$, 
+Si on ne peut plus espérer que la propriété fondamentale des entiers survive dans $%\mathbb{D}%$  ou $%\mathbb{Q}%$, 
 peut-être peut-on la remplacer par la propriété de la borne supérieure ? A savoir 
 `Toute partie non vide majorée admet une borne supérieure`.
 
-La réponse est encore non comme le montre l'exemple de l'ensemble suivant $%\{x\in \mathbb{Q} \;|\; x^2<2 \}%$. 
+La réponse est encore non comme le montre l'exemple de l'ensemble suivant $%\\{x\in \mathbb{Q} \;|\; x^2<2 \\}%$. 
 Cet ensemble n'admet pas de borne supérieure dans $%\mathbb{Q}%$, car l'unique *candidat* est en effet $%\sqrt{2}%$ qui n'est pas rationnel.
 
 L'absence de la propriété de la borne supérieure ne permet pas de passer à la limite pour une suite croissante majorée. 
