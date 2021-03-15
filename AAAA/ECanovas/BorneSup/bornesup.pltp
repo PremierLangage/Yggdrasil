@@ -39,7 +39,7 @@ peut-être peut-on la remplacer par la propriété de la borne supérieure ? A s
 `Toute partie non vide majorée admet une borne supérieure`. Cette propriété, si elle est vérifiée pour un ensemble $%E%$, 
  entraine que toute suite croissante majorée admet une limite. Ce qui est très intéressant car c'est souvent à la limite que les perspectives mathématiques se dégagent.
 
-La réponse est encore non : l'ensemble des ratoionnelsne possède pas la proriété de la borne supérieure, comme le montre l'exemple suivant $%\\{x\in \mathbb{Q} \;|\; x^2<2 \\}%$. 
+Mais l'ensemble des rationnels ne possède pas la proriété de la borne supérieure, comme le montre l'exemple suivant $%\\{x\in \mathbb{Q} \;|\; x^2<2 \\}%$. 
 Cet ensemble, bien que non vide majoré, n'admet pas de borne supérieure dans $%\mathbb{Q}%$. L'unique *candidat* est en effet $%\sqrt{2}%$ qui n'est pas rationnel.
 
 ### $%\mathbb{R}%$, un ensemble où on peut parler de limites 
@@ -47,6 +47,10 @@ Cet ensemble, bien que non vide majoré, n'admet pas de borne supérieure dans $
 L'ensemble qui va permettre de retrouver la possibilité de désigner systématiquement les **bouts** 
 de toute partie non vide majorée ou minorée est l'ensemble $%\mathbb{R}%$ des nombres réels. La propriété fondamentale de $%\mathbb{R}%$ stipule en effet que 
 `toute partie non vide majorée de $%\mathbb{R}%$ admet une borne supérieure` et `toute partie non vide minorée de $%\mathbb{R}%$ admet une borne inférieure`. 
+
+Avec $%\mathbb{R}%$ on a un ensemble qui posséde une structure algébrique intéressante, un ordre naturel total, 
+la propriété d'infini divisibilité, la propriété de la borne supérieure. Les suites croissantes majorées ont des limites. 
+On dispose d'un cadre pour pouvoir faire de l'analyse. 
 
 ==
 
