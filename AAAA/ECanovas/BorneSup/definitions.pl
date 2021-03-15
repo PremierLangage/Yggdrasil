@@ -22,7 +22,7 @@ questions==
 ** Soit $%A%$ une partie de $%\mathbb{R}%$. Que signifie "2 est le plus grand élément de A"
 + $%2\in A%$ et $% \forall x \in A \quad x\le 2%$.
 - $% \forall x \in A \quad x\le 2%$.
-- $% \forall x \in A \quad x\le 2%$ et $%\forall \varepsilon >0 \quad \exists x \in A \quad; x> a-\varepsilon%$.
+- $% \forall x \in A \quad x\le 2%$ et $%\forall \varepsilon >0 \quad \exists x \in A \quad x> a-\varepsilon%$.
 + 2 est un élément de $%A%$ et 2 est un majorant de $%A%$
 
 
