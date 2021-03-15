@@ -3,6 +3,9 @@ introduction==
 
 ## Rappel de cours
 --------------------------------
+
+### Les entiers
+
 Tout entier possède un unique successeur. Cette propriété est intrinsèquement liée à la propriété fondamentale des entiers qui indique que 
 `toute partie non vide majorée de $%\mathbb{Z}%$ admet un plus grand élément` et `toute partie non vide minorée de $%\mathbb{Z}%$ admet un plus petit élément`.
 
@@ -11,6 +14,7 @@ Cette propriété est très pratique pour attraper les **bouts** de l'ensemble. 
 pour pouvoir écrire et parler de $%\max(A)%$ et de $%\min(A)%$ (aussi appelé $%pge(A)%$ et $%ppe(A)%$), 
 il suffit de vérifier que $%A%$ est une partie non vide majorée ou minorée.  
 
+### Au-delà des entiers, l'infini divisibilité 
 
  Mais si les entiers permettent de compter des éléments, ils ne suffisent pas pour mesurer des longueurs. Comment mesurer la moitié de longueur qui sépare 0 de 1? 
 Pour cela les **nombres décimaux** ou les **nombres rationnels** sont meilleurs. 
@@ -22,22 +26,22 @@ Cette propriété fait disparaître bien évidemment la propriété de successeu
 Cependant, pour utiles que soient les nombres rationels ou décimaux, ils demeurent insuffisants,
 puisque ils ne permettent pas de rendre compte de longueurs *réelles* comme la diagonale
 d'un carré de côté 1 (qui vaut $%\sqrt{2}%$ d'après le théorème de Pythagore) 
-ou le rapport entre le périmètre d'un cercle et son diamètre (qui vaut $%\pi%$, un nombre utile aux sages). Et la propriété 
+ou le rapport entre le périmètre d'un cercle et son diamètre (qui vaut $%\pi%$, un nombre utile aux sages). 
+
+### Comment parler des **bouts** des parties? La notion de borne supérieure 
 
 Avec la notion de successeur, disparaît aussi l'existence d'un plus petit ou d'un plus grand élément pour *toute* partie non vide majorée ou minorée.
-A titre d'exemple, les ensembles $%\\{x\in \mathbb{Q} 0<x<1\\}%$ ou $%\\{x\in \mathbb{D} 0<x<1\\}%$ n'ont pas de plus petit ni de plus grand élément. 
+A titre d'exemple, les ensembles $%\\{x\in \mathbb{Q}\; |\;  0<x<1\\}%$ ou $%\\{x\in \mathbb{D}\; |\;  0<x<1\\}%$ n'ont pas de plus petit ni de plus grand élément. 
 Pourtant 0 et 1 sont bien les **bouts** de ces ensembles, puisque il n'y a pas de minorant plus grand que 0 ni de majorant plus petit que 1. 
 Ces ensembles, qui sont non vides bornés, admettent donc une borne inférieure et une borne supérieure. 
 
 Si on ne peut plus espérer que la propriété fondamentale des entiers survive dans $%\mathbb{D}%$  ou $%\mathbb{Q}%$, 
 peut-être peut-on la remplacer par la propriété de la borne supérieure ? A savoir 
-`Toute partie non vide majorée admet une borne supérieure`.
+`Toute partie non vide majorée admet une borne supérieure`. Cette propriété, si elle est vérifiée pour un ensemble $%E%$, 
+ entraine que toute suite croissante majorée admet une limite. Ce qui est très intéressant car c'est souvent à la limite que les perspectives mathématiques se dégagent.
 
-La réponse est encore non comme le montre l'exemple de l'ensemble suivant $%\\{x\in \mathbb{Q} \;|\; x^2<2 \\}%$. 
-Cet ensemble n'admet pas de borne supérieure dans $%\mathbb{Q}%$, car l'unique *candidat* est en effet $%\sqrt{2}%$ qui n'est pas rationnel.
-
-L'absence de la propriété de la borne supérieure ne permet pas de passer à la limite pour une suite croissante majorée. 
-Or c'est souvent en passant à la limite que les perspectives se dégagent. 
+La réponse est encore non : l'ensemble des ratoionnelsne possède pas la proriété de la borne supérieure, comme le montre l'exemple suivant $%\\{x\in \mathbb{Q} \;|\; x^2<2 \\}%$. 
+Cet ensemble, bien que non vide majoré, n'admet pas de borne supérieure dans $%\mathbb{Q}%$. L'unique *candidat* est en effet $%\sqrt{2}%$ qui n'est pas rationnel.
 
 L'ensemble qui va permettre de retrouver la possibilité de désigner systématiquement les **bouts** 
 de toute partie non vide majorée ou minorée est l'ensemble $%\mathbb{R}%$ des nombres réels. La propriété fondamentale de $%\mathbb{R}%$ stipule en effet que 
