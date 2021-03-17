@@ -64,10 +64,20 @@ for n in [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10]:
     minibrain_check_after.append([(21+i, val) for i, val in enumerate(reversed(bin(n)[2:]))])
 
 minibrain_check_after=str(minibrain_check_after)
+
+text += minibrain_check_after
 ==
 
 solution==
-ld $20 ...
+ld $20 a
+ld 20 #0
+inc #0
+div 2
+st 1 $#0
+bfdn 8
+st 0 $#0
+cmp 0
+bfdn 3
 ==
 
 
