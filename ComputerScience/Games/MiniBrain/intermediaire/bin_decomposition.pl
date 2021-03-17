@@ -24,8 +24,8 @@ text==#|markdown|
 <p>
 Proposez un code Mini-Brain <b>décomposant en base deux</b> l'entier 
 stocké à la case 20 de la mémoire centrale. Placez vos résultats dans 
-les cases 21 jusque 28 
-de la mémoire centrale avant la fin d'exécution de votre programme.
+les cases 21 jusque 28. La valeur en case 20 sera toujours un entier 
+positif sur 8 bits maximum.
 </p>
 ==
 
@@ -34,11 +34,15 @@ ld $20 ...
 ==
 
 minibrain_action_before==
-[ ['décomposition de 1', 'st 1 $20'], ]
+[ ['décomposition de 1', 'st 1 $20'],
+  ['décomposition de 0', 'st 0 $20'],
+  ['décomposition de 7', 'st 7 $20'], ]
 ==
 
 minibrain_check_after==
-[ [(21, 1)], ]
+[ [(21, 1)],
+  [],
+  [(21, 1), (22, 1), (23, 1)], ]
 ==
 
 solution==
