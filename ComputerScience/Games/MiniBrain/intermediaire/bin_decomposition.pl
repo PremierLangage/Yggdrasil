@@ -64,8 +64,6 @@ for n in [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10]:
     minibrain_check_after.append([(21+i, int(val)) for i, val in enumerate(reversed(bin(n)[2:]))])
 
 minibrain_check_after=str(minibrain_check_after)
-
-text += minibrain_check_after
 ==
 
 solution==
