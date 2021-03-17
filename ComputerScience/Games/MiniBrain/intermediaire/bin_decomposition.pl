@@ -50,7 +50,7 @@ minibrain_action_before=[ ['décomposition de 1', 'st 1 $20'],
                           ['décomposition de 0', 'st 0 $20'],
                           ['décomposition de 7', 'st 7 $20'] ]
 for n in [n1, n2, n3, n4, n5, n6, n7]:
-    minibrain_action_before.append(['décomposition de '+str(n), 'st '+str(n)' $20'])
+    minibrain_action_before.append(['décomposition de '+str(n), 'st '+str(n)+' $20'])
 
 
 minibrain_check_after=[ [(21, 1)],
