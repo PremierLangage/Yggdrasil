@@ -24,8 +24,8 @@ text==#|markdown|
 <p>
 Proposez un code Mini-Brain <b>décomposant en base deux</b> l'entier 
 stocké à la case 20 de la mémoire centrale. Placez vos résultats dans 
-les cases 21 jusque 28. La valeur en case 20 sera toujours un entier 
-positif sur 8 bits maximum.
+les cases 21 jusque 30. La valeur en case 20 sera toujours un entier 
+positif sur 10 bits maximum.
 </p>
 ==
 
@@ -33,16 +33,31 @@ editor.code ==
 ld $20 ...
 ==
 
-minibrain_action_before==
-[ ['décomposition de 1', 'st 1 $20'],
-  ['décomposition de 0', 'st 0 $20'],
-  ['décomposition de 7', 'st 7 $20'], ]
-==
+before==#|python|
+from random import randint
 
-minibrain_check_after==
-[ [(21, 1)],
-  [],
-  [(21, 1), (22, 1), (23, 1)], ]
+text += extra_doc
+
+n1 = randint(8, 15)
+n2 = randint(16, 31)
+n3 = randint(32, 63)
+n4 = randint(64, 127)
+n5 = randint(128, 255)
+n6 = randint(256, 511)
+n7 = randint(512, 1023)
+
+minibrain_action_before=[ ['décomposition de 1', 'st 1 $20'],
+                          ['décomposition de 0', 'st 0 $20'],
+                          ['décomposition de 7', 'st 7 $20'] ]
+for n in [n1, n2, n3, n4, n5, n6, n7]:
+    minibrain_action_before.append(['décomposition de '+str(n), 'st '+str(n)' $20'])
+
+
+minibrain_check_after=[ [(21, 1)],
+                        [],
+                        [(21, 1), (22, 1), (23, 1)], ]
+for n in [n1, n2, n3, n4, n5, n6, n7]:
+    minibrain_check_after.append([(21+i, val) for i, val in enumerate(reversed(bin(n)[2:]))])
 ==
 
 solution==
