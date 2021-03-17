@@ -61,7 +61,7 @@ minibrain_check_after=[ [(21, 1)],
                         [],
                         [(21, 1), (22, 1), (23, 1)], ]
 for n in [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10]:
-    minibrain_check_after.append([(21+i, val) for i, val in enumerate(reversed(bin(n)[2:]))])
+    minibrain_check_after.append([(21+i, int(val)) for i, val in enumerate(reversed(bin(n)[2:]))])
 
 minibrain_check_after=str(minibrain_check_after)
 
