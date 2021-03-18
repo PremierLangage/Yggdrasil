@@ -27,6 +27,6 @@ for line in lines:
     }
     choices.append(choice)
 
-text="Regular = " choices.count(1)
+text=choices.count(1)
 
 ==
