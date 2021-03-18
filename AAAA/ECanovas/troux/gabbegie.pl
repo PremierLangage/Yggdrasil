@@ -26,7 +26,8 @@ for line in lines:
         "value": match.group('value').strip()
     }
     choices.append(choice)
-choices=re.findall(pattern,text)
+
+#choices=re.findall(pattern,text)
 st1=re.sub(r'{.*}', '??', text)
 st2=choices
 text=st1+" et {{st2}}<br/>"
