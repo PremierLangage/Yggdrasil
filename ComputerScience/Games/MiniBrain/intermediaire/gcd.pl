@@ -100,6 +100,6 @@ mv #1 a
 cmp #2
 bfup 20
 bnow 5
-st #2 $32
+st #3 $32
 ==
 
