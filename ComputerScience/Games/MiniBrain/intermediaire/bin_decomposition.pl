@@ -27,11 +27,12 @@ stocké à la case 20 de la mémoire centrale. Placez vos résultats dans
 les cases 21 jusque 30. La valeur en case 20 sera toujours un entier 
 positif sur 10 bits maximum.
 </p>
-
+<br>
 <p>
 Placezles bits de poids faible à partir de la case 21. Pas besoin de
-compléter avec des bits nul devant, ces derniers ne ni nécessaire, ni
-pénalisant si votre programme les place.
+compléter avec des bits nul devant pour occuper les 10 cases de 21 à 
+30 inclus, les bits nuls en tête de nombre ne sont ni nécessaires, ni
+pénalisants si votre programme les place.
 </p>
 ==
 
