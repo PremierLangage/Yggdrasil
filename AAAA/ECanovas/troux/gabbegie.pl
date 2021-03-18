@@ -34,7 +34,7 @@ text=st1+" et {{st2}}<br/>"
 
 # le html input
 for item in choices:
-    text=text+"Entrée {{item['value']}} et feedback {{item['feedback']}}<br/>"
+    text=text+"{{item}} Entrée {{item['value']}} et feedback {{item['feedback']}}<br/>"
 un=choices[0]
 text=text+" {{un}}"
 #text=text+"Entrée {{un['value']}} et feedback {{un['feedback']}}<br/>"
