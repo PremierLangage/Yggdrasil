@@ -27,4 +27,5 @@ for line in lines:
     }
     choices.append(choice)
 text=(choices)
+text="coucou"
 ==
