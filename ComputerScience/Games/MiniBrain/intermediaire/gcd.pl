@@ -28,7 +28,7 @@ deux entiers. Les deux entiers seront placés en case mémoire <b>30</b> et <b>3
 centrale. Votre code mini-brain devra placer le résultat en case <b>32</b> une fois ce 
 dernier correctement calculé. Bon courage.
 </p>
-
+<br>
 <p>
 Pour information, l'algorithme ultra naif et linéaire qui égrenne les entiers 
 de manière croissante en mettant à jour le plus grand entier divisant les deux entiers 
