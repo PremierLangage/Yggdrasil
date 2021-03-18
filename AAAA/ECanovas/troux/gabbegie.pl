@@ -29,7 +29,7 @@ for line in lines:
 choices=re.findall(pattern,text)
 st1=re.sub(r'{.*}', '??', text)
 st2=choices
-text=st1+" et {{st2}}\n"
+text=st1+" et {{st2}}<br/>"
 
 # le html input
 for v,fb in choices:
