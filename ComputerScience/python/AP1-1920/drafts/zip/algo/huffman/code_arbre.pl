@@ -132,5 +132,6 @@ int main(int argn,char *argv[]){
 checks_args_stdin==#|python|
 	[
     ["Arbre 2 feuilles","","2 a 4 b 5 9 0 1"],
+    ["Arbre","","8 a 1 b 2 c 6 d 12 e 24 5 0 1 11 5 2 23 6 3 45 7 4 ],
 	]
 ==
