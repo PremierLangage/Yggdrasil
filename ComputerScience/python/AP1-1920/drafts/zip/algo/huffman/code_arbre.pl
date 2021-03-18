@@ -32,7 +32,7 @@ contenant le code de l'arbre. Pour simplifier le code est écrit sur des octets 
 	[z] désigne le code ascii de la lettre z.
 ==
 editor.code==#|c|
-char * code_arbre_aux(Noeud* a,int racine,int indice,int*i,char *s){
+void code_arbre_aux(Noeud* a,int racine,int indice,int*i,char *s){
    if(indice >(racine)/2)/*noeud interne*/{
      s[*i]='0';(*i)++;
     s[*i]='\0';
@@ -60,7 +60,7 @@ static  char s[512];
 ==
 
 solution==#|c|
-char * code_arbre_aux(Noeud* a,int racine,int indice,int*i,char *s){
+void code_arbre_aux(Noeud* a,int racine,int indice,int*i,char *s){
    if(indice >(racine)/2)/*noeud interne*/{
      s[*i]='0';(*i)++;
     s[*i]='\0';
