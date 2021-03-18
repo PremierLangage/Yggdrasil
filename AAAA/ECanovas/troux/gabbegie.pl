@@ -35,8 +35,8 @@ text=st1+" et {{st2}}<br/>"
 # le html input
 for item in choices:
     text=text+"Entrée {{item['value']}} et feedback {{item['feedback']}}<br/>"
-un=choices[1]
-deux=choices[2]
+un=choices(1)
+deux=choices(2)
 text=text+"Entrée {{un['value']}} et feedback {{un['feedback']}}<br/>"
 
 #<select name="pets" id="pet-select">
