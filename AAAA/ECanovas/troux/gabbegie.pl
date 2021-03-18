@@ -30,4 +30,17 @@ choices=re.findall(pattern,text)
 st1=re.sub(r'{.*}', '??', text)
 st2=choices
 text=st1+" et {{st2}}"
+
+# le html input
+for v,fb in choices:
+    text=text+"Entrée {{v}} et feedback {{fb}}
+#<select name="pets" id="pet-select">
+#    <option value="">--Please choose an option--</option>
+#    <option value="dog">Dog</option>
+#    <option value="cat">Cat</option>
+#    <option value="hamster">Hamster</option>
+#    <option value="parrot">Parrot</option>
+#    <option value="spider">Spider</option>
+#    <option value="goldfish">Goldfish</option>
+#</select>
 ==
