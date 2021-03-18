@@ -7,7 +7,7 @@ Exercice à troux
 text==#|markdown|
 Compléter les trous du texte suivant
 
-il était une fois un {=lapin #avec de grandes oreilles} de 
+il était une fois un {=lapin|chien #avec de grandes oreilles} de 
 pelage {=blanc,bleu,rouge #une couleur!} blabli blablou..
 
 == 
