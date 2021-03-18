@@ -39,7 +39,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
 </script>
 ==
 evaluator ==
-grade = (100, "")
+grade = (100, "coucou")
 ==
 
 
