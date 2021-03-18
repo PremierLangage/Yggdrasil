@@ -32,7 +32,8 @@ dernier correctement calculé. Bon courage.
 <p>
 Pour information, l'algorithme ultra naif et linéaire qui égrène les entiers 
 de manière croissante en mettant à jour le plus grand entier divisant les deux entiers 
-en argument ne fonctionnera pas (il faut plus de 8 minutes pour passer tous les tests).
+en argument ne fonctionnera pas (il lui faut plus de 8 minutes pour passer tous les tests, 
+donc timeout).
 </p>
 
 ==
