@@ -26,5 +26,5 @@ for line in lines:
         "value": match.group('value').strip()
     }
     choices.append(choice)
-text.append(choices)
+text+=(choices)
 ==
