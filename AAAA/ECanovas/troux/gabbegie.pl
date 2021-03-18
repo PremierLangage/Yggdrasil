@@ -35,6 +35,8 @@ text=st1+" et {{st2}}<br/>"
 # le html input
 for item in choices:
     text=text+"{{item}} Entrée {{item['value']}} et feedback {{item['feedback']}}<br/>"
+for it in range(len(choices)):
+    text=text+"Entrée {{choices[it]['value']}} et feedback {{choices[it]['feedback']}}<br/>"
 un=choices[0]
 text=text+" {{un}}"
 #text=text+"Entrée {{un['value']}} et feedback {{un['feedback']}}<br/>"
