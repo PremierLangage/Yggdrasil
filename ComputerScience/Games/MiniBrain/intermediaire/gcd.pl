@@ -63,7 +63,7 @@ minibrain_check_after=[ [(32, 10)],
 
 for i in range(5):
     a, b, pgcd = data[i]
-    minibrain_action_before.append([(32, pgcd)])
+    minibrain_check_after.append([(32, pgcd)])
 
 minibrain_check_after=str(minibrain_check_after)
 ==
