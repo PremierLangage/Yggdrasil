@@ -51,9 +51,9 @@ n4 = randint(64, 127)
 n5 = randint(128, 255)
 n6 = randint(256, 511)
 n7 = randint(512, 1023)
-n8 = randint(0, 1023)
-n9 = randint(0, 1023)
-n10 = randint(0, 1023)
+n8 = randint(512, 1023)
+n9 = randint(512, 1023)
+n10 = randint(512, 1023)
 
 minibrain_action_before=[ ['décomposition de 1', 'st 1 $20'],
                           ['décomposition de 0', 'st 0 $20'],
