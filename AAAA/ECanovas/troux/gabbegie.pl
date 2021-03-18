@@ -16,7 +16,7 @@ before==
 import re
 lines = text.split('\n')
 choices = []
-pattern = re.compile(r'.*{=(?P<value>(?:(?:\\\#)|[^\#])+)(?:\#(?P<feedback>.*))?}')
+pattern = re.compile(r'.*{(?:=(?P<value>(?:(?:\\\#)|[^\#])+)(?:\#(?P<feedback>.*))?}')
 for line in lines:
     match = pattern.match(line)
     if not match:
