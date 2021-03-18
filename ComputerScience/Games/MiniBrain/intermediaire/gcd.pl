@@ -35,18 +35,35 @@ ld $30 ...
 
 before==#|python|
 from random import randint
+from math import gcd
 
 text += extra_doc
 
-gcd = randint(1, 30)
+data= []
+for i in range(5):
+    min_pgcd = randint(1, 30)
+    a = min_pgcd*randint(1, 100)
+    b = min_pgcd*randint(1, 100)
+    pgcd = gcd(a, b)
+    data.append((a, b, pgcd))
 
 minibrain_action_before=[ ['pgcd(10, 10)', 'st 10 $30\nst 10 $31'], 
                           ['pgcd(5, 7)', 'st 5 $30\nst 7 $31'], ]
+
+for i in range(5):
+    a, b, pgcd = data[i]
+    name_test = 'pgcd('+str(a)+' ,'+str(b)+')'
+    action_before = 'st '+str(a)+' $30\nst '+str(b)+' $31'
+    minibrain_action_before.append([name_test, action_before])
 
 minibrain_action_before=str(minibrain_action_before)
 
 minibrain_check_after=[ [(32, 10)], 
                         [(32, 1)], ]
+
+for i in range(5):
+    a, b, pgcd = data[i]
+    minibrain_action_before.append([(32, pgcd)])
 
 minibrain_check_after=str(minibrain_check_after)
 ==
