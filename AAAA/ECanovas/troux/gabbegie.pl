@@ -33,8 +33,8 @@ st2=choices
 text=st1+" et {{st2}}<br/>"
 
 # le html input
-for v,fb in choices:
-    text=text+"Entrée {{v}} et feedback {{fb}}"
+for item in choices:
+    text=text+"Entrée {{item[value]}} et feedback {{item[feedback]}}"
 
 #<select name="pets" id="pet-select">
 #    <option value="">--Please choose an option--</option>
