@@ -40,8 +40,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
 ==
 
 evaluator ==
-grade = (100, "coucou")
-feedback = "coucou"
+grade = (100, response['math'])
 ==
 
 
