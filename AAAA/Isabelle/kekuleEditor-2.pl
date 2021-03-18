@@ -39,11 +39,11 @@ form ==
 # fonction getSmile va recuperer dans mol ce qui est dans le fenetre de composer
 # Kelule.IO.saveFormatData(mol, 'smi') va lire ce qui est dans mol comme format smile
 # 
-extrajs==
-<script>
-var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
-composer.setCommonToolButtons(["undo", "redo","zoomIn", "zoomOut"]);
-composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula', 'ring', 'charge']);
+#extrajs==
+#<script>
+#var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
+#composer.setCommonToolButtons(["undo", "redo","zoomIn", "zoomOut"]);
+#composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula', 'ring', 'charge']);
 
 function getSmile() {
     var mol = composer.exportObjs(Kekule.Molecule)[0];
@@ -52,8 +52,8 @@ function getSmile() {
     textarea.value = smiles;
 }
 
-</script>
-==
+#</script>
+#==
 evaluator ==
 grade=(100,"Bonne réponse")
 ==
