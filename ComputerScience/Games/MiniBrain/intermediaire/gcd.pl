@@ -50,7 +50,8 @@ for i in range(5):
     data.append((a, b, pgcd))
 
 minibrain_action_before=[ ['pgcd de 10 et 10', 'st 10 $30\nst 10 $31'], 
-                          ['pgcd de 5 et 7', 'st 5 $30\nst 7 $31'], ]
+                          ['pgcd de 5 et 7', 'st 5 $30\nst 7 $31'],
+                          ['pgcd de 897 et 897', 'st 897 $30\nst 897 $31'], ]
 
 for i in range(5):
     a, b, pgcd = data[i]
@@ -61,7 +62,8 @@ for i in range(5):
 minibrain_action_before=str(minibrain_action_before)
 
 minibrain_check_after=[ [(32, 10)], 
-                        [(32, 1)], ]
+                        [(32, 1)],
+                        [(32, 897)], ]
 
 for i in range(5):
     a, b, pgcd = data[i]
