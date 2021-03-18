@@ -29,12 +29,12 @@ for line in lines:
 choices=re.findall(pattern,text)
 st1=re.sub(r'{.*}', '??', text)
 st2=choices
-text=st1+" et {{st2}}"
+text=st1+" et {{st2}}\n"
 
 # le html input
 for v,fb in choices:
     text=text+"Entrée {{v}} et feedback {{fb}}"
-    
+
 #<select name="pets" id="pet-select">
 #    <option value="">--Please choose an option--</option>
 #    <option value="dog">Dog</option>
