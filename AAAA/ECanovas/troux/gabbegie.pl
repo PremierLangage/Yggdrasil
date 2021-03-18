@@ -26,7 +26,7 @@ for line in lines:
         "value": match.group('value').strip()
     }
     choices.append(choice)
-
+choices=re.findall(pattern,text)
 text=choices
 
 ==
