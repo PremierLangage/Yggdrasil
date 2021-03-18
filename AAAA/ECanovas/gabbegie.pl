@@ -13,6 +13,6 @@ il était une fois <b>_____</b> qui  _____
 
 
 choices==
-=lapin #Bravo
+=lapin #Bravo *et mon lapin?
 =cerf
 == 
