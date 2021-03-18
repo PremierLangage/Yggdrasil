@@ -40,11 +40,11 @@ text += extra_doc
 
 n1 = randint(8, 15)
 
-minibrain_action_before=[ ['décomposition de 1', 'st 1 $20'] ]
+minibrain_action_before=[ ['pgcd(10, 10)', 'st 10 $30\nst 10 $31'] ]
 
 minibrain_action_before=str(minibrain_action_before)
 
-minibrain_check_after=[ [(21, 1)] ]
+minibrain_check_after=[ [(32, 10)] ]
 
 minibrain_check_after=str(minibrain_check_after)
 ==
