@@ -42,7 +42,7 @@ composer.setChemToolButtons(["manipulate", "erase", "bond", 'atomAndFormula', 'r
 composer.setAllowedObjModifierCategories(["general", "chemStruct", "glyph", "style", "misc"]);
 
 function getSmile() {
-    var mol = composer.ex
+    var mol = composer.exportObjs(Kekule.Molecule)[0];
     portObjs(Kekule.Molecule)[0];
     var smiles = Kekule.IO.saveFormatData(mol, 'smi');
     var textarea = document.getElementById("smiles");
