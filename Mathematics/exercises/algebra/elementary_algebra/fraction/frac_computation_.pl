@@ -2,7 +2,7 @@
 # Tags : fractions
 # 19/8/2020
 
-extends = /model/mathinput.pl
+extends = /model/mathquill.pl
 
 title = Opérations sur les fractions
 
