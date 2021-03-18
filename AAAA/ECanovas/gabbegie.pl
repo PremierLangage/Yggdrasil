@@ -14,5 +14,5 @@ il était une fois <b>_____</b> qui  _____
 
 choices==
 =lapin #Bravo *et mon lapin?
-=cerf
+=cerf # non
 == 
