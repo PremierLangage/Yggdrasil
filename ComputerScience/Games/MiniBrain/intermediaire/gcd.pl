@@ -49,12 +49,12 @@ for i in range(5):
     pgcd = gcd(a, b)
     data.append((a, b, pgcd))
 
-minibrain_action_before=[ ['pgcd(10, 10)', 'st 10 $30\nst 10 $31'], 
-                          ['pgcd(5, 7)', 'st 5 $30\nst 7 $31'], ]
+minibrain_action_before=[ ['pgcd de 10 et 10', 'st 10 $30\nst 10 $31'], 
+                          ['pgcd de 5 et 7', 'st 5 $30\nst 7 $31'], ]
 
 for i in range(5):
     a, b, pgcd = data[i]
-    name_test = 'pgcd('+str(a)+' ,'+str(b)+')'
+    name_test = 'pgcd de '+str(a)+' et '+str(b)
     action_before = 'st '+str(a)+' $30\nst '+str(b)+' $31'
     minibrain_action_before.append([name_test, action_before])
 
