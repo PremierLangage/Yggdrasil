@@ -27,6 +27,6 @@ for line in lines:
     }
     choices.append(choice)
 
-text=choices.count(lapin)
+text=choices.count('lapin')
 
 ==
