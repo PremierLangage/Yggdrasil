@@ -48,12 +48,11 @@ function getSmile() {
     textarea.value = smiles;
 }
 
-#</script>
+</script>
 ==
 evaluator ==
 grade=(100,"Bonne réponse")
 ==
-
 
 
 
