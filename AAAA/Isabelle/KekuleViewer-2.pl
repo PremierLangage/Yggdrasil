@@ -13,6 +13,7 @@ lang = fr
 text ==
 ==
 
+# 4eme ligne: recupere kekule avec les moduldes chemWidget, algorithm, render, openbable et indigo. pas les autres modules
 form ==
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.js"></script>
