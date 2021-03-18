@@ -7,7 +7,7 @@ Gab Completing
 text==#|markdown|
 Compléter le code suivant pour que la fonction puisse être opérationnelle
 
-il était une fois <b>_____</b> qui  _____
+il était une fois _____ qui  _____
 
 == 
 
