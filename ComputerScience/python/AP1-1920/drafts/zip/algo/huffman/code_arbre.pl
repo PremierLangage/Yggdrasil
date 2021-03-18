@@ -120,7 +120,6 @@ int main(int argn,char *argv[]){
       printf("noeud interne %d\n",i);     
       scanf("%d%d%d",&(arbre[i].frequence),&(arbre[i].gauche),&(arbre[i].droit));
       }
-    affiche_arbre(arbre,racine);
     s=code_arbre(arbre,racine);
     printf("cod e apres %s\n",s);free(arbre);
   }
