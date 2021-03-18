@@ -37,7 +37,7 @@ for item in choices:
     text=text+"{{item}} Entrée {{item['value']}} et feedback {{item['feedback']}}<br/>"
 r=len(choices)
 text=text+"{{r}}<br/>"
-for it in range(len(choices)):
+for it in list(range(2)):
     text=text+"Entrée {{it}} {{choices[it]['value']}} et feedback {{choices[it]['feedback']}}<br/>"
 un=choices[0]
 text=text+" {{un}}"
