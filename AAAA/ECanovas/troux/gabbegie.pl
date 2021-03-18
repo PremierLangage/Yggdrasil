@@ -10,7 +10,6 @@ Compléter les trous du texte suivant
 il était une fois {=lapin #avec de grandes oreilles} de 
 pelage {=blanc,bleu,rouge #une couleur!} blabli blablou..
 
-{% choices %}
 == 
 
 before==
@@ -27,4 +26,5 @@ for line in lines:
         "value": match.group('value').strip()
     }
     choices.append(choice)
+text.append(choices)
 ==
