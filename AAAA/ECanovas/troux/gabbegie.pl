@@ -27,6 +27,6 @@ for line in lines:
     }
     choices.append(choice)
 choices=re.findall(pattern,text)
-text=re.sub(pattern, ??, text)
+text=re.sub(pattern, '??', text)
 
 ==
