@@ -27,6 +27,7 @@ for line in lines:
     }
     choices.append(choice)
 choices=re.findall(pattern,text)
-text=re.sub(pattern, '??', text)
-
+st1=re.sub(pattern, '??', text)
+st2=choices
+text=st1 " et " st2
 ==
