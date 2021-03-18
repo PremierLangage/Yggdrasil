@@ -81,6 +81,25 @@ minibrain_check_after=str(minibrain_check_after)
 ==
 
 solution==
-
+ld $30 #0
+ld $31 #1
+ld 1 #2
+ld 1 #3
+inc #2
+mv #0 a
+div #2
+bfdn 13
+mv #1 a
+div #2
+bfdn 13
+mv #2 #3
+mv #0 a
+cmp #2
+bfup 20
+mv #1 a
+cmp #2
+bfup 20
+bnow 5
+st #2 $32
 ==
 
