@@ -43,19 +43,19 @@ text += extra_doc
 
 data= []
 for i in range(5):
-    min_pgcd = randint(1, 30)
-    a = min_pgcd*randint(1, 100)
-    b = min_pgcd*randint(1, 100)
+    min_pgcd = randint(1, 10)
+    a = min_pgcd*randint(1, 10)
+    b = min_pgcd*randint(1, 10)
     pgcd = gcd(a, b)
     data.append((a, b, pgcd))
 
 minibrain_action_before=[ ['pgcd de 10 et 10', 'st 10 $30\nst 10 $31'], 
-                          ['pgcd de 5 et 7', 'st 5 $30\nst 7 $31'],
-                          ['pgcd de 897 et 897', 'st 897 $30\nst 897 $31'],
-                          ['pgcd de 4083 et 9527', 'st 4083 $30\nst 9527 $31'],
-                          ['pgcd de 23513 et 23534', 'st 23513 $30\nst 23534 $31'],
-                          ['pgcd de 16614 et 9594', 'st 16614 $30\nst 9594 $31'],
-                          ['pgcd de 11865 et 6783', 'st 11865 $30\nst 6783 $31'], ]
+                          ['pgcd de 5 et 7', 'st 5 $30\nst 7 $31'], ]
+#                          ['pgcd de 897 et 897', 'st 897 $30\nst 897 $31'],
+#                          ['pgcd de 4083 et 9527', 'st 4083 $30\nst 9527 $31'],
+#                          ['pgcd de 23513 et 23534', 'st 23513 $30\nst 23534 $31'],
+#                          ['pgcd de 16614 et 9594', 'st 16614 $30\nst 9594 $31'],
+#                          ['pgcd de 11865 et 6783', 'st 11865 $30\nst 6783 $31'], ]
 
 for i in range(5):
     a, b, pgcd = data[i]
@@ -66,12 +66,12 @@ for i in range(5):
 minibrain_action_before=str(minibrain_action_before)
 
 minibrain_check_after=[ [(32, 10)], 
-                        [(32, 1)],
-                        [(32, 897)],
-                        [(32, 1361)],
-                        [(32, 7)],
-                        [(32, 234)],
-                        [(32, 21)], ]
+                        [(32, 1)], ]
+#                        [(32, 897)],
+#                        [(32, 1361)],
+#                        [(32, 7)],
+#                        [(32, 234)],
+#                        [(32, 21)], ]
 
 for i in range(5):
     a, b, pgcd = data[i]
