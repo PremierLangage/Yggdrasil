@@ -38,7 +38,7 @@ extrajs==
 <script>
 var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
 composer.setCommonToolButtons(["undo", "redo","zoomIn", "zoomOut"]);
-composer.setChemToolButtons(["manipulate", "erase", 'bond', 'atomAndFormula', 'ring', 'charge']);
+composer.setChemToolButtons(["manipulate", "erase", "bond", 'atomAndFormula', 'ring', 'charge']);
 composer.setAllowedObjModifierCategories(["general", "chemStruct", "glyph", "style", "misc"]);
 
 function getSmile() {
