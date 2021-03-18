@@ -7,7 +7,7 @@ Exercice à troux
 text==#|markdown|
 Compléter les trous du texte suivant
 
-il était une fois {=lapin #avec de grandes oreilles} de 
+il était une fois un {=lapin #avec de grandes oreilles} de 
 pelage {=blanc,bleu,rouge #une couleur!} blabli blablou..
 
 == 
@@ -27,6 +27,6 @@ for line in lines:
     }
     choices.append(choice)
 choices=re.findall(pattern,text)
-text=choices
+text=re.sub(pattern, ??, text)
 
 ==
