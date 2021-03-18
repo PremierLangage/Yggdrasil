@@ -40,10 +40,10 @@ form ==
 # Kelule.IO.saveFormatData(mol, 'smi') va lire ce qui est dans mol comme format smile
 # 
 extrajs==
-#<script>
-#var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
-#composer.setCommonToolButtons(["undo", "redo","zoomIn", "zoomOut"]);
-#composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula', 'ring', 'charge']);
+<script>
+var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
+composer.setCommonToolButtons(["undo", "redo","zoomIn", "zoomOut"]);
+composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula', 'ring', 'charge']);
 
 function getSmile() {
     var mol = composer.exportObjs(Kekule.Molecule)[0];
