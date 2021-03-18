@@ -29,5 +29,5 @@ for line in lines:
 choices=re.findall(pattern,text)
 st1=re.sub(pattern, '??', text)
 st2=choices
-text=st1+" et "+st2
+text=st1+" et "+st2.string()
 ==
