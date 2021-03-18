@@ -80,7 +80,10 @@ for i in range(5):
 minibrain_check_after=str(minibrain_check_after)
 ==
 
-solution==
+solution_naive==
+# ne fonctionne pas car trop gourmande en général
+# on part de 1 et on monte jusqu'au minimun
+# on update le registre #3 quand on trouve un div commun
 ld $30 #0
 ld $31 #1
 ld 1 #2
@@ -103,3 +106,6 @@ bnow 5
 st #3 $32
 ==
 
+solution==
+
+==
