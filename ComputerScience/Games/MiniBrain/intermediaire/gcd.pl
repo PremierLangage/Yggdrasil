@@ -38,13 +38,15 @@ from random import randint
 
 text += extra_doc
 
-n1 = randint(8, 15)
+gcd = randint(1, 30)
 
-minibrain_action_before=[ ['pgcd(10, 10)', 'st 10 $30\nst 10 $31'] ]
+minibrain_action_before=[ ['pgcd(10, 10)', 'st 10 $30\nst 10 $31'], 
+                          ['pgcd(5, 7)', 'st 5 $30\nst 7 $31'], ]
 
 minibrain_action_before=str(minibrain_action_before)
 
-minibrain_check_after=[ [(32, 10)] ]
+minibrain_check_after=[ [(32, 10)], 
+                        [(32, 1)], ]
 
 minibrain_check_after=str(minibrain_check_after)
 ==
