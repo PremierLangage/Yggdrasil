@@ -21,12 +21,14 @@ author=Nicolas Borie
 title=Plus Grand Commun Diviseur
 
 text==#|markdown|
+
 <p>
 Proposez un code Mini-Brain calculant le <b>PGCD</b> (le plus grand diviseur commun) de 
 deux entiers. Les deux entiers seront placés en case mémoire <b>30</b> et <b>31</b> de la mémoire 
 centrale. Votre code mini-brain devra placer le résultat en case <b>32</b> une fois ce 
 dernier correctement calculé. Bon courage.
 </p>
+
 ==
 
 editor.code ==
