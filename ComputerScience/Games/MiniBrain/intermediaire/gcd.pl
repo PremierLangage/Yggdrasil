@@ -29,6 +29,12 @@ centrale. Votre code mini-brain devra placer le résultat en case <b>32</b> une 
 dernier correctement calculé. Bon courage.
 </p>
 
+<p>
+Pour information, l'algorithme ultra naif et linéaire qui égrenne les entiers 
+de manière croissante en mettant à jour le plus grand entier divisant les deux entiers 
+en argument ne fonctionnera pas (il faut plus de 8 minutes pour passer tous les tests).
+</p>
+
 ==
 
 editor.code ==
@@ -107,5 +113,19 @@ st #3 $32
 ==
 
 solution==
-
+ld $30 #0
+ld $31 a
+cmp #0
+bfup 8
+mv #0 #1
+mv a #0
+bnow 9
+mv a #1
+mv #0 a
+mod #1
+bfup 15
+mv #1 #0
+mv a #1
+bnow 9
+st #1 $32
 ==
