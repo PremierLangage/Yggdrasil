@@ -18,7 +18,7 @@ extends= /ComputerScience/Games/MiniBrain/mini_brain_template.pl
 
 author=Nicolas Borie
 
-title=Plus Grand Commun Diviseur
+title=PGCD : Plus Grand Commun Diviseur
 
 text==#|markdown|
 
