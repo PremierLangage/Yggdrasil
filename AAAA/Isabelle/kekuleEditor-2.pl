@@ -23,9 +23,6 @@ form ==
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/kekule/dist/themes/default/kekule.css" />
 
 
-  
-<div id="composerSrc" data-widget="Kekule.Editor.Composer" data-predefined-setting="molOnly" data-chem-obj="url(#srcMol)"></div>
-
 <div id="composer" style="width:500px;height:500px" data-widget="Kekule.Editor.Composer" data-chem-obj="url(#molecule)"></div>
 <br>
 <input value="Get Smiles" onclick="getSmile()" type="button">
@@ -56,6 +53,7 @@ function getSmile() {
 evaluator ==
 grade=(100,"Bonne réponse")
 ==
+
 
 
 
