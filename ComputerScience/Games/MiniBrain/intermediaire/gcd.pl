@@ -67,7 +67,7 @@ minibrain_action_before=str(minibrain_action_before)
 
 minibrain_check_after=[ [(32, 10)], 
                         [(32, 1)], 
-                        [(32, 897)], ]
+                        [(32, 897)], 
                         [(32, 1361)],
                         [(32, 7)],
                         [(32, 234)],
