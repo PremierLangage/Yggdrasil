@@ -16,7 +16,7 @@ pelage {=blanc,bleu,rouge #une couleur!} blabli blablou..
 
 before==
 
-from laoadexo import *
+from loadexo import *
 
 enonc,dico = getenonce(text)
 
