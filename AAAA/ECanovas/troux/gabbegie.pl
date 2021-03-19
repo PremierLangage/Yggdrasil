@@ -41,6 +41,6 @@ form=menuUn
 
 #strtemp=gethtmlmenu(enonc,dico)
 
-text=text+"<br/> pour {{strtemp}} len={{len(dico)}}"
+text=enonc+"<br/> pour {{strtemp}} len={{len(dico)}}"
 ==
 
