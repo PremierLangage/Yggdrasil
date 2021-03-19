@@ -32,7 +32,8 @@ def gethtmlmenu(enonce,dico):
 
     strtemp=""
     for itemmenu in re.finditer('??',enonce):
-        strtemp=enonce[:itemmenu.start()] + "ICI"
+        #strtemp=enonce[:itemmenu.start()]
+        strtemp=itemmenu.start()
         #enonce=enonce[item.end():]
     
     return strtemp
