@@ -33,7 +33,7 @@ def gethtmlmenu(enonce,dico):
     lines = enonce.split('\n')
     for line in lines:
         #for itemmenu in re.finditer(r'??',line,re.MULTILINE):
-            strtemp=strtemp+"-"
+            strtemp=strtemp+line
 
         #strtemp=enonce[:itemmenu.start()]
         #strtemp=itemmenu.start()
