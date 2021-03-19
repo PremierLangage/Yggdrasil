@@ -35,7 +35,7 @@ def gethtmlmenu(enonce,dico):
     for line in lines:
         for itemmenu in re.finditer("\?\?",line):
             #strtemp=strtemp+str(itemmenu.start())+" - "
-            strtemp=strtemp+line+" EOL<br/>"
+            strtemp=strtemp+line[:itemmenu.start()]+" EOL<br/>"
             flg=True
         if not flg:
             strtemp=strtemp+line
