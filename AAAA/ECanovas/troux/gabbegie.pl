@@ -20,7 +20,7 @@ montexte=il était une fois un {=lapin,chien #avec de grandes oreilles} de
 
 from loadexo import *
 
-enonc,dico = splitenonce(text)
+enonc,dico = splitenonce(montext)
 
 # le html input
 for item in dico:
