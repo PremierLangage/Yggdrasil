@@ -30,6 +30,7 @@ def gethtmlmenu(enonce,dico):
     
     """
     strtemp=""
+    flg=F
     lines = enonce.split('\n')
     for line in lines:
         for itemmenu in re.finditer("\?\?",line):
