@@ -18,7 +18,7 @@ before==
 montexte="il était une fois un {=lapin,chien #avec de grandes oreilles} de \n    pelage {=blanc,bleu,rouge #une couleur!} blabli blablou {=hiver,ete #oh saison} et toc.."
 from loadexo import *
 
-enonc,dico = splitenonce(montext)
+enonc,dico = splitenonce(montexte)
 
 # le html input
 for item in dico:
