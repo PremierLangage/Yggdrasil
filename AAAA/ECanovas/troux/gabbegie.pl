@@ -29,7 +29,7 @@ for item in dico:
 monhtml=enonc
 
 # {{un['value']}} et feedback {{un['feedback']}}<br/>"
-it=dico[]
+it=dico
 
 menuUn='<select name="pets" id="pet-select"><option value="">--Please choose an option--</option>'
 for it in dico:
