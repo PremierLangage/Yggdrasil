@@ -14,7 +14,7 @@ def splitenonce(enonce="nothing"): #
         #match = pattern.match(line)
         #if not match:
         #    continue
-        for match in re.match(pattern,line)
+        for match in re.match(pattern,line):
             choice = {
                 "value": match.group('value').strip(),
                 "feedback": match.group('feedback') or ''
