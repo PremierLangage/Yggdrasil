@@ -15,6 +15,8 @@ pelage {=blanc,bleu,rouge #une couleur!} blabli blablou {=hiver,ete #oh saison} 
 == 
 
 before==
+montexte=il était une fois un {=lapin,chien #avec de grandes oreilles} de 
+    pelage {=blanc,bleu,rouge #une couleur!} blabli blablou {=hiver,ete #oh saison} et toc..
 
 from loadexo import *
 
