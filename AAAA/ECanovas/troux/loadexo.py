@@ -11,13 +11,14 @@ def splitenonce(enonce="nothing"): #
     #pattern = re.compile(r'.*{(?:=(?P<value>(?:(?:\\\#)|[^\#])+)(?:\#(?P<feedback>.*))?)}')
     pattern = re.compile(r'{=(?P<value>.*)(?:\#(?P<feedback>.*))}')
     for line in lines:
-        match = pattern.match(line)
-        if not match:
-            continue
-        choice = {
-            "value": match.group('value').strip(),
-            "feedback": match.group('feedback') or ''
-        }
+        #match = pattern.match(line)
+        #if not match:
+        #    continue
+        for match in pattern.match(line)
+            choice = {
+                "value": match.group('value').strip(),
+                "feedback": match.group('feedback') or ''
+            }
         choices.append(choice)
 
     #choices=re.findall(pattern,enonce)
