@@ -1,5 +1,7 @@
 extends = /gift/templates/qshortset.pl
 
+@loadexo.py
+
 title==
 Exercice à troux
 ==
@@ -13,30 +15,16 @@ pelage {=blanc,bleu,rouge #une couleur!} blabli blablou..
 == 
 
 before==
-import re
-lines = text.split('\n')
-choices = []
-pattern = re.compile(r'.*{(?:=(?P<value>(?:(?:\\\#)|[^\#])+)(?:\#(?P<feedback>.*))?)}')
-for line in lines:
-    match = pattern.match(line)
-    if not match:
-        continue
-    choice = {
-        "feedback": match.group('feedback') or '',
-        "value": match.group('value').strip()
-    }
-    choices.append(choice)
 
-#choices=re.findall(pattern,text)
-st1=re.sub(r'{.*}', '??', text)
-st2=choices
-text=st1+" et {{st2}}<br/>"
+import * from loadexo.py
+
+enonc,dico = getenonce(text)
 
 # le html input
-#for item in choices:
-#    text=text+"{{item}} Entrée {{item['value']}} et feedback {{item['feedback']}}<br/>"
-# r=len(choices)
-# for it in list(range(2)):
+for item in dico:
+    text=text+"{{item}} Entrée {{item['value']}} et feedback {{item['feedback']}}<br/>"
+# r=len(dico)
+# for it in list(range(r)):
 
 un=choices[0]
 deux=choices[1]
