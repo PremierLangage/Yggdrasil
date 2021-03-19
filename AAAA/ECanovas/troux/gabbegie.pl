@@ -41,6 +41,6 @@ form=menuUn
 
 strtemp=gethtmlmenu(enonc,dico)
 
-text=enonc+"<br/> Result= {{strtemp}}"
+text=enonc+"<br/> Result= " +strtemp
 ==
 
