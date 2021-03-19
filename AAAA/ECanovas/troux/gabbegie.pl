@@ -7,7 +7,7 @@ Exercice à troux
 text==#|markdown|
 Compléter les trous du texte suivant
 
-il était une fois un {=lapin|chien #avec de grandes oreilles} de 
+il était une fois un {=lapin,chien #avec de grandes oreilles} de 
 pelage {=blanc,bleu,rouge #une couleur!} blabli blablou..
 
 == 
@@ -33,24 +33,23 @@ st2=choices
 text=st1+" et {{st2}}<br/>"
 
 # le html input
-for item in choices:
-    text=text+"{{item}} Entrée {{item['value']}} et feedback {{item['feedback']}}<br/>"
-r=len(choices)
-text=text+"{{r}}<br/>"
-for it in list(range(2)):
-    text=text+"Entrée {{it}} {{choices[it]['value']}} et feedback {{choices[it]['feedback']}}<br/>"
+#for item in choices:
+#    text=text+"{{item}} Entrée {{item['value']}} et feedback {{item['feedback']}}<br/>"
+# r=len(choices)
+# for it in list(range(2)):
+
 un=choices[0]
-text=text+" {{un}}"
-#text=text+"Entrée {{un['value']}} et feedback {{un['feedback']}}<br/>"
+deux=choices[1]
+# que le texte est ?? pour les inserts menu
+monhtml=re.sub(r'{.*}', '??', text)
+
+# {{un['value']}} et feedback {{un['feedback']}}<br/>"
+menuUn=<select name="pets" id="pet-select"><option value="">--Please choose an option--</option>
+for it in un
+    menuUn=menuUn+'<option value="">{{it}}</option'
+menuUn=menuUn+'</select>'
+
 ==
 form==
-<select name="pets" id="pet-select">
-    <option value="">--Please choose an option--</option>
-    <option value="dog">Dog</option>
-    <option value="cat">Cat</option>
-    <option value="hamster">Hamster</option>
-    <option value="parrot">Parrot</option>
-    <option value="spider">Spider</option>
-    <option value="goldfish">Goldfish</option>
-</select>
+{{menuUn}}
 ==
