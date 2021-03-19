@@ -41,9 +41,9 @@ def gethtmlmenu(enonce,dico):
             flg=True
         
         if not flg:
-            strtemp=strtemp+line+" EOL<br/>"
-        else:
-            strtemp=strtemp+" oups"+str(lst)
+            strtemp=strtemp+line+"<br/>"
+        #else:
+            #strtemp=strtemp+" oups"+str(lst)
         flg=False
         #        strtemp=strtemp+enonce[:itemmenu.start()]
         #strtemp=enonce[:itemmenu.start()]
