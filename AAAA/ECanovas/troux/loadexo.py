@@ -1,6 +1,4 @@
 
-import csv
-import random 
 import re
 
 def getenonce(enonce="nothing"): # 
@@ -25,10 +23,5 @@ def getenonce(enonce="nothing"): #
     enoncetroux=re.sub(r'{.*}', '??', enonce)
 
     return enoncetroux,choices
-    
-
-
-#    for k in dico:
-#        globals()[k]=dico[k]
 
 
