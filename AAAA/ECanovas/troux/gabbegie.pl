@@ -29,11 +29,10 @@ for item in dico:
 un=choices[0]
 deux=choices[1]
 # que le texte est ?? pour les inserts menu
-monhtml=re.sub(r'{.*}', '??', text)
+monhtml=enonc
 
 # {{un['value']}} et feedback {{un['feedback']}}<br/>"
-it=list(un['value'])
-it=[un['value']]
+it=list(dico['value'])
 
 menuUn='<select name="pets" id="pet-select"><option value="">--Please choose an option--</option>'
 #for it in un['value']:
