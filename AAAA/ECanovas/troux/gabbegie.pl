@@ -25,9 +25,6 @@ for item in dico:
     text=text+"{{item}} Entrée {{item['value']}} et feedback {{item['feedback']}}<br/>"
 # r=len(dico)
 # for it in list(range(r)):
-
-un=choices[0]
-deux=choices[1]
 # que le texte est ?? pour les inserts menu
 monhtml=enonc
 
