@@ -12,6 +12,7 @@ Compléter les trous du texte suivant
 il était une fois un {=lapin,chien #avec de grandes oreilles} de 
 pelage {=blanc,bleu,rouge #une couleur!} blabli blablou {=hiver,ete #oh saison} et toc..
 
+
 == 
 
 before==
@@ -41,6 +42,6 @@ form=menuUn
 
 strtemp=gethtmlmenu(enonc,dico)
 
-text=enonc+"<br/> Result= " +strtemp
+text=text+"<br/>"+enonc+"<br/> Result= " +strtemp
 ==
 
