@@ -18,7 +18,7 @@ before==
 
 from loadexo import *
 
-enonc,dico = getenonce(text)
+enonc,dico = splitenonce(text)
 
 # le html input
 for item in dico:
