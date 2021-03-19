@@ -14,8 +14,8 @@ def getenonce(enonce="nothing"): #
         if not match:
             continue
         choice = {
-            "feedback": match.group('feedback') or '',
-            "value": match.group('value').strip()
+            "value": match.group('value').strip(),
+            "feedback": match.group('feedback') or ''
         }
         choices.append(choice)
 
