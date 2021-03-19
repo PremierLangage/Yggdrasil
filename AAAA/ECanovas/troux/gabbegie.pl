@@ -22,7 +22,7 @@ enonc,dico = getenonce(text)
 
 # le html input
 for item in dico:
-    text=text+"<br/>"+ r'{{item}}' +"<br/> Entrée "+item['value']+" et feedback "+ item['feedback']+"<br/>"
+    text=text+"<br/>"+ r'{%item%}' +"<br/> Entrée "+item['value']+" et feedback "+ item['feedback']+"<br/>"
 # r=len(dico)
 # for it in list(range(r)):
 # que le texte est ?? pour les inserts menu
