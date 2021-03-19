@@ -48,7 +48,7 @@ menuUn='<select name="pets" id="pet-select"><option value="">--Please choose an 
 for it in un:
     menuUn=menuUn+'<option value="">{{it}}</option>'
 menuUn=menuUn+'</select>'
-form==menuUn
+form=menuUn
 text=text+"mon HTML {{menuUn}}"
 ==
 
