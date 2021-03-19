@@ -38,6 +38,8 @@ for it in dico:
 #menuUn=menuUn+'<option value="">{{dico[1]}}</option>'
 menuUn=menuUn+'</select>'
 form=menuUn
-text="mon HTML {{menuUn}}<br/> pour {{monhtml}} len={{len(dico)}}"
+
+strtemp=gethtmlmenu(enonc,dico)
+text="<br/> pour {{strtemp}} len={{len(dico)}}"
 ==
 
