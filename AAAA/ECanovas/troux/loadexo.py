@@ -9,7 +9,7 @@ def splitenonce(enonce="nothing"): #
     lines = enonce.split('\n')
     choices = []
     #pattern = re.compile(r'.*{(?:=(?P<value>(?:(?:\\\#)|[^\#])+)(?:\#(?P<feedback>.*))?)}')
-    pattern = re.compile(r'{=(?P<value>.*)(?:\#(?P<feedback>.*))}')
+    pattern = re.compile(r'{=.*}')
     for line in lines:
         match = pattern.match(line)
         if not match:
