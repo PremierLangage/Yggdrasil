@@ -30,7 +30,7 @@ def splitenonce(enonce="nothing"): #
         }
         choices.append(choice)
     #choices=re.findall(pattern,enonce)
-    enoncetroux=re.sub(r'{=.+}', '=!=', enonce)
+    enoncetroux=re.sub(r'{=truc.+}', '=!=', enonce)
 
     return enoncetroux,choices
 
