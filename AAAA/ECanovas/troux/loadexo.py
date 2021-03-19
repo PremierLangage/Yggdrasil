@@ -31,10 +31,8 @@ def gethtmlmenu(enonce,dico):
     """
     strtemp=""
     for itemmenu in re.finditer(r'??',enonce,re.MULTILINE):
-        if not itemmenu:
-            strtemp=bad
-        else:
-            strtemp=enonce[:itemmenu.start()]
+        strtemp=strtemp+"-"
+        #strtemp=enonce[:itemmenu.start()]
         #strtemp=itemmenu.start()
         #enonce=enonce[item.end():]
     
