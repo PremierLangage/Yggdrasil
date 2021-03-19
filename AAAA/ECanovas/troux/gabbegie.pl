@@ -42,7 +42,7 @@ for it in list(range(2)):
 un=choices[0]
 text=text+" {{un}}"
 #text=text+"Entrée {{un['value']}} et feedback {{un['feedback']}}<br/>"
-
+==
 form==
 <select name="pets" id="pet-select">
     <option value="">--Please choose an option--</option>
