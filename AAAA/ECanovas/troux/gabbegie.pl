@@ -46,7 +46,7 @@ monhtml=re.sub(r'{.*}', '??', text)
 # {{un['value']}} et feedback {{un['feedback']}}<br/>"
 menuUn='<select name="pets" id="pet-select"><option value="">--Please choose an option--</option>'
 
-menuUn=menuUn+'<option value="">{{un['value']}}</option>'
+menuUn=menuUn+'<option value="">{{un[\'value\']}}</option>'
 menuUn=menuUn+'</select>'
 form=menuUn
 text=text+"mon HTML {{menuUn}}"
