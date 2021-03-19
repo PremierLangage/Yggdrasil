@@ -44,7 +44,7 @@ deux=choices[1]
 monhtml=re.sub(r'{.*}', '??', text)
 
 # {{un['value']}} et feedback {{un['feedback']}}<br/>"
-menuUn=<select name="pets" id="pet-select"><option value="">--Please choose an option--</option>
+menuUn='<select name="pets" id="pet-select"><option value="">--Please choose an option--</option>'
 for it in un
     menuUn=menuUn+'<option value="">{{it}}</option'
 menuUn=menuUn+'</select>'
