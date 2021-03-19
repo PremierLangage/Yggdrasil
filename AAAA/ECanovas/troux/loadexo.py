@@ -29,11 +29,11 @@ def gethtmlmenu(enonce,dico):
     >>> gethtmlmenu(enonce,dico)
     
     """
-
     strtemp=""
-    for itemmenu in re.finditer(r'??',enonce):
+    #for itemmenu in re.finditer(r'??',enonce):
         #strtemp=enonce[:itemmenu.start()]
-        strtemp=itemmenu.start()
+        #strtemp=itemmenu.start()
         #enonce=enonce[item.end():]
-    
+    re.finditer(r'??',enonce)
+    enonce=enonce[item.end():]
     return strtemp
