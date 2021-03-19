@@ -3,7 +3,7 @@ import re
 
 def getenonce(enonce="nothing"): # 
     """
-    >>> getenonce(categorie=1)
+    >>> getenonce(enonce="nothing")
     
     """
     lines = enonce.split('\n')
@@ -24,4 +24,14 @@ def getenonce(enonce="nothing"): #
 
     return enoncetroux,choices
 
-
+def gethtmlmenu(enonce,dico):
+    """
+    >>> gethtmlmenu(enonce,dico)
+    
+    """
+    strtemp=""
+    for itemmenu in re.finditer(r'??',enonce):
+        strtemp=enonce[:itemmenu.start()] + "ICI"
+        enonce=enonce[item.end():]
+    
+    return strtemp
