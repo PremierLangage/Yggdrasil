@@ -32,11 +32,9 @@ def gethtmlmenu(enonce,dico):
     strtemp=""
     lines = enonce.split('\n')
     for line in lines:
-        for itemmenu in re.finditer(r'??',enonce,re.MULTILINE):
-            try:
-                strtemp=strtemp+"-"
-            except KeyError:
-                continue
+        for itemmenu in re.finditer(r'??',line,re.MULTILINE):
+            strtemp=strtemp+"-"
+
         #strtemp=enonce[:itemmenu.start()]
         #strtemp=itemmenu.start()
         #enonce=enonce[item.end():]
