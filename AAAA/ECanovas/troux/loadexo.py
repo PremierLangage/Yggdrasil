@@ -34,6 +34,4 @@ def gethtmlmenu(enonce,dico):
         #strtemp=enonce[:itemmenu.start()]
         #strtemp=itemmenu.start()
         #enonce=enonce[item.end():]
-    item=re.search(r'??',enonce)
-    enonce=enonce[item.end():]
-    return strtemp
+    return enonce
