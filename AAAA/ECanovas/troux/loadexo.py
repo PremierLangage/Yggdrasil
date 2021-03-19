@@ -32,8 +32,8 @@ def gethtmlmenu(enonce,dico):
     strtemp=""
     lines = enonce.split('\n')
     for line in lines:
-        iter=re.finditer("^\?\?",line,re.MULTILINE)
-        strtemp=strtemp+iter
+        for itemmenu in re.finditer("^\?\?",line,re.MULTILINE)
+            strtemp=strtemp+itemmenu
 
         #strtemp=enonce[:itemmenu.start()]
         #strtemp=itemmenu.start()
