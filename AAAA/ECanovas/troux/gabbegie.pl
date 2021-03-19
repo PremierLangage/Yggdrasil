@@ -29,15 +29,15 @@ for item in dico:
 monhtml=enonc
 
 # {{un['value']}} et feedback {{un['feedback']}}<br/>"
-it=dico['value']
+it=dico[]
 
 menuUn='<select name="pets" id="pet-select"><option value="">--Please choose an option--</option>'
-#for it in un['value']:
-#    menuUn=menuUn+'<option value="">{{it}}</option>'
+for it in dico:
+    menuUn=menuUn+'<option value="">{{it['value']}}</option>'
 menuUn=menuUn+'<option value="">{{it[0]}}</option>'
 menuUn=menuUn+'<option value="">{{it[1]}}</option>'
 menuUn=menuUn+'</select>'
 form=menuUn
-text=text+"mon HTML {{menuUn}}"
+text=text+"mon HTML {{menuUn}} pour {{monhtml}}"
 ==
 
