@@ -70,13 +70,13 @@ def gethtmlmenu(enonce,dico):
     
         for itemmenu in re.finditer(r'TT',line):
             m = defhtmlmenu(indice,dico)
-            re.sub("TT",m , line, 1)
+            l = re.sub("TT",m , line, 1)
             indice += 1
             strtemp=strtemp+line[lst:itemmenu.start()+lst]+ " =="+str(lst)+"-"+str(itemmenu.start()+lst)+"-"+str(itemmenu.span())+line+" EOL<br/>"
             #strtemp=strtemp+line+" EOL<br/>"
             lst=itemmenu.end()+lst
             flg=True
-        monHtml=monHtml+line    
+        monHtml=monHtml+l    
         if not flg:
             strtemp=strtemp+line+"<br/>"
         #else:
