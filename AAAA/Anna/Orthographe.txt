@@ -53,3 +53,8 @@ mauvais : Le bibliothécaire est un homme fort obligeant ; il a tenu à ce que j
 bon : Le bibliothécaire est un homme fort obligeant ; il a tenu à ce que j’aie accès à tous les ouvrages et que je puisse les consulter.
 explication : La conjonction de subordination "que" introduit le subjonctif dans la subordination et on est à la première personne du singulier 
 donc la formule adéquate ne peut être que "aie été". La formule adéquate est "et" car on relie deux propositions. 
+
+
+mauvais : la phrase fausse.
+non : la phrase juste.
+explication : c'est bien l'explication.
