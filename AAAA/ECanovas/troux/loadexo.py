@@ -60,12 +60,17 @@ def gethtmlmenu(enonce,dico):
     >>> gethtmlmenu(enonce,dico)
     
     """
+    indice=0
     strtemp=""
     flg=False
     lst=0
     lines = enonce.split('\n')
     for line in lines:
+
         for itemmenu in re.finditer(r'TT',line):
+            m = defhtmlmenu(indice,dico)
+            re.sub("FF",m , line, 1)
+            indice += 1
             strtemp=strtemp+line[lst:itemmenu.start()+lst]+ " =="+str(lst)+"-"+str(itemmenu.start()+lst)+"-"+str(itemmenu.span())+line+" EOL<br/>"
             #strtemp=strtemp+line+" EOL<br/>"
             lst=itemmenu.end()+lst
