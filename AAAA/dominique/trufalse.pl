@@ -8,7 +8,7 @@ Le cheval blanc de Henri IV est il blanc ?
 ==
 
 
-answer=Non
+answer=F
 
 
 # pour aligner les propositions 
