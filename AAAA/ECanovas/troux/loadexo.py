@@ -51,7 +51,7 @@ def defhtmlmenu(indice,dico):
     unMenu='<select name="gab"{{indice}} id="gab-select"><option value="">--Choisir une réponse--</option>'
     for it in menu:
         unMenu=unMenu+"<option value="">" + it +"</option>"
-    unMenu=unMenu+"<option value="">" + str(t) +"</option>"
+
     unMenu=unMenu+'</select>'
     return unMenu
 
