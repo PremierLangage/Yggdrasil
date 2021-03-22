@@ -27,7 +27,7 @@ enonc,dico = splitenonce(montexte)
 
 monhtml=enonc
 
-strtemp,menuForm =gethtmlmenu(enonc,dico)
+menuForm =gethtmlmenu(enonc,dico)
 
 it=dico
 
@@ -39,6 +39,6 @@ form=menuForm
 
 
 
-text=text+"<br/>"+enonc+"<br/> Result= " +str(dico)+"<br/>"+monMenu
+text=text+"<br/>"+enonc+"<br/><i> Result= " +str(dico)+"</i><br/>"
 ==
 
