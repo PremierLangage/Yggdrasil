@@ -32,7 +32,7 @@ monMenu = defhtmlmenu(1,dico)
 
 menuForm=re.sub("TT",monMenu,enonc)
 
-form=menuForm
+#form=menuForm
 
 strtemp=gethtmlmenu(enonc,dico)
 
