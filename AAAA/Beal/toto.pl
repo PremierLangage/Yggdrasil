@@ -1,27 +1,41 @@
-extends = /model/basic/vraifaux.pl
+extends = /template/java.pl
 
-title= Un exemple de proposition vraie ou fausse 
+title = Junit - Getter
+text = Create the methods `getX()` and `getY()` for the class Point.
 
-text==
-Le cheval blanc de Henri IV est il blanc ? 
+classname = Point
+before=
+editor.code==
+public class Point {
+    private int x;
+    private int y;
+
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+}
 ==
 
+junit==
+import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Assertions;
 
-answer=Non
+@DisplayName("Point Test")
+class PointTest {
 
+    @Test
+    @DisplayName("Get X")
+    void testGetX() {
+        var p = new Point(2, 3);
+        Assertions.assertEquals(p.getX(), 2);
+    }
 
-# pour aligner les propositions 
-horizontal % true 
-
-feedback_correct ==
-Bien vu il est gris car il s'est roulé dans la poussière.  
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Lol_LOL.png">
+    @Test
+    @DisplayName("Get Y")
+    void testGetY() {
+        var p = new Point(2, 3);
+        Assertions.assertEquals(p.getY(), 3);
+    }
+}
 ==
-feedback_wrong = Il vous manque des informations.
-general_feedback==
-
-
-
-Bien entendu c'est une question piège.
-==
-
