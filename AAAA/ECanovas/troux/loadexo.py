@@ -45,10 +45,10 @@ def defhtmlmenu(indice,dico):
     >>> defhtmlmenu(enonce,dico)
     
     """
-    menu= dico[indice]
+    menu= dico[indice] # tuple de value,feedback
     m=menu[0].split(",") # champ value
     
-    unMenu='<select name="gab"{{indice}} id="gab-select"><option value="">--Choisir une réponse--</option>'
+    unMenu='<select name="gab"'+str(indice)+' id="gab-select"><option value="">--Choisir une réponse--</option>'
     for it in m:
         unMenu=unMenu+"<option value="">" + it +"</option>"
 
