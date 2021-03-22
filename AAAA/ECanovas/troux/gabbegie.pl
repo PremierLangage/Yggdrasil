@@ -19,25 +19,13 @@ montexte="il était une fois un {=lapin, 2    #avec de grandes oreilles} de \
 <br/>\n    pelage {=blanc-vert,bleu,rouge } blabli blablou {=hiver,ete,automne #oh saison} et toc.."
 from loadexo import *
 
+# du texte vers le dico des réponses/feedbacks et texte
 enonc,dico = splitenonce(montexte)
 
-# le html input
-#for item in dico:
-#    text=text+"<br/>"+ r'{item}' +"<br/> Entrée "+item['value']+" et feedback "+ item['feedback']+"<br/>"
-
-monhtml=enonc
-
+# html complet FORM menu 
 menuForm =gethtmlmenu(enonc,dico)
 
-it=dico
-
-monMenu = defhtmlmenu(1,dico)
-
-#menuForm=re.sub("TT",monMenu,enonc)
-
 form=menuForm
-
-
 
 text=text+"<br/>"+enonc+"<br/><i> Result= " +str(dico)+"</i><br/>"
 ==
