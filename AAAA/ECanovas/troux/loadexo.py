@@ -8,6 +8,7 @@ def splitenonce(enonce="nothing"): #
     """
     lines = enonce.split('\n')
     choices = []
+    
     #pattern = re.compile(r
     # '.*{(?:=(?P<value>(?:(?:\\\#)|[^\#])+)(?:\#(?P<feedback>.*))?)}')
     # (?P<value>
