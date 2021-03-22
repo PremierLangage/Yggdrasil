@@ -10,7 +10,7 @@ def splitenonce(enonce="nothing"): #
     choices = []
     
     #pattern = re.compile(r
-    # '.*{(?:=(?P<value>(?:(?:\\\#)|[^\#])+)(?:\#(?P<feedback>.*))?)}')
+    # '.*{(?:=(?P<value>(?:(?:\\\#)|[^\#])+)(?:\#(?P<feedback>.*))}?)')
     # =(?P<value>
     #           (?:
     #               (?:\\\#)|[^\#] +
