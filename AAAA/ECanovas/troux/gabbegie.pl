@@ -27,7 +27,7 @@ enonc,dico = splitenonce(montexte)
 
 #form=menuForm
 
-m = defhtmlmenu(0,dico)
+m = defhtmlmenu(1,dico)
 text=text+"<br/>"+enonc+"<br/><i> Result= "+m +str(dico)+"</i><br/>"
 ==
 
