@@ -26,13 +26,12 @@ def splitenonce(enonce="nothing"): #
         match = pattern.match(line)
         if not match:
             continue
-        
         choice = {
             "value": match.group('value').strip(),
             "feedback": match.group('feedback') or ''
         }
         choices.append(choice)
-    choices=re.findall(pattern,enonce)
+    #choices=re.findall(pattern,enonce)
     enoncetroux=re.sub(r'\{.+?\}', 'TT', enonce)
 
     return enoncetroux,choices
