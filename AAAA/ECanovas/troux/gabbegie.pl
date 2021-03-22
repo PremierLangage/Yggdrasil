@@ -25,7 +25,7 @@ enonc,dico = splitenonce(montexte)
 # html complet FORM menu 
 menuForm =gethtmlmenu(enonc,dico)
 
-#form=menuForm
+form=menuForm
 
 m = defhtmlmenu(2,dico)
 text=text+"<br/>"+enonc+"<br/><i> Result= "+m +str(dico)+"</i><br/>"
