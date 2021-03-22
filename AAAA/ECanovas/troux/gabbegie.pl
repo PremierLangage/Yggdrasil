@@ -37,6 +37,6 @@ form=menuUn
 
 strtemp=gethtmlmenu(enonc,dico)
 
-text=text+"<br/>"+enonc+"<br/> Result= " +strtemp+"<br/>"+str(dico)
+text=text+"<br/>"+enonc+"<br/> Result= " +strtemp+"<br/>"
 ==
 
