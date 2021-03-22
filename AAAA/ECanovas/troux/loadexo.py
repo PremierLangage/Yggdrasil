@@ -46,7 +46,7 @@ def defhtmlmenu(indice,dico):
     
     """
     menu= dico[indice]
-    menu= re.split(r'\b',menu)
+    m=list(menu[0])
     
     unMenu='<select name="gab"{{indice}} id="gab-select"><option value="">--Choisir une réponse--</option>'
     for it in menu:
