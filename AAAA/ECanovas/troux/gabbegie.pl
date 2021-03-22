@@ -26,15 +26,17 @@ enonc,dico = splitenonce(montexte)
 
 monhtml=enonc
 
+strtemp,menuForm =gethtmlmenu(enonc,dico)
+
 it=dico
 
 monMenu = defhtmlmenu(1,dico)
 
-menuForm=re.sub("TT",monMenu,enonc)
+#menuForm=re.sub("TT",monMenu,enonc)
 
 form=menuForm
 
-strtemp=gethtmlmenu(enonc,dico)
+
 
 text=text+"<br/>"+enonc+"<br/> Result= " +str(dico)+"<br/>"+monMenu
 ==
