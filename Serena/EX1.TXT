@@ -1,0 +1,3 @@
+mauvais : La casa a Marco è gialla.
+bon : La casa di Marco è gialla.
+explication : La proposizione semplice "di" permette di determinare la proprietà di un bene.
