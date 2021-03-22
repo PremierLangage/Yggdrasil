@@ -27,7 +27,7 @@ def splitenonce(enonce="nothing"): #
         if not match:
             continue
         choice = {
-            "value": match.group('value').strip(),
+            "value": match.group('value'), #.strip(),
             "feedback": match.group('feedback') or ''
         }
         choices.append(choice)
