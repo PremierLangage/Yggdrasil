@@ -1,11 +1,7 @@
-extends = /gift/templates/qessay.pl
 
-title= Quel est votre prénom ?
-text==
-indiquez votre prénom d'usage
-
-==
 extends = /model/matchlist/matchlist.pl
+
+
 pairs ==
 Facebook§animer sa communauté
 Linkedin§trouver des partenaires professionnels
