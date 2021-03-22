@@ -30,7 +30,7 @@ it=dico
 
 menuUn='<select name="pets" id="pet-select"><option value="">--Please choose an option--</option>'
 for it in dico:
-    menuUn=menuUn+"<option value="">" + str(it[1]) +"</option>"
+    menuUn=menuUn+"<option value="">" + it[0] +"</option>"
 menuUn=menuUn+'</select>'
 form=menuUn
 
