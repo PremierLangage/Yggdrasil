@@ -1,5 +1,5 @@
 
-extends= /examples/matchlistcsv/matchlistcsv.pl
+extends= /exemples/matchlistcsv/matchlistcsv.pl
 
 @ engflac.csv [content.csv]
 
