@@ -15,7 +15,7 @@ Compléter les trous du texte suivant
 == 
 
 before==
-montexte=r"il était une fois un {=lapin,chien #avec de grandes oreilles} de \n    pelage {=blanc,bleu,rouge } blabli blablou {=hiver,ete,automne #oh saison} et toc.."
+montexte=r"il était une fois un {=lapin, chien    #avec de grandes oreilles} de \n    pelage {=blanc,bleu,rouge } blabli blablou {=hiver,ete,automne #oh saison} et toc.."
 from loadexo import *
 
 enonc,dico = splitenonce(montexte)
