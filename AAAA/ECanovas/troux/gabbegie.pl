@@ -22,14 +22,11 @@ from loadexo import *
 enonc,dico = splitenonce(montexte)
 
 # le html input
-for item in dico:
-    text=text+"<br/>"+ r'{item}' +"<br/> Entrée "+item['value']+" et feedback "+ item['feedback']+"<br/>"
-# r=len(dico)
-# for it in list(range(r)):
-# que le texte est ?? pour les inserts menu
+#for item in dico:
+#    text=text+"<br/>"+ r'{item}' +"<br/> Entrée "+item['value']+" et feedback "+ item['feedback']+"<br/>"
+
 monhtml=enonc
 
-# {{un['value']}} et feedback {{un['feedback']}}<br/>"
 it=dico
 
 menuUn='<select name="pets" id="pet-select"><option value="">--Please choose an option--</option>'
