@@ -1,7 +1,7 @@
 
 import re
 
-REPLACESTRING="T?T"
+REPLACESTRING="ZZ"
 
 def splitenonce(enonce="nothing"): # 
     """
