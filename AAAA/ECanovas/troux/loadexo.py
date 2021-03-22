@@ -33,6 +33,7 @@ def splitenonce(enonce="nothing"): #
             "feedback": match.group('feedback') or ''
         }
         choices.append(choice)
+    
     choices=re.findall(pattern,enonce)
     enoncetroux=re.sub(r'\{.+?\}', 'TT', enonce)
 
