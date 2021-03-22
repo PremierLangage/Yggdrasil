@@ -30,9 +30,9 @@ monhtml=enonc
 it=dico
 
 menuUn='<select name="pets" id="pet-select"><option value="">--Please choose an option--</option>'
-for it in dico:
+#for it in dico:
 #    menuUn=menuUn+"<option value="">" + it['value'] +"</option>"
-menuUn=menuUn+'</select>'
+#menuUn=menuUn+'</select>'
 form=menuUn
 
 strtemp=gethtmlmenu(enonc,dico)
