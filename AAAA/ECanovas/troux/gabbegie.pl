@@ -23,7 +23,7 @@ from loadexo import *
 enonc,dico = splitenonce(montexte)
 
 # html complet FORM menu 
-#menuForm =gethtmlmenu(enonc,dico)
+menuForm =gethtmlmenu(enonc,dico)
 
 #form=menuForm
 
