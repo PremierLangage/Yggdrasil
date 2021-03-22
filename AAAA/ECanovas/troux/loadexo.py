@@ -24,7 +24,7 @@ def splitenonce(enonce="nothing"): #
     # )
 
     pattern = re.compile(r'(?:\{(?:=(?P<value>(?:(?:\\\#)|[^\#])+))(?:\#(?P<feedback>.*))?\})')
-    pattern = re.compile(r'(?:\{=(?P<v>[a-z,\,]+?)) (?:\#[a-z,\,].+?)?\}')
+    pattern = re.compile(r'(?:\{=(?P<v>(:[a-z,\,]+?)) (?:\#[a-z,\,].+?)?\}')
     for line in lines:
         match = pattern.match(line)
         if not match:
