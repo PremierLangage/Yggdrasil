@@ -11,12 +11,12 @@ Compléter les trous du texte suivant
 
 {{montexte}}
 
-
 == 
 
 before==
 montexte="il était une fois un {=lapin, 2    #avec de grandes oreilles} de \
 <br/>\n    pelage {=blanc-vert,bleu,rouge } blabli blablou {=hiver,ete,automne #oh saison} et toc.."
+
 from loadexo import *
 
 # du texte vers le dico des réponses/feedbacks et texte
