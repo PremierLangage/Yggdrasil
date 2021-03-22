@@ -18,6 +18,3 @@ choices==
 %25.0%Image
 ==
 
-![image](https://www.2pl.bzh/sites/default/files/styles/hd/public/images/persienne-alu-sur-rail.jpg?itok=QEL3WVA2)
-
-==
