@@ -62,11 +62,12 @@ def gethtmlmenu(enonce,dico):
     """
     indice=0
     strtemp=""
+    monHtml=""
     flg=False
     lst=0
     lines = enonce.split('\n')
     for line in lines:
-
+    
         for itemmenu in re.finditer(r'TT',line):
             m = defhtmlmenu(indice,dico)
             re.sub("FF",m , line, 1)
@@ -75,7 +76,7 @@ def gethtmlmenu(enonce,dico):
             #strtemp=strtemp+line+" EOL<br/>"
             lst=itemmenu.end()+lst
             flg=True
-        
+        monHtml=monHtml+line    
         if not flg:
             strtemp=strtemp+line+"<br/>"
         #else:
@@ -86,4 +87,4 @@ def gethtmlmenu(enonce,dico):
         #strtemp=itemmenu.start()
         #enonce=enonce[item.end():]
     
-    return strtemp
+    return strtemp,monHtml
