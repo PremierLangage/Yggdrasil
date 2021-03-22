@@ -49,10 +49,10 @@ def defhtmlmenu(indice,dico):
     """
     menu= dico[indice]
     
-    unMmenu='<select name="gab"{{indice}} id="pet-select"><option value="">--Please choose an option--</option>'
+    unMenu='<select name="gab"{{indice}} id="pet-select"><option value="">--Please choose an option--</option>'
     for it in menu:
-        unMmenu=unMmenu+"<option value="">" + it +"</option>"
-    unMmenu=unMmenu+'</select>'
+        unMenu=unMenu+"<option value="">" + it +"</option>"
+    unMenu=unMenu+'</select>'
     return unMenu
 
 def gethtmlmenu(enonce,dico):
