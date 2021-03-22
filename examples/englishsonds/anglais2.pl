@@ -1,6 +1,6 @@
 
 
-extends= /examples/checkboxgroupcsv/model.pl
+extends= /exemples/checkboxgroupcsv/model.pl
 
 title= Reconnaitre un mot 
 
