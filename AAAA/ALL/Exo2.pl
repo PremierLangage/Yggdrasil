@@ -15,8 +15,6 @@ choices==
 %25.0%Volets
 %-100.0%Barreaux
 %25.0%Jalousies
-%25.0%Image
+%25.0%![image](https://www.2pl.bzh/sites/default/files/styles/hd/public/images/persienne-alu-sur-rail.jpg?itok=QEL3WVA2)
 ==
 
-text==
-![image](https://www.2pl.bzh/sites/default/files/styles/hd/public/images/persienne-alu-sur-rail.jpg?itok=QEL3WVA2)
