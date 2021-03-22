@@ -67,7 +67,7 @@ def gethtmlmenu(enonce,dico):
     lines = enonce.split('\n')
     for line in lines:
         l = line
-        for itemmenu in re.finditer(REPLACESTRING,line):
+        for itemmenu in re.finditer('T?T',line):
             m = defhtmlmenu(indice,dico)
             l = re.sub("TT",m , l, 1)
             indice += 1
