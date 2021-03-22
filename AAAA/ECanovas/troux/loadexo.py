@@ -42,7 +42,7 @@ def splitenonce(enonce="nothing"): #
 
     return enoncetroux,choices
 
-def defhtmlmenu(indice,dico)
+def defhtmlmenu(indice,dico):
     """
     >>> defhtmlmenu(enonce,dico)
     
