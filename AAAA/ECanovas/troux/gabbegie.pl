@@ -28,7 +28,7 @@ monhtml=enonc
 
 it=dico
 
-#monMenu = defhtmlmenu(1,dico)
+monMenu = defhtmlmenu(1,dico)
 
 #menuForm=re.sub("TT",monMenu,enonc)
 
@@ -36,6 +36,6 @@ it=dico
 
 strtemp=gethtmlmenu(enonc,dico)
 
-text=text+"<br/>"+enonc+"<br/> Result= " +str(dico)+"<br/>"
+text=text+"<br/>"+enonc+"<br/> Result= " +str(dico)+"<br/>"+monMenu
 ==
 
