@@ -12,16 +12,18 @@ def splitenonce(enonce="nothing"): #
     #pattern = re.compile(r
     # '.*{(?:=(?P<value>(?:(?:\\\#)|[^\#])+)(?:\#(?P<feedback>.*))}?)')
     # =(?P<value>
-    #           (?:
-    #               (?:\\\#)|[^\#] +
-    #           )
-    #           (?:
-    #               \#(?P<feedback>.*)
+    #    (?:
+    #        (?:\\\#)|[^\#]
+    #    )+
+    #  )
+    #  (?:\#(?P<feedback>
+    #       .*
+    #  )
     #           )
     #           ?
     # )
 
-    pattern = re.compile(r'(?:{=(?P<value>(?:(?:\\\#)|[^\#])+)(?:\#(?P<feedback>.*))?})?')
+    pattern = re.compile(r'(?:=(?P<value>(?:(?:\\\#)|[^\#])+))(?:\#(?P<feedback>.*))?')
     for line in lines:
         match = pattern.match(line)
         if not match:
@@ -46,7 +48,7 @@ def gethtmlmenu(enonce,dico):
     lst=0
     lines = enonce.split('\n')
     for line in lines:
-        for itemmenu in re.finditer(r'==',line):
+        for itemmenu in re.finditer(r'TT',line):
             #strtemp=strtemp+line[lst:itemmenu.start()+lst]+ " =="+str(lst)+"-"+str(itemmenu.start()+lst)+"-"+str(itemmenu.span())+line+" EOL<br/>"
             strtemp=strtemp+line+" EOL<br/>"
             lst=itemmenu.end()+lst
