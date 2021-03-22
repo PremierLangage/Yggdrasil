@@ -28,7 +28,7 @@ monhtml=enonc
 
 it=dico
 
-monMenu = defhtmlmenu(1,dico)
+#monMenu = defhtmlmenu(1,dico)
 
 menuForm=re.sub("TT",monMenu,enonc)
 
