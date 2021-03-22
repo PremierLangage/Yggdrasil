@@ -35,13 +35,11 @@ it=dico
 menuUn='<select name="pets" id="pet-select"><option value="">--Please choose an option--</option>'
 for it in dico:
     menuUn=menuUn+"<option value="">" + it['value'] +"</option>"
-#menuUn=menuUn+'<option value="">{{dico[0]}}</option>'
-#menuUn=menuUn+'<option value="">{{dico[1]}}</option>'
 menuUn=menuUn+'</select>'
 form=menuUn
 
 strtemp=gethtmlmenu(enonc,dico)
 
-text=text+"<br/>"+enonc+"<br/> Result= " +strtemp
+text=text+"<br/>"+enonc+"<br/> Result= " +strtemp+"<br/>"+str(dico)
 ==
 
