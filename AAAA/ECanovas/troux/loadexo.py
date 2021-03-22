@@ -24,7 +24,8 @@ def splitenonce(enonce="nothing"): #
     # )
 
     pattern = re.compile(r'(?:\{=(?P<value>(?:[\,\s,\w]+?)) (?:\#(?P<feedback>[\w,\,].+?))?\})')
-    
+    pattern = re.compile(r'(?:\{=(?P<value>(?:[\,\s,\w]+?)) (?:\#(?P<feedback>[\w,\,].+?))?\})')
+
     for line in lines:
         match = pattern.match(line)
         if not match:
@@ -35,7 +36,7 @@ def splitenonce(enonce="nothing"): #
         }
         choices.append(choice)
     
-    choices=re.findall(pattern,enonce)
+    #choices=re.findall(pattern,enonce)
     enoncetroux=re.sub(r'\{.+?\}', 'TT', enonce)
 
     return enoncetroux,choices
