@@ -17,7 +17,7 @@ form ==
 <p>Réponse : <span id="math-field" style="font-size:
 
 14pt;padding: 0.2em;"></span></p>
-<input type="text" id="form_math" name="form_math" hidden="false"><br>
+<input type="text" id="form_math" name="form_math"><br>
 <script>
 var MQ = MathQuill.getInterface(2);
 var mathFieldSpan = document.getElementById('math-field');
