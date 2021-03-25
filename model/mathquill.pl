@@ -1,6 +1,6 @@
 extends = /model/math/math.pl
 
-title = 
+title = {{ answers__.math }}
 
 text = 
 
@@ -32,8 +32,6 @@ var mathField = MQ.MathField(mathFieldSpan, {
     }
   }
 });
-mathField.latex( {{ answers__.math }} );
-
 </script>
 ==
 
