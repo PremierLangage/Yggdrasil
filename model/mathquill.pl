@@ -42,7 +42,10 @@ var mathField = MQ.MathField(mathFieldSpan, {
     }
   }
 });
-mathField.latex(oldvalue);
+{% if not "math" in answers %}
+mathField.latex(answers["math"]);
+{% endif %}
+
 </script>
 ==
 
