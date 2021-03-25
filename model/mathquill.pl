@@ -21,8 +21,6 @@ form ==
 var MQ = MathQuill.getInterface(2);
 var mathFieldSpan = document.getElementById('math-field');
 var latexSpan = document.getElementById('form_math');
-
-var MQ = MathQuill.getInterface(2); // for backcompat
 var mathField = MQ.MathField(mathFieldSpan, {
   spaceBehavesLikeTab: true, // configurable
   leftRightIntoCmdGoes: 'up',
