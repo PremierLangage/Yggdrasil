@@ -33,10 +33,3 @@ ttt = answer['math']
 solution==
 La solution est $% \displaystyle {{ sol|latex }} %$.
 ==
-
-
-
-
-
-
-
