@@ -18,7 +18,7 @@ form ==
 
 14pt;padding: 0.2em;"></span></p>
 <input type="text" id="form_math" name="form_math"><br>
-<input type="text" id="form_math" name="form_machin"><br>
+<input type="text" id="form_machin" name="form_machin"><br>
 
 <script>
 var MQ = MathQuill.getInterface(2);
