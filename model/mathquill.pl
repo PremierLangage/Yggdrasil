@@ -34,7 +34,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
   charsThatBreakOutOfSupSub: '+-=<>',
   autoSubscriptNumerals: true,
   autoCommands: 'pi theta sqrt sum',
-  autoOperatorNames: 'sin cos',
+  autoOperatorNames: 'sin cos ln exp',
   maxDepth: 10,
   handlers: {
     edit: function() { // useful event handlers
