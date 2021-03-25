@@ -3,7 +3,7 @@ extends = /model/math/math.pl
 
 input =: MathInput
 input.decorator = CustomMathInput
-answer.math = ""
+answer.math = "x"
 input.virtualKeyboards = elementary
 
 title = 
