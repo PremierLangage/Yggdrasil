@@ -6,7 +6,7 @@ text =
 
 form ==
 <div class="input-group">
-    <input id="form_answer" type="number" class="form-control" value="{{ answers__.answer }}" required/>
+    <input id="form_answer" type="number" class="form-control" value="" required/>
 </div>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
