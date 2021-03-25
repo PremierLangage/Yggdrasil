@@ -68,7 +68,7 @@ if __name__ == "__main__":
     Component.sync_context(dic)
 
     with open(sys.argv[2], "r") as f:
-        dic['answer'] = json.load(f)
+        dic['response'] = json.load(f)
 
     dic = {**namespace, **dic}
 
