@@ -130,7 +130,7 @@ if __name__ == "__main__":
         json.dump(dic, f, cls=CustomEncoder)
     
     with open(sys.argv[4], "w+") as f:
-        print(str(ffeedback)+str(dic), file=f)
+        print(str(ffeedback), file=f)
     
     print(int(score))
     
