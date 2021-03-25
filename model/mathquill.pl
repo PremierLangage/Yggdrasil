@@ -41,7 +41,7 @@ extrajs ==
 
 <script>
 var MQ = MathQuill.getInterface(2);
-var mathFieldSpan = document.getElementById('math-field');
+var mathFieldSpan = document.getElementById('form_math');
 var latexSpan = document.getElementById('form_answer');
 var mathField = MQ.MathField(mathFieldSpan, {
   spaceBehavesLikeTab: true, // configurable
