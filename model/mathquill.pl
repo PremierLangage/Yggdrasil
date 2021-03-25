@@ -40,11 +40,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
     }
   }
 });
-{% if answer is defined  %}
-mathField.latex( "x" );
-{% else %}
-mathField.latex( "y" );
-{% endif %}
+
 
 </script>
 ==
