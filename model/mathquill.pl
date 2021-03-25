@@ -1,8 +1,12 @@
 extends = /model/math/math.pl
 
+input := Input
+
 title = 
 
 text = 
+
+
 
 form ==
 {{response__}}
