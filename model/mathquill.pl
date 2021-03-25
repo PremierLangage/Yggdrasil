@@ -41,7 +41,12 @@ var mathField = MQ.MathField(mathFieldSpan, {
     }
   }
 });
-mathField.latex( {{answer.math}} );
+{% if not answer %}
+mathField.latex( "x" );
+{% endif %}
+{% if answer %}
+mathField.latex( "y" );
+{% endif %}
 
 </script>
 ==
