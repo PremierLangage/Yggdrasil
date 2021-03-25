@@ -1,9 +1,4 @@
 extends = /model/math/math.pl
-@ /utils/components/mathinput.py [custommathinput.py]
-
-input =: MathInput
-input.decorator = CustomMathInput
-input.virtualKeyboards = elementary
 
 title = 
 
