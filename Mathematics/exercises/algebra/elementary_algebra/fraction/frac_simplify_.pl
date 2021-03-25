@@ -27,11 +27,11 @@ Simplifier la fraction $% \displaystyle \frac{ {{a}} }{ {{b}} } %$ en l'écrivan
 ==
 
 evaluator ==
-score, error = eval_frac(answer['math'], sol)
+score, error = eval_frac(response['math'], sol)
 feedback = message[error]
 ==
 
 solution==
 La solution est $% \displaystyle {{ sol|latex }} %$.
-{{answer["math"]}}
+{{response["math"]}}
 ==
