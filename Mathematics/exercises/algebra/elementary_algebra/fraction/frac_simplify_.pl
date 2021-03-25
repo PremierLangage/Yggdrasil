@@ -33,4 +33,5 @@ feedback = message[error]
 
 solution==
 La solution est $% \displaystyle {{ sol|latex }} %$.
+{{answer}}
 ==
