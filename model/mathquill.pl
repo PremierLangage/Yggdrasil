@@ -8,6 +8,34 @@ form ==
 <div class="input-group">
     <input id="form_answer" type="text" class="form-control" value="{{ answers__.answer }}" required/>
 </div>
+==
+
+extrajs ==
+<script>
+    function onReadyPL(nodes) {
+        const actions = nodes.actions;
+        actions.find('.action-save').hide();
+        actions.find('.action-reset').hide();
+        actions.find('.action-next').hide();
+
+        const { origin, pathname }  = document.location;
+        const link = origin + pathname;
+
+        const buttons = actions.find('.btn-group');
+
+        {% if "reroll" in internals.buttons %}
+        buttons.append(`
+            <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
+                <i class="fas fa-dice"></i> Nouveau tirage
+            </a>
+        `);
+        {% endif %}
+        
+        {% if not "submit" in internals.buttons %}
+        actions.find('.action-submit').hide();
+        {% endif %}
+    }
+</script>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js" type="text/javascript"></script>
