@@ -1,6 +1,6 @@
 extends = /model/math/math.pl
 
-input := Input
+input =: Input
 
 title = 
 
