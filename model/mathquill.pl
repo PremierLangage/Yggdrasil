@@ -39,7 +39,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
     }
   }
 });
-{% if answer is defined  %}
+{% if ttt is defined  %}
 mathField.latex( "x" );
 {% else %}
 mathField.latex( "y" );
