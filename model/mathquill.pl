@@ -20,7 +20,7 @@ form ==
 <script>
 var MQ = MathQuill.getInterface(2);
 var mathFieldSpan = document.getElementById('math-field');
-var latexSpan = document.getElementById('mat-input-1');
+var latexSpan = document.getElementById('mat-input-0');
 var mathField = MQ.MathField(mathFieldSpan, {
   spaceBehavesLikeTab: true, // configurable
   leftRightIntoCmdGoes: 'up',
