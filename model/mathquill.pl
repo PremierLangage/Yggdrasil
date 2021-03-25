@@ -19,7 +19,7 @@ form ==
 14pt;padding: 0.2em;"></span></p>
 <input type="text" id="form_math" name="form_math" hidden="true"><br>
 <script>
-  var MQ = MathQuill.getInterface(2);
+var MQ = MathQuill.getInterface(2);
 var mathFieldSpan = document.getElementById('math-field');
 var latexSpan = document.getElementById('form_math');
 
@@ -41,6 +41,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
     }
   }
 });
+mathField.latex(latexSpan.value);
 </script>
 ==
 
