@@ -1,16 +1,10 @@
 extends = /model/math/math.pl
 
-input =: Input
-
 title = 
 
 text = 
 
-
-
 form ==
-{{input|component}}
-
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js" type="text/javascript"></script>
@@ -20,7 +14,7 @@ form ==
 <script>
 var MQ = MathQuill.getInterface(2);
 var mathFieldSpan = document.getElementById('math-field');
-var latexSpan = document.getElementById('mat-input-0');
+var latexSpan = document.getElementById('form_math');
 var mathField = MQ.MathField(mathFieldSpan, {
   spaceBehavesLikeTab: true, // configurable
   leftRightIntoCmdGoes: 'up',
