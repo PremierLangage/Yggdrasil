@@ -39,7 +39,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
     }
   }
 });
-mathField.latex( {{tt}} );
+mathField.latex( {{ttt}} );
 
 </script>
 ==
