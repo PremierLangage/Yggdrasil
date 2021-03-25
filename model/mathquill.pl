@@ -1,6 +1,6 @@
 extends = /model/math/math.pl
 
-title = {{ answers__.math }}
+title = 
 
 text = 
 
