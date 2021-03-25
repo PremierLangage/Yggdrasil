@@ -60,6 +60,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
     }
   }
 });
+
 </script>
 ==
 
