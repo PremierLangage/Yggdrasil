@@ -18,6 +18,8 @@ form ==
 
 14pt;padding: 0.2em;"></span></p>
 <input type="text" id="form_math" name="form_math"><br>
+<input type="text" id="form_math" name="form_machin"><br>
+
 <script>
 var MQ = MathQuill.getInterface(2);
 var mathFieldSpan = document.getElementById('math-field');
