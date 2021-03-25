@@ -3,7 +3,7 @@ extends = /model/math/math.pl
 
 input =: MathInput
 input.decorator = CustomMathInput
-
+answer.math = "x"
 input.virtualKeyboards = elementary
 
 title = 
@@ -44,7 +44,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
 });
 
 {% if "math" in answer %}
-mathField.latex("x");
+mathField.latex( {{answer.math}} );
 {% endif %}
 
 </script>
