@@ -21,8 +21,6 @@ sol=Rational(a,b)
 ==
 
 text ==
-{{ answers__}}
-
 Simplifier la fraction $% \displaystyle \frac{ {{a}} }{ {{b}} } %$ en l'écrivant sous la forme d'un entier ou d'une fraction irréductible.
 ==
 
@@ -33,5 +31,4 @@ feedback = message[error]
 
 solution==
 La solution est $% \displaystyle {{ sol|latex }} %$.
-{{response["math"]}}
 ==
