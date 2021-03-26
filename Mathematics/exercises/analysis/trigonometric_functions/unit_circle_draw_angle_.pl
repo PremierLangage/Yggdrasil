@@ -32,21 +32,7 @@ script_solution ==
 board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
 ==
 
-evaluator ==
-x, y = jxg.getpoint('M')
-from math import hypot
-if hypot(x-xsol, y-ysol) < 0.1:
-    score = 100
-    jxg.addscript(script_solution, globals())
-else:
-    score = 0
-    jxg.addscript(script_solution, globals())
-feedback = ""
-==
 
-drawer.script ==
-
-==
 
 form==
 <center>
@@ -56,14 +42,15 @@ form==
 
 
 evaluator ==
-x=float(drawer.points['M']['x'])
-y=float(drawer.points['M']['y'])
+x, y = jxg.getpoint('M')
 from math import atan2,pi
 if abs((atan2(y,x)-angle)%(2*pi))<0.1:
-     score=100
+    score = 100
+    jxg.addscript(script_solution, globals())
 else:
-     score=0
-feedback=""
+    score = 0
+    jxg.addscript(script_solution, globals())
+feedback = ""
 ==
 
 
