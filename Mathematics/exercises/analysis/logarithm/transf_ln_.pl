@@ -1,4 +1,4 @@
-extends = /model/mathinput.pl
+extends = /model/mathquill.pl
 
 title = Transformation d'expressions avec logarithmes
 
