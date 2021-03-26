@@ -68,7 +68,7 @@ if __name__ == "__main__":
     Component.sync_context(dic)
 
     with open(sys.argv[2], "r") as f:
-        dic['response'] = json.load(f)
+        dic['answers'] = json.load(f)
 
     dic = {**namespace, **dic}
 
@@ -124,6 +124,13 @@ if __name__ == "__main__":
         ffeedback = feedback
 
     # dic = json.loads(json.dumps(dic, cls=CustomEncoder))
+
+    # hack for MathQuill
+    if 'answers' in dic:
+        if 'math' in dic['answers']:
+            dic['prev_value' = dic['answers']['math'].replace("\\", "\\\\")
+
+
 
     # render some string values of the exercise dictionary with the custom Jinja environment
     jinja_keys = dic.get('jinja_keys', ['text', 'form', 'solution'])
