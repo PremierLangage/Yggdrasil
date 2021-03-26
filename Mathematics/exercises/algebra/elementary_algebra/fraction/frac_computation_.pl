@@ -82,7 +82,7 @@ Calculer l'expression $! \displaystyle {{expr}} !$ en l'écrivant sous la forme 
 
 
 evaluator ==
-score, error = eval_frac(answer['math'], sol)
+score, error = eval_frac(answers['math'], sol)
 feedback = message[error]
 ==
 
