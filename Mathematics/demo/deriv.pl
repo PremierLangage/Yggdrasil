@@ -22,7 +22,7 @@ score, error = eval_expr(answers['math'], sol)
 feedback = message[error]
 ==
 
-text ==
+solution ==
 La dérivée est la fonction
 $$ x \mapsto {{sol|latex}} .$$
 ==
