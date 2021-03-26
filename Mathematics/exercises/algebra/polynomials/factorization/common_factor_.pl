@@ -90,7 +90,7 @@ $$ {{ P|latex }}.$$
 ==
 
 evaluator ==
-score, error = eval_poly(response['math'], sol, var="x", form="factorized")
+score, error = eval_poly(answers['math'], sol, var="x", form="factorized")
 feedback = message[error]
 ==
 
