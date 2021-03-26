@@ -94,8 +94,8 @@ if __name__ == "__main__":
     else:
         if 'score' in dic:
             score = dic['score']    
-        if 'feeedback' in dic:
-            feeedback = dic['feedback']  
+        if 'feedback' in dic:
+            feedback = dic['feedback']  
         else:
             feedback=" "
 
