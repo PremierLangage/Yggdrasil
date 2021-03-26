@@ -1,6 +1,6 @@
 extends = /model/math/math.pl
 
-jinja_keys = ["text","solution"]
+jinja_keys =["text", "form", "solution"]
 
 title = 
 
