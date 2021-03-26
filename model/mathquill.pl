@@ -35,7 +35,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
     }
   }
 });
-mathfield.latex("coucou");
+mathField.latex("coucou");
 </script>
 ==
 
