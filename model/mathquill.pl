@@ -36,7 +36,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
     }
   }
 });
-mathField.latex(" {{ ttt|escape }} ");
+mathField.latex(" {{ ttt | replace("\","\\") }} ");
 //mathField.latex("\\frac{1}{3}");
 
 </script>
