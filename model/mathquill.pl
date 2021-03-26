@@ -45,7 +45,7 @@ settings.feedback = rightwrong
 settings.maxattempt % 1
 
 evaluator ==
-score, error = eval_expr(answer['math'], sol)
+score, error = eval_expr(answers['math'], sol)
 feedback = message[error]
 ==
 
