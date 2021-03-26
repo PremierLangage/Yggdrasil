@@ -6,6 +6,8 @@ before ==
 lstangle = eval(param['lstangle'])
 angle = randitem(lstangle)
 valangle = float(angle.evalf())
+xsol = float(cos(valangle))
+ysol = float(sin(valangle))
 jxg.setscript(script_init)
 ==
 
