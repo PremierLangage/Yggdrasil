@@ -1,0 +1,29 @@
+extends = /model/mathquill.pl
+
+title = Opérations sur les ensembles
+
+before ==
+items = list(range(10))
+
+A = rand_finiteset(randint(3, 7), items)
+B = rand_finiteset(randint(3, 7), items)
+C = rand_finiteset(randint(3, 7), items)
+
+expr = r"A \cup (B \cap C)"
+sol = Union(Intersection(B, C), A)
+==
+
+text == 
+On considère les ensembles suivants :
+$$ A= \\{ {{ A|latex }} \\},\ B= \\{ {{ B|latex }} \\},\ C= \\{ {{ C|latex }} \\}.$$
+Déterminer $! {{expr}} !$.
+==
+
+evaluator ==
+score, error = eval_set(answers["math"], sol)
+feedback = message[error]
+==
+
+solution ==
+La solution est $! { {{sol|latex}} } !$.
+==
