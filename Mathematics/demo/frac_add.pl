@@ -1,6 +1,6 @@
 extends = /model/mathquill.pl
 
-title = Opérations sur les fractions
+title = Addition de fractions
 
 before ==
 lstfrac=[(randitem([1,3,5,7]),2),
