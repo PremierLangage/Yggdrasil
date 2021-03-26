@@ -1,40 +1,25 @@
+extends = /model/mathquill.pl
 
-extends = /model/mathinput.pl
+title = Calcul de dérivée
 
-title = Dérivée
 
-text == 
-Donner la dérive de la fonction $!{{f| latex}}!$.
-==
-
-# On choisit le type de clavier virtuel
-input.virtualKeyboards = complex functions
-
-before==
-
-# Sympy création de la variable x 
+before ==
 var('x')
-# Si j'écrit sin(x) c'est une expression  sympy 
-
-# je créé une liste de fonction (pour tirage aléatoire) dont je vais demander la dérivé 
-lf=[sin(x),cos(x),x**2,x**3, log(x)/log(2), exp(x)]
-# un monome plus aléatoire 
-a=rd.randint(3,100)
-e=rd.randint(1,5)
-mono= a*x**e
-lf.append(mono)
-# Choix aléatoire de la fonciton 
-f= exp(x)
-#rd.choice(lf)
-# Calcul de la solution 
-sol= diff(f,x)
+n=randint(1,4)
+g=randitem([sin(x),cos(x),exp(x),ln(x)])
+h=randitem([x,x**2])
+f=g*h
+sol=diff(f,x)
 ==
 
-evaluator==
-score, error = eval_function(input.value, sol)
+text ==
+Calculer la dérivée de la fonction
+$$ f : x \mapsto {{f|latex}} .$$
+==
 
+evaluator ==
+score, error = eval_expr(answers['math'], sol)
 feedback = message[error]
 ==
-
 
 
