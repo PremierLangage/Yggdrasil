@@ -1,4 +1,4 @@
-extends = /model/mathinput.pl
+extends = /model/mathquill.pl
 
 title = Système linéaire
 
@@ -21,7 +21,7 @@ Ecrire la solution sous forme d'un couple de nombres.
 ==
 
 evaluator ==
-score, feedback = eval_tuple(input.value, sol, checksize=True)
+score, feedback = eval_tuple(answers["math"], sol, checksize=True)
 ==
 
 solution == 
