@@ -18,7 +18,6 @@ rd.shuffle(f)
 c=randitem(lstc)
 a,b=c*f[0],c*f[1]
 sol=Rational(a,b)
-ttt = "fff"
 ==
 
 text ==
