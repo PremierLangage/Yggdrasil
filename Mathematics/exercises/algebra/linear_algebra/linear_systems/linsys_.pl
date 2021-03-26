@@ -37,7 +37,7 @@ Ecrire la solution sous forme d'un {{tuple_name}} de nombres.
 ==
 
 evaluator ==
-score, error = eval_tuple(answer['math'], sol, checksize=True)
+score, error = eval_tuple(answers['math'], sol, checksize=True)
 feedback = message[error]
 ==
 
