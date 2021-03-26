@@ -1,4 +1,4 @@
-extends =  /Mathematics/template/mathjsxgraph.pl
+extends = /model/mathjsxgraph.pl
 
 title = Cercle trigonométrique
 
