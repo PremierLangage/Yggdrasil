@@ -8,16 +8,13 @@ lstfrac=[(randitem([1,3,5,7]),2),
 (randitem([1,3,5,7]),4),
 (randitem([1,2,3,4,6,7,8]),5),
 (randitem([1,5,7]),6)]
-cf1,cf2,cf3=list_randitem_norep(3,lstfrac)
+
+cf1, cf2 = list_randitem_norep(2, lstfrac)
+
 f1='\\frac{ %d }{ %d }' % (cf1[0],cf1[1])
 f2='\\frac{ %d }{ %d }' % (cf2[0],cf2[1])
-f3='\\frac{ %d }{ %d }' % (cf3[0],cf3[1])
 
-e1=randint(1,3)
-e1=str(e1)
-s1=randitem(["-","+"])
-
-expr='%s %s %s' % (f1,s1,f2)
+expr='%s + %s' % (f1, f2)
 
 sol = simplify(latex2sympy(expr))
 ==
