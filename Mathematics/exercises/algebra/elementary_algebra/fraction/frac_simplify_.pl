@@ -30,6 +30,6 @@ feedback = message[error]
 prev_value = response['math'].replace("\\", "\\\\")
 ==
 
-solution==
+solution ==
 La solution est $% \displaystyle {{ sol|latex }} %$.
 ==
