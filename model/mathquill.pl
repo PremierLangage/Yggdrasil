@@ -27,7 +27,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
   supSubsRequireOperand: true,
   charsThatBreakOutOfSupSub: '+-=<>',
   autoSubscriptNumerals: true,
-  autoCommands: 'pi theta sqrt sum',
+  autoCommands: 'pi theta sqrt sum infty emptyset',
   autoOperatorNames: 'sin cos ln exp',
   maxDepth: 10,
   handlers: {
