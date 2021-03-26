@@ -18,7 +18,7 @@ $$ f : x \mapsto {{f|latex}} .$$
 ==
 
 evaluator ==
-score, error = eval_expr(answers['math'], sol)
+score, error = eval_function(answers['math'], sol)
 feedback = message[error]
 ==
 
