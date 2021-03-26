@@ -94,8 +94,10 @@ if __name__ == "__main__":
     else:
         if 'score' in dic:
             score = dic['score']    
-
-        feedback=" "
+        if 'feeedback' in dic:
+            feeedback = dic['feedback']  
+        else:
+            feedback=" "
 
     if score >= 0:
         dic['internals']['attempt'] = dic['internals']['attempt'] + 1
