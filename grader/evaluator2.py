@@ -128,7 +128,7 @@ if __name__ == "__main__":
     # hack for MathQuill
     if 'answers' in dic:
         if 'math' in dic['answers']:
-            dic['prev_value' = dic['answers']['math'].replace("\\", "\\\\")
+            dic['prev_value'] = dic['answers']['math'].replace("\\", "\\\\")
 
 
 
