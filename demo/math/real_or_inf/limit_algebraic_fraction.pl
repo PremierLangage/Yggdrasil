@@ -19,7 +19,7 @@ Déterminer $$ {{ lim|latex }}. $$
 ==
 
 evaluator ==
-score, error =  eval_real_or_inf(ianswers['math'], sol)
+score, error =  eval_real_or_inf(answers['math'], sol)
 feedback = message[error]
 ==
 
