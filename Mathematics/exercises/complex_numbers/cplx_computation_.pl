@@ -102,12 +102,6 @@ else:
 
 ==
 
-input.virtualKeyboards = complex
-
-evaluator ==
-score, error = eval_complex(input.value,sol,form="cartesian")
-feedback = message[error]
-==
 
 solution ==
 La solution est $% {{ sol|latex}} %$.
