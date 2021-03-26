@@ -2,7 +2,7 @@
 # Last update : 10/01/21
 # Keywords : linear systems
 
-extends = /model/mathinput.pl
+extends = /model/mathquill.pl
 
 title = Système linéaire
 
@@ -37,7 +37,7 @@ Ecrire la solution sous forme d'un {{tuple_name}} de nombres.
 ==
 
 evaluator ==
-score, error = eval_tuple(input.value, sol, checksize=True)
+score, error = eval_tuple(answer['math'], sol, checksize=True)
 feedback = message[error]
 ==
 
