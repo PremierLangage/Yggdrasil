@@ -15,14 +15,13 @@ Développer $${{ expr_poly|latex }}.$$
 ==
 
 evaluator ==
-score, error = eval_poly(input.value, sol, var="x", form="expanded")
+score, error = eval_poly(answers['math'], sol, var="x", form="expanded")
 feedback = message[error]
 ==
 
 solution ==
 La solution est $! {{ sol|latex}} !$.
 ==
-
 
 # Remarque : eval_expr(input.value, sol) est envisageable, mais l'évaluateur ne vérifie 
 #            pas si la solution de l'étudiant est donnée sous forme simplifiée.
