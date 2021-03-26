@@ -126,7 +126,7 @@ extrajs ==
             </a>
         `);
         {% endif %}
-
+        
         {% if not "submit" in internals.buttons %}
         actions.find('.action-submit').hide();
         {% endif %}
