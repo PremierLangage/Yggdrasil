@@ -37,7 +37,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
   }
 });
 //mathField.latex(" {{ ttt|escape }} ");
-mathField.latex("x");
+mathField.text("x");
 
 </script>
 ==
