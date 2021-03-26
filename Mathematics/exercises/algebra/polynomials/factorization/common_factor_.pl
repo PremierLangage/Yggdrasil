@@ -2,7 +2,7 @@
 # Tags: polynomials
 # 19/8/2020
 
-extends = /model/mathinput.pl
+extends = /model/mathquill.pl
 
 title = Facteur commun
 
@@ -89,10 +89,10 @@ Factoriser l'expression suivante :
 $$ {{ P|latex }}.$$
 ==
 
-
 evaluator ==
-score, error = eval_poly(input.value, sol, var="x", form="factorized")
+score, error = eval_poly(response['math'], sol, var="x", form="factorized")
 feedback = message[error]
+prev_value = response['math'].replace("\\", "\\\\")
 ==
 
 solution ==
