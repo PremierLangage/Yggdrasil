@@ -9,8 +9,6 @@ Exercice à troux
 text==#|markdown|
 Compléter les trous du texte suivant
 
-{{montexte}}
-
 == 
 
 before==
