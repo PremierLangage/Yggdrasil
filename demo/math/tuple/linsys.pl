@@ -21,7 +21,8 @@ Ecrire la solution sous forme d'un couple de nombres.
 ==
 
 evaluator ==
-score, feedback = eval_tuple(answers["math"], sol, checksize=True)
+score, error = eval_tuple(answers["math"], sol, checksize=True)
+feedback = message[error]
 ==
 
 solution == 
