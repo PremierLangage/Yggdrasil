@@ -1,5 +1,7 @@
 extends = /model/math/math.pl
 
+jinja_keys = ['solution']
+
 title = 
 
 text = 
