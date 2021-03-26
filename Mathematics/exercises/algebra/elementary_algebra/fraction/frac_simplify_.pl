@@ -28,7 +28,7 @@ Simplifier la fraction $% \displaystyle \frac{ {{a}} }{ {{b}} } %$ en l'écrivan
 evaluator ==
 score, error = eval_frac(response['math'], sol)
 feedback = message[error]
-ttt = response['math'].replace("\", "\")
+ttt = response['math'].replace("\\", "\\\\")
 ==
 
 solution==
