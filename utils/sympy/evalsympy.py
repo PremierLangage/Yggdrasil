@@ -443,7 +443,7 @@ def is_poly_factorized(expr, x, domain='R'):
                 a = a.args[0]
             else:
                 return False
-        if not sp.Poly(a, x, **kwargs).degree > 1:
+        if sp.Poly(a, x, **kwargs).degree > 1:
             return False
         #if not sp.Poly(a, x, **kwargs).is_irreducible:
         #    return False
