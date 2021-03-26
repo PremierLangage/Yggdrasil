@@ -92,7 +92,6 @@ $$ {{ P|latex }}.$$
 evaluator ==
 score, error = eval_poly(response['math'], sol, var="x", form="factorized")
 feedback = message[error]
-prev_value = response['math'].replace("\\", "\\\\")
 ==
 
 solution ==
