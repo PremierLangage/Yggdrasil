@@ -25,9 +25,8 @@ Simplifier la fraction $% \displaystyle \frac{ {{a}} }{ {{b}} } %$ en l'écrivan
 ==
 
 evaluator ==
-score, error = eval_frac(response['math'], sol)
+score, error = eval_frac(answers['math'], sol)
 feedback = message[error]
-prev_value = response['math'].replace("\\", "\\\\")
 ==
 
 solution ==
