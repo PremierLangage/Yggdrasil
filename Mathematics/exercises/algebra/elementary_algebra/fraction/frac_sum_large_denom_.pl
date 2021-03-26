@@ -1,4 +1,4 @@
-extends = /model/mathinput.pl
+extends = /model/mathquill.pl
 
 title = Opérations sur les fractions
 
@@ -36,7 +36,7 @@ Calculer l'expression $% \displaystyle {{expr}}%$ en l'écrivant sous la forme d
 
 
 evaluator ==
-score, error = eval_frac(input.value, sol)
+score, error = eval_frac(answers['math'], sol)
 feedback = message[error]
 ==
 
