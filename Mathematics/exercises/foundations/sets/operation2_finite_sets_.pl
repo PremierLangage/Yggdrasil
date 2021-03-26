@@ -2,11 +2,9 @@
 # Tags : sets, finite sets
 # 19/8/2020
 
-extends = /model/mathinput.pl
+extends = /model/mathquill.pl
 
 title = Opérations sur les ensembles
-
-input.virtualKeyboards = sets
 
 param.cases % [1, 2, 3, 4]
 
@@ -66,7 +64,7 @@ Déterminer $! {{expr}} !$.
 ==
 
 evaluator ==
-score, error = eval_set(input.value, sol)
+score, error = eval_set(answers['math'], sol)
 feedback = message[error]
 ==
 
