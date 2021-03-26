@@ -2,7 +2,7 @@
 # Tags: complex numbers
 # 19/8/2020
 
-extends = /model/quill.pl
+extends = /model/mathquill.pl
 
 title = Module d'un nombre complexe
 
