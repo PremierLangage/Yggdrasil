@@ -28,6 +28,6 @@ menuForm =gethtmlmenu(enonc,dico)
 form=menuForm
 
 m = defhtmlmenu(2,dico)
-text=text+"<br/>"+enonc+"<br/><i> Result= " +str(dico)+"</i><br/>"
+#text=text+"<br/>"+enonc+"<br/><i> Result= " +str(dico)+"</i><br/>"
 ==
 
