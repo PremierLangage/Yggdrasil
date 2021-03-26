@@ -1,6 +1,5 @@
 extends = /model/math/math.pl
-@ /builder/before.py [builder.py]
-@ /grader/evaluator.py [grader.py]
+
 title = 
 
 text = 
