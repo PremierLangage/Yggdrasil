@@ -2,7 +2,6 @@ extends = /model/mathjsxgraph.pl
 
 title = Cercle trigonométrique
 
-lang = fr
 
 before ==
 lstangle=eval(param['lstangle'])
@@ -24,7 +23,7 @@ var secOAM = board.create('sector',[O,A,M],{color:'orange'});
 
 form==
 <center>
-{{ drawer|component }}
+{{ jxg|component }}
 </center>
 ==
 
