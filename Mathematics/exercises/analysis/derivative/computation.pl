@@ -1,13 +1,9 @@
-extends = /model/mathinput.pl
+extends = /model/mathquill.pl
 
 title = Calcul de dérivée
 
-lang = fr
-
-input.virtualKeyboards = sets
 
 before ==
-
 var('x')
 n=randint(1,4)
 g=randitem([sin(x),cos(x),exp(x),ln(x)])
