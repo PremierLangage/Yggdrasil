@@ -1,11 +1,9 @@
-extends = /model/mathinput.pl
+extends = /model/mathquill.pl
 
 form_complex = cartesian
 
-input.virtualKeyboards = complex
-
 evaluator ==
-score, error = eval_complex(input.value, sol, form=complex_form)
+score, error = eval_complex(answers['math'], sol, form=complex_form)
 feedback = message[error]
 ==
 
