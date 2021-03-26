@@ -3,9 +3,9 @@ extends = /model/mathjsxgraph.pl
 title = Cercle trigonométrique
 
 before ==
-lstangle=eval(param['lstangle'])
-angle=randitem(lstangle)
-valangle=float(angle.evalf())
+lstangle = eval(param['lstangle'])
+angle = randitem(lstangle)
+valangle = float(angle.evalf())
 jxg.setscript(script_init)
 ==
 
