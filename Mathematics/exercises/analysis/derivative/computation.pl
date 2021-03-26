@@ -14,20 +14,5 @@ sol=diff(f,x)
 
 text ==
 Calculer la dérivée de la fonction
-$$ f : x \mapsto {{f.latex}} .$$
+$$ f : x \mapsto {{f|latex}} .$$
 ==
-
-input =: MathInput
-
-form ==
-{{input|component}}
-==
-
-evaluator==
-score,_,feedback=eval_expr(input.value,sol)
-==
-
-
-
-
-
