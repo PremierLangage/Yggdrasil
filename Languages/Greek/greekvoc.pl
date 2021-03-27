@@ -7,8 +7,8 @@ delimiter = ;
 title = Vocabulaire grec
 
 before ==
-# choices=[item['traductions'] for item in rows]
-# input.autocomplete = choices
+choices=[item['traductions'] for item in rows]
+input.autocomplete = choices
 all_rows
 ==
 
