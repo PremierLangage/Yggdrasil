@@ -21,7 +21,7 @@ Que signifie le mot suivant ?
 </div>
 ==
 
-sol ==
+solution ==
 {{traductions}}
 ==
 
