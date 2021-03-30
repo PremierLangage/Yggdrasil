@@ -20,7 +20,7 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 @ item.txt
 
 author=Nicolas Borie
-title=Trouver les produits les plus lourds
+title=Le jour avec le plus d'ajouts
 
 before==#|python|
 
