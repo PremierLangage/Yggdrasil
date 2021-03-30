@@ -67,3 +67,5 @@ un tri numérique à la place. `uniq -d` fait un peu l'inverse une fois que le
 flux est déjà trié car il ne selectionne que les doublons (une seule 
 occurence est gardé par groupe de lignes réppétées).
 ==
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/bdd2_bash/bdd_size.pl
