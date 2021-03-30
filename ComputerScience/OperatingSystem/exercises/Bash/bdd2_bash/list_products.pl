@@ -51,3 +51,6 @@ ligne (puis un retour à la ligne). N'hésitez à faire plusieurs essais.
 ==
 
 
+solution==
+cut item.txt -d ';' -f 2,3 | grep -e "jaune" | cut -d ';' -f 1 | sort -u | wc -l
+==
