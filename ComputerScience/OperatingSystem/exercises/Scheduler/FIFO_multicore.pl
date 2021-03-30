@@ -25,7 +25,6 @@ inputbox.appearance = outline
 inputbox.width = 20%
 
 
-
 before== #|python|
 from random import randint
 
