@@ -28,7 +28,7 @@ expected_stdout = "7248\n"
 ==
 
 text==#|markdown|
-On souhaite maintenant extraire des informations d'une base de produits, elle aussi 
+On souhaite maintenant extraire des informations de la base de produits, elle aussi 
 donnée sous la forme d'un fichier structuré par lignes.
 
 Rappel de la structuration du fichier **item.txt**:   
