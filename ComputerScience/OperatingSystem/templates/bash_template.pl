@@ -101,7 +101,7 @@ else:
     feedback_note = "<br><u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toutes propositions confondues)</i><br>"
     feedback_note += "Note pour cette tentative : "+str(note_finale)+"% <br>"
     feedback_note += "Partie tests : "+str(grade_now)+"% <br>"
-    feedback_note += "Partie efficacité : "+str(note_eff)+"% ("+tent_rmrq+")<br><br>"
+    feedback_note += "Partie efficacit&eacute; : "+str(note_eff)+"% ("+tent_rmrq+")<br><br>"
 
     if expected_stdout == spout:
         feedback = "Bravo, votre code fait le travail !"
