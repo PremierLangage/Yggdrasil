@@ -20,7 +20,7 @@ builder =@ /builder/before.py
 
 inputbox =: Input
 inputbox.type = number
-inputbox.placeholder = 
+inputbox.placeholder = popol
 inputbox.appearance = outline
 inputbox.width = 20%
 
