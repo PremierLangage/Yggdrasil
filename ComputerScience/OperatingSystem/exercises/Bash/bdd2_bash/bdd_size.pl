@@ -28,8 +28,8 @@ expected_stdout = "7248\n"
 ==
 
 text==
-On change de contexte... On souhaite maintenant extraire des informations 
-d'une base de produits, elle aussi donnée sous la forme d'un fichier structuré par lignes.
+On souhaite maintenant extraire des informations d'une base de produits, elle aussi 
+donnée sous la forme d'un fichier structuré par lignes.
 
 Le fichier se nomme **item.txt** et chacune de ses lignes contient les informations suivantes :
 
