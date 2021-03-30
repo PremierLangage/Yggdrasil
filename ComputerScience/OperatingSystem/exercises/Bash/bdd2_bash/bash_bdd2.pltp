@@ -1,0 +1,68 @@
+#*****************************************************************************
+#  Copyright (C) 2021 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#
+#  Distributed under the terms of the GNU General Public License (GPL)
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#    General Public License for more details.
+#
+#  The full text of the GPL is available at:
+#
+#                  http://www.gnu.org/licenses/
+#*****************************************************************************
+
+author=Nicolas Borie
+title=Base de données primitive en bash (cut, grep, etc)
+
+introduction==#|markdown|
+Un fichier **MJC.txt** a été placé dans votre répertoire courant de travail. 
+Ce fichier est structuré de manière très sérieuse en ligne. Chaque ligne correspond à
+un membre de la MJC (Maison des Jeunes et de la Culture) de la capitale de la Syldavie. 
+Chaque ligne suit la structure suivante :   
+   
+**id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
+   
+À titre d'exemple, la première ligne du fichier est ainsi :   
+   
+**12137916:Daniel:Leroux:31:Theatre,,,,,,:12:Jun:2017**   
+   
+**Daniel Leroux** est donc le membre **12137916** de la MJC. Il a **31** ans et ne pratique que 
+le **théâtre** le lundi ; les autres jours de la semaine, Daniel ne suit aucune activité. 
+Daniel est membre de la MJC depuis le **12 Juin 2017**.
+
+
+## Rappels pour cette salve d'exercices :
+
+    grep -e "MOTIF REGEXP" [fichier ou stdin]
+`grep` permet de selectionner des lignes contenant
+un certain MOTIF sous forme d'expression régulière (`-v` inverse la sélection 
+et donc affiche les lignes qui ne contiennent pas le MOTIF).
+
+    cut -d 'CHAR' -f ENTIER1, ENTIER2, ... , ENTIERn [fichier ou stdin]
+`cut` permet de selectionner une ou plusieurs colonnes dans un fichier 
+strcuturé par lignes où les délimiteurs sont spécifiés par CHAR et les 
+numéros de colonnes par ENTIER1, ENTIER2, etc. La première colonne porte 
+le numéro 1.
+
+    wc -[l|c|w] [fichier ou stdin]
+Word Count `wc` compte le nombre de caractères, de mots et de lignes dans 
+le fichier en argument ou l'entrée standard. Attention, si l'argument est 
+un fichier, le nom de l'argument est bégayé sur la sortie standard.
+
+    sed -e "s/ANCIEN MOTIF/NOUVEAU MOTIF/g" [fichier ou stdin]
+`sed` et sa fonction `s` pour substitution avec paramètre `g` va chercher TOUTES(g) 
+les occurences de l'ANCIEN MOTIF (REGEXP) et les transformer(s) en une 
+occurence du NOUVEAU MOTIF. `sed` oppère son travail sur l'entrée standard 
+ou bien un fichier spécifié en argument.
+
+    sort -[u|n] [fichier ou stdin]
+    sort [fichier ou stdin] | uniq -d 
+`sort` trie par lignes le fichier en argument s'il est spécifié ou l'entrée 
+standard sinon. L'option `-u` supprime les doublons au vol lorsque le tri est 
+opéré. Le trie est fait suivant l'ordre lexicoASCII. L'option `-n` demande 
+un tri numérique à la place. `uniq -d` fait un peu l'inverse une fois que le 
+flux est déjà trié car il ne selectionne que les doublons (une seule 
+occurence est gardé par groupe de lignes réppétées).
+==
