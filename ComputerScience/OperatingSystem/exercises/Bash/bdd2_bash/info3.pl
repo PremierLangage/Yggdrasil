@@ -27,6 +27,8 @@ import random
 
 experiences = [
 ("or et rajoutés un mois de Janvier", "Coussin\nFleurs sechées\nMain courrante\nPorte journaux\nServiette\nToile cirée\n"),
+("argent et rajoutés un mois de Février", "Bougie\nCoquetier\nNappe\nServiette\nToile cirée\n"),
+
 ]
 
 instructions, expected_stdout = random.choice(experiences)
