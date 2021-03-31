@@ -27,6 +27,7 @@ import random
 
 experiences = [
 ("en 2010 et de couleur noir", "Rideaux\n"),
+("en 2009 et de couleur noir", "Coussin\n"),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
