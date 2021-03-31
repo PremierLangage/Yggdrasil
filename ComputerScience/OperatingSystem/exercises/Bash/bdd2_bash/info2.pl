@@ -27,23 +27,11 @@ import random
 
 experiences = [
 ("Plateau", "230\n"),
-("Bougie", "241\n"),
-("Serviette", "252\n"),
-("Vase", "164\n"),
-("Statuette", "254\n"),
-("Coupe", "212\n"),
-("Cadre photo", "182\n"),
-("Coquetier", "247\n"),
-("Main courrante", "196\n"),
-("Horloge", "207\n"),
-("Nappe", "213\n"),
-("Arrosoir", "199\n")
 ]
 
 instructions, expected_stdout = random.choice(experiences)
 
 ==
-
 
 text==
 Rappel de la structuration du fichier **item.txt**:   
@@ -51,11 +39,13 @@ Rappel de la structuration du fichier **item.txt**:
 **id;type;couleur;poids;quantité;jour;mois;année**   
 <br />
 
-**Établissez une commande qui affiche le nombre de produits de type {{ instructions }}**. 
+**Établissez une commande qui affiche le nombre de produits de couleur {{ instructions }}**. 
 Veuillez à faire en sorte que votre 
 commande ne produise que l'affichage numérique seul sur une 
 ligne (puis un retour à la ligne).
 ==
 
+solution==
 
+==
 
