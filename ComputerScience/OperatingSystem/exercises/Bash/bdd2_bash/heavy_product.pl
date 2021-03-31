@@ -51,5 +51,7 @@ commande ne produise que l'affichage demandé seul sur une
 ligne (puis un retour à la ligne).
 ==
 
-
+solution==
+grep item.txt -e ";Horloge;" | grep -e ";vert;" | grep -e "gr;" | cut -d ';' -f 4 | sort -rn | head -1
+==
 
