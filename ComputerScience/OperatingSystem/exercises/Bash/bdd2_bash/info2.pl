@@ -30,7 +30,8 @@ experiences = [
 ("blanc rajoutés en 2018", "102\n"),
 ("rouge rajoutés en 2017", "32\n"),
 ("bleu rajoutés en 2016", "28\n"),
-("bleu rajoutés en 2016", "28\n"),
+("vert rajoutés en 2015", "20\n"),
+("jaune rajoutés en 2014", "15\n"),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
