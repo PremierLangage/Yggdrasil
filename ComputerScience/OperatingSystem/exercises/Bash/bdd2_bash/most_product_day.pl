@@ -34,10 +34,11 @@ Rappel de la structuration du fichier **item.txt**:
 **id;type;couleur;poids;quantité;jour;mois;année**   
 <br />
 
-Durant quel mois la base de données a connu le jour durant lesquel 
-le plus de nouveaux produits ont été ajouté à cette dernière. 
-Il faut donc trouver ce jour (12 poduits ont été rajouté à la bdd 
-ce jour-là) puis juste afficher le mois associé (septième champs des lignes).
+Durant quel mois, la base de données a connu le jour durant lequel 
+le plus de nouveaux produits ont été ajoutés à cette dernière. 
+Il faut donc trouver ce jour (12 poduits ont été rajoutés à la bdd 
+ce jour-là) puis juste afficher le mois associé à ce jour 
+(septième champs des lignes).
 
 ==
 
