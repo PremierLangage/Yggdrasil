@@ -44,4 +44,9 @@ lui a transmis en ligne de commande lors de son appel. Chaque argument devra
 de ligne que le nombre d'argument que l'on lui a donné lors de son appel.
 ==
 
-
+solution==#|shell|
+for arg in $*
+  do
+    echo $arg
+  done
+==
