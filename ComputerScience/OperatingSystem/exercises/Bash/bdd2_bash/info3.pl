@@ -28,7 +28,16 @@ import random
 experiences = [
 ("or et rajoutés un mois de Janvier", "Coussin\nFleurs sechées\nMain courrante\nPorte journaux\nServiette\nToile cirée\n"),
 ("argent et rajoutés un mois de Février", "Bougie\nCoquetier\nNappe\nServiette\nToile cirée\n"),
-
+("taupe et rajoutés un mois de Mars", "Bougie\nDessous de plat\nÉtagère\nHorloge\nLampe\nMain courrante\nNappe\nPaillasson\nPlateau\nPorte journaux\n"),
+("magenta et rajoutés un mois d'Avril", "Cadre photo\nChemin de table\nCoquetier\nCoupe\nÉtagère\nJardinière\nPorte serviette\nRideaux\nSerre livre\nTableau\nVase\n"),
+("cyan et rajoutés un mois de Mai", "Arrosoir\nBougie\nCadre photo\nChemin de table\nCoquetier\nCoupe\nDessous de plat\nFigurine\nHorloge\nTableau\n"),
+("saumon et rajoutés un mois de Juin", "Coquetier\nFigurine\nGuirlande\nHorloge\nLanterne\nPlante artificielle\nRideaux\nTableau\n"),
+("parme et rajoutés un mois de Juillet", "Bougie\nChemin de table\nCoupe\nCoussin\nFigurine\nGuirlande\nMiroir\nPaillasson\nPorte journaux\nToile cirée\n"),
+("chocolat et rajoutés un mois d'Août", "Bougie\nCoussin\nÉtagère\nJardinière\nLanterne\nNappe\nPlante artificielle\nPorte manteau\nSerre livre\n"),
+("turquoise et rajoutés un mois de Septembre", "Bougie\nCoupe\nLanterne\nMiroir\nPlante artificielle\nRond de serviette\nStatuette\n"),
+("pourpre et rajoutés un mois d'Octobre", "Arrosoir\nAssiette\nCoussin\nDessous de plat\nÉtagère\nPaillasson\nPorte serviette\nVase\n"),
+("rose et rajoutés un mois de Novembre", "Arrosoir\nBougie\nCache pot\nCadre photo\nChemin de table\nCoussin\nDessous de plat\nGuirlande\nMain courrante\nNappe\nPaillasson\nPlante artificielle\nPorte serviette\nRideaux\nTableau\nToile cirée\n"),
+("beige et rajoutés un mois de Décembre", "Arrosoir\nAssiette\nCache pot\nCoupe\nÉtagère\nFigurine\nFleurs sechées\nGuirlande\nNappe\nPaillasson\nPlante artificielle\nPorte manteau\nPorte serviette\nRond de serviette\nSerre livre\nTableau\nToile cirée\nVase\n"),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
