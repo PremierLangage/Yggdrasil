@@ -45,7 +45,7 @@ avec un seul type de produit par ligne.
 ==
 
 solution==
-
+cut item.txt -d ';' -f 2,3,7 | grep -e ";or;Jan$" | cut -d ';' -f 1 | sort -u
 ==
 
 
