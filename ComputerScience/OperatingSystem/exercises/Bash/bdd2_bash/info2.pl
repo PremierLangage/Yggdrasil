@@ -60,6 +60,6 @@ ligne (puis un retour à la ligne).
 ==
 
 solution==
-
+grep item.txt -e ";bleu;" | grep -e ";2016$" | wc -l
 ==
 
