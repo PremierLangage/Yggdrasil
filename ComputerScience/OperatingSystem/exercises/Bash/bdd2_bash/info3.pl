@@ -56,7 +56,10 @@ avec un seul type de produit par ligne.
 ==
 
 solution==
+# ça dépend du tirage, il y a 100 000 façon de faire
 cut item.txt -d ';' -f 2,3,7 | grep -e ";or;Jan$" | cut -d ';' -f 1 | sort -u
+# autre possibilité
+grep item.txt -e ";Sep;" | grep -e ";turquoise;" | cut -d ';' -f 2 | sort -u
 ==
 
 
