@@ -27,6 +27,7 @@ import random
 
 experiences = [
 ("noir rajoutés en 2019", "186\n"),
+("blanc rajoutés en 2018", "102\n"),
 
 ]
 
