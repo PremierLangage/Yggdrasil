@@ -20,17 +20,13 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 @ item.txt
 
 author=Nicolas Borie
-title=Nombre de type de produits ayant une couleur
+title=Produit dominant sur une couleur durant une année
 
 before==#|python|
 import random
 
 experiences = [
-("jaune", "30\n"),
-("vert", "32\n"),
-("blanc", "31\n"),
-("noir", "33\n"),
-("rose", "34\n"),
+("en 2010 et de couleur", "Rideaux\n"),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
@@ -46,12 +42,12 @@ Rappel de la structuration du fichier **item.txt**:
 
 **Établissez une commande qui affiche le nombre de type produits ayant la couleur {{ instructions }}**. 
 Veuillez à faire en sorte que votre 
-commande ne produise que l'affichage numérique seul sur une 
-ligne (puis un retour à la ligne). N'hésitez à faire plusieurs essais.
+commande ne produise que l'affichage du type de produit seul sur une 
+ligne (puis un retour à la ligne).
 ==
 
 
 solution==
-cut item.txt -d ';' -f 2,3 | grep -e "jaune" | cut -d ';' -f 1 | sort -u | wc -l
+grep item.txt -e ";2010$" | grep -e ";noir;" | cut -d ';' -f 2 | sort | uniq -c | sort -rn | head -1 | sed -e 's/[^a-zA-Z]//g'
 ==
 
