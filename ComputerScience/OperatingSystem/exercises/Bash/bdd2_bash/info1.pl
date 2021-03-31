@@ -57,4 +57,6 @@ commande ne produise que l'affichage numérique seul sur une
 ligne (puis un retour à la ligne).
 ==
 
-
+solution==
+grep item.txt -e "Arrosoir" | wc -l
+==
