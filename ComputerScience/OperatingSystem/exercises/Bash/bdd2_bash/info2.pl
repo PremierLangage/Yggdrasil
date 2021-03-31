@@ -26,7 +26,8 @@ before==#|python|
 import random
 
 experiences = [
-("Plateau", "230\n"),
+("noir rajoutés en 2019", "186\n"),
+
 ]
 
 instructions, expected_stdout = random.choice(experiences)
