@@ -26,7 +26,7 @@ before==#|python|
 import random
 
 experiences = [
-("en 2010 et de couleur", "Rideaux\n"),
+("en 2010 et de couleur noir", "Rideaux\n"),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
@@ -40,7 +40,7 @@ Rappel de la structuration du fichier **item.txt**:
 **id;type;couleur;poids;quantité;jour;mois;année**   
 <br />
 
-**Établissez une commande qui affiche le nombre de type produits ayant la couleur {{ instructions }}**. 
+**Établissez une commande qui affiche le type de produit le plus nombreux ajouté {{ instructions }}**. 
 Veuillez à faire en sorte que votre 
 commande ne produise que l'affichage du type de produit seul sur une 
 ligne (puis un retour à la ligne).
