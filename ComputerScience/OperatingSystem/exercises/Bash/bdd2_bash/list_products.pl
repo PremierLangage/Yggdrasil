@@ -53,4 +53,6 @@ ligne (puis un retour à la ligne).
 
 solution==
 cut item.txt -d ';' -f 2,3 | grep -e "jaune" | cut -d ';' -f 1 | sort -u | wc -l
+# autre version
+grep item.txt -e ";vert;" | cut -d ";" -f 2 | sort -u | wc -l
 ==
