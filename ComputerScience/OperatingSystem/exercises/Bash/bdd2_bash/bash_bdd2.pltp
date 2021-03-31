@@ -71,6 +71,10 @@ opéré. Le trie est fait suivant l'ordre lexicoASCII. L'option `-n` demande
 un tri numérique à la place. `uniq -d` fait un peu l'inverse une fois que le 
 flux est déjà trié car il ne selectionne que les doublons (une seule 
 occurence est gardé par groupe de lignes réppétées).
+
+    uniq [-c]
+`uniq` supprime les doublons consécutifs mais peut aussi compter les occurences
+de chaque ligne lorsque le flux qui lui est transmis a été trié en amont.
 ==
 
 @ /ComputerScience/OperatingSystem/exercises/Bash/bdd2_bash/bdd_size.pl
