@@ -28,7 +28,8 @@ import random
 experiences = [
 ("noir rajoutés en 2019", "186\n"),
 ("blanc rajoutés en 2018", "102\n"),
-
+("rouge rajoutés en 2017", "32\n"),
+("bleu rajoutés en 2016", "28\n"),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
