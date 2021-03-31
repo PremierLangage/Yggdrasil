@@ -30,6 +30,8 @@ experiences = [
 ("en 2009 et de couleur noir", "Coussin\n"),
 ("en 2008 et de couleur blanc", "Plateau\n"),
 ("en 2007 et de couleur beige", "Jardinière\n"),
+("en 2006 et de couleur rouge", "Statuette\n"),
+("en 2005 et de couleur chocolat", "Vase\n"),
 ]
 
 instructions, expected_stdout = random.choice(experiences)
