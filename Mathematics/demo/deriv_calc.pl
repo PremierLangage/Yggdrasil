@@ -3,7 +3,7 @@ extends = /model/mathquill.pl
 title = Calcul de dérivée
 
 # Paramètres modifiables
-lst_functions1 = [sin(x), cos(x), exp(x), ln(x)]
+lst_functions1 = [tan(x)]
 lst_functions2 = [x, x**2]
 n = 4
 
