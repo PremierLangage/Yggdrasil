@@ -21,6 +21,9 @@ score, error = eval_function(answers['math'], sol)
 feedback = message[error]
 ==
 
+message.NotEqual = Toto
+
+
 solution ==
 La dérivée est la fonction
 $$ x \mapsto {{sol|latex}} .$$
