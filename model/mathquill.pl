@@ -1,8 +1,5 @@
 extends = /model/math/math.pl
 
-properties = random
-
-
 jinja_keys % ["text", "solution"]
 
 title = 
