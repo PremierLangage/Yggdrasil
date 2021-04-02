@@ -13,11 +13,13 @@ def component(l):
 
 def latex2(expr):
     if isinstance(expr, Basic):
-        return 
+        return latex(expr)
+    else:
+        return expr
 
 CustomEnv = Environment(loader=BaseLoader())
 CustomEnv.filters["component"] = component
-CustomEnv.filters["latex"] = latex
+CustomEnv.filters["latex"] = latex2
 CustomEnv.filters["sympy"] = latex
 
 
