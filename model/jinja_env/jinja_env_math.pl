@@ -13,4 +13,6 @@ def component(l):
 CustomEnv = Environment(loader=BaseLoader())
 CustomEnv.filters["component"] = component
 CustomEnv.filters["latex"] = latex
+CustomEnv.filters["sympy"] = latex
+
 
