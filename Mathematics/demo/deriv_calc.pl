@@ -21,8 +21,8 @@ score, error = eval_function(answers['math'], sol)
 feedback = message[error]
 ==
 
-message.NotEqual = Toto
-message.NotExpr = On comprend rien !
+# message.NotEqual = Toto
+# message.NotExpr = On comprend rien !
 
 
 solution ==
