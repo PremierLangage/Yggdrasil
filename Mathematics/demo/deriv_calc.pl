@@ -10,8 +10,8 @@ n = 4
 before ==
 var('x')
 n = randint(1, n)
-g = randitem(lst_functions1)
-h = randitem(lst_functions2)
+g = randitem(sympy(lst_functions1))
+h = randitem(lsympy(lst_functions2))
 f = n*g*h
 sol = diff(f,x)
 ==
