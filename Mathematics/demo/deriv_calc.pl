@@ -22,6 +22,7 @@ feedback = message[error]
 ==
 
 message.NotEqual = Toto
+message.NotExpr = On comprend rien !
 
 
 solution ==
