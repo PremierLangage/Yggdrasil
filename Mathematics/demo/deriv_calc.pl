@@ -17,6 +17,7 @@ Calculer la dérivée de la fonction
 $$ f : x \mapsto {{f|latex}} .$$
 {{f|sympy}}
 {{t|sympy}}
+{{f}}
 ==
 
 evaluator ==
