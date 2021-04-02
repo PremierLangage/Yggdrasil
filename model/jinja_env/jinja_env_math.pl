@@ -19,7 +19,7 @@ def latex2(expr):
 
 CustomEnv = Environment(loader=BaseLoader())
 CustomEnv.filters["component"] = component
-CustomEnv.filters["latex"] = latex2
-CustomEnv.filters["sympy"] = latex
+CustomEnv.filters["latex"] = latex
+CustomEnv.filters["sympy"] = latex2
 
 
