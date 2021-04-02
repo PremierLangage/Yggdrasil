@@ -2,11 +2,12 @@ extends = /model/mathquill.pl
 
 title = Calcul de dérivée
 
+lst_functions = [sin(x), cos(x), exp(x), ln(x)]
+
 before ==
 var('x')
-t = "Blabla"
 n = randint(1, 4)
-g = randitem([sin(x), cos(x), exp(x), ln(x)])
+g = randitem(lst_functions)
 h = randitem([x, x**2])
 f = n*g*h
 sol = diff(f,x)
@@ -15,9 +16,6 @@ sol = diff(f,x)
 text ==
 Calculer la dérivée de la fonction
 $$ f : x \mapsto {{f|latex}} .$$
-{{f|sympy}}
-{{t|sympy}}
-{{f}}
 ==
 
 evaluator ==
