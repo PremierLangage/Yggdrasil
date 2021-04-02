@@ -9,7 +9,7 @@ n = 4
 
 before ==
 var('x')
-n = randint(1, n)
+n = randint(1, int(n))
 g = randitem(sympy(lst_functions1))
 h = randitem(lsympy(lst_functions2))
 f = n*g*h
