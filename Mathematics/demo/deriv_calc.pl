@@ -2,13 +2,16 @@ extends = /model/mathquill.pl
 
 title = Calcul de dérivée
 
-lst_functions = [sin(x), cos(x), exp(x), ln(x)]
+# Paramètres modifiables
+lst_functions1 = [sin(x), cos(x), exp(x), ln(x)]
+lst_functions2 = [x, x**2]
+n = 4
 
 before ==
 var('x')
-n = randint(1, 4)
-g = randitem(lst_functions)
-h = randitem([x, x**2])
+n = randint(1, n)
+g = randitem(lst_functions1)
+h = randitem(lst_functions2)
 f = n*g*h
 sol = diff(f,x)
 ==
