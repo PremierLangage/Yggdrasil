@@ -9,7 +9,7 @@ sol = E
 
 checkratsimp % false
 symbol_dict = {'e': E}
-authorized_func = [exp, log]
+authorized_func = [sin]
 
 evaluator ==
 score, error = eval_expr(answers['math'], sol, checkratsimp=checkratsimp, authorized_func=sympify(authorized_func), local_dict=sympify(symbol_dict))
