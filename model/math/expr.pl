@@ -3,7 +3,7 @@ extends = /model/mathquill.pl
 complex_form = cartesian
 
 before ==
-sol = sqrt(8)
+sol = E
 ==
 
 
