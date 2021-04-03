@@ -3,7 +3,8 @@ extends = /model/mathquill.pl
 complex_form = cartesian
 
 evaluator ==
-score, error = eval_expr(answers['math'], sol)
+checkratsimp = True
+score, error = eval_expr(answers['math'], sol, checkratsimp=checkratsimp)
 feedback = message[error]
 ==
 
