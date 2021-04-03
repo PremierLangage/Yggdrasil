@@ -1,4 +1,4 @@
-extends = /model/math/math.pl
+extends = /model/maths/math.pl
 
 jinja_keys % ["text", "solution"]
 
