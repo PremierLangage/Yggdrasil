@@ -7,7 +7,7 @@ sol = sqrt(8)
 ==
 
 
-checkratsimp = True
+checkratsimp = False
 
 evaluator ==
 score, error = eval_expr(answers['math'], sol, checkratsimp=bool(checkratsimp))
