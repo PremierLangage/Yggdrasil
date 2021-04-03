@@ -8,7 +8,8 @@ sol = E
 
 
 checkratsimp % false
-symbol_dict = {'e': E}
+symbol_dict = {}
+# {'e': E}
 authorized_func = {sin}
 
 evaluator ==
