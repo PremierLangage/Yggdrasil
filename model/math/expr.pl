@@ -12,7 +12,7 @@ symbol_dict = {'e': E}
 authorized_func = {}
 
 evaluator ==
-score, error = eval_expr(answers['math'], sol, checkratsimp=checkratsimp, authorized_func = sympify(authorized_func), local_dict=sympify(symbol_dict))
+score, error = eval_expr(answers['math'], sol, checkratsimp=checkratsimp, authorized_func=sympify(authorized_func), local_dict=sympify(symbol_dict))
 feedback = message[error]
 ==
 
