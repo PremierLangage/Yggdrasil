@@ -9,6 +9,7 @@ sol = sqrt(8)
 
 checkratsimp % false
 symbol_dict = {'e': E}
+authorized_func = {sin}
 
 evaluator ==
 score, error = eval_expr(answers['math'], sol, checkratsimp=checkratsimp, local_dict=sympify(symbol_dict))
