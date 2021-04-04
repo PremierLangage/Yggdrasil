@@ -1,4 +1,4 @@
-extends = /model/math/expr
+extends = /model/math/expr.pl
 
 before ==
 xA = randint(-5, 5)
