@@ -1,27 +1,25 @@
-extends = /model/mathinput.pl
+extends = /model/math/set.pl
 
 title = Produit cartésien
 
 before ==
-lenA, lenB = randitem([[2,3],[3,2],[2,2]])
-A = rand_finiteset(lenA,list(range(10)))
-B = rand_finiteset(lenB,list(range(10)))
-sol = FiniteSet(*ProductSet(A,B))
+lenA, lenB = choice([[2,3],[3,2],[2,2]])
+A = FiniteSet(*sample(range(10), lenA))
+B = FiniteSet(*sample(range(10), lenB))
+sol = FiniteSet(*ProductSet(A, B))
+==
+
+evaluator ==
+from ast import literal_eval
+from evalsympy import eval_set
+from latex2sympy import FiniteSet2struct, latex2sympy
+score, error = eval_set(answers['math'], sol)
+feedback = answers['math']+str(FiniteSet2struct(sol)) + str(latex2sympy(answers['math']))
+#message[error]
 ==
 
 text == 
 Ecrire en extension l'ensemble $! \\{ {{A|latex}} \\} \times \\{ {{B|latex}} \\}. !$
-==
-
-input.virtualKeyboards = sets
-
-evaluator ==
-score, error = eval_set(input.value, sol)
-feedback = message[error]
-==
-
-solution ==
-La solution est $! {{sol|latex}} !$.
 ==
 
 
