@@ -71,7 +71,7 @@ if S != "y6":
     grade = (-1, feedback)
 else:
     form=""
-    feedback = '''<span class="success-state animated pulse infinite" style="padding: 10px">Effectivement! Qui ferait confiance &agrave; Slug aussi?</span>'''
+    feedback = '''<span class="success-state animated pulse infinite" style="padding: 10px">Effectivement! Qui ferait confiance &agrave; un Slug aussi?</span>'''
     grade = (100, feedback)
 ==
 
