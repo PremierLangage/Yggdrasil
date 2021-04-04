@@ -55,3 +55,16 @@ score, error = eval_expr(answers['math'], sol)
 feedback = message[error]
 ==
 
+headerbefore ==
+from sympy import *
+# Delete SymPy objects which create name conflicts
+# Actually, it would be better to make specific imports...
+del C 
+import random as rd
+from randsympy import randint
+
+from sympy import var, symbols
+from sympy import E, I, pi
+from sympy import sqrt, sin, cos, tan, exp, ln
+==
+
