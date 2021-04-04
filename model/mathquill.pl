@@ -58,7 +58,7 @@ feedback = message[error]
 headerbefore ==
 import random as rd
 from plrandom import randint
-from randsympy import randint_complex
+from randsympy import randint_complex, randint_poly
 
 from sympy import var, symbols
 from sympy import E, I, pi
