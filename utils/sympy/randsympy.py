@@ -67,7 +67,7 @@ def list_randint_norep(n,a,b,excluded_values=[]):
 
 # Complex numbers
 
-def randint_complex_int(bound):
+def randint_complex(bound):
     """
     Generate a random complex number with integer coefficients.
     """
