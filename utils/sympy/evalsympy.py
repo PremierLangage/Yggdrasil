@@ -494,7 +494,7 @@ def add_feedback(eval):
             return score, error, ""
     return eval_with_feedback
 
-def eval_expr(strans, sol, checkratsimp=True, modulo=None, authorized_func=None, local_dict={}):
+def eval_expr(strans, sol, checkratsimp=True, modulo=None, unauthorized_func=[], authorized_func=None, local_dict={}):
     r"""
     Evaluate an answer when the solution is an expression.
     
@@ -520,14 +520,15 @@ def eval_expr(strans, sol, checkratsimp=True, modulo=None, authorized_func=None,
     >>> eval_expr("\exp(1)", sp.E, local_dict={'e': sp.E})[1]
     'Success'
     """
+    for word in unauthorized_func:
+        if word in strans:
+            return (-1, "UnauthorizedFunc")
     try:
         ans = latex2sympy(strans, local_dict)
     except:
         return (-1, "NotExpr")
     if not isinstance(ans, sp.Expr):
         return (-1, "NotExpr")
-    if authorized_func is not None and not func_in_expr(ans).issubset(authorized_func):
-        return (-1, "UnauthorizedFunc")
     if not equal(ans, sol, modulo):
         return (0, "NotEqual")
     if checkratsimp and not is_rat_simp(ans):
