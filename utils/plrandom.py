@@ -42,3 +42,23 @@ def list_randitem_norep(n,items,excluded_values=[]):
     """
     return _list_rand0(n,items,False,excluded_values)
 
+def randint(a,b,excluded_values=[]):
+    """
+    Pick a random integer.
+    """
+    item=rd.choice(range(a,b+1))
+    while item in excluded_values:
+        item=rd.choice(range(a,b+1))
+    return item
+
+def list_randint(n,a,b,excluded_values=[]):
+    """
+    Generate a list of random integers with replacements.
+    """
+    return _list_rand0(n,range(a,b+1),True,excluded_values)
+
+def list_randint_norep(n,a,b,excluded_values=[]):
+    """
+    Generate a list of random integers without replacements.
+    """
+    return _list_rand0(n,range(a,b+1),False,excluded_values)
