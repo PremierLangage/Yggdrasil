@@ -600,7 +600,7 @@ def eval_real_or_inf(strans, sol, local_dict={}):
         return (0, "NotEqual")
     return (100, "Success")
 
-def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, authorized_func={}, local_dict={}):
+def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, unauthorized_func=[], authorized_func={}, local_dict={}):
     """
     Evaluate an answer when the solution is a complex number.
     """
