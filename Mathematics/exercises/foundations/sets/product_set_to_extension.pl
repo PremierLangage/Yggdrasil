@@ -10,6 +10,7 @@ sol = FiniteSet(*ProductSet(A, B))
 ==
 
 evaluator ==
+from sympy import srepr
 from ast import literal_eval
 from evalsympy import eval_set
 from latex2sympy import FiniteSet2struct, latex2sympy
