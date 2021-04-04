@@ -1,1 +1,1 @@
-extends = model/math/expr
+extends = models/math/expr
