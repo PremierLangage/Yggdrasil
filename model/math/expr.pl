@@ -6,7 +6,8 @@ expr = sin(pi)
 sol = E
 ==
 
-input_prefix = $! {{ expr|latex }} !$
+input_prefix = Réponse :
+
 checkratsimp % false
 symbol_dict = {'e': E}
 unauthorized_func = ['sin', 'cos', 'tan']
