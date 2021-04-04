@@ -8,7 +8,7 @@ sol = E
 
 input_prefix = Réponse :
 
-checkratsimp = False
+checkratsimp = True
 symbol_dict = {'e': E}
 unauthorized_func = ['sin', 'cos', 'tan']
 
