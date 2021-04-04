@@ -1,5 +1,7 @@
 extends = /model/math/expr.pl
 
+title = Distance entre deux points du plan
+
 before ==
 xA = randint(-5, 5)
 yA = randint(-5, 5)
