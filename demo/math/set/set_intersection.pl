@@ -3,8 +3,8 @@ extends = /model/math/set.pl
 title = Intersection d'ensembles
 
 before ==
-A = FiniteSet(*sample(randint(4, 7), range(10))
-B = FiniteSet(*sample(randint(4, 7), range(10))
+A = FiniteSet(*sample(randint(4, 7), range(10)))
+B = FiniteSet(*sample(randint(4, 7), range(10)))
 sol = Intersection(A, B)
 ==
 
