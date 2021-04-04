@@ -611,8 +611,6 @@ def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, au
         return (-1, "NotCplx")
     if not isinstance(ans, sp.Expr) or not ans.is_complex:
         return (-1, "NotCplx")
-    if authorized_func is not None and not func_in_expr(ans).issubset(authorized_func):
-        return (-1, "UnauthorizedFunc")
     if not equal(ans, sol):
         return (0, "NotEqual")
     if form == "cartesian":
