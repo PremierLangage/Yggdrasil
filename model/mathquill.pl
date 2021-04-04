@@ -57,7 +57,7 @@ feedback = message[error]
 
 headerbefore ==
 import random as rd
-from random import sample
+from random import choice, sample
 from plrandom import randint
 from randsympy import randint_complex, randint_poly, rand_finiteset
 
