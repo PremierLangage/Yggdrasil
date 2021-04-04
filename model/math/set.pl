@@ -10,7 +10,8 @@ evaluator ==
 from ast import literal_eval
 from evalsympy import eval_set
 score, error = eval_set(answers['math'], sol)
-feedback = message[error]
+feedback = str(sol)
+#message[error]
 ==
 
 solution ==
