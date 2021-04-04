@@ -2,7 +2,7 @@ extends = /model/mathquill.pl
 
 
 before ==
-# Script
+sol = 3 + I
 ==
 
 input_prefix = Réponse :
