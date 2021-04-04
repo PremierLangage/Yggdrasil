@@ -1,5 +1,7 @@
 extends = /model/math/complex.pl
 
+title = Multiplier deux nombres complexes
+
 before ==
 z1 = randint(-5, 5) + randint(-5, 5)*I
 z2 = randint(-5, 5) + randint(-5, 5)*I
