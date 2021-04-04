@@ -4,8 +4,8 @@ title = Produit cartésien
 
 before ==
 lenA, lenB = randitem([[2,3],[3,2],[2,2]])
-A = rand_finiteset(lenA,list(range(10)))
-B = rand_finiteset(lenB,list(range(10)))
+A = FiniteSet(sample(range(10), lenA))
+B =  FiniteSet(sample(range(10), lenA))
 sol = FiniteSet(*ProductSet(A,B))
 ==
 
