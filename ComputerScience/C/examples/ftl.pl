@@ -70,7 +70,7 @@ if S != "y6":
     feedback = '''<span class="error-state animated pulse infinite" style="padding: 10px">Y'a pas de ces sales limaces de Slugs... Cliquez sur Slug et revalidez !</span>'''
     grade = (-1, feedback)
 else:
-    feedback = '''<span class="success-state animated pulse infinite" style="padding: 10px">Effectivement, qui ferait confiance à Slug aussi !</span>'''
+    feedback = '''<span class="success-state animated pulse infinite" style="padding: 10px">Effectivement, qui ferait confiance &agrave; Slug aussi !</span>'''
     grade = (100, feedback)
 ==
 
