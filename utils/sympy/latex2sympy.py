@@ -222,7 +222,7 @@ def FiniteSet2struct(S):
         return []
     elif isinstance(S, (sp.Set, set)):
         return [FiniteSet2struct(x) for x in S]
-    elif isinstance(S, tuple):
+    elif isinstance(S, (sp.Tuple,tuple)):
         return tuple([FiniteSet2struct(x) for x in S])
     else:
         return S
