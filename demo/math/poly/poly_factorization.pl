@@ -8,7 +8,7 @@ expr = sol.expand()
 ==
 
 text ==
-Développer l'expression suivante :
+Factoriser l'expression suivante :
 
 $$ {{ expr|latex }}. $$
 ==
