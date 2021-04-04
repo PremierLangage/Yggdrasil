@@ -10,7 +10,8 @@ sol = A.powerset()
 
 evaluator ==
 from ast import literal_eval
-from evalsympy import eval_set, FiniteSet2struct
+from evalsympy import eval_set
+from latex2sympy import FiniteSet2struct
 score, error = eval_set(answers['math'], sol)
 feedback = str(FiniteSet2struct(sol))
 #message[error]
