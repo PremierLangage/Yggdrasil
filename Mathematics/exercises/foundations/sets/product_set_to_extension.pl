@@ -14,7 +14,7 @@ from ast import literal_eval
 from evalsympy import eval_set
 from latex2sympy import FiniteSet2struct, latex2sympy
 score, error = eval_set(answers['math'], sol)
-feedback = answers['math']+str(FiniteSet2struct(sol)) + str(latex2sympy(answers['math']))
+feedback = str(FiniteSet2struct(sol)) + str(latex2sympy(answers['math']))
 #message[error]
 ==
 
