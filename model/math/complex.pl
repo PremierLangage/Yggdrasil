@@ -1,19 +1,8 @@
 extends = /model/mathquill.pl
 
 
-before ==
-z1 = randint(-5, 5) + randint(-5, 5)*I
-z2 = randint(-5, 5) + randint(-5, 5)*I
-sol = (z1 * z2).expand()
-==
-
-text ==
-On considère les nombres complexes $! z_1 = {{ z1|latex }} !$ et $! z_2 = {{ z2|latex }} !$. 
-
-Calculer $! z_1 \times z_2 !$ (sous forme algébrique).
-==
-
 input_prefix = Réponse :
+
 imaginary_unit = i
 complex_form = 
 checkratsimp = True
@@ -22,6 +11,7 @@ unauthorized_func = ['sin', 'cos', 'tan']
 
 evaluator ==
 from ast import literal_eval
+from evalsympy import eval_complex
 score, error = eval_complex(answers['math'], sol, imaginary_unit=imaginary_unit, form=complex_form, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
 feedback = message[error]
 ==
