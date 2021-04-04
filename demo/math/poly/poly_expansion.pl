@@ -1,4 +1,4 @@
-extends = /model/mathquill.pl
+extends = /model/math/poly.pl
 
 before ==
 P = randint_poly(1, 2, 2)
