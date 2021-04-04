@@ -59,7 +59,7 @@ headerbefore ==
 import random as rd
 from random import choice, sample
 from plrandom import randint
-from randsympy import randint_complex, randint_poly, rand_finiteset
+from randsympy import randint_complex, randint_poly
 
 from sympy import var, symbols, Symbol
 from sympy import E, I, pi
