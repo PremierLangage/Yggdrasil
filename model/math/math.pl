@@ -26,6 +26,10 @@ from randsympy import *
 from evalsympy import *
 from latex2sympy import *
 from sympy2latex import *
+
+from sympy import var, symbols
+from sympy import E, I, pi
+from sympy import sqrt, sin, cos, tan, exp, ln
 ==
 
 
