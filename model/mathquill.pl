@@ -5,10 +5,11 @@ jinja_keys % ["text", "solution"]
 title = 
 
 text = 
+input_prefix = Réponse :
 
 form ==
 
-<p>Réponse : <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p>
+<p>{{input_prefix}} <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p>
 <input type="text" id="form_math" hidden=true><br>
 </script>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
