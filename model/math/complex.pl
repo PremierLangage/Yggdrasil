@@ -2,8 +2,8 @@ extends = /model/mathquill.pl
 
 
 before ==
-z1 = rd.randint(-5, 5) + rd.randint(-5, 5)*I
-z2 = rd.randint(-5, 5) + rd.randint(-5, 5)*I
+z1 = randint(-5, 5) + randint(-5, 5)*I
+z2 = randint(-5, 5) + randint(-5, 5)*I
 sol = (z1 * z2).expand()
 ==
 
