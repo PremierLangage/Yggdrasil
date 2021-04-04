@@ -62,11 +62,11 @@ form==
 # EVALUATE THE STUDENT ANSWER
 evaluator==#|python|
 S = group.selection
-if S == "":
-    feedback = '''<span class="error-state animated pulse infinite" style="padding: 10px">Enfin, il faut choisir !</span>'''
+if S =!= "y6":
+    feedback = '''<span class="error-state animated pulse infinite" style="padding: 10px">Y'a pas de ces sales limaces de Slugs... Cliquez sur Slug et revalidez !</span>'''
     grade = (-1, feedback)
 else:
-    feedback = '''<span class="success-state animated pulse infinite" style="padding: 10px">Mais oui, ce style est si insane!</span>'''
+    feedback = '''<span class="success-state animated pulse infinite" style="padding: 10px">Effectivement, qui ferait confiance à Slug aussi !</span>'''
     grade = (100, feedback)
 ==
 
