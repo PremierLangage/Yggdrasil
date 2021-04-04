@@ -64,6 +64,6 @@ from randsympy import randint_complex, randint_poly, rand_finiteset
 from sympy import var, symbols, Symbol
 from sympy import E, I, pi
 from sympy import sqrt, sin, cos, tan, exp, ln
-from sympy import FiniteSet, Intersection
+from sympy import FiniteSet, Intersection, ProductSet
 ==
 
