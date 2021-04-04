@@ -1,5 +1,9 @@
 extends = /model/math/math.pl
 
+@ /model/namespace/namespace_void.py [namespace.py]
+
+
+
 jinja_keys % ["text", "solution"]
 
 title = 
