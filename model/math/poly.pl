@@ -4,6 +4,7 @@ before ==
 P = rand_int_poly(1, 2, 2, "x")
 Q = rand_int_poly(1, 2, 2, "x")
 expr = P * Q
+sol = exp.expand()
 ==
 
 text ==
