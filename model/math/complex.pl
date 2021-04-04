@@ -15,7 +15,7 @@ Calculer $! z_1 \times z_2 !$ (sous forme algébrique).
 
 input_prefix = Réponse :
 imaginary_unit = i
-complex_form = cartesian
+complex_form = 
 checkratsimp = True
 symbol_dict = {'e': E}
 unauthorized_func = ['sin', 'cos', 'tan']
