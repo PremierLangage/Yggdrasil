@@ -101,7 +101,7 @@ def rand_interval_type(a,b):
 
 # Polynomials
 
-def rand_int_poly(d, nc, bound, var='x'):
+def randint_poly(d, nc, bound, var='x'):
     """
     Generate a random polynomial with integer coefficients.
     """
