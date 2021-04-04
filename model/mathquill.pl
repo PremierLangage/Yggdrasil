@@ -5,6 +5,7 @@ jinja_keys % ["text", "solution"]
 title = 
 
 text = 
+
 input_prefix = Réponse :
 
 form ==
