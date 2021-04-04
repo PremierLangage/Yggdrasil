@@ -1,12 +1,11 @@
 extends = /model/mathquill.pl
 
-complex_form = cartesian
 
 before ==
 sol = E
 ==
 
-
+input_prefix = $! sin(\pi) !$
 checkratsimp % false
 symbol_dict = {'e': E}
 unauthorized_func = ['sin', 'cos', 'tan']
