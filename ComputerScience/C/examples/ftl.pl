@@ -22,7 +22,7 @@ group =: RadioGroup
 
 screen_FTL =$ /ComputerScience/C/examples/dead.png
 
-title=Mater la rebellion
+title=Mater la rébellion
 author=Nicolas Borie
 
 tag=simple|humour|jeu
