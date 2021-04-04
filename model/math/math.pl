@@ -15,21 +15,3 @@ extends = /model/basic.pl
 @ /utils/components/mathmatrix.py [custommathmatrix.py]
 
 extends = messages_math.pl
-
-headerbefore ==
-from sympy import *
-# Delete SymPy objects which create name conflicts
-# Actually, it would be better to make specific imports...
-del C 
-import random as rd
-from randsympy import *
-from evalsympy import *
-from latex2sympy import *
-from sympy2latex import *
-
-from sympy import var, symbols
-from sympy import E, I, pi
-from sympy import sqrt, sin, cos, tan, exp, ln
-==
-
-
