@@ -46,7 +46,7 @@ random.shuffle(group.items)
 ==
 
 text==#|markdown|
-Ce vaisseau de Mantis de type A possède un équipage particulièrement cosmopolite. 
+Ce croiseur Mantis de type A possède un équipage particulièrement cosmopolite. 
 
 <br>
 
