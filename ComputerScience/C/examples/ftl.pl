@@ -48,7 +48,7 @@ random.shuffle(group.items)
 text==#|markdown|
 Ce vaisseau de Mantis de type A possède un équipage particulièrement cosmopolite. 
 
-{{ screen_FTL }}
+<img src="{{ screen_FTL }}"/>
 
 Quelle race n'est pas représentée dans cet équipage ?
 
