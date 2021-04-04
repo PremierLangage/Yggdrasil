@@ -90,6 +90,7 @@ def latex2str(s):
          (r"\arcsin", "asin"),
          (r"\arctan", "atan"),
          (r"\emptyset","{}"),
+         (r"\varnothing","{}"),
          ("\\", " ")]
          
     for (s1,s2) in lst:
