@@ -9,10 +9,10 @@ sol = E
 
 checkratsimp % false
 symbol_dict = {'e': E}
-authorized_func = [sin]
+unauthorized_func = ['sin', 'cos', 'tan']
 
 evaluator ==
-score, error = eval_expr(answers['math'], sol, checkratsimp=checkratsimp, authorized_func=sympify(authorized_func), local_dict=sympify(symbol_dict))
+score, error = eval_expr(answers['math'], sol, checkratsimp=checkratsimp, unauthorized_func=eval(unauthorized_func), local_dict=sympify(symbol_dict))
 feedback = message[error]
 ==
 
