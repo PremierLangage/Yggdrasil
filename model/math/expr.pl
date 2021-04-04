@@ -2,10 +2,11 @@ extends = /model/mathquill.pl
 
 
 before ==
+expr = sin(pi)
 sol = E
 ==
 
-input_prefix = $! sin(\pi) !$
+input_prefix = $! {{ expr|latex }} !$
 checkratsimp % false
 symbol_dict = {'e': E}
 unauthorized_func = ['sin', 'cos', 'tan']
