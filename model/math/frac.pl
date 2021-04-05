@@ -1,13 +1,20 @@
-extends = /model/mathinput.pl
+extends = /model/mathquill.pl
 
-title = Model : fraction
 
-evaluator==
-score, error = eval_frac(input.value, sol)
+input_prefix = Réponse :
+
+checkratsimp = True
+symbol_dict = {'e': E}
+unauthorized_func = ['sin', 'cos', 'tan']
+
+evaluator ==
+from ast import literal_eval
+from evalsympy import eval_frac
+score, error = eval_frac(answers['math'], sol)
 feedback = message[error]
 ==
 
-solution==
-La solution est $! \displaystyle {{ sol|latex }} !$.
+solution ==
+La solution est $! {{ sol|latex}} !$.
 ==
 
