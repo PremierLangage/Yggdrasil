@@ -22,7 +22,7 @@ p1 = plot(x*x, backend='matplotlib')
 
 source = fig2base64(plt.gcf(), format="png")
 source = fig2svg(plt.gcf())
-source = fig2base64(p1.backend(p).fig, format="png")
+source = fig2base64(p1.backend(p1).fig, format="png")
 
 
 ==
