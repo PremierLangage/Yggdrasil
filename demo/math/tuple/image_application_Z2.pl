@@ -17,7 +17,7 @@ sol = f(n0)
 ==
 
 text ==
-On considère la fonction $! f : \mathbb{Z} \times \mathbb{Z} \rightarrow \mathbb{Z} !$ telle que :
+On considère la fonction $! f : \mathbb{Z} \rightarrow \mathbb{Z} \times \mathbb{Z}  !$ telle que :
 $$ f(n)= ({{ f1|latex }}, {{ f2|latex }}).$$
 
 Déterminer $! f( {{n0}} ). !$
