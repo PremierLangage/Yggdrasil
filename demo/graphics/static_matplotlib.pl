@@ -18,11 +18,11 @@ plt.grid(True)
 from sympy import symbols
 from sympy.plotting import plot
 x = symbols('x')
-p1 = plot(x*x, backend='matplotlib')
+p1 = plot(x*x)
 
 source = fig2base64(plt.gcf(), format="png")
 source = fig2svg(plt.gcf())
-source = fig2base64(p1_.backend.fig, format="png")
+source = fig2base64(p1._backend.fig, format="png")
 
 
 ==
