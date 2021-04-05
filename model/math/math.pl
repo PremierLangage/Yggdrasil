@@ -15,7 +15,7 @@ import random as rd
 from random import choice, sample
 from plrandom import randint
 from randsympy import randint_complex, randint_poly
-
+from sympy2latex import latex
 from sympy import var, symbols, Symbol
 from sympy import E, I, pi
 from sympy import sqrt, sin, cos, tan, exp, ln
