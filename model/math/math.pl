@@ -10,6 +10,19 @@
 @ /utils/sympy/randsympy.py
 @ /utils/plrandom.py
 
+headerbefore ==
+import random as rd
+from random import choice, sample
+from plrandom import randint
+from randsympy import randint_complex, randint_poly
+
+from sympy import var, symbols, Symbol
+from sympy import E, I, pi
+from sympy import sqrt, sin, cos, tan, exp, ln
+from sympy import FiniteSet, Intersection, ProductSet
+from sympy import Integer, Rational
+==
+
 # HACK : Ce script JS permet de modifier la liste des boutons de contrôle.
 extrajs ==
 <script>
