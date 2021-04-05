@@ -23,7 +23,7 @@ plt.ylabel('voltage (mV)')
 plt.title('About as simple as it gets, folks')
 plt.grid(True)
 
-image = mpld3.fig_to_html(plt.gcf())
+image = mpld3.fig_to_html(p1.gcf())
 
 ==
 
