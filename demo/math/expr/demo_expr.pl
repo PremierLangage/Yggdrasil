@@ -7,5 +7,5 @@ sol = (sqrt(3) - 1)/2
 ==
 
 text ==
-Entrer l'expression $! {{ sol|latex}} !$.
+Entrer l'expression $! \displaystyle {{ sol|latex}} !$.
 ==
