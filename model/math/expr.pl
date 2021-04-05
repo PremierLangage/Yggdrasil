@@ -5,7 +5,7 @@ input_prefix = Réponse :
 
 checkratsimp = True
 symbol_dict = {'e': E}
-unauthorized_func = ['sin', 'cos', 'tan']
+unauthorized_func = []
 
 evaluator ==
 from ast import literal_eval
