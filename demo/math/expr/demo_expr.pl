@@ -3,7 +3,7 @@ extends = /model/math/expr.pl
 title = Démonstration math/expr
 
 before ==
-sol = sqrt(3) - 1
+sol = 1 + sqrt(3)
 ==
 
 text ==
