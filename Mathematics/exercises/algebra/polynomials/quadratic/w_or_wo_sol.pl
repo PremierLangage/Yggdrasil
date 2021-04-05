@@ -1,7 +1,6 @@
-extends = /model/checkbox.pl
-extends = /model/math.pl
+extends = /model/math/checkbox.pl
 
-title = Equations quadratiques
+title = Déterminer si une équation quadratique a des solutions
 
 before ==
 var('x')
@@ -16,8 +15,6 @@ for i in range(3):
     rd.shuffle(sides)
     s = r"$! %s !$" % latex(Eq(*sides))
     choices.append(s)
-checkbox.setitems(choices)
-checkbox.setsol_from_index(sol)
 ==
 
 text ==
