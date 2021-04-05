@@ -23,7 +23,6 @@ image = mpld3.fig_to_html(plt.gcf())
 ==
 
 text ==
-{{image}}
 <div class="img-container">
 {{ image|safe }}
 </div>
