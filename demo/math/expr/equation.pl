@@ -1,6 +1,6 @@
 extends = /model/math/expr.pl
 
-title = Exprimer une inconnue en fonction d'une autre (équation linéaire)
+title = Exprimer une inconnue en fonction d'une autre (relation linéaire)
 
 before ==
 var('x y')
