@@ -3,9 +3,9 @@ extends = /model/mathquill.pl
 
 input_prefix = Réponse :
 
-checkratsimp = True
-symbol_dict = {'e': E}
-unauthorized_func = ['sin', 'cos', 'tan']
+before ==
+sol = Rational(1,2)
+==
 
 evaluator ==
 from ast import literal_eval
