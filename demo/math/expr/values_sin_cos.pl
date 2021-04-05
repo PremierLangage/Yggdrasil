@@ -9,5 +9,5 @@ sol = f(x)
 ==
 
 text ==
-Quelle est la valeur de {{ f|latex }} en $!\displaystyle {{ x|latex }} !$ ?
+Quelle est la valeur de $! {{ f|latex }} !$ en $!\displaystyle {{ x|latex }} !$ ?
 ==
