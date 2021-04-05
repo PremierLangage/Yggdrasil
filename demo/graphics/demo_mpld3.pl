@@ -7,6 +7,11 @@
 title = Figure Matplotlib
 
 before ==
+from sympy import symbols
+from sympy.plotting import plot
+x = symbols('x')
+p1 = plot(x*x, show=False)
+
 import matplotlib.pyplot as plt
 import numpy as np
 import mpld3
