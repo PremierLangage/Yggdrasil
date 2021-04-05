@@ -1,12 +1,5 @@
-extends = /model/mathquill.pl
+extends = /model/math/input.pl
 
-text =
-
-before ==
-sol = (1,3)
-==
-
-input_prefix = Réponse :
 
 checkratsimp = True
 symbol_dict = {'e': E}
