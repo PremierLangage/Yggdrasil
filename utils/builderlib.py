@@ -1,5 +1,5 @@
 from components import Component
-from customdragdrop import DragDropGroup
+#from customdragdrop import DragDropGroup
 import json, jsonpickle
 from jinja2 import Environment, BaseLoader
 import uuid
@@ -35,6 +35,7 @@ def aux_component(dic):
                     dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
                 else:
                     break
+"""
         if isinstance(dic[key], DragDropGroup):
             for k, item in dic[key].labels.items():
                     name = "c" + uuid.uuid4().hex
@@ -44,6 +45,7 @@ def aux_component(dic):
                     name = "c" + uuid.uuid4().hex
                     newcomp.append((name, item))
                     dic[key].drops[k] = {"cid": item.cid, "name": name, "selector": item.selector}
+"""
 
     for name, comp in newcomp:
         comp.name = name
@@ -61,6 +63,7 @@ def aux_component1(dic):
                     name = item['name']
                     dic[key][i] = dic[name]
                     dic[key][i].name = name
+"""
         if isinstance(dic[key], dict) and 'serialize' in dic[key] and dic[key]['serialize'] == 'DragDropGroup':
             for k, item in dic[key]['labels'].items():
                     name = item['name']
@@ -72,6 +75,7 @@ def aux_component1(dic):
                     dic[key]['drops'][k].name = name
 
             dic[key] = DragDropGroup.fromdict(**dic[key])
+"""
 
 # HACK for components in lists
 # components in lists are duplicated outside the lists
@@ -84,6 +88,7 @@ def aux_component2(dic):
                 if isinstance(item, Component):
                     name = item.name
                     dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
+"""
         if isinstance(dic[key], DragDropGroup):
             for k, item in dic[key].labels.items():
                     name = item.name
@@ -91,6 +96,6 @@ def aux_component2(dic):
             for k, item in dic[key].drops.items():
                     name = item.name
                     dic[key].drops[k] = {"cid": item.cid, "name": name, "selector": item.selector}
-
+"""
 
 
