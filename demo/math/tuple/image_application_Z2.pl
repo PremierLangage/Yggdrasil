@@ -3,6 +3,8 @@ extends = /model/math/tuple.pl
 title = Image d'une application
 
 before ==
+from sympy import Lambda
+
 var('n')
 lst = [n, n+1, n-1, 2*n, 2*n+1, 2*n-1]
 f1 = choice(lst)
