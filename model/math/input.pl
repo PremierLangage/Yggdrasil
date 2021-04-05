@@ -40,3 +40,5 @@ mathField.latex(" {{ prev_value }} ");
 settings.feedback = rightwrong
 
 settings.maxattempt % 1
+
+extends = messages_math.pl
