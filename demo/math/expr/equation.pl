@@ -4,6 +4,8 @@ title = Calculer la distance entre deux points du plan
 
 before ==
 var('x y')
+a = randint(-5, 5, [0])
+b = randint(-5, 5, [0])
 expr = a*y+b
 sol = (x-b)/a
 ==
