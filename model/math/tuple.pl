@@ -1,5 +1,11 @@
 extends = /model/mathquill.pl
 
+text =
+
+before ==
+sol = (1,3)
+==
+
 input_prefix = Réponse :
 
 checkratsimp = True
