@@ -20,8 +20,9 @@ from sympy.plotting import plot
 x = symbols('x')
 p1 = plot(x*x, backend='matplotlib')
 
-source = fig2base64(p1.gcf(), format="png")
-source = fig2svg(p1.gcf())
+source = fig2base64(plt.gcf(), format="png")
+source = fig2svg(plt.gcf())
+source = fig2svg(p1.save())
 
 ==
 
