@@ -3,6 +3,7 @@ extends = /model/math.pl
 title = Graphique
 
 before ==
+
 import matplotlib.pyplot as plt
 import numpy as np
 from plmpl import fig2base64, fig2svg
@@ -14,8 +15,13 @@ plt.ylabel('voltage (mV)')
 plt.title('About as simple as it gets, folks')
 plt.grid(True)
 
-source = fig2base64(plt.gcf(), format="png")
-source = fig2svg(plt.gcf())
+from sympy import symbols
+from sympy.plotting import plot
+x = symbols('x')
+p1 = plot(x*x, backend='matplotlib')
+
+source = fig2base64(p1.gcf(), format="png")
+source = fig2svg(p1.gcf())
 
 ==
 
