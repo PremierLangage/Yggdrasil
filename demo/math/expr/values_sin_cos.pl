@@ -8,5 +8,5 @@ sol = sin(x)
 ==
 
 text ==
-Quelle est la valeur de sin en $! {{ x|latex }} !$ ?
+Quelle est la valeur de sin en $!\displaystyle {{ x|latex }} !$ ?
 ==
