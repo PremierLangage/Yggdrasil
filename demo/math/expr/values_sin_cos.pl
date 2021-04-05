@@ -11,3 +11,5 @@ sol = f(x)
 text ==
 Quelle est la valeur de la fonction $! {{ f|latex }} !$ en $!\displaystyle {{ x|latex }} !$ ?
 ==
+
+unauthorized_func = ['sin', 'cos']
