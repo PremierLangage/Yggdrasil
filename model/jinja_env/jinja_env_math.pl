@@ -1,6 +1,5 @@
 from jinja2 import Environment, BaseLoader
 from sympy2latex import latex
-from sympy.core.basic import Basic
 
 def component(l):
     if isinstance(l,dict):
@@ -11,15 +10,8 @@ def component(l):
         cid = l.cid
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
-def latex2(expr):
-    if isinstance(expr, Basic):
-        return latex(expr)
-    else:
-        return expr
-
 CustomEnv = Environment(loader=BaseLoader())
 CustomEnv.filters["component"] = component
 CustomEnv.filters["latex"] = latex
-CustomEnv.filters["sympy"] = latex2
 
 
