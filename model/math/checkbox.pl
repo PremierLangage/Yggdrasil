@@ -9,7 +9,7 @@ checkbox.decorator = CustomCheckbox
 shuffle % true
 
 footerbefore ==
-checkbox.setitems(choices)
+checkbox.setitems(items)
 checkbox.setsol_from_index(indsol)
 
 if shuffle:
