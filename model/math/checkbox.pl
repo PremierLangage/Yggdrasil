@@ -16,7 +16,6 @@ if shuffle:
     checkbox.shuffle()
 ==
 
-
 settings.maxattempt % 1
 
 settings.feedback = lightscore
