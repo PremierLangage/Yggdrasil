@@ -20,7 +20,7 @@ from sympy import var, symbols, Symbol
 from sympy import E, I, pi
 from sympy import sqrt, sin, cos, tan, exp, ln
 from sympy import FiniteSet, Intersection, ProductSet
-from sympy import Integer, Rational
+from sympy import Integer, Rational, Eq
 ==
 
 # HACK : Ce script JS permet de modifier la liste des boutons de contrôle.
