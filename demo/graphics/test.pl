@@ -13,11 +13,18 @@ from matplotlib.ticker import MaxNLocator
 def test2():
     from sympy import symbols
     from sympy.plotting import plot
+    import matplotlib.ticker as ticker
     x = symbols('x')
     p1 = plot(x*x, (x,-5,5))
     fig = p1._backend.fig
     ax = fig.gca()
     ax.grid(True)
+    majors = [0, 1, 5]
+    ax.xaxis.set_major_locator(ticker.FixedLocator(majors))
+    minors = np.linspace(0, 1, 11)[1:-1]
+    ax.xaxis.set_minor_locator(ticker.FixedLocator(minors))
+    ax.text(0.0, 0.1, "FixedLocator([0, 1, 5])", fontsize=14,
+            transform=ax.transAxes)
     return fig
 
 #source = fig2base64(, format="png")
