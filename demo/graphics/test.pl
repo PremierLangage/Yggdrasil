@@ -1,4 +1,4 @@
-extends = /model/math.pl
+extends = /model/math/math.pl
 @ /utils/graphics/plmpl.py
 
 title = Graphique
@@ -6,8 +6,9 @@ title = Graphique
 before ==
 from plmpl import plotsvg
 x = symbols('x')
-image = plotsvg(3*x+1)
-
+a = randint(-4, 4, [0])
+b = randint(-2, 2)
+image = plotsvg(a*x+b)
 ==
 
 old ==
