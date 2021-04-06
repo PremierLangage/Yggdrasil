@@ -6,12 +6,18 @@ before ==
 import matplotlib.pyplot as plt
 import numpy as np
 from plmpl import fig2base64, fig2svg
+from matplotlib.figure import Figure
+from matplotlib.ticker import MaxNLocator
+
 def test():
-    t = np.arange(0.0, 2.0, 0.01)
-    s = 1 + np.sin(2*np.pi*t)
-    plt.plot(t, s)
-    fig = plt.gcf()
-    return fig
+    x = np.arange(0.1,10.5,0.1) # arbitrary data
+
+    fg = Figure()
+    ax = fg.gca()
+    ax.plot(x)
+
+    ax.yaxis.set_major_locator(MaxNLocator(integer=True))
+    return fg
 
 #source = fig2base64(, format="png")
 source = fig2svg(test())
