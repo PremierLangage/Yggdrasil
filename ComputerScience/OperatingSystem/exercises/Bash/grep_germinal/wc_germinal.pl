@@ -38,6 +38,6 @@ doit pas être répété, il faudra juste produire l'affichage de la grandeur nu
 ==
 
 solution==
-# depend de la question tirée lwc ligne, mot ou caractère
+# depend de la question tirée lwc : ligne, mot ou caractère
 cat Germinal.txt | wc -{lwc}
 ==
