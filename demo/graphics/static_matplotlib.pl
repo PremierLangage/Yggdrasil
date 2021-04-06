@@ -29,8 +29,8 @@ from matplotlib.ticker import MaxNLocator
 x = np.arange(0.1,10.5,0.1) # arbitrary data
 
 fg = Figure()
-ax = fg.gca()
-ax.plot(x)
+#ax = fg.gca()
+#ax.plot(x)
 
 ax.yaxis.set_major_locator(MaxNLocator(integer=True))
 
