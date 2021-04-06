@@ -80,7 +80,7 @@ if __name__ == "__main__":
         print(missing_evaluator_stderr, file=sys.stderr)
         sys.exit(1)
 
-    code = "\n".join([dic.get('headerevaluator', ""), dic.get('evaluator', ""), dic.get('footerevaluator', "")])
+    #code = "\n".join([dic.get('headerevaluator', ""), dic.get('evaluator', ""), dic.get('footerevaluator', "")])
 
     exec(code, dic)
     exec("", namespace)
