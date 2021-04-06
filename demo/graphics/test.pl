@@ -9,8 +9,8 @@ from plmpl import fig2base64, fig2svg
 
 fig = plt.figure()
 
-source = fig2base64(fig, format="png")
-source = fig2svg(fig)
+#source = fig2base64(fig, format="png")
+#source = fig2svg(fig)
 ==
 
 text ==
