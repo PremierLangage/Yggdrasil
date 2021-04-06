@@ -12,13 +12,17 @@ from matplotlib.ticker import MaxNLocator
 from sympy import symbols
 from sympy.plotting import plot
 x = symbols('x')
-p1 = plot(x**2, (x, -5, 5))
+p1 = plot(x*x, (x, 5,5))
 
-def source2(p):
-    return fig2svg(p._backend.fig)
+def test2():
+    from sympy import symbols
+    from sympy.plotting import plot
+    x = symbols('x')
+    p1 = plot(x*x)
+    return p1._backend.fig
 
 #source = fig2base64(, format="png")
-source = source2(p1)
+source = fig2svg(test2())
 ==
 
 text ==
