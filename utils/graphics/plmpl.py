@@ -1,6 +1,9 @@
 import matplotlib.pyplot as plt
 from io import BytesIO, StringIO
 import base64
+from sympy.plotting import plot
+import matplotlib.ticker as ticker
+from sympy import symbols
 
 def fig2base64(fig, format='png', transparent=True, **kwargs):
     file = BytesIO()
@@ -19,6 +22,23 @@ def fig2svg(fig, transparent=True, **kwargs):
             break
 
     return "\n".join(lines)
+
+
+
+def plotsvg(expr, xlim=(-5,5), ylim=(-5,5) ):
+    x = symbols('x')
+    fig = plot(expr, (x,*xlim))._backend.fig
+    ax = fig.gca()
+    ax.grid(True)
+    ax.set_xlim(*xlim)
+    ax.set_ylim(*ylim)
+    ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
+    ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
+    #ax.xaxis.set_major_locator(ticker.MaxNLocator(integer=True))
+    #ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
+    ax.set_xlabel('')
+    ax.set_ylabel('')
+    return fig2svg(fig)
 
 
 def short_float_fmt(x):
