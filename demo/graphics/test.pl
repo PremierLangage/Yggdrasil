@@ -14,8 +14,8 @@ from sympy.plotting import plot
 x = symbols('x')
 p1 = plot(x*x, (5, 5))
 
-def test2(p1):
-    return p1._backend.fig
+def test2(p):
+    return p._backend.fig
 
 #source = fig2base64(, format="png")
 source = fig2svg(test2(p1))
