@@ -13,7 +13,7 @@ text ==
 Ecrire $% {{expr}} %$ sous la forme  $% \ln(a)%$, où $%a%$ est un nombre.
 ==
 
-evaluator==
+evaluator ==
 def eval_ans(strans, sol):
     try:
         ans = latex2sympy(strans)
