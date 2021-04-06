@@ -16,7 +16,8 @@ def test2():
     x = symbols('x')
     p1 = plot(x*x, (x,-5,5))
     fig = p1._backend.fig
-    fig.grid(True)
+    ax = fig.gca()
+    ax.grid(True)
     return fig
 
 #source = fig2base64(, format="png")
