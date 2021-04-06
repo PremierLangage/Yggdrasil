@@ -30,7 +30,3 @@ score, error = eval_expr(answers['math'], sol, checkratsimp=literal_eval(checkra
 feedback = message[error]
 ==
 
-
-solution ==
-La solution est $! {{ sol|latex}} !$.
-==
