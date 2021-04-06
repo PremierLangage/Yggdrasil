@@ -1,9 +1,10 @@
 extends = /model/math.pl
+@ /utils/graphics/plmpl.py
 
 title = Graphique
 
 before ==
-
+from plmpl import plotsvg
 x = symbols('x')
 image = plotsvg(3*x+1)
 
