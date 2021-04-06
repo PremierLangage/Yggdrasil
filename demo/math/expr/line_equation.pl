@@ -1,13 +1,12 @@
 extends = /model/math/expr.pl
 
-
-title = Graphique
+title = Déterminer l'équation d'une droite
 
 before ==
 from mplsympy import plotsvg
 x = symbols('x')
-a = choice([-1, 1]) * (randint(0,1) + choice([0, Rational(1, 2), Rational(1, 4), Rational(1, 3), Rational(2, 3), Rational(3, 4)]))
-b = randint(-2, 2)
+a = choice([-1, 1]) * choice([Rational(1, 2), 1 , Rational(3, 2), 2]))
+b = randint(-3, 3)
 sol = a*x+b
 image = plotsvg(sol)
 ==
