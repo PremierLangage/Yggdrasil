@@ -34,7 +34,7 @@ text==#|markdown|
 Un fichier **Germinal.txt** a été placé dans le répertoire courant de travail. 
 Établissez une **commande shell** qui affiche le nombre **{{ name_thing }}**. Débrouillez 
 vous pour votre résultat numérique soit affiché seul sur une ligne. Le nom du fichier ne 
-doit pas être répété, il faudra juste faire afficher la grandeur numérique.
+doit pas être répété, il faudra juste produire l'affichage de la grandeur numérique.
 ==
 
 solution==
