@@ -3,6 +3,12 @@ extends = /model/math.pl
 title = Graphique
 
 before ==
+x = symbols('x')
+image = plotsvg(3*x+1)
+
+==
+
+old ==
 import matplotlib.pyplot as plt
 import numpy as np
 from plmpl import fig2base64, fig2svg
