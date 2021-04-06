@@ -9,7 +9,7 @@ from plmpl import fig2base64, fig2svg
 t = np.arange(0.0, 2.0, 0.01)
 s = 1 + np.sin(2*np.pi*t)
 plt.plot(t, s)
-fig = plt.gcf()
+#fig = plt.gcf()
 
 #source = fig2base64(fig, format="png")
 source = fig2svg(plt.gcf())
