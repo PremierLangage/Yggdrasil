@@ -9,25 +9,16 @@ from plmpl import fig2base64, fig2svg
 from matplotlib.figure import Figure
 from matplotlib.ticker import MaxNLocator
 
-def test():
-    x = np.arange(0.1,10.5,0.1) # arbitrary data
+from sympy import symbols
+from sympy.plotting import plot
+x = symbols('x')
+p1 = plot(x*x, (5, 5))
 
-    fg = Figure()
-    ax = fg.gca()
-    ax.plot(x)
-
-    ax.yaxis.set_major_locator(MaxNLocator(integer=True))
-    return fg
-
-def test2():
-    from sympy import symbols
-    from sympy.plotting import plot
-    x = symbols('x')
-    p1 = plot(x*x)
+def test2(p1):
     return p1._backend.fig
 
 #source = fig2base64(, format="png")
-source = fig2svg(test2())
+source = fig2svg(test2(p1))
 ==
 
 text ==
