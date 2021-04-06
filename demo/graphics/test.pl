@@ -14,11 +14,11 @@ from sympy.plotting import plot
 x = symbols('x')
 p1 = plot(x**2, (x, -5, 5))
 
-def test2(p):
-    return p._backend.fig
+def source2(p):
+    return fig2svg(p._backend.fig))
 
 #source = fig2base64(, format="png")
-source = fig2svg(test2(p1))
+source = source2(p1)
 ==
 
 text ==
