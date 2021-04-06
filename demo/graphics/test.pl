@@ -20,7 +20,9 @@ def test2():
     ax = fig.gca()
     ax.grid(True)
     majors = [0, 1, 5]
+    ax.xaxis.set_major_locator(ticker.MaxNLocator(integer=True))
     ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
+
     return fig
 
 #source = fig2base64(, format="png")
