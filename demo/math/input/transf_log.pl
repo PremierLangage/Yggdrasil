@@ -1,20 +1,6 @@
+extends = /model/math/input.pl
+
 title = Transformation d'expressions avec logarithmes
-
-
-lang = fr
-
-extracss == #|html| 
-<style>
-.fcontainer {
-    display: flex;
-    align-items: center;
-}
-c-math-input {
-    //display: inline-block;
-    width: 100%;
-}
-</style>
-==
 
 before ==
 p = randint(2, 5)
