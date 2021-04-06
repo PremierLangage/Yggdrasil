@@ -11,11 +11,10 @@ from matplotlib.ticker import MaxNLocator
 from sympy import symbols
 from sympy.plotting import plot
 import matplotlib.ticker as ticker
-
+x = symbols('x')
+p1 = plot(x*x, (x,-5,5))
 def test2():
 
-    x = symbols('x')
-    p1 = plot(x*x, (x,-5,5))
     fig = p1._backend.fig
     ax = fig.gca()
     ax.grid(True)
