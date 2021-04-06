@@ -6,7 +6,7 @@ title = Graphique
 before ==
 from plmpl import plotsvg
 x = symbols('x')
-a = Rational(randint(-4, 4, [0]),2)
+a = choice([-1, 1]) * Rational(randint(1, 12), randint(1, 4))
 b = randint(-2, 2)
 sol = a*x+b
 image = plotsvg(sol)
