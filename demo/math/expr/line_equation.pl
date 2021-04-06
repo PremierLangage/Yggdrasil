@@ -17,6 +17,10 @@ text ==
 </div>
 ==
 
+form ==
+
+==
+
 checkratsimp = True
 symbol_dict = {'e': E}
 unauthorized_func = []
