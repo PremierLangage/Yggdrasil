@@ -12,7 +12,7 @@ from matplotlib.ticker import MaxNLocator
 from sympy import symbols
 from sympy.plotting import plot
 x = symbols('x')
-p1 = plot(x*x, (5, 5))
+p1 = plot(x**2, (x, -5, 5))
 
 def test2(p):
     return p._backend.fig
