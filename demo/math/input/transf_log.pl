@@ -18,7 +18,7 @@ def eval_ans(strans, sol):
     try:
         ans = latex2sympy(strans)
     except:
-        return (-1, "WrongForm")
+        return (-1, "NotExpr")
     if type(ans) != sp.log:
         return (-1, "WrongForm")
     if not equal(ans, sol):
