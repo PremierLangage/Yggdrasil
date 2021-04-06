@@ -40,7 +40,7 @@ source = fig2svg(test2())
 
 text ==
 <div class="img-container">
-{{source}}
+{{image}}
 </div>
 ==
 
