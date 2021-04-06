@@ -19,8 +19,10 @@ def test2():
     ax = fig.gca()
     ax.grid(True)
     majors = [0, 1, 5]
-    ax.xaxis.set_major_locator(ticker.MaxNLocator(integer=True))
-    ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
+    ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
+    ax.xaxis.set_minor_locator(ticker.MultipleLocator(1))
+    #ax.xaxis.set_major_locator(ticker.MaxNLocator(integer=True))
+    #ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
     ax.set_xlabel('')
     ax.set_ylabel('')
     return fig
