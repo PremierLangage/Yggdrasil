@@ -3,16 +3,16 @@ extends = /model/math/input.pl
 title = Démonstration math/expr
 
 before ==
+
 ==
 
 text ==
-Entrer l'expression $! {{ sol|latex}} !$.
+Entrer une expression mathématique.
 ==
 
 evaluator ==
 from latex2sympy import latex2sympy
-from evalsympy import equal
-from sympy import log
+from sympy import srepr
 
 codelatex = answers['math']
 
