@@ -25,5 +25,7 @@ message.UnauthorizedFunc = Votre réponse utilise des fonctions non-autorisées.
 message.OneUnauthorizedFunc = Un ou plusieurs réponses utilisent des fonctions non-autorisées.
 message.NotChainIneq = La réponse doit être un encadrement.
 message.WrongIneq =
+message.WrongForm = la réponse n'a pas la forme attendue.
+
 message.WrongBounds =
 
