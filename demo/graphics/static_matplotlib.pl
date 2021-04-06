@@ -32,7 +32,7 @@ fg = Figure()
 #ax = fg.gca()
 #ax.plot(x)
 
-ax.yaxis.set_major_locator(MaxNLocator(integer=True))
+#ax.yaxis.set_major_locator(MaxNLocator(integer=True))
 
 #source = fig2base64(plt.gcf(), format="png")
 #source = fig2svg(plt.gcf())
