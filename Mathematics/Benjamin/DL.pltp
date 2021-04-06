@@ -2,6 +2,10 @@
 introduction=Voici la feuille d'exercices sur les développements limités.
 title=Calculs de développements limités.
 
+@ /Mathematics/exercises/analysis/Taylor_Polynomial/DL_changementVar.pl
+
+@ /Mathematics/exercises/analysis/Taylor_Polynomial/DL_changementVar.pl
+
 @ /Mathematics/exercises/analysis/Taylor_Polynomial/DL_sum.pl
 
 @ /Mathematics/exercises/analysis/Taylor_Polynomial/DL_sum.pl
@@ -24,6 +28,7 @@ title=Calculs de développements limités.
 
 
 # on peut rajouter d'autres exercices 
+
 
 
 
