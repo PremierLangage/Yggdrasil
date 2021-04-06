@@ -6,6 +6,8 @@ unauthorized_func = []
 poly_var = x
 poly_form = 
 
+title =
+
 before ==
 P = randint_poly(1, 2, 2)
 Q = randint_poly(1, 2, 2)
