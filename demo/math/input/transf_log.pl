@@ -14,12 +14,16 @@ Ecrire $% {{expr}} %$ sous la forme  $% \ln(a)%$, où $%a%$ est un nombre.
 ==
 
 evaluator ==
+from latex2sympy import latex2sympy
+from evalsympy import equal
+from sympy import log
+
 def eval_ans(strans, sol):
     try:
         ans = latex2sympy(strans)
     except:
         return (-1, "NotExpr")
-    if type(ans) != sp.log:
+    if type(ans) != log:
         return (-1, "WrongForm")
     if not equal(ans, sol):
         return (0, "NotEqual")
