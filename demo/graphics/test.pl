@@ -14,7 +14,7 @@ import matplotlib.ticker as ticker
 
 def test2():
     x = symbols('x')
-    p1 = plot(3x+1, (x,-5,5))
+    p1 = plot(3*x+1, (x,-5,5))
     fig = p1._backend.fig
     ax = fig.gca()
     ax.grid(True)
