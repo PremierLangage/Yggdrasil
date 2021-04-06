@@ -11,7 +11,7 @@ b = randint(-2, 2)
 image = plotsvg(a*x+b)
 ==
 
-from=
+form =
 
 text ==
 <div class="img-container">
