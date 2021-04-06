@@ -3,6 +3,9 @@ extends = /model/math.pl
 title = Graphique
 
 before ==
+import os    
+import tempfile
+os.environ['MPLCONFIGDIR'] = tempfile.mkdtemp()
 
 import matplotlib.pyplot as plt
 import numpy as np
