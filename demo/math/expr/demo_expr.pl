@@ -4,7 +4,7 @@ title = Démonstration math/expr
 
 before ==
 var('x')
-sol = ln(1+x)
+sol = ln(Abs(x))
 ==
 
 text ==
