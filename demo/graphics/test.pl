@@ -14,7 +14,7 @@ def test2():
     from sympy import symbols
     from sympy.plotting import plot
     x = symbols('x')
-    p1 = plot(x*x, (x, 5,5))
+    p1 = plot(x*x, (x,-5,5))
     return p1._backend.fig
 
 #source = fig2base64(, format="png")
