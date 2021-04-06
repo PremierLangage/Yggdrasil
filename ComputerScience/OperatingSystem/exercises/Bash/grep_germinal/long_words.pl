@@ -43,8 +43,8 @@ text==#|markdown|
 Un fichier **Germinal.txt** (contenant le texte intégral de l'oeuvre de E. Zola) a 
 été placé dans le répertoire courant de travail. Établissez une **commande shell** 
 qui affiche **{{ name_thing }}** apparaissant dans le fichier. Faites en sorte que 
-votre commande affiche un mot par ligne (pas d'espaces en trop avant ou après, 
-chaque ligne sera composé d'un mot puis d'un retour à la ligne).
+votre commande affiche un mot par ligne (pas d'espace en trop avant ou après, 
+chaque ligne sera ainsi composée d'un mot seul puis d'un retour à la ligne).
 ==
 
 solution==
