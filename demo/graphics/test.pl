@@ -18,7 +18,8 @@ def test2():
     fig = p1._backend.fig
     ax = fig.gca()
     ax.grid(True)
-    majors = [0, 1, 5]
+    ax.set_xlim(-5, 5)
+    ax.set_ylim(-5, 5)
     ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
     ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
     #ax.xaxis.set_major_locator(ticker.MaxNLocator(integer=True))
