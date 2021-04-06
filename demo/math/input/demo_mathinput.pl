@@ -28,11 +28,11 @@ score = -1
 ==
 
 feedback ==
-Code LaTeX : {{ codelatex }}
+* Code LaTeX : {{ codelatex }}
 
 
-Objet Sympy : {{ str_ans }}
+* Objet Sympy : {{ str_ans }}
 
 
-Représentation : {{ srepr_ans }}
+* Représentation : {{ srepr_ans }}
 ==
