@@ -3,8 +3,6 @@ extends = /model/math/input.pl
 title = Démonstration math/expr
 
 before ==
-var('x')
-sol = ln(Abs(x))
 ==
 
 text ==
