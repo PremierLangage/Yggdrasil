@@ -1,4 +1,4 @@
-extends = /model/math/input.pl
+extends = /model/math/expr.pl
 
 
 title = Graphique
@@ -8,7 +8,8 @@ from plmpl import plotsvg
 x = symbols('x')
 a = Rational(randint(-4, 4, [0]),2)
 b = randint(-2, 2)
-image = plotsvg(a*x+b)
+sol = a*x+b
+image = plotsvg(sol)
 ==
 
 text ==
