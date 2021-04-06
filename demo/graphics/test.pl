@@ -12,7 +12,7 @@ plt.plot(t, s)
 fig = plt.gcf()
 
 #source = fig2base64(fig, format="png")
-#source = fig2svg(fig)
+source = fig2svg(plt.gcf())
 ==
 
 text ==
