@@ -4,7 +4,7 @@ title = Graphique
 
 before ==
 import os    
-os.environ['MPLCONFIGDIR'] = ''
+os.environ['MPLCONFIGDIR'] = '/temp/'
 
 import matplotlib.pyplot as plt
 import numpy as np
