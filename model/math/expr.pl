@@ -1,8 +1,5 @@
 extends = /model/math/input.pl
 
-
-input_prefix = Réponse :
-
 checkratsimp = True
 symbol_dict = {'e': E}
 unauthorized_func = []
