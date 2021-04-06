@@ -8,6 +8,7 @@
 @ /utils/sympy/latex2sympy.py
 @ /utils/sympy/sympy2latex.py
 @ /utils/sympy/randsympy.py
+@ /utils/sympy/mplsympy.py
 @ /utils/plrandom.py
 
 headerbefore ==
