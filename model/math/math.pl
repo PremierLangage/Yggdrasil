@@ -10,7 +10,6 @@
 @ /utils/sympy/randsympy.py
 @ /utils/sympy/mplsympy.py
 @ /utils/plrandom.py
-@ /utils/graphics/plmpl.py
 
 headerbefore ==
 import random as rd
