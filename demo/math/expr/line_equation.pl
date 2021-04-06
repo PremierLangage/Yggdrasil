@@ -19,3 +19,5 @@ Déterminer l'équation de la droite tracée ci-dessous.
 {{ image }}
 </div>
 ==
+
+input_prefix = $! y = !$
