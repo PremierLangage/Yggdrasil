@@ -18,7 +18,7 @@ from randsympy import randint_complex, randint_poly
 from sympy2latex import latex
 from sympy import var, symbols, Symbol
 from sympy import E, I, pi
-from sympy import sqrt, sin, cos, tan, exp, ln
+from sympy import sqrt, Abs, sin, cos, tan, exp, ln
 from sympy import FiniteSet, Intersection, ProductSet
 from sympy import Integer, Rational, Eq
 ==
