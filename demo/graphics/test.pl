@@ -20,11 +20,7 @@ def test2():
     ax = fig.gca()
     ax.grid(True)
     majors = [0, 1, 5]
-    ax.xaxis.set_major_locator(ticker.FixedLocator(majors))
-    minors = np.linspace(0, 1, 11)[1:-1]
-    ax.xaxis.set_minor_locator(ticker.FixedLocator(minors))
-    ax.text(0.0, 0.1, "FixedLocator([0, 1, 5])", fontsize=14,
-            transform=ax.transAxes)
+    ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
     return fig
 
 #source = fig2base64(, format="png")
