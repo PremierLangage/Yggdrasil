@@ -22,7 +22,8 @@ def test2():
     majors = [0, 1, 5]
     ax.xaxis.set_major_locator(ticker.MaxNLocator(integer=True))
     ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
-
+    ax.xlabel('')
+    ax.ylabel('')
     return fig
 
 #source = fig2base64(, format="png")
