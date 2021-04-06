@@ -19,6 +19,13 @@ def test():
     ax.yaxis.set_major_locator(MaxNLocator(integer=True))
     return fg
 
+def test2():
+    from sympy import symbols
+    from sympy.plotting import plot
+    x = symbols('x')
+    p1 = plot(x*x)
+    return p1._backend.fig
+    
 #source = fig2base64(, format="png")
 source = fig2svg(test())
 ==
