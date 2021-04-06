@@ -3,42 +3,21 @@ extends = /model/math.pl
 title = Graphique
 
 before ==
-import matplotlib
-matplotlib.use('Agg')
+
 import matplotlib.pyplot as plt
 import numpy as np
 from plmpl import fig2base64, fig2svg
-from matplotlib.ticker import MaxNLocator
-
-x = np.arange(0.1,10.5,0.1) # arbitrary data
-
-
 t = np.arange(0.0, 2.0, 0.01)
 s = 1 + np.sin(2*np.pi*t)
 plt.plot(t, s)
-#ax = plt.gca()
-#ax.yaxis.set_major_locator(MaxNLocator(integer=True))
-#plt.xlabel('time (s)')
-#plt.ylabel('voltage (mV)')
-#plt.title('About as simple as it gets, folks')
+plt.xlabel('time (s)')
+plt.ylabel('voltage (mV)')
+plt.title('About as simple as it gets, folks')
 plt.grid(True)
 
-import numpy as np
-from matplotlib.figure import Figure
-from matplotlib.ticker import MaxNLocator
 
-x = np.arange(0.1,10.5,0.1) # arbitrary data
-
-fg = Figure()
-#ax = fg.gca()
-#ax.plot(x)
-
-#ax.yaxis.set_major_locator(MaxNLocator(integer=True))
-
-#source = fig2base64(plt.gcf(), format="png")
-#source = fig2svg(plt.gcf())
-
-source = fig2svg(fg)
+source = fig2base64(plt.gcf(), format="png")
+source = fig2svg(plt.gcf())
 ==
 
 text ==
