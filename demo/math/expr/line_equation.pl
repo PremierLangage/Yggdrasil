@@ -1,4 +1,4 @@
-extends = /model/math/math.pl
+extends = /model/math/input.pl
 
 
 title = Graphique
