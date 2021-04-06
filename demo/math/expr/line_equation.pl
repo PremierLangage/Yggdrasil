@@ -11,11 +11,7 @@ b = randint(-2, 2)
 image = plotsvg(a*x+b)
 ==
 
-text ==
-<div class="img-container">
-{{ image }}
-</div>
-==
+
 
 form ==
 
