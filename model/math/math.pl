@@ -24,6 +24,27 @@ from sympy import FiniteSet, Intersection, ProductSet
 from sympy import Integer, Rational, Eq
 ==
 
+style.svg ==
+.img-container {
+    width: 60%;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) { /* css appliqué sur les tablettes */
+    .img-container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 576px) { /* css appliqué sur les téléphones */
+    .img-container {
+        width: 100%;
+        margin: auto;
+    }
+}
+==
+
 # HACK : Ce script JS permet de modifier la liste des boutons de contrôle.
 extrajs ==
 <script>
