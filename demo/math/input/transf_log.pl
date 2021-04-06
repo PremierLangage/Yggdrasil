@@ -23,7 +23,7 @@ def eval_ans(strans, sol):
         ans = latex2sympy(strans)
     except:
         return (-1, "NotExpr")
-    if type(ans) != log:
+    if ans.func != log:
         return (-1, "WrongForm")
     if not equal(ans, sol):
         return (0, "NotEqual")
