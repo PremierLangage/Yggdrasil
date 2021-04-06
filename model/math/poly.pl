@@ -14,7 +14,7 @@ sol = expr.expand()
 ==
 
 text ==
-Développer $${{expr|latex}}.$$
+Développer $$ {{ expr|latex }}.$$
 ==
 
 evaluator==
