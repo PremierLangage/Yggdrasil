@@ -3,6 +3,7 @@ extends = /model/math.pl
 title = Graphique
 
 before ==
+
 x = symbols('x')
 image = plotsvg(3*x+1)
 
