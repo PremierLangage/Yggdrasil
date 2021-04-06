@@ -10,7 +10,12 @@ a = Rational(randint(-4, 4, [0]),2)
 b = randint(-2, 2)
 image = plotsvg(a*x+b)
 ==
-text =
+
+text ==
+<div class="img-container">
+{{ image }}
+</div>
+==
 
 form ==
 
