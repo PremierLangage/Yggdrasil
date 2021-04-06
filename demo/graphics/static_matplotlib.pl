@@ -3,9 +3,8 @@ extends = /model/math.pl
 title = Graphique
 
 before ==
-import os    
-os.environ['MPLCONFIGDIR'] = '/temp/'
-
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 from plmpl import fig2base64, fig2svg
