@@ -22,8 +22,22 @@ plt.plot(t, s)
 #plt.title('About as simple as it gets, folks')
 plt.grid(True)
 
-source = fig2base64(plt.gcf(), format="png")
-source = fig2svg(plt.gcf())
+import numpy as np
+from matplotlib.figure import Figure
+from matplotlib.ticker import MaxNLocator
+
+x = np.arange(0.1,10.5,0.1) # arbitrary data
+
+fg = Figure()
+ax = fg.gca()
+ax.plot(x)
+
+ax.yaxis.set_major_locator(MaxNLocator(integer=True))
+
+#source = fig2base64(plt.gcf(), format="png")
+#source = fig2svg(plt.gcf())
+
+source = fig2svg(fg)
 ==
 
 text ==
