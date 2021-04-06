@@ -25,5 +25,5 @@ def eval_ans(strans,sol):
         return (0, "NotEqual")
     return (100, "Success")
 
-score, error = eval_ans(input.value, sol)
+score, error = eval_ans(answer['math'], sol)
 ==
