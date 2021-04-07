@@ -12,16 +12,14 @@
 @ /utils/plrandom.py
 
 headerbefore ==
-import random as rd
-from random import choice, sample
-from plrandom import randint
-from randsympy import randint_complex, randint_poly
-from sympy2latex import latex
-from sympy import var, symbols, Symbol
 from sympy import E, I, pi
 from sympy import sqrt, Abs, sin, cos, tan, exp, ln
-from sympy import FiniteSet, Intersection, ProductSet
-from sympy import Integer, Rational, Eq
+from sympy import var, symbols, Symbol
+from sympy import Integer, Rational, Poly, FiniteSet, Tuple
+from random import choice, choices, sample, shuffle
+from plrandom import randint
+from sympy2latex import latex
+from latex2sympy import latex2sympy
 ==
 
 style.svg ==
