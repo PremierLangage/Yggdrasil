@@ -12,5 +12,6 @@ sol = Intersection(A, B)
 text ==
 On considère les ensembles suivants :
 $$ A=\\{ {{A|latex}} \\},\ B=\\{ {{B|latex}} \\}.$$
+
 Déterminer $! A \cap B !$.
 ==
