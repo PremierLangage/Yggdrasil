@@ -67,7 +67,7 @@ if __name__ == "__main__":
         dic = json.load(f, cls=CustomDecoder)
     Component.sync_context(dic)
 
-    with open(sys.argv[2], "r") as f:
+    with open(sys.argv[2], "r", encoding='utf-8') as f:
         dic['answers'] = json.load(f)
 
     dic = {**namespace, **dic}
