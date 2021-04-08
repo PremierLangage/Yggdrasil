@@ -23,7 +23,7 @@ Calculer l'expression $! \displaystyle {{expr}} !$ en l'écrivant sous la forme 
 
 
 evaluator ==
-from sympy import eval_frac
+from evalsympy import eval_frac
 score, error = eval_frac(answers['math'], sol)
 feedback = message[error]
 ==
