@@ -310,7 +310,7 @@ def test(expr):
         return None
     if not args[0].is_Integer:
         return None
-    if not args[1].func == sp.Pow or args[1].args[1] != Integer(-1):
+    if not args[1].func == sp.Pow or args[1].args[1] != sp.Integer(-1):
         return None
     return (args[0], args[1].args[0])
 
