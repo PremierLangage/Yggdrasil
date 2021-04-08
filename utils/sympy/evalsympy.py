@@ -285,21 +285,11 @@ def is_frac_int(expr):
     f = sp.fraction(expr, exact=True)
     return f[0].is_Integer and f[1].is_Integer
 
-def test(expr):
+def fraction2(expr):
     """
-    Check if an expression is a fraction of integers.
+    Return a pair with expression’s numerator and denominator. 
     
-    >>> expr = sp.sympify("3", evaluate=False)
-    >>> is_frac_int(expr)
-    True
-    
-    >>> expr = sp.sympify("1 + 3", evaluate=False)
-    >>> is_frac_int(expr)
-    False
-    
-    >>> expr = sp.sympify("5*7/2", evaluate=False)
-    >>> is_frac_int(expr)
-    False
+    If the given expression is not a fraction then this function will return None.
     """
     if expr.is_Integer:
         return (expr, sp.Integer(1))
