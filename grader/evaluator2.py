@@ -28,7 +28,7 @@ except ModuleNotFoundError:
 def format_feedback_rightwrong(score,feedback):
     tpl="""<div class="alert {}"><strong>{}</strong> <br> {}</div>"""
     if score==-1:
-        return tpl.format('alert-info','Attention !',feedback)
+        return tpl.format('alert-info','Hé Attention !',feedback)
     elif score==100:
         return tpl.format('alert-success','Bonne réponse.',feedback)
     else:
