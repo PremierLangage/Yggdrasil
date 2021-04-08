@@ -19,7 +19,7 @@ ans = latex2sympy(codelatex)
 
 try:
     ans = latex2sympy(codelatex)
-    str_ans = str(ans)
+    str_ans = ans.is_Expr
     srepr_ans = srepr(ans)
     test_ans = ""
 except:
