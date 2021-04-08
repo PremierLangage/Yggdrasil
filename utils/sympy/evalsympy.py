@@ -596,11 +596,12 @@ def eval_frac(strans, sol, simpwarning=True):
         return (-1, "NotFrac")
     if not isinstance(ans, sp.Expr):
         return (-1, "NotFrac")
-    if not is_frac_int(ans):
+    f = fraction2(expr)
+    if f is None:
         return (-1, "NotFrac")
     if not equal(ans, sol):
         return (0, "NotEqual")
-    if not is_frac_irred(ans):
+    if not (sp.gcd(f[0], f[1]) == 1 and f[1] > 0):
         if simpwarning:
             return (-1, "NotFracIrred")
         else:
