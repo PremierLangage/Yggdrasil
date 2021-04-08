@@ -31,7 +31,7 @@ if __name__ == "__main__":
 
     outputfilename = sys.argv[2]
     # JSON context is loaded
-    with open(sys.argv[1], "r", encoding='utf-8') as f:
+    with open(sys.argv[1], "r") as f:
         dic = json.load(f)
     Component.sync_context(dic)
 
@@ -93,7 +93,7 @@ if __name__ == "__main__":
         if key in dic:
             dic[key] = Env.from_string(dic[key]).render(dic)
 
-    with open(outputfilename, "w+", encoding='utf-8') as f:
+    with open(outputfilename, "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
 
     sys.exit(0)
