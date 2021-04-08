@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# coding: utf-8
+# -*- coding: utf-8 -*-
 
 import sys, json, jsonpickle
 from components import Component
