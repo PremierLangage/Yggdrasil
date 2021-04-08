@@ -1,6 +1,6 @@
 extends = /model/math/input.pl
 
-title = Démonstration math/expr
+title = Démonstration math/input
 
 before ==
 
@@ -29,10 +29,10 @@ score = -1
 
 feedback ==
 <ul>
-    <li> Code LaTeX : {{ codelatex }}  </li>
-    <li> Objet Sympy : {{ str_ans }}   </li>
-    <li> Représentation : {{ srepr_ans }}  </li>
+    <li> Code LaTeX : {{ codelatex }} </li>
+    <li> Objet Sympy : {{ str_ans }} </li>
+    <li> Représentation : {{ srepr_ans }} </li>
 </ul>
 ==
 
-settings.feedback = rightwrong
+settings.feedback = 
