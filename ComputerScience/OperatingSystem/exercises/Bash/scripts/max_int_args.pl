@@ -44,4 +44,20 @@ argument n'est fourni alors votre script devra afficher :
 **Aucun entier fourni en argument.** avant de retourner à la ligne.
 ==
 
+solution==
+if [ $# -eq 0 ]
+  then
+    echo "Aucun entier fourni en argument."
+    exit
+fi
 
+max=$1
+for i in $*
+  do
+    if [ $max -lt $i ]
+      then
+        max=$i
+    fi
+  done
+echo $max
+==
