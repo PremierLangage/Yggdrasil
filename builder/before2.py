@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# coding: utf-8
+
 import sys, json, os
 from components import Component
 from builderlib import aux_component
