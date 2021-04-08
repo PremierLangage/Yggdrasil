@@ -25,7 +25,6 @@ except:
     srepr_ans = ""
 
 score = -1
-form = 0
 ==
 
 feedback ==
