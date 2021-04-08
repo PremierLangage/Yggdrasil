@@ -32,7 +32,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
     }
   }
 });
-mathField.latex(" {{ prev_value }} ");
+mathField.latex("{{ prev_value }}");
 </script>
 ==
 
