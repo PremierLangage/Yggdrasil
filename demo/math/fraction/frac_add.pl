@@ -14,7 +14,7 @@ f = [(choice([1, 3, 5, 7]), 2),
 shuffle(f)
 
 expr = r"\frac{ %d }{ %d } + \frac{ %d }{ %d }" % (f[0][0], f[0][1], f[1][0], f[1][1])
-sol = Rational(f[0]) + Rational(f[1])
+sol = 0 #Rational(f[0]) + Rational(f[1])
 ==
 
 text ==
