@@ -596,7 +596,7 @@ def eval_frac(strans, sol, simpwarning=True):
         return (-1, "NotFrac")
     if not isinstance(ans, sp.Expr):
         return (-1, "NotFrac")
-    f = fraction2(expr)
+    f = fraction2(ans)
     if f is None:
         return (-1, "NotFrac")
     if not equal(ans, sol):
