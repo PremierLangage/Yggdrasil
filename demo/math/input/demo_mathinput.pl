@@ -12,14 +12,14 @@ Entrer une expression mathématique.
 
 evaluator ==
 from latex2sympy import latex2sympy
-from sympy import srepr, fraction
+from sympy import srepr, fraction, Expr
 
 codelatex = answers['math']
 ans = latex2sympy(codelatex)
 
 try:
     ans = latex2sympy(codelatex)
-    str_ans = ans.is_Expr
+    str_ans = isinstance(ans, Expr)
     srepr_ans = srepr(ans)
     test_ans = ""
 except:
