@@ -146,7 +146,7 @@ if __name__ == "__main__":
         json.dump(dic, f, cls=CustomEncoder)
     
     with open(sys.argv[4], "w+", encoding='utf-8') as f:
-        print("é", file=f)
+        print(ffeedback, file=f)
     
     print(int(score))
     
