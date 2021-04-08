@@ -63,7 +63,7 @@ It should declare a variable 'grade' which should contain a tuple (int, feedback
 
 if __name__ == "__main__":
 
-    with open(sys.argv[1], "r") as f:
+    with open(sys.argv[1], "r", encoding='utf-8') as f:
         dic = json.load(f, cls=CustomDecoder)
     Component.sync_context(dic)
 
