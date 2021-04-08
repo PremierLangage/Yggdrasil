@@ -145,10 +145,10 @@ if __name__ == "__main__":
         if key in dic:
             dic[key] = Env.from_string(dic[key]).render(dic)
 
-    with open(sys.argv[3], "w+") as f:
+    with open(sys.argv[3], "w+", encoding='utf-8') as f:
         json.dump(dic, f, cls=CustomEncoder)
     
-    with open(sys.argv[4], "w+") as f:
+    with open(sys.argv[4], "w+", encoding='utf-8') as f:
         print(ffeedback, file=f)
     
     print(int(score))
