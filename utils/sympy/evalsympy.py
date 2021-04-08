@@ -301,10 +301,20 @@ def test(expr):
     >>> is_frac_int(expr)
     False
     """
-    args = arg_nested_mul(expr)
-    # remove sign
-    if len(args) > 1 and sp.Integer(-1) in args:
-        args.remove(sp.Integer(-1))
+    if expr.is_Integer:
+        return (expr, sp.Integer(1))
+    if expr.func != sp.Mul:
+        return None
+    args = expr.args
+    if len(args) > 2:
+        return None
+    if not args[0].is_Integer:
+        return None
+    if not args[1].func == sp.Pow or args[1].args[1] != Integer(-1):
+        return None
+    return (args[0], args[1].args[0])
+
+        
     with sp.evaluate(False):
         expr = sp.Mul(*args)
     f = sp.fraction(expr, exact=True)
