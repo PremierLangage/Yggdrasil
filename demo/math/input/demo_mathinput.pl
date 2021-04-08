@@ -28,14 +28,6 @@ score = -1
 ==
 
 feedback ==
-Code LaTeX : {{ codelatex }}
-Objet Sympy : {{ str_ans }}
-Représentation : {{ srepr_ans }}
-
-==
-
-
-feedback2 ==
 <ul>
     <li> Code LaTeX : {{ codelatex }} </li>
     <li> Objet Sympy : {{ str_ans }} </li>
