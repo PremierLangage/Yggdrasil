@@ -17,14 +17,12 @@ from evalsympy import test
 
 codelatex = answers['math']
 ans = latex2sympy(codelatex)
-str_ans = str(ans)
-srepr_ans = srepr(ans)
-test_ans = test(ans)
+
 try:
     ans = latex2sympy(codelatex)
     str_ans = str(ans)
-    srepr_ans = fraction(ans)
-    test_ans = test(ans)
+    srepr_ans = srepr(ans)
+    test_ans = ""
 except:
     str_ans = ""
     srepr_ans = ""
