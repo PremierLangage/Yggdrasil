@@ -27,7 +27,7 @@ except:
 score = -1
 ==
 
-feedback ==
+feedback2 ==
 <ul>
     <li> Code LaTeX : {{ codelatex }} </li>
     <li> Objet Sympy : {{ str_ans }} </li>
