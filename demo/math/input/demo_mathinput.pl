@@ -23,7 +23,7 @@ test_ans = test(ans)
 try:
     ans = latex2sympy(codelatex)
     str_ans = str(ans)
-    srepr_ans = srepr(ans)
+    srepr_ans = ans.args
     test_ans = test(ans)
 except:
     str_ans = ""
