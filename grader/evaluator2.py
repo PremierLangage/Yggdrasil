@@ -63,11 +63,11 @@ It should declare a variable 'grade' which should contain a tuple (int, feedback
 
 if __name__ == "__main__":
 
-    with open(sys.argv[1], "r", encoding='utf-8') as f:
+    with open(sys.argv[1], "r") as f:
         dic = json.load(f, cls=CustomDecoder)
     Component.sync_context(dic)
 
-    with open(sys.argv[2], "r", encoding='utf-8') as f:
+    with open(sys.argv[2], "r") as f:
         dic['answers'] = json.load(f)
 
     dic = {**namespace, **dic}
@@ -145,10 +145,10 @@ if __name__ == "__main__":
         if key in dic:
             dic[key] = Env.from_string(dic[key]).render(dic)
 
-    with open(sys.argv[3], "w+", encoding='utf-8') as f:
+    with open(sys.argv[3], "w+") as f:
         json.dump(dic, f, cls=CustomEncoder)
     
-    with open(sys.argv[4], "w+", encoding='utf-8') as f:
+    with open(sys.argv[4], "w+") as f:
         print(ffeedback, file=f)
     
     print(int(score))
