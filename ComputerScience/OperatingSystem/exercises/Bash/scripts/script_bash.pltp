@@ -22,11 +22,13 @@ d'autres sont plus avancés. Il est globalement conseillé de s'aider un peu
 du web pour arriver à ses fins. Bon courage avec la syntaxe du plaisir.
 ==
 
-
+# afficher les arguments d'un programme bash
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/print_args.pl
 
+# verifier un encadrement de trois valeurs
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/check_args_int.pl
 
+# entier max en argument + traitement special si pas de arg
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/max_int_args.pl
 
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/binomial.pl
