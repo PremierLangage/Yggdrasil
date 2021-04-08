@@ -1,6 +1,6 @@
 extends = /model/math/set.pl
 
-title = Intersection d'ensembles
+title = Déterminer l'intersection de deux ensembles
 
 before ==
 from sympy import Intersection
