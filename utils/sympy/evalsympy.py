@@ -309,7 +309,7 @@ def test(expr):
     if len(args) > 2:
         return None
     if not args[0].is_Integer:
-        return "2"
+        return args[0]
     if args[1].func != sp.Pow or args[1].args[1] != sp.Integer(-1):
         return "3"
     return (args[0], args[1].args[0])
