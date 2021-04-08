@@ -24,7 +24,7 @@ except:
     str_ans = ""
     srepr_ans = ""
 
-score = 100
+score = 0
 ==
 
 feedback ==
