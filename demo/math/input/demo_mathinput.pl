@@ -34,3 +34,5 @@ feedback ==
     <li> Représentation : {{ srepr_ans }}  </li>
 </ul>
 ==
+
+settings.feedback =
