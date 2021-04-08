@@ -28,6 +28,7 @@ score = -1
 ==
 
 feedback ==
+<meta charset="utf=8" />
 <ul>
     <li> Code LaTeX : {{ codelatex }} </li>
     <li> Objet Sympy : {{ str_ans }} </li>
