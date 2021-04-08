@@ -509,22 +509,6 @@ def func_in_expr(expr):
     return set([type(a) for a in expr.atoms(sp.Function)])
 
 
-# Answer evaluation functions
-
-def add_feedback(eval):
-    def eval_with_feedback(*args, **kwargs):
-        if 'dictfeedback' in kwargs:
-            feedback = {**_feedback_, **kwargs['dictfeedback']}
-            kwargs.pop('dictfeedback')
-        else:
-            feedback = _feedback_
-        score, error = eval(*args, **kwargs)
-        if error in _feedback_:
-            return score, error, feedback[error]
-        else:
-            return score, error, ""
-    return eval_with_feedback
-
 def eval_expr(strans, sol, checkratsimp=True, modulo=None, unauthorized_func=[], authorized_func=None, local_dict={}):
     r"""
     Evaluate an answer when the solution is an expression.
