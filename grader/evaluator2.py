@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 import sys, json, jsonpickle
 from components import Component
 from builderlib import aux_component1, aux_component2, aux_component
