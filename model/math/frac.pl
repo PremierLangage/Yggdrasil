@@ -1,11 +1,5 @@
-extends = /model/mathquill.pl
+extends = /model/math/input.pl
 
-
-input_prefix = Réponse :
-
-before ==
-sol = Rational(1,2)
-==
 
 evaluator ==
 from ast import literal_eval
