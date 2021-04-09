@@ -112,30 +112,30 @@ def duplicates(p):
 
     return False
 
-def arg_nested_add(expr):
+def arg_flat_add(expr):
     """
-    Return the terms of a nested sum.
+    Return the terms of sum (flattened).
     """
     if not expr.is_Add:
         return [expr]
     args = []
     for a in expr.args:
         if a.is_Add:
-            args = args + arg_nested_add(a)
+            args = args + arg_flat_add(a)
         else:
             args.append(a)
     return args
 
-def arg_nested_mul(expr):
+def arg_flat_mul(expr):
     """
-    Return the terms of a nested product.
+    Return the terms of a product (flattened).
     """
     if not expr.is_Mul:
         return [expr]
     args = []
     for a in expr.args:
         if a.is_Mul:
-            args = args + arg_nested_mul(a)
+            args = args + arg_flat_mul(a)
         else:
             args.append(a)
     return args
@@ -144,7 +144,7 @@ def is_coeff_mul(expr, x):
     """
     Check if an expression is of the form 'something times x'.
     """
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     return args.count(x) == 1 and sum([a.has(x) for a in args]) == 1
 
 def coeff_mul(expr, x):
@@ -167,7 +167,7 @@ def coeff_mul(expr, x):
     >>> coeff_mul(x, x)
     1
     """
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     args.remove(x)
     if len(args) == 0:
         return sp.Integer(1)
@@ -184,7 +184,7 @@ def is_coeff_exponent(expr, x):
     n = sp.degree(sp.simplify(expr), x)
     if n == 0:
         return True
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     return args.count(x**n)==1 and sum([a.has(x) for a in args])==1
     
 def coeff_exponent(expr, x):
@@ -210,7 +210,7 @@ def coeff_exponent(expr, x):
     n = sp.degree(expr, x)
     if n == 0:
         return (expr, n)
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     args.remove(x**n)
     if len(args) == 0:
         return (sp.Integer(1), n)
@@ -279,7 +279,7 @@ def is_frac_int(expr):
     >>> is_frac_int(expr)
     False
     """
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     # remove sign
     if len(args) > 1 and sp.Integer(-1) in args:
         args.remove(sp.Integer(-1))
@@ -292,7 +292,7 @@ def is_mul_ratsimp(expr):
     """
     Check if rational factors in a product are simplified.
     """
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     rat_args = [a for a in args if a.is_rational]
     nonrat_args = [a for a in args if not a.is_rational]
 
@@ -316,7 +316,7 @@ def is_add_ratsimp(expr):
     """
     Check if rational factors in a sum are simplified.
     """
-    args = arg_nested_add(expr)
+    args = arg_flat_add(expr)
     rat_args = [a for a in args if a.is_rational]
     nonrat_args = [a for a in args if not a.is_rational]
     return len(rat_args) <= 1 and is_rat_simp(nonrat_args)
@@ -357,7 +357,7 @@ def is_frac_irred(expr):
     """
     Check if a fraction of integers is irreducible.
     """
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     # remove sign
     if len(args) > 1 and sp.Integer(-1) in args:
         args.remove(sp.Integer(-1))
@@ -383,7 +383,7 @@ def is_complex_cartesian(expr):
     >>> is_complex_cartesian(z)
     False
     """
-    args = arg_nested_add(expr)
+    args = arg_flat_add(expr)
     ni = [is_coeff_mul(a, sp.I) for a in args].count(True)
     nr = [a.is_real for a in args].count(True)
     return ni <= 1 and ni + nr == len(args)
@@ -404,7 +404,7 @@ def complex_cartesian_parts(expr):
     >>> complex_cartesian_parts(z)
     (0, 1)
     """
-    args = arg_nested_add(expr)
+    args = arg_flat_add(expr)
     im = next((coeff_mul(a, sp.I) for a in args if is_coeff_mul(a, sp.I)), 0)
     lstre = [a for a in args if a.is_real]
     if len(lstre) == 0:
@@ -431,7 +431,7 @@ def is_complex_exponential(expr):
     """
     Check if a complex number is in exponential form.
     """
-    args=arg_nested_mul(expr)
+    args=arg_flat_mul(expr)
     if is_e_i_theta(args[-1]):
         for a in args[:-1]:
             if not a.is_real or not a>0:
@@ -450,7 +450,7 @@ def is_poly_expanded(expr, x):
     >>> is_poly_expanded(x + x**2 + 3*x, x)
     True
     """
-    args = arg_nested_add(expr)
+    args = arg_flat_add(expr)
     return all(is_coeff_exponent(a,x) for a in args)
 
     
@@ -471,7 +471,7 @@ def is_poly_ratsimp(expr, x):
     >>> is_poly_ratsimp(P, x)
     True
     """
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     for a in args:
         if type(a) == sp.Pow:
             a = a.args[0]
@@ -503,7 +503,7 @@ def is_poly_factorized(expr, x, domain='R'):
     else:
         kwargs = {'domain': domain}
         
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     for a in args:
         if type(a) == sp.Pow:
             exponent = a.args[1]
@@ -845,7 +845,7 @@ def get_numeric_unit(expr):
     """
     Return the numerical part and the unit of a physical quantity.
     """
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     args_numeric = []
     args_quantity = []
     for a in args:
