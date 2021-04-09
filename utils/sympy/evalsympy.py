@@ -300,7 +300,7 @@ def test(expr):
                 else:
                     return "2"
             else:
-                return "3"
+                return a
     return (p, q)
 
 def fraction2(expr):
