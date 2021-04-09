@@ -1,4 +1,4 @@
-extends = /model/math/input.pl
+extends = /model/math/frac.pl
 
 title = Addition de fractions
 
@@ -20,15 +20,3 @@ sol = Rational(*f[0]) + Rational(*f[1])
 text ==
 Calculer l'expression $! \displaystyle {{expr}} !$ en l'écrivant sous la forme d'un entier ou d'une fraction irréductible.
 ==
-
-
-evaluator ==
-from evalsympy import eval_frac
-score, error = eval_frac(answers['math'], sol)
-feedback = message[error]
-==
-
-solution==
-La solution est $! \displaystyle {{ sol|latex }} !$.
-==
-
