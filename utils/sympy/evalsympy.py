@@ -287,6 +287,7 @@ def is_frac_int(expr):
 
 def test(expr):
     args = arg_nested_mul(expr)
+    return args
     return [a if a.is_rational for a in args]
 
 def fraction2(expr):
