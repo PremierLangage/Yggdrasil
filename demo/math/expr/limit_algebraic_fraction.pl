@@ -1,6 +1,6 @@
 extends = /model/math/expr.pl
 
-title = Limite d'une fraction rationnelle
+title = Déterminer la limite d'une fraction rationnelle
 
 before ==
 from randsympy import randint_poly
@@ -18,5 +18,7 @@ sol = lim.doit()
 ==
 
 text ==
-Déterminer $$ {{ lim|latex }}. $$
+Déterminer la limite suivante.
 ==
+
+input_prefix = $! \displaystyle {{ lim|latex }} = !$
