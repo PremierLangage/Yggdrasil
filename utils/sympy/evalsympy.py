@@ -286,9 +286,17 @@ def is_frac_int(expr):
     return f[0].is_Integer and f[1].is_Integer
 
 def is_mul_ratsimp(expr):
+    """
+    Check if rational factors in a product are simplified.
+    """
     p, q = sp.Integer(1), None
     for a in arg_nested_mul(expr):
         if a.is_rational :
+            if a.is_Rational:
+                if p == sp.Integer(1) and q is None:
+                    p, q = a.p, a.q 
+                else:
+                    return False
             if a.is_Integer and a != sp.Integer(1):
                 if p == sp.Integer(1):
                     p = a
