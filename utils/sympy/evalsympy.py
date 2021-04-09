@@ -317,7 +317,7 @@ def is_mul_ratsimp(expr):
             if p == sp.Integer(1) and q is None:
                 p, q = a.p, a.q 
             else:
-                return False
+                return "Top"
         if a.is_Integer and a != sp.Integer(1):
             if p == sp.Integer(1):
                 p = a
