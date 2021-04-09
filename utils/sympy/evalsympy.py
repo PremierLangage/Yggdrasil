@@ -288,20 +288,20 @@ def is_frac_int(expr):
 def test(expr):
     p, q = sp.Integer(1), None
     for a in arg_nested_mul(expr):
-        if a.is_rational:
+        if a.is_rational :
             if a.is_Integer and a != sp.Integer(1):
-                if p == sp.Integer(1):
+                if a != sp.Integer(1):
                     p = a
                 else:
-                    return "1"
+                    return None
             elif a.func == sp.Pow and a.args[1] == sp.Integer(-1):
                 if q is None:
                     q = a.args[0]
                 else:
-                    return "2"
+                    return None
             else:
-                return a
-    return (p, q)
+                return None
+    return sp.gcd(p, q) == 1
 
 def fraction2(expr):
     """
