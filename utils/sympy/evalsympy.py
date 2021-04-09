@@ -311,20 +311,20 @@ def is_mul_ratsimp(expr):
     rat_args = [a for a in args if a.is_rational]
     nonrat_args = [a for a in args if not a.is_rational]
 
-    p, q = sp.Integer(1), None
+    p, q = sp.Integer(1), sp.Integer(1)
     for a in rat_args:
-        if a.is_Rational:
-            if p == sp.Integer(1) and q is None:
+        if a.is_Rational and a != sp.Integer(1):
+            if p == sp.Integer(1) and q == sp.Integer(1):
                 p, q = a.p, a.q 
             else:
                 return "Top"
-        if a.is_Integer and a != sp.Integer(1):
+        if a.is_Integer and :
             if p == sp.Integer(1):
                 p = a
             else:
                 return "Top2"
         elif a.func == sp.Pow and a.args[1] == sp.Integer(-1):
-            if q is None:
+            if q == sp.Integer(1):
                 q = a.args[0]
             else:
                 return "Top3"
