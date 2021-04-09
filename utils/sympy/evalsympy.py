@@ -527,24 +527,6 @@ def simplify_rset(lst):
         lst[i] =  sp.Interval(left, right, interv.left_open, interv.right_open)
     return lst
 
-def func_in_expr(expr):
-    """
-    Return the functions involved in an expression.
-    
-    >>> expr = sp.sympify("sin(p/3)", evaluate=False)
-    >>> func_in_expr(expr)
-    {sin}
-    
-    >>> expr = sp.sympify("x + sin(x)**2 * cos(x)", evaluate=False)
-    >>> func_in_expr(expr)
-    {sin, cos}
-    
-    >>> expr = sp.sympify("sqrt(ln(1 + x**2))", evaluate=False)
-    >>> func_in_expr(expr)
-    {log}
-    """
-    return set([type(a) for a in expr.atoms(sp.Function)])
-
 
 def eval_expr(strans, sol, checkratsimp=True, modulo=None, unauthorized_func=[], authorized_func=None, local_dict={}):
     r"""
@@ -572,8 +554,8 @@ def eval_expr(strans, sol, checkratsimp=True, modulo=None, unauthorized_func=[],
     >>> eval_expr("\exp(1)", sp.E, local_dict={'e': sp.E})[1]
     'Success'
     """
-    for word in unauthorized_func:
-        if word in strans:
+    for name in unauthorized_func:
+        if name in strans:
             return (-1, "UnauthorizedFunc")
     try:
         ans = latex2sympy(strans, local_dict)
