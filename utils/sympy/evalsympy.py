@@ -229,7 +229,7 @@ def is_real_or_inf(expr):
     return expr.is_real and not expr.is_infinite
 
 
-def is_rat_simp2(expr):
+def is_rat_simp(expr):
     """
     Check if the rational numbers in an expression are simplified.
     
@@ -257,9 +257,9 @@ def is_rat_simp2(expr):
         elif expr.is_Atom or expr.is_Boolean:
             return True
         else:
-            return all(is_rat_simp2(subexpr) for subexpr in expr.args)
+            return all(is_rat_simp(subexpr) for subexpr in expr.args)
     elif isinstance(expr, (list, tuple, sp.Tuple, set, sp.FiniteSet)):
-        return all(is_rat_simp2(item) for item in expr)
+        return all(is_rat_simp(item) for item in expr)
     else:
         return True
 
@@ -310,7 +310,7 @@ def is_mul_ratsimp(expr):
                 return False
         else:
             return False
-    return (sp.gcd(p, q) == 1) and is_rat_simp2(nonrat_args)
+    return (sp.gcd(p, q) == 1) and is_rat_simp(nonrat_args)
 
 def is_add_ratsimp(expr):
     """
@@ -319,7 +319,7 @@ def is_add_ratsimp(expr):
     args = arg_nested_add(expr)
     rat_args = [a for a in args if a.is_rational]
     nonrat_args = [a for a in args if not a.is_rational]
-    return len(rat_args) <= 1 and is_rat_simp2(nonrat_args)
+    return len(rat_args) <= 1 and is_rat_simp(nonrat_args)
     
 
 def fraction2(expr):
@@ -708,7 +708,7 @@ def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imag
         return (-1, "PolyNotFactorized")
     if not equal(ans,sol):
         return (0, "NotEqual")
-    if checkratsimp and not is_rat_simp2(ans):
+    if checkratsimp and not is_rat_simp(ans):
         return (-1, "NotRatSimp")
     return (100, "Success")
 
