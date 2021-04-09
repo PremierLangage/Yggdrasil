@@ -4,7 +4,7 @@ title = Démonstration math/expr
 
 before ==
 var('x')
-sol = ln(2*x)
+sol = 1 + I
 ==
 
 text ==
