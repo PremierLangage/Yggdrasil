@@ -293,14 +293,14 @@ def test(expr):
                 if p == sp.Integer(1):
                     p = a
                 else:
-                    return None
+                    return "1"
             elif a.func == sp.Pow and a.args[1] == sp.Integer(-1):
                 if q is None:
                     q = a.args[0]
                 else:
-                    return None
+                    return "2"
             else:
-                return None
+                return "3"
     return (p, q)
 
 def fraction2(expr):
