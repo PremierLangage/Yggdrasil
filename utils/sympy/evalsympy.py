@@ -260,6 +260,22 @@ def is_rat_simp(expr):
     else:
         return True
 
+def is_rat_simp2(expr):
+    """
+    Check if the rational numbers in an expression are simplified.
+    """
+    if isinstance(expr, sp.Expr):
+        if sp.simplify(expr).is_rational:
+            return is_frac_int(expr) and is_frac_irred(expr)
+        elif expr.is_Atom or expr.is_Boolean:
+            return True
+        else:
+            return all(is_rat_simp(subexpr) for subexpr in expr.args)
+    elif isinstance(expr, (list, tuple, sp.Tuple, set, sp.FiniteSet)):
+        return all(is_rat_simp(item) for item in expr)
+    else:
+        return True
+
 def is_frac_int(expr):
     """
     Check if an expression is a fraction of integers.
@@ -289,9 +305,12 @@ def is_mul_ratsimp(expr):
     """
     Check if rational factors in a product are simplified.
     """
+    args = arg_nested_mul(expr):
+    rat_args = [a for a in args if a.is_rational]
+    nonrat_args = [a for a in args if not a.is_rational]
+
     p, q = sp.Integer(1), None
-    for a in arg_nested_mul(expr):
-        if a.is_rational :
+    for a in rat_args:
             if a.is_Rational:
                 if p == sp.Integer(1) and q is None:
                     p, q = a.p, a.q 
@@ -309,7 +328,14 @@ def is_mul_ratsimp(expr):
                     return False
             else:
                 return False
-    return sp.gcd(p, q) == 1
+    return (sp.gcd(p, q) == 1) and is_rat_simp2(nonrat_args)
+
+def is_add_ratsimp(expr):
+    """
+    Check if rational factors in a sum are simplified.
+    """
+    return sum(a.is_rational for a in arg_nested_add(expr)) > 1
+    
 
 def fraction2(expr):
     """
