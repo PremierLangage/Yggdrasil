@@ -582,7 +582,7 @@ def eval_expr(strans, sol, checkratsimp=True, modulo=None, unauthorized_func=[],
     if not isinstance(ans, sp.Expr):
         return (-1, "NotExpr")
     if ans.has(sp.S.Infinity, sp.S.NegativeInfinity):
-        if expr != sp.S.Infinity and expr != sp.S.NegativeInfinity:
+        if ans != sp.S.Infinity and ans != sp.S.NegativeInfinity:
             return (-1, "InftyOp")
     if not equal(ans, sol, modulo):
         return (0, "NotEqual")
