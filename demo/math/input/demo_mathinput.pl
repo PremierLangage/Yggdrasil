@@ -13,7 +13,7 @@ Entrer une expression mathématique.
 evaluator ==
 from latex2sympy import latex2sympy
 from sympy import srepr, fraction
-from evalsympy import test, is_rat_simp2
+from evalsympy import is_rat_simp2
 codelatex = answers['math']
 ans = latex2sympy(codelatex)
 
