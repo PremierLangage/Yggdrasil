@@ -286,8 +286,22 @@ def is_frac_int(expr):
     return f[0].is_Integer and f[1].is_Integer
 
 def test(expr):
-    args = arg_nested_mul(expr)
-    return [a for a in args if a.is_rational]
+    p, q = sp.Integer(1), None
+    for a in arg_nested_mul(expr):
+        if a.is_rational:
+            if a.is_Integer and a != sp.Integer(1):
+                if p == sp.Integer(1):
+                    p = a
+                else:
+                    return None
+            elif a.func = sp.Pow or a.args[1] != sp.Integer(-1):
+                if q is None:
+                    q = a.args[0]
+                else:
+                    return None
+            else:
+                return None
+    return (p, q)
 
 def fraction2(expr):
     """
