@@ -317,14 +317,14 @@ def is_mul_ratsimp(expr):
             if p == sp.Integer(1) and q == sp.Integer(1):
                 p, q = a.p, a.q 
             else:
-                return "Top2"
+                return False
         elif a.func == sp.Pow and a.args[1] == sp.Integer(-1):
             if q == sp.Integer(1):
                 q = a.args[0]
             else:
-                return "Top3"
+                return False
         else:
-            return "Top4"
+            return False
     return (sp.gcd(p, q) == 1) and is_rat_simp2(nonrat_args)
 
 def is_add_ratsimp(expr):
