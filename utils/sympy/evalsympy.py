@@ -285,6 +285,10 @@ def is_frac_int(expr):
     f = sp.fraction(expr, exact=True)
     return f[0].is_Integer and f[1].is_Integer
 
+def test(expr):
+    args = arg_nested_mul(expr)
+    return [a if a.is_rational for a in args]
+
 def fraction2(expr):
     """
     Return a pair with expression’s numerator and denominator. 
