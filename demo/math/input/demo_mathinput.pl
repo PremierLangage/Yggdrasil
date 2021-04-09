@@ -12,7 +12,7 @@ Entrer une expression mathématique.
 
 evaluator ==
 from latex2sympy import latex2sympy
-from sympy import srepr, fraction
+from sympy import srepr, fraction, test
 
 codelatex = answers['math']
 ans = latex2sympy(codelatex)
@@ -21,7 +21,7 @@ try:
     ans = latex2sympy(codelatex)
     str_ans = str(ans)
     srepr_ans = srepr(ans)
-    test_ans = ""
+    test_ans = test(ans)
 except:
     str_ans = ""
     srepr_ans = ""
