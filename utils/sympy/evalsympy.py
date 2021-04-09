@@ -307,7 +307,7 @@ def is_mul_ratsimp(expr):
     """
     Check if rational factors in a product are simplified.
     """
-    args = arg_nested_mul(expr):
+    args = arg_nested_mul(expr)
     rat_args = [a for a in args if a.is_rational]
     nonrat_args = [a for a in args if not a.is_rational]
 
@@ -336,7 +336,7 @@ def is_add_ratsimp(expr):
     """
     Check if rational factors in a sum are simplified.
     """
-    args = arg_nested_add(expr):
+    args = arg_nested_add(expr)
     rat_args = [a for a in args if a.is_rational]
     nonrat_args = [a for a in args if not a.is_rational]
     return len(rat_args) <= 1 and is_rat_simp2(nonrat_args)
