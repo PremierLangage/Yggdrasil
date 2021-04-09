@@ -294,7 +294,7 @@ def test(expr):
                     p = a
                 else:
                     return None
-            elif a.func = sp.Pow or a.args[1] != sp.Integer(-1):
+            elif a.func == sp.Pow and a.args[1] == sp.Integer(-1):
                 if q is None:
                     q = a.args[0]
                 else:
