@@ -642,19 +642,6 @@ def eval_function(strans, sol, checkratsimp=True, authorized_func=None, local_di
     local_dict.update({'e': sp.E})
     return eval_expr(strans, sol, checkratsimp, authorized_func, local_dict=local_dict)
 
-def eval_real_or_inf(strans, sol, local_dict={}):
-    """
-    Evaluate an answer when the solution is real or equal to infinity.
-    """
-    try:
-        ans = latex2sympy(strans, local_dict)
-    except:
-        return (-1, "NotRealOrInf")
-    if not isinstance(ans, sp.Expr) or not is_real_or_inf(ans):
-        return (-1, "NotRealOrInf")
-    if not equal(ans, sol):
-        return (0, "NotEqual")
-    return (100, "Success")
 
 def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, unauthorized_func=[], authorized_func={}, local_dict={}):
     """
