@@ -723,7 +723,7 @@ def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imag
         return (-1, "PolyNotFactorized")
     if not equal(ans,sol):
         return (0, "NotEqual")
-    if checkratsimp and not is_rat_simp2(x):
+    if checkratsimp and not is_rat_simp2(ans):
         return (-1, "PolyNotRatSimp")
     return (100, "Success")
 
