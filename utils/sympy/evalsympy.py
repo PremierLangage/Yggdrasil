@@ -229,7 +229,7 @@ def is_real_or_inf(expr):
     return expr.is_real and not expr.is_infinite
 
 
-def is_rat_simp(expr):
+def is_rat_simp2(expr):
     """
     Check if the rational numbers in an expression are simplified.
     
@@ -248,6 +248,7 @@ def is_rat_simp(expr):
     >>> expr = sp.sympify("1 + sqrt(2)", evaluate=False)
     >>> is_rat_simp(expr)
     True
+    """
     if isinstance(expr, sp.Expr):
         if expr.func == sp.Mul:
             return is_mul_ratsimp(expr)
