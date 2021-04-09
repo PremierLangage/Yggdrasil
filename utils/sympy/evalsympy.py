@@ -311,30 +311,33 @@ def is_mul_ratsimp(expr):
 
     p, q = sp.Integer(1), None
     for a in rat_args:
-            if a.is_Rational:
-                if p == sp.Integer(1) and q is None:
-                    p, q = a.p, a.q 
-                else:
-                    return False
-            if a.is_Integer and a != sp.Integer(1):
-                if p == sp.Integer(1):
-                    p = a
-                else:
-                    return False
-            elif a.func == sp.Pow and a.args[1] == sp.Integer(-1):
-                if q is None:
-                    q = a.args[0]
-                else:
-                    return False
+        if a.is_Rational:
+            if p == sp.Integer(1) and q is None:
+                p, q = a.p, a.q 
             else:
                 return False
+        if a.is_Integer and a != sp.Integer(1):
+            if p == sp.Integer(1):
+                p = a
+            else:
+                return False
+        elif a.func == sp.Pow and a.args[1] == sp.Integer(-1):
+            if q is None:
+                q = a.args[0]
+            else:
+                return False
+        else:
+            return False
     return (sp.gcd(p, q) == 1) and is_rat_simp2(nonrat_args)
 
 def is_add_ratsimp(expr):
     """
     Check if rational factors in a sum are simplified.
     """
-    return sum(a.is_rational for a in arg_nested_add(expr)) > 1
+    args = arg_nested_add(expr):
+    rat_args = [a for a in args if a.is_rational]
+    nonrat_args = [a for a in args if not a.is_rational]
+    return len(rat_args) <= 1 and is_rat_simp2(nonrat_args)
     
 
 def fraction2(expr):
