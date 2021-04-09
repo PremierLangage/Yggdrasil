@@ -5,6 +5,10 @@ jinja_keys % ["text", "solution"]
 input_prefix = Réponse :
 
 form ==
+
+==
+
+form ==
 <p>{{input_prefix}} <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p>
 
 <input type="text" id="form_math" hidden=true>
