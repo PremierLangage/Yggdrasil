@@ -285,7 +285,7 @@ def is_frac_int(expr):
     f = sp.fraction(expr, exact=True)
     return f[0].is_Integer and f[1].is_Integer
 
-def test(expr):
+def is_mul_ratsimp(expr):
     p, q = sp.Integer(1), None
     for a in arg_nested_mul(expr):
         if a.is_rational :
@@ -293,14 +293,14 @@ def test(expr):
                 if p == sp.Integer(1):
                     p = a
                 else:
-                    return None
+                    return False
             elif a.func == sp.Pow and a.args[1] == sp.Integer(-1):
                 if q is None:
                     q = a.args[0]
                 else:
-                    return None
+                    return False
             else:
-                return None
+                return False
     return sp.gcd(p, q) == 1
 
 def fraction2(expr):
