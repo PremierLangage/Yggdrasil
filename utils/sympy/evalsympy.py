@@ -265,8 +265,10 @@ def is_rat_simp2(expr):
     Check if the rational numbers in an expression are simplified.
     """
     if isinstance(expr, sp.Expr):
-        if sp.simplify(expr).is_rational:
-            return is_frac_int(expr) and is_frac_irred(expr)
+        if expr.func == sp.Mul:
+            return is_mul_ratsimp(expr)
+        elif expr.func == sp.Add:
+            return is_add_ratsimp(expr)
         elif expr.is_Atom or expr.is_Boolean:
             return True
         else:
