@@ -3,7 +3,7 @@ extends = /model/math/expr.pl
 title = Limite d'une fraction rationnelle
 
 before ==
-from randsympy import randint
+from randsympy import randint_poly
 from sympy import Limit
 
 var('x')
