@@ -12,8 +12,8 @@ Entrer une expression mathématique.
 
 evaluator ==
 from latex2sympy import latex2sympy
-from sympy import srepr, fraction, test
-
+from sympy import srepr, fraction
+from evalsympyimport test
 codelatex = answers['math']
 ans = latex2sympy(codelatex)
 
