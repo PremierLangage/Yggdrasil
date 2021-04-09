@@ -272,9 +272,9 @@ def is_rat_simp2(expr):
         elif expr.is_Atom or expr.is_Boolean:
             return True
         else:
-            return all(is_rat_simp(subexpr) for subexpr in expr.args)
+            return all(is_rat_simp2(subexpr) for subexpr in expr.args)
     elif isinstance(expr, (list, tuple, sp.Tuple, set, sp.FiniteSet)):
-        return all(is_rat_simp(item) for item in expr)
+        return all(is_rat_simp2(item) for item in expr)
     else:
         return True
 
