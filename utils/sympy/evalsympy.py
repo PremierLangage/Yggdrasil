@@ -723,8 +723,8 @@ def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imag
         return (-1, "PolyNotFactorized")
     if not equal(ans,sol):
         return (0, "NotEqual")
-    #if checkratsimp and not is_poly_ratsimp(ans, x):
-    #    return (-1, "PolyNotRatSimp")
+    if checkratsimp and not is_rat_simp2(x):
+        return (-1, "PolyNotRatSimp")
     return (100, "Success")
 
 def eval_set(strans, sol, checkratsimp=True, wobracket=False, local_dict={}):
