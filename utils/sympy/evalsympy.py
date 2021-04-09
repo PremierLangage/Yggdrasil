@@ -502,19 +502,18 @@ def is_poly_factorized(expr, x, domain='R'):
         kwargs = {'extension': [sp.I]}
     else:
         kwargs = {'domain': domain}
-        
-    args = arg_flat_mul(expr)
-    for a in args:
+
+    for a in arg_flat_mul(expr):
         if type(a) == sp.Pow:
             exponent = a.args[1]
             if exponent.is_Integer and exponent > 0:
                 a = a.args[0]
             else:
                 return False
-        if sp.Poly(a, x, **kwargs).degree() > 1:
-            return False
-        #if not sp.Poly(a, x, **kwargs).is_irreducible:
+        #if sp.Poly(a, x, **kwargs).degree() > 1:
         #    return False
+        if not sp.poly(a, x, **kwargs).is_irreducible:
+            return False
     return True
 
 def simplify_rset(lst):
