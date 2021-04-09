@@ -229,7 +229,7 @@ def is_real_or_inf(expr):
     return expr.is_real and not expr.is_infinite
 
 
-def is_rat_simp2(expr):
+def is_rat_simp(expr):
     """
     Check if the rational numbers in an expression are simplified.
     
