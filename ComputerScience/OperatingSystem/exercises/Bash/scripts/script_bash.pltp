@@ -31,11 +31,15 @@ du web pour arriver à ses fins. Bon courage avec la syntaxe du plaisir.
 # entier max en argument + traitement special si pas de arg
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/max_int_args.pl
 
+
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/binomial.pl
+
 
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/reverse.pl
 
+
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/substring.pl
+
 
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/decimal_to_binary.pl
 
