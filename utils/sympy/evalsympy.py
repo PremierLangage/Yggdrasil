@@ -290,7 +290,7 @@ def test(expr):
     for a in arg_nested_mul(expr):
         if a.is_rational :
             if a.is_Integer and a != sp.Integer(1):
-                if a != sp.Integer(1):
+                if p == sp.Integer(1):
                     p = a
                 else:
                     return None
