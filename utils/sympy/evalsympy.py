@@ -724,7 +724,7 @@ def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imag
     if not equal(ans,sol):
         return (0, "NotEqual")
     if checkratsimp and not is_rat_simp2(ans):
-        return (-1, "PolyNotRatSimp")
+        return (-1, "NotRatSimp")
     return (100, "Success")
 
 def eval_set(strans, sol, checkratsimp=True, wobracket=False, local_dict={}):
