@@ -297,6 +297,7 @@ def is_mul_ratsimp(expr):
     nonrat_args = [a for a in args if not a.is_rational]
 
     p, q = sp.Integer(1), sp.Integer(1)
+    # TODO : Traiter un peu plus proprement les 1 et -1
     for a in rat_args:
         if a == sp.Integer(1) pr a == sp.Integer(-1):
             pass
