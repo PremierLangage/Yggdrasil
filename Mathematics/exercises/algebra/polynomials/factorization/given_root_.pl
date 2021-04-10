@@ -47,10 +47,6 @@ $$P(x)= {{ expr|latex }}$$
 en remarquant que $% P( {{ x1 |latex }} )=0 %$.
 ==
 
-evaluator ==
-score, error = eval_poly(input.value, sol, var="x", form="factorized")
-feedback = message[error]
-==
 
 solution ==
 Une factorisation de cette expression est $! {{ sol|latex }} !$.
