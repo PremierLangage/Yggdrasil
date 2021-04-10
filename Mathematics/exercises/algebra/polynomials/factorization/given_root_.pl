@@ -11,6 +11,7 @@ param.roots = int
 param.givenroot = int
 
 before ==
+from sympy import factor
 var('x')
 
 q,r,s=1,1,1
