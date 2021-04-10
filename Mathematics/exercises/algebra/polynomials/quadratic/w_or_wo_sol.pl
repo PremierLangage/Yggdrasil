@@ -3,6 +3,7 @@ extends = /model/math/checkbox.pl
 title = Déterminer si une équation quadratique a des solutions
 
 before ==
+from sympy import Eq
 var('x')
 indsol = []
 items = []
