@@ -1,11 +1,15 @@
 extends = /model/math/poly.pl
 
 before ==
+from sympy import poly
 var('a')
 sol = a**2 - 2
+p = poly(a, x)
+d = p.degree()
 ==
 
 text ==
+{{d}}
 Développer l'expression suivante :
 
 $$ {{ sol|latex }}. $$
