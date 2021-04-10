@@ -2,7 +2,7 @@
 # Tags: polynomials
 # 19/8/2020
 
-extends = /model/mathinput.pl
+extends = /model/math/poly.pl
 
 title = Factorisation
 
