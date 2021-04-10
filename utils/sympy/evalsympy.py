@@ -501,15 +501,16 @@ def is_poly_factorized(expr, x, domain='R'):
     >>> is_poly_factorized(x**2 + 1, x, domain='C')
     False
     """
+    # loop through multiplicative factors
     for a in arg_flat_mul(expr):
+        # remove power if necessary
         if a.func == sp.Pow:
             exponent = a.args[1]
             if exponent.is_Integer and exponent > 0:
                 a = a.args[0]
             else:
                 return False
-        #if sp.Poly(a, x, **kwargs).degree() > 1:
-        #    return False
+        # check if the factor is irreducible
         p = sp.poly(a, x)
         if domain == 'R':
             if p.degree() > 2 or (p.degree() == 2 and p.discriminant() > 0):
