@@ -665,14 +665,14 @@ def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imag
     >>> eval_poly("x^2 + 2x + 1", P, form="factorized")[1]
     'PolyNotFactorized'
     """
-    x = sp.Symbol(var)
-    local_dict.update({imaginary_unit: sp.I, var: x})
+    local_dict.update({imaginary_unit: sp.I})
     try:
         ans = latex2sympy(strans, local_dict)
     except:
         return (-1, "NotPoly")
     if not isinstance(ans,sp.Expr) or not ans.is_polynomial(x):
         return (-1, "NotPoly")
+    x = sp.poly(x).gens[0]
     if form == "expanded" and not is_poly_expanded(ans ,x):
         return (-1, "PolyNotExpanded")
     elif form == "factorized" and not is_poly_factorized(ans, x, domain):
