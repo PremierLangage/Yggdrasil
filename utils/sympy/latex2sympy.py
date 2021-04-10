@@ -34,12 +34,12 @@ def str2sympy(s, local_dict={}, evaluate=False):
     s = s.replace("{", "[")
     s = s.replace("}", "]")
     
-    global_dict = {}
-    exec('from sympy import *', global_dict, global_dict)
-    global_dict.update(local_dict)
+    #global_dict = {}
+    #exec('from sympy import *', global_dict, global_dict)
+    #global_dict.update(local_dict)
     transformations=prs.standard_transformations + (prs.implicit_multiplication_application,prs.convert_xor)
     #transformations = (prs.standard_transformations + (prs.implicit_multiplication_application,))
-    return prs.parse_expr(s,global_dict=global_dict,transformations=transformations,evaluate=False)
+    return prs.parse_expr(s,local_dict=local_dict,transformations=transformations,evaluate=False)
 
 def latex2str(s):
     r"""
