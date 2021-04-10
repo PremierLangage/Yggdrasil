@@ -20,9 +20,8 @@ var MQ = MathQuill.getInterface(2);
 var mathFieldSpan = document.getElementById('math-field');
 var latexSpan = document.getElementById('form_math');
 var mathField = MQ.MathField(mathFieldSpan, {
-  spaceBehavesLikeTab: true, // configurable
+  spaceBehavesLikeTab: true,
   leftRightIntoCmdGoes: 'up',
-  restrictMismatchedBrackets: false,
   sumStartsWithNEquals: true,
   supSubsRequireOperand: true,
   charsThatBreakOutOfSupSub: '+-=<>',
