@@ -617,6 +617,7 @@ def eval_frac(strans, sol, simpwarning=True):
             return (0, "NotFracIrred")
     return (100, "Success")
 
+# obsolete, à retirer
 def eval_function(strans, sol, checkratsimp=True, authorized_func=None, local_dict={}):
     """
     Evaluate an answer when the solution is a function.
