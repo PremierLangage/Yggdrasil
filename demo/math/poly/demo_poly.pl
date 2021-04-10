@@ -1,8 +1,8 @@
 extends = /model/math/poly.pl
 
 before ==
-var('x')
-sol = x**2 + 1
+var('a')
+sol = a**2 + 1
 ==
 
 text ==
