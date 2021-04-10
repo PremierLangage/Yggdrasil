@@ -677,7 +677,7 @@ def eval_poly(strans, sol, var='', domain='R', form='', checkratsimp=True, imagi
         return (-1, "NotPoly")
     if not isinstance(ans,sp.Expr) or not ans.is_polynomial(x):
         return (-1, "NotPoly")
-    if form == "expanded" and not is_poly_expanded(ans ,x):
+    if form == "expanded" and not is_poly_expanded(ans, x):
         return (-1, "PolyNotExpanded")
     elif form == "factorized" and not is_poly_factorized(ans, x, domain):
         return (-1, "PolyNotFactorized")
