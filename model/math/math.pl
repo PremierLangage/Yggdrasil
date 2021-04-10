@@ -70,8 +70,5 @@ extrajs ==
         actions.find('.action-submit').hide();
         {% endif %}
     }
-function onAfterSubmitPL(nodes){
-latexSpan.value = mathField.latex()
-}
 </script>
 ==
