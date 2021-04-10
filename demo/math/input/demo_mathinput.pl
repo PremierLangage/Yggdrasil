@@ -3,12 +3,10 @@ extends = /model/math/input.pl
 title = Démonstration math/input
 
 before ==
-import sympy as sp
-d = sp.__version__
+
 ==
 
 text ==
-{{d}}
 Entrer une expression mathématique.
 ==
 
