@@ -665,7 +665,10 @@ def eval_poly(strans, sol, var='', domain='R', form='', checkratsimp=True, imagi
     >>> eval_poly("x^2 + 2x + 1", P, form="factorized")[1]
     'PolyNotFactorized'
     """
-    x = sp.poly(sol).gens[0]
+    if var == ''
+        x = sp.poly(sol).gens[0]
+    else:
+        x = sp.Symbol(var)
     local_dict.update({imaginary_unit: sp.I})
     try:
         ans = latex2sympy(strans, local_dict)
