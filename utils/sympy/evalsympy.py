@@ -299,7 +299,7 @@ def is_mul_ratsimp(expr):
     p, q = sp.Integer(1), sp.Integer(1)
     # TODO : Traiter un peu plus proprement les 1 et -1
     for a in rat_args:
-        if a == sp.Integer(1) pr a == sp.Integer(-1):
+        if a == sp.Integer(1) or a == sp.Integer(-1):
             pass
         elif a.is_Rational:
             if p == sp.Integer(1) and q == sp.Integer(1):
