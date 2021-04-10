@@ -665,7 +665,7 @@ def eval_poly(strans, sol, var='', domain='R', form='', checkratsimp=True, imagi
     >>> eval_poly("x^2 + 2x + 1", P, form="factorized")[1]
     'PolyNotFactorized'
     """
-    if var == ''
+    if var == '':
         x = sp.poly(sol).gens[0]
     else:
         x = sp.Symbol(var)
