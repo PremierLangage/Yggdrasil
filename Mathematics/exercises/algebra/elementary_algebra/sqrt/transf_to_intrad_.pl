@@ -53,8 +53,6 @@ score, error = eval_ans(answers['math'], sol)
 feedback = message[error]
 ==
 
-
-
-
-
-
+solution ==
+La solution est $! {{ sol|latex}} !$.
+==
