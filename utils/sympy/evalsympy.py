@@ -617,7 +617,7 @@ def eval_frac(strans, sol, simpwarning=True):
             return (0, "NotFracIrred")
     return (100, "Success")
 
-# obsolete, à retirer
+# plus nécessaire, à retirer
 def eval_function(strans, sol, checkratsimp=True, authorized_func=None, local_dict={}):
     """
     Evaluate an answer when the solution is a function.
@@ -761,7 +761,7 @@ def eval_tuple(strans, sol, checksize=False, local_dict={}):
         ans = latex2sympy(strans, local_dict)
     except:
         return (-1,"NotTuple")
-    if not isinstance(ans,tuple):
+    if not isinstance(ans, tuple):
         return (-1,"NotTuple")
     if checksize and len(ans) != len(sol):
         return (-1, "TupleWrongSize")
