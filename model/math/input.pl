@@ -11,7 +11,7 @@ form ==
 form ==
 <p>{{input_prefix}} <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p>
 
-<input type="text" id="form_math" hidden=true>
+<input type="text" id="form_math">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js" type="text/javascript"></script>
