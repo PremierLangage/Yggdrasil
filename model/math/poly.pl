@@ -9,17 +9,6 @@ poly_domain = R
 
 title =
 
-before ==
-from randsympy import randint_poly
-P = randint_poly(1, 2, 2)
-Q = randint_poly(1, 2, 2)
-expr = (P * Q).expand()
-sol = expr.expand()
-==
-
-text ==
-Développer $$ {{ expr|latex }}.$$
-==
 
 evaluator==
 from ast import literal_eval
