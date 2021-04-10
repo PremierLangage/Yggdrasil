@@ -8,7 +8,7 @@ sol = x**2 + 1
 text ==
 Développer l'expression suivante :
 
-$$ {{ expr|latex }}. $$
+$$ {{ sol|latex }}. $$
 ==
 
 poly_form = expanded
