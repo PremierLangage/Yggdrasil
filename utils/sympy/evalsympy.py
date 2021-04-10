@@ -298,7 +298,7 @@ def is_mul_ratsimp(expr):
 
     p, q = sp.Integer(1), sp.Integer(1)
     for a in rat_args:
-        if a.is_Rational and a != sp.Integer(1):
+        if a.is_Rational and a != sp.Integer(1) and a != sp.Integer(-1):
             if p == sp.Integer(1) and q == sp.Integer(1):
                 p, q = a.p, a.q 
             else:
