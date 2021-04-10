@@ -7,7 +7,7 @@ before ==
 ==
 
 text ==
-Entrer une expression mathématique.
+Entrer un intervalle.
 ==
 
 evaluator ==
