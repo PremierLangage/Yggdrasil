@@ -11,7 +11,7 @@ Entrer un intervalle.
 ==
 
 evaluator ==
-from latex2sympy import latex2sympy
+from latex2sympy import latex2interval
 from sympy import srepr, fraction
 from evalsympy import is_rat_simp
 codelatex = answers['math']
