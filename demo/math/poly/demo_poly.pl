@@ -4,7 +4,7 @@ before ==
 from sympy import poly
 var('a')
 sol = a**2 - 2
-p = poly(a, x)
+p = poly(sol, a)
 d = p.degree()
 ==
 
