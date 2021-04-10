@@ -32,7 +32,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
   maxDepth: 10,
   handlers: {
     edit: function() { // useful event handlers
-      latexSpan.value = mathField.text(); // simple API
+      latexSpan.value = mathField.latex(); // simple API
     }
   }
 });
