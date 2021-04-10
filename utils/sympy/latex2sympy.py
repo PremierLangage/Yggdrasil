@@ -135,20 +135,20 @@ def str2interval(s, notation="bracket", local_dict={}):
     pattern = re.compile(r'^{(.*)}$')
     if pattern.search(s) is not None:
         return sp.FiniteSet(str2sympy(pattern.search(s).group(1)))
-    pattern = re.compile(r'^\[(.*),(.*)\]$')
     
+    pattern = re.compile(plcrc)
     if pattern.search(s) is not None:
         return sp.Interval(str2sympy(pattern.search(s).group(1)),str2sympy(pattern.search(s).group(2)))
         
-    pattern = re.compile(r'^\[(.*),(.*)\[$')
+    pattern = re.compile(plcro)
     if pattern.search(s) is not None:
         return sp.Interval.Ropen(str2sympy(pattern.search(s).group(1)),str2sympy(pattern.search(s).group(2)))
         
-    pattern = re.compile(r'^\](.*),(.*)\]$')
+    pattern = re.compile(plorc)
     if pattern.search(s) is not None:
         return sp.Interval.Lopen(str2sympy(pattern.search(s).group(1)),str2sympy(pattern.search(s).group(2)))
         
-    pattern = re.compile(r'^\](.*),(.*)\[$')
+    pattern = re.compile(ploro)
     if pattern.search(s) is not None:
         return sp.Interval.open(str2sympy(pattern.search(s).group(1)),str2sympy(pattern.search(s).group(2)))
         
