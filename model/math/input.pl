@@ -22,7 +22,7 @@ var latexSpan = document.getElementById('form_math');
 var mathField = MQ.MathField(mathFieldSpan, {
   spaceBehavesLikeTab: true, // configurable
   leftRightIntoCmdGoes: 'up',
-  restrictMismatchedBrackets: false,
+  restrictMismatchedBrackets: true,
   sumStartsWithNEquals: true,
   supSubsRequireOperand: true,
   charsThatBreakOutOfSupSub: '+-=<>',
