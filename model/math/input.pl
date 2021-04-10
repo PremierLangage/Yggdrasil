@@ -36,6 +36,10 @@ var mathField = MQ.MathField(mathFieldSpan, {
   }
 });
 mathField.latex("{{ prev_value }}");
+
+function onAfterSubmitPL(nodes){
+latexSpan.value = mathField.latex()
+}
 </script>
 ==
 
