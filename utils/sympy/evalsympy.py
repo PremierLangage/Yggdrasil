@@ -510,7 +510,7 @@ def is_poly_factorized(expr, x, domain='R'):
         #    return False
         p = sp.poly(a, x)
         if domain == 'R':
-            if p.degree() > 1 or (p.degree() == 2 and p.discriminant() < 0):
+            if p.degree() > 2 or (p.degree() == 2 and p.discriminant() < 0):
                 return False
         elif domain == 'C':
             if p.degree() > 2:
