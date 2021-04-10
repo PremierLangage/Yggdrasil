@@ -253,7 +253,6 @@ def is_rat_simp(expr):
         if expr.func == sp.Mul:
             return is_mul_ratsimp(expr)
         elif expr.func == sp.Add:
-            return True
             return is_add_ratsimp(expr)
         elif expr.is_Atom or expr.is_Boolean:
             return True
@@ -320,7 +319,7 @@ def is_add_ratsimp(expr):
     args = arg_flat_add(expr)
     rat_args = [a for a in args if a.is_rational]
     nonrat_args = [a for a in args if not a.is_rational]
-    return len(rat_args) <= 1 and is_rat_simp(nonrat_args)
+    return len(rat_args) <= 1# and is_rat_simp(nonrat_args)
     
 
 def fraction2(expr):
