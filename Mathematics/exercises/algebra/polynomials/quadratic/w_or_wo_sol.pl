@@ -13,7 +13,7 @@ for i in range(4):
     if b**2-4*a*c < 0:
         indsol.append(i)
     sides = choice([[a*x**2+b*x+c,0],[a*x**2+b*x,-c],[a*x**2,-b*x-c],[a*x**2+c,-b*x]])
-    rd.shuffle(sides)
+    shuffle(sides)
     s = r"$! %s !$" % latex(Eq(*sides))
     items.append(s)
 ==
