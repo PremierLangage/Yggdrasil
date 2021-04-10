@@ -4,7 +4,7 @@ title = Transformation d'écritures avec racine carrée
 
 before ==
 from sympy.ntheory.factor_ import core
-
+from sympy import fraction
 a,b=1,1
 while a==1 or b==1:
     if param['form']=="sqrt(p)":
