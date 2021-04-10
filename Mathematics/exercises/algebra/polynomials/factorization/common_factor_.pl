@@ -17,7 +17,7 @@ param.obvious % true
 
 
 before == #|python|
-from sympy import Add
+from sympy import Add, evaluate
 nterms = param['nterms']
 type_comfac = param['comfactor']
 type_terms = param['terms']
