@@ -122,7 +122,16 @@ def str2interval(s, notation="bracket", local_dict={}):
     # TODO : raise error when closed infinity endpoint
     # TODO : , or ; as separator ?
     s = s.strip()
-    
+    sep = ","
+    lc = r"\["
+    lo = r"\("
+    rc = r"\]"
+    ro = r"\)"
+    plcrc = "^" + lc + "(.*),(.*)" + rc + "$"
+    plcro = "^" + lc + "(.*),(.*)" + ro + "$"
+    plorc = "^" + lo + "(.*),(.*)" + rc + "$"
+    ploro = "^" + lo + "(.*),(.*)" + ro + "$"
+
     pattern = re.compile(r'^{(.*)}$')
     if pattern.search(s) is not None:
         return sp.FiniteSet(str2sympy(pattern.search(s).group(1)))
