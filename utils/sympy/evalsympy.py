@@ -498,6 +498,7 @@ def is_poly_factorized(expr, x, domain='R'):
     >>> is_poly_factorized(x**2 + 1, x, domain='C')
     False
     """
+    domain = 'R'
     for a in arg_flat_mul(expr):
         if a.func == sp.Pow:
             exponent = a.args[1]
