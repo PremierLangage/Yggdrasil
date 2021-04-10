@@ -498,11 +498,6 @@ def is_poly_factorized(expr, x, domain='R'):
     >>> is_poly_factorized(x**2 + 1, x, domain='C')
     False
     """
-    if domain == 'C':
-        kwargs = {'extension': [sp.I]}
-    else:
-        kwargs = {'domain': domain}
-
     for a in arg_flat_mul(expr):
         if a.func == sp.Pow:
             exponent = a.args[1]
@@ -512,8 +507,13 @@ def is_poly_factorized(expr, x, domain='R'):
                 return False
         #if sp.Poly(a, x, **kwargs).degree() > 1:
         #    return False
-        if not sp.poly(a).is_irreducible:
-            return False
+        p = sp.poly(a)
+        if domain == 'R':
+            if p.degree() > 2 or (p.degree() == 2 and p.discriminant() < 0):
+                return False
+        elif domain == 'C':
+            if p.degree() > 2:
+                return False
     return True
 
 def simplify_rset(lst):
