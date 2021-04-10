@@ -13,7 +13,7 @@ title =
 evaluator==
 from ast import literal_eval
 from evalsympy import eval_poly
-score, error = eval_poly(answers['math'], sol, var=poly_var, form=poly_form)
+score, error = eval_poly(answers['math'], sol, var='', form=poly_form)
 feedback = message[error]
 ==
 
