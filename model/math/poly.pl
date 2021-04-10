@@ -3,8 +3,8 @@ extends = /model/math/input.pl
 checkratsimp = True
 symbol_dict = {'e': E}
 unauthorized_func = []
-poly_var = 
-poly_form = 
+poly_var =
+poly_form =
 poly_domain = R
 
 title =
