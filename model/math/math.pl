@@ -70,5 +70,6 @@ extrajs ==
         actions.find('.action-submit').hide();
         {% endif %}
     }
+
 </script>
 ==
