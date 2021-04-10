@@ -1,4 +1,4 @@
-extends = /model/mathquill.pl
+extends = /model/math/input.pl
 
 
 input_prefix = Réponse :
