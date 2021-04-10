@@ -253,6 +253,7 @@ def is_rat_simp(expr):
         if expr.func == sp.Mul:
             return is_mul_ratsimp(expr)
         elif expr.func == sp.Add:
+            return True
             return is_add_ratsimp(expr)
         elif expr.is_Atom or expr.is_Boolean:
             return True
