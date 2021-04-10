@@ -43,7 +43,7 @@ def eval_ans(strans, sol):
         return (-1, "NotExpr")
     if ans.func != sp.Mul:
         return (-1, "WrongForm")
-    if not (ans.args[0].func == sp.Pow and ans.args[1].is_Integer) and not (ans.args[1].func == sp.Pow and ans.args[0].is_Integer):
+    if not (ans.args[0].func == sp.Pow and ans.args[1] != 1) and not (ans.args[1].func == sp.Pow and ans.args[0] !=1):
         return (-1, "WrongForm")
     if not equal(ans, sol):
         return (0, "NotEqual")
