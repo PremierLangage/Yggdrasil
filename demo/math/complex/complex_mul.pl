@@ -3,8 +3,8 @@ extends = /model/math/complex.pl
 title = Multiplier deux nombres complexes
 
 before ==
-z1 = randint_complex(5)
-z2 = randint_complex(5)
+z1 = randint(-5, 5, [0]) + randint(-5, 5, [0])*I
+z2 = randint(-5, 5, [0]) + randint(-5, 5, [0])*I
 sol = (z1 * z2).expand()
 ==
 
