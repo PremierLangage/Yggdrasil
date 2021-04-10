@@ -30,7 +30,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
   autoOperatorNames: 'sin cos ln exp',
   maxDepth: 10,
   handlers: {
-    edit: function() { // useful event handlers
+    reflow: function() { // useful event handlers
       latexSpan.value = mathField.latex(); // simple API
     }
   }
