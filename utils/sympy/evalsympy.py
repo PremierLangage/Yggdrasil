@@ -504,7 +504,7 @@ def is_poly_factorized(expr, x, domain='R'):
         kwargs = {'domain': domain}
 
     for a in arg_flat_mul(expr):
-        if type(a) == sp.Pow:
+        if a.func == sp.Pow:
             exponent = a.args[1]
             if exponent.is_Integer and exponent > 0:
                 a = a.args[0]
@@ -512,7 +512,7 @@ def is_poly_factorized(expr, x, domain='R'):
                 return False
         #if sp.Poly(a, x, **kwargs).degree() > 1:
         #    return False
-        if not sp.poly(sp.simplify(a), x, **kwargs).is_irreducible:
+        if not sp.poly(sp.simplify(a), x, domain='R').is_irreducible:
             return False
     return True
 
