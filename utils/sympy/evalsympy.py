@@ -509,6 +509,7 @@ def is_poly_factorized(expr, x, domain='R'):
         #if sp.Poly(a, x, **kwargs).degree() > 1:
         #    return False
         p = sp.poly(a, x)
+        return False
         if domain == 'R':
             if p.degree() > 2 or (p.degree() == 2 and p.discriminant() < 0):
                 return False
