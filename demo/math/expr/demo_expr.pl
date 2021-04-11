@@ -4,10 +4,8 @@ title = Démonstration math/expr
 
 before ==
 var('x')
-sol = 1 + I
+sol = x+1
 ==
-
-symbol_dict = {'i': I, 'I': I}
 
 text ==
 Entrer l'expression $! {{ sol|latex}} !$.
