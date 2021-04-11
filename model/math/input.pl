@@ -11,7 +11,7 @@ form ==
 
 form ==
 <p> {{input_prefix}} <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p>
-<input type="text" id="form_math" hidden="false">
+<input type="text" id="form_math" hidden="true">
 ==
 
 style.mathquill ==
