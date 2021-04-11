@@ -20,19 +20,18 @@ form ==
 ==
 
 extrajs==
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js" type="text/javascript"></script>
 
 <script>
 function onReadyPL(nodes) {
-    const submit = nodes.submit;
-    submit.click(() => {
-        alert('intercept click');
+    console.log('ready');
+    const submit = document.querySelector('.action-submit');
+    console.log(submit);
+    submit.addEventListener('click', () => {
+        alert('click');
     });
 }
 
-function onBeforeSubmitPL() {
-    alert('onBeforeSubmitPL');
-    return false; // return false to cancel submit
-}
 </script>
 ==
 
