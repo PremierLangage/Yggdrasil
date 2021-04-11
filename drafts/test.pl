@@ -23,10 +23,8 @@ extrajs==
 
 <script>
 function onReadyPL(nodes) {
-    console.log('ready');
-    const submit = document.querySelector('.action-submit');
-    console.log(submit);
-    submit.addEventListener('click', () => {
+    const submit = nodes.submit;
+    submit.click(() => {
         alert('click');
     });
 }
