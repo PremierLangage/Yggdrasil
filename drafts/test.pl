@@ -25,7 +25,7 @@ extrajs==
 function onReadyPL(nodes) {
     const submit = nodes.submit;
     submit.click(() => {
-        alert('beforevalidate');
+        alert('intercept click');
     });
 }
 
