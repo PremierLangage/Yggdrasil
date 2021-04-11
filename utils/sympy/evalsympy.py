@@ -256,6 +256,11 @@ def is_rat_simp(expr):
             return is_add_ratsimp(expr)
         elif expr.is_Atom or expr.is_Boolean:
             return True
+        elif expr.is_rational:
+            if expr.is_Rational:
+                return True
+            else:
+                return False
         else:
             return all(is_rat_simp(subexpr) for subexpr in expr.args)
     elif isinstance(expr, (list, tuple, sp.Tuple, set, sp.FiniteSet)):
