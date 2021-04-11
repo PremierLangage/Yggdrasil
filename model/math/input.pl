@@ -44,7 +44,7 @@ function onReadyPL(nodes) {
             edit: function() {latexSpan.value = mathField.latex(); }
         }
     });
-    mathField.latex("{{ prev_value }}");
+    // mathField.latex("{{ prev_value }}");
 }
 
 function onBeforeSubmitPL() {
