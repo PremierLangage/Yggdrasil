@@ -46,8 +46,6 @@ style.svg ==
 
 # HACK : Ce script JS permet de modifier la liste des boutons de contrôle.
 extrajs ==
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
-
 <script>
     function onReadyPL(nodes) {
         const actions = nodes.actions;
