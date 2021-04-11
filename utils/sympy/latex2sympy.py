@@ -120,7 +120,6 @@ def str2interval(s, separator = ",", notation="bracket", local_dict={}):
     """
     # TODO : french/english notation
     # TODO : raise error when closed infinity endpoint
-    # TODO : , or ; as separator ?
     s = s.strip()
     lc = r"\["
     lo = r"\("
