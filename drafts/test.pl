@@ -30,8 +30,8 @@ function onReadyPL(nodes) {
 }
 
 function onBeforeSubmitPL() {
-
-    return true; // return false to cancel submit
+    alert('onBeforeSubmitPL');
+    return false; // return false to cancel submit
 }
 </script>
 ==
