@@ -177,6 +177,7 @@ def latex2rset(s, local_dict={}):
     [EmptySet()]
     """
     args = s.split(r"\cup")
+    return args
     rset = []
     for a in args:
         if a.strip() == r"\emptyset":
