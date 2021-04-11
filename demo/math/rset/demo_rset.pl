@@ -15,8 +15,6 @@ from latex2sympy import latex2interval, latex2rset
 from sympy import srepr, fraction
 from evalsympy import is_rat_simp
 codelatex = answers['math']
-ans = latex2interval(codelatex)
-
 try:
     ans = latex2rset(codelatex)
     str_ans = str(ans)
