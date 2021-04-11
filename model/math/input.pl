@@ -73,7 +73,7 @@ function onBeforeSubmitPL() {
 </script>
 ==
 
-extrajs2 ==
+extrajs ==
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js" type="text/javascript"></script>
 <script>
 let input;
