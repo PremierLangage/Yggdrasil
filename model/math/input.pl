@@ -8,7 +8,7 @@ before ==
 
 text =
 
-jinja_keys % ["text", "solution", "input_prefix"]
+jinja_keys % ["text", "solution", "input_prefix", "extrajs"]
 
 input_prefix = Réponse :
 
@@ -16,9 +16,6 @@ form ==
 <p> {{input_prefix}} <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p>
 <input type="text" id="form_math" hidden="true">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
-<script>
-mathField.latex("{{ prev_value }}");
-</script>
 ==
 
 extrajs ==
