@@ -13,7 +13,7 @@ Instruction
 
 form ==
 <p> Réponse : <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p>
-<input type="text" id="form_math" hidden=true>
+<input type="text" id="form_math" hidden="false">
 ==
 
 extracss==
@@ -24,9 +24,14 @@ extrajs==
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js" type="text/javascript"></script>
 
 <script>
+let input;
 let mathField;
 
 function onReadyPL(nodes) {
+    // INIT INPUT
+    input = document.querySelector('#form_math');
+
+    // INIT MATHQUILL
     const MQ = MathQuill.getInterface(2);
     const mathFieldSpan = document.getElementById('math-field');
     const latexSpan = document.getElementById('form_math');
@@ -41,7 +46,7 @@ function onReadyPL(nodes) {
 }
 
 function onBeforeSubmitPL() {
-    console.log(mathField);
+    input.value = mathField.latex();
     return true;
 }
 </script>
