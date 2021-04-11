@@ -105,7 +105,7 @@ def latex2sympy(s, local_dict={}):
     """
     return str2sympy(latex2str(s), local_dict)
     
-def str2interval(s, notation="bracket", local_dict={}):
+def str2interval(s, separator = ",", notation="bracket", local_dict={}):
     """
     Convert a string into an interval.
     
@@ -118,19 +118,18 @@ def str2interval(s, notation="bracket", local_dict={}):
     >>> str2interval("[1,oo[")
     Interval(1, oo)
     """
-    # TODO : english notation
+    # TODO : french/english notation
     # TODO : raise error when closed infinity endpoint
     # TODO : , or ; as separator ?
     s = s.strip()
-    sep = ","
     lc = r"\["
     lo = r"\("
     rc = r"\]"
     ro = r"\)"
-    plcrc = "^" + lc + "(.*),(.*)" + rc + "$"
-    plcro = "^" + lc + "(.*),(.*)" + ro + "$"
-    plorc = "^" + lo + "(.*),(.*)" + rc + "$"
-    ploro = "^" + lo + "(.*),(.*)" + ro + "$"
+    plcrc = "^" + lc + "(.*)" + separator + "(.*)" + rc + "$"
+    plcro = "^" + lc + "(.*)" + separator + "(.*)" + ro + "$"
+    plorc = "^" + lo + "(.*)" + separator + "(.*)" + rc + "$"
+    ploro = "^" + lo + "(.*)" + separator + "(.*)" + ro + "$"
 
     pattern = re.compile(r'^{(.*)}$')
     if pattern.search(s) is not None:
