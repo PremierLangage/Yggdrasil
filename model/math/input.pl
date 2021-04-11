@@ -8,7 +8,7 @@ before ==
 
 text =
 
-jinja_keys % ["text", "solution", "input_prefix", "extrajs"]
+jinja_keys % ["text", "solution", "input_prefix"]
 
 input_prefix = Réponse :
 
@@ -65,7 +65,7 @@ function onReadyPL(nodes) {
             edit: function() {latexSpan.value = mathField.latex(); }
         }
     });
-    mathField.latex("ff");
+    mathField.latex("{{ prev_value }}");
 }
 
 function onBeforeSubmitPL() {
