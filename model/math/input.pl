@@ -25,31 +25,8 @@ let input;
 let mathField;
 
 function onReadyPL(nodes) {
-    // INIT INPUT
-    input = document.querySelector('#form_math');
 
-    // INIT MATHQUILL
-    const MQ = MathQuill.getInterface(2);
-    const mathFieldSpan = document.getElementById('math-field');
-    const latexSpan = document.getElementById('form_math');
-    mathField = MQ.MathField(mathFieldSpan, {
-        charsThatBreakOutOfSupSub: '+-=<>',
-        autoCommands: 'pi theta sqrt sum infty emptyset cup',
-        autoOperatorNames: 'sin cos ln exp',
-        handlers: {
-            edit: function() {latexSpan.value = mathField.latex(); }
-        }
-    });
-    // mathField.latex("{{ prev_value }}");
-}
-
-function onBeforeSubmitPL() {
-    input.value = mathField.latex();
-    return true;
-}
-
-// Hack pour modifier les boutons de contrôle affichés.
-function onReadyPL(nodes) {
+    // HACK pour les boutons
     const actions = nodes.actions;
     actions.find('.action-save').hide();
     actions.find('.action-reset').hide();
@@ -71,7 +48,31 @@ function onReadyPL(nodes) {
     {% if not "submit" in internals.buttons %}
     actions.find('.action-submit').hide();
     {% endif %}
+
+
+    // INIT INPUT
+    input = document.querySelector('#form_math');
+
+    // INIT MATHQUILL
+    const MQ = MathQuill.getInterface(2);
+    const mathFieldSpan = document.getElementById('math-field');
+    const latexSpan = document.getElementById('form_math');
+    mathField = MQ.MathField(mathFieldSpan, {
+        charsThatBreakOutOfSupSub: '+-=<>',
+        autoCommands: 'pi theta sqrt sum infty emptyset cup',
+        autoOperatorNames: 'sin cos ln exp',
+        handlers: {
+            edit: function() {latexSpan.value = mathField.latex(); }
+        }
+    });
+    mathField.latex("{{ prev_value }}");
 }
+
+function onBeforeSubmitPL() {
+    input.value = mathField.latex();
+    return true;
+}
+
 </script>
 ==
 
