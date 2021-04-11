@@ -1,5 +1,11 @@
 extends = /model/math/math.pl
 
+title =
+
+before ==
+
+==
+
 jinja_keys % ["text", "solution", "input_prefix"]
 
 input_prefix = Réponse :
