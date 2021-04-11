@@ -24,6 +24,18 @@ extrajs==
 
 <script>
 function onReadyPL(nodes) {
+
+var MQ = MathQuill.getInterface(2);
+var mathFieldSpan = document.getElementById('math-field');
+var latexSpan = document.getElementById('form_math');
+var mathField = MQ.MathField(mathFieldSpan, {
+  charsThatBreakOutOfSupSub: '+-=<>',
+  autoCommands: 'pi theta sqrt sum infty emptyset',
+  autoOperatorNames: 'sin cos ln exp',
+  handlers: {
+    edit: function() {latexSpan.value = mathField.latex(); }
+  }
+});
     console.log('ready');
     const submit = document.querySelector('.action-submit');
     console.log(submit);
