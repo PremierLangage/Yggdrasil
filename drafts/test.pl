@@ -18,17 +18,10 @@ form ==
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js" type="text/javascript"></script>
+
 <script>
 
 function onReadyPL(nodes) {
-    console.log('ready');
-    const submit = document.querySelector('.action-submit');
-    console.log(submit);
-    submit.addEventListener('click', () => {
-        alert('click');
-    });
-}
-
 var MQ = MathQuill.getInterface(2);
 var mathFieldSpan = document.getElementById('math-field');
 var latexSpan = document.getElementById('form_math');
@@ -41,8 +34,13 @@ var mathField = MQ.MathField(mathFieldSpan, {
   }
 });
 
-
-
+    console.log('ready');
+    const submit = document.querySelector('.action-submit');
+    console.log(submit);
+    submit.addEventListener('click', () => {
+        alert('click');
+    });
+}
 </script>
 ==
 
