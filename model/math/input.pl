@@ -10,7 +10,7 @@ text =
 
 jinja_keys % ["text", "solution", "input_prefix"]
 
-input_prefix = La Réponse :
+input_prefix = Réponse :
 
 form ==
 <p> {{input_prefix}} <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p>
