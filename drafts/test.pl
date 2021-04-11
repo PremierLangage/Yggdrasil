@@ -16,6 +16,10 @@ form ==
 
 <input type="text" id="form_math" hidden=true>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
+
+==
+
+extrajs==
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js" type="text/javascript"></script>
 
@@ -29,7 +33,6 @@ function onReadyPL(nodes) {
         alert('click');
     });
 }
-</script>
 
 var MQ = MathQuill.getInterface(2);
 var mathFieldSpan = document.getElementById('math-field');
@@ -42,6 +45,7 @@ var mathField = MQ.MathField(mathFieldSpan, {
     edit: function() {latexSpan.value = mathField.latex(); }
   }
 });
+</script>
 ==
 
 evaluator ==
