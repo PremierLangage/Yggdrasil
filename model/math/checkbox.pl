@@ -12,7 +12,7 @@ footerbefore ==
 checkbox.setitems(items)
 checkbox.setsol_from_index(indsol)
 
-if shuffle:
+if shuffle_items:
     checkbox.shuffle()
 ==
 
