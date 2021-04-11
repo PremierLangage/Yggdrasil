@@ -34,7 +34,7 @@ function onReadyPL(nodes) {
     const latexSpan = document.getElementById('form_math');
     mathField = MQ.MathField(mathFieldSpan, {
         charsThatBreakOutOfSupSub: '+-=<>',
-        autoCommands: 'pi theta sqrt sum infty emptyset',
+        autoCommands: 'pi theta sqrt sum infty emptyset cup',
         autoOperatorNames: 'sin cos ln exp',
         handlers: {
             edit: function() {latexSpan.value = mathField.latex(); }
