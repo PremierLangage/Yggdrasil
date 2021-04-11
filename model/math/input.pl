@@ -52,7 +52,7 @@ function onBeforeSubmitPL() {
 ==
 
 
-form ==
+form3 ==
 <p> <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p>
 
 <input type="text" id="form_math" hidden=true>
