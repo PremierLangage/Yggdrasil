@@ -3,6 +3,9 @@ extends = /model/mathquill.pl
 title = Système linéaire
 
 before ==
+from randsympy import rand_int_matrix, rand_int_matrix_invertible
+from sympy import linsolve
+from sympy2latex import latex_linsys
 n = 2
 lstvar = ",".join(["x", "y", "z", "t"][:n])
 
