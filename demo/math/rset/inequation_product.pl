@@ -5,6 +5,7 @@ title = Inéquation produit
 
 before ==
 from sympy import solveset
+drom sympy import S
 var('x')
 a, b = sample(range(-6, 6), k=2)
 expr = (x + a) * (x + b)
