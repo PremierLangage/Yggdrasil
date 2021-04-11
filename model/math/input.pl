@@ -51,7 +51,7 @@ function onReadyPL(nodes) {
 
 
     // INIT INPUT
-    // input = document.querySelector('#form_math');
+    input = document.querySelector('#form_math');
 
     // INIT MATHQUILL
     const MQ = MathQuill.getInterface(2);
