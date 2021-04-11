@@ -53,7 +53,7 @@ function onBeforeSubmitPL() {
 ==
 
 evaluator ==
-grade=(100,"OKOK")
+grade=(100,"Eval: " + answer['form_math'])
 ==
 
 
