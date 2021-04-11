@@ -1,4 +1,4 @@
-extends = /model/mathquill.pl
+extends = /model/math/tuple.pl
 
 title = Système linéaire
 
@@ -22,13 +22,3 @@ Déterminer la solution du système suivant (d'inconnues $! {{lstvar}} !$) :
 $$ {{linsys}} $$
 Ecrire la solution sous forme d'un couple de nombres.
 ==
-
-evaluator ==
-score, error = eval_tuple(answers["math"], sol, checksize=True)
-feedback = message[error]
-==
-
-solution == 
-La solution est $! {{sol|latex}} !$.
-==
-
