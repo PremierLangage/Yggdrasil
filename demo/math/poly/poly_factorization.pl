@@ -1,5 +1,7 @@
 extends = /model/math/poly.pl
 
+title = Factoriser un polynôme
+
 before ==
 from randsympy import randint_poly
 P = randint_poly(1, 2, 2)
