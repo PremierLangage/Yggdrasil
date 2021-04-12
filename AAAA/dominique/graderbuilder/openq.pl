@@ -45,7 +45,7 @@ text==
 ==
 
 form==
-Let see : **{{ a }} € + {{ b }} €** equals {{ inputbox|component}} € et des poussières.   
+Let see : {{ a }} € + {{ b }} € equals {{ inputbox|component}} € et des poussières.   
 Poussières que l'on ignorera ! 
 ==
 
