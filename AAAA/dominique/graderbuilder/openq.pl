@@ -23,7 +23,7 @@ evaluatorname=evaluator
 
 inputbox =: Input
 inputbox.type = text
-inputbox.placeholder = Votre réponse
+inputbox.placeholder =
 inputbox.appearance = standard
 inputbox.css = myclass
 
