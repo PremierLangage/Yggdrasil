@@ -16,7 +16,7 @@ b=randint(1,8)
 x1=randint(3,5)
 y1=a*x1+b
 x2=randint(-5,-3)
-y2 =a*x1+b
+y2 =a*x2+b
 var('x')
 sol = a*x+b
 ==
