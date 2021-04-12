@@ -3,6 +3,7 @@ extends = /model/math/set.pl
 title = Base d'un sous-espace de $! \mathbb{R}_{2}[X] !$
 
 before ==
+from sympy import Matrix
 
 x0=randint(-2,2)
 x1=randint(-2,2)
