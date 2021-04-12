@@ -24,6 +24,12 @@ form ==
 
 <input type="text" id="form_math" hidden=true>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
+
+==
+
+
+# HACK : Ce script JS permet de modifier la liste des boutons de contrôle.
+extrajs ==
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
 <script>
 var MQ = MathQuill.getInterface(2);
@@ -41,11 +47,6 @@ var mathField = MQ.MathField(mathFieldSpan, {
 });
 mathField.latex("{{ prev_value }}");
 </script>
-==
-
-
-# HACK : Ce script JS permet de modifier la liste des boutons de contrôle.
-extrajs ==
 <script>
     function onReadyPL(nodes) {
         const actions = nodes.actions;
