@@ -11,8 +11,7 @@ Soit les deux point suivant donner la fronction qui passe par les deux points
 ==
 
 before==
-x1=0
-y1=0
+x1, y1= [randint(-5,5)]*2
 x2=1
 y2=1
 var('x')
