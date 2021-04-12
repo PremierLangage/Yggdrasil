@@ -20,9 +20,6 @@ evaluatorname=evaluator
 @ /utils/components/scoring.py
 
 
-@ /utils/sandboxio.py
-grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
 
 inputbox =: Input
 inputbox.type = text
