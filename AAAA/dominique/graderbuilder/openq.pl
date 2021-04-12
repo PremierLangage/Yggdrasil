@@ -28,7 +28,7 @@ inputbox =: Input
 inputbox.type = text
 inputbox.placeholder = Votre réponce
 inputbox.maxlength = 2
-inputbox.appearance = standar
+inputbox.appearance = standard
 
 before==
 import random
