@@ -1,6 +1,6 @@
 # Author : C. Petitjean.
 
-extends = /model/mathinput.pl
+extends = /model/math/expr.pl
 
 title = Calcul d'une intégrale par intégration par parties
 
