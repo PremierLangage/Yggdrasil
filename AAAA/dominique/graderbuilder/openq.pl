@@ -16,7 +16,7 @@ evaluatorname=evaluator
 # les utils devraient être sur la sandbox 
 # donc plus besoin de les inclures dans le context
 @ /utils/sandboxio.py
-@ /utils/components/checkbox.py [customcheckbox.py]
+
 @ /utils/components/scoring.py
 
 
