@@ -44,7 +44,7 @@ form ==
 ==
 
 evaluator ==
-feedback = " "
+feedback = "!"
 grade = (checkbox.eval(), feedback)
 ==
 
