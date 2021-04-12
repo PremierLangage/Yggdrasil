@@ -5,10 +5,8 @@ title = Calculer la dérivée d'une fonction
 before ==
 from sympy import diff
 var('x')
-n = randint(-3, 3, [0])
 g = choice([sin(x), cos(x), exp(x)])
 h = choice([x, x**2])
-f = n*g*h
 sol = diff(f, x)
 ==
 
