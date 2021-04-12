@@ -4,6 +4,7 @@
 @ /builder/simplebefore.py [builder.py]
 @ /grader/simpleeval.py [grader.py]
 
+evaluatorname=evaluator
 
 
 # Méthode 2 version historique 
