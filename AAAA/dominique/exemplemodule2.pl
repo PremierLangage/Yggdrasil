@@ -5,7 +5,8 @@ title=
 
 text==
 
-Soit les deux point suivant donner la fronction qui passe par les deux points ({{ x1 }},{{ y1 }}), ({{ (x2, y2) }}).
+Soit les deux point suivant donner la fronction qui passe par les deux points
+ ({{(x1,y1) , (x2,y2) }}.
 
 ==
 
