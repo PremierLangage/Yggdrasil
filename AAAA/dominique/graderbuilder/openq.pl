@@ -62,9 +62,8 @@ extracss ==
     color: red !important;
     font-size: 24px !important;
     box-sizing: content-box;
+    width:48px;
 }
-.myclass.mat-form-field {
-width:20px;
-}
+
 </style>
 ==
