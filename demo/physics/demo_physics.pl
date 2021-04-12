@@ -15,6 +15,7 @@ evaluator ==
 from sympy.physics.units.definitions.unit_definitions import meter, gram, kilogram, second, ampere, \
 kelvin, mole, candela, newton, joule, watt, pascal, hertz, coulomb, volt, ohm
 
+from sympy.physics.units import convert_to
 from latex2sympy import latex2sympy
 from sympy import srepr, fraction, sympify, E
 from evalsympy import is_rat_simp
@@ -24,7 +25,7 @@ try:
     ans = latex2sympy(codelatex, local_dict={'m': meter, 'cm': centimeter})
     str_ans = str(ans)
     srepr_ans = srepr(ans)
-    test_ans = is_rat_simp(ans)
+    test_ans = convert_to(ans, meter)
 except:
     str_ans = ""
     srepr_ans = ""
