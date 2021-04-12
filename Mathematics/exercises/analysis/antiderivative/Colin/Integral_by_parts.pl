@@ -5,6 +5,8 @@ extends = /model/math/expr.pl
 title = Calcul d'une intégrale par intégration par parties
 
 before ==
+from sympy import frac
+
 var('x') # crée le symbole x
 
 
