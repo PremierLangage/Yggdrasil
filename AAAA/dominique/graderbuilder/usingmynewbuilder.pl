@@ -15,6 +15,7 @@
 # donc plus besoin de les inclures dans le context
 @ /utils/sandboxio.py
 @ /utils/components/checkbox.py [customcheckbox.py]
+@ /utils/components/scoring.py
 
 
 title = Multiples de 3 (Checkbox)
