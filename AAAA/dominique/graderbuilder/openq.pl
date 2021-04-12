@@ -58,11 +58,14 @@ else:
 
 extracss ==
 <style>
+.exercise__form {
+    flex-wrap: nowrap  !important;
+}
 .myclass {
     color: green !important;
     font-size: 12px !important;
     box-sizing: content-box  !important;
-    flex-wrap: nowrap  !important;
+
     width:10%;
 }
 
