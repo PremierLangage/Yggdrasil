@@ -36,7 +36,6 @@ def str2sympy(s, local_dict={}, evaluate=False):
     
     #global_dict = {}
     #exec('from sympy import *', global_dict, global_dict)
-    #exec('from sympy import *', global_dict, global_dict)
     #global_dict.update(local_dict)
     def sqrt2(x):
         return sp.sqrt(x, evaluate=False)
