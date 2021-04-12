@@ -1,24 +1,21 @@
 
-extends= /AAAA/dominique/simplematchlist.pl
+extends= /model/math.expr.pl
 
-
-title==
-Matching
-==
+title=
 
 text==
 
-# Titre de l'exercice
+Soit les deux point suivant donner la fronction qui passe par les deux points ({{ x1 }},{{ y1 }}), ({{ x2, y2 }}}}).
 
-Relier chaque mot français à sa traduction en anglais
 ==
 
-delimiter % ";"
-#delimiter=;
+before==
+x1=0
+y1=0
+x2=1
+y2=1
+var('x')
+sol = x
 
-pairs==
-Pomme;Apple
-Chien;Dog
-Règle;Rule
-Chaussure;Shoes
+
 ==
