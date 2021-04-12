@@ -62,7 +62,8 @@ extracss ==
     color: green !important;
     font-size: 12px !important;
     box-sizing: content-box  !important;
-    width:48px;
+    flex-wrap: nowrap  !important;
+    width:10%;
 }
 
 </style>
