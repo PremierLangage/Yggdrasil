@@ -63,5 +63,8 @@ extracss ==
     font-size: 24px !important;
     box-sizing: content-box;
 }
+.myclass.mat-form-field {
+width:unset;
+}
 </style>
 ==
