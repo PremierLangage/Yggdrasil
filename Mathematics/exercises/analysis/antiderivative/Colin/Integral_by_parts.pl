@@ -39,7 +39,8 @@ sol = integrate(f,(x,a,b)) # Solution
 ==
 
 text ==
-Grâce à la formule d'intégration par parties, calculer l'intégrale  
+<span style="font-family:Papyrus; font-size:4em;">
+Grâce à la formule d'intégration par parties, calculer l'intégrale  </span>
 $$ \int_{ {{a | latex }} }^{ {{b | latex }} } {{f | latex}} \mathrm dx $$ 
 ==
 
