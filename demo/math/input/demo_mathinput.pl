@@ -13,7 +13,7 @@ symbol_dict = {'e': E}
 
 evaluator ==
 from latex2sympy import latex2sympy
-from sympy import srepr, fraction, sympify
+from sympy import srepr, fraction, sympify, E
 from evalsympy import is_rat_simp
 codelatex = answers['math']
 ans = latex2sympy(codelatex, local_dict=sympify(symbol_dict))
