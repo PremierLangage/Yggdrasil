@@ -1,5 +1,5 @@
 
-extends= /model/math.expr.pl
+extends= /model/math/expr.pl
 
 title=
 
