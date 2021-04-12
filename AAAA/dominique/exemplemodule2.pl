@@ -11,8 +11,12 @@ Soit les deux points suivants donner la fonction f(x) qui passe par les deux poi
 ==
 
 before==
-x1, y1= [randint(-5,5)]*2
-x2,y2= [randint(-5,5)]*2
+a=randint(1,8)
+b=randint(1,8)
+x1=randint(3,5)
+y1=a*x1+b
+x2=randint(-5,-3)
+y2 =a*x1+b
 var('x')
-sol = x
+sol = a*x+b
 ==
