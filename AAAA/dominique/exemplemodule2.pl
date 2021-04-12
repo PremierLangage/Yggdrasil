@@ -20,3 +20,5 @@ y2 =a*x2+b
 var('x')
 sol = a*x+b
 ==
+
+input_prefix= $! y= !$
