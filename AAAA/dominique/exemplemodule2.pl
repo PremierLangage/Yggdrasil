@@ -5,7 +5,7 @@ title=
 
 text==
 
-Soit les deux points suivants donner la fonction f(x) qui passe par les deux points
+Soit les deux points suivants donner la droite $! f(x)= ax+b !$ qui passe par les deux points
  {{ (x1,y1) , (x2,y2) }}.
 
 ==
