@@ -40,8 +40,8 @@ sol = integrate(f,(x,a,b)) # Solution
 
 text ==
 
-Grâce à la formule d'intégration par parties, calculer l'intégrale
 <span style="font-size:2em;">
+Grâce à la formule d'intégration par parties, calculer l'intégrale
 $$ \int_{ {{a | latex }} }^{ {{b | latex }} } {{f | latex}} \mathrm dx $$ 
 </span>
 ==
