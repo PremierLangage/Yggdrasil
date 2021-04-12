@@ -13,7 +13,7 @@ symbol_dict = {'m': meter}
 
 evaluator ==
 from sympy.physics.units.definitions.unit_definitions import meter, gram, kilogram, second, ampere, \
-kelvin, mole, candela, newton, joule, watt, pascal, hertz, coulomb, volt, ohm
+kelvin, mole, candela, newton, joule, watt, pascal, hertz, coulomb, volt, ohm, centimeter
 
 from sympy.physics.units import convert_to
 from latex2sympy import latex2sympy
