@@ -2,5 +2,11 @@ title = Exercices de mathématiques
 
 introduction = 
 
+@ /demo/math/expr/deriv_calc.pl
 @ /demo/math/expr/distance_points.pl
 @ /demo/math/expr/abstract_linear_equation.pl
+@ /demo/math/expr/line_equation.pl
+@ /demo/math/fraction/frac_add.pl
+@ /demo/math/poly/poly_factorization.pl
+@ /demo/math/set/set_intersection.pl
+@ /demo/math/poly/imageset.pl
