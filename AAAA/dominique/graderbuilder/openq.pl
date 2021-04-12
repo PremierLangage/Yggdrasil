@@ -40,11 +40,12 @@ Input Component
 ==
 
 text==
-Enter the result of ** {{ a }} + {{ b }} ** inside the input box.
+
 ==
 
 form==
-{{ inputbox|component}}
+Let see : ** {{ a }} € + {{ b }} € ** equals {{ inputbox|component}} € et des poussières.   
+Poussières que l'on ignorera ! 
 ==
 
 evaluator==
