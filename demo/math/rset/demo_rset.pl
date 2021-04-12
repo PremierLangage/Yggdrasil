@@ -1,4 +1,4 @@
-extends = /model/math/input2.pl
+extends = /model/math/input.pl
 
 title = Démonstration math/input
 
