@@ -9,12 +9,12 @@ var('x') # crée le symbole x
 
 
 
-c = randint(2,10)
+c = choice([i for i in range(2,10)])
 
 
 S = [x*exp(c*x),x*ln(c*x),x*cos(c*x),x*sin(c*x)]
 
-f = randitem(S)
+f = choice(S)
 
 
 if f==x*exp(c*x):
