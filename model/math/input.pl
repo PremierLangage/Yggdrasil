@@ -36,8 +36,8 @@ var mathFieldSpan = document.getElementById('math-field');
 var latexSpan = document.getElementById('form_math');
 var mathField = MQ.MathField(mathFieldSpan, {
   charsThatBreakOutOfSupSub: '+-=<>',
-  autoCommands: 'pi theta sqrt sum infty infin emptyset alpha',
-  autoOperatorNames: 'sin cos ln exp V',
+  autoCommands: 'pi theta sqrt sum infty infinemptyset',
+  autoOperatorNames: 'sin cos ln exp',
   handlers: {
     edit: function() { // useful event handlers
       latexSpan.value = mathField.latex(); // simple API
