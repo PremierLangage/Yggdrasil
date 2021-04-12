@@ -15,7 +15,7 @@ answer = T
 feedback_correct==
 ==
 
-# Feedback shown when the student gives the wrong answer
+# Feedback shown when the student gives the wrong answer,
 feedback_wrong==
 Il faut apprendre son cours.
 ==
