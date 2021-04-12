@@ -4,7 +4,8 @@ title = Base d'un sous-espace de $! \mathbb{R}_{2}[X] !$
 
 before ==
 
-x0,x1=list_randint_norep(2,-2,2)
+x0=randint(-2,2)
+x1=randint(-2,2)
 a=1
 b=choice([-1,1])
 n = 2
