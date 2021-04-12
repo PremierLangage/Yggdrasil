@@ -10,3 +10,4 @@ introduction =
 @ /demo/math/poly/poly_factorization.pl
 @ /demo/math/set/set_intersection.pl
 @ /demo/math/poly/imageset.pl
+@ /demo/math/tuple/linsys.pl
