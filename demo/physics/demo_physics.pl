@@ -21,8 +21,8 @@ from sympy import srepr, fraction, sympify, E
 from evalsympy import is_rat_simp
 codelatex = answers['math']
 
+ans = latex2sympy(codelatex, local_dict={'m': meter, 'cm': centimeter})
 try:
-    ans = latex2sympy(codelatex, local_dict={'m': meter, 'cm': centimeter})
     str_ans = str(ans)
     srepr_ans = srepr(ans)
     test_ans = convert_to(ans, meter)
