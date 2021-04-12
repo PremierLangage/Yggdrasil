@@ -4,10 +4,16 @@
 @ /builder/simplebefore.py [builder.py]
 @ /grader/simpleeval.py [grader.py]
 
+
+
 # Méthode 2 version historique 
 #grader  =@ /grader/evaluator.py
 #builder =@ /builder/before.py
 
+
+# les utils devraient être sur la sandbox 
+# donc plus besoin de les inclures dans le context
+@ /utils/sandboxio.py
 @ /utils/components/checkbox.py [customcheckbox.py]
 
 
