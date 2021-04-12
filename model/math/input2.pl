@@ -70,9 +70,9 @@ mathField.latex("{{ prev_value }}");
         actions.find('.action-submit').hide();
         {% endif %}
     }
-    
+
     function onBeforeSubmitPL() {
-    latexSpanvalue = mathField.latex();
+    latexSpan.value = mathField.latex();
     return true;
 }
 </script>
