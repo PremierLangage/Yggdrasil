@@ -23,7 +23,7 @@ codelatex = answers['math']
 try:
     ans = latex2sympy(codelatex, local_dict=sympify(symbol_dict))
     str_ans = str(ans)
-    srepr_ans = str(meter)
+    srepr_ans = srepr(3*meter)
     test_ans = is_rat_simp(ans)
 except:
     str_ans = ""
