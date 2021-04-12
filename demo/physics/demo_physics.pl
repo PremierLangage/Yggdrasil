@@ -9,7 +9,7 @@ before ==
 text ==
 Entrer une expression mathématique.
 ==
-symbol_dict = {'e': E}
+symbol_dict = {'m': meter}
 
 evaluator ==
 from sympy.physics.units.definitions.unit_definitions import meter, gram, kilogram, second, ampere, \
@@ -23,7 +23,7 @@ codelatex = answers['math']
 try:
     ans = latex2sympy(codelatex, local_dict=sympify(symbol_dict))
     str_ans = str(ans)
-    srepr_ans = srepr(3*meter)
+    srepr_ans = srepr(ans)
     test_ans = is_rat_simp(ans)
 except:
     str_ans = ""
