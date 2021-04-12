@@ -15,3 +15,5 @@ sol = diff(f, x)
 text ==
 Calculer la dérivée de la fonction $$ f : x \mapsto {{ f|latex }} .$$
 ==
+
+input_prefix = Mets ici ta réponse :
