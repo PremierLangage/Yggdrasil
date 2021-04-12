@@ -21,4 +21,4 @@ var('x')
 sol = a*x+b
 ==
 
-input_prefix= $! y= !$
+input_prefix= $! f(x)= !$
