@@ -23,8 +23,7 @@ evaluatorname=evaluator
 
 inputbox =: Input
 inputbox.type = text
-inputbox.placeholder = Votre réponce
-inputbox.maxlength = 2
+inputbox.placeholder = Votre réponse
 inputbox.appearance = standard
 inputbox.css = myclass
 
@@ -62,7 +61,7 @@ extracss ==
 .myclass {
     color: red !important;
     font-size: 24px !important;
-    size:0;
+    width:0;
 }
 </style>
 ==
