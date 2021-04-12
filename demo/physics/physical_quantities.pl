@@ -1,14 +1,8 @@
-extends = /model/mathinput.pl
+extends = /model/math/input.pl
 
 title = Quantités physiques
 
-input.virtualKeyboards = elementary
-
 settings.feedback = raw
-
-before ==
-
-==
 
 text ==
 Ecrire une quantité physique.
