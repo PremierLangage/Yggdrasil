@@ -3,6 +3,7 @@ extends = /model/math/expr.pl
 title = Calculer la dérivée d'une fonction
 
 before ==
+from sympy import diff
 var('x')
 n = randint(-3, 3, [0])
 g = choice([sin(x), cos(x), exp(x)])
