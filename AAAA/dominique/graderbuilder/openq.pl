@@ -26,6 +26,7 @@ inputbox.type = text
 inputbox.placeholder = Votre réponce
 inputbox.maxlength = 2
 inputbox.appearance = standard
+inputbox.css = myclass
 
 
 before==
@@ -56,3 +57,11 @@ else:
     grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
 ==
 
+extracss ==
+<style>
+.myclass {
+    color: red !important;
+    font-size: 24px !important;
+}
+</style>
+==
