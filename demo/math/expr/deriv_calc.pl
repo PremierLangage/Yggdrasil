@@ -16,4 +16,4 @@ text ==
 Calculer la dérivée de la fonction $$ f : x \mapsto {{ f|latex }} .$$
 ==
 
-input_prefix = Mets ici ta réponse :
+input_prefix = $! f'(x) !$
