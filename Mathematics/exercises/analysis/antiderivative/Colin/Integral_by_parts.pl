@@ -9,7 +9,7 @@ var('x') # crée le symbole x
 
 
 
-c = randitem([i for i in range(2,10)])
+c = randint(2,10)
 
 
 S = [x*exp(c*x),x*ln(c*x),x*cos(c*x),x*sin(c*x)]
