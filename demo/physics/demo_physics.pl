@@ -9,7 +9,7 @@ before ==
 text ==
 Entrer une expression mathématique.
 ==
-symbol_dict = {'e': E}
+symbol_dict = {'V': volt}
 
 evaluator ==
 from sympy.physics.units.definitions.unit_definitions import meter, gram, kilogram, second, ampere, \
@@ -20,12 +20,8 @@ from sympy import srepr, fraction, sympify, E
 from evalsympy import is_rat_simp
 codelatex = answers['math']
 
-
-
-ans = latex2sympy(codelatex, local_dict=sympify(symbol_dict))
-
 try:
-    ans = latex2sympy(codelatex)
+    ans = latex2sympy(codelatex, local_dict=sympify(symbol_dict))
     str_ans = str(ans)
     srepr_ans = srepr(ans)
     test_ans = is_rat_simp(ans)
