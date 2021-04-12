@@ -41,7 +41,6 @@ def str2sympy(s, local_dict={}, evaluate=False):
     def sqrt2(x):
         return sp.sqrt(x, evaluate=False)
     local_dict=local_dict.update({'sqrt' : sqrt2})
-    global_dict.update(local_dict)
     transformations=prs.standard_transformations + (prs.implicit_multiplication_application,prs.convert_xor)
     #transformations = (prs.standard_transformations + (prs.implicit_multiplication_application,))
     return prs.parse_expr(s,local_dict=local_dict,transformations=transformations,evaluate=False)
