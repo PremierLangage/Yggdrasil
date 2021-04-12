@@ -1,6 +1,6 @@
 extends = /model/math/set.pl
 
-title = Produit cartésien
+title = Ecrire en extension le produit cartésien de deux ensembles
 
 before ==
 from sympy import ProductSet
