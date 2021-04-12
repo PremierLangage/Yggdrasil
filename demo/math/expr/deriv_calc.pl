@@ -13,6 +13,5 @@ sol = diff(f, x)
 ==
 
 text ==
-{{before}}
 Calculer la dérivée de la fonction $$ f : x \mapsto {{ f|latex }} .$$
 ==
