@@ -61,6 +61,7 @@ extracss ==
 .myclass {
     color: red !important;
     font-size: 24px !important;
+    box-sizing: content-box;
 }
 </style>
 ==
