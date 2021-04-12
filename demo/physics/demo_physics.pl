@@ -21,7 +21,7 @@ from evalsympy import is_rat_simp
 codelatex = answers['math']
 
 try:
-    ans = latex2sympy(codelatex, local_dict={'m': meter})
+    ans = latex2sympy(codelatex, local_dict={'m': meter, 'cm': centimeter})
     str_ans = str(ans)
     srepr_ans = srepr(ans)
     test_ans = is_rat_simp(ans)
