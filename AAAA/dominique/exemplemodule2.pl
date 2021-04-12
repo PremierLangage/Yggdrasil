@@ -20,5 +20,5 @@ pairs==
 Pomme;Apple
 Chien;Dog
 Règle;Rule
-Chaussure -> Shoes
+Chaussure;Shoes
 ==
