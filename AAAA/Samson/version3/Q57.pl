@@ -5,7 +5,7 @@ Symétrique et linéaire à gauche
 ==
 
 text==
-<p>Soit $$E$$ une espace vectoriel sur $$\mathbb\{K\}$$ et $$\varphi\:E\times E\to\mathbb\{K\}$$. Si $$\varphi$$ est symétrique et linéaire par rapport à la première variable, alors $$\varphi$$ est bilinéaire.</p>
+<p>Soit $!E!$ une espace vectoriel sur $!\mathbb\{K\}!$ et $!\varphi\:E\times E\to\mathbb\{K\}!$. Si $$\varphi$$ est symétrique et linéaire par rapport à la première variable, alors $$\varphi$$ est bilinéaire.</p>
 ==
 
 # Expected answer (T or F)
