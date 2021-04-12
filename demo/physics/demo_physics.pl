@@ -9,7 +9,7 @@ before ==
 text ==
 Entrer une expression mathématique.
 ==
-symbol_dict = {'V': vol}
+symbol_dict = {'e': E}
 
 evaluator ==
 from sympy.physics.units.definitions.unit_definitions import meter, gram, kilogram, second, ampere, \
