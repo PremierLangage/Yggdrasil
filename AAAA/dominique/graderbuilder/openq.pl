@@ -59,9 +59,9 @@ else:
 extracss ==
 <style>
 .myclass {
-    color: red !important;
-    font-size: 24px !important;
-    box-sizing: content-box;
+    color: green !important;
+    font-size: 12px !important;
+    box-sizing: content-box  !important;
     width:48px;
 }
 
