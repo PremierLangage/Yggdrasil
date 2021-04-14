@@ -2,7 +2,7 @@ extends = /model/mathjsxgraph.pl
 
 
 name = M
-
+tol % 0.1
 script_aux ==
 
 function getMouseCoords(e) {
