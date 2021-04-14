@@ -1,4 +1,4 @@
-extends = /model/mathjsxgraph.pl
+extends = /model/mathjsxgraph/clickpoint.pl
 
 title = Cercle trigonométrique
 
