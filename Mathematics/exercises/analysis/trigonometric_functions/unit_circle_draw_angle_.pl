@@ -44,7 +44,7 @@ form==
 ==
 
 
-evaluator ==
+evaluator3 ==
 x, y = jxg.getpoint(name)
 from math import atan2,pi
 if abs((atan2(y,x)-angle)%(2*pi))<0.1:
