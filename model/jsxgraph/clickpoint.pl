@@ -1,5 +1,8 @@
 extends = /model/mathjsxgraph.pl
 
+
+name = M
+
 script_aux ==
 
 function getMouseCoords(e) {
@@ -24,7 +27,7 @@ board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
 ==
 
 evaluator ==
-x, y = jxg.getpoint('M')
+x, y = jxg.getpoint(name)
 from math import hypot
 if hypot(x-xsol, y-ysol) < 0.1:
     score = 100
