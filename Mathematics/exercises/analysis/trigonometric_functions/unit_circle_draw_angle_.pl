@@ -50,11 +50,17 @@ board.create('point',[{{xsol}}, {{ysol}}],{name:'', color:'green'});
 
 
 form==
+<center>
+{{ jxg|component }}
+</center>
+==
+
+
+form2 ==
 <div class="img-container">
 {{ jxg|component }}
 </div>
 ==
-
 
 evaluator3 ==
 x, y = jxg.getpoint(name)
