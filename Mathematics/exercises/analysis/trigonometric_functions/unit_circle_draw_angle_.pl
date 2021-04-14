@@ -13,6 +13,7 @@ jxg.setscript(script_init)
 
 jxg.attributes % {"showNavigation":false, "boundingbox":[-1.25,1.25,1.25,-1.25]}
 
+name = M
 
 script_init ==
 var grid = board.create('grid',[],{gridX:0.25,gridY:0.25});
@@ -44,7 +45,7 @@ form==
 
 
 evaluator ==
-x, y = jxg.getpoint('M')
+x, y = jxg.getpoint(name)
 from math import atan2,pi
 if abs((atan2(y,x)-angle)%(2*pi))<0.1:
     score = 100
