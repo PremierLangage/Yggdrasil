@@ -1,10 +1,11 @@
-extends = /model/mathjsxgraph/clickpoint.pl
+extends = /model/jsxgraph/clickpoint.pl
 
 title = Cercle trigonométrique
 
 before ==
+from random import choice
 lstangle = eval(param['lstangle'])
-angle = randitem(lstangle)
+angle = choice(lstangle)
 valangle = float(angle.evalf())
 xsol = float(cos(valangle))
 ysol = float(sin(valangle))
