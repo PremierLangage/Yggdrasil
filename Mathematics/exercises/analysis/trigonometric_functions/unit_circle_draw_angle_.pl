@@ -32,10 +32,10 @@ board.create('grid', [], {gridX: 0.25, gridY: 0.25});
 board.create('axis',[[0,0],[1,0]],{ticks:{visible:false}});
 board.create('axis',[[0,0],[0,1]],{ticks:{visible:false}});
 var circle = board.create('circle',[[0,0],[0,1]],{strokeColor:'blue',fixed:true});
-var O = board.create('point',[0,0],{name:'O',color:'black',fixed:true});
-var A = board.create('point',[1,0],{size:1,name:'A',color:'black',fixed:true});
-var M = board.create('glider',[1,0.5,circle],{name:'M',color:'blue',fixed:false});
-board.create('sector',[O,A,M],{color:'orange'});
+var O = board.create('point', [0,0],{size:1, name: 'O', color: 'black', fixed: true});
+var A = board.create('point', [1,0],{size:1, name: 'A', color: 'black', fixed: true});
+var M = board.create('glider', [1, 0.5, circle],{name:'M',color:'blue',fixed:false});
+board.create('sector', [O, A, M], {color: 'orange'});
 ==
 
 
@@ -44,15 +44,15 @@ Placer le point $% M %$ d'affixe $%{{ z|latex }}%$ dans le plan ci-dessous.
 ==
 
 script_solution ==
-board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
+board.create('point',[{{xsol}}, {{ysol}}],{name:'', color:'green'});
 ==
 
 
 
 form==
-<center>
+<div class="img-container">
 {{ jxg|component }}
-</center>
+</div>
 ==
 
 
