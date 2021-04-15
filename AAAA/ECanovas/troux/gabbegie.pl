@@ -26,7 +26,7 @@ enonc,dico,types = splitenonce(montexte)
 #menuForm =gethtmlmenu(enonc,dico)
 
 # Mathinput FORM
-#mathiForm=getFormMathinput(enonc,types)
+mathiForm=getFormMathinput(enonc,types)
 
 #form=mathiForm
 
