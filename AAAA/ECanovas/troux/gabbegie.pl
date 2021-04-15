@@ -33,10 +33,10 @@ enonc,dico,types = splitenonce(montexte)
 #text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(mathiForm)
 
 # premier item du dic : les bonnes solutions
-lesSol="aucune solution"
-if types != "":
-    lesSol=types[0]
-    lesSol=(lesSol[1])
+#lesSol="aucune solution"
+#if types != "":
+#    lesSol=types[0]
+#    lesSol=(lesSol[1])
 
 text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(lesSol)
 sol=""
