@@ -16,6 +16,7 @@ def splitenonce(enonce="nothing"): #
 
     #pattern = re.compile(r'(?:{=(?P<value>(?:[\,,\s,\w,-]+?))(?:\#(?P<feedback>[\w,\,].+?))?})')
 
+    # FORMAT {:MATHiNPUT:=bonne réponse1,bonne réponse2 ~ mauvaise réponse1,...}
     patterntype = re.compile(r'(?:{\:(?P<type>[\w]+?)\:(?:=(?P<mathivalue>[\,,\s,\w,-]+?))*?(?:~(?P<mathibadvalue>[\,,\s,\w,-]+?))*?})')
 
     #for line in lines:
@@ -29,12 +30,12 @@ def splitenonce(enonce="nothing"): #
     #    choices.append(choice)
     
     #choices=re.findall(pattern,enonce)
-    types=re.findall(patterntype,enonce)
+    mathtypes=re.findall(patterntype,enonce)
 
     enoncetroux=re.sub(r'\{.+?\}', REPLACESTRING, enonce)
     
     
-    return enoncetroux,choices,types
+    return enoncetroux,choices,mathtypes
 
 def defhtmlmenu(indice,dico):
     """
