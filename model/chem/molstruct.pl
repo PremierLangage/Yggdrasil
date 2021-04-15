@@ -16,7 +16,7 @@ Décrire la structure du 3-Méthylbutan-1-ol
 
 title = Décrire la structure d'une molécule
 
-smiles = CC(C)CCO
+smiles = OCCC(C)C
 
 form ==
 <div id="composer" data-widget="Kekule.Editor.Composer"></div>
