@@ -45,7 +45,7 @@ from ast import literal_eval
 from sympy import sympify
 from evalsympy import eval_expr
 for solu in lesSol:
-    score, error = eval_expr(answers['math'], solu, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
+    score, error = eval_expr(answers['math'], sol, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
     if error==0:
         break
 feedback = message[error]
