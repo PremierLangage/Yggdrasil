@@ -35,7 +35,7 @@ def splitenonce(enonce="nothing"): #
     #    choices.append(choice)
     
     #choices=re.findall(pattern,enonce)
-    mathtypes=re.findall(patterntype,enonce)
+    #mathtypes=re.findall(patterntype,enonce)
 
     enoncetroux=re.sub(r'\{:.+?:.+?\}', REPLACESTRING, enonce)
 
