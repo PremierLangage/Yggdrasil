@@ -29,6 +29,6 @@ form=mathiForm
 
 #m = defhtmlmenu(2,dico)
 #text=text+"<br/>"+enonc+"<br/><i> Result= " +str(dico)+"</i><br/>"
-text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(dico)
+text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(mathiForm)
 ==
 
