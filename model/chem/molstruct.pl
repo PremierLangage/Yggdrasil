@@ -35,6 +35,7 @@ composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula']);
     var mol = composer.exportObjs(Kekule.Molecule)[0];
     var smiles = Kekule.IO.saveFormatData(mol, 'smi');
     var textarea = document.getElementById("form_smiles");
+    textarea.value = smiles
     return true;
 }
 
