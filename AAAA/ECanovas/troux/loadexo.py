@@ -14,7 +14,7 @@ def splitenonce(enonce="nothing"): #
     #pattern = re.compile(r
     # '.*{(?:=(?P<value>(?:(?:\\\#)|[^\#])+)(?:\#(?P<feedback>.*))}?)')
 
-    pattern = re.compile(r'(?:{=(?P<value>(?:[\,,\s,\w,-]+?))(?:\#(?P<feedback>[\w,\,].+?))?})')
+    #pattern = re.compile(r'(?:{=(?P<value>(?:[\,,\s,\w,-]+?))(?:\#(?P<feedback>[\w,\,].+?))?})')
 
     patterntype = re.compile(r'(?:{\:(?P<type>[\w]+?)\:(?:=(?P<mathivalue>[\,,\s,\w,-]+?))*?(?:~(?P<mathibadvalue>[\,,\s,\w,-]+?))*?})')
 
@@ -28,7 +28,7 @@ def splitenonce(enonce="nothing"): #
     #    }
     #    choices.append(choice)
     
-    choices=re.findall(pattern,enonce)
+    #choices=re.findall(pattern,enonce)
     types=re.findall(patterntype,enonce)
 
     enoncetroux=re.sub(r'\{.+?\}', REPLACESTRING, enonce)
