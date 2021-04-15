@@ -32,7 +32,8 @@ form=mathiForm
 
 #text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(mathiForm)
 
-lesSol=mathiForm[1]
+lesSol=mathiForm[0]
+lesSol=lesSol[1]
 
 text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(lesSol)
 sol=1
