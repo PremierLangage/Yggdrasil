@@ -25,7 +25,7 @@ enonc,dico,types = splitenonce(montexte)
 # Mathinput FORM
 mathiForm=getFormMathinput(enonc,types)
 
-form=mathiForm
+form={{ input|component}}
 
 #m = defhtmlmenu(2,dico)
 #text=text+"<br/>"+enonc+"<br/><i> Result= " +str(dico)+"</i><br/>"
