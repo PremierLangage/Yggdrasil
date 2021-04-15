@@ -83,9 +83,7 @@ extracss ==
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/kekule/dist/themes/default/kekule.css" />
 ==
 
-extrajs==
 
-==
 evaluator ==
 grade=(100,answers['SMILES'])
 ==
