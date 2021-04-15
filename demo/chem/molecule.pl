@@ -1,4 +1,4 @@
-extends = model/chem/molstruct
+extends = model/chem/molstruct.pl
 
 title = Décrire la structure d'une molécule
 
