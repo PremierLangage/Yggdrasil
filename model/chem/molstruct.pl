@@ -17,7 +17,7 @@ title =
 form ==
 <div id="composer" data-widget="Kekule.Editor.Composer"></div>
 
-<input type="text" id="form_smiles" hidden=true>
+<input type="text" id="form_smiles">
 ==
 
 
