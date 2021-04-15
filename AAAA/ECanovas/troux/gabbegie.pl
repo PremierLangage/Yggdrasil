@@ -1,5 +1,5 @@
 #extends = /gift/templates/qshortset.pl
-#extends = /model/math/expr.pl
+extends = /model/math/expr.pl
 
 @loadexo.py
 
@@ -31,5 +31,7 @@ mathiForm=getFormMathinput(enonc,types)
 #form=mathiForm
 
 text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(mathiForm)
+
+sol=1
 ==
 
