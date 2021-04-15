@@ -29,7 +29,7 @@ extrajs ==
 
 var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
 
-    function onBeforeSubmitPL() {
+function onBeforeSubmitPL() {
     var mol = composer.exportObjs(Kekule.Molecule)[0];
     var smiles = Kekule.IO.saveFormatData(mol, 'smi');
     var textarea = document.getElementById("form_smiles");
