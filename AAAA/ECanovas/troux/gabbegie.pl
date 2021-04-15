@@ -46,7 +46,7 @@ evaluator ==
 from ast import literal_eval
 from sympy import sympify
 from evalsympy import eval_expr
-if lesSol == "":
+if lesSol == "?":
    score=0
    feedback = "Les solutions sont mal écrites!"
 else:
