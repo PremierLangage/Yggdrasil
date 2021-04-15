@@ -10,9 +10,9 @@ before =
 
 text =
 
-title =
+title = Décrire la structure d'une molécule
 
-
+smiles = CC(C)C
 
 form ==
 <div id="composer" data-widget="Kekule.Editor.Composer"></div>
@@ -52,6 +52,8 @@ extracss ==
 
 
 evaluator ==
-score = 0
-feedback = answers['smiles']
+if answers['smiles'] == smiles:
+    score = 100
+else:
+    score = 0
 ==
