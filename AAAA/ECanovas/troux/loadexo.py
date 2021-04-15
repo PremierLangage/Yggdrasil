@@ -16,6 +16,7 @@ def splitenonce(enonce="nothing"): #
 
     pattern = re.compile(r'(?:{=(?P<value>(?:[\,,\s,\w,-]+?))(?:\#(?P<feedback>[\w,\,].+?))?})')
 
+    patterntype = re.compile(r'(?:{:(?P<type>(?:[]+?)):})')
     #for line in lines:
     #    match = pattern.match(line,re.MULTILINE)
     #    if not match:
@@ -28,7 +29,7 @@ def splitenonce(enonce="nothing"): #
     
     choices=re.findall(pattern,enonce)
     enoncetroux=re.sub(r'\{.+?\}', REPLACESTRING, enonce)
-
+    types=re.findall(patterntypes,enonce)
     return enoncetroux,choices
 
 def defhtmlmenu(indice,dico):
