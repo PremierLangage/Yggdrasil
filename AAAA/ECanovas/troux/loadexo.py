@@ -11,7 +11,7 @@ def splitenonce(enonce="nothing"): #
     
     """
     lines = enonce.split('\n')
-    choices = ""
+    choices = "bulle"
     mathtypes=""
 
     # FORMAT Menu HTML {=x,y,z #a}
