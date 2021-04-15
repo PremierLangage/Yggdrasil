@@ -17,9 +17,7 @@ xC=randint(-4,4)
 yC=randint(-4,4)
 
 
-sol = yA*(x-xB)*(x-xC)/((xA-xB)*(xA-xC))+
-      yB*(x-xA)*(x-xC)/((xB-xA)*(xB-xC))+
-      yC*(x-xB)*(x-xA)/(xC-xB)*(xC-xA)
+sol = yA*(x-xB)*(x-xC)/((xA-xB)*(xA-xC))+yB*(x-xA)*(x-xC)/((xB-xA)*(xB-xC))+ yC*(x-xB)*(x-xA)/((xC-xB)*(xC-xA))
 image = plotsvg(sol)
 ==
 
