@@ -33,7 +33,7 @@ form=mathiForm
 #text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(mathiForm)
 
 # premier item du dic : les bonnes solutions
-lesSol="aucune solution"
+lesSol="?"
 if types != "?":
     lesSol=types[0]
     lesSol=(lesSol[1])
