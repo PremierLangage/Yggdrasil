@@ -13,7 +13,7 @@ Compléter les trous du texte suivant
 == 
 
 before==
-montexte="il était une fois {:MATHINPUT:=11,22~2} un {=lapin, 2    #avec de grandes oreilles} de \
+montexte="il était une fois un {=lapin, 2    #avec de grandes oreilles} de \
 <br/>\n    {:MATHINPUT:=3,5,7} pelage {=blanc-vert,bleu,rouge } blabli blablou {=hiver,ete,automne #oh saison} et toc.."
 
 from loadexo import *
@@ -24,7 +24,8 @@ enonc,dico,types = splitenonce(montexte)
 # html complet FORM menu 
 #menuForm =gethtmlmenu(enonc,dico)
 # Mathinput FORM
-mathiForm=getFormMathinput(enonc,types)
+# si plusieurs input : mathiForm=getFormMathinput(enonc,types)
+mathiForm=defFormMathinput(enonc,types)
 
 form=mathiForm
 
