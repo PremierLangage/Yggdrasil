@@ -34,9 +34,8 @@ extrajs ==
 var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
 
 composer
-  .setCommonToolButtons(['newDoc', 'loadData', 'saveData', 'undo', 'redo'])  // create a small number of tool buttons
-  .setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula',
-    'ring', 'charge', 'glyph', 'textAndImage']);   // create all default chem tool buttons
+  .setCommonToolButtons(['undo', 'redo'])  // create a small number of tool buttons
+  .setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula']);   // create all default chem tool buttons
 
 function onBeforeSubmitPL() {
     var mol = composer.exportObjs(Kekule.Molecule)[0];
