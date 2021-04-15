@@ -32,7 +32,7 @@ form=mathiForm
 
 #text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(mathiForm)
 
-lesSol=mathiForm[0]
+lesSol=types[0]
 #lesSol=lesSol[1]
 
 text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(lesSol)
