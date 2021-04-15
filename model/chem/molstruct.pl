@@ -25,11 +25,7 @@ form ==
 extrajs ==
 <script src="https://unpkg.com/kekule/dist/kekule.js?modules=chemWidget,algorithm"></script>
 <script>
- function onReadyPL(nodes) {
-var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
-composer.setCommonToolButtons(['undo', 'redo']);
-composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula']);
-}
+
 
 var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
 composer.setCommonToolButtons(['undo', 'redo']);
