@@ -42,6 +42,7 @@ if types != []:
 
 text=text+"<br/><small> lesSol= "+str(lesSol)+"</small>"
 sol=""
+lesSol="-sin(y+2)"
 ==
 
 checkratsimp = True
