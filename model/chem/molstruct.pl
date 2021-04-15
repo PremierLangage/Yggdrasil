@@ -16,7 +16,7 @@ title =
 form ==
 <div id="composer" data-widget="Kekule.Editor.Composer" data-chem-obj=""></div>
 
-<input type="text" id="form_SMILES" hidden=true>
+<input type="text" id="form_smiles" hidden=true>
 ==
 
 
@@ -32,7 +32,7 @@ composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula']);
 function getSmile() {
     var mol = composer.exportObjs(Kekule.Molecule)[0];
     var smiles = Kekule.IO.saveFormatData(mol, 'smi');
-    var textarea = document.getElementById("smiles");
+    var textarea = document.getElementById("form_smiles");
     textarea.value = smiles;
 }
 
@@ -51,5 +51,5 @@ extracss ==
 
 
 evaluator ==
-grade=(100,answers['SMILES'])
+grade=(100,answers['smiles'])
 ==
