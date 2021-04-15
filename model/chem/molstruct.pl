@@ -2,7 +2,6 @@ extends = /model/math/math.pl
 
 jinja_keys % ["text", "solution", "input_prefix"]
 
-input_prefix = Réponse :
 
 before =
 
@@ -13,7 +12,7 @@ title =
 
 
 form ==
-<div id="composer" style="width:500px;height:200px" data-widget="Kekule.Editor.Composer" data-chem-obj="url(#molecule)"></div>
+<div id="composer" style="width:500px;height:500px" data-widget="Kekule.Editor.Composer" data-chem-obj=""></div>
 
 <input type="text" id="form_SMILES" hidden=true>
 ==
