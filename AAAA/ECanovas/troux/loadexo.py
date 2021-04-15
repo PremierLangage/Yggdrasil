@@ -23,7 +23,7 @@ def splitenonce(enonce="nothing"): #
     # FORMAT {:MATHINPUT par ex:=bonne réponse1,bonne réponse2 ~ mauvaise réponse1,...}
     #patterntype = re.compile(r'(?:{\:(?P<type>[\w]+?)\:(?:=(?P<mathivalue>[\,,\(,\),\s,\w,-]+?))*?(?:~(?P<mathibadvalue>[\,,\s,\w,-]+?))*?})')
     #patterntype = re.compile(r'(?:{\:(?P<type>[\w]+?)\:(?:=(?P<mathivalue>[\,,\s,\w,-]+?))*?(?:~(?P<mathibadvalue>[\,,\s,\w,-]+?))*?})')
-    patterntype = re.compile(r'(?:{\:(?P<type>[\w]+?)\:(?:=(?P<mathivalue>.+?))*?(?:~(?P<mathibadvalue>[\,,\s,\w,-]+?))*?})')
+    patterntype = re.compile(r'(?:{\:(?P<type>[\w]+?)\:(?:=(?P<mathivalue>.+?))})')
 
     #for line in lines:
     #    match = pattern.match(line,re.MULTILINE)
