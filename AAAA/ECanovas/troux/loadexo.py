@@ -40,8 +40,8 @@ def splitenonce(enonce="nothing"): #
     mathtypes=re.findall(patterntype,enonce)
 
     enoncetroux=re.sub(r'//:.+?:.+?//', REPLACESTRING, enonce)
-    if mathtypes=="":
-        mathtypes="?"
+    if mathtypes=='':
+        mathtypes='?'
     return enoncetroux,"?",mathtypes
 
 def defFormMathinput(indice,dico):
