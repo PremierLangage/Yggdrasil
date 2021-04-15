@@ -30,7 +30,8 @@ def splitenonce(enonce="nothing"): #
     choices=re.findall(pattern,enonce)
     enoncetroux=re.sub(r'\{.+?\}', REPLACESTRING, enonce)
     types=re.findall(patterntypes,enonce)
-    return enoncetroux,choices
+    
+    return enoncetroux,choices,types
 
 def defhtmlmenu(indice,dico):
     """
