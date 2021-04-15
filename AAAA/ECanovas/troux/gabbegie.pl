@@ -15,7 +15,7 @@ Compléter les trous du texte suivant
 before==
 #montexte="il était une fois un {=lapin, 2    #avec de grandes oreilles} de <br/>\n   pelage {=blanc-vert,bleu,rouge } blabli blablou {=hiver,ete,automne #oh saison} et toc.."
 
-montexte="il était une fois une expression latex <br/>\n    //:MATHINPUT:=\sqrt{3},-\sin{x+180},\\frac{1}{n^2}// à résoudre et toc.."
+montexte="il était une fois une expression latex <br/>\n    //:MATHINPUT:=sqrt(3),-\sin{x+180},\\frac{1}{n^2}// à résoudre et toc.."
 
 from loadexo import *
 
@@ -41,8 +41,7 @@ if types != []:
     lesSol=(lesSol[1])
 
 text=text+"<br/><small> lesSol= "+str(lesSol)+"</small>"
-sol="\sqrt{8}"
-lesSol=(sol)
+sol=""
 ==
 
 evaluator ==
