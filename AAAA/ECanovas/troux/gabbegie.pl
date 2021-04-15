@@ -35,7 +35,7 @@ form=mathiForm
 lesSol=mathiForm[1]
 
 text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(lesSol)
-
+sol=1
 ==
 
 evaluator ==
