@@ -38,7 +38,7 @@ lesSol="?"
 #    lesSol=types[0]
 #    lesSol=(lesSol[1])
 
-text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(lesSol)
+text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/> lesSol= "+str(lesSol)
 sol="1"
 ==
 
