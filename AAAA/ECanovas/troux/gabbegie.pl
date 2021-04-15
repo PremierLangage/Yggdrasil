@@ -30,7 +30,7 @@ mathiForm=getFormMathinput(enonc,types)
 
 form=mathiForm
 
-#text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(mathiForm)
+text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/> form= "+str(mathiForm)
 
 # premier item du dic : les bonnes solutions
 lesSol="?"
@@ -38,7 +38,7 @@ lesSol="?"
 #    lesSol=types[0]
 #    lesSol=(lesSol[1])
 
-text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/> lesSol= "+str(lesSol)
+text="<br/> lesSol= "+str(lesSol)
 sol="1"
 ==
 
