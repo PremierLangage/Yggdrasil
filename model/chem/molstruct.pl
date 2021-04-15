@@ -27,7 +27,6 @@ extrajs ==
 <script>
  function onReadyPL(nodes) {
 var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
-composer.getEditorConfigs().getChemSpaceConfigs().setDefScreenSize2D({x: 50, y: 50});
 composer.setCommonToolButtons(['undo', 'redo']);
 composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula']);
 }
