@@ -39,7 +39,7 @@ def splitenonce(enonce="nothing"): #
     
     mathtypes=re.findall(patterntype,enonce)
 
-    enoncetroux=re.sub(r'\{:.+?:.+?\}', REPLACESTRING, enonce)
+    enoncetroux=re.sub(r'//:.+?:.+?//', REPLACESTRING, enonce)
 
     return enoncetroux,"?",mathtypes
 
