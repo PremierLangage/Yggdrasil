@@ -30,7 +30,7 @@ mathiForm=getFormMathinput(enonc,types)
 
 form=mathiForm
 
-text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/> form= "+str(mathiForm)
+#text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/> form= "+str(mathiForm)
 
 # premier item du dic : les bonnes solutions
 lesSol="?"
@@ -38,23 +38,23 @@ if types != []:
     lesSol=types[0]
     lesSol=(lesSol[1])
 
-text=text+"<br/> lesSol= "+str(lesSol)
-sol="1"
+text=text+"<br/><small> lesSol= "+str(lesSol)+"</small>"
+sol=""
 ==
 
-#evaluator ==
-#from ast import literal_eval
-#from sympy import sympify
-#from evalsympy import eval_expr
-#if lesSol == "?":
-#   score=0
-#   feedback = "Les solutions sont mal écrites!"
-#else:
-#    for sol in lesSol:
-#        score, error = eval_expr(answers['math'], sol, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
-#        if error==0:
-#            break
-#    feedback = message[error]
-#==
+evaluator ==
+from ast import literal_eval
+from sympy import sympify
+from evalsympy import eval_expr
+if lesSol == "?":
+   score=0
+   feedback = "Les solutions sont mal écrites!"
+else:
+    for sol in lesSol:
+        score, error = eval_expr(answers['math'], sol, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
+        if error==0:
+            break
+    feedback = message[error]
+==
 
 
