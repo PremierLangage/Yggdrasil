@@ -25,8 +25,8 @@ extrajs ==
 <script src="https://unpkg.com/kekule/dist/kekule.js?modules=chemWidget,algorithm"></script>
 <script>
 var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
-composer.setCommonToolButtons(['undo', 'redo','zoomIn', 'zoomOut']);
-composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula', 'ring', 'charge']);
+composer.setCommonToolButtons(['undo', 'redo']);
+composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula']);
 
 function getSmile() {
     var mol = composer.exportObjs(Kekule.Molecule)[0];
