@@ -37,11 +37,11 @@ def splitenonce(enonce="nothing"): #
 
     return enoncetroux,choices,mathtypes
 
-def defformmathinput(indice,dico):
+def defFormMathinput(indice,dico):
     unInput="{{ input|component}}"
     return unInput
 
-def getformmathinput(enonce,dico):
+def getFormMathinput(enonce,dico):
     """
     >>> getformmathinput(enonce,dico)
     
