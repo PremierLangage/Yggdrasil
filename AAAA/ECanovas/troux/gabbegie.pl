@@ -37,14 +37,14 @@ lesSol=types[0]
 lesSol=lesSol[1]
 
 text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(lesSol)
-sol=
+sol=""
 ==
 
 evaluator ==
 from ast import literal_eval
 from sympy import sympify
 from evalsympy import eval_expr
-for solu in lesSol:
+for sol in lesSol:
     score, error = eval_expr(answers['math'], sol, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
     if error==0:
         break
