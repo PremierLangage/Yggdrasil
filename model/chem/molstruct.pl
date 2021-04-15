@@ -1,8 +1,9 @@
-@ lib:/utils/sandboxio.py
-@ lib:/builder/before.py [builder.py]
-@ lib:/grader/evaluator.py [grader.py]
+@ /builder/before2.py [builder.py]
+@ /grader/evaluator2.py [grader.py]
+@ /utils/builderlib.py
 
-jinja_keys % ["text", "solution", "input_prefix"]
+
+jinja_keys % ["text"]
 
 
 before =
