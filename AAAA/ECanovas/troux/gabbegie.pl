@@ -20,16 +20,15 @@ montexte="il était une fois une expression latex <br/>\n    {:MATHINPUT:=sin(x)
 from loadexo import *
 
 # du texte vers le dico des réponses/feedbacks et texte
-types=""
 enonc,dico,types = splitenonce(montexte)
 
 # html complet FORM menu 
 #menuForm =gethtmlmenu(enonc,dico)
 
 # Mathinput FORM
-mathiForm=getFormMathinput(enonc,types)
+#mathiForm=getFormMathinput(enonc,types)
 
-form=mathiForm
+#form=mathiForm
 
 #text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(mathiForm)
 
