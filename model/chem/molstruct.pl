@@ -21,7 +21,7 @@ smiles = OCCC(C)C
 form ==
 <div id="composer" data-widget="Kekule.Editor.Composer"></div>
 
-<input type="text" id="form_smiles">
+<input type="text" id="form_smiles" hidden="true">
 ==
 
 
