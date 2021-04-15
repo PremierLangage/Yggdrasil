@@ -22,8 +22,10 @@ enonc,dico,types = splitenonce(montexte)
 
 # html complet FORM menu 
 #menuForm =gethtmlmenu(enonc,dico)
+# Mathinput FORM
+mathiForm=getFormMAthinput(enonc,types)
 
-#form=menuForm
+form=mathiForm
 
 #m = defhtmlmenu(2,dico)
 #text=text+"<br/>"+enonc+"<br/><i> Result= " +str(dico)+"</i><br/>"
