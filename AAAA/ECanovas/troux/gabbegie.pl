@@ -37,7 +37,7 @@ lesSol=types[0]
 lesSol=str(lesSol[1])
 
 text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(lesSol)
-sol=1
+sol=5
 ==
 
 evaluator ==
