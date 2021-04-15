@@ -15,11 +15,11 @@ var('x')
 #yC=randint(-4,4)
 
 
-xA = choice([-1, 1]) * sympify(choice(['1/2', 1, '3/2', 2]))
-yA = choice([-1, 1]) * sympify(choice(['1/2', 1, '3/2', 2]))
-xB=randint(-4,4)
+xA = randint(-4,-1)
+yA = randini(-4,4)
+xB=xA+randint(1,2)
 yB=randint(-4,4)
-xC=randint(-4,4)
+xC=xB+randint(1,2)
 yC=randint(-4,4)
 
 sol = yA*(x-xB)*(x-xC)/((xA-xB)*(xA-xC))+yB*(x-xA)*(x-xC)/((xB-xA)*(xB-xC))+ yC*(x-xB)*(x-xA)/((xC-xB)*(xC-xA))
