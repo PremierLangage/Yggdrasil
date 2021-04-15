@@ -3,7 +3,7 @@ import re
 
 REPLACESTRING="ZZ"
 TYPESTRING="MATHINPUT"
-input_prefix = "Résultat :"
+input_prefix = ""
 
 def splitenonce(enonce="nothing"): # 
     """
@@ -43,10 +43,7 @@ def defFormMathinput(indice,dico):
     return unInput
 
 def getFormMathinput(enonce,dico):
-    """
-    >>> getformmathinput(enonce,dico)
-    
-    """
+
     indice=0
     maForm=""
     lines = enonce.split('\n')
