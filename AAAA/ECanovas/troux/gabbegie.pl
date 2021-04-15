@@ -28,9 +28,9 @@ enonc,dico,types = splitenonce(montexte)
 # Mathinput FORM
 mathiForm=getFormMathinput(enonc,types)
 
-#form=mathiForm
+form=mathiForm
 
-text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(mathiForm)
+#text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(mathiForm)
 
 sol=1
 ==
