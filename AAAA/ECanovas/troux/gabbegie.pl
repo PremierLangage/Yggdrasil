@@ -42,6 +42,7 @@ if types != []:
 
 text=text+"<br/><small> lesSol= "+str(lesSol)+"</small>"
 sol="\sqrt{8}"
+lesSol=(sol)
 ==
 
 evaluator ==
