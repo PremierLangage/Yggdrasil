@@ -32,6 +32,18 @@ form=mathiForm
 
 #text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(mathiForm)
 
-sol=1
+sol=mathiForm[1]
+
+#text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(sol)
+
 ==
+
+evaluator ==
+from ast import literal_eval
+from sympy import sympify
+from evalsympy import eval_expr
+score, error = eval_expr(answers['math'], sol, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
+feedback = message[error]
+==
+
 
