@@ -28,15 +28,15 @@ enonc,dico,types = splitenonce(montexte)
 # Mathinput FORM
 mathiForm=getFormMathinput(enonc,types)
 
-#form=mathiForm
+form=mathiForm
 
-text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(mathiForm)
+#text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(mathiForm)
 
 # premier item du dic : les bonnes solutions
 lesSol="aucune solution"
-#if types != "":
-#    lesSol=types[0]
-#    lesSol=(lesSol[1])
+if types != "":
+    lesSol=types[0]
+    lesSol=(lesSol[1])
 
 text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(lesSol)
 sol=""
@@ -46,11 +46,15 @@ evaluator ==
 from ast import literal_eval
 from sympy import sympify
 from evalsympy import eval_expr
-for sol in lesSol:
-    score, error = eval_expr(answers['math'], sol, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
-    if error==0:
-        break
-feedback = message[error]
+if lesSol == "":
+   score=0
+   feedback = "Les solutions sont mal écrites!"
+else:
+    for sol in lesSol:
+        score, error = eval_expr(answers['math'], sol, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
+        if error==0:
+            break
+    feedback = message[error]
 ==
 
 
