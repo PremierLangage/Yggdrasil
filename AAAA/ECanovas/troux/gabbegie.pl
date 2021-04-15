@@ -15,7 +15,7 @@ Compléter les trous du texte suivant
 before==
 #montexte="il était une fois un {=lapin, 2    #avec de grandes oreilles} de <br/>\n   pelage {=blanc-vert,bleu,rouge } blabli blablou {=hiver,ete,automne #oh saison} et toc.."
 
-montexte="il était une fois une expression latex <br/>\n    {:MATHINPUT:='3','5','7'} à résoudre et toc.."
+montexte="il était une fois une expression latex <br/>\n    {:MATHINPUT:=\"3\",\"5\",\"7\"} à résoudre et toc.."
 
 from loadexo import *
 
