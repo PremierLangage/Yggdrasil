@@ -20,6 +20,7 @@ montexte="il était une fois une expression latex <br/>\n    {:MATHINPUT:=sin(x)
 from loadexo import *
 
 # du texte vers le dico des réponses/feedbacks et texte
+types=""
 enonc,dico,types = splitenonce(montexte)
 
 # html complet FORM menu 
