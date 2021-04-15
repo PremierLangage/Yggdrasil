@@ -44,6 +44,10 @@ text=text+"<br/><small> lesSol= "+str(lesSol)+"</small>"
 sol=""
 ==
 
+checkratsimp = True
+symbol_dict = {'e': E}
+unauthorized_func = []
+
 evaluator ==
 from ast import literal_eval
 from sympy import sympify
