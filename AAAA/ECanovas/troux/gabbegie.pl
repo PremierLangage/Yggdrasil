@@ -32,9 +32,9 @@ form=mathiForm
 
 #text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(mathiForm)
 
-sol=mathiForm[1]
+lesSol=mathiForm[1]
 
-#text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(sol)
+text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/>"+str(lesSol)
 
 ==
 
@@ -42,7 +42,10 @@ evaluator ==
 from ast import literal_eval
 from sympy import sympify
 from evalsympy import eval_expr
-score, error = eval_expr(answers['math'], sol, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
+for solu in lesSol:
+    score, error = eval_expr(answers['math'], solu, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
+    if error==0:
+        break
 feedback = message[error]
 ==
 
