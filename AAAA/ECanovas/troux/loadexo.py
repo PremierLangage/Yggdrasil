@@ -22,7 +22,7 @@ def splitenonce(enonce="nothing"): #
 
     # FORMAT {:MATHINPUT par ex:=bonne réponse1,bonne réponse2 ~ mauvaise réponse1,...}
     #patterntype = re.compile(r'(?:{\:(?P<type>[\w]+?)\:(?:=(?P<mathivalue>[\,,\(,\),\s,\w,-]+?))*?(?:~(?P<mathibadvalue>[\,,\s,\w,-]+?))*?})')
-    #patterntype = re.compile(r'(?:{\:(?P<type>[\w]+?)\:(?:=(?P<mathivalue>[\,,\s,\w,-]+?))*?(?:~(?P<mathibadvalue>[\,,\s,\w,-]+?))*?})')
+    patterntype = re.compile(r'(?:{\:(?P<type>[\w]+?)\:(?:=(?P<mathivalue>[\,,\s,\w,-]+?))*?(?:~(?P<mathibadvalue>[\,,\s,\w,-]+?))*?})')
 
     #for line in lines:
     #    match = pattern.match(line,re.MULTILINE)
@@ -35,11 +35,13 @@ def splitenonce(enonce="nothing"): #
     #    choices.append(choice)
     
     #choices=re.findall(pattern,enonce)
-    #mathtypes=re.findall(patterntype,enonce)
+    
+    mathtypes=re.findall(patterntype,enonce)
 
     enoncetroux=re.sub(r'\{:.+?:.+?\}', REPLACESTRING, enonce)
 
-    return enoncetroux,choices,mathtypes
+    #return enoncetroux,choices,mathtypes
+    return enoncetroux,[rien],[rien]
 
 def defFormMathinput(indice,dico):
     unInput='<p>'+input_prefix+'<span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p> <input type="text" id="form_math" hidden=true> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">'
