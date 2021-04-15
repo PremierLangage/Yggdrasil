@@ -30,47 +30,13 @@ extrajs ==
 <script src="https://unpkg.com/kekule/dist/kekule.js?modules=chemWidget,algorithm"></script>
 <script>
 
-var N = Kekule.ChemWidget.ComponentWidgetNames;
-var C = Kekule.Editor.ObjModifier.Category;
 
-// Common toolbar buttons
-composer.setCommonToolButtons([
-	N.undo,
-	N.redo
-]);
-
-// Chem toolbar buttons
-composer.setChemToolButtons([
-	{
-		"name": N.manipulate,
-		"attached": [
-		]
-	},
-	N.erase,
-	{
-		"name": N.molBond,
-		"attached": [
-			N.molBondSingle,
-			N.molBondDouble,
-			N.molBondTriple,
-			N.molBondWedgeUp,
-			N.molBondWedgeDown
-		]
-	},
-	{
-		"name": N.molAtomAndFormula,
-		"attached": [
-			N.molAtom,
-			N.molFormula
-		]
-	}
-]);
-
-// Object modifiers
 var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
 
-composer.setAllowedObjModifierCategories([C.GENERAL, C.CHEM_STRUCTURE, C.GLYPH, C.STYLE, C.MISC]);
-
+composer
+  .setCommonToolButtons(['newDoc', 'loadData', 'saveData', 'undo', 'redo'])  // create a small number of tool buttons
+  .setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula',
+    'ring', 'charge', 'glyph', 'textAndImage']);   // create all default chem tool buttons
 
 function onBeforeSubmitPL() {
     var mol = composer.exportObjs(Kekule.Molecule)[0];
