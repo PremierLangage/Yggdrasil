@@ -53,5 +53,6 @@ extracss ==
 
 
 evaluator ==
-grade=(100,answers['smiles'])
+score =0
+feedback = answers['smiles']
 ==
