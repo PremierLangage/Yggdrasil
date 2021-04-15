@@ -14,7 +14,7 @@ title =
 
 
 form ==
-<div id="composer" style="width:500px;height:500px" data-widget="Kekule.Editor.Composer" data-chem-obj=""></div>
+<div id="composer" data-widget="Kekule.Editor.Composer" data-chem-obj=""></div>
 
 <input type="text" id="form_SMILES" hidden=true>
 ==
