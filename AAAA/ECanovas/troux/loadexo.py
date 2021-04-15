@@ -40,8 +40,8 @@ def splitenonce(enonce="nothing"): #
 
     enoncetroux=re.sub(r'\{:.+?:.+?\}', REPLACESTRING, enonce)
 
-    #return enoncetroux,choices,mathtypes
-    return enoncetroux,[1,2],[1,2]
+    return enoncetroux,choices,mathtypes
+    #return enoncetroux,[1,2],[1,2]
 
 def defFormMathinput(indice,dico):
     unInput='<p>'+input_prefix+'<span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p> <input type="text" id="form_math" hidden=true> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">'
