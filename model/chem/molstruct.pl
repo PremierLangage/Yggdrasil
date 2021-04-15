@@ -28,8 +28,6 @@ extrajs ==
 
 
 var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
-composer.setCommonToolButtons(['undo', 'redo']);
-composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula']);
 
     function onBeforeSubmitPL() {
     var mol = composer.exportObjs(Kekule.Molecule)[0];
