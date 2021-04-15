@@ -60,4 +60,5 @@ if answers['smiles'] == smiles:
     score = 100
 else:
     score = 0
+feedback = answers['smiles']
 ==
