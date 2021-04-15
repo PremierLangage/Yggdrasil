@@ -52,7 +52,7 @@ def getFormMathinput(enonce,dico):
     for line in lines:
         l = line
         for itemmenu in re.finditer(REPLACESTRING,line):
-            m = defformmathinput(indice,dico)
+            m = defFormMathinput(indice,dico)
             l = re.sub(REPLACESTRING,m , l, 1)
             indice += 1
         maForm=maForm+l
