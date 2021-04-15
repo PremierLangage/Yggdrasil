@@ -42,7 +42,7 @@ if types != []:
 
 text=text+"<br/><small> lesSol= "+str(lesSol)+"</small>"
 sol=""
-lesSol="y+2"
+lesSol=("y+2")
 ==
 
 checkratsimp = True
