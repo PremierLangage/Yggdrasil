@@ -1,4 +1,5 @@
-extends = /gift/templates/qshortset.pl
+#extends = /gift/templates/qshortset.pl
+extends = /model/mathinput.pl
 
 @loadexo.py
 
