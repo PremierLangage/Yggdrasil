@@ -23,7 +23,7 @@ enonc,dico,types = splitenonce(montexte)
 # html complet FORM menu 
 #menuForm =gethtmlmenu(enonc,dico)
 # Mathinput FORM
-mathiForm=getFormMAthinput(enonc,types)
+mathiForm=getFormMathinput(enonc,types)
 
 form=mathiForm
 
