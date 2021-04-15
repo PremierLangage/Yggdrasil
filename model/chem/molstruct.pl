@@ -31,11 +31,11 @@ composer.setCommonToolButtons(['undo', 'redo']);
 composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula']);
 }
 
-function getSmile() {
+    function onBeforeSubmitPL() {
     var mol = composer.exportObjs(Kekule.Molecule)[0];
     var smiles = Kekule.IO.saveFormatData(mol, 'smi');
     var textarea = document.getElementById("form_smiles");
-    textarea.value = smiles;
+    return true;
 }
 
 </script>
@@ -53,6 +53,6 @@ extracss ==
 
 
 evaluator ==
-score =0
+score = 0
 feedback = answers['smiles']
 ==
