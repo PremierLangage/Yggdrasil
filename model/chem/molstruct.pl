@@ -49,7 +49,7 @@ extrajs ==
 
 
 var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
-composer.setCommonToolButtons(['undo', 'redo','zoomIn', 'zoomOut']);
+composer.setCommonToolButtons(['undo', 'redo']);
 composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula', 'ring', 'charge']);
 
 var textarea = document.getElementById("form_SMILES");
