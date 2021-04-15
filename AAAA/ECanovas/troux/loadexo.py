@@ -3,7 +3,7 @@ import re
 
 REPLACESTRING="ZZ"
 TYPESTRING="MATHINPUT"
-input_prefix = Résultat :
+input_prefix = "Résultat :"
 
 def splitenonce(enonce="nothing"): # 
     """
