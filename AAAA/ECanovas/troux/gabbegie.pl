@@ -44,7 +44,7 @@ text=text+"<br/><small> lesSol= "+str(lesSol)+" "+str(latex2sympy(lesSol[0]))+"<
 textsol=""
 for sol in lesSol:
     text=text+"<br/><small> uneSol= str(latex2sympy("+sol+"))</small>"
-    textsol=textsol+","+sol
+    textsol=textsol+","+latex2sympy(sol)
 sol=""
 ==
 
