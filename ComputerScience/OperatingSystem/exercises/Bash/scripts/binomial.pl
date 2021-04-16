@@ -55,3 +55,17 @@ dire des chaines décrivant des entiers) et qui affiche le coefficient
 binomial p parmi n : $% \binom{n}{p} %$.
 ==
 
+solution==#|shell|
+#!/bin/bash
+function factorial {
+  typeset n=$1
+  (( n < 2 )) && echo 1 && return
+  echo $(( n * $(factorial $((n-1))) ))
+}
+
+nCk() {
+    echo $(( $(factorial $1) / ( $(factorial $2) * $(factorial $(($1-$2))) )  ))
+}
+
+echo $(nCk $1 $2)
+==
