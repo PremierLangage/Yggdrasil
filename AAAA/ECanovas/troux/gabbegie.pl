@@ -40,7 +40,7 @@ if types != []:
     lesSol=types[0]
     lesSol=lesSol[1].split(',')
 
-text=text+"<br/><small> lesSol= "+str(lesSol)+" "+str(latex2sympy(lesSol[0]))+"</small><br/>"
+text=text+"<br/><small> Solution(latex)= "+str(lesSol)+" "+str(latex2sympy(lesSol[0]))+"</small><br/> Solution(sympy)="
 textsol=""
 for sol in lesSol:
     text=text+"<small> "+str(latex2sympy(sol))+" </small>"
