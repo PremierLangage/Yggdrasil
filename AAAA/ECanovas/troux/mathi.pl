@@ -11,5 +11,5 @@ Compléter le math du texte suivant
 == 
 
 before==
-sol="sin(45)"
+sol=sin(45)
 ==
