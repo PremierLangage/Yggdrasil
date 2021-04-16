@@ -10,8 +10,8 @@ text==
 ==
 
 choices==
-%25.0%<p>Pour tout $!x\in E!$, $!\|f(x)\|\=\|x\|!$</p>
+%25.0%<p>Pour tout $!x\in E!$, $!\|f(x)\|=\|x\|!$</p>
 %25.0%<p>$!f!$ est bijectif</p>
-%25.0%<p>$!det(f)\=1!$ ou $!det(f)\=-1!$</p>
+%25.0%<p>$!det(f)=1!$ ou $!det(f)=-1!$</p>
 %25.0%<p>L'image par $!f!$ d'une base orthonormée est une base orthonormée.</p>
 ==
