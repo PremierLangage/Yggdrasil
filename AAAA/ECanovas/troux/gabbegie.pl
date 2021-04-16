@@ -50,7 +50,7 @@ unauthorized_func = []
 
 evaluator ==
 from ast import literal_eval
-from sympy import sympify latex2sympy
+from sympy import sympify , latex2sympy
 from evalsympy import eval_expr
 if lesSol == "?":
    score=0
