@@ -11,5 +11,6 @@ Compléter le math du texte suivant
 == 
 
 before==
+a=var(a)
 sol=sin(a)
 ==
