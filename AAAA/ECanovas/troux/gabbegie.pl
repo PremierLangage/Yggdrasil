@@ -38,7 +38,7 @@ form=mathiForm
 lesSol="?"
 if types != []:
     lesSol=types[0]
-    lesSol=(lesSol[1])
+    lesSol=[lesSol[1]]
 
 text=text+"<br/><small> lesSol= "+str(lesSol)+" "+str(latex2sympy(lesSol[0]))+"</small>"
 for sol in lesSol:
