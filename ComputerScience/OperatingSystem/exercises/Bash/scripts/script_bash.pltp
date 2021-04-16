@@ -31,7 +31,7 @@ du web pour arriver à ses fins. Bon courage avec la syntaxe du plaisir.
 # entier max en argument + traitement special si pas de arg
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/max_int_args.pl
 
-
+# nombres binomiaux
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/binomial.pl
 
 
