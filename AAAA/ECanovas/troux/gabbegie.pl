@@ -42,7 +42,7 @@ if types != []:
 
 text=text+"<br/><small> lesSol= "+str(lesSol)+" "+str(latex2sympy(lesSol[0]))+"</small>"
 for sol in lesSol:
-    text=text+"<br/><small> uneSol= "+str(latex2sympy(sol))+"</small>"
+    text=text+"<br/><small> uneSol= str(latex2sympy("+sol+"))</small>"
 sol=""
 ==
 
