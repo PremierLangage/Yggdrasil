@@ -47,5 +47,11 @@ Votre programme devrait donc produire autant de ligne que le nombre d'argument
 que l'on lui a donné lors de son appel.
 ==
 
+solution==
+#!/bin/bash
 
+for (( i=$#;i!=0;i-- ));do
+        echo "${!i}"
+done
+==
 
