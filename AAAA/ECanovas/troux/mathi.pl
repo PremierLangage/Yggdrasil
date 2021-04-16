@@ -11,6 +11,5 @@ Compléter le math du texte suivant
 == 
 
 before==
-var(a)
-sol=sin(a)
+sol=sin(3)
 ==
