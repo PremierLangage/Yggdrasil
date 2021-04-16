@@ -13,3 +13,7 @@ Compléter le math du texte suivant
 before==
 sol=sin(3)
 ==
+
+solution ==
+La solution est $!{{ sol|latex}}!$. {{score}} {{error}}
+==
