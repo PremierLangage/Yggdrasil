@@ -64,9 +64,10 @@ else:
     for sol in lesSol:
         s=latex2sympy(sol)
         score, error = eval_expr(answers['math'], s, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
-        if error==0:
+        if score==100:
             break
-    feedback = message[error]
+    if score !=100:
+        feedback = message[error]
 ==
 
 solution ==
