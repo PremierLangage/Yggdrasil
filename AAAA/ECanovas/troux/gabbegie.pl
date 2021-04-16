@@ -70,6 +70,6 @@ else:
 ==
 
 solution ==
-La solution est $!{{ sol|latex}}!$.
+La solution est $!{{ textsol|latex}}!$.
 ==
 
