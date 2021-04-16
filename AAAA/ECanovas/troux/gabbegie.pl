@@ -57,8 +57,8 @@ if lesSol == "?":
    feedback = "Les solutions sont mal écrites!"
 else:
     for sol in lesSol:
-        latex2sympy
-        score, error = eval_expr(answers['math'], sol, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
+        s=latex2sympy(sol)
+        score, error = eval_expr(answers['math'], s, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
         if error==0:
             break
     feedback = message[error]
