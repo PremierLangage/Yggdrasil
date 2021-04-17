@@ -52,7 +52,7 @@ Il faudra bien sur remplacer XXX par l'argument entier du script et YYY par
 la succession de 0 et de 1 donnant l'écriture binaire de l'argument.
 ==
 
-solution==
+solution==#|shell|
 #!/bin/bash
 
 n=$1
