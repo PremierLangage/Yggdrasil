@@ -37,10 +37,10 @@ du web pour arriver à ses fins. Bon courage avec la syntaxe du plaisir.
 # Afficher les arguments d'un programme bash dans l'ordre inverse
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/reverse.pl
 
-
+# is substring en bash
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/substring.pl
 
-
+# décomposition base 2 d'entiers potitifs en bash
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/decimal_to_binary.pl
 
 
