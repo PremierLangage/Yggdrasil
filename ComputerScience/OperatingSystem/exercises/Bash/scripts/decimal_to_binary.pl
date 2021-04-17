@@ -70,3 +70,4 @@ fi
 
 echo "$1 s'écrit $ans en binaire."
 ==
+
