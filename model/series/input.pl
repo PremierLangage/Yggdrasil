@@ -23,10 +23,11 @@ except:
 sample_lines = rd.sample(all_lines, nbstep).copy()
 
 sol = []
-phrases = []
+lines = []
 inputs = []
 for i in range(nbstep):
     inputs.append(Input())
+    lines.append(sample_lins[i])
     sol.append(data[1].strip())
 ==
 
