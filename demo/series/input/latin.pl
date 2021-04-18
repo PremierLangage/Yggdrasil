@@ -15,6 +15,8 @@ L'esclave donne un livre au **fils** du maître.|filio
 L'esclave donne un livre au fils du **maître**.|domini
 ==
 
+solcol = motlatin
+
 title = Traduire des mots en contexte
 
 nbstep % 3
