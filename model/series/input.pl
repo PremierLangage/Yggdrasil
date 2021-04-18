@@ -24,14 +24,8 @@ lines = []
 inputs = []
 for i in range(nbstep):
     inputs.append(Input())
-    sol.append(data[1].strip())
+    sol.append(datasample[i][solcol])
 ==
-
-intro ==
-Pour chacune des {{nbstep}} phrases suivantes, traduire en latin le mot en gras (avec le bon cas).
-==
-
-
 
 formstep ==
 {{ inputs[step]|component }}
