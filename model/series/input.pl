@@ -9,6 +9,8 @@ settings.cumulative % false
 
 before == #|python|
 import random as rd
+from io import StringIO
+from csv import DictReader
 from components import Input
 
 try:
@@ -26,7 +28,6 @@ phrases = []
 inputs = []
 for i in range(nbstep):
     inputs.append(Input())
-    phrases.append(data[0].strip())
     sol.append(data[1].strip())
 ==
 
