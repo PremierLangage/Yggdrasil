@@ -1,6 +1,5 @@
 extends = /model/math/input.pl
 
-
 input_prefix = Réponse :
 
 imaginary_unit = i
