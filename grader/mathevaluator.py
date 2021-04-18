@@ -24,12 +24,6 @@ class JSONDecoder(json.JSONDecoder):
             return sympy.sympify(dict['srepr'], locals=namespace, evaluate=False)
         return dict
 
-# Import the custom Jinja environnement
-try:
-    from jinja_env import CustomEnv as Env
-except ModuleNotFoundError:
-    Env = ComponentEnv
-
 
 def format_feedback_rightwrong(score,feedback):
     tpl="""<div class="alert {}"><strong>{}</strong> <br> {}</div>"""
@@ -145,11 +139,11 @@ if __name__ == "__main__":
 
 
     # render some string values of the exercise dictionary with the custom Jinja environment
-    jinja_keys = dic.get('jinja_keys', ['text', 'form', 'solution'])
+    #jinja_keys = dic.get('jinja_keys', ['text', 'form', 'solution'])
 
-    for key in jinja_keys:
-        if key in dic:
-            dic[key] = Env.from_string(dic[key]).render(dic)
+    #for key in jinja_keys:
+    #    if key in dic:
+    #        dic[key] = Env.from_string(dic[key]).render(dic)
 
     with open(sys.argv[3], "w+") as f:
         json.dump(dic, f, cls=CustomEncoder)
