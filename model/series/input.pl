@@ -20,7 +20,7 @@ except:
         all_lines = list(DictReader(StringIO(data), delimiter=delimiter))
 
 
-sample_lines = rd.sample(all_lines, k=nbstep)
+sample_lines = rd.sample(all_lines, nbstep).copy()
 
 sol = []
 phrases = []
