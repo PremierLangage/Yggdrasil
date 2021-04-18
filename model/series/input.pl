@@ -1,6 +1,5 @@
 extends = /model/multistep.pl
 
-@ phrases.txt
 
 title = Traduire des mots en contexte
 
