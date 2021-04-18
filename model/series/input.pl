@@ -37,7 +37,7 @@ Pour chacune des {{nbstep}} phrases suivantes, traduire en latin le mot en gras 
 textstep ==
 <strong> Phrase {{ step + 1 }}. </strong><br> 
 
-{{ phrases[step] }}
+{{ all_lines[step]['phrases'] }}
 ==
 
 formstep ==
