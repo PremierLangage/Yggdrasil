@@ -8,6 +8,7 @@ nbstep % 3
 settings.cumulative % false
 
 before == #|python|
+from loader.parsers import pl
 import random as rd
 from components import Input
 
