@@ -20,7 +20,7 @@ except:
         all_lines = list(DictReader(StringIO(data), delimiter=delimiter))
 
 
-sample_lines = rd.sample(all_lines, nbstep)
+sample_lines = rd.sample(all_lines, k=nbstep)
 
 sol = []
 phrases = []
@@ -34,11 +34,7 @@ intro ==
 Pour chacune des {{nbstep}} phrases suivantes, traduire en latin le mot en gras (avec le bon cas).
 ==
 
-textstep ==
-<strong> Phrase {{ step + 1 }}. </strong><br> 
 
-{{ all_lines[step]['phrases'] }}
-==
 
 formstep ==
 {{ inputs[step]|component }}
