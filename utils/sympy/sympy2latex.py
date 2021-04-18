@@ -134,13 +134,6 @@ class CustomLatexPrinter(LatexPrinter):
             out_str = out_str.replace('%s', '{' + 'c'*expr.cols + '}%s')
         return out_str % r"\\\\".join(lines)
 
-try:
-    from latex_settings import _default_settings
-except ModuleNotFoundError:
-    _default_settings = {
-        'ln_notation': True
-    }
-
 def latex(expr, **settings):
     """
     Return a LaTeX string for a SymPy object.
