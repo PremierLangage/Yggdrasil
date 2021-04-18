@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # coding: utf-8
-from loader.parser import get_type, parse_file
 import sys, json, jsonpickle
 from sandboxio import get_context
 from components import Component
