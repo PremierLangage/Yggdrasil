@@ -14,10 +14,10 @@ from components import Input
 
 try:
     with open('data.csv', newline='') as file:
-        all_lines = rd.sample(list(DictReader(file, delimiter=delimiter)), nbstep)
+        datasample = rd.sample(list(DictReader(file, delimiter=delimiter)), nbstep)
 except:
     if 'data' in globals():
-        all_lines = rd.sample(list(DictReader(StringIO(data), delimiter=delimiter)), nbstep)
+        datasample = rd.sample(list(DictReader(StringIO(data), delimiter=delimiter)), nbstep)
 
 sol = []
 lines = []
