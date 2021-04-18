@@ -25,9 +25,3 @@ textstep ==
 
 {{ all_lines[step]['phrases'] }}
 ==
-
-textstep ==
-<strong> Phrase {{ step + 1 }}. </strong><br> 
-
-{{ sample_lines[step]['phrase'] }}
-==
