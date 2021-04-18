@@ -21,7 +21,7 @@ nbstep % 3
 delimiter % "|"
 
 textstep ==
-{{ sample_line }}
+{{ all_lines }}
 <strong> Phrase {{ step + 1 }}. </strong><br> 
 
 {{ all_lines[step].phrase }}
