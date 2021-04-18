@@ -27,7 +27,7 @@ lines = []
 inputs = []
 for i in range(nbstep):
     inputs.append(Input())
-    lines.append(all_lines[i])
+    #lines.append(all_lines[i])
     sol.append(data[1].strip())
 ==
 
