@@ -28,7 +28,6 @@ def component(l):
 
 Env = Environment(loader=BaseLoader())
 Env.filters["component"] = component
-Env.filters["latex"] = latex
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
@@ -78,6 +77,12 @@ if __name__ == "__main__":
 
     # render some string values of the exercise dictionary with the custom Jinja environment
     jinja_keys = dic.get('jinja_keys', ['text', 'form', 'solution'])
+
+    def customlatex(expr):
+        return latex(expr, imaginary_unit="j")
+        
+    Env.filters["latex"] = customlatex
+
 
     for key in jinja_keys:
         if key in dic:
