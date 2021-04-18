@@ -1,7 +1,7 @@
 extends = /model/math/complex.pl
 @ /builder/mathbefore.py [builder.py]
 
-settings.imaginary_unit = i
+mathsettings.imaginary_unit = i
 
 title = Multiplier deux nombres complexes
 
