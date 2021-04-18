@@ -1,23 +1,24 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-import sys, json, os
+import sys, json, jsonpickle, os
 from components import Component
 from builderlib import aux_component
-from builderlib import PickleEncoder, ComponentEnv
-
-# Import the custom JSON encoder
-try:
-    from json_encoder import CustomEncoder as JSONEncoder
-except ModuleNotFoundError:
-    JSONEncoder = PickleEncoder
-
-# Import the custom Jinja environnement
 from jinja2 import Environment, BaseLoader
+from sympy import Basic, Matrix, srepr
 from sympy2latex import latex
 
+# JSON encoder
+class JSONEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, (Basic, Matrix)):
+            return {'__SymPy__': True, 'srepr': srepr(obj)}
+        return jsonpickle.Pickler(unpicklable=False).flatten(obj)
+
+# Jinja environnement
+
 def component(l):
-    if isinstance(l,dict):
+    if isinstance(l, dict):
         selector = l["selector"]
         cid = l["cid"]
     else:
@@ -25,9 +26,9 @@ def component(l):
         cid = l.cid
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
-CustomEnv = Environment(loader=BaseLoader())
-CustomEnv.filters["component"] = component
-CustomEnv.filters["latex"] = latex
+Env = Environment(loader=BaseLoader())
+Env.filters["component"] = component
+Env.filters["latex"] = latex
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
