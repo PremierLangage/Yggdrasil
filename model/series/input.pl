@@ -21,7 +21,7 @@ except:
 
 
 #sample_lines = rd.sample(all_lines, nbstep)
-sample_lines = [3,5,6]
+sample_line = [3,5,6]
 sol = []
 lines = []
 inputs = []
