@@ -141,11 +141,11 @@ except ModuleNotFoundError:
         'ln_notation': True
     }
 
-def latex(expr):
+def latex(expr, **settings):
     """
     Return a LaTeX string for a SymPy object.
     """
-    return CustomLatexPrinter(_default_settings).doprint(expr)
+    return CustomLatexPrinter(settings).doprint(expr)
 
 def latex_linsys(A, B, lstvar=['x','y','z','t','u','v','w']):
     """
