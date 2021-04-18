@@ -18,11 +18,15 @@ L'esclave donne un livre au fils du **maître**.|domini
 title = Traduire des mots en contexte
 
 nbstep % 3
+
 delimiter % "|"
 
+intro ==
+Pour chacune des {{nbstep}} phrases suivantes, traduire en latin le mot en gras (avec le bon cas).
+==
+
 textstep ==
-{{ all_lines }}
 <strong> Phrase {{ step + 1 }}. </strong><br> 
 
-{{ all_lines[step].phrase }}
+{{ datasample[step].phrase }}
 ==
