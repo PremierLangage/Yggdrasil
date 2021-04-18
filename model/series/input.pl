@@ -19,9 +19,9 @@ except:
     if 'data' in globals():
         all_lines = list(DictReader(StringIO(data), delimiter=delimiter))
 
-
+lst=[3,4,5]
 #sample_lines = rd.sample(all_lines, nbstep)
-sample_line = all_lines
+sample_line = lst
 sol = []
 lines = []
 inputs = []
