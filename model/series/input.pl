@@ -14,20 +14,16 @@ from components import Input
 
 try:
     with open('data.csv', newline='') as file:
-        all_lines = list(DictReader(file, delimiter=delimiter))
+        all_lines = sample(list(DictReader(file, delimiter=delimiter)), nbstep)
 except:
     if 'data' in globals():
-        all_lines = list(DictReader(StringIO(data), delimiter=delimiter))
+        all_lines = sample(list(DictReader(StringIO(data), delimiter=delimiter)), nbstep)
 
-lst=[3,4,5]
-#sample_lines = rd.sample(all_lines, nbstep)
-sample_line = lst
 sol = []
 lines = []
 inputs = []
 for i in range(nbstep):
     inputs.append(Input())
-    #lines.append(all_lines[i])
     sol.append(data[1].strip())
 ==
 
