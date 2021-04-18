@@ -1,5 +1,7 @@
 extends = /model/series/input.pl
 
+title = Traduire des mots en contexte
+
 data ==
 phrase|motlatin
 Le **maître** appelle l'esclave de son fils.|dominus
@@ -15,13 +17,11 @@ L'esclave donne un livre au **fils** du maître.|filio
 L'esclave donne un livre au fils du **maître**.|domini
 ==
 
-solcol = motlatin
-
-title = Traduire des mots en contexte
+delimiter % "|"
 
 nbstep % 3
 
-delimiter % "|"
+solcol = motlatin
 
 intro ==
 Pour chacune des {{nbstep}} phrases suivantes, traduire en latin le mot en gras (avec le bon cas).
