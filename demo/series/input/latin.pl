@@ -21,7 +21,7 @@ nbstep % 3
 delimiter % "|"
 
 intro ==
-{{sample_lines}}
+{{all_lines}}
 Pour chacune des {{nbstep}} phrases suivantes, traduire en latin le mot en gras (avec le bon cas).
 ==
 
