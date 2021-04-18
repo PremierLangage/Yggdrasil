@@ -79,8 +79,8 @@ if __name__ == "__main__":
     jinja_keys = dic.get('jinja_keys', ['text', 'form', 'solution'])
 
     def customlatex(expr):
-        return latex(expr, imaginary_unit="j")
-        
+        return latex(expr, **dic['mathsettings'])
+
     Env.filters["latex"] = customlatex
 
 
