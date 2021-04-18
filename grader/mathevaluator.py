@@ -30,10 +30,6 @@ try:
 except ModuleNotFoundError:
     Env = ComponentEnv
 
-try:
-    from namespace import namespace
-except ModuleNotFoundError:
-    namespace = {}
 
 def format_feedback_rightwrong(score,feedback):
     tpl="""<div class="alert {}"><strong>{}</strong> <br> {}</div>"""
@@ -80,8 +76,7 @@ if __name__ == "__main__":
     with open(sys.argv[2], "r") as f:
         dic['answers'] = json.load(f)
 
-    dic = {**namespace, **dic}
-
+    
     aux_component1(dic)
     
     if 'evaluator' in dic:
@@ -93,6 +88,7 @@ if __name__ == "__main__":
     #code = "\n".join([dic.get('headerevaluator', ""), dic.get('evaluator', ""), dic.get('footerevaluator', "")])
 
     exec(code, dic)
+    namespace = {}
     exec("", namespace)
     for key in namespace:
         if key in dic and dic[key] == namespace[key]:
