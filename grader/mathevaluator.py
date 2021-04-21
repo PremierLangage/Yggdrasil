@@ -1,7 +1,6 @@
 import sys, json, jsonpickle
 from components import Component
 from builderlib import aux_component1, aux_component2, aux_component
-from builderlib import PickleEncoder, ComponentEnv
 import sympy
 
 from jinja2 import Template
@@ -21,7 +20,8 @@ class CustomDecoder(json.JSONDecoder):
 
     def object_hook(self, dict):
         if '__SymPy__' in dict:
-            return sympy.sympify(dict['srepr'], locals=namespace, evaluate=False)
+            # option in sympify : locals=namespace
+            return sympy.sympify(dict['srepr'], evaluate=False)
         return dict
 
 
