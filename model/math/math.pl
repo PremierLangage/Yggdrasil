@@ -1,9 +1,8 @@
-@ /builder/before2.py [builder.py]
-@ /grader/evaluator2.py [grader.py]
+@ /builder/mathbefore.py [builder.py]
+@ /grader/mathevaluator.py [grader.py]
 @ /utils/builderlib.py
 
-@ /model/serialization/JSONEncoder.py [json_encoder.py]
-@ /model/jinja_env/jinja_env_math.pl [jinja_env.py]
+
 @ /utils/sympy/evalsympy.py
 @ /utils/sympy/latex2sympy.py
 @ /utils/sympy/sympy2latex.py
