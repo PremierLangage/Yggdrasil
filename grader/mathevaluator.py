@@ -2,8 +2,10 @@ import sys, json, jsonpickle
 from components import Component
 from builderlib import aux_component1, aux_component2, aux_component
 import sympy
-
+from jinja2 import Environment, BaseLoader
 from jinja2 import Template
+
+Env = Environment(loader=BaseLoader())
 
 class CustomEncoder(json.JSONEncoder):
 
