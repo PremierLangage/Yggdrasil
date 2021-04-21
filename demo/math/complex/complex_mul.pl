@@ -1,4 +1,6 @@
 extends = /model/math/complex.pl
+@ /builder/mathbefore.py [builder.py]
+@ /grader/mathevaluator.py [grader.py]
 
 mathsettings.imaginary_unit = j
 mathsettings.ln_notation % true
