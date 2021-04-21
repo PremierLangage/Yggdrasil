@@ -15,5 +15,5 @@ sol=sin(3)
 ==
 
 solution ==
-La solution est $!{{ sol|latex}}!$. {{score}} {{error}}
+La solution est $!{{ sol}}!$. {{score}} {{error}}
 ==
