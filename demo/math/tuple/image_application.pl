@@ -5,8 +5,7 @@ title = Image par une application de Z^2 dans Z^2
 before ==
 n0 = randint(-5, 5)
 p0 = randint(-5, 5)
-
-sol = [n0+p0, n0-p0]
+sol = Tuple(n0+p0, n0-p0)
 ==
 
 text ==
