@@ -78,10 +78,10 @@ if __name__ == "__main__":
     # render some string values of the exercise dictionary with the custom Jinja environment
     jinja_keys = dic.get('jinja_keys', ['text', 'form', 'solution'])
 
-    mathsettings = dic.get('mathsettigns', {})
+    latexsettings = dic.get('latexettings', {})
 
     def customlatex(expr):
-        return latex(expr, **mathsettings)
+        return latex(expr, **latexsettings)
 
     Env.filters["latex"] = customlatex
 
