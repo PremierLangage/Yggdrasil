@@ -1,5 +1,5 @@
 message.Success = 
-message.NotEqual = 
+message.NotEqual = La réponse n'est pas égale à la solution.
 message.NotExpr = La réponse doit être une expression mathématique.
 message.OneNotExpr  = Les réponses doivent être des expressions mathématiques.
 message.NotFrac = La réponse doit être un entier ou une fraction.
