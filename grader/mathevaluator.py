@@ -14,7 +14,7 @@ class JSONEncoder(json.JSONEncoder):
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
 
-class JSONDecoder(json.JSONDecoder):
+class CustomDecoder(json.JSONDecoder):
 
     def __init__(self, *args, **kwargs):
         json.JSONDecoder.__init__(self, object_hook=self.object_hook, *args, **kwargs)
