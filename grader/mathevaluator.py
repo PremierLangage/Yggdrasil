@@ -6,7 +6,7 @@ import sympy
 
 from jinja2 import Template
 
-class JSONEncoder(json.JSONEncoder):
+class CustomEncoder(json.JSONEncoder):
 
     def default(self, obj):
         if isinstance(obj, (sympy.Basic, sympy.Matrix)):
