@@ -1,6 +1,6 @@
 extends = /model/math/expr.pl
 
-@loadexo.py
+#@loadexo.py
 
 title==
 Exercice à math
@@ -15,5 +15,5 @@ sol=sin(3)
 ==
 
 solution ==
-La solution est $!{{ sol}}!$. {{score}} {{error}}
+La solution est $!{{sol}}!$. {{score}} {{error}}
 ==
