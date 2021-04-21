@@ -2,7 +2,7 @@ extends = /model/math/input.pl
 
 input_prefix = Réponse :
 
-imaginary_unit = i
+mathsettings.imaginary_unit = i
 complex_form = 
 checkratsimp = True
 symbol_dict = {'e': E}
