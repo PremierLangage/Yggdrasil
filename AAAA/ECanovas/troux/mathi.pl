@@ -1,6 +1,6 @@
 extends = /model/math/expr.pl
 
-#@loadexo.py
+@loadexo.py
 
 title==
 Exercice à math
