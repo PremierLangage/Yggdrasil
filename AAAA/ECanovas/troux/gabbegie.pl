@@ -41,7 +41,7 @@ for sol in lesSol:
     else:
         textsol=textsol+" ou "+str(latex2sympy(sol))
 
-text=enonc+" et "+str(count(types))+ " et " +str(types) +" "+str(textsol)
+text=enonc+" et "+str(len(types))+ " et " +str(types) +" "+str(textsol)
 
 sol=""
 ==
