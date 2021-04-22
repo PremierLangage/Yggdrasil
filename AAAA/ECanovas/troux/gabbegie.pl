@@ -42,7 +42,7 @@ for sol in lesSol:
     if textsol=="":
         textsol=str(latex2sympy(sol))
     else:
-        textsol=textsol+","+str(latex2sympy(sol))
+        textsol=textsol+" ou "+str(latex2sympy(sol))
 sol=""
 ==
 
