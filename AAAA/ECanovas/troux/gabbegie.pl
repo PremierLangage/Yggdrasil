@@ -1,4 +1,4 @@
-#extends = /gift/templates/qshortset.pl
+
 extends = /model/math/expr.pl
 
 @loadexo.py
