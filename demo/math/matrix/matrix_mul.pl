@@ -1,7 +1,7 @@
 # Author : D. Doyen
 # Keywords : 
 
-extends = /model/mathmatrix.pl
+extends = /model/math/matrix.pl
 
 title ==
 Produit de matrices $! 2 \times 2 !$
