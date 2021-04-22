@@ -15,6 +15,7 @@ Compléter les trous du texte suivant
 before==
 
 montexte="il était une fois une expression latex <br/>\n    //:MATHINPUT:=sqrt{3},-\sin{180},\\frac{1}{3^2}// à résoudre et toc.."
+montexte=montexte+"<br/> et la suite //:MATHINPUT:=sqrt{9}//"
 
 from loadexo import *
 
@@ -27,8 +28,6 @@ if types != []:
     mathiForm=getFormMathinput(enonc,types)
 
 form=mathiForm
-
-#text=montexte+"<br/>Result= " +str(mathiForm)
 
 # premier item du dic : les bonnes solutions
 lesSol="?"
