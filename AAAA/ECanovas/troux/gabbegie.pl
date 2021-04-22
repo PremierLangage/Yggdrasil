@@ -77,7 +77,7 @@ var mathField2 = MQ.MathField(mathFieldSpan2, {
     }
   }
 });
-mathField2.latex("{{ prev_value }}");
+mathField2.latex("{{ prev_value2 }}");
 
 </script>
 <script>
