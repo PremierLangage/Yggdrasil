@@ -4,7 +4,7 @@ extends = /model/math/math.pl
 mat =: MathMatrix
 mat.decorator = CustomMathMatrix
 resizable % true
-
+size % [2, 2]
 before_scripts % ["importmath", "initmat", "before"]
 
 initmat ==
