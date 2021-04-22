@@ -28,7 +28,7 @@ if types != []:
 
 form=mathiForm
 
-#text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/> form= "+str(mathiForm)
+text=text+enonc+"<br/><i> Result= " +str(types)+"</i><br/> form= "+str(mathiForm)
 
 # premier item du dic : les bonnes solutions
 lesSol="?"
