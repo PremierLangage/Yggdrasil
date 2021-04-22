@@ -9,6 +9,7 @@ matrices $! 2 \times 2 !$
 ==
 
 before ==
+from randsympy import rand_int_matrix
 n = 2
 coeffbound = 3
 A = rand_int_matrix(n, n, coeffbound)
