@@ -58,14 +58,10 @@ def getFormMathinput(enonce,dico):
     lines = enonce.split('\n')
     for line in lines:
         l = line
-        itemmenu=re.finditer(REPLACESTRING,line)
-        m = defFormMathinput(indice,dico)
-        l = re.sub(REPLACESTRING,m , l, 1)
-        indice += 1
-        #for itemmenu in re.finditer(REPLACESTRING,line):
-        #    m = defFormMathinput(indice,dico)
-        #    l = re.sub(REPLACESTRING,m , l, 1)
-        #    indice += 1
+        for itemmenu in re.finditer(REPLACESTRING,line):
+            m = defFormMathinput(indice,dico)
+            l = re.sub(REPLACESTRING,m , l, 1)
+            indice += 1
         maForm=maForm+l
     
     return maForm
