@@ -39,7 +39,10 @@ if types != []:
 text=text+"<br/><small>Solution(latex)= "+str(lesSol)+"</small>"
 textsol=""
 for sol in lesSol:
-    textsol=textsol+","+str(latex2sympy(sol))
+    if textsol=="":
+        textsol=str(latex2sympy(sol))
+    else:
+        textsol=textsol+","+str(latex2sympy(sol))
 sol=""
 ==
 
