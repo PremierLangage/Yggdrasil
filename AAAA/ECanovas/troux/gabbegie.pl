@@ -27,7 +27,7 @@ if types != []:
     mathiForm=getFormMathinput(enonc,types)
 
 #form=mathiForm
-text=mathiForm
+text=enonc
 
 # premier item du dic : les bonnes solutions
 lesSol="?"
