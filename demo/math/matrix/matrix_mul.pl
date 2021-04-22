@@ -4,7 +4,7 @@ title = Multiplier des matrices $! 2 \times 2 !$
 
 before ==
 from randsympy import rand_int_matrix
-n = 3
+n = 2
 coeffbound = 3
 A = rand_int_matrix(n, n, coeffbound)
 B = rand_int_matrix(n, n, coeffbound)
