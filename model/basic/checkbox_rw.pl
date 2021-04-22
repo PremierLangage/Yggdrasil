@@ -28,7 +28,7 @@ NON
 Ciao
 good_morning
 byeBye7
-_UGE_
+\_UGE\_
 ==
 
 wrong ==
