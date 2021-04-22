@@ -27,7 +27,6 @@ if types != []:
     mathiForm=getFormMathinput(enonc,types)
 
 #form=mathiForm
-text=enonc+" et "+str(types.count)+ " et " +str(types)
 
 # premier item du dic : les bonnes solutions
 lesSol="?"
@@ -41,6 +40,9 @@ for sol in lesSol:
         textsol=str(latex2sympy(sol))
     else:
         textsol=textsol+" ou "+str(latex2sympy(sol))
+
+text=enonc+" et "+str(count(types))+ " et " +str(types) +" "+str(textsol)
+
 sol=""
 ==
 
