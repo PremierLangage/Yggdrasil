@@ -6,7 +6,7 @@ mat.decorator = CustomMathMatrix
 resizable % true
 
 initmat ==
-mat.setzeros(n)
+mat.setzeros(2)
 mat.resizable = resizable
 ==
 
