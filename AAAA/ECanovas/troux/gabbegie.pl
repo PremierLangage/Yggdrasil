@@ -32,7 +32,7 @@ text=enonc+" et "+str(types.count)+ " et " +str(types)
 # premier item du dic : les bonnes solutions
 lesSol="?"
 if types != []:
-    lesSol=types[0]
+    lesSol=types[1]
     lesSol=lesSol[1].split(',')
 
 textsol=""
