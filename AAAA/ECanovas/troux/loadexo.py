@@ -58,7 +58,7 @@ def getFormMathinput(enonce,dico):
     lines = enonce.split('\n')
     for line in lines:
         l = line
-        itemmenu in re.finditer(REPLACESTRING,line):
+        itemmenu in re.finditer(REPLACESTRING,line)
         m = defFormMathinput(indice,dico)
         l = re.sub(REPLACESTRING,m , l, 1)
         indice += 1
