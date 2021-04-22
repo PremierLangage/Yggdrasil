@@ -41,8 +41,8 @@ for sol in lesSol:
     else:
         textsol=textsol+" ou "+str(latex2sympy(sol))
 
-mathiForm=re.sub(r'[<,>]', '', mathiForm)
-text=enonc+" et "+str(len(types))+ " et " +str(types) +" "+str(textsol)+"<br/>Form="+str(mathiForm)+" fin"
+#DEBUG mathiForm=re.sub(r'[<,>]', '', mathiForm)
+#DEBUG text=enonc+" et "+str(len(types))+ " et " +str(types) +" "+str(textsol)+"<br/>Form="+str(mathiForm)+" fin"
 
 sol=""
 ==
