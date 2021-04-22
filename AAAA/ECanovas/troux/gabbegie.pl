@@ -28,7 +28,7 @@ if types != []:
 
 form=mathiForm
 
-text=text+enonc+"<br/>Result= " +str(mathiForm)
+text=montexte+"<br/>Result= " +str(mathiForm)
 
 # premier item du dic : les bonnes solutions
 lesSol="?"
