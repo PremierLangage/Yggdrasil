@@ -49,24 +49,24 @@ checkratsimp = True
 symbol_dict = {'e': E}
 unauthorized_func = []
 
-/*evaluator ==
-from ast import literal_eval
-from sympy import sympify
-from latex2sympy import latex2sympy
-from evalsympy import eval_expr
-if lesSol == "?":
-   score=0
-   feedback = "Les solutions sont mal écrites!"
-else:
-    for sol in lesSol:
-        s=latex2sympy(sol)
-        score, error = eval_expr(answers['math'], s, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
-        if score==100:
-            break
-    if score !=100:
-        feedback = message[error]
-==
-*/
+#evaluator ==
+#from ast import literal_eval
+#from sympy import sympify
+#from latex2sympy import latex2sympy
+#from evalsympy import eval_expr
+#if lesSol == "?":
+#   score=0
+#   feedback = "Les solutions sont mal écrites!"
+#else:
+#    for sol in lesSol:
+#        s=latex2sympy(sol)
+#        score, error = eval_expr(answers['math'], s, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
+#        if score==100:
+#            break
+#    if score !=100:
+#        feedback = message[error]
+#==
+
 solution ==
 La solution est $!{{ textsol|latex}}!$.
 ==
