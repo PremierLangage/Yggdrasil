@@ -27,7 +27,8 @@ mathiForm="Aucune entrée mathématique!!"
 if types != []:
     mathiForm=getFormMathinput(enonc,types)
 
-form=mathiForm
+#form=mathiForm
+text=mathiForm
 
 # premier item du dic : les bonnes solutions
 lesSol="?"
