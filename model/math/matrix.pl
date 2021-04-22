@@ -5,6 +5,8 @@ mat =: MathMatrix
 mat.decorator = CustomMathMatrix
 resizable % true
 
+before_scripts % ["importmath", "initmat", "before"]
+
 initmat ==
 mat.setzeros(2)
 mat.resizable = resizable
