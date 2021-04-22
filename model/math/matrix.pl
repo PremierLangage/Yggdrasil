@@ -1,9 +1,14 @@
 extends = /model/math/math.pl
 
+@ /utils/components/mathmatrix.py [custommathmatrix.py]
 mat =: MathMatrix
 mat.decorator = CustomMathMatrix
-mat.resizable % true
+resizable % true
 
+initmat ==
+mat.setzeros(n)
+mat.resizable = resizable
+==
 
 form2 ==
 <div style="text-align:center">
