@@ -45,7 +45,10 @@ def splitenonce(enonce="nothing"): #
     return enoncetroux,"?",mathtypes
 
 def defFormMathinput(indice,dico):
-    unInput='<p>'+input_prefix+'<span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p> <input type="text" id="form_math" hidden=true> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">'
+    if indice==0:
+        unInput='<p>'+input_prefix+'<span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p> <input type="text" id="form_math" hidden=true> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">'
+    else:
+            unInput='<p>'+input_prefix+'<span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p> <input type="text" id="form_math'+indice+'" hidden=true> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">'
     return unInput
 
 def getFormMathinput(enonce,dico):
