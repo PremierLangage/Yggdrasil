@@ -66,7 +66,7 @@ mathField.latex("{{ prev_value }}");
 
 var mathFieldSpan2 = document.getElementById('math-field2');
 var latexSpan2 = document.getElementById('form_math2');
-var mathField2 = MQ.MathField(mathFieldSpan, {
+var mathField2 = MQ.MathField(mathFieldSpan2, {
   charsThatBreakOutOfSupSub: '+-=<>',
   autoCommands: 'pi theta sqrt sum infty infin emptyset alpha',
   autoOperatorNames: 'sin cos ln exp',
