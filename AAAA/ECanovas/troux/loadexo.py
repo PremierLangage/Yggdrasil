@@ -48,8 +48,8 @@ def splitenonce(enonce="nothing"): #
     return enoncetroux,"?",mathtypes
 
 def defFormMathinput(indice,dico):
-    
-    
+
+    input_prefix=dico[indice]
     if indice==0:
         unInput='<p>'+input_prefix+'<span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p> <input type="text" id="form_math" hidden=true> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">'
     else:
