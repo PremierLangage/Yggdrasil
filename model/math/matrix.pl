@@ -8,7 +8,7 @@ resizable % true
 before_scripts % ["importmath", "initmat", "before"]
 
 initmat ==
-mat.setzeros(2)
+mat.setzeros(*size)
 mat.resizable = resizable
 ==
 
