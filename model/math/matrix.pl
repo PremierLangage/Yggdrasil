@@ -26,6 +26,8 @@ settings.feedback = rightwrong
 
 settings.maxattempt % 1
 
+extends = messages_math.pl
+
 style.matrix ==
 .matrix-input {
     border : none;
