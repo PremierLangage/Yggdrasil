@@ -36,11 +36,11 @@ if types != []:
     lesSol=lesSol[1].split(',')
 
 textsol=""
-#for sol in lesSol:
-    #if textsol=="":
-        #textsol=str(latex2sympy(sol))
-    #else:
-        #textsol=textsol+" ou "+str(latex2sympy(sol))
+for sol in lesSol:
+    if textsol=="":
+        textsol=str(latex2sympy(sol))
+    else:
+        textsol=textsol+" ou "+str(latex2sympy(sol))
 sol=""
 ==
 
