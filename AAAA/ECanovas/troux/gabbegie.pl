@@ -28,7 +28,7 @@ if types != []:
 
 form=mathiForm
 
-text=montexte+"<br/>Result= " +str(mathiForm)
+#text=montexte+"<br/>Result= " +str(mathiForm)
 
 # premier item du dic : les bonnes solutions
 lesSol="?"
@@ -36,7 +36,6 @@ if types != []:
     lesSol=types[0]
     lesSol=lesSol[1].split(',')
 
-#text=text+"<br/><small>Solution(latex)= "+str(lesSol)+"</small>"
 textsol=""
 for sol in lesSol:
     if textsol=="":
