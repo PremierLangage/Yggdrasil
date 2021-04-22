@@ -12,6 +12,10 @@ if shuffled:
     checkbox.shuffle()
 ==
 
+text ==
+Indiquer parmi les noms suivants ceux qui ne sont pas des noms valides pour une variable en Python.
+==
+
 nbitems % 5
 
 nbright % 2
