@@ -36,7 +36,7 @@ if types != []:
     lesSol=types[0]
     lesSol=lesSol[1].split(',')
 
-text=text+"<br/><small>Solution(latex)= "+str(lesSol)+"</small>"
+#text=text+"<br/><small>Solution(latex)= "+str(lesSol)+"</small>"
 textsol=""
 for sol in lesSol:
     if textsol=="":
