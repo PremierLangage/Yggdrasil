@@ -49,7 +49,7 @@ checkratsimp = True
 symbol_dict = {'e': E}
 unauthorized_func = []
 
-evaluator ==
+/*evaluator ==
 from ast import literal_eval
 from sympy import sympify
 from latex2sympy import latex2sympy
@@ -66,7 +66,7 @@ else:
     if score !=100:
         feedback = message[error]
 ==
-
+*/
 solution ==
 La solution est $!{{ textsol|latex}}!$.
 ==
