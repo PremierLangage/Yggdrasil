@@ -4,13 +4,17 @@ extends = /model/math/math.pl
 mat =: MathMatrix
 mat.decorator = CustomMathMatrix
 resizable % true
-size % [2, 2]
+initsize % [2, 2]
 before_scripts % ["importmath", "initmat", "before"]
 
 initmat ==
-mat.setzeros(*size)
 mat.resizable = resizable
+if resizable:
+    mat.setzeros(*initsize)
+else:
+    mat.setzeros(sol.rows, sol.cols)
 ==
+
 
 form2 ==
 <div style="text-align:center">
