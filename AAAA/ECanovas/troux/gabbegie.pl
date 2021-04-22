@@ -22,9 +22,6 @@ from loadexo import *
 # du texte vers le dico des réponses/feedbacks et texte
 enonc,dico,types = splitenonce(montexte)
 
-# html complet FORM menu 
-#menuForm =gethtmlmenu(enonc,dico)
-
 # Mathinput FORM
 mathiForm="Aucune entrée mathématique!!"
 if types != []:
@@ -43,7 +40,7 @@ if types != []:
 text=text+"<br/><small>Solution(latex)= "+str(lesSol)+"<br/>Solution(sympy)=</small"
 textsol=""
 for sol in lesSol:
-    text=text+"<small> "+str(latex2sympy(sol))+" et</small>"
+    #text=text+"<small> "+str(latex2sympy(sol))+" et</small>"
     textsol=textsol+","+str(latex2sympy(sol))
 sol=""
 ==
