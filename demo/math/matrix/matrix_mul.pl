@@ -4,14 +4,15 @@
 extends = /model/math/matrix.pl
 
 title ==
-Multiplier des matrices $! 2 \times 2 !$
+Multiplier des
+matrices $! 2 \times 2 !$
 ==
 
 before ==
 n = 2
 coeffbound = 3
-A = randint_matrix(n, n, coeffbound)
-B = randint_matrix(n, n, coeffbound)
+A = rand_int_matrix(n, n, coeffbound)
+B = rand_int_matrix(n, n, coeffbound)
 sol = A*B
 ==
 
