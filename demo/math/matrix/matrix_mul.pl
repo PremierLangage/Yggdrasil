@@ -1,6 +1,3 @@
-# Author : D. Doyen
-# Keywords : 
-
 extends = /model/math/matrix.pl
 
 title ==
