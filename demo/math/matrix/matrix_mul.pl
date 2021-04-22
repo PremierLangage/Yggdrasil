@@ -17,4 +17,4 @@ $$ A = \left( {{ A|latex }} \right) \text{ et } B = \left( {{ B|latex }} \right)
 Calculer $! A B !$.
 ==
 
-resizable % true
+resizable % false
