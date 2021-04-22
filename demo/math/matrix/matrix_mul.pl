@@ -1,8 +1,7 @@
 extends = /model/math/matrix.pl
 
 title ==
-Multiplier des
-matrices $! 2 \times 2 !$
+Multiplier des matrices $! 2 \times 2 !$
 ==
 
 before ==
