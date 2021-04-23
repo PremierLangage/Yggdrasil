@@ -13,4 +13,5 @@ Parmi les nombres suivants, lesquels sont des multiples de 3 ?
 
 nbitems % 5
 
-nbright % [1, 4]
+minright % 1
+maxright % 4
