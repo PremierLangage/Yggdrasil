@@ -1,8 +1,6 @@
 extends = /model/basic/dragdrop.pl
 
-title ==
-Exemple 2
-==
+title = Os du crâne
 
 sol ==
 Os frontal
