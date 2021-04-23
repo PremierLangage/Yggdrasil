@@ -69,7 +69,7 @@ for (let i = 0; i < {{nbtypes}}; i++) {
   autoOperatorNames: 'sin cos ln exp',
   handlers: {
     edit: function() { // useful event handlers
-      fmid.value = mathField.latex(); // simple API
+      fmid.value = docMap.get('mathField').latex(); // simple API
     }
   } );
   
