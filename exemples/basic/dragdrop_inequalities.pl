@@ -4,7 +4,7 @@ title ==
 Comparaison de nombres (DragDrop)
 ==
 
-labelcontents ==
+contents ==
 $! < !$
 $! > !$
 ==
@@ -19,9 +19,9 @@ for _ in range(nbdrops):
     [a, b] = rd.sample(range(10, 100), 2)
     numbers.append([a, b])
     if a < b:
-        sol.append("<")
+        sol.append("$! < !$")
     else:
-        sol.append(">")
+        sol.append("$! > !$")
 ==
 
 text==
