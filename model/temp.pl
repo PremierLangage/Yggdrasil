@@ -52,6 +52,14 @@ style.basic ==
     color: #155724;
     text-decoration: underline wavy green;
 }
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
 ==
 
 extracss ==
