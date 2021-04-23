@@ -51,10 +51,9 @@ def defFormMathinput(indice,dico):
 
     #input_prefix=str(dico[indice])
     if indice==0:
-        #unInput='<p>'+input_prefix+'<span id="math-field2" style="font-size:14pt;padding: 0.2em;"></span></p> <input type="text" id="form_math2" hidden=true> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">'
+        #unInput='<p>'+input_prefix+'<span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p> <input type="text" id="form_math" hidden=true> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">'
         unInput='<span id="math-field1" style="font-size:14pt;padding: 0.2em;"></span> <input type="text" id="form_math1" hidden=true> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">'
     else:
-        #unInput='<p>'+input_prefix+'<span id="math-field'+str(indice)+'" style="font-size:14pt;padding: 0.2em;"></span></p> <input type="text" id="form_math'+str(indice)+'" hidden=true> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">'
         unInput='<span id="math-field2" style="font-size:14pt;padding: 0.2em;"></span> <input type="text" id="form_math2" hidden=true> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">'
     return unInput
 
