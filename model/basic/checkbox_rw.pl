@@ -9,25 +9,25 @@ footerbefore ==
 from random import randint
 
 if isinstance(right, str):
-    lst_right = right.splitlines()
+    _right_ = right.splitlines()
 elif isinstance(right, list):
-    lst_right= right
+    _right_= right
 else:
     raise TypeError("right must be a string or a list")
 
 if isinstance(wrong, str):
-    lst_wrong = wrong.splitlines()
+    _wrong_ = wrong.splitlines()
 elif isinstance(wrong, list):
-    lst_wrong = wrong
+    _wrong_ = wrong
 else:
     raise TypeError("wrong must be a string or a list")
 
 if isinstance(nbright, list):
-    nbright0 = randint(*nbright)
+    _nbright_ = randint(*nbright)
 else:
-    nbright0 = nbright
+    _nbright_ = nbright
 
-checkbox.setdata_from_rw(lst_right, lst_wrong, nbitems, nbright0)
+checkbox.setdata_from_rw(_right_, _wrong_, nbitems, _nbright_)
 ==
 
 text ==
