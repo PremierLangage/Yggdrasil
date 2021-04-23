@@ -3,7 +3,7 @@ extends = /model/basic/sortlist.pl
 title = Ordre alphabétique
 
 text ==
-Classer les mots suivants dans l'ordre alphabétique.
+Classer nombres suivants du plus petit au plus grand.
 ==
 
 before ==
