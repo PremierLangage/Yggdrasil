@@ -16,13 +16,20 @@ Os ethmoïde
 scheme =$ /Biology/media/550px-Cranial_bones_numbers.svg.png
 
 form ==
-<img src="{{scheme}}" style="max-width: 300px; vertical-align:top; display: inline-block">
+ <div class="row">
+  <div class="column">
+    <img src="{{scheme}}" style="max-width: 300px; vertical-align:top; display: inline-block">
+  </div>
+  <div class="column">
+    <ul>
+        {% for i in range(nbdrops) %}
+        <li> {{ i + 1 }}. {{ drops[i]|component }} </li>
+        {% endfor %}
+    </ul>
+  </div>
+</div> 
 
-<ul>
-{% for i in range(nbdrops) %}
-<li> {{ i + 1 }}. {{ drops[i]|component }} {{ labels[i]|component }}</li>
-{% endfor %}
-</ul>
+
 
 {% for label in labels %}
 {{ label|component }}
