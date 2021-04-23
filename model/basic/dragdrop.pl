@@ -55,7 +55,7 @@ num_right = 0
 num_wrong = 0
 
 for i in range(n):
-    if drops[i].content == lstdropsolutions[i]:
+    if drops[i].content == _sol_[i]:
         num_right += 1
         drops[i].css += "success-state"
     else:
