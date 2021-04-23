@@ -3,6 +3,7 @@ extends = /model/basic.pl
 settings.feedback = lightscore
 
 title =
+contents % []
 
 footerbefore ==
 from customdragdrop import CustomDragDrop
