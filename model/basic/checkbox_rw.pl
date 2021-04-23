@@ -21,7 +21,10 @@ else:
     raise TypeError("wrong must be a string or a list")
 
 checkbox.setdata_from_rw(_right_, _wrong_, nbitems, randint(minright, maxright))
+checkbox.scoring = scoring
 ==
+
+scoring = AllOrNothing
 
 text ==
 Indiquer parmi les noms suivants ceux qui sont des noms valides pour une variable en Python.
