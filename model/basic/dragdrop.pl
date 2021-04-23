@@ -6,7 +6,13 @@ title =
 
 contents % []
 
-footerbefore ==
+before_scripts % ["basicimport", "before", "process"]
+
+basicimport ==
+from random import randint, choice, choices, sample, shuffle
+==
+
+process ==
 from customdragdrop import CustomDragDrop
 drops = []
 labels = []
