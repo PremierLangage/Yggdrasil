@@ -14,7 +14,7 @@ labels = []
 if isinstance(sol, str):
     _sol_ = sol.splitlines()
 else:
-    _sol_ = _sol_
+    _sol_ = sol
 
 if isinstance(contents, str):
     _contents_ = contents.splitlines()
