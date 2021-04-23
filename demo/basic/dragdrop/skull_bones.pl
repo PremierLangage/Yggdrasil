@@ -18,7 +18,7 @@ scheme =$ /Biology/media/550px-Cranial_bones_numbers.svg.png
 form ==
  <div class="row">
   <div class="column">
-    <img src="{{scheme}}" style="max-width: 300px; vertical-align:top; display: inline-block">
+    <img src="{{ scheme }}">
   </div>
   <div class="column">
     <ul>
@@ -28,8 +28,6 @@ form ==
     </ul>
   </div>
 </div> 
-
-
 
 {% for label in labels %}
 {{ label|component }}
