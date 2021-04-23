@@ -24,7 +24,7 @@ else:
 
 if isinstance(nbright, list):
     _nbright_ = randint(*nbright)
-else:
+elif isinstance(nbright, integer):
     _nbright_ = nbright
 
 checkbox.setdata_from_rw(_right_, _wrong_, nbitems, _nbright_)
