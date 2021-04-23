@@ -3,8 +3,6 @@ extends = /model/basic.pl
 checkbox =: CheckboxGroup
 checkbox.decorator = CustomCheckbox
 
-shuffled % true
-
 footerbefore ==
 from random import randint
 
@@ -27,7 +25,7 @@ if isinstance(nbright, list):
 elif isinstance(nbright, int):
     _nbright_ = nbright
 
-checkbox.setdata_from_rw(_right_, _wrong_, nbitems, _nbright_)
+checkbox.setdata_from_rw(_right_, _wrong_, nbitems, 3)
 ==
 
 text ==
