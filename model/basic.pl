@@ -7,9 +7,3 @@ title =
 @ /utils/builderlib.py
 
 settings.maxattempt % 1
-
-basicimport ==
-from random import randint, choice, choices, sample, shuffle
-==
-
-
