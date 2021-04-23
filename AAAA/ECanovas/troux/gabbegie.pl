@@ -43,7 +43,7 @@ for sol in lesSol:
 
 #DEBUG mathiForm=re.sub(r'[<,>]', '', mathiForm)
 #DEBUG text=enonc+" et "+str(len(types))+ " et " +str(types) +" "+str(textsol)+"<br/>Form="+str(mathiForm)+" fin"
-text=text+"-"+str(answers)
+
 nbtypes=len(types)
 
 sol=""
