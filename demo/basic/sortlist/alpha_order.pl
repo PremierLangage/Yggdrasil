@@ -1,8 +1,6 @@
 extends = /model/basic/sortlist.pl
 
-title ==
-Ordre alphabétique
-==
+title = Ordre alphabétique
 
 text ==
 Classer les mots suivants dans l'ordre alphabétique.
