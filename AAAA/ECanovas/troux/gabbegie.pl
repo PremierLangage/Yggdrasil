@@ -52,17 +52,17 @@ extrajs ==
 <!-- boucle sur les inputs -> list en résultat -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
 <script>
+
 var MQ = MathQuill.getInterface(2);
 
 var mathFieldList=[];
 
-
-for (let i = 0; i < {{nbtypes}}; i++) {
-
+for (let i = 1; i < 2; i++) {
+  
   var mfid=document.getElementById('math-field'+i);
   var fmid=document.getElementById('form_math'+i);
 
-  var docMap = new Map();
+  var docMap=new Map();
   docMap.set('mathFieldSpan', mfid);
   docMap.set('latexSpan', fmid);
   docMap.set('mathField', MQ.MathField( mfid, {
@@ -70,14 +70,14 @@ for (let i = 0; i < {{nbtypes}}; i++) {
   autoCommands: 'pi theta sqrt sum infty infin emptyset alpha',
   autoOperatorNames: 'sin cos ln exp',
   handlers: {
-    edit: function() { // useful event handlers
-      fmid.value = docMap.get('mathField').latex(); // simple API
-    }
-  }}));
-  
+     edit: function() { // useful event handlers
+       mfid.value = docMap.get('mathField').latex(); // simple API
+     }
+  }
+  })
+  );
   mathFieldList.push(docMap);
 }
-
 </script>
 <script>
     function onReadyPL(nodes) {
