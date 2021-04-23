@@ -20,12 +20,7 @@ elif isinstance(wrong, list):
 else:
     raise TypeError("wrong must be a string or a list")
 
-if isinstance(nbright, list):
-    _nbright_ = randint(3, 4)
-elif isinstance(nbright, int):
-    _nbright_ = nbright
-
-checkbox.setdata_from_rw(_right_, _wrong_, nbitems, 3)
+checkbox.setdata_from_rw(_right_, _wrong_, nbitems, randint(minright, maxright))
 ==
 
 text ==
@@ -34,7 +29,6 @@ Indiquer parmi les noms suivants ceux qui sont des noms valides pour une variabl
 
 nbitems % 5
 
-nbright % [2, 3]
 
 right ==
 bonjour
