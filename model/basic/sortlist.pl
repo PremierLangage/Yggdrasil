@@ -34,7 +34,7 @@ elif isinstance(sortedlist, list):
 else:
     raise TypeError("sortedlist must be a string or a list")
 
-if nbitems > 0:
+if isinstance(nbitems, int) and nbitems > 0:
     _nbitems_ = nbitems
 else:
     _nbitems_ = len(_sortedlist_)
