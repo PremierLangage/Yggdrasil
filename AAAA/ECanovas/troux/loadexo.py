@@ -69,7 +69,6 @@ def getFormMathinput(enonce,dico):
             l = re.sub(REPLACESTRING,m ,l,1)
             indice += 1
         maForm=maForm+l
-    
     return maForm
 
 def defhtmlmenu(indice,dico):
