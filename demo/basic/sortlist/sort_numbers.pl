@@ -1,6 +1,6 @@
 extends = /model/basic/sortlist.pl
 
-title = Ordre alphabétique
+title = Nombres
 
 text ==
 Classer les nombres suivants du plus petit au plus grand.
