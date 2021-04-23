@@ -10,9 +10,9 @@
 @ /utils/sympy/mplsympy.py
 @ /utils/plrandom.py
 
-before_scripts % ["importmath", "headerbefore", "before", "footerbefore"]
+before_scripts % ["mathimport", "headerbefore", "before", "footerbefore"]
 
-importmath ==
+mathimport ==
 from sympy import E, I, pi, oo
 from sympy import sqrt, Abs, sin, cos, tan, exp, ln
 from sympy import var, symbols, Symbol
