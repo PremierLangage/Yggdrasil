@@ -6,7 +6,7 @@ text==
 En utilisnt Drag and Drop, rangez les valeurs dans l'ordre.
 ==
 
-nbitems % Null
+nbitems % null
 
 footerbeforeold ==
 import random as rd
