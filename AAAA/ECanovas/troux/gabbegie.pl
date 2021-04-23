@@ -55,13 +55,14 @@ extrajs ==
 var MQ = MathQuill.getInterface(2);
 
 var mathFieldList=[];
-var docMap = new Map();
+
 
 for (let i = 0; i < {{nbtypes}}; i++) {
 
   var mfid=document.getElementById('math-field'+i);
   var fmid=document.getElementById('form_math'+i);
 
+  var docMap = new Map();
   docMap.set('mathFieldSpan', mfid);
   docMap.set('latexSpan', fmid);
   docMap.set('mathField', MQ.MathField( mfid, {
@@ -72,7 +73,7 @@ for (let i = 0; i < {{nbtypes}}; i++) {
     edit: function() { // useful event handlers
       fmid.value = docMap.get('mathField').latex(); // simple API
     }
-  } );
+  }}));
   
   mathFieldList.push(docMap);
 }
