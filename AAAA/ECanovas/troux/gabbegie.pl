@@ -106,7 +106,7 @@ for (let i = 1; i <= {{nbtypes}}; i++) {
 
     function onBeforeSubmitPL() {
       mathFieldList.forEach(function(item, index, array) {
-        item.get('latexspan').value = item.get('mathField').latex();
+        item.get('latexSpan').value = item.get('mathField').latex();
       });
     
     return true;
