@@ -45,7 +45,7 @@ for sol in lesSol:
 #DEBUG text=enonc+" et "+str(len(types))+ " et " +str(types) +" "+str(textsol)+"<br/>Form="+str(mathiForm)+" fin"
 
 nbtypes=len(types)
-
+text=text+" - "+str(nbtypes)
 sol=""
 ==
 extrajs ==
