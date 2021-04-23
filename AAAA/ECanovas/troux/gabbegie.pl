@@ -57,7 +57,7 @@ var MQ = MathQuill.getInterface(2);
 
 var mathFieldList=[];
 
-for (let i = 1; i < 2; i++) {
+for (let i = 1; i < {{nbtypes}}; i++) {
   
   var mfid=document.getElementById('math-field'+i);
   var fmid=document.getElementById('form_math'+i);
