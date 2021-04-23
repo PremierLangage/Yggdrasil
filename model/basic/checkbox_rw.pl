@@ -30,8 +30,6 @@ text ==
 Indiquer parmi les noms suivants ceux qui sont des noms valides pour une variable en Python.
 ==
 
-nbitems % 5
-
 
 right ==
 bonjour
