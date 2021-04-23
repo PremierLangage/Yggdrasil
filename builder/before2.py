@@ -55,8 +55,9 @@ if __name__ == "__main__":
                 next(reader) # skipping header
                 dic['sortedlist']=[ row for row in reader if row !=[]]
     
-    code = "\n".join([dic.get('headerbefore', ""), dic.get('before', ""), dic.get('footerbefore', "")])
-
+    before_scripts = dic.get('before_scripts', ['headerbefore', 'before', 'footerbefore'])
+    code = "\n".join([dic.get(name, "") for name in before_scripts])
+    
     # execute the script in before key with dic as globals
     exec(code, dic)
     
