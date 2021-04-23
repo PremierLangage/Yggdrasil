@@ -21,7 +21,7 @@ else:
     raise TypeError("wrong must be a string or a list")
 
 if isinstance(nbright, list):
-    _nbright_ = randint(*nbright)
+    _nbright_ = randint(3, 4)
 elif isinstance(nbright, int):
     _nbright_ = nbright
 
