@@ -39,7 +39,7 @@ if isinstance(nbitems, int):
 else:
     _nbitems_ = len(_sortedlist_)
 
-sortlist.setdata_from_list([_sorted_list_[i] for i in sorted(rd.sample(range(len(_sortedlist_)), nbitems))])
+sortlist.setdata_from_list([_sorted_list_[i] for i in sorted(sample(range(len(_sortedlist_)), nbitems))])
 ==
 
 sortlist =: SortList
