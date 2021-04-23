@@ -77,8 +77,6 @@ for (let i = 0; i < {{nbtypes}}; i++) {
   mathFieldList.push(docMap);
 }
 
-
-
 </script>
 <script>
     function onReadyPL(nodes) {
