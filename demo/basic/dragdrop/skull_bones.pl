@@ -20,7 +20,7 @@ form ==
 
 <ul>
 {% for i in range(nbdrops) %}
-<li> {{ i + 1 }}. {{ drops[i]|component }} </li>
+<li> {{ i + 1 }}. {{ drops[i]|component }} {{ labels[i]|component }}</li>
 {% endfor %}
 </ul>
 
