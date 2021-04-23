@@ -134,7 +134,7 @@ else:
         if score==100:
             break
     if score !=100:
-        feedback = str(answers['math'])+"-"+ message[error]
+        feedback = answers['math']
 ==
 
 solution ==
