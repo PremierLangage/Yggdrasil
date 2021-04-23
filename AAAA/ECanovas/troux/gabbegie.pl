@@ -56,6 +56,7 @@ var MQ = MathQuill.getInterface(2);
 
 var mathFieldList=[];
 var docMap = new Map();
+
 for (let i = 0; i < {{nbtypes}}; i++) {
 
   var mfid=document.getElementById('math-field'+i);
@@ -76,33 +77,7 @@ for (let i = 0; i < {{nbtypes}}; i++) {
   mathFieldList.push(docMap);
 }
 
-var mathFieldSpan = document.getElementById('math-field');
-var latexSpan = document.getElementById('form_math');
-var mathField = MQ.MathField(mathFieldSpan, {
-  charsThatBreakOutOfSupSub: '+-=<>',
-  autoCommands: 'pi theta sqrt sum infty infin emptyset alpha',
-  autoOperatorNames: 'sin cos ln exp',
-  handlers: {
-    edit: function() { // useful event handlers
-      latexSpan.value = mathField.latex(); // simple API
-    }
-  }
-});
-mathField.latex("{{ prev_value }}");
 
-var mathFieldSpan2 = document.getElementById('math-field2');
-var latexSpan2 = document.getElementById('form_math2');
-var mathField2 = MQ.MathField(mathFieldSpan2, {
-  charsThatBreakOutOfSupSub: '+-=<>',
-  autoCommands: 'pi theta sqrt sum infty infin emptyset alpha',
-  autoOperatorNames: 'sin cos ln exp',
-  handlers: {
-    edit: function() { // useful event handlers
-      latexSpan2.value = mathField2.latex(); // simple API
-    }
-  }
-});
-mathField2.latex("{{ prev_value2 }}");
 
 </script>
 <script>
