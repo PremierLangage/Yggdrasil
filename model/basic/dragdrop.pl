@@ -9,24 +9,24 @@ from customdragdrop import CustomDragDrop
 drops = []
 labels = []
 
-if isinstance(dropsolutions, str):
-    lstdropsolutions = dropsolutions.splitlines()
+if isinstance(sol, str):
+    _sol_ = sol.splitlines()
 else:
-    lstdropsolutions = dropsolutions
+    _sol_ = _sol_
 
-if 'labelcontents' in globals():
-    if isinstance(labelcontents, str):
-        list_labelcontents = labelcontents.splitlines()
-    else:
-        list_labelcontents = labelcontents
+if isinstance(contents, str):
+    _contents_ = contents.splitlines()
 else:
-    list_labelcontents = list(set(lstdropsolutions))
+    _contents_ = contents
 
-for content in list_labelcontents:
+_contents_ = list(set(_contents_ + _sol_))
+
+for content in _contents_:
     labels.append(CustomDragDrop.Label(content=content))
 
-nbdrops = len(lstdropsolutions)
-for _ in lstdropsolutions:
+nbdrops = len(_sol_)
+
+for _ in range(nbdrops):
     drops.append(CustomDragDrop.Drop())
 ==
 
