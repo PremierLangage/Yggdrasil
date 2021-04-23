@@ -44,6 +44,8 @@ for sol in lesSol:
 #DEBUG mathiForm=re.sub(r'[<,>]', '', mathiForm)
 #DEBUG text=enonc+" et "+str(len(types))+ " et " +str(types) +" "+str(textsol)+"<br/>Form="+str(mathiForm)+" fin"
 
+nbtypes=len(types)
+
 sol=""
 ==
 extrajs ==
@@ -51,6 +53,29 @@ extrajs ==
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
 <script>
 var MQ = MathQuill.getInterface(2);
+
+var mathFieldList=[];
+var docMap = new Map();
+for (let i = 0; i < {{nbtypes}}; i++) {
+
+  var mfid=document.getElementById('math-field'+i);
+  var fmid=document.getElementById('form_math'+i);
+
+  docMap.set('mathFieldSpan', mfid);
+  docMap.set('latexSpan', fmid);
+  docMap.set('mathField', MQ.MathField( mfid, {
+  charsThatBreakOutOfSupSub: '+-=<>',
+  autoCommands: 'pi theta sqrt sum infty infin emptyset alpha',
+  autoOperatorNames: 'sin cos ln exp',
+  handlers: {
+    edit: function() { // useful event handlers
+      fmid.value = mathField.latex(); // simple API
+    }
+  } );
+  
+  mathFieldList.push(docMap);
+}
+
 var mathFieldSpan = document.getElementById('math-field');
 var latexSpan = document.getElementById('form_math');
 var mathField = MQ.MathField(mathFieldSpan, {
