@@ -12,6 +12,10 @@ for i in range(4):
         sol.append("$! > !$")
 ==
 
+text ==
+Comparer les nombres suivants en utilisant le symbole adapté.
+==
+
 form ==
 <ul>
     {% for i in range(nbdrops) %}
