@@ -3,7 +3,7 @@ extends = /model/basic/dragdrop.pl
 title = Génétique
 
 text ==
-Compléter le texte suivante avec les étiquettes proposées.
+Compléter le texte suivante avec les bonnes étiquettes.
 ==
 
 form ==
