@@ -27,5 +27,5 @@ form ==
   </div>
 </div> 
 
-{{ label }}
+{% for label in labels %} {{ label }} {% endfor %}
 ==
