@@ -1,6 +1,6 @@
 extends = /model/basic/dragdrop.pl
 
-title = Homophones : ces ou c'est
+title = Génétique
 
 text ==
 Compléter le texte suivante avec les étiquettes proposées.
