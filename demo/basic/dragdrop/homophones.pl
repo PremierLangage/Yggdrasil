@@ -8,11 +8,6 @@ c'est
 ces
 ==
 
-labval ==
-ces
-c'est
-==
-
 text ==
 Compléter les phrases suivantes avec les étiquettes proposées.
 ==
