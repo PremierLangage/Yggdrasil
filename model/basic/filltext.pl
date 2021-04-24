@@ -19,5 +19,15 @@ def replace(x):
 
 form = re.sub(r'\{(.*?)\}', replace , filledtext)
 
+form2 = """
+
+<br><br>
+
+{% for label in labels %}
+{{ label }}
+{% endfor %}
+"""
+
+form = form + form2
 ==
 
