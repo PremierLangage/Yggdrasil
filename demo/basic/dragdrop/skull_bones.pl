@@ -11,7 +11,7 @@ Os occipital
 Os ethmoïde
 ==
 
-scheme =$ /Biology/media/550px-Cranial_bones_numbers.svg.png
+scheme =$ skull_bones.png
 
 form ==
  <div class="row">
