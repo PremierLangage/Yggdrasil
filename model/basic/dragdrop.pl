@@ -24,7 +24,7 @@ else:
 
 if isinstance(labval, str):
     _labval_ = labval.splitlines()
-elif isinstance(labval, lst):
+elif isinstance(labval, list):
     _labval_ = labval
 else:
     _labval_ = []
