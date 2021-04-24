@@ -19,7 +19,7 @@ Comparer les nombres suivants en utilisant le symbole adapté.
 form ==
 <ul>
     {% for i in range(nbdrops) %}
-    <li> {{ numbers[i][0] }} {{ drop [i] }} {{ numbers[i][1] }} </li>
+    <li> {{ numbers[i][0] }} {{ drops[i] }} {{ numbers[i][1] }} </li>
     {% endfor %}
 </ul>
 ==
