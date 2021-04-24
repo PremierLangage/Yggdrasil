@@ -1,6 +1,6 @@
 extends = /model/basic/dragdrop.pl
 
-title = Ces ou c'est
+title = _ces_ ou _c'est_
 
 sol ==
 ces
