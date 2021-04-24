@@ -62,7 +62,7 @@ form ==
 ==
 
 evaluator ==
-n = len(drops)
+n = len(dropcomp)
 num_right = 0
 num_wrong = 0
 
