@@ -9,7 +9,7 @@ ces
 ==
 
 form ==
-* Je voudrais {{ drops[0] }} chausures pour mon anniversaire. </li>
+* Je voudrais {{ drops[0] }} chausures pour mon anniversaire.
 * Tu est toujours en retard, {{ drops[1] }} agaçant !  
 * Je n'aime pas {{ drops[2] }} méthodes.
 
