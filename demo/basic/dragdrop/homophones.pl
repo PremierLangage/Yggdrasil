@@ -1,6 +1,6 @@
 extends = /model/basic/dragdrop.pl
 
-title = _ces_ ou _c'est_
+title = Homophones : ces ou c'est
 
 sol ==
 ces
