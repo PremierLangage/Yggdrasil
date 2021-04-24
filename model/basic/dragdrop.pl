@@ -24,8 +24,10 @@ else:
 
 if isinstance(labval, str):
     _labval_ = labval.splitlines()
-else:
+elif isinstance(labval, lst):
     _labval_ = labval
+else:
+    _labval_ = []
 
 _labval_ = list(set(_labval_ + _sol_))
 
