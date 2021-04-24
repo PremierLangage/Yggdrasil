@@ -29,12 +29,12 @@ else:
 
 _contents_ = list(set(_contents_ + _sol_))
 
-for content in _contents_:
+for i, content in enumerate(_contents_):
     labelcomp.append(CustomDragDrop.Label(content=content))
     selector = labelcomp[i]["selector"]
     cid = = labelcomp[i]["cid"]
     label.append("<%s cid='%s'></%s>" % (selector, cid, selector))
-    
+
 nbdrops = len(_sol_)
 
 for i in range(nbdrops):
