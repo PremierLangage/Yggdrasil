@@ -21,7 +21,7 @@ form ==
   <div class="column">
     <ul>
         {% for i in range(nbdrops) %}
-        <li> {{ i + 1 }}. {{ drop[i] }} </li>
+        <li> {{ i + 1 }}. {{ drops[i] }} </li>
         {% endfor %}
     </ul>
   </div>
