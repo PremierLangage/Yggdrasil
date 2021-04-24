@@ -8,6 +8,15 @@ c'est
 ces
 ==
 
+labval ==
+ces
+c'est
+==
+
+text ==
+Compléter les phrases suivantes avec les étiquettes proposées.
+==
+
 form ==
 <ul>
 <li> Je voudrais {{ drops[0] }} chausures pour mon anniversaire. </li>
