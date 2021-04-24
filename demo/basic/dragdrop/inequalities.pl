@@ -4,7 +4,7 @@ before==
 numbers = []
 sol = []
 for i in range(4):
-    [a,b] = sample(range(10, 100), 2)
+    a, b = sample(range(10, 100), 2)
     numbers.append([a, b])
     if a < b:
         sol.append("$! < !$")
@@ -13,7 +13,7 @@ for i in range(4):
 ==
 
 text ==
-Comparer les nombres suivants en utilisant le symbole adapté.
+Comparer les nombres suivants en utilisant le symbole adapté ({{ labels[0] }} ou {{ labels[1] }}).
 ==
 
 form ==
