@@ -21,13 +21,11 @@ form ==
   <div class="column">
     <ul>
         {% for i in range(nbdrops) %}
-        <li> {{ i + 1 }}. {{ drops[i]|component }} </li>
+        <li> {{ i + 1 }}. {{ drops[i] }} </li>
         {% endfor %}
     </ul>
   </div>
 </div> 
 
-{% for label in labels %}
-{{ label|component }}
-{% endfor %}
+{{ label }}
 ==
