@@ -2,12 +2,6 @@ extends = /model/basic/dragdrop.pl
 
 title = Homophones : ces ou c'est
 
-sol ==
-ces
-c'est
-ces
-==
-
 text ==
 Compléter les phrases suivantes avec les étiquettes proposées.
 ==
@@ -20,4 +14,10 @@ form ==
 </ul>
 
 {{ labels[0] }} {{ labels[1] }}
+==
+
+sol ==
+ces
+c'est
+ces
 ==
