@@ -14,8 +14,8 @@ from random import randint, choice, choices, sample, shuffle
 
 setcomp ==
 from customdragdrop import CustomDragDrop
-dropcomp = []
-labelcomp = []
+dropcomp, labelcomp = [], []
+label, drop = [], []
 
 if isinstance(sol, str):
     _sol_ = sol.splitlines()
