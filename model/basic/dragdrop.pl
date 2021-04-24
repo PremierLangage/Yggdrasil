@@ -14,7 +14,7 @@ from random import randint, choice, choices, sample, shuffle
 
 setcomp ==
 from customdragdrop import CustomDragDrop
-dropcomp, labelcomp = [], []
+labelcomp, dropcomp = [], []
 label, drop = [], []
 
 if isinstance(sol, str):
@@ -31,16 +31,16 @@ _contents_ = list(set(_contents_ + _sol_))
 
 for i, content in enumerate(_contents_):
     labelcomp.append(CustomDragDrop.Label(content=content))
-    selector = labelcomp[i]["selector"]
-    cid = labelcomp[i]["cid"]
+    selector = labelcomp[i].selector
+    cid = labelcomp[i].cid
     label.append("<%s cid='%s'></%s>" % (selector, cid, selector))
 
 nbdrops = len(_sol_)
 
 for i in range(nbdrops):
     dropcomp.append(CustomDragDrop.Drop())
-    selector = dropcomp[i]["selector"]
-    cid = dropcomp[i]["cid"]
+    selector = dropcomp[i].selector
+    cid = dropcomp[i].cid
     drop.append("<%s cid='%s'></%s>" % (selector, cid, selector))
 ==
 
