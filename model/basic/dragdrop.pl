@@ -4,7 +4,7 @@ settings.feedback = lightscore
 
 title =
 
-contents % []
+labval % []
 
 before_scripts % ["importfunc", "before", "setcomp"]
 
@@ -22,14 +22,14 @@ if isinstance(sol, str):
 else:
     _sol_ = sol
 
-if isinstance(contents, str):
-    _contents_ = contents.splitlines()
+if isinstance(labval, str):
+    _labval_ = labval.splitlines()
 else:
-    _contents_ = contents
+    _labval_ = labval
 
-_contents_ = list(set(_contents_ + _sol_))
+_labval_ = list(set(_labval_ + _sol_))
 
-for i, content in enumerate(_contents_):
+for i, content in enumerate(_labval_):
     cplabels.append(CustomDragDrop.Label(content=content))
     selector = cplabels[i].selector
     cid = cplabels[i].cid
