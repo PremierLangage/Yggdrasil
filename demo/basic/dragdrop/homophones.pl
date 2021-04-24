@@ -1,6 +1,6 @@
 extends = /model/basic/dragdrop.pl
 
-title = Os du crâne
+title = Ces ou c'est
 
 sol ==
 ces
