@@ -9,16 +9,20 @@ Compléter le texte suivant avec les étiquettes.
 
 footerbefore ==
 import re
-
-sol = re.findall(r'\{(.*?)\}', filledtext)
-
 count = -1
 def replace(x):
     global count
     count += 1
-    return "{{ drops[" + str(count) + "]}}"
+    return "{{ drops[" + str(count) + "]|component }}"
 
-form = re.sub(r'\{(.*?)\}', replace , filledtext)
+from customdragdrop import CustomDragDrop
+drops = []
+labels = []
+
+lstdropsolutions = re.findall(r'\{(.*?)\}', filledtext)
+lstlabelcontents = list(set(lstdropsolutions)) + distractors.splitlines()
+form = filledtext
+form = re.sub(r'\{(.*?)\}', replace , form)
 
 form2 = """
 
@@ -30,4 +34,11 @@ form2 = """
 """
 
 form = form + form2
+
+for content in lstlabelcontents:
+    labels.append(CustomDragDrop.Label(content=content))
+
+nbdrops = len(lstdropsolutions)
+for _ in lstdropsolutions:
+    drops.append(CustomDragDrop.Drop())
 ==
