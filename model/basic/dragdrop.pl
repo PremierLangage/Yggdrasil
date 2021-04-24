@@ -14,8 +14,8 @@ from random import randint, choice, choices, sample, shuffle
 
 setcomp ==
 from customdragdrop import CustomDragDrop
-labelcomp, dropcomp = [], []
-label, drop = [], []
+cplabels, cpdrops = [], []
+labels, drops = [], []
 
 if isinstance(sol, str):
     _sol_ = sol.splitlines()
@@ -30,18 +30,18 @@ else:
 _contents_ = list(set(_contents_ + _sol_))
 
 for i, content in enumerate(_contents_):
-    labelcomp.append(CustomDragDrop.Label(content=content))
-    selector = labelcomp[i].selector
-    cid = labelcomp[i].cid
-    label.append("<%s cid='%s'></%s>" % (selector, cid, selector))
+    cplabels.append(CustomDragDrop.Label(content=content))
+    selector = cplabels[i].selector
+    cid = cplabels[i].cid
+    labels.append("<%s cid='%s'></%s>" % (selector, cid, selector))
 
 nbdrops = len(_sol_)
 
 for i in range(nbdrops):
-    dropcomp.append(CustomDragDrop.Drop())
-    selector = dropcomp[i].selector
-    cid = dropcomp[i].cid
-    drop.append("<%s cid='%s'></%s>" % (selector, cid, selector))
+    cpdrops.append(CustomDragDrop.Drop())
+    selector = cpdrops[i].selector
+    cid = cpdrops[i].cid
+    drops.append("<%s cid='%s'></%s>" % (selector, cid, selector))
 ==
 
 text =
@@ -62,17 +62,17 @@ form ==
 ==
 
 evaluator ==
-n = len(dropcomp)
+n = len(cpdrops)
 num_right = 0
 num_wrong = 0
 
 for i in range(n):
-    if dropcomp[i].content == _sol_[i]:
+    if cpdrops[i].content == _sol_[i]:
         num_right += 1
-        dropcomp[i].css += "success-state"
+        cpdrops[i].css += "success-state"
     else:
         num_wrong +=1
-        dropcomp[i].css += "error-state"
+        cpdrops[i].css += "error-state"
 
 if num_wrong > 0 :
     score = 0
