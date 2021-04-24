@@ -1,0 +1,25 @@
+extends = /model/basic/dragdrop.pl
+
+title = Homophones : ces ou c'est
+
+text ==
+Compléter le texte suivante avec les étiquettes proposées.
+==
+
+form ==
+L’ensemble des gènes caractéristiques de l’espèce à laquelle appartient un organisme, constitue son {{ drops[0] }}. 
+Chez les individus d’une même espèce, un gène peut cependant exister sous différentes formes présentant de légères modifications de séquence (allèles). 
+L’ensemble des allèles d’un individu définit son {{ drops[1] }}. Lorsqu’ils s’expriment, lors de la synthèse des protéines, les gènes participent à la construction de l’individu et à la mise en place de son {{ drops[2] }}. 
+
+{% for label in labels %} {{ label }} {% endfor %}
+==
+
+sol ==
+génome
+génotype
+phénotype
+==
+
+labval ==
+caryotype
+==
