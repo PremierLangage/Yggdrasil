@@ -32,7 +32,7 @@ _contents_ = list(set(_contents_ + _sol_))
 for i, content in enumerate(_contents_):
     labelcomp.append(CustomDragDrop.Label(content=content))
     selector = labelcomp[i]["selector"]
-    cid = = labelcomp[i]["cid"]
+    cid = labelcomp[i]["cid"]
     label.append("<%s cid='%s'></%s>" % (selector, cid, selector))
 
 nbdrops = len(_sol_)
@@ -40,7 +40,7 @@ nbdrops = len(_sol_)
 for i in range(nbdrops):
     dropcomp.append(CustomDragDrop.Drop())
     selector = dropcomp[i]["selector"]
-    cid = = dropcomp[i]["cid"]
+    cid = dropcomp[i]["cid"]
     drop.append("<%s cid='%s'></%s>" % (selector, cid, selector))
 ==
 
