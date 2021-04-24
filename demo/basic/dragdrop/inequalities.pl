@@ -11,3 +11,11 @@ for i in range(4):
     else:
         sol.append("$! > !$")
 ==
+
+form ==
+<ul>
+    {% for i in range(nbdrops) %}
+    <li> {{ numbers[i][0] }} {{ drop [i] }} {{ numbers[i][1] }} </li>
+    {% endfor %}
+</ul>
+==
