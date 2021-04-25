@@ -7,14 +7,13 @@ Listening
 audiofile =$ english_sentence.mp3
 
 text ==
-<button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button> Transcrire la phrase.
-
+<button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button>
 <audio id="Audio" style="display:none" src="{{ audiofile }}"></audio> 
-
 <script>
     var x = document.getElementById("Audio"); 
     function playAudio() {x.play();} 
 </script>
+Transcrire la phrase.
 ==
 
 sol ==
