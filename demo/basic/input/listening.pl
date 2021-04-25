@@ -17,11 +17,11 @@ text ==
 </script>
 ==
 
-solution ==
+sol ==
 I'm gonna make him an offer he can't refuse
 ==
 
 diffmeasure = EditRatio
 
-tolerance = 0.1
+tol % 0.1
 
