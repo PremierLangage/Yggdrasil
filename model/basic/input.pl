@@ -24,19 +24,16 @@ def samestrings(str1, str2, diffmeasure="EditDist", tolerance=0, casesensitive=F
         str1 = str1.casefold()
         str2 = str2.casefold()
     if diffmeasure == "EditRatio":
-        return edit_distance(str1, str2)/len(str2) <= tolerance
+        return edit_distance(str1, str2)/len(str2) <= tol
     else:
-        return edit_distance(str1, str2) <= tolerance
+        return edit_distance(str1, str2) <= tol
 
-if isinstance(solution, str):
-    if '\n' in solution:
-        lstsol = solution.splitlines()
-    else:
-        lstsol = [solution]
-elif isinstance(solution, lst):
-    lstsol = solution
+if isinstance(sol, str):
+    _sol_ = sol.splitlines()
+elif isinstance(sol, lst):
+    _sol_ = sol
 
-if any([samestrings(input.value, item, diffmeasure=diffmeasure, tolerance=tolerance) for item in lstsol]):
+if any([samestrings(input.value, item, diffmeasure=diffmeasure, tolerance=tolerance) for item in _sol_]):
     score = 100
 else:
     score = 0
