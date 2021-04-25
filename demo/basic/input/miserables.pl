@@ -8,7 +8,7 @@ text ==
 Qui a écrit *Les Misérables* ?
 ==
 
-solution ==
+sol ==
 Victor Hugo
 Hugo
 ==
