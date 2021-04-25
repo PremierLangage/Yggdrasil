@@ -37,3 +37,14 @@ if any([samestrings(input.value, item, diffmeasure=diffmeasure, tol=tol) for ite
 else:
     score = 0
 ==
+
+macros ==
+{% macro audio_button(sourcefile) -%}
+<button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button>
+<audio id="Audio" style="display:none" src="{{ sourcefile }}"></audio> 
+<script>
+    var x = document.getElementById("Audio"); 
+    function playAudio() {x.play();} 
+</script>
+{%- endmacro %}
+==
