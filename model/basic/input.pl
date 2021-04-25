@@ -3,6 +3,8 @@ extends = /model/basic.pl
 
 casesensitive % false
 
+diffmeasure = EditDist
+
 tolerance % 0
 
 input =: Input
