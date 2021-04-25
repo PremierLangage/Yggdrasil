@@ -15,4 +15,4 @@ True
 True
 ==
 
-stopfirsterror % true
+stopfirsterror = True
