@@ -17,7 +17,7 @@ if isinstance(nbmatches, int):
 else:
     _nbmatches_ = len(_matches_)
 
-matchlist.setdata_from_matches(rd.sample(_matches_, nbmatches))
+matchlist.setdata_from_matches(rd.sample(_matches_, _nbmatches_))
 ==
 
 matchlist =: MatchList
