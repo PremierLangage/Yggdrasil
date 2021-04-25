@@ -5,7 +5,7 @@ casesensitive % false
 
 diffmeasure = EditDist
 
-tolerance % 0
+tol % 0
 
 input =: Input
 
