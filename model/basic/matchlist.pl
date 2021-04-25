@@ -2,7 +2,7 @@ extends = /model/basic.pl
 
 title =
 
-nbsample = 0
+nbmatches % null
 
 footerbefore ==
 import random as rd
