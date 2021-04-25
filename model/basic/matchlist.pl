@@ -6,16 +6,18 @@ nbsample = 0
 
 footerbefore ==
 import random as rd
-nbsample = int(nbsample)
 
-if isinstance(pairings, str): 
-    lst = [pairing.split(";") for pairing in pairings.splitlines()]
+if isinstance(matches, str): 
+    _matches_ = [pairing.split(";") for pairing in pairings.splitlines()]
 else:
-    lst = pairings
-if nbsample == 0:
-    nbsample = len(lst)
+    _matches_ = matches
 
-matchlist.setdata_from_matches(rd.sample(lst, nbsample))
+if isinstance(nbmatches, int):
+    _nbmatches_ = nbmatches
+else:
+    _nbmatches_ = len(_matches_)
+
+matchlist.setdata_from_matches(rd.sample(lst, nbmatches))
 ==
 
 matchlist =: MatchList
