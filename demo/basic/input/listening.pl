@@ -7,12 +7,16 @@ Listening
 audiofile =$ english_sentence.mp3
 
 text ==
+{% macro audio_button(sourcefile) -%}
 <button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button>
-<audio id="Audio" style="display:none" src="{{ audiofile }}"></audio> 
+<audio id="Audio" style="display:none" src="{{ sourcefile }}"></audio> 
 <script>
     var x = document.getElementById("Audio"); 
     function playAudio() {x.play();} 
 </script>
+{%- endmacro %}
+
+{{ audio_button(audiofile) }}
 Transcrire la phrase.
 ==
 
