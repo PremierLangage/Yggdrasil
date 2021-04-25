@@ -14,3 +14,5 @@ True
 >>> f() == 42 # retourne 42 
 True
 ==
+
+stopfirsterror % true
