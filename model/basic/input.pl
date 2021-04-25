@@ -18,10 +18,7 @@ settings.feedback = rightwrong
 evaluator ==
 from pltext import edit_distance
 
-tolerance = float(tolerance)
-
-
-def samestrings(str1, str2, diffmeasure="EditDist", tolerance=0, casesensitive=False):
+def samestrings(str1, str2, diffmeasure="EditDist", tol=0, casesensitive=False):
     if not casesensitive:
         str1 = str1.casefold()
         str2 = str2.casefold()
@@ -35,7 +32,7 @@ if isinstance(sol, str):
 elif isinstance(sol, lst):
     _sol_ = sol
 
-if any([samestrings(input.value, item, diffmeasure=diffmeasure, tolerance=tolerance) for item in _sol_]):
+if any([samestrings(input.value, item, diffmeasure=diffmeasure, tol=tol) for item in _sol_]):
     score = 100
 else:
     score = 0
