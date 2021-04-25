@@ -1,5 +1,6 @@
 
-def minimumEditDistance(s1, s2):
+def edit_distance(s1, s2):
+    """Return the edit distance between two strings"""
     if len(s1) > len(s2):
         s1, s2 = s2, s1
     distances = range(len(s1) + 1)
