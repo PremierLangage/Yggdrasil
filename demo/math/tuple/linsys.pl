@@ -10,7 +10,7 @@ n = 3
 lstvar = ",".join(["x", "y", "z", "t"][:n])
 
 A = rand_int_matrix_invertible(n, 3, [0])
-B = rand_int_matrix(n, 1, 3, [0])
+B = rand_int_matrix(n, 1, 5, [0])
 
 sol = list(linsolve((A, B)))[0]
 
