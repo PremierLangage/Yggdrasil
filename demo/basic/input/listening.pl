@@ -1,8 +1,6 @@
 extends = /model/basic/input.pl
 
-title ==
-Listening
-==
+title = Listening
 
 file =$ english_sentence.mp3
 
@@ -17,4 +15,3 @@ I'm gonna make him an offer he can't refuse
 diffmeasure = EditRatio
 
 tol % 0.1
-
