@@ -10,8 +10,8 @@ before ==
 from random import randint
 matches = []
 for i in range(4):
-    a = range(10, 20)
-    b = range(0, a)
+    a = randint(10, 20)
+    b = randint(0, a)
     c = a - b
     matches.append([str(a), f"{b} + {c}"]
 
