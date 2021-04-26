@@ -17,7 +17,7 @@ import random as rd
 def ref(lst):
     return [num for num in lst if num % 2 == 0]     
 
-run(title='Évaluation du code',output='')
+run(title='Évaluation du code', output='')
 
 begin_test_group("Tests de base")
 run('filtre_pairs([2,21,5,7,4,4,13,0])',title = 'Test 1', result = [2,4,4,0])
