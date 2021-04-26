@@ -6,6 +6,6 @@ param.comfactor % 2
 
 param.terms % [1,1]
 
-param.obvious % true
+param.obvious % false
 
 
