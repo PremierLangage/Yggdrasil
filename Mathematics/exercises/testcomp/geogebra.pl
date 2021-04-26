@@ -63,7 +63,7 @@ var parameters2 = {
         "borderColor":null,
         "showMenuBar":false,
         "showAlgebraInput":false,
-        "showResetIcon":true,
+        "showResetIcon":false,
         "enableLabelDrags":false,
         "enableShiftDragZoom":true,
         "enableRightClick":true,
