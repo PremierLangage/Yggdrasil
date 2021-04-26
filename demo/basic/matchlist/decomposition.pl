@@ -11,7 +11,7 @@ from random import randint
 matches = []
 for i in range(4):
     a = randint(10, 20)
-    b = randint(1, a)
+    b = randint(1, a-1)
     c = a - b
     matches.append([str(a), f"{b} + {c}"])
 
