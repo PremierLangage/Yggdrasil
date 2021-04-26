@@ -41,7 +41,7 @@ var parameters = {
         "showMenuBar":false,
         "showAlgebraInput":false,
         "customToolbar":"0 || 2 || 4 || 5 || 19 ||53 ",
-        "showResetIcon":true,
+        "showResetIcon":false,
         "enableLabelDrags":false,
         "enableShiftDragZoom":true,
         "enableRightClick":true,
