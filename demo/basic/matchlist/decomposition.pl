@@ -13,6 +13,6 @@ for i in range(4):
     a = randint(10, 20)
     b = randint(0, a)
     c = a - b
-    matches.append([str(a), f"{b} + {c}"]
+    matches.append([str(a), f"{b} + {c}"])
 
 ==
