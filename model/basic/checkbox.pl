@@ -3,29 +3,21 @@ extends = /model/basic.pl
 checkbox =: CheckboxGroup
 checkbox.decorator = CustomCheckbox
 
-shuffle % true
-
-headerbefore ==
-boolsol = None
-indsol = None
-choices = None
-==
+shuffled % true
 
 footerbefore ==
-if choices is not None:
-    checkbox.setitems(choices)
-    if boolsol is not None:
-        indsol = [i for i in range(len(boolsol)) if boolsol[i]]
-    if indsol is not None:
-        checkbox.setsol_from_index(indsol)
+if isinstance(items, str):
+    _items_ = items.splitlines()
+elif isinstance(items, list):
+    _items_= items
 else:
-    checkbox.setdata_from_rw(right, wrong, nbchoices, nbright)
+    raise TypeError("items must be a string or a list")
 
+checkbox.setitems(_items_)
 
-if shuffle:
+if shuffled:
     checkbox.shuffle()
 ==
-
 
 settings.feedback = lightscore
 
