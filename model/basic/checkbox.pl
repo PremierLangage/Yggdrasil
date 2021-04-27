@@ -1,7 +1,10 @@
 extends = /model/basic.pl
+@ /utils/components/scoring.py
+@ /utils/components/checkbox.py [customcheckbox.py]
 
 checkbox =: CheckboxGroup
 checkbox.decorator = CustomCheckbox
+
 
 shuffled % true
 
