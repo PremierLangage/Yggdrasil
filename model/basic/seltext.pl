@@ -38,6 +38,9 @@ def read_text_bracket(string):
     return ("".join(lst),selection)
 
 s,_=read_text_bracket(bracket_words(s))
+
+s2 = """{Ô} {rage} ! {Ô} {désespoir} ! {Ô} {vieillesse} {ennemie} !<br> 
+{N'}{ai}-{je} {donc} {tant} {vécu} {que} {pour} {cette} {infamie} ?"""
 ==
 
 text==
