@@ -6,7 +6,10 @@ selectedtext ==
 Artur {{a}} horreur de la {marche à pied}.
 ==
 
-before==
+before_scripts % ["before", "process"]
+
+
+process ==
 import re
 
 def bracket_words(string):
