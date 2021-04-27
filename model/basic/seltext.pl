@@ -4,6 +4,9 @@
 
 title = Repérage des verbes
 
+selectedtext ==
+Artur {{a}} horreur de la marche à pied.
+==
 before==
 s="Artur {{a}} horreur de la marche à pied."
 
@@ -36,7 +39,7 @@ def read_text_bracket(string):
     
     return ("".join(lst),selection)
 
-s,_=read_text_bracket(bracket_words(s))
+s,_=read_text_bracket(bracket_words(selectedtext))
 
 s2 = """{Ô} {rage} ! {Ô} {désespoir} ! {Ô} {vieillesse} {ennemie} !<br> 
 {N'}{ai}-{je} {donc} {tant} {vécu} {que} {pour} {cette} {infamie} ?"""
