@@ -111,7 +111,7 @@ for (i = 0; i < words.length; i++) {
 			this.style.backgroundColor="transparent";
 			list.splice( list.indexOf(this.id), 1 ); 
 		} else {
-			this.style.backgroundColor=ColorHighlight;
+			this.style.backgroundColor="#cce5ff";
 			list.push(this.id); 
 		}
 		document.getElementById('form_1').value = list
