@@ -74,7 +74,7 @@ var ColorHighlight="#cce5ff"
 var words = document.querySelectorAll("#textselect span")
 for (i = 0; i < words.length; i++) {
 	words[i].addEventListener('click', function() {
-		if (this.dataset.sel == "true") {
+		if (this.classList.containes('highlight-state')) {
             this.classList.remove('highlight-state');
             this.dataset.sel = "false";
 			list.splice(list.indexOf(this.dataset.index), 1); 
