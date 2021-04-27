@@ -1,20 +1,24 @@
-extends = /model/basic.pl
+extends = /model/basic/basic.pl
+@ /utils/components/scoring.py
+@ /utils/components/radio.py [customradio.py]
 
 radio =: RadioGroup
 radio.decorator = CustomRadio
 
-indexsol % 0
+indsol % 0
+suffled % true
 
-
-footerbefore ==
-if isinstance(choices, str):
-    radio.setitems(choices.splitlines())
+process ==
+if isinstance(items, str):
+    _items_ = items.splitlines())
 else:
-    radio.setitems(choices)
+    _items_ = items
+    
+radio.setitems(_items_)
 
-radio.setsol_from_index(int(indexsol))
+radio.setsol_from_index(indsol)
 
-if shuffle:
+if shuffled:
     radio.shuffle()
 ==
 
@@ -27,6 +31,3 @@ evaluator ==
 score = radio.eval()
 radio.disabled = True
 ==
-
-shuffle % true
-
