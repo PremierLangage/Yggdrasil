@@ -3,6 +3,7 @@ extends = /model/basic.pl
 title =
 
 nbmatches % null
+delimiter % ","
 
 footerbefore ==
 
