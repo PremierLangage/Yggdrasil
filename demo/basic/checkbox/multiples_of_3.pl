@@ -6,8 +6,8 @@ before ==
 from random import sample
 items = sample(range(50, 100), 6)
 indsol = []
-for i, e in enumerate(items):
-    if e % 3 == 0:
+for i, num in enumerate(items):
+    if num % 3 == 0:
         indsol.append(i)
 ==
 
