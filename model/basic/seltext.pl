@@ -108,7 +108,7 @@ var words = document.querySelectorAll("#textselect span")
 for (i = 0; i < words.length; i++) {
     words[i].data("selected") = false;
 	words[i].addEventListener('click', function() {
-		if (this.data("selected")) {
+		if (this.style.backgroundColor==ColorHighlight) {
 			this.style.backgroundColor = "transparent";
             this.data("selected") = false;
 			list.splice( list.indexOf(this.id), 1 ); 
