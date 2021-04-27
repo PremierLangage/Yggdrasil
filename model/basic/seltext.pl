@@ -40,7 +40,7 @@ def read_text_bracket(string):
     
     return ("".join(lst),selection,k)
 
-HTMLtext,_,nbunits =read_text_bracket(bracket_words(selectedtext))
+HTMLtext,sol,nbunits =read_text_bracket(bracket_words(selectedtext))
 
 s2 = """{Ô} {rage} ! {Ô} {désespoir} ! {Ô} {vieillesse} {ennemie} !<br> 
 {N'}{ai}-{je} {donc} {tant} {vécu} {que} {pour} {cette} {infamie} ?"""
