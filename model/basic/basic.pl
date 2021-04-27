@@ -53,6 +53,11 @@ style.basic ==
     text-decoration: underline wavy green;
 }
 
+.highlight-state {
+    color: var(--brand-color-primary);
+    background-color: #cce5ff;
+}
+
 .row {
   display: flex;
 }
