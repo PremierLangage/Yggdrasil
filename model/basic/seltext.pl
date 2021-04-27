@@ -47,9 +47,6 @@ s2 = """{Ô} {rage} ! {Ô} {désespoir} ! {Ô} {vieillesse} {ennemie} !<br
 
 text==
 Identifier le verbe conjugué la phrase ci-dessous.
-
-{{s}}
-{{selection}}
 ==
 
 form==
