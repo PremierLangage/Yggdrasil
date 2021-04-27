@@ -64,7 +64,7 @@ form==
 evaluator ==
 import re
 
-def read_text_bracket(string):
+def read_text_bracket(string, ans, sol):
     lst=re.findall(r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|[^\{\}]+",string)
     selection=[]
     k=0
@@ -76,12 +76,19 @@ def read_text_bracket(string):
                 p = s[2:-2]
             else:
                 p = s[1:-1]
+            if k in sol:
+                if k in ans:
+                    cls = "succes-text-unit"
+                else
+                    cls = "missed-text-unit"
+            elif k in ans:
+                cls = "error-text-unit"
             lst[i] = f'<span data-index="{k}" class="success-text-unit">{p}</span>'
             k+=1
     
     return "".join(lst)
 
-HTML = read_text_bracket(_seltext_)
+HTML = visual_grading(_seltext_, [int(i) for i in answers['selunits'].split(",")], sol)
 
 if set([int(i) for i in answers['selunits'].split(",")])==set(sol):
     score = 100
