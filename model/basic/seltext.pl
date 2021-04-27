@@ -58,7 +58,7 @@ form==
  onmousedown="return false;">
 {{ HTML|safe }}
 </div>
-<input id="form_selunits">
+<input id="form_selunits" hidden="true">
 ==
 
 evaluator ==
@@ -96,7 +96,6 @@ if set([int(i) for i in answers['selunits'].split(",")])==set(sol):
     score = 100
 else:
     score = 0
-feedback = answers['selunits']
 ==
 
 
