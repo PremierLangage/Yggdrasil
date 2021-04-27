@@ -106,15 +106,15 @@ if (designmode=="on") {
 var ColorHighlight="#cce5ff"
 var words = document.querySelectorAll("#textselect span")
 for (i = 0; i < words.length; i++) {
-    words[i].dataset.selected = false;
+    words[i].dataset.selected = "false";
 	words[i].addEventListener('click', function() {
-		if (this.dataset.selected == true) {
+		if (this.dataset.selected == "true") {
 			this.style.backgroundColor = "transparent";
-            this.dataset.selected = false;
-			list.splice( list.indexOf(this.id), 1 ); 
+            this.dataset.selected = "false";
+			list.splice(list.indexOf(this.id), 1); 
 		} else {
 			this.style.backgroundColor=ColorHighlight;
-            this.dataset.selected = true;
+            this.dataset.selected = "true";
 			list.push(this.id); 
 		}
 		document.getElementById('form_1').value = list
