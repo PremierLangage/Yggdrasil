@@ -107,7 +107,7 @@ var ColorHighlight="#cce5ff"
 var words = document.querySelectorAll("#textselect span")
 for (i = 0; i < words.length; i++) {
 	words[i].addEventListener('click', function() {
-		if (this.style.backgroundColor==ColorHighlight) {
+		if (this.data("selected")) {
 			this.style.backgroundColor = "transparent";
             this.data("selected") = false;
 			list.splice( list.indexOf(this.id), 1 ); 
