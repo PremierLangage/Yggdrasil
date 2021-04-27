@@ -47,6 +47,7 @@ s2 = """{Ô} {rage} ! {Ô} {désespoir} ! {Ô} {vieillesse} {ennemie} !<br
 ==
 
 text==
+{{sol}}
 Identifier le verbe conjugué la phrase ci-dessous.
 ==
 
