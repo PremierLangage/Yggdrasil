@@ -3,6 +3,7 @@ extends = /model/basic/checkbox.pl
 title = Multiples de 3
 
 before ==
+from random import sample
 items = sample(range(50, 100), 6)
 for i in range(items):
     if items[i] % 3 == 0:
