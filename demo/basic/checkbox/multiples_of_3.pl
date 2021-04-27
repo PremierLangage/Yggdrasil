@@ -6,9 +6,7 @@ before ==
 from random import sample
 items = [3, 4, 5]
 indsol = []
-for i in range(items):
-    if items[i] % 3 == 0:
-        indsol.append(i)
+
 ==
 
 text ==
