@@ -76,6 +76,8 @@ def read_text_bracket(string):
                 p = s[1:-1]
             lst[i] = f'<span data-index="{k}" class="success-text-unit">{p}</span>'
             k+=1
+    
+    return "".join(lst)
 
 HTML, _, _ = read_text_bracket(_seltext_)
 
