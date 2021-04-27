@@ -56,7 +56,7 @@ form==
  unselectable="on"
  onselectstart="return false;" 
  onmousedown="return false;">
-{{HTML}}
+{{ HTML|safe }}
 </div>
 <input id="form_selunits">
 ==
