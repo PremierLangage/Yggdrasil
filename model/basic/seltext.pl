@@ -99,16 +99,6 @@ extracss==
 
 extrajs ==
 <script>
-var string = "{Ô} {rage} ! {Ô} {désespoir} ! {Ô} {vieillesse} {ennemie} !<br> {N'}{ai}-{je} {donc} {tant} {vécu} {que} {pour} {cette} {infamie} ?";
-var index = -1;
-string=string.replace(/\{([^\{\}]*)\}/g, function(match,p) {
-  index++;
-  return `<span id="${index}">${p}</span>`;
-});
-  document.getElementById("textselect").innerHTML = string;
-</script>
-
-<script>
 list=[]
 var designmode="{{designmode}}";
 if (designmode=="on") {
@@ -143,6 +133,17 @@ string=string.replace(/\{([^\{\}]*)\}/g, function(match,p) {
 });
 alert(string);
 </script>
+
+<script>
+var string = "{Ô} {rage} ! {Ô} {désespoir} ! {Ô} {vieillesse} {ennemie} !<br> {N'}{ai}-{je} {donc} {tant} {vécu} {que} {pour} {cette} {infamie} ?";
+var index = -1;
+string=string.replace(/\{([^\{\}]*)\}/g, function(match,p) {
+  index++;
+  return `<span id="${index}">${p}</span>`;
+});
+  document.getElementById("textselect").innerHTML = string;
+</script>
+
 ==
 
 
