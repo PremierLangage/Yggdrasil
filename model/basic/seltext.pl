@@ -106,7 +106,7 @@ if (designmode=="on") {
 var ColorHighlight="#cce5ff"
 var words = document.querySelectorAll("#textselect span")
 for (i = 0; i < words.length; i++) {
-    \\ words[i].data("selected") = false;
+    // words[i].data("selected") = false;
 	words[i].addEventListener('click', function() {
 		if (this.style.backgroundColor==ColorHighlight) {
 			this.style.backgroundColor = "transparent";
