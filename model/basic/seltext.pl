@@ -55,6 +55,7 @@ form==
  unselectable="on"
  onselectstart="return false;" 
  onmousedown="return false;">
+{{s}}
 </div>
 <input id="form_1">
 
