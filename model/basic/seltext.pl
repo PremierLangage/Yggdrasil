@@ -60,6 +60,7 @@ form==
 ==
 
 evaluator ==
+import re
 
 def read_text_bracket(string):
     lst=re.findall(r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|[^\{\}]+",string)
