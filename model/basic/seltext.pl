@@ -79,7 +79,7 @@ def read_text_bracket(string):
     
     return "".join(lst)
 
-HTML, _, _ = read_text_bracket(_seltext_)
+HTML = read_text_bracket(_seltext_)
 
 if set([int(i) for i in answers['selunits'].split(",")])==set(sol):
     score = 100
