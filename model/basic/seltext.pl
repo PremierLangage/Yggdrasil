@@ -108,10 +108,12 @@ var words = document.querySelectorAll("#textselect span")
 for (i = 0; i < words.length; i++) {
 	words[i].addEventListener('click', function() {
 		if (this.style.backgroundColor==ColorHighlight) {
-			this.style.backgroundColor="transparent";
+			this.style.backgroundColor = "transparent";
+            this.data-selected = false;
 			list.splice( list.indexOf(this.id), 1 ); 
 		} else {
 			this.style.backgroundColor=ColorHighlight;
+            this.data-selected = true;
 			list.push(this.id); 
 		}
 		document.getElementById('form_1').value = list
