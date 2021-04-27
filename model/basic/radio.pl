@@ -8,12 +8,18 @@ radio.decorator = CustomRadio
 indsol % 0
 suffled % true
 
+before_scripts % ["importfunc", "before", "process"]
+
+importfunc ==
+from random import randint, choice, choices, sample, shuffle
+==
+
 process ==
 if isinstance(items, str):
     _items_ = items.splitlines())
 else:
     _items_ = items
-    
+
 radio.setitems(_items_)
 
 radio.setsol_from_index(indsol)
