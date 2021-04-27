@@ -78,7 +78,7 @@ def visual_grading(string, ans, sol):
                 p = s[1:-1]
             if k in sol:
                 if k in ans:
-                    cls = "succes-text-unit"
+                    cls = "success-text-unit"
                 else:
                     cls = "missed-text-unit"
             elif k in ans:
