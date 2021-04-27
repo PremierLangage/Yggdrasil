@@ -9,7 +9,7 @@ footerbefore ==
 import random as rd
 
 if isinstance(matches, str): 
-    _matches_ = [match.split(",") for match in matches.splitlines()]
+    _matches_ = [match.split(delimiter) for match in matches.splitlines()]
 else:
     _matches_ = matches
 
