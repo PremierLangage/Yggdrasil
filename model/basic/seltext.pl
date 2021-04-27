@@ -80,7 +80,7 @@ for (i = 0; i < words.length; i++) {
 			list.splice(list.indexOf(this.dataset.index), 1); 
 		} else {
 			//this.style.backgroundColor=ColorHighlight;
-            this.classList.add('success-text-unit');
+            this.classList.add('highlight-state');
             this.dataset.sel = "true";
 			list.push(this.dataset.index); 
 		}
