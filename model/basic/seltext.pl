@@ -8,7 +8,6 @@ Artur {{a}} horreur de la {marche à pied}.
 
 before_scripts % ["before", "process"]
 
-
 process ==
 import re
 
@@ -57,13 +56,15 @@ form==
  onmousedown="return false;">
 {{HTMLtext}}
 </div>
-<input id="form_1">
+<input id="form_selunits">
 ==
 
 evaluator==
-
-score = 100
-feedback = answers['1']
+if set(answers['selunits'])==set(sol):
+    score = 100
+else:
+    score = 0
+feedback = answers['selunits']
 ==
 
 
@@ -72,8 +73,8 @@ extrajs ==
 list=[]
 var designmode="{{designmode}}";
 if (designmode=="on") {
-	document.getElementById('form_1').type = 'text';
-	document.getElementById('form_1').readOnly = true;
+	document.getElementById('form_selunits').type = 'text';
+	document.getElementById('form_selunits').readOnly = true;
 }
 var ColorHighlight="#cce5ff"
 var words = document.querySelectorAll("#textselect span")
@@ -89,7 +90,7 @@ for (i = 0; i < words.length; i++) {
             this.dataset.selected = "true";
 			list.push(this.id); 
 		}
-		document.getElementById('form_1').value = list
+		document.getElementById('form_selunits').value = list
    	});
 }
 </script>
