@@ -6,7 +6,7 @@ radio =: RadioGroup
 radio.decorator = CustomRadio
 
 indsol % 0
-suffled % true
+shuffled % true
 
 before_scripts % ["importfunc", "before", "process"]
 
