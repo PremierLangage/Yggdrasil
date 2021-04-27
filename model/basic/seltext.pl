@@ -32,10 +32,10 @@ def read_text_bracket(string):
         if s[0]=="{":
             if len(s)> 2 and s[1]=="{":
                 selection.append(k)
-                #lst[i]=s[1:-1]
-                lst[i] = f'<span id="{k}">{s[2:-2]}</span>'
+                p = s[2:-2]
             else:
-                lst[i] = f'<span id="{k}">{s[1:-1]}</span>'
+                p = s[1:-1]
+            lst[i] = f'<span data-index="{k}" data-sel="false">{p}</span>'
             k+=1
     
     return ("".join(lst),selection,k)
