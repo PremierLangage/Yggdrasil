@@ -1,8 +1,6 @@
 extends = /model/basic/radio.pl
 
-title ==
-Exemple 1
-==
+title = Géographie
 
 text ==
 Quel pays a pour capitale Budapest ?
