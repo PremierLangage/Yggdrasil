@@ -7,7 +7,13 @@ checkbox.decorator = CustomCheckbox
 
 shuffled % true
 
-footerbefore ==
+before_scripts % ["importfunc", "before", "process"]
+
+importfunc ==
+from random import randint, choice, choices, sample, shuffle
+==
+
+process ==
 if isinstance(items, str):
     _items_ = items.splitlines()
 elif isinstance(items, list):
