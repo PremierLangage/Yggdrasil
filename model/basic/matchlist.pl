@@ -1,12 +1,16 @@
 extends = /model/basic.pl
+@ /utils/components/matchlist.py [custommatchlist.py]
+
+matchlist =: MatchList
+matchlist.decorator = CustomMatchList
 
 title =
 
 nbmatches % null
 delimiter % ","
+scoring = RightMinusWrong
 
 footerbefore ==
-
 import random as rd
 
 if isinstance(matches, str): 
@@ -20,12 +24,8 @@ else:
     _nbmatches_ = len(_matches_)
 
 matchlist.setdata_from_matches(rd.sample(_matches_, _nbmatches_))
+matchlist.scoring = scoring
 ==
-
-matchlist =: MatchList
-
-@ /utils/components/matchlist.py [custommatchlist.py]
-matchlist.decorator = CustomMatchList
 
 form ==
 {{ matchlist|component }}
