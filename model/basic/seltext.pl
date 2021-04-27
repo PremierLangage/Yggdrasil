@@ -39,7 +39,7 @@ def read_text_bracket(string):
     
     return ("".join(lst),selection)
 
-s,_=read_text_bracket(bracket_words(selectedtext))
+HTMLtext,_=read_text_bracket(bracket_words(selectedtext))
 
 s2 = """{Ô} {rage} ! {Ô} {désespoir} ! {Ô} {vieillesse} {ennemie} !<br> 
 {N'}{ai}-{je} {donc} {tant} {vécu} {que} {pour} {cette} {infamie} ?"""
@@ -58,7 +58,7 @@ form==
  unselectable="on"
  onselectstart="return false;" 
  onmousedown="return false;">
-{{s}}
+{{HTMLtext}}
 </div>
 <input id="form_1">
 
