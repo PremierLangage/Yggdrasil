@@ -40,7 +40,7 @@ def read_text_bracket(string):
     
     return ("".join(lst),selection,k)
 
-HTML, sol, nbunits =read_text_bracket(bracket_words(selectedtext))
+HTML, sol, nbunits =read_text_bracket(bracket_words(seltext))
 ==
 
 text==
