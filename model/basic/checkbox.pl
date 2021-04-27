@@ -5,7 +5,6 @@ extends = /model/basic.pl
 checkbox =: CheckboxGroup
 checkbox.decorator = CustomCheckbox
 
-
 shuffled % true
 
 footerbefore ==
