@@ -14,6 +14,7 @@ else:
     raise TypeError("items must be a string or a list")
 
 checkbox.setitems(_items_)
+checkbox.setsol_from_index(indsol)
 
 if shuffled:
     checkbox.shuffle()
