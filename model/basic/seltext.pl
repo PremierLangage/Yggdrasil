@@ -40,14 +40,10 @@ def read_text_bracket(string):
     
     return ("".join(lst),selection,k)
 
-HTMLtext,sol,nbunits =read_text_bracket(bracket_words(selectedtext))
-
-s2 = """{Ô} {rage} ! {Ô} {désespoir} ! {Ô} {vieillesse} {ennemie} !<br> 
-{N'}{ai}-{je} {donc} {tant} {vécu} {que} {pour} {cette} {infamie} ?"""
+HTML, sol, nbunits =read_text_bracket(bracket_words(selectedtext))
 ==
 
 text==
-{{sol}}
 Identifier le verbe conjugué la phrase ci-dessous.
 ==
 
@@ -57,7 +53,7 @@ form==
  unselectable="on"
  onselectstart="return false;" 
  onmousedown="return false;">
-{{HTMLtext}}
+{{HTML}}
 </div>
 <input id="form_selunits">
 ==
@@ -91,4 +87,9 @@ for (i = 0; i < words.length; i++) {
    	});
 }
 </script>
+==
+
+style.seltext ==
+
+
 ==
