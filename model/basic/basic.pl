@@ -44,8 +44,9 @@ style.basic ==
 }
 
 .error-text-unit {
-    color: #721c24;
-    text-decoration: line-through red;
+    background-color: #f2dede;
+    color: #a94442;
+    text-decoration: line-through #f2dede;
 }
 
 .success-text-unit {
