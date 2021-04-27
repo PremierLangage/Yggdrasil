@@ -4,10 +4,6 @@
 
 title = Repérage des verbes
 
-text ==
-Identifier le verbe conjugué la phrase ci-dessous.
-==
-
 before==
 s="Artur {{a}} horreur de la marche à pied."
 
@@ -45,6 +41,8 @@ s2 = """{Ô} {rage} ! {Ô} {désespoir} ! {Ô} {vieillesse} {ennemie} !<br
 ==
 
 text==
+Identifier le verbe conjugué la phrase ci-dessous.
+
 {{s}}
 {{selection}}
 ==
