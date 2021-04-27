@@ -74,11 +74,6 @@ feedback = answers['selunits']
 extrajs ==
 <script>
 list=[]
-var designmode="{{designmode}}";
-if (designmode=="on") {
-	document.getElementById('form_selunits').type = 'text';
-	document.getElementById('form_selunits').readOnly = true;
-}
 var ColorHighlight="#cce5ff"
 var words = document.querySelectorAll("#textselect span")
 for (i = 0; i < words.length; i++) {
