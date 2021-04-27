@@ -79,7 +79,7 @@ def read_text_bracket(string, ans, sol):
             if k in sol:
                 if k in ans:
                     cls = "succes-text-unit"
-                else
+                else:
                     cls = "missed-text-unit"
             elif k in ans:
                 cls = "error-text-unit"
