@@ -103,7 +103,7 @@ if (designmode=="on") {
 	document.getElementById('form_1').type = 'text';
 	document.getElementById('form_1').readOnly = true;
 }
-var ColorHighlight="rgb(176, 196, 222)"
+var ColorHighlight="#cce5ff"
 var words = document.querySelectorAll("#textselect span")
 for (i = 0; i < words.length; i++) {
 	words[i].addEventListener('click', function() {
@@ -111,7 +111,7 @@ for (i = 0; i < words.length; i++) {
 			this.style.backgroundColor="transparent";
 			list.splice( list.indexOf(this.id), 1 ); 
 		} else {
-			this.style.backgroundColor="#cce5ff";
+			this.style.backgroundColor=ColorHighlight;
 			list.push(this.id); 
 		}
 		document.getElementById('form_1').value = list
