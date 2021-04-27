@@ -110,11 +110,11 @@ for (i = 0; i < words.length; i++) {
 	words[i].addEventListener('click', function() {
 		if (this.dataset.selected == true) {
 			this.style.backgroundColor = "transparent";
-            this.data("selected") = false;
+            this.dataset.selected = false;
 			list.splice( list.indexOf(this.id), 1 ); 
 		} else {
 			this.style.backgroundColor=ColorHighlight;
-            this.data("selected") = true;
+            this.dataset.selected = true;
 			list.push(this.id); 
 		}
 		document.getElementById('form_1').value = list
