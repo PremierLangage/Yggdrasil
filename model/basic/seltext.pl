@@ -6,6 +6,8 @@ selectedtext ==
 Artur {{a}} horreur de la {marche à pied}.
 ==
 
+jinja_keys = ['text', 'solution']
+
 before_scripts % ["before", "process"]
 
 settings.feedback = lightscore
