@@ -5,7 +5,7 @@
 title = Repérage des verbes
 
 selectedtext ==
-Artur {{a}} horreur de la marche à pied.
+Artur {{a}} horreur de la {marche à pied}.
 ==
 
 before==
