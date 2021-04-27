@@ -4,6 +4,10 @@ text ==
 Relier chaque pays à sa capitale.
 ==
 
+delimiter = ;
+
+nbmatches % 4
+
 matches ==
 Allemagne;Berlin
 Autriche;Vienne
@@ -26,8 +30,3 @@ Slovaquie;Bratislava
 Suède;Stockholm
 Suisse;Berne
 ==
-
-delimiter = ;
-
-nbmatches = 4
-
