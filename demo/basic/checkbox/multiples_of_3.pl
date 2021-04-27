@@ -4,7 +4,7 @@ title = Multiples de 3
 
 before ==
 from random import sample
-items = sample(range(50, 100), 6)
+items = sample(range(50, 100), 5)
 indsol = []
 for i, num in enumerate(items):
     if num % 3 == 0:
