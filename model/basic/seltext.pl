@@ -7,9 +7,8 @@ title = Repérage des verbes
 selectedtext ==
 Artur {{a}} horreur de la marche à pied.
 ==
-before==
-s="Artur {{a}} horreur de la marche à pied."
 
+before==
 import re
 
 def bracket_words(string):
@@ -37,9 +36,9 @@ def read_text_bracket(string):
                 lst[i] = f'<span id="{k}">{s[1:-1]}</span>'
             k+=1
     
-    return ("".join(lst),selection)
+    return ("".join(lst),selection,k)
 
-HTMLtext,_=read_text_bracket(bracket_words(selectedtext))
+HTMLtext,_,nbunits =read_text_bracket(bracket_words(selectedtext))
 
 s2 = """{Ô} {rage} ! {Ô} {désespoir} ! {Ô} {vieillesse} {ennemie} !<br> 
 {N'}{ai}-{je} {donc} {tant} {vécu} {que} {pour} {cette} {infamie} ?"""
@@ -58,7 +57,6 @@ form==
 {{HTMLtext}}
 </div>
 <input id="form_1">
-
 ==
 
 evaluator==
