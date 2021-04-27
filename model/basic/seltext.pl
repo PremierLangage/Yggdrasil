@@ -63,7 +63,7 @@ form==
 ==
 
 evaluator==
-if set(answers['selunits'])==set(sol):
+if set([int i for i in answers['selunits'].split(",")])==set(sol):
     score = 100
 else:
     score = 0
