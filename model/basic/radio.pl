@@ -28,7 +28,6 @@ if shuffled:
     radio.shuffle()
 ==
 
-
 form ==
 {{ radio|component }}
 ==
