@@ -15,7 +15,7 @@ XIVe siècle
 XVe siècle
 ==
 
-indsol = 3
+indsol % 3
 
 shuffled % false
 
