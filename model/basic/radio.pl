@@ -16,7 +16,7 @@ from random import randint, choice, choices, sample, shuffle
 
 process ==
 if isinstance(items, str):
-    _items_ = items.splitlines())
+    _items_ = items.splitlines()
 else:
     _items_ = items
 
