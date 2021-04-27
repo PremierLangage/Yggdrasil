@@ -5,7 +5,7 @@ title = Multiples de 3
 before ==
 items = sample(range(50, 100), 6)
 for i in range(items):
-    if items[i] % 3 == 0
+    if items[i] % 3 == 0:
         indsol.append(i)
 ==
 
