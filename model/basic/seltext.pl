@@ -75,7 +75,7 @@ var words = document.querySelectorAll("#textselect span")
 for (i = 0; i < words.length; i++) {
 	words[i].addEventListener('click', function() {
 		if (this.dataset.sel == "true") {
-			this.style.backgroundColor = "transparent";
+            this.classList.remove('highlight-state');
             this.dataset.sel = "false";
 			list.splice(list.indexOf(this.dataset.index), 1); 
 		} else {
