@@ -1,11 +1,17 @@
-extends = /model/basic.pl
+extends = /model/basic/basic.pl
 @ /utils/components/scoring.py
 @ /utils/components/checkbox.py [customcheckbox.py]
 
 checkbox =: CheckboxGroup
 checkbox.decorator = CustomCheckbox
 
-footerbefore ==
+before_scripts % ["importfunc", "before", "process"]
+
+importfunc ==
+from random import randint, choice, choices, sample, shuffle
+==
+
+process ==
 from random import randint
 
 if isinstance(right, str):
