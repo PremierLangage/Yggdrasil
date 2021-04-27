@@ -46,7 +46,7 @@ style.basic ==
 .error-text-unit {
     background-color: #f2dede;
     color: #a94442;
-    text-decoration: line-through #f2dede;
+    text-decoration: line-through #a94442;
 }
 
 .success-text-unit {
@@ -56,7 +56,7 @@ style.basic ==
 
 .missed-text-unit {
     color: #3c763d;
-    text-decoration: underline wavy #dff0d8;
+    text-decoration: underline wavy #3c763d;
 }
 
 .highlight-state {
