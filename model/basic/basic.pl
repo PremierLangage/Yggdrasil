@@ -49,7 +49,8 @@ style.basic ==
 }
 
 .success-text-unit {
-    background-color: var(--success-color-primary);
+    background-color: #dff0d8;
+    color: #3c763d;
 }
 
 .missed-text-unit {
