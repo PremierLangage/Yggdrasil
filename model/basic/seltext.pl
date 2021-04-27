@@ -82,16 +82,15 @@ if (designmode=="on") {
 var ColorHighlight="#cce5ff"
 var words = document.querySelectorAll("#textselect span")
 for (i = 0; i < words.length; i++) {
-    words[i].dataset.selected = "false";
 	words[i].addEventListener('click', function() {
-		if (this.dataset.selected == "true") {
+		if (this.dataset.sel == "true") {
 			this.style.backgroundColor = "transparent";
-            this.dataset.selected = "false";
-			list.splice(list.indexOf(this.id), 1); 
+            this.dataset.sel = "false";
+			list.splice(list.indexOf(this.dataset.index), 1); 
 		} else {
 			this.style.backgroundColor=ColorHighlight;
-            this.dataset.selected = "true";
-			list.push(this.id); 
+            this.dataset.sel = "true";
+			list.push(this.dataset.index); 
 		}
 		document.getElementById('form_selunits').value = list
    	});
