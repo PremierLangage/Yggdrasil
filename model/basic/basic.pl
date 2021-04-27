@@ -1,3 +1,10 @@
+title =
+
+@ /builder/before2.py [builder.py]
+@ /grader/evaluator2.py [grader.py]
+@ /utils/builderlib.py
+
+settings.maxattempt % 1
 
 style.basic ==
 .icon-check-after p::after {
@@ -83,13 +90,3 @@ extrajs ==
     }
 </script>
 ==
-
-
-
-title =
-
-@ /builder/before2.py [builder.py]
-@ /grader/evaluator2.py [grader.py]
-@ /utils/builderlib.py
-
-settings.maxattempt % 1
