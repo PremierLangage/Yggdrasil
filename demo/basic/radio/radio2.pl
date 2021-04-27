@@ -8,7 +8,7 @@ text ==
 A quel siècle vivait Louis XI ?
 ==
 
-choices ==
+items ==
 XIIe siècle
 XIIIe siècle
 XIVe siècle
