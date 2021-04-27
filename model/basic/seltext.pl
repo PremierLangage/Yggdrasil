@@ -76,6 +76,7 @@ def read_text_bracket(string):
             lst[i] = f'<span data-index="{k}" classe="success-text-unit">{p}</span>'
             k+=1
 
+HTML, _, _ = read_text_bracket(_seltext_)
 
 if set([int(i) for i in answers['selunits'].split(",")])==set(sol):
     score = 100
