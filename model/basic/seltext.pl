@@ -64,7 +64,7 @@ form==
 evaluator ==
 import re
 
-def read_text_bracket(string, ans, sol):
+def visual_grading(string, ans, sol):
     lst=re.findall(r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|[^\{\}]+",string)
     selection=[]
     k=0
