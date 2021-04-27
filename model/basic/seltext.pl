@@ -79,7 +79,8 @@ for (i = 0; i < words.length; i++) {
             this.dataset.sel = "false";
 			list.splice(list.indexOf(this.dataset.index), 1); 
 		} else {
-			this.style.backgroundColor=ColorHighlight;
+			//this.style.backgroundColor=ColorHighlight;
+            this.classList.add('success-text-unit');
             this.dataset.sel = "true";
 			list.push(this.dataset.index); 
 		}
