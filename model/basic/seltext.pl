@@ -63,13 +63,6 @@ score = 100
 feedback = answers['1']
 ==
 
-extracss==
-<style>
-.exercise__instructions, .exercise__feedback {
-    margin-bottom: 16px;
-}
-</style>
-==
 
 extrajs ==
 <script>
