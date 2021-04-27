@@ -35,7 +35,7 @@ def read_text_bracket(string):
                 p = s[2:-2]
             else:
                 p = s[1:-1]
-            lst[i] = f'<span data-index="{k}" data-sel="false">{p}</span>'
+            lst[i] = f'<span data-index="{k}">{p}</span>'
             k+=1
     
     return ("".join(lst),selection,k)
@@ -70,18 +70,14 @@ feedback = answers['selunits']
 extrajs ==
 <script>
 list=[]
-var ColorHighlight="#cce5ff"
 var words = document.querySelectorAll("#textselect span")
 for (i = 0; i < words.length; i++) {
 	words[i].addEventListener('click', function() {
 		if (this.classList.contains('highlight-state')) {
             this.classList.remove('highlight-state');
-            this.dataset.sel = "false";
 			list.splice(list.indexOf(this.dataset.index), 1); 
 		} else {
-			//this.style.backgroundColor=ColorHighlight;
             this.classList.add('highlight-state');
-            this.dataset.sel = "true";
 			list.push(this.dataset.index); 
 		}
 		document.getElementById('form_selunits').value = list
