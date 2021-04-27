@@ -41,7 +41,7 @@ def read_text_bracket(string):
     return ("".join(lst),selection,k)
 
 _seltext_ = bracket_words(seltext)
-HTML, sol, nbunits = read_text_bracket()
+HTML, sol, nbunits = read_text_bracket(_seltext_)
 ==
 
 text==
