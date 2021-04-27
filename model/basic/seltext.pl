@@ -29,7 +29,7 @@ def read_text_bracket(string):
             if len(s)> 2 and s[1]=="{":
                 selection.append(k)
                 #lst[i]=s[1:-1]
-                lst[i] = "fff" #f'<span id="{k}">{s[1:-1]}</span>'
+                lst[i] = f"<span id={k}>{s[1:-1]}</span>"
             k+=1
     
     return ("".join(lst),selection)
