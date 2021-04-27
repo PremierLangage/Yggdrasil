@@ -40,7 +40,8 @@ def read_text_bracket(string):
     
     return ("".join(lst),selection,k)
 
-HTML, sol, nbunits =read_text_bracket(bracket_words(seltext))
+_seltext_ = bracket_words(seltext)
+HTML, sol, nbunits = read_text_bracket()
 ==
 
 text==
@@ -58,7 +59,24 @@ form==
 <input id="form_selunits">
 ==
 
-evaluator==
+evaluator ==
+
+def read_text_bracket(string):
+    lst=re.findall(r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|[^\{\}]+",string)
+    selection=[]
+    k=0
+    for i in range(len(lst)):
+        s=lst[i]
+        if s[0]=="{":
+            if len(s)> 2 and s[1]=="{":
+                selection.append(k)
+                p = s[2:-2]
+            else:
+                p = s[1:-1]
+            lst[i] = f'<span data-index="{k}" classe="success-text-unit">{p}</span>'
+            k+=1
+
+
 if set([int(i) for i in answers['selunits'].split(",")])==set(sol):
     score = 100
 else:
@@ -84,9 +102,4 @@ for (i = 0; i < words.length; i++) {
    	});
 }
 </script>
-==
-
-style.seltext ==
-
-
 ==
