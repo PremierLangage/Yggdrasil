@@ -55,8 +55,8 @@ style.basic ==
 }
 
 .missed-text-unit {
-    color: #155724;
-    text-decoration: underline wavy green;
+    color: #3c763d;
+    text-decoration: underline wavy #dff0d8;
 }
 
 .highlight-state {
