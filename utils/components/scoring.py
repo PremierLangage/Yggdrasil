@@ -14,7 +14,8 @@ def all_or_nothing(right, wrong, items_to_fill, items_total=None):
 def right_minus_wrong(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
     if nbsol == 0:
         return nbwrong == 0:
-    return int(round(max([(nbright - nbwrong)/nbsol*100,0])))
+    else:
+        return int(round(max([(nbright - nbwrong)/nbsol*100,0])))
 
 def correct_items(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
     return int(round(max([(nbitems - 2*(nbsol - nbright + nbwrong))/nbitems*100,0])))
