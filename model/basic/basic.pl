@@ -49,7 +49,7 @@ style.basic ==
 }
 
 .success-text-unit {
-    background-color: success-color;
+    background-color: var(--success-color-primary);
 }
 
 .missed-text-unit {
