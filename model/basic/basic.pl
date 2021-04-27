@@ -49,8 +49,10 @@ style.basic ==
 }
 
 .success-text-unit {
-    background-color: #155724;
+    color: #155724;
+    text-decoration: underline overline green;
 }
+
 .missed-text-unit {
     color: #155724;
     text-decoration: underline wavy green;
