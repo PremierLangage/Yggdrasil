@@ -5,6 +5,7 @@ title = Multiples de 3
 before ==
 from random import sample
 items = sample(range(50, 100), 6)
+indsol = []
 for i in range(items):
     if items[i] % 3 == 0:
         indsol.append(i)
