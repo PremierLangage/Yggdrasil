@@ -46,6 +46,7 @@ s2 = """{Ô} {rage} ! {Ô} {désespoir} ! {Ô} {vieillesse} {ennemie} !<br
 
 text==
 {{s}}
+{{selection}}
 ==
 
 form==
