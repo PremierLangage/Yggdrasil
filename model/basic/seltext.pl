@@ -83,6 +83,8 @@ def visual_grading(string, ans, sol):
                     cls = "missed-text-unit"
             elif k in ans:
                 cls = "error-text-unit"
+            else:
+                cls = ""
             lst[i] = f'<span data-index="{k}" class="{cls}">{p}</span>'
             k+=1
     
