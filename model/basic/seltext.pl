@@ -8,6 +8,8 @@ Artur {{a}} horreur de la {marche à pied}.
 
 before_scripts % ["before", "process"]
 
+settings.feedback = lightscore
+
 process ==
 import re
 
