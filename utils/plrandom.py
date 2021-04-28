@@ -14,31 +14,21 @@ def randitem(items,excluded_values=[]):
 
 def frandrow(f, delimiter=','):
     """
-    Return a random row from a csv file (as a dictionary)
+    Return a random row from a csv file/string (as a dictionary)
     """
     if isinstance(f, file):
         return rd.choice(list(DictReader(f, delimiter=delimiter)))
     else:
+        rd.choice(list(DictReader(StringIO(f), delimiter=delimiter)), k)
+
+def frandsample(f, delimiter=','):
+    """
+    Return a random sample from a csv file/string (as a list of dictionaries)
+    """
+    if isinstance(f, file):
+        return rd.sample(list(DictReader(f, delimiter=delimiter)), k)
+    else:
         rd.sample(list(DictReader(StringIO(f), delimiter=delimiter)), k)
-
-def srandrow(namefile, delimiter=','):
-    """
-    Return a random row from a csv-like string (as a dictionary)
-    """
-    return rd.choice(list(DictReader(StringIO(data), delimiter=delimiter)))
-
-def frandsample(namefile, k, delimiter=','):
-    """
-    Return a random sample from a csv file (as a list of dictionaries)
-    """
-    with open(namefile, newline='') as file:
-        return rd.sample(list(DictReader(file, delimiter=delimiter)), k)
-
-def srandsample(namefile, k, delimiter=','):
-    """
-    Return a random sample from a csv-like string (as a list of dictionaries)
-    """
-    return rd.sample(list(DictReader(StringIO(data), delimiter=delimiter)), k)
 
 ##########
 
