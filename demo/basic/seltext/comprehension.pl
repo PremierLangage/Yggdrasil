@@ -4,7 +4,7 @@ title = Grec ancien
 
 text ==
 Identifier les adjectifs comparatifs dans le texte ci-dessous.
-L'artiste
+J'arrive
 ==
 
 seltext == 
