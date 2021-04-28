@@ -7,20 +7,8 @@ nbstep % 3
 settings.cumulative % false
 
 before == #|python|
-import random as rd
-from io import StringIO
-from csv import DictReader
 from components import Input
-from plrandom import frandsample
-"""
-try:
-    with open('data.csv', newline='') as file:
-        datasample = rd.sample(list(DictReader(file, delimiter=delimiter)), nbstep)
-except:
-    if 'data' in globals():
-        datasample = rd.sample(list(DictReader(StringIO(data), delimiter=delimiter)), nbstep)
-"""
-
+from plrandom import csv_rand_sample
 
 try:
     with open('data.csv', newline='') as f:
