@@ -7,8 +7,8 @@ extends = /model/jsxgraph/clickpoint.pl
 title = Affixe d'un nombre complexe
 
 before ==
-xsol = randint(-5, 5, [0])
-ysol = randint(-5, 5, [0])
+xsol = randint(-4, 4, [0])
+ysol = randint(-4, 4, [0])
 z = xsol + ysol*I
 jxg.setscript(script_init + script_aux)
 ==
