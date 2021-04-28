@@ -3,7 +3,7 @@ extends = /model/basic/seltext.pl
 title = Grec ancien
 
 text ==
-Identifier les adjectifs comparatifs dans le texte ci-dessous.
+Sélectionner dans ce texte les mots qui désignent Van Gogh
 ==
 
 seltext == 
