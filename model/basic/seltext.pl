@@ -16,13 +16,17 @@ process ==
 import re
 
 def bracket_words(string):
-    lst=re.findall(r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|\[[^\]]*\]|[^\{\}\[\]]+",string)
+    lst=re.findall(r"#[^#]*#|\{[^\{\}]*\}|\[[^\]]*\]|[^\{\}\[\]#]+",string)
     for i in range(len(lst)):
         s=lst[i]
-        if s[0]=="[":
+        if s[0] == "[":
             lst[i]=s[1:-1]
-        elif s[0]!="{":
-            lst[i]=re.sub(r"(\w+)", r"{\1}",s)
+        elif s[0] == "#":
+            pass
+        elif s[0] == "{":
+            pass
+        else:
+            lst[i] = re.sub(r"(\w+)", r"{\1}", s)
     return "".join(lst)
     
 def read_text_bracket(string):
