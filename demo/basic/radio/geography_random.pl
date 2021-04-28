@@ -2,15 +2,14 @@ extends = /model/basic/radio.pl
 
 title = Géographie
 
-text ==
-Quel pays a pour capitale Budapest ?
+before ==
+datasample = csv_sample(data, 4, delimiter=";")
+capitale = datasample[0]['capitale']
+items = [row['pays'] for row in datasample]
 ==
 
-items ==
-Hongrie
-Estonie
-Roumanie
-Slovaquie
+text ==
+Quel pays a pour capitale {{capitale}} ?
 ==
 
 
