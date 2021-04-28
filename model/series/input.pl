@@ -21,9 +21,9 @@ except:
         datasample = rd.sample(list(DictReader(StringIO(data), delimiter=delimiter)), nbstep)
 """
 try:
-    datasample = frandsample('data.csv', delimiter=delimiter, nbstep)
+    datasample = frandsample('data.csv', nbstep, delimiter=delimiter)
 except:
-    datasample = srandsample(data, delimiter=delimiter, nbstep)
+    datasample = srandsample(data, nbstep, delimiter=delimiter)
 
 sol = []
 lines = []
