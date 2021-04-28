@@ -19,7 +19,7 @@ def frandrow(f, delimiter=','):
     if isinstance(f, file):
         return rd.choice(list(DictReader(f, delimiter=delimiter)))
     else:
-        rd.choice(list(DictReader(StringIO(f), delimiter=delimiter)), k)
+        return rd.choice(list(DictReader(StringIO(f), delimiter=delimiter)), k)
 
 def frandsample(f, delimiter=','):
     """
@@ -28,7 +28,7 @@ def frandsample(f, delimiter=','):
     if isinstance(f, file):
         return rd.sample(list(DictReader(f, delimiter=delimiter)), k)
     else:
-        rd.sample(list(DictReader(StringIO(f), delimiter=delimiter)), k)
+        return rd.sample(list(DictReader(StringIO(f), delimiter=delimiter)), k)
 
 ##########
 
