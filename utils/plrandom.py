@@ -12,7 +12,7 @@ def randitem(items,excluded_values=[]):
         item=rd.choice(items)
     return item
 
-def frandrow(f, delimiter=','):
+def csvrandrow(f, delimiter=','):
     """
     Return a random row from a csv file/string (as a dictionary)
     """
@@ -21,7 +21,7 @@ def frandrow(f, delimiter=','):
     else:
         return rd.choice(list(DictReader(f, delimiter=delimiter)))
 
-def frandsample(f, k, delimiter=','):
+def csvrandsample(f, k, delimiter=','):
     """
     Return a random sample from a csv file/string (as a list of dictionaries)
     """
