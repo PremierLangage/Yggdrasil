@@ -7,9 +7,7 @@ Identifier les adjectifs comparatifs dans le texte ci-dessous.
 ==
 
 seltext == 
-[<p>]
-{L'artiste} installait {son chevalet} lorsque {la nuit} tombait.
-[</p>]
+L'artiste installait {son chevalet} lorsque {la nuit} tombait.
 ==
 
 
