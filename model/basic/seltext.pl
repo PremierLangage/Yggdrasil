@@ -2,10 +2,6 @@ extends = /model/basic/basic.pl
 
 title = Repérage des verbes
 
-selectedtext ==
-Artur {{a}} horreur de la {marche à pied}.
-==
-
 jinja_keys = ['text', 'solution']
 
 before_scripts % ["before", "process"]
@@ -46,10 +42,6 @@ def read_text_bracket(string):
 
 _seltext_ = bracket_words(seltext)
 HTML, sol, nbunits = read_text_bracket(_seltext_)
-==
-
-text==
-Identifier le verbe conjugué la phrase ci-dessous.
 ==
 
 form==
