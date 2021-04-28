@@ -1,6 +1,6 @@
 extends = /model/basic/seltext.pl
 
-title = Grec ancien
+title = Compréhension d'un texte
 
 text ==
 Sélectionner dans ce texte les mots qui désignent Van Gogh
