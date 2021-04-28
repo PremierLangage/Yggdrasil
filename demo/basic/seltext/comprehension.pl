@@ -8,7 +8,7 @@ J'arrive
 ==
 
 seltext == 
-{{L'artiste}} installait {son chevalet} lorsque {la nuit} tombait.
+#L'artiste# installait {son chevalet} lorsque {la nuit} tombait.
 ==
 
 
