@@ -12,12 +12,14 @@ def randitem(items,excluded_values=[]):
         item=rd.choice(items)
     return item
 
-def frandrow(namefile, delimiter=','):
+def frandrow(f, delimiter=','):
     """
     Return a random row from a csv file (as a dictionary)
     """
-    with open(namefile, newline='') as file:
-        return rd.choice(list(DictReader(file, delimiter=delimiter)))
+    if isinstance(f, file):
+        return rd.choice(list(DictReader(f, delimiter=delimiter)))
+    else:
+        rd.sample(list(DictReader(StringIO(f), delimiter=delimiter)), k)
 
 def srandrow(namefile, delimiter=','):
     """
