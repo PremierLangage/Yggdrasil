@@ -11,7 +11,7 @@ import random as rd
 from io import StringIO
 from csv import DictReader
 from components import Input
-from plrandom import frandsample, srandsample
+from plrandom import frandsample
 """
 try:
     with open('data.csv', newline='') as file:
