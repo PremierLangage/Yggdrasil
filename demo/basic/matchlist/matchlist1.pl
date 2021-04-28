@@ -4,7 +4,7 @@ text ==
 Relier chaque pays à sa capitale.
 ==
 
-delimiter = ;
+separator = ;
 
 nbmatches % 4
 
