@@ -30,17 +30,15 @@ def bracket_words(string):
     return "".join(lst)
     
 def read_text_bracket(string):
-    lst=re.findall(r"\{[^\{\}]*\}|\{\{[^\}]*\}\}|[^\{\}]+",string)
+    lst = re.findall(r"#[^#]*#|\{[^\{\}]*\}|[^\{\}#]+",string)
     selection=[]
     k=0
     for i in range(len(lst)):
-        s=lst[i]
-        if s[0]=="{":
-            if len(s)> 2 and s[1]=="{":
+        s = lst[i]
+        if s[0] == "{" or s[0] == "#":
+            if s[0] == "#":
                 selection.append(k)
-                p = s[2:-2]
-            else:
-                p = s[1:-1]
+            p = s[1:-1]
             lst[i] = f'<span data-index="{k}">{p}</span>'
             k+=1
     
