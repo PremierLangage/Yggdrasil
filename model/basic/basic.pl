@@ -5,6 +5,11 @@ title =
 @ /utils/builderlib.py
 @ /utils/plrandom.py
 
+importfunc ==
+from random import randint, choice, choices, sample, shuffle
+from plrandom import csv_choice, csv_sample
+==
+
 settings.maxattempt % 1
 
 style.basic ==
