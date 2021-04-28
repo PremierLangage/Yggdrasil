@@ -16,5 +16,3 @@ XVe siècle
 indsol % 3
 
 shuffled % false
-
-
