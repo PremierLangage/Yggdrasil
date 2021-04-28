@@ -12,7 +12,6 @@ text ==
 Quel pays a pour capitale {{capitale}} ?
 ==
 
-
 data ==
 pays,article,capitale
 Allemagne,l,Berlin
