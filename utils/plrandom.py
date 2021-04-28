@@ -16,19 +16,19 @@ def frandrow(f, delimiter=','):
     """
     Return a random row from a csv file/string (as a dictionary)
     """
-    if isinstance(f, file):
-        return rd.choice(list(DictReader(f, delimiter=delimiter)))
-    else:
+    if isinstance(f, str):
         return rd.choice(list(DictReader(StringIO(f), delimiter=delimiter)), k)
+    else:
+        return rd.choice(list(DictReader(f, delimiter=delimiter)))
 
 def frandsample(f, k, delimiter=','):
     """
     Return a random sample from a csv file/string (as a list of dictionaries)
     """
-    if isinstance(f, file):
-        return rd.sample(list(DictReader(f, delimiter=delimiter)), k)
-    else:
+    if isinstance(f, str):
         return rd.sample(list(DictReader(StringIO(f), delimiter=delimiter)), k)
+    else:
+        return rd.sample(list(DictReader(f, delimiter=delimiter)), k)
 
 ##########
 
