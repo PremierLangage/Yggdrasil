@@ -15,11 +15,3 @@ Mais comment peindre sans lampadaire ?
 On dit qu'#il# a planté {des bougies} sur {le rebord} de {son chapeau}. 
 #L'homme# a ainsi pu peindre grâce {aux minuscules flammes}
 ==
-
-
-old ==
-
-==
-
-
-
