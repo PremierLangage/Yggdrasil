@@ -1,5 +1,5 @@
 extends = /model/multistep.pl
-@ utils/plrandom.py
+@ /utils/plrandom.py
 
 title = Traduire des mots en contexte
 
