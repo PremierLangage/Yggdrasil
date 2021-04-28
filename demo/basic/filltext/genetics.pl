@@ -14,4 +14,6 @@ L’ensemble des allèles d’un individu définit son {génotype}. Lorsqu’ils
 
 labval ==
 caryotype
+ADN
+ARN
 ==
