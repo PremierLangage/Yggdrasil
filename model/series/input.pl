@@ -20,7 +20,14 @@ except:
     if 'data' in globals():
         datasample = rd.sample(list(DictReader(StringIO(data), delimiter=delimiter)), nbstep)
 """
-datasample = frandsample(data, nbstep, delimiter=delimiter)
+
+
+try:
+    with open('data.csv', newline='') as f:
+        datasample = frandsample(f, nbstep, delimiter=delimiter)
+except:
+    datasample = frandsample(data, nbstep, delimiter=delimiter)
+
 
 sol = []
 lines = []
