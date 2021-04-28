@@ -7,8 +7,7 @@ Identifier les adjectifs comparatifs dans le texte ci-dessous.
 ==
 
 seltext == 
-En 1888, {{Vincent Van Gogh}} peint {«Nuit Etoilée»}. 
-Il est difficile de représenter {la nuit} {en couleurs}. 
+
 {{L’artiste}} installait {son chevalet} lorsque {la nuit} tombait. 
 Mais comment peindre sans lampadaire? 
 {{Le peintre}} a eu pour cela {une idée lumineuse}. 
