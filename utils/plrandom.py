@@ -1,4 +1,6 @@
 import random
+from io import StringIO
+from csv import DictReader
 rd = random.Random()
 
 def randitem(items,excluded_values=[]):
@@ -9,6 +11,34 @@ def randitem(items,excluded_values=[]):
     while item in excluded_values:
         item=rd.choice(items)
     return item
+
+def frandrow(namefile, delimiter=',')
+    """
+    Return a random row from a csv file (as a dictionary)
+    """
+    with open(namefile, newline='') as file:
+        return rd.choice(list(DictReader(file, delimiter=delimiter)))
+
+def srandrow(namefile, delimiter=',')
+    """
+    Return a random row from a csv-like string (as a dictionary)
+    """
+    return rd.choice(list(DictReader(StringIO(data), delimiter=delimiter)))
+
+def frandsample(namefile, k, delimiter=',')
+    """
+    Return a random sample from a csv file (as a list of dictionaries)
+    """
+    with open(namefile, newline='') as file:
+        return rd.sample(list(DictReader(file, delimiter=delimiter)), k)
+
+def srandsample(namefile, k, delimiter=',')
+    """
+    Return a random sample from a csv-like string (as a list of dictionaries)
+    """
+    return rd.sample(list(DictReader(StringIO(data), delimiter=delimiter)), k)
+
+##########
 
 def _list_rand0(n,items,replace,excluded_values):
     """
