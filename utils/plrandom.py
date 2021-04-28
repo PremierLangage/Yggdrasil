@@ -26,7 +26,6 @@ def csv_rand_sample(f, k, delimiter=','):
     """
     Return a random sample from a csv file/string (as a list of dictionaries)
     """
-    ff = open('data.csv', newline='')
     if isinstance(f, str):
         return rd.sample(list(DictReader(StringIO(f), delimiter=delimiter)), k)
     else:
