@@ -21,7 +21,7 @@ def frandrow(f, delimiter=','):
     else:
         return rd.choice(list(DictReader(StringIO(f), delimiter=delimiter)), k)
 
-def frandsample(f, delimiter=','):
+def frandsample(f, k, delimiter=','):
     """
     Return a random sample from a csv file/string (as a list of dictionaries)
     """
