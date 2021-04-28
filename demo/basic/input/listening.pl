@@ -2,7 +2,7 @@ extends = /model/basic/input.pl
 
 title = Listening
 
-file =$ english_sentence.mp3
+file =$ /demo/data/english_sentence.mp3
 
 text ==
 {{ audio_button(file) }} Transcrire la phrase.
