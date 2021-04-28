@@ -8,13 +8,13 @@ title =
 
 labval % []
 
-before_scripts % ["importfunc", "before", "setcomp"]
+before_scripts % ["importfunc", "before", "process"]
 
 importfunc ==
 from random import randint, choice, choices, sample, shuffle
 ==
 
-setcomp ==
+process ==
 from customdragdrop import CustomDragDrop
 cplabels, cpdrops = [], []
 labels, drops = [], []
