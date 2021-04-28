@@ -11,7 +11,14 @@ import random as rd
 from io import StringIO
 from csv import DictReader
 from components import Input
-
+"""
+try:
+    with open('data.csv', newline='') as file:
+        datasample = rd.sample(list(DictReader(file, delimiter=delimiter)), nbstep)
+except:
+    if 'data' in globals():
+        datasample = rd.sample(list(DictReader(StringIO(data), delimiter=delimiter)), nbstep)
+"""
 try:
     with open('data.csv', newline='') as file:
         datasample = rd.sample(list(DictReader(file, delimiter=delimiter)), nbstep)
