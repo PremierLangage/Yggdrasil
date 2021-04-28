@@ -12,7 +12,7 @@ def randitem(items,excluded_values=[]):
         item=rd.choice(items)
     return item
 
-def csv_rand_row(f, delimiter=','):
+def csv_choice(f, delimiter=','):
     """
     Return a random row from a csv file/string (as a dictionary)
     """
@@ -22,7 +22,7 @@ def csv_rand_row(f, delimiter=','):
     else:
         return rd.choice(list(DictReader(f, delimiter=delimiter)))
 
-def csv_rand_sample(f, k, delimiter=','):
+def csv_sample(f, k, delimiter=','):
     """
     Return a random sample from a csv file/string (as a list of dictionaries)
     """
