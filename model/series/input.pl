@@ -24,9 +24,9 @@ except:
 
 try:
     with open('data.csv', newline='') as f:
-        datasample = frandsample(f, nbstep, delimiter=delimiter)
+        datasample = csv_rand_sample(f, nbstep, delimiter=delimiter)
 except:
-    datasample = frandsample(data, nbstep, delimiter=delimiter)
+    datasample = csv_rand_sample(data, nbstep, delimiter=delimiter)
 
 
 sol = []
