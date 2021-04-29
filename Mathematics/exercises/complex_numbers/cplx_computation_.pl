@@ -9,7 +9,7 @@ title = Opération sur les nombres complexes
 param.formulas % ["add","sub"]
 
 before ==
-from sympy import conjugatre
+from sympy import conjugate
 
 z1=rand_complex_int(5)
 z2=rand_complex_int(5)
