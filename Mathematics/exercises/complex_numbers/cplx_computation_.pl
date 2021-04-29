@@ -11,10 +11,11 @@ param.formulas % ["add","sub"]
 before ==
 from sympy import conjugate
 
-z1=rand_complex_int(5)
-z2=rand_complex_int(5)
+n = 5
+z1 = randint(-n, n, [0]) + randint(-n, n, [0])*I
+z2 = randint(-n, n, [0]) + randint(-n, n, [0])*I
 while z1==z2:
-    z2=rand_complex_int(5)
+    z2 = randint(-n, n, [0]) + randint(-n, n, [0])*I
 
 z1b = conjugate(z1)
 z2b = conjugate(z2)
