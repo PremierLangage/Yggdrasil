@@ -1,4 +1,4 @@
-extends = /model/mathinput.pl
+extends = /model/math/input.pl
 
 title = Symbole Sigma
 
