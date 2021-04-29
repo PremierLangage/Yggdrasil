@@ -109,6 +109,10 @@ On considère les nombres complexes $! z_1= {{ z1|latex }} !$ et $! z_2= {{ z2|l
 Calculer $! \displaystyle {{ expr|latex }} !$ (sous forme algébrique).
 ==
 
+old ==
+{{ a|latex}}
+==
+
 wims ==
 \if{\type=14}{
 \text{nz=1}
