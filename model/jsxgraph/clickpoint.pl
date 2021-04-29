@@ -1,7 +1,7 @@
 extends = /model/mathjsxgraph.pl
 
 
-name = M
+ptname = M
 tol % 0.1
 
 script_aux ==
@@ -28,7 +28,7 @@ board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
 ==
 
 evaluator ==
-x, y = jxg.getpoint(name)
+x, y = jxg.getpoint(ptname)
 from math import hypot
 if hypot(x-xsol, y-ysol) < tol:
     score = 100
