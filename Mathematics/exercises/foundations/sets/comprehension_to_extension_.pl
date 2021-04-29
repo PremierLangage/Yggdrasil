@@ -5,6 +5,9 @@ title = Ecrire en extension un ensemble donné en compréhension
 before ==
 # S,cond=randitem(param['sets'])
 
+cond = "square"
+S = "N"
+
 n = 20
 if S == "N":
     S_tex=r"\mathbb{N}"
@@ -24,10 +27,10 @@ symb=["<","\leq"]
 setlength=9
 while (setlength>8 or setlength<1):
     if cond=="square":
-        a=randitem([4,6,9,15,16,19,21,25,27])
+        a = choice([4,6,9,15,16,19,21,25,27])
         ka=randint(0,1)
-        globals()['aa']=a+ka
-        lstA=[x for x in lstS if x**2 < aa]
+        aa = a+ka
+        lstA = [x for x in lstS if x**2 < aa]
         cond_tex=r"n^2 %s %d" % (symb[ka],a)
     elif cond=="square2":
         ka=randint(0,1)
