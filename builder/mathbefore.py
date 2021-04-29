@@ -88,10 +88,8 @@ if __name__ == "__main__":
 
     for key in jinja_keys:
         if key in dic:
-            try:
-                dic[key] = Env.from_string(dic[key]).render(dic)
-            except:
-                pass
+            pass
+            # dic[key] = Env.from_string(dic[key]).render(dic)
 
     with open(outputfilename, "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
