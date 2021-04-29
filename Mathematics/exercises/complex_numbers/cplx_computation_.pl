@@ -8,6 +8,8 @@ title = Opération sur les nombres complexes
 
 param.formulas % ["add","sub"]
 
+jinja_keys % ["text", "text1", "text1", "solution", "input_prefix"]
+
 before ==
 from sympy import conjugate
 
