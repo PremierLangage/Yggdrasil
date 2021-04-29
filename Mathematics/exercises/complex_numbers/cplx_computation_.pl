@@ -105,26 +105,11 @@ if formula in ["sq","inv"]:
     On considère le nombre complexe $! z= {{ z|latex }} !$. 
     Calculer $! \displaystyle {{ expr|latex }} !$ (sous forme algébrique).
     """
+    text = ""
 else:
     text = """
     On considère les nombres complexes $! z_1= {{ z1|latex }} !$ et $! z_2= {{ z2|latex }} !$. 
     Calculer $! \displaystyle {{ expr|latex }} !$ (sous forme algébrique).
     """
+    text = ""
 ==
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
