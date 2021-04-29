@@ -2,19 +2,22 @@
 # Tags: complex numbers
 # 29/4/2021
 
-extends = /model/math/mathcomplex.pl
+extends = /model/math/complex.pl
 
 title = Opération sur les nombres complexes
 
 param.formulas % ["add","sub"]
 
 before ==
+from sympy import conjugatre
+
 z1=rand_complex_int(5)
 z2=rand_complex_int(5)
 while z1==z2:
     z2=rand_complex_int(5)
-z1b=conjugate(z1)
-z2b=conjugate(z2)
+
+z1b = conjugate(z1)
+z2b = conjugate(z2)
 
 formula=randitem(param['formulas'])
 
@@ -102,7 +105,6 @@ else:
 ==
 
 wims ==
-
 \if{\type=14}{
 \text{nz=1}
 \text{expr = randitem(\overline{z} \times \z,z \times \overline{z})}
