@@ -3,8 +3,10 @@ extends = /model/math/math.pl
 
 title = Cercle trigonométrique
 
+before_scripts % ["mathimport", "headerbefore", "before", "process"]
+
 before ==
-lstangle = eval(param['lstangle'])
+lstangle = [pi/4,pi/2]
 angle = choice(lstangle)
 valangle = float(angle.evalf())
 xsol = float(cos(valangle))
