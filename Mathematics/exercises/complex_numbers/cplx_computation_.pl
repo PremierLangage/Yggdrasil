@@ -6,7 +6,7 @@ extends = /model/math/mathcomplex.pl
 
 title = Opération sur les nombres complexes
 
-param.formulas % ["z1+z2","z1-z2"]
+param.formulas % ["add","sub"]
 
 before ==
 z1=rand_complex_int(5)
