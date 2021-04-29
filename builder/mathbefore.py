@@ -90,6 +90,8 @@ if __name__ == "__main__":
         if key in dic:
             try:
                 dic[key] = Env.from_string(dic[key]).render(dic)
+            except:
+                pass
 
     with open(outputfilename, "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
