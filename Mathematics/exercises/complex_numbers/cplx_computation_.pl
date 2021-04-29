@@ -101,7 +101,7 @@ sol = sol.expand()
 if formula in ["sq","inv"]:
     text =r"On considère le nombre complexe $! z= %s !$. Calculer $! \displaystyle %s !$ (sous forme algébrique)." % (latex(z1),expr)
 else:
-    pass
+    del old
 ==
 
 text ==
