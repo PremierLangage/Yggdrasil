@@ -1,23 +1,21 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /model/math/set.pl
 
-title = Définition d'un ensemble en compréhension
-
-lang = fr
+title = Ecrire en extension un ensemble donné en compréhension
 
 before ==
-S,cond=randitem(param['sets'])
+# S,cond=randitem(param['sets'])
 
-n=20
-if S=="N":
+n = 20
+if S == "N":
     S_tex=r"\mathbb{N}"
     lstS=list(range(n))
-elif S=="N*":
+elif S == "N*":
     S_tex=r"\mathbb{N}^*"
     lstS=list(range(1,n))
-elif S=="Z":
+elif S == "Z":
     S_tex=r"\mathbb{Z}"
     lstS=list(range(-n+1,n))
-elif S=="Z*":
+elif S == "Z*":
     S_tex=r"\mathbb{Z}^*"
     lstS=list(range(-n+1,0))+list(range(1,n))
 
@@ -49,16 +47,3 @@ sol_tex=latex(sol)
 text == 
 Ecrire en extension l'ensemble $!\\left \\{ n \in {{S_tex}} \:|\: {{cond_tex}} \\right \\}!$.
 ==
-
-evaluator ==
-score,_,feedback=ans_struct_expr(input.value,sol,"set")
-==
-
-solution ==
-La solution est $! { {{sol_tex}} } !$.
-==
-
-
-
-
-
