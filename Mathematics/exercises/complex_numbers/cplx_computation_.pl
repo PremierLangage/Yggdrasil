@@ -94,7 +94,9 @@ elif formula == "divmix":
         expr = r"\frac{ \overline{z_1} }{ z_2 }"
     else:
         sol = z1*z2b
-        expr = "\frac{ z_1 }{ \overline{z_2} }"  
+        expr = "\frac{ z_1 }{ \overline{z_2} }" 
+# cases remaining to do :
+# sqconj, conjsq
 
 sol = sol.expand()
 
@@ -110,63 +112,7 @@ else:
     """
 ==
 
-wims ==
-\if{\type=14}{
-\text{nz=1}
-\text{expr = randitem(\overline{z} \times \z,z \times \overline{z})}
-\complex{rep=(\zb1) * (\z1)}
-}
 
-\if{\type=15}{
-\text{nz=1}
-\text{expr = \overline{z}^2}
-\complex{rep=(\zb1)^2}
-}
-\if{\type=16}{
-\text{nz=1}
-\text{expr = \overline{z^2}}
-\complex{rep=(\zb1)^2}
-}
-
-\if{\type=17}{
-\text{expr = \frac{z_1}{z_2}}
-\complex{rep=(\z1)/(\z2)}
-}
-\if{\type=18}{
-\if{randint(1..2)=1}{
-\text{expr = \frac{\overline{z_1}}{z_2}}
-\complex{rep=(\zb1)/(\z2)}
-}{
-\text{expr = \frac{z_1}{\overline{z_2}}}
-\complex{rep=(\z1)/(\zb2)}
-}
-}
-\if{\type=19}{
-\text{expr = \frac{\overline{z_1}}{\overline{z_2}}}
-\complex{rep=(\zb1)/(\zb2)}
-}
-\if{\type=20}{
-\text{expr = \overline{\left(\frac{z_1}{z_2}\right)}}
-\complex{rep=(\zb1)/(\zb2)}
-}
-
-\if{\type=21}{
-\text{nz=1}
-\text{expr = \frac{1}{z}}
-\complex{rep=1/(\z1)}
-}
-
-\if{\type=22}{
-\text{nz=1}
-\text{expr = \frac{1}{\overline{z}}}
-\complex{rep=1/(\zb1)}
-}
-
-\if{\type=23}{
-\text{nz=1}
-\text{expr = \overline{\left(\frac{1}{z}\right)}}
-\complex{rep=1/(\zb1)}
-==
 
 
 
