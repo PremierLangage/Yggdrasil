@@ -99,18 +99,15 @@ elif formula == "divmix":
 sol = sol.expand()
 
 if formula in ["sq","inv"]:
-    text =r"On considère le nombre complexe $! z= %s !$. Calculer $! \displaystyle %s !$ (sous forme algébrique)." % (latex(z1),expr)
+    text = """
+    On considère le nombre complexe $! z= {{ z|latex }} !$. 
+    Calculer $! \displaystyle {{ expr|latex }} !$ (sous forme algébrique).
+    """
 else:
-    del old
-==
-
-text ==
-On considère les nombres complexes $! z_1= {{ z1|latex }} !$ et $! z_2= {{ z2|latex }} !$. 
-Calculer $! \displaystyle {{ expr|latex }} !$ (sous forme algébrique).
-==
-
-old ==
-{{ a|latex}}
+    text = """
+    On considère les nombres complexes $! z_1= {{ z1|latex }} !$ et $! z_2= {{ z2|latex }} !$. 
+    Calculer $! \displaystyle {{ expr|latex }} !$ (sous forme algébrique).
+    """
 ==
 
 wims ==
