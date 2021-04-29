@@ -82,13 +82,13 @@ elif formula == "mulmix":
         sol = z1*z2b
         expr = "z_1 \times \overline{z_2}"  
 elif formula == "conjdiv":
-    sol = z1b*z2b
+    sol = z1b/z2b
     expr = r"\overline{\left(\frac{z_1}{z_2}\right)}" 
-elif formula == "z1b*z2b":
-    sol = z1b*z2b
+elif formula == "divconj":
+    sol = z1b/z2b
     expr = r"\frac{ \overline{z_1} }{ \overline{z_2} }"
-elif formula == "z1b/z2":
-    if randitem([1,2])==1:
+elif formula == "divmix":
+    if randint(0,1) == 1:
         sol = z1b*z2
         expr = r"\frac{ \overline{z_1} }{ z_2 }"
     else:
@@ -97,7 +97,7 @@ elif formula == "z1b/z2":
 
 sol = sol.expand()
 
-if formula in ["z^2","1/z"]:
+if formula in ["sq","inv"]:
     text =r"On considère le nombre complexe $! z= %s !$. Calculer $! \displaystyle %s !$ (sous forme algébrique)." % (latex(z1),expr)
 else:
     text =r"On considère les nombres complexes $! z_1= %s !$ et $! z_2= %s !$. Calculer $! \displaystyle %s !$ (sous forme algébrique)." % (latex(z1),latex(z2),expr)
