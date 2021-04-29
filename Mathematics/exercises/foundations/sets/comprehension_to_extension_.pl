@@ -5,9 +5,6 @@ title = Définition d'un ensemble en compréhension
 lang = fr
 
 before ==
-keyboards_JSON['virtualKeyboards']="sets"
-input.config = keyboards_JSON
-
 S,cond=randitem(param['sets'])
 
 n=20
