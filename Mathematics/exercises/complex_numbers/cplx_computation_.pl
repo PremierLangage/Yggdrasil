@@ -8,7 +8,7 @@ title = Opération sur les nombres complexes
 
 param.formulas % ["add","sub"]
 
-jinja_keys % ["text", "text1", "text1", "solution", "input_prefix"]
+jinja_keys % ["text", "text1", "text2", "solution", "input_prefix"]
 
 before ==
 from sympy import conjugate
@@ -108,6 +108,10 @@ else:
     text = text2
 ==
 
+text1 ==
+On considère le nombre complexe $! z= {{ z|latex }} !$. 
+Calculer $! \displaystyle {{ expr|latex }} !$ (sous forme algébrique).
+==
 
 text2 ==
 On considère les nombres complexes $! z_1= {{ z1|latex }} !$ et $! z_2= {{ z2|latex }} !$. 
