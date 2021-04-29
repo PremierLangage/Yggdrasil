@@ -110,10 +110,10 @@ else:
 
 text1 ==
 On considère le nombre complexe $! z = {{ z1|latex }} !$. 
-Calculer $! \displaystyle {{ expr|latex }} !$ (sous forme algébrique).
+Calculer $! \displaystyle {{ expr }} !$ (sous forme algébrique).
 ==
 
 text2 ==
 On considère les nombres complexes $! z_1= {{ z1|latex }} !$ et $! z_2= {{ z2|latex }} !$. 
-Calculer $! \displaystyle {{ expr|latex }} !$ (sous forme algébrique).
+Calculer $! \displaystyle {{ expr }} !$ (sous forme algébrique).
 ==
