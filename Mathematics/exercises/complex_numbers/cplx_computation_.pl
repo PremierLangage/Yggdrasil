@@ -101,10 +101,13 @@ sol = sol.expand()
 if formula in ["sq","inv"]:
     text =r"On considère le nombre complexe $! z= %s !$. Calculer $! \displaystyle %s !$ (sous forme algébrique)." % (latex(z1),expr)
 else:
-    text =r"On considère les nombres complexes $! z_1= %s !$ et $! z_2= %s !$. Calculer $! \displaystyle %s !$ (sous forme algébrique)." % (latex(z1),latex(z2),expr)
-
+    text = text2
 ==
 
+text2 ==
+On considère les nombres complexes $! z_1= {{ z1|latex }} !$ et $! z_2= {{ z2|latex }} !$. 
+Calculer $! \displaystyle {{ expr|latex }} !$ (sous forme algébrique).
+==
 wims ==
 \if{\type=14}{
 \text{nz=1}
