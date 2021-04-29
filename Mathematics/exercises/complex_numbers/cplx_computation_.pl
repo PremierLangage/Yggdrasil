@@ -107,13 +107,3 @@ if formula in ["sq","inv"]:
 else:
     text = text2
 ==
-
-text1 ==
-On considère le nombre complexe $! z= {{ z|latex }} !$. 
-Calculer $! \displaystyle {{ expr|latex }} !$ (sous forme algébrique).
-==
-
-text2 ==
-On considère les nombres complexes $! z_1= {{ z1|latex }} !$ et $! z_2= {{ z2|latex }} !$. 
-Calculer $! \displaystyle {{ expr|latex }} !$ (sous forme algébrique).
-==
