@@ -19,7 +19,7 @@ while z1==z2:
 z1b = conjugate(z1)
 z2b = conjugate(z2)
 
-formula=randitem(param['formulas'])
+formula = choice(param['formulas'])
 
 if formula == "add":
     sol = z1 + z2
