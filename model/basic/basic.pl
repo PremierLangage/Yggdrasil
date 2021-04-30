@@ -4,10 +4,12 @@ title =
 @ /grader/evaluator2.py [grader.py]
 @ /utils/builderlib.py
 @ /utils/plrandom.py
+@ /utils/plcsv.py
 
 importfunc ==
-from random import randint, choice, choices, sample, shuffle
-from plrandom import csv_choice, csv_sample
+from random import choice, choices, sample, shuffle
+from plrandom import randint, sampleint
+from plcsv import csv_rand, csv_sample, csv_col
 ==
 
 settings.maxattempt % 1
