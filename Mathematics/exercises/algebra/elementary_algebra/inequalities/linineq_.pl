@@ -2,15 +2,15 @@
 # Tags: inequalities
 # 19/8/2020
 
-extends = /model/mathinput.pl
+extends = /model/math/interval.pl
 
 title = Inéquation linéaire
 
 param.otherside = constant
 
 before ==
-a,c=list_randint_norep(2,-6,6,[0,1,-1])
-b,d=list_randint(2,-6,6,[0])
+a, c = sample(list(range(-6,-1)) + list(range(2,7)), 2)
+b, d = sample(list(range(-6,0)) + list(range(1,7)), 2)
 var('x')
 f=a*x+b
 if param['otherside'] == 'zero':
