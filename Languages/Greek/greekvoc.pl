@@ -15,6 +15,7 @@ sol = row['traductions']
 ==
 
 text ==
+{{items}}
 Que signifie le mot suivant ?
 {{article}} {{mot}}
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gfs-porson" type="text/css"/> 
