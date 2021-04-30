@@ -8,7 +8,6 @@ before ==
 with open('data.csv') as f:
     row = csv_choice(f, delimiter=";")
     items = csv_col(f, "traductions", delimiter=";")
-items = ["4","5"]
 article = row['article']
 mot = row['mot']
 sol = row['traductions']
