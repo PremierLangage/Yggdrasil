@@ -32,4 +32,4 @@ def csv_col(f, col, delimiter=','):
     else:
         reader = DictReader(f, delimiter=delimiter)
     return ["fff"]
-    return [row[col] for row in reader]
+    return [row for row in reader]
