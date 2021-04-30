@@ -9,7 +9,6 @@ title = Résoudre une inéquation linéaire
 param.otherside = constant
 
 before ==
-from plrandom import sampleint
 from sympy import S, solveset
 a, c = sampleint(-6, 6, 2, [0])
 b, d = sampleint(-6, 6, 2, [-1, 0, 1])
