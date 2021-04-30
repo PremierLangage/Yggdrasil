@@ -3,7 +3,7 @@ extends = /model/math/tuple.pl
 title = Antécédent
 
 before ==
-n, m = list_randitem_norep(2,symbols("n,m,p,q,r"))
+n, m = sample(symbols("n,m,p,q,r"), 2)
 
 expr = choice(sympify(exprlist))
 
