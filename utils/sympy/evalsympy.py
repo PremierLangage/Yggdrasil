@@ -819,12 +819,12 @@ def eval_interval(strans, sol):
         # even with simplification, not sure comparison always works
         ans = simplify_rset(ans)
     except:
-        return (-1, "NotRSet")
+        return (-1, "NotInterval")
     if len(ans) > 1:
         for i in range(len(ans)):
             for j in range(i+1,len(ans)):
                 if sp.Intersection(ans[i], ans[j]) != sp.EmptySet:
-                    return (-1, "RSetNotDisjoint")
+                    return (-1, "IntervalsNotDisjoint")
     if sp.Union(*ans) != sol:
         return (0, "NotEqual")
     return (100,"")
