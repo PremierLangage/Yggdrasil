@@ -26,7 +26,6 @@ else:
     E2_tex = "\mathbb{Z}"
 
 y = f(x1, x2)
-
 ==
 
 text ==
