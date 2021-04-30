@@ -5,9 +5,9 @@ extends = /model/basic/inputselect.pl
 title = Vocabulaire grec
 
 before ==
-with open('data.csv', newline='') as f:
-    row = csv_choice(f, delimiter=";")
-    items = csv_col(f, "", delimiter=";")
+f = open('data.csv', newline='')
+row = csv_choice(f, delimiter=";")
+items = csv_col(f, "", delimiter=";")
 article = row['article']
 mot = row['mot']
 sol = row['traductions']
