@@ -1,4 +1,4 @@
 extends = argument_intcouple_to_int_.pl
 
-exprlist = [n**2+m, n+m**2, n**2-m, n-m**2]
+exprlist = [n*m, (n+1)*m, (n-1)*m]
 
