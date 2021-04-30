@@ -26,5 +26,6 @@ sol=solveset(ineq,x,domain=S.Reals)
 
 
 text ==
+{{ sol|latex }}
 Déterminer l'ensemble des réels $% x %$ tels que $$ {{ ineq|latex }}. $$ Ecrire cet ensemble sous la forme d'un intervalle.
 ==
