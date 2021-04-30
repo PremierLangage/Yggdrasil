@@ -6,9 +6,9 @@ text ==
 Quel pays a pour capitale Budapest ?
 ==
 
-sol =
+sol ==
 Budapest
-=
+==
 
 items ==
 Hongrie
