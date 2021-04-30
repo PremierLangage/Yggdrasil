@@ -2,7 +2,6 @@ extends = /model/math/set.pl
 
 title = Opérations sur les ensembles
 
-
 before ==
 from sympy import Union, Intersection
 
