@@ -7,7 +7,7 @@ before ==
 
 # expr = choice(sympify(exprlist))
 
-n, m = symbols('n, m')
+var('n m')
 
 f = Lambda((n, m), n+m)
 
