@@ -6,4 +6,5 @@ cas % ["symdiff"]
 
 text ==
 {{param.cases}}
+{{cas}}
 ==
