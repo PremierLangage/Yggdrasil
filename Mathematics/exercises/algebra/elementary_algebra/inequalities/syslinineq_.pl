@@ -1,6 +1,6 @@
 extends = /model/mathinput.pl
 
-title = Système d'inéquations linéaires
+title = Résoudre un système d'inéquations linéaires
 
 before ==
 a,c=list_randint_norep(2,-6,6,[0,1,-1])
