@@ -1,16 +1,28 @@
 import random
+from itertools import chain
 from io import StringIO
 from csv import DictReader
 rd = random.Random()
 
-def randitem(items,excluded_values=[]):
+def randint(a, b, excval=[]):
     """
-    Pick a random item from a list.
+    Return a random integer between two bounds (excluding some values).
     """
-    item=rd.choice(items)
+    item=rd.choice(range(a,b+1))
     while item in excluded_values:
-        item=rd.choice(items)
+        item=rd.choice(range(a,b+1))
     return item
+
+def sampleint(a, b, k, excval=[]):
+    """
+    Return a random integer between two bounds (excluding some values).
+    """
+    bound = [a]
+    bound.append(sorted(excval))
+    bound.append(b)
+    itlist = [range(bound[i], bound[i+1]) for i in range(len(bound)-1)]
+    return rdsample(chain(*itlist), k)
+
 
 def csv_choice(f, delimiter=','):
     """
