@@ -827,7 +827,7 @@ def eval_interval(strans, sol):
                     return (-1, "IntervalsNotDisjoint")
     if sp.Union(*ans) != sol:
         return (0, "NotEqual")
-    return (100,"")
+    return (100, "Success")
 
 from sympy.physics.units import Quantity, convert_to
 
