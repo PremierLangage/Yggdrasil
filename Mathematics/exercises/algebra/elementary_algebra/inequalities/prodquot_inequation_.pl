@@ -2,7 +2,7 @@
 # Tags: inequalities
 # 19/8/2020
 
-extends = /model/mathinput.pl
+extends = /model/math/interval.pl
 
 title = Résoudre une inéquation produit/quotient
 
