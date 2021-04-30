@@ -2,7 +2,6 @@ extends = /model/basic/basic.pl
 
 input =: Input
 
-
 before_scripts % ["importfunc", "before", "process"]
 
 process ==
