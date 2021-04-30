@@ -1,11 +1,9 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /model/math/tuple.pl
 
 title = Antécédent
 
 before ==
-n,m=list_randitem_norep(2,symbols("n,m,p,q,r"))
-nn=latex(n)
-mm=latex(m)
+n, m = list_randitem_norep(2,symbols("n,m,p,q,r"))
 expr=eval(exprcode)
 expr_tex=latex(expr)
 f = Lambda ( (n,m) , expr)
