@@ -21,7 +21,7 @@ def sampleint(a, b, k, excval=[]):
     bound.append(sorted(excval))
     bound.append(b)
     itlist = [range(bound[i], bound[i+1]) for i in range(len(bound)-1)]
-    return rdsample(chain(*itlist), k)
+    return rd.sample(chain(*itlist), k)
 
 
 def csv_choice(f, delimiter=','):
