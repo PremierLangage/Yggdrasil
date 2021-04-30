@@ -31,4 +31,5 @@ def csv_col(f, col, delimiter=','):
         reader = DictReader(StringIO(f), delimiter=delimiter)
     else:
         reader = DictReader(f, delimiter=delimiter)
+    return ["fff"]
     return [row[col] for row in reader]
