@@ -5,9 +5,7 @@ input =: Input
 
 before_scripts % ["importfunc", "before", "process"]
 
-importfunc ==
-from random import randint, choice, choices, sample, shuffle
-==
+
 title =
 text =
 items ==
