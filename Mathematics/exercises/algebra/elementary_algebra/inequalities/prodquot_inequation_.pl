@@ -14,12 +14,12 @@ before ==
 var('x')
 
 ok=False
-if param['bounds']=='int':
+if param['bounds'] == 'int':
     b, d = sampleint(2, -6, 6, [0])
     P, Q = (x+b), (x+d)
 if param['bounds']=='intrat':
     while not ok:
-        b, d= [randint(-6, 6, [0]) for i in range(2)]
+        b, d = [randint(-6, 6, [0]) for i in range(2)]
         a, c = [randint(-6, 6, [0, 1, -1]) for i in range(2)]
         if b*c!=d: ok=True
     P,Q=(x+b),(c*x+d)
