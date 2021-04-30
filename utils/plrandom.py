@@ -1,5 +1,5 @@
 import random
-from itertools import chain
+from itertools import chain, islice
 from io import StringIO
 from csv import DictReader
 rd = random.Random()
@@ -21,7 +21,7 @@ def sampleint(a, b, k, excval=[]):
     bound.extend(sorted(excval))
     bound.append(b)
     itlist = [range(bound[i], bound[i+1]) for i in range(len(bound)-1)]
-    return rd.sample(chain(*itlist), k)
+    return rd.sample(islice(chain(*itlist), a, b), k)
 
 
 def csv_choice(f, delimiter=','):
