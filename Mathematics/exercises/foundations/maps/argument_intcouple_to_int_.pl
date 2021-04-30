@@ -10,7 +10,7 @@ before ==
 var('n m')
 
 f = Lambda((n, m), n+m)
-
+expr = n+m
 ==
 
 text ==
