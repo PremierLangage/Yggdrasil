@@ -7,14 +7,14 @@ def randint(a, b, excval=[]):
     """
     Return a random integer between two bounds (excluding some values).
     """
-    item=rd.choice(range(a,b+1))
-    while item in excluded_values:
-        item=rd.choice(range(a,b+1))
-    return item
+    r = rd.randint(a, b)
+    while r in excluded_values:
+        r = rd.randint(a, b)
+    return r
 
 def sampleint(a, b, k, excval=[]):
     """
-    Return a random integer between two bounds (excluding some values).
+    Return a sample of random integers between two bounds (excluding some values).
     """
     # Le passage par des listes n'est pas super.
     bound = [a]
