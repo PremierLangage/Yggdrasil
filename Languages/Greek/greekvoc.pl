@@ -21,11 +21,3 @@ Que signifie le mot suivant ?
 {{article}} {{mot}}
 </div>
 ==
-
-solution ==
-{{traductions}}
-==
-
-
-
-
