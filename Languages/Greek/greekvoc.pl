@@ -1,4 +1,4 @@
-extends = /model/basic/input.pl
+extends = /model/basic/inputselect.pl
 
 @ grec_voc_1.csv [data.csv]
 
@@ -7,8 +7,9 @@ delimiter = ;
 title = Vocabulaire grec
 
 before ==
-choices=[item['traductions'] for item in rows]
-input.autocomplete = choices
+with open('data.csv) as f:
+    row = csv_rand(f)
+    items = csv_col(f, "traductions")
 ==
 
 text ==
