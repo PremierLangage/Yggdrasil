@@ -5,14 +5,6 @@ input =: Input
 
 before_scripts % ["importfunc", "before", "process"]
 
-
-title =
-text =
-items ==
-v1
-v2
-==
-sol = v1
 process ==
 from random import randint
 
