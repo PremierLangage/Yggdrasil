@@ -15,7 +15,7 @@ var('x')
 
 ok=False
 if param['bounds'] == 'int':
-    b, d = sampleint(2, -6, 6, [0])
+    b, d = sampleint(-6, 6, 2, [0])
     P, Q = (x+b), (x+d)
 if param['bounds']=='intrat':
     while not ok:
