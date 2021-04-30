@@ -11,6 +11,8 @@ param.type = product
 param.bounds = int
 
 before ==
+from sympy import S, solveset
+
 var('x')
 
 ok=False
