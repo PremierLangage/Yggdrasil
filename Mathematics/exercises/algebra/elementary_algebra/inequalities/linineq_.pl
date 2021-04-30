@@ -9,6 +9,7 @@ title = Inéquation linéaire
 param.otherside = constant
 
 before ==
+drom sympy import S, solveset
 a, c = sample(list(range(-6,-1)) + list(range(2,7)), 2)
 b, d = sample(list(range(-6,0)) + list(range(1,7)), 2)
 var('x')
@@ -19,7 +20,7 @@ if param['otherside'] == 'constant':
     g=d
 if param['otherside'] == 'linear':
     g=c*x+d
-ineq=randitem([f>=g,f>g,f<=g,f<g,g>=f,g>f,g<=f,g<f])
+ineq=choice([f>=g,f>g,f<=g,f<g,g>=f,g>f,g<=f,g<f])
 sol=solveset(ineq,x,domain=S.Reals)
 ==
 
