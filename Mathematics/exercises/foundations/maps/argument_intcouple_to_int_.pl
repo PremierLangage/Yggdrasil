@@ -25,13 +25,13 @@ else:
 
 y = f(x1, x2)
 
-v1, v2 = sample(symbols("n m p q r"), 2)
-expr = expr.subs(n, v1).subs(m, v2)
+v1, v2 = sample(['n', 'm', 'p', 'q'], 2)
+expr = expr.subs([(n, Symbol(v1)), (m, Symbol(v2))]
 sol = Tuple(3, 4)
 ==
 
 text ==
 On considère la fonction $! f : {{E1_tex}} \times {{E2_tex}} \rightarrow \mathbb{Z} !$ telle que
-$$f( {{n|latex}}, {{m|latex}})= {{ expr|latex }}$$
+$$f( {{ v1 }}, {{ v2 }})= {{ expr|latex }}$$
 Déterminer un antécédent de $! {{y|latex}} !$ par  $! f !$
 ==
