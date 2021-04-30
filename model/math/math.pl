@@ -16,7 +16,7 @@ mathimport ==
 from sympy import E, I, pi, oo
 from sympy import sqrt, Abs, sin, cos, tan, exp, ln
 from sympy import var, symbols, Symbol
-from sympy import sympify, simplify
+from sympy import sympify, simplify, Lambda
 from sympy import Integer, Rational, Poly, FiniteSet, Tuple
 from random import choice, choices, sample, shuffle
 from plrandom import randint
