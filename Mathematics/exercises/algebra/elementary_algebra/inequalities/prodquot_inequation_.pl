@@ -15,8 +15,8 @@ var('x')
 
 ok=False
 if param['bounds']=='int':
-    b,d=list_randint_norep(2,-6,6,[0])
-    P,Q=(x+b),(x+d)
+    b, d = sampleint(2, -6, 6, [0])
+    P, Q = (x+b), (x+d)
 if param['bounds']=='intrat':
     while not ok:
         b, d=list_randint(2,-6,6,[0])
