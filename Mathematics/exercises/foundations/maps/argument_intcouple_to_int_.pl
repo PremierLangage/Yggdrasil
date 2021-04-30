@@ -7,7 +7,7 @@ before ==
 
 # expr = choice(sympify(exprlist))
 
-#var('n m')
+var('n m')
 
 
 expr = n+m
