@@ -15,7 +15,7 @@ y= 2
 sol = Tuple(3, 4)
 ==
 
-text2 ==
+text ==
 On considère la fonction $! f : {{E1_tex}} \times {{E2_tex}} \rightarrow \mathbb{Z} !$ telle que
 $$f( {{n|latex}}, {{m|latex}})= {{ expr|latex }}$$
 Déterminer un antécédent de $! {{y|latex}} !$ par  $! f !$
