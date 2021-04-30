@@ -14,6 +14,7 @@ items ==
 v1
 v2
 ==
+sol = v1
 process ==
 from random import randint
 
@@ -42,6 +43,9 @@ form ==
 settings.feedback = itemswrong
 
 evaluator ==
-score = 100
+if input.value == sol:
+    score = 100
+else:
+    score = 0
 ==
 
