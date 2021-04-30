@@ -7,7 +7,7 @@ title = Vocabulaire grec
 before ==
 with open('data.csv', newline='') as f:
     row = csv_choice(f, delimiter=";")
-    items = csv_col(f, "ions", delimiter=";")
+    items = csv_col(f, "", delimiter=";")
 article = row['article']
 mot = row['mot']
 sol = row['traductions']
