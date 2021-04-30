@@ -3,6 +3,7 @@ extends = /model/math/tuple.pl
 title = Antécédent
 
 before ==
+var('n m')
 expr = choice(sympify(exprlist))
 f = Lambda((n, m), expr)
 
