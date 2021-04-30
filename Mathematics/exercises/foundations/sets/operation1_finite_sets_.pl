@@ -4,8 +4,10 @@ title = Opérations sur les ensembles
 
 before ==
 A = FiniteSet(*sample(range(10), randint(4, 7)))
-B = rand_finiteset(randint(4,7),list(range(10)))
-case=randitem(eval(param['cases']))
+B = FiniteSet(*sample(range(10), randint(4, 7)))
+
+case = choice(param['cases'])
+
 if case==1:
     expr=r"A \cup B"
     sol=Union(A,B)
