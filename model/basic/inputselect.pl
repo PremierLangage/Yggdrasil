@@ -1,16 +1,43 @@
 extends = /model/basic.pl
 
-
-
-tol % 0
-
 input =: Input
+
+
+before_scripts % ["importfunc", "before", "process"]
+
+importfunc ==
+from random import randint, choice, choices, sample, shuffle
+==
+items ==
+v1
+v2
+==
+process ==
+from random import randint
+
+if isinstance(items, str):
+    _before_scripts % ["importfunc", "before", "process"]
+
+importfunc ==
+from random import randint, choice, choices, sample, shuffle
+==
+
+process ==
+if isinstance(items, str):
+    _items_ = items.splitlines()
+elif isinstance(items, list):
+    _items_= items
+else:
+    raise TypeError("items must be a string or a list")
+
+input.autocomplete = _items_
+==
 
 form ==
 {{ input|component }}
 ==
 
-settings.feedback = rightwrong
+settings.feedback = itemswrong
 
 evaluator ==
 score = 100
