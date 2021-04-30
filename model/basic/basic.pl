@@ -9,7 +9,7 @@ title =
 importfunc ==
 from random import choice, choices, sample, shuffle
 from plrandom import randint, sampleint
-from plcsv import csv_rand, csv_sample, csv_col
+from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 settings.maxattempt % 1
