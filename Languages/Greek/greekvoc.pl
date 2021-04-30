@@ -10,6 +10,9 @@ before ==
 with open('data.csv) as f:
     row = csv_rand(f)
     items = csv_col(f, "traductions")
+article = row['article']
+mot = row['mot']
+sol = row['traductions']
 ==
 
 text ==
