@@ -26,7 +26,7 @@ else:
 y = f(x1, x2)
 
 v1, v2 = sample(symbols("n m p q r"), 2)
-expr_latex = latex(expr, local_dict={'n':var1, 'm':var2})
+expr_latex = latex(expr, local_dict={'n':v1, 'm':v2})
 sol = Tuple(3, 4)
 ==
 
