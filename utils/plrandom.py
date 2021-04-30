@@ -18,7 +18,7 @@ def sampleint(a, b, k, excval=[]):
     Return a random integer between two bounds (excluding some values).
     """
     bound = [a]
-    bound.append(sorted(excval))
+    bound.extend(sorted(excval))
     bound.append(b)
     itlist = [range(bound[i], bound[i+1]) for i in range(len(bound)-1)]
     return rd.sample(chain(*itlist), k)
