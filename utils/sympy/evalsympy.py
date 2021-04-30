@@ -807,7 +807,7 @@ def eval_matrix(matans, sol):
         return (0, "NotEqual")
     return (100, "Success")
 
-def eval_rset(strans, sol):
+def eval_interval(strans, sol):
     """
     Evaluate an answer when the solution is an union of intervals.
     """
