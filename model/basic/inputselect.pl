@@ -8,6 +8,7 @@ before_scripts % ["importfunc", "before", "process"]
 importfunc ==
 from random import randint, choice, choices, sample, shuffle
 ==
+text =
 items ==
 v1
 v2
