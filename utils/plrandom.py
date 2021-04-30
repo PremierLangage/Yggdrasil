@@ -1,5 +1,4 @@
 import random
-from itertools import chain, islice
 from io import StringIO
 from csv import DictReader
 rd = random.Random()
