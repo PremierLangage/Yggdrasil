@@ -19,7 +19,7 @@ from sympy import var, symbols, Symbol
 from sympy import sympify, simplify, Lambda
 from sympy import Integer, Rational, Poly, FiniteSet, Tuple
 from random import choice, choices, sample, shuffle
-from plrandom import randint
+from plrandom import randint, sampleint
 from sympy2latex import latex
 from latex2sympy import latex2sympy
 ==
