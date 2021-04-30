@@ -4,7 +4,7 @@ checkratsimp = True
 
 evaluator ==
 from evalsympy import eval_interval
-score, error = eval_expr(answers['math'], sol, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
+score, error = eval_interval(answers['math'], sol)
 feedback = message[error]
 ==
 
