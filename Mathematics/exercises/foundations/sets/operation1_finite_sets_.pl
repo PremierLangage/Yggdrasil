@@ -21,7 +21,7 @@ elif case == "inter":
 elif case == "diff":
     expr = r"A \setminus B"
     sol = B.complement(A)
-elif case == "diffsym":
+elif case == "symdiff":
     expr = r"A \,\triangle\, B"
     sol = B.symmetric_difference(A)
 ==
