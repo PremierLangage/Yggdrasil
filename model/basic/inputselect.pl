@@ -2,6 +2,8 @@ extends = /model/basic/basic.pl
 
 input =: Input
 
+settings.feedback = rightwrong
+
 before_scripts % ["importfunc", "before", "process"]
 
 process ==
