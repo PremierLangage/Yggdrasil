@@ -11,9 +11,8 @@ param.otherside = constant
 before ==
 from plrandom import sampleint
 from sympy import S, solveset
-a, c = sample(list(range(-6,-1)) + list(range(2,7)), 2)
 a, c = sampleint(-6, 6, 2, [0])
-b, d = sample(list(range(-6,0)) + list(range(1,7)), 2)
+b, d = sampleint(-6, 6, 2, [-1, 0, 1])
 var('x')
 f=a*x+b
 if param['otherside'] == 'zero':
