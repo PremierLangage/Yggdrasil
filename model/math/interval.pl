@@ -9,6 +9,6 @@ feedback = message[error]
 ==
 
 solution ==
-La solution est $!{{ sol|latex}}!$.
+La solution est $! {{ sol|latex}} !$.
 ==
 
