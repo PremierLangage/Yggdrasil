@@ -3,10 +3,7 @@ extends = /model/math/tuple.pl
 title = Antécédent
 
 before ==
-n, m = sample(symbols("n m p q r"), 2)
-
-expr = choice(sympify(exprlist, local_dict = globals()))
-
+expr = choice(sympify(exprlist))
 f = Lambda((n, m), expr)
 
 E1 = choice(["N","Z"])
@@ -27,6 +24,8 @@ else:
 
 y = f(x1, x2)
 
+v1, v2 = sample(symbols("n m p q r"), 2)
+expr_latex = latex(expr, local_dict={'n':var1, 'm':var2})
 sol = Tuple(3, 4)
 ==
 
