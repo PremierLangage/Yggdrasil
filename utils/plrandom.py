@@ -17,11 +17,14 @@ def sampleint(a, b, k, excval=[]):
     """
     Return a random integer between two bounds (excluding some values).
     """
+    # Le passage par des listes n'est pas super.
     bound = [a]
     bound.extend(sorted(excval))
     bound.append(b)
-    itlist = [range(bound[i], bound[i+1]) for i in range(len(bound)-1)]
-    return rd.sample(islice(chain(*itlist), 0, None), k)
+    lst = []
+    for i in range(len(bound)-1):
+        lst.extend(list(range(bound[i], bound[i+1])))
+    return rd.sample(lst, k)
 
 
 def csv_choice(f, delimiter=','):
