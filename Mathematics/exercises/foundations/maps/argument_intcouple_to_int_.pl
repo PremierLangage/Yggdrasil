@@ -3,7 +3,11 @@ extends = /model/math/tuple.pl
 title = Antécédent
 
 before ==
+n, m = sample(symbols("n,m,p,q,r"), 2)
 
+# expr = choice(sympify(exprlist))
+
+f = Lambda((n, m), n+m)
 
 E1 = choice(["N","Z"])
 if E1=="N":
