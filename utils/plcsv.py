@@ -28,7 +28,7 @@ def csv_col(f, col, delimiter=','):
     Return data in sample from a csv file/string (as a list of dictionaries)
     """
     if isinstance(f, str):
-        reader = DictReader(StringIO(f), delimiter=delimiter))
+        reader = DictReader(StringIO(f), delimiter=delimiter)
     else:
-        reader = DictReader(f, delimiter=delimiter))
+        reader = DictReader(f, delimiter=delimiter)
     return [row[col] for row in reader]
