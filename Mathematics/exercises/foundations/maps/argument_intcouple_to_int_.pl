@@ -26,7 +26,7 @@ else:
 y = f(x1, x2)
 
 v1, v2 = sample(['n', 'm', 'p', 'q'], 2)
-expr = expr.subs([(n, Symbol(v1)), (m, Symbol(v2))]
+expr = expr.subs([(n, Symbol(v1)), (m, Symbol(v2))])
 sol = Tuple(3, 4)
 ==
 
