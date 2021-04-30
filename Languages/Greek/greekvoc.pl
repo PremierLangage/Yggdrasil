@@ -6,7 +6,7 @@ title = Vocabulaire grec
 
 before ==
 with open('data.csv') as f:
-    row = csv_rand(f, delimiter=";")
+    row = csv_choice(f, delimiter=";")
     items = csv_col(f, "traductions", delimiter=";")
 article = row['article']
 mot = row['mot']
