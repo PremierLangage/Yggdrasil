@@ -4,6 +4,8 @@ title = Opérations sur les ensembles
 
 param.cases % ["union", "inter"]
 
+cas % ["union", "inter"]
+
 before ==
 from sympy import Union, Intersection
 
