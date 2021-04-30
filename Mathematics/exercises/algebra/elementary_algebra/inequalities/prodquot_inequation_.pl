@@ -19,14 +19,14 @@ if param['bounds']=='int':
     P, Q = (x+b), (x+d)
 if param['bounds']=='intrat':
     while not ok:
-        b, d=list_randint(2,-6,6,[0])
-        c=list_randint(2,-6,6,[0,1,-1])
+        b, d= [randint(-6, 6, [0]) for i in range(2)]
+        a, c = [randint(-6, 6, [0, 1, -1]) for i in range(2)]
         if b*c!=d: ok=True
     P,Q=(x+b),(c*x+d)
 if param['bounds']=='rat':
     while not ok:
-        b,d=list_randint(2,-6,6,[0])
-        a,c=list_randint(2,-6,6,[0,1,-1])
+        b, d = [randint(-6, 6, [0]) for i in range(2)]
+        a, c = [randint(-6, 6, [0, 1, -1]) for i in range(2)]
         if b*c!=a*d: ok=True
     P,Q=(a*x+b),(c*x+d)
 
