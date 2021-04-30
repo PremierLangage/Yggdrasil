@@ -18,7 +18,7 @@ if case == "union":
 elif case == "inter":
     expr = r"A \cap B"
     sol = Intersection(A,B)
-elif case == "comp":
+elif case == "diff":
     expr = r"A \setminus B"
     sol = B.complement(A)
 elif case == "diffsym":
