@@ -5,7 +5,7 @@ checkratsimp = True
 evaluator ==
 from evalsympy import eval_interval
 score, error = eval_interval(answers['math'], sol)
-feedback = "" #message[error]
+feedback = message[error]
 ==
 
 solution ==
