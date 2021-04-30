@@ -19,7 +19,7 @@ if param['bounds']=='int':
     P,Q=(x+b),(x+d)
 if param['bounds']=='intrat':
     while not ok:
-        b,d=list_randint(2,-6,6,[0])
+        b, d=list_randint(2,-6,6,[0])
         c=list_randint(2,-6,6,[0,1,-1])
         if b*c!=d: ok=True
     P,Q=(x+b),(c*x+d)
