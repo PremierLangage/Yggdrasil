@@ -1,4 +1,4 @@
-extends = /model/mathinput.pl
+extends = /model/math/interval.pl
 
 title = Résoudre un système d'inéquations linéaires
 
