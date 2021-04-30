@@ -4,7 +4,7 @@
 
 extends = /model/math/interval.pl
 
-title = Inéquation linéaire
+title = Résoudre une inéquation linéaire
 
 param.otherside = constant
 
