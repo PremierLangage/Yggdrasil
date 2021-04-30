@@ -4,8 +4,9 @@ title = Antécédent
 
 before ==
 n, m = list_randitem_norep(2,symbols("n,m,p,q,r"))
-expr=eval(exprcode)
-expr_tex=latex(expr)
+
+expr = choice(sympify(exprlist))
+
 f = Lambda((n, m), expr)
 
 E1 = choice(["N","Z"])
