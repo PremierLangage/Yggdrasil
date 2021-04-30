@@ -4,7 +4,7 @@
 
 extends = /model/mathinput.pl
 
-title = Inéquation produit/quotient
+title = Résoudre une inéquation produit/quotient
 
 param.type = product
 
