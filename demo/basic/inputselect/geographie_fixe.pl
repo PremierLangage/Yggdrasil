@@ -3,16 +3,32 @@ extends = /model/basic/inputselect.pl
 title = Géographie
 
 text ==
-Quel pays a pour capitale Budapest ?
+Quel pays a pour capitale Paris ?
 ==
 
 sol ==
-Budapest
+France
 ==
 
 items ==
+Allemagne
+Autriche
+Belgique
+Danemark
+Espagne
+Finlande
+France
+Grèce
 Hongrie
-Estonie
+Irlande
+Italie
+Norvège
+Pays-Bas
+Pologne
+Portugal
 Roumanie
+Royaume-Uni
 Slovaquie
+Suède
+Suisse
 ==
