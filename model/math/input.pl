@@ -38,8 +38,6 @@ form ==
 
 <input type="text" id="form_math" hidden=true>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
-<button type="button" class="btn btn-light btn-sm"></button>
-
 ==
 
 
