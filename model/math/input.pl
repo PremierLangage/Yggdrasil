@@ -10,6 +10,7 @@ footerbefore ==
 _keypad_ = []
 for item in keypad:
     _keypad_.append({"label": "$!"+ item +"!$", "action": "write", "value": item})
+keypad = _keypad_
 ==
 
 text =
