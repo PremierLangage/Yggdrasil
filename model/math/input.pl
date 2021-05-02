@@ -25,7 +25,7 @@ form ==
 {{input_prefix}}
 <span id="math-field" style="min-width: 5em;font-size:14pt;padding: 0.2em;"></span>
 {% if keypad|length > 0 %}
-<button class="btn btn-sm btn-outline-primary" style="margin-left: 0.5em" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
+<button class="btn btn-sm btn-outline-primary" style="margin-left: 0.5em" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 <math><msqrt><mi>x</mi></msqrt></math>
 </button>
 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
