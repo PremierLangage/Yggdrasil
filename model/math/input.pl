@@ -6,6 +6,12 @@ input_prefix = Réponse :
 
 before =
 
+footerbefore ==
+_keypad_ = []
+for item in keypad:
+    _keypad_.append({"label": "$!"+ item +"!$", "action": "write", "value": item})
+==
+
 text =
 
 title =
