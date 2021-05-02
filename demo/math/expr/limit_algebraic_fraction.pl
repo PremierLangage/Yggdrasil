@@ -26,17 +26,18 @@ input_prefix = $! \displaystyle {{ lim|latex }} = !$
 
 form ==
 <p>{{input_prefix}} <div class="input-group">
-<span id="math-field" style="font-size:14pt;padding: 0.2em;"></span>  <div class="input-group-append">
-    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div role="separator" class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
+<span id="math-field" style="font-size:14pt;padding: 0.2em;"></span> <div class="btn-group">
+  <button class="btn btn-secondary btn-sm" type="button">
+    Small split button
+  </button>
+  <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    ...
   </div>
-</div></p>
+</div>
+</p>
 
 <input type="text" id="form_math" hidden=true>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
