@@ -28,7 +28,7 @@ form ==
 {{input_prefix}}
 <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span>
   <button class="btn btn-sm btn-outline-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-   <i class="fas fa-square-root-alt"></i>
+   <i class="fa fa-square-root-alt"></i>
   </button>
   <div class="dropdown-menu">
     <a class="dropdown-item" onclick="mathField.cmd('\\infty');mathField.focus()">$! \infty !$</a>
