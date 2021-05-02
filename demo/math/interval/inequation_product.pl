@@ -1,7 +1,6 @@
 extends = /model/math/interval.pl
 
-title = Inéquation produit
-
+title = Résoudre une inéquation produit
 
 before ==
 from sympy import solveset, S
@@ -15,3 +14,5 @@ sol = solveset(ineq, x, domain=S.Reals)
 text ==
 Déterminer l'ensemble des réels $! x !$ tels que $$ {{ ineq|latex }}. $$ Ecrire cet ensemble sous la forme d'un intervalle ou d'une réunion d'intervalles.
 ==
+
+keypad % [{"label": "$! \\infty !$", "action": "cmd", "value": "\\sqrt"}, {"label": "$! \\cup !$", "action": "cmd", "value": "\\cup"}]
