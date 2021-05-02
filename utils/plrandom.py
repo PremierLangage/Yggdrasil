@@ -6,7 +6,7 @@ def randint(a, b, excval=[]):
     Return a random integer between two bounds (excluding some values).
     """
     r = rd.randint(a, b)
-    while r in excluded_values:
+    while r in excval:
         r = rd.randint(a, b)
     return r
 
