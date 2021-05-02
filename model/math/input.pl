@@ -30,7 +30,7 @@ form ==
 </button>
 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 {% for item in keypad %}
-<button class="dropdown-item" onclick="mathField.write('{{ item[1] }}');mathField.focus()">{{ item[0] }}</a>
+<button class="dropdown-item" onclick="mathField.{{ item.action }};mathField.focus()">{{ item.label }}</a>
 {% endfor %}
 </div>
 {% endif %}
