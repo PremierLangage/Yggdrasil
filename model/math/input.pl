@@ -8,7 +8,7 @@ before =
 
 footerbefore ==
 _keypad_ = []
-for item in ["ff"]:
+for item in ["+\\infty"]:
     _keypad_.append({"label": "$!"+ item +"!$", "action": "write", "value": item})
 keypad = _keypad_
 ==
