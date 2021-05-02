@@ -22,7 +22,7 @@ def randint_poly(d, nc, bound, var='x'):
 
     d : degree
     nc : number of nonzero coefficients
-    bound : bound on coefficient values
+    bound : bound on coefficients
     var : variable name
     """
     x = sp.Symbol(var)
@@ -32,38 +32,38 @@ def randint_poly(d, nc, bound, var='x'):
 
 # Matrices
 
-def randint_matrix(n, p, bound, excluded_values=[], sparsity=0):
+def randint_matrix(n, p, bound, excval=[], sparsity=0):
     """
     Return a random matrix with integer entries.
 
     n : number of rows
     p : number of columns
-    bound : coefficient bound
-    excluded_values : list of excluded values for the coefficients
-    sparsity : proportion of zero coefficients (value between 0 and 1)
+    bound : bound on entries
+    excval : excluded values for entries
+    sparsity : proportion of zero entries (value between 0 and 1)
     """
     nbzero = int(sp.floor(sparsity*n*p))
     entries0 = [0]*nbzero
-    entries1 = list_randint(n*p-nbzero,-bound,bound,excluded_values)
+    entries1 = sampleint(-bound, bound, n*p-nbzero, excval)
     entries=entries0+entries1
     rd.shuffle(entries)
     return sp.Matrix(n,p,entries)
 
-def randint_matrix_invertible(n, bound, excluded_values=[], sparsity=0, mindet=0, maxdet=sp.S.Infinity):
+def randint_matrix_invertible(n, bound, excval=[], sparsity=0, mindet=0, maxdet=sp.S.Infinity):
     """
-    Generate an invertible random matrix with integer entries.
+    Return an invertible random matrix with integer entries.
     """
     while True:
-        M=rand_int_matrix_fullrank(n,n,bound,excluded_values,sparsity)
+        M=randint_matrix_fullrank(n,n,bound,excval,sparsity)
         if mindet <= abs(M.det()) <= maxdet:
             return M
             
-def randint_matrix_fullrank(n,p,bound,excluded_values=[],sparsity=0):
+def randint_matrix_fullrank(n,p,bound,excval=[],sparsity=0):
     """
     Generate a full rank random matrix with integer entries.
     """
     while True:
-        M=rand_int_matrix(n,p,bound,excluded_values,sparsity)
+        M=randint_matrix(n,p,bound,excval,sparsity)
         if M.rank()==min([n,p]):
             return M
 
@@ -74,7 +74,7 @@ def randint_matrix_givenrank(n, m, r, magnitude=1):
     n : number of rows
     m : number of columns
     r : rank
-    magnitude : parameter defining the size of coefficients
+    magnitude : size of coefficients
     """
     while True:
         P = randint_matrix_fullrank(n, r, 1)
@@ -85,60 +85,3 @@ def randint_matrix_givenrank(n, m, r, magnitude=1):
         diffcols = len(set([tuple(B.col(i)) for i in range(m)]))
         if zerorows == 0 and diffrows == n and diffcols == m:
             return B
-
-# Matrices (old versions)
-
-def rand_int_matrix(n,p,bound,excluded_values=[],sparsity=0):
-    """
-    Generate a random matrix with integer entries.
-    """
-    nbzero=int(sp.floor(sparsity*n*p))
-    entries0=[0]*nbzero
-    entries1=list_randint(n*p-nbzero,-bound,bound,excluded_values)
-    entries=entries0+entries1
-    rd.shuffle(entries)
-    return sp.Matrix(n,p,entries)
-
-def rand_int_matrix_invertible(n,bound,excluded_values=[],sparsity=0,mindet=0,maxdet=sp.S.Infinity):
-    """
-    Generate an invertible random matrix with integer entries.
-    """
-    while True:
-        M=rand_int_matrix_fullrank(n,n,bound,excluded_values,sparsity)
-        if mindet <= abs(M.det()) <= maxdet:
-            return M
-            
-def rand_int_matrix_fullrank(n,p,bound,excluded_values=[],sparsity=0):
-    """
-    Generate a full rank random matrix with integer entries.
-    """
-    while True:
-        M=rand_int_matrix(n,p,bound,excluded_values,sparsity)
-        if M.rank()==min([n,p]):
-            return M
-
-def rand_int_matrix_givenrank(n,m,r,magnitude=2):
-    """
-    Generate a nxn random matrix with given rank.
-    """
-    A=sp.zeros(n,m)
-    d=list_randint_norep(r,0,n-1)
-    for i in range(r):
-        A[d[i],d[i]]=1
-    while True:
-        P=rand_int_matrix_invertible(n,magnitude)
-        Q=rand_int_matrix_invertible(m,magnitude)
-        B=P*A*Q
-        numzeros=0
-        for i in range(n):
-            for j in range(m):
-                if B[i,j]==0:
-                    numzeros += 1
-        diffrows=len(set([tuple(B.row(i)) for i in range(n)]))
-        diffcols=len(set([tuple(B.col(i)) for i in range(n)]))
-        if numzeros < n and diffcols==n and diffrows==n:
-            return P*A*Q
-
-
-
-
