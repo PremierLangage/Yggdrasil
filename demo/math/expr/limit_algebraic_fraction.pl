@@ -31,9 +31,8 @@ form ==
     <span class="sr-only">Toggle Dropdown</span>
   </button>
   <div class="dropdown-menu">
-<a class="dropdown-item" href="#"><math><msqrt>&nbsp;</msqrt></math></a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
+    <a class="dropdown-item" href="#"><math><msqrt>&nbsp;</msqrt></math></a>
+    <a class="dropdown-item" href="#">&#9854;</a>
   </div>
 </div>
 
