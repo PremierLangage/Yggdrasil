@@ -25,12 +25,7 @@ input_prefix = $! \displaystyle {{ lim|latex }} = !$
 
 
 form ==
-<p>{{input_prefix}} <span id="math-field2" style="font-size:14pt;padding: 0.2em;"></span></p>
-
-<input type="text" id="form_math" hidden=true>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
-<button type="button" class="btn btn-light btn-sm"><math><msqrt></msqrt></math></button>
-<div class="input-group">
+<p>{{input_prefix}} <div class="input-group">
 <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span>  <div class="input-group-append">
     <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
     <div class="dropdown-menu">
@@ -41,7 +36,12 @@ form ==
       <a class="dropdown-item" href="#">Separated link</a>
     </div>
   </div>
-</div>
+</div></p>
+
+<input type="text" id="form_math" hidden=true>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
+<button type="button" class="btn btn-light btn-sm"><math><msqrt></msqrt></math></button>
+
 ==
 
 
