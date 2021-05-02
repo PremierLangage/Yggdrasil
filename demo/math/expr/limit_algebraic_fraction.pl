@@ -25,7 +25,7 @@ input_prefix = $! \displaystyle {{ lim|latex }} = !$
 
 
 form ==
-<p>{{input_prefix}}
+{{input_prefix}}
 <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span> <div class="btn-group">
   <button class="btn btn-secondary btn-sm" type="button">
     Small split button
@@ -37,7 +37,7 @@ form ==
     ...
   </div>
 </div>
-</p>
+
 
 <input type="text" id="form_math" hidden=true>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
