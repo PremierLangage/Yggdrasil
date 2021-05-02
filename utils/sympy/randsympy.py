@@ -18,7 +18,12 @@ def sampleint(a, b, k, excval=[]):
 
 def randint_poly(d, nc, bound, var='x'):
     """
-    Generate a random polynomial with integer coefficients.
+    Return a random polynomial with integer coefficients.
+
+    d : degree
+    nc : number of nonzero coefficients
+    bound : bound on coefficient values
+    var : variable name
     """
     x = sp.Symbol(var)
     c = sampleint(-bound, bound, nc, [0])
@@ -29,7 +34,7 @@ def randint_poly(d, nc, bound, var='x'):
 
 def randint_matrix(n, p, bound, excluded_values=[], sparsity=0):
     """
-    Generate a random matrix with integer entries.
+    Return a random matrix with integer entries.
 
     n : number of rows
     p : number of columns
