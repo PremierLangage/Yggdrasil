@@ -19,11 +19,26 @@ score = 100
 feedback = "blabla"
 ==
 
+keypad % []
+
 form ==
-<p>{{input_prefix}} <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p>
+{{input_prefix}}
+<span id="math-field" style="min-width: 5em;font-size:14pt;padding: 0.2em;"></span>
+{% if keypad|length > 0 %}
+<button class="btn btn-sm btn-outline-primary" style="margin-left: 0.5em" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<math><msqrt><mi>x</mi></msqrt></math>
+</button>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+{% for item in keypad %}
+<button class="dropdown-item" onclick="mathField.cmd('{{ item[1] }}');mathField.focus()">{{ item[0] }}</a>
+{% endfor %}
+</div>
+{% endif %}
 
 <input type="text" id="form_math" hidden=true>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
+<button type="button" class="btn btn-light btn-sm"></button>
+
 ==
 
 
