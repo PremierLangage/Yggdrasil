@@ -25,14 +25,13 @@ input_prefix = $! \displaystyle {{ lim|latex }} = !$
 
 
 form ==
-<p>{{input_prefix}} <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span></p>
+<p>{{input_prefix}} <span id="math-field2" style="font-size:14pt;padding: 0.2em;"></span></p>
 
 <input type="text" id="form_math" hidden=true>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
 <button type="button" class="btn btn-light btn-sm"><math><msqrt></msqrt></math></button>
 <div class="input-group">
-  <input type="text" class="form-control" aria-label="Text input with dropdown button">
-  <div class="input-group-append">
+<span id="math-field" style="font-size:14pt;padding: 0.2em;"></span>  <div class="input-group-append">
     <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
