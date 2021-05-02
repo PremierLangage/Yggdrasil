@@ -31,8 +31,7 @@ form ==
     <span class="sr-only">Toggle Dropdown</span>
   </button>
   <div class="dropdown-menu">
-    <a class="dropdown-item" href="#"><math><msqrt>&nbsp;</msqrt></math></a>
-    <a class="dropdown-item" href="#">&#9854;</a>
+    <a class="dropdown-item" href="#" onclick="mathField.cmd('\\sqrt');;"><math><msqrt>&nbsp;</msqrt></math></a>
   </div>
 </div>
 
