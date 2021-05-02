@@ -8,7 +8,7 @@ def sampleint(a, b, k, excval=[]):
     # Le passage par des listes n'est pas super.
     bound = [a]
     bound.extend(sorted(excval))
-    bound.append(b)
+    bound.append(b+1)
     lst = []
     for i in range(len(bound)-1):
         lst.extend(list(range(bound[i], bound[i+1])))
