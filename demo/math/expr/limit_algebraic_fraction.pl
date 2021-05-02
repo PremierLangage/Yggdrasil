@@ -31,7 +31,7 @@ form ==
     <span class="sr-only">Toggle Dropdown</span>
   </button>
   <div class="dropdown-menu">
-    <a class="dropdown-item" onclick="mathField.cmd('\\sqrt');mathField.focus()">$! \infty !$</a>
+    <a class="dropdown-item" onclick="mathField.cmd('\\infty');mathField.focus()">$! \infty !$</a>
   </div>
 </div>
 
