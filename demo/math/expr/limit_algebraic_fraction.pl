@@ -26,15 +26,16 @@ input_prefix = $! \displaystyle {{ lim|latex }} = !$
 
 form ==
 {{input_prefix}}
-<span id="math-field" style="font-size:14pt;padding: 0.2em;"></span> 
-<div class="btn-group">
-  <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span id="math-field" style="font-size:14pt;padding: 0.2em;"></span>
+<div class="dropdown">
+  <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
    <i class="fas fa-square-root-alt"></i>
   </button>
-    <div class="dropdown-menu">
+  <div class="dropdown-menu">
     <a class="dropdown-item" onclick="mathField.cmd('\\infty');mathField.focus()">$! \infty !$</a>
   </div>
 </div>
+
 
 <input type="text" id="form_math" hidden=true>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
