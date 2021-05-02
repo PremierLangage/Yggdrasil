@@ -1,25 +1,18 @@
 import random as rd
 import sympy as sp
 
-
-# Complex numbers
-
-def randint_complex(bound):
+def sampleint(a, b, k, excval=[]):
     """
-    Generate a random complex number with integer coefficients.
+    Return a sample of random integers between two bounds (excluding some values).
     """
-    a,b=list_randint(2,-bound,bound,[0])
-    return sp.sympify(a+b*sp.I)
-
-# Intervals
-
-def rand_interval_type(a,b):
-    """
-    Generate an interval with random type of bounds.
-    """
-    bl=rd.choice([True,False])
-    br=rd.choice([True,False])
-    return sp.Interval(a,b,left_open=bl,right_open=br)
+    # Le passage par des listes n'est pas super.
+    bound = [a]
+    bound.extend(sorted(excval))
+    bound.append(b)
+    lst = []
+    for i in range(len(bound)-1):
+        lst.extend(list(range(bound[i], bound[i+1])))
+    return rd.sample(lst, k)
 
 # Polynomials
 
