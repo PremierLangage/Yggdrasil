@@ -23,4 +23,4 @@ Déterminer la limite suivante.
 
 input_prefix = $! \displaystyle {{ lim|latex }} = !$
 
-keypad % [["$! \\infty !$", "sqrt"], ["$! \\sum !$", "\\\\sum_{i=1}^n f(i)"]]
+keypad % [{"label": "$! \\infty !$", "action": "cmd(\\sqrt)"], ["surprise", "write(\\\\sum_{i=1}^n f(i))"]]
