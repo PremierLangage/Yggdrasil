@@ -27,11 +27,7 @@ input_prefix = $! \displaystyle {{ lim|latex }} = !$
 form ==
 
   <button class="btn btn-sm btn-outline-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-   <math>
- <msqrt>
-    <mi>x</mi>
-  </msqrt>
-</math>
+
   </button>
   <div class="dropdown-menu">
   </div>
@@ -40,7 +36,11 @@ form ==
 <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span>
 <div class="dropdown">
   <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown button
+       <math>
+ <msqrt>
+    <mi>x</mi>
+  </msqrt>
+</math>
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <button class="dropdown-item" onclick="mathField.cmd('\\infty');mathField.focus()">$! \infty !$</a>
