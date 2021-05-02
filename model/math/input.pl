@@ -6,7 +6,7 @@ input_prefix = Réponse :
 
 before =
 
-footerbefore ==
+footerbefore2 ==
 _keypad_ = []
 for item in ["+\\infty"]:
     _keypad_.append({"label": "$!"+ item +"!$", "action": "write", "value": item})
