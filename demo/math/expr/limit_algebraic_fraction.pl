@@ -29,7 +29,7 @@ form ==
 <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span> 
 <div class="btn-group">
   <button class="btn btn-outline-dark btn-sm" type="button">
-    Small split button
+   <i class="fas fa-square-root-alt"></i>
   </button>
   <button type="button" class="btn btn-sm btn-outline-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="sr-only">Toggle Dropdown</span>
@@ -38,7 +38,6 @@ form ==
     <a class="dropdown-item" onclick="mathField.cmd('\\infty');mathField.focus()">$! \infty !$</a>
   </div>
 </div>
-
 
 <input type="text" id="form_math" hidden=true>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
