@@ -28,12 +28,6 @@ form ==
 {{input_prefix}}
 <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span> 
 <div class="btn-group">
-  <button type="button" class="btn btn-sm btn-outline-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
-
-</div>
-<div class="btn-group">
   <button class="btn btn-outline-dark btn-sm" type="button">
     Small split button
   </button>
