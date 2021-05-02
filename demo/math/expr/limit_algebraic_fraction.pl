@@ -28,18 +28,13 @@ form ==
 
 {{input_prefix}}
 <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span>
-<div class="dropdown">
-  <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-       <math>
- <msqrt>
-    <mi>x</mi>
-  </msqrt>
-</math>
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <button class="dropdown-item" onclick="mathField.cmd('\\infty');mathField.focus()">$! \infty !$</a>
-  </div>
+<button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<math><msqrt><mi>x</mi></msqrt></math>
+</button>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+<button class="dropdown-item" onclick="mathField.cmd('\\infty');mathField.focus()">$! \infty !$</a>
 </div>
+
 
 <input type="text" id="form_math" hidden=true>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
