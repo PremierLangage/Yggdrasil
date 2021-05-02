@@ -28,18 +28,14 @@ form ==
 {{input_prefix}}
 <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span>
   <button class="btn btn-sm btn-outline-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-   <i class="bi bi-calculator"></i>
    <math>
-
  <msqrt>
     <mi>x</mi>
   </msqrt>
-
 </math>
-
   </button>
   <div class="dropdown-menu">
-    <a class="dropdown-item" onclick="mathField.cmd('\\infty');mathField.focus()">$! \infty !$</a>
+    <button class="dropdown-item" onclick="mathField.cmd('\\infty');mathField.focus()">$! \infty !$</a>
   </div>
 
 <input type="text" id="form_math" hidden=true>
