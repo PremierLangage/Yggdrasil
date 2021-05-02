@@ -23,7 +23,7 @@ Déterminer la limite suivante.
 
 input_prefix = $! \displaystyle {{ lim|latex }} = !$
 
-keypad % []
+keypad % [["$! infty !$", "\\infty"]]
 
 form ==
 
@@ -34,7 +34,9 @@ form ==
 <math><msqrt><mi>x</mi></msqrt></math>
 </button>
 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+{% for item in navigation %}
 <button class="dropdown-item" onclick="mathField.cmd('\\infty');mathField.focus()">$! \infty !$</a>
+{% endfor %}
 </div>
 {% endif %}
 
