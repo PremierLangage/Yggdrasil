@@ -23,4 +23,4 @@ Déterminer la limite suivante.
 
 input_prefix = $! \displaystyle {{ lim|latex }} = !$
 
-keypad % [{"label": "$! \\infty !$", "action": "cmd", "value": "\\sqrt"}, {"label": "surprise", "action": "write", "value": "\\\\overline{R}"}]
+keypad % [{"label": "$! +\\infty !$", "action": "write", "value": "+\\\\infty"}, {"label": "$! -\\infty !$", "action": "write", "value": "-\\\\infty"}]
