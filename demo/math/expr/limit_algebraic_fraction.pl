@@ -28,13 +28,10 @@ form ==
 {{input_prefix}}
 <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span> 
 <div class="btn-group">
-  <button class="btn btn-outline-dark btn-sm" type="button">
+  <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
    <i class="fas fa-square-root-alt"></i>
   </button>
-  <button type="button" class="btn btn-sm btn-outline-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
-  <div class="dropdown-menu">
+    <div class="dropdown-menu">
     <a class="dropdown-item" onclick="mathField.cmd('\\infty');mathField.focus()">$! \infty !$</a>
   </div>
 </div>
