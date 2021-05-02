@@ -34,8 +34,8 @@ form ==
 <math><msqrt><mi>x</mi></msqrt></math>
 </button>
 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-{% for item in navigation %}
-<button class="dropdown-item" onclick="mathField.cmd('\\infty');mathField.focus()">$! \infty !$</a>
+{% for item in keypad %}
+<button class="dropdown-item" onclick="mathField.cmd('{{ item[1] }}');mathField.focus()">{{ item[0] }}</a>
 {% endfor %}
 </div>
 {% endif %}
