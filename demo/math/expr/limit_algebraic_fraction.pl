@@ -25,7 +25,7 @@ input_prefix = $! \displaystyle {{ lim|latex }} = !$
 
 
 form ==
-<p>{{input_prefix}} <div class="input-group">
+<p>{{input_prefix}}
 <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span> <div class="btn-group">
   <button class="btn btn-secondary btn-sm" type="button">
     Small split button
