@@ -23,7 +23,7 @@ Déterminer la limite suivante.
 
 input_prefix = $! \displaystyle {{ lim|latex }} = !$
 
-keypad % [["$! infty !$", "\\infty"]]
+keypad % [["$! \infty !$", "\\infty"]]
 
 form ==
 
