@@ -27,7 +27,7 @@ input_prefix = $! \displaystyle {{ lim|latex }} = !$
 form ==
 {{input_prefix}}
 <span id="math-field" style="font-size:14pt;padding: 0.2em;"></span> <div class="btn-group">
-  <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button type="button" class="btn btn-sm btn-outline-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="sr-only">Toggle Dropdown</span>
   </button>
   <div class="dropdown-menu">
