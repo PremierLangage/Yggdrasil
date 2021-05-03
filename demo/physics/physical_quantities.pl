@@ -17,14 +17,14 @@ kelvin, mole, candela, newton, joule, watt, pascal, hertz, coulomb, volt, ohm
 from sympy.physics.units import Quantity
 from sympy.physics.units.systems.si import dimsys_SI, SI
 from latex2sympy import latex2sympy
-from evalsympy import arg_nested_mul
+from evalsympy import arg_flat_mul
 import sympy as sp
 
 def get_numeric_unit(expr):
     """
     Return the numerical part and the unit of a physical quantity.
     """
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     args_numeric = []
     args_quantity = []
     for a in args:
