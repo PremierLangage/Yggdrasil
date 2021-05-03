@@ -40,6 +40,12 @@ unit_dict = {'m': meter, 'g': gram, 'kg': kilogram, 's': second, 'A': ampere, 'K
 
 score = 100
 ans = latex2sympy(answers['math'], local_dict=unit_dict)
-
+num, unit = get_numeric_unit(ans)
+dim = dimsys_SI.get_dimensional_dependencies(SI.get_dimensional_expr(unit))
+feedback = f"""
+Partie numérique : {num} ;
+Unité : {unit} ;
+Dimension : {dim}
+"""
 ==
 
