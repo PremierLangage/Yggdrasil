@@ -17,6 +17,7 @@ kelvin, mole, candela, newton, joule, watt, pascal, hertz, coulomb, volt, ohm
 from sympy.physics.units import Quantity
 from sympy.physics.units.systems.si import dimsys_SI, SI
 from latex2sympy import latex2sympy
+from evalsympy import arg_nested_mul
 
 def get_numeric_unit(expr):
     """
