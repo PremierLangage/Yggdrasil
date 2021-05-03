@@ -18,6 +18,7 @@ from sympy.physics.units import Quantity
 from sympy.physics.units.systems.si import dimsys_SI, SI
 from latex2sympy import latex2sympy
 from evalsympy import arg_nested_mul
+import sympy as sp
 
 def get_numeric_unit(expr):
     """
