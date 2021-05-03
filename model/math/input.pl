@@ -6,13 +6,6 @@ input_prefix = Réponse :
 
 before =
 
-footerbefore2 ==
-_keypad_ = []
-for item in ["+\\infty"]:
-    _keypad_.append({"label": "$!"+ item +"!$", "action": "write", "value": item})
-keypad = _keypad_
-==
-
 text =
 
 title =
