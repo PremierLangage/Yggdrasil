@@ -39,7 +39,6 @@ def get_numeric_unit(expr):
 unit_dict = {'m': meter, 'g': gram, 'kg': kilogram, 's': second, 'A': ampere, 'K': kelvin, 'mol': mole, 'cd': candela, 'N': newton, 'J': joule, 'W': watt, 'Pa': pascal, 'Hz': hertz, 'C': coulomb, 'V': volt, 'Omega': ohm}
 
 score = 100
-ans = latex2sympy(answers['math'], local_dict=unit_dict)
 
 ==
 
