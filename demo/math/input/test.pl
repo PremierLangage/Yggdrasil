@@ -24,11 +24,6 @@ keypad % []
 form ==
 {{input_prefix}}
 <span id="fill-in-the-blank">\sqrt{ \MathQuillMathField{x}^2 + \MathQuillMathField{y}^2 }</span>
-<script>
-  var fillInTheBlank = MQ.StaticMath(document.getElementById('fill-in-the-blank'));
-  fillInTheBlank.innerFields[0].latex() // => 'x'
-  fillInTheBlank.innerFields[1].latex() // => 'y'
-</script>
 
 <span id="math-field" style="min-width: 5em;font-size:14pt;padding: 0.2em;"></span>
 {% if keypad|length > 0 %}
@@ -51,6 +46,15 @@ form ==
 # HACK : Ce script JS permet de modifier la liste des boutons de contrôle.
 extrajs ==
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
+
+<script>
+var MQ = MathQuill.getInterface(2);
+
+  var fillInTheBlank = MQ.StaticMath(document.getElementById('fill-in-the-blank'));
+  fillInTheBlank.innerFields[0].latex() // => 'x'
+  fillInTheBlank.innerFields[1].latex() // => 'y'
+</script>
+
 <script>
 var MQ = MathQuill.getInterface(2);
 var mathFieldSpan = document.getElementById('math-field');
