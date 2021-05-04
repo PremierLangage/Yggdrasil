@@ -58,7 +58,9 @@ if __name__ == "__main__":
 
     # build the key 'extracss' from the content of the key 'style'
     if 'style' in dic:
-        dic['extracss'] = "<style> %s </style>" % "\n".join(reversed(list(dic['style'].values())))
+        dic['extracss'] = "%s" % "\n".join(reversed(list(dic['style'].values())))
+    if 'js' in dic:
+        dic['extrajs'] = "%s" % "\n".join(reversed(list(dic['js'].values())))
 
     # HACK for components in lists
     aux_component(dic)
