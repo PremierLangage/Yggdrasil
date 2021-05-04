@@ -54,8 +54,12 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   });
 var mathFieldSpan = document.getElementById('math-field');
 var latexSpan = document.getElementById('form_math');
+{% if input_embed|len > 0 %}
 var mathField = MQ.StaticMath(mathFieldSpan)
-//mathField.latex("{{ prev_value }}");
+{% else %}
+var mathField = MQ.StaticMath(mathFieldSpan)
+mathField.latex("{{ prev_value }}");
+{% endif %}
 </script>
 <script>
     function onReadyPL(nodes) {
