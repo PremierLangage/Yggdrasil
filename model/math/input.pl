@@ -60,9 +60,9 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
 var mathFieldSpan = document.getElementById('math-field');
 var latexSpan = document.getElementById('form_math');
 {% if input_embed|length > 0 %}
-var mathField = MQ.StaticMath(mathFieldSpan)
+var mathField = MQ.StaticMath(mathFieldSpan);
 {% else %}
-var mathField = MQ.MathField(mathFieldSpan)
+var mathField = MQ.MathField(mathFieldSpan);
 mathField.latex("{{ prev_value }}");
 {% endif %}
 </script>
