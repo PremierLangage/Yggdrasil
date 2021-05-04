@@ -25,7 +25,7 @@ input_embed = \ln{\MathQuillMathField{ }}
 
 form ==
 {{input_prefix}}
-{% if input_embed|len > 0 %}
+{% if input_embed|length > 0 %}
 <span id="math-field"> {{ input_embed }}</span>
 {% else %}
 <span id="math-field" style="min-width: 5em;font-size:14pt;padding: 0.2em;">\sum_{i=\MathQuillMathField{?}}^{\MathQuillMathField{?}}</span>
@@ -61,7 +61,7 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   });
 var mathFieldSpan = document.getElementById('math-field');
 var latexSpan = document.getElementById('form_math');
-{% if input_embed|len > 0 %}
+{% if input_embed|length > 0 %}
 var mathField = MQ.StaticMath(mathFieldSpan)
 {% else %}
 var mathField = MQ.MathField(mathFieldSpan)
@@ -94,7 +94,7 @@ mathField.latex("{{ prev_value }}");
     }
 
     function onBeforeSubmitPL() {
-    {% if input_embed|len > 0 %}
+    {% if input_embed|length > 0 %}
     latexSpan.value = mathField.innerFields[0].latex();
     {% else %}
     latexSpan.value = mathField.latex();
