@@ -83,7 +83,11 @@ var mathField = MQ.StaticMath(mathFieldSpan)
     }
 
     function onBeforeSubmitPL() {
+    {% if input_embed|len > 0 %}
     latexSpan.value = mathField.innerFields[0].latex();
+    {% else %}
+    latexSpan.value = mathField.latex();
+    {% endif %}
     return true;
 }
 </script>
