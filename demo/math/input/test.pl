@@ -23,7 +23,7 @@ keypad % []
 
 form ==
 {{input_prefix}}
-<span id="fill-in-the-blank">\sqrt{ \MathQuillMathField{x}^2 + \MathQuillMathField{y}^2 }</span>
+<span id="fill-in-the-blank">\sum_{i=\MathQuillMathField{?}}^{\MathQuillMathField{?}}</span>
 
 <span id="math-field" style="min-width: 5em;font-size:14pt;padding: 0.2em;"></span>
 {% if keypad|length > 0 %}
