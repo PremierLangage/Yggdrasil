@@ -47,6 +47,7 @@ style.svg ==
 </style>
 ==
 
+# HACK : Ce script JS permet de modifier la liste des boutons de contrôle.
 javascript.buttons ==
 <script>
     function onReadyPL(nodes) {
