@@ -21,6 +21,7 @@ feedback = "blabla"
 
 keypad % []
 
+input_embed =
 
 input_embed2 = \ln \left(\MathQuillMathField{ }\right)
 
