@@ -1,12 +1,8 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /model/math/expr.pl
 
 title = Transformation d'écritures avec racine carrée
 
-lang = fr
-
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input1.config = keyboards_JSON
 
 if param['form']=="p sqrt(q)":
     p=randint(2,5)
@@ -29,20 +25,4 @@ text==
 Ecrire $% {{expr}} %$ sous la forme  $% \sqrt{a} %$, où $% a %$ est un entier.
 ==
 
-evaluator== #|python|
-try:
-    ans=str2expr(input1.value)
-    if type(ans)!=sp.Pow or ans.args[1]!=Rational(1,2):
-        grade=(-1,"Votre réponse n'est pas sous la forme attendue")
-    elif ans.args[0]==a:
-            grade=(100,"")
-    else:
-            grade=(0,"")
-except:
-    grade=(-1,"Votre réponse n'est pas sous la forme attendue")
-score,feedback=grade
-==
-
-
-
-
+input_embed = \sqrt{\MathQuillMathField{ }}
