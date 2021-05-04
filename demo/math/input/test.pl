@@ -23,9 +23,9 @@ keypad % []
 
 form ==
 {{input_prefix}}
-<span id="fill-in-the-blank">\sum_{i=\MathQuillMathField{?}}^{\MathQuillMathField{?}}</span>
+<span id="fill-in-the-blank"></span>
 
-<span id="math-field" style="min-width: 5em;font-size:14pt;padding: 0.2em;"></span>
+<span id="math-field" style="min-width: 5em;font-size:14pt;padding: 0.2em;">\sum_{i=\MathQuillMathField{?}}^{\MathQuillMathField{?}}</span>
 {% if keypad|length > 0 %}
   <button type="button" class="btn btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 <math><msqrt><mi>x</mi></msqrt></math>
