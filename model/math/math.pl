@@ -46,3 +46,31 @@ style.svg ==
 }
 </style>
 ==
+
+javascript.buttons ==
+<script>
+    function onReadyPL(nodes) {
+        const actions = nodes.actions;
+        actions.find('.action-save').hide();
+        actions.find('.action-reset').hide();
+        actions.find('.action-next').hide();
+
+        const { origin, pathname }  = document.location;
+        const link = origin + pathname;
+
+        const buttons = actions.find('.btn-group');
+
+        {% if "reroll" in internals.buttons %}
+        buttons.append(`
+            <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
+                <i class="fas fa-dice"></i> Nouveau tirage
+            </a>
+        `);
+        {% endif %}
+        
+        {% if not "submit" in internals.buttons %}
+        actions.find('.action-submit').hide();
+        {% endif %}
+    }
+</script>
+==
