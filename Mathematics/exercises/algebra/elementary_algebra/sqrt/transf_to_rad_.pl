@@ -21,8 +21,8 @@ elif param['form']=="p sqrt(q)/sqrt(r)":
     expr=r"%d \frac{ \sqrt{ %d } }{ \sqrt{ %d } }" % (p,q,r)
 ==
 
-text==
-Ecrire $% {{expr}} %$ sous la forme  $% \sqrt{a} %$, où $% a %$ est un entier.
+text ==
+Ecrire $ {{expr}} !$ sous la forme  $% \sqrt{a} %$, où $% a %$ est un entier.
 ==
 
 input_embed = \sqrt{\MathQuillMathField{ }}
