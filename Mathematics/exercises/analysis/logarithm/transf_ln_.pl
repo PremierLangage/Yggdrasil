@@ -4,7 +4,7 @@ title = Transformation d'expressions avec logarithmes
 
 
 before ==
-p,q=list_randint_norep(2,2,5)
+p,q=sampleint(2,5, 2)
 formula=choice(eval(param['formulas']))
 if formula=="u*ln(p)":
     u=randint(2,4)
