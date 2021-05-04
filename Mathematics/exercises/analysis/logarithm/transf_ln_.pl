@@ -42,7 +42,7 @@ elif formula=="u*ln(p)-vln(q)":
 ==
 
 text ==
-Ecrire $% {{expr}} %$ sous la forme  $% \ln(a)%$, où $%a%$ est un nombre.
+Ecrire l'expression suivante sous la forme  $% \ln(a)%$, où $%a%$ est un nombre.
 ==
 
 
