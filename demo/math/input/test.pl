@@ -52,7 +52,12 @@ extrajs ==
 var MQ = MathQuill.getInterface(2);
 var mathFieldSpan = document.getElementById('math-field');
 var latexSpan = document.getElementById('form_math');
-var mathField = MQ.StaticMath(mathFieldSpan)
+var mathField = MQ.StaticMath(mathFieldSpan), {
+  charsThatBreakOutOfSupSub: '+-=<>',
+  autoCommands: 'pi theta sqrt sum infty infin emptyset alpha textS',
+  autoOperatorNames: 'sin cos ln exp lol Hz',
+  }
+});
 </script>
 <script>
     function onReadyPL(nodes) {
