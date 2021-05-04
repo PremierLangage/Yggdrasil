@@ -22,7 +22,6 @@ elif param['form']=="p sqrt(q)/sqrt(r)":
 ==
 
 text ==
-Ecrire $ {{expr}} !$ sous la forme  $% \sqrt{a} %$, où $% a %$ est un entier.
+Ecrire $! {{expr}} !$ sous la forme  $% \sqrt{a} %$, où $% a %$ est un entier.
 ==
 
-input_embed = \sqrt{\MathQuillMathField{ }}
