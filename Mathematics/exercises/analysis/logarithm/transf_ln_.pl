@@ -1,26 +1,11 @@
-extends = /model/mathquill.pl
+extends = /model/math/expr.pl
 
 title = Transformation d'expressions avec logarithmes
 
 
-lang = fr
-
-extracss == #|html| 
-<style>
-.fcontainer {
-    display: flex;
-    align-items: center;
-}
-c-math-input {
-    //display: inline-block;
-    width: 100%;
-}
-</style>
-==
-
 before ==
 p,q=list_randint_norep(2,2,5)
-formula=randitem(eval(param['formulas']))
+formula=choice(eval(param['formulas']))
 if formula=="u*ln(p)":
     u=randint(2,4)
     sol=p**u
@@ -34,23 +19,23 @@ elif formula=="ln(p)+ln(q)":
     expr="\ln(%d) + \ln(%d)" % (p,q)
 elif formula=="ln(p)-ln(q)":
     sol=p/q
-    expr=randitem(["\ln( %(p)s ) - \ln( %(q)s )","-\ln( %(q)s ) + \ln( %(p)s )"]) % {"p":p,"q":q}
+    expr=choice(["\ln( %(p)s ) - \ln( %(q)s )","-\ln( %(q)s ) + \ln( %(p)s )"]) % {"p":p,"q":q}
 elif formula=="u*ln(p)+ln(q)":
-    u,v=list_randitem_norep(2,[1,randint(2,4)])
+    u,v=sample([1,randint(2,4)],2)
     sol=p**u*q
     expr="%d \ln(%d)+\ln(%d)" % (u,p,q)
 elif formula=="u*ln(p)-ln(q)":
-    s1,s2=list_randitem_norep(2,[-1,1])
-    u,v=list_randitem_norep(2,[s1*1,s2*randint(2,4)])
+    s1,s2=sample(2,[-1,1])
+    u,v=sample([s1*1,s2*randint(2,4)], 2)
     sol=p**u*q**v
     expr=latex(u*ln(p)+v*ln(q))
 elif formula=="u*ln(p)+vln(q)":
-    u,v=list_randint_norep(2,2,4)
+    u,v=sampleint(2, 4, 2)
     sol=p**u*q**v
     expr="%d \ln(%d)+%d \ln(%d)" % (u,p,v,q)
 elif formula=="u*ln(p)-vln(q)":
-    s1,s2=list_randitem_norep(2,[-1,1])
-    u,v=list_randint_norep(2,2,4)
+    s1,s2=sample(2,[-1,1])
+    u,v=sampleint(2, 4, 2)
     u,v=s1*u,s2*v
     sol=p**u*q**v
     expr="%d \ln(%d)+%d \ln(%d)" % (u,p,v,q)
@@ -60,27 +45,17 @@ text ==
 Ecrire $% {{expr}} %$ sous la forme  $% \ln(a)%$, où $%a%$ est un nombre.
 ==
 
-evaluator==
-def eval_ans(strans,sol):
-    try:
-        ans = latex2sympy(strans)
-    except:
-        return (-1, "WrongForm")
-    if type(ans)!=sp.log:
-        return (-1, "WrongForm")
-    if not equal(ans.args[0],sol):
-        return (0, "NotEqual")
-    return (100, "Success")
 
-score, error = eval_ans(input.value, sol)
-==
+input_prefix = $! {{expr}} = !$
+
+input_embed = \ln \left(\MathQuillMathField{ }\right)
 
 wims ==
 
 
 \if{\type=9}{
 \text{typerep=algexp}
-\text{expr=randitem(ln(\p)+\q,\q+ln(\p))}
+\text{expr=choice(ln(\p)+\q,\q+ln(\p))}
 \text{a=simplify(\p*exp(\q))}
 }
 \if{\type=10}{
@@ -88,13 +63,13 @@ wims ==
 \text{l1=shuffle(-1,1)}
 \integer{s1=\l1[1]}
 \integer{s2=\l1[2]}
-\text{expr=randitem(\s1*ln(\p)+\s2*\q,\s2*\q+\s1*ln(\p))}
+\text{expr=choice(\s1*ln(\p)+\s2*\q,\s2*\q+\s1*ln(\p))}
 \text{a=simplify(exp(\expr))}
 }
 \if{\type=11}{
 \text{typerep=algexp}
 \text{u=randint(2..4)}
-\text{expr=randitem(\u*ln(\p)+\q,\q+\u*ln(\p))}
+\text{expr=choice(\u*ln(\p)+\q,\q+\u*ln(\p))}
 \text{a=simplify(\p^(\u)*exp(\q))}
 }
 \if{\type=12}{
@@ -103,7 +78,7 @@ wims ==
 \text{l1=shuffle(-1,1)}
 \integer{s1=\l1[1]}
 \integer{s2=\l1[2]}
-\text{expr=randitem(\s1*\u*ln(\p)+\s2*\q,\s2*\q+\s1*\u*ln(\p))}
+\text{expr=choice(\s1*\u*ln(\p)+\s2*\q,\s2*\q+\s1*\u*ln(\p))}
 \text{a=simplify(exp(\expr))}
 }
 
