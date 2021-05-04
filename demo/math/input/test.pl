@@ -59,14 +59,10 @@ var MQ = MathQuill.getInterface(2);
 var MQ = MathQuill.getInterface(2);
 var mathFieldSpan = document.getElementById('math-field');
 var latexSpan = document.getElementById('form_math');
-var mathField = MQ.MathField(mathFieldSpan, {
+var mathField = MQ.StaticMath(mathFieldSpan, {
   charsThatBreakOutOfSupSub: '+-=<>',
   autoCommands: 'pi theta sqrt sum infty infin emptyset alpha textS',
   autoOperatorNames: 'sin cos ln exp lol Hz',
-  handlers: {
-    edit: function() { // useful event handlers
-      latexSpan.value = mathField.latex(); // simple API
-    }
   }
 });
 mathField.latex("{{ prev_value }}");
@@ -97,7 +93,7 @@ mathField.latex("{{ prev_value }}");
     }
 
     function onBeforeSubmitPL() {
-    latexSpan.value = mathField.latex();
+    latexSpan.value = mathField.innerFields[0].latex();
     return true;
 }
 </script>
