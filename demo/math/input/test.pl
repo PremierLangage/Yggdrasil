@@ -57,7 +57,7 @@ var latexSpan = document.getElementById('form_math');
 {% if input_embed|len > 0 %}
 var mathField = MQ.StaticMath(mathFieldSpan)
 {% else %}
-var mathField = MQ.StaticMath(mathFieldSpan)
+var mathField = MQ.MathField(mathFieldSpan)
 mathField.latex("{{ prev_value }}");
 {% endif %}
 </script>
