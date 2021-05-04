@@ -47,25 +47,12 @@ form ==
 extrajs ==
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
 
-<script>
-var MQ = MathQuill.getInterface(2);
-
-  var fillInTheBlank = MQ.StaticMath(document.getElementById('fill-in-the-blank'));
-  fillInTheBlank.innerFields[0].latex() // => 'x'
-  fillInTheBlank.innerFields[1].latex() // => 'y'
-</script>
 
 <script>
 var MQ = MathQuill.getInterface(2);
 var mathFieldSpan = document.getElementById('math-field');
 var latexSpan = document.getElementById('form_math');
-var mathField = MQ.StaticMath(mathFieldSpan, {
-  charsThatBreakOutOfSupSub: '+-=<>',
-  autoCommands: 'pi theta sqrt sum infty infin emptyset alpha textS',
-  autoOperatorNames: 'sin cos ln exp lol Hz',
-  }
-});
-mathField.latex("{{ prev_value }}");
+var mathField = MQ.StaticMath(mathFieldSpan)
 </script>
 <script>
     function onReadyPL(nodes) {
