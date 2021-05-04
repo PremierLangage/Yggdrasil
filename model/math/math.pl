@@ -25,6 +25,7 @@ from latex2sympy import latex2sympy
 ==
 
 style.svg ==
+<style>
 .img-container {
     width: 60%;
     margin: auto;
@@ -43,4 +44,5 @@ style.svg ==
         margin: auto;
     }
 }
+</style>
 ==
