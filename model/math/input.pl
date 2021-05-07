@@ -66,7 +66,6 @@ javascript.mathquill ==
    },
   startup: {
     pageReady: () => {
-      mathField.reflow();
       return MathJax.startup.defaultPageReady();
     }
   }
