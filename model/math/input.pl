@@ -54,7 +54,7 @@ javascript.mathquill ==
 <script>
 MathJax = {
   tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
+    inlineMath: [['$', '$'], ['$!', '!$']]
   }
 };
 </script>
