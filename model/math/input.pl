@@ -71,6 +71,7 @@ window.MathJax = {
         console.log('MathJax initial typesetting complete');
       });
     }
+  }
  };
 </script>
 
