@@ -59,7 +59,7 @@ style.mathquill ==
 javascript.mathquill ==
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 
-<script id="MathJax-script" async
+<script id="MathJax-script" 
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
 <script>
@@ -68,7 +68,6 @@ MathJax = {
     inlineMath: [['$', '$'], ['$!', '!$']]
   }
 };
-mathField.reflow();
 </script>
         
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
