@@ -99,7 +99,6 @@ return true;
 
 <script>
     function onReadyPL(nodes) {
-        mathField.reflow();
         const actions = nodes.actions;
         actions.find('.action-save').hide();
         actions.find('.action-reset').hide();
@@ -121,6 +120,7 @@ return true;
         {% if not "submit" in internals.buttons %}
         actions.find('.action-submit').hide();
         {% endif %}
+        mathField.reflow();
 
     }
 </script>
