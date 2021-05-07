@@ -36,7 +36,7 @@ form ==
   <button type="button" class="btn btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 <math><msqrt><mi>x</mi></msqrt></math>
   </button>
-  <div class="dropdown-menu">
+  <div class="dropdown-menu" style="max-width: 10em;">
 {% for item in keypad %}
 <button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
 {% endfor %}
