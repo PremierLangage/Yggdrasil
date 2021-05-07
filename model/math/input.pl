@@ -75,8 +75,6 @@ latexSpan.value = mathField.innerFields[0].latex();
 {% else %}
 latexSpan.value = mathField.latex();
 {% endif %}
-prefix.reflow();
-mathField.reflow();
 return true;
 }
 </script>
