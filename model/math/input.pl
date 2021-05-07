@@ -66,8 +66,10 @@ window.MathJax = {
    },
   startup: {
     ready: () => {
-    return true;
-      mathField.reflow();
+      MathJax.startup.defaultReady();
+      MathJax.startup.promise.then(() => {
+        console.log('MathJax initial typesetting complete');
+      });
     }
   }
  };
