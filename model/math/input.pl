@@ -56,6 +56,8 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   autoOperatorNames: 'sin cos ln exp lol Hz',
   });
 var mathFieldSpan = document.getElementById('math-field');
+var prefixSpan = document.getElementById('prefix');
+var prefix = MQ.StaticMath(prefixSpan);
 var latexSpan = document.getElementById('form_math');
 {% if input_embed|length > 0 %}
 var mathField = MQ.StaticMath(mathFieldSpan);
