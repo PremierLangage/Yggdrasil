@@ -72,6 +72,8 @@ javascript.buttons ==
         {% if not "submit" in internals.buttons %}
         actions.find('.action-submit').hide();
         {% endif %}
+        prefix.reflow();
+mathField.reflow();
     }
 </script>
 ==
