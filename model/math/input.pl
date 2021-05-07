@@ -63,13 +63,7 @@ javascript.mathquill ==
 window.MathJax = {
    tex: {
      inlineMath: [['$', '$'], ['$!', '!$']]
-   },
-  startup: {
-    ready: () => {
-      MathJax.startup.defaultReady();
-
-    }
-  }
+   }
  };
 </script>
 
