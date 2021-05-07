@@ -46,14 +46,16 @@ form ==
 <input type="text" id="form_math" hidden=true>
 
 
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown button
+<div class="btn-group">
+  <button type="button" class="btn btn-sm btn-outline-primary" style="margin-left: 0.5em" data-bs-toggle="dropdown" aria-expanded="false">
+<math><msqrt><mi>x</mi></msqrt></math>
   </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li>
+{% for item in keypad %}
+<button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
+{% endfor %}
+    </li>
   </ul>
 </div>
 ==
