@@ -25,7 +25,7 @@ input_embed =
 
 form ==
 {{input_prefix}}
-{% if input_embed|length > 0 %}
+{% if input_embed|length > 1 %}
 <span id="math-field"> {{ input_embed }}</span>
 {% else %}
 <span id="math-field" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></span>
