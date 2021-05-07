@@ -65,7 +65,7 @@ window.MathJax = {
      inlineMath: [['$', '$'], ['$!', '!$']]
    },
   startup: {
-    ready: () => {
+    pageReady: () => {
       mathField.reflow();
       MathJax.startup.defaultReady();
     }
