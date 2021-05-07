@@ -38,16 +38,10 @@ form ==
 <math><msqrt><mi>x</mi></msqrt></math>
   </button>
   <div class="dropdown-menu dropdown-menu-end" style="max-width: 200px;">
-
-</div>
-
-  <ul class="dropdown-menu dropdown-menu-end" style="width: 10px;">
-    <li>
 {% for item in keypad %}
 <button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
 {% endfor %}
-    </li>
-  </ul>
+</div>
 </div>
 {% endif %}
 
