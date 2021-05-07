@@ -26,7 +26,7 @@ input_embed =
 input_prefix = 
 
 form ==
-{{ input_prefix }} <span id="prefix">  </span>
+{{ input_prefix }}
 {% if input_embed|length > 1 %}
 <span id="math-field"> {{ input_embed }}</span>
 {% else %}
@@ -52,7 +52,6 @@ form ==
 ==
 
 style.mathquill ==
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.9/dist/katex.min.css" integrity="sha384-r/BYDnh2ViiCwqZt5VJVWuADDic3NnnTIEOv4hOh05nSfB6tjWpKmn1kUHOVkMXc" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 ==
@@ -78,8 +77,6 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   autoOperatorNames: 'sin cos ln exp lol Hz',
   });
 var mathFieldSpan = document.getElementById('math-field');
-var prefixSpan = document.getElementById('prefix');
-var prefix = MQ.StaticMath(prefixSpan);
 var latexSpan = document.getElementById('form_math');
 {% if input_embed|length > 0 %}
 var mathField = MQ.StaticMath(mathFieldSpan);
