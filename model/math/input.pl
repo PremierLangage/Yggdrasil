@@ -66,9 +66,8 @@ window.MathJax = {
    },
   startup: {
     ready: () => {
-      console.log('MathJax is loaded, but not yet initialized');
+      mathField.reflow();
       MathJax.startup.defaultReady();
-      console.log('MathJax is initialized, and the initial typeset is queued');
     }
   }
  };
