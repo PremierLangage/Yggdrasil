@@ -23,8 +23,9 @@ keypad % []
 
 input_embed =
 
+input_prefix = X^2
 form ==
-<span id="prefix">x^2</span>
+<span id="prefix"> {{ input_prefix }} </span>
 {% if input_embed|length > 1 %}
 <span id="math-field"> {{ input_embed }}</span>
 {% else %}
