@@ -59,10 +59,12 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
 var mathFieldSpan = document.getElementById('math-field');
 var prefixSpan = document.getElementById('prefix');
 var prefix = MQ.StaticMath(prefixSpan);
+prefix.reflow();
 var latexSpan = document.getElementById('form_math');
 {% if input_embed|length > 0 %}
 var mathField = MQ.StaticMath(mathFieldSpan);
 mathField.innerFields[0].latex("{{ prev_value }}");
+mathField.reflow();
 {% else %}
 var mathField = MQ.MathField(mathFieldSpan);
 mathField.latex("{{ prev_value }}");
