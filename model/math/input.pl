@@ -62,6 +62,13 @@ javascript.mathquill ==
 <script id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['$!', '!$']]
+  }
+};
+</script>
         
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
 <script>
