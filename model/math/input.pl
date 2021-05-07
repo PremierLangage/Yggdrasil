@@ -38,7 +38,7 @@ form ==
   </button>
   <div class="dropdown-menu">
 {% for item in keypad %}
-<button class="btn btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
+<button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
 {% endfor %}
   </div>
 {% endif %}
