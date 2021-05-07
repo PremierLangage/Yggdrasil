@@ -63,12 +63,6 @@ javascript.mathquill ==
  MathJax = {
    tex: {
      inlineMath: [['$', '$'], ['$!', '!$']]
-   },
-  startup: {
-    pageReady: () => {
-          mathField.reflow();
-    }
-  }
    }
  };
 </script>
