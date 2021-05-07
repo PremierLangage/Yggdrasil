@@ -101,7 +101,7 @@ return true;
         {% if not "submit" in internals.buttons %}
         actions.find('.action-submit').hide();
         {% endif %}
-                prefix.reflow();
+        prefix.reflow();
         mathField.reflow();
     }
 </script>
