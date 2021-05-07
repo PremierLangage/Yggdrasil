@@ -102,7 +102,6 @@ return true;
 
 <script>
     function onReadyPL(nodes) {
-            prefix.reflow();
         mathField.reflow();
         const actions = nodes.actions;
         actions.find('.action-save').hide();
