@@ -67,6 +67,9 @@ javascript.mathquill ==
         }
     });
 </script>
+<script type="text/javascript" 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+        async></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
 <script>
