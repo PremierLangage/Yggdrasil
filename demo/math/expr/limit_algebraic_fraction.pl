@@ -21,6 +21,6 @@ text ==
 Déterminer la limite suivante.
 ==
 
-input_prefix = $ \displaystyle {{ lim|latex }} = $
+input_prefix = $$ {{ lim|latex }} = $$
 
 keypad % [{"label": "$! +\\infty !$", "action": "write", "value": "+\\\\infty"}, {"label": "$! -\\infty !$", "action": "write", "value": "-\\\\infty"}]
