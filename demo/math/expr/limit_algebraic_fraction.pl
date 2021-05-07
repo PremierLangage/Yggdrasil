@@ -18,7 +18,7 @@ sol = lim.doit()
 ==
 
 text ==
-Déterminer la limite suivante. $ x^2 $
+Déterminer la limite suivante.
 ==
 
 input_prefix = $ \displaystyle {{ lim|latex }} = $
