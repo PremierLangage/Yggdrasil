@@ -23,8 +23,6 @@ keypad % []
 
 input_embed =
 
-input_embed2 = \ln \left(\MathQuillMathField{ }\right)
-
 form ==
 {{input_prefix}}
 {% if input_embed|length > 0 %}
