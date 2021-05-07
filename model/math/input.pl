@@ -121,7 +121,6 @@ return true;
         actions.find('.action-submit').hide();
         {% endif %}
         mathField.reflow();
-
     }
 </script>
 ==
