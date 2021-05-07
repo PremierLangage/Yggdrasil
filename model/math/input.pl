@@ -67,9 +67,7 @@ window.MathJax = {
   startup: {
     ready: () => {
       MathJax.startup.defaultReady();
-      MathJax.startup.promise.then(() => {
-        console.log('MathJax initial typesetting complete');
-      });
+
     }
   }
  };
