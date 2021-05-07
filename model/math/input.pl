@@ -37,6 +37,10 @@ form ==
   <button type="button" class="btn btn-sm btn-outline-primary" style="margin-left: 0.5em" data-bs-toggle="dropdown" aria-expanded="false">
 <math><msqrt><mi>x</mi></msqrt></math>
   </button>
+  <div class="dropdown-menu dropdown-menu-end" style="max-width: 200px;">
+
+</div>
+
   <ul class="dropdown-menu dropdown-menu-end" style="width: 10px;">
     <li>
 {% for item in keypad %}
