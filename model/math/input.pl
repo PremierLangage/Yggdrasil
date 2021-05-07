@@ -67,7 +67,6 @@ window.MathJax = {
   startup: {
     pageReady: () => {
       mathField.reflow();
-      MathJax.startup.defaultReady();
     }
   }
  };
