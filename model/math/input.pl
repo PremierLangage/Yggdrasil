@@ -72,6 +72,7 @@ window.MathJax = {
       });
     }
   }
+  }
  };
 </script>
 
