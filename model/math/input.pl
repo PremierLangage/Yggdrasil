@@ -28,7 +28,7 @@ form ==
 {% if input_embed|length > 0 %}
 <span id="math-field"> {{ input_embed }}</span>
 {% else %}
-<span id="math-field" style="min-width: 5em;font-size:14pt;padding: 0.2em;"></span>
+<span id="math-field" style="font-size:14pt;padding: 0.2em;"></span>
 {% endif %}
 {% if keypad|length > 0 %}
   <button type="button" class="btn btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
