@@ -24,7 +24,7 @@ keypad % []
 input_embed =
 
 form ==
-<span id="prefix">{{input_prefix}}</span>
+<span id="prefix">{{ input_prefix }}</span>
 {% if input_embed|length > 1 %}
 <span id="math-field"> {{ input_embed }}</span>
 {% else %}
