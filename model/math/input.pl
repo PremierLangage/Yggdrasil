@@ -68,6 +68,7 @@ MathJax = {
     inlineMath: [['$', '$'], ['$!', '!$']]
   }
 };
+mathField.reflow();
 </script>
         
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
