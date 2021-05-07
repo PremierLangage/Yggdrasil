@@ -79,11 +79,6 @@ latexSpan.value = mathField.latex();
 return true;
 }
 </script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.9/dist/katex.min.css" integrity="sha384-r/BYDnh2ViiCwqZt5VJVWuADDic3NnnTIEOv4hOh05nSfB6tjWpKmn1kUHOVkMXc" crossorigin="anonymous">
-<script type="module">
-    import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.13.9/dist/contrib/auto-render.mjs";
-    renderMathInElement(document.body);
-</script>
 
 <script>
     function onReadyPL(nodes) {
