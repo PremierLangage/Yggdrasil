@@ -56,8 +56,8 @@ modal ==
 
 linksolution ==
 <p>
-  <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    + Solution
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Link with href
   </a>
 </p>
 <div class="collapse" id="collapseExample">
