@@ -112,6 +112,9 @@ return true;
         {% if not "submit" in internals.buttons %}
         actions.find('.action-submit').hide();
         {% endif %}
+        {% if input_embed|length > 0 %}
+        mathField.reflow();
+        {% endif %}
     }
 </script>
 ==
