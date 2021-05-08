@@ -56,7 +56,6 @@ modal ==
 ==
 
 linksolution ==
-
 <br><br>
 <p>
 <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -80,23 +79,22 @@ form ==
 <span id="math-field" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></span>
 {% endif %}
 {% if keypad|length > 0 %}
+
 <div class="btn-group">
-  <button type="button" class="btn btn-sm btn-outline-primary" style="margin-left: 0.5em" data-bs-toggle="dropdown" aria-expanded="false">
+  <button type="button" class="btn btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 <math><msqrt><mi>x</mi></msqrt></math>
   </button>
-  <div class="dropdown-menu dropdown-menu-end" style="max-width: 100px;">
+<div class="dropdown-menu dropdown-menu-end" style="max-width: 100px;">
 {% for item in keypad %}
 <button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
 {% endfor %}
 </div>
 </div>
+</div>
 {% endif %}
-
 <input type="text" id="form_math" hidden=true>
-
-
-
 ==
+
 old ==
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 
