@@ -103,10 +103,10 @@ style.mathquill ==
 javascript.mathquill ==
 <script>
 function onAfterSubmitPL(nodes) {
-    {% if score >= 0 %}
-        var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {backdrop: false});
+{% if score >= 0 %}
+var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {backdrop: false});
 myModal.show();
-    {% endif %} 
+{% endif %} 
 }
 </script>
 
@@ -167,7 +167,7 @@ return true;
         {% endif %}
         {% if score == -1 %}
         var exampleEl = document.getElementById('math-field');
-        var popover = new bootstrap.Popover(exampleEl, {content: "{{ feedback }}", trigger: "focus"});
+        var popover = new bootstrap.Popover(exampleEl, {content: "{{ feedback }}", container: 'mathFieldSpan', trigger: "focus"});
         //popover.show();
         {% endif %}
 
