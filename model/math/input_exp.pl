@@ -60,9 +60,10 @@ style.mathquill ==
 javascript.mathquill ==
 <script>
     function onAfterSubmitPL(nodes) {
-        var myModal = new bootstrap.Modal(document.getElementById('myModal'), {
-  keyboard: false
+        var myModal = new bootstrap.Modal(document.getElementById('myModal'), {keyboard: false
 });
+myModal.show()
+
 
     }
 </script>
