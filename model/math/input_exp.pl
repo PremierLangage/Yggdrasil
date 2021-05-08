@@ -29,7 +29,7 @@ modal ==
 {%- endmacro %}
 {% macro modalclass(score) -%}
     {% if score == 100 %}
-        altert-success
+        alert-success
     {% else %}
         alert-danger
     {% endif %}  
