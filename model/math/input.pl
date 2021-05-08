@@ -25,6 +25,36 @@ input_embed =
 
 input_prefix = 
 
+modal ==
+{% macro modaltext(score) -%}
+    {% if score == 100 %}
+        Bonne réponse !
+    {% else %}
+        Mauvaise réponse !
+    {% endif %}    
+{%- endmacro %}
+{% macro modalclass(score) -%}
+    {% if score == 100 %}
+        alert-success
+    {% else %}
+        alert-danger
+    {% endif %}  
+{%- endmacro %}
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog {{ modalclass(score) }}">
+    <div class="modal-content">
+      <div class="modal-header {{ modalclass(score) }}">
+        <h5 class="modal-title" id="staticBackdropLabel"> 
+        {{ modaltext(score) }} 
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+</div>
+==
+
+
 form ==
 {{ input_prefix }}
 {% if input_embed|length > 1 %}
