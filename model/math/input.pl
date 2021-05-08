@@ -176,8 +176,6 @@ return true;
 </script>
 ==
 
-settings.feedback = rightwrong
-
 settings.maxattempt % 1
 
 extends = messages_math.pl
