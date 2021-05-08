@@ -119,27 +119,7 @@ if __name__ == "__main__":
                     feedback += dic['message']['Solution']
     
     feedback = Env.from_string(feedback).render(dic)
-    if score == -1:
-        ffeedback = ""
-    elif score == 100:
-        dic['modalclass'] = "alert-success"
-    elif score == 0:
-
-    else:
-        ffeedback = feedback
-
-
-    elif 'feedback' in dic['settings']:
-        if dic['settings']['feedback']=='rightwrong':
-            ffeedback=format_feedback_rightwrong(score,feedback)
-        elif dic['settings']['feedback']=='score':
-            ffeedback=format_feedback_score(score,feedback)
-        elif dic['settings']['feedback']=='lightscore':
-            ffeedback=format_feedback_lightscore(score,feedback)
-        else:
-            ffeedback = feedback
-    else:
-        ffeedback = feedback
+    ffeedback = ""
 
     # dic = json.loads(json.dumps(dic, cls=CustomEncoder))
 
