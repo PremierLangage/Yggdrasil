@@ -54,6 +54,20 @@ modal ==
 </div>
 ==
 
+linksolution ==
+<p>
+  <a class="alert-success alert-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    + Solution
+  </a>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+{{solution}}
+  </div>
+</div>
+==
+== 
+
 
 form ==
 {{ input_prefix }}
