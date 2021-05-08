@@ -94,10 +94,6 @@ form ==
 <input type="text" id="form_math" hidden=true>
 ==
 
-old ==
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-
-==
 
 style.mathquill ==
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
@@ -171,7 +167,7 @@ return true;
         {% endif %}
         {% if score == -1 %}
         var exampleEl = document.getElementById('math-field');
-        var popover = new bootstrap.Popover(exampleEl, {content: "{{ feedback }}"});
+        var popover = new bootstrap.Popover(exampleEl, {content: "{{ feedback }}", });
         popover.show();
         {% endif %}
     }
