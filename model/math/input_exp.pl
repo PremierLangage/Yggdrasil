@@ -29,7 +29,7 @@ text ==
     {% if score == 100 %}
         altert-success
     {% else %}
-        alert-warning
+        alert-danger
     {% endif %}  
 {%- endmacro %}
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
