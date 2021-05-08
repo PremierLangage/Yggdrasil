@@ -18,18 +18,32 @@ text ==
   </div>
 </div>
 
+{% macro modaltext(score) -%}
+    {% if score == 100 %}
+        Bonne réponse !
+    {% else %}
+        Mauvaise réponse !
+    {% endif %}    
+{%- endmacro %}
+{% macro modalclass(score) -%}
+    {% if score == 100 %}
+        altert-success
+    {% else %}
+        alert-warning
+    {% endif %}  
+{%- endmacro %}
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header {{ modalclass }}">
-        <h5 class="modal-title" id="staticBackdropLabel"> {{ modaltext }} </h5>
+      <div class="modal-header {{ modalclass(score) }}">
+        <h5 class="modal-title" id="staticBackdropLabel"> 
+        {{ modaltext(score) }} 
+        </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-
     </div>
   </div>
 </div>
-
 ==
 
 title =
