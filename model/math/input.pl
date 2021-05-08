@@ -56,7 +56,7 @@ modal ==
 
 linksolution ==
 <p>
-  <a class="alert-success alert-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     + Solution
   </a>
 </p>
@@ -65,6 +65,7 @@ linksolution ==
 {{solution}}
   </div>
 </div>
+
 == 
 
 
