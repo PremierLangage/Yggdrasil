@@ -84,13 +84,9 @@ javascript.mathquill ==
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 <script>
 function onAfterSubmitPL(nodes) {
-var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-var toastList = toastElList.map(function (toastEl) {
-  return new bootstrap.Toast(toastEl, option)
-})
-
-var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {backdrop: false});
-myModal.show();
+var myToast = new bootstrap.Toast(document.getElementById('myToast'));
+//var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {backdrop: false});
+myToast.show();
 }
 </script>
 
