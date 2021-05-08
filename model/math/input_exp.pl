@@ -145,6 +145,11 @@ return true;
         {% if input_embed|length > 0 %}
         mathField.reflow();
         {% endif %}
+
+        var exampleEl = document.getElementById('math-field');
+        var popover = new bootstrap.Popover(exampleEl, {content: "blabla"});
+        popover.show();
+
     }
 </script>
 ==
