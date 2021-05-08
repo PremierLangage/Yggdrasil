@@ -84,6 +84,8 @@ javascript.mathquill ==
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 <script>
 function onAfterSubmitPL(nodes) {
+var exampleEl = document.getElementById('mathFieldSpan')
+var popover = new bootstrap.Popover(exampleEl, options)
 var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {backdrop: false});
 myModal.show();
 }
