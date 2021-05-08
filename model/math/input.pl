@@ -143,7 +143,7 @@ return true;
     function onReadyPL(nodes) {
         {% if score == -1 %}
         var exampleEl = document.getElementById('math-field');
-        var popover = new bootstrap.Popover(exampleEl, {content: "{{ feedback }}", });
+        var popover = new bootstrap.Popover(exampleEl, {content: "{{ feedback }}"});
         popover.show();
         {% endif %}
         const actions = nodes.actions;
