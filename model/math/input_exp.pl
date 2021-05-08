@@ -6,7 +6,17 @@ input_prefix = Réponse :
 
 before =
 
-text =
+text ==
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+==
 
 title =
 
@@ -58,17 +68,14 @@ style.mathquill ==
 
 
 javascript.mathquill ==
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 <script>
-    function onAfterSubmitPL(nodes) {
-        var myModal = new bootstrap.Modal(document.getElementById('myModal'), {keyboard: false
-});
-myModal.show()
-
-
-    }
+function onAfterSubmitPL(nodes) {
+var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+myModal.show();
+}
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
 <script>
