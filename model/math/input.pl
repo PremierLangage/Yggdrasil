@@ -74,9 +74,9 @@ linksolution ==
 form ==
 {{ input_prefix }}
 {% if input_embed|length > 1 %}
-<span id="math-field"> {{ input_embed }}</span><span id="math-field-pop"></span>
+<span id="math-field"> {{ input_embed }}</span><div id="math-field-pop"></div>
 {% else %}
-<span id="math-field" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></span></span><span id="math-field-pop"></span>
+<span id="math-field" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></span></span><div id="math-field-pop"></div>
 {% endif %}
 {% if keypad|length > 0 %}
 
@@ -167,7 +167,7 @@ return true;
         {% endif %}
         {% if score == -1 %}
         var exampleEl = document.getElementById('math-field');
-        var popover = new bootstrap.Popover(exampleEl, {content: "{{ feedback }}", trigger: "focus"});
+        var popover = new bootstrap.Popover(exampleEl, {content: "{{ feedback }}", container:"#math-field-pop", trigger: "focus"});
         popover.show();
         {% endif %}
 
