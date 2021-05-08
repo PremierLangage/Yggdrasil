@@ -64,7 +64,7 @@ linksolution ==
 
 <div class="collapse" id="collapseExample">
   <div class="card card-body">
-coucou
+{{ solution }}
   </div>
 </div>
 
