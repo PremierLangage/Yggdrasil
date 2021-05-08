@@ -6,7 +6,7 @@ input_prefix = Réponse :
 
 before =
 
-text ==
+form ==
 <div class="modal" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -24,7 +24,6 @@ text ==
     </div>
   </div>
 </div>
-
 ==
 
 title =
