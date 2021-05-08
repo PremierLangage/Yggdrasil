@@ -76,7 +76,7 @@ form ==
 {% if input_embed|length > 1 %}
 <span id="math-field"> {{ input_embed }}</span><div id="math-field-pop"></div>
 {% else %}
-<span id="math-field" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></span></span><div id="math-field-pop"></div>
+<div id="math-field" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div><div id="math-field-pop"></div>
 {% endif %}
 {% if keypad|length > 0 %}
 
