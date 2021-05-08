@@ -35,7 +35,7 @@ modal ==
     {% endif %}  
 {%- endmacro %}
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog {{ modalclass(score) }}">
     <div class="modal-content">
       <div class="modal-header {{ modalclass(score) }}">
         <h5 class="modal-title" id="staticBackdropLabel"> 
