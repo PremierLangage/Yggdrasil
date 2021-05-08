@@ -65,7 +65,6 @@ linksolution ==
 {{solution}}
   </div>
 </div>
-==
 == 
 
 
