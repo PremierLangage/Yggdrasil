@@ -168,7 +168,7 @@ return true;
         {% if score == -1 %}
         var exampleEl = document.getElementById('math-field');
         var popover = new bootstrap.Popover(exampleEl, {content: "{{ feedback }}", container: 'mathFieldSpan', trigger: "focus"});
-        //popover.show();
+        popover.show();
         {% endif %}
 
     }
