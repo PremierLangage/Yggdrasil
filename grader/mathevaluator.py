@@ -113,10 +113,7 @@ if __name__ == "__main__":
             except:
                 pass
             if score < 100 and 'solution' in dic:
-                feedback += dic['solution']
-            elif score < 100 and 'message' in dic:
-                if 'Solution' in dic['message']:
-                    feedback += dic['message']['Solution']
+                dic['form'] = "\n".join([dic['form'], dic['linksolution']])
     
     feedback = Env.from_string(feedback).render(dic)
     ffeedback = ""
