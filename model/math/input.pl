@@ -166,7 +166,7 @@ return true;
         mathField.reflow();
         {% endif %}
         {% if score == -1 %}
-          $('#math-field').popover({content: "{{ feedback }}", container: "#math-field"}); 
+          $('#math-field').popover({content: "{{ feedback }}"); 
           $('#math-field').popover('show'); 
         {% endif %}
 
