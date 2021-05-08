@@ -86,9 +86,10 @@ javascript.mathquill ==
 function onAfterSubmitPL(nodes) {
 var exampleEl = document.getElementById('math-field');
 var popover = new bootstrap.Popover(exampleEl, {content: "blabla"});
+popover.show();
+
 var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {backdrop: false});
 //myModal.show();
-popover.show();
 }
 </script>
 
