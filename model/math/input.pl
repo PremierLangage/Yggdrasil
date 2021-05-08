@@ -141,6 +141,11 @@ return true;
 
 <script>
     function onReadyPL(nodes) {
+        {% if score == -1 %}
+        var exampleEl = document.getElementById('math-field');
+        var popover = new bootstrap.Popover(exampleEl, {content: "{{ feedback }}", });
+        popover.show();
+        {% endif %}
         const actions = nodes.actions;
         actions.find('.action-save').hide();
         actions.find('.action-reset').hide();
@@ -165,11 +170,7 @@ return true;
         {% if input_embed|length > 0 %}
         mathField.reflow();
         {% endif %}
-        {% if score == -1 %}
-        var exampleEl = document.getElementById('math-field');
-        var popover = new bootstrap.Popover(exampleEl, {content: "{{ feedback }}", });
-        popover.show();
-        {% endif %}
+
     }
 </script>
 ==
