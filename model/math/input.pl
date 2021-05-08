@@ -124,7 +124,6 @@ return true;
         {% if not "submit" in internals.buttons %}
         actions.find('.action-submit').hide();
         {% endif %}
-        mathField.reflow()
     }
 </script>
 ==
