@@ -27,36 +27,6 @@ class CustomDecoder(json.JSONDecoder):
         return dict
 
 
-def format_feedback_rightwrong(score,feedback):
-    tpl="""<div class="alert {}"><strong>{}</strong> <br> {}</div>"""
-    if score==-1:
-        return tpl.format('alert-info','Attention !',feedback)
-    elif score==100:
-        return tpl.format('alert-success','Bonne réponse.',feedback)
-    else:
-        return tpl.format('alert-danger','Mauvaise réponse.',feedback)
-
-def format_feedback_score(score,feedback):
-    if score==-1:
-        tpl="""<div class="alert {}"><strong>{}</strong><br> {}</div>"""
-        return tpl.format('alert-info',score, feedback)
-    tpl="""<div class="alert {}"><strong>Score : {} / 100</strong><br> {}</div>"""
-    if score==100:
-        return tpl.format('alert-success',score, feedback)
-    elif score==0:
-        return tpl.format('alert-danger',score, feedback)
-    else:
-        return tpl.format('alert-warning',score, feedback)
-
-def format_feedback_lightscore(score,feedback):
-    if score==-1:
-        tpl="""<div class="alert {}"><strong>{}</strong> <br> {}</div>"""
-        return tpl.format('alert-info',score, feedback)
-    tpl="""<div class="alert alert-secondary"><strong>Score : {} / 100 <br> </strong> {}</div>"""
-    return tpl.format(score,feedback)
-
-
-
 missing_evaluator_stderr = """\
 The key 'evaluator' was not found in the context.
 When using this grader, the PL must declare a script inside a key 'evaluator'. This script have
