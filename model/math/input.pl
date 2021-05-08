@@ -166,9 +166,8 @@ return true;
         mathField.reflow();
         {% endif %}
         {% if score == -1 %}
-        var exampleEl = document.getElementById('math-field');
-        var popover = new bootstrap.Popover(exampleEl, {content: "{{ feedback }}", container: ".parent", trigger: "focus"});
-        popover.show();
+          $('#math-field').popover({ontent: "{{ feedback }}", container: ".parent"}); 
+          $('#math-field').popover('show'); 
         {% endif %}
 
     }
