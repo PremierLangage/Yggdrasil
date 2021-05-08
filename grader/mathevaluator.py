@@ -121,6 +121,14 @@ if __name__ == "__main__":
     feedback = Env.from_string(feedback).render(dic)
     if score == -1:
         ffeedback = ""
+    elif score == 100:
+        dic['modalclass'] = "alert-success"
+    elif score == 0:
+
+    else:
+        ffeedback = feedback
+
+
     elif 'feedback' in dic['settings']:
         if dic['settings']['feedback']=='rightwrong':
             ffeedback=format_feedback_rightwrong(score,feedback)
