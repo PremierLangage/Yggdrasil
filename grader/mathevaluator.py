@@ -138,7 +138,7 @@ if __name__ == "__main__":
         json.dump(dic, f, cls=CustomEncoder)
     
     with open(sys.argv[4], "w+", encoding='utf-8') as f:
-        print(dic['modal'], file=f)
+        print(Env.from_string(dic['modal']).render(dic), file=f)
     
     print(int(score))
     
