@@ -22,7 +22,7 @@ text ==
   <div class="modal-dialog">
     <div class="modal-content alert-success">
       <div class="modal-header alert-success">
-        <h5 class="modal-title" id="staticBackdropLabel">Bonne réponse </h5>
+        <h5 class="modal-title alert-success" id="staticBackdropLabel">Bonne réponse </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
