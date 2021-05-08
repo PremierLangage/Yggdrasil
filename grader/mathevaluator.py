@@ -133,9 +133,9 @@ if __name__ == "__main__":
     # render some string values of the exercise dictionary with the custom Jinja environment
     #jinja_keys = dic.get('jinja_keys', ['text', 'form', 'solution'])
 
-    #for key in jinja_keys:
-    #    if key in dic:
-    #        dic[key] = Env.from_string(dic[key]).render(dic)
+    for key in ['text']:
+        if key in dic:
+            dic[key] = Env.from_string(dic[key]).render(dic)
 
     with open(sys.argv[3], "w+") as f:
         json.dump(dic, f, cls=CustomEncoder)
