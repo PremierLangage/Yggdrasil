@@ -88,6 +88,7 @@ var exampleEl = document.getElementById('math-field');
 var popover = new bootstrap.Popover(exampleEl, {backdrop: "blabla"});
 var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {backdrop: false});
 //myModal.show();
+popover.show();
 }
 </script>
 
