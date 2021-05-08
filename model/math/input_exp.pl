@@ -7,7 +7,7 @@ input_prefix = Réponse :
 before =
 
 text ==
-<div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+<div class="toast align-items-center" id="myToast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="d-flex">
     <div class="toast-body">
     Hello, world! This is a toast message.
@@ -84,6 +84,11 @@ javascript.mathquill ==
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 <script>
 function onAfterSubmitPL(nodes) {
+var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+var toastList = toastElList.map(function (toastEl) {
+  return new bootstrap.Toast(toastEl, option)
+})
+
 var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {backdrop: false});
 myModal.show();
 }
