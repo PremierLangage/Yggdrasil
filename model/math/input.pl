@@ -59,7 +59,6 @@ linksolution ==
 <a class="class="link-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
   Solution
 </a>
-</p>
 <div class="collapse" id="collapseExample">
   <div class="card card-body">
 {{solution}}
