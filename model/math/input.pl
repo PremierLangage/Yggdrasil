@@ -178,7 +178,7 @@ return true;
 style.test ==
 <style>
 
-.exercise__actions {
+.exercise__actions2 {
    display: flex;
 }
 
