@@ -11,6 +11,10 @@ text ==
 * 3
 $!\\{ \\}!$
 
+Blabla
+
+Blaba
+
 <ul>
     <li>Milk</li>
     <li>Cheese
