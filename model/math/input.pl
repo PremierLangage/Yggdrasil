@@ -181,7 +181,7 @@ return true;
 style.test ==
 <style>
 
-.btn-group3 {
+.exercise__actions .btn-group {
    float: left;
 }
 
