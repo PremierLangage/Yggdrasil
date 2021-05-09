@@ -145,7 +145,7 @@ return true;
         actions.find('.action-save').remove();
         actions.find('.action-reset').remove();
         actions.find('.action-next').remove();
-        
+
         const { origin, pathname }  = document.location;
         const link = origin + pathname;
 
@@ -181,7 +181,7 @@ return true;
 style.test ==
 <style>
 
-.btn-group {
+.btn-group3 {
    float: left;
 }
 
