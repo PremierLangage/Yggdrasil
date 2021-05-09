@@ -11,9 +11,12 @@ text ==
 * 3
 $!\\{ \\}!$
 
-Blabla  
+Blabla\  
+Blabla
 
-Blaba
+Blaba\
+
+Blabla
 
 <ul>
     <li>Milk</li>
