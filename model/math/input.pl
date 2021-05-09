@@ -174,7 +174,7 @@ return true;
         {% endif %}
 
         {% if score == 100 %}
-        actions[0].insertAdjacentHTML('beforeend', '<div class="alert alert-success" role="alert">Bonne réponse ! </div>');
+        actions[0].insertAdjacentHTML('beforeend', '<div class="alert alert-success" style="display:inline-block;" role="alert">Bonne réponse ! </div>');
         {% endif %}
 
         actions[0].insertAdjacentHTML('beforeend', '<button type="button" style="float: right;" class="btn btn-outline-secondary">Score : {{score}}</button>');
