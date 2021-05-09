@@ -169,7 +169,7 @@ return true;
           $('#math-field').popover({content: "{{ feedback }}"}); 
           $('#math-field').popover('show');
         {% else %}
-          actions.find('.action-submit').popover({content: "Coucou !"}); 
+          actions.find('.action-submit').popover({content: "Coucou !", placement: "top"}); 
           actions.find('.action-submit').popover('show');  
         {% endif %}
 
