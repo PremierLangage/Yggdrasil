@@ -11,7 +11,7 @@ text ==
 * 3
 $!\\{ \\}!$
 
-Blabla\  
+Blabla\\
 Blabla
 
 Blaba\
