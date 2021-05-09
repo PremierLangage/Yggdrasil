@@ -173,10 +173,7 @@ return true;
           //actions.find('.action-submit').popover('show');  
         {% endif %}
 
-        var para = document.createElement("P");                       // Create a <p> node
-        var t = document.createTextNode("This is a paragraph.");      // Create a text node
-        para.appendChild(t);                                          // Append the text to <p>
-        actions.appendChild(para);  
+        actions.insertAdjacentHTML('afterend', '<div id="two">two</div>');  
 
     }
 </script>
