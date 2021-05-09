@@ -160,7 +160,7 @@ return true;
         {% endif %}
         
         {% if not "submit" in internals.buttons %}
-        actions.find('.action-submit').setAttribute("aria-disabled", "true");
+        actions.find('.action-submit').attr("disabled");
         {% endif %}
         {% if input_embed|length > 0 %}
         mathField.reflow();
