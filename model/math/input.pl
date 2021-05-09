@@ -142,7 +142,6 @@ return true;
 <script>
     function onReadyPL(nodes) {
         const actions = nodes.actions;
-        alert(actions[0].innerHTML);
         //const toolbar = nodes.find('.exercise__actions');
         actions.find('.action-save').remove();
         actions.find('.action-reset').remove();
@@ -175,7 +174,7 @@ return true;
           //actions.find('.action-submit').popover('show');  
         {% endif %}
 
-        actions.innerHTML = "Blabla"
+        actions[0].insertAdjacentHTML('afterend', '<div id="two">two</div>');
     }
 </script>
 ==
