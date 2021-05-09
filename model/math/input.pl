@@ -169,8 +169,8 @@ return true;
           $('#math-field').popover({content: "{{ feedback }}"}); 
           $('#math-field').popover('show');
         {% else %}
-          //actions.find('.action-submit').popover({content: "Coucou !"}); 
-          //actions.find('.action-submit').popover('show');  
+          actions.find('.action-submit').popover({content: "Coucou !"}); 
+          actions.find('.action-submit').popover('show');  
         {% endif %}
 
         actions[0].insertAdjacentHTML('beforeend', '<button type="button" style="float: right;" class="btn btn-outline-secondary">Score : {{score}}</button>');
