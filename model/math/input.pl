@@ -142,9 +142,9 @@ return true;
 <script>
     function onReadyPL(nodes) {
         const actions = nodes.actions;
-        actions.find('.action-save').hide();
-        actions.find('.action-reset').hide();
-        actions.find('.action-next').hide();
+        actions.find('.action-save').remove();
+        actions.find('.action-reset').remove();
+        actions.find('.action-next').remove();
 
         const { origin, pathname }  = document.location;
         const link = origin + pathname;
