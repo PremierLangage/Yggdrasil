@@ -174,7 +174,7 @@ return true;
           //actions.find('.action-submit').popover('show');  
         {% endif %}
 
-        actions[0].insertAdjacentHTML('afterend', '<div id="two" style="float: left;">two</div>');
+        toolbar[0].insertAdjacentHTML('afterend', '<div id="two" style="float: left;">two</div>');
     }
 </script>
 ==
