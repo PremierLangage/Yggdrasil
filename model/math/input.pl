@@ -142,6 +142,7 @@ return true;
 <script>
     function onReadyPL(nodes) {
         const actions = nodes.actions;
+        const toolbar = nodes.exercise__actions;
         actions.find('.action-save').remove();
         actions.find('.action-reset').remove();
         actions.find('.action-next').remove();
@@ -172,6 +173,11 @@ return true;
           //actions.find('.action-submit').popover({content: "Coucou !"}); 
           //actions.find('.action-submit').popover('show');  
         {% endif %}
+
+        var para = document.createElement("P");                       // Create a <p> node
+        var t = document.createTextNode("This is a paragraph.");      // Create a text node
+        para.appendChild(t);                                          // Append the text to <p>
+        toolbar.appendChild(para);  
 
     }
 </script>
