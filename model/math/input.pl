@@ -173,6 +173,10 @@ return true;
           //actions.find('.action-submit').popover('show');  
         {% endif %}
 
+        {% if score == -1 %}
+        actions[0].insertAdjacentHTML('beforeend', '<div class="alert alert-success" role="alert">Bonne réponse ! </div>');
+        {% endif %}
+
         actions[0].insertAdjacentHTML('beforeend', '<button type="button" style="float: right;" class="btn btn-outline-secondary">Score : {{score}}</button>');
     }
 </script>
