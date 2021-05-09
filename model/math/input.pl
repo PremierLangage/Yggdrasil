@@ -157,7 +157,7 @@ return true;
         {% endif %}
         
         {% if not "submit" in internals.buttons %}
-        actions.find('.action-submit').attr('disabled', true);
+        //actions.find('.action-submit').attr('disabled', true);
         {% endif %}
         {% if input_embed|length > 0 %}
         mathField.reflow();
