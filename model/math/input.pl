@@ -174,7 +174,7 @@ return true;
           //actions.find('.action-submit').popover('show');  
         {% endif %}
 
-        actions[0].insertAdjacentHTML('afterend', '<div id="two" style="display: flex;">two</div>');
+        actions[0].insertAdjacentHTML('afterend', '<div id="two" style="display: inline;">two</div>');
     }
 </script>
 ==
