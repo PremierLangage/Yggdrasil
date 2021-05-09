@@ -9,8 +9,8 @@ before =
 text ==
 * 3
 * 3
-$!\\{ \\}!$
-
+$!\{3,4\}!$
+$!\sqrt{2}!$
 Blabla
 
 Blabla
