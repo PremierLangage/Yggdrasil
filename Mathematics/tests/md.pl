@@ -11,10 +11,11 @@ text ==
 * 3
 $!\\{ \\}!$
 
-Blabla\
 Blabla
 
-Blaba\
+Blabla
+
+Blabla<br>
 
 Blabla
 
