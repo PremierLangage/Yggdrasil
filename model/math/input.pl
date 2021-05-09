@@ -167,7 +167,10 @@ return true;
         {% endif %}
         {% if score == -1 %}
           $('#math-field').popover({content: "{{ feedback }}"}); 
-          $('#math-field').popover('show'); 
+          $('#math-field').popover('show');
+        {% else %}
+          actions.find('.action-submit').popover({content: "Coucou !"}); 
+          actions.find('.action-submit').popover('show');  
         {% endif %}
 
     }
