@@ -181,6 +181,11 @@ return true;
 
 style.test ==
 <style>
+
+.exercise__actions {
+   display: inline;
+}
+
 .action-save {
    display: none;
 }
