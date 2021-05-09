@@ -183,7 +183,7 @@ style.test ==
 <style>
 
 .exercise__actions {
-   display: inline-flex;
+   display: flex-inline;
 }
 
 .action-save {
