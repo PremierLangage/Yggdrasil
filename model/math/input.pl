@@ -170,7 +170,7 @@ return true;
           //actions.find('.action-submit').popover('show');  
         {% endif %}
 
-        actions[0].insertAdjacentHTML('beforeend', '<div id="two" style="float: left;">two</div>');
+        actions[0].insertAdjacentHTML('beforeend', '<div id="two">two</div>');
     }
 </script>
 ==
