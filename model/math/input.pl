@@ -179,6 +179,18 @@ return true;
 </script>
 ==
 
+style.test ==
+.action-save {
+   display: none;
+}
+.action-reset {
+   display: none;
+}
+.action-next {
+   display: none;
+}
+==
+
 settings.maxattempt % 1
 
 extends = messages_math.pl
