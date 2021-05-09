@@ -178,8 +178,7 @@ return true;
 style.test ==
 <style>
 
-.exercise__actions.btn-group {
-   display: flex;
+.btn-group {
    float: left;
 }
 
