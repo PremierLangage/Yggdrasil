@@ -10,7 +10,7 @@ text ==
 * 3
 * 3
 $!\{3,4\}!$
-$!\sqrt{2} * 3!$
+$!\sqrt{2} * ! 3!$
 Blabla
 
 Blabla
