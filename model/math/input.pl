@@ -180,6 +180,7 @@ return true;
 ==
 
 style.test ==
+<style>
 .action-save {
    display: none;
 }
@@ -189,6 +190,7 @@ style.test ==
 .action-next {
    display: none;
 }
+</style>
 ==
 
 settings.maxattempt % 1
