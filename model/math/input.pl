@@ -160,7 +160,7 @@ return true;
         {% endif %}
         
         {% if not "submit" in internals.buttons %}
-        actions.find('.action-submit').addClass("hilite");
+        actions.find('.action-submit').addClass("disabled");
         {% endif %}
         {% if input_embed|length > 0 %}
         mathField.reflow();
