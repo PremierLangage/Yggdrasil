@@ -152,7 +152,7 @@ return true;
 
         const buttons = actions.find('.btn-group');
 
-        {% if "reroll" in internals.buttons %}
+        {% if "reroll2" in internals.buttons %}
         buttons.append(`
             <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
                 <i class="fas fa-dice"></i> Nouveau tirage
