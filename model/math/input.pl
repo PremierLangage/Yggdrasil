@@ -142,7 +142,6 @@ return true;
 <script>
     function onReadyPL(nodes) {
         const actions = nodes.actions;
-        const toolbar = nodes.exercise__actions;
         actions.find('.action-save').remove();
         actions.find('.action-reset').remove();
         actions.find('.action-next').remove();
