@@ -178,8 +178,8 @@ return true;
 style.test ==
 <style>
 
-.exercise__actions2 {
-   display: flex;
+.exercise__actions.btn-group {
+   float: left;
 }
 
 .action-save {
