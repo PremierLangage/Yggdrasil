@@ -143,9 +143,9 @@ return true;
     function onReadyPL(nodes) {
         const actions = nodes.actions;
         //const toolbar = nodes.find('.exercise__actions');
-        //actions.find('.action-save').remove();
-        //actions.find('.action-reset').remove();
-        //actions.find('.action-next').remove();
+        actions.find('.action-save').remove();
+        actions.find('.action-reset').remove();
+        actions.find('.action-next').remove();
 
         const { origin, pathname }  = document.location;
         const link = origin + pathname;
