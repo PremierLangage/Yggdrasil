@@ -174,8 +174,7 @@ return true;
           //actions.find('.action-submit').popover('show');  
         {% endif %}
 
-        //toolbar.insertAdjacentHTML('afterend', '<div id="two">two</div>');  
-
+        actions.innerHTML = "Blabla"
     }
 </script>
 ==
