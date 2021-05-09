@@ -174,7 +174,7 @@ return true;
           //actions.find('.action-submit').popover('show');  
         {% endif %}
 
-        actions[0].insertAdjacentHTML('afterend', '<div id="two">two</div>');
+        actions[0].insertAdjacentHTML('afterend', '<div id="two" style="display: flex;">two</div>');
     }
 </script>
 ==
@@ -183,7 +183,7 @@ style.test ==
 <style>
 
 .exercise__actions {
-   display: flex-inline;
+   
 }
 
 .action-save {
