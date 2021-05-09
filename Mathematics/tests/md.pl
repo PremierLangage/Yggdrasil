@@ -9,7 +9,17 @@ before =
 text ==
 * 3
 * 3
-$!\{ \}!$
+$!\\{ \\}!$
+
+<ul>
+    <li>Milk</li>
+    <li>Cheese
+        <ul>
+            <li>Blue cheese</li>
+            <li>Feta</li>
+        </ul>
+    </li>
+</ul>
 ==
 
 form ==
