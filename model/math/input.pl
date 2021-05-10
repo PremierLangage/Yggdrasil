@@ -6,7 +6,9 @@ input_prefix = Réponse :
 
 before =
 
-text =
+text ==
+<hr>
+==
 
 title =
 
