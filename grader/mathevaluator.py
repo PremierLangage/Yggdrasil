@@ -78,7 +78,7 @@ if __name__ == "__main__":
     
     dic['form'] = dic['interface']
     if feedback != "":
-        dic['form'] = "\n".join([dic['form'], dic['format_feedback']])
+        dic['form'] = "\n".join('<hr class="border">', [dic['form'], dic['format_feedback']])
 
     if dic['settings']['maxattempt'] is not None:
         if dic['internals']['attempt'] > dic['settings']['maxattempt']:
