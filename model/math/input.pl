@@ -86,7 +86,7 @@ mathField.innerFields[0].latex("{{ prev_value }}");
 var mathField = MQ.MathField(mathFieldSpan);
 mathField.latex("{{ prev_value }}");
 {% endif %}
-$('#math-field').popover({content: "La réponse doit être une expression mathématique", placement: "top"}); 
+$('#math-field').popover({content: "La réponse doit être une expression mathématique.", placement: "top"}); 
 
 </script>
 <script>
@@ -114,13 +114,6 @@ return true;
 
         const buttons = actions.find('.btn-group');
 
-        {% if "reroll2" in internals.buttons %}
-        buttons.append(`
-            <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
-                <i class="fas fa-dice"></i> Nouveau tirage
-            </a>
-        `);
-        {% endif %}
         {% if not "submit" in internals.buttons %}
         actions.find('.action-submit').remove();
         buttons.append(`<a type="button"  class="btn btn-warning action-reroll" href="`+link+`?action=reroll"><i class="fas fa-dice"></i> Nouveau</a>`);
