@@ -25,38 +25,8 @@ input_embed =
 
 input_prefix = 
 
-modal ==
-{% macro modaltext(score) -%}
-    {% if score == 100 %}
-        Bonne réponse !
-    {% else %}
-        Mauvaise réponse !
-    {% endif %}    
-{%- endmacro %}
-{% macro modalclass(score) -%}
-    {% if score == 100 %}
-        alert-success
-    {% else %}
-        alert-danger
-    {% endif %}  
-{%- endmacro %}
-
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalLabel">{{ modaltext(score) }}</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-==
 
 linksolution ==
-<br><br>
 <p>
 <a class="text-success" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
   Solution
@@ -65,9 +35,7 @@ linksolution ==
 
 <div class="collapse" id="collapseExample">
 {{ solution }}
-
 </div>
-
 == 
 
 
