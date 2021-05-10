@@ -127,7 +127,8 @@ return true;
         actions.append('<button type="button" style="float: right;" class="btn error-state animated pulse">Score : {{score}} </button>');
         {% endif %}
         {% if score == -1 %}
-        $('#math-field').popover({content: "{{ feedback }}", placement: "top"}); 
+        $('#math-field').popover({content: "{{ feedback }}", placement: "top"});
+        $('#math-field').popover('show'); 
         {% endif %}
 
 
