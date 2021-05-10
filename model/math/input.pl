@@ -145,7 +145,7 @@ style.test ==
    font-size: 20px;
 }
 
-.exercise__instructions {
+.exercise__instructions p {
    font-size: 16px !important;
 }
 .exercise__actions .btn-group {
