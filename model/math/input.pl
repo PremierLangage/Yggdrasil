@@ -142,7 +142,7 @@ return true;
 style.test ==
 <style>
 .exercise__title {
-   font-size: 16px;
+   font-size: 20px;
 }
 
 
