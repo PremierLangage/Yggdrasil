@@ -177,6 +177,8 @@ return true;
           //actions.find('.action-submit').popover({content: "Coucou !", placement: "top"}); 
           //actions.find('.action-submit').popover('show');  
         {% endif %}
+        actions[0].insertAdjacentHTML('beforeend', '<button type="button" style="float: right;" class="btn btn-outline-secondary">Score : - </button>');
+
         {% if score == 100 %}
           actions[0].insertAdjacentHTML('beforeend', '<button type="button" style="float: right;" class="btn btn-outline-secondary success-state animated pulse">Score : {{score}}</button>');
         {% endif %}
