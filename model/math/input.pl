@@ -61,6 +61,7 @@ form ==
 </div>
 {% endif %}
 <input type="text" id="form_math" hidden=true>
+<hr/>
 ==
 
 
