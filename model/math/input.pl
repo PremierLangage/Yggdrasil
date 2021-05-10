@@ -141,6 +141,10 @@ return true;
 
 style.test ==
 <style>
+.exercise-header {
+   font-size: 16px;
+}
+
 
 .exercise__actions .btn-group {
    float: left;
