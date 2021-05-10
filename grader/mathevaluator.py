@@ -62,30 +62,24 @@ if __name__ == "__main__":
 
     aux_component2(dic)
     
-    if 'grade' in dic:
-        score = dic['grade'][0]
-        feedback = dic['grade'][1] + " "
+
+    if 'score' in dic:
+        score = dic['score']    
+    if 'feedback' in dic:
+        feedback = dic['feedback']  
     else:
-        if 'score' in dic:
-            score = dic['score']    
-        if 'feedback' in dic:
-            feedback = dic['feedback']  
-        else:
-            feedback=""
+        feedback = ""
 
     if score >= 0:
         dic['internals']['attempt'] = dic['internals']['attempt'] + 1
     
     dic['form'] = dic['interface']
+
     if feedback.strip() != "":
         dic['form'] = "\n".join([dic['form'], dic['format_feedback']])
 
     if dic['settings']['maxattempt'] is not None:
         if dic['internals']['attempt'] > dic['settings']['maxattempt']:
-            try:
-                dic['internals']['buttons'].remove('submit')
-            except:
-                pass
             if score < 100 and 'solution' in dic:
                 dic['form'] = "\n".join([dic['form'], dic['linksolution']])
     
