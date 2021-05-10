@@ -1,4 +1,4 @@
-message.Success = 
+message.Success =
 message.NotEqual = La réponse n'est pas égale à la solution.
 message.NotExpr = La réponse doit être une expression mathématique.
 message.OneNotExpr  = Les réponses doivent être des expressions mathématiques.
