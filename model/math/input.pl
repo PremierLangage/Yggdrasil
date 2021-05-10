@@ -141,6 +141,7 @@ return true;
         const link = origin + pathname;
 
         const buttons = actions.find('.btn-group');
+         $('.popover').popover('destroy');
 
         {% if "reroll2" in internals.buttons %}
         buttons.append(`
@@ -149,7 +150,6 @@ return true;
             </a>
         `);
         {% endif %}
-        
         {% if not "submit" in internals.buttons %}
         actions.find('.action-submit').remove();
         buttons.append(`<a type="button"  class="btn btn-warning action-reroll" href="`+link+`?action=reroll"><i class="fas fa-dice"></i> Nouveau</a>`);
