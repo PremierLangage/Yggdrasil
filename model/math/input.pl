@@ -104,6 +104,7 @@ return true;
         actions.find('.action-save').remove();
         actions.find('.action-reset').remove();
         actions.find('.action-next').remove();
+        actions.find('.action-download').remove();
 
         const { origin, pathname }  = document.location;
         const link = origin + pathname;
