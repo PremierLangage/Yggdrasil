@@ -101,11 +101,6 @@ style.mathquill ==
 
 
 javascript.mathquill ==
-<script>
-function onAfterSubmitPL(nodes) {
-document.getElementById('btn-score').innerHTML = "Score2";
-}
-</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
 <script>
