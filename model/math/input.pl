@@ -172,10 +172,10 @@ return true;
         actions.append('<button type="button" id="btn-score" style="float: right;" class="btn btn-outline-secondary">Score : - </button>');
         {% endif %}
         {% if score == 100 %}
-        actions.append('<button type="button" id="btn-score" style="float: right;" class="btn btn-outline-secondary success-state animated pulse">Score : - </button>');
+        actions.append('<button type="button" id="btn-score" style="float: right;" class="btn btn-outline-secondary success-state animated pulse">Score : {{score}} </button>');
         {% endif %}
         {% if score == 0 %}
-        actions.append('<button type="button" id="btn-score" style="float: right;" class="btn btn-outline-secondary error-state animated pulse">Score : - </button>');
+        actions.append('<button type="button" id="btn-score" style="float: right;" class="btn btn-outline-secondary error-state animated pulse">Score : {{score}} </button>');
         {% endif %}
    }
 </script>
