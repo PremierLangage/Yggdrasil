@@ -136,11 +136,12 @@ return true;
 format_feedback ==
 <br>
 <br>
-<a class="text-info" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
 {% if score == -1 %}
+<a class="text-info" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
 Attention
 {% else %}
-Erreur
+<a class="text-danger" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
+Attention
 {% endif %}
 </a>
 <div class="collapse" id="collapseExample2">
