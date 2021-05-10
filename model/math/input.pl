@@ -130,8 +130,12 @@ return true;
         actions.append('<button type="button" style="float: right;" class="btn error-state animated pulse">Score : {{score}} </button>');
         {% endif %}
         {% if score == -1 %}
-        $('#math-field').popover({content: "{{ feedback }}", placement: "top"});
-        $('#math-field').popover('show'); 
+        nodes.feedback.append('<div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>')
         {% endif %}
 
 
