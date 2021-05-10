@@ -126,7 +126,7 @@ return true;
         {% if score == 0 %}
         actions.append('<button type="button" style="float: right;" class="btn error-state animated pulse">Score : {{score}} </button>');
         {% endif %}
-        {% if score == 0 %}
+        {% if score == -1 %}
         $('#math-field').popover({content: "{{ feedback }}", placement: "top"}); 
         {% endif %}
 
