@@ -114,7 +114,7 @@ return true;
 
         const buttons = actions.find('.btn-group');
 
-        {% if not "submit" in internals.buttons %}
+        {% if 'internals.attempt > settings.maxattempt %}
         actions.find('.action-submit').remove();
         buttons.append(`<a type="button"  class="btn btn-primary action-reroll" href="`+link+`?action=reroll"><i class="fas fa-dice"></i> Nouveau</a>`);
         {% endif %}
