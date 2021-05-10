@@ -28,7 +28,7 @@ input_prefix =
 
 
 linksolution ==
-<a class="text-success" style="margin-top: 1em;" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
   Solution
 </a>
 <div class="collapse" id="collapseExample">
