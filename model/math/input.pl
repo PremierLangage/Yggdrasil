@@ -128,7 +128,6 @@ return true;
         {% if input_embed|length > 0 %}
         mathField.reflow();
         {% endif %}
-        $('#math-field').popover('hide');
         {% if score == -1 %}
         $('#math-field').popover({content: "{{feedback}}", placement: "top"}); 
         document.getElementById('math-field').popover('show');
