@@ -20,7 +20,7 @@ score = 100
 feedback = "blabla"
 ==
 
-keypad % []
+input_keypad % []
 
 input_embed =
 
@@ -44,14 +44,14 @@ interface ==
 {% else %}
 <div id="math-field" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
 {% endif %}
-{% if keypad|length > 0 %}
+{% if input_keypad|length > 0 %}
 
 <div class="btn-group">
   <button type="button" class="btn btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 <math><msqrt><mi>x</mi></msqrt></math>
   </button>
 <div class="dropdown-menu dropdown-menu-right" style="max-width: 100px;">
-{% for item in keypad %}
+{% for item in input_keypad %}
 <button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
 {% endfor %}
 </div>
