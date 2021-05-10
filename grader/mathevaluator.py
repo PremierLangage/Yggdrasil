@@ -77,7 +77,7 @@ if __name__ == "__main__":
         dic['internals']['attempt'] = dic['internals']['attempt'] + 1
     
     dic['form'] = dic['interface']
-    if feedback != "":
+    if feedback.strip() != "":
         dic['form'] = "\n".join([dic['form'], dic['format_feedback']])
 
     if dic['settings']['maxattempt'] is not None:
