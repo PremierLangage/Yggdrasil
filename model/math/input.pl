@@ -86,6 +86,7 @@ mathField.innerFields[0].latex("{{ prev_value }}");
 var mathField = MQ.MathField(mathFieldSpan);
 mathField.latex("{{ prev_value }}");
 {% endif %}
+mathFieldSpan.popover({content: "La réponse doit être une expression mathématique", placement: "top"}); 
 
 </script>
 <script>
@@ -130,7 +131,7 @@ return true;
         $('#math-field').popover('hide');
         {% if score == -1 %}
         $('#math-field').popover({content: "{{feedback}}", placement: "top"}); 
-        $('#math-field').popover('show');
+        document.getElementById('math-field').popover('show');
         {% else %}
           //actions.find('.action-submit').popover({content: "Coucou !", placement: "top"}); 
           //actions.find('.action-submit').popover('show');  
