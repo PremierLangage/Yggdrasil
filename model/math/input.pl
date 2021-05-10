@@ -116,7 +116,7 @@ return true;
 
         {% if not "submit" in internals.buttons %}
         actions.find('.action-submit').remove();
-        buttons.append(`<a type="button"  class="btn btn-warning action-reroll" href="`+link+`?action=reroll"><i class="fas fa-dice"></i> Nouveau</a>`);
+        buttons.append(`<a type="button"  class="btn btn-primary action-reroll" href="`+link+`?action=reroll"><i class="fas fa-dice"></i> Nouveau</a>`);
         {% endif %}
         {% if input_embed|length > 0 %}
         mathField.reflow();
