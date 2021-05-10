@@ -129,7 +129,7 @@ return true;
         mathField.reflow();
         {% endif %}
         {% if score == -1 %}
-        $('#math-field').data('bs.popover').options.content = "{{feedback}}"
+        $('#math-field').data('popover').options.content = "{{feedback}}"
         $('#math-field').popover('show');
         {% else %}
           //actions.find('.action-submit').popover({content: "Coucou !", placement: "top"}); 
