@@ -136,10 +136,15 @@ return true;
 format_feedback ==
 <br>
 <br>
-<div class="alert alert-info alert-dismissible fade show" style="display:inline-block;" role="alert">
-  {{ feedback }}  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
+<a class="text-success" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample">
+{% if score == -1 %}
+Attention
+{% else %}
+Erreur
+{% endif %}
+</a>
+<div class="collapse" id="collapseExample2">
+{{ feedback }}
 </div>
 ==
 
