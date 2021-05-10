@@ -128,13 +128,6 @@ return true;
         {% if input_embed|length > 0 %}
         mathField.reflow();
         {% endif %}
-        {% if score == -1 %}
-        $('#math-field').popover({content: "{{feedback}}", placement: "top"}); 
-        document.getElementById('math-field').popover('show');
-        {% else %}
-          //actions.find('.action-submit').popover({content: "Coucou !", placement: "top"}); 
-          //actions.find('.action-submit').popover('show');  
-        {% endif %}
         {% if score == 100 %}
         actions.append('<button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>');
         {% endif %}
