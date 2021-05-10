@@ -138,7 +138,7 @@ format_feedback ==
 <br>
 {% if score == -1 %}
 <a class="text-info" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
-Attention
+Attention !
 {% else %}
 <a class="text-danger" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
 Erreur
