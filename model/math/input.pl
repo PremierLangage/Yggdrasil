@@ -145,7 +145,9 @@ style.test ==
    font-size: 20px;
 }
 
-
+.exercise__instructions{
+   font-size: 16px;
+}
 .exercise__actions .btn-group {
    float: left;
 }
