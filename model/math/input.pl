@@ -41,7 +41,7 @@ linksolution ==
 == 
 
 
-form ==
+interface ==
 {{ input_prefix }}
 {% if input_embed|length > 1 %}
 <div id="math-field"> {{ input_embed }}</div>
