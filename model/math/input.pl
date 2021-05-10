@@ -175,21 +175,8 @@ return true;
           //actions.find('.action-submit').popover('show');  
         {% endif %}
 
-         {% if score %}
-
-        {% else %}
         actions[0].insertAdjacentHTML('beforeend', '<button type="button" id="btn-score" style="float: right;" class="btn btn-outline-secondary">Score : - </button>');
-        {% endif %}
-        {% if score2 == 100 %}
-          actions[0].insertAdjacentHTML('beforeend', '<button type="button" style="float: right;" class="btn btn-outline-secondary success-state animated pulse">Score : {{score}}</button>');
-        {% endif %}
-        {% if score2 == 0 %}
-          actions[0].insertAdjacentHTML('beforeend', '<button type="button" style="float: right;" class="btn btn-outline-secondary error-state animated pulse">Score : {{score}}</button>');
-        {% endif %}
-        {% if score2 == -1 %}
-          actions[0].insertAdjacentHTML('beforeend', '<button type="button" style="float: right;" class="btn btn-outline-secondary">Score : {{score}}</button>');
-        {% endif %}
-    }
+
 </script>
 ==
 
