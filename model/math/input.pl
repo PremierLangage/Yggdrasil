@@ -141,7 +141,6 @@ return true;
         const link = origin + pathname;
 
         const buttons = actions.find('.btn-group');
-         $('#math-field').popover('destroy');
 
         {% if "reroll2" in internals.buttons %}
         buttons.append(`
