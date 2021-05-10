@@ -65,17 +65,6 @@ if __name__ == "__main__":
     # HACK for components in lists
     aux_component(dic)
 
-    if 'settings' not in dic:
-        dic['settings'] = {}
-
-    if 'internals' not in dic:
-        dic['internals'] = {}
-
-    if 'scenario' in dic['settings']:
-        dic['internals']['buttons'] = ["submit","reroll"]
-    else:
-        dic['internals']['buttons'] = ["submit","reroll"]
-
     dic['internals']['attempt'] = 1
 
     dic['form'] = dic['interface']
