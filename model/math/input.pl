@@ -161,6 +161,9 @@ style.test ==
 .action-next {
    display: none;
 }
+.action-download-env {
+   display: none;
+}
 </style>
 ==
 
