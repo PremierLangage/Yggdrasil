@@ -138,6 +138,9 @@ return true;
         actions.find('.action-reset').remove();
         actions.find('.action-next').remove();
 
+        actions[0].insertAdjacentHTML('beforeend', '<button type="button" id="btn-score" style="float: right;" class="btn btn-outline-secondary">Score : - </button>');
+
+
         const { origin, pathname }  = document.location;
         const link = origin + pathname;
 
@@ -169,6 +172,7 @@ return true;
           //actions.find('.action-submit').popover({content: "Coucou !", placement: "top"}); 
           //actions.find('.action-submit').popover('show');  
         {% endif %}
+
 
 </script>
 ==
