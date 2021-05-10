@@ -62,7 +62,6 @@ form ==
 </div>
 {% endif %}
 <input type="text" id="form_math" hidden=true>
-<hr class="border">
 ==
 
 
@@ -122,6 +121,7 @@ return true;
         {% if input_embed|length > 0 %}
         mathField.reflow();
         {% endif %}
+        actions.prepend('<hr class="border">');
         {% if score == 100 %}
         actions.append('<button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>');
         {% endif %}
