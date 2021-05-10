@@ -122,6 +122,7 @@ return true;
         mathField.reflow();
         {% endif %}
         actions.prepend('<hr class="border">');
+        actions[0].innerHTML = actions[0].innerHTML.replace('<br>', '');
         {% if score == 100 %}
         actions.append('<button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>');
         {% endif %}
