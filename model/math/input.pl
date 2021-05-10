@@ -103,7 +103,7 @@ style.mathquill ==
 javascript.mathquill ==
 <script>
 function onAfterSubmitPL(nodes) {
-$('#btn-score').html("Score : {{score}}");
+$('#btn-score').html("Score2");
 {% if score >= 0 %}
 //var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {backdrop: false});
 //myModal.show();
