@@ -137,14 +137,14 @@ format_feedback ==
 <br>
 <br>
 {% if score == -1 %}
-<a class="text-info show" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
+<a class="text-info" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
 Attention !
 {% else %}
-<a class="text-danger show" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
+<a class="text-danger" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
 Erreur
 {% endif %}
 </a>
-<div class="collapse" id="collapseExample2">
+<div class="collapse show" id="collapseExample2">
 {{ feedback }}
 </div>
 ==
