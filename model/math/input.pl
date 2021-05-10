@@ -103,8 +103,7 @@ style.mathquill ==
 javascript.mathquill ==
 <script>
 function onAfterSubmitPL(nodes) {
-$('#btn-score').html("Score2");
-alert($('#btn-score').html())
+nodes.getElementById('btn-score').innerHTML = "Score : {{ score }}";
 }
 </script>
 
