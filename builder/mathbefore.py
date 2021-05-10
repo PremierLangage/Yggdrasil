@@ -78,6 +78,7 @@ if __name__ == "__main__":
 
     dic['internals']['attempt'] = 1
 
+    dic['form'] = dic['interface']
     # render some string values of the exercise dictionary with the custom Jinja environment
     jinja_keys = dic.get('jinja_keys', ['text', 'form', 'solution'])
 
