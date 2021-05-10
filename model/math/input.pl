@@ -104,7 +104,7 @@ javascript.mathquill ==
 <script>
 function onAfterSubmitPL(nodes) {
 $('#btn-score').html("Score2");
-alert('dd')
+alert($('#btn-score').html())
 }
 </script>
 
