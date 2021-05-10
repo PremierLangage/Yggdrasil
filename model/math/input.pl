@@ -134,13 +134,11 @@ return true;
 ==
 
 format_feedback ==
-<br>
-<br>
 {% if score == -1 %}
-<a class="text-info" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
+<a class="text-info" style="margin-top: 1em;" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
 Attention !
 {% else %}
-<a class="text-danger" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
+<a class="text-danger" style="margin-top: 1em;" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
 Erreur
 {% endif %}
 </a>
