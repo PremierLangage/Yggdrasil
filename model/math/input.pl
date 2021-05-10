@@ -7,7 +7,7 @@ input_prefix = Réponse :
 before =
 
 text ==
-<hr>
+<hr class="w-100">
 ==
 
 title =
