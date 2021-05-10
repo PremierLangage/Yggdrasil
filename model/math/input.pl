@@ -86,7 +86,6 @@ mathField.innerFields[0].latex("{{ prev_value }}");
 var mathField = MQ.MathField(mathFieldSpan);
 mathField.latex("{{ prev_value }}");
 {% endif %}
-$('#math-field').popover({content: "La réponse doit être une expression mathématique.", placement: "top"}); 
 
 </script>
 <script>
@@ -127,6 +126,11 @@ return true;
         {% if score == 0 %}
         actions.append('<button type="button" style="float: right;" class="btn error-state animated pulse">Score : {{score}} </button>');
         {% endif %}
+        {% if score == 0 %}
+        $('#math-field').popover({content: "{{ feedback }}", placement: "top"}); 
+        {% endif %}
+
+
    }
 </script>
 ==
