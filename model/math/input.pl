@@ -86,7 +86,7 @@ mathField.innerFields[0].latex("{{ prev_value }}");
 var mathField = MQ.MathField(mathFieldSpan);
 mathField.latex("{{ prev_value }}");
 {% endif %}
-mathFieldSpan.popover({content: "La réponse doit être une expression mathématique", placement: "top"}); 
+$(('#math-field').popover({content: "La réponse doit être une expression mathématique", placement: "top"}); 
 
 </script>
 <script>
