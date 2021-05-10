@@ -133,6 +133,7 @@ return true;
 
 format_feedback ==
 <br>
+<br>
 <div class="alert alert-info alert-dismissible fade show" style="display:inline-block;" role="alert">
   {{ feedback }}  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
