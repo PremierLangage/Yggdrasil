@@ -9,7 +9,7 @@ before =
 text ==
 ==
 
-title =
+title = Title
 
 form ==
 
@@ -141,7 +141,7 @@ return true;
 
 style.test ==
 <style>
-.exercise-header {
+.exercise__title {
    font-size: 16px;
 }
 
