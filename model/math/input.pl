@@ -7,7 +7,6 @@ input_prefix = Réponse :
 before =
 
 text ==
-<hr class="border">
 ==
 
 title =
@@ -63,7 +62,7 @@ form ==
 </div>
 {% endif %}
 <input type="text" id="form_math" hidden=true>
-<hr>
+<hr class="border">
 ==
 
 
