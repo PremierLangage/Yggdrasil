@@ -76,6 +76,10 @@ if __name__ == "__main__":
     if score >= 0:
         dic['internals']['attempt'] = dic['internals']['attempt'] + 1
     
+    dic['form'] = dic['interface']
+    if feedback != "":
+        dic['form'] = "\n".join([dic['form'], dic['format_feedback']])
+
     if dic['settings']['maxattempt'] is not None:
         if dic['internals']['attempt'] > dic['settings']['maxattempt']:
             try:
@@ -83,7 +87,7 @@ if __name__ == "__main__":
             except:
                 pass
             if score < 100 and 'solution' in dic:
-                dic['form'] = "\n".join([dic['form'], dic['format_feedback'], dic['linksolution']])
+                dic['form'] = "\n".join([dic['form'], dic['linksolution']])
     
     feedback = Env.from_string(feedback).render(dic)
     ffeedback = ""
