@@ -122,7 +122,7 @@ return true;
         mathField.reflow();
         {% endif %}
         actions.prepend('<hr class="border">');
-        $('br', '.actions').remove();​
+        actions.find('br').remove();
         {% if score == 100 %}
         actions.append('<button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>');
         {% endif %}
