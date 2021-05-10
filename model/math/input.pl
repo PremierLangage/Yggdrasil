@@ -183,8 +183,8 @@ return true;
         {% if score == 0 %}
           actions[0].insertAdjacentHTML('beforeend', '<button type="button" style="float: right;" class="btn btn-outline-secondary danger-state animated pulse">Score : {{score}}</button>');
         {% endif %}
-        {% if score == 0 %}
-          actions[0].insertAdjacentHTML('beforeend', '<button type="button" style="float: right;" class="btn btn-outline-secondary danger-state animated pulse">Score : {{score}}</button>');
+        {% if score == -1 %}
+          actions[0].insertAdjacentHTML('beforeend', '<button type="button" style="float: right;" class="btn btn-outline-secondary">Score : {{score}}</button>');
         {% endif %}
     }
 </script>
