@@ -28,7 +28,6 @@ input_prefix =
 
 
 linksolution ==
-<br><br>
 <p>
 <a class="text-success" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
   Solution
