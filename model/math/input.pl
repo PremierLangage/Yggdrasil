@@ -141,7 +141,7 @@ format_feedback ==
 Attention
 {% else %}
 <a class="text-danger" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
-Attention
+Erreur
 {% endif %}
 </a>
 <div class="collapse" id="collapseExample2">
