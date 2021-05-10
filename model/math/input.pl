@@ -101,7 +101,6 @@ style.mathquill ==
 
 
 javascript.mathquill ==
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
 <script>
 var MQ = MathQuill.getInterface(2);
@@ -138,9 +137,6 @@ return true;
         actions.find('.action-reset').remove();
         actions.find('.action-next').remove();
 
-        actions[0].insertAdjacentHTML('beforeend', '<button type="button" id="btn-score" style="float: right;" class="btn btn-outline-secondary">Score : - </button>');
-
-
         const { origin, pathname }  = document.location;
         const link = origin + pathname;
 
@@ -172,8 +168,18 @@ return true;
           //actions.find('.action-submit').popover({content: "Coucou !", placement: "top"}); 
           //actions.find('.action-submit').popover('show');  
         {% endif %}
+        actions[0].insertAdjacentHTML('beforeend', '<button type="button" id="btn-score" style="float: right;" class="btn btn-outline-secondary">Score : - </button>');
 
-
+        {% if score2 == 100 %}
+          actions[0].insertAdjacentHTML('beforeend', '<button type="button" style="float: right;" class="btn btn-outline-secondary success-state animated pulse">Score : {{score}}</button>');
+        {% endif %}
+        {% if score2 == 0 %}
+          actions[0].insertAdjacentHTML('beforeend', '<button type="button" style="float: right;" class="btn btn-outline-secondary error-state animated pulse">Score : {{score}}</button>');
+        {% endif %}
+        {% if score2 == -1 %}
+          actions[0].insertAdjacentHTML('beforeend', '<button type="button" style="float: right;" class="btn btn-outline-secondary">Score : {{score}}</button>');
+        {% endif %}
+    }
 </script>
 ==
 
