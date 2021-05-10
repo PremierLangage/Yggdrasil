@@ -136,7 +136,7 @@ return true;
 format_feedback ==
 <br>
 <br>
-<a class="text-success" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
+<a class="text-info" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
 {% if score == -1 %}
 Attention
 {% else %}
