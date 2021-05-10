@@ -131,7 +131,9 @@ return true;
         actions.append('<button type="button" style="float: right;" class="btn error-state animated pulse">Score : {{score}} </button>');
         {% endif %}
         {% if score == -1 %}
-        feedback.append('toto');
+        feedback.append('<div class="alert alert-light" role="alert">
+  A simple light alert—check it out!
+</div>');
         {% endif %}
 
 
