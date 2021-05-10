@@ -7,7 +7,7 @@ input_prefix = Réponse :
 before =
 
 text ==
-<hr class="w-100">
+<hr class="border border-primary">
 ==
 
 title =
