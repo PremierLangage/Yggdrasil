@@ -11,7 +11,7 @@ grade = (100, 'OK')
 ==
 
 #! linter:a:a::int
-a = 3
+
 
 
 title== #|html|
