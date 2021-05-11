@@ -46,7 +46,8 @@ class CustomMatchList(Component):
             self.nodes.append({
                 "id": targetid,
                 "content": target,
-                "target": True
+                "target": True,
+                "multiple" : True
             })
             self._sol.append({'source': sourceid, 'target': targetid})
         rd.shuffle(self.nodes)
