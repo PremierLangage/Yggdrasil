@@ -8,7 +8,10 @@ matchlist.decorator = CustomMatchList
 title =
 
 nbmatches % null
+
+# Délui
 delimiter % ","
+
 scoring = RightMinusWrong
 
 footerbefore ==
