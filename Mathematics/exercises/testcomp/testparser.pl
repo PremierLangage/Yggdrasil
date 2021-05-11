@@ -3,7 +3,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 before== #|python|
-b = a + a 
+b = 2
 ==
 
 evaluator== #|python|
