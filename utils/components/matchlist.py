@@ -25,7 +25,8 @@ class CustomMatchList(Component):
             self.nodes.append({
                 "id": str(uuid4()),
                 "content": source,
-                "target": True
+                "target": True,
+                "multiple" : True
             })
 
     def setdata_from_matches(self, matches):
