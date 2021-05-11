@@ -12,3 +12,5 @@ Italie,Rome
 Allemagne,Berlin
 Espagne,Madrid
 ==
+
+multiple % true
