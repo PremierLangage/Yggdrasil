@@ -12,6 +12,9 @@ pltest0==
 2
 >>> b #b doit avoir la valeur 3
 3
+==
+
+pltest1==
 >>> c #c doit avoir la valeur 5
 5
 ==
