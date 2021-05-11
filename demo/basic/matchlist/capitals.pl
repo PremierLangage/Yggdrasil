@@ -1,5 +1,6 @@
 extends = /model/basic/matchlist.pl
 
+title = Capitales
 
 text ==
 Relier chaque pays à sa capitale.
