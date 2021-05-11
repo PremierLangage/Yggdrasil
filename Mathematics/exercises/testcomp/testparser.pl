@@ -10,8 +10,8 @@ evaluator== #|python|
 grade = (100, 'OK')
 ==
 
-#
-a ={int} 3
+# !linter:a: int
+a = 3
 
 title== #|html|
 ==
