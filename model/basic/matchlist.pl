@@ -26,6 +26,9 @@ else:
 
 matchlist.setdata_from_matches(rd.sample(_matches_, _nbmatches_))
 matchlist.scoring = scoring
+
+if multiple:
+    matchlist.multiple = True
 ==
 
 form ==
