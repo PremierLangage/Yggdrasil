@@ -10,7 +10,7 @@ evaluator== #|python|
 grade = (100, 'OK')
 ==
 
-#! linter:require:a::str
+#! linter:require:a
 
 
 title== #|html|
