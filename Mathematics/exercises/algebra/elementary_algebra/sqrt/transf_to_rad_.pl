@@ -27,4 +27,4 @@ Ecrire l'expression suivante sous la forme  $% \sqrt{a} %$, où $% a %$ est un e
 
 input_prefix = $! {{expr}} = !$
 
-input_embed = \sqrt{\MathQuillMathField{   }}
+input_embed = \sqrt{\MathQuillMathField{}}
