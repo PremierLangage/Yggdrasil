@@ -10,7 +10,7 @@ evaluator== #|python|
 grade = (100, 'OK')
 ==
 
-#! linter:a::int
+#! linter:a:a::int
 a = 3
 
 
