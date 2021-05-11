@@ -6,7 +6,7 @@ title =
 @ /utils/plrandom.py
 @ /utils/plcsv.py
 
-importfunc ==
+importfunc == #|python|
 from random import choice, choices, sample, shuffle
 from plrandom import randint, sampleint
 from plcsv import csv_choice, csv_sample, csv_col
@@ -14,7 +14,7 @@ from plcsv import csv_choice, csv_sample, csv_col
 
 settings.maxattempt % 1
 
-style.basic ==
+style.basic == #|css|
 .icon-check-after p::after {
     font-family: "Font Awesome 5 Free";
     color: #155724;
