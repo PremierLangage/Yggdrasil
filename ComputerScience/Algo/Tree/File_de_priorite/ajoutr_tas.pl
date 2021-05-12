@@ -29,10 +29,10 @@ text==
 On représente un tas dynamique avec la structure:  
 ```
     typedef struct {    
-        int taille;/* nombre d'éléments présents*/
-        int *arbre;
-        int max;/* nombre maximum d'éléments */
-    }Tas;
+        int taille;/* nombre d'éléments présents*/   
+        int *arbre;   
+        int max;/* nombre maximum d'éléments */   
+    }Tas;   
 ```
 On alloue BLOC éléments lorsque le tableau est plein et on libère BLOC éléments lorsque 2*BLOC sont vides.
 Ceci écite des allocations_désallocations succéssives.
