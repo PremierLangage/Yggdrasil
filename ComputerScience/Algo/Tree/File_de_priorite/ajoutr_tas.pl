@@ -24,13 +24,16 @@ tag=recherche
 
 editor.height=300px
 
-text== 
+text==
+
 On représente un tas dynamique avec la structure:  
+```
     typedef struct {    
         int taille;/* nombre d'éléments présents*/
         int *arbre;
         int max;/* nombre maximum d'éléments */
     }Tas;
+```
 On alloue BLOC éléments lorsque le tableau est plein et on libère BLOC éléments lorsque 2*BLOC sont vides.
 Ceci écite des allocations_désallocations succéssives.
  Ecrire une fonction **ajoute** qui reçoit un Tas et un entier et ajoute l'entier au  tas. La fonction renvoie 1 si l'ajout et réussit. En cas d'échec elle renvoie 0.
