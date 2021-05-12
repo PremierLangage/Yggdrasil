@@ -43,8 +43,9 @@ editor.language = sql
 
 
 #* feedback in case of success
-feedback_success = <p class="success-state"> Bravo! Vous avez réussi! </p>
-
+feedback_success ==
+ <p class="success-state"> Bravo! Vous avez réussi! </p>
+==
 #* feedback in case of error. {0} is replaced by the occured error
 feedback_error = <p class="error-state">Votre réponse a provoqué une erreur.<br>{0}</p>
 
