@@ -37,7 +37,6 @@ for i in range(len(lst)):
         simpfalse = '%s - % s' % (a_tex,b_tex)
     if i in indsol:
         simpexpr=simptrue
-        indsol.append(i)
     else:
         simpexpr=simpfalse
     s='$$ |%s - % s| = %s $$' % (a_tex,b_tex,simpexpr)
