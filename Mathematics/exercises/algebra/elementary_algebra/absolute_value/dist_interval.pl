@@ -1,4 +1,4 @@
-extends = /model/math/expr.pl
+extends = /model/math/interval.pl
 
 title = Inéquation avec valeur absolue
 
