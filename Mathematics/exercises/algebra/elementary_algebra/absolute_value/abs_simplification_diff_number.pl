@@ -1,4 +1,5 @@
 extends = /model/basic/checkbox.pl
+extends = /model/math/importfunc.pl
 
 title = Simplification de valeurs abolues
 
