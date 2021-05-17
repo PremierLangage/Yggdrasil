@@ -52,7 +52,7 @@ interface ==
 </button>
 <div class="dropdown-menu dropdown-menu-right" style="max-width: 100px;">
 {% for item in input_keypad %}
-<button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
+<button class="btn btn-circle btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
 {% endfor %}
 </div>
 </div>
