@@ -39,7 +39,7 @@ for i in range(len(lst)):
         simpexpr=simptrue
     else:
         simpexpr=simpfalse
-    s='$$ |%s - % s| = %s $$' % (a_tex,b_tex,simpexpr)
+    s='$! |%s - % s| = %s !$' % (a_tex,b_tex,simpexpr)
     items.append(s)
     
 ==
