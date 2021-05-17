@@ -1,30 +1,19 @@
-extends = /model/math/math.pl
+extends = /model/basic/checkbox.pl
 
-@ /utils/components/scoring.py
-@ /utils/components/checkbox.py [customcheckbox.py]
+@ /utils/sympy/latex2sympy.py
+@ /utils/sympy/sympy2latex.py
+@ /utils/sympy/randsympy.py
+@ /utils/sympy/mplsympy.py
+@ /utils/plrandom.py
 
-checkbox =: CheckboxGroup
-checkbox.decorator = CustomCheckbox
-
-shuffle % true
-
-footerbefore ==
-checkbox.setitems(items)
-checkbox.setsol_from_index(indsol)
-
-if shuffle_items:
-    checkbox.shuffle()
-==
-
-settings.maxattempt % 1
-
-settings.feedback = lightscore
-
-form ==
-{{ checkbox|component }}
-==
-
-evaluator ==
-feedback = " "
-score = checkbox.eval()
+importfunc ==
+from sympy import E, I, pi, oo
+from sympy import sqrt, Abs, sin, cos, tan, exp, ln
+from sympy import var, symbols, Symbol
+from sympy import sympify, simplify, Lambda
+from sympy import Integer, Rational, Poly, FiniteSet, Tuple
+from random import choice, choices, sample, shuffle
+from plrandom import randint, sampleint
+from sympy2latex import latex
+from latex2sympy import latex2sympy
 ==
