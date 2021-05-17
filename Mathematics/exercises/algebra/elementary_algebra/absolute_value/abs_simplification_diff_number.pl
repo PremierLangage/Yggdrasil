@@ -18,6 +18,7 @@ from latex2sympy import latex2sympy
 @ /utils/sympy/sympy2latex.py
 
 before ==
+from sympy import floor
 lst = [choice([2*pi,pi]),choice([2*sqrt(2),sqrt(2)]),choice([sqrt(3),2*sqrt(3)])]
 shuffle(lst)
 indsol = sampleint(0, 3, randint(1, 2))
