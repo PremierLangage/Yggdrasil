@@ -2,8 +2,6 @@ extends = /model/basic/checkbox.pl
 
 title = Simplification de valeurs abolues
 
-
-
 before ==
 from sympy import floor, ceiling
 lst = [choice([2*pi,pi]),choice([2*sqrt(2),sqrt(2)]),choice([sqrt(3),2*sqrt(3)])]
