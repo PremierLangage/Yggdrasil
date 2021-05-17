@@ -14,6 +14,9 @@ from sympy2latex import latex
 from latex2sympy import latex2sympy
 ==
 
+@ /utils/sympy/latex2sympy.py
+@ /utils/sympy/sympy2latex.py
+
 before ==
 lst = [choice([2*pi,pi]),choice([2*sqrt(2),sqrt(2)]),choice([sqrt(3),2*sqrt(3)])]
 shuffle(lst)
