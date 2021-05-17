@@ -47,7 +47,7 @@ interface ==
 {% if input_keypad|length > 0 %}
 
 <button type="button" class="btn btn-circle btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<i class="fal fa-keyboard"></i>
+<i class="fas fa-keyboard fa-lg"></i>
 </button>
 <div class="dropdown-menu dropdown-menu-right" style="max-width: 100px;">
 {% for item in input_keypad %}
