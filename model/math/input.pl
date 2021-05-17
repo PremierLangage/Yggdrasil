@@ -47,7 +47,7 @@ interface ==
 {% if input_keypad|length > 0 %}
 
 <div class="btn-group">
-  <button type="button" class="btn btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<button type="button" class="btn btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 <i class="fas fa-keyboard"></i>
 </button>
 <div class="dropdown-menu dropdown-menu-right" style="max-width: 100px;">
@@ -63,6 +63,16 @@ interface ==
 
 style.mathquill ==
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
+ <style>
+        .btn-circle.btn-sm {
+            width: 30px;
+            height: 30px;
+            padding: 6px 0px;
+            border-radius: 15px;
+            font-size: 8px;
+            text-align: center;
+        }
+ </style>
 ==
 
 
