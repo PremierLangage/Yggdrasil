@@ -1,4 +1,4 @@
-extends = /model/checkbox.pl
+extends = /model/basic/checkbox.pl
 
 title = Simplification de valeurs abolues
 
