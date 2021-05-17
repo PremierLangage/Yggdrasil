@@ -3,7 +3,7 @@ extends = /model/math/expr.pl
 title = Inéquation avec valeur absolue
 
 before ==
-from sympy import
+from sympy import solveset, S
 a = randint(-6, 6, [0])
 d = randint(1, 5)
 var('x')
