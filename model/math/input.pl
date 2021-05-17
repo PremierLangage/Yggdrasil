@@ -46,7 +46,6 @@ interface ==
 {% endif %}
 {% if input_keypad|length > 0 %}
 
-<div class="btn-group">
 <button type="button" class="btn btn-circle btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 <i class="fas fa-keyboard"></i>
 </button>
@@ -54,7 +53,6 @@ interface ==
 {% for item in input_keypad %}
 <button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
 {% endfor %}
-</div>
 </div>
 {% endif %}
 <input type="text" id="form_math" hidden=true>
