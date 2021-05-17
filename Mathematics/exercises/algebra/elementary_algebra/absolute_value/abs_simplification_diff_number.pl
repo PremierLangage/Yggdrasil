@@ -21,7 +21,7 @@ before ==
 from sympy import floor, ceiling
 lst = [choice([2*pi,pi]),choice([2*sqrt(2),sqrt(2)]),choice([sqrt(3),2*sqrt(3)])]
 shuffle(lst)
-indsol = sampleint(0, 3, randint(1, 2))
+indsol = sampleint(0, 2, randint(1, 2))
 items = []
 for i in range(len(lst)):
     a=lst[i]
