@@ -2,7 +2,8 @@
 @ /grader/mathevaluator.py [grader.py]
 @ /utils/builderlib.py
 
-@ /model/jinja_env/test.py [jinja_env.py]
+@ /model/math/jinja_math.py [jinja_env.py]
+@ /model/math/json_math.py [json_coder.py]
 @ /utils/sympy/evalsympy.py
 @ /utils/sympy/latex2sympy.py
 @ /utils/sympy/sympy2latex.py
