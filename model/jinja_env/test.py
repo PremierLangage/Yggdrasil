@@ -1,4 +1,5 @@
 from jinja2 import Environment, BaseLoader, contextfilter
+from sympy2latex import latex
 
 def component(l):
     if isinstance(l, dict):
