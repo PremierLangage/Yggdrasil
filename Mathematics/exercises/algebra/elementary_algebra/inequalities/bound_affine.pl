@@ -12,7 +12,7 @@ var('x')
 a=randint(-3,3,[0])
 b=randint(-8,8,[0])
 x1, x2 = sorted(sampleint(-8, 8, 2))
-#s1, s2 = choices(['<','<='], k=2)
+s1, s2 = choices(['<','<='], k=2)
 
 if a>0:
     sol=[a*x1+b, s1, a*x+b, s2, a*x2+b]
