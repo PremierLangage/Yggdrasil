@@ -21,7 +21,7 @@ else:
     sol = [a*x2+b, s2, a*x+b, s1, a*x1+b]
 
 tt = latex( s1)
-ineq = latex_ineq([x1,s1,x,s2,x2])
+ineq = " ".join(latex([x1, s1, x, s2, x2]))
 expr = a*x+b
 ==
 
