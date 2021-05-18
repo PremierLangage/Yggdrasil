@@ -12,7 +12,7 @@ def component(l):
 
 @contextfilter
 def customlatex(ctx, expr):
-    return "" #latex(expr)
+    return str(ctx) #latex(expr)
 
 Env = Environment(loader=BaseLoader())
 Env.filters["component"] = component
