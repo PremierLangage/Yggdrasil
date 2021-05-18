@@ -5,12 +5,17 @@ extends = /model/basic/basic.pl
 radio =: RadioGroup
 radio.decorator = CustomRadio
 
-indsol % 0
-shuffled % true
+indsol = 0
+shuffled = True
 
 before_scripts % ["importfunc", "before", "process"]
 
 process ==
+from ast import literal_eval
+
+indsol = literal_eval(str(indsol))
+shuffled = literal_eval(str(shuffled))
+
 if isinstance(items, str):
     _items_ = items.splitlines()
 else:
