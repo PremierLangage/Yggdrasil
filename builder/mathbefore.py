@@ -27,8 +27,8 @@ def component(l):
         cid = l.cid
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
-Env = Environment(loader=BaseLoader())
-Env.filters["component"] = component
+#Env = Environment(loader=BaseLoader())
+#Env.filters["component"] = component
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
