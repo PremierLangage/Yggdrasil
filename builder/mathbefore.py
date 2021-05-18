@@ -77,7 +77,7 @@ if __name__ == "__main__":
     def customlatex(expr):
         return latex(expr, **latexsettings)
 
-    Env.filters["latex"] = customlatex
+    #Env.filters["latex"] = customlatex
 
     for key in jinja_keys:
         if key in dic:
