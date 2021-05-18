@@ -5,10 +5,6 @@ import sys, json, jsonpickle, os
 from components import Component
 from builderlib import aux_component
 from jinja2 import Environment, BaseLoader
-from sympy import Basic, Matrix, srepr
-from sympy2latex import latex
-
-
 
 # Import the custom JSON encoder
 try:
