@@ -16,7 +16,7 @@ from random import randint
 from ast import literal_eval
 
 for v in [nbitems, minright, maxright]:
-    x = literal_eval(v)
+    x = literal_eval(str(v))
 
 if isinstance(right, str):
     _right_ = right.splitlines()
