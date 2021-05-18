@@ -10,8 +10,8 @@ def component(l):
         cid = l.cid
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
-
-def customlatex(expr):
+@contextfilter
+def customlatex(ctx, expr):
     return "" #latex(expr)
 
 Env = Environment(loader=BaseLoader())
