@@ -1,6 +1,12 @@
 #! indsol:int
 indsol = 0
 
+"""
+comment
+"""
+items =
+
+
 #! shuffled:bool
 shuffled = True
 
