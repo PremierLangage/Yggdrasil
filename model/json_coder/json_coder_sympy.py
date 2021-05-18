@@ -1,19 +1,12 @@
 import json, jsonpickle
-import sympy
-
-try:
-    from namespace import namespace
-except ModuleNotFoundError:
-    namespace = {}
+import sympy import srepr, Basic, Matrix
 
 
 class JSONEncoder(json.JSONEncoder):
-
     def default(self, obj):
-        if isinstance(obj, (sympy.Basic, sympy.Matrix)):
-            return {'__SymPy__': True, 'srepr': sympy.srepr(obj)}
+        if isinstance(obj, (Basic, Matrix)):
+            return {'__SymPy__': True, 'srepr': srepr(obj)}
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
-
 
 class JSONDecoder(json.JSONDecoder):
 
