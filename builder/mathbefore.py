@@ -8,12 +8,7 @@ from jinja2 import Environment, BaseLoader
 from sympy import Basic, Matrix, srepr
 from sympy2latex import latex
 
-# JSON encoder
-class JSONEncoder(json.JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, (Basic, Matrix)):
-            return {'__SymPy__': True, 'srepr': srepr(obj)}
-        return jsonpickle.Pickler(unpicklable=False).flatten(obj)
+
 
 # Import the custom JSON encoder
 try:
@@ -22,7 +17,10 @@ except ModuleNotFoundError:
     JSONEncoder = PickleEncoder
 
 # Jinja environnement
-from jinja_env import Env
+try:
+    from jinja_env import Env
+except ModuleNotFoundError:
+    JSONEncoder = PickleEncoder
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
