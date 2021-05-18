@@ -10,9 +10,9 @@ def component(l):
         cid = l.cid
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
-@contextfilter
-def customlatex(ctx, expr):
-    return ctx #latex(expr)
+
+def customlatex(expr):
+    return "" #latex(expr)
 
 Env = Environment(loader=BaseLoader())
 Env.filters["component"] = component
