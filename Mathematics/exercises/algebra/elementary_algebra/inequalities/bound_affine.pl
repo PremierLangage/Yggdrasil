@@ -8,6 +8,7 @@ title = Encadrement de $% a x + b %$
 
 
 before ==
+from sympy2latex
 var('x')
 a=randint(-3,3,[0])
 b=randint(-8,8,[0])
