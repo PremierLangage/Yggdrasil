@@ -4,6 +4,8 @@ indsol = 0
 #! shuffled:bool
 shuffled = True
 
+#! items:str
+
 extends = /model/basic/basic.pl
 @ /utils/components/scoring.py
 @ /utils/components/radio.py [customradio.py]
