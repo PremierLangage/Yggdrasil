@@ -16,6 +16,7 @@ class JSONEncoder(json.JSONEncoder):
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
 # Jinja environnement
+from jinja_env import CustomEnv as Env
 
 def component(l):
     if isinstance(l, dict):
