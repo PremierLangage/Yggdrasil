@@ -186,15 +186,3 @@ def latex_lincomb(coeff, vec):
                 code+=latex(coeff[i])+" "+vec[i]
             first=False
     return code
-
-def latex_ineq(lst):
-    expr1,rel1,expr,rel2,expr2=lst
-    rel1=rel1.replace("<=",r"\le")
-    rel1=rel1.replace(">=",r"\ge")
-    rel2=rel2.replace("<=",r"\le")
-    rel2=rel2.replace(">=",r"\ge")
-    return latex(expr1)+rel1+" "+latex(expr)+rel2+" "+latex(expr2)
-
-
-
-
