@@ -138,7 +138,9 @@ def latex(expr, **settings):
     """
     Return a LaTeX string for a SymPy object.
     """
-    if isinstance(expr, str):
+    if isinstance(expr, lst):
+        return [latex(a) for a in expr]
+    elif isinstance(expr, str):
         expr = expr.replace("<=",r"\le")
         expr = expr.replace(">=",r"\ge")
         return expr
