@@ -1,8 +1,8 @@
 import json, jsonpickle
 import sympy import srepr, Basic, Matrix
 
-
 class JSONEncoder(json.JSONEncoder):
+
     def default(self, obj):
         if isinstance(obj, (Basic, Matrix)):
             return {'__SymPy__': True, 'srepr': srepr(obj)}
