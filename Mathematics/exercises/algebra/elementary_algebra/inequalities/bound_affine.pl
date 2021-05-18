@@ -20,11 +20,10 @@ if a>0:
 else:
     sol = [a*x2+b, s2, a*x+b, s1, a*x1+b]
 
-#ineq = latex_ineq([x1,s1,x,s2,x2])
-expr = latex(a*x+b)
+ineq = latex_ineq([x1,s1,x,s2,x2])
 ==
 
 
 text ==
-Soit un nombre $% x %$ tel que $%{{ineq}} %$. Déterminer l'encadrement le plus précis possible de $% {{expr}} %$.
+Soit un nombre $% x %$ tel que $%{{ineq}} %$. Déterminer l'encadrement le plus précis possible de $% {{expr|latex}} %$.
 ==
