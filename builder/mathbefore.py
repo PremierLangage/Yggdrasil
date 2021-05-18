@@ -15,6 +15,12 @@ class JSONEncoder(json.JSONEncoder):
             return {'__SymPy__': True, 'srepr': srepr(obj)}
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
+# Import the custom JSON encoder
+try:
+    from json_encoder import JSONEncoder
+except ModuleNotFoundError:
+    JSONEncoder = PickleEncoder
+
 # Jinja environnement
 from jinja_env import Env
 
