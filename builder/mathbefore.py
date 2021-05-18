@@ -18,7 +18,6 @@ class JSONEncoder(json.JSONEncoder):
 # Jinja environnement
 from jinja_env import Env
 
-
 if __name__ == "__main__":
     if len(sys.argv) < 3:
         msg = ("Sandbox did not call builder properly:\n"
