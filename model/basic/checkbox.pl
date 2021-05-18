@@ -5,7 +5,7 @@ extends = /model/basic/basic.pl
 checkbox =: CheckboxGroup
 checkbox.decorator = CustomCheckbox
 
-shuffled % true
+shuffled = True
 
 before_scripts % ["importfunc", "before", "process"]
 
@@ -17,6 +17,7 @@ process ==
 from ast import literal_eval
 
 indsol = literal_eval(str(indsol))
+shuffled = literal_eval(str(shuffled))
 
 if isinstance(items, str):
     _items_ = items.splitlines()
