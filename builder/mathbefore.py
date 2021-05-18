@@ -18,17 +18,6 @@ class JSONEncoder(json.JSONEncoder):
 # Jinja environnement
 from jinja_env import Env
 
-def component(l):
-    if isinstance(l, dict):
-        selector = l["selector"]
-        cid = l["cid"]
-    else:
-        selector = l.selector
-        cid = l.cid
-    return "<%s cid='%s'></%s>" % (selector, cid, selector)
-
-#Env = Environment(loader=BaseLoader())
-#Env.filters["component"] = component
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
@@ -71,13 +60,6 @@ if __name__ == "__main__":
     dic['form'] = dic['interface']
     # render some string values of the exercise dictionary with the custom Jinja environment
     jinja_keys = dic.get('jinja_keys', ['text', 'form', 'solution'])
-
-    latexsettings = dic.get('latexettings', {})
-
-    def customlatex(expr):
-        return latex(expr, **latexsettings)
-
-    #Env.filters["latex"] = customlatex
 
     for key in jinja_keys:
         if key in dic:
