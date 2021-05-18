@@ -13,6 +13,10 @@ from random import randint, choice, choices, sample, shuffle
 
 process ==
 from random import randint
+from ast import literal_eval
+
+for v in [nbitems, minright, maxright]:
+    v = literal_eval(v)
 
 if isinstance(right, str):
     _right_ = right.splitlines()
