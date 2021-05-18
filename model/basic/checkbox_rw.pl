@@ -15,8 +15,9 @@ process ==
 from random import randint
 from ast import literal_eval
 
-for v in [nbitems, minright, maxright]:
-    v = literal_eval(str(v))
+nbitems = literal_eval(str(nbitems))
+minright = literal_eval(str(minright))
+maxright = literal_eval(str(maxright))
 
 if isinstance(right, str):
     _right_ = right.splitlines()
