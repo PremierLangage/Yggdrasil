@@ -1,12 +1,15 @@
+#! indsol:int
+indsol = 0
+
+#! shuffled:bool
+shuffled = True
+
 extends = /model/basic/basic.pl
 @ /utils/components/scoring.py
 @ /utils/components/radio.py [customradio.py]
 
 radio =: RadioGroup
 radio.decorator = CustomRadio
-
-indsol = 0
-shuffled = True
 
 before_scripts % ["importfunc", "before", "process"]
 
