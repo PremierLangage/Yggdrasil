@@ -3,7 +3,7 @@
 @ /utils/builderlib.py
 
 @ /model/math/jinja_math.py [jinja_env.py]
-@ /model/math/json_math.py [json_coder.py]
+@ /model/math/json_math.py [json_encoder.py]
 @ /utils/sympy/evalsympy.py
 @ /utils/sympy/latex2sympy.py
 @ /utils/sympy/sympy2latex.py
