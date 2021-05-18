@@ -14,6 +14,10 @@ from random import randint, choice, choices, sample, shuffle
 ==
 
 process ==
+from ast import literal_eval
+
+indsol = literal_eval(str(indsol))
+
 if isinstance(items, str):
     _items_ = items.splitlines()
 elif isinstance(items, list):
