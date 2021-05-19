@@ -7,16 +7,11 @@ from builderlib import aux_component
 from jinja2 import Environment, BaseLoader
 
 # Import the custom JSON encoder
-try:
-    from json_encoder import JSONEncoder
-except ModuleNotFoundError:
-    pass
+from json_encoder import JSONEncoder
 
 # Jinja environnement
-try:
-    from jinja_env import Env
-except ModuleNotFoundError:
-    pass
+from jinja_env import Env
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
