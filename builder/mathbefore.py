@@ -1,17 +1,14 @@
 #!/usr/bin/env python3
 # coding: utf-8
-
 import sys, json
 from components import Component
 from builderlib import aux_component
-from jinja2 import Environment, BaseLoader
 
 # Import the custom JSON encoder
 from json_encoder import JSONEncoder
 
 # Jinja environnement
 from jinja_env import Env
-
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
