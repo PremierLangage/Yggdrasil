@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-import sys, json, jsonpickle, os
+import sys, json
 from components import Component
 from builderlib import aux_component
 from jinja2 import Environment, BaseLoader
