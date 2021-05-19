@@ -10,13 +10,13 @@ from jinja2 import Environment, BaseLoader
 try:
     from json_encoder import JSONEncoder
 except ModuleNotFoundError:
-    JSONEncoder = PickleEncoder
+    pass
 
 # Jinja environnement
 try:
     from jinja_env import Env
 except ModuleNotFoundError:
-    JSONEncoder = PickleEncoder
+    pass
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
