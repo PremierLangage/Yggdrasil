@@ -18,7 +18,7 @@ text== #|html|
 ==
 
 form== #|html|
-<button class="btn btn-primary action-submit">
+<button class="btn btn-primary btn-sm action-submit">
     <i class="fas fa-check"></i>
     <span class="ion-hide-md-down">Valider</span>
 </button>
@@ -28,6 +28,10 @@ form== #|html|
 </a>
 <div class="collapse" id="collapseExample">
 {{ solution }}
+<button class="btn btn-primary btn-sm action-submit">
+    <i class="fas fa-check"></i>
+    <span class="ion-hide-md-down">Valider</span>
+</button>
 </div>
 
 ==
