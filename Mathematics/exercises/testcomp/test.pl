@@ -59,6 +59,12 @@ form== #|html|
   </li>
 </ul>
 
+
+<script> 
+
+$('.stepper').mdbStepper();
+
+</script>
 ==
 
 
