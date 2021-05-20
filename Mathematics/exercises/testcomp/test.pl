@@ -18,6 +18,10 @@ text== #|html|
 ==
 
 form== #|html|
+<button class="btn btn-primary action-submit">
+    <i class="fas fa-check"></i>
+    <span class="ion-hide-md-down">Valider</span>
+</button>
 <ul class="stepper linear">
   <li class="step active">
     <div data-step-label="Type something" class="step-title waves-effect waves-dark">Step 1</div>
