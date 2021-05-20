@@ -18,17 +18,22 @@ text== #|html|
 ==
 
 form== #|html|
+<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+  Step 1
+</a>
+<div class="collapse" id="collapseExample">
+Text 1
 <button class="btn btn-primary btn-sm action-submit">
     <i class="fas fa-check"></i>
     <span class="ion-hide-md-down">Valider</span>
 </button>
-
-<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-  Solution
+</div>
+<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+  Step 1
 </a>
-<div class="collapse" id="collapseExample">
-{{ solution }}
-<button class="btn btn-primary btn-xs action-submit">
+<div class="collapse" id="collapseExample2">
+Text 1
+<button class="btn btn-primary btn-sm action-submit">
     <i class="fas fa-check"></i>
     <span class="ion-hide-md-down">Valider</span>
 </button>
