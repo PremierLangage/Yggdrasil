@@ -16,7 +16,7 @@ It should declare a variable 'grade' which should contain a tuple (int, feedback
 if __name__ == "__main__":
 
     with open(sys.argv[1], "r") as f:
-        dic = json.load(f, cls=CustomDecoder)
+        dic = json.load(f, cls=JSONDecoder)
     Component.sync_context(dic)
 
     with open(sys.argv[2], "r") as f:
@@ -66,7 +66,7 @@ if __name__ == "__main__":
     feedback = Env.from_string(feedback).render(dic)
     ffeedback = ""
 
-    # dic = json.loads(json.dumps(dic, cls=CustomEncoder))
+    # dic = json.loads(json.dumps(dic, cls=JSONEncoder))
 
     # hack for MathQuill
     if 'answers' in dic:
@@ -74,7 +74,7 @@ if __name__ == "__main__":
             dic['prev_value'] = dic['answers']['math'].replace("\\", "\\\\")
 
     with open(sys.argv[3], "w+") as f:
-        json.dump(dic, f, cls=CustomEncoder)
+        json.dump(dic, f, cls=JSONEncoder)
     
     with open(sys.argv[4], "w+", encoding='utf-8') as f:
         print("", file=f)
