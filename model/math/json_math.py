@@ -1,5 +1,5 @@
 import json, jsonpickle
-from sympy import srepr, Basic, Matrix
+from sympy import srepr, Basic, Matrix, sympify
 
 class JSONEncoder(json.JSONEncoder):
 
@@ -15,5 +15,5 @@ class JSONDecoder(json.JSONDecoder):
 
     def object_hook(self, dict):
         if '__SymPy__' in dict:
-            return sympy.sympify(dict['srepr'], locals=namespace, evaluate=False)
+            return sympify(dict['srepr'], evaluate=False)
         return dict
