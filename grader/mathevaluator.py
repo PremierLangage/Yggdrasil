@@ -5,7 +5,7 @@ from jinja2 import Environment, BaseLoader
 
 Env = Environment(loader=BaseLoader())
 
-from json_encoder import CustomEncoder, CustomDecoder
+from json_encoder import JSONEncoder, JSONDecoder
 
 missing_evaluator_stderr = """\
 The key 'evaluator' was not found in the context.
