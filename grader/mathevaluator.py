@@ -1,7 +1,6 @@
-import sys, json, jsonpickle
+import sys, json
 from components import Component
 from builderlib import aux_component1, aux_component2, aux_component
-import sympy
 from jinja2 import Environment, BaseLoader
 
 Env = Environment(loader=BaseLoader())
