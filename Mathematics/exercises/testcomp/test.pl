@@ -7,7 +7,7 @@ before== #|python|
 
 evaluator== #|python|
 form = form+step2
-grade = (100, 'OK')
+grade = (100, ' ')
 ==
 
 
