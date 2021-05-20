@@ -6,6 +6,7 @@ before== #|python|
 ==
 
 evaluator== #|python|
+form = form+step2
 grade = (100, 'OK')
 ==
 
@@ -28,17 +29,19 @@ Text 1
     <span class="ion-hide-md-down">Valider</span>
 </button>
 </div>
+==
+
+step2 ==
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
-  Step 1
+  Step 2
 </a>
 <div class="collapse" id="collapseExample2">
-Text 1
+Text 2
 <button class="btn btn-primary btn-sm action-submit">
     <i class="fas fa-check"></i>
     <span class="ion-hide-md-down">Valider</span>
 </button>
 </div>
-
 ==
 
 
