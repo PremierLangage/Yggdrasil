@@ -32,7 +32,7 @@ Text 1
 ==
 
 step2 ==
-<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample">
+<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
   Step 2
 </a>
 <div class="collapse" id="collapseExample2">
