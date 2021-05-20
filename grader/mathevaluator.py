@@ -3,29 +3,10 @@ from components import Component
 from builderlib import aux_component1, aux_component2, aux_component
 import sympy
 from jinja2 import Environment, BaseLoader
-from jinja2 import Template
 
 Env = Environment(loader=BaseLoader())
 
-class CustomEncoder(json.JSONEncoder):
-
-    def default(self, obj):
-        if isinstance(obj, (sympy.Basic, sympy.Matrix)):
-            return {'__SymPy__': True, 'srepr': sympy.srepr(obj)}
-        return jsonpickle.Pickler(unpicklable=False).flatten(obj)
-
-
-class CustomDecoder(json.JSONDecoder):
-
-    def __init__(self, *args, **kwargs):
-        json.JSONDecoder.__init__(self, object_hook=self.object_hook, *args, **kwargs)
-
-    def object_hook(self, dict):
-        if '__SymPy__' in dict:
-            # option in sympify : locals=namespace
-            return sympy.sympify(dict['srepr'], evaluate=False)
-        return dict
-
+from json_encoder import CustomEncoder, CustomDecoder
 
 missing_evaluator_stderr = """\
 The key 'evaluator' was not found in the context.
