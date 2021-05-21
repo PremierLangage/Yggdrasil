@@ -25,7 +25,7 @@ stepnames % ["name1", "name2"]
 form== #|html|
 {% for i in range(currentstep) %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#{{ i }}" role="button" aria-expanded="true" aria-controls="{{ i }}">
-  Step 1
+  Step {{ i }}
 </a>
 <div class="collapse" id="{{ i }}">
 Text 1
