@@ -21,11 +21,11 @@ text== #|html|
 stepnames % ["name1", "name2"]
 
 form== #|html|
-{% for name in stepnames %}
-<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#{{ name }}" role="button" aria-expanded="true" aria-controls="{{ name }}">
+{% for i in range(currentstep) %}
+<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#{{ i }}" role="button" aria-expanded="true" aria-controls="{{ i }}">
   Step 1
 </a>
-<div class="collapse" id="{{ name }}">
+<div class="collapse" id="{{ i }}">
 Text 1
 <button class="btn btn-primary btn-sm action-submit">
     <i class="fas fa-check"></i>
