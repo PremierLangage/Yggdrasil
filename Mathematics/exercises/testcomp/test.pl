@@ -18,6 +18,8 @@ title== #|html|
 text== #|html|
 ==
 
+currentstep % 3
+
 stepnames % ["name1", "name2"]
 
 form== #|html|
