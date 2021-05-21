@@ -18,12 +18,14 @@ title== #|html|
 text== #|html|
 ==
 
+stepnames % ["name1", "name2"]
+
 form== #|html|
-{% for i in range(5) %}
-<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample">
+{% for name in stepnames %}
+<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#{{ name }}" role="button" aria-expanded="true" aria-controls="{{ name }}">
   Step 1
 </a>
-<div class="collapse" id="collapseExample">
+<div class="collapse" id="{{ name }}">
 Text 1
 <button class="btn btn-primary btn-sm action-submit">
     <i class="fas fa-check"></i>
