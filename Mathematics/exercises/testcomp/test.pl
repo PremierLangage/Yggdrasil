@@ -19,6 +19,7 @@ text== #|html|
 ==
 
 form== #|html|
+{% for i in range(5) %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample">
   Step 1
 </a>
@@ -29,6 +30,7 @@ Text 1
     <span class="ion-hide-md-down">Valider</span>
 </button>
 </div>
+{% endfor %}
 ==
 
 step2 ==
