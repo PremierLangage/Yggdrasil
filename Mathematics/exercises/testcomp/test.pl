@@ -40,7 +40,7 @@ form== #|html|
 <p>
 {{ steps[i].text}}
 </p>
-<button class="btn btn-primary ntn-sm action-submit">
+<button class="btn btn-primary btn-xs action-submit">
     <i class="fas fa-check"></i>
 </button>
 </div>
