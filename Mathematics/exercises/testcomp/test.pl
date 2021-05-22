@@ -29,7 +29,7 @@ input2 =: Input
 step1.text ==
 Enoncé de l'étape 1.
 ==
-step2.form ==
+step1.form ==
 {{input1|component}}
 ==
 
