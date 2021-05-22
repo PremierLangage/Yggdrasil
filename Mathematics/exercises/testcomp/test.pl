@@ -26,9 +26,15 @@ steps = [step1, step2]
 step1.text ==
 Enoncé de l'étape 1.
 ==
+step2.form ==
+{{input1|component}}
+==
 
 step2.text ==
 Enoncé de l'étape 2.
+==
+step2.form ==
+{{input2|component}}
 ==
 
 form== #|html|
