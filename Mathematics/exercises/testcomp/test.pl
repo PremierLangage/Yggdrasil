@@ -1,5 +1,6 @@
 @ /grader/evaluator2.py [grader.py]
 @ /builder/before2.py [builder.py]
+@ /utils/builderlib.py
 
 before== #|python|
 ==
