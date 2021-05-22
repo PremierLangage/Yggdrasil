@@ -42,8 +42,6 @@ step2.form ==
 {{ input2|component }}
 ==
 
-jinja_keys % ["text"]
-
 form == #|html|
 {% for i in range(currentstep) %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
