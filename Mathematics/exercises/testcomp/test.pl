@@ -42,20 +42,18 @@ step2.form ==
 {{ input2|component }}
 ==
 
-jinja_keys % []
+jinja_keys % ["text"]
 
-form =
-
-text == #|html|
+form == #|html|
 {% for i in range(currentstep) %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
   Step {{ i + 1 }}
 </a>
 <div class="collapse show" id="collapse{{ i }}">
 <p>
-{{ steps[i].text}}
+{{ steps[i].text |safe}}
 </p>
-{{ steps[i].form }}
+{{ steps[i].form |safe}}
 <button class="btn btn-primary btn-xs action-submit">
     <i class="fas fa-check"></i>
     <span class="ion-hide-md-down">Valider</span>
