@@ -88,6 +88,12 @@ extracss ==
    display: none;
 }
 
+.exercise__body {
+    border: none;
+    width: 100%;
+    overflow: auto;
+}
+
 </style>
 ==
 
