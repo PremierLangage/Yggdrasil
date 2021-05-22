@@ -33,10 +33,10 @@ Enoncé de l'étape 2.
 
 form== #|html|
 {% for i in range(currentstep) %}
-<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-controls="collapse{{ i }}">
+<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
   Step {{ i + 1 }}
 </a>
-<div class="collaps show" id="collapse{{ i }}">
+<div class="collapse show" id="collapse{{ i }}">
 <p>
 {{ steps[i].text}}
 </p>
