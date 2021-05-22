@@ -45,7 +45,41 @@ step2.form ==
 jinja_keys % ["form", "text"]
 
 form == #|html|
-{% for i in range(currentstep) %}
+<div class="row">
+  <div class="col">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ma&icirc;tre Corbeau, sur 
+              un arbre perch&eacute;,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tenait 
+              en son bec un fromage.<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ma&icirc;tre Renard, par l'odeur 
+              all&eacute;ch&eacute;,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lui 
+              tint &agrave; peu pr&egrave;s ce langage :<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Et bonjour, Monsieur du Corbeau,<br>
+              &nbsp;&nbsp;&nbsp; Que vous &ecirc;tes joli ! que vous me semblez 
+              beau !<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sans 
+              mentir, si votre ramage<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Se 
+              rapporte &agrave; votre plumage,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp; Vous &ecirc;tes le Ph&eacute;nix des h&ocirc;tes 
+              de ces bois.<br>
+              &Agrave; ces mots le Corbeau ne se sent pas de joie, <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Et 
+              pour montrer sa belle voix,<br>
+              &nbsp;&nbsp; Il ouvre un large bec, laisse tomber sa proie.<br>
+              &nbsp;&nbsp; Le Renard s'en saisit, et dit : Mon bon Monsieur,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              &nbsp; Apprenez que tout flatteur<br>
+              &nbsp;&nbsp;&nbsp;&nbsp; Vit aux d&eacute;pens de celui qui l'&eacute;coute.<br>
+              &nbsp;&nbsp; Cette le&ccedil;on vaut bien un fromage sans doute.<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Le 
+              Corbeau honteux et confus<br>
+              &nbsp;&nbsp; Jura, mais un peu tard, qu'on ne l'y prendrait plus.</p>
+  
+  </div>
+  <div class="col">
+    {% for i in range(currentstep) %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
   Step {{ i + 1 }}
 </a>
@@ -60,6 +94,9 @@ form == #|html|
 </button>
 </div>
 {% endfor %}
+  </div>
+</div>
+
 ==
 
 extracss ==
