@@ -48,6 +48,7 @@ form== #|html|
 </p>
 <button class="btn btn-primary btn-xs action-submit">
     <i class="fas fa-check"></i>
+    <span class="ion-hide-md-down">Valider</span>
 </button>
 </div>
 {% endfor %}
