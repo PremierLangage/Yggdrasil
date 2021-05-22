@@ -42,7 +42,7 @@ step2.form ==
 {{ input2|component }}
 ==
 
-jinja_keys % ["text"]
+jinja_keys % []
 
 form =
 
