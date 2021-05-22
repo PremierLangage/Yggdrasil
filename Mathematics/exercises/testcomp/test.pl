@@ -37,7 +37,9 @@ form== #|html|
   Step {{ i + 1 }}
 </a>
 <div class="collapse" id="collapse{{ i }}">
-Text 1
+<p>
+{{ steps[i].text}}
+</p>
 <button class="btn btn-primary btn-sm action-submit">
     <i class="fas fa-check"></i>
     <span class="ion-hide-md-down">Valider</span>
