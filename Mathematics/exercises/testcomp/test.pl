@@ -6,7 +6,7 @@ before== #|python|
 ==
 
 evaluator== #|python|
-form = form+step2
+currentstep += 1
 grade = (100, ' ')
 ==
 
