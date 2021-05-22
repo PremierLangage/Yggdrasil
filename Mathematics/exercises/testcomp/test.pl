@@ -32,7 +32,7 @@ Enoncé de l'étape 2.
 ==
 
 form== #|html|
-  <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+  <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
 {% for i in range(currentstep) %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
   Step {{ i + 1 }}
