@@ -19,7 +19,7 @@ text== #|html|
 ==
 
 before ==
-currentstep = 2
+currentstep = 1
 steps = [step1, step2]
 ==
 
