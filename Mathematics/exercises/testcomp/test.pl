@@ -36,7 +36,7 @@ form== #|html|
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-controls="collapse{{ i }}">
   Step {{ i + 1 }}
 </a>
-<div class="collapse" id="collapse{{ i }}">
+<div class="collaps show" id="collapse{{ i }}">
 <p>
 {{ steps[i].text}}
 </p>
