@@ -94,6 +94,11 @@ extracss ==
     overflow: auto;
 }
 
+.app-content .col-md-2 {
+   display: none;
+
+}
+
 </style>
 ==
 
