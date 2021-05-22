@@ -18,14 +18,23 @@ title== #|html|
 text== #|html|
 ==
 
-currentstep % 3
+before ==
+currentstep = 0
+steps = [step1, step2]
+==
 
-stepnames % ["name1", "name2"]
+step1.text ==
+Enoncé de l'étape 1.
+==
+
+step2.text ==
+Enoncé de l'étape 2.
+==
 
 form== #|html|
 {% for i in range(currentstep) %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
-  Step {{ i }}
+  Step {{ i + 1 }}
 </a>
 <div class="collapse" id="collapse{{ i }}">
 Text 1
@@ -37,17 +46,5 @@ Text 1
 {% endfor %}
 ==
 
-step2 ==
-<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
-  Step 2
-</a>
-<div class="collapse" id="collapseExample2">
-Text 2
-<button class="btn btn-primary btn-sm action-submit">
-    <i class="fas fa-check"></i>
-    <span class="ion-hide-md-down">Valider</span>
-</button>
-</div>
-==
 
 
