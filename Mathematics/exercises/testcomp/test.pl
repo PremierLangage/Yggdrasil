@@ -55,7 +55,7 @@ form== #|html|
 
 style.btn ==
 <style>
-.btn-group-xs > .btn, .btn-xs {
+.btn-xs {
   padding: .25rem .4rem;
   font-size: .875rem;
   line-height: .5;
