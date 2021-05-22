@@ -99,7 +99,8 @@ extracss ==
 }
 
 .app-content .col-md-8 {
-   display: none;
+   flex: 0 0 100%;
+    max-width: 100%;
 
 }
 
