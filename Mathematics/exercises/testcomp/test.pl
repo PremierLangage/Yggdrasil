@@ -23,8 +23,8 @@ currentstep = 1
 steps = [step1, step2]
 ==
 
-input1 := Input
-input2 := Input
+input1 := Text
+input2 := Text
 
 step1.text ==
 Enoncé de l'étape 1.
