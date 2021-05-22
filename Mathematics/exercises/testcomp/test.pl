@@ -68,6 +68,24 @@ extracss ==
   line-height: .5;
   border-radius: .2rem;
 }
+
+.exercise__actions .action-submit {
+   display: none;
+}
+
+.action-save {
+   display: none;
+}
+.action-reset {
+   display: none;
+}
+.action-next {
+   display: none;
+}
+.action-download-env {
+   display: none;
+}
+
 </style>
 ==
 
