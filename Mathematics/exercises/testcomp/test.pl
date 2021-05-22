@@ -96,6 +96,10 @@ extracss ==
 
 .app-content .col-md-2 {
    display: none;
+}
+
+.app-content .col-md-8 {
+   display: none;
 
 }
 
