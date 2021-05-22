@@ -53,9 +53,9 @@ form== #|html|
 {% endfor %}
 ==
 
-style.btn ==
+extracss ==
 <style>
-.btn-xs {
+.btn-group-xs > .btn, .btn-xs {
   padding: .25rem .4rem;
   font-size: .875rem;
   line-height: .5;
