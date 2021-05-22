@@ -51,9 +51,9 @@ form == #|html|
 </a>
 <div class="collapse show" id="collapse{{ i }}">
 <p>
-{{ steps[i].text}}
+{{ steps[i].text |safe}}
 </p>
-{{ steps[i].form}}
+{{ steps[i].form |safe}}
 <button class="btn btn-primary btn-xs action-submit">
     <i class="fas fa-check"></i>
     <span class="ion-hide-md-down">Valider</span>
