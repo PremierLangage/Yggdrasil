@@ -30,14 +30,14 @@ step1.text ==
 Enoncé de l'étape 1.
 ==
 step1.form ==
-{{input1|component}}
+{{ input1|component }}
 ==
 
 step2.text ==
 Enoncé de l'étape 2.
 ==
 step2.form ==
-{{input2|component}}
+{{ input2|component }}
 ==
 
 form== #|html|
