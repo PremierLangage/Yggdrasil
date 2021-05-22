@@ -1,6 +1,5 @@
-@ /utils/sandboxio.py
-grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
+@ /grader/evaluator2.py [grader.py]
+@ /builder/before2.py [builder.py]
 
 before== #|python|
 ==
