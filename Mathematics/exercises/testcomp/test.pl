@@ -2,6 +2,8 @@
 @ /builder/before2.py [builder.py]
 @ /utils/builderlib.py
 
+settings.maxattempt % 100
+
 before== #|python|
 ==
 
