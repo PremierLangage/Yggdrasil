@@ -32,6 +32,7 @@ Enoncé de l'étape 2.
 ==
 
 form== #|html|
+  <button type="button" class="btn btn-default btn-xs">Extra small button</button>
 {% for i in range(currentstep) %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
   Step {{ i + 1 }}
@@ -40,7 +41,7 @@ form== #|html|
 <p>
 {{ steps[i].text}}
 </p>
-<button class="btn btn-primary action-submit btn-mini">
+<button class="btn btn-primary action-submit">
     <i class="fas fa-check"></i>
     <span class="ion-hide-md-down">Valider</span>
 </button>
