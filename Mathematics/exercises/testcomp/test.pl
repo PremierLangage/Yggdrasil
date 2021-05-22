@@ -32,12 +32,6 @@ Enoncé de l'étape 2.
 ==
 
 form== #|html|
-<button class="btn btn-primary btn-xs action-submit">
-    <i class="fas fa-check"></i>
-</button>
-<button class="btn btn-primary btn-sm action-submit">
-    <i class="fas fa-check"></i>
-</button>
 {% for i in range(currentstep) %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
   Step {{ i + 1 }}
