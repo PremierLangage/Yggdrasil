@@ -6,6 +6,7 @@ settings.maxattempt % 100
 
 before== #|python|
 _currentstep_ = 1
+scorestep = []
 ==
 
 title == #|html|
