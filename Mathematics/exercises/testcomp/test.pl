@@ -18,7 +18,7 @@ input1.value = "test"
 ==
 
 input1 =: Input
-input2 =: Input
+radio2 =: RadioCheckbox
 
 # Step 1
 
@@ -51,7 +51,7 @@ Combien de solutions réelles possède cette équation ?
 ==
 
 step2.form ==
-{{ input2|component }}
+{{ radio2|component }}
 ==
 
 jinja_keys % []
