@@ -64,7 +64,7 @@ form == #|html|
 </p>
 {{ steps[i].form |safe }}
 
-{% if score == -1 %}
+{% if stepscore[i] == -1 %}
 <a class="text-info" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
 Attention !
 {% else %}
