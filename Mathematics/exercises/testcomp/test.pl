@@ -66,7 +66,7 @@ form == #|html|
 <button class="btn btn-secondary btn-xs disabled" aria-disabled="true" tabindex="-1">
 {% else %}
 <button class="btn btn-primary btn-xs action-submit">
-{% endfor %}
+{% endif %}
  <span class="ion-hide-md-down">Valider</span>
 </button>
 </div>
