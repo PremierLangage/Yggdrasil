@@ -58,7 +58,7 @@ form == #|html|
 {{ steps[i].text }}
 </p>
 {{ steps[i].form |safe }}
-<button class="btn btn-primary btn-xs action-submit disabled" aria-disabled="true">
+<button class="btn btn-primary btn-xs action-submit disabled" aria-disabled="true" tabindex="-1">
  <span class="ion-hide-md-down">Valider</span>
 </button>
 </div>
