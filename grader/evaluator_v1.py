@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     if score >= 0:
         dic['currentstep'] = dic['currentstep'] + 1
-        dic['scorestep'].append(score)
+        dic['stepscore'].append(score)
 
     with open(sys.argv[3], "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
