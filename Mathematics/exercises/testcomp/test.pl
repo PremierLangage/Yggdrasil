@@ -14,7 +14,8 @@ grade = (100, ' ')
 
 
 
-title== #|html|
+title == #|html|
+Exercice à étapes
 ==
 
 text== #|html|
