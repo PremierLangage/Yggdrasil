@@ -82,7 +82,7 @@ Erreur
 </div>
 {% endif %}
 {% if i == currentstep%}
-<button class="btn btn-primary btn-xs action-submit">
+<button class="btn btn-primary btn-sm action-submit">
    <span class="ion-hide-md-down">Valider</span>
 </button>
 {% endif %}
