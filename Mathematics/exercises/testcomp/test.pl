@@ -24,6 +24,7 @@ text== #|html|
 before ==
 currentstep = 1
 steps = [step1, step2]
+stepscore = [-1, 0]
 ==
 
 input1 =: Input
