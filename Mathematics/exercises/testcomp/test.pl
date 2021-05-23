@@ -53,7 +53,7 @@ step2.form ==
 jinja_keys % []
 
 form == #|html|
-{% for i in range(currentstep-1) %}
+{% for i in range(currentstep) %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
   Step {{ i + 1 }}
 </a>
@@ -62,23 +62,16 @@ form == #|html|
 {{ steps[i].text }}
 </p>
 {{ steps[i].form |safe }}
+{% if i < currentstep -1 %}
 <button class="btn btn-secondary btn-xs disabled" aria-disabled="true" tabindex="-1">
+{% else %}
+<button class="btn btn-primary btn-xs action-submit">
+{% endfor %}
  <span class="ion-hide-md-down">Valider</span>
 </button>
 </div>
 {% endfor %}
-<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
-  Step {{ currentstep }}
-</a>
-<div class="collapse show" id="collapse{{ currentstep }}">
-<p>
-{{ steps[currentstep-1].text }}
-</p>
-{{ steps[currentstep-1].form |safe }}
-<button class="btn btn-primary btn-xs action-submit">
- <span class="ion-hide-md-down">Valider</span>
-</button>
-</div>
+
 
 ==
 
