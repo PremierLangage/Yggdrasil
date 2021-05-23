@@ -25,6 +25,7 @@ if __name__ == "__main__":
 
     
     aux_component1(dic)
+    Component.sync_context(dic)
     currentstep = dic['currentstep']
     code = dic['steps'][currentstep]['evaluator']
 
