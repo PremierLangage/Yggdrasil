@@ -76,12 +76,10 @@ Attention !
 <a class="text-danger" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
 Erreur
 </a>
-{% endif %}
-
 <div class="collapse show" id="collapseExample2">
 {{ feedback }}
 </div>
-
+{% endif %}
 {% if i == currentstep%}
 <button class="btn btn-primary btn-xs action-submit">
    <span class="ion-hide-md-down">Valider</span>
