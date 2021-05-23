@@ -77,9 +77,7 @@ Erreur
 {{ feedback }}
 </div>
 
-{% if i < currentstep -1 %}
-<button class="btn btn-secondary btn-xs disabled" aria-disabled="true" tabindex="-1">
-{% else %}
+{% if i == currentstep -1 %}
 <button class="btn btn-primary btn-xs action-submit">
 {% endif %}
  <span class="ion-hide-md-down">Valider</span>
