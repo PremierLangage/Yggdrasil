@@ -79,9 +79,10 @@ Erreur
 
 {% if i == currentstep -1 %}
 <button class="btn btn-primary btn-xs action-submit">
-{% endif %}
- <span class="ion-hide-md-down">Valider</span>
+   <span class="ion-hide-md-down">Valider</span>
 </button>
+{% endif %}
+
 </div>
 {% endfor %}
 
