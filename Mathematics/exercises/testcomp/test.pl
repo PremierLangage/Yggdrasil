@@ -30,7 +30,7 @@ step1.form ==
 ==
 
 step1.evaluator ==
-if input1.value == "toto":
+if input1.cid == "toto":
   score = 100
 else:
   score = 0
