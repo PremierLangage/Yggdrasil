@@ -41,7 +41,17 @@ step1.form ==
 ==
 
 step1.evaluator ==
-input1.value
+if input1.value == "toto":
+  score = 100
+else:
+  score = 0
+==
+
+step2.evaluator ==
+if input2.value == "toto":
+  score = 100
+else:
+  score = 0
 ==
 
 step2.text ==
