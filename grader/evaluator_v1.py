@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     
     aux_component1(dic)
-    currentstep = dic['_currentstep_']
+    currentstep = dic['currentstep']
     code = dic['step'][currentstep]['evaluator']
 
     #code = "\n".join([dic.get('headerevaluator', ""), dic.get('evaluator', ""), dic.get('footerevaluator', "")])
@@ -48,7 +48,7 @@ if __name__ == "__main__":
         feedback = ""
 
     if score >= 0:
-        dic['_currentstep_'] = dic['_currentstep_'] + 1
+        dic['currentstep'] = dic['currentstep'] + 1
         dic['scorestep'].append(score)
 
     with open(sys.argv[3], "w+") as f:
