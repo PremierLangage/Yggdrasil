@@ -1,59 +1,62 @@
-import sys
-import json
+#!/usr/bin/env python3
+# coding: utf-8
+import sys, json
 from components import Component
-from pljson import PickleEncoder
-from pljinja import DefaultEnv
+from builderlib import aux_component
 
-# import the custom JSON encoder (if it exists)
-try:
-    from json_coder import JSONEncoder
-except ModuleNotFoundError:
-    JSONEncoder = PickleEncoder
+# Import the custom JSON encoder
+from json_encoder import JSONEncoder
 
-# import the custom Jinja environnement (if it exists)
-try:
-    from jinja_env import Env
-except ModuleNotFoundError:
-    Env = DefaultEnv
-
-# import the custom namespace (if it exists)
-try:
-    from namespace import namespace
-except ModuleNotFoundError:
-    namespace = {}
+# Jinja environnement
+from jinja_env import Env
 
 if __name__ == "__main__":
-    
-    # load the JSON exercise dictionary as Python dictionary
+    if len(sys.argv) < 3:
+        msg = ("Sandbox did not call builder properly:\n"
+                +"Usage: python3 builder.py [input_json] [output_json]")
+        print(msg, file=sys.stderr)
+        sys.exit(1)
+
+    outputfilename = sys.argv[2]
+
+    # JSON context is loaded
     with open(sys.argv[1], "r") as f:
         dic = json.load(f)
     Component.sync_context(dic)
-
-    # add the custom namespace to the Python exercise dictionary
-    dic = {**namespace, **dic}
     
-    code = "\n".join([dic.get('headerbefore', ""), dic.get('before', ""), dic.get('footerbefore', "")])
+    before_scripts = dic.get('before_scripts', ['headerbefore', 'before', 'footerbefore'])
+    code = "\n".join([dic.get(name, "") for name in before_scripts])
 
-    # execute the script with the exercise dictionary as globals
+    # execute the script in before key with dic as globals
     exec(code, dic)
     
-    # clean the exercise dictionary from namespace elements
+    namespace = {}
+    # clean dic from namespace elements
     exec("", namespace)
     for key in namespace:
         if key in dic and dic[key] == namespace[key]:
             del dic[key]
 
-    # render some string values of the exercise dictionary with the custom Jinja environment
-    jinja_keys = dic.get('jinja_keys', ['text', 'form', 'solution'])
+    # build the key 'extracss' from the content of the key 'style'
+    if 'style' in dic:
+        dic['extracss'] = "%s" % "\n".join(reversed(list(dic['style'].values())))
+    if 'javascript' in dic:
+        dic['extrajs'] = "%s" % "\n".join(reversed(list(dic['javascript'].values())))
 
-    for key in jinja_keys:
+    # HACK for components in lists
+    aux_component(dic)
+
+    dic['internals'] = {'attempt': 1 }
+
+    dic['form'] = dic['interface']
+    # render some string values of the exercise dictionary with the custom Jinja environment 
+    macros = dic.get('macros', '')
+
+    for key in dic.get('jinja_keys', ['text', 'form', 'solution']):
         if key in dic:
-            dic[key] = Env.from_string(dic[key]).render(dic)
+            dic[key] = Env.from_string(macros + dic[key]).render(dic)
 
-    # output the Python exercise dictionary as a JSON dictionary (using the custom encoder)
-    with open(sys.argv[2], "w+") as f:
+    with open(outputfilename, "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
 
     sys.exit(0)
-
-
