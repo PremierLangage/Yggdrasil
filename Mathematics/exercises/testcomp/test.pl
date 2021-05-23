@@ -39,6 +39,10 @@ step1.form ==
 {{ input1|component }}
 ==
 
+step1.evaluator ==
+input1.value
+==
+
 step2.text ==
 Enoncé de l'étape 2.
 ==
