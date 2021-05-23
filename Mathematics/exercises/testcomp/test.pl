@@ -19,6 +19,9 @@ input1.value = "test"
 
 input1 =: Input
 radio2 =: RadioGroup
+@ /utils/components/scoring.py
+@ /utils/components/radio.py [customradio.py]
+radio2.decorator = CustomRadio
 
 # Step 1
 
