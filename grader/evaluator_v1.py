@@ -26,7 +26,7 @@ if __name__ == "__main__":
     
     aux_component1(dic)
     currentstep = dic['currentstep']
-    code = dic['step'][currentstep]['evaluator']
+    code = dic['steps'][currentstep]['evaluator']
 
     #code = "\n".join([dic.get('headerevaluator', ""), dic.get('evaluator', ""), dic.get('footerevaluator', "")])
 
