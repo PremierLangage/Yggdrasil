@@ -56,7 +56,7 @@ jinja_keys % []
 
 form == #|html|
 {% for i in range(currentstep) %}
-<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
+<a class="text-primary" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
 ▶ Question {{ i + 1 }}
 </a>
 <div class="collapse show" id="collapse{{ i }}">
