@@ -43,11 +43,8 @@ input1.disabled = True
 ==
 
 step2.evaluator ==
-if input2.value == "toto":
-  score = 100
-else:
-  score = 0
-input2.disabled = True
+radio2.eval()
+radio.disabled = True
 ==
 
 step2.text ==
