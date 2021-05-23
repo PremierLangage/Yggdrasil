@@ -49,8 +49,10 @@ if __name__ == "__main__":
         feedback = ""
 
     if score >= 0:
-        dic['currentstep'] = dic['currentstep'] + 1
         dic['stepscore'].append(score)
+        if currentstep < len(dic['steps'])-1:
+            dic['currentstep'] = dic['currentstep'] + 1
+
 
     with open(sys.argv[3], "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
