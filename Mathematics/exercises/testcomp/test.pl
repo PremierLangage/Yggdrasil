@@ -5,7 +5,7 @@
 settings.maxattempt % 100
 
 before== #|python|
-_currentstep_ = 0
+_currentstep_ = 1
 ==
 
 title == #|html|
