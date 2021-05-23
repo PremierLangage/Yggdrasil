@@ -177,6 +177,10 @@ style.test ==
 .action-download-env {
    display: none;
 }
+
+.mq-disabled {
+pointer-events: none;
+}
 </style>
 ==
 
