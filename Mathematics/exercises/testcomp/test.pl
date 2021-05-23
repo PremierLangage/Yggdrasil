@@ -38,7 +38,7 @@ else:
 ==
 
 step2.evaluator ==
-if input2.cid == "toto":
+if input2.value == "toto":
   score = 100
 else:
   score = 0
