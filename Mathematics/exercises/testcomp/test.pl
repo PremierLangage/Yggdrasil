@@ -62,6 +62,19 @@ form == #|html|
 {{ steps[i].text }}
 </p>
 {{ steps[i].form |safe }}
+
+{% if score == -1 %}
+<a class="text-info" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
+Attention !
+{% else %}
+<a class="text-danger" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
+Erreur
+{% endif %}
+</a>
+<div class="collapse show" id="collapseExample2">
+{{ feedback }}
+</div>
+
 {% if i < currentstep -1 %}
 <button class="btn btn-secondary btn-xs disabled" aria-disabled="true" tabindex="-1">
 {% else %}
