@@ -6,7 +6,7 @@ from jinja2 import Environment, BaseLoader
 Env = Environment(loader=BaseLoader())
 
 from builderlib import PickleEncoder as JSONEncoder
-from builderlib import PickleDecoder as JSONDecoder
+JSONDecoder = None
 
 missing_evaluator_stderr = """\
 The key 'evaluator' was not found in the context.
