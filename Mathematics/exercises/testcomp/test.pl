@@ -73,10 +73,10 @@ form == #|html|
 Attention !
 </a>
 {% elif stepscore[i] >= 0 and stepscore[i] < 100 %}
-<a class="text-danger" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
+<a class="text-danger" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseFeedback{{i}}" role="button" aria-expanded="true" aria-controls="collapseFeedback{{i}}">
 Erreur
 </a>
-<div class="collapse show" id="collapseExample2">
+<div class="collapse show" id="collapseFeedback{{i}}">
 {{ feedback }}
 </div>
 {% endif %}
