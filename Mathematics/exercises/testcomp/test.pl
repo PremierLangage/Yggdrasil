@@ -11,7 +11,7 @@ Exercice à étapes
 text = 
 
 before ==
-currentstep = 1
+currentstep = 0
 steps = [step1, step2]
 stepscore = []
 ==
