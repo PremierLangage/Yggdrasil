@@ -47,8 +47,9 @@ input2.disabled = True
 ==
 
 step2.text ==
-Enoncé de l'étape 2.
+Combien de solutions réelles possède cette équation ?
 ==
+
 step2.form ==
 {{ input2|component }}
 ==
@@ -65,7 +66,6 @@ form == #|html|
 {{ steps[i].text }}
 </p>
 {{ steps[i].form |safe }}
-
 {% if stepscore[i] == -1 %}
 <a class="text-info" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
 Attention !
