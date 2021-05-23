@@ -48,7 +48,7 @@ if __name__ == "__main__":
         feedback = ""
 
     if score >= 0:
-        dic['internals']['attempt'] = dic['internals']['attempt'] + 1
+        dic['_currentstep_'] = dic['_currentstep_'] + 1
     
     #dic['form'] = dic['interface']
 
