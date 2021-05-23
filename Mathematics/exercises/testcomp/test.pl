@@ -45,12 +45,7 @@ step2.form ==
 jinja_keys % []
 
 form == #|html|
-<div class="row">
-  <div class="col">
-  
-  </div>
-  <div class="col">
-    {% for i in range(currentstep) %}
+{% for i in range(currentstep) %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
   Step {{ i + 1 }}
 </a>
@@ -65,8 +60,7 @@ form == #|html|
 </button>
 </div>
 {% endfor %}
-  </div>
-</div>
+
 
 ==
 
@@ -94,22 +88,6 @@ extracss ==
 }
 .action-download-env {
    display: none;
-}
-
-.exercise__body {
-    border: none;
-    width: 100%;
-    overflow: auto;
-}
-
-.app-content .col-md-2 {
-   display: none;
-}
-
-.app-content .col-md-8 {
-   flex: 0 0 100%;
-    max-width: 100%;
-
 }
 
 </style>
