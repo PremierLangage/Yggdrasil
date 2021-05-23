@@ -180,6 +180,7 @@ style.test ==
 
 .mq-disabled {
 pointer-events: none;
+background-color: lightgrey;
 }
 </style>
 ==
