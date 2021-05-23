@@ -9,6 +9,7 @@ before== #|python|
 
 evaluator== #|python|
 currentstep += 1
+stepscore.append(0)
 grade = (100, ' ')
 ==
 
@@ -24,7 +25,7 @@ text== #|html|
 before ==
 currentstep = 1
 steps = [step1, step2]
-stepscore = [-1, 0]
+stepscore = []
 ==
 
 input1 =: Input
