@@ -8,7 +8,7 @@ title == #|html|
 Exercice à étapes
 ==
 
-text =
+text = 
 
 before ==
 currentstep = 1
