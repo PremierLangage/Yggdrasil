@@ -5,15 +5,8 @@
 settings.maxattempt % 100
 
 before== #|python|
+_currentstep_ = 0
 ==
-
-evaluator== #|python|
-currentstep += 1
-stepscore.append(0)
-grade = (100, ' ')
-==
-
-
 
 title == #|html|
 Exercice à étapes
