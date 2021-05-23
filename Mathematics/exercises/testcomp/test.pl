@@ -14,6 +14,7 @@ before ==
 currentstep = 0
 steps = [step1, step2]
 stepscore = []
+input1.value = "test"
 ==
 
 input1 =: Input
