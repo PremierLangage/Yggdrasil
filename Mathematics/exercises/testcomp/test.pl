@@ -43,6 +43,7 @@ if input2.value == "toto":
   score = 100
 else:
   score = 0
+input2.disabled = True
 ==
 
 step2.text ==
