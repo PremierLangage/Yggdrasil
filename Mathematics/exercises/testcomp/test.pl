@@ -18,7 +18,7 @@ input1.value = "test"
 ==
 
 input1 =: Input
-radio2 =: RadioCheckbox
+radio2 =: RadioGroup
 
 # Step 1
 
