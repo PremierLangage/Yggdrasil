@@ -35,6 +35,7 @@ if input1.value == "toto":
   score = 100
 else:
   score = 0
+input1.disabled = True
 ==
 
 step2.evaluator ==
