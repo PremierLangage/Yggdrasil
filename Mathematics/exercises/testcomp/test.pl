@@ -4,17 +4,17 @@
 
 settings.maxattempt % 100
 
-before== #|python|
-_currentstep_ = 1
-stepscore = []
-==
-
 title == #|html|
 Exercice à étapes
 ==
 
 text =
 
+before ==
+_currentstep_ = 1
+steps = [step1, step2]
+stepscore = []
+==
 
 input1 =: Input
 input2 =: Input
