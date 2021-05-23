@@ -49,26 +49,6 @@ if __name__ == "__main__":
 
     if score >= 0:
         dic['_currentstep_'] = dic['_currentstep_'] + 1
-    
-    #dic['form'] = dic['interface']
-
-    if feedback.strip() != "":
-        dic['form'] = "\n".join([dic['form'], dic['format_feedback']])
-
-    if dic['settings']['maxattempt'] is not None:
-        if dic['internals']['attempt'] > dic['settings']['maxattempt']:
-            if score < 100 and 'solution' in dic:
-                dic['form'] = "\n".join([dic['form'], dic['linksolution']])
-    
-    feedback = Env.from_string(feedback).render(dic)
-    ffeedback = ""
-
-    # dic = json.loads(json.dumps(dic, cls=JSONEncoder))
-
-    # hack for MathQuill
-    if 'answers' in dic:
-        if 'math' in dic['answers']:
-            dic['prev_value'] = dic['answers']['math'].replace("\\", "\\\\")
 
     with open(sys.argv[3], "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
