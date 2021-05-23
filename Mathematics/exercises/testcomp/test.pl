@@ -29,9 +29,12 @@ steps = [step1, step2]
 input1 =: Input
 input2 =: Input
 
+# Step 1
+
 step1.text ==
-Enoncé de l'étape 1.
+Calculer le discriminant de cette équation.
 ==
+
 step1.form ==
 {{ input1|component }}
 ==
@@ -56,8 +59,7 @@ form == #|html|
 </p>
 {{ steps[i].form |safe }}
 <button class="btn btn-primary btn-xs action-submit">
-    <i class="fas fa-check"></i>
-    <span class="ion-hide-md-down">Valider</span>
+ <span class="ion-hide-md-down">Valider</span>
 </button>
 </div>
 {% endfor %}
