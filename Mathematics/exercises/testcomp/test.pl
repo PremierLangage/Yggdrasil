@@ -16,6 +16,7 @@ steps = [step1, step2]
 stepscore = []
 input1.value = "test"
 radio2.setitems(["Une", "Deux", "Aucune"])
+radio2.setsol_from_index(1)
 ==
 
 input1 =: Input
