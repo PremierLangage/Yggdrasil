@@ -64,13 +64,13 @@ form == #|html|
 </div>
 {% endfor %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
-  Step {{ currentstep + 1 }}
+  Step {{ currentstep }}
 </a>
 <div class="collapse show" id="collapse{{ currentstep }}">
 <p>
-{{ steps[currentstep].text }}
+{{ steps[currentstep-1].text }}
 </p>
-{{ steps[currentstep].form |safe }}
+{{ steps[currentstep-1].form |safe }}
 <button class="btn btn-primary btn-xs action-submit">
  <span class="ion-hide-md-down">Valider</span>
 </button>
