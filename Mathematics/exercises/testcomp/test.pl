@@ -45,7 +45,7 @@ input1.disabled = True
 
 step2.evaluator ==
 radio2.eval()
-radio.disabled = True
+radio2.disabled = True
 ==
 
 step2.text ==
