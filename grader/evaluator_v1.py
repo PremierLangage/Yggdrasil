@@ -25,12 +25,8 @@ if __name__ == "__main__":
 
     
     aux_component1(dic)
-    
-    if 'evaluator' in dic:
-            code = dic['evaluator']
-    else:
-        print(missing_evaluator_stderr, file=sys.stderr)
-        sys.exit(1)
+    currentstep = dic['_currentstep_']
+    code = dic['step'][currentstep]['evaluator']
 
     #code = "\n".join([dic.get('headerevaluator', ""), dic.get('evaluator', ""), dic.get('footerevaluator', "")])
 
@@ -54,7 +50,7 @@ if __name__ == "__main__":
     if score >= 0:
         dic['internals']['attempt'] = dic['internals']['attempt'] + 1
     
-    dic['form'] = dic['interface']
+    #dic['form'] = dic['interface']
 
     if feedback.strip() != "":
         dic['form'] = "\n".join([dic['form'], dic['format_feedback']])
