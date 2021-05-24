@@ -70,7 +70,7 @@ text == #|html|
 <p>
 {{ steps[i].question }}
 </p>
-{{ steps[i].inputblock |safe }}
+{{ steps[i].inputblock|safe }}
 {% if stepscore[i] == -1 %}
 <a class="text-info" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
 Attention !
