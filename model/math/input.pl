@@ -16,7 +16,29 @@ form ==
 ==
 
 template ==
-
+{{ question }}
+</p>
+{{ inputblock }}
+{% if score == -1 %}
+<a class="text-info" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseWarning" role="button" aria-expanded="true" aria-controls="collapseWarning">
+Attention !
+</a>
+<div class="collapse show" id="collapseWarning">
+{{ feedback }}
+</div>
+{% elif score >= 0 and score < 100 %}
+<a class="text-danger" style="display: block;" data-toggle="collapse" href="#collapseError" role="button" aria-expanded="true" aria-controls="collapseError">
+Erreur
+</a>
+<div class="collapse show" id="collapseError">
+{{ feedback }}
+</div>
+{% endif %}
+{% if i == currentstep%}
+<button class="btn btn-primary btn-sm action-submit">
+   <span class="ion-hide-md-down">Valider</span>
+</button>
+{% endif %}
 ==
 
 evaluator ==
