@@ -68,7 +68,7 @@ f()
 
 settings.feedback = lightscore
 
-form ==
+inputblock ==
 {{ checkbox|component }}
 ==
 
