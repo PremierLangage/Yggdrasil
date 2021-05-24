@@ -11,10 +11,10 @@ sol = (x-b)/a
 ==
 
 question ==
-Soit deux nombres $ x $ et $ y $ tels que :
+Soit deux nombres $! x !$ et $! y !$ tels que :
 $$ x = {{ expr|latex }}.$$
 
-Exprimer $ y $ en fonction $ x $.
+Exprimer $! y !$ en fonction $! x !$.
 ==
 
-input_prefix = $ y = $
+input_prefix = $! y = !$
