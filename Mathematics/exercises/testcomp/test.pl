@@ -28,11 +28,11 @@ radio2.decorator = CustomRadio
 
 # Step 1
 
-step1.text ==
+step1.question ==
 Calculer le discriminant de cette équation.
 ==
 
-step1.form ==
+step1.inputblock ==
 {{ input1|component }}
 ==
 
@@ -49,11 +49,11 @@ radio2.eval()
 radio2.disabled = True
 ==
 
-step2.text ==
+step2.question ==
 Combien de solutions réelles possède cette équation ?
 ==
 
-step2.form ==
+step2.inputblock ==
 {{ radio2|component }}
 ==
 
@@ -68,9 +68,9 @@ text == #|html|
 </a>
 <div class="collapse show" id="collapse{{ i }}">
 <p>
-{{ steps[i].text }}
+{{ steps[i].question }}
 </p>
-{{ steps[i].form |safe }}
+{{ steps[i].inputblock |safe }}
 {% if stepscore[i] == -1 %}
 <a class="text-info" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
 Attention !
