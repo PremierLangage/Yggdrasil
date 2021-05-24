@@ -118,7 +118,7 @@ mathField.innerFields[0].latex("{{ prev_value }}");
 var mathField = MQ.MathField(document.getElementById(name));
 mathField.latex("{{ prev_value }}");
 {% endif %}
-arrayMathField.append(mathField)
+arrayMathField.append(mathField);
 }
 
 createMathFields(["math"]);
