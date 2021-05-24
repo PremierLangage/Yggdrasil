@@ -2,7 +2,7 @@ extends = /model/basic/matchlist.pl
 
 title = Capitales
 
-text ==
+question ==
 Relier chaque pays à sa capitale.
 ==
 
