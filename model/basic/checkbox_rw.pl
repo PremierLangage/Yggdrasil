@@ -39,11 +39,6 @@ checkbox.scoring = scoring
 
 scoring = AllOrNothing
 
-text ==
-Indiquer parmi les noms suivants ceux qui sont des noms valides pour une variable en Python.
-==
-
-
 right ==
 bonjour
 abc
