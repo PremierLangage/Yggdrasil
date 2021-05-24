@@ -73,7 +73,7 @@ step2.inputblock ==
 {{ radio2|component }}
 ==
 
-jinja_keys % []
+jinja_keys % ["intro"]
 
 form =
 
