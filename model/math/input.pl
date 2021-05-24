@@ -42,7 +42,7 @@ interface ==
 {% if input_embed|length > 1 %}
 <div id="math-field"> {{ input_embed }}</div>
 {% else %}
-<div id="math-field" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
+<div id="math-field" class="math-input" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
 {% endif %}
 {% if input_keypad|length > 0 %}
 
