@@ -10,6 +10,7 @@ before ==
 
 title = Title
 
+text = 
 
 tplpage ==
 {{ question }}
