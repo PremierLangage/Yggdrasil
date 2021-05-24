@@ -31,6 +31,10 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
 var arrayMathField = []
 var preval = [" ", "x"];
 var names = ["math", "math2"];
+{% for name in mathinputid %}
+names.push("{{name}}");
+preval.push("{{answers[name]}}"};
+{% endfor %}
 
 for (let i = 0; i < names.length; i++) {
 {% if input_embed|length > 0 %}
