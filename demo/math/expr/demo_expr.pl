@@ -29,16 +29,20 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
 
 
 var arrayMathField = []
-var preval = {math:"a", math2:"b"};
-
-var names = [{{ str(mathinputid) }}];
-for (let name of names) {
+var preval = [];
+var names = []
+{% for name in mathinputid %}
+names.push("{{name}}");
+preval.push("{{answers[name]}}"};
+{% endfor %}
+var names = {{ str(mathinputid) }}];
+for (let i = 0; i < names.length; i++) {
 {% if input_embed|length > 0 %}
-let mathField = MQ.StaticMath(document.getElementById(name));
-mathField.innerFields[0].latex(preval[name]);
+let mathField = MQ.StaticMath(document.getElementById(names[i]));
+mathField.innerFields[0].latex(preval[i]);
 {% else %}
-let mathField = MQ.MathField(document.getElementById(name));
-mathField.latex(preval[name]);
+let mathField = MQ.MathField(document.getElementById(names[i]));
+mathField.latex(preval[i]);
 {% endif %}
 arrayMathField.push(mathField);
 }
