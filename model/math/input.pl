@@ -57,7 +57,6 @@ macros ==
 {% endif %}
 <input type="text" id="form_{{name}}" hidden=true>
 {%- endmacro %}
-
 ==
 
 interface ==
