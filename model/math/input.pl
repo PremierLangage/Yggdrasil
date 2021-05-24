@@ -95,16 +95,15 @@ var arrayMathField = [mathField]
 </script>
 <script>
 function onBeforeSubmitPL() {
-{% if input_embed|length > 0 %}
-latexSpan.value = mathField.innerFields[0].latex();
-{% else %}
 arrayMathField.forEach(function(mathField) {
 var mathFieldInput = document.getElementById('form_'+mathField.el().id);
 if (mathField instanceof MQ.MathField) {
 mathFieldInput.value = mathField.latex();
 }
+if (mathField instanceof MQ.StaticMath) {
+mathFieldInput.value = mathField.innerFields[0].latex();
+}
 });
-{% endif %}
 return true;
 }
 </script>
