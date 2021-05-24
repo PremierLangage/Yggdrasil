@@ -52,6 +52,9 @@ if __name__ == "__main__":
     if not 'question' in dic:
         dic['question'] = dic['text']
 
+    if not 'inputblock' in dic:
+        dic['inputblock'] = dic['form']
+
     # render some string values of the exercise dictionary with the custom Jinja environment 
     macros = dic.get('macros', '')
 
