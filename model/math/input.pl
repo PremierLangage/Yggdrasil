@@ -15,6 +15,10 @@ form ==
 
 ==
 
+template ==
+
+==
+
 evaluator ==
 score = 100
 feedback = "blabla"
