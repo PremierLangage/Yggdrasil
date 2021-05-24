@@ -15,6 +15,12 @@ from plrandom import randint, sampleint
 from plcsv import csv_choice, csv_sample, csv_col
 ==
 
+tplpage ==
+{{question}}
+
+{{inputblock}}
+==
+
 settings.maxattempt % 1
 
 style.basic == #|css|
