@@ -11,7 +11,7 @@ before ==
 title = Title
 
 
-template ==
+tplpage ==
 {{ question }}
 </p>
 {{ inputblock }}
