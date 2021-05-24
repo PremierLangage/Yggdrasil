@@ -20,8 +20,6 @@ if __name__ == "__main__":
     
     code = dic['evaluator']
 
-    #code = "\n".join([dic.get('headerevaluator', ""), dic.get('evaluator', ""), dic.get('footerevaluator', "")])
-
     exec(code, dic)
     namespace = {}
     exec("", namespace)
