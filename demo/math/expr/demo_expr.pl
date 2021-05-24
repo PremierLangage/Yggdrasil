@@ -7,6 +7,6 @@ var('x')
 sol = x+1
 ==
 
-text ==
+question ==
 Entrer l'expression $! {{ sol|latex}} !$.
 ==
