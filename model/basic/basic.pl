@@ -95,31 +95,65 @@ style.basic == #|css|
 </style>
 ==
 
-
-extrajs ==
-<script>
+javascript.ready ==
     function onReadyPL(nodes) {
         const actions = nodes.actions;
-        actions.find('.action-save').hide();
-        actions.find('.action-reset').hide();
-        actions.find('.action-next').hide();
+        const feedback = nodes.feedback;
+        actions.find('.action-save').remove();
+        actions.find('.action-reset').remove();
+        actions.find('.action-next').remove();
+        actions.find('.action-download-env').remove();
 
         const { origin, pathname }  = document.location;
         const link = origin + pathname;
 
         const buttons = actions.find('.btn-group');
 
-        {% if "reroll" in internals.buttons %}
-        buttons.append(`
-            <a type="button" class="btn btn-warning action-reroll" href="`+link+`?action=reroll">
-                <i class="fas fa-dice"></i> Nouveau tirage
-            </a>
-        `);
+        {% if internals.attempt > settings.maxattempt %}
+        actions.find('.action-submit').remove();
+        buttons.append(`<a type="button"  class="btn btn-primary action-reroll" href="`+link+`?action=reroll"><i class="fas fa-dice"></i> Nouveau</a>`);
         {% endif %}
-        
-        {% if not "submit" in internals.buttons %}
-        actions.find('.action-submit').hide();
+        actions.prepend('<hr class="border">');
+        actions.find('br').remove();
+        {% if score == 100 %}
+        actions.append('<button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>');
         {% endif %}
-    }
+        {% if score == 0 %}
+        actions.append('<button type="button" style="float: right;" class="btn error-state animated pulse">Score : {{score}} </button>');
+        {% endif %}
+   }
 </script>
+==
+
+style.test ==
+<style>
+.exercise__title {
+   font-size: 20px;
+}
+
+.exercise__instructions p {
+   font-size: 16px !important;
+}
+.exercise__actions .btn-group {
+   float: left;
+}
+
+.action-save {
+   display: none;
+}
+.action-reset {
+   display: none;
+}
+.action-next {
+   display: none;
+}
+.action-download-env {
+   display: none;
+}
+
+.mq-disabled {
+pointer-events: none;
+background-color: lightgrey;
+}
+</style>
 ==
