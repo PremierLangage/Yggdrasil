@@ -44,7 +44,7 @@ _seltext_ = bracket_words(seltext)
 HTML, sol, nbunits = read_text_bracket(_seltext_)
 ==
 
-form==
+inputblock ==
 <div id="textselect"
  style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" 
  unselectable="on"
