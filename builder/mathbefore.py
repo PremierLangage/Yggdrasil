@@ -55,7 +55,7 @@ if __name__ == "__main__":
         if key in dic:
             dic[key] = Env.from_string(macros + dic[key]).render(dic)
 
-    dic['form'] = dic['interface']
+    dic['form'] = dic['template']
 
     with open(outputfilename, "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
