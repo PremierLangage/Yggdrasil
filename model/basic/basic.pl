@@ -96,6 +96,7 @@ style.basic == #|css|
 ==
 
 javascript.ready ==
+<script>
     function onReadyPL(nodes) {
         const actions = nodes.actions;
         const feedback = nodes.feedback;
