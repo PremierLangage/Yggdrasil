@@ -2,6 +2,15 @@
 @ /builder/before_v1.py [builder.py]
 @ /utils/builderlib.py
 
+@ /model/math/jinja_math.py [jinja_env.py]
+@ /model/math/json_math.py [json_encoder.py]
+@ /utils/sympy/evalsympy.py
+@ /utils/sympy/latex2sympy.py
+@ /utils/sympy/sympy2latex.py
+@ /utils/sympy/randsympy.py
+@ /utils/sympy/mplsympy.py
+@ /utils/plrandom.py
+
 settings.maxattempt % 100
 
 title == #|html|
