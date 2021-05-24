@@ -5,10 +5,10 @@ from components import Component
 from builderlib import aux_component
 
 # Import the custom JSON encoder
-from builderlib import PickleEncoder as JSONEncoder
+from json_encoder import JSONEncoder
 
 # Jinja environnement
-from builderlib import ComponentEnv as Env
+from jinja_env import Env
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
