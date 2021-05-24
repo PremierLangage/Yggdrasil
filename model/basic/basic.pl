@@ -7,7 +7,7 @@ title =
 @ /utils/plcsv.py
 
 @ /model/basic/jinja_basic.py [jinja_env.py]
-@ /model/math/json_basic.py [json_encoder.py]
+@ /model/basic/json_basic.py [json_encoder.py]
 
 importfunc == #|python|
 from random import choice, choices, sample, shuffle
