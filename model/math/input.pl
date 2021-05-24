@@ -91,15 +91,16 @@ mathField.innerFields[0].latex("{{ prev_value }}");
 var mathField = MQ.MathField(mathFieldSpan);
 mathField.latex("{{ prev_value }}");
 {% endif %}
-var arrayMathInput = [mathField]
+var arrayMathField = [mathField]
 </script>
 <script>
 function onBeforeSubmitPL() {
 {% if input_embed|length > 0 %}
 latexSpan.value = mathField.innerFields[0].latex();
 {% else %}
-//arrayMathInput.forEach(el => alert(el.el().id));
-arrayMathInput.forEach(el => document.getElementById('form_'+el.el().id).value = el.latex());
+arrayMathField.forEach(function(mathField) {
+document.getElementById('form_'+mathField.el().id).value = el.latex();
+});
 {% endif %}
 return true;
 }
