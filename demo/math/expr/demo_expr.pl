@@ -31,7 +31,7 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
 var arrayMathField = []
 var preval = {};
 {% for name in mathinputid %}
-preval[{{ name }}] = " ";
+preval["{{ name }}"] = " ";
 {% endfor %}
 var names = {{ mathinputid }};
 for (let name of names) {
