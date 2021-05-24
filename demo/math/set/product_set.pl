@@ -11,5 +11,5 @@ sol = FiniteSet(*ProductSet(A, B))
 ==
 
 text == 
-Ecrire en extension l'ensemble $! \\{ {{A|latex}} \\} \times \\{ {{B|latex}} \\}. !$
+Ecrire en extension l'ensemble $! {{A|latex}} \times {{B|latex}}. !$
 ==
