@@ -10,7 +10,7 @@ expr = a*y+b
 sol = (x-b)/a
 ==
 
-text ==
+question ==
 Soit deux nombres $ x $ et $ y $ tels que :
 $$ x = {{ expr|latex }}.$$
 
