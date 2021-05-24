@@ -112,6 +112,7 @@ var names = [];
 {% for name in mathinputid %}
 names.push("{{name}}");
 var val = "{{ answers[name] }}";
+alert(val);
 preval.push(val.replace("/", "//"));
 {% endfor %}
 
