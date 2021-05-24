@@ -51,6 +51,7 @@ if __name__ == "__main__":
     #temporary
     if not 'question' in dic:
         dic['question'] = dic['text']
+        dic['text'] = ""
 
     if not 'inputblock' in dic:
         dic['inputblock'] = dic['form']
