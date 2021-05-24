@@ -78,6 +78,8 @@ macros ==
 ==
 
 javascript.mathquill ==
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
+
 <script>
 var MQ = MathQuill.getInterface(2);
 MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
@@ -98,7 +100,6 @@ var arrayMathField = [mathField]
 <script>
 
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
 
 
 <script>
