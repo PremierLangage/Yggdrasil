@@ -111,7 +111,7 @@ var preval = [];
 var names = [];
 {% for name in mathinputid %}
 names.push("{{name}}");
-let val = "{{ answers[name] }}";
+var val = "{{ answers[name] }}";
 preval.push(val);
 {% endfor %}
 
