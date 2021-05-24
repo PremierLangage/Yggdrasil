@@ -33,7 +33,7 @@ Calculer le discriminant de cette équation.
 ==
 
 step1.inputblock ==
-{{ input1|component }}
+{{ mathinput("math") }}
 ==
 
 step1.evaluator ==
@@ -125,3 +125,122 @@ extracss ==
 ==
 
 
+macros ==
+{% macro mathinput(name, input_prefix='', input_embed='') -%}
+{{ input_prefix }}
+{% if input_embed|length > 1 %}
+<div id="{{ name }}"> {{ input_embed }}</div>
+{% else %}
+<div id="{{ name }}" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
+{% endif %}
+{% if input_keypad|length > 0 %}
+
+<button type="button" class="btn btn-circle btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<i class="fas fa-keyboard fa-2x"></i>
+</button>
+<div class="dropdown-menu dropdown-menu-right" style="max-width: 100px;">
+{% for item in input_keypad %}
+<button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
+{% endfor %}
+</div>
+{% endif %}
+<input type="text" id="form_{{name}}" hidden=true>
+{%- endmacro %}
+==
+
+
+style.mathquill ==
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
+ <style>
+        .btn-circle.btn-sm {
+            width: 30px;
+            height: 30px;
+            padding: 6px 0px;
+            border-radius: 15px;
+            font-size: 8px;
+            text-align: center;
+        }
+ </style>
+==
+
+mathinputid % ["math"]
+
+javascript.mathquill1 ==
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
+<script>
+var MQ = MathQuill.getInterface(2);
+MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
+  autoCommands: 'pi theta sqrt sum infty infin emptyset alpha textS',
+  autoOperatorNames: 'sin cos ln exp lol Hz',
+  });
+
+
+var arrayMathField = []
+var preval = [];
+var names = [];
+{% for name in mathinputid %}
+names.push("{{name}}");
+var val =  String.raw`{{ answers[name] }}`;
+preval.push(val);
+{% endfor %}
+
+for (let i = 0; i < names.length; i++) {
+{% if input_embed|length > 0 %}
+let mathField = MQ.StaticMath(document.getElementById(names[i]));
+mathField.innerFields[0].latex(preval[i]);
+{% else %}
+let mathField = MQ.MathField(document.getElementById(names[i]));
+mathField.latex(preval[i]);
+{% endif %}
+arrayMathField.push(mathField);
+}
+</script>
+==
+
+javascript.mathquill2 ==
+<script>
+function onBeforeSubmitPL() {
+  // copie les valeurs des champs MathField dans des éléments input
+  arrayMathField.forEach(function(mathField) {
+    var mathFieldInput = document.getElementById('form_'+mathField.el().id);
+    if (mathField instanceof MQ.MathField) {
+      mathFieldInput.value = mathField.latex();
+    }
+    if (mathField instanceof MQ.StaticMath) {
+      mathFieldInput.value = mathField.innerFields[0].latex();
+    }
+  });
+  return true;
+}
+
+    function onReadyPL(nodes) {
+        const actions = nodes.actions;
+        const feedback = nodes.feedback;
+        actions.find('.action-save').remove();
+        actions.find('.action-reset').remove();
+        actions.find('.action-next').remove();
+        actions.find('.action-download-env').remove();
+
+        const { origin, pathname }  = document.location;
+        const link = origin + pathname;
+
+        const buttons = actions.find('.btn-group');
+
+        {% if internals.attempt > settings.maxattempt %}
+        actions.find('.action-submit').remove();
+        buttons.append(`<a type="button"  class="btn btn-primary action-reroll" href="`+link+`?action=reroll"><i class="fas fa-dice"></i> Nouveau</a>`);
+        {% endif %}
+        {% if input_embed|length > 0 %}
+        mathField.reflow();
+        {% endif %}
+        actions.prepend('<hr class="border">');
+        actions.find('br').remove();
+        {% if score == 100 %}
+        actions.append('<button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>');
+        {% endif %}
+        {% if score == 0 %}
+        actions.append('<button type="button" style="float: right;" class="btn error-state animated pulse">Score : {{score}} </button>');
+        {% endif %}
+   }
+</script>
+==
