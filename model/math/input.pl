@@ -64,6 +64,9 @@ macros ==
 ==
 
 interface ==
+{% macro test(name) -%}
+{{ name }}
+{%- endmacro %}
 {{ test("math") }}
 
 {{ mathinput("math") }}
