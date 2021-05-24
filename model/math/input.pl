@@ -17,7 +17,7 @@ form =
 tplpage ==
 {{ question }}
 </p>
-{{ inputblock }}
+{{ inputblock|safe }}
 {% if score == -1 %}
 <a class="text-info" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseWarning" role="button" aria-expanded="true" aria-controls="collapseWarning">
 Attention !
