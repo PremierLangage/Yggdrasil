@@ -28,6 +28,7 @@ tplpage ==
 settings.maxattempt % 1
 
 style.basic == #|css|
+<style>
 .icon-check-after p::after {
     font-family: "Font Awesome 5 Free";
     color: #155724;
@@ -92,6 +93,7 @@ style.basic == #|css|
 .column {
   flex: 50%;
 }
+</style>
 ==
 
 
