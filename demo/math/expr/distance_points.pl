@@ -10,7 +10,7 @@ yB = randint(-5, 5)
 sol = sqrt((xA-xB)**2 + (yA-yB)**2)
 ==
 
-text ==
+question ==
 Dans le plan muni d'un repère orthonormé on considère les points de coordonnées 
 $! {{ (xA, yA) }} !$ et $! {{ (xB, yB) }} !$.
 
