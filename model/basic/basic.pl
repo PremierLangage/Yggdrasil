@@ -15,7 +15,9 @@ from plrandom import randint, sampleint
 from plcsv import csv_choice, csv_sample, csv_col
 ==
 
-form = 
+form ==
+
+==
 
 tplpage ==
 {{question}}
