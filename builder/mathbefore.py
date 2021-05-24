@@ -48,13 +48,14 @@ if __name__ == "__main__":
 
     dic['internals'] = {'attempt': 1 }
 
-    dic['form'] = dic['interface']
     # render some string values of the exercise dictionary with the custom Jinja environment 
     macros = dic.get('macros', '')
 
     for key in dic.get('jinja_keys', ['text', 'form', 'solution']):
         if key in dic:
             dic[key] = Env.from_string(macros + dic[key]).render(dic)
+
+    dic['form'] = dic['interface']
 
     with open(outputfilename, "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
