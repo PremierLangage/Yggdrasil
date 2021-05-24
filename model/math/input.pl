@@ -99,8 +99,10 @@ function onBeforeSubmitPL() {
 latexSpan.value = mathField.innerFields[0].latex();
 {% else %}
 arrayMathField.forEach(function(mathField) {
-var mathFieldInput = document.getElementById('form_'+mathField.el().id)
+var mathFieldInput = document.getElementById('form_'+mathField.el().id);
+if (mathField instanceof MQ.MathField) {
 mathFieldInput.value = mathField.latex();
+}
 });
 {% endif %}
 return true;
