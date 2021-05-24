@@ -37,6 +37,10 @@ linksolution ==
 == 
 
 macros ==
+{% macro test(name) -%}
+{{ name }}
+{%- endmacro %}
+
 {% macro mathinput(name, input_prefix='', input_embed='') -%}
 {{ input_prefix }}
 {% if input_embed|length > 1 %}
