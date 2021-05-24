@@ -98,9 +98,9 @@ function onBeforeSubmitPL() {
 {% if input_embed|length > 0 %}
 latexSpan.value = mathField.innerFields[0].latex();
 {% else %}
-//latexSpan.value = $(".math-input").latex();
+MQ.forEach(el => alert(el.latex();));
 
-latexSpan.value = mathField.latex();
+//latexSpan.value = mathField.latex();
 {% endif %}
 return true;
 }
