@@ -34,10 +34,10 @@ var names = {{ mathinputid }};
 for (let name of names) {
 {% if input_embed|length > 0 %}
 let mathField = MQ.StaticMath(document.getElementById(name));
-mathField.innerFields[0].latex(preval.name);
+mathField.innerFields[0].latex(preval[name]);
 {% else %}
 let mathField = MQ.MathField(document.getElementById(name));
-mathField.latex(preval.name);
+mathField.latex(preval[name]);
 {% endif %}
 arrayMathField.push(mathField);
 }
