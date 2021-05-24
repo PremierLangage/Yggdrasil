@@ -37,7 +37,7 @@ linksolution ==
 == 
 
 macros ==
-{% macro input(name, input_prefix='', input_embed='') -%}
+{% macro mathinput(name, input_prefix='', input_embed='') -%}
 {{ input_prefix }}
 {% if input_embed|length > 1 %}
 <div id="{{name}}"> {{ input_embed }}</div>
@@ -60,24 +60,7 @@ macros ==
 ==
 
 interface ==
-{{ input_prefix }}
-{% if input_embed|length > 1 %}
-<div id="math"> {{ input_embed }}</div>
-{% else %}
-<div id="math" class="math-input" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
-{% endif %}
-{% if input_keypad|length > 0 %}
-
-<button type="button" class="btn btn-circle btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<i class="fas fa-keyboard fa-2x"></i>
-</button>
-<div class="dropdown-menu dropdown-menu-right" style="max-width: 100px;">
-{% for item in input_keypad %}
-<button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
-{% endfor %}
-</div>
-{% endif %}
-<input type="text" id="form_math" hidden=true>
+{{ mathinput('math') }}
 ==
 
 
