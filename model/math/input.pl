@@ -40,7 +40,6 @@ Erreur
 {{ solution }}
 </div>
 {% endif %}
-
 ==
 
 evaluator ==
