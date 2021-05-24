@@ -1,6 +1,6 @@
 extends = /model/math/math.pl
 
-jinja_keys % ["question", "test", "inputblock", "solution", "input_prefix"]
+jinja_keys % ["question", "text", "inputblock", "solution", "input_prefix"]
 
 input_prefix = Réponse :
 
