@@ -111,7 +111,7 @@ var preval = [];
 var names = [];
 {% for name in mathinputid %}
 names.push("{{name}}");
-var val = "{{ answers[name] }}";
+var val = "{{ answers[name]|safe}}";
 alert(val);
 preval.push(val.replace("/", "//"));
 {% endfor %}
