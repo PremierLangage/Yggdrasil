@@ -12,6 +12,8 @@ title = Title
 
 text = 
 
+form = 
+
 tplpage ==
 {{ question }}
 </p>
