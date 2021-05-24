@@ -81,7 +81,7 @@ macros ==
 {%- endmacro %}
 ==
 
-interface ==
+inputblock ==
 {{ mathinput("math") }}
 ==
 
