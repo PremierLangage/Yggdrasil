@@ -10,3 +10,8 @@ sol = x+1
 question ==
 Entrer l'expression $! {{ sol|latex}} !$.
 ==
+
+inputblock ==
+{{ mathinput("math") }}
+{{ mathinput("math2") }}
+==
