@@ -37,10 +37,10 @@ preval.{{ name }} = {{ answer[name] }});
 for (let name of names) {
 {% if input_embed|length > 0 %}
 let mathField = MQ.StaticMath(document.getElementById(name));
-mathField.innerFields[0].latex("{{ prev_value }}");
+mathField.innerFields[0].latex(preval.name);
 {% else %}
 let mathField = MQ.MathField(document.getElementById(name));
-mathField.latex("{{ answers['math'] }}");
+mathField.latex(preval.name);
 {% endif %}
 arrayMathField.push(mathField);
 }
