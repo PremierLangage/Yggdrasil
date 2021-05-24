@@ -98,6 +98,8 @@ function onBeforeSubmitPL() {
 {% if input_embed|length > 0 %}
 latexSpan.value = mathField.innerFields[0].latex();
 {% else %}
+//latexSpan.value = $(".math-input").latex();
+
 latexSpan.value = mathField.latex();
 {% endif %}
 return true;
