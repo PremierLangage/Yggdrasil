@@ -35,7 +35,6 @@ var names = [];
 names.push("{{name}}");
 preval.push("{{answers[name]}}"};
 {% endfor %}
-var names = {{ str(mathinputid) }}];
 for (let i = 0; i < names.length; i++) {
 {% if input_embed|length > 0 %}
 let mathField = MQ.StaticMath(document.getElementById(names[i]));
