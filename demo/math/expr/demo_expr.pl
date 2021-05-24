@@ -12,7 +12,7 @@ Entrer l'expression $! {{ sol|latex}} !$.
 ==
 
 inputblock ==
-{{ mathinput("math1") }}
+{{ mathinput("math") }}
 {{ mathinput("math2") }}
 ==
 
@@ -27,7 +27,7 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
 
 
 var arrayMathField = []
-var names = ["math1", "math2"]
+var names = ["math", "math2"]
 for (let name of names) {
 {% if input_embed|length > 0 %}
 let mathField = MQ.StaticMath(document.getElementById(name));
