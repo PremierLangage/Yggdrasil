@@ -107,20 +107,18 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   });
 
 
-function createMathFields(names){
 var arrayMathField = []
+var names = ["math"]
 for (let name of names) {
 {% if input_embed|length > 0 %}
-var mathField = MQ.StaticMath(document.getElementById(name));
+let mathField = MQ.StaticMath(document.getElementById(name));
 mathField.innerFields[0].latex("{{ prev_value }}");
 {% else %}
-var mathField = MQ.MathField(document.getElementById(name));
+let mathField = MQ.MathField(document.getElementById(name));
 mathField.latex("{{ prev_value }}");
 {% endif %}
 arrayMathField.append(mathField);
 }
-
-createMathFields(["math"]);
 </script>
 
 </script>
