@@ -58,10 +58,6 @@ if __name__ == "__main__":
 
     # dic = json.loads(json.dumps(dic, cls=JSONEncoder))
 
-    # hack for MathQuill
-    if 'answers' in dic:
-        if 'math' in dic['answers']:
-            dic['prev_value'] = dic['answers']['math'].replace("\\", "\\\\")
 
     with open(sys.argv[3], "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
