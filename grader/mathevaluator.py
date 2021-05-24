@@ -58,10 +58,12 @@ if __name__ == "__main__":
     if feedback.strip() != "":
         dic['form'] = "\n".join([dic['form'], dic['format_feedback']])
 
+"""
     if dic['settings']['maxattempt'] is not None:
         if dic['internals']['attempt'] > dic['settings']['maxattempt']:
             if score < 100 and 'solution' in dic:
                 dic['form'] = "\n".join([dic['form'], dic['linksolution']])
+"""
     
     feedback = Env.from_string(feedback).render(dic)
     ffeedback = ""
