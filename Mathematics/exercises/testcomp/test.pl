@@ -39,7 +39,10 @@ radio2 =: RadioGroup
 radio2.decorator = CustomRadio
 
 # Step 1
-
+intro ==
+On considère l'équation
+$${{ expr|latex }}$$
+==
 
 step1.question ==
 Calculer le discriminant de cette équation.
