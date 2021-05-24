@@ -40,9 +40,9 @@ linksolution ==
 interface ==
 {{ input_prefix }}
 {% if input_embed|length > 1 %}
-<div id="math-field"> {{ input_embed }}</div>
+<div id="math"> {{ input_embed }}</div>
 {% else %}
-<div id="math-field" class="math-input" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
+<div id="math" class="math-input" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
 {% endif %}
 {% if input_keypad|length > 0 %}
 
@@ -82,7 +82,7 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   autoCommands: 'pi theta sqrt sum infty infin emptyset alpha textS',
   autoOperatorNames: 'sin cos ln exp lol Hz',
   });
-var mathFieldSpan = document.getElementById('math-field');
+var mathFieldSpan = document.getElementById('math1');
 var latexSpan = document.getElementById('form_math');
 {% if input_embed|length > 0 %}
 var mathField = MQ.StaticMath(mathFieldSpan);
