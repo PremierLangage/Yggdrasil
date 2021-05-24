@@ -88,7 +88,7 @@ else:
 ==
 
 
-extrajs ==
+javascript.seltext ==
 <script>
 list=[]
 var words = document.querySelectorAll("#textselect span")
