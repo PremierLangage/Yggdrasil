@@ -1,19 +1,15 @@
 extends = /model/math/math.pl
 
-jinja_keys % ["text", "interface", "solution", "input_prefix"]
+jinja_keys % ["question", "inputblock", "solution", "input_prefix"]
 
 input_prefix = Réponse :
 
-before =
+before ==
 
-text ==
 ==
 
 title = Title
 
-form ==
-
-==
 
 template ==
 {{ question }}
@@ -52,11 +48,6 @@ input_keypad % []
 input_embed =
 
 input_prefix = 
-
-
-linksolution ==
-
-== 
 
 macros ==
 {% macro mathinput(name, input_prefix='', input_embed='') -%}
