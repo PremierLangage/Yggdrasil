@@ -7,7 +7,7 @@ right = [str(n) for n in range(50, 100) if n % 3 == 0]
 wrong = [str(n) for n in range(50, 100) if n % 3 != 0]
 ==
 
-text ==
+question ==
 Parmi les nombres suivants, lesquels sont des multiples de 3 ?
 ==
 
