@@ -20,6 +20,9 @@ Exercice à étapes
 text = 
 
 before ==
+from sympy import var
+var('x')
+expr = x**^2-3*x+2
 currentstep = 0
 steps = [step1, step2]
 stepscore = []
