@@ -94,22 +94,24 @@ mathField.latex("{{ prev_value }}");
 var arrayMathField = [mathField]
 </script>
 <script>
-function onBeforeSubmitPL() {
-arrayMathField.forEach(function(mathField) {
-var mathFieldInput = document.getElementById('form_'+mathField.el().id);
-if (mathField instanceof MQ.MathField) {
-mathFieldInput.value = mathField.latex();
-}
-if (mathField instanceof MQ.StaticMath) {
-mathFieldInput.value = mathField.innerFields[0].latex();
-}
-});
-return true;
-}
+
 </script>
 
 
 <script>
+function onBeforeSubmitPL() {
+  arrayMathField.forEach(function(mathField) {
+    var mathFieldInput = document.getElementById('form_'+mathField.el().id);
+    if (mathField instanceof MQ.MathField) {
+      mathFieldInput.value = mathField.latex();
+    }
+    if (mathField instanceof MQ.StaticMath) {
+      mathFieldInput.value = mathField.innerFields[0].latex();
+    }
+  });
+  return true;
+}
+
     function onReadyPL(nodes) {
         const actions = nodes.actions;
         const feedback = nodes.feedback;
