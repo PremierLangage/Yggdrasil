@@ -2,7 +2,7 @@ extends = /model/basic/sortlist.pl
 
 title = Premiers ministres
 
-text ==
+question ==
 Classer ces premiers ministres de la Ve République du plus ancien au plus récent (selon la date d'entrée en fonction).
 ==
 
