@@ -52,12 +52,7 @@ if __name__ == "__main__":
 
     if score >= 0:
         dic['internals']['attempt'] = dic['internals']['attempt'] + 1
-    
-    dic['form'] = dic['interface']
-
-    if feedback.strip() != "":
-        dic['form'] = "\n".join([dic['form'], dic['format_feedback']])
-   
+      
     feedback = Env.from_string(feedback).render(dic)
     ffeedback = ""
 
