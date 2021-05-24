@@ -47,7 +47,9 @@ if __name__ == "__main__":
     aux_component(dic)
 
     dic['internals'] = {'attempt': 1 }
-
+    if not 'question' in dic:
+        dic['question'] = dic['text']
+        
     # render some string values of the exercise dictionary with the custom Jinja environment 
     macros = dic.get('macros', '')
 
