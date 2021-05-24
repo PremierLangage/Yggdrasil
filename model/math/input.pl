@@ -64,6 +64,8 @@ macros ==
 ==
 
 interface ==
+{{ test("math") }}
+
 {{ mathinput("math") }}
 ==
 
