@@ -6,6 +6,9 @@ title =
 @ /utils/plrandom.py
 @ /utils/plcsv.py
 
+@ /model/basic/jinja_basic.py [jinja_env.py]
+@ /model/math/json_basic.py [json_encoder.py]
+
 importfunc == #|python|
 from random import choice, choices, sample, shuffle
 from plrandom import randint, sampleint
