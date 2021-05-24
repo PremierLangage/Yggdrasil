@@ -16,7 +16,7 @@ inputblock ==
 {{ mathinput("math2") }}
 ==
 
-mathinputid = ["math", "math2"]
+mathinputid % ["math", "math2"]
 
 javascript.mathquill1 ==
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
@@ -30,9 +30,7 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
 
 var arrayMathField = []
 var preval = {math:"a", math2:"b"};
-{% for name in mathinputid %}
-preval[{{ name }}] = " ";
-{% endfor %}
+
 var names = {{ mathinputid }};
 for (let name of names) {
 {% if input_embed|length > 0 %}
