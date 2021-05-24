@@ -121,9 +121,6 @@ arrayMathField.append(mathField);
 }
 </script>
 
-</script>
-
-
 <script>
 function onBeforeSubmitPL() {
   // copie les valeurs des champs MathField dans des éléments input
