@@ -33,7 +33,7 @@ Calculer le discriminant de cette équation.
 ==
 
 step1.inputblock ==
-{{ mathinput("math") }}
+
 ==
 
 step1.evaluator ==
