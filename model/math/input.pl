@@ -40,9 +40,9 @@ macros ==
 {% macro mathinput(name, input_prefix='', input_embed='') -%}
 {{ input_prefix }}
 {% if input_embed|length > 1 %}
-<div id="{{name}}"> {{ input_embed }}</div>
+<div id="{{ name }}"> {{ input_embed }}</div>
 {% else %}
-<div id="{{name}}" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
+<div id="{{ name }}" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
 {% endif %}
 {% if input_keypad|length > 0 %}
 
