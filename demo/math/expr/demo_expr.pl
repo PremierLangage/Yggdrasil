@@ -13,5 +13,4 @@ Entrer l'expression $! {{ sol|latex}} !$.
 
 inputblock ==
 {{ mathinput("math") }}
-{{ mathinput("math2") }}
 ==
