@@ -95,7 +95,7 @@ Erreur
 
 ==
 
-extracss ==
+style.test ==
 <style>
 .btn-group-xs > .btn, .btn-xs {
   padding: .25rem .4rem;
