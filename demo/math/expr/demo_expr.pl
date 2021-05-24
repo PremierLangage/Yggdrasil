@@ -33,7 +33,7 @@ var preval = [];
 var names = [];
 {% for name in mathinputid %}
 names.push("{{name}}");
-preval.push(" ");
+preval.push("{{ answer[name] }}");
 {% endfor %}
 
 for (let i = 0; i < names.length; i++) {
