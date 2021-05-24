@@ -2,7 +2,7 @@ extends = /model/basic/seltext.pl
 
 title = Grec ancien
 
-text ==
+question ==
 Identifier les adjectifs comparatifs dans le texte ci-dessous.
 ==
 
