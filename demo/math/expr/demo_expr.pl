@@ -12,5 +12,31 @@ Entrer l'expression $! {{ sol|latex}} !$.
 ==
 
 inputblock ==
-{{ mathinput("math") }}
+{{ mathinput("math1") }}
+{{ mathinput("math2") }}
+==
+
+javascript.mathquill1 ==
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
+<script>
+var MQ = MathQuill.getInterface(2);
+MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
+  autoCommands: 'pi theta sqrt sum infty infin emptyset alpha textS',
+  autoOperatorNames: 'sin cos ln exp lol Hz',
+  });
+
+
+var arrayMathField = []
+var names = ["math1", "math2"]
+for (let name of names) {
+{% if input_embed|length > 0 %}
+let mathField = MQ.StaticMath(document.getElementById(name));
+mathField.innerFields[0].latex("{{ prev_value }}");
+{% else %}
+let mathField = MQ.MathField(document.getElementById(name));
+mathField.latex("{{ prev_value }}");
+{% endif %}
+arrayMathField.push(mathField);
+}
+</script>
 ==
