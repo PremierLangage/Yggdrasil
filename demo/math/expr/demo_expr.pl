@@ -16,6 +16,8 @@ inputblock ==
 {{ mathinput("math2") }}
 ==
 
+mathinputid = ["math", "math2"]
+
 javascript.mathquill1 ==
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
 <script>
@@ -27,7 +29,7 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
 
 
 var arrayMathField = []
-var names = ["math", "math2"]
+var names = {{ mathinputid }}
 for (let name of names) {
 {% if input_embed|length > 0 %}
 let mathField = MQ.StaticMath(document.getElementById(name));
