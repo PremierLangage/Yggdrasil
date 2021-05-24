@@ -34,7 +34,7 @@ let mathField = MQ.StaticMath(document.getElementById(name));
 mathField.innerFields[0].latex("{{ prev_value }}");
 {% else %}
 let mathField = MQ.MathField(document.getElementById(name));
-mathField.latex("{{ answers }}");
+mathField.latex("{{ answers.math }}");
 {% endif %}
 arrayMathField.push(mathField);
 }
