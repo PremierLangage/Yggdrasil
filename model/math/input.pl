@@ -105,18 +105,21 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   autoCommands: 'pi theta sqrt sum infty infin emptyset alpha textS',
   autoOperatorNames: 'sin cos ln exp lol Hz',
   });
-var mathFieldSpan = document.getElementById('math');
-var latexSpan = document.getElementById('form_math');
+
+
+function createMathFields(names){
+var arrayMathField = []
+for (name in names) {
+var mathFieldSpan = ;
 {% if input_embed|length > 0 %}
-var mathField = MQ.StaticMath(mathFieldSpan);
+var mathField = MQ.StaticMath(document.getElementById(name));
 mathField.innerFields[0].latex("{{ prev_value }}");
 {% else %}
-var mathField = MQ.MathField(mathFieldSpan);
+var mathField = MQ.MathField(document.getElementById(name));
 mathField.latex("{{ prev_value }}");
 {% endif %}
-var arrayMathField = [mathField]
+arrayMathField.append(mathField)
 </script>
-<script>
 
 </script>
 
