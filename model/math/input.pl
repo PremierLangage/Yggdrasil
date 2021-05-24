@@ -94,11 +94,8 @@ style.mathquill ==
  </style>
 ==
 
-
-
-javascript.mathquill ==
+javascropt.mathquill1 ==
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
-
 <script>
 var MQ = MathQuill.getInterface(2);
 MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
@@ -120,7 +117,9 @@ mathField.latex("{{ prev_value }}");
 arrayMathField.push(mathField);
 }
 </script>
+==
 
+javascript.mathquill2 ==
 <script>
 function onBeforeSubmitPL() {
   // copie les valeurs des champs MathField dans des éléments input
