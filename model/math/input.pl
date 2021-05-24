@@ -94,6 +94,8 @@ style.mathquill ==
  </style>
 ==
 
+mathinput % ["math"]
+
 javascript.mathquill1 ==
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
 <script>
@@ -105,14 +107,20 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
 
 
 var arrayMathField = []
-var names = ["math"]
-for (let name of names) {
+var preval = [];
+var names = [];
+{% for name in mathinputid %}
+names.push("{{name}}");
+preval.push("{{ answers[name] }}");
+{% endfor %}
+
+for (let i = 0; i < names.length; i++) {
 {% if input_embed|length > 0 %}
-let mathField = MQ.StaticMath(document.getElementById(name));
-mathField.innerFields[0].latex("{{ prev_value }}");
+let mathField = MQ.StaticMath(document.getElementById(names[i]));
+mathField.innerFields[0].latex(preval[i]);
 {% else %}
-let mathField = MQ.MathField(document.getElementById(name));
-mathField.latex("{{ prev_value }}");
+let mathField = MQ.MathField(document.getElementById(names[i]));
+mathField.latex(preval[i]);
 {% endif %}
 arrayMathField.push(mathField);
 }
