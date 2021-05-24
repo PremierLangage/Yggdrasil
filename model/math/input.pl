@@ -33,12 +33,14 @@ Erreur
 <div class="collapse show" id="collapseError">
 {{ feedback }}
 </div>
+<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
+  Solution
+</a>
+<div class="collapse" id="collapseSolution">
+{{ solution }}
+</div>
 {% endif %}
-{% if i == currentstep%}
-<button class="btn btn-primary btn-sm action-submit">
-   <span class="ion-hide-md-down">Valider</span>
-</button>
-{% endif %}
+
 ==
 
 evaluator ==
@@ -54,12 +56,7 @@ input_prefix =
 
 
 linksolution ==
-<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-  Solution
-</a>
-<div class="collapse" id="collapseExample">
-{{ solution }}
-</div>
+
 == 
 
 macros ==
