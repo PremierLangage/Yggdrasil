@@ -21,7 +21,7 @@ text =
 tplpage ==
 {{question}}
 
-{{inputblock}}
+{{ inputblock|safe }}
 ==
 
 settings.maxattempt % 1
