@@ -29,7 +29,11 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
 
 
 var arrayMathField = []
-var names = {{ mathinputid }}
+var names = {{ mathinputid }};
+var preval = []
+{% for name in names %}
+preval.push({{ answer[name] }});
+{% endfor %}
 for (let name of names) {
 {% if input_embed|length > 0 %}
 let mathField = MQ.StaticMath(document.getElementById(name));
