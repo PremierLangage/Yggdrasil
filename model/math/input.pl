@@ -60,7 +60,7 @@ macros ==
 ==
 
 interface ==
-{{ mathinput('math') }}
+{{ mathinput("math") }}
 ==
 
 
