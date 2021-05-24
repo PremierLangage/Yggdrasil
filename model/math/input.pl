@@ -95,10 +95,10 @@ mathField.latex("{{ prev_value }}");
 </script>
 <script>
 function onBeforeSubmitPL() {
-alert("toto");
 {% if input_embed|length > 0 %}
 latexSpan.value = mathField.innerFields[0].latex();
 {% else %}
+MQ.forEach(el => alert("toto"););
 latexSpan.value = mathField.latex();
 {% endif %}
 return true;
