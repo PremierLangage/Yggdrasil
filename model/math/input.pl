@@ -147,6 +147,7 @@ function onBeforeSubmitPL() {
     function onReadyPL(nodes) {
         const actions = nodes.actions;
         const feedback = nodes.feedback;
+        const body = nodes.body;
         actions.find('.action-save').remove();
         actions.find('.action-reset').remove();
         actions.find('.action-next').remove();
@@ -166,6 +167,7 @@ function onBeforeSubmitPL() {
         {% endif %}
         actions.prepend('<hr class="border">');
         actions.find('br').remove();
+        documentge
         {% if score == 100 %}
         actions.append('<button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>');
         {% endif %}
