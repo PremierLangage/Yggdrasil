@@ -19,19 +19,7 @@ nbitems = literal_eval(str(nbitems))
 minright = literal_eval(str(minright))
 maxright = literal_eval(str(maxright))
 
-if isinstance(right, str):
-    _right_ = right.splitlines()
-elif isinstance(right, list):
-    _right_= right
-else:
-    raise TypeError("right must be a string or a list")
 
-if isinstance(wrong, str):
-    _wrong_ = wrong.splitlines()
-elif isinstance(wrong, list):
-    _wrong_ = wrong
-else:
-    raise TypeError("wrong must be a string or a list")
 
 checkbox.setdata_from_rw(_right_, _wrong_, nbitems, randint(minright, maxright))
 checkbox.scoring = scoring
