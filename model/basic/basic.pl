@@ -1,3 +1,5 @@
+extends = /model/basic/temp.pl
+
 title =
 
 @ /builder/before1.py [builder.py]
