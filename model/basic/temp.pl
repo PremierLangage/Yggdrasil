@@ -61,7 +61,7 @@ function onReadyPL(nodes) {
     {% if score == 100 %}
     actions.append('<button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>');
     {% endif %}
-    {% if score >= 0 ans scpre < 100 %}
+    {% if score >= 0 and score < 100 %}
     actions.append('<button type="button" style="float: right;" class="btn error-state animated pulse">Score : {{score}} </button>');
     {% endif %}
     {% if score >=0 %}
