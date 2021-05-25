@@ -44,17 +44,15 @@ javascript.onreadypl == #|js|
 <script>
 function onReadyPL(nodes) {
     const actions = nodes.actions;
-    const feedback = nodes.feedback;
     const body = nodes.body;
+    const buttons = actions.find('.btn-group');
+    const { origin, pathname }  = document.location;
+    const link = origin + pathname;
+
     actions.find('.action-save').remove();
     actions.find('.action-reset').remove();
     actions.find('.action-next').remove();
     actions.find('.action-download-env').remove();
-
-    const { origin, pathname }  = document.location;
-    const link = origin + pathname;
-
-    const buttons = actions.find('.btn-group');
 
     actions.prepend('<hr class="border">');
     actions.find('br').remove();
