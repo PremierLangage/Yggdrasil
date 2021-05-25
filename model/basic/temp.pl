@@ -68,7 +68,7 @@ function onReadyPL(nodes) {
     {% endif %}
     {% if score >=0 %}
     actions.find('.action-submit').remove();
-    buttons.append(`<a type="button"  class="btn btn-primary action-reroll" href="`+link+`?action=reroll"> Nouveau</a>`);
+    buttons.append(`<a type="button" class="btn btn-primary action-reroll" href="`+link+`?action=reroll"> Nouveau</a>`);
     {% endif %}
 }
 </script>
