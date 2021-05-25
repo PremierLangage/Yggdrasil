@@ -19,9 +19,7 @@ nbitems = literal_eval(str(nbitems))
 minright = literal_eval(str(minright))
 maxright = literal_eval(str(maxright))
 
-
-
-checkbox.setdata_from_rw(_right_, _wrong_, nbitems, randint(minright, maxright))
+checkbox.setdata_from_rw(right, wrong, nbitems, randint(minright, maxright))
 checkbox.scoring = scoring
 ==
 
