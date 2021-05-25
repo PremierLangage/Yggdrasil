@@ -16,17 +16,10 @@ from random import randint, choice, choices, sample, shuffle
 process ==
 from ast import literal_eval
 
-indsol = literal_eval(str(indsol))
+indsol = int(indsol)
 shuffled = literal_eval(str(shuffled))
 
-if isinstance(items, str):
-    _items_ = items.splitlines()
-elif isinstance(items, list):
-    _items_= items
-else:
-    raise TypeError("items must be a string or a list")
-
-checkbox.setitems(_items_)
+checkbox.setitems(items)
 checkbox.setsol_from_index(indsol)
 
 if shuffled:
