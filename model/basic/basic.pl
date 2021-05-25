@@ -21,7 +21,9 @@ form =
 text = 
 
 tplpage ==
+<div style="display: block; margin-bottom: 1em;">
 {{question}}
+</div>
 
 {{ inputblock|safe }}
 ==
