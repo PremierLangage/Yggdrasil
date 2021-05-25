@@ -14,11 +14,15 @@ class CustomRadio(Component):
     def setStatement(self, s):
         self.statement = s 
 
-    def setitems(self, contents):
+    def setitems(self, items):
         """
         Set items in the component.
         """
-        self.items = [{"id": str(uuid4()), "content": str(content)} for content in contents]
+        if isinstance(items, str):
+            _items_ = items.splitlines()
+        else:
+            _items_ = items
+        self.items = [{"id": str(uuid4()), "content": str(item)} for item in items]
 
     def setsol_from_index(self, index):
         """
