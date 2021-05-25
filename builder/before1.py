@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-
 import sys, json
 from components import Component
 from builderlib import aux_component
@@ -47,8 +46,6 @@ if __name__ == "__main__":
 
     # HACK for components in lists
     aux_component(dic)
-
-    dic['internals'] = {'attempt': 1 }
 
     #temporary
     if not 'question' in dic:
