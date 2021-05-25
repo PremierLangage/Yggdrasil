@@ -167,6 +167,7 @@ function onBeforeSubmitPL() {
         {% endif %}
         actions.prepend('<hr class="border">');
         actions.find('br').remove();
+        body.find('br').remove();
         documentge
         {% if score == 100 %}
         actions.append('<button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>');
