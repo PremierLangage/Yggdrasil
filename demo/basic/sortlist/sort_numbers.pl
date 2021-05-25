@@ -2,7 +2,7 @@ extends = /model/basic/sortlist.pl
 
 title = Nombres
 
-text ==
+question ==
 Classer les nombres suivants du plus petit au plus grand.
 ==
 
