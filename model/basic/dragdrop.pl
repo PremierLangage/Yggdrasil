@@ -9,6 +9,7 @@ title =
 labval % []
 
 before_scripts % ["importfunc", "before", "process"]
+jinja_keys % ["inputblock"]
 
 importfunc ==
 from random import randint, choice, choices, sample, shuffle
