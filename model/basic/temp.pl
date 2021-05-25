@@ -56,11 +56,6 @@ function onReadyPL(nodes) {
 
     const buttons = actions.find('.btn-group');
 
-    {% if internals.attempt > settings.maxattempt %}
-    actions.find('.action-submit').remove();
-    buttons.append(`<a type="button"  class="btn btn-primary action-reroll" href="`+link+`?action=reroll"><i class="fas fa-dice"></i> Nouveau</a>`);
-    {% endif %}
-
     actions.prepend('<hr class="border">');
     actions.find('br').remove();
     body.find('br').remove();
@@ -68,8 +63,12 @@ function onReadyPL(nodes) {
     {% if score == 100 %}
     actions.append('<button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>');
     {% endif %}
-    {% if score == 0 %}
+    {% if score >= 0 ans scpre < 100 %}
     actions.append('<button type="button" style="float: right;" class="btn error-state animated pulse">Score : {{score}} </button>');
+    {% endif %}
+    {% if score >=0 %}
+    actions.find('.action-submit').remove();
+    buttons.append(`<a type="button"  class="btn btn-primary action-reroll" href="`+link+`?action=reroll"> Nouveau</a>`);
     {% endif %}
 }
 </script>
