@@ -16,8 +16,15 @@ form =
 
 tplpage ==
 {{ question }}
-</p>
+{% if score >= 0 %}
+<div class="mq-disabled">
 {{ inputblock|safe }}
+</div>
+{% else %}
+<div id="myDIV">
+{{ inputblock|safe }}
+</div>
+{% endif %}
 {% if score == -1 %}
 <a class="text-info" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseWarning" role="button" aria-expanded="true" aria-controls="collapseWarning">
 Attention !
