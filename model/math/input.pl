@@ -55,7 +55,7 @@ input_keypad % []
 
 input_embed =
 
-input_prefix = 
+input_prefix = Réponse :
 
 macros ==
 {% macro mathinput(name, input_prefix='', input_embed='') -%}
