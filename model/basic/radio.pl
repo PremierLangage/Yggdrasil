@@ -1,9 +1,6 @@
 #! indsol:int
 indsol = 0
 
-"""
-comment
-"""
 items =
 
 
