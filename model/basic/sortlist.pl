@@ -1,4 +1,5 @@
 extends = /model/basic/basic.pl
+@ /utils/components/scoring.py
 
 title =
 
