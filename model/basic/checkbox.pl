@@ -21,7 +21,6 @@ shuffled = literal_eval(str(shuffled))
 
 checkbox.setitems(items)
 checkbox.setindsol(indsol)
-
 if shuffled:
     checkbox.shuffle()
 ==
