@@ -28,7 +28,7 @@ sortlist =: SortList
 @ /utils/components/sortlist.py [customsortlist.py]
 sortlist.decorator = CustomSortList
 
-form ==
+inputblock ==
 {{ sortlist|component }}
 ==
 
