@@ -222,7 +222,7 @@ padding-bottom: 0.5em;
 
 .mq-disabled {
 pointer-events: none;
-background-color: lightgrey;
+background-color: #F5F5F5;
 }
 </style>
 ==
