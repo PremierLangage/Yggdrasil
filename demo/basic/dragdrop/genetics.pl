@@ -2,11 +2,11 @@ extends = /model/basic/dragdrop.pl
 
 title = Génétique
 
-text ==
+question ==
 Compléter le texte suivante avec les bonnes étiquettes.
 ==
 
-form ==
+inputblock ==
 <p> 
 L’ensemble des gènes caractéristiques de l’espèce à laquelle appartient un organisme, constitue son {{ drops[0] }}. 
 Chez les individus d’une même espèce, un gène peut cependant exister sous différentes formes présentant de légères modifications de séquence : les allèles. 
