@@ -183,48 +183,14 @@ function onBeforeSubmitPL() {
 </script>
 ==
 
-style.test ==
-<style>
-.exercise__header{
-padding-top: 0.5em;
-padding-bottom: 0.5em;
-}
-.exercise__instructions{
-display: none;
-}
-.exercise__body{
-padding-top: 0.5em;
-padding-bottom: 0.5em;
-}
-.exercise__title {
-   font-size: 20px;
-}
-
-.exercise__instructions p {
-   font-size: 16px !important;
-}
-.exercise__actions .btn-group {
-   float: left;
-}
-
-.action-save {
-   display: none;
-}
-.action-reset {
-   display: none;
-}
-.action-next {
-   display: none;
-}
-.action-download-env {
-   display: none;
-}
-
+attic ==
 .mq-disabled .mq-editable-field {
 pointer-events: none;
 background-color: #F5F5F5;
 }
-</style>
+    {% if input_embed|length > 0 %}
+    mathField.reflow();
+    {% endif %}
 ==
 
 settings.maxattempt % 1
