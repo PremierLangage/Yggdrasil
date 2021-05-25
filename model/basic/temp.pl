@@ -62,7 +62,7 @@ function onReadyPL(nodes) {
     actions.append('<button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>');
     {% endif %}
     {% if score >= 0 and score < 100 %}
-    actions.append('<button type="button" style="float: right;" class="btn btn-secondary animated pulse">Score : {{score}} </button>');
+    actions.append('<button type="button" style="float: right;" class="btn btn-outline-secondary animated pulse">Score : {{score}} </button>');
     {% endif %}
     {% if score >=0 %}
     actions.find('.action-submit').remove();
