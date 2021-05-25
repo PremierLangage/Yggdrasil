@@ -179,8 +179,12 @@ function onBeforeSubmitPL() {
 style.test ==
 <style>
 .exercise__header{
-padding-top: 1em;
-padding-bottom: 1em;
+padding-top: 0.5em;
+padding-bottom: 0.5em;
+}
+.exercise__body{
+padding-top: 0.5em;
+padding-bottom: 0.5em;
 }
 .exercise__title {
    font-size: 20px;
