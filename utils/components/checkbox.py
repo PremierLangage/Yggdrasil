@@ -18,8 +18,11 @@ class CustomCheckbox(Component):
         """
         Load items in the component.
         """
-        self.items = [{"id": str(uuid4()), "content": item} for item in items]
-
+        if isinstance(items, list):
+            self.items = [{"id": str(uuid4()), "content": item} for item in items]
+        elif isinstance(items, str):
+            self.items = [{"id": str(uuid4()), "content": item} for item in items.splitlines()]
+    
     def setsol_from_index(self, index):
         """
         Set the component solutions from a list of indices.
