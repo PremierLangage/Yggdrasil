@@ -14,11 +14,11 @@ class CustomCheckbox(Component):
     def setStatement(self, s):
         self.statement = s 
 
-    def setitems(self, contents):
+    def setitems(self, items):
         """
         Load items in the component.
         """
-        self.items = [{"id": str(uuid4()), "content": content} for content in contents]
+        self.items = [{"id": str(uuid4()), "content": item} for item in items]
 
     def setsol_from_index(self, index):
         """
