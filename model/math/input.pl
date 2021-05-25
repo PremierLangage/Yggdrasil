@@ -26,7 +26,7 @@ Attention !
 {{ feedback }}
 </div>
 {% elif score >= 0 and score < 100 %}
-<a class="text-danger" style="display: block;" data-toggle="collapse" href="#collapseError" role="button" aria-expanded="true" aria-controls="collapseError">
+<a class="text-danger" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseError" role="button" aria-expanded="true" aria-controls="collapseError">
 Erreur
 </a>
 <div class="collapse show" id="collapseError">
