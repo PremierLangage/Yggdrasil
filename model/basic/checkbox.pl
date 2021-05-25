@@ -14,10 +14,8 @@ from random import randint, choice, choices, sample, shuffle
 ==
 
 process ==
-from ast import literal_eval
-
 indsol = int(indsol)
-shuffled = literal_eval(str(shuffled))
+shuffled = bool(shuffled)
 
 checkbox.setitems(items)
 checkbox.setsol_from_index(indsol)
