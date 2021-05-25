@@ -88,6 +88,7 @@ else:
 
 
 style.dragdrop ==
+<style>
 .drag-drop-component {
     position: relative;
     cursor: move;
@@ -112,4 +113,5 @@ style.dragdrop ==
 .drag-drop-component.droppable.dnd-over,.drag-drop-component.droppable:hover{
     border:0px solid #000
 }
+</style>
 ==
