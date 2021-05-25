@@ -220,7 +220,7 @@ padding-bottom: 0.5em;
    display: none;
 }
 
-.mq-disabled {
+.mq-disabled .mq-editable-field {
 pointer-events: none;
 background-color: #F5F5F5;
 }
