@@ -1,4 +1,5 @@
 extends = /model/math/math.pl
+extends = /model/basic/temp.pl
 
 jinja_keys % ["question", "text", "inputblock", "solution", "input_prefix"]
 
@@ -149,37 +150,6 @@ function onBeforeSubmitPL() {
   return true;
 }
 
-    function onReadyPL(nodes) {
-        const actions = nodes.actions;
-        const feedback = nodes.feedback;
-        const body = nodes.body;
-        actions.find('.action-save').remove();
-        actions.find('.action-reset').remove();
-        actions.find('.action-next').remove();
-        actions.find('.action-download-env').remove();
-
-        const { origin, pathname }  = document.location;
-        const link = origin + pathname;
-
-        const buttons = actions.find('.btn-group');
-
-        {% if internals.attempt > settings.maxattempt %}
-        actions.find('.action-submit').remove();
-        buttons.append(`<a type="button"  class="btn btn-primary action-reroll" href="`+link+`?action=reroll"><i class="fas fa-dice"></i> Nouveau</a>`);
-        {% endif %}
-        {% if input_embed|length > 0 %}
-        mathField.reflow();
-        {% endif %}
-        actions.prepend('<hr class="border">');
-        actions.find('br').remove();
-        body.find('br').remove();
-        {% if score == 100 %}
-        actions.append('<button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>');
-        {% endif %}
-        {% if score == 0 %}
-        actions.append('<button type="button" style="float: right;" class="btn error-state animated pulse">Score : {{score}} </button>');
-        {% endif %}
-   }
 </script>
 ==
 
