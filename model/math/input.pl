@@ -182,6 +182,9 @@ style.test ==
 padding-top: 0.5em;
 padding-bottom: 0.5em;
 }
+.exercise__instructions{
+display: none;
+}
 .exercise__body{
 padding-top: 0.5em;
 padding-bottom: 0.5em;
