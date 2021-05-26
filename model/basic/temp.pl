@@ -33,8 +33,6 @@ style.page == #|css|
  display: none;  
 }
 
-
-
 .action-save {
    display: none;
 }
