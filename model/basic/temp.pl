@@ -24,6 +24,10 @@ style.page == #|css|
 .exercise__actions {
  display: none;  
 }
+
+.exercise__actions .btn-group {
+ display: none;  
+}
 .exercise__spinner {
  display: none;  
 }
