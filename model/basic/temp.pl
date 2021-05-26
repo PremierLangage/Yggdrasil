@@ -60,6 +60,7 @@ function onReadyPL(nodes) {
     actions.find('.action-reset').remove();
     actions.find('.action-next').remove();
     actions.find('.action-download-env').remove();
+    actions.find('.action-submit').remove();
 
     actions.prepend('<hr class="border">');
     actions.find('br').remove();
@@ -72,7 +73,8 @@ function onReadyPL(nodes) {
     actions.append('<button type="button" style="float: right;" class="btn neutral-state animated pulse">Score : {{score}} </button>');
     {% endif %}
     {% if score >=0 %}
-    actions.find('.action-submit').remove();
+    buttons.append(`<a type="button" class="btn btn-primary action-reroll" href="`+link+`?action=reroll"> Nouveau</a>`);
+    {% else %}
     buttons.append(`<a type="button" class="btn btn-primary action-reroll" href="`+link+`?action=reroll"> Nouveau</a>`);
     {% endif %}
 }
