@@ -33,9 +33,7 @@ style.page == #|css|
  display: none;  
 }
 
-.exercise__spinner{
- display: none;  
-}
+
 
 .action-save {
    display: none;
