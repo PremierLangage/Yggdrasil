@@ -14,9 +14,10 @@ title = Title
 text = 
 
 form = 
-
 tplpage ==
-{{ question|markdown }}
+<div style="white-space: pre;">
+{{ question }}
+</div>
 {% if score >= 0 %}
 <div class="mq-disabled" style="display: block; margin-top: 1em;">
 {{ inputblock|safe }}
