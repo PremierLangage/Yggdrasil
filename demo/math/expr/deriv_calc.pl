@@ -12,5 +12,6 @@ sol = diff(f, x)
 ==
 
 question ==
-Calculer la dérivée de la fonction $$ f : x \mapsto {{ f|latex }} .$$
+Calculer la dérivée de la fonction 
+$$ f : x \mapsto {{ f|latex }} .$$
 ==
