@@ -18,11 +18,11 @@ form =
 tplpage ==
 {{ question}}
 {% if score >= 0 %}
-<div class="mq-disabled">
+<div class="mq-disabled" style="display: block; margin-top: 1em;>
 {{ inputblock|safe }}
 </div>
 {% else %}
-<div>
+<div style="display: block; margin-top: 1em;>
 {{ inputblock|safe }}
 </div>{% endif %}
 {% if score == -1 %}
