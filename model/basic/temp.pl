@@ -22,7 +22,7 @@ style.page == #|css|
 }
 
 .exercise__actions .btn-group {
-   float: left;
+
    display: none;
 }
 
@@ -76,7 +76,7 @@ function onReadyPL(nodes) {
     {% if score >=0 %}
     actions.append(`<a type="button" class="btn btn-primary action-reroll" href="`+link+`?action=reroll"> Nouveau</a>`);
     {% else %}
-    actions.append('<button class="btn btn-primary action-submit">Valider</button>');
+    actions.append('<button class="btn btn-primary action-submit" style="float: left;">Valider</button>');
     {% endif %}
 }
 </script>
