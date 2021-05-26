@@ -63,15 +63,13 @@ function onReadyPL(nodes) {
     const { origin, pathname }  = document.location;
     const link = origin + pathname;
 
-    //actions.find('.action-save').remove();
-    //actions.find('.action-reset').remove();
-    //actions.find('.action-next').remove();
-    //actions.find('.action-download-env').remove();
-    //actions.find('.action-submit').remove();
-
-    //actions.find('br').remove();
+    actions.find('.action-save').remove();
+    actions.find('.action-reset').remove();
+    actions.find('.action-next').remove();
+    actions.find('.action-download-env').remove();
+    actions.find('.action-submit').remove();
+    actions.find('br').remove();
     body.children('br').remove();
-
 
 }
 </script>
