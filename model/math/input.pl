@@ -48,6 +48,7 @@ Erreur
 {{ solution }}
 </div>
 {% endif %}
+<hr class="border">
 <button class="btn btn-primary btn-sm action-submit">
 Valider
 </button>
