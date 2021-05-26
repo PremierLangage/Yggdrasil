@@ -41,9 +41,8 @@ style.page == #|css|
 .neutral-state {
   border: 1px solid transparent;
   border-radius: 0.25rem;
-  color: #155724 !important;
-  background-color: #d4edda !important;
-  border-color: #c3e6cb !important;
+  color: #6c757d !important;
+  border-color: #6c757d !important;
 }
 </style>
 ==
