@@ -48,6 +48,9 @@ Erreur
 {{ solution }}
 </div>
 {% endif %}
+<button class="btn btn-primary btn-sm action-submit">
+   <span class="ion-hide-md-down">Valider</span>
+</button>
 ==
 
 evaluator ==
