@@ -60,7 +60,7 @@ function onReadyPL(nodes) {
     actions.find('.action-reset').remove();
     actions.find('.action-next').remove();
     actions.find('.action-download-env').remove();
-    //actions.find('.action-submit').remove();
+    actions.find('.action-submit').remove();
 
     //actions.prepend('<hr class="border">');
     actions.find('br').remove();
