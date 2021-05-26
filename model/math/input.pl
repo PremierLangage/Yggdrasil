@@ -52,7 +52,7 @@ Erreur
 {% if score >=0 %}
 <a type="button" class="btn btn-primary action-reroll" href="`+link+`?action=reroll"> Nouveau</a>
 {% else %}
-<button class="btn btn-primary action-submit"><span class="ion-hide-md-down">Valider</span></button>
+<button class="btn btn-primary action-submit">Valider</button>
 {% endif %}    
 {% if score == 100 %}
 <button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>
