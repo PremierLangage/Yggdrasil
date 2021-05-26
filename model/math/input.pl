@@ -54,9 +54,6 @@ Erreur
 {% else %}
 <button class="btn btn-primary action-submit">Valider</button>
 {% endif %}
-<div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-    <span class="sr-only">Loading...</span>
-</div>   
 {% if score == 100 %}
 <button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>
 {% endif %}
