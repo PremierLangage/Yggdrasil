@@ -1,0 +1,45 @@
+<div>
+{{ question|safe }}
+</div>
+{% if score >= 0 %}
+<div class="mq-disabled" style="display: block; margin-top: 1em;">
+{{ inputblock|safe }}
+</div>
+{% else %}
+<div style="display: block; margin-top: 1em;">
+{{ inputblock|safe }}
+</div>{% endif %}
+{% if score == -1 %}
+<a class="text-info" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseWarning" role="button" aria-expanded="true" aria-controls="collapseWarning">
+Attention !
+</a>
+<div class="collapse show" id="collapseWarning">
+{{ feedback }}
+</div>
+{% elif score >= 0 and score < 100 %}
+<a class="text-danger" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseError" role="button" aria-expanded="true" aria-controls="collapseError">
+Erreur
+</a>
+<div class="collapse show" id="collapseError">
+{{ feedback }}
+</div>
+<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
+  Solution
+</a>
+<div class="collapse" id="collapseSolution">
+{{ solution }}
+</div>
+{% endif %}
+<hr class="border">
+{% if score >=0 %}
+<a type="button" class="btn btn-primary action-reroll" href="`+link+`?action=reroll"> Nouveau</a>
+{% else %}
+<button class="btn btn-primary action-submit">Valider</button>
+{% endif %}
+{% if score == 100 %}
+<button type="button" style="float: right;" class="btn success-state">Score : {{score}} </button>
+{% elif score >= 0 and score < 100 %}
+<button type="button" style="float: right;" class="btn neutral-state">Score : {{score}} </button>
+{% else %}
+<button type="button" style="float: right;" class="btn neutral-state">Score : - </button>
+{% endif %}
