@@ -32,7 +32,10 @@ style.page == #|css|
 .exercise__actions .btn-group {
  display: none;  
 }
-.exercise__spinner {
+.exercise__spinner{
+ display: none;  
+}
+.exercise__spinner .spinner-grow{
  display: none;  
 }
 
