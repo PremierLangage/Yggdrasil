@@ -60,7 +60,6 @@ Erreur
 {% if score >= 0 and score < 100 %}
 <button type="button" style="float: right;" class="btn neutral-state animated pulse">Score : {{score}} </button>
 {% endif %}
-
 ==
 
 evaluator ==
