@@ -56,9 +56,10 @@ Erreur
 {% endif %}
 {% if score == 100 %}
 <button type="button" style="float: right;" class="btn success-state">Score : {{score}} </button>
-{% endif %}
-{% if score >= 0 and score < 100 %}
+{% elif score >= 0 and score < 100 %}
 <button type="button" style="float: right;" class="btn neutral-state">Score : {{score}} </button>
+{% else %}
+<button type="button" style="float: right;" class="btn neutral-state">Score : - </button>
 {% endif %}
 ==
 
