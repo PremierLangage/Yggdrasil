@@ -21,9 +21,8 @@ style.page == #|css|
    font-size: 20px;
 }
 
-.exercise__actions .btn-group {
-
-  
+.exercise__actions {
+ display: none;  
 }
 
 .action-save {
