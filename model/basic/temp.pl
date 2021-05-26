@@ -37,6 +37,14 @@ style.page == #|css|
 .action-download-env {
    display: none;
 }
+
+.neutral-state {
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: #155724 !important;
+  background-color: #d4edda !important;
+  border-color: #c3e6cb !important;
+}
 </style>
 ==
 
