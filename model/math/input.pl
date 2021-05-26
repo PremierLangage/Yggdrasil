@@ -49,9 +49,18 @@ Erreur
 </div>
 {% endif %}
 <hr class="border">
-<button class="btn btn-primary btn-sm action-submit">
-Valider
-</button>
+{% if score >=0 %}
+<a type="button" class="btn btn-primary action-reroll" href="`+link+`?action=reroll"> Nouveau</a>
+{% else %}
+<button class="btn btn-primary action-submit"><span class="ion-hide-md-down">Valider</span></button>
+{% endif %}    
+{% if score == 100 %}
+<button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>
+{% endif %}
+{% if score >= 0 and score < 100 %}
+<button type="button" style="float: right;" class="btn neutral-state animated pulse">Score : {{score}} </button>
+{% endif %}
+
 ==
 
 evaluator ==
