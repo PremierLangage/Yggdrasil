@@ -23,7 +23,7 @@ style.page == #|css|
 
 .exercise__actions .btn-group {
 
-   display: none;
+  
 }
 
 .action-save {
