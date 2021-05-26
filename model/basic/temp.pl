@@ -65,9 +65,9 @@ function onReadyPL(nodes) {
 
     //actions.find('.action-save').remove();
     //actions.find('.action-reset').remove();
-    actions.find('.action-next').remove();
-    actions.find('.action-download-env').remove();
-    actions.find('.action-submit').remove();
+    //actions.find('.action-next').remove();
+    //actions.find('.action-download-env').remove();
+    //actions.find('.action-submit').remove();
 
     //actions.find('br').remove();
     body.children('br').remove();
