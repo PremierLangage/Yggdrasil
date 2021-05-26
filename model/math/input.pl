@@ -55,10 +55,10 @@ Erreur
 <button class="btn btn-primary action-submit">Valider</button>
 {% endif %}
 {% if score == 100 %}
-<button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>
+<button type="button" style="float: right;" class="btn success-state animated tada">Score : {{score}} </button>
 {% endif %}
 {% if score >= 0 and score < 100 %}
-<button type="button" style="float: right;" class="btn neutral-state animated pulse">Score : {{score}} </button>
+<button type="button" style="float: right;" class="btn neutral-state animated tada">Score : {{score}} </button>
 {% endif %}
 ==
 
