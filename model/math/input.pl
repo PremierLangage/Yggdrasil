@@ -101,7 +101,7 @@ inputblock ==
 ==
 
 
-style.mathquill ==
+style.mathquill ==#|css|
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
  <style>
         .btn-circle.btn-sm {
@@ -112,7 +112,11 @@ style.mathquill ==
             font-size: 8px;
             text-align: center;
         }
- </style>
+.mq-disabled .mq-editable-field {
+pointer-events: none;
+background-color: #F5F5F5;
+}
+</style>
 ==
 
 mathinputid % ["math"]
