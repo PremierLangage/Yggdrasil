@@ -168,7 +168,7 @@ function onBeforeSubmitPL() {
 </script>
 ==
 
-style.mathquill ==
+style.mathquill2 ==
 <style>
 .mq-disabled .mq-editable-field {
 pointer-events: none;
