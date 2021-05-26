@@ -75,7 +75,7 @@ function onReadyPL(nodes) {
     {% if score >=0 %}
     buttons.append(`<a type="button" class="btn btn-primary action-reroll" href="`+link+`?action=reroll"> Nouveau</a>`);
     {% else %}
-    buttons.append(`<a type="button" class="btn btn-primary action-reroll" href="`+link+`?action=reroll"> Nouveau</a>`);
+    buttons.append(<button class="btn btn-primary action-submit">Valider</button>);
     {% endif %}
 }
 </script>
