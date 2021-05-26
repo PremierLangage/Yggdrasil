@@ -16,7 +16,7 @@ text =
 form = 
 
 tplpage ==
-{{ question}}
+{{ question|markdown }}
 {% if score >= 0 %}
 <div class="mq-disabled" style="display: block; margin-top: 1em;">
 {{ inputblock|safe }}
