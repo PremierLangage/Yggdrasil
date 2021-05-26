@@ -66,17 +66,17 @@ function onReadyPL(nodes) {
     actions.prepend('<hr class="border">');
     actions.find('br').remove();
     body.children('br').remove();
-    
+
+    {% if score >=0 %}
+    actions.append(`<a type="button" class="btn btn-primary action-reroll" href="`+link+`?action=reroll"> Nouveau</a>`);
+    {% else %}
+    actions.append('<button class="btn btn-primary action-submit" style="float: left;">Valider</button>');
+    {% endif %}    
     {% if score == 100 %}
     actions.append('<button type="button" style="float: right;" class="btn success-state animated pulse">Score : {{score}} </button>');
     {% endif %}
     {% if score >= 0 and score < 100 %}
     actions.append('<button type="button" style="float: right;" class="btn neutral-state animated pulse">Score : {{score}} </button>');
-    {% endif %}
-    {% if score >=0 %}
-    actions.append(`<a type="button" class="btn btn-primary action-reroll" href="`+link+`?action=reroll"> Nouveau</a>`);
-    {% else %}
-    actions.append('<button class="btn btn-primary action-submit" style="float: left;">Valider</button>');
     {% endif %}
 }
 </script>
