@@ -24,6 +24,9 @@ style.page == #|css|
 .exercise__actions {
  display: none;  
 }
+.exercise__spinner {
+ display: none;  
+}
 
 .action-save {
    display: none;
