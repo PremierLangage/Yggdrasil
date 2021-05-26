@@ -21,6 +21,10 @@ style.page == #|css|
    font-size: 20px;
 }
 
+.exercise__feedback {
+ display: none;  
+}
+
 .exercise__actions {
  display: none;  
 }
