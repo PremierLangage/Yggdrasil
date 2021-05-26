@@ -168,11 +168,15 @@ function onBeforeSubmitPL() {
 </script>
 ==
 
-attic ==
+style.mathquill ==
+<style>
 .mq-disabled .mq-editable-field {
 pointer-events: none;
 background-color: #F5F5F5;
 }
+</style>
+==
+attic ==
     {% if input_embed|length > 0 %}
     mathField.reflow();
     {% endif %}
