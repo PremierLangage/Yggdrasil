@@ -9,7 +9,7 @@ tol % 0
 
 input =: Input
 
-inputbox ==
+inputblock ==
 {{ input|component }}
 ==
 
