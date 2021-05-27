@@ -19,9 +19,9 @@ class CustomCheckbox(Component):
         Load items in the component.
         """
         if isinstance(items, list):
-            self.items = [{"id": str(uuid4()), "content": item} for item in items]
+            self.items = [{"id": str(uuid4()), "content": str(item)} for item in items]
         elif isinstance(items, str):
-            self.items = [{"id": str(uuid4()), "content": item} for item in items.splitlines()]
+            self.items = [{"id": str(uuid4()), "content": str(item)} for item in items.splitlines()]
     
     def setsol_from_index(self, index):
         """
