@@ -27,11 +27,9 @@ else:
 input.autocomplete = _items_
 ==
 
-form ==
+inputblock ==
 {{ input|component }}
 ==
-
-settings.feedback = itemswrong
 
 evaluator ==
 if input.value == sol:
