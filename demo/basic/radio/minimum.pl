@@ -2,7 +2,7 @@ extends = /model/basic/radio.pl
 
 title = Trouver le plus petit nombre
 
-text ==
+question ==
 Sélectionner le plus petit nombre de la liste suivante.
 ==
 
