@@ -20,13 +20,7 @@ from plcsv import csv_choice, csv_sample, csv_col
 form = 
 text = 
 
-tplpage ==
-<div style="display: block; margin-bottom: 1em;">
-{{question}}
-</div>
-
-{{ inputblock|safe }}
-==
+tplpage =@ template.html
 
 settings.maxattempt % 1
 
