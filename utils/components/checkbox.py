@@ -33,7 +33,7 @@ class CustomCheckbox(Component):
             self._sol = [self.items[index]['id']]
 
     def setindsol(self, index):
-        setsol_from_index(self, index)
+        self.setsol_from_index(index)
 
     def setsol_from_content(self, content):
         """
