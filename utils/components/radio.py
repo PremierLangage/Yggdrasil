@@ -22,7 +22,7 @@ class CustomRadio(Component):
             _items_ = items.splitlines()
         else:
             _items_ = items
-        self.items = [{"id": str(uuid4()), "content": str(item)} for item in items]
+        self.items = [{"id": str(uuid4()), "content": str(item)} for item in _items_]
 
     def setsol_from_index(self, index):
         """
