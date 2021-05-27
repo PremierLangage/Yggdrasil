@@ -11,7 +11,6 @@ from random import randint, sample
 from ast import literal_eval
 
 _nbitems_ = literal_eval(str(nbitems))
-shuffled = literal_eval(str(shuffled))
 
 if isinstance(sortedlist, str):
     _sortedlist_ = sortedlist.splitlines()
