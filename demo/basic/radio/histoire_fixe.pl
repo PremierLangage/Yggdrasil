@@ -2,7 +2,7 @@ extends = /model/basic/radio.pl
 
 title = Histoire
 
-text ==
+question ==
 A quel siècle vivait Louis XI ?
 ==
 
