@@ -2,7 +2,7 @@ extends = /model/basic/inputselect.pl
 
 title = Géographie
 
-text ==
+question ==
 Quel pays a pour capitale Paris ?
 ==
 
