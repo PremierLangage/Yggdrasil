@@ -32,6 +32,9 @@ class CustomCheckbox(Component):
         elif isinstance(index,int):
             self._sol = [self.items[index]['id']]
 
+    def setindsol(self, index):
+        setsol_from_index(self, index):
+
     def setsol_from_content(self, content):
         """
         Set the component solutions from a list of contents.
