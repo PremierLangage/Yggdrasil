@@ -10,6 +10,6 @@ for i, num in enumerate(items):
         indsol.append(i)
 ==
 
-text ==
+question ==
 Parmi les nombres suivants, lesquels sont des multiples de 3 ?
 ==
