@@ -31,7 +31,7 @@ if shuffled:
     radio.shuffle()
 ==
 
-form ==
+inputblock ==
 {{ radio|component }}
 ==
 
