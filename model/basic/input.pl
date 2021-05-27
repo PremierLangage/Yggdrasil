@@ -9,7 +9,7 @@ tol % 0
 
 input =: Input
 
-form ==
+inputbox ==
 {{ input|component }}
 ==
 
