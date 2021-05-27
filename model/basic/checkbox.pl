@@ -27,7 +27,7 @@ if shuffled:
 
 settings.feedback = lightscore
 
-form ==
+inputblock ==
 {{ checkbox|component }}
 ==
 
