@@ -8,6 +8,11 @@ nbitems % null
 footerbefore ==
 from random import randint, sample
 
+from ast import literal_eval
+
+_nbitems_ = literal_eval(str(nbitems))
+shuffled = literal_eval(str(shuffled))
+
 if isinstance(sortedlist, str):
     _sortedlist_ = sortedlist.splitlines()
 elif isinstance(sortedlist, list):
@@ -15,9 +20,7 @@ elif isinstance(sortedlist, list):
 else:
     raise TypeError("sortedlist must be a string or a list")
 
-if isinstance(nbitems, int):
-    _nbitems_ = nbitems
-else:
+if not isinstance(_nbitems_, int):
     _nbitems_ = len(_sortedlist_)
 
 sortlist.setdata_from_list([_sortedlist_[i] for i in sorted(sample(range(len(_sortedlist_)), _nbitems_))])
