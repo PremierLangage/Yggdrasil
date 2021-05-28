@@ -34,7 +34,11 @@ macros ==
 {% if input_embed|length > 1 %}
 <div id="{{ name }}"> {{ input_embed }}</div>
 {% else %}
+{% if score == -1 %}
+<div id="{{ name }}" style="min-width: 5em; font-size:14pt;padding: 0.2em;" data-toggle="popover" data-content="Some content inside the popover"></div>
+{% else %}
 <div id="{{ name }}" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
+{% endif %}
 {% endif %}
 {% if input_keypad|length > 0 %}
 
