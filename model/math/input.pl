@@ -97,7 +97,7 @@ pointer-events: none;
 background-color: #F5F5F5;
 }
 
-.icon-check-after p::after {
+.icon-check-after::after {
     font-family: "Font Awesome 5 Free";
     color: #155724;
     margin-left: 1em;
