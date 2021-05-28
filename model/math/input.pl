@@ -99,7 +99,7 @@ background-color: #F5F5F5;
 
 .icon-check-after::after {
     font-family: "Font Awesome 5 Free";
-    color: #155724;
+    color: green;
     margin-left: 0.5em;
     content: "\f00c";
     vertical-align: middle;
