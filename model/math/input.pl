@@ -29,7 +29,7 @@ input_embed =
 input_prefix = Réponse :
 
 macros ==
-{% macro mathinput(name, input_prefix='', input_embed='') -%}
+{% macro mathinput(name, score=0, feedback='', input_prefix='', input_embed='') -%}
 {{ input_prefix }}
 {% if input_embed|length > 1 %}
 <div id="{{ name }}"> {{ input_embed }}</div>
