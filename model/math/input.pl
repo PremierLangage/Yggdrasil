@@ -96,6 +96,15 @@ style.mathquill ==#|html|
 pointer-events: none;
 background-color: #F5F5F5;
 }
+
+.icon-check-after p::after {
+    font-family: "Font Awesome 5 Free";
+    color: #155724;
+    margin-left: 1em;
+    content: "\f00c";
+    vertical-align: middle;
+    font-weight: 900;
+}
 </style>
 ==
 
