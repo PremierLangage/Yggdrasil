@@ -56,7 +56,7 @@ macros ==
 ==
 
 inputblock ==
-{{ mathinput("math", score=score, feedback=feedback) }}
+{{ mathinput("math", score, feedback) }}
 ==
 
 
