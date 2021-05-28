@@ -57,11 +57,6 @@ style.page == #|css|
 
 javascript.onreadypl == #|js|
 <script>
-$(document).ready(function(){
-  $('[data-toggle="popover"]').popover();
-});
-</script>
-<script>
 function onReadyPL(nodes) {
     const actions = nodes.actions;
     const body = nodes.body;
