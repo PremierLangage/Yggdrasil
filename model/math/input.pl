@@ -131,6 +131,11 @@ mathField.latex(preval[i]);
 arrayMathField.push(mathField);
 }
 </script>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover('show');
+});
+</script>
 ==
 
 javascript.mathquill2 ==
