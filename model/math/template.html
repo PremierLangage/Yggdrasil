@@ -30,14 +30,7 @@
 {% endif %}
 <input type="text" id="form_math" hidden=true>
 </div>{% endif %}
-{% if score == -1 %}
-<a class="text-info" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseWarning" role="button" aria-expanded="true" aria-controls="collapseWarning">
-Attention !
-</a>
-<div class="collapse show" id="collapseWarning">
-{{ feedback }}
-</div>
-{% elif score >= 0 and score < 100 %}
+{% if score >= 0 and score < 100 %}
 <a class="text-danger" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseError" role="button" aria-expanded="true" aria-controls="collapseError">
 Erreur
 </a>
