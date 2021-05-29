@@ -85,7 +85,7 @@ background-color: #F5F5F5;
 .icon-check-after #mathinput::after {
     font-family: "Font Awesome 5 Free";
     color: green;
-    margin-left: 1em;
+    margin-left: 0.5em;
     content: "\f00c";
     vertical-align: middle;
     font-weight: 900;
@@ -94,7 +94,7 @@ background-color: #F5F5F5;
 .icon-times-after #mathinput::after {
     font-family: "Font Awesome 5 Free";
     color: red;
-    margin-left: 1em;
+    margin-left: 0.5em;
     content: "\f00d";
     vertical-align: middle;
     font-weight: 900;
