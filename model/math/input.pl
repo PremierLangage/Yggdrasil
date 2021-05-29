@@ -100,7 +100,7 @@ background-color: #F5F5F5;
     font-weight: 900;
 }
 
-.mathinput {
+#math {
   border-top-left-radius: 4px;
   border-top-left-radius: 4px;
   border-top-right-radius: 0px;
