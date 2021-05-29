@@ -1,21 +1,12 @@
 <div>
 {{ question|safe }}
 </div>
-{% if score >= 0 %}
-<div class="mq-disabled" style="display: block; margin-top: 1em;">
-{{ inputblock|safe }}
-</div>
-{% else %}
 <div class="icon-check-after" style="display: block; margin-top: 1em;">
 {{ input_prefix }}
-{% if input_embed|length > 1 %}
-<div id="math"> {{ input_embed }}</div>
-{% else %}
 {% if score == -1 %}
 <div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;" data-toggle="popover" data-content="{{feedback}}"></div>
 {% else %}
 <div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
-{% endif %}
 {% endif %}
 {% if input_keypad|length > 0 %}
 <button type="button" class="btn btn-circle btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -27,8 +18,9 @@
 {% endfor %}
 </div>
 {% endif %}
+</div>
 <input type="text" id="form_math" hidden=true>
-</div>{% endif %}
+{% endif %}
 {% if score >= 0 and score < 100 %}
 <a class="text-danger" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseError" role="button" aria-expanded="true" aria-controls="collapseError">
 Erreur
