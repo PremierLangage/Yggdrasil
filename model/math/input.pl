@@ -82,7 +82,7 @@ pointer-events: none;
 background-color: #F5F5F5;
 }
 
-.icon-check-after btn-group::after {
+.icon-check-after .btn-group::after {
     font-family: "Font Awesome 5 Free";
     color: green;
     margin-left: 1em;
@@ -91,7 +91,7 @@ background-color: #F5F5F5;
     font-weight: 900;
 }
 
-.icon-times-after btn-group::after {
+.icon-times-after .btn-group::after {
     font-family: "Font Awesome 5 Free";
     color: red;
     margin-left: 1em;
