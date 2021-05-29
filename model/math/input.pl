@@ -111,7 +111,7 @@ arrayMathField.push(mathField);
 }
 
 $(function () {
-  $('[data-toggle="popover"]').popover()
+  $('[data-toggle="popover"]').popover("show")
 })
 
 $('.popover-dismiss').popover({
