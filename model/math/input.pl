@@ -73,8 +73,6 @@ style.mathquill ==#|html|
         }
 
         .btn-xs {
-            width: 30px;
-            height: 30px;
             font-size: 8px;
             text-align: center;
         }
