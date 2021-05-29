@@ -2,19 +2,21 @@
 {{ question|safe }}
 </div>
 {% if score >= 0 and score < 100 %}
-<div class="icon-times-after" style="display: block; margin-top: 1em;">
+<div class="icon-times-after mq-disapbled">
 {% elif score == 100 %}
-<div class="icon-check-after" style="display: block; margin-top: 1em;">
+<div class="icon-check-after mq-disapbled">
 {% else %}
-<div style="display: block; margin-top: 1em;">
+<div>
 {% endif %}
 {{ input_prefix }}
-<div class="btn-group" role="group">
-<div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;" role="button" data-placement="top" data-toggle="popover" data-trigger="focus" data-content="{{feedback}}"></div>
-<button type="button" class="btn btn-xs btn-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<i class="fas fa-keyboard fa-2x"></i>
-</button>
-</div>
+  <div class="mathinput" style="display: block; margin-top: 1em;">
+    <div class="btn-group" role="group">
+      <div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;" role="button" data-placement="top" data-toggle="popover" data-trigger="focus" data-content="{{feedback}}"></div>
+      <button type="button" class="btn btn-xs btn-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fas fa-keyboard fa-2x"></i>
+      </button>
+    </div>
+  </div>
 </div>
 <input type="text" id="form_math" hidden=true>
 {% if score >= 0 and score < 100 %}
