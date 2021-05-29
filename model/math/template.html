@@ -19,14 +19,15 @@
       <button id="btn-keypad" type="button" class="btn btn-xs btn-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fas fa-keyboard fa-2x"></i>
       </button>
+      <div class="dropdown-menu dropdown-menu-right" style="max-width: 100px;">
+      {% for item in input_keypad %}
+      <button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
+      {% endfor %}
+      </div>
     </div>
   </div>
 </div>
-<div class="dropdown-menu dropdown-menu-right" style="max-width: 100px;">
-{% for item in input_keypad %}
-<button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
-{% endfor %}
-</div>
+
 <input type="text" id="form_math" hidden=true>
 {% if score >= 0 and score < 100 %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
