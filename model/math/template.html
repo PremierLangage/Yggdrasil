@@ -12,7 +12,7 @@
 <div id="math"> {{ input_embed }}</div>
 {% else %}
 {% if score == -1 %}
-<div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;" data-toggle="popover" data-content="{{feedback}}"></div>
+<div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;" data-trigger="focus" data-toggle="popover" data-content="{{feedback}}"></div>
 {% else %}
 <div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
 {% endif %}
