@@ -81,6 +81,25 @@ style.mathquill ==#|html|
 pointer-events: none;
 background-color: #F5F5F5;
 }
+
+.icon-check-after ::after {
+    font-family: "Font Awesome 5 Free";
+    color: green;
+    margin-left: 1em;
+    content: "\f00c";
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+.icon-times-after ::after {
+    font-family: "Font Awesome 5 Free";
+    color: red;
+    margin-left: 1em;
+    content: "\f00d";
+    vertical-align: middle;
+    font-weight: 900;
+}
+
 </style>
 ==
 
