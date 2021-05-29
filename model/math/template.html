@@ -3,10 +3,8 @@
 </div>
 <div class="icon-check-after" style="display: block; margin-top: 1em;">
 {{ input_prefix }}
-<a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="{{feedback}}">
-<div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
+<div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;" role="button" data-toggle="popover" data-trigger="focus" data-content="{{feedback}}"></div>
 </div>
-</a>
 <input type="text" id="form_math" hidden=true>
 {% if score >= 0 and score < 100 %}
 <a class="text-danger" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseError" role="button" aria-expanded="true" aria-controls="collapseError">
