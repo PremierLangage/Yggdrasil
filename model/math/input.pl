@@ -75,8 +75,6 @@ style.mathquill ==#|html|
         .btn-xs {
             width: 30px;
             height: 30px;
-            padding: 6px 0px;
-            border-radius: 15px;
             font-size: 8px;
             text-align: center;
         }
