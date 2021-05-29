@@ -29,7 +29,7 @@ input_embed =
 input_prefix = Réponse :
 
 macros ==
-{% macro mathinput(name, score=0, feedback='', input_prefix='', input_embed='') -%}
+{% macro mathinput(name) -%}
 {{ input_prefix }}
 {% if input_embed|length > 1 %}
 <div id="{{ name }}"> {{ input_embed }}</div>
@@ -42,7 +42,7 @@ macros ==
 {% endif %}
 {% if input_keypad|length > 0 %}
 
-<button type="button" class="btn btn-circle btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<button type="button" class="btn btn-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 <i class="fas fa-keyboard fa-2x"></i>
 </button>
 <div class="dropdown-menu dropdown-menu-right" style="max-width: 100px;">
@@ -109,6 +109,10 @@ mathField.latex(preval[i]);
 {% endif %}
 arrayMathField.push(mathField);
 }
+
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
 </script>
 ==
 
