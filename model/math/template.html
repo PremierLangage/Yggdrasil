@@ -3,18 +3,10 @@
 </div>
 <div class="icon-check-after" style="display: block; margin-top: 1em;">
 {{ input_prefix }}
-<div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;" data-toggle="popover" data-content="{{feedback}}"></div>
-{% if input_keypad|length > 0 %}
-<button type="button" class="btn btn-circle btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<i class="fas fa-keyboard fa-2x"></i>
-</button>
-<div class="dropdown-menu dropdown-menu-right" style="max-width: 100px;">
-{% for item in input_keypad %}
-<button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
-{% endfor %}
+<a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="{{feedback}}">
+<div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
 </div>
-{% endif %}
-</div>
+</a>
 <input type="text" id="form_math" hidden=true>
 {% if score >= 0 and score < 100 %}
 <a class="text-danger" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseError" role="button" aria-expanded="true" aria-controls="collapseError">
