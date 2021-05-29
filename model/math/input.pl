@@ -110,6 +110,8 @@ background-color: #F5F5F5;
 
 #btn-keypad {
   padding: 0.3em;
+  outline: none !important;
+  box-shadow: none;
 }
 
 </style>
