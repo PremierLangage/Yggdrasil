@@ -11,12 +11,6 @@
 </div>
 <input type="text" id="form_math" hidden=true>
 {% if score >= 0 and score < 100 %}
-<a class="text-danger" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseError" role="button" aria-expanded="true" aria-controls="collapseError">
-Erreur
-</a>
-<div class="collapse show" id="collapseError">
-{{ feedback }}
-</div>
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
   Solution
 </a>
