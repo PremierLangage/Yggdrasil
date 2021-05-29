@@ -100,6 +100,19 @@ background-color: #F5F5F5;
     font-weight: 900;
 }
 
+.mathinput-group div:first-child {
+  border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.mathinput-group div:last-child {
+  border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
 </style>
 ==
 
