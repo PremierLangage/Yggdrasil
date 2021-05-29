@@ -12,7 +12,7 @@
     {{ input_prefix }}
     <div class="btn-group" role="group">
       {% if feedback|length > 1 %}
-      <div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;" role="button" data-placement="top" data-toggle="popover" data-trigger="focus" data-content="{{feedback}}"></div>
+      <div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;" role="button" data-trigger="focus click" data-placement="top" data-toggle="popover" data-trigger="focus" data-content="{{feedback}}"></div>
       {% else %}
       <div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;" ></div>
       {% endif %}
