@@ -3,7 +3,11 @@
 </div>
 <div class="icon-check-after" style="display: block; margin-top: 1em;">
 {{ input_prefix }}
+</div>
+<div class="btn-group" role="group" aria-label="Basic example">
 <div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;" role="button" data-placement="top" data-toggle="popover" data-trigger="focus" data-content="{{feedback}}"></div>
+  <button type="button" class="btn btn-secondary">Middle</button>
+  <button type="button" class="btn btn-secondary">Right</button>
 </div>
 <input type="text" id="form_math" hidden=true>
 {% if score >= 0 and score < 100 %}
