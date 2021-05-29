@@ -29,7 +29,7 @@ input_embed =
 input_prefix = Réponse :
 
 macros ==
-{% macro mathinput(name, score=0, feedback='', input_prefix='', input_embed='') -%}
+{% macro mathinput(name) -%}
 {{ input_prefix }}
 {% if input_embed|length > 1 %}
 <div id="{{ name }}"> {{ input_embed }}</div>
@@ -42,7 +42,7 @@ macros ==
 {% endif %}
 {% if input_keypad|length > 0 %}
 
-<button type="button" class="btn btn-circle btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<button type="button" class="btn btn-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 <i class="fas fa-keyboard fa-2x"></i>
 </button>
 <div class="dropdown-menu dropdown-menu-right" style="max-width: 100px;">
@@ -56,28 +56,7 @@ macros ==
 ==
 
 inputblock ==
-{{ input_prefix }}
-{% if input_embed|length > 1 %}
-<div id="math"> {{ input_embed }}</div>
-{% else %}
-{% if score == -1 %}
-<div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;" data-toggle="popover" data-content="Some content inside the popover"></div>
-{% else %}
-<div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
-{% endif %}
-{% endif %}
-{% if input_keypad|length > 0 %}
-
-<button type="button" class="btn btn-circle btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<i class="fas fa-keyboard fa-2x"></i>
-</button>
-<div class="dropdown-menu dropdown-menu-right" style="max-width: 100px;">
-{% for item in input_keypad %}
-<button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
-{% endfor %}
-</div>
-{% endif %}
-<input type="text" id="form_math" hidden=true>
+{{ mathinput("math") }}
 ==
 
 
@@ -95,15 +74,6 @@ style.mathquill ==#|html|
 .mq-disabled .mq-editable-field {
 pointer-events: none;
 background-color: #F5F5F5;
-}
-
-.icon-check-after::after {
-    font-family: "Font Awesome 5 Free";
-    color: green;
-    margin-left: 0.5em;
-    content: "\f00c";
-    vertical-align: middle;
-    font-weight: 900;
 }
 </style>
 ==
@@ -139,11 +109,6 @@ mathField.latex(preval[i]);
 {% endif %}
 arrayMathField.push(mathField);
 }
-</script>
-<script>
-$(document).ready(function(){
-  $('[data-toggle="popover"]').popover('show');
-});
 </script>
 ==
 
