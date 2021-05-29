@@ -16,7 +16,6 @@
       {% else %}
       <div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em; border-radius-top-left: 4px; border-radius-bottom-left: 4px" ></div>
       {% endif %}
-      <div>
       <button id="btn-keypad" type="button" class="btn btn-xs btn-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fas fa-keyboard fa-2x"></i>
       </button>
@@ -24,7 +23,6 @@
       {% for item in input_keypad %}
       <button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</button>
       {% endfor %}
-      </div>
       </div>
     </div>
 
