@@ -102,7 +102,7 @@ background-color: #F5F5F5;
 
 #math {
   border-top-left-radius: 4px;
-  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
