@@ -105,6 +105,7 @@ background-color: #F5F5F5;
   border-bottom-left-radius: 4px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-right:none;
 }
 
 </style>
