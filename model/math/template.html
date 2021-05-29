@@ -11,7 +11,7 @@
   <div id="mathinput" style="display: block; margin-top: 1em;">
     {{ input_prefix }}
     <div class="btn-group" role="group">
-      {% if feeback|length > 1 %}
+      {% if feedback|length > 1 %}
       <div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;" role="button" data-placement="top" data-toggle="popover" data-trigger="focus" data-content="{{feedback}}"></div>
       {% else %}
       <div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;" ></div>
