@@ -108,6 +108,10 @@ background-color: #F5F5F5;
   border-right:none;
 }
 
+#btn-keypad {
+  paddine: 0.3em;
+}
+
 </style>
 ==
 
