@@ -109,7 +109,7 @@ background-color: #F5F5F5;
 }
 
 #btn-keypad {
-  paddine: 0.3em;
+  padding: 0.3em;
 }
 
 </style>
