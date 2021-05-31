@@ -1,7 +1,7 @@
 extends = /model/math/math.pl
 extends = /model/basic/temp.pl
 
-jinja_keys % ["question", "text", "inputblock", "solution", "input_prefix"]
+jinja_keys % ["question", "text", "inputblock", "solution", "prefix"]
 
 input_prefix = Réponse :
 
