@@ -18,9 +18,8 @@ sol = lim.doit()
 ==
 
 question ==
-Déterminer la limite suivante.
+Déterminer $! \displaystyle {{ lim|latex }} = !$.
 ==
 
-prefix = $! \displaystyle {{ lim|latex }} = !$
 
 keypad % [{"label": "$! +\\infty !$", "action": "write", "value": "+\\infty"}, {"label": "$! -\\infty !$", "action": "write", "value": "-\\infty"}]
