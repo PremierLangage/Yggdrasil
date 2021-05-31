@@ -17,10 +17,10 @@ lim = Limit(f/g, x, oo)
 sol = lim.doit()
 ==
 
-text ==
+question ==
 Déterminer la limite suivante.
 ==
 
-input_prefix = $! \displaystyle {{ lim|latex }} = !$
+prefix = $! \displaystyle {{ lim|latex }} = !$
 
-input_keypad % [{"label": "$! +\\infty !$", "action": "write", "value": "+\\\\infty"}, {"label": "$! -\\infty !$", "action": "write", "value": "-\\\\infty"}]
+keypad % [{"label": "$! +\\infty !$", "action": "write", "value": "+\\infty"}, {"label": "$! -\\infty !$", "action": "write", "value": "-\\\\infty"}]
