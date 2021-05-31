@@ -19,14 +19,14 @@ tplpage =@ template.html
 
 evaluator ==
 score = 100
-feedback = "blabla"
+feedback = ""
 ==
 
-input_keypad % []
+keypad % []
 
 input_embed =
 
-input_prefix = Réponse :
+prefix = Réponse :
 
 macros ==
 {% macro mathinput(name) -%}
