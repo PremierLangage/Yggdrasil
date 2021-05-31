@@ -115,7 +115,7 @@ background-color: #F5F5F5;
 }
 
 .keypad {
-    min-width: none;
+    min-width: unset;
     padding: 0 0;
     margin: .125rem 0 0;
     font-size: 1rem;
