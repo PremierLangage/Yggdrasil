@@ -2,7 +2,6 @@ extends = /model/math/math.pl
 extends = /model/basic/temp.pl
 
 jinja_keys % ["question", "text", "inputblock", "solution", "prefix"]
-before_script % ["process", "before"]
 
 input_prefix = Réponse :
 
@@ -101,13 +100,7 @@ background-color: #F5F5F5;
     font-weight: 900;
 }
 
-#math {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-right:none;
-}
+
 
 #btn-keypad {
   padding: 0.3em;
