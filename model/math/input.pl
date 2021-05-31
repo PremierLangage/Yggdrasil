@@ -109,7 +109,7 @@ background-color: #F5F5F5;
 
 #btn-keypad {
   padding: 0.3em;
-  boorder-right: none;
+  border-left: none;
   outline: none !important;
   box-shadow: none;
 }
