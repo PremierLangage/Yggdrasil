@@ -18,7 +18,7 @@
       {% endif %}
       <div class="dropdown-menu dropdown-menu-right keypad">
       {% for item in keypad %}
-      <button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</button>
+      <button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}(String.raw`{{ item.value }}`);mathField.focus()">{{ item.label }}</button>
       {% endfor %}
       </div>
       <button id="btn-keypad" type="button" class="btn btn-xs btn-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
