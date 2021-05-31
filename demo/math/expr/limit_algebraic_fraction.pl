@@ -18,7 +18,7 @@ sol = lim.doit()
 ==
 
 question ==
-Déterminer $! \displaystyle {{ lim|latex }} = !$.
+Déterminer $! \displaystyle {{ lim|latex }}!$.
 ==
 
 
