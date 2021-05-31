@@ -16,7 +16,7 @@
       {% else %}
       <div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em; border-radius-top-left: 4px; border-radius-bottom-left: 4px" ></div>
       {% endif %}
-      <div class="dropdown-menu dropdown-menu-right keypad"  style="width: auto; min-width: none !important;">
+      <div class="keypad dropdown-menu dropdown-menu-right keypad"  style="width: auto; min-width: none !important;">
       {% for item in input_keypad %}
       <button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</button>
       {% endfor %}
