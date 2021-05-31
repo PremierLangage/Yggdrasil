@@ -23,4 +23,4 @@ Déterminer la limite suivante.
 
 prefix = $! \displaystyle {{ lim|latex }} = !$
 
-keypad % [{"label": "$! +\\infty !$", "action": "write", "value": "+\\infty"}, {"label": "$! -\\infty !$", "action": "write", "value": "-\\\\infty"}]
+keypad % [{"label": "$! +\\infty !$", "action": "write", "value": "+\\infty"}, {"label": "$! -\\infty !$", "action": "write", "value": "-\\infty"}]
