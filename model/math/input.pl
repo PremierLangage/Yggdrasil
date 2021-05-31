@@ -100,7 +100,12 @@ background-color: #F5F5F5;
     font-weight: 900;
 }
 
-
+#math {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
 
 #btn-keypad {
   padding: 0.3em;
