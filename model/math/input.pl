@@ -115,12 +115,7 @@ background-color: #F5F5F5;
 }
 
 .keypad {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
+    min-width: none;
     padding: 0 0;
     margin: .125rem 0 0;
     font-size: 1rem;
