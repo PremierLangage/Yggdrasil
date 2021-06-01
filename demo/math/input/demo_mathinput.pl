@@ -36,7 +36,6 @@ feedback ==
     <li> Objet Sympy : {{ str_ans }} </li>
     <li> Représentation : {{ srepr_ans }} </li>
     <li> Test : {{ test_ans }} </li>
-
 </ul>
 ==
 
