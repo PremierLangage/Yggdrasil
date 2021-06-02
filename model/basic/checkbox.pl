@@ -4,7 +4,7 @@ extends = /model/basic/basic.pl
 
 doc == #|python|
 {
-    "name": "radio",
+    "name": "checkbox",
     "keys": {
         "items": {
             "type": "(str, list)",
