@@ -1,6 +1,6 @@
 extends = /model/basic/basic.pl
 @ /utils/components/scoring.py
-@ /utils/components/radio.py [radio.py]
+@ /utils/components/radio.py [customradio.py]
 
 doc == #|python|
 {
