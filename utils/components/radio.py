@@ -72,7 +72,7 @@ class Radio(Component):
 
     def __init__(self, **kwargs):
         self.selector = 'c-radio-group'
-        self.decorator = 'CustomRadio'
+        self.decorator = 'Radio'
         self.selection = None
         super().__init__(**kwargs)
         self.statement =''
