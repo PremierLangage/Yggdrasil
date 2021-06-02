@@ -32,7 +32,7 @@ items =
 shuffled = True
 
 radio =: RadioGroup
-radio.decorator = CustomRadio
+radio.decorator = Radio
 
 before_scripts % ["importfunc", "before", "process"]
 
