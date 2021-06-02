@@ -42,8 +42,8 @@ from ast import literal_eval
 indsol = literal_eval(str(indsol))
 shuffled = literal_eval(str(shuffled))
 
-radio.setitems(items)
-radio.setsol_from_index(indsol)
+radio.set_items(items)
+radio.set_sol(indsol)
 
 if shuffled:
     radio.shuffle()
