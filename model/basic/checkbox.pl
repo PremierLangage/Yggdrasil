@@ -2,6 +2,29 @@ extends = /model/basic/basic.pl
 @ /utils/components/scoring.py
 @ /utils/components/checkbox.py [customcheckbox.py]
 
+doc == #|python|
+{
+    "name": "radio",
+    "keys": {
+        "items": {
+            "type": "(str, list)",
+            "default": "",
+            "description": "Liste des items."
+        },
+        "indsol": {
+            "type": "int",
+            "default": 0,
+            "description": "Indice de la solution dans la liste des items."
+        },
+        "shuffled": {
+            "type": "bool",
+            "default": True,
+            "description": "Valeur indiquant si les items seront mélangés."
+        }
+    }
+}
+==
+
 checkbox =: CheckboxGroup
 checkbox.decorator = CustomCheckbox
 
