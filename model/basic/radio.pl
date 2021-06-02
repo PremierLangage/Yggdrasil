@@ -1,10 +1,30 @@
-#! indsol:int
+doc ==
+{
+    "name": "radio",
+    "keys": {
+        "items": {
+            "type": "(str, list)",
+            "default": "",
+            "description": "Liste des items."
+        },
+        "indsol": {
+            "type": "int",
+            "default": 0,
+            "description": "Indice de la solution dans la liste des items."
+        },
+        "shuffled": {
+            "type": "bool",
+            "default": True,
+            "description": "Valeur indiquant si les items seront mélangés."
+        }
+    }
+}
+==
+
 indsol = 0
 
 items =
 
-
-#! shuffled:bool
 shuffled = True
 
 #! items:str
