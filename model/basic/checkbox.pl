@@ -12,7 +12,7 @@ doc == #|python|
             "description": "Liste des items."
         },
         "indsol": {
-            "type": "int",
+            "type": "list",
             "default": 0,
             "description": "Indice de la solution dans la liste des items."
         },
