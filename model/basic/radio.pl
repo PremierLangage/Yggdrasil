@@ -1,4 +1,8 @@
-doc ==
+extends = /model/basic/basic.pl
+@ /utils/components/scoring.py
+@ /utils/components/radio.py [customradio.py]
+
+doc ==#|python|
 {
     "name": "radio",
     "keys": {
@@ -26,12 +30,6 @@ indsol = 0
 items =
 
 shuffled = True
-
-#! items:str
-
-extends = /model/basic/basic.pl
-@ /utils/components/scoring.py
-@ /utils/components/radio.py [customradio.py]
 
 radio =: RadioGroup
 radio.decorator = CustomRadio
