@@ -13,8 +13,8 @@ doc == #|python|
         },
         "indsol": {
             "type": "list",
-            "default": 0,
-            "description": "Indice de la solution dans la liste des items."
+            "default": [],
+            "description": "Indices des solutions dans la liste des items."
         },
         "shuffled": {
             "type": "bool",
