@@ -38,7 +38,7 @@ grade = (100, 'OK')
 
 title=
 form ==
-{{ doc.keys }}
+{{ doc.keys.items() }}
 ==
 
 text =@ template.html
