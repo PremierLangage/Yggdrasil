@@ -14,6 +14,11 @@ doc == #|python|
             "type": "(int, None)",
             "default": None,
             "description": "Nombre d'items à ordonner."
+        },
+        "scoring": {
+            "type": "(int, None)",
+            "default": None,
+            "description": "Nombre d'items à ordonner."
         }
     }
 }
@@ -55,7 +60,3 @@ inputblock ==
 evaluator ==
 score = sortlist.eval()
 ==
-
-settings.feedback = lightscore
-
-
