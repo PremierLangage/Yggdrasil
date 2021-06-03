@@ -25,15 +25,11 @@ doc == #|python|
 ==
 
 indsol = 0
-
 items =
-
 shuffled = True
 
 radio =: RadioGroup
 radio.decorator = Radio
-
-before_scripts % ["importfunc", "before", "process"]
 
 process ==
 from ast import literal_eval
