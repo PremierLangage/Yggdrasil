@@ -11,9 +11,9 @@
 {% for row in doc.keys %}
     <tr>
       <th scope="row"> {{ row }} </th>
-      <td> {{ val.description }} </td>
-      <td> {{ val.type }} </td>
-      <td> {{ val.default }} </td>
+      <td> {{ row.description }} </td>
+      <td> {{ row.type }} </td>
+      <td> {{ row.default }} </td>
     </tr>
 {% endfor %}
   </tbody>
