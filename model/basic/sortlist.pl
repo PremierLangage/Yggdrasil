@@ -16,8 +16,8 @@ doc == #|python|
             "description": "Nombre d'items à ordonner."
         },
         "scoring": {
-            "type": "(int, None)",
-            "default": None,
+            "type": "('KendalTau', 'ExactOrder')",
+            "default": 'KendalTau',
             "description": "Nombre d'items à ordonner."
         }
     }
