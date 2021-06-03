@@ -11,14 +11,9 @@ doc == #|python|
             "description": "Liste des items."
         },
         "nbitems": {
-            "type": "int",
-            "default": 0,
+            "type": "(int, None)",
+            "default": None,
             "description": "Indice de la solution dans la liste des items. Note : La numérotation commence à 0."
-        },
-        "shuffled": {
-            "type": "bool",
-            "default": True,
-            "description": "Valeur indiquant si les items seront mélangés."
         }
     }
 }
