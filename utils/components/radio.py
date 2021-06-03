@@ -89,19 +89,19 @@ class Radio(Component):
 
     def set_sol(self, index):
         """
-        Set the component solution from an index.
+        Set the solution from the index in the item list.
         """
         self._sol = self.items[index]['id']
 
     def shuffle(self):
         """
-        Shuffle the component items.
+        Shuffle the items.
         """
         rd.shuffle(self.items)
 
     def eval(self, display=True, disabled=True):
         """
-        Evaluate the answer stored in the component.
+        Evaluate the answer.
         """
         score = 0
         for item in self.items:
