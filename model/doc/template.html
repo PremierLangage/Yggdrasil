@@ -12,8 +12,8 @@
     <tr>
       <th scope="row"> {{ row }} </th>
       <td> {{ doc['keys'][row]['description'] }} </td>
-      <td> {{ row['type'] }} </td>
-      <td> {{ row['default'] }} </td>
+      <td> {{ doc['keys'][row]['type'] }} </td>
+      <td> {{ doc['keys'][row]['default'] }} </td>
     </tr>
 {% endfor %}
   </tbody>
