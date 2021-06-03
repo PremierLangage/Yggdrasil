@@ -13,7 +13,7 @@ doc == #|python|
         "indsol": {
             "type": "int",
             "default": 0,
-            "description": "Indice de la solution dans la liste des items."
+            "description": "Indice de la solution dans la liste des items. Note : La numérotation commence à 0."
         },
         "shuffled": {
             "type": "bool",
