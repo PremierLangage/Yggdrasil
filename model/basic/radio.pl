@@ -6,7 +6,7 @@ doc == #|python|
     "name": "radio",
     "keys": {
         "items": {
-            "type": "(str, list)",
+            "type": "(str, list[str])",
             "default": "",
             "description": "Liste des items."
         },
