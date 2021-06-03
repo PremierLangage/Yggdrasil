@@ -8,9 +8,9 @@
     </tr>
   </thead>
   <tbody>
-{% for val in doc.keys.values() %}
+{% for row in doc.keys %}
     <tr>
-      <th scope="row">  </th>
+      <th scope="row"> {{ row }} </th>
       <td> {{ val.description }} </td>
       <td> {{ val.type }} </td>
       <td> {{ val.default }} </td>
