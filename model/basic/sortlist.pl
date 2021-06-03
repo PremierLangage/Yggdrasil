@@ -13,7 +13,7 @@ doc == #|python|
         "nbitems": {
             "type": "(int, None)",
             "default": None,
-            "description": "Indice de la solution dans la liste des items. Note : La numérotation commence à 0."
+            "description": "Nombre d'items à ordonner."
         }
     }
 }
