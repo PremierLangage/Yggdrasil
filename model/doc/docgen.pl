@@ -36,8 +36,8 @@ grade = (100, 'OK')
 #! linter:require:a
 
 
-title== #|html|
-==
+title=
+form = 
 
 text =@ template.html
 
