@@ -54,5 +54,4 @@ inputblock ==
 
 evaluator ==
 score = radio.eval()
-radio.disabled = True
 ==
