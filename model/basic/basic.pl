@@ -11,6 +11,8 @@ title =
 @ /model/basic/jinja_basic.py [jinja_env.py]
 @ /model/basic/json_basic.py [json_encoder.py]
 
+before_scripts % ["importfunc", "before", "process"]
+
 importfunc == #|python|
 from random import choice, choices, sample, shuffle
 from plrandom import randint, sampleint
