@@ -9,7 +9,6 @@ g = choice([sin(x), cos(x), exp(x)])
 h = choice([x, x**2])
 f = g * h
 sol = diff(f, x)
-toto = "blabla"
 ==
 
 question ==
