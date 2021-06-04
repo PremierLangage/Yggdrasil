@@ -21,7 +21,7 @@ predefined_keypad = {
 }
 
 for i, val in enumerate(keypad):
-  if isinstrance(val, str):
+  if isinstance(val, str):
     keypad[i] = predefined_keypad[val]
 
 ==
