@@ -11,7 +11,7 @@
 @ /utils/sympy/mplsympy.py
 @ /utils/plrandom.py
 
-before_scripts % ["mathimport", "headerbefore", "before", "footerbefore"]
+before_scripts % ["mathimport", "headerbefore", "before", "footerbefore", "process"]
 
 mathimport ==
 from sympy import E, I, pi, oo
