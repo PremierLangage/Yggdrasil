@@ -26,15 +26,9 @@ doc == #|python|
 ==
 
 checkbox =: CheckboxGroup
-checkbox.decorator = CustomCheckbox
+checkbox.decorator = Checkbox
 
 shuffled = True
-
-before_scripts % ["importfunc", "before", "process"]
-
-importfunc ==
-from random import randint, choice, choices, sample, shuffle
-==
 
 process ==
 from ast import literal_eval
