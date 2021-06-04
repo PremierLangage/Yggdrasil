@@ -2,7 +2,7 @@ extends = /model/basic/checkbox_rw.pl
 
 title = Noms de variables en Python
 
-text ==
+question ==
 Indiquer parmi les noms suivants ceux qui sont des noms valides pour une variable en Python.
 ==
 
