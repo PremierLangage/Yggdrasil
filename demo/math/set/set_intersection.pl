@@ -15,6 +15,6 @@ On considère les ensembles suivants : $$ A= {{ A|latex }},\ B={{B|latex}}.$$
 Déterminer $! A \cap B !$.
 ==
 
-keypad % [{"label": "$! \\varnothing !$", "action": "cmd", "value": "\\empty"}]
+# keypad % [{"label": "$! \\varnothing !$", "action": "cmd", "value": "\\empty"}]
 
 keypad % ["empty"]
