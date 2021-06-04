@@ -48,13 +48,10 @@ if shuffled:
     checkbox.shuffle()
 ==
 
-settings.feedback = lightscore
-
 inputblock ==
 {{ checkbox|component }}
 ==
 
 evaluator ==
-feedback = " "
 score = checkbox.eval()
 ==
