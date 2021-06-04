@@ -50,9 +50,9 @@ class Checkbox(Component):
         if nbright is None:
             nbright = len(_right_)
 
-        self.setitems(rd.sample(_right_, nbright) + rd.sample(_wrong_, nbitems-nbright))
+        self.set_items(rd.sample(_right_, nbright) + rd.sample(_wrong_, nbitems-nbright))
 
-        self.setsol_from_index(list(range(nbright)))
+        self.set_sol(list(range(nbright)))
 
         self.shuffle()
 
