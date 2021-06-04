@@ -1,9 +1,9 @@
 extends = /model/basic/basic.pl
 @ /utils/components/scoring.py
-@ /utils/components/checkbox.py [customcheckbox.py]
+@ /utils/components/checkbox.py [checkbox.py]
 
 checkbox =: CheckboxGroup
-checkbox.decorator = CustomCheckbox
+checkbox.decorator = Checkbox
 
 before_scripts % ["importfunc", "before", "process"]
 
@@ -19,7 +19,7 @@ nbitems = literal_eval(str(nbitems))
 minright = literal_eval(str(minright))
 maxright = literal_eval(str(maxright))
 
-checkbox.setdata_from_rw(right, wrong, nbitems, randint(minright, maxright))
+checkbox.fill_from_rw(right, wrong, nbitems, randint(minright, maxright))
 checkbox.scoring = scoring
 ==
 
