@@ -1,6 +1,6 @@
 extends = /model/basic/basic.pl
 @ /utils/components/scoring.py
-@ /utils/components/checkbox.py [customcheckbox.py]
+@ /utils/components/checkbox.py [checkbox.py]
 
 doc == #|python|
 {
@@ -42,8 +42,8 @@ from ast import literal_eval
 indsol = literal_eval(str(indsol))
 shuffled = literal_eval(str(shuffled))
 
-checkbox.setitems(items)
-checkbox.setindsol(indsol)
+checkbox.set_items(items)
+checkbox.set_sol(indsol)
 if shuffled:
     checkbox.shuffle()
 ==
