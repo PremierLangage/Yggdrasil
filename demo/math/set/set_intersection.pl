@@ -9,8 +9,10 @@ B = FiniteSet(*sample(range(10), randint(3, 5)))
 sol = Intersection(A, B)
 ==
 
-text ==
+question ==
 On considère les ensembles suivants : $$ A= {{ A|latex }},\ B={{B|latex}}.$$ 
 
 Déterminer $! A \cap B !$.
 ==
+
+keypad % [{"label": "$! \emptyset !$", "action": "cmd", "value": "\\empty"}]
