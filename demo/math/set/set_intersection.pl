@@ -17,3 +17,4 @@ Déterminer $! A \cap B !$.
 
 keypad % [{"label": "$! \\varnothing !$", "action": "cmd", "value": "\\empty"}]
 
+keypad % ["empty"]
