@@ -5,7 +5,15 @@ jinja_keys % ["question", "text", "inputblock", "solution", "prefix"]
 
 input_prefix = Réponse :
 
+
 before ==
+
+==
+
+process ==
+for i, val in enumerate(keypad):
+  if isinstrance(val, str):
+    keypad[i] = predefined_keypad[val]
 
 ==
 
