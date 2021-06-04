@@ -11,6 +11,15 @@ before ==
 ==
 
 process ==
+predefined_keypad = {
+    "emptyset": {"label": "$! \\varnothing !$", "action": "cmd", "value": "\\empty"},
+    "cup": {"label": "$! \\cup !$", "action": "cmd", "value": "\\cup"},
+    "sqrt": {"label": "$! \\sqrt !$", "action": "cmd", "value": "\\sqrt"},
+    "infty": {"label": "$! \\infty !$", "action": "cmd", "value": "\\infty"},
+    "+infty": {"label": "$! +\\infty !$", "action": "write", "value": "+\\infty"},
+    "-infty": {"label": "$! -\\infty !$", "action": "write", "value": "-\\infty"}
+}
+
 for i, val in enumerate(keypad):
   if isinstrance(val, str):
     keypad[i] = predefined_keypad[val]
