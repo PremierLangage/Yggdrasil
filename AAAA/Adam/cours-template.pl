@@ -1,78 +1,42 @@
-title: Cours template
-author: aadedjou
----
 
-***
+@ /utils/sandboxio.py
+@ /builder/before.py [builder.py]
+@ /grader/evaluator.py [grader.py]
 
-# Titre de la présentation
+text=  TITRE DE LA PRESENTATION
+form=
 
-texte simple  
-*texte en italique*  
-**texte en gras**  
-***texte en gras-italique***  
-`texte monospace`  
-```txt  
-bout de code  
-```  
-  
-***  
-  
-# Slide 1  
-## sous-titre 1  
-Contenu de la slide 1  
-Contenu de la slide 1  
-Contenu de la slide 1  
-Contenu de la slide 1  
-Contenu de la slide 1  
-Contenu de la slide 1  
-  
-***  
-  
-# Slide 2  
-## sous-titre 2  
-Contenu de la slide 2  
-Contenu de la slide 2  
-Contenu de la slide 2  
-Contenu de la slide 2  
-Contenu de la slide 2  
-Contenu de la slide 2  
-  
-***  
-  
-# Slide 3  
-## sous-titre 3  
-Contenu de la slide 3  
-Contenu de la slide 3  
-Contenu de la slide 3  
-Contenu de la slide 3  
-Contenu de la slide 3  
-Contenu de la slide 3  
-  
-***  
-  
-# Slide 4  
-## sous-titre 4  
-Contenu de la slide 4  
-Contenu de la slide 4  
-Contenu de la slide 4  
-Contenu de la slide 4  
-Contenu de la slide 4  
-Contenu de la slide 4  
-  
-***  
-  
-# Slide 5  
-## sous-titre 5  
-Contenu de la slide 5  
-Contenu de la slide 5  
-Contenu de la slide 5  
-Contenu de la slide 5  
-Contenu de la slide 5  
-Contenu de la slide 5  
-  
-***  
-  
-# FIN  
-**dernier slide**  
+@ cours-contenu.md [cours-contenu.md]
 
-***
+
+before==
+with open ("presentation.md" , "r") as f:
+    t=f.readlines()
+
+slides = ("\n".join(t)).split("***\n")
+page = 0
+==
+
+evaluator==
+page += 1
+
+if page < len(slides):
+    text = slides[page]
+    title = f"{numero}/{len(slides)-1}"
+    grade = (0, "Suivant")
+else:
+    grade=(100,"Fin de la présentation")
+==
+
+
+dummy.extracss==
+<style>
+.exercise__header {
+  background: center no-repeat url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/PanoMontBlancHDR_edit_1.jpg/800px-PanoMontBlancHDR_edit_1.jpg");
+  background-size: contain;
+}
+</style>
+==
+
+
+
