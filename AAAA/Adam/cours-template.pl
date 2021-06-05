@@ -3,7 +3,7 @@
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
 
-text=  TITRE DE LA PRESENTATION
+text= 
 form=
 
 @ cours-contenu.md [cours-contenu.md]
