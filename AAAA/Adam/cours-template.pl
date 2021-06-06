@@ -11,9 +11,9 @@ form=
 
 before==
 with open ("cours.md" , "r") as f:
-    t=f.readlines()
+    text = f.readlines()
 
-slides = ("\n".join(t)).split("***\n")
+slides = ("\n".join(text)).split("***\n")
 page = 0
 ==
 
