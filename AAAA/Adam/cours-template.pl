@@ -22,10 +22,10 @@ page += 1
 
 if page < len(slides):
     text = slides[page]
-    title = f"{page}/{len(slides)-1}"
+    title = f"SLIDE {page}/{len(slides)-1}"
     grade = (0, "Suivant")
 else:
-    grade=(100,"Fin de la présentation")
+    grade = (100,"Fin de la présentation")
 ==
 
 
