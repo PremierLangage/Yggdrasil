@@ -74,5 +74,3 @@ Contenu de la slide 5
   
 # FIN  
 **dernier slide**  
-
-***
