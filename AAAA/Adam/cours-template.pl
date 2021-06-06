@@ -3,14 +3,14 @@
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
 
-text=
-form= @cours-contenu.md [cours-contenu.md]
-title = TITRE DE LA PRESENTATION
+title= TITRE DE LA PRESENTATION
+text= 
+
+form= 
+@cours-contenu.md [cours.md]
 
 before==
-import os 
-print(os.path.dirname(os.path.realpath(__file__)))
-with open ("cours-contenu.md" , "r") as f:
+with open ("cours.md" , "r") as f:
     t=f.readlines()
 
 slides = ("\n".join(t)).split("***\n")
