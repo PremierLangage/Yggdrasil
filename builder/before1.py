@@ -4,6 +4,7 @@
 import sys, json
 from components import Component
 from builderlib import aux_component
+from ast import literal_eval
 
 # import JSON encoder
 from json_encoder import JSONEncoder
@@ -23,6 +24,11 @@ if __name__ == "__main__":
     # JSON context is loaded
     with open(sys.argv[1], "r") as f:
         dic = json.load(f)
+    for k, v in dic.items():
+        try:
+            dic[k] = literal_eval(str(v))
+        except:
+            pass
     Component.sync_context(dic)
     
     before_scripts = dic.get('before_scripts', ['headerbefore', 'before', 'footerbefore'])
