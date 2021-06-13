@@ -13,11 +13,6 @@ from random import randint, choice, choices, sample, shuffle
 
 process ==
 from random import randint
-from ast import literal_eval
-
-nbitems = literal_eval(str(nbitems))
-minright = literal_eval(str(minright))
-maxright = literal_eval(str(maxright))
 
 checkbox.fill_from_rw(right, wrong, nbitems, randint(minright, maxright))
 checkbox.scoring = scoring
