@@ -24,11 +24,14 @@ if __name__ == "__main__":
     # JSON context is loaded
     with open(sys.argv[1], "r") as f:
         dic = json.load(f)
+
+    # HACK : parsing Python values
     for k, v in dic.items():
         try:
             dic[k] = literal_eval(str(v))
         except:
             pass
+
     Component.sync_context(dic)
     
     before_scripts = dic.get('before_scripts', ['headerbefore', 'before', 'footerbefore'])
