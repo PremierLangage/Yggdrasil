@@ -32,11 +32,6 @@ radio =: RadioGroup
 radio.decorator = Radio
 
 process ==
-from ast import literal_eval
-
-indsol = literal_eval(str(indsol))
-shuffled = literal_eval(str(shuffled))
-
 radio.set_items(items)
 radio.set_sol(indsol)
 
