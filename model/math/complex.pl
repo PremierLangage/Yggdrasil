@@ -12,7 +12,7 @@ evaluator ==
 from ast import literal_eval
 from sympy import sympify
 from evalsympy import eval_complex
-score, error = eval_complex(answers['math'], sol, imaginary_unit=mathsettings['imaginary_unit'], form=complex_form, checkratsimp=literal_eval(checkratsimp), unauthorized_func=literal_eval(unauthorized_func), local_dict=sympify(symbol_dict))
+score, error = eval_complex(answers['math'], sol, imaginary_unit=imaginary_unit, form=complex_form, checkratsimp=checkratsimp, unauthorized_func=unauthorized_func, local_dict=sympify(symbol_dict))
 feedback = message[error]
 ==
 
