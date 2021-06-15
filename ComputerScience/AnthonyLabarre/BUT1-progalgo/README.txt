@@ -24,6 +24,8 @@ sur ce que le cours fournit comme prérequis (donc "echauffement k" porte sur ce
 
 Pour l'algo, à voir...
 
+NOTE: on n'est pas obligé de suivre le schéma du cours: on pourrait prévoir par exemple de faire un échauffement systématique par séance, quitte à se répéter
+
 * feuille de contrôle: des feuilles plus conséquentes avec des exercices nécessitant du code plus long et complexe, qui sera évalué sur
 deux jeux de doctests: un jeu communiqué aux étudiants, et un jeu "caché" aléatoire ou non (à voir)
 
