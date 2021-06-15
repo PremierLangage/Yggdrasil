@@ -10,15 +10,4 @@ introduction ==
 # (retirer les TODO le cas échéant; réévaluer en cours de route: ne pas oublier que c'est un échauffement et pas un TP)
 # TODO: relire TP correspondant et ajuster cette feuille en fonction de ce qu'il y a dedans 
 
-# TODO fonctions: les bases (écrire une fonction sans paramètre qui fait un truc)
-
-# TODO fonctions: les bases (écrire une fonction avec un, deux, ... paramètres qui fait un truc)
-
-# TODO fonctions: return (exercice où on est obligé de faire un return plutôt qu'un print)
-
-# TODO: fonctions: variables globales, locales (PAS avec les mots-clés global local)
-
-# TODO: docstring, doctests ... ?
-
-# TODO: chaînes de caractères: méthodes de base
-
+# TODO 
