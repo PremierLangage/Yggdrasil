@@ -10,7 +10,7 @@
 @ ressources_exercices.py
 
 grader  =@ /grader/evaluator.py
-#builder =@ /builder/before.py
+builder =@ /builder/before.py
 
 before== #|python|
 from random import randint
