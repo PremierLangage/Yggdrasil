@@ -1,0 +1,20 @@
+
+# author = Anthony Labarre
+
+title = Échauffement TP 3
+
+introduction ==
+ Le questionnaire ci-dessous vous permettra de vérifier votre compréhension des prérequis pour le TP 3.
+==
+
+# Projet de feuille d'échauffement 3: il faut valider les notions suivantes du CM 3: 
+# (retirer les TODO le cas échéant; réévaluer en cours de route: ne pas oublier que c'est un échauffement et pas un TP)
+# TODO: relire TP correspondant et ajuster cette feuille en fonction de ce qu'il y a dedans 
+
+# TODO: modules; insister sur import truc, ou from truc import machin, etc.
+# TODO: modules; insister sur le if __name__ == "__main__"
+# TODO: listes: manipulations de base
+# TODO: itérer sur une liste avec un for
+# TODO: attention positions != éléments
+# TODO: break et continue?
+
