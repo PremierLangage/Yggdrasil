@@ -25,6 +25,12 @@ if __name__ == "__main__":
     with open(sys.argv[1], "r") as f:
         dic = json.load(f)
 
+    # HACK : parsing Python values
+    for k, v in dic.items():
+        try:
+            dic[k] = literal_eval(str(v))
+        except:
+            pass
 
     Component.sync_context(dic)
     
