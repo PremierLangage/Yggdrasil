@@ -8,6 +8,8 @@ checkratsimp = True
 symbol_dict = {'e': E}
 unauthorized_func = ['sin', 'cos', 'tan']
 
+latexsettings.imaginary_unit = i
+
 evaluator ==
 from ast import literal_eval
 from sympy import sympify
