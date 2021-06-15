@@ -33,6 +33,7 @@ deux jeux de doctests: un jeu communiqué aux étudiants, et un jeu "caché" al�
 On peut autoriser plusieurs essais: je serais d'avis de ne pas le faire pour les échauffements mais de l'autoriser pour les contrôles.
 Voire de ne pas limiter le nombre d'essais pour les contrôles
 
+On peut éventuellement demander à quelques collègues de tester les feuilles
 
 Structure de ce répertoire
 ==========================
