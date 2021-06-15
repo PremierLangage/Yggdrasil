@@ -19,7 +19,10 @@ vues lors du dernier cours, ou nécessaires à la réalisation du TP. Idéalemen
 - leur attribuer également un score pour qu'ils se rendent compte de leur niveau (mais ne pas en tenir compte dans la note finale)
 
 Les feuilles d'échauffement contiendront principalement des QCM ou des questions nécessitant des réponses très brèves, en tout cas 
-pour ce qui concerne la programmation. Pour l'algo, à voir.
+pour ce qui concerne la programmation. On peut y reporter les questions très basiques de début de TP, pour l'instant je ne me base que 
+sur ce que le cours fournit comme prérequis (donc "echauffement k" porte sur ce qu'on vient de voir dans le "CM k"). 
+
+Pour l'algo, à voir...
 
 * feuille de contrôle: des feuilles plus conséquentes avec des exercices nécessitant du code plus long et complexe, qui sera évalué sur
 deux jeux de doctests: un jeu communiqué aux étudiants, et un jeu "caché" aléatoire ou non (à voir)
