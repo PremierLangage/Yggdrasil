@@ -15,3 +15,6 @@ introduction ==
 # TODO: modules; insister sur le if __name__ == "__main__"
 # TODO: listes: manipulations de base
 # TODO: itérer sur une liste avec un for
+# TODO: attention positions != éléments
+# TODO: break et continue?
+
