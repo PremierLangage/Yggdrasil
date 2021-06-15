@@ -11,4 +11,7 @@ introduction ==
 # TODO: relire TP correspondant et ajuster cette feuille en fonction de ce qu'il y a dedans 
 
 
-# TODO manipulation de fichiers; attention aux problèmes de sécurité, je ne suis pas sûr qu'on pourra faire grand-chose sur Platon
+# TODO manipulation de fichiers; je ne suis pas sûr qu'on pourra faire grand-chose sur Platon
+# TODO attention aux problèmes de sécurité! interdire l'utilisation de certains mots-clés ou fonctions ou modules de Python:
+# si on veut leur faire lire / écrire des fichiers, il faut bien limiter l'accès (interdire des fonctions style 
+# changer de répertoire, lister le répertoire, etc.)
