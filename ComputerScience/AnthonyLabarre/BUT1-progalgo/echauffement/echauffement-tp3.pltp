@@ -12,4 +12,5 @@ introduction ==
 # TODO: relire TP correspondant et ajuster cette feuille en fonction de ce qu'il y a dedans 
 
 # TODO: modules; insister sur import truc, ou from truc import machin, etc.
+# TODO: modules; insister sur le if __name__ == "__main__"
 
