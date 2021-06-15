@@ -76,6 +76,8 @@ title = Expressions booléennes
 
 text==
 Donnez la valeur booléenne des expressions suivantes, sachant que {{affectations_formattees}}.
+
+{{enonce}}
 ==
 
 form== #|html|
