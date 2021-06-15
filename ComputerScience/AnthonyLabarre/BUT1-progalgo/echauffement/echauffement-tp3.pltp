@@ -14,4 +14,4 @@ introduction ==
 # TODO: modules; insister sur import truc, ou from truc import machin, etc.
 # TODO: modules; insister sur le if __name__ == "__main__"
 # TODO: listes: manipulations de base
-
+# TODO: itérer sur une liste avec un for
