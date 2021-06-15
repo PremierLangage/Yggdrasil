@@ -63,6 +63,7 @@ for i in range(nb_questions):
         faux.append(str(i+1))
 
 # affichage du feedback
+"""
 feedback = '<p style="color:green">Bravo!<p>' 
 if note != nb_questions:
     if len(faux) > 1:
@@ -70,6 +71,7 @@ if note != nb_questions:
     else:
         feedback = '<p style="color:red">La réponse ' + ", ".join(faux) + " est fausse.</p>"
 grade = (note, feedback)
+"""
 ==
 
 title = Expressions booléennes 
