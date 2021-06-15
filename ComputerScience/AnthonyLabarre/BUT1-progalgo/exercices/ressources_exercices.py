@@ -64,6 +64,9 @@ def mot_aleatoire(longueur):
 
 def chaine_nombres_aleatoire(longueur):
     """Renvoie un nombre aléatoire à longueur chiffres sous la forme d'une
-    chaîne."""
-    return "".join(str(randint(0, 9)) for _ in range(longueur))
+    chaîne. On s'interdit de démarrer par un 0 ou un 1, ces valeurs étant 
+    faciles à confondre avec un O ou un l."""
+    return str(randint(2, 9)) + "".join(
+        str(randint(0, 9)) for _ in range(longueur)
+    )
 
