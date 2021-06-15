@@ -19,3 +19,5 @@ introduction ==
 # TODO: fonctions: variables globales, locales (PAS avec les mots-clés global local)
 
 # TODO: docstring, doctests ... ?
+
+# TODO: chaînes de caractères: méthodes de base
