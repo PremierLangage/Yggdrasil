@@ -1,0 +1,6 @@
+Questions
+=========
+
+- comment faire une preview de PLTP? (pas de bouton play sur platon)
+- comment rajouter un lien vers une activité? (Claire doit savoir)
+
