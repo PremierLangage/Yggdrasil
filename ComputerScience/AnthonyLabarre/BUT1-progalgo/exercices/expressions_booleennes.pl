@@ -76,8 +76,6 @@ title = Expressions booléennes
 
 text==
 Donnez la valeur booléenne des expressions suivantes, sachant que {{affectations_formattees}}.
-
-{{enonce}}
 ==
 
 form== #|html|
@@ -86,7 +84,7 @@ form== #|html|
 {% for input in inputs %}
 <!--{% if not solved[loop.index0]%}-->
 <li>  {{enonce[loop.index0]}} = {{ input|component }}  </li>
-<!--{% endif %}-->
+{% endif %}
 {% endfor %}
 </ul>
 ==
