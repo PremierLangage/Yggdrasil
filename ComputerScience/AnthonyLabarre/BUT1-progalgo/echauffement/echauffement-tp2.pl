@@ -1,0 +1,19 @@
+# author = Anthony Labarre
+
+title = Échauffement TP 2
+
+introduction ==
+ Le questionnaire ci-dessous vous permettra de vérifier votre compréhension des prérequis pour le TP 2.
+==
+
+# Projet de feuille d'échauffement 2: il faut valider les notions suivantes du CM 2: 
+# (retirer les TODO le cas échéant; réévaluer en cours de route: ne pas oublier que c'est un échauffement et pas un TP)
+# TODO: relire TP correspondant et ajuster cette feuille en fonction de ce qu'il y a dedans 
+
+# TODO: if avec elif et else
+# TODO: tests basiques et debugging?
+# TODO: boucles for; qu'affiche la boucle suivante? écrivez une boucle qui produit le résultat ci-dessous; etc.
+# TODO: structures itérables: chaînes
+# TODO: structures itérables: range
+
+
