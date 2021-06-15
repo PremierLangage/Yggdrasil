@@ -4,7 +4,7 @@ Ressources
 
 La doc de Platon:           https://documentationpl.readthedocs.io/fr/latest/
 La doc des composants:      https://pl.u-pem.fr/components/intro
-Des exercices d'AP1 (2?):   dans /home/ComputerScience/python/
+Des exercices d'AP1/AP2:   dans /home/ComputerScience/python/
 
 Intentions
 ==========
