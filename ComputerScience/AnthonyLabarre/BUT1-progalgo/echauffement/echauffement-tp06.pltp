@@ -1,0 +1,24 @@
+# author = Anthony Labarre
+
+title = Échauffement TP 5
+
+introduction ==
+ Le questionnaire ci-dessous vous permettra de vérifier votre compréhension des prérequis pour le TP 5.
+==
+
+# Projet de feuille d'échauffement 5: il faut valider les notions suivantes du CM 5: 
+# (retirer les TODO le cas échéant; réévaluer en cours de route: ne pas oublier que c'est un échauffement et pas un TP)
+# TODO: relire TP correspondant et ajuster cette feuille en fonction de ce qu'il y a dedans 
+
+# TODO fonctions: les bases (écrire une fonction sans paramètre qui fait un truc)
+
+# TODO fonctions: les bases (écrire une fonction avec un, deux, ... paramètres qui fait un truc)
+
+# TODO fonctions: return (exercice où on est obligé de faire un return plutôt qu'un print)
+
+# TODO: fonctions: variables globales, locales (PAS avec les mots-clés global local)
+
+# TODO: docstring, doctests ... ?
+
+# TODO: chaînes de caractères: méthodes de base
+
