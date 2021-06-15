@@ -15,5 +15,3 @@ Calculer $! z_1 \times z_2 !$ (sous forme algébrique).
 ==
 
 complex_form = cartesian
-
-latexsettings.imaginary_unit = i
