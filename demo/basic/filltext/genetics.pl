@@ -12,7 +12,7 @@ Chez les individus d’une même espèce, un gène peut cependant exister sous d
 L’ensemble des allèles d’un individu définit son {génotype}. Lorsqu’ils s’expriment, lors de la synthèse des protéines, les gènes participent à la construction de l’individu et à la mise en place de son {phénotype}. 
 ==
 
-labval ==
+labels ==
 caryotype
 ADN
 ARN
