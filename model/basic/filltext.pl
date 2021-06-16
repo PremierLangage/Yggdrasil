@@ -17,17 +17,17 @@ def replace(x):
     count += 1
     return "{{ cdrops[" + str(count) + "]}}"
 
-form = re.sub(r'\{(.*?)\}', replace , filledtext)
+part1 = re.sub(r'\{(.*?)\}', replace , filledtext)
 
-form2 = """
+part2 = """
 
 <br><br>
 
-{% for label in labels %}
-{{ label }}
+{% for clabel in clabels %}
+{{ clabel }}
 {% endfor %}
 """
 
-form = form + form2
+inputblock = part1 + part2
 ==
 
