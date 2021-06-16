@@ -18,7 +18,7 @@ from random import randint, choice, choices, sample, shuffle
 process ==
 from customdragdrop import CustomDragDrop
 cplabels, cpdrops = [], []
-lbl, drp = [], []
+clabels, cdrops= [], []
 
 if isinstance(sol, str):
     _sol_ = sol.splitlines()
@@ -38,7 +38,7 @@ for i, content in enumerate(_labels_):
     cplabels.append(CustomDragDrop.Label(content=content))
     selector = cplabels[i].selector
     cid = cplabels[i].cid
-    lbl.append("<%s cid='%s'></%s>" % (selector, cid, selector))
+    clabels.append("<%s cid='%s'></%s>" % (selector, cid, selector))
 
 nbdrops = len(_sol_)
 
@@ -46,7 +46,7 @@ for i in range(nbdrops):
     cpdrops.append(CustomDragDrop.Drop())
     selector = cpdrops[i].selector
     cid = cpdrops[i].cid
-    drp.append("<%s cid='%s'></%s>" % (selector, cid, selector))
+    cdrops.append("<%s cid='%s'></%s>" % (selector, cid, selector))
 ==
 
 text =
