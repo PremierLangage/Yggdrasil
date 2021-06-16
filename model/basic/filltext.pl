@@ -15,7 +15,7 @@ count = -1
 def replace(x):
     global count
     count += 1
-    return "{{ drops[" + str(count) + "]}}"
+    return "{{ cdrops[" + str(count) + "]}}"
 
 form = re.sub(r'\{(.*?)\}', replace , filledtext)
 
