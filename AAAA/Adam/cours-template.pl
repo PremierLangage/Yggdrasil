@@ -1,4 +1,3 @@
-
 @ /utils/sandboxio.py
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
@@ -13,7 +12,7 @@ before==
 with open ("cours.md" , "r") as f:
     txt = f.readlines()
 
-slides = ("\n".join(txt)).split("***\n")
+slides = ("\n".join(txt)).split("---\n")
 page = 0
 ==
 
