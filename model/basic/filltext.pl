@@ -2,7 +2,7 @@ extends = /model/basic/dragdrop.pl
 
 shuffle % true
 
-text ==
+question ==
 Compléter le texte suivant avec les étiquettes.
 ==
 
