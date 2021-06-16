@@ -6,10 +6,10 @@ settings.feedback = lightscore
 
 title =
 
-labval % []
+labels = []
 
-before_scripts % ["importfunc", "before", "process"]
-jinja_keys % ["inputblock"]
+before_scripts = ["importfunc", "before", "process"]
+jinja_keys = ["inputblock"]
 
 importfunc ==
 from random import randint, choice, choices, sample, shuffle
@@ -18,27 +18,27 @@ from random import randint, choice, choices, sample, shuffle
 process ==
 from customdragdrop import CustomDragDrop
 cplabels, cpdrops = [], []
-labels, drops = [], []
+lbl, drp = [], []
 
 if isinstance(sol, str):
     _sol_ = sol.splitlines()
 else:
     _sol_ = sol
 
-if isinstance(labval, str):
-    _labval_ = labval.splitlines()
-elif isinstance(labval, list):
-    _labval_ = labval
+if isinstance(labels, str):
+    _labels_ = labels.splitlines()
+elif isinstance(labels, list):
+    _labels_ = labels
 else:
-    _labval_ = []
+    _labels_ = []
 
-_labval_ = list(set(_labval_ + _sol_))
+_labels_ = list(set(_labels_ + _sol_))
 
-for i, content in enumerate(_labval_):
+for i, content in enumerate(_labels_):
     cplabels.append(CustomDragDrop.Label(content=content))
     selector = cplabels[i].selector
     cid = cplabels[i].cid
-    labels.append("<%s cid='%s'></%s>" % (selector, cid, selector))
+    lbl.append("<%s cid='%s'></%s>" % (selector, cid, selector))
 
 nbdrops = len(_sol_)
 
@@ -46,7 +46,7 @@ for i in range(nbdrops):
     cpdrops.append(CustomDragDrop.Drop())
     selector = cpdrops[i].selector
     cid = cpdrops[i].cid
-    drops.append("<%s cid='%s'></%s>" % (selector, cid, selector))
+    drp.append("<%s cid='%s'></%s>" % (selector, cid, selector))
 ==
 
 text =
@@ -57,7 +57,7 @@ form ==
 <img src="{{scheme}}" style="max-width: 300px; vertical-align:top; display: inline-block"> 
 <ul>
 {% for i in range(nbdrops) %}
-<li> {{ i + 1 }}. {{ drops[i]|component }} </li>
+<li> {{ i + 1 }}. {{ drp[i]|component }} </li>
 {% endfor %}
 </ul>
 
