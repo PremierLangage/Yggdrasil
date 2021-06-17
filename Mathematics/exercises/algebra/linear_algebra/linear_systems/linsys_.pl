@@ -7,14 +7,15 @@ extends = /model/mathquill.pl
 title = Système linéaire
 
 before ==
-n=param['size']
+n = param['size']
 coeffboundA = param['coeffboundA']
 coeffboundB = param['coeffboundB']
-sparsity= param['sparsity']
+sparsity = param['sparsity']
+
 if 'maxdet' in param:
-    A=randint_matrix_invertible(n,coeffboundA,[0],sparsity,param['mindet'],param['maxdet'])
+    A=randint_matrix_inv(n,coeffboundA,[0], sparsity, param['mindet'], param['maxdet'])
 else:
-    A=randint_matrix_invertible(n,coeffboundA,[0],sparsity)
+    A=randint_matrix_inv(n, coeffboundA,[0],sparsity)
 if param['typesol']=="rat":
     B=rand_int_matrix(n,1,coeffboundB,[0])
 else:
@@ -35,22 +36,3 @@ Déterminer la solution du système suivant (d'inconnues $! {{lstvar}} !$) :
 $$ {{sys_tex}} $$
 Ecrire la solution sous forme d'un {{tuple_name}} de nombres.
 ==
-
-evaluator ==
-score, error = eval_tuple(answers['math'], sol, checksize=True)
-feedback = message[error]
-==
-
-message.NotTuple = Votre réponse n'est pas un {{tuple_name}} de nombres.
-message.WrongSize = Votre réponse n'est pas un {{tuple_name}} de nombres.
- 
-
-solution == 
-La solution est $! {{sol_tex}} !$.
-==
-
-
-
-
-
-
