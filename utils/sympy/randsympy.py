@@ -49,7 +49,7 @@ def randint_matrix(n, p, bound, excval=[], sparsity=0):
     rd.shuffle(entries)
     return sp.Matrix(n,p,entries)
 
-def randint_matrix_invertible(n, bound, excval=[], sparsity=0, mindet=0, maxdet=sp.S.Infinity):
+def randint_matrix_inv(n, bound, excval=[], sparsity=0, mindet=0, maxdet=sp.S.Infinity):
     """
     Return an invertible random matrix with integer entries.
     """
