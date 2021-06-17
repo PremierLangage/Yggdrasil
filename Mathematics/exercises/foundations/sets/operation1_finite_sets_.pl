@@ -24,7 +24,7 @@ elif case == "symdiff":
     sol = B.symmetric_difference(A)
 ==
 
-text == 
+question == 
 On considère les ensembles suivants :
 $$ A= \\{ {{ A|latex }} \\},\ B= \\{ {{ B|latex }} \\}.$$
 Déterminer $! {{expr}} !$.
