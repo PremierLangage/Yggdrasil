@@ -1,4 +1,4 @@
-extends = /model/basic/basic.pl
+extends = /model/basic/numeric.pl
 
 before ==
 from random import randint
