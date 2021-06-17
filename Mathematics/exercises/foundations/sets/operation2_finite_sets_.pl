@@ -59,7 +59,7 @@ elif case == 12:
 
 text == 
 On considère les ensembles suivants :
-$$ A= \\{ {{ A|latex }} \\},\ B= \\{ {{ B|latex }} \\},\ C= \\{ {{ C|latex }} \\}.$$
+$$ A= {{ A|latex }},\ B= {{ B|latex }},\ C= {{ C|latex }} .$$
 Déterminer $! {{expr}} !$.
 ==
 
@@ -71,5 +71,6 @@ feedback = message[error]
 solution ==
 La solution est $! { {{sol|latex}} } !$.
 ==
+
 
 
