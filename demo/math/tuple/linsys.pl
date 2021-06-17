@@ -7,7 +7,7 @@ from randsympy import randint_matrix, randint_matrix_inv
 from sympy import linsolve
 from sympy2latex import latex_linsys
 
-n = 3
+n = 2
 lstvar = ",".join(["x", "y", "z", "t"][:n])
 
 A = randint_matrix_inv(n, 10, [1])
