@@ -3,14 +3,15 @@ extends = /model/math/tuple.pl
 title = Système linéaire
 
 before ==
-from randsympy import rand_int_matrix, rand_int_matrix_invertible
+from randsympy import randint_matrix, randint_matrix_inv
 from sympy import linsolve
 from sympy2latex import latex_linsys
+
 n = 3
 lstvar = ",".join(["x", "y", "z", "t"][:n])
 
-A = rand_int_matrix_invertible(n, 10, [1])
-B = rand_int_matrix(n, 1, 5, [0])
+A = randint_matrix_inv(n, 10, [1])
+B = randint_matrix(n, 1, 5, [0])
 
 sol = list(linsolve((A, B)))[0]
 
