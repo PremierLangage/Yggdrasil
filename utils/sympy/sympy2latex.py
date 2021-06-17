@@ -162,13 +162,13 @@ def latex_linsys(A, B, lstvar=['x','y','z','t','u','v','w']):
     for i in range(n):
         terms.extend(["&", latex_lincomb(A[i,:], lstvar)])
         if i < n-1:
-            terms.extend(["=", latex(B[i]), "\\\\\\"])
+            terms.extend(["=", latex(B[i]), r"\\"])
         else:
             terms.extend(["=", latex(B[i])])
     if n == 1:
         return " ".join(terms)
     else:
-        return "\\left\lbrace \\\\begin{align} %s \\\\end{align} \\right. " % " ".join(terms) 
+        return r"\left\lbrace \begin{align} %s \end{align} \right. " % " ".join(terms) 
 
 def latex_lincomb(coeff, vec):
     """
