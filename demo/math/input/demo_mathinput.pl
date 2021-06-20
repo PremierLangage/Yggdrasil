@@ -1,6 +1,6 @@
 extends = /model/math/input.pl
 
-title = Démonstration math/input
+title = 
 
 before ==
 
