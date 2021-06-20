@@ -6,9 +6,10 @@ before ==
 
 ==
 
-text ==
+question ==
 Entrer une expression mathématique.
 ==
+
 symbol_dict = {'e': E}
 
 evaluator ==
@@ -38,5 +39,3 @@ feedback ==
     <li> Test : {{ test_ans }} </li>
 </ul>
 ==
-
-settings.feedback = 
