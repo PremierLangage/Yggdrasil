@@ -40,6 +40,10 @@ else:
 input.disabled = True
 ==
 
+solution ==
+{{ sol[0] }}
+==
+
 macros ==
 {% macro audio_button(sourcefile) -%}
 <button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button>
