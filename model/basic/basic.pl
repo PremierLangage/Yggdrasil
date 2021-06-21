@@ -84,5 +84,9 @@ style.basic == #|css|
     color: var(--brand-color-primary);
     background-color: #cce5ff;
 }
+
+.exercise__form p {
+    font-size: 16px;
+}
 </style>
 ==
