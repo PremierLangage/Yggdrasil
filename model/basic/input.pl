@@ -13,7 +13,6 @@ inputblock ==
 {{ input|component }}
 ==
 
-settings.feedback = rightwrong
 
 evaluator ==
 from pltext import edit_distance
@@ -34,8 +33,10 @@ elif isinstance(sol, lst):
 
 if any([samestrings(input.value, item, diffmeasure=diffmeasure, tol=tol) for item in _sol_]):
     score = 100
+    input.suffix = r'<i class="fas fa-check" style="color: #155724"></i>'
 else:
     score = 0
+    input.suffix = r'<i class="fas fa-times" style="color: #721c24"></i>'
 ==
 
 macros ==
