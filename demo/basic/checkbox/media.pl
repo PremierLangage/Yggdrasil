@@ -3,7 +3,7 @@ extends = /model/basic/checkbox.pl
 question ==
 Regarde la vidéo et réponds à la question.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZVq2iPdgBOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Video](http://img.youtube.com/vi/ZVq2iPdgBOI/0.jpg)](http://www.youtube.com/watch?v=ZVq2iPdgBOI)
 
 Parmi les pays suivants, lesquels n'ont pas participé à la fondation de la C.E.E. ?
 ==
