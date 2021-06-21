@@ -30,7 +30,7 @@ style.basic == #|css|
 <style>
 .icon-check-after p::after {
     font-family: "Font Awesome 5 Free";
-    color: green;
+    color: #006400;
     margin-left: 1em;
     content: "\f00c";
     vertical-align: middle;
@@ -39,7 +39,7 @@ style.basic == #|css|
 
 .icon-times-after p::after {
     font-family: "Font Awesome 5 Free";
-    color: red;
+    color: #8B0000;
     margin-left: 1em;
     content: "\f00d";
     vertical-align: middle;
@@ -48,7 +48,7 @@ style.basic == #|css|
 
 .icon-check-before p::before {
     font-family: "Font Awesome 5 Free";
-    color: green;
+    color: #006400;
     margin-right: 1em;
     content: "\f00c";
     vertical-align: middle;
@@ -57,7 +57,7 @@ style.basic == #|css|
 
 .icon-times-before p::before {
     font-family: "Font Awesome 5 Free";
-    color: red;
+    color: #8B0000;
     margin-right: 1em;
     content: "\f00d";
     vertical-align: middle;
