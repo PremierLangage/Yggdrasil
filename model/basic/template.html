@@ -6,7 +6,7 @@
 </div>
 <hr class="border">
 {% if score >=0 %}
-<a type="button" class="btn btn-primary action-reroll" href="`+link+`?action=reroll"> Nouveau</a>
+<button class="btn btn-primary" onclick="document.location.reload(true);"> Nouveau </button>
 {% else %}
 <button class="btn btn-primary action-submit">Valider</button>
 {% endif %}
