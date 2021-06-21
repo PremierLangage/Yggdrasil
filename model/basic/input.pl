@@ -31,6 +31,8 @@ if isinstance(sol, str):
 elif isinstance(sol, lst):
     _sol_ = sol
 
+solution = _sol_[0]
+
 if any([samestrings(input.value, item, diffmeasure=diffmeasure, tol=tol) for item in _sol_]):
     score = 100
     input.suffix = r'<i class="fas fa-check" style="color: #006400"></i>'
