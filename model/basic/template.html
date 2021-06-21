@@ -4,6 +4,14 @@
 <div style="display: block; margin-top: 1em;">
 {{ inputblock|safe }}
 </div>
+{% if score >= 0 and score < 100 and solution|length > 1 %}
+<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
+  Solution
+</a>
+<div class="collapse" id="collapseSolution">
+{{ solution }}
+</div>
+{% endif %}
 <hr class="border">
 {% if score >=0 %}
 <button class="btn btn-primary" onclick="document.location.reload(true);"> Nouveau </button>
