@@ -1,14 +1,12 @@
 extends = /model/basic/radio.pl
 
-title = Géographie
-
 question ==
-Quel pays a pour capitale Budapest ?
+Quel pays a pour capitale Paris ?
 ==
 
 items ==
-Hongrie
-Estonie
-Roumanie
-Slovaquie
+France
+Allemagne
+Italie
+Espagne
 ==
