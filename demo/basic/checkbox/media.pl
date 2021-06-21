@@ -1,4 +1,4 @@
-extends = /model/basic/input.pl
+extends = /model/basic/checkbox.pl
 
 question ==
 Regarde la vidéo-ci-dessous et réponds à la question.
