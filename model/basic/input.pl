@@ -37,6 +37,7 @@ if any([samestrings(input.value, item, diffmeasure=diffmeasure, tol=tol) for ite
 else:
     score = 0
     input.suffix = r'<i class="fas fa-times" style="color: red"></i>'
+input.disabled = True
 ==
 
 macros ==
