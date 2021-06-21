@@ -1,5 +1,5 @@
 <div>
-{{ question|safe }}
+{{ question|safe|markdown }}
 </div>
 {% if score >= 0 and score < 100 %}
 <div class="icon-times-after mq-disapbled">
