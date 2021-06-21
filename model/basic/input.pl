@@ -33,10 +33,10 @@ elif isinstance(sol, lst):
 
 if any([samestrings(input.value, item, diffmeasure=diffmeasure, tol=tol) for item in _sol_]):
     score = 100
-    input.suffix = r'<i class="fas fa-check" style="color: green"></i>'
+    input.suffix = r'<i class="fas fa-check" style="color: #006400"></i>'
 else:
     score = 0
-    input.suffix = r'<i class="fas fa-times" style="color: red"></i>'
+    input.suffix = r'<i class="fas fa-times" style="color: #8B0000"></i>'
 input.disabled = True
 ==
 
