@@ -76,7 +76,7 @@ checks_args_stdin==#|python|
  ["Quelques éléments", [], "5.5 3.14 12.2"],
  ["Tableau vide", [], ""],
  ["Test aléatoire 1", [], " ".join([str(random()*100) for i in range(10)])],
- ["Test aléatoire 2", [], " ".join([str(random()*100) for i in range(20)])]
+ ["Test aléatoire 2", [], " ".join([str(random()*100) for i in range(20)])],
  ["Test aléatoire 3", [], " ".join([str(random()*100) for i in range(50)])]]
 ==
 
