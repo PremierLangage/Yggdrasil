@@ -1,5 +1,7 @@
 extends = /model/basic/basic.pl
 
+@ /utils/components/scoring.py
+
 before_scripts % ["before", "process"]
 
 process ==
