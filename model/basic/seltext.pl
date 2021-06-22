@@ -57,11 +57,11 @@ evaluator ==
 import re
 
 def visual_grading(string, ans, sol):
-    lst = re.findall(r"#[^#]*#|\{[^\{\}]*\}|[^\{\}#]+",string)
+    lst = re.findall(r"\[[^\[\]]*\]|\{[^\{\}]*\}|[^\[\]\{\}#]+", string)
     k=0
     for i in range(len(lst)):
         s=lst[i]
-        if s[0] == "{" or s[0] == "#":
+        if s[0] == "{" or s[0] == "[":
             p = s[1:-1]
             if k in sol:
                 if k in ans:
