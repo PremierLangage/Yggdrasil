@@ -1,12 +1,8 @@
 extends = /model/basic/basic.pl
 
-title = Repérage des verbes
-
 jinja_keys = ['text', 'solution']
 
 before_scripts % ["before", "process"]
-
-settings.feedback = lightscore
 
 process ==
 import re
