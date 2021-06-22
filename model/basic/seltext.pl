@@ -81,7 +81,12 @@ nbright = len([x for x in indans if x in sol])
 nbwrong = nbright - len(indans)
 nbsol = len(sol)
 
+from scoring import all_or_nothing, right_minus_wrong
 
+if scoring == "AllOrNothing":
+    score = all_or_nothing(nbright, nbwrong)
+elif scoring == "RightMinusWrong":
+    score = right_minus_wrong(nbright, nbwrong, nbsol)
 ==
 
 
