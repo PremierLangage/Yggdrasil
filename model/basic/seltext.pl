@@ -8,7 +8,7 @@ process ==
 import re
 
 def bracket_words(string):
-    lst=re.findall(r"#[^#]*#|\{[^\{\}]*\}|\[[^\]]*\]|[^\{\}\[\]#]+",string)
+    lst=re.findall(r"#[^#]*#|\{[^\{\}]*\}|\[[^\[\]]*\]|[^\{\}\[\]#]+",string)
     for i in range(len(lst)):
         s = lst[i]
         if s[0] == "#":
