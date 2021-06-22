@@ -49,7 +49,9 @@ int update_min_array_float(float* tab, int size, float* min){
 
 ==
 
-code_before==
+code_before==#|c|
+#include <stdio.h>
+#include <stdlib.h>
 
 ==
 
