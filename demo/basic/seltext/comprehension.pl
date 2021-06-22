@@ -2,7 +2,7 @@ extends = /model/basic/seltext.pl
 
 title = Compréhension d'un texte
 
-text ==
+question ==
 Sélectionner dans ce texte les mots qui désignent Van Gogh
 ==
 
