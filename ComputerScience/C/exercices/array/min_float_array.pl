@@ -56,31 +56,25 @@ code_before==#|c|
 ==
 
 code_after==#|c|
-#include <stdio.h>
-#include <stdlib.h>
-
 int main(int argc, char* argv[]){
-  int nb_term = argc-1;
-  int* tab = (int*)malloc(nb_term*sizeof(int));
-  int i;
-
-  for (i=0 ; i<nb_term ; i++){
-    tab[i] = atoi(argv[i+1]);
-  }
-
-  printf("Moyenne : %f\n", average_array(tab, nb_term));
-  free(tab);
-  return 0;
+    float tab[200];
+    int size=0;
+    float min;
+    while(scanf("%f", tab+size) == 1)
+        size++;
+    if (update_min_array_float(tab, size, &min))
+        printf("Minimum : %f\n", min);
+    else
+        printf("Pas de minimum : tableau vide\n");
+    return 0;
 }
 
 ==
 
 checks_args_stdin==#|python|
-[["Exécution simple", ["1"], ""],
- ["Quelques éléments", ["12", "-3", "52", "0", "41"], ""],
+[["Exécution simple", [], "1.0"],
+ ["Quelques éléments", [], "5.5 3.14 12.2"],
  ["Tableau vide", [], ""],
- ["Test aléatoire 1", [str(randint(-100, 100)) for i in range(randint(5, 10))], ""],
- ["Test aléatoire 2", [str(randint(-100, 100)) for i in range(randint(10, 15))], ""],
- ["Test aléatoire 3", [str(randint(-100, 100)) for i in range(randint(10, 15))], ""]]
+ ["Test aléatoire 1", [], " ".join([str(rand()*100) for i in range(10)])]]
 ==
 
