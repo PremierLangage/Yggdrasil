@@ -37,8 +37,6 @@ if isinstance(sortedlist, str):
     _sortedlist_ = sortedlist.splitlines()
 elif isinstance(sortedlist, list):
     _sortedlist_= sortedlist
-else:
-    raise TypeError("sortedlist must be a string or a list")
 
 if not isinstance(_nbitems_, int):
     _nbitems_ = len(_sortedlist_)
