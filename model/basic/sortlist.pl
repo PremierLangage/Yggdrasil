@@ -26,7 +26,7 @@ doc == #|python|
 
 title =
 
-nbitems % null
+nbitems = None
 
 footerbefore ==
 from random import randint, sample
