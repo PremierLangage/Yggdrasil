@@ -1,7 +1,5 @@
 extends = /model/basic/basic.pl
 
-jinja_keys = ['text', 'solution']
-
 before_scripts % ["before", "process"]
 
 process ==
