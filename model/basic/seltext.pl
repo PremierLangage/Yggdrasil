@@ -73,7 +73,9 @@ def visual_grading(string, ans, sol):
     
     return "".join(lst)
 
-HTML = visual_grading(_seltext_, [int(i) for i in answers['selunits'].split(",")], sol)
+indans = [int(i) for i in answers['selunits'].split(",")]
+
+HTML = visual_grading(_seltext_, indans, sol)
 
 
 ==
