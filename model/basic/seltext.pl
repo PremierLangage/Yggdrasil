@@ -77,6 +77,10 @@ indans = [int(i) for i in answers['selunits'].split(",")]
 
 HTML = visual_grading(_seltext_, indans, sol)
 
+nbright = len([x for x in indans if x in sol])
+nbwrong = nbright - len(indans)
+nbsol = len(sol)
+
 
 ==
 
