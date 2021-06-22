@@ -24,7 +24,7 @@ def bracket_words(string):
     return "".join(lst)
     
 def read_text_bracket(string):
-    lst = re.findall(r"\[[^\[\]]*\]|\{[^\{\}]*\}|[^\{\}#]+", string)
+    lst = re.findall(r"\[[^\[\]]*\]+|\{[^\{\}]*\}|[^\{\}#]+", string)
     selection = []
     k=0
     for i in range(len(lst)):
