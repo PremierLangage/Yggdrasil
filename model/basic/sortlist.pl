@@ -28,7 +28,7 @@ title =
 
 nbitems = None
 
-footerbefore ==
+process ==
 from random import randint, sample
 
 _nbitems_ = nbitems
