@@ -89,6 +89,7 @@ elif scoring == "RightMinusWrong":
     score = right_minus_wrong(nbright, nbwrong, nbsol)
 ==
 
+scoring = "RightMinusWrong"
 
 javascript.seltext ==
 <script>
