@@ -89,31 +89,47 @@ style.basic == #|css|
     font-size: 16px;
 }
 
-.img-60 {
-    width: 60%;
+.img {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    height: auto;
     margin: auto;
+}
+
+.img-60 {
+    max-width: 60%;
+}
+.img-50 {
+    max-width: 50%;
+}
+.img-40 {
+    max-width: 40%;
 }
 
 @media screen and (max-width: 768px) { /* css appliqué sur les tablettes */
     .img-60 {
-        width: 80%;
-        margin: auto;
+        max-width: 80%;
+    }
+    .img-50 {
+        max-width: 70%;
+    }
+    .img-40 {
+        max-width: 60%;
     }
 }
 
 @media screen and (max-width: 576px) { /* css appliqué sur les téléphones */
     .img-60 {
-        width: 100%;
-        margin: auto;
+        max-width: 100%;
+    }
+    .img-50 {
+        max-width: 90%;
+    }
+    .img-40 {
+        max-width: 80%;
     }
 }
 
-.img-40 {
-    max-width: 40%;
-    height: auto;
-    margin: auto;
-
-}
 
 @media screen and (max-width: 768px) { /* css appliqué sur les tablettes */
     .img-40 {
