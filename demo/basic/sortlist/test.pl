@@ -1,4 +1,4 @@
-extends = /model/basic/sortlist.pl
+extends = /model/basic/basic.pl
 
 inputblock ==
    <link rel="stylesheet" style="text/css" href="deps/opt/bootstrap.css" />
