@@ -109,20 +109,24 @@ style.basic == #|css|
 }
 
 .img-40 {
-    width: 40%;
+    max-width: 40%;
+    height: auto;
     margin: auto;
+
 }
 
 @media screen and (max-width: 768px) { /* css appliqué sur les tablettes */
     .img-40 {
-        width: 60%;
+        max-width: 60%;
+        height: auto;
         margin: auto;
     }
 }
 
 @media screen and (max-width: 576px) { /* css appliqué sur les téléphones */
     .img-40 {
-        width: 80%;
+        max-width: 80%;
+        height: auto;
         margin: auto;
     }
 }
