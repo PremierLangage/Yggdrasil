@@ -9,6 +9,7 @@ Parmi les pays suivants, lesquels n'ont pas participé à la fondation de la C.E
 ==
 
 question ==
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/640px-Flag_of_France.svg.png" class="img-40">
 <div class="img-60">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/640px-Flag_of_France.svg.png" class="img-fluid" alt="Responsive image">
 </div>
