@@ -89,7 +89,7 @@ style.basic == #|css|
     font-size: 16px;
 }
 
-.img {
+.img2 {
     margin-top: 3em;
     margin-bottom: 3em;
     height: auto;
