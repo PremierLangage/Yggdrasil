@@ -90,10 +90,11 @@ style.basic == #|css|
 }
 
 .img {
-    padding-top: 3em;
-    padding-bottom: 3em;
+    margin-top: 3em;
+    margin-bottom: 3em;
     height: auto;
-    margin: auto;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 .img-60 {
