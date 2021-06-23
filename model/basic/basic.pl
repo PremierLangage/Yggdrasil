@@ -130,21 +130,5 @@ style.basic == #|css|
     }
 }
 
-
-@media screen and (max-width: 768px) { /* css appliqué sur les tablettes */
-    .img-40 {
-        max-width: 60%;
-        height: auto;
-        margin: auto;
-    }
-}
-
-@media screen and (max-width: 576px) { /* css appliqué sur les téléphones */
-    .img-40 {
-        max-width: 80%;
-        height: auto;
-        margin: auto;
-    }
-}
 </style>
 ==
