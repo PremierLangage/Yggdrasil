@@ -89,21 +89,40 @@ style.basic == #|css|
     font-size: 16px;
 }
 
-.img-container {
+.img-60 {
     width: 60%;
     margin: auto;
 }
 
 @media screen and (max-width: 768px) { /* css appliqué sur les tablettes */
-    .img-container {
+    .img-60 {
         width: 80%;
         margin: auto;
     }
 }
 
 @media screen and (max-width: 576px) { /* css appliqué sur les téléphones */
-    .img-container {
+    .img-60 {
         width: 100%;
+        margin: auto;
+    }
+}
+
+.img-40 {
+    width: 40%;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) { /* css appliqué sur les tablettes */
+    .img-40 {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 576px) { /* css appliqué sur les téléphones */
+    .img-40 {
+        width: 80%;
         margin: auto;
     }
 }
