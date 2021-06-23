@@ -1,4 +1,4 @@
-extends = /model/basic/checkbox.pl
+extends = /model/basic/radio.pl
 
 question2 ==
 Regarde la vidéo et réponds à la question.
@@ -15,10 +15,8 @@ A quel pays appartient ce drapeau ?
 ==
 
 items ==
-Luxembourg
 France
+Italie
+Allemagne
 Espagne
-Royaume-Uni
 ==
-
-indsol = [2, 3]
