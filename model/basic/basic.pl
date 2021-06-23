@@ -88,5 +88,24 @@ style.basic == #|css|
 .exercise__form p {
     font-size: 16px;
 }
+
+.img-container {
+    width: 60%;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) { /* css appliqué sur les tablettes */
+    .img-container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 576px) { /* css appliqué sur les téléphones */
+    .img-container {
+        width: 100%;
+        margin: auto;
+    }
+}
 </style>
 ==
