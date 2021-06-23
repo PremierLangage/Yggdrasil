@@ -90,8 +90,8 @@ style.basic == #|css|
 }
 
 .img {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
     height: auto;
     margin: auto;
 }
