@@ -12,11 +12,15 @@ for i in range(4):
         sol.append("$! > !$")
 ==
 
-text ==
+question ==
 Comparer les nombres suivants en utilisant le symbole adapté ({{ labels[0] }} ou {{ labels[1] }}).
+{% for i in range(nbdrops) %}
+* {{ numbers[i][0] }} {{ drops[i] }} {{ numbers[i][1] }}
+{% endfor %}
 ==
 
-form ==
+inputblock ==
+
 <ul>
     {% for i in range(nbdrops) %}
     <li> {{ numbers[i][0] }} {{ drops[i] }} {{ numbers[i][1] }} </li>
