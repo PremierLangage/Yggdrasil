@@ -64,6 +64,14 @@ style.basic == #|css|
     font-weight: 900;
 }
 
+.icon-audio::before {
+    font-family: "Font Awesome 5 Free";
+    color: white;
+    content: "\f028";
+    vertical-align: middle;
+    font-weight: 900;
+}
+
 .error-text-unit {
     background-color: #f2dede;
     color: #a94442;
