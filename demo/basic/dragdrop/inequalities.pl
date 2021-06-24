@@ -21,9 +21,5 @@ Comparer les nombres suivants en utilisant le symbole adapté ({{ clabels[0] }} 
 
 inputblock ==
 
-<ul>
-    {% for i in range(nbdrops) %}
-    <li> {{ numbers[i][0] }} {{ cdrops[i] }} {{ numbers[i][1] }} </li>
-    {% endfor %}
-</ul>
+
 ==
