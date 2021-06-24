@@ -23,5 +23,4 @@ inputblock ==
 {% for i in range(nbdrops) %}
 * {{ numbers[i][0] }} {{ cdrops[i] }} {{ numbers[i][1] }}
 {% endfor %}
-
 ==
