@@ -13,16 +13,17 @@ for i in range(4):
 ==
 
 question ==
-Comparer les nombres suivants en utilisant le symbole adapté ({{ lbl[0] }} ou {{ lbl[1] }}).
+Comparer les nombres suivants en utilisant le symbole adapté ({{ clabels[0] }} ou {{ clabels[1] }}).
 {% for i in range(nbdrops) %}
-* {{ numbers[i][0] }} {{ drp[i] }} {{ numbers[i][1] }}
+* {{ numbers[i][0] }} {{ cdrops[i] }} {{ numbers[i][1] }}
 {% endfor %}
 ==
 
 inputblock ==
+
 <ul>
     {% for i in range(nbdrops) %}
-    <li> {{ numbers[i][0] }} {{ drp[i] }} {{ numbers[i][1] }} </li>
+    <li> {{ numbers[i][0] }} {{ cdrops[i] }} {{ numbers[i][1] }} </li>
     {% endfor %}
 </ul>
 ==
