@@ -1,7 +1,9 @@
 <div>
 {{ question|markdown|safe }}
+{{ inputblock|markdown|safe }}
 </div>
 <div style="display: block; margin-top: 1em;">
+{{ question|markdown|safe }} 
 {{ inputblock|markdown|safe }}
 </div>
 {% if score >= 0 and score < 100 and solution|length > 0 %}
