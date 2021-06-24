@@ -5,8 +5,8 @@ title = Listening
 file =$ /demo/data/english_sentence.mp3
 
 question ==
-<button onclick="player.play()" class="btn btn-sm btn-info icon-audio"></button>
 <audio id="player" style="display:none" src="{{ sourcefile }}"></audio> 
+<button onclick="player.play()" class="btn btn-sm btn-info icon-audio"></button> Transcrire la phrase.
 ==
 
 tex2t ==
