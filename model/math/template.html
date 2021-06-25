@@ -11,10 +11,13 @@
   <div id="mathinput" style="display: block; margin-top: 1em;">
     {{ prefix }}
     <div class="btn-group">
+      {% if keypad|length > 0 %}
+      {% set cls = "right-border" %}
+      {% endif %}
       {% if feedback|length > 1 %}
-      <div id="math" class="default" role="button" data-placement="top" data-toggle="popover" data-trigger="focus" data-content="{{feedback}}"></div>
+      <div id="math" class="default {{cls}}" role="button" data-placement="top" data-toggle="popover" data-trigger="focus" data-content="{{feedback}}"></div>
       {% else %}
-      <div id="math" class="default" ></div>
+      <div id="math" class="default {{cls}}" ></div>
       {% endif %}
       {% if keypad|length > 0 %}
       <div class="dropdown-menu dropdown-menu-right keypad">
