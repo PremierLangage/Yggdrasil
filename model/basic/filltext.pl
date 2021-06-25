@@ -19,11 +19,8 @@ def replace(x):
 
 part1 = re.sub(r'\{(.*?)\}', replace , filledtext)
 
-part2 = """
+part2 = "&nbsp;".join(clabels)
 
-{% for clabel in clabels %}{{ clabel }}{% endfor %}
-"""
-
-inputblock = part1 + part2
+inputblock = part1 + "\n" + part2
 ==
 
