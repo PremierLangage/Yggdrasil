@@ -1,9 +1,7 @@
 extends = /model/basic/filltext.pl
 
-title = Génétique
-
-text ==
-Compléter le texte suivante avec les bonnes étiquettes.
+question ==
+Compléter le texte suivant avec les bonnes étiquettes.
 ==
 
 filledtext ==
