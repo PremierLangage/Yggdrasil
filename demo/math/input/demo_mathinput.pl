@@ -12,7 +12,7 @@ Entrer une expression mathématique.
 
 symbol_dict = {'e': E}
 
-evaluator ==
+evaluator2 ==
 from latex2sympy import latex2sympy
 from sympy import srepr, fraction, sympify, E
 from evalsympy import is_rat_simp
@@ -31,7 +31,7 @@ except:
 score = -1
 ==
 
-feedback ==
+feedback2 ==
 <ul>
     <li> Code LaTeX : {{ codelatex }} </li>
     <li> Objet Sympy : {{ str_ans }} </li>
