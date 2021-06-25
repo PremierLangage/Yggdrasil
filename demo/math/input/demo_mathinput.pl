@@ -31,7 +31,7 @@ except:
 score = -1
 ==
 
-keypad = ["sqrt", "infty"]
+keypad = ["sqrt", "cup", "infty"]
 
 feedback2 ==
 <ul>
