@@ -137,6 +137,10 @@ background-color: #F5F5F5;
   min-width: 5em; 
   font-size:14pt;
   padding: 0.2em;
+}
+
+
+.right-border {
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
 }
