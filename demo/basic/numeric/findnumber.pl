@@ -1,10 +1,9 @@
 extends = /model/basic/numeric.pl
 
 before ==
-from random import randint
-a = randint(10, 50)
-b = randint(10, 50)
-sol = a + b
+k = randint(3, 6)
+a = randint(25, 75)
+b = a + randint(6, 10)
 ==
 
 question ==
@@ -12,7 +11,7 @@ Donner un entier multiple de {{k}}, compris entre {{ a }} et {{ b }} (inclus).
 ==
 
 
-before ==
+evaluator ==
 ans = input.value
 if ans % k != 0:
     score = 0
