@@ -6,7 +6,9 @@ question ==
 Compléter le texte suivant avec les étiquettes.
 ==
 
-before ==
+before_scripts = ["importfunc", "before", "process", "process2"]
+
+process2 ==
 import re
 
 sol = re.findall(r'\{(.*?)\}', filledtext)
