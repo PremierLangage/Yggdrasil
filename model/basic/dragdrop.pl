@@ -9,7 +9,7 @@ title =
 labels = []
 
 before_scripts = ["importfunc", "before", "process"]
-jinja_keys = ["inputblock"]
+jinja_keys = []
 
 importfunc ==
 from random import randint, choice, choices, sample, shuffle
