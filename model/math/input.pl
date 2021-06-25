@@ -141,7 +141,7 @@ background-color: #F5F5F5;
     border: 1px solid rgba(0,0,0,.15);
 }
 
-.input-group div:not(:last-child) {
+.input-group div {
   border-right: none;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
