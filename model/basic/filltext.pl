@@ -1,6 +1,6 @@
 extends = /model/basic/dragdrop.pl
 
-shuffle % true
+shuffle = True
 
 question ==
 Compléter le texte suivant avec les étiquettes.
