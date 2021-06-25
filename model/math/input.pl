@@ -142,7 +142,9 @@ background-color: #F5F5F5;
 }
 
 .input-group div:not(:last-child) {
-  border-right: none; /* Prevent double borders */
+  border-right: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 </style>
