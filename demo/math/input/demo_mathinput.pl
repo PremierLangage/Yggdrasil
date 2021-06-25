@@ -31,6 +31,8 @@ except:
 score = -1
 ==
 
+keypad = ['sqrt"]
+
 feedback2 ==
 <ul>
     <li> Code LaTeX : {{ codelatex }} </li>
