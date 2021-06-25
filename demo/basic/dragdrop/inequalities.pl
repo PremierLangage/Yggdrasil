@@ -9,7 +9,7 @@ for i in range(4):
     if a < b:
         sol.append("\>")
     else:
-        sol.append("$! > !$")
+        sol.append("\<")
 ==
 
 question ==
