@@ -3,7 +3,7 @@ extends = /model/basic/temp.pl
 
 jinja_keys % ["question", "text", "inputblock", "solution", "prefix"]
 
-input_prefix = Réponse :
+prefix = Réponse :
 
 
 before ==
