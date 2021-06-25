@@ -15,6 +15,8 @@ importfunc ==
 from random import randint, choice, choices, sample, shuffle
 ==
 
+inputblock = 
+
 process ==
 from customdragdrop import CustomDragDrop
 cplabels, cpdrops = [], []
