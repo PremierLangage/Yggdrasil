@@ -141,6 +141,10 @@ background-color: #F5F5F5;
     border: 1px solid rgba(0,0,0,.15);
 }
 
+.input-group not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
 </style>
 ==
 
