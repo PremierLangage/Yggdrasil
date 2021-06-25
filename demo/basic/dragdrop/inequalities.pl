@@ -18,9 +18,3 @@ Comparer les nombres suivants en utilisant le symbole adapté ({{ clabels[0] }} 
 * {{ numbers[i][0] }} {{ cdrops[i] }} {{ numbers[i][1] }}
 {% endfor %}
 ==
-
-inputblock ==
-{% for i in range(nbdrops) %}
-* {{ numbers[i][0] }} {{ cdrops[i] }} {{ numbers[i][1] }}
-{% endfor %}
-==
