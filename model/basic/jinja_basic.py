@@ -9,5 +9,5 @@ def component(l):
         cid = l.cid
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
-Env = Environment(loader=BaseLoader(), autoescape=False)
+Env = Environment(loader=BaseLoader(), autoescape=True)
 Env.filters["component"] = component
