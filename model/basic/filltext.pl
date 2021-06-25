@@ -20,12 +20,7 @@ def replace(x):
 part1 = re.sub(r'\{(.*?)\}', replace , filledtext)
 
 part2 = """
-
-<br><br>
-
-{% for clabel in clabels %}
-{{ clabel }}
-{% endfor %}
+{% for clabel in clabels %}{{ clabel }}{% endfor %}
 """
 
 inputblock = part1 + part2
