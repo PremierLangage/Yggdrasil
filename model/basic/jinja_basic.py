@@ -1,4 +1,4 @@
-from jinja2 import Environment, BaseLoader
+from jinja2 import Environment, BaseLoader, select_autoescape
 
 def component(l):
     if isinstance(l, dict):
