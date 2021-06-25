@@ -1,14 +1,14 @@
 extends = /model/basic/sortlist.pl
 
-title = Premiers ministres
-
 question ==
 Classer ces premiers ministres de la Ve République du plus ancien au plus récent (selon la date d'entrée en fonction).
 ==
 
-nbitems % 5
+nbitems = 5
 
 sortedlist ==
+Michel Rocard
+Édith Cresson
 Édouard Balladur
 Alain Juppé
 Lionel Jospin
@@ -21,5 +21,3 @@ Bernard Cazeneuve
 Édouard Philippe
 Jean Castex
 ==
-
-scoring = KendallTau
