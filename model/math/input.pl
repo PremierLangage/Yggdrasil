@@ -77,14 +77,6 @@ inputblock ==
 style.mathquill ==#|html|
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.css">
  <style>
-        .btn-circle.btn-sm {
-            width: 30px;
-            height: 30px;
-            padding: 6px 0px;
-            border-radius: 15px;
-            font-size: 8px;
-            text-align: center;
-        }
 
         .btn-xs {
             font-size: 8px;
@@ -141,12 +133,9 @@ background-color: #F5F5F5;
     border: 1px solid rgba(0,0,0,.15);
 }
 
-.input-group div {
-  border-right: none;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
+  min-width: 5em; 
+  font-size:14pt;
+  padding: 0.2em;
 </style>
 ==
 
