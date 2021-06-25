@@ -12,9 +12,9 @@
     {{ prefix }}
     <div class="btn-group">
       {% if feedback|length > 1 %}
-      <div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;" role="button" data-placement="top" data-toggle="popover" data-trigger="focus" data-content="{{feedback}}"></div>
+      <div id="math" class="default" role="button" data-placement="top" data-toggle="popover" data-trigger="focus" data-content="{{feedback}}"></div>
       {% else %}
-      <div id="math" style="min-width: 5em; font-size:14pt;padding: 0.2em;" ></div>
+      <div id="math" class="default ></div>
       {% endif %}
       {% if keypad|length > 0 %}
       <div class="dropdown-menu dropdown-menu-right keypad">
@@ -27,7 +27,6 @@
       </button>
       {% endif %}
     </div>
-
   </div>
 </div>
 
