@@ -8,6 +8,8 @@ Compléter le texte suivant avec les étiquettes.
 
 
 process ==
+import re
+
 sol = re.findall(r'\{(.*?)\}', filledtext)
 
 count = -1
@@ -49,8 +51,6 @@ for i in range(nbdrops):
     selector = cpdrops[i].selector
     cid = cpdrops[i].cid
     cdrops.append("<%s cid='%s'></%s>" % (selector, cid, selector))
-
-import re
 
 part2 = "&nbsp;".join(clabels)
 
