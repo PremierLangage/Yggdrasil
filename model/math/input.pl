@@ -133,9 +133,12 @@ background-color: #F5F5F5;
     border: 1px solid rgba(0,0,0,.15);
 }
 
+.default {
   min-width: 5em; 
   font-size:14pt;
   padding: 0.2em;
+}
+
 </style>
 ==
 
