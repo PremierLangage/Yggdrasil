@@ -20,6 +20,7 @@ def replace(x):
 part1 = re.sub(r'\{(.*?)\}', replace , filledtext)
 
 part2 = """
+
 {% for clabel in clabels %}{{ clabel }}{% endfor %}
 """
 
