@@ -54,14 +54,14 @@ macros ==
 <div id="{{ name }}" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
 {% endif %}
 {% endif %}
-{% if input_keypad|length > 0 %}
+{% if keypad|length > 0 %}
 
 <button type="button" class="btn btn-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 <i class="fas fa-keyboard fa-2x"></i>
 </button>
 <div class="dropdown-menu dropdown-menu-right" style="max-width: 100px;">
-{% for item in input_keypad %}
-<button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
+{% for item in keypad %}
+<button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label|e }}</a>
 {% endfor %}
 </div>
 {% endif %}
