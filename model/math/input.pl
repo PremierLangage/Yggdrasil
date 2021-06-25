@@ -139,7 +139,6 @@ background-color: #F5F5F5;
   padding: 0.2em;
 }
 
-
 .right-border {
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
