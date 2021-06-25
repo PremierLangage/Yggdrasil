@@ -51,22 +51,7 @@ for i in range(nbdrops):
     cdrops.append("<%s cid='%s'></%s>" % (selector, cid, selector))
 ==
 
-text =
 
-scheme =$ /Biology/media/550px-Cranial_bones_numbers.svg.png
-
-form ==
-<img src="{{scheme}}" style="max-width: 300px; vertical-align:top; display: inline-block"> 
-<ul>
-{% for i in range(nbdrops) %}
-<li> {{ i + 1 }}. {{ drp[i]|component }} </li>
-{% endfor %}
-</ul>
-
-{% for label in labels %}
-{{ label|component }}
-{% endfor %}
-==
 
 evaluator ==
 n = len(cpdrops)
