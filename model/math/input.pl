@@ -11,7 +11,7 @@ process ==
 predefined_keypad = {
     "emptyset": {"label": "$! \\varnothing !$", "action": "cmd", "value": "\\empty"},
     "cup": {"label": "$! \\cup !$", "action": "cmd", "value": "\\cup"},
-    "sqrt": {"label": "$! \\sqrt !$", "action": "cmd", "value": "\\sqrt"},
+    "sqrt": {"label": "$! \\sqrt{2} !$", "action": "cmd", "value": "\\sqrt"},
     "infty": {"label": "$! \\infty !$", "action": "cmd", "value": "\\infty"},
     "+infty": {"label": "$! +\\infty !$", "action": "write", "value": "+\\infty"},
     "-infty": {"label": "$! -\\infty !$", "action": "write", "value": "-\\infty"}
