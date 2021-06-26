@@ -3,7 +3,7 @@ extends = /model/basic/temp.pl
 
 jinja_keys % ["question", "text", "inputblock", "solution", "prefix"]
 
-keypad = []
+
 
 process ==
 predefined_keypad = {
@@ -14,7 +14,7 @@ predefined_keypad = {
     "+infty": {"label": "$! +\\infty !$", "action": "write", "value": "+\\infty"},
     "-infty": {"label": "$! -\\infty !$", "action": "write", "value": "-\\infty"}
 }
-
+keypad = []
 for i, val in enumerate(keypad):
   if isinstance(val, str):
     keypad[i] = predefined_keypad[val]
