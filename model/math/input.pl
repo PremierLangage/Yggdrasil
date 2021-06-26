@@ -34,7 +34,6 @@ score = 100
 feedback = ""
 ==
 
-keypad = []
 
 input_embed =
 
