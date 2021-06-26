@@ -3,6 +3,7 @@ extends = /model/basic/temp.pl
 
 jinja_keys % ["question", "text", "inputblock", "solution", "prefix"]
 
+keyoad = []
 
 process ==
 predefined_keypad = {
