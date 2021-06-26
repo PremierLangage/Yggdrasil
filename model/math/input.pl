@@ -18,7 +18,6 @@ predefined_keypad = {
 for i, val in enumerate(keypad):
   if isinstance(val, str):
     keypad[i] = predefined_keypad[val]
-
 ==
 
 title =
