@@ -10,13 +10,14 @@ question ==
 Donner un entier multiple de {{k}}, compris entre {{ a }} et {{ b }} (inclus).
 ==
 
-
 evaluator ==
 ans = input.value
 if ans % k != 0:
     score = 0
-elif ans < a or ans >b:
+    feedback = f"Ce nombre n'est pas un multiple de {k}."
+elif ans < a or ans > b:
     score = 0
+    feedback = f"Ce nombre n'est pas compris entre {a} et {b}."
 else:
     score = 100
 ==
