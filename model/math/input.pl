@@ -211,6 +211,5 @@ attic ==
     {% endif %}
 ==
 
-settings.maxattempt % 1
 
 extends = messages_math.pl
