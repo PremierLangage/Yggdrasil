@@ -3,9 +3,6 @@ extends = /model/basic/temp.pl
 
 jinja_keys % ["question", "text", "inputblock", "solution", "prefix"]
 
-before ==
-
-==
 
 process ==
 predefined_keypad = {
@@ -23,7 +20,7 @@ for i, val in enumerate(keypad):
 
 ==
 
-title = Title
+title =
 
 text = 
 
