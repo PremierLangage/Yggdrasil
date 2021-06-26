@@ -4,6 +4,6 @@ question ==
 Entrer une expression mathématique.
 ==
 
-keypad = ["sqrt", "-infty", "+infty"]
+keypad = ["sqrt", "infty"]
 
 
