@@ -4,7 +4,7 @@ extends = /model/basic/input.pl
 
 before ==
 with open('pays_europe.csv', newline='') as f:
-    row = csv_row(f)
+    row = csv_choice(f)
 capitale = row['capitale']
 sol = row['pays']
 ==
