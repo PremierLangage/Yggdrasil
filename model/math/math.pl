@@ -27,10 +27,6 @@ from latex2sympy import latex2sympy
 
 style.svg ==
 <style>
-.fcontainer {
-    display: flex;
-    align-items: center;
-}
 
 .question p {
     font-size: 16px;
