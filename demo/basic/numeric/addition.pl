@@ -15,9 +15,6 @@ Calculer {{ a }} + {{ b }}.
     <div class="col-md-auto">
 Calculer {{ a }} + {{ b }}.
     </div>
-    <div class="col-md-auto">
-      Variable width content
-    </div>
     <div class="col col-lg-2">
       3 of 3
     </div>
