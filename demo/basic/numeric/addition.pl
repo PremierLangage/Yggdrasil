@@ -9,11 +9,15 @@ sol = a + b
 
 question ==
 Calculer {{ a }} + {{ b }}.
-
-
 ==
 
 inputblock ==
+<div class="fcontainer">
+<span> </span> {{ input|component }}
+</div>
+==
+
+inputblock2 ==
 <div class="container">
   <div class="row align-items-center">
     <div class="col-md-auto">
