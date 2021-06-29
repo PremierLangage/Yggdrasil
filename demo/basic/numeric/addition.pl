@@ -12,8 +12,8 @@ Calculer {{ a }} + {{ b }}.
 
 <div class="container">
   <div class="row">
-    <div class="col">
-      1 of 3
+    <div class="col-md-auto">
+Calculer {{ a }} + {{ b }}.
     </div>
     <div class="col-md-auto">
       Variable width content
