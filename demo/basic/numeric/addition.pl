@@ -13,7 +13,7 @@ Calculer {{ a }} + {{ b }}. {{v}}
 
 style.input ==
 <style>
-::ng-deep .mat-form-field-wrapper{
+.mat-form-field-wrapper{
   margin: 0 !important;
   padding: 0;
 }
