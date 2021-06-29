@@ -13,7 +13,7 @@ Calculer {{ a }} + {{ b }}.
 
 inputblock ==
 <div class="fcontainer">
-<span> </span> {{ input|component }}
+<span> Réponse : </span> {{ input|component }}
 </div>
 ==
 
