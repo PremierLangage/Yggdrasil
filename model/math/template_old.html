@@ -1,0 +1,61 @@
+<div class="question">
+{{ question|safe }}
+</div>
+{% if score >= 0 and score < 100 %}
+<div class="icon-times-after mq-disapbled">
+{% elif score == 100 %}
+<div class="icon-check-after mq-disapbled">
+{% else %}
+<div>
+{% endif %}
+  <div id="mathinput" style="display: block; margin-top: 1em;">
+    {{ prefix }}
+    <div class="btn-group">
+      {% if keypad|length > 0 %}
+      {% set cls = "right-border" %}
+      {% endif %}
+      {% if feedback|length > 1 %}
+      <div id="math" class="default {{cls}}" role="button" data-placement="top" data-toggle="popover" data-trigger="focus" data-content="{{feedback}}"></div>
+      {% else %}
+      <div id="math" class="default {{cls}}" ></div>
+      {% endif %}
+      {% if keypad|length > 0 %}
+      <div class="dropdown-menu dropdown-menu-right keypad">
+      {% for item in keypad %}
+      <button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}(String.raw`{{ item.value }}`);mathField.focus()">{{ item.label|safe }}</button>
+      {% endfor %}
+      </div>
+      <button id="btn-keypad" type="button" class="btn btn-xs btn-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fas fa-keyboard fa-2x"></i>
+      </button>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<input type="text" id="form_math" hidden=true>
+{% if score < 100 %}
+<hr class="border">
+<div class="feedback">
+<i class="far fa-hand-point-right"></i> {{ feedback|safe }}
+</div>
+<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
+Voir la solution.
+</a>
+<div class="collapse" id="collapseSolution">
+{{ solution }}
+</div>
+{% endif %}
+<hr class="border">
+{% if score >=0 %}
+<button class="btn btn-primary" onclick="document.location.reload(true);"> Nouveau </button>
+{% else %}
+<button class="btn btn-primary action-submit">Valider</button>
+{% endif %}
+{% if score == 100 %}
+<button type="button" style="float: right;" class="btn success-state">Score : {{score}} </button>
+{% elif score >= 0 and score < 100 %}
+<button type="button" style="float: right;" class="btn neutral-state">Score : {{score}} </button>
+{% else %}
+<button type="button" style="float: right;" class="btn neutral-state">Score : - </button>
+{% endif %}
