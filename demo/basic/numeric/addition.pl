@@ -18,7 +18,7 @@ style.input ==
 .mat-form-field-wrapper{
   margin: 0 !important;
   padding-bottom: 0 !important;
-  width: 20em !important;
+  min-width: 20em !important;
 }
 
 .mat-form-field-appearance-outline .mat-form-field-infix {
