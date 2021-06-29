@@ -20,7 +20,7 @@ style.input ==
   padding-bottom: 0 !important;
 }
 
-.mat-form-field-infix {
+.mat-form-field-appearance-outline .mat-form-field-infix {
     padding-top: 0.8em;
     padding-bottom: 0.6em;
 }
