@@ -19,5 +19,10 @@ style.input ==
   margin: 0 !important;
   padding-bottom: 0 !important;
 }
+
+.mat-form-field-infix {
+    padding-top: 0.8em;
+    padding-bottom: 0.6em;
+}
 </style>
 ==
