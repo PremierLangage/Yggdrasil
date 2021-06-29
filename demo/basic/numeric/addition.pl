@@ -12,7 +12,7 @@ Calculer {{ a }} + {{ b }}. {{v}}
 ==
 
 inputblock ==
-Réponse :  <input type="text" class="form-control" pattern="[0-9]*">
+Réponse :  <input type="text" class="form-control" pattern="[A-Za-z]{3}">
 ==
 
 style.input ==
