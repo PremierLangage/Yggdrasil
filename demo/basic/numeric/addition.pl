@@ -11,6 +11,10 @@ question ==
 Calculer {{ a }} + {{ b }}. {{v}}
 ==
 
+inputblock ==
+  <input type="text" class="form-control" pattern="[0-9]*">
+==
+
 style.input ==
 <style>
 .mat-form-field-wrapper{
