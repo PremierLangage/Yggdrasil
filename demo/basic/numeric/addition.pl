@@ -15,9 +15,7 @@ style.input ==
 <style>
 .mat-form-field-wrapper{
   margin: 0 !important;
-  padding: 0;
+  padding-bottom: 0 !important;
 }
 </style>
-
-
 ==
