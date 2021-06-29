@@ -5,7 +5,9 @@ input =: Input
 input.type = number
 
 inputblock ==
-{{ input|component }}
+<div class="fcontainer">
+<span> </span> {{ input|component }}
+</div>
 ==
 
 
