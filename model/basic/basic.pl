@@ -95,12 +95,12 @@ style.basic == #|css|
 
 .question p {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .question {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .img {
