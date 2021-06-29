@@ -8,7 +8,7 @@ sol = a + b
 ==
 
 inputblock ==
-<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+<input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 ==
 
 question ==
