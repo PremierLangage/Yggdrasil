@@ -10,6 +10,5 @@ sol = row['pays']
 ==
 
 question ==
-{{row}}
 Quel pays a pour capitale {{capitale}} ?
 ==
