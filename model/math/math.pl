@@ -32,12 +32,6 @@ style.svg ==
     font-weight: 500;
 }
 
-
-.feedback {
-    border-left: 6px solid rgb(128, 0, 128);
-    margin-left: 5%;
-}
-
 .question {
     font-size: 16px;
     font-weight: 500;
