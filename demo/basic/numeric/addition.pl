@@ -17,7 +17,7 @@ inputblock ==
 <div class="container">
   <div class="row">
     <div class="col-md-auto">
-Calculer {{ a }} + {{ b }}.
+Réponse :
     </div>
     <div class="col">
 {{ input|component }}
