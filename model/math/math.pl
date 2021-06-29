@@ -27,6 +27,18 @@ from latex2sympy import latex2sympy
 
 style.svg ==
 <style>
+.question p {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.question {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
 .img-container {
     width: 60%;
     margin: auto;
