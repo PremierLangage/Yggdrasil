@@ -4,6 +4,13 @@
 <div style="display: block; margin-top: 1em;">
 {{ inputblock|markdown|safe }}
 </div>
+{% if feedback|length > 1 %}
+<div class="card">
+  <div class="card-body">
+    {{ feedback }}
+  </div>
+</div>
+{% endif %}
 {% if score >= 0 and score < 100 and solution|length > 0 %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
   Solution
