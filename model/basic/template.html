@@ -4,20 +4,28 @@
 <div style="display: block; margin-top: 1em;">
 {{ inputblock|markdown|safe }}
 </div>
-{% if feedback|length > 1 %}
-<div class="card">
-  <div class="card-body">
-    {{ feedback }}
-  </div>
+{% if score == -1 %}
+<hr class="border">
+<div class="feedback">
+<i class="fas fa-exclamation-triangle"></i> {{ feedback|safe }}
+ Entrer à nouveau la réponse.
 </div>
 {% endif %}
-{% if score >= 0 and score < 100 and solution|length > 0 %}
+{% if score >= 0 and score < 100 and (feedback|length > 1 or solution|length > 1)%}
+<hr class="border">
+{% if feedback|length > 1 %}
+<div class="feedback">
+<i class="far fa-hand-point-right"></i> {{ feedback|safe }}
+</div>
+{% endif %}
+{% if solution|length > 1 %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
-  Solution
+Voir la solution.
 </a>
 <div class="collapse" id="collapseSolution">
 {{ solution }}
 </div>
+{% endif %}
 {% endif %}
 <hr class="border">
 {% if score >=0 %}
