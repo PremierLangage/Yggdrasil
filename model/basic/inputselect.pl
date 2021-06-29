@@ -2,20 +2,6 @@ extends = /model/basic/basic.pl
 
 input =: Input
 
-settings.feedback = rightwrong
-
-before_scripts % ["importfunc", "before", "process"]
-
-process ==
-from random import randint
-
-if isinstance(items, str):
-    _before_scripts % ["importfunc", "before", "process"]
-
-importfunc ==
-from random import randint, choice, choices, sample, shuffle
-==
-
 process ==
 if isinstance(items, str):
     _items_ = items.splitlines()
@@ -34,6 +20,8 @@ inputblock ==
 evaluator ==
 if input.value == sol:
     score = 100
+elif input.value not in input.autocomplete:
+    score = -1
 else:
     score = 0
 ==
