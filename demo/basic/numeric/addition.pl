@@ -10,3 +10,14 @@ sol = a + b
 question ==
 Calculer {{ a }} + {{ b }}. {{v}}
 ==
+
+style.input ==
+<style>
+:host ::ng-deep .mat-form-field-wrapper{
+  margin: 0 !important;
+  padding: 0;
+}
+</style>
+
+
+==
