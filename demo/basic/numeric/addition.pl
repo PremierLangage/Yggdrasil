@@ -10,18 +10,21 @@ sol = a + b
 question ==
 Calculer {{ a }} + {{ b }}.
 
+
+==
+
+inputblock ==
 <div class="container">
   <div class="row">
     <div class="col-md-auto">
 Calculer {{ a }} + {{ b }}.
     </div>
     <div class="col col-lg-2">
-      3 of 3
+{{ input|component }}
     </div>
   </div>
 </div>
 ==
-
 
 
 style.input ==
