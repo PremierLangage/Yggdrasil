@@ -19,7 +19,7 @@ inputblock ==
     <div class="col-md-auto">
 Calculer {{ a }} + {{ b }}.
     </div>
-    <div class="col col-lg-2">
+    <div class="col">
 {{ input|component }}
     </div>
   </div>
