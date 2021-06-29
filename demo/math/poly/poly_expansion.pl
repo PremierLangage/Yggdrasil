@@ -8,7 +8,7 @@ expr = P * Q
 sol = expr.expand()
 ==
 
-questiont ==
+question ==
 Développer l'expression suivante :
 
 $$ {{ expr|latex }}. $$
