@@ -1,7 +1,5 @@
 extends = /model/math/expr.pl
 
-title = Calculer la dérivée d'une fonction
-
 before ==
 from sympy import diff
 var('x')
