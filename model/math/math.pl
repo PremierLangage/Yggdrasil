@@ -35,7 +35,6 @@ style.svg ==
 
 .feedback {
     border-left: 6px solid rgb(128, 0, 128);
-    height: 500px;
     margin-left: 5%;
 }
 
