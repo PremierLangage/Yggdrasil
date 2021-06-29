@@ -64,7 +64,7 @@ style.basic == #|css|
     font-weight: 900;
 }
 
-.icon-audio::before {
+.btn-audio::before {
     font-family: "Font Awesome 5 Free";
     color: white;
     content: "\f028";
@@ -93,8 +93,14 @@ style.basic == #|css|
     background-color: #cce5ff;
 }
 
-.exercise__form p {
+.question p {
     font-size: 16px;
+    font-weight: bold;
+}
+
+.question {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .img {
