@@ -34,7 +34,14 @@
 </div>
 
 <input type="text" id="form_math" hidden=true>
-{% if score < 100 %}
+{% if score >= 0 and score < 100 %}
+<hr class="border">
+<div class="feedback">
+<i class="fas fa-exclamation-triangle"></i> {{ feedback|safe }}
+</div>
+Entrer à nouveau la réponse.
+{% endif %}
+{% if score >= 0 and score < 100 %}
 <hr class="border">
 <div class="feedback">
 <i class="far fa-hand-point-right"></i> {{ feedback|safe }}
