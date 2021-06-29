@@ -21,8 +21,8 @@ style.input ==
 }
 
 .mat-form-field-appearance-outline .mat-form-field-infix {
-    padding-top: 0.8em;
-    padding-bottom: 0.6em;
+    padding-top: 0.8em !important;
+    padding-bottom: 0.6em !important;
 }
 </style>
 ==
