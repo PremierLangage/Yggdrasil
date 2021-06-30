@@ -16,7 +16,7 @@ inputblock ==
 <div class="container">
   <div class="row align-items-center">
     <div class="col-md-auto" style="padding:0;">
-Réponse :
+Réponse : 
     </div>
     <div class="col" style="padding:0;">
 {{ input|component }}
