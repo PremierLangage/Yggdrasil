@@ -103,7 +103,7 @@ style.basic == #|css|
 }
 
 hr.divide {
-  border: 0.5px solid grey;
+  border: 0.5px solid gray;
 }
 
 .img {
