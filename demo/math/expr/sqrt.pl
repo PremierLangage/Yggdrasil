@@ -10,7 +10,7 @@ question ==
 Ecrire l'expression suivante sous la forme  $% \sqrt{a} %$, où $% a %$ est un entier.
 ==
 
-prefix2 ==
+prefix ==
 $! {{ p }} \sqrt{ {{ q }} } = !$
 ==
 
