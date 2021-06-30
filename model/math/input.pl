@@ -174,14 +174,6 @@ mathField.latex(preval[i]);
 {% endif %}
 arrayMathField.push(mathField);
 }
-
-$(function () {
-  $('[data-toggle="popover"]').popover("show")
-})
-
-$('.popover-dismiss').popover({
-  trigger: 'focus'
-})
 </script>
 ==
 
