@@ -11,7 +11,7 @@ Ecrire l'expression suivante sous la forme  $% \sqrt{a} %$, où $% a %$ est un e
 ==
 
 prefix ==
-$! {{ p }} \sqrt{ {{ q }} } \ = !$
+$! {{ p }} \sqrt{ {{ q }} } = !$
 ==
 
 embed ==
