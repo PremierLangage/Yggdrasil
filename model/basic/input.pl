@@ -9,6 +9,10 @@ tol % 0
 
 input =: Input
 
+prefix ==
+Réponse :
+==
+
 inputblock ==
 <div class="container">
   <div class="row align-items-center">
