@@ -1,6 +1,5 @@
 extends = /model/basic/basic.pl
 
-
 input =: Input
 input.type = number
 
