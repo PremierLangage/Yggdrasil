@@ -1,7 +1,7 @@
 extends = /model/math/expr.pl
 
 before ==
-p=randint(2,5)
+p=randint(2, 5)
 q=choice([2,3,4,5,7,9])
 sol=p**2*q
 ==
@@ -11,7 +11,7 @@ Ecrire l'expression suivante sous la forme  $% \sqrt{a} %$, où $% a %$ est un e
 ==
 
 prefix ==
-$! {{expr}} = !$
+$! {{ p }} \sqrt{ {{ q }} } \ = !$
 ==
 
 embed ==
