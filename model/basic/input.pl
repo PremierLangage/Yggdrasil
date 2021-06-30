@@ -15,7 +15,7 @@ inputblock ==
     <div class="col-auto" style="padding:0;">
 {{ prefix }} 
     </div>
-    <div class="col-xs" style="padding-left:0.5em; padding-right:0;">
+    <div class="col-sm" style="padding-left:0.5em; padding-right:0;">
 {{ input|component }}
     </div>
   </div>
