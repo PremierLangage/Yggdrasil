@@ -6,6 +6,9 @@ jinja_keys % ["question", "text", "inputblock", "solution", "prefix"]
 keypad = []
 
 process ==
+
+embed = embed.replace("#", r"\MathQuillMathField{}")
+
 predefined_keypad = {
     "emptyset": {"label": "$! \\varnothing !$", "action": "cmd", "value": "\\empty"},
     "cup": {"label": "$! \\cup !$", "action": "cmd", "value": "\\cup"},
