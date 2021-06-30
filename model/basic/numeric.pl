@@ -27,7 +27,6 @@ else:
     score = 0
 ==
 
-
 solution ==
 La solution est {{ sol }}.
 ==
