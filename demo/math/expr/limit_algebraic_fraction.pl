@@ -14,5 +14,8 @@ question ==
 Déterminer $! \displaystyle {{ lim|latex }}!$.
 ==
 
+prefix ==
+$! \displaystyle {{ lim|latex }}!$
+==
 
 keypad = ["+infty", "-infty"]
