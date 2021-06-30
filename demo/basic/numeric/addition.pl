@@ -11,17 +11,11 @@ question ==
 Calculer {{ a }} + {{ b }}.
 ==
 
-inputblock ==
-<div class="fcontainer">
-<div> Réponse : </div>
-<div style="display:block;"> {{ input|component }} </div>
-</div>
-==
 
-inputblock2 ==
+inputblock ==
 <div class="container">
   <div class="row align-items-center">
-    <div class="col-md-auto">
+    <div class="col-md-auto" style="padding:0;">
 Réponse :
     </div>
     <div class="col">
@@ -29,19 +23,4 @@ Réponse :
     </div>
   </div>
 </div>
-==
-
-
-style.input ==
-<style>
-.mat-form-field-wrapper{
-  margin: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.mat-form-field-appearance-outline .mat-form-field-infix {
-    padding-top: 0.8em !important;
-    padding-bottom: 0.6em !important;
-}
-</style>
 ==
