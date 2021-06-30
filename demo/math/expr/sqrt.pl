@@ -1,9 +1,9 @@
 extends = /model/math/expr.pl
 
 before ==
-p=randint(2, 5)
-q=choice([2,3,4,5,7,9])
-sol=p**2*q
+p = randint(2, 5)
+q = choice([2, 3, 5, 7])
+sol = p**2*q
 ==
 
 question ==
