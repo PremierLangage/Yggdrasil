@@ -43,7 +43,7 @@ title=bash code template (titre à surcharger!)
 text==
 ==
 
-form==
+form==#|markdown|
 {{ editor|component }}
 
 <input id="form_user_hack" name="form_user_hack" type="hidden" value="{{ user }}">
