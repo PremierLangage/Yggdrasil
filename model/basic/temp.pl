@@ -72,6 +72,10 @@ function onReadyPL(nodes) {
     actions.find('br').remove();
     body.children('br').remove();
 
+        {% if embed|length > 0 %}
+    mathField.reflow();
+    {% endif %}
+
 }
 </script>
 ==
