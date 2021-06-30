@@ -11,7 +11,7 @@ sol = lim.doit()
 ==
 
 question ==
-Déterminer $! \displaystyle {{ lim|latex }}!$.
+Déterminer la limite suivante.
 ==
 
 prefix ==
