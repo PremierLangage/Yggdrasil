@@ -8,7 +8,7 @@ sol = Intersection(A, B)
 ==
 
 question ==
-On considère les ensembles $! A= {{ A|latex }} !$ et $! B={{B|latex}} !$. 
+On considère les ensembles $! A= {{ A|latex }} !$ et $! B={{ B|latex }} !$. 
 Déterminer l'ensemble suivant.
 ==
 
