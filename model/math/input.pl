@@ -195,6 +195,10 @@ function onBeforeSubmitPL() {
   });
   return true;
 }
+function onPLReady() {
+    mathField.reflow();
+  return true;
+}
 
 </script>
 ==
