@@ -2,8 +2,8 @@ extends = /model/math/set.pl
 
 before ==
 from sympy import Intersection
-A = FiniteSet(*sample(range(10), randint(3, 5)))
-B = FiniteSet(*sample(range(10), randint(3, 5)))
+A = FiniteSet(*sampleint(1, 9, randint(3, 5)))
+B = FiniteSet(*sampleint(1, 9, randint(3, 5)))
 sol = Intersection(A, B)
 ==
 
