@@ -18,7 +18,7 @@ inputblock ==
     <div class="col-md-auto" style="padding:0;">
 Réponse :
     </div>
-    <div class="col">
+    <div class="col" style="padding:0;">
 {{ input|component }}
     </div>
   </div>
