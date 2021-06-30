@@ -15,6 +15,6 @@ $$ x = {{ expr|latex }}.$$
 Exprimer $! y !$ en fonction $! x !$.
 ==
 
-input_prefix ==
+prefix ==
 $! y = !$
 ==
