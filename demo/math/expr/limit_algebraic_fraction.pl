@@ -1,7 +1,5 @@
 extends = /model/math/expr.pl
 
-title = Déterminer la limite d'une fraction rationnelle
-
 before ==
 from randsympy import randint_poly
 from sympy import Limit
