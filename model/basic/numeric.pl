@@ -4,6 +4,10 @@ extends = /model/basic/basic.pl
 input =: Input
 input.type = number
 
+prefix ==
+Réponse :
+==
+
 inputblock ==
 <div class="container">
   <div class="row align-items-center">
