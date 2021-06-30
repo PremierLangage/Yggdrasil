@@ -18,6 +18,8 @@ predefined_keypad = {
 for i, val in enumerate(keypad):
   if isinstance(val, str):
     keypad[i] = predefined_keypad[val]
+
+embed = subs
 ==
 
 title =
@@ -34,15 +36,15 @@ feedback = ""
 ==
 
 
-input_embed =
+embed =
 
 prefix = Réponse :
 
 macros ==
 {% macro mathinput(name) -%}
 {{ input_prefix }}
-{% if input_embed|length > 1 %}
-<div id="{{ name }}"> {{ input_embed }}</div>
+{% if embed|length > 1 %}
+<div id="{{ name }}"> {{ embed }}</div>
 {% else %}
 {% if score == -1 %}
 <div id="{{ name }}" style="min-width: 5em; font-size:14pt;padding: 0.2em;" data-toggle="popover" data-content="Some content inside the popover"></div>
@@ -165,7 +167,7 @@ preval.push(val);
 {% endfor %}
 
 for (let i = 0; i < names.length; i++) {
-{% if input_embed|length > 0 %}
+{% if embed|length > 0 %}
 var mathField = MQ.StaticMath(document.getElementById(names[i]));
 mathField.innerFields[0].latex(preval[i]);
 {% else %}
@@ -205,7 +207,7 @@ function onBeforeSubmitPL() {
 ==
 
 attic ==
-    {% if input_embed|length > 0 %}
+    {% if embed|length > 0 %}
     mathField.reflow();
     {% endif %}
 ==
