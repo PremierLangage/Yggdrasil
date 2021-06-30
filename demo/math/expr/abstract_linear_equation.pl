@@ -6,8 +6,8 @@ before ==
 x, y = symbols('x y')
 a = randint(-5, 5, [0])
 b = randint(-5, 5, [0])
-expr = a*y+b
-sol = (x-b)/a
+expr = a*y + b
+sol = (x - b)/a
 ==
 
 question ==
@@ -17,4 +17,6 @@ $$ x = {{ expr|latex }}.$$
 Exprimer $! y !$ en fonction $! x !$.
 ==
 
-input_prefix = $! y = !$
+input_prefix ==
+$! y = !$
+==
