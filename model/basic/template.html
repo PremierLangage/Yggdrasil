@@ -12,7 +12,7 @@
 </div>
 {% endif %}
 {% if score >= 0 and score < 100 and (feedback|length > 1 or solution|length > 1)%}
-<hr class="border">
+<hr class="divide">
 {% if feedback|length > 1 %}
 <div class="feedback">
 <i class="far fa-hand-point-right"></i> {{ feedback|safe }}
