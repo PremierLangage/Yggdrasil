@@ -13,7 +13,7 @@ Déterminer l'ensemble suivant.
 ==
 
 prefix ==
-$! A \cap B !$.
+$! A \cap B =!$
 ==
 
 keypad = ["emptyset"]
