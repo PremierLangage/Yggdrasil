@@ -108,6 +108,16 @@ hr.divide {
   border: 0;
 }
 
+.mat-form-field-wrapper{
+  margin: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-infix {
+    padding-top: 0.8em !important;
+    padding-bottom: 0.6em !important;
+}
+
 .img {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
