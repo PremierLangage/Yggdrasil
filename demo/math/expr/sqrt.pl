@@ -17,5 +17,3 @@ $! {{ p }} \sqrt{ {{ q }} } = !$
 embed ==
 \sqrt{#}
 ==
-
-input_embed = \sqrt{\MathQuillMathField{}}
