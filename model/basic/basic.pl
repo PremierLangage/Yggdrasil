@@ -102,6 +102,10 @@ style.basic == #|css|
     font-weight: 500;
 }
 
+hr.divide {
+  border: 0.5px solid grey;
+}
+
 .img {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
