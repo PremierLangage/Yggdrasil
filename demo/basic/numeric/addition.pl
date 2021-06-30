@@ -15,7 +15,7 @@ Calculer {{ a }} + {{ b }}.
 inputblock ==
 <div class="container">
   <div class="row align-items-center">
-    <div class="col" style="padding:0;">
+    <div class="col-auto" style="padding:0;">
 Réponse : 
     </div>
     <div class="col" style="padding-left:0.5em; padding-right:0;">
