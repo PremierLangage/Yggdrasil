@@ -21,6 +21,9 @@ inputblock ==
 </div>
 ==
 
+solution ==
+La solution est {{ sol }}.
+==
 
 style.input ==
 <style>
