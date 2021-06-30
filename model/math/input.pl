@@ -196,7 +196,7 @@ function onBeforeSubmitPL() {
   return true;
 }
 function onPLReady() {
-    mathField.reflow();
+  mathField.reflow();
   return true;
 }
 
@@ -204,9 +204,7 @@ function onPLReady() {
 ==
 
 attic ==
-    {% if embed|length > 0 %}
-    mathField.reflow();
-    {% endif %}
+
 ==
 
 
