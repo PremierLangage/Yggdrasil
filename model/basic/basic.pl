@@ -24,7 +24,6 @@ text =
 
 tplpage =@ template.html
 
-settings.maxattempt % 1
 
 style.basic == #|css|
 <style>
