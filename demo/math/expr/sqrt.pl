@@ -15,5 +15,7 @@ $! {{expr}} = !$
 ==
 
 embed ==
-\sqrt{#}
+\sqrt{\MathQuillMathField{}}
 ==
+
+input_embed = \sqrt{\MathQuillMathField{}}
