@@ -9,7 +9,11 @@ sol = Intersection(A, B)
 
 question ==
 On considère les ensembles $! A= {{ A|latex }} !$ et $! B={{B|latex}} !$. 
-Déterminer $! A \cap B !$.
+Déterminer l'ensemble suivant.
+==
+
+prefix ==
+$! A \cap B !$.
 ==
 
 keypad = ["emptyset"]
