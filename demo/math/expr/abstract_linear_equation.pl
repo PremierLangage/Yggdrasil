@@ -1,7 +1,5 @@
 extends = /model/math/expr.pl
 
-title = Exprimer une inconnue en fonction d'une autre
-
 before ==
 x, y = symbols('x y')
 a = randint(-5, 5, [0])
