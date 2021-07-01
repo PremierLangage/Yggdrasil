@@ -5,5 +5,3 @@ Entrer une expression mathématique.
 ==
 
 keypad = ["sqrt", "infty", "emptyset"]
-
-
