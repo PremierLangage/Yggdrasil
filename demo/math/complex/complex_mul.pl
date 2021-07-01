@@ -14,5 +14,5 @@ Calculer $! z_1 \times z_2 !$ (sous forme algébrique).
 complex_form = cartesian
 
 solution ==
-$! z_1 \times z_2  = ({{ z1|latex }} ) \times_( {{ z2|latex }} ) = {{ sol }}!$
+$! z_1 \times z_2  = ( {{ z1|latex }} ) \times ( {{ z2|latex }} ) = {{ sol|latex }} !$
 ==
