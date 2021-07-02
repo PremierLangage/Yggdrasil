@@ -32,7 +32,8 @@ else:
 ==
 
 evalprocess ==
-
+if score = 100:
+    input.suffix = r'<i class="fas fa-check" style="color: #006400"></i>'
 input.disabled = True
 ==
 
