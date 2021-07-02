@@ -9,7 +9,7 @@ extends = /model/basic/temp.pl
 @ /model/basic/json_basic.py [json_encoder.py]
 
 before_scripts % ["importfunc", "before", "process"]
-submit_scripts % ["getans", "evaluator", "evalprocess"]
+eval_scripts % ["getans", "evaluator", "evalprocess"]
 
 importfunc == #|python|
 from random import choice, choices, sample, shuffle
