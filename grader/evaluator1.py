@@ -17,8 +17,9 @@ if __name__ == "__main__":
         dic['answers'] = json.load(f)
 
     aux_component1(dic)
-    
-    code = dic['evaluator']
+
+    before_scripts = dic.get('submit_scripts', ['evaluator'])
+    code = "\n".join([dic.get(name, "") for name in submit_scripts])
 
     exec(code, dic)
     namespace = {}
