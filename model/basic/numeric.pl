@@ -20,11 +20,19 @@ inputblock ==
 </div>
 ==
 
+getans ==
+ans = input.value
+==
+
 evaluator ==
-if input.value == sol:
+if ans == sol:
     score = 100
 else:
     score = 0
+==
+
+evalprocess ==
+input.disabled = True
 ==
 
 solution ==
