@@ -18,8 +18,8 @@ if __name__ == "__main__":
 
     aux_component1(dic)
 
-    submit_scripts = dic.get('submit_scripts', ['evaluator'])
-    code = "\n".join([dic.get(name, "") for name in submit_scripts])
+    eval_scripts = dic.get('eval_scripts', ['evaluator'])
+    code = "\n".join([dic.get(name, "") for name in eval_scripts])
 
     exec(code, dic)
     namespace = {}
