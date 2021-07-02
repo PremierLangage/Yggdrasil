@@ -35,7 +35,7 @@ evalprocess ==
 if score == 100:
     input.suffix = r'<i class="fas fa-check" style="color: green"></i>'
 elif score >= 0:
-    input.suffix = r'<i class="fas fa-times" style="color: crimson"></i><i class="fas fa-times" style="color: red"></i><i class="fas fa-times" style="color: firebrick"></i>'
+    input.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
 input.disabled = True
 ==
 
