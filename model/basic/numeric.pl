@@ -32,7 +32,7 @@ else:
 ==
 
 evalprocess ==
-# input.disabled = True
+input.disabled = True
 ==
 
 solution ==
