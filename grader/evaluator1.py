@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     aux_component1(dic)
 
-    before_scripts = dic.get('submit_scripts', ['evaluator'])
+    submit_scripts = dic.get('submit_scripts', ['evaluator'])
     code = "\n".join([dic.get(name, "") for name in submit_scripts])
 
     exec(code, dic)
