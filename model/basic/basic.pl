@@ -117,6 +117,7 @@ hr.divide {
 }
 
 .mat-form-field-suffix {
+    top: 0 !important;
     padding-top: 0.8em !important;
     padding-bottom: 0.6em !important;
 }
