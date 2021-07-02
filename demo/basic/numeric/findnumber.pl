@@ -11,7 +11,6 @@ Donner un entier multiple de {{k}}, compris entre {{ a }} et {{ b }} (inclus).
 ==
 
 evaluator ==
-ans = input.value
 if ans % k != 0:
     score = 0
     feedback = f"Ce nombre n'est pas un multiple de {k}."
