@@ -32,10 +32,7 @@ else:
 ==
 
 evalprocess ==
-if score = 100:
-    input.suffix = r'<i class="fas fa-check" style="color: #006400"></i>'
-elif score = 0:
-    input.suffix = r'<i class="fas fa-times" style="color: #8B0000"></i>'
+
 input.disabled = True
 ==
 
