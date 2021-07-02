@@ -60,12 +60,21 @@ elif isinstance(sol, lst):
 
 solution = _sol_[0]
 
-if any([samestrings(input.value, item, diffmeasure=diffmeasure, tol=tol) for item in _sol_]):
+if any([samestrings(ans, item, diffmeasure=diffmeasure, tol=tol) for item in _sol_]):
     score = 100
-    input.suffix = r'<i class="fas fa-check" style="color: #006400"></i>'
 else:
     score = 0
-    input.suffix = r'<i class="fas fa-times" style="color: #8B0000"></i>'
+==
+
+getans ==
+ans = input.value
+==
+
+evalprocess ==
+if score == 100:
+    input.suffix = r'<i class="fas fa-check" style="color: green"></i>'
+elif score >= 0:
+    input.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
 input.disabled = True
 ==
 
