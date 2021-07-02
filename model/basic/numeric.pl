@@ -29,6 +29,7 @@ if ans == sol:
     score = 100
 else:
     score = 0
+input.disabled = True
 ==
 
 evalprocess ==
