@@ -1,7 +1,7 @@
 extends = /model/basic/basic.pl
 @ /utils/pltext.py
 
-casesensitive % false
+casesens = False
 
 diffmeasure = EditDist
 
@@ -44,8 +44,8 @@ style.input ==
 evaluator ==
 from pltext import edit_distance
 
-def samestrings(str1, str2, diffmeasure="EditDist", tol=0, casesensitive=False):
-    if not casesensitive:
+def samestrings(str1, str2, diffmeasure="EditDist", tol=0, casesens=False):
+    if not casesens:
         str1 = str1.casefold()
         str2 = str2.casefold()
     if diffmeasure == "EditRatio":
