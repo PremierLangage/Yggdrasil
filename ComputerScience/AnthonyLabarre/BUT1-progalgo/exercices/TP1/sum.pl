@@ -29,8 +29,8 @@ True
 """.format(var, var)
 
 # pltest1="""
-# >>> {}==result # La variables {} a-t-elle la bonne valeur : {}?
-# True
+# >>> print({}) # La variables {} a-t-elle la bonne valeur : {}?
+# result
 # """.format(var, result)
 
 ==
