@@ -17,7 +17,8 @@ text = <em>(Pas d'énoncé défini)</em>
 
 # création de l'éditeur de code
 editor =: CodeEditor
-
+editor.language = python
+editor.cid = py_editor_0
 editor.code ==
 ==
 
