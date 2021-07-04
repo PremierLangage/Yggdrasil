@@ -20,8 +20,8 @@ before== #|python|
 import random 
 random.seed(seed)
 var = random.choice(["sum", "s", "X", "SUM"])
-a = random.randint(1,10)
-b = random.randint(1,10)
+a = 1 
+b = 2 
 
 pltest0="""
 >>> "{}" in globals() # La variable {} est elle définie ?
