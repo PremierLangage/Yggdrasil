@@ -28,9 +28,8 @@ text==
  Initialisez la variable **sum** avec la somme des variables a et b.
 ==
 
-form==
-{{editor|component}}
-==
+form=@ /python/form/editorform.html
+
 grader==#|python|
 run(
     title='Deux nombres',
