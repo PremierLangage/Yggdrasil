@@ -1,4 +1,4 @@
-extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
+extends = /ComputerScience/python/AP1-1920/templates/generic/grader.pl
 
 tag=Programmation|Python|Variable|Somme
 author = 
