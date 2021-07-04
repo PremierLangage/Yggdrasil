@@ -13,11 +13,6 @@
 @ /ComputerScience/python/AP1-1920/templates/generic/utils/testitem.html
 
 
-# création de l'éditeur de code
-editor =: /python/form/editorform.html
-editor.code ==
-==
-
 tag=Programmation|Python|Variable|Somme
 author = 
 
