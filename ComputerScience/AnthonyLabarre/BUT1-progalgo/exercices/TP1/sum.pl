@@ -29,10 +29,10 @@ pltest0="""
 True
 """.format(var, var)
 
-pltest1="""
->>> {}==result # La variables {} a-t-elle la bonne valeur : {}?
-True
-""".format(var, result)
+# pltest1="""
+# >>> {}==result # La variables {} a-t-elle la bonne valeur : {}?
+# True
+# """.format(var, result)
 
 ==
 
