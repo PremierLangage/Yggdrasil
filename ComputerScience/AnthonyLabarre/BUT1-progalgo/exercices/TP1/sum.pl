@@ -1,4 +1,4 @@
-extends=/ComputerScience/python/AP1-1920/templates/simpleinput.pl
+extends=/ComputerScience/python/AP1-1920/templates/pyeditor.pl
 
 tag=Programmation|Python|Variable|Somme
 author = 
