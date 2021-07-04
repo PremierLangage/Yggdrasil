@@ -1,13 +1,12 @@
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
-title= Une fonction qui répond à **LA question**
+title= caluler une somme dans une variable
 text==
-Ecrire une fonction **f** sans paramètre qui retourne l'entier 42.
+En supposant qu'il existe déjà 2 variables x et y, écrire le code qui met leur somme dans une variable nommée s.
 ==
 pltest==
->>> f == f # La fonction existe  ?
+>>> x,y = 40,2
+>>> s == s # La variable existe  ?
 True
->>> f() # f retourne ou affiche  42
-42
->>> f() == 42 # retourne 42 
-True
+>>> s == x+y # s a pour valeur x+y
+x+y
 ==
