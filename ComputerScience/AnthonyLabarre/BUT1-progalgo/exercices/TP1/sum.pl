@@ -12,9 +12,6 @@
 @ /ComputerScience/python/AP1-1920/templates/generic/utils/testgroup.html
 @ /ComputerScience/python/AP1-1920/templates/generic/utils/testitem.html
 
-title = <em>(Pas de titre défini)</em>
-text = <em>(Pas d'énoncé défini)</em>
-
 # création de l'éditeur de code
 editor =: CodeEditor
 editor.code ==
