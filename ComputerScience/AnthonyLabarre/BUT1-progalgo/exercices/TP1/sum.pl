@@ -2,7 +2,7 @@
 
 #@ /ComputerScience/python/AP1-1920/templates/generic/grader.py
 
-@ /ComputerScience/python/AP1-1920/templates/generic/utils/sandboxio.py
+@ utils/sandboxio.py
 @ /ComputerScience/python/AP1-1920/templates/generic/builder.py
 @ /ComputerScience/python/AP1-1920/templates/generic/grader.py
 @ /ComputerScience/python/AP1-1920/templates/generic/utils/test.py
