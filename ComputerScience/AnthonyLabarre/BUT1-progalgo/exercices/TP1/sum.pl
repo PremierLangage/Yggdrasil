@@ -22,6 +22,7 @@ random.seed(seed)
 var = random.choice(["sum", "s", "X", "SUM"])
 a = 1 
 b = 2 
+result= a+b
 
 pltest0="""
 >>> "{}" in globals() # La variable {} est elle définie ?
@@ -29,9 +30,9 @@ True
 """.format(var, var)
 
 pltest1="""
->>> {}==a+b # La variables {} a-t-elle la bonne valeur : {}?
+>>> {}==result # La variables {} a-t-elle la bonne valeur : {}?
 True
-""".format(var, a+b)
+""".format(var, result)
 
 ==
 
