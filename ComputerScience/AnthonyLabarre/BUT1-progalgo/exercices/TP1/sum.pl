@@ -1,5 +1,4 @@
-extends=/ComputerScience/python/templates/pltest.pl
-@ /builder/before.py [builder.py]
+extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 
 tag=Programmation|Python|Variable|Somme
 author = 
@@ -11,30 +10,31 @@ text==
  Initialisez la variable **{{var}}** avec la somme des variables a et b.
 ==
 
+grader==#|python|
+run(
+    title='Deux nombres',
+    globals={'a': 1, 'b': 2}, 
+    values={'a': 2, 'b': 1}
+)
 
-
-editor.height = 80
-
-before== #|python| 
-import random 
-random.seed(seed)
-var = random.choice(["sum", "s", "X", "SUM"])
-a = 1 
-b = 2 
-result= a+b
-print(globals)
-
-pltest0="""
->>> "{}" in globals() # La variable {} est elle définie ?
-True
-""".format(var, var)
-
-# pltest1="""
-# >>> print({}) # La variables {} a-t-elle la bonne valeur : {}?
-# result
-# """.format(var, result)
-
+begin_test_group("Nombres aléatoires")
+from random import randrange
+for _ in range(5):
+    x, y = randrange(0, 1000), randrange(1000, 2000)
+    run(
+        title='Nombres aléatoires',
+        globals={'a': x, 'b': y},
+        values={'a': y, 'b': x}
+    )
 ==
+
+
+
+
+
+
+
+
 
 
 
