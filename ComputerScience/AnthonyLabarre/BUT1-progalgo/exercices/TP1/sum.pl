@@ -14,7 +14,7 @@
 
 
 # création de l'éditeur de code
-editor =: @ /python/form/editorform.html
+editor =: /python/form/editorform.html
 editor.code ==
 ==
 
