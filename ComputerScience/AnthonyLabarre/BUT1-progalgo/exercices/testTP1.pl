@@ -40,11 +40,9 @@ else:
 True
 """.format(var, type_var, type_var)
 
-==
 
 
-
-pltest0="""
+pltest1="""
 >>> "{}" in globals() # La variable {} est elle définie ?
 True
 """.format(var, var)
