@@ -1,4 +1,4 @@
-extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
+extends=/ComputerScience/python/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
 tag=Programmation|Python|Initialisation|Variable
