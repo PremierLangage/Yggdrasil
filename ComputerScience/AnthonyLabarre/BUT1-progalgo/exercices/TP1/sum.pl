@@ -7,14 +7,14 @@ title = Somme de variables
 
 
 text==
- Initialisez la variable **{{var}}** avec la somme des variables a et b.
+ Initialisez la variable **sum** avec la somme des variables a et b.
 ==
 
 grader==#|python|
 run(
     title='Deux nombres',
     globals={'a': 1, 'b': 2}, 
-    values={'a': 2, 'b': 1}
+    values={'sum': 3}
 )
 
 begin_test_group("Nombres aléatoires")
@@ -24,7 +24,7 @@ for _ in range(5):
     run(
         title='Nombres aléatoires',
         globals={'a': x, 'b': y},
-        values={'a': y, 'b': x}
+        values={'sum': x+y}
     )
 ==
 
