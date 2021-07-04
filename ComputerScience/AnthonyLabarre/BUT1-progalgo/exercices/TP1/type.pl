@@ -4,7 +4,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 tag=Programmation|Python|Initialisation|Variable
 author = # adapté d'un exo de DR + CC
 
-title = Initialisation et constantes
+title = Variables et types
 
 
 text==
