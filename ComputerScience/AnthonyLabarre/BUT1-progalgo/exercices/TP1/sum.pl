@@ -20,9 +20,6 @@ editor =: CodeEditor
 editor.language = python
 #editor.cid = py_editor_0
 editor.code ==
-# Saisissez votre code ici, et cliquez sur le bouton
-# de validation quand vous avez terminé
-
 ==
 
 tag=Programmation|Python|Variable|Somme
