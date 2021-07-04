@@ -24,6 +24,7 @@ import test
 
 
 def _get_student_code(exercise_context: dict):
+    print(dict)
     if "editor" not in exercise_context:
         raise test.GraderError(missing_editor)
     editor_id = exercise_context["editor"].cid
