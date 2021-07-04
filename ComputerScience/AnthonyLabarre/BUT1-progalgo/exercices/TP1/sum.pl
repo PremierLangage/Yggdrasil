@@ -11,7 +11,7 @@ text==
  Initialisez la variable **sum** avec la somme des variables a et b.
 ==
 
-form=@ /form/text_editor.html
+#form=@ /form/text_editor.html
 
 grader==#|python|
 run(
