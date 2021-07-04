@@ -40,14 +40,27 @@ else:
 True
 """.format(var, type_var, type_var)
 
-
-
-
 ==
 
 
 
+pltest0="""
+>>> "{}" in globals() # La variable {} est elle définie ?
+True
+""".format(var, var)
 
+if type_var is None:
+    pltest1="""
+>>> type({}) is type(None) # La variables est elle du bon type ({}) ?
+True
+""".format(var, type_var, type_var)
+else:
+    pltest1="""
+>>> type({})=={} # La variables est elle du bon type ({}) ?
+True
+""".format(var, type_var, type_var)
+
+==
 
 
 
