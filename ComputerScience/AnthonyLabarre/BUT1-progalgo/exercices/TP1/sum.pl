@@ -25,6 +25,8 @@ result= a+b
 print(globals)
 
 pltest0="""
+>>> a = 1 
+>>> b = 2 
 >>> "{}" in globals() # La variable {} est elle définie ?
 True
 """.format(var, var)
