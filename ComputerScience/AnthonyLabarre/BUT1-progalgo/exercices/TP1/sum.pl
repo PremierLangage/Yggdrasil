@@ -3,8 +3,8 @@
 #@ /ComputerScience/python/AP1-1920/templates/generic/grader.py
 
 @ /utils/sandboxio.py
-@ builder.py
-@ grader.py
+@ /ComputerScience/python/AP1-1920/templates/generic/builder.py
+@ /ComputerScience/python/AP1-1920/templates/generic/grader.py
 @ utils/test.py
 @ utils/mockinput.py
 @ utils/testgroup.html
