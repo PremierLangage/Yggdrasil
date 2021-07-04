@@ -13,6 +13,11 @@
 @ /ComputerScience/python/AP1-1920/templates/generic/utils/testitem.html
 
 
+# création de l'éditeur de code
+editor =: "/python/form/editorform.html"
+editor.code ==
+==
+
 tag=Programmation|Python|Variable|Somme
 author = 
 
@@ -23,8 +28,9 @@ text==
  Initialisez la variable **sum** avec la somme des variables a et b.
 ==
 
-form=@ /python/form/editorform.html
-
+form==
+{{editor|component}}
+==
 grader==#|python|
 run(
     title='Deux nombres',
