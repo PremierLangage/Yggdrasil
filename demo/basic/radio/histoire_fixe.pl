@@ -1,18 +1,16 @@
 extends = /model/basic/radio.pl
 
-title = Histoire
-
 question ==
-A quel siècle vivait Louis XI ?
+À quel siècle vivait Victor Hugo
 ==
 
 items ==
-XIIe siècle
-XIIIe siècle
-XIVe siècle
-XVe siècle
+XVIIe siècle
+XVIIIe siècle
+XIXe siècle
+XXe siècle
 ==
 
-indsol = 3
-
 shuffled = False
+
+indsol = 2
