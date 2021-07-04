@@ -8,8 +8,7 @@ title = Somme de variables
 
 
 text==
- Initialisez la variable **{{var}}** avec une valeur quelconque
- de type **{{type_var}}** 
+ Initialisez la variable **{{var}}** avec la somme des variables a et b.
 ==
 
 
