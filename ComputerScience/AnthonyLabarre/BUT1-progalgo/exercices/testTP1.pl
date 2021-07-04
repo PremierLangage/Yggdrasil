@@ -19,4 +19,5 @@ pltest==
 >>> s == s # La variable existe  ?
 True
 >>> s == 42 # s a pour valeur x+y
+True
 ==
