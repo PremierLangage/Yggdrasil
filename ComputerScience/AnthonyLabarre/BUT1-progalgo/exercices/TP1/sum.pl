@@ -1,6 +1,11 @@
-extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
+#extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 
 #@ /ComputerScience/python/AP1-1920/templates/generic/grader.py
+
+@ /utils/sandboxio.py
+
+grader  =@ /grader/evaluator.py
+builder =@ /builder/before.py
 
 tag=Programmation|Python|Variable|Somme
 author = 
