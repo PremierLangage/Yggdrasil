@@ -1,4 +1,4 @@
-extends=/ComputerScience/python/AP1-2021/templates/manipvarsoluce.pl
+extends=/ComputerScience/python/templates/manipvarsoluce.pl
 
 tag=Programmation|Python|Variable|Somme
 author = 
