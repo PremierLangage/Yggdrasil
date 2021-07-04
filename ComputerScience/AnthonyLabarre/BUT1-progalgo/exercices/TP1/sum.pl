@@ -22,6 +22,7 @@ var = random.choice(["sum", "s", "X", "SUM"])
 a = 1 
 b = 2 
 result= a+b
+print(globals)
 
 pltest0="""
 >>> "{}" in globals() # La variable {} est elle définie ?
