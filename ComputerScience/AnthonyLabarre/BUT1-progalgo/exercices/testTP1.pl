@@ -8,11 +8,11 @@ before==
 import random 
 
 x,y = 40,2
-_s = x+y
+result = x+y
 ==
 
 pltest==
 >>> s == s # La variable existe  ?
 True
->>> s == _s # s a pour valeur x+y
+>>> s == result # s a pour valeur x+y
 ==
