@@ -24,7 +24,7 @@ editor.code ==
 
 # le formulaire de l'exercice contient uniquement l'éditeur
 form==
-{{editor|component}}
+{{editor}}
 ==
 
 grader==#|python|
