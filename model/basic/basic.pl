@@ -23,6 +23,4 @@ text =
 
 tplpage =@ template.html
 
-style.basic == #|css|
-
-==
+style.basic =@ /demo/css/basic.html
