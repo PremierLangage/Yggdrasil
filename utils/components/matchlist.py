@@ -67,12 +67,12 @@ class MatchList(Component):
             targetid = str(uuid4())
             self.nodes.append({
                 "id": sourceid,
-                "content": source,
+                "content": str(source),
                 "source": True
             })
             self.nodes.append({
                 "id": targetid,
-                "content": target,
+                "content": str(target),
                 "target": True,
                 "multiple" : False
             })
