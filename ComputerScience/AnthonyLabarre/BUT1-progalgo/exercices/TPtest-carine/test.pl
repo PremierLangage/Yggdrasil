@@ -9,9 +9,8 @@ pouet
 ==
 
 before== #|python| 
-globals={'a': 1, 'b': 2}
+a = 1
 pltest0="""
->>> a=1
 >>> x
 3
 """
