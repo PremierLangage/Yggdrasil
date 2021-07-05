@@ -6,12 +6,11 @@ matchlist =: MatchList
 matchlist.decorator = CustomMatchList
 
 multiple = False
-title =
+title = 
 
-nbmatches % null
+nbmatches = None
 
-# Délui
-delimiter % ","
+delimiter = ","
 
 scoring = RightMinusWrong
 
