@@ -34,7 +34,7 @@ if multiple:
     matchlist.multiple = True
 ==
 
-form ==
+inputblock ==
 {{ matchlist|component }}
 ==
 
