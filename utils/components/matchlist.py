@@ -79,6 +79,9 @@ class MatchList(Component):
             self._sol.append({'source': sourceid, 'target': targetid})
         rd.shuffle(self.nodes)
 
+    def shuffle(self):
+        rd.shuffle(self.nodes)
+
     def eval(self, display=True, scoring="RightMinusWrong", disabled=True):
         """
         Evaluate the answer stored in the component.
