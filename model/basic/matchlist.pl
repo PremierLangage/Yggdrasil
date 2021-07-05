@@ -9,7 +9,7 @@ multiple = False
 title = 
 
 nbmatches = None
-
+targets = []
 delimiter = ","
 
 scoring = RightMinusWrong
