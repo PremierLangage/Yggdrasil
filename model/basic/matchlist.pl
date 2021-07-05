@@ -5,6 +5,7 @@ extends = /model/basic/basic.pl
 matchlist =: MatchList
 matchlist.decorator = CustomMatchList
 
+multiple = False
 title =
 
 nbmatches % null
