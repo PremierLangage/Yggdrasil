@@ -9,6 +9,7 @@ pouet
 ==
 
 before== #|python| 
+import doctest
 doctest.testmod(
     verbose=True,
     report=False,
