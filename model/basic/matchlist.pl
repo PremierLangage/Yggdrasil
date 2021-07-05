@@ -14,7 +14,7 @@ delimiter % ","
 
 scoring = RightMinusWrong
 
-footerbefore ==
+process ==
 import random as rd
 
 if isinstance(matches, str): 
