@@ -8,6 +8,7 @@ text==
 pouet 
 ==
 code_before==
+global a
 a=1
 ==
 
