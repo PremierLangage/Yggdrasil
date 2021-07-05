@@ -34,7 +34,7 @@ else:
 
 matchlist.setdata_from_matches(rd.sample(_matches_, _nbmatches_))
 matchlist.add_targets(_targets_)
-
+matchlist.shuffle()
 matchlist.scoring = scoring
 
 if multiple:
