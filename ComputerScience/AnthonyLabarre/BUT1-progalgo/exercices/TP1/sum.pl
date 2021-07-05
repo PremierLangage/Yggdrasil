@@ -14,6 +14,7 @@
 
 # création de l'éditeur de code
 editor =: CodeEditor
+editor.theme = light
 editor.code ==
 ==
 
