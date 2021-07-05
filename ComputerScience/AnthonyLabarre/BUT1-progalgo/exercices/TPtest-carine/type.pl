@@ -41,7 +41,7 @@ True
 pltest3="""
 >>> x
 3
-""".format(var, var)
+"""
 ==
 
 
