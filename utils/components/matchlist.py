@@ -38,7 +38,8 @@ class MatchList(Component):
         """
         Add target nodes.
         """
-        contents = [node.id for node in self.nodes if node.get('target', False)]
+        #contents = [node.id for node in self.nodes if node.get('target', False)]
+        contents = []
         for target in targets:
             if target not in contents:
                 self.nodes.append({
