@@ -38,7 +38,7 @@ class MatchList(Component):
         """
         Add target nodes.
         """
-        #contents = [node.id for node in self.nodes if node.get('target', False)]
+        contents = [node['content'] for node in self.nodes if node.get('target', False)]
         contents = []
         for target in targets:
             if target not in contents:
@@ -54,8 +54,7 @@ class MatchList(Component):
         Add target nodes.
         """
         for node in self.nodes:
-            #node.multiple = True
-            pass
+            node['multiple'] = True
 
     def setdata_from_matches(self, matches):
         """
