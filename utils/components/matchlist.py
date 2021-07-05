@@ -3,31 +3,36 @@ from uuid import uuid4
 from components import Component
 from scoring import *
 
-class CustomMatchList(Component):
+class MatchList(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-match-list'
-        self.decorator = 'CustomMatchList'
+        self.decorator = 'MatchList'
         self.nodes = []
         self._sol = []
         super().__init__(**kwargs)
 
-    def setitems(self, sources, targets):
+    def set_sources(self, sources):
         """
-        Set source items and target items.
-        """ 
+        Set source nodes.
+        """
         for source in sources:
             self.nodes.append({
                 "id": str(uuid4()),
-                "content": source,
+                "content": str(source),
                 "source": True
             })
+
+    def set_targets(self, targets):
+        """
+        Set source nodes.
+        """
         for target in targets:
             self.nodes.append({
                 "id": str(uuid4()),
-                "content": source,
+                "content": str(target),
                 "target": True,
-                "multiple" : True
-            })
+                "multiple" : False
+            })     
 
     def setdata_from_matches(self, matches):
         """
