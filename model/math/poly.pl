@@ -9,7 +9,7 @@ poly_domain = R
 title =
 
 
-evaluator==
+evaluator ==
 from ast import literal_eval
 from evalsympy import eval_poly
 from sympy import poly
