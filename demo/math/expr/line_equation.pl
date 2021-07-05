@@ -1,6 +1,5 @@
 extends = /model/math/expr.pl
 
-title = Déterminer l'équation d'une droite
 
 before ==
 from mplsympy import plotsvg
@@ -18,4 +17,6 @@ Déterminer l'équation de la droite tracée ci-dessous (en notant $! x !$ la va
 </div>
 ==
 
-input_prefix = $! y = !$
+prefix ==
+$! y = !$
+==
