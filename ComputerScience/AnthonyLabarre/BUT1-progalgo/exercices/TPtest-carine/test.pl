@@ -7,13 +7,11 @@ title = Variables et types
 text==
 pouet 
 ==
+code_before==
+a=1
+==
 
 before== #|python| 
-import doctest
-doctest.testmod(
-    verbose=True,
-    report=False,
-    extraglobs={"a": 1})
 pltest0="""
 >>> x
 3
