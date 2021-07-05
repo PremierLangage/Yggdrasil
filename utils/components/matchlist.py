@@ -73,7 +73,7 @@ class MatchList(Component):
                 "id": targetid,
                 "content": target,
                 "target": True,
-                "multiple" : True
+                "multiple" : False
             })
             self._sol.append({'source': sourceid, 'target': targetid})
         rd.shuffle(self.nodes)
