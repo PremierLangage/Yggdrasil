@@ -38,10 +38,6 @@ else:
 True
 """.format(var, type_var, type_var)
 
-pltest3="""
->>> x
-3
-"""
 ==
 
 
