@@ -1,7 +1,5 @@
 extends = /model/basic/matchlist.pl
 
-title = Décomposition de nombres
-
 question ==
 Relier chaque nombre à la décomposition qui lui est égale.
 ==
