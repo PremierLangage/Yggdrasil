@@ -24,7 +24,7 @@ class MatchList(Component):
 
     def set_targets(self, targets):
         """
-        Set source nodes.
+        Set target nodes.
         """
         for target in targets:
             self.nodes.append({
@@ -32,7 +32,28 @@ class MatchList(Component):
                 "content": str(target),
                 "target": True,
                 "multiple" : False
-            })     
+            })
+
+    def add_targets(self, targets):
+        """
+        Add target nodes.
+        """
+        contents = [node.content for node in self.nodes if node.target]
+        for target in targets:
+            if target not in contents:
+                self.nodes.append({
+                    "id": str(uuid4()),
+                    "content": str(target),
+                    "target": True,
+                    "multiple" : False
+                })
+
+    def set_multiple(self):
+        """
+        Add target nodes.
+        """
+        for node in self.nodes:
+            node.multiple = True
 
     def setdata_from_matches(self, matches):
         """
