@@ -54,7 +54,8 @@ class MatchList(Component):
         Add target nodes.
         """
         for node in self.nodes:
-            node.multiple = True
+            #node.multiple = True
+            pass
 
     def setdata_from_matches(self, matches):
         """
