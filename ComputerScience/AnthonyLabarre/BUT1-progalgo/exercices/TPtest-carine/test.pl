@@ -9,8 +9,10 @@ pouet
 ==
 
 before== #|python| 
-global a
-a = 1
+doctest.testmod(
+    verbose=True,
+    report=False,
+    extraglobs={"a": 1})
 pltest0="""
 >>> x
 3
