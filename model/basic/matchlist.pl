@@ -41,5 +41,3 @@ inputblock ==
 evaluator ==
 score = matchlist.eval()
 ==
-
-settings.feedback = lightscore
