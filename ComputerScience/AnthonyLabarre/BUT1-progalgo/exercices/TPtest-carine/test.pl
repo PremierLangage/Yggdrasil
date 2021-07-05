@@ -9,7 +9,7 @@ pouet
 ==
 
 before== #|python| 
-pltest3="""
+pltest0="""
 >>> x
 3
 """
