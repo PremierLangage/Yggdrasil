@@ -22,6 +22,11 @@ if isinstance(matches, str):
 else:
     _matches_ = matches
 
+if isinstance(targets, str): 
+    _targets_ = targets.splitlines()
+else:
+    _targets_ = targets
+
 if isinstance(nbmatches, int):
     _nbmatches_ = nbmatches
 else:
