@@ -9,6 +9,7 @@ pouet
 ==
 
 before== #|python| 
+global a
 a = 1
 pltest0="""
 >>> x
