@@ -1,0 +1,3 @@
+étant données 2 variables déjà définies, calculer leur somme (dans un variable ou pas)
+
+étant donnée 1 varaible x déjà définie, afficher "petit" si elle est plus petite que 10 et "grand sinon
