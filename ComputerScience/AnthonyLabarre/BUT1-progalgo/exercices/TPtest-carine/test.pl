@@ -9,6 +9,7 @@ pouet
 ==
 
 before== #|python| 
+a=1
 pltest0="""
 >>> x
 3
