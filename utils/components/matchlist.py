@@ -105,8 +105,6 @@ class MatchList(Component):
             score = all_or_nothing(nbright, nbwrong)
         elif scoring == "RightMinusWrong":
             score = right_minus_wrong(nbright, nbwrong, nbsol=len(self._sol))          
-        elif scoring == "CorrectItems":
-            score = correct_items(nbright, nbwrong, nbitems=len(self.items))
         elif scoring == "Custom":
             score = custom_scoring(nbright, nbwrong, nbsol=len(self._sol), nbitems=len(self.items))
         else:
