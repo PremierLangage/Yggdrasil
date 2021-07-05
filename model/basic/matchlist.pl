@@ -1,4 +1,4 @@
-extends = /model/basic.pl
+extends = /model/basic/basic.pl
 @ /utils/components/scoring.py
 @ /utils/components/matchlist.py [custommatchlist.py]
 
