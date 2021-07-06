@@ -18,8 +18,7 @@ except Exception as e:
     grade=(0,""" Votre code ne compile pas""")
 else:
     try:
-        if not (type(somme) is type(0)):
-            grade = (0,'<span class="error-state">la variable <strong>somme</strong> n\'a pas le bon type</span>')
+        print(somme)
     except Exception as e:
         grade=(0,'<span class="error-state">la variable  <strong>somme</strong> n\'existe pas</span>')
     else :
