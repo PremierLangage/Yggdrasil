@@ -1,7 +1,5 @@
 extends = /model/math/tuple.pl
 
-title = Image par une application de Z^2 dans Z^2
-
 before ==
 n0 = randint(-5, 5)
 p0 = randint(-5, 5)
