@@ -14,7 +14,6 @@ try:
     exec(response['answer'])
 except Exception as e:
     grade=(0,""" Votre code ne compile pas""")
-    return
 else:
     if sum_a_and_b == a+b :
         grade = (100,'OK')
