@@ -18,8 +18,10 @@ form=@ /form/text_editor.html
 # Script d'évaluation 
 evaluator== #|python|
 import random
-import sys
-import ../display_tools as display
+import sys 
+import os
+sys.path.append(os.path.abspath("../"))
+import display_tool as display
 
 print("debug : " + response['answer'], file=sys.stderr)
 
