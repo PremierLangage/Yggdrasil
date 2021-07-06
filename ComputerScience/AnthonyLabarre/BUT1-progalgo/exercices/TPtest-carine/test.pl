@@ -21,7 +21,7 @@ import random
 import sys 
 import os
 sys.path.append(os.path.abspath("../"))
-import display_tool as display
+import display_tools as display
 
 print("debug : " + response['answer'], file=sys.stderr)
 
