@@ -15,6 +15,7 @@ P = choice([1,5,4,6,5])
 sol = A+P
 ==
 
+#f pour mettre une variable dans le résultat.
 evaluator ==
 
 if ans != sol :
