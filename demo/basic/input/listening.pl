@@ -2,7 +2,7 @@ extends = /model/basic/input.pl
 
 title = Listening
 
-audiofile =$ /demo/data/english_sentence.mp3
+audiofile =$ /demo/media/english_sentence.mp3
 
 question ==
 <audio id="player" src="{{ audiofile }}"></audio> 
