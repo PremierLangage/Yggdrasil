@@ -1,0 +1,22 @@
+
+
+
+title = La feuille d'exemple
+
+url_clip =$ /ComputerScience/C/examples/platon_code_route.mp4 
+# platon_code_route.mp4
+
+
+introduction ==
+
+Rappel de cours 
+
+<video controls><source src="{{ url_clip }}" type="video/MP4"></video>
+
+
+==
+
+@ /ComputerScience/C/examples/code_route.pl
+
+@ doctestmycode/doctest.pl
+
