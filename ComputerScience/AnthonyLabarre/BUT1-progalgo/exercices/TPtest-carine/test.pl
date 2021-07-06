@@ -19,7 +19,7 @@ form=@ /form/text_editor.html
 evaluator== #|python|
 import random
 import sys
-import display_tools as display
+import ../display_tools as display
 
 print("debug : " + response['answer'], file=sys.stderr)
 
