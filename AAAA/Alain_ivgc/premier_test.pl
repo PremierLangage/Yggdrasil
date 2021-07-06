@@ -9,13 +9,13 @@ extends = /model/basic/numeric.pl
 
 title= test1
 
-settings.allow_reroll=yes
+
 
 question==
 Calcul le produit de {{A}} et {{P}}.
 
 ==
-
+settings.oneshot=yes
 before==
 
 A = randint(1, 5)*10
