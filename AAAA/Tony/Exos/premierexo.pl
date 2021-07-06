@@ -1,3 +1,5 @@
+title = "Addition pour les nuls"
+
 #Modèle prédéfini 
 extends = /model/basic/numeric.pl
 
