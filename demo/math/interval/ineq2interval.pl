@@ -6,7 +6,7 @@ b = randint(-3, 3)
 sol = Interval(-oo, b-a)
 ==
 
-text ==
+question ==
 Ecrire sous forme d'intervalle l'ensemble des réels $! x  + {{ a }} \le {{ b }}  !$.
 ==
 
