@@ -1,12 +1,11 @@
 #Modèle prédéfini 
 extends = /model/basic/numeric.pl
 
-question ==  Calculer {{ A}} + {{B }}
+question ==  
+Calculer {{ A}} + {{P }}
 
 ==
-
-sol = 0
-
+ 
 before ==
 
 A = randint(1,5)*10
