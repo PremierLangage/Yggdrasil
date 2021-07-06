@@ -1,13 +1,13 @@
 title = La feuille d'exemple
 
 url_clip=""
-#on pourra faire référence à ce fichier dans l'intro
+#on pourra faire référence à ce fichier dans l'intro, ou pas, dans le futur
 
 introduction==
 
 Rappel de cours, vidéo si on veut etc...
 ==
 
-@premier_test.pl
+@ premier_test.pl
 
-@deuxieme_test.pl
+@ deuxieme_test.pl
