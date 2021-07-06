@@ -18,6 +18,10 @@ form=@ /form/text_editor.html
 # Script d'évaluation 
 evaluator== #|python|
 import random
+import sys
+
+def build(dic, response):
+    print("debug : " + response['answer'], file=sys.stderr)
 
 a = random.randint(1,1000)
 b = random.randint(1,1000)
