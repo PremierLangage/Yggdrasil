@@ -21,8 +21,8 @@ evaluator ==
 if not isinstance(ans,int):
     score =-1
     feedback = "Apprend ton cours la réponse est un entier"
-    
-if ans != sol :
+
+elif ans != sol :
     score =0
     feedback = f"T es nul c'est {sol}"
 else :
