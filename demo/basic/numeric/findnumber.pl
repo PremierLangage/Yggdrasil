@@ -11,9 +11,12 @@ Donner un entier multiple de {{k}}, compris entre {{ a }} et {{ b }} (inclus).
 ==
 
 evaluator ==
-if ans % k != 0:
+if not isinstance(ans, int):
+    score = -1
+    feedback = "La réponse doit être un entier."
+elif ans % k != 0:
     score = 0
-    feedback = f"Ce nombre n'est pas un multiple de {k}."
+    feedback = "Ce nombre n'est pas un multiple de " + str(k) + "."
 elif ans < a or ans > b:
     score = 0
     feedback = f"Ce nombre n'est pas compris entre {a} et {b}."
