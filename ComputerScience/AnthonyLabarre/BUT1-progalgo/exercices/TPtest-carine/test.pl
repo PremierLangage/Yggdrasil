@@ -39,10 +39,10 @@ else:
         grade=(0,'<span class="error-state">la variable  <strong>somme</strong> n\'existe pas</span>')
     else :
         if somme == a+b :
-            msg = 'Bonne r&#233;ponse !'
+            msg = good('Bonne r&#233;ponse !')
             if(';' in response['answer']):
                 msg += '</br></br> Remarque : le point-virgule est inutile :)'
-            grade = (100, good(msg))
+            grade = (100, msg)
         else:
             grade = (0,'<span class="error-state">la variable <strong>somme</strong> n\'a pas la bonne valeur</span>')
 ==
