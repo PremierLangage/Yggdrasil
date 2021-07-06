@@ -14,3 +14,9 @@ A = randint(1,5)*10
 P = choice([1,5,4,6,5]) 
 sol = A*P
 ==
+
+evaluator ==
+
+if ans != sol :
+    score =0
+    feedback = "T es nul"
