@@ -6,6 +6,8 @@ Calculer {{ A}} + {{P }}
 
 ==
  
+
+#Variables prédéfinies de la question 
 before ==
 
 A = randint(1,5)*10
