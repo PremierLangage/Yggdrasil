@@ -19,14 +19,13 @@ form=@ /form/text_editor.html
 evaluator== #|python|
 import random
 import sys
+import display_tools as display
 
 print("debug : " + response['answer'], file=sys.stderr)
 
 a = random.randint(1,1000)
 b = random.randint(1,1000)
 
-def good(msg):
-    return u'<span class="success-state"> ' + msg + ' </span>'
 
 try:
     exec(response['answer'])
@@ -34,12 +33,12 @@ except Exception as e:
     grade=(0,'<span class="error-state">Le code ne compile pas, il provoque l\'erreur suivante : ' + str(e) + '</span>')
 else:
     try:
-        somme = somme+0
+        somme+=0 # permet de lever une erreur si la variable n'existe pas
     except Exception as e:
         grade=(0,'<span class="error-state">la variable  <strong>somme</strong> n\'existe pas</span>')
     else :
         if somme == a+b :
-            msg = good('Bonne r&#233;ponse !')
+            msg = display.good('Bonne r&#233;ponse !')
             if(';' in response['answer']):
                 msg += '<span style="color:blue;"></br></br> Remarque : le point-virgule est inutile :)</span>'
             grade = (100, msg)
