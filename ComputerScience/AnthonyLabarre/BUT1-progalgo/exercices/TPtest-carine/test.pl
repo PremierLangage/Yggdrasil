@@ -18,7 +18,7 @@ except Exception as e:
     grade=(0,""" Votre code ne compile pas""")
 else:
     try:
-        somme = somme+1
+        somme = somme+0
     except Exception as e:
         grade=(0,'<span class="error-state">la variable  <strong>somme</strong> n\'existe pas</span>')
     else :
