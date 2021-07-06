@@ -26,7 +26,7 @@ sol = A*P
 # voir un exemple dans numeric/findnumber.pl mais je trouve pas ce fichier
 # dans l'evaluator, on donne un score entre 0 et 100, -1 si on veut retourner une erreur de syntaxe
 
-evaluator==
+#evaluator==
 
 
-==
+#==
