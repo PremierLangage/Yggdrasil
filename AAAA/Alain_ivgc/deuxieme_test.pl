@@ -1,5 +1,6 @@
 extends = /model/basic/numeric.pl 
 
+title = test2
 
 question==
 Calculer le coefficient directeur de la droite passant par les points ({{a}},{{b}}) et ({{c}},{{d}}).
