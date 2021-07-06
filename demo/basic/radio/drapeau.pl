@@ -1,5 +1,14 @@
 extends = /model/basic/radio.pl
 
+flag0 =$ /demo/media/flag1.png
+flag2 =$ /demo/media/flag2.png
+flag3 =$ /demo/media/flag3.png
+flag4 =$ /demo/media/flag4.png
+
+before ==
+
+==
+
 question ==
 A quel pays appartient ce drapeau ?
 
