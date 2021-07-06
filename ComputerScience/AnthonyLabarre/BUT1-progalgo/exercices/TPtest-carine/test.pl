@@ -21,7 +21,7 @@ else:
         if not (type(somme)  is int):
             grade = (0,'<span class="fail-state">la variable **somme** n\'a pas le bon type</span>')
     except Exception as e:
-    grade=(0,'<span class="fail-state">la variable **somme** n\'existe pas</span>')
+        grade=(0,'<span class="fail-state">la variable **somme** n\'existe pas</span>')
     if somme == a+b :
         grade = (100,'<span class="success-state">Correct !</span>')
     else:
