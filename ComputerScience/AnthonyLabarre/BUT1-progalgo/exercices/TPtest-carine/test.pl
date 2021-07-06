@@ -27,7 +27,7 @@ Somme de variables
 
 
 text== #|html|
-...
+Initialisez la variable **somme** avec la somme des variables a et b.
 ==
 
 form=@ /form/text_editor.html
