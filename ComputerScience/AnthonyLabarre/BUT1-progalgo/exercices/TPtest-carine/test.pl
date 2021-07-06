@@ -36,7 +36,7 @@ else:
     try:
         somme = somme+0
     except Exception as e:
-        grade=(0,'<span class="help-block">la variable  <strong>somme</strong> n\'existe pas</span>')
+        grade=(0,'<span class="error-state">la variable  <strong>somme</strong> n\'existe pas</span>')
     else :
         if somme == a+b :
             msg = good('Bonne r&#233;ponse !')
