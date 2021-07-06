@@ -20,8 +20,7 @@ evaluator== #|python|
 import random
 import sys
 
-def build(dic, response):
-    print("debug : " + response['answer'], file=sys.stderr)
+print("debug : " + response['answer'], file=sys.stderr)
 
 a = random.randint(1,1000)
 b = random.randint(1,1000)
