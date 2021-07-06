@@ -15,7 +15,7 @@ question==
 Calcul le produit de {{A}} et {{P}}.
 
 ==
-settings.oneshot=yes
+settings.allow_reroll=yes
 before==
 
 A = randint(1, 5)*10
