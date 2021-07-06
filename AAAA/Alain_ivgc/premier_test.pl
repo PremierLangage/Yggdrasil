@@ -12,10 +12,12 @@ title= test1
 
 
 question==
-Calcul le produit de {{A}} et {{P}}.
+Calcule le produit de {{A}} et {{P}}.
 
 ==
+
 settings.allow_reroll=yes
+
 before==
 
 A = randint(1, 5)*10
