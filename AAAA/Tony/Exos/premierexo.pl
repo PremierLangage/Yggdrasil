@@ -29,6 +29,6 @@ if ans != sol :
     feedback = f"T es nul c'est {sol}"
 else :
     score = 100
-    feedback = "Bravo biloute"
+    feedback = f"Bravo biloute {sol}"
 
 ==
