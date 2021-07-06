@@ -21,6 +21,9 @@ sol = A*P
 
 ==
 
+# pour que l'étudiant ne puisse pas afficher la solution après avoir testé l'exercice
+solution = ""
+
 # clé pour entrer un script au moment de l'évaluation de la réponse
 # connaît ce qu'il y a dans before et ce qu'il y a dans ans (la réponse de l'étudiant)
 # voir un exemple dans numeric/findnumber.pl mais je trouve pas ce fichier
