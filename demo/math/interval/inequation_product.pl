@@ -4,7 +4,7 @@ title = Résoudre une inéquation produit
 
 before ==
 from sympy import solveset, S
-var('x')
+x = Symbol('x')
 a, b = sample(range(-6, 6), k=2)
 expr = (x + a) * (x + b)
 ineq = choice([expr >= 0, expr > 0, expr <= 0,expr < 0])
