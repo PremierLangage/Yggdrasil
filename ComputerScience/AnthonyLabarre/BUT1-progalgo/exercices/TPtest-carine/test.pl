@@ -23,7 +23,7 @@ else:
         grade=(0,'<span class="error-state">la variable  <strong>somme</strong> n\'existe pas</span>')
     else :
         if somme == a+b :
-            grade = (100,u'<span class="success-state">Bonne r&#233;ponse !</span>')
+            grade = (100,u'<span class="success-state"> Bonne r&#233;ponse ! </span>')
         else:
             grade = (0,'<span class="error-state">la variable <strong>somme</strong> n\'a pas la bonne valeur</span>')
 ==
