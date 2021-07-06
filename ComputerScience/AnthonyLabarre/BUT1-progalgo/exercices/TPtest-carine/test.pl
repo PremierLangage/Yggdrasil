@@ -1,9 +1,21 @@
 # coding: utf-8
 
 @ /utils/sandboxio.py
-grader  =@ /grader/evaluator.py
+grader=@ /grader/evaluator.py
 
-# Script d'évaluatino 
+title== #|html|
+Somme de variables
+==
+
+text== #|html|
+Initialisez la variable **somme** avec la somme des variables **a** et **b**.
+==
+
+#un éditeur simple, fond blanc, pas de chois de langage
+form=@ /form/text_editor.html 
+
+
+# Script d'évaluation 
 evaluator== #|python|
 import random
 random.seed(seed)
@@ -27,17 +39,6 @@ else:
         else:
             grade = (0,'<span class="error-state">la variable <strong>somme</strong> n\'a pas la bonne valeur</span>')
 ==
-
-title== #|html|
-Somme de variables
-==
-
-
-text== #|html|
-Initialisez la variable **somme** avec la somme des variables **a** et **b**.
-==
-
-form=@ /form/text_editor.html
 
 
 
