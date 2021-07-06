@@ -19,7 +19,7 @@ except Exception as e:
 else:
     try:
         if not (type(somme)  is int):
-            grade = (0,'<span class="error-state">la variable <bold>somme</bold> n\'a pas le bon type</span>')
+            grade = (0,'<span class="error-state">la variable <strong>somme</strong> n\'a pas le bon type</span>')
     except Exception as e:
         grade=(0,'<span class="error-state">la variable somme n\'existe pas</span>')
     if somme == a+b :
