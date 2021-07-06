@@ -13,6 +13,8 @@ question ==
 Donner un entier naturel multiple de {{ a }} et {{ b }}, et inférieur à {{ c }}.
 ==
 
+solution = ""
+
 evaluator ==
 if not isinstance(ans, int):
     score = -1
