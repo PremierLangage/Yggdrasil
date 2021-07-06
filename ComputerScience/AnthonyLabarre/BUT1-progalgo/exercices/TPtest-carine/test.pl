@@ -25,7 +25,7 @@ else:
         if somme == a+b :
             grade = (100,'<span class="success-state">Correct !</span>')
         else:
-            grade = (0,'<span class="error-state">la variable somme n\'a pas la bonne valeur</span>')
+            grade = (0,'<span class="error-state">la variable <strong>somme</strong> n\'a pas la bonne valeur</span>')
 ==
 
 title== #|html|
