@@ -10,4 +10,4 @@ text ==
 Ecrire sous forme d'intervalle l'ensemble des réels $! x  + {{ a }} \le {{ b }}  !$.
 ==
 
-keypad % [{"label": "$! \\infty !$", "action": "cmd", "value": "\\infty"}, {"label": "$! \\cup !$", "action": "cmd", "value": "\\cup"}]
+keypad = ["-infty", "+infty"]
