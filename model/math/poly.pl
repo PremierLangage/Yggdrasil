@@ -14,7 +14,7 @@ from ast import literal_eval
 from evalsympy import eval_poly
 from sympy import poly
 poly_var = str(poly(sol).gen)
-score, error = eval_poly(answers['math'], sol, var='x', form=poly_form)
+score, error = eval_poly(answers['math'], sol, var=poly_var, form=poly_form)
 feedback = message[error]
 ==
 
