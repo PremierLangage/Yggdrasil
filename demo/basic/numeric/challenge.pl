@@ -20,7 +20,7 @@ if not isinstance(ans, int):
 elif ans % a != 0 or ans % b != 0:
     score = 0
     feedback = f"Ce nombre n'est pas un multiple de {a} et {b}"
-elif ans <= c:
+elif ans > c:
     score = 0
     feedback = f"Ce nombre n'est pas inférieur à {c}."
 else:
