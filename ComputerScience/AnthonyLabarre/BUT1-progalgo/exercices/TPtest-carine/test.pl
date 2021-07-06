@@ -16,7 +16,7 @@ except Exception as e:
     grade=(0,""" Votre code ne compile pas""")
 else:
     if somme == a+b :
-        grade = (100,'<span class="success-state">"Bonne réponse"</span>)
+        grade = (100,'<span class="success-state">"Bonne reponse"</span>)
     else:
         grade = (0,"""booo""")
 ==
