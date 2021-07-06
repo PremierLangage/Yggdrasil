@@ -17,7 +17,8 @@ Calcul le produit de {{A}} et {{P}}.
 ==
 
 before==
-
+import random
+random.seed(seed)
 A = randint(1, 5)*10
 P = choice([1, 2, 5, 7, -3])
 
