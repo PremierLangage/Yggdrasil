@@ -19,7 +19,7 @@ evaluator ==
 
 if ans != sol :
     score =0
-    feedback = "T es nul"
+    feedback = f"T es nul c'est {sol}"
 else :
     score = 100
     feedback = "Bravo biloute"
