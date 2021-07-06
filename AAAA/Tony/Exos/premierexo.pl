@@ -4,7 +4,7 @@ title = "Addition pour les nuls"
 extends = /model/basic/numeric.pl
 
 question ==  
-Calculer {{ A}} + {{P }}
+Calculer {{A}} + {{P}}
 
 ==
  
@@ -29,6 +29,6 @@ if ans != sol :
     feedback = f"T es nul c'est {sol}"
 else :
     score = 100
-    feedback = "Bravo biloute {sol}"
+    feedback = "Bravo biloute"
 
 ==
