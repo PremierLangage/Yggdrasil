@@ -7,6 +7,8 @@ extends = /model/basic/numeric.pl
 
 # avec aléa
 
+title= test1
+
 question==
 Calcul le produit de {{A}} et {{P}}.
 
