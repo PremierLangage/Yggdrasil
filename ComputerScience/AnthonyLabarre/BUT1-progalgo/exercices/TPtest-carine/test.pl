@@ -18,9 +18,9 @@ except Exception as e:
     grade=(0,""" Votre code ne compile pas""")
 else:
     if somme == a+b :
-        grade = (100,'<span class="success-state">Bonne réponse</span>')
+        grade = (100,'<span class="success-state">Correct !</span>')
     else:
-        grade = (0,"""booo""")
+        grade = (0,'<span class="fail-state">la variable **somme** n\'a pas la bonne valeur</span>')
 ==
 
 title== #|html|
