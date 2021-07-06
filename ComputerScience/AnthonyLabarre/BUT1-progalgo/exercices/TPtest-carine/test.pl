@@ -25,6 +25,9 @@ print("debug : " + response['answer'], file=sys.stderr)
 a = random.randint(1,1000)
 b = random.randint(1,1000)
 
+def good(msg):
+    return u'<span class="success-state"> ' + msg + ' </span>'
+
 try:
     exec(response['answer'])
 except Exception as e:
@@ -36,8 +39,10 @@ else:
         grade=(0,'<span class="error-state">la variable  <strong>somme</strong> n\'existe pas</span>')
     else :
         if somme == a+b :
-            grade = (100,u'<span class="success-state"> Bonne r&#233;ponse ! </span>')
-            grade = (100,u'<span class="success-state"> Bonne r&#233;ponse ! </span>')
+            msg = 'Bonne r&#233;ponse !'
+            if(';' in response['answer']):
+                msg += '\nRemarque : le point-virgule est inutile')
+            grade = (100, good(msg))
         else:
             grade = (0,'<span class="error-state">la variable <strong>somme</strong> n\'a pas la bonne valeur</span>')
 ==
