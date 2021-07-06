@@ -20,3 +20,8 @@ evaluator ==
 if ans != sol :
     score =0
     feedback = "T es nul"
+else :
+    score = 100
+    feedback = "Bravo biloute"
+
+==
