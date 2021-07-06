@@ -15,7 +15,7 @@ b = random.randint(1,1000)
 try:
     exec(response['answer'])
 except Exception as e:
-    grade=(0,""" Votre code ne compile pas""")
+    grade=(0,'<span class="error-state">Le code ne compile pas, il provoque l\'erreur suivante : </span>' + e)
 else:
     try:
         somme = somme+0
