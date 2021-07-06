@@ -1,3 +1,5 @@
+# coding: utf-8
+
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 
