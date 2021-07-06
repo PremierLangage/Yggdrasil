@@ -11,7 +11,7 @@ before==
 a = randint(-3, 3)
 b = randint(-3, 3)
 while True:
-    c = random.randint(-3, 3)
+    c = randint(-3, 3)
     if c != a: break
 d = randint(-3, 3)
 
