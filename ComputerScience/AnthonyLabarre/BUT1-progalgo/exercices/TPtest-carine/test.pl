@@ -18,8 +18,6 @@ form=@ /form/text_editor.html
 # Script d'évaluation 
 evaluator== #|python|
 import random
-random.seed(seed)
-
 
 a = random.randint(1,1000)
 b = random.randint(1,1000)
