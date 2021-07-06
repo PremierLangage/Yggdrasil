@@ -1,7 +1,5 @@
 extends = /model/basic/input.pl
 
-title = Listening
-
 audiofile =$ /demo/media/english_sentence.mp3
 
 question ==
