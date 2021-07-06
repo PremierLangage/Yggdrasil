@@ -9,6 +9,9 @@ extends = /model/basic/numeric.pl
 
 title= test1
 
+settings.oneshot=yes
+settings.allow_reroll=yes
+
 question==
 Calcul le produit de {{A}} et {{P}}.
 
