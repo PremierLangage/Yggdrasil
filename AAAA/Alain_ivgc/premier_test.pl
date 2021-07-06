@@ -9,7 +9,6 @@ extends = /model/basic/numeric.pl
 
 title= test1
 
-settings.oneshot=yes
 settings.allow_reroll=yes
 
 question==
