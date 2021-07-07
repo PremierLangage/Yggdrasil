@@ -41,7 +41,7 @@ else:
     if not 'somme' in locals():
         grade = tools.grade_wrong("La variable  <strong>somme</strong> n'existe pas")
     else :
-        grade = tools.check('somme',somme,a+b)
+        grade = tools.check(code, 'somme', somme, a+b)
         del somme # pour eviter que la variable existe si l'on change le code sans refresh.
 ==
 
