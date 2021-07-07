@@ -5,7 +5,7 @@
 # pour importer ses propres modules
 @ ../../display_tools.py
 
-grader = @/grader/evaluator.py
+grader =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 
