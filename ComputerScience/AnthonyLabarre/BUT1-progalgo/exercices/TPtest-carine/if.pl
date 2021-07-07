@@ -32,7 +32,6 @@ x = random.randint(41,43)
 
 # tente d'executer, puis verifie la présence de la variable demandée. si ok, check valeur et syntaxe.
 try:
-    exec(code)
     exec(code2)
 except Exception as e:
     msg = tools.wrong("Le code ne compile pas, il provoque l'erreur suivante : " + str(e))
