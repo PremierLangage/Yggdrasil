@@ -12,10 +12,7 @@ text== #|html|
 Initialisez la variable **somme** avec la somme des variables **a** et **b** (qui existent déjà).
 ==
 
-
-form==
 form=@ /form/text_editor.html 
-==
 
 op1 = 32
 op2 = 26
