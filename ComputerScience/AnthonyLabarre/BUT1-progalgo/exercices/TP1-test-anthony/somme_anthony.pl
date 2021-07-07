@@ -13,20 +13,10 @@ form=@ ../../forms/editeur_une_ligne.html
 
 title== #|html|
 Somme de variables
-<script>
-    editor.setOption("maxLines", 1);
-    form.editor.setTheme("dark");
-</script>
 ==
 
 text== #|html|
 Initialisez la variable **somme** avec la somme des variables **a** et **b** (qui existent déjà).
-<script>
-    editor.setOption("maxLines", 1);
-        form.editor.setTheme("dark");
-
-</script>
-
 ==
 
 # Script d'évaluation 
