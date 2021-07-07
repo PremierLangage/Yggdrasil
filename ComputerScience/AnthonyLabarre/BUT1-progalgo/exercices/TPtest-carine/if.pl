@@ -25,10 +25,11 @@ import re
 import tools # fonctions auxiliaires
 
 code = response['answer']
-#print("debug : ", code, file=sys.stderr) 
+print("debug : ", code, file=sys.stderr) 
 
 code2 = re.sub("print\(", "_foo=\(", code)
 
+print("debug : ", code2, file=sys.stderr) 
 x = random.randint(41,43)
 
 # tente d'executer, puis verifie la présence de la variable demandée. si ok, check valeur et syntaxe.
