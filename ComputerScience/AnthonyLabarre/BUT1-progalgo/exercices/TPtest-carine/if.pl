@@ -26,17 +26,6 @@ import tools # fonctions auxiliaires
 code = response['answer']
 code2 = re.sub("print *\(", "_foo=(", code)
 
-def check(name, var, val):
-    if var != val :
-        return tools.grade_wrong("l'affichage n'est pas correct : " + str(var) + " au lieu de " + val)
-
-    # ajout des éventuelles remarques de syntaxe
-    msg = tools.good('Bonne r&#233;ponse !') + tools.remarks([';'], code)
-    if code.count("\n") < 3:
-        msg += tools.rmk('Il vaudrait mieux indenter tout le code')
-    return 100, msg
-
-
 # tente d'executer, puis verifie la présence de la variable demandée. si ok, check valeur et syntaxe.
 try:
     x=42
@@ -49,14 +38,14 @@ else:
          grade = tools.grade_wrong("il manque un cas")    
     else:
         if _foo != 'OK':
-            grade = 0, 'nope'
+            grade = tools.grade_wrong('ne fonctionne pas pour x = ' + x)
         else:
             x=43
             exec(code2)
             if _foo != 'KO':
-                grade = 0, 'nope2'
+                grade = tools.grade_wrong("ne fonctionne pas pour x = " + x )
             else:
-                grade= 100, 'good'
+                grade= 100, tools.good('Bonne r&#233;ponse !')
 ==
 
 
