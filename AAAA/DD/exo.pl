@@ -1,18 +1,19 @@
 extends = /model/math/expr.pl
 
 before ==
-x, y = symbols('x y')
-a = randint(-5, 5, [0])
-b = randint(-5, 5, [0])
-expr = a*y + b
-sol = (x - b)/a
+from sympy import Limit
+x = Symbol('x')
+f, g = sample([2*x+1, x+2, 2*x**2+1, x**2+1], 2)
+lim = Limit(f/g, x, oo)
+sol = lim.doit()
 ==
 
 question ==
-Soit deux nombres $! x !$ et $! y !$ tels que $! x = {{ expr|latex }}. !$ 
-Exprimer $! y !$ en fonction $! x !$.
+Déterminer la limite suivante.
 ==
 
 prefix ==
-$! y = !$
+$! \displaystyle {{ lim|latex }} = !$
 ==
+
+keypad = ["+infty", "-infty"]
