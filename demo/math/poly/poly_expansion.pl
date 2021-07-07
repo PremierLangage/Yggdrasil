@@ -10,8 +10,7 @@ sol = expr.expand()
 
 question ==
 Développer l'expression suivante :
-
 $$ {{ expr|latex }}. $$
 ==
 
-poly_form = expanded
+poly_form = "expanded"
