@@ -1,4 +1,3 @@
-
 # coding: utf-8
 
 @ /utils/sandboxio.py
@@ -6,7 +5,7 @@
 # pour importer ses propres modules
 @ ../../display_tools.py
 
-grader=@ /grader/evalfunc.py
+grader=@ /grader/evaluator.py
 
 
 title== #|html|
@@ -22,7 +21,7 @@ form=@ /form/text_editor.html
 
 
 # Script d'évaluation 
-evalfunc== #|python|
+evaluator== #|python|
 import random
 import sys 
 import display_tools as display
@@ -35,12 +34,12 @@ b = random.randint(1,1000)
 try:
     exec(response['answer'])
 except Exception as e:
-    return display.grade_wrong('Le code ne compile pas, il provoque l\'erreur suivante : ' + str(e))
+    grade = display.grade_wrong('Le code ne compile pas, il provoque l\'erreur suivante : ' + str(e))
 else:
     try:
         somme+=0 # permet de lever une erreur si la variable n'existe pas
     except Exception as e:
-        return display.grade_wrong('la variable  <strong>somme</strong> n\'existe pas')
+        grade = display.grade_wrong('la variable  <strong>somme</strong> n\'existe pas')
     else :
         if somme == a+b :
             msg = display.good('Bonne r&#233;ponse !')
@@ -50,12 +49,12 @@ else:
                 msg += display.rmk('les parenth&#232;ses sont inutiles')
             if('++' in response['answer']):
                 msg += display.rmk('un seul + suffit')
-            return (100, msg)
+            grade = (100, msg)
         else:
             if('==' in response['answer']):
-                return display.grade_wrong('== ne permet pas de faire une affectation')
+                grade = display.grade_wrong('== ne permet pas de faire une affectation')
             else:
-                return display.grade_wrong('la variable <strong>somme</strong> n\'a pas la bonne valeur')
+                grade = display.grade_wrong('la variable <strong>somme</strong> n\'a pas la bonne valeur')
 ==
 
 
