@@ -1,12 +1,16 @@
 extends = /model/basic/radio.pl
 
 question ==
-Quel pays a pour capitale Paris ?
+À quel siècle vivait Victor Hugo ?
 ==
 
 items ==
-France
-Allemagne
-Italie
-Espagne
+XVIIe siècle
+XVIIIe siècle
+XIXe siècle
+XXe siècle
 ==
+
+shuffled = False
+
+indsol = 2
