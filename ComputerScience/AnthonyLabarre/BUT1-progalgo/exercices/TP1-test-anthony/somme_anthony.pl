@@ -13,7 +13,7 @@ Somme de variables
 <script>
     editor.setOption("maxLines", 1);
     editor.maxLines = 1;
-    editor.setTheme("ace/theme/twilight");
+    editor.setTheme("dark");
 </script>
 ==
 
