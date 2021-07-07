@@ -28,10 +28,10 @@ def remarks(lst,code):
             msg +=  rmk(_dico_rmk[p])
     return msg
 
-def check(name, var, val):
+def check(code, name, var, val):
     if var != val :
-        return grade_wrong('la variable <strong>' + name + '</strong> n\'a pas la bonne valeur')
+        return tools.grade_wrong('la variable <strong>' + name + '</strong> n\'a pas la bonne valeur')
 
     # ajout des éventuelles remarques de syntaxe
-    return 100, good('Bonne r&#233;ponse !') + remarks([';','('], code)
+    return 100, tools.good('Bonne r&#233;ponse !') + tools.remarks([';','('], code)
 
