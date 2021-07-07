@@ -11,10 +11,10 @@ B = rand_int_matrix(n, n, coeffbound)
 sol = A*B
 ==
 
-text ==
+question ==
 Soit les matrices
 $$ A = \left( {{ A|latex }} \right) \text{ et } B = \left( {{ B|latex }} \right) $$ 
 Calculer $! A B !$.
 ==
 
-resizable % false
+resizable = False
