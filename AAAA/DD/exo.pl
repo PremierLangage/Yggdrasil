@@ -5,10 +5,10 @@ extends = /model/basic/input.pl
 before ==
 f = open('pays_europe.csv')
 row = csv_choice(f)
-capitale = row['capitale']
-sol = row['pays']
+pays = row['pays']
+sol = row['capitale']
 ==
 
 question ==
-Quel pays a pour capitale {{capitale}} ?
+Quel est la capitale de {{ pays }} ?
 ==
