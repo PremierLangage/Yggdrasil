@@ -19,6 +19,24 @@ Initialisez la variable **somme** avec la somme des variables **a** et **b** (qu
 #un éditeur simple, fond blanc, pas de chois de langage
 form=@ /form/text_editor.html 
 
+before==#|python|
+# si la variable demandée existe (et pas d'erreur de compil, évidement)
+def check(somme):
+    # bonne valeur ?
+    if somme != a+b :
+        return display.grade_wrong('la variable <strong>somme</strong> n\'a pas la bonne valeur')
+
+    # remarques de syntaxe
+    msg = display.good('Bonne r&#233;ponse !')
+    if(';' in code):
+        msg += display.rmk('le point-virgule est inutile')
+    if('(' in code):
+        msg += display.rmk('les parenth&#232;ses sont inutiles')
+    if('++' in code):
+        msg += display.rmk('un seul + suffit')
+    return (100, msg)
+==
+
 
 # Script d'évaluation 
 evaluator== #|python|
@@ -31,20 +49,6 @@ print("debug : ", code ,'==' in code, file=sys.stderr)
 
 a = random.randint(1,1000)
 b = random.randint(1,1000)
-
-def check(somme):
-    if somme != a+b :
-        return display.grade_wrong('la variable <strong>somme</strong> n\'a pas la bonne valeur')
-
-    msg = display.good('Bonne r&#233;ponse !')
-    if(';' in code):
-        msg += display.rmk('le point-virgule est inutile')
-    if('(' in code):
-        msg += display.rmk('les parenth&#232;ses sont inutiles')
-    if('++' in code):
-        msg += display.rmk('un seul + suffit')
-    return (100, msg)
-
 
 # tente d'executer, puis verifie la présence de la variable demandée. si ok, check valeur et syntaxe.
 try:
