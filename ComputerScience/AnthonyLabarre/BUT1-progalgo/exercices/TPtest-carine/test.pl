@@ -45,11 +45,11 @@ else:
         if somme == a+b :
             msg = display.good('Bonne r&#233;ponse !')
             if(';' in response['answer']):
-                msg += '<span style="color:blue;"></br></br> Remarque : le point-virgule est inutile :)</span>'
+                msg += display.rmk('le point-virgule est inutile')
             if('(' in response['answer']):
-                msg += '<span style="color:blue;"></br></br> Remarque : les parenth&#232;ses sont inutiles :)</span>'
+                msg += display.rmk('les parenth&#232;ses sont inutiles')
             if('++' in response['answer']):
-                msg += '<span style="color:blue;"></br></br> Remarque : un seul + suffit :)</span>'
+                msg += display.rmk('un seul + suffit')
             grade = (100, msg)
         else:
             if('==' in response['answer']):
