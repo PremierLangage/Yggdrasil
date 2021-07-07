@@ -14,7 +14,7 @@ Initialisez la variable **somme** avec la somme des variables **a** et **b** (qu
 
 
 form==
-<input id="form_answer" type="number" value="{{ answers__.answer }}" required/>
+form=@ /form/text_editor.html 
 ==
 
 op1 = 32
