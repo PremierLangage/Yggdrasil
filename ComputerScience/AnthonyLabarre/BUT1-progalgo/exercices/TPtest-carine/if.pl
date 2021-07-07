@@ -40,15 +40,23 @@ def check(name, var, val):
 # tente d'executer, puis verifie la présence de la variable demandée. si ok, check valeur et syntaxe.
 try:
     x=42
-    exec(re.sub("print *\(", "_foo=(", code))
-    x=43
-    exec(re.sub("print *\(", "_foo+=(", code))
+    exec(code2)
 except Exception as e:
     msg = tools.wrong("Le code ne compile pas, il provoque l'erreur suivante : " + str(e))
     grade = 0, msg 
 else:
-    grade = check('_foo', _foo, 'OK' if x==42 else 'KO')
-    del _foo # pour eviter que la variable existe si l'on change le code sans refresh.
+    if not '_foo' in locals():
+         grade = tools.grade_wrong("il manque un cas")    
+    else:
+        if _foo != 'OK':
+            grade = 0, 'nope'
+        else:
+            x=43
+            exec(code2)
+            if _foo != 'K0':
+                grade = 0, 'nope2'
+            else
+                grade= 100, 'good'
 ==
 
 
