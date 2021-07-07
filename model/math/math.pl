@@ -39,7 +39,7 @@ style.basic == #|css|
 
 .icon-times-after p::after {
     font-family: "Font Awesome 5 Free";
-    color: #8B0000;
+    color: #dc3545;
     margin-left: 1em;
     content: "\f00d";
     vertical-align: middle;
@@ -57,7 +57,7 @@ style.basic == #|css|
 
 .icon-times-before p::before {
     font-family: "Font Awesome 5 Free";
-    color: #8B0000;
+    color: #dc3545;
     margin-right: 1em;
     content: "\f00d";
     vertical-align: middle;
