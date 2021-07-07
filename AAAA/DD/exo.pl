@@ -16,10 +16,11 @@ elif article == "le":
     partitif = "du "
 else:
     partitif = "de la "
-    
+
 sol = row['capitale']
 ==
 
 question ==
-Quelle est la capitale {{ partitif }}{{ pays }} ?
+Soit la fonction $! f : \mathbb{R} \rightarrow \mathbb{R} !$ telle que
+$$ f(x) = \frac{1}{1+x^2}. $$
 ==
