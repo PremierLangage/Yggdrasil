@@ -12,12 +12,12 @@
     {% endwith %}
 {% endwith %}
 
-<script src="{{ static('js/ace/ace.js') }}" type="text/javascript" charset="utf-8"></script>
+<script src="{{ static('js/ace/ace.js') }}" type="text/javascript" charset="utf-8">    editor.maxLines = 1;
+</script>
 <script src="{{ static('js/ace/ext-modelist.js') }}"></script>
 <script>
     window.define = window.define || ace.define;
     var editor = ace.edit('editor');
-    editor.maxLines = 1;
 
     // Set the theme according to user's preferences.
     editor.setTheme(
