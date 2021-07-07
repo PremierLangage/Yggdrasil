@@ -1,49 +1,14 @@
-extends = /model/basic/checkbox_rw.pl
+extends = /model/basic/input.pl
+
+@ /demo/data/pays_europe.csv
+
+before ==
+f = open('pays_europe.csv')
+row = csv_choice(f)
+capitale = row['capitale']
+sol = row['pays']
+==
 
 question ==
-*texte en italique*
-
-**texte en gras**
-
-`verbatim`
-
-Liste non-ordonnée:
-
-* Item
-* Item
-    * Item
-    * Item
-* Item
-
-Liste ordonnée:
-
-1. Item
-2. Item
-3. Item
+Quel pays a pour capitale {{capitale}} ?
 ==
-
-right ==
-Barcelone
-Milan
-New-York
-Montréal
-Saint-Pétersbourg
-Genève
-Bombay
-Shanghai
-==
-
-wrong ==
-Paris
-Berlin
-Rome
-Madrid
-Moscou
-Ottawa
-Washington
-Pékin
-==
-
-nbitems = 4
-minright = 1
-maxright = 2
