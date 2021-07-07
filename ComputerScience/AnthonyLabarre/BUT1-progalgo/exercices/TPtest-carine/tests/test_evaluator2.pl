@@ -56,7 +56,7 @@ except Exception as e:
     grade = display.grade_wrong('Le code ne compile pas, il provoque l\'erreur suivante : ' + str(e))
 else:
     if not 'somme' in locals():
-            msg = display.wrong('la variable  <strong>somme</strong> n\'existe pas')
+        msg = display.wrong('la variable  <strong>somme</strong> n\'existe pas')
         if('==' in code):
             msg += display.rmk('== ne permet pas de faire une affectation')
         grade = 0, msg
