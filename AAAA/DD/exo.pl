@@ -1,7 +1,11 @@
 extends = /model/basic/checkbox_rw.pl
 
 question ==
-Parmi ces villes, lesquelles ne sont pas des capitales ?
+*texte en italique*
+
+**texte en gras**
+
+`verbatim`
 ==
 
 right ==
