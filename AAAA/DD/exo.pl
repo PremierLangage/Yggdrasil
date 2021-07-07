@@ -1,16 +1,15 @@
-extends = /model/basic/radio.pl
+extends = /model/basic/checkbox_rw.pl
 
 question ==
-À quel siècle vivait Victor Hugo ?
+Parmi ces villes, lesquelles ne sont pas des capitales ?
 ==
 
-items ==
-XVIIe siècle
-XVIIIe siècle
-XIXe siècle
-XXe siècle
+right ==
+Barcelone
+Milan
 ==
 
-shuffled = False
-
-indsol = 2
+wrong ==
+Paris
+Berlin
+==
