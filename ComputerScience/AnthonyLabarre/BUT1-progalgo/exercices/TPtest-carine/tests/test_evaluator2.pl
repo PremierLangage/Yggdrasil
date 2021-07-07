@@ -31,12 +31,7 @@ code = response['answer']
 a = random.randint(1,1000)
 b = random.randint(1,1000)
 
-
-drmk={
-    ';':'le point-virgule est inutile',
-    '(' :'les parenth&#232;ses sont inutiles'
-}
-# si la variable demandée existe (et pas d'erreur de compil, évidement)
+# teste si la variable demandée existe (et pas d'erreur de compil, évidement)
 def check(somme):
     # bonne valeur ?
     if somme != a+b :
@@ -44,13 +39,7 @@ def check(somme):
 
     # remarques de syntaxe
     msg = display.good('Bonne r&#233;ponse !')
-    for p in [';','(']:
-        if(p in code):
-            msg += display.rmk(drmk[p])
-    if('++' in code):
-        msg += display.rmk('un seul + suffit')
-    if('\n' in code):
-        msg += display.rmk("le code peut s'écrire sur une seule ligne")
+    msg += remarks([';','('], code):
     return (100, msg)
 
 
