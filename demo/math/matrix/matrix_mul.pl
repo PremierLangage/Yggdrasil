@@ -5,8 +5,8 @@ before ==
 from randsympy import rand_int_matrix
 n = 2
 coeffbound = 3
-A = rand_int_matrix(n, n, coeffbound)
-B = rand_int_matrix(n, n, coeffbound)
+A = randmatrix(n, n, coeffbound)
+B = randmatrix(n, n, coeffbound)
 sol = A*B
 ==
 
