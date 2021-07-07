@@ -6,9 +6,10 @@ before ==
 f = open('pays_europe.csv')
 row = csv_choice(f)
 capitale = row['capitale']
-sol = row['pays']
+article = row['article']
+sol = row['pays'] 
 ==
 
 question ==
-Quel pays a pour capitale {{capitale}} ?
+Quel est la  {{capitale}} de {{article}} {{pays}}?
 ==
