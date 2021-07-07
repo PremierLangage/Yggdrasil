@@ -45,10 +45,12 @@ else:
             msg = display.good('Bonne r&#233;ponse !')
             if(';' in response['answer']):
                 msg += '<span style="color:blue;"></br></br> Remarque : le point-virgule est inutile :)</span>'
+            if('(' in response['answer']):
+                msg += '<span style="color:blue;"></br></br> Remarque : les parenth&#232;ses sont inutiles :)</span>'
             grade = (100, msg)
         else:
             if('==' in response['answer']):
-                grade = grade_wrong('== ne permet pas de faire un affectation')
+                grade = grade_wrong('== ne permet pas de faire une affectation')
             else:
                 grade = grade_wrong('la variable <strong>somme</strong> n\'a pas la bonne valeur')
 ==
