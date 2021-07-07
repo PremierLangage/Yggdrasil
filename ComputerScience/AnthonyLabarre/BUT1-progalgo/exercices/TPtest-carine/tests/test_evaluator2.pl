@@ -5,8 +5,8 @@
 # pour importer ses propres modules
 @ ../../display_tools.py
 
-grader = @ /grader/evaluator.py
-builder = @ /builder/before.py
+grader = @/grader/evaluator.py
+builder = @/builder/before.py
 
 
 title== #|html|
