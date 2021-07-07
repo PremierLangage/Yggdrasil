@@ -17,3 +17,7 @@ Déterminer la dérivée de
 $! f \mapsto \displaystyle {{ f|latex }} !$
 ==
  
+#solution pour modifier le message de solution
+solution == 
+La dérivée est 12
+==
