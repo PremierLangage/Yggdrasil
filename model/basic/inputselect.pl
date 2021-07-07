@@ -31,12 +31,24 @@ inputblock ==
 ==
 
 evaluator ==
-if input.value == sol:
+if ans == sol:
     score = 100
-elif input.value not in input.autocomplete:
+elif ans not in input.autocomplete:
     feedback = "La réponse doit faire partie des propositions."
     score = -1
 else:
     score = 0
 ==
 
+getans ==
+ans = input.value
+==
+
+evalprocess ==
+if score == 100:
+    input.suffix = r'<i class="fas fa-check" style="color: green"></i>'
+elif score >= 0:
+    input.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
+if score != -1:
+    input.disabled = True
+==
