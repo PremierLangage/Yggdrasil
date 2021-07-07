@@ -11,6 +11,7 @@ lim = Limit(f/g, x, oo)
 sol = lim.doit()
 ==
 
+#Double dollar pour mettre le latex centré.
 question ==
 Déterminer la limite suivante.
 ==
