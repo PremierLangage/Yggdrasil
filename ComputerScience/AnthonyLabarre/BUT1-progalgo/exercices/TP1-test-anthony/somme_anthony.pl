@@ -18,7 +18,9 @@ Initialisez la variable **somme** avec la somme des variables **a** et **b** (qu
 
 #un éditeur simple, fond blanc, pas de chois de langage
 form=@ /form/text_editor.html 
-
+<script>
+editor.setOption("maxLines", 1)
+</script>
 # Script d'évaluation 
 evaluator== #|python|
 import random
