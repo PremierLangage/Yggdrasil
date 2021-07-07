@@ -1,5 +1,7 @@
 extends = /model/basic/radio.pl
 
+#Pour plusieurs réponses sélectionnables  : checkbox. indsol doit être la liste des indices de réponse.
+
 question ==
 Quelle est la couleur du cheval blanc d'Henri 4?
 ==
@@ -12,5 +14,6 @@ je sais pas je suis daltonien
 la réponse d
 ==
 
-indsol = 0
+#indice de la solution
+indsol = 0 
 shuffled = False
