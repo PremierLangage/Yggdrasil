@@ -1,12 +1,10 @@
 # coding: utf-8
-
 @ /utils/sandboxio.py
 
 # pour importer ses propres modules
 @ ../tools.py
 
 grader=@ /grader/evaluator.py
-
 
 title== #|html|
 Somme de variables
