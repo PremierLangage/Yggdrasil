@@ -15,7 +15,9 @@ radio2.set_sol(1)
 ==
 
 inputblock ==
-{{ radio|component }}
+{{ radio1|component }}
+
+{{ radio2|component }}
 ==
 
 evaluator ==
