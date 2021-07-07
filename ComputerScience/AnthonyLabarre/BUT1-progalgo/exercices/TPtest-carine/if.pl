@@ -27,7 +27,7 @@ import tools # fonctions auxiliaires
 code = response['answer']
 #print("debug : ", code, file=sys.stderr) 
 
-code2 = re.sub("print","_foo=",code)
+code2 = re.sub("print *(","_foo=(",code)
 
 x = random.randint(41,43)
 
