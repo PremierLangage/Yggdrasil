@@ -13,8 +13,21 @@ else:
 input.autocomplete = _items_
 ==
 
+prefix ==
+Réponse :
+==
+
 inputblock ==
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-auto" style="padding:0;">
+{{ prefix }} 
+    </div>
+    <div class="col col-sm-6 col-md-4" style="padding-left:0.5em; padding-right:0;">
 {{ input|component }}
+    </div>
+  </div>
+</div>
 ==
 
 evaluator ==
