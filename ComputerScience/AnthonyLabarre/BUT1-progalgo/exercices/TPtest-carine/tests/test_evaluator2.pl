@@ -36,9 +36,7 @@ try:
 except Exception as e:
     grade = display.grade_wrong('Le code ne compile pas, il provoque l\'erreur suivante : ' + str(e))
 else:
-    try:
-        somme+=0 # permet de lever une erreur si la variable n'existe pas
-    except Exception as e:
+    if not 'somme' in locals():
         grade = display.grade_wrong('la variable  <strong>somme</strong> n\'existe pas')
     else :
         if somme == a+b :
