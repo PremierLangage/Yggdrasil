@@ -10,6 +10,9 @@ grader=@ /grader/evaluator.py
 
 title== #|html|
 Somme de variables
+<script>
+    editor.setOption("maxLines", 1);
+</script>
 ==
 
 text== #|html|
