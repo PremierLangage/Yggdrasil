@@ -35,31 +35,34 @@ def step1():
     try:
         exec(response['answer'])
     except Exception as e:
-        grade = display.grade_wrong('Le code ne compile pas, il provoque l\'erreur suivante : ' + str(e))
+        return None, display.grade_wrong('Le code ne compile pas, il provoque l\'erreur suivante : ' + str(e))
     else:
         try:
             somme+=0 # permet de lever une erreur si la variable n'existe pas
         except Exception as e:
-            grade = display.grade_wrong('la variable  <strong>somme</strong> n\'existe pas')
+            return None, display.grade_wrong('la variable  <strong>somme</strong> n\'existe pas')
         else :
-            return somme
-def step2(somme):
-    if somme == a+b :
-        msg = display.good('Bonne r&#233;ponse !')
-        if(';' in response['answer']):
-            msg += display.rmk('le point-virgule est inutile')
-        if('(' in response['answer']):
-            msg += display.rmk('les parenth&#232;ses sont inutiles')
-        if('++' in response['answer']):
-            msg += display.rmk('un seul + suffit')
-        grade = (100, msg)
-    else:
-        if('==' in response['answer']):
-            grade = display.grade_wrong('== ne permet pas de faire une affectation')
-        else:
-            grade = display.grade_wrong('la variable <strong>somme</strong> n\'a pas la bonne valeur')
-somme=step1()
-step2(somme)
+            return somme, 100
+
+somme,grade=step1()
+
+# def step2(somme):
+#     if somme == a+b :
+#         msg = display.good('Bonne r&#233;ponse !')
+#         if(';' in response['answer']):
+#             msg += display.rmk('le point-virgule est inutile')
+#         if('(' in response['answer']):
+#             msg += display.rmk('les parenth&#232;ses sont inutiles')
+#         if('++' in response['answer']):
+#             msg += display.rmk('un seul + suffit')
+#         grade = (100, msg)
+#     else:
+#         if('==' in response['answer']):
+#             grade = display.grade_wrong('== ne permet pas de faire une affectation')
+#         else:
+#             grade = display.grade_wrong('la variable <strong>somme</strong> n\'a pas la bonne valeur')
+# somme=step1()
+# step2(somme)
 ==
 
 
