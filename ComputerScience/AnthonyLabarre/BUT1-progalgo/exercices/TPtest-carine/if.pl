@@ -48,7 +48,7 @@ except Exception as e:
     msg = tools.wrong("Le code ne compile pas, il provoque l'erreur suivante : " + str(e))
     grade = 0, msg 
 else:
-    grade = tools.check(code, '_foo', _foo, 'OK' if x==42 else 'KO')
+    grade = check(code, '_foo', _foo, 'OK' if x==42 else 'KO')
     del _foo # pour eviter que la variable existe si l'on change le code sans refresh.
 ==
 
