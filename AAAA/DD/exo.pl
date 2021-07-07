@@ -10,14 +10,14 @@ article = row['article']
 if article == "l":
     partitif = "de l'"
 elif article == "les":
-    partitif = "des"
+    partitif = "des "
 elif article == "le":
-    partitif = "du"
+    partitif = "du "
 else:
-    partitif = "de la"
+    partitif = "de la "
 sol = row['capitale']
 ==
 
 question ==
-Quel est la capitale de {{ partitif }} {{ pays }} ?
+Quel est la capitale de {{ partitif }}{{ pays }} ?
 ==
