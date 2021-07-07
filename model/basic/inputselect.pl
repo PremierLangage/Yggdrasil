@@ -34,6 +34,7 @@ evaluator ==
 if input.value == sol:
     score = 100
 elif input.value not in input.autocomplete:
+    feedback = "La réponse doit faire partie des propositions."
     score = -1
 else:
     score = 0
