@@ -10,7 +10,7 @@ grader=@ /grader/evaluator.py
 
 #un éditeur simple, fond blanc, pas de chois de langage
 editor.maxLines = 1;
-editor.theme = "dark"
+editor.setTheme(dark)
 form=@ /form/text_editor.html 
 
 title== #|html|
