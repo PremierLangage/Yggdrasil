@@ -53,7 +53,7 @@ else:
         else:
             x=43
             exec(code2)
-            if _foo != 'K0':
+            if _foo != 'KO':
                 grade = 0, 'nope2'
             else:
                 grade= 100, 'good'
