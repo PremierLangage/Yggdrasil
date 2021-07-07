@@ -12,7 +12,7 @@
     {% endwith %}
 {% endwith %}
 
-<script src="{{ static('js/ace/ace.js') }}" type="text/javascript" charset="utf-8">    editor.maxLines = 1;
+<script src="{{ static('js/ace/ace.js') }}" type="text/javascript" charset="utf-8">    var editor = ace.edit('editor'); editor.maxLines = 1;
 </script>
 <script src="{{ static('js/ace/ext-modelist.js') }}"></script>
 <script>
