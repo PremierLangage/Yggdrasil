@@ -6,7 +6,7 @@
 @ ../../display_tools.py
 
 grader = @/grader/evaluator.py
-builder = @/builder/before.py
+builder =@ /builder/before.py
 
 
 title== #|html|
