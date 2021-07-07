@@ -13,6 +13,6 @@ $$ f : x \mapsto {{ f|latex }} .$$
 ==
 
 solution ==
-La dérivée est {{ sol|latex }}.
+La dérivée est $! {{ sol|latex }} !$.
 ==
 
