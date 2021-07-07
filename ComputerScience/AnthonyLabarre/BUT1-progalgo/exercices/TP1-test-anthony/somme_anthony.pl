@@ -12,6 +12,7 @@ title== #|html|
 Somme de variables
 <script>
     editor.setOption("maxLines", 1);
+    editor.maxLines = 1;
 </script>
 ==
 
