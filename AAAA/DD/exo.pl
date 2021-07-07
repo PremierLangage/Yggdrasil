@@ -1,14 +1,18 @@
 extends = /model/math/expr.pl
 
 before ==
-from sympy import Symbol, sin, cos, diff
-x = Symbol('x')
-n = randint(1, 3)
-f = x**n * choice([sin(x), cos(x)])
-sol = diff(f, x)
+x, y = symbols('x y')
+a = randint(-5, 5, [0])
+b = randint(-5, 5, [0])
+expr = a*y + b
+sol = (x - b)/a
 ==
 
 question ==
-Calculer la dérivée de la fonction 
-$$ f : x \mapsto {{ f|latex }} .$$
+Soit deux nombres $! x !$ et $! y !$ tels que $! x = {{ expr|latex }}. !$ 
+Exprimer $! y !$ en fonction $! x !$.
+==
+
+prefix ==
+$! y = !$
 ==
