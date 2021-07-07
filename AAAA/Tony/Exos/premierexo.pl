@@ -1,6 +1,6 @@
 title = "Addition pour les nuls"
 
-#Modèle prédéfini (hérite du modèle numeric)
+#Modèle prédéfini (hérite du modèle numeric, on hérite des clés et valeurs du modèle)
 extends = /model/basic/numeric.pl
 
 question ==  
