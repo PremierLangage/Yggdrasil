@@ -3,7 +3,7 @@ extends = /model/math/expr.pl
 before ==
 from sympy import Symbol, sin, diff
 x = Symbol('x')
-f = x**2 * sin(x)
+f = x**2
 sol = diff(f, x)
 ==
 
