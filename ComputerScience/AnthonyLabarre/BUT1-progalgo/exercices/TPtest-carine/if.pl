@@ -37,7 +37,7 @@ def check(name, var, val):
     # ajout des éventuelles remarques de syntaxe
     msg = tools.good('Bonne r&#233;ponse !') + tools.remarks([';'], code)
     if code.count("\n") < 3:
-        msg += tools.rmk('Il vaudt mieux indenter tout le code ")
+        msg += tools.rmk('Il vaudt mieux indenter tout le code')
     return 100, msg
 
 
