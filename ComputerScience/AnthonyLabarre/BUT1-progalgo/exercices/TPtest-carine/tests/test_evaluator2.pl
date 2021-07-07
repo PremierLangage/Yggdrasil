@@ -46,7 +46,7 @@ try:
     exec(code)
 except Exception as e:
     msg = display.wrong("Le code ne compile pas, il provoque l'erreur suivante : " + str(e))
-    grade = 0, msg + + display.remarks(['==','<-',':='], code)
+    grade = 0, msg + display.remarks(['==','<-',':='], code)
 else:
     if not 'somme' in locals():
         grade = display.grade_wrong("La variable  <strong>somme</strong> n'existe pas")
