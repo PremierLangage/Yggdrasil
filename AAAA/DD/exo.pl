@@ -16,4 +16,6 @@ solution ==
 La dérivée est $! {{ sol|latex }} !$.
 ==
 
+checkratsimp = False
+
 message.NotExpr = La réponse n'est pas compréhensible.
