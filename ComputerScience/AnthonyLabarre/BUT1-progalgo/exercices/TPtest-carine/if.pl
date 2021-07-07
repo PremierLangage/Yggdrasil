@@ -38,12 +38,12 @@ else:
          grade = tools.grade_wrong("il manque un cas")    
     else:
         if _foo != 'OK':
-            grade = tools.grade_wrong('ne fonctionne pas pour x = ' + x)
+            grade = tools.grade_wrong('ne fonctionne pas pour x = ' + str(x))
         else:
             x=43
             exec(code2)
             if _foo != 'KO':
-                grade = tools.grade_wrong("ne fonctionne pas pour x = " + x )
+                grade = tools.grade_wrong("ne fonctionne pas pour x = " + str(x) )
             else:
                 grade= 100, tools.good('Bonne r&#233;ponse !')
 ==
