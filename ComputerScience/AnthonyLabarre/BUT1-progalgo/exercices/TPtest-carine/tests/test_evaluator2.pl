@@ -26,12 +26,12 @@ import random
 import sys 
 import display_tools as display
 
-#print("debug : " + response['answer'], file=sys.stderr) 
 
 a = random.randint(1,1000)
 b = random.randint(1,1000)
 
 def step1():
+    print("debug : " + response['answer'], file=sys.stderr) 
     try:
         exec(response['answer'])
     except Exception as e:
