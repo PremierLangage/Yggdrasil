@@ -1,19 +1,14 @@
-extends = /model/math/set.pl
+extends = /model/math/tuple.pl
 
 before ==
-from sympy import Intersection
-A = FiniteSet(*sampleint(1, 9, randint(3, 5)))
-B = FiniteSet(*sampleint(1, 9, randint(3, 5)))
-sol = Intersection(A, B)
+n0 = randint(-5, 5)
+p0 = randint(-5, 5)
+sol = Tuple(n0+p0, n0-p0)
 ==
 
 question ==
-On considère les ensembles $! A= {{ A|latex }} !$ et $! B={{ B|latex }} !$. 
-Déterminer l'ensemble suivant.
-==
+On considère la fonction $! f : \mathbb{Z}^2 \rightarrow \mathbb{Z}^2  !$  définie par :
+$$ f(n, p)= (n+p, n-p) .$$
 
-prefix ==
-$! A \cap B =!$
+Déterminer $! f( {{ n0 }}, {{ p0 }} ). !$
 ==
-
-keypad = ["emptyset"]
