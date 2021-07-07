@@ -17,4 +17,3 @@ La dérivée est $! {{ sol|latex }} !$.
 ==
 
 message.NotExpr = "La réponse n'est pas compréhensible."
-
