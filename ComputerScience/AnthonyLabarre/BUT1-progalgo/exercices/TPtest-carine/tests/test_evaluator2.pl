@@ -57,7 +57,7 @@ except Exception as e:
 else:
     if not 'somme' in locals():
         msg = display.wrong('la variable  <strong>somme</strong> n\'existe pas')
-        if('=' in code):
+        if('==' in code):
             msg += display.rmk('== ne permet pas de faire une affectation')
         grade = 0, msg
     else :
