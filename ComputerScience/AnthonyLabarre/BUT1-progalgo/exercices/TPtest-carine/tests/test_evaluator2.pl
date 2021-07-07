@@ -37,6 +37,7 @@ def step1():
     except Exception as e:
         return None, display.grade_wrong('Le code ne compile pas, il provoque l\'erreur suivante : ' + str(e))
     else:
+        print("debug : " + globals(), file=sys.stderr) 
         try:
             somme+=0 # permet de lever une erreur si la variable n'existe pas
         except Exception as e:
