@@ -35,7 +35,10 @@ def check(name, var, val):
         return tools.grade_wrong("l'affichage n'est pas correct : " + str(var) + " au lieu de " + val)
 
     # ajout des éventuelles remarques de syntaxe
-    return 100, tools.good('Bonne r&#233;ponse !') + tools.remarks([';'], code)
+    msg = tools.good('Bonne r&#233;ponse !') + tools.remarks([';'], code)
+    if code.count("\n") < 3:
+        msg += tools.rmk('Il vaudt mieux indenter tout le code ")
+    return 100, msg
 
 
 # tente d'executer, puis verifie la présence de la variable demandée. si ok, check valeur et syntaxe.
