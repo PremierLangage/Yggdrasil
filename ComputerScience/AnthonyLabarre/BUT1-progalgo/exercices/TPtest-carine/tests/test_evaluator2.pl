@@ -33,9 +33,6 @@ a = random.randint(1,1000)
 b = random.randint(1,1000)
 
 def check(somme):
-    # if('==' in code):
-    #     return display.grade_wrong('== ne permet pas de faire une affectation')
-    
     if somme != a+b :
         return display.grade_wrong('la variable <strong>somme</strong> n\'a pas la bonne valeur')
 
