@@ -1,7 +1,5 @@
 extends = /model/math/poly.pl
 
-title = Factoriser un polynôme
-
 before ==
 x = Symbol('x')
 P = x + randint(-2, 2)
