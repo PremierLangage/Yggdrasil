@@ -25,19 +25,25 @@ import re
 import tools # fonctions auxiliaires
 
 code = response['answer']
-print("debug : ", code, file=sys.stderr) 
-
 code2 = re.sub("print *\(", "_foo=(", code)
 
-print("debug : ", code2, file=sys.stderr) 
 x = random.randint(41,43)
+
+
+def check(name, var, val):
+    if var != val :
+        return tools.grade_wrong("l'affichage n'est pas correct : " + str(var) + " au lieu de " + val)
+
+    # ajout des éventuelles remarques de syntaxe
+    return 100, tools.good('Bonne r&#233;ponse !') + tools.remarks([';'], code)
+
 
 # tente d'executer, puis verifie la présence de la variable demandée. si ok, check valeur et syntaxe.
 try:
     exec(code2)
 except Exception as e:
     msg = tools.wrong("Le code ne compile pas, il provoque l'erreur suivante : " + str(e))
-    grade = 0, msg #+ tools.remarks(['==','<-',':='], code)
+    grade = 0, msg 
 else:
     grade = tools.check(code, '_foo', _foo, 'OK' if x==42 else 'KO')
     del _foo # pour eviter que la variable existe si l'on change le code sans refresh.
