@@ -5,8 +5,7 @@
 # pour importer ses propres modules
 @ ../../display_tools.py
 
-grader =@ /grader/evaluator.py
-builder =@ /builder/before.py
+grader=@ /grader/evaluator.py
 
 
 title== #|html|
@@ -20,7 +19,18 @@ Initialisez la variable **somme** avec la somme des variables **a** et **b** (qu
 #un éditeur simple, fond blanc, pas de chois de langage
 form=@ /form/text_editor.html 
 
-before==#|python|
+# Script d'évaluation 
+evaluator== #|python|
+import random
+import sys 
+import display_tools as display
+
+code = response['answer']
+print("debug : ", code ,'==' in code, file=sys.stderr) 
+
+a = random.randint(1,1000)
+b = random.randint(1,1000)
+
 # si la variable demandée existe (et pas d'erreur de compil, évidement)
 def check(somme):
     # bonne valeur ?
@@ -36,20 +46,7 @@ def check(somme):
     if('++' in code):
         msg += display.rmk('un seul + suffit')
     return (100, msg)
-==
 
-
-# Script d'évaluation 
-evaluator== #|python|
-import random
-import sys 
-import display_tools as display
-
-code = response['answer']
-print("debug : ", code ,'==' in code, file=sys.stderr) 
-
-a = random.randint(1,1000)
-b = random.randint(1,1000)
 
 # tente d'executer, puis verifie la présence de la variable demandée. si ok, check valeur et syntaxe.
 try:
