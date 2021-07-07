@@ -3,7 +3,7 @@ extends = /model/math/input.pl
 before ==
 from sympy import Symbol
 from sympy2latex import latex
-v = Symbol('x')
+v = Symbol('t')
 expr = 1/(1 + v**2)
 expr_latex = latex(expr)
 ==
