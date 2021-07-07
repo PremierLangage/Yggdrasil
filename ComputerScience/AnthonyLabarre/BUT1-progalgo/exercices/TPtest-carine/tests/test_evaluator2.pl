@@ -33,8 +33,8 @@ a = random.randint(1,1000)
 b = random.randint(1,1000)
 
 def check(somme):
-    if('==' in code):
-        return display.grade_wrong('== ne permet pas de faire une affectation')
+    # if('==' in code):
+    #     return display.grade_wrong('== ne permet pas de faire une affectation')
     
     if somme != a+b :
         return display.grade_wrong('la variable <strong>somme</strong> n\'a pas la bonne valeur')
@@ -56,7 +56,10 @@ except Exception as e:
     grade = display.grade_wrong('Le code ne compile pas, il provoque l\'erreur suivante : ' + str(e))
 else:
     if not 'somme' in locals():
-        grade = display.grade_wrong('la variable  <strong>somme</strong> n\'existe pas')
+            msg = display.wrong('la variable  <strong>somme</strong> n\'existe pas')
+        if('==' in code):
+            msg += display.rmk('== ne permet pas de faire une affectation')
+        grade = 0, msg
     else :
         grade = check(somme)
         del somme # pour eviter que la variable existe si l'on change le code sans refresh.
