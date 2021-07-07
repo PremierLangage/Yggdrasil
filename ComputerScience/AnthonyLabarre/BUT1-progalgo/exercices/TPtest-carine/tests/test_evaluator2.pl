@@ -37,10 +37,8 @@ def check(somme):
     if somme != a+b :
         return display.grade_wrong('la variable <strong>somme</strong> n\'a pas la bonne valeur')
 
-    # remarques de syntaxe
-    msg = display.good('Bonne r&#233;ponse !')
-    msg += display.remarks([';','('], code)
-    return (100, msg)
+    # ajout des éventuelles remarques de syntaxe
+    return 100, display.good('Bonne r&#233;ponse !') + display.remarks([';','('], code)
 
 
 # tente d'executer, puis verifie la présence de la variable demandée. si ok, check valeur et syntaxe.
@@ -48,10 +46,7 @@ try:
     exec(code)
 except Exception as e:
     msg = display.wrong("Le code ne compile pas, il provoque l'erreur suivante : " + str(e))
-    for p in ['==','<-',':='] :
-        if p in code:
-            msg += display.rmk(p + ' ne permet pas de faire une affectation')
-    grade = 0, msg
+    grade = 0, msg + + display.remarks(['==','<-',':='], code)
 else:
     if not 'somme' in locals():
         grade = display.grade_wrong("La variable  <strong>somme</strong> n'existe pas")
