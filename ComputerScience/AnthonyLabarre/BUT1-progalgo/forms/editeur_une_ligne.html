@@ -17,6 +17,9 @@
 <script>
     window.define = window.define || ace.define;
     var editor = ace.edit('editor');
+editor.setOptions({
+    maxLines: 1, // make it 1 line
+});
 
     // Set the theme according to user's preferences.
     editor.setTheme(
@@ -55,16 +58,6 @@
     editor.session.setUseSoftTabs(
         {% if editor.spacetab|lower == "false" %}false{% else %}true{% endif %}
     );
-editor.setOptions({
-    maxLines: 1, // make it 1 line
-    autoScrollEditorIntoView: true,
-    highlightActiveLine: false,
-    printMargin: false,
-    showGutter: false,
-    mode: "ace/mode/javascript",
-    theme: "ace/theme/tomorrow_night_eighties"
-});
-
 
     var input = $( "#{% if editor.id %}form_{{ editor.id }}{% else %}form_answer{% endif %}" );
     editor.session.on("change", function() {
