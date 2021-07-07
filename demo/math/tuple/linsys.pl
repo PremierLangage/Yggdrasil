@@ -18,7 +18,7 @@ sol = list(linsolve((A, B)))[0]
 linsys = latex_linsys(A, B)
 ==
 
-text ==
+question ==
 Déterminer la solution du système suivant (d'inconnues $! {{lstvar}} !$) :
 $$ {{linsys}} $$
 Ecrire la solution sous forme d'un couple de nombres.
