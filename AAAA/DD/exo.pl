@@ -1,26 +1,14 @@
-extends = /model/basic/input.pl
-
-@ /demo/data/pays_europe.csv
+extends = /model/math/input.pl
 
 before ==
-f = open('pays_europe.csv')
-row = csv_choice(f)
-pays = row['pays']
-article = row['article']
-
-if article == "l":
-    partitif = "de l'"
-elif article == "les":
-    partitif = "des "
-elif article == "le":
-    partitif = "du "
-else:
-    partitif = "de la "
-
-sol = row['capitale']
+from sympy import Symbol
+from sympy2latex import latex
+x = Symbol('x')
+expr = 1/(1 + x**2)
+expr_latex = latex(expr)
 ==
 
 question ==
 Soit la fonction $! f : \mathbb{R} \rightarrow \mathbb{R} !$ telle que
-$$ f(x) = \frac{1}{1+x^2}. $$
+$$ f(x) = {{ expr_latex }} . $$
 ==
