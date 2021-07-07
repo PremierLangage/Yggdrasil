@@ -21,3 +21,9 @@ $! f \mapsto \displaystyle {{ f|latex }} !$
 solution == 
 La dérivée est {{sol|latex}}
 ==
+
+message.notExpr==
+Ich bin ein berliner
+==
+
+message.no
