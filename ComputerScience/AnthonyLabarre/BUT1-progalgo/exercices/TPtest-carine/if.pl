@@ -55,7 +55,7 @@ else:
             exec(code2)
             if _foo != 'K0':
                 grade = 0, 'nope2'
-            else
+            else:
                 grade= 100, 'good'
 ==
 
