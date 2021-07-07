@@ -18,9 +18,11 @@ def rmk(msg):
     return u'<span style="color:blue;"></br></br> Remarque : ' + msg + ' :) </span>'
 
 def remarks(lst,code):
+    msg = ''
     for p in lst:
         if(p in code):
-            return rmk(_dico_rmk[p])
+            msg +=  rmk(_dico_rmk[p])
+    return msg
 
 def grade_wrong(msg):
     return (0, wrong(msg))
