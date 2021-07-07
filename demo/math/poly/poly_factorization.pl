@@ -10,10 +10,9 @@ sol = P * Q
 expr = sol.expand()
 ==
 
-text ==
+question ==
 Factoriser l'expression suivante :
-
 $$ {{ expr|latex }}. $$
 ==
 
-poly_form = factorized
+poly_form = "factorized"
