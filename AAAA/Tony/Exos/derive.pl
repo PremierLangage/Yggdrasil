@@ -6,7 +6,7 @@ from sympy import Symbol, diff, sin
 
 x = Symbol('x')
  
-f = sin(x)
+f = x*sin(x)
 sol = diff(f,x)
 ==
 
@@ -14,6 +14,6 @@ sol = diff(f,x)
 question ==
 Déterminer la dérivée de
 
-$! f \mapsto \displaystyle {{ f|latex }} = !$
+$! f \mapsto \displaystyle {{ f|latex }} !$
 ==
  
