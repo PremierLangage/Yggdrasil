@@ -31,6 +31,11 @@ code = response['answer']
 a = random.randint(1,1000)
 b = random.randint(1,1000)
 
+
+drmk={
+    ';':'le point-virgule est inutile',
+    '(' :'les parenth&#232;ses sont inutiles'
+    }
 # si la variable demandée existe (et pas d'erreur de compil, évidement)
 def check(somme):
     # bonne valeur ?
@@ -45,6 +50,8 @@ def check(somme):
         msg += display.rmk('les parenth&#232;ses sont inutiles')
     if('++' in code):
         msg += display.rmk('un seul + suffit')
+    if('\n' in code):
+        msg += display.rmk("le code peut s'écrire sur une seule ligne")
     return (100, msg)
 
 
