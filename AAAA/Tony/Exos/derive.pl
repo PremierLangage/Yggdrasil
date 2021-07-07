@@ -6,7 +6,7 @@ from sympy import Symbol, diff, sin
 
 x = Symbol('x')
  
-f = x^2*sin(x)
+f = sin(x)
 sol = diff(f,x)
 ==
 
