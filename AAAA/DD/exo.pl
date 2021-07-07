@@ -1,19 +1,19 @@
 extends = /model/math/expr.pl
 
 before ==
-from sympy import Limit
-x = Symbol('x')
-f, g = sample([2*x+1, x+2, 2*x**2+1, x**2+1], 2)
-lim = Limit(f/g, x, oo)
-sol = lim.doit()
+p = randint(2, 5)
+q = randint(2, 7, [4])
+sol = p**2*q
 ==
 
 question ==
-Déterminer la limite suivante.
+Ecrire l'expression suivante sous la forme  $% \sqrt{a} %$, où $% a %$ est un entier.
 ==
 
 prefix ==
-$! \displaystyle {{ lim|latex }} = !$
+$! {{ p }} \sqrt{ {{ q }} } = !$
 ==
 
-keypad = ["+infty", "-infty", "sqrt", "cup"]
+embed ==
+\sqrt{#}
+==
