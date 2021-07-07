@@ -11,6 +11,6 @@ arti = row['article']
 ==
 
 question ==
-Quelle capitale {{capitale}} est la capitale de {{ arti }} {{ pays }} ?
+Quelle est la capitale de {{ arti }} {{ pays }} ?
 ==
 
