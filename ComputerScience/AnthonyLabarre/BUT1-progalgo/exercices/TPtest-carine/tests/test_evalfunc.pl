@@ -6,7 +6,7 @@
 # pour importer ses propres modules
 @ ../../display_tools.py
 
-grader=@ /grader/evalfunc.py [builder.py]
+grader=@ /grader/evalfunc.py
 
 
 title== #|html|
