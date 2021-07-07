@@ -19,7 +19,6 @@ form=@ /form/text_editor.html
 
 # Script d'évaluation 
 evaluator== #|python|
-import random
 import sys 
 import re
 import tools # fonctions auxiliaires
