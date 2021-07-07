@@ -12,5 +12,5 @@ je sais pas je suis daltonien
 la réponse d
 ==
 
-indsol = 3
+indsol = 0
 shuffled = False
