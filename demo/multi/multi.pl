@@ -22,5 +22,5 @@ inputblock ==
 ==
 
 evaluator ==
-score = radio.eval()
+score = 0.5*radio1.eval()[0] + 0.5*radio2.eval()[0]
 ==
