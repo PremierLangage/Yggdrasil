@@ -34,10 +34,10 @@ def step1():
     print("debug : " + response['answer'], file=sys.stderr) 
     try:
         exec(response['answer'])
+        print("debug : " + somme, file=sys.stderr)       
     except Exception as e:
         return None, display.grade_wrong('Le code ne compile pas, il provoque l\'erreur suivante : ' + str(e))
-    else:
-        print("debug : " + dic['evaluator'], file=sys.stderr) 
+    else: 
         try:
             somme+=0 # permet de lever une erreur si la variable n'existe pas
         except Exception as e:
