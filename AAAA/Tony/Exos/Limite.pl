@@ -13,7 +13,7 @@ sol = lim.doit()
 
 #Double dollar pour mettre le latex centré.
 question ==
-Déterminer la limite suivante sachant que $\infty$ désigne $+\infty$.
+Déterminer la limite suivante sachant que $!\infty!$ désigne $!+\infty!$.
 ==
 
 prefix ==
