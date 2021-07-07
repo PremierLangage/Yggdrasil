@@ -30,8 +30,8 @@ def remarks(lst,code):
 
 def check(name, var, val):
     if var != val :
-        return tolls.grade_wrong('la variable <strong>' + name + '</strong> n\'a pas la bonne valeur')
+        return grade_wrong('la variable <strong>' + name + '</strong> n\'a pas la bonne valeur')
 
     # ajout des éventuelles remarques de syntaxe
-    return 100, tolls.good('Bonne r&#233;ponse !') + tolls.remarks([';','('], code)
+    return 100, good('Bonne r&#233;ponse !') + remarks([';','('], code)
 
