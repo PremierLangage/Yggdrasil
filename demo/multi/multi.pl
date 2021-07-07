@@ -2,6 +2,7 @@ extends = /model/basic/basic.pl
 @ /utils/components/radio.py [radio.py]
 
 before ==
+from radio import Radio
 radio1 = Radio()
 radio2 = Radio()
 
