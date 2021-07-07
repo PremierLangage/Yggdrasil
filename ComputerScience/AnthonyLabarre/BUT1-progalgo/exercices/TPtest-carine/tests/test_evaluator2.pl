@@ -45,11 +45,8 @@ def check(somme):
     # remarques de syntaxe
     msg = display.good('Bonne r&#233;ponse !')
     for p in [';','(']:
-         msg += display.rmk(drmk[p])
-    if(';' in code):
-        msg += display.rmk('le point-virgule est inutile')
-    if('(' in code):
-        msg += display.rmk('les parenth&#232;ses sont inutiles')
+        if(p in code):
+            msg += display.rmk(drmk[p])
     if('++' in code):
         msg += display.rmk('un seul + suffit')
     if('\n' in code):
