@@ -1,6 +1,6 @@
 Questions
 =========
 
-- comment faire une preview de PLTP? (pas de bouton play sur platon)
 - comment rajouter un lien vers une activité? (Claire doit savoir)
-
+- editor utilisé dans somme.pl: comment limiter le nombre de lignes à 1 et réduire la hauteur à une seule ligne?
+  doc ici: https://ace.c9.io/#nav=howto mais ça ne marche pas pour l'instant
