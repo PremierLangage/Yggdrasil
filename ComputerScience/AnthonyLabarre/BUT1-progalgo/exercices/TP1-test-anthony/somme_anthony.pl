@@ -9,7 +9,7 @@ grader=@ /grader/evaluator.py
 
 
 #un éditeur simple, fond blanc, pas de chois de langage
-editor.session.text = "the new text here"
+editor.session.value = "the new text here"
 form=@ /form/text_editor.html 
 
 title== #|html|
