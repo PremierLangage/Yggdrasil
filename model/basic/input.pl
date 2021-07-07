@@ -5,7 +5,7 @@ casesens = False
 
 diffmeasure = EditDist
 
-tol % 0
+tol = 0
 
 input =: Input
 
@@ -75,7 +75,8 @@ if score == 100:
     input.suffix = r'<i class="fas fa-check" style="color: green"></i>'
 elif score >= 0:
     input.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
-input.disabled = True
+if score != -1:
+    input.disabled = True
 ==
 
 macros ==
