@@ -2,6 +2,7 @@
 
 @ /utils/sandboxio.py
 
+# pour importer ses propres modules
 @ ../display_tools.py
 
 grader=@ /grader/evaluator.py
@@ -12,7 +13,7 @@ Somme de variables
 ==
 
 text== #|html|
-Initialisez la variable **somme** avec la somme des variables **a** et **b**.
+Initialisez la variable **somme** avec la somme des variables **a** et **b** (qui existent déjà).
 ==
 
 #un éditeur simple, fond blanc, pas de chois de langage
@@ -23,15 +24,12 @@ form=@ /form/text_editor.html
 evaluator== #|python|
 import random
 import sys 
-import os
-#sys.path.append(os.path.abspath(".."))
 import display_tools as display
 
-print("debug : " + response['answer'], file=sys.stderr)
+#print("debug : " + response['answer'], file=sys.stderr) 
 
 a = random.randint(1,1000)
 b = random.randint(1,1000)
-
 
 try:
     exec(response['answer'])
@@ -49,7 +47,10 @@ else:
                 msg += '<span style="color:blue;"></br></br> Remarque : le point-virgule est inutile :)</span>'
             grade = (100, msg)
         else:
-            grade = (0,'<span class="error-state">la variable <strong>somme</strong> n\'a pas la bonne valeur</span>')
+            if('==' in response['answer']):
+                grade = grade_wrong('== ne permet pas de faire un affectation')
+            else:
+                grade = grade_wrong('la variable <strong>somme</strong> n\'a pas la bonne valeur')
 ==
 
 
