@@ -27,9 +27,6 @@ import tools # fonctions auxiliaires
 code = response['answer']
 code2 = re.sub("print *\(", "_foo=(", code)
 
-x = random.randint(41,43)
-
-
 def check(name, var, val):
     if var != val :
         return tools.grade_wrong("l'affichage n'est pas correct : " + str(var) + " au lieu de " + val)
@@ -43,7 +40,10 @@ def check(name, var, val):
 
 # tente d'executer, puis verifie la présence de la variable demandée. si ok, check valeur et syntaxe.
 try:
-    exec(code2)
+    x=42
+    exec(re.sub("print *\(", "_foo=(", code))
+    x=43
+    exec(re.sub("print *\(", "_foo+=(", code))
 except Exception as e:
     msg = tools.wrong("Le code ne compile pas, il provoque l'erreur suivante : " + str(e))
     grade = 0, msg 
