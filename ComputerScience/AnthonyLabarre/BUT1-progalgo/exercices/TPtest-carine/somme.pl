@@ -10,15 +10,8 @@ grader=@ /grader/evaluator.py
 
 title== #|html|
 Somme de variables
-==
-
-text== #|html|
-Initialisez la variable **somme** avec la somme des variables **a** et **b** (qui existent déjà).
-==
-
-#un éditeur simple, fond blanc, pas de chois de langage
-form=@ /form/text_editor.html 
-editor.setOptions({
+<script>
+    editor.setOptions({
     maxLines: 1, // make it 1 line
     autoScrollEditorIntoView: true,
     highlightActiveLine: false,
@@ -27,6 +20,16 @@ editor.setOptions({
     mode: "ace/mode/javascript",
     theme: "ace/theme/tomorrow_night_eighties"
 });
+</script>
+==
+
+text== #|html|
+Initialisez la variable **somme** avec la somme des variables **a** et **b** (qui existent déjà).
+==
+
+#un éditeur simple, fond blanc, pas de chois de langage
+form=@ /form/text_editor.html 
+
 
 # Script d'évaluation 
 evaluator== #|python|
