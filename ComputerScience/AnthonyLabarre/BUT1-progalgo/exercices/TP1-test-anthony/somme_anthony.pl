@@ -7,7 +7,7 @@
 
 grader=@ /grader/evaluator.py
 
-
+editor.setTheme("ace/theme/twilight");
 title== #|html|
 Somme de variables
 <script>
