@@ -5,7 +5,7 @@ extends = /model/basic/radio.pl
 #un ensemble de bonnes et mauvaises réponses et de définir le nb de bonnes/mauvaises réponses qu'il doit prendre. On peut modifier le barême.
 
 question ==
-Quelle est la couleur du cheval blanc d'Henri 4?
+Quelle `est` la *couleur* du **cheval** blanc d'Henri 4?
 ==
 
 #Par défaut le premier item est la bonne réponse, et les items sont mélangés
