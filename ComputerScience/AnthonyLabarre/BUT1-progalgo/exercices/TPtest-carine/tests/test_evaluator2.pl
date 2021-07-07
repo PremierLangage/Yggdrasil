@@ -26,7 +26,7 @@ import sys
 import display_tools as display
 
 code = response['answer']
-print("debug : ", code ,'==' in code, file=sys.stderr) 
+#print("debug : ", code, file=sys.stderr) 
 
 a = random.randint(1,1000)
 b = random.randint(1,1000)
