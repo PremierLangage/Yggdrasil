@@ -9,7 +9,7 @@ grader=@ /grader/evaluator.py
 
 
 #un éditeur simple, fond blanc, pas de chois de langage
-form=@ ../forms/editeur_une_ligne.html 
+form=@ ../../forms/editeur_une_ligne.html 
 
 title== #|html|
 Somme de variables
