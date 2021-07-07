@@ -2,8 +2,8 @@ extends = /model/basic/basic.pl
 @ /utils/components/radio.py [radio.py]
 
 before ==
-radio1 = RadioGroup()
-radio2 = RadioGroup()
+radio1 = Radio()
+radio2 = Radio()
 
 items = [1, 2, 3, 4]
 
