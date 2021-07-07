@@ -3,7 +3,7 @@
 @ /utils/sandboxio.py
 
 # pour importer ses propres modules
-@ ../display_tools.py
+@ ../tools.py
 
 grader=@ /grader/evaluator.py
 
@@ -19,43 +19,30 @@ Initialisez la variable **somme** avec la somme des variables **a** et **b** (qu
 #un éditeur simple, fond blanc, pas de chois de langage
 form=@ /form/text_editor.html 
 
-
 # Script d'évaluation 
 evaluator== #|python|
 import random
 import sys 
-import display_tools as display
+import tools # fonctions auxiliaires
 
-#print("debug : " + response['answer'], file=sys.stderr) 
+code = response['answer']
+#print("debug : ", code, file=sys.stderr) 
 
 a = random.randint(1,1000)
 b = random.randint(1,1000)
 
+# tente d'executer, puis verifie la présence de la variable demandée. si ok, check valeur et syntaxe.
 try:
-    exec(response['answer'])
+    exec(code)
 except Exception as e:
-    grade = display.grade_wrong('Le code ne compile pas, il provoque l\'erreur suivante : ' + str(e))
-    quit()
+    msg = tools.wrong("Le code ne compile pas, il provoque l'erreur suivante : " + str(e))
+    grade = 0, msg + tools.remarks(['==','<-',':='], code)
 else:
-    try:
-        somme+=0 # permet de lever une erreur si la variable n'existe pas
-    except Exception as e:
-        grade = display.grade_wrong('la variable  <strong>somme</strong> n\'existe pas')
+    if not 'somme' in locals():
+        grade = tools.grade_wrong("La variable  <strong>somme</strong> n'existe pas")
     else :
-        if somme == a+b :
-            msg = display.good('Bonne r&#233;ponse !')
-            if(';' in response['answer']):
-                msg += display.rmk('le point-virgule est inutile')
-            if('(' in response['answer']):
-                msg += display.rmk('les parenth&#232;ses sont inutiles')
-            if('++' in response['answer']):
-                msg += display.rmk('un seul + suffit')
-            grade = (100, msg)
-        else:
-            if('==' in response['answer']):
-                grade = display.grade_wrong('== ne permet pas de faire une affectation')
-            else:
-                grade = display.grade_wrong('la variable <strong>somme</strong> n\'a pas la bonne valeur')
+        grade = tools.check(code, 'somme', somme, a+b)
+        del somme # pour eviter que la variable existe si l'on change le code sans refresh.
 ==
 
 
