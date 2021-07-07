@@ -26,19 +26,20 @@ import tools # fonctions auxiliaires
 code = response['answer']
 #print("debug : ", code, file=sys.stderr) 
 
-code2 = code.replace("print(","foofoo=(")
+code2 = code.replace("print","_foo=").replace
 
 x = random.randint(41,43)
 
 # tente d'executer, puis verifie la présence de la variable demandée. si ok, check valeur et syntaxe.
 try:
+    exec(code)
     exec(code2)
 except Exception as e:
     msg = tools.wrong("Le code ne compile pas, il provoque l'erreur suivante : " + str(e))
     grade = 0, msg #+ tools.remarks(['==','<-',':='], code)
 else:
-    grade = tools.check(code, 'foofoo', foofoo, 'OK' if x==42 else 'KO')
-    del foofoo # pour eviter que la variable existe si l'on change le code sans refresh.
+    grade = tools.check(code, '_foo', _foo, 'OK' if x==42 else 'KO')
+    del _foo # pour eviter que la variable existe si l'on change le code sans refresh.
 ==
 
 
