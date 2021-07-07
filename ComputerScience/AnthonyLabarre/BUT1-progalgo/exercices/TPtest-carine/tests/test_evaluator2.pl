@@ -39,7 +39,7 @@ def check(somme):
 
     # remarques de syntaxe
     msg = display.good('Bonne r&#233;ponse !')
-    msg += remarks([';','('], code)
+    msg += display.remarks([';','('], code)
     return (100, msg)
 
 
