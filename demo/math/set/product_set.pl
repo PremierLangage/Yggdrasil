@@ -10,6 +10,6 @@ B = FiniteSet(*sample(range(10), lenB))
 sol = FiniteSet(*ProductSet(A, B))
 ==
 
-text == 
+question == 
 Ecrire en extension l'ensemble $! {{A|latex}} \times {{B|latex}}. !$
 ==
