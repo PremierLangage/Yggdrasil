@@ -30,8 +30,8 @@ def remarks(lst,code):
 
 def check(code, name, var, val):
     if var != val :
-        return tools.grade_wrong('la variable <strong>' + name + '</strong> n\'a pas la bonne valeur')
+        return grade_wrong('la variable <strong>' + name + '</strong> n\'a pas la bonne valeur')
 
     # ajout des éventuelles remarques de syntaxe
-    return 100, tools.good('Bonne r&#233;ponse !') + tools.remarks([';','('], code)
+    return 100, good('Bonne r&#233;ponse !') + remarks([';','('], code)
 
