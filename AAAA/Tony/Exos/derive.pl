@@ -19,5 +19,5 @@ $! f \mapsto \displaystyle {{ f|latex }} !$
  
 #solution pour modifier le message de solution
 solution == 
-La dérivée est 12
+La dérivée est {{sol|latex}}
 ==
