@@ -31,6 +31,24 @@ import display_tools as display
 a = random.randint(1,1000)
 b = random.randint(1,1000)
 
+def check(somme):
+    if somme == a+b :
+        msg = display.good('Bonne r&#233;ponse !')
+        if(';' in response['answer']):
+            msg += display.rmk('le point-virgule est inutile')
+        if('(' in response['answer']):
+            msg += display.rmk('les parenth&#232;ses sont inutiles')
+        if('++' in response['answer']):
+            msg += display.rmk('un seul + suffit')
+        grade = (100, msg)
+    else:
+        if('==' in response['answer']):
+            grade = display.grade_wrong('== ne permet pas de faire une affectation')
+        else:
+            grade = display.grade_wrong('la variable <strong>somme</strong> n\'a pas la bonne valeur')
+    return grade
+
+
 try:
     exec(response['answer'])
 except Exception as e:
@@ -39,20 +57,7 @@ else:
     if not 'somme' in locals():
         grade = display.grade_wrong('la variable  <strong>somme</strong> n\'existe pas')
     else :
-        if somme == a+b :
-            msg = display.good('Bonne r&#233;ponse !')
-            if(';' in response['answer']):
-                msg += display.rmk('le point-virgule est inutile')
-            if('(' in response['answer']):
-                msg += display.rmk('les parenth&#232;ses sont inutiles')
-            if('++' in response['answer']):
-                msg += display.rmk('un seul + suffit')
-            grade = (100, msg)
-        else:
-            if('==' in response['answer']):
-                grade = display.grade_wrong('== ne permet pas de faire une affectation')
-            else:
-                grade = display.grade_wrong('la variable <strong>somme</strong> n\'a pas la bonne valeur')
+        grade = check(somme)
 ==
 
 
