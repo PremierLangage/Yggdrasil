@@ -6,7 +6,7 @@ before ==
 f = open('pays_europe.csv')
 row = csv_choice(f)
 sol  = row['capitale']
-capitale = row['pays']
+pays = row['pays']
 arti = row['article']
 ==
 
