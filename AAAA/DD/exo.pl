@@ -1,15 +1,16 @@
-extends = /model/math/complex.pl
+extends = /model/math/poly.pl
 
 before ==
-#from sympy import I
-z1 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
-z2 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
-sol = (z1 * z2).expand()
+x = Symbol('x')
+P = randint(-3, 3, [0])*x + randint(-3, 3, [0])
+Q = randint(-3, 3, [0])*x + randint(-3, 3, [0])
+expr = P * Q
+sol = expr.expand()
 ==
 
 question ==
-On considère les nombres complexes $! z_1 = {{ z1|latex }} !$ et $! z_2 = {{ z2|latex }} !$. 
-Calculer $! z_1 \times z_2 !$ (sous forme algébrique).
+Développer l'expression suivante :
+$$ {{ expr|latex }}. $$
 ==
 
-complex_form = cartesian
+poly_form = "expanded"
