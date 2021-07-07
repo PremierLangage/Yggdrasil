@@ -1,15 +1,21 @@
-extends = /model/basic/input.pl
-
-@ /demo/data/pays_europe.csv
+extends = /model/math/expr.pl
 
 before ==
-f = open('pays_europe.csv')
-row = csv_choice(f)
-capitale = row['capitale']
-article = row['article']
-sol = row['pays'] 
+from sympy import Limit
+
+x = Symbol('x')
+
+f, g = sample([2*x+1, x+2, 2*x**2+1, x**2+1], 2)
+lim = Limit(f/g, x, oo)
+sol = lim.doit()
 ==
 
 question ==
-Quel est la capitale de {{article}} {{sol}}?
+Déterminer la limite suivante.
 ==
+
+prefix ==
+$! \displaystyle {{ lim|latex }} = !$
+==
+
+keypad = ["+infty", "-infty",La limite n'existe pas]
