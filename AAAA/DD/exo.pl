@@ -19,5 +19,5 @@ sol = row['capitale']
 ==
 
 question ==
-Quel est la capitale {{ partitif }}{{ pays }} ?
+Quelle est la capitale {{ partitif }}{{ pays }} ?
 ==
