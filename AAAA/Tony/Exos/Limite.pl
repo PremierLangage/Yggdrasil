@@ -19,4 +19,4 @@ prefix ==
 $! \displaystyle {{ lim|latex }} = !$
 ==
 
-keypad = ["+infty", "-infty","infty",n'existe pas]
+keypad = ["+infty", "-infty","x"]
