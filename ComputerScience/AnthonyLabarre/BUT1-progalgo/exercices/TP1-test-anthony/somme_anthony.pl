@@ -8,6 +8,9 @@
 grader=@ /grader/evaluator.py
 
 
+#un éditeur simple, fond blanc, pas de chois de langage
+form=@ /form/text_editor.html 
+
 title== #|html|
 Somme de variables
 <script>
@@ -26,9 +29,6 @@ Initialisez la variable **somme** avec la somme des variables **a** et **b** (qu
 </script>
 
 ==
-
-#un éditeur simple, fond blanc, pas de chois de langage
-form=@ /form/text_editor.html 
 
 # Script d'évaluation 
 evaluator== #|python|
