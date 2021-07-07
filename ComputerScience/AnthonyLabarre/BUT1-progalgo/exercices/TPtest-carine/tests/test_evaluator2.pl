@@ -58,6 +58,7 @@ else:
         grade = display.grade_wrong('la variable  <strong>somme</strong> n\'existe pas')
     else :
         grade = check(somme)
+del somme
 ==
 
 
