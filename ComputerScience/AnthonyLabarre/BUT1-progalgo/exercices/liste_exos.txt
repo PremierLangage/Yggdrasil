@@ -1,4 +1,6 @@
 [ v ] étant données 2 variables déjà définies, calculer leur somme (dans un variable ou pas)
       -> test.pl
 
+      extension possible: demander (au hasard) produit, différence, quotient, modulo, ...
+
 étant donnée 1 varaible x déjà définie, afficher "petit" si elle est plus petite que 10 et "grand sinon
