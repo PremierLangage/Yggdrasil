@@ -12,3 +12,7 @@ Calculer la dérivée de la fonction
 $$ f : x \mapsto {{ f|latex }} .$$
 ==
 
+solution ==
+La dérivée est {{ sol|latex }}.
+==
+
