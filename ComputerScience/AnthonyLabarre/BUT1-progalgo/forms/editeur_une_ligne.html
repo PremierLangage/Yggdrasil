@@ -17,6 +17,7 @@
 <script>
     window.define = window.define || ace.define;
     var editor = ace.edit('editor');
+    editor.maxLines = 1;
 
     // Set the theme according to user's preferences.
     editor.setTheme(
