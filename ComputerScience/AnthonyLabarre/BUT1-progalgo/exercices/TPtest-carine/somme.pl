@@ -10,17 +10,6 @@ grader=@ /grader/evaluator.py
 
 title== #|html|
 Somme de variables
-<script>
-    editor.setOptions({
-    maxLines: 1, // make it 1 line
-    autoScrollEditorIntoView: true,
-    highlightActiveLine: false,
-    printMargin: false,
-    showGutter: false,
-    mode: "ace/mode/javascript",
-    theme: "ace/theme/tomorrow_night_eighties"
-});
-</script>
 ==
 
 text== #|html|
