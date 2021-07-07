@@ -11,3 +11,6 @@ noir
 je sais pas je suis daltonien
 la réponse d
 ==
+
+indsol = 3
+suffle = false
