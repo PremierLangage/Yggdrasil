@@ -2,6 +2,17 @@
 @ /utils/sandboxio.py
 @ /grader/evaluator.py [grader.py]
 
+
+
+title== #|html|
+Somme de variables
+==
+
+text== #|html|
+Initialisez la variable **somme** avec la somme des variables **a** et **b** (qui existent déjà).
+==
+
+
 form==
 <input id="form_answer" type="number" value="{{ answers__.answer }}" required/>
 ==
