@@ -53,13 +53,14 @@ def check(somme):
 try:
     exec(code)
 except Exception as e:
-    grade = display.grade_wrong('Le code ne compile pas, il provoque l\'erreur suivante : ' + str(e))
+    msg = display.wrong('Le code ne compile pas, il provoque l\'erreur suivante : ' + str(e))
+    for p in ['==','<-',':='] :
+        if p in code:
+            msg += display.rmk(p + ' ne permet pas de faire une affectation')
+    retrun 0,msg
 else:
     if not 'somme' in locals():
-        msg = display.wrong('la variable  <strong>somme</strong> n\'existe pas')
-        if '=' in code:
-            msg += display.rmk('== ne permet pas de faire une affectation')
-        grade = 0, msg
+        grade = display.grade_wrong('la variable  <strong>somme</strong> n\'existe pas')
     else :
         grade = check(somme)
         del somme # pour eviter que la variable existe si l'on change le code sans refresh.
