@@ -32,8 +32,7 @@ a = random.randint(1,1000)
 b = random.randint(1,1000)
 
 
-drmk=
-{
+drmk={
     ';':'le point-virgule est inutile',
     '(' :'les parenth&#232;ses sont inutiles'
 }
