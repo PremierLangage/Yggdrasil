@@ -1,12 +1,13 @@
-extends = /model/math/input.pl
+extends = /model/math/expr.pl
 
 before ==
-from sympy import Symbol, ln
-v = Symbol('t')
-expr = ln(v) + 1/(1 + v**2)
+from sympy import Symbol, sin, diff
+x = Symbol('x')
+f = x**2 * sin(x)
+sol = diff(f, x)
 ==
 
 question ==
-Soit la fonction $! f : \mathbb{R} \rightarrow \mathbb{R} !$ telle que
-$$ f(x) = {{ expr|latex }} . $$
+Calculer la dérivée de la fonction 
+$$ f : x \mapsto {{ f|latex }} .$$
 ==
