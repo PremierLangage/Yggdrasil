@@ -7,6 +7,7 @@ f = open('pays_europe.csv')
 row = csv_choice(f)
 pays = row['pays']
 article = row['article']
+
 if article == "l":
     partitif = "de l'"
 elif article == "les":
@@ -15,6 +16,7 @@ elif article == "le":
     partitif = "du "
 else:
     partitif = "de la "
+    
 sol = row['capitale']
 ==
 
