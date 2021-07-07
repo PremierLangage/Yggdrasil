@@ -1,7 +1,7 @@
 extends = /model/math/input.pl
 
 before ==
-from sympy import Symbol
+from sympy import Symbol, ln
 from sympy2latex import latex
 v = Symbol('t')
 expr = 1/(1 + v**2)
