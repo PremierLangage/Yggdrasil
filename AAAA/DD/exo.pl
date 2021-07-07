@@ -1,16 +1,19 @@
-extends = /model/math/poly.pl
+extends = /model/math/set.pl
 
 before ==
-x = Symbol('x')
-P = randint(-3, 3, [0])*x + randint(-3, 3, [0])
-Q = randint(-3, 3, [0])*x + randint(-3, 3, [0])
-expr = P * Q
-sol = expr.expand()
+from sympy import Intersection
+A = FiniteSet(*sampleint(1, 9, randint(3, 5)))
+B = FiniteSet(*sampleint(1, 9, randint(3, 5)))
+sol = Intersection(A, B)
 ==
 
 question ==
-Développer l'expression suivante :
-$$ {{ expr|latex }}. $$
+On considère les ensembles $! A= {{ A|latex }} !$ et $! B={{ B|latex }} !$. 
+Déterminer l'ensemble suivant.
 ==
 
-poly_form = "expanded"
+prefix ==
+$! A \cap B =!$
+==
+
+keypad = ["emptyset"]
