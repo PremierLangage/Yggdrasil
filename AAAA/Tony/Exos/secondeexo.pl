@@ -13,4 +13,4 @@ la réponse d
 ==
 
 indsol = 3
-suffle = false
+suffled = false
