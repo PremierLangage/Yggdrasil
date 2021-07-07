@@ -35,7 +35,7 @@ try:
     exec(response['answer'])
 except Exception as e:
     grade = display.grade_wrong('Le code ne compile pas, il provoque l\'erreur suivante : ' + str(e))
-    return
+    quit()
 else:
     try:
         somme+=0 # permet de lever une erreur si la variable n'existe pas
