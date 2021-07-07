@@ -4,8 +4,6 @@
 
 extends = /model/jsxgraph/clickpoint.pl
 
-title = Affixe d'un nombre complexe
-
 before ==
 xsol = randint(-4, 4, [0])
 ysol = randint(-4, 4, [0])
