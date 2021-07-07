@@ -54,7 +54,7 @@ except Exception as e:
     for p in ['==','<-',':='] :
         if p in code:
             msg += display.rmk(p + ' ne permet pas de faire une affectation')
-    return 0,msg
+    grade 0,msg
 else:
     if not 'somme' in locals():
         grade = display.grade_wrong('la variable  <strong>somme</strong> n\'existe pas')
