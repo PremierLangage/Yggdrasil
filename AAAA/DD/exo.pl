@@ -1,14 +1,13 @@
-extends = /model/math/tuple.pl
+extends = /model/math/interval.pl
 
 before ==
-n0 = randint(-5, 5)
-p0 = randint(-5, 5)
-sol = Tuple(n0+p0, n0-p0)
+a = randint(1, 3)
+b = randint(-3, 3)
+sol = Interval(-oo, b-a)
 ==
 
 question ==
-On considère la fonction $! f : \mathbb{Z}^2 \rightarrow \mathbb{Z}^2  !$  définie par :
-$$ f(n, p)= (n+p, n-p) .$$
-
-Déterminer $! f( {{ n0 }}, {{ p0 }} ). !$
+Ecrire sous forme d'intervalle l'ensemble des réels $! x  + {{ a }} \le {{ b }}  !$.
 ==
+
+keypad = ["-infty", "+infty"]
