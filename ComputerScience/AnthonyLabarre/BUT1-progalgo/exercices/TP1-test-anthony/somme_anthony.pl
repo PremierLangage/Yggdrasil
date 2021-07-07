@@ -24,7 +24,7 @@ text== #|html|
 Initialisez la variable **somme** avec la somme des variables **a** et **b** (qui existent déjà).
 <script>
     editor.setOption("maxLines", 1);
-        form.setTheme("dark");
+        form.editor.setTheme("dark");
 
 </script>
 
