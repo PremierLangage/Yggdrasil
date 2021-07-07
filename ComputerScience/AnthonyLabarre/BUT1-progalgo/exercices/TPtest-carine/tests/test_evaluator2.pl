@@ -32,10 +32,11 @@ a = random.randint(1,1000)
 b = random.randint(1,1000)
 
 
-drmk={
+drmk=
+{
     ';':'le point-virgule est inutile',
     '(' :'les parenth&#232;ses sont inutiles'
-    }
+}
 # si la variable demandée existe (et pas d'erreur de compil, évidement)
 def check(somme):
     # bonne valeur ?
@@ -44,6 +45,8 @@ def check(somme):
 
     # remarques de syntaxe
     msg = display.good('Bonne r&#233;ponse !')
+    for p in [';','(']:
+         msg += display.rmk(drmk[p])
     if(';' in code):
         msg += display.rmk('le point-virgule est inutile')
     if('(' in code):
