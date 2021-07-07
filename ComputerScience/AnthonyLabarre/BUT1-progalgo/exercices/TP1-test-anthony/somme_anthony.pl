@@ -10,7 +10,7 @@ grader=@ /grader/evaluator.py
 
 #un éditeur simple, fond blanc, pas de chois de langage
 form=@ /form/text_editor.html 
-editor.session.value = "the new text here"
+editor.value = "the new text here"
 
 title== #|html|
 Somme de variables
