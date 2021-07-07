@@ -1,7 +1,11 @@
 # coding: utf-8
 
 @ /utils/sandboxio.py
+
+@ ../display_tools.py
+
 grader=@ /grader/evaluator.py
+
 
 title== #|html|
 Somme de variables
