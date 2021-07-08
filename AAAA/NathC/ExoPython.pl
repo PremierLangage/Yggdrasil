@@ -1,1 +1,8 @@
-extend= /ComputerScience/python/APU-1920/templates/pltest.pl
+extend= /ComputerScience/python/AP1-1920/templates/pltest.pl
+
+deg gg()
+"""
+>>>gg()
+3
+"""
+return 4
