@@ -1,8 +1,14 @@
-extend= /ComputerScience/python/AP1-1920/templates/pltest.pl
+extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
-deg gg()
-"""
->>>gg()
+title= Premier exercice de python
+
+pltest==
+>>>f()
 3
-"""
-return 4
+>>>f()+2
+5
+==
+
+test==
+Ecrivez une fonction f qui retourne 3
+==
