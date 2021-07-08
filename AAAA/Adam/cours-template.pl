@@ -4,10 +4,10 @@
 
 title= TITRE DE LA PRESENTATION
 text= 
-
 form= 
-@cours-contenu.md [cours.md]
 
+
+@cours-contenu.md [cours.md]
 before==
 with open ("cours.md" , "r") as f:
     txt = f.readlines()
