@@ -20,6 +20,8 @@ inputblock ==
 evaluator ==
 numeric1.eval()
 numeric1.show()
+numeric2.eval()
+numeric2.show()
 score = 50
 ==
 
