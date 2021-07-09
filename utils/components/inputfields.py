@@ -13,6 +13,12 @@ class Numeric(Component):
         self.type = 'number'
         super().__init__(**kwargs)
 
+    def eval(self):
+        if self._sol == input.value:
+            return 100
+        else:
+            return 0
+
 # Radio field
 class Radio(Component):
 
