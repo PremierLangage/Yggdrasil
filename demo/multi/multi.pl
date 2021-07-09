@@ -20,9 +20,6 @@ inputblock ==
 ==
 
 evaluator ==
-numeric1.eval()
-numeric2.eval()
-numeric1.show()
-numeric2.show()
+
 score = 100 
 ==
