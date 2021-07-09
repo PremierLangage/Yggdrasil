@@ -2,10 +2,10 @@
 
 import random as rd
 from uuid import uuid4
-from components import Component
+from components import Component, Input
 
 # Numeric field
-class Numeric(Component):
+class Numeric(Input):
 
     def __init__(self, **kwargs):
         self.selector = 'c-input'
