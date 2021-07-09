@@ -8,10 +8,10 @@ radio2 = Radio()
 
 items = [1, 2, 3, 4]
 
-radio1.set_sol(0)
-radio2.set_sol(10)
 radio1.set_items(items)
 radio2.set_items(items)
+radio1.set_sol(0)
+radio2.set_sol(10)
 ==
 
 inputblock ==
