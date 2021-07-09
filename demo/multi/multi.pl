@@ -16,9 +16,10 @@ radio2.set_sol(1)
 ==
 
 inputblock ==
-{{ radio1|component }}
-
-{{ radio2|component }}
+<div class="row">
+  <div class="col-sm-6">{{ radio1|component }}</div>
+  <div class="col-sm-6">{{ radio2|component }}</div>
+</div>
 ==
 
 evaluator ==
