@@ -20,6 +20,6 @@ inputblock ==
 ==
 
 evaluator ==
-
+feedback = "ggg"
 score = 100 
 ==
