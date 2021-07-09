@@ -11,7 +11,6 @@ numeric2._sol = 10
 ==
 
 inputblock ==
-{{ numeric1.score }}
 <div class="row">
   <div class="col-sm-6">{{ numeric1|component }}</div>
   <div class="col-sm-6">{{ numeric2|component }}</div>
@@ -19,7 +18,9 @@ inputblock ==
 ==
 
 evaluator ==
-score = 0
+numeric1.eval()
+numeric1.show()
+score = 50
 ==
 
 solution ==
