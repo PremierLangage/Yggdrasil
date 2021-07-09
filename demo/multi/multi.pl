@@ -3,7 +3,7 @@ extends = /model/basic/basic.pl
 
 before ==
 from inputfields import Numeric
-numeric1 = Radio()
+numeric1 = Numeric()
 numeric2 = Numeric()
 numeric1.debug = True
 items = [1, 2, 3, 4]
