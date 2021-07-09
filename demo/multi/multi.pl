@@ -20,5 +20,8 @@ inputblock ==
 ==
 
 evaluator ==
-score = 0.5*numeric1.eval() + 0.5*numeric2.eval()
+numeric1.eval()
+numeric2.eval()
+numeric1.show()
+numeric2.show()
 ==
