@@ -10,6 +10,7 @@ class Numeric(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-input'
         self.decorator = 'Numeric'
+        self.type = 'number'
         super().__init__(**kwargs)
 
 # Radio field
