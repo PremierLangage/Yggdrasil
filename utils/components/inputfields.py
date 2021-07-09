@@ -21,9 +21,9 @@ class Numeric(Component):
 
     def show(self):
         if self.score == 100:
-            input.suffix = r'<i class="fas fa-check" style="color: green"></i>'
+            self.suffix = r'<i class="fas fa-check" style="color: green"></i>'
         elif self.score >= 0:
-            input.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
+            self.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
 
 # Radio field
 class Radio(Component):
