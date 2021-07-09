@@ -22,10 +22,7 @@ inputblock ==
 ==
 
 evaluator ==
-numeric1.score = 100
-numeric2.score = 100
-numeric1.show()
-numeric2.show()
+score = 0
 ==
 
 solution ==
