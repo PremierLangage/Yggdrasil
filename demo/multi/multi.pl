@@ -27,3 +27,7 @@ numeric2.score = 100
 numeric1.show()
 numeric2.show()
 ==
+
+solution ==
+{{ numeric1 }}
+==
