@@ -15,9 +15,15 @@ class Numeric(Component):
 
     def eval(self):
         if self._sol == input.value:
-            return 100
+            self.score = 100
         else:
-            return 0
+            self.score = 0
+
+    def 
+    if score == 100:
+    input.suffix = r'<i class="fas fa-check" style="color: green"></i>'
+elif score >= 0:
+    input.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
 
 # Radio field
 class Radio(Component):
