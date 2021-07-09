@@ -6,6 +6,7 @@ from inputfields import Numeric
 numeric1 = Input()
 numeric2 = Numeric()
 numeric1.debug = True
+numeric2.debug = True
 items = [1, 2, 3, 4]
 
 numeric1._sol = 0
