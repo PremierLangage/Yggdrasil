@@ -8,11 +8,8 @@ numeric2 = Numeric()
 
 items = [1, 2, 3, 4]
 
-numeric1.set_items(items)
-numeric1.set_sol(1)
-
-numeric2.set_items(items)
-numeric2.set_sol(1)
+numeric1._sol = 0
+numeric2._sol = 10
 ==
 
 inputblock ==
