@@ -2,23 +2,23 @@ extends = /model/basic/basic.pl
 @ /utils/components/inputfields.py [inputfields.py]
 
 before ==
-from inputfields import Numeric
-numeric1 = Input()
-numeric2 = Numeric()
-numeric1.debug = True
-numeric2.debug = True
+from inputfields import Radio
+radio1 = Radio()
+radio2 = Radio()
+
 items = [1, 2, 3, 4]
 
-numeric1._sol = 0
-numeric2._sol = 10
-numeric1.score = 100
+radio1.set_sol(0)
+radio2.set_sol(10)
+radio1.set_items(items)
+radio2.set_items(items)
 ==
 
 inputblock ==
-{{ numeric1.score }}
+{{ radio1.score }}
 <div class="row">
-  <div class="col-sm-6">{{ numeric1|component }}</div>
-  <div class="col-sm-6">{{ numeric2|component }}</div>
+  <div class="col-sm-6">{{ radio1|component }}</div>
+  <div class="col-sm-6">{{ radio2|component }}</div>
 </div>
 ==
 
@@ -27,5 +27,5 @@ score = 0
 ==
 
 solution ==
-{{ numeric1 }}
+{{ radio1 }}
 ==
