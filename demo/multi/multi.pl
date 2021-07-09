@@ -10,7 +10,7 @@ items = [1, 2, 3, 4]
 
 numeric1._sol = 0
 numeric2._sol = 10
-
+numeric1.score = 100
 ==
 
 inputblock ==
