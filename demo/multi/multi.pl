@@ -13,7 +13,7 @@ numeric2._sol = 10
 ==
 
 inputblock ==
-[[ numeric.score }}
+{{numeric.score }}
 <div class="row">
   <div class="col-sm-6">{{ numeric1|component }}</div>
   <div class="col-sm-6">{{ numeric2|component }}</div>
