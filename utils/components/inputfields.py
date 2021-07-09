@@ -14,7 +14,7 @@ class Numeric(Component):
         super().__init__(**kwargs)
 
     def eval(self):
-        if self._sol == input.value:
+        if self._sol == self.value:
             self.score = 100
         else:
             self.score = 0
