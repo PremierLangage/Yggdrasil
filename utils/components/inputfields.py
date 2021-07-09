@@ -19,7 +19,7 @@ class Numeric(Component):
         else:
             self.score = 0
 
-    def show(self)
+    def show(self):
         if self.score == 100:
             input.suffix = r'<i class="fas fa-check" style="color: green"></i>'
         elif self.score >= 0:
