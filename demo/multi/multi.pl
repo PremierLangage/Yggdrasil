@@ -22,9 +22,8 @@ inputblock ==
 ==
 
 evaluator ==
-numeric1.eval()
-numeric2.eval()
+numeric1.score = 100
+numeric2.score = 100
 numeric1.show()
 numeric2.show()
-score = 100 
 ==
