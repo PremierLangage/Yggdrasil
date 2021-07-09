@@ -1,8 +1,8 @@
 extends = /model/basic/basic.pl
-@ /utils/components/inputfields.py [inputfields.py]
+@ /utils/components/inputfields.py [radio.py]
 
 before ==
-from inputfields import Radio
+from radio import Radio
 radio1 = Radio()
 radio2 = Radio()
 
