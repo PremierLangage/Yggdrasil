@@ -4,6 +4,14 @@ import random as rd
 from uuid import uuid4
 from components import Component
 
+# Numeric field
+class Numeric(Component):
+
+    def __init__(self, **kwargs):
+        self.selector = 'c-input'
+        self.decorator = 'Numeric'
+        super().__init__(**kwargs)
+
 # Radio field
 class Radio(Component):
 
