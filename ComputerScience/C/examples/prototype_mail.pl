@@ -19,9 +19,8 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 inputbox =: Input
-inputbox.type = number
-inputbox.placeholder = Answer
-inputbox.maxlength = 2
+inputbox.type = text
+inputbox.placeholder = Votre réponse ici
 inputbox.appearance = outline
 
 before==
