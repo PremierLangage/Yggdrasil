@@ -35,19 +35,21 @@ title==
 Prototype d'exercice pour candidat
 ==
 
+4cc0b2e5-50be-4795-ab9f-35c732219df3
+
 text==#|markdown|
 <script src="https://smtpjs.com/v3/smtp.js">
 </script>
 <script type="text/javascript"> 
+
+
 function sendEmail(corps_mess) {
 Email.send({
-    Host : "smtp.googlemail.com:465",
-    Username : "poutfou@gmail.com",
-    Password : "gnjdrr4530",
-    To : 'nicolas.borie@univ-eiffel.fr',
-    From : "Platon@univ-eiffel.com",
-    Subject : "Résumé d'exercice PLaTon",
-    Body : "test",
+    SecureToken : "4cc0b2e5-50be-4795-ab9f-35c732219df3",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : corps_mess,
 }).then(
   message => alert(message)
 );
