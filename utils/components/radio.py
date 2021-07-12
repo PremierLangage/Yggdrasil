@@ -34,6 +34,12 @@ class Radio(Component):
         """
         rd.shuffle(self.items)
 
+    def fill(self, items, indsol=0, shuffled=True)
+        self.set_items(items)
+        self.set_sol(indsol)
+        if shuffled:
+            self.shuffle()
+
     def eval(self, display=True, disabled=True):
         """
         Evaluate the answer.
