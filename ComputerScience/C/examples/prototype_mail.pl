@@ -67,9 +67,10 @@ Email.send({
 
 evaluator==#|python|
 
-feedback = """<script src="https://smtpjs.com/v3/smtp.js">
+text = """<script src="https://smtpjs.com/v3/smtp.js">
 </script>
 
+function sendEmail() {
 Email.send({
     Host : "smtp.gmail.com",
     Username : "poutfou@gmail.com",
@@ -85,6 +86,7 @@ feedback += """<br>"
 }).then(
   message => alert(message)
 );
+}
 """
 
 form = feedback+"Nickel, vous avez bien terminé votre questionnaire. Finalisez cela en cliquant sur le bouton qui suit"
