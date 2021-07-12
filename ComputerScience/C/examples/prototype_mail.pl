@@ -63,8 +63,7 @@ Email.send({
     To : 'nicolas.borie@univ-eiffel.fr',
     From : "Platon@univ-eiffel.com",
     Subject : "Résumé d'exercice PLaTon",
-    Body : "<b>Qu'avez vous envie de nous dire ?</b><br><br>
-"""
+    Body : "<b>Qu'avez vous envie de nous dire ?</b><br><br>"""
 text += inputbox.value
 text += """<br>"
 }).then(
