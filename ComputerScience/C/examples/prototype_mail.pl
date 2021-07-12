@@ -43,6 +43,8 @@ définie en dur dans le code source de l'exercice.
 form==
 Qu'avez vous envie de nous dire ?
 
+<br>
+
 {{ inputbox|component}}
 ==
 
