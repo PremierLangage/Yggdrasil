@@ -14,7 +14,7 @@ class Radio(Component):
 
     def set_items(self, items):
         """
-        Set items in the component.
+        Set the list of items.
         """
         if isinstance(items, str):
             _items_ = items.splitlines()
@@ -24,17 +24,20 @@ class Radio(Component):
 
     def set_sol(self, index):
         """
-        Set the solution from the index in the item list.
+        Set the solution (from its index in the list of items).
         """
         self._sol = self.items[index]['id']
 
     def shuffle(self):
         """
-        Shuffle the items.
+        Shuffle the list of items.
         """
         rd.shuffle(self.items)
 
     def fill(self, items, indsol=0, shuffled=True):
+        """
+        Set the list of items and the solution.
+        """
         self.set_items(items)
         self.set_sol(indsol)
         if shuffled:
@@ -54,7 +57,7 @@ class Radio(Component):
 
     def show(self):
         """
-        Show visual grading.
+        Display visual feedback.
         """
         for item in self.items:
             id = item['id']
@@ -66,4 +69,7 @@ class Radio(Component):
                 item['css'] = 'icon-check-after'
 
     def disable(self):
+        """
+        Disable the component.
+        """
         self.disabled = True
