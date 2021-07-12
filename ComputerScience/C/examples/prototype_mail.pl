@@ -72,6 +72,6 @@ Email.send({
 
 form = "Nickel, vous avez bien terminé votre questionnaire. Finalisez cela en cliquant sur le bouton qui suit"
 
-grade = (100, """<input type="button" value="Send Email" onclick="sendEmail(inputbox.value)">""")
+grade = (100, '<input type="button" value="Send Email" onclick="sendEmail('+inputbox.value+')">')
 ==
 
