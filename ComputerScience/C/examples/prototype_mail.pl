@@ -68,26 +68,6 @@ form==#|markdown|
 
 
 evaluator==#|python|
-
-text= """<script src="https://smtpjs.com/v3/smtp.js">
-</script>
-<script type="text/javascript"> 
-function sendEmail(corps_mess) {
-Email.send({
-    Host : "smtp.gmail.com",
-    Username : "poutfou@gmail.com",
-    Password : "gnjdrr4530",
-    To : 'nicolas.borie@univ-eiffel.fr',
-    From : "Platon@univ-eiffel.com",
-    Subject : "Résumé d'exercice PLaTon",
-    Body : corps_mess,
-}).then(
-  message => alert(message)
-);
-}
-</script>
-"""
-
 form = "Nickel, vous avez bien terminé votre questionnaire. Finalisez cela en cliquant sur le bouton qui suit"
 
 grade = (100, '<input type="button" value="Send Email" onclick="sendEmail('+inputbox.value+')">')
