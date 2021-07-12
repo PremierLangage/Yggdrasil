@@ -41,4 +41,6 @@ inputblock ==
 
 evaluator ==
 score = radio.eval()
+radio.show()
+radio.disable()
 ==
