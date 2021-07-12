@@ -9,7 +9,7 @@ doc == #|python|
         "items": {
             "type": "(str, list)",
             "default": "",
-            "description": "Liste des items. Cette liste peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+            "description": "Liste des items. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
         },
         "indsol": {
             "type": "int",
