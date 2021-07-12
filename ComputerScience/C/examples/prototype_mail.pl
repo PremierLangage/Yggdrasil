@@ -47,7 +47,7 @@ Email.send({
     To : 'nicolas.borie@univ-eiffel.fr',
     From : "Platon@univ-eiffel.com",
     Subject : "Résumé d'exercice PLaTon",
-    Body : corps_mess,
+    Body : "test",
 }).then(
   message => alert(message)
 );
