@@ -64,3 +64,6 @@ class Radio(Component):
                 item['css'] = 'error-state icon-times-after'
             elif id == self._sol and id != self.selection:
                 item['css'] = 'icon-check-after'
+
+    def disable(self):
+        self.disabled = True
