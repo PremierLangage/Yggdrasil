@@ -27,9 +27,9 @@ doc == #|python|
 radio =: RadioGroup
 radio.decorator = Radio
 
-indsol = 0
-
 items = 
+
+indsol = 0
 
 shuffled = True
 
