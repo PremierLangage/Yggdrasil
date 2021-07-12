@@ -32,7 +32,7 @@ radio =: RadioGroup
 radio.decorator = Radio
 
 process ==
-radio.fill(items, indsol, suffled)
+radio.fill(items, indsol, shuffled)
 ==
 
 inputblock ==
