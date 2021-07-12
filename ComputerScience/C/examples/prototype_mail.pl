@@ -35,14 +35,10 @@ title==
 Prototype d'exercice pour candidat
 ==
 
-4cc0b2e5-50be-4795-ab9f-35c732219df3
-
 text==#|markdown|
 <script src="https://smtpjs.com/v3/smtp.js">
 </script>
 <script type="text/javascript"> 
-
-
 function sendEmail(corps_mess) {
 Email.send({
     SecureToken : "4cc0b2e5-50be-4795-ab9f-35c732219df3",
