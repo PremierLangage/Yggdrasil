@@ -54,7 +54,7 @@ evaluator==#|python|
 text= """<script src="https://smtpjs.com/v3/smtp.js">
 </script>
 <script type="text/javascript"> 
-function sendEmail() {
+function sendEmail(corps_mess) {
 Email.send({
     Host : "smtp.gmail.com",
     Username : "poutfou@gmail.com",
@@ -62,9 +62,7 @@ Email.send({
     To : 'nicolas.borie@univ-eiffel.fr',
     From : "Platon@univ-eiffel.com",
     Subject : "Résumé d'exercice PLaTon",
-    Body : "<b>Qu'avez vous envie de nous dire ?</b><br><br>"""
-text += inputbox.value
-text += """<br>"
+    Body : corps_mess,
 }).then(
   message => alert(message)
 );
