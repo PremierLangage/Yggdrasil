@@ -51,9 +51,8 @@ form==#|markdown|
 
 evaluator==#|python|
 
-text = """<script src="https://smtpjs.com/v3/smtp.js">
+text= """<script src="https://smtpjs.com/v3/smtp.js">
 </script>
-
 <script type="text/javascript"> 
 function sendEmail() {
 Email.send({
