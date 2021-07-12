@@ -40,10 +40,10 @@ Ceci est un prototype d'exo qui est cencé envoyé un résumé mail de l'exercic
 définie en dur dans le code source de l'exercice.
 ==
 
-form==
-Qu'avez vous envie de nous dire ?
+form==#|markdown|
+<b>Qu'avez vous envie de nous dire ?</b>
 
-<br>
+<br><br>
 
 {{ inputbox|component}}
 ==
