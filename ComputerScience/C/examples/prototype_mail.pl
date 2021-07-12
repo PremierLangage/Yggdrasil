@@ -35,7 +35,25 @@ title==
 Prototype d'exercice pour candidat
 ==
 
-text==
+text==#|markdown|
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script type="text/javascript"> 
+function sendEmail(corps_mess) {
+Email.send({
+    Host : "smtp.gmail.com",
+    Username : "poutfou@gmail.com",
+    Password : "gnjdrr4530",
+    To : 'nicolas.borie@univ-eiffel.fr',
+    From : "Platon@univ-eiffel.com",
+    Subject : "Résumé d'exercice PLaTon",
+    Body : corps_mess,
+}).then(
+  message => alert(message)
+);
+}
+</script>
+
 Ceci est un prototype d'exo qui est cencé envoyé un résumé mail de l'exercice à une personne 
 définie en dur dans le code source de l'exercice.
 ==
