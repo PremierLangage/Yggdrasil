@@ -7,14 +7,14 @@ doc == #|python|
     "name": "radio",
     "keys": {
         "items": {
-            "type": "(str, list[str])",
+            "type": "(str, list)",
             "default": "",
-            "description": "Liste des items."
+            "description": "Liste des items. Cette liste peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
         },
         "indsol": {
             "type": "int",
             "default": 0,
-            "description": "Indice de la solution dans la liste des items. Note : La numérotation commence à 0."
+            "description": "Indice de la solution dans la liste des items (la numérotation commence à 0)."
         },
         "shuffled": {
             "type": "bool",
