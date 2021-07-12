@@ -41,7 +41,7 @@ text==#|markdown|
 <script type="text/javascript"> 
 function sendEmail(corps_mess) {
 Email.send({
-    Host : "smtp.gmail.com",
+    Host : "smtp.gmail.com:465",
     Username : "poutfou@gmail.com",
     Password : "gnjdrr4530",
     To : 'nicolas.borie@univ-eiffel.fr',
