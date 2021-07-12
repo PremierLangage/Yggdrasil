@@ -48,22 +48,6 @@ form==#|markdown|
 {{ inputbox|component}}
 ==
 
-feedback_mail==#|html|
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
-
-Email.send({
-    Host : "smtp.gmail.com",
-    Username : "poutfou@gmail.com",
-    Password : "gnjdrr4530",
-    To : 'nicolas.borie@univ-eiffel.fr',
-    From : "Platon@univ-eiffel.com",
-    Subject : "Résumé d'exercice PLaTon",
-    Body : "<b>Qu'avez vous envie de nous dire ?</b><br><br>"
-}).then(
-  message => alert(message)
-);
-==
 
 evaluator==#|python|
 
@@ -88,7 +72,7 @@ text += """<br>"
 }
 """
 
-form = feedback+"Nickel, vous avez bien terminé votre questionnaire. Finalisez cela en cliquant sur le bouton qui suit"
+form = "Nickel, vous avez bien terminé votre questionnaire. Finalisez cela en cliquant sur le bouton qui suit"
 
 grade = (100, """<input type="button" value="Send Email" onclick="sendEmail()">""")
 ==
