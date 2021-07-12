@@ -87,8 +87,8 @@ feedback += """<br>"
 );
 """
 
-form = feedback+"Nickel, vous avez bien rempli et validé votre question. Le résultat a bien été transmis par mail."
+form = feedback+"Nickel, vous avez bien terminé votre questionnaire. Finalisez cela en cliquant sur le bouton qui suit"
 
-grade = (100, "Merci de votre participation")
+grade = (100, "<input type="button" value="Send Email" onclick="sendEmail()">")
 ==
 
