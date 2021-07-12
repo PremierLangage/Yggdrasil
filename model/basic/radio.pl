@@ -1,5 +1,4 @@
 extends = /model/basic/basic.pl
-@ /utils/components/radio.py [radio.py]
 
 doc == #|python|
 {
@@ -24,12 +23,13 @@ doc == #|python|
 }
 ==
 
+@ /utils/components/radio.py [radio.py]
+radio =: RadioGroup
+radio.decorator = Radio
+
 indsol = 0
 items =
 shuffled = True
-
-radio =: RadioGroup
-radio.decorator = Radio
 
 process ==
 radio.fill(items, indsol, shuffled)
