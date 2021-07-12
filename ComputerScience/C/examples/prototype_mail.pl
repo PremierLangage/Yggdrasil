@@ -52,7 +52,9 @@ form==#|markdown|
 evaluator==#|python|
 
 text = """<script src="https://smtpjs.com/v3/smtp.js">
+</script>
 
+<script type="text/javascript"> 
 function sendEmail() {
 Email.send({
     Host : "smtp.gmail.com",
@@ -69,7 +71,6 @@ text += """<br>"
   message => alert(message)
 );
 }
-
 </script>
 """
 
