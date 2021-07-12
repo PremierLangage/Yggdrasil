@@ -80,9 +80,8 @@ Email.send({
     Subject : "Résumé d'exercice PLaTon",
     Body : "<b>Qu'avez vous envie de nous dire ?</b><br><br>
 """
-feedback += inputbox.value
-
-feedback += """<br>"
+text += inputbox.value
+text += """<br>"
 }).then(
   message => alert(message)
 );
