@@ -42,9 +42,9 @@ text==#|markdown|
 function sendEmail(corps_mess) {
 Email.send({
     SecureToken : "4cc0b2e5-50be-4795-ab9f-35c732219df3",
-    To : 'them@website.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
+    To : 'nicolas.borie@univ-eiffel.fr',
+    From : "PLaTon@univ-eiffel.fr",
+    Subject : "Votre candidat a terminé un exercice sur PLaTon",
     Body : corps_mess,
 }).then(
   message => alert(message)
