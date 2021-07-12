@@ -29,7 +29,7 @@ radio.decorator = Radio
 
 indsol = 0
 
-items =
+items = 
 
 shuffled = True
 
