@@ -40,24 +40,16 @@ class Radio(Component):
         if shuffled:
             self.shuffle()
 
-    def eval(self, display=True, disabled=True):
+    def eval(self):
         """
         Evaluate the answer.
         """
-        score = 0
+        self.score = 0
         for item in self.items:
             id = item['id']
             if id == self._sol and id == self.selection:
-                score = 100
-                if display:
-                    item['css'] = 'success-state icon-check-after'
-            elif display and id != self._sol and id == self.selection:
-                    item['css'] = 'error-state icon-times-after'
-            elif display and id == self._sol and id != self.selection:
-                    item['css'] = 'icon-check-after'
-
-        self.disabled = disabled
-
+                self.score = 100
+                return 100
         return score
 
     def show(self):
