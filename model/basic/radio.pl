@@ -28,7 +28,9 @@ radio =: RadioGroup
 radio.decorator = Radio
 
 indsol = 0
+
 items =
+
 shuffled = True
 
 process ==
