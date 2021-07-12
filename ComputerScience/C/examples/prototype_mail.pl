@@ -32,21 +32,32 @@ r = a + b
 ==
 
 title==
-Input Component
+Prototype d'exercice pour candidat
 ==
 
 text==
-Enter the result of ** {{ a }} + {{ b }} ** inside the input box.
+Ceci est un prototype d'exo qui est cencé envoyé un résumé mail de l'exercice à une personne 
+définie en dur dans le code source de l'exercice.
 ==
 
 form==
+Qu'avez vous envie de nous dire ?
+
 {{ inputbox|component}}
 ==
 
-evaluator==
-if r == inputbox.value:
-    grade = (100, '<span class="success-state">Good 👏👏👏</span>')
-else:
-    grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
+evaluator==#|python|
+import smtplib    ## Importation du module
+serveur = smtplib.SMTP('smtp.gmail.com', 587)    ## Connexion au serveur sortant (en précisant son nom et son port)
+serveur.starttls()    ## Spécification de la sécurisation
+serveur.login("poutfou@gmail.com", "gnjdrr4530")    ## Authentification
+message = inputbox.value    ## Message à envoyer
+serveur.sendmail("Platon@univ-eiffel.com", "nicolas.borie@univ-eiffel.fr", message)    ## Envoie du message
+serveur.quit()    ## Déconnexion du serveur
+
+
+feedback = "Merci d'avoir validé correctement votre question! Votre réponse a bien été transmise..."
+
+grade = (100, feedback)
 ==
 
