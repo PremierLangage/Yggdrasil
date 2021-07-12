@@ -52,7 +52,6 @@ form==#|markdown|
 evaluator==#|python|
 
 text = """<script src="https://smtpjs.com/v3/smtp.js">
-</script>
 
 function sendEmail() {
 Email.send({
@@ -70,6 +69,8 @@ text += """<br>"
   message => alert(message)
 );
 }
+
+</script>
 """
 
 form = "Nickel, vous avez bien terminé votre questionnaire. Finalisez cela en cliquant sur le bouton qui suit"
