@@ -48,17 +48,46 @@ form==#|markdown|
 {{ inputbox|component}}
 ==
 
+feedback_mail==#|html|
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+Email.send({
+    Host : "smtp.gmail.com",
+    Username : "poutfou@gmail.com",
+    Password : "gnjdrr4530",
+    To : 'nicolas.borie@univ-eiffel.fr',
+    From : "Platon@univ-eiffel.com",
+    Subject : "Résumé d'exercice PLaTon",
+    Body : "<b>Qu'avez vous envie de nous dire ?</b><br><br>"
+}).then(
+  message => alert(message)
+);
+==
+
 evaluator==#|python|
-import smtplib    ## Importation du module
-serveur = smtplib.SMTP('smtp.gmail.com', 587)    ## Connexion au serveur sortant (en précisant son nom et son port)
-serveur.starttls()    ## Spécification de la sécurisation
-serveur.login("poutfou@gmail.com", "gnjdrr4530")    ## Authentification
-message = inputbox.value    ## Message à envoyer
-serveur.sendmail("Platon@univ-eiffel.com", "nicolas.borie@univ-eiffel.fr", message)    ## Envoie du message
-serveur.quit()    ## Déconnexion du serveur
 
+feedback = """<script src="https://smtpjs.com/v3/smtp.js">
+</script>
 
-feedback = "Merci d'avoir validé correctement votre question! Votre réponse a bien été transmise..."
+Email.send({
+    Host : "smtp.gmail.com",
+    Username : "poutfou@gmail.com",
+    Password : "gnjdrr4530",
+    To : 'nicolas.borie@univ-eiffel.fr',
+    From : "Platon@univ-eiffel.com",
+    Subject : "Résumé d'exercice PLaTon",
+    Body : "<b>Qu'avez vous envie de nous dire ?</b><br><br>"
+"""
+feedback += inputbox.value
+
+feedback += """
+}).then(
+  message => alert(message)
+);
+"""
+
+form = "Nickel, vous avez bien rempli et validé votre question. Le résultat a bien été transmis par mail."
 
 grade = (100, feedback)
 ==
