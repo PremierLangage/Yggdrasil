@@ -1,5 +1,5 @@
 extends = /model/basic/basic.pl
-@ /utils/components/inputfields.py [radio.py]
+@ /utils/components/inputfields.py [radiogroup.py]
 
 doc == #|python|
 {
