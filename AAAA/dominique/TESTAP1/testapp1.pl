@@ -6,6 +6,7 @@ title= structure de controle
 text=
 
 before==
+import random
 trois,cinq = random.sample([3,5,7,11,13],2)
 bob, buzz = random.sample(["pim","pam","pom","avant","marie","par","contre","orga","tp1","tp2","jacques"],2)
 
