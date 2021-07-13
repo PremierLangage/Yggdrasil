@@ -5,7 +5,7 @@ extends = /ComputerScience/python/template/soluce.pl
 
 title= Structure de controle 
 
-
+text=
 
 before==
 trois,cinq = random.sample([3,5,7,11,13],2)
