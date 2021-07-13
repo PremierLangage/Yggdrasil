@@ -29,5 +29,14 @@ if s=="":
 else:
     print(s)
 """
+
+mplsoluce0= f" Test de {trois} \n{trois}\n"
+mplsoluce1= f" Test de {cinq} \n{cinq}\n"
+mplsoluce2= f" Test de Produit \n{cinq * trois}\n"
+mplsoluce3= f" Test de Hors \n{cinq * trois + 1}\n"
+
+
+
+
 ==
 
