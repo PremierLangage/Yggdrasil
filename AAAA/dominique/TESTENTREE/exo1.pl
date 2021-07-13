@@ -13,6 +13,7 @@ Ecrire un code qui lit un entier et le place dans la variable v puis:
 - affiche {{ buzz }} si v est divisible par {{ cinq }}.  
 - affiche {{ fizz }}{{ buzz }} si v est divisible par {{ cinq }} et {{ trois }}.
 - affiche la valeur de v sinon. 
+{{soluce}}
 ==
 
 before==
