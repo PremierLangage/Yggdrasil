@@ -3,6 +3,7 @@
 
 extends = /ComputerScience/python/template/soluce.pl
 
+title= Structure de controle 
 
 text==
 
