@@ -12,9 +12,9 @@ bob, buzz = random.sample(["pim","pam","pom","avant","marie","par","contre","org
 
 text=f"""
 Ecrire un code qui lit un entier et le place dans la variable v puis:  
-- affiche {bob} si v est divisible par {trois}.  
-- affiche {buzz} si v est divisible par {cinq}.  
-- affiche {bob}{buzz} si v est divisible par {cinq} et {trois}.   
+- affiche **{bob}** si v est divisible par {trois}.  
+- affiche **{buzz}** si v est divisible par {cinq}.  
+- affiche **{bob}{buzz}** si v est divisible par {cinq} et {trois}.   
 - affiche la valeur de v sinon.  
 """
 
