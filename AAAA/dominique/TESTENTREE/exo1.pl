@@ -8,6 +8,7 @@ title= Structure de controle
 text=
 
 before==
+toto=5
 trois,cinq = random.sample([3,5,7,11,13],2)
 fizz,buzz = random.sample(["pim","pam","pom","avant","marie","par","contre","orga","tp1","tp2","jacques"],2)
 text=f"""
