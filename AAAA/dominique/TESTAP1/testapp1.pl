@@ -1,5 +1,5 @@
 
-
+extends=/ComputerScience/python/template/soluce.pl
 
 title= structure de controle 
 
