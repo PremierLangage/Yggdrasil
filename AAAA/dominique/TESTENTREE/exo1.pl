@@ -5,6 +5,11 @@ extends = /ComputerScience/python/template/soluce.pl
 
 title= Structure de controle 
 
+
+
+before==
+trois,cinq = random.sample([3,5,7,11,13],2)
+fizz,buzz = random.sample(["pim","pam","pom","avant","marie","par","contre","orga","tp1","tp2","jacques"],2)
 text=f"""
 
 
@@ -14,11 +19,6 @@ Ecrire un code qui lit un entier et le place dans la variable v puis:
 - affiche { fizz }{ buzz } si v est divisible par { cinq } et { trois }.   
 - affiche la valeur de v sinon.  
 """
-
-before==
-trois,cinq = random.sample([3,5,7,11,13],2)
-fizz,buzz = random.sample(["pim","pam","pom","avant","marie","par","contre","orga","tp1","tp2","jacques"],2)
-
 soluce= f"""
 s=""
 if v % { trois } == 0:
