@@ -19,6 +19,7 @@ Ecrire un code qui lit un entier et le place dans la variable v puis:
 """
 
 soluce= f"""
+v=int(input())
 s=""
 if v % {trois} == 0:
     s+= "{bob}"
