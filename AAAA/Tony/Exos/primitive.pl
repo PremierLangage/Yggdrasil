@@ -19,6 +19,7 @@ $! f \mapsto \displaystyle {{ f|latex }} !$
   
 
 evaluator ==  
+from sympy import diff
  
 if diff(ans-sol,x) == 0:
     score = 100
