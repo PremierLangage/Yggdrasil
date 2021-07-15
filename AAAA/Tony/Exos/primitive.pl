@@ -16,10 +16,7 @@ Déterminer une primitive de
 $! f \mapsto \displaystyle {{ f|latex }} !$
 ==
  
-#solution pour modifier le message de solution
-solution == 
-La dérivée est {{sol|latex}}
-==
+ 
  
 evaluator == 
 if diff(ans,x) == f:
