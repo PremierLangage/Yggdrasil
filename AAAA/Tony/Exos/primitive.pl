@@ -23,7 +23,7 @@ from sympy import diff
  
 if diff(ans-sol,x) == 0:
     score = 100
-else : 
+else: 
     score = 0
     feedback = f"T es nul c'est {sol}"
 ==
