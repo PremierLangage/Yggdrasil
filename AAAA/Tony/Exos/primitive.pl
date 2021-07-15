@@ -23,6 +23,7 @@ evaluator ==
 if diff(ans-sol,x) == 0:
     score = 100
 else : 
+    score = 0
     feedback = f"T es nul c'est {sol}"
 ==
 
