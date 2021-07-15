@@ -25,7 +25,7 @@ if ans != sol:
     score = 0
     feedback = f"T es nul c'est {sol}"
 
-    
+==
 #if diff(ans-sol,x) == 0:
 #    score = 100
 #else : 
