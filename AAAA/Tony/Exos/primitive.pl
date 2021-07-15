@@ -2,12 +2,12 @@
 extends = /model/math/expr.pl
 
 before ==
-from sympy import Symbol, diff, sin
+from sympy import Symbol, diff, integrate, sin
 
 x = Symbol('x')
  
 f = x*sin(x) 
-sol = diff(f,x)
+sol = integrate (f,x) 
 ==
 
 #Double dollar pour mettre le latex centré.
