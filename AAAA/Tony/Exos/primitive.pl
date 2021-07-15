@@ -16,10 +16,7 @@ Déterminer une primitive de
 
 $! f \mapsto \displaystyle {{ f|latex }} !$
 ==
- 
-solution ==
-prout
-==
+  
 
 evaluator ==  
  
