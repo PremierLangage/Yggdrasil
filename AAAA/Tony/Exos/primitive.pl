@@ -18,7 +18,7 @@ $! f \mapsto \displaystyle {{ f|latex }} !$
 ==
  
 
- 
+
 evaluator == 
 if diff(ans-sol,x) == 0:
     score = 100
