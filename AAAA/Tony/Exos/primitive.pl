@@ -19,10 +19,10 @@ $! f \mapsto \displaystyle {{ f|latex }} !$
  
 
  
-#evaluator == 
-#if diff(ans,x) == f:
-#    score = 100
-#else : 
-#    feedback = f"T es nul c'est {sol}"
-#==
+evaluator == 
+if diff(ans-sol,x) == 0:
+    score = 100
+else : 
+    feedback = f"T es nul c'est {sol}"
+==
 
