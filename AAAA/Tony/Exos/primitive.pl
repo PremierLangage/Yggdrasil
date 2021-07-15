@@ -20,6 +20,7 @@ $! f \mapsto \displaystyle {{ f|latex }} !$
 
 
 evaluator == 
+from ast import literal_eval
 
 if ans != sol:
     score = 0
