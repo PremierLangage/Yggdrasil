@@ -31,7 +31,7 @@ lst=[]
 def check():
     for a,b,c,booleen in lst :
         if (a and b or c) != booleen :
-            return tools.grade_wrong( str(a) + ' ET ' + str(b) + ' OU ' + str(c) + ' ne vaut pas ' + str(booleen))
+            return tools.grade_wrong( 'r&#233;ponse incorrecte pour :' + str(a) + ' ET ' + str(b) + ' OU ' + str(c))
 
     # ajout des éventuelles remarques de syntaxe
     return 100, tools.good('Bonne r&#233;ponse !') + tools.remarks([';', '(', '\n'], code)
