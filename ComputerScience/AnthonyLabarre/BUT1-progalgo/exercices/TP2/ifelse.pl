@@ -41,7 +41,7 @@ else:
         if _foo != 'OK':
             grade = tools.grade_wrong('ne fonctionne pas pour x = ' + str(x))
         else:
-            x=random.choices([-10,-2,0,1,32,4,2,41,43,100,4222222])
+            x=random.choice([-10,-2,0,1,32,4,2,41,43,100,4222222])
             exec(code2)
             if _foo != 'KO':
                 grade = tools.grade_wrong("ne fonctionne pas pour x = " + str(x) )
