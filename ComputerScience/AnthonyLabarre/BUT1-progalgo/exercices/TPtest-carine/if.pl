@@ -11,7 +11,7 @@ Test et affichage
 ==
 
 text== #|html|
-Affichez 'positif' si la variable **secret** (qui existe déjà) est strictement positive.
+Affichez 'positif' si la variable **x** (qui existe déjà) est strictement positive.
 ==
 
 #un éditeur simple, fond blanc, pas de chois de langage
