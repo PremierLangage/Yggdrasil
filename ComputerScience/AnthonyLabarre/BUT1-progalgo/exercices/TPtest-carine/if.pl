@@ -47,7 +47,6 @@ else:
             if '_foo' in locals():
                 grade = tools.grade_wrong('Vous affichez ' + _foo + ' pour la valeur x = ' + str(x) + ', alors que vous ne devriez rien afficher.')
             else:
-                del _foo
                 x=-random.randint(1,100)
                 exec(code2)
                 if '_foo' in locals():
