@@ -25,7 +25,7 @@ import re
 import tools # fonctions auxiliaires
 
 code = response['answer']
-code2 = '_foo=""\nre.sub("print *\(", "_foo+=(", code)
+code2 = '_foo=""\n' + re.sub("print *\(", "_foo+=(", code)
 
 # tente d'executer, puis verifie la présence de la variable demandée. si ok, check valeur et syntaxe.
 try:
