@@ -38,7 +38,7 @@ else:
          grade = tools.grade_wrong("Hum... quelle fonction utilisez-vous pour l'affichage ?")    
     else:
         if _foo != "".join([' '+str(i) for i in range(50)]):
-            grade = tools.grade_wrong('Hum... ce n\'est pas bon, vous affichez ' + _foo.replace(' ', '\n')
+            grade = tools.grade_wrong('Hum... ce n\'est pas bon, vous affichez ' + _foo.replace(' ', '\n'))
         else:
             grade= 100, tools.good('Bonne r&#233;ponse !')
 ==
