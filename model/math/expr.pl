@@ -9,7 +9,7 @@ evaluator ==
 from ast import literal_eval
 from sympy import sympify
 from evalsympy import eval_expr
-score, error = eval_expr(answers['math'], sol, checkratsimp=checkratsimp, unauthorized_func=unauthorized_func, local_dict=sympify(symbol_dict))
+score, error = eval_expr(answers['math'], sol, checkratsimp=checkratsimp,equality=equality, unauthorized_func=unauthorized_func, local_dict=sympify(symbol_dict))
 feedback = message[error]
 ==
 
