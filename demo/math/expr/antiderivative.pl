@@ -15,6 +15,3 @@ $! f \mapsto \displaystyle {{ f|latex }} !$
 
 equality = "UpToConstant"
 
-message.NotEqualUpToConstant ==
-La réponse n'est pas une primitive de $! {{ f|latex }} !$
-==
