@@ -20,7 +20,7 @@ before== #|python|
 import random 
 random.seed(seed)
 type_var = random.choice(["int","str","float","bool"])
-var = random.choice(["x", "y", "c", "X", "Y","DEUX","lapin","bob42"])
+var = random.choice(["x", "y", "c", "X", "Y","un_deux","lapin","bob42"])
 
 pltest0="""
 >>> "{}" in globals() # La variable {} est elle définie ?
