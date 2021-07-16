@@ -9,6 +9,8 @@ f = g * h
 sol = diff(f, x)
 ==
 
+equality = "UpToConstant"
+
 question ==
 Calculer la dérivée de la fonction 
 $$ f : x \mapsto {{ f|latex }} .$$
