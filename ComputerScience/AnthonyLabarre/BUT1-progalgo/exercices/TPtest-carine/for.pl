@@ -43,7 +43,7 @@ else:
             grade= 100, tools.good('Bonne r&#233;ponse !')
 ==
 
-
+########### Attention, ne fonctionne pas si les éétudiant utilisent print(..., end=...)
 
 
 
