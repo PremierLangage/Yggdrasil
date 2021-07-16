@@ -55,7 +55,7 @@ else:
                     rmk=""
                     if 'else' in code :
                         rmk=tools.rmk("Il y a plus simple, sans utliser <strong>else<strong>")
-                    grade= 100, tools.good('Bonne r&#233;ponse !' + rmk)
+                    grade= 100, tools.good('Bonne r&#233;ponse !') + rmk
 ==
 
 
