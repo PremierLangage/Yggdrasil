@@ -52,7 +52,10 @@ else:
                 if '_foo' in locals():
                     grade = tools.grade_wrong('Vous affichez ' + _foo + ' pour la valeur x = ' + str(x) + ', alors que vous ne devriez rien afficher.')
                 else:
-                    grade= 100, tools.good('Bonne r&#233;ponse !')
+                    rmk=""
+                    if 'else' in code :
+                        rmk=tools.rmk("Il y a plus simple, sans utliser <strong>else<strong>")
+                    grade= 100, tools.good('Bonne r&#233;ponse !'+rmk)
 ==
 
 
