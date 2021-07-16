@@ -3,6 +3,7 @@ extends = /model/math/input.pl
 checkratsimp = True
 symbol_dict = {'e': E}
 unauthorized_func = []
+equality = ""
 
 evaluator ==
 from ast import literal_eval
