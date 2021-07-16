@@ -579,8 +579,12 @@ def eval_expr(strans, sol, checkratsimp=True, modulo=None, unauthorized_func=[],
     if ans.has(sp.S.Infinity, sp.S.NegativeInfinity):
         if ans != sp.S.Infinity and ans != sp.S.NegativeInfinity:
             return (-1, "InftyOp")
-    if not equal(ans, sol, modulo):
-        return (0, "NotEqual")
+    if equality == "UpToConstant":
+        if not (ans - sol).is_constant():
+            return (0, "NotEqualUpToConstant")
+    else:
+        if not equal(ans, sol, modulo):
+            return (0, "NotEqual")
     if checkratsimp and not is_rat_simp(ans):
         return (-1, "NotRatSimp")
     return (100, "Success")
