@@ -41,12 +41,16 @@ else:
         if _foo != 'OK':
             grade = tools.grade_wrong('ne fonctionne pas pour x = ' + str(x))
         else:
+            del _foo
             x=random.choice([-10,-2,0,1,32,4,2,41,43,100,4222222])
             exec(code2)
-            if _foo != 'KO':
-                grade = tools.grade_wrong("ne fonctionne pas pour x = " + str(x) )
+            if not '_foo' in locals():
+                grade = tools.grade_wrong("il manque au moins un cas (2)")    
             else:
-                grade= 100, tools.good('Bonne r&#233;ponse !')
+                if _foo != 'KO':
+                    grade = tools.grade_wrong("ne fonctionne pas pour x = " + str(x) )
+                else:
+                    grade= 100, tools.good('Bonne r&#233;ponse !')
 ==
 
 
