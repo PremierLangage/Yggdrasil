@@ -38,7 +38,7 @@ else:
          grade = tools.grade_wrong("Hum... quelle fonction utilisez-vous pour l'affichage ?")    
     else:
         if _foo != "".join([str(i) for i in range(50)]):
-            grade = tools.grade_wrong('Hum... vous affichez ' + _foo + ' pour la valeur x = ' + str(x))
+            grade = tools.grade_wrong('Hum... vous affichez ' + _foo)
         else:
             grade= 100, tools.good('Bonne r&#233;ponse !')
 ==
