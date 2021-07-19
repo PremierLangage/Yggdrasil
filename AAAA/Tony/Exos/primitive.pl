@@ -12,8 +12,9 @@ Déterminer une primitive de
 
 $! f \mapsto \displaystyle {{ f|latex }} !$
 
-#Attention, pour {{ x|latex}}, la réponse {{x**2/2+C|latex}} n'est pas acceptée. Si vous voulez ajouter une constante,
-#il faut donner un réel.
+#Attention, pour {{ x|latex}}, la réponse {{x**2/2+C|latex}} n'est pas acceptée. 
+Si vous voulez ajouter une constante,
+il faut donner un réel.
 ==
 
 equality = "UpToConstant"
