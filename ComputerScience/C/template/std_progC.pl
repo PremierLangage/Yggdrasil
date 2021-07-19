@@ -48,6 +48,7 @@ hints.shouldConfirm=false
 hints.confirmTitle=Êtes vous sur de vouloir un indice ?
 hints.confirmOkTitle=Oui
 hints.confirmNoTitle=Non
+hints.moreHintTitle=Encore un!
 
 text==
 **This text shoud be overwrited when inheriting from the Standard C 
