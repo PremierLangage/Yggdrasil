@@ -1,4 +1,9 @@
 
 extends= trad1.pl
 
-fname = a
+
+
+before2==
+fname = 'a'
+
+==
