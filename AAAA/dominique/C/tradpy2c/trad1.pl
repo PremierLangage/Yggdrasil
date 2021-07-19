@@ -24,7 +24,7 @@ tag=array|fonction|parcours|simple
 
 
 before==
-text += "pout et pouet" 
+
 
 ==
 
