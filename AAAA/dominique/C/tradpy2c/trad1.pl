@@ -22,8 +22,12 @@ author=Nicolas Borie & Dominique Revuz
 title=Moyenne des éléments d'un tableau
 tag=array|fonction|parcours|simple
 
+fname=a
+
+extends= nameliste.pl
 
 before==
+
 
 
 ==
