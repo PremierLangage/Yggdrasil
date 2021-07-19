@@ -40,12 +40,19 @@ text==
 
 ==
 
-editor.code==#|c|
+editor.code==#|c|int f(int u){
+return u*3;
+}
+
+
+
+==
+kiki==
 ... f(...){
 ...
 }
-
 ==
+
 
 solution==#|c|
 int f(int u){
