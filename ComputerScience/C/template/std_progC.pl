@@ -39,7 +39,7 @@ builder =@ /builder/before.py
 title=Standard C Programming exercise template (summer 2020)
 
 hints % { "cid": "hints", "selector": "c-hint" }
-hints.label = Besoin d'aide ? Libérez un indice...
+hints.label="Besoin d'aide ? Libérez un indice..."
 hints.confirmMessage ==
 The usage of a hint may affect your final score!
 ==
