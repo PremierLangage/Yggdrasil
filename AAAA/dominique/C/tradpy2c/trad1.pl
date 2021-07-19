@@ -31,7 +31,7 @@ def f(u):
 text==
 Écrire une fonction C **solution** est une traduction de la fonction python suivante
 ```python
-{funcpython}
+{{funcpython}}
 ```
 
 ==
