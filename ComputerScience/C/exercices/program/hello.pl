@@ -78,5 +78,7 @@ checks_args_stdin==#|python|
   ["Autre éxécution", ["avec", "des", "arguments", "inutiles"],""] ]
 ==
 
+astuces==
 
+==
 
