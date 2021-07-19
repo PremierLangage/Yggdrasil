@@ -52,8 +52,7 @@ editor.code += "\n ... "+funname+"( ... )\n ... \n"
 
 
 text==
-Écrire une fonction C **{{funname}}** est une traduction de la fonction python suivante
-
+Écrire une fonction C **{{funname}}** qui est une traduction de la fonction python suivante :
 ==
 
 editor.code ==
