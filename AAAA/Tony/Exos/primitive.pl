@@ -43,5 +43,5 @@ equality = "UpToConstant"
 
 message.NotEqualUpToConstant = La réponse n'est pas une primitive.
 
-#ajouter racine ln en possible.
+keypad = ["sqrt"]
 
