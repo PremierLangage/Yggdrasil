@@ -1,4 +1,4 @@
 
-def  b(p,q):
+def FUNC(p,q):
     return p+q
 
