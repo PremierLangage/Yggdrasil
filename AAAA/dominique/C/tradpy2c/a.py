@@ -1,4 +1,4 @@
 
-def a(n):
+def FUNC(n):
     print(n)
 
