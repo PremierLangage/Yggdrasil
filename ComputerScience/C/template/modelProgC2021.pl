@@ -48,9 +48,18 @@ In this template example, we ask the user to programm a squarre function.
 ==
 
 editor =: CodeEditor
-editor.theme=dark
-editor.language=c
-# editor.height=350px
+editor.theme = dark
+editor.language = C
+editor.code ==
+/* ecrire votre code ICI */
+==
+
+editor1 =: CodeEditor
+editor1.theme = light
+editor1.language = python
+
+
+
 
 editor.code==#|c|
 /* write your code here */
@@ -60,7 +69,7 @@ int carre(int n){
 }
 ==
 
-before ==#|python|
+before1 ==#|python|
 from random import randint
 
 # Some globals variables
