@@ -36,12 +36,12 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-title=Standard C Programming exercise template (summer 2020)
+title=Standard C Programming exercise template (summer 2021)
 
 hints % { "cid": "hints", "selector": "c-hint" }
 hints.label=<b>Besoin d'aide ? Libérez un indice...</b>
 hints.confirmMessage==
-L'usage d'indices peut affecter l'évaluation de l'exercice !
+L'usage d'indices affecte la note d'autonomie !
 ==
 
 hints.shouldConfirm=false
