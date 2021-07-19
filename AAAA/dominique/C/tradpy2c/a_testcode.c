@@ -11,11 +11,12 @@ void a(int n)
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
-  int tab[]={ 3,5,9,12, 131,789 };
   int i=0;
+  int nb_term = argc-1;
+  int* tab = (int*)malloc(nb_term*sizeof(int));
 
-  for (i=0 ; i< 6 ; i++){
-    a(tab[i]);
+  for (i=0 ; i<nb_term ; i++){
+    tab[i] = a(atoi(argv[i+1]));
   }
 
   return 0;
