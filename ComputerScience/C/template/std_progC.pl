@@ -46,8 +46,8 @@ L'usage d'indices peut affecter l'évaluation de l'exercice !
 
 hints.shouldConfirm % false
 hints.confirmTitle = Êtes vous sur de vouloir un indice ?
-hints.confirmOkTitle = No
-hints.confirmNoTitle = No
+hints.confirmOkTitle = Oui
+hints.confirmNoTitle = Non
 
 text==
 **This text shoud be overwrited when inheriting from the Standard C 
