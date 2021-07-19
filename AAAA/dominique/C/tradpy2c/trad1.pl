@@ -57,7 +57,8 @@ return u*3;
 ==
 
 code_before==
-
+#include <stdio.h>
+#include <stdlib.h>
 ==
 
 code_after==#|c|
