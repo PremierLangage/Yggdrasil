@@ -16,7 +16,7 @@ int main(int argc, char* argv[]){
   int* tab = (int*)malloc(nb_term*sizeof(int));
 
   for (i=0 ; i<nb_term ; i++){
-    tab[i] = a(atoi(argv[i+1]));
+     a(atoi(argv[i+1]));
   }
 
   return 0;
