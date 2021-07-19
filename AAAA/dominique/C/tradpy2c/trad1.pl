@@ -36,7 +36,7 @@ with open(fname+".c","r") as fsolo:
 with open(fname+"_testcode.c","r") as ftst:
     code_after = ftst.read()
 
-code_before += "#define FUNC "+fname+"\n"
+code_before += "\n#define FUNC "+fname+"\n"
 ==
 
 
