@@ -48,7 +48,7 @@ text+= """\n<div style="border:1px solid black;padding:1%;margin:1%;border-radiu
 <a data-toggle="tab" href="#TESTINGCODE"> Testing code :   </a></div></li>
                     <div class="tab-content">
                         <div id="TESTINGCODE" class="tab-pane fade in active">
-                            <div style="border:1px solid black;padding:1%;margin:1%;background-color:LightGreen;border-radius:4px;color:White;font-family:Monospace;font-size:0.8em;font-style:normal;font-weight:normal;">
+                            <div style="border:1px solid black;padding:1%;margin:1%;background-color:black;border-radius:4px;color:White;font-family:Monospace;font-size:0.8em;font-style:normal;font-weight:normal;">
                                 <p>"""+ re.sub("FUNC",funname,code_after).split("CUT_HERE")[-1]+ """</p> 
                             </div>
                         </div>
