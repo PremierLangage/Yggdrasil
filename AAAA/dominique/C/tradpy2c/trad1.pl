@@ -23,7 +23,7 @@ title=Moyenne des éléments d'un tableau
 tag=array|fonction|parcours|simple
 
 fname=a
-funame=toto
+funname=toto
 
 extends= namelist.pl
 
