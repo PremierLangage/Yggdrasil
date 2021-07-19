@@ -45,7 +45,6 @@ text==
 ==
 
 
-==
 
 
 Xsolution==#|c|
