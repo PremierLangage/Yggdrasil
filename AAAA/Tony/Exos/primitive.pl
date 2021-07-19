@@ -1,10 +1,12 @@
 extends = /model/math/expr.pl
 
+#A réglier : sympy n'a pas l'éair  de prendre ln(abs(x)). Pb lié à la valeur absolue.
+
 before ==
 from sympy import integrate,diff
 from random import choice, randint
 x = Symbol('x')
-ch = randint(0,5)
+ch = randint(0,7)
 d1,d2,d3 = randint(-5,5),randint(-5,5),randint(-5,5)
 al = randint(1,6)
 n= randint(1,6)
@@ -40,4 +42,6 @@ Si vous voulez ajouter une constante à votre fonction, il faut donner un réel.
 equality = "UpToConstant"
 
 message.NotEqualUpToConstant = La réponse n'est pas une primitive.
+
+#ajouter racine ln en possible.
 
