@@ -33,7 +33,8 @@ with open(fname+".py","r") as fpy:
 with open(fname+".c","r") as fsolo:
     solution = fsolo.read()
 
-
+with open(fname+"_testcode.c","r") as ftst:
+    code_after = ftst.read()
 
 
 ==
