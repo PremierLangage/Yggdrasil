@@ -94,6 +94,9 @@ if "astuces" in globals():
     hints.items = eval(astuces)
     text+='<br>'
     text+=" {{ hints|component}} \n<br>"
+    nb_hints = len(hints.items)
+else:
+    nb_hints = 0
 
 text+=" {{ editor|component }} "
 ==
@@ -343,6 +346,9 @@ if compil_state == 'error':
     feedback += '<b>Erreur à la compilation :</b> Pas de test lancé</div>'
 else:
     feedback += feedback_checks
+
+# Calcul de la partie : note d'autonomie
+grade_alone = 50 + ( // (1+len()))
 
 grade_attempt = 50 + (200 // (3+nb_attempt))
 
