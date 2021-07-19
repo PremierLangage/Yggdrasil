@@ -34,7 +34,7 @@
 @ std_progC_utils.py
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
+builder =@ /builder/bbefore.py
 
 title=Standard C Programming exercise template (summer 2020)
 
