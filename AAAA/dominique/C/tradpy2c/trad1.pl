@@ -44,7 +44,7 @@ with open(fname+".c","r") as fsolo:
 with open(fname+"_testcode.c","r") as ftst:
     code_after = ftst.read()
 
-text+= "\n Testing code :   \n"+ re.sub("FUNC",funname,code_after)
+text+= "\n Testing code :   \n"+ re.sub("FUNC",funname,code_after).split("CUT_HERE")[-1]
 
 code_before += "\n#define FUNC "+funname+"\n"
 editor.code += "\n ... "+funname+"( ... )\n ... \n"
