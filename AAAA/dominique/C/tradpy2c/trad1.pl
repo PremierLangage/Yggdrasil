@@ -75,7 +75,7 @@ int main(int argc, char* argv[]){
   int i=0;
 
   for (i=0 ; i<nb_term ; i++){
-    printf("%d\n", f(atoi(argv[i+1]));
+    printf("%d\n", f(atoi(argv[i+1])));
   }
 
   return 0;
