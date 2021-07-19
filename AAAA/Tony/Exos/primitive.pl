@@ -1,7 +1,7 @@
 extends = /model/math/expr.pl
 
 before ==
-from sympy import integrate,sin,cos, ln, sqrt
+from sympy import integrate,sin,cos, ln, sqrt, exp
 from random import choice, randint
 x = Symbol('x')
 n = randint(0,100)
