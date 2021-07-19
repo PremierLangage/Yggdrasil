@@ -12,6 +12,9 @@ void a(int n)
 #include <stdio.h>
 #include <stdlib.h>
 
+#define CUT_HERE int Z;
+CUT_HERE
+
 int main(int argc, char* argv[]){
   int i=0;
   int nb_term = argc-1;
