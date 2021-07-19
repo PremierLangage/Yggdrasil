@@ -73,27 +73,16 @@ code_before==
 ==
 
 code_after==#|c|
-#include <stdio.h>
-#include <stdlib.h>
 
-int main(int argc, char* argv[]){
-  int nb_term = argc-1;
-  int i=0;
-
-  for (i=0 ; i<nb_term ; i++){
-    printf("%d\n", f(atoi(argv[i+1])));
-  }
-
-  return 0;
-}
 
 ==
 
 checks_args_stdin==#|python|
-[["Exécution simple", ["1"], ""],
+[["Exécution simple", ["2"], ""],
  ["Quelques éléments", ["12", "-3", "52", "0", "41"], ""],
  ["Tableau vide", [], ""],
  ["Test aléatoire 1", [str(randint(-100, 100)) for i in range(randint(5, 10))], ""],
+ ["Test aléatoire 2", [str(randint(-100, 100)) for i in range(randint(5, 10))], ""],
  ]
 ==
 
