@@ -4,7 +4,7 @@ def a(n):
 
 */
 
-void a(int n)
+void FUNC(int n)
 {
     printf("%d\n",n);
 }
