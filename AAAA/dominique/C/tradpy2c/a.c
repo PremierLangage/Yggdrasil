@@ -1,3 +1,8 @@
+/*
+def a(n):
+    print(n)
+
+*/
 
 void a(int n)
 {
