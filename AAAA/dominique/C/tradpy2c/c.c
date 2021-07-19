@@ -1,2 +1,2 @@
 
-int c(int x, int y){ return x > y; }
+int FUNC(int x, int y){ return x > y; }
