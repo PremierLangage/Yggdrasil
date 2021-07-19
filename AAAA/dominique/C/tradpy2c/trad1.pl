@@ -45,7 +45,9 @@ text==
 
 ==
 
-
+editor.code ==
+/* Votre traduction en C dans cet éditeur */
+==
 
 
 Xsolution==#|c|
