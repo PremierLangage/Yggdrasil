@@ -22,6 +22,13 @@ author=Nicolas Borie & Dominique Revuz
 title=Moyenne des éléments d'un tableau
 tag=array|fonction|parcours|simple
 
+
+before==
+text += "pout et pouet" 
+
+==
+
+
 funcpython==
 def f(u):
     return u*3
