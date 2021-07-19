@@ -46,7 +46,7 @@ code_before += "\n#define FUNC "+funname+"\n"
 
 
 text==
-Écrire une fonction C **solution** est une traduction de la fonction python suivante
+Écrire une fonction C **{{funname}}** est une traduction de la fonction python suivante
 
 ==
 
