@@ -22,4 +22,4 @@ equality = "UpToConstant"
 
 message.NotEqualUpToConstant = La réponse n'est pas une primitive.
 
-keypad = ["sqrt","ln"]
+keypad = ["sqrt","log"]
