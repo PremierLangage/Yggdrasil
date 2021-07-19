@@ -27,8 +27,12 @@ fname=a
 extends= namelist.pl
 
 before==
+import re
 with open(fname+".py","r") as fpy:
-    editor1.code = fpy.read()
+    soso = fpy.read()
+
+editor1.code = re.sub("FUNC",fname,soso)
+
 
 with open(fname+".c","r") as fsolo:
     solution = fsolo.read()
