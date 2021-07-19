@@ -28,9 +28,7 @@ extends= namelist.pl
 before==
 import re
 from random import choice 
-lname=[chr(l) for l in range(97,97+3)]
-fname = choice(lname)
-fname = 'c'
+
 funname=choice( ['Sed', 'trut', 'perspiciatis', 'unde', 'omnis', 'iste', 'natus', 'error', 'sit', 'voluptatem', 'accusantium', 'doloremque', 'laudantium', 'totam', 'rem', 'aperiam', 'eaque', 'ipsa', 'quae', 'ab', 'illo', 'inventore', 'veritatis', 'et', 'quasi', 'architecto', 'beatae', 'vitae', 'dicta', 'sunt', 'explicabo'])
 #funname = choice(['bar','foo','toto','titi','tata','Zuver','Neirob', 'labouil', 'champyulesis', 'uge', 'eiffel', 'lorem',])
 with open(fname+".py","r") as fpy:
