@@ -26,8 +26,6 @@ else:
     f = al*dg/g**n
 
 sol = integrate(f, x) 
-
-u'sin(u), exp,/u,u'un u'/un, cb lin
 ==
 
 question ==
