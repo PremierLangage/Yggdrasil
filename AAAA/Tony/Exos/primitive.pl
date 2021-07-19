@@ -24,6 +24,8 @@ elif ch == 3:
     f =al*dg/g
 elif ch == 4:
     f = al*dg*g**n
+elif ch == 5:
+    f = d1*x**2+d2*x+d3
 else:
     f = al*dg/g**n
 
