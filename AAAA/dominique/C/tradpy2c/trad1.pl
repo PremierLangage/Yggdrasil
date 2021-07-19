@@ -39,34 +39,16 @@ with open(fname+".c","r") as fsolo:
 ==
 
 
-editor1.code ==
-def f(u):
-    return u*3
-
-==
-
 text==
 Écrire une fonction C **solution** est une traduction de la fonction python suivante
 
 ==
 
-editor.code==#|c|
-
-int f(int u){
-return u*3;
-}
-
-
 
 ==
-kiki==
-... f(...){
-...
-}
-==
 
 
-solution==#|c|
+Xsolution==#|c|
 int f(int u){
 return u*3;
 }
