@@ -84,7 +84,8 @@ if "taboo" in globals():
     text+='</div> <br />\n'
 
 if "astuces" in globals():
-    text+=''
+    hints.items = astuces
+    text+='<br>'
     text+=" {{ hints|component}} \n<br>"
 
 text+=" {{ editor|component }} "
