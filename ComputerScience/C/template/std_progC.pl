@@ -360,7 +360,7 @@ if nb_hints > 0:
         feedback += 'Sans indice</div>'
     else: 
         feedback += '<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
-        if count_hint == 1
+        if count_hint == 1:
             feedback += '1 indice utilisé</div>'
         else:
             feedback += str(count_hint)+' indices utilisés</div>'
