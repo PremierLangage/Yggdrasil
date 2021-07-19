@@ -5,7 +5,7 @@ from sympy import integrate,sin,cos, ln, sqrt, exp
 from random import choice, randint
 x = Symbol('x')
 n = randint(0,100)
-f = choice[sin(x),cos(x),x**n,ln(x), 1/x,1/(2*sqrt(x)), exp(x)]
+f = choice([sin(x),cos(x),x**n,ln(x), 1/x,1/(2*sqrt(x)), exp(x)])
 sol = integrate(f, x) 
 ==
 
