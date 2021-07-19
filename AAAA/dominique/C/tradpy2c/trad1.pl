@@ -40,7 +40,9 @@ text==
 
 ==
 
-editor.code==#|c|int f(int u){
+editor.code==#|c|
+
+int f(int u){
 return u*3;
 }
 
