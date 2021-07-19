@@ -15,7 +15,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/C/template/std_progC.pl
+extends= /ComputerScience/C/template/modelProgC2021.pl
 
 author=Nicolas Borie
 
@@ -30,15 +30,16 @@ def f(u):
 
 text==
 Écrire une fonction C **solution** est une traduction de la fonction python suivante
-```
-{{funcpython}}
-```
 
+
+<verbatim>
+    {{funcpython}}
+</verbatim>
 ==
 
 editor.code==#|c|
-... average_array(...){
-
+... f(...){
+...
 }
 
 ==
