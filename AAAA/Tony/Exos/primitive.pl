@@ -12,10 +12,10 @@ sol = integrate(f, x)
 question ==
 Déterminer une primitive de 
 
-$! f \mapsto \displaystyle {{ f|latex }} !$
+$! f \mapsto \displaystyle {{ f|latex }} !$.
 
-Attention, pour $!x!$, la réponse $!\frac{x^2}{2}+C!$ n'est pas acceptée. 
-Si vous voulez ajouter une constante, il faut donner un réel.
+Attention,il ne faut pas utiliser la notation $!C!$. 
+Si vous voulez ajouter une constante à votre fonction, il faut donner un réel.
 ==
 
 equality = "UpToConstant"
