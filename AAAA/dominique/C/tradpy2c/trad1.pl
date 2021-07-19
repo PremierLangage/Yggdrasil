@@ -19,18 +19,17 @@ extends= /ComputerScience/C/template/modelProgC2021.pl
 
 author=Nicolas Borie & Dominique Revuz
 
-title=Moyenne des éléments d'un tableau
-tag=array|fonction|parcours|simple
+title= Traduction du python vers le C
+tag=fonction|parcours|simple
 
-fname=b
-funname=toto
 
 extends= namelist.pl
 
 before==
 import re
 from random import choice 
-#fname = choice(['a','b'])
+lname=[chr(l) for l in range(97,97+1)]
+fname = choice(lname)
 funname=choice( ['Sed', 'ut', 'perspiciatis', 'unde', 'omnis', 'iste', 'natus', 'error', 'sit', 'voluptatem', 'accusantium', 'doloremque', 'laudantium', 'totam', 'rem', 'aperiam', 'eaque', 'ipsa', 'quae', 'ab', 'illo', 'inventore', 'veritatis', 'et', 'quasi', 'architecto', 'beatae', 'vitae', 'dicta', 'sunt', 'explicabo'])
 #funname = choice(['bar','foo','toto','titi','tata','Zuver','Neirob', 'labouil', 'champyulesis', 'uge', 'eiffel', 'lorem',])
 with open(fname+".py","r") as fpy:
