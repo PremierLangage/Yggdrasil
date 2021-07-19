@@ -26,6 +26,8 @@ tag=array|fonction|parcours|simple
 before==
 text += "pout et pouet" 
 
+editor1.code = "3"
+
 ==
 
 
@@ -48,18 +50,9 @@ editor.code==#|c|
 ==
 
 solution==#|c|
-float average_array(int* tab, int size){
-  int i;
-  float sum = 0;
-
-  if (size == 0)
-    return 0;
-  
-  for (i=0 ; i<size ; i++)
-    sum += tab[i];
-  return sum / ((float)size);
+int f(int u){
+return u*3;
 }
-
 ==
 
 code_before==
@@ -72,15 +65,12 @@ code_after==#|c|
 
 int main(int argc, char* argv[]){
   int nb_term = argc-1;
-  int* tab = (int*)malloc(nb_term*sizeof(int));
-  int i;
+
 
   for (i=0 ; i<nb_term ; i++){
-    tab[i] = atoi(argv[i+1]);
+    print("%d\n", atoi(argv[i+1]));
   }
 
-  printf("Moyenne : %f\n", average_array(tab, nb_term));
-  free(tab);
   return 0;
 }
 
