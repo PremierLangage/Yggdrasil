@@ -4,6 +4,6 @@ extends= trad1.pl
 
 
 before2==
-fname = 'a'
+fname = 'b'
 
 ==
