@@ -42,6 +42,7 @@ with open(fname+"_testcode.c","r") as ftst:
     code_after = ftst.read()
 
 code_before += "\n#define FUNC "+funname+"\n"
+editor.code += "\n ... "+funname+"( ... )\n ... \n"
 ==
 
 
