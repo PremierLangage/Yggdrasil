@@ -17,7 +17,7 @@
 
 extends= /ComputerScience/C/template/modelProgC2021.pl
 
-author=Nicolas Borie
+author=Nicolas Borie & Dominique Revuz
 
 title=Moyenne des éléments d'un tableau
 tag=array|fonction|parcours|simple
