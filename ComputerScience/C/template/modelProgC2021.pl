@@ -48,7 +48,7 @@ In this template example, we ask the user to programm a squarre function.
 ==
 
 editor =: CodeEditor
-editor.theme = dark
+editor.theme = light
 editor.language = C
 editor.code ==
 /* ecrire votre code ICI */
