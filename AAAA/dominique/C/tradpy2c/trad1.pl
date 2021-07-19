@@ -27,6 +27,12 @@ fname=a
 extends= namelist.pl
 
 before==
+with open(fname+".py","r") as fpy:
+    editor1.code = fpy.read()
+
+with open(fname+".c","r") as fsolo:
+    solution = fsolo.read()
+
 
 
 
