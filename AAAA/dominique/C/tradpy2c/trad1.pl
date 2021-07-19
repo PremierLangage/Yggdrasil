@@ -68,7 +68,7 @@ int main(int argc, char* argv[]){
 
 
   for (i=0 ; i<nb_term ; i++){
-    print("%d\n", atoi(argv[i+1]));
+    print("%d\n", f(atoi(argv[i+1]));
   }
 
   return 0;
