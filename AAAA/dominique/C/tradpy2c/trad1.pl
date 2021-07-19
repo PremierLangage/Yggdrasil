@@ -29,7 +29,7 @@ text += "pout et pouet"
 ==
 
 
-funcpython==
+editor1.code ==
 def f(u):
     return u*3
 
@@ -38,10 +38,6 @@ def f(u):
 text==
 Écrire une fonction C **solution** est une traduction de la fonction python suivante
 
-
-<verbatim>
-    {{funcpython}}
-</verbatim>
 ==
 
 editor.code==#|c|
