@@ -19,7 +19,7 @@ int main(int argc, char* argv[]){
 
 
   for (i=0 ; i<nb_term ; i++){
-    print(f("%d", FUNC(atoi(argv[i+1]),i) );
+    printf("%d", FUNC(atoi(argv[i+1]),i) );
   }
 
   return 0;
