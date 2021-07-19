@@ -38,6 +38,11 @@ builder =@ /builder/before.py
 
 title=Standard C Programming exercise template (summer 2020)
 
+hints % { "cid": "hints", "selector": "c-hint" }
+hints.label = Besoin d'aide ? Libérez un indice...
+hints.shouldConfirm % false
+
+
 text==
 **This text shoud be overwrited when inheriting from the Standard C 
 Programming exercise template.**
@@ -78,6 +83,9 @@ if "taboo" in globals():
     text+=str(taboo)
     text+='</div> <br />\n'
 
+if "astuces" in globals():
+    text+=''
+    text+=" {{ hints|component}} \n<br>"
 
 text+=" {{ editor|component }} "
 ==
