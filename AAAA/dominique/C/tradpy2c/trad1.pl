@@ -26,8 +26,6 @@ tag=array|fonction|parcours|simple
 before==
 text += "pout et pouet" 
 
-editor1.code = "3"
-
 ==
 
 
