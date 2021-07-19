@@ -348,7 +348,24 @@ else:
     feedback += feedback_checks
 
 # Calcul de la partie : note d'autonomie
-grade_alone = 50 + ( // (1+len()))
+if nb_hints > 0:
+    count_hint = 0
+    for e in hints.items:
+        if 'consumed' in e:
+            count_hint += 1
+    grade_alone = 50 + (50*(nb_hints - count_hint) // (nb_hints))
+    feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Autonomie :</u> ' + str(grade_alone) + '%</b></p>'
+    if count_hint == 0:
+        feedback += '<div class="success-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+        feedback += 'Sans indice</div>'
+    else: 
+        feedback += '<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+        if count_hint == 1
+            feedback += '1 indice utilisé</div>'
+        else:
+            feedback += str(count_hint)+' indices utilisés</div>'
+else:
+    grade_alone = 100
 
 grade_attempt = 50 + (200 // (3+nb_attempt))
 
@@ -357,16 +374,16 @@ feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Efficacité :
 if nb_attempt == 1:
     feedback += '<div class="success-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
     feedback += '1 tentative</div>'
-    all_grade = [(grade_compil * grade_checks * grade_attempt) // 10000]
+    all_grade = [(grade_compil * grade_checks * grade_attempt * grade_alone) // 1000000]
 else:
     feedback += '<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
     feedback += str(nb_attempt)+' tentatives</div>'
-    all_grade.append((grade_compil * grade_checks * grade_attempt) // 10000)
+    all_grade.append((grade_compil * grade_checks * grade_attempt * grade_alone) // 1000000)
 
 # overall grade !
 feedback = '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Note actuelle :</u> ' + str(max(all_grade)) + '/100</b></p>' + feedback
 
-grade=((grade_compil * grade_checks * grade_attempt) // 10000, feedback)
+grade=((grade_compil * grade_checks * grade_attempt * grade_alone) // 1000000, feedback)
 ==
 
 # tests.test1.editor.code==
