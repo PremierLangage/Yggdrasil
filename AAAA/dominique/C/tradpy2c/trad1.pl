@@ -24,7 +24,7 @@ tag=array|fonction|parcours|simple
 
 fname=a
 
-extends= nameliste.pl
+extends= namelist.pl
 
 before==
 
