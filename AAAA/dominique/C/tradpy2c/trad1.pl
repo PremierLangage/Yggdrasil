@@ -29,6 +29,9 @@ extends= namelist.pl
 
 before==
 import re
+
+fname = choice(['a','b'])
+fname = choice(['bar','foo','toto','titi','tata','Zuver','Neirob', 'labouil', 'champyulesis', 'uge', 'eiffel'])
 with open(fname+".py","r") as fpy:
     soso = fpy.read()
 
