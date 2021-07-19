@@ -39,12 +39,12 @@ builder =@ /builder/before.py
 title=Standard C Programming exercise template (summer 2020)
 
 hints % { "cid": "hints", "selector": "c-hint" }
-hints.label="Besoin d'aide ? Libérez un indice..."
+hints.label=<b>Besoin d'aide ? Libérez un indice...</b>
 hints.confirmMessage==
 The usage of a hint may affect your final score!
 ==
 
-hints.shouldConfirm % true
+hints.shouldConfirm % false
 hints.confirmTitle = Are you sure you want a hint ?
 hints.confirmOkTitle = Yes
 hints.confirmNoTitle = No
