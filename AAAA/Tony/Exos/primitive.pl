@@ -2,8 +2,10 @@ extends = /model/math/expr.pl
 
 before ==
 from sympy import integrate
+from random import choice, randint
 x = Symbol('x')
-f = sin(x) 
+n = randint(0,100)
+f = choice[sin(x),cos(x),x**n,ln(x), 1/x,1/2, e^x]
 sol = integrate(f, x) 
 ==
 
