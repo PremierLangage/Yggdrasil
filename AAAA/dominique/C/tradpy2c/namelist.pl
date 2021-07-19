@@ -5,11 +5,11 @@
 @ b.py
 @ b.c
 @ b_testcode.c
-kiki==
+
 @ c.py
 @ c.c
 @ c_testcode.c
-
+kiki==
 @ d.py
 @ d.c
 @ d_testcode.c
