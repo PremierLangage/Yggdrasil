@@ -90,7 +90,7 @@ if "taboo" in globals():
     text+='</div> <br />\n'
 
 if "astuces" in globals():
-    hints.items = astuces
+    hints.items = eval(astuces)
     text+='<br>'
     text+=" {{ hints|component}} \n<br>"
 
