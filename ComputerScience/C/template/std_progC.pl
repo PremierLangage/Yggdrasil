@@ -41,12 +41,12 @@ title=Standard C Programming exercise template (summer 2020)
 hints % { "cid": "hints", "selector": "c-hint" }
 hints.label=<b>Besoin d'aide ? Libérez un indice...</b>
 hints.confirmMessage==
-The usage of a hint may affect your final score!
+L'usage d'indices peut affecter l'évaluation de l'exercice !
 ==
 
 hints.shouldConfirm % false
-hints.confirmTitle = Are you sure you want a hint ?
-hints.confirmOkTitle = Yes
+hints.confirmTitle = Êtes vous sur de vouloir un indice ?
+hints.confirmOkTitle = No
 hints.confirmNoTitle = No
 
 text==
