@@ -15,7 +15,7 @@ int main(int argc, char* argv[]){
   int i=0;
 
   for (i=0 ; i< 6 ; i++){
-    a(i);
+    a(tab[i]);
   }
 
   return 0;
