@@ -23,6 +23,7 @@ title=Moyenne des éléments d'un tableau
 tag=array|fonction|parcours|simple
 
 fname=a
+funame=toto
 
 extends= namelist.pl
 
@@ -31,7 +32,7 @@ import re
 with open(fname+".py","r") as fpy:
     soso = fpy.read()
 
-editor1.code = re.sub("FUNC",fname,soso)
+editor1.code = re.sub("FUNC",funname,soso)
 
 
 with open(fname+".c","r") as fsolo:
@@ -40,7 +41,7 @@ with open(fname+".c","r") as fsolo:
 with open(fname+"_testcode.c","r") as ftst:
     code_after = ftst.read()
 
-code_before += "\n#define FUNC "+fname+"\n"
+code_before += "\n#define FUNC "+funname+"\n"
 ==
 
 
