@@ -89,7 +89,7 @@ if "taboo" in globals():
     text+='</div> <br />\n'
 
 
-text+=" {{ editor|component }} "
+text+=" {{ editor1|component }}  {{ editor|component }} "
 ==
 
 # tests are placed inside a list stored in variable : checks_args_stdin
