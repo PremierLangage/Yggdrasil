@@ -9,6 +9,9 @@ fname = 'l1'
 
 ==
 
+text==
+Écrire une expression C équivalente a celle-ci écrite en python :
+==
 
 
 code_before==
