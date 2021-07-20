@@ -12,17 +12,17 @@ nb=4
 nbtrues=a
 
 good==
-bon
-bien
-ok
-cool
-
+$!f:x\mapsto \sin(x)$
+$!f:x\mapsto \sin(x)$
+$!f:x\mapsto \sin(x)$
+$!f:x\mapsto \sin(x)$
 ==
 
 bad==
-bad
-pas bon
-beurk
+$!f:x\mapsto \sin(x)$
+$!f:x\mapsto \sin(x)$
+$!f:x\mapsto \sin(x)$
+$!f:x\mapsto \sin(x)$
 ==
 
 
