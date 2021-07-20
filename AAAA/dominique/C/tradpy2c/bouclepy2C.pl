@@ -20,7 +20,7 @@ code_before==
 
 int main(int argc, char* argv[]){  
 
-
+int N=10;
 ==
 
 code_after==#|c|
@@ -37,7 +37,7 @@ before==
 ==
 solution==
 int i=0;
-for(;i<10;i++)
+for(;i<N;i++)
     printf("%d\n",i);
 
 ==
@@ -53,7 +53,7 @@ before3==
 
 
 editor1.code = f"""
-for x in range(10):
+for x in range(N):
     print(x)
 """
 
