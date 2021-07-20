@@ -7,9 +7,9 @@ text==
 Parmi ces fonctions, lesquelles sont paires?
 ==
 
-before ==
-a = randint(1,5)
-==
+#before ==
+#a = randint(1,5)
+#==
 
 nb=4
 nbtrues = a
