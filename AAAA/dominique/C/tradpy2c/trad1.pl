@@ -20,7 +20,7 @@ extends= /ComputerScience/C/template/modelProgC2021.pl
 author=Nicolas Borie & Dominique Revuz
 
 title= Traduction du python vers le C
-tag=fonction|parcours|simple
+tag=fonction
 
 
 extends= namelist.pl
