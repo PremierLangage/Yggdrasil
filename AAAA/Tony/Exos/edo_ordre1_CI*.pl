@@ -14,8 +14,9 @@ b= randint(2,5)
 
 
 question ==
-Résoudre l'équation différentielle $!y'-{{a|latex}}y=sin({{b|latex}}x)!$
+Résoudre l'équation différentielle 
 ==
+#$!y'-{{a|latex}}y=sin({{b|latex}}x)!$
 
   
 
