@@ -45,8 +45,6 @@ du programme lors de l'exécution. Un programme C opère exactement
 tout se qui se trouve dans sa fonction **main**, ni plus, ni moins. 
 Ici, il vous faut juste faire de l'affichage. Un bon appel à la
 fonction **printf** doit suffire.
-
-<br />
 ==
 
 editor.code==#|c|
