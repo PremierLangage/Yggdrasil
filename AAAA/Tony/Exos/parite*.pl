@@ -32,7 +32,7 @@ $!f:x\mapsto e^x!$
 $!f:x\mapsto \ln(x)!$
 $!f:x\mapsto x^3!$
 $!f:x\mapsto x^5!$
-$!f:x\mapsto x^11!$
+$!f:x\mapsto x^{11}!$
 $!f:x\mapsto \frac{x^2}{2x+3x^4}!$
 $!f:x\mapsto \sqrt{x}!$
 $!f:x\mapsto 3x!$
