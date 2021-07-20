@@ -57,7 +57,7 @@ checks_args_stdin==#|python|
 
 
 before3==
-prime= random.choice([2,3,5,7,11,13],2)
+prime= random.sample([2,3,5,7,11,13],2)
 
 end="\\n"
 
