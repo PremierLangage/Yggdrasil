@@ -5,6 +5,7 @@ title = Déterminer l'équation de la tangente à une fonction
 
 before ==
 from sympy import diff
+from plrandom import randint
 var('x')
 a = randint(1,5)
 k = randint(-5,5,[0])
