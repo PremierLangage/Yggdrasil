@@ -51,17 +51,9 @@ openbrace = '\n{\n'
 closebrace = '\n}\n'
 
 solution= f"""
-if (x % {prime[0]} == 0)
-{openbrace}
-    printf("Divisible par {prime[0]}{end}");
-{closebrace}
-else 
-{openbrace}
-if (x % {prime[1]} == 0 )
-{openbrace}
-    printf("Divisible par {prime[1]}{end}");
-{closebrace}
-{closebrace}
+int i=0;
+for(;i<10;i++)
+    printf("%\n",i);
 
 """
 
