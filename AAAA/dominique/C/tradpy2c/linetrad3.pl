@@ -4,7 +4,7 @@
 
 extends= trad1.pl
 
-
+tag=boucle
 
 text==
 Écrire une expression C équivalente a celle-ci écrite en python :
