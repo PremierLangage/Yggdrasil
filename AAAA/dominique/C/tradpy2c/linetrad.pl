@@ -70,6 +70,6 @@ elif x % {prime[1]} == 0 :
     print("Divisible par {prime[1]}")
 """
 
-text+= solution
+text+= solution if debug 
 
 ==
