@@ -61,16 +61,17 @@ import random
 prime= random.sample([2,3,5,7,11,13],2)
 
 end="\\n"
-
+openbrace = '{'
+closebrace = '}'
 solution= f"""
 if (x % {prime[0]} == 0)
-{{ 
+{openbrace}
     printf("Divisible par {prime[0]}{end}");
- }}
+{closebrace}
 else if (x % {prime[1]} == 0 )
-{{ 
+{openbrace}
     printf("Divisible par {prime[1]}{end}");
-}}
+{closebrace}
 """
 
 editor.code = f"""
