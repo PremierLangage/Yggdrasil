@@ -4,11 +4,12 @@ extends = /model/math/expr.pl
 before ==
 from sympy import dsolve
 from plrandom import randint
-x = Symbol('x')  
-a= randint(-3,3,[0])
-b= randint(2,5)
+
 sol = 1
 ==
+#x = Symbol('x')  
+#a= randint(-3,3,[0])
+#b= randint(2,5)
 #sol = dsolve(diff(f)-ax= sin( b*x) , f(x), ics = {subs(f,x,0):1}) 
  
 
