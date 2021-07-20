@@ -7,10 +7,11 @@ text==
 Parmi ces fonctions, lesquelles sont paires?
 ==
 
-nb=4
-nbtrues = 2
+nbitems=4
+minright = 1
+maxright = 4
 
-good== 
+right== 
 $!f:x\mapsto \cos(x)!$
 $!f:x\mapsto \sin(x^2)!$
 $!f:x\mapsto \frac{x^2}{2+3x^4}!$
@@ -22,7 +23,7 @@ $!f:x\mapsto e^{-x^2}!$
 $!f:x\mapsto \sqrt{x^2+4}!$
 ==
 
-bad==
+wrong==
 $!f:x\mapsto \sin(x)!$
 $!f:x\mapsto \tan(x)!$
 $!f:x\mapsto x(1+x)!$
