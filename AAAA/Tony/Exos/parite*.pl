@@ -1,4 +1,4 @@
-extends= /model/qcm/qcm.pl
+extends= /model/basic/checkbox_rw.pl
 
 
 title= Parité de fonctions
@@ -6,8 +6,6 @@ title= Parité de fonctions
 text==
 Parmi ces fonctions, lesquelles sont paires?
 ==
-
- 
 
 nb=4
 nbtrues = 2
