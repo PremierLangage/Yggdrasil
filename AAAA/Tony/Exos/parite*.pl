@@ -7,7 +7,7 @@ text==
 Parmi ces fonctions, lesquelles sont paires?
 ==
 
-nbitems=4
+nbitems = 4
 minright = 0
 maxright = 4
 
