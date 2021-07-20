@@ -3,9 +3,9 @@ extends = /model/math/complex.pl
 
 before ==
 a, b, c = choice([2,3,4,6,-2,-3,-4,-6]), choice([2,3,4,6,-2,-3,-4,-6]), choice([2,3,4,6,-2,-3,-4,-6])
-z1 = randint(-3, 3, [0])*e**(I*pi/a)  
-z2 = randint(-3, 3, [0])*e**(I*pi/b)  
-z3 = randint(-3, 3, [0])*e**(I*pi/c)  
+z1 = randint(-3, 3, [0])*exp(I*pi/a)  
+z2 = randint(-3, 3, [0])*exp(I*pi/b)  
+z3 = randint(-3, 3, [0])*exp(I*pi/c)  
 sol = (z1 * z2/z3).expand()
 ==
 
