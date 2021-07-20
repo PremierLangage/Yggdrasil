@@ -44,17 +44,11 @@ checks_args_stdin==#|python|
 
 
 before3==
-import random
-prime= random.sample([2,3,5,7,11,13],2)
 
-end="\\n"
-openbrace = '\n{\n'
-closebrace = '\n}\n'
-
-solution= f"""
+solution= """
 int i=0;
 for(;i<10;i++)
-    printf("%\n",i);
+    printf("%d\n",i);
 
 """
 
