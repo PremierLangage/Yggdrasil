@@ -10,7 +10,7 @@ sol = (z1 * z2/z3).expand()
 ==
 
 question ==
-On considère les nombres complexes $! z_1 = {{ z1|latex }} !$ et $! z_2 = {{ z2|latex }} !$. 
+On considère les nombres complexes $! z_1 = {{ z1|latex }} !$, $! z_2 = {{ z2|latex }} !$ et $! z_3 = {{ z3|latex }} !$. 
 Calculer $! \frac{z_1 \times z_2}{z_3} !$ (sous forme exponentielle).
 ==
 
