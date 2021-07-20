@@ -4,7 +4,7 @@ extends= /model/qcm/qcm.pl
 title= Parité de fonctions
 
 text==
-Parmi ces fonctions, lesquelles sont paires?
+Parmi ces fonctions $!f:x\mapsto \sin(x)$, lesquelles sont paires?
 ==
 
 #before ==
