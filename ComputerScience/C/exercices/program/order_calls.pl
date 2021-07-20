@@ -107,7 +107,7 @@ checks_args_stdin==
 astuces==#|python|
 [
   { "content": """Il suffit, dans cet exercice, de remplir le main en utilisant les fonctions disponibles et de finir en retournant une valeur raisonnable."""},
-  { "content": """les fonctions `display_1` et `display_2` devront être appelées chacune une fois dans votre `main`. La fonction `display_3` devra être appelée trois fois par contre. Aussi, les appels devront être placé dans le bon ordre pour faire une histoire cohérente."""},
+  { "content": """les fonctions `display_1` et `display_2` devront être appelées chacune une fois dans votre `main`. La fonction `display_3` devra être appelée trois fois par contre. Aussi, les appels devront être placés dans le bon ordre pour faire une histoire cohérente."""},
   { "content": """Le contenu de la fonction `main` doit ressembler à :
     <pre>
         display_2();
