@@ -20,7 +20,7 @@ code_before==
 
 int main(int argc, char* argv[]){  
   int x=0;  
-  for(;x<15;i++) {
+  for(;x<15;x++) {
 
 ==
 
