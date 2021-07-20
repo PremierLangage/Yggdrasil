@@ -17,7 +17,7 @@ sol = 1
 
 
 question ==
-Résoudre l'équation différentielle $!y'-ay=sin(bx)!$
+Résoudre l'équation différentielle $!y'-a*y=sin(b*x)!$
 ==
 
 
