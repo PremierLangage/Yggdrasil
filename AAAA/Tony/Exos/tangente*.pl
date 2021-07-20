@@ -14,7 +14,8 @@ sol = g(a)*x + f(a)-g(a)*a
 ==
 
 text ==
-Déterminer l'équation de la tangente à $\!{{f|latex}}!$ au point $!{{a|latex}}!$ (en notant $! x !$ la variable d'abscisse et $! y !$ la variable d'ordonnée).
+Déterminer l'équation de la tangente 
+#à $\!{{f|latex}}!$ au point $!{{a|latex}}!$ (en notant $! x !$ la variable d'abscisse et $! y !$ la variable d'ordonnée).
 
 ==
 
