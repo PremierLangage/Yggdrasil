@@ -13,7 +13,7 @@ a = randint(1,5)
 == 
 
 nb=4
-nbtrues = randint(1,5)
+nbtrues = 2
 
 good==
 $!f:x\mapsto \cos(a*x)!$
