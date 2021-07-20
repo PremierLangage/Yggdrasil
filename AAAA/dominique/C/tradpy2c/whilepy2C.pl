@@ -88,7 +88,7 @@ closebrace = '\n}\n'
 
 solution= f"""
 int i=10;
-for(;i>0;i--)
+for(;i>0;--i)
     printf("%\n",i);
 
 """
