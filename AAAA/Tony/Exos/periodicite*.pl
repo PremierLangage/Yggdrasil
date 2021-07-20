@@ -18,6 +18,8 @@ $!f:x\mapsto \cos(x)!$
 $!f:x\mapsto \sin(x)\sin(2x)!$
 $!f:x\mapsto 0!$
 $!f:x\mapsto 1!$
+$!f:x\mapsto \sin(2x)!$
+$!f:x\mapsto e^{\sin(x)}!$
 ==
 
 wrong==
