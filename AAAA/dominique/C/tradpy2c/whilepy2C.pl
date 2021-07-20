@@ -12,32 +12,6 @@ text==
 ==
 
 
-code_before==
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(int argc, char* argv[]){  
-int x=0;  
-for(;x<15;x++)
-{
-
-==
-
-code_after==#|c|
-
-}
-
-return 0;
-}
-
-==
-
-
-before=
-
-
-
-
 
 
 extends= trad1.pl
