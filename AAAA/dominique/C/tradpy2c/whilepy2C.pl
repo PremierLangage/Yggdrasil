@@ -57,7 +57,7 @@ solution= """
 int i;
 for(i=10;i>0;i--)
     printf("%d\n",i);
-    
+
 """
 ==
 
@@ -67,13 +67,6 @@ while i>0:
     print(i)
     i= i-1
 
-==
-
-
-
-checks_args_stdin==#|python|
-[["Exécution simple", ["2"], ""],
- ]
 ==
 
 
