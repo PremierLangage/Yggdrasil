@@ -10,7 +10,7 @@ a = randint(1,5)
 k = randint(-5,5)
 f = choice([sin(k*x),cos(k*x),x**k, exp(k*x),ln(k*x)])
 g = diff(f)
-sol = g(a)*x + f(a)-g(a)*a
+sol = g.subs(x,a)*x + f.subs(x,a)-g.subs(x,a)*a
 ==
 
 text ==
