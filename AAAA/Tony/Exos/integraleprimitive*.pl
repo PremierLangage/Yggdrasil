@@ -12,7 +12,7 @@ k= randint(1,6)
 
 f = choice([sin(k*x),cos(k*x),x**k, exp(k*x), d1*x**2+d2*x+d3, x*exp(k*x**2),  x*cos(k*x**2),  x*sin(k*x**2), diff(d1*x**2+d2*x+d3)/(d1*x**2+d2*x+d3)])
 
-sol = integrate(f, 0, 1) 
+sol = integrate(f, (x,0, 1)) 
 ==
 
 #Type d'intégrale : pol d'ordre 2, fonction d'un multiple de x^2 ou x, u'/u avec u fonction classique
