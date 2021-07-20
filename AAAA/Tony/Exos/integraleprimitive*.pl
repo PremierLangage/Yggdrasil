@@ -6,11 +6,9 @@ extends = /model/math/expr.pl
 before ==
 from sympy import integrate,diff
 from random import choice, randint
-x = Symbol('x')
-ch = randint(0,7)
+x = Symbol('x') 
 d1,d2,d3 = randint(-5,5),randint(-5,5),randint(-5,5)
-al = randint(1,6)
-n= randint(1,6)
+k= randint(1,6)
 
 g = choice([sin(k*x),cos(k*x),x**k, exp(k*x), d1*x**2+d2*x+d3, x*exp(k*x^2),  x*cos(k*x^2),  x*sin(k*x^2), diff(d1*x**2+d2*x+d3)/(d1*x**2+d2*x+d3)])
 
