@@ -86,10 +86,10 @@ end="\\n"
 openbrace = '\n{\n'
 closebrace = '\n}\n'
 
-solution= f"""
+solution= """
 int i=10;
 for(;i>0;--i)
-    printf("%\n",i);
+    printf("%d\n",i);
 
 """
 
