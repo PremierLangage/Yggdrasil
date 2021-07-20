@@ -6,6 +6,9 @@ extends= trad1.pl
 
 tag=boucle
 
+
+title= boucle|for
+
 text==
 Écrire un code C équivalent a celui-ci écrit en python :
 ==
