@@ -16,12 +16,12 @@ $!f:x\mapsto \sin(x)!$
 $!f:x\mapsto \tan(x)!$
 $!f:x\mapsto \cos(x)!$
 $!f:x\mapsto \sin(x)\sin(2x)!$
-$!f:x\mapsto 6x^2!$
 $!f:x\mapsto 0!$
 $!f:x\mapsto 1!$
 ==
 
 wrong==
+$!f:x\mapsto 6x^2!$
 $!f:x\mapsto \sin(x^2)!$
 $!f:x\mapsto \frac{x^2}{2+3x^4}!$
 $!f:x\mapsto x(1+x)!$
