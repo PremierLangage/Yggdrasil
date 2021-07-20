@@ -8,6 +8,9 @@ extends= trad1.pl
 
 tag=boucle
 
+
+title= Lecture
+
 text==
 Écrire un code C équivalent a celui-ci écrit en python :
 ==
