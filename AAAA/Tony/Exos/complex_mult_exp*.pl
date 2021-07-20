@@ -17,7 +17,7 @@ Calculer $! \frac{z_1 \times z_2}{z_3} !$ (sous forme exponentielle).
 complex_form = exponential
 
 solution ==
-$! z_1 \times z_2  = ( {{ z1|latex }} ) \times ( {{ z2|latex }} ) = {{ sol|latex }} !$
+$! \frac{z_1 \times z_2}{z_3}  = \frac{( {{ z1|latex }} ) \times ( {{ z2|latex }} ) }{ {{z3|latex}} }= {{ sol|latex }} !$
 ==
 
 #message.NotEqual ==
