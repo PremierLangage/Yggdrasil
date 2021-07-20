@@ -7,15 +7,15 @@ text==
 Parmi ces fonctions, lesquelles sont paires?
 ==
 
-before ==
-from random import randint
-a = randint(1,5)
-== 
+ 
 
 nb=4
 nbtrues = 2
 
 good==
+from random import randint
+a = randint(1,5)
+
 $!f:x\mapsto \cos(a*x)!$
 $!f:x\mapsto \sin(a*x^2)!$
 $!f:x\mapsto \frac{a*x^2}{2+3x^4}!$
