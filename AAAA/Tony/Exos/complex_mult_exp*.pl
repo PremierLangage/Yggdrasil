@@ -11,7 +11,7 @@ sol = (z1 * z2/z3).expand()
 
 question ==
 On considère les nombres complexes $! z_1 = {{ z1|latex }} !$ et $! z_2 = {{ z2|latex }} !$. 
-Calculer $! z_1 \times z_2 !$ (sous forme algébrique).
+Calculer $! \frac{z_1 \times z_2}{z_3} !$ (sous forme exponentielle).
 ==
 
 complex_form = exponential
