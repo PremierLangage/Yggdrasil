@@ -66,7 +66,7 @@ if (x % {prime[0]} == 0)
 {
     printf(
     "Divisible par {prime[0]}{end}"
-    );
+    ),;
 }
 else if (x % {prime[1]} == 0 )
 {
