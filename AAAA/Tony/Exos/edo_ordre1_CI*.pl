@@ -7,7 +7,7 @@ from plrandom import randint
 a= randint(-3,3,[0])
 b= randint(2,5)
 y = Symbol('y')
-eq = y'-a*y=sin(b*x)  
+eq = y'-a*y-sin(b*x)  
 sol = 1
 ==
 
