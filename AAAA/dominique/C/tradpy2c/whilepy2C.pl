@@ -79,29 +79,23 @@ checks_args_stdin==#|python|
 
 
 before3==
-import random
-prime= random.sample([2,3,5,7,11,13],2)
-
-end="\\n"
-openbrace = '\n{\n'
-closebrace = '\n}\n'
 
 solution= """
 int i;
 for(i=10;i>0;i--)
     printf("%d\n",i);
 """
-
-editor1.code = f"""
+==
+editor1.code ==
 i=10
 while i>0:
     print(i)
     i= i-1
-"""
-
-
 
 ==
+
+
+
 checks_args_stdin==#|python|
 [["Exécution simple", ["2"], ""],
  ]
