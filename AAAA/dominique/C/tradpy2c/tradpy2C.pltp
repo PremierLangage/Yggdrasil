@@ -43,7 +43,10 @@ title= Exercice de traduction de python en C
 
 # des fonctions
 
-exo_a.pl
+@ exo_a.pl
+@ exo_b.pl
+@ exo_c.pl
+@ exo_d.pl
 
 
 
