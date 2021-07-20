@@ -10,8 +10,8 @@ x = Symbol('x')
 d1,d2,d3 = randint(-5,5),randint(-5,5),randint(-5,5)
 k= randint(1,6)
 
-#f = choice([sin(k*x),cos(k*x),x**k, exp(k*x), d1*x**2+d2*x+d3, x*exp(k*x**2),  x*cos(k*x**2),  x*sin(k*x**2), k*diff(d1*x**2+d2*x+d3)/(d1*x**2+d2*x+d3)])
-f = k*diff(d1*x**2+d2*x+d3)/(d1*x**2+d2*x+d3)
+f = choice([sin(k*x),cos(k*x),x**k, exp(k*x), d1*x**2+d2*x+d3, x*exp(k*x**2),  x*cos(k*x**2),  x*sin(k*x**2), k*diff(d1*x**2+d2*x+d3)/(d1*x**2+d2*x+d3)])
+
 sol = integrate(f, (x,0, 1)) 
 ==
 
