@@ -17,9 +17,9 @@ nbtrues = randint(1,5)
 
 good==
 $!f:x\mapsto \cos(a*x)!$
-$!f:x\mapsto \sin(x^2)!$
-$!f:x\mapsto \frac{x^2}{2+3x^4}!$
-$!f:x\mapsto \sin(x)\sin(2x)!$
+$!f:x\mapsto \sin(a*x^2)!$
+$!f:x\mapsto \frac{a*x^2}{2+3x^4}!$
+$!f:x\mapsto \sin(a*x)\sin(2x)!$
 ==
 
 bad==
