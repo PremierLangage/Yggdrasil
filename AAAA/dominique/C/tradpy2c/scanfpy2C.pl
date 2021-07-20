@@ -51,12 +51,15 @@ openbrace = '\n{\n'
 closebrace = '\n}\n'
 
 solution= f"""
-printf("Bonjour les L2 maths-info\n")
+int i ;
+printf("entrez un entier >");
+scanf("%d",&i);
+print("votre entier :",i)
 
 """
 
 editor1.code = f"""
-i = int(input("entrez un entier"))
+i = int(input("entrez un entier >"))
 print("votre entier :",i)
 """
 
