@@ -11,7 +11,7 @@ Parmi ces fonctions, lesquelles sont paires?
 #from random import randint
 #a = randint(1,5)
 #==
-
+from random import randint
 nb=4
 nbtrues = randint(1,5)
 
