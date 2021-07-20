@@ -19,8 +19,9 @@ code_before==
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){  
-  int x=0;  
-  for(;x<15;x++) {
+int x=0;  
+for(;x<15;x++)
+{
 
 ==
 
@@ -61,8 +62,8 @@ import random
 prime= random.sample([2,3,5,7,11,13],2)
 
 end="\\n"
-openbrace = '{'
-closebrace = '}'
+openbrace = '{\n'
+closebrace = '}\n'
 solution= f"""
 if (x % {prime[0]} == 0)
 {openbrace}
@@ -81,6 +82,5 @@ elif x % {prime[1]} == 0 :
     print("Divisible par {prime[1]}")
 """
 
-text += solution
 
 ==
