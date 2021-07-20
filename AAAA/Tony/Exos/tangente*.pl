@@ -7,7 +7,7 @@ before ==
 from sympy import diff
 var('x')
 a = randint(1,5)
-k = randint(1,5)
+k = randint(-5,5)
 f = choice([sin(k*x),cos(k*x),x**k, exp(k*x),ln(k*x)])
 g = diff(f)
 sol = g(a)*x + f(a)-g(a)*a
