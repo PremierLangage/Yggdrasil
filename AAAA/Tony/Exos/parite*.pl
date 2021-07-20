@@ -13,7 +13,7 @@ a = randint(1,5)
 ==
 
 nb=4
-nbtrues = a
+nbtrues = randint(1,5)
 
 good==
 $!f:x\mapsto \sin(x)!$
