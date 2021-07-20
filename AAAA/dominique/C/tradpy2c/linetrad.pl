@@ -34,3 +34,21 @@ return 0;
 
 ==
 
+
+
+
+before==
+import re
+from random import choice 
+
+with open(fname+".py","r") as fpy:
+    editor1.code = fpy.read()
+
+with open(fname+".c","r") as fsolo:
+    solution = fsolo.read()
+
+with open(fname+"_testcode.c","r") as ftst:
+    code_after = ftst.read()
+
+
+==
