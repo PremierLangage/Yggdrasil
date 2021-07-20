@@ -4,7 +4,7 @@ extends= /model/qcm/qcm.pl
 title= Parité de fonctions
 
 text==
-Parmi ces fonctions $!f:x\mapsto \sin(x)$, lesquelles sont paires?
+Parmi ces fonctions, lesquelles sont paires?
 ==
 
 #before ==
@@ -15,17 +15,17 @@ nb=4
 nbtrues = 1
 
 good==
-$!f:x\mapsto \sin(x)$
-$!f:x\mapsto \sin(x)$
-$!f:x\mapsto \sin(x)$
-$!f:x\mapsto \sin(x)$
+$!f:x\mapsto \sin(x)!$
+$!f:x\mapsto \sin(x)!$
+$!f:x\mapsto \sin(x)!$
+$!f:x\mapsto \sin(x)!$
 ==
 
 bad==
-$!f:x\mapsto \sin(x)$
-$!f:x\mapsto \sin(x)$
-$!f:x\mapsto \sin(x)$
-$!f:x\mapsto \sin(x)$
+$!f:x\mapsto \sin(x)!$
+$!f:x\mapsto \sin(x)!$
+$!f:x\mapsto \sin(x)!$
+$!f:x\mapsto \sin(x)!$
 ==
 
 
