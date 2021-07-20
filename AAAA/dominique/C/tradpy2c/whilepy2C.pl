@@ -57,8 +57,10 @@ solution= """
 int i;
 for(i=10;i>0;i--)
     printf("%d\n",i);
+    
 """
 ==
+
 editor1.code ==
 i=10
 while i>0:
