@@ -4,6 +4,7 @@
 extends= trad1.pl
 
 
+tag=condition
 
 text==
 Écrire une expression C équivalente a celle-ci écrite en python :
