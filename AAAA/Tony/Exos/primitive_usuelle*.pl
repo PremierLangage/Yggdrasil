@@ -1,3 +1,4 @@
+#Calcul de primitives usuelles
 extends = /model/math/expr.pl
 
 before ==
