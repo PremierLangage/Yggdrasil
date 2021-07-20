@@ -36,7 +36,7 @@ return 0;
 
 
 
-before==
+Dontbefore==
 import re
 from random import choice 
 
