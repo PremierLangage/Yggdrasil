@@ -1,4 +1,4 @@
-#Calcul de primitives usuelles.
+#Calcul de primitives.
 extends = /model/math/expr.pl
 
 #A réglier : sympy n'a pas l'éair  de prendre ln(abs(x)). Pb lié à la valeur absolue.
