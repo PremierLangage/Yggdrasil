@@ -9,13 +9,16 @@
 @ c.py
 @ c.c
 @ c_testcode.c
-kiki==
+
 @ d.py
 @ d.c
 @ d_testcode.c
+kiki==
 @ e.py
 @ e.c
 @ e_testcode.c
+==
+koko==
 @ f.py
 @ f.c
 @ f_testcode.c
