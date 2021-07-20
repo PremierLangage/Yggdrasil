@@ -13,14 +13,11 @@ code_before==
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char* argv[]){  
-
-
+int main(int argc, char* argv[])
+{  
 ==
 
-code_after==#|c|
-
-
+code_after==
 
 return 0;
 }
@@ -37,14 +34,13 @@ checks_args_stdin==#|python|
 ==
 
 
-before==
 
-solution= """
+solution==
 int i;
 for(i=10;i>0;i--)
     printf("%d\n",i);
 
-"""
+
 ==
 
 editor1.code ==
