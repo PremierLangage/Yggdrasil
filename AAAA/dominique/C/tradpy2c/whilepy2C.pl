@@ -87,10 +87,9 @@ openbrace = '\n{\n'
 closebrace = '\n}\n'
 
 solution= """
-int i=10;
-for(;i>0;--i)
+int i;
+for(i=10;i>10;i--)
     printf("%d\n",i);
-
 """
 
 editor1.code = f"""
