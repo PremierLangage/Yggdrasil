@@ -69,10 +69,14 @@ if (x % {prime[0]} == 0)
 {openbrace}
     printf("Divisible par {prime[0]}{end}");
 {closebrace}
-else if (x % {prime[1]} == 0 )
+else 
+{openbrace}
+if (x % {prime[1]} == 0 )
 {openbrace}
     printf("Divisible par {prime[1]}{end}");
 {closebrace}
+{closebrace}
+
 """
 
 editor.code = f"""
