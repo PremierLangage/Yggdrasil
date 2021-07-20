@@ -7,8 +7,6 @@ from plrandom import randint
 x = Symbol('x')  
 a= randint(-3,3,[0])
 
-f = choice([sin(k*x),cos(k*x),x**k, exp(k*x), d1*x**2+d2*x+d3, x*exp(k*x**2),  x*cos(k*x**2),  x*sin(k*x**2), k*diff(d1*x**2+d2*x+d3)/(d1*x**2+d2*x+d3)])
-
 sol = dsolve(diff(f)-ax= sin( k*x) , f(x), ics = ) 
 ==
 
