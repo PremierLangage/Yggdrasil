@@ -14,35 +14,17 @@ n= randint(1,6)
 
 g = choice([sin(k*x),cos(k*x),x**k, exp(k*x), d1*x**2+d2*x+d3, x*exp(k*x^2),  x*cos(k*x^2),  x*sin(k*x^2), diff(d1*x**2+d2*x+d3)/(d1*x**2+d2*x+d3)])
 
-
-if ch == 0: 
-    f = al*dg*sin(g)
-elif ch == 1:
-    f = al*dg*cos(g)
-elif ch == 2:
-    f = al*dg*exp(g)
-elif ch == 3:
-    f =al*dg/g
-elif ch == 4:
-    f = al*dg*g**n
-elif ch == 5:
-    f = d1*x**2+d2*x+d3
-else:
-    f = al*dg/g**n
-
-sol = integrate(f, x) 
+sol = integrate(f, 0, 1) 
 ==
 
 #Type d'intégrale : pol d'ordre 2, fonction d'un multiple de x^2 ou x, u'/u avec u fonction classique
 
 
 question ==
-Déterminer une primitive de 
+Calculer l'intégrale suivante
 
-$! f \mapsto \displaystyle {{ f|latex }} !$.
-
-Attention,il ne faut pas utiliser la notation $!C!$. 
-Si vous voulez ajouter une constante à votre fonction, il faut donner un réel.
+$! \int_0^1 {{ f|latex }}dx !$.
+ 
 ==
 
   
