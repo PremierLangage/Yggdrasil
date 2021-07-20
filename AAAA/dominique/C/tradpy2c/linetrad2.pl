@@ -64,7 +64,7 @@ if (x % {prime[1]} == 0 )
 
 """
 
-editor.code = f"""
+editor1.code = f"""
 if x % {prime[0]} == 0:
     print("Divisible par {prime[0]}")
 elif x % {prime[1]} == 0 :
