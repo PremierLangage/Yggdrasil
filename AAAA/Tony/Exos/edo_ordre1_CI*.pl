@@ -2,11 +2,12 @@
 extends = /model/math/expr.pl
 
 before ==
-from sympy import dsolve
 
 
 sol = 1
 ==
+
+#from sympy import dsolve
 #from plrandom import randint
 #x = Symbol('x')  
 #a= randint(-3,3,[0])
