@@ -19,7 +19,7 @@ sol = 1
 question ==
 Résoudre l'équation différentielle 
 ==
-#$!y'-{{a|latex}}y=sin({{b|latex}}x)!$
+
 
   
 
