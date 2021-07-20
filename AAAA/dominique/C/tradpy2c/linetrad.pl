@@ -59,7 +59,7 @@ checks_args_stdin==#|python|
 before3==
 prime= random.sample([2,3,5,7,11,13],2)
 
-end="\\n"
+end='\\n");'
 
 solution= f"""
 if (x % {prime[0]} == 0)
@@ -70,7 +70,7 @@ if (x % {prime[0]} == 0)
 }
 else if (x % {prime[1]} == 0 )
 {
-    printf("Divisible par {prime[1]}{end}");
+    printf("Divisible par {prime[1]}{end}
 }
 """
 
