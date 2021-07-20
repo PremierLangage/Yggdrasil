@@ -68,7 +68,6 @@ return 0;
 ==
 
 
-before=
 
 
 
@@ -78,7 +77,7 @@ checks_args_stdin==#|python|
 ==
 
 
-before3==
+before==
 
 solution= """
 int i;
