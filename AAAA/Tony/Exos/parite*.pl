@@ -12,7 +12,7 @@ Parmi ces fonctions, lesquelles sont paires?
 #==
 
 nb=4
-nbtrues = a
+nbtrues = 1
 
 good==
 $!f:x\mapsto \sin(x)$
