@@ -19,9 +19,8 @@ code_before==
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){  
-  int i=0;  
-  int nb_term = argc-1; 
-  for(;i<15;i++) {
+  int x=0;  
+  for(;x<15;i++) {
 
 ==
 
@@ -49,4 +48,9 @@ with open(fname+".c","r") as fsolo:
 
 
 
+==
+
+checks_args_stdin==#|python|
+[["Exécution simple", ["2"], ""],
+ ]
 ==
