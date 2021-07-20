@@ -15,7 +15,7 @@ sol = g.subs(x,a)*x + f.subs(x,a)-g.subs(x,a)*a
 
 text ==
 Déterminer l'équation de la tangente 
-#à $\!{{f|latex}}!$ au point $!{{a|latex}}!$ (en notant $! x !$ la variable d'abscisse et $! y !$ la variable d'ordonnée).
+#à $\!{{f|latex}}!$ au point {{a|latex}} (en notant $! x !$ la variable d'abscisse et $! y !$ la variable d'ordonnée).
 
 ==
 
