@@ -19,7 +19,7 @@ sol = 1
 
 
 question ==
-Résoudre l'équation différentielle $!y'-a*y=sin(b*x)!$
+Résoudre l'équation différentielle $!{{eq|latex}}!$
 ==
 
 
