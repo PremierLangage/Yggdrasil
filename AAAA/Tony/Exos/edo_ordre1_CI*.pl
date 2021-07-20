@@ -15,9 +15,6 @@ sol = dsolve(diff(f)-ax= sin( b*x) , f(x), ics = {subs(f,x,0):1})
 
 question ==
 Résoudre l'équation différentielle $!y'-{{a|latex}}y=sin({{b|latex}}x)!$
-
-$! \int_0^1 {{ f|latex }}dx !$.
- 
 ==
 
   
