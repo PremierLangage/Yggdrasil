@@ -33,9 +33,14 @@ return 0;
 ==
 
 
-before=
+before==
+==
+solution==
+int i=0;
+for(;i<10;i++)
+    printf("%d\n",i);
 
-
+==
 
 checks_args_stdin==#|python|
 [["Exécution simple", ["2"], ""],
@@ -45,12 +50,7 @@ checks_args_stdin==#|python|
 
 before3==
 
-solution= """
-int i=0;
-for(;i<10;i++)
-    printf("%d\n",i);
 
-"""
 
 editor1.code = f"""
 for x in range(10):
