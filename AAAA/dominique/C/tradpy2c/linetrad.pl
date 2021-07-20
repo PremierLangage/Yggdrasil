@@ -47,6 +47,7 @@ prime= random.sample([2,3,5,7,11,13],2)
 end="\\n"
 openbrace = '\n{\n'
 closebrace = '\n}\n'
+
 solution= f"""
 if (x % {prime[0]} == 0)
 {openbrace}
