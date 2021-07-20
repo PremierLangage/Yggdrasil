@@ -18,7 +18,7 @@ Déterminer l'équation de la tangente à $!{{f|latex}}!$ au point $!{{a|latex}}
 
 ==
 
-input_prefix = $! y = !$
+prefix = $! y = !$
 
 solution ==
 L'équation de la droite est :
