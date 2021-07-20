@@ -8,7 +8,7 @@ Parmi ces fonctions, lesquelles sont paires?
 ==
 
 nbitems=4
-minright = 1
+minright = 0
 maxright = 4
 
 right== 
