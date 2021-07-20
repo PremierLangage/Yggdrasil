@@ -2,7 +2,7 @@
 
 extends= trad1.pl
 
-
+title= Divisibilité
 
 text==
 Écrire une expression C équivalente a celle-ci écrite en python :
