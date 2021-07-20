@@ -17,7 +17,7 @@
 
 extends= /ComputerScience/C/template/modelProgC2021.pl
 
-author=Nicolas Borie & Dominique Revuz
+author=NB & DR
 
 title= Traduction du python vers le C
 tag=fonction
