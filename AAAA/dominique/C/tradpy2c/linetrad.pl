@@ -54,3 +54,26 @@ checks_args_stdin==#|python|
 [["Exécution simple", ["2"], ""],
  ]
 ==
+
+
+before3==
+prime= random.choice([2,3,5,7,11,13],2)
+
+
+solution= f"""
+if (x % {prime[0]} == 0){
+    printf("Divisible par {prime[0]}\n");
+}
+else if (x % {prime[1]} == 0 ){
+    printf("Divisible par {prime[1]}\n");
+}
+"""
+
+editor.code = f"""
+if x % {prime[0]} == 0:
+    print("Divisible par {prime[0]}")
+elif x % {prime[1]} == 0 :
+    print("Divisible par {prime[1]}")
+"""
+
+==
