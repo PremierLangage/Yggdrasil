@@ -2,12 +2,7 @@
 
 extends= trad1.pl
 
-extends= lines/linelist.pl
 
-before2==
-fname = 'l1'
-
-==
 
 text==
 Écrire une expression C équivalente a celle-ci écrite en python :
@@ -37,19 +32,7 @@ return 0;
 
 
 
-Dontbefore==
-import re
-from random import choice 
 
-with open(fname+".py","r") as fpy:
-    editor1.code = fpy.read()
-
-with open(fname+".c","r") as fsolo:
-    solution = fsolo.read()
-
-
-
-==
 
 checks_args_stdin==#|python|
 [["Exécution simple", ["2"], ""],
@@ -62,8 +45,8 @@ import random
 prime= random.sample([2,3,5,7,11,13],2)
 
 end="\\n"
-openbrace = '{\n'
-closebrace = '}\n'
+openbrace = '\n{\n'
+closebrace = '\n}\n'
 solution= f"""
 if (x % {prime[0]} == 0)
 {openbrace}
