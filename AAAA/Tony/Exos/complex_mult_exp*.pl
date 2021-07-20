@@ -20,6 +20,6 @@ solution ==
 $! z_1 \times z_2  = ( {{ z1|latex }} ) \times ( {{ z2|latex }} ) = {{ sol|latex }} !$
 ==
 
-message.NotEqual ==
-T'es nul !
-==
+#message.NotEqual ==
+#T'es nul !
+#==
