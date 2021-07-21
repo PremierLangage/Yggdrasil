@@ -13,9 +13,9 @@ maxright = 4
 
 right== 
 $!\lim\limits_{x\rightarrow +\infty}exp(x)!$ 
-1
-1
-1
+$!\lim\limits_{x\rightarrow +\infty}exp(x)!$ 
+$!\lim\limits_{x\rightarrow +\infty}exp(x)!$ 
+$!\lim\limits_{x\rightarrow +\infty}exp(x)!$ 
 ==
 
 wrong== 
