@@ -5,15 +5,16 @@ title =  Savoir simplifier des expressions (développement, factorisation, ident
 
 before ==
 x = Symbol('x')
-P = x + randint(-2, 2)
-Q = x + randint(-2, 2)
-sol = P * Q
-expr = sol.expand()
+P = (a*x+b)**2-(c*x+d)**2
+Q = (a*x+b)**2-c*a*x-c*b
+
+sol = choice()
+ 
 ==
 
 question ==
 Factoriser l'expression suivante :
-$$ {{ expr|latex }}. $$
+$$ {{ sol|latex }}. $$
 ==
 
 poly_form = "factorized"
