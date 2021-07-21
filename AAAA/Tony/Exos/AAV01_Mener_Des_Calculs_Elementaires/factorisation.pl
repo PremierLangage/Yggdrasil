@@ -10,7 +10,6 @@ a,b,c,d = sample([-3,-2,-1,1,2,3],4)
 P = (a*x+b)**2-(c*x+d)**2
 Q = (a*x+b)**2-c*a*x-c*b
 R = choice([P,Q])
-
 sol = factor(R)
 ==
 
