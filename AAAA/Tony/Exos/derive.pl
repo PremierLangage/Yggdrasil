@@ -5,9 +5,10 @@ before ==
 from sympy import Symbol, diff, sin
 
 x = Symbol('x')
- 
-f = x*sin(x)
-sol = diff(f,x)
+
+
+f,g  =  sample([x,x**2+1,e^x,ln(x),sin(x),cos(x),sqrt(x),1/x,x**3,x**4],2) 
+sol = diff(f*g,x)
 ==
 
 #Double dollar pour mettre le latex centré.
