@@ -16,6 +16,8 @@ $!\lim\limits_{x\rightarrow +\infty}\frac{\exp(x)}{x}!$
 $!\lim\limits_{x\rightarrow +\infty}\frac{\exp(x)}{x^2}!$ 
 $!\lim\limits_{x\rightarrow +\infty}-\frac{\exp(-x)}{x**3}!$ 
 $!\lim\limits_{x\rightarrow +\infty}\frac{x**3}{\ln(x)}!$  
+$!\lim\limits_{x\rightarrow +\infty}x\exp(x)}!$ 
+$!\lim\limits_{x\rightarrow +\infty}x\ln(x)}!$ 
 ==
 
 wrong== 
