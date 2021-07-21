@@ -1,15 +1,16 @@
 extends = /model/math/expr.pl
 
+#ne marche pas 
 title = Addition de fractions
 
 before ==
-from sympy import cancel
+from sympy import numer, denom
 var('x')
 f = 1/(x+1)+1/(x+2)
  
 
  
-sol = cancel(f)
+sol = numer(f),denom(f)
 ==
 
 text ==
