@@ -1,6 +1,8 @@
 
 extends = /model/math/expr.pl
 
+title = Savoir calculer une dérivée d'un quotient
+
 before == 
 from sympy import diff
 x = Symbol('x')
