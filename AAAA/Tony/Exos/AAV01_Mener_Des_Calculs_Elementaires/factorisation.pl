@@ -5,10 +5,11 @@ title =  Savoir simplifier des expressions (développement, factorisation, ident
 
 before ==
 x = Symbol('x')
+a,b,c,d = sample([-3,-2,-1,1,2,3],4)
 P = (a*x+b)**2-(c*x+d)**2
 Q = (a*x+b)**2-c*a*x-c*b
 
-sol = choice()
+sol = choice([P,Q])
  
 ==
 
