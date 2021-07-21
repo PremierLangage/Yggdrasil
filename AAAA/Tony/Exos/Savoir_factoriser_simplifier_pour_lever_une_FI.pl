@@ -7,7 +7,8 @@ from sympy import Limit
 x = Symbol('x')
 
 a,b,c,d,e,f = randint(-5,5),randint(-5,5),randint(-5,5),randint(-5,5), randint(-5,5), randint(-5,5,[0])
-f,g  = a*x**2 + b*x+c, d*x**2 + e*x+f
+d1,d2 = sample([1,2,3,4,5],2)
+f,g  = a*x**d1 + b*x+c, d*x**d2 + e*x+f
 
 lim = choice([Limit(f/g, x, oo),Limit(f/g, x, -oo)])
 sol = lim.doit()
