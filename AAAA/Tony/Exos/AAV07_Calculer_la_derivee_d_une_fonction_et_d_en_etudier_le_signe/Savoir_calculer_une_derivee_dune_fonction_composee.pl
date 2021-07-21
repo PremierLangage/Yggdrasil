@@ -1,6 +1,7 @@
 
 extends = /model/math/expr.pl
 
+title = Savoir calculer une dérivée d'une composée
 before ==
 from sympy import Symbol, diff
 
