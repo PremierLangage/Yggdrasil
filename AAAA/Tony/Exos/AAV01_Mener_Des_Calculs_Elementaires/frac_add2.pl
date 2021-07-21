@@ -9,7 +9,7 @@ f = 1/(x+1)+1/(x+2)
  
 
  
-sol = f.expand()
+sol = cancel(f)
 ==
 
 text ==
