@@ -5,11 +5,11 @@ title = Démonstration math/expr
 before ==
 var('x')
 f = x
-sol = f
+sol = f.subs(x,2x)
 ==
 
 question ==
-Soit f :  $! {{ x\mapsto f|latex}} !$.
+Soit f : 
 Entrer l'expression  $! {{ sol|latex}} !$.
 ==
 
