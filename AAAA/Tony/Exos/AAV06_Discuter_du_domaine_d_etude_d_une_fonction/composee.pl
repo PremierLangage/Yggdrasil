@@ -11,6 +11,6 @@ sol = f.subs(x,g)
 ==
 
 question ==
-Soient f :  $! x \mapsto {{ f|latex}} !$ et g :  $! x \mapsto {{ f|latex}} !$.
+Soient f :  $! x \mapsto {{ f|latex}} !$ et g :  $! x \mapsto {{ g|latex}} !$.
 Donner l'expression de   $! f\circ g(x) !$.
 ==
