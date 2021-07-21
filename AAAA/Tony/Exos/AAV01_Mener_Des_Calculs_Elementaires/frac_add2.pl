@@ -1,6 +1,6 @@
 extends = /model/math/expr.pl
 
-#ne marche pas 
+#ne marche pas : voir comment mettre deux réponses.
 title = Addition de fractions
 
 before ==
