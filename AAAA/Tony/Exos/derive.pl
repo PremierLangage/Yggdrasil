@@ -16,7 +16,7 @@ sol = diff(h,x)
 question ==
 Déterminer la dérivée de
 
-$! f \mapsto \displaystyle {{ h|latex }} !$ où $!\log!$ désigne le logarithme népérien
+$! f \mapsto \displaystyle {{ h|latex }} !$. Si $!\log!$ apparaît, elle désigne le logarithme népérien.
 ==
  
 #solution pour modifier le message de solution
