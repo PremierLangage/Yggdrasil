@@ -15,7 +15,7 @@ sol = diff(h,x)
 question ==
 Déterminer la dérivée de
 
-$! h :x\mapsto \displaystyle {{ h|latex }} !$. Si $!\log!$ apparaît, elle désigne le logarithme népérien.
+$! h :x\mapsto \displaystyle {{ h|latex }} !$. La fonction $!\log!$ désigne le logarithme népérien.
 ==
  
 #solution pour modifier le message de solution
