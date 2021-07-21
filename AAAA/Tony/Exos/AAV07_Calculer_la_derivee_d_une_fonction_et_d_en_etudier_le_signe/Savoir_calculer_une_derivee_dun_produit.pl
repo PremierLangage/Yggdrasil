@@ -1,6 +1,8 @@
 
 extends = /model/math/expr.pl
 
+title = Savoir calculer une dérivée d'un produit
+
 before ==
 from sympy import Symbol, diff, sin
 
