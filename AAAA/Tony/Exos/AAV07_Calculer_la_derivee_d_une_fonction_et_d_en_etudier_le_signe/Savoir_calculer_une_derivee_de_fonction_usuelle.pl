@@ -1,5 +1,6 @@
 extends = /model/math/expr.pl
 
+title = Savoir calculer une dérivée de fonction usuelle
 before ==
 from sympy import Symbol, diff
 
