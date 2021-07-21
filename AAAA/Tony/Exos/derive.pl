@@ -7,7 +7,7 @@ from sympy import Symbol, diff, sin
 x = Symbol('x')
 
 
-f,g  =  sample([x,x**2+1,exp(x),ln(x),sin(x),cos(x),sqrt(x),1/x,x**3,x**4],2) 
+f,g  =  sample([x,x**2+1,exp(x),ln(x),sin(x),cos(x),sqrt(x),x**3,x**4],2) 
 h = f*g
 sol = diff(h,x)
 ==
@@ -16,7 +16,7 @@ sol = diff(h,x)
 question ==
 Déterminer la dérivée de
 
-$! f \mapsto \displaystyle {{ h|latex }} !$. Si $!\log!$ apparaît, elle désigne le logarithme népérien.
+$! h \mapsto \displaystyle {{ h|latex }} !$. Si $!\log!$ apparaît, elle désigne le logarithme népérien.
 ==
  
 #solution pour modifier le message de solution
