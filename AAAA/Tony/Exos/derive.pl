@@ -8,7 +8,8 @@ x = Symbol('x')
 
 
 f,g  =  sample([x,x**2+1,exp(x),ln(x),sin(x),cos(x),sqrt(x),1/x,x**3,x**4],2) 
-sol = diff(f*g,x)
+h = f*g
+sol = diff(h,x)
 ==
 
 #Double dollar pour mettre le latex centré.
