@@ -6,8 +6,10 @@ from sympy import Limit
 
 x = Symbol('x')
 
-f, g = sample([2*x+1, x+2, 2*x**2+1, x**2+1], 2)
-lim = Limit(f/g, x, -oo)
+a,b,c,d,e,f = randint(-5,5),randint(-5,5),randint(-5,5),randint(-5,5), randint(-5,5), randint(-5,5)
+f,g  = a*x**2 + b*x+c, d*x**2 + e*x
+
+lim = choice([Limit(f/g, x, oo),Limit(f/g, x, -oo)])
 sol = lim.doit()
 ==
 
