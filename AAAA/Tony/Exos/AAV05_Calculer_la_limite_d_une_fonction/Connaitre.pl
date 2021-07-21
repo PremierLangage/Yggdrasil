@@ -13,14 +13,6 @@ maxright = 4
 
 right== 
 $!\lim_{x\rightarrow +\infty}exp(x)!$
-$!f:x\mapsto \sin(x^2)!$
-$!f:x\mapsto \frac{x^2}{2+3x^4}!$
-$!f:x\mapsto \sin(x)\sin(2x)!$
-$!f:x\mapsto 6x^2!$
-$!f:x\mapsto 0!$
-$!f:x\mapsto 1!$
-$!f:x\mapsto e^{-x^2}!$
-$!f:x\mapsto \sqrt{x^2+4}!$
 ==
 
 wrong==
