@@ -2,7 +2,7 @@
 extends = /model/math/expr.pl
 
 before ==
-from sympy import Symbol, diff, sin
+from sympy import Symbol, diff, subs
 
 x = Symbol('x')
 
