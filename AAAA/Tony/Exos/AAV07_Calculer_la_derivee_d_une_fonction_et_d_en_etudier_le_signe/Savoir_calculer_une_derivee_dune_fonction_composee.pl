@@ -7,7 +7,8 @@ from sympy import Symbol, diff
 x = Symbol('x')
 
 
-f,g  =  sample([x,x**2+1,exp(x),ln(x),sin(x),cos(x),sqrt(x),x**3,x**4],2) 
+f =  choice([exp(x),ln(x),sin(x),cos(x),sqrt(x)]) 
+g = choice([x,x**2+1,exp(x),ln(x),sin(x),cos(x),sqrt(x),x**3,x**4])
 h = f.subs(x,g)
 sol = diff(h,x)
 ==
