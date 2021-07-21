@@ -2,6 +2,7 @@
 extends = /model/math/expr.pl
 
 #A réglier : sympy n'a pas l'éair  de prendre ln(abs(x)). Pb lié à la valeur absolue.
+title = Savoir calculer une primitive de fonction dont la primitive est une combinaison linéaire ou une composition de fonctions usuelles
 
 before ==
 from sympy import integrate,diff
