@@ -1,5 +1,6 @@
 extends = /model/math/expr.pl
 
+#Voir comment mettre plusieurs réponses afin de demander le domaine de définition de la composée.
 title = Savoir calculer une fonction composée (fonction de \R -> \R)
 
 before ==
@@ -10,6 +11,6 @@ sol = f.subs(x,g)
 ==
 
 question ==
-Soit f :  $! x \mapsto {{ f|latex}} !$.
-Entrer l'expression  $! f({{ g|latex}}) !$.
+Soient f :  $! x \mapsto {{ f|latex}} !$ et g :  $! x \mapsto {{ f|latex}} !$.
+Donner l'expressioin de   $! f\circ g(x) !$.
 ==
