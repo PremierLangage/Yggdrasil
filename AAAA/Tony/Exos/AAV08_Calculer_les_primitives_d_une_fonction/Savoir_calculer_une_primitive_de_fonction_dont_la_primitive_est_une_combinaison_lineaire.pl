@@ -10,7 +10,6 @@ from random import choice, randint
 x = Symbol('x') 
 d1,d2,d3 = randint(-5,5),randint(-5,5),randint(-5,5)
 a,n  = randint(1,6), randint(1,6) 
-
 g = choice([sin(x),cos(x),x**n,ln(x), exp(x), d1*x**2+d2*x+d3])
 dg = diff(g)
 f = choice([a*dg*sin(g),a*dg*cos(g),a*dg*exp(g),a*dg/g,a*dg*g**n,d1*x**2+d2*x+d3,a*dg/g**n])
