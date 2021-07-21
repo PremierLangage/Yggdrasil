@@ -12,7 +12,7 @@ R = choice(P,Q)
 if P == R:
     sol =  ((a+c)*x+(b+d))*((a-c)*x+(b-d)) 
 else: 
-    sol = (ax+b)*((a-c*a)*x+(b-c*b))
+    sol = (a*x+b)*((a-c*a)*x+(b-c*b))
 ==
 
 question ==
