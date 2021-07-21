@@ -4,18 +4,12 @@ title = Démonstration math/expr
 
 before ==
 var('x')
-f = x
-sol = f.subs(x,2x)
+f = x**2
+g = 2*x+1
+sol = f.subs(x,g)
 ==
 
 question ==
-Soit f : 
-Entrer l'expression  $! {{ sol|latex}} !$.
+Soit f :  $! x \mapsto {{ f|latex}} !$.
+Entrer l'expression  $! f({{ g|latex}}) !$.
 ==
-
-inputblock ==
-{{ mathinput("math") }}
-{{ mathinput("math2") }}
-==
-
-mathinputid % ["math", "math2"]
