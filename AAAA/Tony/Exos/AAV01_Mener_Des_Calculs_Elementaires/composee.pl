@@ -5,7 +5,7 @@ title = Démonstration math/expr
 before ==
 var('x')
 f = x
-sol = f.subs(x,2x+1)
+sol = f
 ==
 
 question ==
