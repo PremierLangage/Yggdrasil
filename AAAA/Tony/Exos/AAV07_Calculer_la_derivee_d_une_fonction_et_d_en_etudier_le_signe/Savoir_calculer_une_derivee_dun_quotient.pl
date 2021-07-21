@@ -2,7 +2,7 @@
 extends = /model/math/expr.pl
 
 before == 
-
+from sympy import diff
 x = Symbol('x')
 
 a = randint(-5,5,[0])
