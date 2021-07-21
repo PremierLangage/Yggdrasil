@@ -1,9 +1,2 @@
-Savoir calculer une dérivée de fonction usuelle (polynôme,cos, sin, tan, ln, exp)
-Avoir une intuition graphique et physique de la dérivée
-Savoir calculer une dérivée d'un produit
-Savoir calculer une dérivée d'un quotient
-Savoir calculer une dérivée d'une fonction composée
-Savoir calculer l'équation d'une tangente à une courbe en un point donné
-Savoir étudier le signe d'un quotient de polynômes de degré au plus 2
-Avoir en tête des exemples de fonctions non dérivables en un point (sans démonstration)
-Avoir des exemples en tête de fonctions continues, non continues, dérivables, continues mais non dérivables
+Savoir calculer une primitive de fonction dont la primitive est une combinaison linéaire ou une composition de fonctions usuelles
+Connaître les primitives des fonctions usuelles
