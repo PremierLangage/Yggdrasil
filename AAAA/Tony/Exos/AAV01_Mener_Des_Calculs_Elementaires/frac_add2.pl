@@ -13,5 +13,5 @@ sol = cancel(f)
 ==
 
 text ==
-Calculer l'expression $! \displaystyle {{sol|latex}} !$ en l'écrivant sous la forme d'une fraction irréductible.
+Calculer l'expression $! \displaystyle {{f|latex}} !$ en l'écrivant sous la forme d'une fraction irréductible.
 ==
