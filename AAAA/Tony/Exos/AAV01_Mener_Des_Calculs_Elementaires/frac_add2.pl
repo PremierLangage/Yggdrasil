@@ -8,8 +8,6 @@ from sympy import numer, denom
 var('x')
 f = 1/(x+1)+1/(x+2)
  
-
- 
 sol = numer(f),denom(f)
 ==
 
