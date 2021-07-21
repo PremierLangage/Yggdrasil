@@ -12,7 +12,7 @@ minright = 0
 maxright = 4
 
 right== 
-$!\lim\limits_{x\rightarrow +\infty}exp(x)!$ 
+$!\lim\limits_{x\rightarrow +\infty}\exp(x)!$ 
 $!\lim\limits_{x\rightarrow +\infty}x^2!$ 
 $!\lim\limits_{x\rightarrow -\infty}x^2!$ 
 $!\lim\limits_{x\rightarrow +\infty}\ln(x)!$ 
