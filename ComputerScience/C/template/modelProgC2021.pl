@@ -78,7 +78,7 @@ nb_attempt=0
 # Place here your favorite C compiler
 compiler="clang"
 # PLace here the compilation flags
-cflags=["-Wall", "-ansi"]
+cflags=["-Wall", "-std=c11"]
 # Place here library flags
 libflags=[]
 
