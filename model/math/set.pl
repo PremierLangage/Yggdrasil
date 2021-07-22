@@ -12,7 +12,7 @@ evaluator ==
 from ast import literal_eval
 from evalsympy import eval_set
 from sympy import sympify
-local_dict = {}
+local_dict = {'e': E, 'i': I}
 score, error = eval_set(answers['math'], sol, wobracket=wobracket, local_dict=local_dict)
 feedback = message[error]
 ==
