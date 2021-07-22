@@ -29,7 +29,8 @@ $!\int_0.5^1 \ln(x)dx!$
  $!\int_0^1 1-e^x dx!$  
  $!\int_0^1 cos(4x)-1 dx!$  
   $!\int_0^1 sin(x)-2 dx!$  
- $!\int_{-1}^0 \frac{x}{x^2+4}dx!$    
+ $!\int_{-1}^0 \frac{x}{x^2+4}dx!$ 
+    $!\int_-1^1 -\sqrt{x+2} dx!$  
 ==
 
 
