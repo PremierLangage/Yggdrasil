@@ -1,4 +1,4 @@
-extends = /model/math.pl
+extends = /model/math/math.pl
 
 jxg =: MathDrawer
 @ /utils/components/jsxgraph.py [customjsxgraph.py]
