@@ -4,7 +4,7 @@ param.roots = int
 
 before ==
 from evalsympy import equal
-from sympy import solveset
+from sympy import solveset, S
 
 a = randint(-4, 4, [0])
 b = randint(-4, 4, [0])
