@@ -1,5 +1,13 @@
-extends = /model/mathinput.pl
+# Author: D. Doyen
+# Tags: complex numbers, square root
+# Calculer les racines carrées d'un nombre complexe
+# 19/7/2021
 
+extends = /model/math/set.pl
+
+param.roots = int
+
+wobracket = True
 
 before ==
 a=randint(1,6)
