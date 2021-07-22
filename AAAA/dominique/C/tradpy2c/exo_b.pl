@@ -8,4 +8,4 @@ fname = 'b'
 
 ==
 
-title= b :)
+title= Une fonction simple
