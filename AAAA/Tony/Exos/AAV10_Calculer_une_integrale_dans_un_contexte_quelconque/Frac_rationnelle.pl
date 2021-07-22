@@ -5,7 +5,7 @@ title = Savoir décomposer une fraction rationnelle en éléments simples avec d
 
 before ==
 from sympy import integrate,diff
-from random import choice, randint
+from plrandom import   randint
 x = Symbol('x')  
 a = randint(-3,3,[0])
 b = randint(-3,3,[0])
