@@ -1,4 +1,4 @@
-extends = /model/math/mathjxg.pl
+extends = /model/mathjsxgraph.pl
 
 ptname = M
 
