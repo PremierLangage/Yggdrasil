@@ -19,7 +19,7 @@ sol = integrate(f, (x,0, pi))
 question ==
 Calculer l'intégrale suivante
 
-$! \int_0^1 {{ f|latex }}dx !$.
+$! \int_0^{\pi} {{ f|latex }}dx !$.
  
 ==
 
