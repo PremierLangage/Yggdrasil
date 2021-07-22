@@ -11,16 +11,18 @@ k= randint(1,6)
 
 f = choice([x*sin(k*x),x*cos(k*x),x*exp(k*x),x**2*sin(k*x),x**2*cos(k*x),x**2*exp(k*x),ln(k*x), x*ln(k*x)])
 if f in [ln(k*x),x*ln(k*x)]:
-    sol = integrate(f, (x,1, exp(1))) 
+    a,b = 1,exp(1)  
 else:
-    sol = integrate(f, (x,0, pi)) 
+    a,b = 0,pi
+
+sol = integrate(f, (x,a, b)) 
 ==
  
 
 question ==
 Calculer l'intégrale suivante
 
-$!\displaystyle \int_0^{\pi} {{ f|latex }}dx !$.
+$!\displaystyle \int_{{a|latex}}^{{{b|latex}}} {{ f|latex }}dx !$.
  
 ==
 
