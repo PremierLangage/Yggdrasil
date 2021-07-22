@@ -9,11 +9,11 @@ from random import choice, randint
 x = Symbol('x')  
 k= randint(1,6)
 
-dico = {}
-dico[ln(k*x)]=[1,exp(1)]
-
-f = x
-sol = integrate(f, (x,0, pi)) 
+f = choice([x*sin(k*x),x*cos(k*x),x*exp(k*x),x**2*sin(k*x),x**2*cos(k*x),x**2*exp(k*x),ln(k*x), x*ln(k*x)])
+if f in [ln(k*x),x*ln(k*x)]:
+    sol = integrate(f, (x,1, exp(1))) 
+else:
+    sol = integrate(f, (x,0, pi)) 
 ==
 
 #dico[x*ln(k*x)]=[1,exp(1)]
