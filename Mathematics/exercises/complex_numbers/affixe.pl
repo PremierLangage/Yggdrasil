@@ -1,6 +1,7 @@
-# Author : D. Doyen
-# Tags : complex numbers
-# 19/8/2020
+# Author: D. Doyen
+# Tags: complex numbers, affix, complex plane, geometrical representation
+# Placer dans le plan un point d'affixe donné. 
+# 19/7/2021
 
 extends = /model/jsxgraph/clickpoint.pl
 
