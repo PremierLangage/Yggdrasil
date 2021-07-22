@@ -7,7 +7,7 @@
 
 extends = /model/math/complex.pl
 
-param.formulas = []
+param.formulas % []
 
 jinja_keys = ["text", "text1", "text2", "solution", "input_prefix"]
 
