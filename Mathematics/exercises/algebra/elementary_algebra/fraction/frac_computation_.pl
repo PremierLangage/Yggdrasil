@@ -23,8 +23,8 @@ e1=randint(1,3)
 e1=str(e1)
 s1=choice(["-","+"])
 s2=choice(["-","+"])
-p1,p2=rd.sample([f1,e1],2)
-q1,q2,q3=rd.sample([f1,f2,e1],3)
+p1,p2=sample([f1,e1],2)
+q1,q2,q3=sample([f1,f2,e1],3)
 
 op = choice(param['formulas'])
 
