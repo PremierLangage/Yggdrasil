@@ -7,6 +7,10 @@ before ==
 from sympy import integrate,diff
 from random import choice, randint
 x = Symbol('x')  
+a = randint(-3,3,[0])
+b = randint(-3,3,[0])
+c = randint(-3,3,[0,a])
+d = randint(-3,3,[0,d])
 a,b,c,d=sample([1,-1,2,-2,3,-3],4)  
 f = 1/((a*x+b)*(c*x+d)) 
 
