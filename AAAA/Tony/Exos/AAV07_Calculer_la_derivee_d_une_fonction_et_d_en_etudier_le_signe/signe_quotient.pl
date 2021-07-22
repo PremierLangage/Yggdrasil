@@ -7,7 +7,7 @@ b = randint(-2,3)
 c = randint(-5,-1)
 
 
-sol = Union(Interval(-oo, Min(a,b,c)),)
+sol = Union(Interval(-oo, c),Interval(c,b),Interval(b,a))
 ==
 
 question ==
