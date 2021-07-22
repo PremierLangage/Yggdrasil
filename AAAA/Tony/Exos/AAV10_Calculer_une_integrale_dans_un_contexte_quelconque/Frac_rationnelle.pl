@@ -7,7 +7,7 @@ before ==
 from sympy import integrate,diff
 from random import choice, randint
 x = Symbol('x')  
-k= randint(1,6)
+a,b,c,d=sample([1,-1,2,-2,3,-3,4,-4],4)  
  
 
 sol = integrate(f, (x,a, b)) 
