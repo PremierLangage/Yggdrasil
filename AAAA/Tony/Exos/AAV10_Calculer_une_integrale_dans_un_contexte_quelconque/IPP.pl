@@ -26,7 +26,7 @@ $!\displaystyle \int_{{a|latex}}^{{b|latex}} {{ f|latex }}dx !$.
  
 ==
 
-keypad = ["Pi"]
+keypad = ["inty"]
   
 
 
