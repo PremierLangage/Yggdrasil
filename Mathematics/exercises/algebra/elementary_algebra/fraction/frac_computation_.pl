@@ -6,7 +6,7 @@ extends = /model/math/expr.pl
 
 param.numbers = small
 
-param.formulas % [f+f"]
+param.formulas % ["f+f"]
 
 before ==
 lstfrac=[(choice([1,3,5,7]),2),
