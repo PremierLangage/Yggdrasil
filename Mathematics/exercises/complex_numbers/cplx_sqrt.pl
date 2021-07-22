@@ -1,12 +1,7 @@
 extends = /model/mathinput.pl
 
-title = Racines carrées d'un nombre complexe
-
-lang = fr
 
 before ==
-
-
 a=randint(1,6)
 b=randint(-6,6,[0])
 z=((a+b*I)**2).expand()
