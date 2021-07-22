@@ -36,6 +36,6 @@ solution=r"Les solutions sont $! \displaystyle %s !$ et $! \displaystyle %s !$."
 ==
 
 question ==
-{{lstsol}}
+{{sol}}
 Déterminer les solutions (complexes) de l'équation $! {{ P|latex }} = 0 !$. Séparer les différentes solutions par une virgule.
 ==
