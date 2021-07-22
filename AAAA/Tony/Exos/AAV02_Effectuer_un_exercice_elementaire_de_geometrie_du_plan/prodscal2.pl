@@ -10,9 +10,8 @@ Calculer le produit scalaire de deux vecteurs de norme $!{{p}}!$ et $!{{q}}!$ et
 before ==
 from math import pi,cos 
 p =  randint(1,5)
-q = randint(1,5)
-n = choice([1,2,3,4,6])
-th =  pi/n
+q = randint(1,5) 
+th = choice([pi/6, pi/4, pi/3, 3*pi/4, 2*pi/3, 5*pi/6])
 sol = p*q*cos(th) 
  
 ==
