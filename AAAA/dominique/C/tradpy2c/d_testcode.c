@@ -13,9 +13,12 @@ CUT_HERE
 
 int main(int argc, char* argv[]){  
   int i=0;  
-
-    i= FUNC();
-    printf("Entier saisi:%d\n",i)
+  int n=173:
+    for(;i<5;i++)
+    {
+      print(" Appel de la fonction FUNC avec n= %d \n", n*i);
+      FUNC(n*i);
+    }
 
   return 0;  
 }  
