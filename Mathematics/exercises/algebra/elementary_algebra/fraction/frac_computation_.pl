@@ -4,8 +4,6 @@
 
 extends = /model/mathquill.pl
 
-title = Opérations sur les fractions
-
 param.numbers = small
 
 param.formulas % ["e+f+f"]
