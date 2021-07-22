@@ -1,0 +1,15 @@
+- Calcul IPP : xsin(kx), xcox, xexp, ln(kx), xln(kx)  int à calculer avec k en aléatoire.
+- Reconnaissance IPP :QCM on met plein d’intégrales (choix de 4 parmi elles) et on demande lesquelles se traitent par IPP.
+- Fraction rationnelle : on demande de calculer des int de 1/(ax+b)(cx+d) avec a b c d aléatoires.
+-Positivité intégrale : qcm on demande quelles intégrales sont positives.
+- equa diff ordre 1 : y’-a(x)y=0 avec a fonction aléatoire. A la fin, vérifier que la solution divisée par ans est constante (attention David dit qu’il faut convertir en sympy).
+- pour toutes les équa diff ordre 2 à coeff cst, on peut demander de choisir des couples de coeff (dont le discriminant tombe bien) aléatoirement et demander de trouver une solution (il faut redériver dans evaluator pour voir si la réponse est bonne). 
+-on peut donner une équa diff d’ordre 2 de chaque discriminant ( pas aléatoire) et donner une liste de fonctions bonnes et fausses (qcm).
+-on peut faire aussi ça pour vérifier que qqch est solution d’une équation donnée.
+
+- on donne une équation d’ordre 1 avec condition initiale   et on utilise dsolve de sympy. Je peux faire ça avec ordre 1 ou 2 avec ou sans second membre. On peut en faire un par second membre. y’-rendint y = x^randint (12).  Exo sim avec cos(kx) et expo. Pareil avec éq à coeff cst ordre 2.
+-Chgt de var ? 
+
+-Signe de quotients : on donne expr (x-a)(x-b)/(x-c) et on demande l’intervalle où positif.
+
+-NE PAS OUBLIER LE FORMAT QCM QUI PEUT ETRE TRES JUDICIEUX DANS CERTAINS CAS.
