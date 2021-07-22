@@ -1,4 +1,7 @@
 
+# Yggdrasil/ComputerScience/C_Initiation/idees/readme.md
+
+
 Tout les mots de longueur 2 dans l'ordre alphabétique  string.ascii_lowercase.
 
 Toutes les pairs de lettres différentes.
@@ -25,6 +28,5 @@ Write a function changes that returns how many set of change can be made for a g
 
 def changes(amount, coins):
     
-
 
 
