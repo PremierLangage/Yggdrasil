@@ -30,7 +30,7 @@ $!\lim\limits_{x\rightarrow 2}\frac{-1}{(2-x)^2}!$
 $!\lim\limits_{x\rightarrow 0}\frac{1}{e^x}!$ 
 $!\lim\limits_{x\rightarrow 1}\ln(x)!$   
 $!\lim\limits_{x\rightarrow -\infty}\exp(x)+1/x!$ 
-$!\lim\limits_{x\rightarrow 0}\sqrt{x}!$ 
+$!\lim\limits_{x\rightarrow 0}\sqrt{x}-x^2!$ 
 $!\lim\limits_{x\rightarrow 0}\frac{1}{x}!$ 
 ==
 
