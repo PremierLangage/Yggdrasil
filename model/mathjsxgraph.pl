@@ -14,6 +14,8 @@ text =
 
 form = 
 
+tplpage =@ /model/basic/template.html
+
 inputblock ==
 {{ jxg|component }}
 ==
