@@ -23,10 +23,9 @@ question ==
 Calculer l'intégrale suivante
 
 $!\displaystyle \int_{{a|latex}}^{{b|latex}} {{ f|latex }}dx !$.
- 
+Afin de taper le nombre pi, écrivez simplement pi en toutes lettres. 
 ==
-
-keypad = ["pi"]
+ 
   
 
 
