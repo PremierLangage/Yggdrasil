@@ -5,7 +5,6 @@
 
 extends = /model/math/complex.pl
 
-
 param.formulas % ["add","sub"]
 
 jinja_keys % ["text", "text1", "text2", "solution", "input_prefix"]
@@ -102,10 +101,10 @@ elif formula == "divmix":
 
 sol = sol.expand()
 
-if formula in ["sq","inv"]:
-    text = text1
+if formula in ["sq", "inv"]:
+    question = text1
 else:
-    text = text2
+    question = text2
 ==
 
 text1 ==
