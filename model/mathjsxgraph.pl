@@ -12,8 +12,3 @@ text =
 inputblock ==
 {{ jxg|component }}
 ==
-
-settings.feedback = rightwrong
-
-settings.maxattempt % 1
-
