@@ -20,7 +20,7 @@ sol = integrate(f, (x,0,1))
 question ==
 Calculer l'intégrale suivante
 
-$!\displaystyle \int_{0}^{\frac{1}{4}} {{ f|latex }}dx !$. 
+$!\displaystyle \int_{0}^{1} {{ f|latex }}dx !$. 
 ==
  
   
