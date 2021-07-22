@@ -25,13 +25,13 @@ $!\lim\limits_{x\rightarrow 0}\frac{1}{x^2}!$
 ==
 
 wrong== 
-$!\lim\limits_{x\rightarrow 0^+}\ln(x)!$ 
-$!\lim\limits_{x\rightarrow +\infty}\sin(x)!$ 
-$!\lim\limits_{x\rightarrow +\infty}\cos(x)!$ 
-$!\lim\limits_{x\rightarrow -\infty}\exp(x)!$ 
+$!\lim\limits_{x\rightarrow 1}\frac{1}{1-x}!$ 
+$!\lim\limits_{x\rightarrow 2}\frac{-1}{(2-x)^2}!$ 
+$!\lim\limits_{x\rightarrow 0}\frac{1}{e^x}!$ 
+$!\lim\limits_{x\rightarrow 1}\ln(x)!$   
+$!\lim\limits_{x\rightarrow -\infty}\exp(x)+1/x!$ 
 $!\lim\limits_{x\rightarrow 0}\sqrt{x}!$ 
-$!\lim\limits_{x\rightarrow 0}\frac{1}{x}!$
-$!\lim\limits_{x\rightarrow +\infty}1!$  
+$!\lim\limits_{x\rightarrow 0}\frac{1}{x}!$ 
 ==
 
 
