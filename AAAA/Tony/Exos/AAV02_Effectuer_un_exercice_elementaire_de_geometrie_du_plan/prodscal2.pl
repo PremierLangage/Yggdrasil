@@ -3,7 +3,7 @@ title = "Produit scalaire"
 extends = /model/math/expr.pl
 
 question ==  
-Calculer le produit scalaire de deux vecteurs de norme $!{{p}}!$ et $!{{q}}!$ et d'angle $!{{th}}!$
+Calculer le produit scalaire de deux vecteurs de norme $!{{p}}!$ et $!{{q}}!$ et d'angle $!{{th|latex}}!$
 ==
  
   
