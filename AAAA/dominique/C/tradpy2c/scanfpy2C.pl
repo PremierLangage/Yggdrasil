@@ -38,7 +38,6 @@ return 0;
 before=
 
 
-
 checks_args_stdin==#|python|
 [["Exécution simple", ["2"], ""],
  ]
