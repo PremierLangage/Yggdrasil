@@ -7,7 +7,8 @@ extends = /model/math/input.pl
 title = Argument d'un nombre complexe
 
 before ==
-z=randItem([I,-I,1,-1,1+I,1-I,I-1,-1-I])
+z=choice([I,-I,1,-1,1+I,1-I,I-1,-1-I]) 
+#il y avait randitem qui plantait avant
 z=randint(1,3)*z
 sol=arg(z)
 ==
