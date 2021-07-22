@@ -7,7 +7,8 @@ Calculer le produit scalaire de deux vecteurs de norme $!{{p}}!$ et $!{{q}}!$ et
 ==
  
   
-before == 
+before ==
+from math import pi 
 p =  randint(1,5)
 q = randint(1,5)
 th =  pi/choice([1,2,3,4,6])
