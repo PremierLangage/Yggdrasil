@@ -1,3 +1,3 @@
 extends = cplx_computation_.pl
 
-param.formulas = ["add", "sub"]
+param.formulas % ["add", "sub"]
