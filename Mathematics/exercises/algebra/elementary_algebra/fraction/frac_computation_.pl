@@ -78,7 +78,6 @@ text ==
 Calculer l'expression $! \displaystyle {{expr}} !$ en l'écrivant sous la forme d'un entier ou d'une fraction irréductible.
 ==
 
-
 evaluator ==
 score, error = eval_frac(answers['math'], sol)
 feedback = message[error]
