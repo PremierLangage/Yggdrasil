@@ -1,7 +1,5 @@
 extends = /model/math/input.pl
 
-title = Equation quadratique
-
 param.roots = int
 
 before ==
