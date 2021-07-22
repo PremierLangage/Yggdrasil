@@ -27,7 +27,7 @@ $!\int_1^e x\ln(4x)dx!$
 ==
 
 wrong== 
-$!\int_0.5^1 \ln(x)dx!$ 
+$!\int_{\frac{1}{2}}^1 \ln(x)dx!$ 
  $!\int_{\frac{\pi}{2}}^{\pi} \cos(x)dx!$ 
  $!\int_0^1 1-e^x dx!$  
  $!\int_0^1 cos(4x)-1 dx!$  
