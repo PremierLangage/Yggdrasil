@@ -14,7 +14,7 @@ lstfrac=[(choice([1,3,5,7]),2),
 (choice([1,3,5,7]),4),
 (choice([1,2,3,4,6,7,8]),5),
 (choice([1,5,7]),6)]
-cf1,cf2,cf3=sampleint(lstfrac, 3)
+cf1,cf2,cf3=sample(lstfrac, 3)
 f1='\\frac{ %d }{ %d }' % (cf1[0],cf1[1])
 f2='\\frac{ %d }{ %d }' % (cf2[0],cf2[1])
 f3='\\frac{ %d }{ %d }' % (cf3[0],cf3[1])
