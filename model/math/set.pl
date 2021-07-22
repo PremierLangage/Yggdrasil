@@ -9,7 +9,7 @@ unauthorized_func = ['sin', 'cos', 'tan']
 evaluator ==
 from ast import literal_eval
 from evalsympy import eval_set
-score, error = eval_set(answers['math'], sol)
+score, error = eval_set(answers['math'], sol, wobracket=wobracket, local_dict=local_dict)
 feedback = message[error]
 ==
 
