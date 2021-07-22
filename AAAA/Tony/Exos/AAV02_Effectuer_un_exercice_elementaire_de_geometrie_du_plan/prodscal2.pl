@@ -1,6 +1,6 @@
 title = "Produit scalaire"
 
-extends = /model/basic/numeric.pl
+extends = /model/math/expr.pl
 
 question ==  
 Calculer le produit scalaire de deux vecteurs de norme $!{{p}}!$ et $!{{q}}!$ et d'angle $!{{th}}!$
