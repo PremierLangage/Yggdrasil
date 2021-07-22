@@ -1,6 +1,6 @@
 title = "Produit scalaire"
 
-extends = /model/basic/numeric.pl
+extends = /model/basic/input.pl
 
 question ==  
 Calculer le produit scalaire de $!{{p[0],p[1]}}!$ par $!{{(q[0],q[1])}}!$ 
