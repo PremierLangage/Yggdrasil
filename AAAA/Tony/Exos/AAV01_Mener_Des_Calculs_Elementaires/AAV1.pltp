@@ -1,0 +1,14 @@
+title = AAV1 : savoir mener des calculs élémentaires 
+
+introduction==
+Sur ce thème, vous serez amenés à travailler les savoir faire suivants : 
+Savoir résoudre des équations algébriques d'ordre un, ou d'ordre deux de type x^2 = a
+Savoir simplifier des expressions (développement : 1 poly expansion.pl, factorisation : 1 factorisation.pl, identités remarquables, fractions…)
+Savoir résoudre une équation du second degré : 1 poly factorization.pl
+Savoir faire des calculs algébriques avec des inégalités
+Savoir résoudre des inéquations simples
+Comprendre le concept de variable : ne pas être perturbé par le changement de notations dans un calcul simple
+
+==
+@ 2d_degre_facto_racines.pl
+@ abs_equation.pl
