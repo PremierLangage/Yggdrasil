@@ -3,13 +3,14 @@ title = "Produit scalaire"
 extends = /model/basic/numeric.pl
 
 question ==  
-Calculer le produit scalaire de $!{{p}}!$ par $!{{q}}!$ 
+if n==2:
+    Calculer le produit scalaire de $!{{p}}!$ par $!{{q}}!$ 
 ==
  
   
 before ==
 n = choice([2,3])
-p =  (randint(-5,5) for i in range(n))
+p =  [randint(-5,5) for i in range(n)]
 q = [randint(-5,5) for i in range(n)] 
 
 if n == 2:
