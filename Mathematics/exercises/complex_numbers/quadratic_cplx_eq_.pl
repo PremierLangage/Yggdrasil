@@ -29,7 +29,7 @@ if param['roots']=='rat':
     P=s*(c*x+a+b*I)*(c*x+a-b*I)
 sol=list(solveset(P,x,domain=S.Complexes))
 P = Poly(expand(P),x)
-solution=r"Les solutions sont $! \displaystyle %s !$ et $! \displaystyle %s !$." % (latex(lstsol[0]),latex(lstsol[1]))
+solution=r"Les solutions sont $! \displaystyle %s !$ et $! \displaystyle %s !$." % (latex(sol[0]),latex(sol[1]))
 ==
 
 question ==
