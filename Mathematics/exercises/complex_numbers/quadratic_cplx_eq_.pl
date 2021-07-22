@@ -3,7 +3,8 @@ extends = /model/math/input.pl
 param.roots = int
 
 before ==
-from evalsympy import equal
+from evalsympy import equal, solveset
+
 a = randint(-4, 4, [0])
 b = randint(-4, 4, [0])
 a2 = randint(-4, 4, [0])
