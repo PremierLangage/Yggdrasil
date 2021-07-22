@@ -74,26 +74,12 @@ elif op=="f-(e+f)":
 sol=simplify(latex2sympy(expr))
 ==
 
-text ==
+question ==
 Calculer l'expression $! \displaystyle {{expr}} !$ en l'écrivant sous la forme d'un entier ou d'une fraction irréductible.
-==
-
-evaluator ==
-score, error = eval_frac(answers['math'], sol)
-feedback = message[error]
-==
-
-solution==
-La solution est $! \displaystyle {{ sol|latex }} !$.
 ==
 
 
 wims ==
-
-
-
-
-
 \if{\type=15}{
 \text{T1=choice(\f1 \s1 \e1,\e1 \s1 \f1)}
 \text{rep=simplify(\f2*(\T1))}
