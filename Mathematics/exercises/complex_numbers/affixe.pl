@@ -23,6 +23,6 @@ const M = board.create('point',[0, 0],{size:2,name:'M',color:'blue'});
 ==
 
 
-text ==
+question ==
 Placer le point $% M %$ d'affixe $%{{ z|latex }}%$ dans le plan ci-dessous.
 ==
