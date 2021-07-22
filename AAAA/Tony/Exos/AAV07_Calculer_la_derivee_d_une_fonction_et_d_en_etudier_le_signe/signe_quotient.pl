@@ -13,4 +13,4 @@ question ==
 Ecrire sous forme d'intervalle l'ensemble des réels $! \frac{(x-a)(x-b)}{(x-c)} \geq 0 !$.
 ==
 
-keypad = ["-infty", "+infty", "cup", "cap"]
+keypad = ["-infty", "+infty", "cup"]
