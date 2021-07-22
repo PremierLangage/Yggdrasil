@@ -1,10 +1,10 @@
 # Author: D. Doyen
-# Tags: complex numbers
+# Tags: complex numbers, algebraic operations
+# Calculer avec les nombres complexes
 # 29/4/2021
 
 extends = /model/math/complex.pl
 
-title = Opération sur les nombres complexes
 
 param.formulas % ["add","sub"]
 
