@@ -1,6 +1,5 @@
 title = "Produit scalaire"
 
-#Modèle prédéfini (hérite du modèle numeric, on hérite des clés et valeurs du modèle)
 extends = /model/basic/numeric.pl
 
 question ==  
