@@ -9,7 +9,7 @@ extends = /model/math/complex.pl
 
 param.formulas % []
 
-jinja_keys = ["text", "text1", "text2", "solution", "input_prefix"]
+jinja_keys = ["question", "text1", "text2", "solution", "input_prefix"]
 
 before ==
 from sympy import conjugate
