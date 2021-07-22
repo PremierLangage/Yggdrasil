@@ -1,10 +1,15 @@
+#Auteur  = inconnu, récupéré de la base commune, repris par Tony Février et Jeanne Parmentier
+#Date = 22/07/2021
+#Etat =
+#Note pour David : ce serait bien de pouvoir dupliquer un exercice dans un même dossier
+
 extends= /model/basic/checkbox_rw.pl
 
 
-title= Savoir reconnaitre les caractéristiques d'une ED (linéarité, ordre…)
+title= Savoir reconnaitre les caractéristiques d'une ED (linéarité, ordre…) : linéarité
 
 text==
-Parmi ces équations linéaires, lesquelles sont linéaires d'ordre 1 homogène?
+Parmi ces équations différentielles, lesquelles sont linéaires d'ordre 1 homogène?
 ==
 
 nbitems = 4
