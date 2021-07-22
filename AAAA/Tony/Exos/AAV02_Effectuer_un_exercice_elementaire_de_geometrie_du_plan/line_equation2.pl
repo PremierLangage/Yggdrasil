@@ -4,7 +4,7 @@ before ==
 var('x')
 p =  [randint(0,5),randint(-5,5)]
 q = [randint(-5,-1),randint(-5,5)]
-a = (q[1]-q[0])/(p[1]-p[0])
+a = (q[1]-p[1])/(q[0]-p[0])
 b = q[1]-a*q[0]
 sol = a*x + b 
 ==
