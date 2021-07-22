@@ -1,13 +1,13 @@
 # Author: D. Doyen
 # Tags: complex numbers
 # 19/8/2020
-
+#Etat : à débugguer
 extends = /model/math/input.pl
 
 title = Argument d'un nombre complexe
 
 before ==
-z=randitem([I,-I,1,-1,1+I,1-I,I-1,-1-I])
+z=randItem([I,-I,1,-1,1+I,1-I,I-1,-1-I])
 z=randint(1,3)*z
 sol=arg(z)
 ==
