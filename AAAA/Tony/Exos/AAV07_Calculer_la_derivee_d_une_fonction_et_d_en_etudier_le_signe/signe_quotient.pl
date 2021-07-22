@@ -1,12 +1,13 @@
 extends = /model/math/interval.pl
 
 before == 
-a = randint(-5,5)
-b = randint(-5,5)
-c = randint(-5,5)
+from sympy import Interval, Min, Union
+a = randint(2,5)
+b = randint(-2,3)
+c = randint(-5,-1)
 
 
-sol = Interval(-oo, b-a)
+sol = Union(Interval(-oo, Min(a,b,c)),)
 ==
 
 question ==
