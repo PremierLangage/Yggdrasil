@@ -12,6 +12,7 @@ k= randint(1,6)
 dico = {}
 dico[ln(k*x)]=[1,exp(1)]
 
+f = x
 sol = integrate(f, (x,0, pi)) 
 ==
 
