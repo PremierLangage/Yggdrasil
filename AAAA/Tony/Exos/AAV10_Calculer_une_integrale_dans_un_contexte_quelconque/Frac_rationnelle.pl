@@ -10,7 +10,7 @@ x = Symbol('x')
 a = randint(-3,3,[0])
 b = randint(-3,3,[0])
 c = randint(-3,3,[0,a])
-d = randint(-3,3,[0,d]) 
+d = randint(-3,3,[0,b]) 
 f = 1/((a*x+b)*(c*x+d)) 
 
 sol = integrate(f, (x,0,1/4)) 
