@@ -6,7 +6,6 @@ question ==
 Calculer le produit scalaire de deux vecteurs de norme $!{{p}}!$ et $!{{q}}!$ et d'angle $!\displaystyle {{th|latex}}!$
 ==
  
-  
 before == 
 p =  randint(1,5)
 q = randint(1,5) 
