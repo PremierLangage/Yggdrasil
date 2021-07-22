@@ -1,3 +1,11 @@
+# Author: D. Doyen
+# Tags: complex numbers, quadratic equations, roots
+# Déterminer les solutions (complexes) d'une équation quadratique.
+# Parameters:
+# - roots: list de chaînes indiquant 
+# les types de racines
+# 19/7/2021
+
 extends = /model/math/set.pl
 
 param.roots = int
