@@ -17,8 +17,7 @@ sol = integrate(f, (x,0,1/4))
 question ==
 Calculer l'intégrale suivante
 
-$!\displaystyle \int_{0}^{\frac{1}{4}} {{ f|latex }}dx !$.
-Afin de taper le nombre $!\pi!$, écrivez simplement pi en toutes lettres. 
+$!\displaystyle \int_{0}^{\frac{1}{4}} {{ f|latex }}dx !$. 
 ==
  
   
