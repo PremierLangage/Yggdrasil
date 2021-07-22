@@ -1,7 +1,8 @@
 # Author: D. Doyen
 # Tags: complex numbers, algebraic operations
 # Calculer avec les nombres complexes
-# Paramètre
+# Parameters:
+# formulas: list of strings
 # 29/4/2021
 
 extends = /model/math/complex.pl
