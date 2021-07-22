@@ -12,7 +12,7 @@ sol = Union(Interval(c,b,left_open=True),Interval(a,oo))
 ==
 
 question ==
-Ecrire sous forme d'intervalle l'ensemble des réels $! {{g|latex}} \geq 0 !$. Attention une borne ouverte s'écrira avec une parenthèse et une bonne fermée avec un crochet fermée.
+Ecrire sous forme d'intervalle l'ensemble des réels $! {{g|latex}} \geq 0 !$. Attention une borne ouverte s'écrira avec une parenthèse et une bonne fermée avec un crochet fermé.
 ==
 
 keypad = ["-infty", "+infty", "cup"]
