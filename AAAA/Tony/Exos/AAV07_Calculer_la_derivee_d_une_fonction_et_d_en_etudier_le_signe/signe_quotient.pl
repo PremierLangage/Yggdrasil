@@ -6,7 +6,7 @@ var('x')
 a = randint(2,5)
 b = randint(-2,3)
 c = randint(-5,-1)
-g = (x-a)*(x-b)/(x-c)
+g = choice([(x-a)*(x-b)/(x-c),(x-a)/(x-b), (x-b)*(x-c)/(x**2+a)])
 
 sol = Union(Interval(c,b,left_open=True),Interval(a,oo))
 ==
