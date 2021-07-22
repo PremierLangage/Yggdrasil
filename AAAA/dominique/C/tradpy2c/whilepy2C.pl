@@ -2,7 +2,10 @@
 
 extends= trad1.pl
 
-tag=boucle
+tag=while
+
+title= Boucle While
+
 
 text==
 Écrire un code C équivalent a celui-ci écrit en python :
