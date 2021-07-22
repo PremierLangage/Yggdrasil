@@ -3,8 +3,7 @@ title = "Produit scalaire"
 extends = /model/basic/numeric.pl
 
 question ==  
-if n==2:
-    Calculer le produit scalaire de $!{{p}}!$ par $!{{q}}!$ 
+Calculer le produit scalaire de $!{{p}}!$ par $!{{q}}!$ 
 ==
  
   
