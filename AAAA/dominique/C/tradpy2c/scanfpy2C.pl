@@ -9,7 +9,7 @@ extends= trad1.pl
 tag=boucle
 
 
-title= Lecture
+title= Lecture au clavier
 
 text==
 Écrire un code C équivalent a celui-ci écrit en python :
