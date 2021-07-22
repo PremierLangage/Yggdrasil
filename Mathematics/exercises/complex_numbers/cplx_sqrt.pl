@@ -15,7 +15,7 @@ sol=[a+b*I,-a-b*I]
 ==
 
 question ==
-Calculer les racines carrées de $! {{z|latex}} !$ (sous forme algèbrique).  Séparer les deux racines par une virgule.
+Calculer les racines carrées de $! {{z|latex}} !$ (sous forme algébrique).  Séparer les deux racines par une virgule.
 ==
 
 solution ==
