@@ -28,23 +28,6 @@ P = poly(expand(P),x)
 solution=r"Les solutions sont $! \displaystyle %s !$ et $! \displaystyle %s !$." % (latex(lstsol[0]),latex(lstsol[1]))
 ==
 
-text ==
+question ==
 Déterminer les solutions (complexes) de l'équation $! {{ P|latex }} = 0 !$. Séparer les différentes solutions par une virgule.
 ==
-
-input.virtualKeyboards = complex
-
-evaluator==
-score, error = eval_set_complex(input.value, lstsol,wobracket=True)
-feedback = message[error]
-==
-
-
-
-
-
-
-
-
-
-
