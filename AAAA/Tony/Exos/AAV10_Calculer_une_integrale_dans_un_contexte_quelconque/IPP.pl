@@ -10,8 +10,13 @@ x = Symbol('x')
 k= randint(1,6)
 
 dico = {}
-g = choice([x,x**2])
-f = choice([g*sin(k*x),g*cos(k*x),g*exp(k*x), ln(k*x),g*ln(k*x)]) 
+dico[ln(k*x)]=[1,exp(1)]
+dico[x*ln(k*x)]=[1,exp(1)]
+L = [x*sin(k*x),x*cos(k*x),x*exp(k*x),x**2*sin(k*x),x**2*cos(k*x),x**2*exp(k*x)] 
+for elt in L:
+    dico[elt] = [0,pi]
+
+f = choice(dico.keys()) 
 sol = integrate(f, (x,0, pi)) 
 ==
  
