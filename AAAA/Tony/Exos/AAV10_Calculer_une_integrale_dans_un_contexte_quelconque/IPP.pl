@@ -9,6 +9,7 @@ from random import choice, randint
 x = Symbol('x')  
 k= randint(1,6)
 
+dico = {}
 g = choice([x,x**2])
 f = choice([g*sin(k*x),g*cos(k*x),g*exp(k*x), ln(k*x),g*ln(k*x)]) 
 sol = integrate(f, (x,0, pi)) 
