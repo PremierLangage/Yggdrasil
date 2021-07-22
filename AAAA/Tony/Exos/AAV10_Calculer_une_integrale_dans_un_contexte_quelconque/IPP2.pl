@@ -21,6 +21,7 @@ $!\int_0^1 x^3\exp(-5x)dx!$
 $!\int_1^e \ln(5x)dx!$ 
 $!\int_1^e x\ln(4x)dx!$ 
 $!\int_1^e \ln(12x)dx!$  
+$!\int_0^1 \ln(x^2+1)dx!$  
 ==
 
 wrong== 
