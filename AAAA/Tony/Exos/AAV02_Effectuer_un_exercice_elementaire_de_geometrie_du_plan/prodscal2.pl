@@ -8,7 +8,7 @@ Calculer le produit scalaire de deux vecteurs de norme $!{{p}}!$ et $!{{q}}!$ et
  
   
 before ==
-from math import pi 
+from math import pi,cos 
 p =  randint(1,5)
 q = randint(1,5)
 th =  pi/choice([1,2,3,4,6])
