@@ -1,6 +1,6 @@
 title = "Produit scalaire"
 
-extends = /model/basic/expr.pl
+extends = /model/math/expr.pl
 
 question ==  
 Calculer le produit scalaire de $!{{p}}!$ par $!{{q}}!$ 
