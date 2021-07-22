@@ -11,15 +11,8 @@ sol0_tex=latex(sol[0])
 sol1_tex=latex(sol[1])
 ==
 
-text ==
+question ==
 Calculer les racines carrées de $! {{z_tex}} !$ (sous forme algèbrique).  Séparer les deux racines par une virgule.
-==
-
-input.virtualKeyboards = complex
-
-evaluator==
-score, error = eval_set_complex(input.value, sol,wobracket=True)
-feedback = message[error]
 ==
 
 solution ==
