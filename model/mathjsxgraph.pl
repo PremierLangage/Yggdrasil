@@ -9,7 +9,7 @@ title =
 
 text = 
 
-form ==
+inputblock ==
 {{ jxg|component }}
 ==
 
