@@ -8,7 +8,7 @@ b = randint(-2,3)
 c = randint(-5,-1)
 g = (x-a)*(x-b)/(x-c)
 
-sol = Union(Interval(-oo, c),Interval(c,b),Interval(b,a))
+sol = Union(Interval(c,b),Interval(a,oo))
 ==
 
 question ==
