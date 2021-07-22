@@ -5,6 +5,7 @@ extends = /model/math/input.pl
 title = Equation avec valeur absolue
 
 before ==
+from sympy import solveset
 a,b=   1,2
 d=randint(1,5)
 var('x')
