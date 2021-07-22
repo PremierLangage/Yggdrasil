@@ -19,6 +19,9 @@ $!\lim\limits_{x\rightarrow 0}-\ln(x)!$
 $!\lim\limits_{x\rightarrow +\infty}\sqrt{x}+x^2+e^{x^2}!$ 
 $!\lim\limits_{x\rightarrow -\infty}\exp(x)+x^2+1/x!$ 
 $!\lim\limits_{x\rightarrow 0^+}\frac{1}{x}!$ 
+$!\lim\limits_{x\rightarrow 1^-}\frac{1}{1-x}!$ 
+$!\lim\limits_{x\rightarrow 2}\frac{1}{(2-x)^2}!$ 
+$!\lim\limits_{x\rightarrow 0}\frac{1}{x^2}!$ 
 ==
 
 wrong== 
