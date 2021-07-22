@@ -1,5 +1,6 @@
 #Auteur  = inconnu, récupéré de la base commune, repris par Tony Février et Jeanne Parmentier
 #Date = 22/07/2021
+#Etat = tourne dans le vide quand on met une réponse
 extends = /model/math/mathinput.pl
 
 title = Equation avec valeur absolue
