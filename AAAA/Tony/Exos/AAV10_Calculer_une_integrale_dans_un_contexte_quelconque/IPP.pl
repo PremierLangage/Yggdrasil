@@ -22,7 +22,7 @@ sol = integrate(f, (x,a, b))
 question ==
 Calculer l'intégrale suivante
 
-$!\displaystyle \int_{{a}}^{{b|latex}} {{ f|latex }}dx !$.
+$!\displaystyle \int_{{a|latex}}^{{b|latex}} {{ f|latex }}dx !$.
  
 ==
 
