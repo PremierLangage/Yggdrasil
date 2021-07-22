@@ -4,7 +4,7 @@
 # Parameters:
 # - formulas: list de chaînes indiquant 
 # les types de calculs proposés
-# 29/4/2021
+# 19/7/2021
 
 extends = /model/math/complex.pl
 
