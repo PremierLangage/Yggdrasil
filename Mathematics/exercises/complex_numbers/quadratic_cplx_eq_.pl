@@ -2,6 +2,9 @@ extends = /model/math/set.pl
 
 param.roots = int
 
+wobracket = True
+
+
 before ==
 from evalsympy import equal
 from sympy import solveset, S, expand
