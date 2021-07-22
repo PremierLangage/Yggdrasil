@@ -1,7 +1,7 @@
  
 extends = /model/math/expr.pl
 
-title = Savoir calculer une intégrale connaissant la primitive 
+title = Savoir trouver les fonctions pour faire une IPP
 
 before ==
 from sympy import integrate,diff
