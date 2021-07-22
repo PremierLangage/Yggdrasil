@@ -24,7 +24,12 @@ $!\int_1^e \ln(12x)dx!$
 ==
 
 wrong== 
- 
+ $!\int_0^1 x\exp(x^2)dx!$ 
+ $!\int_0^1 x\cos(3x^2)dx!$ 
+ $!\int_0^1 x\sin(4x^2)dx!$ 
+ $!\int_0^1 \exp(3x)dx!$ 
+ $!\int_0^1 \sin(2x)dx!$ 
+ $!\int_0^1 \cos(4x)dx!$ 
 ==
 
 
