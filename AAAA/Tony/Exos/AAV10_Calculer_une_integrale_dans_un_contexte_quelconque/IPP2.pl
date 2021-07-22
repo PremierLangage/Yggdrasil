@@ -31,6 +31,8 @@ wrong==
  $!\int_0^1 \exp(3x)dx!$ 
  $!\int_0^1 \sin(2x)dx!$ 
  $!\int_0^1 \cos(4x)dx!$ 
+ $!\int_1^e \frac{1}{x^2}dx!$  
+ $!\int_1^e \frac{x}{x^2+4}dx!$  
 ==
 
 
