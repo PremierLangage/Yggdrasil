@@ -8,7 +8,13 @@ b = randint(-2,3)
 c = randint(-5,-1)
 g = choice([(x-a)*(x-b)/(x-c),(x-a)/(x-b), (x-b)*(x-c)/(x**2+a)])
 
-sol = Union(Interval(c,b,left_open=True),Interval(a,oo))
+if g == (x-a)*(x-b)/(x-c):
+    sol = Union(Interval(c,b,left_open=True),Interval(a,oo))
+elif g == (x-a)/(x-b):
+    sol = Union(Interval(c,b,left_open=True),Interval(a,oo))
+else : 
+    sol = Union(Interval(c,b,left_open=True),Interval(a,oo))
+
 ==
 
 question ==
