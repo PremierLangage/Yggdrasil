@@ -1,6 +1,5 @@
 extends = /model/mathjsxgraph.pl
 
-
 ptname = M
 tol = 0.1
 
