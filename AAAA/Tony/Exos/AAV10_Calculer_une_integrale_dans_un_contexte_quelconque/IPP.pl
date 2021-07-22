@@ -11,16 +11,16 @@ k= randint(1,6)
 
 dico = {}
 dico[ln(k*x)]=[1,exp(1)]
-dico[x*ln(k*x)]=[1,exp(1)]
-L = [x*sin(k*x),x*cos(k*x),x*exp(k*x),x**2*sin(k*x),x**2*cos(k*x),x**2*exp(k*x)] 
-for elt in L:
-    dico[elt] = [0,pi]
 
-f = x  
 sol = integrate(f, (x,0, pi)) 
 ==
- 
 
+#dico[x*ln(k*x)]=[1,exp(1)]
+#L = [x*sin(k*x),x*cos(k*x),x*exp(k*x),x**2*sin(k*x),x**2*cos(k*x),x**2*exp(k*x)] 
+#for elt in L:
+#    dico[elt] = [0,pi]
+
+#f = x  
 
 question ==
 Calculer l'intégrale suivante
