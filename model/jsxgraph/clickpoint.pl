@@ -5,7 +5,6 @@ ptname = M
 tol = 0.1
 
 script_aux ==
-
 function getMouseCoords(e) {
     let cPos = board.getCoordsTopLeftCorner(e);
     let absPos = JXG.getPosition(e);
@@ -20,7 +19,6 @@ function down(e) {
 }
 
 board.on('down', down)
-
 ==
 
 script_solution ==
