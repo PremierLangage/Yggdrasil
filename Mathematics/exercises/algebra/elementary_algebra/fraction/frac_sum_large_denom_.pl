@@ -1,3 +1,10 @@
+# Author: D. Doyen
+# Tags: fractions, algebraic operations, lcm
+# Simplifier une somme de fractions avec de grands dénominateurs
+# Parameters:
+# - terms: nombre de termes
+# 19/7/2021
+
 extends = /model/math/expr.pl
 
 before ==
