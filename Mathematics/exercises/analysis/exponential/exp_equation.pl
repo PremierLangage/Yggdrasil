@@ -1,5 +1,5 @@
 # Author: D. Doyen
-# Tags: exponential, equation
+# Tags: logarithm, exponential equation
 # Résoudre une équation avec exponentielle
 # 19/7/2021
 
