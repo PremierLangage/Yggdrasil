@@ -47,8 +47,9 @@ question ==
 Ecrire l'expression suivante sous la forme  $% \ln(a)%$, où $%a%$ est un nombre.
 ==
 
-input_embed = \ln \left(\MathQuillMathField{ }\right)
-
+embed ==
+\ln \left( # \right)
+==
 wims ==
 
 
