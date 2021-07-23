@@ -19,8 +19,8 @@ for i in range(len(b)):
         a[i]=randint(1,5) 
     f.append('\\frac{ %d }{ %d }' % (a[i],b[i]))
 
-s1=choice("-","+")
-s2=choice("-","+")
+s1=choice(["-","+"])
+s2=choice(["-","+"])
 
 if param['terms']=="2":
     expr='%s %s %s' % (f[0],s1,f[1])
