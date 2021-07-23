@@ -15,7 +15,7 @@ while (denom>100) or (num>100):
 expr=r"\frac{ %d }{ %d } \times \frac{ %d }{ %d } \times \frac{ %d }{ %d }" % (a,b,c,d,e,f)
 ==
 
-text ==
+question ==
 Calculer l'expression $% \displaystyle {{expr}} %$ en l'écrivant sous la forme d'un entier ou d'une fraction irréductible.
 ==
 
