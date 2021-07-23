@@ -1,8 +1,6 @@
 # Author: D. Doyen
-# Tags: exponetial, equation
-# Résoudre uen équation avec exponentielle
-# Parameters:
-# - nbsize: taille des nombres
+# Tags: exponential, equation
+# Résoudre une équation avec exponentielle
 # 19/7/2021
 
 extends = /model/math/expr.pl
