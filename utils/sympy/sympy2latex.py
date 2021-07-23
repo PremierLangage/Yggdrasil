@@ -138,6 +138,7 @@ def latex(expr, **settings):
     """
     Return a LaTeX string for a SymPy object.
     """
+    settings.update({})
     if isinstance(expr, list):
         return [latex(a) for a in expr]
     elif isinstance(expr, str):
