@@ -1,6 +1,10 @@
-extends = /model/math/set.pl
-
+# Author: D. Doyen
+# Tags: trigonometric equation, sinus, cosinus
 # Résoudre une équation trigonométrique
+# 19/7/2021
+
+
+extends = /model/math/set.pl
 
 param.rhs = [0,-1,1]
 
