@@ -9,6 +9,7 @@ param.interval = [(-2*pi,2*pi),(0,2*pi),(-pi,pi)]
 param.interval_type = closed
 
 before ==
+from sympy import solveset, S
 var('x')
 lhs = choice([cos(x),sin(x)])
 rhs =choice(eval(param['rhs']))
