@@ -26,7 +26,7 @@ Ecrire $! \displaystyle {{expr}} !$ sous la forme  $! \exp(a) !$, où $! a !$ es
 ==
 
 embed ==
-\exp{ # }
+\exp \left( # \right)
 ==
 
 
