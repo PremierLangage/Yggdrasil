@@ -2,7 +2,7 @@
 # Tags : fractions
 # 19/8/2020
 
-extends = /model/mathq/expr.pl
+extends = /model/math/expr.pl
 
 before ==
 if param['numbers'] == "small":
@@ -18,15 +18,6 @@ a,b=c*f[0],c*f[1]
 sol=Rational(a,b)
 ==
 
-text ==
+question ==
 Simplifier la fraction $% \displaystyle \frac{ {{a}} }{ {{b}} } %$ en l'écrivant sous la forme d'un entier ou d'une fraction irréductible.
-==
-
-evaluator ==
-score, error = eval_frac(answers['math'], sol)
-feedback = message[error]
-==
-
-solution ==
-La solution est $% \displaystyle {{ sol|latex }} %$.
 ==
