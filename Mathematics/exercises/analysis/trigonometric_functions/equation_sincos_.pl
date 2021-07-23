@@ -1,6 +1,6 @@
 extends = /model/math/set.pl
 
-title = Equation trigonométrique
+# Résoudre une équation trigonométrique
 
 param.rhs = [0,-1,1]
 
@@ -10,9 +10,9 @@ param.interval_type = closed
 
 before ==
 var('x')
-lhs = randitem([cos(x),sin(x)])
-rhs =randitem(eval(param['rhs']))
-a,b=randitem(eval(param['interval']))
+lhs = choice([cos(x),sin(x)])
+rhs =choice(eval(param['rhs']))
+a,b=choice(eval(param['interval']))
 interv=Interval(a,b)
 sol=solveset(lhs-rhs,x,domain=S.Reals).intersect(interv)
 ==
