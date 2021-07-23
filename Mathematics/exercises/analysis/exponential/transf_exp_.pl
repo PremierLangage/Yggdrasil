@@ -21,24 +21,12 @@ elif formula=="exp(p)/exp(q)":
     expr=r"\frac{\exp( %d )}{\exp( %d )}" % (p,q)
 ==
 
-text ==
+question ==
 Ecrire $%\displaystyle {{expr}} %$ sous la forme  $% \exp(a)%$, où $%a%$ est un nombre.
 ==
 
-
-evaluator==
-def ans_eval(strans,sol):
-    try:
-        ans = latex2sympy(strans)
-    except:
-        return (-1,"FailedConversion","Votre réponse n'est pas sous la forme attendue")
-    if type(ans)!=sp.exp:
-        return (-1,"","Votre réponse n'est pas sous la forme attendue")
-    if not equal(ans.args[0],sol):
-        return (0,"","")
-    return (100,"","")
-
-score,_,feedback=ans_eval(input.value,sol)
+embed ==
+\exp{ # }
 ==
 
 wims ==
