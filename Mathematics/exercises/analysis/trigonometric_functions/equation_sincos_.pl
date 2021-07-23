@@ -18,6 +18,8 @@ interv=Interval(a,b)
 sol=FiniteSet(*list(solveset(lhs-rhs,x,domain=S.Reals).intersect(interv)))
 ==
 
+wobracket = True
+
 question ==
 Déterminer la ou les solutions de l'équation $$ {{ lhs|latex }} = {{ rhs|latex }} $$
 sur l'intervalle $! {{ interv|latex }} !$. Quand il y a plusieurs solutions, les séparer par des virgules.
