@@ -1,4 +1,4 @@
-extends = /model/mathinput.pl
+extends = /model/math/expr.pl
 
 title = Transformation d'expressions avec exponentielles
 
