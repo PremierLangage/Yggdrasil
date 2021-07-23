@@ -1,10 +1,14 @@
-extends = /model/math/expr.pl
-
+# Author: D. Doyen
+# Tags: exponential
 # Transformer des expressions avec exponentielle
+# 19/7/2021
+
+
+extends = /model/math/expr.pl
 
 before ==
 p, q = sample([-5,-4,-3,-2,2,3,4,5], 2)
-formula=choice(eval(param['formulas']))
+formula = choice(eval(param['formulas']))
 if formula=="(exp(p))^u":
     u=randint(2,4)
     sol=p*u
