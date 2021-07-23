@@ -441,10 +441,10 @@ for i, cb in enumerate(L):
 note_finale = (100 * max([0, ok - errors])) // (ok + errors)
 
 if not feedback:
-    grade = (note_finale, "Vous avez obtenur la note de "+str(note_finale)+"%<br>")
+    grade = (note_finale, "Vous avez obtenu la note de "+str(note_finale)+"%<br>")
 else:
     if note_finale == 100:
-        grade = (note_finale, "Bravo, vous avez obtenur la note de "+str(note_finale)+"%<br>")
+        grade = (note_finale, "Bravo, vous avez obtenu la note de "+str(note_finale)+"%<br>")
     else:
         grade = (note_finale, "Vous obtenez la note de "+str(note_finale)+"%<br><br>"+fb_err)
 ==
