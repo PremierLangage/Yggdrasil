@@ -25,9 +25,6 @@ question ==
 Ecrire $! \displaystyle {{expr}} !$ sous la forme  $! \exp(a) !$, où $! a !$ est un nombre.
 ==
 
-embed ==
-\exp{ # }
-==
 
 
 
