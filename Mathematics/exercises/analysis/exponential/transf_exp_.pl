@@ -4,7 +4,7 @@ title = Transformation d'expressions avec exponentielles
 
 before ==
 p, q = sampleint(-5,5,[-1,0,1], 2)
-formula=randitem(eval(param['formulas']))
+formula=choice(param['formulas'])
 if formula=="(exp(p))^u":
     u=randint(2,4)
     sol=p*u
