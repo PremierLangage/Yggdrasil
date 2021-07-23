@@ -47,7 +47,7 @@ Fork me please, do not modify me please !
 #****************************************************************************
 # PANNEAU DE CONTROLE ICI
 #****************************************************************************
-title=Notion de fichiers en Unix
+title=Test_Principe_AMC
 questions=@ /AAAA/OCE/ProgC_QCM_1.txt
 nb_question=5
 feedback=True
@@ -114,6 +114,7 @@ nb_volets = min([nb_volets, len(MSQ_lst), 10])
 nb_quest = nb_volets
 q_lst = random.sample(MSQ_lst, nb_volets)
 
+# Partie obscure
 q_mix_item = []
 for q, g, b in q_lst:
     nb_options = random.randint(int(min_options), int(max_options))
