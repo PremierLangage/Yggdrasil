@@ -1,10 +1,12 @@
+# Author: D. Doyen
+# Tags: exponential
+# Transformer des expressions avec logarithme
+# 19/7/2021
+
 extends = /model/math/expr.pl
 
-title = Transformation d'expressions avec logarithmes
-
-
 before ==
-p,q=sampleint(2,5, 2)
+p, q = sample([-5,-4,-3,-2,2,3,4,5], 2)
 formula=choice(eval(param['formulas']))
 if formula=="u*ln(p)":
     u=randint(2,4)
@@ -41,12 +43,9 @@ elif formula=="u*ln(p)-vln(q)":
     expr="%d \ln(%d)+%d \ln(%d)" % (u,p,v,q)
 ==
 
-text ==
+question ==
 Ecrire l'expression suivante sous la forme  $% \ln(a)%$, où $%a%$ est un nombre.
 ==
-
-
-input_prefix = $! {{expr}} = !$
 
 input_embed = \ln \left(\MathQuillMathField{ }\right)
 
