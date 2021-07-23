@@ -3,7 +3,7 @@ extends = /model/math/expr.pl
 title = Transformation d'expressions avec exponentielles
 
 before ==
-p, q = sampleint(-5,5,[-1,0,1], 2)
+p, q = sample([-5,-4,-3,-2,2,3,4,5], 2)
 formula=choice(param['formulas'])
 if formula=="(exp(p))^u":
     u=randint(2,4)
