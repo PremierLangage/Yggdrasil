@@ -14,8 +14,6 @@ f=ln(a*x+b)
 sol = solve_univariate_inequality(a*x+b > 0, x, relational=False)
 ==
 
-latexsettings.ln_notation % true
-
 question ==
 Déterminer l'ensemble de définition (maximal) de la fonction 
 
