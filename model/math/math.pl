@@ -13,7 +13,7 @@
 
 before_scripts % ["mathimport", "headerbefore", "before", "footerbefore", "process"]
 
-latexsettings.ln_notation % false
+latexsettings.ln_notation % true
 
 mathimport ==
 from sympy import E, I, pi, oo
