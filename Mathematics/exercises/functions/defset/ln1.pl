@@ -1,3 +1,8 @@
+# Author: D. Doyen
+# Tags: definition set, logarithm, linear inequality
+# Déterminer l'ensemble de définition (maximal) d'une fonction
+# 19/7/2021
+
 extends = /model/math/interval.pl
 
 before ==
