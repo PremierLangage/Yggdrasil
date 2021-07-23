@@ -1,8 +1,4 @@
-extends = /model/mathquill.pl
-
-title = Simplification d'un produit
-
-lang = fr
+extends = /model/mathq/expr.pl
 
 before ==
 denom=101
