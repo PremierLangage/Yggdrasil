@@ -12,5 +12,5 @@ sol = solve_univariate_inequality(a*x+b > 0, x, relational=False)
 ==
 
 question ==
-Déterminer l'ensemble de définition de la fonction $%f : x \mapsto {{latexf}}%$.
+Déterminer l'ensemble de définition de la fonction $%f : x \mapsto {{ f|latex }}%$.
 ==
