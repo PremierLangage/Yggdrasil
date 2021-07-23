@@ -3,7 +3,6 @@
 # Transformer des expressions avec exponentielle
 # 19/7/2021
 
-
 extends = /model/math/expr.pl
 
 before ==
