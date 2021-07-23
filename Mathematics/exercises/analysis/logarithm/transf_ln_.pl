@@ -1,5 +1,5 @@
 # Author: D. Doyen
-# Tags: exponential
+# Tags: logarithm
 # Transformer des expressions avec logarithme
 # 19/7/2021
 
