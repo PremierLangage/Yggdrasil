@@ -28,11 +28,11 @@ q1,q2,q3=sample([f1,f2,e1],3)
 
 op = choice(param['formulas'])
 
-if op=="add":
+if op=="f+f":
     expr='%s %s %s' % (f1,s1,f2)
-elif op=="mul":
+elif op=="f*f":
     expr='%s \times %s' % (f1,f2)
-elif op=="div":
+elif op=="f/f":
     expr='\\frac{ %s }{ %s }' % (f1,f2)
 elif op=="e+f":
     expr='%s %s %s' % (p1,s1,p2)
