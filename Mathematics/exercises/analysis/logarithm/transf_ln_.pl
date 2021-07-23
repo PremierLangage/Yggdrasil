@@ -44,7 +44,7 @@ elif formula=="u*ln(p)-vln(q)":
 ==
 
 question ==
-Ecrire l'expression suivante sous la forme  $% \ln(a)%$, où $%a%$ est un nombre.
+Ecrire $! \displaystyle {{expr}} !$ sous la forme  $% \ln(a)%$, où $%a%$ est un nombre.
 ==
 
 embed ==
