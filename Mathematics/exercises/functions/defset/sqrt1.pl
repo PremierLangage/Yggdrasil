@@ -1,8 +1,9 @@
-extends = /model/mathinput.pl
+# Author: D. Doyen
+# Tags: definition set, square root, linear inequality
+# Déterminer l'ensemble de définition (maximal) d'une fonction
+# 19/7/2021
 
-title = Ensemble de définition (racine carrée 1)
-
-input.virtualKeyboards = sets
+extends = /model/math/interval.pl
 
 before ==
 a=randint(-6,6,[0,1,-1])
