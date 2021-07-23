@@ -1,6 +1,6 @@
 # Author: D. Doyen
-# Tags: exponential, equation
-# Résoudre une équation avec exponentielle
+# Tags: logarithm, exponential equation
+# Résoudre une équation avec logarithme
 # 19/7/2021
 
 extends = /model/math/expr.pl
