@@ -1,4 +1,4 @@
-extends = /model/mathq/expr.pl
+extends = /model/math/expr.pl
 
 before ==
 from sympy import fraction
