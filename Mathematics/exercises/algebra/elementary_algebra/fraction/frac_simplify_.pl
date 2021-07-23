@@ -1,6 +1,9 @@
-# Author : D. Doyen
-# Tags : fractions
-# 19/8/2020
+# Author: D. Doyen
+# Tags: fractions, irreducible fraction, gcd
+# Simplifier une fraction
+# Parameters:
+# - numbers: taille des nombres
+# 19/7/2021
 
 extends = /model/math/expr.pl
 
