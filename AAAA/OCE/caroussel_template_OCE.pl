@@ -114,7 +114,6 @@ nb_volets = min([nb_volets, len(MSQ_lst), 10])
 nb_quest = nb_volets
 q_lst = random.sample(MSQ_lst, nb_volets)
 
-# Partie obscure
 q_mix_item = []
 for q, g, b in q_lst:
     nb_options = random.randint(int(min_options), int(max_options))
@@ -122,7 +121,6 @@ for q, g, b in q_lst:
     nb_good = random.randint(max([nb_options-len(b), 0]), min([nb_options, len(g)]))
     nb_bad = nb_options - nb_good
     q_mix_item.append([q, random.sample(g, nb_good), random.sample(b, nb_bad)])
-
 
 compo = []
 for q, g, b in q_mix_item:
@@ -149,7 +147,7 @@ def make_rotation_str(nb_quest):
     ans +=  '''<div class="carousel-inner">'''
     return ans
 
-# entêtes du mnaège
+# entêtes du manège
 text += make_rotation_str(nb_quest)
 
 radio0 = CheckboxGroup()
