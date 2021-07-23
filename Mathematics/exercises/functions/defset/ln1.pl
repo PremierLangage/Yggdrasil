@@ -1,4 +1,4 @@
-extends = /model/math/expr.pl
+extends = /model/math/interval.pl
 
 title = Ensemble de définition (logarithme 1)
 
@@ -11,7 +11,7 @@ from sympy.solvers.inequalities import solve_univariate_inequality
 sol = solve_univariate_inequality(a*x+b > 0, x, relational=False)
 ==
 
-text ==
+question ==
 Déterminer l'ensemble de définition de la fonction $%f : x \mapsto {{latexf}}%$.
 ==
 
