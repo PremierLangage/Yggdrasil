@@ -6,7 +6,7 @@
 extends = /model/math/expr.pl
 
 before ==
-p, q = sample([-5,-4,-3,-2,2,3,4,5], 2)
+p, q = sampleint(2,5, 2)
 formula=choice(eval(param['formulas']))
 if formula=="u*ln(p)":
     u=randint(2,4)
