@@ -1,17 +1,15 @@
-extends = /model/mathquill.pl
-
-title = Opérations sur les fractions
+extends = /model/math/expr.pl
 
 before ==
 if param['terms']=="2":
     n=2
-    k=randitem([11,12,13,14,15,16,17,18,19])
+    k=choice([11,12,13,14,15,16,17,18,19])
 if param['terms']=="3":
     n=3
-    k=randitem([7,9,11,13,14,15])
+    k=choice([7,9,11,13,14,15])
 
-a=list_randint(n,2,5)
-b=list_randint_norep(n,2,5)
+a=[randint(2,5) for _ in range(n)]
+b=sampleint(2,5, n)
 f=[]
 for i in range(len(b)):
     b[i]=k*b[i]
@@ -19,8 +17,8 @@ for i in range(len(b)):
         a[i]=randint(1,5) 
     f.append('\\frac{ %d }{ %d }' % (a[i],b[i]))
 
-s1=randitem("-","+")
-s2=randitem("-","+")
+s1=choice("-","+")
+s2=choice("-","+")
 
 if param['terms']=="2":
     expr='%s %s %s' % (f[0],s1,f[1])
@@ -30,22 +28,6 @@ if param['terms']=="3":
 sol = simplify(latex2sympy(expr))
 ==
 
-text ==
+question ==
 Calculer l'expression $% \displaystyle {{expr}}%$ en l'écrivant sous la forme d'un entier ou d'une fraction irréductible.
 ==
-
-
-evaluator ==
-score, error = eval_frac(answers['math'], sol)
-feedback = message[error]
-==
-
-solution ==
-La solution est $! \displaystyle {{ sol|latex }} !$.
-==
-
-
-
-
-
-
