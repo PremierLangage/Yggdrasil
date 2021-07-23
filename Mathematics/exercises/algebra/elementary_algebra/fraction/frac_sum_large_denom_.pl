@@ -1,6 +1,8 @@
 extends = /model/math/expr.pl
 
 before ==
+from math import gcd
+
 if param['terms']=="2":
     n=2
     k=choice([11,12,13,14,15,16,17,18,19])
