@@ -1,6 +1,8 @@
 extends = /model/mathq/expr.pl
 
 before ==
+from sympy import fraction
+
 denom=101
 num=0
 while (denom>100) or (num>100):
