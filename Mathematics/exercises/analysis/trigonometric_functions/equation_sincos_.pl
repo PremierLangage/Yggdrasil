@@ -15,7 +15,7 @@ lhs = choice([cos(x),sin(x)])
 rhs =choice(eval(param['rhs']))
 a,b=choice(eval(param['interval']))
 interv=Interval(a,b)
-sol=solveset(lhs-rhs,x,domain=S.Reals).intersect(interv)
+sol=list(solveset(lhs-rhs,x,domain=S.Reals).intersect(interv))
 ==
 
 question ==
