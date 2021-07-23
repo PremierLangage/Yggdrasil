@@ -1,6 +1,10 @@
-# Author : D. Doyen
-# Tags : fractions
-# 19/8/2020
+# Author: D. Doyen
+# Tags: fractions, algebraic operations
+# Calculer avec les fractions
+# Parameters:
+# - formulas: lists de chaînes indiquant 
+# les types de calculs proposés
+# 19/7/2021
 
 extends = /model/math/expr.pl
 
