@@ -1,6 +1,6 @@
 extends = /model/math/expr.pl
 
-title = Transformation d'expressions avec exponentielles
+# Transformer des expressions avec exponentielle
 
 before ==
 p, q = sample([-5,-4,-3,-2,2,3,4,5], 2)
