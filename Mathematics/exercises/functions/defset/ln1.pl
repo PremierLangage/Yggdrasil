@@ -14,5 +14,5 @@ sol = solve_univariate_inequality(a*x+b > 0, x, relational=False)
 question ==
 Déterminer l'ensemble de définition (maximal) de la fonction 
 
-$$f : x \mapsto {{ f|latex }} $$.
+$$f : x \mapsto {{ f|latex }}.$$
 ==
