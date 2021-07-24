@@ -15,6 +15,7 @@ class CustomLatexPrinter(LatexPrinter):
 
     def __init__(self, settings=None):
         LatexPrinter.__init__(self, settings)
+        self._settings['toto'] = True
 
     def _print_FiniteSet(self, s):
         """
