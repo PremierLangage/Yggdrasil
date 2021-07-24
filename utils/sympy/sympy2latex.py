@@ -12,7 +12,7 @@ class CustomLatexPrinter(LatexPrinter):
 
     def __init__(self, settings=None):
         LatextPrinter.__init__(self, settings)
-        if 'interv_rev_brack' not in settings
+        if 'interv_rev_brack' not in settings:
             self._settings['interv_rev_brack'] = True
         else:
             self._settings['interv_rev_brack'] = settings['interv_rev_brack']
