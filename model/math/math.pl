@@ -13,6 +13,8 @@
 
 before_scripts % ["mathimport", "headerbefore", "before", "footerbefore", "process"]
 
+latexsettings.ln_notation % true
+
 mathimport ==
 from sympy import E, I, pi, oo
 from sympy import sqrt, Abs, sin, cos, tan, exp, ln
