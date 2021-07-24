@@ -13,6 +13,9 @@ class CustomLatexPrinter(LatexPrinter):
         "interv_rev_brack": True
     }
 
+    def __init__(self, settings=None):
+        LatexPrinter.__init__(self, settings)
+
     def _print_FiniteSet(self, s):
         """
         Return a LaTeX code for a FiniteSet object.
