@@ -19,3 +19,5 @@ Déterminer l'ensemble de définition (maximal) de la fonction
 
 $$f : x \mapsto {{ f|latex }}.$$
 ==
+
+latexsettings.interv_rev_brack % false
