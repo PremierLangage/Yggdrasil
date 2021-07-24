@@ -10,8 +10,8 @@ class CustomLatexPrinter(LatexPrinter):
     It overrides some methods and adds some settings.
     """
 
-    def __init__(self, settings=None):
-        LatexPrinter.__init__(self, settings)
+    #def __init__(self, settings=None):
+    #    LatexPrinter.__init__(self, settings)
 
     def _print_FiniteSet(self, s):
         """
