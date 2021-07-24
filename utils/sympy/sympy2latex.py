@@ -87,6 +87,7 @@ class CustomLatexPrinter(LatexPrinter):
             return r"\left\{%s\right\}" % self._print(i.start)
             
         else:
+            self._custom_settings["interv_rev_brack"] = True
             if i.left_open:
                 if self._custom_settings["interv_rev_brack"]:
                     left = ']'
