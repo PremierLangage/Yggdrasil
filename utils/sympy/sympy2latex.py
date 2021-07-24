@@ -9,9 +9,6 @@ class CustomLatexPrinter(LatexPrinter):
     This printer is based on the standard LaTeX Printer.
     It overrides some methods and adds some settings.
     """
-    custom_settings = {
-        "interv_rev_brack": True
-    }
 
     def __init__(self, settings=None):
         LatexPrinter.__init__(self, settings)
@@ -91,7 +88,7 @@ class CustomLatexPrinter(LatexPrinter):
             
         else:
             if i.left_open:
-                if self.custom_settings["interv_rev_brack"]:
+                if self._settings["interv_rev_brack"]:
                     left = ']'
                 else:
                     left = '('
@@ -99,7 +96,7 @@ class CustomLatexPrinter(LatexPrinter):
                 left = '['
     
             if i.right_open:
-                if self.custom_settings["interv_rev_brack"]:
+                if self._settings["interv_rev_brack"]:
                     right = '['
                 else:
                     right = ')'
