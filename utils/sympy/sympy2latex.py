@@ -12,6 +12,7 @@ class CustomLatexPrinter(LatexPrinter):
 
     def __init__(self, settings=None):
         LatextPrinter.__init__(self, settings)
+        self._settings['interv_rev_brack'] = True
 
     def _print_FiniteSet(self, s):
         """
