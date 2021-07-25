@@ -4,8 +4,6 @@
 
 extends = /model/math/interval.pl
 
-title = Résoudre une inéquation produit/quotient
-
 param.type = product
 
 param.bounds = int
