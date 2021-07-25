@@ -39,7 +39,7 @@ sol = factor(P)
 expr = P.expand()
 ==
 
-text ==
+question ==
 Factoriser le polynôme
 $$P(x)= {{ expr|latex }}$$
 en remarquant que $% P( {{ x1 |latex }} )=0 %$.
