@@ -31,7 +31,7 @@ var secOAM = board.create('sector',[O,A,M],{color:'orange'});
 
 question ==
 Quelle est la mesure (en radians) de l'angle $% (\overrightarrow{OA},\overrightarrow{OM}) %$ représenté ci-dessous. 
-<div class="img img-60">
+<div class="img img-40">
 {{ jxg|component }}
 </div>
 ==
