@@ -1,7 +1,4 @@
 extends = /model/jsxgraph/clickpoint.pl
-extends = /model/math/math.pl
-
-title = Cercle trigonométrique
 
 before ==
 lstangle = eval(param['lstangle'])
@@ -32,11 +29,6 @@ script_solution ==
 board.create('point',[{{xsol}}, {{ysol}}],{name:'', color:'green'});
 ==
 
-form==
-<center>
-{{ jxg|component }}
-</center>
-==
 
 script_init4 ==
 var grid = board.create('grid',[],{gridX:0.25,gridY:0.25});
