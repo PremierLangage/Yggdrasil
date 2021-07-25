@@ -4,7 +4,7 @@ checkratsimp = True
 symbol_dict = {'e': E}
 unauthorized_func = []
 equality = ""
-modulo = null
+modulo = 0
 
 evaluator ==
 from ast import literal_eval
