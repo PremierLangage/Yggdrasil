@@ -2,7 +2,7 @@
 # Last update : 10/01/21
 # Keywords : linear systems
 
-extends = /model/mathquill.pl
+extends = /model/math/tuple.pl
 
 title = Système linéaire
 
