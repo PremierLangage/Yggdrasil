@@ -14,6 +14,9 @@ yM=float(sinangle)
 
 jxg.attributes % {"boundingbox": [-1.25, 1.25, 1.25, -1.25], "showNavigation": false, "axis": false, "grid": false}
 
+jinja_keys % ["question", "script", "text", "inputblock", "solution", "prefix"]
+
+
 script ==
 var grid = board.create('grid',[],{gridX:0.25,gridY:0.25});
 var Ox = board.create('axis',[[0,0],[1,0]],{ticks:{visible:false}});
