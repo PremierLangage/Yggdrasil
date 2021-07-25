@@ -7,6 +7,7 @@ extends = /model/math/tuple.pl
 title = Système linéaire
 
 before ==
+from randsympy import randint_matrix_inv
 n = param['size']
 coeffboundA = param['coeffboundA']
 coeffboundB = param['coeffboundB']
