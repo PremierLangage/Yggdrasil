@@ -12,7 +12,7 @@ cosangle=cos(angle).evalf()
 sinangle=sin(angle).evalf()
 xM=float(cosangle)
 yM=float(sinangle)
-sol = 0
+sol = angle
 jxg.setscript(script, globals())
 ==
 
