@@ -4,8 +4,6 @@
 
 extends = /model/math/poly.pl
 
-title = Factorisation
-
 param.degree % 2
 param.roots = int
 param.givenroot = int
