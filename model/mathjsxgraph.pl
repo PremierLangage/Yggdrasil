@@ -15,9 +15,3 @@ text =
 form = 
 
 tplpage =@ /model/basic/template.html
-
-inputblock ==
-<div class="img img-60">
-{{ jxg|component }}
-</div>
-==
