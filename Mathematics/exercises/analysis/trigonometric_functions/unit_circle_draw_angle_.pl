@@ -40,24 +40,3 @@ var A = board.create('point',[1,0],{size:1,name:'A',color:'black',fixed:true});
 var M = board.create('glider',[1,0.5,circle],{size:2,name:'M',color:'red',fixed:false});
 var secOAM = board.create('sector',[O,A,M],{color:'orange'});
 ==
-
-form2 ==
-<div class="img-container">
-{{ jxg|component }}
-</div>
-==
-
-evaluator3 ==
-x, y = jxg.getpoint(name)
-from math import atan2,pi
-if abs((atan2(y,x)-angle)%(2*pi))<0.1:
-    score = 100
-    jxg.addscript(script_solution, globals())
-else:
-    score = 0
-    jxg.addscript(script_solution, globals())
-feedback = ""
-==
-
-
-
