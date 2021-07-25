@@ -6,7 +6,7 @@ param.lstangle = [pi/4,pi/2,3*pi/4,pi,5*pi/4,3*pi/2,7*pi/4]
 
 before ==
 lstangle=eval(param['lstangle'])
-angle=randitem(lstangle)
+angle=choice(lstangle)
 cosangle=cos(angle).evalf()
 sinangle=sin(angle).evalf()
 xM=float(cosangle)
