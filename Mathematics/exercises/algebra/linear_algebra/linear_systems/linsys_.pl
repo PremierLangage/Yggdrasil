@@ -9,6 +9,7 @@ title = Système linéaire
 before ==
 from randsympy import randint_matrix, randint_matrix_inv
 from sympy import linsolve
+from sympy2latex import latex_linsys
 n = param['size']
 coeffboundA = param['coeffboundA']
 coeffboundB = param['coeffboundB']
