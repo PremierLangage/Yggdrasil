@@ -1,4 +1,4 @@
-extends =  unit_circle_read_angle_.pl
+extends =  unit_circle_read_.pl
 extends =  /model/math/expr.pl
 
 question ==
