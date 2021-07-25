@@ -4,8 +4,6 @@
 
 extends = /model/math/interval.pl
 
-title = Résoudre une inéquation linéaire
-
 param.otherside = constant
 
 before ==
@@ -25,6 +23,6 @@ sol=solveset(ineq,x,domain=S.Reals)
 ==
 
 
-text ==
+question ==
 Déterminer l'ensemble des réels $! x !$ tels que $$ {{ ineq|latex }}. $$ Ecrire cet ensemble sous la forme d'un intervalle.
 ==
