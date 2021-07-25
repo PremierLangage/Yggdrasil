@@ -91,7 +91,7 @@ class CustomLatexPrinter(LatexPrinter):
             
         else:
             if i.left_open:
-                if self._settings["interv_rev_brack"]:
+                if self._settings["interv_rev_brack"] == "True":
                     left = ']'
                 else:
                     left = '('
@@ -99,7 +99,7 @@ class CustomLatexPrinter(LatexPrinter):
                 left = '['
     
             if i.right_open:
-                if self._settings["interv_rev_brack"]:
+                if self._settings["interv_rev_brack"] == "True":
                     right = '['
                 else:
                     right = ')'
