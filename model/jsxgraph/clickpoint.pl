@@ -25,6 +25,12 @@ script_solution ==
 board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
 ==
 
+inputblock ==
+<div class="img img-60">
+{{ jxg|component }}
+</div>
+==
+
 evaluator ==
 x, y = jxg.getpoint(ptname)
 from math import hypot
