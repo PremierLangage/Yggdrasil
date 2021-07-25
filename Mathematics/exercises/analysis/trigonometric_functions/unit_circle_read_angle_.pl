@@ -1,4 +1,4 @@
-extends =  jxg_angle_unit_circle.pl
+extends =  unit_circle_read_angle_.pl
 extends =  /model/math/expr.pl
 
 question ==
