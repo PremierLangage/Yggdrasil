@@ -15,7 +15,7 @@ class CustomLatexPrinter(LatexPrinter):
         if 'interv_rev_brack' in settings:
             self._settings['interv_rev_brack'] = settings['interv_rev_brack']
         else:
-            self._settings['interv_rev_brack'] = True
+            self._settings['interv_rev_brack'] = "True"
     
     def _print_FiniteSet(self, s):
         """
