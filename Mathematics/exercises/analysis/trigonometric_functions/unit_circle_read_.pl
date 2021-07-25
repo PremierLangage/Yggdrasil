@@ -9,7 +9,7 @@ cosangle=cos(angle).evalf()
 sinangle=sin(angle).evalf()
 xM=float(cosangle)
 yM=float(sinangle)
-# jxg.setscript(script, globals())
+jxg.setscript(script, globals())
 ==
 
 # jxg.attributes % {"boundingbox": [-1.25, 1.25, 1.25, -1.25], "showNavigation": false, "axis": false, "grid": false}
