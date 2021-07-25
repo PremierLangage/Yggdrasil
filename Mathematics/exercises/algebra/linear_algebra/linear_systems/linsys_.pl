@@ -18,7 +18,7 @@ if 'maxdet' in param:
 else:
     A=randint_matrix_inv(n, coeffboundA,[0],sparsity)
 if param['typesol']=="rat":
-    B=rand_int_matrix(n,1,coeffboundB,[0])
+    B=randint_matrix(n,1,coeffboundB,[0])
 else:
     sol=randint_matrix(n,1,5)
     B=A*sol
