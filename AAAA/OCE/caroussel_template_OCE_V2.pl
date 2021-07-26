@@ -168,7 +168,7 @@ for nb in range (nb_quest):
     text += '''<div class="item active">'''
     text += '''<p><b><u>'''
     text += 'Question ' + str(nb+1) + ListStructQuestion[nb].selector + ListStructQuestion[nb].cid
-    text += '<div>'+q_mix_item[0][0]+'</div><br>'
+    text += '<div>'+q_mix_item[nb][0]+'</div><br>'
     text += f"""<div><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
     # text += list_questions[indices_questions[0]]["html_form"]
     # text += '''</div>'''
