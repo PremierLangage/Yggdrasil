@@ -56,7 +56,7 @@ else:
                 else:
                     del _foo
                     x=random.choice([-10,-2,0,1,32,4,2,41,43,100,4222222])
-                    exec(code)
+                    exec(code.replace('print','_foo_print'))
                     _foo=_foo.strip(string.whitespace)
                     if '_foo' == '':
                         grade = tools.grade_wrong("Il manque probablement un cas") 
