@@ -54,7 +54,7 @@ else:
                 if _foo != 'OK':
                     grade = tools.grade_wrong('Hum... vous affichez ' + _foo + ' pour la valeur x = ' + str(x))
                 else:
-                    del _foo
+                    _foo = ''
                     x=random.choice([-10,-2,0,1,32,4,2,41,43,100,4222222])
                     exec(code.replace('print','_foo_print'))
                     _foo=_foo.strip(string.whitespace)
