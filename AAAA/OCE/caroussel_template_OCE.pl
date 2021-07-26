@@ -48,7 +48,7 @@ Fork me please, do not modify me please !
 # PANNEAU DE CONTROLE ICI
 #****************************************************************************
 title=Test_Principe_AMC
-questions=@ /AAAA/OCE/ProgC_QCM_1.txt
+questions=@ /AAAA/OCE/notion_de_fichier.txt
 nb_question=5
 feedback=True
 min_options=4
