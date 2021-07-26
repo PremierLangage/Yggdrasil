@@ -174,7 +174,7 @@ for nb in range (nb_quest):
     text += '''<p><b><u>'''
     text += 'Question ' + str(nb+1) + '</u></b></p><br>'''
     text += '<div>'+q_mix_item[nb][0]+'</div><br>'
-    text += '<br>'+ str(ListStructQuestion[nb].selector) +'</br>'
+    text += '<br>'+ str(ListStructQuestion[nb].cid) +'</br>'
     text += f"""<div><{ListStructQuestion[nb].selector} cid='{ListStructQuestion[nb].cid}'></{ListStructQuestion[nb].selector}></div>"""
     # text += list_questions[indices_questions[0]]["html_form"]
     text += '''</div>'''
