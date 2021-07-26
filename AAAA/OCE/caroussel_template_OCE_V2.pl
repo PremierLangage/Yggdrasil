@@ -49,7 +49,7 @@ Fork me please, do not modify me please !
 #****************************************************************************
 title=Test_Principe_AMC
 questions=@ /AAAA/OCE/notion_de_fichier.txt
-nb_question=5
+nb_question=1
 feedback=True
 min_options=4
 max_options=8
@@ -164,7 +164,7 @@ for nb in range (nb_quest):
         ListStructQuestion[nb].items.append({"id": "g"+str(i), "content": s})
     for i, s in enumerate(b):
         ListStructQuestion[nb].items.append({"id": "b"+str(i), "content": s})
-    #random.shuffle(ListStructQuestion[nb].items)
+    random.shuffle(ListStructQuestion[nb].items)
 
     # Affichage des questions
     if(nb==0):# Seule la première question est active
