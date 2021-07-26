@@ -164,18 +164,17 @@ for nb in range (0,nb_quest):
     random.shuffle(radio.items)
     ListStructQuestion.append(radio)
 
-    # Construction des questions
-    text += '''<div class="item active">'''
-    text += '''<p><b><u>'''
-    text += 'Question ' + str(nb+1)
-    text += ''': </u></b></p><br>'''
-    text += '<div>'+q_mix_item[nb][0]+'</div><br>'
-    selector=radio.selector
-    cid=radio.cid
-    text += f"""<div><{selector} cid='{cid}'></{selector}></div>"""
-    # text += list_questions[indices_questions[0]]["html_form"]
-    text += '''</div>'''
-    radio=""
+# Construction des questions
+text += '''<div class="item active">'''
+text += '''<p><b><u>'''
+text += 'Question ' + str(nb_quest)
+text += ''': </u></b></p><br>'''
+text += '<div>'+q_mix_item[nb_quest][0]+'</div><br>'
+selector=ListStructQuestion[nb_quest].selector
+cid=ListStructQuestion[nb_quest].cid
+text += f"""<div><{selector} cid='{cid}'></{selector}></div>"""
+# text += list_questions[indices_questions[0]]["html_form"]
+text += '''</div>'''
 
 ==
 
