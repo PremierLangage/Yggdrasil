@@ -25,6 +25,8 @@ tag=fonction
 
 extends= namelist.pl
 
+fname=a
+
 before==
 import re
 from random import choice 
