@@ -53,7 +53,7 @@ printf("Bonjour les L2 maths-info\n");
 
 """
 
-editor1.code = f"""
+editor1.code = """
 print("Bonjour les L2 maths-info")
 """
 
