@@ -45,7 +45,7 @@ else:
             msg = tools.wrong("Le code ne compile pas, il provoque l'erreur suivante : " + str(e))
             grade = 0, msg 
         else:
-            if _foo != "".join([' '+str(i) for i in range(50)]):
+            if _foo != "".join(['\n'+str(i) for i in range(50)]):
                 grade = tools.grade_wrong('Hum... ce n\'est pas bon, vous affichez les nombres suivants : ' + _foo.replace(' ', '\n'))
             else:
                 grade= 100, tools.good('Bonne r&#233;ponse !')
