@@ -135,20 +135,25 @@ for q, g, b in q_mix_item:
 
 #***************************************
 
-#def make_rotation_str(nb_quest):
-#    ans = '''<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" >'''
-#    ans += '''<!-- Indicators -->'''
-#    ans += '''<ol class="carousel-indicators">'''
-#    ans += '''<li data-target="#myCarousel" data-slide-to="0" class="active"></li>'''
-#    for i in range(1, nb_quest):
-#        ans += '<li data-target="#myCarousel" data-slide-to="'+str(i)+'"></li>'
-#    ans +=  '''</ol>'''
-#    ans +=  '''<!-- Wrapper for slides -->'''
-#    ans +=  '''<div class="carousel-inner">'''
-#    return ans
+def make_rotation_str(nb_quest):
+    ans = '''<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" >'''
+    ans += '''<!-- Indicators -->'''
+    ans += '''<ol class="carousel-indicators">'''
+    ans += '''<li data-target="#myCarousel" data-slide-to="0" class="active"></li>'''
+    for i in range(1, nb_quest):
+        ans += '<li data-target="#myCarousel" data-slide-to="'+str(i)+'"></li>'
+    ans +=  '''</ol>'''
+    ans +=  '''<!-- Wrapper for slides -->'''
+    ans +=  '''<div class="carousel-inner">'''
+    return ans
 
 # entêtes du manège
 text += make_rotation_str(nb_quest)
+
+# créer un dictionnaire de nbQuest CheckboxGroup()
+ListStructQuestion=[]
+for in in range nbQuest:
+    ListStructQuestion.append(CheckboxGroup())
 
 radio0 = CheckboxGroup()
 q, g, b = q_mix_item[0]
