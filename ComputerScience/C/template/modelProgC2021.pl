@@ -76,7 +76,7 @@ from random import randint
 nb_attempt=0
 
 # Place here your favorite C compiler
-compiler="clang"
+compiler="gcc"
 # PLace here the compilation flags
 cflags=["-Wall", "-std=c11"]
 # Place here library flags
