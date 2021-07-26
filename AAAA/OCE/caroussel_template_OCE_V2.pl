@@ -153,7 +153,6 @@ text += make_rotation_str(nb_quest)
 # créer une liste de nbQuest CheckboxGroup()
 # Chaque CheckboxGroup() est crée à partir de q_mix_item
 ListStructQuestion=[]
-
 for nb in range (nb_quest):
     ListStructQuestion.append(CheckboxGroup())
 
@@ -165,9 +164,8 @@ for nb in range (nb_quest):
     for i, s in enumerate(b):
         ListStructQuestion[nb].items.append({"id": "b"+str(i), "content": s})
     random.shuffle(ListStructQuestion[nb].items)
-    #ListStructQuestion.append(radio)
 
-    # première question
+    # Affichage des questions question
     if(nb==0):# Seule la première question est active
         text += '''<div class="item active">'''
     else:
