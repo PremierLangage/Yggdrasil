@@ -151,10 +151,31 @@ def make_rotation_str(nb_quest):
 text += make_rotation_str(nb_quest)
 
 # créer un dictionnaire de nbQuest CheckboxGroup()
+# Chaque CheckboxGroup() est crée à partir de q_mix_item
 ListStructQuestion=[]
-for in in range nbQuest:
-    ListStructQuestion.append(CheckboxGroup())
+for nb in range nbQuest:
+    radio = CheckboxGroup()
+    q, g, b = q_mix_item[nb]
+    radio.items = []
+    for i, s in enumerate(g):
+        radio.items.append({"id": "g"+str(i), "content": s})
+    for i, s in enumerate(b):
+        radio.items.append({"id": "b"+str(i), "content": s})
+    random.shuffle(radio.items)
+    ListStructQuestion.append(radio)
 
+    # Construction des questions
+    text += '''<div class="item active">'''
+    text += '''<p><b><u>'''
+    text += 'Question ' + str(nb+1)
+    text += ''': </u></b></p><br>'''
+    text += '<div>'+q_mix_item[nb][0]+'</div><br>'
+    text += f"""<div><{"""
+    text += 'radio'+nb+'.selector} cid='{radio0.cid}'></{radio0.selector}></div>"""
+    # text += list_questions[indices_questions[0]]["html_form"]
+    text += '''</div>'''
+
+######## Ancien
 radio0 = CheckboxGroup()
 q, g, b = q_mix_item[0]
 radio0.items = []
