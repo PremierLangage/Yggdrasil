@@ -164,7 +164,7 @@ for nb in range (nb_quest):
         ListStructQuestion[nb].items.append({"id": "g"+str(i), "content": s})
     for i, s in enumerate(b):
         ListStructQuestion[nb].items.append({"id": "b"+str(i), "content": s})
-    random.shuffle(ListStructQuestion[nb].items)
+    #random.shuffle(ListStructQuestion[nb].items)
 
     # Affichage des questions
     if(nb==0):# Seule la première question est active
