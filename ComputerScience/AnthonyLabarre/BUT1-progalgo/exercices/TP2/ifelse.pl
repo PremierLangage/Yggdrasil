@@ -43,7 +43,7 @@ else:
         try:
             x=42
             exec(code.replace('print','_foo_print'))
-            print(_foo, file=sys.stderr) 
+            _foo=_foo.strip(string.whitespace)
         except Exception as e:
             msg = tools.wrong("Le code ne compile pas, il provoque l'erreur suivante : " + str(e))
             grade = 0, msg 
@@ -56,8 +56,8 @@ else:
                 else:
                     del _foo
                     x=random.choice([-10,-2,0,1,32,4,2,41,43,100,4222222])
-                    print(_foo, file=sys.stderr) 
                     exec(code2)
+                    _foo=_foo.strip(string.whitespace)
                     if '_foo' == '':
                         grade = tools.grade_wrong("Il manque probablement un cas") 
                     else:
