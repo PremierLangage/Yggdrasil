@@ -49,7 +49,7 @@ Fork me please, do not modify me please !
 #****************************************************************************
 title=Test_Principe_AMC
 questions=@ /AAAA/OCE/notion_de_fichier.txt
-nb_question=1
+nb_question=2
 feedback=True
 min_options=4
 max_options=8
