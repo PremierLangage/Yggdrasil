@@ -42,13 +42,13 @@ else:
     else: 
         try:
             exec(code.replace('print','_foo_print'))
-            #print("debug : " + _foo, file=sys.stderr) 
         except Exception as e:
             msg = tools.wrong("Le code ne compile pas, il provoque l'erreur suivante : " + str(e))
             grade = 0, msg 
         else:
             if _foo.strip(string.whitespace) != "\n".join([str(i) for i in range(50)]):
                 grade = tools.grade_wrong('Hum... ce n\'est pas bon, vous affichez les nombres suivants : ' + _foo)
+                print("debug : " + _foo, file=sys.stderr) 
             else:
                 grade= 100, tools.good('Bonne r&#233;ponse !')
 ==
