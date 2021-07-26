@@ -173,6 +173,7 @@ for nb in range (nb_quest):
     #text += f"""<div><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
     # text += list_questions[indices_questions[0]]["html_form"]
     text += '</div>'
+    print(radio.selector)
 
 ######## Ancien
 radio0 = CheckboxGroup()
