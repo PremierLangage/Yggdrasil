@@ -26,7 +26,7 @@ import tools # fonctions auxiliaires
 
 _foo = ''
 
-def _foo_print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
+def _foo_print(*objects, sep=' ', end='*', file=sys.stdout, flush=False):
     global _foo
     _foo += sep.join(map(str,objects)) + end
 
