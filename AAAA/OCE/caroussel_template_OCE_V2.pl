@@ -167,7 +167,7 @@ for nb in range (nb_quest):
     # Construction des questions
     # première question
     text += '''<div class="item active">'''
-    text += '<p><b><u>'+radio.selector+'Question 1 : </u></b></p><br>'
+    text += '<p><b><u>'+radio.selector+ radio.cid+'Question 1 : </u></b></p><br>'
     text += '<div>'+q_mix_item[nb][0]+'</div><br>'
     text += '<div><'+radio.selector+ 'cid='+radio.cid+'></'+radio.selector+'></div>'
     #text += f"""<div><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
