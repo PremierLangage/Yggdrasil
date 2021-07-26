@@ -162,7 +162,7 @@ for nb in range (nb_quest):
     for i, s in enumerate(b):
         radio.items.append({"id": "b"+str(i), "content": s})
     random.shuffle(radio.items)
-    ListStructQuestion.append(radio)
+    #ListStructQuestion.append(radio)
 
     # première question
     if(nb==0):# Seule la première question est active
