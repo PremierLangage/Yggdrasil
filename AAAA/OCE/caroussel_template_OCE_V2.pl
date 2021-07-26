@@ -162,14 +162,15 @@ for nb in range (nb_quest):
     for i, s in enumerate(b):
         radio.items.append({"id": "b"+str(i), "content": s})
     random.shuffle(radio.items)
-    #ListStructQuestion.append(radio)
+    ListStructQuestion.append(radio)
 
     # Construction des questions
     # première question
     text += '''<div class="item active">'''
     text += '<p><b><u>Question 1 : </u></b></p><br>'
     text += '<div>'+q_mix_item[nb][0]+'</div><br>'
-    text += f"""<div><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
+    text += '<div><'+radio.selector+ 'cid='+radio.cid+'></'+radio.selector+'></div>'
+    #text += f"""<div><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
     # text += list_questions[indices_questions[0]]["html_form"]
     text += '</div>'
 
