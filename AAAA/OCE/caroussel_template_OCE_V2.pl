@@ -139,26 +139,21 @@ def make_rotation_str(nb_quest):
 # entêtes du manège
 text += make_rotation_str(nb_quest)
 
-# créer en amont une liste de nbQuest CheckboxGroup()
-# obligatoire pour utiliser les CID
-ListStructQuestion=[]
-radio = CheckboxGroup()
-radio.items = []
-L = [radio]
-for Q in range (1,nb_quest):
-    radio = CheckboxGroup()
-    radio.items = []
-    ListStructQuestion.append(radio)
-
+# créer un dictionnaire de nbQuest CheckboxGroup()
 # Chaque CheckboxGroup() est crée à partir de q_mix_item
+ListStructQuestion=[]
 for nb in range (nb_quest):
+    radio = CheckboxGroup()
     q, g, b = q_mix_item[nb]
+    radio.items = []
     for i, s in enumerate(g):
-        ListStructQuestion[nb].items.append({"id": "g"+str(i), "content": s})
+        radio.items.append({"id": "g"+str(i), "content": s})
     for i, s in enumerate(b):
-        ListStructQuestion[nb].items.append({"id": "b"+str(i), "content": s})
-    random.shuffle(ListStructQuestion[nb].items)
+        radio.items.append({"id": "b"+str(i), "content": s})
+    random.shuffle(radio.items)
 
+    # text += list_questions[indices_questions[0]]["html_form"]
+    # text += '''</div>'''
     # Affichage des questions
     if(nb==0):# Seule la première question est active
         text += '''<div class="item active">'''
@@ -168,10 +163,10 @@ for nb in range (nb_quest):
     text += 'Question ' + str(nb+1) + '</u></b></p><br>'''
     text += '<div>'+q_mix_item[nb][0]+'</div><br>'
     #text += '<br>'+ str(ListStructQuestion[nb].cid) +'</br>'
-    text += f"""<div><{ListStructQuestion[nb].selector} cid='{ListStructQuestion[nb].cid}'></{ListStructQuestion[nb].selector}></div>"""
+    text += f"""<div><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
     # text += list_questions[indices_questions[0]]["html_form"]
     text += '''</div>'''
-
+    ListStructQuestion.append(radio)
 ==
 
 
