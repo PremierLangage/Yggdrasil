@@ -22,6 +22,7 @@ evaluator== #|python|
 import random
 import sys 
 import re
+import string
 import tools # fonctions auxiliaires
 
 _foo = ''
