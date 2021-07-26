@@ -153,7 +153,6 @@ text += make_rotation_str(nb_quest)
 # créer une liste de nbQuest CheckboxGroup()
 # Chaque CheckboxGroup() est crée à partir de q_mix_item
 ListStructQuestion=[]
-radio =""
 for nb in range (nb_quest):
     radio = CheckboxGroup()
     q, g, b = q_mix_item[nb]
@@ -167,9 +166,10 @@ for nb in range (nb_quest):
 
 # première question
 text += '''<div class="item active">'''
-text += '''<p><b><u>Question 1 : </u></b></p><br>'''
+text += '''<p><b><u>'''
+text += 'Question ' + ListStructQuestion[0]
 text += '<div>'+q_mix_item[0][0]+'</div><br>'
-text += f"""<div><{radio.selector} cid='{radio.cid}'></{ListStructQuestion[0].selector}></div>"""
+text += f"""<div><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
 # text += list_questions[indices_questions[0]]["html_form"]
 text += '''</div>'''
 
