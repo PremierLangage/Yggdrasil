@@ -172,6 +172,8 @@ text += f"""<div><{radio0.selector} cid='{radio0.cid}'></{radio0.selector}></div
 # text += list_questions[indices_questions[0]]["html_form"]
 text += '''</div>'''
 
+ListStructQuestion.append(radio0)
+
 for nb in range (1,nb_quest):
     radio = CheckboxGroup()
     q, g, b = q_mix_item[nb]
