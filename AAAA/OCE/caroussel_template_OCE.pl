@@ -170,8 +170,7 @@ for nb in range nbQuest:
     text += 'Question ' + str(nb+1)
     text += ''': </u></b></p><br>'''
     text += '<div>'+q_mix_item[nb][0]+'</div><br>'
-    text += f"""<div><{"""
-    text += 'radio'+nb+'.selector} cid=''{radio'+nb+'.cid}''></{radio0.selector}></div>"""
+    text += f"""<div><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
     # text += list_questions[indices_questions[0]]["html_form"]
     text += '''</div>'''
 
@@ -463,6 +462,7 @@ for i, cb in enumerate(L):
     if not q_ok:
         fb_err += fb_q+"</ul>"
 
+# A expliquer le calcul de la note
 note_finale = (100 * max([0, ok - errors])) // (ok + errors)
 
 if not feedback:
