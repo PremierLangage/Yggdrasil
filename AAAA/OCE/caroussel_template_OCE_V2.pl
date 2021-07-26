@@ -150,12 +150,13 @@ def make_rotation_str(nb_quest):
 # entêtes du manège
 text += make_rotation_str(nb_quest)
 
-# créer une liste de nbQuest CheckboxGroup()
-# Chaque CheckboxGroup() est crée à partir de q_mix_item
+# créer en amont une liste de nbQuest CheckboxGroup()
+# obligatoire pour utiliser les CID
 ListStructQuestion=[]
 for nb in range (nb_quest):
     ListStructQuestion.append(CheckboxGroup())
 
+# Chaque CheckboxGroup() est crée à partir de q_mix_item
 for nb in range (nb_quest):
     q, g, b = q_mix_item[nb]
     ListStructQuestion[nb].items=[]
@@ -165,7 +166,7 @@ for nb in range (nb_quest):
         ListStructQuestion[nb].items.append({"id": "b"+str(i), "content": s})
     random.shuffle(ListStructQuestion[nb].items)
 
-    # Affichage des questions question
+    # Affichage des questions
     if(nb==0):# Seule la première question est active
         text += '''<div class="item active">'''
     else:
