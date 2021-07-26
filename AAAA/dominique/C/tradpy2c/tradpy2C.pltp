@@ -24,8 +24,8 @@ Quelque remarques:
 1) il faut déclarer toutes les variables que l'on utilise (et il est préférable de les initaliser).  
 2) les fonctions printf et scanf utilise un format ou l'on doit indiquer le type des variables suivantes. 
 3) les instructions se terminent toutes par un ; (point virgule).  
-4) les blocs d'instruction sont matérialisés par des accolades.  
-5) l'intendation n'a pas de valeur syntaxique mais la politesse indique qu'il faut respecter l'indentation.
+4) les blocs d'instructions sont matérialisés par des accolades.  
+5) l'intendation n'a pas de valeur syntaxique mais les règles de politesse indiquent qu'il faut respecter l'indentation.
  Le compilateur se pleindra si votre indentation est sujette à caution.  
 
 
