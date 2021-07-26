@@ -143,8 +143,9 @@ text += make_rotation_str(nb_quest)
 # obligatoire pour utiliser les CID
 ListStructQuestion=[]
 for Q in range (nb_quest):
-    ListStructQuestion.append(CheckboxGroup())
-    ListStructQuestion[Q].items=[]
+    radio = CheckboxGroup()
+    radio.items = []
+    ListStructQuestion.append(radio)
 
 # Chaque CheckboxGroup() est crée à partir de q_mix_item
 for nb in range (nb_quest):
