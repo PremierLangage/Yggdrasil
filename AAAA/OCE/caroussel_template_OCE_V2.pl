@@ -146,6 +146,7 @@ for Q in range (nb_quest):
     radio = CheckboxGroup()
     radio.items = []
     ListStructQuestion.append(radio)
+    radio=""
 
 # Chaque CheckboxGroup() est crée à partir de q_mix_item
 for nb in range (nb_quest):
