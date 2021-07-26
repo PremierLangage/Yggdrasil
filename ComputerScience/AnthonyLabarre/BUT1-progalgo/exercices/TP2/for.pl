@@ -47,8 +47,8 @@ else:
             grade = 0, msg 
         else:
             if _foo.strip(string.whitespace) != "\n".join([str(i) for i in range(50)]):
-                grade = tools.grade_wrong('Hum... ce n\'est pas bon, vous affichez les nombres suivants : ' + _foo)
-                print("debug : " + _foo, file=sys.stderr) 
+                grade = tools.grade_wrong("Hum... ce n'est pas bon, vous obtenez l'affichage suivant : ")
+                print(_foo, file=sys.stderr) 
             else:
                 grade= 100, tools.good('Bonne r&#233;ponse !')
 ==
