@@ -11,7 +11,7 @@ Test et affichage
 ==
 
 text== #|html|
-Affichez les entiers de 0 a 49, un par ligne.
+Affichez les entiers de 0 a 19, un par ligne.
 ==
 
 #un éditeur simple, fond blanc, pas de chois de langage
@@ -46,7 +46,7 @@ else:
             msg = tools.wrong("Le code ne compile pas, il provoque l'erreur suivante : " + str(e))
             grade = 0, msg 
         else:
-            if _foo.strip(string.whitespace) != "\n".join([str(i) for i in range(50)]):
+            if _foo.strip(string.whitespace) != "\n".join([str(i) for i in range(20)]):
                 grade = tools.grade_wrong("Hum... ce n'est pas bon, vous obtenez l'affichage suivant : ")
                 print(_foo, file=sys.stderr) 
             else:
