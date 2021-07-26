@@ -171,7 +171,7 @@ for nb in range (nb_quest):
     text += '<div>'+q_mix_item[nb][0]+'</div><br>'
     text += f"""<div><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
     # text += list_questions[indices_questions[0]]["html_form"]
-    # text += '''</div>'''
+    text += '''</div>'''
 
 ==
 
