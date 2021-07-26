@@ -26,7 +26,7 @@ import tools # fonctions auxiliaires
 
 _foo = ''
 
-def _foo_print(*objects, sep=' ', end='*', file=sys.stdout, flush=False):
+def _foo_print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
     global _foo
     _foo += sep.join(map(str,objects)) + end
 
@@ -45,7 +45,7 @@ else:
             msg = tools.wrong("Le code ne compile pas, il provoque l'erreur suivante : " + str(e))
             grade = 0, msg 
         else:
-            if _foo != "".join(['\n'+str(i) for i in range(50)]):
+            if _foo != "".join(['\n'+str(i) for i in range(50)])+\'n':
                 grade = tools.grade_wrong('Hum... ce n\'est pas bon, vous affichez les nombres suivants : ' + _foo)
             else:
                 grade= 100, tools.good('Bonne r&#233;ponse !')
