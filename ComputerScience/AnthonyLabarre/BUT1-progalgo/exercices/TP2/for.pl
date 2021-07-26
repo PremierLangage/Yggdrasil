@@ -42,6 +42,7 @@ else:
     else: 
         try:
             exec(code.replace('print','_foo_print'))
+            print("debug : " + _foo, file=sys.stderr) 
         except Exception as e:
             msg = tools.wrong("Le code ne compile pas, il provoque l'erreur suivante : " + str(e))
             grade = 0, msg 
