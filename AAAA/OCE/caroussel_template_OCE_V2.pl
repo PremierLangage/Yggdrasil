@@ -144,6 +144,7 @@ text += make_rotation_str(nb_quest)
 ListStructQuestion=[]
 for nb in range (nb_quest):
     radio = CheckboxGroup()
+    ListStructQuestion.append(radio)
     q, g, b = q_mix_item[nb]
     radio.items = []
     for i, s in enumerate(g):
@@ -164,7 +165,6 @@ for nb in range (nb_quest):
     text += f"""<div><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
     # text += list_questions[indices_questions[0]]["html_form"]
     text += '''</div>'''
-    ListStructQuestion.append(radio)
 ==
 
 
