@@ -174,7 +174,7 @@ text += '''</div>'''
 
 ListStructQuestion.append(radio0)
 
-for nb in range (1,nb_quest):
+for nb in range (1,nb_volets):
     radio = CheckboxGroup()
     q, g, b = q_mix_item[nb]
     radio.items = []
@@ -270,26 +270,6 @@ fb_err += '<span style="color:darkgreen">En vert</span> les bonnes réponses non
 fb_err += '<span style="color:darkred"><strike>En rouge barré</strike></span> les mauvaises réponses selectionnées<br><br>'
 errors=0
 ok=0
-
-L = [radio0]
-if nb_quest >= 2:
-    L.append(radio1)
-if nb_quest >= 3:
-    L.append(radio2)
-if nb_quest >= 4:
-    L.append(radio3)
-if nb_quest >= 5:
-    L.append(radio4)
-if nb_quest >= 6:
-    L.append(radio5)
-if nb_quest >= 7:
-    L.append(radio6)
-if nb_quest >= 8:
-    L.append(radio7)
-if nb_quest >= 9:
-    L.append(radio8)
-if nb_quest >= 10:
-    L.append(radio9)
 
 for i, cb in enumerate(ListStructQuestion):
     fb_q = '<span style="color:black">'+q_mix_item[i][0]+'</span><ul>'
