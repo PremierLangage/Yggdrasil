@@ -165,8 +165,10 @@ for nb in range (nb_quest):
     ListStructQuestion.append(radio)
 
     # première question
-    if(nb==0):
+    if(nb==0):# Seule la première question est active
         text += '''<div class="item active">'''
+    else:
+        text += '''<div class="item">'''
     text += '''<p><b><u>'''
     text += 'Question ' + str(nb+1) + ListStructQuestion[nb].selector + ListStructQuestion[nb].cid
     text += '<div>'+q_mix_item[nb][0]+'</div><br>'
