@@ -175,6 +175,7 @@ for nb in range (0,nb_quest):
     text += f"""<div><{selector} cid='{cid}'></{selector}></div>"""
     # text += list_questions[indices_questions[0]]["html_form"]
     text += '''</div>'''
+    radio=""
 
 ==
 
