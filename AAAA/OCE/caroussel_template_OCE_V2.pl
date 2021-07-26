@@ -122,17 +122,6 @@ for q, g, b in q_lst:
     nb_bad = nb_options - nb_good
     q_mix_item.append([q, random.sample(g, nb_good), random.sample(b, nb_bad)])
 
-compo = []
-for q, g, b in q_mix_item:
-    CG = CheckboxGroup()
-    CG.items = []
-    for i, s in enumerate(g):
-        CG.items.append({"id": "g"+str(i), "content": s})
-    for i, s in enumerate(b):
-        CG.items.append({"id": "b"+str(i), "content": s})
-    random.shuffle(CG.items)
-    compo.append(CG)
-
 #***************************************
 
 def make_rotation_str(nb_quest):
@@ -155,11 +144,11 @@ text += make_rotation_str(nb_quest)
 ListStructQuestion=[]
 for Q in range (nb_quest):
     ListStructQuestion.append(CheckboxGroup())
+    ListStructQuestion[Q].items=[]
 
 # Chaque CheckboxGroup() est crée à partir de q_mix_item
 for nb in range (nb_quest):
     q, g, b = q_mix_item[nb]
-    ListStructQuestion[nb].items=[]
     for i, s in enumerate(g):
         ListStructQuestion[nb].items.append({"id": "g"+str(i), "content": s})
     for i, s in enumerate(b):
