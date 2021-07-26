@@ -140,7 +140,7 @@ def make_rotation_str(nb_quest):
     ans += '''<!-- Indicators -->'''
     ans += '''<ol class="carousel-indicators">'''
     ans += '''<li data-target="#myCarousel" data-slide-to="0" class="active"></li>'''
-    for i in range(0, nb_quest):
+    for i in range(1, nb_quest):
         ans += '<li data-target="#myCarousel" data-slide-to="'+str(i)+'"></li>'
     ans +=  '''</ol>'''
     ans +=  '''<!-- Wrapper for slides -->'''
