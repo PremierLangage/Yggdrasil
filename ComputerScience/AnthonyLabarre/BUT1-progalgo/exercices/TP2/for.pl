@@ -28,7 +28,7 @@ _foo = ''
 
 def _foo_print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
     global _foo
-    _foo += sep.join(objects) + end
+    _foo += sep.join(map(str,objects)) + end
 
 code = response['answer']
 
