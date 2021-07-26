@@ -164,14 +164,14 @@ for nb in range (nb_quest):
     random.shuffle(radio.items)
     ListStructQuestion.append(radio)
 
-# première question
-text += '''<div class="item active">'''
-text += '''<p><b><u>'''
-text += 'Question ' + ListStructQuestion[0].selector
-text += '<div>'+q_mix_item[0][0]+'</div><br>'
-text += f"""<div><{radio.selector} cid='{radio.cid}'></{ListStructQuestion[0].selector}></div>"""
-# text += list_questions[indices_questions[0]]["html_form"]
-text += '''</div>'''
+    # première question
+    text += '''<div class="item active">'''
+    text += '''<p><b><u>'''
+    text += 'Question ' + ListStructQuestion[0].selector + ListStructQuestion[0].cid
+    text += '<div>'+q_mix_item[0][0]+'</div><br>'
+    text += f"""<div><{radio.selector} cid='{radio.cid}'></{ListStructQuestion[0].selector}></div>"""
+    # text += list_questions[indices_questions[0]]["html_form"]
+    text += '''</div>'''
 
 ######## Ancien
 radio0 = CheckboxGroup()
