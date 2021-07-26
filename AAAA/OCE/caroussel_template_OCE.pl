@@ -153,7 +153,7 @@ text += make_rotation_str(nb_quest)
 # créer un dictionnaire de nbQuest CheckboxGroup()
 # Chaque CheckboxGroup() est crée à partir de q_mix_item
 ListStructQuestion=[]
-for nb in range nbQuest:
+for nb in range (nbQuest):
     radio = CheckboxGroup()
     q, g, b = q_mix_item[nb]
     radio.items = []
