@@ -52,7 +52,7 @@ openbrace = '\n{\n'
 closebrace = '\n}\n'
 
 solution= f"""
-printf("Bonjour les L2 maths-info\n")
+printf("Bonjour les L2 maths-info\n");
 
 """
 
