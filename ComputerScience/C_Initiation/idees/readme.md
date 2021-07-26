@@ -30,3 +30,5 @@ def changes(amount, coins):
     
 
 
+/ComputerScience/OperatingSystem/exercises/MCQ/commandes_terminal_MCQ.pl
+
