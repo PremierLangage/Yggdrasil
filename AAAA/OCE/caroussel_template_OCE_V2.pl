@@ -167,7 +167,8 @@ for nb in range (nb_quest):
     # Construction des questions
     # première question
     text += '''<div class="item active">'''
-    text += '''<p><b><u>Question 1 : </u></b></p><br>'''
+    text += '''<p><b><u>'''
+    text += 'Question ' + str(nb+1)
     text += '<div>'+q_mix_item[nb][0]+'</div><br>'
     text += f"""<div><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
     # text += list_questions[indices_questions[0]]["html_form"]
@@ -440,7 +441,7 @@ if nb_quest >= 9:
 if nb_quest >= 10:
     L.append(radio9)
 
-for i, cb in enumerate(L):
+for i, cb in enumerate(ListStructQuestion):
     fb_q = '<span style="color:black">'+q_mix_item[i][0]+'</span><ul>'
     q_ok = True
     for item in cb.items:
