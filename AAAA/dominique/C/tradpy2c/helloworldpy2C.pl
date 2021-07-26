@@ -48,7 +48,7 @@ import random
 prime= random.sample([2,3,5,7,11,13],2)
 
 
-solution= f"""
+solution= """
 printf("Bonjour les L2 maths-info\n");
 
 """
