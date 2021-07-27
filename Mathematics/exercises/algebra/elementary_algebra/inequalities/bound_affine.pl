@@ -11,7 +11,7 @@ from sympy2latex import latex_chainineq
 var('x')
 a = randint(-3, 3, [0])
 b = randint(-8, 8, [0])
-x1, x2 = sampleint(-5, 5, 2).sort()
+x1, x2 = sorted(sampleint(-5, 5, 2))
 interv = choice([Interval.Lopen(x1, x2), Interval.Ropen(x1, x2)])
 expr = a*x+b
 
