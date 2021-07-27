@@ -1,5 +1,7 @@
 extends = /model/math/input.pl
 
+jinja_keys % ["question", "text", "inputblock", "solution", "prefix", "embed"]
+
 before ==
 from sympy import S, solveset, Intersection
 
