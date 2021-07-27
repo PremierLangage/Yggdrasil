@@ -21,6 +21,7 @@ embed ==
 ==
 
 evaluator ==
+from evalsympy import eval_chainineq
 score, error = eval_chainineq(answers['math'], sol)
 feedback = message['error']
 ==
