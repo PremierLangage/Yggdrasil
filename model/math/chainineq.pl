@@ -21,7 +21,7 @@ embed ==
 ==
 
 evaluator ==
-from sympy2latex import sympy2latex
+from latex2sympy import latex2sympy
 from sympy import S, solveset, Intersection
 b1, b2 = answers['math'].split(',')
 try:
