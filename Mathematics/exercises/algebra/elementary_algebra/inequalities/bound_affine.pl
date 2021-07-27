@@ -11,7 +11,7 @@ from sympy2latex import latex_chainineq
 var('x')
 a = randint(-3, 3, [0])
 b = randint(-8, 8, [0])
-x1, x2 = sampleint(-5, 5).sort()
+x1, x2 = sampleint(-5, 5, 2).sort()
 interv = Interval(x1, x2)
 expr = a*x+b
 interv.left_open = choice([True, False])
