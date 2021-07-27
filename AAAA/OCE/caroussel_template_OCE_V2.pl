@@ -143,6 +143,7 @@ text += make_rotation_str(nb_quest)
 ListStructQuestion=[]
 for check in range(nb_quest):
     ListStructQuestion.append(CheckboxGroup())
+    ListStructQuestion[nb].items=[]
 
 radio = CheckboxGroup()
 
@@ -157,8 +158,6 @@ for nb in range (nb_quest):
         ListStructQuestion[nb].items.append({"id": "b"+str(i), "content": s})
     random.shuffle(radio.items)
     
-
-for nb in range (nb_quest):
     # autre boucle pour la constitution du texte
     # Affichage des questions
     if(nb==0):# Seule la première question est active
@@ -169,7 +168,7 @@ for nb in range (nb_quest):
     text += 'Question ' + str(nb+1) + '</u></b></p><br>'''
     text += '<div>'+q_mix_item[nb][0]+'</div><br>'
     # text += '<br>'+ str(radio.cid) +'</br>'
-    text += f"""<div><{ListStructQuestion[nb].selector} cid='{ListStructQuestion[nb].cid}'></{ListStructQuestion[nb].selector}></div>"""
+    text += f"""<div><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
     # text += list_questions[indices_questions[0]]["html_form"]
     text += '''</div>'''
 ==
