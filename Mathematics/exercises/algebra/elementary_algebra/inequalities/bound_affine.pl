@@ -14,10 +14,11 @@ b = randint(-8, 8, [0])
 x1, x2 = 3, 5
 interv = Interval(x1, x2)
 expr = a*x+b
-interv.left_open = choice([True, False])
-interv.right_open = choice([True, False])
 
 
+sol = imageset(x, a*x+b, interv) 
+
+ineq = latex_chainineq(x, interv) 
 ==
 
 
