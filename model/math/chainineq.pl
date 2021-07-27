@@ -26,11 +26,10 @@ from sympy import S, solveset, Intersection, var
 var('x')
 b1, b2 = answers['math'].split(',')
 
-try:
-    S1 = solveset(latex2sympy(b1 + ' x'),x,domain=S.Reals))
-    S2 = solveset(latex2sympy('x ' + b2),x,domain=S.Reals))
-except:
-    pass
+
+S1 = solveset(latex2sympy(b1 + ' x'),x,domain=S.Reals))
+S2 = solveset(latex2sympy('x ' + b2),x,domain=S.Reals))
+
 
 feedback = str(Intersection(S1, S2))
 score = -1
