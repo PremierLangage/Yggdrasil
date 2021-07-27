@@ -10,11 +10,13 @@ from sympy import imageset
 var('x')
 a = randint(-3,3,[0])
 b = randint(-8,8,[0])
+interv = Interval(x1, x2)
+interv.left_open = choice([True, False])
+interv.right_open = choice([True, False])
 
+sol = imageset(x, a*x+b, interv) 
 
-sol = imageset(x, a*x+b, Interval(x1, x2)) 
-
-ineq = " ".join(latex([x1, s1, x, s2, x2]))
+ineq = latex_chainineq(x, interv) 
 expr = a*x+b
 ==
 
