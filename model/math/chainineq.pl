@@ -23,7 +23,6 @@ embed ==
 evaluator ==
 from evalsympy import eval_chainineq
 from sympy2latex import latex_chainineq
-sol_chainineq = latex_chainineq(expr, sol) 
 score, error = eval_chainineq(answers['math'], sol)
 feedback = message[error]
 ==
