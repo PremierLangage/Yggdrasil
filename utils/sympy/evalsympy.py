@@ -826,8 +826,8 @@ def eval_chainineq(strans, sol):
         return (-1, "NotChainIneq")
         try:
             ans = strans.split(',')
-            S1 = sp.solveset(latex2sympy(ans[1] + ' x'),x,domain=sp.S.Reals)
-            S2 = sp.solveset(latex2sympy('x ' + ans[0]),x,domain=sp.S.Reals)
+            S1 = sp.solve_univariate_inequality(latex2sympy(ans[1] + ' x'),x,False)
+            S2 = sp.solve_univariate_inequality(latex2sympy('x ' + ans[0]),x,False)
             ans = sp.Intersection(S1, S2)
         except:
             return (-1, "NotChainIneq")
