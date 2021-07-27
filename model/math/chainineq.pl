@@ -1,6 +1,4 @@
-extends = /model/math/interval.pl
-
-title = Résoudre un système d'inéquations linéaires
+extends = /model/math/input.pl
 
 before ==
 from sympy import S, solveset, Intersection
