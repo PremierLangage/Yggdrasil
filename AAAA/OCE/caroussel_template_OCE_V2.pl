@@ -159,14 +159,14 @@ for indice in range(len(q_mix_item)):
         text += f"""
                 <div class="item active">
                 <p style="margin-left:15%; margin-right:15%;"><b><u>Question {indice+1} : </u></b></p><br>
-                <div style="margin-left:15%; margin-right:15%;">{list_questions[indice][0]}</div>
+                <div style="margin-left:15%; margin-right:15%;">{q_mix_item[indice][0]}</div>
                 <div style="margin-left:15%; margin-right:15%;">\n<{ListStructQuestion[indice].selector} cid='{ListStructQuestion[indice].cid}'></{ListStructQuestion[indice].selector}></div>
                 <br><br><br><br></div>"""
     else:
         text += f"""
                 <div class="item">
                 <p style="margin-left:15%; margin-right:15%;"><b><u>Question {indice+1} : </u></b></p><br>
-                <div style="margin-left:15%; margin-right:15%;">{list_questions[indice][0]}</div>
+                <div style="margin-left:15%; margin-right:15%;">{q_mix_item[indice][0]}</div>
                 <div style="margin-left:15%; margin-right:15%;">\n<{ListStructQuestion[indice].selector} cid='{ListStructQuestion[indice].cid}'></{ListStructQuestion[indice].selector}></div>
                 <br><br><br><br></div>"""
 
