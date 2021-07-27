@@ -8,10 +8,9 @@ extends = /model/math/chainineq.pl
 before ==
 from sympy import imageset
 var('x')
-a=randint(-3,3,[0])
-b=randint(-8,8,[0])
-x1, x2 = sorted(sampleint(-8, 8, 2))
-s1, s2 = choices(['<','<='], k=2)
+a = randint(-3,3,[0])
+b = randint(-8,8,[0])
+
 
 sol = imageset(x, a*x+b, Interval(x1, x2)) 
 
