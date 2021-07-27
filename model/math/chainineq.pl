@@ -29,7 +29,7 @@ b1, b2 = answers['math'].split(',')
 S1 = solveset(latex2sympy(b1 + ' x'),x,domain=S.Reals))
 S2 = solveset(latex2sympy('x ' + b2),x,domain=S.Reals))
 
-feedback = str(Intersection(S1, S2))
+feedback = b1 + b2
 score = -1
 ==
 
