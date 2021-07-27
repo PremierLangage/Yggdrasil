@@ -193,3 +193,19 @@ def latex_lincomb(coeff, vec):
                 code+=latex(coeff[i])+" "+vec[i]
             first=False
     return code
+
+def latex_chainineq(expr, interv):
+    """
+    Return a LaTeX string for a chained inequality.
+    """
+    elem = [latex(interv.start)]
+    if interv.left_open:
+        elem.append("<")
+    else:
+        elem.append("\leq")
+    if interv.right_open:
+        elem.append("<")
+    else:
+        elem.append("\leq")
+    elem.append(latex(interv.start))
+    return " ".join(elem)
