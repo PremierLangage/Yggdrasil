@@ -193,7 +193,7 @@ function onBeforeSubmitPL() {
       if (mathField.innerFields.length == 1) {
       mathFieldInput.value = mathField.innerFields[0].latex();
     } else {
-      mathFieldInput.value = String(mathField.innerFields.map(x => x.latex()));
+      mathFieldInput.value = String(mathField.innerFields.map(function lat(obj) {return obj.latex();}));
     }
   });
   return true;
