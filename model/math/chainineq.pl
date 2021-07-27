@@ -23,7 +23,7 @@ embed ==
 evaluator ==
 from evalsympy import eval_chainineq
 score, error = -1, "NotChainINeq" # eval_chainineq(answers['math'], sol)
-feedback = message['error']
+feedback = message[error]
 ==
 
 question ==
