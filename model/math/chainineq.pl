@@ -26,7 +26,6 @@ score, error = eval_chainineq(answers['math'], sol)
 feedback = message[error]
 ==
 
-
 solution ==
-
+$! {{ sol_chainineq }} !$
 ==
