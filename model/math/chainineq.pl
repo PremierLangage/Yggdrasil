@@ -26,7 +26,7 @@ from sympy import S, solveset, Intersection, var
 var('x')
 b1, b2 = answers['math'].split(',')
 
-feedback = "aa"
+feedback = b1 + b2
 score = -1
 ==
 
