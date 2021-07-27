@@ -25,7 +25,7 @@ sol=Intersection(1,2)
 ==
 
 embed ==
-# {{expr|latex}} #
+# {{f|latex}} #
 ==
 
 question ==
