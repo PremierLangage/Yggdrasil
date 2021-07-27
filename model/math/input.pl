@@ -188,8 +188,7 @@ function onBeforeSubmitPL() {
     var mathFieldInput = document.getElementById('form_'+mathField.el().id);
     if (mathField instanceof MQ.MathField) {
       mathFieldInput.value = mathField.latex();
-    }
-    if (mathField instanceof MQ.StaticMath) {
+    } else {
       if (mathField.innerFields.length >1) {
       mathFieldInput.value = mathField.innerFields[0].latex();
     } else {
