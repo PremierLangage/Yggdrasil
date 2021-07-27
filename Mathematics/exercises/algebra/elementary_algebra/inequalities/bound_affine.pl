@@ -13,9 +13,9 @@ x1, x2 = sorted(sampleint(-8, 8, 2))
 s1, s2 = choices(['<','<='], k=2)
 
 if a>0:
-    sol = [a*x1+b, s1, a*x+b, s2, a*x2+b]
+    sol = [a*x1+b, s1, s2, a*x2+b]
 else:
-    sol = [a*x2+b, s2, a*x+b, s1, a*x1+b]
+    sol = [a*x2+b, s2, s1, a*x1+b]
 
 tt = latex( s1)
 ineq = " ".join(latex([x1, s1, x, s2, x2]))
