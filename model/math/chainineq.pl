@@ -21,6 +21,7 @@ embed ==
 ==
 
 evaluator ==
+from sympy2latex import sympy2latex
 from sympy import S, solveset, Intersection
 b1, b2 = answers['math'].split(',')
 try:
@@ -28,6 +29,8 @@ try:
     S2 = solveset(latex2sympy('x ' + b2),x,domain=S.Reals))
 except:
     pass
+
+feedback
 
 ==
 
