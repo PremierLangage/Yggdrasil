@@ -190,7 +190,7 @@ function onBeforeSubmitPL() {
       mathFieldInput.value = mathField.latex();
     }
     if (mathField instanceof MQ.StaticMath) {
-      if (mathField.innerFields.length >1) {
+      if (mathField.innerFields.length == 1) {
       mathFieldInput.value = mathField.innerFields[0].latex();
     } else {
       mathFieldInput.value = String(mathField.innerFields.latex());
