@@ -15,9 +15,6 @@ x1, x2 = 3, 5
 interv = choice([Interval(x1, x2), Interval.Lopen(x1, x2)])
 expr = a*x+b
 
-interv._args[2] = choice([True, False])
-interv._args[3] = choice([True, False])
-
 sol = imageset(x, a*x+b, interv) 
 
 ineq = latex_chainineq(x, interv) 
