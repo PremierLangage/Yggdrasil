@@ -162,9 +162,9 @@ for radio in ListStructQuestion:
     text += 'Question ' + str(nb+1) + '</u></b></p><br>'''
     text += '<div>'+q_mix_item[nb][0]+'</div><br>'
     #text += '<br>'+ str(radio.cid) + radio.selector+'</br>'
-    #box=CheckboxGroup()
-    #box.items=radio.items
-    text += '<div><c-checkbox-group cid='+str(radio.cid)+'></c-checkbox-group></div>"""
+    box=CheckboxGroup()
+    box.cid=radio.cid
+    text += '<div><c-checkbox-group cid='+str(box.cid)+'></c-checkbox-group></div>"""
     # text += list_questions[indices_questions[0]]["html_form"]
     text += '''</div>'''
 ==
