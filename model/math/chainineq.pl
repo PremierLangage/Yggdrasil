@@ -20,6 +20,10 @@ embed ==
 # {{f|latex}} #
 ==
 
+evaluator ==
+
+==
+
 question ==
 Déterminer l'ensemble des réels $% x %$.
 ==
