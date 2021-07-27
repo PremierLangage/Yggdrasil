@@ -147,7 +147,6 @@ for check in range(nb_quest):
 radio = CheckboxGroup()
 
 for nb in range (nb_quest):
-    
     q, g, b = q_mix_item[nb]
     radio.items = []
     for i, s in enumerate(g):
@@ -155,7 +154,7 @@ for nb in range (nb_quest):
     for i, s in enumerate(b):
         radio.items.append({"id": "b"+str(i), "content": s})
     random.shuffle(radio.items)
-    ListStructQuestion[nb].items=radio.items.copy()
+    ListStructQuestion[nb].items=copy.copy(radio.items)
 
 for nb in range (nb_quest):
     # autre boucle pour la constitution du texte
