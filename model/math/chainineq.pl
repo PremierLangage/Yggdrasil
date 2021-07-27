@@ -30,8 +30,7 @@ try:
 except:
     pass
 
-feedback
-
+feedback = str(Intersection(S1, S2))
 ==
 
 question ==
