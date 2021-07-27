@@ -194,7 +194,7 @@ function onBeforeSubmitPL() {
       mathFieldInput.value = mathField.innerFields[0].latex();
     } else {
       mathFieldInput.value = String(mathField.innerFields.latex());
-    }
+    };
     mathFieldInput.value = mathField.innerFields[0].latex();
 
   });
