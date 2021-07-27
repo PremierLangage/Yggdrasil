@@ -153,10 +153,7 @@ for radio in ListStructQuestion:
     for i, s in enumerate(b):
         radio.items.append({"id": "b"+str(i), "content": s})
     random.shuffle(radio.items)
-    #radio = CheckboxGroup()
-    #radio.items=ListStructQuestion[nb].items.copy()
-    # autre boucle pour la constitution du texte
-    # Affichage des questions
+
     if(nb==0):# Seule la première question est active
         text += '''<div class="item active">'''
     else:
@@ -164,8 +161,10 @@ for radio in ListStructQuestion:
     text += '''<p><b><u>'''
     text += 'Question ' + str(nb+1) + '</u></b></p><br>'''
     text += '<div>'+q_mix_item[nb][0]+'</div><br>'
-    #text += '<br>'+ str(radio.cid) +'</br>'
-    text += '<div><{'+radio.selector+'} cid={'+str(radio.cid)+'}></{'+radio.selector+'}></div>
+    # text += '<br>'+ str(radio.cid) +'</br>'
+    selector=radio.selector
+    cid=radio.cid
+    text += f"""<div><{selector} cid='{cid}'></{selector}></div>"""
     # text += list_questions[indices_questions[0]]["html_form"]
     text += '''</div>'''
 ==
