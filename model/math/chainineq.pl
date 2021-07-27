@@ -19,5 +19,5 @@ embed ==
 ==
 
 question ==
-Déterminer l'ensemble des réels $% x %$ tels que $$ {{ineq1|latex}}\quad\text{ et }\quad{{ineq2|latex}}. $$ Ecrire cet ensemble sous la forme d'un intervalle (ou de l'ensemble vide).
+Déterminer l'ensemble des réels $% x %$.
 ==
