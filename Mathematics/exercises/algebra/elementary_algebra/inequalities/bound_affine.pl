@@ -17,9 +17,7 @@ expr = a*x+b
 interv.left_open = choice([True, False])
 interv.right_open = choice([True, False])
 
-sol = imageset(x, a*x+b, interv) 
 
-#ineq = latex_chainineq(x, interv) 
 ==
 
 
