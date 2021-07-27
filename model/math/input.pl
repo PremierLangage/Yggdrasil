@@ -189,10 +189,10 @@ function onBeforeSubmitPL() {
     if (mathField instanceof MQ.MathField) {
       mathFieldInput.value = mathField.latex();
     } else {
-      if (mathField.innerFields.length >1) {
+      if (mathField.innerFields.length == 1) {
       mathFieldInput.value = mathField.innerFields[0].latex();
     } else {
-      mathFieldInput.value = mathField.innerFields[0].latex();
+      mathFieldInput.value = mathField.innerFields.latex();
     }
     }
   });
