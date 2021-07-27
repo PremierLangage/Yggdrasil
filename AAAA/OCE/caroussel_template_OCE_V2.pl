@@ -164,7 +164,7 @@ for radio in ListStructQuestion:
     #text += '<br>'+ str(radio.cid) + radio.selector+'</br>'
     #box=CheckboxGroup()
     #box.items=radio.items
-    text += '<div><'+c-checkbox-group+' cid='+str(radio.cid)+'></'+c-checkbox-group'+></div>"""
+    text += '<div><c-checkbox-group cid='+str(radio.cid)+'></c-checkbox-group></div>"""
     # text += list_questions[indices_questions[0]]["html_form"]
     text += '''</div>'''
 ==
