@@ -166,6 +166,7 @@ for radio in ListStructQuestion:
     text += '<div><'+ radio.selector + 'cid='+str(radio.cid)+'></'+ radio.selector + '></div>'
     # text += list_questions[indices_questions[0]]["html_form"]
     text += '''</div>'''
+    text += end_text
 ==
 
 
@@ -217,8 +218,9 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 <br>
 ==
 
-form==#|markdown|
-    </div>
+end_text==
+  </div>
+
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -229,6 +231,10 @@ form==#|markdown|
     <span class="sr-only">Next</span>
   </a>
 </div>
+==
+
+form==
+
 ==
 
 evaluator==#|python|
