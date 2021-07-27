@@ -142,8 +142,7 @@ text += make_rotation_str(nb_quest)
 #Création d'une liste de CheckboxGroup()
 ListStructQuestion=[]
 for check in range(nb_quest):
-    box=CheckboxGroup()
-    ListStructQuestion.append(box)
+    ListStructQuestion.append(check)
     ListStructQuestion[check].items=[]
 
 for radio in ListStructQuestion:
@@ -155,20 +154,23 @@ for radio in ListStructQuestion:
         radio.items.append({"id": "b"+str(i), "content": s})
     random.shuffle(radio.items)
 
+for indice in range(len(q_mix_item)):
     if(nb==0):# Seule la première question est active
-        text += '''<div class="item active">'''
+        text += f"""
+                <div class="item active">
+                <p style="margin-left:15%; margin-right:15%;"><b><u>Question {indice+1} : </u></b></p><br>
+                <div style="margin-left:15%; margin-right:15%;">{list_questions[indice]["text"]}</div>
+                <div style="margin-left:15%; margin-right:15%;">\n<{ListStructQuestion[indice].selector} cid='{ListStructQuestion[indice].cid}'></{ListStructQuestion[indice].selector}></div>
+                <br><br><br><br></div>"""
     else:
-        text += '''<div class="item">'''
-    text += '''<p><b><u>'''
-    text += 'Question ' + str(nb+1) + '</u></b></p><br>'''
-    text += '<div>'+q_mix_item[nb][0]+'</div><br>'
-    #text += '<br>'+ str(radio.cid) + radio.selector+'</br>'
-    text += '<div><'+ radio.selector + 'cid='+str(radio.cid)+'></'+ radio.selector + '></div>'
-    # text += list_questions[indices_questions[0]]["html_form"]
-    text += '''</div>'''
-    text += end_text
-==
+        text += f"""
+                <div class="item">
+                <p style="margin-left:15%; margin-right:15%;"><b><u>Question {indice+1} : </u></b></p><br>
+                <div style="margin-left:15%; margin-right:15%;">{list_questions[indice]["text"]}</div>
+                <div style="margin-left:15%; margin-right:15%;">\n<{ListStructQuestion[indice].selector} cid='{ListStructQuestion[indice].cid}'></{ListStructQuestion[indice].selector}></div>
+                <br><br><br><br></div>"""
 
+==
 
 text==#|markdown|
 
@@ -218,7 +220,7 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 <br>
 ==
 
-end_text==
+form==
   </div>
 
   <!-- Left and right controls -->
@@ -231,10 +233,6 @@ end_text==
     <span class="sr-only">Next</span>
   </a>
 </div>
-==
-
-form==
-
 ==
 
 evaluator==#|python|
