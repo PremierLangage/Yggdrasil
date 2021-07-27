@@ -3,7 +3,7 @@ from latex2sympy import *
 
 # Utils
 
-def equal(a, b, modulo=None):
+def equal(a, b, modulo=0):
     """
     Check if two expressions are equal after simplification.
     """
@@ -14,7 +14,7 @@ def equal(a, b, modulo=None):
     if isinstance(diff, sp.Expr) and diff.is_complex:
         diff = sp.expand_complex(diff)
     
-    if modulo is None:
+    if modulo == 0:
         return sp.simplify(diff) == 0
     else:
         return sp.simplify(diff) % modulo == 0
