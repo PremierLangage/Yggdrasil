@@ -816,30 +816,6 @@ def eval_chainineq(strans, sol):
     Evaluate an answer when the solution is an union of intervals.
     """
     # TODO : handle empty set
-    try:
-        ans = strans.split(',')
-        ans = latex2rset(strans)
-        # simplification of endpoints is needed
-        # otherwise, Sympy struggles to compare intervals
-        # even with simplification, not sure comparison always works
-        ans = simplify_rset(ans)
-    except:
-        return (-1, "NotInterval")
-    if len(ans) > 1:
-        for i in range(len(ans)):
-            for j in range(i+1,len(ans)):
-                if sp.Intersection(ans[i], ans[j]) != sp.EmptySet:
-                    return (-1, "IntervalsNotDisjoint")
-    if sp.Union(*ans) != sol:
-        return (0, "NotEqual")
-    return (100, "Success")
-
-
-def eval_interval(strans, sol):
-    """
-    Evaluate an answer when the solution is an union of intervals.
-    """
-    # TODO : handle empty set
     sp.var('x')
     try:
         ans = strans.split(',')
@@ -855,6 +831,28 @@ def eval_interval(strans, sol):
         except:
             return (-1, "NotChainIneq")
     if ans != sol:
+        return (0, "NotEqual")
+    return (100, "Success")
+
+def eval_interval(strans, sol):
+    """
+    Evaluate an answer when the solution is an union of intervals.
+    """
+    # TODO : handle empty set
+    try:
+        ans = latex2rset(strans)
+        # simplification of endpoints is needed
+        # otherwise, Sympy struggles to compare intervals
+        # even with simplification, not sure comparison always works
+        ans = simplify_rset(ans)
+    except:
+        return (-1, "NotInterval")
+    if len(ans) > 1:
+        for i in range(len(ans)):
+            for j in range(i+1,len(ans)):
+                if sp.Intersection(ans[i], ans[j]) != sp.EmptySet:
+                    return (-1, "IntervalsNotDisjoint")
+    if sp.Union(*ans) != sol:
         return (0, "NotEqual")
     return (100, "Success")
 
