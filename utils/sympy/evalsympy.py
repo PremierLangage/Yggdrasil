@@ -815,8 +815,11 @@ def eval_chainineq(strans, sol):
     """
     Evaluate an answer when the solution is an union of intervals.
     """
-    # TODO : handle empty set
     sp.var('x')
+    S1 = sp.solveset(latex2sympy(sol[0] + sol[1] + ' x'),x,domain=sp.S.Reals)
+    S2 = sp.solveset(latex2sympy('x ' + sol[2] + sol[3]),x,domain=sp.S.Reals)
+    sol_interv = sp.Intersection(S1, S2)
+    # TODO : handle empty set
     try:
         ans = strans.split(',')
         S1 = sp.solveset(latex2sympy(ans[0] + ' x'),x,domain=sp.S.Reals)
@@ -830,7 +833,7 @@ def eval_chainineq(strans, sol):
             ans = sp.Intersection(S1, S2)
         except:
             return (-1, "NotChainIneq")
-    if ans != sol:
+    if ans != sol_interv:
         return (0, "NotEqual")
     return (100, "Success")
 
