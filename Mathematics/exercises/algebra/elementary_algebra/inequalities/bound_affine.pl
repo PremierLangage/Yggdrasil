@@ -12,7 +12,7 @@ var('x')
 a = randint(-3, 3, [0])
 b = randint(-8, 8, [0])
 x1, x2 = 3, 5
-interv = choice([Interval(x1, x2), Interval.Lopen(x1, x2)])
+interv = choice([Interval.Lopen(x1, x2), Interval.Ropen(x1, x2)])
 expr = a*x+b
 
 sol = imageset(x, a*x+b, interv) 
