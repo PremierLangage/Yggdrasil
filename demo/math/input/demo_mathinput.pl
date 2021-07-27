@@ -6,7 +6,7 @@ Entrer une expression mathématique.
 
 evaluator ==
 score = 0
-feedback = answers['math']
+solution = answers['math']
 ==
 
 embed ==
