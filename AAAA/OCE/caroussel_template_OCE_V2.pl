@@ -145,7 +145,7 @@ ListStructQuestion=[]
 radio = CheckboxGroup()
 for nb in range (nb_quest):
     #radio = CheckboxGroup()
-    ListStructQuestion.append(radio)
+    #ListStructQuestion.append(radio)
     q, g, b = q_mix_item[nb]
     radio.items = []
     for i, s in enumerate(g):
