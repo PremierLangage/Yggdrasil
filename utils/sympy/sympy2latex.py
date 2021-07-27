@@ -203,6 +203,7 @@ def latex_chainineq(expr, interv):
         elem.append("<")
     else:
         elem.append("\leq")
+    elem.append(latex(expr))
     if interv.right_open:
         elem.append("<")
     else:
