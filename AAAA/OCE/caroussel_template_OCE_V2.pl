@@ -147,7 +147,6 @@ for check in range(nb_quest):
 
 for nb in range (nb_quest):
     q, g, b = q_mix_item[nb]
-    radio.items = []
     for i, s in enumerate(g):
         ListStructQuestion[nb].items.append({"id": "g"+str(i), "content": s})
     for i, s in enumerate(b):
