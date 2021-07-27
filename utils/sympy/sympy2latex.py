@@ -208,5 +208,5 @@ def latex_chainineq(expr, interv):
         elem.append("<")
     else:
         elem.append("\leq")
-    elem.append(latex(interv.start))
+    elem.append(latex(interv.end))
     return " ".join(elem)
