@@ -13,9 +13,16 @@ x1, x2 = sorted(sampleint(-8, 8, 2))
 s1, s2 = choices(['<','<='], k=2)
 
 if a>0:
-    sol = [a*x1+b, s1, s2, a*x2+b]
+    elem = [a*x1+b, s1, s2, a*x2+b]
 else:
-    sol = [a*x2+b, s2, s1, a*x1+b]
+    elem = [a*x2+b, s2, s1, a*x1+b]
+
+sol = Interval(elem[0], elem[3])
+if elem[1] == '<':
+    sol.left_open = True
+if elem[2] == '<':
+    sol.left_open = True  
+
 ineq = " ".join(latex([x1, s1, x, s2, x2]))
 expr = a*x+b
 ==
