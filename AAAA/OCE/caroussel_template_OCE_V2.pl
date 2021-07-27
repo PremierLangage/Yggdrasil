@@ -239,16 +239,16 @@ for radio in ListStructQuestion:
     # text += list_questions[indices_questions[0]]["html_form"]
     text += '''</div>'''
     text += '''</div>'''
-    text += '<!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+    text += '<!-- Left and right controls -->'
+    text += '<a class="left carousel-control" href="#myCarousel" data-slide="prev">'
+    text+= '<span class="glyphicon glyphicon-chevron-left"></span>'
+    text+= '<span class="sr-only">Previous</span>'
+  text+='</a>'
+  text+= '<a class="right carousel-control" href="#myCarousel" data-slide="next">'
+    text+= '<span class="glyphicon glyphicon-chevron-right"></span>'
+    text+= '<span class="sr-only">Next</span>'
+  text+='</a>'
+text+='</div>'
 ==
 
 evaluator==#|python|
