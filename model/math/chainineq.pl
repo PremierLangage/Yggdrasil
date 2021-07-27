@@ -21,12 +21,18 @@ embed ==
 ==
 
 evaluator ==
-#from latex2sympy import str2sympy
+from latex2sympy import latex2sympy
 from sympy import S, solveset, Intersection, var
 var('x')
 b1, b2 = answers['math'].split(',')
 
-feedback = b1 + b2
+try:
+    S1 = solveset(latex2sympy(b1 + ' x'),x,domain=S.Reals))
+    S2 = solveset(latex2sympy('x ' + b2),x,domain=S.Reals))
+except:
+    pass
+
+feedback = latex2sympy(b1 + ' x') # str(Intersection(S1, S2))
 score = -1
 ==
 
