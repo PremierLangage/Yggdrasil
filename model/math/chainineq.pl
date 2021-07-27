@@ -27,7 +27,7 @@ var('x')
 b1, b2 = answers['math'].split(',')
 
 
-feedback = str(str2sympy(b1) # str(Intersection(S1, S2))
+feedback = b1 + b2
 score = -1
 ==
 
