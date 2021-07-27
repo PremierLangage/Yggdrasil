@@ -21,7 +21,7 @@ embed ==
 ==
 
 evaluator ==
-score, error = eval_chainieq(answers['math'], sol)
+score, error = eval_chainineq(answers['math'], sol)
 feedback = message['error']
 ==
 
