@@ -29,3 +29,7 @@ feedback = message[error]
 question ==
 Déterminer l'ensemble des réels $% x %$.
 ==
+
+solution ==
+$! {{ bound[0]|latex }} {{ symb[0]|latex }} {{ expr|latex }} {{ symb[1]|latex }} {{ bound[1]|latex }} !$
+==
