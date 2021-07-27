@@ -154,19 +154,19 @@ for radio in ListStructQuestion:
         radio.items.append({"id": "b"+str(i), "content": s})
     random.shuffle(radio.items)
 
-for indice in range(len(q_mix_item)):
-    if(nb==0):# Seule la première question est active
+for indice in range(nb_quest):
+    if(indice==0):# Seule la première question est active
         text += f"""
                 <div class="item active">
                 <p style="margin-left:15%; margin-right:15%;"><b><u>Question {indice+1} : </u></b></p><br>
-                <div style="margin-left:15%; margin-right:15%;">{q_mix_item[indice][indice]}</div>
+                <div style="margin-left:15%; margin-right:15%;">{q_mix_item[indice][0]}</div>
                 <div style="margin-left:15%; margin-right:15%;">\n<{ListStructQuestion[indice].selector} cid='{ListStructQuestion[indice].cid}'></{ListStructQuestion[indice].selector}></div>
                 <br><br><br><br></div>"""
     else:
         text += f"""
                 <div class="item">
                 <p style="margin-left:15%; margin-right:15%;"><b><u>Question {indice+1} : </u></b></p><br>
-                <div style="margin-left:15%; margin-right:15%;">{q_mix_item[indice][indice]}</div>
+                <div style="margin-left:15%; margin-right:15%;">{q_mix_item[indice][0]}</div>
                 <div style="margin-left:15%; margin-right:15%;">\n<{ListStructQuestion[indice].selector} cid='{ListStructQuestion[indice].cid}'></{ListStructQuestion[indice].selector}></div>
                 <br><br><br><br></div>"""
 
@@ -220,7 +220,7 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 <br>
 ==
 
-form==
+form==#|markdown|
   </div>
 
   <!-- Left and right controls -->
