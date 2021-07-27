@@ -18,17 +18,10 @@ ineq1=choice([f>=g,f>g,f<=g,f<g,g>=f,g>f,g<=f,g<f])
 a, c = sampleint(-6, 6, 2, [0])
 b, d = sampleint(-6, 6, 2, [-1, 0, 1])
 f=a*x+b
-if param['otherside2']=='zero':
-    g=0
-if param['otherside2']=='constant':
-    g=d
-if param['otherside2']=='linear':
-    g=c*x+d
-ineq2=choice([f>=g,f>g,f<=g,f<g,g>=f,g>f,g<=f,g<f])
 
-sol1=solveset(ineq1,x,domain=S.Reals)
-sol2=solveset(ineq2,x,domain=S.Reals)
-sol=Intersection(sol1,sol2)
+#sol1=solveset(ineq1,x,domain=S.Reals)
+#sol2=solveset(ineq2,x,domain=S.Reals)
+sol=Intersection(1,2)
 ==
 
 embed ==
