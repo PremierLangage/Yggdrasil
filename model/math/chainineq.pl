@@ -32,7 +32,7 @@ try:
 except:
     pass
 
-feedback = b1 # str(Intersection(S1, S2))
+feedback = str(latex2sympy(b1 + ' x')) # str(Intersection(S1, S2))
 score = -1
 ==
 
