@@ -141,12 +141,8 @@ text += make_rotation_str(nb_quest)
 
 #Création d'une liste de CheckboxGroup()
 ListStructQuestion=[]
-for check in range(nb_quest):
-    ListStructQuestion.append(CheckboxGroup())
-    ListStructQuestion[check].items=[]
-
-for radio in ListStructQuestion:
-    nb = ListStructQuestion.index(radio)
+for nb in range(len(q_mix_item)):
+    radio=CheckboxGroup()
     q, g, b = q_mix_item[nb]
     for i, s in enumerate(g):
         radio.items.append({"id": "g"+str(i), "content": s})
@@ -154,22 +150,21 @@ for radio in ListStructQuestion:
         radio.items.append({"id": "b"+str(i), "content": s})
     random.shuffle(radio.items)
 
-for indice in range(nb_quest):
-    if(indice==0):# Seule la première question est active
+    if(nb==0):# Seule la première question est active
         text += f"""
                 <div class="item active">
-                <p style="margin-left:15%; margin-right:15%;"><b><u>Question {indice+1} : </u></b></p><br>
-                <div style="margin-left:15%; margin-right:15%;">{q_mix_item[indice][indice]}</div>
-                <div style="margin-left:15%; margin-right:15%;">\n<{ListStructQuestion[indice].selector} cid='{ListStructQuestion[indice].cid}'></{ListStructQuestion[indice].selector}></div>
+                <p style="margin-left:15%; margin-right:15%;"><b><u>Question {nb+1} : </u></b></p><br>
+                <div style="margin-left:15%; margin-right:15%;">{q_mix_item[nb][0]}</div>
+                <div style="margin-left:15%; margin-right:15%;">\n<{radio.selector} cid='{radio.cid}'></{radio.selector}></div>
                 <br><br><br><br></div>"""
     else:
         text += f"""
                 <div class="item">
-                <p style="margin-left:15%; margin-right:15%;"><b><u>Question {indice+1} : </u></b></p><br>
-                <div style="margin-left:15%; margin-right:15%;">{q_mix_item[indice][indice]}</div>
-                <div style="margin-left:15%; margin-right:15%;">\n<{ListStructQuestion[indice].selector} cid='{ListStructQuestion[indice].cid}'></{ListStructQuestion[indice].selector}></div>
+                <p style="margin-left:15%; margin-right:15%;"><b><u>Question {nb+1} : </u></b></p><br>
+                <div style="margin-left:15%; margin-right:15%;">{q_mix_item[nb][0]}</div>
+                <div style="margin-left:15%; margin-right:15%;">\n<{radio.selector} cid='{radio.cid}'></{radio.selector}></div>
                 <br><br><br><br></div>"""
-
+    ListStructQuestion.append(radio)
 ==
 
 text==#|markdown|
