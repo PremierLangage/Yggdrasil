@@ -217,6 +217,7 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 ==
 
 form==#|markdown|
+text
     </div>
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
