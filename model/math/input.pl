@@ -196,6 +196,7 @@ function onBeforeSubmitPL() {
       mathFieldInput.value = mathField.innerFields[0].latex();
     };
     mathFieldInput.value = "coucou";
+    };
   });
   return true;
 }
