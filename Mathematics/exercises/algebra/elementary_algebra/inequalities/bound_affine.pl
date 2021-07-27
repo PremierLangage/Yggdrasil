@@ -1,11 +1,9 @@
 # Author: D. Doyen
 # Tags: inequalities
+# Encadrer ax+b
 # 19/8/2020
 
-extends = /model/math/input.pl
-
-title = Encadrement de $% a x + b %$
-
+extends = /model/math/chainineq.pl
 
 before ==
 var('x')
@@ -25,6 +23,6 @@ expr = a*x+b
 ==
 
 
-text ==
-Soit un nombre $% x %$ tel que $%{{ineq}} %$. Déterminer l'encadrement le plus précis possible de $% {{expr|latex}} %$.
+question ==
+Soit un nombre $% x %$ tel que $% {{ineq}} %$. Déterminer l'encadrement le plus précis possible de $% {{expr|latex}} %$.
 ==
