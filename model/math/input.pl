@@ -170,7 +170,7 @@ preval.push(val);
 for (let i = 0; i < names.length; i++) {
 {% if embed|length > 0 %}
 var mathField = MQ.StaticMath(document.getElementById(names[i]));
-var arr = preval[i].split(",")
+var arr = preval[i].split(",");
 for (let j = 0; j < arr.length; j++) {
 mathField.innerFields[j].latex(arr[j]);
 }
