@@ -155,7 +155,7 @@ for nb in range (nb_quest):
     for i, s in enumerate(b):
         ListStructQuestion[nb].items.append({"id": "b"+str(i), "content": s})
     random.shuffle(ListStructQuestion[nb].items)
-    radio.items=copy.copy(ListStructQuestion[nb].items)
+    radio.items=ListStructQuestion[nb].items.deepcopy()
     # autre boucle pour la constitution du texte
     # Affichage des questions
     if(nb==0):# Seule la première question est active
