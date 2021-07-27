@@ -31,6 +31,7 @@ except:
     pass
 
 feedback = str(Intersection(S1, S2))
+score = -1
 ==
 
 question ==
