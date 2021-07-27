@@ -151,13 +151,11 @@ for nb in range (nb_quest):
     q, g, b = q_mix_item[nb]
     radio.items = []
     for i, s in enumerate(g):
-        radio.items.append({"id": "g"+str(i), "content": s})
         ListStructQuestion[nb].items.append({"id": "g"+str(i), "content": s})
     for i, s in enumerate(b):
-        radio.items.append({"id": "b"+str(i), "content": s})
         ListStructQuestion[nb].items.append({"id": "b"+str(i), "content": s})
-    random.shuffle(radio.items)
-    
+    random.shuffle(ListStructQuestion[nb].items)
+    radio.items=copy.copy(ListStructQuestion[nb].items)
     # autre boucle pour la constitution du texte
     # Affichage des questions
     if(nb==0):# Seule la première question est active
