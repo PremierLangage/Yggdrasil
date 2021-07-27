@@ -165,7 +165,7 @@ for nb in range(len(q_mix_item)):
                 <div style="margin-left:15%; margin-right:15%;">{q_mix_item[nb][0]}</div>
                 <div style="margin-left:15%; margin-right:15%;">\n<{radio.selector} cid='{radio.cid}'></{radio.selector}></div>
                 <br><br><br><br></div>"""
-    ListStructQuestion.append(radio)
+    #ListStructQuestion.append(radio)
 ==
 
 text==#|markdown|
