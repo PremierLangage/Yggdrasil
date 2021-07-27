@@ -840,6 +840,7 @@ def eval_interval(strans, sol):
     Evaluate an answer when the solution is an union of intervals.
     """
     # TODO : handle empty set
+    sp.var('x')
     try:
         ans = strans.split(',')
         S1 = sp.solveset(latex2sympy(ans[0] + ' x'),x,domain=sp.S.Reals)
