@@ -19,11 +19,11 @@ def equal(a, b, modulo=0):
     else:
         return sp.simplify(diff) % modulo == 0
 
-def equal_approx(a, b, tol, modulo=None):
+def equal_approx(a, b, tol, modulo=0):
     """
     Check if two expressions are approximately equal.
     """
-    if modulo is None:
+    if modulo == 0:
         return abs(a - b).evalf() < tol
     else:
         return abs((abs(a - b) + modulo/2) % modulo - modulo/2).evalf() < tol
