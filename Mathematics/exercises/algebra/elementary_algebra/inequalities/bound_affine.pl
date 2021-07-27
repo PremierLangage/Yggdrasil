@@ -15,8 +15,8 @@ x1, x2 = 3, 5
 interv = Interval(x1, x2)
 expr = a*x+b
 
-interv.left_open = choice([True, False])
-interv.right_open = choice([True, False])
+interv._args[2] = choice([True, False])
+interv._args[3] = choice([True, False])
 
 sol = imageset(x, a*x+b, interv) 
 
