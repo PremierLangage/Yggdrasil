@@ -163,7 +163,7 @@ var preval = [];
 var names = [];
 {% for name in mathinputid %}
 names.push("{{name}}");
-var val =  String.raw`{{ answers[name] }}`;
+var val =  String.raw`{{ answers[name]|safe }}`;
 preval.push(val);
 {% endfor %}
 
