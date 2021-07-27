@@ -5,7 +5,7 @@ Entrer une expression mathématique.
 ==
 
 evaluator ==
-score = 0
+score = -1
 solution = answers['math']
 ==
 
