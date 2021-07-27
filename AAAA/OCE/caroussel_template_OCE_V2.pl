@@ -163,7 +163,7 @@ for radio in ListStructQuestion:
     text += '<div>'+q_mix_item[nb][0]+'</div><br>'
     selector=radio.selector
     cid=radio.cid
-    text += '<br>'+ str(radio.cid) +'</br>'
+    text += '<br>'+ str(cid) +'</br>'
     text += f"""<div><{selector} cid='{cid}'></{selector}></div>"""
     # text += list_questions[indices_questions[0]]["html_form"]
     text += '''</div>'''
