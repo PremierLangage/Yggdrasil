@@ -193,7 +193,7 @@ function onBeforeSubmitPL() {
       if (mathField.innerFields.length == 1) {
       mathFieldInput.value = mathField.innerFields[0].latex();
     } else {
-      mathFieldInput.value = String(mathField.innerFields.maps(x => x.latex();))
+      mathFieldInput.value = [mathField.innerFields[0].latex(),mathField.innerFields[1].latex()];
     }
     };
   });
