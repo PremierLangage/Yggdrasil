@@ -142,7 +142,8 @@ text += make_rotation_str(nb_quest)
 #Création d'une liste de CheckboxGroup()
 ListStructQuestion=[]
 for check in range(nb_quest):
-    ListStructQuestion.append(CheckboxGroup())
+    box=CheckboxGroup()
+    ListStructQuestion.append(box)
     ListStructQuestion[check].items=[]
 
 for radio in ListStructQuestion:
@@ -217,7 +218,6 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 ==
 
 form==#|markdown|
-text
     </div>
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
