@@ -28,7 +28,7 @@ def equal_approx(a, b, tol, modulo=0):
     else:
         return abs((abs(a - b) + modulo/2) % modulo - modulo/2).evalf() < tol
 
-def equal_struct(p, q, modulo=None):
+def equal_struct(p, q, modulo=0):
     """
     Check if two nested structures of lists and tuples of expressions 
     (where lists are viewed as sets) are equal.
@@ -541,7 +541,7 @@ def simplify_rset(lst):
     return lst
 
 
-def eval_expr(strans, sol, checkratsimp=True, equality="", modulo=None, unauthorized_func=[], authorized_func=None, local_dict={}):
+def eval_expr(strans, sol, checkratsimp=True, equality="", modulo=0, unauthorized_func=[], authorized_func=None, local_dict={}):
     r"""
     Evaluate an answer when the solution is an expression.
     
