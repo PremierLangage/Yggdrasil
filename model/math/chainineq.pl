@@ -28,5 +28,5 @@ feedback = message[error]
 
 
 solution ==
-$! {{ sol[0]|latex }} {{ sol[1]|latex }} {{ expr|latex }} {{ sol[2]|latex }} {{ sol[3]|latex }} !$
+
 ==
