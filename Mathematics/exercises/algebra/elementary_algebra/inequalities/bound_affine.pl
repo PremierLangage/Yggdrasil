@@ -8,8 +8,8 @@ extends = /model/math/chainineq.pl
 before ==
 from sympy import imageset
 var('x')
-a = randint(-3,3,[0])
-b = randint(-8,8,[0])
+a = randint(-3, 3, [0])
+b = randint(-8, 8, [0])
 interv = Interval(x1, x2)
 interv.left_open = choice([True, False])
 interv.right_open = choice([True, False])
