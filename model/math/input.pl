@@ -190,9 +190,8 @@ function onBeforeSubmitPL() {
       mathFieldInput.value = mathField.latex();
     }
     if (mathField instanceof MQ.StaticMath) {
-
-    mathFieldInput.value = mathField.innerFields[0].latex();
-
+      mathFieldInput.value = mathField.innerFields[0].latex();
+    }
   });
   return true;
 }
