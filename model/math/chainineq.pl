@@ -30,7 +30,7 @@ try:
 except:
     pass
 
-feedback = str(Intersection(S1, S2))
+feedback = "aa" # str(Intersection(S1, S2))
 score = -1
 ==
 
