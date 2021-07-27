@@ -216,9 +216,30 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 <br>
 ==
 
-form==#|markdown|
-    </div>
-  <!-- Left and right controls -->
+form==#|python|
+
+for radio in ListStructQuestion:
+    nb = ListStructQuestion.index(radio)
+    q, g, b = q_mix_item[nb]
+    for i, s in enumerate(g):
+        radio.items.append({"id": "g"+str(i), "content": s})
+    for i, s in enumerate(b):
+        radio.items.append({"id": "b"+str(i), "content": s})
+    random.shuffle(radio.items)
+
+    if(nb==0):# Seule la première question est active
+        text += '''<div class="item active">'''
+    else:
+        text += '''<div class="item">'''
+    text += '''<p><b><u>'''
+    text += 'Question ' + str(nb+1) + '</u></b></p><br>'''
+    text += '<div>'+q_mix_item[nb][0]+'</div><br>'
+    #text += '<br>'+ str(radio.cid) + radio.selector+'</br>'
+    text += '<div><'+ radio.selector + 'cid='+str(radio.cid)+'></'+ radio.selector + '></div>'
+    # text += list_questions[indices_questions[0]]["html_form"]
+    text += '''</div>'''
+    text += '''</div>'''
+    text += '<!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
     <span class="sr-only">Previous</span>
