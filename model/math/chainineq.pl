@@ -11,7 +11,7 @@ f=a*x+b
 
 #sol1=solveset(ineq1,x,domain=S.Reals)
 #sol2=solveset(ineq2,x,domain=S.Reals)
-sol=Intersection(1,2)
+sol=Interval(1,2)
 ==
 
 embed ==
