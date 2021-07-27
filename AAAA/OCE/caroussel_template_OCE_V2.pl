@@ -139,8 +139,7 @@ def make_rotation_str(nb_quest):
 # entêtes du manège
 text += make_rotation_str(nb_quest)
 
-# créer un dictionnaire de nbQuest CheckboxGroup()
-# Chaque CheckboxGroup() est crée à partir de q_mix_item
+#Création d'une liste de CheckboxGroup()
 ListStructQuestion=[]
 #radio = CheckboxGroup()
 #radio.items = []
