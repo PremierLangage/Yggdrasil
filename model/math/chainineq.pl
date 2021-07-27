@@ -13,7 +13,7 @@ expr=a*x+b
 
 #sol1=solveset(ineq1,x,domain=S.Reals)
 #sol2=solveset(ineq2,x,domain=S.Reals)
-sol=Interval(1,2)
+sol = Interval(1,2)
 ==
 
 embed ==
@@ -31,5 +31,5 @@ Déterminer l'ensemble des réels $% x %$.
 ==
 
 solution ==
-$! {{ bound[0]|latex }} {{ symb[0]|latex }} {{ expr|latex }} {{ symb[1]|latex }} {{ bound[1]|latex }} !$
+$! {{ sol[0]|latex }} {{ sol[1]|latex }} {{ expr|latex }} {{ sol[2]|latex }} {{ sol[3]|latex }} !$
 ==
