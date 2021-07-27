@@ -28,7 +28,7 @@ var('x')
 b1, b2 = answers['math'].split(',')
 
 
-feedback = b1 + b2
+feedback = b1
 score = -1
 ==
 
