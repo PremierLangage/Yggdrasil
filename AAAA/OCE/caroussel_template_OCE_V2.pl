@@ -143,7 +143,7 @@ text += make_rotation_str(nb_quest)
 ListStructQuestion=[]
 for check in range(nb_quest):
     ListStructQuestion.append(CheckboxGroup())
-    ListStructQuestion[nb].items=[]
+    ListStructQuestion[check].items=[]
 
 radio = CheckboxGroup()
 
