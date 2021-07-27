@@ -16,8 +16,6 @@ if a>0:
     sol = [a*x1+b, s1, s2, a*x2+b]
 else:
     sol = [a*x2+b, s2, s1, a*x1+b]
-
-tt = latex( s1)
 ineq = " ".join(latex([x1, s1, x, s2, x2]))
 expr = a*x+b
 ==
