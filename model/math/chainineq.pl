@@ -27,6 +27,7 @@ var('x')
 b1, b2 = answers['math'].split(',')
 
 S1 = solveset(latex2sympy(b1 + ' x'),x,domain=S.Reals)
+S1 = solveset(latex2sympy('x '  + b2),x,domain=S.Reals)
 
 
 feedback = str(S1)
