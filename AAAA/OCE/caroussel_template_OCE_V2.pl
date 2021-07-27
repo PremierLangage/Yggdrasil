@@ -146,7 +146,7 @@ for check in range(nb_quest):
     ListStructQuestion[check].items=[]
 
 for radio in ListStructQuestion:
-    nb=ListStructQuestion.index(radio)
+    nb = ListStructQuestion.index(radio)
     q, g, b = q_mix_item[nb]
     for i, s in enumerate(g):
         radio.items.append({"id": "g"+str(i), "content": s})
@@ -164,7 +164,7 @@ for radio in ListStructQuestion:
     text += '''<p><b><u>'''
     text += 'Question ' + str(nb+1) + '</u></b></p><br>'''
     text += '<div>'+q_mix_item[nb][0]+'</div><br>'
-    # text += '<br>'+ str(radio.cid) +'</br>'
+    text += '<br>'+ str(radio.cid) +'</br>'
     text += f"""<div><{radio.selector} cid='{radio.cid}'></{radio.selector}></div>"""
     # text += list_questions[indices_questions[0]]["html_form"]
     text += '''</div>'''
