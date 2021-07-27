@@ -12,7 +12,7 @@ var('x')
 a = randint(-3, 3, [0])
 b = randint(-8, 8, [0])
 x1, x2 = 3, 5
-interv = Interval(x1, x2)
+interv = choice([Interval(x1, x2), Interval.Lopen(x1, x2)])
 expr = a*x+b
 
 interv._args[2] = choice([True, False])
