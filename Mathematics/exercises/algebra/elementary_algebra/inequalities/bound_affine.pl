@@ -7,7 +7,7 @@ extends = /model/math/chainineq.pl
 
 before ==
 from sympy import imageset
-from latex2sympy import latex_chainineq
+from sympy2latex import latex_chainineq
 var('x')
 a = randint(-3, 3, [0])
 b = randint(-8, 8, [0])
