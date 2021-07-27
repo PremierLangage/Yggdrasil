@@ -21,6 +21,9 @@ embed ==
 ==
 
 evaluator ==
+from latex2sympy import latex2sympy
+from sympy import S, solveset, Intersection
+b1, b2 = answers['math'].split(',')
 
 
 feedback = "aa" # str(Intersection(S1, S2))
