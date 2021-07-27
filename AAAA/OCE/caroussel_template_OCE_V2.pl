@@ -145,8 +145,6 @@ for check in range(nb_quest):
     ListStructQuestion.append(CheckboxGroup())
     ListStructQuestion[check].items=[]
 
-radio = CheckboxGroup()
-
 for nb in range (nb_quest):
     q, g, b = q_mix_item[nb]
     radio.items = []
@@ -155,7 +153,8 @@ for nb in range (nb_quest):
     for i, s in enumerate(b):
         ListStructQuestion[nb].items.append({"id": "b"+str(i), "content": s})
     random.shuffle(ListStructQuestion[nb].items)
-    radio.items=ListStructQuestion[nb].items.deepcopy()
+    radio = CheckboxGroup()
+    radio.items=ListStructQuestion[nb].items.copy()
     # autre boucle pour la constitution du texte
     # Affichage des questions
     if(nb==0):# Seule la première question est active
