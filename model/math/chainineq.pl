@@ -27,7 +27,7 @@ var('x')
 b1, b2 = answers['math'].split(',')
 
 
-feedback = str(latex2sympy(b1 + ' x')) # str(Intersection(S1, S2))
+feedback = str(str2sympy(b1 + ' x')) # str(Intersection(S1, S2))
 score = -1
 ==
 
