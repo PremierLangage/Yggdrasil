@@ -219,8 +219,6 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 
 form==#|markdown|
 
-{ CheckboxGroup|component }
-
   </div>
 
   <!-- Left and right controls -->
@@ -232,6 +230,7 @@ form==#|markdown|
     <span class="glyphicon glyphicon-chevron-right"></span>
     <span class="sr-only">Next</span>
   </a>
+  { CheckboxGroup|component }
 </div>
 ==
 
