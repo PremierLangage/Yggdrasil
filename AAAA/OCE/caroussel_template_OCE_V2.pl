@@ -142,7 +142,8 @@ text += make_rotation_str(nb_quest)
 #Création d'une liste de CheckboxGroup()
 ListStructQuestion=[]
 for nb in range(len(q_mix_item)):
-    radio=CheckboxGroup()
+    cidCompo="radio"+str(nb)
+    radio= Component(cid=cidCompo, selector= "c-checkbox-group")
     radio.items=[]
     q, g, b = q_mix_item[nb]
     for i, s in enumerate(g):
@@ -156,14 +157,14 @@ for nb in range(len(q_mix_item)):
                 <div class="item active">
                 <p style="margin-left:15%; margin-right:15%;"><b><u>Question {nb+1} : </u></b></p><br>
                 <div style="margin-left:15%; margin-right:15%;">{q_mix_item[nb][0]}</div>
-                <div style="margin-left:15%; margin-right:15%;">\n<{radio.selector} cid='{radio.cid}'></{radio.selector}></div>
+                <div style="margin-left:15%; margin-right:15%;">\n<{radio.selector} cid='{cidCompo}'></{radio.selector}></div>
                 <br><br><br><br></div>"""
     else:
         text += f"""
                 <div class="item">
                 <p style="margin-left:15%; margin-right:15%;"><b><u>Question {nb+1} : </u></b></p><br>
                 <div style="margin-left:15%; margin-right:15%;">{q_mix_item[nb][0]}</div>
-                <div style="margin-left:15%; margin-right:15%;">\n<{radio.selector} cid='{radio.cid}'></{radio.selector}></div>
+                <div style="margin-left:15%; margin-right:15%;">\n<{radio.selector} cid='{cidCompo}'></{radio.selector}></div>
                 <br><br><br><br></div>"""
 
 ==
