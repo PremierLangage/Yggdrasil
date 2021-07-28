@@ -218,6 +218,9 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 ==
 
 form==#|markdown|
+
+{ CheckboxGroup|component }
+
   </div>
 
   <!-- Left and right controls -->
