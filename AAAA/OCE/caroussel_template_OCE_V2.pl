@@ -144,6 +144,7 @@ ListStructQuestion=[]
 for nb in range(len(q_mix_item)):
     cidCompo="radio"+str(nb)
     radio= Component(cid=cidCompo, selector= "c-checkbox-group")
+    ListStructQuestion.append(radio)
     radio.items=[]
     q, g, b = q_mix_item[nb]
     for i, s in enumerate(g):
@@ -180,7 +181,7 @@ text += f"""
     <span class="sr-only">Next</span>
   </a>
 </div>"""
-sandboxio.get_context()
+
 ==
 
 text==#|markdown|
@@ -233,6 +234,7 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 
 form==#|markdown|
 
+{{ comp[step]|component }}
 
 ==
 
