@@ -167,6 +167,20 @@ for nb in range(len(q_mix_item)):
                 <div style="margin-left:15%; margin-right:15%;">\n<{radio.selector} cid='{cidCompo}'></{radio.selector}></div>
                 <br><br><br><br></div>"""
 
+text += f"""
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>"""
+sandboxio.get_context()
 ==
 
 text==#|markdown|
@@ -218,19 +232,8 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 ==
 
 form==#|markdown|
-{{ sortlist|component }}
-  </div>
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+
 ==
 
 evaluator==#|python|
