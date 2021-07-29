@@ -199,9 +199,18 @@ def compile_source(src_name, prog_name, compiler, cflags=["-Wall", "-ansi"], lib
     return (returncode, spout, errout)
 
 # Compile the teacher solution
-compile_source("src_teacher.c", "teacher_prog", compiler, cflags, libflags)
+treturncode, tspout, terrout = compile_source("src_teacher.c", "teacher_prog", compiler, cflags, libflags)
 # Compile the student proposition
 returncode, spout, errout = compile_source("src_student.c", "student_prog", compiler, cflags, libflags)
+
+# Teacher Compilation control 
+
+# Compilation ok
+if len(tspout) + len(terrout) == 0:
+    text_compil = 'Compilation réussie'
+    compil_state = 'error'
+    class_state = 'error'
+    spout="erreur du code du prof"+tspout
 
 # Compilation ok
 if len(spout) + len(errout) == 0:
