@@ -206,8 +206,8 @@ returncode, spout, errout = compile_source("src_student.c", "student_prog", comp
 # Teacher Compilation control 
 
 # Compilation ok
-if len(tspout) + len(terrout) == 0:
-    text_compil = 'Compilation réussie'
+if len(tspout) + len(terrout) != 0:
+    text_compil = 'Compilation de la solution à échouée'
     compil_state = 'error'
     class_state = 'error'
     spout="erreur du code du prof"+tspout
