@@ -55,7 +55,7 @@ solution= f"""
 int i ;
 printf("entrez un entier >");
 scanf("%d",&i);
-print("votre entier :",i)
+printf("votre entier :",i)
 """
 
 editor1.code = f"""
