@@ -210,7 +210,7 @@ if len(tspout) + len(terrout) != 0:
     text_compil = 'Compilation de la solution à échouée'
     compil_state = 'error'
     class_state = 'error'
-    spout="erreur du code du prof"+tspout
+    spout="erreur du code du prof error :"+tspout
 
 # Compilation ok
 if len(spout) + len(errout) == 0:
