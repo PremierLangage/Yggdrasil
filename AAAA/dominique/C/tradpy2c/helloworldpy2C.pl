@@ -3,7 +3,7 @@
 
 
 
-extends= trad1.pl
+extends= /ComputerScience/C/template/modelProgC2021.pl
 
 tag=boucle
 
