@@ -48,15 +48,17 @@ import random
 prime= random.sample([2,3,5,7,11,13],2)
 
 
-solution= """
-printf("Bonjour les L2 maths-info\n");
 
-"""
 
 editor1.code = """
 print("Bonjour les L2 maths-info")
 """
 
 
+
+==
+
+solution==
+printf("Bonjour les L2 maths-info\n");
 
 ==
