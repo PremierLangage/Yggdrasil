@@ -211,6 +211,7 @@ if len(tspout) + len(terrout) != 0:
     compil_state = 'error'
     class_state = 'error'
     spout="erreur du code du prof error :"+tspout
+    errout = "erreur du code du prof error :"+terrout
 
 # Compilation ok
 if len(spout) + len(errout) == 0:
