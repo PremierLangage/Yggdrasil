@@ -22,13 +22,12 @@ age=int(input())
 # Le perroquet du capitaine a actuellement __ ans.
 ==
 
-
 text==
 **(1)** Ecrivez un programme utilisant une unique variable **age** qui lit un entier (un age) au clavier puis affiche la phrase :
 
 	"Le_capitaine_a_XX_ans._Dans_{{X}}_ans_il_aura_YY_ans."
 
-<u>Information</u> : les &#34;&#95;&#34; représentent des espaces. Naturellement vous afficherez les espaces et pas les &#34;&#95;&#34; ! 
+<u>**Information**</u> : les &#34;&#95;&#34; représentent des espaces. Naturellement vous afficherez les espaces et pas les &#34;&#95;&#34; ! 
 
 <br>  
 
@@ -37,7 +36,7 @@ text==
 
 	"Le_perroquet_du_capitaine_a_actuellement_ZZ_ans.
 
-<u>Information</u> : une petite remarque sur "print"
+<u>**Information**</u> : une petite remarque sur "print"
 
 	print("(",3,")") # affiche ( 3 ) la virgule ajoute un espace.
 	print("(%d)",3) # affiche (3) aucun espace.   
