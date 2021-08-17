@@ -39,7 +39,7 @@ Le but de cet exercice est d'avoir une ligne de code de la forme :
 
     var = expression
 
-telle que la valeur de *var* passe successivement de la valeur **{{val1}}** à la valeur **{{val2}}** 
+telle que la valeur de *var*  passe successivement de la valeur **{{val1}}** à la valeur **{{val2}}** 
 puis de la valeur **{{val2}}** à la valeur **{{val1}}**, a chaque fois que l'on exécute la ligne.
 
 Ecrivez l'expression qui permet de faire cela.
