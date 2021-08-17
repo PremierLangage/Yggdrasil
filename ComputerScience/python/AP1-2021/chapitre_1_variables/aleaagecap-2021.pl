@@ -1,5 +1,6 @@
-#author=Dominique Revuz 
 
+
+author=Dominique Revuz 
 title= Lecture d'un entier
 
 tag=input|print|variable|type
@@ -23,26 +24,26 @@ age=int(input())
 ==
 
 
+
 text==
-**(1)** Ecrivez un programme utilisant une unique variable **age** qui lit un entier (un age) au clavier puis affiche la phrase :
+Ecrivez un programme utilisant une unique variable **age** qui lit cette information au clavier puis affiche :
 
 	"Le_capitaine_a_XX_ans._Dans_{{X}}_ans_il_aura_YY_ans."
 
-<u>Information</u> : les (les "_" sont des espaces) "_" représentent des espaces. Naturellement vous afficherez les espaces et pas les "_" ! 
-
-<br>  
-
-**(2)** Puis, sachant que dans {{Y}} ans, le perroquet aura {{Z}} de l’âge du capitaine (arrondi à l'année inférieure)
+sur **une ligne** (les "_" sont des espaces). 
+Puis, sachant que dans {{Y}} ans, le perroquet aura {{Z}} de l’âge du capitaine (arrondi à l'année inférieure)
  quel est l'âge actuel du perroquet ? Le programme doit afficher:
 
 	"Le_perroquet_du_capitaine_a_actuellement_ZZ_ans.
 
-<u>Information</u> : une petite remarque sur "print"
+
+Une petite remarque sur print : 
 
 	print("(",3,")") # affiche ( 3 ) la virgule ajoute un espace.
 	print("(%d)",3) # affiche (3) aucun espace.   
 	a=3
 	print(f"({a})") # affiche (3)   
+
 
 ==
 
@@ -53,10 +54,12 @@ X,x= random.choice([("deux",2),("trois",3),("quatre",4) ,("cinq",5)])
 Y,y= random.choice([("deux",2),("trois",3),("quatre",4),("cinq",5)])
 Z,z= random.choice([("la moitié",2),("le tiers",3),("le quart",4)])
 
+
 import jinja2
 soluce= jinja2.Template(soluce).render(globals())
 code=  jinja2.Template(code).render(globals())
 ==
+
 
 plsoluce==
 Test 1 |33
