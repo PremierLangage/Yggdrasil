@@ -3,7 +3,7 @@
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
-tag=initialisation|variable
+tag=initialisation|variable|type
 
 #author = CC + DR
 
@@ -37,9 +37,6 @@ else:
 >>> type({})=={} # La variables est elle du bon type ({}) ?
 True
 """.format(var, type_var, type_var)
-
-
-
 
 ==
 
