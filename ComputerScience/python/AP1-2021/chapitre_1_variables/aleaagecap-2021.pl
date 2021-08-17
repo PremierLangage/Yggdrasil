@@ -24,13 +24,13 @@ age=int(input())
 
 
 text==
-(1) Ecrivez un programme utilisant une unique variable **age** qui lit un entier (un age) au clavier puis affiche la phrase :
+**(1)** Ecrivez un programme utilisant une unique variable **age** qui lit un entier (un age) au clavier puis affiche la phrase :
 
 	"Le_capitaine_a_XX_ans._Dans_{{X}}_ans_il_aura_YY_ans."
 
-Information : les "_" représentent des espaces. Naturellement vous afficherez les espaces et pas les "_" !  
+<u>Information</u> : les "_" représentent des espaces. Naturellement vous afficherez les espaces et pas les "_" ! <br>  
 
-(2) Puis, sachant que dans {{Y}} ans, le perroquet aura {{Z}} de l’âge du capitaine (arrondi à l'année inférieure)
+**(2)** Puis, sachant que dans {{Y}} ans, le perroquet aura {{Z}} de l’âge du capitaine (arrondi à l'année inférieure)
  quel est l'âge actuel du perroquet ? Le programme doit afficher:
 
 	"Le_perroquet_du_capitaine_a_actuellement_ZZ_ans.
