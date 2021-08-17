@@ -28,7 +28,9 @@ text==
 
 	"Le_capitaine_a_XX_ans._Dans_{{X}}_ans_il_aura_YY_ans."
 
-<u>Information</u> : les "_" représentent des espaces. Naturellement vous afficherez les espaces et pas les "_" ! <br>  
+<u>Information</u> : les "_" représentent des espaces. Naturellement vous afficherez les espaces et pas les "_" ! 
+
+<br>  
 
 **(2)** Puis, sachant que dans {{Y}} ans, le perroquet aura {{Z}} de l’âge du capitaine (arrondi à l'année inférieure)
  quel est l'âge actuel du perroquet ? Le programme doit afficher:
