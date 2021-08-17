@@ -1,4 +1,3 @@
-# Non-testé parce que PL ne semble pas marcher pour le moment...
 # author=Wenjie Fang
 
 title=Distinguer le six !
