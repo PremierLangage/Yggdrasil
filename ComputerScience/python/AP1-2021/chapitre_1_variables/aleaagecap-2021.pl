@@ -37,7 +37,7 @@ text==
 
 	"Le_perroquet_du_capitaine_a_actuellement_ZZ_ans.
 
-Information : une petite remarque sur "print"
+<u>Information</u> : une petite remarque sur "print"
 
 	print("(",3,")") # affiche ( 3 ) la virgule ajoute un espace.
 	print("(%d)",3) # affiche (3) aucun espace.   
