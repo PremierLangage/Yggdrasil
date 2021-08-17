@@ -51,7 +51,9 @@ else:
             if '_foo' == '':
                 grade = tools.grade_wrong("Il manque probablement un cas")    
             else:
-                if _foo != 'OK':
+                if _foo == '':
+                    grade = tools.grade_wrong("Hum... vous n'affichez rien pour la valeur x = " + str(x))
+                elif _foo != 'OK':
                     grade = tools.grade_wrong('Hum... vous affichez ' + _foo + ' pour la valeur x = ' + str(x))
                 else:
                     _foo = ''
@@ -61,7 +63,9 @@ else:
                     if '_foo' == '':
                         grade = tools.grade_wrong("Il manque probablement un cas") 
                     else:
-                        if _foo != 'KO':
+                        if _foo == '':
+                            grade = tools.grade_wrong("Hum... vous n'affichez rien pour la valeur x = " + str(x))
+                        elif _foo != 'KO':
                             grade = tools.grade_wrong('Hum... vous affichez ' + _foo + ' pour la valeur x = ' + str(x))
                         else:
                             grade= 100, tools.good('Bonne r&#233;ponse !')
