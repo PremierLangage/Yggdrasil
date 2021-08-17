@@ -1,5 +1,4 @@
 
-
 #author=Marc  & Dominique 
 
 title= Lecture d'un caractère
