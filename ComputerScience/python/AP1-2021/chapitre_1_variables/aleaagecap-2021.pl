@@ -28,7 +28,7 @@ text==
 
 	"Le_capitaine_a_XX_ans._Dans_{{X}}_ans_il_aura_YY_ans."
 
-<u>Information</u> : les "_" représentent des espaces. Naturellement vous afficherez les espaces et pas les "_" ! 
+<u>Information</u> : les (les "_" sont des espaces) "_" représentent des espaces. Naturellement vous afficherez les espaces et pas les "_" ! 
 
 <br>  
 
