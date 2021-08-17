@@ -1,8 +1,10 @@
+# 17/08/2021 : y'en a qui bosse !
 
-Liste des TAGS:
+Liste des TAGS pour contrôle d'orthographe:
 
 input|print|variable|type
 valeur|variable|bascule|expression
 expression|conversion
 input|print|variable|if|else|conditionnelles|type|operation
 initialisation|variable|type
+input|affectation|print|variable|if|elif|else|conditionnelles
