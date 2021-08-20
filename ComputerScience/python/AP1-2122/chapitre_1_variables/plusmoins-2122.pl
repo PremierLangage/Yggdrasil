@@ -12,7 +12,6 @@ extends=/ComputerScience/python/AP1-1920/templates/prosoluce.pl
 before=
 
 text==
-# input print 
 Ecrire un programme qui demande à l’utilisateur de saisir quatre entiers au clavier (un par ligne), affiche ensuite une valeur par ligne,
  puis leur somme et leur moyenne sur la ligne suivante. Par exemple, si l’utilisateur entre les valeurs
 	12, 3, 14 et 5,
