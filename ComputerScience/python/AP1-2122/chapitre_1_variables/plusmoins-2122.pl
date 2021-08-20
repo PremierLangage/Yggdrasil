@@ -6,7 +6,9 @@
 
 title=Manipulation de nombres
 name= a+b+c+d
+
 tag=input|print
+
 extends=/ComputerScience/python/AP1-1920/templates/prosoluce.pl
 
 before=
