@@ -1,4 +1,4 @@
-# au 20/08/2021 : test OE ne fonctionne pas !!!!
+# au 20/08/2021 : test OCE ne fonctionne pas !!!!
 
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
