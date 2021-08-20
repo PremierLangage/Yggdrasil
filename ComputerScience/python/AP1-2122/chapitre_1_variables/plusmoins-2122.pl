@@ -23,7 +23,7 @@ le programme affiche (attention aux espaces !):
 	5
 	somme = 34 , moyenne = 8.5
 
-Un seul espace entre = et 34. 
+informations : Un seul espace entre = et 34. 
 == 
 
 code==
