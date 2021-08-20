@@ -23,7 +23,7 @@ le programme affiche :
 	5
 	somme = 34 , moyenne = 8.5
 
-<u>**Information**</u> : Soyez vigilant aux espaces. Par exemple pour "somme = 34", vous devez écrire somme<u>**espace**</u>=<u>**espace**</u>34 
+<u>**Information**</u> : Soyez vigilant aux espaces. Par exemple pour "somme = 34", vous devez écrire **somme**<u>espace</u>**=**<u>espace</u>**34** 
 == 
 
 code==
