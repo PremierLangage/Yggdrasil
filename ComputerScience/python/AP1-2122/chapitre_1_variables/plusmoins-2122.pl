@@ -56,8 +56,6 @@ Test1
 5
 ==
 
-
-
 mplsoluce5==
 Test génial
 12
@@ -65,7 +63,6 @@ Test génial
 1411
 5111
 ==
-
 
 soluce==
 a=int(input())
