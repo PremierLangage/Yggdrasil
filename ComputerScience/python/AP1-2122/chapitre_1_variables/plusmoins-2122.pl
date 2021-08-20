@@ -15,7 +15,7 @@ text==
 Ecrire un programme qui demande à l’utilisateur de saisir quatre entiers au clavier (un par ligne), affiche ensuite une valeur par ligne,
  puis leur somme et leur moyenne sur la ligne suivante. Par exemple, si l’utilisateur entre les valeurs
 	12, 3, 14 et 5,
-le programme affiche (attention aux espaces !):
+le programme affiche :
 	
 	12
 	3
@@ -23,7 +23,7 @@ le programme affiche (attention aux espaces !):
 	5
 	somme = 34 , moyenne = 8.5
 
-informations : Un seul espace entre = et 34. 
+<u>**Information**</u> : Soyez vigilant aux espaces. Par exemple pour "somme = 34", vous devez écrire somme<u>**espace**</u>=<u>**espace**</u>34 
 == 
 
 code==
