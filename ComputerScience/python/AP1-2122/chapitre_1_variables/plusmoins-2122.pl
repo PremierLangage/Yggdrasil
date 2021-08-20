@@ -1,6 +1,7 @@
 # Wenjie Fang 23/09/2020 Espaces symétrisés
 # Boris Jabot 11/09/2019 KO
 # Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
+
 # author=Dominique Revuz 
 
 title=Manipulation de nombres
@@ -22,8 +23,6 @@ le programme affiche (attention aux espaces !):
 	14
 	5
 	somme = 34 , moyenne = 8.5
-
-
 
 Un seul espace entre = et 34. 
 == 
