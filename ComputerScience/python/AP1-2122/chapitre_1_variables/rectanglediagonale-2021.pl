@@ -10,16 +10,15 @@ title = Diagonale d'un rectangle
 tag=input|print|puissance
 
 text==  
-Les dimensions d'un rectangle sont entrées par l'utilisateur, le programme testeur fournira les deux valeurs.
-
 Ecrire un programme qui lit les dimensions d'un rectangle au clavier, puis calcule et affiche le périmètre et la surface du rectangle ainsi que
 la longueur de la diagonale sous la forme :
 
 Le périmètre est ?? et la surface est ?? ! 
 
 La diagonale mesure ?? !
+(Pensez à **)
 
-<u>**Information**</u> : Le programme testeur fournira les deux valeurs pour évaluation et pensez à **
+<u>**Information**</u> : Le programme testeur fournira les deux valeurs pour évaluation. 
 ==
 
 soluce==
