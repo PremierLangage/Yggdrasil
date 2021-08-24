@@ -6,7 +6,7 @@ extends=/ComputerScience/python/template/soluce.pl
 
 title = Rectangle fixe
 
-tag = print
+tag = input|print|variable|type|operation
 
 text== 
 Les dimensions d'un rectangle sont 3 et 7.
