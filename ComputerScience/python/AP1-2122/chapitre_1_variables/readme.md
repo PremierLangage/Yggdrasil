@@ -18,5 +18,7 @@ Pour l'instant j'ai (OCE) fait une copie locale de la feuille de tp principale e
 
 Ci-dessous, une description de chaque exercice et des changements effectués par rapport à la mouture précédente (ainsi que quelques commentaires).
 
-Tous les exercices ont été testé en exécution sous l'éditeur PL mais il y en a qui plante : 
+Tous les exercices ont été testé en exécution sous l'éditeur PL mais il y en a qui plante (signalé dans le source): 
 
+    - expressionaleatoires-2122.pl
+    
