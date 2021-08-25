@@ -21,4 +21,5 @@ Ci-dessous, une description de chaque exercice et des changements effectués par
 Tous les exercices ont été testé en exécution sous l'éditeur PL mais il y en a qui plante (signalé dans le source): 
 
     - expressionaleatoires-2122.pl
+    - operateursbooleens-2122.pl
     
