@@ -22,4 +22,4 @@ Tous les exercices ont été testé en exécution sous l'éditeur PL mais il y e
 
     - expressionaleatoires-2122.pl
     - operateursbooleens-2122.pl
-    
+    - priority-2122.pl
