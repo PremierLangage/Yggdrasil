@@ -40,7 +40,7 @@ op1, op2, op, ans = random_op()
 point = "point"
 ==
 
-title = Calcul mental
+title = Autres : Calcul mental
 
 text ==
 Quel est le résultat de l'opération $% {{ op1 }} {{ op }} {{ op2 }} %$ ?
