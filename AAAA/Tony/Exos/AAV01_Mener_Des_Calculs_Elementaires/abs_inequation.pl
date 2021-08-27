@@ -3,7 +3,7 @@
 #Etat = A débugger
 extends = /model/math/expr.pl
 
-title = Inéquation avec valeur absolue
+title = Autres : Inéquation avec valeur absolue
 
 lang = fr
 
