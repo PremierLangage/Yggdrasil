@@ -1,6 +1,6 @@
 #Auteur  = inconnu, récupéré de la base commune, repris par Tony Février et Jeanne Parmentier
 #Date = 22/07/2021
-#Etat = problème dans la génération aléatoire ?
+#Etat = OK
 extends = /model/math/poly.pl
 
 title = Savoir résoudre une équation du second degré
