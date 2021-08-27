@@ -3,7 +3,7 @@
 #Etat = OK
 extends = /model/math/frac.pl
 
-title = Addition de fractions
+title = Autres : Addition de fractions
 
 before ==
 from sympy import numer, denom
