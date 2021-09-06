@@ -14,7 +14,7 @@ grader=@ /grader/evaluator.py
 text==
 Quelle est la configuration éléctronique de l'élément  **{{name}}** avec $%Z%$= {{Z}}  ?
 
-Pour être validé dans l'application, on notera 1s2 2s2 2p6...sans mettre en exposant le nombre d'électrons
+Pour être validé dans l'application, on notera 1s2 2s2 2p6...sans mettre en exposant le nombre d'électrons (contrairement à ce qui est demandé dans une copie papier)
 <br/>
 <font font-size="10px" color="blue" > nbessai = {{nbessai}}; nbsuccess ={{nbsuccess}}</font>
 ==
@@ -36,7 +36,7 @@ table=[("Hydrogène, H 	",1 ),("Hélium   , He 	",2 ),
     ("Cobalt   , Co 	",27),("Nickel   , Ni 	",28),("Cuivre   , Cu 	",29),("Zinc 	  , Zn 	",30),
     ("Gallium  , Ga 	",31),("Germanium, Ge 	",32),("Arsenic  , As 	",33),("Sélénium , Se 	",34),
     ("Brome 	  , Br 	",35),("Krypton  , Kr 	",36)]
-#table=[("Chrome   , Cr 	",24 )]
+#table=[("Chrome   , Cr 	",24 ),("Cuivre   , Cu 	",29)]
 name, Z = random.choice(table)
 #random.randint(1,36)
 
@@ -72,15 +72,16 @@ import verif
 
 
 try: 
-    print("La configuration du ",name.split(",")[0],"  est:",verif.strfromz(Z),file=sys.stderr)
+    print("On vous a demandé la configuration du ",name.split(",")[0],"la réponse correcte est:",verif.strfromz(Z),file=sys.stderr)
     s=response['txt_answer'].lower()
     nbessai += 1
     if verif.verif(s,Z) :
         nbsuccess += 1
         grade = (100, success_feedback)
     else:
-        print("votre response est :", response['txt_answer'].lower(), file=sys.stderr)
+        print("La réponse que vous avez donnée est :", response['txt_answer'].lower(), file=sys.stderr)
         grade = (0, failure_feedback)
+        print("Réessayez avec le nouvel élément donné ci-dessus")
     exec(before)
 except:
     print(traceback.format_exc(), file=sys.stderr)
