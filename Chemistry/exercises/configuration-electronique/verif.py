@@ -9,7 +9,12 @@ def strfromz(Z):
     >>> strfromz(10)
     '1s2 2s2 2p6'
     """
-    
+    """
+    #s est la configuration electronique
+    #s est contruit en ajoutant au début de la chaine la prochaine orbitale et l'indice maximum si le reste est plus grand que l'indice maximum
+    #ou bien le reste (qui est mis dans la variable Z)
+    """
+
     if Z==24:
         s="1s2 2s2 2p6 3s2 3p6 4s1 3d5"
     elif Z==29:
