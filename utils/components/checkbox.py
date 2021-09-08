@@ -39,8 +39,6 @@ class Checkbox(Component):
             _right_ = right.splitlines()
         elif isinstance(right, list):
             _right_ = right
-        else:
-            _right_ = [right]
 
         if isinstance(wrong, str):
             _wrong_ = wrong.splitlines()
