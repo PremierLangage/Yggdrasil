@@ -38,12 +38,16 @@ class Checkbox(Component):
         if isinstance(right, str):
             _right_ = right.splitlines()
         elif isinstance(right, list):
-            _right_= right
+            _right_ = right
+        else:
+            _right_ = [right]
 
         if isinstance(wrong, str):
             _wrong_ = wrong.splitlines()
         elif isinstance(wrong, list):
             _wrong_ = wrong
+        else:
+            _wrong_ = [wrong]
 
         if nbitems is None:
             nbitems = len(_right_) + len(_wrong_)
