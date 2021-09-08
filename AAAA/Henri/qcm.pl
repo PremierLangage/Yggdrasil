@@ -21,7 +21,6 @@ Combien y en a t-il ?
 
 right ==
 0
-0
 ==
 
 wrong ==
