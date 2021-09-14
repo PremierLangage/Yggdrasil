@@ -70,9 +70,9 @@ else:
         if value == vars_values[0]:
             grade = (100, '<span class="success-state">Bravo, vous avez trouv&eacute; la bonne valeur.</span>')
         else:
-            grade = (0, '<span class="success-state">Mauvaise r&eacute;ponse, <b>a</b> aura pour valeur '+str(vars_values[0])+' apr&eagrave;s ces instructions.</span>')
+            grade = (0, '<span class="success-state">Mauvaise r&eacute;ponse, <b>a</b> aura pour valeur '+str(vars_values[0])+' apr&egrave;s ces instructions.</span>')
     except:
-        grade = (0, '<span class="success-state">Mauvaise r&eacute;ponse, <b>a</b> aura pour valeur '+str(vars_values[0])+' apr&eagrave;s ces instructions.</span>')
+        grade = (0, '<span class="success-state">Mauvaise r&eacute;ponse, <b>a</b> aura pour valeur '+str(vars_values[0])+' apr&egrave;s ces instructions.</span>')
 
 ==
 
