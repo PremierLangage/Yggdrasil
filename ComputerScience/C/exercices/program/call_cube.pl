@@ -34,7 +34,6 @@ nombre 9.*).
 L'objectif est ici de ne presque rien coder mais de réutiliser les deux 
 premières fonctions pour construire la troisième.
 
-<br />
 ==
 
 editor.code==
