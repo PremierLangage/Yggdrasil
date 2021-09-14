@@ -85,3 +85,11 @@ checks_args_stdin==
 ==
 
 
+astuces==#|python|
+[
+  { "content": """En langage C, un programme à paramètres est une fonction `main` ayant deux arguments : `argc` qui donne le nombre d'arguments et `argv` qui est le tableau des arguments transmis au programme."""},
+  { "content": """`argv[0]` est le nom du programme compilé et en cours d'exécution. Ce n'est pas un argument standard."""},
+  { "content": """Une boucle `for` allant de `1` inclus à `argc` exclus est une bonne stratégie."""},
+  { "content": """De nombreuses fonctions permettent d'écrire juste un mot avant de retourner directement à la ligne. `printf` et `puts` font facilemnet ce travail."""}
+]
+==
