@@ -91,8 +91,8 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """Lisez bien l'énoncé, une bonne boucle `for` sur les éléments du tableau `argv[1]` doit suffire"""},
-  { "content": """Les lettres (minuscules et majuscules) sont rangées dans l'ordre croissant dans le code ASCII. Ainsi, une lettre 'char c;' est minucule si `c >= 'a'` et si `c <= 'z'`."""},
+  { "content": """Lisez bien l'énoncé, une bonne boucle `for` sur les éléments du tableau `argv[1]` doit suffire."""},
+  { "content": """Les lettres (minuscules et majuscules) sont rangées dans l'ordre croissant dans le code ASCII. Ainsi, une lettre `char c;` est minucule si `c >= 'a'` et si `c <= 'z'`."""},
   { "content": """Attention à bien respecter les affichages finaux : `printf("Description de la quantité : %d\n", var);` est un bon type de commande ne générant pas d'espace superflu."""}
 ]
 ==
