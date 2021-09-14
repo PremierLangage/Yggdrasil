@@ -63,16 +63,16 @@ if vars_values is None:
     if inputbox.value == "Erreur":
         grade = (100, '<span class="success-state">Bravo, il y a bien une instruction qui d&eacute;clanche une erreur.</span>')
     else:
-        grade = (0, '<span class="error-state">Mauvaise réponse, une instruction va déclancher une Erreur.</span>')
+        grade = (0, '<span class="error-state">Mauvaise r&eacute;ponse, une instruction va d&eacute;clancher une Erreur.</span>')
 else:
     try: 
         value = int(inputbox.value)
         if value == vars_values[0]:
-            grade = (100, '<span class="success-state">Bravo, vous avez trouvé la bonne valeur.</span>')
+            grade = (100, '<span class="success-state">Bravo, vous avez trouv&eacute; la bonne valeur.</span>')
         else:
-            grade = (0, '<span class="success-state">Mauvaise réponse, <b>a</b> aura pour valeur '+str(vars_values[0])+' après ces instructions.</span>')
+            grade = (0, '<span class="success-state">Mauvaise r&eacute;ponse, <b>a</b> aura pour valeur '+str(vars_values[0])+' apr&eagrave;s ces instructions.</span>')
     except:
-        grade = (0, '<span class="success-state">Mauvaise réponse, <b>a</b> aura pour valeur '+str(vars_values[0])+' après ces instructions.</span>')
+        grade = (0, '<span class="success-state">Mauvaise r&eacute;ponse, <b>a</b> aura pour valeur '+str(vars_values[0])+' apr&eagrave;s ces instructions.</span>')
 
 ==
 
