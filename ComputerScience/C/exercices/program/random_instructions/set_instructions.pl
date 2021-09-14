@@ -47,6 +47,18 @@ form==
 ==
 
 evaluator==#|python|
+
+form = """
+<style>
+.error-state{
+   padding: 10px;
+}
+.success-state{
+   padding: 10px;
+}
+</style>
+"""
+
 if vars_values is None:
     if inputbox.value == "Erreur":
         grade = (100, '<span class="success-state">Bravo, il y a bien une instruction qui d&eacute;clanche une erreur.</span>')
