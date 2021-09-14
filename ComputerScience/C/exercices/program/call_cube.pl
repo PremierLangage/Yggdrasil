@@ -95,5 +95,10 @@ checks_args_stdin==
  ["Test aléatoire", [str(randint(-100, 100))], ""]]
 ==
 
-
+astuces==#|python|
+[
+  { "content": """En langage C, on peut enchainer les appels de fonction `f(g(arg))` est par exemple le calcul de la fonction `g` sur l'argument `arg` et une fois ce calcul opéré, la fonction `f` est aapliqué sur le résultat."""},
+  { "content": """Il doit suffire de retourner la fonction `display_info` mais en lui donnant pour second argument un bon retour de la fonction `calculate_cube`."""}
+]
+==
 
