@@ -49,7 +49,7 @@ form==
 evaluator==#|python|
 if vars_values is None:
     if inputbox.value == "Erreur":
-        grade = (100, '<span class="success-state">Bravo, il y a bien une instruction qui déclanche une erreur.</span>')
+        grade = (100, '<span class="success-state">Bravo, il y a bien une instruction qui d&eacute;clanche une erreur.</span>')
     else:
         grade = (0, '<span class="error-state">Mauvaise réponse, une instruction va déclancher une Erreur.</span>')
 else:
