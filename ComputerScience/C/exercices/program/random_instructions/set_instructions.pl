@@ -52,11 +52,9 @@ form = """
 <style>
 .error-state{
    padding: 10px;
-   border: 5px solid red;
 }
 .success-state{
    padding: 10px;
-   border: 5px solid green;
 }
 </style>
 """
