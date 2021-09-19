@@ -28,3 +28,4 @@ encore le compilateur `clang`, les exercices seront bien sur le standard C 2017.
 ==
 
 @ /ComputerScience/C/exercices/L2_C17/program/hello.pl
+@ /ComputerScience/C/exercices/L2_C17/program/order_calls.pl
