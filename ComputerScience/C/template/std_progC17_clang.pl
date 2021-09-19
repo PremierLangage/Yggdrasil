@@ -17,6 +17,11 @@
 #*****************************************************************************
 # This is an adaptation of general template for prog C L2 - S3
 # --> clang and -std=c17
+#
+# This template juste overwrite compiler 
+# (TODO since clang is not inside the sandbox)
+# and overwrite options of compilation. (-std=c17)
+#
 #*****************************************************************************
 
 extends=/ComputerScience/C/template/std_progC.pl
