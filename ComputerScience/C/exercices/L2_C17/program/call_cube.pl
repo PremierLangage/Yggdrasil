@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/C/template/std_progC.pl
+extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Nicolas Borie
 title=Assemblage simple de fonctions
@@ -22,7 +22,7 @@ tag=programme|appel|fonction|simple|facile
 
 editor.height=250px
 
-text==
+text==#|markdown|
 
 Écrire une fonction **show_cube** qui prend en argument un entier **n** 
 (par exemple 3) et qui affiche une phrase donnant le cube de cet entier 
@@ -36,7 +36,7 @@ premières fonctions pour construire la troisième.
 
 ==
 
-editor.code==
+editor.code==#|c|
 void display_info(int nb, int cube){
   printf("Le cube du nombre %d est le nombre %d.\n", nb, cube);
 }
@@ -46,11 +46,11 @@ int calculate_cube(int nb){
 }
 
 void show_cube(int n){
-  /* Votre code ici... */
+  // Votre code ici...
 }
 ==
 
-solution==
+solution==#|c|
 
 void display_info(int nb, int cube){
   printf("Le cube du nombre %d est le nombre %d.\n", nb, cube);
@@ -83,7 +83,7 @@ int main(int argc, char* argv[]){
 
 ==
 
-checks_args_stdin==
+checks_args_stdin==#|python|
 [["Exécution simple", ["1"], ""],
  ["Un classique", ["12"], ""],
  ["Un négatif", ["-7"], ""],
