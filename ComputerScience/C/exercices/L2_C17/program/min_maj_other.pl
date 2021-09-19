@@ -36,7 +36,9 @@ compté sur la sortie standard via l'affichage suivant :
 
 
 Où X, Y et Z seront remplacés par les entiers qui vont bien. Pas besoin
-d'adapter les pluriels selon les comptes trouvés. 
+d'adapter les pluriels selon les comptes trouvés. Il y a des espaces avant
+et après les deux points sur chaque lignes. Toutefois, ne rajouter aucun 
+autre espace superflu.
 ==
 
 editor.code==#|c|
