@@ -1,5 +1,5 @@
 #*****************************************************************************
-#  Copyright (C) 2019 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#  Copyright (C) 2021 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
 #  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
 #  Creative Commons CC-by-SA 3.0
@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/C/template/std_progC.pl
+extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Nicolas Borie
 
