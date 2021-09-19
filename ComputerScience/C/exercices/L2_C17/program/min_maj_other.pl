@@ -42,10 +42,10 @@ autre espace superflu.
 ==
 
 editor.code==#|c|
-#include ...
+#include <...>
 
 int main(int argc, char* argv[]){
-  /* Votre code ici... */
+  // Votre code ici...
 }
 ==
 
