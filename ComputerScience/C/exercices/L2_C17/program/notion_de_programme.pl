@@ -41,3 +41,4 @@ encore le compilateur `clang`, les exercices seront bien sur le standard C 2017.
 @ /ComputerScience/C/exercices/program/random_instructions/set_instructions8.pl
 
 @ /ComputerScience/C/exercices/program/compilation.pl
+@ /ComputerScience/C/exercices/program/langage_c.pl
