@@ -61,7 +61,7 @@ void display_3(void){
 }
 
 int main(int argc, char* argv[]){
-  /* votre code ici... */
+  // votre code ici...
 }
 ==
 
