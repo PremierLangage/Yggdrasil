@@ -24,7 +24,7 @@ author = Nicolas Borie
 
 tag=C|compilation|clang
 
-text== 
+text==#|markdown|
 Mettre en ordre toutes les étapes transformant des sources en langage C 
 en un éxécutable fonctionnel à l'aide du compilateur (**gcc** ou **clang**).
 
