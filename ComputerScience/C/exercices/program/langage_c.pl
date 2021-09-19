@@ -30,8 +30,17 @@ random.shuffle(group.items)
 
 title = Le langage C
 
-text==
-Sélectionnez les caractéristiques du Langage C
+text==#|markdown|
+Sélectionnez les caractéristiques du Langage C.
+
+<style>
+.error-state{
+   padding: 10px;
+}
+.success-state{
+   padding: 10px;
+}
+</style>
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
@@ -40,7 +49,7 @@ form==
 ==
 
 # EVALUATE THE STUDENT ANSWER
-evaluator==
+evaluator==#|python|
 right = 0
 error = 0
 for item in group.items:
@@ -61,7 +70,7 @@ nb_error = (4 - right) + error
 note = 25*max([0, 4 - nb_error])
 
 if (nb_error == 0):
-    msg = '<span class="success-state">Bravo, cela caractérise bien le langage C.</span>.'
+    msg = '<span class="success-state">Bravo, cela caract&eacute;rise bien le langage C.</span>.'
 else:
     msg = '<span class="error-state">Vous avez fait %s erreurs.</span>' % nb_error
 
