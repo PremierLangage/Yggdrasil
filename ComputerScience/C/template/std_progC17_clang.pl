@@ -33,7 +33,7 @@ from random import randint
 nb_attempt=0
 
 # Place here your favorite C compiler
-compiler="gcc"
+compiler="clang"
 # PLace here the compilation flags
 cflags=["-Wall", "-std=c17"]
 # Place here library flags
