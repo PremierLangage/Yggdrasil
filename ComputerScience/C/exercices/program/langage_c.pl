@@ -65,6 +65,8 @@ for item in group.items:
     elif checked:
         item['css'] = 'error-state'
         error += 1
+    else :
+        item['css'] = 'normal'
 
 nb_error = (4 - right) + error
 note = 25*max([0, 4 - nb_error])
