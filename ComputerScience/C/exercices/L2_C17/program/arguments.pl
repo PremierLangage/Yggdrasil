@@ -21,7 +21,7 @@ author=Nicolas Borie
 title=Afficher les arguments d'un programme C
 tag=programme|argument|terminal|affichage
 
-text==
+text==#|markdown|
 
 Écrire un programme C qui affiche les arguments que l'on lui a passés 
 lors de son appel en ligne de commandes. Le programme ne devra
@@ -44,11 +44,11 @@ Veuillez à bien placer un seul argument par ligne, sans espace avant ou après,
 juste un retour à la ligne.
 ==
 
-editor.code==
-#include ...
+editor.code==#|c|
+#include <...>
 
 int main(...){
-  ...
+  // Votre code ici...
 }
 
 ==
@@ -59,7 +59,7 @@ code_before==
 code_after==
 ==
 
-solution==
+solution==#|c|
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
@@ -73,7 +73,7 @@ int main(int argc, char* argv[]){
 
 ==
 
-checks_args_stdin==
+checks_args_stdin==#|python|
 [["Test basique", ["argument1"], ""],
 ["Sans argument", [], ""],
 ["Argument multiple", ["arg1", "arg2", "arg3", "arg4"], ""],
