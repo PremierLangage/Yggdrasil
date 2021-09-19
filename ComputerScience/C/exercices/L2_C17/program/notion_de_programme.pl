@@ -29,3 +29,15 @@ encore le compilateur `clang`, les exercices seront bien sur le standard C 2017.
 
 @ /ComputerScience/C/exercices/L2_C17/program/hello.pl
 @ /ComputerScience/C/exercices/L2_C17/program/order_calls.pl
+@ /ComputerScience/C/exercices/L2_C17/program/call_cube.pl
+
+@ /ComputerScience/C/exercices/program/random_instructions/set_instructions1.pl
+@ /ComputerScience/C/exercices/program/random_instructions/set_instructions2.pl
+@ /ComputerScience/C/exercices/program/random_instructions/set_instructions3.pl
+@ /ComputerScience/C/exercices/program/random_instructions/set_instructions4.pl
+@ /ComputerScience/C/exercices/program/random_instructions/set_instructions5.pl
+@ /ComputerScience/C/exercices/program/random_instructions/set_instructions6.pl
+@ /ComputerScience/C/exercices/program/random_instructions/set_instructions7.pl
+@ /ComputerScience/C/exercices/program/random_instructions/set_instructions8.pl
+
+@ /ComputerScience/C/exercices/program/compilation.pl
