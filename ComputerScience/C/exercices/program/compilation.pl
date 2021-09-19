@@ -19,14 +19,14 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 # FORM
-title = Étapes durant la compilation avec gcc
+title = Étapes durant la compilation d'un programme C
 author = Nicolas Borie
 
-tag=C|compilation|gcc
+tag=C|compilation|clang
 
 text== 
 Mettre en ordre toutes les étapes transformant des sources en langage C 
-en un éxécutable fonctionnel à l'aide du compilateur **gcc**.
+en un éxécutable fonctionnel à l'aide du compilateur (**gcc** ou **clang**).
 ==
 
 form = {{ sortlist|component }}
