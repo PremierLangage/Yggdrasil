@@ -27,6 +27,15 @@ tag=C|compilation|clang
 text== 
 Mettre en ordre toutes les étapes transformant des sources en langage C 
 en un éxécutable fonctionnel à l'aide du compilateur (**gcc** ou **clang**).
+
+<style>
+.error-state{
+   padding: 10px;
+}
+.success-state{
+   padding: 10px;
+}
+</style>
 ==
 
 form = {{ sortlist|component }}
