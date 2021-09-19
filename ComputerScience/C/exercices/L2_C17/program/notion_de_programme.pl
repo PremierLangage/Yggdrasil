@@ -26,3 +26,5 @@ Attention, le compilateur utilisé sera ici `gcc` mais ce dernier sera utilisé 
 les flags `-Wall` et `-std=c17`. Ainsi, même si les sandbox n'utilisent pas 
 encore le compilateur `clang`, les exercices seront bien sur le standard C 2017.
 ==
+
+@ /ComputerScience/C/exercices/L2_C17/program/hello.pl
