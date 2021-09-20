@@ -23,7 +23,7 @@ title=Écrire une fonction qui calcule les valeurs d'un polynome
 tag=function|return|polynome|evaluation
 
 editor.code==#|c|
-...double polynome(...){
+double polynome(...){
   // Votre code ici ...
 }
 ==
@@ -54,7 +54,7 @@ from random import randint, choice
 
 nb_attempt=0
 compiler="gcc"
-cflags=["-Wall", "-ansi"]
+cflags=["-Wall", "-std=c17"]
 libflags=[]
 
 def codeandtextpoly():
