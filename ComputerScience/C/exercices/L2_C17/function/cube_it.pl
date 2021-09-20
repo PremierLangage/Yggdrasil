@@ -46,14 +46,14 @@ void cube_it(int *p)
 
 ==
 
-code_before==
+code_before==#|c|
 
 #include <stdio.h>
 #include <stdlib.h>
 
 ==
 
-code_after==
+code_after==#|c|
 
 int main(int argc, char* argv[]){
   int a = atoi(argv[1]);
@@ -64,7 +64,7 @@ int main(int argc, char* argv[]){
 
 ==
 
-checks_args_stdin==
+checks_args_stdin==#|python|
 [["Test basique", ["1"], ""],
  ["Simple nombre négatif", ["-3"], ""],
  ["Test aléatoire 1", [str(randint(1, 33))], ""],
