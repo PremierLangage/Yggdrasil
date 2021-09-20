@@ -33,7 +33,7 @@ Le programme de test sera le suivant :
 
 <br />
 
-```{#mycode .C}
+```
 #include <stdio.h>
 #include <stdlib.h>    
     
