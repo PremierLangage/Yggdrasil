@@ -76,16 +76,14 @@ int lance_n_des(int n,int k){
 
 code_after==#|c|
 int main(int argc, char const *argv[]) {
-	int n = atoi(argv[1]);
-int nb=0;
- int k=atoi(argv[2]);
- nb=lance_n_des(n,k);
-  
-	printf("%d façons d'obtenir  %d avec %d des \n",nb,n,k);
-	return 0;
+  int n = atoi(argv[1]);
+  int nb=0;
+  int k=atoi(argv[2]);
+  nb=lance_n_des(n,k);
+  printf("%d façons d'obtenir  %d avec %d des \n",nb,n,k);
+  return 0;
 }
 ==
-
 
 tests==#|python|
 [ ["Exemple énoncé 1", ["4", "3"], ""],
