@@ -82,7 +82,7 @@ astuces==#|python|
 [
   { "content": """Cette fonction peut s'écrire avec trois conditionnelles du type `if ... else ...` correctement imbriquées."""},
   { "content": """Il faut prévoir tous les cas, il n'y a pas vraiment de stratégie plus rapide."""},
-  { "content": """La bonnne structuration est la suivante :\n\n    if (...){\n      if(...)\n        return ...\n        return ...\n    }\n    else{\n      if(...)\n        return ...\n        return ...\n    }\n"""}
+  { "content": """La bonnne structuration est la suivante :\n\n    if (...){\n      if(...)\n        return ...\n      return ...\n    }\n    else{\n      if(...)\n        return ...\n      return ...\n    }\n"""}
 ]
 ==
 
