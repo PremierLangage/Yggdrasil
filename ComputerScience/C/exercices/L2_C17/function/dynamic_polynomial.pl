@@ -86,6 +86,20 @@ solution="\ndouble polynome(int a, int b, int c){\nreturn "+code+";\n}\n"
 text="""Écrire une function *polynome* qui prend en argument 3 entiers *a*, *b* et *c* et qui retourne l'évaluation du polynome:\n\n\t $%{}%$ """.format(text)
 
 text+="\n\n <br /> {{ editor|component }} "
+
+if "taboo" in globals(): 
+    text+='<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+    text+="<b>Taboo :</b> attention, il y aura un refus de compilation si vous proposez un code qui utilise les mots suivants (ne les mentionnez pas ni en fonction, ni en nom de variable) : "
+    text+=str(taboo)
+    text+='</div> <br />\n'
+
+if "astuces" in globals():
+    hints.items = eval(astuces)
+    text+='<br><br>'
+    text+=" {{ hints|component}} \n<br>"
+    nb_hints = len(hints.items)
+else:
+    nb_hints = 0
 ==
 
 checks_args_stdin==#|python|
