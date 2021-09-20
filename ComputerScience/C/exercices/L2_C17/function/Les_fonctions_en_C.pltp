@@ -21,8 +21,8 @@ title=Exercices sur la notion de fonction
 introduction==
 Les exercices qui suivent portent sur la notion de fonction. Certains demandent de savoir 
 utiliser des pointeurs simples. Nous sommes encore avec le compilateur **gcc** mais 
-avec le standard `-std=c17` du C 2017 ainsi que l'activation des warnings principaux
-`-Wall`.
+avec le standard `-std=c17` du C 2017. Aussi l'activation des warnings principaux est 
+faite avec l'invocation du drapeau optionnel de compilation `-Wall`.
 ==
 
 @ /ComputerScience/C/exercices/L2_C17/function/cube_it.pl
