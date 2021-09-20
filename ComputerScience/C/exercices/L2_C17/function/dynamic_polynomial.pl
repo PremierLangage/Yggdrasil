@@ -85,7 +85,7 @@ code, text = codeandtextpoly()
 solution="\ndouble polynome(int a, int b, int c){\nreturn "+code+";\n}\n"
 text="""Écrire une function *polynome* qui prend en argument 3 entiers *a*, *b* et *c* et qui retourne l'évaluation du polynome:\n\n\t $%{}%$ """.format(text)
 
-text+="\n <br>"
+text+="\n"
 
 if "taboo" in globals(): 
     text+='<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
