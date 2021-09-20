@@ -108,8 +108,10 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
+  { "content": """Une bonne boucle `for` appelant un bon modulo doit pourvoir résoudre ce problème."""},
+  { "content": """La boucle `for` doit aller de `1` inclus jusque la valeur de l'argument."""},
+  { "content": """Le bon test dans le `for` regarde si le reste de la division de l'argument par l'indice de boucle est nul."""},
+  { "content": """N'oubliez pas d'incrémenter un compteur à chaque fois qu'un diviseur est trouvé. C'est la valeur finale de ce compteur en fin de boucle que votre fonction devra retourner."""},
 ]
 ==
 
