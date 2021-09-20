@@ -15,7 +15,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/C/template/std_progC.pl
+extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Elise Hardy
 
@@ -23,7 +23,7 @@ title=Écrire une fonction qui calcule la puissance d'un nombre
 tag=function|arithmetique|puissance
 
 
-text==
+text==#|markdown|
 Écrire une function **puissance** qui prend en argument 2 entiers $%n%$ et 
 $%p%$ et qui retourne l'entier $%n^p%$.
 
@@ -32,13 +32,13 @@ Si l'exposant est nul alors la fonction devra retourner 1.
 Si l'exposant $%p%$ est strictement négatif alors la fonction doit retourner 0.
 ==
 
-editor.code==
+editor.code==#|c|
 ... puissance (...){
-  /* Votre code ici... */
+  // Votre code ici...
 }
 ==
 
-solution==
+solution==#|c|
 int puissance (int n, int p){
 	if(p < 0){
 		return 0;
@@ -57,7 +57,7 @@ code_before==
 
 ==
 
-code_after==
+code_after==#|c|
 
 #include <stdio.h>
 #include <stdlib.h>    
@@ -80,5 +80,10 @@ checks_args_stdin==#|python|
  ["Test aléatoire", [str(randint(-5, 10)) for i in range(2)], ""]]
 ==
 
-
+astuces==#|python|
+[
+  { "content": """"""},
+  { "content": """"""},
+]
+==
 
