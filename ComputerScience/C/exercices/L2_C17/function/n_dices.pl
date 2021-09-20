@@ -23,18 +23,17 @@ title=Lancé de n dés
 
 tag=fonction|declaration|parametre
 
-text==  
+text==#|markdown|
 
-Ecrire une fonction 'lance_k_de' qui reçoit deux entiers n et k et renvoie
- le nombre de façon d'obtenir n avec k dés (à 6 faces)
+Écrire une fonction `lance_n_des` qui reçoit deux entiers `val` et `n` et renvoie
+le nombre de façon d'obtenir `val` en faisant la somme des valeurs d'un lancé de 
+`n` dés (à 6 faces)
 
-**Exemple :**
+<b><u>Exemple :</u></b>
 
-lance_k_de(4,3) renvoie  3 (2+1+1, 1+2+1, 1+1+2)
- 
-lance_k_de(4,4) renvoie  1 (1+1+1+1)
- 
-lance_k_de(40,3) renvoie  0 (max : 6+6+6)
+`lance_n_des(4, 3)` renvoie 3 car (2+1+1, 1+2+1, 1+1+2)   
+`lance_n_des(4, 4)` renvoie 1 (1+1+1+1)   
+`lance_n_des(40, 3)` renvoie 0 (max : 6+6+6)   
  
 ==
 editor.code==
