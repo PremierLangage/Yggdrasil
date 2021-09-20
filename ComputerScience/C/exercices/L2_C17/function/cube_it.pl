@@ -27,6 +27,7 @@ text==#|markdown|
 un entier) et remplace la valeur pointée par son cube (c'est à dire l'ancienne 
 valeur élevée à la puissance 3). Faire un choix cohérent pour le prototype de 
 la fonction.
+
 ==
 
 editor.code==#|c|
