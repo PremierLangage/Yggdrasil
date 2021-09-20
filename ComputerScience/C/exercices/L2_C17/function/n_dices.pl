@@ -93,7 +93,9 @@ checks_args_stdin==#|python|
   ["Grand test", ["20", "5"], ""],
   ["Test aléatoire 1", [str(randint(1, 24)), str(randint(1, 4))], ""],
   ["Test aléatoire 2", [str(randint(2, 30)), str(randint(2, 5))], ""],
-  ["Test aléatoire 3", [str(randint(3, 36)), str(randint(3, 6))], ""] ]
+  ["Test aléatoire 3", [str(randint(3, 36)), str(randint(3, 6))], ""],
+  ["Test aléatoire 4", [str(randint(3, 36)), str(randint(3, 6))], ""],
+  ["Test aléatoire 5", [str(randint(3, 36)), str(randint(3, 6))], ""] ]
 ==
 
 astuces==#|python|
