@@ -77,4 +77,4 @@ astuces==#|python|
 [
   { "content": """Votre fonction pourrait retourner `void` sans problème mais doit prendre en argument un pointeur vers un entier (`int*`)."""}
 ]
-
+==
