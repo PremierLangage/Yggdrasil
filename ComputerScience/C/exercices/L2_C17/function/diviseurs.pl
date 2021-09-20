@@ -94,7 +94,7 @@ int main(int argc, char const *argv[]) {
 ==
 
 
-tests==#|python|
+checks_args_stdin==#|python|
 [ ["Exemple énoncé", ["6"], ""],
   ["Basique", ["10"], ""],
   ["Vide", ["0"], ""],
