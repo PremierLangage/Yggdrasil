@@ -44,7 +44,7 @@ Le programme de test sera le suivant :
       printf("%d + %d == %d\n", a, b, c);
       return 0;
     }
-    
+
 ==
 
 editor.code==
