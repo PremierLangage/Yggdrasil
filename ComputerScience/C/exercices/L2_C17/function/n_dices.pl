@@ -51,7 +51,7 @@ code_before==#|c|
 ==
 
 solution==#|c|
-int lance_n_des(int n,int k){
+int lance_n_des(int n, int k){
     int nb=0;
     int tout=0;
     int i;
@@ -67,7 +67,6 @@ int lance_n_des(int n,int k){
       nb=lance_n_des( n-i, k-1);  	
 	  tout+=nb;    
     }
-                
     return tout;
 }
 
@@ -80,7 +79,7 @@ int main(int argc, char const *argv[]) {
   int nb=0;
   int k=atoi(argv[2]);
   nb=lance_n_des(n,k);
-  printf("%d façons d'obtenir  %d avec %d des \n",nb,n,k);
+  printf("%d façons d'obtenir  %d avec %d des \n", nb, n, k);
   return 0;
 }
 ==
