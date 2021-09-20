@@ -29,7 +29,7 @@ paramètres et retourne le minimum de ces trois entiers.
 
 editor.code==#|c|
 ... min_of_three(...){
-  ...
+  // Votre code ici...
 }
 ==
 
