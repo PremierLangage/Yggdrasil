@@ -53,7 +53,7 @@ code_before==#|c|
 solution==#|c|
 int lance_n_des(int val, int n){
   int i, nb = 0;
-  if (val <= 0)
+  if (val <= 0) || (n <= 0)
     return 0;
   if (n == 1)
     return (val >= 1) && (val <= 6);
