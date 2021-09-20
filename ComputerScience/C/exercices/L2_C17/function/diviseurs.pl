@@ -23,6 +23,7 @@ title=Diviseurs d'un entier positif
 
 tag=fonction|declaration|parametre|boucle
 
+editor.height=350px
 
 text==#|markdown|
  
