@@ -74,12 +74,12 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [["Test basique", ["2", "5"], ""],
  ["Exposant impossible", ["8", "-4"], ""],
- ["Test aléatoire", [str(randint(-6, 11)) for i in range(2)], ""],
- ["Test aléatoire", [str(randint(-6, 11)) for i in range(2)], ""],
- ["Test aléatoire", [str(randint(-6, 11)) for i in range(2)], ""],
- ["Test aléatoire", [str(randint(-6, 11)) for i in range(2)], ""],
- ["Test aléatoire", [str(randint(-6, 11)) for i in range(2)], ""],
- ["Test aléatoire", [str(randint(-6, 11)) for i in range(2)], ""]]
+ ["Test aléatoire 1", [str(randint(-6, 11)) for i in range(2)], ""],
+ ["Test aléatoire 2", [str(randint(-6, 11)) for i in range(2)], ""],
+ ["Test aléatoire 3", [str(randint(-6, 11)) for i in range(2)], ""],
+ ["Test aléatoire 4", [str(randint(-6, 11)) for i in range(2)], ""],
+ ["Test aléatoire 5", [str(randint(-6, 11)) for i in range(2)], ""],
+ ["Test aléatoire 6", [str(randint(-6, 11)) for i in range(2)], ""]]
 ==
 
 astuces==#|python|
