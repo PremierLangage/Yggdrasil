@@ -78,3 +78,12 @@ checks_args_stdin==#|python|
   ["Test aléatoire 4", [str(randint(-1000, 1000)) for i in range(3)], ""] ]
 ==
 
+
+astuces==#|python|
+[
+  { "content": """Cette fonction peut s'écrire avec trois conditionnelles du type `if ... else ...` correctement imbriquées."""},
+  { "content": """Il faut prévoir tous les cas, il n'y a pas vraiment de stratégie plus rapide."""},
+  { "content": """La bonnne structuration est la suivante :\n\n    if (...){\n      if(...)\n        return ...\n      else\n        return ...\n    }\n    else{\n      if(...)\n        return ...\n      else\n        return ...\n    }\n"""}
+]
+==
+
