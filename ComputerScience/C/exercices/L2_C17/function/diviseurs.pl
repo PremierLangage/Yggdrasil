@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Marc Zipstein
 
-title=Diviseurs d'un entier
+title=Diviseurs d'un entier positif
 
 tag=fonction|declaration|parametre|boucle
 
