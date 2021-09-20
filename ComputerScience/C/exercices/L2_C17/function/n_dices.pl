@@ -24,7 +24,6 @@ title=Lancé de n dés
 tag=fonction|declaration|parametre
 
 text==#|markdown|
-
 Écrire une fonction `lance_n_des` qui reçoit deux entiers `val` et `n` et renvoie
 le nombre de façon d'obtenir `val` en faisant la somme des valeurs d'un lancé de 
 `n` dés (à 6 faces)
@@ -34,27 +33,25 @@ le nombre de façon d'obtenir `val` en faisant la somme des valeurs d'un lancé 
 `lance_n_des(4, 3)` renvoie `3` car (3 = 2+1+1 ou 3 = 1+2+1 ou 3 = 1+1+2)   
 `lance_n_des(4, 4)` renvoie `1` (4 = 1+1+1+1)   
 `lance_n_des(40, 3)` renvoie `0` (max : 6+6+6 = 18 < 40)   
- 
-==
-editor.code==
-/*Type retour*/ lance_k_de(/*type */ n, /*type*/ k) {
-  /* votre code ici... */
 
+==
+
+editor.code==#|c|
+... lance_n_des(... val, ... n) {
+  // votre code ici...
 }
 ==
 
 
-codebefore==
+code_before==#|c|
 
 #include <stdlib.h>
 #include <stdio.h>
 
 ==
 
-solution==
-
-
-int lance_k_de(int n,int k){
+solution==#|c|
+int lance_n_des(int n,int k){
     int nb=0;
     int tout=0;
     int i;
@@ -67,27 +64,22 @@ int lance_k_de(int n,int k){
 	    return 0;
     }
     for (i=1;i<=6;i++){
-      nb=lance_k_de( n-i, k-1);  	
+      nb=lance_n_des( n-i, k-1);  	
 	  tout+=nb;    
     }                                 
                 
     return tout;
 }
 
-
-
-
-
 ==
 
 
-codeafter==
-
+code_after==#|c|
 int main(int argc, char const *argv[]) {
 	int n = atoi(argv[1]);
 int nb=0;
  int k=atoi(argv[2]);
- nb=lance_k_de(n,k);
+ nb=lance_n_des(n,k);
   
 	printf("%d façons d'obtenir  %d avec %d des \n",nb,n,k);
 	return 0;
@@ -95,16 +87,16 @@ int nb=0;
 ==
 
 
-tests==
-[ 
-  ["Exemple énoncé1", "4 3", ""],
-  ["Exemple énoncé2", "4 4", ""],
-  ["Exemple énoncé3", "40 3", ""],
-  ["Basique", "5 2", ""],
-  ["Vide", "0 3", ""],
-  ["Grand", "20 5", ""],
-   ["Aléatoire", ' '.join([str(random.randint(1, 24)), str(random.randint(1, 4))]), ""],
-  ]
+tests==#|python|
+[ ["Exemple énoncé 1", ["4", "3"], ""],
+  ["Exemple énoncé 2", ["4", "4"], ""],
+  ["Exemple énoncé 3", ["40", "3"], ""],
+  ["Test basique", ["5", "2"], ""],
+  ["Test vide", ["0", "3"], ""],
+  ["Grand test", ["20", "5"], ""],
+  ["Test aléatoire 1", [str(randint(1, 24)), str(randint(1, 4))], ""],
+  ["Test aléatoire 2", [str(randint(2, 30)), str(randint(2, 5))], ""],
+  ["Test aléatoire 3", [str(randint(3, 36)), str(randint(3, 6))], ""] ]
 ==
 
 
