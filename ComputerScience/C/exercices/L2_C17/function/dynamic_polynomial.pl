@@ -116,7 +116,7 @@ astuces==#|python|
 [
   { "content": """En informatique, tout produit doit bien être représenté avec l'opérateur `*`, ce dernier ne peut pas être élidé."""},
   { "content": """Trois arguments de type entier : `int a, int b, int c` semble une bonne solution."""},
-  { "content": """Une ligne suffit `return ...` avec l'expression arithmétique bien paranthèsée contenant bien pour les `*` et les `+`."""}
+  { "content": """Une ligne suffit `return ...` avec l'expression arithmétique bien paranthèsée contenant bien pour les `*`, les `+` et les `-`."""}
 ]
 ==
 
