@@ -48,7 +48,7 @@ Un nombre : 6
 ==
 
 editor.code==#|c|
-... divise(...) {
+... diviseurs(...) {
   // Votre code ici...
 }
 
@@ -64,7 +64,7 @@ code_before==#|c|
 
 solution==#|c|
 
-int divise(int n){
+int diviseurs(int n){
   if(n <= 0){
     return -1;
   }
@@ -86,7 +86,7 @@ code_after==#|c|
 int main(int argc, char const *argv[]) {
 	int n = atoi(argv[1]);
   int nb=0;   
-	nb=divise(n);
+	nb=diviseurs(n);
   /*if (n>0)*/
 		printf("%d a %d diviseurs\n",n,nb);
 	return 0;
