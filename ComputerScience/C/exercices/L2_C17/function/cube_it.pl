@@ -73,5 +73,8 @@ checks_args_stdin==
  ["Test aléatoire 4", [str(randint(-100, 100))], ""]]
 ==
 
-
+astuces==#|python|
+[
+  { "content": """Votre fonction pourrait retourner `void` sans problème mais doit prendre en argument un pointeur vers un entier (`int*`)."""},
+]
 
