@@ -65,7 +65,7 @@ primordial. Le dessin ne comporte aucun espace superflu.
 
 editor.code==#|c|
 void maison(int n){
-  /* Votre code ici... */
+  // Votre code ici...
 }
 ==
 
@@ -127,4 +127,10 @@ checks_args_stdin==#|python|
 ==
 
 
+astuces==#|python|
+[
+  { "content": """Faites un dessin sur une feuille de papier libre. Calculer la taille de tous les esapaces en fonction de `n`."""},
+  { "content": """"""},
+]
+==
 
