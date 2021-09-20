@@ -84,12 +84,11 @@ int diviseurs(int n){
 code_after==#|c|
 
 int main(int argc, char const *argv[]) {
-	int n = atoi(argv[1]);
+  int n = atoi(argv[1]);
   int nb=0;   
-	nb=diviseurs(n);
-  /*if (n>0)*/
-		printf("%d a %d diviseurs\n",n,nb);
-	return 0;
+  nb=diviseurs(n);
+  printf("%d a %d diviseurs\n", n, nb);
+  return 0;
 }
 ==
 
@@ -107,10 +106,11 @@ checks_args_stdin==#|python|
   ["Test aléatoire 5", [str(randint(80, 100))], ""] ]
 ==
 
-
-
-
-
-
+astuces==#|python|
+[
+  { "content": """"""},
+  { "content": """"""},
+]
+==
 
 
