@@ -54,7 +54,7 @@ editor.code==
 ==
 
 solution==#|c|
-void incremente(int *p,int inc)
+void incremente(int *p, int inc)
 {
     *p += inc ;
 }
@@ -91,4 +91,11 @@ checks_args_stdin==#|python|
 ==
 
 
+astuces==#|python|
+[
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""}
+]
+==
 
