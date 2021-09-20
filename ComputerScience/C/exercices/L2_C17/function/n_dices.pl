@@ -31,9 +31,9 @@ le nombre de façon d'obtenir `val` en faisant la somme des valeurs d'un lancé 
 
 <b><u>Exemple :</u></b>
 
-`lance_n_des(4, 3)` renvoie 3 car (2+1+1, 1+2+1, 1+1+2)   
-`lance_n_des(4, 4)` renvoie 1 (1+1+1+1)   
-`lance_n_des(40, 3)` renvoie 0 (max : 6+6+6)   
+`lance_n_des(4, 3)` renvoie `3` car (3 = 2+1+1 ou 3 = 1+2+1 ou 3 = 1+1+2)   
+`lance_n_des(4, 4)` renvoie `1` (4 = 1+1+1+1)   
+`lance_n_des(40, 3)` renvoie `0` (max : 6+6+6 = 18 < 40)   
  
 ==
 editor.code==
