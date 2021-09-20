@@ -33,19 +33,17 @@ Le programme de test sera le suivant :
 
 <br />
 
-```
-#include <stdio.h>
-#include <stdlib.h>    
+    #include <stdio.h>
+    #include <stdlib.h>    
     
-int main(int argc, char* argv[]){
-    int a = atoi(argv[1]);
-    int b= atoi(argv[2]);
-    int c=a;
+    int main(int argc, char* argv[]){
+      int a = atoi(argv[1]);
+      int b= atoi(argv[2]);
+      int c=a;
       incremente(&c,b);
-    printf("%d + %d  == %d \n",a,b,c);
-    return 0;
-}
-```
+      printf("%d + %d  == %d \n",a,b,c);
+      return 0;
+    }
 
 ==
 
