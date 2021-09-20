@@ -101,7 +101,7 @@ if "astuces" in globals():
 else:
     nb_hints = 0
 
-text+="\n <br> {{ editor|component }} "
+text+=" {{ editor|component }} "
 ==
 
 checks_args_stdin==#|python|
