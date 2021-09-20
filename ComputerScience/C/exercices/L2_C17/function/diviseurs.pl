@@ -32,7 +32,7 @@ La fonction renvoie le nombre de diviseurs.
 
 Si l'entier est négatif ou nul, la fonction retourne -1 et ne fait aucun calcul.
 
-**Exemple :**
+<b><u>Exemple :</u></b>
 
 Un nombre : 6
 
