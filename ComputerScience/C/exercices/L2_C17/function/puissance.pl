@@ -84,8 +84,8 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
+  { "content": """Plusieurs stratégies sont possibles. Mettre une multiplication dans une boucle `for` peut être fonctionnel bien que ce ne soit pas efficace."""},
+  { "content": """Une recherche sur l'exponantiation rapide sur le web pourra vous aider pour trouver un algorithme efficace."""},
 ]
 ==
 
