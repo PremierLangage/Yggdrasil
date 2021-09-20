@@ -25,7 +25,7 @@ tag=function|boucle|for
 text==#|markdown|
 Écrire une fonction **ascii_triangle** qui prend en argument un entier
 et qui affiche un triangle avec des caractères étoiles \* comme dans les
-exemples qui suivent :
+exemples qui suivent.
 
 Pour n = 3, on devra voir
 
