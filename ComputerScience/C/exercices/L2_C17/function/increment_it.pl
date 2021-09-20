@@ -38,10 +38,10 @@ Le programme de test sera le suivant :
     
     int main(int argc, char* argv[]){
       int a = atoi(argv[1]);
-      int b= atoi(argv[2]);
-      int c=a;
-      incremente(&c,b);
-      printf("%d + %d  == %d \n",a,b,c);
+      int b = atoi(argv[2]);
+      int c = a;
+      incremente(&c, b);
+      printf("%d + %d  == %d \n", a, b, c);
       return 0;
     }
 
