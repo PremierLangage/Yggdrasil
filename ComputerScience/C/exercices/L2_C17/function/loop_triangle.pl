@@ -95,9 +95,10 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Pour faire cette fonction, le plus naturel est d'imbriquer deux boucles `for`."""},
+  { "content": """Si `n` est la taille du dessin, qui comporte `n` lignes, la première boucle doit faire `n` tours."""},
+  { "content": """La boucle imbriquée commence par une étoile et incrémente la taille de 1 en 1. Ainsi, il faut utiliser la variable locale de la première boucle comme borne de la seconde (directement ou bien avec un plus ou moins 1 correctif)."""},
+  { "content": """Attention : le dessin ne comporte aucun espace et il y a seulement un retour à la ligne par ligne du dessin (le retour à la ligne doit être à la fin de la grande boucle mais pas imbriqué dans la seconde)."""}
 ]
 ==
 
