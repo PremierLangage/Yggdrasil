@@ -93,9 +93,9 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Les arguments de votre fonction devrait être `(int* p, int inc)`."""},
+  { "content": """Pour utiliser ou affecter la valeur d'un pointeur `int* p`, il faut utiliser `*p`."""},
+  { "content": """L'expression `*p = *p + 12;` incrémente de `12` l'ancienne valeur pointée par `p`."""}
 ]
 ==
 
