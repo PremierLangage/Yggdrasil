@@ -66,7 +66,7 @@ int lance_n_des(int n,int k){
     for (i=1;i<=6;i++){
       nb=lance_n_des( n-i, k-1);  	
 	  tout+=nb;    
-    }                                 
+    }
                 
     return tout;
 }
@@ -85,7 +85,7 @@ int main(int argc, char const *argv[]) {
 }
 ==
 
-tests==#|python|
+checks_args_stdin==#|python|
 [ ["Exemple énoncé 1", ["4", "3"], ""],
   ["Exemple énoncé 2", ["4", "4"], ""],
   ["Exemple énoncé 3", ["40", "3"], ""],
@@ -97,15 +97,10 @@ tests==#|python|
   ["Test aléatoire 3", [str(randint(3, 36)), str(randint(3, 6))], ""] ]
 ==
 
-
-
-
-
-
-
-
-
-
-
-
+astuces==#|python|
+[
+  { "content": """"""},
+  { "content": """"""},
+]
+==
 
