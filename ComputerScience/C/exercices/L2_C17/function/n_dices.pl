@@ -21,7 +21,7 @@ author=Marc Zipstein
 
 title=Lancé de n dés
 
-tag=fonction|declaration|parametre
+tag=fonction|declaration|parametre|recursion|difficile
 
 text==#|markdown|
 Écrire une fonction `lance_n_des` qui reçoit deux entiers `val` et `n` et renvoie
