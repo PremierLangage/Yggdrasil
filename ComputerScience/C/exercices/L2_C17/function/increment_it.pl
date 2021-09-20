@@ -47,9 +47,9 @@ Le programme de test sera le suivant :
 
 ==
 
-editor.code==
+editor.code==#|c|
 ... incremente(...){
-  ...
+  // Votre code ici...
 }
 ==
 
