@@ -102,7 +102,7 @@ astuces==#|python|
 [
   { "content": """Une manière raisonnable de résoudre ce problème est de faire une fonction récursive."""},
   { "content": """Pour un seul dé, il n'y a qu'une seule manière d'obtenir les valeurs comprises entre 1 et 6 toutes deux incluses. Toutes les autres valeurs sont impossibles à obtenir."""},
-  { "content": """Pour plus de dé, selon les 6 valeurs possibles du dernier dés, il faut procéder à un appel récursif et sommer le nombre de manières à chaque fois."""}
+  { "content": """Pour plus de dés, selon les 6 valeurs possibles du dernier dés, il faut procéder à un appel récursif et sommer le nombre de manières à chaque fois."""}
 ]
 ==
 
