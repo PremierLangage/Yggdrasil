@@ -130,7 +130,7 @@ checks_args_stdin==#|python|
 astuces==#|python|
 [
   { "content": """Faites un dessin sur une feuille de papier libre. Calculer la taille de tous les esapaces en fonction de `n`."""},
-  { "content": """Difficile de donner plus de conseil. Utilisez votre ordinateur pour faire des essais et éviter tous les expaces finaux superflus."""},
+  { "content": """Difficile de donner plus de conseil. Utilisez votre ordinateur pour faire des essais et éviter tous les expaces finaux superflus. Le dessin comporte seulement des slashs, des antislashs, des pipes, des underscrores et des espaces."""},
 ]
 ==
 
