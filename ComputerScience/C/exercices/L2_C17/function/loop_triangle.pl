@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/C/template/std_progC.pl
+extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Nicolas Borie
 
@@ -22,7 +22,7 @@ title=Un triangle avec des caractères ascii
 tag=function|boucle|for
 
 
-text==
+text==#|markdown|
 Écrire une fonction **ascii_triangle** qui prend en argument un entier
 et affiche un triangle avec des caractères étoile \* comme dans les
 exemples qui suivent :
@@ -44,7 +44,7 @@ Pour n = 5, on devra voir
 
 ==
 
-editor.code==
+editor.code==#|c|
 #include <stdio.h>
     
 ... ascii_triangle(...){
@@ -52,7 +52,7 @@ editor.code==
 }
 ==
 
-solution==
+solution==#|c|
 
 #include <stdio.h>
     
@@ -68,7 +68,7 @@ void ascii_triangle(int n){
 
 ==
 
-code_after==
+code_after==#|c|
 
 #include <stdlib.h>
     
@@ -80,7 +80,7 @@ int main(int argc, char* argv[]){
 }
 ==
 
-code_before==
+code_before==#|c|
 
 ==
 
@@ -93,7 +93,13 @@ checks_args_stdin==#|python|
 ==
 
 
-
+astuces==#|python|
+[
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""}
+]
+==
 
 
 
