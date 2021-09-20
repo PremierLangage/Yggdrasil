@@ -41,7 +41,7 @@ Le programme de test sera le suivant :
       int b = atoi(argv[2]);
       int c = a;
       incremente(&c, b);
-      printf("%d + %d  == %d \n", a, b, c);
+      printf("%d + %d == %d\n", a, b, c);
       return 0;
     }
 
