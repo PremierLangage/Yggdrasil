@@ -15,7 +15,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/C/template/std_progC.pl
+extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Dominique Revuz
 
@@ -30,7 +30,7 @@ paramètres et retourne le maximum de ces trois entiers.
 
 editor.code==#|c|
 ... max_of_three(...){
-  ...
+  // Votre code ici...
 }
 ==
 
