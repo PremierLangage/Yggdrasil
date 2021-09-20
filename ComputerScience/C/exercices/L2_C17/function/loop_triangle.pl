@@ -48,7 +48,7 @@ editor.code==#|c|
 #include <stdio.h>
     
 ... ascii_triangle(...){
-  ...
+  // Votre code ici...
 }
 ==
 
