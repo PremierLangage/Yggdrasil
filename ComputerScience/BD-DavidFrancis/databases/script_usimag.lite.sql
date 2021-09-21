@@ -5,27 +5,27 @@ DROP TABLE IF EXISTS provenance CASCADE;
 
 CREATE TABLE produit (
 	ref_prod int PRIMARY KEY,
-	 nom_prod text,
-	 couleur text,
+	 nom_prod text NOT NULL,
+	 couleur text ,
 	 poids int
 );
 
 CREATE TABLE usine (
 	ref_usine int PRIMARY KEY,
-	 nom_usine text,
-	 ville text
+	 nom_usine text NOT NULL,
+	 ville text NOT NULL
 );
 
 CREATE TABLE magasin (
 	ref_mag int PRIMARY KEY,
-	 nom_mag text,
-	 ville text
+	 nom_mag text NOT NULL,
+	 ville text NOT NULL
 );
 
 CREATE TABLE provenance (
-	ref_prod int REFERENCES produit(ref_prod),
-	ref_usine int REFERENCES usine(ref_usine),
-	ref_mag int REFERENCES magasin(ref_mag),
+	ref_prod int REFERENCES soiree(idS),
+	ref_usine int,
+	ref_mag int,
 	quantite int,
 	PRIMARY KEY (ref_prod, ref_usine, ref_mag)
 );
