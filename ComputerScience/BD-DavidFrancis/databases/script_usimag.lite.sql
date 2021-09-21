@@ -23,9 +23,9 @@ CREATE TABLE magasin (
 );
 
 CREATE TABLE provenance (
-	ref_prod int REFERENCES soiree(idS),
-	ref_usine int,
-	ref_mag int,
+	ref_prod int REFERENCES produit(ref_prod),
+	ref_usine int REFERENCES usine(ref_usine),
+	ref_mag int REFERENCES magasin(ref_mag),
 	quantite int,
 	PRIMARY KEY (ref_prod, ref_usine, ref_mag)
 );
