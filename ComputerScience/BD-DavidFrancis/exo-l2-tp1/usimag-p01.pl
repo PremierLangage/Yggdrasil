@@ -1,4 +1,4 @@
-extends = ../templates/exo-requete.pl
+extends = ../templates/exo-simple-requete.pl
 
 @ ../databases/script_usimag_lite.sql
 @ ../databases/schema_usimag.txt
