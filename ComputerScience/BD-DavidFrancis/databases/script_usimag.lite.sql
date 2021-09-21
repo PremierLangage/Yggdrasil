@@ -4,26 +4,30 @@ DROP TABLE IF EXISTS produit CASCADE;
 DROP TABLE IF EXISTS provenance CASCADE;
 
 CREATE TABLE produit (
-	ref_prod integer primary key,
-	 nom_prod text not null,
-	 couleur text ,
-	 poids integer
+	ref_prod int PRIMARY KEY,
+	 nom_prod text,
+	 couleur text,
+	 poids int
 );
 
-CREATE TABLE vendre (
-	nomMag varchar(25),
-	modele varchar(25) REFERENCES deguisement(modele),
-	taille varchar(3),
-	prix float,
-	PRIMARY KEY(nomMag,modele,taille)
+CREATE TABLE usine (
+	ref_usine int PRIMARY KEY,
+	 nom_usine text,
+	 ville text
 );
 
-CREATE TABLE personne (
-	surnom varchar(25) primary key,
-	nom varchar(25),
-	prenom varchar(25),
-	age int,
-	taille int
+CREATE TABLE magasin (
+	ref_mag int PRIMARY KEY,
+	 nom_mag text,
+	 ville text
+);
+
+CREATE TABLE provenance (
+	ref_prod int REFERENCES produit(ref_prod),
+	ref_usine int REFERENCES usine(ref_usine),
+	ref_mag int REFERENCES magasin(ref_mag),
+	quantite int,
+	PRIMARY KEY (ref_prod, ref_usine, ref_mag)
 );
 
 CREATE TABLE soiree (
