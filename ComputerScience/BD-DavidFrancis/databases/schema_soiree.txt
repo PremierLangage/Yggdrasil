@@ -1,14 +1,13 @@
-deguisement (<u>modele</u>, avatar, marque) <br>
-vendre (<u>nomMag, modele, taille</u>, prix) <br>
-personne (<u>surnom</u>, nom, prenom, age, taille) <br>
-soiree (<u>idS</u>, lieu, date, entree, organisateur, nbmax) <br>
+produit (<u>ref_prod</u>, nom_prod, couleur, poids) <br>
+usine (<u>ref_usine</u>, nom_usine, ville) <br>
+magasin (<u>ref_mag</u>, nom_mag, ville) <br>
+provenance (<u>ref_prod, ref_usine, ref_mag</u>, quantite) <br>
 participe (<u>idS, surnom</u>, avatar) <br>
 
 <br>
-FK : modele dans vendre fait reférence à modele dans deguisement.<br>
-FK : organisateur dans soiree fait reférence à surnom dans personne. <br>
-FK : surnom dans participe fait reférence à surnom dans personne. <br>
-FK : idS dans participe fait reférence à idS dans soiree.
+FK : ref_mag dans provenance fait reférence à ref_mag dans magasin.<br>
+FK : ref_prod dans provenance fait reférence à ref_prod dans produit.<br>
+FK : ref_usine dans provenance fait reférence à ref_usine dans usine.
 
 
 
