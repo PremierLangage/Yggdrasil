@@ -2,7 +2,6 @@ produit (<u>ref_prod</u>, nom_prod, couleur, poids) <br>
 usine (<u>ref_usine</u>, nom_usine, ville) <br>
 magasin (<u>ref_mag</u>, nom_mag, ville) <br>
 provenance (<u>ref_prod, ref_usine, ref_mag</u>, quantite) <br>
-participe (<u>idS, surnom</u>, avatar) <br>
 
 <br>
 FK : ref_mag dans provenance fait reférence à ref_mag dans magasin.<br>
