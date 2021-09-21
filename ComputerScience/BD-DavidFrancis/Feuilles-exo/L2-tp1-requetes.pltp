@@ -1,0 +1,31 @@
+title = Requêtes SQL
+
+introduction ==
+Voici quelques exercices correspondants aux requêtes SQL de l'Exercice 1 question 6 du TP1.
+
+ Les exercices sont indépendants. Vous pouvez les faire et même les refaire dans l'ordre que vous voulez. 
+ Le dump de la base de données utilisée par cette série d'exercice est disponible sur la page du cours.
+ 
+Conseil : Prenez le temps de comprendre le schema de la base et de réfléchir aux données que vous voulez extraire de la base avant d'écrire votre requête.
+
+Si vous rencontrez des difficultés dans l'utilisation de la plateforme, n'hésitez pas à venir en discuter sur Discord.
+Cette plateforme est en test et vous êtes béta-testeurs de cet exercice ;-)
+ 
+==
+
+@../exo-l2-tp1/usimag-p01.pl
+@../exo-l2-tp1/usimag-p02.pl
+@../exo-l2-tp1/usimag-p03.pl
+@../exo-l2-tp1/usimag-p04.pl
+@../exo-l2-tp1/usimag-p05.pl
+@../exo-l2-tp1/usimag-p06.pl
+@../exo-l2-tp1/usimag-p07.pl
+@../exo-l2-tp1/usimag-p08.pl
+@../exo-l2-tp1/usimag-p09.pl
+@../exo-l2-tp1/usimag-p10.pl
+@../exo-l2-tp1/usimag-p11.pl
+@../exo-l2-tp1/usimag-p12.pl
+@../exo-l2-tp1/usimag-p13.pl
+@../exo-l2-tp1/usimag-p14.pl
+@../exo-l2-tp1/usimag-p15.pl
+@../exo-l2-tp1/usimag-p16.pl
