@@ -20,7 +20,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 author=Elise Hardy
 
 title=Écrire une fonction qui calcule la puissance d'un nombre
-tag=function|arithmetique|puissance
+tag=fonction|arithmétique|puissance
 
 
 text==#|markdown|
