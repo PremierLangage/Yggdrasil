@@ -20,7 +20,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 author=Dominique Revuz
 
 title=Maximum de trois entiers
-tag=function|if|test|comparaison
+tag=fonction|if|test|comparaison|conditionnelle
 
 
 text==
