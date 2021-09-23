@@ -20,7 +20,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 author=Dominique Revuz
 title= Incremente le !
 
-tag=function|pointeur|simple
+tag=fonction|pointeur|simple
 
 text==#|markdown|
 Écrire une function **incremente** qui prend l'adresse **p** d'un entier et un 
