@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 author=Nicolas Borie
 
 title=La maison qui rend fou
-tag=function|variable|output|sortie|affichage|boucle|precision
+tag=fonction|variable|output|sortie|affichage|boucle|precision
 
 editor.height=350px
 
