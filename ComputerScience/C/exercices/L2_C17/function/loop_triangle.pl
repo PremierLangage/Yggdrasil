@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 author=Nicolas Borie
 
 title=Un triangle avec des caractères ascii
-tag=function|boucle|for
+tag=fonction|boucle|for
 
 
 text==#|markdown|
