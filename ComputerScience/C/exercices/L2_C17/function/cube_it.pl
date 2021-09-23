@@ -20,7 +20,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 author=Dominique Revuz
 
 title=Mettre au cube une valeur pointée
-tag=function|pointer|variable
+tag=fonction|pointeur|variable
 
 text==#|markdown|
 Écrire une function **cube_it** qui prend l'adresse d'un entier (pointeur vers 
