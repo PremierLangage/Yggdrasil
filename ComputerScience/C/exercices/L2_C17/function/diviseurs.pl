@@ -21,7 +21,7 @@ author=Marc Zipstein
 
 title=Diviseurs d'un entier positif
 
-tag=fonction|declaration|parametre|boucle
+tag=fonction|declaration|parametre|boucle|diviseur|arithmétique
 
 editor.height=300px
 
