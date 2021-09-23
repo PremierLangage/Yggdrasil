@@ -20,9 +20,10 @@ title=Notion de fonction en C
 
 introduction==
 Les exercices qui suivent portent sur la notion de fonction. Certains demandent de savoir 
-utiliser des pointeurs simples. Nous sommes encore avec le compilateur **gcc** mais 
-avec le standard `-std=c17` du C 2017. Aussi l'activation des warnings principaux est 
-faite avec l'invocation du drapeau optionnel de compilation `-Wall`.
+utiliser des pointeurs simples. Nous sommes maintenant avec le compilateur **clang** et 
+la compilation sera procédée avec le standard `-std=c17` du C 2017. Aussi l'activation 
+des warnings principaux est faite avec l'invocation du drapeau optionnel de 
+compilation `-Wall`.
 
 Les premiers exercices sont plutôt simples, les derniers exercices de la fiche 
 sont relativement ambitieux. Ne vous précipitez pas et prennez le temps de 
