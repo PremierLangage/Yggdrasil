@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 author=Nicolas Borie
 
 title=Minimum de trois entiers
-tag=function
+tag=fonction|test|conditionnelle
 
 text==#|markdown|
 Écrire une fonction **min_of_three** qui prend trois entiers en
