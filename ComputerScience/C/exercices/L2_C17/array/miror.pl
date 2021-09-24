@@ -50,7 +50,6 @@ editor.code==#|c|
 solution==#|c|
 void miroir(int tab[],int res[], int size){
   int i;
-
   for(i=0 ; i<size ; i++){
         res[i]=tab[size-i-1];
   }
@@ -85,8 +84,8 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Une bonne boucle `for` en un seul parcours du tableau doit suffire."""},
+  { "content": """Le premier élément est `[0]` et le dernier est `[size - 1]` ainsi la boucle doit inclure `0` mais exclure `size` la taille des tableaux."""},
+  { "content": """Pour chaque indice valide, l'élement à la position `[i]` du premier tableau devra être recopié à la position `[size - 1 -i]` du second tableau."""}
 ]
 ==
