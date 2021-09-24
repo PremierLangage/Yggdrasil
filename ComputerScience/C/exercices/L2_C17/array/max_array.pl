@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 title=Maximum d'un tableau
 
-tag=tableau|fonction|parcours
+tag=tableau|fonction|parcours|simple
 
 author=Nicolas Borie
 
