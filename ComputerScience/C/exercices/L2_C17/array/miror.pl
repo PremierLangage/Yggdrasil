@@ -25,10 +25,13 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 author=Prog C L2 Team
 
 text==#|markdown|
-Ecrire une fonction `miroir` qui reçoit deux tableaux d'entiers de même taille 
-et leur taille, et qui remplit le deuxième avec l'image 
-miroir du premier.<p>
-Exemple : Si le premier tableau de taille 5 contenait 1,2,3,4,5, le deuxième contient 5,4,3,2,1 après éxécution de la fonction.
+Écrire une fonction `miroir` qui reçoit deux tableaux d'entiers de même taille 
+ainsi que l'entier C donnant leur taille. La fonction devra remplir le deuxième avec l'image 
+miroir du premier.
+
+
+<u>Exemple :</u> Si le premier tableau de taille `5` contenait `[1,2,3,4,5]`, le deuxième contiendra 
+les valeurs `[5,4,3,2,1]` après éxécution de la fonction.
 ==
 
 code_before==#|c|
@@ -81,8 +84,8 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """Pour échanger raisonnablement deux valeurs en C, on en utilise une troisième temporaire."""},
-  { "content": """On commence par échanger la première valeur avec la dernière valeur du tableau, ensuite la seconde avec l'avant dernière, et ainsi de suite."""},
-  { "content": """La boucle qui déclanche les échanges doit s'arrêter au milieu (sinon échanger deux fois d'affiler reconstituera la tableau initial). La division entière par 2 du C est parfaite pour stoper la boucle."""}
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""}
 ]
 ==
