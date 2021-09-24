@@ -85,3 +85,11 @@ checks_args_stdin==#|python|
   ["Test aléatoire 4", []," ".join([str(randint(0,20)) for i in range(randint(20,25))])],
   ["Test aléatoire 5", []," ".join([str(randint(0,80)) for i in range(randint(25,30))])] ]
 ==
+
+astuces==#|python|
+[
+  { "content": """Pour calculer le maximum, il faut parcourir le tableau une fois et mettre à jour un maximum courrant pas à pas."""},
+  { "content": """Pour parcourir le tableau, une boucle `for` sur les indices de `0` inclus à `taille` exclus est une bonne solution."""},
+  { "content": """Une variable locale `max` initialisée à `-1`"""}
+]
+==
