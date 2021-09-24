@@ -10,7 +10,7 @@ extends=/ComputerScience/python/AP1-1920/templates/prosoluce.pl
 
 soluce==
 a=int(input())
-print("Le capitaine a %d ans. Dans {{x}} ans il aura %d ans." % (a,a+{{x}}))
+print("Le capitaine a %d ans. Dans {{X}} ans il aura %d ans." % (a,a+{{x}}))
 print("Le perroquet du capitaine a actuellement %d ans." % (((a+{{y}})//{{z}})-{{y}}))
 ==
 
