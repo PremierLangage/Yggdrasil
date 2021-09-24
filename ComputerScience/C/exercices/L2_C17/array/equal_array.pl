@@ -83,9 +83,12 @@ return 0;
 ==
 
 checks_args_stdin==#|python|
-[ ["simple éxécution", "","1 2 3 4 5"],
-  ["aléatoire ", ""," ".join([str(randint(-20,20)) for i in range(randint(5,10))])],
-  ["aléatoire ", ""," ".join([str(randint(-20,20)) for i in range(randint(5,20))])], ]
+[ ["simple éxécution", [], "1 2 3 4 5"],
+  ["Test aléatoire 1", [], " ".join([str(randint(-20,20)) for i in range(randint(5,10))])],
+  ["Test aléatoire 2", [], " ".join([str(randint(-30,30)) for i in range(randint(10,15))])],
+  ["Test aléatoire 3", [], " ".join([str(randint(-40,40)) for i in range(randint(15,20))])],
+  ["Test aléatoire 4", [], " ".join([str(randint(-50,50)) for i in range(randint(20,25))])],
+  ["Test aléatoire 5", [], " ".join([str(randint(-60,60)) for i in range(randint(25,30))])]]
 ==
 
 astuces==#|python|
