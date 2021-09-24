@@ -38,9 +38,9 @@ text==
 <u>**Information**</u> : une petite remarque sur "print"
 
 	print("(",3,")") # affiche ( 3 ) la virgule ajoute un espace.
-	print("(%d)",3) # affiche (3) aucun espace.   
+	print("("+str(3)+")") # affiche (3) aucun espace.   
 	a=3
-	print(f"({a})") # affiche (3)   
+	print(f"({a})") # affiche (3)   # remarquez le f avant la chaine 
 
 ==
 
