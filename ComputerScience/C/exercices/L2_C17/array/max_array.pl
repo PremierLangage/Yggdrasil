@@ -81,7 +81,7 @@ checks_args_stdin==#|python|
   ["Tableau vide", [], ""],
   ["Test aléatoire 1", []," ".join([str(randint(0,10)) for i in range(randint(5,10))])],
   ["Test aléatoire 2", []," ".join([str(randint(0,20)) for i in range(randint(10,15))])],
-  ["Test aléatoire 3", []," ".join([str(randint(0,30)) for i in range(randint(15,20))])],
+  ["Test aléatoire 3", []," ".join([str(randint(0,50)) for i in range(randint(15,20))])],
   ["Test aléatoire 4", []," ".join([str(randint(0,20)) for i in range(randint(20,25))])],
-  ["Test aléatoire 5", []," ".join([str(randint(0,50)) for i in range(randint(25,30))])] ]
+  ["Test aléatoire 5", []," ".join([str(randint(0,80)) for i in range(randint(25,30))])] ]
 ==
