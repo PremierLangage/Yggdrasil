@@ -19,19 +19,11 @@ author=Prog C L2 Team
 title=Exercices avec des tableaux
 
 introduction==
-Voici quelques exercices manipulant des tableaux.
+Voici quelques exercices manipulant des tableaux. Les exercices sont à peu près 
+triés en difficulté croissante. Bon courage.
 ==
 
-@ /ComputerScience/C/exercices/array/apply_square.pl
-@ /ComputerScience/C/exercices/array/average.pl
-@ /ComputerScience/C/exercices/array/initcarre.pl
-@ /ComputerScience/C/exercices/array/sum_of_positives.pl
-@ /ComputerScience/C/exercices/array/three_odd_in_a_row.pl
-@ /ComputerScience/C/exercices/array/displayarray.pl
-@ /ComputerScience/C/exercices/array/find_index_array.pl
-@ /ComputerScience/C/exercices/array/init2dtab.pl
-@ /ComputerScience/C/exercices/array/moyenne_positif.pl
-@ /ComputerScience/C/exercices/array/most_present.pl
-@ /ComputerScience/C/exercices/array/is_partial_sorted.pl
-@ /ComputerScience/C/exercices/array/diff_sym_sorted.pl
+@ /ComputerScience/C/exercices/L2_C17/array/max_array.pl
+
+@ /ComputerScience/C/exercices/L2_C17/array/equal_array.pl
 
