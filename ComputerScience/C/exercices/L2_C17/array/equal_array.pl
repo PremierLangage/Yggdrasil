@@ -26,18 +26,17 @@ text==#|markdown|
 Écrire une fonction `are_equal_tab` qui prend en argument 3 paramètres. Les deux premiers
 arguments seront des tableaux d'entiers, le dernier argument sera un entier qui donnera
 la taille des deux tableaux. L'utilisateur d'une telle fonction sera responsable de 
-tourjours bien forunir des arguments cohérents et corrects, c'est son travail de toujours
+tourjours bien forunir des arguments corrects, c'est son travail de toujours
 bien donner deux tableaux de même taille à votre fonction.
 
 Finalement, votre fonction devra renvoyer `1` si les contenus des deux tableaux sont 
 identiques et `0` sinon.
 ==
-codebefore==
 
+code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 #include<time.h>
-
 ==
 
 editor.code==#|c|
@@ -46,7 +45,7 @@ int are_equal_tab(...){
 }
 ==
 
-solution==
+solution==#|c|
 int identique_tab(int tab[],int deu[], int size){
 
   int i;
@@ -59,7 +58,7 @@ int identique_tab(int tab[],int deu[], int size){
 }
 ==
 
-codeafter==
+code_after==#|c|
 int main(int argc, char* argv[]){
   int tab[100],cop[100],dif[100];
   int size = 0;
@@ -84,8 +83,8 @@ return 0;
 ==
 
 
-tests==
+checks_args_stdin==#|python|
 [ ["simple éxécution", "","1 2 3 4 5"],
-   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
+  ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
 ==
