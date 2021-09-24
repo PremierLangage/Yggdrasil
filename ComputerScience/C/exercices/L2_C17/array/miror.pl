@@ -83,6 +83,6 @@ astuces==#|python|
 [
   { "content": """Pour échanger raisonnablement deux valeurs en C, on en utilise une troisième temporaire."""},
   { "content": """On commence par échanger la première valeur avec la dernière valeur du tableau, ensuite la seconde avec l'avant dernière, et ainsi de suite."""},
-  { "content": """La boucle qui déclanche les échanges doit s'arrêter au milieu (sinon échanger deux fois d'affiler reconstituera la tableau initial). La division entière du C est parfaite pour stoper la boucle."""}
+  { "content": """La boucle qui déclanche les échanges doit s'arrêter au milieu (sinon échanger deux fois d'affiler reconstituera la tableau initial). La division entière par 2 du C est parfaite pour stoper la boucle."""}
 ]
 ==
