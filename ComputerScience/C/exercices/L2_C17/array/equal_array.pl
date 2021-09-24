@@ -47,9 +47,7 @@ int are_equal_tab(...){
 
 solution==#|c|
 int are_equal_tab(int tab[],int deu[], int size){
-
   int i;
-
   for(i=0 ; i<size ; i++){
     if( deu[i]!=tab[i])
         return 0;
