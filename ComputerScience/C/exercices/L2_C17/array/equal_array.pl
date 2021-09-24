@@ -23,8 +23,9 @@ tag=tableau|fonction|declaration|parcours
 author=Prog C L2 Team
 
 text==#|markdown|
-Ecrire une fonction `identique_tab` qui reçoit deux tableaux d'entiers de même taille 
-et leur taille, et qui renvoie 1 si les deux tableaux sont identiques (mêmes éléments dans le même ordre) et 0 sinon.<br>
+Écrire une fonction `are_equal_tab` qui reçoit deux tableaux d'entiers de même taille 
+
+et leur taille, et qui renvoie 1 si les deux tableaux sont identiques (mêmes éléments dans le même ordre) et 0 sinon.
 ==
 codebefore==
 
@@ -34,9 +35,9 @@ codebefore==
 
 ==
 
-editor.code==
-int identique_tab(/* Paramètres*/){
-  /* Votre code ici */
+editor.code==#|c|
+int are_equal_tab(...){
+  // Votre code ici
 }
 ==
 
