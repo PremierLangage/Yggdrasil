@@ -26,7 +26,7 @@ author=Prog C L2 Team
 
 text==#|markdown|
 Écrire une fonction `miroir` qui reçoit deux tableaux d'entiers de même taille 
-ainsi que l'entier C donnant leur taille. La fonction devra remplir le deuxième avec l'image 
+ainsi qu'un entier C donnant leur taille. La fonction devra remplir le deuxième avec l'image 
 miroir du premier.
 
 <br>
