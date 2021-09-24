@@ -77,7 +77,7 @@ form== #|html|
 Nombre d'essais : {{essai}}
 <ul>
 {% for input in inputs %}
-input
+{input}
 {% endfor %}
 </ul>
 ==
