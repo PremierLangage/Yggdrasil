@@ -93,8 +93,8 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """`int are_equal_tab(int t1[],int t2[], int size)` est un bon choix de prototype."""},
+  { "content": """Une seule variable locale une bonne boucle `for` doivent suffire."""},
+  { "content": """Il faut faire tourner une boucle de `0` inclus à `size` exclus et faire un test entre les deux valeurs à cet indice pour les deux tableaux. En cas de différence, on renvoie directement `0`. Si à la fin de la boucle, toutes les valeurs étaient égales deux à deux, alors il faut retourner `1`."""}
 ]
 ==
