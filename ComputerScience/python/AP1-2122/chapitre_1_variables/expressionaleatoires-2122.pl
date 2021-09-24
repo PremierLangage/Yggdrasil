@@ -4,7 +4,7 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-extends decl_inputs.pl
+extends=decl_inputs.pl
 
 
 nbechec%0
