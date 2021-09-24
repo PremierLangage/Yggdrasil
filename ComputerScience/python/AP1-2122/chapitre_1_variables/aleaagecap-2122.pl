@@ -40,7 +40,7 @@ text==
 	print("(",3,")") # affiche ( 3 ) la virgule ajoute un espace.
 	print("("+str(3)+")") # affiche (3) aucun espace.   
 	a=3
-	print(f"({a})") # affiche (3)   # remarquez le f avant la chaine 
+	print(f"({a})§({a+2})") # affiche (3)§(5)   # remarquez le f avant la chaine 
 
 ==
 
