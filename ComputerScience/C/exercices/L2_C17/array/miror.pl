@@ -73,9 +73,16 @@ for(i=0;i<size;i+=1)
 }
 ==
 
-
-tests==
+checks_args_stdin==#|python|
 [ ["simple éxécution", "","1 2 3 4 5"],
    ["aléatoire1 ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
   ["aléatoire2 ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
+==
+
+astuces==#|python|
+[
+  { "content": """Pour calculer le maximum, il faut parcourir le tableau une fois et mettre à jour un maximum courrant pas à pas."""},
+  { "content": """Pour parcourir le tableau, une boucle `for` sur les indices de `0` inclus à `taille` exclus est une bonne solution."""},
+  { "content": """Une variable locale `max` initialisée à `-1`"""}
+]
 ==
