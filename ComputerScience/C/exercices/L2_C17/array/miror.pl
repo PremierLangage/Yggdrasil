@@ -26,13 +26,13 @@ author=Prog C L2 Team
 
 text==#|markdown|
 Écrire une fonction `miroir` qui reçoit deux tableaux d'entiers de même taille 
-ainsi qu'un entier C donnant leur taille. La fonction devra remplir le deuxième avec l'image 
-miroir du premier.
+ainsi qu'un entier C donnant leur taille. La fonction devra remplir le deuxième 
+tableau avec l'image miroir des valeurs du premier tableau.
 
 <br>
 
-<u>Exemple :</u> Si le premier tableau de taille `5` contenait `[1,2,3,4,5]`, le deuxième contiendra 
-les valeurs `[5,4,3,2,1]` après éxécution de la fonction.
+<u>Exemple :</u> Si le premier tableau de taille `5` contenait `[1, 2, 3, 4, 5]`, le deuxième contiendra 
+les valeurs `[5, 4, 3, 2, 1]` après éxécution de la fonction.
 ==
 
 code_before==#|c|
