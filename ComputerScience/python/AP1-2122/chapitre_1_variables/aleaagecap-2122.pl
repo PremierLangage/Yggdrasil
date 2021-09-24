@@ -35,12 +35,16 @@ text==
 
 	"Le_perroquet_du_capitaine_a_actuellement_ZZ_ans.
 
-<u>**Information**</u> : une petite remarque sur "print"
+<u>**Information**</u> : une petite remarque sur "print" 
 
 	print("(",3,")") # affiche ( 3 ) la virgule ajoute un espace.
+	print("(%d)" % 3) # affiche (3) aucun espace.   
 	print("("+str(3)+")") # affiche (3) aucun espace.   
 	a=3
 	print(f"({a})§({a+2})") # affiche (3)§(5)   # remarquez le f avant la chaine 
+
+	<a href="https://docs.python.org/fr/3/tutorial/inputoutput.html"> la doc de print </a>
+	Ou google "print python3" 
 
 ==
 
