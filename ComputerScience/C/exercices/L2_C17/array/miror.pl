@@ -81,8 +81,8 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """Pour calculer le maximum, il faut parcourir le tableau une fois et mettre à jour un maximum courrant pas à pas."""},
-  { "content": """Pour parcourir le tableau, une boucle `for` sur les indices de `0` inclus à `taille` exclus est une bonne solution."""},
-  { "content": """Une variable locale `max` initialisée à `-1`"""}
+  { "content": """Pour échanger raisonnablement deux valeurs en C, on en utilise une troisième temporaire."""},
+  { "content": """On commence par échanger la première et la dernière valeur du tableau, ensuite la seconde et l'avant dernière, et ainsi de suite."""},
+  { "content": """"""}
 ]
 ==
