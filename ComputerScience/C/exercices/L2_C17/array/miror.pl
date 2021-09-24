@@ -20,8 +20,6 @@ title=Miroir d'un tableau
 
 tag=tableau|fonction|astuce
 
-extends=/ComputerScience/C/template/stdsandboxC.pl
-
 author=Prog C L2 Team
 
 text==#|markdown|
@@ -77,9 +75,11 @@ for(i=0;i<size;i+=1)
 ==
 
 checks_args_stdin==#|python|
-[ ["simple éxécution", "","1 2 3 4 5"],
-   ["aléatoire1 ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,10))])],
-  ["aléatoire2 ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
+[ ["Simple éxécution", [], "1 2 3 4 5"],
+  ["Test aléatoire 1", [], " ".join([str(randint(-20,20)) for i in range(randint(5,10))])],
+  ["Test aléatoire 2", [], " ".join([str(randint(-20,20)) for i in range(randint(10,15))])],
+  ["Test aléatoire 3", [], " ".join([str(randint(-20,20)) for i in range(randint(15,20))])],
+  ["Test aléatoire 4", [], " ".join([str(randint(-80,80)) for i in range(randint(20,25))])] ]
 ==
 
 astuces==#|python|
