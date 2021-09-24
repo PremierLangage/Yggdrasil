@@ -89,9 +89,9 @@ form== #|html|
 Nombre d'essais : {{essai}}
 <br><br>
 <ul>
-    {% for i in range(N) %}
-        {{ expr[i] }}
-        {{ inputs[i]|component }}
+    {% for input in inputs %}
+        {{ expr[loop.index0] }}
+        {{ input|component }}
     {% endfor %}
 </ul>
 ==
