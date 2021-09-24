@@ -130,4 +130,11 @@ checks_args_stdin==#|python|
   ["Test aléatoire 4", [str(randint(-10, 10)) for i in range(20)], ""] ]
 ==
 
+astuces==#|python|
+[
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""}
+]
+==
 
