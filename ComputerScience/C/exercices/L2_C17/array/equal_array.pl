@@ -83,7 +83,7 @@ return 0;
 ==
 
 checks_args_stdin==#|python|
-[ ["simple éxécution", [], "1 2 3 4 5"],
+[ ["Simple éxécution", [], "1 2 3 4 5"],
   ["Test aléatoire 1", [], " ".join([str(randint(-20,20)) for i in range(randint(5,10))])],
   ["Test aléatoire 2", [], " ".join([str(randint(-30,30)) for i in range(randint(10,15))])],
   ["Test aléatoire 3", [], " ".join([str(randint(-40,40)) for i in range(randint(15,20))])],
