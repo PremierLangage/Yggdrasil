@@ -23,7 +23,9 @@ tag=tableau|fonction|declaration|parcours
 author=Prog C L2 Team
 
 text==#|markdown|
-Écrire une fonction `are_equal_tab` qui reçoit deux tableaux d'entiers de même taille 
+Écrire une fonction `are_equal_tab` qui prend en argument 3 paramètres. Les deux premiers
+arguments seront des tableaux d'entiers, le dernier argument sera un entier qui donnera
+la taille des deux tableaux. 
 
 et leur taille, et qui renvoie 1 si les deux tableaux sont identiques (mêmes éléments dans le même ordre) et 0 sinon.
 ==
