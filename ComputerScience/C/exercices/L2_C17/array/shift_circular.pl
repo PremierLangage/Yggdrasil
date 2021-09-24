@@ -20,7 +20,6 @@ title=Décalage circulaire
 
 tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau|ComparaisonContigues
 
-extends=/ComputerScience/C/template/stdsandboxC.pl
 
 author= 
 
