@@ -46,7 +46,7 @@ int are_equal_tab(...){
 ==
 
 solution==#|c|
-int identique_tab(int tab[],int deu[], int size){
+int are_equal_tab(int tab[],int deu[], int size){
 
   int i;
 
@@ -70,11 +70,11 @@ int main(int argc, char* argv[]){
   }
   dif[size-1]=tab[size-1]+1+(rand()%100);
 
-if (identique_tab(tab, cop, size)==1)
+if (are_equal_tab(tab, cop, size)==1)
     printf("Tableaux identiques\n");
 else
   printf("Tableaux différents\n");
-if (identique_tab(tab, dif, size)==1)
+if (are_equal_tab(tab, dif, size)==1)
      printf("Tableaux identiques\n");
 else
   printf("Tableaux différents\n");
