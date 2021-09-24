@@ -4,6 +4,9 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+extends decl_inputs.pl
+
+
 nbechec%0
 
 before== #|python|
@@ -36,8 +39,8 @@ isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
     inp = Input()
-    globals()[f"input{i}"] = inp
-    inputs.append(inp)
+     
+    inputs.append(globals()[f"input{i}"])
 ==
 
 evaluator== #|python|
