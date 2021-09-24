@@ -86,7 +86,7 @@ cas échéant.
 
 editor.code==#|c|
 int est_partie_triee(int* tab){
-  /* Votre code ici... */
+  // Votre code ici...
 }
 ==
 
