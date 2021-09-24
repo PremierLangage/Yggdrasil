@@ -23,8 +23,9 @@ tag=tableau|fonction|parcours
 author=Nicolas Borie
 
 text==#|mardown|
-Ecrire une fonction `int max_tab(int t[], int taille)` qui reçoit un tableau et sa taille (>0) et 
-renvoie son maximum ou -1 si la taille est <= 0.
+Ecrire une fonction `int max_tab(int t[], int taille)` qui reçoit un tableau `t` ainsi que 
+sa taille `taille`. La fonction devra renvoyer la valeur de l'élément maximum du tableau `t` 
+ou bien `-1` si la taille donnée est inférieure ou égale à zéro.
 ==
 
 code_before==#|c|
