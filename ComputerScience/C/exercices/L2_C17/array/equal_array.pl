@@ -70,14 +70,14 @@ int main(int argc, char* argv[]){
   }
   dif[size-1]=tab[size-1]+1+(rand()%100);
 
-if (identique_tab(tab,cop,size)==1)
-    printf(" tableaux identiques \n");
+if (identique_tab(tab, cop, size)==1)
+    printf("Tableaux identiques\n");
 else
-  printf("tableaux différents \n");
-if (identique_tab(tab,dif,size)==1)
-     printf(" tableaux identiques \n");
+  printf("Tableaux différents\n");
+if (identique_tab(tab, dif, size)==1)
+     printf("Tableaux identiques\n");
 else
-  printf("tableaux différents \n");
+  printf("Tableaux différents\n");
 return 0;
 }
 ==
