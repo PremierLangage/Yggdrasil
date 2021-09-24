@@ -12,7 +12,7 @@ nbechec%0
 before== #|python|
 import random
 essai = 4
-N = 10
+N = 3
 
 expr = []
 res = []
@@ -38,8 +38,6 @@ solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
-    inp = Input()
-     
     inputs.append(globals()[f"input{i}"])
 ==
 
