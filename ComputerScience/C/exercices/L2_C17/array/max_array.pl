@@ -23,23 +23,22 @@ tag=tableau|fonction|parcours
 author=Nicolas Borie
 
 text==#|mardown|
-
-Ecrire une fonction `int max_tab(int t[], int taille)` qui reçoit un tableau et sa taille (>0) et renvoie son maximum ou -1 si la taille est <= 0.
+Ecrire une fonction `int max_tab(int t[], int taille)` qui reçoit un tableau et sa taille (>0) et 
+renvoie son maximum ou -1 si la taille est <= 0.
 ==
 
-codebefore==
-
+code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
-
 ==
 
-editor.code==
+editor.code==#|c|
 int max_tab(int tab[], int size){
   /* Votre code ici */
 } 
 ==
-solution==
+
+solution==#|c|
 int max_tab(int tab[], int size){
   if(size <= 0){
     return -1;
@@ -52,7 +51,8 @@ int max_tab(int tab[], int size){
 return max;
 } 
 ==
-codeafter==
+
+code_after==#|c|
 
 int main(int argc, char* argv[]){
   int tab[100];
@@ -75,9 +75,12 @@ int main(int argc, char* argv[]){
 ==
 
 
-tests==
-[ ["simple éxécution", "","1 2 3 4 5"],
-  ["tableau vide", "", ""],
-  ["aléatoire ", ""," ".join([str(random.randint(-10,10)) for i in range(random.randint(5,20))])],
-  ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
+checks_args_stdin==#|python|
+[ ["Simple éxécution", [],"1 2 3 4 5"],
+  ["Tableau vide", [], ""],
+  ["Test aléatoire 1", []," ".join([str(randint(-10,10)) for i in range(randint(5,10))])],
+  ["Test aléatoire 2", []," ".join([str(randint(-20,20)) for i in range(randint(10,15))])],
+  ["Test aléatoire 3", []," ".join([str(randint(-30,30)) for i in range(randint(15,20))])],
+  ["Test aléatoire 4", []," ".join([str(randint(-20,20)) for i in range(randint(20,25))])],
+  ["Test aléatoire 5", []," ".join([str(randint(-50,50)) for i in range(randint(25,30))])] ]
 ==
