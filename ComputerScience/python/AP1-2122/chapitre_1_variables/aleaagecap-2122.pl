@@ -43,8 +43,8 @@ text==
 	a=3
 	print(f"({a})§({a+2})") # affiche (3)§(5)   # remarquez le f avant la chaine 
 
-	<a href="https://docs.python.org/fr/3/tutorial/inputoutput.html"> la doc de print </a>
-	Ou google "print python3" 
+<a href="https://docs.python.org/fr/3/tutorial/inputoutput.html"> la doc de print </a>
+Ou google "print python3" 
 
 ==
 
