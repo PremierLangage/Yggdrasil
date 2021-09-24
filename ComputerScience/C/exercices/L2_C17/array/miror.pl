@@ -82,7 +82,7 @@ checks_args_stdin==#|python|
 astuces==#|python|
 [
   { "content": """Pour échanger raisonnablement deux valeurs en C, on en utilise une troisième temporaire."""},
-  { "content": """On commence par échanger la première et la dernière valeur du tableau, ensuite la seconde et l'avant dernière, et ainsi de suite."""},
-  { "content": """"""}
+  { "content": """On commence par échanger la première valeur avec la dernière valeur du tableau, ensuite la seconde avec l'avant dernière, et ainsi de suite."""},
+  { "content": """La boucle qui déclanche les échanges doit s'arrêter au milieu (sinon échanger deux fois d'affiler reconstituera la tableau initial). La division entière du C est parfaite pour stoper la boucle."""}
 ]
 ==
