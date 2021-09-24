@@ -25,9 +25,12 @@ author=Prog C L2 Team
 text==#|markdown|
 Écrire une fonction `are_equal_tab` qui prend en argument 3 paramètres. Les deux premiers
 arguments seront des tableaux d'entiers, le dernier argument sera un entier qui donnera
-la taille des deux tableaux. 
+la taille des deux tableaux. L'utilisateur d'une telle fonction sera responsable de 
+tourjours bien forunir des arguments cohérents et corrects, c'est son travail de toujours
+bien donner deux tableaux de même taille à votre fonction.
 
-et leur taille, et qui renvoie 1 si les deux tableaux sont identiques (mêmes éléments dans le même ordre) et 0 sinon.
+Finalement, votre fonction devra renvoyer `1` si les contenus des deux tableaux sont 
+identiques et `0` sinon.
 ==
 codebefore==
 
