@@ -78,9 +78,9 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [ ["Simple éxécution", [],"1 2 3 4 5"],
   ["Tableau vide", [], ""],
-  ["Test aléatoire 1", []," ".join([str(randint(-10,10)) for i in range(randint(5,10))])],
-  ["Test aléatoire 2", []," ".join([str(randint(-20,20)) for i in range(randint(10,15))])],
-  ["Test aléatoire 3", []," ".join([str(randint(-30,30)) for i in range(randint(15,20))])],
-  ["Test aléatoire 4", []," ".join([str(randint(-20,20)) for i in range(randint(20,25))])],
-  ["Test aléatoire 5", []," ".join([str(randint(-50,50)) for i in range(randint(25,30))])] ]
+  ["Test aléatoire 1", []," ".join([str(randint(0,10)) for i in range(randint(5,10))])],
+  ["Test aléatoire 2", []," ".join([str(randint(0,20)) for i in range(randint(10,15))])],
+  ["Test aléatoire 3", []," ".join([str(randint(0,30)) for i in range(randint(15,20))])],
+  ["Test aléatoire 4", []," ".join([str(randint(0,20)) for i in range(randint(20,25))])],
+  ["Test aléatoire 5", []," ".join([str(randint(0,50)) for i in range(randint(25,30))])] ]
 ==
