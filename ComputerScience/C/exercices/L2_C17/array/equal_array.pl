@@ -66,7 +66,8 @@ int main(int argc, char* argv[]){
     dif[size]=cop[size]=tab[size] = lu;
    size++;
   }
-  dif[size-1]=tab[size-1]+1+(rand()%100);
+  lu = rand() % size;
+  dif[lu]=tab[lu]+1+(rand()%100);
 
 if (are_equal_tab(tab, cop, size)==1)
     printf("Tableaux identiques\n");
