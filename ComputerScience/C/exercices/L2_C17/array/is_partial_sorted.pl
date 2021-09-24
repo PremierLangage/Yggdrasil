@@ -132,9 +132,9 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Une boucle `for` adaptée contenant une unique conditionnelle `if` est une bonne solution."""},
+  { "content": """La condition portant sur deux indices consécutifs (exemple `[i]` et `[i+1]`), il ne faut inlure les deux bornes dans la boucle sinon ça dépassera (ça déborde pas du même coté si on utlise `[i-1]` et `[i]`)."""},
+  { "content": """Dans la boucle, à la première condition non vérifiée, on retourne `0`. En fin de boucle, si toutes les conditions ont été vérifiées, alors le tableau est bien partiellement trié sur la fenêtre de valeurs et on retourne `1`."""}
 ]
 ==
 
