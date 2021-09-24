@@ -20,7 +20,7 @@ title=Maximum d'un tableau
 
 tag=tableau|fonction|parcours|simple
 
-author=Nicolas Borie
+author=Prog C L2 Team
 
 text==#|mardown|
 Ecrire une fonction `int max_tab(int t[], int taille)` qui reçoit un tableau `t` ainsi que 
