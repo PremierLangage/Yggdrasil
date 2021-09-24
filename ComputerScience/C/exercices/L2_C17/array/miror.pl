@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 title=Miroir d'un tableau
 
-tag=tableau|fonction|astuce
+tag=tableau|fonction|parcours
 
 author=Prog C L2 Team
 
