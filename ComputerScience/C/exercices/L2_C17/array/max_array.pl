@@ -34,7 +34,7 @@ code_before==#|c|
 
 editor.code==#|c|
 int max_tab(int tab[], int size){
-  /* Votre code ici */
+  // Votre code ici
 } 
 ==
 
