@@ -78,7 +78,7 @@ void affiche (char tab[][MAX],int li,int col){
   int i,j;
   for(i= 0;i<li;i++){
     for(j=0;j<col;j++)
-      printf("%c",tab[i][j]);
+      printf("%c ",tab[i][j]);
     printf("\n");
     }
 }
