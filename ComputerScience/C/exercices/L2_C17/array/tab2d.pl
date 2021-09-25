@@ -23,7 +23,7 @@ tag=tableau|fonction|rectangle|matrice
 author=Prog C L2 Team
 
 text==#|markdown|
-Ecrire une fonction de protopype `void remplit(char tab[MAX][MAX],int li,int col)` 
+Ecrire une fonction de protopype `void remplir(char tab[MAX][MAX],int li, int col)` 
 qui remplit la partie effective avec des lettres minuscules consécutives.<br>
 Après la lettre $%\tt{z}%$ on repart de la lettre $%\tt{a}%$ <br>
 Exemples (avec MAX 50)<br>
@@ -40,7 +40,6 @@ remplit(tab,4,10) transforme les 4 premières lignes et 10 premières colonnes e
     u v w x y z a b c d   
     e f g h i j k l m n   
 
-
 ==
 
 code_before==#|c|
@@ -51,13 +50,13 @@ code_before==#|c|
 ==
 
 editor.code==#|c|
-void remplit(char tab[][MAX],int li,int col){
+void remplir(char tab[][MAX],int li,int col){
   // Votre code ici...
 }
 ==
 
 solution==#|c|
-void remplit(char tab[MAX][MAX],int li,int col){
+void remplir(char tab[MAX][MAX],int li,int col){
   char l='a';
   int d=0;
   int i,j;
@@ -84,7 +83,7 @@ int main(void){
   char tab[MAX][MAX];
   int li,col;
   scanf("%d %d",&li,&col);
-  remplit(tab,li,col);
+  remplir(tab,li,col);
   affiche(tab,li,col);
   return 0;
 }
