@@ -87,14 +87,20 @@ int main(int argc, char* argv[]){
 }
 ==
 
-# MAX était donné comme valeur comme en C dans les tests, ça faisait tout planter, il faut le mettre à la main
-tests==
-[ ["croissante 1", "","5\n 1 2 3 4 5\n 1 2 3 4 5"] ,
-  ["croissante 2", "","9\n"+" ".join([str(i) for i in range(1,10)])+"\n"+" ".join([str(i) for i in range(1,10)]) ],
-  ["aléatoire 1", "","20\n"+" ".join([str(random.randint(-20,20)) for i in range(20)])+"\n"+" ".join([str(random.randint(0,20)) for i in range(20)]) ],
-  ["aléatoire 2", "","10\n"+" ".join([str(random.randint(0,50)) for i in range(10)])+"\n"+" ".join([str(random.randint(0,20)) for i in range(10)]) ],
+
+checks_args_stdin==#|python|
+[ ["Test basique", "","5\n 1 2 3 4 5\n 1 2 3 4 5"] ,
+  ["Test croissant", "","9\n"+" ".join([str(i) for i in range(1,10)])+"\n"+" ".join([str(i) for i in range(1,10)]) ],
+  ["Test aléatoire 1", "","20\n"+" ".join([str(randint(-20,20)) for i in range(20)])+"\n"+" ".join([str(randint(0,20)) for i in range(20)]) ],
+  ["Test aléatoire 2", "","10\n"+" ".join([str(randint(0,50)) for i in range(10)])+"\n"+" ".join([str(randint(0,20)) for i in range(10)]) ],
 ]
 ==
 
-
+astuces==#|python|
+[
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""}
+]
+==
 
