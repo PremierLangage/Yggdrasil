@@ -39,6 +39,8 @@ remplit(tab,4,10) transforme les 4 premières lignes et 10 premières colonnes e
     k l m n o p q r s t   
     u v w x y z a b c d   
     e f g h i j k l m n   
+
+
 ==
 
 code_before==#|c|
