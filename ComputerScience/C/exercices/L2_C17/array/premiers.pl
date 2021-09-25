@@ -39,8 +39,8 @@ $% \left\\{ \\begin{array}{ccc}
 
 <br>
 Vous n'avez pas à écrire la fonction `pgcd` (normalement vue en TD, cette dernière vous
-êtes offerte). Vous devez juste l'utiliser. pour rappel voici son prototype : <br>
-`int pgcd(int a, int b)`<br>
+êtes offerte). Vous devez juste l'utiliser. pour rappel voici son prototype :   
+`int pgcd(int a, int b)`   
 la fonction `pgcd` renvoie le plus grand diviseur commun du couple d'entiers `(a, b)`.
 ==
 
