@@ -23,7 +23,7 @@ tag=tableau|fonction|rectangle|matrice
 author=Prog C L2 Team
 
 text==#|markdown|
-Ecrire une fonction de protopype `void remplir(char tab[MAX][MAX],int li, int col)` 
+Ecrire une fonction de protopype `void remplir(char tab[MAX][MAX], int li, int col)` 
 qui remplit la partie effective avec des lettres minuscules consécutives.<br>
 Après la lettre $%\tt{z}%$ on repart de la lettre $%\tt{a}%$ <br>
 Exemples (avec MAX 50)<br>
@@ -50,7 +50,7 @@ code_before==#|c|
 ==
 
 editor.code==#|c|
-void remplir(char tab[][MAX],int li,int col){
+void remplir(char tab[MAX][MAX], int li, int col){
   // Votre code ici...
 }
 ==
