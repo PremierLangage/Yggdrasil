@@ -49,18 +49,16 @@ editor.code==
 
 ==
 
-codebefore==
-
+code_before==#|c|
 #include <stdlib.h>
 #include <stdio.h>
 
-#define N 5
+#define N 20
 /*déclaration du prototype de la fonction pgcd utilisée par la suite*/
 int pgcd(int,int);
 ==
 
-solution==
-    
+solution==#|c|
 void premiers_entre_eux(int t[][N]){
     int i,j;
     t[0][0]=-1;
@@ -95,8 +93,7 @@ void premiers_entre_eux(int t[][N]){
 /*} */
 ==
 
-codeafter==
-
+code_after==#|c|
 int pgcd(int a,int b){
     int r;
     if(b==0)
@@ -130,8 +127,6 @@ int main(void) {
 }
 ==
 
-tests==
-[ ["Basique", "", ""],
-  
-  ]
+checks_args_stdin==#|python|
+[ ["Test unique", [], ""] ]
 ==
