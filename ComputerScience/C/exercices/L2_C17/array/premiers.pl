@@ -30,9 +30,9 @@ text==#|markdown|
 case `[i][j]` du tableau avec:   
 
 $% \\begin{array}{ccc}
--1 & si & i = j = 0 \\
-1 & si & pgcd(i, j) = 1 \\
-0 & sinon & \\
+-1 & si & i = j = 0 \\newline
+1 & si & pgcd(i, j) = 1 \\newline
+0 & sinon & \\newline
 \\end{array}
 %$
 
