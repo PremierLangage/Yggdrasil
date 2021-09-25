@@ -111,7 +111,7 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
+  { "content": """Pour parcourir toutes les cases du tableau à trois dimensions, il faudra imbriquer trois boucles `for` l'une dans l'autre."""},
   { "content": """"""},
   { "content": """"""}
 ]
