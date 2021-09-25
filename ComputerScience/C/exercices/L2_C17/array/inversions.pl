@@ -21,8 +21,6 @@ title=Calcul du nombre d'inversions
 
 tag=tableau|fonction|astuce|paires
 
-extends=/ComputerScience/C/template/stdsandboxC.pl
-
 author=Marc Zipstein
 
 text==#|markdown|
@@ -32,23 +30,20 @@ Rappel: Une inversion dans un tableau $%t%$ est une pair d'indices `i<j` du tabl
 Exemples : <br>
 - Si le tableau contenait 3,1,2 les inversions sont les paires `(i,j)` suivants : `(0,1),(0,2)`. <br>
 - Si le tableau contenait 1,3,2,0 les inversions sont les paires `(i,j)` suivants : `(0,3),(1,2),(1,3),(2,3)`. 
-
 ==
 
-codebefore==
-
+code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
-
 ==
 
-editor.code==
+editor.code==#|c|
 int nb_inversions(int tab[], int size){
- 
+  // Votre code ici...
 }
 ==
 
-solution==
+solution==#|c|
 int nb_inversions(int tab[], int size){
   int i,j;
    int nb=0;
@@ -62,8 +57,7 @@ int nb_inversions(int tab[], int size){
 } 
 ==
 
-codeafter==
-
+code_after==#|c|
 int main(int argc, char* argv[]){
   int tab[100];
   int size = 0;
@@ -79,8 +73,7 @@ int main(int argc, char* argv[]){
 }
 ==
 
-
-tests==
+checks_args_stdin==#|python|
 [ ["simple éxécution", "","1 2 3 4 5"],
   ["avec deux négatifs", "","-1 -2"],
   ["aléatoire négatif", ""," ".join([str(random.randint(-30,-5)) for i in range(random.randint(5,10))])],
@@ -90,4 +83,12 @@ tests==
   ["aléatoire ", ""," ".join([str(random.randint(-100,100)) for i in range(random.randint(10,20))])],
   ["aléatoire ", ""," ".join([str(random.randint(-10,10)) for i in range(random.randint(5,20))])],
   ["aléatoire ", ""," ".join([str(random.randint(-20,20)) for i in range(random.randint(5,20))])], ]
+==
+
+astuces==#|python|
+[
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""}
+]
 ==
