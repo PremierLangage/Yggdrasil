@@ -25,13 +25,13 @@ author=Prog C L2 Team
 editor.height=350px
 
 text==#|markdown|
-Écrire une fonction `void shiftLR(int a[], int b[], int size)` qui reçoit deux tableaux, `tab1` et `tab2`, 
-ainsi que leur taille et effectue un décalage circulaire d'une case vers la droite 
-pour `tab1`, et d'une case vers la gauche pour `tab2`.
+Écrire une fonction `void shiftLR(int a[], int b[], int size)` qui reçoit deux tableaux 
+d'entiers, `a` et `b`, ainsi que leur taille `size` et effectue un décalage circulaire 
+d'une case vers la droite pour `a`, et d'une case vers la gauche pour `b`.
 
 <br>
 
-Exemple avec taille 5 :   
+Exemple en taille 5 :   
 - Si `vect1` contient `[1, 2, 3, 4]` et `vect2` contient aussi  `[1, 2, 3, 4]`, après l'éxécution 
 de `shiftLR(vect1, vect2, 4)`, `vect1` contiendra `[4, 1, 2, 3]` et `vect2` contiendra `[2, 3, 4, 1]`.
 
