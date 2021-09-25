@@ -134,8 +134,8 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Pour faire cette exercice, il faudra imbriquer deux boucles `for` l'une dans l'autre. Cela permettra de parcourir entièrement le carré de nombres."""},
+  { "content": """Une fois dans la double boucle, une simple conditionnelle portant sur un appel à la fonction `pgcd` aux deux coordonnées va suffire."""},
+  { "content": """Le cas de la case `[0][0]` doit être traité à part, possiblement en fin de fonction."""}
 ]
 ==
