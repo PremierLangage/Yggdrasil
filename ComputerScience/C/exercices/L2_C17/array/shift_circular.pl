@@ -16,7 +16,7 @@
 
 extends=/ComputerScience/C/template/std_progC17_clang.pl
 
-title=Décalage circulaire
+title=Décalage circulaire dans les deux sens
 
 tag=tableau|fonction|parcours
 
