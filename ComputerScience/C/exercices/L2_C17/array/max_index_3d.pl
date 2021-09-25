@@ -60,7 +60,7 @@ int index_max_3d(int t[M][M][M], int s1, int s2, int s3, int* m1, int* m2, int* 
   for (i=0 ; i<s1 ; i++){
     for (j=0 ; j<s2 ; j++){
       for (k=0 ; k<s3 ; k++){
-        if (t[i][j][k] < t[*m1][*m2][*m3]){
+        if (t[i][j][k] > t[*m1][*m2][*m3]){
           *m1 = i;
           *m2 = j;
           *m3 = k;
