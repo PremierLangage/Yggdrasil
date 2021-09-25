@@ -76,6 +76,7 @@ int main(int argc, char* argv[]){
   int t[M][M][M];
   int s1, s2, s3;
   int m1, m2, m3;
+  int max;
 
   s1 = atoi(argv[1]);
   s2 = atoi(argv[2]);
@@ -88,9 +89,9 @@ int main(int argc, char* argv[]){
       for (m3=0 ; m3<s3 ; m3++)
         t[m1][m2][m3] = rand() % ((s1*s2*s3) / 5);
 
-  index_max_3d(t, s1, s2, s3, &m1, &m2, &m3);
+  max = index_max_3d(t, s1, s2, s3, &m1, &m2, &m3);
 
-  printf("Le maximum %d se trouve aux coordonnées (%d, %d, %d)\n", t[m1][m2][m3], m1, m2, m3);
+  printf("Le maximum %d se trouve aux coordonnées (%d, %d, %d)\n", max, m1, m2, m3);
 
   return 0;
 }
