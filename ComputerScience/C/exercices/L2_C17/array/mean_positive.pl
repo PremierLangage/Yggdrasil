@@ -94,3 +94,10 @@ int main(int argc, char* argv[]){
 }
 ==
 
+astuces==#|python|
+[
+  { "content": """On peut code raisonnablement cette fonction avec une boucle `for` standard parcourant le tableau ainsi que trois variables locales."""},
+  { "content": """Pour les trois variables locales, un bon choix consiste à prendre un petit `i` entier pour les indices du tableau, une variable `cumul` flottante pour additionner pas à pas les positifs (en plus ça forcera une division flottante à la fin) et une variable entière `count` pour compter le nombre d'éléments poritifs ou nuls."""},
+  { "content": """Lorsque vous avez parcourru complètement le tableau en comptant le nombre d'éléments positifs ou nuls et avoir cummulé leur valeurs, c'est après ce parcour qu'il faut procédé au test disans si le tableau contenait (ou pas) des éléments positifs. S'il n'y avait d'élément poitif, on retourne `0.0` sinon on procède à une division."""}
+]
+==
