@@ -26,8 +26,8 @@ author=Prog C L2 Team
 
 text==#|markdown| 
 Écrire une fonction `premiers_entre_eux` qui reçoit un tableau carré `N x N` 
-(`N` est une constante que vous n'avez pas à définir). La fonction remplit la 
-case `[i][j]` du tableau avec:   
+(`N` est une constante que vous n'avez pas à définir). Votre fonction derva remplir 
+chaque case `[i][j]` du tableau avec :   
 
 $% \left\\{ \\begin{array}{ccc}
 -1 & si & i = j = 0 \\newline
