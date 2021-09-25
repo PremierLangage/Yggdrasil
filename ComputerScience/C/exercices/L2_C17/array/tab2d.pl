@@ -24,16 +24,17 @@ author=Prog C L2 Team
 
 text==#|markdown|
 Ecrire une fonction de protopype `void remplir(char tab[MAX][MAX], int li, int col)` 
-qui remplit la partie effective avec des lettres minuscules consécutives.<br>
+qui remplit la partie effective (de taille `li x col`) avec des lettres minuscules consécutives.   
+
 Après la lettre $%\tt{z}%$ on repart de la lettre $%\tt{a}%$ <br>
 Exemples (avec MAX 50)<br>
-remplit(tab,3,4) transforme les 3 premières lignes et 4 premières colonnes en   
+`remplir(tab, 3, 4)` transforme les 3 premières lignes et 4 premières colonnes de `tab` en   
 
     a b c d   
     e f g h   
     i j k l   
 
-remplit(tab,4,10) transforme les 4 premières lignes et 10 premières colonnes en   
+`remplir(tab, 4, 10)` transforme les 4 premières lignes et 10 premières colonnes de `tab` en   
 
     a b c d e f g h i j   
     k l m n o p q r s t   
