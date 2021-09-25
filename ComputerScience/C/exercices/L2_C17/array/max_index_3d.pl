@@ -23,7 +23,8 @@ tag=tableau|fonction|parcours|complexe|dimension|pointeur
 author=Nicolas Borie
 
 text==#|mardown|
-Écrire une fonction `int index_max_3d(int t[M][M][M], int s1, int s2, int s3, int* m1, int* m2, int* m3)` 
+Écrire une fonction   
+`int index_max_3d(int t[M][M][M], int s1, int s2, int s3, int* m1, int* m2, int* m3)`   
 qui prend en argument un tableau à trois dimension `t`, puis trois entiers pour délimiter une zone de travail,
 et enfin trois pointeurs vers un entiers.
 ==
