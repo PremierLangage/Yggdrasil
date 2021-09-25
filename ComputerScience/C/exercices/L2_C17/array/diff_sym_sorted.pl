@@ -157,7 +157,6 @@ checks_args_stdin==#|python|
   ["Test aléatoire de taille 30", ["30"], ""], ]
 ==
 
-
 astuces==#|python|
 [
   { "content": """"""},
