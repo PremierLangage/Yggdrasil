@@ -22,14 +22,15 @@ tag=tableau|fonction|parcours
 
 author=Prog C L2 Team
 
-text==
-Écrire une fonction `void decaleDG(int tab1 [], tab2 [], int taille)` qui reçoit deux tableaux, `tab1` et `tab2`, 
+text==#|markdown|
+Écrire une fonction `void shiftLR(int tab1 [], int tab2 [], int taille)` qui reçoit deux tableaux, `tab1` et `tab2`, 
 ainsi que leur taille et effectue un décalage circulaire d'une case vers la droite pour `tab1`, et d'une case vers la gauche pour `tab2`.
-<p>
-Exemple
-avec taille 5 : <br>
-- si tab1 contient $%1,2,3,4%$ et tab2 contient $%1,2,3,4%$ , 
-après l'éxécution de decaleDG(tab1,tab2,5), tab1 contiendra $%4,1,2,3%$ et tab2 $%2,3,4,1%$.
+
+<br>
+
+Exemple avec taille 5 :   
+- Si `tab1` contient `[1, 2, 3, 4]` et `tab2` contient aussi  `[1, 2, 3, 4]`, après l'éxécution 
+de `decaleDG(tab1, tab2, 4)`, `tab1` contiendra `[4, 1, 2, 3]` et `tab2` contiendra `[2, 3, 4, 1]`.
 
 ==
 
@@ -40,8 +41,8 @@ code_before==#|c|
 ==
 
 editor.code==#|c|
-/* Retour */ decaleDG(/* Paramètres */){
-
+void decaleDG(int tab1 [], int tab2 [], int taille){
+  // Votre code ici...
 }
 ==
 
