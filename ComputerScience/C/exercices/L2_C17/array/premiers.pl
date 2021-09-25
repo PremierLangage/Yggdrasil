@@ -29,11 +29,13 @@ text==#|markdown|
 (`N` est une constante que vous n'avez pas à définir). La fonction remplit la 
 case `[i][j]` du tableau avec:   
 
-<table>
-<tr><td> -1 </td><td> ssi   </td><td> i = j = 0    </td></tr>
-<tr><td> 1  </td><td> ssi   </td><td> pgcd(i,j) = 1</td></tr>
-<tr><td> 0  </td><td> sinon </td><td>                </td></tr>
-</table>
+%$  
+\begin{array}{ccc}
+-1 & si & i = j = 0 \\
+1 & si & pgcd(i, j) = 1 \\
+0 & sinon & \\
+\end{array}
+$%
 
 <br>
 Vous n'avez pas à écrire la fonction `pgcd` (normalement vue en TD, cette dernière vous
