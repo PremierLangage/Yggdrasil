@@ -52,13 +52,11 @@ int nb_inversions(int t[], int taille){
 solution==#|c|
 int nb_inversions(int tab[], int size){
   int i,j;
-   int nb=0;
-
+  int nb=0;
   for(i=0 ; i<size ; i++)
     for(j=i+1;j<size;j++)
         if (tab[i] > tab[j])
             nb++;
-  
   return nb;
 } 
 ==
