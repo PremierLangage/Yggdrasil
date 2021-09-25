@@ -102,5 +102,11 @@ checks_args_stdin==#|python|
   ["Test aléatoire 5", "",str(randint(5, 10))+" "+str(randint(20,35))] ]
 ==
 
-
+astuces==#|python|
+[
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""}
+]
+==
 
