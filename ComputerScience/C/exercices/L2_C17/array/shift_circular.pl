@@ -76,7 +76,7 @@ int main(int argc, char* argv[]){
     scanf("%d",&lu);
     tab2[i] = lu;
   }
-  decaleDG(tab1,tab2,size);
+  shiftLR(tab1,tab2,size);
   printf("tab1 :");
   for (i = 0; i < size; i++)
     printf(" %i",tab1[i]);
