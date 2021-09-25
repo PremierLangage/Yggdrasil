@@ -95,8 +95,7 @@ checks_args_stdin==#|python|
   ["Test croissant", "","9\n"+" ".join([str(i) for i in range(1,10)])+"\n"+" ".join([str(i) for i in range(1,10)]) ],
   ["Test aléatoire 1", "","20\n"+" ".join([str(randint(-20,20)) for i in range(20)])+"\n"+" ".join([str(randint(0,20)) for i in range(20)]) ],
   ["Test aléatoire 2", "","10\n"+" ".join([str(randint(0,50)) for i in range(10)])+"\n"+" ".join([str(randint(0,20)) for i in range(10)]) ],
-  ["Test aléatoire 3", "","10\n"+" ".join([str(randint(0,50)) for i in range(10)])+"\n"+" ".join([str(randint(0,20)) for i in range(10)]) ],
-]
+  ["Test aléatoire 3", "","10\n"+" ".join([str(randint(0,50)) for i in range(10)])+"\n"+" ".join([str(randint(0,20)) for i in range(10)]) ] ]
 ==
 
 astuces==#|python|
