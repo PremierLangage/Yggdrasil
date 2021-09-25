@@ -68,8 +68,8 @@ Voici des exemples d'éxécution avec des tableaux de taille 10 aléatoires.
 Par soucis de simplicité, écrivez systématiquement un nombre puis un espace. Tant pis 
 pour l'espace final inutile, écrivez tous les nombres de votre solution avec la 
 commande `printf("%d ", ...)`. Votre fonction doit juste afficher le contenu de la 
-différence symmétrique. Les groupes de 3 lignes au dessus sont assemblé par la 
-fonction `main` cachée du programme de test.
+différence symmétrique. Les groupes de 3 lignes au dessus (avec les A :, les B : et les A diff B :) 
+sont assemblé par la fonction `main` cachée du programme de test.
 ==
 
 code_before==#|c|
