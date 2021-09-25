@@ -94,8 +94,12 @@ int main(void){
 ==
 
 checks_args_stdin==#|python|
-[ ["simple éxécution", "","3 4"],
-  ["aléatoire ", "",str(randint(4,8))+" "+str(randint(9,15))] ]
+[ ["Simple éxécution", "","3 4"],
+  ["Test aléatoire 1", "",str(randint(3, 6))+" "+str(randint(5,10))],
+  ["Test aléatoire 2", "",str(randint(3, 6))+" "+str(randint(10,20))],
+  ["Test aléatoire 3", "",str(randint(4, 8))+" "+str(randint(10,20))],
+  ["Test aléatoire 4", "",str(randint(3, 6))+" "+str(randint(20,35))],
+  ["Test aléatoire 5", "",str(randint(5, 10))+" "+str(randint(20,35))] ]
 ==
 
 
