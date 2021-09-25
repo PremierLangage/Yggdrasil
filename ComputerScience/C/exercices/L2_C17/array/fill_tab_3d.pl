@@ -23,7 +23,7 @@ tag=tableau|fonction|parcours|difficile|dimension
 
 author=Olivier Champalle
 
-text==  
+text==#|markdown|
  
 Ecrire une fonction `fill_tab(....)` qui : 
 
@@ -51,30 +51,19 @@ Dans cet exemple M = 2$%\times%$3$%\times%$5 = 30 <br>
 <strong>Ne changez pas l'ordre ni le nom des fonctions</strong>
 ==
 
-codebefore==
-
+code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 ==
 
-editor.code==
+editor.code==#|c|
 void fill_tab(........, int tab[][COL][N]){
-
-/* à compléter */
-
-}
-
-void display (.......) {
-
-/* à compléter */
-
+  // Votre code ici...
 }
 ==
 
-solution==
-
+solution==#|c|
 int fill_tab(int LI, int COL, int N, int tab[][COL][N]){
 	
 	int i,j,k;
@@ -92,7 +81,9 @@ int fill_tab(int LI, int COL, int N, int tab[][COL][N]){
 
 	return 0;
 }
+==
 
+code_after==#|c|
 int display(int LI, int COL, int N, int tab[][COL][N]){
 
 	int i,j,k;
@@ -122,10 +113,6 @@ int display(int LI, int COL, int N, int tab[][COL][N]){
 	return 0;
 }
 
-==
-
-codeafter==
-
 int main(int argc, char* argv[]){
  
  	int LI,COL,N;
@@ -142,13 +129,19 @@ int main(int argc, char* argv[]){
 
 	return 0;
 }
-
 ==
 
-tests==
-[ ["simple éxécution", "1 2 3",""],
-  ["aléatoire 1 ", str(random.randint(1,5))+" "+str(random.randint(9,15))+" "+str(random.randint(1,5)), ""],
-  ["aléatoire 2 ", str(random.randint(9,15))+" "+str(random.randint(1,6))+" "+str(random.randint(3,7)), ""]
-   ]
+checks_args_stdin==#|python|
+[ ["Simple éxécution", ["1", "2", "3"],""],
+  ["Test aléatoire 1", [str(random.randint(1,5)), str(random.randint(9,15)), str(random.randint(1,5))], ""],
+  ["Test aléatoire 2", [str(random.randint(9,15)), str(random.randint(1,6)), str(random.randint(3,7))], ""] ]
+==
+
+astuces==#|python|
+[
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""}
+]
 ==
 
