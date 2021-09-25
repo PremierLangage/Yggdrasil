@@ -25,7 +25,7 @@ author=Prog C L2 Team
 text==#|markdown|
 Écrire une fonction de protopype `void remplir(char tab[MAX][MAX], int li, int col)` 
 qui remplit la partie effective (de taille `li x col`) de la matrice `tab` avec des lettres 
-minuscules consécutives. La méthode de remplissage doit aller ligne par ligne de la gauche 
+minuscules consécutives. La méthode de remplissage va de ligne en ligne de la gauche 
 vers la droite et aussi de haut en bas. Après la lettre `z` atteinte, on repart de la lettre `a`   
 
 <br>
