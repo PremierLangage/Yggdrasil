@@ -95,7 +95,12 @@ int main(int argc, char* argv[]){
 
 
 checks_args_stdin==#|python|
-[ ["Simple éxécution", ["3", "3", "3"],""] ]
+[ ["Simple éxécution", ["3", "3", "3"],""],
+  ["Test aléatoire 1", [str(randint(3, 5)) for i in range(3)],""],
+  ["Test aléatoire 2", [str(randint(5, 8)) for i in range(3)],""],
+  ["Test aléatoire 3", [str(randint(8, 13)) for i in range(3)],""],
+  ["Test aléatoire 4", [str(randint(13, 15)) for i in range(3)],""],
+  ["Test aléatoire 5", [str(randint(15, 20)) for i in range(3)],""] ]
 ==
 
 astuces==#|python|
