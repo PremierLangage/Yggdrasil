@@ -46,7 +46,7 @@ checks_args_stdin==#|python|
 
 editor.code==#|c|
 ... mean_positive(int* array, int size){
-  /* Votre code ici... */
+  // Votre code ici...
   return ...
 }
 ==
