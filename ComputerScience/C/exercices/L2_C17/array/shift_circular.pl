@@ -30,8 +30,8 @@ pour `tab1`, et d'une case vers la gauche pour `tab2`.
 <br>
 
 Exemple avec taille 5 :   
-- Si `tab1` contient `[1, 2, 3, 4]` et `tab2` contient aussi  `[1, 2, 3, 4]`, après l'éxécution 
-de `decaleDG(tab1, tab2, 4)`, `tab1` contiendra `[4, 1, 2, 3]` et `tab2` contiendra `[2, 3, 4, 1]`.
+- Si `vect1` contient `[1, 2, 3, 4]` et `vect2` contient aussi  `[1, 2, 3, 4]`, après l'éxécution 
+de `shiftLR(vect1, vect2, 4)`, `vect1` contiendra `[4, 1, 2, 3]` et `vect2` contiendra `[2, 3, 4, 1]`.
 
 ==
 
@@ -48,7 +48,7 @@ void shiftLR(int a[], int b[], int size){
 ==
 
 solution==#|c|
-void decaleDG(int tab1[],int tab2[],int size)
+void shiftLR(int tab1[],int tab2[],int size)
 {
     int val = tab1[size-1], i;
     for (i = size-1; i >=1; i--)
