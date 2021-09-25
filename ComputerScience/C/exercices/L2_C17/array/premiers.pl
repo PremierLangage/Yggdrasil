@@ -29,14 +29,11 @@ text==#|markdown|
 (`N` est une constante que vous n'avez pas à définir). La fonction remplit la 
 case `[i][j]` du tableau avec:   
 
-$%
-\begin{displaymath}
-\begin{array}{ccc}
+$% \\begin{array}{ccc}
 -1 & si & i = j = 0 \\
 1 & si & pgcd(i, j) = 1 \\
 0 & sinon & \\
-\end{array}
-\end{displaymath}
+\\end{array}
 %$
 
 <br>
