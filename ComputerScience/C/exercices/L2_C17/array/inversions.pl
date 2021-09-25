@@ -29,7 +29,9 @@ nombre d'inversions contenues dans le tableau `tab` de taille `taille` donné en
 Rappel: Une inversion dans un tableau `t` est une paire d'indices `i < j` du tableau, 
 tels que `t[i] > t[j]`.
 
-Exemples :   
+<br>
+
+<u>Exemples :</u>   
 - Si le tableau contenait `[3, 1, 2]` les inversions sont les paires `(i, j)` suivantes : 
 `(0, 1)` et `(0, 2)`. Dans ce cas, votre fonction devrait donc retourner `2`.   
 - Si le tableau contenait `[1, 3, 2, 0]` les inversions sont les paires `(i, j)` suivantes : 
