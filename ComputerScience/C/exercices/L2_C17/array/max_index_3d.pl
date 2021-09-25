@@ -23,9 +23,7 @@ tag=tableau|fonction|parcours|complexe|dimension|pointeur
 author=Prog C L2 Team
 
 text==#|mardown|
-Ecrire une fonction `int max_tab(int t[], int taille)` qui reçoit un tableau `t` ainsi que 
-sa taille `taille`. La fonction devra renvoyer la valeur de l'élément maximum du tableau `t` 
-ou bien `-1` si la taille donnée est inférieure ou égale à zéro.
+
 ==
 
 code_before==#|c|
@@ -34,42 +32,18 @@ code_before==#|c|
 ==
 
 editor.code==#|c|
-int max_tab(int tab[], int size){
+{
   // Votre code ici
 } 
 ==
 
 solution==#|c|
-int max_tab(int tab[], int size){
-  if(size <= 0){
-    return -1;
-  }
-  int max,i;
-  max=tab[0];
-  for(i=1;i<size;i++)
-    if(tab[i]>max)
-        max=tab[i];
-return max;
-} 
+ 
 ==
 
 code_after==#|c|
 
 int main(int argc, char* argv[]){
-  int tab[100];
-  int size = 0;
-  int lu;
-
-  while (scanf("%d", &lu) == 1){
-    tab[size] = lu;
-    size++;
-  }
-  if(size == 0){
-    printf("Max d'un tableau vide : %d", max_tab(tab, size));
-  }
-  else{
-    printf("Le maximum des entiers est %d\n", max_tab(tab, size));
-  }
 
   return 0;
 }
@@ -77,20 +51,14 @@ int main(int argc, char* argv[]){
 
 
 checks_args_stdin==#|python|
-[ ["Simple éxécution", [],"1 2 3 4 5"],
-  ["Tableau vide", [], ""],
-  ["Test aléatoire 1", []," ".join([str(randint(0,10)) for i in range(randint(5,10))])],
-  ["Test aléatoire 2", []," ".join([str(randint(0,20)) for i in range(randint(10,15))])],
-  ["Test aléatoire 3", []," ".join([str(randint(0,50)) for i in range(randint(15,20))])],
-  ["Test aléatoire 4", []," ".join([str(randint(0,20)) for i in range(randint(20,25))])],
-  ["Test aléatoire 5", []," ".join([str(randint(0,80)) for i in range(randint(25,30))])] ]
+[ ["Simple éxécution", ["2", "2", "2"],""] ]
 ==
 
 astuces==#|python|
 [
-  { "content": """Pour calculer le maximum, il faut parcourir le tableau une fois et mettre à jour un maximum courrant pas à pas."""},
-  { "content": """Pour parcourir le tableau, une boucle `for` sur les indices de `0` inclus à `taille` exclus est une bonne solution."""},
-  { "content": """Une variable locale `max` initialisée à `-1`, mise à jour pas à pas et retournée à la fin doit finir le travail."""}
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""}
 ]
 ==
 
