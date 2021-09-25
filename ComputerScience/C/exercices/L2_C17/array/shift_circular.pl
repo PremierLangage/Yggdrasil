@@ -101,8 +101,8 @@ checks_args_stdin==#|python|
 astuces==#|python|
 [
   { "content": """Il est vivement conseillé de faire un dessin pour chacun des deux cas. Dans chaque cas, il faudra parcourir le tableau dans un sens adapté et écraser au fur et à mesure les valeurs. Mais avant ça, il est nécéssaire de bien garder en mémoire (avec une variable locale supplémentaire) la valeur de la première case à être écrasée."""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Pour décaler vers la droite sans détruire de valeur, il faut commencer par le dernier indice `size-1` et revenir petit à petit vers le début du tableau. Avant cela, il faut bien sauvegarder la dernière valeur `a[size-1]` car cette dernière devra aller en tête du tableau après la boucle."""},
+  { "content": """Pour décaler vers la gauche sans détruire de valeur, il faut commencer par le premier indice `0` et aller petit à petit vers la fin du tableau. Avant cela, il faut bien sauvegarder la première valeur `b[0]` car cette dernière devra aller en queue du tableau après la boucle."""}
 ]
 ==
 
