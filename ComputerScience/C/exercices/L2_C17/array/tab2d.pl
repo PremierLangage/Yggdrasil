@@ -104,9 +104,9 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Le coeur de la fonction aura une double boucle `for` imbriquée. La grande boucle doit itérer sur les lignes alors que la seconde itérera sur les colonnes."""},
+  { "content": """Une stratégie raisonnable consiste à maintenir une variable locale donnant la prochaine lettre à insérer. À chaque pas, cette lettre avance d'un cran dans l'alphabet. Une fois la dernière lettre atteinte, on revient à `a`."""},
+  { "content": """Si `char c` était l'ancienne lettre, alors on peut avancer d'une lettre avec l'expression : `c = 'a' + (c - 'a' + 1) % 26;`."""}
 ]
 ==
 
