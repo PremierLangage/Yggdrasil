@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 title=Comptage d'inversions dans un tableau
 
-tag=tableau|fonction|astuce|paires
+tag=tableau|fonction|astuce|paires|double
 
 author=Marc Zipstein
 
