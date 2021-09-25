@@ -30,9 +30,9 @@ text==#|markdown|
 case `[i][j]` du tableau avec:   
 
 <table>
-<tr><td> `-1` </td><td> ssi   </td><td> `i = j = 0`    </td></tr>
-<tr><td> `1`  </td><td> ssi   </td><td> `pgcd(i,j) = 1`</td></tr>
-<tr><td> `0`  </td><td> sinon </td><td>                </td></tr>
+<tr><td> -1 </td><td> ssi   </td><td> i = j = 0    </td></tr>
+<tr><td> 1  </td><td> ssi   </td><td> pgcd(i,j) = 1</td></tr>
+<tr><td> 0  </td><td> sinon </td><td>                </td></tr>
 </table>
 
 <br>
