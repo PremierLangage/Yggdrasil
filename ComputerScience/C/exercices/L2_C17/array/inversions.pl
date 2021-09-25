@@ -91,7 +91,7 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
+  { "content": """La difficulté de cet exercice est de savoir parcourir toutes les paires `(i, j)` d'indices valides et différents. Il faut bien imbriquer deux boucles `for` mais il faut le faire correctement."""},
   { "content": """"""},
   { "content": """"""}
 ]
