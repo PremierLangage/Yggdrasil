@@ -95,7 +95,7 @@ int main(void){
 
 checks_args_stdin==#|python|
 [ ["simple éxécution", "","3 4"],
-  ["aléatoire ", "",str(random.randint(4,8))+" "+str(random.randint(9,15))] ]
+  ["aléatoire ", "",str(randint(4,8))+" "+str(random.randint(9,15))] ]
 ==
 
 
