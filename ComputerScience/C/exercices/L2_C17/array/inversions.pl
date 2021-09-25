@@ -35,7 +35,7 @@ tels que `t[i] > t[j]`.
 - Si le tableau contenait `[3, 1, 2]` les inversions sont les paires `(i, j)` suivantes : 
 `(0, 1)` et `(0, 2)`. Dans ce cas, votre fonction devrait donc retourner `2`.   
 - Si le tableau contenait `[1, 3, 2, 0]` les inversions sont les paires `(i, j)` suivantes : 
-`(0, 3), (1, 2), (1, 3)` et `(2, 3)`.    
+`(0, 3), (1, 2), (1, 3)` et `(2, 3)`. Dans ce cas, votre fonction devrait donc retourner `4`.    
 ==
 
 code_before==#|c|
