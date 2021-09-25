@@ -75,7 +75,7 @@ code_after==#|c|
 int main(int argc, char* argv[]){
   int t[M][M][M];
   int s1, s2, s3;
-  int m1, m2, m3
+  int m1, m2, m3;
 
   scanf("%d%d%d", &s1, &s2, &s3);
   srand(s1*s2*s3);
