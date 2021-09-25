@@ -44,9 +44,10 @@ Vous n'avez pas à écrire la fonction `pgcd` (normalement vue en TD, cette dern
 la fonction `pgcd` renvoie le plus grand diviseur commun du couple d'entiers `(a, b)`.
 ==
 
-editor.code==
-/*Votre code*/
-
+editor.code==#|c|
+void premiers_entre_eux(int t[][N]){
+  // Votre code ici...
+}
 ==
 
 code_before==#|c|
@@ -129,4 +130,12 @@ int main(void) {
 
 checks_args_stdin==#|python|
 [ ["Test unique", [], ""] ]
+==
+
+astuces==#|python|
+[
+  { "content": """Pour calculer le maximum, il faut parcourir le tableau une fois et mettre à jour un maximum courrant pas à pas."""},
+  { "content": """Pour parcourir le tableau, une boucle `for` sur les indices de `0` inclus à `taille` exclus est une bonne solution."""},
+  { "content": """Une variable locale `max` initialisée à `-1`"""}
+]
 ==
