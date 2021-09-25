@@ -112,8 +112,8 @@ checks_args_stdin==#|python|
 astuces==#|python|
 [
   { "content": """Pour parcourir toutes les cases du tableau à trois dimensions, il faudra imbriquer trois boucles `for` l'une dans l'autre."""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Il est important de parcourir le tableau selon la première dimension puis la seconde, puis la troisième. Les parcours doivent aussi être faits en sens croissant."""},
+  { "content": """Pour avoir les coordonnées minimales pour l'ordre lexicographique, on met à jour les coordonnées seulement quand on trouve une valeur strictement plus grande que les précédentes. Si le parcours est bien fait dans le bon sens, on garde toujours des coordonnées minimales pour l'ordre lexicographique."""}
 ]
 ==
 
