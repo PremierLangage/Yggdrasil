@@ -30,7 +30,7 @@ vers la droite et aussi de haut en bas. Après la lettre `z` atteinte, on repart
 
 <br>
 
-<u>Exemples :</u> (avec `#define MAX 50` )   
+<u>Exemples :</u> (avec `#define MAX 50` pour information)   
 `remplir(tab, 3, 4)` transforme les 3 premières lignes et 4 premières colonnes de `tab` en   
 
     a b c d   
