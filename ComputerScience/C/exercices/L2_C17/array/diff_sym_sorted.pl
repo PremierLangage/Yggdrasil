@@ -159,9 +159,9 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Bien faire ce genre d'exercice demande de coder un algoritme à double tête de lecture."""},
+  { "content": """Il faut mettre une tête de lecture sur le minimum courrant de `t1` (donc qui partira de la gauche à l'indice `0`) et une autre tête de lecture sur le minimum courant de `t2`."""},
+  { "content": """Quand les deux minimums courants diffèrent, on affiche le plus petit des deux et on avance sur la tête correspondante. Si les deux minimums sont les mêmes, on avance les deux têtes sans rien afficher. Il faut aussi bien traiter les cas où une des têtes arrive en fin de tableau."""}
 ]
 ==
 
