@@ -100,7 +100,7 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
+  { "content": """Il est vivement conseillé de faire un dessin pour chacun des deux cas. Dans chaque cas, il faudra parcourir le tableau dans un sens adapté et écraser au fur et à mesure les valeurs. Mais avant ça, il est nécéssaire de bien garder en mémoire (avec une variable locale supplémentaire) la valeur de la première case à être écrasée."""},
   { "content": """"""},
   { "content": """"""}
 ]
