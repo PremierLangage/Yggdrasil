@@ -92,7 +92,7 @@ checks_args_stdin==#|python|
 astuces==#|python|
 [
   { "content": """La difficulté de cet exercice est de savoir parcourir toutes les paires `(i, j)` d'indices valides et différents. Il faut bien imbriquer deux boucles `for` mais il faut le faire correctement."""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Si vous avez utilisé une variable locale `i` pour votre première boucle, une bonne solution consiste à faire commencer la seconde boucle à `i+1`. Ainsi les paires d'indices générées seront bien uniques."""},
+  { "content": """Une solution élémentaire est d'imbriquer les boucles `for(i=0 ; i<size ; i++)` et `for(j=i+1 ; j<size ; j++)` et de mettre à jour une variable accumulant `1` à chaque fois que `t[j] < t[i]`."""}
 ]
 ==
