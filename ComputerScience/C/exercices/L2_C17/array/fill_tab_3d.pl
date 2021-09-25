@@ -65,7 +65,6 @@ void fill_tab(........, int tab[][COL][N]){
 
 solution==#|c|
 int fill_tab(int LI, int COL, int N, int tab[][COL][N]){
-	
 	int i,j,k;
 	int var=1;
 
