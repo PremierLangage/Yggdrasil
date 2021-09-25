@@ -28,9 +28,13 @@ text==#|markdown|
 Écrire une fonction `premiers_entre_eux` qui reçoit un tableau carré `N x N` 
 (`N` est une constante que vous n'avez pas à définir). La fonction remplit la 
 case `[i][j]` du tableau avec:   
-| `-1` | ssi | `i = j = 0` |   
-| `1`  | ssi | `pgcd(i,j) = 1`|   
-| `0`  | sinon | |   
+
+<table>
+<tr><td> `-1` </td><td> ssi   </td><td> `i = j = 0`    </td></tr>
+<tr><td> `1`  </td><td> ssi   </td><td> `pgcd(i,j) = 1`</td></tr>
+<tr><td> `0`  </td><td> sinon </td><td>                </td></tr>
+</table>
+
 <br>
 Vous n'avez pas à écrire la fonction `pgcd` (normalement vue en TD, cette dernière vous
 êtes offerte). Vous devez juste l'utiliser. pour rappel voici son prototype : <br>
