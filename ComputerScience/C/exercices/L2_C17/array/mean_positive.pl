@@ -17,8 +17,10 @@
 extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Nicolas Borie
+
 title=Moyenne des éléments positifs
-tag=fonction|tableau|type
+
+tag=fonction|tableau|type|conditionnelle
 
 editor.height=300px
 
