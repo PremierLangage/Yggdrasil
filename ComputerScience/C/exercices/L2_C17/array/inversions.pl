@@ -17,7 +17,7 @@
 
 extends=/ComputerScience/C/template/std_progC17_clang.pl
 
-title=Calcul du nombre d'inversions
+title=Comptage d'inversions dans un tableau
 
 tag=tableau|fonction|astuce|paires
 
