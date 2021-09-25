@@ -39,10 +39,10 @@ vers la droite et aussi de haut en bas. Après la lettre `z` atteinte, on repart
 
 `remplir(tab, 4, 10)` transforme les `4` premières lignes et `10` premières colonnes de `tab` en   
 
-    a b c d e f g h i j   
-    k l m n o p q r s t   
-    u v w x y z a b c d   
-    e f g h i j k l m n   
+    a b c d e f g h i j
+    k l m n o p q r s t
+    u v w x y z a b c d
+    e f g h i j k l m n
 
 ==
 
