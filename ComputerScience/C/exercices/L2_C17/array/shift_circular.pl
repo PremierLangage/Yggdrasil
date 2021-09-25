@@ -18,10 +18,9 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 title=Décalage circulaire
 
-tag=Tableau|Fonction|DeclarationFonction|TransmissionParametre|ParcoursTableau|ComparaisonContigues
+tag=tableau|fonction|parcours
 
-
-author= 
+author=Prog C L2 Team
 
 text==
 Écrire une fonction `void decaleDG(int tab1 [], tab2 [], int taille)` qui reçoit deux tableaux, `tab1` et `tab2`, 
