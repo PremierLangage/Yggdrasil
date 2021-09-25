@@ -22,6 +22,8 @@ tag=tableau|fonction|parcours|complexe|dimension|pointeur
 
 author=Nicolas Borie
 
+editor.height=350px
+
 text==#|markdown|
 Écrire une fonction   
 `int index_max_3d(int t[M][M][M], int s1, int s2, int s3, int* m1, int* m2, int* m3)`   
