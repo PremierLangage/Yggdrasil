@@ -24,12 +24,16 @@ tag=tableau|fonction|astuce|paires
 author=Marc Zipstein
 
 text==#|markdown|
-Ecrire une fonction de protopype `int nb_inversions(int tab[],int taille);` qui renvoie le nombre d'inversions dans le tableau.<br>
-Rappel: Une inversion dans un tableau $%t%$ est une pair d'indices `i<j` du tableau, tels que $% t[i]>t[j] %$.
-<p>
-Exemples : <br>
-- Si le tableau contenait 3,1,2 les inversions sont les paires `(i,j)` suivants : `(0,1),(0,2)`. <br>
-- Si le tableau contenait 1,3,2,0 les inversions sont les paires `(i,j)` suivants : `(0,3),(1,2),(1,3),(2,3)`. 
+Écrire une fonction de protopype `int nb_inversions(int t[], int taille);` qui renvoie le 
+nombre d'inversions contenues dans le tableau `tab` de taille `taille` donné en argument.   
+Rappel: Une inversion dans un tableau `t` est une paire d'indices `i < j` du tableau, 
+tels que `t[i] > t[j]`.
+
+Exemples :   
+- Si le tableau contenait `[3, 1, 2]` les inversions sont les paires `(i, j)` suivantes : 
+`(0, 1)` et `(0, 2)`. Dans ce cas, votre fonction devrait donc retourner `2`.   
+- Si le tableau contenait `[1, 3, 2, 0]` les inversions sont les paires `(i, j)` suivantes : 
+`(0, 3), (1, 2), (1, 3)` et `(2, 3)`.    
 ==
 
 code_before==#|c|
@@ -38,7 +42,7 @@ code_before==#|c|
 ==
 
 editor.code==#|c|
-int nb_inversions(int tab[], int size){
+int nb_inversions(int t[], int taille){
   // Votre code ici...
 }
 ==
