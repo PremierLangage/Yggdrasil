@@ -22,6 +22,8 @@ tag=tableau|fonction|parcours
 
 author=Prog C L2 Team
 
+editor.height=350px
+
 text==#|markdown|
 Écrire une fonction `void shiftLR(int a[], int b[], int size)` qui reçoit deux tableaux, `tab1` et `tab2`, 
 ainsi que leur taille et effectue un décalage circulaire d'une case vers la droite 
