@@ -23,11 +23,13 @@ tag=tableau|fonction|rectangle|matrice
 author=Prog C L2 Team
 
 text==#|markdown|
-Ecrire une fonction de protopype `void remplir(char tab[MAX][MAX], int li, int col)` 
-qui remplit la partie effective (de taille `li x col`) avec des lettres minuscules consécutives.   
+Écrire une fonction de protopype `void remplir(char tab[MAX][MAX], int li, int col)` 
+qui remplit la partie effective (de taille `li x col`) de la matrice `tab` avec des lettres 
+minuscules consécutives. La méthode de remplissage doit aller ligne par ligne de la gauche 
+vers la droite et aussi de haut en bas. Après la lettre `z` atteinte, on repart de la lettre `a`   
 
-Après la lettre $%\tt{z}%$ on repart de la lettre $%\tt{a}%$ <br>
-Exemples (avec MAX 50)<br>
+
+<u>Exemples :</u> (avec `#define MAX 50` )   
 `remplir(tab, 3, 4)` transforme les 3 premières lignes et 4 premières colonnes de `tab` en   
 
     a b c d   
