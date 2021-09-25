@@ -44,7 +44,8 @@ code_before==#|c|
 ==
 
 editor.code==#|c|
-int index_max_3d(int t[M][M][M], int s1, int s2, int s3, int* m1, int* m2, int* m3){
+int index_max_3d(int t[M][M][M], int s1, int s2, int s3, 
+                                 int* m1, int* m2, int* m3){
   // Votre code ici...
 } 
 ==
@@ -78,7 +79,7 @@ int main(int argc, char* argv[]){
 
   scanf("%d%d%d", &s1, &s2, &s3);
   srand(s1*s2*s3);
-  
+
   for (m1=0 ; m1<s1 ; m1++)
     for (m2=0 ; m2<s2 ; m2++)
       for (m3=0 ; m3<s3 ; m3++)
