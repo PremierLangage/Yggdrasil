@@ -115,7 +115,7 @@ void affiche(int t[][N]){
 int i,j;
 for(i=0;i<N;i++){
     for(j=0;j<N;j++)
-        printf("%d ",t[i][j]);
+        printf("%2d ",t[i][j]);
     printf("\n");
     }
 }
