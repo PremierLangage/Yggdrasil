@@ -62,7 +62,7 @@ Numération - Mathématiques : CM1 - Cycle 3)*
 
 editor.code==#|c|
 int roman2dec(char* s){
-  /* Votre code ici... */
+  // Votre code ici...
 }
 ==
 
@@ -204,7 +204,7 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
+  { "content": """Une bonne idée consiste à coder plusieurs fonctions. """},
   { "content": """"""},
   { "content": """"""}
 ]
