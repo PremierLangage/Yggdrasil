@@ -41,8 +41,9 @@ Exemple pour un tableau `tab[2][3][5]`, on aura, après avoir appelé la fonctio
 
 Un tableau à trois dimension peut être vu comme un tableau de plusieurs matrices ou bien une matrice
 contenant des tableaux. Nous avons fait ici le second choix. Dans l'exemple au dessus, `9` est l'élément
-de coordonnées `(0, 1, 3)`. Autrement dit `tab[0][1][3] = 9`, la première coordonnée donne la ligne,
-la seconde coordonnée donne la colonne et enfin la troisième donne l'emplacement dans le tableau.
+de coordonnées `(0, 1, 3)`. Autrement dit   
+`tab[0][1][3] = 9`, la première coordonnée donne la ligne, la seconde coordonnée donne la colonne et enfin 
+la troisième donne l'emplacement dans le tableau.
 ==
 
 code_before==#|c|
