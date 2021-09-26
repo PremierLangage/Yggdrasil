@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/C/template/std_progC.pl
+extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Nicolas Borie
 
@@ -93,6 +93,12 @@ checks_args_stdin==#|python|
   ["Test aléatoire 2", [choice(["voiture", "avion", "train", "bateau", "char", "skate", "overcraft"])], ""] ]
 ==
 
-
+astuces==#|python|
+[
+  { "content": """Une simple boucle `for` suffit pour écrire une telle fonction."""},
+  { "content": """Le critère d'arrêt porte sur la détection du caractère de fin de chaîne : `\0`."""},
+  { "content": """une boucle comme la suivante est raisonnable : `for(i=0 ; s[i] != '\\0'; i++)`."""}
+]
+==
 
 
