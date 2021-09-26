@@ -27,7 +27,7 @@ editor.height=350px
 
 text==#|markdown|
  
-Ecrire une fonction `fill_tab(....)` qui : 
+Ecrire une fonction `int fill_tab(int LI, int COL, int N, int tab[][COL][N])` qui : 
 
 <ul>
   <li>reçoit en paramètre un tableau d'entier à <u>trois dimensions</u> et les paramètres permettant d'en décrire les tailles respectives</li>
@@ -52,7 +52,7 @@ code_before==#|c|
 ==
 
 editor.code==#|c|
-void fill_tab(........, int tab[][COL][N]){
+int fill_tab(int LI, int COL, int N, int tab[][COL][N]){
   // Votre code ici...
 }
 ==
