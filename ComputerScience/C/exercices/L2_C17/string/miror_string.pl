@@ -76,8 +76,8 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Il faut connaitre la longueur de la chaîne pour ensuite opérer son miroir."""},
+  { "content": """Une fois la longueur connue, il faut refaire une demi-boucle (une boucle qui s'arrête au milieu) pour échanger deux à deux les lettres."""},
+  { "content": """Pour procéder à un échange de deux lettres, il faut utiliser une variable locale temporaire supplémentaire."""}
 ]
 ==
