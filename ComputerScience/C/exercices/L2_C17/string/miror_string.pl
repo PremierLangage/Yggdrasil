@@ -36,7 +36,7 @@ code_before==#|c|
 taboo=strlen|string
 
 editor.code==#|c|
-... retourne_chaine(char tab[]){
+... retourne_chaine(char s[]){
   // Votre code ici...
 }
 ==
