@@ -33,11 +33,12 @@ code_before==#|c|
 #include <stdlib.h>
 ==
 
+taboo=strlen|string
+
 editor.code==#|c|
 ... retournechaine(char tab[]){
   // Votre code ici...
 }
-
 ==
 
 solution==#|c|
