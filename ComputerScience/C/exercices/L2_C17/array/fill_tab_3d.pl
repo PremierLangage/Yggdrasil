@@ -75,33 +75,41 @@ int fill_tab(int LI, int COL, int N, int tab[][COL][N]){
 ==
 
 code_after==#|c|
-int display(int LI, int COL, int N, int tab[][COL][N]){
-
+int display(int LI, int COL, int N, int t[][COL][N]){
 	int i,j,k;
+    int max = 0;
+    int gab;
 
-	if (LI>0 && COL>0 && N >0){
-		for(i=0;i<LI;i=i+1){
-			printf("Ligne %d || ",i+1);
-			for(j=0;j<COL;j=j+1){
-				printf("Colonne %d ",j+1);
-					for(k=0;k<N;k=k+1){
-						if(k==0) printf("{");
-						printf("%d",tab[i][j][k]);
+    for(i=0;i<LI;i=i+1){
+        for(j=0;j<COL;j=j+1){
+            for(k=0;k<N;k=k+1){
+                if (t[i][j][k] > max)
+                    max = t[i][j][k];
+            }
+        }
+    }
+    while(max > 0){
+        gab += 1
+        max = max / 10;
+    }
+
+	for(i=0;i<LI;i=i+1){
+		for(j=0;j<COL;j=j+1){
+			for(k=0;k<N;k=k+1){
+				if(k==0) printf("[");
+					printf("%*d", gab, t[i][j][k]);
 						if(k==(N-1))
-							printf("}");
+							printf("]");
 						else
 							printf(",");
 					}
 				if (j==(COL-1))
-					printf(" |\n");
+					printf("\n");
 				else
-					printf(" | ");
+					printf(" ");
 			}
 		}
-		return 1;
-	}
-
-	return 0;
+	return 1;
 }
 
 int main(int argc, char* argv[]){
