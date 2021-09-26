@@ -33,14 +33,6 @@ Ecrire une fonction `fill_tab(....)` qui :
   <li>remplit le tableau à trois dimensions avec des valeurs incrémentées de 1 en 1 (on démarre à 1 et le dernier emplacement aura pour valeur M)</li>
 </ul>
 
-Ecrire une fonction `display(....)` qui : 
-
-<ul>
-  <li>reçoit en paramètre un tableau d'entier à <u>trois dimensions</u> et les paramètres permettant d'en décrire les tailles respectives</li>
-  <li>retourne `1` si les paramètres de taille des dimensions (évoqués précédemments) sont supérieurs à `0`, sinon retourne `0`</li>
-  <li>affiche le tableau de la manière suivante (en comptant lignes et colonnes à partir de 1) : <br> Ligne Z || Colonne X {valeur,valeur} | Colonne Y {valeur,valeur} |</li>
-</ul>
-
 Exemple pour un tableau <strong>tab[2][3][5]</strong> on aura, après avoir appelé la fonction `fill_tab` puis `display` sur ce tableau, l'affichage suivant :<br> 
 <br>
 `Ligne 1 || Colonne 1 {1,2,3,4,5} | Colonne 2 {6,7,8,9,10} | Colonne 3 {11,12,13,14,15} |`<br>
