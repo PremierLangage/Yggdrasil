@@ -68,7 +68,9 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [ ["Simple éxécution", ["bonjour toto"], ""],
   ["Palindrome", [choice(["radar", "elle", "laval", "coloc", "kayak", "rotor"])], ""],
-  ["Test aléatoire 1",["".join([chr(randint(97,122)) for i in range(randint(1,15))])], ""] ]
+  ["Test aléatoire 1",["".join([chr(randint(97,122)) for i in range(randint(1,15))])], ""],
+  ["Test aléatoire 2",["".join([chr(randint(97,122)) for i in range(randint(1,20))])], ""],
+  ["Test aléatoire 3",["".join([chr(randint(97,122)) for i in range(randint(1,25))])], ""] ]
 ==
 
 astuces==#|python|
