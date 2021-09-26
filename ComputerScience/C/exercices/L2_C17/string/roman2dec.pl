@@ -205,8 +205,8 @@ checks_args_stdin==#|python|
 astuces==#|python|
 [
   { "content": """Une bonne idée consiste à coder plusieurs fonctions. Notament, écrire une fonction qui à chaque lettre peut retourner sa valeur correspondante. Avoir cette tâche isolée et indépendante va grandement simplifier le problème."""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Si les symboles sont tous ordonnés de manière décroissante, l'entier associé est juste la somme des valeurs des symboles obtenue avec une boucle `for` standard."""},
+  { "content": """De manière générale, il faut regarder le symbole suivant. Pour chaque symbole, si le suivant existe et est plus grand, alors le symbole courant contribue négativement. Sinon, le symbole contribue positivement."""}
 ]
 ==
 
