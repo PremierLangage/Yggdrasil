@@ -48,13 +48,12 @@ taboo=strlen
 
 editor.code==#|c|
 int string_length(char* s){
-  /* Votre code ici... */
+  // Votre code ici...
 }
 
 ==
 
 solution==#|c|
-
 int string_length(char* s){
   int len;
   
