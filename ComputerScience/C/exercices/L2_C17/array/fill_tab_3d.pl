@@ -130,7 +130,8 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [ ["Simple éxécution", ["1", "2", "3"],""],
   ["Test aléatoire 1", [str(randint(9,15)), str(randint(2,4)), str(randint(2,5))], ""],
-  ["Test aléatoire 2", [str(randint(9,15)), str(randint(2,4)), str(randint(2,5))], ""] ]
+  ["Test aléatoire 2", [str(randint(9,15)), str(randint(2,4)), str(randint(2,5))], ""],
+  ["Test aléatoire 3", [str(randint(9,15)), str(randint(2,4)), str(randint(2,5))], ""] ]
 ==
 
 astuces==#|python|
