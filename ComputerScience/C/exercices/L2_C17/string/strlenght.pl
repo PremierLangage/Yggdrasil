@@ -95,7 +95,7 @@ astuces==#|python|
 [
   { "content": """Une simple boucle `for` suffit pour écrire une telle fonction."""},
   { "content": """Le critère d'arrêt porte sur la détection du caractère de fin de chaîne : `\0`."""},
-  { "content": """une boucle comme la suivante est raisonnable : `for(i=0 ; s[i] != '\0'; i++)`."""}
+  { "content": """une boucle comme la suivante est raisonnable : `for(i=0 ; s[i] != '\\0'; i++)`."""}
 ]
 ==
 
