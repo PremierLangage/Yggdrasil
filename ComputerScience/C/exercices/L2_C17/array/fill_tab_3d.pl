@@ -37,8 +37,7 @@ Ecrire une fonction `int fill_tab(int LI, int COL, int N, int tab[][COL][N])` qu
 
 Exemple pour un tableau <strong>tab[2][3][5]</strong> on aura, après avoir appelé la fonction `fill_tab` puis `display` sur ce tableau, l'affichage suivant :<br> 
 <br>
-`Ligne 1 || Colonne 1 {1,2,3,4,5} | Colonne 2 {6,7,8,9,10} | Colonne 3 {11,12,13,14,15} |`<br>
-`Ligne 2 || Colonne 1 {16,17,18,19,20} | Colonne 2 {21,22,23,24,25} | Colonne 3 {26,27,28,29,30} |`<br>
+
 
 Dans cet exemple M = 2$%\times%$3$%\times%$5 = 30 <br>
 <br>
@@ -128,7 +127,8 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[ ["Simple éxécution", ["1", "2", "3"],""],
+[ ["Simple éxécution", ["1", "2", "3"], ""],
+  ["Exemple énoncé", ["2", "3", "5"], ""],
   ["Test aléatoire 1", [str(randint(9,15)), str(randint(2,4)), str(randint(2,5))], ""],
   ["Test aléatoire 2", [str(randint(9,15)), str(randint(2,4)), str(randint(2,5))], ""],
   ["Test aléatoire 3", [str(randint(9,15)), str(randint(2,4)), str(randint(2,5))], ""] ]
