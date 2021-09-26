@@ -67,7 +67,6 @@ int main(int argc, char* argv[]){
 
 checks_args_stdin==#|python|
 [ ["Simple éxécution", ["bonjour toto"], ""],
-  ["Palindrone "]
   ["Test aléatoire 1",["".join([chr(randint(97,122)) for i in range(randint(1,15))])], ""] ]
 ==
 
