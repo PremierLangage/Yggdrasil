@@ -80,7 +80,7 @@ code_after==#|c|
 int display(int LI, int COL, int N, int t[][COL][N]){
 	int i,j,k;
     int max = 0;
-    int gab;
+    int gab = 0;
 
     for(i=0;i<LI;i=i+1){
         for(j=0;j<COL;j=j+1){
