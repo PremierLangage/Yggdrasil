@@ -89,7 +89,7 @@ int display(int LI, int COL, int N, int t[][COL][N]){
         }
     }
     while(max > 0){
-        gab += 1
+        gab += 1;
         max = max / 10;
     }
 
