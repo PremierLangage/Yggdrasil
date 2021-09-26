@@ -66,7 +66,6 @@ void frame_string(char* text){
       printf("#");
   printf("\n");
 }
-
 ==
 
 code_before==#|c|
