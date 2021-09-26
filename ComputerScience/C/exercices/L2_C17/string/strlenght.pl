@@ -21,7 +21,7 @@ author=Nicolas Borie
 title=longueur d'une chaîne de caractères
 tag=string|chaine|longueur|caractère
 
-text==
+text==#|markdown|
 Complètez la fonction suivante pour quelle retourne le nombre de
 caractères contenus dans la chaîne **s** donnée en argument. Vous
 devez écrire votre fonction sans rien utiliser des bibliothèques
