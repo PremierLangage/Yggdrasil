@@ -22,8 +22,7 @@ title=Encadrer une chaine de caractères C
 tag=string|fonction|chaine|taille
 
 
-text==
-
+text==#|markdown|
 Écrire une fonction C qui prend en argument une **chaîne de caractères**
 et qui affiche cette chaîne de manière encadrée avec des caractères \#.
 
@@ -38,17 +37,17 @@ Le cadre est espacé du mot d'un espace avant et après la chaîne.
 On affichera rien du tout si la chaîne en argument est la chaîne vide.
 ==
 
-editor.code==
+editor.code==#|c|
 #include <stdio.h>
 #include <string.h>
 
 ... frame_string(...){
-  ...
+  // Votre code ici...
 }
 
 ==
 
-solution==
+solution==#|c|
 #include <stdio.h>
 #include <string.h>    
 
@@ -70,12 +69,11 @@ void frame_string(char* text){
 
 ==
 
-code_before==
+code_before==#|c|
 
 ==
 
-code_after==
-
+code_after==#|c|
 int main(int argc, char* argv[]){
   frame_string(argv[1]);
   return 0;
