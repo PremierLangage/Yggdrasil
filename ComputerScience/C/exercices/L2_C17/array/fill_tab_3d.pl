@@ -31,7 +31,7 @@ Ecrire une fonction `void fill_tab(int LI, int COL, int N, int tab[][COL][N])` q
 
 <ul>
   <li>reçoit en paramètre un tableau d'entier à <u>trois dimensions</u> et les paramètres permettant d'en décrire les tailles respectives</li>
-  <li>remplit le tableau à trois dimensions avec des valeurs incrémentées de 1 en 1 (on démarre à 1 et le dernier emplacement aura pour valeur M)</li>
+  <li>remplit le tableau à trois dimensions avec des valeurs incrémentées de 1 en 1 (on démarre à 1 et le dernier emplacement aura pour valeur `M = LI x COL x N`)</li>
 </ul>
 
 Exemple pour un tableau `tab[2][3][5]`, on aura, après avoir appelé la fonction `fill_tab`, le contenu suivant :
