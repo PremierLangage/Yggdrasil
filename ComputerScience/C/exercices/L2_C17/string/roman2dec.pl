@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/C/template/std_progC.pl
+extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Nicolas Borie
 title=Reconvertir en décimal des chiffres romains
@@ -23,7 +23,7 @@ tag=function|chaîne|difficile|romain|décimanl|conversion
 
 editor.height=350px
 
-text==
+text==#|markdown|
 Écrire une fonction **roman2dec** qui prend en argument une chaîne de
 caractères qui décrira toujours un nombre écrit en numérotation
 romaine compris entre 1 et 3999. La fonction devra retourner l'entier
@@ -202,5 +202,12 @@ checks_args_stdin==#|python|
  ["Test aléatoire 5", [str(randint(1, 3999)) for i in range(5)], ""], ]
 ==
 
+astuces==#|python|
+[
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""}
+]
+==
 
 
