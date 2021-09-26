@@ -204,7 +204,7 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """Une bonne idée consiste à coder plusieurs fonctions. """},
+  { "content": """Une bonne idée consiste à coder plusieurs fonctions. Notament, écrire une fonction qui à chaque lettre peut retourner sa valeur correspondante. Avoir cette tâche isolée et indépendante va grandement simplifier le problème."""},
   { "content": """"""},
   { "content": """"""}
 ]
