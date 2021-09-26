@@ -14,22 +14,20 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/C/template/std_progC.pl
+extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Nicolas Borie
 
 title=Mettre les lettres en majuscule dans une chaîne
 tag=string|chaine|fonction|lettre|caractère|ascii
 
-text==
-
+text==#|markdown|
 Écrire une fonction C qui prend en argument une chaîne de caractères
 et qui modifie les lettres minuscules qui y sont dedans pour les
 transformer en leur majuscules correspondantes.
 
 Les autres caratères contenus dans la chaînes qui ne sont pas des
 lettres minuscules ne seront pas affectés par la fonction.
-
 ==
 
 editor.code==#|c|
@@ -73,4 +71,10 @@ checks_args_stdin==#|python|
   ["Test aléatoire 3", ["'"+"".join([chr(randint(65,122)) for i in range(20)])+"'"], ""] ]
 ==
 
-
+astuces==#|python|
+[
+  { "content": """Une bonne boucle `for` suffit pour écrire une telle fonction."""},
+  { "content": """Pour detecter si un caractère `char c` est une lettre minuscule, on vérifie que ce dernier est coincé entre `a` et `z` : `(c >= 'a') && (c <= 'z')`."""},
+  { "content": """Pour transformer un caractère `char c` de type lettre minuscule vers sa majuscule correspondante, il faut procéder à une translation dans le code ASCII de vecteur `'A' - 'a'` : ainsi `c + 'A' - 'a'` est la majuscule associée à la minuscule `c`."""}
+]
+==
