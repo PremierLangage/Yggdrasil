@@ -103,6 +103,7 @@ int display(int LI, int COL, int N, int t[][COL][N]){
 					printf(" ");
 			}
 		}
+    return 1;
 }
 
 int main(int argc, char* argv[]){
