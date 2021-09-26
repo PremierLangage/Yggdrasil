@@ -18,6 +18,8 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Nicolas Borie
 
+editor.height=350px
+
 title=Encadrer une chaine de caractères C
 tag=string|fonction|chaine|taille
 
