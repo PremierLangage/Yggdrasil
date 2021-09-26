@@ -52,27 +52,22 @@ code_before==#|c|
 ==
 
 editor.code==#|c|
-int fill_tab(int LI, int COL, int N, int tab[][COL][N]){
+void fill_tab(int tab[][COL][N], int LI, int COL, int N){
   // Votre code ici...
 }
 ==
 
 solution==#|c|
-int fill_tab(int LI, int COL, int N, int tab[][COL][N]){
+void fill_tab(int tab[][COL][N], int LI, int COL, int N){
 	int i,j,k;
 	int var=1;
 
-	if (LI>0 && COL>0 && N >0){
-		for(i=0;i<LI;i=i+1)
-			for(j=0;j<COL;j=j+1)
-				for(k=0;k<N;k=k+1){
-					tab[i][j][k]= var;
-					var=var+1;
-				}
-		return 1;
-	}
-
-	return 0;
+	for(i=0;i<LI;i=i+1)
+		for(j=0;j<COL;j=j+1)
+			for(k=0;k<N;k=k+1){
+				tab[i][j][k]= var;
+				var=var+1;
+			}
 }
 ==
 
