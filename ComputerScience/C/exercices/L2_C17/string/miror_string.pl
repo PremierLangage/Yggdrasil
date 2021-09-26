@@ -36,13 +36,13 @@ code_before==#|c|
 taboo=strlen|string
 
 editor.code==#|c|
-... retournechaine(char tab[]){
+... retourne_chaine(char tab[]){
   // Votre code ici...
 }
 ==
 
 solution==#|c|
-void retournechaine(char tab[]){
+void retourne_chaine(char tab[]){
     int len=0;
     while (tab[len]!='\0'){
         len++;
@@ -60,7 +60,7 @@ void retournechaine(char tab[]){
 
 code_after==#|c|
 int main(int argc, char* argv[]){
-    retournechaine(argv[1]);
+    retourne_chaine(argv[1]);
     printf("La chaine retournée est %s\n",argv[1]);
     return 0;
 }
