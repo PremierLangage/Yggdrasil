@@ -31,7 +31,6 @@ Ecrire une fonction `void fill_tab(int LI, int COL, int N, int tab[][COL][N])` q
 
 <ul>
   <li>reçoit en paramètre un tableau d'entier à <u>trois dimensions</u> et les paramètres permettant d'en décrire les tailles respectives</li>
-  <li>retourne `1` si les paramètres de taille des dimensions (évoqués précédemments) sont supérieurs à `0`, sinon retourne `0`</li>
   <li>remplit le tableau à trois dimensions avec des valeurs incrémentées de 1 en 1 (on démarre à 1 et le dernier emplacement aura pour valeur M)</li>
 </ul>
 
@@ -40,6 +39,10 @@ Exemple pour un tableau `tab[2][3][5]`, on aura, après avoir appelé la fonctio
     [ 1, 2, 3, 4, 5] [ 6, 7, 8, 9,10] [11,12,13,14,15]
     [16,17,18,19,20] [21,22,23,24,25] [26,27,28,29,30]
 
+Un tableau à trois dimension peut être vu comme un tableau de plusieurs matrices ou bien une matrice
+contenant des tableaux. Nous avons fait ici le second choix. Dans l'exemple au dessus, `9` est l'élément
+de coordonnées `(0, 1, 3)`. Autrement dit `tab[0][1][3] = 9`, la première coordonnée donne la ligne,
+la seconde coordonnée donne la colonne et enfin la troisième donne l'emplacement dans le tableau.
 ==
 
 code_before==#|c|
