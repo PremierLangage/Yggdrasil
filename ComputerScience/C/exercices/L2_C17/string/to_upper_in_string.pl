@@ -74,7 +74,7 @@ checks_args_stdin==#|python|
 astuces==#|python|
 [
   { "content": """Une bonne boucle `for` suffit pour écrire une telle fonction."""},
-  { "content": """Pour detecter si un caractère `char c` est une lettre minuscule, on vérifie que ce dernier est coincé entre `a` et `z` : `(c >= 'a') && (c <= 'z')`."""},
+  { "content": """Pour detecter si un caractère `char c` est une lettre minuscule, on vérifie que ce dernier est coincé entre `a` et `z` :   \n`(c >= 'a') && (c <= 'z')`."""},
   { "content": """Pour transformer un caractère `char c` de type lettre minuscule vers sa majuscule correspondante, il faut procéder à une translation dans le code ASCII de vecteur `'A' - 'a'` : ainsi `c + 'A' - 'a'` est la majuscule associée à la minuscule `c`."""}
 ]
 ==
