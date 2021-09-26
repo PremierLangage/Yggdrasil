@@ -23,6 +23,8 @@ tag=tableau|fonction|parcours|difficile|dimension
 
 author=Olivier Champalle
 
+editor.height=350px
+
 text==#|markdown|
  
 Ecrire une fonction `fill_tab(....)` qui : 
