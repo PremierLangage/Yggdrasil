@@ -92,9 +92,9 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Il faut connaitre la taille de la chaîne pour procéder à son encadrement."""},
+  { "content": """La chaîne vide doit être traitée séparément et donc une conditionnelle doit lui être dédiée dans les sources."""},
+  { "content": """Dans le cas général, pour une chaîne de longueur `l`, il faut `l+4` caractères dièses pour faire la première ligne."""}
 ]
 ==
 
