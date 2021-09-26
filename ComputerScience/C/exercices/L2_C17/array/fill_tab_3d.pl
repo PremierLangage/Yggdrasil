@@ -136,9 +136,9 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Pour opérer un tel ramplissage, il faudra imbriquer trois boucles `for` les unes dans les autres."""},
+  { "content": """De manière croissante (en commençant par `0` puis en incrémentant), il faut itérer d'abord sur les lignes, puis sur les colonnes et enfin sur les positions possibles."""},
+  { "content": """Le plus simple pour égrainer les entiers est d'utiliser une variable locale, initialisé à `1` que l'on insère progressivement et que l'on incrémente petit à petit."""}
 ]
 ==
 
