@@ -23,5 +23,6 @@ Voici quelques exercices portant sur les chaînes de caractères en C.
 ==
 
 @ /ComputerScience/C/exercices/L2_C17/string/strlenght.pl
-@ /ComputerScience/C/exercices/L2_C17/string/miror_string.pl
 @ /ComputerScience/C/exercices/L2_C17/string/to_upper_in_string.pl
+@ /ComputerScience/C/exercices/L2_C17/string/miror_string.pl
+
