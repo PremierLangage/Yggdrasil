@@ -103,7 +103,6 @@ int display(int LI, int COL, int N, int t[][COL][N]){
 					printf(" ");
 			}
 		}
-	return 1;
 }
 
 int main(int argc, char* argv[]){
@@ -116,9 +115,8 @@ int main(int argc, char* argv[]){
 
     int tab[LI][COL][N];
 	
-	if (fill_tab(LI,COL,N,tab)==1)
-		if (display(LI,COL,N,tab)==1)
-			return 1;
+	fill_tab(tab, LI,COL,N);
+	display(LI,COL,N,tab);
 
 	return 0;
 }
