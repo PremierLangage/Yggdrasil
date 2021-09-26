@@ -35,9 +35,7 @@ Ecrire une fonction `void fill_tab(int LI, int COL, int N, int tab[][COL][N])` q
   <li>remplit le tableau à trois dimensions avec des valeurs incrémentées de 1 en 1 (on démarre à 1 et le dernier emplacement aura pour valeur M)</li>
 </ul>
 
-Exemple pour un tableau <strong>tab[2][3][5]</strong>, on aura, après avoir appelé la fonction `fill_tab`, le contenu suivant :<br> 
-<br>
-
+Exemple pour un tableau `tab[2][3][5]`, on aura, après avoir appelé la fonction `fill_tab`, le contenu suivant :
 
     [ 1, 2, 3, 4, 5] [ 6, 7, 8, 9,10] [11,12,13,14,15]
     [16,17,18,19,20] [21,22,23,24,25] [26,27,28,29,30]
