@@ -126,7 +126,6 @@ checks_args_stdin==#|python|
   ["Test aléatoire 3", [str(randint(12,14))], ""] ]
 ==
 
-
 astuces==#|python|
 [
   { "content": """Faites un dessin sur une feuille de papier libre. Calculer la taille de tous les esapaces en fonction de `n`."""},
