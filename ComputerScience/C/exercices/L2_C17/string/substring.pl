@@ -30,20 +30,18 @@ devra chercher si **sub** est contenu quelque part dans **big**. Elle devra reto
 apparait dans **big** et 0 sinon.
 ==
 
-editor.code==
+editor.code==#|c|
 int substring(... big, ... sub) {
-  /* Votre code ici ... */
+  // Votre code ici...
 }
 ==
 
-solution==
-
+solution==#|c|
 #include <string.h>
 
 int substring(char* big, char* sub) {
   return strstr(big, sub) != NULL; 
 }
-
 ==
 
 code_before==#|c|
