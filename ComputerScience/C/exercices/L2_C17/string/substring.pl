@@ -101,7 +101,7 @@ checks_args_stdin==#|python|
 astuces==#|python|
 [
   { "content": """Il n'est pas nécessaire de programmer un algorithme optimisé pour cet exercice. On se contentera d'un algorithme quadratrique ayant deux boucles `for` imbriquées."""},
-  { "content": """L'idée de l'algorithme est la suivante : pour chaque lettre du grand mot, on essaie de voir si cette lettre n'est pas le début d'une occurence du petit mot dans le grand. La grosse difficulté de cet exercice est alors de ne pas lire au delà des caratères de fin de chaîne '\\0' dans les deux mots."""},
+  { "content": """L'idée de l'algorithme est la suivante : pour chaque lettre du grand mot, on essaie de voir si cette lettre n'est pas le début d'une occurence du petit mot dans le grand. La grosse difficulté de cet exercice est alors de ne pas lire au delà des caratères de fin de chaîne `'\\0'` dans les deux mots."""},
   { "content": """Avec les indices `i` et `j`, les deux boucles peuvent facilement être les suivantes : `for (i=0 ; big[i]!='\\0' ; i++)` et `for (j=0 ; sub[j]!='\\0' && big[i+j]!='\\0' ; j++)`. La fonction ne contient pas que ça naturellement..."""}
 ]
 ==
