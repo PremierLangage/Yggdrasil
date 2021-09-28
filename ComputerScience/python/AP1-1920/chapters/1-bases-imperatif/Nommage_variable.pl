@@ -8,6 +8,7 @@ text=Parmi les chaines suivantes, sélectionnez celles qui sont des noms de vari
 
 mybuild==
 from random import randint, choice
+from string import ascii_letters
 def mot_aleatoire(longueur):
     """Renvoie un mot aléatoire (lettres minuscules et majuscules) de la 
     longueur demandée."""
