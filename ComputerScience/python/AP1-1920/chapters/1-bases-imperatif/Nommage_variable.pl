@@ -53,7 +53,7 @@ nbtrues = random.randint(2,3)
 
 nb=6
 uncrosedfalse=
-Xgood==
+good==
 abc
 bonjour
 oui
