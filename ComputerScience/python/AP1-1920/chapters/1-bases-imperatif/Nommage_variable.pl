@@ -9,7 +9,7 @@ text=Parmi les chaines suivantes, sélectionnez celles qui sont des noms de vari
 mybuild==
 from keyword import kwlist  # 35 mots-clés
 from random import randint, sample, shuffle
-from ressources_exercices import chaine_nombres_aleatoire, mot_aleatoire
+
 
 def mot_aleatoire(longueur):
     """Renvoie un mot aléatoire (lettres minuscules et majuscules) de la 
