@@ -23,7 +23,7 @@ type_var = random.choice(["int","str","float","bool"])
 var = random.choice(["x", "y", "c", "X", "Y","un_deux","lapin","bob42"])
 
 pltest0="""
->>> "{}" in globals() # La variable {} est elle définie ?
+>>> "{}" in globals() # La variable {} est elle d&eaccute;finie ?
 True
 """.format(var, var)
 
@@ -34,7 +34,7 @@ True
 """.format(var, type_var, type_var)
 else:
     pltest1="""
->>> type({})=={} # La variables est elle du bon type ({}) ?
+>>> type({})=={} # La variable est elle du bon type ({}) ?
 True
 """.format(var, type_var, type_var)
 
