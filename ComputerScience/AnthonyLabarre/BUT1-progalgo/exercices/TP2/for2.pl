@@ -12,7 +12,7 @@ builder=@/builder/bbefore.py
 before==
 import random 
 N= random.randint(10,20)
-
+==
 
 title== #|html|
 Test et affichage
