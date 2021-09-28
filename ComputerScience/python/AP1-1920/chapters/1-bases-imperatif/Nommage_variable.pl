@@ -69,7 +69,7 @@ si
 sinon
 ==
 
-Xbad==
+bad==
 au revoir
 Hi!
 def
