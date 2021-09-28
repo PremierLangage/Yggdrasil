@@ -1,0 +1,58 @@
+
+title= Feuille d'exercice sur les boucles 
+
+introduction==
+
+Bonjour,
+ceci est votre deuxième feuille de TP à faire en autonomie.
+
+Tout les exercices doivent être verts une fois que vous avez fini !
+
+Certains exercices peuvent être fait plusieurs fois, si vous en avez besoin c'est une bonne idée de les faire plusieurs fois.
+
+Il sont indiqués avec le mot répétable dans le titre cela veut dire qu'une fois que vous avez fait l'exercice correctement vous pouvez demander que l'on relance les dés.
+Cela produira un "nouvel" exercice avec des conditions légèrement modifiées.
+
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant, mais vous pouvez aussi naviger avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide sur le forum d'entraide et passer à l'exercice suivant. 
+
+*Rappel : Votre cours est toujours votre première source d'information ...*
+
+==
+
+# Exercice avec des boucles for 
+@ /ComputerScience/python/AP1-2021/chapitre2/boucle-qui-compte-de-0-a-nb-moins-1-2021.pl
+@ /ComputerScience/python/AP1-2021/chapitre2/boucle-qui-compte-de-1-a-nb-2021.pl
+@ /ComputerScience/python/AP1-2021/chapitre2/dynafor-2021.pl
+@ /ComputerScience/python/AP1-2021/chapitre2/dynafor1-2021.pl
+@ /ComputerScience/python/AP1-2021/chapitre2/dynafor2-2021.pl
+
+
+# @ /ComputerScience/python/AP1-1920/drafts/OCE/Suite_raison_aleatoire.pl
+# @ /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/exercises/boucles/suite-geometrique.pl
+@ /ComputerScience/python/AP1-2021/chapitre2/suite-geometrique.pl
+# Faire une boucle croissante 
+# @ /ComputerScience/python/AP1-1920/drafts/zip/boucle1/bouclecroissant.pl
+@ /ComputerScience/python/AP1-2021/chapitre2/bouclecroissant.pl
+
+# Faire une boucle diviser 
+# @ /ComputerScience/python/AP1-1920/drafts/zip/boucle1/boucledivise.pl
+@ /ComputerScience/python/AP1-2021/chapitre2/boucledivise.pl
+
+
+
+# Faire une boucle avec des if
+@ /ComputerScience/python/AP1-2021/chapitre2/boucleif.pl
+
+# Faire une boucle avec des chaines de caractères 
+@ /ComputerScience/python/AP1-2021/chapitre2/bouclestr.pl
+
+# Exercice avec des boucles while
+# @ /ComputerScience/python/AP1-2021/chapitre2/dynawhile.pl
+@ /ComputerScience/python/AP1-2021/chapitre2/syracuse.pl
+
+# Exercice sur les boucles répétable sans taboo #
+#  @  /ComputerScience/python/AP1-2021/chapitre2/loop_exo.pl
+
