@@ -8,7 +8,7 @@ text=Parmi les chaines suivantes, sélectionnez celles qui sont des noms de vari
 
 mybuild==
 from keyword import kwlist  # 35 mots-clés
-from random import randint, sample, shuffle
+from random import randint, sample, shuffle, choice
 
 
 def mot_aleatoire(longueur):
