@@ -7,7 +7,7 @@ title=Nommage de variables
 text=Parmi les chaines suivantes, sélectionnez celles qui sont des noms de variables valides.
 
 mybuild==
-from random import randint
+from random import randint, choice
 def mot_aleatoire(longueur):
     """Renvoie un mot aléatoire (lettres minuscules et majuscules) de la 
     longueur demandée."""
