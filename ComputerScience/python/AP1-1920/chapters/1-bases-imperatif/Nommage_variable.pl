@@ -44,8 +44,8 @@ incorrects = set(
     chaine_nombres_aleatoire(randint(1, 5)) + mot_aleatoire(randint(4, 10))
     for _ in range(15)
 }
-good = "\n".join(list(corrects))
-bad= "\n".join(list(incorrects))
+good += "\n".join(list(corrects))
+bad  += "\n".join(list(incorrects))
 
 
 nbtrues = random.randint(2,3)
