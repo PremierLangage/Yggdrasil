@@ -15,7 +15,7 @@ from string import ascii_letters
 def mot_aleatoire(longueur):
     """Renvoie un mot aléatoire (lettres minuscules et majuscules) de la 
     longueur demandée."""
-    return "".join(choice(ascii_letters) for _ in range(longueur))
+    return "".join(choice(ascii_letters+"éàçè") for _ in range(longueur))
 
 def chaine_nombres_aleatoire(longueur):
     """Renvoie un nombre aléatoire à longueur chiffres sous la forme d'une
