@@ -44,6 +44,23 @@ int substring(char* big, char* sub) {
 }
 ==
 
+autre_solution==#|c|
+#include <string.h>
+
+int substring(char* big, char* sub) {
+  int i, j;
+  i=0;
+  for (i=0 ; big[i]!='\0' ; i++){
+    for (j=0 ; sub[j]!='\0' && big[i+j]!='\0' ; j++)
+      if (big[i+j]!=sub[j])
+        break;
+    if (sub[j]=='\0')
+      return 1;
+  } 
+  return 0;
+}
+==
+
 code_before==#|c|
 
 ==
