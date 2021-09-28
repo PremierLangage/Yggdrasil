@@ -23,7 +23,7 @@ type_var = random.choice(["int","str","float","bool"])
 var = random.choice(["x", "y", "c", "X", "Y","un_deux","lapin","bob42"])
 
 pltest0="""
->>> "{}" in globals() # La variable {} est elle d&eaccute;finie ?
+>>> "{}" in globals() # La variable {} est elle d&eacute;finie ?
 True
 """.format(var, var)
 
