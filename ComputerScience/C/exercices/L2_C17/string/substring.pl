@@ -76,7 +76,9 @@ checks_args_stdin==#|python|
   ["Test aléatoire 3", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(2)]) ], "" ],
   ["Test aléatoire 4", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(3)]) ], "" ],
   ["Test aléatoire 5", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(3)]) ], "" ],
-  ["Test aléatoire 6", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(3)]) ], "" ] ]
+  ["Test aléatoire 6", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(3)]) ], "" ],
+  ["Test aléatoire 7", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(3)]) ], "" ],
+  ["Test aléatoire 8", ["".join([chr(randint(97,102)) for i in range(50)]), "".join([chr(randint(97,102)) for i in range(3)]) ], "" ] ]
 ==
 
 
