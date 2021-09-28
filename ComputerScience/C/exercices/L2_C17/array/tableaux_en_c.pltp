@@ -22,6 +22,20 @@ introduction==
 Voici quelques exercices manipulant des tableaux. Les exercices sont à peu près 
 triés en difficulté croissante. Les exercices de fin de fiche propose la 
 manipulation de tableaux de dimensions supérieures.
+
+
+S'il y a une chose à retenir sur les tableaux en C, c'est bien d'être extrêmement 
+attentif aux accès mémoires (lecture et écriture). Autant Python prévoit un 
+mécanisme d’exception avec les fameuses `IndexError` qui correspondent à des accès 
+invalides, le langage C ne prévoit rien en cas d’erreur de programmation. Vérifier 
+la validité des accès mémoires coûtent cher et comme le C veut les programmes 
+soient les plus performants, lors d’accès mémoires invalides, soit les programmes 
+adoptent des comportements imprévisibles (bug potentiellement silencieux), soit 
+le système protège l’ordinateur et tue le programme (erreur de segmentation).
+
+
+En C, c’est au programmeur de contrôler tous les `[i]` opéré sur les tableaux 
+et donc aussi de bien établir les débuts et les fins des boucles.
 ==
 
 @ /ComputerScience/C/exercices/L2_C17/array/max_array.pl
