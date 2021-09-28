@@ -30,19 +30,19 @@ def chaine_nombres_aleatoire(longueur):
 
 # initialisation des "bases de données" de noms corrects et incorrects
 corrects = {  # mots aléatoires
-    mot_aleatoire(randint(4, 10)) for _ in range(15)
+    mot_aleatoire(randint(3, 5)) for _ in range(8)
 } | {  # mots aléatoires avec des chiffres à la fin
-    mot_aleatoire(randint(4, 10)) + chaine_nombres_aleatoire(randint(1, 5))
-    for _ in range(15)
+    mot_aleatoire(randint(2, 3)) + chaine_nombres_aleatoire(randint(1, 5))
+    for _ in range(8)
 } | {  # mots aléatoires séparés par des "_"
-    mot_aleatoire(randint(4, 10)) +  "_" + mot_aleatoire(randint(4, 10)) 
-    for _ in range(15)
+    mot_aleatoire(randint(1, 3)) +  "_" + mot_aleatoire(randint(3, 4)) 
+    for _ in range(8)
 }
 incorrects = set(
     kwlist  # les mots-clés de Python
 ) | {  # mots aléatoires avec des chiffres au début
     chaine_nombres_aleatoire(randint(1, 5)) + mot_aleatoire(randint(4, 10))
-    for _ in range(15)
+    for _ in range(8)
 }
 good += "\n".join(list(corrects))
 bad  += "\n".join(list(incorrects))
