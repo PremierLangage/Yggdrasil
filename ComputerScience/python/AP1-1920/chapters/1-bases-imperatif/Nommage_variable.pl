@@ -39,7 +39,7 @@ nbtrues = random.randint(2,3)
 
 nb=6
 uncrosedfalse=
-good==
+Xgood==
 abc
 bonjour
 oui
@@ -55,7 +55,7 @@ si
 sinon
 ==
 
-bad==
+Xbad==
 au revoir
 Hi!
 def
