@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
     if "mybuild" in dic:
         try:
-            exec(mybuild,dic)
+            exec(dic['mybuild'],dic)
         except Exception as ee:
             print("Problem dans mybuild",str(ee),file=sys.stderr)
 
