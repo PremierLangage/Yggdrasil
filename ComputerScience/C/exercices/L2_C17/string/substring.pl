@@ -22,8 +22,9 @@ author=Dominique Revuz
 title=Sous-chaîne dans une chaîne
 tag=function|string
 
-text==
+taboo=strstr|strcasestr
 
+text==#|markdown|
 Écrire une fonction **substring** qui prend deux chaînes **big** et **sub** en argument. La fonction 
 devra chercher si **sub** est contenu quelque part dans **big**. Elle devra retourner 1 si **sub** 
 apparait dans **big** et 0 sinon.
