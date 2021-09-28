@@ -3,7 +3,7 @@ _dico_rmk={
     ';' : 'le point-virgule est inutile',
     '(' : 'les parenth&#232;ses sont inutiles',
     '++' : 'un seul + suffit',
-    '\n' : "le code peut s'écrire sur une seule ligne"
+    '\n' : "le code peut s'&eacute;crire sur une seule ligne"
 }
 for p in ['==','<-',':='] :
     _dico_rmk[p]= p + ' ne permet pas de faire une affectation'
