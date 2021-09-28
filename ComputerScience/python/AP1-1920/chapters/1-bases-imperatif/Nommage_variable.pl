@@ -48,7 +48,7 @@ good += "\n".join(list(corrects))
 bad  += "\n".join(list(incorrects))
 
 
-nbtrues = 2 # random.randint(2,3)
+nbtrues = random.choice([2,3,4])
 ==
 
 nb=6
