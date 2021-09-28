@@ -7,8 +7,10 @@ title=Nommage de variables
 text=Parmi les chaines suivantes, sélectionnez celles qui sont des noms de variables valides.
 
 mybuild==
-from random import randint, choice
-from string import ascii_letters
+from keyword import kwlist  # 35 mots-clés
+from random import randint, sample, shuffle
+from ressources_exercices import chaine_nombres_aleatoire, mot_aleatoire
+
 def mot_aleatoire(longueur):
     """Renvoie un mot aléatoire (lettres minuscules et majuscules) de la 
     longueur demandée."""
