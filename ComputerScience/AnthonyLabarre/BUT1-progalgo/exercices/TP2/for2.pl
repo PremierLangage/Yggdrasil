@@ -9,6 +9,11 @@ grader=@ /grader/evaluator.py
 
 builder=@/builder/bbefore.py
 
+before==
+import random 
+N= random.randint(10,20)
+
+
 title== #|html|
 Test et affichage
 ==
@@ -50,7 +55,7 @@ else:
             msg = tools.wrong("Le code ne compile pas, il provoque l'erreur suivante : " + str(e))
             grade = 0, msg 
         else:
-            if _foo.strip(string.whitespace) != "\n".join([str(i) for i in range(20)]):
+            if _foo.strip(string.whitespace) != "\n".join([str(i) for i in range(N+1)]):
                 grade = tools.grade_wrong("Hum... ce n'est pas bon, vous obtenez l'affichage suivant : ")
                 print(_foo, file=sys.stderr) 
             else:
