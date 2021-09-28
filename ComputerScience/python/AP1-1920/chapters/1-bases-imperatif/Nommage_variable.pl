@@ -43,7 +43,7 @@ incorrects = set(
 ) | {  # mots aléatoires avec des chiffres au début
     chaine_nombres_aleatoire(randint(1, 5)) + mot_aleatoire(randint(4, 10))
     for _ in range(8)
-} | { mot_aleatoire(randint(4, 10))+choice(['%','!','$','|','£']) for _ in range(5) }
+} | { mot_aleatoire(randint(4, 10))+choice(['%','!','$','|','£','@','&']) for _ in range(5) }
 good += "\n".join(list(corrects))
 bad  += "\n".join(list(incorrects))
 
