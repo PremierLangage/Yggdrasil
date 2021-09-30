@@ -119,7 +119,7 @@ int main(int argc, char* argv[]){
 
 editor.code==#|c|
 void print_diff_sym(int* t1, int s1, int* t2, int s2){
-  /* Votre code ici... */
+  // Votre code ici...
 }
 ==
 
