@@ -3,7 +3,7 @@ title = "Combinaison linéaire"
 extends = /model/math/expr.pl
 
 question ==  
-Calculer la combinaison linéaire des deux vecteurs $!{{a(p1,p2)}}+b!$ par $!{{q1,q2}}!$ 
+Calculer la combinaison linéaire des deux vecteurs $!{{a(p1,p2)}}!$ par $!{{q1,q2}}!$ 
 ==
  
   
