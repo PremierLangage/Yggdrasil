@@ -19,7 +19,7 @@ yB = a*xB + b
 
 question ==
 Déterminer l'équation de la droite passant par les points $! ( {{ xA }}, {{ yA }} ) !$ et $! ( {{ xB }}, {{ yB }} ) !$.
-On note $! x !$ la variable d'abscisse et $! y !$ la variable d'ordonnée.
+On note $! x !$ la variable d'abscisse et $! y !$ la variable d'ordonnée. On attend une réponse de la forme $! y = ax+b !$.
 
 ==
 
