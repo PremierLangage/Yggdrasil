@@ -22,8 +22,8 @@ mplsoluce2="Test tiré aléatoirement \n{}\n{}\n".format(random.randint(1,1000),
 ==
 
 soluce==
-l=int(input|operation())
-la=int(input|operation())
+l=int(input ())
+la=int(input())
 print("Le périmètre est",2*(l+la),"et la surface est",l*la,"!")
 ==
 mplsoluce0==
