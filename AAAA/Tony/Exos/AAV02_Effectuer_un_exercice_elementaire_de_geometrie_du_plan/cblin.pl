@@ -3,19 +3,19 @@ title = "Combinaison linéaire"
 extends = /model/math/expr.pl
 
 question ==  
-Calculer la combinaison linéaire des deux vecteurs $!{{a(p1,p2)}}!$ par $!{{q1,q2}}!$ 
+Calculer la combinaison linéaire $!{{a}}u+{{b}}v!$ où $!u={{u}}!$ et $!v = {{v}}!$  
 ==
  
   
 before == 
- 
-
-p1,p2 = randint(-2,2),randint(-2,2) 
-q1,q2 = randint(-2,2),randint(-2,2) 
+from sympy import Matrix 
+x, x1, x2, x3 = symbols('x x1 x2 x3')
+u = Matrix([[randint(-2,2),randint(-2,2)]])
+v = Matrix([[randint(-2,2),randint(-2,2)]]) 
 a,b = randint(-5,5),randint(-5,5) 
 
  
-sol = 
+sol = a * u +b*v
 ==
  
 
