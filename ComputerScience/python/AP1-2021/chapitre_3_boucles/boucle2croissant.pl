@@ -103,7 +103,7 @@ str
 
 
 mplsoluce4==
-Départ négatif
+D&eacute;part N&eacute;gatif 
 str
 -4
 4
