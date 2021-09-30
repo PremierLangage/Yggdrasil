@@ -1,7 +1,7 @@
 Savoir résoudre des équations algébriques d'ordre un, ou d'ordre deux de type x^2 = a  : à trouver
 Savoir simplifier des expressions 
     développement : 1 poly expansion.pl, 
-    factorisation : 1 factorisation.pl (buggé quand je mets x^2-2x+1 il ne répond rien ou dit que la réponse n'est pas un polynôme),  
+    factorisation : 1 factorisation.pl (buggé quand je mets x^2-2x+1 il ne répond rien : c'est le -devant le 2x qui pose pb : visiblement la version factorized a un souci car quand on répond une forme développée parfois il ne dit rien (x^2-2x+1),  parfois que la réponse n'est pas factorisée (x^2+2x-1) parfois qu'elle est fausse (x^2+2x+1)),  
                     2ddegre facto racines a le même problème.   à débugger et séparer en deux exos pour pol et non pol
     fractions     : 1 frac add ok mais à généraliser aux expressions dépendant de x.
 Savoir résoudre une équation du second degré : 1 factorization.pl (bug ci-dessus à checker) débug
