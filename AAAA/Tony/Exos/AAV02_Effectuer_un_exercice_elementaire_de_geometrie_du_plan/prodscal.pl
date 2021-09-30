@@ -3,7 +3,7 @@ title = "Produit scalaire"
 extends = /model/math/expr.pl
 
 question ==  
-Calculer le produit scalaire de $!{{p}}!$ par $!{{q}}!$ 
+Calculer le produit scalaire des deux vecteurs $!{{p}}!$ par $!{{q}}!$ 
 ==
  
   
