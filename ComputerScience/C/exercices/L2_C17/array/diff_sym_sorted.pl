@@ -128,7 +128,6 @@ void print_diff_sym(int* t1, int s1, int* t2, int s2){
   int i1=0;
   int i2=0;
 
-  /* As at least ont of the two arrays is not over */
   while(i1+i2 < s1+s2){
     if ((i1 < s1) && (i2 < s2)){ /* Both array alive */
       if (t1[i1] < t2[i2])
