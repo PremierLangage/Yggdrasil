@@ -15,7 +15,7 @@ q1,q2 = randint(-2,2),randint(-2,2)
 a,b = randint(-5,5),randint(-5,5) 
 
  
-sol = 
+sol = 1
 ==
  
 
