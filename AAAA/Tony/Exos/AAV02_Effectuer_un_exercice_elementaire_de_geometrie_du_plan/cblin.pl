@@ -3,7 +3,7 @@ title = "Combinaison linéaire"
 extends = /model/math/expr.pl
 
 question ==  
-Calculer la combinaison linéaire $!{{a}}u+{{b}}v!$ où $!u={{u}}!$ et $!v = {{v}}!$  
+Calculer la combinaison linéaire $!{{a}}u+{{b}}v!$ où $%u={{u}}%$ et $!v = {{v}}!$  
 ==
  
   
