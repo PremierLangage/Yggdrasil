@@ -16,6 +16,7 @@ sol = expr.expand()
 question ==
 Développer l'expression suivante :
 $$ {{ expr|latex }}. $$
+On demande l'expression la plus simplifiée possible.
 ==
 
 poly_form = "expanded"
