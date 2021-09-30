@@ -1,6 +1,6 @@
 title = "Combinaison linéaire"
 
-extends = /model/math/expr.pl
+extends = /model/math/set.pl
 
 question ==  
 Calculez les coordonnées de la combinaison linéaire $!{{a}}({{p1}},{{p2}})+{{b}}({{q1}},{{q2}})!$.  
