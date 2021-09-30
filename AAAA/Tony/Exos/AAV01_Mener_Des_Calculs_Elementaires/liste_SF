@@ -1,6 +1,10 @@
 Savoir résoudre des équations algébriques d'ordre un, ou d'ordre deux de type x^2 = a
-Savoir simplifier des expressions (développement : 1 poly expansion.pl, factorisation : 1 factorisation.pl, identités remarquables, fractions…)
-Savoir résoudre une équation du second degré : 1 poly factorization.pl
+Savoir simplifier des expressions 
+    développement : 1 poly expansion.pl, 
+    factorisation : 1 factorisation.pl (buggé quand je mets x^2-2x+1 il ne répond rien ou dit que la réponse n'est pas un polynôme),  
+                    2ddegre facto racines a le même problème.
+    fractions     : 1 frac add ok mais à généraliser aux expressions dépendant de x.
+Savoir résoudre une équation du second degré : 1 factorization.pl (bug ci-dessus à checker)
 Savoir faire des calculs algébriques avec des inégalités
 Savoir résoudre des inéquations simples
 Comprendre le concept de variable : ne pas être perturbé par le changement de notations dans un calcul simple
