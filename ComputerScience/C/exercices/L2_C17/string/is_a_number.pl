@@ -96,7 +96,7 @@ checks_args_stdin==#|python|
 astuces==#|python|
 [
   { "content": """Il faut écrire un mini parseur qui vérifie que la chaine est un nombre entier base 10 valide. Pour cela, le mieux est de procéder char par char avec une tête de lecture qui commence au début du mot."""},
-  { "content": """Le premier caractère peut être '-' ou bien un chiffre. Une lettre `c` est un chiffre """},
+  { "content": """Le premier caractère peut être `-` ou bien un chiffre. Une lettre `c` est un chiffre tel que `(c >= '0')` et `(c <= '9')`."""},
   { "content": """Attention, si le premier caractère est un zéro, alors il doit être suivi de `\0`."""}
 ]
 ==
