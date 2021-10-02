@@ -72,6 +72,7 @@ checks_args_stdin==#|python|
   ["Mot vide", [], ""],
   ["Un petit palindrome", [], choice(["elle", "kayak", "radar", "rotor", "serres", "solos", "laval"]) ],
   ["Pas un palindrome", [], choice(["elle est belle", "un kayak", "velo", "deux radar", "avion", "le rotor", "michel serres", "Bruno solos", "suffit"]) ],
+  ["Test aléatoire 1", [], "".join(['a' if randint(0,1) else 'b' for i in range(2)]) ],
 ]
 ==
 
