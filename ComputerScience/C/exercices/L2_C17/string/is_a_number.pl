@@ -27,8 +27,8 @@ text==#|markdown|
 de caractères C (en ascii) et retourne 1 si la chaine forme un nombre 
 valide en base 10. La fonction retournera 0 sinon.
 
-On considéra comme valide tout entier positif ou negatif. Voici des
-entrées valides :
+On considéra comme valide tout entier positif ou negatif, sans zéro 
+superflu en tête. Voici des entrées valides :
     
     0, 1, 324, -1, -0, -5243134, ...
 
