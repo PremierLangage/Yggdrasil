@@ -22,7 +22,7 @@ title=Reconnaitre un palindrome
 
 tag=tableau|string|palindrome
 
-editor.height=200px
+editor.height=250px
 
 text==#|markdown|
 Un **palindrome** est une suite de caractères pouvant indifféremment être lue de 
