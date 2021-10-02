@@ -22,8 +22,13 @@ introduction==#|markdown|
 Voici quelques exercices portant sur les chaînes de caractères en C. Les
 chaînes de cacractères en C sont très bien spécifiées. Ce ne sont pas 
 que des tableaux de caractères. Les chaînes de caratères se terminent 
-toujours par un caractères spécial dit "caractères de fin de chaîne".
-Dans un code source, on le désigne par `\0`.
+toujours par un caractères spécial dit "caractère de fin de chaîne".
+Dans un code source, il se désigne par `\0`.
+
+Sans ce caractère, toutes les fonctions de la librairie standard 
+deviendraient non fonctionnelles et produiraient des segfaults dans 
+le meilleur des cas. On ne peut pas connaitre la taille des tableaux 
+en C mais on peut connaître la taille des chaînes de caractères.
 ==
 
 @ /ComputerScience/C/exercices/L2_C17/string/strlenght.pl
