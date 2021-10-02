@@ -117,8 +117,8 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """Dans un premier temps, il est important de connaître la longueur de la chaîne de caractères. Une boucle `for` ensuite doit suffire pour écrire cette fonction."""},
-  { "content": """Avec `string.h`, il suffit d'utiliser un coup de `strlen` pour recupérer la longueur de la chaîne. Ensuite il faut regarder s'il y a égalité entre la première et la dernière lettre, la seconde et l'avant dernière, etc..."""},
-  { "content": """Attention, si `l` est la longueur de la chaîne et `i` l'indice courant de boucle, il faut comparer les lettres `[i]` et `[l-1-i]`; il faut aussi s'arrêter au milieu de la chaîne."""}
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""}
 ]
 ==
