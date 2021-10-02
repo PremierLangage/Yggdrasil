@@ -27,6 +27,7 @@ Voici quelques exercices portant sur les chaînes de caractères en C.
 @ /ComputerScience/C/exercices/L2_C17/string/is_palindromic.pl
 @ /ComputerScience/C/exercices/L2_C17/string/frame_string.pl
 @ /ComputerScience/C/exercices/L2_C17/string/miror_string.pl
+@ /ComputerScience/C/exercices/L2_C17/string/is_a_number.pl
 @ /ComputerScience/C/exercices/L2_C17/string/substring.pl
 @ /ComputerScience/C/exercices/L2_C17/string/roman2dec.pl
 
