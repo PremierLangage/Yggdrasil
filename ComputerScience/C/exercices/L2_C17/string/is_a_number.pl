@@ -36,9 +36,6 @@ Voici des entrées non valides :
 
     a12, 23d, -e1, 023, +23, 12a0, -0123, ...
 
-<br />
-
-
 ==
 
 editor.code==#|c|
