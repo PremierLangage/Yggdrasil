@@ -61,9 +61,9 @@ int main(void){
   char s[MAX];
   scanf("%s",s);
   if (est_palindrome(s))
-    printf("\"%s\" est un palindrome\n",s);
+    printf("%s est un palindrome\n",s);
   else 
-    printf("\"%s\" n'est pas un palindrome\n",s);
+    printf("%s n'est pas un palindrome\n",s);
   return 0;
 }
 
