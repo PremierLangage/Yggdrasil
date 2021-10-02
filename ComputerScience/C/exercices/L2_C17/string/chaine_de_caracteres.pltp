@@ -16,10 +16,14 @@
 
 author=Prog C L2 Team
 
-title=Exercices manipulant des chaînes de caractères
+title=Chaînes de caractères
 
-introduction==
-Voici quelques exercices portant sur les chaînes de caractères en C.
+introduction==#|markdown|
+Voici quelques exercices portant sur les chaînes de caractères en C. Les
+chaînes de cacractères en C sont très bien spécifiées. Ce ne sont pas 
+que des tableaux de caractères. Les chaînes de caratères se terminent 
+toujours par un caractères spécial dit "caractères de fin de chaîne".
+Dans un code source, on le désigne par `\\0`.
 ==
 
 @ /ComputerScience/C/exercices/L2_C17/string/strlenght.pl
