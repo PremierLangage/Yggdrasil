@@ -45,6 +45,8 @@ int est_palindrome(char s[]){
 ==
 
 solution==#|c|
+#include <string.h>
+
 int est_palindrome(char s[]){
 int i,l;
 l=strlen(s);
