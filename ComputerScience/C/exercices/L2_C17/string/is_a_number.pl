@@ -69,7 +69,6 @@ code_before==#|c|
 ==
 
 code_after==#|c|
-
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
@@ -97,5 +96,11 @@ checks_args_stdin==#|python|
   ["Test aléatoire 5", [choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"])], ""] ]
 ==
 
-
+astuces==#|python|
+[
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""}
+]
+==
 
