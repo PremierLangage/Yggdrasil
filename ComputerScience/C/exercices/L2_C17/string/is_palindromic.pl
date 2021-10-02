@@ -26,7 +26,7 @@ extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==#|markdown|
 Un **palindrome** est une suite de caractères pouvant indifféremment être lue de 
-gauche à droite ou bien de droite à gauche. Ainsi `elle`, `été`, `laval` sont des 
+gauche à droite ou bien de droite à gauche. Ainsi `elle`, `été` et `laval` sont des 
 palindromes. Ecrire une fonction `est_palindrome` qui reçoit une chaine de caractères 
 et renvoie `1` si celle-ci est un palindrome, et `0` sinon.
 ==
