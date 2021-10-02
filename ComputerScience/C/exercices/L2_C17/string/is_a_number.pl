@@ -14,14 +14,15 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/C/template/std_progC.pl
+extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Nicolas Borie
 
 title=Reconnaître un nombre entier
+
 tag=string|chaine|conversion|verification
 
-text==
+text==#|markdown|
 Écrire une fonction **is_a_number** qui prend en argument une chaîne 
 de caractères C (en ascii) et retourne 1 si la chaine forme un nombre 
 valide en base 10. La fonction retournera 0 sinon.
@@ -42,12 +43,11 @@ Voici des entrées non valides :
 
 editor.code==#|c|
 int is_a_number(char* s){
-  /* votre code ici... */
+  // votre code ici...
 }
 ==
 
 solution==#|c|
-
 int is_a_number(char* s){
   int i=0;
 
