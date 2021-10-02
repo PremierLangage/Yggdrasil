@@ -32,11 +32,12 @@ et renvoie `1` si celle-ci est un palindrome, et `0` sinon.
 code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #define MAX 50
 ==
 
 editor.code==#|c|
+#include <string.h>
+
 int est_palindrome(char s[]){
   // Votre code ici...
   return ...;
