@@ -22,6 +22,8 @@ title=Reconnaitre un palindrome
 
 tag=tableau|string|palindrome
 
+editor.height=200px
+
 text==#|markdown|
 Un **palindrome** est une suite de caractères pouvant indifféremment être lue de 
 gauche à droite ou bien de droite à gauche. Ainsi `elle`, `été` et `laval` sont des 
