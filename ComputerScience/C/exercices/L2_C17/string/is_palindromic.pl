@@ -25,10 +25,10 @@ tag=tableau|string|palindrome
 extends=/ComputerScience/C/template/stdsandboxC.pl
 
 text==#|markdown|
-Un palindrome est une suite de caractères pouvant indifféremment être lue de gauche à droite ou de droite à gauche.  
-Ainsi $% \tt{elle,été,laval}%$ sont des palindromes.  
-Ecrire une fonction `est_palindrome` qui reçoit une chaine de caractères 
-et renvoie 1 si celle-ci est un palindrome, et 0 sinon.
+Un **palindrome** est une suite de caractères pouvant indifféremment être lue de 
+gauche à droite ou bien de droite à gauche. Ainsi `elle`, `été`, `laval` sont des 
+palindromes. Ecrire une fonction `est_palindrome` qui reçoit une chaine de caractères 
+et renvoie `1` si celle-ci est un palindrome, et `0` sinon.
 ==
 
 code_before==#|c|
@@ -71,9 +71,9 @@ int main(void){
 
 checks_args_stdin==#|python|
 [ 
- ["aleatoire","",random.choice(["elle","kayak","radar","rotor","serres","solos",])],
-["aleatoire","",random.choice(["elle est belle","un kayak","velo","deux radar","avion","le rotor","michel serres","Bruno solos","suffit"])],
-   ]
+  ["Un petit palindrome","",random.choice(["elle", "kayak", "radar", "rotor", "serres", "solos", "laval"])],
+  ["Test aleatoire","",random.choice(["elle est belle","un kayak","velo","deux radar","avion","le rotor","michel serres","Bruno solos","suffit"])],
+]
 ==
 
 astuces==#|python|
