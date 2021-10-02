@@ -40,8 +40,8 @@ code_before==#|c|
 
 editor.code==#|c|
 int est_palindrome(char s[]){
-/* A compléter */
-return 1;
+  // Votre code ici...
+  return ...;
 }
 ==
 
