@@ -72,7 +72,14 @@ checks_args_stdin==#|python|
   ["Mot vide", [], ""],
   ["Un petit palindrome", [], choice(["elle", "kayak", "radar", "rotor", "serres", "solos", "laval"]) ],
   ["Pas un palindrome", [], choice(["elle est belle", "un kayak", "velo", "deux radar", "avion", "le rotor", "michel serres", "Bruno solos", "suffit"]) ],
-  ["Test aléatoire 1", [], "".join(['a' if randint(0,1) else 'b' for i in range(2)]) ],
+  ["Test aléatoire 1", [], "".join(['a' if randint(0,1) else 'b' for i in range(1)]) ],
+  ["Test aléatoire 2", [], "".join(['a' if randint(0,1) else 'b' for i in range(2)]) ],
+  ["Test aléatoire 3", [], "".join(['a' if randint(0,1) else 'b' for i in range(3)]) ],
+  ["Test aléatoire 4", [], "".join(['a' if randint(0,1) else 'b' for i in range(4)]) ],
+  ["Test aléatoire 5", [], "".join(['a' if randint(0,1) else 'b' for i in range(5)]) ],
+  ["Test aléatoire 6", [], "".join(['a' if randint(0,1) else 'b' for i in range(6)]) ],
+  ["Test aléatoire 7", [], "".join(['a' if randint(0,1) else 'b' for i in range(7)]) ],
+  ["Test aléatoire 8", [], "".join(['a' if randint(0,1) else 'b' for i in range(8)]) ],
 ]
 ==
 
