@@ -71,8 +71,8 @@ int main(void){
 
 checks_args_stdin==#|python|
 [ 
-  ["Un petit palindrome", [], choice(["elle", "kayak", "radar", "rotor", "serres", "solos", "laval"])],
-  ["Pas un palindrome", [], choice(["elle est belle", "un kayak", "velo", "deux radar", "avion", "le rotor", "michel serres", "Bruno solos", "suffit"])],
+  ["Un petit palindrome", [], choice(["elle", "kayak", "radar", "rotor", "serres", "solos", "laval"]) ],
+  ["Pas un palindrome", [], choice(["elle est belle", "un kayak", "velo", "deux radar", "avion", "le rotor", "michel serres", "Bruno solos", "suffit"]) ],
 ]
 ==
 
