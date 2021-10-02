@@ -61,9 +61,9 @@ int main(void){
   char s[MAX];
   scanf("%s",s);
   if (est_palindrome(s))
-    printf("%s est un palindrome\n",s);
+    printf("\"%s\" est un palindrome\n",s);
   else 
-    printf("%s n'est pas un palindrome\n",s);
+    printf("\"%s\" n'est pas un palindrome\n",s);
   return 0;
 }
 
@@ -71,6 +71,7 @@ int main(void){
 
 checks_args_stdin==#|python|
 [ 
+  ["Mot vide", [], ""],
   ["Un petit palindrome", [], choice(["elle", "kayak", "radar", "rotor", "serres", "solos", "laval"]) ],
   ["Pas un palindrome", [], choice(["elle est belle", "un kayak", "velo", "deux radar", "avion", "le rotor", "michel serres", "Bruno solos", "suffit"]) ],
 ]
