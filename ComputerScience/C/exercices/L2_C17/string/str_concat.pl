@@ -69,7 +69,9 @@ checks_args_stdin==#|python|
   ["Second mot vide", ["RienAGauche", ""], ""],
   ["Premier mot vide", ["", "Rien avant"], ""],
   ["Deux mots vides", ["", ""], ""],
-  ["Test Aléatoire 1", [choice(["Vélo ", "Avion ", "Bateau ", "Scooter ", "Skate "]), choice(["vert", "bleu", "rouge", "noir", "rose", "blanc", "multicolore"])], ""],]
+  ["Test Aléatoire 1", [choice(["Vélo ", "Avion ", "Bateau ", "Scooter ", "Skate "]), choice(["vert", "bleu", "rouge", "noir", "rose", "blanc", "multicolore"])], ""],
+  ["Test Aléatoire 2", [choice(["Vélo ", "Avion ", "Bateau ", "Scooter ", "Skate "]), choice(["vert", "bleu", "rouge", "noir", "rose", "blanc", "multicolore"])], ""],
+  ["Test Aléatoire 3", [choice(["Vélo ", "Avion ", "Bateau ", "Scooter ", "Skate "]), choice(["vert", "bleu", "rouge", "noir", "rose", "blanc", "multicolore"])], ""] ]
 ==
 
 astuces==#|python|
