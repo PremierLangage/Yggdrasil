@@ -58,6 +58,7 @@ int main(int argc, char* argv[]){
   int i;
   for (i=0 ; i<80 ; i++)
     s[i] = 'a';
+  s[79] = '\0';
   str_merge(argv[1], argv[2], s);
   puts(s);
   return 0;
