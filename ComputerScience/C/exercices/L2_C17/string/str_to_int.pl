@@ -110,9 +110,9 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Le mieux est de réussir tout d'abord l'exercice qui détecte les chaines de caractères décrivant des nombres. On fait ensuite un copier coller vers cet exercice et on modifie l'ancienne fonction issue de l'autre exercice."""},
+  { "content": """Dans le cas où l'on retourne zéro, le pointeur `val` est ignoré. Dans le cas où l'on retourne `1`, il faut mettre à jour pas à pas une variable locale avant de la placer sur la valeur pointée par `val`."""},
+  { "content": """Quand une chaine `xxx` décrit un nombre `cumul`, la chaine `xxx6` décrit alors le nombre `10 * cumul + 6`. Il faut faire attention aux négatifs et ne pas oublier de multiplier par `-1` le cas échéant."""}
 ]
 ==
 
