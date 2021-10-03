@@ -67,7 +67,7 @@ int str_to_int_secure(char* s, int* val){
 ==
 
 code_before==#|c|
-
+#include <stdio.h>
 ==
 
 code_after==#|c|
