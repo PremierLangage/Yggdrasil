@@ -18,46 +18,31 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Nicolas Borie
 
-title=Reconnaître un nombre entier
+title=Concaténation de deux chaines
 
 tag=string|chaine|conversion|verification
 
 text==#|markdown|
-Écrire une fonction **is_a_number** qui prend en argument une chaîne 
-de caractères C (en ascii) et retourne 1 si la chaine forme un nombre 
-valide en base 10. La fonction retournera 0 sinon.
-
-On considéra comme valide tout entier positif ou negatif, sans zéro 
-superflu en tête. Voici des entrées valides :
-    
-    0, 1, 324, -1, -0, -5243134, ...
-
-Voici des entrées non valides :
-
-    a12, 23d, -e1, 023, +23, 12a0, -0123, ...
-
+Écrire une fonction **str_merge** qui prend en argument trois adresses de chaînes de caractères.
+Votre fonction devra concaténer les deux premières chaînes (d'abord la permière puis 
+la seconde à sa droite) dans la dernière chaîne en argument. Cette dernière est supposée
+disposée largement suffisement de mémoire pour contenir les deux autres.
 ==
 
 editor.code==#|c|
-int is_a_number(char* s){
+void str_merge(char s1[], char s2[], char result[]){
   // votre code ici...
 }
 ==
 
 solution==#|c|
-int is_a_number(char* s){
-  int i=0;
-
-  if (s[i] == '-')
-    i++;
-  if (s[i] == '0')
-    return s[i+1] == '\0';
-  while (s[i] != '\0'){
-    if (s[i] < '0' || s[i] > '9')
-      return 0;
-    i++;
-  }
-  return 1;
+void str_merge(char s1[], char s2[], char result[]){
+  int i, j;
+  for (i=0 ; s1[i]!='\0' ; i++)
+    result[i] = s1[i];
+  for (j=0 ; s2[j]!='\0' ; j++)
+    result[i+j] = s2[j];
+  result[i+j] = '\0';
 }
 ==
 
@@ -80,24 +65,14 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[ ["Test basique", ["0"], ""],
-  ["Plus d'une centaine", ["123"], ""],
-  ["Avec des lettres", ["12a0"], ""],
-  ["Petit négatif", ["-47"], ""],
-  ["Très grand nombre", ["12172364512235126361273223736"], ""],
-  ["Fort négatif", ["-999999999999999"], ""],
-  ["Test aléatoire 1", [choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"])], ""],
-  ["Test aléatoire 2", [choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"])], ""],
-  ["Test aléatoire 3", [choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"])], ""],
-  ["Test aléatoire 4", [choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"])], ""],
-  ["Test aléatoire 5", [choice(["781","-1274","997421","-75.43","3.1415","12521z","-124b","82c12","-124b","-142c1","-12.21"])], ""] ]
+[ ["Test basique", ["Recto", "Verso"], ""]]
 ==
 
 astuces==#|python|
 [
-  { "content": """Il faut écrire un mini parseur qui vérifie que la chaine est un nombre entier base 10 valide. Pour cela, le mieux est de procéder char par char avec une tête de lecture qui commence au début du mot."""},
-  { "content": """Le premier caractère peut être `-` ou bien un chiffre. Une lettre `c` est un chiffre tel que `(c >= '0')` et `(c <= '9')`."""},
-  { "content": """Attention, si le premier caractère est un zéro, alors il doit être suivi de `\\0`."""}
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""}
 ]
 ==
 
