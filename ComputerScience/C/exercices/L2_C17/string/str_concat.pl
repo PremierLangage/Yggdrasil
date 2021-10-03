@@ -65,7 +65,11 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[ ["Test basique", ["Recto", "Verso"], ""]]
+[ ["Test basique", ["Recto ", "Verso"], ""],
+  ["Second mot vide", ["RienAGauche", ""], ""],
+  ["Premier mot vide", ["", "Rien avant"], ""],
+  ["Deux mots vides", ["", ""], ""],
+  ["Test Aléatoire 1", [choice(["Vélo ", "Avion ", "Bateau ", "Scooter ", "Skate "]), choice(["vert", "bleu", "rouge", "noir", "rose", "blanc", "multicolore"])], ""],]
 ==
 
 astuces==#|python|
