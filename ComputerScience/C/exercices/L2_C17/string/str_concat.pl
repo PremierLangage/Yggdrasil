@@ -54,12 +54,12 @@ code_after==#|c|
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
-  if (is_a_number(argv[1])){
-    printf("%s est un nombre valide.\n", argv[1]);
-  }
-  else{
-    printf("%s n'est pas un nombre valide.\n", argv[1]);
-  }
+  char s[80];
+  int i;
+  for (i=0 ; i<80 ; i++)
+    s[i] = 'a';
+  str_merge(argv[1], argv[2], s);
+  puts(s);
   return 0;
 }
 ==
