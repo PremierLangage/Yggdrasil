@@ -27,7 +27,16 @@ tag=string|fonction|chaine|arithmetique|conversion
 taboo=string|atoi|strtol
 
 text==#|markdown|
-Écrire une fonction **str_to_int_secure**
+Écrire une fonction **str_to_int_secure** qui prend en argument une chaîne de 
+caractères `s` qui a vocation à contenir la description d'un entier en base 10.
+Votre fonction devra retourner un code d'erreur : `1` si la chaine en argument
+est bien un entier relatif (positif ou négatif) en base 10 et `0` sinon. Dans le 
+cas où c'est bien un entier qui est décrit par la chaîne `s`, votre fonction devra 
+mettre à jour la valeur pointée par le pointeur `val` avant de retourner `1`.
+
+Votre fonction est donc un analogue de **atoi** (de la librairie standard) mais 
+sécurisé avec un code d'erreur et un passage par adresse (on lit la valeur pointée 
+que si le code d'erreur est positif).
 ==
 
 editor.code==#|c|
