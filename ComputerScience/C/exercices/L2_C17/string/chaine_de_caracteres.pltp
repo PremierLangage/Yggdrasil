@@ -34,6 +34,7 @@ en C mais on peut connaître la taille des chaînes de caractères.
 @ /ComputerScience/C/exercices/L2_C17/string/strlenght.pl
 @ /ComputerScience/C/exercices/L2_C17/string/to_upper_in_string.pl
 @ /ComputerScience/C/exercices/L2_C17/string/is_palindromic.pl
+@ /ComputerScience/C/exercices/L2_C17/string/str_concat.pl
 @ /ComputerScience/C/exercices/L2_C17/string/frame_string.pl
 @ /ComputerScience/C/exercices/L2_C17/string/miror_string.pl
 @ /ComputerScience/C/exercices/L2_C17/string/is_a_number.pl
