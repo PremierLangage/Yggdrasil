@@ -47,7 +47,7 @@ if "taboo" in globals():
 
 if "astuces" in globals():
     hints.items = eval(astuces)
-    text+='<br><br>'
+    text+='<br>'
     text+=" {{ hints|component}} \n<br>"
     nb_hints = len(hints.items)
 else:
