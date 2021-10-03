@@ -70,9 +70,9 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Le mieux est de recopier char par char depuis les deux premières chaînes vers la dernière."""},
+  { "content": """Pour cette fonction, vous aurez besoin de deux boucles `for`, l'une à la suite de l'autre, chacune parcourrant une des deux chaînes."""},
+  { "content": """Le caractère `'\\0'` arrête les parcours dans deux boucles. Une fois tous les caractères placés dans la dernière chaîne, il ne faut pas oublier d'indiquer qu'elle se termine en y plaçant aussi le caractère de fin de chaîne à la fin."""}
 ]
 ==
 
