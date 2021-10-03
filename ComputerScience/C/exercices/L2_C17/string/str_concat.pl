@@ -52,12 +52,15 @@ code_before==#|c|
 
 code_after==#|c|
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main(int argc, char* argv[]){
+  srand(time(NULL));
   char s[80];
   int i;
   for (i=0 ; i<80 ; i++)
-    s[i] = 'a';
+    s[i] = (rand() % 90) + 30;
   s[79] = '\0';
   str_merge(argv[1], argv[2], s);
   puts(s);
