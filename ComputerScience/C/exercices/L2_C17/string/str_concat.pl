@@ -20,7 +20,7 @@ author=Nicolas Borie
 
 title=Concaténation de deux chaines
 
-tag=string|chaine|conversion|verification
+tag=string|chaine|concaténation|tableau
 
 text==#|markdown|
 Écrire une fonction **str_merge** qui prend en argument trois adresses de chaînes de caractères.
