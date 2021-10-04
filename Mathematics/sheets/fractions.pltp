@@ -3,7 +3,7 @@ title = Fractions
 introduction ==
 Objectifs :
 
-- Effectuer des calculs numériques mettant en jeu des écritures fractionnaires.
+- Effectuer des calculs sur des fractions.
 - Présenter un résultat fractionnaire sous forme de fraction irréductible.
 
 ==
@@ -23,12 +23,4 @@ Objectifs :
 @ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_computation_add_div_par.pl
 
 @ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_computation_add_div_par_1int2frac.pl
-
-@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_sum_large_denom_2.pl
-
-@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_sum_large_denom_3.pl
-
-@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_simplify_prod_2.pl
-
-@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_simplify_prod_3.pl
 
