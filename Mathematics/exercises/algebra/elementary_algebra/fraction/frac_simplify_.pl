@@ -7,6 +7,8 @@
 
 extends = /model/math/expr.pl
 
+title = Simplifier une fraction
+
 before ==
 if param['nbsize'] == "small":
     lstf=[[2,1],[3,1],[4,1],[5,1],[6,1],[7,1],[8,1],[9,1],[3,2],[4,3],[5,4],[5,3],[5,2],[6,5],[7,6],[7,5],[7,4],[7,3],[7,2],[8,7],[8,5],[8,3]]
