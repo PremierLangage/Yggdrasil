@@ -19,6 +19,11 @@ questions==
 + $% f^{\\{-1\\}}(\\{y\\}) %$ a du sens, c'est l'ensemble des antécédents de $% y%$ par $% f %$
 + $% f(\\{x\\}) %$ a du sens, c'est le singleton $% \\{ f(x)\\}%$
 - $% f(\\{x\\}) %$ s'appelle l'image de $% x%$ par $%f%$
+
+
+
+** Soit $%E, F %$ deux ensembles non vide disjoints et doit $%f: E \to F %$ une application $%x\in E %$, $% y\in F %$, $% A\subset E %$ et $% B \subset F%$ 
+
 - $% f(A) =B%$
 - $% f^{\\{-1\\}}(B)=A %$
 + $% f^{\\{-1\\}}(B) %$ a du sens, c'est l'image réciproque de $%B%$
