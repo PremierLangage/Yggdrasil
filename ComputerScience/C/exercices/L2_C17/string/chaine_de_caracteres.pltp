@@ -29,6 +29,9 @@ Sans ce caractère, toutes les fonctions de la librairie standard
 deviendraient non fonctionnelles et produiraient des segfaults dans 
 le meilleur des cas. On ne peut pas connaitre la taille des tableaux 
 en C mais on peut connaître la taille des chaînes de caractères.
+
+Encore une fois, plus on avance dans la fiche, plus les exercices 
+piquent. Bon courage. 
 ==
 
 @ /ComputerScience/C/exercices/L2_C17/string/strlenght.pl
