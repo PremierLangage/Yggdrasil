@@ -5,7 +5,7 @@
 @ /utils/components/textselect.py [customtextselect.py]
 
 
-extends = temp.pl
+#extends = temp.pl
 
 @ /utils/sandboxio.py
 @ /builder/beforestep.py [builder.py]
