@@ -25,7 +25,7 @@ statement  = []
 
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
-        comp.append(CustomRadio())
+        comp.append(Radio())
     elif q['type'] == "Checkbox":
         comp.append(CustomCheckbox())
     elif  q['type'] == 'TextSelect':
