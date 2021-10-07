@@ -8,7 +8,7 @@ settings.cumulative % false
 
 before == #|python|
 import random as rd
-from customradio import CustomRadio
+from customradio import Radio
 from customcheckbox import CustomCheckbox
 from customtextselect import CustomTextSelect
 from AMC import parse_AMC_TXT
