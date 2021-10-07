@@ -33,7 +33,7 @@ code_before==#|c|
 #include <stdlib.h>
 ==
 
-taboo=strlen|string
+taboo=strlen|string.h
 
 editor.code==#|c|
 ... retourne_chaine(char s[]){
