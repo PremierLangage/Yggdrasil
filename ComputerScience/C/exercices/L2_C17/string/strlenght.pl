@@ -44,7 +44,7 @@ chaîne.
 
 ==
 
-taboo=strlen|string
+taboo=strlen|string.h
 
 editor.code==#|c|
 int string_length(char* s){
