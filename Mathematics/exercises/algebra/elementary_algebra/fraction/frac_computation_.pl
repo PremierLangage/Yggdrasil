@@ -8,6 +8,8 @@
 
 extends = /model/math/expr.pl
 
+title = Calculer avec des fractions
+
 param.numbers = small
 
 param.formulas % ["f+f"]
