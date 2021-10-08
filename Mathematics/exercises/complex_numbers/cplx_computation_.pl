@@ -8,6 +8,8 @@
 
 extends = /model/math/complex.pl
 
+title = Calculer avec des nombres complexes
+
 param.formulas % []
 
 jinja_keys = ["question", "text1", "text2", "solution", "input_prefix"]
