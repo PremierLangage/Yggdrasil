@@ -1,5 +1,7 @@
 extends = /model/math/expr.pl
 
+title = Simplifer un produit
+
 before ==
 from sympy import fraction
 
