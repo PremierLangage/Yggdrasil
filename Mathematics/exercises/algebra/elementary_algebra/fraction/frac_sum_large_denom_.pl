@@ -7,6 +7,8 @@
 
 extends = /model/math/expr.pl
 
+title = Simplifer une somme
+
 before ==
 from math import gcd
 
