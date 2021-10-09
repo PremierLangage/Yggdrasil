@@ -36,8 +36,9 @@ questions==
 
 
 ** Cochez les bonnes réponses. Ecrire en revenant aux éléments premiers du langage que l'entier $%a%$ divise l'entier $%b%$ .
-
- 
-
+- $% a, b  \in \mathbb{N}  \quad a= k\times b %$
+-  $% a, b  \in \mathbb{N}  \quad \exists k \in \mathbb{N} \quad  a= k\times b %$
+-  $% a, b  \in \mathbb{N}  \quad \forall k \in \mathbb{N} \quad  b= k\times a %$
+-  $% a, b  \in \mathbb{N}  \quad \exists k \in \mathbb{N} \quad  b= k\times a %$
 ==
 
