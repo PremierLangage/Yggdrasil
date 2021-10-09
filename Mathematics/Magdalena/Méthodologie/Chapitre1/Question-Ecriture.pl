@@ -28,10 +28,10 @@ questions==
 ** Cochez les bonnes réponses. Ecrire formellement que l'entier $%p%$ est premier en utilisant le symbole divise $% | %$ .
 
 - $% 1 | p \\; \mbox{ et } \\; p |p %$
-- $% \exists d \in \mathbb{N}^* \quad d | p \quad (d=1 ou d=n) %$
+- $% \exists d \in \mathbb{N}^* \quad d | p \quad (d=1 \\; \mbox{ ou } \\;  d=n) %$
 - $% \\{ d \in \mathbb{N} \\; | \\; d | p \\} = \\{1, p\\} %$
-+ $% \\{ d \in \mathbb{N} \\; | \\; d | p \\} = \\{1, p\\} %$ et $%p \ge 2 %$
-+ $%p \ge 2 %$ et $% (\forall d \in \mathbb{N} \quad \mbox{ si } d | p \mbox{ alors } \\; d=1  \\; \mbox{ ou } \\; d=p%$.
++ $% \\{ d \in \mathbb{N} \\; | \\; d | p \\} = \\{1, p\\} \quad  %$ et  $% \quad (p \ge 2) %$
++ $%p \ge 2 %$ et $% (\forall d \in \mathbb{N} \quad \mbox{ si } d | p \mbox{ alors } \\; d=1  \\; \mbox{ ou } \\; d=p)%$.
  
 
 
