@@ -1,9 +1,5 @@
 extends = /model/AMC_TXT.pl
-title = Ecriture Divise et Nombres Premiers et Nombres premiers entre eux 
-questions==
-
-
-
+title = Ecriture "Divise",  "Nombres Premiers" et "Nombres premiers entre eux" 
 questions==
 
 
