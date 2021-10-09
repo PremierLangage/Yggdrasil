@@ -21,7 +21,7 @@ questions==
 + $% \\{e^{i\theta}  \quad  | \theta \in \mathbb{R} \\}%$
 - $% \\{z   \\;   | \\; \exists i \in \mathbb{C} \exists x, y \in \mathbb{R} \\; \sqrt{x^2+y^2} =1 \\}%$
 - $% \\{z   \\;   | \\; \exists x, y \in \mathbb{R} \\; \sqrt{x^2+y^2} =1 \\}%$
-+ $% \\{z   \\;   | \\; \exists x, y \in \mathbb{R} \\; z= x+iy \\;  \sqrt{x^2+y^2} =1 \\}%$
++ $% \\{z   \\;   | \\; \exists x, y \in \mathbb{R} \quad z= x+iy \quad  \sqrt{x^2+y^2} =1 \\}%$
 
 ** Cochez les bonnes réponses. Ecrire formellement l'ensemble des entiers naturels impairs
 
