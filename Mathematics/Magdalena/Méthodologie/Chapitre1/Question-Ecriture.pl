@@ -17,7 +17,7 @@ questions==
 
 - $% \\{n \in \mathbb{N} \quad  | \\;  \forall k \in \mathbb{N} \quad  n=2k \\}%$ 
 + $% \\{n \in \mathbb{N} \\;  | \\;  \exists k \in \mathbb{N} \quad  n=2k \\}%$ 
-- $% \\{ \forall n \in \mathbb{N} \;  | \;  \exists k \in \mathbb{N} \quad  n=2k \\}%$
+- $% \\{ \forall n \in \mathbb{N} \\;  | \\;  \exists k \in \mathbb{N} \quad  n=2k \\}%$
 - $% \\{n \in \mathbb{N} \\;  | \\;  \exists k \in \mathbb{N} \quad  2k \\}%$ 
 + $% \\{2k \\; |\\; k \in \mathbb{N} \\}%$ 
 + $%  \\{2n \\; |\\; n \in \mathbb{N} \\}%$ 
@@ -25,10 +25,9 @@ questions==
 
 
 
-** Cochez les bonnes réponses. 
-Soit $%E, F %$ deux ensembles non vide disjoints et soit $%f: E \to F %$ une application $%x\in E %$, $% y\in F %$, $% A\subset E %$ et $% B \subset F%$ 
+** Cochez les bonnes réponses. Ecrire formellement que l'entier $%p%$ est premier en utilisant le symbole divise $% | %$ .
 
-- $% f(A) =B%$
+- $% 1 %$
 - $% f^{\\{-1\\}}(B)=A %$
 + $% f^{\\{-1\\}}(B) %$ a du sens, c'est l'image réciproque de $%B%$
 - $% f^{\\{-1\\}}(A)%$ a du sens
