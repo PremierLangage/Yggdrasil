@@ -1,3 +1,9 @@
+extends = /model/AMC_TXT.pl
+title = Ecriture 
+questions==
+
+
+
 questions==
 
 ** Cochez les bonnes réponses. Ecrire formellement $%n%$ est un entier pair
