@@ -36,7 +36,7 @@ questions==
 - $% \exists d \in \mathbb{N}^* \quad d | p \quad (d=1 \\; \mbox{ ou } \\;  d=n) %$
 - $% \\{ d \in \mathbb{N} \\; | \\; d | p \\} = \\{1, p\\} %$
 + $% \\{ d \in \mathbb{N} \\; | \\; d | p \\} = \\{1, p\\} \quad  %$ et  $% \quad (p \ge 2) %$
-+ $%(p \ge 2 )\quad  %$ et $%  \quad (\forall d \in \mathbb{N} \\; \mbox{ si } d | p, \\;  \mbox{ alors } \\; d=1  \\; \mbox{ ou } \\; d=p)%$.
++ $%(p \ge 2 )\quad  %$ et $%  \quad (\forall d \in \mathbb{N} \\; \mbox{ si } d | p, \\;  \mbox{ alors } \\; (d=1  \\; \mbox{ ou } \\; d=p))%$.
  
 
 
