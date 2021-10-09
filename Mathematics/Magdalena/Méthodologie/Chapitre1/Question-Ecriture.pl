@@ -18,10 +18,10 @@ questions==
 - $% \\{n \in \mathbb{N} \quad  | \\;  \forall k \in \mathbb{N} \quad  n=2k \\}%$ 
 + $% \\{n \in \mathbb{N} \\;  | \\;  \exists k \in \mathbb{N} \quad  n=2k \\}%$ 
 - $% \\{ \forall n \in \mathbb{N} \;  | \;  \exists k \in \mathbb{N} \quad  n=2k \\}%$
-- $% \\{n \in \mathbb{N} \;  | \;  \exists k \in \mathbb{N} \quad  2k \\}%$ 
-+ $% \\{2k \; |\; k \in \mathbb{N} \\}%$ 
-+ $%  \\{2n \; |\; n \in \mathbb{N} \\}%$ 
-- $% \\{n, k \in \mathbb{N} \;  | \;  n=2k \\}%$ 
+- $% \\{n \in \mathbb{N} \\;  | \\;  \exists k \in \mathbb{N} \quad  2k \\}%$ 
++ $% \\{2k \\; |\\; k \in \mathbb{N} \\}%$ 
++ $%  \\{2n \\; |\\; n \in \mathbb{N} \\}%$ 
+- $% \\{n, k \in \mathbb{N} \\;  | \\;  n=2k \\}%$ 
 
 
 
