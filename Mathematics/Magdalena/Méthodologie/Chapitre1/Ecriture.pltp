@@ -1,9 +1,9 @@
 introduction==
 
-Voici quelques QCM sur l'écriture de propositions, de prédicats ou d'ensembles.
+Voici quelques exercices sur l'écriture de propositions, de prédicats ou d'ensembles.
 
 == 
-title= QCM écriture
+title= ENSEMBLE
 
 @Ecriture_Ensembles.pl
 @Ecriture_Pair_Impair.pl
