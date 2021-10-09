@@ -2,6 +2,7 @@ extends = /model/AMC_TXT.pl
 title = Ecriture "Divise",  "Nombres Premiers" et "Nombres premiers entre eux" 
 questions==
 
+questions==
 
 ** Cochez les bonnes réponses. Ecrire en revenant aux éléments premiers du langage que l'entier $%a%$ divise l'entier $%b%$ .
 - $% a, b  \in \mathbb{N}  \quad a= k\times b %$
@@ -25,5 +26,5 @@ questions==
 + $% \\{ d \in \mathbb{N} \\; | \\; d | p \\} = \\{1, p\\} \quad  %$ et  $% \quad (p \ge 2) %$
 + $%(p \ge 2 )\quad  %$ et $%  \quad (\forall d \in \mathbb{N} \\; \mbox{ si } d | p, \\;  \mbox{ alors } \\; (d=1  \\; \mbox{ ou } \\; d=p))%$.
  
-
+==
 
