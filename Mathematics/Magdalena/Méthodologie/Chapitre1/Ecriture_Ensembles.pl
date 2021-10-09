@@ -14,14 +14,14 @@ questions==
 -  $% \\{ \forall n \in \mathbb{N} \\; |\\; n= k^2+p^2 \\; |\\; k, p \in \mathbb{N} \\}%$
 
 
-** Cochez les bonnes réponses. Ecrire formellement l'ensemble des entiers naturels pairs
+** Cochez les bonnes réponses. Ecrire formellement l'ensemble des nombres complexes de module 1. 
 
-- $% \\{n \in \mathbb{N} \quad  | \\;  \forall k \in \mathbb{N} \quad  n=2k \\}%$  
-- $% \\{ n \in \mathbb{N} \\;  | \\;  \exists k \in \mathbb{N} \quad  n=2k \\}%$
-- $% \\{n \in \mathbb{N} \\;  | \\;  \exists k \in \mathbb{N} \quad  2k \\}%$ 
-+ $% \\{2k \\; |\\; k \in \mathbb{N} \\}%$ 
-+ $%  \\{2n \\; |\\; n \in \mathbb{N} \\}%$ 
-- $% \\{ \forall n, k \in \mathbb{N} \\;  | \\;  n=2k \\}%$ 
++ $% \\{z \in \mathbb{C} \quad  | \\; |z|=1 \\}%$  
+- $% \\{ |z|=1 \\;  | \\;  z \in \mathbb{C}  \\}%$
++ $% \\{e^{i\theta}  \quad  | \theta \in \mathbb{R} \\}%$
+- $% \\{z   \\;   | \\; \exists i \in \mathbb{C} \exists x, y \in \mathbb{R} \\; \sqrt{x^2+y^2} =1 \\}%$
+- $% \\{z   \\;   | \\; \exists x, y \in \mathbb{R} \\; \sqrt{x^2+y^2} =1 \\}%$
++ $% \\{z   \\;   | \\; \exists x, y \in \mathbb{R} \\; z= x+iy \\;  \sqrt{x^2+y^2} =1 \\}%$
 
 ** Cochez les bonnes réponses. Ecrire formellement l'ensemble des entiers naturels impairs
 
