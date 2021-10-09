@@ -15,7 +15,7 @@ questions==
 
 ** Cochez les bonnes réponses. Ecrire formellement l'ensemble des entiers naturels pairs
 
-- $% \\{n \in \mathbb{N} \;  | \;  \forall k \in \mathbb{N} \quad  n=2k \\}%$ 
+- $% \\{n \in \mathbb{N} \quad  | \\;  \forall k \in \mathbb{N} \quad  n=2k \\}%$ 
 + $% \\{n \in \mathbb{N} \;  | \;  \exists k \in \mathbb{N} \quad  n=2k \\}%$ 
 - $% \\{ \forall n \in \mathbb{N} \;  | \;  \exists k \in \mathbb{N} \quad  n=2k \\}%$
 - $% \\{n \in \mathbb{N} \;  | \;  \exists k \in \mathbb{N} \quad  2k \\}%$ 
