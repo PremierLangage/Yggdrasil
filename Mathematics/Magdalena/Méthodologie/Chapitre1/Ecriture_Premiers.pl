@@ -1,5 +1,5 @@
 extends = /model/AMC_TXT.pl
-title = Ecriture "Divise",  "Nombres Premiers" et "Nombres premiers entre eux" 
+title = Ecriture "Divise",  "Nombres Premiers" et "Nombres premiers entre eux"  $!n \in \\{ 2k+1 \\; |\\;  k \in \mathbb{N} \\}!$
 questions==
 
 questions==
