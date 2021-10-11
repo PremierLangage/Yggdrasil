@@ -1,10 +1,11 @@
 extends = /model/basic/seltext.pl
 
 question ==
-Sélectionner dans ce texte les mots ou groupes de mots qui désignent Van Gogh.
+Sélectionner dans ce texte la première occurence d'une variable.
 ==
 
 seltext == 
+Soit {$!n!$} un entier naturel impair. Alors 
 En 1888, {Vincent Van Gogh} peint [«Nuit Etoilée»]. 
 Il est difficile de représenter [la nuit] [en couleurs].
 {L'artiste} installait [son chevalet] lorsque [la nuit] tombait.
