@@ -14,6 +14,8 @@ param.formulas % []
 
 jinja_keys = ["question", "text1", "text2", "solution", "input_prefix"]
 
+complex_form = cartesian
+
 before ==
 from sympy import conjugate
 
