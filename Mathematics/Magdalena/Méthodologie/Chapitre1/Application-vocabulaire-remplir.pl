@@ -15,5 +15,5 @@ Alors $!b!$ est {l'image de} $!a!$ par $!f!$ et $!a!$ est {un antécédent} de $
 ==
 
 labval ==
-L'unique antécédent
+ARB
 ==
