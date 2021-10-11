@@ -54,7 +54,7 @@ elif formula == "conjadd":
     expr = "\overline{z_1+ z_2}"
 elif formula == "addconj":
     sol = z1b+z2b
-    expr = "\overline{z_1+ z_2}"
+    expr = "\overline{z_1} + \overline{z_2}"
 elif formula == "z1b+z2":
     if randitem([1,2])==1:
         sol = z1b+z2
