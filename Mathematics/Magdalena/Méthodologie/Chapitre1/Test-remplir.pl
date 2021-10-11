@@ -1,6 +1,6 @@
 extends = /model/basic/filltext.pl
 
-title = Génétique
+title = Test-application
 
 text ==
 Compléter le texte suivante avec les bonnes étiquettes.
