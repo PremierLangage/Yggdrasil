@@ -9,7 +9,7 @@ questions==
 
 ** Cochez les bonnes réponses. Ecrire formellement l'ensemble des nombres qui s'écrivent comme la somme de deux carrés d'entiers.
 +  $% \\{n^2+p^2 \\; |\\; n, p \in \mathbb{N} \\}%$
-+  $% \\{ n \in \mathbb{N} \\; |\\; \exists  k, p \in \mathbb{N} \\; n=  k^2+p^2\\}%$
++  $% \\{ n \in \mathbb{N} \\; |\\; \exists  k, p \in \mathbb{N} \quad n=  k^2+p^2\\}%$
 -  $% \\{ n \in \mathbb{N} \\; |\\; k^2+p^2 \quad  k, p \in \mathbb{N} \\}%$
 -  $% \\{ \forall n \in \mathbb{N} \\; |\\; n= k^2+p^2 \quad k, p \in \mathbb{N} \\}%$
 
