@@ -5,6 +5,6 @@ Sélectionner dans ce texte la première occurence d'une variable à l'intérieu
 ==
 
 seltext == 
-Soit #{$!n!$}# un entier naturel impair. Alors $!n \in \\{ 2k+1 \\; |\\;  k \in \mathbb{N} \\}!$, il existe un entier #{$!k!$}# tel que 
+Soit #{$!n!$}# un entier naturel impair. Alors $!n \in \\{ 2k+1 \\; |\\;  k \in \mathbb{N} \\}!$, il existe donc un entier #{$!k!$}# tel que 
 
 ==
