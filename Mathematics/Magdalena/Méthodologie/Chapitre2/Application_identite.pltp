@@ -9,6 +9,7 @@ title= Application
 
 @Application_def.pl
 @Application_identite.pl
+@Application-vocabulaire-remplir.pl
 
 # on peut rajouter d'autres exercices 
 #@ un autre exo .pl 
