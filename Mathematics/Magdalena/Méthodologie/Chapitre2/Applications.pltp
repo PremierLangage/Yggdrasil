@@ -1,0 +1,20 @@
+introduction==
+
+Voici des exercices de vocabulaire et un test sur l'application identité.
+
+== 
+title= Application 
+
+@Application-vocabulaire-remplir.pl
+@Application_def.pl
+@Application_identite.pl
+
+
+# on peut rajouter d'autres exercices 
+#@ un autre exo .pl 
+
+
+
+
+
+
