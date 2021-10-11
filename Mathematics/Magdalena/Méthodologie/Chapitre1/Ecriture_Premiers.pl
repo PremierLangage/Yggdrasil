@@ -1,5 +1,5 @@
 extends = /model/AMC_TXT.pl
-title = Ecriture "Divise",  "Nombres Premiers" et "Nombres premiers entre eux"  $!n \in \\{ 2k+1 \\; |\\;  k \in \mathbb{N} \\}!$
+title = Ecriture "Divise",  "Nombres Premiers" et "Nombres premiers entre eux" 
 questions==
 
 questions==
@@ -10,6 +10,7 @@ questions==
 -  $% a, b  \in \mathbb{N}  \quad \exists k \in \mathbb{N} \quad  a= k\times b %$
 -  $% a, b  \in \mathbb{N}  \quad \forall k \in \mathbb{N} \quad  b= k\times a %$
 +  $% a, b  \in \mathbb{N}  \quad \exists k \in \mathbb{N} \quad  b= k\times a %$
+-  $!n \in \\{ 2k+1 \\; |\\;  k \in \mathbb{N} \\}!$
 
 
 ** Cochez les bonnes réponses. Ecrire formellement que les entier $%a%$  et $%b%$ sont premiers entre eux en utilisant le symbole divise $% | %$.
