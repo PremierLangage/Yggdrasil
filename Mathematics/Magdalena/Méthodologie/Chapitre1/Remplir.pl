@@ -5,4 +5,6 @@ Sélectionner dans ce texte la première occurence d'une variable à l'intérieu
 ==
 
 seltext == 
-Soit {$!n!$} un entier naturel impair. Alors {$!n!$}
+Soit {$!n!$} un entier naturel impair. Alors $!k!$
+
+==
