@@ -16,7 +16,7 @@
 
 extends=/ComputerScience/C/template/std_progC17_clang.pl
 
-title=Compter les lignes d'un fichier
+title=Compter le nombre de lignes d'un fichier
 
 tag=fichier|programme|lignes
 
