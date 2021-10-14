@@ -61,7 +61,7 @@ solution==#|c|
 int main(int argc, char* argv[]){
   FILE* f=fopen(argv[1], "r");
   int c;
-  int nb_ligne=1;
+  int nb_ligne=0;
   while ((c = fgetc(f)) != EOF)
     if (c == '\n')
       nb_ligne++;
