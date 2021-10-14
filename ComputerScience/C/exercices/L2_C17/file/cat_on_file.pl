@@ -67,7 +67,8 @@ code_after==#|c|
 ==
 
 checks_args_stdin==#|python|
-[ ["Simple éxécution", ["f1.txt"], ""] ]
+[ ["Simple éxécution", ["f1.txt"], ""],
+  ["Simple éxécution", [choice(["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt"])], ""] ]
 ==
 
 astuces==#|python|
