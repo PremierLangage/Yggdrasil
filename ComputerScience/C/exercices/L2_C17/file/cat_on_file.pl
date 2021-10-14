@@ -51,7 +51,14 @@ solution==#|c|
 #include <stdio.h>
 
 int main(int argc, char* argv){
-  // Votre code ici 
+  FILE* f=fopen(argv[1], "r");
+  char c;
+
+  while ((c = fgetc(f)) != EOF)
+    putchar(c);
+
+  fclose(f);
+  return 0;
 }
 ==
 
