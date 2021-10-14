@@ -10,8 +10,8 @@ n = 4 # Ordre du DL
 
 
 S = [-x,x**2,-x**2,x**3,-x**3,x**4,-x**4]
-Rand = randitem(S)
-a = randitem([i for i in range(1,5)])
+Rand = choice(S)
+a = choice([i for i in range(1,5)])
 P = a*Rand
 
 f1=1/(1+P)
@@ -19,7 +19,7 @@ f2=1/(1-P)
 
 
 S1 = [exp(P),ln(1+P),ln(1-P),cos(P),sin(P),f1,f2]
-Q = randitem(S1)
+Q = choice(S1)
 
 PQ = Q
 
