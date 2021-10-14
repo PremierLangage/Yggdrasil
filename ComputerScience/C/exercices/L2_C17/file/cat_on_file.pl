@@ -36,6 +36,8 @@ fichier positionné dans le répertoire courrant et dont vous aurez les
 droits de lecture dessus. Votre programme devra ouvrir ce fichier, le 
 lire et afficher le contenu lu sur la sortie standard (afficher sur 
 l'écran dans le terminal avec printf par exemple...).
+
+
 ==
 
 code_before==#|c|
