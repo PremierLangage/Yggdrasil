@@ -42,6 +42,7 @@ Il faudra retourner à la ligne juste après le nombre entier sans espace superf
 Même si le fichier contient 0 ou 1 ligne, on ne supprimera pas le `s` du mot 
 `lignes` par soucis de simplicité.
 
+
 ==
 
 code_before==#|c|
