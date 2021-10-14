@@ -83,7 +83,7 @@ int main(int argc, char* argv[]){
   int nb_long = 0;
 
   while (fscanf(f, " %s", mot) == 1)
-    if (strlen(mot) > mot)
+    if (strlen(mot) > strlen(max))
       strcpy(max, mot)
   fclose(f);
   return 0;
