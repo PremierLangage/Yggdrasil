@@ -39,7 +39,7 @@ fichier en argument comme il suit :
     Nombre de lignes du fichier : xxxx
 
 Il faudra retourner à la ligne juste après le nombre entier sans espace superflu.
-Même si le fichier contient 0 ou 1 ligne, on ne supprimera pas le `s` du mot 
+Même si le fichier contient 0 ou 1 ligne, on ne supprimera pas le `s` final du mot 
 `lignes` par soucis de simplicité.
 
 
