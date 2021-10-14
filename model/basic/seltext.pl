@@ -52,8 +52,15 @@ inputblock ==
 evaluator ==
 import re
 
+a = "\["
+b = "\]"
+c = "\{"
+d = "\}"
+e = "#"
+s = f"{a}[^{a}{b}]*{b}|{c}[^{c}{d}]*{d}|[^{a}{b}{c}{d}{e}]+"
+
 def visual_grading(string, ans, sol):
-    lst = re.findall(r"\[[^\[\]]*\]|\{[^\{\}]*\}|[^\[\]\{\}#]+", string)
+    lst = re.findall(s, string)
     k=0
     for i in range(len(lst)):
         s=lst[i]
