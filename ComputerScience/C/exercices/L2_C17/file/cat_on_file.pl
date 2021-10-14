@@ -32,10 +32,10 @@ editor.height=300px
 
 text==#|markdown|
 Écrire un programme C qui prend un argument qui sera toujours le nom d'un 
-fichier positionné dans le répertoire courrant et dont vous aurez les 
-droits de lecture dessus. Votre programme devra ouvrir ce fichier, le 
-lire et afficher le contenu lu sur la sortie standard (afficher sur 
-l'écran dans le terminal avec printf par exemple...).
+fichier positionné dans le répertoire courrant et sur dont vous aurez les 
+droits de lecture. Votre programme devra ouvrir ce fichier, le 
+lire et afficher son contenu sur la sortie standard (c'est à dire afficher 
+à l'écran comme avec printf par exemple).
 
 
 ==
