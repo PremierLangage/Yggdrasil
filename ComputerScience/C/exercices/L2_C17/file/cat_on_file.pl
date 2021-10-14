@@ -54,7 +54,7 @@ solution==#|c|
 
 int main(int argc, char* argv[]){
   FILE* f=fopen(argv[1], "r");
-  char c;
+  int c;
   while ((c = fgetc(f)) != EOF)
     putchar(c);
   fclose(f);
@@ -72,9 +72,9 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """`int are_equal_tab(int t1[],int t2[], int size)` est un bon choix de prototype."""},
-  { "content": """Une seule variable locale une bonne boucle `for` doivent suffire."""},
-  { "content": """Il faut faire tourner une boucle de `0` inclus à `size` exclus et faire un test entre les deux valeurs à cet indice pour les deux tableaux. En cas de différence, on renvoie directement `0`. Si à la fin de la boucle, toutes les valeurs étaient égales deux à deux, alors il faut retourner `1`."""}
+  { "content": """La première étape consiste à ouvrir le fichier dont le nom est dans `argv[1]`. Il faudra ouvrir ce fichier en mode lecture `"r"`."""},
+  { "content": """La stratégie consiste à lire le fichier caractère par caractère tant que l'on atteint pas le caractère de fin de fichier EOF."""},
+  { "content": """Pour code cette fonction, on peut facilement utiliser `fopen`, `fgetc`, `putchar` et `fclose`. Deux variables locales peuvent suffire : un entier pour stocker le caractère"""}
 ]
 ==
 
