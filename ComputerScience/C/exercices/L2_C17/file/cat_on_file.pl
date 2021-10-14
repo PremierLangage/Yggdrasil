@@ -22,6 +22,8 @@ tag=fichier|programme|affichage
 
 author=Nicolas Borie
 
+editor.height=300px
+
 @f1.txt
 @f2.txt
 @f3.txt
