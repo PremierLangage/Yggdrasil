@@ -106,7 +106,7 @@ astuces==#|python|
 [
   { "content": """La première étape consiste à ouvrir le fichier dont le nom est dans `argv[1]`. Il faudra ouvrir ce fichier en mode lecture en utilisant donc un second argument `"r"`."""},
   { "content": """La stratégie consiste à lire le fichier mot par mot tant que `fscnaf(fichier_ouvert, " %s", ...) == 1` (ce qui signifie tant que l'on lit un mot valide)."""},
-  { "content": """Il faut utiliser `strlen` et `strcpy` de `<string.h>` ainsi que deux variables locales de types `char[MAX]`. Une des deux chaînes stockera le mot courrant lu et l'autre sauvegardera le mot maximal."""}
+  { "content": """Il faut utiliser `strlen` et `strcpy` de `<string.h>` ainsi que deux variables locales de types `char[MAX]`. Une des deux chaînes stockera le mot courrant lu et l'autre sauvegardera le mot de longueur maximal."""}
 ]
 ==
 
