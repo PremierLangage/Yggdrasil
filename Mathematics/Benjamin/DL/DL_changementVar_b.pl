@@ -1,6 +1,6 @@
 # Author : C. Petitjean.
 
-extends = /model/math/mathinput.pl
+extends = /model/math/input.pl
 
 title = Développement limité et changement de variable.
 
