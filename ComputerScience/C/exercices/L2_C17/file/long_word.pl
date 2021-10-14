@@ -80,7 +80,6 @@ int main(int argc, char* argv[]){
   mot[0] = '\0';
   max[0] = '\0';
   FILE* f=fopen(argv[1], "r");
-  int nb_long = 0;
 
   while (fscanf(f, " %s", mot) == 1)
     if (strlen(mot) > strlen(max))
