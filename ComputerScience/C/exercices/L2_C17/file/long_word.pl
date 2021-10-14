@@ -82,7 +82,7 @@ int main(int argc, char* argv[]){
   FILE* f=fopen(argv[1], "r");
   int nb_long = 0;
 
-  while (fscanf(" %s", mot) == 1)
+  while (fscanf(f, " %s", mot) == 1)
     if (strlen(mot) > mot)
       strcpy(max, mot)
   fclose(f);
