@@ -50,7 +50,7 @@ int main(int argc, char* argv){
 solution==#|c|
 #include <stdio.h>
 
-int main(int argc, char* argv){
+int main(int argc, char* argv[]){
   FILE* f=fopen(argv[1], "r");
   char c;
 
