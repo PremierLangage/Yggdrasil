@@ -86,8 +86,8 @@ checks_args_stdin==#|python|
 astuces==#|python|
 [
   { "content": """La première étape consiste à ouvrir le fichier dont le nom est dans `argv[1]`. Il faudra ouvrir ce fichier en mode lecture en utilisant donc un second argument `"r"`."""},
-  { "content": """La stratégie consiste à lire le fichier caractère par caractère tant que l'on atteint pas le caractère de fin de fichier EOF."""},
-  { "content": """Pour code cette fonction, on peut facilement utiliser `fopen`, `fgetc`, `putchar` et `fclose`. Deux variables locales peuvent suffire : un entier pour stocker le caractère et une variable de type `FILE*`."""}
+  { "content": """La stratégie consiste à lire le fichier caractère par caractère tant que l'on atteint pas le caractère de fin de fichier EOF. Il y a autant de ligne que de retour à la ligne."""},
+  { "content": """Pour code cette fonction, on peut facilement utiliser `fopen`, `fgetc` et `fclose`. Trois variables locales peuvent suffire : un entier pour stocker le caractère, un entier pour accumuler le nombre d'occuence de '\n' et une variable de type `FILE*`."""}
 ]
 ==
 
