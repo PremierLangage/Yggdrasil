@@ -70,15 +70,20 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[ ["Simple éxécution 1", ["", 0], ""],
-  ["Simple éxécution 2", ["Bonjour", 1], ""], ]
+[ ["Ne rien écrire", ["", 0], ""],
+  ["Éxécution simple", ["Bonjour", 1], ""],
+  ["Deux fois", ["Le chocolat de Poulain est deux fois plus crémeux.", 2], ""],
+  ["Trois fois", ["Et jamais deux sans trois.", 3], ""],
+  ["Cinq fois", ["Je vous reçois 5 sur 5.", 5], ""],
+  ["Trop de fois", ["Bon, on va regarder K2000.", 154], ""],
+  ["Test aléatoire", [choice(["Pierre", "Paul", "Jacques", "Martin", "Jacky", "John", "Herbert"]), randint(5,15)], ""] ]
 ==
 
 astuces==#|python|
 [
-  { "content": """La première étape consiste à ouvrir le fichier dont le nom est dans `argv[1]`. Il faudra ouvrir ce fichier en mode lecture en utilisant donc un second argument `"r"`."""},
-  { "content": """La stratégie consiste à lire le fichier mot par mot tant que `fscnaf(fichier_ouvert, " %s", ...) == 1` (ce qui signifie tant que l'on lit un mot valide)."""},
-  { "content": """Il faut utiliser `strlen` et `strcpy` de `<string.h>` ainsi que deux variables locales de types `char[MAX]`. Une des deux chaînes stockera le mot courrant lu et l'autre sauvegardera le mot de longueur maximal."""}
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""}
 ]
 ==
 
