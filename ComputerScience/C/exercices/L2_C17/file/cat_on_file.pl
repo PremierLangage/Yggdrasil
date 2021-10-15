@@ -47,7 +47,7 @@ code_before==#|c|
 editor.code==#|c|
 #include <stdio.h>
 
-int main(int argc, char* argv){
+int main(int argc, char* argv[]){
   // Votre code ici 
 }
 ==
