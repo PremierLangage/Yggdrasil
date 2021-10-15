@@ -30,6 +30,8 @@ editor.height=300px
 @f4.txt
 @f5.txt
 @f6.txt
+@titi
+@toto
 
 text==#|markdown|
 Écrire un programme C qui prend un argument qui sera toujours le nom d'un 
