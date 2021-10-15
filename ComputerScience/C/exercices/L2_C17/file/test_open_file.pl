@@ -70,10 +70,11 @@ int main(int argc, char* argv[]){
   for (i=1 ; i<argc ; i++){
     f = fopen(argv[i], "r");
     if (f == NULL){
-      printf("L'ouverture du ficher3 a échouée.", );
+      printf("L'ouverture du fichier %s a échouée.\n", argv[i]);
     }
     else{
-
+      fclose(f);
+      printf("Le fichier %s a bien été ouvert.\n", argv[i]);
     }
   }
 
