@@ -39,11 +39,13 @@ situés dans le répertoire courant de travail. le but de cet exercice est de te
 d'ouvrir ces fichiers en mode lecture et de faire un affichage, fichier par fichier, 
 pour rendre compte de la possibilité de les ouvrir ou pas.
 
+
     $> ./a.out ficher1 fichier2 fichier3 fichier4
     Le fichier ficher1 a bien été ouvert.
     Le fichier ficher2 a bien été ouvert.
     L'ouverture du fichier ficher3 a échouée.
     Le fichier ficher4 a bien été ouvert.
+
 
 N'oubliez pas de fermer les fichiers après les avoir ouvert.
 
