@@ -29,6 +29,9 @@ editor.height=300px
 @f3.txt
 @f4.txt
 @f5.txt
+@f6.txt
+@titi
+@toto
 
 text==#|markdown|
 Écrire un programme C qui prend un argument qui sera toujours le nom d'un 
@@ -97,9 +100,10 @@ code_after==#|c|
 
 checks_args_stdin==#|python|
 [ ["Simple éxécution", ["f1.txt"], ""],
-  ["Test aléatoire 1", [choice(["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt"])], ""],
-  ["Test aléatoire 2", [choice(["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt"])], ""],
-  ["Test aléatoire 3", [choice(["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt"])], ""] ]
+  ["Fichier vide", ["f3.txt"], ""],
+  ["Test aléatoire 1", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""],
+  ["Test aléatoire 2", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""],
+  ["Test aléatoire 3", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""] ]
 ==
 
 astuces==#|python|
