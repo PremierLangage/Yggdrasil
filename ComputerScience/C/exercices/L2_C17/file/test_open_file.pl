@@ -29,6 +29,9 @@ editor.height=300px
 @f3.txt
 @f4.txt
 @f5.txt
+@f6.txt
+@titi
+@toto
 
 text==#|markdown|
 Écrire un programme C dont les arguments seront des noms de fichiers potentiellement
@@ -70,7 +73,7 @@ int main(int argc, char* argv[]){
 
     }
     else{
-        
+
     }
   }
 
