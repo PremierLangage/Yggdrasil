@@ -47,6 +47,7 @@ pour rendre compte de la possibilité de les ouvrir ou pas.
 
 N'oubliez pas de fermer les fichiers après les avoir ouvert.
 
+
 ==
 
 code_before==#|c|
