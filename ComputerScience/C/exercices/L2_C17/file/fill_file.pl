@@ -56,10 +56,14 @@ void fill_file(FILE* f, char* s, int times){
 
 code_after==#|c|
 int main(int argc, char* argv[]){
+  int c;
   FILE* f = fopen("pouet", "w");
-
   fill_file(f, argv[1], atoi(argv[2]));
-
+  fclose(f);
+  f = fopen("pouet", "r");
+  while ((c = fgetc(f)) != EOF)
+    putchar(c);
+  fclose(f);
   return 0;
 }
 ==
