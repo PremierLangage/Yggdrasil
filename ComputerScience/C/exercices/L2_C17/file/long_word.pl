@@ -67,7 +67,7 @@ editor.code==#|c|
 #include <string.h>
 #define MAX 256
 
-int main(int argc, char* argv){
+int main(int argc, char* argv[]){
   char mot[MAX];
   // Votre code ici 
 }
