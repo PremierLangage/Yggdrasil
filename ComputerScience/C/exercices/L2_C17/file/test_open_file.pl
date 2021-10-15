@@ -90,9 +90,9 @@ checks_args_stdin==#|python|
 [ ["Sans argument", [], ""],
   ["Un fichier ouvrable", ["toto"], ""],
   ["Un fichier qui n'existe pas", ["tata"], ""],
-  ["Test aléatoire 1", sample(["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt", "titi", "toto", "tata", "f6.txt", "f7.txt", "perdu"], randint(1, 7)), ""],
-  ["Test aléatoire 2", sample(["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt", "titi", "toto", "tata", "f6.txt", "f7.txt", "perdu"], randint(1, 7)), ""],
-  ["Test aléatoire 3", sample(["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt", "titi", "toto", "tata", "f6.txt", "f7.txt", "perdu"], randint(1, 7)), ""], ]
+  ["Test aléatoire 1", sample(["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt", "titi", "toto", "tata", "f6.txt", "f7.txt", "perdu", "JACK", "cpuinfo"], randint(1, 7)), ""],
+  ["Test aléatoire 2", sample(["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt", "titi", "toto", "tata", "f6.txt", "f7.txt", "perdu", "pouet", "plop"], randint(1, 7)), ""],
+  ["Test aléatoire 3", sample(["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt", "titi", "toto", "tata", "f6.txt", "f7.txt", "perdu", "f8.txt", "f11.txt"], randint(1, 7)), ""], ]
 ==
 
 astuces==#|python|
