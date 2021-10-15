@@ -27,7 +27,10 @@ editor.height=300px
 
 
 text==#|markdown|
-
+Écrire une fonction **fill_file** qui prend en paramètre un flux ouvert,
+une chaîne de caractères C ainsi qu'un entier **times**. Votre fonction 
+devra écrire **times** fois la chaine dans le ficher en allant à la ligne 
+après chaque occurence.
 
 
 ==
@@ -81,9 +84,9 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """La fonction peut s'écrire en 2 lignes après avoir déclaré une variable locale entière."""},
+  { "content": """Il suffira de mettre une écriture sur fichier dans une boucle `for`."""},
+  { "content": """`fprintf` avec le format `"%s\n"` utilisé correctement devrait vous permettre facilement de faire l'écriture sur fichier."""}
 ]
 ==
 
