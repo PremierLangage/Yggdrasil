@@ -1,4 +1,3 @@
-
 #*****************************************************************************
 #  Copyright (C) 2021 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
