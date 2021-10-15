@@ -70,13 +70,13 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[ ["Ne rien écrire", ["", 0], ""],
-  ["Éxécution simple", ["Bonjour", 1], ""],
-  ["Deux fois", ["Le chocolat de Poulain est deux fois plus crémeux.", 2], ""],
-  ["Trois fois", ["Et jamais deux sans trois.", 3], ""],
-  ["Cinq fois", ["Je vous reçois 5 sur 5.", 5], ""],
-  ["Trop de fois", ["Bon, on va regarder K2000.", 154], ""],
-  ["Test aléatoire", [choice(["Pierre", "Paul", "Jacques", "Martin", "Jacky", "John", "Herbert"]), randint(5,15)], ""] ]
+[ ["Ne rien écrire", ["", "0"], ""],
+  ["Éxécution simple", ["Bonjour", "1"], ""],
+  ["Deux fois", ["Le chocolat de Poulain est deux fois plus crémeux.", "2"], ""],
+  ["Trois fois", ["Et jamais deux sans trois.", "3"], ""],
+  ["Cinq fois", ["Je vous reçois 5 sur 5.", "5"], ""],
+  ["Trop de fois", ["Bon, on va regarder K2000.", "154"], ""],
+  ["Test aléatoire", [choice(["Pierre", "Paul", "Jacques", "Martin", "Jacky", "John", "Herbert"]), str(randint(5,15))], ""] ]
 ==
 
 astuces==#|python|
