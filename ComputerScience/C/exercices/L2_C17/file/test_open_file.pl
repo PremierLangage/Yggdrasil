@@ -40,7 +40,7 @@ d'ouvrir ces fichiers en mode lecture et de faire un affichage, fichier par fich
 pour rendre compte de la possibilité de les ouvrir ou pas.
 
 
-    :~$ ./a.out ficher1 fichier2 fichier3 fichier4
+    platus@sacapus:~$ ./a.out ficher1 fichier2 fichier3 fichier4
     Le fichier ficher1 a bien été ouvert.
     Le fichier ficher2 a bien été ouvert.
     L'ouverture du fichier ficher3 a échouée.
