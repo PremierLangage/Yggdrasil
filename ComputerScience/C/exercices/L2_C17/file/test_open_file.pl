@@ -47,7 +47,7 @@ pour rendre compte de la possibilité de les ouvrir ou pas.
     Le fichier ficher4 a bien été ouvert.
 
 
-N'oubliez pas de fermer les fichiers après les avoir ouvert.
+N'oubliez pas de fermer les fichiers lorsque l'ouverture a bien été effective.
 
 
 ==
