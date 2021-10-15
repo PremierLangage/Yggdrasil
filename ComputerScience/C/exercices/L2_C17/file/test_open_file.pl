@@ -77,7 +77,6 @@ int main(int argc, char* argv[]){
       printf("Le fichier %s a bien été ouvert.\n", argv[i]);
     }
   }
-
   return 0;
 }
 ==
@@ -87,10 +86,10 @@ code_after==#|c|
 ==
 
 checks_args_stdin==#|python|
-[ ["Simple éxécution", ["f1.txt"], ""],
-  ["Test aléatoire 1", [choice(["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt"])], ""],
-  ["Test aléatoire 2", [choice(["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt"])], ""],
-  ["Test aléatoire 3", [choice(["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt"])], ""] ]
+[ ["Sans argument", [], ""],
+  ["Un fichier ouvrable", ["toto"], ""],
+  ["Un fichier qui n'existe pas", ["tata"], ""],
+  ["Test aléatoire 1", [sample(["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt", "titi", "toto", "tata", "f6.txt", "f7.txt", "perdu"], randint(1, 7))], ""] ]
 ==
 
 astuces==#|python|
