@@ -90,8 +90,7 @@ checks_args_stdin==#|python|
 [ ["Sans argument", [], ""],
   ["Un fichier ouvrable", ["toto"], ""],
   ["Un fichier qui n'existe pas", ["tata"], ""],
-  #["Test aléatoire 1", [sample(["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt", "titi", "toto", "tata", "f6.txt", "f7.txt", "perdu"], randint(1, 7))], ""] ]
-  ]
+  ["Test aléatoire 1", [sample(["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt", "titi", "toto", "tata", "f6.txt", "f7.txt", "perdu"], randint(1, 7))], ""] ]
 ==
 
 astuces==#|python|
