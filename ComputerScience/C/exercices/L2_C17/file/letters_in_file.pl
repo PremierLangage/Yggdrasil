@@ -54,7 +54,7 @@ code_before==#|c|
 editor.code==#|c|
 #include <stdio.h>
 
-void fill_file(FILE* f, char* s, int times){
+void letter_file(FILE* f){
   // Votre code ici...
 }
 ==
@@ -62,11 +62,22 @@ void fill_file(FILE* f, char* s, int times){
 solution==#|c|
 #include <stdio.h>
 
-void fill_file(FILE* f, char* s, int times){
-  int i;
+void letter_file(FILE* f){
+  int occ[26] = {0};
+  int c;
+  int tot=0;
 
-  for (i=0 ; i<times ; i++)
-    fprintf(f, "%s\n", s);
+  while ((c = fgetc(f)) != EOF){
+    if (c >= 'a' && c <= 'z'){
+      occ[c-'a']++;
+      tot++;
+    }
+  }
+  for (c='a' ; c<='z' ; c++){
+    if (occ[c])
+      printf("%c: %5.2g", c, ((float)occ[c])/tot);
+  }
+
 }
 ==
 
