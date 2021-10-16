@@ -48,6 +48,9 @@ Il faudra afficher :
     a: 50.00%
     e: 50.00%
 
+Pour faire un affichage formaté propre, utiliser `printf` avec le format suivant :
+`"%c: %5.2f%%\n"` (le floatant est sur 5 colonnes avec 2 chiffres après la virgule.)
+
 On affichera seulement les lignes pour lesquelles la proportion est non nulle. Si 
 toutes les lettres minuscules apparaissent, alors on affichera 26 lignes, une pour 
 chacune des lettres de l'alphabet latin.
