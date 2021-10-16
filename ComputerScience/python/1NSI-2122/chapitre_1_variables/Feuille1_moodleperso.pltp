@@ -1,0 +1,98 @@
+title= Nommage Variables Input Affectation Conditionnelles 
+
+introduction==
+
+Bonjour,
+ceci est votre première feuille d'exercices à faire en autonomie.
+
+Tous les exercices doivent être verts une fois que vous avez fini !
+
+Certains exercices peuvent être fait plusieurs fois, si vous en avez besoin c'est une bonne idée de les faire plusieurs fois.
+
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+ mais vous pouvez naviguer avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et passer à l'exercice suivant. 
+
+    Votre cours est votre première source d'information ....
+
+
+
+
+
+==
+
+#### Manipulation des variables ####
+
+@/ComputerScience/python/1NSI-2122/chapitre_1_variables/variable002-2122.pl
+
+@/ComputerScience/python/1NSI-2122/chapitre_1_variables/variable003-2122.pl
+
+@/ComputerScience/python/1NSI-2122/chapitre_1_variables/initialisation-2122.pl
+
+@/ComputerScience/python/1NSI-2122/chapitre_1_variables/echange_deux_variables-2122.pl
+
+#Ne fonctionne pas
+#@/ComputerScience/python/1NSI-2122/chapitre_1_variables/expressionaleatoires-2122.pl
+
+#### Compréhension des expressions ####
+
+#Ne fonctionne pas
+#@/ComputerScience/python/1NSI-2122/chapitre_1_variables/priority-2122.pl
+
+#Ne fonctionne pas
+#@/ComputerScience/python/1NSI-2122/chapitre_1_variables/operateursbooleens-2122.pl
+
+@/ComputerScience/python/1NSI-2122/chapitre_1_variables/occure-int-2122.pl
+
+@/ComputerScience/python/1NSI-2122/chapitre_1_variables/bascule-2122.pl
+
+@/ComputerScience/python/1NSI-2122/chapitre_1_variables/deux-divisions-2122.pl
+
+@/ComputerScience/python/1NSI-2122/chapitre_1_variables/intstr-2122.pl
+
+#@/ComputerScience/python/1NSI-2122/chapitre_1_variables/occure-2122.pl
+
+#### Applications simple ###
+
+@/ComputerScience/python/1NSI-2122/chapitre_1_variables/rectanglefixe-2122.pl
+
+@/ComputerScience/python/1NSI-2122/chapitre_1_variables/rectangle-2122.pl
+
+@/ComputerScience/python/1NSI-2122/chapitre_1_variables/rectanglediagonale-2122.pl
+
+#@/ComputerScience/python/1NSI-2122/chapitre_1_variables/convertirMPG_2122.pl
+
+@/ComputerScience/python/1NSI-2122/chapitre_1_variables/plusmoins-2122.pl
+
+@/ComputerScience/python/1NSI-2122/chapitre_1_variables/aleaagecap-2122.pl
+
+#### Lourd ###
+
+#@/ComputerScience/python/AP1-2021/chapitre1/trinome-2021.pl
+
+#@/ComputerScience/python/AP1-2021/chapitre1/tri_trois_valeurs-2021.pl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
