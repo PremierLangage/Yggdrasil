@@ -16,14 +16,15 @@
 
 author=Prog C L2 Team
 
-title=Manipulation de fichier
+title=Manipulations de fichier
 
 introduction==
 Voici quelques exercices portant sur la maniupaltion de fichier avec le 
 langage C.
 
 Outre quelques fonctions d'entrées/sorties, `fopen` et `fclose` seront donc 
-vos meilleurs amis pour cette salve d'exercices.
+vos meilleurs amis pour cette salve d'exercices. Il faudra aussi opérer des 
+lectures et des écritures dans les fichiers ouverts.
 ==
 
 @ /ComputerScience/C/exercices/L2_C17/file/cat_on_file.pl
