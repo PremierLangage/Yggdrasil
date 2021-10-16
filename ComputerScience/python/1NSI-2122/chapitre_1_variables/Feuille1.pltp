@@ -28,8 +28,6 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 
 #### Manipulation des variables ####
 
-@/ComputerScience/python/1NSI-2122/chapitre_1_variables/aleaagecap-2122.pl
-
 @/ComputerScience/python/1NSI-2122/chapitre_1_variables/variable002-2122.pl
 
 @/ComputerScience/python/1NSI-2122/chapitre_1_variables/variable003-2122.pl
@@ -55,7 +53,7 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 
 @/ComputerScience/python/1NSI-2122/chapitre_1_variables/intstr-2122.pl
 
-@/ComputerScience/python/1NSI-2122/chapitre_1_variables/occure-2122.pl
+#@/ComputerScience/python/1NSI-2122/chapitre_1_variables/occure-2122.pl
 
 #### Applications simple ###
 
@@ -65,7 +63,7 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 
 @/ComputerScience/python/1NSI-2122/chapitre_1_variables/rectanglediagonale-2122.pl
 
-@/ComputerScience/python/1NSI-2122/chapitre_1_variables/convertirMPG_2122.pl
+#@/ComputerScience/python/1NSI-2122/chapitre_1_variables/convertirMPG_2122.pl
 
 @/ComputerScience/python/1NSI-2122/chapitre_1_variables/plusmoins-2122.pl
 
