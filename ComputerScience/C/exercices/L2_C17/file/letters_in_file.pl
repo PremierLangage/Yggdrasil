@@ -77,7 +77,6 @@ void letter_file(FILE* f){
     if (occ[c])
       printf("%c: %5.2g", c, ((float)occ[c])/tot);
   }
-
 }
 ==
 
