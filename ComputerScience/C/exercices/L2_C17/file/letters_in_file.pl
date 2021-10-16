@@ -83,7 +83,7 @@ void letter_file(FILE* f){
   }
   for (c='a' ; c<='z' ; c++){
     if (occ[c-'a'])
-      printf("%c: %5.2f\n", c, (100.0*occ[c])/tot);
+      printf("%c: %5.2f\n", c, (100.0*occ[c-'a'])/tot);
   }
 }
 ==
@@ -92,6 +92,7 @@ code_after==#|c|
 int main(int argc, char* argv[]){
   FILE* f = fopen(argv[1], "r");
   letter_file(f);
+  fclose(f);
   return 0;
 }
 ==
