@@ -90,14 +90,8 @@ void letter_file(FILE* f){
 
 code_after==#|c|
 int main(int argc, char* argv[]){
-  int c;
-  FILE* f = fopen("pouet", "w");
-  fill_file(f, argv[1], atoi(argv[2]));
-  fclose(f);
-  f = fopen("pouet", "r");
-  while ((c = fgetc(f)) != EOF)
-    putchar(c);
-  fclose(f);
+  FILE* f = fopen(argv[1], "r");
+  letter_file(f);
   return 0;
 }
 ==
