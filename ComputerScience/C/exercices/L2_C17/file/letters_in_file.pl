@@ -24,6 +24,14 @@ author=Nicolas Borie
 
 editor.height=300px
 
+@f1.txt
+@f2.txt
+@f3.txt
+@f4.txt
+@f5.txt
+@f6.txt
+@titi
+@toto
 
 text==#|markdown|
 Écrire une fonction qui prend en argument un fichier ouvert et qui fait un résumé 
@@ -95,20 +103,18 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[ ["Ne rien écrire", ["", "0"], ""],
-  ["Éxécution simple", ["Bonjour", "1"], ""],
-  ["Deux fois", ["Le chocolat de Poulain est deux fois plus crémeux.", "2"], ""],
-  ["Trois fois", ["Et jamais deux sans trois.", "3"], ""],
-  ["Cinq fois", ["Je vous reçois 5 sur 5.", "5"], ""],
-  ["Trop de fois", ["Bon, on va regarder K2000.", "154"], ""],
-  ["Test aléatoire", [choice(["Pierre", "Paul", "Jacques", "Martin", "Jacky", "John", "Herbert"]), str(randint(5,15))], ""] ]
+[ ["Simple éxécution", ["f1.txt"], ""],
+  ["Fichier vide", ["f3.txt"], ""],
+  ["Test aléatoire 1", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""],
+  ["Test aléatoire 2", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""],
+  ["Test aléatoire 3", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""] ]
 ==
 
 astuces==#|python|
 [
-  { "content": """La fonction peut s'écrire en 2 lignes après avoir déclaré une variable locale entière."""},
-  { "content": """Il suffira de mettre une écriture sur fichier dans une boucle `for`."""},
-  { "content": """`fprintf` avec le format `"%s\n"` utilisé correctement devrait vous permettre facilement de faire l'écriture sur fichier."""}
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""}
 ]
 ==
 
