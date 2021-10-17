@@ -110,9 +110,9 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Pour stocker l'information sur les occurences, il faut une variable locale de type tableau d'entier de taille 26 au minimum dont les cases seront initialisées à zéro."""},
+  { "content": """Le plus simple est ensuite de lire le fichier char par char et lorsque le char lu est une lettre minuscule (donc `>= 'a'` et `<= 'z'`), il faut mettre a jour une valeur du tableau des occurences ainsi que rajouter 1 sur le nombre total de lettres minuscules lues."""},
+  { "content": """L'affichage final doit se faire avec `printf("%c: %5.2f%%\n", ...);` sinon vous n'afficherez pas exactement ce qui sera attendu. Cet affichage devra être dans une boucle `for` (qui pourra aller de `'a'` à `'z'`) où l'afficage est déclanché seulement si on a lu au moins une occurence de la lettre."""}
 ]
 ==
 
