@@ -1,0 +1,59 @@
+
+title= Feuille d'exercice sur les boucles 
+
+introduction==
+
+Bonjour,
+ceci est votre deuxième feuille de TP à faire en autonomie.
+
+Tous les exercices doivent être verts une fois que vous avez fini !
+
+Certains exercices peuvent être fait plusieurs fois, si vous en avez besoin c'est une bonne idée de les faire plusieurs fois.
+
+Ils sont indiqués avec le mot répétable dans le titre cela veut dire qu'une fois que vous avez fait l'exercice correctement vous pouvez demander que l'on relance les dés.
+Cela produira un "nouvel" exercice avec des conditions légèrement modifiées.
+
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant, mais vous pouvez aussi naviger avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide sur le forum d'entraide et passer à l'exercice suivant. 
+
+*Rappel : Votre cours est toujours votre première source d'information ...*
+
+==
+
+# Exercice avec des boucles for 
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/boucle-qui-compte-de-0-a-nb-moins-1-2021.pl
+
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/boucle-qui-compte-de-1-a-nb-2021.pl
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/dynafor-2021.pl
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/dynafor1-2021.pl
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/dynafor2-2021.pl
+
+
+# @ /ComputerScience/python/AP1-1920/drafts/OCE/Suite_raison_aleatoire.pl
+# @ /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/exercises/boucles/suite-geometrique.pl
+# @ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/suite-geometrique.pl
+# Faire une boucle croissante 
+# @ /ComputerScience/python/AP1-1920/drafts/zip/boucle1/bouclecroissant.pl
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/bouclecroissant.pl
+
+# Faire une boucle diviser 
+# @ /ComputerScience/python/AP1-1920/drafts/zip/boucle1/boucledivise.pl
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/boucledivise.pl
+
+
+
+# Faire une boucle avec des if
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/boucleif.pl
+
+# Faire une boucle avec des chaines de caractères 
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/bouclestr.pl
+
+# Exercice avec des boucles while
+# @ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/dynawhile.pl
+# @ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/syracuse.pl
+
+# Exercice sur les boucles répétable sans taboo #
+#  @  /ComputerScience/python/1NSI-2122/chapitre_3_boucles/loop_exo.pl
+
