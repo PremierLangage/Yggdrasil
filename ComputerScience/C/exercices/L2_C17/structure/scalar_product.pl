@@ -32,7 +32,8 @@ $% \langle u, v \rangle = x_u \times x_v + y_u \times y_v + z_u \times z_v%$.
 Suivant la structure C qui vous est fournie, ecrire une fonction
 *scalar_product3d* qui retourne le produit scalaire de deux vecteurs
 de type *Vector3d* passés par adresse.
-    
+
+
 ==
 
 editor.code==#|c|
