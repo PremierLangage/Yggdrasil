@@ -1,0 +1,29 @@
+#*****************************************************************************
+#  Copyright (C) 2021 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+author=Prog C L2 Team
+
+title=Définir des nouvelles structures
+
+introduction==
+Les exercices qui suivent proposent quelques manipulations avec les structures 
+que l'on peut définir et utiliser dans les programmes C. Ce sont principalement 
+des exercices avec peu de code à produire mais des types à définir pour un 
+programme caché qui mennera des tests.
+
+Les exercices sont à peu près classés en difficulté croissante avec un quizz 
+final sur l'esprit des types structurés en C.
+==
