@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 title=Plus long mot d'un fichier
 
-tag=fichier|programme|affichage|mot|chaine
+tag=fichier|programme|affichage|mot|chaine|lecture
 
 author=Nicolas Borie
 
