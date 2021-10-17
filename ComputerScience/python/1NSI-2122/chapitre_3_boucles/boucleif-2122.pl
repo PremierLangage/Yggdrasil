@@ -1,9 +1,9 @@
 
 # author zip
+# modifié par emmanuel brunache
 
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
-# extends = /model/math/input.pl
 @ /utils/plrandom.py
 
 title = nombres divisibles
@@ -36,7 +36,7 @@ code = codef.format(diviseur = diviseur)
 table = sampleint(1,1000,nb_entiers)
 soluce = f"table = {table}\ndiviseur = {diviseur}\nnb_entiers={nb_entiers}\n"+solucef
 mplsoluce0 = mplsolucef.format(table='\n'.join(str(val) for val in table))
-text = textf.format(diviseur = diviseur, nb_entiers = nb_entiers) + mplsoluce
+text = textf.format(diviseur = diviseur, nb_entiers = nb_entiers)
 ==
 
 
