@@ -80,5 +80,9 @@ checks_args_stdin==#|python|
   ["Déclaration et utilisation 2", "47 85",""] ] 
 ==
 
-
+astuces==#|python|
+[
+  { "content": """Un tableau d'entiers génériques à deux dimensions dont on ne connait pas les tailles est de type `int**`."""}
+]
+==
 
