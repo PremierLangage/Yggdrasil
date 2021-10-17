@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 title=Tester des ouvertures de fichiers
 
-tag=fichier|programme|ouverture
+tag=fichier|programme|ouverture|retour
 
 author=Nicolas Borie
 
