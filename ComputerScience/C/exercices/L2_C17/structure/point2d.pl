@@ -26,6 +26,7 @@ Déclarez et définissez une *structure* C nommé **Point2d**. Cette structure
 devra contenir deux champs entiers nommés **abs** pour abcisse et **ord**
 pour ordonnée.
 
+
 ==
 
 editor.code==#|c|
