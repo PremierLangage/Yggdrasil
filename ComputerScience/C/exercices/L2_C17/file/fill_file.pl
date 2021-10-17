@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 title=Écriture dans un fichier
 
-tag=fichier|programme|boucle|écriture
+tag=fichier|programme|boucle|écriture|simple
 
 author=Nicolas Borie
 
