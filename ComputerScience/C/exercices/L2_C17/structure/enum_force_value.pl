@@ -22,10 +22,12 @@ author=Elise Hardy
 title=Énumeration avec des valeurs précises
 tag=structure
 
-text==
+text==#|markdown|
 Déclarez une énumeration **Note** contenant *Mathieu*, *Cassandre*, *Laura*, *Thomas*, 
 *Aurelie*, *Adrien* dont les valeurs respectifs sont `8`, `9`, `13`, `15`, `16`, `19`
 Par exemple si on affiche la valeur en décimal de *Adrien*, alors l'affichage sera `19`.
+
+
 ==
 
 editor.code==#|c|
