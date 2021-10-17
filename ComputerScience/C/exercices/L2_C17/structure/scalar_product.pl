@@ -14,13 +14,13 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/C/template/std_progC.pl
+extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Nicolas Borie 
 
 title=Produit scalaire de vecteurs en dimension 3
 
-tag=structure|function
+tag=structure|function|produit|simple
 
 text==#|markdown|
 Le produit scalaire $%\langle u, v \rangle%$ de deux vecteurs $%u = (x_u, y_u, z_u)%$ et 
