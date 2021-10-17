@@ -23,37 +23,37 @@ Si un exercice vous semble faux vous pouvez demander de l'aide sur le forum d'en
 ==
 
 # Exercice avec des boucles for 
-@ /ComputerScience/python/AP1-2021/chapitre_2_conditionnelles/boucle-qui-compte-de-0-a-nb-moins-1-2021.pl
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/boucle-qui-compte-de-0-a-nb-moins-1-2021.pl
 
-@ /ComputerScience/python/AP1-2021/chapitre_2_conditionnelles/boucle-qui-compte-de-1-a-nb-2021.pl
-@ /ComputerScience/python/AP1-2021/chapitre_2_conditionnelles/dynafor-2021.pl
-@ /ComputerScience/python/AP1-2021/chapitre_2_conditionnelles/dynafor1-2021.pl
-@ /ComputerScience/python/AP1-2021/chapitre_2_conditionnelles/dynafor2-2021.pl
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/boucle-qui-compte-de-1-a-nb-2021.pl
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/dynafor-2021.pl
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/dynafor1-2021.pl
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/dynafor2-2021.pl
 
 
 # @ /ComputerScience/python/AP1-1920/drafts/OCE/Suite_raison_aleatoire.pl
 # @ /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/exercises/boucles/suite-geometrique.pl
-@ /ComputerScience/python/AP1-2021/chapitre_2_conditionnelles/suite-geometrique.pl
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/suite-geometrique.pl
 # Faire une boucle croissante 
 # @ /ComputerScience/python/AP1-1920/drafts/zip/boucle1/bouclecroissant.pl
-@ /ComputerScience/python/AP1-2021/chapitre_2_conditionnelles/bouclecroissant.pl
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/bouclecroissant.pl
 
 # Faire une boucle diviser 
 # @ /ComputerScience/python/AP1-1920/drafts/zip/boucle1/boucledivise.pl
-@ /ComputerScience/python/AP1-2021/chapitre_2_conditionnelles/boucledivise.pl
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/boucledivise.pl
 
 
 
 # Faire une boucle avec des if
-@ /ComputerScience/python/AP1-2021/chapitre_2_conditionnelles/boucleif.pl
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/boucleif.pl
 
 # Faire une boucle avec des chaines de caractères 
-@ /ComputerScience/python/AP1-2021/chapitre_2_conditionnelles/bouclestr.pl
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/bouclestr.pl
 
 # Exercice avec des boucles while
-# @ /ComputerScience/python/AP1-2021/chapitre_2_conditionnelles/dynawhile.pl
-@ /ComputerScience/python/AP1-2021/chapitre_2_conditionnelles/syracuse.pl
+# @ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/dynawhile.pl
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/syracuse.pl
 
 # Exercice sur les boucles répétable sans taboo #
-#  @  /ComputerScience/python/AP1-2021/chapitre_2_conditionnelles/loop_exo.pl
+#  @  /ComputerScience/python/1NSI-2122/chapitre_3_boucles/loop_exo.pl
 
