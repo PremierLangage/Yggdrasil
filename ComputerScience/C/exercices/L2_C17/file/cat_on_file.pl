@@ -18,7 +18,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 title=Afficher le contenu d'un fichier
 
-tag=fichier|programme|affichage
+tag=fichier|programme|affichage|lecture
 
 author=Nicolas Borie
 
