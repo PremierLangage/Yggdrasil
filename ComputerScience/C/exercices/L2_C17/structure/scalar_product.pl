@@ -43,7 +43,7 @@ typedef struct vector3d{
 }Vector3d;
 
 ... scalar_product3d(...){
-  /* Votre code ici */
+  // Votre code ici...
 }
 ==
 
