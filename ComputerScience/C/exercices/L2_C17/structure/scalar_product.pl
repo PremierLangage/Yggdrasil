@@ -92,7 +92,7 @@ checks_args_stdin==#|python|
 astuces==#|python|
 [
   { "content": """C'est un exercice d'application direct du cours extrement simple. Si vous décochez cet indice, taper donc `structure struct C` dans google et lisez un ou deux articles."""},
-  { "content": """Ne faites pas d'erreur de recopie ! Quite à copier coller les noms des champs depuis l'énoncé, vérifier bien l'orthographe des intitulés."""}
+  { "content": """Il faut le coder en une ligne : `return ...*... + ...*... + ...*...;`."""}
 ]
 ==
 
