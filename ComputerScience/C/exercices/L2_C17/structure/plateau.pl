@@ -82,7 +82,7 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """Un tableau d'entiers génériques à deux dimensions dont on ne connait pas les tailles est de type `int**`."""}
+  { "content": """Un tableau d'entiers génériques à deux dimensions dont on ne connait pas les tailles est de type `int**`. Les deux autres champs peuvent donner les tailles d'ailleurs..."""}
 ]
 ==
 
