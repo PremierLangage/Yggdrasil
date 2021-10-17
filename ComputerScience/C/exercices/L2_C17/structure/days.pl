@@ -21,7 +21,7 @@ author=Nicolas Borie
 title=Structure C pour les jours de la semaine
 tag=structure|énumération|enum
 
-text==
+text==#|markdown|
 Déclarer et définir une **structure** C nommée **Jour**. Cette structure
 devra être une énumération des jours de la semaine dont les éléments
 seront le nom de chaque jour en francais et tout en minuscules :
@@ -60,6 +60,12 @@ int main(int argc, char* argv[]){
 
 checks_args_stdin==#|python|
 [ ["Déclaration et utilisation", [], ""] ] 
+==
+
+astuces==#|python|
+[
+  { "content": """C'est un exercice d'application direct du cours extrement simple. Si vous décochez cet indice, taper donc `structure enum C` dans google et lisez un ou deux articles."""}
+]
 ==
 
 
