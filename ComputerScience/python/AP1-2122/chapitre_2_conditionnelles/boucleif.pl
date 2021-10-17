@@ -7,6 +7,7 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 title = nombres divisibles
 
 before == 
+from random import randint, choice
 nb_entiers = randint(9,25)
 diviseur = choice([3,5,7,11])
 ==
