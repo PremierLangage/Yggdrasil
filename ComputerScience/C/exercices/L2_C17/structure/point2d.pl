@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/C/template/std_progC.pl
+extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Nicolas Borie
 
@@ -59,4 +59,8 @@ checks_args_stdin==#|python|
 [ ["Déclaration et utilisation", [],""] ] 
 ==
 
-
+astuces==#|python|
+[
+  { "content": """"""}
+]
+==
