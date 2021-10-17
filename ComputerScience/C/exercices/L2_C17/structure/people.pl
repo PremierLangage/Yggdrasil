@@ -19,9 +19,10 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 author=Nicolas Borie
 
 title=Structure C pour une personne
+
 tag=structure|simple|entier|chaine
 
-text==
+text==#|markdown|
 Déclarer et définir une *structure* C nommé *People*. Cette structure
 devra contenir deux champs pour des chaînes de caractères C d'au plus
 63 caractères. Ces deux champs devront être nommés *first_name* et
