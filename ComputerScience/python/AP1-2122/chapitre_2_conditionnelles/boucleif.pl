@@ -3,54 +3,77 @@
 
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
-# extends = /model/math/input.pl
-@ /utils/plrandom.py
 
 title = nombres divisibles
 
-text =
+before=
 
-code =
+text==  
 
-mplsoluce0 =
-
-textf==  
-
-Ecrire un programme qui lit {nb_entiers} entiers et affiche combien parmi eux sont divisibles par {diviseur}
+Ecrire un programme qui lit 12 entiers et affiche combien parmi eux sont divisibles par 7
 
 (Remarque: on utilise l=int(input()) pour lire un chiffre dans ce programme)
 ==
+code==
 
-codef==
 
 
-print("Il y a",nb,"multiples de {diviseur}")
+print("Il y a",nb,"multiples de 7")
 ==
-
-before == 
-from random import randint, choice
-from plrandom import sampleint
-nb_entiers = randint(9,25)
-diviseur = choice([3,5,7,11])
-code = codef.format(diviseur = diviseur)
-table = sampleint(1,1000,nb_entiers)
-soluce = f"table = {table}\ndiviseur = {diviseur}\nnb_entiers={nb_entiers}\n"+solucef
-mplsoluce0 = mplsolucef.format(table='\n'.join(str(val) for val in table))
-text = textf.format(diviseur = diviseur, nb_entiers = nb_entiers) + mplsoluce
-==
-
-
-
-solucef==
+soluce==
 nb=0
-for i in range(nb_entiers):
+for i in range(12):
     l=int(input())
-    if l%diviseur==0:
+    if l%7==0:
        nb+=1
-print("Il y a",nb,"multiples de",diviseur)
+print("Il y a",nb,"multiples de 7")
+==
+mplsoluce0==
+essai 1
+2 
+3
+5
+14
+77
+0
+81 
+7749
+15 
+98
+11
+35
+==
+mplsoluce1==
+essai 2
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+==
+mplsoluce2==
+essai 3
+10
+101
+20
+30
+40
+50
+60
+71
+11
+10
+20
+30
 ==
 
-mplsolucef==
-test
-{table}
-==
+
+
+
