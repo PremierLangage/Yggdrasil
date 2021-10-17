@@ -62,6 +62,6 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""}
+  { "content": """C'est un exercice d'application direct du cours extrement simple. Si vous décochez cet indice, taper donc `structure struct C` dans google et lisez un ou deux articles."""}
 ]
 ==
