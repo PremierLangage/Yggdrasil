@@ -90,7 +90,7 @@ for e in match.links:
         e['css'] = 'success-state  anim-flip'
 
 if error == 0:
-    feedback = '<span class="success-state">Bravo, ça devrait en effet bien fonctionner ainsi!</span>'
+    feedback = '<span class="success-state">Bravo, &ccedil;a devrait en effet bien fonctionner ainsi!</span>'
     grade = (100, feedback)
 else:
     feedback = '<span class="error-state">Tout n\'est pas correct, il y a %d mauvaises associations.</span>' % error
