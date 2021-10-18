@@ -30,8 +30,9 @@ définie avec la directive préprocesseur `#define`.
 On utilise la structure suivante pour représenter un point du plan :   
 
     typedef struct{
-      int abs, ord;
-    } Point;
+      int abs;
+      int ord;
+    }Point;
 
 Écrire une fonction `distance ` qui reçoit deux *Point* et renvoie leur distance.
 
