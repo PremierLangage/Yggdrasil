@@ -31,8 +31,8 @@ On utilise la structure suivante pour représenter un point du plan :
       int abs, ord;
     } Point;
 
-Ecrire une fonction `distance ` qui reçoit deux *Point* et renvoie leur distance.   
-
+Écrire une fonction `distance ` qui reçoit deux *Point* et renvoie leur distance.   
+   
 Définir une structure `Polygone` formée :   
    - d'un tableau de *MAXSOMMETS* *Point*, de nom `sommets`,   
    - d'un entier `nb_sommets`, le nombre effectif de points.   
