@@ -14,32 +14,33 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
+extends=/ComputerScience/C/template/std_progC17_clang.pl
+
 author=Prog C L2 Team
 
 title=Périmètre d'un polygone
 
 tag=structure|function|géométrie
 
-extends=/ComputerScience/C/template/stdsandboxC.pl
+text==#|markdown|
+Pour la réalisation de cet exercice, on supposera que l'on dispose d'une constante **MAXSOMMETS**.   
 
-text==
-Pour la réalisation de cet exercice, on supposera que l'on dispose d'une constante *MAXSOMMETS*.<br>
-<br>
+On utilise la structure suivante pour représenter un point du plan :   
 
-On utilise la structure suivante pour représenter un point du plan :<br>
-<br>
-typedef struct{<br>
-    int abs, ord;<br>
-} Point;<br> <br>
+    typedef struct{<br>
+      int abs, ord;<br>
+    } Point;<br> <br>
 
-Ecrire une fonction `distance ` qui reçoit deux *Point* et renvoie leur distance.<br>
-<br>
-Définir une structure `Polygone` formée : <br>
-   - d'un tableau de *MAXSOMMETS* *Point*, de nom `sommets`, <br>
-   - d'un entier `nb_sommets`, le nombre effectif de points. <br>
-<br>
+Ecrire une fonction `distance ` qui reçoit deux *Point* et renvoie leur distance.   
+
+Définir une structure `Polygone` formée :   
+   - d'un tableau de *MAXSOMMETS* *Point*, de nom `sommets`,   
+   - d'un entier `nb_sommets`, le nombre effectif de points.   
+   
 
 Ecrire une fonction `perimetre` qui recoit un polygone et renvoie son périmètre.
+
+
 ==
 
 editor.code==
