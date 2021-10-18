@@ -35,6 +35,7 @@ On utilise la structure suivante pour représenter un point du plan :
 
 
 Définir une structure `Polygone` formée :
+
  * d'un tableau de *MAXSOMMETS* *Point*, de nom `sommets`,
  * d'un entier `nb_sommets`, le nombre effectif de points.
 
