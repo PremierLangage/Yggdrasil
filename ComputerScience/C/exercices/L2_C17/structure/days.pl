@@ -19,7 +19,8 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 author=Nicolas Borie
 
 title=Structure C pour les jours de la semaine
-tag=structure|énumération|enum
+
+tag=structure|énumération
 
 text==#|markdown|
 Déclarer et définir une **structure** C nommée **Jour**. Cette structure
