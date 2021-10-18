@@ -22,6 +22,8 @@ title=Périmètre d'un polygone
 
 tag=structure|function|géométrie
 
+editor.height=420px
+
 text==#|markdown|
 Pour la réalisation de cet exercice, on supposera que l'on dispose d'une constante **MAXSOMMETS** 
 définie avec la directive préprocesseur `#define`.
