@@ -134,4 +134,10 @@ checks_args_stdin==#|python|
   ["Donnée numérique aléatoire 5", [str(randint(0,2)), str( 20*(random()-0.5) ), str( 20*(random()-0.5) )], ""] ] 
 ==
 
+astuces==#|python|
+[
+  { "content": """Comprendre la structure est la chose la plus difficile de l'exercice. Ici, on tente de définir un type générique qui pourrait représenter tout nombre : un type polymorphe."""},
+  { "content": """Le coeur de la fonction est simplissime en fait : suivant la valeur de l'`enum`, on appelle le `printf` qui va bien. Pour coder cette fonction, il suffit donc de placer trois appels corrects à `printf` dans une conditionnelle (soit avec des `if`, soit avec un `switch`)."""}
+]
+==
 
