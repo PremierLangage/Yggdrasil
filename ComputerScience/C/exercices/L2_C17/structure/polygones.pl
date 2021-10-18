@@ -34,12 +34,12 @@ On utilise la structure suivante pour représenter un point du plan :
 Écrire une fonction `distance ` qui reçoit deux *Point* et renvoie leur distance.   
 
 
-Définir une structure `Polygone` formée :   
- * d'un tableau de *MAXSOMMETS* *Point*, de nom `sommets`,   
- * d'un entier `nb_sommets`, le nombre effectif de points.   
-   
+Définir une structure `Polygone` formée :
+ * d'un tableau de *MAXSOMMETS* *Point*, de nom `sommets`,
+ * d'un entier `nb_sommets`, le nombre effectif de points.
 
-Ecrire une fonction `perimetre` qui recoit un polygone et renvoie son périmètre.
+
+Écrire une fonction `perimetre` qui recoit un polygone et renvoie son périmètre.
 
 
 ==
