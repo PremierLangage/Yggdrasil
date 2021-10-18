@@ -20,11 +20,13 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 author=Elise Hardy
 
 title=Structure contenant une autre structure
+
 tag=structure|imbriquées|simple
 
-text==
+text==#|markdown|
 Déclarez et définissez une structure **Point** contenant deux champs entiers nommés *x* et *y*.
 Puis une autre structure **Couple** contenant deux de type **Point** nommés *p1* et *p2*.
+
 
 ==
 
