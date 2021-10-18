@@ -27,9 +27,9 @@ Pour la réalisation de cet exercice, on supposera que l'on dispose d'une consta
 
 On utilise la structure suivante pour représenter un point du plan :   
 
-    typedef struct{<br>
-      int abs, ord;<br>
-    } Point;<br> <br>
+    typedef struct{
+      int abs, ord;
+    } Point;
 
 Ecrire une fonction `distance ` qui reçoit deux *Point* et renvoie leur distance.   
 
