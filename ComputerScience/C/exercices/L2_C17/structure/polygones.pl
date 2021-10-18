@@ -34,7 +34,8 @@ On utilise la structure suivante pour représenter un point du plan :
       int ord;
     }Point;
 
-Écrire une fonction `distance ` qui reçoit deux *Point* et renvoie leur distance.
+Écrire une fonction `distance ` qui reçoit deux varibles de type *Point* et renvoie la 
+distance entre ces deux points.
 
 
 Définir une structure `Polygone` formée :
@@ -48,7 +49,10 @@ Définir une structure `Polygone` formée :
 
 ==
 
-editor.code==
+editor.code==#|c|
+#include <math.h>
+#define MAXSOMMETS 50
+
 typedef struct{
     ...
 } Polygone;
@@ -86,8 +90,6 @@ codebefore==
 
 #include <stdlib.h>
 #include <stdio.h>
-#include <math.h>
-#define MAXSOMMETS 50
 
 typedef struct{
 int abs;
