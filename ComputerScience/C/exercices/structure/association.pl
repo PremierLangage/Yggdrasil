@@ -46,7 +46,7 @@ expected = []
 
 match.nodes.append({"id": "s1", "content": "Une seule fiche pour un livre dans une bibliothèque <br>(titre, auteur, année, éditeur, etc...) ", "source": True})
 match.nodes.append({"id": "s2", "content": "Les différents états (liste finie) d'une tache de développement informatique<br>(new, assigned, work in progress, need review, merged, closed) ", "source": True})
-match.nodes.append({"id": "s3", "content": "Les verbes de la langue française <br>(verbes en ER, verbes en IR (issant) et troisième groupe) ", "source": True})
+match.nodes.append({"id": "s3", "content": "Le type précis d'un fichier Unix <br>(fichier standard ou repértoire ou périphérique ou socket ou lien symbolique ou ...) ", "source": True})
 match.nodes.append({"id": "s4", "content": "L'ensemble des étudiants d'une université<br>(Pour chaque étudiant : nom, prénom, numéro, formations, etc...) ", "source": True})
 match.nodes.append({"id": "s5", "content": "Un répertoire à la Unix<br>(une liste d'objects pouvant être des fichiers, sous-rep, périphérique, etc...) ", "source": True})
 
