@@ -36,6 +36,11 @@ On utilise la structure suivante pour représenter un point du plan :
       int ord;
     }Point;
 
+    typedef struct {
+      Point sommets[MAXSOMMETS];
+      int nb_sommets;
+    } Polygone;
+
 Écrire une fonction `distance ` qui reçoit deux varibles de type *Point* et renvoie la 
 distance entre ces deux points.
 
@@ -55,11 +60,7 @@ editor.code==#|c|
 #include <math.h>
 #define MAXSOMMETS 50
 
-typedef struct{
-    ...
-} Polygone;
-
-double distance(...){
+double distance(){
     ...
 }
 
@@ -78,7 +79,7 @@ typedef struct {
 double distance(Point a ,Point b){
     return sqrt((a.abs-b.abs)*(a.abs-b.abs)+(a.ord-b.ord)*(a.ord-b.ord));
 }
-double perimetre(Polygone p){
+double perimetre(Polygone* p){
     int i;
     double perim=distance(p.sommets[p.nb_sommets-1],p.sommets[0]);
     for(i=0;i<p.nb_sommets-1;i++)
