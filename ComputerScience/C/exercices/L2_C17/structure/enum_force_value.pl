@@ -21,7 +21,7 @@ author=Elise Hardy
 
 title=Énumeration avec des valeurs précises
 
-tag=structure
+tag=structure|énumération
 
 text==#|markdown|
 Déclarez une énumeration **Note** contenant *Mathieu*, *Cassandre*, *Laura*, *Thomas*, 
