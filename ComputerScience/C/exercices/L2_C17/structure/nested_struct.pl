@@ -21,7 +21,7 @@ author=Elise Hardy
 
 title=Structure contenant une autre structure
 
-tag=structure|imbriquées|simple
+tag=structure|imbriquées|simple|stu
 
 text==#|markdown|
 Déclarez et définissez une structure **Point** contenant deux champs entiers nommés *x* et *y*.
