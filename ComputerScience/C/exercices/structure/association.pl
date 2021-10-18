@@ -44,7 +44,7 @@ import random
 match.nodes = []
 expected = []
 
-match.nodes.append({"id": "s1", "content": "Fiche pour un livre dans une bibliothèque <br>(titre, auteur, année, éditeur, etc...) ", "source": True})
+match.nodes.append({"id": "s1", "content": "Une seule fiche pour un livre dans une bibliothèque <br>(titre, auteur, année, éditeur, etc...) ", "source": True})
 match.nodes.append({"id": "s2", "content": "Les différents états d'une tache de développement <br>(new, assigned, work in progress, need review, merged, closed) ", "source": True})
 match.nodes.append({"id": "s3", "content": "Les verbes de la langue française <br>(verbes en ER, verbes en IR (issant) et troisième groupe) ", "source": True})
 match.nodes.append({"id": "s4", "content": "L'ensemble des étudiants d'une université<br>(Pour chaque étudiant : nom, prénom, numéro, formations, etc...) ", "source": True})
