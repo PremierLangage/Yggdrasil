@@ -70,5 +70,10 @@ checks_args_stdin==#|python|
   ["Test aléatoire", [str(randint(0,99)) for i in range(3)], ""] ] 
 ==
 
-
+astuces==#|python|
+[
+  { "content": """C'est un exercice d'application direct du cours extrement simple. Si vous décochez cet indice, taper donc `structure struct C` dans google et lisez un ou deux articles."""},
+  { "content": """Une fois qu'une structure `struct` est bien définie en C (avec un joli `typedef`), on a le droit de définir d'autre structure dont les champs sont du type de la strcuture que l'on vient de créer. On est alors en train d'imbriquer les structures : la seconde structure contient un champ qui est lui-même une autre structure définie plus haut."""}
+]
+==
 
