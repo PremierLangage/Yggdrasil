@@ -23,7 +23,9 @@ title=Périmètre d'un polygone
 tag=structure|function|géométrie
 
 text==#|markdown|
-Pour la réalisation de cet exercice, on supposera que l'on dispose d'une constante **MAXSOMMETS**.   
+Pour la réalisation de cet exercice, on supposera que l'on dispose d'une constante **MAXSOMMETS** 
+définie avec la directive préprocesseur `#define`.
+
 
 On utilise la structure suivante pour représenter un point du plan :   
 
