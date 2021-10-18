@@ -20,6 +20,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 author=Elise Hardy
 
 title=Énumeration avec des valeurs précises
+
 tag=structure
 
 text==#|markdown|
