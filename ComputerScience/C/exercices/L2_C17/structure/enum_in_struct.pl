@@ -23,9 +23,10 @@ title=Tableau de structure
 
 tag=structure|enumération|imbriquées
 
-text==
+text==#|markdown|
 Déclarez une énumération **Fruit** contenant les fruits *pomme*, *poire*, *banane* et *cerise*.
 Puis déclarer une structure **Panier** contenant un tableau de 4 **Fruit** nommé *tab*. 
+
 
 ==
 
