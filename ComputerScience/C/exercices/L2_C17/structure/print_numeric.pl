@@ -24,7 +24,7 @@ tag=structure|imbriquées|complexe|polymorphe|générique|énumération|type
 
 editor.height=420px
 
-text==
+text==#|markdown|
 Dans cet exercice, il est étudié la possibilité de faire un peu d'informatique 
 générique en C. Ici, deux types ont été définis pour essayer de faire 
 un *type polymorphe* pouvant représenter à la fois un entier, un nombre réel voire 
@@ -48,6 +48,8 @@ nombre complexe, on force l'affiche du signe de la partie imaginaire avec le mot
 partie sera la partie imaginaire (les signes moins sont toujours affichés 
 naturellement mais `"%+f"` force l'affichage d'un `+` lorsque le floattant est 
 positif).
+
+
 ==
 
 editor.code==#|c|
