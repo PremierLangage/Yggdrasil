@@ -31,7 +31,7 @@ f = open('hello_world.hs', 'w')
 f.write(editor.code)
 f.close()
 
-process = Popen(['ghc', 'hello_world.hs', '-o', 'hello_world'], stdout=PIPE, stderr=PIPE, shell=True)
+process = Popen(['ghc', 'hello_world.hs'], stdout=PIPE, stderr=PIPE, shell=True)
 stdout, stderr = process.communicate()
 
 ans = stdout.decode()
