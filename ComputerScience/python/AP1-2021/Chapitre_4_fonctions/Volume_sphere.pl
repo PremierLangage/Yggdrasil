@@ -22,9 +22,9 @@ Vous devez écrire deux fonctions,<br>
 **volume_sphere** qui retourne le volume de la sphere 
 en faisant appel à la fonction **cube**. <br>
 
-Vous écrirez un programme :
-    * demandant à un utilisateur de rentrer un réel strictement positif, naturellement un volume ne peut pas être négatif !, faire une boucle de lecture.
-    * appelant la fonction **volume_sphere** et affichant le résultat.<br>
+Vous écrirez un programme demandant à un utilisateur de rentrer un réel strictement positif,
+ naturellement un volume ne peut pas être négatif !, faire une boucle de lecture. 
+Le programme  appelant la fonction **volume_sphere** et affichant le résultat.<br>
 
 ==
 before==
