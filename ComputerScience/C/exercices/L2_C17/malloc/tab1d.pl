@@ -39,7 +39,7 @@ pas sur des expressions).
 
 editor.code==#|c|
 ... allocate_float_array(...){
-    /* Votre code ici */
+    // Votre code ici...
 }
 ==
 
