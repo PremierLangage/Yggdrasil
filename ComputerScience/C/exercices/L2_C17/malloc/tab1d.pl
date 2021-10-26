@@ -91,8 +91,7 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Il s'agit ici du premier exercice d'application du cours. Un simple appel à `malloc` doit suffire."""},
+  { "content": """L'unique appel à `malloc` doit avoir les bons arguments (il ne faut jamais oublier de multiplier le nombre d'éléments voulus par la taille d'un élément)."""}
 ]
 ==
