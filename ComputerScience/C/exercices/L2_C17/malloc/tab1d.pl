@@ -89,4 +89,10 @@ checks_args_stdin==#|python|
  ["Test aléatoire 3", [str(randint(10000000, 20000000))], ""]]
 ==
 
-
+astuces==#|python|
+[
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""}
+]
+==
