@@ -35,6 +35,7 @@ retours de malloc avant affectation. Aussi, l'opérateur **sizeof** est
 plus lisible et plus prévisible lorsqu'il est utilisé sur des types (et 
 pas sur des expressions).
 
+
 ==
 
 editor.code==#|c|
