@@ -23,17 +23,17 @@ questions==
 
 ** Cochez les bonnes réponses. Ecrire en compréhension l’ensemble des diviseurs de 66 avec les éléments premiers du langage. 
 
-- $% \\{n \in \mathbb{N} \\; |\\; \exists k \in \mathbb{N} \\; n= 66 \times k  \\}%$ 
-+  $% \\{n \in \mathbb{N} \\; |\\; \exists k \in \mathbb{N} \\; n\times k = 66  \\}%$
--  $% \\{n \in \mathbb{N} \\,  k \in \mathbb{N} \\; |\\; n\times k = 66  \\}%$
--  $% \\{n \in \mathbb{N} \\; |\\;  k \in \mathbb{N}  \\; n\times k = 66  \\}%$
+- $% \\{n \in \mathbb{N} \\; |\\; \exists k \in \mathbb{N} \quad n= 66 \times k  \\}%$ 
++  $% \\{n \in \mathbb{N} \\; |\\; \exists k \in \mathbb{N} \quad n\times k = 66  \\}%$
+-  $% \\{n \in \mathbb{N} \quad  k \in \mathbb{N} \\; |\\; n\times k = 66  \\}%$
+-  $% \\{n \in \mathbb{N} \\; |\\;  k \in \mathbb{N}  \quad n\times k = 66  \\}%$
 
 ** Cochez les bonnes réponses. Ecrire formellement l’ensemble des entiers relatifs multiples de 3 et impairs.
 
 - $% \\{n \in \mathbb{Z} \\;  | \\;  \exists k \in \mathbb{Z} \quad  n=3k \\; \mbox{ et } n= 2k+1 \\}%$ 
 + $% \\{n \in \mathbb{Z} \\;  | \\;  (\exists k \in \mathbb{Z} \quad  n=3k) \\; \mbox{ et } \\; (\exists k \in \mathbb{Z} \quad  n=2k+1) \\}%$ 
 + $% \\{n \in \mathbb{Z} \\;  | \\;  (\exists k \in \mathbb{Z} \quad  n=3k) \\; \mbox{ et } \\; (\exists l \in \mathbb{Z} \quad  n=2l+1) \\}%$ 
-+ $% \\{3k \in \mathbb{Z} \\;  | \\;   k \in \mathbb{Z} \\; \mbox{ et } \\; \exists l \in \mathbb{Z}  2l+1=3k \\}%$  
++ $% \\{3k \in \mathbb{Z} \\;  | \\;   k \in \mathbb{Z} \\; \mbox{ et } \\; \exists l \in \mathbb{Z} \quad  2l+1=3k \\}%$  
 + $%  \\{6k+3 \\; |\\; k \in \mathbb{Z} \\}%$ 
 - $% \\{3k+1 \\; |\\; k \in \mathbb{Z} \\}%$ 
 
