@@ -4,7 +4,7 @@ questions==
 
   
 (c) l’ensemble des nombres qui sont diviseurs de 50 et inférieurs à 23 (d’abord en extension, puis en compréhension
-à l’aide du symbole divise "|") ;
+à l’aide du symbole divise "$%\mid%$") ;
 (d) l’ensemble des couples dont la première coordonnée est un nombre rationnel strictement plus grand que π et
 la seconde coordonnée est un nombre relatif dont le reste de la division euclidienne par 5 vaut 2 ;
 (e) L’ensemble des nombres complexes dont l’argument est congru à π
@@ -15,9 +15,9 @@ l’exponentielle complexe et enfin à l’aide d’une représentation paramét
 questions==
 
 ** Cochez les bonnes réponses. Ecrire en compréhension l'ensemble des diviseurs de 66 à l'aide du symbole "$%|%$".
-+  $% \\{n \in \mathbb{N} \\; |\\; n\\, | \\, 66 \\}%$ 
--  $% \\{  n\\, | \\, 66 \\; |\\; n \in \mathbb{N} \\}%$
--  $% \\{ n \in \mathbb{N} \\; |\\; 66\\, | \\, n \\}%$
++  $% \\{n \in \mathbb{N} \\; |\\; n\\, \mid \\, 66 \\}%$ 
+-  $% \\{  n\\, \mid \\, 66 \\; |\\; n \in \mathbb{N} \\}%$
+-  $% \\{ n \in \mathbb{N} \\; |\\; 66\\, \mid \\, n \\}%$
 -  $%\\{1, 2, 3, 6, 11, 22, 33, 66\\} %$
 
 
