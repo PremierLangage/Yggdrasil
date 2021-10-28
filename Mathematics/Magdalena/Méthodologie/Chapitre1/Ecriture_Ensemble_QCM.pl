@@ -2,10 +2,7 @@ extends = /model/AMC_TXT.pl
 title = Ecriture d'ensembles
 questions==
 
-’ensemble des diviseurs de 66 (d’abord en extension, puis en compréhension avec le symbole divise "|", puis
-en compréhension uniquement avec les éléments premiers du langage) ;
-(b) l’ensemble des multiples impairs de 3 (d’abord en compréhension puis de manière paramétrique). Préciser
-deux éléments de l’ensembles et deux éléments n’appartenant pas à l’ensemble.
+  
 (c) l’ensemble des nombres qui sont diviseurs de 50 et inférieurs à 23 (d’abord en extension, puis en compréhension
 à l’aide du symbole divise "|") ;
 (d) l’ensemble des couples dont la première coordonnée est un nombre rationnel strictement plus grand que π et
@@ -31,7 +28,7 @@ questions==
 -  $% \\{n \in \mathbb{N} \\,  k \in \mathbb{N} \\; |\\; n\times k = 66  \\}%$
 -  $% \\{n \in \mathbb{N} \\; |\\;  k \in \mathbb{N}  \; n\times k = 66  \\}%$
 
-** Cochez les bonnes réponses. Ecrire formellement l'ensemble des entiers naturels impairs
+** Cochez les bonnes réponses. Ecrire formellement l’ensemble des entiers relatifs multiples  de 3 et impairs.
 
 - $% \\{n \in \mathbb{N} \quad  | \\;  \forall k \in \mathbb{N} \quad  n=2k+1 \\}%$ 
 + $% \\{n \in \mathbb{N} \\;  | \\;  \exists k \in \mathbb{N} \quad  n=2k+1 \\}%$ 
