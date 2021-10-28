@@ -23,10 +23,10 @@ questions==
 
 ** Cochez les bonnes réponses. Ecrire en compréhension l’ensemble des diviseurs de 66 avec les éléments premiers du langage. 
 
-- $% \\{n \in \mathbb{N} \\; |\\; \exists k \in \mathbb{N} \; n= 66 \times k  \\}%$ 
-+  $% \\{n \in \mathbb{N} \\; |\\; \exists k \in \mathbb{N} \; n\times k = 66  \\}%$
+- $% \\{n \in \mathbb{N} \\; |\\; \exists k \in \mathbb{N} \\; n= 66 \times k  \\}%$ 
++  $% \\{n \in \mathbb{N} \\; |\\; \exists k \in \mathbb{N} \\; n\times k = 66  \\}%$
 -  $% \\{n \in \mathbb{N} \\,  k \in \mathbb{N} \\; |\\; n\times k = 66  \\}%$
--  $% \\{n \in \mathbb{N} \\; |\\;  k \in \mathbb{N}  \; n\times k = 66  \\}%$
+-  $% \\{n \in \mathbb{N} \\; |\\;  k \in \mathbb{N}  \\; n\times k = 66  \\}%$
 
 ** Cochez les bonnes réponses. Ecrire formellement l’ensemble des entiers relatifs multiples de 3 et impairs.
 
