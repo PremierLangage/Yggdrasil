@@ -48,7 +48,7 @@ questions==
 + $% \\{ 1, 2, 5, 10 \\}%$ 
 -  $% \\{k \in \mathbb{N} \\;  | \\;  n \le 23 \quad \mbox{ et } n \mid 50 \\}%$  
 + $%  \\{k \in \mathbb{N} \\;  | \\;  k \le 23 \quad \mbox{ et } k \mid 50 \\}%$
-- $% \\{k \le 23 \\; |\\; k $%\mid%$ 50  \\}%$ 
+- $% \\{k \le 23 \\; |\\; k \mid 50  \\}%$ 
 
 
 ==
