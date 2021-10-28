@@ -37,6 +37,20 @@ questions==
 + $%  \\{6k+3 \\; |\\; k \in \mathbb{Z} \\}%$ 
 - $% \\{3k+1 \\; |\\; k \in \mathbb{Z} \\}%$ 
 
+
+
+
+
+** Cochez les bonnes réponses. Ecrire formellement l’ensemble des entiers naturels qui sont diviseurs de 50 et inférieurs à 23.
+
+- $% \\{n \in \mathbb{N} \\;  | \\;  \exists k \in \mathbb{Z} \quad  n=50 k \\; \mbox{ et } n\le 23 \\}%$ 
++ $% \\{n \in \mathbb{N} \\;  | \\;  (\exists k \in \mathbb{Z} \quad  n\times k =50) \\; \mbox{ et } \\; (n \le 23) \\}%$ 
++ $% \\{ 1, 2, 5, 10 \\}%$ 
+-  $% \\{k \in \mathbb{N} \\;  | \\;  n \le 23 \quad \mbox{ et } n $%\mid%$ 50 \\}%$  
++ $%  \\{k \in \mathbb{N} \\;  | \\;  k \le 23 \quad \mbox{ et } k $%\mid%$ 50 \\}%$
+- $% \\{k \le 23 \\; |\\; k $%\mid%$ 50  \\}%$ 
+
+
 ==
 
 
