@@ -2,13 +2,6 @@ extends = /model/AMC_TXT.pl
 title = Ecriture d'ensembles
 questions==
 
-  
-(d) l’ensemble des couples dont la première coordonnée est un nombre rationnel strictement plus grand que π et
-la seconde coordonnée est un nombre relatif dont le reste de la division euclidienne par 5 vaut 2 ;
-(e) L’ensemble des nombres complexes dont l’argument est congru à π
-2 modulo 2π, d’abord en compréhension
-et à l’aide de l’application argument (notée arg), puis à l’aide d’une représentation paramétrique utilisant
-l’exponentielle complexe et enfin à l’aide d’une représentation paramétrique cartésienne.
 
 questions==
 
