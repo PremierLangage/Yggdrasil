@@ -15,9 +15,9 @@ l’exponentielle complexe et enfin à l’aide d’une représentation paramét
 questions==
 
 ** Cochez les bonnes réponses. Ecrire en compréhension l'ensemble des diviseurs de 66 à l'aide du symbole "$%|%$".
-+  $% \\{n \in \mathbb{N} \\; |\\; n\, | \, 66 \\}%$ 
--  $% \\{  n\, | \, 66 \\; |\\; n \in \mathbb{N} \\}%$
--  $% \\{ n \in \mathbb{N} \\; |\\; 66\, | \, n \\}%$
++  $% \\{n \in \mathbb{N} \\; |\\; n\\, | \\, 66 \\}%$ 
+-  $% \\{  n\\, | \\, 66 \\; |\\; n \in \mathbb{N} \\}%$
+-  $% \\{ n \in \mathbb{N} \\; |\\; 66\\, | \\, n \\}%$
 -  $%\\{1, 2, 3, 6, 11, 22, 33, 66\\} %$
 
 
