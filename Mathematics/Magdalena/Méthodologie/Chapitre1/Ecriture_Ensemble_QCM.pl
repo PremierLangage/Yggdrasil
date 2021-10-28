@@ -18,7 +18,7 @@ questions==
 +  $% \\{n \in \mathbb{N} \\; |\\; n\, | \, 66 \\}%$ 
 -  $% \\{  n\, | \, 66 \\; |\\; n \in \mathbb{N} \\}%$
 -  $% \\{ n \in \mathbb{N} \\; |\\; 66\, | \, n \\}%$
--  $%\\{1, 2, 3, 11\\} %$
+-  $%\\{1, 2, 3, 6, 11, 22, 33, 66\\} %$
 
 
 ** Cochez les bonnes réponses. Ecrire en compréhension l’ensemble des diviseurs de 66 avec les éléments premiers du langage. 
