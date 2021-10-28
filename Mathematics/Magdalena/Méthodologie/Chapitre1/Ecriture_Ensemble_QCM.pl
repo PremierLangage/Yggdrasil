@@ -42,7 +42,7 @@ la seconde coordonnée est un nombre relatif dont le reste de la division euclid
 
 - $% \\{(p,n) \in \mathbb{Q}\times \mathbb{Z} \\;  | \\;  \exists p \le  \pi  \quad  \exists k \in \mathbb{Z} \\; n= 5k+2  \\}%$ 
 + $% \\{(p,n) \in \mathbb{Q}\times \mathbb{Z} \\;  | \\;  p \le  \pi  \quad  \exists k \in \mathbb{Z} \\; n= 5k+2  \\}%$ 
-+ $% \\{X \in \mathbb{Q}\times \mathbb{Z}  \\;  | \\;  \exists p \in \mathbb{Q}  \quad n \in \mathbb{Z} \quad X= (p,n) \quad p \le  \pi  \quad n \in \mathbb{Z} \quad  \exists k \in \mathbb{Z} \\; \mbox{ et } n= 5k+2  \\}%$
++ $% \\{X \in \mathbb{Q}\times \mathbb{Z}  \\;  | \\;  \exists p \in \mathbb{Q}  \quad n \in \mathbb{Z} \quad X= (p,n) \quad p \le  \pi  \quad n \in \mathbb{Z} \quad  \exists k \in \mathbb{Z} \quad n= 5k+2  \\}%$
 +  $% \\{(p,5k+2)  \\;  | \\;   p\in \mathbb{Q} \quad p \le  \pi  \quad  k \in \mathbb{Z}  \\}%$  
 + $% \\{(p,n)  \\;  | \\;  p \in \mathbb{Q} \quad p \le  \pi  \quad n \in \mathbb{Z} \quad  \exists k \in \mathbb{Z} \\;  n= 5k+2  \\}%$ 
 - $% \\{(p,5k+2)  \\;  | \\;   p\in \mathbb{R} \quad p \le  \pi  \quad  k \in \mathbb{Z}  \\}%$  
