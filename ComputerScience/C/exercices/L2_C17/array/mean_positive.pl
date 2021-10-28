@@ -88,7 +88,7 @@ int main(int argc, char* argv[]){
     printf("%d, ", array[i]);
   if (argc > 0)
     printf("%d", array[argc-1]);
-  printf("] ) : %f", mean_positive(array, argc));
+  printf("] ) : %f", mean_positive(array, argc-1));
 
   return 0;
 }
