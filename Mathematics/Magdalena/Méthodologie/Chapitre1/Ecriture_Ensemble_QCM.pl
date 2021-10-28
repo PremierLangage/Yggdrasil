@@ -28,14 +28,14 @@ questions==
 -  $% \\{n \in \mathbb{N} \\,  k \in \mathbb{N} \\; |\\; n\times k = 66  \\}%$
 -  $% \\{n \in \mathbb{N} \\; |\\;  k \in \mathbb{N}  \; n\times k = 66  \\}%$
 
-** Cochez les bonnes réponses. Ecrire formellement l’ensemble des entiers relatifs multiples  de 3 et impairs.
+** Cochez les bonnes réponses. Ecrire formellement l’ensemble des entiers relatifs multiples de 3 et impairs.
 
-- $% \\{n \in \mathbb{N} \quad  | \\;  \forall k \in \mathbb{N} \quad  n=2k+1 \\}%$ 
-+ $% \\{n \in \mathbb{N} \\;  | \\;  \exists k \in \mathbb{N} \quad  n=2k+1 \\}%$ 
-- $% \\{ \exists n \in \mathbb{N} \\;  | \\;  \exists k \in \mathbb{N} \quad  n=2k+1 \\}%$
-- $% \\{n \in \mathbb{N} \\;  | \\;  \exists k \in \mathbb{N} \quad  2k+1 \\}%$  
-+ $%  \\{2n+1 \\; |\\; n \in \mathbb{N} \\}%$ 
-- $% \\{n, k \in \mathbb{N} \\;  | \\;  n=2k+1 \\}%$ 
+- $% \\{n \in \mathbb{Z} \\;  | \\;  \exists k \in \mathbb{Z} \quad  n=3k \\; \mbox{ et } n= 2k+1 \\}%$ 
++ $% \\{n \in \mathbb{Z} \\;  | \\;  (\exists k \in \mathbb{Z} \quad  n=3k) \\; \mbox{ et } \\; (\exists k \in \mathbb{Z} \quad  n=2k+1) \\}%$ 
++ $% \\{n \in \mathbb{Z} \\;  | \\;  (\exists k \in \mathbb{Z} \quad  n=3k) \\; \mbox{ et } \\; (\exists l \in \mathbb{Z} \quad  n=2l+1) \\}%$ 
++ $% \\{3k \in \mathbb{Z} \\;  | \\;   k \in \mathbb{Z} \\; \mbox{ et } \\; \exists l \in \mathbb{Z}  2l+1=3k \\}%$  
++ $%  \\{6k+3 \\; |\\; k \in \mathbb{Z} \\}%$ 
+- $% \\{3k+1 \\; |\\; k \in \mathbb{Z} \\}%$ 
 
 ==
 
