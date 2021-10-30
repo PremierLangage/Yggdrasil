@@ -34,8 +34,8 @@ fraichement alloués.
 <br>
 
 Inutile d'allouer la structure **People**, le pointeur fourni en argument
-pointe déjà vers une structure **People** valide, vous sevez travaillez sur
-les champs de la structure pointée.
+pointe déjà vers une structure **People** valide, vous devrez travailler sur
+les champs de la structure pointée qui eux ne sont absolument pas initialisés.
 
 
 ==
