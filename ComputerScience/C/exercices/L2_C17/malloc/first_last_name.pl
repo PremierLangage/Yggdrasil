@@ -102,8 +102,9 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Pour chaque champ de la structure, il faut faire les choses en deux temps : allouer la mémoire en bonne quantité puis recopier les chaînes dans les zones fraichement allouées."""},
+  { "content": """Une stratégie raisonnable consiste à utiliser les fonctions suivantes : `strlen`, `malloc` puis `strcpy`"""},
+  { "content": """Pour allouer la bonne quantité de mémoire pour une chaîne `s` il faut demander `(strlen(s) + 1)*sizeof(char)` octets. Sans le `+1`, il manquerait de la place pour recopier le `\0`."""},
 ]
 ==
 
