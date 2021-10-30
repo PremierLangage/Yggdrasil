@@ -33,7 +33,7 @@ group.items.append({"id": "4", "content": "Remonter les erreurs quand **malloc**
 group.items.append({"id": "21", "content": "Caster les retours de **malloc** car sinon ça ne compile pas." })
 group.items.append({"id": "22", "content": "Utilisez sizeof sur des expressions." })
 group.items.append({"id": "23", "content": "Quand **malloc** retourne NULL, tuer le programme immédiatement." })
-group.items.append({"id": "24", "content": "Bien initialiser à zéro les zones retournées par **malloc**." })
+group.items.append({"id": "24", "content": "Bien mettre des zéros partout dans les zones retournées par **malloc**." })
 
 random.shuffle(group.items)
 ==
