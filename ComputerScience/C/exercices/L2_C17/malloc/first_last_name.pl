@@ -97,7 +97,8 @@ checks_args_stdin==#|python|
  ["Chaînes vides", ["", ""], ""],
  ["Long prénom", ["Son prénom est si long que ça, incroyable !", "Ouais"], ""],
  ["Test aléatoire 1", ["".join([chr(ord('a')+randint(0, 25)) for i in range(randint(3, 20))]) for k in range(2)], ""],
- ["Test aléatoire 2", ["".join([chr(ord('a')+randint(0, 25)) for i in range(randint(3, 20))]) for k in range(2)], ""]]
+ ["Test aléatoire 2", ["".join([chr(ord('a')+randint(0, 25)) for i in range(randint(3, 20))]) for k in range(2)], ""],
+ ["Test aléatoire 3", ["".join([chr(ord('a')+randint(0, 25)) for i in range(randint(3, 20))]) for k in range(2)], ""]]
 ==
 
 astuces==#|python|
