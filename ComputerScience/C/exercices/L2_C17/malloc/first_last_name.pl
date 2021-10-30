@@ -68,7 +68,6 @@ typedef struct{
 int initialize_people(People* p, char* first_name, char* last_name){
     p->first = strdup(first_name);
     p->last = strdup(last_name);
-    return (p->first != NULL) && (p->last != NULL);
 }
 ==
 
