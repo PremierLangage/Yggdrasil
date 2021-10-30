@@ -30,6 +30,8 @@ raisonnable prépare de la mémoire pérenne, renseigne le double dans
 la cellule et initialise la cellule de manière à ce qu'elle ne possède
 pas de suivant. Finalement, on retourne l'adresse de la cellule correctement
 allouée et initialisée.
+
+
 ==
 
 editor.code==#|c|
