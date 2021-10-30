@@ -53,7 +53,19 @@ form==
 ==
 
 # EVALUATE THE STUDENT ANSWER
-evaluator==
+evaluator==#|python|
+form+="""
+
+<style>
+.error-state{
+   padding: 10px;
+}
+.success-state{
+   padding: 10px;
+}
+</style>
+"""
+
 right = 0
 total = 0
 error = 0
