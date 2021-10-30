@@ -27,7 +27,7 @@ text==#|markdown|
 Écrire une fonction **initialize_people** qui prend en argument l'adresse 
 d'une structure **People** ainsi que deux chaînes de caractères. Votre
 fonction devra allouer dynamiquement la place mémoire nécessaire pour 
-contenir une copie des deux chaines en argument. Votre fonction devra
+contenir une copie des deux chaines de caractères en argument. Votre fonction devra
 finalement recopier intégralement les deux chaînes dans les deux champs
 fraichement alloués. 
 
