@@ -23,7 +23,7 @@ tag=malloc|structure|chaînage|double
 
 editor.height=300px
 
-text==
+text==#|markdown|
 Écrire une fonction d'allocation pour une **cellule de liste chainée** 
 contenant des doubles (un double par cellule). Une fonction d'allocation
 raisonnable prépare de la mémoire pérenne, renseigne le double dans
@@ -94,5 +94,12 @@ checks_args_stdin==#|python|
  ["Test aléatoire 3", [str(100*random())], ""]]
 ==
 
+astuces==#|python|
+[
+  { "content": """"""},
+  { "content": """"""},
+  { "content": """"""},
+]
+==
 
 
