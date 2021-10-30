@@ -50,7 +50,7 @@ typedef struct{
 }People;
 
 int initialize_people(People* p, char* first_name, char* last_name){
-    /* ... tant de choses ... */
+  // Votre code ici...
 }
 ==
 
