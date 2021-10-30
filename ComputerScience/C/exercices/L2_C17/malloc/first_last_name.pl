@@ -99,5 +99,12 @@ checks_args_stdin==#|python|
  ["Test aléatoire 2", ["".join([chr(ord('a')+randint(0, 25)) for i in range(randint(3, 20))]) for k in range(2)], ""]]
 ==
 
+astuces==#|python|
+[
+  { "content": """"""},
+  { "content": """"""}
+]
+==
+
 
 
