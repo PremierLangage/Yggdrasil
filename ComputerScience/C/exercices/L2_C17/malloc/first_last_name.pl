@@ -23,7 +23,7 @@ tag=string|malloc|structure|recopiage
 
 editor.height=350px
 
-text==
+text==#|markdown|
 Écrire une fonction **initialize_people** qui prend en argument l'adresse 
 d'une structure **People** ainsi que deux chaînes de caractères. Votre
 fonction devra allouer dynamiquement la place mémoire nécessaire pour 
@@ -36,6 +36,7 @@ fraichement alloués.
 Inutile d'allouer la structure **People**, le pointeur fourni en argument
 pointe déjà vers une structure **People** valide, vous sevez travaillez sur
 les champs de la structure pointée.
+
 
 ==
 
