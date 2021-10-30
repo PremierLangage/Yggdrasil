@@ -73,7 +73,9 @@ int initialize_people(People* p, char* first_name, char* last_name){
 ==
 
 code_before==#|c|
+
 #define _POSIX_C_SOURCE
+
 ==
 
 code_after==#|c|
