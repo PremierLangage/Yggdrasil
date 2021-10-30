@@ -58,10 +58,6 @@ match.nodes.append({"id": "s4", "content": "Un noeud d'arbre de personnes (char\
 match.nodes.append({"id": "t4", "content": "trois mallocs", "target": True})
 expected.append({ "source": "s4", "target": "t4" })
 
-match.nodes.append({"id": "s5", "content": "Une matrice rectangulaire `m` par `n` (deux `int`)", "source": True})
-match.nodes.append({"id": "t5", "content": "un malloc puis malloc dans un for", "target": True})
-expected.append({ "source": "s5", "target": "t5" })
-
 random.shuffle(match.nodes)
 ==
 
