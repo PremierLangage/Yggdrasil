@@ -81,6 +81,8 @@ for item in group.items:
     elif checked:
         error += 1
         item['css'] = 'error-state'
+    else:
+        item['css'] = ''
 
 nb_error = error + (total - right)
 note = 100*((max([0, total-nb_error])) / total)
