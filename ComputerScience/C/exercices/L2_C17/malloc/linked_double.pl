@@ -44,7 +44,7 @@ typedef struct cell{
 }Cell, *List;
 
 ... Allocate_cell(double val){
-  /* ... votre code ici ... */
+  // Votre code ici...
 }
 ==
 
