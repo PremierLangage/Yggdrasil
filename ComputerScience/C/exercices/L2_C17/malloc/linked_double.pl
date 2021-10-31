@@ -91,7 +91,7 @@ int main(int argc, char* argv[]){
 
 checks_args_stdin==#|python|
 [["Exécution simple", ["3.141592"], ""],
- ["Avec un zéro", ["0"], ""],
+ ["Test avec zéro", ["0"], ""],
  ["Test aléatoire 1", [str(100*random())], ""],
  ["Test aléatoire 2", [str(100*random())], ""],
  ["Test aléatoire 3", [str(100*random())], ""]]
