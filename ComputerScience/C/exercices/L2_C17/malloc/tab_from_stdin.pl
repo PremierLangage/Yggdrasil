@@ -34,8 +34,8 @@ allouer de la place mémoire pour un tableau pouvant contenir autant d'entiers.
 
 
 À la suite de cet entier donnant une taille `n`, il y aura systématiquement 
-autant d'entiers qui suivent sur l'entrée standard (l'utilisateur devra toujours 
-les taper sur son clavier).
+autant d'entiers qui suivent sur l'entrée standard voire plus (l'utilisateur 
+devra toujours les taper sur son clavier).
 
 
 Voici, par ligne, quelques exemples d'entrée standard possibles :
