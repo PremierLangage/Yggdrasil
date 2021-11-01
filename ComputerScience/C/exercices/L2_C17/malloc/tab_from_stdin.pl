@@ -53,7 +53,7 @@ editor.code==#|c|
 ==
 
 solution==#|c|
-int* make_and_fill_array(void){
+int* make_and_fill_array(int* size){
     int* tab = NULL;
     int i;
 
