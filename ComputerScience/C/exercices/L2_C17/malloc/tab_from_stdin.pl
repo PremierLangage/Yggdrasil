@@ -28,8 +28,9 @@ text==#|markdown|
 fonction devra lire l'entrée standard (c'est à dire le clavier) durant son 
 exécution avec **scanf** par exemple. L'entrée standard commencera toujours
 par un entier positif ou nul. Une fois cet entier connu, vous devrez mettre à 
-jour la valeur pointée par le pointer en argument. vous devrez ensuite allouer de 
-la place mémoire pour un tableau pouvant contenir autant d'entiers.
+jour la valeur pointée par le pointer en argument (cela permettra à la fois de 
+conserver la taille mais aussi de la transmettre à l'appelant). vous devrez ensuite 
+allouer de la place mémoire pour un tableau pouvant contenir autant d'entiers.
 
 
 À la suite de cet entier donnant une taille `n`, il y aura systématiquement 
