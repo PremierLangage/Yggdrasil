@@ -26,7 +26,14 @@ text==#|markdown|
 Écrire une fonction **make_and_fill_array** ne prenant aucun argument. Votre
 fonction devra lire l'entrée standard (c'est à dire le clavier) durant son 
 exécution avec **scanf** par exemple. L'entrée standard commencera toujours
-par un entier positif ou nul.
+par un entier positif ou nul. Une fois cet entier connu, vous devrez allouer de 
+la place mémoire pour un tableau pouvant contenir autant d'entiers.
+
+
+À la suite de cet entier donnant une taille `n`, il y aura systématiquement 
+autant d'entiers qui suivent sur l'entrée standard (l'utilisateur devra toujours 
+les taper sur son clavier).
+
 
 ==
 
@@ -40,10 +47,17 @@ solution==#|c|
 int* make_and_fill_array(void){
     int* tab = NULL;
     int size=0;
+    int i;
 
-    scanf(" %d")
+    scanf(" %d", &size);
 
-    tab = ()malloc(sizeof(int))
+    tab = (int*)malloc(size * sizeof(int));
+    if (tab == NULL)
+        return NULL;
+    for (i=0 ; i<size ; i++){
+        scanf(" %d", &(tab[i]));
+    }
+    return tab;
 }
 ==
 
