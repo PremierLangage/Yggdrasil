@@ -35,6 +35,14 @@ autant d'entiers qui suivent sur l'entrée standard (l'utilisateur devra toujour
 les taper sur son clavier).
 
 
+Voici, par ligne, des exemples d'entrée standard possible :
+
+    ~$> 0
+    ~$> 1 42
+    ~$> 2 -8 -35
+    ~$> 5 -12 54 128 -2 7
+
+
 ==
 
 editor.code==#|c|
