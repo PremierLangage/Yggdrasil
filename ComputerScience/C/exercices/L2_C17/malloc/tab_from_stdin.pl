@@ -100,7 +100,11 @@ checks_args_stdin==#|python|
 [["Exécution simple", [], "1 42"],
  ["Tableau vide", [], "0"],
  ["Tableau moyen", [], "5 -12 54 128 -2 7"],
- ["Test aléatoire 1", [], str(randint(5, 10))+" "+" ".join([str(randint(-10, 10)) for i in range(10)]) ], ]
+ ["Test aléatoire 1", [], str(randint(5, 10))+" "+" ".join([str(randint(-10, 10)) for i in range(10)]) ],
+ ["Test aléatoire 2", [], str(randint(5, 10))+" "+" ".join([str(randint(-100, 100)) for i in range(10)]) ],
+ ["Test aléatoire 3", [], str(randint(10, 15))+" "+" ".join([str(randint(-10, 10)) for i in range(10)]) ],
+ ["Test aléatoire 4", [], str(randint(10, 15))+" "+" ".join([str(randint(-100, 100)) for i in range(10)]) ],
+ ["Test aléatoire 5", [], str(randint(15, 20))+" "+" ".join([str(randint(-100, 100)) for i in range(10)]) ], ]
 ==
 
 astuces==#|python|
