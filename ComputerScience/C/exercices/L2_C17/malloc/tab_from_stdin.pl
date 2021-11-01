@@ -23,10 +23,11 @@ tag=tableau|malloc|scanf|entier
 
 
 text==#|markdown|
-Écrire une fonction **make_and_fill_array** ne prenant aucun argument. Votre
+Écrire une fonction **make_and_fill_array** prenant en argument un pointeur vers un entier. Votre
 fonction devra lire l'entrée standard (c'est à dire le clavier) durant son 
 exécution avec **scanf** par exemple. L'entrée standard commencera toujours
-par un entier positif ou nul. Une fois cet entier connu, vous devrez allouer de 
+par un entier positif ou nul. Une fois cet entier connu, vous devrez mettre à 
+jour la valeur pointée par le pointer en argument. vous devrez ensuite allouer de 
 la place mémoire pour un tableau pouvant contenir autant d'entiers.
 
 
@@ -58,7 +59,7 @@ int* make_and_fill_array(void){
 
     scanf(" %d", size);
 
-    tab = (int*)malloc(size * sizeof(int));
+    tab = (int*)malloc(*size * sizeof(int));
     if (tab == NULL)
         return NULL;
     for (i=0 ; i<*size ; i++){
