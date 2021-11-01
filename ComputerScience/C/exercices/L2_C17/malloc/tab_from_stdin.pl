@@ -110,6 +110,7 @@ checks_args_stdin==#|python|
 astuces==#|python|
 [
   { "content": """"""},
+  { "content": """"""},
   { "content": """"""}
 ]
 ==
