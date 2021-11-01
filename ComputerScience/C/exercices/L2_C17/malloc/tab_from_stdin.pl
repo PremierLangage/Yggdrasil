@@ -21,6 +21,7 @@ author=Nicolas Borie
 title=Allocation d'un tableau d'entier donné au clavier
 tag=tableau|malloc|scanf|entier
 
+editor.height=350px
 
 text==#|markdown|
 Écrire une fonction **make_and_fill_array** prenant en argument un pointeur vers un entier. Votre
