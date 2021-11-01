@@ -78,7 +78,7 @@ code_after==#|c|
 
 int main(int argc, char* argv[]){
     int* tab=NULL;
-    int* size;
+    int size;
     int i;
 
     tab = make_and_fill_array(&size);
