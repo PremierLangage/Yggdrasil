@@ -22,60 +22,40 @@ title=Allocation d'un tableau d'entier donné au clavier
 tag=tableau|malloc|scanf|entier
 
 
-text==
-Écrire une fonction C **allocate_float_array** qui prend en argument une 
-taille **size** (sous la forme d'un entier) et qui retourne un tableau 
-fraichement alloué pouvant contenir **size** flottants simples précisions. 
-L'adresse retournée devra avoir été obtenue à l'aide de la fonction **malloc**.
-
-<br>
-
-Pour rappel, un code verbeux et de qualité présente des cast devant les 
-retours de malloc avant affectation. Aussi, l'opérateur **sizeof** est 
-plus lisible et plus prévisible lorsqu'il est utilisé sur des types (et 
-pas sur des expressions).
-
+text==#|markdown|
+Écrire une fonction **make_and_fill_array** ne prenant aucun argument. Votre
+fonction devra lire l'entrée standard (c'est à dire le clavier) durant son 
+exécution avec **scanf** par exemple. L'entrée standard commencera toujours
+par un entier positif ou nul.
 
 ==
 
 editor.code==#|c|
-... allocate_float_array(...){
+... make_and_fill_array(void){
     // Votre code ici...
 }
 ==
 
 solution==#|c|
-float* allocate_float_array(int size){
-  float* ans = (float *)malloc( size * sizeof(float) );
-  return ans;
+int* make_and_fill_array(void){
+    int* tab = NULL;
+    int size=0;
+
+    scanf(" %d")
+
+    tab = ()malloc(sizeof(int))
 }
 ==
 
 code_before==#|c|
 #include <stdlib.h>
+#include <stdio.h>
 ==
 
 code_after==#|c|
-#include <stdio.h>
-#include <time.h>
 
 int main(int argc, char* argv[]){
-  int size = atoi(argv[1]);
-  float* ans;
 
-  srand(time(NULL));
-
-  ans = allocate_float_array(size);
-  if (ans == NULL){
-    printf("Not Enough Memory.\n");
-    return 0;
-  }
-  if (size >= 2){
-    ans[0] = rand();
-    ans[size-1] = rand();
-    printf("Allocation et utilisation : %f (devrait valoir zéro...)\n", ans[size-1] - ans[size-1]);
-  }
-  free(ans);
   return 0;
 }
 ==
@@ -91,8 +71,8 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """Il s'agit ici du premier exercice d'application du cours. Un simple appel à `malloc` doit suffire."""},
-  { "content": """L'unique appel à `malloc` doit avoir les bons arguments (il ne faut jamais oublier de multiplier le nombre d'éléments voulus par la taille d'un élément)."""}
+  { "content": """"""},
+  { "content": """"""}
 ]
 ==
 
