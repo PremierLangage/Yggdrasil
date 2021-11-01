@@ -46,7 +46,7 @@ Voici, par ligne, des exemples d'entrée standard possible :
 ==
 
 editor.code==#|c|
-... make_and_fill_array(void){
+... make_and_fill_array(int* size){
     // Votre code ici...
 }
 ==
@@ -54,15 +54,14 @@ editor.code==#|c|
 solution==#|c|
 int* make_and_fill_array(void){
     int* tab = NULL;
-    int size=0;
     int i;
 
-    scanf(" %d", &size);
+    scanf(" %d", size);
 
     tab = (int*)malloc(size * sizeof(int));
     if (tab == NULL)
         return NULL;
-    for (i=0 ; i<size ; i++){
+    for (i=0 ; i<*size ; i++){
         scanf(" %d", &(tab[i]));
     }
     return tab;
@@ -77,7 +76,11 @@ code_before==#|c|
 code_after==#|c|
 
 int main(int argc, char* argv[]){
+    int* tab=NULL;
+    int i;
 
+    tab = make_and_fill_array();
+    for (i)
 
   return 0;
 }
