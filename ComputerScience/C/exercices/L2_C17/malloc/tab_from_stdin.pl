@@ -78,10 +78,19 @@ code_after==#|c|
 
 int main(int argc, char* argv[]){
     int* tab=NULL;
+    int* size;
     int i;
 
-    tab = make_and_fill_array();
-    for (i)
+    tab = make_and_fill_array(&size);
+    putchar('[');
+    for (i=0 ; i<size ; i++){
+        printf("%d", tab[i]);
+        if (i < size-1){
+            putchar(','); putchar(' ');
+        }
+    }
+    putchar(']'); putchar('\n');
+    free(tab);
 
   return 0;
 }
