@@ -85,7 +85,7 @@ int main(int argc, char* argv[]){
     putchar('[');
     for (i=0 ; i<size ; i++){
         printf("%d", tab[i]);
-        if (i < size-1){
+        if (i < (size-1)){
             putchar(','); putchar(' ');
         }
     }
