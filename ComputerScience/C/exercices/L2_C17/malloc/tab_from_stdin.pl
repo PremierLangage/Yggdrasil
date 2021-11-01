@@ -39,6 +39,7 @@ les taper sur son clavier).
 
 Voici, par ligne, quelques exemples d'entrée standard possibles :
 
+
     ~$> 0
     ~$> 1 42
     ~$> 2 -8 -35
