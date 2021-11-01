@@ -18,8 +18,8 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Nicolas Borie
 
-title=Allocation d'un tableau à une dimension
-tag=tableau|malloc|simple|type
+title=Allocation d'un tableau d'entier donné au clavier
+tag=tableau|malloc|scanf|entier
 
 
 text==
