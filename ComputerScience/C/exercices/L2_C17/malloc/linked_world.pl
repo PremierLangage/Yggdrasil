@@ -109,8 +109,8 @@ checks_args_stdin==#|python|
 astuces==#|python|
 [
   { "content": """Les actions à implanter sont : demander de la mémoire pour la cellule, demander aussi de la mémoire pour la chaîne et la placer dans la nouvelle cellule; recopier correctement la chaîne et initialiser le pointeur vers la cellule suivante."""},
-  { "content": """"""},
-  { "content": """"""},
+  { "content": """La stratégie la plus naturelle consiste à utiliser : `malloc` avec `sizeof(Cell)` puis `malloc` avec `strlen` et `sizeof(char)` et enfin `strcpy`."""},
+  { "content": """Parmi les sources d'erreur possibles, il ne faut pas oublier de rajouter `+1` à la longueur de la chaîne pour préparer la mémoire pour la chaine."""},
 ]
 ==
 
