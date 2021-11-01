@@ -37,7 +37,7 @@ autant d'entiers qui suivent sur l'entrée standard (l'utilisateur devra toujour
 les taper sur son clavier).
 
 
-Voici, par ligne, des exemples d'entrée standard possible :
+Voici, par ligne, quelques exemples d'entrée standard possibles :
 
     ~$> 0
     ~$> 1 42
