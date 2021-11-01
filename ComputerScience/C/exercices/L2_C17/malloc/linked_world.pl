@@ -31,6 +31,8 @@ Votre fonction devra allouer une cellule et de la place mémoire pour
 recopier la chaîne de caractères sur une zone pérenne. Finalememt,
 vous retournerez l'adresse de la cellule fraichement allouée avec
 tous ces champs correctement renseignés.
+
+
 ==
 
 editor.code==#|c|
