@@ -24,8 +24,8 @@ tag=malloc|structure|string|
 editor.height=450px
 
 text==#|markdown|
-Écrire une fonction d'allocation pour une cellule de liste chainée
-contenant un mot (une chaîne de caractères). Votre fonction prendra
+Écrire une fonction d'allocation pour une **cellule** de liste chainée
+contenant **un mot** (une chaîne de caractères). Votre fonction prendra
 en argument une chaîne de caractères (venant d'une mémoire non pérenne). 
 Votre fonction devra allouer une cellule et de la place mémoire pour 
 recopier la chaîne de caractères sur une zone pérenne. Finalememt,
