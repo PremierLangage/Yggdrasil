@@ -110,9 +110,8 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """"""},
-  { "content": """"""},
-  { "content": """"""}
+  { "content": """Les actions à menner sont : récuperer le premier entier en le stockant corectement pour avoir la taille. Allouer un tableau avec une taille adapté puis récupérer le nombre d'entiers adaptés en prenant soin de les stocker dans le tableau fraichement alloué. Finir en retournant l'adresse du tableau fabriqué et rempli durant l'exécution."""},
+  { "content": """Les briques à utiliser sont `scanf(" %d", ...);`, puis `malloc`, puis encore `scanf(" %d", ...);` mais placé dans une boucle `for` qui fera un nombre de tours adaptés."""}
 ]
 ==
 
