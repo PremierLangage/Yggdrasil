@@ -78,17 +78,16 @@ code_after==#|c|
 
 int main(int argc, char* argv[]){
 
+
   return 0;
 }
 ==
 
 checks_args_stdin==#|python|
-[["Exécution simple", ["1"], ""],
- ["Tableau vide", ["0"], ""],
- ["Tableau moyen", ["46"], ""],
- ["Test aléatoire 1", [str(randint(1, 10000))], ""],
- ["Test aléatoire 2", [str(randint(1, 1000000))], ""],
- ["Test aléatoire 3", [str(randint(10000000, 20000000))], ""]]
+[["Exécution simple", [], "1 42"],
+ ["Tableau vide", [], "0"],
+ ["Tableau moyen", [], "5 -12 54 128 -2 7"],
+ ["Test aléatoire 1", [], str(randint(5, 10))+" ".join([str(randint(-10, 10)) for i in range(10)]) ], ]
 ==
 
 astuces==#|python|
