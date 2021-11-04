@@ -30,14 +30,22 @@ goods = ["`a += a + 2;`",
          "`b = a++ + a;`",
          "`a++ + b++ + c++ + d++;`"]
 
-bads = ["`a++ + a++;`"]
+bads = ["`a++ + a++;`",
+        "`a = a++ + b++ + c++ + d++;`",
+        "`b = a++ + --a;`",
+        "`--a + a++;`"]
 
-ind_goods = random.sample(range(len(goods)), 4)
+nb_goods = random.randint(2, 4)
+nb_bads = 6 - nb_goods
+ind_goods = random.sample(range(len(goods)), nb_goods)
 random.shuffle(ind_goods)
 for i in ind_goods:
     group.items.append({"id": str(i), "content": goods[i] })
 
-group.items.append({"id": "21", "content": "`a++ + a++;`" })
+ind_bads = random.sample(range(len(bads)), nb_bads)
+random.shuffle(ind_bads)
+for i in ind_bads:
+    group.items.append({"id": str(20+i), "content": bads[i] })
 
 random.shuffle(group.items)
 ==
