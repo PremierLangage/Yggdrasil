@@ -16,8 +16,10 @@
 
 author=Prog C L2 Team
 
-title=Allocation dynamique de mémoire
+title=Expressions dans le langage C
 
 introduction==
 
 ==
+
+@ /ComputerScience/C/exercices/L2_C17/expressions/double_change.pl
