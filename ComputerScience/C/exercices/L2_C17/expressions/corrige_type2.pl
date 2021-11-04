@@ -22,7 +22,7 @@ title=Programme erroné manipulant des types
 
 tag=C|type|signature|int|erreur
 
-text==
+text==#|markdown|
 Le programme suivant comporte une erreur de type. Tentez de corriger cette erreur ! 
 Attention, cette fonction étant intégrée dans un programme pour les tests, vous ne 
 devez pas rendre la fonction inopérante.
