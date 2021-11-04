@@ -25,15 +25,10 @@ before==
 import random
 group.items = []
 
-group.items.append({"id": "1", "content": "Caster les retours de **malloc** pour rigidifier votre code." })
-group.items.append({"id": "2", "content": "Utilisez sizeof sur les types." })
-group.items.append({"id": "3", "content": "Vérifier que les retours de **malloc** sont non nuls." })
-group.items.append({"id": "4", "content": "Remonter les erreurs quand **malloc** ne donne plus de mémoire." })
+group.items.append({"id": "1", "content": "`a += a + 2;`" })
 
-group.items.append({"id": "21", "content": "Caster les retours de **malloc** car sinon ça ne compile pas." })
-group.items.append({"id": "22", "content": "Utilisez sizeof sur des expressions." })
-group.items.append({"id": "23", "content": "Quand **malloc** retourne NULL, tuer le programme immédiatement." })
-group.items.append({"id": "24", "content": "Bien mettre des zéros partout dans les zones retournées par **malloc**." })
+
+group.items.append({"id": "21", "content": "`a++ + a++;`" })
 
 random.shuffle(group.items)
 ==
