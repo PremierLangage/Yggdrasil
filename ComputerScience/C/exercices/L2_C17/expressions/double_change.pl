@@ -120,13 +120,15 @@ for item in group.items:
         if checked:
             right += 1
             item['css'] = 'success-state'
+        else:
+            error += 1
     elif checked:
         error += 1
         item['css'] = 'error-state'
     else:
         item['css'] = ''
 
-nb_error = error + (total - right)
+nb_error = error
 if note is None:
     note = (100*(max([0, total-nb_error]))) // total
 
