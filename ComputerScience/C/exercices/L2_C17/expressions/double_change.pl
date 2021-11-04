@@ -34,7 +34,8 @@ goods = ["`a += a + 2;`",
 bads = ["`a++ + a++;`",
         "`a = a++ + b++ + c++ + d++;`",
         "`b = a++ + --a;`",
-        "`--a + a++;`"]
+        "`--a + a++;`",
+        "`int a; int* p = &a; int* q = p;`<br>`*q = (*p)++;`"]
 
 nb_goods = random.randint(2, 4)
 nb_bads = 6 - nb_goods
