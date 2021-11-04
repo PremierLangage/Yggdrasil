@@ -130,7 +130,7 @@ nb_error = error + (total - right)
 if note is None:
     note = 100*((max([0, total-nb_error])) / total)
 
-feedback = "Note finale : "+str(note)+" / 100"
+feedback = "Note finale : "+str(note)+" / 100<br>"
 
 if nb_error == 0:
     feedback += '<span class="success-state">Bravo, vous avez bien trouv&eacute; toutes les instructions correctes.</span>'
