@@ -77,10 +77,12 @@ for i, e in enumerate(sortlist.items):
 if note is None:
     note = 25*(4 - errors)
 
+feedback = "Note finale : "+str(note)+" / 100<br><br>"
+
 if errors == 0:
-    grade = (100, '<span class="success-state">Bravo, les types sont bien class&eacute;s.</span>.')
+    grade = (note, feedback+'<span class="success-state">Bravo, les types sont bien class&eacute;s.</span>.')
 else:
-    grade = (0, '<span class="error-state">%s types sont mal position&eacute;s.</span>' % errors)
+    grade = (note, feedback+'<span class="error-state">%s types sont mal position&eacute;s.</span>' % errors)
 ==
 
 extracss==
