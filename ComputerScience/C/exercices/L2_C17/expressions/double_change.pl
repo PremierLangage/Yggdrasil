@@ -49,7 +49,8 @@ trop compliqués à contrôler et prévoir, il y a :
 
 
 Selectionner, parmi les expressions suivantes, celles qui sont correctes vis à vis 
-de cette règle.
+de cette règle. Cochez bien toutes les instructions, ou paquet d'instructions, qui 
+vous semble corects avant de valider.
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
