@@ -38,15 +38,16 @@ group.items.append({"id": "24", "content": "Bien mettre des zéros partout dans 
 random.shuffle(group.items)
 ==
 
-author = Nicolas Borie
+author=Nicolas Borie
 
-title =Règles de bonne utilisation de malloc.
+title=Règles de bonne utilisation de malloc.
 
 text==#|markdown|
 Sélectionnez les règles d'utilisation de **malloc** que vous demandent de 
 respecter vos enseignants à Marne-la-Vallée.
 ==
 
+tag=malloc|simple|cours
 # PRESENT THE QUESTION TO THE STUDENT
 form==
 {{ group|component }}
