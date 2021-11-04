@@ -17,6 +17,7 @@
 extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Nicolas Borie
+
 title=Programme erroné manipulant des types
 
 tag=C|type|signature|int|erreur
