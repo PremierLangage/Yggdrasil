@@ -48,6 +48,8 @@ answer = []
 for e in sortlist.items:
     answer.append(e["id"])
 random.shuffle(sortlist.items)
+
+note=None
 ==
 
 # EVALUATION
@@ -71,6 +73,9 @@ for i, e in enumerate(sortlist.items):
     if e['id'] != answer[i]:
         e['css'] = 'error-state anim-fade'
         errors += 1
+
+if note is None:
+    note = 25*(4 - errors)
 
 if errors == 0:
     grade = (100, '<span class="success-state">Bravo, les types sont bien class&eacute;s.</span>.')
