@@ -22,8 +22,7 @@ title=Allocation d'un tableau à une dimension
 
 tag=tableau|malloc|simple|type
 
-
-text==
+text==#|markdown|
 Écrire une fonction C **allocate_float_array** qui prend en argument une 
 taille **size** (sous la forme d'un entier) et qui retourne un tableau 
 fraichement alloué pouvant contenir **size** flottants simples précisions. 
