@@ -75,6 +75,8 @@ Selectionner, parmi les expressions suivantes, celles qui sont correctes vis à 
 de cette règle. Cochez bien toutes les instructions, ou paquet d'instructions, qui 
 vous semble corects avant de valider.
 
+<br>
+
 Pas d'indice ici : variable par variable, emplacement mémoire par emplacement mémoire 
 vous devez vérifier que les choses ne sont pas modifiées plus d'une fois.
 ==
