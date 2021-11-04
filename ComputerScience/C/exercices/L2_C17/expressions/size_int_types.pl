@@ -24,7 +24,7 @@ author = Nicolas Borie
 
 tag=C|type|sizeof|int
 
-text== 
+text==#|markdown|
 Classez les types entiers suivant du plus petit (en haut) en mémoire au plus grand (en bas).
 ==
 
