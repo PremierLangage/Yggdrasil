@@ -29,7 +29,7 @@ goods = ["`a += a + 2;`",
          "`a = b++ + c++ + d++ + e++;`",
          "`b = a++ + a;`",
          "`a++ + b++ + c++ + d++;`",
-         "`int a, b, c;`<br>`b = 2;`<br>`a = b;`<br>`c = a++ + b++;`"
+         "`int a, b, c;`<br>`b = 2;`<br>`a = b;`<br>`c = a++ + b++;`",
          "`int a, b; int* p = &a;`<br>`b = (*p)++;`"]
 
 bads = ["`a++ + a++;`",
