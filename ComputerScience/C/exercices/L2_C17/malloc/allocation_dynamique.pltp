@@ -27,6 +27,7 @@ de mémoire en langage C.
 @ /ComputerScience/C/exercices/L2_C17/malloc/rules_with_malloc.pl
 @ /ComputerScience/C/exercices/L2_C17/malloc/when_use_malloc.pl
 @ /ComputerScience/C/exercices/L2_C17/malloc/nb_malloc.pl
+@ /ComputerScience/C/exercices/L2_C17/malloc/order_size.pl
 @ /ComputerScience/C/exercices/L2_C17/malloc/first_last_name.pl
 @ /ComputerScience/C/exercices/L2_C17/malloc/linked_double.pl
 @ /ComputerScience/C/exercices/L2_C17/malloc/linked_world.pl
