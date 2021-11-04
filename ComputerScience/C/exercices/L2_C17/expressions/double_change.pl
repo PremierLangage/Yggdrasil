@@ -48,6 +48,8 @@ trop compliqués à contrôler et prévoir, il y a :
 **la même variable ou le même emplacement mémoire.**
 
 
+Selectionner, parmi les expressions suivantes, celles qui sont correctes vis à vis 
+de cette règle.
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
