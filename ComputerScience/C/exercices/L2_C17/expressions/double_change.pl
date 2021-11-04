@@ -64,10 +64,12 @@ instructions ont à la fois des effets de modifications de la mémoire tout
 en ayant aussi des valeurs. Parmi les règles fondamentales limitant les effets 
 trop compliqués à contrôler et prévoir, il y a :
 
+<br>
 
 **Une instruction n'est plus valide si elle produit deux modifications sur **
 **la même variable ou le même emplacement mémoire.**
 
+<br>
 
 Selectionner, parmi les expressions suivantes, celles qui sont correctes vis à vis 
 de cette règle. Cochez bien toutes les instructions, ou paquet d'instructions, qui 
