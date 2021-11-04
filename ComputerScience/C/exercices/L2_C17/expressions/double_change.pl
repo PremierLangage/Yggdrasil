@@ -33,8 +33,8 @@ goods = ["`a += a + 2;`",
 bads = ["`a++ + a++;`"]
 
 ind_goods = random.shuffle(random.sample(range(len(goods)), 4))
-
-group.items.append({"id": "1", "content": "`a += a + 2;`" })
+for i in ind_goods:
+    group.items.append({"id": str(i), "content": goods[i] })
 
 group.items.append({"id": "21", "content": "`a++ + a++;`" })
 
