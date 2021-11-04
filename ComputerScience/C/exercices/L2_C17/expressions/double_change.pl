@@ -114,8 +114,8 @@ error = 0
 for item in group.items:
     checked = item['checked']
     id_int = int(item['id'])
+    total += 1
     if id_int < 20:
-        total += 1
         item['css'] = 'error-state'
         if checked:
             right += 1
@@ -130,10 +130,12 @@ nb_error = error + (total - right)
 if note is None:
     note = 100*((max([0, total-nb_error])) / total)
 
+feedback = "Note finale : "+str(note)+" / 100"
+
 if nb_error == 0:
-    feedback = '<span class="success-state">Bravo, vous avez bien trouv&eacute; toutes les instructions correctes.</span>'
+    feedback += '<span class="success-state">Bravo, vous avez bien trouv&eacute; toutes les instructions correctes.</span>'
 else:
-    feedback = '<span class="error-state">Tout n\'est pas correct, il y a %d erreur(s).</span>' % nb_error
+    feedback += '<span class="error-state">Tout n\'est pas correct, il y a %d erreur(s).</span>' % nb_error
 
 grade = (note, feedback)
 ==
