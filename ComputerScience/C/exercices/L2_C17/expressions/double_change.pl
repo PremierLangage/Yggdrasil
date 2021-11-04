@@ -48,8 +48,11 @@ instructions ont à la fois des effets de modifications de la mémoire tout
 en ayant aussi des valeurs. Parmi les règles fondamentales limitant les effets 
 trop compliqués à contrôler et prévoir, il y a :
 
+
 **Une instruction n'est plus valide si elle produit deux modifications sur **
 **la même variable ou le même emplacement mémoire.**
+
+
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
