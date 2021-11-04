@@ -73,9 +73,9 @@ for i, e in enumerate(sortlist.items):
         errors += 1
 
 if errors == 0:
-    grade = (100, '<span class="success-state">Bravo, les types sont bien classés.</span>.')
+    grade = (100, '<span class="success-state">Bravo, les types sont bien class&eacute;s.</span>.')
 else:
-    grade = (0, '<span class="error-state">%s types sont mal positionés.</span>' % errors)
+    grade = (0, '<span class="error-state">%s types sont mal position&eacute;s.</span>' % errors)
 ==
 
 extracss==
