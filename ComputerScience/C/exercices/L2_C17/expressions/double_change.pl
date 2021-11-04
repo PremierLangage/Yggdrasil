@@ -30,7 +30,8 @@ goods = ["`a += a + 2;`",
          "`b = a++ + a;`",
          "`a++ + b++ + c++ + d++;`",
          "`int a, b, c;`<br>`b = 2;`<br>`a = b;`<br>`c = a++ + b++;`",
-         "`int a, b; int* p = &a;`<br>`b = (*p)++;`"]
+         "`int a, b; int* p = &a;`<br>`b = (*p)++;`",
+         "`int a, b;`<br>`a = b;`<br>`a++ + b++;`"]
 
 bads = ["`a++ + a++;`",
         "`a = a++ + b++ + c++ + d++;`",
@@ -81,8 +82,10 @@ vous semble corects avant de valider.
 
 <br>
 
-<u>Pas d'indice ici :</u> variable par variable, emplacement mémoire par emplacement mémoire 
-vous devez vérifier que les choses ne sont pas modifiées plus d'une fois dans une même instruction.
+<u>Pas d'indice ici :</u> variable par variable, emplacement mémoire par emplacement mémoire, 
+vous devez vérifier que les choses ne sont pas modifiées plus d'une fois dans une même instruction. 
+Concentrez vous et n'allez pas trop vite, l'exercice gardera en mémoire la note de votre première 
+tentative.
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
