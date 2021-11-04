@@ -38,13 +38,18 @@ group.items.append({"id": "24", "content": "Bien mettre des zéros partout dans 
 random.shuffle(group.items)
 ==
 
-author = Nicolas Borie
+author=Nicolas Borie
 
-title =Règles de bonne utilisation de malloc.
+title=Instructions au comportement indéfini
 
-text==
-Sélectionnez les règles d'utilisation de **malloc** que vous demandent de 
-respecter vos enseignants à Marne-la-Vallée.
+text==#|markdown|
+La langage C demande une très forte concentration du programmeur car les 
+instructions ont à la fois des effets de modifications de la mémoire tout 
+en ayant aussi des valeurs. Parmi les règles fondamentales limitant les effets 
+trop compliqués à contrôler et prévoir, il y a :
+
+**Une instruction n'est plus valide si elle produit deux modifications sur **
+**la même variable ou le même emplacement mémoire.**
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
