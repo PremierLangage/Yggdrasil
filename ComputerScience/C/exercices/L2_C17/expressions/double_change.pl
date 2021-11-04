@@ -128,7 +128,7 @@ for item in group.items:
 
 nb_error = error + (total - right)
 if note is None:
-    note = 100*((max([0, total-nb_error])) / total)
+    note = (100*(max([0, total-nb_error]))) // total
 
 feedback = "Note finale : "+str(note)+" / 100<br><br>"
 
