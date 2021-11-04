@@ -21,32 +21,32 @@ title=Programme erroné manipulant des types
 
 tag=C|type|division|erreur
 
-text==
+text==#|markdown|
 Le programme suivant comporte une erreur de type. Tentez de corriger cette erreur ! 
 Attention, cette fonction étant intégrée dans un programme pour les tests, vous ne 
 devez pas rendre la fonction inopérante.
 ==
 
-code_before==
+code_before==#|c|
 
 #include <stdio.h>
 #include <stdlib.h>
 
 ==
 
-editor.code==
+editor.code==#|c|
 float moyenne(int a, int b, int c){
     return (a+b+c) / 3;
 }
 ==
 
-solution==
+solution==#|c|
 float moyenne(int a, int b, int c){
     return (a+b+c) / 3.0;
 }
 ==
 
-code_after==
+code_after==#|c|
 
 int main(int argc, char* argv[]){
   int a = atoi(argv[1]);
@@ -60,7 +60,7 @@ int main(int argc, char* argv[]){
 ==
 
 
-checks_args_stdin==
+checks_args_stdin==#|python|
 [ ["Simple éxécution", ["1", "1", "1"], ""],
   ["Premier problème", ["1", "1", "2"], ""],
   ["Test aléatoire", [str(randint(0, 50)) for i in range(3)],""],
