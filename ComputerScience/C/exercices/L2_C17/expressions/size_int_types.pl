@@ -52,6 +52,19 @@ random.shuffle(sortlist.items)
 
 # EVALUATION
 evaluator== #|python|
+form+="""
+
+<style>
+.error-state{
+   padding: 10px;
+}
+.success-state{
+   padding: 10px;
+}
+</style>
+"""
+
+
 errors = 0
 for i, e in enumerate(sortlist.items):
     e['css'] = 'success-state anim-fade'
