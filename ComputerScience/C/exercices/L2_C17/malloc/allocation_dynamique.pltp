@@ -19,7 +19,8 @@ author=Prog C L2 Team
 title=Allocation dynamique de mémoire
 
 introduction==
-
+Cette fiche d'exercices porte sur la découverte de l'allocation dynamique 
+de mémoire en langage C.
 ==
 
 @ /ComputerScience/C/exercices/L2_C17/malloc/tab1d.pl
