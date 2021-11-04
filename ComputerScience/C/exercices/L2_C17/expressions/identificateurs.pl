@@ -75,18 +75,23 @@ error = 0
 for item in group.items:
     checked = item['checked']
     id_int = int(item['id'])
+    total += 1
     if id_int < 20:
-        total += 1
         item['css'] = 'error-state'
         if checked:
             right += 1
             item['css'] = 'success-state'
+        else:
+            error += 1
     elif checked:
         error += 1
         item['css'] = 'error-state'
+    else:
+        item['css'] = ''
 
-nb_error = error + (total - right)
-note = 100*((max([0, total-nb_error])) / total)
+nb_error = error
+if note is None:
+    note = (100*(max([0, total-nb_error]))) // total
 
 if nb_error == 0:
     feedback = '<span class="success-state">Bravo, ce sont bien les identificateurs possibles de variables!</span>'
