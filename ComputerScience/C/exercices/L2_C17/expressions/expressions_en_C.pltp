@@ -19,7 +19,16 @@ author=Prog C L2 Team
 title=Expressions dans le langage C
 
 introduction==
+Les exercices qui suivent portent sur les notions de variables, de types 
+et d'instructions dans le langage C. Il y a quelques exercices de cours mais 
+aussi quelques exercices de programmation.
 
+Attention, certains exercices vous autoriseront à formuler plusieurs réponses 
+et d'autre pas. PL reste un lieu d'entrainement seulement, l'erreur dans PL 
+est sans conséquence et évite de faire les mêmes erreurs en examen. Rappelez 
+vous que dans un examen écrit, on ne peut formuler qu'une seule réponse.
 ==
 
+@ /ComputerScience/C/exercices/L2_C17/expressions/carac_var.pl
+@ /ComputerScience/C/exercices/L2_C17/expressions/double_change.pl
 @ /ComputerScience/C/exercices/L2_C17/expressions/double_change.pl
