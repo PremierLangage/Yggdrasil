@@ -25,12 +25,16 @@ before==#|python|
 import random
 group.items = []
 
-goods = ["`a += a + 2;`"]
+goods = ["`a += a + 2;`", 
+         "`a = b++ + c++ + d++ + e++;`",
+         "`b = a++ + a;`",
+         "`a++ + b++ + c++ + d++;`"]
 
-bads = []
+bads = ["`a++ + a++;`"]
+
+ind_goods = random.shuffle(random.sample(range(len(goods)), 4))
 
 group.items.append({"id": "1", "content": "`a += a + 2;`" })
-
 
 group.items.append({"id": "21", "content": "`a++ + a++;`" })
 
