@@ -25,7 +25,7 @@ author = Nicolas Borie
 
 tag=C|variable|mémoire|sizeof
 
-text== 
+text==#|markdown|
 
 Classer les variables suivantes de la plus petite en mémoire à la plus grosse. la
 machine est un ordinateur standard exécutant un système d'exploitation 64 bits.
