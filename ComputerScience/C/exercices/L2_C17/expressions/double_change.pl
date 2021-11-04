@@ -52,6 +52,8 @@ for i in ind_bads:
     group.items.append({"id": str(20+i), "content": bads[i] })
 
 random.shuffle(group.items)
+
+note=None
 ==
 
 author=Nicolas Borie
@@ -121,7 +123,8 @@ for item in group.items:
         item['css'] = ''
 
 nb_error = error + (total - right)
-note = 100*((max([0, total-nb_error])) / total)
+if note is None:
+    note = 100*((max([0, total-nb_error])) / total)
 
 if nb_error == 0:
     feedback = '<span class="success-state">Bravo, vous avez bien trouv&eacute; toutes les instructions correctes.</span>'
