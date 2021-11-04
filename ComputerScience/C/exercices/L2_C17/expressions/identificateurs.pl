@@ -21,7 +21,7 @@ builder =@ /builder/before.py
 group =: CheckboxGroup
 
 # GENERATE A RANDOM QUESTION
-before==
+before==#|python|
 import random
 group.items = []
 
@@ -37,6 +37,8 @@ group.items.append({"id": "22", "content": "12ABA21" })
 group.items.append({"id": "23", "content": "7_car" })
 
 random.shuffle(group.items)
+
+note=None
 ==
 
 author = Nicolas Borie
@@ -55,8 +57,17 @@ form==
 
 # EVALUATE THE STUDENT ANSWER
 evaluator==#|python|
+form+="""
 
-
+<style>
+.error-state{
+   padding: 10px;
+}
+.success-state{
+   padding: 10px;
+}
+</style>
+"""
 
 right = 0
 total = 0
