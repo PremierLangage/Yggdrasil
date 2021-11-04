@@ -21,9 +21,13 @@ builder =@ /builder/before.py
 group =: CheckboxGroup
 
 # GENERATE A RANDOM QUESTION
-before==
+before==#|python|
 import random
 group.items = []
+
+goods = ["`a += a + 2;`"]
+
+bads = []
 
 group.items.append({"id": "1", "content": "`a += a + 2;`" })
 
@@ -94,7 +98,7 @@ nb_error = error + (total - right)
 note = 100*((max([0, total-nb_error])) / total)
 
 if nb_error == 0:
-    feedback = '<span class="success-state">Bravo, on vous demandera de respecter ses 4 r&egrave;gles.</span>'
+    feedback = '<span class="success-state">Bravo, vous avez bien trouvé toutes les instructions correctes.</span>'
 else:
     feedback = '<span class="error-state">Tout n\'est pas correct, il y a %d erreur(s).</span>' % nb_error
 
