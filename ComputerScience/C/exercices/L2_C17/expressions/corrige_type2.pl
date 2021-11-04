@@ -25,17 +25,17 @@ tag=C|type|signature|int|erreur
 text==
 Le programme suivant comporte une erreur de type. Tentez de corriger cette erreur ! 
 Attention, cette fonction étant intégrée dans un programme pour les tests, vous ne 
-pouvez pas changer son propotype.
+devez pas rendre la fonction inopérante.
 ==
 
-code_before==
+code_before==#|c|
 
 #include <stdio.h>
 #include <stdlib.h>
 
 ==
 
-editor.code==
+editor.code==#|c|
 int max(int tab[], int size){
   int i;
   unsigned int max=0;
@@ -48,7 +48,7 @@ int max(int tab[], int size){
 } 
 ==
 
-solution==
+solution==#|c|
 
 int max(int tab[], int size){
   int i;
@@ -62,7 +62,7 @@ int max(int tab[], int size){
 }
 ==
 
-code_after==
+code_after==#|c|
 
 int main(int argc, char* argv[]){
   int tab[100];
