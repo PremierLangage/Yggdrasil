@@ -81,7 +81,7 @@ int main(int argc, char* argv[]){
 ==
 
 
-checks_args_stdin==
+checks_args_stdin==#|python|
 [ ["simple éxécution", [], "1 2 3 4 5"],
   ["avec deux négatifs", [], "-1 -2"],
   ["aléatoire négatif", [], " ".join([str(randint(-30,-5)) for i in range(randint(5,10))])],
