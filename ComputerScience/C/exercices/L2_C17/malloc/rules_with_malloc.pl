@@ -42,7 +42,7 @@ author = Nicolas Borie
 
 title =Règles de bonne utilisation de malloc.
 
-text==
+text==#|markdown|
 Sélectionnez les règles d'utilisation de **malloc** que vous demandent de 
 respecter vos enseignants à Marne-la-Vallée.
 ==
