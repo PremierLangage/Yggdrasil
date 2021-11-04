@@ -58,6 +58,8 @@ author=Nicolas Borie
 
 title=Instructions au comportement indéfini
 
+tag=cours|règle|instruction
+
 text==#|markdown|
 La langage C demande une très forte concentration du programmeur car les 
 instructions ont à la fois des effets de modifications de la mémoire tout 
