@@ -26,6 +26,11 @@ tag=C|type|sizeof|int
 
 text==#|markdown|
 Classez les types entiers suivant du plus petit (en haut) en mémoire au plus grand (en bas).
+
+<br>
+
+Concentrez vous et n'allez pas trop vite, l'exercice gardera en mémoire la note de votre première 
+tentative.
 ==
 
 form = {{ sortlist|component }}
