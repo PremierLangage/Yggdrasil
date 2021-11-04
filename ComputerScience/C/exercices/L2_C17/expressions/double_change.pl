@@ -77,8 +77,8 @@ vous semble corects avant de valider.
 
 <br>
 
-Pas d'indice ici : variable par variable, emplacement mémoire par emplacement mémoire 
-vous devez vérifier que les choses ne sont pas modifiées plus d'une fois.
+<u>Pas d'indice ici :</u> variable par variable, emplacement mémoire par emplacement mémoire 
+vous devez vérifier que les choses ne sont pas modifiées plus d'une fois dans une même instruction.
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
