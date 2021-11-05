@@ -49,6 +49,18 @@ form==
 ==
 
 evaluator== #|python|
+form+="""
+
+<style>
+.error-state{
+   padding: 10px;
+}
+.success-state{
+   padding: 10px;
+}
+</style>
+"""
+
 
 def in_links(conn, links):
     for e in links:
