@@ -60,6 +60,19 @@ random.shuffle(sortlist.items)
 
 # EVALUATION
 evaluator== #|python|
+form+="""
+
+<style>
+.error-state{
+   padding: 10px;
+}
+.success-state{
+   padding: 10px;
+}
+</style>
+"""
+
+
 errors = 0
 for i, e in enumerate(sortlist.items):
     e['css'] = 'success-state anim-fade'
@@ -68,9 +81,9 @@ for i, e in enumerate(sortlist.items):
         errors += 1
 
 if errors == 0:
-    grade = (100, '<span class="success-state">Bravo, elles sont bien classées en taille croissante !</span>.')
+    grade = (100, '<span class="success-state">Bravo, elles sont bien class&eacute;es en taille croissante !</span>.')
 else:
-    grade = (0, '<span class="error-state">%s variables sont mal positionées.</span>' % errors)
+    grade = (0, '<span class="error-state">%s variables sont mal position&eacute;es.</span>' % errors)
 ==
 
 extracss==
