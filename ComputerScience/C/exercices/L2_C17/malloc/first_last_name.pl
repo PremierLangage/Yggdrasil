@@ -19,6 +19,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 author=Nicolas Borie
 
 title=Deux chaînes à allouer et recopier dans une structure
+
 tag=string|malloc|structure|recopiage
 
 editor.height=350px
