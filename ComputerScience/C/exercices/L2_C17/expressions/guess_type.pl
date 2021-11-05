@@ -36,7 +36,9 @@ match.nodes.append({"id": "103", "content": "`char`", "target": True})
 if 1 in ind_selec:
     match.nodes.append({"id": "1", "content": """`printf("Bonjour\n");`""", "source": True})
     expected.append({ "source": "1", "target": "102"})
-
+if 2 in ind_selec:
+    match.nodes.append({"id": "2", "content": """`(1+2+3)/4`""", "source": True})
+    expected.append({ "source": "2", "target": "102"})
 
 random.shuffle(match.nodes)
 ==
