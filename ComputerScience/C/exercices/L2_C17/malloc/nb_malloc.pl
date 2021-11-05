@@ -22,6 +22,8 @@ title==
 Stratégie d'allocation
 ==
 
+tag=modelistion|mémoire|malloc
+
 author=Nicolas Borie
 
 text==
