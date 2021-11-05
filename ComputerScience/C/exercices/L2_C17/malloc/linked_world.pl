@@ -19,6 +19,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 author=Nicolas Borie
 
 title=Cellule pour contenir un mot
+
 tag=malloc|structure|string|
 
 editor.height=450px
