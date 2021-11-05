@@ -32,8 +32,8 @@ match.nodes.append({"id": "101", "content": "`double`", "target": True})
 match.nodes.append({"id": "102", "content": "`int`", "target": True})
 match.nodes.append({"id": "103", "content": "`char`", "target": True})
 
-match.nodes.append({"id": "1", "content": "", "source": True})
-expected.append({ "source": sourceId, "target": targetId })
+match.nodes.append({"id": "1", "content": """`printf("Bonjour\n");`""", "source": True})
+expected.append({ "source": "1", "target": "102"})
 
 random.shuffle(match.nodes)
 ==
