@@ -42,6 +42,8 @@ author = Nicolas Borie
 
 title = Bonnes utilisations de malloc.
 
+tag=stratégie|mémoire|malloc
+
 text==
 Sélectionner les circonstances pour lesquelles il est judiscieux d'avoir recours à de l'allocation dynamique.
 ==
