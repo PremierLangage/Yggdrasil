@@ -28,21 +28,20 @@ match.nodes = []
 expected = []
 
 match.nodes.append({"id": "100", "content": "`float`", "target": True})
+match.nodes.append({"id": "101", "content": "`double`", "target": True})
+match.nodes.append({"id": "102", "content": "`int`", "target": True})
+match.nodes.append({"id": "103", "content": "`char`", "target": True})
 
-match.nodes.append({"id": "1", "content": "%d * %d" % (a, b), "source": True})
-
-match.nodes.append({"id": "100", "content": "`float`", "target": True})
-
+match.nodes.append({"id": "1", "content": "", "source": True})
 expected.append({ "source": sourceId, "target": targetId })
+
 random.shuffle(match.nodes)
 ==
 
-title==
-Match List Component
-==
+title=Trouver les types d'expressions
 
 text==
-*Link each operation to the appropriate result.*
+Relier chaque expression sur la gauche avec son type sur la droite.
 ==
 
 form==
