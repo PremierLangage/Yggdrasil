@@ -19,6 +19,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 author=Nicolas Borie
 
 title=Allocation d'un tableau d'entier donné au clavier
+
 tag=tableau|malloc|scanf|entier|clavier
 
 editor.height=350px
