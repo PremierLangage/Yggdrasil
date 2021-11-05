@@ -26,7 +26,7 @@ before==#|python|
 import random
 match.nodes = []
 expected = []
-ind_selec = [1]
+ind_selec = [1, 2]
 
 match.nodes.append({"id": "100", "content": "`float`", "target": True})
 match.nodes.append({"id": "101", "content": "`double`", "target": True})
