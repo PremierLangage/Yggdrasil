@@ -6,9 +6,11 @@
 
 extends = /ComputerScience/python/template/pltest.pl
 
+title= deck32 un jeux de 32 cartes 
+
 text==
 
-Ecrire la fonction **deack32** correspondant au doctest suivant
+Ecrire la fonction **deck32** correspondant au doctest suivant
 
 ```python
     """Create a 32  card set 
