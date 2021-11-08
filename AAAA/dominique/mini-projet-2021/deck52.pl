@@ -1,6 +1,7 @@
 
 
 
+extends = /ComputerScience/python/template/pltest.pl
 
 title = deck52
 
