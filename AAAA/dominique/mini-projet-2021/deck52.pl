@@ -8,7 +8,7 @@ extends = /ComputerScience/python/template/pltest.pl
 
 text==
 
-Ecrire la fonction  correspondant au doc test suivant
+Ecrire la fonction **deack32** correspondant au doctest suivant
 
 ```python
     """Create a 32  card set 
