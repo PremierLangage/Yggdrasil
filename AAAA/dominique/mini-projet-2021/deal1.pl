@@ -15,6 +15,6 @@ pltest==
 >>> new_card("roi","pique")
 ('roi', 'pique')
 >>> new_card(5,6)
-(5,6)
+(5, 6)
 ==
 
