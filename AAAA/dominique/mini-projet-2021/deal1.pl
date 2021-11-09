@@ -2,31 +2,19 @@
 
 
 
+extends = func.pl
 
-title= Distribution 
+funcname=new_card
 
-text==
-
-
-Ecrire une fonction **deal** qui vérifie le doctest suivant :
-
-```python
-
-la fonction deal(deck,nbcard,rand=False) retourne un tuple de deux listes 
-
-la première contient nbcard cartes choisi (aléatoirement rand ou pas) 
-
-la deuxième contient les cartes du deck non selectionnés.
-
-Si le deck ne contient pas assez de carte retourne None.
-```
-
+doctest==
+retourne une nouvelle carte un tuple (heigth,  color)
 ==
 
 
 pltest==
->>> deal([],3)
->>> deal([(1,2),(3,4)],1)
-[(1,2)],[(3,4)]
+>>> new_card("roi","pique")
+("roi","pique")
+>>> new_card(5,6)
+(5,6)
 ==
 
