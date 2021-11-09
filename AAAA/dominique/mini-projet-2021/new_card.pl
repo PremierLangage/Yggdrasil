@@ -9,7 +9,7 @@ title= new_card
 
 doctest==
 Prend en paramêtres heigth et color 
-retourne une nouvelle carte un tuple (heigth,  color)
+retourne une nouvelle carte : un tuple (heigth,  color)
 ==
 
 
