@@ -10,6 +10,7 @@ doctest==
 La fonction melange(deck,seed=None) melange de façon aléatoire avec le module random la liste deck passé en parametre.
 Si seed est non None seed est utilisé pour initialiser la graine du générateur aléatoire.
 
+N'oubliez pas d'importer random. 
 ==
 
 pltest==
