@@ -6,7 +6,8 @@ funcname=deal
 title= Distribution
 
 doctest==
-la fonction  deal(deck, nb_cartes=5, nbjoueurs=4):
+
+    la fonction  deal(deck, nb_cartes=5, nbjoueurs=4):
 
     Distribue nb_cartes cartes du deck a nbjoueurs 
 
