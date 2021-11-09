@@ -3,7 +3,7 @@ extends = func.pl
 
 title= Choix de la carte a jouer pour le premier joueur
 
-texte==
+text==
 
 Le choix d'entame est le moment le plus délicat pour le joueur, nous proposont un stratégie simple le joueur joue sa carte la plus forte.
 
