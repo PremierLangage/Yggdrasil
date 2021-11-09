@@ -17,7 +17,7 @@ Une stratégie un peu meilleur cherche à joueur une carte qui est sure de faire
 
 ==
 doctest==
-la fonction choixentame(jeudujoeur, atout, pliss) prend un parametre une liste cartes l'atout et les plis déjà réalisés.
+la fonction **choixentame(jeudujoeur, atout, pliss)** prend un parametre une liste cartes l'atout et les plis déjà réalisés.
 
 la fonction retire du jeux du joueur et la retourne la carte la plus forte (strength).
 ==
