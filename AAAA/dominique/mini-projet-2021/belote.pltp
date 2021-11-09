@@ -1,0 +1,53 @@
+
+
+
+title= Simulateur de belote 
+
+introduction==
+
+
+L'objectif de cette feuille d'exercice est de vous aidez a teste la validité des fonctions demandées dans le miniprojet.
+
+Vous pouvez commencer a coder vos fonction ici et valider leur fonctionnement et puis les utiliser 
+dans un programme python par la suite.
+
+Voici du code que vous pouvez inserez quand vous en avez besoin dans votre code :
+```
+``
+HEIGTH= ( "7", "8", "9","Valet", "Dame", "Roi", "10","As")
+COLOR= ("Coeur", "Carreau", "Trèfle", "Pique")
+HEIGTHA= ( "7", "8", "Dame", "Roi", "10", "As", "9", "Valet")
+
+```
+
+Cela permettra d'avoir une approche uniforme des cartes qui sont des tuples (heigth,color).
+
+Les premiers exercices sont facile et progressivement plus durs avec l'écriture des fonctions : new_card, deck32, deal, valeur, strength, melange.
+
+En suite les fonctions suivantes demande un peu plus de temps et demande de comprendre les règles de la belote
+ mais ne sont pas beaucoup plus longues: gagnant, comptePoints, choixentame, choixcarte,
+
+
+
+==
+
+# Fonctions de base 
+@ new_card.pl
+@ deck32.pl
+@ distribue.pl
+@ valeur.pl
+@ strength.pl
+@ melange.pl
+
+
+# Plus chaud 
+@ gagnant.pl 
+reserve==
+@ comptePoints.pl 
+@ choixentame.pl 
+@ choixcarte.pl
+
+# Programme 
+
+@ programme.pl 
+==
