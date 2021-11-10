@@ -13,7 +13,10 @@ doctest==
 
     par défaut cela distribue 5 cartes a 4 joueurs
 
-    retourne une liste de nbjoueurs listes de nb_cartes 
+    retourne une liste de nbjoueurs listes de nb_cartes.
+
+    **Attention il faut retirer les cartes du paquet (deck) une par une pour cela vous utiliserez la fonction pop().**
+    
 ==
 
 pltest==
