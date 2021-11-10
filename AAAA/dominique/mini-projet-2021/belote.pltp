@@ -11,7 +11,7 @@ L'objectif de cette feuille d'exercice est de vous aidez a teste la validité de
 Vous pouvez commencer a coder vos fonction ici et valider leur fonctionnement et puis les utiliser 
 dans un programme python par la suite.
 
-Voici du code que vous pouvez inserez quand vous en avez besoin dans votre code :
+Voici du code que vous pouvez inserez quand vous en avez besoin :
 ```
 ``
 HEIGTH= ( "7", "8", "9","Valet", "Dame", "Roi", "10","As")
@@ -27,6 +27,8 @@ Les premiers exercices sont facile et progressivement plus durs avec l'écriture
 En suite les fonctions suivantes demande un peu plus de temps et demande de comprendre les règles de la belote
  mais ne sont pas beaucoup plus longues: gagnant, comptePoints, choixentame, choixcarte,
 
+Les règles de la belote :
+[https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/  ](https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/)
 
 
 ==
