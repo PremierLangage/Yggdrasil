@@ -42,10 +42,11 @@ En suite les fonctions suivantes demande un peu plus de temps et demande de comp
 
 # Plus chaud 
 @ gagnant.pl 
-reserve==
+
 @ comptePoints.pl 
 @ choixentame.pl 
 @ choixcarte.pl
+reserve==
 
 # Programme 
 
