@@ -1,14 +1,14 @@
 
 
 
-
 extends = func.pl
 
 funcname=new_card
 title= new_card 
 
 doctest==
-Prend en paramêtres heigth et color 
+
+La fonction **new_card(heigth,color)** prend en paramêtres heigth et color 
 retourne une nouvelle carte : un tuple (heigth,  color)
 ==
 
