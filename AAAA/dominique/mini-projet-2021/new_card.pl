@@ -10,6 +10,10 @@ doctest==
 
 La fonction **new_card(heigth,color)** prend en paramêtres heigth et color 
 retourne une nouvelle carte : un tuple (heigth,  color)
+exemple:
+>>> new_card("roi","pique")
+('roi', 'pique')
+
 ==
 
 
