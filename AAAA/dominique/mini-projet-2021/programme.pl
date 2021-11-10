@@ -10,7 +10,7 @@ SI vous avez réussi à écrire toutes les fonctions vous pouvez vous attaquer a
 
 Voici un squette du programme principal.
 
-# Deux équipes de deux joueurs = (nord,sud) et (est, ouest)
+  # Deux équipes de deux joueurs = (nord,sud) et (est, ouest)
     while partie pas terminé :
         # Choisir le joeur qui parle en premier (normalement le joeur a gauche du distributeur parle en premier, et ce role tourne dans le sens horraire)
         # création du jeu pour la manche courrante 
