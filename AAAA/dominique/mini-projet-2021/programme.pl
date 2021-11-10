@@ -11,7 +11,7 @@ qui utilise ces fonctions pour simuler une partie.
 
 Voici un squette du programme principal. Version plus lisible sur elearning.
 ```
-# Deux équipes de deux joueurs = (nord,sud) et (est, ouest)
+    # Deux équipes de deux joueurs = (nord,sud) et (est, ouest)
     while partie pas terminé :
         # Choisir le joeur qui parle en premier (normalement le joeur a gauche du distributeur parle en premier, et ce role tourne dans le sens horraire)
         # création du jeu pour la manche courrante 
@@ -35,6 +35,6 @@ Voici un squette du programme principal. Version plus lisible sur elearning.
         # affecter le bon nombre de points de victoire  à chaque équipe
         # Belote est gagnée dans tout les cas.
 
-# féliciter l'équipe gagnante 
+    # féliciter l'équipe gagnante 
 ```
 ==
