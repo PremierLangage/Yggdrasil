@@ -26,16 +26,13 @@ Voici un squette du programme principal.
         # distribution des cartes restante avec la retourne au preneur
         # calcul de la prime belote et rebelote 
         # jeu
-        # pour chaque tour "donner la main" au joueur qui parle en premier puis aux gangnant du plis précédent
+        # pour chaque tour "donner la main" au joueur qui parle en premier puis aux gagnant du plis précédent
             # lancer le plis c'est "l'entame" le joueur qui à la main choisi la premier carte du plis 
             # les autres joueurs dans l'ordre horraire fournissent une carte en suivant les règles
-
-
-        # Dix de der calculer l'équipe qui gagne le dernier plis
-        # Belote est gangnée dans tout les cas.
+        # Dix de der calculer l'équipe qui a gagne le dernier plis
         # Calcul des points des deux paquets de plis sans oublier le dixdeder
-
         # affecter le bon nombre de points de victoire  à chaque équipe
+        # Belote est gagnée dans tout les cas.
 
 # féliciter l'équipe gagnante 
 
