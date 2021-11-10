@@ -22,7 +22,7 @@ pour cela vous utiliserez la fonction deck.pop(0).
 ==
 
 pltest==
->>> deal([], ,nb_cartes=2,nbjoueurs=2) # pas assez de cartes 
+>>> deal([],nb_cartes=2,nbjoueurs=2) # pas assez de cartes 
 >>> deal([('7', 'Coeur'), ('7', 'Carreau'), ('7', 'Trèfle'), ('7', 'Pique')],nb_cartes=2,nbjoueurs=2)
 [[('7', 'Coeur'), ('7', 'Trèfle')], [('7', 'Carreau'), ('7', 'Pique')]]
 >>> deal([('Valet', 'Coeur'), ('Valet', 'Carreau'), ('Valet', 'Trèfle'), ('Valet', 'Pique'), ('Dame', 'Coeur'), ('Dame', 'Carreau'), ('Dame', 'Trèfle'), ('Dame', 'Pique'), ('Roi', 'Coeur'), ('Roi', 'Carreau'), ('Roi', 'Trèfle'), ('Roi', 'Pique'), ('10', 'Coeur'), ('10', 'Carreau'), ('10', 'Trèfle'), ('10', 'Pique'), ('As', 'Coeur'), ('As', 'Carreau'), ('As', 'Trèfle'), ('As', 'Pique')]) # 5 cartes 4 joueurs
