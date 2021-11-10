@@ -17,7 +17,7 @@ doctest==
 
 **Attention** il faut retirer les cartes du paquet (deck) une par une
 
-pour cela vous utiliserez la fonction deck.pop() sans paramètres.
+pour cela vous utiliserez la fonction deck.pop(0) sans paramètres.
 
 ==
 
