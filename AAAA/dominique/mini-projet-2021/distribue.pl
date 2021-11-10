@@ -7,23 +7,23 @@ title= Distribution
 
 doctest==
 
-    la fonction  deal(deck, nb_cartes=5, nbjoueurs=4):
+    la fonction  deal(deck, nb_cartes=5, nb_joueurs=4):
 
-    Distribue nb_cartes cartes du deck a nbjoueurs 
+    Distribue nb_cartes cartes du deck a nb_joueurs 
 
     par défaut cela distribue 5 cartes a 4 joueurs
 
-    retourne une liste de nbjoueurs listes de nb_cartes.
+    retourne une liste de nb_joueurs listes de nb_cartes.
 
 **Attention** il faut retirer les cartes du paquet (deck) une par une
 
-pour cela vous utiliserez la fonction deck.pop(0).
+pour cela vous utiliserez la fonction **deck.pop(0)**.
 
 ==
 
 pltest==
->>> deal([],nb_cartes=2,nbjoueurs=2) # pas assez de cartes 
->>> deal([('7', 'Coeur'), ('7', 'Carreau'), ('7', 'Trèfle'), ('7', 'Pique')],nb_cartes=2,nbjoueurs=2)
+>>> deal([],nb_cartes=2,nb_joueurs=2) # pas assez de cartes 
+>>> deal([('7', 'Coeur'), ('7', 'Carreau'), ('7', 'Trèfle'), ('7', 'Pique')],nb_cartes=2,nb_joueurs=2)
 [[('7', 'Coeur'), ('7', 'Trèfle')], [('7', 'Carreau'), ('7', 'Pique')]]
 >>> deal([('Valet', 'Coeur'), ('Valet', 'Carreau'), ('Valet', 'Trèfle'), ('Valet', 'Pique'), ('Dame', 'Coeur'), ('Dame', 'Carreau'), ('Dame', 'Trèfle'), ('Dame', 'Pique'), ('Roi', 'Coeur'), ('Roi', 'Carreau'), ('Roi', 'Trèfle'), ('Roi', 'Pique'), ('10', 'Coeur'), ('10', 'Carreau'), ('10', 'Trèfle'), ('10', 'Pique'), ('As', 'Coeur'), ('As', 'Carreau'), ('As', 'Trèfle'), ('As', 'Pique')]) # 5 cartes 4 joueurs
 [[('Valet', 'Coeur'), ('Dame', 'Coeur'), ('Roi', 'Coeur'), ('10', 'Coeur'), ('As', 'Coeur')], [('Valet', 'Carreau'), ('Dame', 'Carreau'), ('Roi', 'Carreau'), ('10', 'Carreau'), ('As', 'Carreau')], [('Valet', 'Trèfle'), ('Dame', 'Trèfle'), ('Roi', 'Trèfle'), ('10', 'Trèfle'), ('As', 'Trèfle')], [('Valet', 'Pique'), ('Dame', 'Pique'), ('Roi', 'Pique'), ('10', 'Pique'), ('As', 'Pique')]]
