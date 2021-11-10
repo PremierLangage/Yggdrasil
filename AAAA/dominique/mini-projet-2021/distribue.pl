@@ -15,7 +15,9 @@ doctest==
 
     retourne une liste de nbjoueurs listes de nb_cartes.
 
-    **Attention il faut retirer les cartes du paquet (deck) une par une pour cela vous utiliserez la fonction deck.pop() sans paramètres.**
+**Attention il faut retirer les cartes du paquet (deck) une par une
+
+pour cela vous utiliserez la fonction deck.pop() sans paramètres.**
 
 ==
 
