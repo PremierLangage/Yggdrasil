@@ -8,7 +8,7 @@ text==
 
 SI vous avez réussi à écrire toutes les fonctions vous pouvez vous attaquer a un programme qui utilise ces fonctions pour simuler une partie.
 
-Voici un squette du programme principal.
+Voici un squette du programme principal. Version plus lisible sur elearning.
 ```
 # Deux équipes de deux joueurs = (nord,sud) et (est, ouest)
     while partie pas terminé :
