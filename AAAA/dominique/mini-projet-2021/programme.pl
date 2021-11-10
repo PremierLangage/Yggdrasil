@@ -6,7 +6,8 @@ title= Le programme final
 form=
 text==
 
-SI vous avez réussi à écrire toutes les fonctions vous pouvez vous attaquer a un programme qui utilise ces fonctions pour simuler une partie.
+SI vous avez réussi à écrire toutes les fonctions vous pouvez vous attaquer a un programme 
+qui utilise ces fonctions pour simuler une partie.
 
 Voici un squette du programme principal. Version plus lisible sur elearning.
 ```
