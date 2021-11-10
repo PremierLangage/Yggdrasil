@@ -23,9 +23,9 @@ pour cela vous utiliserez la fonction deck.pop(0).
 
 pltest==
 >>> deal([('7', 'Coeur'), ('7', 'Carreau'), ('7', 'Trèfle'), ('7', 'Pique')],nb_cartes=2,nbjoueurs=2)
-[[('7', 'Pique'), ('7', 'Carreau')], [('7', 'Trèfle'), ('7', 'Coeur')]]
+[[('7', 'Coeur'), ('7', 'Trèfle')], [('7', 'Carreau'), ('7', 'Pique')]]
 >>> deal([('Valet', 'Coeur'), ('Valet', 'Carreau'), ('Valet', 'Trèfle'), ('Valet', 'Pique'), ('Dame', 'Coeur'), ('Dame', 'Carreau'), ('Dame', 'Trèfle'), ('Dame', 'Pique'), ('Roi', 'Coeur'), ('Roi', 'Carreau'), ('Roi', 'Trèfle'), ('Roi', 'Pique'), ('10', 'Coeur'), ('10', 'Carreau'), ('10', 'Trèfle'), ('10', 'Pique'), ('As', 'Coeur'), ('As', 'Carreau'), ('As', 'Trèfle'), ('As', 'Pique')]) # 5 cartes 4 joueurs
-[[('As', 'Pique'), ('10', 'Pique'), ('Roi', 'Pique'), ('Dame', 'Pique'), ('Valet', 'Pique')], [('As', 'Trèfle'), ('10', 'Trèfle'), ('Roi', 'Trèfle'), ('Dame', 'Trèfle'), ('Valet', 'Trèfle')], [('As', 'Carreau'), ('10', 'Carreau'), ('Roi', 'Carreau'), ('Dame', 'Carreau'), ('Valet', 'Carreau')], [('As', 'Coeur'), ('10', 'Coeur'), ('Roi', 'Coeur'), ('Dame', 'Coeur'), ('Valet', 'Coeur')]]
+[[('Valet', 'Coeur'), ('Dame', 'Coeur'), ('Roi', 'Coeur'), ('10', 'Coeur'), ('As', 'Coeur')], [('Valet', 'Carreau'), ('Dame', 'Carreau'), ('Roi', 'Carreau'), ('10', 'Carreau'), ('As', 'Carreau')], [('Valet', 'Trèfle'), ('Dame', 'Trèfle'), ('Roi', 'Trèfle'), ('10', 'Trèfle'), ('As', 'Trèfle')], [('Valet', 'Pique'), ('Dame', 'Pique'), ('Roi', 'Pique'), ('10', 'Pique'), ('As', 'Pique')]]
 ==
 
 pltest2==
