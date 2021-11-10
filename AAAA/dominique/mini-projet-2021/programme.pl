@@ -35,5 +35,5 @@ Voici un squette du programme principal.
         # Belote est gagnée dans tout les cas.
 
 # féliciter l'équipe gagnante 
-
+```
 ==
