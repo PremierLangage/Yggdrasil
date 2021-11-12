@@ -13,9 +13,10 @@ dans un programme python par la suite.
 
 Voici du code que vous pouvez inserez quand vous en avez besoin :
 ```
-HEIGTH= ( "7", "8", "9","Valet", "Dame", "Roi", "10","As")
-COLOR= ("Coeur", "Carreau", "Trèfle", "Pique")
-HEIGTHA= ( "7", "8", "Dame", "Roi", "10", "As", "9", "Valet")
+
+   HEIGTH= ( "7", "8", "9","Valet", "Dame", "Roi", "10","As")  
+   COLOR= ("Coeur", "Carreau", "Trèfle", "Pique")  
+   HEIGTHA= ( "7", "8", "Dame", "Roi", "10", "As", "9", "Valet")  
 
 ```
 
