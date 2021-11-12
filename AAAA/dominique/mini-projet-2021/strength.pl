@@ -11,11 +11,12 @@ title= Strength : puissance d'une carte
 
 doctest==
 Prend en parametre une carte et l'atout:
-Retourne l'Ordre de la carte 'card' pour l'atout 'atout',
-    à la couleur indice dans l'ordre des cartes dans la couleur
-    à l'atout 100 + indice dans l'ordre des atouts
 
-[https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/  ](https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/)
+    Retourne l'Ordre de la carte 'card' pour l'atout 'atout',  
+    à la couleur indice dans l'ordre des cartes dans la couleur  
+    à l'atout 100 + indice dans l'ordre des atouts  
+
+[Belote  ](https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/)
 ==
 
 
