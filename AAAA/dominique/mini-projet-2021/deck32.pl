@@ -12,14 +12,13 @@ text==
 
 Ecrire la fonction **deck32** correspondant au doctest suivant
 
-```python
+
 
     Create a 32  card set   
     heigth in HEIGTH= ( "7", "8", "9","Valet", "Dame", "Roi", "10","As")  
-    color in COLOR= ("Coeur", "Carreau", "Trèfle", "Pique")  
-  
-    returns a list of 32 pairs (heigth, color)
-```
+    color in COLOR= ("Coeur", "Carreau", "Trèfle", "Pique") 
+    returns a list of 32 pairs (heigth, color)  
+
 
 
 ==
