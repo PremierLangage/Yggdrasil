@@ -13,7 +13,6 @@ dans un programme python par la suite.
 
 Voici du code que vous pouvez inserez quand vous en avez besoin :
 ```
-``
 HEIGTH= ( "7", "8", "9","Valet", "Dame", "Roi", "10","As")
 COLOR= ("Coeur", "Carreau", "Trèfle", "Pique")
 HEIGTHA= ( "7", "8", "Dame", "Roi", "10", "As", "9", "Valet")
@@ -45,7 +44,7 @@ Les règles de la belote :
 # Plus chaud 
 @ gagnant.pl 
 
-@ comptePoints.pl 
+@ comptepoints.pl 
 @ choixentame.pl 
 @ choixcarte.pl
 reserve==
