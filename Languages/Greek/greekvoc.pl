@@ -18,7 +18,7 @@ i = items.index(sol)
 
 tplpage =@ tplvoc.html
 
-text ==
+question ==
 {{ history }}
 Que signifie le mot suivant ?
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gfs-porson" type="text/css"/> 
