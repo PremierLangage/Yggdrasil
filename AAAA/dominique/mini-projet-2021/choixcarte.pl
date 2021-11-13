@@ -30,6 +30,6 @@ pltest==
 ('9', 'carreau')
 >>> choixentame([("Valet","Coeur"),("Valet","Pique")],"pique", None)
 ('Valet', 'Coeur')
->>> choixentame([("Valet","Coeur"),("9","Pique"),("10","Coeur")],"pique", None)
+>>> choixentame([("Valet","Coeur"),("9","Pique"),("10","Coeur")],"Pique", None)
 ('9', 'Pique')
 ==
