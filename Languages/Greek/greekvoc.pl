@@ -3,7 +3,7 @@ extends = /model/basic/inputselect.pl
 @ grec_voc_1.csv
 
 title = Vocabulaire grec
-jinja_keys = []
+
 before ==
 with open('grec_voc_1.csv', newline='') as f:
     row = csv_choice(f, delimiter=";")
