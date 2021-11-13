@@ -20,16 +20,25 @@ Une stratégie un peu meilleur cherche à joueur une carte qui est sure de faire
 
 ==
 doctest==
-la fonction **choixentame(jeudujoeur, atout, pliss)** prend un parametre une liste cartes l'atout et les plis déjà réalisés.
+la fonction **choixecarte(plis,jeudujoeur, atout, pliss)** prend un parametre les cartes actuelles du plis,
+ la liste cartes de joueur,  l'atout et les pliss déjà réalisés.
+
+ATTENTION la fonction respecte les règles:  
+- fournir à la couleur  
+- couper (sauf si le partenaire est maitre)
+- monter à l'atout.
+
+Dans le cas ou l'on défausse (pas de couleur , pas d'atout ou partenaire maitre), et que le partenaire est maitre 
+on vas jouer la carte avec la plus grande valeur sinon de plus petite.
 
 la fonction retire du jeux du joueur et la retourne la carte la plus forte (strength).
 ==
 
 pltest==
->>> choixentame([("9","carreau"),("8","carreau")],"pique", None)
-('9', 'carreau')
-==
-pltest2==
+>>> choixecarte([("7","Carreau")],[("9","Carreau"),("8","Carreau")],"pique", None)
+('9', 'Carreau')
+>>> choixecarte([("7","Pique")],[("10","Carreau"),("11","Carreau")],"Pique", None)
+('9', 'Carreau')
 >>> choixentame([("Valet","Coeur"),("Valet","Pique")],"pique", None)
 ('Valet', 'Coeur')
 >>> choixentame([("Valet","Coeur"),("9","Pique"),("10","Coeur")],"Pique", None)
