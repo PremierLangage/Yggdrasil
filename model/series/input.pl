@@ -8,13 +8,13 @@ settings.cumulative % false
 
 before == #|python|
 from components import Input
-from plrandom import csv_choice
+from plcsv import csv_sample
 
 try:
     with open('data.csv', newline='') as f:
-        datasample = csv_choice(f, nbstep, delimiter=delimiter)
+        datasample = csv_sample(f, nbstep, delimiter=delimiter)
 except:
-    datasample = csv_choice(data, nbstep, delimiter=delimiter)
+    datasample = csv_sample(data, nbstep, delimiter=delimiter)
 
 
 sol = []
