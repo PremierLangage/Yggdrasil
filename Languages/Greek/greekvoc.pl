@@ -65,6 +65,7 @@ else:
         input.suffix = ""
         input.disabled = False
         newword = False
+        answered = False
     else:
         newword = True
 ==
