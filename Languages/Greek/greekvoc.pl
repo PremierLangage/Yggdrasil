@@ -22,7 +22,7 @@ active = True
 tplpage =@ tplvoc.html
 
 question ==
-{{ answered }}
+{{ active }}
 Que signifie le mot suivant ?
 <div style="text-align:center;font-size: x-large;font-family:'GFSPorsonRegular';">
 {{article}} {{mot}}
