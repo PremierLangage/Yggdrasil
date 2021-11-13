@@ -35,15 +35,18 @@ style.greek ==
 evaluator ==
 from plcsv import csv_choice, csv_col
 
-if ans == sol:
-    score = 100
-elif ans not in input.autocomplete:
-    feedback = "La réponse doit faire partie des propositions."
-    score = -1
+if not answered:
+    if ans == sol:
+        score = 100
+        answered = True
+    elif ans not in input.autocomplete:
+        feedback = "La réponse doit faire partie des propositions."
+        score = -1
+        answered = False
+    else:
+        score = 0
+        answered = True
 else:
-    score = 0
-
-if score != -1:
     with open('grec_voc_1.csv', newline='') as f:
         row = csv_choice(f, delimiter=";")
         f.seek(0)
@@ -51,4 +54,6 @@ if score != -1:
     article = row['article']
     mot = row['mot']
     sol = row['traductions']
+    input.suffix = ""
+    input.disabled = False
 ==
