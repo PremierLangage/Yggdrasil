@@ -37,6 +37,7 @@ else:
     score = 0
 
 if score != -1:
+    text = ""
     with open('grec_voc_1.csv', newline='') as f:
         row = csv_choice(f, delimiter=";")
         f.seek(0)
