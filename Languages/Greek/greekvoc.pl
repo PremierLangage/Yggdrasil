@@ -4,6 +4,8 @@ extends = /model/basic/inputselect.pl
 
 title = Vocabulaire grec
 
+jinja_keys = []
+
 before ==
 with open('grec_voc_1.csv', newline='') as f:
     row = csv_choice(f, delimiter=";")
@@ -36,5 +38,12 @@ elif ans not in input.autocomplete:
 else:
     score = 0
 
-mot = "blabla"
+if score != -1:
+    with open('grec_voc_1.csv', newline='') as f:
+        row = csv_choice(f, delimiter=";")
+        f.seek(0)
+        items = csv_col(f, "traductions", delimiter=";")
+    article = row['article']
+    mot = row['mot']
+    sol = row['traductions']
 ==
