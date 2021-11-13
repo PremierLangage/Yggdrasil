@@ -13,8 +13,9 @@ article = row['article']
 mot = row['mot']
 sol = row['traductions']
 i = items.index(sol)
-history.append(i)
 ==
+
+tplpage =@ tplvoc.html
 
 text ==
 {{ history }}
