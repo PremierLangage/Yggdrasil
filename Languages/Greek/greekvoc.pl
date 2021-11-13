@@ -46,23 +46,26 @@ if not answered:
     else:
         score = 0
         answered = True
-        if score == 100:
-            input.suffix = r'<i class="fas fa-check" style="color: green"></i>'
-        elif score >= 0:
-            input.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
-        if score != -1:
-            input.disabled = True
+    if score == 100:
+        input.suffix = r'<i class="fas fa-check" style="color: green"></i>'
+    elif score >= 0:
+        input.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
+    if score != -1:
+        input.disabled = True
 else:
-    answered = False
-    with open('grec_voc_1.csv', newline='') as f:
-        row = csv_choice(f, delimiter=";")
-        f.seek(0)
-        items = csv_col(f, "traductions", delimiter=";")
-    article = row['article']
-    mot = row['mot']
-    sol = row['traductions']
-    input.suffix = ""
-    input.disabled = False
+    if newword:
+        with open('grec_voc_1.csv', newline='') as f:
+            row = csv_choice(f, delimiter=";")
+            f.seek(0)
+            items = csv_col(f, "traductions", delimiter=";")
+        article = row['article']
+        mot = row['mot']
+        sol = row['traductions']
+        input.suffix = ""
+        input.disabled = False
+        newword = False
+    else:
+        newword = True
 ==
 
 evalprocess ==
