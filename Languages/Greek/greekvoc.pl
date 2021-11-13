@@ -13,10 +13,7 @@ article = row['article']
 mot = row['mot']
 sol = row['traductions']
 i = items.index(sol)
-try:
-    history.append(i)
-except:
-    history = []
+history.append(i)
 ==
 
 text ==
