@@ -25,7 +25,7 @@ la fonction **choixentame(jeudujoeur, atout, pliss)** prend un parametre une lis
 la fonction retire du jeux du joueur et la retourne la carte la plus forte (strength).
 ==
 
-pltest1==
+pltest==
 >>> choixentame([("9","carreau"),("8","carreau")],"pique", None)
 ('9', 'carreau')
 ==
