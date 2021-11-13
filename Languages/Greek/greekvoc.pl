@@ -52,7 +52,7 @@ if not answered:
         input.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
     if score != -1:
         input.disabled = True
-        newword = True
+        newword = False
 else:
     if newword:
         with open('grec_voc_1.csv', newline='') as f:
