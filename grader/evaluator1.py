@@ -28,8 +28,6 @@ if __name__ == "__main__":
         if key in dic and dic[key] == namespace[key]:
             del dic[key]
 
-    Component.sync_context(dic)
-
     aux_component2(dic)
     
 
