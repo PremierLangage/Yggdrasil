@@ -30,7 +30,7 @@ Que signifie le mot suivant ?
 ==
 
 evaluator ==
-from plcsv import csv_choice
+from plcsv import csv_choice, csv_col
 
 if ans == sol:
     score = 100
