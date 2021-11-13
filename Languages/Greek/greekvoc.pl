@@ -5,7 +5,7 @@ extends = /model/basic/inputselect.pl
 title = Vocabulaire grec
 
 jinja_keys = []
-eval_scripts % ["evaluat"]
+eval_scripts % ["next"]
 
 before ==
 with open('grec_voc_1.csv', newline='') as f:
@@ -34,7 +34,7 @@ style.greek ==
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gfs-porson" type="text/css"/> 
 ==
 
-evaluat ==
+next ==
 from plcsv import csv_choice, csv_col
 evalcnt += 1
 if active:
@@ -52,8 +52,11 @@ if active:
 
     active = False
 else:
-    mot = "new"
-    sol = "new"
+    with open('grec_voc_1.csv', newline='') as f:
+        row = csv_choice(f, delimiter=";")
+    article = row['article']
+    mot = row['mot']
+    sol = row['traductions']
     input.disabled = False
     input.suffix = ""
     active = True
