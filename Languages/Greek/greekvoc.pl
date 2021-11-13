@@ -23,10 +23,13 @@ tplpage =@ tplvoc.html
 question ==
 {{ history }}
 Que signifie le mot suivant ?
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gfs-porson" type="text/css"/> 
 <div style="text-align:center;font-size: x-large;font-family:'GFSPorsonRegular';">
 {{article}} {{mot}}
 </div>
+==
+
+style.greek ==
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gfs-porson" type="text/css"/> 
 ==
 
 evaluator ==
