@@ -16,6 +16,7 @@ mot = row['mot']
 sol = row['traductions']
 i = items.index(sol)
 answered = False
+newword = False
 ==
 
 tplpage =@ tplvoc.html
