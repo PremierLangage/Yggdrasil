@@ -30,6 +30,8 @@ Que signifie le mot suivant ?
 ==
 
 evaluator ==
+from plcsv import csv_choice
+
 if ans == sol:
     score = 100
 elif ans not in input.autocomplete:
