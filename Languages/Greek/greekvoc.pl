@@ -17,12 +17,13 @@ mot = row['mot']
 sol = row['traductions']
 i = items.index(sol)
 active = True
+evalcnt = 0
 ==
 
 tplpage =@ tplvoc.html
 
 question ==
-{{ active }}
+{{ evalcnt }}
 Que signifie le mot suivant ?
 <div style="text-align:center;font-size: x-large;font-family:'GFSPorsonRegular';">
 {{article}} {{mot}}
@@ -35,7 +36,7 @@ style.greek ==
 
 evaluator ==
 from plcsv import csv_choice, csv_col
-
+evalcnt += 1
 if active:
     ans = input.value
     if ans == sol:
