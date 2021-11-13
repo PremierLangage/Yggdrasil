@@ -56,5 +56,7 @@ else:
     article = row['article']
     mot = row['mot']
     sol = row['traductions']
+    input.disabled = False
+    input.suffix = ""
     active = True
 ==
