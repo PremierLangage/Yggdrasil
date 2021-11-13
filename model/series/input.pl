@@ -12,9 +12,9 @@ from plrandom import csv_rand_sample
 
 try:
     with open('data.csv', newline='') as f:
-        datasample = csv_rand_sample(f, nbstep, delimiter=delimiter)
+        datasample = csv_choice(f, nbstep, delimiter=delimiter)
 except:
-    datasample = csv_rand_sample(data, nbstep, delimiter=delimiter)
+    datasample = csv_choice(data, nbstep, delimiter=delimiter)
 
 
 sol = []
