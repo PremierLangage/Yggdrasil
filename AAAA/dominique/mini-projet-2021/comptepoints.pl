@@ -21,9 +21,9 @@ pltest==
 >>> HEIGTH= ( "7", "8", "9","Valet", "Dame", "Roi", "10","As") #
 >>> COLOR= ("Coeur", "Carreau", "Trèfle", "Pique") # 
 >>> HEIGTHA= ( "7", "8", "Dame", "Roi", "10", "As", "9", "Valet") #
->>> comptepoints([(h,c) for h in HEIGTH for c in COLOR],"pique",10)
+>>> comptepoints([[(h,c) for h in HEIGTH for c in COLOR]],"pique",10)
 130
->>> comptepoints([(h,c) for h in HEIGTH for c in COLOR],"Pique",10)
+>>> comptepoints([[(h,c) for h in HEIGTH for c in COLOR]],"Pique",10)
 162
 ==
 
