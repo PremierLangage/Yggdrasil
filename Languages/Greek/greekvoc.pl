@@ -51,8 +51,8 @@ if active:
 
     active = False
 else:
-    mot = new
-    sol = new
+    mot = "new"
+    sol = "new"
     input.disabled = False
     input.suffix = ""
     active = True
