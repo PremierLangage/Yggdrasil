@@ -36,6 +36,7 @@ evaluator ==
 from plcsv import csv_choice, csv_col
 
 if not answered:
+    ans = input.value
     if ans == sol:
         score = 100
         answered = True
