@@ -5,6 +5,7 @@ extends = /model/basic/inputselect.pl
 title = Vocabulaire grec
 
 jinja_keys = []
+eval_scripts % ["evaluator"]
 
 before ==
 with open('grec_voc_1.csv', newline='') as f:
@@ -70,8 +71,4 @@ else:
         answered = False
     else:
         newword = True
-==
-
-evalprocess ==
-
 ==
