@@ -1,0 +1,42 @@
+<div class="question">
+{{ question|markdown }}
+</div>
+<div style="display: block; margin-top: 1em;">
+{{ inputblock|markdown|safe }}
+</div>
+{% if score == -1 %}
+<hr class="border">
+<div class="feedback">
+<i class="fas fa-exclamation-triangle"></i> {{ feedback|safe }}
+ Entrer à nouveau la réponse.
+</div>
+{% endif %}
+{% if score >= 0 and score < 100 and (feedback|length > 1 or solution|length > 1)%}
+<hr class="divide">
+{% if feedback|length > 1 %}
+<div class="feedback">
+<i class="far fa-hand-point-right"></i> {{ feedback|safe }}
+</div>
+{% endif %}
+{% if solution|length > 1 %}
+<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
+Voir la solution.
+</a>
+<div class="collapse" id="collapseSolution">
+{{ solution }}
+</div>
+{% endif %}
+{% endif %}
+<hr class="divide">
+{% if score >=0 %}
+<button class="btn btn-primary action-submit"> Nouveau </button>
+{% else %}
+<button class="btn btn-primary action-submit">Valider</button>
+{% endif %}
+{% if score == 100 %}
+<button type="button" style="float: right;" class="btn success-state">Score : {{score}} </button>
+{% elif score >= 0 and score < 100 %}
+<button type="button" style="float: right;" class="btn neutral-state">Score : {{score}} </button>
+{% else %}
+<button type="button" style="float: right;" class="btn neutral-state">Score : - </button>
+{% endif %}
