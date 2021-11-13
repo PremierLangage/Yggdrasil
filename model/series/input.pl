@@ -8,7 +8,7 @@ settings.cumulative % false
 
 before == #|python|
 from components import Input
-from plrandom import csv_rand_sample
+from plrandom import csv_choice
 
 try:
     with open('data.csv', newline='') as f:
