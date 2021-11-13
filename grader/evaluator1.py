@@ -29,7 +29,6 @@ if __name__ == "__main__":
             del dic[key]
 
     aux_component2(dic)
-    
 
     if 'score' in dic:
         score = dic['score']    
