@@ -51,11 +51,8 @@ if active:
 
     active = False
 else:
-    with open('grec_voc_1.csv', newline='') as f:
-        row = csv_choice(f, delimiter=";")
-    article = row['article']
-    mot = row['mot']
-    sol = row['traductions']
+    mot = new
+    sol = new
     input.disabled = False
     input.suffix = ""
     active = True
