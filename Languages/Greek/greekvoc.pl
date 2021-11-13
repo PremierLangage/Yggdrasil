@@ -36,7 +36,7 @@ style.greek ==
 
 next ==
 from plcsv import csv_choice, csv_col
-evalcnt += 1
+
 if active:
     ans = input.value
     if ans == sol:
