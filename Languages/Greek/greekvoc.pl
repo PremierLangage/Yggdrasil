@@ -22,7 +22,7 @@ newword = False
 tplpage =@ tplvoc.html
 
 question ==
-{{ history }}
+{{ answered }}
 Que signifie le mot suivant ?
 <div style="text-align:center;font-size: x-large;font-family:'GFSPorsonRegular';">
 {{article}} {{mot}}
