@@ -53,6 +53,7 @@ if not answered:
     if score != -1:
         input.disabled = True
 else:
+    answered = False
     with open('grec_voc_1.csv', newline='') as f:
         row = csv_choice(f, delimiter=";")
         f.seek(0)
