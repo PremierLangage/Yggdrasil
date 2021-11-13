@@ -15,7 +15,7 @@ article = row['article']
 mot = row['mot']
 sol = row['traductions']
 i = items.index(sol)
-
+answered = False
 ==
 
 tplpage =@ tplvoc.html
