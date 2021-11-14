@@ -15,7 +15,6 @@ with open('grec_voc_1.csv', newline='') as f:
 nbwords = len(data)
 items = [data[i]['traductions'] for i in range(nbwords)]
 history = nbwords * [0]
-active = True
 state = 'intro'
 step = 1
 ==
