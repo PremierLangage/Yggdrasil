@@ -59,8 +59,11 @@ elif state == 'active':
     elif score >= 0:
         input.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
     input.disabled = True
-    state = 'inactive'
-else:
+    if step == 5:
+        state = 'last'
+    else:
+        state = 'inactive'
+elif state == 'inactive':
     with open('grec_voc_1.csv', newline='') as f:
         row = csv_choice(f, delimiter=";")
     article = row['article']
@@ -70,5 +73,8 @@ else:
     history[idword] += 1
     input.disabled = False
     input.suffix = " "
+    step +=1
     state = 'active'
+elif state == 'last':
+    state = 'intro'
 ==
