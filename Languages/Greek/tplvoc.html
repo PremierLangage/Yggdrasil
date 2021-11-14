@@ -1,11 +1,10 @@
-{% if isintro == 1 %}
 <div class="question">
     {{isintro}}
 {{ intro|markdown }}
 </div>
 <hr class="divide">
 <button class="btn btn-primary action-submit"> Nouvelle série </button>
-{% else %}
+
 <div class="question">
 {{ question|markdown }}
 </div>
@@ -47,5 +46,4 @@ Voir la solution.
 <button type="button" style="float: right;" class="btn neutral-state">Score : {{score}} </button>
 {% else %}
 <button type="button" style="float: right;" class="btn neutral-state">Score : - </button>
-{% endif %}
 {% endif %}
