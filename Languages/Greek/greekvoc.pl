@@ -8,6 +8,7 @@ jinja_keys = []
 eval_scripts = ["next"]
 
 before ==
+from csv import DictReader
 with open('grec_voc_1.csv', newline='') as f:
     data = list(DictReader(f, delimiter=";"))
 
