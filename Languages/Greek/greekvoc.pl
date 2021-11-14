@@ -44,30 +44,32 @@ style.greek ==
 
 next ==
 from plcsv import csv_choice, csv_col
-isintro = 0
-if active:
-    ans = input.value
-    if ans == sol:
-        score = 100
-    else:
-        score = 0
-
-    if score == 100:
-        input.suffix = r'<i class="fas fa-check" style="color: green"></i>'
-    elif score >= 0:
-        input.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
-    input.disabled = True
-
-    active = False
+if isintro = 1:
+    isintro = 0
 else:
-    with open('grec_voc_1.csv', newline='') as f:
-        row = csv_choice(f, delimiter=";")
-    article = row['article']
-    mot = row['mot']
-    sol = row['traductions']
-    idword = items.index(sol)
-    history[idword] += 1
-    input.disabled = False
-    input.suffix = " "
-    active = True
+    if active:
+        ans = input.value
+        if ans == sol:
+            score = 100
+        else:
+            score = 0
+
+        if score == 100:
+            input.suffix = r'<i class="fas fa-check" style="color: green"></i>'
+        elif score >= 0:
+            input.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
+        input.disabled = True
+
+        active = False
+    else:
+        with open('grec_voc_1.csv', newline='') as f:
+            row = csv_choice(f, delimiter=";")
+        article = row['article']
+        mot = row['mot']
+        sol = row['traductions']
+        idword = items.index(sol)
+        history[idword] += 1
+        input.disabled = False
+        input.suffix = " "
+        active = True
 ==
