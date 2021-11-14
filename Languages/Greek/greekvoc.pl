@@ -39,7 +39,7 @@ style.greek ==
 ==
 
 next ==
-from plrandom import randint
+from random import randint
 from plcsv import csv_choice, csv_col
 if state == 'intro':
     state = 'active'
