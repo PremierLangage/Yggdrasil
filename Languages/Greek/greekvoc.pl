@@ -9,18 +9,11 @@ eval_scripts = ["next"]
 
 before ==
 with open('grec_voc_1.csv', newline='') as f:
-    row = csv_choice(f, delimiter=";")
-    f.seek(0)
-    items = csv_col(f, "traductions", delimiter=";")
-article = row['article']
-mot = row['mot']
-sol = row['traductions']
-nbwords = len(items)
+    data = list(DictReader(f, delimiter=";"))
+
+nbwords = len(data)
 history = nbwords * [0]
-idword = items.index(sol)
-history[idword] += 1
 active = True
-evalcnt = 0
 state = 'intro'
 step = 1
 ==
