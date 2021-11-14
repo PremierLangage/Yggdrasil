@@ -44,7 +44,6 @@ if state == 'intro':
     state = 'active'
     step = 1
 
-    history[i] += 1
 elif state == 'active':
     ans = input.value
     if ans == sol:
