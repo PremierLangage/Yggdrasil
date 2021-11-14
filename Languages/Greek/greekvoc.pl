@@ -22,6 +22,7 @@ history[idword] += 1
 active = True
 evalcnt = 0
 state = 'intro'
+step = 1
 ==
 
 intro ==
