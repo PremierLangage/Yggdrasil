@@ -21,6 +21,11 @@ idword = items.index(sol)
 history[idword] += 1
 active = True
 evalcnt = 0
+isintro = True
+==
+
+intro ==
+Série
 ==
 
 tplpage =@ tplvoc.html
