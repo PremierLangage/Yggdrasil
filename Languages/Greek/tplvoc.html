@@ -16,6 +16,7 @@
 </div>
 <hr class="divide">
 <button class="btn btn-primary action-submit"> Valider </button>
+<button type="button" style="float: right;" class="btn success-state"> {{step}} / 5 </button>
 {% endif %}
 
 {% if state == "inactive" %}
@@ -27,6 +28,7 @@
 </div>
 <hr class="divide">
 <button class="btn btn-primary action-submit"> Nouveau mot </button>
+<button type="button" style="float: right;" class="btn success-state"> {{step}} / 5 </button>
 {% endif %}
 
 {% if state == "last" %}
@@ -38,4 +40,5 @@
 </div>
 <hr class="divide">
 <button class="btn btn-primary action-submit"> Nouvelle série </button>
+<button type="button" style="float: right;" class="btn success-state"> {{step}} / 5 </button>
 {% endif %}
