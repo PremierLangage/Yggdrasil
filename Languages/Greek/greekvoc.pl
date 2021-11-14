@@ -44,7 +44,7 @@ from plcsv import csv_choice, csv_col
 if state == 'intro':
     state = 'active'
     step = 1
-    i = randint(0, nbwords)
+    i = randint(0, nbwords-1)
     article = data[i]['article']
     mot = data[i]['mot']
     sol = data[i]['traductions']
