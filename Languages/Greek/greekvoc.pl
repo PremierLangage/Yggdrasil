@@ -44,7 +44,7 @@ style.greek ==
 
 next ==
 from plcsv import csv_choice, csv_col
-
+isintro = False
 if active:
     ans = input.value
     if ans == sol:
