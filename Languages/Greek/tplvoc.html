@@ -1,4 +1,10 @@
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gfs-porson" type="text/css"/> 
+{% if isintro %}
+<div class="question">
+{{ question|markdown }}
+</div>
+<hr class="divide">
+<button class="btn btn-primary action-submit"> Nouvelle série </button>
+{% else %}
 <div class="question">
 {{ question|markdown }}
 </div>
@@ -40,4 +46,5 @@ Voir la solution.
 <button type="button" style="float: right;" class="btn neutral-state">Score : {{score}} </button>
 {% else %}
 <button type="button" style="float: right;" class="btn neutral-state">Score : - </button>
+{% endif %}
 {% endif %}
