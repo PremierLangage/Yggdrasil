@@ -41,6 +41,11 @@ from plcsv import csv_choice, csv_col
 if state == 'intro':
     state = 'active'
     step = 1
+    i = randint(nbwords)
+    article = data[i]['article']
+    mot = data[i]['mot']
+    sol = data[i]['traductions']
+    history[i] += 1
 elif state == 'active':
     ans = input.value
     if ans == sol:
