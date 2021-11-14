@@ -13,6 +13,7 @@ with open('grec_voc_1.csv', newline='') as f:
     data = list(DictReader(f, delimiter=";"))
 
 nbwords = len(data)
+items = [data[i]['traduction'] for i in range(nbwords)]
 history = nbwords * [0]
 active = True
 state = 'intro'
