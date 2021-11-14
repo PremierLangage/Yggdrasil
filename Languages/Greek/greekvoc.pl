@@ -74,6 +74,7 @@ elif state == 'inactive':
     history[idword] += 1
     input.disabled = False
     input.suffix = " "
+    input.value = ""
     step +=1
     state = 'active'
 elif state == 'last':
