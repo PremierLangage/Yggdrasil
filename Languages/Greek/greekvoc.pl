@@ -26,6 +26,7 @@ evalcnt = 0
 tplpage =@ tplvoc.html
 
 question ==
+{{ history }}
 Que signifie le mot suivant ?
 <div style="text-align:center;font-size: x-large;font-family:'GFSPorsonRegular';">
 {{article}} {{mot}}
