@@ -21,7 +21,7 @@ idword = items.index(sol)
 history[idword] += 1
 active = True
 evalcnt = 0
-isintro = 1
+state = 'intro'
 ==
 
 intro ==
