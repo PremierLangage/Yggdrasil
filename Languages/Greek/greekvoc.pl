@@ -21,7 +21,7 @@ idword = items.index(sol)
 history[idword] += 1
 active = True
 evalcnt = 0
-isintro = True
+isintro = 1
 ==
 
 intro ==
@@ -44,7 +44,7 @@ style.greek ==
 
 next ==
 from plcsv import csv_choice, csv_col
-isintro = False
+isintro = 0
 if active:
     ans = input.value
     if ans == sol:
