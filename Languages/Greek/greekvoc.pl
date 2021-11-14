@@ -14,6 +14,7 @@ with open('grec_voc_1.csv', newline='') as f:
 
 nbwords = len(data)
 items = [data[i]['traductions'] for i in range(nbwords)]
+input.autocomplete = items
 history = nbwords * [0]
 state = 'intro'
 step = 1
