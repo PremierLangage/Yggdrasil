@@ -15,7 +15,10 @@ with open('grec_voc_1.csv', newline='') as f:
 article = row['article']
 mot = row['mot']
 sol = row['traductions']
-i = items.index(sol)
+nbwords = len(items)
+history = nbwords * [0]
+idword = items.index(sol)
+history[idword] += 1
 active = True
 evalcnt = 0
 ==
@@ -56,6 +59,8 @@ else:
     article = row['article']
     mot = row['mot']
     sol = row['traductions']
+    idword = items.index(sol)
+    history[idword] += 1
     input.disabled = False
     input.suffix = " "
     active = True
