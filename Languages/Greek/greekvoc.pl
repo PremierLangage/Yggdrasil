@@ -44,7 +44,7 @@ style.greek ==
 
 next ==
 from plcsv import csv_choice, csv_col
-if isintro = 1:
+if isintro == 1:
     isintro = 0
 else:
     if active:
