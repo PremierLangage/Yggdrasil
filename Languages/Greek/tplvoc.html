@@ -5,7 +5,9 @@
 </div>
 <hr class="divide">
 <button class="btn btn-primary action-submit"> Nouvelle série </button>
-{% else %}
+{% endif %}
+
+{% if state == "active" %}
 <div class="question">
 {{ question|markdown }}
 </div>
@@ -13,5 +15,16 @@
 {{ inputblock|markdown|safe }}
 </div>
 <hr class="divide">
-<button class="btn btn-primary action-submit"> Nouvelle série </button>
+<button class="btn btn-primary action-submit"> Valider </button>
+{% endif %}
+
+{% if state == "inactive" %}
+<div class="question">
+{{ question|markdown }}
+</div>
+<div style="display: block; margin-top: 1em;">
+{{ inputblock|markdown|safe }}
+</div>
+<hr class="divide">
+<button class="btn btn-primary action-submit"> Nouveau mot </button>
 {% endif %}
