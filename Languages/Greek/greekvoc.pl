@@ -12,8 +12,8 @@ from csv import DictReader
 with open('grec_voc_1.csv', newline='') as f:
     data = list(DictReader(f, delimiter=";"))
 
-cards = [[data[i]['article'] + " " +data[i]['mot'], data[i]['traductions']] for i in range(nbwords)]
 nbwords = len(data)
+cards = [[data[i]['mot'], data[i]['traductions']] for i in range(nbwords)]
 items = [data[i]['traductions'] for i in range(nbwords)]
 input.autocomplete = items
 history = nbwords * [0]
