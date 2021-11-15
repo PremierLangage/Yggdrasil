@@ -37,10 +37,12 @@ la fonction retire du jeux du joueur et la retourne la carte la plus forte (stre
 pltest==
 >>> choixecarte([("7","Carreau")],[("9","Carreau"),("8","Carreau")],"pique", None)
 ('9', 'Carreau')
->>> choixecarte([("7","Pique")],[("10","Carreau"),("11","Carreau")],"Pique", None)
-('9', 'Carreau')
->>> choixentame([("Valet","Coeur"),("Valet","Pique")],"pique", None)
-('Valet', 'Coeur')
->>> choixentame([("Valet","Coeur"),("9","Pique"),("10","Coeur")],"Pique", None)
+>>> choixecarte([("8","Pique")],[("10","Carreau"),("As","Carreau"),("7","Pique"),("As","Pique")],"Pique", None) # monter à l'atout
+('As', 'Pique')
+>>> choixecarte([("8","Pique"),("Dame","Pique")],[("10","Carreau"),("As","Carreau"),("7","Pique"),("As","Pique")],"Pique", None) # monter à l'atout
+('As', 'Pique')
+>>> choixecarte([("8","Pique"),("Dame","Pique"),("As","Pique")],[("10","Carreau"),("As","Carreau"),("7","Pique"),("9","Pique")],"Pique", None) # monter à l'atout
 ('9', 'Pique')
+>>> choixecarte([("8","Pique"),("As","Pique"),("Dame","Pique")],[("10","Carreau"),("As","Carreau"),("7","Pique"),("9","Pique")],"Pique", None) # défausse sur partenaire 
+("As","Carreau") 
 ==
