@@ -4,6 +4,22 @@
 {{ intro|markdown }}
 </div>
 <hr class="divide">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Clé</th>
+      <th scope="col">Type</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for card in cards %}
+    <tr>
+      <td> {{ card[0] }} </td>
+      <td> {{ card[1] }} </td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
 <button class="btn btn-primary action-submit"> Démarrer </button>
 {% endif %}
 
