@@ -13,6 +13,7 @@ with open('grec_voc_1.csv', newline='') as f:
     data = list(DictReader(f, delimiter=";"))
 
 nbwords = len(data)
+nbcards = len(data)
 cards = [[data[i]['mot'], data[i]['traductions']] for i in range(nbwords)]
 items = [data[i]['traductions'] for i in range(nbwords)]
 input.autocomplete = items
