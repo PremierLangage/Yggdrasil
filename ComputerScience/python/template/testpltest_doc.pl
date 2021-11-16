@@ -27,19 +27,6 @@ True
 3
 ==
 
-pltest3==
->>> 1==12
-True
->>> 1==1
-True
->>> 1==1
-True
->>> 1==1
-True
->>> 1==1
-True
-==
-
 pltest1==
 >>> C==C
 True
