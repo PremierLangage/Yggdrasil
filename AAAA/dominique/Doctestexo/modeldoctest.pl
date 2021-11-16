@@ -84,7 +84,7 @@ try:
     exec(f1, {}) # Nothing only a function def
 except Exception as e:
     import sys
-    print(compilerror+str(e),file=sys.error )
+    print(compilerror+str(e),file=sys.stderr )
 
 ==
 
