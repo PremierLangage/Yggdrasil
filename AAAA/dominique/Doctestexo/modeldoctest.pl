@@ -81,7 +81,7 @@ compile(f1,"Version 1",'exec')
 exec(f1, {}) # Nothing only a function def
 compilerror="Problème dans la définition de f2 erreur de compile"
 compile(f2,"Version 2",'exec')
-exec(f21, {}) # Nothing only a function def
+exec(f2, {}) # Nothing only a function def
 
 ==
 
