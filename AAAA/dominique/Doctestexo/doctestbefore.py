@@ -41,7 +41,7 @@ if __name__ == "__main__":
               file = sys.stderr)
         sys.exit(1)
 
-    d['text']=f"Soit la version 1 de la fonction :\n \n {d['f1']} \n et la version 2 de la fonction :\n \n d['f3']}\n\n Ecrivez un doctest qui 'passe' pour premièer version  et qui échoue pour deuxième."
+    d['text']=f"""Soit la version 1 de la fonction :\n \n {d['f1']} \n et la version 2 de la fonction :\n \n {d['f2']}\n\n Ecrivez un doctest qui 'passe' pour premièer version  et qui échoue pour deuxième."""
 
 
     with open(output_json, "w+") as f:
