@@ -6,7 +6,7 @@ text==
 Hop A égal à 2 et B à 3 
 ==
 
-taboo=con|nul|pauvre
+taboo= con|nul|pauvre
 
 editor.code==
 A=2
