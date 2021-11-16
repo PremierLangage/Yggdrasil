@@ -50,7 +50,9 @@ True
 ==
 
 pltest2==
->>> student.count("A")>1 # Trop de A
+>>> with open("student.py","r") as f :
+...    student = f.read()
+...    student.count("A")>1 # Trop de A
 False
 ==
 
