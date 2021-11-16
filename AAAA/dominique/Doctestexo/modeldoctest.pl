@@ -62,7 +62,7 @@ Ecrivez un doctest qui 'passe' pour f1 et qui échoue pour f2.
 
 ==
 
-@ ./utils/pltest_doc.py
+@ doctestrunner.py
 
 @ /grader/evaluator.py [grader.py]
 
