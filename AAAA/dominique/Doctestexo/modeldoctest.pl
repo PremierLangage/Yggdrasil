@@ -93,7 +93,7 @@ def subnlbybr(str):
     """
     if str :
        str = "  \n".join(str.split("\n"))
-       return "<pre><code>"+"\n\t".join(str.split("\n"))+"</code></pre>"
+       return  "\n\t".join(str.split("\n"))
     return None
 
 text_f1  = subnlbybr(f1)
@@ -107,3 +107,15 @@ form=@ /form/text_editor.html
 
 settings.allow_reroll=1
 
+
+extracss==
+<style>
+.exercise__instructions, .exercise__feedback {
+    margin-bottom: 16px;
+}
+
+.match-list-component svg path {
+    stroke-width: 4px;
+}
+</style>
+==
