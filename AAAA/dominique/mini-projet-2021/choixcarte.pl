@@ -9,12 +9,12 @@ title= Choix de la carte à jouer pour les trois joueurs suivants
 
 text==
 
-Le choix de la carte a jouer après la carte initiale, doit respecter les règles du jeux de la carte.
-Ce n'est pas la meilleur statégie (pensez au dix de der les points du dernier plis).
+Le choix de la carte à jouer après la carte initiale, doit respecter les règles du jeux de la carte.
+Ce n'est pas la meilleur stratégie (pensez apr exemple au dix de der les points du dernier plis).
 
 Mais c'est une stratégie facile a programmer :) et nous pourrons l'améliorée une fois que le reste du programme tourne ...
 
-Une stratégie un peu meilleur cherche à joueur une carte qui est sure de faire le plis en fonction des cartes déjà jouées (par exemple).
+Une stratégie un peu meilleur cherche à joueur une carte qui est sure de faire le plis en fonction des cartes déjà jouées.
 
 {{doctest}}
 
