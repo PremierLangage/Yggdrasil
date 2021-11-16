@@ -1,5 +1,5 @@
 
-extends = /model/math/expr.pl
+extends = dr_expr.pl
 
 title = Calculer la distance entre deux points du plan
 
