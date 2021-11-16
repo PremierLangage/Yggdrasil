@@ -76,12 +76,12 @@ Ecrivez un doctest qui 'passe' pour f1 et qui échoue pour f2.
 before==
 
 try:
-    compile(f1,"Votre code",'exec')
-    exec(f1, {}) # Nothing only a function def
     compilerror="Problème dans la définition de f1 erreur de compile"
     compile(f1,"Votre code",'exec')
     exec(f1, {}) # Nothing only a function def
     compilerror="Problème dans la définition de f2 erreur de compile"
+    compile(f1,"Votre code",'exec')
+    exec(f1, {}) # Nothing only a function def
 except Exception as e:
     import sys
     print(compilerror+str(e),file=sys.error )
