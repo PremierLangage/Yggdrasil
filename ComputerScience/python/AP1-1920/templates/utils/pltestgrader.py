@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     
     dic = get_context()
-    student = get_answers()['answer']
+    dic['student']=student = get_answers()['answer']
     if "taboo" in dic:
         t,mc = checktaboo(dic['taboo'], student)
         if t:
