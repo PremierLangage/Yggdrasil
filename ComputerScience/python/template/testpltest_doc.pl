@@ -49,6 +49,10 @@ True
 True
 ==
 
+pltest2==
+>>> student.count("A")>1 # Trop de A
+False
+==
 
 
 extends= /ComputerScience/python/template/pltest.pl
