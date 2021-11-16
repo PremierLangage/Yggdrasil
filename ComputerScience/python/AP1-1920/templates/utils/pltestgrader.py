@@ -86,7 +86,6 @@ if __name__ == "__main__":
         testname = dic['testname0'] if 'testname0' in dic else "Groupe de test 0"
         a, b = tester.runpltest(testname)
     else:
-
         a,b= True, ""
     i=1
     while "pltest"+str(i) in dic and (a or stop ) :
