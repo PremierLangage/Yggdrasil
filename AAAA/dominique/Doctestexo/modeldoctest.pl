@@ -50,14 +50,15 @@ def f(n):
 text==
 
 Soit la version 1 de la fonction :
+```
  
 {{text_f1}}
- 
+```
 et la version 2 de la fonction :
-
+```
 
 {{text_f2}}
-
+```
 
 
 Ecrivez un doctest qui 'passe' pour f1 et qui échoue pour f2.
