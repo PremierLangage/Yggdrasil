@@ -45,7 +45,8 @@ if __name__ == "__main__":
               file = sys.stderr)
         sys.exit(1)
 
-    dic['text']=f"""Soit la version 1 de la fonction :\n<br/><br/>\n\n\n {double_with_tab(dic['f1'])} \n<br/><br/>\n\n\n  et la version 2 de la fonction :<br/><br/>\n\n\n  {double_with_tab(dic['f2'])}<br/><br/>\n\n\n  Ecrivez un doctest qui 'passe' pour premièer version  et qui échoue pour deuxième."""
+    #dic['text']=f"""Soit la version 1 de la fonction :\n<br/><br/>\n\n\n {double_with_tab(dic['f1'])} \n<br/><br/>\n\n\n  et la version 2 de la fonction :<br/><br/>\n\n\n  {double_with_tab(dic['f2'])}<br/><br/>\n\n\n  Ecrivez un doctest qui 'passe' pour premièer version  et qui échoue pour deuxième."""
+    dic['text']="""Soit la version 1 de la fonction :\n<br/><br/>\n\n\n """ + double_with_tab(dic['f1']) + """ \n<br/><br/>\n\n\n  et la version 2 de la fonction :<br/><br/>\n\n\n""" + double_with_tab(dic['f2']) + """<br/><br/>\n\n\n  Ecrivez un doctest qui 'passe' pour premièer version  et qui échoue pour deuxième."""
 
     dic['text'] += "porout"
     with open(output_json, "w+") as f:
