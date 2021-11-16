@@ -47,23 +47,7 @@ def f(n):
 ==
 
 
-text==
-
-Soit la version 1 de la fonction :
-```
- 
-{{text_f1}}
-```
-et la version 2 de la fonction :
-```
-
-{{text_f2}}
-```
-
-
-Ecrivez un doctest qui 'passe' pour f1 et qui échoue pour f2.
-
-==
+text=
 
 @ doctestrunner.py
 
@@ -75,7 +59,7 @@ Ecrivez un doctest qui 'passe' pour f1 et qui échoue pour f2.
 
 @ /utils/sandboxio.py
 
-@ /builder/before.py [builder.py]
+@ ./doctestbefore.py [builder.py]
 before==
 
 
@@ -86,19 +70,6 @@ compilerror="Problème dans la définition de f2 erreur de compile"
 compile(f2,"Version 2",'exec')
 exec(f2, {}) # Nothing only a function def
 
-
-def subnlbybr(str):
-    """
-    >>> subnlbybr("\\n")
-    '&nbsp;&nbsp;\n'
-    """
-    if str :
-       str = "  \n".join(str.split("\n"))
-       return  "\n>\t".join(str.split("\n"))
-    return None
-
-text_f1  = subnlbybr(f1)
-text_f2  = subnlbybr(f2)
 
 ==
 
