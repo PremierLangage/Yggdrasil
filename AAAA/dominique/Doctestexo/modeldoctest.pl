@@ -29,7 +29,6 @@ vas fonctionner pour f1 mais pas pour f2.
 title = Exercice de doctest boucle 
 
 f1==
-qdjam
 def f(n):
     p=1
     for n in range(n):
@@ -44,6 +43,7 @@ def f(n):
         p += n
         n = n -1 
     return p
+    hjdgskfq
 ==
 
 
@@ -75,17 +75,14 @@ Ecrivez un doctest qui 'passe' pour f1 et qui échoue pour f2.
 @ /builder/before.py [builder.py]
 before==
 
-try:
-    compilerror="Problème dans la définition de f1 erreur de compile"
-    compile(f1,"Version 1",'exec')
-    exec(f1, {}) # Nothing only a function def
-    compilerror="Problème dans la définition de f2 erreur de compile"
-    compile(f1,"Version 2",'exec')
-    exec(f1, {}) # Nothing only a function def
-except Exception as e:
-    import sys
-    print(compilerror+str(e),file=sys.stderr )
-    raise SyntaxError
+
+compilerror="Problème dans la définition de f1 erreur de compile"
+compile(f1,"Version 1",'exec')
+exec(f1, {}) # Nothing only a function def
+compilerror="Problème dans la définition de f2 erreur de compile"
+compile(f1,"Version 2",'exec')
+exec(f1, {}) # Nothing only a function def
+
 ==
 
 editor.fontsize=14
