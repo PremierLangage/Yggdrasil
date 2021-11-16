@@ -29,6 +29,7 @@ vas fonctionner pour f1 mais pas pour f2.
 title = Exercice de doctest boucle 
 
 f1==
+qdjam
 def f(n):
     p=1
     for n in range(n):
@@ -60,4 +61,36 @@ et la version 2 de la fonction :
 Ecrivez un doctest qui 'passe' pour f1 et qui échoue pour f2.
 
 ==
+
+@ ./utils/pltest_doc.py
+
+@ /grader/evaluator.py [grader.py]
+
+# probleme avec le template @ ./utils/template.html
+# d'ou l'utilisation de ce lui la 
+@ /ComputerScience/python/template/anothertemplate.html [template.html]
+
+@ /utils/sandboxio.py
+
+@ /builder/before.py [builder.py]
+before==
+
+try:
+    compile(f1,"Votre code",'exec')
+    exec(f1, {}) # Nothing only a function def
+    compilerror="Problème dans la définition de f1 erreur de compile"
+    compile(f1,"Votre code",'exec')
+    exec(f1, {}) # Nothing only a function def
+    compilerror="Problème dans la définition de f2 erreur de compile"
+except Exception as e:
+    import sys
+    print(compilerror+str(e),file=sys.error )
+
+==
+
+editor.fontsize=14
+# une interface standard d'exercice avec un editeur pour la réponse
+form=@ /form/text_editor.html
+
+settings.allow_reroll=1
 
