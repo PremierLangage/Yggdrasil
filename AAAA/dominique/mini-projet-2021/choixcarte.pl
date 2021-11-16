@@ -5,7 +5,7 @@
 
 extends = func.pl
 
-title= Choix de la carte a jouer pour les trois joueurs suivants
+title= Choix de la carte à jouer pour les trois joueurs suivants
 
 text==
 
