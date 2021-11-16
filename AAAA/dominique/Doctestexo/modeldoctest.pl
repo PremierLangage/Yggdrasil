@@ -51,11 +51,11 @@ text==
 
 Soit la version 1 de la fonction :
 ```
-{{f1}}
+    {{f1}}
 ```
 et la version 2 de la fonction :
 ```
-{{f2}}
+    {{f2}}
 ```
 
 Ecrivez un doctest qui 'passe' pour f1 et qui échoue pour f2.
