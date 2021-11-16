@@ -25,7 +25,7 @@ True
 3
 ==
 
-pltest0==
+pltest3==
 >>> 1==12
 True
 >>> 1==1
