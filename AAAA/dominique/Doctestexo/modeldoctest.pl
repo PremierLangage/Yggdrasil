@@ -85,7 +85,7 @@ try:
 except Exception as e:
     import sys
     print(compilerror+str(e),file=sys.stderr )
-
+    raise SyntaxError
 ==
 
 editor.fontsize=14
