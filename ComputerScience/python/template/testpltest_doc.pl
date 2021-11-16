@@ -51,7 +51,7 @@ True
 
 extends= /ComputerScience/python/template/pltest.pl
 
-@ template.html
+#@ template.html
 
 
 
