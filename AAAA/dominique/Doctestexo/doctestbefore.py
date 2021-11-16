@@ -16,6 +16,10 @@ def add_try_clause(code, excpt):
             + "\nexcept " + excpt.__name__ + ":\n    pass")
 
 
+def double_with_tab(str):
+    return "\n\t".join(str.split("\n"))
+
+
 if __name__ == "__main__":
     if len(sys.argv) < 3:
         msg = ("Sandbox did not call builder properly:\n"
