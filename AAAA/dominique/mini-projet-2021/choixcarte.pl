@@ -43,6 +43,6 @@ pltest==
 ('As', 'Pique')
 >>> choixecarte([("8","Pique"),("Dame","Pique"),("As","Pique")],[("10","Carreau"),("As","Carreau"),("7","Pique"),("9","Pique")],"Pique", None) # monter à l'atout
 ('9', 'Pique')
->>> choixecarte([("8","Pique"),("As","Pique"),("Dame","Pique")],[("10","Carreau"),("As","Carreau"),("7","Pique"),("9","Pique")],"Pique", None) # défausse sur partenaire 
+>>> choixecarte([("8","Coeur"),("As","Pique"),("Dame","Coeur")],[("10","Carreau"),("As","Carreau"),("7","Pique"),("9","Pique")],"Pique", None) # défausse sur partenaire 
 ('As', 'Carreau')
 ==
