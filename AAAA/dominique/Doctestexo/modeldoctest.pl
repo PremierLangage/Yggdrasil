@@ -77,10 +77,10 @@ before==
 
 try:
     compilerror="Problème dans la définition de f1 erreur de compile"
-    compile(f1,"Votre code",'exec')
+    compile(f1,"Version 1",'exec')
     exec(f1, {}) # Nothing only a function def
     compilerror="Problème dans la définition de f2 erreur de compile"
-    compile(f1,"Votre code",'exec')
+    compile(f1,"Version 2",'exec')
     exec(f1, {}) # Nothing only a function def
 except Exception as e:
     import sys
