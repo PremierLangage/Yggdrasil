@@ -91,7 +91,7 @@ def subnlbybr(str):
     """
     if str :
        str = "  \n".join(str.split("\n"))
-       return "\n\t".join(str.split("\n"))
+       return "<pre><code>"+"\n\t".join(str.split("\n"))+"</code></pre>"
     return None
 
 text_f1  = subnlbybr(f1)
