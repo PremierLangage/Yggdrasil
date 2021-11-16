@@ -51,11 +51,11 @@ text==
 
 Soit la version 1 de la fonction :
 ```
-    {{f1}}
+    {{text_f1}}
 ```
 et la version 2 de la fonction :
 ```
-    {{f2}}
+    {{text_f2}}
 ```
 
 Ecrivez un doctest qui 'passe' pour f1 et qui échoue pour f2.
@@ -82,6 +82,20 @@ exec(f1, {}) # Nothing only a function def
 compilerror="Problème dans la définition de f2 erreur de compile"
 compile(f2,"Version 2",'exec')
 exec(f2, {}) # Nothing only a function def
+
+
+def subnlbybr(str):
+    """
+    >>> subnlbybr("\\n")
+    '&nbsp;&nbsp;\n'
+    """
+    if str :
+       str = "  \n".join(str.split("\n"))
+       return "&nbsp;".join(str.split(" "))
+    return None
+
+text_f1  = subnlbybr(f1)
+text_f2  = subnlbybr(f2)
 
 ==
 
