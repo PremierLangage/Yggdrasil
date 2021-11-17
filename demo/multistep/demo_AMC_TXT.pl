@@ -8,7 +8,6 @@ questions ==
 - Douala
 - Kribi
 
-
 ** Parmi les nombres suivants, lesquels sont positifs ?
 + 2
 - -2
