@@ -19,9 +19,10 @@ Ceci est le texte introductif de la feuille d'exercice pour l'étudiant.
 
 
 
-@ /examples/chemical_equation.pl
-@ /examples/proposition_subordonnee_relative.pl
-@ /examples/matrix_rank.pl
+
+
+@ /ComputerScience/C/examples/proposition_subordonnee_relative.pl
+@ /ComputerScience/C//examples/matrix_rank.pl
 
 @ /ComputerScience/C/examples/mouse.pl
 @ /ComputerScience/C/examples/nb_malloc_one_free.pl
