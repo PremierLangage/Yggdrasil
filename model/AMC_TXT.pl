@@ -8,9 +8,9 @@ settings.cumulative % false
 
 before == #|python|
 import random as rd
-from customradio import Radio
-from customcheckbox import CustomCheckbox
-from customtextselect import CustomTextSelect
+from radio import Radio
+from checkbox import Checkbox
+from textselect import CustomTextSelect
 from AMC import parse_AMC_TXT
 
 list_questions = parse_AMC_TXT(questions)
@@ -26,14 +26,16 @@ statement  = []
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
         comp.append(Radio())
+        comp[i].set_items(q['items'])
+        comp[i].set_sol(q['index'])
     elif q['type'] == "Checkbox":
-        comp.append(CustomCheckbox())
+        comp.append(Checkbox())
+        comp[i].set_items(q['items'])
+        comp[i].set_sol(q['index'])
     elif  q['type'] == 'TextSelect':
         # comp.append(CustomTextSelect())
         continue # no implemented yet 
     statement.append(q['text'])
-    comp[i].setitems(q['items'])
-    comp[i].setsol_from_index(q['index'])
     if 'ordered' not in q['options']:
         comp[i].shuffle()
 ==
