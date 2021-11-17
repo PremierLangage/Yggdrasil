@@ -15,28 +15,33 @@ Ceci est le texte introductif de la feuille d'exercice pour l'étudiant.
 #### Manipulation des variables ####
 
 @/AAAA/Anna/Select_set.pl
+
+
+
+
+@ /examples/chemical_equation.pl
+@ /examples/proposition_subordonnee_relative.pl
+@ /examples/matrix_rank.pl
+
+Yggdrasil/ComputerScience/C/examples/mouse.pl
+Yggdrasil/ComputerScience/C/examples/nb_malloc_one_free.pl
+
+Yggdrasil/ComputerScience/C/examples/barbe.pl
+
+Yggdrasil/ComputerScience/C/examples/code_route.pl
+
+Yggdrasil/ComputerScience/C/examples/matrix_rank.pl
+
+Yggdrasil/ComputerScience/C/examples/chemical_equation.pl
+
+
+# programming python
+Yggdrasil/ComputerScience/C/examples/pair.pl
 @/AAAA/Anna/Gab_completing.pl
+Yggdrasil/ComputerScience/C/exercices/program/random_instructions/set_instructions.pl
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# SQL
+Yggdrasil/ComputerScience/BD-DavidFrancis/exo-tp-soiree/soiree-q01.pl
 
 
 
