@@ -1,6 +1,6 @@
 @ /utils/sandboxio.py
 @ /utils/components/scoring.py
-@ /utils/components/radio.py [customradio.py]
+@ /utils/components/radio.py
 @ /utils/components/checkbox.py [customcheckbox.py]
 @ /utils/components/textselect.py [customtextselect.py]
 
