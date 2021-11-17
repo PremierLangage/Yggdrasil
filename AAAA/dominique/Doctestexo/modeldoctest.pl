@@ -3,7 +3,7 @@
 doc==
 
 # Objectif de ce model proposer un exercice 
-Ou l'on affiche deux fonctions de même non mais avec un code différent 
+Ou l'on affiche deux fonctions de même nom mais avec un code différent 
 
     f1==
     def f():
@@ -26,7 +26,7 @@ vas fonctionner pour f1 mais pas pour f2.
 
 ==
 
-title = Exercice de doctest boucle 
+title = Exercice de doctest :
 
 f1==
 def f(n):
@@ -46,8 +46,9 @@ def f(n):
 
 ==
 
-
+titre= Une boucle 
 text=
+title += titre 
 
 @ doctestrunner.py
 
