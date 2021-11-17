@@ -14,7 +14,9 @@ class PldoubleRunner(doctest.DocTestRunner):
         super().__init__()
 
     def evaluate(self):
-
+        """
+        return a grade 
+        """
         if not self.runf1test():
             if self.etat != "fail":
                 return 0,self.etat
@@ -35,7 +37,7 @@ class PldoubleRunner(doctest.DocTestRunner):
     def runf2test(self):
         """
         Run the doctest on f2 should that sould fail
-        but runtest should return false 
+        returns True if it is the case 
         """
         return  self.runtest(self.f2) == "fail"
     
