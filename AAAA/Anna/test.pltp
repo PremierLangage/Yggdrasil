@@ -14,12 +14,13 @@ Ceci est le texte introductif de la feuille d'exercice pour l'étudiant.
 
 #### Manipulation des variables ####
 
-@/AAAA/Anna/Select_set.pl
 
 
 
 
 
+
+@ /ComputerScience/C/examples/code_route.pl
 
 @ /ComputerScience/C/examples/proposition_subordonnee_relative.pl
 @ /ComputerScience/C/examples/matrix_rank.pl
@@ -30,7 +31,6 @@ Ceci est le texte introductif de la feuille d'exercice pour l'étudiant.
 @ /ComputerScience/C/examples/barbe.pl
 
 
-@ /ComputerScience/C/examples/code_route.pl
 
 @ /ComputerScience/C/examples/matrix_rank.pl
 
@@ -44,7 +44,12 @@ Ceci est le texte introductif de la feuille d'exercice pour l'étudiant.
 
 # SQL
 @ /ComputerScience/BD-DavidFrancis/exo-tp-soiree/soiree-q01.pl
+@ /ComputerScience/BD-DavidFrancis/exo/ex-random-requete.pl
 
 
+# Automates
+@ /ComputerScience/Automates-ClaireDavid/L2-determinisation/td2-exo1-A.pl
+@ /ComputerScience/Automates-ClaireDavid/L2-exo-base/2a3b.pl
+@ /ComputerScience/Automates-ClaireDavid/L2-exo-regex/TD3-3.pl
 
-
+@/AAAA/Anna/Select_set.pl
