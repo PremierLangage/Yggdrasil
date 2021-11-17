@@ -8,6 +8,12 @@ questions ==
 - Douala
 - Kribi
 
+
+** Parmi les nombres suivants, lesquels sont positifs ?
++ 2
+- -2
++ 10
+
 *[ordered] Combien font un plus un ?
 - 0
 - 1
