@@ -54,6 +54,8 @@ formstep ==
 
 evaluatorstep ==
 score = comp[step].eval()
+comp[step].disable()
+comp[step].show()
 ==
 
 
