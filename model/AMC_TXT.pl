@@ -10,7 +10,6 @@ before == #|python|
 import random as rd
 from radio import Radio
 from checkbox import Checkbox
-from textselect import CustomTextSelect
 from AMC import parse_AMC_TXT
 
 list_questions = parse_AMC_TXT(questions)
