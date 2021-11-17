@@ -47,8 +47,18 @@ def f(n):
 ==
 
 titre= Une boucle 
-text=
+text==
+Soit la version 1 de la fonction :\n<br/>
 
+{{code1}}
+
+  et la version 2 de la fonction :<br/>
+
+{{code2}}
+
+ **Ecrivez un doctest qui 'passe' pour première version  et qui échoue pour deuxième.**"
+
+==
 
 @ doctestrunner.py
 
@@ -70,7 +80,6 @@ exec(f1, {}) # Nothing only a function def
 compilerror="Problème dans la définition de f2 erreur de compile"
 compile(f2,"Version 2",'exec')
 exec(f2, {}) # Nothing only a function def
-
 
 ==
 
