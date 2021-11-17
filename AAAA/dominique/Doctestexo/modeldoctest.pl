@@ -26,7 +26,7 @@ vas fonctionner pour f1 mais pas pour f2.
 
 ==
 
-title = Exercice de doctest :
+title = Ecriture de doctests :
 
 f1==
 def f(n):
