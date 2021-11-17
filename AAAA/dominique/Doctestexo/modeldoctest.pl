@@ -76,13 +76,13 @@ exec(f2, {}) # Nothing only a function def
 editor.fontsize=14
 # une interface standard d'exercice avec un editeur pour la réponse
 editor =: CodeEditor
-editor.theme=dark
-editor.language=c
+#editor.theme=dark
+editor.language=python
 # editor.height=350px
 
 settings.allow_reroll=1
 
-form=" {{ editor|component }} "
+form={{ editor|component }}
 
 extracss==
 <style>
