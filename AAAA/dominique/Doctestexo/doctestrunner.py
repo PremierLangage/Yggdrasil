@@ -22,7 +22,7 @@ class PldoubleRunner(doctest.DocTestRunner):
         if not self.runf2test():
             if self.etat != "pass":
                 return 0,self.etat
-            return 25," Votre test pass pour la deuxième version ce qui n'est pas voulu"
+            return 25," Votre test pass pour la deuxi&eacute;me version ce qui n'est pas voulu"
 
         return 100, "Bravo !"
 
