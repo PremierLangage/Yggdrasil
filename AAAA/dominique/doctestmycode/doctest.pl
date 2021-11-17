@@ -4,7 +4,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/none.py
 
 editor =: CodeEditor
-editor.theme = Chrome
+editor.theme = light
 editor.language = python
 editor.code ==
 """# n'oublier pas une chaine multiligne est inspectée par doctest pour y trouver des tests   
