@@ -50,7 +50,9 @@ blabla= Un exercice.
 
 titre= Une boucle 
 text==
+
 {{blabla}}
+
 Soit la version 1 de la fonction :\n<br/>
 
 {{code1}}
