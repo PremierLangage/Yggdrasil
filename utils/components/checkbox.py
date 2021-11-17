@@ -107,7 +107,7 @@ class Checkbox(Component):
         return score
 
 
-# old class
+"""
 class CustomCheckbox(Component):
 
     def __init__(self, **kwargs):
@@ -219,6 +219,6 @@ class CustomCheckbox(Component):
         self.disabled = disabled
 
         return score
-
+"""
 
 
