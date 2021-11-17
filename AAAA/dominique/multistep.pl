@@ -26,7 +26,7 @@ before==
 from customradio import Radio
 from customcheckbox import CustomCheckbox
 from customtextselect import CustomTextSelect
-radio = CustomRadio() 
+radio = Radio() 
 check = CustomCheckbox()
 ztext = CustomTextSelect()
 import random
