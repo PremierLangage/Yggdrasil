@@ -46,18 +46,18 @@ def f(n):
 
 ==
 
-blabla= Un exercice.
+
 
 titre= Une boucle 
 text==
 
-{{blabla}}
 
-Soit la version 1 de la fonction :\n<br/>
+
+Soit la version 1 de la fonction suivante :\n<br/>
 
 {{code1}}
 
-  et la version 2 de la fonction :<br/>
+et la version 2 de la fonction suivante :<br/>
 
 {{code2}}
 
