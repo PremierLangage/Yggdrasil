@@ -95,3 +95,10 @@ extracss==
 }
 </style>
 ==
+
+evaluator==
+import doctestrunner
+runner = PldoubleRunner(f1,f2,editor.code)
+
+grade = runner.evaluate()
+==
