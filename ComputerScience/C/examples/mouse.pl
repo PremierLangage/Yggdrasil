@@ -39,7 +39,9 @@ Analyser une vidéo
 ==
 
 text==
-Dans le clip suivant, combien de souris le **chat** fait-il couiné ? Cet exercice 
+Dans le clip suivant, combien de souris le **chat** fait-il couiné ?
+
+ Cet exercice 
 est plus simple avec le son d'activé.
 
 <br>
