@@ -48,7 +48,7 @@ def f(n):
 
 titre= Une boucle 
 text=
-title += titre 
+
 
 @ doctestrunner.py
 
@@ -63,7 +63,7 @@ title += titre
 @ ./doctestbefore.py [builder.py]
 before==
 
-
+title += titre 
 compilerror="Problème dans la définition de f1 erreur de compile"
 compile(f1,"Version 1",'exec')
 exec(f1, {}) # Nothing only a function def
