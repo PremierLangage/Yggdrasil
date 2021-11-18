@@ -23,10 +23,10 @@ la fonction retire du jeux du joueur et la retourne la carte la plus forte (stre
 ==
 
 pltest==
->>> choixentame([("9","carreau"),("8","carreau")],"pique", None)
+>>> choixentame([("9","carreau"),("8","carreau")],"Pas d'atout", None)
 ('9', 'carreau')
->>> choixentame([("Valet","Coeur"),("Valet","Pique")],"pique", None)
+>>> choixentame([("Valet","Coeur"),("Valet","Pique")],"Pas Atout du tout", None)
 ('Valet', 'Coeur')
->>> choixentame([("Valet","Coeur"),("9","Pique"),("10","Coeur")],"pique", None)
+>>> choixentame([("Valet","Coeur"),("9","Pique"),("10","Coeur")],"Pique", None)
 ('9', 'Pique')
 ==
