@@ -27,7 +27,7 @@ text==#|markdown|
 Écrire une fonction **show_cube** qui prend en argument un entier **n** 
 (par exemple 3) et qui affiche une phrase donnant le cube de cet entier 
 tout en rappelant cet entier (par exemple : *Le cube du nombre 3 est le 
-nombre 9.*).
+nombre 27.*).
 
 <br />
 
