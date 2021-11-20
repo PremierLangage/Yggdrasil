@@ -62,7 +62,7 @@ for i, q in enumerate(list_questions):
         comp[i].shuffle()
 ==
 
-evaluatorstep ==
+evaluator ==
 for i in range(nbstep):
     score = comp[step].eval()
     comp[step].disable()
