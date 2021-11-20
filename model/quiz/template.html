@@ -11,17 +11,12 @@
       <a class="nav-link" data-toggle="pill" href="#menu2">2</a>
     </li>
   </ul>
-
     <!-- Tab panes -->
   <div class="tab-content">
+      {% for name in comp %}
     <div id="home" class="container tab-pane active"><br>
-      {{ comp[0]|component }}
+      {{ name|component }}
     </div>
-    <div id="menu1" class="container tab-pane fade"><br>
-      {{ comp[1]|component }}
-    </div>
-    <div id="menu2" class="container tab-pane fade"><br>
-      {{ comp[2]|component }}
-    </div>
+  {% endfor %}
   </div>
 </div>
