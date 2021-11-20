@@ -1,16 +1,4 @@
-<div class="container">
-  <!-- Nav pills -->
-  <ul class="nav nav-pills" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link bg-light text-dark" style="padding: 0.3rem 0.5rem;" data-toggle="pill" href="#q0">1</a>
-    </li>
-        {% for i in range(1, nbstep) %}
-    <li class="nav-item">
-      <a class="nav-link bg-light text-dark" style="padding: 0.3rem 0.5rem;" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
-    </li>
-  {% endfor %}
-  </ul>
-    <!-- Tab panes -->
+
   <div class="tab-content">
     <div id="q0" class="container tab-pane active"><br>
       {{ statement[0] }}
