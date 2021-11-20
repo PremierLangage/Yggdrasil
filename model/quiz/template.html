@@ -13,9 +13,12 @@
   </ul>
     <!-- Tab panes -->
   <div class="tab-content">
-      {% for i in range(nbstep) %}
     <div id="home" class="container tab-pane active"><br>
-      {{ comp[nbstep]|component }}
+      {{ comp[0]|component }}
+    </div>
+    {% for i in range(1, nbstep) %}
+    <div id="home" class="container tab-pane fade"><br>
+      {{ comp[i]|component }}
     </div>
   {% endfor %}
   </div>
