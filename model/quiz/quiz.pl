@@ -12,8 +12,8 @@ extends = /model/basic/temp.pl
 @ /utils/components/radio.py
 @ /utils/components/checkbox.py
 
-before_scripts % ["importfunc", "before", "process"]
-eval_scripts % ["getans", "evaluator", "evalprocess"]
+before_scripts = ["before"]
+eval_scripts = ["evaluator"]
 
 importfunc == #|python|
 from random import choice, choices, sample, shuffle
