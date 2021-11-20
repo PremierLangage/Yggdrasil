@@ -18,7 +18,7 @@
     </div>
     {% for i in range(1, nbstep-1) %}
 
-    <div id="q{{i}}" class="container tab-pane fade">
+    <div id="q{{i}}" class="container tab-pane fade"><br>
     <div class="question">
     {{ statement[i] }}
     </div>
@@ -26,12 +26,8 @@
     {{ comp[i]|component }}
     </div>  
     <a class="nav-link" data-toggle="pill" href="#q{{i+1}}">Suivant</a>
+        <button class="btn btn-primary action-submit">Terminer</button>
     </div>
   {% endfor %}
-      <div id="q{{nbstep-1}}" class="container tab-pane fade"><br>
-      {{ statement[nbstep-1] }}
-      {{ comp[nbstep-1]|component }}
-    <button class="btn btn-primary action-submit">Terminer</button>
-    </div>
   </div>
 </div>
