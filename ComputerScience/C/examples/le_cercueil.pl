@@ -55,6 +55,7 @@ particulier, quel est ce meme ?
 
 <center>
 <div>
+<img src="{{ url_phot }}" style="width:40%" alt="les instruments de musiques de l'enfer"/><br>
 <audio controls>
   <source src="{{ url_clip }}" type="audio/mp3">
   Votre navigateur ne supporte pas la lecture du clip audio.
