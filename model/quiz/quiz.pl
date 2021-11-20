@@ -8,6 +8,9 @@ extends = /model/basic/temp.pl
 @ /model/basic/jinja_basic.py [jinja_env.py]
 @ /model/basic/json_basic.py [json_encoder.py]
 @ /utils/format/AMC.py
+@ /utils/components/scoring.py
+@ /utils/components/radio.py
+@ /utils/components/checkbox.py
 
 before_scripts % ["importfunc", "before", "process"]
 eval_scripts % ["getans", "evaluator", "evalprocess"]
