@@ -33,11 +33,11 @@ import random
 
 group.items = []
 R = 'y1'
-group.items.append({"id": "n1", "content": "J'en peux plus le confinement avec toi."})
-group.items.append({"id": "n2", "content": "Je préfère boumbo, petite automobile."})
-group.items.append({"id": "n3", "content": "Pourquoi le père noël a ramené ce pédalier multi-effets pour guitare electrique?"})
-group.items.append({"id": "n4", "content": "Ce soir, tu dors dehors si ça continue."})
-group.items.append({"id": R, "content": "Tortues ninja, ça suffit maintenant!"})
+group.items.append({"id": "n1", "content": "Big Enough (Kirin J Callinan)"})
+group.items.append({"id": "n2", "content": "Epic sax guy"})
+group.items.append({"id": "n3", "content": "Troll song (la la la la la...)"})
+group.items.append({"id": "n4", "content": "Nyan Cat"})
+group.items.append({"id": R, "content": "La chanson du cercueil"})
 
 # shuffle the items
 random.shuffle(group.items)
@@ -46,8 +46,9 @@ random.shuffle(group.items)
 title=Know your meme!
 
 text==#|markdown|
-On entend Madame Borie ouvrir une porte puis dire quelque chose durant ce clip 
-audio. Mais que dit madame Borie exactement ? 
+Un célèbre groupe de métal flûte propose ici une réinterprétation d'un célèbre
+morceau de musique issue d'un même très célèbre sur Internet et Youtube en 
+particulier, quel est ce meme ?
 
 <br>
 
@@ -70,7 +71,7 @@ form==
 evaluator==#|python|
 S = group.selection
 score = 0
-feedback = '<span class="error-state animated pulse infinite" style="padding: 10px">Non, il faut mieux écouter...</span>'
+feedback = '<span class="error-state animated pulse infinite" style="padding: 10px">Non, il faut réviser vos classiques...</span>'
 
 for item in group.items:
     item['css'] = ''
@@ -78,7 +79,7 @@ for item in group.items:
         if S == R:
             item['css'] = 'success-border'
             score = 100
-            feedback = '''<span class="success-state animated pulse infinite" style="padding: 10px">Parfait, vous avez l'oreille!</span>'''
+            feedback = '''<span class="success-state animated pulse infinite" style="padding: 10px">Parfait, vous maitrisez les memes!</span>'''
         else:
             item['css'] = 'error-border'
     elif item['id'] == R:
