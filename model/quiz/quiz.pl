@@ -7,6 +7,7 @@ extends = /model/basic/temp.pl
 @ /utils/plcsv.py
 @ /model/basic/jinja_basic.py [jinja_env.py]
 @ /model/basic/json_basic.py [json_encoder.py]
+@ /utils/format/AMC.py
 
 before_scripts % ["importfunc", "before", "process"]
 eval_scripts % ["getans", "evaluator", "evalprocess"]
@@ -56,4 +57,22 @@ for i, q in enumerate(list_questions):
     statement.append(q['text'])
     if 'ordered' not in q['options']:
         comp[i].shuffle()
+==
+
+questions ==
+* Quelle est la capitale du Cameroun ?
++ Yaoundé
+- Douala
+- Kribi
+
+** Parmi les nombres suivants, lesquels sont positifs ?
++ 2
+- -2
++ 10
+
+*[ordered] Combien font un plus un ?
+- 0
+- 1
++ 2
+- 3
 ==
