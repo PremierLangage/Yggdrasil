@@ -1,12 +1,12 @@
 <div class="container">
   <!-- Nav pills -->
-  <ul class="nav nav-pills bg-light text-dark" role="tablist">
+  <ul class="nav nav-pills" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" data-toggle="pill" href="#q0">1</a>
     </li>
         {% for i in range(1, nbstep) %}
     <li class="nav-item">
-      <button class="nav-link" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
+      <a class="nav-link" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
     </li>
   {% endfor %}
   </ul>
