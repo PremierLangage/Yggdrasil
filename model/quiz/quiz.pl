@@ -62,6 +62,13 @@ for i, q in enumerate(list_questions):
         comp[i].shuffle()
 ==
 
+evaluatorstep ==
+for i in range(nbstep):
+    score = comp[step].eval()
+    comp[step].disable()
+    comp[step].show()
+==
+
 questions ==
 * Quelle est la capitale du Cameroun ?
 + Yaoundé
