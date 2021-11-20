@@ -8,7 +8,7 @@
     </li>
   {% endfor %}
   </ul>
-  
+
   <div class="tab-content">
     <div id="q0" class="container tab-pane active"><br>
       {{ statement[0] }}
@@ -22,10 +22,9 @@
     <div style="display: block; margin-top: 1em;">
     {{ comp[i]|component }}
     </div>  
-    <a class="nav-link" data-toggle="pill" href="#q{{i+1}}">Suivant</a>
     </div>
   {% endfor %}
-      <button class="nexttab btn btn-light">Suivant</i></button>
+    <button class="nexttab btn btn-light">Suivant</i></button>
   </div>
 </div>
 
