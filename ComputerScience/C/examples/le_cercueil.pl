@@ -44,7 +44,7 @@ group.items.append({"id": R, "content": "La chanson du cercueil"})
 random.shuffle(group.items)
 ==
 
-title=Know your meme!
+title=Know your meme !
 
 text==#|markdown|
 Un célèbre groupe de métal flûte propose ici une réinterprétation d'un célèbre
