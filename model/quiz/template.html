@@ -44,6 +44,8 @@
                 if(i < pane.length - 1){
                     // for pane
                     $(pane[i]).removeClass('active');
+                    $(pane[i]).addClass('fade');
+                    $(pane[i+1]).removeClass('fade');
                     $(pane[i+1]).addClass('active');
                 }
 
