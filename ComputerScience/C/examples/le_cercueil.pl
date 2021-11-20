@@ -43,7 +43,7 @@ group.items.append({"id": R, "content": "Tortues ninja, ça suffit maintenant!"}
 random.shuffle(group.items)
 ==
 
-title=Écoute attentive d'un clip audio
+title=Know your meme!
 
 text==#|markdown|
 On entend Madame Borie ouvrir une porte puis dire quelque chose durant ce clip 
