@@ -63,7 +63,7 @@ for i, q in enumerate(list_questions):
 ==
 
 evaluator ==
-for i in range(nbstep):
+for step in range(nbstep):
     score = comp[step].eval()
     comp[step].disable()
     comp[step].show()
