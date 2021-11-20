@@ -43,7 +43,7 @@ else:
     nbstep = len(list_questions)
 
 comp = []
-statement  = []
+question  = []
 
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
@@ -57,7 +57,7 @@ for i, q in enumerate(list_questions):
     elif  q['type'] == 'TextSelect':
         # comp.append(CustomTextSelect())
         continue # no implemented yet 
-    statement.append(q['text'])
+    question.append(q['text'])
     if 'ordered' not in q['options']:
         comp[i].shuffle()
 ==
