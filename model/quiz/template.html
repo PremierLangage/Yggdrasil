@@ -30,17 +30,19 @@
 </li>
     {% for i in range(nbstep) %}
 <li class="nav-item">
-    <a class="nav-link bg-light text-dark" style="padding: 0.3rem 0.5rem;" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
+    {% if scores[i] == 100 %}
+    <a class="nav-link bg-success text-dark" style="padding: 0.3rem 0.5rem;" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
+    {% else %}
+    <a class="nav-link bg-danger text-dark" style="padding: 0.3rem 0.5rem;" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
+    {% endif %}
 </li>
 {% endfor %}
 </ul>
 <div class="tab-content">
+<div id="q{{i}}" class="container tab-pane active"><br>
+
 {% for i in range(nbstep) %}
-{% if i == 0 %}
-    <div id="q{{i}}" class="container tab-pane active"><br>
-{% else %}
     <div id="q{{i}}" class="container tab-pane fade"><br>
-{% endif %}
 <div class="question">
 {{ statement[i] }}
 </div>
