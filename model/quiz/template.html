@@ -1,29 +1,60 @@
 {% if state == "active" %}  
   
-  <div class="tab-content">
-    {% for i in range(nbstep) %}
-    {% if i == 0 %}
-        <div id="q{{i}}" class="container tab-pane active"><br>
-    {% else %}
-        <div id="q{{i}}" class="container tab-pane fade"><br>
-    {% endif %}
-    <div class="question">
-    {{ statement[i] }}
-    </div>
-    <div style="display: block; margin-top: 1em;">
-    {{ comp[i]|component }}
-    </div>
-    {% if i == nbstep-1 %}
-      <button class="btn btn-primary action-submit">Terminer</button>
-    {% else %}
-      <button class="nexttab btn btn-light" onclick="showTab({{i}})">Suivant</i></button>
-    {% endif %}
-  </div>
-  {% endfor %}
+<div class="tab-content">
+{% for i in range(nbstep) %}
+{% if i == 0 %}
+    <div id="q{{i}}" class="container tab-pane active"><br>
+{% else %}
+    <div id="q{{i}}" class="container tab-pane fade"><br>
+{% endif %}
+<div class="question">
+{{ statement[i] }}
+</div>
+<div style="display: block; margin-top: 1em;">
+{{ comp[i]|component }}
+</div>
+{% if i == nbstep-1 %}
+    <button class="btn btn-primary action-submit">Terminer</button>
+{% else %}
+    <button class="nexttab btn btn-light" onclick="showTab({{i}})">Suivant</i></button>
+{% endif %}
+</div>
+{% endfor %}
 </div>
 
 {% else %}
 
+<ul class="nav nav-pills" role="tablist">
+<li class="nav-item">
+    <a class="nav-link bg-light text-dark" style="padding: 0.3rem 0.5rem;" data-toggle="pill" href="#q0">1</a>
+</li>
+    {% for i in range(1, nbstep) %}
+<li class="nav-item">
+    <a class="nav-link bg-light text-dark" style="padding: 0.3rem 0.5rem;" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
+</li>
+{% endfor %}
+</ul>
+<div class="tab-content">
+{% for i in range(nbstep) %}
+{% if i == 0 %}
+    <div id="q{{i}}" class="container tab-pane active"><br>
+{% else %}
+    <div id="q{{i}}" class="container tab-pane fade"><br>
+{% endif %}
+<div class="question">
+{{ statement[i] }}
+</div>
+<div style="display: block; margin-top: 1em;">
+{{ comp[i]|component }}
+</div>
+{% if i == nbstep-1 %}
+    <button class="btn btn-primary action-submit">Terminer</button>
+{% else %}
+    <button class="nexttab btn btn-light" onclick="showTab({{i}})">Suivant</i></button>
+{% endif %}
+</div>
+{% endfor %}
+</div>
 
 {% endif %}
 
