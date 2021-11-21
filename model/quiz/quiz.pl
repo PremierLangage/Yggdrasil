@@ -25,7 +25,7 @@ title =
 form = 
 text = 
 
-tplpage =@ template.html
+tplpage =@ template2.html
 
 style.basic =@ /demo/css/basic.html
 
