@@ -13,7 +13,7 @@
     </div>  
     </div>
   {% endfor %}
-    <button class="nexttab btn btn-light" onclick="showTab(i)">Suivant</i></button>
+    <button class="nexttab btn btn-light" onclick="showTab()">Suivant</i></button>
     <button class="btn btn-primary action-submit">Terminer</button>
   </div>
 </div>
@@ -22,7 +22,7 @@
       /* -------------------------------------------------------------
             bootstrapTabControl
         ------------------------------------------------------------- */
-        function showTab(i){
+        function showTab(){
             var tab = document.getElementById('q2');
             tab.removeClass('active');
             tab.addClass('fade');
