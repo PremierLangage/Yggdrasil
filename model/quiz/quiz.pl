@@ -35,6 +35,8 @@ from radio import Radio
 from checkbox import Checkbox
 from AMC import parse_AMC_TXT
 
+state = "active"
+
 list_questions = parse_AMC_TXT(questions)
 
 if 'nbstep' in globals():
@@ -67,6 +69,7 @@ for step in range(nbstep):
     score = comp[step].eval()
     comp[step].disable()
     comp[step].show()
+state = "grade"
 ==
 
 questions ==
