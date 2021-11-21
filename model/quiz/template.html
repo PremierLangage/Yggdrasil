@@ -24,9 +24,9 @@
         function showTab(i){
             window.alert("q" + String(i));
             var tab = document.getElementById("q" + String(i));
-            tab.removeClass('active');
-            tab.addClass('fade');
-            tab.removeClass('fade');
-            tab.addClass('active');
+            tab.classList.remove('active');
+            tab.classList.add('fade');
+            tab.classList.remove('fade');
+            tab.classList.add('active');
         }
     </script>
