@@ -11,7 +11,7 @@
     <div style="display: block; margin-top: 1em;">
     {{ comp[i]|component }}
     </div>
-        <button class="nexttab btn btn-light" onclick="showTab( {{i}} )">Suivant</i></button>
+        <button class="nexttab btn btn-light" onclick="showTab()">Suivant</i></button>
  
     </div>
   {% endfor %}
@@ -23,7 +23,7 @@
       /* -------------------------------------------------------------
             bootstrapTabControl
         ------------------------------------------------------------- */
-        function showTab(i){
+        function showTab(){
             window.alert("q".concact(Str(2));
             var tab = document.getElementById("q2");
             tab.removeClass('active');
