@@ -70,7 +70,7 @@ for step in range(nbstep):
     scores.append(comp[step].eval())
     comp[step].disable()
     comp[step].show()
-score = sum(scores)//(100 *len(scores))
+score = sum(scores) // len(scores)
 state = "grade"
 ==
 
