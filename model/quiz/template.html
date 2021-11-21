@@ -23,10 +23,11 @@
         ------------------------------------------------------------- */
         function showTab(i){
             window.alert("q" + String(i));
-            var tab = document.getElementById("q" + String(i));
-            tab.classList.remove('active');
-            tab.classList.add('fade');
-            tab.classList.remove('fade');
-            tab.classList.add('active');
+            var current = document.getElementById("q" + String(i));
+            var next = document.getElementById("q" + String(i+1));
+            current.classList.remove('active');
+            current.classList.add('fade');
+            next.classList.remove('fade');
+            next.classList.add('active');
         }
     </script>
