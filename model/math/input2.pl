@@ -32,10 +32,13 @@ form =
 tplpage =@ template.html
 
 evaluator ==
-score = 100
+score = 0
 feedback = str(answers)
 ==
 
+solution ==
+{{ answers }}
+==
 
 embed =
 
