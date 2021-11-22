@@ -34,6 +34,38 @@ def read_text_bracket(string):
     
     return ("".join(lst),selection,k)
 
+def parse_text(string):
+    lst = []
+    current = []
+    selection = []
+    lastBracket = None
+    for i in range(len(string)):
+        if string[i] in '{[':
+            if i > 0 and string[i-1] == '\\':
+                current.pop()
+                current.append(string[i])
+            else :
+                lastBracket = '}' if string[i] == '{' else ']'
+        elif string[i] == lastBracket:
+            if i>0 and string[i-1] == '\\':
+                current.pop()
+                current.append(string[i])
+            else :
+                if string[i] == '}':
+                    selection.append(len(lst))
+                lst.append(f'<span data-index="{len(lst)}">{"".join(current)}</span>')
+                current.clear()
+                lastBracket = None
+        elif string[i] in ' \n\t' and lastBracket is None:
+            if len(current) == 0:
+                lst[len(lst)-1] += string[i]
+            else:
+                lst.append(f'<span data-index="{len(lst)}">{"".join(current)}</span>{string[i]}')
+                current.clear()
+        else :
+            current.append(string[i])
+    return "".join(lst), selection, len(lst)
+
 _seltext_ = bracket_words(seltext)
 HTML, sol, nbunits = read_text_bracket(_seltext_)
 ==
