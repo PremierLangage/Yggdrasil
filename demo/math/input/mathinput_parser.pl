@@ -12,7 +12,7 @@ Entrer une expression mathématique.
 
 symbol_dict = {'e': E}
 
-evaluator2 ==
+evaluator ==
 from latex2sympy import latex2sympy
 from sympy import srepr, fraction, sympify, E
 from evalsympy import is_rat_simp
