@@ -33,7 +33,7 @@ score = -1
 
 keypad = []
 
-feedback2 ==
+solution ==
 <ul>
     <li> Code LaTeX : {{ codelatex }} </li>
     <li> Objet Sympy : {{ str_ans }} </li>
