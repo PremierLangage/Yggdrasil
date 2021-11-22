@@ -161,9 +161,9 @@ arrayMath = document.getElementsByClassName("mathInput");
 var arrayMathField = []
 var preval = [];
 var names = [];
- 
+
 for (let el of arrayMath) {
-  names.push(el.id);
+  names.push(String(el.id));
   var val =  String.raw`{{ answers[name]|safe }}`;
   preval.push(val);
 }
