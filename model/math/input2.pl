@@ -70,8 +70,6 @@ macros ==
 
 inputblock ==
 {{ mathinput("math") }}
-
-{{ mathinput("mathbis") }}
 ==
 
 
@@ -148,7 +146,7 @@ background-color: #F5F5F5;
 </style>
 ==
 
-mathinputid % ["math", "mathbis"]
+mathinputid % ["math"]
 
 javascript.mathquill1 ==
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
@@ -159,17 +157,15 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   autoOperatorNames: 'sin cos tan ln exp cup cap',
   });
 
-arrayMath = document.getElementsByClassName("mathInput");
+
 var arrayMathField = []
 var preval = [];
 var names = [];
-
-for (let el of arrayMath) {
-  names.push(String(el.id));
-  var val =  String.raw`{{ answers[name]|safe }}`;
-  preval.push(val);
-}
-window.alert(String(names));
+{% for name in mathinputid %}
+names.push("{{name}}");
+var val =  String.raw`{{ answers[name]|safe }}`;
+preval.push(val);
+{% endfor %}
 
 for (let i = 0; i < names.length; i++) {
 {% if embed|length > 0 %}
@@ -192,6 +188,7 @@ javascript.mathquill2 ==
 function onBeforeSubmitPL() {
   // copie les valeurs des champs MathField dans des éléments input
   arrayMathField.forEach(function(mathField) {
+    //var mathField = MQ(mathFieldSpan);
     var mathFieldInput = document.getElementById('form_'+mathField.el().id);
     if (mathField instanceof MQ.MathField) {
       mathFieldInput.value = mathField.latex();
