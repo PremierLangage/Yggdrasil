@@ -70,6 +70,8 @@ macros ==
 
 inputblock ==
 {{ mathinput("math") }}
+
+{{ mathinput("mathbis") }}
 ==
 
 
@@ -146,7 +148,7 @@ background-color: #F5F5F5;
 </style>
 ==
 
-mathinputid % ["math"]
+mathinputid % ["math", "mathbis"]
 
 javascript.mathquill1 ==
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
