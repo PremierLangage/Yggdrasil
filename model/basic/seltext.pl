@@ -25,7 +25,7 @@ def read_text_bracket(string):
     k=0
     for i in range(len(lst)):
         s = lst[i]
-        if s[0] != "\":
+        if s[0] != "\\":
             if s[0] == "{" or s[0] == "[":
                 if s[0] == "{":
                     selection.append(k)
