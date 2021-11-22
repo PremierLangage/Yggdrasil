@@ -7,7 +7,7 @@ Sélectionner dans ce texte les mots qui désignent Van Gogh
 ==
 
 seltext == 
-En 1888, #Vincent Van Gogh# peint {«Nuit Etoilée»}. 
+En 1888, {Vincent Van Gogh} peint {«Nuit Etoilée»}. 
 Il est difficile de représenter {la nuit} {en couleurs}.
 #L'artiste# installait {son chevalet} lorsque {la nuit} tombait.
 Mais comment peindre sans lampadaire ? 
