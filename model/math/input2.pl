@@ -70,6 +70,9 @@ macros ==
 
 inputblock ==
 {{ mathinput("math") }}
+
+{{ mathinput("mathbis") }}
+
 ==
 
 
