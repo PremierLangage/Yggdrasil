@@ -57,16 +57,13 @@ Score : {{score}} / 100
 
 {% endif %}
 
-    <script type="text/javascript">
-      /* -------------------------------------------------------------
-            bootstrapTabControl
-        ------------------------------------------------------------- */
-        function showTab(i){
-            var current = document.getElementById("q" + String(i));
-            var next = document.getElementById("q" + String(i+1));
-            current.classList.remove('active');
-            current.classList.add('fade');
-            next.classList.remove('fade');
-            next.classList.add('active');
-        }
-    </script>
+<script type="text/javascript">
+function showTab(i){
+    var current = document.getElementById("q" + String(i));
+    var next = document.getElementById("q" + String(i+1));
+    current.classList.remove('active');
+    current.classList.add('fade');
+    next.classList.remove('fade');
+    next.classList.add('active');
+}
+</script>
