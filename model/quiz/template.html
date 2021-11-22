@@ -2,23 +2,23 @@
   
 <div class="tab-content">
 {% for i in range(nbstep) %}
-{% if i == 0 %}
-    <div id="q{{i}}" class="container tab-pane active">
-{% else %}
-    <div id="q{{i}}" class="container tab-pane fade">
-{% endif %}
-<div class="question">
-{{ statement[i] }}
-</div>
-<div style="display: block; margin-top: 1em;">
-{{ comp[i]|component }}
-</div>
-{% if i == nbstep-1 %}
-    <button class="btn btn-primary action-submit">Terminer</button>
-{% else %}
-    <button class="nexttab btn btn-light" onclick="showTab({{i}})">Suivant</i></button>
-{% endif %}
-</div>
+    {% if i == 0 %}
+        <div id="q{{i}}" class="container tab-pane active">
+    {% else %}
+        <div id="q{{i}}" class="container tab-pane fade">
+    {% endif %}
+    <div class="question">
+    {{ statement[i] }}
+    </div>
+    <div style="display: block; margin-top: 1em;">
+    {{ comp[i]|component }}
+    </div>
+    {% if i == nbstep-1 %}
+        <button class="btn btn-primary action-submit">Terminer</button>
+    {% else %}
+        <button class="nexttab btn btn-light" onclick="showTab({{i}})">Suivant</i></button>
+    {% endif %}
+    </div>
 {% endfor %}
 </div>
 
