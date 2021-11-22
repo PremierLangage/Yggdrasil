@@ -28,14 +28,14 @@
 
 <ul class="nav nav-pills" role="tablist">
 <li class="nav-item">
-    <a class="nav-link btn rounded-0 btn-outline-dark" style="padding: 0.3rem 0.5rem;" data-toggle="pill" href="#intro"><i class="far fa-file"></i></a>
+    <a class="nav-link btn rounded-0 btn-outline-dark" style="box-shadow: none; padding: 0.3rem 0.5rem;" data-toggle="pill" href="#intro"><i class="far fa-file"></i></a>
 </li>
     {% for i in range(nbstep) %}
 <li class="nav-item">
     {% if scores[i] == 100 %}
     <a class="nav-link btn rounded-0 btn-outline-success" style="box-shadow: none; padding: 0.3rem 0.5rem;" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
     {% else %}
-    <a class="nav-link btn rounded-0 btn-outline-danger" style="padding: 0.3rem 0.5rem;" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
+    <a class="nav-link btn rounded-0 btn-outline-danger" style="box-shadow: none; padding: 0.3rem 0.5rem;" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
     {% endif %}
 </li>
 {% endfor %}
