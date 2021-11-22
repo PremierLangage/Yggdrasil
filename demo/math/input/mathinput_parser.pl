@@ -28,12 +28,12 @@ except:
     str_ans = ""
     srepr_ans = ""
 
-score = -1
+score = 0
 ==
 
 keypad = []
 
-feedback ==
+solution ==
 <ul>
     <li> Code LaTeX : {{ codelatex }} </li>
     <li> Objet Sympy : {{ str_ans }} </li>
