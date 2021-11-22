@@ -72,6 +72,18 @@ function onReadyPL(nodes) {
     actions.find('br').remove();
     body.children('br').remove();
 
+arrayMath = document.getElementsByClassName("mathInput");
+var arrayMathField = []
+var preval = [];
+var names = [];
+
+for (let el of arrayMath) {
+  names.push(String(el.id));
+  var val =  String.raw`{{ answers[name]|safe }}`;
+  preval.push(val);
+}
+window.alert(String(names));
+
         {% if embed|length > 0 %}
     mathField.reflow();
     {% endif %}
