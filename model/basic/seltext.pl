@@ -25,12 +25,13 @@ def read_text_bracket(string):
     k=0
     for i in range(len(lst)):
         s = lst[i]
-        if s[0] == "{" or s[0] == "[":
-            if s[0] == "{":
-                selection.append(k)
-            p = s[1:-1]
-            lst[i] = f'<span data-index="{k}">{p}</span>'
-            k+=1
+        if s[0] != "\":
+            if s[0] == "{" or s[0] == "[":
+                if s[0] == "{":
+                    selection.append(k)
+                p = s[1:-1]
+                lst[i] = f'<span data-index="{k}">{p}</span>'
+                k+=1
     
     return ("".join(lst),selection,k)
 
