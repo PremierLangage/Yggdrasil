@@ -167,6 +167,7 @@ for (let el of arrayMath) {
   var val =  String.raw`{{ answers[name]|safe }}`;
   preval.push(val);
 }
+window.alert(String(names));
 
 for (let i = 0; i < names.length; i++) {
 {% if embed|length > 0 %}
