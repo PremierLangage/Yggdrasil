@@ -36,9 +36,6 @@ score = -1
 feedback = str(answers)
 ==
 
-solution ==
-{{ answers }}
-==
 
 embed =
 
