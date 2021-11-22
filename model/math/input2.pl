@@ -33,7 +33,7 @@ tplpage =@ template.html
 
 evaluator ==
 score = 100
-feedback = str(answer)
+feedback = str(answers)
 ==
 
 
