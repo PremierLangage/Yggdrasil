@@ -32,7 +32,7 @@ form =
 tplpage =@ template.html
 
 evaluator ==
-score = 0
+score = -1
 feedback = str(answers)
 ==
 
