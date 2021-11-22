@@ -67,7 +67,7 @@ def parse_text(string):
     return "".join(lst), selection, len(lst)
 
 _seltext_ = bracket_words(seltext)
-HTML, sol, nbunits = read_text_bracket(_seltext_)
+HTML, sol, nbunits = parse_text(_seltext_)
 ==
 
 inputblock ==
