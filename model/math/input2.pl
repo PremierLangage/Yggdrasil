@@ -48,9 +48,9 @@ macros ==
 <div id="{{ name }}"> {{ embed }}</div>
 {% else %}
 {% if score == -1 %}
-<div id="{{ name }}" style="min-width: 5em; font-size:14pt;padding: 0.2em;" data-toggle="popover" data-content="Some content inside the popover"></div>
+<div id="{{ name }}" class= "mathInput" style="min-width: 5em; font-size:14pt;padding: 0.2em;" data-toggle="popover" data-content="Some content inside the popover"></div>
 {% else %}
-<div id="{{ name }}" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
+<div id="{{ name }}" class= "mathInput" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
 {% endif %}
 {% endif %}
 {% if keypad|length > 0 %}
