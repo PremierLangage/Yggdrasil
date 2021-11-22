@@ -44,7 +44,7 @@ def parse_text(string):
             if i > 0 and string[i-1] == '\\':
                 current.pop()
                 current.append(string[i])
-            else :
+            elif lastBracket is None :
                 lastBracket = '}' if string[i] == '{' else ']'
         elif string[i] == lastBracket:
             if i>0 and string[i-1] == '\\':
