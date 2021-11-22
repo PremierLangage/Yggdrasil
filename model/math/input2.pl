@@ -157,15 +157,16 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   autoOperatorNames: 'sin cos tan ln exp cup cap',
   });
 
-
+arrayMath = document.getElementsByClassName("mathInput");
 var arrayMathField = []
 var preval = [];
 var names = [];
-{% for name in mathinputid %}
-names.push("{{name}}");
-var val =  String.raw`{{ answers[name]|safe }}`;
-preval.push(val);
-{% endfor %}
+ 
+for (let el of arrayMath) {
+  names.push(el.id);
+  var val =  String.raw`{{ answers[name]|safe }}`;
+  preval.push(val);
+}
 
 for (let i = 0; i < names.length; i++) {
 {% if embed|length > 0 %}
