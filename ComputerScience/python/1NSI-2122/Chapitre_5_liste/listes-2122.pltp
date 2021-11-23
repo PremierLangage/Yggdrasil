@@ -32,7 +32,6 @@ Si un exercice vous semble faux vous pouvez demander de l'aide au chargé de TP 
 
 # Manipulation de liste par référence
 @ ajoute_liste-2122.pl
-@ extends_list-2122.pl
 @ remplace_pair-2122.pl
 @ supprime_pair-2122.pl
 
@@ -42,10 +41,8 @@ Si un exercice vous semble faux vous pouvez demander de l'aide au chargé de TP 
 # Exos durs (math, algo, ...)
 @ _difficle.pl
 
-@ EntierGauss-2122.pl
 @ histogramme-2122.pl
 @ zip-list-2122.pl
-@ soussuite-2122.pl
 
 
 
