@@ -1,0 +1,53 @@
+title=Listes
+
+introduction==
+
+Bonjour,
+ceci est votre troisième feuille à faire en autonomie.
+
+Tout les exercices doivent être verts une fois que vous avez fini !
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+mais vous pouvez naviger avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide au chargé de TP ou sur le forum d'entraide et passer à l'exercice suivant. 
+
+    Votre cours est votre première source d'information ....
+==
+
+
+# Création de liste
+@ premiers_entiers-2021.pl
+@ repete-2021.pl
+
+# Parcours des éléments de liste
+@ existe_impair-2021.pl
+@ liststat-2021.pl
+
+# Construction de liste
+@ fibo-2021.pl
+@ extends-2021.pl
+@ pair_impair-2021.pl
+@ plat-allergie-2021.pl
+
+# Manipulation de liste par référence
+@ ajoute_liste-2021.pl
+@ extends_list-2021.pl
+@ remplace_pair-2021.pl
+@ supprime_pair-2021.pl
+
+# Un peu d'algo (algo??) sur les listes 
+@ doublons-2021.pl
+
+# Exos durs (math, algo, ...)
+@ _difficle.pl
+
+@ EntierGauss-2021.pl
+@ histogramme-2021.pl
+@ zip-list-2021.pl
+@ soussuite-2021.pl
+
+
+
+
+
