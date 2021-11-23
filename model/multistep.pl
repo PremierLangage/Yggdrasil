@@ -16,6 +16,7 @@ settings.cumulative % false
 text =
 form =
 
+title = 
 
 intro ==
 Ce quiz contient {{nbstep}} questions.
