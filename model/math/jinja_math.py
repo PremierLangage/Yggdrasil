@@ -14,7 +14,7 @@ def mathinput(l):
     id = l['id']
     prefix = l['prefix']
     html = fr"""
-<div class="icon-times-after mq-disabled">
+<div class="icon-times-after">
 <div id="mathinput" style="display: block; margin-top: 1em;">
 {prefix} <div id="{id}" class="default" ></div>
 </div>
