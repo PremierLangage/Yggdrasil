@@ -14,6 +14,7 @@
 title == #|html|
 Exercice à étapes
 ==
+text =
 
 tplpage =@ template.html
 
