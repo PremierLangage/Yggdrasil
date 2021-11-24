@@ -49,6 +49,7 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   });
 
 var mathField_{{ id }} = MQ.MathField(document.getElementById("{{ id }}"));
+mathField_{{ id }}.latex(String.raw`{{ answers[name]|safe }}`);
 </script>
 """
     return Template(html).render(id=id, prefix=prefix, embed ="", keypad=keypad)
