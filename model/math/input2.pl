@@ -139,7 +139,7 @@ background-color: #F5F5F5;
 
 mathinputid = ["math", "math2"]
 
-javascript.mathquill1 ==
+javascript3.mathquill1 ==
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
 <script>
 var MQ = MathQuill.getInterface(2);
@@ -149,11 +149,10 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   });
 
 
-var setOfMathFields= {}
+var setOfMathFields = {}
 var preval = [];
 var names = [];
 {% for name in mathinputid %}
-names.push("{{name}}");
 var val =  String.raw`{{ answers[name]|safe }}`;
 preval.push(val);
 {% endfor %}
