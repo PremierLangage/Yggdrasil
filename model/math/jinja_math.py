@@ -38,6 +38,22 @@ def mathinput(l):
   </div>
 </div>
 <input type="text" id="form_math" hidden=true>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
+<script>
+var MQ = MathQuill.getInterface(2);
+MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
+  autoCommands: 'pi theta sqrt sum infty infin emptyset',
+  autoOperatorNames: 'sin cos tan ln exp cup cap',
+  });
+
+
+var setOfMathFields = {}
+
+var mathField = MQ.MathField(document.getElementById("{{ id }}"));
+
+setOfMathFields["{{ id }}"] = mathField;
+
+</script>
 """
     return Template(html).render(id=id, prefix=prefix, embed ="", keypad=keypad)
 
