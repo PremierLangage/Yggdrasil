@@ -20,6 +20,14 @@ Exercice à étapes
 text = 
 
 before ==
+comp = {}
+comp['id'] = "math"
+comp["prefix"] = "Answer"
+
+comp2 = {}
+comp2['id'] = "math2"
+comp2["prefix"] = "Answer"
+
 from sympy import var
 var('x')
 expr = x**2-3*x+2
