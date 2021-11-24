@@ -52,7 +52,7 @@ var setOfMathFields = {};
 
 var mathField = MQ.MathField(document.getElementById("{{ id }}"));
 
-setOfMathFields["{{ id }}"] = mathField;
+setOfMathFields.{{ id }} = mathField;
 
 </script>
 """
