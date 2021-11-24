@@ -62,7 +62,7 @@ step1.inputblock ==
 ==
 
 step1.evaluator ==
-if input1.value == "toto":
+if answers["math"] == "toto":
   score = 100
 else:
   score = 0
