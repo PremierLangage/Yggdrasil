@@ -140,7 +140,7 @@ mathinputid = ["math"]
 
 
 
-javascript.mathquill2 ==
+javascript3.mathquill2 ==
 <script>
 function onBeforeSubmitPL() {
   // copie les valeurs des champs MathField dans des éléments input
