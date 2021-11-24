@@ -6,6 +6,7 @@ jinja_keys % ["question", "text", "inputblock", "solution", "prefix"]
 
 keypad = []
 question ==
+{{comp2}}
 {{answers}}
 ==
 process ==
