@@ -16,7 +16,7 @@ def mathinput(l):
     keypad = l['keypad']
     html = r"""
 <div class="{{cls_icon}} {{cls_disabled}}">
-  <div id="mathinput" style="display: block; margin-top: 1em;">
+  <div class="mathinput" style="display: block; margin-top: 1em;">
     {{ prefix }}
     <div class="btn-group">
       {% if embed|length > 1 %}
