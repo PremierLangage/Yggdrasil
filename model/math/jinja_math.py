@@ -32,3 +32,4 @@ def customlatex(ctx, expr):
 Env = Environment(loader=BaseLoader())
 Env.filters["component"] = component
 Env.filters["latex"] = customlatex
+Env.filters["mathinput"] = mathinput
