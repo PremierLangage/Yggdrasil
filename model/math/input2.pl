@@ -57,8 +57,6 @@ prefix = Réponse :
 
 
 inputblock ==
-{{answers}}
-
 {{ comp|mathinput|safe }}
 
 {{ comp2|mathinput|safe }}
