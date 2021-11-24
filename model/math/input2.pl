@@ -43,30 +43,7 @@ embed =
 prefix = Réponse :
 
 macros ==
-{% macro mathinput(name) -%}
-{{ input_prefix }}
-{% if embed|length > 1 %}
-<div id="{{ name }}"> {{ embed }}</div>
-{% else %}
-{% if score == -1 %}
-<div id="{{ name }}" style="min-width: 5em; font-size:14pt;padding: 0.2em;" data-toggle="popover" data-content="Some content inside the popover"></div>
-{% else %}
-<div id="{{ name }}" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
-{% endif %}
-{% endif %}
-{% if keypad|length > 0 %}
 
-<button type="button" class="btn btn-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<i class="fas fa-keyboard fa-2x"></i>
-</button>
-<div class="dropdown-menu dropdown-menu-right" style="max-width: 100px;">
-{% for item in keypad %}
-<button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label|e }}</a>
-{% endfor %}
-</div>
-{% endif %}
-<input type="text" id="form_{{name}}" hidden=true>
-{%- endmacro %}
 ==
 
 inputblock ==
