@@ -169,7 +169,7 @@ mathField.innerFields[j].latex(arr[j]);
 var mathField = MQ.MathField(document.getElementById(names[i]));
 mathField.latex(preval[i]);
 {% endif %}
-arrayMathField.push(mathField);
+arrayMathField[names[i]] = mathField;
 }
 </script>
 ==
