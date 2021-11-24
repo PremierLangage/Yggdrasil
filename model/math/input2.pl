@@ -161,7 +161,6 @@ function onBeforeSubmitPL() {
     }
     };
   });
-  window.alert('ok');
   return true;
 }
 </script>
