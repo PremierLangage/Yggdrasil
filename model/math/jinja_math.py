@@ -13,7 +13,7 @@ def component(l):
 def mathinput(l):
     id = l['id']
     prefix = l['prefix']
-    html = f"""
+    html = fr"""
     <div class="icon-times-after mq-disabled">
     <div id="{id}" style="display: block; margin-top: 1em;">
       {prefix} <div id="math" class="default" ></div>
