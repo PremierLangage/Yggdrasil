@@ -38,6 +38,7 @@ input1.value = "test"
 radio2.set_items(["Une", "Deux", "Aucune"])
 radio2.set_sol(1)
 feedback = "test"
+score = 0
 ==
 
 input1 =: Input
