@@ -37,6 +37,10 @@ score = 100
 feedback = ""
 ==
 
+before ==
+comp['id'] = "math"
+comp["prefix"] = "Answer"
+==
 
 embed =
 
