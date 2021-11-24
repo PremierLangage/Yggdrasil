@@ -1,5 +1,5 @@
-@ /grader/evaluator1.py [grader.py]
-@ /builder/before1.py [builder.py]
+@ /grader/evaluatorv1.py [grader.py]
+@ /builder/beforev1.py [builder.py]
 @ /utils/builderlib.py
 
 @ /model/math/jinja_math.py [jinja_env.py]
@@ -11,13 +11,11 @@
 @ /utils/sympy/mplsympy.py
 @ /utils/plrandom.py
 
-settings.maxattempt % 100
-
 title == #|html|
 Exercice à étapes
 ==
 
-text = 
+tplpage =@ template.html
 
 before ==
 comp = {}
@@ -149,29 +147,6 @@ style.test ==
 </style>
 ==
 
-
-macros ==
-{% macro mathinput(name, input_prefix='', input_embed='') -%}
-{{ input_prefix }}
-{% if input_embed|length > 1 %}
-<div id="{{ name }}"> {{ input_embed }}</div>
-{% else %}
-<div id="{{ name }}" style="min-width: 5em; font-size:14pt;padding: 0.2em;"></div>
-{% endif %}
-{% if input_keypad|length > 0 %}
-
-<button type="button" class="btn btn-circle btn-sm btn-outline-primary" style="margin-left: 0.5em" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<i class="fas fa-keyboard fa-2x"></i>
-</button>
-<div class="dropdown-menu dropdown-menu-right" style="max-width: 100px;">
-{% for item in input_keypad %}
-<button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}('{{ item.value }}');mathField.focus()">{{ item.label }}</a>
-{% endfor %}
-</div>
-{% endif %}
-<input type="text" id="form_{{name}}" hidden=true>
-{%- endmacro %}
-==
 
 
 style.mathquill ==
