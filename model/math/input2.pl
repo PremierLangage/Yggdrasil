@@ -41,7 +41,7 @@ before ==
 comp = {}
 comp['id'] = "math"
 comp["prefix"] = "Answer"
-comp["keypad"] = ["sqrt": {"label": "$! \\sqrt{\\phantom{x}} !$", "action": "cmd", "value": "\\sqrt"}, "infty": {"label": "$! \\infty !$", "action": "cmd", "value": "\\infty"}]
+comp["keypad"] = [{"label": "$! \\sqrt{\\phantom{x}} !$", "action": "cmd", "value": "\\sqrt"}, {"label": "$! \\infty !$", "action": "cmd", "value": "\\infty"}]
 
 comp2 = {}
 comp2['id'] = "math2"
