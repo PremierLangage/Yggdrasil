@@ -30,7 +30,7 @@ text =
 
 form = 
 
-tplpage =@ template.html
+tplpage =@ /model/basic/template.html
 
 evaluator ==
 score = 100
