@@ -81,7 +81,7 @@ step2.inputblock ==
 {{ radio2|component }}
 ==
 
-jinja_keys = ["intro"]
+jinja_keys = ["intro", "step1"]
 
 style.test ==
 <style>
