@@ -144,6 +144,7 @@ javascript.mathquill2 ==
 <script>
 function onBeforeSubmitPL() {
   // copie les valeurs des champs MathField dans des éléments input
+  window.alert(setOfMathFields);
   Object.values(setOfMathFields).forEach(function(mathField) {
     var mathFieldInput = document.getElementById('form_'+mathField.el().id);
     if (mathField instanceof MQ.MathField) {
