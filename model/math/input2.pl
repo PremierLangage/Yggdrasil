@@ -137,7 +137,7 @@ background-color: #F5F5F5;
 </style>
 ==
 
-mathinputid = ["math", "math2"]
+mathinputid = ["math"]
 
 javascript3.mathquill1 ==
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
