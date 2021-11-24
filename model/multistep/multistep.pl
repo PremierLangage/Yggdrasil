@@ -49,7 +49,7 @@ Calculer le discriminant de cette équation.
 ==
 
 step1.inputblock ==
-{{ mathinput("math") }}
+{{ comp|mathinput|safe }}
 ==
 
 step1.evaluator ==
