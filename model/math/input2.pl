@@ -139,39 +139,7 @@ background-color: #F5F5F5;
 
 mathinputid = ["math"]
 
-javascript3.mathquill1 ==
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
-<script>
-var MQ = MathQuill.getInterface(2);
-MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
-  autoCommands: 'pi theta sqrt sum infty infin emptyset',
-  autoOperatorNames: 'sin cos tan ln exp cup cap',
-  });
 
-
-var setOfMathFields = {}
-var preval = [];
-var names = [];
-{% for name in mathinputid %}
-var val =  String.raw`{{ answers[name]|safe }}`;
-preval.push(val);
-{% endfor %}
-
-for (let i = 0; i < names.length; i++) {
-{% if embed|length > 0 %}
-var mathField = MQ.StaticMath(document.getElementById(names[i]));
-var arr = preval[i].split(",");
-for (let j = 0; j < arr.length; j++) {
-mathField.innerFields[j].latex(arr[j]);
-}
-{% else %}
-var mathField = MQ.MathField(document.getElementById(names[i]));
-mathField.latex(preval[i]);
-{% endif %}
-setOfMathFields[names[i]] = mathField;
-}
-</script>
-==
 
 javascript.mathquill2 ==
 <script>
