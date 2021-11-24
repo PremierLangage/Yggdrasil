@@ -5,7 +5,9 @@ extends = /model/basic/temp.pl
 jinja_keys % ["question", "text", "inputblock", "solution", "prefix"]
 
 keypad = []
-
+question ==
+{{answers}}
+==
 process ==
 
 embed = embed.replace("#", r"\MathQuillMathField{}")
