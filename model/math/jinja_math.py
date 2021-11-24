@@ -10,6 +10,20 @@ def component(l):
         cid = l.cid
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
+def mathinput(l):
+    id = l['id']
+    prefix = l['prefix']
+    html = """
+    <div class="icon-times-after mq-disabled">
+    <div id="{id}" style="display: block; margin-top: 1em;">
+      {prefix} <div id="math" class="default" ></div>
+    </div>
+    </div>
+    <input type="text" id="form_{id}" hidden=true>
+    """
+
+
+
 @contextfilter
 def customlatex(ctx, expr):
     return latex(expr, **ctx.get('latexsettings', {}))
