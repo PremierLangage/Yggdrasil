@@ -14,13 +14,30 @@ def mathinput(l):
     id = l['id']
     prefix = l['prefix']
     keypad = l['keypad']
-    html = fr"""
-<div class="icon-times-after">
-<div id="mathinput" style="display: block; margin-top: 1em;">
-{prefix} <div id="{id}" class="default" ></div>
+    html = r"""
+<div class="{{cls_icon}} {{cls_disabled}}">
+  <div id="mathinput" style="display: block; margin-top: 1em;">
+    {{ prefix }}
+    <div class="btn-group">
+      {% if embed|length > 1 %}
+      <div id="{{id}}"> {{ embed }}</div>
+      {% else %}
+      <div id="{{id}}" class="default {{cls_border}}" ></div>
+      {% if keypad|length > 0 %}
+      <div class="dropdown-menu dropdown-menu-right keypad">
+      {% for item in keypad %}
+      <button class="btn btn-sm btn-outline-secondary" onclick="mathField.{{ item.action }}(String.raw`{{ item.value }}`);mathField.focus()">{{ item.label|safe }}</button>
+      {% endfor %}
+      </div>
+      <button id="btn-keypad" type="button" class="btn btn-xs btn-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fas fa-keyboard fa-2x"></i>
+      </button>
+      {% endif %}
+      {% endif %}
+    </div>
+  </div>
 </div>
-</div>
-<input type="text" id="form_{id}" hidden=true>
+<input type="text" id="form_math" hidden=true>
 """
     return html
 
