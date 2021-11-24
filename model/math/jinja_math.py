@@ -26,7 +26,7 @@ def mathinput(l):
       {% if keypad|length > 0 %}
       <div class="dropdown-menu dropdown-menu-right keypad">
       {% for item in keypad %}
-      <button class="btn btn-sm btn-outline-secondary" onclick="arrayMathField.{{ id }}.{{ item.action }}(String.raw`{{ item.value }}`);mathField.focus()">{{ item.label|safe }}</button>
+      <button class="btn btn-sm btn-outline-secondary" onclick="arrayMathField.{{ id }}.{{ item.action }}(String.raw`{{ item.value }}`);arrayMathField.{{ id }}.focus()">{{ item.label|safe }}</button>
       {% endfor %}
       </div>
       <button id="btn-keypad" type="button" class="btn btn-xs btn-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
