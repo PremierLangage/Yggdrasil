@@ -41,6 +41,10 @@ before ==
 comp = {}
 comp['id'] = "math"
 comp["prefix"] = "Answer"
+
+comp2 = {}
+comp2['id'] = "math2"
+comp2["prefix"] = "Answer"
 ==
 
 embed =
@@ -53,6 +57,8 @@ macros ==
 
 inputblock ==
 {{ comp|mathinput|safe }}
+
+{{ comp2|mathinput|safe }}
 ==
 
 
