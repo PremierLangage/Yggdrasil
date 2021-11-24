@@ -40,11 +40,13 @@ feedback = ""
 before ==
 comp = {}
 comp['id'] = "math"
+comp['value'] = ""
 comp["prefix"] = "Answer"
 comp["keypad"] = [{"label": "$! \\sqrt{\\phantom{x}} !$", "action": "cmd", "value": "\\sqrt"}, {"label": "$! \\infty !$", "action": "cmd", "value": "\\infty"}]
 
 comp2 = {}
 comp2['id'] = "math2"
+comp2['value'] = "x"
 comp2["prefix"] = "Answer"
 comp2["keypad"] = []
 ==
