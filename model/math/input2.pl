@@ -55,9 +55,6 @@ embed =
 
 prefix = Réponse :
 
-macros ==
-
-==
 
 inputblock ==
 {{ comp|mathinput|safe }}
