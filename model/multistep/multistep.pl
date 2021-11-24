@@ -1,5 +1,5 @@
-@ /grader/evaluator_v1.py [grader.py]
-@ /builder/before_v1.py [builder.py]
+@ /grader/evaluator1.py [grader.py]
+@ /builder/before1.py [builder.py]
 @ /utils/builderlib.py
 
 @ /model/math/jinja_math.py [jinja_env.py]
