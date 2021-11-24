@@ -1,4 +1,4 @@
-from jinja2 import Environment, BaseLoader, contextfilter
+from jinja2 import Environment, BaseLoader, contextfilter, Template
 from sympy2latex import latex
 
 def component(l):
@@ -39,8 +39,7 @@ def mathinput(l):
 </div>
 <input type="text" id="form_math" hidden=true>
 """
-    return html
-
+    return Template(html).render(keypad=[])
 
 
 @contextfilter
