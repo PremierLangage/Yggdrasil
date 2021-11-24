@@ -52,7 +52,7 @@ macros ==
 ==
 
 inputblock ==
-{{ comp|mathinput|safe }}
+{{ comp|mathinput }}
 ==
 
 
