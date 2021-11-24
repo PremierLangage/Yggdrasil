@@ -149,7 +149,7 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   });
 
 
-var arrayMathField = {}
+var setOfMathFields= {}
 var preval = [];
 var names = [];
 {% for name in mathinputid %}
@@ -169,7 +169,7 @@ mathField.innerFields[j].latex(arr[j]);
 var mathField = MQ.MathField(document.getElementById(names[i]));
 mathField.latex(preval[i]);
 {% endif %}
-arrayMathField[names[i]] = mathField;
+setOfMathFields[names[i]] = mathField;
 }
 </script>
 ==
