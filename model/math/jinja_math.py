@@ -48,12 +48,7 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   autoOperatorNames: 'sin cos tan ln exp cup cap',
   });
 
-//var setOfMathFields = {};
-
 var mathField_{{ id }} = MQ.MathField(document.getElementById("{{ id }}"));
-
-//setOfMathFields.{{ id }} = mathField;
-
 </script>
 """
     return Template(html).render(id=id, prefix=prefix, embed ="", keypad=keypad)
