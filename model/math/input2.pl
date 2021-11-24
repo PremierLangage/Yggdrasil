@@ -41,10 +41,11 @@ before ==
 comp = {}
 comp['id'] = "math"
 comp["prefix"] = "Answer"
-
+comp["keypad"] = []
 comp2 = {}
 comp2['id'] = "math2"
 comp2["prefix"] = "Answer"
+comp2["keypad"] = []
 ==
 
 embed =
