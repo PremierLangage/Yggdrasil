@@ -38,7 +38,7 @@ def mathinput(l):
     </div>
   </div>
 </div>
-<input type="text" id="form_math" hidden=true>
+<input type="text" id="form_{{ id }}" hidden=true>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
 
