@@ -26,7 +26,7 @@ def mathinput(l):
       {% if keypad|length > 0 %}
       <div class="dropdown-menu dropdown-menu-right keypad">
       {% for item in keypad %}
-      <button class="btn btn-sm btn-outline-secondary" onclick="setOfMathFields.{{ id }}.{{ item.action }}(String.raw`{{ item.value }}`);setOfMathFields.{{ id }}.focus()">{{ item.label|safe }}</button>
+      <button class="btn btn-sm btn-outline-secondary" onclick="mathField_{{ id }}.{{ item.action }}(String.raw`{{ item.value }}`);mathField_{{ id }}.focus()">{{ item.label|safe }}</button>
       {% endfor %}
       </div>
       <button id="btn-keypad" type="button" class="btn btn-xs btn-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,7 +50,7 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
 
 var setOfMathFields = {};
 
-var mathField = MQ.MathField(document.getElementById("{{ id }}"));
+var mathField_{{ id }} = MQ.MathField(document.getElementById("{{ id }}"));
 
 setOfMathFields.{{ id }} = mathField;
 
