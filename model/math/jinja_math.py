@@ -13,6 +13,7 @@ def component(l):
 def mathinput(l):
     id = l['id']
     prefix = l['prefix']
+    keypad = l['keypad']
     html = fr"""
 <div class="icon-times-after">
 <div id="mathinput" style="display: block; margin-top: 1em;">
