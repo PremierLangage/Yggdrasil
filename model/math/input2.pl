@@ -149,7 +149,7 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   });
 
 
-var arrayMathField = []
+var arrayMathField = {]
 var preval = [];
 var names = [];
 {% for name in mathinputid %}
