@@ -46,7 +46,6 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   autoOperatorNames: 'sin cos tan ln exp cup cap',
   });
 
-
 var setOfMathFields = {}
 
 var mathField = MQ.MathField(document.getElementById("{{ id }}"));
