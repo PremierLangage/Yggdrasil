@@ -39,7 +39,7 @@ def mathinput(l):
 </div>
 <input type="text" id="form_math" hidden=true>
 """
-    return Template(html).render(id=id, prefix=prefix, embed ="", keypad=[])
+    return Template(html).render(id=id, prefix=prefix, embed ="", keypad=keypad)
 
 
 @contextfilter
