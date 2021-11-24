@@ -51,7 +51,7 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
 
 var mathField_{{ id }} = MQ.MathField(document.getElementById("{{ id }}"));
 mathField_{{ id }}.latex(String.raw`{{ value|safe }}`);
-if (typeof setOfMathFields != "undefined") {
+if (typeof setOfMathFields == "undefined") {
    setOfMathFields = {};
 }
 setOfMathFields.{{ id }} = mathField_{{ id }}
