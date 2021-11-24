@@ -27,8 +27,8 @@ currentstep = 0
 steps = [step1, step2]
 stepscore = []
 input1.value = "test"
-radio2.setitems(["Une", "Deux", "Aucune"])
-radio2.setsol_from_index(1)
+radio2.set_items(["Une", "Deux", "Aucune"])
+radio2.set_sol(1)
 feedback = "test"
 ==
 
