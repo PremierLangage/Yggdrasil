@@ -35,8 +35,8 @@ feedback = "test"
 input1 =: Input
 radio2 =: RadioGroup
 @ /utils/components/scoring.py
-@ /utils/components/radio.py [customradio.py]
-radio2.decorator = CustomRadio
+@ /utils/components/radio.py
+radio2.decorator = Radio
 
 # Step 1
 intro ==
