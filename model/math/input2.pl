@@ -38,6 +38,7 @@ feedback = ""
 ==
 
 before ==
+comp = {}
 comp['id'] = "math"
 comp["prefix"] = "Answer"
 ==
