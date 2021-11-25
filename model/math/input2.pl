@@ -7,7 +7,9 @@ jinja_keys % ["text", "inputblock", "solution", "prefix"]
 keypad = []
 
 test ==
+{% raw %}
 {{ var|myfilter }}
+{% endraw %}
 ==
 
 question ==
