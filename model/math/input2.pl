@@ -46,7 +46,7 @@ evaluator ==
 comp['value'] = answers[comp['id']]
 comp2['value'] = answers[comp2['id']]
 
-score = 100
+score = -1
 feedback = ""
 ==
 
