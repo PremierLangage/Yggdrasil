@@ -1,8 +1,8 @@
 <div class="question">
-{{ question }}
+{{ question|markdown }}
 </div>
 <div style="display: block; margin-top: 1em;">
-{{ inputblock|safe }}
+{{ inputblock|markdown|safe }}
 </div>
 {% if score == -1 %}
 <hr class="border">
