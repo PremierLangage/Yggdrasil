@@ -1,6 +1,6 @@
 from jinja2 import Environment, BaseLoader, contextfilter, Template
 from sympy2latex import latex
-from jinja2 importMarkup
+from jinja2 import Markup
 import markdown
 
 md = markdown.Markdown(extensions=['meta'])
