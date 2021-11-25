@@ -1,7 +1,7 @@
 extends = /model/math/math.pl
 extends = /model/basic/temp.pl
 
-jinja_keys % ["text", "inputblock", "solution", "prefix"]
+jinja_keys % ["question", "text", "inputblock", "solution", "prefix"]
 
 keypad = []
 
