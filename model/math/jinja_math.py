@@ -55,10 +55,6 @@ if (typeof setOfMathFields == "undefined") {
    setOfMathFields = {};
 }
 setOfMathFields.{{ id }} = mathField_{{ id }}
-if (typeof names == "undefined") {
-   names = "";
-}
-names = names + "mathField_{{ id }}"
 </script>
 """
     return Template(html).render(id=id, prefix=prefix, embed ="", keypad=keypad, value=value)
