@@ -48,6 +48,7 @@ evaluator ==
 
 score = -1
 feedback = "toto"
+form = ""
 ==
 
 before ==
