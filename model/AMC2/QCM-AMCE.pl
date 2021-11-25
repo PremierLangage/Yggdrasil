@@ -80,7 +80,7 @@ title= Cher enseignant vous n'avez pas changer le "title"
 
 before == #|python|
 import random as rd
-from customradio import CustomRadio
+#from customradio import CustomRadio
 from customcheckbox import CustomCheckbox
 from customtextselect import CustomTextSelect
 from AMC import parse_AMC_TXT
@@ -114,7 +114,7 @@ rd.shuffle(list_questions)
 for i, q in enumerate(list_questions):
     q=buildquestion(q) # Gestion de l'aléa 
     if q['type'] == "Radio":
-        comp.append(CustomRadio())
+        #comp.append(CustomRadio())
         statement.append(q['text'])
         comp[i].setitems(q['items'])
         comp[i].setsol_from_index(q['index'])
