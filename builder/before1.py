@@ -75,7 +75,8 @@ if __name__ == "__main__":
                 for k in dic[key]:
                     dic[key][k] = Env.from_string(macros + dic[key][k]).render(dic)
 
-    dic['form'] = dic['tplpage']
+    #dic['form'] = dic['tplpage']
+    dic['form'] = Env.from_string(Env.from_string(dic['tplpage']).render(dic)).render(dic)
 
     with open(outputfilename, "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
