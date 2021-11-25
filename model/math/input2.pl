@@ -13,7 +13,7 @@ test ==
 ==
 
 question ==
-{{comp2}}
+{{ _inputblock_ }}
 {{answers}}
 ==
 
