@@ -53,9 +53,9 @@ if __name__ == "__main__":
                 for k in dic[key]:
                     dic[key][k] = Env.from_string(macros + dic[key2][k]).render(dic)
 
-    dic['question'] = "Coucou !"
+    #dic['question'] = "Coucou !"
     # dic = json.loads(json.dumps(dic, cls=JSONEncoder))
-    dic['form'] = dic['tplpage']
+    #dic['form'] = dic['tplpage']
 
     with open(sys.argv[3], "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
