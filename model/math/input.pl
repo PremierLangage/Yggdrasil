@@ -33,7 +33,8 @@ tplpage =@ template.html
 
 evaluator ==
 score = 100
-feedback = ""
+score = -1
+feedback = "toto"
 ==
 
 
