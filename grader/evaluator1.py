@@ -3,7 +3,8 @@ from components import Component
 from builderlib import aux_component1, aux_component2, aux_component
 from jinja2 import Environment, BaseLoader
 
-Env = Environment(loader=BaseLoader())
+# import Jinja environnement
+from jinja_env import Env
 
 from json_encoder import JSONEncoder, JSONDecoder
 
