@@ -6,6 +6,10 @@ jinja_keys % ["text", "inputblock", "solution", "prefix"]
 
 keypad = []
 
+test ==
+{{ var|myfilter }}
+==
+
 question ==
 {{comp2}}
 {{answers}}
