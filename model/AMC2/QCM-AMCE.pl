@@ -132,7 +132,6 @@ for i, q in enumerate(list_questions):
         statement.append(q['text'])
         cst.setdata_from_textDR(q['items'][0])
         comp.append(cst)
-
 ==
 
 display=
