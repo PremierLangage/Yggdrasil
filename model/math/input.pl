@@ -34,7 +34,6 @@ tplpage =@ template.html
 evaluator ==
 score = 100
 feedback = ""
-form = ""
 ==
 
 
