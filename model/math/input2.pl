@@ -14,6 +14,7 @@ test ==
 
 question ==
 {{ _inputblock_ }}
+{{ inputblock }}
 {{answers}}
 ==
 
