@@ -67,6 +67,8 @@ if __name__ == "__main__":
     # render some string values of the exercise dictionary with the custom Jinja environment 
     macros = dic.get('macros', '')
 
+    dic['form'] = Env.from_string(Env.from_string(dic['tplpage']).render(dic)).render(dic)
+
     for key in dic.get('jinja_keys', ['question', 'solution']):
         if key in dic:
             if isinstance(dic[key] , str):
@@ -76,7 +78,6 @@ if __name__ == "__main__":
                     dic[key][k] = Env.from_string(macros + dic[key][k]).render(dic)
 
     #dic['form'] = dic['tplpage']
-    dic['form'] = Env.from_string(Env.from_string(dic['tplpage']).render(dic)).render(dic)
 
     with open(outputfilename, "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
