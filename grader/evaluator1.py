@@ -40,6 +40,18 @@ if __name__ == "__main__":
     feedback = Env.from_string(feedback).render(dic)
     ffeedback = ""
 
+    for key in dic.get('jinja_keys', ['question', 'solution']):
+        if key in dic:
+            key2 = f"_{key}_"
+            dic[key2].replace("{% raw %}", "")
+            dic[key2].replace("{% endraw %}", "")
+            if isinstance(dic[key] , str):
+                dic[key] = Env.from_string(macros + dic[key2]).render(dic)
+            elif isinstance(dic[key] , dict):
+                for k in dic[key]:
+                    dic[key][k] = Env.from_string(macros + dic[key2][k]).render(dic)
+
+
     # dic = json.loads(json.dumps(dic, cls=JSONEncoder))
 
 
