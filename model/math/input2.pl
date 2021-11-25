@@ -13,7 +13,7 @@ test ==
 ==
 
 question ==
-{{ answers }}
+{{ score }}
 ==
 
 process ==
