@@ -1,5 +1,9 @@
 from jinja2 import Environment, BaseLoader, contextfilter, Template
 from sympy2latex import latex
+from jinja2 importMarkup
+import markdown
+
+md = markdown.Markdown(extensions=['meta'])
 
 def component(l):
     if isinstance(l, dict):
@@ -68,3 +72,4 @@ Env = Environment(loader=BaseLoader())
 Env.filters["component"] = component
 Env.filters["latex"] = customlatex
 Env.filters["mathinput"] = mathinput
+Env.filters['markdown'] = lambda text: jinja2.Markup(md.convert(text))
