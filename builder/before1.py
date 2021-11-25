@@ -71,6 +71,8 @@ if __name__ == "__main__":
 
     for key in dic.get('jinja_keys', ['question', 'solution']):
         if key in dic:
+            key2 = f"_{key}_"
+            dic[key2] = dic[key]
             if isinstance(dic[key] , str):
                 dic[key] = Env.from_string(macros + dic[key]).render(dic)
             elif isinstance(dic[key] , dict):
