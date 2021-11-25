@@ -154,7 +154,6 @@ function onBeforeSubmitPL() {
   Object.values(setOfMathFields).forEach(function(mathField) {
     var mathFieldInput = document.getElementById('form_'+mathField.el().id);
       mathFieldInput.value = mathField.latex();
-      mathFieldInput.value = "toto";
     if (mathField instanceof MQ.StaticMath) {
       if (mathField.innerFields.length == 1) {
       mathFieldInput.value = mathField.innerFields[0].latex();
