@@ -52,7 +52,7 @@ if __name__ == "__main__":
                 for k in dic[key]:
                     dic[key][k] = Env.from_string(macros + dic[key2][k]).render(dic)
 
-
+    dic['question'] = "Coucou !"
     # dic = json.loads(json.dumps(dic, cls=JSONEncoder))
 
 
