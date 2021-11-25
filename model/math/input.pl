@@ -32,8 +32,7 @@ form =
 tplpage =@ template.html
 
 evaluator ==
-score = 100
-score = -1
+score = 0
 feedback = "toto"
 ==
 
