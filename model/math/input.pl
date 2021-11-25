@@ -32,8 +32,7 @@ form =
 tplpage =@ template.html
 
 before ==
-score = 0
-test = "toto"
+
 ==
 
 
