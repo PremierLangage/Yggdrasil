@@ -46,7 +46,7 @@ if __name__ == "__main__":
             key2 = f"_{key}_"
             if isinstance(dic[key] , str):
                 dic[key] = dic[key2].replace(r"{% raw %}", "")
-                #dic[key] = dic[key].replace("{% endraw %}", "")
+                dic[key] = dic[key].replace(r"{% endraw %}", "")
                 #dic[key] = Env.from_string(dic[key]).render(dic)
 
 
