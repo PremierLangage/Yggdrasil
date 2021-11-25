@@ -43,8 +43,8 @@ form =
 tplpage =@ /model/basic/template.html
 
 evaluator ==
-#comp['value'] = answers[comp['id']]
-#comp2['value'] = answers[comp2['id']]
+comp['value'] = answers[comp['id']]
+comp2['value'] = answers[comp2['id']]
 
 score = -1
 feedback = "toto"
