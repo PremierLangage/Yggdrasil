@@ -67,8 +67,6 @@ if __name__ == "__main__":
     # render some string values of the exercise dictionary with the custom Jinja environment 
     macros = dic.get('macros', '')
 
-    dic['form'] = Env.from_string(dic['tplpage']).render(dic)
-
     for key in dic.get('jinja_keys', ['question', 'solution']):
         if key in dic:
             key2 = f"_{key}_"
