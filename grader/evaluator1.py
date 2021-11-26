@@ -49,7 +49,7 @@ if __name__ == "__main__":
             if key2 in dic
                 dic[key] = dic[key2].replace(r"{% raw %}", "")
                 dic[key] = dic[key].replace(r"{% endraw %}", "")         
-                dic[key] = Env.from_string(dic[key]).render(dic)
+                dic[key] = Env.from_string(macros+dic[key]).render(dic)
 
     # dic = json.loads(json.dumps(dic, cls=JSONEncoder))
 
