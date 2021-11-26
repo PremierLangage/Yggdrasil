@@ -45,14 +45,11 @@ if __name__ == "__main__":
 
     for key in dic.get('jinja_keys', ['question', 'solution']):
         if key in dic:
-            try:
-                key2 = f"_{key}_"
+            key2 = f"_{key}_"
+            if key2 in dic
                 dic[key] = dic[key2].replace(r"{% raw %}", "")
                 dic[key] = dic[key].replace(r"{% endraw %}", "")         
                 dic[key] = Env.from_string(dic[key]).render(dic)
-            except:
-                dic[key] = "bug"
-
 
     # dic = json.loads(json.dumps(dic, cls=JSONEncoder))
 
