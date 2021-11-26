@@ -51,8 +51,6 @@ if __name__ == "__main__":
                 dic[key] = dic[key].replace(r"{% endraw %}", "")         
                 dic[key] = Env.from_string(macros+dic[key]).render(dic)
 
-    # dic = json.loads(json.dumps(dic, cls=JSONEncoder))
-
     with open(sys.argv[3], "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
 
