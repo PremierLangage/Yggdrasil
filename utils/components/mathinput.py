@@ -1,6 +1,6 @@
 from uuid import uuid4
 
-class MathInput():
+class MathInput:
 
     def __init__(self, **kwargs):
         self.__MathInput__ = True
