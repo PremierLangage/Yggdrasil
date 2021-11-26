@@ -54,8 +54,9 @@ if __name__ == "__main__":
     # dic = json.loads(json.dumps(dic, cls=JSONEncoder))
 
     with open(sys.argv[3], "w+") as f:
-        json.dump(dic, f, cls=JSONEncoder)
-    
+        #json.dump(dic, f, cls=JSONEncoder)
+        json.dump(dic, f)
+
     with open(sys.argv[4], "w+", encoding='utf-8') as f:
         print("", file=f)
     
