@@ -2,7 +2,7 @@
 extends = /model/math/math.pl
 extends = /model/basic/temp.pl
 
-jinja_keys = ["text", "inputblock", "feedback", "solution", "prefix"]
+jinja_keys = ["text", "inputblock", "solution", "prefix"]
 
 keypad = []
 
