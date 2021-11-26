@@ -6,11 +6,6 @@ jinja_keys = ["text", "inputblock", "solution", "prefix"]
 
 keypad = []
 
-test ==
-{% raw %}
-{{ var|myfilter }}
-{% endraw %}
-==
 
 question ==
 {{ score }}
@@ -51,17 +46,14 @@ feedback = "toto"
 ==
 
 before ==
-comp = {}
-comp['id'] = "math"
-comp['value'] = ""
-comp["prefix"] = "Answer"
-comp["keypad"] = [{"label": "$! \\sqrt{\\phantom{x}} !$", "action": "cmd", "value": "\\sqrt"}, {"label": "$! \\infty !$", "action": "cmd", "value": "\\infty"}]
+from mathinput import MathInput
+comp = MathInput()
+comp.id = "math"
+comp.keypad = [{"label": "$! \\sqrt{\\phantom{x}} !$", "action": "cmd", "value": "\\sqrt"}, {"label": "$! \\infty !$", "action": "cmd", "value": "\\infty"}]
 
-comp2 = {}
-comp2['id'] = "math2"
-comp2['value'] = "x"
-comp2["prefix"] = "Answer"
-comp2["keypad"] = []
+comp2 = MathInput()
+comp2.id = "math2"
+comp2.value = "x"
 ==
 
 embed =
