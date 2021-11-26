@@ -1,9 +1,75 @@
 ::Q1 : Présence en cours:: 
-Comment décririez-vous votre présence en cours d'AP1 ce semestre ?
+Comment décririez-vous votre présence en cours magistral d'AP1 ce semestre ?
 {
 ~assidue (toutes les séances)
 ~régulière (quelquefois absent avec une raison légitime)
 ~irrégulière (50% du temps)
 ~rarement (une ou deux fois)
-~jamais 
+~jamais
 }
+
+::Q2 : Présence en TD:: 
+Comment décririez-vous votre présence en TD d'AP1 ce semestre ?
+{
+~assidue (toutes les séances)
+~régulière (quelquefois absent avec une raison légitime)
+~irrégulière (50% du temps)
+~rarement (une ou deux fois)
+~jamais
+}
+
+::Q3 : Présence en TP:: 
+Comment décririez-vous votre présence en TP d'AP1 ce semestre ?
+{
+~assidue (toutes les séances)
+~régulière (quelquefois absent avec une raison légitime)
+~irrégulière (50% du temps)
+~rarement (une ou deux fois)
+~jamais
+}
+
+
+::Q4 :: Si vous avez signalé une présence irrégulière à au moins une des questions ci-dessus, pourquoi ? (plusieurs réponse possibles)
+{ = manque de temps
+  = je pensais que ça n’était pas utile
+  = je m’y ennuyais 
+  = cela allait trop vite, j'étais perdu(e) et j'ai abandonné
+  = autre
+}
+
+::Q5 :: Si vous voulez préciser d'autres raisons : {}
+
+::Q6 : Travail personnel::
+Combien de temps de travail en dehors des enseignements avez-vous effectué ce semestre ?
+{=1 Heure par semaine
+=2 heures par semaine
+=1 heure par jour
+=2 heures par jour
+=plus de 2 heures par jour}
+
+::Q7 :: Pendant ce temps de travail personnel, qu'avez vous fait et à quelle fréquence ? Concernant la relecture de cours :
+{= régulièrement (au moins une fois par cours)
+= irrégulièrement
+= jamais}
+
+::Q8 :: Avez-vous retravaillé sur les TD ? (refaire les exercices, vérifier avec les notes de TD la validité)
+{ = régulièrement
+ = irrégulièrement
+ = jamais
+}
+
+::Q9 :: Avez-vous fini les TPs ? 
+{
+= régulièrement
+= irrégulièrement
+= jamais
+}
+
+::Q10 ::Avez-vous lu un cours de Python d'une autre source sur internet?
+{ = régulièrement
+= irrégulièrement
+= jamais
+}
+
+
+
