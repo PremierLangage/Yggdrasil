@@ -47,10 +47,10 @@ if __name__ == "__main__":
         if key in dic:
             key2 = f"_{key}_"
             if isinstance(dic[key] , str):
-                #dic[key] = dic[key2].replace(r"{% raw %}", "")
-                #dic[key] = dic[key].replace(r"{% endraw %}", "")
+                dic[key] = dic[key2].replace(r"{% raw %}", "")
+                dic[key] = dic[key].replace(r"{% endraw %}", "")
                 try:
-                    dic[key] = Env.from_string(dic[key2]).render(dic)
+                    dic[key] = Env.from_string(dic[keyk]).render(dic)
                 except:
                     dic['question'] = key
 
