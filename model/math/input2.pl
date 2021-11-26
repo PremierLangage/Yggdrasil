@@ -40,7 +40,7 @@ tplpage =@ /model/basic/template.html
 evaluator ==
 comp.value = answers[comp.id]
 comp2.value = answers[comp2.id]
-
+comp2.disabled = True
 #comp.value = "4x"
 score = -1
 feedback = "toto"
