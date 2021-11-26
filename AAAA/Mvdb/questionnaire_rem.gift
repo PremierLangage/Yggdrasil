@@ -71,5 +71,36 @@ Combien de temps de travail en dehors des enseignements avez-vous effectué ce s
 = jamais
 }
 
+::Q11 : Avez-vous utilisé la plateforme Premier Langage (PL) ?
+{ = régulièrement
+ = irrégulièrement
+ = jamais
+}
+
+::Q12 :: Si non, pourquoi ? Si oui, cela vous a-t-il aidé ? {}
+
+::Q13:: Avez-vous travaillé avec les autres étudiants ?
+{
+=aucun 
+=une ou deux personnes
+=un groupe organisé 
+=sur discord
+}
+
+::Q14 :: Connaissance du tutorat
+{
+= Oui
+= Non
+}
+
+::Q15 :: Si oui combien de fois avez vous utilisé ce tutorat ? {}
+
+::Q16:: Comment avez-vous utilisé Discord ce semestre? 
+{
+= jamais
+= uniquement en écoute
+= j’ai posé des questions
+= j'étais aux séances de soutien le lundi soir
+}
 
 
