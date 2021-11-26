@@ -114,21 +114,21 @@ rd.shuffle(list_questions)
 for i, q in enumerate(list_questions):
     q=buildquestion(q) # Gestion de l'aléa 
     if q['type'] == "Radio":
-        #comp.append(CustomRadio())
+        comp.append(CustomRadio())
         statement.append(q['text'])
         comp[i].setitems(q['items'])
         comp[i].setsol_from_index(q['index'])
         if 'ordered' not in q['options']:
             comp[i].shuffle()
     elif q['type'] == "Checkbox":
-        #comp.append(CustomCheckbox())
+        comp.append(CustomCheckbox())
         statement.append(q['text'])
         comp[i].setitems(q['items'])
         comp[i].setsol_from_index(q['index'])
         if 'ordered' not in q['options']:
             comp[i].shuffle()
     elif  q['type'] == 'TextSelect':
-        #cst = CustomTextSelect()
+        cst = CustomTextSelect()
         statement.append(q['text'])
         cst.setdata_from_textDR(q['items'][0])
         comp.append(cst)
