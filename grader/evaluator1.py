@@ -50,6 +50,7 @@ if __name__ == "__main__":
             dic[key] = dic[key].replace(r"{% endraw %}", "")
             try:
                 dic[key] = Env.from_string(dic[keyk]).render(dic) + "update"
+                dic[key] = "bug"
             except:
                 dic[key] = "bug"
 
