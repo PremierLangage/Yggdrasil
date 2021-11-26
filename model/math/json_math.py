@@ -20,5 +20,5 @@ class JSONDecoder(json.JSONDecoder):
         if '__SymPy__' in dic:
             return sympify(dic['srepr'], evaluate=False)
         if '__MathInput__' in dic:
-            return MathInput(dict)
+            return MathInput(dic)
         return dic
