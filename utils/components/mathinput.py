@@ -6,7 +6,7 @@ class MathInput():
         self.__MathInput__ = True
         self.id = str(uuid4())
         self.keypad = []
-        self.value = ""
+        self.value = "2x"
         self.prefix = ""
 
 
