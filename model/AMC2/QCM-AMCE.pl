@@ -102,7 +102,7 @@ for i in range(10):
 list_questions = parse_AMC_TXT(questions)
 
 if "onepergroup" in globals() and onepergroup :
-    list_questions=onefromeachgroup(list_questions)
+    list_questions=onefromeachgroup(list_questions,1)
 elif 'nbstep' in globals():
     list_questions = rd.sample(list_questions, nbstep)
 
