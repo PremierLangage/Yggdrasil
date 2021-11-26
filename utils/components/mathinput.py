@@ -7,4 +7,5 @@ class MathInput:
         self.id = kwargs.get('id', str(uuid4()))
         self.keypad = kwargs.get('keypad', [])
         self.value = kwargs.get('value', '')
-        self.prefix = kwargs.get('', '')
+        self.prefix = kwargs.get('prefix', '')
+        self.disabled = kwargs.get('disabled', False)
