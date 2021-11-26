@@ -59,7 +59,7 @@ if (typeof setOfMathFields == "undefined") {
 setOfMathFields.{{ id }} = mathField_{{ id }}
 </script>
 """
-    return Template(html).render(id=id, prefix=prefix, embed ="", keypad=keypad, value=value)
+    return Template(html).render(locals())
 
 
 @contextfilter
