@@ -47,9 +47,9 @@ if __name__ == "__main__":
         if key in dic:
             key2 = f"_{key}_"
             if isinstance(dic[key] , str):
-                dic[key] = dic[key2].replace(r"{% raw %}", "")
-                dic[key] = dic[key].replace(r"{% endraw %}", "")
-                dic[key] = "" #Env.from_string(macros + dic[key]).render(dic)
+                #dic[key] = dic[key2].replace(r"{% raw %}", "")
+                #dic[key] = dic[key].replace(r"{% endraw %}", "")
+                dic[key] = " " #Env.from_string(macros + dic[key]).render(dic)
 
 
     # dic = json.loads(json.dumps(dic, cls=JSONEncoder))
