@@ -71,7 +71,11 @@ prefix = Réponse :
 
 
 inputblock ==
+{% raw %}
+{{ comp|mathinput|safe }}
 
+{{ comp2|mathinput|safe }}
+{% endraw %}
 ==
 
 
