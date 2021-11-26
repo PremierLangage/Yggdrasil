@@ -19,6 +19,6 @@ class JSONDecoder(json.JSONDecoder):
     def object_hook(self, dic):
         if '__SymPy__' in dic:
             return sympify(dic['srepr'], evaluate=False)
-        #if '__MathInput__' in dic:
-        #    return MathInput(dic)
+        if '__MathInput__' in dic:
+            return MathInput(**dic)
         return dic
