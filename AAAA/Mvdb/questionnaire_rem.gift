@@ -1,4 +1,4 @@
-::Q1 : Présence en cours:: 
+::Q1 - Présence en cours:: 
 Comment décririez-vous votre présence en cours magistral d'AP1 ce semestre ?
 {
 ~assidue (toutes les séances)
@@ -8,7 +8,7 @@ Comment décririez-vous votre présence en cours magistral d'AP1 ce semestre ?
 ~jamais
 }
 
-::Q2 : Présence en TD:: 
+::Q2 - Présence en TD:: 
 Comment décririez-vous votre présence en TD d'AP1 ce semestre ?
 {
 ~assidue (toutes les séances)
@@ -18,7 +18,7 @@ Comment décririez-vous votre présence en TD d'AP1 ce semestre ?
 ~jamais
 }
 
-::Q3 : Présence en TP:: 
+::Q3 - Présence en TP:: 
 Comment décririez-vous votre présence en TP d'AP1 ce semestre ?
 {
 ~assidue (toutes les séances)
@@ -71,7 +71,7 @@ Combien de temps de travail en dehors des enseignements avez-vous effectué ce s
 = jamais
 }
 
-::Q11 : Avez-vous utilisé la plateforme Premier Langage (PL) ?
+::Q11 :: Avez-vous utilisé la plateforme Premier Langage (PL) ?
 { = régulièrement
  = irrégulièrement
  = jamais
