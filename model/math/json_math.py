@@ -7,7 +7,7 @@ class JSONEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, (Basic, Matrix)):
             return {'__SymPy__': True, 'srepr': srepr(obj)}
-        if isinstance(obj, MathInput):
+        elif isinstance(obj, MathInput):
             return vars(obj)
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
@@ -19,6 +19,6 @@ class JSONDecoder(json.JSONDecoder):
     def object_hook(self, dic):
         if '__SymPy__' in dic:
             return sympify(dic['srepr'], evaluate=False)
-        if '__MathInput__' in dic:
+        elif '__MathInput__' in dic:
             return MathInput(dic)
         return dic
