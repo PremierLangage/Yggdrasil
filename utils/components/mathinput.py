@@ -1,15 +1,11 @@
-from components import Component
-from json import load
 
-json_file = open('keyboards.JSON')
-keyboards_JSON = load(json_file)
-json_file.close()
-
-class CustomMathInput(Component):
+class MathInput():
 
     def __init__(self, **kwargs):
-        self.selector = 'c-math-input'
-        self.decorator = 'CustomMathInput'
+        self.__MathInput__ = True
+        self.keypad = []
+        self.value = ""
+        self.prefix = "Réponse :"
         if 'inlineShortcuts' in kwargs:
             keyboards_JSON['inlineShortcuts'] = kwargs['inlineShortcuts']
         if 'virtualKeyboards' in kwargs:
