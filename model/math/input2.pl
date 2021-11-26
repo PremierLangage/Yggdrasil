@@ -48,7 +48,6 @@ comp2['value'] = answers[comp2['id']]
 
 score = -1
 feedback = "toto"
-form = ""
 ==
 
 before ==
