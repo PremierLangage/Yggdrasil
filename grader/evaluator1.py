@@ -45,10 +45,10 @@ if __name__ == "__main__":
 
     for key in dic.get('jinja_keys', ['question', 'solution']):
         if key in dic:
-            key2 = f"_{key}_"
-            dic[key] = dic[key2].replace(r"{% raw %}", "")
-            dic[key] = dic[key].replace(r"{% endraw %}", "")
             try:
+                key2 = f"_{key}_"
+                dic[key] = dic[key2].replace(r"{% raw %}", "")
+                dic[key] = dic[key].replace(r"{% endraw %}", "")         
                 dic[key] = Env.from_string(dic[keyk]).render(dic) + "update"
                 dic[key] = "bug"
             except:
