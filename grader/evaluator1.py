@@ -11,7 +11,8 @@ from json_encoder import JSONEncoder, JSONDecoder
 if __name__ == "__main__":
 
     with open(sys.argv[1], "r") as f:
-        dic = json.load(f, cls=JSONDecoder)
+        dic = json.load(f)
+        #dic = json.load(f, cls=JSONDecoder)
     Component.sync_context(dic)
 
     with open(sys.argv[2], "r") as f:
