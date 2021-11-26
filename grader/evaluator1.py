@@ -52,7 +52,7 @@ if __name__ == "__main__":
                 try:
                     dic[key] = Env.from_string(dic[keyk]).render(dic)
                 except:
-                    dic[key] = ""
+                    dic[key] = "bug"
 
 
     # dic = json.loads(json.dumps(dic, cls=JSONEncoder))
