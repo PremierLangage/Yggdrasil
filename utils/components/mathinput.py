@@ -5,7 +5,7 @@ class MathInput():
         self.__MathInput__ = True
         self.keypad = []
         self.value = ""
-        self.prefix = "Réponse :"
+        self.prefix = ""
         if 'inlineShortcuts' in kwargs:
             keyboards_JSON['inlineShortcuts'] = kwargs['inlineShortcuts']
         if 'virtualKeyboards' in kwargs:
