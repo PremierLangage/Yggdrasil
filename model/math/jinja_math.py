@@ -11,16 +11,12 @@ def component(l):
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
 def mathinput(l):
-    if isinstance(l, dict):
-        id = l['id']
-        prefix = l['prefix']
-        keypad = l['keypad']
-        value = l['value']
-    else:
-        id = l.id
-        prefix = l.prefix
-        keypad = l.keypad
-        value = l.value
+    id = l.id
+    prefix = l.prefix
+    keypad = l.keypad
+    value = l.value
+    if l.disabled:
+        cls_disabled = 'mq-disabled'
     html = r"""
 <div class="{{cls_icon}} {{cls_disabled}}">
   <div class="mathinput" style="display: block; margin-top: 1em;">
