@@ -16,7 +16,7 @@ class JSONDecoder(json.JSONDecoder):
     def __init__(self, *args, **kwargs):
         json.JSONDecoder.__init__(self, object_hook=self.object_hook, *args, **kwargs)
 
-    def object_hook(self, dic):
+    def object_hook(self, dict):
         if '__SymPy__' in dic:
             return sympify(dic['srepr'], evaluate=False)
         if '__MathInput__' in dic:
