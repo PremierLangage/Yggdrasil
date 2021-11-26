@@ -141,9 +141,6 @@ background-color: #F5F5F5;
 </style>
 ==
 
-mathinputid = ["math"]
-
-
 
 javascript.mathquill2 ==
 <script>
