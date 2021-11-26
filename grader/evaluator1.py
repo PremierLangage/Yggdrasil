@@ -50,7 +50,7 @@ if __name__ == "__main__":
                 #dic[key] = dic[key2].replace(r"{% raw %}", "")
                 #dic[key] = dic[key].replace(r"{% endraw %}", "")
                 try:
-                    dic[key] = dic[key2] # Env.from_string(macros + dic[key2]).render(dic)
+                    dic[key] = Env.from_string(dic[key2]).render(dic)
                 except:
                     dic['question'] = key
 
