@@ -8,6 +8,3 @@ class MathInput():
         self.keypad = []
         self.value = "2x"
         self.prefix = ""
-
-
-
