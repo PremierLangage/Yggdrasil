@@ -22,7 +22,7 @@ group =: RadioGroup
 
 url_clip =$ reflechir.mp4
 
-author=Nicolas Borie
+author=XXXXXX YYYYYY
 
 tag=vidéo|observation|simple|humour
 
@@ -36,7 +36,7 @@ group.items.append({"id": "n1", "content": "J'en peux plus le confinement avec t
 group.items.append({"id": "n2", "content": "Je préfère boumbo, petite automobile."})
 group.items.append({"id": "n3", "content": "Pourquoi le père noël a ramené ce pédalier multi-effets pour guitare electrique?"})
 group.items.append({"id": "n4", "content": "Ce soir, tu dors dehors si ça continue."})
-group.items.append({"id": R, "content": "Tortues ninja, ça suffit maintenant!"})
+group.items.append({"id": R, "content": "R&eacute;fl&eacute;chir de Wejdene"})
 
 # shuffle the items
 random.shuffle(group.items)
