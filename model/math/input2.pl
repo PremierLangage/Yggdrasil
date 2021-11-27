@@ -45,10 +45,10 @@ input.visual(True)
 
 before ==
 from mathinput import MathInput
-comp = MathInput()
-comp.value = ""
-comp.prefix
-comp.keypad = keypad
+input = MathInput()
+input.value = ""
+input.prefix = prefix
+input.keypad = keypad
 ==
 
 embed =
