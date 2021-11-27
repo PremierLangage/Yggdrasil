@@ -9,6 +9,7 @@ class MathInput:
         self.value = kwargs.get('value', '')
         self.prefix = kwargs.get('prefix', '')
         self.suffix = kwargs.get('suffix', '')
+        self.embed = kwargs.get('embed', '')
         self.disabled = kwargs.get('disabled', False)
 
     def visual(self, correct):
