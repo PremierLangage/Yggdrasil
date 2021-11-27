@@ -5,7 +5,7 @@
       {% if embed|length > 1 %}
       <div id="{{id}}"> {{ embed }}</div>
       {% else %}
-      <div id="{{id}}" class="default {{cls_border}} mathinput" ></div>
+      <div id="{{id}}" class="mathinput default {{cls_border}}" ></div>
       {% if keypad|length > 0 %}
       <div class="dropdown-menu dropdown-menu-right keypad">
       {% for item in keypad %}
@@ -21,7 +21,7 @@
       {{ suffix }}
   </div>
 </div>
-<input type="hidden" id="form_{{ id }}">
+<input type="text" id="form_{{ id }}">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
 
