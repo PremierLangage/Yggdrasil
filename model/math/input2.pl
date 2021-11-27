@@ -49,6 +49,7 @@ feedback = "toto"
 
 before ==
 from mathinput import MathInput
+from mathembed import MathEmbed
 comp = MathInput()
 comp.id = "math"
 comp.keypad = [{"label": "$! \\sqrt{\\phantom{x}} !$", "action": "cmd", "value": "\\sqrt"}, {"label": "$! \\infty !$", "action": "cmd", "value": "\\infty"}]
