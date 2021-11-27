@@ -57,7 +57,7 @@ prefix = Réponse :
 
 
 inputblock ==
-{{ comp|mathinput }}
+{{ input|mathinput }}
 ==
 
 
