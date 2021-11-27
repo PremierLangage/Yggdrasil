@@ -54,7 +54,7 @@ comp = MathInput()
 comp.keypad = [{"label": "$! \\sqrt{\\phantom{x}} !$", "action": "cmd", "value": "\\sqrt"}, {"label": "$! \\infty !$", "action": "cmd", "value": "\\infty"}]
 
 comp2 = MathEmbed()
-comp2.value = ["x"]
+comp2.embed = r"\MathQuillMathField{}"
 comp2.value = ["x"]
 ==
 
