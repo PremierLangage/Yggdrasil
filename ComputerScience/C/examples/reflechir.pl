@@ -46,7 +46,7 @@ title=Reprise d'un tube gigantesque
 
 text==
 Un artiste, souhaitant rester anonyme, vous propose le clip suivant
-dans lequel il propose une reprise d'une chanson d'une profondeur poignante. 
+dans lequel il propose une reprise d'une chanson d'une profondeur saisissante. 
 Selectionnez-donc le titre et l'auteur original de cette oeuvre magistrale.
 
 <br>
