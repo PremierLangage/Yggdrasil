@@ -13,13 +13,12 @@ def component(l):
 def mathinput(l):
     id = l.id
     prefix = l.prefix
-    keypad = l.keypad
     value = l.value
     suffix = l.suffix
     if l.disabled:
         cls_disabled = 'mq-disabled'
     if hasattr(l, '__MathInput__'):
-
+        keypad = l.keypad
         with open('mathinput.html') as f:
             html = f.read()
         return Template(html).render(locals())
