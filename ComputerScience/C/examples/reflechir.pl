@@ -22,7 +22,7 @@ group =: RadioGroup
 
 url_clip =$ reflechir.mp4
 
-author=XXXXXX YYYYYY
+author=Anonyme
 
 tag=vidéo|observation|simple|humour
 
