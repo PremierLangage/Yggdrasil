@@ -32,10 +32,10 @@ import random
 
 group.items = []
 R = 'y1'
-group.items.append({"id": "n1", "content": "J'en peux plus le confinement avec toi."})
-group.items.append({"id": "n2", "content": "Je préfère boumbo, petite automobile."})
-group.items.append({"id": "n3", "content": "Pourquoi le père noël a ramené ce pédalier multi-effets pour guitare electrique?"})
-group.items.append({"id": "n4", "content": "Ce soir, tu dors dehors si ça continue."})
+group.items.append({"id": "n1", "content": "Ding dong song de Gunther"})
+group.items.append({"id": "n2", "content": "Never Gonna Give You Up de Rick Astley"})
+group.items.append({"id": "n3", "content": ""})
+group.items.append({"id": "n4", "content": ""})
 group.items.append({"id": R, "content": "R&eacute;fl&eacute;chir de Wejdene"})
 
 # shuffle the items
