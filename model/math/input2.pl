@@ -51,7 +51,7 @@ before ==
 from mathinput import MathInput
 comp = MathInput()
 comp.keypad = [{"label": "$! \\sqrt{\\phantom{x}} !$", "action": "cmd", "value": "\\sqrt"}, {"label": "$! \\infty !$", "action": "cmd", "value": "\\infty"}]
-comp.id = "toto"
+#comp.id = "toto"
 comp2 = MathInput()
 ==
 
