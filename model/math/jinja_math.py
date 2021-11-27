@@ -24,7 +24,7 @@ def mathinput(l):
   <div class="mathinput" style="display: block; margin-top: 1em;">
     {{ prefix }}
     <div class="btn-group">
-      <div id="math" class="default {{cls_border}}" ></div>
+      <div id="{{ id }}" class="default {{cls_border}}" ></div>
       {% if keypad|length > 0 %}
       <div class="dropdown-menu dropdown-menu-right keypad">
       {% for item in keypad %}
@@ -50,7 +50,7 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   autoOperatorNames: 'sin cos tan ln exp cup cap',
   });
 
-var mathField = MQ.MathField(document.getElementById("math"));
+var mathField = MQ.MathField(document.getElementById({{ id }}));
 </script>
 """
     return Template(html).render(locals())
