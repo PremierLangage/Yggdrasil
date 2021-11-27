@@ -6,8 +6,8 @@ class MathInput:
 
     def __init__(self, **kwargs):
         self.__MathInput__ = True
-        self.id = kwargs.get('id', "MathInput"+str(Mathinput.count))
-        Mathinput.count += 1
+        self.id = kwargs.get('id', "MathInput"+str(MathInput.count))
+        MathInput.count += 1
         self.keypad = kwargs.get('keypad', [])
         self.value = kwargs.get('value', '')
         self.prefix = kwargs.get('prefix', '')
