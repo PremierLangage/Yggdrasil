@@ -55,6 +55,7 @@ comp.keypad = [{"label": "$! \\sqrt{\\phantom{x}} !$", "action": "cmd", "value":
 
 comp2 = MathEmbed()
 comp2.value = ["x"]
+comp2.value = ["x"]
 ==
 
 embed =
