@@ -19,7 +19,6 @@ def mathinput(l):
     embed = ""
     if l.disabled:
         cls_disabled = 'mq-disabled'
-    html = "toto"
     html = r"""
 <div class="{{cls_icon}} {{cls_disabled}}">
   <div class="mathinput" style="display: block; margin-top: 1em;">
