@@ -25,10 +25,7 @@ def mathinput(l):
   <div class="mathinput" style="display: block; margin-top: 1em;">
     {{ prefix }}
     <div class="btn-group">
-      {% if embed|length > 1 %}
-      <div id="{{id}}"> {{ embed }}</div>
-      {% else %}
-      <div id="{{id}}" class="default {{cls_border}}" ></div>
+      <div id="math" class="default {{cls_border}}" ></div>
       {% if keypad|length > 0 %}
       <div class="dropdown-menu dropdown-menu-right keypad">
       {% for item in keypad %}
@@ -38,7 +35,6 @@ def mathinput(l):
       <button type="button" class="btn btn-xs btn-outline-secondary btn-keypad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fas fa-keyboard fa-2x"></i>
       </button>
-      {% endif %}
       {% endif %}
     </div>
       {{ suffix }}
@@ -55,12 +51,7 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   autoOperatorNames: 'sin cos tan ln exp cup cap',
   });
 
-var mathField_{{ id }} = MQ.MathField(document.getElementById("{{ id }}"));
-mathField_{{ id }}.latex(String.raw`{{ value|safe }}`);
-if (typeof setOfMathFields == "undefined") {
-   setOfMathFields = {};
-}
-setOfMathFields.{{ id }} = mathField_{{ id }}
+var mathField = MQ.MathField(document.getElementById("math"));
 </script>
 """
     return Template(html).render(locals())
