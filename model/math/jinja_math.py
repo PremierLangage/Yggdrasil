@@ -32,7 +32,7 @@ def mathinput(l):
       <button class="btn btn-sm btn-outline-secondary" onclick="mathField_{{ id }}.{{ item.action }}(String.raw`{{ item.value }}`);mathField_{{ id }}.focus()">{{ item.label|safe }}</button>
       {% endfor %}
       </div>
-      <button id="btn-keypad" type="button" class="btn btn-xs btn-outline-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button type="button" class="btn btn-xs btn-outline-secondary btn-keypad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fas fa-keyboard fa-2x"></i>
       </button>
       {% endif %}
