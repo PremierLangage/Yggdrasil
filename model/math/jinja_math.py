@@ -16,7 +16,7 @@ def mathinput(l):
     suffix = l.suffix
     keypad = l.keypad
     value = l.value
-    with f = open('mathinput.html'):
+    with open('mathinput.html') as f:
         html = f.read()
     return Template(html).render(locals())
 
