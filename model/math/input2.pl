@@ -41,6 +41,7 @@ evaluator ==
 comp.value = answers[comp.id]
 comp2.value = answers[comp2.id]
 comp.disabled = True
+comp.embed = r"# \sqrt{#}"
 comp.visual(True)
 #comp.value = "4x"
 score = -1
