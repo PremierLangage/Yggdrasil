@@ -20,49 +20,6 @@ def mathinput(l):
         cls_disabled = 'mq-disabled'
     with open('mathinput.html') as f:
         html = f.read()
-    html2 = r"""
-<div class="{{cls_icon}} {{cls_disabled}}">
-  <div class="mathinput" style="display: block; margin-top: 1em;">
-    {{ prefix }}
-    <div class="btn-group">
-      {% if embed|length > 1 %}
-      <div id="{{id}}"> {{ embed }}</div>
-      {% else %}
-      <div id="{{id}}" class="default {{cls_border}}" ></div>
-      {% if keypad|length > 0 %}
-      <div class="dropdown-menu dropdown-menu-right keypad">
-      {% for item in keypad %}
-      <button class="btn btn-sm btn-outline-secondary" onclick="mathField_{{ id }}.{{ item.action }}(String.raw`{{ item.value }}`);mathField_{{ id }}.focus()">{{ item.label|safe }}</button>
-      {% endfor %}
-      </div>
-      <button type="button" class="btn btn-xs btn-outline-secondary btn-keypad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <i class="fas fa-keyboard fa-2x"></i>
-      </button>
-      {% endif %}
-      {% endif %}
-    </div>
-      {{ suffix }}
-  </div>
-</div>
-<input type="text" id="form_{{ id }}">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1-b/mathquill.min.js" type="text/javascript"></script>
-
-<script>
-var MQ = MathQuill.getInterface(2);
-MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
-  autoCommands: 'pi theta sqrt sum infty infin emptyset',
-  autoOperatorNames: 'sin cos tan ln exp cup cap',
-  });
-
-var mathField_{{ id }} = MQ.MathField(document.getElementById("{{ id }}"));
-mathField_{{ id }}.latex(String.raw`{{ value|safe }}`);
-if (typeof setOfMathFields == "undefined") {
-   setOfMathFields = {};
-}
-setOfMathFields.{{ id }} = mathField_{{ id }}
-</script>
-"""
     return Template(html).render(locals())
 
 
