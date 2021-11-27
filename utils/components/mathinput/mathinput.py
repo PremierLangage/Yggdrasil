@@ -15,4 +15,4 @@ class MathInput:
         if correct:
             self.suffix = r'<i class="fas fa-check" style="color: green"></i>'
         else:
-            self.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
+            self.suffix = r'<i class="fas fa-times" style="color: red"></i></i>'
