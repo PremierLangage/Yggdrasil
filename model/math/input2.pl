@@ -47,13 +47,13 @@ before ==
 from mathinput import MathInput
 input = MathInput()
 input.value = ""
-input.prefix = prefix
+input.prefix = input_prefix
 input.keypad = keypad
 ==
 
 embed =
 
-prefix = Réponse :
+input_prefix = Réponse :
 
 
 inputblock ==
