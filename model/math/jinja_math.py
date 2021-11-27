@@ -17,15 +17,8 @@ def mathinput(l):
     suffix = l.suffix
     if l.disabled:
         cls_disabled = 'mq-disabled'
-    if hasattr(l, '__MathInput__'):
-        keypad = l.keypad
-        with open('mathinput.html') as f:
-            html = f.read()
-        return Template(html).render(locals())
-    elif hasattr(l, '__MathEmbed__'):
-        embed = l.embed
-        with open('mathembed.html') as f:
-            html = f.read()
+    with open('mathinput.html') as f:
+        html = f.read()
     return Template(html).render(locals())
 
 
