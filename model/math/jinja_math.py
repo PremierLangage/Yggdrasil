@@ -16,6 +16,7 @@ def mathinput(l):
     keypad = l.keypad
     value = l.value
     suffix = l.suffix
+    embed = ""
     if l.disabled:
         cls_disabled = 'mq-disabled'
     
