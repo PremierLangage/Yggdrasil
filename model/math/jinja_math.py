@@ -17,7 +17,6 @@ def mathinput(l):
     suffix = l.suffix
     keypad = l.keypad
     embed = l.embed
-
     if l.disabled:
         cls_disabled = 'mq-disabled'
     with open('mathinput.html') as f:
