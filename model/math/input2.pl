@@ -38,13 +38,9 @@ form =
 tplpage =@ /model/basic/template.html
 
 evaluator ==
-comp.value = answers[comp.id]
-comp2.value = answers[comp2.id]
-comp.disabled = True
-comp.visual(True)
-#comp.value = "4x"
-score = -1
-feedback = "toto"
+input.value = answers[input.id]
+input.disabled = True
+input.visual(True)
 ==
 
 before ==
