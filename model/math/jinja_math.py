@@ -13,9 +13,9 @@ def component(l):
 def mathinput(l):
     id = l.id
     prefix = l.prefix
+    suffix = l.suffix
     keypad = l.keypad
     value = l.value
-        value = l.value
     with f = open('mathinput.html'):
         html = f.read()
     return Template(html).render(locals())
