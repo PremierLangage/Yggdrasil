@@ -13,14 +13,14 @@ def component(l):
 def mathinput(l):
     id = l.id
     prefix = l.prefix
+    keypad = l.keypad
     value = l.value
     suffix = l.suffix
-    keypad = l.keypad
-    embed = ""
     if l.disabled:
         cls_disabled = 'mq-disabled'
     with open('mathinput.html') as f:
         html = f.read()
+
     return Template(html).render(locals())
 
 
