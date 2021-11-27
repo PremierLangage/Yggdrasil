@@ -18,31 +18,36 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-inputbox =: Input
-inputbox.type = number
-inputbox.placeholder = Nombre de souris
-inputbox.maxlength = 3
-inputbox.appearance = outline
+group =: RadioGroup
 
-url_clip =$ PereBorie.webm
+url_clip =$ reflechir.mp4
 
 author=Nicolas Borie
 
 tag=vidéo|observation|simple|humour
 
-before==
+# GENERATE A RANDOM QUESTION
+before==#|python|
+import random
 
+group.items = []
+R = 'y1'
+group.items.append({"id": "n1", "content": "J'en peux plus le confinement avec toi."})
+group.items.append({"id": "n2", "content": "Je préfère boumbo, petite automobile."})
+group.items.append({"id": "n3", "content": "Pourquoi le père noël a ramené ce pédalier multi-effets pour guitare electrique?"})
+group.items.append({"id": "n4", "content": "Ce soir, tu dors dehors si ça continue."})
+group.items.append({"id": R, "content": "Tortues ninja, ça suffit maintenant!"})
+
+# shuffle the items
+random.shuffle(group.items)
 ==
 
-title==
-Analyser une vidéo
-==
+title=Reprise d'un tube gigantesque
 
 text==
-Dans le clip suivant, combien de souris le **chat** fait-il couiné ?
-
- Cet exercice 
-est plus simple avec le son d'activé.
+Un artiste, souhaitant rester anonyme, vous propose le clip suivant
+dans lequel il propose une reprise d'une chanson d'une profondeur poignante. 
+Selectionnez-donc le titre et l'auteur original de cette oeuvre magistrale.
 
 <br>
 
