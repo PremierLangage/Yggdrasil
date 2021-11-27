@@ -6,7 +6,7 @@
 @ /model/math/json_math.py [json_encoder.py]
 @ /utils/components/mathinput/mathinput.py
 @ /utils/components/mathinput/mathinput.html
-@ /utils/components/mathembed/mathemded.py
+@ /utils/components/mathembed/mathembed.py
 @ /utils/components/mathembed/mathembed.html
 @ /utils/sympy/evalsympy.py
 @ /utils/sympy/latex2sympy.py
