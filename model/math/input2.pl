@@ -51,11 +51,9 @@ before ==
 from mathinput import MathInput
 from mathembed import MathEmbed
 comp = MathInput()
-comp.id = "math"
 comp.keypad = [{"label": "$! \\sqrt{\\phantom{x}} !$", "action": "cmd", "value": "\\sqrt"}, {"label": "$! \\infty !$", "action": "cmd", "value": "\\infty"}]
 
 comp2 = MathEmbed()
-comp2.id = "math2"
 comp2.value = ["x"]
 ==
 
