@@ -40,6 +40,13 @@ if (typeof setOfMathFields == "undefined") {
 }
 setOfMathFields.{{ id }} = mathField_{{ id }}
 {% else %}
-
+var StaticMath_{{ id }} = MQ.StaticMath(document.getElementById("{{ id }}"));
+{% for val in value %}
+StaticMath_{{ id }}.innerFields[loop.index0].latex(val);
+{% endfor %}
+if (typeof setOfStaticMath == "undefined") {
+   setOfStaticMath = {};
+}
+setOfStaticMath.{{ id }} = StaticMath_{{ id }}
 {% endif %}
 </script>
