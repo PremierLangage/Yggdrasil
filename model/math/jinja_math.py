@@ -20,7 +20,6 @@ def mathinput(l):
         cls_disabled = 'mq-disabled'
     with open('mathinput.html') as f:
         html = f.read()
-
     return Template(html).render(locals())
 
 
