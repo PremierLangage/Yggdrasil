@@ -50,10 +50,9 @@ feedback = "toto"
 before ==
 from mathinput import MathInput
 comp = MathInput()
-comp.value = "x"
-comp.keypad = [{"label": "$! \\sqrt{\\phantom{x}} !$", "action": "cmd", "value": "\\sqrt"}, {"label": "$! \\infty !$", "action": "cmd", "value": "\\infty"}]
-#comp.id = "toto"
-comp2 = MathInput()
+comp.value = ""
+comp.prefix
+comp.keypad = keypad
 ==
 
 embed =
