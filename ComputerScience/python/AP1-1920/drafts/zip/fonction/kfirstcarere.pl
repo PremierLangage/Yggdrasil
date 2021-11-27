@@ -19,7 +19,7 @@ Programmer une fonction **carre** qui prend en paramètre un entier et retourne 
 
 Programmepr ensuite une fonction **premiers_carres** qui : <br>
 * prend en paramètre un entier k <br>
-* imprime les k premiers carrés de 0 à (k-1)^2 <br>
+* imprime LA SOMME des k premiers carrés de 0 à (k-1)^2 <br>
 
 ==
 
@@ -32,6 +32,9 @@ def premiers_carres(k) :
     for i in range(k) :
         s += (carre(i))
     return s
+
+z = int(input())
+print(premiers_carres(z))
 
 ==
 before==
@@ -55,8 +58,8 @@ after=before
 ==
 
 pltest0==
->>> carre(1)
-1
+>>> carre(2)
+4
 ==
 
 
