@@ -1,9 +1,11 @@
-<div class="{{cls_disabled}}">
-  <div style="display: block; margin-top: 1em;">
+<div class="{{cls_icon}} {{cls_disabled}}">
+  <div class="mathinput" style="display: block; margin-top: 1em;">
     {{ prefix }}
     <div class="btn-group">
-
-      <div id="{{id}}" class="mathinput default {{cls_border}}" ></div>
+      {% if embed|length > 1 %}
+      <div id="{{id}}"> {{ embed }}</div>
+      {% else %}
+      <div id="{{id}}" class="default {{cls_border}}" ></div>
       {% if keypad|length > 0 %}
       <div class="dropdown-menu dropdown-menu-right keypad">
       {% for item in keypad %}
@@ -13,6 +15,7 @@
       <button type="button" class="btn btn-xs btn-outline-secondary btn-keypad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fas fa-keyboard fa-2x"></i>
       </button>
+      {% endif %}
       {% endif %}
     </div>
       {{ suffix }}
