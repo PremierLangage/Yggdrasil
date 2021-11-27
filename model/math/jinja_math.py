@@ -15,6 +15,7 @@ def mathinput(l):
     prefix = l.prefix
     keypad = l.keypad
     value = l.value
+    suffix = l.suffix
     if l.disabled:
         cls_disabled = 'mq-disabled'
     html = r"""
