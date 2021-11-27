@@ -32,10 +32,14 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   autoOperatorNames: 'sin cos tan ln exp cup cap',
   });
 
+{% if embed|length > 1 %}
 var mathField_{{ id }} = MQ.MathField(document.getElementById("{{ id }}"));
 mathField_{{ id }}.latex(String.raw`{{ value|safe }}`);
 if (typeof setOfMathFields == "undefined") {
    setOfMathFields = {};
 }
 setOfMathFields.{{ id }} = mathField_{{ id }}
+{% else %}
+
+{% endif %}
 </script>
