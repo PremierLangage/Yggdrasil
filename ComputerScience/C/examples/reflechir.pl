@@ -34,8 +34,8 @@ group.items = []
 R = 'y1'
 group.items.append({"id": "n1", "content": "Ding dong song de Gunther"})
 group.items.append({"id": "n2", "content": "Never Gonna Give You Up de Rick Astley"})
-group.items.append({"id": "n3", "content": ""})
-group.items.append({"id": "n4", "content": ""})
+group.items.append({"id": "n3", "content": "Turbo Diesel Sport Injection (TDSI) de Rohff"})
+group.items.append({"id": "n4", "content": "Façon Sex de Tribal King"})
 group.items.append({"id": R, "content": "R&eacute;fl&eacute;chir de Wejdene"})
 
 # shuffle the items
