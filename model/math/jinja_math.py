@@ -38,7 +38,7 @@ def mathinput(l):
       {% endif %}
       {% endif %}
     </div>
-      <i class="fas fa-check" style="color: green"></i>
+      {{ suffix }}
   </div>
 </div>
 <input type="text" id="form_{{ id }}">
