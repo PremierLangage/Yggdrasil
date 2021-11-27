@@ -55,6 +55,7 @@ Selectionnez-donc le titre et l'auteur original de cette oeuvre magistrale.
 
 ==
 
+# PRESENT THE QUESTION TO THE STUDENT
 form==
 <style>
 .error-state{
@@ -65,14 +66,26 @@ form==
 }
 </style>
 
-{{ inputbox|component}}
+{{ group|component }}
 ==
 
+# EVALUATE THE STUDENT ANSWER
 evaluator==#|python|
-if 2 == int(inputbox.value):
-    grade = (100, '''<span class="success-state">Mais oui, c'est clair!</span> <br> <br>''')
-else:
-    grade = (0, '''<span class="error-state">Regardez mieux! Le chat, c'est celui qui a le plus de poil...</span> <br> <br>''')
+S = group.selection
+score = 0
+feedback = '<span class="error-state animated pulse infinite" style="padding: 10px">Non, il faut mieux écouter...</span>'
+
+for item in group.items:
+    item['css'] = ''
+    if item['id'] == S:
+        if S == R:
+            item['css'] = 'success-border'
+            score = 100
+            feedback = '''<span class="success-state animated pulse infinite" style="padding: 10px">Parfait, vous avez l'oreille!</span>'''
+        else:
+            item['css'] = 'error-border'
+    elif item['id'] == R:
+        item['css'] = 'success-border animated pulse infinite'
+
+grade = (score, feedback)
 ==
-
-
