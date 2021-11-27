@@ -17,6 +17,7 @@ def mathinput(l):
     value = l.value
     suffix = l.suffix
     embed = l.embed
+    embed = embed.replace("#", r"\MathQuillMathField{}")
     if l.disabled:
         cls_disabled = 'mq-disabled'
     with open('mathinput.html') as f:
