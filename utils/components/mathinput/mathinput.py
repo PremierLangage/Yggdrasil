@@ -3,11 +3,13 @@ from uuid import uuid4
 class MathInput:
 
     count = 0
+    instances = []
 
     def __init__(self, **kwargs):
         self.__MathInput__ = True
         self.id = kwargs.get('id', "MathInput"+str(MathInput.count))
         MathInput.count += 1
+        MathInput.instances.append(self)
         self.keypad = kwargs.get('keypad', [])
         self.value = kwargs.get('value', '')
         self.prefix = kwargs.get('prefix', '')
