@@ -42,6 +42,8 @@ comp.value = answers[comp.id]
 comp2.value = answers[comp2.id]
 comp.disabled = True
 comp.visual(True)
+comp.embed = r"# \sqrt{#}"
+comp.value = ['a','b']
 #comp.value = "4x"
 score = -1
 feedback = "toto"
