@@ -61,7 +61,7 @@ prefix = Réponse :
 
 
 inputblock ==
-{{ comp|mathinput }}
+{{ comp|mathinput|safe }}
 
 {{ comp2|mathinput }}
 ==
