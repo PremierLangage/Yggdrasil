@@ -11,15 +11,25 @@ def component(l):
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
 def mathinput(l):
-    id = l.id
-    prefix = l.prefix
-    keypad = l.keypad
-    value = l.value
-    suffix = l.suffix
-    if l.disabled:
-        cls_disabled = 'mq-disabled'
-    with open('mathinput.html') as f:
-        html = f.read()
+    if hasattr(l, '__MathInput__'):
+        id = l.id
+        prefix = l.prefix
+        keypad = l.keypad
+        value = l.value
+        suffix = l.suffix
+        if l.disabled:
+            cls_disabled = 'mq-disabled'
+        with open('mathinput.html') as f:
+            html = f.read()
+        return Template(html).render(locals())
+    elif hasattr(l, '__MathEmbed__'):
+        id = l.id
+        prefix = l.prefix
+        value = l.value
+        suffix = l.suffix
+        embed = l.embed
+        with open('mathembed.html') as f:
+            html = f.read()
     return Template(html).render(locals())
 
 
