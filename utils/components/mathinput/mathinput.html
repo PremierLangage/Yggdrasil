@@ -5,7 +5,7 @@
       {% if embed|length > 1 %}
       <div id="{{id}}"> {{ embed }}</div>
       {% else %}
-      <div id="{{id}}" class="mathinput default {{cls_border}}" ></div>
+      <div id="{{id}}" class="default {{cls_border}} mathinput" ></div>
       {% if keypad|length > 0 %}
       <div class="dropdown-menu dropdown-menu-right keypad">
       {% for item in keypad %}
