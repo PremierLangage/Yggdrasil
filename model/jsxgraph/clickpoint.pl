@@ -7,14 +7,8 @@ tol = 0.1
 jxg.attributes % {"showNavigation":false, "boundingbox":[-1,1,5,-1]}
 
 script_init ==
-board.create('grid', [], {gridX: 0.25, gridY: 0.25});
-board.create('axis',[[0,0],[1,0]],{ticks:{visible:false}});
-board.create('axis',[[0,0],[0,1]],{ticks:{visible:false}});
-var circle = board.create('circle',[[0,0],[0,1]],{strokeColor:'blue',fixed:true});
-var O = board.create('point', [0,0],{size:1, name: 'O', color: 'black', fixed: true});
-var A = board.create('point', [1,0],{size:1, name: 'A', color: 'black', fixed: true});
-var M = board.create('glider', [1, 0.5, circle],{name:'M',color:'blue',fixed:false});
-board.create('sector', [O, A, M], {color: 'orange'});
+var ax1 = board.create('line', [[0,0],[1,0]]);
+bprd1.create('ticks',[ax1, 5], {minorTicks:4, majorHeight:10, minorHeight:4});
 ==
 
 script_aux ==
