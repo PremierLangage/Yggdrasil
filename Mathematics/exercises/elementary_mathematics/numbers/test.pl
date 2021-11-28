@@ -1,11 +1,8 @@
 extends = /model/jsxgraph/clickpoint.pl
 
 before ==
-lstangle = eval(param['lstangle'])
-angle = choice(lstangle)
-valangle = float(angle.evalf())
-xsol = float(cos(valangle))
-ysol = float(sin(valangle))
+xsol = 1
+ysol = 0
 jxg.setscript(script_init)
 ==
 
@@ -14,16 +11,9 @@ jxg.attributes % {"showNavigation":false, "boundingbox":[-1.25,1.25,1.25,-1.25]}
 name = M
 
 script_init ==
-board.create('grid', [], {gridX: 0.25, gridY: 0.25});
-board.create('axis',[[0,0],[1,0]],{ticks:{visible:false}});
-board.create('axis',[[0,0],[0,1]],{ticks:{visible:false}});
-var circle = board.create('circle',[[0,0],[0,1]],{strokeColor:'blue',fixed:true});
-var O = board.create('point', [0,0],{size:1, name: 'O', color: 'black', fixed: true});
-var A = board.create('point', [1,0],{size:1, name: 'A', color: 'black', fixed: true});
-var M = board.create('glider', [1, 0.5, circle],{name:'M',color:'blue',fixed:false});
-board.create('sector', [O, A, M], {color: 'orange'});
+var ax1 = board.create('line', [[0,0],[1,0]]);
+board.create('ticks',[ax1, 5], {minorTicks:4, majorHeight:10, minorHeight:4});==
 ==
-
 
 script_solution ==
 board.create('point',[{{xsol}}, {{ysol}}],{name:'', color:'green'});
