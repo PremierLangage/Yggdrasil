@@ -4,7 +4,7 @@ ptname = M
 
 tol = 0.1
 
-jxg.attributes % {"showNavigation":false, "boundingbox":[-1,1,5,-1], "axes":false}
+jxg.attributes % {"showNavigation":false, "boundingbox":[-1,1,5,-1], "axis":false}
 
 script_init ==
 var ax1 = board.create('line', [[0,0],[1,0]]);
