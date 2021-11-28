@@ -18,3 +18,7 @@ board.create('ticks',[ax1, 5], {minorTicks:4, majorHeight:10, minorHeight:4});==
 script_solution ==
 board.create('point',[{{xsol}}, {{ysol}}],{name:'', color:'green'});
 ==
+
+inputblock ==
+{{ jxg|component }}
+==
