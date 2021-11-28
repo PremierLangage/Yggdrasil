@@ -4,7 +4,7 @@ ptname = M
 
 tol = 0.1
 
-jxg.attributes % {"showNavigation":false, "boundingbox":[-1.25,1.25,1.25,-1.25]}
+jxg.attributes % {"showNavigation":false, "boundingbox":[-1,1,5,-1]}
 
 script_init ==
 board.create('grid', [], {gridX: 0.25, gridY: 0.25});
