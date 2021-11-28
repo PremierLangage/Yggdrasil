@@ -7,7 +7,7 @@ tol = 0.1
 jxg.attributes % {"showNavigation":false, "boundingbox": [-8.75, 2.5, 8.75, -2.5], "axis":false}
 
 script_init ==
-var ax1 = board.create('line', [[0,0],[1,0]]);
+board.create('line', [[0,0],[1,0]]);
 ==
 
 script_aux ==
