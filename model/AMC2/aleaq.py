@@ -31,7 +31,7 @@ def onefromeachgroup(questions, nbpergroup):
             for ng in G:
                 groups[ng].append(q)
     # création de la sélection de nbpergroup questions par groupes
-    for gl in groups.items():
+    for gl in groups.values():
         nogroup.append(random.sample(gl,min(len(gl),nbpergroup)))
     return nogroup
 
