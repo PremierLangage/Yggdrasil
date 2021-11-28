@@ -8,7 +8,6 @@ jxg.attributes % {"showNavigation":false, "boundingbox":[-1,1,5,-1]}
 
 script_init ==
 var ax1 = board.create('line', [[0,0],[1,0]]);
-bprd1.create('ticks',[ax1, 5], {minorTicks:4, majorHeight:10, minorHeight:4});
 ==
 
 script_aux ==
