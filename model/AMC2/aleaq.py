@@ -76,7 +76,7 @@ def buildquestion(questionp):
     """
     #if question.get('extended') == False:
     #    return question
-    question=defaultdict(lambda:questionp)
+    question=dict(lambda:questionp)
     try:
         
         d=optiondic(question.get('options'))
