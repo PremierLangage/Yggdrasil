@@ -12,7 +12,7 @@ name = M
 
 script_init ==
 var ax1 = board.create('line', [[0,0],[3,1]]);
-board.create('ticks',[ax1, 5], {minorTicks:4, majorHeight:10, minorHeight:4});==
+board.create('ticks',[ax1, 5], {minorTicks:4, majorHeight:10, minorHeight:4});
 ==
 
 script_solution ==
