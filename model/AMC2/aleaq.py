@@ -76,7 +76,7 @@ def buildquestion(questionp):
     """
     #if question.get('extended') == False:
     #    return question
-    question=dict(questionp.values())
+    question=dict(questionp
     try:
         
         d=optiondic(question.get('options'))
