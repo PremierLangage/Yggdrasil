@@ -50,28 +50,7 @@ questions==
 -=["list","int","dic"]
 
 
-=**[nbb=2,nbg=2] Indiquer les identifiants correctes
-+=["un","deux","ident","prout"]
--=["666","aujourd'hui", "def", "@lt;html@gt;"] 
--=["!autres","truc%","pour ris"]
-- for
--=["list","int","dic"]
 
-=**[nb=13, group=odd] What are the odd numbers ? 
-+=[x for x in range(3,77) if x%2==1 ]
--=[100,200,300,400,500,600]
--=[x for x in range(2,20) if x%2==0 ]
-
-
-=*[nb=2,group=odd] What are the odd numbers ? 
-+=[x for x in range(3,77) if x%2==1 ]
-+ 1
--=[x for x in range(3,77) if x%2==0 ]
-
-
-=*[nb=6,group=odd] What are the odd numbers ? 
-+=[x for x in range(3,77) if x%2==1 ]
--=[x for x in range(3,77) if x%2==0 ]
 
 ==
 
