@@ -4,6 +4,11 @@ ptname = M
 
 tol = 0.1
 
+script ==
+var ax1 = board.create('line', [[0,0],[1,0]]);
+board.create('ticks',[ax1, 5], {minorTicks:4, majorHeight:10, minorHeight:4});
+==
+
 script_aux ==
 function getMouseCoords(e) {
     let cPos = board.getCoordsTopLeftCorner(e);
