@@ -9,7 +9,7 @@ ysol = float(sin(valangle))
 jxg.setscript(script_init)
 ==
 
-jxg.attributes ={"showNavigation":False, "boundingbox":[-1.25,1.25,1.25,-1.25]}
+jxg.attributes % {"showNavigation":false, "boundingbox":[-1.25,1.25,1.25,-1.25]}
 
 name = M
 
