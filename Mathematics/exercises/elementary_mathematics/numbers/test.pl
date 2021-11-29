@@ -40,7 +40,7 @@ inputblock ==
 style.jxgcss ==
 <style>
 .jsxgraph-component {
-    width: 800px;
+    width: 1000px;
     height: 100px;
     margin: 0 auto;
 }
