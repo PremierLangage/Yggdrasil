@@ -13,8 +13,7 @@ name = M
 script_init ==
 var ax = board.create('line', [[0,0],[1,0]]);
 board.create('ticks',[ax, 5], {fixed:true, minorTicks:4, majorHeight:10, minorHeight:4});
-var M = board.create('glider', [1., 0., ax],{name:'M',color:'blue',fixed:false});
-
+var M = board.create('glider', [1., 0., ax], {name:'M',color:'blue',fixed:false});
 ==
 
 script_solution ==
