@@ -6,7 +6,7 @@ ysol = 0
 jxg.setscript(script_init+script_aux)
 ==
 
-jxg.attributes % {"showNavigation":false, "boundingbox":[-0.25,0.25,3.25,-0.25], "axis":false}
+jxg.attributes % {"showNavigation":false, "boundingbox":[-0.25,0.25,3.25,-0.25], "grid":true, "axis":false}
 
 name = M
 
