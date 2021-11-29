@@ -5,7 +5,13 @@ xsol = 1
 ysol = 0
 n = 2
 k = choice([3, 5, 7])
-a = 1
+if k == 3:
+    c = choice([4, 2])
+elif k == 5:
+    c = choice([6, 3, 6, 3, 2])
+elif k == 7:
+    c = choice([8, 4, 8, 4, 2])
+
 b = Rational(1, 2)
 jxg.attributes =  {"showNavigation":False, "boundingbox":[-0.5,4,n+0.5,-4], "axis":False, "keepAspectRatio":False}
 jxg.setscript(script_init + "\n"+ script_aux, locals())
@@ -15,7 +21,7 @@ jxg3.attributes % {"showNavigation":false, "boundingbox":[-0.5,4,5.5,-4], "axis"
 
 name = M
 question ==
-Place le point $! M !$ d'abscisse $! {{a}} + \frac{ {{c}} }{ {{d}} } !$.
+Place le point $! M !$ d'abscisse $! {{a}} + \frac{ {{b}} }{ {{c}} } !$.
 ==
 question2 ==
 <link rel="stylesheet" type="text/css" href="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css" />
