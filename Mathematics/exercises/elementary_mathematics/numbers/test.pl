@@ -10,6 +10,7 @@ elif k == 5:
 elif k == 7:
     c = choice([8, 4, 8, 4, 2])
 b = randint(1, c-1)
+f = Rational(b, c)
 xsol = b/c
 ysol = 0
 
@@ -20,7 +21,7 @@ jxg.setscript(script_init + "\n"+ script_aux, locals())
 name = M
 
 question ==
-Place le point $! M !$ d'abscisse $! \displaystyle \frac{ {{b}} }{ {{c}} } !$.
+Place le point $! M !$ d'abscisse $! \displaystyle {{f}} !$.
 ==
 
 
