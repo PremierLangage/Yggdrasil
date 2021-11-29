@@ -41,6 +41,7 @@ style.jxgcss ==
 <style>
 .jsxgraph-component {
     width: 400px;
+    max-width: 100%;
     height: 100px;
     margin: 0 auto;
 }
