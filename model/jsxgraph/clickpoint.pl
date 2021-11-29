@@ -2,7 +2,7 @@ extends = /model/mathjsxgraph.pl
 
 ptname = M
 
-tol = 0.1
+tol = 0.05
 
 
 script_init ==
