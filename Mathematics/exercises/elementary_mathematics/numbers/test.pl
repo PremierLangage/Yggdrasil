@@ -14,7 +14,7 @@ question ==
 <script type="text/javascript" src="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js"></script>
 <div id="jxgbox" class="jxgbox" style="width:500px;"></div>
 <script type="text/javascript">
-var board = JXG.JSXGraph.initBoard('jxgbox', {boundingbox:[-1,1,5,-1], keepaspectratio: true, axis:true});
+var board = JXG.JSXGraph.initBoard('jxgbox', {boundingbox:[-1,1,5,-1], keepaspectratio: true, grid:true});
 </script>
 ==
 script_init ==
