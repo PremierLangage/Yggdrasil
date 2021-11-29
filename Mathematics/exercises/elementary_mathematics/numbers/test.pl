@@ -3,7 +3,8 @@ extends = /model/jsxgraph/clickpoint.pl
 before ==
 xsol = 1
 ysol = 0
-jxg.attributes =  {"showNavigation":False, "boundingbox":[-0.5,4,5.5,-4], "axis":False, "keepAspectRatio":False}
+n=3
+jxg.attributes =  {"showNavigation":False, "boundingbox":[-0.5,4,n+0.5,-4], "axis":False, "keepAspectRatio":False}
 jxg.setscript(script_init + "\n"+ script_aux)
 ==
 jxg3.attributes % {"showNavigation":false, "boundingbox":[-0.5,4,5.5,-4], "axis":false, "keepAspectRatio":false}
