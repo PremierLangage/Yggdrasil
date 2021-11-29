@@ -14,9 +14,9 @@ question ==
 <script type="text/javascript" src="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js"></script>
 <div id="jxgbox2" class="jxgbox" style="width:500px; height:100px;"></div>
 <script type="text/javascript">
-var board2 = JXG.JSXGraph.initBoard('jxgbox2', {showNavigation:false, boundingbox:[-1,1,1,-1], keepaspectratio: true, grid:true});
+var board2 = JXG.JSXGraph.initBoard('jxgbox2', {showNavigation:false, boundingbox:[-1,4,5,-4], grid:true});
 var ax = board2.create('line', [[0,0],[1,0]], {fixed:true});
-board2.create('ticks',[ax, 5], {drawZero: true, drawLabels:true, minorTicks:3, majorHeight:20, minorHeight:10});
+board2.create('ticks',[ax, 1], {drawZero: true, drawLabels:true, minorTicks:3, majorHeight:20, minorHeight:10});
 var M = board2.create('glider', [1., 0., ax], {name:'M',color:'blue',fixed:false});
 board2.update();
 </script>
