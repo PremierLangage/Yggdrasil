@@ -21,7 +21,7 @@ jxg3.attributes % {"showNavigation":false, "boundingbox":[-0.5,4,5.5,-4], "axis"
 
 name = M
 question ==
-Place le point $! M !$ d'abscisse $! {{a}} + \frac{ {{b}} }{ {{c}} } !$.
+Place le point $! M !$ d'abscisse $! \displaystyle {{a}} + \frac{ {{b}} }{ {{c}} } !$.
 ==
 question2 ==
 <link rel="stylesheet" type="text/css" href="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css" />
