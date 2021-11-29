@@ -5,6 +5,8 @@ xsol = 1
 ysol = 0
 n = 2
 k = choice([3, 5, 7, 9])
+a = 1
+b = Rational(1, 2)
 jxg.attributes =  {"showNavigation":False, "boundingbox":[-0.5,4,n+0.5,-4], "axis":False, "keepAspectRatio":False}
 jxg.setscript(script_init + "\n"+ script_aux, locals())
 ==
@@ -12,7 +14,9 @@ jxg3.attributes % {"showNavigation":false, "boundingbox":[-0.5,4,5.5,-4], "axis"
 
 
 name = M
-
+question ==
+Place le point $! M !$ d'abscisse $! {{a}} + {{b|latex}} !$.
+==
 question2 ==
 <link rel="stylesheet" type="text/css" href="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css" />
 <script type="text/javascript" src="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js"></script>
