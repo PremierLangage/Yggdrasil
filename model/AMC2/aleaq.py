@@ -83,7 +83,7 @@ def buildquestion(questionp):
         
         d=optiondic(question.get('options'))
         nb =int(d.get("nb",4))
-        if questionp.get('type') == 'TextSelect' :# j'ai pas de syntaxe etendue pour le moment 
+        if question.get('type') == 'TextSelect' :# j'ai pas de syntaxe etendue pour le moment 
             return questionp 
         if question.get('type') == 'Radio' :
             bonne=question.get('index')
