@@ -66,15 +66,17 @@ Combien de temps de travail en dehors des enseignements avez-vous effectué ce s
 }
 
 ::Q10 ::Avez-vous lu un cours de Python d'une autre source sur internet?
-{ = régulièrement
+{ 
+= régulièrement
 = irrégulièrement
 = jamais
 }
 
 ::Q11 :: Avez-vous utilisé la plateforme Premier Langage (PL) ?
-{ = régulièrement
- = irrégulièrement
- = jamais
+{
+= régulièrement
+= irrégulièrement
+= jamais
 }
 
 ::Q12 :: Si non, pourquoi ? Si oui, cela vous a-t-il aidé ? {}
