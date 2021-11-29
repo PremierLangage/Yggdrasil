@@ -34,10 +34,7 @@ board.create('point',[{{xsol}}, {{ysol}}],{name:'', color:'green'});
 ==
 
 inputblock ==
-
-<div style="width:400px; height:400px; border:1px solid black">
 {{ jxg|component }}
-</div>
 ==
 
 style.jxgcss ==
