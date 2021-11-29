@@ -112,7 +112,6 @@ comp = []
 statement  = []
 rd.shuffle(list_questions)
 for i, q in enumerate(list_questions):
-    q=buildquestion(q) # Gestion de l'aléa 
     print(q)
 ==
 
