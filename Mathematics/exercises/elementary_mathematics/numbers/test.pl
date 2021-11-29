@@ -2,7 +2,7 @@ extends = /model/jsxgraph/clickpoint.pl
 
 before ==
 n = 1
-k = choice([3, 5, 7])
+k = choice([3, 5, 5, 7, 7])
 if k == 3:
     c = choice([4, 4, 2])
 elif k == 5:
