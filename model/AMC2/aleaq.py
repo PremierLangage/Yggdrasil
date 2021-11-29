@@ -40,7 +40,6 @@ def getmultioption(q):
 
 def optiondic(l):
     d={}
-
     for x in l:
         k,v= x.split('=')
         d[k]=v
