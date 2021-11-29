@@ -3,10 +3,10 @@ extends = /model/jsxgraph/clickpoint.pl
 before ==
 xsol = 1
 ysol = 0
+jxg.attributes = {"showNavigation":False, "boundingbox":[-0.5,4,5.5,-4], "grid":False}
 jxg.setscript(script_init + "\n"+ script_aux)
 ==
 
-jxg.attributes = {"showNavigation":False, "boundingbox":[-0.5,4,5.5,-4], "grid":False}
 
 name = M
 
