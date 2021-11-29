@@ -19,7 +19,3 @@ var M = board.create('glider', [1., 0., ax], {name:'M',color:'blue',fixed:false}
 script_solution ==
 board.create('point',[{{xsol}}, {{ysol}}],{name:'', color:'green'});
 ==
-
-inputblock ==
-{{ jxg|component }}
-==
