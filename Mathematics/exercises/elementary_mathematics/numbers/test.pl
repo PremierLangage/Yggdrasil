@@ -24,7 +24,7 @@ script_init ==
 
 ==
 
-script_init3 ==
+script_init ==
 //var board2 = JXG.JSXGraph.initBoard('jxgbox2', {showNavigation:false, boundingbox:[-0.5,4,5.5,-4], grid:false});
 var ax = board.create('line', [[0,0],[1,0]], {fixed:true});
 board.create('ticks',[ax, 1], {label: {anchorX: 'middle', anchorY: 'top', fontSize: 12, offset: [0, 30]}, anchor : 0., drawZero: true, drawLabels:true, minorTicks:2, majorHeight:20, minorHeight:10});
