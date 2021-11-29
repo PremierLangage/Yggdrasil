@@ -12,7 +12,7 @@ elif k == 5:
 elif k == 7:
     c = choice([8, 4, 8, 4, 2])
 b = randint(1, c-1)
-
+a = 1
 jxg.attributes =  {"showNavigation":False, "boundingbox":[-0.5,4,n+0.5,-4], "axis":False, "keepAspectRatio":False}
 jxg.setscript(script_init + "\n"+ script_aux, locals())
 ==
