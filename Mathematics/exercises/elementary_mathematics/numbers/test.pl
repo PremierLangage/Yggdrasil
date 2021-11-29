@@ -9,7 +9,7 @@ jxg.setscript(script_init + "\n"+ script_aux)
 jxg.attributes % {"showNavigation":false, "boundingbox":[-3,0.25,3.25,-0.25], "keepaspectratio": true, "grid":true, "axis":false}
 
 name = M
-question ==
+question2 ==
 <link rel="stylesheet" type="text/css" href="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css" />
 <script type="text/javascript" src="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js"></script>
 <div id="jxgbox2" class="jxgbox" style="width:100%; height:100px;"></div>
@@ -20,9 +20,7 @@ board2.create('ticks',[ax, 1], {label: {anchorX: 'middle', anchorY: 'top', fontS
 var M = board2.create('glider', [1., 0., ax], {name:'M',color:'blue',fixed:false});
 </script>
 ==
-script_init ==
 
-==
 
 script_init ==
 //var board2 = JXG.JSXGraph.initBoard('jxgbox2', {showNavigation:false, boundingbox:[-0.5,4,5.5,-4], grid:false});
