@@ -25,11 +25,10 @@ script_init ==
 ==
 
 script_init3 ==
-var board = JXG.JSXGraph.initBoard('jxgbox', {boundingbox:[-1,1,5,-1], keepaspectratio: true, grid:true});
-var ax = board.create('line', [[0,0],[1,0]]);
-board.create('ticks',[ax, 5], {fixed:true, minorTicks:4, majorHeight:10, minorHeight:4});
+//var board2 = JXG.JSXGraph.initBoard('jxgbox2', {showNavigation:false, boundingbox:[-0.5,4,5.5,-4], grid:false});
+var ax = board.create('line', [[0,0],[1,0]], {fixed:true});
+board.create('ticks',[ax, 1], {label: {anchorX: 'middle', anchorY: 'top', fontSize: 12, offset: [0, 30]}, anchor : 0., drawZero: true, drawLabels:true, minorTicks:2, majorHeight:20, minorHeight:10});
 var M = board.create('glider', [1., 0., ax], {name:'M',color:'blue',fixed:false});
-board.update()
 ==
 
 script_solution ==
