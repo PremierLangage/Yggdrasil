@@ -39,3 +39,13 @@ inputblock ==
 {{ jxg|component }}
 </div>
 ==
+
+style.jxgcss ==
+<style>
+.jsxgraph-component {
+    width: 600px;
+    height: 100px;
+    margin: 0 auto;
+}
+</style>
+==
