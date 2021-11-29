@@ -112,6 +112,7 @@ comp = []
 statement  = []
 rd.shuffle(list_questions)
 for i, q in enumerate(list_questions):
+print(q)
     q=buildquestion(q) # Gestion de l'aléa 
     if q['type'] == "Radio":
         comp.append(Radio())
