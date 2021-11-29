@@ -3,8 +3,8 @@ extends = /model/jsxgraph/clickpoint.pl
 before ==
 xsol = 1
 ysol = 0
-n = randint(3, 5)
-k = choice([3, 5])
+n = 3
+k = choice([3, 5, 7, 9])
 jxg.attributes =  {"showNavigation":False, "boundingbox":[-0.5,4,n+0.5,-4], "axis":False, "keepAspectRatio":False}
 jxg.setscript(script_init + "\n"+ script_aux, locals())
 ==
