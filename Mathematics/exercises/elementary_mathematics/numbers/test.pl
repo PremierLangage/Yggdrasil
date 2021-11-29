@@ -36,3 +36,7 @@ var board.update()
 script_solution ==
 board.create('point',[{{xsol}}, {{ysol}}],{name:'', color:'green'});
 ==
+
+inputblock ==
+
+==
