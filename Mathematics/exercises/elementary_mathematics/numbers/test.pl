@@ -4,7 +4,7 @@ before ==
 xsol = 1
 ysol = 0
 n = randint(3, 5)
-k = 
+k = choice([3, 5])
 jxg.attributes =  {"showNavigation":False, "boundingbox":[-0.5,4,n+0.5,-4], "axis":False, "keepAspectRatio":False}
 jxg.setscript(script_init + "\n"+ script_aux, locals())
 ==
