@@ -5,6 +5,7 @@ xsol = 1
 ysol = 0
 jxg.setscript(script_init + "\n"+ script_aux)
 ==
+jxg.attributes % {"showNavigation":false, "boundingbox":[-0.5,4,5.5,-4]}
 
 
 name = M
