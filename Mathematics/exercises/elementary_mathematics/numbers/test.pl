@@ -12,7 +12,7 @@ name = M
 question ==
 <link rel="stylesheet" type="text/css" href="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css" />
 <script type="text/javascript" src="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js"></script>
-<div id="jxgbox2" class="jxgbox" style="width:500px; height:600px;"></div>
+<div id="jxgbox2" class="jxgbox" style="width:500px; height:100px;"></div>
 <script type="text/javascript">
 var board2 = JXG.JSXGraph.initBoard('jxgbox', {boundingbox:[-1,4,5,-4], keepaspectratio: true, grid:true});
 var ax = board2.create('line', [[0,0],[1,0]]);
