@@ -5,7 +5,7 @@ xsol = 1
 ysol = 0
 jxg.setscript(script_init + "\n"+ script_aux)
 ==
-jxg.attributes % {"showNavigation":false, "boundingbox":[-0.5,4,5.5,-4], "axis":false, "keepaspectratio":false}
+jxg.attributes % {"showNavigation":false, "boundingbox":[-0.5,4,5.5,-4], "axis":false, "keepAspectRatio":false}
 
 
 name = M
@@ -41,6 +41,7 @@ style.jxgcss ==
 <style>
 .jsxgraph-component {
     width: 500px;
+    height: 100px;
     margin: 0 auto;
 }
 </style>
