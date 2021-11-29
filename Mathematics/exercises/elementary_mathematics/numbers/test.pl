@@ -16,9 +16,9 @@ question ==
 <script type="text/javascript">
 var board2 = JXG.JSXGraph.initBoard('jxgbox', {boundingbox:[-1,4,5,-4], keepaspectratio: true, grid:true});
 var ax = board2.create('line', [[0,0],[1,0]]);
-board.create('ticks',[ax, 5], {fixed:true, minorTicks:4, majorHeight:10, minorHeight:4});
-var M = board.create('glider', [1., 0., ax], {name:'M',color:'blue',fixed:false});
-board.update();
+board2.create('ticks',[ax, 5], {fixed:true, minorTicks:4, majorHeight:10, minorHeight:4});
+var M = board2.create('glider', [1., 0., ax], {name:'M',color:'blue',fixed:false});
+board2.update();
 </script>
 ==
 script_init ==
