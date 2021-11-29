@@ -18,6 +18,7 @@ var board = JXG.JSXGraph.initBoard('jxgbox', {boundingbox:[-1,1,5,-1], keepaspec
 </script>
 ==
 script_init ==
+var board = JXG.JSXGraph.initBoard('jxgbox', {boundingbox:[-1,1,5,-1], keepaspectratio: true, grid:true});
 var ax = board.create('line', [[0,0],[1,0]]);
 board.create('ticks',[ax, 5], {fixed:true, minorTicks:4, majorHeight:10, minorHeight:4});
 var M = board.create('glider', [1., 0., ax], {name:'M',color:'blue',fixed:false});
