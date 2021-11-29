@@ -10,7 +10,7 @@ elif k == 5:
 elif k == 7:
     c = choice([8, 8, 4, 4, 4, 2])
 b = randint(1, c-1)
-f = Rational(b, c)
+
 xsol = b/c
 ysol = 0
 
