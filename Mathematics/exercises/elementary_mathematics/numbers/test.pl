@@ -4,8 +4,9 @@ before ==
 xsol = 1
 ysol = 0
 n = randint(3, 5)
+k = 
 jxg.attributes =  {"showNavigation":False, "boundingbox":[-0.5,4,n+0.5,-4], "axis":False, "keepAspectRatio":False}
-jxg.setscript(script_init + "\n"+ script_aux)
+jxg.setscript(script_init + "\n"+ script_aux, locals())
 ==
 jxg3.attributes % {"showNavigation":false, "boundingbox":[-0.5,4,5.5,-4], "axis":false, "keepAspectRatio":false}
 
@@ -27,7 +28,7 @@ var M = board2.create('glider', [1., 0., ax], {name:'M',color:'blue',fixed:false
 
 script_init ==
 var ax = board.create('line', [[0,0],[1,0]], {fixed:true});
-board.create('ticks',[ax, 1], {label: {anchorX: 'middle', anchorY: 'top', fontSize: 12, offset: [0, 30]}, anchor : 0., drawZero: true, drawLabels:true, minorTicks:2, majorHeight:20, minorHeight:10});
+board.create('ticks',[ax, 1], {label: {anchorX: 'middle', anchorY: 'top', fontSize: 12, offset: [0, 30]}, anchor : 0., drawZero: true, drawLabels:true, minorTicks:{{ k }}, majorHeight:20, minorHeight:10});
 var M = board.create('glider', [1., 0., ax], {name:'M',color:'blue',fixed:false});
 ==
 
