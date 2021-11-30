@@ -1,4 +1,4 @@
-extends = /model/math.pl
+extends = /model/math/math.pl
 
 title = Paraboles
 
