@@ -7,8 +7,9 @@ d'outils extérieurs soit autorisé pour votre compte. Pour demander
 cette autorisation, adressez-vous à Etienne Sandier (sandier@u-pec.fr) 
 ou directement à Johann Nicod (johann.nicod@u-pec.fr).
 
-1.  Lorsque vous êtes dans un de vos cours, ajoutez une section qui ne soit pas visible pour les étudiants.
-Cliquez sur "commencer à modifier le cours".
+###  Lorsque vous êtes dans un de vos cours.
+Ajoutez une section qui ne soit pas visible pour les étudiants.
+Cliquez sur *commencer à modifier le cours*.
 
 Dans votre section invisible pour les étudiants, cliquez sur `Ajouter une activité ou ressource`.
 
