@@ -1,4 +1,4 @@
-extends = /droite_graduee_.pl
+extends = droite_graduee_.pl
 
 before ==
 n = 1
