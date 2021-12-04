@@ -29,5 +29,5 @@ jxg.setscript(script_init + "\n"+ script_aux, locals())
 name = M
 
 question ==
-Place le point $! M !$ d'abscisse $! \displaystyle {{a}} {{sg}} \frac{ {{b}} }{ {{c}} } !$.
+Place le point $! M !$ d'abscisse $! \displaystyle  \frac{ {{f1}} }{ {{c}} } !$.
 ==
