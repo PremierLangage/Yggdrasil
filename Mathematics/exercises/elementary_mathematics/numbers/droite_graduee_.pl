@@ -5,6 +5,7 @@ var ax = board.create('line', [[0,0],[1,0]], {fixed:true});
 board.create('ticks',[ax, 1], {label: {anchorX: 'middle', anchorY: 'top', fontSize: 12, offset: [0, 30]}, anchor : 0., drawZero: true, drawLabels:true, minorTicks:{{ k }}, majorHeight:20, minorHeight:10});
 var M = board.create('glider', [0., 0., ax], {name:'M',color:'blue',fixed:false, label: {anchorX: 'middle', anchorY: 'bottom', fontSize: 12, offset: [0, -30]}});
 ==
+name = M
 
 script_solution ==
 board.create('point',[{{xsol}}, {{ysol}}],{name:'', color:'green'});
