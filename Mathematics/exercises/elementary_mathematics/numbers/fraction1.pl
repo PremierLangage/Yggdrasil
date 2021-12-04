@@ -11,9 +11,7 @@ question ==
 Ecrire l'expression suivante sous la forme  $% \sqrt{a} %$, où $% a %$ est un entier.
 ==
 
-prefix ==
-$! {{ f|latex }} = !$
-==
+
 
 embed ==
 \frac{1}{1+\sqrt{#}}
