@@ -31,6 +31,6 @@ score, error = eval_expr(answers['math'], sol, checkratsimp=checkratsimp,equalit
 feedback = ""
 ==
 
-embed ==
+solution ==
 $$ {{f|latex}} = {{a|latex}} + {{ r|latex }} $$
 ==
