@@ -22,12 +22,12 @@ embed ==
 ==
 
 evaluator ==
-aa, bb = answers['math']
+aa, bb = "", ""
 if str(a) == aa and str(b) == bb:
     score = 100
 else:
     score = 0
-feedback = ""
+feedback = str(answers['math'])
 ==
 
 solution ==
