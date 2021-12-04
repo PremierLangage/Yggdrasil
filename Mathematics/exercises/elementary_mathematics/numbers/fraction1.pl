@@ -9,7 +9,7 @@ sol = 1
 ==
 
 question ==
-Ecrire la fraction suivante sous la forme d'une entier plus une fraction.
+Ecrire la fraction suivante sous la forme d'un entier plus une fraction.
 ==
 
 prefix ==
