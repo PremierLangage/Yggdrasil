@@ -17,5 +17,5 @@ $! {{ f|latex }} = !$
 ==
 
 embed ==
-\frac{1}{1+\sqrt{#}}
+# + \frac{ # }{1+\sqrt{#}}
 ==
