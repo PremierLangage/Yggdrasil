@@ -20,8 +20,7 @@ builder =@ /builder/before.py
 
 group =: RadioGroup
 
-url_phot =$ pedalier.jpg
-url_clip =$ tortues_ninjas.mp3
+url_clip =$ Titanuc.mp3
 
 author=Nicolas Borie
 
@@ -54,7 +53,6 @@ audio. Mais que dit madame Borie exactement ?
 
 <center>
 <div>
-<img src="{{ url_phot }}" style="width:40%" alt="les instruments de musiques de l'enfer"/><br>
 <audio controls>
   <source src="{{ url_clip }}" type="audio/mp3">
   Votre navigateur ne supporte pas la lecture du clip audio.
