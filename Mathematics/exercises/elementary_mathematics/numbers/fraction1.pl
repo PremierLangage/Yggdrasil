@@ -27,7 +27,6 @@ if str(a) == aa and str(b) == bb:
     score = 100
 else:
     score = 0
-score, error = eval_expr(answers['math'], sol, checkratsimp=checkratsimp,equality=equality, unauthorized_func=unauthorized_func, modulo=modulo, local_dict=sympify(symbol_dict))
 feedback = ""
 ==
 
