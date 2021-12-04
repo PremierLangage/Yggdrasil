@@ -2,14 +2,13 @@ extends = /model/jsxgraph/clickpoint.pl
 
 before ==
 n = randint(2, 5)
-k = choice([3, 5, 5, 7, 7])
-if k == 3:
-    c = choice([4, 4, 2])
-elif k == 5:
-    c = choice([6, 6, 3, 3, 3, 2])
-elif k == 7:
-    c = choice([8, 8, 4, 4, 4, 2])
+k = randint(2, 5)
+
+a = randint(1, n-1)
+c = k
 b = randint(1, c-1)
+f1 = a*c+b
+sol = 1
 
 xsol = b/c
 ysol = 0
