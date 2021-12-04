@@ -21,7 +21,7 @@ embed ==
 ==
 
 evaluator ==
-aa, bb = ianswers['math'].split(',')
+aa, bb = answers['math'].split(',')
 
 if str(a) == aa and str(b) == bb:
     score = 100
