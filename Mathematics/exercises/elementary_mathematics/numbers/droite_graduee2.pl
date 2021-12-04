@@ -2,10 +2,10 @@ extends = /model/jsxgraph/clickpoint.pl
 
 before ==
 n = randint(2, 5)
-k = randint(2, 5)
+k = randint(1, 4)
 
 a = randint(1, n-1)
-c = k
+c = k+1
 b = randint(1, c-1)
 
 if randint(0, 1) == 0:
