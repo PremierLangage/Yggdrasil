@@ -22,8 +22,6 @@ jxg.attributes =  {"showNavigation":False, "boundingbox":[-0.2,4,n+0.2,-4], "axi
 jxg.setscript(script_init + "\n"+ script_aux, locals())
 ==
 
-name = M
-
 question ==
 Place le point $! M !$ d'abscisse $! \displaystyle  \frac{ {{f1}} }{ {{c}} } !$.
 ==
