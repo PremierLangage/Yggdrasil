@@ -1,4 +1,5 @@
 extends = /model/math/math.pl
+title =
 
 before ==
 a = randint(1, 3)
