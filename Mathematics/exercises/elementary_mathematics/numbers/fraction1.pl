@@ -4,7 +4,7 @@ before ==
 a = randint(1, 3)
 c = randint(2, 6)
 b = randint(1, c-1)
-f = a + Rat(b, c)
+f = a + Rational(b, c)
 ==
 
 question ==
