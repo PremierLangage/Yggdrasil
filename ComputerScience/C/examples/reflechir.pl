@@ -51,7 +51,10 @@ Selectionnez-donc le titre et l'auteur original de cette oeuvre magistrale.
 
 <br>
 
+<center>
 <video width="320" height="240" controls><source src="{{ url_clip }}" type="video/MP4"></video>
+</center>
+
 
 ==
 
