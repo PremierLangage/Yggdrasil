@@ -22,9 +22,9 @@ embed ==
 ==
 
 evaluator ==
-aa = answers['math'][0]
-bb = answers['math'][1]
-if str(a) == aa and str(b) == bb:
+aa = int(answers['math'][0])
+bb = int(answers['math'][1])
+if a == aa and b == bb:
     score = 100
 else:
     score = 0
