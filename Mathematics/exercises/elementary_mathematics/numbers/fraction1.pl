@@ -8,7 +8,7 @@ f = a + Rational(b, c)
 ==
 
 question ==
-Ecrire l'expression suivante sous la forme  $% \sqrt{a} %$, où $% a %$ est un entier.
+Ecrire l'expression suivante sous la forme .
 ==
 
 
