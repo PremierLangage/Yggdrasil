@@ -8,9 +8,8 @@ a = randint(1, n-1)
 c = k
 b = randint(1, c-1)
 f1 = a*c+b
-sol = 1
 
-xsol = b/c
+xsol = f1/c
 ysol = 0
 
 jxg.attributes =  {"showNavigation":False, "boundingbox":[-0.2,4,n+0.2,-4], "axis":False, "keepAspectRatio":False}
