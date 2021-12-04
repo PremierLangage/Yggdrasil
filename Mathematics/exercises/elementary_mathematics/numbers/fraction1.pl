@@ -25,8 +25,8 @@ aa, bb = answers['math'].split(',')
 
 if str(a) == aa and str(b) == bb:
     score = 100
-    feedback = "Mauvaise réponse !"
 else:
+    feedback = "Mauvaise réponse !"
     score = 0
 ==
 
