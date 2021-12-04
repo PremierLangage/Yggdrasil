@@ -4,8 +4,7 @@ before ==
 a = randint(1, 3)
 c = randint(2, 6)
 b = randint(1, c-1)
-r = Rational(b, c)
-f = a + r
+f1 = a*c+b
 sol = 1
 ==
 
@@ -14,7 +13,7 @@ Ecrire la fraction suivante sous la forme d'un entier plus une fraction.
 ==
 
 prefix ==
-$! \displaystyle {{ f|latex }} = !$
+$! \displaystyle \frac{ {{f1}} }{ {{c}} }= !$
 ==
 
 embed ==
@@ -22,9 +21,9 @@ embed ==
 ==
 
 evaluator ==
-aa = int(answers['math'][0])
-bb = int(answers['math'][1])
-if a == aa and b == bb:
+aa, bb = ianswers['math'].split(',')
+
+if str(a) == aa and str(b) == bb:
     score = 100
 else:
     score = 0
@@ -32,5 +31,5 @@ feedback = str(answers['math'])
 ==
 
 solution ==
-$$ {{f|latex}} = {{a|latex}} + {{ r|latex }} $$
+$$ \frac{ {{f1}} }{ {{c}} } = {{a}} + \frac{ {{b}} }{ {{c}} } $$
 ==
