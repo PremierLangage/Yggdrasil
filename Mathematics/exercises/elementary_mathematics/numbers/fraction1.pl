@@ -13,7 +13,7 @@ Ecrire l'expression suivante sous la forme .
 ==
 
 prefix ==
-$! {{ f|latex }} = !$
+$! \displaystyle {{ f|latex }} = !$
 ==
 
 embed ==
