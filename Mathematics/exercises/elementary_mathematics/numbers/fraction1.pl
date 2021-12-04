@@ -1,4 +1,4 @@
-extends = /model/math/expr.pl
+extends = /model/math/math.pl
 
 before ==
 a = randint(1, 3)
