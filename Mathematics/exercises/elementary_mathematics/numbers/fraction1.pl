@@ -22,7 +22,8 @@ embed ==
 ==
 
 evaluator ==
-aa, bb = "", ""
+aa = answers['math'][0]
+bb = answers['math'][1]
 if str(a) == aa and str(b) == bb:
     score = 100
 else:
