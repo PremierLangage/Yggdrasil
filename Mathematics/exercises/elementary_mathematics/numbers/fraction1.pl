@@ -17,5 +17,5 @@ $! \displaystyle {{ f|latex }} = !$
 ==
 
 embed ==
-# + \frac{ # }{1+\sqrt{#}}
+# + \frac{ # }{ {{c}} }
 ==
