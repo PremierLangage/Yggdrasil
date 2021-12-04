@@ -44,14 +44,14 @@ random.shuffle(group.items)
 
 title=Reprise d'un tube gigantesque
 
-text==
+text==#|markdown|
 Un artiste, souhaitant rester anonyme, vous propose le clip suivant
 dans lequel il propose une reprise d'une chanson d'une profondeur saisissante. 
 Selectionnez-donc le titre et l'auteur original de cette oeuvre magistrale.
 
 <br>
 
-<video controls><source src="{{ url_clip }}" type="video/MP4"></video>
+<video width="320" height="240" controls><source src="{{ url_clip }}" type="video/MP4"></video>
 
 ==
 
