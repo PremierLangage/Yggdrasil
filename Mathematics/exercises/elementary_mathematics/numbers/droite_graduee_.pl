@@ -1,6 +1,4 @@
-
-
-
+extends = /model/jsxgraph/clickpoint.pl
 
 script_init ==
 var ax = board.create('line', [[0,0],[1,0]], {fixed:true});
