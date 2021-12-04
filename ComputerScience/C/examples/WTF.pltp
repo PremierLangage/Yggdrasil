@@ -22,7 +22,9 @@ tag=humour
 introduction==
 Ce PLTP est une présentation rapides des possibles avec des images, des pistes audios
 ou encore des vidéos incrustés dans les exercices PLaTus. Tout le savoir faire des 
-enseignants éditeurs est concentré dans ces exercices. L'enseignement avant tout !
+enseignants éditeurs est concentré dans ces exercices. L'enseignement avant tout, 
+ces expériences ont été réalisées par des proffesionnels. Nous vous prions ne pas 
+tenter de les reproduire chez vous.
 
 
 ==
@@ -35,3 +37,4 @@ enseignants éditeurs est concentré dans ces exercices. L'enseignement avant to
 @ /ComputerScience/C/examples/barbe.pl
 @ /ComputerScience/C/examples/le_cercueil.pl
 @ /ComputerScience/C/examples/reflechir.pl
+@ /ComputerScience/C/examples/titanic.pl
