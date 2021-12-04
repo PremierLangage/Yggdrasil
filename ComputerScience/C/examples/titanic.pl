@@ -33,21 +33,22 @@ import random
 
 group.items = []
 R = 'y1'
-group.items.append({"id": "n1", "content": "J'en peux plus le confinement avec toi."})
-group.items.append({"id": "n2", "content": "Je préfère boumbo, petite automobile."})
-group.items.append({"id": "n3", "content": "Pourquoi le père noël a ramené ce pédalier multi-effets pour guitare electrique?"})
-group.items.append({"id": "n4", "content": "Ce soir, tu dors dehors si ça continue."})
-group.items.append({"id": R, "content": "Tortues ninja, ça suffit maintenant!"})
+group.items.append({"id": "n1", "content": "Inception de Christopher Nolan"})
+group.items.append({"id": "n2", "content": "Forrest Gump de Robert Zemeckis"})
+group.items.append({"id": "n3", "content": "Fight Club de David Fincher"})
+group.items.append({"id": "n4", "content": "Plup Fiction de Quentin Tarantino"})
+group.items.append({"id": R, "content": "Titanic de James Cameron"})
 
 # shuffle the items
 random.shuffle(group.items)
 ==
 
-title=Écoute attentive d'un clip audio
+title=Le septième art
 
 text==#|markdown|
-On entend Madame Borie ouvrir une porte puis dire quelque chose durant ce clip 
-audio. Mais que dit madame Borie exactement ? 
+Une bande sonore produite par un interpète de remonnée mondiale du monde de Marne-La-Vallée
+vous présente ici une version très largement améliorée d'une bande sonore d'un célèbre film.
+Sauriez-vous identifer le film original qui a inspiré cette douce musique ?
 
 <br>
 
