@@ -1,0 +1,30 @@
+#*****************************************************************************
+#  Copyright (C) 2021 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+author=Nicolas Borie
+
+title=Le pltp WTF 
+tag=humour
+
+introduction==
+Ce PLTP est une présentation rapides des possibles avec des images, des pistes audios
+ou encore des vidéos incrustés dans les exercices PLaTus. Tout le savoir faire des 
+enseignants éditeurs est concentré dans ces exercices. L'enseignement avant tout, 
+ces expériences ont été réalisées par des proffesionnels. Nous vous prions ne pas 
+tenter de les reproduire chez vous.
+
+
+==
