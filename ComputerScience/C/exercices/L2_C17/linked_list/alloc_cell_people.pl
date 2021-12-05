@@ -18,25 +18,20 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Nicolas Borie
 
-title=Deux chaînes à allouer et recopier dans une structure
+title=Allouer des cellules pour des personnes
 
-tag=string|malloc|structure|recopiage
+tag=string|malloc|structure|recopiage|cellule|liste
 
 editor.height=350px
 
 text==#|markdown|
-Écrire une fonction **initialize_people** qui prend en argument l'adresse 
-d'une structure **People** ainsi que deux chaînes de caractères. Votre
-fonction devra allouer dynamiquement la place mémoire nécessaire pour 
+Écrire une fonction **allocate_cell** qui prend en argument deux chaînes 
+de caractères ainsi qu'un entier. Votre
+fonction devra allouer dynamiquement la place mémoire nécessaire pour fabriquer une
+nouvelle cellule **Cell** ainsi que pour 
 contenir une copie des deux chaines de caractères en argument. Votre fonction devra
 finalement recopier intégralement les deux chaînes dans les deux champs
 fraichement alloués. 
-
-<br>
-
-Inutile d'allouer la structure **People**, le pointeur fourni en argument
-pointe déjà vers une structure **People** valide, vous devrez travailler sur
-les champs de la structure pointée qui eux ne sont absolument pas initialisés.
 
 
 ==
