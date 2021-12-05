@@ -16,15 +16,12 @@
 
 author=Nicolas Borie
 
-title=Le pltp WTF 
-tag=humour
+title=Listes chaînées de personnes en C
+tag=chaînage|indirection
 
-introduction==
-Ce PLTP est une présentation rapides des possibles avec des images, des pistes audios
-ou encore des vidéos incrustés dans les exercices PLaTus. Tout le savoir faire des 
-enseignants éditeurs est concentré dans ces exercices. L'enseignement avant tout, 
-ces expériences ont été réalisées par des proffesionnels. Nous vous prions ne pas 
-tenter de les reproduire chez vous.
+introduction==#|markdown|
+Cette fiche d'exercices vous propose des exercices sur le thème des listes chaînées
+et en particulier ici, des listes chaînées avec des personnes.
 
 
 ==
