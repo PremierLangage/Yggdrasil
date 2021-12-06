@@ -31,7 +31,7 @@ style.jxgcss ==
 <style>
 .jsxgraph-component {
   height:0;
-  padding-bottom: 33.33%
+  padding-bottom: 10%
 }
 </style>
 ==
