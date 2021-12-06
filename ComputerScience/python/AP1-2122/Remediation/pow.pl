@@ -14,12 +14,12 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 
 text==
-Ecrivez une fonction pow qui prend deux paramêtres $%x , y%$ et retourne $%x^y%$ 
+Ecrivez une fonction pow qui prend deux paramêtres $%x , y%$ et retourne {{function}}
 ==
 before==
 import random 
 fname,function, lamb = random.choice([
-["pow","s", lambda x,y:x**y],
+["pow","$%x^y%$", lambda x,y:x**y],
 ])
 
 
