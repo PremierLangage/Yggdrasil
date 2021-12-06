@@ -13,7 +13,7 @@ flag = flags[indsol]
 
 question ==
 A quel pays appartient ce drapeau ?
-<img src="{{ flag }}">
+<img class="w100" src="{{ flag }}">
 ==
 
 items ==
