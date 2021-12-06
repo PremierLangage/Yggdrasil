@@ -114,7 +114,7 @@ astuces==#|python|
 [
   { "content": """Pour préparer toute la mémoire, il faudra faire 3 appels à `malloc`. Il faut ainsi tout d'abord allouer la cellule puis allouer deux zones de taille adaptée pour chacune des chaînes à recopier."""},
   { "content": """Une stratégie raisonnable consiste à utiliser les fonctions suivantes : `strlen`, `malloc` puis `strcpy`."""},
-  { "content": """Pour allouer la bonne quantité de mémoire pour une chaîne `s` il faut demander `(strlen(s) + 1)*sizeof(char)` octets. Sans le `+1`, il manquerait de la place pour recopier le `\0`."""},
+  { "content": """Pour allouer la bonne quantité de mémoire pour une chaîne `s` il faut demander `(strlen(s) + 1)*sizeof(char)` octets. Sans le `+1`, il manquerait de la place pour recopier le `\\0`."""},
 ]
 ==
 
