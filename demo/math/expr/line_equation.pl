@@ -2,7 +2,7 @@ extends = /model/math/expr.pl
 
 before ==
 import os
-os.environ['MPLCONFIGDIR'] = os.getcwd() + "/configs/"
+os.environ['MPLCONFIGDIR'] = os.getcwd()
 from mplsympy import plotsvg, fig2svg, plot2svg
 from sympy.plotting import plot
 import matplotlib.ticker as ticker
