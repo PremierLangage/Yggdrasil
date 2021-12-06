@@ -30,8 +30,8 @@ de caractères ainsi qu'un entier. Votre
 fonction devra allouer dynamiquement la place mémoire nécessaire pour fabriquer une
 nouvelle cellule **Cell** ainsi que pour 
 contenir une copie des deux chaines de caractères en argument. Votre fonction devra
-finalement recopier intégralement les deux chaînes dans les deux champs
-fraichement alloués. 
+finalement recopier intégralement les deux chaînes au bout des les deux champs
+eux aussi fraichement alloués. 
 
 
 ==
@@ -40,12 +40,14 @@ editor.code==#|c|
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct{
-  char* first;
-  char* last;
-}People;
+typedef struct cell{
+  char* first_name;
+  char* last_name;
+  int age;
+  struct cell* next;
+}Cell;
 
-int initialize_people(People* p, char* first_name, char* last_name){
+Cell* allocate_cell(char* first_name, char* last_name, int age){
   // Votre code ici...
 }
 ==
@@ -56,10 +58,12 @@ solution==#|c|
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct{
-  char* first;
-  char* last;
-}People;
+typedef struct cell{
+  char* first_name;
+  char* last_name;
+  int age;
+  struct cell* next;
+}Cell;
 
 int initialize_people(People* p, char* first_name, char* last_name){
     p->first = strdup(first_name);
