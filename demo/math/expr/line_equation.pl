@@ -1,7 +1,7 @@
 extends = /model/math/expr.pl
 
 before ==
-from mplsympy import plotsvg, fig2svg, plot2fig
+from mplsympy import plotsvg, fig2svg, plot2svg
 from sympy.plotting import plot
 import matplotlib.ticker as ticker
 var('x')
