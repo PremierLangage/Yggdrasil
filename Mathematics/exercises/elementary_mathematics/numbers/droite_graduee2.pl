@@ -27,4 +27,3 @@ name = M
 question ==
 Place le point $! M !$ d'abscisse $! \displaystyle {{a}} {{sg}} \frac{ {{b}} }{ {{c}} } !$.
 ==
-
