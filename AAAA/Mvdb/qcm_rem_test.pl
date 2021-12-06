@@ -24,6 +24,9 @@ questions==
 -La valeur x = 2.0 va faire afficher "Plus petit que 2"
 +Ce code ne va jamais provoquer l’affichage de Affiche quelque chose, peu importe la valeur de x.
 
+==
+beurk==
+
 **Dans la liste suivante, sélectionner les chaines de caractères valide.
 -’Mon nom est "Personne" 
 -”’bonjour”’
