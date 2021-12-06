@@ -28,7 +28,7 @@ fname,function, lamb = random.choice([
 p=random.randint(23,77)
 pltest0= f""">>> {fname}({p})\n{lamb(p)}\n"""
 p+=17
-pltest1= f""">>> {fname}({p}) - {lamb(p)} <0.1\n"""# Hidden value test\nTrue\n"""
+pltest1= f""">>> {fname}({p}) - {lamb(p)} <0.1\n# Hidden value test\nTrue\n"""
 
 ==
 
