@@ -14,7 +14,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 
 text==
-Ecrivez une fonction pow qui prend deux paramêtres $%x , y%$ et retourne $$x^y$$ 
+Ecrivez une fonction pow qui prend deux paramêtres $%x , y%$ et retourne $%x^y%$ 
 ==
 before==
 import random 
