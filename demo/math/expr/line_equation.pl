@@ -10,7 +10,7 @@ b = randint(-3, 3)
 sol = a*x + b
 xlim = (-5, 5)
 ylim = (-5, 5)
-fig = plot2fig(sol, (x,-5,5))._backend.fig
+fig = plot2fig(sol, x,-5,5)
 ax = fig.gca()
 ax.grid(True)
 ax.set_xlim(*xlim)
