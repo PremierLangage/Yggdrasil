@@ -13,9 +13,7 @@ flag = flags[indsol]
 
 question ==
 A quel pays appartient ce drapeau ?
-<div class="center w40">
 <img src="{{ flag }}">
-</div>
 Coucou
 ==
 
