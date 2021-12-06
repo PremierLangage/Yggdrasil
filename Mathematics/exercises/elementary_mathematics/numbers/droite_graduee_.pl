@@ -26,3 +26,12 @@ style.jxgcss ==
 }
 </style>
 ==
+
+style.jxgcss ==
+<style>
+.jsxgraph-component {
+    width: 100vw;
+    margin: 0 auto;
+}
+</style>
+==
