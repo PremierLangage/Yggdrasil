@@ -11,13 +11,14 @@ questions==
 
 
 **Sélectionner parmi les affirmations suivantes, celle(s) qui s’applique au code suivant :
+[verbatim]
         if x < 2:
             print(’Plus petit que 2’)
         elif x >= 2:
             print(’Plus grand que 2’)
         else:
             print(’Affiche quelque chose’)
-
+[/verbatim]
 -La valeur x = 2 va faire afficher "Plus petit que 2"
 +La valeur x = 2.0 va faire afficher "Plus grand que 2"
 -La valeur x = 2.0 va faire afficher "Plus petit que 2"
@@ -74,6 +75,7 @@ questions==
 + 2==’2’
 
 *Considérons le programme suivant :
+[verbatim]
 a = 10
 if a < 5:
     a = 20
@@ -83,6 +85,7 @@ elif a < 1000:
     a=1 
 else:
     a=0
+[/verbatim]
 Que vaut a à l’issue de son exécution ?
 
 +500 
@@ -98,11 +101,15 @@ Que vaut a à l’issue de son exécution ?
 -if i == 2 and (i >= 5 and i <= 6) or (i >= 15 and i <= 16):
 -if i == 2 and i >= 5 and i <= 6 and i >= 15 and i <= 16:
 
+*([shuffle=false,
+
 *Le programme suivant simule le lancer d’un dé. Malheureusement, ses lignes ont été mélangées...
+[verbatim]
 1 x = randint(min, max)
 2 min, max = 1, 6
 3 from random import randint
 4 print(x)
+[/verbatim]
 Il s’agit de remettre le code dans l’ordre...
 La première ligne du programme correspond à la ligne du programme précédent numérotée
 -1 
@@ -111,10 +118,12 @@ La première ligne du programme correspond à la ligne du programme précédent 
 -4
 
 *Le programme suivant simule le lancer d’un dé. Malheureusement, ses lignes ont été mélangées...
+[verbatim]
 1 x = randint(min, max)
 2 min, max = 1, 6
 3 from random import randint
-4 print(x)
+4 print(x``
+[/verbatim]
 Il s’agit de remettre le code dans l’ordre...
 La seconde ligne du programme correspond à la ligne du programme précédent numérotée
 
@@ -124,10 +133,12 @@ La seconde ligne du programme correspond à la ligne du programme précédent nu
 -4
 
 *Le programme suivant simule le lancer d’un dé. Malheureusement, ses lignes ont été mélangées...
+[verbatim]
 1 x = randint(min, max)
 2 min, max = 1, 6
 3 from random import randint
-4 print(x)
+4 print(x``
+[/verbatim]
 Il s’agit de remettre le code dans l’ordre...
 La troisème ligne du programme correspond à la ligne du programme précédent numérotée
 +1 
@@ -136,10 +147,12 @@ La troisème ligne du programme correspond à la ligne du programme précédent 
 -4
 
 *Le programme suivant simule le lancer d’un dé. Malheureusement, ses lignes ont été mélangées...
+[verbatim]
 1 x = randint(min, max)
 2 min, max = 1, 6
 3 from random import randint
-4 print(x)
+4 print(x``
+[/verbatim]
 Il s’agit de remettre le code dans l’ordre...
 La dernière ligne du programme correspond à la ligne du programme précédent numérotée
 -1 
@@ -147,7 +160,10 @@ La dernière ligne du programme correspond à la ligne du programme précédent 
 -3
 +4
 
+*)
+
 **L’affichage suivant est réalisé par un appel print. Sélectionner le ou les appels qui l’a produit.
+                                
                                 hello-how-are-you
 +print(’hello-’ + ’how-are-you’)
 +print(’hello’ + ’-’ + ’how’ + ’-’ + ’are’ + ’-’ + ’you’) 
@@ -156,7 +172,8 @@ La dernière ligne du programme correspond à la ligne du programme précédent 
 -print(’hello’, ’-’, ’how’, ’-’, ’are’, ’-’, ’you’)    
 
 
-**Pour quelles valeurs de a et b cette expression renvoit-elle True ? 
+**Pour quelles valeurs de a et b cette expression renvoit-elle True ?
+
 a >= 4 and a < 12 and (b >= 12 or b < 10)
 +a = 11, b = 15 
 -a = 12, b = 10 
@@ -165,13 +182,16 @@ a >= 4 and a < 12 and (b >= 12 or b < 10)
 
 
 *Qu’affiche le programme suivant lors de son execution ? 
+[verbatim]
 a = "4 * 5"
 print(a)
+[/verbatim]
 -20 
 -20.0 
 +4*5
 
 **Le programme suivant contient des erreurs.
+[verbatim]
 1  import randint from random  
 2  x = randint(1, 6)   
 3  if x%2==0: 
@@ -182,7 +202,8 @@ print(a)
 8  if x==y:
 9     print("Bravo")
 10 else:
-11    print("Pas de chance... Retentez !")
+11    print("Pas de chance... Retentez !"``
+[/verbatim]
 
 A quelles lignes se trouvent-elles ?
 
@@ -201,7 +222,9 @@ A quelles lignes se trouvent-elles ?
 
 
 *Supposons que la variable x ait été initialisée comme étant un entier (e.g x = 3). Que fait le programme suivant ?
+
 x=x+2
+
 -Il crée une fonction nommée x et met 2 dans cette fonction.
 -Il renvoie False.
 -Cela fait quitter le programme.
