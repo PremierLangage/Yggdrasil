@@ -12,12 +12,12 @@ questions==
 
 **Sélectionner parmi les affirmations suivantes, celle(s) qui s’applique au code suivant :
 
-        if x < 2:  
-            print(’Plus petit que 2’)   
-        elif x >= 2:  
-            print(’Plus grand que 2’)  
-        else:  
-            print(’Affiche quelque chose’)   
+        if x < 2:  <br/>
+            print(’Plus petit que 2’)    <br/>
+        elif x >= 2:   <br/>
+            print(’Plus grand que 2’)   <br/>
+        else:   <br/>
+            print(’Affiche quelque chose’)    <br/>
 
 -La valeur x = 2 va faire afficher "Plus petit que 2"
 +La valeur x = 2.0 va faire afficher "Plus grand que 2"
