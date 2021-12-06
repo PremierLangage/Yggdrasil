@@ -72,7 +72,7 @@ Cell* allocate_cell(char* first_name, char* last_name, int age){
     n->first_name = strdup(first_name);
     n->last_name = strdup(last_name);
     n->age = age;
-    return (n->first_name != NULL) && (n->last_name != NULL);
+    return n;
 }
 ==
 
