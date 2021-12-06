@@ -11,7 +11,7 @@ image = plotsvg(sol)
 
 question ==
 Déterminer l'équation de la droite tracée ci-dessous (en notant $! x !$ la variable d'abscisse et $! y !$ la variable d'ordonnée).
-<div class="img img-60">
+<div class="img w60">
 {{ image }}
 </div>
 ==
