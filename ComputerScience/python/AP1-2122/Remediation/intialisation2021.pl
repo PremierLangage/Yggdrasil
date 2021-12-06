@@ -25,7 +25,7 @@ random.seed(seed)
 type_var = random.choice(["int","str","float","bool",None])
 var = random.choice(["a", "b", "c", "X", "Y","PIERRE","feuille","ciseaux"])
 
-pltest1= f"""
+pltest0= f"""
 >>> "{var}" in globals() # La variable {var} est elle d&eaccute;finie ?
 True
 """
