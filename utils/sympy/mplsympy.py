@@ -32,7 +32,8 @@ def plotsvg(expr, xlim=(-5,5), ylim=(-5,5) ):
     return fig2svg(fig)
 
 def plot2svg(p, xlim=(-5,5), ylim=(-5,5)):
-    fig = p._backend.fig
+    x = symbols('x')
+    fig = plot(x,x,-3,1)._backend.fig
     ax = fig.gca()
     ax.grid(True)
     ax.set_xlim(*xlim)
