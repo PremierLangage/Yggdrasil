@@ -8,7 +8,8 @@ var('x')
 a = choice([-1, 1]) * choice([Rational(1, 2), 1, Rational(3, 2), 2])
 b = randint(-3, 3)
 sol = a*x + b
-
+xlim = (-5, 5)
+ylim = (-5, 5)
 fig = plot(sol, (x,-5,5))._backend.fig
 ax = fig.gca()
 ax.grid(True)
