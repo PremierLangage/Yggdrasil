@@ -14,11 +14,13 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-title= Nombre de cellules d'une liste
-tag=Liste|Pointeur|Iteration|ParcoursListe
+extends=/ComputerScience/C/template/std_progC17_clang.pl
 
-extends=/ComputerScience/C/template/stdsandboxC.pl
+author=Nicolas Borie
 
+title=Nombre de cellules dans une liste
+
+tag=Liste|Pointeur|Iteration|Parcours
 
 
 text==  
