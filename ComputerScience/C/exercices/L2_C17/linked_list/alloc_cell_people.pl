@@ -85,7 +85,6 @@ code_after==#|c|
 #include <time.h>
 
 int main(int argc, char* argv[]){
-  People p;
   Cell* c;
   int i;
   
