@@ -14,7 +14,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 
 text==
-Ecrivez une fonction pow qui  prend deux paramêtres $$x , y$$ et retourne $$x^y$$ 
+Ecrivez une fonction pow qui prend deux paramêtres $x , y$ et retourne $$x^y$$ 
 ==
 before==
 import random 
@@ -28,7 +28,7 @@ fname,function, lamb = random.choice([
 p=random.randint(23,77)
 pltest0= f""">>> {fname}({p},5)\n{lamb(p,5)}\n"""
 p+=17
-pltest1= f""">>> {fname}({p},4) - {lamb(p,4)} <0.1 # Hidden value test\nTrue\n"""
+pltest1= f""">>> {fname}({p},4) - {lamb(p,4)} <0.1 # Test : valeur cach&#233;\nTrue\n"""
 
 ==
 
