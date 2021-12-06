@@ -30,7 +30,7 @@ style2.jxgcss ==
 style.jxgcss ==
 <style>
 .jsxgraph-component {
-    width: 100%;
+    width: calc(100vw);
     height: 100px;
     margin: 0 auto;
 }
