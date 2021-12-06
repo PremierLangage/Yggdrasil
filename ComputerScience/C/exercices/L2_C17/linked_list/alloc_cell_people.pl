@@ -91,9 +91,9 @@ int main(int argc, char* argv[]){
   
   for (i=1 ; i+2<argc ; i+=3){
     c = allocate_cell(argv[i], argv[i+1], atoi(argv[i+2]));
-    printf("Init %s %s\n", p.first, p.last);
+    printf("Cellule %s %s age : %d\n", c->first_name, c->last_name, c->age);
     free(c->first_name);
-    free(p.last);
+    free(c->last_name);
     free(c);
   }
 
@@ -102,12 +102,10 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[["Exécution simple", ["Pierre", "Paul", "Jacques"], ""],
- ["Chaînes vides", ["", ""], ""],
- ["Long prénom", ["Son prénom est si long que ça, incroyable !", "Ouais"], ""],
- ["Test aléatoire 1", ["".join([chr(ord('a')+randint(0, 25)) for i in range(randint(3, 20))]) for k in range(2)], ""],
- ["Test aléatoire 2", ["".join([chr(ord('a')+randint(0, 25)) for i in range(randint(3, 20))]) for k in range(2)], ""],
- ["Test aléatoire 3", ["".join([chr(ord('a')+randint(0, 25)) for i in range(randint(3, 20))]) for k in range(2)], ""]]
+[["Exécution simple", ["Pierre", "Martin", "12"], ""],
+ ["Chaînes vides", ["", "", "20"], ""],
+ ["Long prénom", ["Son prénom est si long que ça, incroyable !", "Ouais"], "243"],
+ ["Test aléatoire 1", [choice([""]), choice([""]), str(randint(1, 100))], ""]]
 ==
 
 astuces==#|python|
