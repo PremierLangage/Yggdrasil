@@ -17,6 +17,9 @@ before==
 import random 
 fname,function, lamb = random.choice([
 ["Carre","le carré", lambda x:x**2],
+["Cube","le cube", lambda x:x**3],
+["P4","la puissance quatrième", lambda x:x**4],
+["racine","la racine carrée", lambda x:x**(1/2)],
 ])
 
 
