@@ -45,7 +45,7 @@ typedef struct cell{
   char* last_name;
   int age;
   struct cell* next;
-}Cell;
+}Cell, *List;
 
 Cell* allocate_cell(char* first_name, char* last_name, int age){
   // Votre code ici...
@@ -63,12 +63,16 @@ typedef struct cell{
   char* last_name;
   int age;
   struct cell* next;
-}Cell;
+}Cell, *List;
 
-int initialize_people(People* p, char* first_name, char* last_name){
-    p->first = strdup(first_name);
-    p->last = strdup(last_name);
-    return (p->first != NULL) && (p->last != NULL);
+Cell* allocate_cell(char* first_name, char* last_name, int age){
+    Cell* n = (Cell*)malloc(sizeof(Cell))
+    if (n == NULL)
+      return NULL;
+    n->first = strdup(first_name);
+    n->last = strdup(last_name);
+    n->age = age;
+    return (n->first != NULL) && (n->last != NULL);
 }
 ==
 
