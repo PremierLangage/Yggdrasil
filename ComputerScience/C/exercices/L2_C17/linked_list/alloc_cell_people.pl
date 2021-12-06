@@ -69,10 +69,10 @@ Cell* allocate_cell(char* first_name, char* last_name, int age){
     Cell* n = (Cell*)malloc(sizeof(Cell))
     if (n == NULL)
       return NULL;
-    n->first = strdup(first_name);
-    n->last = strdup(last_name);
+    n->first_name = strdup(first_name);
+    n->last_name = strdup(last_name);
     n->age = age;
-    return (n->first != NULL) && (n->last != NULL);
+    return (n->first_name != NULL) && (n->last_name != NULL);
 }
 ==
 
@@ -86,12 +86,17 @@ code_after==#|c|
 
 int main(int argc, char* argv[]){
   People p;
+  Cell* c;
+  int i;
+  
+  for (i=1 ; i+2<argc ; i+=3){
+    c = allocate_cell(argv[i], argv[i+1], atoi(argv[i+2]));
+    printf("Init %s %s\n", p.first, p.last);
+    free(c->first_name);
+    free(p.last);
+    free(c);
+  }
 
-  initialize_people(&p, argv[1], argv[2]);
-  printf("Init %s %s\n", p.first, p.last);
-
-  free(p.first);
-  free(p.last);
   return 0;
 }
 ==
