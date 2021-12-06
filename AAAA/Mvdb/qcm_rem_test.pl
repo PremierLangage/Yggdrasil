@@ -10,7 +10,7 @@ onepergroup % true
 questions==
 
 
-*Sélectionner parmi les affirmations suivantes, celle(s) qui s’applique au code suivant :
+**Sélectionner parmi les affirmations suivantes, celle(s) qui s’applique au code suivant :
         if x < 2:
             print(’Plus petit que 2’)
         elif x >= 2:
@@ -23,7 +23,7 @@ questions==
 -La valeur x = 2.0 va faire afficher "Plus petit que 2"
 +Ce code ne va jamais provoquer l’affichage de Affiche quelque chose, peu importe la valeur de x.
 
-*Dans la liste suivante, sélectionner les chaines de caractères valide.
+**Dans la liste suivante, sélectionner les chaines de caractères valide.
 -’Mon nom est "Personne" 
 -”’bonjour”’
 -"King"s Landing"
@@ -44,7 +44,7 @@ questions==
 -2
 -4.2
 
-*Le type booléen existe-t-il en Python ? Si oui, quelle valeur contient Faux ?
+**Le type booléen existe-t-il en Python ? Si oui, quelle valeur contient Faux ?
 - Le type booléen n'existe pas en Python
 + Le type booléen existe en Python
 - True 
@@ -61,7 +61,7 @@ questions==
 - false
 
 
-*Parmi les comparaisons et tests d’égalités suivant, lesquels sont faux ?
+**Parmi les comparaisons et tests d’égalités suivant, lesquels sont faux ?
 - 1<4.0
 + 2!=2.0
 - 3<2
