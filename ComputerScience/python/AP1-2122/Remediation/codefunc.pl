@@ -14,11 +14,14 @@ text==
 Ecrivez une fonction {{fname}} qui retourne {{function}} de son paramêtre
 ==
 before==
-
-fname,function, lamb = ["Carre","le carré", lambda x:x**2]
-
-
 import random 
+fname,function, lamb = random.choice([
+["Carre","le carré", lambda x:x**2],
+])
+
+
+
+
 p=random.randint(23,77)
 pltest0= f""">>> {fname}({p})\n{lamb(p)}\n"""
 p+=17
