@@ -34,7 +34,7 @@ def plotsvg(expr, xlim=(-5,5), ylim=(-5,5) ):
 def plot2svg(p, xlim=(-5,5), ylim=(-5,5)):
     x = symbols('x')
     p = plot((x**2, (x, 0, 3)), (x, (x, -5, 5)))
-    p[1].color = 'green'
+    p[1].line_color = 'green'
     fig = p._backend.fig
     ax = fig.gca()
     ax.grid(True)
