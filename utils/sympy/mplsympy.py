@@ -47,3 +47,6 @@ def plot2svg(p, xlim=(-5,5), ylim=(-5,5)):
     ax.set_xlabel('')
     ax.set_ylabel('')
     return fig2svg(fig)
+
+def plot2(a, b):
+    return plot(a, b)
