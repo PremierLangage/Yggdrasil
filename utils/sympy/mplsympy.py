@@ -36,16 +36,6 @@ def plot2svg(p, xlim=(-5,5), ylim=(-5,5)):
     p = plot((x**2, (x, 0, 3)), (x, (x, -5, 5)))
     p[1].line_color = 'red'
     fig = p._backend.fig
-    ax = fig.gca()
-    ax.grid(True)
-    ax.set_xlim(*xlim)
-    ax.set_ylim(*ylim)
-    ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
-    ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
-    #ax.xaxis.set_major_locator(ticker.MaxNLocator(integer=True))
-    #ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
-    ax.set_xlabel('')
-    ax.set_ylabel('')
     return fig2svg(fig)
 
 def plot2(a, b):
