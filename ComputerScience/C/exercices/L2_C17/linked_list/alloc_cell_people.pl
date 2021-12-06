@@ -66,7 +66,7 @@ typedef struct cell{
 }Cell, *List;
 
 Cell* allocate_cell(char* first_name, char* last_name, int age){
-    Cell* n = (Cell*)malloc(sizeof(Cell))
+    Cell* n = (Cell*)malloc(sizeof(Cell));
     if (n == NULL)
       return NULL;
     n->first_name = strdup(first_name);
