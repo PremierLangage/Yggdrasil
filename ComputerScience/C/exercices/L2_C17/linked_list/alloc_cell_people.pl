@@ -103,7 +103,7 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [["Exécution simple", ["Pierre", "Martin", "12"], ""],
  ["Chaînes vides", ["", "", "20"], ""],
- ["Long prénom", ["Son prénom est si long que ça, incroyable !", "Ouais"], "243"],
+ ["Long prénom", ["Son prénom est si long que ça, incroyable !", "Ouais", "243"], ""],
  ["Test aléatoire 1", [choice([""]), choice([""]), str(randint(1, 100))], ""]]
 ==
 
