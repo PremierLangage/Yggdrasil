@@ -25,18 +25,18 @@ random.seed(seed)
 type_var = random.choice(["int","str","float","bool",None])
 var = random.choice(["a", "b", "c", "X", "Y","PIERRE","feuille","ciseaux"])
 
-pltest0= f"""
+pltest1= f"""
 >>> "{var}" in globals() # La variable {var} est elle d&eaccute;finie ?
 True
 """
 
 if type_var is None:
-    pltest1= f"""
+    pltest2= f"""
 >>> type({var}) is type(None) # La variable {var} est elle du type {type_var} ?
 True
 """
 else:
-    pltest1= f"""
+    pltest2= f"""
 >>> type({var})=={type_var} # La variables est elle du bon type ({type_var}) ?
 True
 """
