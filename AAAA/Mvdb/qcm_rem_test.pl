@@ -73,30 +73,80 @@ questions==
 - ’a’ > ’Z’ 
 + 2==’2’
 
-**[group=prenom] Quel est le prénom de Revuz
-+Dominique
--Christian
-+Paul
-+Edouard
+*Considérons le programme suivant :
+a = 10
+if a < 5:
+    a = 20
+elif a < 100:
+    a = 500
+elif a < 1000:
+    a=1 
+else:
+    a=0
+Que vaut a à l’issue de son exécution ?
 
-*[group=prenom] Quel est le prénom de Diaw
-+Anna
--Aminata
++500 
+-0 
+-10 
+-1 
+-20
 
-*+ Clicker sur la bonne conjugaison du verbe  
->Je suis ( aller / {{allé}} ) au bureau hier
 
-=**[nbb=2,nbg=2] Choisir les mots qui sont des mots clefs de python
-+=["assert","async","await","break","class","continue","def","del","else","except","finally"]
--=["whiles","boucle","attend","cause","deff","dep"]
+**Comment écrire une condition if qui renvoie True si la variable i appartient à {2}∪[5;6]∪[15;16] ?
++if i == 2 or (i >= 5 and i <= 6) or (i >= 15 and i <= 16):
+-if i == 2 or i >= 5 or i <= 6 or i >= 15 or i <= 16:
+-if i == 2 and (i >= 5 and i <= 6) or (i >= 15 and i <= 16):
+-if i == 2 and i >= 5 and i <= 6 and i >= 15 and i <= 16:
 
-=*[nb=5,group=odd] What are the odd numbers ? 
-+=[x for x in range(3,77) if x%2==1 ]
--=[x for x in range(3,77) if x%2==0 ]
+*Le programme suivant simule le lancer d’un dé. Malheureusement, ses lignes ont été mélangées...
+1 x = randint(min, max)
+2 min, max = 1, 6
+3 from random import randint
+4 print(x)
+Il s’agit de remettre le code dans l’ordre...
+La première ligne du programme correspond à la ligne du programme précédent numérotée
+-1 
+-2
++3
+-4
 
-=*[nb=3,group=odd] What are the even numbers ? 
--=[x for x in range(3,77) if x%2==1 ]
-+=[x for x in range(3,77) if x%2==0 ]
+*Le programme suivant simule le lancer d’un dé. Malheureusement, ses lignes ont été mélangées...
+1 x = randint(min, max)
+2 min, max = 1, 6
+3 from random import randint
+4 print(x)
+Il s’agit de remettre le code dans l’ordre...
+La seconde ligne du programme correspond à la ligne du programme précédent numérotée
+
+-1 
++2
+-3
+-4
+
+*Le programme suivant simule le lancer d’un dé. Malheureusement, ses lignes ont été mélangées...
+1 x = randint(min, max)
+2 min, max = 1, 6
+3 from random import randint
+4 print(x)
+Il s’agit de remettre le code dans l’ordre...
+La troisème ligne du programme correspond à la ligne du programme précédent numérotée
++1 
+-2
+-3
+-4
+
+*Le programme suivant simule le lancer d’un dé. Malheureusement, ses lignes ont été mélangées...
+1 x = randint(min, max)
+2 min, max = 1, 6
+3 from random import randint
+4 print(x)
+Il s’agit de remettre le code dans l’ordre...
+La dernière ligne du programme correspond à la ligne du programme précédent numérotée
+-1 
+-2
+-3
++4
+
 
 ==
 
