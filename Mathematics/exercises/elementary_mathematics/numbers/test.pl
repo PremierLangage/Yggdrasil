@@ -27,7 +27,7 @@ inputblock ==
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/jsxgraph@1.4.0/distrib/jsxgraph.css" />
 <script type="text/javascript" src="https://unpkg.com/jsxgraph@1.4.0/distrib/jsxgraphcore.js"></script>
 <div id='outer' style='max-width: 500px; margin: 0 auto;'>
-<div id='jxgbox' class='jxgbox' style='height: 0; padding-bottom: 100%'></div>
+<div id='jxgbox' class='jxgbox' style='height: 0; padding-bottom: 30%'></div>
 </div>
 <button onClick="board.toFullscreen('outer')">Fullscreen</button>
 
