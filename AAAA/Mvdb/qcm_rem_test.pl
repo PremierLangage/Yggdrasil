@@ -147,7 +147,66 @@ La dernière ligne du programme correspond à la ligne du programme précédent 
 -3
 +4
 
+**L’affichage suivant est réalisé par un appel print. Sélectionner le ou les appels qui l’a produit.
+                                hello-how-are-you
++print(’hello-’ + ’how-are-you’)
++print(’hello’ + ’-’ + ’how’ + ’-’ + ’are’ + ’-’ + ’you’) 
+-print(’hello’, ’how’, ’are’, ’you’ + ’-’ * 4) 
+-print(’hello’, ’how’, ’are’, ’you’)
+-print(’hello’, ’-’, ’how’, ’-’, ’are’, ’-’, ’you’)    
 
+
+**Pour quelles valeurs de a et b cette expression renvoit-elle True ? 
+a >= 4 and a < 12 and (b >= 12 or b < 10)
++a = 11, b = 15 
+-a = 12, b = 10 
+-a = 7, b = 10 
++a = 4, b = 12
+
+
+*Qu’affiche le programme suivant lors de son execution ? 
+a = "4 * 5"
+print(a)
+-20 
+-20.0 
++4*5
+
+**Le programme suivant contient des erreurs.
+1  import randint from random  
+2  x = randint(1, 6)   
+3  if x%2==0: 
+4     print("Un entier pair compris entre 1 et 6 a ete trouve")
+5  else:
+6     print("Un entier impair compris entre 1 et 6 a ete trouve") 
+7  y == int(input("Essayez de le deviner :"))
+8  if x==y:
+9     print("Bravo")
+10 else:
+11    print("Pas de chance... Retentez !")
+
+A quelles lignes se trouvent-elles ?
+
++ligne 1 
+-ligne 2 
+-ligne 3
+-ligne 4 
+-ligne 5 
+-ligne 6
++ligne 7 
+-ligne 8 
+-ligne 9
+-ligne 10 
+-ligne 11
+
+
+
+*Supposons que la variable x ait été initialisée comme étant un entier (e.g x = 3). Que fait le programme suivant ?
+x=x+2
+-Il crée une fonction nommée x et met 2 dans cette fonction.
+-Il renvoie False.
+-Cela fait quitter le programme.
++Il récupère la valeur courante de x, lui ajoute 2 et stocke le résultat dans x. 
+-Il déclenche une Syntax Error, donc cela échouerait.
 ==
 
 
