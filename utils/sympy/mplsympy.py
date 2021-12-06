@@ -31,6 +31,6 @@ def plotsvg(expr, xlim=(-5,5), ylim=(-5,5) ):
     ax.set_ylabel('')
     return fig2svg(fig)
 
-def plot2fig(expr, x, xlim=(-5,5)):
+def plot2fig(expr, x, xmin, xmax):
     x = symbols('x')
-    return plot(expr, (x,*xlim))._backend.fig
+    return plot(expr, (x,xmin,xmax))._backend.fig
