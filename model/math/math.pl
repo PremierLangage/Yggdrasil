@@ -29,7 +29,7 @@ from sympy2latex import latex
 from latex2sympy import latex2sympy
 ==
 
-style.basic =@ basic.css.html
+style.basic =@ /model/basic/basic.css.html
 
 oldstyle.basic == #|css|
 <style>
