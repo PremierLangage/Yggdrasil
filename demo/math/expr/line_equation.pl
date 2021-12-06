@@ -10,7 +10,6 @@ b = randint(-3, 3)
 sol = a*x + b
 p = plot(sol, x,-5,5)
 p.append(plot(x,x,-3,1)[0])
-
 image = plot2svg(p)
 ==
 
