@@ -30,7 +30,7 @@ from latex2sympy import latex2sympy
 ==
 
 
-style.basic == #|css|
+oldstyle.basic == #|css|
 <style>
 .icon-check-after p::after {
     font-family: "Font Awesome 5 Free";
@@ -92,86 +92,7 @@ style.basic == #|css|
     text-decoration: underline wavy #3c763d;
 }
 
-.highlight-state {
-    color: var(--brand-color-primary);
-    background-color: #cce5ff;
-}
 
-.question p {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.question {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-hr.divide {
-  background-color: lightgray;
-  height: 0.5px;
-  border: 0;
-}
-
-
-.img {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    height: auto;
-    margin-left: auto;
-    margin-right:auto;
-}
-
-.img-60 {
-    max-width: 60%;
-}
-.img-50 {
-    max-width: 50%;
-}
-.img-40 {
-    max-width: 40%;
-}
-
-@media screen and (max-width: 768px) { /* css appliqué sur les tablettes */
-    .img-60 {
-        max-width: 80%;
-    }
-    .img-50 {
-        max-width: 70%;
-    }
-    .img-40 {
-        max-width: 60%;
-    }
-}
-
-@media screen and (max-width: 576px) { /* css appliqué sur les téléphones */
-    .img-60 {
-        max-width: 100%;
-    }
-    .img-50 {
-        max-width: 90%;
-    }
-    .img-40 {
-        max-width: 80%;
-    }
-}
-
-
-@media screen and (max-width: 768px) { /* css appliqué sur les tablettes */
-    .img-40 {
-        max-width: 60%;
-        height: auto;
-        margin: auto;
-    }
-}
-
-@media screen and (max-width: 576px) { /* css appliqué sur les téléphones */
-    .img-40 {
-        max-width: 80%;
-        height: auto;
-        margin: auto;
-    }
-}
 </style>
 ==
 
