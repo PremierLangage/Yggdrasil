@@ -104,7 +104,10 @@ checks_args_stdin==#|python|
 [["Exécution simple", ["Pierre", "Martin", "12"], ""],
  ["Chaînes vides", ["", "", "20"], ""],
  ["Long prénom", ["Son prénom est si long que ça, incroyable !", "Ouais", "243"], ""],
- ["Test aléatoire 1", [choice([""]), choice([""]), str(randint(1, 100))], ""]]
+ ["Test aléatoire 1", [choice(["Pierre", "Paul", "Jacques", "Achraf", "Chan", "David", "Herbert", "Jean-Guy", "Pat", "Sophie", "Octave", "Mélanie", "Jean-Phillipe"]), choice(["Fonfec", "Herbien", "Zétofrey", "Hergébel", "Martin", "Chaouche", "Li", "Strauss", "Chirac", "El Mofty"]), str(randint(1, 100))], ""],
+ ["Test aléatoire 2", [choice(["Pierre", "Paul", "Jacques", "Achraf", "Chan", "David", "Herbert", "Jean-Guy", "Pat", "Sophie", "Octave", "Mélanie", "Jean-Phillipe"]), choice(["Fonfec", "Herbien", "Zétofrey", "Hergébel", "Martin", "Chaouche", "Li", "Strauss", "Chirac", "El Mofty"]), str(randint(1, 100))], ""],
+ ["Test aléatoire 3", [choice(["Pierre", "Paul", "Jacques", "Achraf", "Chan", "David", "Herbert", "Jean-Guy", "Pat", "Sophie", "Octave", "Mélanie", "Jean-Phillipe"]), choice(["Fonfec", "Herbien", "Zétofrey", "Hergébel", "Martin", "Chaouche", "Li", "Strauss", "Chirac", "El Mofty"]), str(randint(1, 100))], ""],
+ ["Test aléatoire 4", [choice(["Pierre", "Paul", "Jacques", "Achraf", "Chan", "David", "Herbert", "Jean-Guy", "Pat", "Sophie", "Octave", "Mélanie", "Jean-Phillipe"]), choice(["Fonfec", "Herbien", "Zétofrey", "Hergébel", "Martin", "Chaouche", "Li", "Strauss", "Chirac", "El Mofty"]), str(randint(1, 100))], ""]]
 ==
 
 astuces==#|python|
