@@ -13,7 +13,6 @@ from plmpl import fig2svg
 t = np.arange(0.0, 2.0, 0.01)
 s = 1 + np.sin(2*np.pi*t)
 plt.plot(t, s)
-plt.plot(s, t)
 plt.xlabel('time (s)')
 plt.ylabel('voltage (mV)')
 plt.title('About as simple as it gets, folks')
