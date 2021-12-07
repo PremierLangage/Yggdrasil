@@ -35,17 +35,13 @@ position, f= random.choice([
 
 
 pltest= f"""
->>> l=[1,2,3]; place(l,4)
->>> l
+>>> l=[1,2,3]; place(l,4);l # Petite liste
 {f([1,2,3],4)}
->>> l=[];place(l,1)# Tss tss
->>> l
+>>> l=[];place(l,1); l # Liste vide 
 [1]
->>> place(l,1)
->>> l
+>>> place(l,1); l
 [1, 1]
->>> place(l,2)
->>> l
+>>> place(l,2); l
 {f([1,1],2)}
 """
 ==
