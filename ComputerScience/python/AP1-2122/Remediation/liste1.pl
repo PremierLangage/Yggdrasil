@@ -14,6 +14,7 @@ Qui ajoute $%v%$ {{position}} dans la liste $%l%$.
 ==
 
 before==
+import random
 position, f= random.choice([
 ('au début',lambda l,v:l.insert(0,v)),
 ('en deuxième position',lambda l,v:l.insert(1,v)),
