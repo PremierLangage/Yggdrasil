@@ -1,4 +1,5 @@
 extends = /model/basic/basic.pl
+@ /utils/graphics/plmpl.py
 
 before ==
 import matplotlib.pyplot as plt
@@ -17,6 +18,6 @@ image = fig2svg(plt.gcf())
 
 question ==
 <div class="img w50">
-{{ image|safe }}
+{{ image }}
 </div>
 ==
