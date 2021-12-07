@@ -14,7 +14,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 
 text==
-Ecrivez une fonction pow qui prend deux paramêtres $%x , y%$ et retourne {{function}}
+Ecrivez une fonction {{fname}} qui prend deux paramêtres $%x , y%$ et retourne {{function}}
 ==
 before==
 import random 
