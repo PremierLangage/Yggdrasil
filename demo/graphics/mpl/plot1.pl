@@ -1,4 +1,5 @@
 extends = /model/basic/basic.pl
+@ /utils/graphics/plmpl.py
 
 before ==
 import matplotlib.pyplot as plt
