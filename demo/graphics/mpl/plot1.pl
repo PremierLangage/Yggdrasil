@@ -18,6 +18,6 @@ image = fig2svg(plt.gcf())
 
 question ==
 <div class="img w40">
-{{ image }}
+{{ image|safe }}
 </div>
 ==
