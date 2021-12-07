@@ -7,7 +7,7 @@ from plmpl import fig2svg, easyplot
 from numpy import cos, pi
 
 f = lambda x : x**2
-easyplot(plt.gcf(), f, -2.5, 2.5)
+easyplot(plt.gcf(), f, -2.5, 2.5, color='red')
 
 plt.title('Title')
 plt.xlabel('x')
