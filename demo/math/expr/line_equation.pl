@@ -18,9 +18,7 @@ plt.ylim(-5, 5)
 plt.grid(True)
 plt.xticks(list(range(-5,6)))
 plt.yticks(list(range(-5,6)))
-#plt.axes().yaxis.set_major_locator(ticker.MultipleLocator(1))
-easyplot(plt.gca(), sol, -1, 1)
-
+easyplot(plt.gcf(), sol, -1, 1)
 image = fig2svg(plt.gcf())
 ==
 
