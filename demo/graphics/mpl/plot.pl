@@ -4,7 +4,7 @@ extends = /model/basic/basic.pl
 before ==
 import matplotlib.pyplot as plt
 from plmpl import fig2svg
-from numpy import linpace, cos, pi
+from numpy import linspace, cos, pi
 
 t = linspace(0.0, 4.0, 100)
 s = 1 + cos(pi*t)
