@@ -1,6 +1,7 @@
 from io import StringIO
 import numpy as np
 from sympy import Expr
+from sympy.utilities.lambdify import lambdify
 
 def fig2svg(fig, transparent=True, **kwargs):
     """Convert a matplolib figure into a HTML/SVG code."""
