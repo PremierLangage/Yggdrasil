@@ -1,29 +1,18 @@
-import matplotlib.pyplot as plt
-from io import BytesIO, StringIO
-import base64
-from sympy.plotting import plot
-import matplotlib.ticker as ticker
-from sympy import symbols
-
-def fig2base64(fig, format='png', transparent=True, **kwargs):
-    file = BytesIO()
-    fig.savefig(file, format=format, transparent=transparent, **kwargs)
-    return base64.b64encode(file.getvalue()).decode('ascii')
+from io import StringIO
 
 def fig2svg(fig, transparent=True, **kwargs):
+    """Convert a matplolib figure into a SVG code wrapped in svg tags"""
     file = StringIO()
     fig.savefig(file, format='svg', transparent=transparent, **kwargs)
     width, height = fig.get_size_inches()
     width, height = 72*width, 72*height
     lines = file.getvalue().splitlines()
+    # HACK to remove fixed size
     for i, line in enumerate(lines):
         if line.startswith('<svg'):
             lines[i] = "<svg viewBox='0 0 %s %s'>" % (width, height)
             break
-
     return "\n".join(lines)
-
-
 
 def plotsvg(expr, xlim=(-5,5), ylim=(-5,5) ):
     x = symbols('x')
@@ -40,10 +29,26 @@ def plotsvg(expr, xlim=(-5,5), ylim=(-5,5) ):
     ax.set_ylabel('')
     return fig2svg(fig)
 
+def plot2svg(p, xlim=(-5,5), ylim=(-5,5)):
+    x = symbols('x')
+    p = plot((x**2, (x, 0, 3)), (x, (x, -5, 5)))
+    p[1].line_color = 'red'
+    fig = p._backend.fig
+    return fig2svg(fig)
 
-def short_float_fmt(x):
-    """
-    Create a short string representation of a float, which is %f
-    formatting with trailing zeros and the decimal point removed.
-    """
-    return '{0:f}'.format(x).rstrip('0').rstrip('.')
+def plot2(a, b):
+    return plot(a, b)
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+import numpy as np
+
+def easyplot(fig, expr, xmin, xmax, npts=3):
+    ax = fig.gca()
+    sb = list(expr.free_symbols)
+    t = np.linspace(xmin, xmax, npts)
+    s = []
+    for t0 in t:
+        s.append(expr.subs({sb[0]:t0}))
+    ax.plot(t, s)
