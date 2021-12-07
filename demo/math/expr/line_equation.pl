@@ -12,9 +12,12 @@ sol = a*x + b
 import matplotlib.pyplot as plt
 import numpy as np
 
-def easyplot(ax, expr, x, xmin, xmax):
+def easyplot(ax, expr, xmin, xmax):
+    sb = list(expr.free_symbols)
     t = np.arange(0.0, 2.0, 0.01)
-    s = 1 + np.sin(2*np.pi*t)
+    for t0 in t:
+        s.append(expr.evalf({sb[0]:t0})
+    #s = 1 + np.sin(2*np.pi*t)
     ax.plot(t, s)
 
 easyplot(plt.gca(), 0,0,0,0)
