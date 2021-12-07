@@ -13,9 +13,9 @@ sol = a*x + b
 import matplotlib.pyplot as plt
 import numpy as np
 
-plt.clear()
+plt.clf()
 plt.plot([-1., 0., 1.], [4.0, 2.0, 0.0])
-#plt.grid(True)
+plt.grid(True)
 
 image = fig2svg(plt.gcf())
 ==
