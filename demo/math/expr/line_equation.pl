@@ -15,7 +15,7 @@ import numpy as np
 
 def easyplot(ax, expr, xmin, xmax):
     sb = list(expr.free_symbols)
-    t = np.arange(0.0, 2.0, 0.01)
+    t = np.arange(xmin, xmax, 0.01)
     s =[]
     for t0 in t:
         s.append(expr.subs({sb[0]:t0}))
