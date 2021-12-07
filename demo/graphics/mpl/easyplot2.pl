@@ -7,8 +7,8 @@ from plmpl import fig2svg, easyplot
 from sympy import cos, pi, Symbol
 
 x = Symbol('x')
-f = 1 + cos(pi*x)
-easyplot(plt.gcf(), f, 0, 4)
+expr = 1 + cos(pi*x)
+easyplot(plt.gcf(), expr, 0, 4)
 
 image = fig2svg(plt.gcf())
 ==
