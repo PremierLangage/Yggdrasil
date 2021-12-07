@@ -20,6 +20,9 @@ before==
 import random 
 fname,function, lamb = random.choice([
 ["pow","$%x^y%$", lambda x,y:x**y],
+["cachou","$%x^2+y^2%$", lambda x,y:x**2+y**2],
+["delta","$%x^2-4yx%$", lambda x,y:x**2-4*x*y],
+["omicron","$%x^3-y^2%$", lambda x,y:x**3-y*y],
 ])
 
 
