@@ -49,3 +49,8 @@ pltest= f"""
 """
 ==
 
+
+code==
+def place(l,c):
+    l.insert(XX,c)
+==
