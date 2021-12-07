@@ -27,7 +27,7 @@ def easyplot(fig, f, xmin, xmax, npts=100):
     ax = fig.gca()
     if isinstance(f, Expr):
         # f is SymPy expression
-        sb = list(expr.free_symbols)
+        sb = list(f.free_symbols)
         if len(sb) == 0:
             x = [xmin, xmax]
             y = [f.evalf(), f.evalf()]
