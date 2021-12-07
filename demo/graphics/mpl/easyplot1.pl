@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from plmpl import fig2svg
 
 f = lambda(x, 1+sin(x))
-easyplot(plt.gcf(), 0, 4)
+easyplot(plt.gcf(), f, 0, 4)
 
 image = fig2svg(plt.gcf())
 ==
