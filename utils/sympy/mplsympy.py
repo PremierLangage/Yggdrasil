@@ -53,4 +53,3 @@ def easyplot(ax, expr, xmin, xmax, npts=3):
     for t0 in t:
         s.append(expr.subs({sb[0]:t0}))
     ax.plot(t, s)
-    return t, s
