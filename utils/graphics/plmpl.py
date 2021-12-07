@@ -38,6 +38,6 @@ def easyplot(fig, f, xmin, xmax, npts=100):
     else:
         # f is a function
         ff = f
-    x np.linspace(xmin, xmax, npts)
+    x = np.linspace(xmin, xmax, npts)
     y = [ff(x0) for x0 in x]
     ax.plot(x, y)
