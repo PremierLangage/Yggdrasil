@@ -17,8 +17,10 @@ alors on les met dans une derniére liste séparée. Avec ce découpage, on obti
     [[2, 3, 5, 7], [11, 13, 17, 19], [23, 29]]
 
 Ecrire une fonction ``decoupe(lst, len)`` qui retourne la liste de segments obtenue en découpant la list ``lst`` en des segments de longueur ``len``
-et en mettant les éléments en trop dans un dernier segment séparé. Si ``seglen <= 0``, alors la fonction doit retourner une liste vide.
+et en mettant les éléments en trop dans un dernier segment séparé. Si ``len <= 0``, alors la fonction doit retourner une liste vide.
 Si ``lst`` est vide, comme il n'y a pas de segment possible, la fonction doit aussi retourner une liste vide.
+
+Attention : le message d'erreur en cas de boucle infinie n'est pas très clair.
 ==
 
 tag=listoflist|ForIn|algo
