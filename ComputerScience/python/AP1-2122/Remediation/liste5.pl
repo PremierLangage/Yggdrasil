@@ -32,6 +32,8 @@ def occ(l,c):
             return i
     return -1
 
+lp=[random.randint(3,8) for _ in range(20000)]
+
 pltest= f"""
 >>> doublev([1,2,4,5, 6, 7],2)
 {occ([1,2,4,5, 6, 7],2)}
@@ -39,6 +41,8 @@ pltest= f"""
 {occ([1,2,4,5, 6,6, 7],6)}
 >>> doublev([1,2,4,5, 6, 7,7],7)
 {occ([1,2,4,5, 6, 7,7],7)}
+>>> doublev({lp},3)
+{occ(lp,7)}
 """
 ==
 
