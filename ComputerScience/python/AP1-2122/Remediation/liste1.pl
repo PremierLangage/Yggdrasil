@@ -10,7 +10,7 @@ text==
 
 Ecrire une fonction **place** qui prend deux paramêtres une liste et une valeur : $%l , v%$.  
 
-Qui ajoute $%v%$ **{{position}}** dans la liste $%l%$.
+Qui ajoute en place $%v%$ **{{position}}** dans la liste $%l%$.
 
 ==
 
@@ -30,7 +30,7 @@ def fn(l,c):
 position, f= random.choice([
 ('au début',f0),
 ('en deuxième position',f1),
-('a la fin',fn)
+('à la fin',fn)
 ])
 
 
