@@ -24,7 +24,7 @@ def easyplot(ax, expr, xmin, xmax, npts=3):
     return t, s
 
 t,s = easyplot(plt.gca(), sol, -1, 1)
-plt.plot(t,s)
+plt.plot([-1. 0. 1.], [4.0, 2.0, 0.0])
 plt.grid(True)
 
 image = fig2svg(plt.gcf())
