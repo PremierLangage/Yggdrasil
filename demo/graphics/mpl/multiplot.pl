@@ -9,8 +9,8 @@ from numpy import sin, cos
 f1 = lambda x : sin(x)
 f2 = lambda x : cos(x)
 
-easyplot(plt.gcf(), f1, -2.5, 2.5)
-easyplot(plt.gcf(), f2, -2.5, 2.5)
+easyplot(plt.gcf(), f1, -3, 3)
+easyplot(plt.gcf(), f2, -3, 3)
 
 image = fig2svg(plt.gcf())
 ==
