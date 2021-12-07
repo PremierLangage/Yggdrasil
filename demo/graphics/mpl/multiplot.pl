@@ -4,9 +4,10 @@ extends = /model/basic/basic.pl
 before ==
 import matplotlib.pyplot as plt
 from plmpl import fig2svg, easyplot
+from numpy import sin, cos
 
-f1 = lambda x : x**2
-f2 = lambda x : x**3
+f1 = lambda x : sin(x)
+f2 = lambda x : cos(x)
 
 easyplot(plt.gcf(), f1, -2.5, 2.5)
 easyplot(plt.gcf(), f2, -2.5, 2.5)
