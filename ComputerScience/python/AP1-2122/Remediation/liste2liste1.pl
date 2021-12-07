@@ -47,19 +47,21 @@ position, f= random.choice([
 ('apparait au moins deux fois',fn)
 ])
 
-
+def bf():
+    return [[5]*8]*20
+def br():
+    return [[random.randint(2,10 for x in range(109)] for y in range(12) ]
+palteau= bf()
+rom= br()
 pltest= f"""
->>> l=[1,2,3]; place(l,4);l # Petite liste
-{f([1,2,3],4)}
->>> l=[];place(l,1); l # Liste vide 
-[1]
->>> place(l,1); l # Ajout de 1
-[1, 1]
->>> place(l,2); l # Ajout de 2
-{f([1,1],2)}
->>> place(l,34); l # Ajout de 34
-{f(f([1,1],2),34)}
-
+>>> palteau={palteau}; ou(palteau,5)
+{f(palteau)}
+>>> palteau={palteau}; ou(palteau,2)
+{f(palteau)}
+>>> palteau={rom}; ou(palteau,5)
+{f(rom)}
+>>> palteau={rom}; ou(palteau,-1)
+{f(rom)}
 """
 ==
 
