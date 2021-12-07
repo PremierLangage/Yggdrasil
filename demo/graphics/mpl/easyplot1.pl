@@ -3,7 +3,7 @@ extends = /model/basic/basic.pl
 
 before ==
 import matplotlib.pyplot as plt
-from plmpl import fig2svg
+from plmpl import fig2svg, easyplot
 from math import cos, pi
 
 f = lambda x : 1 + cos(pi*x)
