@@ -23,13 +23,14 @@ def easyplot(ax, expr, xmin, xmax, npts=3):
     ax.plot(t, s)
     return t, s
 
-easyplot(plt.gca(), sol, -1, 1)
+t,s = easyplot(plt.gca(), sol, -1, 1)
 plt.grid(True)
 
 image = fig2svg(plt.gcf())
 ==
 
 question ==
+{{t}} {{s}}
 Déterminer l'équation de la droite tracée ci-dessous (en notant $! x !$ la variable d'abscisse et $! y !$ la variable d'ordonnée).
 <div class="img w60">
 {{ image }}
