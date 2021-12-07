@@ -25,6 +25,7 @@ def easyplot(fig, f, xmin, xmax, npts=100):
     """
     ax = fig.gca()
     if isinstance(f, Expr):
+        # f is SymPy expression
         sb = list(expr.free_symbols)
         if len(sb) == 0:
             x = [xmin, xmax]
@@ -34,6 +35,7 @@ def easyplot(fig, f, xmin, xmax, npts=100):
             var = sb[0]
             ff = lambdify(var, f)
     else:
+        # f is a function
         ff = f
     x np.linspace(xmin, xmax, npts)
     y = [ff(x0) for x0 in x]
