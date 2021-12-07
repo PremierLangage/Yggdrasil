@@ -1,18 +1,14 @@
 extends = /model/math/expr.pl
 
 before ==
-from mplsympy import plotsvg, fig2svg, plot2svg, plot2, easyplot
-from sympy.plotting import plot
-import matplotlib.ticker as ticker
+from mplsympy import fig2svg, plot2svg, plot2, easyplot
+import matplotlib.pyplot as plt
 
 var('x')
 a = choice([-1, 1]) * choice([Rational(1, 2), 1, Rational(3, 2), 2])
 b = randint(-3, 3)
 sol = a*x + b
-
-import matplotlib.pyplot as plt
-import numpy as np
-
+plt.figure(0)
 plt.xlim(-5, 5)
 plt.ylim(-5, 5)
 plt.grid(True)
