@@ -13,7 +13,13 @@ sol = a*x + b
 import matplotlib.pyplot as plt
 import numpy as np
 
-plt.clf()
+fig = plt.figure(0)
+ax = fig.gca()
+ax.grid(True)
+ax.set_xlim(*xlim)
+ax.set_ylim(*ylim)
+ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
+ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
 easyplot(plt.gca(), sol, -1, 1)
 plt.grid(True)
 
