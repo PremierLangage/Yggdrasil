@@ -23,11 +23,6 @@ plt.grid(True)
 image = fig2svg(plt.gcf())
 ==
 
-#p = plot2(sol, (x,-5,5))
-#p.append(plot(x,x,-3,1)[0])
-image = plot2svg(0)
-==
-
 question ==
 Déterminer l'équation de la droite tracée ci-dessous (en notant $! x !$ la variable d'abscisse et $! y !$ la variable d'ordonnée).
 <div class="img w60">
