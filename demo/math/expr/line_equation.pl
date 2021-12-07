@@ -13,6 +13,7 @@ sol = a*x + b
 import matplotlib.pyplot as plt
 import numpy as np
 
+plt.gcf()
 easyplot(plt.gca(), sol, -1, 1)
 plt.grid(True)
 
