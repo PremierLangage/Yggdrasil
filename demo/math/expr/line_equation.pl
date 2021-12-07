@@ -16,8 +16,8 @@ import numpy as np
 plt.xlim(-5, 5)
 plt.ylim(-5, 5)
 plt.grid(True)
-plt.axes().xaxis.set_major_locator(ticker.MultipleLocator(1))
-plt.axes().yaxis.set_major_locator(ticker.MultipleLocator(1))
+plt.xticks(ticker.MultipleLocator(1))
+#plt.axes().yaxis.set_major_locator(ticker.MultipleLocator(1))
 easyplot(plt.gca(), sol, -1, 1)
 
 image = fig2svg(plt.gcf())
