@@ -8,6 +8,21 @@ var('x')
 a = choice([-1, 1]) * choice([Rational(1, 2), 1, Rational(3, 2), 2])
 b = randint(-3, 3)
 sol = a*x + b
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+def easyplot(ax, expr, x, xmin, xmax):
+    t = np.arange(0.0, 2.0, 0.01)
+    s = 1 + np.sin(2*np.pi*t)
+    ax.plot(t, s)
+
+easyplot(gca(), 0,0,0,0)
+plt.grid(True)
+
+image = fig2svg(plt.gcf())
+==
+
 #p = plot2(sol, (x,-5,5))
 #p.append(plot(x,x,-3,1)[0])
 image = plot2svg(0)
