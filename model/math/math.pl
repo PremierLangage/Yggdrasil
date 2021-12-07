@@ -10,7 +10,7 @@
 @ /utils/sympy/latex2sympy.py
 @ /utils/sympy/sympy2latex.py
 @ /utils/sympy/randsympy.py
-@ /utils/sympy/mplsympy.py
+@ /utils/graphics/plmpl.py
 @ /utils/plrandom.py
 
 before_scripts % ["mathimport", "headerbefore", "before", "footerbefore", "process"]
