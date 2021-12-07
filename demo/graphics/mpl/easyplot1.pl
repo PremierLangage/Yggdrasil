@@ -4,7 +4,7 @@ extends = /model/basic/basic.pl
 before ==
 import matplotlib.pyplot as plt
 from plmpl import fig2svg, easyplot
-from math import cos, pi
+from numpy import cos, pi
 
 f = lambda x : 1 + cos(pi*x)
 easyplot(plt.gcf(), f, 0, 4)
