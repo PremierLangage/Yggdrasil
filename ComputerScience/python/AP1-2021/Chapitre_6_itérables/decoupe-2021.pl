@@ -7,16 +7,16 @@ author=Wenjie Fang
 title=Découper une liste
 
 text==
-On veut découper une liste en des petits segments de la même longueur autant que possible. Supposon qu'on a la liste suivante :
+On veut découper une liste en des petits segments de la même longueur autant que possible. Supposons qu'on a la liste suivante :
 
     [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
 
-et on veut le découper en des segments de longueur ``4``, avec chaque segment une liste. S'il y a des éléments en trop,
-alors on les met dans un dernier segment séparé. Avec ce découpage, on obtient alors la liste de segments suivante :
+et on veut le découper en sous listes de longueur ``4``. S'il y a des éléments en trop,
+alors on les met dans une derniére liste séparée. Avec ce découpage, on obtient alors la liste de listes suivante :
 
     [[2, 3, 5, 7], [11, 13, 17, 19], [23, 29]]
 
-Ecrire une fonction ``decoupe(lst, seglen)`` qui retourne la liste de segments obtenue en découpant la list ``lst`` en des segments de longueur ``seglen``
+Ecrire une fonction ``decoupe(lst, len)`` qui retourne la liste de segments obtenue en découpant la list ``lst`` en des segments de longueur ``len``
 et en mettant les éléments en trop dans un dernier segment séparé. Si ``seglen <= 0``, alors la fonction doit retourner une liste vide.
 Si ``lst`` est vide, comme il n'y a pas de segment possible, la fonction doit aussi retourner une liste vide.
 ==
@@ -40,7 +40,8 @@ def decoupe(l, sl):
     return res
 ==
 
-before==
+before=
+XXX==
 from random import randint
 
 def produce(n, sl):
@@ -108,3 +109,18 @@ pltest1==
 ==
 
 
+
+
+drcode==
+def decoupe(l,n):
+    lll=[]
+    while l:
+        ll=[]
+        nb=n
+        while l and nb>0:
+            ll.append(l.pop(0))
+            nb -= 1
+        lll.append(ll)
+    return lll
+    
+==
