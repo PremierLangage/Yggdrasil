@@ -13,7 +13,7 @@ sol = a*x + b
 import matplotlib.pyplot as plt
 import numpy as np
 
-def easyplot(ax, expr, xmin, xmax, npts=5):
+def easyplot(ax, expr, xmin, xmax, npts=3):
     sb = list(expr.free_symbols)
     t = np.linspace(xmin, xmax, npts)
     s = []
