@@ -17,7 +17,8 @@ before==
 position, f= random.choice([
 ('au début',lambda l,v:l.insert(0,v)),
 ('en deuxième position',lambda l,v:l.insert(1,v)),
-('a la fin',lambda l,v:l.insert(len(l),v))]
+('a la fin',lambda l,v:l.insert(len(l),v))])
+
 
 pltest= f"""
 >>> place([1,2,3],4)
