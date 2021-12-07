@@ -1,3 +1,5 @@
+# deprecated
+
 from io import StringIO
 from sympy.plotting import plot
 import matplotlib.ticker as ticker
