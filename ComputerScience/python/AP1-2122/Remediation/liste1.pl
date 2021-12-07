@@ -26,10 +26,11 @@ pltest= f"""
 >>> l=[1,2,3]; place(l,4)
 >>> l
 {f([1,2,3],4)}
->>> l=[] place(l,1)
+>>> l=[];place(l,1)# Tss tss
 >>> l
 [1]
 >>> place(l,1)
+>>> l
 [1, 1]
 >>> place(l,2)
 >>> l
