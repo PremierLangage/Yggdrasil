@@ -1,7 +1,8 @@
 from io import StringIO
+import numpy as np
 
 def fig2svg(fig, transparent=True, **kwargs):
-    """Convert a matplolib figure into a SVG code wrapped in svg tags"""
+    """Convert a matplolib figure into a HTML/SVG code."""
     file = StringIO()
     fig.savefig(file, format='svg', transparent=transparent, **kwargs)
     width, height = fig.get_size_inches()
@@ -14,20 +15,6 @@ def fig2svg(fig, transparent=True, **kwargs):
             break
     return "\n".join(lines)
 
-def plotsvg(expr, xlim=(-5,5), ylim=(-5,5) ):
-    x = symbols('x')
-    fig = plot(expr, (x,*xlim))._backend.fig
-    ax = fig.gca()
-    ax.grid(True)
-    ax.set_xlim(*xlim)
-    ax.set_ylim(*ylim)
-    ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
-    ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
-    #ax.xaxis.set_major_locator(ticker.MaxNLocator(integer=True))
-    #ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
-    ax.set_xlabel('')
-    ax.set_ylabel('')
-    return fig2svg(fig)
 
 def plot2svg(p, xlim=(-5,5), ylim=(-5,5)):
     x = symbols('x')
@@ -40,11 +27,11 @@ def plot2(a, b):
     return plot(a, b)
 
 import matplotlib.pyplot as plt
-import numpy as np
 
 import numpy as np
 
 def easyplot(fig, expr, xmin, xmax, npts=3):
+    """Add plot
     ax = fig.gca()
     sb = list(expr.free_symbols)
     t = np.linspace(xmin, xmax, npts)
