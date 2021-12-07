@@ -24,10 +24,17 @@ def easyplot(fig, f, xmin, xmax, npts=100):
     - f : a SymPy expression or a function
     """
     ax = fig.gca()
-    if isinstance(f, Expr)
-    sb = list(expr.free_symbols)
-    t = np.linspace(xmin, xmax, npts)
-    s = []
-    for t0 in t:
-        s.append(expr.subs({sb[0]:t0}))
-    ax.plot(t, s)
+    if isinstance(f, Expr):
+        sb = list(expr.free_symbols)
+        if len(sb) == 0:
+            x = [xmin, xmax]
+            y = [f.evalf(), f.evalf()]
+            return None
+        elif len(sb) == 1:
+            var = sb[0]
+            ff = lambdify(var, f)
+    else:
+        ff = f
+    x np.linspace(xmin, xmax, npts)
+    y = [ff(x0) for x0 in x]
+    ax.plot(x, y)
