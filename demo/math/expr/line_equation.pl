@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 ax = plt.gca()
-plt.grid(True)
+ax.grid(True)
 ax.set_xlim(-5,5)
 ax.set_ylim(-5,5)
 ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
