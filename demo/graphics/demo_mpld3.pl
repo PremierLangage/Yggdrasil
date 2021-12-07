@@ -1,10 +1,4 @@
-
-@ /builder/before.py [builder.py]
-@ /grader/evaluator.py [grader.py]
-@ /utils/sandboxio.py
-@ /utils/graphics/plmpl.py
-
-title = Figure Matplotlib
+extends = /model/basic/basic.pl
 
 before ==
 import matplotlib.pyplot as plt
@@ -22,37 +16,8 @@ image = mpld3.fig_to_html(plt.gcf())
 
 ==
 
-text ==
-<div class="img-container">
-{{ image|safe }}
+question ==
+<div class="img w50">
+{{ image }}
 </div>
 ==
-
-form ==
-==
-
-extracss ==
-<style>
-.img-container {
-    width: 60%;
-    margin: auto;
-}
-
-/* css appliqué sur les tablettes */
-@media screen and (max-width: 768px) {
-    .img-container {
-        width: 80%;
-        margin: auto;
-    }
-}
-
-/* css appliqué sur les téléphones */
-@media screen and (max-width: 576px) {
-    .img-container {
-        width: 100%;
-        margin: auto;
-    }
-}
-</style>
-==
-
