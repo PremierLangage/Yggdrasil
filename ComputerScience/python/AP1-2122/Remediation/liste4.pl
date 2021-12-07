@@ -26,7 +26,7 @@ def f0(l,c, w):
             ll.append(e)
     return ll
 
-def f1(l,c):
+def f1(l,c,w):
     ll=[]
     for e in l:
         if e in c or e in w:
