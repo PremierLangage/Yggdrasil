@@ -19,37 +19,31 @@ Et qui retourne {{formule}} sans modifier $%l1 , l2, l3%$.
 
 before==
 import random
-def f0(l,c):
+def f0(l,c, w):
     ll=[]
     for e in l:
-        if not e in c:
+        if not e in c and not e in w:
             ll.append(e)
     return ll
 
 def f1(l,c):
     ll=[]
     for e in l:
-        if e in c:
+        if e in c or e in w:
             ll.append(e)
     return ll
 
 
 formule, f= random.choice([
-('les elements de l1 qui ne sont pas dans l2',f0),
-('les elements de l1 qui sont dans l2',f1),
+('les elements de l1 qui ne sont ni dans l2 ni dans l3',f0),
+('les elements de l1 qui sont dans l2 ou L3',f1),
 ])
 
 
 pltest= f"""
->>>l=[1,2,3]; bling(l,[4])
-{f([1,2,3],[4])}
->>> l==[1,2,3]# l1 pas modifée
->>> bling([1,2,3],[3,7,8,9])
-{f([1,2,3],[3,7,8,9])}
->>> bling([1,2,3],[])
-{f([1,2,3],[])}
->>> bling([1,2,3],[1,2,3])
-{f([1,2,3],[1,2,3])}
+>>> tripatouille([1,2,4,5, 6, 7],[1,2],[6,7])
+{f([1,2,4,5, 6, 7],[1,2],[6,7])}
+
 """
 ==
 
