@@ -4,10 +4,10 @@ extends = /model/basic/basic.pl
 before ==
 import matplotlib.pyplot as plt
 from plmpl import fig2svg
-import numpy as np
+from numpy import linpace, cos, pi
 
-t = np.linspace(0.0, 4.0, 100)
-s = 1 + np.cos(np.pi*t)
+t = linspace(0.0, 4.0, 100)
+s = 1 + cos(pi*t)
 plt.plot(t, s)
 
 image = fig2svg(plt.gcf())
