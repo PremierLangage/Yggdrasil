@@ -15,6 +15,7 @@ import numpy as np
 def easyplot(ax, expr, xmin, xmax):
     sb = list(expr.free_symbols)
     t = np.arange(0.0, 2.0, 0.01)
+    s =[]
     for t0 in t:
         s.append(expr.evalf({sb[0]:t0}))
     #s = 1 + np.sin(2*np.pi*t)
