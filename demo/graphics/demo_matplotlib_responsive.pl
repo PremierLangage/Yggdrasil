@@ -15,10 +15,11 @@ s = 1 + np.sin(2*np.pi*t)
 
 def f(x):
     return 1+np.sin(2*np.pi*x)
-    
+
 plt.plot(t, s)
 plt.xlabel('time (s)')
 plt.ylabel('voltage (mV)')
+easyplot(plt.gcf(), f, 0, 2)
 plt.title('About as simple as it gets, folks')
 plt.grid(True)
 plt.show()
