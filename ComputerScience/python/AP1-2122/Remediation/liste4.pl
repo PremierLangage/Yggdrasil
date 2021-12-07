@@ -11,7 +11,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 text==
 
-Ecrire une fonction **bling** qui prend deux listes en paramêtres : $%l1 , l2, l3%$.  
+Ecrire une fonction **tripatouille** qui prend deux listes en paramêtres : $%l1 , l2, l3%$.  
 
 Et qui retourne {{formule}} sans modifier $%l1 , l2, l3%$. 
 
