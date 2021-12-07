@@ -40,3 +40,18 @@ def plot2svg(p, xlim=(-5,5), ylim=(-5,5)):
 
 def plot2(a, b):
     return plot(a, b)
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+import numpy as np
+
+def easyplot(ax, expr, xmin, xmax, npts=3):
+    sb = list(expr.free_symbols)
+    t = np.linspace(xmin, xmax, npts)
+    s = []
+    for t0 in t:
+        #s.append(expr.subs({sb[0]:t0}))
+        s.append(a*t0+b)
+    ax.plot(t, s)
+    return t, s
