@@ -13,6 +13,12 @@ plt.ylabel('y')
 plt.title('Title')
 plt.grid(True)
 plt.axis('equal')
+n = 5
+plt.xlim(-n, n)
+plt.ylim(-n, n)
+plt.grid(True)
+plt.xticks(range(-n, n+1))
+plt.yticks(range(-n, n+1))
 
 image = fig2svg(plt.gcf())
 ==
