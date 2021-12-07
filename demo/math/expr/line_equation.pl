@@ -14,7 +14,17 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 plt.clf()
-plt.plot([-1., 0., 1.], [4.0, 2.0, 0.0])
+def easyplot(ax, expr, xmin, xmax, npts=3):
+    sb = list(expr.free_symbols)
+    t = np.linspace(xmin, xmax, npts)
+    s = []
+    for t0 in t:
+        #s.append(expr.subs({sb[0]:t0}))
+        s.append(a*t0+b)
+    #ax.plot(t, s)
+    return t, s
+
+t,s = easyplot(plt.gca(), sol, -1, 1)
 plt.grid(True)
 
 image = fig2svg(plt.gcf())
