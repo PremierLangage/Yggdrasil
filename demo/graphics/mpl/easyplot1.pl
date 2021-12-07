@@ -7,7 +7,7 @@ from plmpl import fig2svg
 from math import cos, pi
 
 f = lambda x : 1 + cos(pi*x)
-plt.plot(plt.gcf(), f, 0, 4)
+easyplot(plt.gcf(), f, 0, 4)
 
 image = fig2svg(plt.gcf())
 ==
