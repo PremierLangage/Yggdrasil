@@ -54,13 +54,13 @@ palteau= bf()
 rom= br()
 pltest= f"""
 >>> palteau={palteau}; ou(palteau,5)
-{f(palteau)}
+{f(palteau,5)}
 >>> palteau={palteau}; ou(palteau,2)
-{f(palteau)}
+{f(palteau,2)}
 >>> palteau={rom}; ou(palteau,5)
-{f(rom)}
+{f(rom,5)}
 >>> palteau={rom}; ou(palteau,-1)
-{f(rom)}
+{f(rom,-1)}
 """
 ==
 
