@@ -19,7 +19,7 @@ def f(x):
 #plt.plot(t, s)
 plt.xlabel('time (s)')
 plt.ylabel('voltage (mV)')
-easyplot(plt.gcf(), f, 0, 2)
+easyplot(plt.gcf(), f, 0, 4)
 plt.title('About as simple as it gets, folks')
 plt.grid(True)
 plt.show()
