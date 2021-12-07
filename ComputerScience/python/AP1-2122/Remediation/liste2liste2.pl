@@ -57,9 +57,9 @@ pltest= f"""
 {f(palteau,5)}
 >>> palteau={palteau}; ou(palteau,2)
 {f(palteau,2)}
->>> palteau={rom}; ou(palteau,5)
+>>> palteau={rom}; ou(palteau,5) # Un grand plateau 
 {f(rom,5)}
->>> palteau={rom}; ou(palteau,-1)
+>>> palteau={rom}; ou(palteau,-1) # Grand mais sans la valeur 
 {f(rom,-1)}
 """
 ==
