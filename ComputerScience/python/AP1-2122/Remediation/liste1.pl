@@ -23,10 +23,16 @@ position, f= random.choice([
 
 
 pltest= f"""
->>> place([1,2,3],4)
+>>> l=[1,2,3]; place(l,4)
+>>> l
 {f([1,2,3],4)}
->>> place([],1)
+>>> l=[] place(l,1)
+>>> l
 [1]
+>>> place(l,1)
+[1, 1]
+>>> place(l,2)
+{f([1,1],2)}
 """
 ==
 
