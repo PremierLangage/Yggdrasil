@@ -39,9 +39,9 @@ pltest= f"""
 {f([1,2,3],4)}
 >>> l=[];place(l,1); l # Liste vide 
 [1]
->>> place(l,1); l
+>>> place(l,1); l # Ajout de 1
 [1, 1]
->>> place(l,2); l
+>>> place(l,2); l # Ajout de 2
 {f([1,1],2)}
 """
 ==
