@@ -10,7 +10,7 @@ b = randint(-3, 3)
 sol = a*x + b
 
 from matplotlib.figure import Figure
-fig = Figure()
+#fig = Figure()
 
 plt.figure(randint(1, 80))
 n = 5
