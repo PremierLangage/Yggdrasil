@@ -17,7 +17,7 @@ def fig2svg(fig, transparent=True, **kwargs):
             break
     return "\n".join(lines)
 
-def easyplot(fig, f, xmin, xmax, npts=100):
+def easyplot(fig, f, xmin, xmax, npts=100, **kwargs):
     """Plot a function in a matplotlib figure.
 
     Parameters:
@@ -40,4 +40,4 @@ def easyplot(fig, f, xmin, xmax, npts=100):
         ff = f
     x = np.linspace(xmin, xmax, npts)
     y = [ff(x0) for x0 in x]
-    ax.plot(x, y)
+    ax.plot(x, y, **kwargs)
