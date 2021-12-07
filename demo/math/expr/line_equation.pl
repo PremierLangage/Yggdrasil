@@ -1,7 +1,7 @@
 extends = /model/math/expr.pl
 
 before ==
-from mplsympy import fig2svg, plot2svg, plot2, easyplot
+from plmpl import fig2svg, easyplot
 import matplotlib.pyplot as plt
 
 var('x')
