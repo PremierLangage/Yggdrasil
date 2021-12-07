@@ -9,9 +9,7 @@ from numpy import cos, pi
 f = lambda x : x**2
 easyplot(plt.gcf(), f, -2.5, 2.5, color='red')
 
-plt.title('Title')
-plt.xlabel('x')
-plt.ylabel('y')
+plt.title('Parabole')
 plt.xlim(-3, 3)
 plt.ylim(0, 6)
 plt.xticks(range(-3, 4))
