@@ -16,10 +16,22 @@ Qui ajoute $%v%$ **{{position}}** dans la liste $%l%$.
 
 before==
 import random
+def f0(l,c):
+    l.insert(0,c)
+    return l
+def f1(l,c):
+    l.insert(1,c)
+    return l
+def fn(l,c):
+    l.insert(len(l),c)
+    return l
+
+
 position, f= random.choice([
-('au début',lambda l,v:l.insert(0,v);print(l)),
-('en deuxième position',lambda l,v:l.insert(1,v);print(l)),
-('a la fin',lambda l,v:l.insert(len(l),v);print(l))])
+('au début',f0),
+('en deuxième position',f1),
+('a la fin',fn)
+])
 
 
 pltest= f"""
