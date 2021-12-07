@@ -8,7 +8,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 text==
 
-Ecrire une fonction place qui prend deux paramêtres une liste et une valeur : $%l et v%$.
+Ecrire une fonction **place** qui prend deux paramêtres une liste et une valeur : $%l et v%$.
 Qui ajoute $%v%$ {{position}} dans la liste $%l%$.
 
 ==
