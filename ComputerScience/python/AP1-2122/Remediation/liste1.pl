@@ -43,6 +43,9 @@ pltest= f"""
 [1, 1]
 >>> place(l,2); l # Ajout de 2
 {f([1,1],2)}
+>>> place(l,34); l # Ajout de 34
+{f(f([1,1],2),34)}
+
 """
 ==
 
