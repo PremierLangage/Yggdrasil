@@ -13,7 +13,7 @@ sol = a*x + b
 import matplotlib.pyplot as plt
 import numpy as np
 
-t,s = easyplot(plt.gca(), sol, -1, 1)
+easyplot(plt.gca(), sol, -1, 1)
 plt.grid(True)
 
 image = fig2svg(plt.gcf())
