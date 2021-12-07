@@ -17,7 +17,7 @@ def easyplot(ax, expr, x, xmin, xmax):
     s = 1 + np.sin(2*np.pi*t)
     ax.plot(t, s)
 
-easyplot(gca(), 0,0,0,0)
+easyplot(plt.gca(), 0,0,0,0)
 plt.grid(True)
 
 image = fig2svg(plt.gcf())
