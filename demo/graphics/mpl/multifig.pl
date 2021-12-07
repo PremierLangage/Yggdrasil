@@ -12,8 +12,9 @@ f2 = lambda x : cos(x)
 easyplot(plt.gcf(), f1, -3, 3)
 image1 = fig2svg(plt.gcf())
 
+plt.clf()
 easyplot(plt.gcf(), f2, -3, 3)
-image2 = fig2svg(plt.gcf()
+image2 = fig2svg(plt.gcf())
 ==
 
 question ==
