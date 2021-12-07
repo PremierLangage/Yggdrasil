@@ -13,7 +13,7 @@ n = 5
 plt.xlim(-n, n)
 plt.ylim(-n, n)
 plt.grid(True)
-plt.xticks(list(range(-n, n+1)))
+plt.xticks(range(-n, n+1))
 plt.yticks(list(range(-n, n+1)))
 easyplot(plt.gcf(), sol, -1, 1)
 image = fig2svg(plt.gcf())
