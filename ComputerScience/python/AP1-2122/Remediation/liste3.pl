@@ -26,7 +26,7 @@ def f0(l,c):
     return ll
 
 def f1(l,c):
-        ll=[]
+    ll=[]
     for e in l:
         if e in c:
             ll.append(e)
