@@ -44,7 +44,6 @@ def fn(l,c):
 position, f= random.choice([
 ('apparait',f0),
 ('n\'apparait pas',f1),
-('apparait au moins deux fois',fn)
 ])
 
 def bf():
