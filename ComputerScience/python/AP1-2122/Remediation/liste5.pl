@@ -41,8 +41,10 @@ pltest= f"""
 {occ([1,2,4,5, 6,6, 7],6)}
 >>> doublev([1,2,4,5, 6, 7,7],7)
 {occ([1,2,4,5, 6, 7,7],7)}
->>> doublev({lp},3)
+>>> doublev({lp},7)# Une grande liste
 {occ(lp,7)}
+>>> >>> doublev({lp},12)# Une grande liste sans doublons
+{occ(lp,12)}
 """
 ==
 
