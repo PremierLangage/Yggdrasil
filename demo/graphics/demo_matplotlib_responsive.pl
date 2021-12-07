@@ -7,7 +7,7 @@ title = Figure Matplotlib
 
 before ==
 import matplotlib.pyplot as plt
-from plmpl import fig2svg
+from plmpl import fig2svg, easyplot
 import numpy as np
 
 t = np.arange(0.0, 2.0, 0.01)
