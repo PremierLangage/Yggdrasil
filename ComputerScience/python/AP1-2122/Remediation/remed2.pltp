@@ -1,12 +1,23 @@
 
 
 
+title = Remediation Volume 2
+
+introduction==
+
+Le principe de cette feuille d'exercices est que vous DEVEZ les faire dans l'ordre.
+
+Si vous n'arrivez pas a réssoudre l'exercice vous appellez le(la) chargé(e) de TP. 
+
+
+==
 
 
 # fonctions
 @ codefunc.pl
 @ pow.pl
 @ pow2.pl
+# listes
 @ liste1.pl
 @ liste2.pl
 @ liste3.pl
