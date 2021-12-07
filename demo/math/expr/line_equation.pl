@@ -13,7 +13,7 @@ sol = a*x + b
 import matplotlib.pyplot as plt
 import numpy as np
 
-
+plt.clear()
 plt.plot([-1., 0., 1.], [4.0, 2.0, 0.0])
 #plt.grid(True)
 
