@@ -19,7 +19,7 @@ def easyplot(ax, expr, xmin, xmax):
     s = []
     for t0 in t:
         #s.append(expr.subs({sb[0]:t0}))
-        s.append(t0)
+        s.append(a*t0+b)
     ax.plot(t, s)
 
 easyplot(plt.gca(), sol, -1, 1)
