@@ -21,6 +21,7 @@ def easyplot(ax, expr, xmin, xmax, npts=3):
         #s.append(expr.subs({sb[0]:t0}))
         s.append(a*t0+b)
     ax.plot(t, s)
+    return t, s
 
 easyplot(plt.gca(), sol, -1, 1)
 plt.grid(True)
