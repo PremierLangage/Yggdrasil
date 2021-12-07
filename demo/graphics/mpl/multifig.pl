@@ -18,10 +18,10 @@ image2 = fig2svg(plt.gcf())
 ==
 
 question ==
-<div class="img w40">
+<div class="w40">
 {{ image1 }}
 </div>
-<div class="img w40">
+<div class="w40">
 {{ image2 }}
 </div>
 ==
