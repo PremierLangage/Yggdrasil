@@ -40,7 +40,7 @@ formule, f= random.choice([
 
 
 pltest= f"""
->>>l=[1,2,3]; bling(l,[4])
+>>> l=[1,2,3]; bling(l,[4])
 {f([1,2,3],[4])}
 >>> l==[1,2,3]# l1 pas modifée
 >>> bling([1,2,3],[3,7,8,9])
