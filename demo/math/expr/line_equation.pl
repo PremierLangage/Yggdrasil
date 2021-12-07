@@ -16,7 +16,7 @@ import numpy as np
 plt.xlim(-5, 5)
 plt.ylim(-5, 5)
 plt.grid(True)
-plt.xticks(ticker.MultipleLocator(1))
+plt.xticks(list(range(-5,6)))
 #plt.axes().yaxis.set_major_locator(ticker.MultipleLocator(1))
 easyplot(plt.gca(), sol, -1, 1)
 
