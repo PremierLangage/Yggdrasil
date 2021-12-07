@@ -15,24 +15,15 @@ def fig2svg(fig, transparent=True, **kwargs):
             break
     return "\n".join(lines)
 
+def easyplot(fig, f, xmin, xmax, npts=100):
+    """Plot a function in a matplotlib figure.
 
-def plot2svg(p, xlim=(-5,5), ylim=(-5,5)):
-    x = symbols('x')
-    p = plot((x**2, (x, 0, 3)), (x, (x, -5, 5)))
-    p[1].line_color = 'red'
-    fig = p._backend.fig
-    return fig2svg(fig)
-
-def plot2(a, b):
-    return plot(a, b)
-
-import matplotlib.pyplot as plt
-
-import numpy as np
-
-def easyplot(fig, expr, xmin, xmax, npts=3):
-    """Add plot
+    Parameters:
+    - fig : matplotlib figure
+    - f : a SymPy expression or a function
+    """
     ax = fig.gca()
+    if isinstance(f, Expr)
     sb = list(expr.free_symbols)
     t = np.linspace(xmin, xmax, npts)
     s = []
