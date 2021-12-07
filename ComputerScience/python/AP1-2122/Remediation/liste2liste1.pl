@@ -49,7 +49,7 @@ position, f= random.choice([
 def bf():
     return [[5]*8]*20
 def br():
-    return [[random.randint(2,10 for x in range(109)] for y in range(12) ]
+    return [[random.randint(2,10) for x in range(109)] for y in range(12) ]
 palteau= bf()
 rom= br()
 pltest= f"""
