@@ -22,7 +22,7 @@ def easyplot(ax, expr, xmin, xmax):
         s.append(t0)
     ax.plot(t, s)
 
-#easyplot(plt.gca(), sol, -1, 1)
+easyplot(plt.gca(), sol, -1, 1)
 plt.grid(True)
 
 image = fig2svg(plt.gcf())
