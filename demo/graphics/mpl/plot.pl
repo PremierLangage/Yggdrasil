@@ -7,7 +7,7 @@ from plmpl import fig2svg
 import numpy as np
 
 t = np.linspace(0.0, 2.0, 100)
-s = 1 + np.cos(2*np.pi*t)
+s = 1 + np.cos(np.pi*t)
 plt.plot(t, s)
 
 image = fig2svg(plt.gcf())
