@@ -9,11 +9,12 @@ a = choice([-1, 1]) * choice([Rational(1, 2), 1, Rational(3, 2), 2])
 b = randint(-3, 3)
 sol = a*x + b
 
-plt.xlim(-5, 5)
-plt.ylim(-5, 5)
+n = 5
+plt.xlim(-n, n)
+plt.ylim(-n, n)
 plt.grid(True)
-plt.xticks(list(range(-5,6)))
-plt.yticks(list(range(-5,6)))
+plt.xticks(list(range(-n, n+1)))
+plt.yticks(list(range(-n, n+1)))
 easyplot(plt.gcf(), sol, -1, 1)
 image = fig2svg(plt.gcf())
 plt.close()
