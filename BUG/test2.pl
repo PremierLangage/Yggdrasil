@@ -21,9 +21,9 @@ title =
 form = 
 text = 
 
-tplpage =@ template.html
+tplpage =@ model/basic/template.html
 
-style.basic =@ basic.css.html
+style.basic =@ model/basic/basic.css.html
 
 evaluator ==
 def
