@@ -86,7 +86,7 @@ def mesure():
 
 
 
-def day2-2():
+def day2_2():
     horizon=0
     depth=0
     aim=0
