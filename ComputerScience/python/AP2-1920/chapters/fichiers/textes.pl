@@ -151,3 +151,9 @@ Dans cet exemple, il y a 7 mesures qui sont plus grandes que la mesure précéde
 
 Combien de mesures sont plus grandes que la mesure précédente ?
 ==
+
+text1_2==
+
+
+==
+
