@@ -1,6 +1,13 @@
 
+author= DR
 
-title= Données ca monte et cela descend
+
+tag=function # N'oubliez pas de remplir ce champs svp
+extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
+@ /builder/before.py [builder.py]
+
+
+title= Données ça monte et cela descend
 
 @ data
 
