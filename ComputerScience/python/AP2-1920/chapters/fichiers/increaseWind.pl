@@ -50,9 +50,29 @@ with open("data.txt","w") as f:
             start += random.randint(1,10)
             augment += 1
     print(start, file=f)
+
+
+def mesure():
+    lines=1
+    augmentatins=0
+    with open("data.txt","r") as f:
+        i=int(f.readline().strip())
+        j=int(f.readline().strip())
+        k=int(f.readline().strip())
+        l=int(line.strip())
+        prev= i+j+k+l
+        for line in f.readlines():
+            lines+=1
+            i,j,k,l=j,k,l,int(line.strip())
+            n = i+j+k+l
+            if prev < n:
+                augmentatins += 1
+            prev=n
+    return lines,augmentatins
+
 pltest=f"""
 >>> mesure()
-(2000, {augment})
+(2000, {mesure()})
 """
 ==
 
