@@ -14,5 +14,5 @@ Quel pays a pour capitale {{capitale}} ?
 ==
 
 evaluator ==
-def
+def toto
 ==
