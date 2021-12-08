@@ -35,7 +35,9 @@ if __name__ == "__main__":
         print(msg, file=sys.stderr)
         sys.exit(1)
     
-    dic = get_context()
+    with open(sys.argv[1], "r") as f:
+        context = json.load(f)
+    Component.sync_context(context)
     #dic['response'] = get_answers()
 
     if 'evaluator' in dic:
