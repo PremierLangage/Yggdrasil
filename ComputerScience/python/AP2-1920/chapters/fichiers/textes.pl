@@ -8,6 +8,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title = ceci n'est pas un exercice 
 
+text=
 
 text3_1 ==
 
