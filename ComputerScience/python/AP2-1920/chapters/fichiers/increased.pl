@@ -47,7 +47,7 @@ with open("data.txt","w") as f:
         else:
             start += random.randint(1,10)
             augment += 1
-    print(star, file=f)
+    print(start, file=f)
 pltest=f"""
 >>> mesure()
 (2000, {augment-1})
