@@ -3,8 +3,7 @@
 
 import sys, json, jsonpickle, time
 
-from sandboxio import output, get_context, get_answers
-
+from components import Component
 
 class StopEvaluatorExec(Exception):
     pass
