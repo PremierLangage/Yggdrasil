@@ -22,7 +22,7 @@ style.page == #|css|
 }
 
 .exercise__feedback {
- display: none;  
+ margin-bottom: 0px;
 }
 
 .exercise__actions {
