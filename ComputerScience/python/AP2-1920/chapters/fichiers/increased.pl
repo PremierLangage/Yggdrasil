@@ -50,7 +50,7 @@ with open("data.txt","w") as f:
 
 pltest=f"""
 >>> mesure()
-(2000, {augment})
+(2000, {augment-1})
 """
 ==
 
