@@ -48,7 +48,7 @@ Utilisez les nombres binaires de votre rapport de diagnostic pour calculer le ta
 
 before==
 
-text = text3_1
+text = text3_2
 
 ==
 
