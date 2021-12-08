@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from plmpl import fig2svg
 from numpy import linspace, cos, pi
 
-t = linspace(0.0, 4.0, 100)
+t = linspace(0, 4, 100)
 s = 1 + cos(pi*t)
 plt.plot(t, s)
 
