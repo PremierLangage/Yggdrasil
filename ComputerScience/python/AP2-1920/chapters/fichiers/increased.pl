@@ -45,10 +45,10 @@ def mesure():
     lines=1
     augmentatins=0
     with open("data","r") as f:
-        i=int(f.readline())
+        i=int(f.readline().strip())
         for line in f.readlines():
             lines+=1
-            j=int(line)
+            j=int(line.strip())
             if j>i:
                 augmentatins += 1
             i = j
