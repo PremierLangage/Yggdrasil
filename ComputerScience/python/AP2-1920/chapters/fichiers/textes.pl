@@ -20,18 +20,18 @@ Vous devez utiliser les nombres binaires du rapport de diagnostic pour générer
 
 Chaque bit du taux gamma peut être déterminé en trouvant le bit le plus commun dans la position correspondante de tous les nombres dans le rapport de diagnostic. Par exemple, étant donné le rapport de diagnostic suivant :
 
-00100
-11110
-10110
-10111
-10101
-01111
-00111
-11100
-10000
-11001
-00010
-01010
+00100  
+11110  
+10110  
+10111  
+10101  
+01111  
+00111  
+11100  
+10000  
+11001  
+00010  
+01010  
 
 En ne considérant que le premier bit de chaque nombre, il y a cinq 0 bits et sept 1 bits. Étant donné que le bit le plus courant est 1, le premier bit du taux gamma est 1.
 
