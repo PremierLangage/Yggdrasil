@@ -1,6 +1,6 @@
 # HACK pour modifier l'apparence de la page html de l'exercice
 
-style.page == #|css|
+style2.page == #|css|
 <style>
 
 .exercise__header{
