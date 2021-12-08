@@ -17,16 +17,12 @@ if __name__ == "__main__":
     Component.sync_context(dic)
     #dic['response'] = get_answers()
 
-    if 'evaluator' in dic:
-        glob = {}
-        exec(dic['evaluator'], dic)
-        exec("", glob)
-        for key in glob:
-            if key in dic and dic[key] == glob[key]:
-                del dic[key]
-    else:
-        print(missing_evaluator_stderr, file=sys.stderr)
-        sys.exit(1)
+    exec(dic['evaluator'], dic)
+    namespace = {}
+    exec("", namespace)
+    for key in namespace:
+        if key in dic and dic[key] == namespace[key]:
+            del dic[key]
 
     if 'grade' not in dic:
         print(missing_grade_stderr, file=sys.stderr)
