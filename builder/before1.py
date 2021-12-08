@@ -13,7 +13,11 @@ from json_encoder import JSONEncoder
 from jinja_env import Env
 
 if __name__ == "__main__":
-
+    if len(sys.argv) < 3:
+        msg = ("Sandbox did not call builder properly:\n"
+                +"Usage: python3 builder.py [input_json] [output_json]")
+        print(msg, file=sys.stderr)
+        sys.exit(1)
 
     outputfilename = sys.argv[2]
 
