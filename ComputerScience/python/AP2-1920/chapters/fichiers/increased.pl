@@ -9,7 +9,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 title= Données ça monte et cela descend
 
-@ data
+@ data [data.txt]
 
 text==
 
@@ -36,7 +36,7 @@ exemple:
 
 pltest==
 >>> mesure()
-7,12
+(2000, 1583)
 ==
 
 editor.code==
@@ -44,7 +44,7 @@ editor.code==
 def mesure():
     lines=1
     augmentatins=0
-    with open("data","r") as f:
+    with open("data.txt","r") as f:
         i=int(f.readline().strip())
         for line in f.readlines():
             lines+=1
