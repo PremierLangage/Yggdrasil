@@ -25,3 +25,5 @@ form ==
 evaluator ==
 def
 ==
+
+tplpage =@ /model/basic/template.html
