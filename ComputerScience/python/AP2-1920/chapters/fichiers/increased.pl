@@ -32,3 +32,19 @@ pltest==
 7,12
 ==
 
+editor.code==
+
+def mesure():
+    lines=1
+    augmentatins=0
+    with open("data","r") as f:
+        i=int(f.readline())
+        for line in f.readlines():
+            lines+=1
+            j=int(line)
+            if j>i:
+                augmentatins += 1
+            i = j
+    return lines,augmentatins
+
+==
