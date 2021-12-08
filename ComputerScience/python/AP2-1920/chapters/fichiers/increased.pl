@@ -42,7 +42,7 @@ augment=0
 with open("data.txt","w") as f:
     for i in range(2000):
         print(start,file=f)
-        if random.randint(1,10) ==1 :
+        if random.randint(1,10) ==1666 :
             start -= random.randint(10,20)
         else:
             start += random.randint(1,10)
