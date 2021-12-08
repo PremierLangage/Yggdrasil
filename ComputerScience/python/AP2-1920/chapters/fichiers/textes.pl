@@ -69,9 +69,25 @@ Les critères de bits dépendent du type de valeur de notation que vous souhaite
 Pour trouver la valeur nominale du générateur d'oxygène, déterminez la valeur la plus courante (0 ou 1) dans la position actuelle du bit et ne conservez que les chiffres avec ce bit dans cette position. Si 0 et 1 sont également communs, conservez les valeurs avec un 1 dans la position considérée.
 Pour trouver la cote de l'épurateur de CO2, déterminez la valeur la moins commune (0 ou 1) dans la position actuelle du bit et ne conservez que les nombres avec ce bit dans cette position. Si 0 et 1 sont également communs, conservez les valeurs avec un 0 dans la position considérée.
 
+
+00100  
+11110  
+10110  
+10111  
+10101  
+01111  
+00111  
+11100  
+10000  
+11001  
+00010  
+01010  
+
+
 Par exemple, pour déterminer la valeur nominale du générateur d'oxygène à l'aide du même exemple de rapport de diagnostic ci-dessus :
 
-Commencez avec les 12 nombres et ne considérez que le premier bit de chaque nombre. Il y a plus de 1 bits (7) que de 0 bits (5), donc ne gardez que les 7 nombres avec un 1 en première position : 11110, 10110, 10111, 10101, 11100, 10000 et 11001.
+Commencez avec les 12 nombres et ne considérez que le premier bit de chaque nombre. Il y a plus de 1 bits (7) que de 0 bits (5), donc ne gardez que les 7 nombres 
+avec un 1 en première position : 11110, 10110, 10111, 10101, 11100, 10000 et 11001.
 Ensuite, considérons le deuxième bit des 7 nombres restants : il y a plus de 0 bits (4) que de 1 bits (3), donc ne gardez que les 4 nombres avec un 0 en deuxième position : 10110, 10111, 10101 et 10000.
 En troisième position, trois des quatre nombres ont un 1, alors gardez ces trois : 10110, 10111 et 10101.
 En quatrième position, deux des trois nombres ont un 1, alors gardez ces deux : 10110 et 10111.
@@ -88,4 +104,50 @@ Comme il ne reste plus qu'un numéro, arrêtez-vous ; la cote de l'épurateur de
 Enfin, pour trouver la cote de survie, multipliez la cote du générateur d'oxygène (23) par la cote de l'épurateur de CO2 (10) pour obtenir 230.
 
 Utilisez les nombres binaires de votre rapport de diagnostic pour calculer la cote du générateur d'oxygène et la cote du laveur de CO2, puis multipliez-les ensemble. Quelle est la cote de survie du sous-marin? (Assurez-vous de représenter votre réponse en décimal, pas en binaire.)
+==
+
+text1_1==
+Vous vous occupez de vos affaires sur un navire en mer lorsque l'alarme à la mer se déclenche ! Vous vous précipitez pour voir si vous pouvez aider. Apparemment, l'un des Elfes a trébuché et a accidentellement envoyé les clés du traîneau dans l'océan !
+
+Avant de vous en rendre compte, vous êtes à l'intérieur d'un sous-marin que les Elfes gardent prêt à faire face à de telles situations. Il est couvert de lumières de Noël (parce que c'est bien le cas), et il a même une antenne expérimentale qui devrait être capable de suivre les clés si vous pouvez augmenter suffisamment la force de son signal ; il y a un petit compteur qui indique la force du signal de l'antenne en affichant 0-50 étoiles.
+
+Votre instinct vous dit que pour sauver Noël, vous devrez obtenir les cinquante étoiles d'ici le 25 décembre.
+
+Collectez des étoiles en résolvant des énigmes. Deux puzzles seront mis à disposition chaque jour du calendrier de l'Avent ; le deuxième puzzle est déverrouillé lorsque vous terminez le premier. Chaque puzzle accorde une étoile. Bonne chance!
+
+Lorsque le sous-marin descend sous la surface de l'océan, il effectue automatiquement un balayage par sonar du fond marin à proximité. Sur un petit écran, le rapport de balayage du sonar (votre entrée de puzzle) apparaît : chaque ligne est une mesure de la profondeur du fond marin alors que le balayage regarde de plus en plus loin du sous-marin.
+
+Par exemple, supposons que vous ayez le rapport suivant :
+
+199  
+200  
+208  
+210  
+200  
+207  
+240  
+269  
+260  
+263  
+
+Ce rapport indique qu'en balayant vers l'extérieur depuis le sous-marin, le balayage du sonar a trouvé des profondeurs de 199, 200, 208, 210, etc.
+
+Le premier ordre du jour est de déterminer à quelle vitesse la profondeur augmente, juste pour que vous sachiez à quoi vous avez affaire - vous ne savez jamais si les clés seront emportées dans des eaux plus profondes par un courant océanique ou un poisson ou quelque chose.
+
+Pour ce faire, comptez le nombre de fois qu'une mesure de profondeur augmente par rapport à la mesure précédente. (Il n'y a pas de mesure avant la première mesure.) Dans l'exemple ci-dessus, les modifications sont les suivantes :
+
+199 (N/A - aucune mesure précédente)  
+200 (augmenté)  
+208 (augmenté)  
+210 (augmenté)  
+200 (diminué)  
+207 (augmenté)  
+240 (augmenté)  
+269 ​​(augmenté)  
+260 (diminué)  
+263 (augmenté)  
+  
+Dans cet exemple, il y a 7 mesures qui sont plus grandes que la mesure précédente.
+
+Combien de mesures sont plus grandes que la mesure précédente ?
 ==
