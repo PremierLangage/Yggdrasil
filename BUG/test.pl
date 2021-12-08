@@ -1,5 +1,5 @@
 @ /builder/before.py [builder.py]
-@ /grader/testeval.py [grader.py]
+@ /grader/evaluator1.py [grader.py]
 @ /utils/sandboxio.py
 
 title =
