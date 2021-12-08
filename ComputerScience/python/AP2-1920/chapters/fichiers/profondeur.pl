@@ -71,19 +71,43 @@ def mesure():
     lines=1
     augmentatins=0
     with open("data.txt","r") as f:
-        i=int(f.readline().strip())
         j=int(f.readline().strip())
         k=int(f.readline().strip())
-        l=int(line.strip())
-        prev= i+j+k+l
+        l=int(f.readline().strip())
+        prev= j+k+l
         for line in f.readlines():
             lines+=1
-            i,j,k,l=j,k,l,int(line.strip())
+            j,k,l=k,l,int(line.strip())
             n = i+j+k+l
             if prev < n:
                 augmentatins += 1
             prev=n
     return lines,augmentatins
+
+
+
+def day2-2():
+    horizon=0
+    depth=0
+    aim=0
+    with open("./input.txt","r") as f:
+        for line in f:
+            #print(line)
+            l=line.strip().split(" ")
+            match l :
+                case ["forward",n]:
+                    horizon += int(n)
+                    depth += int(n)*aim
+                case ["up",n]:
+                    aim -= int(n)
+                case ["down",n]:
+                    aim += int(n)
+                case _:
+                    print("unknown command")
+            #print("horizon:",horizon,"depth:",depth)
+    return horizon*depth
+
+
 
 pltest=f"""
 >>> mesure()
