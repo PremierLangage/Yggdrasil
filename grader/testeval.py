@@ -36,7 +36,7 @@ if __name__ == "__main__":
         sys.exit(1)
     
     dic = get_context()
-    dic['response'] = get_answers()
+    #dic['response'] = get_answers()
 
     if 'evaluator' in dic:
         glob = {}
