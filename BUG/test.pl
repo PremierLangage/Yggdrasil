@@ -1,4 +1,4 @@
-@ /builder/before1.py [builder.py]
+@ /builder/before.py [builder.py]
 @ /grader/evaluator1.py [grader.py]
 @ /utils/builderlib.py
 @ /utils/plrandom.py
