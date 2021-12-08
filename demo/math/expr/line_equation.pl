@@ -10,6 +10,7 @@ b = randint(-3, 3)
 sol = a*x + b
 
 n = 5
+plt.clf()
 plt.xlim(-n, n)
 plt.ylim(-n, n)
 plt.grid(True)
