@@ -4,9 +4,9 @@ from builderlib import aux_component1, aux_component2, aux_component
 from jinja2 import Environment, BaseLoader
 
 # import Jinja environnement
-#from jinja_env import Env
+from jinja_env import Env
 
-#from json_encoder import JSONEncoder, JSONDecoder
+from json_encoder import JSONEncoder, JSONDecoder
 
 if __name__ == "__main__":
 
