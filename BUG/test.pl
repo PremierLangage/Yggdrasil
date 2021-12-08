@@ -1,3 +1,6 @@
+extends = /model/basic/temp.pl
+
+
 @ /builder/before1.py [builder.py]
 @ /grader/evaluator1.py [grader.py]
 @ /utils/builderlib.py
