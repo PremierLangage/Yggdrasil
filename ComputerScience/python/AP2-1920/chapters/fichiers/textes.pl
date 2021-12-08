@@ -55,7 +55,10 @@ text = text3_2
 text3_2==
 Maintenant, vous devez vérifier la cote de survie, qui peut être déterminée en multipliant la cote du générateur d'oxygène par la cote de l'épurateur de CO2.
 
-La cote du générateur d'oxygène et la cote du laveur de CO2 sont des valeurs qui peuvent être trouvées dans votre rapport de diagnostic - les trouver est la partie la plus délicate. Les deux valeurs sont localisées à l'aide d'un processus similaire qui consiste à filtrer les valeurs jusqu'à ce qu'il n'en reste qu'une. Avant de rechercher l'une ou l'autre des valeurs d'évaluation, commencez par la liste complète des nombres binaires de votre rapport de diagnostic et ne considérez que le premier bit de ces nombres. Puis:
+La cote du générateur d'oxygène et la cote du laveur de CO2 sont des valeurs qui peuvent être trouvées dans votre rapport de diagnostic -
+ les trouver est la partie la plus délicate. Les deux valeurs sont localisées à l'aide d'un processus similaire qui consiste à filtrer les valeurs 
+ jusqu'à ce qu'il n'en reste qu'une. Avant de rechercher l'une ou l'autre des valeurs d'évaluation, commencez par la liste complète des nombres binaires
+  de votre rapport de diagnostic et ne considérez que le premier bit de ces nombres. Puis:
 
 Conservez uniquement les nombres sélectionnés par les critères de bits pour le type de valeur d'évaluation que vous recherchez. Ignorez les nombres qui ne correspondent pas aux critères de bit.
 S'il ne vous reste plus qu'un numéro, arrêtez-vous ; il s'agit de la valeur d'évaluation que vous recherchez.
