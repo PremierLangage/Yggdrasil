@@ -54,4 +54,12 @@ if __name__ == "__main__":
         print(missing_grade_stderr, file=sys.stderr)
         sys.exit(1)
     
-    output(dic['grade'][0], dic['grade'][1], dic)
+    with open(sys.argv[3], "w+") as f:
+        f.write(jsonpickle.encode(dic, unpicklable=False))
+    
+    with open(sys.argv[4], "w+") as f:
+        print(str(dic['grade'][1]), file=f)
+    
+    print(int(dic['grade'][0]))
+    
+    sys.exit(0)
