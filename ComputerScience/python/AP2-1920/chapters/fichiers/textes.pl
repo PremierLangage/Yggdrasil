@@ -191,3 +191,5 @@ Considérons les sommes d'une fenêtre coulissante à trois mesures. Combien de 
 
 ==
 
+text2_2==
+==
