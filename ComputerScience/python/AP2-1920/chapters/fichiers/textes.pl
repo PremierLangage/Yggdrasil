@@ -1,4 +1,12 @@
 
+author= DR
+
+
+tag=function # N'oubliez pas de remplir ce champs svp
+extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
+@ /builder/before.py [builder.py]
+
+
 text3_1 ==
 
 Le sous-marin a fait des craquements étranges, alors vous lui demandez de produire un rapport de diagnostic au cas où.
