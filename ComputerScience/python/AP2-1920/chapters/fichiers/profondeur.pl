@@ -85,6 +85,24 @@ def mesure():
     return lines,augmentatins
 
 
+def day2_1():
+    horizon=0
+    depth=0
+    aim=0
+    with open("./input.txt","r") as f:
+        for line in f:
+            #print(line)
+            l=line.strip().split(" ")
+            if l[0]=="forward" :
+                    horizon += int(l[1])
+            elif l[0]== "up":
+                    depth -= int(l[1])
+            elif l[0]== "down":
+                    depth += int(l[1])
+            else:
+                    print("unknown command")
+            #print("horizon:",horizon,"depth:",depth)
+    return horizon*depth
 
 def day2_2():
     horizon=0
@@ -94,18 +112,18 @@ def day2_2():
         for line in f:
             #print(line)
             l=line.strip().split(" ")
-            match l :
-                case ["forward",n]:
-                    horizon += int(n)
-                    depth += int(n)*aim
-                case ["up",n]:
-                    aim -= int(n)
-                case ["down",n]:
-                    aim += int(n)
-                case _:
+            if l[0]=="forward" :
+                    horizon += int(l[1])
+                    depth += int(l[1])*aim
+            elif l[0]== "up":
+                    aim -= int(l[1])
+            elif l[0]== "down":
+                    aim += int(l[1])
+            else:
                     print("unknown command")
             #print("horizon:",horizon,"depth:",depth)
     return horizon*depth
+
 
 
 
