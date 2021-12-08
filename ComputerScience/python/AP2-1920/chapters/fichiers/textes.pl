@@ -6,6 +6,8 @@ tag=function # N'oubliez pas de remplir ce champs svp
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
+title = ceci n'est pas un exercice 
+
 
 text3_1 ==
 
