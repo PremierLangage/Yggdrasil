@@ -41,7 +41,7 @@ if __name__ == "__main__":
     if 'evaluator' in dic:
         glob = {}
         dic['StopEvaluatorExec'] = StopEvaluatorExec
-        exec(add_try_clause(dic['evaluator'], StopEvaluatorExec), dic)
+        exec(dic['evaluator'], dic)
         exec("", glob)
         for key in glob:
             if key in dic and dic[key] == glob[key]:
