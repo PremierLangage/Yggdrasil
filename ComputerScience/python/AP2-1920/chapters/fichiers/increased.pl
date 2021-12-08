@@ -45,7 +45,7 @@ with open("data.txt","w") as f:
         if random.randint(1,10) ==1 :
             start -= random.randint(10,20)
         else:
-            start -= random.randint(1,10)
+            start += random.randint(1,10)
             augment += 1
 
 pltest=f"""
