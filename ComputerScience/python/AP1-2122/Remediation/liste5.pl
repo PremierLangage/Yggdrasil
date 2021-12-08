@@ -19,7 +19,7 @@ Ecrire une fonction **doublev** qui prend deux paramêtres une liste et une vale
 
 Qui retourne l'indice de deux occurances consécutives de $%v%$ dans la liste.
 
-Par exemple: l= [1,2,2,3] et v=2 retourne 1 var l[1]==2 et l[2]==2.
+Par exemple: l= [1,2,2,3] et v=2 retourne 1 car l[1]==2 et l[2]==2.
 
 Retourne -1 si il n'y a pas deux occurences de v consécutives.
 ==
