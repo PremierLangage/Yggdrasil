@@ -15,7 +15,7 @@ text==
 
 Ecrire une fonction **ou** qui prend deux paramêtres une liste de liste et une valeur : $%l , v%$.  
 
-Qui retourne si  v {{formule}} dans les valeurs de l.
+Qui retourne si  v {{position}} dans les valeurs de l.
 
 ==
 
