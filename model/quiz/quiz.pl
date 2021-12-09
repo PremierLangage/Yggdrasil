@@ -73,6 +73,10 @@ for i, q in enumerate(list_questions):
     
 ==
 
+intro ==
+{{lstex}}
+==
+
 evaluator ==
 scores = []
 for step in range(nbstep):
