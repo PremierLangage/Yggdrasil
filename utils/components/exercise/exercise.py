@@ -1,5 +1,3 @@
-from uuid import uuid4
-
 class Ex:
 
     count = 0
