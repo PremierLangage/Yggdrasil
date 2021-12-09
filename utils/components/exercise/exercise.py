@@ -1,3 +1,5 @@
+
+
 class Ex:
 
     count = 0
@@ -10,7 +12,11 @@ class Ex:
         Ex.instances.append(self)
         self.evaluator = kwargs.get('evaluator', '')
         self.question = kwargs.get('question', '')
-        self.comp = kwargs.get('comp', '')
+        comp = kwargs.get('comp', '')
+        if isinstance(comp, dict):
+            self.comp = Component(comp)
+        else:
+            self.comp = comp
 
     def eval(self):
         return self.comp.eval()
