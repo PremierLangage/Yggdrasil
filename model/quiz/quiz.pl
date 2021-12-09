@@ -78,7 +78,8 @@ for i, q in enumerate(list_questions):
 evaluator ==
 scores = []
 for step in range(nbstep):
-    scores.append(comp[step].eval())
+    scores.append(lstex[step].eval())
+    #scores.append(comp[step].eval())
     comp[step].disable()
     comp[step].show()
 score = sum(scores) // len(scores)
