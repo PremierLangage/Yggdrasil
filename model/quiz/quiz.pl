@@ -67,7 +67,7 @@ for i, q in enumerate(list_questions):
         comp[i].shuffle()
     ex = Ex()
     ex.question = q['text']
-    ex.comp = "gg"
+    ex.cp = "gg"
     lstex.append(ex)
 
     
