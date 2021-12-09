@@ -65,7 +65,8 @@ for i, q in enumerate(list_questions):
     if 'ordered' not in q['options']:
         comp[i].shuffle()
     ex = Ex()
-    ex.
+    ex.question = q['text']
+    lstex.append(ex)
 ==
 
 evaluator ==
