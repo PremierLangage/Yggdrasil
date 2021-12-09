@@ -1,4 +1,4 @@
-
+drom component import Component
 
 class Ex:
 
