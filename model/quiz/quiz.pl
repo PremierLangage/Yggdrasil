@@ -6,7 +6,7 @@ extends = /model/basic/temp.pl
 @ /utils/plrandom.py
 @ /utils/plcsv.py
 @ /model/basic/jinja_basic.py [jinja_env.py]
-@ /model/basic/json_activity.py [json_encoder.py]
+@ /model/quiz/json_activity.py [json_encoder.py]
 @ /utils/components/exercise/exercise.py
 @ /utils/format/AMC.py
 @ /utils/components/scoring.py
