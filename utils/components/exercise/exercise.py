@@ -11,3 +11,6 @@ class Ex:
         Ex.count += 1
         Ex.instances.append(self)
         self.evaluator = kwargs.get('evaluator', '')
+
+    def eval(self):
+        return self.evaluator()
