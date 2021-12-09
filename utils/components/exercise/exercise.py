@@ -13,4 +13,4 @@ class Ex:
 
     def eval(self, dic):
         exec(self.evaluator, dic)
-        return score
+        return dic['score']
