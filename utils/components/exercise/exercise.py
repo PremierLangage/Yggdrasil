@@ -13,4 +13,4 @@ class Ex:
         self.evaluator = kwargs.get('evaluator', '')
 
     def eval(self):
-        return self.comp.eval()
+        return self.comp
