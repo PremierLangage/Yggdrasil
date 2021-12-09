@@ -67,7 +67,12 @@ for i, q in enumerate(list_questions):
         comp[i].shuffle()
     ex = Ex()
     ex.question = q['text']
+    def f():
+        return comp[i].eval()
+    ex.evaluator = f
     lstex.append(ex)
+
+    
 ==
 
 evaluator ==
