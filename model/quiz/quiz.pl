@@ -47,6 +47,7 @@ else:
 
 comp = []
 statement  = []
+lstex =[]
 
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
@@ -63,6 +64,8 @@ for i, q in enumerate(list_questions):
     statement.append(q['text'])
     if 'ordered' not in q['options']:
         comp[i].shuffle()
+    ex = Ex()
+    ex.
 ==
 
 evaluator ==
