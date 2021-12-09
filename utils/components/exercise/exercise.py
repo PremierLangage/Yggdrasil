@@ -10,11 +10,6 @@ class Ex:
         Ex.instances.append(self)
         self.evaluator = kwargs.get('evaluator', '')
         self.question = kwargs.get('question', '')
-        comp = kwargs.get('comp', '')
-        if isinstance(comp, dict):
-            self.comp = Component(comp)
-        else:
-            self.comp = comp
 
     def eval(self, dic):
         exec(self.evaluator, dic)
