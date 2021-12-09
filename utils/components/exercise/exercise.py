@@ -13,5 +13,4 @@ class Ex:
         self.evaluator = kwargs.get('evaluator', '')
 
     def eval(self):
-        exec(self.evaluator, globals())
-        return score
+        return self.comp.eval()
