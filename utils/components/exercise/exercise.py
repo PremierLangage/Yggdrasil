@@ -1,5 +1,3 @@
-from components import Component
-
 class Ex:
 
     count = 0
@@ -18,5 +16,6 @@ class Ex:
         else:
             self.comp = comp
 
-    def eval(self):
-        return self.comp.eval()
+    def eval(self, dic):
+        exec(self.evaluator, dic)
+        return score
