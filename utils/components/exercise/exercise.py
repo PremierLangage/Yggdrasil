@@ -1,4 +1,4 @@
-from component import Component
+from components import Component
 
 class Ex:
 
