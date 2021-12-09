@@ -9,6 +9,8 @@ class Ex:
         Ex.count += 1
         Ex.instances.append(self)
         self.evaluator = kwargs.get('evaluator', '')
+        self.question = kwargs.get('question', '')
+        self.comp = kwargs.get('comp', '')
 
     def eval(self):
-        return self.cp
+        return self.comp.eval()
