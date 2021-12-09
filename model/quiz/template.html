@@ -9,7 +9,7 @@
 {% for i in range(1, nbstep+1) %}
     <div id="q{{i}}" class="container tab-pane fade" style="padding-right: 0px;padding-left: 0px;">
     <div class="question">
-    {{ statement[i-1] }}
+    {{ lstex[i-1].question }}
     </div>
     <div style="display: block; margin-top: 1em;">
     {{ comp[i-1]|component }}
