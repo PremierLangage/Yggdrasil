@@ -24,10 +24,10 @@ for i in range(nbstep):
     qq = rf"""
 <strong> Phrase {i + 1}. </strong><br> 
 
-{ row.phrase }
+{ row['phrase'] }
 """
     questions.append(qq)
-    sol.append(row.rep)
+    sol.append(row['rep'])
     comp.append(Input())
 
 step = 0
