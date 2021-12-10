@@ -85,9 +85,9 @@ if step == 0:
 if step <= nbstep:
     qscore = comp[step-1].eval()
     if qscore != -1:
-        step += 1
         comp[step-1].disable()
         comp[step-1].show()
+        step += 1
 
 if step == nbstep + 1:
     state = "grade"
