@@ -14,7 +14,7 @@ extends = /model/basic/temp.pl
 @ /utils/components/checkbox.py
 
 before_scripts = ["before"]
-eval_scripts = ["next"]
+eval_scripts = ["classexo", "evaluator"]
 
 importfunc == #|python|
 from random import choice, choices, sample, shuffle
@@ -37,6 +37,7 @@ step = 0
 nbstep = 3
 comp = []
 questions = []
+scores = []
 ==
 
 intro ==
@@ -60,8 +61,7 @@ class Exo:
 
     def show(self):
         comp[self.step-1].show()
-
-scores = []
+==
 
 evaluator ==
 for step in range(nbstep):
