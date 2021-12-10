@@ -1,0 +1,70 @@
+{% if state == "active" %}  
+  
+<div class="tab-content">
+<div id="q0" class="container tab-pane active" style="padding-right: 0px;padding-left: 0px;">
+{{ intro }}
+<hr class="divide">
+<button class="nexttab btn btn-primary" onclick="showNext(0)">Commencer</i></button>
+</div>
+{% for i in range(1, nbstep+1) %}
+    <div id="q{{i}}" class="container tab-pane fade" style="padding-right: 0px;padding-left: 0px;">
+    <div class="question">
+    {{ lstex[i-1].question }}
+    </div>
+    <div style="display: block; margin-top: 1em;">
+    {{ comp[i-1]|component }}
+    </div>
+    <hr class="divide">
+    {% if i == nbstep %}
+        <button class="btn btn-primary action-submit">Terminer</button>
+    {% else %}
+        <button class="nexttab btn btn-primary" onclick="showNext({{i}})">Suivant</i></button>
+    {% endif %}
+    </div>
+{% endfor %}
+</div>
+
+{% else %}
+
+<ul class="nav nav-pills" role="tablist">
+<li class="nav-item">
+    <a class="nav-link btn rounded-0 btn-outline-dark" style="margin-right:0.1em; box-shadow: none; padding: 0.3rem 0.5rem;" data-toggle="pill" href="#intro"><i class="far fa-file"></i></a>
+</li>
+    {% for i in range(nbstep) %}
+<li class="nav-item">
+    {% if scores[i] == 100 %}
+    <a class="nav-link btn rounded-0 btn-outline-success" style="margin-right:0.1em; box-shadow: none; padding: 0.3rem 0.5rem;" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
+    {% else %}
+    <a class="nav-link btn rounded-0 btn-outline-danger" style="margin-right:0.1em; box-shadow: none; padding: 0.3rem 0.5rem;" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
+    {% endif %}
+</li>
+{% endfor %}
+</ul>
+<div class="tab-content">
+<div id="intro" class="container tab-pane active" style="padding-right: 0px;padding-left: 0px;"><br>
+Score : {{score}} / 100
+</div>
+{% for i in range(nbstep) %}
+    <div id="q{{i}}" class="container tab-pane fade" style="padding-right: 0px;padding-left: 0px;"><br>
+<div class="question">
+{{ statement[i] }}
+</div>
+<div style="display: block; margin-top: 1em;">
+{{ comp[i]|component }}
+</div>
+</div>
+{% endfor %}
+</div>
+
+{% endif %}
+
+<script type="text/javascript">
+function showNext(i){
+    var current = document.getElementById("q" + String(i));
+    var next = document.getElementById("q" + String(i+1));
+    current.classList.remove('active');
+    current.classList.add('fade');
+    next.classList.remove('fade');
+    next.classList.add('active');
+}
+</script>
