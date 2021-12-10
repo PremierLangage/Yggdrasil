@@ -1,11 +1,11 @@
 
 
-class Input:
+class Input(Component):
 
     def __init__(self, **kwargs):
         self.selector = 'c-input'
-        self.decorator = 'Numeric'
-        self.type = 'number'
+        self.decorator = 'Input'
+        self.type = 'input'
         super().__init__(**kwargs)
 
     def eval(self):
