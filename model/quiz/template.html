@@ -44,9 +44,9 @@
     {% for i in range(nbstep) %}
 <li class="nav-item">
     {% if scores[i] == 100 %}
-    <a class="nav-link btn rounded-0 btn-outline-success series-pill" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
+    <a class="series-pill nav-link btn rounded-0 btn-outline-success series-pill" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
     {% else %}
-    <a class="nav-link btn rounded-0 btn-outline-danger series-pill" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
+    <a class="series-pill nav-link btn rounded-0 btn-outline-danger series-pill" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
     {% endif %}
 </li>
 {% endfor %}
