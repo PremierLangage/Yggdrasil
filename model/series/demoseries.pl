@@ -29,6 +29,7 @@ for i in range(0):
 """
     questions.append(qq)
     sol.append(row.rep)
+    comp.append(Input())
 
 step = 0
 ==
