@@ -1,5 +1,7 @@
 extends = /model/series/series.pl
 
+@ /utils/components/input.py
+
 @ /Languages/Latin/phrases.txt
 
 before == #|python|
