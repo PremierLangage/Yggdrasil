@@ -70,7 +70,7 @@ for i, q in enumerate(list_questions):
     ex.evaluator = "score = comp[i].eval()"
     lstex.append(ex)
 
-step = 0
+step = -1
 score = -10
 ==
 
