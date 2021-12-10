@@ -10,6 +10,13 @@ title = ceci n'est pas un exercice
 
 text=
 
+
+before==
+
+text = text4_1
+
+==
+
 text3_1 ==
 
 Le sous-marin a fait des craquements étranges, alors vous lui demandez de produire un rapport de diagnostic au cas où.
@@ -46,11 +53,6 @@ Le taux epsilon est calculé de la même manière ; plutôt que d'utiliser le bi
 Utilisez les nombres binaires de votre rapport de diagnostic pour calculer le taux gamma et le taux epsilon, puis multipliez-les ensemble. Quelle est la consommation électrique du sous-marin ? (Assurez-vous de représenter votre réponse en décimal, pas en binaire.)
 ==
 
-before==
-
-text = text3_2
-
-==
 
 text3_2==
 Maintenant, vous devez vérifier la cote de survie, qui peut être déterminée en multipliant la cote du générateur d'oxygène par la cote de l'épurateur de CO2.
