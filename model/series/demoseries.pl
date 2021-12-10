@@ -33,8 +33,9 @@ tplpage =@ template2.html
 style.basic =@ /demo/css/basic.html
 
 before == #|python|
-
 state = "active"
+score = -1
+scores = []
 
 from components import Input
 
@@ -60,6 +61,4 @@ for i in range(nbstep):
     sol.append(data[1].strip())
 
 step = 0
-score = -10
-scores=[]
 ==
