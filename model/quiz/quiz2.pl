@@ -70,7 +70,7 @@ for i, q in enumerate(list_questions):
     ex.evaluator = "score = comp[i].eval()"
     lstex.append(ex)
 
-    
+step = 0  
 ==
 
 intro ==
@@ -78,14 +78,13 @@ Début du quiz
 ==
 
 evaluator ==
-scores = []
-for step in range(nbstep):
-    #scores.append(lstex[step].eval(globals()))
-    scores.append(comp[step].eval())
-    comp[step].disable()
-    comp[step].show()
-score = sum(scores) // len(scores)
-state = "grade"
+if step < nbstep:
+    qscore = comp[step].eval()
+    if qscore != -1:
+        step += 1
+
+if step == nbstep:
+    state = "grade"
 ==
 
 questions ==
