@@ -26,7 +26,7 @@ title =
 form = 
 text = 
 
-tplpage =@ template.html
+tplpage =@ /model/quiz/template.html
 
 style.basic =@ /model/basic/basic.css.html
 style.series =@ /model/quiz/series.css.html
