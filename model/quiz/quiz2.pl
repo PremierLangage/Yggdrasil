@@ -85,13 +85,13 @@ class Exo:
         self.step = step
 
     def eval(self):
-        return comp[step-1].eval()
+        return comp[self.step-1].eval()
 
     def disable(self):
-        comp[step-1].disable()
+        comp[self.step-1].disable()
 
     def show(self):
-        comp[step-1].show()
+        comp[self.step-1].show()
 
 if step == 0:
     step = 1
