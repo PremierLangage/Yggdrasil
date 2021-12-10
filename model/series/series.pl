@@ -44,12 +44,31 @@ Début de la série
 ==
 
 evaluator ==
+class Exo:
+
+    def __init__(self, step):
+        self.step = step
+
+    def eval(self):
+        if comp[self.step-1].value == sol[self.step-1]:
+            return 100
+        else:
+            return 0
+
+    def disable(self):
+        comp[self.step-1].disable()
+
+    def show(self):
+        comp[self.step-1].show()
+
 scores = []
+
 for step in range(nbstep):
-    #scores.append(lstex[step].eval(globals()))
-    scores.append(comp[step].eval())
-    comp[step].disable()
-    comp[step].show()
+    ex = Ex(step)
+    scores.append(ex.eval())
+    ex.disable()
+    ex.show()
+    
 score = sum(scores) // len(scores)
 state = "grade"
 ==
