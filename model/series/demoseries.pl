@@ -32,3 +32,7 @@ for i in range(0):
 
 step = 0
 ==
+
+intro ==
+{{ sample_lines }}
+==
