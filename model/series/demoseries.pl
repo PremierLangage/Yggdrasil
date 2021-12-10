@@ -1,36 +1,6 @@
-extends = /model/basic/temp.pl
-
-@ /builder/before1.py [builder.py]
-@ /grader/evaluator1.py [grader.py]
-@ /utils/builderlib.py
-@ /utils/plrandom.py
-@ /utils/plcsv.py
-@ /model/basic/jinja_basic.py [jinja_env.py]
-@ /model/quiz/json_activity.py [json_encoder.py]
-@ /utils/components/exercise/exercise.py
-@ /utils/format/AMC.py
-@ /utils/components/scoring.py
-@ /utils/components/radio.py
-@ /utils/components/checkbox.py
-
-before_scripts = ["before"]
-eval_scripts = ["evaluator"]
+extends = /model/series/series.pl
 
 @ /Languages/Latin/phrases.txt
-
-importfunc == #|python|
-from random import choice, choices, sample, shuffle
-from plrandom import randint, sampleint
-from plcsv import csv_choice, csv_sample, csv_col
-==
-
-title =
-form = 
-text = 
-
-tplpage =@ template2.html
-
-style.basic =@ /demo/css/basic.html
 
 before == #|python|
 state = "active"
