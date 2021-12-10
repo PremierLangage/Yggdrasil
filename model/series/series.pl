@@ -43,7 +43,7 @@ intro ==
 Début de la série
 ==
 
-evaluator ==
+classexo ==
 class Exo:
 
     def __init__(self, step):
@@ -63,12 +63,13 @@ class Exo:
 
 scores = []
 
+evaluator ==
 for step in range(nbstep):
     ex = Ex(step)
     scores.append(ex.eval())
     ex.disable()
     ex.show()
-    
+
 score = sum(scores) // len(scores)
 state = "grade"
 ==
