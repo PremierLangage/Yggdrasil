@@ -79,6 +79,20 @@ Début du quiz
 ==
 
 evaluator ==
+class Exo:
+
+    def __init__(self, step):
+        self.step = step
+
+    def eval(self):
+        return comp[step-1].eval()
+
+    def disable(self):
+        comp[step-1].disable()
+
+    def show(self):
+        comp[step-1].show()
+
 if step == 0:
     step = 1
 
