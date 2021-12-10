@@ -18,6 +18,8 @@ with open('phrases.txt') as f:
 
 
 sol = []
+solutions = []
+feedbacks = []
 questions = []
 comp = []
 
