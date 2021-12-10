@@ -33,7 +33,7 @@
     {% for i in range(nbstep) %}
 <li class="nav-item">
     {% if scores[i] == 100 %}
-    <a class="nav-link btn rounded-0 btn-outline-success" style="width:2.5em; height:2.5em; text-align:center; vertical-align: middle" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
+    <a class="nav-link btn rounded-0 btn-outline-success" style="width:2.5em; height:2.5em; text-align:center; vertical-align: middle; padding: 0;" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
     {% else %}
     <a class="nav-link btn rounded-0 btn-outline-danger" style="margin-right:0.1em; box-shadow: none; padding: 0.3rem 0.5rem;" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
     {% endif %}
