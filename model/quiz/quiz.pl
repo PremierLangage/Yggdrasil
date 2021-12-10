@@ -14,7 +14,7 @@ extends = /model/basic/temp.pl
 @ /utils/components/checkbox.py
 
 before_scripts = ["before"]
-eval_scripts = ["evalexo", "next"]
+eval_scripts = ["evaluator"]
 
 importfunc == #|python|
 from random import choice, choices, sample, shuffle
