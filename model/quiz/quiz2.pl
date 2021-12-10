@@ -81,9 +81,9 @@ Début du quiz
 evaluator ==
 if step == 0:
     step = 1
-    
+
 if step < nbstep:
-    qscore = comp[step].eval()
+    qscore = comp[step-1].eval()
     if qscore != -1:
         step += 1
 
