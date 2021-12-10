@@ -24,10 +24,10 @@ comp = []
 for i in range(nbstep):
     row = sample_lines[i]
     qq = rf"""
-    <strong> Phrase {i + 1}. </strong><br>
-    
-    { row['phrase'] }
-    """
+<strong> Phrase {i + 1}. </strong><br>
+
+{ row['phrase'] }
+"""
     questions.append(qq)
     sol.append(row['rep'])
     comp.append(Input())
