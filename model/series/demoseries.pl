@@ -34,7 +34,7 @@ step = 0
 ==
 
 classexo ==
-class Exo:
+class Ex:
 
     def __init__(self, step):
         self.step = step
