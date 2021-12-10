@@ -20,7 +20,7 @@ questions = []
 comp = []
 
 for i in range(nbstep):
-    rox = sample_lines[i]
+    row = sample_lines[i]
     comp.append(Input())
     qq = rf"""
 <strong> Phrase {i + 1}. </strong><br> 
