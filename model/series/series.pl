@@ -13,7 +13,7 @@ extends = /model/basic/temp.pl
 @ /utils/components/radio.py
 @ /utils/components/checkbox.py
 
-before_scripts = ["before"]
+before_scripts = ["importfunc", "before"]
 eval_scripts = ["classexo", "evaluator"]
 
 importfunc == #|python|
