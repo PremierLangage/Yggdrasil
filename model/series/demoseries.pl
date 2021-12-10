@@ -9,7 +9,7 @@ state = "active"
 score = -1
 scores = []
 
-from components import Input
+from input import Input
 
 nbstep = 4
 
