@@ -71,7 +71,7 @@ for i, q in enumerate(list_questions):
     lstex.append(ex)
 
 step = 0
-score = None
+score = -10
 ==
 
 intro ==
