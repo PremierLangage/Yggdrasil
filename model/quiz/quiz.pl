@@ -28,7 +28,8 @@ text =
 
 tplpage =@ template.html
 
-style.basic =@ /demo/css/basic.html
+style.basic =@ /model/basic/basic.css.html
+style.series =@ /model/quiz/series.css.html
 
 before == #|python|
 import random as rd
