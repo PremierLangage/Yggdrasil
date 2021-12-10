@@ -102,6 +102,7 @@ if step <= nbstep:
     if qscore != -1:
         ex.disable()
         ex.show()
+        scores.append(qscore)
         step += 1
 
 if step == nbstep + 1:
