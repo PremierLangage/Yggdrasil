@@ -92,8 +92,8 @@ if step <= nbstep:
     ex = Exo(step)
     qscore = ex.eval()
     if qscore != -1:
-        ex.disable()
-        ex.show()
+        #ex.disable()
+        #ex.show()
         scores.append(qscore)
         step += 1
 
