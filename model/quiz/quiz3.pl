@@ -63,7 +63,7 @@ for i in range(nbstep):
 { data[0].strip() }
 """
 
-    questions.append(data[0].strip())
+    questions.append(qq)
     sol.append(data[1].strip())
 
 step = 0
