@@ -97,10 +97,11 @@ if step == 0:
     step = 1
 
 if step <= nbstep:
-    qscore = comp[step-1].eval()
+    ex = Exo(step)
+    qscore = ex.eval()
     if qscore != -1:
-        comp[step-1].disable()
-        comp[step-1].show()
+        ex.disable()
+        ex.show()
         step += 1
 
 if step == nbstep + 1:
