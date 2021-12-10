@@ -46,6 +46,7 @@ def ex_disable(step):
     comp[step-1].disable()
 
 def ex_show(self):
+    comp[step-1].score = scores[stept-1]
     comp[step-1].show()
 ==
 
