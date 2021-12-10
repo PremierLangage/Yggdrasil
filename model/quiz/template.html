@@ -70,10 +70,10 @@ Score : {{score}} / 100
 </div>
 {% endif %}
 {% if solutions[i]|length > 1 %}
-<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
+<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution{{i}}" role="button" aria-expanded="false" aria-controls="collapseSolution">
 Voir la solution.
 </a>
-<div class="collapse" id="collapseSolution">
+<div class="collapse" id="collapseSolution{{i}}">
 {{ solution }}
 </div>
 {% endif %}
