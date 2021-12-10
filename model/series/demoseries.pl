@@ -30,6 +30,8 @@ for i in range(nbstep):
 """
     questions.append(qq)
     sol.append(row['rep'])
+    solutions.append(row['rep'])
+    feedbacks.append('')
     comp.append(Input())
 
 step = 0
