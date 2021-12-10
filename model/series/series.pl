@@ -65,10 +65,9 @@ class Exo:
 
 evaluator ==
 for step in range(nbstep):
-    ex = Ex(step)
-    scores.append(ex.eval())
-    ex.disable()
-    ex.show()
+    scores.append(ex_eval(step))
+    ex_disable(step)
+    ex_show(step)
 
 score = sum(scores) // len(scores)
 state = "grade"
