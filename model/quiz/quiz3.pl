@@ -16,6 +16,8 @@ extends = /model/basic/temp.pl
 before_scripts = ["before"]
 eval_scripts = ["evaluator"]
 
+@ /Languages/Latin/phrases.txt
+
 importfunc == #|python|
 from random import choice, choices, sample, shuffle
 from plrandom import randint, sampleint
