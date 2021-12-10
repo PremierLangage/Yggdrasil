@@ -12,7 +12,7 @@ from components import Input
 nbstep = 4
 
 with open('phrases.txt') as f:
-    sample_lines = csv_sample(f, nbstep)
+    sample_lines = csv_sample(f, nbstep, delimiter='|')
 
 
 sol = []
