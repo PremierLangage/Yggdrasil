@@ -79,6 +79,9 @@ Début du quiz
 ==
 
 evaluator ==
+if step == 0:
+    step = 1
+    
 if step < nbstep:
     qscore = comp[step].eval()
     if qscore != -1:
