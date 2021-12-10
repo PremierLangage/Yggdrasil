@@ -1,4 +1,5 @@
 
+from components import Component
 
 class Input(Component):
 
