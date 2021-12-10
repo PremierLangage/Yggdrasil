@@ -74,7 +74,10 @@ class Exo:
         self.step = step
 
     def eval(self):
-        return comp[self.step-1].eval()
+        if comp[self.step-1].value == sol[self.step-1]:
+            return 100
+        else:
+            return 0
 
     def disable(self):
         comp[self.step-1].disable()
