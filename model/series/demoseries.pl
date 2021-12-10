@@ -19,7 +19,7 @@ sol = []
 questions = []
 comp = []
 
-for i in range(0):
+for i in range(nbstep):
     rox = sample_lines[i]
     comp.append(Input())
     qq = rf"""
