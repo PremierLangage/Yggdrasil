@@ -74,7 +74,7 @@ for i, q in enumerate(list_questions):
 ==
 
 intro ==
-{{ lstex }}
+Début du quiz
 ==
 
 evaluator ==
