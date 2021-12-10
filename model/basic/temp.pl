@@ -4,8 +4,7 @@ style.page == #|css|
 <style>
 
 .exercise__header{
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  display: none;
 }
 
 .exercise__instructions{
