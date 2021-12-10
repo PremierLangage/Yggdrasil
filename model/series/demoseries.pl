@@ -34,5 +34,5 @@ step = 0
 ==
 
 intro ==
-{{ sample_lines }}
+
 ==
