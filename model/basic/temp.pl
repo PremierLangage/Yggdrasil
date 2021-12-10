@@ -21,7 +21,7 @@ style.page == #|css|
 }
 
 .exercise__feedback {
- margin-bottom: 0px;
+ margin-bottom: 0px !important;
 }
 
 .exercise__actions {
