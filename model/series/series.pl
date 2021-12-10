@@ -14,7 +14,7 @@ extends = /model/basic/temp.pl
 @ /utils/components/checkbox.py
 
 before_scripts = ["before"]
-eval_scripts = ["evaluator"]
+eval_scripts = ["next"]
 
 importfunc == #|python|
 from random import choice, choices, sample, shuffle
@@ -34,7 +34,7 @@ style.series =@ /model/quiz/series.css.html
 before == #|python|
 state = "active"
 step = 0
-
+nbstep = 3
 comp = []
 questions = []
 ==
