@@ -82,12 +82,12 @@ evaluator ==
 if step == 0:
     step = 1
 
-if step < nbstep:
+if step <= nbstep:
     qscore = comp[step-1].eval()
     if qscore != -1:
         step += 1
 
-if step == nbstep:
+if step == nbstep + 1:
     state = "grade"
 ==
 
