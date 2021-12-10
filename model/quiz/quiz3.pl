@@ -58,7 +58,7 @@ for i in range(nbstep):
     data = sample_lines[i].split("|")
     comp.append(Input())
     qq = rf"""
-<strong> Phrase {I + 1}. </strong><br> 
+<strong> Phrase {i + 1}. </strong><br> 
 
 { data[0].strip() }
 """
