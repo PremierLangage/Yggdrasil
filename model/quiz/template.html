@@ -63,6 +63,20 @@ Score : {{score}} / 100
 <div style="display: block; margin-top: 1em;">
 {{ comp[i]|component }}
 </div>
+<hr class="divide">
+{% if feedbacks[i]|length > 1 %}
+<div class="feedback">
+<i class="far fa-hand-point-right"></i> {{ feedback|safe }}
+</div>
+{% endif %}
+{% if solutions[i]|length > 1 %}
+<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
+Voir la solution.
+</a>
+<div class="collapse" id="collapseSolution">
+{{ solution }}
+</div>
+{% endif %}
 </div>
 {% endfor %}
 </div>
