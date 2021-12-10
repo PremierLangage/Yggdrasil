@@ -20,15 +20,15 @@ questions = []
 comp = []
 
 for i in range(0):
-    data = sample_lines[i].split("|")
+    rox = sample_lines[i]
     comp.append(Input())
     qq = rf"""
 <strong> Phrase {i + 1}. </strong><br> 
 
-{ data[0].strip() }
+{ row.phrase }
 """
     questions.append(qq)
-    sol.append(data[1].strip())
+    sol.append(row.rep)
 
 step = 0
 ==
