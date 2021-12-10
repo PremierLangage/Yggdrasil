@@ -6,9 +6,9 @@ extends = /model/basic/temp.pl
 @ /utils/plrandom.py
 @ /utils/plcsv.py
 @ /model/basic/jinja_basic.py [jinja_env.py]
-@ /model/quiz/json_activity.py [json_encoder.py]
+@ /model/basic/json_basic.py [json_encoder.py]
 @ /utils/components/exercise/exercise.py
-@ /utils/format/AMC.py
+
 @ /utils/components/scoring.py
 @ /utils/components/radio.py
 @ /utils/components/checkbox.py
@@ -32,12 +32,6 @@ style.basic =@ /model/basic/basic.css.html
 style.series =@ /model/quiz/series.css.html
 
 before == #|python|
-import random as rd
-from radio import Radio
-from checkbox import Checkbox
-from AMC import parse_AMC_TXT
-from exercise import Ex
-
 state = "active"
 step = 0
 
