@@ -72,6 +72,7 @@ for i, q in enumerate(list_questions):
 
 step = 0
 score = -10
+scores=[]
 ==
 
 intro ==
