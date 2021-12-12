@@ -80,9 +80,11 @@ Voir la solution.
 <script type="text/javascript">
 function show(i){
     var pills = document.getElementsByClassName('series-pill active');
-    var tabs = document.getElementsByClassName('series-tab active');
     for (i=0; i<pills.length; i++) {
         pills[i].classList.remove('active');
+    }
+    var tabs = document.getElementsByClassName('series-tab active');
+    for (i=0; i<tabs.length; i++) {
         tabs[i].classList.remove('active');
         tabs[i].classList.add('fade');
     }
