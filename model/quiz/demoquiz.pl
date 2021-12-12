@@ -1,11 +1,10 @@
-
+@ /Languages/Latin/phrases.txt
 
 before == #|python|
 nbstep = 4
 
 with open('phrases.txt') as f:
     sample_lines = csv_sample(f, nbstep, delimiter='|')
-
 
 sol = []
 solutions = []
@@ -25,6 +24,4 @@ for i in range(nbstep):
     solutions.append(row['rep'])
     feedbacks.append('')
     comp.append(Input())
-
-step = 0
 ==
