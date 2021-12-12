@@ -46,6 +46,8 @@ Début de la série
 
 
 evaluator ==
+score = -1
+
 if step == 0:
     step = 1
 
