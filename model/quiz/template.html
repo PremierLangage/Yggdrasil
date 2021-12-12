@@ -1,7 +1,7 @@
 {% if state == "active" %}  
 
 <div class="btn-group mr-2" role="group" aria-label="First group">
-<div id="pill{{0}}" class="btn rounded-0 btn-outline-secondary series-pill"><i class="fas fa-home"></i></div>
+<div id="pill{{0}}" class="btn rounded-0 btn-outline-secondary series-pill active"><i class="fas fa-home"></i></div>
 {% for i in range(nbstep) %}
 <div id="pill{{i}}" class="btn rounded-0 btn-outline-secondary series-pill">{{i+1}}</div>
 {% endfor %}
@@ -87,5 +87,9 @@ function showNext(i){
     current.classList.add('fade');
     next.classList.remove('fade');
     next.classList.add('active');
+    var current_pill= document.getElementById("pill" + String(i));
+    var next_pill = document.getElementById("pill" + String(i+1));
+    current_pill.classList.remove('active');
+    next_pill.classList.add('active');
 }
 </script>
