@@ -83,11 +83,7 @@ function show(i){
     for (i=0; i<pills.length; i++) {
         pills[i].classList.remove('active');
     }
-    var tabs = document.getElementsByClassName('series-tab active');
-    for (i=0; i<tabs.length; i++) {
-        tabs[i].classList.remove('active');
-        tabs[i].classList.add('fade');
-    }
+
     var tab = document.getElementById("q" + String(i));
     var pill = document.getElementById("pill" + String(i));
     tab.classList.remove('fade');
