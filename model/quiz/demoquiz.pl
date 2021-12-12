@@ -1,3 +1,4 @@
+@ /model/quiz/quiz.pl
 @ /Languages/Latin/phrases.txt
 
 before == #|python|
