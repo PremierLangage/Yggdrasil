@@ -50,8 +50,8 @@ if step == 0:
 if step <= nbstep:
         qscore = ex_eval(step)
         if qscore != -1:
-            ex_disable()
-            ex_show()
+            ex_disable(step)
+            ex_show(step)
             scores.append(qscore)
             step += 1
 
