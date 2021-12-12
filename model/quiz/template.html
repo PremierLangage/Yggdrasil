@@ -86,6 +86,10 @@ function show(i){
         tabs[i].classList.add('fade');
         pills[i].classList.remove('active');
     }
-
+    var tab = document.getElementById("q" + String(i));
+    var pill = document.getElementById("pill" + String(i));
+    tab.classList.remove('fade');
+    tab.classList.add('active');
+    pill.classList.add('active');
 }
 </script>
