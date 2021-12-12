@@ -81,7 +81,7 @@ Voir la solution.
 function show(i){
     var pills = document.getElementsByClassName('series-pill');
     var tabs = document.getElementsByClassName('series-tab');
-    for (i=10; i<pills.length; i++) {
+    for (i=0; i<pills.length; i++) {
         tabs[i].classList.remove('active');
         tabs[i].classList.add('fade');
         pills[i].classList.remove('active');
