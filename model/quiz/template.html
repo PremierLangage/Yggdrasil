@@ -1,11 +1,9 @@
 {% if state == "active" %}  
 
-<div class="btn-group mr-2" role="group" aria-label="First group">
 <div id="pill{{0}}" class="btn rounded-0 btn-outline-secondary series-pill active"><i class="fas fa-home"></i></div>
 {% for i in range(1, nbstep+1) %}
 <div id="pill{{i}}" class="btn rounded-0 btn-outline-secondary series-pill">{{i}}</div>
 {% endfor %}
-</div>
 
 <div class="tab-content">
 <div id="q0" class="container tab-pane active" style="padding-right: 0px;padding-left: 0px;">
