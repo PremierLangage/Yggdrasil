@@ -25,3 +25,18 @@ for i in range(nbstep):
     feedbacks.append('')
     comp.append(Input())
 ==
+
+classexo ==
+def ex_eval(step):
+    if comp[step-1].value == sol[step-1]:
+        return 100
+    else:
+        return 0
+
+def ex_disable(step):
+    comp[step-1].disabled = True
+
+def ex_show(self):
+    comp[step-1].score = scores[step-1]
+    comp[step-1].show()
+==
