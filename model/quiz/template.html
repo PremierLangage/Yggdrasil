@@ -45,21 +45,21 @@
 <div id="intro" class="series-tab container tab-pane active" style="padding-right: 0px;padding-left: 0px;"><br>
 Score : {{score}} / 100
 </div>
-{% for i in range(nbstep) %}
+{% for i in range(1, nbstep+1) %}
     <div id="q{{i}}" class="series-tab container tab-pane fade" style="padding-right: 0px;padding-left: 0px;"><br>
 <div class="question">
-{{ questions[i]|markdown }}
+{{ questions[i-1]|markdown }}
 </div>
 <div style="display: block; margin-top: 1em;">
-{{ comp[i]|component }}
+{{ comp[i-1]|component }}
 </div>
 <hr class="divide">
-{% if feedbacks[i]|length > 1 %}
+{% if feedbacks[i-1]|length > 1 %}
 <div class="feedback">
 <i class="far fa-hand-point-right"></i> {{ feedback|safe }}
 </div>
 {% endif %}
-{% if solutions[i]|length > 1 %}
+{% if solutions[i-1]|length > 1 %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution{{i}}" role="button" aria-expanded="false" aria-controls="collapseSolution">
 Voir la solution.
 </a>
