@@ -3,6 +3,7 @@ extends = /model/quiz/quiz.pl
 @ /Languages/Latin/phrases.txt
 
 before == #|python|
+from input import Input
 nbstep = 4
 
 with open('phrases.txt') as f:
