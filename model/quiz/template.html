@@ -84,6 +84,7 @@ function show(i){
     for (i=0; i<pills.length; i++) {
         tabs[i].classList.remove('active');
         tabs[i].classList.add('active');
+        pills[i].classList.remove('fade');
         pills[i].classList.add('active');
     }
     var tab = document.getElementById("q" + String(i));
