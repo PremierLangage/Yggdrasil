@@ -44,13 +44,18 @@ Début de la série
 
 
 evaluator ==
-scores = []
-for index in range(len(questions)):
-    scores.append(ex_eval(index))
-    ex_disable(index)
-    ex_show(index)
+if step == 0:
+    step = 1
 
-score = sum(scores) // len(scores)
-_state_ = "grade"
+if step <= nbstep:
+        qscore = ex_eval(step)
+    if qscore != -1:
+        ex_disable()
+        ex_show()
+        scores.append(qscore)
+        step += 1
+
+if step == nbstep + 1:
+    _state_ = "grade"
 ==
 
