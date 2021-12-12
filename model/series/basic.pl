@@ -49,11 +49,11 @@ if step == 0:
 
 if step <= nbstep:
         qscore = ex_eval(step)
-    if qscore != -1:
-        ex_disable()
-        ex_show()
-        scores.append(qscore)
-        step += 1
+        if qscore != -1:
+            ex_disable()
+            ex_show()
+            scores.append(qscore)
+            step += 1
 
 if step == nbstep + 1:
     _state_ = "grade"
