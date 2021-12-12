@@ -29,6 +29,10 @@ for i in range(nbstep):
     comp.append(Input())
 ==
 
+intro ==
+Ce quiz est composé de 4 question.
+==
+
 classexo ==
 def ex_eval(step):
     if comp[step-1].value == sol[step-1]:
