@@ -38,7 +38,7 @@ def ex_eval(step):
 def ex_disable(step):
     comp[step-1].disabled = True
 
-def ex_show(ste):
+def ex_show(step):
     comp[step-1].score = scores[step-1]
     comp[step-1].show()
 ==
