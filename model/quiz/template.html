@@ -1,15 +1,11 @@
 {% if state == "active" %}  
 
-<ul class="nav nav-pills" role="tablist">
-<li class="nav-item">
-    <a class="nav-link btn rounded-0 btn-outline-secondary series-pill"><i class="fas fa-home"></i></a>
-</li>
-    {% for i in range(nbstep) %}
-<li class="nav-item">
-    <a class="nav-link btn rounded-0 btn-outline-secondary series-pill">{{i+1}}</a>
-</li>
+<div class="btn-group mr-2" role="group" aria-label="First group">
+<button type="button" class="btn rounded-0 btn-outline-secondary series-pill"><i class="fas fa-home"></i></button>
+{% for i in range(nbstep) %}
+<button type="button" class="btn rounded-0 btn-outline-secondary series-pill">{{i+1}}</button>
 {% endfor %}
-</ul>
+</div>
 
 <div class="tab-content">
 <div id="q0" class="container tab-pane active" style="padding-right: 0px;padding-left: 0px;">
