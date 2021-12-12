@@ -1,4 +1,4 @@
-extends = /model/quiz/quiz.pl
+extends = /model/quiz/basic.pl
 
 @ /Languages/Latin/phrases.txt
 
