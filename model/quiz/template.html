@@ -81,12 +81,12 @@ Voir la solution.
 function show(i){
     var pills = document.getElementsByClassName('series-pill active');
     for (j=0; j<pills.length; j++) {
-        pills[i].classList.remove('active');
+        pills[j].classList.remove('active');
     }
     var tabs = document.getElementsByClassName('series-tab active');
     for (j=0; j<tabs.length; j++) {
-        tabs[i].classList.remove('active');
-        tabs[i].classList.add('fade');
+        tabs[j].classList.remove('active');
+        tabs[j].classList.add('fade');
     }
     var tab = document.getElementById("q" + String(i));
     var pill = document.getElementById("pill" + String(i));
