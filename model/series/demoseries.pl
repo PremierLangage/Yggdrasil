@@ -1,21 +1,13 @@
-extends = /model/series/series.pl
-
-@ /utils/components/input.py
+extends = /model/series/basic.pl
 
 @ /Languages/Latin/phrases.txt
 
 before == #|python|
-state = "active"
-score = -1
-scores = []
-
 from input import Input
-
 nbstep = 4
 
 with open('phrases.txt') as f:
     sample_lines = csv_sample(f, nbstep, delimiter='|')
-
 
 sol = []
 solutions = []
@@ -35,8 +27,10 @@ for i in range(nbstep):
     solutions.append(row['rep'])
     feedbacks.append('')
     comp.append(Input())
+==
 
-step = 0
+intro ==
+Ce quiz est composé de 4 question.
 ==
 
 classexo ==
@@ -49,12 +43,7 @@ def ex_eval(step):
 def ex_disable(step):
     comp[step-1].disabled = True
 
-def ex_show(self):
+def ex_show(step):
     comp[step-1].score = scores[step-1]
     comp[step-1].show()
-==
-
-intro ==
-
-Cet exercice est constitué de plusieurs questions.
 ==
