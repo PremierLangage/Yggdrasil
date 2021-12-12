@@ -22,6 +22,14 @@ from plrandom import randint, sampleint
 from plcsv import csv_choice, csv_sample, csv_col
 ==
 
+start ==
+state = "active"
+score = -1
+scores = []
+
+from input import Input
+==
+
 title =
 form = 
 text = 
