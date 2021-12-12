@@ -3,6 +3,7 @@ extends = /model/series/basic.pl
 @ /Languages/Latin/phrases.txt
 
 before == #|python|
+step = 0
 from input import Input
 nbstep = 4
 
