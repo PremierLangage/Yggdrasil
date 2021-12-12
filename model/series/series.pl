@@ -52,11 +52,11 @@ Début de la série
 
 
 evaluator ==
-for step in range(nbstep):
-    scores.append(ex_eval(step))
-    ex_disable(step)
-    ex_show(step)
+for step in range(index):
+    scores.append(ex_eval(index))
+    ex_disable(index)
+    ex_show(index)
 
 score = sum(scores) // len(scores)
-state = "grade"
+_state_ = "grade"
 ==
