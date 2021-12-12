@@ -79,10 +79,12 @@ Voir la solution.
 
 <script type="text/javascript">
 function show(i){
-    var pills = document.getElementsByClassName('series-pill');
-    var tabs = document.getElementsByClassName('series-tab');
+    var pills = document.getElementsByClassName('series-pill active');
+    var tabs = document.getElementsByClassName('series-tab active');
     for (i=0; i<pills.length; i++) {
         pills[i].classList.remove('active');
+        tabs[i].classList.remove('active');
+        tabs[i].classList.add('fade');
     }
     var tab = document.getElementById("q" + String(i));
     var pill = document.getElementById("pill" + String(i));
