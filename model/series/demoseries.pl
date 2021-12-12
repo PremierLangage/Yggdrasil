@@ -55,5 +55,6 @@ def ex_show(self):
 ==
 
 intro ==
+
 Cet exercice est constitué de plusieurs questions.
 ==
