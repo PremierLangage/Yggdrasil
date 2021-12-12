@@ -36,7 +36,6 @@ style.basic =@ /model/basic/basic.css.html
 style.series =@ /model/quiz/series.css.html
 
 before == #|python|
-
 nbstep = 3
 comp = []
 questions = []
@@ -48,6 +47,7 @@ Début de la série
 
 
 evaluator ==
+scores = []
 for index in range(nbstep):
     scores.append(ex_eval(index))
     ex_disable(index)
