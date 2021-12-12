@@ -27,7 +27,9 @@ _state_ = "active"
 ==
 
 title =
+
 form = 
+
 text = 
 
 tplpage =@ /model/quiz/template.html
