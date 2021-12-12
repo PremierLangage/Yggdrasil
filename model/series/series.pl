@@ -52,7 +52,7 @@ Début de la série
 
 
 evaluator ==
-for step in range(index):
+for index in range(nbstep):
     scores.append(ex_eval(index))
     ex_disable(index)
     ex_show(index)
