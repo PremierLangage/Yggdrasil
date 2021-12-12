@@ -23,10 +23,10 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 start ==
-state = "active"
 score = -1
 scores = []
-
+_state_ = "active"
+_step_ = 0
 from input import Input
 ==
 
@@ -40,12 +40,10 @@ style.basic =@ /model/basic/basic.css.html
 style.series =@ /model/quiz/series.css.html
 
 before == #|python|
-state = "active"
-step = 0
+
 nbstep = 3
 comp = []
 questions = []
-scores = []
 ==
 
 intro ==
