@@ -26,7 +26,7 @@ start ==
 score = -1
 scores = []
 _state_ = "active"
-_step_ = 0
+_index_ = 0
 from input import Input
 ==
 
