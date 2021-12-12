@@ -1,9 +1,9 @@
 {% if state == "active" %}  
 
 <div class="btn-group mr-2" role="group" aria-label="First group">
-<div class="btn rounded-0 badge-outline-secondary series-pill"><i class="fas fa-home"></i></div>
+<button  class="btn rounded-0 badge-outline-secondary series-pill"><i class="fas fa-home"></i></button>
 {% for i in range(nbstep) %}
-<div class="btn rounded-0 badge-outline-secondary series-pill active">{{i+1}}</div>
+<button class="btn rounded-0 badge-outline-secondary series-pill">{{i+1}}</button>
 {% endfor %}
 </div>
 
