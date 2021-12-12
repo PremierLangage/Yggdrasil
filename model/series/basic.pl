@@ -23,6 +23,8 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 start ==
+scores = []
+step = 0
 _state_ = "active"
 ==
 
