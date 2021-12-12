@@ -7,7 +7,6 @@ extends = /model/basic/temp.pl
 @ /utils/plcsv.py
 @ /model/basic/jinja_basic.py [jinja_env.py]
 @ /model/basic/json_basic.py [json_encoder.py]
-@ /utils/components/exercise/exercise.py
 
 @ /utils/components/scoring.py
 @ /utils/components/radio.py
