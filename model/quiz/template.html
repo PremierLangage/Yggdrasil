@@ -33,23 +33,14 @@
 
 <button id="pill{{0}}" class="btn rounded-0 btn-outline-secondary series-pill active" onclick="show(0)" ><i class="fas fa-home"></i></button>
 {% for i in range(1, nbstep+1) %}
-<button id="pill{{i}}" class="btn rounded-0 btn-outline-secondary series-pill" onclick="show({{i}})">{{i}}</button>
+    {% if scores[i] == 100 %}
+<button id="pill{{i}}" class="btn rounded-0 btn-outline-succes series-pill" onclick="show({{i}})">{{i}}</button>
+    {% else %}
+<button id="pill{{i}}" class="btn rounded-0 btn-outline-danger series-pill" onclick="show({{i}})">{{i}}</button>
+    {% endif %}
 {% endfor %}
 
-<ul class="nav nav-pills" role="tablist">
-<li class="nav-item">
-    <a class="nav-link btn rounded-0 btn-outline-secondary series-pill" data-toggle="pill" href="#intro"><i class="fas fa-home"></i></a>
-</li>
-    {% for i in range(1, nbstep+1) %}
-<li class="nav-item">
-    {% if scores[i] == 100 %}
-    <a class="series-pill nav-link btn rounded-0 btn-outline-success series-pill" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
-    {% else %}
-    <a class="series-pill nav-link btn rounded-0 btn-outline-danger series-pill" data-toggle="pill" href="#q{{i}}">{{i+1}}</a>
-    {% endif %}
-</li>
-{% endfor %}
-</ul>
+
 <div class="tab-content">
 <div id="intro" class="container tab-pane active" style="padding-right: 0px;padding-left: 0px;"><br>
 Score : {{score}} / 100
