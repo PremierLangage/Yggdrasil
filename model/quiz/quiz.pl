@@ -35,11 +35,6 @@ tplpage =@ /model/quiz/template.html
 style.basic =@ /model/basic/basic.css.html
 style.series =@ /model/quiz/series.css.html
 
-before == #|python|
-nbstep = 3
-comp = []
-questions = []
-==
 
 intro ==
 Début de la série
@@ -48,7 +43,7 @@ Début de la série
 
 evaluator ==
 scores = []
-for index in range(nbstep):
+for index in range(len(questions)):
     scores.append(ex_eval(index))
     ex_disable(index)
     ex_show(index)
