@@ -16,7 +16,11 @@
 <button class="nexttab btn btn-primary" onclick="show(1)">Commencer</i></button>
 </div>
 {% for i in range(1, nbstep+1) %}
+{% if i == step %}
+    <div id="q{{i}}" class="series-tab container tab-pane active" style="padding-right: 0px;padding-left: 0px;">
+{% else %}
     <div id="q{{i}}" class="series-tab container tab-pane fade" style="padding-right: 0px;padding-left: 0px;">
+{% endif %}
     <div class="question">
     {{ questions[i-1]|markdown }}
     </div>
