@@ -12,6 +12,7 @@ extends = /model/basic/temp.pl
 @ /utils/components/scoring.py
 @ /utils/components/radio.py
 @ /utils/components/checkbox.py
+@ /utils/components/input.py
 
 before_scripts = ["importfunc", "start", "before"]
 eval_scripts = ["classexo", "evaluator"]
