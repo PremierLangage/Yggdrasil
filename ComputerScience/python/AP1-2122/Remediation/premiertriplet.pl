@@ -30,26 +30,26 @@ Et None sinon.
 before==
 from random import randint
 def makes():
-    l=[chr(randint(0,25)+97) for i in range(20)]
-    u= randint(10,15)
+    l=[chr(randint(0,25)+97) for i in range(16)]
+    u= randint(4,15)
     for x in range(2):
-        l.insert(l[u],u)
-    return "".join(l)
+        l.insert(u,l[u])
+    return ''.join(l)
 
-
-def ftriple(l):
+def ftriple(s):
     i=0
+    l=list(s)
     while i+2< len(s):
         if l[i]==l[i+1] and l[i]==l[i+2]:
             return (l[i],i)
+        i += 1
+        
 for yy in range(3):
     s=makes()
     pltest += f"""
     >>> ptriplet({s})
     {ftriple(s)}
     """ 
-
-texte += pltest
 ==
 
 pltest==
