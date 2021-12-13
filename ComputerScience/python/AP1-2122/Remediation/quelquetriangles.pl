@@ -27,15 +27,11 @@ Exemple de chaine :
 en cas d'égalité ce n'est pas un triangle.
 ==
 
+@ fileread.py 
+
 pltest==
->>> def file2list():#
-...    with open("triangles.txt","r") as f:
-...        l = []
-...        for line in f:
-...            l.append(line.strip())
-...    return l
-...
->>> R=check(file2listq())#
+>>> import fileread
+>>> r=check(file2listq())#
 >>> if r > 1050: #
 ...     print("Trop grand")
 ... elif r < 1050: #
