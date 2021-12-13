@@ -30,8 +30,8 @@ en cas d'égalité ce n'est pas un triangle.
 @ fileread.py 
 
 pltest==
->>> import fileread #
->>> r=check(fileread.f2l("triangles.txt"))#
+>>> import fileread #!
+>>> r=check(fileread.f2l("triangles.txt"))#!
 >>> if r > 1050: #
 ...     print("Trop grand")
 ... elif r < 1050: #
