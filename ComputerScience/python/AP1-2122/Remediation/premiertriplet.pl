@@ -36,10 +36,9 @@ def makes():
         l.insert(u,l[u])
     return ''.join(l)
 
-def ftriple(s):
+def ftriple(l):
     i=0
-    l=list(s)
-    while i+2< len(s):
+    while i+2< len(l):
         if l[i]==l[i+1] and l[i]==l[i+2]:
             return (l[i],i)
         i += 1
