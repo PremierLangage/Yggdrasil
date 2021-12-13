@@ -47,7 +47,7 @@ for yy in range(3):
     s=makes()
     pltest += f"""
     >>> ptriplet("{s}")
-    {ftriple("s")}
+    {ftriple(s)}
     """ 
 ==
 
