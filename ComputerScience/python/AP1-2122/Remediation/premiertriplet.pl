@@ -4,7 +4,7 @@
 
 
 author= DR
-title=Deux listes again
+title=Triplets
 
 tag=function # N'oubliez pas de remplir ce champs svp
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
