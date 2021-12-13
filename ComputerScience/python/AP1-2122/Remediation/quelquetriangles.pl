@@ -29,6 +29,8 @@ en cas d'égalité ce n'est pas un triangle.
 
 @ fileread.py 
 
+CORRECT % 1050
+
 pltest==
 >>> import fileread #!
 >>> r=check(fileread.f2l("triangles.txt")) #!
