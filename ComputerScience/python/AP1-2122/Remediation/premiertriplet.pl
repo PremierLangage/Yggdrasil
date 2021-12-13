@@ -37,7 +37,7 @@ def makes():
     return ''.join(l)
 
 
-def ftriple(s):
+def ftriple(l):
     i=0
     while i+2< len(s):
         if l[i]==l[i+1] and l[i]==l[i+2]:
