@@ -6,3 +6,4 @@ def f2l(filename):#
             l.append(line.strip())
     return l
 
+CORRECT=1050
