@@ -13,7 +13,7 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 text==
 
-Ecrire une fonction **ptriplet** qui prend un itérable en paramêtres .  
+Ecrire une fonction **ptriplet** qui prend un itérable en paramêtre.  
 
 Et qui retourne un tuple contenant la valeur et l'indice du premier triplet de valeurs identiques. 
 
@@ -22,6 +22,8 @@ exemple :
 
     >>> ptriplet("aaabcd")
     ('a', 0)
+    >>>  ptriplet(['z','a','a','a','b'])
+    ('a', 1)
 
 Et None sinon.
 
