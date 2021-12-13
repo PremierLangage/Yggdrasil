@@ -55,6 +55,7 @@ for yy in range(3):
 pltest==
 >>> ptriplet("aaabcd")
 ('a', 0)
+>>> ptriplet("abcdefghjkilnaopqusrtxwz")
 ==
 
 
