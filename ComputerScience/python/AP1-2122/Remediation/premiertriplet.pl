@@ -47,8 +47,8 @@ def ftriple(s):
 for yy in range(3):
     s=makes()
     pltest += f"""
-    >>> ptriplet({s})
-    {ftriple(s)}
+    >>> ptriplet("{s}")
+    {ftriple("s")}
     """ 
 ==
 
