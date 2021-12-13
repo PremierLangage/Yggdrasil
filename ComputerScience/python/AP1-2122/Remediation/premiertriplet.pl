@@ -61,5 +61,10 @@ pltest==
 
 
 code==
-
+def ptriplet(l):
+    i=0
+    while i+2< len(l):
+        if l[i]==l[i+1] and l[i]==l[i+2]:
+            return (l[i],i)
+        i += 1
 ==
