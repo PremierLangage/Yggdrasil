@@ -10,7 +10,11 @@
 {% endfor %}
 
 <div class="tab-content">
+{% if step == 0 %}
 <div id="q0" class="series-tab container tab-pane active" style="padding-right: 0px;padding-left: 0px;">
+{% else %}
+<div id="q0" class="series-tab container tab-pane fade" style="padding-right: 0px;padding-left: 0px;">
+{% endif %}
 {{ intro }}
 <hr class="divide">
 <button class="nexttab btn btn-primary" onclick="show(1)">Commencer</i></button>
