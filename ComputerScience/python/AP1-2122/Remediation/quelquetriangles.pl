@@ -15,9 +15,9 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 text==
 
-Une des propriétés des triangles est la somme des longueurs deux cotés est toujours plus grande que la longueur du troisième coté.
+Une des propriétés des triangles est : la somme des longueurs de deux cotés est toujours plus grande que la longueur du troisième coté.
 
-Ecrie une fonction **check** qui prend une liste de chaines de caractère contenant trois entiers et qui retourne le nombre de chaine contenant des triangles.
+Ecrire une fonction **check** qui prend une liste de chaines de caractère contenant trois entiers et qui retourne le nombre de chaine contenant des triangles.
 
 Exemple de chaine :
 
