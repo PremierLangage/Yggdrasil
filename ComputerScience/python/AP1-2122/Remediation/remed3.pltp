@@ -2,14 +2,11 @@
 
 
 
-title = Remediation Volume 2
+title = Remediation Volume 3
 
 introduction==
 
-Le principe de cette feuille d'exercices est que vous DEVEZ les faire dans l'ordre.
-
-Si vous n'arrivez pas a réssoudre l'exercice vous appellez le(la) chargé(e) de TP. 
-
+Des exercices un peu plus durs.
 
 ==
 
@@ -20,3 +17,4 @@ Si vous n'arrivez pas a réssoudre l'exercice vous appellez le(la) chargé(e) de
 @ premiertriplet.pl 
 
 
+@ /ComputerScience/python/AP1-2122/Remediation/brouille.pl
