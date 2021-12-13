@@ -23,6 +23,7 @@ exemple :
     >>> ptriplet("aaabcd")
     ('a', 0)
 
+Et None sinon.
 
 ==
 
