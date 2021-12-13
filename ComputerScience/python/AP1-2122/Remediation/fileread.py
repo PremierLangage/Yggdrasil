@@ -1,5 +1,5 @@
 
-def file2list(filename):#
+def f2l(filename):#
     with open(filename,"r") as f:
         l = []
         for line in f:
