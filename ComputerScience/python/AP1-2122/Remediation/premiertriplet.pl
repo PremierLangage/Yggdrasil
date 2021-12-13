@@ -15,7 +15,7 @@ text==
 
 Ecrire une fonction **ptriplet** qui prend un itérable en paramêtre.  
 
-Et qui retourne un tuple contenant la valeur et l'indice du premier triplet de valeurs identiques. 
+Et qui retourne un tuple contenant la valeur et l'indice du premier élément du premier triplet de valeurs identiques. 
 
 
 exemple :
