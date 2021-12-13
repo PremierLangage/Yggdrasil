@@ -33,7 +33,7 @@ CORRECT % 1050
 
 pltest==
 >>> import fileread #!
->>> r=check(fileread.f2l("triangles.txt")) #!
+>>> r=check(fileread.f2l("triangles.txt")) ; CORRECT=1050#!
 >>> if r > CORRECT: #!
 ...     print("Trop grand")
 ... elif r < CORRECT: #
