@@ -15,7 +15,7 @@
 {% else %}
 <div id="q0" class="series-tab container tab-pane fade" style="padding-right: 0px;padding-left: 0px;">
 {% endif %}
-<div class="question" style="margin-top: 1em;">
+<div class="question" style:"padding-top: 1em;">
 {{ intro }}
 </div>
 <hr class="divide">
@@ -27,7 +27,7 @@
 {% else %}
     <div id="q{{i}}" class="series-tab container tab-pane fade" style="padding-right: 0px;padding-left: 0px;">
 {% endif %}
-    <div class="question" style="margin-top: 1em;">
+    <div class="question" style:"margin-top: 1em;">
     {{ questions[i-1]|markdown }}
     </div>
     <div style="display: block; margin-top: 1em;">
@@ -47,8 +47,8 @@
 
 <button id="pill{{0}}" class="btn rounded-0 btn-outline-secondary series-pill active" onclick="show(0)" ><i class="fas fa-home"></i></button>
 {% for i in range(1, nbstep+1) %}
-    {% if scores[i] == 100 %}
-<button id="pill{{i}}" class="btn rounded-0 btn-outline-succes series-pill" onclick="show({{i}})">{{i}}</button>
+    {% if scores[i-1] == 100 %}
+<button id="pill{{i}}" class="btn rounded-0 btn-outline-success series-pill" onclick="show({{i}})">{{i}}</button>
     {% else %}
 <button id="pill{{i}}" class="btn rounded-0 btn-outline-danger series-pill" onclick="show({{i}})">{{i}}</button>
     {% endif %}
