@@ -4,5 +4,5 @@ def file2list(filename):#
         l = []
         for line in f:
             l.append(line.strip())
-   return l
+    return l
 
