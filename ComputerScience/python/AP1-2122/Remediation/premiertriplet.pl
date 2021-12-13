@@ -34,7 +34,7 @@ def makes():
     u= randint(10,15)
     for x in range(2):
         l.insert(l[u],u)
-    return ''.join(l)
+    return "".join(l)
 
 
 def ftriple(l):
