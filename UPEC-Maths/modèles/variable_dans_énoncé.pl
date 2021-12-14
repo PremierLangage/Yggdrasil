@@ -14,8 +14,9 @@ title = Multiples de {{ k }}
 before == #|python|
 # Dans le modèle `basic/checkbox_rw.pl`, la variable `right` contient la liste des bonnes réponses
 # et `wrong` la liste des mauvaises réponses.
-right = [str(n) for n in range(50, 100) if n % 3 == 0]
-wrong = [str(n) for n in range(50, 100) if n % 3 != 0]
+k = randint(3, 5)
+right = [str(n) for n in range(50, 100) if n % k == 0]
+wrong = [str(n) for n in range(50, 100) if n % k != 0]
 ==
 
 # La clé question contient l'énoncé de l'exercice.
