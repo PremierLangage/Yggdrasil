@@ -38,3 +38,11 @@ les exercices existants, et ceux que vous créerez.
 C'est un foutoir. Pour y mettre bon ordre, en haut à gauche de la page, 
 sous *EXPLORER*, entrez `/upec`. N'apparaît alors plus que le répertoire `UPEC-Maths`.
 
+## Créer son répertoire et sa première feuille d'exercices
+### Créer son répertoire
+Cliquer sur le répertoire `upec-maths`. Dans le menu contextuel cliquer sur l'icône `new folder`. 
+Saisir votre nom sous le format `NOM_Prénom`. Attention, les espaces ne sont pas autorisés dans le nom de dossier.
+
+### Créer une feuille d'exercices
+Cliquer sur son répertoire. Dans le menu contextuel cliquer sur l'icône `new file`. 
+Saisir un nom de fichier avec l'extension `.pltp`. 
