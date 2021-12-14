@@ -18,9 +18,8 @@ right ==
 ==
 
 # La clé `wrong` contient la liste des mauvaises réponses.
-# Cette liste peut être saisie de plusieurs façons.
+# Pour la saisie d'une liste, plusieurs syntaxes sont acceptées.
 wrong = [4, 5, 7, 8, 10, 11, 13, 14, 16, 17, 19]
-
 
 # La clé question contient l'énoncé de l'exercice.
 question ==
