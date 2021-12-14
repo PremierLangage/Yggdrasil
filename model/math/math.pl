@@ -23,7 +23,7 @@ from sympy import sqrt, Abs, sin, cos, tan, exp, ln
 from sympy import Symbol, symbols, var
 from sympy import sympify, simplify, Lambda
 from sympy import Integer, Rational, Poly, FiniteSet, Tuple, Interval
-from sympy importe integrate
+from sympy import integrate
 from random import choice, choices, sample, shuffle
 from plrandom import randint, sampleint
 from sympy2latex import latex
