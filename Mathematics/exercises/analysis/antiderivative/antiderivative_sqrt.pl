@@ -1,9 +1,5 @@
 extends = antiderivative_.pl
 
-title = Calcul de primitive
-
-lang = fr
-
 before ==
 x = Symbol('x')
 a = randint(-5, 5, [0])
