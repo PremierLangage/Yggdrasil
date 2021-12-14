@@ -1,11 +1,9 @@
-extends = /model/mathinput.pl
+extends = /model/math/expr.pl
 
 text ==
 Calculer une primitive de la fonction
 $$ f : x \mapsto {{f_tex}} .$$
 ==
-
-input.virtualKeyboards = sets
 
 evaluator==
 var('x')
