@@ -1,9 +1,13 @@
+# La clé `title` est obligatoire
 title = Feuille d'exercices
 
+# La clé `introduction` contient un texte affiché à l'ouverture de la feuille. 
+# Elle est obligatoire aussi.
 introduction ==
 Sélection d'exercices.
 ==
 
+# Une feuille est une liste de fichiers .pl
 @ /UPEC-Maths/modèles/choix_multiple_prog.pl
 @ /UPEC-Maths/modèles/choix_multiple_simple_et_alea.pl
 @ /UPEC-Maths/modèles/choix_multiple_prog_et_alea.pl
