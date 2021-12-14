@@ -5,14 +5,12 @@ Calculer une primitive de la fonction
 $$ f : x \mapsto {{ f|latex }} .$$
 ==
 
-evaluator==
-var('x')
-score,_,feedback=ans_antiderivative(input.value,sol,x)
-==
-
 solution ==
 Les primitives de cette fonction sont les fonctions de la forme $$ x \mapsto {{ sol|latex }} + k $$
 où $! k !$ est une constante réelle.
 ==
 
+equality = "UpToConstant"
+
+message.NotEqualUpToConstant = La réponse n'est pas une primitive.
 
