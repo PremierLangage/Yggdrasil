@@ -19,7 +19,9 @@ right = [str(n) for n in range(50, 100) if n % k == 0]
 wrong = [str(n) for n in range(50, 100) if n % k != 0]
 ==
 
-# La clé question contient l'énoncé de l'exercice.
+# La clé `question` contient l'énoncé de l'exercice.
+# On peut insérer une variable `var` créée par le script `before` dans l'énoncé de l'exercice,
+# en utilisant l'expression `{{ var }}`.
 question ==
 Parmi les nombres suivants, lesquels sont des multiples de {{ k }} ?
 ==
