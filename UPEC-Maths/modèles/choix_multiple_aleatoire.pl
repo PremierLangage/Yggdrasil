@@ -1,5 +1,6 @@
 # La commande `extends` permet d'hériter d'un exercie existant.
-# Ici, `basic/checkbox.pl` est un exercice modèle de question à choix multiple.
+# Ici, `basic/checkbox.pl` est un exercice modèle de question à choix multiple
+# où l'on fournit la liste des choix proposés et les indices des bonnes réponses.
 extends = /model/basic/checkbox.pl
 
 # Un fichier .pl contient des définitions de clés, comme la clé `title` ci-dessous.
