@@ -10,7 +10,7 @@ extends = /model/basic/temp.pl
 
 before_scripts % ["importfunc", "before", "process"]
 eval_scripts % ["getans", "evaluator", "evalprocess"]
-jinja_keys = ['question', 'solution', 'title']
+# jinja_keys = ['question', 'solution', 'title']
 
 importfunc == #|python|
 from random import choice, choices, sample, shuffle
