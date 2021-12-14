@@ -41,7 +41,7 @@ style.series =@ /model/quiz/series.css.html
 
 
 intro ==
-Début de la série
+Ce quiz est composé de {{ questions|length }} questions.
 ==
 
 
