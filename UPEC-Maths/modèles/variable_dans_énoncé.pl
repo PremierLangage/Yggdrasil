@@ -21,7 +21,7 @@ wrong = [str(n) for n in range(50, 100) if n % k != 0]
 
 # La clé question contient l'énoncé de l'exercice.
 question ==
-Parmi les nombres suivants, lesquels sont des multiples de 3 ?
+Parmi les nombres suivants, lesquels sont des multiples de {{ k }} ?
 ==
 
 # La clé `nbitems` contient le nombre de propositions à tirer.
