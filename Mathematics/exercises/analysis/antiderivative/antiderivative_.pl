@@ -11,7 +11,7 @@ score,_,feedback=ans_antiderivative(input.value,sol,x)
 ==
 
 solution ==
-Les primitives de cette fonction sont les fonctions de la forme $$ x \mapsto {{ sol|tex }} + k $$
+Les primitives de cette fonction sont les fonctions de la forme $$ x \mapsto {{ sol|latex }} + k $$
 où $! k !$ est une constante réelle.
 ==
 
