@@ -18,7 +18,7 @@ sol=integrate(f,x).doit()
 
 question ==
 Calculer une primitive de la fonction
-$$ f : x \mapsto {{f_tex}} $$
+$$ f : x \mapsto {{ f|latex}} $$
 sur l'intervalle $! {{dom}} !$.
 ==
 
