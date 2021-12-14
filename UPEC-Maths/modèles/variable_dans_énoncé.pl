@@ -21,7 +21,6 @@ wrong = [str(n) for n in range(50, 100) if n % k != 0]
 
 # La clé question contient l'énoncé de l'exercice.
 question ==
-{{title}}
 Parmi les nombres suivants, lesquels sont des multiples de {{ k }} ?
 ==
 
