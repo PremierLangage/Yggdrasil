@@ -26,11 +26,17 @@ Exemple:
 Oeufbrouile(["bat","tot","bol"])
 retourne 'bot'
 
+
+
 Il n'y a que des lettres minuscules dans la chaines de caractères/
-````
-from string import ascii_lowercase
-````
+
+   from string import ascii_lowercase
+
+
 Regardez la doc de **ord** et **chr**.
+
+
+
 ==
 
 @ fileread.py 
