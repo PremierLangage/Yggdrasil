@@ -34,7 +34,7 @@ retourne 'bot'
 
 pltest==
 >>> import fileread #
->>> Oeufbrouile(fileread.produce("BONJOUR")) == "BONJOUR" # Gros test
+>>> Oeufbrouile(fileread.produce("bonjour")) == "bonjour" # Gros test
 True
 ==
 
