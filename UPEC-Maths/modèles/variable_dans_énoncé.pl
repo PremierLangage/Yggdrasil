@@ -5,7 +5,7 @@
 extends = /model/basic/checkbox_rw.pl
 
 # Un fichier .pl contient des définitions de clés, comme la clé `title` ci-dessous.
-title = Multiples de {{ k }}
+title = Multiples
 
 # La clé before est un script Python. 
 # Celui-ci est exécuté après le chargement des clés du fichier PL et avant la construction de la page de l'exercice. 
