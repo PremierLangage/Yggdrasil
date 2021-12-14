@@ -1,5 +1,7 @@
 extends = /model/math/expr.pl
 
+title = Calcul de primitive
+
 question ==
 Calculer une primitive de la fonction
 $$ f : x \mapsto {{ f|latex }} .$$
