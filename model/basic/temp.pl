@@ -4,7 +4,7 @@ style.page == #|css|
 <style>
 
 .exercise__header{
-  display: none;
+  //display: none;
 }
 
 .exercise__instructions{
