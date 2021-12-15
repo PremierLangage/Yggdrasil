@@ -159,7 +159,7 @@ javascript.mathquill1 ==
 var MQ = MathQuill.getInterface(2);
 MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   autoCommands: 'pi theta sqrt sum infty infin emptyset',
-  autoOperatorNames: 'sin cos tan ln exp cup cap mm',
+  autoOperatorNames: 'sin cos tan arcsin arccos arcsin ln exp cup cap mm',
   });
 
 
