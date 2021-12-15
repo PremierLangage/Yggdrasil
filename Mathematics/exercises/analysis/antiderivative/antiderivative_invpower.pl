@@ -4,7 +4,7 @@ before ==
 x = Symbol('x')
 a = randint(-5, 5, [0])
 b, c = sample([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5], 2)
-d = randint(2,4)
+d = randint(2, 4)
 
 b0 = Rational(-c, b)
 if b > 0:
