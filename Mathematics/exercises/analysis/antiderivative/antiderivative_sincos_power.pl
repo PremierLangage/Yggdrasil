@@ -10,6 +10,7 @@ if randint(0, 1) == 1:
 else:
     a = 1
     b = c
+d = randint(2, 4)
 u = a*x**d
 du = x**(d-1)
 g = choice([exp, sin, cos])
