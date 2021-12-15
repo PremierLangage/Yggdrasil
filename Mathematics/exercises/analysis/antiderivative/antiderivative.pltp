@@ -1,0 +1,17 @@
+title = Calcul de primitives
+
+intro ==
+
+==
+
+@ /Mathematics/exercises/analysis/antiderivative/antiderivative_esincos.pl
+@ /Mathematics/exercises/analysis/antiderivative/antiderivative_inv.pl
+@ /Mathematics/exercises/analysis/antiderivative/antiderivative_sqrt.pl
+@ /Mathematics/exercises/analysis/antiderivative/antiderivative_power.pl
+@ /Mathematics/exercises/analysis/antiderivative/antiderivative_invpower.pl
+@ /Mathematics/exercises/analysis/antiderivative/antiderivative_invdeg2irred.pl
+
+@ /Mathematics/exercises/analysis/antiderivative/antiderivative_esincos_esincos.pl
+@ /Mathematics/exercises/analysis/antiderivative/antiderivative_esincos_power.pl
+@ /Mathematics/exercises/analysis/antiderivative/antiderivative_power_sincos.pl
+@ /Mathematics/exercises/analysis/antiderivative/antiderivative_deg1_over_deg2.pl
