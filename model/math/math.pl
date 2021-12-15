@@ -15,7 +15,7 @@
 
 before_scripts % ["mathimport", "headerbefore", "before", "footerbefore", "process"]
 
-latexsettings.ln_notation % true
+latexsettings.ln_notation = True
 latexsettings.inv_trig_style = full
 
 mathimport ==
