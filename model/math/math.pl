@@ -16,6 +16,7 @@
 before_scripts % ["mathimport", "headerbefore", "before", "footerbefore", "process"]
 
 latexsettings.ln_notation % true
+latexsettings.inv_trig_style = full
 
 mathimport ==
 from sympy import E, I, pi, oo
