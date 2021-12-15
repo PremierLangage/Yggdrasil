@@ -1,7 +1,5 @@
 extends = antiderivative_.pl
 
-title = Calcul de primitive
-
 before ==
 from sympy import integrate
 x = Symbol('x')
