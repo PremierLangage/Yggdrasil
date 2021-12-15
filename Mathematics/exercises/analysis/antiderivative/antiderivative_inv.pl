@@ -11,7 +11,7 @@ if b > 0:
 else:
     dom=r"\rbrack -\infty, %s \lbrack" % latex(b0)
 
-f = choice([a/(b*x+c), a/(b*x+c)**2])
+f = a/(b*x+c)
 f = simplify(f)
 sol = integrate(f,x).doit()
 ==
