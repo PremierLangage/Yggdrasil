@@ -28,10 +28,7 @@ from customdragdrop import CustomDragDrop
 cplabels, cpdrops = [], []
 clabels, cdrops= [], []
 
-if isinstance(sol, str):
-    _sol_ = sol.splitlines()
-else:
-    _sol_ = sol
+_sol_ = sol
 
 if isinstance(labels, str):
     _labels_ = labels.splitlines()
