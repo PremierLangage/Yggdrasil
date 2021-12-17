@@ -22,7 +22,7 @@ for m in re.finditer(r"{([^{}]+)}", filledtext):
     newstring += rep
     start = newstart
     counter += 1
-newstring += s[start:]
+newstring += filledtext[start:]
 
 from customdragdrop import CustomDragDrop
 cplabels, cpdrops = [], []
