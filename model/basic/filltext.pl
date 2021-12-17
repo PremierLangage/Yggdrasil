@@ -58,6 +58,6 @@ for i in range(nbdrops):
 
 part2 = "&nbsp;".join(clabels)
 
-inputblock = part1 + "\n\n" + part2
+inputblock = newstring + "\n\n" + part2
 ==
 
