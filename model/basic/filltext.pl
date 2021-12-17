@@ -14,7 +14,7 @@ sol = []
 counter = 0
 newstring = ''
 start = 0
-for m in re.finditer(r"{([^{}]+)}", s):
+for m in re.finditer(r"{([^{}]+)}", filledtext):
     end, newstart = m.span()
     newstring += filledtext[start:end]
     rep = "{{ cdrops[" + str(counter) + "] }}"
