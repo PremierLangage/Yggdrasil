@@ -10,15 +10,19 @@ Compléter le texte suivant avec les étiquettes.
 process ==
 import re
 
-sol = re.findall(r'\{(.*?)\}', filledtext)
-
-count = -1
-def replace(x):
-    global count
-    count += 1
-    return "{{ cdrops[" + str(count) + "]}}"
-
-part1 = re.sub(r'\{(.*?)\}', replace , filledtext)
+sol = []
+counter = 0
+newstring = ''
+start = 0
+for m in re.finditer(r"{([^{}]+)}", s):
+    end, newstart = m.span()
+    newstring += filledtext[start:end]
+    rep = "{{ cdrops[" + str(counter) + "] }}"
+    sol.append(m.group(1)) 
+    newstring += rep
+    start = newstart
+    counter += 1
+newstring += s[start:]
 
 from customdragdrop import CustomDragDrop
 cplabels, cpdrops = [], []
