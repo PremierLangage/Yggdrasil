@@ -58,6 +58,12 @@ def aux_component1(dic):
                     name = item['name']
                     dic[key][i] = dic[name]
                     dic[key][i].name = name
+        if isinstance(dic[key], MultiComp):
+            for i in range(len(dic[key].comp)):
+                item = dic[key].comp[i]
+                name = item['name']
+                dic[key].comp[i] = dic[name]
+                dic[key].comp[i].name = name
 
 # HACK for components in lists
 # components in lists are duplicated outside the lists
