@@ -10,7 +10,8 @@ class DropGroup(MultiComp):
     def __init__(self, **kwargs):
         self.__MultiComp__ = "DropGroup"
         self.comp = kwargs.get('comp', [])
-
+        self._sol = kwargs.get('_sol', [])
+    
     def eval(self):
         n = len(self.comp)
         num_right = 0
