@@ -36,14 +36,12 @@ def aux_component(dic):
                 else:
                     break
         if isinstance(dic[key], MultiComp):
-            for i in range(len(dic[key])):
-                item = dic[key][i]
-                if isinstance(item, Component):
-                    name = "c" + uuid.uuid4().hex
-                    newcomp.append((name, item))
-                    dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
-                else:
-                    break
+            for i in range(len(dic[key].comp)):
+                item = dic[key].comp[i]
+                name = "c" + uuid.uuid4().hex
+                newcomp.append((name, item))
+                dic[key].comp[i] = {"cid": item.cid, "name": name, "selector": item.selector}
+
     for name, comp in newcomp:
         comp.name = name
         dic[name] = comp
