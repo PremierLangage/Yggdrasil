@@ -2,6 +2,7 @@ from components import Component
 import json, jsonpickle
 from jinja2 import Environment, BaseLoader
 import uuid
+from multicomp import MultiComp
 
 class PickleEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -26,6 +27,15 @@ def aux_component(dic):
     newcomp = []
     for key in dic:
         if isinstance(dic[key], list):
+            for i in range(len(dic[key])):
+                item = dic[key][i]
+                if isinstance(item, Component):
+                    name = "c" + uuid.uuid4().hex
+                    newcomp.append((name, item))
+                    dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
+                else:
+                    break
+        if isinstance(dic[key], MultiComp):
             for i in range(len(dic[key])):
                 item = dic[key][i]
                 if isinstance(item, Component):
