@@ -51,7 +51,6 @@ for i in range(nbdrops):
     cpdrops.append(CustomDragDrop.Drop())
     selector = cpdrops[i].selector
     cid = cpdrops[i].cid
-    cpdrops[i].css += "success-state"
     cdrops.append("<%s cid='%s'></%s>" % (selector, cid, selector))
 
 part2 = "&nbsp;".join(clabels)
