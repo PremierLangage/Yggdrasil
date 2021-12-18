@@ -101,8 +101,5 @@ style.dragdrop ==
     border:0px solid #000
 }
 
-.success-state{
-    background-color:red
-}
 </style>
 ==
