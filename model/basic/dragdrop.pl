@@ -103,7 +103,7 @@ style.dragdrop ==
 }
 
 .success-state{
-    color:red
+    background-color:red
 }
 </style>
 ==
