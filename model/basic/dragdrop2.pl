@@ -36,14 +36,16 @@ else:
 
 _labels_ = list(set(_labels_ + _sol_))
 
+from multicomp import MultiComp
+lab = MultiComp()
+lab.comp = []
 for i, content in enumerate(_labels_):
     cplabels.append(CustomDragDrop.Label(content=content))
     selector = cplabels[i].selector
     cid = cplabels[i].cid
     clabels.append("<%s cid='%s'></%s>" % (selector, cid, selector))
 
-from multicomp import MultiComp
-group = MultiComp()
+
 group.comp = [CustomDragDrop.Label(content="toto"), CustomDragDrop.Label(content="toto")]
 
 nbdrops = len(_sol_)
