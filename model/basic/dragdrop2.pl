@@ -35,7 +35,8 @@ for i, content in enumerate(_labels_):
     clabels.append("<%s cid='%s'></%s>" % (selector, cid, selector))
 
 from multicomp import MultiComp
-
+group = MultiComp()
+group.comp = cplabels
 
 nbdrops = len(_sol_)
 
