@@ -19,8 +19,6 @@ inputblock =
 
 process ==
 from customdragdrop import CustomDragDrop
-cplabels, cpdrops = [], []
-clabels, cdrops= [], []
 
 if isinstance(sol, str):
     _sol_ = sol.splitlines()
@@ -44,6 +42,7 @@ for i, content in enumerate(_labels_):
 nbdrops = len(_sol_)
 
 drp = DropGroup()
+drp._sol = _sol_
 for i in range(nbdrops):
     drp.comp.append(CustomDragDrop.Drop())
 
