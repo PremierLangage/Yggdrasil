@@ -15,5 +15,5 @@ class JSONDecoder(json.JSONDecoder):
 
     def object_hook(self, dic):
         if '__MultiComp__' in dic:
-            return MultiComponent(**dic)
+            return MultiComp(**dic)
         return dic
