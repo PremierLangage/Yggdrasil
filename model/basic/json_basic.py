@@ -15,5 +15,8 @@ class JSONDecoder(json.JSONDecoder):
 
     def object_hook(self, dic):
         if '__MultiComp__' in dic:
-            return MultiComp(**dic)
+            if dic['__MultiComp__'] = 'DropGroup'
+                return DropGroup(**dic)
+            else:
+                return MultiComp(**dic)
         return dic
