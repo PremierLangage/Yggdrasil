@@ -35,7 +35,7 @@ def aux_component(dic):
                     dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
                 else:
                     break
-        if isinstance(dic[key], MultiComp):
+        elif isinstance(dic[key], MultiComp):
             for i in range(len(dic[key].comp)):
                 item = dic[key].comp[i]
                 name = "c" + uuid.uuid4().hex
