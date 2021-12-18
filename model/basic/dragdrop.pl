@@ -64,7 +64,7 @@ for i in range(n):
         cpdrops[i].css = "success-state"
     else:
         num_wrong +=1
-        cpdrops[i].css += "error-state"
+        cpdrops[i].css = "error-state"
 
 if num_wrong > 0 :
     score = 0
