@@ -46,9 +46,9 @@ nbdrops = len(_sol_)
 
 for i in range(nbdrops):
     cpdrops.append(CustomDragDrop.Drop())
+    cpdrops[i].cvalue = "success-state"
     selector = cpdrops[i].selector
     cid = cpdrops[i].cid
-    cpdrops[i].content = "success-state"
     cdrops.append("<%s cid='%s'></%s>" % (selector, cid, selector))
 ==
 
