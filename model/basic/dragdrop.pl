@@ -91,7 +91,6 @@ style.dragdrop ==
     border: 0px solid transparent;
     border-radius: 0px;
     margin: 0px;
-    color:red;
 }
 
 .drag-drop-component.droppable {
