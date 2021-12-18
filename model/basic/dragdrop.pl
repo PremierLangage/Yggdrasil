@@ -100,5 +100,9 @@ style.dragdrop ==
 .drag-drop-component.droppable.dnd-over,.drag-drop-component.droppable:hover{
     border:0px solid #000
 }
+
+.success-state{
+    color:red
+}
 </style>
 ==
