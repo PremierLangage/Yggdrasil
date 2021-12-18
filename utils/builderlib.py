@@ -76,3 +76,8 @@ def aux_component2(dic):
                 if isinstance(item, Component):
                     name = item.name
                     dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
+        elif isinstance(dic[key], MultiComp):
+            for i in range(len(dic[key].comp)):
+                item = dic[key].comp[i]
+                name = item.name
+                dic[key].comp[i] = {"cid": item.cid, "name": name, "selector": item.selector}
