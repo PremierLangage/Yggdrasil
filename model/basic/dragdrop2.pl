@@ -44,7 +44,7 @@ for i, content in enumerate(_labels_):
 
 from multicomp import MultiComp
 group = MultiComp()
-group.comp = cplabels
+group.comp = [CustomDragDrop.Label(content="toto"), CustomDragDrop.Label(content="toto")]
 
 nbdrops = len(_sol_)
 
