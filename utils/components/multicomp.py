@@ -5,10 +5,10 @@ class MultiComp:
         self.__MultiComp__ = True
         self.comp = kwargs.get('comp', [])
 
-class DropGroup:
+class DropGroup(MultiComp):
 
     def __init__(self, **kwargs):
-        self.__MultiComp__ = True
+        self.__MultiComp__ = "DropGroup"
         self.comp = kwargs.get('comp', [])
 
     def eval(self):
