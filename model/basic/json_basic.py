@@ -1,5 +1,5 @@
 import json, jsonpickle
-from multicomp import MultiComp
+from multicomp import MultiComp, DropGroup
 
 class JSONEncoder(json.JSONEncoder):
 
