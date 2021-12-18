@@ -52,17 +52,17 @@ for i in range(nbdrops):
 
 
 evaluator ==
-n = len(cpdrops)
+n = len(drp.comp)
 num_right = 0
 num_wrong = 0
 
 for i in range(n):
-    if cpdrops[i].content == _sol_[i]:
+    if drp.comp[i].content == _sol_[i]:
         num_right += 1
-        cpdrops[i].css = "success-state"
+        drp.comp[i].css = "success-state"
     else:
         num_wrong +=1
-        cpdrops[i].css = "error-state"
+        drp.comp[i].css = "error-state"
 
 if num_wrong > 0 :
     score = 0
