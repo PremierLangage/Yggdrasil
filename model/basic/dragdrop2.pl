@@ -84,6 +84,8 @@ Compléter les phrases suivantes avec les étiquettes proposées.
 * Je n'aime pas {{ cdrops[2] }} méthodes.
 
 {{ clabels[0] }} {{ clabels[1] }}
+
+{{ group.comp[0]|component }}
 ==
 
 sol ==
