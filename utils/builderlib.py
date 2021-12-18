@@ -62,4 +62,3 @@ def aux_component2(dic):
                 if isinstance(item, Component):
                     name = item.name
                     dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
-                    dic[name] = item
