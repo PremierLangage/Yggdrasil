@@ -62,6 +62,7 @@ for i in range(n):
     if cpdrops[i].content == _sol_[i]:
         num_right += 1
         cpdrops[i].css += "success-state"
+        cpdrops[i].content = "success"
     else:
         num_wrong +=1
         cpdrops[i].css += "error-state"
