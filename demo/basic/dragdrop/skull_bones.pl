@@ -13,7 +13,7 @@ Os ethmoïde
 
 scheme =$ skull_bones.png
 
-inputblock ==
+question ==
  <div class="row">
   <div class="column">
     <img src="{{ scheme }}" style="max-width: 300px; vertical-align:top; display: inline-block">
