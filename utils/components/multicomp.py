@@ -12,7 +12,7 @@ class DropGroup(MultiComp):
         self.comp = kwargs.get('comp', [])
 
     def eval(self):
-        n = len(drp.comp)
+        n = len(self.comp)
         num_right = 0
         num_wrong = 0
 
