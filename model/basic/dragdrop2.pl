@@ -73,13 +73,11 @@ else:
 question ==
 Compléter les phrases suivantes avec les étiquettes proposées.
 
-* Je voudrais {{ cdrops[0] }} chausures pour mon anniversaire.
-* Tu est toujours en retard, {{ cdrops[1] }} agaçant !
-* Je n'aime pas {{ cdrops[2] }} méthodes.
+* Je voudrais {{ drp.comp[0]|component }} chausures pour mon anniversaire.
+* Tu est toujours en retard,{{ drp.comp[1]|component }} agaçant !
+* Je n'aime pas {{ drp.comp[2]|component }} méthodes.
 
-{{ clabels[0] }} {{ clabels[1] }}
-
-{{ group.comp[0]|component }}
+{{ lab.comp[0]|component }} {{ lab.comp[1]|component }}
 ==
 
 sol ==
