@@ -30,7 +30,6 @@ if __name__ == "__main__":
             del dic[key]
 
     aux_component2(dic)
-    Component.sync_context(dic)
 
     if 'score' in dic:
         score = dic['score']    
