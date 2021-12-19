@@ -41,11 +41,7 @@ for i, content in enumerate(_labels_):
     lab.comp.append(CustomDragDrop.Label(content=content))
 nbdrops = len(_sol_)
 
-drp = DropGroup()
-drp._sol = _sol_
-for i in range(nbdrops):
-    drp.comp.append(CustomDragDrop.Drop())
-
+drp = DropGroup(_sol_)
 ==
 
 
