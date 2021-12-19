@@ -6,7 +6,6 @@ question ==
 Compléter le texte suivant avec les étiquettes.
 ==
 
-
 process ==
 from multicomp import LabelGroup, DropGroup, process_filledtext
 
