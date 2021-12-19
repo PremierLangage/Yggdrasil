@@ -7,8 +7,9 @@ class MultiComp:
 
 class DropGroup(MultiComp):
 
-    def __init__(self, **kwargs):
+    def __init__(self, param=None, **kwargs):
         self.__MultiComp__ = "DropGroup"
+        if isinstance(p)
         self.comp = kwargs.get('comp', [])
         self._sol = kwargs.get('_sol', [])
     
