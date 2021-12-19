@@ -27,5 +27,5 @@ question ==
   </div>
 </div> 
 
-{% for label in lbl.comp %} {{ label|component }} {% endfor %}
+{% for label in lab.comp %} {{ label|component }} {% endfor %}
 ==
