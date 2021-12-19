@@ -51,7 +51,7 @@ Début du quiz
 
 
 
-qAMC ==
+quiz ==
 * Quelle est la capitale du Cameroun ?
 + Yaoundé
 - Douala
