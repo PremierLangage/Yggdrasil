@@ -1,4 +1,5 @@
 # HACK pour modifier l'apparence de la page html de l'exercice
+@ /utils/components/multicomp.py 
 
 style.page == #|css|
 <style>
