@@ -34,13 +34,8 @@ else:
 
 _labels_ = list(set(_labels_ + _sol_))
 
-from multicomp import MultiComp, DropGroup
-lab = MultiComp()
-
-for i, content in enumerate(_labels_):
-    lab.comp.append(CustomDragDrop.Label(content=content))
-nbdrops = len(_sol_)
-
+from multicomp import LabelGroup, DropGroup
+lab = LabelGroup(_labels_)
 drp = DropGroup(_sol_)
 ==
 
