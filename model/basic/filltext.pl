@@ -7,7 +7,7 @@ Compléter le texte suivant avec les étiquettes.
 ==
 
 process ==
-from multicomp import LabelGroup, DropGroup, process_filledtext
+from customdragdrop import LabelGroup, DropGroup, process_filledtext
 
 _sol_, newstring = process_filledtext(filledtext, "drp")
 
