@@ -43,9 +43,7 @@ class LabelGroup(MultiComp):
     def __init__(self, param=None, **kwargs):
         self.__MultiComp__ = "DropGroup"
         self.comp = kwargs.get('comp', [])
-        if isinstance(param, int):
-            self.comp = [CustomDragDrop.Label() for _ in range(param)]
-        elif isinstance(param, list):
-            self.comp = [CustomDragDrop.Label() for _ in range(len(param))]
-            self._sol = param
+        if isinstance(param, list):
+            self.comp = [CustomDragDrop.Label(content) for content in param]
+
     
