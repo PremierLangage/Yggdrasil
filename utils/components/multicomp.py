@@ -11,7 +11,10 @@ class DropGroup(MultiComp):
     def __init__(self, param=None, **kwargs):
         self.__MultiComp__ = "DropGroup"
         if isinstance(p, int):
-
+            self.comp = [CustomDragDrop.Drop() for _ in range(param)]
+        elif isinstance(param, list):
+            self.comp = [CustomDragDrop.Drop() for _ in range(len(param))]
+            self._sol = param
         self.comp = kwargs.get('comp', [])
         self._sol = kwargs.get('_sol', [])
     
