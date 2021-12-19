@@ -9,6 +9,7 @@ Compléter le texte suivant avec les étiquettes.
 
 process ==
 import re
+from multicomp import LabelGroup, DropGroup
 
 sol = []
 counter = 0
@@ -17,16 +18,12 @@ start = 0
 for m in re.finditer(r"{([^{}]+)}", filledtext):
     end, newstart = m.span()
     newstring += filledtext[start:end]
-    rep = "{{ cdrops[" + str(counter) + "] }}"
+    rep = "{{ drp.comp[" + str(counter) + "]|component }}"
     sol.append(m.group(1)) 
     newstring += rep
     start = newstart
     counter += 1
 newstring += filledtext[start:]
-
-from customdragdrop import CustomDragDrop
-cplabels, cpdrops = [], []
-clabels, cdrops= [], []
 
 _sol_ = sol
 
@@ -39,21 +36,16 @@ else:
 
 _labels_ = list(set(_labels_ + _sol_))
 
-for i, content in enumerate(_labels_):
-    cplabels.append(CustomDragDrop.Label(content=content))
-    selector = cplabels[i].selector
-    cid = cplabels[i].cid
-    clabels.append("<%s cid='%s'></%s>" % (selector, cid, selector))
+lab = LabelGroup(_labels_)
+drp = DropGroup(_sol_)
 
-nbdrops = len(_sol_)
+_sol_ = sol
 
-for i in range(nbdrops):
-    cpdrops.append(CustomDragDrop.Drop())
-    selector = cpdrops[i].selector
-    cid = cpdrops[i].cid
-    cdrops.append("<%s cid='%s'></%s>" % (selector, cid, selector))
 
-part2 = "&nbsp;".join(clabels)
+_labels_ = list(set(_labels_ + _sol_))
+
+part2 = "&nbsp;".join(["{{ lab.comp[%s]|component }}" % i for i in range(len(_labels_))]
+)
 
 inputblock = newstring + "\n\n" + part2
 ==
