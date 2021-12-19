@@ -14,17 +14,17 @@ Os ethmoïde
 scheme =$ skull_bones.png
 
 question ==
- <div class="row">
-  <div class="column">
-    <img src="{{ scheme }}" style="max-width: 300px; vertical-align:top; display: inline-block">
-  </div>
-  <div class="column">
-    <ul>
-        {% for i in range(4) %}
-        <li> {{ i + 1 }}. {{ drp.comp[i]|component }} </li>
-        {% endfor %}
-    </ul>
-  </div>
+<div class="row">
+<div class="column">
+<img src="{{ scheme }}" style="max-width: 300px; vertical-align:top; display: inline-block">
+</div>
+<div class="column">
+<ul>
+{% for i in range(4) %}
+<li> {{ i + 1 }}. {{ drp.comp[i]|component }} </li>
+{% endfor %}
+</ul>
+</div>
 </div> 
 
 {% for label in lab.comp %} {{ label|component }} {% endfor %}
