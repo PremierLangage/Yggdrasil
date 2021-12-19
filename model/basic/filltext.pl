@@ -24,9 +24,6 @@ _labels_ = list(set(_labels_ + _sol_))
 lab = LabelGroup(_labels_)
 drp = DropGroup(_sol_)
 
-_sol_ = sol
-
-
 _labels_ = list(set(_labels_ + _sol_))
 
 part2 = "&nbsp;".join(["{{ lab.comp[" + str(i) + "]|component }}" for i in range(len(_labels_))]
