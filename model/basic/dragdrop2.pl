@@ -18,7 +18,7 @@ from random import randint, choice, choices, sample, shuffle
 inputblock = 
 
 process ==
-from customdragdrop import CustomDragDrop
+from multicomp import LabelGroup, DropGroup
 
 if isinstance(sol, str):
     _sol_ = sol.splitlines()
@@ -34,7 +34,6 @@ else:
 
 _labels_ = list(set(_labels_ + _sol_))
 
-from multicomp import LabelGroup, DropGroup
 lab = LabelGroup(_labels_)
 drp = DropGroup(_sol_)
 ==
