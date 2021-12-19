@@ -20,7 +20,7 @@ question ==
   </div>
   <div class="column">
     <ul>
-        {% for i in range(nbdrops) %}
+        {% for i in range(3) %}
         <li> {{ i + 1 }}. {{ drp.comp[i]|component }} </li>
         {% endfor %}
     </ul>
