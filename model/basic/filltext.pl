@@ -44,7 +44,7 @@ _sol_ = sol
 
 _labels_ = list(set(_labels_ + _sol_))
 
-part2 = "&nbsp;".join([f"{{ lab.comp[{i}]|component }}" for i in range(len(_labels_))]
+part2 = "&nbsp;".join(["{{ lab.comp[" + str(i) + "]|component }}" for i in range(len(_labels_))]
 )
 
 inputblock = newstring + "\n\n" + part2
