@@ -1,5 +1,5 @@
 import json, jsonpickle
-from multicomp import MultiComp, DropGroup
+from multicomp import MultiComp, DropGroup, LabelGroup
 
 class JSONEncoder(json.JSONEncoder):
 
@@ -17,6 +17,8 @@ class JSONDecoder(json.JSONDecoder):
         if '__MultiComp__' in dic:
             if dic['__MultiComp__'] == 'DropGroup':
                 return DropGroup(None, **dic)
+            if dic['__MultiComp__'] == 'LabelGroup':
+                return LabelGroup(None, **dic)
             else:
                 return MultiComp(**dic)
         return dic
