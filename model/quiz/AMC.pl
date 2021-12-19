@@ -14,7 +14,7 @@ from AMC import parse_AMC_TXT
 
 _state_ = "active"
 
-list_questions = parse_AMC_TXT(qAMC)
+list_questions = parse_AMC_TXT(quiz)
 
 if 'nbstep' in globals():
     list_questions = rd.sample(list_questions, nbstep)
