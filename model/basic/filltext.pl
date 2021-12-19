@@ -8,24 +8,9 @@ Compléter le texte suivant avec les étiquettes.
 
 
 process ==
-import re
-from multicomp import LabelGroup, DropGroup
+from multicomp import LabelGroup, DropGroup, process_filledtext
 
-sol = []
-counter = 0
-newstring = ''
-start = 0
-for m in re.finditer(r"{([^{}]+)}", filledtext):
-    end, newstart = m.span()
-    newstring += filledtext[start:end]
-    rep = "{{ drp.comp[" + str(counter) + "]|component }}"
-    sol.append(m.group(1)) 
-    newstring += rep
-    start = newstart
-    counter += 1
-newstring += filledtext[start:]
-
-_sol_ = sol
+_sol_, newstring = process_filledtext(filledtext, "drp")
 
 if isinstance(labels, str):
     _labels_ = labels.splitlines()
