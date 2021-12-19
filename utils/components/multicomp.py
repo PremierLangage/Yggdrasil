@@ -49,7 +49,7 @@ class LabelGroup(MultiComp):
     
 import re
 
-def process_filledtext(filledtext, name)
+def process_filledtext(filledtext, name):
     sol = []
     counter = 0
     newstring = ''
