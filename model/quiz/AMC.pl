@@ -49,36 +49,7 @@ intro ==
 Début du quiz
 ==
 
-evaluator ==
-class Exo:
 
-    def __init__(self, step):
-        self.step = step
-
-    def eval(self):
-        return comp[self.step-1].eval()
-
-    def disable(self):
-        comp[self.step-1].disable()
-
-    def show(self):
-        comp[self.step-1].show()
-
-if step == 0:
-    step = 1
-
-if step <= nbstep:
-    ex = Exo(step)
-    qscore = ex.eval()
-    if qscore != -1:
-        ex.disable()
-        ex.show()
-        scores.append(qscore)
-        step += 1
-
-if step == nbstep + 1:
-    state = "grade"
-==
 
 qAMC ==
 * Quelle est la capitale du Cameroun ?
