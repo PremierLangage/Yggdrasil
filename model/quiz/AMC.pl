@@ -5,33 +5,16 @@ extends = /model/quiz/basic.pl
 @ /utils/components/radio.py
 @ /utils/components/checkbox.py
 
-before_scripts = ["before"]
-eval_scripts = ["evaluator"]
 
-importfunc == #|python|
-from random import choice, choices, sample, shuffle
-from plrandom import randint, sampleint
-from plcsv import csv_choice, csv_sample, csv_col
-==
-
-title =
-form = 
-text = 
-
-tplpage =@ template2.html
-
-style.basic =@ /demo/css/basic.html
-
-before == #|python|
+start == #|python|
 import random as rd
 from radio import Radio
 from checkbox import Checkbox
 from AMC import parse_AMC_TXT
-from exercise import Ex
 
-state = "active"
+_state_ = "active"
 
-list_questions = parse_AMC_TXT(questions)
+list_questions = parse_AMC_TXT(qAMC)
 
 if 'nbstep' in globals():
     list_questions = rd.sample(list_questions, nbstep)
@@ -39,8 +22,7 @@ else:
     nbstep = len(list_questions)
 
 comp = []
-statement  = []
-lstex =[]
+questions  = []
 
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
@@ -54,13 +36,9 @@ for i, q in enumerate(list_questions):
     elif  q['type'] == 'TextSelect':
         # comp.append(CustomTextSelect())
         continue # no implemented yet 
-    statement.append(q['text'])
+    questions.append(q['text'])
     if 'ordered' not in q['options']:
         comp[i].shuffle()
-    ex = Ex()
-    ex.question = q['text']
-    ex.evaluator = "score = comp[i].eval()"
-    lstex.append(ex)
 
 step = 0
 score = -10
@@ -102,7 +80,7 @@ if step == nbstep + 1:
     state = "grade"
 ==
 
-questions ==
+qAMC ==
 * Quelle est la capitale du Cameroun ?
 + Yaoundé
 - Douala
@@ -118,4 +96,19 @@ questions ==
 - 1
 + 2
 - 3
+==
+
+classexo ==
+def ex_eval(step):
+    if comp[step-1].value == sol[step-1]:
+        return 100
+    else:
+        return 0
+
+def ex_disable(step):
+    comp[step-1].disabled = True
+
+def ex_show(step):
+    comp[step-1].score = scores[step-1]
+    comp[step-1].show()
 ==
