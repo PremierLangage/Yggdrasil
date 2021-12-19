@@ -1,5 +1,5 @@
 import json, jsonpickle
-from multicomp import MultiComp, DropGroup, LabelGroup
+from customdragdrop import MultiComp, DropGroup, LabelGroup
 
 class JSONEncoder(json.JSONEncoder):
 
