@@ -7,3 +7,29 @@ def entree_joueurs():
     return joueurs
 
 @patch('builtins.input', lambda *args: 'y')
+
+
+extends = func.pl
+
+funcname= entree_joueurs
+title= Victoire
+
+doctest==
+    la fonction entree_joueurs() demande le nom des deux joueurs
+    et les retournent dans une liste
+
+    exemple:
+    >>> joueurs = entree_joueurs() 
+    >>> joueurs
+    ['Bob', 'Alice']
+  
+==
+
+pltest==
+>>> joueurs = entree_joueurs() 
+>>> joueurs
+['Bob', 'Alice']
+==
+
+
+
