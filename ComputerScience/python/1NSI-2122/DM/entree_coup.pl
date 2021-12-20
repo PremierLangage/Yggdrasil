@@ -1,12 +1,6 @@
 @ /builder/before.py [builder.py]
 
-before==
-def coup_possible(nb_alumette, plateau,k):
-    if nb_alumette <= len(plateau) and nb_alumette <= k and nb_alumette > 0:
-        return True
-    else:
-        return False
-==
+
 
 extends = func.pl
 
@@ -25,6 +19,14 @@ doctest==
     >>> joueurs
     ['Bob', 'Alice']
   
+==
+
+before==
+def coup_possible(nb_alumette, plateau,k):
+    if nb_alumette <= len(plateau) and nb_alumette <= k and nb_alumette > 0:
+        return True
+    else:
+        return False
 ==
 
 pltest==
