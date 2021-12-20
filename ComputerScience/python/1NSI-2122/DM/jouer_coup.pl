@@ -17,12 +17,10 @@ doctest==
 ==
 
 pltest==
->>> coup_possible(4, ['|', '|', '|', '|', '|'],3)
-False
->>> coup_possible(3, ['|', '|', '|', '|', '|'],3)
-True
->>> coup_possible(3, ['|', '|'],3)
-False
+>>> plateau = ['|', '|', '|', '|', '|']
+>>> jouer_coup(3, plateau)
+>>> plateau
+['|', '|']
 ==
 
 
