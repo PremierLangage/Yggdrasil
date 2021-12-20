@@ -21,7 +21,7 @@ Les règles de la belote :
 @ victoire.pl
 @ entree_joueurs.pl
 @ affiche_plateau.pl
-#@ entree_coup.pl
+@ entree_coup.pl
 #@ tour.pl
 
 
