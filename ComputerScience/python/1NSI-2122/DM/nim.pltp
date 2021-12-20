@@ -16,7 +16,7 @@ Les règles de la belote :
 
 # Fonctions de base 
 @ init_plateau.pl
-#@ coup_possible.pl
+@ coup_possible.pl
 #@ jouer_coup.pl
 #@ victoire.pl
 #@ entree_joueurs.pl
