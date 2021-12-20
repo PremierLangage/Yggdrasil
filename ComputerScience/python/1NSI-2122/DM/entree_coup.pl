@@ -35,7 +35,7 @@ def coup_possible(nb_alumette, plateau,k):
     else:
         return False
 
-pltest=""">>> from unittest.mock import patch #\n>>> with patch('builtins.input', side_effect=['5', '3']):    coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3) #\n>>> coup\n3"""
+pltest=""">>> a\n>>> from unittest.mock import patch #\n>>> with patch('builtins.input', side_effect=['5', '3']):    coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3) #\n>>> coup\n3"""
 ==
 
 
