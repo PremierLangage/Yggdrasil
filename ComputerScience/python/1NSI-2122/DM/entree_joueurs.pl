@@ -16,8 +16,8 @@ doctest==
 ==
 
 pltest==
->>> from unittest.mock import patch
->>> with patch('builtins.input', side_effect=['Bob', 'Alice']):    joueurs = entree_joueurs() 
+>>> from unittest.mock import patch #
+>>> with patch('builtins.input', side_effect=['Bob', 'Alice']):    joueurs = entree_joueurs() #
 >>> joueurs
 ['Bob', 'Alice']
 ==
