@@ -1,11 +1,8 @@
-
-extends = func.pl
+extends = /ComputerScience/python/template/pltest.pl
 @ /builder/before.py [builder.py]
 
 funcname= entree_coup
 title= Entree du coup
-
-
 
 doctest==
     la fonction entree_coup(joueurs, joueur_actif, plateau, k) demande au joueur 
@@ -17,6 +14,17 @@ doctest==
     >>> joueurs
     ['Bob', 'Alice']
   
+==
+
+text==
+
+
+Ecrire une fonction **{{funcname}}** qui vérifie le doctest suivant :
+
+{{doctest}}
+
+[https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/  ](https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/)
+
 ==
 
 before==
