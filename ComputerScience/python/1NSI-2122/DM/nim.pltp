@@ -19,7 +19,7 @@ Les règles de la belote :
 @ coup_possible.pl
 @ jouer_coup.pl
 @ victoire.pl
-#@ entree_joueurs.pl
+@ entree_joueurs.pl
 #@ affiche_plateau.pl
 #@ entree_coup.pl
 #@ tour.pl
