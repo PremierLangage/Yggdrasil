@@ -1,8 +1,4 @@
 @ /builder/before.py [builder.py]
-extends = func.pl
-
-funcname= entree_coup
-title= Entree du coup
 
 before==
 def coup_possible(nb_alumette, plateau,k):
@@ -11,6 +7,13 @@ def coup_possible(nb_alumette, plateau,k):
     else:
         return False
 ==
+
+extends = func.pl
+
+funcname= entree_coup
+title= Entree du coup
+
+
 
 doctest==
     la fonction entree_coup(joueurs, joueur_actif, plateau, k) demande au joueur 
