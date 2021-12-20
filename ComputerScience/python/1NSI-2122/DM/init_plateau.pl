@@ -12,6 +12,9 @@ doctest==
 
     la fonction init_plateau(n) retourne un tableau de n fois le
     même caractère "|".
+    exemple:
+    >>> init_plateau(5)
+    ["|", "|", "|", "|", "|"]
 
 ==
 
