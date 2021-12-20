@@ -5,7 +5,11 @@ funcname= entree_coup
 title= Entree du coup
 
 before==
-
+def coup_possible(nb_alumette, plateau,k):
+    if nb_alumette <= len(plateau) and nb_alumette <= k and nb_alumette > 0:
+        return True
+    else:
+        return False
 ==
 
 doctest==
