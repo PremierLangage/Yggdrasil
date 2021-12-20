@@ -1,7 +1,3 @@
-def affiche_plateau(plateau):
-    print(" ".join(plateau))
-
-
 extends = func.pl
 
 funcname= affiche_plateau
