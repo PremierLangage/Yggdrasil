@@ -6,21 +6,13 @@ title= Joueur le coup
 doctest==
     la fonction jouer_coup(nb_alumette, plateau) enlève de 
     la liste plateau (sur place) le nombre d'alumettes nb_alumette.
-    Si le nombre d'alumettes choisis par le joueur est:
-     - inférieur au égal à k, et
-     - inférieur ou égal au nombre d'alumettes disponibles, c'est à dire à la 
-     longueur de la liste plateau, et
-     - supérieur ou égal à 0
-     alors la fonction retourne True
-     sinon la fonction retourne False
 
     exemple:
-    >>> coup_possible(4, ['|', '|', '|', '|', '|'],3)
-    False
-    >>> coup_possible(3, ['|', '|', '|', '|', '|'],3)
-    True
-    >>> coup_possible(3, ['|', '|'],3)
-    False
+    >>> plateau = ['|', '|', '|', '|', '|']
+    >>> jouer_coup(3, plateau)
+    >>> plateau
+    ['|', '|']
+
     
 ==
 
