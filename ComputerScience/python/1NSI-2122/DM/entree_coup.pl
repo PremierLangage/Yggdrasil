@@ -1,8 +1,12 @@
-
+@ /builder/before.py [builder.py]
 extends = func.pl
 
 funcname= entree_coup
 title= Entree du coup
+
+before==
+
+==
 
 doctest==
     la fonction entree_coup(joueurs, joueur_actif, plateau, k) demande au joueur 
