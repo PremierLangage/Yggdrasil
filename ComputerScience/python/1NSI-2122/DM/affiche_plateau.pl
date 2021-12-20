@@ -8,13 +8,11 @@ funcname= affiche_plateau
 title= Affichage du plateau
 
 doctest==
-    la fonction entree_joueurs() demande le nom des deux joueurs
-    et les retournent dans une liste
+    la fonction affiche_plateau(plateau) 
 
     exemple:
-    >>> joueurs = entree_joueurs() 
-    >>> joueurs
-    ['Bob', 'Alice']
+    >>> affiche_plateau(['|', '|', '|', '|', '|']) 
+    | | | | |
   
 ==
 
