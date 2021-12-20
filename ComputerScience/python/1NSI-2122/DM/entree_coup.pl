@@ -26,7 +26,6 @@ def coup_possible(nb_alumette, plateau,k):
     else:
         return False
 
-after=before
 ==
 
 pltest==
