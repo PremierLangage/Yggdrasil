@@ -1,10 +1,13 @@
 extends = /ComputerScience/python/template/pltest.pl
 @ /builder/before.py [builder.py]
 
-funcname= entree_coup
 title= Entree du coup
 
-doctestspe==
+text==
+
+
+Ecrire une fonction **entree_coup** qui vérifie le doctest suivant :
+
     la fonction entree_coup(joueurs, joueur_actif, plateau, k) demande au joueur 
     actif combien il veut enlever d'alumettes. La saisie est contôlée en
     vérifiant que le coup est possible.
@@ -13,15 +16,6 @@ doctestspe==
     >>> joueurs = entree_joueurs() 
     >>> joueurs
     ['Bob', 'Alice']
-  
-==
-
-text==
-
-
-Ecrire une fonction **{{funcname}}** qui vérifie le doctest suivant :
-
-{{doctestspe}}
 
 [https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/  ](https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/)
 
