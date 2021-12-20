@@ -8,8 +8,8 @@ doctest==
     la liste plateau (sur place) le nombre d'alumettes nb_alumette.
 
     exemple:
-    >>> plateau = ['|', '|', '|', '|', '|']
-    >>> jouer_coup(3, plateau)
+    >>> plateau = ['|', '|', '|', '|', '|'] #
+    >>> jouer_coup(3, plateau) #
     >>> plateau
     ['|', '|']
 
