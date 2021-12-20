@@ -1,0 +1,28 @@
+
+extends = func.pl
+
+funcname= entree_coup
+title= Entree du coup
+
+doctest==
+    la fonction entree_coup(joueurs, joueur_actif, plateau, k) demande au joueur 
+    actif combien il veut enlever d'alumettes. La saisie est contôlée en
+    vérifiant que le coup est possible.
+
+    exemple:
+    >>> joueurs = entree_joueurs() 
+    >>> joueurs
+    ['Bob', 'Alice']
+  
+==
+
+pltest==
+>>> from unittest.mock import patch #
+>>> with patch('builtins.input', side_effect=['Bob', 'Alice']):    joueurs = entree_joueurs() #
+>>> joueurs
+['Bob', 'Alice']
+==
+
+
+
+
