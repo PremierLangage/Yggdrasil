@@ -20,7 +20,6 @@ pltest==
 >>> affiche_plateau(['|', '|', '|', '|', '|', '|', '|', '|']) 
 | | | | | | | |
 >>> affiche_plateau([]) 
-
 ==
 
 
