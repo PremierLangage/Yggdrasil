@@ -2,7 +2,7 @@
 extends = func.pl
 
 funcname= entree_joueurs
-title= Victoire
+title= Entree des noms des joueurs
 
 doctest==
     la fonction entree_joueurs() demande le nom des deux joueurs
