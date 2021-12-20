@@ -1,8 +1,6 @@
-@ /builder/before.py [builder.py]
-
-
 
 extends = func.pl
+@ /builder/before.py [builder.py]
 
 funcname= entree_coup
 title= Entree du coup
