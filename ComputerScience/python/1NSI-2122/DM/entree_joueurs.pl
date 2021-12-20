@@ -1,14 +1,4 @@
 
-def entree_joueurs():
-    joueurs=[]
-    for i in range (2):
-        joueur = input("Entrez le nom du joueur" + str(i))
-        joueurs.append(joueur)
-    return joueurs
-
-@patch('builtins.input', lambda *args: 'y')
-
-
 extends = func.pl
 
 funcname= entree_joueurs
@@ -26,6 +16,7 @@ doctest==
 ==
 
 pltest==
+>>> @patch('builtins.input', side_effect=['Bob', 'Alice'])
 >>> joueurs = entree_joueurs() 
 >>> joueurs
 ['Bob', 'Alice']
