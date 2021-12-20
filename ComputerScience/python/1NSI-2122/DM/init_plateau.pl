@@ -19,9 +19,9 @@ doctest==
 ==
 
 pltest==
->>> belote_rebelote([('Roi', 'Carreau'), ('Roi', 'Coeur'), ('Dame', 'Pique'), ('Dame', 'Trèfle'), ('Dame', 'Carreau')],'Carreau')
-True
->>> belote_rebelote([('Roi', 'Carreau'), ('Roi', 'Coeur'), ('Dame', 'Pique'), ('Dame', 'Trèfle'), ('Dame', 'Carreau')],'Pique')
-False
+>>> init_plateau(5)
+["|", "|", "|", "|", "|"]
+>>> init_plateau(10)
+["|", "|", "|", "|", "|", "|", "|", "|", "|", "|"]
 ==
 
