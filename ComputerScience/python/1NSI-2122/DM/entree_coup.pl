@@ -32,6 +32,9 @@ pltest==
 ...    coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3) #
 >>> coup
 3
+>>> def bonjour():
+...    print("bonjour")
+>>> bonjour()
 ==
 
 
