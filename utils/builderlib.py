@@ -23,7 +23,7 @@ ComponentEnv.filters["component"] = component
 # HACK for components in lists
 # components in lists are duplicated outside the lists
 # and replaced by dictionaries inside the lists
-def aux_component(dic):
+def aux_component_old(dic):
     newcomp = []
     for key in dic:
         if isinstance(dic[key], list):
@@ -42,6 +42,17 @@ def aux_component(dic):
                 newcomp.append((name, item))
                 dic[key].comp[i] = {"cid": item.cid, "name": name, "selector": item.selector}
 
+    for name, comp in newcomp:
+        comp.name = name
+        dic[name] = comp
+
+def aux_component(dic):
+    newcomp = []
+    for key in dic:
+        if isinstance(dic[key], list) and isinstance(dic[key][0], Component):
+            newcomp = newcomp + newcomp_from_list(dic[key])
+        elif isinstance(dic[key], MultiComp):
+            newcomp = newcomp + newcomp_from_list(dic[key].comp)
     for name, comp in newcomp:
         comp.name = name
         dic[name] = comp
@@ -81,3 +92,12 @@ def aux_component2(dic):
                 item = dic[key].comp[i]
                 name = item.name
                 dic[key].comp[i] = {"cid": item.cid, "name": name, "selector": item.selector}
+
+def newcomp_from_list(lst):
+    newcomp = []
+    for i in range(len(lst)):
+        item = lst[i]
+        name = "c" + uuid.uuid4().hex
+        newcomp.append((name, item))
+        lst[i] = {"cid": item.cid, "name": name, "selector": item.selector}
+    return newcomp
