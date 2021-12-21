@@ -8,10 +8,11 @@ drp = []
 questions = []
 for i in range(2):
     lab.append(LabelGroup(["AA", "BB"]))
-    drp.append(DropGroup(["AA", "BB"]))
     sol, newstring = process_filledtext("{AA} et {BB}", f"drp[{i}]")
+    drp.append(DropGroup(["AA", "BB"]))
+    drp[i]._sol = sol
     questions.append(newstring + "\n\n")
-    drp._sol = sol
+    
 ==
 
 intro ==
