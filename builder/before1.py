@@ -77,6 +77,9 @@ if __name__ == "__main__":
                 for k in dic[key]:
                     dic[key2][k] = "{% raw %}" + dic[key2][k] + "{% endraw %}"
                     dic[key][k] = Env.from_string(macros + dic[key][k]).render(dic)
+            elif isinstance(dic[key] , list):
+                for i in range(len(dic[key])):
+                    dic[key][i] = Env.from_string(macros + dic[key][i]).render(dic)
 
     dic['form'] = dic['tplpage']
 
