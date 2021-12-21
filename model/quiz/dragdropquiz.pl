@@ -31,10 +31,8 @@ for i in range(nbstep):
     lab.append(LabelGroup(["AA", "BB"]))
     drp.append(DropGroup(["AA", "BB"]))
     inputblocks.append("{{ drp[" + str(i) + "].comp[0]|component }}" + "{{ lab[" + str(i) + "].comp[0]|component }}")
-    sol.append(row['rep'])
-    solutions.append(row['rep'])
+    solutions.append("")
     feedbacks.append('')
-    comp.append(Input())
 ==
 
 
