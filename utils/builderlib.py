@@ -79,7 +79,7 @@ def aux_component1(dic):
 # HACK for components in lists
 # components in lists are duplicated outside the lists
 # and replaced by dictionaries inside the lists
-def aux_component2(dic):
+def aux_component2_old(dic):
     for key in dic:
         if isinstance(dic[key], list):
             for i in range(len(dic[key])):
@@ -93,6 +93,14 @@ def aux_component2(dic):
                 name = item.name
                 dic[key].comp[i] = {"cid": item.cid, "name": name, "selector": item.selector}
 
+def aux_component2(dic):
+    newcomp = []
+    for key in dic:
+        if isinstance(dic[key], list) and len(dic[key]) > 0 and isinstance(dic[key][0], Component):
+            replace_in_list(dic[key])
+        elif isinstance(dic[key], MultiComp):
+            replace_in_list(dic[key].comp)
+
 def newcomp_from_list(lst):
     newcomp = []
     for i in range(len(lst)):
@@ -103,7 +111,6 @@ def newcomp_from_list(lst):
     return newcomp
 
 def replace_in_list(lst):
-    newcomp = []
     for i in range(len(lst)):
         item = lst[i]
         name = item.name
