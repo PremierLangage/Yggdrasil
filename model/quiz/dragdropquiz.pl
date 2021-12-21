@@ -5,10 +5,22 @@ from customdragdrop import LabelGroup, DropGroup, process_filledtext
 
 lab = []
 drp = []
-questions = ["gg"]
-feedbacks = ["gg"]
-solutions = ["hh"]
 
+from input import Input
+nbstep = 4
+
+with open('phrases.txt') as f:
+    sample_lines = csv_sample(f, nbstep, delimiter='|')
+
+sol = []
+solutions = []
+feedbacks = []
+questions = []
+
+for i in range(2):
+    questions.append("qq")
+    solutions.append("hh")
+    feedbacks.append("jj")
 ==
 
 old ==
