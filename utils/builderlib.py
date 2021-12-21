@@ -79,7 +79,7 @@ def aux_component1_old(dic):
 def aux_component1(dic):
     for key in dic:
         if isinstance(dic[key], list) and len(dic[key]) > 0:
-            if isinstance(dic[key][0], dict) and 'cid' in item:
+            if isinstance(dic[key][0], dict) and 'cid' in dic[key][0]:
                 dic_to_comp(dic[key])
         if isinstance(dic[key], MultiComp):
             dic_to_comp(dic[key].comp)
