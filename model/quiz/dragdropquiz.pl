@@ -1,6 +1,8 @@
 extends = /model/quiz/basic.pl
 
-before ==
+@ /Languages/Latin/phrases.txt
+
+before == #|python|
 from customdragdrop import LabelGroup, DropGroup, process_filledtext
 
 lab = []
@@ -11,11 +13,35 @@ solutions = []
 feedbacks = []
 questions = []
 
-for i in range(2):
-    questions.append("qq")
-    solutions.append("hh")
-    feedbacks.append("jj")
+from input import Input
+nbstep = 4
+
+with open('phrases.txt') as f:
+    sample_lines = csv_sample(f, nbstep, delimiter='|')
+
+sol = []
+solutions = []
+feedbacks = []
+questions = []
+comp = []
+inputblocks = []
+
+for i in range(nbstep):
+    row = sample_lines[i]
+    qq = rf"""
+<strong> Phrase {i + 1}. </strong><br>
+
+{ row['phrase'] }
+"""
+    questions.append(qq)
+    inputblocks.append("{{ comp[" + str(i) + "]|component }}")
+    sol.append(row['rep'])
+    solutions.append(row['rep'])
+    feedbacks.append('')
+    comp.append(Input())
 ==
+
+
 
 old ==
 for i in range(2):
