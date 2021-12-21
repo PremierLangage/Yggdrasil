@@ -21,17 +21,13 @@ Ecrire une fonction **entree_coup** qui vérifie le doctest suivant :
 
 ==
 
-before==
-a = 1
 
-def coup_possible(nb_alumette, plateau,k):
-    if nb_alumette <= len(plateau) and nb_alumette <= k and nb_alumette > 0:
-        return True
-    else:
-        return False
-
-pltest=""">>> a\n>>> from unittest.mock import patch #\n>>> with patch('builtins.input', side_effect=['5', '3']):    coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3) #\n>>> coup\n3"""
-
+pltest==
+>>> def coup_possible(nb_alumette, plateau,k):    if nb_alumette <= len(plateau) and nb_alumette <= k and nb_alumette > 0:        return True    else:        return False
+>>> from unittest.mock import patch #
+>>> with patch('builtins.input', side_effect=['5', '3']):    coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3) #
+>>> coup
+3
 ==
 
 
