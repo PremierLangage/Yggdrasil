@@ -29,7 +29,7 @@ pltest==
 ...            return True
 ...        else:
 ...            return False 
-...    coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3) #
+...    coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3)
 >>> coup
 3
 >>> def bonjour():
