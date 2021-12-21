@@ -27,13 +27,7 @@ comp = []
 inputblocks = []
 
 for i in range(nbstep):
-    row = sample_lines[i]
-    qq = rf"""
-<strong> Phrase {i + 1}. </strong><br>
-
-{ row['phrase'] }
-"""
-    questions.append(qq)
+    questions.append("Compléter")
     lab.append(LabelGroup(["AA", "BB"]))
     drp.append(DropGroup(["AA", "BB"]))
     inputblocks.append("{{ drp[" + str(i) + "].comp[0]|component }}" + "{{ lab[" + str(i) + "].comp[0]|component }}")
