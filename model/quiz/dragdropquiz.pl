@@ -33,10 +33,10 @@ for i in range(nbstep):
 
 { row['phrase'] }
 """
-    ii, _ = process_filledtext("{AA} et {BB}", f"drp[0].comp")
     questions.append(qq)
+    lab.append(LabelGroup(["AA", "BB"]))
     drp.append(DropGroup(["AA", "BB"]))
-    inputblocks.append("{{ drp[" + str(i) + "].comp[0]|component }}")
+    inputblocks.append("{{ drp[" + str(i) + "].comp[0]|component }}" + "{{ lab[" + str(i) + "].comp[0]|component }}")
     sol.append(row['rep'])
     solutions.append(row['rep'])
     feedbacks.append('')
