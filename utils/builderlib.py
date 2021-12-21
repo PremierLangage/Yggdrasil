@@ -26,7 +26,7 @@ ComponentEnv.filters["component"] = component
 def aux_component(dic):
     newcomp = []
     for key in dic:
-        if isinstance(dic[key], list) and len(dic[key]) > 0 
+        if isinstance(dic[key], list) and len(dic[key]) > 0:
             if isinstance(dic[key][0], Component):
                 newcomp = newcomp + newcomp_from_list(dic[key])
             elif isinstance(dic[key][0], MultiComp):
