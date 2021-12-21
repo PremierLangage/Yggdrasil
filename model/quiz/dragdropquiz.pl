@@ -27,7 +27,6 @@ def ex_eval(step):
     drp[step-1].eval()
 
 def ex_disable(step):
-    #comp[step-1].disabled = True
     pass
 
 def ex_show(step):
