@@ -7,6 +7,7 @@ lab = []
 drp = []
 questions = ["gg"]
 feedbacks = ["gg"]
+solutions = ["hh"]
 
 ==
 
