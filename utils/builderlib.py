@@ -101,3 +101,10 @@ def newcomp_from_list(lst):
         newcomp.append((name, item))
         lst[i] = {"cid": item.cid, "name": name, "selector": item.selector}
     return newcomp
+
+def replace_in_list(lst):
+    newcomp = []
+    for i in range(len(lst)):
+        item = lst[i]
+        name = item.name
+        lst[i] = {"cid": item.cid, "name": name, "selector": item.selector}
