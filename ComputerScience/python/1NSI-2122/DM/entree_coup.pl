@@ -26,7 +26,7 @@ pltest==
 ...    if nb_alumette <= len(plateau) and nb_alumette <= k and nb_alumette > 0:
 ...        return True
 ...    else:
-...        return False
+...        return False #
 >>> from unittest.mock import patch #
 >>> with patch('builtins.input', side_effect=['5', '3']):
 ...    coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3) #
