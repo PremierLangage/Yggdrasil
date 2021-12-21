@@ -5,8 +5,8 @@ from customdragdrop import LabelGroup, DropGroup, process_filledtext
 
 lab = []
 drp = []
-questions = []
-feedbacks = []
+questions = ["gg"]
+feedbacks = ["gg"]
 for i in range(2):
     lab.append(LabelGroup(["AA", "BB"]))
     #sol, newstring = process_filledtext("{AA} et {BB}", f"drp[{i}]")
