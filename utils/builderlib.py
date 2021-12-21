@@ -48,7 +48,7 @@ def aux_component1(dic):
                 dic_to_comp(dic[key], dic)
             elif isinstance(dic[key][0], MultiComp):
                 for item in dic[key]:
-                    dic_to_comp(item, dic)
+                    dic_to_comp(item.comp, dic)
         if isinstance(dic[key], MultiComp):
             dic_to_comp(dic[key].comp, dic)
 
