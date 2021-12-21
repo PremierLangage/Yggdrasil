@@ -1,7 +1,5 @@
 extends = /model/quiz/basic.pl
 
-@ /Languages/Latin/phrases.txt
-
 before ==
 from customdragdrop import LabelGroup, DropGroup, process_filledtext
 
