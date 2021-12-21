@@ -34,6 +34,7 @@ for i in range(nbstep):
 { row['phrase'] }
 """
     questions.append(qq)
+    drp.append(DropGroup(["AA", "BB"]))
     inputblocks.append("{{ drp[" + str(i) + "].comp[0]|component }}")
     sol.append(row['rep'])
     solutions.append(row['rep'])
