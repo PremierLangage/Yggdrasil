@@ -28,7 +28,10 @@ pltest==
 ...        if nb_alumette <= len(plateau) and nb_alumette <= k and nb_alumette > 0:
 ...            return True
 ...        else:
-...            return False 
+...            return False
+...    def essai():
+...        return 2
+...    coup = essai()
 ...    coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3)
 >>> coup
 3
