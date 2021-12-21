@@ -80,9 +80,9 @@ def aux_component1(dic):
     for key in dic:
         if isinstance(dic[key], list) and len(dic[key]) > 0:
             if isinstance(dic[key][0], dict) and 'cid' in dic[key][0]:
-                dic_to_comp(dic[key])
+                dic_to_comp(dic[key], dic)
         if isinstance(dic[key], MultiComp):
-            dic_to_comp(dic[key].comp)
+            dic_to_comp(dic[key].comp, dic)
 
 # HACK for components in lists
 # components in lists are duplicated outside the lists
@@ -124,7 +124,7 @@ def comp_to_dic(lst):
         name = item.name
         lst[i] = {"cid": item.cid, "name": name, "selector": item.selector}
 
-def dic_to_comp(lst):
+def dic_to_comp(lst, dic):
     for i in range(len(lst)):
         item = lst[i]
         name = item['name']
