@@ -34,7 +34,7 @@ for i in range(nbstep):
 { row['phrase'] }
 """
     questions.append(qq)
-    inputblocks.append("{{ comp[" + str(i) + "]|component }}")
+    inputblocks.append("{{ drp[" + str(i) + "].comp[0]|component }}")
     sol.append(row['rep'])
     solutions.append(row['rep'])
     feedbacks.append('')
