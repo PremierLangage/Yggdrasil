@@ -63,7 +63,7 @@ Ce quiz est composé de 4 questions.
 
 classexo ==
 def ex_eval(step):
-    drp[step-1].eval()
+    return drp[step-1].eval()
 
 def ex_disable(step):
     pass
