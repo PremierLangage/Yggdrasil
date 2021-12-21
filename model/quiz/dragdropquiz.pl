@@ -5,11 +5,13 @@ from customdragdrop import LabelGroup, DropGroup, process_filledtext
 
 lab = []
 drp = []
+questions = []
 for i in range(2):
     lab.append(LabelGroup(["AA", "BB"]))
     drp.append(DropGroup(["AA", "BB"]))
-    _sol_, newstring = process_filledtext("{AA} et {BB}, f"drp[{i}]")
-"""
+    sol, newstring = process_filledtext("{AA} et {BB}, f"drp[{i}]")
+    questions.append(newstring + "\n\n")
+    drp._sol = sol
 ==
 
 intro ==
