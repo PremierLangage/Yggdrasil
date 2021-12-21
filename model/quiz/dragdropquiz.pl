@@ -35,15 +35,12 @@ Ce quiz est composé de 4 question.
 
 classexo ==
 def ex_eval(step):
-    if comp[step-1].value == sol[step-1]:
-        return 100
-    else:
-        return 0
+    comp[step-1].eval()
 
 def ex_disable(step):
-    comp[step-1].disabled = True
+    #comp[step-1].disabled = True
+    pass
 
 def ex_show(step):
-    comp[step-1].score = scores[step-1]
-    comp[step-1].show()
+    pass
 ==
