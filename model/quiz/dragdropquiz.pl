@@ -11,6 +11,7 @@ for i in range(2):
     sol, newstring = process_filledtext("{AA} et {BB}", f"drp[{i-1}]")
     drp.append(DropGroup(["AA", "BB"]))
     drp[i]._sol = sol
+    newstring = ""
     questions.append("")
     
 ==
