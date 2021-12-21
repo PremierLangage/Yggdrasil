@@ -9,7 +9,7 @@ questions = []
 feedbacks = []
 for i in range(2):
     lab.append(LabelGroup(["AA", "BB"]))
-    sol, newstring = process_filledtext("{AA} et {BB}", f"drp[{i-1}]")
+    sol, newstring = process_filledtext("{AA} et {BB}", f"drp[{i}]")
     drp.append(DropGroup(["AA", "BB"]))
     drp[i]._sol = sol
     newstring = ""
