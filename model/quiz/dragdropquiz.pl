@@ -8,10 +8,7 @@ drp = []
 for i in range(2):
     lab.append(LabelGroup(["AA", "BB"]))
     drp.append(DropGroup(["AA", "BB"]))
-    qq = rf"""
-<strong> Phrase {i + 1}. </strong><br>
-
-{ row['phrase'] }
+    _sol_, newstring = process_filledtext("{AA} et {BB}, f"drp[{i}]")
 """
 ==
 
