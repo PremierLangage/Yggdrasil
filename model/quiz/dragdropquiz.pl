@@ -2,31 +2,19 @@ extends = /model/quiz/basic.pl
 
 @ /Languages/Latin/phrases.txt
 
-before == #|python|
-from input import Input
-nbstep = 4
+before ==
+from customdragdrop import LabelGroup, DropGroup
 
-with open('phrases.txt') as f:
-    sample_lines = csv_sample(f, nbstep, delimiter='|')
-
-sol = []
-solutions = []
-feedbacks = []
-questions = []
-comp = []
-
-for i in range(nbstep):
-    row = sample_lines[i]
+lab = []
+drp = []
+for i in range(2):
+    lab.append(LabelGroup(["AA", "BB"]))
+    drp.append(DropGroup(["AA", "BB"]))
     qq = rf"""
 <strong> Phrase {i + 1}. </strong><br>
 
 { row['phrase'] }
 """
-    questions.append(qq)
-    sol.append(row['rep'])
-    solutions.append(row['rep'])
-    feedbacks.append('')
-    comp.append(Input())
 ==
 
 intro ==
@@ -35,7 +23,7 @@ Ce quiz est composé de 4 question.
 
 classexo ==
 def ex_eval(step):
-    comp[step-1].eval()
+    drp[step-1].eval()
 
 def ex_disable(step):
     #comp[step-1].disabled = True
