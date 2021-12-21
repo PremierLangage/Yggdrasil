@@ -6,9 +6,6 @@ from customdragdrop import LabelGroup, DropGroup, process_filledtext
 lab = []
 drp = []
 
-from input import Input
-nbstep = 4
-
 sol = []
 solutions = []
 feedbacks = []
