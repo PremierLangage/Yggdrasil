@@ -54,7 +54,7 @@ def aux_component1(dic):
 # and replaced by dictionaries inside the lists
 def aux_component2(dic):
     for key in dic:
-        if isinstance(dic[key], list) and len(dic[key]) > 0 
+        if isinstance(dic[key], list) and len(dic[key]) > 0:
             if isinstance(dic[key][0], Component):
                 comp_to_dic(dic[key])
             elif isinstance(dic[key][0], MultiComp):
