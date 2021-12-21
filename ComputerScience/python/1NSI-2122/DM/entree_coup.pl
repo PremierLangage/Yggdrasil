@@ -28,7 +28,8 @@ pltest==
 ...    else:
 ...        return False
 >>> from unittest.mock import patch #
->>> with patch('builtins.input', side_effect=['5', '3']):    coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3) #
+>>> with patch('builtins.input', side_effect=['5', '3']):
+...    coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3) #
 >>> coup
 3
 ==
