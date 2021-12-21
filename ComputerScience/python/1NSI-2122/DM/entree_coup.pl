@@ -22,18 +22,20 @@ Ecrire une fonction **entree_coup** qui vérifie le doctest suivant :
 
 
 pltest==
->>> def coup_possible(nb_alumette, plateau,k):
-...    if nb_alumette <= len(plateau) and nb_alumette <= k and nb_alumette > 0:
-...        return True
-...    else:
-...        return False #
 >>> from unittest.mock import patch #
->>> coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3)
+>>> with patch('builtins.input', side_effect=['5', '3']):
+...    def coup_possible(nb_alumette, plateau,k):
+...        if nb_alumette <= len(plateau) and nb_alumette <= k and nb_alumette > 0:
+...            return True
+...        else:
+...            return False 
+...    coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3) #
 >>> coup
 3
 >>> def bonjour():
 ...    print("bonjour")
 >>> bonjour()
+bonjour
 ==
 
 
