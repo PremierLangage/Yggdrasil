@@ -1,5 +1,4 @@
 extends = /ComputerScience/python/template/pltest.pl
-@ /builder/before.py [builder.py]
 
 title= Entree du coup
 
