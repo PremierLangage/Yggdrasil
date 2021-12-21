@@ -8,7 +8,7 @@ drp = []
 questions = []
 for i in range(2):
     lab.append(LabelGroup(["AA", "BB"]))
-    sol, newstring = process_filledtext("{AA} et {BB}", f"drp[{i}]")
+    sol, newstring = process_filledtext("{AA} et {BB}", f"drp[{i-1}]")
     drp.append(DropGroup(["AA", "BB"]))
     drp[i]._sol = sol
     questions.append("")
