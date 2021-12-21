@@ -14,6 +14,7 @@ solutions = []
 feedbacks = []
 questions = []
 comp = []
+inputblocks = []
 
 for i in range(nbstep):
     row = sample_lines[i]
@@ -23,6 +24,7 @@ for i in range(nbstep):
 { row['phrase'] }
 """
     questions.append(qq)
+    .append("{{ comp[%s]|component }}" % i-1)
     sol.append(row['rep'])
     solutions.append(row['rep'])
     feedbacks.append('')
