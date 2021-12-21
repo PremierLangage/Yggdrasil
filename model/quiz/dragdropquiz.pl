@@ -19,7 +19,7 @@ for i in range(2):
 ==
 
 intro ==
-Ce quiz est composé de 4 question.
+Ce quiz est composé de 4 questions.
 ==
 
 classexo ==
