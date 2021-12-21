@@ -26,8 +26,12 @@ ComponentEnv.filters["component"] = component
 def aux_component(dic):
     newcomp = []
     for key in dic:
-        if isinstance(dic[key], list) and len(dic[key]) > 0 and isinstance(dic[key][0], Component):
-            newcomp = newcomp + newcomp_from_list(dic[key])
+        if isinstance(dic[key], list) and len(dic[key]) > 0 
+            if isinstance(dic[key][0], Component):
+                newcomp = newcomp + newcomp_from_list(dic[key])
+            elif isinstance(dic[key][0], MultiComp):
+                for item in dic[key]:
+                    newcomp = newcomp + newcomp_from_list(item.comp)
         elif isinstance(dic[key], MultiComp):
             newcomp = newcomp + newcomp_from_list(dic[key].comp)
     for name, comp in newcomp:
@@ -51,8 +55,12 @@ def aux_component1(dic):
 def aux_component2(dic):
     newcomp = []
     for key in dic:
-        if isinstance(dic[key], list) and len(dic[key]) > 0 and isinstance(dic[key][0], Component):
-            comp_to_dic(dic[key])
+        if isinstance(dic[key], list) and len(dic[key]) > 0 
+            if isinstance(dic[key][0], Component):
+                comp_to_dic(dic[key])
+            elif isinstance(dic[key][0], MultiComp):
+                for item in dic[key]:
+                    comp_to_dic(item.comp)
         elif isinstance(dic[key], MultiComp):
             comp_to_dic(dic[key].comp)
 
