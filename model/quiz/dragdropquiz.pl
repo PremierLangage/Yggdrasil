@@ -33,6 +33,7 @@ for i in range(nbstep):
 
 { row['phrase'] }
 """
+    sol, newstring = process_filledtext("{AA} et {BB}", f"drp[{i}].comp")
     questions.append(qq)
     drp.append(DropGroup(["AA", "BB"]))
     inputblocks.append("{{ drp[" + str(i) + "].comp[0]|component }}")
@@ -47,7 +48,7 @@ for i in range(nbstep):
 old ==
 for i in range(2):
     lab.append(LabelGroup(["AA", "BB"]))
-    #sol, newstring = process_filledtext("{AA} et {BB}", f"drp[{i}]")
+    #sol, newstring = process_filledtext("{AA} et {BB}", f"drp[{i}].comp")
     drp.append(DropGroup(["AA", "BB"]))
     #drp[i]._sol = sol
     #newstring = ""
