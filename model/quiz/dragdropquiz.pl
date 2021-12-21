@@ -33,7 +33,7 @@ for i in range(nbstep):
 
 { row['phrase'] }
 """
-    ii, _ = process_filledtext("{AA} et {BB}", f"drp[{i}].comp")
+    ii, _ = process_filledtext("{AA} et {BB}", f"drp[0].comp")
     questions.append(qq)
     drp.append(DropGroup(["AA", "BB"]))
     inputblocks.append("{{ drp[" + str(i) + "].comp[0]|component }}")
