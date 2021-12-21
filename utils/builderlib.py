@@ -60,7 +60,7 @@ def aux_component(dic):
 # HACK for components in lists
 # dictionaries with cid key in lists are replaced
 # by corresponding components
-def aux_component1(dic):
+def aux_component1_old(dic):
     for key in dic:
         if isinstance(dic[key], list):
             for i in range(len(dic[key])):
@@ -75,6 +75,14 @@ def aux_component1(dic):
                 name = item['name']
                 dic[key].comp[i] = dic[name]
                 dic[key].comp[i].name = name
+
+def aux_component1(dic):
+    for key in dic:
+        if isinstance(dic[key], list) and len(dic[key]) > 0:
+            if isinstance(dic[key][0], dict) and 'cid' in item:
+                dic_to_comp(dic[key])
+        if isinstance(dic[key], MultiComp):
+            dic_to_comp(dic[key].comp)
 
 # HACK for components in lists
 # components in lists are duplicated outside the lists
@@ -97,9 +105,9 @@ def aux_component2(dic):
     newcomp = []
     for key in dic:
         if isinstance(dic[key], list) and len(dic[key]) > 0 and isinstance(dic[key][0], Component):
-            replace_in_list(dic[key])
+            comp_to_dic(dic[key])
         elif isinstance(dic[key], MultiComp):
-            replace_in_list(dic[key].comp)
+            comp_to_dic(dic[key].comp)
 
 def newcomp_from_list(lst):
     newcomp = []
@@ -110,8 +118,15 @@ def newcomp_from_list(lst):
         lst[i] = {"cid": item.cid, "name": name, "selector": item.selector}
     return newcomp
 
-def replace_in_list(lst):
+def comp_to_dic(lst):
     for i in range(len(lst)):
         item = lst[i]
         name = item.name
         lst[i] = {"cid": item.cid, "name": name, "selector": item.selector}
+
+def dic_to_comp(lst):
+    for i in range(len(lst)):
+        item = lst[i]
+        name = item['name']
+        lst[i] = dic[name]
+        lst[i].name = name
