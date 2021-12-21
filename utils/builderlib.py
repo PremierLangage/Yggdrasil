@@ -53,7 +53,6 @@ def aux_component1(dic):
 # components in lists are duplicated outside the lists
 # and replaced by dictionaries inside the lists
 def aux_component2(dic):
-    newcomp = []
     for key in dic:
         if isinstance(dic[key], list) and len(dic[key]) > 0 
             if isinstance(dic[key][0], Component):
