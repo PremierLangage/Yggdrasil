@@ -94,7 +94,7 @@ Ecrire une fonction **jeu_de_nim** qui vérifie le doctest suivant :
 
 pltest==
 >>> from unittest.mock import patch #
->>> with patch('builtins.input', side_effect=['5', '3']):
+>>> with patch('builtins.input', side_effect=['Bob', 'Alice','3','4','3','3','3','3','3','2','0','1']):
 ...    gagnant = jeu_de_nim(21, 3) #
 >>> gagnant
 'Bob'
