@@ -22,7 +22,7 @@ class DropGroup(MultiComp):
         counter = 0
         newstring = ''
         start = 0
-        for m in re.finditer(r"{([^{}]+)}", self.embed):
+        for m in re.finditer(r"{([^{}]*)}", self.embed):
             end, newstart = m.span()
             newstring += self.embed[start:end]
             selector = self.comp[counter].selector
