@@ -14,6 +14,14 @@ class DropGroup(MultiComp):
         elif isinstance(param, list):
             self.comp = [CustomDragDrop.Drop() for _ in range(len(param))]
             self._sol = param
+
+    def paste_embed(self):
+        lst = []
+        for comp in self.comp:
+            selector = comp.selector
+            cid = comp.cid
+            lst.append(f"<{selector} cid='{cid}'></{selector}>")
+        return "".join(l
     
     def eval(self):
         n = len(self.comp)
