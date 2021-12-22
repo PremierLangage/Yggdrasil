@@ -45,7 +45,7 @@ class LabelGroup(MultiComp):
 
     def paste_all(self):
         lst = []
-        for comp in self.comp
+        for comp in self.comp:
             selector = comp.selector
             cid = comp.cid
             lst.append(f"<{selector} cid='{cid}'></{selector}>")
