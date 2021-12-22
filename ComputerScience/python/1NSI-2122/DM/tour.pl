@@ -42,6 +42,9 @@ Ecrire une fonction **tour** qui vérifie le doctest suivant :
      4. Test si il y a une fin de jeu (victoire).
     Cette fonction retourne True si il y a une fin de jeu (victoire), False sinon.
 
+    Considérez que toutes les fonctions précédemment demandées sont faites et 
+    fonctionnent correctement
+
     exemple:
     >>> plateau = ['|', '|', '|', '|']
     >>> fin = tour(['Bob', 'Alice'], 1, plateau, 3)
