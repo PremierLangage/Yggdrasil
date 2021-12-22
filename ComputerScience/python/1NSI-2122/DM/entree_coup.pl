@@ -1,4 +1,5 @@
-extends = pltest.pl
+extends = pltest_before.pl
+# extends = /ComputerScience/python/template/pltest.pl
 
 title= Entree du coup
 
