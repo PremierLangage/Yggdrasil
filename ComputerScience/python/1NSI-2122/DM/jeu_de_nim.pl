@@ -38,6 +38,13 @@ def victoire(plateau):
     if len(plateau)==0:
         return True
     return False
+
+def tour(joueurs, joueur_actif, plateau, k):
+    coup = entree_coup(joueurs, joueur_actif, plateau, k)
+    jouer_coup(coup, plateau)
+    affiche_plateau(plateau)
+    fin = victoire(plateau)
+    return fin
 ==
 
 text==
