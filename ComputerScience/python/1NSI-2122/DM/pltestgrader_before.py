@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     
     dic = get_context()
-    student = get_answers()['answer']
+    student = get_answers()['answer'] + dic['befor']
     with open("student.py","w") as ost:
         ost.write(student)
     if "taboo" in dic:
