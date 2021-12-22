@@ -61,7 +61,7 @@ Dans cet exemple, le joueur 2 est obligé de prendre la dernière allumette, il 
 
 Réaliser toutes les étapes.
 
-Si vous arrivez à la fin. Recopiez toutes les fonctions dans un même fichier dans spyder, 
+Si vous arrivez à la fin, recopiez toutes les fonctions dans un même fichier dans spyder, 
 et lancez le jeu avec la commande jeu_de_nim(21,3) par exemple.
 
 ==
