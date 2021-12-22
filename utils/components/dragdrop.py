@@ -49,7 +49,7 @@ class LabelGroup(MultiComp):
             selector = comp.selector
             cid = comp.cid
             lst.append(f"<{selector} cid='{cid}'></{selector}>")
-        return " ".join(lst)
+        return "".join(lst)
 
 import re
 
