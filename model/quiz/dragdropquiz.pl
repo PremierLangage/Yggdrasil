@@ -30,7 +30,7 @@ for i in range(nbstep):
     questions.append("Compléter")
     lab.append(LabelGroup(["AA", "BB"]))
     drp.append(DropGroup(["AA", "BB"]))
-    inputblocks.append("{{ drp[" + str(i) + "].comp[0]|component }}" + "{{ lab[" + str(i) + "].comp[0]|component }}")
+    inputblocks.append("{{ drp[" + str(i) + "].comp[0]|component }}" + lab[i].paste_all())
     solutions.append("")
     feedbacks.append('')
 ==
