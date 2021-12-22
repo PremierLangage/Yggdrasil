@@ -32,7 +32,7 @@ for i in range(nbstep):
     drp.append(DropGroup(["AA", "BB"]))
     inputblocks.append(drp[i].paste_embed() + lab[i].paste_all())
     solutions.append("")
-    feedbacks.append('')
+    feedbacks.append("")
 ==
 
 
