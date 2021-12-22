@@ -45,33 +45,47 @@ text==
 
 Ecrire une fonction **jeu_de_nim** qui vérifie le doctest suivant :
 
-    la fonction jeu_de_nim(n, k) implémentant le jeu de nim pour n alumettes
-    initiales et ne pouvant jamais tirer plus de k alumettes à chaque tour:
-     1. Demande à entrer un coup au joueur actif joueur_actif.
-     2. Joue le coup choisi par le joueur actif.
-     3. Affiche le plateau.
-     4. Test si il y a une fin de jeu (victoire).
-    Cette fonction retourne True si il y a une fin de jeu (victoire), False sinon.
+    la fonction jeu_de_nim(n, k) implémente le jeu de nim pour n alumettes
+    initiales dans lequel on ne peut jamais tirer plus de k alumettes 
+    à chaque tour. Cette fonction réalise les étapes suivantes:
+     1. Demande le nom des joueurs,
+     2. Initialise le plateau,
+     3. Affiche le plateau,
+     4. Réalise les tours de jeu jusqu'à la fin de la partie
+     5. Affiche "nom du gagnant vous avez gagné !"
+    Cette fonction retourne le nom du gagnant.
 
     Considérez que toutes les fonctions précédemment demandées sont faites et 
-    fonctionnent correctement
+    fonctionnent correctement.
 
     exemple:
-    >>> plateau = ['|', '|', '|', '|']
-    >>> fin = tour(['Bob', 'Alice'], 1, plateau, 3)
-    Alice combien voulez vous en enlever ? 5
+    >>> gagnant = jeu_de_nim(21, 3)
+    Entrez le nom du joueur 1 Bob
+    Entrez le nom du joueur 2 Alice
+    | | | | | | | | | | | | | | | | | | | | |
+    Bob combien voulez vous en enlever ? 3
+    | | | | | | | | | | | | | | | | | |
+    Alice combien voulez vous en enlever ? 4
     Impossible.
     Alice combien voulez vous en enlever ? 3
-    >>> fin
-    False
-    >>> plateau
-    ['|']
-    >>> fin = tour(['Bob', 'Alice'], 0, plateau, 3)
-    Bob combien voulez vous en enlever ? 1
-    >>> fin
-    True
-    >>> plateau
-    []
+    | | | | | | | | | | | | | | |
+    Bob combien voulez vous en enlever ? 3
+    | | | | | | | | | | | |
+    Alice combien voulez vous en enlever ? 3
+    | | | | | | | | |
+    Bob combien voulez vous en enlever ? 3
+    | | | | | |
+    Alice combien voulez vous en enlever ? 3
+    | | |
+    Bob combien voulez vous en enlever ? 2
+    |
+    Alice combien voulez vous en enlever ? 0
+    Impossible.
+    Alice combien voulez vous en enlever ? 1
+
+    Bob vous avez gagné !
+    >>> gagnant
+    'Bob'
 
 
 ==
@@ -80,19 +94,10 @@ Ecrire une fonction **jeu_de_nim** qui vérifie le doctest suivant :
 
 pltest==
 >>> from unittest.mock import patch #
->>> plateau = ['|', '|', '|', '|'] #
 >>> with patch('builtins.input', side_effect=['5', '3']):
-...    fin = tour(['Bob', 'Alice'], 1, plateau, 3) #
->>> fin
-False
->>> plateau
-['|']
->>> with patch('builtins.input', side_effect=['1']):
-...    fin = tour(['Bob', 'Alice'], 0, plateau, 3) #
->>> fin
-True
->>> plateau
-[]
+...    gagnant = jeu_de_nim(21, 3) #
+>>> gagnant
+'Bob'
 ==
 
 
