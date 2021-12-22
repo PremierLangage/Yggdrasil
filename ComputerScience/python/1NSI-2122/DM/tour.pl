@@ -66,15 +66,15 @@ Ecrire une fonction **tour** qui vérifie le doctest suivant :
 
 pltest==
 >>> from unittest.mock import patch #
->>> plateau = ['|', '|', '|', '|']
+>>> plateau = ['|', '|', '|', '|'] #
 >>> with patch('builtins.input', side_effect=['5', '3']):
-...    fin = entree_coup(['Bob', 'Alice'], 1, plateau, 3) #
+...    fin = tour(['Bob', 'Alice'], 1, plateau, 3) #
 >>> fin
 False
 >>> plateau
 ['|']
 >>> with patch('builtins.input', side_effect=['1']):
-...    fin = entree_coup(['Bob', 'Alice'], 0, plateau, 3) #
+...    fin = tour(['Bob', 'Alice'], 0, plateau, 3) #
 >>> fin
 True
 >>> plateau
