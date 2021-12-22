@@ -17,13 +17,44 @@ C'est un jeu à deux joueurs faisant partie d'une famille de jeux rassemblés so
 
 ## Régles du Jeu
 
-Le jeu de nim est une famille 
+### Principe général
 
+Dans ce jeux, on dispose sur la table entre les deux adversaires une collection d’objets 
+identiques (jetons, cartes, allumettes…). Chaque joueur ou joueuse, à tour de rôle, retire 
+un certain nombre d’objets. La première personne qui retire le dernier objet a perdu.
 
-Les règles de la belote :
-[https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/  ](https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/)
+Les N objets sont disposés sur une même rangée. Chaque joueur peut, à son tour, 
+retirer entre un et k objets.
 
+### Exemple
 
+Voici un exemple de partie où l’on a choisi de jouer avec des allumettes, avec N = 21. 
+On fixe k = 3, ce qui signifie que chaque joueur peut retirer entre 1 et 3 allumettes :
+
+Situation initiale, la joueuse 1 commence, il y a 21 allumettes :
+21 allumettes
+La joueuse 1 a pris 1 allumette, il en reste 21 − 1 = 20 :
+20 allumettes
+Le joueur 2 a pris 2 allumettes, il en reste 20 − 2 = 18 ; 18 allumettes
+La joueuse 1 a pris 2 allumettes, il en reste 18 − 2 = 16 ;
+16 allumettes
+Le joueur 2 a pris 3 allumettes, il en reste 16 − 3 = 13 ;
+13 allumettes
+La joueuse 1 a pris 1 allumette, il en reste 13 − 1 = 12 ;
+12 allumettes
+Le joueur 2 a pris 1 allumette, il en reste 12 − 1 = 11 ;
+11 allumettes
+La joueuse 1 a pris 3 allumettes, il en reste 11 − 3 = 8 ;
+8 allumettes
+Le joueur 2 a pris 2 allumettes, il en reste 8 − 2 = 6 ;
+6 allumettes
+La joueuse 1 a pris 2 allumettes, il en reste 6 − 2 = 4 ;
+4 allumettes
+Le joueur 2 a pris 1 allumette, il en reste 4 − 1 = 3 ;
+3 allumettes
+La joueuse 1 a pris 3 allumettes, il en reste 3 − 3 = 0.
+0 allumettes
+Dans cet exemple, la joueuse 1 a pris la dernière allumette. Dans le mode de victoire “normal”, c’est donc elle qui remporte la partie puisque son adversaire ne peut plus jouer.
 ==
 
 # Fonctions de base 
