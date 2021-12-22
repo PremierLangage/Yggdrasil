@@ -31,7 +31,8 @@ Les règles de la belote :
 @ entree_joueurs.pl
 @ affiche_plateau.pl
 @ entree_coup.pl
-#@ tour.pl
+@ tour.pl
+@ jeu_de_nim.pl
 
 
 reserve==
