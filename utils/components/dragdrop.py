@@ -25,8 +25,6 @@ class DropGroup(MultiComp):
             newstring += filledtext[start:end]
             self.comp.append(CustomDragDrop.Drop())
             self._sol.append(m.group(1))
-            selector = self.comp[counter].selector
-            cid = self.comp[counter].cid
             rep = "{ }"
             newstring += rep
             start = newstart
