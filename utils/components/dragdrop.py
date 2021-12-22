@@ -20,7 +20,7 @@ class DropGroup(MultiComp):
         counter = 0
         newstring = ''
         start = 0
-        for m in re.finditer(r"{([^{}]*)}", filledtext):
+        for m in re.finditer(r"{([^{}]+)}", filledtext):
             end, newstart = m.span()
             newstring += filledtext[start:end]
             self.comp.append(CustomDragDrop.Drop())
