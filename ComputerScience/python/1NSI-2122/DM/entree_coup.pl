@@ -3,6 +3,14 @@ extends = pltest_before.pl
 
 title= Entree du coup
 
+befor==
+def coup_possible(nb_alumette, plateau,k):
+        if nb_alumette <= len(plateau) and nb_alumette <= k and nb_alumette > 0:
+            return True
+        else:
+            return False
+==
+
 text==
 
 
