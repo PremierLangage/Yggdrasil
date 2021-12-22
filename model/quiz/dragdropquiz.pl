@@ -30,7 +30,7 @@ for i in range(nbstep):
     questions.append("Compléter")
     lab.append(LabelGroup(["AA", "BB"]))
     drp.append(DropGroup(["AA", "BB"]))
-    drp[i].emebed = "{} ou {}"
+    drp[i].embed = "{} ou {}"
     inputblocks.append(drp[i].paste_embed() + lab[i].paste_all())
     solutions.append("")
     feedbacks.append("")
