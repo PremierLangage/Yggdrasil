@@ -43,10 +43,10 @@ def victoire(plateau):
 text==
 
 
-Ecrire une fonction **tour** qui vérifie le doctest suivant :
+Ecrire une fonction **jeu_de_nim** qui vérifie le doctest suivant :
 
-    la fonction tour(joueurs, joueur_actif, plateau, k) réalise un tour complet
-    du jeu de nim:
+    la fonction jeu_de_nim(n, k) implémentant le jeu de nim pour n alumettes
+    initiales et ne pouvant jamais tirer plus de k alumettes à chaque tour:
      1. Demande à entrer un coup au joueur actif joueur_actif.
      2. Joue le coup choisi par le joueur actif.
      3. Affiche le plateau.
