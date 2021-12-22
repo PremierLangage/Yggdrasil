@@ -15,7 +15,7 @@ class DropGroup(MultiComp):
             self.comp = [CustomDragDrop.Drop() for _ in range(len(param))]
             self._sol = param
 
-    def set_filledtext(filledtext):
+    def set_filledtext(self, filledtext):
         counter = 0
         newstring = ''
         start = 0
