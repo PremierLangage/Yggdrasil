@@ -32,12 +32,20 @@ class DropGroup(MultiComp):
         return sol, newstring
 
     def paste_embed(self):
-        lst = []
-        for comp in self.comp:
-            selector = comp.selector
-            cid = comp.cid
-            lst.append(f"<{selector} cid='{cid}'></{selector}>")
-        return "".join(l
+        counter = 0
+        newstring = ''
+        start = 0
+        for m in re.finditer(r"{([^{}]+)}", self.embed):
+            end, newstart = m.span()
+            newstring += self.embed[start:end]
+            selector = self.comp[counter].selector
+            cid = self.comp[counter].cid
+            rep = f"<{selector} cid='{cid}'></{selector}>"
+            newstring += rep
+            start = newstart
+            counter += 1
+        newstring += self.embed[start:]
+        return newstring
     
     def eval(self):
         n = len(self.comp)
