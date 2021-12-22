@@ -29,7 +29,7 @@ class DropGroup(MultiComp):
             start = newstart
             counter += 1
         newstring += filledtext[start:]
-        self.emebd = newstring
+        self.embed = newstring
 
     def paste_embed(self):
         counter = 0
