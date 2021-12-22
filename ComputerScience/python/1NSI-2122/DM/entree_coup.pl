@@ -21,11 +21,13 @@ Ecrire une fonction **entree_coup** qui vérifie le doctest suivant :
     vérifiant que le coup est possible.
 
     exemple:
-    >>> joueurs = entree_joueurs() 
-    >>> joueurs
-    ['Bob', 'Alice']
+    >>> coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3)
+    Alice combien voulez vous en enlever ? 5
+    Impossible.
+    Alice combien voulez vous en enlever ? 3
+    >>> coup
+    3
 
-[https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/  ](https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/)
 
 ==
 
@@ -34,18 +36,9 @@ Ecrire une fonction **entree_coup** qui vérifie le doctest suivant :
 pltest==
 >>> from unittest.mock import patch #
 >>> with patch('builtins.input', side_effect=['5', '3']):
-...    def coup_possible(nb_alumette, plateau,k):
-...        if nb_alumette <= len(plateau) and nb_alumette <= k and nb_alumette > 0:
-...            return True
-...        else:
-...            return False
-...    coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3)
+...    coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3) #
 >>> coup
 3
->>> def bonjour():
-...    print("bonjour")
->>> bonjour()
-bonjour
 ==
 
 
