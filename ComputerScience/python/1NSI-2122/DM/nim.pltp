@@ -32,7 +32,7 @@ Voici un exemple de partie où l’on a choisi de jouer avec des allumettes, ave
 On fixe k = 3, ce qui signifie que chaque joueur peut retirer entre 1 et 3 allumettes :
 
 Situation initiale, la joueuse 1 commence, il y a 21 allumettes :
-21 allumettes
+![21 allumettes](https://igm.univ-mlv.fr/~ameyer/pr1/img/21/21-allumettes-1.png)
 La joueuse 1 a pris 1 allumette, il en reste 21 − 1 = 20 :
 20 allumettes
 Le joueur 2 a pris 2 allumettes, il en reste 20 − 2 = 18 ; 18 allumettes
