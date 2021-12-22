@@ -22,9 +22,11 @@ class DropGroup(MultiComp):
         for m in re.finditer(r"{([^{}]*)}", filledtext):
             end, newstart = m.span()
             newstring += filledtext[start:end]
+            self.comp.append(CustomDragDrop.Drop())
+            self._solappend(m.group(1))
             selector = self.comp[counter].selector
             cid = self.comp[counter].cid
-            rep = f"{}"
+            rep = "{}"
             newstring += rep
             start = newstart
             counter += 1
