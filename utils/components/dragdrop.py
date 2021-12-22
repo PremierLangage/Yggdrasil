@@ -43,7 +43,14 @@ class LabelGroup(MultiComp):
         if isinstance(param, list):
             self.comp = [CustomDragDrop.Label(content=content) for content in param]
 
-    
+    def paste_all(self):
+        lst = []
+        for comp in self.comp
+            selector = comp.selector
+            cid = comp.cid
+            lst.append(f"<{selector} cid='{cid}'></{selector}>")
+        return " ".join(lst)
+
 import re
 
 def process_filledtext(filledtext, name):
