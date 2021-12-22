@@ -5,8 +5,17 @@ title= Jeu de Nim
 
 introduction==
 
+# Jeux de Nim
 
-Ce devoir à la maison est à réaliser en
+Ce devoir à la maison est à réaliser entièrement sur cette plateforme.
+L’objectif de ce devoir est d’implémenter un jeu de stratégie popularisé par l'émission de télévision "Fort Boyard".
+C'est un jeu à deux joueurs faisant partie d'une famille de jeux rassemblés sous le terme générique de “jeux de Nim”.
+
+
+## Régles du Jeu
+
+Le jeu de nim est une famille 
+
 
 Les règles de la belote :
 [https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/  ](https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/)
