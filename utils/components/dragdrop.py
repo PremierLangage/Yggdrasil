@@ -16,20 +16,7 @@ class DropGroup(MultiComp):
             self._sol = param
 
     def set_filledtext(filledtext):
-        sol = []
-        counter = 0
-        newstring = ''
-        start = 0
-        for m in re.finditer(r"{([^{}]+)}", filledtext):
-            end, newstart = m.span()
-            newstring += filledtext[start:end]
-            rep = "{{ "+ name + ".comp[" + str(counter) + "]|component }}"
-            sol.append(m.group(1)) 
-            newstring += rep
-            start = newstart
-            counter += 1
-        newstring += filledtext[start:]
-        return sol, newstring
+        pass
 
     def paste_embed(self):
         counter = 0
