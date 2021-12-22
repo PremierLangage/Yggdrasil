@@ -21,6 +21,7 @@ Ecrire une fonction **entree_coup** qui vérifie le doctest suivant :
 ==
 
 
+
 pltest==
 >>> from unittest.mock import patch #
 >>> with patch('builtins.input', side_effect=['5', '3']):
@@ -29,9 +30,6 @@ pltest==
 ...            return True
 ...        else:
 ...            return False
-...    def essai():
-...        return 2
-...    coup = essai()
 ...    coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3)
 >>> coup
 3
@@ -40,6 +38,8 @@ pltest==
 >>> bonjour()
 bonjour
 ==
+
+
 
 
 
