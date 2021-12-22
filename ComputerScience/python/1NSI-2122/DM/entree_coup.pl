@@ -18,7 +18,8 @@ Ecrire une fonction **entree_coup** qui vérifie le doctest suivant :
 
     la fonction entree_coup(joueurs, joueur_actif, plateau, k) demande au joueur 
     actif combien il veut enlever d'alumettes. La saisie est contôlée en
-    vérifiant que le coup est possible.
+    vérifiant que le coup est possible (vous pouvez utiliser la fonction coup_possible
+    définie précédemment).
 
     exemple:
     >>> coup = entree_coup(['Bob', 'Alice'], 1, ['|', '|', '|', '|'], 3)
