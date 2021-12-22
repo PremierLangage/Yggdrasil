@@ -52,10 +52,11 @@ Le joueur 2 a pris 2 allumettes, il en reste 8 − 2 = 6 ;
 La joueuse 1 a pris 2 allumettes, il en reste 6 − 2 = 4 ;
 ![4 allumettes](https://igm.univ-mlv.fr/~ameyer/pr1/img/21/4-allumettes-2.png)
 Le joueur 2 a pris 1 allumette, il en reste 4 − 1 = 3 ;
-![3 allumettes](https://igm.univ-mlv.fr/~ameyer/pr1/img/21/3-allumettes-1.png)
-La joueuse 1 a pris 3 allumettes, il en reste 3 − 3 = 0.
-![0 allumettes](https://igm.univ-mlv.fr/~ameyer/pr1/img/21/21-allumettes-1.png)
-Dans cet exemple, la joueuse 1 a pris la dernière allumette. Dans le mode de victoire “normal”, c’est donc elle qui remporte la partie puisque son adversaire ne peut plus jouer.
+![3 allumettes](http://html.brunache.ovh/3%20alumettes.png)
+La joueuse 1 a pris 2 allumettes, il en reste 3 − 2 = 1.
+
+Dans cet exemple, le joueur 2 est obligé de prendre la dernière allumette, il a donc perdu.
+
 ==
 
 # Fonctions de base 
