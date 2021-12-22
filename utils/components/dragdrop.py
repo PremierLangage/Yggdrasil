@@ -27,7 +27,7 @@ class DropGroup(MultiComp):
             self._sol.append(m.group(1))
             selector = self.comp[counter].selector
             cid = self.comp[counter].cid
-            rep = "{}"
+            rep = "{ }"
             newstring += rep
             start = newstart
             counter += 1
