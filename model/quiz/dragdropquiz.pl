@@ -29,8 +29,8 @@ inputblocks = []
 for i in range(nbstep):
     questions.append("Compléter")
     lab.append(LabelGroup(["AA", "BB"]))
-    drp.append(DropGroup(["AA", "BB"]))
-    drp[i].embed = "{g} ou {g}"
+    drp.append(DropGroup())
+    drp[i].set_filledtext = "{A} ou {B}"
     inputblocks.append(drp[i].paste_embed() + lab[i].paste_all())
     solutions.append("")
     feedbacks.append("")
