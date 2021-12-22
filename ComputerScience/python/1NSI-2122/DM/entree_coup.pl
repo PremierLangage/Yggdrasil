@@ -1,4 +1,4 @@
-extends = /ComputerScience/python/template/pltest.pl
+extends = pltest.pl
 
 title= Entree du coup
 
