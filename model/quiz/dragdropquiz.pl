@@ -28,10 +28,10 @@ inputblocks = []
 
 for i in range(nbstep):
     questions.append("Compléter")
-    lab.append(LabelGroup(["AA", "BB"]))
+    lab.append(LabelGroup(["habet", "habent"]))
     drp.append(DropGroup())
-    drp[i].set_filledtext("{A} ou {B}")
-    inputblocks.append(drp[i].paste_embed() + lab[i].paste_all())
+    drp[i].set_filledtext("Pastor non pecuniam {habet}.")
+    inputblocks.append(drp[i].paste_embed() +"\n\n" + lab[i].paste_all())
     solutions.append("")
     feedbacks.append("")
 ==
