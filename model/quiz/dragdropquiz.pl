@@ -1,9 +1,7 @@
 extends = /model/quiz/basic.pl
 
-@ /Languages/Latin/phrases.txt
-
 before == #|python|
-from customdragdrop import LabelGroup, DropGroup, process_filledtext
+from customdragdrop import LabelGroup, DropGroup
 
 lab = []
 drp = []
