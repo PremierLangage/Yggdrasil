@@ -2,6 +2,7 @@ from components import Component
 from random import shuffle
 from uuid import uuid4
 from multicomp import MultiComp
+from random import shuffle
 
 class DropGroup(MultiComp):
 
@@ -76,12 +77,13 @@ class LabelGroup(MultiComp):
         if isinstance(param, list):
             self.comp = [CustomDragDrop.Label(content=content) for content in param]
 
-    def paste_all(self):
+    def paste_all(self, shuffled=True):
         lst = []
         for comp in self.comp:
             selector = comp.selector
             cid = comp.cid
             lst.append(f"<{selector} cid='{cid}'></{selector}>")
+        shuffle(lst)
         return "".join(lst)
 
 import re
