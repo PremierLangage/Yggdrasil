@@ -20,8 +20,8 @@ question ==
 </div>
 <div class="column">
 <ul>
-{% for i in range(4) %}
-<li> {{ i + 1 }}. {{ drp.comp[i]|component }} </li>
+{% for drop in drp.comp %}
+<li> {{ loop.index }}. {{ drop|component }} </li>
 {% endfor %}
 </ul>
 </div>
