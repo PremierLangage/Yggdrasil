@@ -7,9 +7,7 @@ Compléter le texte suivant avec les étiquettes.
 ==
 
 process ==
-from customdragdrop import LabelGroup, DropGroup, process_filledtext
-
-_sol_, newstring = process_filledtext(filledtext, "drp")
+from customdragdrop import LabelGroup, DropGroup
 
 if isinstance(labels, str):
     _labels_ = labels.splitlines()
