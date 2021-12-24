@@ -14,7 +14,7 @@ for i in range(4):
 
 question ==
 Comparer les nombres suivants en utilisant le symbole adapté ({{ clabels[0] }} ou {{ clabels[1] }}).
-{% for i in range(nbdrops) %}
-* {{ numbers[i][0] }} {{ drp.comp[i]|component }} {{ numbers[i][1] }}
+{% for drop in drp.comp %}
+* {{ numbers[loop.index0][0] }} {{ drop|component }} {{ numbers[loop.index0][1] }}
 {% endfor %}
 ==
