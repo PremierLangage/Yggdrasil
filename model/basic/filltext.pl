@@ -21,13 +21,9 @@ else:
 _labels_ = list(set(_labels_ + _sol_))
 
 lab = LabelGroup(_labels_)
-drp = DropGroup(_sol_)
+drp = DropGroup()
+drp.set_filledtext(filledtext)
 
-_labels_ = list(set(_labels_ + _sol_))
-
-part2 = "&nbsp;".join(["{{ lab.comp[" + str(i) + "]|component }}" for i in range(len(_labels_))]
-)
-
-inputblock = newstring + "\n\n" + part2
+inputblock = drp.paste_embed() +"\n\n" + lab.paste_all()
 ==
 
