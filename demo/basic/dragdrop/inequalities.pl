@@ -13,7 +13,7 @@ for i in range(4):
 ==
 
 question ==
-Comparer les nombres suivants en utilisant le symbole adapté ({{ clabels[0] }} ou {{ clabels[1] }}).
+Comparer les nombres suivants en utilisant le symbole adapté ({{ lab.comp[0]|component }} ou {{ lab.comp[1]|component }}).
 {% for drop in drp.comp %}
 * {{ numbers[loop.index0][0] }} {{ drop|component }} {{ numbers[loop.index0][1] }}
 {% endfor %}
