@@ -16,11 +16,12 @@ elif isinstance(labels, list):
 else:
     _labels_ = []
 
-_labels_ = list(set(_labels_ + _sol_))
-
-lab = LabelGroup(_labels_)
 drp = DropGroup()
 drp.set_filledtext(filledtext)
+
+_labels_ = list(set(_labels_ + drp._sol))
+lab = LabelGroup(_labels_)
+
 
 inputblock = drp.paste_embed() +"\n\n" + lab.paste_all()
 ==
