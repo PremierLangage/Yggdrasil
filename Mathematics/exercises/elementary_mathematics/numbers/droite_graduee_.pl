@@ -19,7 +19,7 @@ inputblock ==
 {{ jxg|component }}
 ==
 
-style2.jxgcss ==
+style.jxgcss ==
 <style>
 .jsxgraph-component {
     width: 500px;
