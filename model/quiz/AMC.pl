@@ -34,9 +34,6 @@ for i, q in enumerate(list_questions):
         comp.append(Checkbox())
         comp[i].set_items(q['items'])
         comp[i].set_sol(q['index'])
-    elif  q['type'] == 'TextSelect':
-        # comp.append(CustomTextSelect())
-        continue # no implemented yet 
     questions.append(q['text'])
     inputblocks.append(comp[i].render())
     if 'ordered' not in q['options']:
@@ -73,7 +70,7 @@ quiz ==
 
 classexo ==
 def ex_eval(step):
-    score = comp[step-1].eval()
+    return comp[step-1].eval()
 
 def ex_disable(step):
     comp[step-1].disabled = True
