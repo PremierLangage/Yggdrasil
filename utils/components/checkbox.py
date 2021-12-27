@@ -3,7 +3,6 @@ from uuid import uuid4
 from components import Component
 from scoring import *
 
-# new class
 class Checkbox(Component):
 
     def __init__(self, **kwargs):
@@ -113,5 +112,11 @@ class Checkbox(Component):
     def disable(self):
         """
         Disable the component.
+        """
+        self.disabled = True
+
+    def render(self):
+        """
+        Return the HTML code of the component.
         """
         self.disabled = True
