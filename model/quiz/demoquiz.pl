@@ -36,16 +36,16 @@ Ce quiz est composé de 4 question.
 ==
 
 classexo ==
-def ex_eval(step):
+def eval_step(step):
     if comp[step-1].value == sol[step-1]:
         return 100
     else:
         return 0
 
-def ex_disable(step):
+def disable_step(step):
     comp[step-1].disabled = True
 
-def ex_show(step):
+def show_step(step):
     comp[step-1].score = scores[step-1]
     comp[step-1].show()
 ==
