@@ -37,6 +37,7 @@ for i, q in enumerate(list_questions):
         # comp.append(CustomTextSelect())
         continue # no implemented yet 
     questions.append(q['text'])
+    inputblocks.append(comp[i].render())
     if 'ordered' not in q['options']:
         comp[i].shuffle()
 
