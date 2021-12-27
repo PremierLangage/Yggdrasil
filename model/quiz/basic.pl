@@ -47,7 +47,7 @@ Début de la série
 evaluator ==
 scores = []
 for index in range(len(questions)):
-    scores.append(10)
+    scores.append(ex_eval(index))
     ex_disable(index)
     ex_show(index)
 
