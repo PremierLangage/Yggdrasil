@@ -119,4 +119,6 @@ class Checkbox(Component):
         """
         Return the HTML code of the component.
         """
-        self.disabled = True
+        selector = self.selector
+        cid = self.cid
+        return f"<{selector} cid='{cid}'></{selector}>"
