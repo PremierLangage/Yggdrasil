@@ -69,12 +69,12 @@ quiz ==
 ==
 
 control ==
-def ex_eval(step):
-    return comp[step-1].eval()
+def eval_step(index):
+    return comp[index-1].eval()
 
-def ex_disable(step):
+def disable_step(index):
     comp[step-1].disabled = True
 
-def ex_show(step):
+def show_step(index):
     comp[step-1].show()
 ==
