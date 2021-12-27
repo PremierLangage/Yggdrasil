@@ -23,6 +23,7 @@ else:
 
 comp = []
 questions  = []
+inputblocks = []
 
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
