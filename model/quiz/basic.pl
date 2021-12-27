@@ -46,7 +46,7 @@ Début de la série
 ==
 
 
-evaluator ==
+final ==
 scores = []
 for index in range(len(questions)):
     scores.append(ex_eval(index))
