@@ -73,8 +73,8 @@ def eval_step(index):
     return comp[index-1].eval()
 
 def disable_step(index):
-    comp[step-1].disabled = True
+    comp[index-1].disabled = True
 
 def show_step(index):
-    comp[step-1].show()
+    comp[index-1].show()
 ==
