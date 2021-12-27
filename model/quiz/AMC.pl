@@ -68,7 +68,7 @@ quiz ==
 - 3
 ==
 
-classexo ==
+control ==
 def ex_eval(step):
     return comp[step-1].eval()
 
