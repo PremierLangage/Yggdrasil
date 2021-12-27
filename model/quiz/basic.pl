@@ -15,7 +15,7 @@ extends = /model/basic/temp.pl
 @ /utils/components/input.py
 
 before_scripts = ["importfunc", "init", "start"]
-eval_scripts = ["classexo", "final"]
+eval_scripts = ["control", "final"]
 
 jinja_keys = ["inputblocks", "questions"]
 
