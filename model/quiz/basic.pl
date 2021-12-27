@@ -49,9 +49,9 @@ Début de la série
 final ==
 scores = []
 for index in range(len(questions)):
-    scores.append(ex_eval(index))
-    ex_disable(index)
-    ex_show(index)
+    scores.append(eval_step(index))
+    disable_step(index)
+    show_step(index)
 
 score = sum(scores) // len(scores)
 _state_ = "grade"
