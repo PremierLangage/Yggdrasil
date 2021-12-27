@@ -14,7 +14,7 @@ extends = /model/basic/temp.pl
 @ /utils/components/checkbox.py
 @ /utils/components/input.py
 
-before_scripts = ["importfunc", "start", "before"]
+before_scripts = ["importfunc", "init", "start"]
 eval_scripts = ["classexo", "evaluator"]
 jinja_keys = ["inputblocks", "questions"]
 importfunc == #|python|
