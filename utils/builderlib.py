@@ -75,11 +75,6 @@ def newcomp_from_list(lst):
         lst[i] = {"cid": item.cid, "name": name, "selector": item.selector}
     return newcomp
 
-def getcomp(obj):
-    newcomp = []
-    if isinstance(obj, lst) and len(obj) > 0:
-        pass
-    return newcomp
 
 def comp_to_dic(lst):
     for i in range(len(lst)):
