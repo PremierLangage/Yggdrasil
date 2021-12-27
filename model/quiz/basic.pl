@@ -15,15 +15,17 @@ extends = /model/basic/temp.pl
 @ /utils/components/input.py
 
 before_scripts = ["importfunc", "init", "start"]
-eval_scripts = ["classexo", "evaluator"]
+eval_scripts = ["classexo", "final"]
+
 jinja_keys = ["inputblocks", "questions"]
+
 importfunc == #|python|
 from random import choice, choices, sample, shuffle
 from plrandom import randint, sampleint
 from plcsv import csv_choice, csv_sample, csv_col
 ==
 
-start ==
+init ==
 _state_ = "active"
 ==
 
