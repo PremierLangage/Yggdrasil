@@ -35,7 +35,7 @@ class ExRadio(Ex):
         else:
             self.input = Radio()
             self.inputblock = self.input.render()
-        super().__init__(**kwargs)
+        #super().__init__(**kwargs)
             
     def set_items(self, items):
         """
