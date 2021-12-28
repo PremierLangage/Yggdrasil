@@ -110,8 +110,9 @@ def dic2comp(obj, dic):
     if isinstance(obj, list):
         for i in range(len(obj)):
             if isinstance(obj[i], Component):
-                item = obj[i]
-                obj[i] = {"cid": item.cid, "name": item.name, "selector": item.selector} 
+                name = obj[i]['name']
+                obj[i] = dic[name]
+                obj[i].name = name
             if isinstance(obj[i], (Exo, MultiComp)):
                 dic2comp(obj[i], dic)
     elif isinstance(obj, Exo):
