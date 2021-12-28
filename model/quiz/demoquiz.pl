@@ -9,12 +9,7 @@ nbstep = 4
 with open('phrases.txt') as f:
     sample_lines = csv_sample(f, nbstep, delimiter='|')
 
-sol = []
-solutions = []
-feedbacks = []
-questions = []
-comp = []
-inputblocks = []
+sequence = []
 
 for i in range(nbstep):
     row = sample_lines[i]
@@ -33,19 +28,4 @@ for i in range(nbstep):
 
 intro ==
 Ce quiz est composé de 4 question.
-==
-
-classexo ==
-def eval_step(step):
-    if comp[step-1].value == sol[step-1]:
-        return 100
-    else:
-        return 0
-
-def disable_step(step):
-    comp[step-1].disabled = True
-
-def show_step(step):
-    comp[step-1].score = scores[step-1]
-    comp[step-1].show()
 ==
