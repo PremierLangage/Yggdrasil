@@ -11,7 +11,7 @@ import random as rd
 from radio import Radio
 from checkbox import Checkbox
 from AMC import parse_AMC_TXT
-from exercises import ExRadio
+from exercises import ExRadio, ExCheckbox
 
 _state_ = "active"
 
