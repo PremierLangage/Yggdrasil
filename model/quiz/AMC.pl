@@ -22,9 +22,6 @@ if 'nbstep' in globals():
 else:
     nbstep = len(list_questions)
 
-comp = []
-questions  = []
-inputblocks = []
 sequence = []
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
@@ -35,7 +32,7 @@ for i, q in enumerate(list_questions):
         sequence.append(ExCheckbox())
         sequence[i].set_items(q['items'])
         sequence[i].set_sol(q['index'])
-    sequence[i].question = q['text'])
+    sequence[i].question = q['text']
     if 'ordered' not in q['options']:
         sequence[i].input.shuffle()
 
