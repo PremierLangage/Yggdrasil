@@ -2,7 +2,6 @@ from components import Component
 from random import shuffle
 from uuid import uuid4
 from multicomp import MultiComp
-from random import shuffle
 
 class DropGroup(MultiComp):
 
