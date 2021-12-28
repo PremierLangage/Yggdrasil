@@ -49,15 +49,6 @@ def aux_component2(dic):
     for key in dic:
         comp2dic(dic[key])
 
-def newcomp_from_list(lst):
-    newcomp = []
-    for i in range(len(lst)):
-        item = lst[i]
-        name = "c" + uuid.uuid4().hex
-        newcomp.append((name, item))
-        lst[i] = {"cid": item.cid, "name": name, "selector": item.selector}
-    return newcomp
-
 def getnewcomp(obj):
     newcomp = []
     if isinstance(obj, list):
@@ -74,7 +65,7 @@ def getnewcomp(obj):
             newcomp = newcomp + getnewcomp(obj.input)
         elif isinstance(obj.input, Component):
             item = obj.input
-            name = "c" + uuid.uuid4().hex
+            name = 'toto' #"c" + uuid.uuid4().hex
             newcomp.append((name, item))
             obj.input = {"cid": item.cid, "name": name, "selector": item.selector}
     elif isinstance(obj, MultiComp):
