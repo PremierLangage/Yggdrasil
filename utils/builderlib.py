@@ -3,7 +3,7 @@ import json, jsonpickle
 from jinja2 import Environment, BaseLoader
 import uuid
 from multicomp import MultiComp
-from ex import Ex
+from exercises import Ex
 
 class PickleEncoder(json.JSONEncoder):
     def default(self, obj):
