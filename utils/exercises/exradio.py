@@ -4,4 +4,7 @@ class ExRadio(Ex):
 
     def __init__(self, **kwargs):
         self.__Exo__ = True
-        self.comp = kwargs.get('input', [])
+        if 'input' in kwargs:
+            self.input = kwargs['input']
+        else:
+            self.input = Radio()
