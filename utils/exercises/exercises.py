@@ -1,7 +1,7 @@
 class Ex:
 
     def __init__(self, **kwargs):
-        self.__Exo__ = True
+        self.__Ex__ = True
         self.comp = kwargs.get('input', [])
 
     def eval(self):
@@ -25,7 +25,7 @@ class Ex:
 class ExRadio(Ex):
 
     def __init__(self, **kwargs):
-        self.__Exo__ = True
+        self.__Ex__ = "Radio"
         if 'input' in kwargs:
             self.input = kwargs['input']
         else:
