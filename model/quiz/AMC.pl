@@ -42,7 +42,7 @@ scores=[]
 ==
 
 intro ==
-{{ sequence }}
+{{ toto }}
 Début du quiz
 ==
 
