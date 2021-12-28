@@ -66,6 +66,6 @@ class ExCheckbox(Ex):
 
     def set_sol(self, index):
         """
-        Set the solution (from its index in the list of items).
+        Set the solution
         """
         self.input.set_sol(index)
