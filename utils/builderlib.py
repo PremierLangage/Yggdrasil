@@ -62,7 +62,7 @@ def getnewcomp(obj):
             newcomp = newcomp + getnewcomp(obj.input)
         elif isinstance(obj.input, Component):
             item = obj.input
-            name = 'toto' #"c" + uuid.uuid4().hex
+            name = "c" + uuid.uuid4().hex
             newcomp.append((name, item))
             obj.input = {"cid": item.cid, "name": name, "selector": item.selector}
     elif isinstance(obj, MultiComp):
