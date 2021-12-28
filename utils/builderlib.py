@@ -53,14 +53,7 @@ def aux_component1(dic):
 # and replaced by dictionaries inside the lists
 def aux_component2(dic):
     for key in dic:
-        if isinstance(dic[key], list) and len(dic[key]) > 0:
-            if isinstance(dic[key][0], Component):
-                comp_to_dic(dic[key])
-            elif isinstance(dic[key][0], MultiComp):
-                for item in dic[key]:
-                    comp_to_dic(item.comp)
-        elif isinstance(dic[key], MultiComp):
-            comp_to_dic(dic[key].comp)
+        comp2dic(dic[key])
 
 def newcomp_from_list(lst):
     newcomp = []
@@ -106,12 +99,11 @@ def comp2dic(obj):
     elif isinstance(obj, Exo):
         if isinstance(obj.input, list):
             comp2dic(obj.input)
-        elif isinstance(exo.input, Component):
+        elif isinstance(obj.input, Component):
             item = obj.input
-            exo.input = {"cid": item.cid, "name": name, "selector": item.selector}
+            obj.input = {"cid": item.cid, "name": name, "selector": item.selector}
     elif isinstance(obj, MultiComp):
-        newcomp = newcomp + getnewcomp(obj.comp)
-    return newcomp
+        comp2dic(obj.comp)
 
 
 def comp_to_dic(lst):
