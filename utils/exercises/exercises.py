@@ -113,12 +113,14 @@ class ExDragDrop(Ex):
             newstring += filledtext[start:end]
             self.drops.append(CustomDragDrop.Drop())
             self._sol.append(m.group(1))
-            rep = "{ }"
+            selector = self.drops[counter].selector
+            cid = self.drops[counter].cid
+            rep = f"<{selector} cid='{cid}'></{selector}>"
             newstring += rep
             start = newstart
             counter += 1
         newstring += filledtext[start:]
-        self.embed = newstring
+        self.inputblock = newstring
             
     def eval(self):
         n = len(self.drops)
