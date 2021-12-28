@@ -37,7 +37,7 @@ for i in range(nbstep):
     #lab.append(LabelGroup(["habet", "habent"]))
     #drp.append(DropGroup())
     #drp[i].set_filledtext("Pastor non pecuniam {habet}.")
-    inputblocks.append(drp[i].paste_embed() +"\n\n" + lab[i].paste_all())
+    #inputblocks.append(drp[i].paste_embed() +"\n\n" + lab[i].paste_all())
     solutions.append("")
     feedbacks.append("")
 ==
