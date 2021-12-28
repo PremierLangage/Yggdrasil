@@ -23,37 +23,7 @@ class ExRadio(Ex):
         """
         Set the solution (from its index in the list of items).
         """
-        self._sol = self.items[index]['id']
+        self.input._sol = self.input.items[index]['id']
 
-    def shuffle(self):
-        """
-        Shuffle the list of items.
-        """
-        rd.shuffle(self.items)
 
-    def fill(self, items, indsol=0, shuffled=True):
-        """
-        Set the list of items and the solution.
-        """
-        self.set_items(items)
-        self.set_sol(indsol)
-        if shuffled:
-            self.shuffle()
-
-    def eval(self):
-        """
-        Evaluate the answer.
-        """
-        return self.input.eval()
-
-    def show(self):
-        """
-        Display visual feedback.
-        """
-        self.input.show()
-
-    def disable(self):
-        """
-        Disable the component.
-        """
-        self.input.disabled = True            
+        
