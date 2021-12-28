@@ -1,8 +1,7 @@
 # HACK pour modifier l'apparence de la page html de l'exercice
 @ /utils/components/multicomp.py 
 @ /utils/components/dragdrop.py [customdragdrop.py]
-@ /utils/exercises/ex.py
-@ /utils/exercises/exradio.py
+@ /utils/exercises/exercises.py
 
 style.page == #|css|
 <style>
