@@ -22,4 +22,11 @@ class JSONDecoder(json.JSONDecoder):
                 return LabelGroup(None, **dic)
             else:
                 return MultiComp(**dic)
+        if '__Ex__' in dic:
+            if dic['__Ex__'] == 'Radio':
+                return ExRadio(**dic)
+            if dic['__MultiComp__'] == 'Checkbox':
+                return ExCheckbox(**dic)
+            else:
+                return Ex(**dic)
         return dic
