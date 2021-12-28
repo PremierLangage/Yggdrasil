@@ -75,6 +75,29 @@ def newcomp_from_list(lst):
         lst[i] = {"cid": item.cid, "name": name, "selector": item.selector}
     return newcomp
 
+def newcomp_from_exo(obj):
+    newcomp = []
+    if isinstance(obj, list):
+        for i in range(len(lst)):
+            if isinstance(lst[i], Component):
+                item = lst[i]
+                name = "c" + uuid.uuid4().hex
+                newcomp.append((name, item))
+                lst[i] = {"cid": item.cid, "name": name, "selector": item.selector} 
+            if isinstance(lst[i], (Exo, MultiComp)):
+                newcomp = newcomp + newcomp(lst[i])
+    elif isinstance(obj, Exo):
+        if isinstance(exo.input, list):
+            newcomp = newcomp + newcomp(exo.input)
+        elif isinstance(exo.input, Component):
+            item = exo.input
+            name = "c" + uuid.uuid4().hex
+            newcomp.append((name, item))
+            exo.input = {"cid": item.cid, "name": name, "selector": item.selector}
+    elif isinstance(obj, MultiComp):
+        newcomp = newcomp + newcomp(exo.comp)
+    return newcomp
+
 
 def comp_to_dic(lst):
     for i in range(len(lst)):
