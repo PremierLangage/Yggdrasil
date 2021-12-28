@@ -48,7 +48,7 @@ Début de la série
 
 final ==
 scores = []
-for index in range(len(questions)):
+for index in range(len(sequence)):
     scores.append(eval_step(index))
     disable_step(index)
     show_step(index)
