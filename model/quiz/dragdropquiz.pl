@@ -22,10 +22,21 @@ comp = []
 inputblocks = []
 
 for i in range(nbstep):
-    questions.append("Compléter")
-    lab.append(LabelGroup(["habet", "habent"]))
-    drp.append(DropGroup())
-    drp[i].set_filledtext("Pastor non pecuniam {habet}.")
+    row = sample_lines[i]
+    qq = rf"""
+<strong> Phrase {i + 1}. </strong><br>
+
+{ row['phrase'] }
+"""
+    sequence.append(ExDragDrop())
+    sequence[i].question = "Compléter"
+    sequence[i].set_labels(["habet", "habent"])
+    sequence[i].set_filledtext("Pastor non pecuniam {habet}.")
+
+    #questions.append("Compléter")
+    #lab.append(LabelGroup(["habet", "habent"]))
+    #drp.append(DropGroup())
+    #drp[i].set_filledtext("Pastor non pecuniam {habet}.")
     inputblocks.append(drp[i].paste_embed() +"\n\n" + lab[i].paste_all())
     solutions.append("")
     feedbacks.append("")
