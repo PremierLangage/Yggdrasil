@@ -47,7 +47,7 @@ class ExRadio(Ex):
         """
         self.input._sol = self.input.items[index]['id']
 
-class ExRadio(Ex):
+class ExCheckbox(Ex):
 
     def __init__(self, **kwargs):
         self.__Exo__ = "Checkbox"
