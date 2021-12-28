@@ -57,7 +57,7 @@ class ExCheckbox(Ex):
             self.input = kwargs['input']
             self.inputblock = self.input.render()
         else:
-            self.input = Radio()
+            self.input = Checkbox()
             
     def set_items(self, items):
         """
@@ -67,6 +67,6 @@ class ExCheckbox(Ex):
 
     def set_sol(self, index):
         """
-        Set the solution
+        Set the solutions from a list of indices.
         """
         self.input.set_sol(index)
