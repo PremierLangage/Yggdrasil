@@ -14,10 +14,10 @@
 {% for i in range(1, nbstep+1) %}
     <div id="q{{i}}" class="series-tab container tab-pane fade" style="padding-right: 0px;padding-left: 0px;">
     <div class="question">
-    {{ questions[i-1]|markdown }}
+    {{ sequence[i-1].question|markdown }}
     </div>
     <div style="display: block; margin-top: 1em;">
-    {{ inputblocks[i-1]|safe }}
+    {{ sequence[i-1].inputblock|safe }}
     </div>
     <hr class="divide">
     {% if i == nbstep %}
