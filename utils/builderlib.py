@@ -85,10 +85,29 @@ def getnewcomp(obj):
     elif isinstance(obj, Exo):
         if isinstance(obj.input, list):
             newcomp = newcomp + getnewcomp(obj.input)
-        elif isinstance(exo.input, Component):
+        elif isinstance(obj.input, Component):
             item = obj.input
             name = "c" + uuid.uuid4().hex
             newcomp.append((name, item))
+            obj.input = {"cid": item.cid, "name": name, "selector": item.selector}
+    elif isinstance(obj, MultiComp):
+        newcomp = newcomp + getnewcomp(obj.comp)
+    return newcomp
+
+def comp2dic(obj):
+    newcomp = []
+    if isinstance(obj, list):
+        for i in range(len(obj)):
+            if isinstance(obj[i], Component):
+                item = obj[i]
+                obj[i] = {"cid": item.cid, "name": name, "selector": item.selector} 
+            if isinstance(obj[i], (Exo, MultiComp)):
+                comp2dic(obj[i])
+    elif isinstance(obj, Exo):
+        if isinstance(obj.input, list):
+            comp2dic(obj.input)
+        elif isinstance(exo.input, Component):
+            item = obj.input
             exo.input = {"cid": item.cid, "name": name, "selector": item.selector}
     elif isinstance(obj, MultiComp):
         newcomp = newcomp + getnewcomp(obj.comp)
