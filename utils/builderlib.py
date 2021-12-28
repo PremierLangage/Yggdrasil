@@ -80,7 +80,7 @@ def getnewcomp(obj):
                 name = "c" + uuid.uuid4().hex
                 newcomp.append((name, item))
                 obj[i] = {"cid": item.cid, "name": name, "selector": item.selector} 
-            if isinstance(lst[i], (Exo, MultiComp)):
+            if isinstance(obj[i], (Exo, MultiComp)):
                 newcomp = newcomp + getnewcomp(obj[i])
     elif isinstance(obj, Exo):
         if isinstance(obj.input, list):
