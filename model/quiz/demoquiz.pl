@@ -3,7 +3,7 @@ extends = /model/quiz/basic.pl
 @ /Languages/Latin/phrases.txt
 
 start == #|python|
-from input import Input
+from exercises import ExInput
 nbstep = 4
 
 with open('phrases.txt') as f:
