@@ -99,7 +99,21 @@ class ExDragDrop(Ex):
         #super().__init__(**kwargs)
             
     def eval(self):
-        if self.input.value == self.input._sol:
-            return 100
+        n = len(self.drops)
+        num_right = 0
+        num_wrong = 0
+
+        for i in range(n):
+            if self.drops[i].content == self._sol[i]:
+                num_right += 1
+                self.drops[i].css = "success-state"
+            else:
+                num_wrong +=1
+                self.drops[i].css = "error-state"
+
+        if num_wrong > 0 :
+            score = 0
         else:
-            return 0
+            score = 100
+            
+        return score
