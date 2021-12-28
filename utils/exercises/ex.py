@@ -1,4 +1,4 @@
-class Exo:
+class Ex:
 
     def __init__(self, **kwargs):
         self.__Exo__ = True
