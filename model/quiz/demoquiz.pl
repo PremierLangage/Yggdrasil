@@ -2,7 +2,7 @@ extends = /model/quiz/basic.pl
 
 @ /Languages/Latin/phrases.txt
 
-before == #|python|
+start == #|python|
 from input import Input
 nbstep = 4
 
