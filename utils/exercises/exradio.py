@@ -17,7 +17,7 @@ class ExRadio(Ex):
             _items_ = items.splitlines()
         else:
             _items_ = items
-        self.items = [{"id": str(uuid4()), "content": str(item)} for item in _items_]
+        self.input.items = [{"id": str(uuid4()), "content": str(item)} for item in _items_]
 
     def set_sol(self, index):
         """
