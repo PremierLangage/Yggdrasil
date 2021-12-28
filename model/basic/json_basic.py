@@ -1,10 +1,11 @@
 import json, jsonpickle
 from customdragdrop import MultiComp, DropGroup, LabelGroup
+from ex import Ex
 
 class JSONEncoder(json.JSONEncoder):
 
     def default(self, obj):
-        if isinstance(obj, MultiComp):
+        if isinstance(obj, (MultiComp, Ex)):
             return vars(obj)
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
