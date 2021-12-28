@@ -22,7 +22,7 @@ ComponentEnv.filters["component"] = component
 
 class Exo:
     pass
-    
+
 # HACK for components in lists
 # components in lists are duplicated outside the lists
 # and replaced by dictionaries inside the lists
@@ -74,24 +74,24 @@ def newcomp_from_list(lst):
 def getnewcomp(obj):
     newcomp = []
     if isinstance(obj, list):
-        for i in range(len(lst)):
-            if isinstance(lst[i], Component):
-                item = lst[i]
+        for i in range(len(obj)):
+            if isinstance(obj[i], Component):
+                item = obj[i]
                 name = "c" + uuid.uuid4().hex
                 newcomp.append((name, item))
-                lst[i] = {"cid": item.cid, "name": name, "selector": item.selector} 
+                obj[i] = {"cid": item.cid, "name": name, "selector": item.selector} 
             if isinstance(lst[i], (Exo, MultiComp)):
-                newcomp = newcomp + getnewcomp(lst[i])
+                newcomp = newcomp + getnewcomp(obj[i])
     elif isinstance(obj, Exo):
-        if isinstance(exo.input, list):
-            newcomp = newcomp + getnewcomp(exo.input)
+        if isinstance(obj.input, list):
+            newcomp = newcomp + getnewcomp(obj.input)
         elif isinstance(exo.input, Component):
-            item = exo.input
+            item = obj.input
             name = "c" + uuid.uuid4().hex
             newcomp.append((name, item))
             exo.input = {"cid": item.cid, "name": name, "selector": item.selector}
     elif isinstance(obj, MultiComp):
-        newcomp = newcomp + getnewcomp(exo.comp)
+        newcomp = newcomp + getnewcomp(obj.comp)
     return newcomp
 
 
