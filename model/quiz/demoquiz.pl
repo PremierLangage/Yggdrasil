@@ -19,12 +19,9 @@ for i in range(nbstep):
 { row['phrase'] }
 """
     sequence.append(ExInput())
-    questions.append(qq)
-    inputblocks.append("{{ comp[" + str(i) + "]|component }}")
-    sol.append(row['rep'])
-    solutions.append(row['rep'])
-    feedbacks.append('')
-    comp.append(Input())
+    sequence[i].question = qq
+    sequence[i].input._sol = row['rep']
+
 ==
 
 intro ==
