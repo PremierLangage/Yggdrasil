@@ -50,7 +50,7 @@ class ExRadio(Ex):
 class ExRadio(Ex):
 
     def __init__(self, **kwargs):
-        self.__Exo__ = True
+        self.__Exo__ = "Checkbox"
         if 'input' in kwargs:
             self.input = kwargs['input']
         else:
