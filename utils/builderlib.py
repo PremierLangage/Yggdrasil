@@ -105,12 +105,25 @@ def comp2dic(obj):
     elif isinstance(obj, MultiComp):
         comp2dic(obj.comp)
 
+def dic2comp(obj, dic):
+    newcomp = []
+    if isinstance(obj, list):
+        for i in range(len(obj)):
+            if isinstance(obj[i], Component):
+                item = obj[i]
+                obj[i] = {"cid": item.cid, "name": item.name, "selector": item.selector} 
+            if isinstance(obj[i], (Exo, MultiComp)):
+                dic2comp(obj[i], dic)
+    elif isinstance(obj, Exo):
+        if isinstance(obj.input, list):
+            dic2comp(obj.input, dic)
+        elif isinstance(obj.input, Component):
+            item = obj.input
+            obj.input = {"cid": item.cid, "name": item.name, "selector": item.selector}
+    elif isinstance(obj, MultiComp):
+        dic2comp(obj.comp, dic)
 
-def comp_to_dic(lst):
-    for i in range(len(lst)):
-        item = lst[i]
-        name = item.name
-        lst[i] = {"cid": item.cid, "name": name, "selector": item.selector}
+
 
 def dic_to_comp(lst, dic):
     for i in range(len(lst)):
