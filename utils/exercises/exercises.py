@@ -5,7 +5,9 @@ class Ex:
 
     def __init__(self, **kwargs):
         self.__Ex__ = True
-        self.comp = kwargs.get('input', [])
+        self.input = kwargs.get('input', [])
+        
+
 
     def eval(self):
         """
@@ -29,10 +31,9 @@ class ExRadio(Ex):
 
     def __init__(self, **kwargs):
         self.__Ex__ = "Radio"
-        if 'input' in kwargs:
-            self.input = kwargs['input']
-        else:
+        if not 'input' in kwargs:
             self.input = Radio()
+            self.inputblock = self.input.render()
             
     def set_items(self, items):
         """
