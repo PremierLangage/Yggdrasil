@@ -22,12 +22,6 @@ comp = []
 inputblocks = []
 
 for i in range(nbstep):
-    row = sample_lines[i]
-    qq = rf"""
-<strong> Phrase {i + 1}. </strong><br>
-
-{ row['phrase'] }
-"""
     sequence.append(ExDragDrop())
     sequence[i].question = "Compléter"
     sequence[i].set_labels(["habet", "habent"])
