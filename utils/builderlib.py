@@ -67,6 +67,9 @@ def getnewcomp(obj):
             obj.input = {"cid": item.cid, "name": name, "selector": item.selector}
     elif isinstance(obj, MultiComp):
         newcomp = newcomp + getnewcomp(obj.comp)
+    elif isinstance(obj, ExDragDrop):
+        newcomp = newcomp + getnewcomp(obj.drops)
+        newcomp = newcomp + getnewcomp(obj.labels)
     return newcomp
 
 def comp2dic(obj):
