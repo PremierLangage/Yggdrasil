@@ -104,6 +104,9 @@ def dic2comp(obj, dic):
                 obj[i].name = name
             if isinstance(obj[i], (Ex, MultiComp)):
                 dic2comp(obj[i], dic)
+    elif isinstance(obj, ExDragDrop):
+        dic2comp(obj.drops, dic)
+        dic2comp(obj.labels, dic)
     elif isinstance(obj, Ex):
         if isinstance(obj.input, list):
             dic2comp(obj.input, dic)
@@ -113,6 +116,3 @@ def dic2comp(obj, dic):
             obj.input.name = name
     elif isinstance(obj, MultiComp):
         dic2comp(obj.comp, dic)
-    elif isinstance(obj, ExDragDrop):
-        dic2comp(obj.drops, dic)
-        dic2comp(obj.labels, dic)
