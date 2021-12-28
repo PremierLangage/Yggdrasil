@@ -35,8 +35,7 @@ for i, q in enumerate(list_questions):
         sequence.append(ExCheckbox())
         sequence[i].set_items(q['items'])
         sequence[i].set_sol(q['index'])
-    questions.append(q['text'])
-    inputblocks.append(comp[i].render())
+    sequence[i].question = q['text'])
     if 'ordered' not in q['options']:
         sequence[i].input.shuffle()
 
