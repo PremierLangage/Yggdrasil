@@ -93,7 +93,7 @@ def comp2dic(obj):
         for i in range(len(obj)):
             if isinstance(obj[i], Component):
                 item = obj[i]
-                obj[i] = {"cid": item.cid, "name": name, "selector": item.selector} 
+                obj[i] = {"cid": item.cid, "name": item.name, "selector": item.selector} 
             if isinstance(obj[i], (Exo, MultiComp)):
                 comp2dic(obj[i])
     elif isinstance(obj, Exo):
@@ -101,7 +101,7 @@ def comp2dic(obj):
             comp2dic(obj.input)
         elif isinstance(obj.input, Component):
             item = obj.input
-            obj.input = {"cid": item.cid, "name": name, "selector": item.selector}
+            obj.input = {"cid": item.cid, "name": item.name, "selector": item.selector}
     elif isinstance(obj, MultiComp):
         comp2dic(obj.comp)
 
