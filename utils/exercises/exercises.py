@@ -3,7 +3,7 @@ from checkbox import Checkbox
 from input import Input
 from uuid import uuid4
 from customdragdrop import CustomDragDrop
- 
+
 class Ex:
 
     def __init__(self, **kwargs):
@@ -99,6 +99,9 @@ class ExDragDrop(Ex):
         self.labels = kwargs.get('labels', [])
         self._sol = kwargs.get('_sol', [])
         #super().__init__(**kwargs)
+    
+    def set_labels(self, lst):
+        self.labels = [CustomDragDrop.Label(content=content) for content in lst]
 
     def set_filledtext(self, filledtext):
         counter = 0
