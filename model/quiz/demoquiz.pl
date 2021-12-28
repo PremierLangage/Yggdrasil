@@ -18,9 +18,9 @@ for i in range(nbstep):
 
 { row['phrase'] }
 """
-    #sequence.append(ExInput())
-    #sequence[i].question = qq
-    #sequence[i].input._sol = row['rep']
+    sequence.append(ExInput())
+    sequence[i].question = qq
+    sequence[i].input._sol = row['rep']
 
 ==
 
