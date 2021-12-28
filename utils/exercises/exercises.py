@@ -70,3 +70,21 @@ class ExCheckbox(Ex):
         Set the solutions from a list of indices.
         """
         self.input.set_sol(index)
+
+class ExInput(Ex):
+
+    def __init__(self, **kwargs):
+        self.__Ex__ = "Input"
+        if 'input' in kwargs:
+            self.input = kwargs['input']
+            self.inputblock = kwargs.get('inputblock', '')
+        else:
+            self.input = Input()
+            self.inputblock = self.input.render()
+        #super().__init__(**kwargs)
+            
+    def eval(self, items):
+        if self.input.value == self._sol:
+            return 100
+        else:
+            return 0
