@@ -25,20 +25,20 @@ else:
 comp = []
 questions  = []
 inputblocks = []
-
+sequence = []
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
-        comp.append(Radio())
-        comp[i].set_items(q['items'])
-        comp[i].set_sol(q['index'])
+        sequence.append(ExRadio())
+        sequence[i].set_items(q['items'])
+        sequence[i].set_sol(q['index'])
     elif q['type'] == "Checkbox":
-        comp.append(Checkbox())
-        comp[i].set_items(q['items'])
-        comp[i].set_sol(q['index'])
+        sequence.append(ExCheckbox())
+        sequence[i].set_items(q['items'])
+        sequence[i].set_sol(q['index'])
     questions.append(q['text'])
     inputblocks.append(comp[i].render())
     if 'ordered' not in q['options']:
-        comp[i].shuffle()
+        sequence[i].input.shuffle()
 
 step = 0
 score = -10
