@@ -21,9 +21,6 @@ def component(l):
 ComponentEnv = Environment(loader=BaseLoader())
 ComponentEnv.filters["component"] = component
 
-class Ex:
-    pass
-
 # HACK for components in lists
 # components in lists are duplicated outside the lists
 # and replaced by dictionaries inside the lists
