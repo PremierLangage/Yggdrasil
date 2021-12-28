@@ -25,8 +25,10 @@ class JSONDecoder(json.JSONDecoder):
         if '__Ex__' in dic:
             if dic['__Ex__'] == 'Radio':
                 return ExRadio(**dic)
-            if dic['__Ex__'] == 'Checkbox':
+            elif dic['__Ex__'] == 'Checkbox':
                 return ExCheckbox(**dic)
+            elif dic['__Ex__'] == 'DragDrop':
+                return ExDragDrop(**dic)
             else:
                 return Ex(**dic)
         return dic
