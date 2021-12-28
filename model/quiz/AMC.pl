@@ -38,8 +38,6 @@ for i, q in enumerate(list_questions):
 ==
 
 intro ==
-{{ toto }}
-{{sequence }}
 Début du quiz
 ==
 
