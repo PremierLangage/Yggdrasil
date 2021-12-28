@@ -96,7 +96,24 @@ class ExDragDrop(Ex):
         self.__Ex__ = "DragDrop"
         self.drops = kwargs.get('drops', [])
         self.labels = kwargs.get('labels', [])
+        self._sol = kwargs.get('_sol', [])
         #super().__init__(**kwargs)
+
+    def set_filledtext(self, filledtext):
+        counter = 0
+        newstring = ''
+        start = 0
+        for m in re.finditer(r"{([^{}]+)}", filledtext):
+            end, newstart = m.span()
+            newstring += filledtext[start:end]
+            self.comp.append(CustomDragDrop.Drop())
+            self._sol.append(m.group(1))
+            rep = "{ }"
+            newstring += rep
+            start = newstart
+            counter += 1
+        newstring += filledtext[start:]
+        self.embed = newstring
             
     def eval(self):
         n = len(self.drops)
@@ -117,3 +134,9 @@ class ExDragDrop(Ex):
             score = 100
             
         return score
+
+    def show(self):
+        pass
+
+    def disable(self):
+        pass
