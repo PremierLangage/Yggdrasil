@@ -5,9 +5,7 @@ from uuid import uuid4
 class Ex:
 
     def __init__(self, **kwargs):
-        self.input = kwargs.get('input', None)
         self.question = kwargs.get('question', '')
-        self.inputblock = kwargs.get('inputblock', '')
 
     def eval(self):
         """
