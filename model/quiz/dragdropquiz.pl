@@ -27,14 +27,3 @@ for i in range(nbstep):
 intro ==
 Ce quiz est composé de 4 questions.
 ==
-
-classexo ==
-def ex_eval(step):
-    return drp[step-1].eval()
-
-def ex_disable(step):
-    pass
-
-def ex_show(step):
-    pass
-==
