@@ -18,6 +18,7 @@ for i in range(nbstep):
 
 { row['phrase'] }
 """
+    sequence.append(ExInput())
     questions.append(qq)
     inputblocks.append("{{ comp[" + str(i) + "]|component }}")
     sol.append(row['rep'])
