@@ -8,12 +8,8 @@ extends = /model/quiz/basic.pl
 
 start == #|python|
 import random as rd
-from radio import Radio
-from checkbox import Checkbox
 from AMC import parse_AMC_TXT
 from exercises import ExRadio, ExCheckbox
-
-_state_ = "active"
 
 list_questions = parse_AMC_TXT(quiz)
 
