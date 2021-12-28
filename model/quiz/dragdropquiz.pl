@@ -17,8 +17,6 @@ nbstep = 4
 sol = []
 solutions = []
 feedbacks = []
-questions = []
-comp = []
 inputblocks = []
 
 for i in range(nbstep):
