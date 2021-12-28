@@ -7,14 +7,13 @@ extends = /model/quiz/basic.pl
 
 
 start == #|python|
-import random as rd
 from AMC import parse_AMC_TXT
 from exercises import ExRadio, ExCheckbox
 
 list_questions = parse_AMC_TXT(quiz)
 
 if 'nbstep' in globals():
-    list_questions = rd.sample(list_questions, nbstep)
+    list_questions = sample(list_questions, nbstep)
 else:
     nbstep = len(list_questions)
 
