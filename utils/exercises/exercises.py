@@ -89,3 +89,17 @@ class ExInput(Ex):
             return 100
         else:
             return 0
+
+class ExDragDrop(Ex):
+
+    def __init__(self, **kwargs):
+        self.__Ex__ = "DragDrop"
+        self.drops = kwargs.get('drops', [])
+        self.labels = kwargs.get('labels', [])
+        #super().__init__(**kwargs)
+            
+    def eval(self):
+        if self.input.value == self.input._sol:
+            return 100
+        else:
+            return 0
