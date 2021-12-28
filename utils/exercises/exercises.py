@@ -1,5 +1,6 @@
 from radio import Radio
 from checkbox import Checkbox
+from uuid import uuid4
 
 class Ex:
 
@@ -39,18 +40,14 @@ class ExRadio(Ex):
         """
         Set the list of items.
         """
-        if isinstance(items, str):
-            _items_ = items.splitlines()
-        else:
-            _items_ = items
-        self.input.items = [{"id": str(uuid4()), "content": str(item)} for item in _items_]
+        self.input.set_items(items)
 
     def set_sol(self, index):
         """
         Set the solution (from its index in the list of items).
         """
-        self.input._sol = self.input.items[index]['id']
-
+        self.input.set_sol(index)
+        
 class ExCheckbox(Ex):
 
     def __init__(self, **kwargs):
