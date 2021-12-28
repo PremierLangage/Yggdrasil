@@ -84,7 +84,7 @@ class ExInput(Ex):
             self.inputblock = self.input.render()
         #super().__init__(**kwargs)
             
-    def eval(self, items):
+    def eval(self):
         if self.input.value == self.input._sol:
             return 100
         else:
