@@ -26,14 +26,7 @@ ComponentEnv.filters["component"] = component
 def aux_component(dic):
     newcomp = []
     for key in dic:
-        if isinstance(dic[key], list) and len(dic[key]) > 0:
-            if isinstance(dic[key][0], Component):
-                newcomp = newcomp + newcomp_from_list(dic[key])
-            elif isinstance(dic[key][0], MultiComp):
-                for item in dic[key]:
-                    newcomp = newcomp + newcomp_from_list(item.comp)
-        elif isinstance(dic[key], MultiComp):
-            newcomp = newcomp + newcomp_from_list(dic[key].comp)
+        newcomp = newcomp + getnewcomp(dic[key])
     for name, comp in newcomp:
         comp.name = name
         dic[name] = comp
@@ -75,7 +68,7 @@ def newcomp_from_list(lst):
         lst[i] = {"cid": item.cid, "name": name, "selector": item.selector}
     return newcomp
 
-def newcomp_from_exo(obj):
+def getnewcomp(obj):
     newcomp = []
     if isinstance(obj, list):
         for i in range(len(lst)):
@@ -85,17 +78,17 @@ def newcomp_from_exo(obj):
                 newcomp.append((name, item))
                 lst[i] = {"cid": item.cid, "name": name, "selector": item.selector} 
             if isinstance(lst[i], (Exo, MultiComp)):
-                newcomp = newcomp + newcomp(lst[i])
+                newcomp = newcomp + getnewcomp(lst[i])
     elif isinstance(obj, Exo):
         if isinstance(exo.input, list):
-            newcomp = newcomp + newcomp(exo.input)
+            newcomp = newcomp + getnewcomp(exo.input)
         elif isinstance(exo.input, Component):
             item = exo.input
             name = "c" + uuid.uuid4().hex
             newcomp.append((name, item))
             exo.input = {"cid": item.cid, "name": name, "selector": item.selector}
     elif isinstance(obj, MultiComp):
-        newcomp = newcomp + newcomp(exo.comp)
+        newcomp = newcomp + getnewcomp(exo.comp)
     return newcomp
 
 
