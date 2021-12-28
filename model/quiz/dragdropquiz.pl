@@ -1,7 +1,7 @@
 extends = /model/quiz/basic.pl
 
-before == #|python|
-from customdragdrop import LabelGroup, DropGroup
+start == #|python|
+from exercises import ExDragDrop
 
 lab = []
 drp = []
