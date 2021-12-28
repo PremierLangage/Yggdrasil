@@ -1,3 +1,6 @@
+from radio import Radio
+from checkbox import Checkbox
+
 class Ex:
 
     def __init__(self, **kwargs):
@@ -53,6 +56,7 @@ class ExCheckbox(Ex):
         self.__Exo__ = "Checkbox"
         if 'input' in kwargs:
             self.input = kwargs['input']
+            self.inputblock = self.input.render()
         else:
             self.input = Radio()
             
