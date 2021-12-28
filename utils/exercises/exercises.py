@@ -32,6 +32,9 @@ class ExRadio(Ex):
         if not 'input' in kwargs:
             self.input = Radio()
             self.inputblock = self.input.render()
+        else:
+            self.input = kwargs['input']
+            self.inputblock = kwargs.get('inputblock', '')
         super().__init__(**kwargs)
             
     def set_items(self, items):
