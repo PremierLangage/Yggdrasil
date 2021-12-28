@@ -17,8 +17,6 @@ extends = /model/basic/temp.pl
 before_scripts = ["importfunc", "init", "start"]
 eval_scripts = ["control", "final"]
 
-jinja_keys = ["inputblocks", "questions"]
-
 importfunc == #|python|
 from random import choice, choices, sample, shuffle
 from plrandom import randint, sampleint
