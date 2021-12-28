@@ -1,5 +1,6 @@
 from radio import Radio
 from checkbox import Checkbox
+from component import Input
 from uuid import uuid4
 
 class Ex:
