@@ -20,7 +20,7 @@ for i in range(nbstep):
 """
     sequence.append(ExInput())
     sequence[i].question = qq
-    sequence[i].input._sol = row['rep']
+    #sequence[i].input._sol = row['rep']
 
 ==
 
