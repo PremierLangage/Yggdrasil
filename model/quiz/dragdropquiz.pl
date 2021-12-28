@@ -3,18 +3,9 @@ extends = /model/quiz/basic.pl
 start == #|python|
 from exercises import ExDragDrop
 
-lab = []
-drp = []
-
-sol = []
-solutions = []
-feedbacks = []
-questions = []
-
-from input import Input
 nbstep = 4
 
-sol = []
+sequence = []
 solutions = []
 feedbacks = []
 
