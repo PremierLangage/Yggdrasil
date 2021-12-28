@@ -17,7 +17,6 @@ nbstep = 4
 sol = []
 solutions = []
 feedbacks = []
-inputblocks = []
 
 for i in range(nbstep):
     sequence.append(ExDragDrop())
