@@ -18,8 +18,8 @@ for i in range(nbstep):
 
 { row['phrase'] }
 """
-    sequence.append(ExInput())
-    sequence[i].question = qq
+    #sequence.append(ExInput())
+    #sequence[i].question = qq
     #sequence[i].input._sol = row['rep']
 
 ==
