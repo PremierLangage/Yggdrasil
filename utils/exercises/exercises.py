@@ -4,10 +4,9 @@ from checkbox import Checkbox
 class Ex:
 
     def __init__(self, **kwargs):
-        self.__Ex__ = True
-        self.input = kwargs.get('input', [])
-        
-
+        self.input = kwargs.get('input', None)
+        self.question = kwargs.get('question', '')
+        self.inputblock = kwargs.get('inputblock', '')
 
     def eval(self):
         """
@@ -34,6 +33,7 @@ class ExRadio(Ex):
         if not 'input' in kwargs:
             self.input = Radio()
             self.inputblock = self.input.render()
+        super().__init__(**kwargs)
             
     def set_items(self, items):
         """
