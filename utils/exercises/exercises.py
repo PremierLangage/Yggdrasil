@@ -106,7 +106,7 @@ class ExDragDrop(Ex):
         for m in re.finditer(r"{([^{}]+)}", filledtext):
             end, newstart = m.span()
             newstring += filledtext[start:end]
-            self.comp.append(CustomDragDrop.Drop())
+            self.drops.append(CustomDragDrop.Drop())
             self._sol.append(m.group(1))
             rep = "{ }"
             newstring += rep
