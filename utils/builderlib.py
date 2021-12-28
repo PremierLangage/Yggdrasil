@@ -3,6 +3,7 @@ import json, jsonpickle
 from jinja2 import Environment, BaseLoader
 import uuid
 from multicomp import MultiComp
+from ex import Ex
 
 class PickleEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -20,7 +21,7 @@ def component(l):
 ComponentEnv = Environment(loader=BaseLoader())
 ComponentEnv.filters["component"] = component
 
-class Exo:
+class Ex:
     pass
 
 # HACK for components in lists
@@ -66,9 +67,9 @@ def getnewcomp(obj):
                 name = "c" + uuid.uuid4().hex
                 newcomp.append((name, item))
                 obj[i] = {"cid": item.cid, "name": name, "selector": item.selector} 
-            if isinstance(obj[i], (Exo, MultiComp)):
+            if isinstance(obj[i], (Ex, MultiComp)):
                 newcomp = newcomp + getnewcomp(obj[i])
-    elif isinstance(obj, Exo):
+    elif isinstance(obj, Ex):
         if isinstance(obj.input, list):
             newcomp = newcomp + getnewcomp(obj.input)
         elif isinstance(obj.input, Component):
@@ -87,9 +88,9 @@ def comp2dic(obj):
             if isinstance(obj[i], Component):
                 item = obj[i]
                 obj[i] = {"cid": item.cid, "name": item.name, "selector": item.selector} 
-            if isinstance(obj[i], (Exo, MultiComp)):
+            if isinstance(obj[i], (Ex, MultiComp)):
                 comp2dic(obj[i])
-    elif isinstance(obj, Exo):
+    elif isinstance(obj, Ex):
         if isinstance(obj.input, list):
             comp2dic(obj.input)
         elif isinstance(obj.input, Component):
@@ -106,9 +107,9 @@ def dic2comp(obj, dic):
                 name = obj[i]['name']
                 obj[i] = dic[name]
                 obj[i].name = name
-            if isinstance(obj[i], (Exo, MultiComp)):
+            if isinstance(obj[i], (Ex, MultiComp)):
                 dic2comp(obj[i], dic)
-    elif isinstance(obj, Exo):
+    elif isinstance(obj, Ex):
         if isinstance(obj.input, list):
             dic2comp(obj.input, dic)
         elif isinstance(obj.input, dict) and 'cid' in obj.input:
