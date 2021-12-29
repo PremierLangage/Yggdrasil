@@ -13,16 +13,12 @@ sequence = []
 
 for i in range(nbstep):
     row = sample_lines[i]
-    qq = rf"""
-<strong> Phrase {i + 1}. </strong><br>
-
-{ row['phrase'] }
-"""
     sequence.append(ExInput())
-    sequence[i].question = qq
+    sequence[i].question = f"*Phrase {i + 1}.* \n {row['phrase']}"
     sequence[i].input._sol = row['rep']
 
 ==
+
 
 intro ==
 Ce quiz est composé de 4 question.
