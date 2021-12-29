@@ -88,10 +88,10 @@ class ExInput(Ex):
             
     def eval(self):
         if self.input.value == self.input._sol:
-            self.score = 100
+            self.input.score = 100
         else:
-            self.score = 0
-        return self.score
+            self.input.score = 0
+        return self.input.score
 
 class ExDragDrop(Ex):
 
