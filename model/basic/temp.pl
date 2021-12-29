@@ -2,6 +2,10 @@
 @ /utils/components/multicomp.py 
 @ /utils/components/dragdrop.py [customdragdrop.py]
 @ /utils/exercises/exercises.py
+@ /utils/components/scoring.py
+@ /utils/components/radio.py
+@ /utils/components/checkbox.py
+@ /utils/components/input.py
 
 style.page == #|css|
 <style>
