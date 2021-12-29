@@ -61,7 +61,8 @@ class ExCheckbox(Ex):
             self.inputblock = self.input.render()
         else:
             self.input = Checkbox()
-            
+            self.inputblock = self.input.render()
+
     def set_items(self, items):
         """
         Set the list of items.
