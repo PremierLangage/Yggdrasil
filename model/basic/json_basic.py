@@ -1,6 +1,6 @@
 import json, jsonpickle
 from customdragdrop import MultiComp, DropGroup, LabelGroup
-from exercises import Ex, ExRadio, ExCheckbox, ExDragDrop
+from exercises import Ex, ExRadio, ExCheckbox, ExInput, ExDragDrop
 
 class JSONEncoder(json.JSONEncoder):
 
