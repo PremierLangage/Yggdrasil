@@ -28,6 +28,12 @@ class Ex:
         """
         self.input.disabled = True
 
+    def render(self, name, dic):
+        """
+        Disable the component.
+        """
+        self.input.disabled = True
+
 class ExRadio(Ex):
 
     def __init__(self, **kwargs):
