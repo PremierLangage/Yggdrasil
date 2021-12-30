@@ -32,7 +32,7 @@ class Ex:
         """
         Disable the component.
         """
-        self.input.disabled = True
+        setattr(self, name, Env.from_string(getattr(self, name)).render(dic))
 
 class ExRadio(Ex):
 
