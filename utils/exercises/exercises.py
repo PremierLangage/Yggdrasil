@@ -130,8 +130,11 @@ class ExDragDrop(Ex):
             start = newstart
             counter += 1
         newstring += filledtext[start:]
-        self.inputblock = newstring
-            
+        self.drops_template = newstring
+    
+    def drops_html(self):
+        return self.drops_template
+
     def eval(self):
         n = len(self.drops)
         num_right = 0
