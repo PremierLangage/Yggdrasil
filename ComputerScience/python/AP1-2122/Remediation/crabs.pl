@@ -1,6 +1,6 @@
 
 
-
+extends = /model/opentext.pl
 
 
 text==
