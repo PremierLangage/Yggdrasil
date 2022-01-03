@@ -1,6 +1,6 @@
 
 
-extends = /model/opentext.pl
+extends = /model/progpython.pl
 
 title= Pas d'évaluateur.
 
