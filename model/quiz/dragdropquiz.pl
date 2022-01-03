@@ -14,7 +14,7 @@ for i in range(nbstep):
     sequence[i].question = "Compléter"
     sequence[i].set_labels(["habet", "habent"])
     sequence[i].set_filledtext("Pastor non pecuniam {habet}.")
-
+    sequence[i].set_filledtext(sequence[i].drops_html() + "\n\n" + sequence[i].labels_html())
     #questions.append("Compléter")
     #lab.append(LabelGroup(["habet", "habent"]))
     #drp.append(DropGroup())
