@@ -137,6 +137,13 @@ class ExDragDrop(Ex):
         return self.drops_template
 
     def labels_html(self):
+        lst = []
+        for label in self.labels:
+            selector = label.selector
+            cid = label.cid
+            lst.append(f"<{selector} cid='{cid}'></{selector}>")
+        shuffle(lst)
+        return "".join(lst)
         return self.labels_template
 
     def eval(self):
