@@ -17,7 +17,7 @@
     {{ sequence[i-1].question|markdown }}
     </div>
     <div style="display: block; margin-top: 1em;">
-    {{ sequence[i-1].inputblock|safe }}
+    {{ sequence[i-1].inputblock|safe|markdown }}
     </div>
     <hr class="divide">
     {% if i == nbstep %}
