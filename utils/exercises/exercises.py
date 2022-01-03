@@ -11,6 +11,7 @@ class Ex:
 
     def __init__(self, **kwargs):
         self.question = kwargs.get('question', '')
+        self.feedback= kwargs.get('feedback', '')
 
     def eval(self):
         """
