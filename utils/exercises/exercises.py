@@ -12,7 +12,7 @@ class Ex:
     def __init__(self, **kwargs):
         self.question = kwargs.get('question', '')
         self.feedback = kwargs.get('feedback', '')
-        self.solution = kwargs.get('feedback', '')
+        self.solution = kwargs.get('solution', '')
 
     def eval(self):
         """
