@@ -143,9 +143,8 @@ class ExDragDrop(Ex):
             selector = label.selector
             cid = label.cid
             lst.append(f"<{selector} cid='{cid}'></{selector}>")
-        shuffle(lst)
+        rd.shuffle(lst)
         return "".join(lst)
-        return self.labels_template
 
     def eval(self):
         n = len(self.drops)
