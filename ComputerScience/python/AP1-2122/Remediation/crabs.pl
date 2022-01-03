@@ -117,11 +117,14 @@ Le papier transparent est assez gros, alors pour l'instant, concentrez-vous uniq
 Combien de points sont visibles après avoir terminé la première instruction de pliage sur votre papier transparent ?
 
 **Ecrire** une fonction *folditL(l2l, line)* qui retourne une liste de liste qui est la pliure de l2l par rapport à la ligne _line_ .
+
 **Ecrire** une fonction *folditC(l2l, col)* qui retourne une liste de liste qui est la pliure de l2l par rapport à la colonne _col_ .
+
 **ecrire** un fonction *load(strings)* qui prend une liste de strings contenant des couples d'entiers et qui produit le tableau ci desssus.
 
-**verifier** que vous optenez le bon résultat.
+**verifier** que vous optenez le bon résultat en l'appliquant aux données ci dessus.
 ==
+
 
 
 
