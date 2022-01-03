@@ -123,20 +123,20 @@ Combien de points sont visibles après avoir terminé la première instruction d
 **ecrire** un fonction *load(strings)* qui prend une liste de strings contenant des couples d'entiers et qui produit le tableau ci desssus.
 
 **verifier** que vous optenez le bon résultat en l'appliquant aux données ci dessus.
+
+
+https://adventofcode.com/2021/day/13/input
 ==
 
 before==
 step=0
 ==
 
-evaluator==
-
-if step==0:
-    text += """\n\n Une fois que vous êêtes satisfaits vous pouvez tester avec les données suivantes.
-    https://adventofcode.com/2021/day/13/input
-    """
-
+pltest==
+>>> folditL([[]],0)
+>>> folditC([[]],0)
+>>> load(["0,1","1,0"])
+[['.', '#'], ['#', '.']
 ==
-
 
 
