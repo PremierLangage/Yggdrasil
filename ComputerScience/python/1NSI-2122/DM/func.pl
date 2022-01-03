@@ -14,7 +14,6 @@ Ecrire une fonction **{{funcname}}** qui vérifie le doctest suivant :
 
 {{doctest}}
 
-[https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/  ](https://www.belote.com/regles-et-variantes/les-regles-de-la-belote-classique/)
 
 ==
 
