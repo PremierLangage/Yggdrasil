@@ -25,13 +25,13 @@ class Ex:
 
     def disable(self):
         """
-        Disable the component.
+        Disable the exercise.
         """
         self.input.disabled = True
 
     def render(self, name, dic):
         """
-        Disable the component.
+        Render an attribute.
         """
         setattr(self, name, Env.from_string(getattr(self, name)).render(dic))
 
