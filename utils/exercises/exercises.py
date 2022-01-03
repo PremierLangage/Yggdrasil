@@ -136,6 +136,9 @@ class ExDragDrop(Ex):
     def drops_html(self):
         return self.drops_template
 
+    def drops_html(self):
+        return self.labels_template
+
     def eval(self):
         n = len(self.drops)
         num_right = 0
