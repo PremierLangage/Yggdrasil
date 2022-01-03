@@ -54,17 +54,17 @@ Score : {{score}} / 100
     {{ sequence[i-1].inputblock|safe|markdown }}
     </div>
 <hr class="divide">
-{% if sequence[i-1].feedback|length > 1 %}
+{% if sequence[i-1].feedback|length > 0 %}
 <div class="feedback">
 <i class="far fa-hand-point-right"></i> {{ sequence[i-1].feedback|safe|markdown }}
 </div>
 {% endif %}
-{% if solutions[i-1]|length > 1 %}
+{% if sequence[i-1].solution|length > 0 %}
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution{{i}}" role="button" aria-expanded="false" aria-controls="collapseSolution">
 Voir la solution.
 </a>
 <div class="collapse" id="collapseSolution{{i}}">
-{{ solutions[i-1] }}
+{{ sequence[i-1].solution }}
 </div>
 {% endif %}
 </div>
