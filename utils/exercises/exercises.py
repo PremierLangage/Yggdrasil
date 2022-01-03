@@ -110,6 +110,7 @@ class ExDragDrop(Ex):
         self._sol = kwargs.get('_sol', [])
         self.question = kwargs.get('question', '')
         self.inputblock = kwargs.get('inputblock', '')
+        self.drops_template = kwargs.get('drops_template', '')
 
     def set_labels(self, lst):
         self.labels = [CustomDragDrop.Label(content=content) for content in lst]
