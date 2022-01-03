@@ -86,6 +86,7 @@ class ExCheckbox(Ex):
 class ExInput(Ex):
 
     def __init__(self, **kwargs):
+        super().__init__(**kwargs)
         self.__Ex__ = "Input"
         self.question = kwargs.get('question', '')
         if 'input' in kwargs:
