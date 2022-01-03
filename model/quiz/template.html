@@ -54,9 +54,9 @@ Score : {{score}} / 100
     {{ sequence[i-1].inputblock|safe|markdown }}
     </div>
 <hr class="divide">
-{% if feedbacks[i-1]|length > 1 %}
+{% if sequence[i-1].feedback|length > 1 %}
 <div class="feedback">
-<i class="far fa-hand-point-right"></i> {{ feedback|safe }}
+<i class="far fa-hand-point-right"></i> {{ sequence[i-1].feedback|safe|markdown }}
 </div>
 {% endif %}
 {% if solutions[i-1]|length > 1 %}
