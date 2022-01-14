@@ -4,6 +4,8 @@ extends = /ComputerScience/python/template/pltest.pl
 
 build.py= @buildprob.py
 
+title= Le premier jour cher le Père Noël.
+
 enonce= @ennonce
 text==
 
