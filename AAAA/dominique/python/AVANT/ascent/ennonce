@@ -13,9 +13,9 @@ L'immeuble est très haut et le sous-sol est très profond ; il ne trouvera jama
 Par example:
 
     (()) et ()() aboutissent tous deux au niveau 0.
-    ((( et (()(()( les deux aboutissent à l'étage 3.
-    ))((((( se traduit également par l'étage 3.
-    ()) et ))( les deux donnent l'étage -1 (le premier sous-sol).
+    ((( et (()(()( les deux aboutissent à l`étage 3.
+    ))((((( se traduit également par l`étage 3.
+    ()) et ))( les deux donnent l`étage -1 (le premier sous-sol).
     ))) et )())()) entraînent tous deux un niveau -3.
 
 A quel étage les instructions amènent le Père Noël ?
