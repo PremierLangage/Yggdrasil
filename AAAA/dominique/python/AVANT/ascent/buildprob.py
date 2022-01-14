@@ -28,9 +28,9 @@ def doit(filename):
         f.write(s)
 
     pltest= f"""
-    >>> question1() == {level} # Question 1 
+    >>> question1() == {level} # Question 1 étage 
     True
-    >>> question2() == {ssol} # Question 2
+    >>> question2() == {ssol} # Question 2 position 
     True
     """
 
