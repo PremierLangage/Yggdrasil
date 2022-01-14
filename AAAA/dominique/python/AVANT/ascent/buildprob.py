@@ -31,7 +31,7 @@ def doit(filename):
     >>> question1()
     le Père Noël arrive au {level} étage
     >>> question2()
-    Aux {ssol} ième le Père Noïl entre au sous-sol
+    Aux {ssol} ième personnage le Père Noël entre au sous-sol
     """
 
     return pltest
