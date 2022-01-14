@@ -28,9 +28,9 @@ def doit(filename):
         f.write(s)
 
     pltest= f"""
-    >>> question1() =='le Père Noël arrive au {level} étage'
+    >>> question1() == {level} # Question 1 
     True
-    >>> question2() == 'Aux {ssol} ième personnage le Père Noël entre au sous-sol'
+    >>> question2() == {ssol} # Question 2
     True
     """
 
