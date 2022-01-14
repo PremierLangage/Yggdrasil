@@ -1,9 +1,3 @@
-Le Père Noël espérait un Noël blanc, mais la fonction "neige" de sa machine météorologique est alimentée par les étoiles, et il vient de sortir ! Pour sauver Noël, il a besoin que vous récupériez cinquante étoiles d'ici le 25 décembre.
-
-Collectez des étoiles en aidant le Père Noël à résoudre des énigmes. Deux puzzles seront mis à disposition chaque jour du calendrier de l'Avent ; le deuxième puzzle est déverrouillé lorsque vous terminez le premier. Chaque puzzle accorde une étoile. Bonne chance!
-
-Voici un puzzle facile pour vous réchauffer.
-
 Le Père Noël essaie de livrer des cadeaux dans un grand immeuble, mais il ne trouve pas le bon étage - les directions qu'il a obtenues sont un peu déroutantes. Il commence au rez-de-chaussée (étage 0) puis suit les instructions un personnage à la fois.
 
 Une parenthèse ouvrante, (, signifie qu'il doit monter d'un étage, et une parenthèse fermante, ), signifie qu'il doit descendre d'un étage.
@@ -35,3 +29,5 @@ Par example:
 Quelle est la position du personnage qui amène le Père Noël à entrer en premier dans le sous-sol ?
 
 Votre code doit  contenir une fonction question2() qui lit le fichier "data"  puis retourne le resultat (position).
+
+Niveau = Facile 
