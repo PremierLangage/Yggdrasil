@@ -1,7 +1,7 @@
 
 extends = /ComputerScience/python/template/pltest.pl
 @ /builder/before.py [builder.py]
-x
+
 @buildprob.py [build.py]
 
 title= Le premier jour cher le Père Noël.
