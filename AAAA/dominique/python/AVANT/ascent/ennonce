@@ -30,4 +30,8 @@ Quelle est la position du personnage qui amène le Père Noël à entrer en prem
 
 Votre code doit  contenir une fonction question2() qui lit le fichier "data"  puis retourne le resultat (position).
 
-Niveau = Facile 
+
+Niveau = Facile, une boucle.
+
+Pré-requis: lire un fichier !
+
