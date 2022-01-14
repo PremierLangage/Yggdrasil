@@ -20,7 +20,7 @@ Par example:
 
 A quel étage les instructions amènent le Père Noël ?
 
-Votre code doit contenir une fonction question1() qui litle fichier "data" puis affiche le resultat avec la ligne.
+Votre code doit contenir une fonction question1() qui lit le fichier "data" puis affiche le resultat avec la ligne.
 
 print(f"le Père Noël arrive au {etage} étage")
 
@@ -35,6 +35,6 @@ Par example:
 
 Quelle est la position du personnage qui amène le Père Noël à entrer en premier dans le sous-sol ?
 
-Votre code doit  contenir une fonction question2() qui litle fichier "data" le resultat avec la ligne.
+Votre code doit  contenir une fonction question2() qui lit le fichier "data" le resultat avec la ligne.
 
 print(f"Aux {personnage} ième le Père Noïl entre au sous-sol")
