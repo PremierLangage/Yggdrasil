@@ -28,10 +28,10 @@ def doit(filename):
         f.write(s)
 
     pltest= f"""
-    >>> question1()
-    le Père Noël arrive au {level} étage
-    >>> question2()
-    Aux {ssol} ième personnage le Père Noël entre au sous-sol
+    >>> question1() =='le Père Noël arrive au {level} étage'
+    True
+    >>> question2() == 'Aux {ssol} ième personnage le Père Noël entre au sous-sol'
+    True
     """
 
     return pltest
