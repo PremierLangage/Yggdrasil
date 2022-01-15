@@ -29,7 +29,7 @@ inputbox.maxlength = 2
 inputbox.appearance = outline
 
 before==#|python|
-
+nb_attempt=0
 ==
 
 title==#|markdown|
@@ -59,6 +59,8 @@ form==#|markdown|
 
 evaluator==#|python|
 from utils_bash import display_as_shell_this, frame_message
+
+nb_attempt += 1
 
 moyen = ['Linux', 'linux', 'GNU/Linux']
 good = ['Debian', 'debian']
