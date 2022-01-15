@@ -33,7 +33,7 @@ nb_attempt=0
 ==
 
 title==#|markdown|
-Quel est le système d'exploitation ?
+Quelle est la distribution du système d'exploitation ?
 ==
 
 text==#|markdown|
