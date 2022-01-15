@@ -63,8 +63,12 @@ from utils_bash import display_as_shell_this, frame_message
 nb_attempt += 1
 
 grade_attempt = 50 + (200 // (3+nb_attempt))
-
-feedback='<br><p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Efficacité :</u> ' + str(grade_attempt) + '%</b></p>'
+tenta = '('+str(nb_attempt)+' tentative'
+if nb_attempt > 1:
+    tenta += 's)'
+else:
+    tenta += ')'
+feedback='<br><p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Efficacité :</u> ' + str(grade_attempt) + '%</b> '+tenta+'</p>'
 
 moyen = ['Linux', 'linux', 'GNU/Linux']
 good = ['Debian', 'debian']
