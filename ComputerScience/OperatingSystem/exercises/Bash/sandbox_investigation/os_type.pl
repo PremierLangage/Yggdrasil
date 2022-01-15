@@ -62,16 +62,20 @@ from utils_bash import display_as_shell_this, frame_message
 
 nb_attempt += 1
 
+grade_attempt = 50 + (200 // (3+nb_attempt))
+
+feedback == '<br><p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Efficacité :</u> ' + str(grade_attempt) + '%</b></p>'
+
 moyen = ['Linux', 'linux', 'GNU/Linux']
 good = ['Debian', 'debian']
 
 if inputbox.value in good:
-    grade = (100, frame_message("C'est bien cela !", "ok"))
+    grade = (grade_attempt, frame_message("C'est bien cela !", "ok")+feedback)
 else:
     if inputbox.value in moyen:
-        grade = (50, frame_message("C'est presque ça, vous avez donné le système d'exploitation mais pas la distribution.", "warning"))
+        grade = (grade_attempt // 2, frame_message("C'est presque ça, vous avez donné le système d'exploitation mais pas la distribution.", "warning")+feedback)
     else:
-        grade = (0, frame_message("Ce n'est pas la bonne réponse.", "error"))
+        grade = (0, frame_message("Ce n'est pas la bonne réponse.", "error")+feedback)
 ==
 
 
