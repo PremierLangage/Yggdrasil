@@ -46,7 +46,9 @@ extraite dans le fameux fichier **cpuinfo**.
 Pour cela, utiliser 
 <a href="https://pl.u-pem.fr/filebrowser/demo/38096/" target="blank">
 l'émulateur de terminal sur sandbox
-</a>.
+</a>. Attention, PLaTon n'est pas multi-onglet. Il faut bien fermer vos onglets sur 
+l'émulateur de terminal et actualiser l'énoncé de l'exercice avant de soumettre votre 
+réponse.
 
 ==
 
