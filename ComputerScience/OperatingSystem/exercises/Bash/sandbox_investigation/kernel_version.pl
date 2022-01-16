@@ -64,7 +64,7 @@ evaluator==#|python|
 import subprocess
 from utils_bash import display_as_shell_this, frame_message
 
-cmd = 'uname -r & uname -v | sed -e "s/[ \n]/\n/g" | grep -e "^[0-9]"'
+cmd = """uname -r & uname -v | sed -e "s/[ \n]/\n/g" | grep -e "^[0-9]" """
 sp = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
 solution = sp.communicate()[0].decode().replace(' ', '').replace('\n', '')
 student_ans = (inputbox.value).replace(' ', '').replace('\n', '')
