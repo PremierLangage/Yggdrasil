@@ -31,7 +31,7 @@ inputbox.maxlength = 2
 inputbox.appearance = outline
 
 before==#|python|
-
+nb_attempt=0
 ==
 
 title==#|markdown|
@@ -75,8 +75,18 @@ from utils_bash import display_as_shell_this, frame_message
 
 student_ans = (inputbox.value).replace(' ', '').replace('\n', '')
 
-if "apt" in student_ans and "moo" in student_ans:
-    grade = (100, frame_message("C'est bien cela !", "ok"))
+nb_attempt += 1
+
+grade_attempt = 50 + (200 // (3+nb_attempt))
+tenta = '('+str(nb_attempt)+' tentative'
+if nb_attempt > 1:
+    tenta += 's)'
 else:
-    grade = (0, frame_message("Ce n'est pas la bonne réponse...", "error"))
+    tenta += ')'
+feedback='<br><p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Efficacité :</u> ' + str(grade_attempt) + '%</b> '+tenta+'</p>'
+
+if "apt" in student_ans and "moo" in student_ans:
+    grade = (grade_attempt, frame_message("C'est bien cela !", "ok")+feedback)
+else:
+    grade = (0, frame_message("Ce n'est pas la bonne réponse...", "error")+feedback)
 ==
