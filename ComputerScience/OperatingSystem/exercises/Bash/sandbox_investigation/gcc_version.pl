@@ -29,7 +29,7 @@ inputbox.maxlength = 2
 inputbox.appearance = outline
 
 before==#|python|
-
+nb_attempt=0
 ==
 
 title==#|markdown|
