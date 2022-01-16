@@ -41,7 +41,7 @@ Analyser une vidéo
 text==
 Dans le clip suivant, combien de souris le **chat** fait-il couiner ?
 
-Cet exercice est plus simple avec le son d'activé.
+Cet exercice est plus simple avec le son d'activé. Attention, le chat peut stimuler plusieurs fois la même souris.
 
 <br>
 
