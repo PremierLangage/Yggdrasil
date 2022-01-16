@@ -63,7 +63,7 @@ evaluator==#|python|
 import subprocess
 from utils_bash import display_as_shell_this, frame_message
 
-cmd = '''df -H | grep -e "/$" | sed -e "s/[' '\\t\\n]/\\n/g" | sort -rn | head -1'''
+cmd = '''df -H | grep -e "/$" | sed -e "s/[' '\\t\\n]/\\n/g" | grep -e "G$" | sort -rn | head -1'''
 sp = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
 solution = sp.communicate()[0].decode().replace(' ', '').replace('\n', '')
 # errout = sp.stderr.decode()
