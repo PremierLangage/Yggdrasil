@@ -79,8 +79,8 @@ else:
 feedback='<br><p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Efficacité :</u> ' + str(grade_attempt) + '%</b> '+tenta+'</p>'
 
 if student_ans == solution:
-    grade = (100, frame_message("C'est bien cela !", "ok"))
+    grade = (grade_attempt, frame_message("C'est bien cela !", "ok")+feedback)
 else:
-    grade = (0, frame_message("Ce n'est pas la bonne réponse...", "error"))
+    grade = (0, frame_message("Ce n'est pas la bonne réponse...", "error")+feedback)
 ==
 
