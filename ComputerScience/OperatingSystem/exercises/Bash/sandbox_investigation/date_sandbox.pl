@@ -29,7 +29,7 @@ inputbox.maxlength = 2
 inputbox.appearance = outline
 
 before==#|python|
-
+nb_attempt=0
 ==
 
 title==#|markdown|
@@ -67,6 +67,16 @@ solution = sp.communicate()[0].decode().replace(' ', '').replace('\n', '')
 # errout = sp.stderr.decode()
 # returncode = sp.returncode
 student_ans = (inputbox.value).replace(' ', '').replace('\n', '')
+
+nb_attempt += 1
+
+grade_attempt = 50 + (200 // (3+nb_attempt))
+tenta = '('+str(nb_attempt)+' tentative'
+if nb_attempt > 1:
+    tenta += 's)'
+else:
+    tenta += ')'
+feedback='<br><p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Efficacité :</u> ' + str(grade_attempt) + '%</b> '+tenta+'</p>'
 
 if student_ans == solution:
     grade = (100, frame_message("C'est bien cela !", "ok"))
