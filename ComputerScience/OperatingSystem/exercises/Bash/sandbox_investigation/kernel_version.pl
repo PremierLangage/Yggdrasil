@@ -79,8 +79,6 @@ else:
     tenta += ')'
 feedback='<br><p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Efficacité :</u> ' + str(grade_attempt) + '%</b> '+tenta+'</p>'
 
-feedback += solution
-
 if len(student_ans) > 3 and student_ans in solution:
     grade = (100, frame_message("C'est bien cela !", "ok")+feedback)
 else:
