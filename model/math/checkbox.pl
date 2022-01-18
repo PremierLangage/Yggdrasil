@@ -1,19 +1,53 @@
-extends = /model/basic/checkbox.pl
+extends = /model/math/math.pl
 
-@ /utils/sympy/latex2sympy.py
-@ /utils/sympy/sympy2latex.py
-@ /utils/sympy/randsympy.py
-@ /utils/sympy/mplsympy.py
-@ /utils/plrandom.py
+extends = /model/basic/basic.pl
+@ /utils/components/scoring.py
+@ /utils/components/checkbox.py [checkbox.py]
 
-importfunc ==
-from sympy import E, I, pi, oo
-from sympy import sqrt, Abs, sin, cos, tan, exp, ln
-from sympy import var, symbols, Symbol
-from sympy import sympify, simplify, Lambda
-from sympy import Integer, Rational, Poly, FiniteSet, Tuple
-from random import choice, choices, sample, shuffle
-from plrandom import randint, sampleint
-from sympy2latex import latex
-from latex2sympy import latex2sympy
+doc == #|python|
+{
+    "name": "checkbox",
+    "keys": {
+        "items": {
+            "type": "(str, list)",
+            "default": "",
+            "description": "Liste des items."
+        },
+        "indsol": {
+            "type": "list",
+            "default": [],
+            "description": "Indices des solutions dans la liste des items."
+        },
+        "shuffled": {
+            "type": "bool",
+            "default": True,
+            "description": "Valeur indiquant si les items seront mélangés."
+        }
+    }
+}
+==
+
+checkbox =: CheckboxGroup
+checkbox.decorator = Checkbox
+
+shuffled = True
+
+process ==
+from ast import literal_eval
+
+indsol = literal_eval(str(indsol))
+shuffled = literal_eval(str(shuffled))
+
+checkbox.set_items(items)
+checkbox.set_sol(indsol)
+if shuffled:
+    checkbox.shuffle()
+==
+
+inputblock ==
+{{ checkbox|component }}
+==
+
+evaluator ==
+score = checkbox.eval()
 ==
