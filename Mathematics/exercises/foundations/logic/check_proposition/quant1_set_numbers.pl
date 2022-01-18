@@ -17,26 +17,23 @@ else:
     A = sample(numbers, k)
 A = set(sorted(A))
 items=[]
-items.append(r"$! \exists x \in A,\ x \textrm{ est impair} !$")
-
-div3 = set(range(3 ,41, 3))
-div5 =set(range(5, 41, 5))
-S={'pair':even,'impair':odd,'divisible par 3':div3,'divisible par 5':div5}
-
-indsol = sample([0,1,2,3],k=randint(1,3))
-op = ['et', 'et', 'ou', 'ou']
-for i in range(4):
-    p1=choice(['pair','impair'])
-    p2=choice(['divisible par 3', 'divisible par 5'])
-    if op[i]=='et':
-        P=S[p1].intersection(S[p2])
-    if op[i]=='ou':
-        P=S[p1].union(S[p2])    
-    if i in indsol:
-        n=choice(list(P))
-    else:
-        n=choice(list(numbers.difference(P)))
-    items.append(str(n)+" est "+p1+" "+op[i]+" "+p2)
+k = 0
+for q in [0, 1, 2, 3]:
+    if q == 0:
+        items.append(r"$! \exists x \in A,\ x \textrm{ est pair} !$")
+        bv = any([x%2 == 0 for x in A])
+    elif q == 1:
+        items.append(r"$! \exists x \in A,\ x \textrm{ est impair} !$")
+        bv = any([x%2 != 0 for x in A])
+    elif q == 2:
+        items.append(r"$! \forall x \in A,\ x \textrm{ est pair} !$")
+        bv = all([x%2 == 0 for x in A])
+    elif q == 3:
+        items.append(r"$! \forall x \in A,\ x \textrm{ est impair} !$")
+        bv = all([x%2 != 0 for x in A])
+    if bv:
+        indsol.append(k)
+    k +=1
 ==
 
 question ==
