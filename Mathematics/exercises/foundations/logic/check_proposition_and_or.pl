@@ -16,8 +16,8 @@ choices=[]
 #indsol =[1]
 op=['et','et','ou','ou']
 for i in range(4):
-    p1=randitem(['pair','impair'])
-    p2=randitem(['divisible par 3', 'divisible par 5'])
+    p1=choice(['pair','impair'])
+    p2=choice(['divisible par 3', 'divisible par 5'])
     if op[i]=='et':
         P=S[p1].intersection(S[p2])
     if op[i]=='ou':
