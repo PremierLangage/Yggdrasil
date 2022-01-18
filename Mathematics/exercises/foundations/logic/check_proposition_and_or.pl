@@ -23,9 +23,9 @@ for i in range(4):
     if op[i]=='ou':
         P=S[p1].union(S[p2])    
     if i in indsol:
-        n=randitem(list(P))
+        n=choice(list(P))
     else:
-        n=randitem(list(numbers.difference(P)))
+        n=choice(list(numbers.difference(P)))
     choices.append(str(n)+" est "+p1+" "+op[i]+" "+p2)
 ==
 
