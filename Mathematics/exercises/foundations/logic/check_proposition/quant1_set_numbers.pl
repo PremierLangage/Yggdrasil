@@ -17,6 +17,7 @@ else:
     A = sample(numbers, k)
 A = set(sorted(A))
 items=[]
+indsol = []
 k = 0
 for q in [0, 1, 2, 3]:
     if q == 0:
