@@ -35,15 +35,15 @@ for q in [randint(0, 1), randint(2, 3), randint(4, 5), randint(6, 7)]:
         items.append(r"$! \forall x \in A,\ x \textrm{ est impair} !$")
         bv = all([x%2 != 0 for x in A])
     elif q == 4:
-        d = randint(1, n)
+        d = choice([randint(1, minA), randint(minA+1, n)])
         items.append(rf"$! \exists x \in A,\ x \ge {d} !$")
         bv = any([x >= d for x in A])
     elif q == 5:
-        d = randint(1, n)
+        d = choice([randint(1, maxA), randint(maxA+1, n)])
         items.append(rf"$! \exists x \in A,\ x \le {d} !$")
         bv = any([x <= d for x in A])
     elif q == 6:
-        d = randint(1, n)
+        d = choice([randint(1, maxA), randint(maxA+1, n)])
         items.append(rf"$! \forall x \in A,\ x \ge {d} !$")
         bv = all([x >= d for x in A])
     elif q == 7:
