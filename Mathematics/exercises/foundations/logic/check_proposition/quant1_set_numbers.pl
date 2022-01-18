@@ -19,7 +19,7 @@ A = set(sorted(A))
 items=[]
 indsol = []
 k = 0
-for q in [0, 1, 2, 3]:
+for q in [0, 1, 2, 4]:
     if q == 0:
         items.append(r"$! \exists x \in A,\ x \textrm{ est pair} !$")
         bv = any([x%2 == 0 for x in A])
@@ -32,6 +32,10 @@ for q in [0, 1, 2, 3]:
     elif q == 3:
         items.append(r"$! \forall x \in A,\ x \textrm{ est impair} !$")
         bv = all([x%2 != 0 for x in A])
+    elif q == 4:
+        d = 20
+        items.append(r"$! \forall x \in A,\ x \ge {d} !$")
+        bv = all([x >= d for x in A])
     if bv:
         indsol.append(k)
     k +=1
