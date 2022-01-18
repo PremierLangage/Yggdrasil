@@ -17,7 +17,7 @@ else:
     A = sample(numbers, k)
 A = set(sorted(A))
 items=[]
-items.append("$! \exists x \in A,\: x \textrm{ est impair} !$")
+items.append("$! \exists x \in A,\: x \\textrm{ est impair} !$")
 
 div3 = set(range(3 ,41, 3))
 div5 =set(range(5, 41, 5))
