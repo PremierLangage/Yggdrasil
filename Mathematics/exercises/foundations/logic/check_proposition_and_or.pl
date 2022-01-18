@@ -13,7 +13,7 @@ div5=set(range(5,41,5))
 S={'pair':even,'impair':odd,'divisible par 3':div3,'divisible par 5':div5}
 choices=[]
 #indsol = list_randint_norep(randint(1,3),0,3)
-#indsol =[1]
+indsol =[1]
 op=['et','et','ou','ou']
 for i in range(4):
     p1=choice(['pair','impair'])
