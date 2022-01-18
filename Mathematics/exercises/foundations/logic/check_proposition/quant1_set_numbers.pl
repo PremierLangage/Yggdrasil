@@ -16,7 +16,7 @@ elif case == 2:
     A = sample(odd, k)
 else:
     A = sample(numbers, k)
-A = set(sorted(A))
+A = Set(sorted(A))
 items=[]
 indsol = []
 k = 0
