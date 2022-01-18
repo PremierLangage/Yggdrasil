@@ -1,5 +1,4 @@
 extends = /model/basic/checkbox.pl
-extends = /model/math.pl
 
 title = Déterminer si une proposition est vraie
 
@@ -29,7 +28,7 @@ for i in range(4):
     choices.append(str(n)+" est "+p1+" "+op[i]+" "+p2)
 ==
 
-text ==
+question ==
 Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
 ==
 
