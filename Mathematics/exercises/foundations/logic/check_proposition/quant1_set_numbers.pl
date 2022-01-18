@@ -16,6 +16,8 @@ elif case == 2:
     A = sample(odd, k)
 else:
     A = sample(numbers, k)
+minA = min(A)
+maxA = max(A)
 items=[]
 indsol = []
 k = 0
