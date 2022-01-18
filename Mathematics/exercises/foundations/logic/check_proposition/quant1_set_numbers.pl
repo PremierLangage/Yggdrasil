@@ -5,8 +5,8 @@ title = Déterminer si une proposition est vraie
 
 before ==
 n = 40
-numbers = set(range(1, 41))
-even = set(range(2, 41, 2))
+numbers = set(range(5, 36))
+even = set(range(6, 36, 2))
 odd = numbers.difference(even)
 case = randint(1, 4)
 k = randint(3, 4)
