@@ -15,6 +15,7 @@
 
 before_scripts % ["mathimport", "headerbefore", "before", "footerbefore", "process"]
 text =
+form = 
 latexsettings.ln_notation = True
 latexsettings.inv_trig_style = full
 
