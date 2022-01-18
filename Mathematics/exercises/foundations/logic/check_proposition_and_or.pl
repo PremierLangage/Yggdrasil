@@ -11,7 +11,7 @@ odd=numbers.difference(even)
 div3=set(range(3,41,3))
 div5=set(range(5,41,5))
 S={'pair':even,'impair':odd,'divisible par 3':div3,'divisible par 5':div5}
-choices=[]
+items=[]
 #indsol = list_randint_norep(randint(1,3),0,3)
 indsol =[1]
 op=['et','et','ou','ou']
@@ -26,7 +26,7 @@ for i in range(4):
         n=choice(list(P))
     else:
         n=choice(list(numbers.difference(P)))
-    choices.append(str(n)+" est "+p1+" "+op[i]+" "+p2)
+    items.append(str(n)+" est "+p1+" "+op[i]+" "+p2)
 ==
 
 question ==
