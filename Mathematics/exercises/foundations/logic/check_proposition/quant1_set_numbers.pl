@@ -38,6 +38,6 @@ for i in range(4):
 ==
 
 question ==
-$$
+$$ {{ A|latex }} $$
 Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
 ==
