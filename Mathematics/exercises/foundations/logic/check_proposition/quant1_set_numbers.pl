@@ -4,6 +4,7 @@ extends = /model/math/checkbox.pl
 title = Déterminer si une proposition est vraie
 
 before ==
+from sympy import Set
 n = 40
 numbers = set(range(1, 41))
 even = set(range(2, 41, 2))
