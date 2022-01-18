@@ -4,6 +4,7 @@ extends = /model/basic/checkbox.pl
 title = Déterminer si une proposition est vraie
 
 before ==
+n = 40
 numbers = set(range(1, 41))
 even = set(range(2, 41, 2))
 odd = numbers.difference(even)
@@ -33,7 +34,7 @@ for q in [0, 1, 2, 4]:
         items.append(r"$! \forall x \in A,\ x \textrm{ est impair} !$")
         bv = all([x%2 != 0 for x in A])
     elif q == 4:
-        d = 20
+        d = randint(1, n)
         items.append(r"$! \forall x \in A,\ x \ge {d} !$")
         bv = all([x >= d for x in A])
     if bv:
