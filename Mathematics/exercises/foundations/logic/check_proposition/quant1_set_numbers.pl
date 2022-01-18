@@ -20,7 +20,7 @@ A = set(sorted(A))
 items=[]
 indsol = []
 k = 0
-for q in [0, 1, 2, 4]:
+for q in [randint(0, 1), randint(2, 3), randint(4, 5), randint(6, 7)]:
     if q == 0:
         items.append(r"$! \exists x \in A,\ x \textrm{ est pair} !$")
         bv = any([x%2 == 0 for x in A])
