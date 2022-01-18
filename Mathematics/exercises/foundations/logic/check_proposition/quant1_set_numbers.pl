@@ -1,5 +1,4 @@
 # AAV : Déterminer si une proposition logique est vraie.
-extends = /model/math/checkbox.pl
 extends = /model/basic/checkbox.pl
 
 title = Déterminer si une proposition est vraie
@@ -58,6 +57,6 @@ A = FiniteSet(*A)
 
 question ==
 On considère l'ensemble 
-$$ {{ A|latex }}. $$
+$$ {{ A }}. $$
 Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
 ==
