@@ -15,7 +15,7 @@ elif case == 1:
     A = sample(odd, k)
 else:
     A = sample(numbers, k)
-A = set(A)  
+A = set(sorted(A))  
 div3 = set(range(3 ,41, 3))
 div5 =set(range(5, 41, 5))
 S={'pair':even,'impair':odd,'divisible par 3':div3,'divisible par 5':div5}
@@ -37,6 +37,6 @@ for i in range(4):
 ==
 
 question ==
-$$ {{ A|latex }} $$
+$$ {{ A }} $$
 Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
 ==
