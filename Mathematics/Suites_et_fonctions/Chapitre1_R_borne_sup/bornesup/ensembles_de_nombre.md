@@ -24,4 +24,7 @@ Un nombre est un concept permettant d’évaluer et de comparer des quantités o
  - Les entiers naturels ont-il une manière unique de se chiffer en base 10 ? 
  - Les nombres rationnels ont-ils une représentation unique ? 
  - Qu'en est-il pour les nombres réels ? 
- 
+ - Que signifie "l'addition est bien définie pour tous les entiers naturels mais pas la soustraction" ? 
+ - Que signifie "l'ordre sur les entiers naturels est compatible avec l'addition et la multiplication " ?
+  
+
