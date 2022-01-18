@@ -7,14 +7,20 @@ notion qui permet de compter, de dénombrer les choses ou les êtres, de classer
 de mesurer les grandeurs. 
 La définition mathématique proposé par le Larousse indique "Élément d'un des ensembles ℕ, ℤ, 𝔻, ℚ, ℝ ou ℂ"
 
-Il est intéerssant de consulter la définition de wikipédia https://fr.wikipedia.org/wiki/Nombre : 
+Il est intéressant de consulter également la définition de wikipédia https://fr.wikipedia.org/wiki/Nombre : 
 
-Un nombre est un concept permettant d’évaluer et de comparer des quantités ou des rapports de grandeurs,
+"Un nombre est un concept permettant d’évaluer et de comparer des quantités ou des rapports de grandeurs,
  mais aussi d’ordonner des éléments par une numérotation. 
  Souvent écrits à l’aide d’un ou plusieurs chiffres, les nombres interagissent 
- par le biais d’opérations qui sont résumées par des règles de calcul.
+ par le biais d’opérations qui sont résumées par des règles de calcul."
 
  Un nombre est donc un objet abstrait, qui doit pouvoir se représenter (se chiffrer). 
+ Quelles
+ Sauriez-vous donner un nombre qui est dans N et pas dans Z? 
+  Dans Z et pas dans D ? 
+  Dans Q et pas dans D ? 
+  Dans R et pas dans Q ? 
+  Dans C et pas dans R ? 
  Les nombres se comparent entre eux donc les ensembles de nombre disposent d'un ordre naturel. 
  Les nombres s'additionnent, se soustraient, se multiplient, se divisent entre eux. 
  Les ensembles de nombre sont donc naturellement munient d'opérations. 
@@ -26,5 +32,5 @@ Un nombre est un concept permettant d’évaluer et de comparer des quantités o
  - Qu'en est-il pour les nombres réels ? 
  - Que signifie "l'addition est bien définie pour tous les entiers naturels mais pas la soustraction" ? 
  - Que signifie "l'ordre sur les entiers naturels est compatible avec l'addition et la multiplication " ?
-  
+
 
