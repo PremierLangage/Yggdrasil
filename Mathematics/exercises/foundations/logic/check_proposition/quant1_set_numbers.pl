@@ -35,8 +35,20 @@ for q in [0, 1, 2, 4]:
         bv = all([x%2 != 0 for x in A])
     elif q == 4:
         d = randint(1, n)
+        items.append(r"$! \exists x \in A,\ x \ge {d} !$")
+        bv = any([x >= d for x in A])
+    elif q == 5:
+        d = randint(1, n)
+        items.append(r"$! \exists x \in A,\ x \le {d} !$")
+        bv = any([x <= d for x in A])
+    elif q == 6:
+        d = randint(1, n)
         items.append(r"$! \forall x \in A,\ x \ge {d} !$")
         bv = all([x >= d for x in A])
+    elif q == 7:
+        d = randint(1, n)
+        items.append(r"$! \forall x \in A,\ x \le {d} !$")
+        bv = all([x <= d for x in A])
     if bv:
         indsol.append(k)
     k +=1
