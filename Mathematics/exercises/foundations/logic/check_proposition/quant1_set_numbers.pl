@@ -17,7 +17,6 @@ elif case == 2:
     A = sample(odd, k)
 else:
     A = sample(numbers, k)
-A = Set(sorted(A))
 items=[]
 indsol = []
 k = 0
@@ -53,6 +52,8 @@ for q in [randint(0, 1), randint(2, 3), randint(4, 5), randint(6, 7)]:
     if bv:
         indsol.append(k)
     k +=1
+
+A = Set(sorted(A))
 ==
 
 question ==
