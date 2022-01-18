@@ -12,7 +12,7 @@ div3=set(range(3,41,3))
 div5=set(range(5,41,5))
 S={'pair':even,'impair':odd,'divisible par 3':div3,'divisible par 5':div5}
 items=[]
-indsol = sample([0,1,2,3],l=randint(1,3))
+indsol = sample([0,1,2,3],k=randint(1,3))
 op=['et','et','ou','ou']
 for i in range(4):
     p1=choice(['pair','impair'])
