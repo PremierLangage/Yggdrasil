@@ -1,5 +1,5 @@
 # AAV : Déterminer si une proposition logique est vraie.
-extends = /model/basic/checkbox.pl
+extends = /model/math/checkbox.pl
 
 title = Déterminer si une proposition est vraie
 
