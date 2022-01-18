@@ -56,6 +56,6 @@ for q in [randint(0, 1), randint(2, 3), randint(4, 5), randint(6, 7)]:
 
 question ==
 On considère l'ensemble 
-$$ {{ A|latex }}.$$
+$$ {{ A|latex }}. $$
 Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
 ==
