@@ -13,6 +13,7 @@ numbers = set(range(5, 36))
 even = set(range(6, 36, 2))
 odd = numbers.difference(even)
 case = randint(1, 4)
+
 k = randint(3, 4)
 if case == 1:
     A = sample(odd, k)
@@ -20,10 +21,10 @@ elif case == 2:
     A = sample(odd, k)
 else:
     A = sample(numbers, k)
-minA = min(A)
-maxA = max(A)
-items=[]
-indsol = []
+
+minA, maxA = min(A), max(A)
+items, indsol = [], []
+
 k = 0
 for q in [randint(0, 1), randint(2, 3), randint(4, 5), randint(6, 7)]:
     if q == 0:
