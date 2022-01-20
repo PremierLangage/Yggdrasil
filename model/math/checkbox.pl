@@ -14,6 +14,8 @@ before_scripts % ["mathimport", "importfunc", "before", "process"]
 latexsettings.ln_notation = True
 latexsettings.inv_trig_style = full
 
+tplpage =@ template2.html
+
 mathimport ==
 from sympy import E, I, pi, oo
 from sympy import sqrt, Abs, sin, cos, tan, exp, ln
