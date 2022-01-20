@@ -6,3 +6,5 @@ extends = /model/basic/checkbox.pl
 @ /utils/sympy/latex2sympy.py
 @ /utils/sympy/sympy2latex.py
 @ /utils/sympy/randsympy.py
+@ /utils/components/mathinput/mathinput.py
+@ /utils/components/mathinput/mathinput.html
