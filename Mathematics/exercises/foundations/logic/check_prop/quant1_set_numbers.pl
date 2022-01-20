@@ -58,11 +58,11 @@ for q in [randint(0, 1), randint(2, 3), randint(4, 5), randint(6, 7)]:
         indsol.append(k)
     k +=1
 
-#A = FiniteSet(*A)
+A = FiniteSet(*A)
 ==
 
 question ==
 On considère l'ensemble 
-$$ {{ A }}. $$
+$$ {{ A|latex }}. $$
 Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
 ==
