@@ -11,8 +11,6 @@ extends = /model/basic/checkbox.pl
 
 before_scripts % ["mathimport", "importfunc", "before", "process"]
 
-text =
-form = 
 latexsettings.ln_notation = True
 latexsettings.inv_trig_style = full
 
