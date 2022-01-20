@@ -1,3 +1,4 @@
+extends = /model/basic/basic.pl
 extends = /model/math/expr.pl
 
 @ /utils/components/scoring.py
