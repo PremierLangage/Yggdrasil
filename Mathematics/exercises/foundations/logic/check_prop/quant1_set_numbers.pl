@@ -3,7 +3,7 @@
 # d'un ensemble fini de nombres (parité, inégalité)
 # proposition logique, quantificateur
 
-extends = /model/basic/checkbox.pl
+extends = /model/math/checkbox.pl
 
 title = Déterminer si une proposition est vraie
 
