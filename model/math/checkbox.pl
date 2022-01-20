@@ -10,6 +10,7 @@ extends = /model/basic/checkbox.pl
 @ /utils/components/mathinput/mathinput.html
 
 before_scripts % ["mathimport", "importfunc", "before", "process"]
+
 text =
 form = 
 latexsettings.ln_notation = True
