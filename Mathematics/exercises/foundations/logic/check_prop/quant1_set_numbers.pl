@@ -1,6 +1,7 @@
-# AAV : Déterminer si une proposition logique est vraie.
-# tags : proposition logique, quantificateur
-# random : yes
+# Déterminer si une proposition logique est vraie.
+# Propositions avec un seul quantificateur, portant sur les éléments 
+# d'un ensemble fini de nombres (parité, inégalité)
+# proposition logique, quantificateur
 
 extends = /model/basic/checkbox.pl
 
