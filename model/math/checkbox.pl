@@ -1,5 +1,5 @@
-extends = /model/basic/basic.pl
-extends = /model/math/expr.pl
+extends = /model/math/math.pl
+extends = /model/basic/temp.pl
 
 @ /utils/components/scoring.py
 @ /utils/components/checkbox.py [checkbox.py]
