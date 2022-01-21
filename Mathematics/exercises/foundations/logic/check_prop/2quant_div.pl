@@ -15,16 +15,16 @@ k = 0
 for q in range(3):
     if q == 0:
         items.append(r"\exists b \in B,\ \forall a \in A, a|b")
-        valprop = any(all([b % a == 0 for a in A]) for b in B):
+        valprop = any(all([b % a == 0 for a in A]) for b in B)
     elif q == 1:
         items.append(r"\exists b \in B,\ \forall a \in A, b|a")
-        valprop = any(all([a % b == 0 for a in A]) for b in B):
+        valprop = any(all([a % b == 0 for a in A]) for b in B)
     elif q == 2:
         items.append(r"\forall b \in B,\ \exists a \in A, a|b")
-        valprop = all(any([b % a == 0 for a in A]) for b in B):
+        valprop = all(any([b % a == 0 for a in A]) for b in B)
     elif q == 3:
         items.append(r"\forall b \in B,\ \exists a \in A, b|a")
-        valprop = all(any([a % b == 0 for a in A]) for b in B):
+        valprop = all(any([a % b == 0 for a in A]) for b in B)
     if valprop:
         indsol.append(k)
     k += 1
