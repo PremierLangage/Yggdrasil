@@ -9,8 +9,8 @@ title = Déterminer si une proposition est vraie
 
 before ==
 items, indsol = [], []
-A = sample([2, 3, 4, 5, 6, 10, 12, 15, 20, 24, 30], randint(2, 4))
-B = sample([2, 3, 4, 5, 6, 10, 12, 15, 20, 24, 30], randint(2, 4))
+A = sample([6, 10, 12, 15, 20, 24, 30], randint(2, 4))
+B = sample([2, 3, 4, 5, 6, 10, 12, 15], randint(2, 4))
 k = 0
 for q in range(4):
     if q == 0:
