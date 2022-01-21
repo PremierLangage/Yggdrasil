@@ -41,3 +41,18 @@ On considère l'application
 Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
 ==
 
+style.table ==
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table {
+    margin: auto;
+}
+th, td {
+  padding: 0.5em;
+  text-align:center;
+}
+</style>
+==
