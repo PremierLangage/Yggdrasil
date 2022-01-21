@@ -4,4 +4,4 @@ AAV : Déterminer si une proposition logique élémentaire est vraie.
 
 TODO :
 * Proposition avec un seul quantificateur, portant sur les images d'une application finie.
-* Proposition avec un seul quantificateur, portant sur les images d'une application finie.
+* Proposition avec un seul quantificateur, portant sur des intersections, réunions, différences d'ensembles.
