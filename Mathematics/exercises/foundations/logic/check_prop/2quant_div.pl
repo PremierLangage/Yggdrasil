@@ -12,8 +12,8 @@ import numpy as np
 res = 4*[0]
 res2 = 5*[0]
 for i in range(1000):
-    A = sample([2, 3, 4, 5, 6, 10, 12, 15, 20, 24], randint(2, 4))
-    B = sample([2, 3, 4, 5, 6, 10, 12, 15, 20, 24], randint(2, 4))
+    A = sample([2, 3, 4, 5, 6, 10, 12, 15, 20, 24, 30], randint(2, 4))
+    B = sample([2, 3, 4, 5, 6, 10, 12, 15, 20, 24, 30], randint(2, 4))
     k = 0
     if any(all([b % a == 0 for a in A]) for b in B):
         k = k + 1
