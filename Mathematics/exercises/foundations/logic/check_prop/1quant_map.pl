@@ -23,7 +23,7 @@ items =['', '']
 ==
 
 question ==
-On considère l'application
+On considère l'application $f$ définie par la table ci-dessous.
 <table>
 <tr>
 <th> $! x !$ </th>
@@ -38,6 +38,7 @@ On considère l'application
 {% endfor %}
 </tr>
 </table>
+
 Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
 ==
 
