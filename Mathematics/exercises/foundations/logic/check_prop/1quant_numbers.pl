@@ -8,10 +8,10 @@ extends = /model/math/checkbox.pl
 title = Déterminer si une proposition est vraie
 
 before ==
-n = 40
-numbers = set(range(5, 36))
-even = set(range(6, 36, 2))
-odd = numbers.difference(even)
+n, m = 40, 5
+numbers = set(range(m, n - m + 1))
+even = set(range(0, m + 1, 2)).intersection(numbers)
+odd = set(range(1, m + 1, 2)).intersection(numbers)
 case = randint(1, 4)
 
 k = randint(3, 4)
