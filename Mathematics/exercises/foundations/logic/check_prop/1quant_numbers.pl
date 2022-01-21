@@ -1,4 +1,4 @@
-# Déterminer si une proposition logique est vraie.
+# Déterminer si une proposition logique élémentaire est vraie.
 # Proposition avec un seul quantificateur, portant sur les éléments 
 # d'un ensemble fini de nombres (parité, inégalité)
 # proposition logique, quantificateur
