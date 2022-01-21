@@ -8,9 +8,7 @@ extends = /model/math/checkbox.pl
 title = Déterminer si une proposition est vraie
 
 before ==
-import numpy as np
-res = 8*[0]
-res2 = 9*[0]
+k = 0
 for i in range(1):
     items, indsol = [], []
     A = sample([2, 3, 4, 5, 6, 10, 12, 15, 20, 24, 30], randint(2, 4))
@@ -27,7 +25,9 @@ for i in range(1):
     elif q == 3:
         items.append(r"\forall b \in B,\ \exists a \in A, b|a")
         valprop = all(any([a % b == 0 for a in A]) for b in B):
-
+    if valprop:
+        indsol.append(k)
+    k += 1
 
 ==
 
