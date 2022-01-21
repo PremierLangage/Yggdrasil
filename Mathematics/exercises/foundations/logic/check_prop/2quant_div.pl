@@ -13,13 +13,13 @@ res = 4*[0]
 for i in range(1000):
     A = sample([2, 3, 4, 5, 6, 10, 12, 15, 20, 24, 30], randint(2, 4))
     B = sample([2, 3, 4, 5, 6, 10, 12, 15, 20, 24, 30], randint(2, 4))
-    if any(all([a for a in A if b % a == 0]) for b in B):
+    if any(all([b % a == 0 for a in A]) for b in B):
         res[0] += 1
-    if any(all([a for a in A if a % b == 0]) for b in B):
+    if any(all([a % b == 0 for a in A]) for b in B):
         res[1] += 1
-    if all(any([a for a in A if b % a == 0]) for b in B):
+    if all(any([b % a == 0 for a in A]) for b in B):
         res[2] += 1
-    if all(any([a for a in A if a % b == 0]) for b in B):
+    if all(any([a % b == 0 for a in A]) for b in B):
         res[3] += 1
 items, indsol = [], []
 
