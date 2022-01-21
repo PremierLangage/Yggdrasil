@@ -38,7 +38,7 @@ On considère l'application $f$ définie par la table ci-dessous.
 {% endfor %}
 </tr>
 </table>
-
+</br>
 Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
 ==
 
