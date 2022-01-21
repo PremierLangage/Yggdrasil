@@ -20,7 +20,7 @@ nf = len(f)
 inveven = [x for x in range(nf) if f[x]%2 == 0]
 invodd = [x for x in range(nf) if f[x]%2 == 1]
 
-k = 2
+k = 3
 if case == 1:
     A = sample(inveven, k)
 elif case == 2:
