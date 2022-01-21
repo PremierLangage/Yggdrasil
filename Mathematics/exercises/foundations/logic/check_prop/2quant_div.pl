@@ -22,9 +22,9 @@ for i in range(1000):
     if any(all([a for a in A if a % b == 0]) for b in B):
         res[1] += 1
     if all(any([a for a in A if b % a == 0]) for b in B):
-        res[0] += 1
+        res[2] += 1
     if all(any([a for a in A if a % b == 0]) for b in B):
-        res[1] += 1
+        res[3] += 1
 items, indsol = [], []
 
 ==
