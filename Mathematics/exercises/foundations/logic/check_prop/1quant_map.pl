@@ -13,7 +13,7 @@ numbers = set(range(m, n - m + 1))
 even = set(range(0, n + 1, 2)).intersection(numbers)
 odd = set(range(1, n + 1, 2)).intersection(numbers)
 case = randint(1, 4)
-
+x = 0
 f = choices(list(even), k=randint(3, 4)) + choices(list(odd), k=randint(3, 4))
 nf = len(f)
 
