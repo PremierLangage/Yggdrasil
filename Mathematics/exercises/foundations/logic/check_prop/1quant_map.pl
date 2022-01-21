@@ -23,7 +23,7 @@ items =['', '']
 ==
 
 question ==
-On considère l'application $f$ définie par la table ci-dessous.
+On considère l'application $! f !$ définie par la table ci-dessous. </br>
 <table>
 <tr>
 <th> $! x !$ </th>
