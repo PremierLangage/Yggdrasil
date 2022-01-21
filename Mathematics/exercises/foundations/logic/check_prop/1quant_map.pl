@@ -65,9 +65,6 @@ for q in [randint(0, 1), randint(2, 3), randint(4, 5), randint(6, 7)]:
         indsol.append(k)
     k += 1
 
-indsol=[]
-items =['', '']
-
 ==
 
 question ==
