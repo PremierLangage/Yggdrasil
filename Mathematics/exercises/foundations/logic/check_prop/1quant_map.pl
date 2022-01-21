@@ -15,7 +15,6 @@ odd = set(range(1, n + 1, 2)).intersection(numbers)
 case = randint(1, 4)
 
 f = choices(even, k=randint(3, 4)) + choices(odd, k=randint(3, 4))
-shuffle(f)
 
 k = randint(3, 4)
 if case == 1:
