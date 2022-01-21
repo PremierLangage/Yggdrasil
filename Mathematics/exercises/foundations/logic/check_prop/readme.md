@@ -5,3 +5,6 @@ AAV : Déterminer si une proposition logique élémentaire est vraie.
 TODO :
 * Proposition avec un seul quantificateur, portant sur les images d'une application finie.
 * Proposition avec un seul quantificateur, portant sur des intersections, réunions, différences d'ensembles.
+
+BUG :
+* Il semble qu'un filtre markdown soit appliqué dans le composant checkbox. D'où le problème habituel avec les accolades du LaTeX.
