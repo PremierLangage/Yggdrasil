@@ -30,16 +30,16 @@ for i in range(1000):
 
     if any(all([b % a == 0 for a in B]) for b in A):
         k = k + 1
-        res[0] += 1
+        res[4] += 1
     if any(all([a % b == 0 for a in B]) for b in A):
         k = k + 1
-        res[1] += 1
+        res[5] += 1
     if all(any([b % a == 0 for a in B]) for b in A):
         k = k + 1
-        res[2] += 1
+        res[6] += 1
     if all(any([a % b == 0 for a in B]) for b in A):
         k = k + 1
-        res[3] += 1
+        res[7] += 1
     res2[k]+=1
 items, indsol = [], []
 
