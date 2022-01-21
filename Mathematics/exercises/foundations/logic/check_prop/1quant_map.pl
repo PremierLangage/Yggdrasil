@@ -67,7 +67,7 @@ A = FiniteSet(*A)
 
 question ==
 On considère l'ensemble 
-{{f }}
+{{ f }}
 $$ {{ A|latex }}. $$
 Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
 ==
