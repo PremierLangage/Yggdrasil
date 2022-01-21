@@ -12,9 +12,10 @@ n, m = 40, 5
 numbers = set(range(m, n - m + 1))
 even = set(range(0, n + 1, 2)).intersection(numbers)
 odd = set(range(1, n + 1, 2)).intersection(numbers)
-case = randint(1, 4)
-x = 0
-f = choices(list(even), k=randint(3, 4)) + choices(list(odd), k=randint(3, 4))
+
+neven = randint(3, 4)
+nodd = randint(3, 4)
+f = choices(list(even), k=neven) + choices(list(odd), k=nodd)
 nf = len(f)
 
 inveven = [x for x in range(nf) if f[x]%2 == 0]
@@ -26,13 +27,14 @@ items, indsol = [], []
 k = 0
 for q in [randint(0, 1), randint(2, 3), randint(4, 5), randint(6, 7)]:
 
-    k = 3
+    keven = 
+    case = randint(1, 4)
     if case == 1:
-        A = sample(inveven, k)
+        A = sample(inveven, randint(3, neven))
     elif case == 2:
-        A = sample(invodd, k)
+        A = sample(invodd, randint(3, nodd))
     else:
-        A = sample(range(nf), k)
+        A = sample(range(nf), randint(3, 4))
     minA, maxA = min([f[x] for x in A]), max([f[x] for x in A])
     latexA = r"\\{ " + latex(FiniteSet(*A)) + r" \\}"
 
