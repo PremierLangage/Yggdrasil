@@ -17,8 +17,8 @@ case = randint(1, 4)
 f = choices(list(even), k=randint(3, 4)) + choices(list(odd), k=randint(3, 4))
 nf = len(f)
 
-inveven = [x if f[x]%2 == 0 for x in range(nf)]
-invodd = [x if f[x]%2 == 1 for x in range(nf)]
+inveven = [x for x in range(nf) if f[x]%2 == 0]
+invodd = [x for x in range(nf) if f[x]%2 == 1]
 
 k = randint(3, 4)
 if case == 1:
