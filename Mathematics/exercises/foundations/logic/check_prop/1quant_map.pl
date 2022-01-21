@@ -20,19 +20,22 @@ nf = len(f)
 inveven = [x for x in range(nf) if f[x]%2 == 0]
 invodd = [x for x in range(nf) if f[x]%2 == 1]
 
-k = 3
-if case == 1:
-    A = sample(inveven, k)
-elif case == 2:
-    A = sample(invodd, k)
-else:
-    A = sample(range(nf), k)
 
-minA, maxA = min([f[x] for x in A]), max([f[x] for x in A])
 items, indsol = [], []
-latexA = r"\\{ " + latex(FiniteSet(*A)) + r" \\}"
+
 k = 0
 for q in [randint(0, 1), randint(2, 3), randint(4, 5), randint(6, 7)]:
+
+    k = 3
+    if case == 1:
+        A = sample(inveven, k)
+    elif case == 2:
+        A = sample(invodd, k)
+    else:
+        A = sample(range(nf), k)
+    minA, maxA = min([f[x] for x in A]), max([f[x] for x in A])
+    latexA = r"\\{ " + latex(FiniteSet(*A)) + r" \\}"
+
     if q == 0:
         items.append(r"$! \exists x \in %s ,\ f(x) \textrm{ est pair} !$" % latexA)
         valprop = any([f[x]%2 == 0 for x in A])
@@ -47,19 +50,19 @@ for q in [randint(0, 1), randint(2, 3), randint(4, 5), randint(6, 7)]:
         valprop = all([f[x]%2 != 0 for x in A])
     elif q == 4:
         d = choice([randint(minA, maxA), randint(maxA, n)])
-        items.append(r"$! \exists x \in %s,\ x \ge {d} !$" % latexA)
+        items.append(r"$! \exists x \in %s,\ x \ge %s !$" % (latexA, d))
         valprop = any([f[x] >= d for x in A])
     elif q == 5:
         d = choice([randint(1, minA), randint(minA, maxA)])
-        items.append(r"$! \exists x \in %s,\ x \le {d} !$" % latexA)
+        items.append(r"$! \exists x \in %s,\ x \le %s !$" % (latexA, d))
         valprop = any([f[x] <= d for x in A])
     elif q == 6:
         d = choice([randint(1, minA), randint(minA, maxA)])
-        items.append(r"$! \forall x \in %s,\ x \ge {d} !$" % latexA)
+        items.append(r"$! \forall x \in %s,\ x \ge %s !$" % (latexA, d))
         valprop = all([f[x] >= d for x in A])
     elif q == 7:
         d = choice([randint(minA, maxA), randint(maxA, n)])
-        items.append(r"$! \forall x \in %s,\ x \le {d} !$" % latexA)
+        items.append(r"$! \forall x \in %s,\ x \le %s !$" % (latexA, d))
         valprop = all([f[x] <= d for x in A])
     if valprop:
         indsol.append(k)
