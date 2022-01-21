@@ -16,7 +16,7 @@ case = randint(1, 4)
 
 k = randint(3, 4)
 if case == 1:
-    A = sample(odd, k)
+    A = sample(even, k)
 elif case == 2:
     A = sample(odd, k)
 else:
