@@ -34,8 +34,7 @@ for q in range(3):
 question ==
 {{ A }} {{B }}
 On considère l'ensemble 
-{{ res }}
-{{ res2 }}
+
 Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
 ==
 
