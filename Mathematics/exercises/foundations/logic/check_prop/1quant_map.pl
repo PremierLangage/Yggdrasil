@@ -15,7 +15,10 @@ odd = set(range(1, n + 1, 2)).intersection(numbers)
 case = randint(1, 4)
 
 f = choices(list(even), k=randint(3, 4)) + choices(list(odd), k=randint(3, 4))
-n = len(f)
+nf = len(f)
+
+inveven = [x if f[x] % 2 == 0 for x in range(nf)]
+invodd = [x if f[x] % 2 == 1 for x in range(nf)]
 
 indsol=[]
 items =['', '']
@@ -28,7 +31,7 @@ On considère l'application $! f !$ définie par la table ci-dessous. </br>
 <table>
 <tr>
 <th> $! x !$ </th>
-{% for x in range(n) %}
+{% for x in range(nf) %}
 <td> {{ x }} </td>
 {% endfor %}
 </tr>
