@@ -11,8 +11,8 @@ before ==
 import numpy as np
 res = 4*[0]
 for i in range(1000):
-    A = sample([2, 3, 4, 5, 6, 10, 12, 15, 20, 24, 30], randint(2, 4))
-    B = sample([2, 3, 4, 5, 6, 10, 12, 15, 20, 24, 30], randint(2, 4))
+    A = sample([2, 3, 4, 5, 6, 10, 12, 15, 20, 24, 30], randint(2, 3))
+    B = sample([2, 3, 4, 5, 6, 10, 12, 15, 20, 24, 30], randint(2, 3))
     if any(all([b % a == 0 for a in A]) for b in B):
         res[0] += 1
     if any(all([a % b == 0 for a in A]) for b in B):
