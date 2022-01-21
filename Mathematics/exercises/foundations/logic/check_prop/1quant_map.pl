@@ -30,7 +30,7 @@ else:
 
 minA, maxA = min([f[x] for x in A]), max([f[x] for x in A])
 items, indsol = [], []
-latexA = latex(FiniteSet(*A))
+latexA = r"\\{ " + latex(FiniteSet(*A)) + r" \\}"
 k = 0
 for q in [randint(0, 1), randint(2, 3), randint(4, 5), randint(6, 7)]:
     if q == 0:
