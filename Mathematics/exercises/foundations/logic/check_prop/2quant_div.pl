@@ -17,13 +17,13 @@ for i in range(1000):
     gcdB = np.gcd.reduce(B)
     lcmA = np.lcm.reduce(A)
     lcmB = np.lcm.reduce(B)
-    if any(all([a for a in A if b % a == 0]) for b in B)):
+    if any(all([a for a in A if b % a == 0]) for b in B):
         res[0] += 1
-    if any(all([a for a in A if a % b == 0]) for b in B)):
+    if any(all([a for a in A if a % b == 0]) for b in B):
         res[1] += 1
-    if all(any([a for a in A if b % a == 0]) for b in B)):
+    if all(any([a for a in A if b % a == 0]) for b in B):
         res[0] += 1
-    if all(any([a for a in A if a % b == 0]) for b in B)):
+    if all(any([a for a in A if a % b == 0]) for b in B):
         res[1] += 1
 items, indsol = [], []
 
@@ -31,7 +31,7 @@ items, indsol = [], []
 
 question ==
 On considère l'ensemble 
-$$ {{ res }}. $$
+{{ res }}
 Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
 ==
 
