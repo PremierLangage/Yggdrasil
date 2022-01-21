@@ -17,6 +17,9 @@ case = randint(1, 4)
 f = choices(list(even), k=randint(3, 4)) + choices(list(odd), k=randint(3, 4))
 n = len(f)
 
+indsol=[]
+items =['', '']
+
 ==
 
 question ==
