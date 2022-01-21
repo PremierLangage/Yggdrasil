@@ -34,16 +34,16 @@ latexA = latex(FiniteSet(*A))
 k = 0
 for q in [randint(0, 1), randint(2, 3), randint(4, 5), randint(6, 7)]:
     if q == 0:
-        items.append(r"$! \exists x \in %s ,\ f(x) \textrm{ est pair} !$" % latexA)
+        items.append("$! \exists x \in %s ,\ f(x) \textrm{ est pair} !$" % latexA)
         valprop = any([f[x]%2 == 0 for x in A])
     elif q == 1:
-        items.append(r"$! \exists x \in %s,\ x \textrm{ est impair} !$" % latexA)
+        items.append("$! \exists x \in %s,\ x \textrm{ est impair} !$" % latexA)
         valprop = any([f[x]%2 != 0 for x in A])
     elif q == 2:
-        items.append(r"$! \forall x \in %s,\ x \textrm{ est pair} !$" % latexA)
+        items.append("$! \forall x \in %s,\ x \textrm{ est pair} !$" % latexA)
         valprop = all([f[x]%2 == 0 for f[x] in A])
     elif q == 3:
-        items.append(r"$! \forall x \in %s,\ x \textrm{ est impair} !$" % latexA)
+        items.append("$! \forall x \in %s,\ x \textrm{ est impair} !$" % latexA)
         valprop = all([f[x]%2 != 0 for x in A])
     elif q == 4:
         d = choice([randint(minA, maxA), randint(maxA, n)])
