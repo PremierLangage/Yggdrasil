@@ -31,39 +31,7 @@ else:
 minA, maxA = min([f[x] for x in A]), max([f[x] for x in A])
 items, indsol = [], []
 
-k = 0
-for q in [randint(0, 1), randint(2, 3), randint(4, 5), randint(6, 7)]:
-    if q == 0:
-        items.append(rf"$! \exists x \in {A},\ f(x) \textrm{{ est pair}} !$")
-        valprop = any([f[x]%2 == 0 for x in A])
-    elif q == 1:
-        items.append(r"$! \exists x \in {A},\ x \textrm{{ est impair}} !$")
-        valprop = any([f[x]%2 != 0 for x in A])
-    elif q == 2:
-        items.append(r"$! \forall x \in {A},\ x \textrm{{ est pair}} !$")
-        valprop = all([f[x]%2 == 0 for f[x] in A])
-    elif q == 3:
-        items.append(r"$! \forall x \in {A},\ x \textrm{{ est impair}} !$")
-        valprop = all([f[x]%2 != 0 for x in A])
-    elif q == 4:
-        d = choice([randint(minA, maxA), randint(maxA, n)])
-        items.append(rf"$! \exists x \in {A},\ x \ge {d} !$")
-        valprop = any([f[x] >= d for x in A])
-    elif q == 5:
-        d = choice([randint(1, minA), randint(minA, maxA)])
-        items.append(rf"$! \exists x \in {A},\ x \le {d} !$")
-        valprop = any([f[x] <= d for x in A])
-    elif q == 6:
-        d = choice([randint(1, minA), randint(minA, maxA)])
-        items.append(rf"$! \forall x \in {A},\ x \ge {d} !$")
-        valprop = all([f[x] >= d for x in A])
-    elif q == 7:
-        d = choice([randint(minA, maxA), randint(maxA, n)])
-        items.append(rf"$! \forall x \in {A},\ x \le {d} !$")
-        valprop = all([f[x] <= d for x in A])
-    if valprop:
-        indsol.append(k)
-    k += 1
+
 
 ==
 
