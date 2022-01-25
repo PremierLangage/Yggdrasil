@@ -66,7 +66,7 @@ match.nodes.append({"id": "t3", "content": "noms de fichiers contenant exactemen
 expected.append({ "source": "s3", "target": "t3" })
 
 match.nodes.append({"id": "srep1", "content": "`*/*`", "source": True,})
-match.nodes.append({"id": "trep1", "content": "noms des fichiers situés un sous répertoire", "target": True,})
+match.nodes.append({"id": "trep1", "content": "noms des fichiers situés dans un sous répertoire", "target": True,})
 expected.append({ "source": "srep1", "target": "trep1" })
 
 
