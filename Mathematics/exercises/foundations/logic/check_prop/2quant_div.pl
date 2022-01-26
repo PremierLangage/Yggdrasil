@@ -10,7 +10,7 @@ title = Déterminer si une proposition est vraie
 test ==
 from random import sample, randint
 val1 = [x for x in range(2, 100) if x%2==0 or x%3==0]
-val2 = [6, 8, 12, 16, 18, 20, 24, 28, 30]
+val2 = [6, 8, 10, 12, 16, 18, 20, 24, 30]
 
 lst = sample(val2, k=randint(3, 4))
 
