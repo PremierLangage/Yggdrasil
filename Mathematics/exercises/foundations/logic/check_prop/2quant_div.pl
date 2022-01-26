@@ -7,6 +7,22 @@ extends = /model/math/checkbox.pl
 
 title = Déterminer si une proposition est vraie
 
+test ==
+from random import sample, randint
+val1 = [x for x in range(2, 100) if x%2==0 or x%3==0]
+val2 = [6, 8, 12, 16, 18, 20, 24, 28, 30]
+
+lst = sample(val2, k=randint(3, 4))
+
+mulany = [x for x in val1 if any([x%y==0 for y in lst])]
+
+mulall = [x for x in val1 if all([x%y==0 for y in lst])]
+
+divany = [x for x in val1 if any([y%x==0 for y in lst])]
+
+divall = [x for x in val1 if all([y%x==0 for y in lst])]
+==
+
 before ==
 items, indsol = [], []
 A = sample([6, 10, 12, 15, 20, 24, 30], randint(2, 4))
