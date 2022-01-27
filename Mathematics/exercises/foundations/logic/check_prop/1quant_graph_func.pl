@@ -9,11 +9,12 @@ a = choice([-1, 1]) * choice([Rational(1, 2), 1, Rational(3, 2), 2])
 b = randint(-3, 3)
 f = (x-2)**2 + 1
 sol =  0
-n = 5
+n = 3
 plt.clf()
 plt.xlim(-n, n)
 plt.grid(True)
 plt.xticks(range(-n, n+1))
+plt.yticks(range(-n, n+1))
 easyplot(plt.gcf(), f, -n, n)
 image = fig2svg(plt.gcf())
 ==
