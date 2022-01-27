@@ -47,6 +47,6 @@ sol=FiniteSet(*lstA)
 sol_tex=latex(sol)
 ==
 
-text == 
+question == 
 Ecrire en extension l'ensemble $!\\left \\{ n \in {{S_tex}} \:|\: {{cond_tex}} \\right \\}!$.
 ==
