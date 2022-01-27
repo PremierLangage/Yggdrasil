@@ -6,6 +6,7 @@ from plmpl import fig2svg, easyplot
 import matplotlib.pyplot as plt
 
 import numpy as np
+from scipy import interpolate
 
 x = [0, 1, 9]
 y = [-1, 3, 4]
