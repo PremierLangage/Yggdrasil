@@ -14,7 +14,6 @@ f = interpolate.PchipInterpolator(x, y)
 
 xnew = np.arange(0,9,0.1)
 import matplotlib.pyplot as plt
-plt.plot(x,y,'',xnew,f(xnew),'-')
 
 var('x')
 a = choice([-1, 1]) * choice([Rational(1, 2), 1, Rational(3, 2), 2])
@@ -27,6 +26,7 @@ plt.xlim(-n, n)
 plt.grid(True)
 plt.xticks(range(-n, n+1))
 plt.yticks(range(-10, 10, 2))
+plt.plot(x,y,'',xnew,f(xnew),'-')
 image = fig2svg(plt.gcf())
 ==
 
