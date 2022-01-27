@@ -43,8 +43,7 @@ while (setlength>8 or setlength<1):
     setlength=len(lstA)
 
 
-sol=FiniteSet(*lstA)
-sol_tex=latex(sol)
+sol = FiniteSet(*lstA)
 ==
 
 question == 
