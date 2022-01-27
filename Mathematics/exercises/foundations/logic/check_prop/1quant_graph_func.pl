@@ -14,7 +14,7 @@ plt.clf()
 plt.xlim(-n, n)
 plt.grid(True)
 plt.xticks(range(-n, n+1))
-plt.yticks(range(-n, n+1))
+plt.yticks(range(-10, 10, 2))
 easyplot(plt.gcf(), f, -n, n)
 image = fig2svg(plt.gcf())
 ==
