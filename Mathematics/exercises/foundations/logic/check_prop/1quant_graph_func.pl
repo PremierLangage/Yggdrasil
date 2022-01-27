@@ -1,7 +1,6 @@
 extends = /model/math/expr.pl
 
 before ==
-import scipy
 from plmpl import fig2svg, easyplot
 import matplotlib.pyplot as plt
 
@@ -14,7 +13,7 @@ f = interpolate.PchipInterpolator(x, y)
 
 xnew = np.arange(0,9,0.1)
 
-plt.plot(x,y,'',xnew,f(xnew),'-')
+plt.plot(xnew,f(xnew))
 image = fig2svg(plt.gcf())
 ==
 
