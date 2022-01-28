@@ -23,7 +23,7 @@ pts = choice([[(-4, 0), (-2, -3), (1, -1), (4, 2)], [(-5, 4), (-1, -1), (2, 0), 
 f = interpolate(pts, x)
 
 def minmax(f, a, b):
-    lst = [f(xi).evalf() for xi in np.arange(a, b, 0.05)]
+    lst = [f.eval(xi) for xi in np.arange(a, b, 0.05)]
     return min(lst), max(lst)
 
 max1, min1 = 0, 0
