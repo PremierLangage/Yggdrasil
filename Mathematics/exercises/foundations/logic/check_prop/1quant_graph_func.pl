@@ -65,15 +65,15 @@ for q in [0, 1, 3]:
         items.append(rf"$! \exists x \in \[{a1}, {b1}\],\ f(x) = {c1} !$")
     elif q == 1:
         if valprop:
-            c2 = randint(-5, floor(max1-0.1))
+            c2 = randint(ceil(min1+0.1), floor(max1-0.1))
         else:
             c2 = ceil(max1+0.1)
         items.append(rf"$! \exists x \in \[{a2}, {b2}\],\ f(x) \ge {c2} !$")
     elif q == 3:
         if valprop:
-            c2 = randint(-5, floor(min1-0.1))
+            c2 = floor(min-0.1)
         else:
-            c2 = randint(ceil(min1+0.1), 5) 
+            c2 = randint(ceil(min1+0.1), floor(max1-0.1))
         items.append(rf"$! \forall x \in \[{a2}, {b2}\],\ f(x) \ge {c2} !$")
     if valprop:
         indsol.append(k)
