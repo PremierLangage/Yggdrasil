@@ -22,21 +22,23 @@ var('x')
 pts = choice([[(-4, 0), (-2, -3), (1, -1), (4, 2)], [(-5, 4), (-1, -1), (2, 0), (4, 1)], [(-5, 1), (-2, 2), (2, 2), (5, -1)], [(-5, -4), (-1, -3), (2, -1), (5, 0)], [(-5, -1), (-1, 1), (1, 2), (4, 4)], [(-4, -4), (-1, -1), (1, 3), (5, -4)], [(-5, -2), (-2, 0), (2, 0), (4, 2)], [(-5, 3), (-1, -2), (2, 1), (5, 0)], [(-4, -2), (-2, -1), (2, 0), (5, 0)], [(-4, 3), (-2, 0), (2, -4), (5, 2)]])
 f = interpolate(pts, x)
 
+def minmax(f, a, b):
+    lst = [f(xi) for xi in np.arange(a, b, 0.05)]
+    return min(lst), max(lst)
+
 max1, min1 = 0, 0
 while max1-min1 < 2.3:
     len1 = randint(4, 6)
     a1 = randint(-5, 5-len1)
     b1 = a1 + len1
-    min1 = minimum(f, x, Interval(a1, b1)).evalf()
-    max1 = maximum(f, x, Interval(a1, b1)).evalf()
+    min1, max1 = minmax(f, a1, b1)
 
 max2, min2 = 0, 0
 while max2-min2 < 2.3:
     len2 = randint(4, 6)
     a2 = randint(-5, 5-len2)
     b2 = a2 + len2
-    min2 = minimum(f, x, Interval(a2, b2)).evalf()
-    max2 = maximum(f, x, Interval(a2, b2)).evalf()
+    min2, max2 = minmax(f, a2, b2)
 
 
 sol = 0
