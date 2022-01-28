@@ -55,7 +55,7 @@ image = fig2svg(plt.gcf())
 items = []
 indsol = []
 k = 0
-for q in [0, 1]:
+for q in [0, 1, 3]:
     valprop = choice([True, False])
     if q == 0:
         if valprop:
