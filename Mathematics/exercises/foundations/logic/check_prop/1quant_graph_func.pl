@@ -22,7 +22,6 @@ while True:
         break
 
 
-
 n = 5
 plt.clf()
 plt.xlim(-n, n)
