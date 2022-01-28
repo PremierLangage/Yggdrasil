@@ -8,7 +8,8 @@ from sympy.polys.specialpolys import interpolating_poly
 
 x = [0, 1, 9]
 y = [-1, 3, 4]
-f= interpolating_poly(x,y)
+f = interpolating_poly(x,y)
+sol = 0
 n = 5
 plt.clf()
 plt.xlim(-n, n)
