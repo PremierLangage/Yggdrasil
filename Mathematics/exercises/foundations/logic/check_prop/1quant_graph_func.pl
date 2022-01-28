@@ -10,7 +10,10 @@ b = randint(-3, 3)
 sol = a*x + b
 
 from sympy.polys.polyfuncs import interpolate
+from sympy.calculus.util import minimum, maximum
 f = interpolate([(-5, 2), (-2, 4), (2, -1), (5, 4)], x)
+minf = minimum(f, x, Interval(-5,5))
+maxf = maximum(f, x, Interval(-5,5))
 
 n = 5
 plt.clf()
