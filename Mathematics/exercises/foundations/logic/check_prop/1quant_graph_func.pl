@@ -48,9 +48,14 @@ items = []
 indsol = []
 k = 0
 for q in [0]:
+    valprop = choice([True, False])
     if q == 0:
+        if valprop:
+            c1 = randint(ceil(min1), floor(max1))
+        else:
+            c1 = choice(range(-5, ceil(min1)) + range(floor(max1)+1, 6)) 
         items.append(rf"$! \exists x \in \[{a1}, {b1},\ f(x) = {c1} !$")
-        valprop = any([x%2 == 0 for x in A])
+                valprop = any([x%2 == 0 for x in A])
     elif q == 1:
         items.append(r"$! \exists x \in A,\ x \textrm{ est impair} !$")
         valprop = any([x%2 != 0 for x in A])
