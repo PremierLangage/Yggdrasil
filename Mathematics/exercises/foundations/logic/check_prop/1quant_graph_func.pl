@@ -48,17 +48,20 @@ image = fig2svg(plt.gcf())
 items = []
 indsol = []
 k = 0
-for q in [0]:
+for q in [0, 1]:
     valprop = choice([True, False])
     if q == 0:
         if valprop:
             c1 = randint(ceil(min1), floor(max1))
         else:
             c1 = choice(list(range(-5, ceil(min1))) + list(range(floor(max1)+1, 6))) 
-        items.append(rf"$! \exists x \in \[{a1}, {b1},\ f(x) = {c1} !$")
+        items.append(rf"$! \exists x \in \[{a1}, {b1}\],\ f(x) = {c1} !$")
     elif q == 1:
-        items.append(r"$! \exists x \in A,\ x \textrm{ est impair} !$")
-        valprop = any([x%2 != 0 for x in A])
+        if valprop:
+            c2 = randint(-5, floor(max1))
+        else:
+            c2 = randint(floor(max1)+1, 5) 
+        items.append(rf"$! \exists x \in \[{a2}, {b2}\],\ f(x) \ge {c2} !$")
     elif q == 2:
         items.append(r"$! \forall x \in A,\ x \textrm{ est pair} !$")
         valprop = all([x%2 == 0 for x in A])
