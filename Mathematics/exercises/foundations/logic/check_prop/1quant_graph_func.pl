@@ -23,7 +23,7 @@ pts = choice([[(-4, 0), (-2, -3), (1, -1), (4, 2)], [(-5, 4), (-1, -1), (2, 0), 
 f = interpolate(pts, x)
 
 while True:
-    len1 = randint(2, 6)
+    len1 = randint(3, 6)
     a1 = randint(-5, 5-len1)
     b1 = a1 + len1
     min1 = minimum(f, x, Interval(a1, b1)).evalf()
@@ -32,7 +32,7 @@ while True:
         break
 
 while True:      
-    len2 = randint(2, 6)
+    len2 = randint(3, 6)
     a2 = randint(-5, 5-len2)
     b2 = a2 + len2
     min2 = minimum(f, x, Interval(a2, b2)).evalf()
