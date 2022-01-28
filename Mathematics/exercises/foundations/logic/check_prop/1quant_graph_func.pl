@@ -9,7 +9,7 @@ from sympy.polys.polyfuncs import interpolate
 from sympy.calculus.util import minimum, maximum
 
 x0, x1, x2, x3 = randint(-5, -4), randint(-2,-1), randint(1,2), randint(4,5)
-y0, y1, y2, y3 = randint(-4, 4), randint(-4, 4), randint(-4, 4), randint(-4, 4
+y0, y1, y2, y3 = randint(-4, 4), randint(-4, 4), randint(-4, 4), randint(-4, 4)
 f = interpolate([(x0, y0), (x1, y1), (x2, y2), (x3, y3)], x)
 minf = minimum(f, x, Interval(-5,5)).evalf()
 maxf = maximum(f, x, Interval(-5,5)).evalf()
