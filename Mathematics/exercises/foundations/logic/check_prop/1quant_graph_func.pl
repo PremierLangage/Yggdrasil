@@ -12,7 +12,7 @@ sol = a*x + b
 from sympy.polys.polyfuncs import interpolate
 x = [-5, 0, 1, 5]
 y = [2, -1, 3, 4]
-f = interpolate(y, x)
+f = interpolate(x, y)
 
 n = 5
 plt.clf()
