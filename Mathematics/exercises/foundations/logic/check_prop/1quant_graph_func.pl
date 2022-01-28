@@ -7,6 +7,7 @@ from sympy.polys.polyfuncs import interpolate
 from sympy.calculus.util import minimum, maximum
 
 var('x')
+
 # lst_pts = []
 # while len(lst_pts) < 10:
 #    x0, x1, x2, x3 = randint(-5, -4), randint(-2,-1), randint(1,2), randint(4,5)
