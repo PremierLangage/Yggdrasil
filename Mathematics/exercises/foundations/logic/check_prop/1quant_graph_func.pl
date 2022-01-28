@@ -23,23 +23,18 @@ while True:
     if minf > -5 and maxf < 5 and maxf-minf > 4:
         break
 
-while True:
-    len1 = randint(2, 6)
-    a1 = randint(-5, 5-len1)
-    b1 = a1 + len1
-    min1 = minimum(f, x, Interval(a1, b1)).evalf()
-    max1 = maximum(f, x, Interval(a1, b1)).evalf()
-    if max1-min1 > 1:
-        break
+len1 = randint(2, 6)
+a1 = randint(-5, 5-len1)
+b1 = a1 + len1
+min1 = minimum(f, x, Interval(a1, b1)).evalf()
+max1 = maximum(f, x, Interval(a1, b1)).evalf()
 
-while True:
-    len2 = randint(2, 6)
-    a2 = randint(-5, 5-len2)
-    b2 = a2 + len2
-    min2 = minimum(f, x, Interval(a2, b2)).evalf()
-    max2 = maximum(f, x, Interval(a2, b2)).evalf()
-    if max2-min2 > 1:
-        break
+len2 = randint(2, 6)
+a2 = randint(-5, 5-len2)
+b2 = a2 + len2
+min2 = minimum(f, x, Interval(a2, b2)).evalf()
+max2 = maximum(f, x, Interval(a2, b2)).evalf()
+
 
 n = 5
 plt.clf()
