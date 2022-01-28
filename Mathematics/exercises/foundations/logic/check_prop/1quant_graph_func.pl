@@ -24,7 +24,7 @@ f = interpolate(pts, x)
 
 max1, min1 = 0, 0
 while max1-min1 < 2.3:
-    len1 = randint(6, 6)
+    len1 = randint(4, 6)
     a1 = randint(-5, 5-len1)
     b1 = a1 + len1
     min1 = minimum(f, x, Interval(a1, b1)).evalf()
@@ -32,7 +32,7 @@ while max1-min1 < 2.3:
 
 max2, min2 = 0, 0
 while max2-min2 < 2.3:
-    len2 = randint(6, 6)
+    len2 = randint(4, 6)
     a2 = randint(-5, 5-len2)
     b2 = a2 + len2
     min2 = minimum(f, x, Interval(a2, b2)).evalf()
