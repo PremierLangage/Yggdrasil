@@ -5,7 +5,7 @@ from plmpl import fig2svg, easyplot
 import matplotlib.pyplot as plt
 from math import floor, ceil
 from sympy.polys.polyfuncs import interpolate
-from sympy.calculus.util import minimum, maximum
+import numpy as np
 
 var('x')
 
