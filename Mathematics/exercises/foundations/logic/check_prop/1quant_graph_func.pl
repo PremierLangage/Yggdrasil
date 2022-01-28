@@ -10,8 +10,8 @@ b = randint(-3, 3)
 sol = a*x + b
 
 from sympy.polys.polyfuncs import interpolate
-x = [0, 1, 5]
-y = [-1, 3, 4]
+x = [-5, 0, 1, 5]
+y = [2, -1, 3, 4]
 f = interpolate(y, x)
 
 n = 5
