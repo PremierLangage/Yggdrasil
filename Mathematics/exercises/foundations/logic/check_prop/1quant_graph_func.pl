@@ -1,4 +1,4 @@
-extends = /model/math/expr.pl
+extends = /model/math/checkbox.pl
 
 before ==
 from plmpl import fig2svg, easyplot
@@ -43,6 +43,42 @@ plt.xticks(range(-n, n+1))
 plt.yticks(range(-n, n+1))
 easyplot(plt.gcf(), f, -n, n)
 image = fig2svg(plt.gcf())
+
+items = []
+indsol = []
+k = 0
+for q in [0]:
+    if q == 0:
+        items.append(rf"$! \exists x \in \[{a1}, {b1},\ f(x) = {c1} !$")
+        valprop = any([x%2 == 0 for x in A])
+    elif q == 1:
+        items.append(r"$! \exists x \in A,\ x \textrm{ est impair} !$")
+        valprop = any([x%2 != 0 for x in A])
+    elif q == 2:
+        items.append(r"$! \forall x \in A,\ x \textrm{ est pair} !$")
+        valprop = all([x%2 == 0 for x in A])
+    elif q == 3:
+        items.append(r"$! \forall x \in A,\ x \textrm{ est impair} !$")
+        valprop = all([x%2 != 0 for x in A])
+    elif q == 4:
+        d = choice([randint(minA, maxA), randint(maxA, n)])
+        items.append(rf"$! \exists x \in A,\ x \ge {d} !$")
+        valprop = any([x >= d for x in A])
+    elif q == 5:
+        d = choice([randint(1, minA), randint(minA, maxA)])
+        items.append(rf"$! \exists x \in A,\ x \le {d} !$")
+        valprop = any([x <= d for x in A])
+    elif q == 6:
+        d = choice([randint(1, minA), randint(minA, maxA)])
+        items.append(rf"$! \forall x \in A,\ x \ge {d} !$")
+        valprop = all([x >= d for x in A])
+    elif q == 7:
+        d = choice([randint(minA, maxA), randint(maxA, n)])
+        items.append(rf"$! \forall x \in A,\ x \le {d} !$")
+        valprop = all([x <= d for x in A])
+    if valprop:
+        indsol.append(k)
+    k += 1
 ==
 
 question ==
