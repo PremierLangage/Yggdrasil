@@ -28,8 +28,7 @@ while True:
     b1 = a1 + len1
     min1 = minimum(f, x, Interval(a1, b1)).evalf()
     max1 = maximum(f, x, Interval(a1, b1)).evalf()
-    if (max1 - min1) > 2:
-        break
+
 
 while True:      
     len2 = randint(3, 6)
@@ -37,8 +36,6 @@ while True:
     b2 = a2 + len2
     min2 = minimum(f, x, Interval(a2, b2)).evalf()
     max2 = maximum(f, x, Interval(a2, b2)).evalf()
-    if (max2 - min2) > 2:
-        break
 
 sol = 0
 n = 5
