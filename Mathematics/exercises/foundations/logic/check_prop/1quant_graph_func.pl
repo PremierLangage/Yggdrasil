@@ -3,14 +3,11 @@ extends = /model/math/expr.pl
 before ==
 from plmpl import fig2svg, easyplot
 import matplotlib.pyplot as plt
-
-var('x')
-a = choice([-1, 1]) * choice([Rational(1, 2), 1, Rational(3, 2), 2])
-b = randint(-3, 3)
-sol = a*x + b
-
 from sympy.polys.polyfuncs import interpolate
 from sympy.calculus.util import minimum, maximum
+
+var('x')
+sol = 0
 
 while True:
     x0, x1, x2, x3 = randint(-5, -4), randint(-2,-1), randint(1,2), randint(4,5)
