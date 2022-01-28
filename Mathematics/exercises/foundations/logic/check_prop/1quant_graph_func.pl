@@ -24,7 +24,7 @@ f = interpolate(pts, x)
 
 def minmax(f, a, b):
     lst = [f.evalf(subs={x: xi}) for xi in np.arange(a, b, 0.05)]
-    return 0,4
+    return min(lst), max(lst)
 
 max1, min1 = 0, 0
 while max1-min1 < 2.3:
