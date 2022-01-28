@@ -69,28 +69,12 @@ for q in [0, 1]:
         else:
             c2 = randint(ceil(max1+0.1), 5) 
         items.append(rf"$! \exists x \in \[{a2}, {b2}\],\ f(x) \ge {c2} !$")
-    elif q == 2:
-        items.append(r"$! \forall x \in A,\ x \textrm{ est pair} !$")
-        valprop = all([x%2 == 0 for x in A])
     elif q == 3:
-        items.append(r"$! \forall x \in A,\ x \textrm{ est impair} !$")
-        valprop = all([x%2 != 0 for x in A])
-    elif q == 4:
-        d = choice([randint(minA, maxA), randint(maxA, n)])
-        items.append(rf"$! \exists x \in A,\ x \ge {d} !$")
-        valprop = any([x >= d for x in A])
-    elif q == 5:
-        d = choice([randint(1, minA), randint(minA, maxA)])
-        items.append(rf"$! \exists x \in A,\ x \le {d} !$")
-        valprop = any([x <= d for x in A])
-    elif q == 6:
-        d = choice([randint(1, minA), randint(minA, maxA)])
-        items.append(rf"$! \forall x \in A,\ x \ge {d} !$")
-        valprop = all([x >= d for x in A])
-    elif q == 7:
-        d = choice([randint(minA, maxA), randint(maxA, n)])
-        items.append(rf"$! \forall x \in A,\ x \le {d} !$")
-        valprop = all([x <= d for x in A])
+        if valprop:
+            c2 = randint(-5, floor(min1-0.1))
+        else:
+            c2 = randint(ceil(min1+0.1), 5) 
+        items.append(rf"$! \forall x \in \[{a2}, {b2}\],\ f(x) \ge {c2} !$")
     if valprop:
         indsol.append(k)
     k += 1
