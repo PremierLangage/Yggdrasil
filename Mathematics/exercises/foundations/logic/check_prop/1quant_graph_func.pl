@@ -54,7 +54,7 @@ for q in [0]:
         if valprop:
             c1 = randint(ceil(min1), floor(max1))
         else:
-            c1 = choice(range(-5, ceil(min1)) + range(floor(max1)+1, 6)) 
+            c1 = choice(list(range(-5, ceil(min1))) + list(range(floor(max1)+1, 6))) 
         items.append(rf"$! \exists x \in \[{a1}, {b1},\ f(x) = {c1} !$")
     elif q == 1:
         items.append(r"$! \exists x \in A,\ x \textrm{ est impair} !$")
