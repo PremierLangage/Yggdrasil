@@ -67,7 +67,7 @@ for q in [0, 1]:
         if valprop:
             c2 = randint(-5, floor(max1))
         else:
-            c2 = randint(floor(max1)+1, 5) 
+            c2 = randint(floor(max1-0.1)+1, 5) 
         items.append(rf"$! \exists x \in \[{a2}, {b2}\],\ f(x) \ge {c2} !$")
     elif q == 2:
         items.append(r"$! \forall x \in A,\ x \textrm{ est pair} !$")
