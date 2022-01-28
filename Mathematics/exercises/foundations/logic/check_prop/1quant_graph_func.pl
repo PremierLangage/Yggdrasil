@@ -52,9 +52,9 @@ for q in [0, 1]:
     valprop = choice([True, False])
     if q == 0:
         if valprop:
-            c1 = randint(ceil(min1), floor(max1))
+            c1 = randint(ceil(min1+0.1), floor(max1-0.1))
         else:
-            c1 = choice(list(range(-5, ceil(min1))) + list(range(floor(max1)+1, 6))) 
+            c1 = choice(list(range(-5, ceil(min1-0.1))) + list(range(floor(max1+0.1)+1, 6))) 
         items.append(rf"$! \exists x \in \[{a1}, {b1}\],\ f(x) = {c1} !$")
     elif q == 1:
         if valprop:
