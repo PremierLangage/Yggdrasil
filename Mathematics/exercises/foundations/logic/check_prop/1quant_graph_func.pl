@@ -33,7 +33,7 @@ b2 = a2 + len2
 min2 = minimum(f, x, Interval(a2, b2)).evalf()
 max2 = maximum(f, x, Interval(a2, b2)).evalf()
 
-
+sol = 0
 n = 5
 plt.clf()
 plt.xlim(-n, n)
