@@ -46,7 +46,7 @@ image = fig2svg(plt.gcf())
 ==
 
 question ==
-{{a1, b1}} {{a2, b2}}
+{{a1}} {{b1}}
 Déterminer l'équation de la droite tracée ci-dessous (en notant $! x !$ la variable d'abscisse et $! y !$ la variable d'ordonnée).
 <div class="img w60">
 {{ image }}
