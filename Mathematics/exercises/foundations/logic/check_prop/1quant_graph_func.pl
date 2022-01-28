@@ -12,6 +12,7 @@ sol = a*x + b
 from sympy.polys.polyfuncs import interpolate
 from sympy.calculus.util import minimum, maximum
 t = 0
+
 while True:
     t +=1
     x0, x1, x2, x3 = randint(-5, -4), randint(-2,-1), randint(1,2), randint(4,5)
@@ -19,7 +20,25 @@ while True:
     f = interpolate([(x0, y0), (x1, y1), (x2, y2), (x3, y3)], x)
     minf = minimum(f, x, Interval(-5,5)).evalf()
     maxf = maximum(f, x, Interval(-5,5)).evalf()
-    if minf > -5 and maxf < 5:
+    if minf > -5 and maxf < 5 and maxf-minf > 4:
+        break
+
+while True:
+    len1 = randint(2, 6)
+    a1 = randint(-5, 5-len1)
+    b1 = a1 + len1
+    min1 = minimum(f, x, Interval(a1, b1)).evalf()
+    max1 = maximum(f, x, Interval(a1, b1)).evalf()
+    if max1-min1 > 1:
+        break
+
+while True:
+    len2 = randint(2, 6)
+    a2 = randint(-5, 5-len2)
+    b2 = a2 + len2
+    min2 = minimum(f, x, Interval(a2, b2)).evalf()
+    max2 = maximum(f, x, Interval(a2, b2)).evalf()
+    if max2-min2 > 1 and (a2, b2) != (a1, b1):
         break
 
 n = 5
