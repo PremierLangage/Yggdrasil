@@ -11,7 +11,9 @@ sol = a*x + b
 
 from sympy.polys.polyfuncs import interpolate
 from sympy.calculus.util import minimum, maximum
+t = 0
 while True:
+    t +=1
     x0, x1, x2, x3 = randint(-5, -4), randint(-2,-1), randint(1,2), randint(4,5)
     y0, y1, y2, y3 = randint(-4, 4), randint(-4, 4), randint(-4, 4), randint(-4, 4)
     f = interpolate([(x0, y0), (x1, y1), (x2, y2), (x3, y3)], x)
@@ -32,7 +34,7 @@ image = fig2svg(plt.gcf())
 ==
 
 question ==
-{{minf}} {{maxf}}
+{{minf}} {{maxf}} {{t}}
 Déterminer l'équation de la droite tracée ci-dessous (en notant $! x !$ la variable d'abscisse et $! y !$ la variable d'ordonnée).
 <div class="img w60">
 {{ image }}
