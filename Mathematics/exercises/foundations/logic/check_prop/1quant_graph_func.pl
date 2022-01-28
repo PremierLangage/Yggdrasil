@@ -21,7 +21,7 @@ plt.ylim(-n, n)
 plt.grid(True)
 plt.xticks(range(-n, n+1))
 plt.yticks(range(-n, n+1))
-easyplot(plt.gcf(), sol, -n, n)
+easyplot(plt.gcf(), f, -n, n)
 image = fig2svg(plt.gcf())
 ==
 
