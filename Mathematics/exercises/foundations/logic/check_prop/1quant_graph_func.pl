@@ -10,7 +10,7 @@ b = randint(-3, 3)
 sol = a*x + b
 
 from sympy.polys.polyfuncs import interpolate
-x = [-5, 0, 1, 5]
+x = [-1, 0, 1, 5]
 y = [2, -1, 3, 4]
 f = interpolate(x, y)
 
