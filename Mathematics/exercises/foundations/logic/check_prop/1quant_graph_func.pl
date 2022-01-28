@@ -38,7 +38,7 @@ while True:
     b2 = a2 + len2
     min2 = minimum(f, x, Interval(a2, b2)).evalf()
     max2 = maximum(f, x, Interval(a2, b2)).evalf()
-    if max2-min2 > 1 and (a2, b2) != (a1, b1):
+    if max2-min2 > 1:
         break
 
 n = 5
