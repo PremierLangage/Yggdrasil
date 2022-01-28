@@ -28,7 +28,7 @@ while True:
     b1 = a1 + len1
     min1 = minimum(f, x, Interval(a1, b1)).evalf()
     max1 = maximum(f, x, Interval(a1, b1)).evalf()
-    if max1-min1 > 2.3:
+    if (max1-min1).evalf() > 2.3:
         break
 
 while True:
@@ -37,7 +37,7 @@ while True:
     b2 = a2 + len2
     min2 = minimum(f, x, Interval(a2, b2)).evalf()
     max2 = maximum(f, x, Interval(a2, b2)).evalf()
-    if max2-min2 > 2.3:
+    if (max2-min2).evalf() > 2.3:
         break
 
 sol = 0
