@@ -4,16 +4,19 @@ before ==
 from plmpl import fig2svg, easyplot
 import matplotlib.pyplot as plt
 
-import numpy as np
-from scipy import interpolate
+from sympy.polys.specialpolys import interpolating_poly
 
 x = [0, 1, 9]
 y = [-1, 3, 4]
-f = interpolate.PchipInterpolator(x, y)
-
-xnew = np.arange(0,9,0.1)
-
-plt.plot(xnew,f(xnew))
+f= interpolating_poly(x,y)
+n = 5
+plt.clf()
+plt.xlim(-n, n)
+plt.ylim(-n, n)
+plt.grid(True)
+plt.xticks(range(-n, n+1))
+plt.yticks(range(-n, n+1))
+easyplot(plt.gcf(), f, -n, n)
 image = fig2svg(plt.gcf())
 ==
 
