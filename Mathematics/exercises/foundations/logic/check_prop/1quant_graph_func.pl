@@ -20,7 +20,7 @@ while True:
     f = interpolate([(x0, y0), (x1, y1), (x2, y2), (x3, y3)], x)
     minf = minimum(f, x, Interval(-5,5)).evalf()
     maxf = maximum(f, x, Interval(-5,5)).evalf()
-    if minf > -5 and maxf < 5 and maxf-minf > 4:
+    if minf > -5 and maxf < 5:
         break
 
 len1 = randint(2, 6)
