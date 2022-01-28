@@ -9,6 +9,11 @@ a = choice([-1, 1]) * choice([Rational(1, 2), 1, Rational(3, 2), 2])
 b = randint(-3, 3)
 sol = a*x + b
 
+from sympy.polys.specialpolys import interpolating_poly
+x = [0, 1, 9]
+y = [-1, 3, 4]
+f = interpolating_poly(x,y)
+
 n = 5
 plt.clf()
 plt.xlim(-n, n)
