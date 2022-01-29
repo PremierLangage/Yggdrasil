@@ -153,7 +153,7 @@ else:
 feed_rmrq = ""
 if look_code:
     note_eff = 50
-    feed_rmrq = ", méga-feedback activé"
+    feed_rmrq = ", m&eacute;ga-feedback activ&eacute;"
 
 tent_rmrq = str(nb_attempt)+" Tentative"
 if nb_attempt > 1:
