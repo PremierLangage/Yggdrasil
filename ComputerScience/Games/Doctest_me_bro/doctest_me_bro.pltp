@@ -35,8 +35,8 @@ qui fonctionnaient avant...).
 
 Dans ce TP, les exercices cachent des codes valides et non valides. Il n'y a 
 rien à coder, il faut juste imaginer les tests qui vont certifier le bon ou mauvais 
-fonctionnement des fonctions. Par exemple, Pour une fonction qui calcule le carré 
-d'un entier, on pourrait imaginer ça :
+fonctionnement des fonctions ; le tout à l'aveugle sans voir les codes sources. 
+Par exemple, Pour une fonction qui calcule le carré d'un entier, on pourrait imaginer ça :
 
 <pre>
 >>> carre(0)
@@ -55,6 +55,12 @@ Les tests ne sont jamais une garantie totale mais ils constituent déjà un bon 
 sur la validité d'un code. L'objectif des exercices qui suivent est de deviner les 
 bons tests, à l'aveugle, qui font échouer les mauvaises propositions mais que toutes
 les bonnes propositions réussissent...
+
+Il s'agit clairement d'exercices quasi impossibles à faire du premier coup (même pour un
+informaticien excellent, il faut avoir de la chance). On apprend toute sa vie 
+d'informaticien à imaginer les bons tests. Quand on a en marre, on peut activer le 
+méga-feedback qui enlêve des points mais qui révèle aussi les codes sources cachés.
+
 
 ==
 
