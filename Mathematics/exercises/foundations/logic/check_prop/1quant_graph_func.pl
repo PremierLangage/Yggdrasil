@@ -9,15 +9,16 @@ import numpy as np
 
 var('x')
 
-# lst_pts = []
-# while len(lst_pts) < 10:
-#    x0, x1, x2, x3 = randint(-5, -4), randint(-2,-1), randint(1,2), randint(4,5)
-#    y0, y1, y2, y3 = randint(-4, 4), randint(-4, 4), randint(-4, 4), randint(-4, 4)
-#    f = interpolate([(x0, y0), (x1, y1), (x2, y2), (x3, y3)], x)
-#    minf = minimum(f, x, Interval(-5,5)).evalf()
-#    maxf = maximum(f, x, Interval(-5,5)).evalf()
-#    if minf > -5 and maxf < 5:
-#        lst_pts.append([(x0, y0), (x1, y1), (x2, y2), (x3, y3)])
+# lst = []
+# for i in range(200):
+#     x0, x1, x2, x3 = randint(-5, -4), randint(-2,-1), randint(1,2), randint(4,5)
+#     y0, y1, y2, y3 = randint(-4, 4), randint(-4, 4), randint(-4, 4), randint(-4, 4)
+#     f = interpolate([(x0, y0), (x1, y1), (x2, y2), (x3, y3)], x)
+#     minf, maxf = minmax(f, -5, 5)
+#     if minf > -4.5 and maxf < 4.5 and maxf-minf > 7:
+#         lst.append([(x0, y0), (x1, y1), (x2, y2), (x3, y3)])
+#     if len(lst)==10:
+#         break
 
 pts = choice([[(-5, 2), (-1, 3), (1, 0), (4, -3)], [(-5, -1), (-1, -2), (2, 3), (5, -2)], [(-5, -2), (-1, 2), (1, -2), (5, 1)], [(-5, 4), (-2, -4), (2, 1), (5, 1)], [(-4, -4), (-1, -2), (2, 1), (4, 3)], [(-4, -1), (-1, 2), (2, 1), (5, 4)], [(-4, 3), (-2, 2), (1, -3), (5, 2)], [(-5, -4), (-1, 3), (1, 3), (5, -2)], [(-4, -4), (-1, -3), (2, 0), (5, 4)], [(-4, 1), (-1, 3), (2, -2), (5, 1)]])
 f = interpolate(pts, x)
@@ -40,8 +41,6 @@ while max2-min2 < 2.3:
     b2 = a2 + len2
     min2, max2 = minmax(f, a2, b2)
 
-
-sol = 0
 n = 5
 plt.clf()
 plt.xlim(-n, n)
@@ -55,26 +54,32 @@ image = fig2svg(plt.gcf())
 items = []
 indsol = []
 k = 0
-for q in [0, 1, 3]:
+for q in [0, 1, 2, 3]:
     valprop = choice([True, False])
     if q == 0:
         if valprop:
-            c1 = randint(ceil(min1+0.1), floor(max1-0.1))
+            c = randint(ceil(min1+0.1), floor(max1-0.1))
         else:
-            c1 = choice(list(range(-5, ceil(min1-0.1))) + list(range(floor(max1+0.1)+1, 6))) 
-        items.append(rf"$! \exists x \in \[{a1}, {b1}\],\ f(x) = {c1} !$")
+            c = floor(min1-0.1)
+        items.append(rf"$! \exists x \in \[{a1}, {b1}\],\ f(x) \le {c} !$")
     elif q == 1:
         if valprop:
-            c2 = randint(ceil(min1+0.1), floor(max1-0.1))
+            c = randint(ceil(min2+0.1), floor(max2-0.1))
         else:
-            c2 = ceil(max1+0.1)
-        items.append(rf"$! \exists x \in \[{a2}, {b2}\],\ f(x) \ge {c2} !$")
+            c = ceil(max2+0.1)
+        items.append(rf"$! \exists x \in \[{a2}, {b2}\],\ f(x) \ge {c} !$")
+    elif q == 2:
+        if valprop:
+            c = floor(min1-0.1)
+        else:
+            c = randint(ceil(min1+0.1), floor(max1-0.1))
+        items.append(rf"$! \forall x \in \[{a1}, {b1}\],\ f(x) \ge {c} !$")
     elif q == 3:
         if valprop:
-            c2 = floor(min2-0.1)
+            c = ceil(max2+0.1)
         else:
-            c2 = randint(ceil(min2+0.1), floor(max2-0.1))
-        items.append(rf"$! \forall x \in \[{a2}, {b2}\],\ f(x) \ge {c2} !$")
+            c = randint(ceil(min2+0.1), floor(max2-0.1))
+        items.append(rf"$! \forall x \in \[{a2}, {b2}\],\ f(x) \le {c} !$")
     if valprop:
         indsol.append(k)
     k += 1
