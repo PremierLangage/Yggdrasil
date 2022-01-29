@@ -165,7 +165,7 @@ best_grade = max([note_finale, best_grade])
 feedback_note = "<u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toutes propositions confondues)</i><br>"
 feedback_note += "Note pour cette tentative : "+str(note_finale)+"% <br>"
 feedback_note += "Partie tests : "+str(note_tests)+"% <br>"
-feedback_note += "Partie efficacité : "+str(note_eff)+"% ("+tent_rmrq+feed_rmrq+")<br><br>"
+feedback_note += "Partie efficacit&eacute; : "+str(note_eff)+"% ("+tent_rmrq+feed_rmrq+")<br><br>"
 
 if 'megafeed' in response:
     look_code = True
