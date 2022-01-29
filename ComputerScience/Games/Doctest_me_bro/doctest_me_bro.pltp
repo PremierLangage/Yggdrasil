@@ -14,7 +14,6 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-
 author=Nicolas Borie
 
 title=Système : Garantir la validité d'un code source via des tests
@@ -24,7 +23,7 @@ Ce TP porte sur une des compétences les plus avancées de l'informatique :
 
 **Garantir la conformité et la qualité d'une solution informatique**
 
-C'est une des compétences que vise un chef de projet informatique (BAC+5 minimum) ayant des 
+C'est une des compétences que vise un chef de projet informatique ayant des 
 développeurs sous ses ordres. Il doit tenter de garantir les productions 
 **avant de les livrer aux clients**. Et c'est très dur de deviner si les choses 
 vont fonctionner ou pas. 
