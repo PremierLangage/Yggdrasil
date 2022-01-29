@@ -86,12 +86,11 @@ for q in [0, 1, 2, 3]:
 ==
 
 question ==
-{{a1}} {{b1}} {{min1}} {{max1}}
-{{a2}} {{b2}} {{min2}} {{max2}}
-Déterminer l'équation de la droite tracée ci-dessous (en notant $! x !$ la variable d'abscisse et $! y !$ la variable d'ordonnée).
+On considère la fonction $! f !$ dont le graphe est tracé ci-desssous.
 <div class="img w60">
 {{ image }}
 </div>
+Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
 ==
 
 prefix ==
