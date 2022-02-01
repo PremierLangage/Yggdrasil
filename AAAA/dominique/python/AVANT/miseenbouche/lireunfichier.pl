@@ -52,32 +52,33 @@ True
 """
 
 pltest1= f"""
->>> func2() == {total} # ok
+>>> func1() == {total} # ok
 True
 """
 
 pltest2= f"""
->>> if func0() == {a}: # ok
-...    func3() == {nbp}
-... else:
-...   False
+>>> func2()
+>>> func0() == {nbp}: # ok
 True
 """
 
 ==
 
 correction==
-def func1():
+def func0():
     with open("data1.txt","r") as f :
         return len(f.readlines())
 
-def func2():
+def func1():
     with open("data2.txt","r") as f:
         return sum([int(x.strip()) for x in f])
 
-def func3():
-    with open("data1.txt","r") as f:
-        return sum([int(x.strip())%2==0 for x in f])
+def func2():
+    with open("data2.txt","r") as f and open("data1.txt", "w") as g:
+        for x in f:
+            if int(x.strip()) % 2 == 0:
+                g.write(x)
+
 
 
 ==
