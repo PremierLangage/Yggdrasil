@@ -30,8 +30,10 @@ def doit(filename):
     pltest= f"""
     >>> question1() == {level} # Question 1 étage 
     True
+    """
+    pltest2= f"""
     >>> question2() == {ssol} # Question 2 position 
     True
     """
 
-    return pltest
+    return pltest,pltest2
