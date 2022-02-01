@@ -8,8 +8,8 @@ extends = /model/math/checkbox.pl
 title = Déterminer si une proposition est vraie
 
 before ==
-nb_el = 4
-nb_mat = 5
+nb_el = randint(4, 6)
+nb_mat = 4
 table = [[10 for _ in range(nb_mat)] for _ in range(nb_el)] 
 noms = ["Alceste", "Philinte", "Arsinoé", "Célimène", "Oronte", "Éliante"]
 shuffle(noms)
