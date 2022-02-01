@@ -25,8 +25,8 @@ On considère l'application $! f !$ définie par la table ci-dessous. </br>
 {% for j in range(nb_mat) %}
 <td> {{ table[i][j] }} </td>
 {% endfor %}
-{% endfor %}
 </tr>
+{% endfor %}
 </table>
 </br>
 Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
