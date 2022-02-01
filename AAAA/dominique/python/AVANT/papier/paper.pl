@@ -10,12 +10,8 @@ extends = /ComputerScience/python/template/pltest.pl
 title = Papier et Ruban 
 
 
-@ ennonce.md
-text==
 
-{{ennonce}}
-
-==
+text= @ ennonce.md
 
 # Fichier d'exemple pour que les élèves se testent
 @ exemple
