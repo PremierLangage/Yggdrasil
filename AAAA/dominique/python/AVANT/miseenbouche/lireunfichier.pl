@@ -57,7 +57,7 @@ True
 """
 
 pltest2= f"""
->>> def cont(filename):
+>>> def cont(filename): #
 ...     with open(filename,"r") as f :
 ...         return len(f.readlines())
 ... 
