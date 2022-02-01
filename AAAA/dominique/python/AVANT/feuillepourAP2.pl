@@ -1,0 +1,14 @@
+
+title= Des exos pour s'entrainer 
+
+introduction==
+
+Les exercices de cette feuille sont basé sur un calendrier de l'avant et donc parle suivant du Père Noël.
+
+A chaque fois que l'un d'entre vous arrive a finir un exercice il faut qu'il m'envois un mail je rajouterai un nouvel exercice.
+
+Pour que je me perde pas veuillez titrez votre mail : "[AVANT] nom_exo_réussit" .
+
+Dominique
+
+==
