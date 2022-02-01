@@ -22,7 +22,7 @@ mintable = min([min(line) for line in table])
 maxtable = max([max(line) for line in table])
 
 k = 0
-for q in [0, 1, 2, 3]:
+for q in [2, 3]:
     valprop = choice([True, False])
     if q == 0:
         if valprop:
