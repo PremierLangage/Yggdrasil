@@ -16,3 +16,7 @@ La plus part des exercices vous demande d'écrire deux fonctions "Question1 et Q
 
 
 ==
+
+
+@miseenbouche/lireunfichier.pl
+
