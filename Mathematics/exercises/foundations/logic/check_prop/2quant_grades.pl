@@ -10,7 +10,7 @@ title = Déterminer si une proposition est vraie
 before ==
 nb_el = 4
 nb_mat = 5
-table = [[10 for _ in range(nb_el)] for _ in range(nb_mat)] 
+table = [[10 for _ in range(nb_mat)] for _ in range(nb_el)] 
 
 items, indsol = [], []
 ==
@@ -21,9 +21,9 @@ On considère l'application $! f !$ définie par la table ci-dessous. </br>
 <table>
 <tr>
 {% for i in range(nb_el) %}
-<th> éléve {{i}} </th>
+<td> élève {{i}} </td>
 {% for j in range(nb_mat) %}
-<td> {{ table[i][j] }} </td>
+<td> {{ table[i][j]}} </td>
 {% endfor %}
 </tr>
 {% endfor %}
