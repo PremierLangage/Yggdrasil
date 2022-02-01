@@ -37,7 +37,7 @@ a=random.randint(5,123)
 createfilewithlignes("data1.txt",a,fun= lambda x:  "hehe" )
 
 createfilewithlignes("data2.txt",a,fun= lambda x: random.randint(5,200))
-
+total=0
 with open("data2.txt","r") as f:
     for l in f:
         total += int(l.strip())
