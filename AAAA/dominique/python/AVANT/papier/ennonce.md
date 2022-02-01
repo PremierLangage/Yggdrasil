@@ -4,10 +4,10 @@ Heureusement, chaque cadeau est une boîte (un parfait prisme rectangulaire droi
 
 Par example:
 
-     Un cadeau de dimensions 2x3x4 nécessite 2*6 + 2*12 + 2*8 = 52 décimètre carrés de papier d'emballage plus 6 décimètre carrés de mou,
-      pour un total de 58 décimètre carrés.
-     Un cadeau de dimensions 1x1x10 nécessite 2*1 + 2*10 + 2*10 = 42 décimètre carrés de papier d'emballage plus 1 décimetre carré de mou,
-      pour un total de 43 décimètre carrés.
+     Un cadeau de dimensions 2x3x4 nécessite 2*6 + 2*12 + 2*8 = 52 décimètre carrés de papier d
+     emballage plus 6 décimètre carrés de mou, pour un total de 58 décimètre carrés.
+     Un cadeau de dimensions 1x1x10 nécessite 2*1 + 2*10 + 2*10 = 42 décimètre carrés de papier d
+     emballage plus 1 décimetre carré de mou, pour un total de 43 décimètre carrés.
 
 Tous les nombres de la liste des elfes sont en décimètre. Combien de décimètre carrés de papier d'emballage doivent-ils commander ?
 
