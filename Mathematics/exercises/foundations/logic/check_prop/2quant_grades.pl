@@ -10,7 +10,7 @@ title = Déterminer si une proposition est vraie
 before ==
 nb_el = 4
 nb_mat = 5
-table = [[10 for _ in in range(nb_el)] for _ in range(nb_mat)] 
+table = [[10 for _ in range(nb_el)] for _ in range(nb_mat)] 
 
 items, indsol = [], []
 
