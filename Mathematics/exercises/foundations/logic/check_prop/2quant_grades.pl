@@ -20,7 +20,7 @@ mintable = min([min(line) for line in table])
 maxtable = max([max(line) for line in table])
 
 k = 0
-for q in [0]:
+for q in [0, 1]:
     valprop = choice([True, False])
     if q == 0:
         if valprop:
@@ -30,10 +30,10 @@ for q in [0]:
         items.append(rf"$! \exists e \in E, \forall m \in M,\ \textrm{{note}}(e, m) \le {c} !$")
     elif q == 1:
         if valprop:
-            c = 0
+            c = choice([maxmin_el, maxmin_el-1])
         else:
-            c = 0
-        items.append(rf"$! \exists e \in E, \forall m \in M,\ \textrm{{note}}(e, m) \le {c} !$")
+            c = choice([maxmin_el+1, maxmin_el+2])
+        items.append(rf"$! \exists e \in E, \forall m \in M,\ \textrm{{note}}(e, m) \ge {c} !$")
    
     if valprop:
         indsol.append(k)
