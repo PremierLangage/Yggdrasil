@@ -8,19 +8,9 @@ extends = /model/math/checkbox.pl
 title = Déterminer si une proposition est vraie
 
 before ==
-n, m = 40, 5
-numbers = set(range(m, n - m + 1))
-even = set(range(0, n + 1, 2)).intersection(numbers)
-odd = set(range(1, n + 1, 2)).intersection(numbers)
-x = 0
-neven = randint(3, 4)
-nodd = randint(3, 4)
-f = choices(list(even), k=neven) + choices(list(odd), k=nodd)
-nf = len(f)
-
-inveven = [x for x in range(nf) if f[x]%2 == 0]
-invodd = [x for x in range(nf) if f[x]%2 == 1]
-
+nb_el = 4
+nb_mat = 5
+table = [[10 for _ in in range(nb_el)] for _ in range(nb_mat)] 
 
 items, indsol = [], []
 
