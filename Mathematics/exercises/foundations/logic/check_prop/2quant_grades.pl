@@ -14,16 +14,19 @@ table = [[randint(6, 18) for _ in range(nb_mat)] for _ in range(nb_el)]
 noms = ["Alceste", "Philinte", "Arsinoé", "Célimène", "Oronte", "Éliante"]
 shuffle(noms)
 items, indsol = [], []
-min = min([max(line) for line in table])
+minmax_el = min([max(line) for line in table])
+maxmin_el = max([min(line) for line in table])
+mintable = min([min(line) for line in table])
+maxtable = max([max(line) for line in table])
 
 k = 0
 for q in [0]:
     valprop = choice([True, False])
     if q == 0:
         if valprop:
-            c = choice([min
+            c = choice([minmax_el, minma_el+1])
         else:
-            c = 0
+            c = choice([minmax_el-1, minma_el-2])
         items.append(rf"$! \exists e \in E, \forall m \in M,\ \textrm{{note}}(e, m) \le {c} !$")
     elif q == 1:
         if valprop:
