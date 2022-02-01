@@ -39,7 +39,7 @@ pltest0= f"""
 >>> func1()
 {a}
 >>> func1() == {a}
-True 
+True
 """
 
 ==
