@@ -57,8 +57,12 @@ True
 """
 
 pltest2= f"""
->>> func2()
->>> func0() == {nbp} # ok
+>>> def cont(filename):
+...     with open(filename,"r") as f :
+...         return len(f.readlines())
+... 
+>>> func2() #
+>>> cont() == {nbp} # ok
 True
 """
 
