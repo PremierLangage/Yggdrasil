@@ -11,4 +11,8 @@ Pour que je me perde pas veuillez titrez votre mail : "[AVANT] nom_exo_réussit"
 
 Dominique
 
+
+La plus part des exercices vous demande d'écrire deux fonctions "Question1 et Question2" qui **retourne** la valeur attendue.
+
+
 ==
