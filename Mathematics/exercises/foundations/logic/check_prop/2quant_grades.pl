@@ -15,6 +15,7 @@ noms = ["Alceste", "Philinte", "Arsinoé", "Célimène", "Oronte", "Éliante"]
 shuffle(noms)
 items, indsol = [], []
 
+
 k = 0
 for q in [0]:
     valprop = choice([True, False])
