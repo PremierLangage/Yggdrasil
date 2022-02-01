@@ -19,9 +19,10 @@ datas= @data
 
 before==
 import build
-pltest=build.doit("data")
+pltest0,pltest1=build.doit("data")
 
 with open("ennonce","r") as f:
     lenonce= f.read()
 
 ==
+
