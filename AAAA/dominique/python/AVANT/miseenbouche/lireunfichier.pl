@@ -37,6 +37,8 @@ createfilewithlignes("data1.txt",a,text="Hehe")
 pltest0= f"""
 >>> func1() == {a} # Nombre de lignes 
 True 
+>>> func1()
+{a}
 """
 
 ==
