@@ -11,7 +11,8 @@ before ==
 nb_el = 4
 nb_mat = 5
 table = [[10 for _ in range(nb_mat)] for _ in range(nb_el)] 
-
+noms = ["Alceste", "Philinte", "Arsinoé", "Célimène", "Oronte", "Éliante"]
+shuffle(noms)
 items, indsol = [], []
 ==
 
@@ -21,7 +22,7 @@ On considère l'application $! f !$ définie par la table ci-dessous. </br>
 <table>
 <tr>
 {% for i in range(nb_el) %}
-<td> élève {{i}} </td>
+<td> {{ noms[i] }} </td>
 {% for j in range(nb_mat) %}
 <td> {{ table[i][j]}} </td>
 {% endfor %}
