@@ -20,7 +20,7 @@ func0 qui lit le fichier "data1.txt" et qui retourne le nombre de lignes du fich
 
 func1  lit  "data2.txt" qui contient des entiers (un par ligne) retourne la somme des ces entiers.
 
-func2  qui lit le fichier  "data2.txt" et recopie dans un fichier "data3.txt" tous les entiers pairs.
+func2  qui lit le fichier  "data2.txt" et recopie dans le fichier "data1.txt" tous les entiers pairs.
 
 
 ==
@@ -38,9 +38,13 @@ createfilewithlignes("data1.txt",a,fun= lambda x: "ligne"+str(x)+ " hehe" )
 
 createfilewithlignes("data2.txt",a,fun= lambda x: random.randint(5,200))
 total=0
+nbp=0
 with open("data2.txt","r") as f:
     for l in f:
-        total += int(l.strip())
+        v=int(l.strip())
+        total += v
+        if v %2 ==0:
+            nbp += 1
 
 pltest0= f"""
 >>> func0() == {a} # ok 
@@ -52,7 +56,13 @@ pltest1= f"""
 True
 """
 
-
+pltest2= f"""
+>>> if func0() == {a}: # ok
+...    func3() == {nbp}
+... else:
+...   False
+True
+"""
 
 ==
 
@@ -64,6 +74,12 @@ def func1():
 def func2():
     with open("data2.txt","r") as f:
         return sum([int(x.strip()) for x in f])
+
+def func3():
+    with open("data1.txt","r") as f:
+        return sum([int(x.strip())%2==0 for x in f])
+
+
 ==
 
 
