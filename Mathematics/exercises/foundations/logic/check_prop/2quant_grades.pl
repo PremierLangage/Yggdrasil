@@ -16,6 +16,8 @@ shuffle(noms)
 items, indsol = [], []
 minmax_el = min([max(line) for line in table])
 maxmin_el = max([min(line) for line in table])
+minmax_mat = min([max([table[:][j]) for j in range(nb_mat)])
+maxmin_mat = max([min([table[:][j]) for j in range(nb_mat)])
 mintable = min([min(line) for line in table])
 maxtable = max([max(line) for line in table])
 
@@ -34,7 +36,19 @@ for q in [0, 1]:
         else:
             c = choice([maxmin_el+1, maxmin_el+2])
         items.append(rf"$! \exists e \in E, \forall m \in M,\ \textrm{{note}}(e, m) \ge {c} !$")
-   
+    if q == 2:
+        if valprop:
+            c = choice([minmax_mat, minmax_mat+1])
+        else:
+            c = choice([minmax_mat-1, minmax_mat-2])
+        items.append(rf"$! \exists m \in M, \forall e \in E,\ \textrm{{note}}(e, m) \le {c} !$")
+    elif q == 3:
+        if valprop:
+            c = choice([maxmin_mat, maxmin_mat-1])
+        else:
+            c = choice([maxmin_mat+1, maxmin_mat+2])
+        items.append(rf"$! \exists m \in M, \forall e \in E,\ \textrm{{note}}(e, m) \ge {c} !$")
+      
     if valprop:
         indsol.append(k)
     k += 1
