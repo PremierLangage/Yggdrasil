@@ -25,6 +25,6 @@ with open("ennonce.md") as f:
     ennonce=f.read()
 
 import build
-pltest=build.doit("data")
+pltest0,pltest1=build.doit("data")
 
 ==
