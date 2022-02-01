@@ -23,13 +23,13 @@ for q in [0]:
             c = 0
         else:
             c = 0
-        items.append(rf"$! \exists e \in E, \forall m \in M\ \textrm{{note}}(e, m) \le {c} !$")
+        items.append(rf"$! \exists e \in E, \forall m \in M,\ \textrm{{note}}(e, m) \le {c} !$")
     elif q == 1:
         if valprop:
             c = 0
         else:
             c = 0
-        items.append(rf"$! \exists e \in E, \forall m \in M\ \textrm{{note}}(e, m) \le {c} !$")
+        items.append(rf"$! \exists e \in E, \forall m \in M,\ \textrm{{note}}(e, m) \le {c} !$")
    
     if valprop:
         indsol.append(k)
