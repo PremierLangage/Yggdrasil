@@ -13,8 +13,6 @@ nb_mat = 5
 table = [[10 for _ in range(nb_el)] for _ in range(nb_mat)] 
 
 items, indsol = [], []
-
-
 ==
 
 question ==
