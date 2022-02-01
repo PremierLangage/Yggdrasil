@@ -1,4 +1,4 @@
-Le Père Noël essaie de livrer des cadeaux dans un grand immeuble, mais il ne trouve pas le bon étage - les directions qu'il a obtenues sont un peu déroutantes. Il commence au rez-de-chaussée (étage 0) puis suit les instructions un personnage à la fois.
+Le Père Noël essaie de livrer des cadeaux dans un grand immeuble, mais il ne trouve pas le bon étage - les directions qu'il a obtenues sont un peu déroutantes. Il commence au rez-de-chaussée (étage 0) puis suit les instructions un caractère à la fois.
 
 Une parenthèse ouvrante, (, signifie qu'il doit monter d'un étage, et une parenthèse fermante, ), signifie qu'il doit descendre d'un étage.
 
@@ -19,14 +19,14 @@ Votre code doit contenir une fonction question1() qui lit le fichier "data" puis
 
 --- Deuxième partie ---
 
-Maintenant, en suivant les mêmes instructions, trouvez la position du premier personnage qui le fait entrer dans le sous-sol (étage -1). Le premier caractère des instructions a la position 1, le deuxième caractère a la position 2, et ainsi de suite.
+Maintenant, en suivant les mêmes instructions, trouvez la position du premier caractère qui le fait entrer dans le sous-sol (étage -1). Le premier caractère des instructions a la position 1, le deuxième caractère a la position 2, et ainsi de suite.
 
 Par example:
 
-     ) le fait entrer dans le sous-sol à la position du personnage 1.
-     ()()) le fait entrer dans le sous-sol à la position de personnage 5.
+     ) le fait entrer dans le sous-sol à la position du caractère 1.
+     ()()) le fait entrer dans le sous-sol à la position de caractère 5.
 
-Quelle est la position du personnage qui amène le Père Noël à entrer en premier dans le sous-sol ?
+Quelle est la position du caractère qui amène le Père Noël à entrer en premier dans le sous-sol ?
 
 Votre code doit  contenir une fonction question2() qui lit le fichier "data"  puis retourne le resultat (position).
 
