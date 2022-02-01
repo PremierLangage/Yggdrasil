@@ -58,9 +58,9 @@ True
 
 pltest2= f"""
 >>> def cont(filename): #
-...     with open(filename,"r") as f :
-...         return len(f.readlines())
-... 
+...     with open(filename,"r") as f :#
+...         return len(f.readlines())#
+... #
 >>> func2() #
 >>> cont("data3.txt") == {nbp} # ok
 True
