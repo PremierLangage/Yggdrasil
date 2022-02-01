@@ -58,6 +58,15 @@ True
 
 ==
 
+correction==
+def func1():
+    with open("data1.txt","r") as f :
+        return len(f.readlines())
+
+def func2():
+    with open("data2.txt","r") as f:
+        return sum([int(x.strip()) for x in f])
+
 
 
 
