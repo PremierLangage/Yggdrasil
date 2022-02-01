@@ -25,8 +25,10 @@ Ne demandez pas comment ils attachent l'arc, cependant; ils ne le diront jamais.
 
 Par example:
 
-     Un cadeau de dimensions 2x3x4 nécessite 2+2+3+3 = 10 décimètres de ruban pour envelopper le cadeau plus 2*3*4 = 24 décimètres de ruban pour l'arc, pour un total de 34 décimètres.
-     Un cadeau de dimensions 1x1x10 nécessite 1+1+1+1 = 4 décimètres de ruban pour envelopper le cadeau plus 1*1*10 = 10 décimètres de ruban pour l'arc, pour un total de 14 décimètres.
+    Un cadeau de dimensions 2x3x4 nécessite 2+2+3+3 = 10 décimètres de ruban pour envelopper
+    le cadeau plus 2*3*4 = 24 décimètres de ruban pour l'arc, pour un total de 34 décimètres.
+    Un cadeau de dimensions 1x1x10 nécessite 1+1+1+1 = 4 décimètres de ruban pour envelopper
+    le cadeau plus 1*1*10 = 10 décimètres de ruban pour l'arc, pour un total de 14 décimètres.
 
 Combien de décimètres de ruban au total doivent-ils commander ? 
 
