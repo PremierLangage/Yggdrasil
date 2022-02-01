@@ -13,12 +13,14 @@ Tous les nombres de la liste des elfes sont en décimètre. Combien de décimèt
 
 pour vous aider il y a un fichier "exemple" pour lequel la réponce est 1588178. Vous pouvez par ecrire : 
 
-total=0
-with open("exemple","r") as f:
-    ...# votre code 
-    total += 
+    def Question1():
+        total=0
+        with open("exemple","r") as f:
+            ...# votre code 
+            total += 
 
-print(total) 
+        print(total) 
+
 Cela devrai afficher 1588178
 
 Vous devez écrire une fonction Question1() qui lit le fichier "data" avec les données et qui retourne le nombre de décimètre carrées néccessaire pour embaler les cadeau du fichier data.
