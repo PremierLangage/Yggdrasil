@@ -27,14 +27,14 @@ func3  qui lit le fichier  "data2.txt" et recopie dans un fichier "data3.txt" to
 
 
 before==
-def createfilewithlignes(filename,n,fun= lambda x:x):
+def createfilewithlignes(filename,n,text="ligne ",fun= lambda x:x):
     with open(filename, "w") as f :
         for i in range(n):
-            print("ligne ",i,fun('hehe'), file=f)
+            print(fun(i), file=f)
 
 import random
 a=random.randint(5,123)
-createfilewithlignes("data1.txt",a,fun= lambda x:  "hehe" )
+createfilewithlignes("data1.txt",a,fun= lambda x: "ligne"+str(x)+ " hehe" )
 
 createfilewithlignes("data2.txt",a,fun= lambda x: random.randint(5,200))
 total=0
