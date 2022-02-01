@@ -18,9 +18,9 @@ Vous avez 3 fonctions a écrire :
 
 func0 qui lit le fichier "data1.txt" et qui retourne le nombre de lignes du fichier
 
-func1  lit  "data2.txt" qui contient des entiers (un par ligne) retourne la somme des ces entiers.
+func1  lit  "data2.txt" qui contient des entiers (un par ligne) retourne la somme de ces entiers.
 
-func2  qui lit le fichier  "data2.txt" et recopie dans le fichier "data1.txt" tous les entiers pairs.
+func2  qui lit le fichier  "data2.txt" et recopie dans le fichier "data1.txt" (qui est écrasé) tous les entiers pairs.
 
 
 ==
@@ -58,7 +58,7 @@ True
 
 pltest2= f"""
 >>> func2()
->>> func0() == {nbp}: # ok
+>>> func0() == {nbp} # ok
 True
 """
 
@@ -74,7 +74,7 @@ def func1():
         return sum([int(x.strip()) for x in f])
 
 def func2():
-    with open("data2.txt","r") as f and open("data1.txt", "w") as g:
+    with open("data2.txt","r") as f , open("data1.txt", "w") as g:
         for x in f:
             if int(x.strip()) % 2 == 0:
                 g.write(x)
