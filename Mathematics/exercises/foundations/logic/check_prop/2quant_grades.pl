@@ -24,9 +24,9 @@ for q in [0]:
     valprop = choice([True, False])
     if q == 0:
         if valprop:
-            c = choice([minmax_el, minma_el+1])
+            c = choice([minmax_el, minmas_el+1])
         else:
-            c = choice([minmax_el-1, minma_el-2])
+            c = choice([minmax_el-1, minmax_el-2])
         items.append(rf"$! \exists e \in E, \forall m \in M,\ \textrm{{note}}(e, m) \le {c} !$")
     elif q == 1:
         if valprop:
