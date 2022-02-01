@@ -10,15 +10,14 @@ extends = /ComputerScience/python/template/pltest.pl
 title = Papier et Ruban 
 
 
-
-text= @ ennonce.md
+text=
 
 # Fichier d'exemple pour que les élèves se testent
 @ exemple
 
 before==
 with open("ennonce.md") as f:
-    ennonce=f.read()
+    text=f.read()
 
 import build
 pltest0,pltest1=build.doit("data")
