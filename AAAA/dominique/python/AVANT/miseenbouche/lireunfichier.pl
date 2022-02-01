@@ -34,7 +34,7 @@ a=random.randint(5,123)
 createfilewithlignes("data1.txt",a,text="Hehe")
 
 
-pltest1= f"""
+pltest0= f"""
 >>> func1()
 {a}
 """
