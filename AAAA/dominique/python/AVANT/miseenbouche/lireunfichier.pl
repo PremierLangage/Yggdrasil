@@ -14,13 +14,13 @@ extends = /ComputerScience/python/template/pltest.pl
 text==
 L'objectif de cet exercice est de verifier que vous êtes capable lire et d'écrire dans un fichier.
 
-Vous avez 2 fonctions a écrire :
+Vous avez 3 fonctions a écrire :
 
-func1 qui lit le fichier "data1.txt" et qui retourne le nombre de lignes du fichier
+func0 qui lit le fichier "data1.txt" et qui retourne le nombre de lignes du fichier
 
-func2  lit  "data2.txt" qui contient des entiers (un par ligne) retourne la somme des ces entiers.
+func1  lit  "data2.txt" qui contient des entiers (un par ligne) retourne la somme des ces entiers.
 
-func3  qui lit le fichier  "data2.txt" et recopie dans un fichier "data3.txt" tous les entiers pairs.
+func2  qui lit le fichier  "data2.txt" et recopie dans un fichier "data3.txt" tous les entiers pairs.
 
 
 ==
