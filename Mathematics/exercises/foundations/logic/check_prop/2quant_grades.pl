@@ -17,7 +17,7 @@ items, indsol = [], []
 minmax_el = min([max(line) for line in table])
 maxmin_el = max([min(line) for line in table])
 minmax_mat = min([max(table[:][j]) for j in range(nb_mat)])
-maxmin_mat = max([min(table[:][j])for j in range(nb_mat)])
+maxmin_mat = max([min(table[:][j]) for j in range(nb_mat)])
 mintable = min([min(line) for line in table])
 maxtable = max([max(line) for line in table])
 
