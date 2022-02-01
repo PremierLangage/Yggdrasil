@@ -55,6 +55,8 @@ for q in [2, 3]:
 ==
 
 question ==
+{{maxmin_mat}}
+{{minmax_mat}}
 On considère l'application $! f !$ définie par la table ci-dessous. </br>
 
 <table>
