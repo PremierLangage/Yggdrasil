@@ -29,6 +29,7 @@ def createfilewithlignes(filename,n,text=""):
         for i in range(n):
             print("ligne ",i,text, file=f)
 
+import random
 a=random.randint(5,123)
 createfilewithlignes("data1.txt",a,text="Hehe")
 
