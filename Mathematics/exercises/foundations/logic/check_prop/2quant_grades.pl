@@ -66,15 +66,11 @@ On considère l'application $! f !$ définie par la table ci-dessous. </br>
 
 <table>
 <tr>
-<th> $! x !$ </th>
-{% for x in range(nf) %}
-<td> {{ x }} </td>
+{% for i in range(nb_el) %}
+<th> éléve {{i}} </th>
+{% for j in range(nb_matl) %}
+<td> {{ table[i][j] }} </td>
 {% endfor %}
-</tr>
-<tr>
-<th> $! f(x) !$ </th>
-{% for fx in f %}
-<td> {{ fx }} </td>
 {% endfor %}
 </tr>
 </table>
