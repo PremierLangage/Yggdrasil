@@ -21,6 +21,7 @@ maxmin_mat = max([min(table[:][j]) for j in range(nb_mat)])
 mintable = min([min(line) for line in table])
 maxtable = max([max(line) for line in table])
 
+ex = table[:][2]
 k = 0
 for q in [2, 3]:
     valprop = choice([True, False])
@@ -55,6 +56,7 @@ for q in [2, 3]:
 ==
 
 question ==
+{{ex}}
 {{maxmin_mat}}
 {{minmax_mat}}
 On considère l'application $! f !$ définie par la table ci-dessous. </br>
