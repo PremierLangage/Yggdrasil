@@ -42,15 +42,13 @@ with open("data2.txt","r") as f:
     for l in f:
         total += int(l.strip())
 
-pltest1= f"""
->>> func1() == {a}
+pltest0= f"""
+>>> func0() == {a} # ok 
 True
 """
 
-pltest0= f"""
->>> func2()
-{total}
->>> func2() == {total}
+pltest1= f"""
+>>> func2() == {total} # ok
 True
 """
 
