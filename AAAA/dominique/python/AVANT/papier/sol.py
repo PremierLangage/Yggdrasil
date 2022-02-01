@@ -31,14 +31,16 @@ def doit(filename):
             print(t,file=f)
             total += p
             totalr += r
-    pltest= f"""
-    >>> Question1()== {total} #
+    pltest0= f"""
+    >>> Question1()== {total} # Question1 
     True
+    """
+    pltest1= f"""
     >>> Question2()==  {totalr} #
     True
     """
 
-    return pltest
+    return pltest0,pltest1
 
                 
 if __name__== "__main__":
