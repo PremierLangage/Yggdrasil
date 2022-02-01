@@ -42,7 +42,7 @@ with open("data2.txt","r") as f:
     for l in f:
         total += int(l.strip())
 
-pltest0= f"""
+pltest1= f"""
 >>> func1() == {a}
 True
 """
@@ -66,7 +66,7 @@ def func1():
 def func2():
     with open("data2.txt","r") as f:
         return sum([int(x.strip()) for x in f])
-
+==
 
 
 
