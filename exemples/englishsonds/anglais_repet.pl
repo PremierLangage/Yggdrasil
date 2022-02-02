@@ -21,7 +21,6 @@ text==
 listen  <audio controls><source src="http://monge.univ-mlv.fr/~dr/flac/{{solutionvalue}}"> </audio>
 and select 
 
-<audio controls><source src="http://monge.univ-mlv.fr/~dr/flac/{{solutionvalue}}"> </audio>
 ==
 
 @ ../mkl.py
@@ -43,11 +42,7 @@ indexs = [ i for i,x in enumerate(solution) if x==solutionvalue ]
 
 title = Checkbox Group Component exemple
 
-text==
 
-Indiquez les maladies causées par des {{solutionvalue}}
-
-==
 
 
 
