@@ -78,11 +78,7 @@ for q in [6, 7]:
 ==
 
 question ==
-{{ex}}
-{{maxmin_mat}}
-{{minmax_mat}}
-On considère l'application $! f !$ définie par la table ci-dessous. </br>
-
+On considère le tableau de notes ci-dessous. </br>
 <table>
 <tr>
 {% for i in range(nb_el) %}
@@ -94,6 +90,8 @@ On considère l'application $! f !$ définie par la table ci-dessous. </br>
 {% endfor %}
 </table>
 </br>
+On note $! E !$ l'ensemble des élèves et $! M !$ l'ensemble des matières. Pour un élève $!e!$ et une matière $!m!$ donnés, $! \textrm{note}(e, m) $! désigne la note obtenue par $! e !$ dans la matière $! m !$.
+
 Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
 ==
 
