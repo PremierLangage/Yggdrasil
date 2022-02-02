@@ -9,10 +9,12 @@ title = Déterminer si une proposition est vraie
 
 before ==
 nb_el = randint(4, 5)
-nb_mat = 4
+nb_mat = radint(3, 4)
 table = [[randint(6, 18) for _ in range(nb_mat)] for _ in range(nb_el)] 
 noms = ["Alceste", "Philinte", "Arsinoé", "Célimène", "Oronte", "Éliante"]
+matieres = ["Maths", "Histoire", "Physique", "Sport", "Latin", "Anglais"]
 shuffle(noms)
+shuffle(matieres)
 items, indsol = [], []
 minmax_el = min([max(line) for line in table])
 maxmin_el = max([min(line) for line in table])
@@ -80,6 +82,12 @@ for q in [randint(0, 1), randint(2, 3), randint(4, 5), randint(6, 7)]:
 question ==
 On considère le tableau de notes ci-dessous. </br>
 <table>
+<tr>
+<td></td>
+{% for i in range(nb_mat) %}
+<td> {{ matieres[i] }} </td>
+{% endfor %}
+</tr>
 <tr>
 {% for i in range(nb_el) %}
 <td> {{ noms[i] }} </td>
