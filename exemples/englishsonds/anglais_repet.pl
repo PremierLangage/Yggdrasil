@@ -76,6 +76,8 @@ else:
 
 nbofga += right 
 
+grade=((nbofga/nbrofq)*100, message)
+
 import random,readcsv, mkl
 
 group.items,solution, debug = readcsv.getrandomselection(sourcecol="target",targetcol="source")
