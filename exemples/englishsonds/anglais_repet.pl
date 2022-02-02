@@ -89,10 +89,11 @@ for i, it in enumerate(group.items):
 indexs = [ i for i,x in enumerate(solution) if x==solutionvalue ]
 
 
-
-text= f"""
+text=""
+form= f"""
 listen  <audio controls><source src="http://monge.univ-mlv.fr/~dr/flac/{solutionvalue}"> </audio>
 and select
+{{ group|component }}
 """ 
 
 nbrofq=1
