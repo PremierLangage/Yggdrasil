@@ -10,6 +10,8 @@ group =: CheckboxGroup
 # PRESENT THE QUESTION TO THE STUDENT
 form==
 {{ group|component }}
+
+
 ==
 
 title =Take a listen
@@ -38,6 +40,10 @@ for i, it in enumerate(group.items):
     it['index'] = i
 indexs = [ i for i,x in enumerate(solution) if x==solutionvalue ]
 
+
+nbrofq=1
+nbofga=0.0
+
 ==
 
 title = Checkbox Group Component exemple
@@ -63,10 +69,35 @@ for item in group.items:
         item['css'] = 'error-border'
 
 
-if total == 0:
-    grade = (100, 'Right')
+if right==1:
+    message = "Good ! "
 else:
-    grade = ((right / total) * 100, f"{right} / {total}")
+    message = "Non." 
+
+nbofga += right 
+
+import random,readcsv, mkl
+
+group.items,solution, debug = readcsv.getrandomselection(sourcecol="target",targetcol="source")
+
+solutionvalue =random.choice(solution)
+
+for i, it in enumerate(group.items):
+    it['index'] = i
+indexs = [ i for i,x in enumerate(solution) if x==solutionvalue ]
+
+
+
+text= f"""
+{message}
+
+
+listen  <audio controls><source src="http://monge.univ-mlv.fr/~dr/flac/{solutionvalue}"> </audio>
+and select
+""" 
+
+nbrofq=1
+
 ==
 
 
