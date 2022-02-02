@@ -9,7 +9,7 @@ title = Déterminer si une proposition est vraie
 
 before ==
 nb_el = randint(4, 5)
-nb_mat = radint(3, 4)
+nb_mat = randint(3, 4)
 table = [[randint(6, 18) for _ in range(nb_mat)] for _ in range(nb_el)] 
 noms = ["Alceste", "Philinte", "Arsinoé", "Célimène", "Oronte", "Éliante"]
 matieres = ["Maths", "Histoire", "Physique", "Sport", "Latin", "Anglais"]
