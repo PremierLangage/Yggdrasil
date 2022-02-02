@@ -24,7 +24,7 @@ and select
 
 @ ../mkl.py
 
-@ readcsv.py [readcsv.py]
+@ /exemples/checkboxgroupcsv/readcsv.py [readcsv.py]
 
 before==
 import random,readcsv, mkl
