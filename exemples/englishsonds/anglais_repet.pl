@@ -91,9 +91,6 @@ indexs = [ i for i,x in enumerate(solution) if x==solutionvalue ]
 
 
 text= f"""
-{message}
-
-
 listen  <audio controls><source src="http://monge.univ-mlv.fr/~dr/flac/{solutionvalue}"> </audio>
 and select
 """ 
