@@ -68,9 +68,9 @@ for q in [randint(0, 1), randint(2, 3), randint(4, 5), randint(6, 7)]:
         items.append(rf"$! \forall m \in M, \exists e \in E,\ \textrm{{note}}(e, m) \ge {c} !$")
     elif q == 7:
         if valprop:
-            c = choice([maxmin_mat+1, maxmin_mat+2])
+            c = choice([maxmin_mat, maxmin_mat+1])
         else:
-            c = choice([maxmin_mat, maxmin_mat-1])
+            c = choice([maxmin_mat-1, maxmin_mat-2])
         items.append(rf"$! \forall m \in M, \exists e \in E,\ \textrm{{note}}(e, m) \le {c} !$")      
     if valprop:
         indsol.append(k)
