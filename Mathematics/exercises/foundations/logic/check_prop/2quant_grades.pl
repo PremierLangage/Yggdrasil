@@ -90,7 +90,7 @@ On considère le tableau de notes ci-dessous. </br>
 {% endfor %}
 </table>
 </br>
-On note $! E !$ l'ensemble des élèves et $! M !$ l'ensemble des matières. Pour un élève $!e!$ et une matière $!m!$ donnés, $! \textrm{note}(e, m) $! désigne la note obtenue par $! e !$ dans la matière $! m !$.
+On note $! E !$ l'ensemble des élèves et $! M !$ l'ensemble des matières. Pour un élève $!e!$ et une matière $!m!$ donnés, $! \textrm{note}(e, m) !$ désigne la note obtenue par $! e !$ dans la matière $! m !$.
 
 Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
 ==
