@@ -45,7 +45,6 @@ def evalans(strans):
     """
     Evaluate an answer when the solution is a tuple/vector.
     """
-    sol = tuple(sol)
     try:
         ans = latex2sympy(strans, local_dict)
     except:
