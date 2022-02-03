@@ -46,7 +46,7 @@ def evalans(strans):
     Evaluate an answer when the solution is a tuple/vector.
     """
     try:
-        ans = latex2sympy(strans, local_dict)
+        ans = latex2sympy(strans, {})
     except:
         return (-1,"NotTuple")
     if not isinstance(ans, tuple) or len(ans) != 2:
