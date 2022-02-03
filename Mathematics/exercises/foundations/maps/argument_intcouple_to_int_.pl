@@ -51,7 +51,7 @@ def evalans(strans):
         return (-1,"NotTuple")
     if not isinstance(ans, tuple) or len(ans) != 2:
         return (-1,"NotTuple")
-    if f(*ans) != y:
+    if not equal(f(*ans),  y):
         return (0, "NotEqual")
     return (100, "Success")
 score, error = evalans(answers['math'])
