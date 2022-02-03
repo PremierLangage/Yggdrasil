@@ -3,9 +3,9 @@ extends = /model/math/tuple.pl
 title = Antécédent
 
 before ==
-var('n m')
+var('x y')
 expr = choice(sympify(exprlist))
-f = Lambda((n, m), expr)
+f = Lambda((x, y), expr)
 
 E1 = choice(["N","Z"])
 if E1=="N":
@@ -27,7 +27,7 @@ y = f(x1, x2)
 
 v1, v2 = sorted(sample(['n', 'm', 'p', 'q'], 2))
 # conflict between subs
-expr = expr.subs([(n, Symbol(v1)), (m, Symbol(v2))])
+expr = expr.subs([(x, Symbol(v1)), (y, Symbol(v2))])
 sol = Tuple(3, 4)
 ==
 
