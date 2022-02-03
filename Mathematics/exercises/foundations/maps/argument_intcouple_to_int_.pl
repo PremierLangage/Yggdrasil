@@ -39,7 +39,7 @@ Déterminer un antécédent de $! {{y|latex}} !$ par  $! f !$
 
 evaluator ==
 from ast import literal_eval
-from evalsympy import eval_tuple
+from evalsympy import eval_tuple, equal
 from latex2sympy import latex2sympy
 def evalans(strans):
     """
