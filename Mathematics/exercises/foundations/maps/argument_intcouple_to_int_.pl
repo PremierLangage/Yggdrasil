@@ -36,3 +36,31 @@ On considère la fonction $! f : {{E1_tex}} \times {{E2_tex}} \rightarrow \mathb
 $$f( {{ v1 }}, {{ v2 }})= {{ expr|latex }}$$
 Déterminer un antécédent de $! {{y|latex}} !$ par  $! f !$
 ==
+
+evaluator ==
+from ast import literal_eval
+from evalsympy import eval_tuple
+from latex2sympy import latex2sympy
+def evalans(strans):
+    """
+    Evaluate an answer when the solution is a tuple/vector.
+    """
+    sol = tuple(sol)
+    try:
+        ans = latex2sympy(strans, local_dict)
+    except:
+        return (-1,"NotTuple")
+    if not isinstance(ans, tuple) or len(ans) != 2:
+        return (-1,"NotTuple")
+    if f(*ans) != y:
+        return (0, "NotEqual")
+    return (100, "Success")
+score, error = evalans(answers['math'])
+
+feedback = message[error]
+==
+
+
+solution ==
+La solution est.
+==
