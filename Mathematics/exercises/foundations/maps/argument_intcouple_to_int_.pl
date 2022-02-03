@@ -50,7 +50,7 @@ def evalans(strans):
     except:
         return (-1,"NotTuple")
     if not isinstance(ans, tuple) or len(ans) != 2:
-        return (-1,"NotTuple")
+        return (-1,"NotEquale")
     if f(*ans) != y:
         return (0, "NotEqual")
     return (100, "Success")
