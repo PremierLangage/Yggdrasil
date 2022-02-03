@@ -25,7 +25,7 @@ else:
 
 y = f(x1, x2)
 
-v1, v2 = sample(['n', 'm', 'p', 'q'], 2)
+v1, v2 = sorted(sample(['n', 'm', 'p', 'q'], 2))
 # conflict between subs
 expr = expr.subs([(n, Symbol(v1)), (m, Symbol(v2))])
 sol = Tuple(3, 4)
