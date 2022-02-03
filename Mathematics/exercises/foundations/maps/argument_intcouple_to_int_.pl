@@ -31,7 +31,7 @@ expr = expr.subs([(n, Symbol(v1)), (m, Symbol(v2))])
 sol = Tuple(3, 4)
 ==
 
-text ==
+question ==
 On considère la fonction $! f : {{E1_tex}} \times {{E2_tex}} \rightarrow \mathbb{Z} !$ telle que
 $$f( {{ v1 }}, {{ v2 }})= {{ expr|latex }}$$
 Déterminer un antécédent de $! {{y|latex}} !$ par  $! f !$
