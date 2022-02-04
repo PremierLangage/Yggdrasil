@@ -1,4 +1,4 @@
-extends = /model/math/tuple.pl
+extends = /model/math/expr.pl
 
 title = Antécédent
 
