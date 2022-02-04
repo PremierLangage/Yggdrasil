@@ -7,7 +7,7 @@ v1, v2 = sorted(sample(['n', 'm', 'p', 'q'], 2))
 a = Symbol(v1)
 b = Symbol(v2)
 
-[2*a - b, a**2+b, b**2 + a, a*b, (a+1)*b, (a-1)*b]
+lst = [2*a - b, a**2+b, b**2 + a, a*b, (a+1)*b, (a-1)*b]
 
 expr = choice(lst)
 f = Lambda((a, b), expr)
