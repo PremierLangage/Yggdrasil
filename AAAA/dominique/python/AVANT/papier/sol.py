@@ -36,7 +36,7 @@ def doit(filename):
     True
     """
     pltest1= f"""
-    >>> Question2()==  {totalr} #
+    >>> Question2()==  {totalr} # Question2
     True
     """
 
