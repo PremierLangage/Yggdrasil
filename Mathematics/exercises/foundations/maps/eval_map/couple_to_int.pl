@@ -4,13 +4,18 @@ title = Antécédent
 
 before ==
 v1, v2 = sorted(sample(['n', 'm', 'p', 'q'], 2))
-a = Symbol(v1)
-b = Symbol(v2)
+x = Symbol(v1)
+y = Symbol(v2)
 
-lst = [2*a - b, a**2+b, b**2 + a, a*b, (a+1)*b, (a-1)*b]
+a, b = sample([x, y], 2)
+c1, c2 = sample([1, randint(2, 3)], 2)
+c3 = choice([-3, -2, 2, 3])
+c4 = randint(-2, 2, [0])
+s = choice([-1, 1])
+lst = [c1*a + s*c2*b, c1*a**2 + s*c2*b, c3*a*(b+c4), c3*a*(b**2+c4), c3*a**2*(b+c4)]
 
 expr = choice(lst)
-f = Lambda((a, b), expr)
+f = Lambda((x, y), expr)
 
 x1 = randint(-4, 4)
 x2 = randint(-4, 4)
@@ -22,8 +27,6 @@ On considère la fonction $! f : \mathbb{Z} \times \mathbb{Z} \rightarrow \mathb
 $$f( {{ v1 }}, {{ v2 }})= {{ expr|latex }}$$
 Déterminer $! f ( {{ x1 }}, {{ x2 }}) !$
 ==
-
-
 
 solution ==
 La solution est.
