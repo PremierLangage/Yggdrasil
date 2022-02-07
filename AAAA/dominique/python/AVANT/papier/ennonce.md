@@ -1,6 +1,8 @@
-Les elfes manquent de papier d'emballage et doivent donc en commander davantage. Ils ont une liste des dimensions (longueur l, largeur l et hauteur h) de chaque cadeau et veulent seulement commander exactement ce dont ils ont besoin.
+Les elfes manquent de papier d'emballage et doivent donc en commander davantage. Ils ont une liste des dimensions (longueur l, largeur L et hauteur h) 
+de chaque cadeau et veulent seulement commander exactement ce dont ils ont besoin.
 
-Heureusement, chaque cadeau est une boîte (un parfait prisme rectangulaire droit), ce qui facilite un peu le calcul du papier d'emballage requis pour chaque cadeau : trouvez la surface de la boîte, qui est de 2*l*l + 2*l*h + 2*h*l. Les lutins ont aussi besoin d'un peu de papier supplémentaire pour chaque cadeau : la zone du plus petit côté.
+Heureusement, chaque cadeau est une boîte (un parfait prisme rectangulaire droit), ce qui facilite un peu le calcul du papier d'emballage
+requis pour chaque cadeau : trouvez la surface de la boîte, qui est de $$2lL + 2lh + 2hL$$. Les lutins ont aussi besoin d'un peu de papier supplémentaire pour chaque cadeau : la zone du plus petit côté.
 
 Par example:
  
