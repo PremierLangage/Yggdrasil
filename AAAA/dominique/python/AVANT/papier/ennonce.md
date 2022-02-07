@@ -2,7 +2,7 @@ Les elfes manquent de papier d'emballage et doivent donc en commander davantage.
 de chaque cadeau et veulent seulement commander exactement ce dont ils ont besoin.
 
 Heureusement, chaque cadeau est une boîte (un parfait prisme rectangulaire droit), ce qui facilite un peu le calcul du papier d'emballage
-requis pour chaque cadeau : trouvez la surface de la boîte, qui est de %$2lL + 2lh + 2hL$%. Les lutins ont aussi besoin d'un peu de papier supplémentaire pour chaque cadeau : la zone du plus petit côté.
+requis pour chaque cadeau : trouvez la surface de la boîte, qui est de $%2lL + 2lh + 2hL%$. Les lutins ont aussi besoin d'un peu de papier supplémentaire pour chaque cadeau : la zone du plus petit côté.
 
 Par example:
  
