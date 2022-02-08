@@ -20,6 +20,12 @@ class MathInput:
         self.suffix = kwargs.get('suffix', '')
         self.disabled = kwargs.get('disabled', False)
 
+    def set_keypad(self, keypad):
+        self.keypad = keypad.copy()
+        for i, val in enumerate(keypad):
+            if isinstance(val, str):
+                self.keypad[i] = std_keypad[val]
+
     def show(self, correct):
         if correct:
             self.suffix = r'<i class="fas fa-check" style="color: green"></i>'
