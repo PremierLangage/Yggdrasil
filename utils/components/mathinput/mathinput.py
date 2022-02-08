@@ -11,7 +11,7 @@ class MathInput:
         self.suffix = kwargs.get('suffix', '')
         self.disabled = kwargs.get('disabled', False)
 
-    def visual(self, correct):
+    def show(self, correct):
         if correct:
             self.suffix = r'<i class="fas fa-check" style="color: green"></i>'
         else:
