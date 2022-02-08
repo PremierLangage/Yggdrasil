@@ -5,9 +5,6 @@ jinja_keys = ["text", "inputblock", "solution", "prefix"]
 
 keypad = ["+infty", "-infty"]
 
-question ==
-{{ score }}
-==
 
 process ==
 embed = embed.replace("#", r"\MathQuillMathField{}")
