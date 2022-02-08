@@ -12,7 +12,6 @@ question ==
 ==
 
 process ==
-
 embed = embed.replace("#", r"\MathQuillMathField{}")
 ==
 
