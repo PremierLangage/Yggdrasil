@@ -7,7 +7,3 @@ jinja_keys = ["inputblock"]
 before ==
 sol = 0
 ==
-
-inputblock ==
-
-==
