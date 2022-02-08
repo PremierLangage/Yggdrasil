@@ -6,7 +6,7 @@ jinja_keys = ["inputblock", "question", "solution"]
 keypad = ["+infty", "-infty"]
 
 
-process ==
+headerbefore ==
 from mathinput import MathInput
 input = MathInput()
 input.set_keypad(keypad)
