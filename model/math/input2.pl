@@ -3,25 +3,16 @@ extends = /model/basic/temp.pl
 
 jinja_keys = ["inputblock", "question"]
 
-before ==
-xA = randint(-5, 5)
-yA = randint(-5, 5)
-xB = randint(-5, 5)
-yB = randint(-5, 5)
-sol = sqrt((xA-xB)**2 + (yA-yB)**2)
-==
-
-question == 
-Dans le plan muni d'un repère orthonormé on considère les points de coordonnées 
-$! {{ (xA, yA) }} !$ et $! {{ (xB, yB) }}. !$
-<br>
-Quelle est la distance entre ces deux points ?
-==
-
 keypad = ["+infty", "-infty"]
 
 
 process ==
+from mathinput import MathInput
+input = MathInput()
+input.set_keypad(keypad)
+input.value = ""
+input.prefix = input_prefix
+input.keypad = keypad
 embed = embed.replace("#", r"\MathQuillMathField{}")
 ==
 
@@ -39,14 +30,6 @@ input.disabled = True
 input.show()
 ==
 
-before ==
-from mathinput import MathInput
-input = MathInput()
-input.set_keypad(keypad)
-input.value = ""
-input.prefix = input_prefix
-input.keypad = keypad
-==
 
 embed =
 
