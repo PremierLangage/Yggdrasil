@@ -14,19 +14,6 @@ question ==
 process ==
 
 embed = embed.replace("#", r"\MathQuillMathField{}")
-
-predefined_keypad = {
-    "emptyset": {"label": "$! \\varnothing !$", "action": "cmd", "value": "\\empty"},
-    "cup": {"label": "$! \\cup !$", "action": "cmd", "value": "\\cup"},
-    "sqrt": {"label": "$! \\sqrt{\\phantom{x}} !$", "action": "cmd", "value": "\\sqrt"},
-    "infty": {"label": "$! \\infty !$", "action": "cmd", "value": "\\infty"},
-    "+infty": {"label": "$! +\\infty !$", "action": "write", "value": "+\\infty"},
-    "-infty": {"label": "$! -\\infty !$", "action": "write", "value": "-\\infty"}
-}
-
-for i, val in enumerate(keypad):
-  if isinstance(val, str):
-    keypad[i] = predefined_keypad[val]
 ==
 
 title =
@@ -46,6 +33,7 @@ input.show()
 before ==
 from mathinput import MathInput
 input = MathInput()
+input.setçkeypad(keypad)
 input.value = ""
 input.prefix = input_prefix
 input.keypad = keypad
