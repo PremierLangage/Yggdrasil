@@ -21,7 +21,7 @@ class MathInput:
         self.disabled = kwargs.get('disabled', False)
 
     def set_keypad(self, keypad):
-    """Add a keypad to the input field."""
+        """Add a keypad to the input field."""
         self.keypad = keypad
         for i, val in enumerate(keypad):
             if isinstance(val, str):
