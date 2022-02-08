@@ -3,6 +3,10 @@ extends = /model/basic/temp.pl
 
 jinja_keys = ["inputblock"]
 
+before ==
+x = 1
+==
+
 keypad = ["+infty", "-infty"]
 
 
