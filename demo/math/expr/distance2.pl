@@ -3,6 +3,7 @@ extends = /model/math/expr2.pl
 title = Calculer la distance entre deux points du plan
 
 before ==
+input.value = "0"
 xA = randint(-5, 5)
 yA = randint(-5, 5)
 xB = randint(-5, 5)
