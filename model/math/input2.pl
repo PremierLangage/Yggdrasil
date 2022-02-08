@@ -1,7 +1,7 @@
 extends = /model/math/math.pl
 extends = /model/basic/temp.pl
 
-jinja_keys = ["inputblock", "question"]
+jinja_keys = ["inputblock", "question", "solution"]
 
 keypad = ["+infty", "-infty"]
 
