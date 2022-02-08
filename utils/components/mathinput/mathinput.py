@@ -4,7 +4,7 @@ class MathInput:
 
     def __init__(self, **kwargs):
         self.__MathInput__ = True
-        self.id = kwargs.get('id', "MathInput"+str(uuid4()))
+        self.id = kwargs.get('id', "MathInput"+"1")
         self.keypad = kwargs.get('keypad', [])
         self.value = kwargs.get('value', '')
         self.prefix = kwargs.get('prefix', '')
