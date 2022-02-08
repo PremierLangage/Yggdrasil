@@ -5,7 +5,6 @@ jinja_keys = ["text", "inputblock", "solution", "prefix"]
 
 keypad = ["+infty", "-infty"]
 
-
 question ==
 {{ score }}
 ==
