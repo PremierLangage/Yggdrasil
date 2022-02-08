@@ -21,7 +21,7 @@ class MathInput:
         self.disabled = kwargs.get('disabled', False)
 
     def set_keypad(self, keypad):
-        self.keypad = keypad.copy()
+        self.keypad = keypad
         for i, val in enumerate(keypad):
             if isinstance(val, str):
                 self.keypad[i] = std_keypad[val]
