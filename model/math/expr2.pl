@@ -16,3 +16,6 @@ score, error = eval_expr(answers[input.id], sol, checkratsimp=checkratsimp,equal
 feedback = message[error]
 ==
 
+solution ==
+La solution est $! {{ sol|latex }} !$.
+==
