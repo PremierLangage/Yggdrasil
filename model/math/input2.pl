@@ -33,7 +33,7 @@ input.show()
 before ==
 from mathinput import MathInput
 input = MathInput()
-input.setçkeypad(keypad)
+input.set_keypad(keypad)
 input.value = ""
 input.prefix = input_prefix
 input.keypad = keypad
