@@ -1,4 +1,3 @@
-
 extends = /model/math/math.pl
 extends = /model/basic/temp.pl
 
