@@ -40,7 +40,7 @@ tplpage =@ /model/basic/template.html
 evaluator ==
 input.value = answers[input.id]
 input.disabled = True
-input.visual(True)
+input.show()
 ==
 
 before ==
