@@ -4,7 +4,7 @@ extends = /model/basic/temp.pl
 
 jinja_keys = ["text", "inputblock", "solution", "prefix"]
 
-keypad = []
+keypad = ["+infty","-infty"]
 
 
 question ==
