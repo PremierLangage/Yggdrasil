@@ -40,4 +40,5 @@ for input in [input1, input2]:
     input.show(score0, feedback0)
     if score0 > -1:
         input.disabled = True
+score = min(scores)
 ==
