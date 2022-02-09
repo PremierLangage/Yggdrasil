@@ -31,7 +31,7 @@ class MathInput:
         if score == 100:
             self.suffix = r'<i class="fas fa-check" style="color: green"></i>'
         elif score == -1:
-            self.suffix = rf'<i class="fas fa-danger" style="color: blue; cursor: pointer;" data-toggle="popover" data-content="{msg}"></i>'
+            self.suffix = rf'<i class="fas fa-exclamation-triangle" style="color: blue; cursor: pointer;" data-toggle="popover" data-content="{msg}"></i>'
         else:
             self.suffix = rf'<i class="fas fa-times" style="color: red; cursor: pointer;" data-toggle="popover" data-content="{msg}"></i>'
             #self.suffix = r'<i class="fas fa-times" style="color: red"></i>'
