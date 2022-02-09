@@ -46,3 +46,6 @@ class MathInput:
         else:
             self.suffix = rf'<i class="fas fa-times" style="margin-left: 0.5em; color: red; cursor: pointer;" data-toggle="popover" data-content="{msg}"></i>'
             #self.suffix = r'<i class="fas fa-times" style="color: red"></i>'
+    
+    def hide_feedback(self):
+        self.suffix = ""
