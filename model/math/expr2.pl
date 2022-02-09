@@ -8,7 +8,6 @@ modulo = 0
 
 evaluator ==
 input.value = answers[input.id]
-#input.disabled = True
 from ast import literal_eval
 from sympy import sympify
 from evalsympy import eval_expr
@@ -17,6 +16,8 @@ if modulo != 0:
 score, error = eval_expr(answers[input.id], sol, checkratsimp=checkratsimp,equality=equality, unauthorized_func=unauthorized_func, modulo=modulo, local_dict=sympify(symbol_dict))
 feedback = message[error]
 input.show(score, feedback)
+if score > -1:
+    input.disabled == True
 ==
 
 solution ==
