@@ -25,3 +25,19 @@ inputblock ==
 {{ input1|mathinput }}
 {{ input2|mathinput }}
 ==
+
+evaluator ==
+from sympy import sympify
+from evalsympy import eval_expr
+scores = []
+errors = []
+for input in [input1, input2]:
+    input.value = answers[input.id]
+    score0, error0 = eval_expr(input.value, sol, checkratsimp=checkratsimp,equality=equality, unauthorized_func=unauthorized_func, modulo=modulo, local_dict=sympify(symbol_dict))
+    scores.append(score0)
+    errors.append(error0)
+    feedback0 = message[error]
+    input.show(score0, feedback0)
+    if score0 > -1:
+        input.disabled = True
+==
