@@ -20,3 +20,8 @@ $! {{ (xA, yA) }} !$ et $! {{ (xB, yB) }}. !$
 <br>
 Quelle est la distance entre ces deux points ?
 ==
+
+inputblock ==
+{{ input1|mathinput }}
+{{ input2|mathinput }}
+==
