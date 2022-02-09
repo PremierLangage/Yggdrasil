@@ -18,7 +18,7 @@ class MathInput:
         self.value = kwargs.get('value', '')
         self.prefix = kwargs.get('prefix', '')
         self.suffix = kwargs.get('suffix', '')
-        self.disabled = kwargs.get('disabled', False)
+        self.disabled = kwargs.get('disabled', True)
 
     def set_keypad(self, keypad):
         """Add a keypad to the input field."""
