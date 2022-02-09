@@ -16,7 +16,7 @@ if modulo != 0:
     modulo = sympify(modulo)
 score, error = eval_expr(answers[input.id], sol, checkratsimp=checkratsimp,equality=equality, unauthorized_func=unauthorized_func, modulo=modulo, local_dict=sympify(symbol_dict))
 feedback = message[error]
-input.show(False, feedback)
+input.show(score, feedback)
 ==
 
 solution ==
