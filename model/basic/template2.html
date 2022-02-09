@@ -1,0 +1,29 @@
+<div class="question">
+{{ question|markdown }}
+</div>
+<div style="display: block; margin-top: 1em;">
+{{ inputblock|markdown|safe }}
+</div>
+{% if score >= 0 and score < 100 and solution|length > 1%}
+<hr class="divide">
+<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
+Voir la solution.
+</a>
+<div class="collapse" id="collapseSolution">
+{{ solution }}
+</div>
+{% endif %}
+<hr class="divide">
+{% if score >=0 %}
+<button class="btn btn-primary" onclick="document.location.reload(true);"> Nouveau </button>
+{% else %}
+<button class="btn btn-primary action-submit">Valider</button>
+{% endif %}
+{% if score == 100 %}
+<button type="button" style="float: right;" class="btn success-state">Score : {{score}} </button>
+{% elif score >= 0 and score < 100 %}
+<button type="button" style="float: right;" class="btn neutral-state">Score : {{score}} </button>
+{% else %}
+<button type="button" style="float: right;" class="btn neutral-state">Score : - </button>
+{% endif %}
+
