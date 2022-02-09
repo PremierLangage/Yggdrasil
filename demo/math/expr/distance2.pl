@@ -36,7 +36,7 @@ for input in [input1, input2]:
     input.value = answers[input.id]
     score0, error0 = eval_expr(input.value, sol, checkratsimp=checkratsimp,equality=equality, unauthorized_func=unauthorized_func, modulo=modulo, local_dict=sympify(symbol_dict))
     input.score = score0
-    input.feedback0= message[error0]
+    input.feedback = message[error0]
 
 if -1 in [input.score for input in lstinput]:
     score = -1
