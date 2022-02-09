@@ -35,3 +35,14 @@ class MathInput:
         else:
             self.suffix = rf'<i class="fas fa-times" style="margin-left: 0.5em; color: red; cursor: pointer;" data-toggle="popover" data-content="{msg}"></i>'
             #self.suffix = r'<i class="fas fa-times" style="color: red"></i>'
+
+    def display_feeedback(self):
+        score = self.score
+        msg = self.feeedback
+        if score == 100:
+            self.suffix = r'<i class="fas fa-check" style="margin-left: 0.5em; color: green"></i>'
+        elif score == -1:
+            self.suffix = rf'<i class="fas fa-exclamation-triangle" style="margin-left: 0.5em; color: lightblue; cursor: pointer;" data-toggle="popover" data-content="{msg}"></i>'
+        else:
+            self.suffix = rf'<i class="fas fa-times" style="margin-left: 0.5em; color: red; cursor: pointer;" data-toggle="popover" data-content="{msg}"></i>'
+            #self.suffix = r'<i class="fas fa-times" style="color: red"></i>'
