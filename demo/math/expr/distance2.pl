@@ -43,6 +43,8 @@ if -1 in [input.score for input in lstinput]:
     for input in lstinput:
         if input.score == -1:
             input.display_feedback()
+        else:
+            input.hide_feedback()
 else:
     score = 3
     input.display_feedback()
