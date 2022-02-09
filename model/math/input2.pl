@@ -64,5 +64,12 @@ function onBeforeSubmitPL() {
 </script>
 ==
 
+javascript.popover ==
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+==
 
 extends = messages_math.pl
