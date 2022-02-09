@@ -17,7 +17,7 @@ score, error = eval_expr(answers[input.id], sol, checkratsimp=checkratsimp,equal
 feedback = message[error]
 input.show(score, feedback)
 if score > -1:
-    input.disabled == True
+    input.disabled = True
 ==
 
 solution ==
