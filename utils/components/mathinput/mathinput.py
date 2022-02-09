@@ -27,9 +27,11 @@ class MathInput:
             if isinstance(val, str):
                 self.keypad[i] = std_keypad[val]
 
-    def show(self, correct, msg=""):
-        if correct:
+    def show(self, score, msg=""):
+        if score == 100:
             self.suffix = r'<i class="fas fa-check" style="color: green"></i>'
+        elif score == -1:
+            self.suffix = rf'<i class="fas fa-danger" style="color: blue; cursor: pointer;" data-toggle="popover" data-content="{msg}"></i>'
         else:
             self.suffix = rf'<i class="fas fa-times" style="color: red; cursor: pointer;" data-toggle="popover" data-content="{msg}"></i>'
             #self.suffix = r'<i class="fas fa-times" style="color: red"></i>'
