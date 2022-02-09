@@ -38,7 +38,7 @@ class MathInput:
 
     def display_feedback(self):
         score = self.score
-        msg = self.feeedback
+        msg = self.feedback
         if score == 100:
             self.suffix = r'<i class="fas fa-check" style="margin-left: 0.5em; color: green"></i>'
         elif score == -1:
