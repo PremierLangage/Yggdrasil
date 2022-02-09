@@ -9,7 +9,6 @@ modulo = 0
 evaluator ==
 input.value = answers[input.id]
 #input.disabled = True
-input.show()
 from ast import literal_eval
 from sympy import sympify
 from evalsympy import eval_expr
