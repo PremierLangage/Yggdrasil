@@ -27,8 +27,9 @@ class MathInput:
             if isinstance(val, str):
                 self.keypad[i] = std_keypad[val]
 
-    def show(self, correct):
+    def show(self, correct, msg=""):
         if correct:
             self.suffix = r'<i class="fas fa-check" style="color: green"></i>'
         else:
-            self.suffix = r'<i class="fas fa-times" style="color: red"></i></i>'
+            self.suffix = rf'<i class="fas fa-times" style="color: red; cursor: pointer;" data-toggle="popover" data-content="{msg}"></i>'
+            #self.suffix = r'<i class="fas fa-times" style="color: red"></i>'
