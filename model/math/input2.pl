@@ -22,7 +22,7 @@ text =
 
 form = 
 
-tplpage =@ /model/basic/template.html
+tplpage =@ /model/basic/templat2e.html
 
 evaluator ==
 input.value = answers[input.id]
