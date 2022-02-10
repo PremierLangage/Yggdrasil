@@ -54,6 +54,14 @@ class MathInput:
         self.suffix = ""
 
     def eval(self):
-        self.custom_eval()
+        if self.evalmode == "custom"
+            self.eval_custom()
+        else:
+            self.eval_auto()
 
 class MathExpr(MathInput):
+
+    def eval_auto(self):
+        score, error = eval_expr(self.value, self.sol, checkratsimp=checkratsimp, equality=equality, unauthorized_func=unauthorized_func, modulo=modulo, local_dict=sympify(symbol_dict))
+        self.score = 0
+        self.feedback = error
