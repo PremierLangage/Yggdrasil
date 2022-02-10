@@ -57,6 +57,6 @@ if -1 in [input.score for input in lstinput]:
         else:
             input.hide_feedback()
 else:
-    score = 3
-    input.display_feedback()
+    for input in lstinput:
+        input.display_feedback()
 ==
