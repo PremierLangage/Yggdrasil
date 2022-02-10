@@ -55,7 +55,7 @@ class MathInput:
         self.suffix = ""
 
     def eval(self):
-        if self.evalmode == "custom"
+        if self.evalmode == "custom":
             self.eval_custom()
         else:
             self.eval_auto()
