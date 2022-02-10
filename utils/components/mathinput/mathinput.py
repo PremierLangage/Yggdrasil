@@ -20,6 +20,8 @@ class MathInput:
         self.suffix = kwargs.get('suffix', '')
         self.disabled = kwargs.get('disabled', False)
         self.sol = kwargs.get('sol', None)
+        self.evalmode = kwargs.get('evalmode', 'auto')
+        self.evalparam = kwargs.get('evalparam', {})
 
     def set_keypad(self, keypad):
         """Add a keypad to the input field."""
@@ -53,3 +55,5 @@ class MathInput:
 
     def eval(self):
         self.custom_eval()
+
+class MathExpr(MathInput):
