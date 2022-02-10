@@ -50,3 +50,6 @@ class MathInput:
     
     def hide_feedback(self):
         self.suffix = ""
+
+    def eval(self):
+        self.custom_eval()
