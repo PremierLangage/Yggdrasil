@@ -46,8 +46,9 @@ errors = []
 lstinput = [input1, input2]
 for input in [input1, input2]:
     input.value = answers[input.id]
+    input.sol = sol
     add_custom_eval(input, myeval)
-    input.myeval()
+    input.custom_eval()
 
 if -1 in [input.score for input in lstinput]:
     score = -1
