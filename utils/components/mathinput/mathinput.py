@@ -62,7 +62,7 @@ class MathInput:
 
     def eval_auto(self):
         score, error = eval_expr(self.value, self.sol, **self.evalparam)
-        self.score = 0
+        self.score = score
         self.feedback = error
 
 class MathExpr(MathInput):
