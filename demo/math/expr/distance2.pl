@@ -37,7 +37,7 @@ from evalsympy import eval_expr
 
 def myeval(self):
     score0, error0 = eval_expr(self.value, sol, checkratsimp=checkratsimp,equality=equality, unauthorized_func=unauthorized_func, modulo=modulo, local_dict=sympify(symbol_dict))
-    sel.score = score0
+    self.score = score0
     self.feedback = message[error0]
 
 
