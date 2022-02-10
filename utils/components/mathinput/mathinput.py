@@ -1,4 +1,5 @@
 from uuid import uuid4
+from evalsympy import eval_expr
 
 std_keypad = {
     "emptyset": {"label": "$! \\varnothing !$", "action": "cmd", "value": "\\empty"},
