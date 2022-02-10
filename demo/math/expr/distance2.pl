@@ -27,6 +27,7 @@ inputblock ==
 ==
 
 evaluator ==
+from functools import partial
 from sympy import sympify
 from evalsympy import eval_expr
 scores = []
