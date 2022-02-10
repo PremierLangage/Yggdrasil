@@ -45,7 +45,7 @@ def myeval(self):
 lstinput = [input1, input2]
 for input in [input1, input2]:
     input.value = answers[input.id]
-    add_custom_eval(input, myeval)
+    #add_custom_eval(input, myeval)
     input.eval()
 
 if -1 in [input.score for input in lstinput]:
