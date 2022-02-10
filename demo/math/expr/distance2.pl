@@ -28,6 +28,10 @@ inputblock ==
 
 evaluator ==
 from functools import partial
+def add_method(obj, func):
+    'Bind a function and store it in an object'
+    setattr(obj, func.__name__, partial(func, obj))
+    
 from sympy import sympify
 from evalsympy import eval_expr
 scores = []
