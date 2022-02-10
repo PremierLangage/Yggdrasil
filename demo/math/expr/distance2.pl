@@ -38,13 +38,10 @@ from sympy import sympify
 from evalsympy import eval_expr
 
 def myeval(self):
-    score0, error0 = eval_expr(self.value, self.sol, checkratsimp=checkratsimp,equality=equality, unauthorized_func=unauthorized_func, modulo=modulo, local_dict=sympify(symbol_dict))
+    score0, error0 = eval_expr(self.value, self.sol, checkratsimp=checkratsimp, equality=equality, unauthorized_func=unauthorized_func, modulo=modulo, local_dict=sympify(symbol_dict))
     self.score = score0
     self.feedback = message[error0]
 
-
-scores = []
-errors = []
 lstinput = [input1, input2]
 for input in [input1, input2]:
     input.value = answers[input.id]
