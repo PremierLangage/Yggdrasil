@@ -46,7 +46,6 @@ errors = []
 lstinput = [input1, input2]
 for input in [input1, input2]:
     input.value = answers[input.id]
-    input.sol = sol
     add_custom_eval(input, myeval)
     input.custom_eval()
 
