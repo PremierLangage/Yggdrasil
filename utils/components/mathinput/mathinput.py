@@ -60,9 +60,14 @@ class MathInput:
         else:
             self.eval_auto()
 
+    def eval_auto(self):
+        score, error = eval_expr(self.value, self.sol, **self.evalparam)
+        self.score = 0
+        self.feedback = error
+
 class MathExpr(MathInput):
 
     def eval_auto(self):
-        score, error = eval_expr(self.value, self.sol, checkratsimp=checkratsimp, equality=equality, unauthorized_func=unauthorized_func, modulo=modulo, local_dict=sympify(symbol_dict))
+        score, error = eval_expr(self.value, self.sol, **self.evalparam)
         self.score = 0
         self.feedback = error
