@@ -28,15 +28,15 @@ inputblock ==
 
 evaluator ==
 from functools import partial
-def add_method(obj, func):
+def add_custom_eval(obj, func):
     'Bind a function and store it in an object'
-    setattr(obj, func.__name__, partial(func, obj))
+    setattr(obj, "custom_eval", partial(func, obj))
 
 from sympy import sympify
 from evalsympy import eval_expr
 
 def myeval(self):
-    score0, error0 = eval_expr(self.value, sol, checkratsimp=checkratsimp,equality=equality, unauthorized_func=unauthorized_func, modulo=modulo, local_dict=sympify(symbol_dict))
+    score0, error0 = eval_expr(self.value, self.sol, checkratsimp=checkratsimp,equality=equality, unauthorized_func=unauthorized_func, modulo=modulo, local_dict=sympify(symbol_dict))
     self.score = score0
     self.feedback = message[error0]
 
@@ -46,7 +46,7 @@ errors = []
 lstinput = [input1, input2]
 for input in [input1, input2]:
     input.value = answers[input.id]
-    add_method(input, myeval)
+    add_custom_eval(input, myeval)
     input.myeval()
 
 if -1 in [input.score for input in lstinput]:
