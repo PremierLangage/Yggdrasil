@@ -24,7 +24,12 @@ texte intégral de l'oeuvre du même nom d'E. Zola.
 **grep** sera la commande centrale de la plupart des exercices de cette 
 feuille. Vous devrez aussi probablement établir un grand nombre d'expressions 
 rationnelles. Faites attention aux consignes : souvent il faut produire un 
-résultat numérique seul sur une ligne.
+résultat numérique seul sur une ligne. 
+
+Attention, `wc`, par exemple, begaie
+le nom du fichier donné en argument lorsque l'on n'utilise pas l'entrée standard. 
+Avec un fichier en argument, on ne peut pas écrire un résultat numérique seul
+sur une ligne. Le script qui évalue a un tout petit cerveau, pensez à lui !
 ==
 
 # count (words, lines, chars) in Germinal.txt
