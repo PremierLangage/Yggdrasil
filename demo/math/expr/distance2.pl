@@ -14,6 +14,7 @@ yB = randint(-5, 5)
 sol = sqrt((xA-xB)**2 + (yA-yB)**2)
 input1.sol = sol
 input2.sol = sol
+lstinput = [input1, input2]
 ==
 
 question == 
