@@ -28,7 +28,8 @@ import random
 
 things = [("le nombre de lignes vides", "3284\n"),
           ("le nombre de lignes commançant par une lettre majuscule", "1878\n"),
-          ("le nombre de lignes commançant par un tiret (touche moins)", "1356\n")]
+          ("le nombre de lignes commançant par un tiret (touche moins)", "1356\n"),
+          ("le nombre de lignes commançant par l'article (le mot) Le (L majuscute, e minuscule puis espace)", "89\n"),]
 (name_thing, expected_stdout) = random.choice(things)
 ==
 
