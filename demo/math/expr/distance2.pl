@@ -43,7 +43,7 @@ def myeval(self):
     self.feedback = message[error0]
 
 lstinput = [input1, input2]
-for input in [input1, input2]:
+for input in lstinput:
     input.value = answers[input.id]
     # add_custom_eval(input, myeval)
     input.eval()
@@ -56,7 +56,7 @@ if -1 in [input.score for input in lstinput]:
         else:
             input.hide_feedback()
 else:
-    score = 3
+    sum([input.score for input in lstinput])/2
     for input in lstinput:
         input.display_feedback()
 ==
