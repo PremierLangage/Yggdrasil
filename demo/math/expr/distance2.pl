@@ -2,25 +2,18 @@ extends = /model/math/expr2.pl
 
 title = Calculer la distance entre deux points du plan
 
-before ==
+before == #|python|
+# Créer champs de réponse
 input1 = MathInput()
 input1.prefix = "Réponse 1 :"
+input1.sol = sqrt(2)
 input2 = MathInput()
-input2.prefix = "Réponse 1 :"
-xA = randint(-5, 5)
-yA = randint(-5, 5)
-xB = randint(-5, 5)
-yB = randint(-5, 5)
-sol = sqrt((xA-xB)**2 + (yA-yB)**2)
-input1.sol = sol
-input2.sol = sol
+input2.prefix = "Réponse 2 :"
+input2.sol = sqrt(3)
 ==
 
 question == 
-Dans le plan muni d'un repère orthonormé on considère les points de coordonnées 
-$! {{ (xA, yA) }} !$ et $! {{ (xB, yB) }}. !$
-<br>
-Quelle est la distance entre ces deux points ?
+Entrer la racine de 2 et la racine de 3 ?
 ==
 
 inputblock ==
