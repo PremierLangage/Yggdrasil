@@ -28,6 +28,8 @@ def add_custom_eval(obj, func):
     'Bind a function and store it in an object'
     setattr(obj, "custom_eval", partial(func, obj))
 
+def average(lst):
+    return sum(lst)/len(lst)
 from sympy import sympify
 from evalsympy import eval_expr
 
@@ -50,7 +52,7 @@ if -1 in [input.score for input in lstinput]:
         else:
             input.hide_feedback()
 else:
-    score = sum([input.score for input in lstinput])/2
+    score = int(average([input.score for input in lstinput]))
     for input in lstinput:
         input.display_feedback()
 ==
