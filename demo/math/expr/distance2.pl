@@ -56,7 +56,7 @@ if -1 in [input.score for input in lstinput]:
         else:
             input.hide_feedback()
 else:
-    sum([input.score for input in lstinput])/2
+    score = sum([input.score for input in lstinput])/2
     for input in lstinput:
         input.display_feedback()
 ==
