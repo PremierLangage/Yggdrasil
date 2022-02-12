@@ -10,6 +10,7 @@ input1.sol = sqrt(2)
 input2 = MathInput()
 input2.prefix = "Réponse 2 :"
 input2.sol = sqrt(3)
+sol = 0
 ==
 
 question == 
