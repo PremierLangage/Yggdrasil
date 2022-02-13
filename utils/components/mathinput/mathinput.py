@@ -12,7 +12,7 @@ std_keypad = {
 
 class MathInput:
 
-    msg = {}
+    message = {}
 
     def __init__(self, **kwargs):
         self.__MathInput__ = True
@@ -63,4 +63,4 @@ class MathInput:
         elif self.type == "complex":
             score, error = eval_complex(self.value, self.sol, **self.evalparam)
         self.score = score
-        self.feedback = MathInput.msg.get('error', f"Error: {error}")
+        self.feedback = MathInput.message.get('error', f"Error: {error}")
