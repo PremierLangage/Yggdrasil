@@ -4,14 +4,14 @@ title = Calculer la distance entre deux points du plan
 
 before == #|python|
 # Créer champs de réponse
-input1 = MathInput()
-input1.prefix = "Réponse 1 :"
-input1.sol = sqrt(2)
+lstinput = []
+lstinput.append(MathInput())
+lstinput[0].prefix = "Réponse 1 :"
+lstinput[0].sol = sqrt(2)
 input2 = MathInput()
-input2.prefix = "Réponse 2 :"
-input2.sol = sqrt(3)
+lstinput[1].prefix = "Réponse 2 :"
+lstinput[1].sol = sqrt(3)
 sol = 0
-lstinput = [input1, input2]
 lsttest = [sqrt(2), sqrt(3)]
 ==
 
