@@ -58,7 +58,7 @@ for input in [input1, input2]:
 
 lstinput[1].score = 0
 lstinput[1].feedback = "toto"
-lstinput[1].display_feedback()
+lstinput[1].hide_feedback()
 
 
 score = 56
