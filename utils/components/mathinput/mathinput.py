@@ -33,6 +33,7 @@ class MathInput:
                 self.keypad[i] = std_keypad[val]
 
     def display_feedback(self):
+        """Display the feedback of the input field."""
         score = self.score
         msg = self.feedback
         if score == 100:
@@ -43,15 +44,18 @@ class MathInput:
             self.suffix = rf'<i class="fas fa-times" style="margin-left: 0.5em; color: red; cursor: pointer;" data-toggle="popover" data-content="{msg}"></i>'
     
     def hide_feedback(self):
+        """Hide the feedback of the input field."""
         self.suffix = ""
 
     def eval(self):
+        """Evaluate the input field."""
         if self.evalmode == "custom":
             self.eval_custom()
         else:
             self.eval_auto()
 
     def eval_auto(self):
+        """Evaluate the input field according to its type."""
         if self.type == "expr":
             score, error = eval_expr(self.value, self.sol, **self.evalparam)
         elif self.type == "complex":
