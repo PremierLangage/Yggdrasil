@@ -8,7 +8,7 @@ lstinput = []
 lstinput.append(MathInput())
 lstinput[0].prefix = "Réponse 1 :"
 lstinput[0].sol = sqrt(2)
-input2 = MathInput()
+lstinput.append(MathInput())
 lstinput[1].prefix = "Réponse 2 :"
 lstinput[1].sol = sqrt(3)
 sol = 0
