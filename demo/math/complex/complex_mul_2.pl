@@ -20,7 +20,7 @@ Calculer $! z_1 \times z_2 !$ (sous forme algébrique).
 ==
 
 solution ==
-La solution est ...
+La solution est {{z1|latex}}
 ==
 
 inputblock ==
