@@ -37,7 +37,7 @@ def add_custom_eval(obj, func):
 def average(lst):
     return sum(lst)/len(lst)
 
-test = lstinput[21].prefix
+test = lstinput[1].prefix
 test2 = lstinput[0].sol
 #lstinput = [input1, input2]
 from sympy import sympify
