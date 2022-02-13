@@ -60,6 +60,13 @@ lstinput[1].score = 0
 lstinput[1].feedback = "toto"
 lstinput[1].display_feedback()
 
+
+score = 56
+
+==
+
+old ==
+
 if -10 in [input.score for input in lstinput]:
     score = -1
     for input in lstinput:
@@ -71,7 +78,4 @@ elif 1==3:
     score = int(average([input.score for input in lstinput]))
     for input in lstinput:
         input.display_feedback()
-
-score = 56
-
 ==
