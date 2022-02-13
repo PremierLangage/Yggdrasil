@@ -34,6 +34,7 @@ def add_custom_eval(obj, func):
     'Bind a function and store it in an object'
     setattr(obj, "custom_eval", partial(func, obj))
 
+from mathinput import MathInput
 MathInput.message = message
 
 def average(lst):
