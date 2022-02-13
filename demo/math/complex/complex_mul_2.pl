@@ -1,5 +1,4 @@
 extends = /model/math/expr2.pl
-extends = messages_math.pl
 
 title = Calculer la distance entre deux points du plan
 
