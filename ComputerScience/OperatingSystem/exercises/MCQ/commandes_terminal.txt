@@ -1,4 +1,4 @@
-** Sélectionnez les déclarations qui sont correctes.
+** Sélectionner les déclarations qui sont correctes.
 - Les commandes Unix travaille page par page.
 - Unix tente de proposer une commande différente pour chaque tâche, simple ou évoluée.
 + La plupart des commandes en terminal travaillent ligne par ligne.
@@ -7,56 +7,56 @@
 + Les exécutions de commande Unix sont paramètrées par des arguments et l'entrée standard.
 
 
-** Sélectionner dans la liste suivante les programmes fonctionnels sans entrée (fonctionnant sans argument ou entrée standard).
-- mkdir
-- rm
-- sort
-- cut
-- grep
-- find
-+ date
-+ cal
-+ pwd
-+ whoami
+** Sélectionner dans la liste suivante les programmes fonctionnels sans entrée (fonctionnant sans argument ni entrée standard).
+- `mkdir`
+- `rm`
+- `sort`
+- `cut`
+- `grep`
+- `find`
++ `date`
++ `cal`
++ `pwd`
++ `whoami`
 
 
 ** Parmi les commandes suivantes, lesquelles permettent de visualiser un flux ou un fichier ?
-- pwd
-- chmod
-- chgrp
-- mkdir
-+ less
-+ more
-+ cat
-+ head
-+ tail
+- `pwd`
+- `chmod`
+- `chgrp`
+- `mkdir`
++ `less`
++ `more`
++ `cat`
++ `head`
++ `tail`
 
 
 ** Parmi les commandes suivantes, lesquelles retournent le nombre de lignes du fichier foo ?
-- wc -c foo
-- cat foo | cat | cat > /dev/null | wc -l
-- echo $(wc -c foo)
-- grep -line foo
-+ wc -l foo
-+ cat foo | wc -l
-+ wc -l < foo
-+ cat foo | cat | tee pouet | wc -l
-+ cat foo | cat | cat 2> /dev/null | wc -l
-+ echo $(wc -l foo)
+- `wc -c foo`
+- `cat foo | cat | cat > /dev/null | wc -l`
+- `echo $(wc -c foo)`
+- `grep -line foo`
++ `wc -l foo`
++ `cat foo | wc -l`
++ `wc -l < foo`
++ `cat foo | cat | tee pouet | wc -l`
++ `cat foo | cat | cat 2> /dev/null | wc -l`
++ `echo $(wc -l foo)`
 
 
 ** Parmi les commandes suivantes, lesquelles portent sur le système de fichiers ?
-- date
-- make
-- ping
-- ps
-- kill
-+ mkdir
-+ rmdir
-+ ls
-+ pwd
-+ cd
-+ mv
+- `date`
+- `make`
+- `ping`
+- `ps`
+- `kill`
++ `mkdir`
++ `rmdir`
++ `ls`
++ `pwd`
++ `cd`
++ `mv`
 
 
 ** Quel code numérique correspond aux droits **rwxr-xr--** ?
@@ -71,19 +71,19 @@
 
 
 ** Quels droits corresponds au code numérique 653 ?
-- rw-r-x--x
-- rw-r-xr--
-- rwxr-xr-x
-- rwxrw--wx
-+ rw-r-x-wx
+- `rw-r-x--x`
+- `rw-r-xr--`
+- `rwxr-xr-x`
+- `rwxrw--wx`
++ `rw-r-x-wx`
 
 
 ** Quelle fonction ressemble le plus à une primitive des tableurs modernes type excel ?
-- tee
-- find
-- cp
-- mv
-+ cut
+- `tee`
+- `find`
+- `cp`
+- `mv`
++ `cut`
 
 
 ** Quelle est la section du manuel dédiée à la programmation en langage C ?
