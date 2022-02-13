@@ -48,7 +48,15 @@ def myeval(self):
     self.score = score0
     self.feedback = message[error0]
 
-for input in [input1, input2]:
+for input in []:
+    input.value = answers[input.id]
+    # add_custom_eval(input, myeval)
+    input.eval()
+    input.score = 0
+    input.feedback = str(test2)
+    input.display_feedback()
+
+for input in [lstinput[0], lstinput[1]]:
     input.value = answers[input.id]
     # add_custom_eval(input, myeval)
     input.eval()
