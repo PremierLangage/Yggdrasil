@@ -12,7 +12,6 @@ std_keypad = {
 
 class MathInput:
 
-    message = {}
 
     def __init__(self, **kwargs):
         self.__MathInput__ = True
