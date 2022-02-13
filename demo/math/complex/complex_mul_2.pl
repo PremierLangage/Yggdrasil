@@ -29,8 +29,6 @@ inputblock ==
 ==
 
 evaluator ==
-from mathinput import MathInput
-MathInput.message = message
 from functools import partial
 def add_custom_eval(obj, func):
     'Bind a function and store it in an object'
