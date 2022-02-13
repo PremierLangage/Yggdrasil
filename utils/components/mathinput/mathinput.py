@@ -13,7 +13,7 @@ std_keypad = {
 class MathInput:
 
     message = {}
-    
+
     def __init__(self, **kwargs):
         self.__MathInput__ = True
         self.id = kwargs.get('id', "MathInput" + str(uuid4().hex))
@@ -43,7 +43,7 @@ class MathInput:
         elif score == -1:
             self.suffix = rf'<i class="fas fa-exclamation-circle" style="margin-left: 0.5em; color: orange; cursor: pointer;" data-toggle="popover" data-content="{msg}"></i>'
         else:
-            self.suffix = rf'<i class="fas fa-times" style="margin-left: 0.5em; color: red; cursor: pointer;" data-toggle="popover" data-content="{msg}"></i>'
+            self.suffix = rf'<i class="fas fa-times" style="margin-left: 0.5em; color: #E53935; cursor: pointer;" data-toggle="popover" data-content="{msg}"></i>'
     
     def hide_feedback(self):
         """Hide the feedback of the input field."""
