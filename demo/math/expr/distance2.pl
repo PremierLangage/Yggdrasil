@@ -24,8 +24,8 @@ La solution est ...
 ==
 
 inputblock ==
-{{ input1|mathinput }}
-{{ input2|mathinput }}
+{{ lstinput[0]|mathinput }}
+{{ lstinput[1]|mathinput }}
 ==
 
 evaluator ==
