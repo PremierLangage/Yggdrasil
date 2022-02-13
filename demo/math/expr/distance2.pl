@@ -11,7 +11,7 @@ input2 = MathInput()
 input2.prefix = "Réponse 2 :"
 input2.sol = sqrt(3)
 sol = 0
-lst = [input1, input2]
+lstinput = [input1, input2]
 ==
 
 question == 
@@ -56,4 +56,5 @@ else:
     score = int(average([input.score for input in lstinput]))
     for input in lstinput:
         input.display_feedback()
+
 ==
