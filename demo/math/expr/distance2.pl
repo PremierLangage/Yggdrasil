@@ -32,7 +32,7 @@ def add_custom_eval(obj, func):
 def average(lst):
     return sum(lst)/len(lst)
 
-
+lstinput = [input1, input2]
 solution = str(lstinput)
 
 from sympy import sympify
