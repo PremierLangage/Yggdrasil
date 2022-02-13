@@ -67,4 +67,6 @@ elif 1==3:
     for input in lstinput:
         input.display_feedback()
 
+score = 56
+
 ==
