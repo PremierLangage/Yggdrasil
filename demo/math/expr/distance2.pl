@@ -33,9 +33,6 @@ def add_custom_eval(obj, func):
 def average(lst):
     return sum(lst)/len(lst)
 
-test = lstinput[1].prefix
-test2 = str(type(lstinput[0]))
-#lstinput = [input1, input2]
 from sympy import sympify
 from evalsympy import eval_expr
 
@@ -44,20 +41,10 @@ def myeval(self):
     self.score = score0
     self.feedback = message[error0]
 
-for input in []:
+for input in inputs:
     input.value = answers[input.id]
     # add_custom_eval(input, myeval)
     input.eval()
-    input.score = 0
-    input.feedback = str(test2)
-    input.display_feedback()
-
-for input in lstinput:
-    input.value = answers[input.id]
-    # add_custom_eval(input, myeval)
-    input.eval()
-    input.score = 0
-    input.feedback = str(test2)
     input.display_feedback()
 
 score = 56
