@@ -38,7 +38,7 @@ def average(lst):
     return sum(lst)/len(lst)
 
 lstinput = [input1, input2]
-solution = str(lstinput)
+test = lstinput[0].prefix
 
 from sympy import sympify
 from evalsympy import eval_expr
