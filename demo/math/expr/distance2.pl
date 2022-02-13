@@ -18,6 +18,10 @@ question ==
 Entrer la racine de 2 et la racine de 3 ?
 ==
 
+solution ==
+La solution est toto.
+==
+
 inputblock ==
 {{ input1|mathinput }}
 {{ input2|mathinput }}
