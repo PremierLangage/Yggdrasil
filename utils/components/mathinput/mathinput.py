@@ -21,6 +21,7 @@ class MathInput:
         self.suffix = kwargs.get('suffix', '')
         self.disabled = kwargs.get('disabled', False)
         self.sol = kwargs.get('sol', None)
+        self.type = kwargs.get('type', 'expr')
         self.evalmode = kwargs.get('evalmode', 'auto')
         self.evalparam = kwargs.get('evalparam', {})
 
