@@ -34,6 +34,8 @@ def add_custom_eval(obj, func):
     'Bind a function and store it in an object'
     setattr(obj, "custom_eval", partial(func, obj))
 
+MathInput.message = {"NotEqual":"toto"}
+
 def average(lst):
     return sum(lst)/len(lst)
 
