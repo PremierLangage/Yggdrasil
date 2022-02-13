@@ -12,6 +12,7 @@ input2.prefix = "Réponse 2 :"
 input2.sol = sqrt(3)
 sol = 0
 lstinput = [input1, input2]
+lsttest = [sqrt(2), sqrt(3)]
 ==
 
 question == 
