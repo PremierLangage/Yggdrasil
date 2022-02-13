@@ -56,6 +56,10 @@ for input in lstinput:
     input.feedback = str(test2)
     input.display_feedback()
 
+lstinput[1].score = 0
+lstinput[1].feedback = "toto"
+lstinput[1].display_feedback()
+
 if -10 in [input.score for input in lstinput]:
     score = -1
     for input in lstinput:
