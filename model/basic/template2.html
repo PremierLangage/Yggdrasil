@@ -5,9 +5,8 @@
 {{ inputblock|markdown|safe }}
 </div>
 {% if score >= 0 and score < 100 and solution|length > 1%}
-<hr class="divide">
 <a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
-Voir la solution.
+voir la solution
 </a>
 <div class="collapse" id="collapseSolution">
 {{ solution }}
