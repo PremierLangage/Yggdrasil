@@ -59,8 +59,3 @@ else:
     for input in inputs:
         input.display_feedback()
 ==
-
-old ==
-
-
-==
