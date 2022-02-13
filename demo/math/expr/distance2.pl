@@ -47,20 +47,20 @@ for input in inputs:
     input.eval()
     input.display_feedback()
 
-score = 56
-==
-
-old ==
-
-if -10 in [input.score for input in lstinput]:
+if -1 in [input.score for input in inputs]:
     score = -1
-    for input in lstinput:
+    for input in inputs:
         if input.score == -1:
             input.display_feedback()
         else:
             input.hide_feedback()
-elif 1==3:
-    score = int(average([input.score for input in lstinput]))
-    for input in lstinput:
+else:
+    score = int(average([input.score for input in inputs]))
+    for input in inputs:
         input.display_feedback()
+==
+
+old ==
+
+
 ==
