@@ -48,7 +48,6 @@ for input in inputs:
     input.display_feedback()
 
 score = 56
-
 ==
 
 old ==
