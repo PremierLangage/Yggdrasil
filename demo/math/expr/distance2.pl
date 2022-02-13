@@ -38,7 +38,7 @@ def average(lst):
     return sum(lst)/len(lst)
 
 test = lstinput[1].prefix
-test2 = lstinput[0].sol
+test2 = str(type(lstinput[0]))
 #lstinput = [input1, input2]
 from sympy import sympify
 from evalsympy import eval_expr
@@ -55,11 +55,6 @@ for input in [input1, input2]:
     input.score = 0
     input.feedback = str(test2)
     input.display_feedback()
-
-lstinput[1].score = 0
-lstinput[1].feedback = "toto"
-lstinput[1].hide_feedback()
-
 
 score = 56
 
