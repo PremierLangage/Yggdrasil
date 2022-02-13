@@ -52,6 +52,7 @@ for input in lstinput:
     input.value = answers[input.id]
     # add_custom_eval(input, myeval)
     input.eval()
+    input.score = 0
     input.feedback = str(test2)
     input.display_feedback()
 
