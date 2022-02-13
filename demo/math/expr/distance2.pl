@@ -32,6 +32,9 @@ def add_custom_eval(obj, func):
 def average(lst):
     return sum(lst)/len(lst)
 
+
+solution = str(lstinput)
+
 from sympy import sympify
 from evalsympy import eval_expr
 
