@@ -1,4 +1,4 @@
-** Parmi les assertions suivantes, sélectionnez celle qui sont correctes ?
+** Sélectionnez les déclarations qui sont correctes.
 - Les commandes Unix travaille page par page.
 - Unix tente de proposer une commande différente pour chaque tâche, simple ou évoluée.
 + La plupart des commandes en terminal travaillent ligne par ligne.
