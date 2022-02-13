@@ -56,7 +56,7 @@ for input in []:
     input.feedback = str(test2)
     input.display_feedback()
 
-for input in [lstinput[0], lstinput[1]]:
+for input in lstinput:
     input.value = answers[input.id]
     # add_custom_eval(input, myeval)
     input.eval()
