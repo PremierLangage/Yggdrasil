@@ -53,15 +53,16 @@ for input in lstinput:
     # add_custom_eval(input, myeval)
     input.eval()
     input.feedback = str(test2)
+    input.display_feedback()
 
-if -1 in [input.score for input in lstinput]:
+if -10 in [input.score for input in lstinput]:
     score = -1
     for input in lstinput:
         if input.score == -1:
             input.display_feedback()
         else:
             input.hide_feedback()
-else:
+elif 1==3:
     score = int(average([input.score for input in lstinput]))
     for input in lstinput:
         input.display_feedback()
