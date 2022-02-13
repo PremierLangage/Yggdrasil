@@ -62,7 +62,10 @@ class MathInput:
             self.eval_auto()
 
     def eval_auto(self):
-        score, error = eval_expr(self.value, self.sol, **self.evalparam)
+        if self.type == "expr":
+            score, error = eval_expr(self.value, self.sol, **self.evalparam)
+        elif self.type == "complex":
+            score, error = eval_complex(self.value, self.sol, **self.evalparam)
         self.score = score
         self.feedback = error
 
