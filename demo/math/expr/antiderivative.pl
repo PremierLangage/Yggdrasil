@@ -1,10 +1,9 @@
 extends = /model/math/expr2.pl
 
 before ==
-import random
 from sympy import integrate
 x = Symbol('x')
-f = random.choice([sin(x), cos(x),ln(x),exp(x)]) 
+f = choice([sin(x), cos(x),ln(x),exp(x)]) 
 sol = integrate(f, x) 
 ==
 
