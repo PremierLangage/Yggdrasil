@@ -1,6 +1,6 @@
 extends = /model/math/multinput.pl
 
-title = Calculer la distance entre deux points du plan
+title = Nombres Complexes
 
 before == #|python|
 inputs = [MathInput() for _ in range(3)]
