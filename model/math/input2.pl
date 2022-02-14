@@ -75,6 +75,7 @@ function onBeforeSubmitPL() {
     };
   });
 
+  // Cache les popovers avant que les éléments correspondants soient détruits du DOM.
   $(function () {
     $('[data-toggle="popover"]').popover('hide')
   });
