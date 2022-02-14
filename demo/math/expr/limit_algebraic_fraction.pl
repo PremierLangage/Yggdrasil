@@ -1,4 +1,4 @@
-extends = /model/math/expr.pl
+extends = /model/math/expr2.pl
 
 before ==
 from sympy import Limit
