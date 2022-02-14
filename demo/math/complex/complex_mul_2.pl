@@ -9,7 +9,7 @@ for i in range(3):
     z2 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
     s = latex(z1 * z2)
     inputs[i].prefix = f"$! {s} = !$"
-    inputs[i].sol = (z1 + z2).expand()
+    inputs[i].sol = (z1 * z2).expand()
     inputs[i].type = "complex"
 ==
 
