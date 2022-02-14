@@ -27,6 +27,13 @@ before ==
 sol = 0
 ==
 
+solution ==
+<div style="display: block">
+{{ prefix }} 
+$! {{ sol|latex }} !$
+</div>
+==
+
 evaluator ==
 from mathinput import MathInput
 MathInput.message = message
