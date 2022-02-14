@@ -62,6 +62,13 @@ class MathInput:
             score, error = eval_expr(self.value, self.sol, **self.evalparam)
         elif self.type == "complex":
             score, error = eval_complex(self.value, self.sol, **self.evalparam)
+        elif self.type == "poly":
+            score, error = eval_complex(self.value, self.sol, **self.evalparam)
+        elif self.type == "set":
+            score, error = eval_complex(self.value, self.sol, **self.evalparam)
+        elif self.type == "tuple":
+            score, error = eval_complex(self.value, self.sol, **self.evalparam)
+        x = x +1
         self.score = score
         self.feedback = MathInput.message.get(error, f"Error: {error}")
 
