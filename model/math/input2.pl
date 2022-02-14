@@ -3,7 +3,7 @@ extends = /model/basic/temp.pl
 
 jinja_keys % ["inputblock", "question", "solution", "prefix"]
 
-before_scripts % ["mathimport", "init_input", "before"]
+before_scripts = ["mathimport", "init_input", "before"]
 #eval_scripts % ["evalparam", "evaluator"]
 
 prefix = Réponse :
