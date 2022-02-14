@@ -11,7 +11,7 @@ for i in range(3):
     inputs[i].prefix = f"$! {s} = !$"
     inputs[i].sol = (z1 * z2).expand()
     inputs[i].type = "complex"
-    inputs[i].evalparam = {'complex_form': 'cartesian'}
+    inputs[i].evalparam = {'form': 'cartesian'}
 ==
 
 question == 
