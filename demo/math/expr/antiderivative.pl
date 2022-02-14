@@ -8,9 +8,7 @@ sol = integrate(f, x)
 ==
 
 question ==
-Déterminer une primitive de 
-
-$! f \mapsto \displaystyle {{ f|latex }} !$
+Déterminer une primitive de $! f \mapsto \displaystyle {{ f|latex }} !$.
 ==
 
 equality = "UpToConstant"
