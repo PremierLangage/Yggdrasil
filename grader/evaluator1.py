@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     aux_component1(dic)
 
-    eval_scripts = dic.get('eval_scripts', ['evalparam', 'evaluator'])
+    eval_scripts = dic.get('eval_scripts', ['evaluator'])
     code = "\n".join([dic.get(name, "") for name in eval_scripts])
 
     exec(code, dic)
