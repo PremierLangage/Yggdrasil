@@ -6,7 +6,7 @@ import random
 def buildfile(fromfile, tofile):
     with open(fromfile, 'r') as g:
         lines = g.readlines()
-        print(lines)
+        print(lines,file=err)
         antes = [lili.split(': ', 1)[1] for lili in lines]
     random.shuffle(antes)
     with open(tofile, 'w') as g:
