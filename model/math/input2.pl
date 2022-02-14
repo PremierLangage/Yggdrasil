@@ -17,7 +17,7 @@ input.set_keypad(keypad)
 input.value = ""
 input.prefix = input_prefix
 input.keypad = keypad
-embed = embed.replace("#", r"\MathQuillMathField{}")
+# embed = embed.replace("#", r"\MathQuillMathField{}")
 ==
 
 evaluator ==
