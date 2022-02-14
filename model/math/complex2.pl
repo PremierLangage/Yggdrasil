@@ -4,6 +4,8 @@
 
 extends = /model/math/input2.pl
 
+title = Title
+
 # Evaluation parameters
 input_type = "complex"
 input_prefix = Réponse :
