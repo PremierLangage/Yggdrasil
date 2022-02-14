@@ -11,10 +11,11 @@ La première machine d'analyse de scènes de crime (MFCSAM en abrégé) peut dé
 enfants, par analyse de l'âge de l'ADN humain.
 chats. Il ne différencie pas les races individuelles.
 Plusieurs races de chiens apparemment aléatoires : samoyèdes, poméraniens, akitas et vizslas.
-poisson rouge. Pas d'autres types de poissons.
+carpes. Pas d'autres types de poissons.
 arbres, tous en un seul groupe.
 voitures, vraisemblablement par l'échappement ou l'essence ou quelque chose.
 parfums, ce qui est pratique, car beaucoup de vos tantes Sue en portent plusieurs sortes.
+
 En fait, beaucoup de vos tantes Sue en ont beaucoup. Vous mettez l'emballage du cadeau dans le MFCSAM. Il émet quelques bips curieux puis imprime un message sur une bande magnétique :
 
 enfants: 3   
@@ -30,6 +31,8 @@ parfums: 1
 
 Vous faites une liste des choses dont vous vous souvenez exactement sur chaque tante Sue. 
 Les choses manquantes dans votre liste ne sont pas nulles - vous ne vous souvenez tout simplement pas de la valeur.
+
+La liste des informations est dans le fichier "data" .
 
 Question1 : Quel est le numéro de la Sue qui vous a offert le cadeau ?
 
