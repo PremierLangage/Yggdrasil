@@ -16,13 +16,15 @@
 </div>
 {% endif %}
 <hr class="divide">
-{% if score >=0 %}
+{% if score >=0 and score <100 %}
  <button class="btn btn-success shadow-none" type="button" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
-    Solution
-  </button>
+Solution
+</button>
+{% endif %}
+{% if score >=0 %}
 <button class="btn btn-primary shadow-none" onclick="document.location.reload(true);"> Nouveau </button>
 {% else %}
-<button class="btn btn-primary action-submit">Valider</button>
+<button class="btn btn-primary shadow-none action-submit">Valider</button>
 {% endif %}
 {% if score == 100 %}
 <button type="button" style="float: right;" class="btn success-state">Score : {{score}} </button>
