@@ -4,7 +4,7 @@ extends = /model/basic/temp.pl
 jinja_keys = ["inputblock", "question", "solution"]
 
 before_scripts = ["mathimport", "init_input", "before"]
-eval_scripts = ["evaluator"]
+eval_scripts = ["init_eval", "evaluator"]
 
 input_prefix = Réponse :
 keypad = []
@@ -34,14 +34,16 @@ $! {{ sol|latex }} !$
 </div>
 ==
 
+init_eval ==
+
+==
+
 evaluator ==
-from sympy import sympify
 from mathinput import MathInput
 MathInput.message = message
 
 input.value = answers[input.id]
 input.sol = sol
-input.evalparam = {'imaginary_unit': imaginary_unit, 'form': complex_form, 'checkratsimp': checkratsimp, 'unauthorized_func': unauthorized_func, 'local_dict': sympify(symbol_dict)}
 input.eval()
 score = input.score
 input.display_feedback()
