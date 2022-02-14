@@ -1,4 +1,4 @@
-extends = /model/math/complex.pl
+extends = /model/math/complex2.pl
 
 before ==
 z1 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
