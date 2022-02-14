@@ -64,3 +64,7 @@ class MathInput:
             score, error = eval_complex(self.value, self.sol, **self.evalparam)
         self.score = score
         self.feedback = MathInput.message.get(error, f"Error: {error}")
+
+    def disable(self):
+        """Disable the input field."""
+        self.disabled = True
