@@ -12,6 +12,10 @@ unauthorized_func = ['sin', 'cos', 'tan']
 
 latexsettings.imaginary_unit = i
 
+before ==
+sol = 0
+==
+
 evaluator ==
 from ast import literal_eval
 from sympy import sympify
