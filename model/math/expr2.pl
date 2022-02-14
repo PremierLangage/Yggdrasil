@@ -1,25 +1,18 @@
+# Model for a single math input field
+# with an evaluation as a complex number
+
 extends = /model/math/input2.pl
 
+# Evaluation parameters
 checkratsimp = True
 symbol_dict = {'e': E}
 unauthorized_func = []
 equality = ""
 modulo = 0
 
-evaluator ==
-input.value = answers[input.id]
-from ast import literal_eval
+evalparam ==
 from sympy import sympify
-from evalsympy import eval_expr
 if modulo != 0:
     modulo = sympify(modulo)
-score, error = eval_expr(answers[input.id], sol, checkratsimp=checkratsimp,equality=equality, unauthorized_func=unauthorized_func, modulo=modulo, local_dict=sympify(symbol_dict))
-feedback = message[error]
-input.show(score, feedback)
-if score > -1:
-    input.disabled = True
-==
-
-solution ==
-La solution est $! {{ sol|latex }} !$.
+input.evalparam = {'imaginary_unit': imaginary_unit, 'equality': equality, "modulo': modulo 'checkratsimp': checkratsimp, 'unauthorized_func': unauthorized_func, 'local_dict': sympify(symbol_dict)}
 ==
