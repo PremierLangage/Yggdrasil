@@ -16,7 +16,7 @@
 </div>
 {% endif %}
 <hr class="divide">
-{% if score >=0 and score <100 %}
+{% if score >= 0 and score < 100 and solution|length > 1%}
  <button class="btn btn-success shadow-none" type="button" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
 Solution
 </button>
