@@ -21,6 +21,7 @@ from mathinput import MathInput
 MathInput.message = message
 
 input.value = answers[input.id]
+input.sol = sol
 input.eval()
 score = input.score
 input.display_feedback()
