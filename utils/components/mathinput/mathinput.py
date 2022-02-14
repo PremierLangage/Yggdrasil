@@ -68,7 +68,6 @@ class MathInput:
             score, error = eval_complex(self.value, self.sol, **self.evalparam)
         elif self.type == "tuple":
             score, error = eval_complex(self.value, self.sol, **self.evalparam)
-        x = x +1
         self.score = score
         self.feedback = MathInput.message.get(error, f"Error: {error}")
 
