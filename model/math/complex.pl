@@ -1,7 +1,9 @@
+# Model for single math input field
+# with evaluation as a complex number
+
 extends = /model/math/input.pl
 
 input_prefix = Réponse :
-
 imaginary_unit = i
 complex_form = 
 checkratsimp = True
