@@ -83,7 +83,7 @@ javascript.popover ==
 <script>
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="popover"]'))
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl, {trigger: 'focus'})
+  return new bootstrap.Popover(popoverTriggerEl)
 })
 </script>
 ==
