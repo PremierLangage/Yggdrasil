@@ -6,7 +6,7 @@
 # les types de calculs proposés
 # 19/7/2021
 
-extends = /model/math/complex.pl
+extends = /model/math/complex2.pl
 
 title = Calculer avec des nombres complexes
 
