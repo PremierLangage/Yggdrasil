@@ -53,6 +53,8 @@ score = input.score
 input.display_feedback()
 if score >= 0:
   input.disable()
+
+input.suffix = "toto"
 ==
 
 tplpage =@ /model/basic/template2.html
