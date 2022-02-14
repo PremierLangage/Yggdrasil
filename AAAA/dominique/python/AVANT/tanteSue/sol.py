@@ -5,8 +5,7 @@ import random
 
 def buildfile(fromfile, tofile):
     with open(fromfile, 'r') as g:
-        lines = g.readlines()
-        import sys
+        lines = g.readlines()[:-1]
         print(lines,file=sys.stderr)
         antes = [lili.split(': ', 1)[1] for lili in lines]
     random.shuffle(antes)
