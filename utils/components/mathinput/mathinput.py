@@ -42,7 +42,7 @@ class MathInput:
             self.suffix = r'<i class="fas fa-check" style="margin-left: 0.5em; color: #43A047"></i>'
         elif score == -1:
             self.suffix = rf"""<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>"""
-            test = "<i class="fas fa-exclamation-circle" style="margin-left: 0.5em; color: #FFB300; cursor: pointer;" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="{msg}"></i>"
+            #test = "<i class="fas fa-exclamation-circle" style="margin-left: 0.5em; color: #FFB300; cursor: pointer;" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="{msg}"></i>"
         else:
             self.suffix = rf'<i class="fas fa-times" style="margin-left: 0.5em; color: #E53935; cursor: pointer;" data-toggle="popover" data-placement="bottom" data-content="{msg}"></i>'
     
