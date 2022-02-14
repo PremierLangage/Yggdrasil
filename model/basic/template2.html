@@ -22,7 +22,7 @@ Solution
 </button>
 {% endif %}
 {% if score >=0 %}
-<button class="btn btn-outline-primary shadow-none" onclick="document.location.reload(true);"> Nouveau </button>
+<button class="btn btn-outline-primary shadow-none" onclick="document.location.href = document.location.href + '?action=reroll';> Nouveau </button>
 {% else %}
 <button class="btn btn-primary shadow-none action-submit">Valider</button>
 {% endif %}
