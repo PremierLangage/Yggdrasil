@@ -4,8 +4,6 @@
 
 extends = /model/math/input2.pl
 
-title = Title
-
 # Evaluation parameters
 input_type = "complex"
 input_prefix = Réponse :
@@ -17,10 +15,6 @@ unauthorized_func = ['sin', 'cos', 'tan']
 
 # Latex settings
 latexsettings.imaginary_unit = i
-
-before ==
-sol = 0
-==
 
 evaluator ==
 from mathinput import MathInput
