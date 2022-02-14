@@ -1,4 +1,4 @@
-extends = /model/math/expr2.pl
+extends = /model/math/multinput.pl
 
 title = Calculer la distance entre deux points du plan
 
@@ -21,49 +21,4 @@ Calculer $! z_1 \times z_2 !$ (sous forme algébrique).
 
 solution ==
 La solution est  {{z1|latex}}
-==
-
-inputblock ==
-{{ inputs[0]|mathinput }}
-{{ inputs[1]|mathinput }}
-==
-
-evaluator ==
-from functools import partial
-def add_custom_eval(obj, func):
-    'Bind a function and store it in an object'
-    setattr(obj, "custom_eval", partial(func, obj))
-
-from mathinput import MathInput
-MathInput.message = message
-
-def average(lst):
-    return sum(lst)/len(lst)
-
-from sympy import sympify
-from evalsympy import eval_expr
-
-def myeval(self):
-    score0, error0 = eval_expr(self.value, self.sol, checkratsimp=checkratsimp, equality=equality, unauthorized_func=unauthorized_func, modulo=modulo, local_dict=sympify(symbol_dict))
-    self.score = score0
-    self.feedback = message[error0]
-
-for input in inputs:
-    input.value = answers[input.id]
-    # add_custom_eval(input, myeval)
-    input.eval()
-    input.display_feedback()
-
-if -1 in [input.score for input in inputs]:
-    score = -1
-    for input in inputs:
-        if input.score == -1:
-            input.display_feedback()
-        else:
-            input.hide_feedback()
-else:
-    score = int(average([input.score for input in inputs]))
-    for input in inputs:
-        input.display_feedback()
-        input.disable()
 ==
