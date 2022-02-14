@@ -1,4 +1,4 @@
-extends = /model/math/complex2.pl
+extends = /model/math/complex.pl
 
 title = Multiplication de nombres complexes
 
