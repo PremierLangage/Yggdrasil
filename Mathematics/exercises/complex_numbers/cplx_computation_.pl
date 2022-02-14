@@ -10,8 +10,6 @@ extends = /model/math/complex2.pl
 
 title = Calculer avec des nombres complexes
 
-param.formulas = []
-
 jinja_keys = ["question", "text1", "text2", "solution", "input_prefix", "inputblock"]
 
 complex_form = cartesian
