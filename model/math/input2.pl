@@ -37,14 +37,13 @@ $! {{ sol|latex }} !$
 evaluator ==
 from mathinput import MathInput
 MathInput.message = message
-==
 
-auto_eval ==
 input.value = answers[input.id]
+input.sol = sol
 input.eval()
 score = input.score
 input.display_feedback()
-if score >= 0:
+if score >=0:
     input.disable()
 ==
 
