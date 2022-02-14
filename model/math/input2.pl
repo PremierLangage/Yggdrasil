@@ -4,7 +4,7 @@ extends = /model/basic/temp.pl
 jinja_keys = ["inputblock", "question", "solution"]
 
 before_scripts = ["mathimport", "init_input", "before"]
-eval_scripts = ["auto_eval", "evaluator"]
+eval_scripts = ["evaluator"]
 
 input_prefix = Réponse :
 keypad = ["+infty", "-infty"]
