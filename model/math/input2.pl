@@ -74,6 +74,11 @@ function onBeforeSubmitPL() {
     }
     };
   });
+
+  $(function () {
+    $('[data-toggle="popover"]').popover('hide')
+  });
+
   return true;
 }
 </script>
