@@ -5,6 +5,7 @@
 {{ inputblock|markdown|safe }}
 </div>
 {% if score >= 0 and score < 100 and solution|length > 1%}
+<div style="margin-top: 1em;">
 <p>
  <button class="btn btn-outline-success btn-sm" type="button" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
     Solution
@@ -15,7 +16,7 @@
 {{ solution }}
 </div>
 </div>
-
+</div>
 {% endif %}
 <hr class="divide">
 {% if score >=0 %}
