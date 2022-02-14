@@ -10,6 +10,8 @@ input_prefix = Réponse :
 keypad = ["+infty", "-infty"]
 embed =
 
+title = Title
+
 init_input ==
 from mathinput import MathInput
 input = MathInput()
@@ -19,6 +21,10 @@ input.prefix = input_prefix
 input.keypad = keypad
 input.type = input_type
 # embed = embed.replace("#", r"\MathQuillMathField{}")
+==
+
+before ==
+sol = 0
 ==
 
 evaluator ==
