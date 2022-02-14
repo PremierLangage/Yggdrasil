@@ -1,4 +1,4 @@
---- Jour 16 : Tante Sue ---
+
 
 Votre tante Sue vous a offert un magnifique cadeau et vous aimeriez lui envoyer une carte de remerciement. Cependant, il y a un petit problème : elle l'a signé « From, Aunt Sue ».
 
