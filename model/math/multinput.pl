@@ -86,6 +86,12 @@ function onBeforeSubmitPL() {
     }
     };
   });
+
+  // Cache les popovers avant que les éléments correspondants soient détruits du DOM.
+  $(function () {
+    $('[data-toggle="popover"]').popover('hide')
+  });
+
   return true;
 }
 </script>
@@ -93,9 +99,10 @@ function onBeforeSubmitPL() {
 
 javascript.popover ==
 <script>
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
-});
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
 </script>
 ==
 
