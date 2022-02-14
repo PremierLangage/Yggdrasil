@@ -10,7 +10,3 @@ symbol_dict = {'e': E}
 unauthorized_func = []
 equality = ""
 modulo = 0
-
-evalparam ==
-
-==
