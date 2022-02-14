@@ -7,9 +7,6 @@
 @ /utils/components/checkbox.py
 @ /utils/components/input.py
 
-text = 
-
-form = 
 
 style.page == #|css|
 <style>
