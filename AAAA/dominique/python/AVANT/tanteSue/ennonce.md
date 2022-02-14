@@ -41,5 +41,6 @@ En particulier, les lectures de chats et d'arbres indiquent qu'il y en a plus qu
 
 Question 2: Quel est le numéro de la vraie tante Sue ?
 
-Comme d'habitude vous avez un fichier "exemple" pour le quel les bonnes reponses sont Question1 : 373,
-Question2: 260
+Comme d'habitude vous avez un fichier "exemple" pour lequel les bonnes reponses sont  
+Question1 : 373,  
+Question2 : 260
