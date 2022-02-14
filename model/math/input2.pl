@@ -58,7 +58,8 @@ input.suffix = "toto"
 ==
 
 
-oldevaluator ==
+evaluator ==
+score = 10
 input.suffix = "toto"
 ==
 
