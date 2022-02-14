@@ -20,6 +20,20 @@ input.keypad = keypad
 embed = embed.replace("#", r"\MathQuillMathField{}")
 ==
 
+evaluator ==
+from mathinput import MathInput
+MathInput.message = message
+==
+
+auto_eval ==
+input.value = answers[input.id]
+input.eval()
+score = input.score
+input.display_feedback()
+if score >= 0:
+    input.disable()
+==
+
 tplpage =@ /model/basic/template2.html
 
 
