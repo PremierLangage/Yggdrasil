@@ -7,6 +7,7 @@ before_scripts = ["mathimport", "init_input", "before"]
 eval_scripts = ["evaluator"]
 
 input_prefix = Réponse :
+keypad = []
 embed =
 
 title = Title
