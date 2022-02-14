@@ -85,6 +85,10 @@ var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl)
 })
+
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
 </script>
 ==
 
