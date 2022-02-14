@@ -31,14 +31,13 @@ parfums: 1
 Vous faites une liste des choses dont vous vous souvenez exactement sur chaque tante Sue. 
 Les choses manquantes dans votre liste ne sont pas nulles - vous ne vous souvenez tout simplement pas de la valeur.
 
-Quel est le numéro de la Sue qui vous a offert le cadeau ?
+Question1 : Quel est le numéro de la Sue qui vous a offert le cadeau ?
 
 
---- Deuxième partie ---
 
 Alors que vous êtes sur le point d'envoyer la note de remerciement, quelque chose dans les instructions du MFCSAM attire votre attention. Apparemment, il a un rétro-encabulateur obsolète, et donc la sortie de la machine n'est pas des valeurs exactes - certaines d'entre elles indiquent des plages.
 
 En particulier, les lectures de chats et d'arbres indiquent qu'il y en a plus que cela (en raison de la désintégration nucléaire imprévisible des squames de chat et du pollen d'arbre), tandis que les lectures de poméraniens et de poissons rouges indiquent qu'il y en a moins que cela (en raison de la interaction de la magnétoréluctance).
 
-Quel est le numéro de la vraie tante Sue ?
+Question 2: Quel est le numéro de la vraie tante Sue ?
 
