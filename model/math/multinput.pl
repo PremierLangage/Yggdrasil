@@ -29,7 +29,9 @@ input_prefix = Réponse :
 
 
 inputblock ==
+{% for input in inputs %}
 {{ input|mathinput }}
+{% endfor %}
 ==
 
 evaluator ==
