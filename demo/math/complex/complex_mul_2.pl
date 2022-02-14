@@ -10,7 +10,7 @@ for i in range(3):
     s = latex(z1 * z2)
     inputs[i].prefix = "$! {s} !$"
     inputs[i].sol = (z1 + z2).expand()
-    inputs[].type = "complex"
+    inputs[i].type = "complex"
 ==
 
 question == 
