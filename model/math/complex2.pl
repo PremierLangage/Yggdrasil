@@ -14,3 +14,8 @@ unauthorized_func = ['sin', 'cos', 'tan']
 
 # Latex settings
 latexsettings.imaginary_unit = i
+
+evalparam ==
+from sympy import sympify
+input.evalparam = {'imaginary_unit': imaginary_unit, 'form': complex_form, 'checkratsimp': checkratsimp, 'unauthorized_func': unauthorized_func, 'local_dict': sympify(symbol_dict)}
+==
