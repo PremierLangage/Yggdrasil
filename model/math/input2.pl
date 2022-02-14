@@ -59,6 +59,7 @@ input.suffix = "toto"
 
 
 evaluator ==
+input.value = answers[input.id]
 score = 10
 input.suffix = "toto"
 ==
