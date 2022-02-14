@@ -6,7 +6,7 @@ jinja_keys = ["inputblock", "question", "solution"]
 before_scripts = ["mathimport", "init_input", "before"]
 eval_scripts = ["evalparam", "evaluator"]
 
-input_prefix = Réponse :
+prefix = Réponse :
 keypad = []
 embed =
 
@@ -17,7 +17,7 @@ from mathinput import MathInput
 input = MathInput()
 input.set_keypad(keypad)
 input.value = ""
-input.prefix = input_prefix
+input.prefix = prefix
 input.keypad = keypad
 input.type = input_type
 # embed = embed.replace("#", r"\MathQuillMathField{}")
