@@ -14,9 +14,6 @@ text==
 
 ==
 
-# j'initalise le fichier avec quelque chose c'est pas nécessaire
-datas= @data
-
 
 before==
 import build
