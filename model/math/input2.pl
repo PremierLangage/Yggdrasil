@@ -3,11 +3,11 @@ extends = /model/basic/temp.pl
 
 jinja_keys = ["inputblock", "question", "solution"]
 
-before_scripts = ["mathimport", "initinput", "before"]
+before_scripts = ["mathimport", "init_input", "before"]
 
 keypad = ["+infty", "-infty"]
 
-initinput ==
+input ==
 from mathinput import MathInput
 input = MathInput()
 input.set_keypad(keypad)
