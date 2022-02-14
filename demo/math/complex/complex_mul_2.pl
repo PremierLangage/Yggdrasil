@@ -65,4 +65,5 @@ else:
     score = int(average([input.score for input in inputs]))
     for input in inputs:
         input.display_feedback()
+        input.disable()
 ==
