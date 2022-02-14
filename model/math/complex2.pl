@@ -5,6 +5,7 @@
 extends = /model/math/input2.pl
 
 # Evaluation parameters
+input_type = "complex"
 input_prefix = Réponse :
 imaginary_unit = i
 complex_form = 
