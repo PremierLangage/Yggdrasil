@@ -29,7 +29,7 @@ sol = 0
 
 solution ==
 <div style="display: block">
-{{ input_prefix }} 
+{{ prefix }} 
 $! {{ sol|latex }} !$
 </div>
 ==
