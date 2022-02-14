@@ -87,3 +87,5 @@ def doit():
     >>> question2() == {sol2} # Question 2 position 
     True
     """
+
+    return pltest,pltest2
