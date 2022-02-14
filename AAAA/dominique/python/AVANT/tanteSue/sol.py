@@ -76,9 +76,8 @@ def doit():
     buildfile("data1", "data")
     sol1 = Question1("data", dFU)
     sol2 = Question2("data", dFU)
-    if "title" in globals():
-        os.remove("data1")
-
+    
+    
 
     pltest= f"""
     >>> question1() == {sol1} # Question 1 étage 
