@@ -2,7 +2,7 @@
 # with evaluation as a complex number
 # (using MathInput class)
 
-extends = /model/math/input.pl
+extends = /model/math/input2.pl
 
 # Evaluation parameters
 input_prefix = Réponse :
