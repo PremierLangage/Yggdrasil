@@ -16,6 +16,18 @@ unauthorized_func = ['sin', 'cos', 'tan']
 latexsettings.imaginary_unit = i
 
 evaluator ==
+from mathinput import MathInput
+MathInput.message = message
+
+input.value = answers[input.id]
+input.eval()
+score = input.score
+input.display_feedback()
+if score >=0:
+    input.disable()
+==
+
+evaluator ==
 from ast import literal_eval
 from sympy import sympify
 from evalsympy import eval_complex
