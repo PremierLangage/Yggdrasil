@@ -19,5 +19,7 @@ Calculer $! z_1 \times z_2 !$ (sous forme algébrique).
 ==
 
 solution ==
-
+{% for input in inputs %}
+{{ input.prefix }} {{ input.sol|latex }}
+{% endfor %}
 ==
