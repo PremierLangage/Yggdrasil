@@ -41,11 +41,6 @@ evaluator ==
 from mathinput import MathInput
 MathInput.message = message
 
-from sympy import sympify
-if modulo != 0:
-    modulo = sympify(modulo)
-input.evalparam = {'equality': equality, 'modulo': modulo, 'checkratsimp': checkratsimp, 'unauthorized_func': unauthorized_func, 'local_dict': sympify(symbol_dict)}
-
 input.value = answers[input.id]
 input.sol = sol
 input.eval()
