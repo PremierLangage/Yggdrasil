@@ -37,7 +37,7 @@ evalparam ==
 
 ==
 
-oldevaluator ==
+evaluator ==
 from mathinput import MathInput
 MathInput.message = message
 
@@ -53,15 +53,6 @@ score = input.score
 input.display_feedback()
 if score >= 0:
   input.disable()
-
-input.suffix = "toto"
-==
-
-
-evaluator ==
-input.value = answers[input.id]
-score = 10
-input.suffix = "toto"
 ==
 
 tplpage =@ /model/basic/template2.html
