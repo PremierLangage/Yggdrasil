@@ -28,11 +28,3 @@ input.display_feedback()
 if score >=0:
     input.disable()
 ==
-
-solution ==
-<div style="display: block">
-{{ prefix }} 
-$! {{ sol|latex }} !$
-</div>
-==
-
