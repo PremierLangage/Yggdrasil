@@ -82,7 +82,7 @@ function onBeforeSubmitPL() {
 javascript.popover ==
 <script>
 $(document).ready(function(){
-    $("[data-toggle='popover']").popover('hide');
+    $('[data-toggle="popover"]').popover();   
 });
 </script>
 ==
