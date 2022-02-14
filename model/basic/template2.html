@@ -27,10 +27,8 @@ Solution
 <button class="btn btn-primary shadow-none action-submit">Valider</button>
 {% endif %}
 {% if score == 100 %}
-<button type="button" style="float: right;" class="btn success-state">Score : {{score}} </button>
+<span style="float: right;" class="heartbeat">Score : {{score}} </span>
 {% elif score >= 0 and score < 100 %}
-<button type="button" style="float: right;" class="btn neutral-state">Score : {{score}} </button>
-{% else %}
-<button type="button" style="float: right;" class="btn neutral-state">Score : - </button>
+<span style="float: right;" class="heartbeat">Score : {{score}} </span>
 {% endif %}
 
