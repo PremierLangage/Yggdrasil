@@ -17,16 +17,17 @@ voitures, vraisemblablement par l'échappement ou l'essence ou quelque chose.
 parfums, ce qui est pratique, car beaucoup de vos tantes Sue en portent plusieurs sortes.
 En fait, beaucoup de vos tantes Sue en ont beaucoup. Vous mettez l'emballage du cadeau dans le MFCSAM. Il émet quelques bips curieux puis imprime un message sur une bande magnétique :
 
-enfants : 3   
-chats : 7  
-samoyèdes : 2  
-poméraniens : 3  
+enfants: 3   
+chats: 7  
+samoyèdes: 2  
+poméraniens: 3  
 akitas: 0  
 vizslas: 0  
-carpes : 5  
-arbres : 3  
-voitures 2  
-parfums : 1  
+carpes: 5  
+arbres: 3  
+voitures: 2  
+parfums: 1 
+
 Vous faites une liste des choses dont vous vous souvenez exactement sur chaque tante Sue. 
 Les choses manquantes dans votre liste ne sont pas nulles - vous ne vous souvenez tout simplement pas de la valeur.
 
