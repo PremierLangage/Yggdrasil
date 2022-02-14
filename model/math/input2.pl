@@ -37,7 +37,7 @@ evalparam ==
 
 ==
 
-evaluator ==
+oldevaluator ==
 from mathinput import MathInput
 MathInput.message = message
 
@@ -54,6 +54,11 @@ input.display_feedback()
 if score >= 0:
   input.disable()
 
+input.suffix = "toto"
+==
+
+
+oldevaluator ==
 input.suffix = "toto"
 ==
 
