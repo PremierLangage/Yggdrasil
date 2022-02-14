@@ -16,6 +16,10 @@ unauthorized_func = ['sin', 'cos', 'tan']
 # Latex settings
 latexsettings.imaginary_unit = i
 
+before ==
+sol = 0
+==
+
 evaluator ==
 from mathinput import MathInput
 MathInput.message = message
