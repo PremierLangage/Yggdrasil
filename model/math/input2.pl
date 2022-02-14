@@ -3,6 +3,8 @@ extends = /model/basic/temp.pl
 
 jinja_keys = ["inputblock", "question", "solution"]
 
+before_scripts = ["mathimport", "initinput", "before"]
+
 keypad = ["+infty", "-infty"]
 
 
@@ -17,10 +19,6 @@ embed = embed.replace("#", r"\MathQuillMathField{}")
 ==
 
 title =
-
-text = 
-
-form = 
 
 tplpage =@ /model/basic/template2.html
 
