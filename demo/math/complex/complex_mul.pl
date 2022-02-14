@@ -1,5 +1,7 @@
 extends = /model/math/complex2.pl
 
+title = Nombres complexes
+
 before ==
 z1 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
 z2 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
