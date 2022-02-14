@@ -1,6 +1,5 @@
 # Model for single math input field
 # with evaluation as a complex number
-# (using MathInput class)
 
 extends = /model/math/input2.pl
 
