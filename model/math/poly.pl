@@ -1,12 +1,24 @@
-extends = /model/math/input.pl
+# Model for a single math input field
+# with an evaluation as a polynom
 
+extends = /model/math/input2.pl
+
+# Evaluation parameters
+input_type = "poly"
 checkratsimp = True
 symbol_dict = {'e': E}
 unauthorized_func = []
 poly_form =
 poly_domain = R
 
-title =
+evalparam ==
+from sympy import sympify
+if modulo != 0:
+    modulo = sympify(modulo)
+input.evalparam = {'var': poly_var, 'form': poly_form}
+==
+
+
 
 
 evaluator ==
