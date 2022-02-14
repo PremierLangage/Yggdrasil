@@ -4,6 +4,10 @@ extends = /model/basic/temp.pl
 jinja_keys = ["inputblock", "question", "solution"]
 
 
+headerbefore ==
+from mathinput import MathInput
+==
+
 title =
 
 text = 
