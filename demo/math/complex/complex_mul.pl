@@ -1,6 +1,6 @@
 extends = /model/math/complex2.pl
 
-title = Nombres complexes
+title = Multiplication de nombres complexes
 
 before ==
 z1 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
