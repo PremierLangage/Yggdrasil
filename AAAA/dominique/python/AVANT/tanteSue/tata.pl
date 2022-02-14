@@ -6,7 +6,7 @@ extends = /ComputerScience/python/template/pltest.pl
 @buildprob.py [build.py]
 @ennonce 
 
-title= Le premier jour cher le Père Noël.
+title= Le cadeau de Tante Sue
 
 text==
 
