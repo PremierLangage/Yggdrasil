@@ -4,16 +4,6 @@ extends = /model/basic/temp.pl
 jinja_keys = ["inputblock", "question", "solution"]
 
 
-headerbefore ==
-from mathinput import MathInput
-input = MathInput()
-input.set_keypad(keypad)
-input.value = ""
-input.prefix = input_prefix
-input.keypad = keypad
-embed = embed.replace("#", r"\MathQuillMathField{}")
-==
-
 title =
 
 text = 
