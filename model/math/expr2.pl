@@ -15,5 +15,5 @@ evalparam ==
 from sympy import sympify
 if modulo != 0:
     modulo = sympify(modulo)
-input.evalparam = {'imaginary_unit': imaginary_unit, 'equality': equality, "modulo': modulo 'checkratsimp': checkratsimp, 'unauthorized_func': unauthorized_func, 'local_dict': sympify(symbol_dict)}
+input.evalparam = {'equality': equality, "modulo': modulo, 'checkratsimp': checkratsimp, 'unauthorized_func': unauthorized_func, 'local_dict': sympify(symbol_dict)}
 ==
