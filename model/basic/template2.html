@@ -7,9 +7,6 @@
 {% if score >= 0 and score < 100 and solution|length > 1%}
 <div style="margin-top: 1em;">
 <p>
- <button class="btn btn-outline-success btn-sm shadow-none" type="button" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
-    Solution
-  </button>
 </p>
 <div class="collapse" id="collapseSolution">
 <div class="card card-body card border-success mb-3"">
@@ -20,7 +17,10 @@
 {% endif %}
 <hr class="divide">
 {% if score >=0 %}
-<button class="btn btn-primary" onclick="document.location.reload(true);"> Nouveau </button>
+ <button class="btn btn-success shadow-none" type="button" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
+    Solution
+  </button>
+<button class="btn btn-primary shadow-none" onclick="document.location.reload(true);"> Nouveau </button>
 {% else %}
 <button class="btn btn-primary action-submit">Valider</button>
 {% endif %}
