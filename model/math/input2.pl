@@ -5,7 +5,9 @@ jinja_keys = ["inputblock", "question", "solution"]
 
 before_scripts = ["mathimport", "init_input", "before"]
 
+input_prefix = Réponse :
 keypad = ["+infty", "-infty"]
+embed =
 
 init_input ==
 from mathinput import MathInput
@@ -17,20 +19,7 @@ input.keypad = keypad
 embed = embed.replace("#", r"\MathQuillMathField{}")
 ==
 
-title =
-
 tplpage =@ /model/basic/template2.html
-
-evaluator ==
-input.value = answers[input.id]
-input.disabled = True
-input.show()
-==
-
-
-embed =
-
-input_prefix = Réponse :
 
 
 inputblock ==
