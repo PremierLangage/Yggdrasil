@@ -7,8 +7,7 @@ before_scripts = ["mathimport", "initinput", "before"]
 
 keypad = ["+infty", "-infty"]
 
-
-headerbefore ==
+initinput ==
 from mathinput import MathInput
 input = MathInput()
 input.set_keypad(keypad)
