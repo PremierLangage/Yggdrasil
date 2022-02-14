@@ -4,7 +4,7 @@ extends = /ComputerScience/python/template/pltest.pl
 @ /builder/before.py [builder.py]
 
 @sol.py [build.py]
-@ennonce 
+@ennonce.md
 
 title= Le cadeau de Tante Sue
 
