@@ -7,11 +7,10 @@ extends = /model/math/input2.pl
 input_type = "set"
 checkratsimp = True
 symbol_dict = {'e': E}
-unauthorized_func = []
 wobracket = False
 
 
 evalparam ==
 from sympy import sympify
-input.evalparam = {'wobracket': wobracket, 'checkratsimp': checkratsimp, 'unauthorized_func': unauthorized_func, 'local_dict': sympify(symbol_dict)}
+input.evalparam = {'wobracket': wobracket, 'checkratsimp': checkratsimp, 'local_dict': sympify(symbol_dict)}
 ==
