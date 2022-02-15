@@ -69,13 +69,10 @@ if __name__ == "__main__":
 
     for key in dic.get('jinja_keys', ['question', 'solution']):
         if key in dic:
-            key2 = f"_{key}_"
             if isinstance(dic[key] , str):
-                dic[key2] = "{% raw %}" + dic[key] + "{% endraw %}"
                 dic[key] = Env.from_string(macros + dic[key]).render(dic)
             elif isinstance(dic[key] , dict):
                 for k in dic[key]:
-                    dic[key2][k] = "{% raw %}" + dic[key2][k] + "{% endraw %}"
                     dic[key][k] = Env.from_string(macros + dic[key][k]).render(dic)
             elif isinstance(dic[key] , list):
                 for i in range(len(dic[key])):
