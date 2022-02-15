@@ -1,4 +1,4 @@
-extends = /model/math/multinput.pl
+extends = /model/math/multinput2.pl
 
 title = Nombres Complexes
 
