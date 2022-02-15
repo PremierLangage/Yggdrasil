@@ -14,7 +14,6 @@ title = Title
 
 init_input ==
 from mathinput import MathInput
-from jinja_env import Env
 input = MathInput()
 input.set_keypad(keypad)
 input.value = ""
@@ -24,7 +23,8 @@ input.type = input_type
 ==
 
 final_input ==
-input.prefix = prefix
+from jinja_env import Env
+input.prefix = Env.from_string(prefix).render(globals())
 ==
 
 before ==
