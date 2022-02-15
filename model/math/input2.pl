@@ -2,7 +2,6 @@ extends = /model/math/math.pl
 extends = /model/basic/temp.pl
 
 jinja_keys = ["prefix", "question", "solution", "inputblock"]
-
 before_scripts = ["mathimport", "init_input", "before"]
 eval_scripts = ["evalparam", "evaluator"]
 
@@ -62,7 +61,7 @@ inputblock ==
 
 style.mathquill =@ /utils/components/mathinput/mathinput.css.html
 
-javascript.mathquill2 ==
+javascript.mathinput ==
 <script>
 function onBeforeSubmitPL() {
   // copie les valeurs des champs MathField dans des éléments input
