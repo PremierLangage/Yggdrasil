@@ -3,7 +3,7 @@ extends = /model/basic/temp.pl
 
 jinja_keys = ["inputblock", "question", "solution", "prefix"]
 
-before_scripts = ["mathimport", "init_input", "before", "final_input"]
+before_scripts = ["mathimport", "init_input", "before"]
 eval_scripts = ["evalparam", "evaluator"]
 
 prefix = Réponse :
@@ -17,13 +17,9 @@ from mathinput import MathInput
 input = MathInput()
 input.set_keypad(keypad)
 input.value = ""
+input.prefix = prefix
 input.type = input_type
 # embed = embed.replace("#", r"\MathQuillMathField{}")
-==
-
-final_input ==
-from jinja_env import Env
-input.prefix = Env.from_string(prefix).render(globals())
 ==
 
 before ==
