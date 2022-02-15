@@ -37,7 +37,7 @@ inputblocks.1 ==
 ==
 
 inputblocks.toto == 
-{{ inputs[1] }}
+{{ inputs[1]|mathinput }}
 {{ inputs[2] }}
 ==
 
