@@ -1,6 +1,6 @@
 extends = /model/math/multinput.pl
 
-jinja_keys = ["prefix", "question", "solution", "inputblock", "tplpage"]
+jinja_keys = ["prefix", "question", "solution", "inputblocks"]
 
 title = Nombres Complexes
 
@@ -16,8 +16,8 @@ for i in range(3):
     inputs[i].type = "complex"
     inputs[i].evalparam = {'form': 'cartesian'}
 
-nsteps = 3
 step = 0
+steps = ['1', 'toto']
 ==
 
 question == 
@@ -25,7 +25,20 @@ Calculer les produits de nombres complexes suivants (sous forme algébrique).
 ==
 
 questions.1 == 
-Calculer {{2|latex}}
+Calculer 1
+==
+
+questions.toto == 
+Calculer toto
+==
+
+inputblocks.1 == 
+{{ inputs[O]|mathinput }}
+==
+
+inputblocks.toto == 
+{{ inputs[1]|mathinput }}
+{{ inputs[2]|mathinput }}
 ==
 
 tplpage =@ template.html
