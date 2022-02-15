@@ -7,7 +7,7 @@
 <p>
 {{ questions[key] }}
 </p>
-{{ inputblocks[key] }}
+{{ inputblocks[key]|safe }}
 {% if i == 2%}
 <button class="btn btn-primary btn-sm action-submit">
    <span class="ion-hide-md-down">Valider</span>
