@@ -1,5 +1,6 @@
 extends = /model/math/math.pl
 extends = /model/basic/temp.pl
+extends = messages_math.pl
 
 jinja_keys = ["prefix", "question", "solution", "inputblock"]
 before_scripts = ["mathimport", "init_input", "before"]
@@ -63,8 +64,14 @@ style.mathquill =@ /utils/components/mathinput/mathinput.css.html
 
 javascript.mathinput ==
 <script>
+// Active les popovers.
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+// Fonction appelée quand l'exercice est soumis (bouton valider).
 function onBeforeSubmitPL() {
-  // copie les valeurs des champs MathField dans des éléments input
+  // Copie les valeurs des champs MathField dans des éléments input.
   Object.values(setOfMathFields).forEach(function(mathField) {
     var mathFieldInput = document.getElementById('form_'+mathField.el().id);
       mathFieldInput.value = mathField.latex();
@@ -87,13 +94,3 @@ function onBeforeSubmitPL() {
 }
 </script>
 ==
-
-javascript.popover ==
-<script>
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
-</script>
-==
-
-extends = messages_math.pl
