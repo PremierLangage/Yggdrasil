@@ -17,14 +17,14 @@ for i in range(3):
     inputs[i].evalparam = {'form': 'cartesian'}
 
 step = 0
-steps = ['1', 'toto']
+steps = ['a1', 'toto']
 ==
 
 question == 
 Calculer les produits de nombres complexes suivants (sous forme algébrique).
 ==
 
-questions.1 == 
+questions.a1 == 
 Calculer 1
 ==
 
@@ -32,7 +32,7 @@ questions.toto ==
 Calculer toto
 ==
 
-inputblocks.1 == 
+inputblocks.a1 == 
 
 ==
 
