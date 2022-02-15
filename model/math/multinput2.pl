@@ -38,3 +38,12 @@ else:
         input.display_feedback()
         input.disable()
 ==
+
+solution ==
+{% for input in inputs %}
+<div style="display: block; margin-bottom: 1em;">
+{{ prefixes[loop.index0] }} 
+$! {{ input.sol|latex }} !$
+</div>
+{% endfor %}
+==
