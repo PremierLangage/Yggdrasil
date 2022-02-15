@@ -1,4 +1,4 @@
-extends = /model/math/expr2.pl
+extends = /model/math/expr.pl
 
 before ==
 from sympy import integrate
