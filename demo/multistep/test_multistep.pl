@@ -1,6 +1,6 @@
 extends = /model/math/multinput.pl
 
-jinja_keys = ["prefix", "question", "solution"]
+jinja_keys = ["prefix", "question", "solution", "inputblocks"]
 
 title = Nombres Complexes
 
