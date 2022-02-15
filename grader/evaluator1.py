@@ -54,6 +54,8 @@ if __name__ == "__main__":
     except:
         pass
 
+    dic['form'] = dic['tplpage']
+
     with open(sys.argv[3], "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
 
