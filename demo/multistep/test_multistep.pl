@@ -33,12 +33,12 @@ Calculer toto
 ==
 
 inputblocks.1 == 
-{{ inputs[O]}}
+{{ inputs[O]|mathinput }}
 ==
 
 inputblocks.toto == 
 {{ inputs[1]|mathinput }}
-{{ inputs[2] }}
+{{ inputs[2]|mathinput }}
 ==
 
 tplpage =@ template.html
