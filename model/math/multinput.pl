@@ -26,7 +26,7 @@ inputblock ==
 {% for input in inputs %}
 <div style="display: block; margin-bottom: 1em;">
 {{ prefixes[loop.index0] }} 
-$! {{ input|mathinput }} !$
+{{ input|mathinput }}
 </div>
 {% endfor %}
 ==
