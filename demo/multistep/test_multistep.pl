@@ -15,6 +15,8 @@ for i in range(3):
     inputs[i].sol = (z1 * z2).expand()
     inputs[i].type = "complex"
     inputs[i].evalparam = {'form': 'cartesian'}
+
+nbsteps = 0
 ==
 
 question == 
