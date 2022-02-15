@@ -1,5 +1,13 @@
 extends = input2.pl
 
+inputblock ==
+{% for input in inputs %}
+<div style="display: block; margin-bottom: 1em;">
+{{ prefixes[loop.index0] }} 
+{{ input|mathinput }}
+</div>
+{% endfor %}
+==
 
 evaluator ==
 from mathinput import MathInput
