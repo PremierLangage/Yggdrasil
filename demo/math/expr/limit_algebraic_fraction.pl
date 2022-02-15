@@ -11,6 +11,7 @@ sol = lim.doit()
 ==
 
 question ==
+{{jinja_keys}}
 Déterminer la limite suivante.
 ==
 
