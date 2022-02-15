@@ -1,7 +1,7 @@
 extends = /model/math/math.pl
 extends = /model/basic/temp.pl
 
-jinja_keys = ["inputblock", "question", "solution", "prefix"]
+jinja_keys % ["inputblock", "question", "solution", "prefix"]
 
 before_scripts = ["mathimport", "init_input", "before"]
 eval_scripts = ["evalparam", "evaluator"]
