@@ -76,11 +76,11 @@ if __name__ == "__main__":
             elif isinstance(dic[key] , dict):
                 for k in dic[key]:
                     #dic[key2][k] = "{% raw %}" + dic[key][k] + "{% endraw %}"
-                    #dic[key][k] = Env.from_string(macros + dic[key][k]).render(dic)
+                    dic[key][k] = Env.from_string(macros + dic[key][k]).render(dic)
             elif isinstance(dic[key] , list):
                 for i in range(len(dic[key])):
                     #dic[key2][i] = "{% raw %}" + dic[key][i] + "{% endraw %}"
-                    #dic[key][i] = Env.from_string(macros + dic[key][i]).render(dic)
+                    dic[key][i] = Env.from_string(macros + dic[key][i]).render(dic)
 
     dic['form'] = dic['tplpage']
 
