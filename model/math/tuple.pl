@@ -1,17 +1,11 @@
-extends = /model/math/input.pl
+# Model for a single math input field
+# with an evaluation as a tuple
 
+extends = /model/math/input2.pl
 
-checkratsimp = True
-symbol_dict = {'e': E}
-unauthorized_func = ['sin', 'cos', 'tan']
+# Evaluation parameters
+input_type = "tuple"
 
-evaluator ==
-from ast import literal_eval
-from evalsympy import eval_tuple
-score, error = eval_tuple(answers['math'], sol)
-feedback = message[error]
-==
-
-solution ==
-La solution est $! {{ sol|latex}} !$.
+evalparam ==
+input.evalparam = {}
 ==
