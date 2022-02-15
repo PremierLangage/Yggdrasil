@@ -17,7 +17,6 @@ from mathinput import MathInput
 input = MathInput()
 input.set_keypad(keypad)
 input.value = ""
-input.prefix = prefix
 input.type = input_type
 # embed = embed.replace("#", r"\MathQuillMathField{}")
 ==
