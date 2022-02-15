@@ -16,7 +16,7 @@ Déterminer la limite suivante.
 ==
 
 prefix ==
-$!  \displaystyle {{ lim|latex }} =  !$
+$!  \displaystyle {{ lim }} =  !$
 ==
 
 keypad = ["+infty", "-infty"]
