@@ -12,7 +12,6 @@ poly_form =
 poly_domain = R
 
 evalparam ==
-from sympy import sympify
 from sympy import poly
 poly_var = str(poly(sol).gen)
 input.evalparam = {'var': poly_var, 'form': poly_form}
