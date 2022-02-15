@@ -15,7 +15,7 @@ question ==
 Déterminer la limite suivante.
 ==
 
-prefix==
+prefix ==
 $!  \displaystyle {{ lim|latex }} =  !$
 ==
 
