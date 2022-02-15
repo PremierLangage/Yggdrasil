@@ -33,7 +33,7 @@ Calculer toto
 ==
 
 inputblocks.a1 == 
-
+{{ inputs[0]|mathinput }}
 ==
 
 inputblocks.toto == 
