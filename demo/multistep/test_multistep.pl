@@ -1,5 +1,7 @@
 extends = /model/math/multinput.pl
 
+jinja_keys = ["prefix", "question", "solution", "inputblock", "tplpage"]
+
 title = Nombres Complexes
 
 before == #|python|
