@@ -1,5 +1,5 @@
 {{ intro }}
-{% for i in range(nsteps) %}
+{% for key in steps %}
 <a class="text-dark" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
 ▶ Question {{ i + 1 }}
 </a>
@@ -7,7 +7,7 @@
 <p>
 {{ question }}
 </p>
-{{ inputs[loop.index0]|mathinput }}
+{{ inputblocks[key]|mathinput }}
 {% if i == 2%}
 <button class="btn btn-primary btn-sm action-submit">
    <span class="ion-hide-md-down">Valider</span>
