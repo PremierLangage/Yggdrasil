@@ -14,6 +14,7 @@ title = Title
 
 init_input ==
 from mathinput import MathInput
+from jinja_env import Env
 input = MathInput()
 input.set_keypad(keypad)
 input.value = ""
