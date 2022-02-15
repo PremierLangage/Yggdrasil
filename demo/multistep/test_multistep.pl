@@ -18,3 +18,5 @@ for i in range(3):
 question == 
 Calculer les produits de nombres complexes suivants (sous forme algébrique).
 ==
+
+tplpage =@ template.html
