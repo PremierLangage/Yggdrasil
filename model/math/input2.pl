@@ -23,7 +23,7 @@ input.type = input_type
 
 final_input ==
 from jinja_env import Env
-input.prefix = "" # Env.from_string(prefix).render(globals())
+input.prefix = Env.from_string(prefix).render(globals())
 ==
 
 before ==
