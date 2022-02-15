@@ -15,7 +15,7 @@ Déterminer la limite suivante.
 {{ lim|latex }}
 ==
 
-prefix ==
+solution ==
 $!  \displaystyle {{ lim|latex }} =  !$
 ==
 
