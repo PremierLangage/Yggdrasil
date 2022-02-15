@@ -38,7 +38,6 @@ inputblocks.1 ==
 
 inputblocks.toto == 
 {{ inputs[1]|mathinput }}
-{{ inputs[2]|mathinput }}
 ==
 
 tplpage =@ template.html
