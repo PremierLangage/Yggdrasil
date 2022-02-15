@@ -9,6 +9,10 @@ inputblock ==
 {% endfor %}
 ==
 
+evalparam ==
+
+==
+
 evaluator ==
 from mathinput import MathInput
 MathInput.message = message
