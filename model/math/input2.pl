@@ -54,7 +54,7 @@ tplpage =@ /model/basic/template2.html
 
 
 inputblock ==
-<div class="mathinput" style="display: block; margin-top: 1em;">
+<div style="display: block; margin-top: 1em;">
 {{ prefix }}
 {{ input|mathinput }}
 </div>
