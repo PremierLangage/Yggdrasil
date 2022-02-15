@@ -1,6 +1,5 @@
-@ /grader/evaluator1.py [grader.py]
-@ /builder/before1.py [builder.py]
-@ /utils/builderlib.py
+extends = /model/math/math.pl
+extends = /model/basic/temp.pl
 
 @ /model/math/jinja_math.py [jinja_env.py]
 @ /model/math/json_math.py [json_encoder.py]
