@@ -16,7 +16,7 @@ for i in range(3):
     inputs[i].type = "complex"
     inputs[i].evalparam = {'form': 'cartesian'}
 
-nbsteps = 0
+nsteps = 0
 ==
 
 question == 
