@@ -27,8 +27,10 @@ sol = 0
 ==
 
 solution ==
+<div style="display: block">
 {{ prefix }} 
 $! {{ sol|latex }} !$
+</div>
 ==
 
 evalparam ==
