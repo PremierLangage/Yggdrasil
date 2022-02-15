@@ -74,6 +74,7 @@ if __name__ == "__main__":
                 dic[key2] = "{% raw %}" + dic[key] + "{% endraw %}"
                 dic[key] = Env.from_string(macros + dic[key]).render(dic)
             elif isinstance(dic[key] , dict):
+                dic[key2] = dic[key].copy()
                 for k in dic[key]:
                     #dic[key2][k] = "{% raw %}" + dic[key][k] + "{% endraw %}"
                     dic[key][k] = Env.from_string(macros + dic[key][k]).render(dic)
