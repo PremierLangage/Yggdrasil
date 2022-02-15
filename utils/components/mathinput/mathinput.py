@@ -1,5 +1,5 @@
 from uuid import uuid4
-from evalsympy import eval_expr, eval_complex
+from evalsympy import eval_expr, eval_complex, eval_poly, eval_set, eval_tuple
 
 std_keypad = {
     "emptyset": {"label": "$! \\varnothing !$", "action": "cmd", "value": "\\empty"},
@@ -63,11 +63,11 @@ class MathInput:
         elif self.type == "complex":
             score, error = eval_complex(self.value, self.sol, **self.evalparam)
         elif self.type == "poly":
-            score, error = eval_complex(self.value, self.sol, **self.evalparam)
+            score, error = eval_poly(self.value, self.sol, **self.evalparam)
         elif self.type == "set":
-            score, error = eval_complex(self.value, self.sol, **self.evalparam)
+            score, error = eval_set(self.value, self.sol, **self.evalparam)
         elif self.type == "tuple":
-            score, error = eval_complex(self.value, self.sol, **self.evalparam)
+            score, error = eval_tuple(self.value, self.sol, **self.evalparam)
         self.score = score
         self.feedback = MathInput.message.get(error, f"Error: {error}")
 
