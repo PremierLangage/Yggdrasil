@@ -67,7 +67,7 @@ if __name__ == "__main__":
     # render some string values of the exercise dictionary with the custom Jinja environment 
     macros = dic.get('macros', '')
 
-    for key in dic.get('jinja_keys', ['question', 'solution', 'prefix']):
+    for key in dic.get('jinja_keys', ['question', 'solution']):
         if key in dic:
             if isinstance(dic[key] , str):
                 dic[key] = Env.from_string(macros + dic[key]).render(dic)
