@@ -24,7 +24,10 @@ input_prefix = Réponse :
 
 inputblock ==
 {% for input in inputs %}
-{{ input|mathinput }}
+<div style="display: block; margin-bottom: 1em;">
+{{ prefixes[loop.index0] }} 
+$! {{ input|mathinput }} !$
+</div>
 {% endfor %}
 ==
 
