@@ -12,7 +12,6 @@ sol = lim.doit()
 
 question ==
 Déterminer la limite suivante.
-{{ lim|latex }}
 ==
 
 prefix==
