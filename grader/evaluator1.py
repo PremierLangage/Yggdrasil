@@ -56,7 +56,7 @@ if __name__ == "__main__":
                         for k in dic[key]:
                             dic[key][k] = dic[key2][k].replace(r"{% raw %}", "")
                             dic[key][k] = dic[key][k].replace(r"{% endraw %}", "")         
-                            dic[key][k] = Env.from_string(macros+dic[key]).render(dic)
+                            dic[key][k] = Env.from_string(macros+dic[key][k]).render(dic)
     except:
         pass
 
