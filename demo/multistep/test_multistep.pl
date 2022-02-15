@@ -16,11 +16,16 @@ for i in range(3):
     inputs[i].type = "complex"
     inputs[i].evalparam = {'form': 'cartesian'}
 
-nsteps = 0
+nsteps = 3
+step = 0
 ==
 
 question == 
 Calculer les produits de nombres complexes suivants (sous forme algébrique).
+==
+
+questions.1 == 
+Calculer {{2|latex}}
 ==
 
 tplpage =@ template.html
