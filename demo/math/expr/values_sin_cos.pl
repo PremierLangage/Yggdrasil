@@ -8,7 +8,7 @@ f = choice([sin, cos])
 sol = f(x)
 ==
 
-text ==
+question ==
 Quelle est la valeur de la fonction $! {{ f|latex }} !$ en $!\displaystyle {{ x|latex }} !$ ?
 ==
 
