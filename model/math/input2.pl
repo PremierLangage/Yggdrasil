@@ -1,6 +1,7 @@
 extends = /model/math/math.pl
 extends = /model/basic/temp.pl
 extends = messages_math.pl
+extends = aux_mathinput.html
 
 jinja_keys = ["prefix", "question", "solution", "inputblock"]
 before_scripts = ["mathimport", "init_input", "before"]
@@ -57,40 +58,4 @@ inputblock ==
 {{ prefix }}
 {{ input|mathinput }}
 </div>
-==
-
-
-style.mathquill =@ /utils/components/mathinput/mathinput.css.html
-
-javascript.mathinput ==
-<script>
-// Active les popovers.
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
-
-// Fonction appelée quand l'exercice est soumis (bouton valider).
-function onBeforeSubmitPL() {
-  // Copie les valeurs des champs MathField dans des éléments input.
-  Object.values(setOfMathFields).forEach(function(mathField) {
-    var mathFieldInput = document.getElementById('form_'+mathField.el().id);
-      mathFieldInput.value = mathField.latex();
-
-    if (mathField instanceof MQ.StaticMath) {
-      if (mathField.innerFields.length == 1) {
-      mathFieldInput.value = mathField.innerFields[0].latex();
-    } else {
-      mathFieldInput.value = [mathField.innerFields[0].latex(),mathField.innerFields[1].latex()];
-    }
-    };
-  });
-
-  // Cache les popovers avant que les éléments correspondants soient détruits du DOM.
-  $(function () {
-    $('[data-toggle="popover"]').popover('hide')
-  });
-
-  return true;
-}
-</script>
 ==
