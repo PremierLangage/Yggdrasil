@@ -4,9 +4,9 @@
 ▶ Question {{ i+1 }}
 </a>
 <div class="collapse show" id="collapse{{ i }}">
-<p>
+<div class="question">
 {{ questions[steps[i]] }}
-</p>
+</div>
 {{ inputblocks[steps[i]]|safe }}
 {% if i < istep %}
 <div class="collapse" id="collapseSolution{{i}}">
