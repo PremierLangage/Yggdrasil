@@ -68,7 +68,7 @@ if scorestep >= 0:
     istep += 1
 
 if istep >= nbsteps:
-    istep = nbsteps
+    istep = nbsteps-1
     state == "final"
 
 ==
