@@ -19,12 +19,16 @@ for i in range(3):
 istep = 0
 steps = ['a1', 'toto']
 nbsteps = len(steps)
+score = -1
 ==
 
 evaluator ==
 
-istep +=1
-score = -1
+step = steps[istep]
+exec(eval[step])
+if scorestep >= 0:
+    istep +=1
+
 ==
 question == 
 Calculer les produits de nombres complexes suivants (sous forme algébrique).
@@ -45,6 +49,20 @@ inputblocks.a1 ==
 inputblocks.toto == 
 {{ inputs[1]|mathinput }}
 {{ inputs[2]|mathinput }}
+==
+
+eval.a1 ==
+inputs[0].sol = 3
+inputs[0].eval()
+inputs[0].display_feedback()
+scorestep = inputs[0].score
+==
+
+eval.toto ==
+inputs[1].sol = 3
+inputs[1].eval()
+inputs[1].display_feedback()
+scorestep = input.score
 ==
 
 tplpage =@ template.html
