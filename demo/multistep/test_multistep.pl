@@ -16,46 +16,45 @@ input0.sol = 10
 input0.type = "expr"
 
 istep = 0
-steps = ['a1', 'toto']
+steps = ['disc', 'toto']
 nbsteps = len(steps)
 score = -1
 ==
 
 evaluator ==
-
 step = steps[istep]
 exec(eval[step])
 if scorestep >= 0:
     istep +=1
-
-==
-question == 
-Calculer les produits de nombres complexes suivants (sous forme algébrique).
 ==
 
-questions.a1 == 
-Calculer 1
+questions.disc == 
+Calculer le discriminant de ce trinôme.
+==
+
+inputblocks.disc == 
+{{ inputdisc|mathinput }}
+==
+
+eval.disc ==
+inputdisc.value = answers[inputdisc.id]
+inputdisc.eval()
+inputdisc.display_feedback()
+scorestep = inputdisc.score
 ==
 
 questions.toto == 
 Calculer toto
 ==
 
-inputblocks.a1 == 
-{{ input0|mathinput }}
-==
+
 
 inputblocks.toto == 
 {{ inputs[1]|mathinput }}
 {{ inputs[2]|mathinput }}
 ==
 
-eval.a1 ==
-input0.value = answers[input0.id]
-input0.eval()
-input0.display_feedback()
-scorestep = input0.score
-==
+
 
 eval.toto ==
 inputs[1].sol = 0
