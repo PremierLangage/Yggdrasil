@@ -1,4 +1,4 @@
-extends = input2.pl
+extends = basic.pl
 
 inputblock ==
 {% for input in inputs %}
