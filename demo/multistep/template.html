@@ -1,14 +1,14 @@
 {{ intro }}
-{% for i in range(nbstep) %}
+{% for i in range(nbsteps) %}
 <a class="text-dark" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
-▶ Question {{ loop.index }}
+▶ Question {{ i+1 }}
 </a>
 <div class="collapse show" id="collapse{{ i }}">
 <p>
-{{ questions[key] }}
+{{ questions[steps[i]] }}
 </p>
-{{ inputblocks[key]|safe }}
-{% if loop.index0 == step %}
+{{ inputblocks[steps[i]]|safe }}
+{% if i == step %}
 <button class="btn btn-primary btn-sm action-submit">
    <span class="ion-hide-md-down">Valider</span>
 </button>
