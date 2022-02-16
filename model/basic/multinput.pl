@@ -3,26 +3,16 @@ extends = input2.pl
 inputblock ==
 {% for input in inputs %}
 <div style="display: block; margin-bottom: 1em;">
-{{ prefixes[loop.index0] }} 
-{{ input|mathinput }}
+{{ input|component }}
 </div>
 {% endfor %}
 ==
 
-init_input ==
-from mathinput import MathInput
-==
-
-
 evaluator ==
-from mathinput import MathInput
-MathInput.message = message
-
 def average(lst):
     return sum(lst)/len(lst)
 
 for input in inputs:
-    input.value = answers[input.id]
     input.eval()
 
 if -1 in [input.score for input in inputs]:
@@ -37,13 +27,4 @@ else:
     for input in inputs:
         input.display_feedback()
         input.disable()
-==
-
-solution ==
-{% for input in inputs %}
-<div style="display: block; margin-bottom: 1em;">
-{{ prefixes[loop.index0] }} 
-$! {{ input.sol|latex }} !$
-</div>
-{% endfor %}
 ==
