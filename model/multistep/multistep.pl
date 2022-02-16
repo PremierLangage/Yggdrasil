@@ -7,8 +7,6 @@ extends = /model/math/aux_mathinput.pl
 
 jinja_keys = ["intro", "questions", "solutions", "inputblocks"]
 
-title = Nombres Complexes
-
 evaluator ==
 step = steps[istep]
 exec(eval[step])
