@@ -8,6 +8,7 @@ before == #|python|
 input0 = MathInput()
 input0.sol = 10
 input0.type = "expr"
+radio = Radio()
 
 istep = 0
 steps = ['disc', 'nbsol']
