@@ -30,7 +30,6 @@ class Input(Component):
     def disable(self):
         self.disabled = True
 
-
     def render(self):
         """
         Return the HTML code of the component.
