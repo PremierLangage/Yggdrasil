@@ -43,7 +43,7 @@ Réponse :
 ==
 
 solutions.disc == 
-<div style="display: block; margin-top: 1em;margin-bottom: 1em;">
+<div style="display: block;">
 Réponse : 
 $! {{ disc|latex }} !$
 </div>
