@@ -1,7 +1,7 @@
 extends = /model/math/multinput.pl
 @ /utils/components/radio.py [radio.py]
 
-jinja_keys = ["prefix", "questions", "solution", "inputblock", "inputblocks"]
+jinja_keys = ["intro", "questions", "solution", "inputblock", "inputblocks"]
 
 title = Nombres Complexes
 
@@ -17,6 +17,10 @@ istep = 0
 steps = ['disc', 'nbsol']
 nbsteps = len(steps)
 score = -1
+==
+
+intro ==
+
 ==
 
 questions.disc == 
