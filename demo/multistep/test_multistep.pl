@@ -5,18 +5,12 @@ jinja_keys = ["prefix", "questions", "solution", "inputblock", "inputblocks"]
 title = Nombres Complexes
 
 before == #|python|
-inputs = [MathInput() for _ in range(3)]
-prefixes = []
-for i in range(3):
-    inputs[i].sol = 10
-    inputs[i].type = "expr"
-
 input0 = MathInput()
 input0.sol = 10
 input0.type = "expr"
 
 istep = 0
-steps = ['disc', 'toto']
+steps = ['disc', 'nbsol']
 nbsteps = len(steps)
 score = -1
 ==
