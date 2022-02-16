@@ -24,7 +24,7 @@ score = -1
 evaluator ==
 
 step = steps[istep]
-exec(eval[step])
+exec(eval[step], globals())
 if scorestep >= 0:
     istep +=1
 
