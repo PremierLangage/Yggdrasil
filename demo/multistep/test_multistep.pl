@@ -51,6 +51,7 @@ inputblocks.toto ==
 ==
 
 eval.a1 ==
+input0.value = answers[input0.id]
 input0.eval()
 input0.display_feedback()
 scorestep = input0.score
