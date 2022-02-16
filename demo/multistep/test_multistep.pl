@@ -8,7 +8,9 @@ before == #|python|
 input0 = MathInput()
 input0.sol = 10
 input0.type = "expr"
+from radio import Radio
 radio = Radio()
+radio.fill(["Aucune racine réelle", "Une racine réelle double.", "Deux racines réelles distinctes"], 2, False)
 
 istep = 0
 steps = ['disc', 'nbsol']
