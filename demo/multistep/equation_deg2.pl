@@ -8,7 +8,7 @@ b = randint(-4, 4, [0])
 c = randint(-4, 4, [0])
 P= a*x**2+b*x+c
 #lstsol = list(solveset(P,x,domain=S.Reals))
-
+from mathinput import MathInput
 input0 = MathInput()
 disc = b**2-4*a*c
 input0.sol = disc
