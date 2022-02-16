@@ -17,3 +17,14 @@
 
 </div>
 {% endfor %}
+
+{% if score >=0 %}
+<button class="btn btn-outline-primary shadow-none" onclick="document.location.reload(true);"> Nouveau </button>
+{% else %}
+<button class="btn btn-primary shadow-none action-submit">Valider</button>
+{% endif %}
+{% if score == 100 %}
+<span style="float: right;" class="btn btn-success">Score : {{score}} </span>
+{% elif score >= 0 and score < 100 %}
+<span style="float: right;" class="btn btn-warning">Score : {{score}} </span>
+{% endif %}
