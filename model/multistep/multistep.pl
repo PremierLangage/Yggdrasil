@@ -22,4 +22,5 @@ if istep >= nbsteps:
     score = sum(scores)/len(scores)
 
 ==
+
 tplpage =@ template.html
