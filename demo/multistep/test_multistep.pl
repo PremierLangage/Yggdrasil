@@ -35,7 +35,10 @@ Calculer le discriminant de ce trinôme.
 ==
 
 inputblocks.disc == 
+<div style="display: block; margin-top: 1em;">
+Réponse : 
 {{ input0|mathinput }}
+</div>
 ==
 
 eval.disc ==
