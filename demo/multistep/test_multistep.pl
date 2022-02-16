@@ -11,6 +11,10 @@ for i in range(3):
     inputs[i].sol = 10
     inputs[i].type = "expr"
 
+input0 = MathInput()
+input0.sol = 10
+input0.type = "expr"
+
 istep = 0
 steps = ['a1', 'toto']
 nbsteps = len(steps)
@@ -47,9 +51,9 @@ inputblocks.toto ==
 ==
 
 eval.a1 ==
-inputs[0].value = "0"
-inputs[0].eval()
-inputs[0].display_feedback()
+input0.value = "0"
+input0.eval()
+input0.display_feedback()
 scorestep = inputs[0].score
 ==
 
