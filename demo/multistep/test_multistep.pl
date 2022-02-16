@@ -11,7 +11,7 @@ a = randint(-4, 4, [0])
 b = randint(-4, 4, [0])
 c = randint(-4, 4, [0])
 P= a*x**2+b*x+c
-lstsol = list(solveset(P,x,domain=S.Reals))
+#lstsol = list(solveset(P,x,domain=S.Reals))
 
 input0 = MathInput()
 input0.sol = 10
