@@ -1,7 +1,7 @@
 extends = /model/math/multinput.pl
 @ /utils/components/radio.py [radio.py]
 
-jinja_keys = ["intro", "questions", "solutions", "solution", "inputblock", "inputblocks"]
+jinja_keys = ["intro", "questions", "solutions", "inputblocks"]
 
 title = Nombres Complexes
 
