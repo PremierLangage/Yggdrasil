@@ -20,6 +20,11 @@ step = 0
 steps = ['a1', 'toto']
 ==
 
+evaluator ==
+
+step+=1
+
+==
 question == 
 Calculer les produits de nombres complexes suivants (sous forme algébrique).
 ==
