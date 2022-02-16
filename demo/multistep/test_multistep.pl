@@ -12,9 +12,8 @@ for i in range(3):
     z2 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
     s = latex(z1 * z2)
     prefixes.append(f"$! {s} = !$")
-    inputs[i].sol = (z1 * z2).expand()
-    inputs[i].type = "complex"
-    inputs[i].evalparam = {'form': 'cartesian'}
+    inputs[i].sol = 0
+    inputs[i].type = "expr"
 
 istep = 0
 steps = ['a1', 'toto']
