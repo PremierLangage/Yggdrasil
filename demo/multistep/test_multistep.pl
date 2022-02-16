@@ -69,7 +69,7 @@ if scorestep >= 0:
 
 if istep >= nbsteps:
     istep = nbsteps-1
-    state == "final"
+    state = "final"
 
 ==
 tplpage =@ template.html
