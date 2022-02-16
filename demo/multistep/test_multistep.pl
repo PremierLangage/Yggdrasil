@@ -35,7 +35,8 @@ scores = []
 ==
 
 intro ==
-$$ {{ P|latex }} $$
+On considère le trinôme suivant :
+$$ {{ P|latex }}.$$
 ==
 
 questions.disc == 
@@ -64,7 +65,7 @@ scorestep = input0.score
 ==
 
 questions.nbsol == 
-Calculer toto
+Combien de racines réelles possède ce trinôme ?
 ==
 
 inputblocks.nbsol == 
