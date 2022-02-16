@@ -1,6 +1,6 @@
 extends = /model/math/multinput.pl
 
-jinja_keys = ["prefix", "question", "solution", "inputblock", "inputblocks"]
+jinja_keys = ["prefix", "questions", "solution", "inputblock", "inputblocks"]
 
 title = Nombres Complexes
 
@@ -43,27 +43,16 @@ inputdisc.display_feedback()
 scorestep = inputdisc.score
 ==
 
-questions.toto == 
+questions.nbsol == 
 Calculer toto
 ==
 
-
-
-inputblocks.toto == 
-{{ inputs[1]|mathinput }}
-{{ inputs[2]|mathinput }}
+inputblocks.nbsol == 
+{{ radio|component }}
 ==
 
+eval.nbsol ==
 
-
-eval.toto ==
-inputs[1].sol = 0
-inputs[1].eval()
-inputs[1].display_feedback()
-inputs[2].sol = 0
-inputs[2].eval()
-inputs[2].display_feedback()
-scorestep = inputs[2].score
 ==
 
 tplpage =@ template.html
