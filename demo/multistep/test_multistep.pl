@@ -47,7 +47,6 @@ inputblocks.toto ==
 ==
 
 eval.a1 ==
-inputs[0].sol = 3
 inputs[0].eval()
 inputs[0].display_feedback()
 scorestep = inputs[0].score
