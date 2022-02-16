@@ -1,4 +1,4 @@
-extends = /model/math/multinput.pl
+extends = /model/multistep/multistep.pl
 @ /utils/components/radio.py [radio.py]
 
 jinja_keys = ["intro", "questions", "solutions", "solution", "inputblock", "inputblocks"]
