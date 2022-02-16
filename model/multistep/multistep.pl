@@ -1,4 +1,8 @@
-extends = /model/math/multinput.pl
+extends = /model/math/math.pl
+extends = /model/basic/temp.pl
+extends = messages_math.pl
+extends = aux_mathinput.pl
+
 @ /utils/components/radio.py [radio.py]
 
 jinja_keys = ["intro", "questions", "solutions", "inputblocks"]
