@@ -59,10 +59,13 @@ scorestep = inputs[0].score
 ==
 
 eval.toto ==
-inputs[1].sol = 3
+inputs[1].sol = 0
 inputs[1].eval()
 inputs[1].display_feedback()
-scorestep = input.score
+inputs[2].sol = 0
+inputs[2].eval()
+inputs[2].display_feedback()
+scorestep = inputs[2].score
 ==
 
 tplpage =@ template.html
