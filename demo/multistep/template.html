@@ -8,7 +8,7 @@
 {{ questions[key] }}
 </p>
 {{ inputblocks[key]|safe }}
-{% if i == 2%}
+{% if index.loop0 == step %}
 <button class="btn btn-primary btn-sm action-submit">
    <span class="ion-hide-md-down">Valider</span>
 </button>
