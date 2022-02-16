@@ -1,5 +1,5 @@
 {{ intro }}
-{% for key in steps %}
+{% for i in range(nbstep) %}
 <a class="text-dark" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
 ▶ Question {{ loop.index }}
 </a>
