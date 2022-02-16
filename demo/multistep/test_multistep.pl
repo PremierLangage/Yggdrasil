@@ -67,7 +67,7 @@ exec(eval[step])
 if scorestep >= 0:
     istep += 1
 
-if istep > nbsteps:
+if istep >= nbsteps:
     istep = nbsteps
     state == "final"
 
