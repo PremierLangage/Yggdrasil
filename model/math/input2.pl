@@ -1,7 +1,7 @@
 extends = /model/math/math.pl
 extends = /model/basic/temp.pl
 extends = messages_math.pl
-extends = aux_mathinput.html
+extends = aux_mathinput.pl
 
 jinja_keys = ["prefix", "question", "solution", "inputblock"]
 before_scripts = ["mathimport", "init_input", "before"]
