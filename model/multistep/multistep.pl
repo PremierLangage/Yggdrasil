@@ -1,7 +1,7 @@
 extends = /model/math/math.pl
 extends = /model/basic/temp.pl
-extends = messages_math.pl
-extends = aux_mathinput.pl
+extends = /model/math/messages_math.pl
+extends = /model/math/aux_mathinput.pl
 
 @ /utils/components/radio.py [radio.py]
 
