@@ -10,8 +10,12 @@
 {{ inputblocks[steps[i]]|safe }}
 <br><br>
 {% if i < istep %}
-
- <button class="btn btn-outline-success btn-sm shadow-none" type="button" data-toggle="collapse" href="#collapseSolution" role="button" aria-expanded="false" aria-controls="collapseSolution">
+<div class="collapse" id="collapseSolution{{i}}">
+<div class="card card-body card border-success mb-3"">
+{{ solution }}
+</div>
+</div>
+ <button class="btn btn-outline-success btn-sm shadow-none" type="button" data-toggle="collapse" href="#collapseSolution{{i}}" role="button" aria-expanded="false" aria-controls="collapseSolution{{i}}">
 Solution
 </button>
 {% endif %}
