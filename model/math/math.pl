@@ -34,71 +34,38 @@ from latex2sympy import latex2sympy
 
 style.basic =@ /model/basic/basic.css.html
 
-oldstyle.basic == #|css|
-<style>
-.icon-check-after p::after {
-    font-family: "Font Awesome 5 Free";
-    color: #006400;
-    margin-left: 1em;
-    content: "\f00c";
-    vertical-align: middle;
-    font-weight: 900;
+style.mathquill =@ /utils/components/mathinput/mathinput.css.html
+
+javascript.mathinput ==
+<script>
+// Active les popovers.
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+// Fonction appelée quand l'exercice est soumis (bouton valider).
+function onBeforeSubmitPL() {
+  // Copie les valeurs des champs MathField dans des éléments input.
+  Object.values(setOfMathFields).forEach(function(mathField) {
+    var mathFieldInput = document.getElementById('form_'+mathField.el().id);
+      mathFieldInput.value = mathField.latex();
+
+    if (mathField instanceof MQ.StaticMath) {
+      if (mathField.innerFields.length == 1) {
+      mathFieldInput.value = mathField.innerFields[0].latex();
+    } else {
+      mathFieldInput.value = [mathField.innerFields[0].latex(),mathField.innerFields[1].latex()];
+    }
+    };
+  });
+
+  // Cache les popovers avant que les éléments correspondants soient détruits du DOM.
+  $(function () {
+    $('[data-toggle="popover"]').popover('hide')
+  });
+
+  return true;
 }
-
-.icon-times-after p::after {
-    font-family: "Font Awesome 5 Free";
-    color: #dc3545;
-    margin-left: 1em;
-    content: "\f00d";
-    vertical-align: middle;
-    font-weight: 900;
-}
-
-.icon-check-before p::before {
-    font-family: "Font Awesome 5 Free";
-    color: #006400;
-    margin-right: 1em;
-    content: "\f00c";
-    vertical-align: middle;
-    font-weight: 900;
-}
-
-.icon-times-before p::before {
-    font-family: "Font Awesome 5 Free";
-    color: #dc3545;
-    margin-right: 1em;
-    content: "\f00d";
-    vertical-align: middle;
-    font-weight: 900;
-}
-
-.btn-audio::before {
-    font-family: "Font Awesome 5 Free";
-    color: white;
-    content: "\f028";
-    vertical-align: middle;
-    font-weight: 900;
-}
-
-.error-text-unit {
-    background-color: #f2dede;
-    color: #a94442;
-    text-decoration: line-through #a94442;
-}
-
-.success-text-unit {
-    background-color: #dff0d8;
-    color: #3c763d;
-}
-
-.missed-text-unit {
-    color: #3c763d;
-    text-decoration: underline wavy #3c763d;
-}
-
-
-</style>
+</script>
 ==
-
-# HACK : Ce script JS permet de modifier la liste des boutons de contrôle.
 
