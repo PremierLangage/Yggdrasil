@@ -1,7 +1,7 @@
 {{ intro }}
 {% for key in steps %}
 <a class="text-dark" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapse{{ i }}" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
-▶ Question {{ i + 1 }}
+▶ Question {{ index.loop0  + 1 }}
 </a>
 <div class="collapse show" id="collapse{{ i }}">
 <p>
