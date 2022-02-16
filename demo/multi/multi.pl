@@ -1,4 +1,4 @@
-extends = /model/math/multinput.pl
+extends = /model/basic/multinput.pl
 @ /utils/components/inputfields.py [numeric.py]
 
 before ==
