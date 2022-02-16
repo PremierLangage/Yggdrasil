@@ -43,7 +43,9 @@ inputblocks.nbsol ==
 ==
 
 eval.nbsol ==
-
+scorestep = radio.eval()
+radio.show()
+radio.disable()
 ==
 
 
