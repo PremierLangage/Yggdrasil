@@ -3,9 +3,9 @@ extends = /model/math/multinput.pl
 title = Nombres Complexes
 
 before == #|python|
-inputs = [MathInput() for _ in range(3)]
+inputs = [MathInput() for _ in range(4)]
 prefixes = []
-for i in range(3):
+for i in range(4):
     z1 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
     z2 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
     s = latex(z1 * z2)
