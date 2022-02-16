@@ -1,7 +1,7 @@
 extends = /model/math/multinput.pl
 @ /utils/components/radio.py [radio.py]
 
-jinja_keys = ["intro", "questions", "solution", "inputblock", "inputblocks"]
+jinja_keys = ["intro", "questions", "solutions", "inputblock", "inputblocks"]
 
 title = Nombres Complexes
 
@@ -35,6 +35,13 @@ Calculer le discriminant de ce trinôme.
 ==
 
 inputblocks.disc == 
+<div style="display: block; margin-top: 1em;margin-bottom: 1em;">
+Réponse : 
+{{ input0|mathinput }}
+</div>
+==
+
+solutions.disc == 
 <div style="display: block; margin-top: 1em;margin-bottom: 1em;">
 Réponse : 
 {{ input0|mathinput }}
