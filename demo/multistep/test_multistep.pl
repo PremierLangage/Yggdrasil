@@ -18,6 +18,7 @@ for i in range(3):
 
 step = 0
 steps = ['a1', 'toto']
+nbsteps = len(steps)
 ==
 
 evaluator ==
