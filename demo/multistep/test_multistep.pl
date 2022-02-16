@@ -28,7 +28,7 @@ inputblocks.disc ==
 ==
 
 eval.disc ==
-input0.value = answers[inputdisc.id]
+input0.value = answers[input0.id]
 input0.eval()
 input0.display_feedback()
 scorestep = input0.score
