@@ -3,20 +3,9 @@ extends = /model/math/multinput.pl
 
 before ==
 from numeric import Numeric
-numeric1 = Numeric()
-numeric2 = Numeric()
+inputs = [Numeric() for _ in range(2)]
 
-numeric1._sol = 0
-numeric2._sol = 10
+inputs[0]._sol = 0
+inputs[1]._sol = 10
 ==
 
-inputblock ==
-<div class="row">
-  <div class="col-sm-6">{{ numeric1|component }}</div>
-  <div class="col-sm-6">{{ numeric2|component }}</div>
-</div>
-==
-
-solution ==
-{{ numeric1 }}
-==
