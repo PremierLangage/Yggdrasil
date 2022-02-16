@@ -27,7 +27,7 @@ score = -1
 ==
 
 intro ==
-
+{{ P|latex }}
 ==
 
 questions.disc == 
