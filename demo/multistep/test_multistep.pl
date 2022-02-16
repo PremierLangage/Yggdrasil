@@ -8,10 +8,6 @@ before == #|python|
 inputs = [MathInput() for _ in range(3)]
 prefixes = []
 for i in range(3):
-    z1 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
-    z2 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
-    s = latex(z1 * z2)
-    prefixes.append(f"$! {s} = !$")
     inputs[i].sol = 0
     inputs[i].type = "expr"
 
@@ -24,7 +20,7 @@ score = -1
 evaluator ==
 
 step = steps[istep]
-exec(eval[step], globals())
+exec(eval[step])
 if scorestep >= 0:
     istep +=1
 
