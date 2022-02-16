@@ -21,6 +21,16 @@ class Input(Component):
         elif self.score >= 0:
             self.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
 
+    def display_feedback(self):
+        if self.score == 100:
+            self.suffix = r'<i class="fas fa-check" style="color: green"></i>'
+        elif self.score >= 0:
+            self.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
+
+    def disable(self):
+        self.disabled = True
+
+
     def render(self):
         """
         Return the HTML code of the component.
