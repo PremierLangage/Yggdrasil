@@ -8,7 +8,7 @@ before == #|python|
 inputs = [MathInput() for _ in range(3)]
 prefixes = []
 for i in range(3):
-    inputs[i].sol = 0
+    inputs[i].sol = 10
     inputs[i].type = "expr"
 
 istep = 0
