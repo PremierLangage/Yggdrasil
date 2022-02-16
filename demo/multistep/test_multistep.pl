@@ -24,14 +24,14 @@ Calculer le discriminant de ce trinôme.
 ==
 
 inputblocks.disc == 
-{{ inputdisc|mathinput }}
+{{ input0|mathinput }}
 ==
 
 eval.disc ==
-inputdisc.value = answers[inputdisc.id]
-inputdisc.eval()
-inputdisc.display_feedback()
-scorestep = inputdisc.score
+input0.value = answers[inputdisc.id]
+input0.eval()
+input0.display_feedback()
+scorestep = input0.score
 ==
 
 questions.nbsol == 
@@ -39,6 +39,7 @@ Calculer toto
 ==
 
 inputblocks.nbsol == 
+{{ radio|component }}
 ==
 
 eval.nbsol ==
