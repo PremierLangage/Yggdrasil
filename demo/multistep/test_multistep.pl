@@ -45,7 +45,7 @@ Réponse :
 solutions.disc == 
 <div style="display: block; margin-top: 1em;margin-bottom: 1em;">
 Réponse : 
-{{ input0.sol|latex }}
+{{ disc|latex }}
 </div>
 ==
 
