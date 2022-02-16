@@ -76,6 +76,7 @@ evaluator ==
 step = steps[istep]
 exec(eval[step])
 if scorestep >= 0:
+    scores.append(scorestep)
     istep += 1
 
 if istep >= nbsteps:
