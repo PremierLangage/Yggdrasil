@@ -16,13 +16,6 @@ nbsteps = len(steps)
 score = -1
 ==
 
-evaluator ==
-step = steps[istep]
-exec(eval[step])
-if scorestep >= 0:
-    istep +=1
-==
-
 questions.disc == 
 Calculer le discriminant de ce trinôme.
 ==
@@ -50,4 +43,12 @@ eval.nbsol ==
 
 ==
 
+
+
+evaluator ==
+step = steps[istep]
+exec(eval[step])
+if scorestep >= 0:
+    istep +=1
+==
 tplpage =@ template.html
