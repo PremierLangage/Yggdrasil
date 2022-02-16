@@ -65,7 +65,11 @@ evaluator ==
 step = steps[istep]
 exec(eval[step])
 if scorestep >= 0:
-    istep = max(istep+1, nbsteps)
+    istep += 1
+
+if istep > nbsteps:
+    istep = nbsteps
+    state == "final"
 
 ==
 tplpage =@ template.html
