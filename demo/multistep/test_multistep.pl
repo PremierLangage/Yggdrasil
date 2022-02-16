@@ -19,7 +19,13 @@ input0.sol = disc
 input0.type = "expr"
 from radio import Radio
 radio = Radio()
-radio.fill(["Aucune racine réelle", "Une racine réelle double.", "Deux racines réelles distinctes"], 2, False)
+if disc > 0:
+    indsol = 2
+elif disc < 0:
+    indsol = 0
+else:
+    indsol = 1
+radio.fill(["Aucune racine réelle", "Une racine réelle double.", "Deux racines réelles distinctes"], indsol, False)
 
 istep = 0
 steps = ['disc', 'nbsol']
