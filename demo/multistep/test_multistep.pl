@@ -54,7 +54,7 @@ eval.a1 ==
 input0.value = "0"
 input0.eval()
 input0.display_feedback()
-scorestep = inputs[0].score
+scorestep = input0.score
 ==
 
 eval.toto ==
