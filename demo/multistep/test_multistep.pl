@@ -22,7 +22,7 @@ steps = ['a1', 'toto']
 
 evaluator ==
 
-step+=1
+step +=1
 
 ==
 question == 
