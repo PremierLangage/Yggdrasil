@@ -6,6 +6,13 @@ jinja_keys = ["intro", "questions", "solution", "inputblock", "inputblocks"]
 title = Nombres Complexes
 
 before == #|python|
+x = Symbol('x')
+a = randint(-4, 4, [0])
+b = randint(-4, 4, [0])
+c = randint(-4, 4, [0])
+P= a*x**2+b*x+c
+lstsol = list(solveset(P,x,domain=S.Reals))
+
 input0 = MathInput()
 input0.sol = 10
 input0.type = "expr"
