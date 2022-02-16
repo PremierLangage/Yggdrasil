@@ -25,6 +25,7 @@ istep = 0
 steps = ['disc', 'nbsol']
 nbsteps = len(steps)
 score = -1
+scores = []
 ==
 
 intro ==
