@@ -39,7 +39,6 @@ Calculer toto
 ==
 
 inputblocks.nbsol == 
-{{ radio|component }}
 ==
 
 eval.nbsol ==
