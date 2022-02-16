@@ -14,7 +14,7 @@ P= a*x**2+b*x+c
 #lstsol = list(solveset(P,x,domain=S.Reals))
 
 input0 = MathInput()
-input0.sol = 10
+input0.sol = b**2-4*a*c
 input0.type = "expr"
 from radio import Radio
 radio = Radio()
