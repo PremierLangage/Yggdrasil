@@ -7,6 +7,8 @@ extends = /ComputerScience/python/template/pltest.pl
 @ennonce.md
 @data1
 
+@exemple
+
 title= Le cadeau de Tante Sue
 
 text==
