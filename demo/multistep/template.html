@@ -28,7 +28,7 @@ Solution
 </div>
 {% endfor %}
 
-{% if score >= 0 %}
+{% if state == "final" %}
 <button class="btn btn-outline-primary shadow-none" onclick="document.location.reload(true);"> Nouveau </button>
 {% if score == 100 %}
 <span style="float: right;" class="btn btn-success">Score : {{score}} </span>
