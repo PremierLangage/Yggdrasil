@@ -16,14 +16,14 @@ for i in range(3):
     inputs[i].type = "complex"
     inputs[i].evalparam = {'form': 'cartesian'}
 
-step = 0
+istep = 0
 steps = ['a1', 'toto']
 nbsteps = len(steps)
 ==
 
 evaluator ==
 
-step +=1
+istep +=1
 score = -1
 ==
 question == 
