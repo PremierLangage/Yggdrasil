@@ -11,7 +11,7 @@ from components import Input
 
 input = Input(value='5')
 inp = Input(value='7')
-inpts = [inp.copy(), Input()]
+inpts = [{cid:inp.cid, selector:inp.selector}, Input()]
 tata = inpts[0]
 ==
 
