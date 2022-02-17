@@ -22,7 +22,7 @@ text ==
 form ==
 {{ input|component }}
 
-{{ inpts[0]|component }}
+<c-input cid='titi'></c-input>
 {{ inpts[1]|component }}
 ==
 
