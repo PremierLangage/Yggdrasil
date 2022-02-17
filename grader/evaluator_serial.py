@@ -52,27 +52,23 @@ if __name__ == "__main__":
     Component.sync_context(dic)
     answers = get_answers()
 
-    def deserialize(d, dic):
+    def deserialize(d):
         if isinstance(d, dict):
             for k, v in d.items():
                 if isinstance(v, dict) and 'cid' in v:
                     cid = v['cid']
-                    d[k] = dic['_'+cid+'_']
+                    d[k] = Component(**answers[cid])
                 else:
-                    deserialize(v, dic)
+                    deserialize(v)
         elif isinstance(d, list):
             for i in range(len(d)):
                 if isinstance(d[i], dict) and 'cid' in d[i]:
                     cid = d[i]['cid']
-                    d[k] = dic['_'+cid+'_']
+                    d[k] = Component(**answers[cid])
                 else:
-                    deserialize(d[i], dic)
-
-    for k, v in dic.items():
-        if isinstance(v, dict) and not 'cid' in v:
-            deserialize(v, dic)
-        elif isinstance(v, list):
-            deserialize(v, dic)
+                    deserialize(d[i])
+    
+    deserialize(dic)
 
     if 'evaluator' in dic:
         glob = {}
