@@ -18,5 +18,6 @@ inputs[1].sol = maximum(f, x, Interval(a,b))
 
 question == 
 On considère l'ensemble
-$$ A = \{ {{ f|latex }} | x \in [{{ a }}, {{ b }}] \} $$
+$$ A = \{ {{ f|latex }} | x \in [{{ a }}, {{ b }}] \}. $$
+Déterminer les bornes de cet ensemble.
 ==
