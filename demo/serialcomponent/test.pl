@@ -9,9 +9,9 @@ keylist % [1, 2]
 before ==
 from components import Input
 
-input = Input(cid='toto',  debug=True, value='1')
-_titi_ = Input(cid='titi', debug=True, value='1')
-_tata_ = Input(cid='tata', debug=True, value='1')
+input = Input(cid='toto')
+_titi_ = Input(cid='titi',)
+_tata_ = Input(cid='tata')
 inpts = [_titi_, _tata_]
 ==
 
