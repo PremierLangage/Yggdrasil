@@ -68,7 +68,7 @@ if __name__ == "__main__":
                 else:
                     deserialize(d[i], dic)
 
-    for k, v in d.items():
+    for k, v in dic.items():
         if isinstance(v, dict) and not 'cid' in v:
             deserialize(v, dic)
         elif isinstance(v, list):
