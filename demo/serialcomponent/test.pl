@@ -8,7 +8,7 @@ keylist % [1, 2]
 
 before ==
 from components import Input, CodeEditor
-inpts = [Input(), Input()]
+inpts = [Input(cid='titi'), Input(cid='tata')]
 input = Input(cid='toto')
 ==
 
