@@ -43,16 +43,15 @@ if __name__ == "__main__":
     answers = get_answers()
 
     def deserialize(d):
-        for k, v in d.items():
-            if isinstance(v, dict):
-                if 'cid' in v:
-                    v = Component(**answers[v['cid']])
-                else:
-                    pass
+        if isinstance(v, dict):
+            if 'cid' in v:
+                d = Component(**answers[v['cid']])
+            else:
+                for k, v in d.items():
                     deserialize(v)
-            elif isinstance(v, list):
-                for x in v:
-                    deserialize(x)
+        elif isinstance(v, list):
+            for x in v:
+                deserialize(x)
 
     deserialize(dic)
 
