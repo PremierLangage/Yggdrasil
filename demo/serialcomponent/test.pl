@@ -8,7 +8,7 @@ keylist % [1, 2]
 
 before ==
 from components import Input
-inpts = [Input(), Input()]
+inpts = [Input(), RadioGroup()]
 input = Input()
 ==
 
