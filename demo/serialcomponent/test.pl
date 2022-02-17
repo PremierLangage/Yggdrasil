@@ -13,7 +13,7 @@ input = Input()
 ==
 
 text ==
-{{inputs}}
+{{inpts}}
 {{input}}
 ==
 
