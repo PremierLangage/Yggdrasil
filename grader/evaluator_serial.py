@@ -61,5 +61,5 @@ if __name__ == "__main__":
         print(missing_grade_stderr, file=sys.stderr)
         sys.exit(1)
     
-    output(dic['grade'][0], str(answers), dic)
+    output(dic['grade'][0], str(answers)+str(dic['response']), dic)
 
