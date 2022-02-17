@@ -13,6 +13,7 @@ inpts = []
 input = Input(cid='toto',  debug=True, value='1')
 _titi_ = Input(cid='titi', debug=True, value='1')
 _tata_ = Input(cid='tata', debug=True, value='1')
+inpts = [_titi_, _tata_]
 ==
 
 text ==
