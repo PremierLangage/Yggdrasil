@@ -35,15 +35,20 @@ if __name__ == "__main__":
         print(msg, file=sys.stderr)
         sys.exit(1)
 
-    answers = None
-    for arg in sys.argv:
-        if arg == 'answers.json':
-            with open(arg, "r") as f:
-                answers = json.load(f)
-                break
-    
+    from components import Component
     dic = get_context()
-    dic['response'] = get_answers()
+    answers = get_answers()
+
+    def deserialize(d):
+        for k, v in dic.items():
+            if isinstance(v, dict):
+                if 'cid' in v:
+                    v = Component(**answers[v['cid']])
+                else:
+                    deserialize(v)
+            elif isinstance(v, list):
+                for x in v:
+                    deserialize(x)
 
     if 'evaluator' in dic:
         glob = {}
