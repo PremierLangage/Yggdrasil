@@ -70,6 +70,7 @@ if __name__ == "__main__":
                     #d[i] = Component.deserialize(d[i], answers[cid])
                     d[i] = Component(**answers[cid].copy())
                     d[i].value = "11"
+                    d[i] = 0
                 else:
                     deserialize(d[i])
 
