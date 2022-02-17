@@ -10,7 +10,7 @@ before ==
 from components import Input
 
 input = Input(cid='toto')
-inpts = [Input(), Input()]
+inpts = [Input(value='4'), Input()]
 tata = inpts[0]
 ==
 
