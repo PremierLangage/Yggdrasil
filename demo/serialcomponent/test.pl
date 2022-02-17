@@ -9,9 +9,11 @@ keylist % [1, 2]
 before ==
 from components import Input
 inputs = [Input(), Input()]
+input = Input()
 ==
 
 text ==
+{{ input|component }}
 {{ inputs[0]|component }}
 {{ inputs[1]|component }}
 ==
