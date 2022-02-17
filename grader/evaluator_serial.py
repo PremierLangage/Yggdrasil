@@ -34,6 +34,13 @@ if __name__ == "__main__":
                +"Usage: python3 grader.py [input_json] [answer_jsonfile] [output_json] [feedback_file]")
         print(msg, file=sys.stderr)
         sys.exit(1)
+
+    answers = None
+    for arg in sys.argv:
+        if arg == 'answers.json':
+            with open(arg, "r") as f:
+                answers = json.load(f)
+                break
     
     dic = get_context()
     dic['response'] = get_answers()
@@ -54,5 +61,5 @@ if __name__ == "__main__":
         print(missing_grade_stderr, file=sys.stderr)
         sys.exit(1)
     
-    output(dic['grade'][0], dic['grade'][1], dic)
+    output(dic['grade'][0], str(answers), dic)
 
