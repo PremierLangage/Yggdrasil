@@ -8,7 +8,6 @@ keylist % [1, 2]
 
 before ==
 from components import Input
-inpts = []
 
 input = Input(cid='toto',  debug=True, value='1')
 _titi_ = Input(cid='titi', debug=True, value='1')
