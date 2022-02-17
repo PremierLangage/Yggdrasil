@@ -19,3 +19,8 @@ text ==
 form ==
 
 ==
+
+evaluator ==
+score = 1
+grade = (100, "")
+==
