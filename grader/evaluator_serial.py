@@ -5,6 +5,16 @@ import sys, json, jsonpickle, time
 
 from sandboxio import output, get_context, get_answers
 
+import json, jsonpickle
+
+class JSONEncoder(json.JSONEncoder):
+
+    def default(self, obj):
+        if isinstance(obj, (MultiComp, Ex)):
+            return vars(obj)
+        return jsonpickle.Pickler(unpicklable=False).flatten(obj)
+
+
 
 class StopEvaluatorExec(Exception):
     pass
