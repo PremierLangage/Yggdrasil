@@ -57,6 +57,7 @@ if __name__ == "__main__":
                     cid = d[i]['cid']
                     d[i] = Component.deserialize(d[i], d[i])
                     d[i] = Component.deserialize(d[i], answers[cid])
+                    d[i].selector = 'c-input'
                 else:
                     deserialize(d[i])
 
