@@ -12,7 +12,7 @@ from components import Input
 input = Input(cid='toto')
 _titi_ = Input(cid='titi',)
 _tata_ = Input(cid='tata')
-inpts = [0, 0]
+inpts = [_titi_, _tata_]
 ==
 
 text ==
@@ -23,8 +23,6 @@ text ==
 form ==
 {{ input|component }}
 
-{{ inpts[0]|component }}
-{{ inpts[1]|component }}
 ==
 
 evaluator ==
