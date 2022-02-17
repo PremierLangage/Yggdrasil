@@ -48,7 +48,8 @@ if __name__ == "__main__":
                 if 'cid' in v:
                     v = Component(**answers[v['cid']])
                 else:
-                    deserialize(v)
+                    pass
+                    #deserialize(v)
             elif isinstance(v, list):
                 for x in v:
                     deserialize(x)
