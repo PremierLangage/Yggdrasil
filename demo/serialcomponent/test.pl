@@ -10,7 +10,8 @@ before ==
 from components import Input
 
 input = Input(value='5')
-inpts = [Input(value='4'), Input()]
+inp = Input(value='7')
+inpts = [inp.copy(), Input()]
 tata = inpts[0]
 ==
 
