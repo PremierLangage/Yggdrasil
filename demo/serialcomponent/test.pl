@@ -10,7 +10,7 @@ before ==
 from components import Input, CodeEditor
 inpts = []
 inpts .append(Input(cid='titi', debug=True))
-inpts.append(Input(cid='tata', debug=True)])
+inpts.append(Input(cid='tata', debug=True))
 input = Input(cid='toto')
 ==
 
