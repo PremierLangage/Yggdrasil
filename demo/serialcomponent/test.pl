@@ -9,7 +9,7 @@ keylist % [1, 2]
 before ==
 from components import Input, CodeEditor
 inpts = [Input(cid='titi', debug=True), Input(cid='tata', debug=True)]
-input = Input(cid='toto', debug=True)
+input = Input(cid='toto')
 ==
 
 text ==
