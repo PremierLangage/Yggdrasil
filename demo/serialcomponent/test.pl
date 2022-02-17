@@ -9,7 +9,7 @@ keylist % [1, 2]
 before ==
 from components import Input
 
-input = Input(cid='toto')
+input = Input(value='5')
 inpts = [Input(value='4'), Input()]
 tata = inpts[0]
 ==
