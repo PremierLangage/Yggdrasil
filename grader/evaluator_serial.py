@@ -36,7 +36,10 @@ if __name__ == "__main__":
         sys.exit(1)
 
     from components import Component
-    dic = get_context()
+    with open(sys.argv[1], "r") as f:
+        dic = json.load(f)
+
+    #Component.sync_context(context)
     answers = get_answers()
 
     def deserialize(d):
@@ -49,6 +52,8 @@ if __name__ == "__main__":
             elif isinstance(v, list):
                 for x in v:
                     deserialize(x)
+
+    deserialize(dic)
 
     if 'evaluator' in dic:
         glob = {}
