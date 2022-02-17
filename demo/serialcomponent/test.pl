@@ -19,7 +19,9 @@ text ==
 ==
 
 form ==
-
+{{ input|component }}
+{{ inputs[0]|component }}
+{{ inputs[1]|component }}
 ==
 
 evaluator ==
