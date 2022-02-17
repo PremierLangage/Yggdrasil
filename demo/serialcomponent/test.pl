@@ -13,7 +13,8 @@ input = Input()
 ==
 
 text ==
-
+{{inputs}}
+{{input}}
 ==
 
 form ==
