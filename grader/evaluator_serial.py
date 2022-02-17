@@ -59,16 +59,16 @@ if __name__ == "__main__":
                     cid = v['cid']
                     d[k] = dic['_'+cid+'_']
                 else:
-                    deserialize(v)
+                    deserialize(v, dic)
         elif isinstance(d, list):
             for i in range(len(d)):
                 if isinstance(d[i], dict) and 'cid' in d[i]:
                     cid = d[i]['cid']
                     d[k] = dic['_'+cid+'_']
                 else:
-                    deserialize(d[i])
-
-    deserialize(dic)
+                    deserialize(d[i], dic)
+    for 
+        deserialize(dic)
 
     if 'evaluator' in dic:
         glob = {}
