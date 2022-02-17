@@ -12,6 +12,7 @@ inpts = []
 inpts.append(Input(cid='titi', debug=True, value='1'))
 inpts.append(Input(cid='tata', debug=True, value='1'))
 input = Input(cid='toto',  debug=True, value='1')
+_
 ==
 
 text ==
@@ -22,7 +23,7 @@ text ==
 form ==
 {{ input|component }}
 
-<c-input cid='yyyy'></c-input>
+{{ inpts[0]|component }}
 {{ inpts[1]|component }}
 ==
 
