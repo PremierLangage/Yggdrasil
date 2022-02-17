@@ -12,7 +12,7 @@ from components import Input
 input = Input(cid='toto')
 _titi_ = Input(cid='titi',)
 _tata_ = Input(cid='tata')
-inpts = [_titi_, _tata_]
+inpts = [Input(), Input()]
 ==
 
 text ==
