@@ -4,14 +4,12 @@
 
 title =
 
-keylist % [1, 2]
-
 before ==
 from components import Input
 
 input = Input(value='5')
 input0 = Input(value='7')
-inputs = [{cid: input0.cid, selector:input0.selector}]
+inputs = [{'cid': input0.cid, 'selector':input0.selector}]
 ==
 
 text ==
