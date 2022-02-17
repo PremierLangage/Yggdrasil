@@ -13,7 +13,7 @@ inpts.append(Input(cid='titi', debug=True, value='1'))
 inpts.append(Input(cid='tata', debug=True, value='1'))
 input = Input(cid='toto',  debug=True, value='1')
 _titi_ = inpts[0]
-_toto_ = inpts[1]
+_tata_ = inpts[1]
 ==
 
 text ==
