@@ -13,14 +13,13 @@ input = Input()
 ==
 
 text ==
-{{ input|component }}
-{{ inputs[0]|component }}
-{{ inputs[1]|component }}
+
 ==
 
 form ==
-{{ input|component }}
 {{ inputs[0]|component }}
+{{ input|component }}
+
 {{ inputs[1]|component }}
 ==
 
