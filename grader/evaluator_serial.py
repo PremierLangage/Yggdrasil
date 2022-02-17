@@ -55,7 +55,7 @@ if __name__ == "__main__":
                     if 'cid' in v:
                         d[i] = Component(**answers[d[i]['cid']])
                     else:
-                        deserialize(v)
+                        deserialize(d[i])
 
     deserialize(dic)
 
