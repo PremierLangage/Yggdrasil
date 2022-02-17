@@ -93,7 +93,7 @@ if __name__ == "__main__":
     dic['feedback'] = dic['grade'][1]
 
     with open(sys.argv[3], "w+") as f:
-        f.write(jsonpickle.encode(context if context else get_context(), unpicklable=False))
+        f.write(jsonpickle.encode(dic, unpicklable=False))
     
     with open(sys.argv[4], "w+") as f:
         print(str(feedback), file=f)
