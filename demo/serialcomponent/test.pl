@@ -14,8 +14,8 @@ input = Input()
 
 text ==
 {{ input|component }}
-{{ inputs[0]|component }}
-{{ inputs[1]|component }}
+{{ inputs[0]|component|safe }}
+{{ inputs[1]|component|safe }}
 ==
 
 form ==
