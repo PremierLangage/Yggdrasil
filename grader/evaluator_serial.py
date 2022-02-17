@@ -49,7 +49,7 @@ if __name__ == "__main__":
     with open(sys.argv[1], "r") as f:
         dic = json.load(f)
 
-    Component.sync_context(dic)
+    #Component.sync_context(dic)
     answers = get_answers()
 
     def deserialize(d):
