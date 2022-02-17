@@ -25,6 +25,6 @@ Déterminer les bornes de cet ensemble.
 ==
 
 inputblock ==
-{{ inputs[0]|mathinput }}
+La borne inf est : {{ inputs[0]|mathinput }}
 {{ inputs[1]|mathinput }}
 ==
