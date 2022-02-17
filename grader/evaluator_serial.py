@@ -70,9 +70,9 @@ if __name__ == "__main__":
 
     for k, v in d.items():
         if isinstance(v, dict) and not 'cid' in v:
-            deserialize(dic, dic)
+            deserialize(v, dic)
         elif isinstance(v, list):
-            deserialize(dic, dic)
+            deserialize(v, dic)
 
     if 'evaluator' in dic:
         glob = {}
