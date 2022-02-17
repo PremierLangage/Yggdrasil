@@ -10,9 +10,8 @@ before ==
 from components import Input
 
 input = Input(value='5')
-inp = Input(value='7')
-inpts = [{cid:inp.cid, selector:inp.selector}, Input()]
-tata = inpts[0]
+input0 = Input(value='7')
+inputs = [{cid: input0.cid, selector:input0.selector}]
 ==
 
 text ==
@@ -23,7 +22,7 @@ text ==
 
 form ==
 {{ input|component }}
-{{ inpts[0]|component }}
+{{ inputs[0]|component }}
 ==
 
 evaluator ==
