@@ -8,13 +8,11 @@ b = a + randint(1, 4)
 var('x')
 f = choice([x**2+1, x**2-1, 1-x**2, -1-x**2])
 inputs = [MathInput() for _ in range(2)]
-prefixes = []
+prefixes = ["\inf A", "\sup A"]
 
 from sympy.calculus.util import minimum, maximum
 
-prefixes[0] = "\inf A"
 inputs[0].sol = minimum(f, x, Interval(a,b))
-prefixes[1] = "\sup A"
 inputs[1].sol = maximum(f, x, Interval(a,b))
 ==
 
