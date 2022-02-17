@@ -26,5 +26,5 @@ form ==
 
 evaluator ==
 from random import randint
-grade = (randint(0, 50), "")
+grade = (randint(0, 50), str(randint(0, 50)))
 ==
