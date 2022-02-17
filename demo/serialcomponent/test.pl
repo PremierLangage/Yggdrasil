@@ -8,10 +8,13 @@ keylist % [1, 2]
 
 before ==
 from components import Input
+input1 = Input()
+input2 = Input()
 ==
 
 text ==
-{{ keylist }}
+{{ input1|component }}
+{{ input2|component }}
 ==
 
 form ==
