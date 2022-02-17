@@ -8,7 +8,7 @@ b = a + randint(1, 4)
 var('x')
 f = choice([x**2+1, x**2-1, 1-x**2, -1-x**2])
 inputs = [MathInput() for _ in range(2)]
-prefixes = ["\inf A", "\sup A"]
+prefixes = ["$! \inf A !$", "$! \sup A !$"]
 
 from sympy.calculus.util import minimum, maximum
 
