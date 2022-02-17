@@ -23,8 +23,3 @@ On considère l'ensemble
 $$ A = \{ {{ f|latex }} \: | \: x \in [{{ a }}, {{ b }}] \}. $$
 Déterminer les bornes de cet ensemble.
 ==
-
-inputblock ==
-La borne inf est : {{ inputs[0]|mathinput }}
-{{ inputs[1]|mathinput }}
-==
