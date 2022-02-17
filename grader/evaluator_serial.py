@@ -55,9 +55,8 @@ if __name__ == "__main__":
             for i in range(len(d)):
                 if isinstance(d[i], dict) and 'cid' in d[i]:
                     cid = d[i]['cid']
-                    d[i] = Component.deserialize(d[i], d[i])
-                    d[i] = Component.deserialize(d[i].copy(), answers[cid])
-                    d[i].selector = 'c-input'
+                    answers[cid].selector = 'c-input'
+                    d[i] = Component.deserialize(d[i], answers[cid])
                 else:
                     deserialize(d[i])
 
