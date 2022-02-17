@@ -7,13 +7,12 @@ title =
 keylist % [1, 2]
 
 before ==
-from components import Input, CodeEditor
+from components import Input
 inpts = []
-inpts.append(Input(cid='titi', debug=True, value='1'))
-inpts.append(Input(cid='tata', debug=True, value='1'))
+
 input = Input(cid='toto',  debug=True, value='1')
-_titi_ = inpts[0]
-_tata_ = inpts[1]
+_titi_ = Input(cid='titi', debug=True, value='1')
+_tata_ = Input(cid='tata', debug=True, value='1')
 ==
 
 text ==
