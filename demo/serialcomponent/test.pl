@@ -22,7 +22,7 @@ text ==
 
 form ==
 {{ input|component }}
-
+{{ inpts[0]|component }}
 ==
 
 evaluator ==
