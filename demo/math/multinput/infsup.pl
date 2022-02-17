@@ -1,6 +1,6 @@
 extends = /model/math/multinput.pl
 
-title = Nombres Complexes
+title = Bornes d'un ensemble
 
 before == #|python|
 a = randint(-4, 0)
