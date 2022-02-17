@@ -9,7 +9,7 @@ from components import Input
 
 input = Input(value='5')
 input0 = Input(value='7')
-inputs = [{'cid': input0.cid, 'selector':input0.selector}]
+inputs = [[{'cid': input0.cid, 'selector':input0.selector}]]
 ==
 
 text ==
@@ -20,7 +20,7 @@ text ==
 
 form ==
 {{ input|component }}
-{{ inputs[0]|component }}
+{{ inputs[0][0]|component }}
 ==
 
 evaluator ==
