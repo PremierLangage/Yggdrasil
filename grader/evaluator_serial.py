@@ -59,7 +59,7 @@ if __name__ == "__main__":
                     cid = v['cid']
                     #d[k] = Component.deserialize(v, v)
                     #d[k] = Component.deserialize(d[k], answers[cid])
-                    d[k] = Component(**answers[cid])
+                    #d[k] = Component(**answers[cid])
                 else:
                     deserialize(v)
         elif isinstance(d, list):
