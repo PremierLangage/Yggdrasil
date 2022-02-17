@@ -93,12 +93,12 @@ if __name__ == "__main__":
     dic['feedback'] = dic['grade'][1]
 
     with open(sys.argv[3], "w+") as f:
-        json.dump(dic, f, cls=JSONEncoder)
-
-    with open(sys.argv[4], "w+", encoding='utf-8') as f:
-        print("", file=f)
+        f.write(jsonpickle.encode(context if context else get_context(), unpicklable=False))
     
-    print(int(score))
+    with open(sys.argv[4], "w+") as f:
+        print(str(feedback), file=f)
+    
+    print(int(grade))
     
     sys.exit(0)
 
