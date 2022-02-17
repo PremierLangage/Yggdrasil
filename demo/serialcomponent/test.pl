@@ -9,7 +9,7 @@ from components import Input
 
 input = Input(value='5')
 input0 = Input()
-inputs = [[{'cid': input0.cid, 'selector':input0.selector, 'value':'5'}]]
+inputs = [[{'cid': input0.cid, 'selector':input0.selector, 'value':'8'}]]
 ==
 
 text ==
