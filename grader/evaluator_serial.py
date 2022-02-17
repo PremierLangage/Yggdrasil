@@ -67,9 +67,7 @@ if __name__ == "__main__":
                 if isinstance(d[i], dict) and 'cid' in d[i]:
                     cid = d[i]['cid']
                     answers[cid]['selector'] = 'c-input'
-                    #d[i] = Component.deserialize(d[i], answers[cid])
-                    d[i] = Component(**answers[cid].copy())
-                    d[i].value = "11"
+                    d[i] = Component.deserialize(d[i], answers[cid])
                 else:
                     deserialize(d[i])
 
