@@ -4,14 +4,13 @@ title = Bornes d'un ensemble
 
 before == #|python|
 a = randint(-4, 0)
-b = a + randint(1, 4) 
+b = a + randint(1, 4)
+var('x')
 f = choice([x**2+1, x**2-1, 1-x**2, -1-x**2])
 inputs = [MathInput() for _ in range(2)]
 prefixes = []
 
 from sympy.calculus.util import minimum, maximum
-
-var('x')
 
 prefixes[0] = "\inf A"
 inputs[0].sol = minimum(f, x, Interval(a,b))
