@@ -95,6 +95,8 @@ if __name__ == "__main__":
     
     with open(sys.argv[4], "w+") as f:
         print(str(dic['grade'][1]), file=f)
-        
+    
+    print(int(dic['grade'][0]))
+    
     sys.exit(0)
 
