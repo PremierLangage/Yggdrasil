@@ -184,12 +184,6 @@ class Checkbox(Component, InputField):
 
         return score
 
-    def show(self):
-        """
-        Display visual feedback.
-        """
-        pass
-
     def display_feedback(self):
         """
         Display visual feedback.
