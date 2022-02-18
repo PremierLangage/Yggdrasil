@@ -20,10 +20,6 @@ class MathInput:
         self.id = kwargs.get('id', "MathInput" + str(uuid4().hex))
         self.keypad = kwargs.get('keypad', [])
         self.value = kwargs.get('value', '')
-        try:
-            self.value = answers[self.id]
-        except:
-            pass
         self.prefix = kwargs.get('prefix', '')
         self.suffix = kwargs.get('suffix', '')
         self.disabled = kwargs.get('disabled', False)
