@@ -17,6 +17,7 @@ class Input(Component):
             self.score = 0
             
     def show(self):
+    # deprecated
         if self.score == 100:
             self.suffix = r'<i class="fas fa-check" style="color: green"></i>'
         elif self.score >= 0:
