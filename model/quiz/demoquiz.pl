@@ -21,5 +21,5 @@ for i in range(nbstep):
 
 
 intro ==
-Ce quiz est composé de 4 question.
+Ce quiz est composé de 4 questions.
 ==
