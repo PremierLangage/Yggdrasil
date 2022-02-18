@@ -18,6 +18,7 @@ ex.inputblock = ex.input.render()
 ==
 
 evaluator ==
+ex.input.value = answers[ex.input.id]
 ex.input.eval()
 ex.input.display_feedback()
 score = ex.input.score
