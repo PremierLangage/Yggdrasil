@@ -13,7 +13,7 @@ class Input(Component):
     def eval(self):
     # TODO : reprendre les modes d'évaluations
     # plus sophistiqués du modèle input
-        if self._sol == self.value:
+        if self.sol == self.value:
             self.score = 100
         else:
             self.score = 0
