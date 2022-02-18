@@ -8,6 +8,7 @@ before == #|python|
 # Créer champs de réponse
 input = MathInput()
 input.sol = sqrt(3)
+input.value = "3"
 inputblock = input.render()
 ==
 
