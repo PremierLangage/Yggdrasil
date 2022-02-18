@@ -11,6 +11,7 @@ from exmath import ExMath
 ex = ExMath()
 ex.question = question
 ex.input.sol = sqrt(3)
+ex.solution = solution
 # Créer champs de réponse
 #inputblock = input.render()
 ==
