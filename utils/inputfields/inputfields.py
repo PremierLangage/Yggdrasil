@@ -269,3 +269,9 @@ class Numeric(Input):
             self.suffix = r'<i class="fas fa-check" style="color: green"></i>'
         elif self.score >= 0:
             self.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
+
+
+class MultInputField:
+
+    def eval(self):
+        
