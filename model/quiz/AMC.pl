@@ -44,17 +44,14 @@ quiz ==
 - Douala
 - Kribi
 
-*[ordered] Combien font un plus un ?
-- 0
-- 1
-+ 2
-- 3
-==
-
-tt ==
 ** Parmi les nombres suivants, lesquels sont positifs ?
 + 2
 - -2
 + 10
 
+*[ordered] Combien font un plus un ?
+- 0
+- 1
++ 2
+- 3
 ==
