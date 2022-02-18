@@ -3,7 +3,6 @@ from mathinput import MathInput
 class ExMath:
 
     def __init__(self, **kwargs):
-        super().__init__(**kwargs)
         self.__Ex__ = "Math"
         self.question = kwargs.get('question', '')
         if 'input' in kwargs:
