@@ -49,7 +49,7 @@ class Ex:
         """
         setattr(self, name, Env.from_string(getattr(self, name)).render(dic))
 
-class ExRadio(Ex):
+class ExRadio(Radio):
 
     def __init__(self, **kwargs):
         self.__Ex__ = "Radio"
@@ -60,18 +60,7 @@ class ExRadio(Ex):
             self.input = Radio()
             self.inputblock = self.input.render()
         #super().__init__(**kwargs)
-            
-    def set_items(self, items):
-        """
-        Set the list of items.
-        """
-        self.input.set_items(items)
 
-    def set_sol(self, index):
-        """
-        Set the solution (from its index in the list of items).
-        """
-        self.input.set_sol(index)
 
 class ExCheckbox(Ex):
 
