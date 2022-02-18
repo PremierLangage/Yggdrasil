@@ -98,6 +98,8 @@ def comp2dic(obj):
             obj.input = {"cid": item.cid, "name": item.name, "selector": item.selector}
     elif isinstance(obj, MultiComp):
         comp2dic(obj.comp)
+    elif isinstance(obj, MultInputField):
+        comp2dic(obj.inputs)
 
 def dic2comp(obj, dic):
     newcomp = []
