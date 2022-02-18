@@ -10,6 +10,11 @@ class JSONEncoder(json.JSONEncoder):
             return {'__SymPy__': True, 'srepr': srepr(obj)}
         if isinstance(obj, MathInput):
             return vars(obj)
+        if isinstance(obj, ExMath):
+            dic = vars(obj)
+            for k, v in dic.items():
+                if isinstance(v, dict):
+                    dic[k] = self.default(v)
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
 class JSONDecoder(json.JSONDecoder):
