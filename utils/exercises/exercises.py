@@ -26,6 +26,12 @@ class Ex:
         """
         self.input.show()
 
+    def display_feedback(self):
+        """
+        Display visual feedback.
+        """
+        self.input.display_feedback()
+
     def disable(self):
         """
         Disable the exercise.
