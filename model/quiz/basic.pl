@@ -10,7 +10,7 @@ extends = /model/basic/temp.pl
 @ /utils/components/dragdrop.py [customdragdrop.py]
 
 @ /utils/components/scoring.py
-@ /utils/inputfields/basic.py
+@ /utils/inputfields/inputfields.py
 
 before_scripts = ["importfunc", "init", "start"]
 eval_scripts = ["control", "final"]
