@@ -72,9 +72,7 @@ def getnewcomp(obj):
     elif isinstance(obj, MultiComp):
         newcomp = newcomp + getnewcomp(obj.comp)
     elif isinstance(obj, MultInputField):
-        for obj2 in obj.inputs:
-            if isinstance(obj2, Component):
-                newcomp = newcomp + getnewcomp(obj2)
+        newcomp = newcomp + getnewcomp(obj.comp)
 
     return newcomp
 
