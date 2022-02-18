@@ -14,6 +14,7 @@ inputblock = input.render()
 
 evaluator ==
 input.eval()
+input.display_feedback()
 score = input.score
 inputblock = input.render()
 ==
