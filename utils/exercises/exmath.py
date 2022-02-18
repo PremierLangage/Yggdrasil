@@ -2,7 +2,7 @@ class ExMath(Ex):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.__Ex__ = "Input"
+        self.__Ex__ = "Math"
         self.question = kwargs.get('question', '')
         if 'input' in kwargs:
             self.input = kwargs['input']
