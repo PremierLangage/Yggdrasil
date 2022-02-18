@@ -99,11 +99,7 @@ class ExInput(Ex):
             self.inputblock = self.input.render()
             
     def eval(self):
-        if self.input.value == self.input._sol:
-            self.input.score = 100
-        else:
-            self.input.score = 0
-        return self.input.score
+        return self.input.eval()
 
 class ExDragDrop(Ex):
 
