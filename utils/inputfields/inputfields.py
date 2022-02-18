@@ -278,6 +278,10 @@ class MultInputField:
         self.inputs = kwargs.get('inputs', [])
 
     def eval(self):
+
+        def average(lst):
+            return sum(lst)/len(lst)
+
         for input in self.inputs:
             input.eval()
 
