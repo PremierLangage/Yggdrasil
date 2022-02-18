@@ -294,7 +294,7 @@ class MultInputField:
                     input.hide_feedback()
         else:
             score = int(average([input.score for input in self.inputs]))
-            for input in inputs:
+            for input in self.inputs:
                 input.display_feedback()
                 input.disable()
         return score
