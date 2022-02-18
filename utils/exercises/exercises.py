@@ -81,9 +81,9 @@ class ExCheckbox(Ex):
         self.__Ex__ = "Checkbox"
         if 'input' in kwargs:
             self.input = kwargs['input']
-            self.inputblock = self.input.render()
+            self.inputblock = kwargs.get('inputblock', '')
         else:
-            self.input = Checkbox()
+            self.input = Radio()
             self.inputblock = self.input.render()
 
     def set_items(self, items):
