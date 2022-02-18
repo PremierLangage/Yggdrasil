@@ -50,3 +50,11 @@ quiz ==
 + 2
 - 3
 ==
+
+tt ==
+** Parmi les nombres suivants, lesquels sont positifs ?
++ 2
+- -2
++ 10
+
+==
