@@ -9,14 +9,14 @@ before == #|python|
 input = MathInput()
 input.sol = sqrt(3)
 input.value = "3"
-inputblock = input.render()
+#inputblock = input.render()
 ==
 
 evaluator ==
 input.eval()
 input.display_feedback()
 score = input.score
-inputblock = input.render()
+#inputblock = input.render()
 ==
 
 question == 
@@ -27,3 +27,8 @@ solution ==
 La solution est ...
 ==
 
+inputblock ==
+<div style="display: block; margin-top: 1em;">
+{{ input|mathinput }}
+</div>
+==
