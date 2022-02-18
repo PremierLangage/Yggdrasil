@@ -10,7 +10,7 @@ extends = /model/basic/temp.pl
 @ /utils/components/dragdrop.py [customdragdrop.py]
 
 @ /utils/components/scoring.py
-@ /utils/components/radio.py
+@ /utils/inputfields/basic.py
 @ /utils/components/checkbox.py
 @ /utils/components/input.py
 
