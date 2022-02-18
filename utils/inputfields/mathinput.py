@@ -76,12 +76,12 @@ class MathInput:
         self.disabled = True
 
     def render(self):
-        id = l.id
-        prefix = l.prefix
-        suffix = l.suffix
-        keypad = l.keypad
-        value = l.value
-        if l.disabled:
+        id = self.id
+        prefix = self.prefix
+        suffix = self.suffix
+        keypad = self.keypad
+        value = self.value
+        if self.disabled:
             cls_disabled = "mq-disabled"
         with open('mathinput.html') as f:
             html = f.read()
