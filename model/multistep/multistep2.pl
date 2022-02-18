@@ -10,12 +10,17 @@ jinja_keys = ["intro"]
 before == #|python|
 from exmath import ExMath
 sequence = [ExMath(), ExMath()]
-ex.question = question
-ex.input.sol = sqrt(3)
-ex.solution = solution
+sequence[0].question = "toto"
+sequence[0].input.sol = sqrt(3)
+sequence[0].solution = "solution"
+sequence[0].inputblock = sequence[0].input.render()
+
+sequence[1].question = "toto"
+sequence[1].input.sol = sqrt(3)
+sequence[1].solution = "solution"
+sequence[1].inputblock = sequence[0].input.render()
 # Créer champs de réponse
 #inputblock = input.render()
-ex.inputblock = ex.input.render()
 ==
 
 
