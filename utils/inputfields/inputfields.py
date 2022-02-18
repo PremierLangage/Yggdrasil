@@ -273,6 +273,10 @@ class Numeric(Input):
 
 class MultInputField:
 
+    def __init__(self, **kwargs):
+        self.__MultInputField__ = True
+        self.inputs = kwargs.get('inputs', [])
+
     def eval(self):
         for input in self.inputs:
             input.eval()
