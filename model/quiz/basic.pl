@@ -11,8 +11,6 @@ extends = /model/basic/temp.pl
 
 @ /utils/components/scoring.py
 @ /utils/inputfields/basic.py
-@ /utils/components/checkbox.py
-@ /utils/components/input.py
 
 before_scripts = ["importfunc", "init", "start"]
 eval_scripts = ["control", "final"]
