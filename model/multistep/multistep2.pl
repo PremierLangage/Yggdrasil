@@ -33,7 +33,7 @@ scores = []
 
 
 evaluator ==
-sequence[istep].input.value = answers[sequence[istep].input.id]
+#sequence[istep].input.value = answers[sequence[istep].input.id]
 scorestep = sequence[istep].input.eval()
 if scorestep >= 0:
     scores.append(scorestep)
