@@ -17,6 +17,7 @@ class Input(Component):
             self.score = 100
         else:
             self.score = 0
+        return self.score
             
     def show(self):
     # deprecated
