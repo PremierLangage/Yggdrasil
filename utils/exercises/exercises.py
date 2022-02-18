@@ -1,6 +1,5 @@
 from jinja_env import Env
-from inputfields import Radio, Checkbox
-from input import Input
+from inputfields import Radio, Checkbox, Input, Numeric
 from uuid import uuid4
 from customdragdrop import CustomDragDrop
 import re
