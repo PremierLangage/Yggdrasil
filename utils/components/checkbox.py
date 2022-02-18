@@ -109,6 +109,12 @@ class Checkbox(Component):
         """
         pass
 
+    def display_feedback(self):
+        """
+        Display visual feedback.
+        """
+        pass
+
     def disable(self):
         """
         Disable the component.
