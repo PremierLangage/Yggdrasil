@@ -19,10 +19,13 @@
     <div style="display: block; margin-top: 1em;">
     {{ sequence[i-1].inputblock|safe|markdown }}
     </div>
-    <hr class="divide">
     {% if i == nbstep %}
+        <hr class="divide">
+
         <button class="btn btn-primary action-submit">Terminer</button>
     {% else %}
+        <hr class="divide">
+
         <button class="nexttab btn btn-primary" onclick="show({{i+1}})">Suivant</i></button>
     {% endif %}
     </div>
@@ -60,12 +63,12 @@ Score : {{score}} / 100
 </div>
 {% endif %}
 {% if sequence[i-1].solution|length > 0 %}
-<hr class="divide">
 <div class="collapse" id="collapseSolution{{i}}">
 <div class="card card-body card border-success mb-3"">
 {{ sequence[i-1].solution }}
 </div>
 </div>
+<hr class="divide">
  <button class="btn btn-outline-success btn-sm shadow-none" type="button" data-toggle="collapse" href="#collapseSolution{{i}}" role="button" aria-expanded="false" aria-controls="collapseSolution{{i}}">
 Solution
 </button>
