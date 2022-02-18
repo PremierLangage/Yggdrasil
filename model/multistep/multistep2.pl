@@ -25,6 +25,7 @@ sequence[1].inputblock = sequence[1].input.render()
 
 # Créer champs de réponse
 #inputblock = input.render()
+istep = 
 ==
 
 
