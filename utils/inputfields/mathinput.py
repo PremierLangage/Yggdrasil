@@ -56,6 +56,7 @@ class MathInput:
             self.eval_custom()
         else:
             self.eval_auto()
+        return self.score
 
     def eval_auto(self):
         """Evaluate the input field according to its type."""
