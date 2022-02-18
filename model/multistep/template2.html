@@ -7,7 +7,9 @@
 <div class="question">
 {{ sequence[i].question }}
 </div>
+<div style="display: block; margin-top: 1em;">
 {{ sequence[i].inputblock|safe }}
+</div>
 {% if i < istep %}
 <div class="collapse" id="collapseSolution{{i}}">
 <div class="card card-body card border-success mb-3"">
