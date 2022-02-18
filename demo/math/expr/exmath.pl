@@ -17,6 +17,5 @@ La solution est ...
 ==
 
 inputblock ==
-{{ inputs[0]|mathinput }}
-{{ inputs[1]|mathinput }}
+{{ input|mathinput }}
 ==
