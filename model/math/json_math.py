@@ -24,7 +24,7 @@ class JSONDecoder(json.JSONDecoder):
             return MathInput(**dic)
         if '__Ex__' in dic:
             for k, v in dic.items():
-                if insinstance(v, dict):
+                if isinstance(v, dict):
                     dic[k] = self.object_hook(v)
             if dic['__Ex__'] == 'Math':
                 return ExMath(**dic)
