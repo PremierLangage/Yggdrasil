@@ -12,6 +12,7 @@ input.sol = sqrt(3)
 
 evaluator ==
 input.eval()
+score = input.score
 ==
 
 question == 
