@@ -37,6 +37,7 @@ for ex in sequence:
     ex.input.value = answers.get(ex.input.id, '')
 
 scorestep = sequence[istep].input.eval()
+sequence[istep].input.display_feedback()
 if scorestep >= 0:
     scores.append(scorestep)
     istep += 1
