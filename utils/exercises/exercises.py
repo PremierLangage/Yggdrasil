@@ -56,7 +56,7 @@ class ExRadio(Radio):
         if 'inputblock' in kwargs:
             self.inputblock = kwargs.get('inputblock', '')
         else:
-            self.inputblock = self.input.render()
+            self.inputblock = self.render()
         super().__init__(**kwargs)
             
     def set_items(self, items):
