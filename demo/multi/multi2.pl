@@ -20,5 +20,5 @@ Solution
 ==
 
 evaluator ==
-doubleinput.eval()
+score = doubleinput.eval()
 ==
