@@ -109,7 +109,7 @@ for i, q in enumerate(list_questions):
     if type(q)== list :
         continue
     if q['type'] == "Radio":
-        newcomp = CustomRadio()
+        newcomp = Radio()
         
         newcomp.setStatement(q['text'])
         newcomp.setitems(q['items'])
@@ -118,7 +118,7 @@ for i, q in enumerate(list_questions):
             newcomp.shuffle()
         comp.append(newcomp)
     elif q['type'] == "Checkbox":
-        newcomp = CustomCheckbox()
+        newcomp = Checkbox()
         newcomp.setStatement(q['text'])
         newcomp.setitems(q['items'])
         newcomp.setsol_from_index(q['index'])
