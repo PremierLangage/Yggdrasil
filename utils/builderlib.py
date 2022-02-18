@@ -3,6 +3,7 @@ import json, jsonpickle
 from jinja2 import Environment, BaseLoader
 import uuid
 from multicomp import MultiComp
+from inputfields import MathInputField
 from exercises import Ex, ExDragDrop
 
 class PickleEncoder(json.JSONEncoder):
