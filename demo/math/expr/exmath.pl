@@ -7,6 +7,7 @@ title = Calculer la distance entre deux points du plan
 before == #|python|
 from exmath import ExMath
 ex = ExMath()
+
 # Créer champs de réponse
 input = MathInput()
 input.sol = sqrt(3)
