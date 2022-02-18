@@ -2,7 +2,7 @@ extends = /model/math/expr.pl
 @ /utils/exercises/exmath.py
 @ /utils/inputfields/mathinput.py
 
-tplpage =@ /model/math/template2.html
+tplpage =@ /model/math/template3.html
 
 title = Calculer la distance entre deux points du plan
 
