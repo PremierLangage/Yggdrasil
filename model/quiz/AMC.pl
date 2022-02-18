@@ -33,6 +33,7 @@ for i, q in enumerate(list_questions):
 ==
 
 intro ==
+{{ sequence }}
 Début du quiz
 ==
 
