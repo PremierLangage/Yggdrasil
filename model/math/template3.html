@@ -2,6 +2,7 @@
 {{ ex.question }}
 </div>
 <div style="display: block; margin-top: 1em;">
+    {{test}}
 {{ ex.inputblock|markdown|safe }}
 </div>
 {% if score >= 0 and score < 100 and solution|length > 1%}
