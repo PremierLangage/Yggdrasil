@@ -53,13 +53,11 @@ class ExRadio(Radio):
 
     def __init__(self, **kwargs):
         self.__Ex__ = "Radio"
-        if 'input' in kwargs:
-            self.input = kwargs['input']
+        if 'inputblock' in kwargs:
             self.inputblock = kwargs.get('inputblock', '')
         else:
-            self.input = Radio()
             self.inputblock = self.input.render()
-        #super().__init__(**kwargs)
+        super().__init__(**kwargs)
             
     def set_items(self, items):
         """
