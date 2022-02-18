@@ -25,7 +25,7 @@ score = ex.input.score
 ex.inputblock = ex.input.render()
 ==
 
-question == 
+test == 
 {{ex}}
 ==
 
