@@ -30,5 +30,6 @@ La solution est ...
 inputblock ==
 <div style="display: block; margin-top: 1em;">
 {{ input|mathinput }}
+toto
 </div>
 ==
