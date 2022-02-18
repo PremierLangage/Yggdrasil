@@ -1,6 +1,6 @@
 from mathinput import MathInput
 
-class ExMath(Ex):
+class ExMath:
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
