@@ -17,10 +17,10 @@ input.value = "3"
 ==
 
 evaluator ==
-input.eval()
-input.display_feedback()
-score = input.score
-inputblock = input.render()
+ex.input.eval()
+ex.input.display_feedback()
+score = ex.input.score
+#inputblock = input.render()
 ==
 
 question == 
