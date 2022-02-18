@@ -8,7 +8,7 @@ class ExMath(Ex):
             self.input = kwargs['input']
             self.inputblock = kwargs.get('inputblock', '')
         else:
-            self.input = Input()
+            self.input = MathInput()
             self.inputblock = self.input.render()
             
     def eval(self):
