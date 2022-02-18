@@ -25,6 +25,11 @@ score = ex.input.score
 ex.inputblock = ex.input.render()
 ==
 
+question == 
+Entrer la racine de 2 et la racine de 3 ?
+==
+
+
 test == 
 {{ex}}
 ==
