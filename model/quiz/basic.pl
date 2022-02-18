@@ -49,7 +49,7 @@ scores = []
 for ex in sequence:
     scores.append(ex.eval())
     ex.disable()
-    ex.show()
+    ex.display_feedback()
 
 score = sum(scores) // len(scores)
 _state_ = "grade"
