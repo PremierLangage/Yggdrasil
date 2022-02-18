@@ -8,6 +8,7 @@ before == #|python|
 from exmath import ExMath
 ex = ExMath()
 ex.input.sol = sqrt(3)
+ex.input.value = "\sqrt{2}"
 # Créer champs de réponse
 #inputblock = input.render()
 ==
