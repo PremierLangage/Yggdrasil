@@ -22,6 +22,8 @@ class JSONDecoder(json.JSONDecoder):
                 return LabelGroup(None, **dic)
             else:
                 return MultiComp(**dic)
+        if '__MultInputField__' in dic:
+            return MultInputField(**dic)
         if '__Ex__' in dic:
             if dic['__Ex__'] == 'Radio':
                 return ExRadio(**dic)
