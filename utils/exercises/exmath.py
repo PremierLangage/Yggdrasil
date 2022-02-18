@@ -1,3 +1,5 @@
+from mathinput import MathInput
+
 class ExMath(Ex):
 
     def __init__(self, **kwargs):
