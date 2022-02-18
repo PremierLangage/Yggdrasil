@@ -10,6 +10,10 @@ input = MathInput()
 input.sol = sqrt(3)
 ==
 
+evaluator ==
+input.eval()
+==
+
 question == 
 Entrer la racine de 2 et la racine de 3 ?
 ==
