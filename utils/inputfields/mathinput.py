@@ -74,3 +74,15 @@ class MathInput:
     def disable(self):
         """Disable the input field."""
         self.disabled = True
+
+    def render(self):
+        id = l.id
+        prefix = l.prefix
+        suffix = l.suffix
+        keypad = l.keypad
+        value = l.value
+        if l.disabled:
+            cls_disabled = "mq-disabled"
+        with open('mathinput.html') as f:
+            html = f.read()
+        return Template(html).render(locals())
