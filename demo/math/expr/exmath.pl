@@ -6,7 +6,7 @@ title = Calculer la distance entre deux points du plan
 
 before == #|python|
 # Créer champs de réponse
-input = MathInput
+input = MathInput()
 input.sol = sqrt(3)
 ==
 
