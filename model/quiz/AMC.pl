@@ -1,10 +1,6 @@
 extends = /model/quiz/basic.pl
 
 @ /utils/format/AMC.py
-@ /utils/components/scoring.py
-@ /utils/components/radio.py
-@ /utils/components/checkbox.py
-
 
 start == #|python|
 from AMC import parse_AMC_TXT
