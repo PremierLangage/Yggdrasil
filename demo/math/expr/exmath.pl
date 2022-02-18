@@ -8,6 +8,7 @@ before == #|python|
 # Créer champs de réponse
 input = MathInput()
 input.sol = sqrt(3)
+inputblock = input.render()
 ==
 
 evaluator ==
@@ -23,6 +24,3 @@ solution ==
 La solution est ...
 ==
 
-inputblock ==
-{{ input|mathinput }}
-==
