@@ -5,6 +5,7 @@ class ExMath:
     def __init__(self, **kwargs):
         self.__Ex__ = "Math"
         self.question = kwargs.get('question', '')
+        self.solution = kwargs.get('solution', '')
         if 'input' in kwargs:
             self.input = kwargs['input']
             self.inputblock = kwargs.get('inputblock', '')
