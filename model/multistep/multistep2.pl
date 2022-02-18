@@ -9,7 +9,7 @@ jinja_keys = ["intro"]
 
 before == #|python|
 from exmath import ExMath
-ex = ExMath()
+sequence = [ExMath(), ExMath()]
 ex.question = question
 ex.input.sol = sqrt(3)
 ex.solution = solution
@@ -18,13 +18,6 @@ ex.solution = solution
 ex.inputblock = ex.input.render()
 ==
 
-evaluator ==
-
-ex.input.value = answers[ex.input.id]
-ex.input.eval()
-ex.input.display_feedback()
-score = ex.input.score
-ex.inp
 
 evaluator ==
 sequence[istep].input.value = answers[sequence[istep].input.id]
