@@ -56,7 +56,6 @@ Score : {{score}} / 100
     <div style="display: block; margin-top: 1em;">
     {{ sequence[i-1].inputblock|safe|markdown }}
     </div>
-<hr class="divide">
 {% if sequence[i-1].feedback|length > 0 %}
 <div class="feedback">
 <i class="far fa-hand-point-right"></i> {{ sequence[i-1].feedback|safe|markdown }}
