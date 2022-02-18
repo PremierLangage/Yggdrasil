@@ -49,15 +49,17 @@ class Ex:
         """
         setattr(self, name, Env.from_string(getattr(self, name)).render(dic))
 
-class ExRadio(Radio):
+class ExRadio(Ex):
 
     def __init__(self, **kwargs):
         self.__Ex__ = "Radio"
-        if 'inputblock' in kwargs:
+        if 'input' in kwargs:
+            self.input = kwargs['input']
             self.inputblock = kwargs.get('inputblock', '')
         else:
-            self.inputblock = self.render()
-        super().__init__(**kwargs)
+            self.input = Radio()
+            self.inputblock = self.input.render()
+        #super().__init__(**kwargs)
             
     def set_items(self, items):
         """
