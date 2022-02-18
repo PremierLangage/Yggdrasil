@@ -2,13 +2,14 @@ extends = /model/math/expr.pl
 @ /utils/exercises/exmath.py
 @ /utils/inputfields/mathinput.py
 
+tplpage =@ /model/math/template2.html
+
 title = Calculer la distance entre deux points du plan
 
 before == #|python|
 from exmath import ExMath
 ex = ExMath()
 ex.input.sol = sqrt(3)
-ex.input.value = "\sqrt{2}"
 # Créer champs de réponse
 #inputblock = input.render()
 ==
