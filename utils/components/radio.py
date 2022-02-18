@@ -68,6 +68,19 @@ class Radio(Component):
             elif id == self._sol and id != self.selection:
                 item['css'] = 'icon-check-after'
 
+    def display_feedback(self):
+        """
+        Display visual feedback.
+        """
+        for item in self.items:
+            id = item['id']
+            if id == self._sol and id == self.selection:
+                item['css'] = 'success-state icon-check-after'
+            elif id != self._sol and id == self.selection:
+                item['css'] = 'error-state icon-times-after'
+            elif id == self._sol and id != self.selection:
+                item['css'] = 'icon-check-after'
+
     def disable(self):
         """
         Disable the component.
