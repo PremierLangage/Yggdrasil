@@ -1,5 +1,7 @@
 extends = /model/math/expr.pl
 @ /utils/exercises/exmath.py
+@ /utils/inputfields/mathinput.py
+
 title = Calculer la distance entre deux points du plan
 
 before == #|python|
