@@ -14,13 +14,14 @@ ex.input.sol = sqrt(3)
 ex.solution = solution
 # Créer champs de réponse
 #inputblock = input.render()
+ex.inputblock = ex.input.render()
 ==
 
 evaluator ==
 ex.input.eval()
 ex.input.display_feedback()
 score = ex.input.score
-#inputblock = input.render()
+ex.inputblock = ex.input.render()
 ==
 
 question == 
