@@ -38,6 +38,8 @@ for ex in sequence:
 
 scorestep = sequence[istep].input.eval()
 sequence[istep].input.display_feedback()
+sequence[istep].inputblock = sequence[istep].input.render()
+
 if scorestep >= 0:
     scores.append(scorestep)
     istep += 1
