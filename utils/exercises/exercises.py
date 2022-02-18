@@ -49,7 +49,7 @@ class Ex:
         """
         setattr(self, name, Env.from_string(getattr(self, name)).render(dic))
 
-class ExRadio(Ex):
+class ExRadio(Radio):
 
     def __init__(self, **kwargs):
         self.__Ex__ = "Radio"
