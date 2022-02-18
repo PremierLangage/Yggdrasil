@@ -12,7 +12,7 @@ méthodes :
 - disable
 
 filtres jinja :
-
+- html
 
 classes spécifiques :
 - Radio
