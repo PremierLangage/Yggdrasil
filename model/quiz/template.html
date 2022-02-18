@@ -60,12 +60,15 @@ Score : {{score}} / 100
 </div>
 {% endif %}
 {% if sequence[i-1].solution|length > 0 %}
-<a class="text-success" style="display: block; margin-top: 1em;" data-toggle="collapse" href="#collapseSolution{{i}}" role="button" aria-expanded="false" aria-controls="collapseSolution">
-Voir la solution.
-</a>
+<hr class="divide">
 <div class="collapse" id="collapseSolution{{i}}">
+<div class="card card-body card border-success mb-3"">
 {{ sequence[i-1].solution }}
 </div>
+</div>
+ <button class="btn btn-outline-success btn-sm shadow-none" type="button" data-toggle="collapse" href="#collapseSolution{{i}}" role="button" aria-expanded="false" aria-controls="collapseSolution{{i}}">
+Solution
+</button>
 {% endif %}
 </div>
 {% endfor %}
