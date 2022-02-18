@@ -12,7 +12,7 @@
 @ /utils/sympy/randsympy.py
 @ /utils/graphics/plmpl.py
 @ /utils/plrandom.py
-@ /utils/inputfields/mathinput.py
+@ /utils/exercises/exmath.py
 
 before_scripts % ["mathimport", "headerbefore", "before", "footerbefore", "process"]
 text =
