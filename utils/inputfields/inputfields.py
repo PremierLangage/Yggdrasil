@@ -287,7 +287,7 @@ class MultInputField:
 
         if -1 in [input.score for input in self.inputs]:
             score = -1
-            for input in inputs:
+            for input in self.inputs:
                 if input.score == -1:
                     input.display_feedback()
                 else:
