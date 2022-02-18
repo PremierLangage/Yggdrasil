@@ -10,6 +10,11 @@ doubleinput.inputs[0].sol = "0"
 doubleinput.inputs[1].sol = "10"
 ==
 
+inputblock ==
+{{ doubleinput.inputs[0]|component }}
+{{ doubleinput.inputs[1]|component }}
+==
+
 solution ==
 Solution
 ==
