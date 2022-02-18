@@ -5,7 +5,7 @@ extends = /model/math/aux_mathinput.pl
 
 @ /utils/components/radio.py [radio.py]
 
-jinja_keys = ["intro", "questions", "solutions", "inputblocks"]
+jinja_keys = ["intro"]
 
 evaluator ==
 scorestep = sequence[istep].eval()
