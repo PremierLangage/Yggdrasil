@@ -21,7 +21,7 @@ sequence[0].inputblock = sequence[0].input.render()
 sequence[1].question = "toto"
 sequence[1].input.sol = sqrt(3)
 sequence[1].solution = "solution"
-sequence[1].inputblock = sequence[0].input.render()
+sequence[1].inputblock = sequence[1].input.render()
 
 # Créer champs de réponse
 #inputblock = input.render()
