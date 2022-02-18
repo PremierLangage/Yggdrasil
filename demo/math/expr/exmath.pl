@@ -9,7 +9,7 @@ before == #|python|
 input = MathInput()
 input.sol = sqrt(3)
 input.value = "3"
-inputblock = input.render()
+inputblock = input.render() +input.render()
 ==
 
 evaluator ==
