@@ -16,7 +16,7 @@ evaluator ==
 input.eval()
 input.display_feedback()
 score = input.score
-inputblock = input.render()
+inputblock = input.render() + input.render()
 ==
 
 question == 
