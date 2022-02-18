@@ -26,7 +26,7 @@ sequence[1].inputblock = sequence[1].input.render()
 # Créer champs de réponse
 #inputblock = input.render()
 istep = 0
-nbsteps = len(equence)
+nbsteps = len(sequence)
 score = -1
 scores = []
 ==
