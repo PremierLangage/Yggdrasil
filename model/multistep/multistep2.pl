@@ -5,6 +5,8 @@ extends = /model/math/aux_mathinput.pl
 
 @ /utils/components/radio.py [radio.py]
 
+@ /utils/inputfields/mathinput.py
+
 jinja_keys = ["intro"]
 
 before == #|python|
