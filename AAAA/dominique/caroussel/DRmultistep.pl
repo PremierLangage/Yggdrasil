@@ -112,16 +112,16 @@ for i, q in enumerate(list_questions):
         newcomp = Radio()
         
         #newcomp.setStatement(q['text'])
-        newcomp.setitems(q['items'])
-        newcomp.setsol_from_index(q['index'])
+        newcomp.set_items(q['items'])
+        newcomp.set_sol(q['index'])
         if 'ordered' not in q['options']:
             newcomp.shuffle()
         comp.append(newcomp)
     elif q['type'] == "Checkbox":
         newcomp = Checkbox()
         #newcomp.setStatement(q['text'])
-        newcomp.setitems(q['items'])
-        newcomp.setsol_from_index(q['index'])
+        newcomp.set_items(q['items'])
+        newcomp.set_sol(q['index'])
         if 'ordered' not in q['options']:
             newcomp.shuffle()
         comp.append(newcomp)
