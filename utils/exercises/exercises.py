@@ -21,6 +21,7 @@ class Ex:
         return self.input.eval()
 
     def show(self):
+        #deprecated
         """
         Display visual feedback.
         """
@@ -31,6 +32,12 @@ class Ex:
         Display visual feedback.
         """
         self.input.display_feedback()
+
+    def hide_feedback(self):
+        """
+        Display visual feedback.
+        """
+        self.input.hide_feedback()
 
     def disable(self):
         """
