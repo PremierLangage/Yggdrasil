@@ -7,7 +7,27 @@ extends = /model/math/aux_mathinput.pl
 
 jinja_keys = ["intro"]
 
+before == #|python|
+from exmath import ExMath
+ex = ExMath()
+ex.question = question
+ex.input.sol = sqrt(3)
+ex.solution = solution
+# Créer champs de réponse
+#inputblock = input.render()
+ex.inputblock = ex.input.render()
+==
+
 evaluator ==
+
+ex.input.value = answers[ex.input.id]
+ex.input.eval()
+ex.input.display_feedback()
+score = ex.input.score
+ex.inp
+
+evaluator ==
+sequence[istep].input.value = answers[sequence[istep].input.id]
 scorestep = sequence[istep].eval()
 if scorestep >= 0:
     scores.append(scorestep)
