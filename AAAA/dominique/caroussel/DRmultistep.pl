@@ -59,11 +59,11 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 
 
 before==
-from customradio import CustomRadio
-from customcheckbox import CustomCheckbox
+from customradio import Radio
+from customcheckbox import Checkbox
 from customtextselect import CustomTextSelect
-radio = CustomRadio() 
-check = CustomCheckbox()
+radio = Radio() 
+check = Checkbox()
 ztext = CustomTextSelect()
 import random
 random.seed(42) # DEBUG FIXME
