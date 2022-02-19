@@ -22,7 +22,9 @@ inputblock == #|html|
 {{ input|component }}
 ==
 
-# Python scripts
+# Before scripts
+
+before_scripts = ["importfunc", "initinput", "before", "process"]
 
 importfunc == #|py|
 from random import choice, choices, sample, shuffle
@@ -45,6 +47,8 @@ input.set_sol(indsol)
 if shuffled:
     input.shuffle()
 ==
+
+# Evaluation scripts
 
 evaluator == #|py|
 score = input.eval()
