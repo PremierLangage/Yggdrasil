@@ -70,6 +70,7 @@
 - Il y a exactement 1 bit par octet.
 - Il faut 16 bits pour avoir un octet, c'est pour cela qu'on les écrit en hexadécimal.
 - Quand un octet est incomplet, il peut contenir 2 ou 3 bits seulement.
+- Il y a 1024 bits dans un octet.
 
 
 ** Quelles sont les déclarations vraies à propos du code ASCII?
