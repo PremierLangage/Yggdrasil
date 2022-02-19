@@ -19,5 +19,5 @@ inputblock ==
 shuffled = True
 
 evaluator ==
-score = ex.eval()
+score = input.eval()
 ==
