@@ -8,7 +8,7 @@ extends = /model/math/aux_mathinput.pl
 @ /utils/inputfields/mathinput.py
 @ /model/math/jinja_math.py [jinja_env.py]
 
-jinja_keys = ["intro","inputblock1"]
+jinja_keys = ["intro","inputblock0"]
 
 before == #|python|
 from exmath import ExMath
