@@ -1,24 +1,28 @@
 extends = /model/basic/basic2.pl
 
-initinput ==
+# Data
+
+shuffled = True
+
+inputblock ==
+{{ input|component }}
+==
+
+# Scripts
+
+initinput == #|py|
 from inputfields import Checkbox
 input = Checkbox()
 ==
 
-process ==
+process == #|py|
 input.set_items(items)
 input.set_sol(indsol)
 if shuffled:
     input.shuffle()
 ==
 
-inputblock ==
-{{ input|component }}
-==
-
-shuffled = True
-
-evaluator ==
+evaluator == #|py|
 score = input.eval()
 input.disable()
 ==
