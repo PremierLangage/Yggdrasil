@@ -6,6 +6,7 @@ extends = /model/math/aux_mathinput.pl
 @ /utils/components/radio.py [radio.py]
 
 @ /utils/inputfields/mathinput.py
+@ /model/math/jinja_math.py [jinja_env.py]
 
 jinja_keys = ["intro"]
 
