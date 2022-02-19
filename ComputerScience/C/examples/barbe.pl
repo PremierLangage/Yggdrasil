@@ -37,7 +37,7 @@ import random
 
 group.items = []
 
-simg1 = '<table><tr><td><img src="'+str(url_phot_1)+'" alt="le style1" /></td><td>La moustache suspendue assymétrique</td></tr></table>'
+simg1 = '<table><tr><td><img src="'+str(url_phot_1)+'" alt="le style1" width="500" height="300" /></td><td>La moustache suspendue assymétrique</td></tr></table>'
 simg2 = '<table><tr><td><img src="'+str(url_phot_2)+'" alt="le style2" /></td><td>La taille de stéréoisomérie (zusammen)</td></tr></table>'
 simg3 = '<table><tr><td><img src="'+str(url_phot_3)+'" alt="le style3" /></td><td>La taille de stéréoisomérie (entgegen)</td></tr></table>'
 simg4 = '<table><tr><td><img src="'+str(url_phot_4)+'" alt="le style4" /></td><td>Le pneu de moto traversant</td></tr></table>'
