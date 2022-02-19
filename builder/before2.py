@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # coding: utf-8
+# Nouvelle version de before
 
 import sys, json
 from components import Component
