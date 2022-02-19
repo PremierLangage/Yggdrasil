@@ -15,7 +15,7 @@ class ExMath:
             self.inputblock = self.input.render()
             self.inputblock_tpl = kwargs.get('inputblock_tpl, '')
 
-    def set_inputblock(self, tpl):
+    def set_inputblock(self, tpl, dic):
         self.inputblock_tpl = tpl
         self.inputblock = Env.from_string(tpl).render(dic)
 
