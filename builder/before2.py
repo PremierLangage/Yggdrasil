@@ -1,29 +1,16 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-import sys, json, os
+import sys, json
 from components import Component
 from builderlib import aux_component
-from builderlib import PickleEncoder, ComponentEnv
+from ast import literal_eval
 
-# Import the custom JSON encoder
-try:
-    from json_encoder import CustomEncoder as JSONEncoder
-except ModuleNotFoundError:
-    JSONEncoder = PickleEncoder
+# import JSON encoder
+from json_encoder import JSONEncoder
 
-# Import the custom Jinja environnement
-try:
-    from jinja_env import CustomEnv as Env
-except ModuleNotFoundError:
-    Env = ComponentEnv
-
-# Import the custom namespace
-try:
-    from namespace import namespace
-except ModuleNotFoundError:
-    namespace = {}
-
+# import Jinja environnement
+from jinja_env import Env
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
@@ -33,34 +20,27 @@ if __name__ == "__main__":
         sys.exit(1)
 
     outputfilename = sys.argv[2]
+
     # JSON context is loaded
     with open(sys.argv[1], "r") as f:
         dic = json.load(f)
-    Component.sync_context(dic)
 
-    # the content of namespace is added to dic
-    dic = {**namespace, **dic}
-    
-    # Si il y a un fichier data.csv lecture dans la variable sortedlist des valeurs 
-    if os.path.exists("data.csv"):
-        import csv
-        if "column" in dic: # Si l'on connait la colmun
-            with open("data.csv","r") as csvfile:
-                reader = csv.DictReader(csvfile)
-                # Lecture de la column dans l'ordre du fichier
-                dic['sortedlist']=[ row[dic['column']] for row in reader]
-        else:# on prend la ligne en entier et pas la première FIXME pourquoi DR
-            with open("data.csv","r") as csvfile:
-                reader = csv.reader(csvfile)
-                next(reader) # skipping header
-                dic['sortedlist']=[ row for row in reader if row !=[]]
+    # HACK : parsing Python values
+    for k, v in dic.items():
+        try:
+            dic[k] = literal_eval(str(v))
+        except:
+            pass
+
+    Component.sync_context(dic)
     
     before_scripts = dic.get('before_scripts', ['headerbefore', 'before', 'footerbefore'])
     code = "\n".join([dic.get(name, "") for name in before_scripts])
-    
+
     # execute the script in before key with dic as globals
     exec(code, dic)
     
+    namespace = {}
     # clean dic from namespace elements
     exec("", namespace)
     for key in namespace:
@@ -69,44 +49,43 @@ if __name__ == "__main__":
 
     # build the key 'extracss' from the content of the key 'style'
     if 'style' in dic:
-        dic['extracss'] = "<style> %s </style>" % "\n".join(reversed(list(dic['style'].values())))
-
-
-
+        dic['extracss'] = "%s" % "\n".join(reversed(list(dic['style'].values())))
+    if 'javascript' in dic:
+        dic['extrajs'] = "%s" % "\n".join(reversed(list(dic['javascript'].values())))
 
     # HACK for components in lists
     aux_component(dic)
 
-    if 'settings' not in dic:
-        dic['settings'] = {}
+    #temporary
+    if not 'question' in dic:
+        dic['question'] = dic['text']
+        dic['text'] = ""
 
-    if 'internals' not in dic:
-        dic['internals'] = {}
+    if not 'inputblock' in dic:
+        dic['inputblock'] = dic['form']
 
-    if 'scenario' in dic['settings']:
-        dic['internals']['buttons'] = ["submit","reroll"]
-    else:
-        dic['internals']['buttons'] = ["submit","reroll"]
-
-    dic['internals']['attempt'] = 1
-
-    # render some string values of the exercise dictionary with the custom Jinja environment
-    jinja_keys = dic.get('jinja_keys', ['text', 'form', 'solution'])
+    # render some string values of the exercise dictionary with the custom Jinja environment 
     macros = dic.get('macros', '')
-    for key in jinja_keys:
+
+    for key in dic.get('jinja_keys', ['question', 'solution']):
         if key in dic:
-            dic[key] = Env.from_string(macros + dic[key]).render(dic)
+            key2 = f"_{key}_"
+            if isinstance(dic[key] , str):
+                dic[key2] = "{% raw %}" + dic[key] + "{% endraw %}"
+                dic[key] = Env.from_string(macros + dic[key]).render(dic)
+            elif isinstance(dic[key] , dict):
+                dic[key2] = dic[key].copy()
+                for k in dic[key]:
+                    dic[key2][k] = "{% raw %}" + dic[key2][k] + "{% endraw %}"
+                    dic[key][k] = Env.from_string(macros + dic[key][k]).render(dic)
+            elif isinstance(dic[key] , list):
+                for i in range(len(dic[key])):
+                    #dic[key2][i] = "{% raw %}" + dic[key][i] + "{% endraw %}"
+                    dic[key][i] = Env.from_string(macros + dic[key][i]).render(dic)
+
+    dic['form'] = dic['tplpage']
 
     with open(outputfilename, "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
 
     sys.exit(0)
-
-
-
-
-
-
-
-
-
