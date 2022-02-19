@@ -79,6 +79,9 @@ occurence est gardé par groupe de lignes réppétées).
 # List ages of all people with given last name or/and first name 
 @ /ComputerScience/OperatingSystem/exercises/Bash/bdd_bash/ages_of_group.pl
 
+# WTF exercice
+@ /ComputerScience/C/examples/reflechir.pl
+
 # Namesake occurence counting
 @ /ComputerScience/OperatingSystem/exercises/Bash/bdd_bash/namesake_count.pl
 
