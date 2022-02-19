@@ -1,5 +1,6 @@
 from mathinput import MathInput
-from jinja_env import
+from jinja_env import Env
+
 class ExMath:
 
     def __init__(self, **kwargs):
