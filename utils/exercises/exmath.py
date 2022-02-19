@@ -20,5 +20,8 @@ class ExMath:
         self.inputblock_tpl = tpl
         self.inputblock = Env.from_string(tpl).render(dic)
 
+    def update(self, dic):
+        self.inputblock = Env.from_string(tpl).render(dic)
+
     def eval(self):
         return self.input.eval()
