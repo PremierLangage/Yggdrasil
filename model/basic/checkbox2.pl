@@ -1,4 +1,4 @@
-extends = /model/basic/basic.pl
+extends = /model/basic/basic2.pl
 @ /utils/components/scoring.py
 @ /utils/components/checkbox.py [checkbox.py]
 
