@@ -16,7 +16,7 @@ sequence = [ExMath(), ExMath()]
 sequence[0].question = "toto"
 sequence[0].input.sol = sqrt(3)
 sequence[0].solution = "solution"
-sequence[0].set_inputblock(
+sequence[0].set_inputblock(inputblock1, globals())
 
 sequence[1].question = "toto"
 sequence[1].input.sol = sqrt(3)
