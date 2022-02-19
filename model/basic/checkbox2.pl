@@ -24,6 +24,12 @@ inputblock == #|html|
 
 # Python scripts
 
+importfunc == #|py|
+from random import choice, choices, sample, shuffle
+from plrandom import randint, sampleint
+from plcsv import csv_choice, csv_sample, csv_col
+==
+
 initinput == #|py|
 from inputfields import Checkbox
 input = Checkbox()
