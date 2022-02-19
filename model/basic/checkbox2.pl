@@ -1,6 +1,6 @@
 extends = /model/basic/basic2.pl
 
-# Data
+# Main keys
 
 question ==
 Quelle est la réponse ?
