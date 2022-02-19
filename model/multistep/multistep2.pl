@@ -16,7 +16,7 @@ sequence = [ExMath(), ExMath()]
 sequence[0].question = "toto"
 sequence[0].input.sol = sqrt(3)
 sequence[0].solution = "solution"
-sequence[0].inputblock = sequence[0].input.render()
+sequence[0].set_inputblock(
 
 sequence[1].question = "toto"
 sequence[1].input.sol = sqrt(3)
@@ -29,6 +29,10 @@ istep = 0
 nbsteps = len(sequence)
 score = -1
 scores = []
+==
+
+inputblock0 ==
+toto : {{ sequence[1].input|mathinput }}
 ==
 
 
