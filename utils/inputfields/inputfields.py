@@ -163,11 +163,11 @@ class Checkbox(Component, InputField):
             if id in self._sol and item['checked']:
                 nbright += 1
                 if display:
-                    item['css'] = 'success-state icon-check-after'
+                    item['css'] = 'icon-check-after'
             elif id not in self._sol and item['checked']:
                 nbwrong += 1
                 if display:
-                    item['css'] = 'error-state icon-times-after'
+                    item['css'] = 'icon-times-after'
             elif id in self._sol and not item['checked'] and display:
                 item['css'] = 'icon-check-after'
                           
