@@ -1,8 +1,8 @@
 extends = /model/basic/basic2.pl
 
 initinput ==
-from inputfields import Checkbox
-checkbox = Checkbox()
+from exercises import ExCheckbox
+ex = ExCheckbox()
 ==
 
 process ==
