@@ -38,5 +38,6 @@ if shuffled:
 
 evaluator == #|py|
 score = input.eval()
+input.display_feedback()
 input.disable()
 ==
