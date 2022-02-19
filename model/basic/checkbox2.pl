@@ -20,4 +20,5 @@ shuffled = True
 
 evaluator ==
 score = input.eval()
+input.disable()
 ==
