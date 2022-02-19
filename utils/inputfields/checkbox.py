@@ -9,7 +9,6 @@ class Checkbox(Component):
         self.selector = 'c-checkbox-group'
         self.decorator = 'Checkbox'
         super().__init__(**kwargs)
-        self.statement =''
 
     def set_items(self, items):
         """
@@ -25,9 +24,9 @@ class Checkbox(Component):
         Set the component solutions from a list of indices.
         """
         if isinstance(index,list):
-            self._sol = [self.items[i]['id'] for i in index]
+            self.sol = [self.items[i]['id'] for i in index]
         elif isinstance(index,int):
-            self._sol = [self.items[index]['id']]
+            self.sol = [self.items[index]['id']]
 
 
     def fill_from_rw(self, right, wrong, nbitems=None, nbright=None):
@@ -79,19 +78,19 @@ class Checkbox(Component):
 
         for item in self.items:
             id = item['id']
-            if id in self._sol and item['checked']:
+            if id in self.sol and item['checked']:
                 nbright += 1
-            elif id not in self._sol and item['checked']:
+            elif id not in self.sol and item['checked']:
                 nbwrong += 1
 
         if scoring == "AllOrNothing":
             score = all_or_nothing(nbright, nbwrong)
         elif scoring == "RightMinusWrong":
-            score = right_minus_wrong(nbright, nbwrong, nbsol=len(self._sol))          
+            score = right_minus_wrong(nbright, nbwrong, nbsol=len(self.sol))          
         elif scoring == "CorrectItems":
-            score = correct_items(nbright, nbwrong, nbsol=len(self._sol), nbitems=len(self.items))
+            score = correct_items(nbright, nbwrong, nbsol=len(self.sol), nbitems=len(self.items))
         elif scoring == "Custom":
-            score = custom_scoring(nbright, nbwrong, nbsol=len(self._sol), nbitems=len(self.items))
+            score = custom_scoring(nbright, nbwrong, nbsol=len(self.sol), nbitems=len(self.items))
         else:
             raise ValueError(f"'{scoring}' is not a valid scoring")
 
@@ -103,12 +102,11 @@ class Checkbox(Component):
         """
         for item in self.items:
             id = item['id']
-            if id in self._sol and item['checked']:
+            if id in self.sol:
                 item['css'] = 'icon-success-after'
-            elif id not in self._sol and item['checked']:
+            elif id not in self.sol and item['checked']:
                 item['css'] = 'icon-fail-after'
-            elif id in self._sol and not item['checked']:
-                item['css'] = 'icon-fail-after'
+
 
     def disable(self):
         """
