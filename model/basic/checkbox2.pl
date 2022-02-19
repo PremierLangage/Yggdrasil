@@ -38,7 +38,8 @@ input = Checkbox()
 ==
 
 before == #|py|
-
+# This script can be used to generate
+# any keys (items, indsol, etc.)
 ==
 
 process == #|py|
