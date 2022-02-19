@@ -16,7 +16,7 @@ indsol = [0, 1]
 
 shuffled = True
 
-# 
+# Input block
 
 inputblock ==
 {{ input|component }}
