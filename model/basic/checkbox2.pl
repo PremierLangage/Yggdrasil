@@ -6,11 +6,6 @@ ex = ExCheckbox()
 ==
 
 process ==
-from ast import literal_eval
-
-indsol = literal_eval(str(indsol))
-shuffled = literal_eval(str(shuffled))
-
 ex.set_items(items)
 ex.set_sol(indsol)
 if shuffled:
