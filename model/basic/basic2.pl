@@ -8,7 +8,7 @@ extends = /model/basic/temp.pl
 @ /model/basic/jinja_basic.py [jinja_env.py]
 @ /model/basic/json_basic.py [json_encoder.py]
 
-before_scripts =["importfunc", "initinput", "before", "process"]
+before_scripts = ["importfunc", "initinput", "before", "process"]
 eval_scripts = ["getans", "evaluator", "evalprocess"]
 
 importfunc == #|python|
