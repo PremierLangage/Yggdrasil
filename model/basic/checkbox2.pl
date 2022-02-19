@@ -35,6 +35,10 @@ from inputfields import Checkbox
 input = Checkbox()
 ==
 
+before == #|py|
+
+==
+
 process == #|py|
 input.set_items(items)
 input.set_sol(indsol)
