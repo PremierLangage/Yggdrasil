@@ -2,7 +2,21 @@ extends = /model/basic/basic2.pl
 
 # Data
 
+question ==
+Quelle est la réponse ?
+==
+
+items ==
+Item 1
+Item 2
+Item 3
+==
+
+indsol = [0, 1]
+
 shuffled = True
+
+# 
 
 inputblock ==
 {{ input|component }}
