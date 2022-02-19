@@ -1,5 +1,5 @@
 extends = /model/basic/basic2.pl
-@ /utils/inputfields/radio.py
+@ /utils/inputfields/checkbox.py
 
 # Main keys
 
