@@ -77,7 +77,7 @@
 + Les lettres minuscules et majuscules sont rangées dans l'ordre alphabétique.
 + Un caractère se stocke sur un octet.
 + Les caractères associés aux chiffres sont rangés dans l'ordre.
-+ Tous les caractères ne sont pas affichables.
++ Toutes les valeurs possibles d'octet ne sont pas des caractères affichables.
 + ASCII a été inventé par les américains, il n'y ont pas mis les lettres accentuées.
 - On peut tout écrire avec ASCII, notamment, toutes les langues parlées sur la terre.
 - Plus un caractère ASCII est compliqué, plus il occupe de place mémoire.
