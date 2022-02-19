@@ -7,9 +7,9 @@ Quelle est la réponse ?
 ==
 
 items ==
+Item 0
 Item 1
 Item 2
-Item 3
 ==
 
 indsol = [0, 1]
