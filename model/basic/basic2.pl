@@ -25,4 +25,4 @@ text =
 
 tplpage =@ template2.html
 
-style.basic =@ basic.css.html
+style.basic =@ basic2.css.html
