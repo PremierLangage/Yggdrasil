@@ -1,4 +1,4 @@
-extends = /model/basic/checkbox.pl
+extends = /model/basic/checkbox2.pl
 
 question ==
 Parmi ces villes, lesquelles ne sont pas des capitales ?
