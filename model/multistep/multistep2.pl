@@ -33,7 +33,7 @@ scores = []
 ==
 
 inputblock0 ==
-toto : {{ sequence[1].input|mathinput }}
+toto : {{ sequence[0].input|mathinput }}
 ==
 
 
