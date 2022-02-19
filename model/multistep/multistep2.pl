@@ -40,11 +40,13 @@ toto : {{ sequence[0].input|mathinput }}
 evaluator ==
 for ex in sequence:
     ex.input.value = answers.get(ex.input.id, '')
-    ex.update(globals())
 
 scorestep = sequence[istep].input.eval()
+
 sequence[istep].input.display_feedback()
-sequence[istep].inputblock = sequence[istep].input.render()
+
+for ex in sequence:
+    ex.update(globals())
 
 if scorestep >= 0:
     scores.append(scorestep)
