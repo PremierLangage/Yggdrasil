@@ -11,10 +11,10 @@ from ast import literal_eval
 indsol = literal_eval(str(indsol))
 shuffled = literal_eval(str(shuffled))
 
-checkbox.set_items(items)
-checkbox.set_sol(indsol)
+ex.set_items(items)
+ex.set_sol(indsol)
 if shuffled:
-    checkbox.shuffle()
+    ex.input.shuffle()
 
 ex.question = question
 ex.inputblock = inputblock
