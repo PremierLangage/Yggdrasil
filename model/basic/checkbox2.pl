@@ -22,7 +22,7 @@ inputblock == #|html|
 {{ input|component }}
 ==
 
-# Python Scripts
+# Python scripts
 
 initinput == #|py|
 from inputfields import Checkbox
