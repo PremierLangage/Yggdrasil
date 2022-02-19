@@ -81,15 +81,9 @@ class Checkbox(Component):
             id = item['id']
             if id in self._sol and item['checked']:
                 nbright += 1
-                if display:
-                    item['css'] = 'icon-success-after'
             elif id not in self._sol and item['checked']:
                 nbwrong += 1
-                if display:
-                    item['css'] = 'icon-fail-after'
-            elif id in self._sol and not item['checked'] and display:
-                item['css'] = 'icon-fail-after'
-                          
+
         if scoring == "AllOrNothing":
             score = all_or_nothing(nbright, nbwrong)
         elif scoring == "RightMinusWrong":
