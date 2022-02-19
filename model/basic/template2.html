@@ -1,8 +1,8 @@
 <div class="question">
-{{ ex.question|markdown }}
+{{ question|markdown }}
 </div>
 <div style="display: block; margin-top: 1em;">
-{{ ex.inputblock|markdown|safe }}
+{{ inputblock|markdown|safe }}
 </div>
 {% if score >= 0 and score < 100 and solution|length > 1%}
 <div style="margin-top: 1em;">
@@ -10,7 +10,7 @@
 </p>
 <div class="collapse" id="collapseSolution">
 <div class="card card-body card border-success mb-3"">
-{{ ex.solution }}
+{{ solution }}
 </div>
 </div>
 </div>
