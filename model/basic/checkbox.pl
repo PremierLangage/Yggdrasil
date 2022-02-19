@@ -48,4 +48,5 @@ inputblock ==
 
 evaluator ==
 score = checkbox.eval()
+ex.disable()
 ==
