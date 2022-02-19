@@ -6,9 +6,8 @@
 
 title = 
 
-style.page == #|css|
+style.page == #|html|
 <style>
-
 .exercise__header{
   display: none;
 }
@@ -51,12 +50,6 @@ style.page == #|css|
    display: none;
 }
 
-.neutral-state {
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  color: #6c757d !important;
-  border-color: #6c757d !important;
-}
 </style>
 ==
 
