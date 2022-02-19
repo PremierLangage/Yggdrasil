@@ -102,3 +102,15 @@ class Checkbox(Component):
             raise ValueError(f"'{scoring}' is not a valid scoring")
 
         return score
+
+    def display_feedback(self):
+        """
+        Display visual feedback.
+        """
+        pass
+
+    def disable(self):
+        """
+        Disable the component.
+        """
+        self.disabled = True
