@@ -1,7 +1,4 @@
 extends = /model/basic/basic2.pl
-@ /utils/components/scoring.py
-@ /utils/components/checkbox.py [checkbox.py]
-
 
 initinput ==
 from inputfields import Checkbox
