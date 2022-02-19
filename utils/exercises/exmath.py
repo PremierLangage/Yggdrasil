@@ -10,7 +10,7 @@ class ExMath:
         if 'input' in kwargs:
             self.input = kwargs['input']
             self.inputblock = kwargs.get('inputblock', '')
-            self.inputblock_tpl = kwargs.get('inputblock_tpl, '')
+            self.inputblock_tpl = kwargs.get('inputblock_tpl', '')
         else:
             self.input = MathInput()
             self.inputblock = self.input.render()
