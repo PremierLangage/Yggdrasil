@@ -21,14 +21,14 @@ tag=system|qcm|unix
 
 introduction==
 Cette activité vous proposera des manèges de questions aléatoires aux réponses 
-aléatoires pour chaque groupe de notions liés aux systèmes d'exploitation. Les 
-questions sont particulièrement orientées vers Linux et les systèmes de type 
-Unix de manière générale.
+selectionnées aléatoirement pour chaque groupe de notions liés aux systèmes 
+d'exploitation. Les questions sont particulièrement orientées vers Linux et 
+les systèmes de type Unix de manière générale.
 
 C'est du QCM, c'est pas folichon ni très excitant... Mais comme c'est simple à 
 coder, en voilà quelqu'uns. Il y a 3 séries de questions sur chacun des 4 
 premiers cours de l'année. Attention, ce sont des exercices en single shot. On
-ne peut pas les refaire à l'infini.
+ne peut pas les refaire à l'infini. 
 
 
 ==
