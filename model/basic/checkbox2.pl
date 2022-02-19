@@ -18,11 +18,11 @@ shuffled = True
 
 # Input block
 
-inputblock ==
+inputblock == #|html|
 {{ input|component }}
 ==
 
-# Scripts
+# Python Scripts
 
 initinput == #|py|
 from inputfields import Checkbox
