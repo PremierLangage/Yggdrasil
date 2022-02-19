@@ -1,18 +1,15 @@
 extends = /model/basic/basic2.pl
 
 initinput ==
-from exercises import ExCheckbox
-ex = ExCheckbox()
+from inputfields import Checkbox
+input = Checkbox()
 ==
 
 process ==
-ex.set_items(items)
-ex.set_sol(indsol)
+input.set_items(items)
+input.set_sol(indsol)
 if shuffled:
-    ex.input.shuffle()
-
-ex.question = question
-ex.inputblock = inputblock
+    input.shuffle()
 ==
 
 inputblock ==
