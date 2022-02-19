@@ -34,7 +34,7 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from inputfields import Checkbox
+from checkbox import Checkbox
 input = Checkbox()
 ==
 
