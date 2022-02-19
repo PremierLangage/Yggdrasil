@@ -21,7 +21,7 @@ ex.inputblock = inputblock
 ==
 
 inputblock ==
-{{ checkbox|component }}
+{{ ex.input|component }}
 ==
 
 shuffled = True
