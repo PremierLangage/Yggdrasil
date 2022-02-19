@@ -7,7 +7,7 @@ extends = /model/basic/temp2.pl
 @ /utils/plcsv.py
 @ /model/basic/jinja_basic.py [jinja_env.py]
 @ /model/basic/json_basic.py [json_encoder.py]
-
+@ /utils/inputfields/inputfields.py
 
 before_scripts = ["importfunc", "initinput", "before", "process"]
 eval_scripts = ["getans", "evaluator", "evalprocess"]
