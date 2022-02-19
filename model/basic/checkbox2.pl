@@ -27,5 +27,5 @@ inputblock ==
 shuffled = True
 
 evaluator ==
-score = checkbox.eval()
+score = ex.eval()
 ==
