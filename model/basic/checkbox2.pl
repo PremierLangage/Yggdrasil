@@ -13,7 +13,7 @@ if shuffled:
 ==
 
 inputblock ==
-{{ ex.input|component }}
+{{ input|component }}
 ==
 
 shuffled = True
