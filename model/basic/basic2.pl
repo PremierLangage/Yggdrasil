@@ -2,7 +2,7 @@ extends = /model/basic/temp2.pl
 
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
-@ /utils/builderlib2.py
+@ /utils/builderlib2.py [builderlib.py]
 @ /utils/plrandom.py
 @ /utils/plcsv.py
 @ /model/basic/jinja_basic.py [jinja_env.py]
