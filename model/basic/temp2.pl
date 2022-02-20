@@ -1,7 +1,4 @@
 # HACK pour modifier l'apparence de la page html de l'exercice
-@ /utils/components/multicomp.py
-@ /utils/components/dragdrop.py [customdragdrop.py]
-
 
 title = 
 
@@ -69,7 +66,7 @@ function onReadyPL(nodes) {
     actions.find('br').remove();
     body.children('br').remove();
 
-        {% if embed|length > 0 %}
+    {% if embed|length > 0 %}
     mathField.reflow();
     {% endif %}
 
