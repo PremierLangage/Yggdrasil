@@ -1,7 +1,7 @@
 extends = /model/quiz/basic.pl
 
 start == #|python|
-from steps import StepDragDrop
+from steps import StepDropGroup
 
 nbstep = 4
 
