@@ -1,5 +1,5 @@
 extends = /model/basic/basic2.pl
-@ /utils/inputfields/checkbox.py
+@ /utils/inputfields/input.py
 @ /utils/inputfields/scoring.py
 
 # Main keys
@@ -8,15 +8,9 @@ question ==
 Quelle est la réponse ?
 ==
 
-items ==
-Item 0
-Item 1
-Item 2
+sol ==
+toto
 ==
-
-indsol = [0, 1]
-
-shuffled = True
 
 # Input block
 
