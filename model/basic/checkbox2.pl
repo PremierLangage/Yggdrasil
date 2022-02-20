@@ -1,6 +1,6 @@
 extends = /model/basic/basic2.pl
 @ /utils/inputfields/checkbox.py
-@ /utils/components/scoring.py
+@ /utils/inputfields/scoring.py
 
 # Main keys
 
