@@ -4,7 +4,6 @@ class Drop(Component):
 
     def __init__(self, **kwargs):
         self.selector = 'c-drag-drop'
-        self.decorator = 'CustomDragDrop'
         self.droppable = True
         self.cloneable = False
         super().__init__(**kwargs)
@@ -13,7 +12,6 @@ class Label(Component):
 
     def __init__(self, **kwargs):
         self.selector = 'c-drag-drop'
-        self.decorator = 'CustomDragDrop'
         self.droppable = False
         self.cloneable = False
         super().__init__(**kwargs)
