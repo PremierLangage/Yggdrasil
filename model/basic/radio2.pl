@@ -13,7 +13,7 @@ Item 1
 Item 2
 ==
 
-indsol = [0, 1]
+indsol = 1
 
 shuffled = True
 
