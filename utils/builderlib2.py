@@ -76,7 +76,7 @@ def getnewcomp(obj):
                 name = "c" + uuid.uuid4().hex
                 newcomp.append((name, item))
                 obj[i] = {"cid": item.cid, "name": name, "selector": item.selector} 
-            if isinstance(obj[i], (, MultiComp)):
+            if isinstance(obj[i], (Step, MultiComp)):
                 newcomp = newcomp + getnewcomp(obj[i])
     elif isinstance(obj, DropGroup):
         newcomp = newcomp + getnewcomp(obj.drops)
