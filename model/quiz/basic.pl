@@ -1,22 +1,22 @@
 extends = /model/basic/temp2.pl
 
-@ /builder/before1.py [builder.py]
-@ /grader/evaluator1.py [grader.py]
+@ /builder/before2.py [builder.py]
+@ /grader/evaluator2.py [grader.py]
 @ /utils/builderlib2.py [builderlib.py]
-@ /utils/components/multicomp.py
-@ /utils/inputfields/inputfields.py
-@ /utils/components/dragdrop.py [customdragdrop.py]
 @ /utils/exercises/exercises.py
-@ /utils/inputfields/scoring.py
+
 @ /utils/plrandom.py
 @ /utils/plcsv.py
 @ /model/basic/jinja_basic.py [jinja_env.py]
-@ /model/basic/json_basic.py [json_encoder.py]
-@ /utils/components/dragdrop.py [customdragdrop.py]
+@ /model/basic/json_basic2.py [json_encoder.py]
 
 @ /utils/inputfields/radio.py
 @ /utils/inputfields/checkbox.py
-@ /utils/inputfields/input.py
+@ /utils/inputfields/textinput.py
+@ /utils/inputfields/numinput.py
+@ /utils/inputfields/dropgroup.py
+@ /utils/inputfields/multinput.py
+@ /utils/inputfields/scoring.py
 
 before_scripts = ["importfunc", "init", "start"]
 eval_scripts = ["control", "final"]
