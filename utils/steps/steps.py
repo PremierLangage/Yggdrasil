@@ -117,7 +117,19 @@ class StepInput(Step):
     def eval(self):
         return self.input.eval()
 
-class StepDragDrop(Step):
+class StepDropGroup(Step):
 
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.__Step__ = "DropGroup"
+        self.question = kwargs.get('question', '')
+        self.inputblock = kwargs.get('inputblock', '')
+        if 'input' in kwargs:
+            self.input = kwargs['input']
+        else:
+            self.input = DropGroup()
+            
+    def eval(self):
+        return self.input.eval()
 
 
