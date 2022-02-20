@@ -1,5 +1,6 @@
 import json, jsonpickle
 from dropgroup import DropGroup
+from steps import Step
 from exercises import Ex, ExRadio, ExCheckbox, ExInput, ExDragDrop
 from multinput import MultInput
 
