@@ -19,7 +19,11 @@ shuffled = True
 # Input block
 
 inputblock == #|html|
-{{ input|component }}
+{{ input.drops[0]|component }}
+{{ input.drops[1]|component }}
+{{ input.drops[2]|component }}
+{{ input.labels[0]|component }}
+{{ input.labels[1]|component }}
 ==
 
 # Before scripts
