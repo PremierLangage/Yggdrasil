@@ -21,14 +21,14 @@ class JSONDecoder(json.JSONDecoder):
             return DropGroup(**dic)
         if '__MultInput__' in dic:
             return MultInput(**dic)
-        if '__Ex__' in dic:
-            if dic['__Ex__'] == 'Radio':
+        if '__Step__' in dic:
+            if dic['__Step__'] == 'Radio':
                 return ExRadio(**dic)
-            elif dic['__Ex__'] == 'Checkbox':
+            elif dic['__Step__'] == 'Checkbox':
                 return ExCheckbox(**dic)
-            elif dic['__Ex__'] == 'Input':
+            elif dic['__Step__'] == 'TextInput':
                 return ExInput(**dic)
-            elif dic['__Ex__'] == 'DragDrop':
+            elif dic['__Step__'] == 'DropGroup':
                 return ExDragDrop(**dic)
             else:
                 return Ex(**dic)
