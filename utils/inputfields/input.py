@@ -3,7 +3,6 @@ class Input(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-input'
         self.decorator = 'Input'
-        self.type = 'input'
         super().__init__(**kwargs)
 
     def eval(self):
