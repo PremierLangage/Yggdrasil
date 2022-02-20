@@ -53,7 +53,8 @@ for ex in sequence:
     scores.append(ex.eval())
     ex.disable()
     ex.display_feedback()
-
+    ex.input.display_feedback()
+    
 score = sum(scores) // len(scores)
 _state_ = "grade"
 ==
