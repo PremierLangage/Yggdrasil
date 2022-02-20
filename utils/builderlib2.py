@@ -81,7 +81,7 @@ def getnewcomp(obj):
     elif isinstance(obj, DropGroup):
         newcomp = newcomp + getnewcomp(obj.drops)
         newcomp = newcomp + getnewcomp(obj.labels)
-    elif isinstance(obj, Ex):
+    elif isinstance(obj, Step):
         if isinstance(obj.input, list):
             newcomp = newcomp + getnewcomp(obj.input)
         elif isinstance(obj.input, Component):
@@ -108,7 +108,7 @@ def comp2dic(obj):
     elif isinstance(obj, DropGroup):
         comp2dic(obj.drops)
         comp2dic(obj.labels)
-    elif isinstance(obj, Ex):
+    elif isinstance(obj, Step):
         if isinstance(obj.input, list):
             comp2dic(obj.input)
         elif isinstance(obj.input, Component):
@@ -127,12 +127,12 @@ def dic2comp(obj, dic):
                 name = obj[i]['name']
                 obj[i] = dic[name]
                 obj[i].name = name
-            if isinstance(obj[i], (Ex, MultiComp)):
+            if isinstance(obj[i], (Step, MultiComp)):
                 dic2comp(obj[i], dic)
     elif isinstance(obj, DropGroup):
         dic2comp(obj.drops, dic)
         dic2comp(obj.labels, dic)
-    elif isinstance(obj, Ex):
+    elif isinstance(obj, Step):
         if isinstance(obj.input, list):
             dic2comp(obj.input, dic)
         elif isinstance(obj.input, dict) and 'cid' in obj.input:
