@@ -7,6 +7,7 @@ extends = /model/basic/temp2.pl
 @ /utils/inputfields/inputfields.py
 @ /utils/components/dragdrop.py [customdragdrop.py]
 @ /utils/exercises/exercises.py
+@ /utils/inputfields/scoring.py
 @ /utils/plrandom.py
 @ /utils/plcsv.py
 @ /model/basic/jinja_basic.py [jinja_env.py]
