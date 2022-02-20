@@ -28,8 +28,8 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from dragdrop import DragDropGroup
-input = DragDropGroup()
+from dropgroup import DropGroup
+input = DropGroup()
 ==
 
 before == #|py|
