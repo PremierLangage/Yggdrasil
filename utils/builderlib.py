@@ -2,7 +2,6 @@ from components import Component
 import json, jsonpickle
 from jinja2 import Environment, BaseLoader
 import uuid
-from multicomp import MultiComp
 
 class PickleEncoder(json.JSONEncoder):
     def default(self, obj):
