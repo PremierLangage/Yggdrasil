@@ -4,7 +4,7 @@ extends = /model/quiz/basic.pl
 
 start == #|python|
 from AMC import parse_AMC_TXT
-from exercises import StepRadio, StepCheckbox
+from steps import StepRadio, StepCheckbox
 
 list_questions = parse_AMC_TXT(quiz)
 
