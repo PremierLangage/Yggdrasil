@@ -2,8 +2,7 @@ classe générique : InputField
 
 attributs :
 - score
-- feedback
-- value
+
 
 méthodes :
 - eval (renvoie un score, )
@@ -17,8 +16,9 @@ filtres jinja :
 classes spécifiques :
 - Radio
 - Checkbox
-- Input
-- Numeric
+- TextInput
+- NumInput
+- MathInput
 
 
 ----------------------
