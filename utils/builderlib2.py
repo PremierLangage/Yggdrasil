@@ -77,7 +77,7 @@ def getnewcomp(obj):
                 obj[i] = {"cid": item.cid, "name": name, "selector": item.selector} 
             if isinstance(obj[i], (Ex, MultiComp)):
                 newcomp = newcomp + getnewcomp(obj[i])
-    elif isinstance(obj, DragDropGroup):
+    elif isinstance(obj, DropGroup):
         newcomp = newcomp + getnewcomp(obj.drops)
         newcomp = newcomp + getnewcomp(obj.labels)
     elif isinstance(obj, Ex):
@@ -104,7 +104,7 @@ def comp2dic(obj):
                 obj[i] = {"cid": item.cid, "name": item.name, "selector": item.selector} 
             if isinstance(obj[i], (Ex, MultiComp)):
                 comp2dic(obj[i])
-    elif isinstance(obj, DragDropGroup):
+    elif isinstance(obj, DropGroup):
         comp2dic(obj.drops)
         comp2dic(obj.labels)
     elif isinstance(obj, Ex):
