@@ -1,6 +1,5 @@
 # HACK pour modifier l'apparence de la page html de l'exercice
 @ /utils/components/multicomp.py
-@ /utils/inputfields/inputfields.py
 @ /utils/components/dragdrop.py [customdragdrop.py]
 @ /utils/exercises/exercises.py
 @ /utils/components/scoring.py
