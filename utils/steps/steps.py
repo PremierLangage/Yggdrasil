@@ -101,7 +101,7 @@ class StepCheckbox(Step):
         """
         self.input.set_sol(index)
 
-class StepInput(Step):
+class StepTextInput(Step):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
