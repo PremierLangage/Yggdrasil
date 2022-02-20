@@ -28,8 +28,8 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from checkbox import Checkbox
-input = Checkbox()
+from input import Input
+input = Input()
 ==
 
 before == #|py|
