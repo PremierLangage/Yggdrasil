@@ -4,6 +4,7 @@ extends = /model/basic/temp2.pl
 @ /grader/evaluator2.py [grader.py]
 @ /utils/builderlib2.py [builderlib.py]
 @ /utils/exercises/exercises.py
+@ /utils/steps/steps.py
 
 @ /utils/plrandom.py
 @ /utils/plcsv.py
