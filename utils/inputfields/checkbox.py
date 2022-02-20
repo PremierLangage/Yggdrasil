@@ -83,14 +83,14 @@ class Checkbox(Component):
             elif id not in self.sol and item['checked']:
                 nbwrong += 1
 
-        if scoring == "AllOrNothing":
+        if self.scoring == "AllOrNothing":
             score = all_or_nothing(nbright, nbwrong)
-        elif scoring == "RightMinusWrong":
+        elif self.scoring == "RightMinusWrong":
             score = right_minus_wrong(nbright, nbwrong, nbsol=len(self.sol))          
-        elif scoring == "CorrectItems":
+        elif self.scoring == "CorrectItems":
             score = correct_items(nbright, nbwrong, nbsol=len(self.sol), nbitems=len(self.items))
-        elif scoring == "Custom":
-            score = custom_scoring(nbright, nbwrong, nbsol=len(self.sol), nbitems=len(self.items))
+        elif self.scoring == "Custom":
+            score = self.custom_scoring(nbright, nbwrong, nbsol=len(self.sol), nbitems=len(self.items))
         else:
             raise ValueError(f"'{scoring}' is not a valid scoring")
 
