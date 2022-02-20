@@ -5,7 +5,7 @@ class DragDrop():
         self.__Ex__ = "DragDrop"
         self.drops = kwargs.get('drops', [])
         self.labels = kwargs.get('labels', [])
-        self.sol = kwargs.get('_sol', [])
+        self.sol = kwargs.get('sol', [])
 
     def set_labels(self, lst):
         self.labels = [CustomDragDrop.Label(content=content) for content in lst]
@@ -16,7 +16,7 @@ class DragDrop():
         num_wrong = 0
 
         for i in range(n):
-            if self.drops[i].content == self.sol[i]:
+            if self.drops[i].content == self._sol[i]:
                 num_right += 1
                 self.drops[i].css = "success-state"
             else:
