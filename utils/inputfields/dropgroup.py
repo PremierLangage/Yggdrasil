@@ -31,6 +31,23 @@ class DropGroup():
     def set_labels(self, lst):
         self.labels = [Label(content=content) for content in lst]
 
+    def labels_html(self):
+        lst = []
+        for label in self.labels:
+            selector = label.selector
+            cid = label.cid
+            lst.append(f"<{selector} cid='{cid}'></{selector}>")
+        rd.shuffle(lst)
+        return "".join(lst)
+
+    def drops_html(self):
+        lst = []
+        for label in self.drops:
+            selector = label.selector
+            cid = label.cid
+            lst.append(f"<{selector} cid='{cid}'></{selector}>")
+        return "".join(lst)
+
     def eval(self):
         n = len(self.drops)
         num_right = 0
