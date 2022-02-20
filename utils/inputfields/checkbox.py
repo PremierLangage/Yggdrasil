@@ -70,7 +70,7 @@ class Checkbox(Component):
         """
         self.items.sort(key = lambda item : item['content'])
 
-    def eval(self, scoring="RightMinusWrong", custom_scoring=None):
+    def eval(self):
         """
         Evaluate the answer stored in the component.
         """
@@ -107,6 +107,16 @@ class Checkbox(Component):
             elif id not in self.sol and item['checked']:
                 item['css'] = 'icon-fail-after'
 
+
+    def hide_feedback(self):
+        """
+        Hide visual feedback.
+        """
+        for item in self.items:
+            s = item['css'] 
+            s = s.replace('icon-success-after', '')
+            s = s.replace('icon-fail-after', '')
+            item['css'] = s
 
     def disable(self):
         """
