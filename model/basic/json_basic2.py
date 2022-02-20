@@ -1,12 +1,12 @@
 import json, jsonpickle
-from customdragdrop import MultiComp, DropGroup, LabelGroup
+from dropgroup import DropGroup
 from exercises import Ex, ExRadio, ExCheckbox, ExInput, ExDragDrop
 from multinput import MultInput
 
 class JSONEncoder(json.JSONEncoder):
 
     def default(self, obj):
-        if isinstance(obj, (MultiComp, Ex, DropGroup)):
+        if isinstance(obj, (Ex, DropGroup)):
             return vars(obj)
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
@@ -16,13 +16,6 @@ class JSONDecoder(json.JSONDecoder):
         json.JSONDecoder.__init__(self, object_hook=self.object_hook, *args, **kwargs)
 
     def object_hook(self, dic):
-        if '__MultiComp__' in dic:
-            if dic['__MultiComp__'] == 'DropGroup':
-                return DropGroup(None, **dic)
-            if dic['__MultiComp__'] == 'LabelGroup':
-                return LabelGroup(None, **dic)
-            else:
-                return MultiComp(**dic)
         if '__DropGroup__' in dic:
             return DropGroup(**dic)
         if '__MultInput__' in dic:
