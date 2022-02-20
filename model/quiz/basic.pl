@@ -14,6 +14,8 @@ extends = /model/basic/temp2.pl
 @ /model/basic/json_basic.py [json_encoder.py]
 @ /utils/components/dragdrop.py [customdragdrop.py]
 
+@ /utils/inputfields/radio.py
+@ /utils/inputfields/checkbox.py
 
 before_scripts = ["importfunc", "init", "start"]
 eval_scripts = ["control", "final"]
