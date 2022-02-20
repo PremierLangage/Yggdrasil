@@ -3,7 +3,7 @@ import json, jsonpickle
 from jinja2 import Environment, BaseLoader
 import uuid
 
-from dragdrop import DragDropGroup
+from dropgroup import DropGroup
 
 try:
     from multicomp import MultiComp
