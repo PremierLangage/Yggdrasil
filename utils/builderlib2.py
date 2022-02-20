@@ -12,19 +12,6 @@ except:
     class MultiComp:
         pass
 
-try:
-    from inputfields import MultInputField
-except:
-    class MultInputField:
-        pass
-
-try:
-    from exercises import Ex, ExDragDrop
-except:
-    class MultInputField:
-        pass
-    class ExDragDrop:
-        pass
 
 class PickleEncoder(json.JSONEncoder):
     def default(self, obj):
