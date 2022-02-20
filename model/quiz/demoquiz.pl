@@ -3,7 +3,7 @@ extends = /model/quiz/basic.pl
 @ /Languages/Latin/phrases.txt
 
 start == #|python|
-from exercises import ExInput
+from steps import StepTextInput
 nbstep = 4
 
 with open('phrases.txt') as f:
@@ -13,7 +13,7 @@ sequence = []
 
 for i in range(nbstep):
     row = sample_lines[i]
-    sequence.append(ExInput())
+    sequence.append(StepTextInput())
     sequence[i].question = f"**Phrase {i + 1}.** \n\n {row['phrase']}"
     sequence[i].input.sol = row['rep']
     sequence[i].solution = row['rep']
