@@ -1,4 +1,4 @@
-extends = /model/basic/temp.pl
+extends = /model/basic/temp2.pl
 
 @ /builder/before1.py [builder.py]
 @ /grader/evaluator1.py [grader.py]
