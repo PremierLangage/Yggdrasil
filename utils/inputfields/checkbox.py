@@ -8,7 +8,7 @@ class Checkbox(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-checkbox-group'
         self.decorator = 'Checkbox'
-        self.scoring = 'AllOrNothing'
+        self.scoring = 'RightMinusWrong'
         super().__init__(**kwargs)
 
     def set_items(self, items):
@@ -85,7 +85,7 @@ class Checkbox(Component):
                 nbwrong += 1
 
         if self.scoring == "AllOrNothing":
-            score = all_or_nothing(nbright, nbwrong, nbsol=len(self.sol))
+            score = all_or_nothing(nbright, nbwrong)
         elif self.scoring == "RightMinusWrong":
             score = right_minus_wrong(nbright, nbwrong, nbsol=len(self.sol))          
         elif self.scoring == "CorrectItems":
