@@ -40,6 +40,8 @@ input = DragDropGroup()
 before == #|py|
 # This script can be used to generate
 # any keys (items, indsol, etc.)
+input.set_drops(2)
+input.set_labels(["AA", "BB", "CC"])
 ==
 
 process == #|py|
