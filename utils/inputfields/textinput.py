@@ -4,7 +4,7 @@ class TextInput(Component):
 
     def __init__(self, **kwargs):
         self.selector = 'c-input'
-        self.decorator = 'Input'
+        self.decorator = 'TextInput'
         super().__init__(**kwargs)
 
     def eval(self):
