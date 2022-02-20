@@ -105,7 +105,7 @@ class StepTextInput(Step):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.__Step__ = "Input"
+        self.__Step__ = "TextInput"
         self.question = kwargs.get('question', '')
         if 'input' in kwargs:
             self.input = kwargs['input']
