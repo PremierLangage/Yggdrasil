@@ -3,6 +3,8 @@ import json, jsonpickle
 from jinja2 import Environment, BaseLoader
 import uuid
 
+from dragdrop import DragDropGroup
+
 try:
     from multicomp import MultiComp
 except:
@@ -75,7 +77,7 @@ def getnewcomp(obj):
                 obj[i] = {"cid": item.cid, "name": name, "selector": item.selector} 
             if isinstance(obj[i], (Ex, MultiComp)):
                 newcomp = newcomp + getnewcomp(obj[i])
-    elif isinstance(obj, ExDragDrop):
+    elif isinstance(obj, DragDropGroup):
         newcomp = newcomp + getnewcomp(obj.drops)
         newcomp = newcomp + getnewcomp(obj.labels)
     elif isinstance(obj, Ex):
@@ -102,7 +104,7 @@ def comp2dic(obj):
                 obj[i] = {"cid": item.cid, "name": item.name, "selector": item.selector} 
             if isinstance(obj[i], (Ex, MultiComp)):
                 comp2dic(obj[i])
-    elif isinstance(obj, ExDragDrop):
+    elif isinstance(obj, DragDropGroup):
         comp2dic(obj.drops)
         comp2dic(obj.labels)
     elif isinstance(obj, Ex):
@@ -126,7 +128,7 @@ def dic2comp(obj, dic):
                 obj[i].name = name
             if isinstance(obj[i], (Ex, MultiComp)):
                 dic2comp(obj[i], dic)
-    elif isinstance(obj, ExDragDrop):
+    elif isinstance(obj, DragDropGroup):
         dic2comp(obj.drops, dic)
         dic2comp(obj.labels, dic)
     elif isinstance(obj, Ex):
