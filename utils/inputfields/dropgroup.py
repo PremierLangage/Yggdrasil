@@ -1,4 +1,5 @@
 from components import Component
+import random as rd
 
 class Drop(Component):
 
