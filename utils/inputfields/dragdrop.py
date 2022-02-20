@@ -1,4 +1,4 @@
-
+from components import Component
 
 class Drop(Component):
 
