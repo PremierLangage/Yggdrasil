@@ -4,7 +4,7 @@ extends = /model/quiz/basic.pl
 
 start == #|python|
 from AMC import parse_AMC_TXT
-from exercises import ExRadio, ExCheckbox
+from exercises import StepRadio, StepCheckbox
 
 list_questions = parse_AMC_TXT(quiz)
 
@@ -16,11 +16,11 @@ else:
 sequence = []
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
-        sequence.append(ExRadio())
+        sequence.append(StepRadio())
         sequence[i].set_items(q['items'])
         sequence[i].set_sol(q['index'])
     elif q['type'] == "Checkbox":
-        sequence.append(ExCheckbox())
+        sequence.append(StepCheckbox())
         sequence[i].set_items(q['items'])
         sequence[i].set_sol(q['index'])
     sequence[i].question = q['text']
