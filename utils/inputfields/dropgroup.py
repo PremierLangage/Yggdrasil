@@ -37,7 +37,7 @@ class DropGroup():
         num_wrong = 0
 
         for i in range(n):
-            if self.drops[i].content == self._sol[i]:
+            if self.drops[i].content == self.sol[i]:
                 num_right += 1
                 self.drops[i].css = "success-state"
             else:
