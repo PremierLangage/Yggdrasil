@@ -3,7 +3,6 @@ import json, jsonpickle
 from jinja2 import Environment, BaseLoader
 import uuid
 from multicomp import MultiComp
-from inputfields import MultInputField
 from exercises import Ex, ExDragDrop
 
 class PickleEncoder(json.JSONEncoder):
@@ -71,8 +70,6 @@ def getnewcomp(obj):
             obj.input = {"cid": item.cid, "name": name, "selector": item.selector}
     elif isinstance(obj, MultiComp):
         newcomp = newcomp + getnewcomp(obj.comp)
-    elif isinstance(obj, MultInputField):
-        newcomp = newcomp + getnewcomp(obj.inputs)
 
     return newcomp
 
@@ -96,8 +93,6 @@ def comp2dic(obj):
             obj.input = {"cid": item.cid, "name": item.name, "selector": item.selector}
     elif isinstance(obj, MultiComp):
         comp2dic(obj.comp)
-    elif isinstance(obj, MultInputField):
-        comp2dic(obj.inputs)
 
 def dic2comp(obj, dic):
     newcomp = []
@@ -121,5 +116,3 @@ def dic2comp(obj, dic):
             obj.input.name = name
     elif isinstance(obj, MultiComp):
         dic2comp(obj.comp, dic)
-    elif isinstance(obj, MultInputField):
-        dic2comp(obj.inputs, dic)
