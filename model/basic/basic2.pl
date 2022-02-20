@@ -10,7 +10,7 @@ extends = /model/basic/temp2.pl
 @ /utils/plrandom.py
 @ /utils/plcsv.py
 @ /model/basic/jinja_basic.py [jinja_env.py]
-@ /model/basic/json_basic.py [json_encoder.py]
+@ /model/basic/json_basic2.py [json_encoder.py]
 
 @ /utils/inputfields/radio.py
 @ /utils/inputfields/checkbox.py
