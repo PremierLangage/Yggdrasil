@@ -1,7 +1,6 @@
 import json, jsonpickle
 from dropgroup import DropGroup
-from steps import Step
-from exercises import Ex, ExRadio, ExCheckbox, ExInput, ExDragDrop
+from steps import Step, StepRadio, StepCheckbox, StepTextInput, StepDropGroup
 from multinput import MultInput
 
 class JSONEncoder(json.JSONEncoder):
