@@ -38,10 +38,7 @@ before == #|py|
 ==
 
 process == #|py|
-input.set_items(items)
-input.set_sol(indsol)
-if shuffled:
-    input.shuffle()
+input.sol = sol
 ==
 
 # Evaluation scripts
