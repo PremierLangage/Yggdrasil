@@ -123,3 +123,11 @@ class Checkbox(Component):
         Disable the component.
         """
         self.disabled = True
+
+    def render(self):
+        """
+        Return the HTML code of the component.
+        """
+        selector = self.selector
+        cid = self.cid
+        return f"<{selector} cid='{cid}'></{selector}>"
