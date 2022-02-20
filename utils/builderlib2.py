@@ -4,6 +4,7 @@ from jinja2 import Environment, BaseLoader
 import uuid
 
 from dropgroup import DropGroup
+from steps import Step
 
 try:
     from multicomp import MultiComp
