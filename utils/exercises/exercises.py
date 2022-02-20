@@ -110,7 +110,7 @@ class ExInput(Ex):
             self.input = kwargs['input']
             self.inputblock = kwargs.get('inputblock', '')
         else:
-            self.input = Input()
+            self.input = TextInput()
             self.inputblock = self.input.render()
             
     def eval(self):
