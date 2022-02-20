@@ -1,6 +1,5 @@
 extends = /model/basic/basic2.pl
 @ /utils/inputfields/input.py
-@ /utils/inputfields/scoring.py
 
 # Main keys
 
