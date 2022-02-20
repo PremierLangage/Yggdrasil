@@ -1,7 +1,6 @@
 # HACK pour modifier l'apparence de la page html de l'exercice
 @ /utils/components/multicomp.py
 @ /utils/components/dragdrop.py [customdragdrop.py]
-@ /utils/components/scoring.py
 
 
 title = 
