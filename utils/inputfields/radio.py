@@ -20,7 +20,7 @@ class Radio(Component):
         """
         Set the solution (from its index in the list of items).
         """
-        self._sol = self.items[index]['id']
+        self.sol = self.items[index]['id']
 
     def shuffle(self):
         """
@@ -43,7 +43,7 @@ class Radio(Component):
         """
         for item in self.items:
             id = item['id']
-            if id == self._sol and id == self.selection:
+            if id == self.sol and id == self.selection:
                 self.score = 100
                 return 100
         self.score = 0
@@ -55,12 +55,10 @@ class Radio(Component):
         """
         for item in self.items:
             id = item['id']
-            if id == self._sol and id == self.selection:
-                item['css'] = 'success-state icon-check-after'
-            elif id != self._sol and id == self.selection:
-                item['css'] = 'error-state icon-times-after'
-            elif id == self._sol and id != self.selection:
+            if id == self.sol:
                 item['css'] = 'icon-check-after'
+            elif id != self.sol and id == self.selection:
+                item['css'] = 'icon-fail-after'
 
     def disable(self):
         """
