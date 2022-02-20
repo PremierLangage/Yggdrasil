@@ -103,7 +103,7 @@ def comp2dic(obj):
             if isinstance(obj[i], Component):
                 item = obj[i]
                 obj[i] = {"cid": item.cid, "name": item.name, "selector": item.selector} 
-            if isinstance(obj[i], (Ex, MultiComp)):
+            if isinstance(obj[i], (Step, MultiComp)):
                 comp2dic(obj[i])
     elif isinstance(obj, DropGroup):
         comp2dic(obj.drops)
