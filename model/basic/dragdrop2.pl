@@ -12,9 +12,9 @@ Quelle est la réponse ?
 inputblock == #|html|
 {{ input.drops[0]|component }}
 {{ input.drops[1]|component }}
-{{ input.drops[2]|component }}
 {{ input.labels[0]|component }}
 {{ input.labels[1]|component }}
+{{ input.labels[2]|component }}
 ==
 
 # Before scripts
