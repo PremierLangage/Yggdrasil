@@ -38,7 +38,7 @@ text =
 
 tplpage =@ /model/quiz/template.html
 
-style.basic =@ /model/basic/basic.css.html
+style.basic =@ /model/basic/basic2.css.html
 style.series =@ /model/quiz/series.css.html
 
 
@@ -54,7 +54,7 @@ for ex in sequence:
     ex.disable()
     ex.display_feedback()
     ex.input.display_feedback()
-    
+
 score = sum(scores) // len(scores)
 _state_ = "grade"
 ==
