@@ -8,6 +8,7 @@ class Checkbox(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-checkbox-group'
         self.decorator = 'Checkbox'
+        self.scoring = 'AllOrNothing'
         super().__init__(**kwargs)
 
     def set_items(self, items):
