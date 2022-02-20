@@ -1,5 +1,25 @@
 
-class DragDrop():
+
+class Drop(Component):
+
+    def __init__(self, **kwargs):
+        self.selector = 'c-drag-drop'
+        self.decorator = 'CustomDragDrop'
+        self.droppable = True
+        self.cloneable = False
+        super().__init__(**kwargs)
+
+class Label(Component):
+
+    def __init__(self, **kwargs):
+        self.selector = 'c-drag-drop'
+        self.decorator = 'CustomDragDrop'
+        self.droppable = False
+        self.cloneable = False
+        super().__init__(**kwargs)
+
+
+class DragDropGroup():
 
     def __init__(self, **kwargs):
         self.__Ex__ = "DragDrop"
@@ -8,10 +28,10 @@ class DragDrop():
         self.sol = kwargs.get('sol', [])
 
     def set_drops(self, n):
-        self.labels = [CustomDragDrop.Drop() for _ in range(n)]
+        self.labels = [Drop() for _ in range(n)]
 
     def set_labels(self, lst):
-        self.labels = [CustomDragDrop.Label(content=content) for content in lst]
+        self.labels = [Label(content=content) for content in lst]
 
     def eval(self):
         n = len(self.drops)
