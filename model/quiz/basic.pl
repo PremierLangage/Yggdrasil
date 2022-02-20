@@ -16,6 +16,7 @@ extends = /model/basic/temp2.pl
 
 @ /utils/inputfields/radio.py
 @ /utils/inputfields/checkbox.py
+@ /utils/inputfields/input.py
 
 before_scripts = ["importfunc", "init", "start"]
 eval_scripts = ["control", "final"]
