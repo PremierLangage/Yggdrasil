@@ -35,6 +35,3 @@ class TextInput(Component):
         selector = self.selector
         cid = self.cid
         return f"<{selector} cid='{cid}'></{selector}>"
-
-class Numeric:
-    pass
