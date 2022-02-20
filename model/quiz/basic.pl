@@ -2,7 +2,12 @@ extends = /model/basic/temp2.pl
 
 @ /builder/before1.py [builder.py]
 @ /grader/evaluator1.py [grader.py]
-@ /utils/builderlib.py
+@ /utils/builderlib2.py [builderlib.py]
+@ /utils/components/multicomp.py
+@ /utils/inputfields/inputfields.py
+@ /utils/components/dragdrop.py [customdragdrop.py]
+@ /utils/exercises/exercises.py
+@ /utils/inputfields/scoring.py
 @ /utils/plrandom.py
 @ /utils/plcsv.py
 @ /model/basic/jinja_basic.py [jinja_env.py]
