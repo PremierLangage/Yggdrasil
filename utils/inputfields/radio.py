@@ -61,7 +61,7 @@ class Radio(Component):
         for item in self.items:
             id = item['id']
             if id == self.sol:
-                item['css'] = 'icon-check-after'
+                item['css'] = 'icon-success-after'
             elif id != self.sol and id == self.selection:
                 item['css'] = 'icon-fail-after'
 
