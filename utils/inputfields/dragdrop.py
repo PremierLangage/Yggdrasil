@@ -53,8 +53,12 @@ class DragDropGroup():
             
         return score
 
-    def show(self):
+    def display_feedback(self):
         pass
+
+    def hide_feedback(self):
+        pass
+
 
     def disable(self):
         pass
