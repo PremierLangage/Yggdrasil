@@ -37,6 +37,7 @@ before == #|py|
 # any keys (items, indsol, etc.)
 input.set_drops(2)
 input.set_labels(["AA", "BB", "CC"])
+input.sol = ["AA", "BB"]
 ==
 
 process == #|py|
