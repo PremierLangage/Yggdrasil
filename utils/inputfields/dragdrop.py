@@ -26,7 +26,7 @@ class DragDropGroup():
         self.sol = kwargs.get('sol', [])
 
     def set_drops(self, n):
-        self.labels = [Drop() for _ in range(n)]
+        self.drops = [Drop() for _ in range(n)]
 
     def set_labels(self, lst):
         self.labels = [Label(content=content) for content in lst]
