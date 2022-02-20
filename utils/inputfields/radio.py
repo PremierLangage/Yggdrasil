@@ -60,6 +60,16 @@ class Radio(Component):
             elif id != self.sol and id == self.selection:
                 item['css'] = 'icon-fail-after'
 
+    def hide_feedback(self):
+        """
+        Hide visual feedback.
+        """
+        for item in self.items:
+            s = item['css'] 
+            s = s.replace('icon-success-after', '')
+            s = s.replace('icon-fail-after', '')
+            item['css'] = s
+
     def disable(self):
         """
         Disable the component.
