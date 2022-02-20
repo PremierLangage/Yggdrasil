@@ -1,7 +1,7 @@
 import json, jsonpickle
 from customdragdrop import MultiComp, DropGroup, LabelGroup
 from exercises import Ex, ExRadio, ExCheckbox, ExInput, ExDragDrop
-from inputfields import MultInputField
+from multinput import MultInpu
 
 class JSONEncoder(json.JSONEncoder):
 
@@ -23,8 +23,8 @@ class JSONDecoder(json.JSONDecoder):
                 return LabelGroup(None, **dic)
             else:
                 return MultiComp(**dic)
-        if '__MultInputField__' in dic:
-            return MultInputField(**dic)
+        if '__MultInput__' in dic:
+            return MultInput(**dic)
         if '__Ex__' in dic:
             if dic['__Ex__'] == 'Radio':
                 return ExRadio(**dic)
