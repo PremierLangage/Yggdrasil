@@ -7,6 +7,9 @@ class DragDrop():
         self.labels = kwargs.get('labels', [])
         self.sol = kwargs.get('sol', [])
 
+    def set_drops(self, n):
+        self.labels = [CustomDragDrop.Drop() for content in lst]
+
     def set_labels(self, lst):
         self.labels = [CustomDragDrop.Label(content=content) for content in lst]
 
