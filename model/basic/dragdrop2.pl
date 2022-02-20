@@ -6,15 +6,6 @@ question ==
 Quelle est la réponse ?
 ==
 
-items ==
-Item 0
-Item 1
-Item 2
-==
-
-indsol = 1
-
-shuffled = True
 
 # Input block
 
