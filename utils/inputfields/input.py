@@ -1,3 +1,5 @@
+from component import Component
+
 class Input(Component):
 
     def __init__(self, **kwargs):
