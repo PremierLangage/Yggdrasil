@@ -81,22 +81,14 @@ def getnewcomp(obj):
     elif isinstance(obj, DropGroup):
         newcomp = newcomp + getnewcomp(obj.drops)
         newcomp = newcomp + getnewcomp(obj.labels)
-    elif isinstance(obj, StepDropGroup):
-        if isinstance(obj.input, list):
-            newcomp = newcomp + getnewcomp(obj.input)
-        elif isinstance(obj.input, Component):
-            item = obj.input
-            name = "c" + uuid.uuid4().hex
-            newcomp.append((name, item))
-            obj.input = {"cid": item.cid, "name": name, "selector": item.selector}
     elif isinstance(obj, Step):
-        if isinstance(obj.input, list):
-            newcomp = newcomp + getnewcomp(obj.input)
-        elif isinstance(obj.input, Component):
+        if isinstance(obj.input, Component):
             item = obj.input
             name = "c" + uuid.uuid4().hex
             newcomp.append((name, item))
             obj.input = {"cid": item.cid, "name": name, "selector": item.selector}
+        else:
+            newcomp = newcomp + getnewcomp(obj.input)
     elif isinstance(obj, MultiComp):
         newcomp = newcomp + getnewcomp(obj.comp)
     elif isinstance(obj, MultInputField):
