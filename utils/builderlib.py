@@ -3,7 +3,6 @@ import json, jsonpickle
 from jinja2 import Environment, BaseLoader
 import uuid
 from multicomp import MultiComp
-from exercises import Ex, ExDragDrop
 
 class PickleEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -55,22 +54,6 @@ def getnewcomp(obj):
                 name = "c" + uuid.uuid4().hex
                 newcomp.append((name, item))
                 obj[i] = {"cid": item.cid, "name": name, "selector": item.selector} 
-            if isinstance(obj[i], (Ex, MultiComp)):
-                newcomp = newcomp + getnewcomp(obj[i])
-    elif isinstance(obj, ExDragDrop):
-        newcomp = newcomp + getnewcomp(obj.drops)
-        newcomp = newcomp + getnewcomp(obj.labels)
-    elif isinstance(obj, Ex):
-        if isinstance(obj.input, list):
-            newcomp = newcomp + getnewcomp(obj.input)
-        elif isinstance(obj.input, Component):
-            item = obj.input
-            name = "c" + uuid.uuid4().hex
-            newcomp.append((name, item))
-            obj.input = {"cid": item.cid, "name": name, "selector": item.selector}
-    elif isinstance(obj, MultiComp):
-        newcomp = newcomp + getnewcomp(obj.comp)
-
     return newcomp
 
 def comp2dic(obj):
@@ -80,19 +63,6 @@ def comp2dic(obj):
             if isinstance(obj[i], Component):
                 item = obj[i]
                 obj[i] = {"cid": item.cid, "name": item.name, "selector": item.selector} 
-            if isinstance(obj[i], (Ex, MultiComp)):
-                comp2dic(obj[i])
-    elif isinstance(obj, ExDragDrop):
-        comp2dic(obj.drops)
-        comp2dic(obj.labels)
-    elif isinstance(obj, Ex):
-        if isinstance(obj.input, list):
-            comp2dic(obj.input)
-        elif isinstance(obj.input, Component):
-            item = obj.input
-            obj.input = {"cid": item.cid, "name": item.name, "selector": item.selector}
-    elif isinstance(obj, MultiComp):
-        comp2dic(obj.comp)
 
 def dic2comp(obj, dic):
     newcomp = []
@@ -102,17 +72,3 @@ def dic2comp(obj, dic):
                 name = obj[i]['name']
                 obj[i] = dic[name]
                 obj[i].name = name
-            if isinstance(obj[i], (Ex, MultiComp)):
-                dic2comp(obj[i], dic)
-    elif isinstance(obj, ExDragDrop):
-        dic2comp(obj.drops, dic)
-        dic2comp(obj.labels, dic)
-    elif isinstance(obj, Ex):
-        if isinstance(obj.input, list):
-            dic2comp(obj.input, dic)
-        elif isinstance(obj.input, dict) and 'cid' in obj.input:
-            name = obj.input['name']
-            obj.input = dic[name]
-            obj.input.name = name
-    elif isinstance(obj, MultiComp):
-        dic2comp(obj.comp, dic)
