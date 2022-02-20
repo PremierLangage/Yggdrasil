@@ -12,6 +12,19 @@ except:
     class MultiComp:
         pass
 
+try:
+    from inputfields import MultInputField
+except:
+    class MultInputField:
+        pass
+
+try:
+    from exercises import Ex, ExDragDrop
+except:
+    class MultInputField:
+        pass
+    class ExDragDrop:
+        pass
 
 class PickleEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -63,7 +76,7 @@ def getnewcomp(obj):
                 name = "c" + uuid.uuid4().hex
                 newcomp.append((name, item))
                 obj[i] = {"cid": item.cid, "name": name, "selector": item.selector} 
-            if isinstance(obj[i], (Step, MultiComp)):
+            if isinstance(obj[i], (, MultiComp)):
                 newcomp = newcomp + getnewcomp(obj[i])
     elif isinstance(obj, DropGroup):
         newcomp = newcomp + getnewcomp(obj.drops)
@@ -126,4 +139,8 @@ def dic2comp(obj, dic):
             name = obj.input['name']
             obj.input = dic[name]
             obj.input.name = name
+    elif isinstance(obj, MultiComp):
+        dic2comp(obj.comp, dic)
+    elif isinstance(obj, MultInputField):
+        dic2comp(obj.inputs, dic)
 
