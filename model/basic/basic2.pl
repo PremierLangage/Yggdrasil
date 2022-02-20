@@ -16,7 +16,7 @@ extends = /model/basic/temp2.pl
 @ /utils/inputfields/checkbox.py
 @ /utils/inputfields/textinput.py
 @ /utils/inputfields/numinput.py
-@ /utils/inputfields/dragdrop.py
+@ /utils/inputfields/dropgroup.py
 @ /utils/inputfields/multinput.py
 @ /utils/inputfields/scoring.py
 
