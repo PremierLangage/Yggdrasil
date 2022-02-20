@@ -133,12 +133,12 @@ def dic2comp(obj, dic):
         dic2comp(obj.drops, dic)
         dic2comp(obj.labels, dic)
     elif isinstance(obj, Step):
-        if isinstance(obj.input, list):
-            dic2comp(obj.input, dic)
-        elif isinstance(obj.input, dict) and 'cid' in obj.input:
+        if isinstance(obj.input, dict) and 'cid' in obj.input:
             name = obj.input['name']
             obj.input = dic[name]
             obj.input.name = name
+        else:
+            dic2comp(obj.input, dic)
     elif isinstance(obj, MultiComp):
         dic2comp(obj.comp, dic)
     elif isinstance(obj, MultInputField):
