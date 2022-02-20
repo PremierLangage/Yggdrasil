@@ -109,11 +109,11 @@ def comp2dic(obj):
         comp2dic(obj.drops)
         comp2dic(obj.labels)
     elif isinstance(obj, Step):
-        if isinstance(obj.input, list):
-            comp2dic(obj.input)
-        elif isinstance(obj.input, Component):
+        if isinstance(obj.input, Component):
             item = obj.input
             obj.input = {"cid": item.cid, "name": item.name, "selector": item.selector}
+        else:
+            comp2dic(obj.input)
     elif isinstance(obj, MultiComp):
         comp2dic(obj.comp)
     elif isinstance(obj, MultInputField):
