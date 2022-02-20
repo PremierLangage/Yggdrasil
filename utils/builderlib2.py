@@ -128,7 +128,7 @@ def dic2comp(obj, dic):
                 obj[i].name = name
             if isinstance(obj[i], (Ex, MultiComp)):
                 dic2comp(obj[i], dic)
-    elif isinstance(obj, DragDropGroup):
+    elif isinstance(obj, DropGroup):
         dic2comp(obj.drops, dic)
         dic2comp(obj.labels, dic)
     elif isinstance(obj, Ex):
