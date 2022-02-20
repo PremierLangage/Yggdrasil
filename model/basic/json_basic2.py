@@ -6,7 +6,7 @@ from multinput import MultInput
 class JSONEncoder(json.JSONEncoder):
 
     def default(self, obj):
-        if isinstance(obj, (MultiComp, Ex)):
+        if isinstance(obj, (MultiComp, Ex, DropGroup)):
             return vars(obj)
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
@@ -23,6 +23,8 @@ class JSONDecoder(json.JSONDecoder):
                 return LabelGroup(None, **dic)
             else:
                 return MultiComp(**dic)
+        if '__DropGroup__' in dic:
+            return DropGroup(**dic)
         if '__MultInput__' in dic:
             return MultInput(**dic)
         if '__Ex__' in dic:
