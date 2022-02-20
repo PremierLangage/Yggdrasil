@@ -126,8 +126,4 @@ def dic2comp(obj, dic):
             name = obj.input['name']
             obj.input = dic[name]
             obj.input.name = name
-    elif isinstance(obj, MultiComp):
-        dic2comp(obj.comp, dic)
-    elif isinstance(obj, MultInputField):
-        dic2comp(obj.inputs, dic)
 
