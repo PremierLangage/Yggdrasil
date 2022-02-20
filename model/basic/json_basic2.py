@@ -23,13 +23,13 @@ class JSONDecoder(json.JSONDecoder):
             return MultInput(**dic)
         if '__Step__' in dic:
             if dic['__Step__'] == 'Radio':
-                return ExRadio(**dic)
+                return StepRadio(**dic)
             elif dic['__Step__'] == 'Checkbox':
-                return ExCheckbox(**dic)
+                return StepCheckbox(**dic)
             elif dic['__Step__'] == 'TextInput':
-                return ExInput(**dic)
+                return StepTextInput(**dic)
             elif dic['__Step__'] == 'DropGroup':
-                return ExDragDrop(**dic)
+                return StepDropGroup(**dic)
             else:
-                return Ex(**dic)
+                return Step(**dic)
         return dic
