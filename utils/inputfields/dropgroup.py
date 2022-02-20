@@ -20,7 +20,7 @@ class Label(Component):
 class DropGroup():
 
     def __init__(self, **kwargs):
-        self.__DragDropGroup__ = True
+        self.__DropGroup__ = True
         self.drops = kwargs.get('drops', [])
         self.labels = kwargs.get('labels', [])
         self.sol = kwargs.get('sol', [])
