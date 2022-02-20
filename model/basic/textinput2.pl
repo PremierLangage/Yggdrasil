@@ -28,7 +28,7 @@ from plcsv import csv_choice, csv_sample, csv_col
 
 initinput == #|py|
 from textinput import TextInput
-input = Input()
+input = TextInput()
 ==
 
 before == #|py|
