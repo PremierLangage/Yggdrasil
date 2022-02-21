@@ -1,18 +1,7 @@
 
-@ /demo/data/pays_europe.csv
-
-before ==
-n = 4
-f = open('pays_europe.csv')
-datasample = csv_sample(f, n)
-
-capitale = datasample[0]['capitale']
-items = [row['pays'] for row in datasample]
-capitale = row['capitale']
-sol = row['pays']
-==
-
 extends = /model/basic/inputgroup.pl
+
+@ /demo/data/pays_europe.csv
 
 question ==
 Quelles sont les capitales des pays suivants ?
