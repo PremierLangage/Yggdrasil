@@ -57,7 +57,8 @@ def process_filledtext(filledtext, name):
     return sol, newstring
 
 sol, inputblock = process_filledtext(filledtext, "input.drops")
-
+sol = []
+inputblock = ""
 input.set_drops(len(sol))
 input.set_labels(sol)
 input.sol = sol
