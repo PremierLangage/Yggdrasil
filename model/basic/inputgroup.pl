@@ -52,10 +52,9 @@ for input in inputs:
     
 scores = [input.score for input in inputs]
 if -1 in scores:
-    self.score = -1
+    score = -1
 else:
-    self.score = int(average(scores))
-return self.score
+    score = int(average(scores))
 
 # display feedback
 if score == -1:
