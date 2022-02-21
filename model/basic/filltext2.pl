@@ -35,25 +35,9 @@ input = DropGroup()
 before == #|py|
 # This script can be used to generate
 # any keys (items, indsol, etc.)
-input.set_drops(2)
-input.set_labels(["AA", "BB", "CC"])
-input.sol = ["AA", "BB"]
 ==
 
 process == #|py|
-
-==
-
-# Evaluation scripts
-
-evaluator == #|py|
-score = input.eval()
-input.display_feedback()
-input.disable()
-==
-
-
-process ==
 def process_filledtext(filledtext, name):
     counter = 0
     newstring = ''
@@ -69,7 +53,20 @@ def process_filledtext(filledtext, name):
     newstring += filledtext[start:]
     return sol, newstring
 
-sol, inputblock = rocess_filledtext(filledtext, "input.drops")
+sol, inputblock = process_filledtext(filledtext, "input.drops")
+==
+
+# Evaluation scripts
+
+evaluator == #|py|
+score = input.eval()
+input.display_feedback()
+input.disable()
+==
+
+
+process ==
+
 if isinstance(labels, str):
     _labels_ = labels.splitlines()
 elif isinstance(labels, list):
