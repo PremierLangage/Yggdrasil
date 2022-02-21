@@ -22,7 +22,11 @@ class TextInput(Component):
         elif self.score >= 0:
             self.suffix = r'<i class="fas fa-times" style="color: var(--danger)"></i></i>'
 
-    def set_items(self, )
+    def set_items(self, items):
+        if isinstance(items, str):
+            self.autocomplete = items.splitlines()
+        else:
+            self.autocomplete = items
 
     def hide_feedback(self):
         self.suffix = ""
