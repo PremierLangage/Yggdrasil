@@ -58,7 +58,7 @@ style.dragdrop ==
 <style>
 .drag-drop-component {
     position: relative;
-    cursor: move;
+    cursor: hand;
     display: inline-flex;
     padding: 0px;
     box-sizing: border-box;
