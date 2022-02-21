@@ -15,14 +15,6 @@ filledtext ==
 
 # Input block
 
-inputblock == #|html|
-{{ input.drops[0]|component }}
-{{ input.drops[1]|component }}
-{{ input.labels[0]|component }}
-{{ input.labels[1]|component }}
-{{ input.labels[2]|component }}
-==
-
 # Before scripts
 
 before_scripts = ["importfunc", "initinput", "before", "process"]
