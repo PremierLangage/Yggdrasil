@@ -4,7 +4,7 @@ title = Nombres Complexes
 
 before == #|python|
 n = 3
-inputs = [MathInput() for _ in range(3)]
+inputs = [MathInput() for _ in range(n)]
 prefixes = []
 for i in range(4):
     z1 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
