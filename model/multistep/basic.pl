@@ -18,7 +18,7 @@ extends = /model/basic/hackpage.pl
 @ /utils/inputfields/inputgroup.py
 @ /utils/inputfields/scoring.py
 
-before_scripts = ["importfunc", "init", "start"]
+before_scripts = ["importfunc", "init", "before"]
 
 jinja_keys = ["intro","inputblock0"]
 
@@ -27,6 +27,24 @@ importfunc == #|python|
 from random import choice, choices, sample, shuffle
 from plrandom import randint, sampleint
 from plcsv import csv_choice, csv_sample, csv_col
+==
+
+before == #|python|
+from steps import StepTextInput
+
+sequence = [StepTextInput(), StepTextInput()]
+sequence[0].question = "Quelle est la capitale de la France ?"
+sequence[0].input.sol = "Paris"
+sequence[0].solution = "Paris"
+
+sequence[1].question = "Quelle est la capitale de l'Italie ?"
+sequence[1].input.sol = "Rome"
+sequence[1].solution = "Paris"
+
+istep = 0
+nbsteps = len(sequence)
+score = -1
+scores = []
 ==
 
 init ==
