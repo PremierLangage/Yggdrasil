@@ -25,3 +25,5 @@ class InputGroup:
                 input.display_feedback()
                 input.disable()
         return score
+
+    def display_feedback()
