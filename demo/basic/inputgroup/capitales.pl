@@ -8,19 +8,19 @@ inputs[1].sol = "Rome"
 
 inputblock ==
 <div class="container">
-  <div class="row justify-content-md-center">
-    <div class="col-md-auto">
+  <div class="row">
+    <div class="co">
       France
     </div>
-    <div class="col col-lg-2">
+    <div class="col">
       {{ inputs[0]|component }}
     </div>
   </div>
   <div class="row">
-    <div class="col-md-auto">
+    <div class="col">
       Italie
     </div>
-    <div class="col col-lg-2">
+    <div class="col">
       {{ inputs[1]|component }}
     </div>
   </div>
