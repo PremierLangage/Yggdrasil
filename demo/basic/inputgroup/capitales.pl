@@ -16,6 +16,7 @@ inputblock ==
       {{ inputs[0]|component }}
     </div>
   </div>
+  <div class="w-100"></div>
   <div class="row">
     <div class="col-md-auto">
       Italie
