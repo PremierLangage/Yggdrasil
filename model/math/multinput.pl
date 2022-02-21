@@ -1,4 +1,4 @@
-extends = input2.pl
+extends = /model/math/input2.pl
 
 inputblock ==
 {% for input in inputs %}
@@ -22,7 +22,7 @@ def average(lst):
     return sum(lst)/len(lst)
 
 for input in inputs:
-    input.value = answers[input.id] # Hack
+    input.value = answers[input.id] # HACK
     input.eval()
 
 if -1 in [input.score for input in inputs]:
