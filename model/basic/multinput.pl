@@ -9,7 +9,8 @@ Quelle est la réponse ?
 # Input block
 
 inputblock == #|html|
-{{ input|component }}
+{{ group.inputs[0]|component }}
+{{ group.inputs[1]|component }}
 ==
 
 # Before scripts
