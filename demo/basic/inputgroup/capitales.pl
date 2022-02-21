@@ -1,5 +1,9 @@
 extends = /model/basic/inputgroup.pl
 
+question ==
+Quelles sont les capitales des pays suivants ?
+==
+
 before ==
 inputs = [TextInput(), TextInput()]
 inputs[0].sol = "Paris"
@@ -25,8 +29,4 @@ inputblock ==
     </div>
   </div>
 </div>
-==
-
-question ==
-Quelle est la capitale des pays suivants ?
 ==
