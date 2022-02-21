@@ -1,5 +1,5 @@
 extends = /model/math/math.pl
-extends = /model/basic/temp.pl
+extends = /model/basic/hackpage.pl
 extends = messages_math.pl
 extends = aux_mathinput.pl
 
