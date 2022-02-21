@@ -3,7 +3,6 @@ extends = /model/basic/temp2.pl
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
 @ /utils/builderlib2.py [builderlib.py]
-@ /utils/exercises/exercises.py
 @ /utils/steps/steps.py
 
 @ /utils/plrandom.py
@@ -16,7 +15,7 @@ extends = /model/basic/temp2.pl
 @ /utils/inputfields/textinput.py
 @ /utils/inputfields/numinput.py
 @ /utils/inputfields/dropgroup.py
-@ /utils/inputfields/multinput.py
+@ /utils/inputfields/inputgroup.py
 @ /utils/inputfields/scoring.py
 
 before_scripts = ["importfunc", "init", "start"]
