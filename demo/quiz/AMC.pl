@@ -1,7 +1,7 @@
 extends = /model/quiz/AMC.pl
 
 intro ==
-Ce quiz est composé de 3 questions sur la géographie de la France
+Ce quiz est composé de 3 questions.
 ==
 
 quiz ==
