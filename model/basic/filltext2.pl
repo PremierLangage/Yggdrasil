@@ -41,16 +41,15 @@ import re
 sol = []
 
 def process_filledtext(filledtext, name):
-    counter = 0
     sol = []
+    counter = 0
     newstring = ''
     start = 0
     for m in re.finditer(r"{([^{}]+)}", filledtext):
         end, newstart = m.span()
         newstring += filledtext[start:end]
-        sol.append(m.group(1))
-        #rep = "{{" + f"{name}[" + str(counter) + "]|component }}"
-        rep = "0"
+        rep = "{{ "+ name + ".comp[" + str(counter) + "]|component }}"
+        sol.append(m.group(1)) 
         newstring += rep
         start = newstart
         counter += 1
