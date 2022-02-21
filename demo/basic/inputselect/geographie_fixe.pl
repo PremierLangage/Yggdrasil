@@ -1,4 +1,4 @@
-extends = /model/basic/inputselect.pl
+extends = /model/basic/autoinput2.pl
 
 question ==
 Quel pays a pour capitale Paris ?
