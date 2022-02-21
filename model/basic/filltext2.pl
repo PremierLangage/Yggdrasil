@@ -67,8 +67,7 @@ def process_filledtext(filledtext, name):
         start = newstart
         counter += 1
     newstring += filledtext[start:]
-    self.embed = newstring
-    return sol, inputblock
+    return sol, newstring
 
 sol, inputblock = rocess_filledtext(filledtext, "input.drops")
 if isinstance(labels, str):
