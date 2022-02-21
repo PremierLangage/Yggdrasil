@@ -18,8 +18,8 @@ class JSONDecoder(json.JSONDecoder):
     def object_hook(self, dic):
         if '__DropGroup__' in dic:
             return DropGroup(**dic)
-        if '__MultInput__' in dic:
-            return MultInput(**dic)
+        if '__InputGroup__' in dic:
+            return InputGroup(**dic)
         if '__Step__' in dic:
             if dic['__Step__'] == 'Radio':
                 return StepRadio(**dic)
