@@ -1,11 +1,11 @@
-extends = /model/basic/input.pl
+extends = /model/basic/inputgroup.pl
 
 @ /demo/data/pays_europe.csv
 
 before ==
 inputs = [TextInput(), TextInput()]
-for input in inputs:
-
+inputs[0].sol = Paris
+inputs[1].sol = Rome
 ==
 
 question ==
