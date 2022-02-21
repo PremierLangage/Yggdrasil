@@ -35,6 +35,7 @@ input = DropGroup()
 before == #|py|
 # This script can be used to generate
 # any keys (items, indsol, etc.)
+
 ==
 
 process == #|py|
@@ -54,6 +55,10 @@ def process_filledtext(filledtext, name):
     return sol, newstring
 
 sol, inputblock = process_filledtext(filledtext, "input.drops")
+
+input.set_drops(len(sol))
+input.set_labels(sol)
+input.sol = sol
 ==
 
 # Evaluation scripts
