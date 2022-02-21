@@ -62,7 +62,7 @@ def process_filledtext(filledtext, name):
         end, newstart = m.span()
         newstring += filledtext[start:end]
         sol.append(m.group(1))
-        rep = "{{  }"
+        rep = "{{" + f"{name}[{counter}]" + "|component }}"
         newstring += rep
         start = newstart
         counter += 1
