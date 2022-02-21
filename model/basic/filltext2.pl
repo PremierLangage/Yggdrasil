@@ -45,16 +45,7 @@ def process_filledtext(filledtext, name):
     sol = []
     newstring = ''
     start = 0
-    for m in re.finditer(r"{([^{}]+)}", filledtext):
-        end, newstart = m.span()
-        newstring += filledtext[start:end]
-        sol.append(m.group(1))
-        #rep = "{{" + f"{name}[" + str(counter) + "]|component }}"
-        rep = ""
-        newstring += rep
-        start = newstart
-        counter += 1
-    newstring += filledtext[start:]
+
     return sol, newstring
 
 sol, inputblock = process_filledtext(filledtext, "input.drops")
