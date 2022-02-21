@@ -89,8 +89,8 @@ style.dragdrop ==
     display: inline-flex;
     padding: 0px;
     box-sizing: border-box;
-    min-width: 3em;
-    min-height: 1.5em;
+    //min-width: 3em;
+    //min-height: 1.5em;
     vertical-align: middle;
     text-align: center;
     justify-content: center;
