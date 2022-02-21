@@ -23,8 +23,8 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from multinput import MultInput()
-group = MultInput()
+from inputgroup import InputGroup()
+group = InputGroup()
 ==
 
 before == #|py|
