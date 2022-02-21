@@ -43,33 +43,33 @@ process == #|py|
 # Evaluation scripts
 
 evaluator == #|py|
-        def average(lst):
-            return sum(lst)/len(lst)
+def average(lst):
+    return sum(lst)/len(lst)
 
-        # evaluation
-        for input in inputs:
-            input.eval()
+# evaluation
+for input in inputs:
+    input.eval()
+    
+scores = [input.score for input in inputs]
+if -1 in scores:
+    self.score = -1
+else:
+    self.score = int(average(scores))
+return self.score
 
-        scores = [input.score for input in self.inputs]
-        if -1 in scores:
-            self.score = -1
+# display feedback
+if score == -1:
+    for input in inputs:
+        if input.score == -1:
+            input.display_feedback()
         else:
-            self.score = int(average(scores))
-        return self.score
+            input.hide_feedback()
+else:
+    for input in inputs:
+        input.display_feedback()
 
-        # display feedback
-        if score == -1:
-            for input in inputs:
-                if input.score == -1:
-                    input.display_feedback()
-                else:
-                    input.hide_feedback()
-        else:
-            for input in inputs:
-                input.display_feedback()
-
-        # disable
-        if score != -1:
-            for input in inputs:
-                input.disable()
+# disable
+if score != -1:
+    for input in inputs:
+        input.disable()
 ==
