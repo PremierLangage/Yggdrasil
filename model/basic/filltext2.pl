@@ -16,6 +16,7 @@ filledtext ==
 # Input block
 
 # Before scripts
+jinja_keys = ["inputblock"]
 
 before_scripts = ["importfunc", "initinput", "before", "process"]
 
