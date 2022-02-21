@@ -45,6 +45,8 @@ before == #|py|
 ==
 
 process == #|py|
+import re
+
 def process_filledtext(filledtext, name):
     counter = 0
     newstring = ''
