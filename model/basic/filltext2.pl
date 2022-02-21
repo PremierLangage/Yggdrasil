@@ -40,8 +40,6 @@ process == #|py|
 import re
 sol =[]
 
-
-sol, inputblock = process_filledtext(filledtext, "input.drops")
 inputblock = ""
 input.set_drops(len(sol))
 input.set_labels(sol)
