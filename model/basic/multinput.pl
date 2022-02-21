@@ -24,12 +24,17 @@ from plcsv import csv_choice, csv_sample, csv_col
 
 initinput == #|py|
 from inputgroup import InputGroup()
+from textinput import TextInput()
+from radio import Radio()
 group = InputGroup()
 ==
 
 before == #|py|
-# This script can be used to generate
-# any keys (items, indsol, etc.)
+group.inputs = [TextInput(), Radio()]
+
+group.inputs[0].sol = "toto"
+group.inputs[1].set_items(["AA", "BB", "CC"])
+ group.inputs[1].set_sol(0)
 ==
 
 process == #|py|
@@ -42,7 +47,7 @@ if shuffled:
 # Evaluation scripts
 
 evaluator == #|py|
-score = input.eval()
-input.display_feedback()
-input.disable()
+score = group.eval()
+group.display_feedback()
+group.disable()
 ==
