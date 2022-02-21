@@ -1,4 +1,3 @@
-
 extends = /model/basic/inputgroup.pl
 
 @ /demo/data/pays_europe.csv
