@@ -1,7 +1,7 @@
 extends = /model/quiz/AMC.pl
 
 intro ==
-Ce quiz est composé de 3 questions sur la géographie de l'Europe
+Ce quiz est composé de 3 questions sur la géographie de la France
 ==
 
 quiz ==
@@ -10,14 +10,15 @@ quiz ==
 - Douala
 - Kribi
 
-** Parmi les nombres suivants, lesquels sont positifs ?
+** Parmi les nombres suivants,
+lesquels sont positifs ?
 + 2
 - -2
 + 10
 
-*[ordered] Combien font un plus un ?
+*[ordered] Combien font
+un plus un ?
 - 0
 - 1
 + 2
-- 3
 ==
