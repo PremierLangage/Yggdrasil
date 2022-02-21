@@ -2,8 +2,8 @@ extends = /model/basic/inputgroup.pl
 
 before ==
 inputs = [TextInput(), TextInput()]
-inputs[0].sol = Paris
-inputs[1].sol = Rome
+inputs[0].sol = "Paris"
+inputs[1].sol = "Rome"
 ==
 
 inputblock ==
