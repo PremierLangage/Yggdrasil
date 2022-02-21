@@ -39,10 +39,7 @@ group.inputs[1].set_sol(0)
 ==
 
 process == #|py|
-input.set_items(items)
-input.set_sol(indsol)
-if shuffled:
-    input.shuffle()
+
 ==
 
 # Evaluation scripts
