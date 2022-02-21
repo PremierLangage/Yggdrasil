@@ -1,4 +1,4 @@
-extends = /model/math/input2.pl
+extends = input2.pl
 
 inputblock ==
 {% for input in inputs %}
