@@ -1,4 +1,4 @@
-extends = /model/basic/temp2.pl
+extends = /model/basic/hackpage.pl
 
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
