@@ -69,8 +69,9 @@ Début de la série
 
 
 evaluator ==
-step = steps[istep]
-exec(eval[step])
+
+scorestep = sequence[i].eval()
+
 if scorestep >= 0:
     scores.append(scorestep)
     istep += 1
