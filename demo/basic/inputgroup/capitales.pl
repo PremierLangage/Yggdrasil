@@ -8,8 +8,8 @@ inputs[1].sol = "Rome"
 
 inputblock ==
 <div class="container">
-  <div class="row py-1 align-items-middle">
-    <div class="align-middle col-md-auto align-items-middle">
+  <div class="row py-1">
+    <div class="align-middle col-md-auto">
         France
     </div>
     <div class="col">
@@ -17,7 +17,7 @@ inputblock ==
     </div>
   </div>
   <div class="row py-1">
-    <div class="col-md-auto align-middle">
+    <div class="col-md-auto">
       Italie
     </div>
     <div class="col">
