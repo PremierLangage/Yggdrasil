@@ -9,11 +9,13 @@ Quelles sont les capitales des pays suivants ?
 
 before ==
 n = 4
+
 inputs = [TextInput() for _ in range(n)]
+pays = []
+
+f = open('pays_europe.csv')
 datasample = csv_sample(f, n)
 
-pays = []
-f = open('pays_europe.csv')
 for i in range(n):
     input[i].sol = datasample[0]['capitale']
     pays.append(datasample[i]['pays'])
