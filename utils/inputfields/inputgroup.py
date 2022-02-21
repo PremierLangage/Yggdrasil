@@ -16,7 +16,7 @@ class InputGroup:
         if -1 in scores:
             self.score = -1
         else:
-            self.score = int(average(score))
+            self.score = int(average(scores))
         return self.score
 
     def display_feedback(self):
