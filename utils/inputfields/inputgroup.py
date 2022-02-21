@@ -31,3 +31,10 @@ class InputGroup:
         Display visual/contextual feedback for all inputs in the group.
         """
         pass
+
+    def disable(self):
+        """
+        Disable all input fields in the group.
+        """
+        for input in group.inputs:
+            input.disable()
