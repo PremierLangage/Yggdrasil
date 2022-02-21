@@ -7,7 +7,7 @@ question ==
 Quelles sont les capitales des pays suivants ?
 ==
 
-before ==
+before == #|py|
 n = 4
 
 inputs = [TextInput() for _ in range(n)]
