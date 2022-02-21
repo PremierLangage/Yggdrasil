@@ -74,6 +74,7 @@ scorestep = sequence[istep].eval()
 
 if scorestep >= 0:
     scores.append(scorestep)
+    sequence[istep].disable()
     istep += 1
 
 if istep >= nbsteps:
