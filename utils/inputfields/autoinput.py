@@ -1,10 +1,10 @@
 from components import Component
 
-class TextInput(Component):
+class AutoInput(Component):
 
     def __init__(self, **kwargs):
         self.selector = 'c-input'
-        self.decorator = 'TextInput'
+        self.decorator = 'AutoInput'
         super().__init__(**kwargs)
 
     def eval(self):
