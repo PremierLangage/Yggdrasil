@@ -34,7 +34,7 @@ group.inputs = [TextInput(), Radio()]
 
 group.inputs[0].sol = "toto"
 group.inputs[1].set_items(["AA", "BB", "CC"])
- group.inputs[1].set_sol(0)
+group.inputs[1].set_sol(0)
 ==
 
 process == #|py|
