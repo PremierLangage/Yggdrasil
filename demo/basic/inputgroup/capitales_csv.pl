@@ -31,7 +31,6 @@ for i in range(n):
 ==
 
 inputblock ==
-
 <div class="container">
 {% for i in range(n) %}
   <div class="row py-2 align-items-center">
