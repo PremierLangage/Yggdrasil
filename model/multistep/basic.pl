@@ -57,7 +57,7 @@ form =
 
 text = 
 
-tplpage =@ /model/model/template.html
+tplpage =@ /model/multistep/template2.html
 
 style.basic =@ /model/basic/basic2.css.html
 style.series =@ /model/quiz/series.css.html
