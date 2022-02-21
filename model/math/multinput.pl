@@ -22,7 +22,7 @@ def average(lst):
     return sum(lst)/len(lst)
 
 for input in inputs:
-    input.value = answers[input.id]
+    input.value = answers[input.id] # Sync
     input.eval()
 
 if -1 in [input.score for input in inputs]:
