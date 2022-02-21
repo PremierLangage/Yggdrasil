@@ -21,7 +21,7 @@ for i in range(n):
     pays.append(datasample[i]['pays'])
 ==
 
-inputblock ==
+inputblock == #|html|
 <div class="container">
 {% for i in range(n) %}
   <div class="row py-2 align-items-center">
