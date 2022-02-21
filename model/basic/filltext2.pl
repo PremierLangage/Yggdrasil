@@ -41,6 +41,13 @@ process == #|py|
 import re
 sol = []
 
+if isinstance(labels, str):
+    _labels_ = labels.splitlines()
+elif isinstance(labels, list):
+    _labels_ = labels
+else:
+    _labels_ = []
+
 def process_filledtext(filledtext, name):
     sol = []
     counter = 0
@@ -59,7 +66,7 @@ def process_filledtext(filledtext, name):
 
 sol, inputblock1 = process_filledtext(filledtext, "input.drops")
 input.set_drops(len(sol))
-input.set_labels(list(set(sol)))
+input.set_labels(list(set(sol + _labels_)))
 inputblock =  inputblock1 + "\n\n" + input.labels_html()
 input.sol = sol
 ==
