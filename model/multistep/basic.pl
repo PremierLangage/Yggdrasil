@@ -71,6 +71,7 @@ Début de la série
 evaluator ==
 
 scorestep = sequence[istep].eval()
+sequence[istep].display_feedback()
 
 if scorestep >= 0:
     scores.append(scorestep)
