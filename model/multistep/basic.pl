@@ -70,7 +70,7 @@ Début de la série
 
 evaluator ==
 
-scorestep = sequence[i].eval()
+scorestep = sequence[istep].eval()
 
 if scorestep >= 0:
     scores.append(scorestep)
