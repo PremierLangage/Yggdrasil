@@ -3,7 +3,7 @@ extends = /model/basic/input.pl
 @ /demo/data/pays_europe.csv
 
 before ==
-inputs = [TextInput(), TextInput(), TextInput()]
+inputs = [TextInput(), TextInput()]
 for input in inputs:
 
 ==
