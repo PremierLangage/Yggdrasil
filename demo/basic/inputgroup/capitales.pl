@@ -9,5 +9,5 @@ inputs[1].sol = Rome
 ==
 
 question ==
-Quel pays a pour capitale {{capitale}} ?
+Quelle est la capitale des pays suivants ?
 ==
