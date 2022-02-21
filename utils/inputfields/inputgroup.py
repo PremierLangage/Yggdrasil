@@ -12,19 +12,12 @@ class InputGroup:
         for input in self.inputs:
             input.eval()
 
-        if -1 in [input.score for input in self.inputs]:
-            score = -1
-            for input in self.inputs:
-                if input.score == -1:
-                    input.display_feedback()
-                else:
-                    input.hide_feedback()
+        scores = [input.score for input in self.inputs]
+        if -1 in scores:
+            self.score = -1
         else:
-            score = int(average([input.score for input in self.inputs]))
-            for input in self.inputs:
-                input.display_feedback()
-                input.disable()
-        return score
+            self.score = int(average(score))
+        return self.score
 
     def display_feedback(self):
         """
