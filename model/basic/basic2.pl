@@ -15,7 +15,7 @@ extends = /model/basic/temp2.pl
 @ /utils/inputfields/textinput.py
 @ /utils/inputfields/numinput.py
 @ /utils/inputfields/dropgroup.py
-@ /utils/inputfields/multinput.py
+@ /utils/inputfields/inputgroup.py
 @ /utils/inputfields/scoring.py
 
 before_scripts = ["importfunc", "initinput", "before", "process"]
