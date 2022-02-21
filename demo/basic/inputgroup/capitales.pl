@@ -10,7 +10,7 @@ inputblock ==
 <div class="container">
   <div class="row py-1 align-items-center">
     <div class="col-md-auto">
-        France
+        France :
     </div>
     <div class="col">
       {{ inputs[0]|component }}
@@ -18,7 +18,7 @@ inputblock ==
   </div>
   <div class="row py-1 align-items-center">
     <div class="col-md-auto">
-      Italie
+      Italie :
     </div>
     <div class="col">
       {{ inputs[1]|component }}
