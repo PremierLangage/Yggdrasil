@@ -4,27 +4,9 @@ from jinja2 import Environment, BaseLoader
 import uuid
 
 from dropgroup import DropGroup
+from inputgroup import InputGroup
 from steps import Step, StepDropGroup
 
-try:
-    from multicomp import MultiComp
-except:
-    class MultiComp:
-        pass
-
-try:
-    from inputfields import MultInputField
-except:
-    class MultInputField:
-        pass
-
-try:
-    from exercises import Ex, ExDragDrop
-except:
-    class MultInputField:
-        pass
-    class ExDragDrop:
-        pass
 
 class PickleEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -89,9 +71,7 @@ def getnewcomp(obj):
             obj.input = {"cid": item.cid, "name": name, "selector": item.selector}
         else:
             newcomp = newcomp + getnewcomp(obj.input)
-    elif isinstance(obj, MultiComp):
-        newcomp = newcomp + getnewcomp(obj.comp)
-    elif isinstance(obj, MultInputField):
+    elif isinstance(obj, InputGroup):
         newcomp = newcomp + getnewcomp(obj.inputs)
 
     return newcomp
@@ -114,9 +94,7 @@ def comp2dic(obj):
             obj.input = {"cid": item.cid, "name": item.name, "selector": item.selector}
         else:
             comp2dic(obj.input)
-    elif isinstance(obj, MultiComp):
-        comp2dic(obj.comp)
-    elif isinstance(obj, MultInputField):
+    elif isinstance(obj, InputGroup):
         comp2dic(obj.inputs)
 
 def dic2comp(obj, dic):
@@ -139,8 +117,6 @@ def dic2comp(obj, dic):
             obj.input.name = name
         else:
             dic2comp(obj.input, dic)
-    elif isinstance(obj, MultiComp):
-        dic2comp(obj.comp, dic)
-    elif isinstance(obj, MultInputField):
+    elif isinstance(obj,InputGroup):
         dic2comp(obj.inputs, dic)
 
