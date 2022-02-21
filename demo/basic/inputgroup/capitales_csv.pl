@@ -31,22 +31,17 @@ for i in range(n):
 ==
 
 inputblock ==
+
 <div class="container">
+{% for i in range(n) %}
   <div class="row py-2 align-items-center">
     <div class="col-md-auto">
-        France :
+        {{ pays[i] }}
     </div>
     <div class="col">
-      {{ inputs[0]|component }}
+      {{ inputs[i]|component }}
     </div>
   </div>
-  <div class="row py-2 align-items-center">
-    <div class="col-md-auto">
-      Italie :
-    </div>
-    <div class="col">
-      {{ inputs[1]|component }}
-    </div>
-  </div>
+{% endfor %}
 </div>
 ==
