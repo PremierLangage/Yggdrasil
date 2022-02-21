@@ -24,8 +24,8 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from inputgroup import InputGroup()
-from textinput import TextInput()
+from inputgroup import InputGroup
+from textinput import TextInput
 from radio import Radio()
 group = InputGroup()
 ==
