@@ -9,7 +9,7 @@ inputs[1].sol = "Rome"
 inputblock ==
 <div class="container">
   <div class="row">
-    <div class="co">
+    <div class="col">
       France
     </div>
     <div class="col">
