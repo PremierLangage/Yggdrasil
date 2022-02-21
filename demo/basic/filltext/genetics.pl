@@ -1,4 +1,4 @@
-extends = /model/basic/filltext.pl
+extends = /model/basic/filltext2.pl
 
 question ==
 Compléter le texte suivant avec les bonnes étiquettes.
