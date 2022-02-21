@@ -96,7 +96,7 @@ style.dragdrop ==
     justify-content: center;
     align-items: center;
     border: 0px solid transparent;
-    border-radius: 0px;
+    //border-radius: 0px;
     margin: 0px;
 }
 
