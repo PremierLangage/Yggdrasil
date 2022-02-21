@@ -18,7 +18,7 @@ class AutoInput(Component):
 
     def display_feedback(self):
         if self.score == 100:
-            self.suffix = r'<i class="fas fa-check" style="color: var(--sucsess)"></i>'
+            self.suffix = r'<i class="fas fa-check" style="color: var(--success)"></i>'
         elif self.score >= 0:
             self.suffix = r'<i class="fas fa-times" style="color: var(--danger)"></i></i>'
 
