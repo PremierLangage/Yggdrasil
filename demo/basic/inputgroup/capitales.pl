@@ -9,7 +9,7 @@ inputs[1].sol = "Rome"
 inputblock ==
 <div class="container">
   <div class="row">
-    <div class="col">
+    <div class="col-md-auto">
       France
     </div>
     <div class="col">
@@ -17,7 +17,7 @@ inputblock ==
     </div>
   </div>
   <div class="row">
-    <div class="col">
+    <div class="col-md-auto">
       Italie
     </div>
     <div class="col">
