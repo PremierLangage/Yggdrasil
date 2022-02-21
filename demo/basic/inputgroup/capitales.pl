@@ -9,7 +9,7 @@ inputs[1].sol = "Rome"
 inputblock ==
 <div class="container">
   <div class="row py-1">
-    <div class="align-middle col-md-auto">
+    <div class="align-middle col-md-auto align-bottom">
         France
     </div>
     <div class="col">
