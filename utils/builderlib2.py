@@ -58,7 +58,7 @@ def getnewcomp(obj):
                 name = "c" + uuid.uuid4().hex
                 newcomp.append((name, item))
                 obj[i] = {"cid": item.cid, "name": name, "selector": item.selector} 
-            if isinstance(obj[i], (Step, MultiComp)):
+            if isinstance(obj[i], (Step, DropGroup, InputGroup)):
                 newcomp = newcomp + getnewcomp(obj[i])
     elif isinstance(obj, DropGroup):
         newcomp = newcomp + getnewcomp(obj.drops)
@@ -83,7 +83,7 @@ def comp2dic(obj):
             if isinstance(obj[i], Component):
                 item = obj[i]
                 obj[i] = {"cid": item.cid, "name": item.name, "selector": item.selector} 
-            if isinstance(obj[i], (Step, MultiComp)):
+            if isinstance(obj[i], (Step, DropGroup, InputGroup)):
                 comp2dic(obj[i])
     elif isinstance(obj, DropGroup):
         comp2dic(obj.drops)
@@ -105,7 +105,7 @@ def dic2comp(obj, dic):
                 name = obj[i]['name']
                 obj[i] = dic[name]
                 obj[i].name = name
-            if isinstance(obj[i], (Step, MultiComp)):
+            if isinstance(obj[i], (Step, DropGroup, InputGroup)):
                 dic2comp(obj[i], dic)
     elif isinstance(obj, DropGroup):
         dic2comp(obj.drops, dic)
