@@ -1,30 +1,48 @@
-extends = basic.pl
+extends = /model/basic/basic2.pl
 
-inputblock ==
-{% for input in inputs %}
-<div style="display: block; margin-bottom: 1em;">
-{{ input|component }}
-</div>
-{% endfor %}
+# Main keys
+
+question ==
+Quelle est la réponse ?
 ==
 
-evaluator ==
-def average(lst):
-    return sum(lst)/len(lst)
+# Input block
 
-for input in inputs:
-    input.eval()
+inputblock == #|html|
+{{ input|component }}
+==
 
-if -1 in [input.score for input in inputs]:
-    score = -1
-    for input in inputs:
-        if input.score == -1:
-            input.display_feedback()
-        else:
-            input.hide_feedback()
-else:
-    score = int(average([input.score for input in inputs]))
-    for input in inputs:
-        input.display_feedback()
-        input.disable()
+# Before scripts
+
+before_scripts = ["importfunc", "initinput", "before", "process"]
+
+importfunc == #|py|
+from random import choice, choices, sample, shuffle
+from plrandom import randint, sampleint
+from plcsv import csv_choice, csv_sample, csv_col
+==
+
+initinput == #|py|
+from multinput import MultInput()
+group = MultInput()
+==
+
+before == #|py|
+# This script can be used to generate
+# any keys (items, indsol, etc.)
+==
+
+process == #|py|
+input.set_items(items)
+input.set_sol(indsol)
+if shuffled:
+    input.shuffle()
+==
+
+# Evaluation scripts
+
+evaluator == #|py|
+score = input.eval()
+input.display_feedback()
+input.disable()
 ==
