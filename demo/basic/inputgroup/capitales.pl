@@ -10,7 +10,7 @@ inputblock ==
 <div class="container">
   <div class="row py-1">
     <div class="col-md-auto align-middle">
-      France
+      <span class="align-middle">middle</span>
     </div>
     <div class="col">
       {{ inputs[0]|component }}
