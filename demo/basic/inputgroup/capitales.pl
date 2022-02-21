@@ -1,11 +1,14 @@
 extends = /model/basic/inputgroup.pl
 
-@ /demo/data/pays_europe.csv
-
 before ==
 inputs = [TextInput(), TextInput()]
 inputs[0].sol = Paris
 inputs[1].sol = Rome
+==
+
+inputblock ==
+France : {{ inputs[0]|component }}
+Italie : {{ inputs[1]|component }}
 ==
 
 question ==
