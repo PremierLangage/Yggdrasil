@@ -2,7 +2,7 @@
 
 title = 
 
-style.page == #|html|
+style.hackpage == #|html|
 <style>
 .exercise__header{
   display: none;
@@ -18,15 +18,15 @@ style.page == #|html|
 }
 
 .exercise__title {
-   font-size: 20px;
+  font-size: 20px;
 }
 
 .exercise__feedback {
- margin-bottom: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 .exercise__actions {
- display: none;  
+  display: none;  
 }
 
 .exercise__actions .btn-group {
@@ -34,16 +34,19 @@ style.page == #|html|
 }
 
 .action-save {
-   display: none;
+  display: none;
 }
+
 .action-reset {
-   display: none;
+  display: none;
 }
+
 .action-next {
-   display: none;
+  display: none;
 }
+
 .action-download-env {
-   display: none;
+  display: none;
 }
 </style>
 ==
