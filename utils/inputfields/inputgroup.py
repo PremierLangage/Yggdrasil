@@ -26,4 +26,8 @@ class InputGroup:
                 input.disable()
         return score
 
-    def display_feedback()
+    def display_feedback(self):
+        """
+        Display visual/contextual feedback for all inputs in the group.
+        """
+        pass
