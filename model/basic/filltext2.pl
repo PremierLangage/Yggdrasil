@@ -49,6 +49,7 @@ import re
 
 def process_filledtext(filledtext, name):
     counter = 0
+    sol = []
     newstring = ''
     start = 0
     for m in re.finditer(r"{([^{}]+)}", filledtext):
