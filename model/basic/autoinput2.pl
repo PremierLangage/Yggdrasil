@@ -38,6 +38,7 @@ before == #|py|
 
 process == #|py|
 input.sol = sol
+input.set_items(items)
 ==
 
 # Evaluation scripts
