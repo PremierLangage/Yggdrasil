@@ -30,7 +30,15 @@ class InputGroup:
         """
         Display visual/contextual feedback for all inputs in the group.
         """
-        pass
+        if self.score == -1:
+            for input in self.inputs:
+                if input.score == -1:
+                    input.display_feedback()
+                else:
+                    input.hide_feedback()
+        else:
+            for input in self.inputs:
+                input.display_feedback()
 
     def disable(self):
         """
