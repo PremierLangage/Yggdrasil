@@ -6,7 +6,7 @@ before == #|python|
 n = 3
 inputs = [MathInput() for _ in range(n)]
 prefixes = []
-for i in range(4):
+for i in range(n):
     z1 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
     z2 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
     s = latex(z1 * z2)
