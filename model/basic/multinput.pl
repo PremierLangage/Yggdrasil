@@ -46,6 +46,6 @@ process == #|py|
 
 evaluator == #|py|
 score = group.eval()
-group.display_feedback()
-group.disable()
+#group.display_feedback()
+#group.disable()
 ==
