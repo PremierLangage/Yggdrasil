@@ -78,3 +78,33 @@ score = input.eval()
 input.display_feedback()
 input.disable()
 ==
+
+style.dragdrop ==
+<style>
+.drag-drop-component {
+    position: relative;
+    cursor: move;
+    display: inline-flex;
+    padding: 0px;
+    box-sizing: border-box;
+    min-width: 3em;
+    min-height: 2em;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid transparent;
+    border-radius: 0px;
+    margin: 0px;
+}
+
+.drag-drop-component.droppable {
+    border: 0px solid #000;
+}
+
+.drag-drop-component.droppable.dnd-over,.drag-drop-component.droppable:hover{
+    border:0px solid #000
+}
+
+</style>
+==
