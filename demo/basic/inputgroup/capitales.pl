@@ -9,7 +9,7 @@ inputs[1].sol = "Rome"
 inputblock ==
 <div class="container">
   <div class="row py-1">
-    <div class="col-md-auto">
+    <div class="col-md-auto align-middle">
       France
     </div>
     <div class="col">
@@ -17,7 +17,7 @@ inputblock ==
     </div>
   </div>
   <div class="row py-1">
-    <div class="col-md-auto">
+    <div class="col-md-auto align-middle">
       Italie
     </div>
     <div class="col">
