@@ -8,7 +8,7 @@ inputs[1].sol = "Rome"
 
 inputblock ==
 <div class="container">
-  <div class="row py-1 align-items-center">
+  <div class="row py-2 align-items-center">
     <div class="col-md-auto">
         France :
     </div>
@@ -16,7 +16,7 @@ inputblock ==
       {{ inputs[0]|component }}
     </div>
   </div>
-  <div class="row py-1 align-items-center">
+  <div class="row py-2 align-items-center">
     <div class="col-md-auto">
       Italie :
     </div>
