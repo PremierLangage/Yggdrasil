@@ -1,4 +1,4 @@
-extends = /model/basic/numeric.pl
+extends = /model/basic/numinput.pl
 
 # deux variables 
 # question qui l'énoncé de l'exercice 
