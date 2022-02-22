@@ -36,13 +36,9 @@ sequence[0].question = "Quelle est la capitale de la France ?"
 sequence[0].input.sol = "Paris"
 sequence[0].solution = "Paris"
 
-sequence[1].question = "Quelle est la capitale de l'Italie ?"
-sequence[1].input.sol = "Rome"
-sequence[1].solution = "Paris"
-
-sequence[2].question = "Quelle est la superficie de la France ?"
-sequence[2].set_items(["150 000 km²", "550 000 km²", "1 000 000 km²"])
-sequence[2].set_sol(1)
+sequence[1].question = "Quelle est la superficie de la France ?"
+sequence[1].set_items(["150 000 km²", "550 000 km²", "1 000 000 km²"])
+sequence[1].set_sol(1)
 ==
 
 init ==
