@@ -11,7 +11,7 @@ extends = aux_mathinput.pl
 jinja_keys = ["intro","inputblock0"]
 
 before == #|python|
-from exmath import ExMath
+from stepmath import StepMath
 
 sequence = [ExMath(), ExMath()]
 sequence[0].question = "toto"
