@@ -1,0 +1,49 @@
+extends = /model/basic/basic.pl
+
+# Main keys
+
+question ==
+Quelle est la réponse ?
+==
+
+sol ==
+toto
+==
+
+# Input block
+
+inputblock == #|html|
+{{ input|component }}
+==
+
+# Before scripts
+
+before_scripts = ["importfunc", "initinput", "before", "process"]
+
+importfunc == #|py|
+from random import choice, choices, sample, shuffle
+from plrandom import randint, sampleint
+from plcsv import csv_choice, csv_sample, csv_col
+==
+
+initinput == #|py|
+from textinput import TextInput
+input = TextInput()
+==
+
+before == #|py|
+# This script can be used to generate
+# any keys (items, indsol, etc.)
+==
+
+process == #|py|
+input.sol = sol
+==
+
+# Evaluation scripts
+
+evaluator == #|py|
+score = input.eval()
+input.display_feedback()
+input.disable()
+==
