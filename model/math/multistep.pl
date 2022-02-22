@@ -24,6 +24,7 @@ from latex2sympy import latex2sympy
 ==
 
 jinja_keys = ["intro","inputblock0"]
+before_scripts = ["mathimport", "before"]
 
 before == #|python|
 from stepmath import StepMath
