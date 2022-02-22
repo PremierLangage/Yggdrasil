@@ -1,24 +1,10 @@
 extends = /model/basic/basic.pl
-@ /utils/components/scoring.py
-@ /utils/components/checkbox.py [checkbox.py]
 
-checkbox =: CheckboxGroup
-checkbox.decorator = Checkbox
+# Main keys
 
-before_scripts % ["importfunc", "before", "process"]
-
-importfunc ==
-from random import randint, choice, choices, sample, shuffle
+question ==
+Quelle est la réponse ?
 ==
-
-process ==
-from random import randint
-
-checkbox.fill_from_rw(right, wrong, nbitems, randint(minright, maxright))
-checkbox.scoring = scoring
-==
-
-scoring = AllOrNothing
 
 right ==
 bonjour
@@ -42,13 +28,45 @@ good-afternoon
 f()
 ==
 
-settings.feedback = lightscore
+scoring = AllOrNothing
 
-inputblock ==
-{{ checkbox|component }}
+shuffled = True
+
+# Input block
+
+inputblock == #|html|
+{{ input|component }}
 ==
 
-evaluator ==
-feedback = " "
-score = checkbox.eval()
+# Before scripts
+
+before_scripts = ["importfunc", "initinput", "before", "process"]
+
+importfunc == #|py|
+from random import choice, choices, sample, shuffle
+from plrandom import randint, sampleint
+from plcsv import csv_choice, csv_sample, csv_col
+==
+
+initinput == #|py|
+from checkbox import Checkbox
+input = Checkbox()
+==
+
+before == #|py|
+# This script can be used to generate
+# any keys (items, indsol, etc.)
+==
+
+process == #|py|
+input.fill_from_rw(right, wrong, nbitems, randint(minright, maxright))
+input.scoring = scoring
+==
+
+# Evaluation scripts
+
+evaluator == #|py|
+score = input.eval()
+input.display_feedback()
+input.disable()
 ==
