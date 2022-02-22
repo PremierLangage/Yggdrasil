@@ -73,11 +73,14 @@ for step in sequence:
 
 scorestep = sequence[istep].input.eval()
 sequence[istep].input.display_feedback()
-
+if isinstance(sequence[istep], StepMath):
+    sequence[istep].update(globals())
 
 if scorestep >= 0:
     scores.append(scorestep)
     scorestep = sequence[istep].input.disable()
+    if isinstance(sequence[istep], StepMath):
+        sequence[istep].update(globals())
     istep += 1
 
 if istep >= nbsteps:
@@ -85,8 +88,7 @@ if istep >= nbsteps:
     state = "final"
     score = sum(scores)/len(scores)
 
-if isinstance(step, StepMath):
-    step.update(globals())
+
 
 ==
 
