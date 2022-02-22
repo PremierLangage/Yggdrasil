@@ -37,7 +37,7 @@ def Question2(filename, DFU):
                     fofo = False
                     break
             if fofo:
-                print(num)
+                return (num)
 
 
 def Question1(filename, DFU):
@@ -55,7 +55,7 @@ def Question1(filename, DFU):
                     fofo = False
                     break
             if fofo:
-                print(num)
+                return (num)
 
 
 dFU = {
