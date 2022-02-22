@@ -20,7 +20,6 @@ else:
     indsol = 1
 
 sequence[1].input.fill(["Aucune racine réelle", "Une racine réelle double.", "Deux racines réelles distinctes"], indsol, False)
-
 ==
 
 intro ==
