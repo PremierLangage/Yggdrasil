@@ -1,4 +1,4 @@
-extends = /model/basic/numeric.pl
+extends = /model/basic/numinput.pl
 
 before ==
 k = randint(3, 6)
