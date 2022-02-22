@@ -10,6 +10,7 @@ P = a*x**2+b*x+c
 sequence = [StepMath(), StepRadio()]
 disc = b**2-4*a*c
 
+sequence[0].question = "Calculer le discriminant de ce trinôme."
 sequence[0].input.sol = disc
 
 if disc > 0:
