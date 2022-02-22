@@ -20,7 +20,7 @@ elif disc < 0:
 else:
     indsol = 1
 
-sequence[0].question = "Calculer le discriminant de ce trinôme."
+sequence[0].question = "Combien de racines réelles possède ce trinôme ?"
 sequence[1].input.fill(["Aucune racine réelle", "Une racine réelle double.", "Deux racines réelles distinctes"], indsol, False)
 ==
 
