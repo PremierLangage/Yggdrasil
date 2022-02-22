@@ -1,4 +1,4 @@
-extends = /model/basic/numeric.pl
+extends = /model/basic/numinput.pl
 
 question ==
 Donncer l'écriture décimale de la fraction 7/4.
