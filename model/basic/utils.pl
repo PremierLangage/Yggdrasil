@@ -10,7 +10,7 @@
 @ /utils/sympy/randsympy.py
 @ /utils/graphics/plmpl.py
 
-@ /model/basic/jinja_basic.py [jinja_env.py]
+@ /model/math/jinja_math.py [jinja_env.py]
 @ /model/basic/json_basic2.py [json_encoder.py]
 
 @ /utils/inputfields/radio.py
