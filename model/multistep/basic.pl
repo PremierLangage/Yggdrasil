@@ -3,10 +3,7 @@ extends = /model/basic/hackpage.pl
 @ /builder/before2.py [builder.py]
 @ /grader/evaluator2.py [grader.py]
 @ /utils/builderlib2.py [builderlib.py]
-@ /utils/steps/steps.py
 
-@ /utils/plrandom.py
-@ /utils/plcsv.py
 @ /model/basic/jinja_basic.py [jinja_env.py]
 @ /model/basic/json_basic2.py [json_encoder.py]
 
@@ -17,6 +14,11 @@ extends = /model/basic/hackpage.pl
 @ /utils/inputfields/dropgroup.py
 @ /utils/inputfields/inputgroup.py
 @ /utils/inputfields/scoring.py
+
+@ /utils/steps/steps.py
+
+@ /utils/plrandom.py
+@ /utils/plcsv.py
 
 before_scripts = ["importfunc", "init", "before", "process"]
 
