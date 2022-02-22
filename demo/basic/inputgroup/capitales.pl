@@ -10,7 +10,7 @@ inputs[0].sol = "Paris"
 inputs[1].sol = "Rome"
 ==
 
-inputblock ==
+inputblock2 ==
 <div class="container">
   <div class="row py-2 align-items-center">
     <div class="col-md-auto">
@@ -28,5 +28,12 @@ inputblock ==
       {{ inputs[1]|component }}
     </div>
   </div>
+</div>
+==
+
+inputblock ==
+<div style="display:flex;">
+  <div>France</div>
+  <div>{{ inputs[0]|component }}</div>
 </div>
 ==
