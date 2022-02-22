@@ -30,8 +30,6 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 before == #|python|
-from steps import StepTextInput
-
 sequence = [StepTextInput(), StepTextInput()]
 sequence[0].question = "Quelle est la capitale de la France ?"
 sequence[0].input.sol = "Paris"
@@ -44,6 +42,7 @@ sequence[1].solution = "Paris"
 
 init ==
 _state_ = "active"
+from steps import StepTextInput
 ==
 
 process ==
