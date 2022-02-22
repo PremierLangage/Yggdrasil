@@ -19,5 +19,4 @@ inputblock ==
   <div> Italie : </div>
   <div style="margin-left: 1em">{{ inputs[1]|component }}</div>
 </div>
-</div>
 ==
