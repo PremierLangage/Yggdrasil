@@ -32,8 +32,8 @@ inputblock2 ==
 ==
 
 inputblock ==
-<div style="display:flex;">
-  <div style="vertical-align: middle;">France</div>
+<div style="display:flex; align-items: center;">
+  <div>France</div>
   <div>{{ inputs[0]|component }}</div>
 </div>
 ==
