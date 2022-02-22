@@ -81,7 +81,7 @@ for step in sequence:
 
 if scorestep >= 0:
     scores.append(scorestep)
-    scorestep = sequence[istep].disable()
+    scorestep = sequence[istep].input.disable()
     istep += 1
 
 if istep >= nbsteps:
