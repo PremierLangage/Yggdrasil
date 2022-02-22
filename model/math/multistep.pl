@@ -21,6 +21,7 @@ extends = /model/basic/hackpage.pl
 @ /utils/inputfields/mathinput.py
 
 @ /utils/steps/steps.py
+@ /utils/steps/stepmath.py
 
 @ /utils/plrandom.py
 @ /utils/plcsv.py
