@@ -56,3 +56,26 @@ score = input.eval()
 input.display_feedback()
 input.disable()
 ==
+
+doc == #|python|
+{
+    "name": "checkbox",
+    "keys": {
+        "items": {
+            "type": "(str, list)",
+            "default": "",
+            "description": "Liste des items."
+        },
+        "indsol": {
+            "type": "list",
+            "default": [],
+            "description": "Indices des solutions dans la liste des items."
+        },
+        "shuffled": {
+            "type": "bool",
+            "default": True,
+            "description": "Valeur indiquant si les items seront mélangés."
+        }
+    }
+}
+==
