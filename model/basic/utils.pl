@@ -21,7 +21,6 @@
 @ /utils/inputfields/inputgroup.py
 @ /utils/inputfields/scoring.py
 @ /utils/inputfields/mathinput.py
-@ /utils/components/mathinput/mathinput.css.html
 @ /utils/components/mathinput/mathinput.html
 
 @ /utils/steps/steps.py
