@@ -22,7 +22,7 @@ class StepMath:
 
     def update(self, dic):
         if self.inputblock_tpl == "":
-            self.inputblock = Env.from_string(tpl).render(dic)
+            self.inputblock = self.input.render()
         else:
             self.inputblock = Env.from_string(self.inputblock_tpl).render(dic)
 
