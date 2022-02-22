@@ -10,7 +10,7 @@ class JSONEncoder(json.JSONEncoder):
             return {'__SymPy__': True, 'srepr': srepr(obj)}
         if isinstance(obj, MathInput):
             return vars(obj)
-        if isinstance(obj, ExMath):
+        if isinstance(obj, StepMath):
             dic = vars(obj)
             for k, v in dic.items():
                 if isinstance(v, dict):
