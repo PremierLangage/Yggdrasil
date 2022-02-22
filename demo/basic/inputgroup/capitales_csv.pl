@@ -25,7 +25,7 @@ inputblock == #|html|
 {% for i in range(n) %}
 <div style="display:flex; align-items: center; margin-bottom: 1em;">
   <div> {{ pays[i] }} : </div>
-  <div style="margin-left: 1em;"> {{ inputs[i]|component } }</div>
+  <div style="margin-left: 1em;"> {{ inputs[i]|component }}</div>
 </div>
 {% endfor %}
 </div>
