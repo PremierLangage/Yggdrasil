@@ -24,10 +24,10 @@ inputblock ==
 solution ==
 <div style="display:flex; align-items: center; margin-bottom: 1em;">
   <div> France : </div>
-  <div style="margin-left: 1em">{{ inputs[0].sol }}</div>
+  <div style="margin-left: 1em"> {{ inputs[0].sol }}</div>
 </div>
 <div style="display:flex; align-items: center; margin-bottom: 1em;">
   <div> Italie : </div>
-  <div style="margin-left: 1em">{{ inputs[1].sol }}</div>
+  <div style="margin-left: 1em"> {{ inputs[1].sol }}</div>
 </div>
 ==
