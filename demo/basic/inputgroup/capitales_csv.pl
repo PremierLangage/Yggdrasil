@@ -23,14 +23,10 @@ for i in range(n):
 inputblock == #|html|
 <div class="container">
 {% for i in range(n) %}
-  <div class="row py-2 align-items-center">
-    <div class="col-md-auto">
-        {{ pays[i] }}
-    </div>
-    <div class="col">
-      {{ inputs[i]|component }}
-    </div>
-  </div>
+<div style="display:flex; align-items: center; margin-bottom: 1em;">
+  <div> {{ pays[i] }} : </div>
+  <div style="margin-left: 1em;"> {{ inputs[i]|component } }</div>
+</div>
 {% endfor %}
 </div>
 ==
