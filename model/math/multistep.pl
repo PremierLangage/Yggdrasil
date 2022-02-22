@@ -65,8 +65,10 @@ toto : {{ sequence[0].input|mathinput }}
 
 
 evaluator ==
-for ex in sequence:
-    ex.input.value = answers.get(ex.input.id, '')
+from stepmath import StepMath
+for step in sequence:
+    if isinstance(step, StepMath):
+        ex.input.value = answers.get(ex.input.id, '')
 
 scorestep = sequence[istep].input.eval()
 
