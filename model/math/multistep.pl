@@ -72,12 +72,8 @@ for step in sequence:
         step.input.value = answers.get(step.input.id, '')
 
 scorestep = sequence[istep].input.eval()
-
 sequence[istep].input.display_feedback()
 
-for step in sequence:
-    if isinstance(step, StepMath):
-        step.update(globals())
 
 if scorestep >= 0:
     scores.append(scorestep)
@@ -88,6 +84,9 @@ if istep >= nbsteps:
     istep = nbsteps-1
     state = "final"
     score = sum(scores)/len(scores)
+
+if isinstance(step, StepMath):
+    step.update(globals())
 
 ==
 
