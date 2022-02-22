@@ -16,5 +16,4 @@ form =
 text = 
 
 tplpage =@ /model/tplpage/basic.html
-
-style.basic =@ basic2.css.html
+style.basic =@ /ùodel/css/basic.css.html
