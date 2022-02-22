@@ -36,4 +36,8 @@ inputblock ==
   <div>France : </div>
   <div style="margin-left: 1em">{{ inputs[0]|component }}</div>
 </div>
+<div style="display:flex; align-items: center;">
+  <div>Italie : </div>
+  <div style="margin-left: 1em">{{ inputs[0]|component }}</div>
+</div>
 ==
