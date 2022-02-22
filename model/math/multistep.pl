@@ -4,6 +4,7 @@ extends = messages_math.pl
 extends = aux_mathinput.pl
 
 text =
+form =
 
 jinja_keys = ["intro","inputblock0"]
 
