@@ -1,10 +1,10 @@
 from mathinput import MathInput
 from jinja_env import Env
 
-class ExMath:
+class StepMath:
 
     def __init__(self, **kwargs):
-        self.__Ex__ = "Math"
+        self.__Step__ = "Math"
         self.question = kwargs.get('question', '')
         self.solution = kwargs.get('solution', '')
         if 'input' in kwargs:
