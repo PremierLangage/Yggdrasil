@@ -7,7 +7,7 @@ b = randint(-4, 4, [0])
 c = randint(-4, 4, [0])
 P = a*x**2+b*x+c
 #lstsol = list(solveset(P,x,domain=S.Reals))
-sequence = [StepMathInput(), StepRadio()]
+sequence = [StepMath(), StepRadio()]
 disc = b**2-4*a*c
 
 sequence[0].input.sol = disc
