@@ -18,7 +18,7 @@ extends = /model/basic/hackpage.pl
 @ /utils/inputfields/inputgroup.py
 @ /utils/inputfields/scoring.py
 
-before_scripts = ["importfunc", "init", "before"]
+before_scripts = ["importfunc", "init", "before", "process"]
 
 jinja_keys = ["intro","inputblock0"]
 
@@ -40,15 +40,17 @@ sequence[0].solution = "Paris"
 sequence[1].question = "Quelle est la capitale de l'Italie ?"
 sequence[1].input.sol = "Rome"
 sequence[1].solution = "Paris"
-
-istep = 0
-nbsteps = len(sequence)
-score = -1
-scores = []
 ==
 
 init ==
 _state_ = "active"
+==
+
+process ==
+istep = 0
+nbsteps = len(sequence)
+score = -1
+scores = []
 ==
 
 title =
