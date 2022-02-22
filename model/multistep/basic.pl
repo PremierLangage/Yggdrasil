@@ -1,24 +1,6 @@
 extends = /model/basic/hackpage.pl
+extends = /model/basic/utils.pl
 
-@ /builder/before2.py [builder.py]
-@ /grader/evaluator2.py [grader.py]
-@ /utils/builderlib2.py [builderlib.py]
-
-@ /model/basic/jinja_basic.py [jinja_env.py]
-@ /model/basic/json_basic2.py [json_encoder.py]
-
-@ /utils/inputfields/radio.py
-@ /utils/inputfields/checkbox.py
-@ /utils/inputfields/textinput.py
-@ /utils/inputfields/numinput.py
-@ /utils/inputfields/dropgroup.py
-@ /utils/inputfields/inputgroup.py
-@ /utils/inputfields/scoring.py
-
-@ /utils/steps/steps.py
-
-@ /utils/plrandom.py
-@ /utils/plcsv.py
 
 before_scripts = ["importfunc", "init", "before", "process"]
 
