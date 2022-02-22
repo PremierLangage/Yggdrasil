@@ -37,7 +37,6 @@ class JSONDecoder(json.JSONDecoder):
             #for k, v in dic.items():
             #    if isinstance(v, dict):
             #        dic[k] = self.object_hook(v)
-
         if '__DropGroup__' in dic:
             return DropGroup(**dic)
         if '__InputGroup__' in dic:
