@@ -40,6 +40,7 @@ sequence[1].question = "Quelle est la capitale de l'Italie ?"
 sequence[1].input.sol = "Rome"
 sequence[1].solution = "Paris"
 
+sequence[2].question = "Quelle est la superficie de la France ?"
 
 ==
 
