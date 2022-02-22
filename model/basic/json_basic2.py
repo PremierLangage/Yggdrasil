@@ -33,15 +33,14 @@ class JSONDecoder(json.JSONDecoder):
             return sympify(dic['srepr'], evaluate=False)
         if '__MathInput__' in dic:
             return MathInput(**dic)
-        if '__Step__' in dic:
-            #for k, v in dic.items():
-            #    if isinstance(v, dict):
-            #        dic[k] = self.object_hook(v)
         if '__DropGroup__' in dic:
             return DropGroup(**dic)
         if '__InputGroup__' in dic:
             return InputGroup(**dic)
         if '__Step__' in dic:
+            #for k, v in dic.items():
+            #    if isinstance(v, dict):
+            #        dic[k] = self.object_hook(v)
             if dic['__Step__'] == 'Radio':
                 return StepRadio(**dic)
             elif dic['__Step__'] == 'Checkbox':
