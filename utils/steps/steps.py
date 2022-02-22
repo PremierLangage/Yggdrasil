@@ -57,6 +57,8 @@ class Step:
 class StepRadio(Step):
 
     def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.question = kwargs.get('question', '')
         self.__Step__ = "Radio"
         if 'input' in kwargs:
             self.input = kwargs['input']
