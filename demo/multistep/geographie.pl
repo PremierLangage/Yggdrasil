@@ -15,5 +15,3 @@ sequence[1].question = "Quelle est la superficie de la France ?"
 sequence[1].set_items(["150 000 km²", "550 000 km²", "1 000 000 km²"])
 sequence[1].set_sol(1)
 ==
-
-
