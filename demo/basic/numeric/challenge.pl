@@ -1,5 +1,4 @@
-
-extends = /model/basic/numeric.pl
+extends = /model/basic/numinput.pl
 
 before ==
 from math import gcd
