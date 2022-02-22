@@ -85,7 +85,7 @@ class Checkbox(Component):
                 nbwrong += 1
 
         if self.scoring == "AllOrNothing":
-            score = all_or_nothing(nbright, nbwrong)
+            score = all_or_nothing(nbright, nbwrong, len(self.sol))
         elif self.scoring == "RightMinusWrong":
             score = right_minus_wrong(nbright, nbwrong, nbsol=len(self.sol))          
         elif self.scoring == "CorrectItems":
