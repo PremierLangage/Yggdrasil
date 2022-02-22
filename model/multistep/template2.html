@@ -9,6 +9,7 @@ Question {{ i+1 }}
 </a>
 </div>
 <div class="collapse show" id="collapse{{ i }}">
+<div class="card-body">
 <div class="question">
 {{ sequence[i].question }}
 </div>
@@ -30,6 +31,7 @@ Solution
    <span class="ion-hide-md-down">Valider</span>
 </button>
 {% endif %}
+</div>
 </div>
 </div>
 {% endfor %}
