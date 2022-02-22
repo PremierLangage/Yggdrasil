@@ -51,6 +51,14 @@ score = -1
 scores = []
 ==
 
+process ==
+
+istep = 0
+nbsteps = len(sequence)
+score = -1
+scores = []
+==
+
 inputblock0 ==
 toto : {{ sequence[0].input|mathinput }}
 ==
