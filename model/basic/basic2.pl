@@ -6,6 +6,11 @@ extends = /model/basic/hackpage.pl
 
 @ /utils/plrandom.py
 @ /utils/plcsv.py
+@ /utils/sympy/evalsympy.py
+@ /utils/sympy/latex2sympy.py
+@ /utils/sympy/sympy2latex.py
+@ /utils/sympy/randsympy.py
+@ /utils/graphics/plmpl.py
 
 @ /model/basic/jinja_basic.py [jinja_env.py]
 @ /model/basic/json_basic2.py [json_encoder.py]
@@ -18,6 +23,8 @@ extends = /model/basic/hackpage.pl
 @ /utils/inputfields/inputgroup.py
 @ /utils/inputfields/scoring.py
 @ /utils/inputfields/mathinput.py
+@ /utils/components/mathinput/mathinput.py
+@ /utils/components/mathinput/mathinput.html
 
 @ /utils/steps/steps.py
 @ /utils/steps/stepmath.py
