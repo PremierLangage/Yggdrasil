@@ -24,11 +24,13 @@ from latex2sympy import latex2sympy
 ==
 
 jinja_keys = ["intro","inputblock0"]
-before_scripts = ["mathimport", "before"]
+before_scripts = ["mathimport", "stepimport", "before"]
 
-before == #|python|
+stepimport ==
+from steps import StepRadio
 from stepmath import StepMath
-
+==
+before == #|python|
 sequence = [StepMath(), StepMath()]
 sequence[0].question = "toto"
 sequence[0].input.sol = sqrt(3)
