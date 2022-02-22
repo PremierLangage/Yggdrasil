@@ -1,7 +1,7 @@
 extends = /model/multistep/basic.pl
 
 intro ==
-Deux questions.
+Voici une série de deux questions.
 ==
 
 before == #|python|
