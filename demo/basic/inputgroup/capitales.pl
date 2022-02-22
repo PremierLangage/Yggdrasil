@@ -32,7 +32,7 @@ inputblock2 ==
 ==
 
 inputblock ==
-<div style="display:flex; flex-direction: column;">
+<div style="display:flex; flex-direction: column; justify-content: space-between;">
 <div style="display:flex; align-items: center;">
   <div>France : </div>
   <div style="margin-left: 1em">{{ inputs[0]|component }}</div>
