@@ -16,6 +16,7 @@ inputblock == #|html|
 # Before scripts
 
 before_scripts = ["importfunc", "initinput", "before", "process"]
+jinja_keys = ["question", "inputblock", "solution"]
 
 importfunc == #|py|
 from random import choice, choices, sample, shuffle
