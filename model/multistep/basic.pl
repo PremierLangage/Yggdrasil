@@ -51,6 +51,7 @@ from steps import StepTextInput, StepRadio
 ==
 
 process ==
+
 istep = 0
 nbsteps = len(sequence)
 score = -1
