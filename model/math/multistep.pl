@@ -11,7 +11,7 @@ jinja_keys = ["intro","inputblock0"]
 before == #|python|
 from stepmath import StepMath
 
-sequence = [ExMath(), ExMath()]
+sequence = [StepMath(), StepMath()]
 sequence[0].question = "toto"
 sequence[0].input.sol = sqrt(3)
 sequence[0].solution = "solution"
