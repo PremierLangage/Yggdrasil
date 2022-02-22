@@ -19,7 +19,7 @@ elif disc < 0:
 else:
     indsol = 1
 
-sequence.input.fill(["Aucune racine réelle", "Une racine réelle double.", "Deux racines réelles distinctes"], indsol, False)
+sequence[1].input.fill(["Aucune racine réelle", "Une racine réelle double.", "Deux racines réelles distinctes"], indsol, False)
 
 ==
 
