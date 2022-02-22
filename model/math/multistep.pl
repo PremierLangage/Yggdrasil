@@ -4,7 +4,23 @@ extends = messages_math.pl
 extends = aux_mathinput.pl
 
 text =
-form =
+form = 
+
+latexsettings.ln_notation = True
+latexsettings.inv_trig_style = full
+
+mathimport ==
+from sympy import E, I, pi, oo
+from sympy import sqrt, Abs, sin, cos, tan, exp, ln
+from sympy import Symbol, symbols, var
+from sympy import sympify, simplify, Lambda
+from sympy import Integer, Rational, Poly, FiniteSet, Tuple, Interval
+from sympy import integrate
+from random import choice, choices, sample, shuffle
+from plrandom import randint, sampleint
+from sympy2latex import latex
+from latex2sympy import latex2sympy
+==
 
 jinja_keys = ["intro","inputblock0"]
 
