@@ -8,8 +8,8 @@ extends = /model/basic/hackpage.pl
 @ /grader/evaluator2.py [grader.py]
 @ /utils/builderlib2.py [builderlib.py]
 
-@ /model/basic/jinja_math.py [jinja_env.py]
-@ /model/basic/json_math.py [json_encoder.py]
+@ /model/math/jinja_math.py [jinja_env.py]
+@ /model/math/json_math.py [json_encoder.py]
 
 @ /utils/inputfields/radio.py
 @ /utils/inputfields/checkbox.py
