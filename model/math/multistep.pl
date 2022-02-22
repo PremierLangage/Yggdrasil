@@ -4,6 +4,7 @@ extends = messages_math.pl
 extends = aux_mathinput.pl
 
 text =
+
 form = 
 
 latexsettings.ln_notation = True
