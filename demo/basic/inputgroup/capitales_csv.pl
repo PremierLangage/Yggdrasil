@@ -33,9 +33,9 @@ inputblock == #|html|
 solution == #|html|
 <div style="margin-top: 0.5em;">
 {% for i in range(n) %}
-<div style="display:flex; align-items: center; margin-bottom: 1em;">
+<div style="display:flex; align-items: center; margin-bottom: 0.5em;">
   <div> {{ pays[i] }} : </div>
-  <div style="margin-left: 0.5em;"> {{ capitales[i] }}</div>
+  <div style="margin-left: 1em;"> {{ capitales[i] }}</div>
 </div>
 {% endfor %}
 </div>
