@@ -3,6 +3,7 @@ extends = /model/basic/hackpage.pl
 extends = messages_math.pl
 extends = aux_mathinput.pl
 
+text =
 
 jinja_keys = ["intro","inputblock0"]
 
