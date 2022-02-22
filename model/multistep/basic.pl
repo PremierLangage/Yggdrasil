@@ -22,8 +22,7 @@ extends = /model/basic/hackpage.pl
 
 before_scripts = ["importfunc", "init", "before", "process"]
 
-jinja_keys = ["intro","inputblock0"]
-
+jinja_keys = ["intro", "inputblock0"]
 
 importfunc == #|python|
 from random import choice, choices, sample, shuffle
