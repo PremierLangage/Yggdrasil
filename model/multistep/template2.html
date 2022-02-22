@@ -1,5 +1,16 @@
+<div class="card">
+<div class="card-header p-1">
+<a class="text-primary" style="display: block;" data-toggle="collapse" href="#collapseintro" role="button" aria-expanded="true" aria-controls="collapse{{ i }}">
+Introduction
+</a>
+</div>
+<div class="collapse show" id="collapseintro">
+<div class="card-body">
 <div class="question">
 {{ intro }}
+</div>
+</div>
+</div>
 </div>
 {% for i in range(istep+1) %}
 <div class="card">
