@@ -10,13 +10,14 @@ before == #|py|
 n = 4
 
 inputs = [TextInput() for _ in range(n)]
-pays = []
+pays, capitales = [], []
 
 f = open('pays_europe.csv')
 datasample = csv_sample(f, n)
 
 for i in range(n):
     inputs[i].sol = datasample[i]['capitale']
+    capitales.append(datasample[i]['capitale'])
     pays.append(datasample[i]['pays'])
 ==
 
