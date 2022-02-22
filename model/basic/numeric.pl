@@ -1,7 +1,12 @@
 extends = /model/basic/basic.pl
 
-input =: Input
-input.type = number
+# Main keys
+
+question ==
+Quelle est la réponse ?
+==
+
+# Input block
 
 prefix ==
 Réponse :
@@ -20,25 +25,39 @@ inputblock ==
 </div>
 ==
 
-getans ==
-ans = input.value
-==
-
-evaluator ==
-if ans == sol:
-    score = 100
-else:
-    score = 0
-==
-
-evalprocess ==
-if score == 100:
-    input.suffix = r'<i class="fas fa-check" style="color: green"></i>'
-elif score >= 0:
-    input.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
-input.disabled = True
-==
-
 solution ==
 La solution est {{ sol }}.
+==
+
+
+# Before scripts
+
+before_scripts = ["importfunc", "initinput", "before", "process"]
+
+importfunc == #|py|
+from random import choice, choices, sample, shuffle
+from plrandom import randint, sampleint
+from plcsv import csv_choice, csv_sample, csv_col
+==
+
+initinput == #|py|
+from textinput import TextInput
+input = TextInput()
+==
+
+before == #|py|
+# This script can be used to generate
+# any keys (items, indsol, etc.)
+==
+
+process == #|py|
+input.sol = sol
+==
+
+# Evaluation scripts
+
+evaluator == #|py|
+score = input.eval()
+input.display_feedback()
+input.disable()
 ==
