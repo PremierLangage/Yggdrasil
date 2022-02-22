@@ -1,7 +1,7 @@
 import json, jsonpickle
 from sympy import srepr, Basic, Matrix, sympify
 from mathinput import MathInput
-from exmath import ExMath
+from stepmath import StepMath
 
 class JSONEncoder(json.JSONEncoder):
 
