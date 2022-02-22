@@ -1,4 +1,4 @@
-extends = /model/basic/numeric.pl
+extends = /model/basic/numinput.pl
 
 
 # Creation d'exercice 
