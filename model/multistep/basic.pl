@@ -41,8 +41,8 @@ sequence[1].input.sol = "Rome"
 sequence[1].solution = "Paris"
 
 sequence[2].question = "Quelle est la superficie de la France ?"
-sequence[2].input.set_sol(0)
-sequence[2].input.set_items(["100 000 km²", "500 000 km²", "1 000 000 km²"])
+sequence[2].set_sol(0)
+sequence[2].set_items(["100 000 km²", "500 000 km²", "1 000 000 km²"])
 ==
 
 init ==
