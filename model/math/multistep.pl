@@ -68,7 +68,7 @@ evaluator ==
 from stepmath import StepMath
 for step in sequence:
     if isinstance(step, StepMath):
-        ex.input.value = answers.get(ex.input.id, '')
+        step.input.value = answers.get(step.input.id, '')
 
 scorestep = sequence[istep].input.eval()
 
