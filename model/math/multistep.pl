@@ -66,6 +66,7 @@ toto : {{ sequence[0].input|mathinput }}
 
 evaluator ==
 from stepmath import StepMath
+
 for step in sequence:
     if isinstance(step, StepMath):
         step.input.value = answers.get(step.input.id, '')
@@ -74,8 +75,9 @@ scorestep = sequence[istep].input.eval()
 
 sequence[istep].input.display_feedback()
 
-for ex in sequence:
-    ex.update(globals())
+for step in sequence:
+    if isinstance(step, StepMath):
+        step.update(globals())
 
 if scorestep >= 0:
     scores.append(scorestep)
