@@ -127,10 +127,10 @@ for item in group.items:
         if item['content'] == str(final_value):
             item['css'] = 'success-border'
             score = 100
-            feedback = '<span class="success-state animated pulse infinite" style="padding: 1em;">Bonne réponse</span>'
+            feedback = '<span class="success-state animated pulse infinite" style="padding: 1em;">Bonne r&eacute;ponse</span>'
         else:
             item['css'] = 'error-border'
-            feedback = '<span class="error-state animated pulse infinite" style="padding: 1em;">Mauvaise réponse</span>'
+            feedback = '<span class="error-state animated pulse infinite" style="padding: 1em;">Mauvaise r&eacute;ponse</span>'
     elif item['content'] == str(final_value):
         item['css'] = 'success-border animated pulse infinite'
 
