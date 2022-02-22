@@ -41,8 +41,8 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from textinput import TextInput
-input = TextInput()
+from numinput import NumInput
+input = NumInput()
 ==
 
 before == #|py|
