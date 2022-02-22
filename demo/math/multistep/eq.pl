@@ -12,7 +12,6 @@ disc = b**2-4*a*c
 
 sequence[0].input.sol = disc
 
-radio = Radio()
 if disc > 0:
     indsol = 2
 elif disc < 0:
