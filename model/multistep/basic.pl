@@ -71,7 +71,6 @@ Début de la série
 
 
 evaluator ==
-
 scorestep = sequence[istep].eval()
 sequence[istep].display_feedback()
 
@@ -83,6 +82,5 @@ if scorestep >= 0:
 if istep >= nbsteps:
     istep = nbsteps-1
     state = "final"
-    score = sum(scores)/len(scores)
-
+    score = int(sum(scores)/len(scores))
 ==
