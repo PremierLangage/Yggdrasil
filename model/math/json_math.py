@@ -28,10 +28,10 @@ class JSONDecoder(json.JSONDecoder):
             return sympify(dic['srepr'], evaluate=False)
         if '__MathInput__' in dic:
             return MathInput(**dic)
-        if '__Ex__' in dic:
+        if '__Step__' in dic:
             #for k, v in dic.items():
             #    if isinstance(v, dict):
             #        dic[k] = self.object_hook(v)
-            if dic['__Ex__'] == 'Math':
-                return ExMath(**dic)
+            if dic['__Step__'] == 'Math':
+                return StepMath(**dic)
         return dic
