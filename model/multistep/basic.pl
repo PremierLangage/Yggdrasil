@@ -43,7 +43,7 @@ sequence[1].solution = "Paris"
 
 init ==
 _state_ = "active"
-from steps import StepTextInput
+from steps import StepTextInput, StepRadio
 ==
 
 process ==
