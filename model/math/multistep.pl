@@ -1,7 +1,3 @@
-extends = /model/math/math.pl
-extends = /model/math/messages_math.pl
-extends = /model/math/aux_mathinput.pl
-
 extends = /model/basic/utils.pl
 extends = /model/basic/hackpage.pl
 extends = messages_math.pl
