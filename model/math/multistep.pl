@@ -24,7 +24,7 @@ from latex2sympy import latex2sympy
 ==
 
 jinja_keys = ["intro","inputblock0"]
-before_scripts = ["mathimport", "stepimport", "before"]
+before_scripts = ["mathimport", "stepimport", "before", "process"]
 
 stepimport ==
 from steps import StepRadio
