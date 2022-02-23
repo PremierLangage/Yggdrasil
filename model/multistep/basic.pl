@@ -13,7 +13,7 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 before == #|python|
-sequence = [StepTextInput(), StepTextInput(), StepRadio()]
+sequence = [StepTextInput(), StepRadio()]
 sequence[0].question = "Quelle est la capitale de la France ?"
 sequence[0].input.sol = "Paris"
 sequence[0].solution = "Paris"
