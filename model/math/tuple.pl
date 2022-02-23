@@ -7,5 +7,5 @@ input_type = "tuple"
 checksize = False
 
 evalparam ==
-input.evalparam = {}
+input.evalparam = {'checksize':checksize}
 ==
