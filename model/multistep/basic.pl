@@ -42,10 +42,10 @@ form =
 
 text = 
 
-tplpage =@ /model/multistep/template2.html
+tplpage =@ /model/tplpage/multistep.html
 
-style.basic =@ /model/basic/basic2.css.html
-style.series =@ /model/quiz/series.css.html
+style.basic =@ /model/css/basic.css.html
+
 
 
 intro ==
