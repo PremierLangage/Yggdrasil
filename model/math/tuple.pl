@@ -4,6 +4,7 @@ extends = /model/math/input.pl
 
 # Evaluation parameters
 input_type = "tuple"
+checksize = False
 
 evalparam ==
 input.evalparam = {}
