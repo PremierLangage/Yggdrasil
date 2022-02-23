@@ -1,4 +1,4 @@
-extends = /model/math/frac.pl
+extends = /model/math/expr.pl
 
 title = Addition de fractions
 
@@ -17,6 +17,6 @@ expr = r"\frac{ %d }{ %d } + \frac{ %d }{ %d }" % (f[0][0], f[0][1], f[1][0], f[
 sol = Rational(*f[0]) + Rational(*f[1])
 ==
 
-text ==
+question ==
 Calculer l'expression $! \displaystyle {{expr}} !$ en l'écrivant sous la forme d'un entier ou d'une fraction irréductible.
 ==
