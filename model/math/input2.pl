@@ -70,7 +70,7 @@ if score >= 0:
   input.disable()
 ==
 
-tplpage =@ /model/math/template2.html
+tplpage =@ /model/tplpage/basic.html
 
 
 inputblock ==
