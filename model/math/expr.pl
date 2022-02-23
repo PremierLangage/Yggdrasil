@@ -1,7 +1,7 @@
 # Model for a single math input field
 # with an evaluation as an expression
 
-extends = /model/math/input2.pl
+extends = /model/math/input.pl
 
 # Evaluation parameters
 input_type = "expr"
