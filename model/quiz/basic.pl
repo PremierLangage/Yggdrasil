@@ -22,7 +22,7 @@ text =
 
 tplpage =@ /model/quiz/template.html
 
-style.basic =@ /model/basic/basic2.css.html
+style.basic =@ /model/css/basic.css.html
 style.series =@ /model/tplpage/quiz.css.html
 
 
