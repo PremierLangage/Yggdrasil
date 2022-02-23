@@ -9,7 +9,6 @@ checkratsimp = True
 symbol_dict = {'e': E}
 wobracket = False
 
-
 evalparam ==
 from sympy import sympify
 input.evalparam = {'wobracket': wobracket, 'checkratsimp': checkratsimp, 'local_dict': sympify(symbol_dict)}
