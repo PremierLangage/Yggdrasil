@@ -15,7 +15,7 @@ def fig2svg(fig, transparent=True, **kwargs):
         if line.startswith('<svg'):
             lines[i] = "<svg viewBox='0 0 %s %s'>" % (width, height)
             break
-    return "\n".join(lines)
+    return "\n".join(lines[i:])
 
 def easyplot(fig, f, xmin, xmax, npts=100, **kwargs):
     """Plot a function in a matplotlib figure.
