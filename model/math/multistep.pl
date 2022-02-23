@@ -93,3 +93,4 @@ if istep >= nbsteps:
 ==
 
 tplpage =@ /model/multistep/template2.html
+style.basic =@ /model/css/basic.css.html
