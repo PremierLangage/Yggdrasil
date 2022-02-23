@@ -20,7 +20,7 @@ form =
 
 text = 
 
-tplpage =@ /model/quiz/template.html
+tplpage =@ /model/tplpage/quiz.html
 
 style.basic =@ /model/css/basic.css.html
 style.series =@ /model/tplpage/quiz.css.html
