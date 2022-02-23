@@ -33,11 +33,10 @@ Début de la série
 
 final ==
 scores = []
-for ex in sequence:
-    scores.append(ex.eval())
-    ex.disable()
-    ex.display_feedback()
-    ex.input.display_feedback()
+for step in sequence:
+    scores.append(step.eval())
+    step.disable()
+    step.display_feedback()
 
 score = sum(scores) // len(scores)
 _state_ = "grade"
