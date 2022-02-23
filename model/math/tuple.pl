@@ -5,7 +5,9 @@ extends = /model/math/input.pl
 # Evaluation parameters
 input_type = "tuple"
 checksize = False
+symbol_dict = {'e': E}
 
 evalparam ==
-input.evalparam = {'checksize':checksize}
+from sympy import sympify
+input.evalparam = {'checksize':checksize, 'local_dict': sympify(symbol_dict)}
 ==
