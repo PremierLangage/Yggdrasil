@@ -1,7 +1,7 @@
 # Model for a single math input field
 # with an evaluation as a polynom
 
-extends = /model/math/input2.pl
+extends = /model/math/input.pl
 
 # Evaluation parameters
 input_type = "poly"
