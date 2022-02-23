@@ -26,8 +26,6 @@ for i, q in enumerate(list_questions):
     sequence[i].question = q['text']
     if 'ordered' not in q['options']:
         sequence[i].input.shuffle()
-
-_state_ = "active"
 ==
 
 intro ==
