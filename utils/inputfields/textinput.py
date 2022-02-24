@@ -9,12 +9,18 @@ class TextInput(Component):
         super().__init__(**kwargs)
 
     def set_sol(self, sol):
+        """
+        Set the solution
+        """
         if isinstance(sol, str):
             self.sol = sol.splitlines()
         elif isinstance(sol, lst):
             self.sol = sol
 
     def eval(self):
+        """
+        Evaluate the input field.
+        """
         if any([samestrings(self.value, item, **self.evalparam) for item in self.sol]):
             self.score = 100
         else:
@@ -22,15 +28,24 @@ class TextInput(Component):
         return self.score      
 
     def display_feedback(self):
+        """
+        Display the visual feedback of the input field.
+        """
         if self.score == 100:
             self.suffix = r'<i class="fas fa-check" style="color: var(--success)"></i>'
         elif self.score >= 0:
             self.suffix = r'<i class="fas fa-times" style="color: var(--danger)"></i></i>'
 
     def hide_feedback(self):
+        """
+        Hide the visual feedback of the input field.
+        """
         self.suffix = ""
 
     def disable(self):
+        """
+        Disable the input field.
+        """
         self.disabled = True
 
     def render(self):
@@ -43,6 +58,9 @@ class TextInput(Component):
 
 
 def samestrings(str1, str2, diffmeasure="EditDist", tol=0, casesens=False):
+    """
+    Check if two strings are similar.
+    """
     if not casesens:
         str1 = str1.casefold()
         str2 = str2.casefold()
@@ -53,7 +71,9 @@ def samestrings(str1, str2, diffmeasure="EditDist", tol=0, casesens=False):
 
 
 def edit_distance(s1, s2):
-    """Return the edit distance between two strings."""
+    """
+    Return the edit distance between two strings.
+    """
     if len(s1) > len(s2):
         s1, s2 = s2, s1
     distances = range(len(s1) + 1)
