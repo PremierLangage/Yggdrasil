@@ -1,5 +1,4 @@
 extends = /model/basic/basic.pl
-@ /utils/pltext.py
 
 casesens = False
 
