@@ -50,7 +50,7 @@ evaluator == #|py|
 def average(lst):
     return sum(lst)/len(lst)
 
-# evaluation
+# Evaluate all input fields
 for input in inputs:
     input.eval()
     
