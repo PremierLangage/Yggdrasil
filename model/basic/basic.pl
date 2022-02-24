@@ -3,7 +3,7 @@ extends = /model/basic/utils.pl
 
 
 before_scripts = ["importfunc", "initinput", "before", "process"]
-eval_scripts = ["getans", "evaluator", "evalprocess"]
+eval_scripts = ["evaluator", "evalprocess"]
 
 importfunc == #|python|
 from random import choice, choices, sample, shuffle
