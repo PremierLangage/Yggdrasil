@@ -24,8 +24,13 @@ elif ans < a or ans > b:
     feedback = f"Ce nombre n'est pas compris entre {a} et {b}."
 else:
     score = 100
-input.score = score
-input.feedback = feedback
+
+if score in locals():
+    input.score = score
+    if feedback in locals():
+        input.feedback = feedback
+else:
+    input.eval()
 input.display_feedback()
 input.disable()
 ==
