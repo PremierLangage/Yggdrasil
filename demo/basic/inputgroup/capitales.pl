@@ -26,5 +26,5 @@ France : Paris ; Italie : Rome.
 ==
 
 test.group ==
-{{ test|component }}
+{{ test|toto }}
 ==
