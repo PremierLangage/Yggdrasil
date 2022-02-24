@@ -80,3 +80,22 @@ function onReadyPL(nodes) {
 }
 </script>
 ==
+
+javascript.popover ==#|js|
+<script>
+// Active les popovers.
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+// Fonction appelée quand l'exercice est soumis (bouton valider).
+function onBeforeSubmitPL() {
+  // Cache les popovers avant que les éléments correspondants soient détruits du DOM.
+  $(function () {
+    $('[data-toggle="popover"]').popover('hide')
+  });
+
+  return true;
+}
+</script>
+==
