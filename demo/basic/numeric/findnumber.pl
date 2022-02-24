@@ -25,7 +25,7 @@ elif ans < a or ans > b:
 else:
     score = 100
 input.score = score
-input.feedback = "Erreur"
+input.feedback = feedback
 input.display_feedback()
 input.disable()
 ==
