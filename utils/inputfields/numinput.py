@@ -18,7 +18,7 @@ class NumInput(Component):
         return self.score
 
     def display_feedback(self):
-        msg = input.feedback
+        msg = self.feedback
         if self.score == 100:
             self.suffix = r'<i class="fas fa-check" style="color: var(--success)"></i>'
         elif self.score >= 0:
