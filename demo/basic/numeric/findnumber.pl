@@ -32,8 +32,6 @@ if 'score' in locals():
 else:
     input.eval()
 
-input.score = score
-input.feedback = feedback
 input.display_feedback()
 input.disable()
 ==
