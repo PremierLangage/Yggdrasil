@@ -47,20 +47,19 @@ process == #|py|
 # Evaluation scripts
 
 evaluator == #|py|
-def average(lst):
-    return sum(lst)//len(lst)
 
 # Evaluate all input fields
 for input in inputs:
     input.eval()
-    
+
+# Compute score   
 scores = [input.score for input in inputs]
 if -1 in scores:
     score = -1
 else:
-    score = average(scores)
+    score = sum(lst)//len(lst)
 
-# display feedback
+# Display feedback
 if score == -1:
     for input in inputs:
         if input.score == -1:
@@ -71,7 +70,7 @@ else:
     for input in inputs:
         input.display_feedback()
 
-# disable
+# Disable inputfields
 if score != -1:
     for input in inputs:
         input.disable()
