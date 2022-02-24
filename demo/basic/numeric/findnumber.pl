@@ -27,7 +27,7 @@ else:
 input.score = score
 input.feedback = "Erreur"
 input.display_feedback()
-input.disable()
+input.disabled = True
 ==
 
 javascript.popover ==
