@@ -22,7 +22,8 @@ class NumInput(Component):
             self.suffix = r'<i class="fas fa-check" style="color: var(--success)"></i>'
         elif self.score >= 0:
             self.suffix = r'<i class="fas fa-times" style="color: var(--danger)"></i></i>'
-
+            self.suffix = rf"""<i class="fas fa-times" style="margin-left: 0.5em; color: #E53935; cursor: pointer;" data-toggle="popover" data-placement="bottom" data-content="{msg}"></i>"""
+    
     def hide_feedback(self):
         self.suffix = ""
 
