@@ -67,3 +67,29 @@ score = input.eval()
 input.display_feedback()
 input.disable()
 ==
+
+style.input ==
+<style>
+.mat-form-field-wrapper{
+  margin: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-infix {
+    padding-top: 0.8em !important;
+    padding-bottom: 0.6em !important;
+}
+</style>
+==
+
+
+macros ==
+{% macro audio_button(sourcefile) -%}
+<button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button>
+<audio id="Audio" style="display:none" src="{{ sourcefile }}"></audio> 
+<script>
+    var x = document.getElementById("Audio"); 
+    function playAudio() {x.play();} 
+</script>
+{%- endmacro %}
+==
