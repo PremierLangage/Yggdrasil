@@ -37,7 +37,7 @@ inputblock ==
 
 # Before scripts
 
-before_scripts = ["importfunc", "initinput", "before", "process"]
+before_scripts = ["importfunc", "initinput", "before", "process", "render"]
 
 importfunc == #|py|
 from random import choice, choices, sample, shuffle
