@@ -7,14 +7,18 @@ class TextInput(Component):
         self.decorator = 'TextInput'
         super().__init__(**kwargs)
 
+    def set_sol(self, sol):
+        if isinstance(sol, str):
+            self.sol = sol.splitlines()
+        elif isinstance(sol, lst):
+            self.sol = sol
+
     def eval(self):
-    # TODO : reprendre les modes d'évaluations
-    # plus sophistiqués du modèle input
-        if self.sol == self.value:
+        if any([samestrings(ans, item, diffmeasure=diffmeasure, tol=tol) for item in _sol_]):
             self.score = 100
         else:
             self.score = 0
-        return self.score
+        return self.score      
 
     def display_feedback(self):
         if self.score == 100:
@@ -35,3 +39,13 @@ class TextInput(Component):
         selector = self.selector
         cid = self.cid
         return f"<{selector} cid='{cid}'></{selector}>"
+
+
+def samestrings(str1, str2, diffmeasure="EditDist", tol=0, casesens=False):
+    if not casesens:
+        str1 = str1.casefold()
+        str2 = str2.casefold()
+    if diffmeasure == "EditRatio":
+        return edit_distance(str1, str2)/len(str2) <= tol
+    else:
+        return edit_distance(str1, str2) <= tol
