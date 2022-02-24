@@ -4,7 +4,7 @@ title ==
 Chimie
 ==
 
-text ==
+question ==
 Quel élément chimique a pour symbole **O** ?
 ==
 
