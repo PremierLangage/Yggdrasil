@@ -31,6 +31,9 @@ if score in globals():
         input.feedback = feedback
 else:
     input.eval()
+
+input.score = score
+input.feedback = feedback
 input.display_feedback()
 input.disable()
 ==
