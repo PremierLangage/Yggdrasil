@@ -27,6 +27,9 @@ class NumInput(Component):
         self.suffix = ""
 
     def disable(self):
+        """
+        Disable the input field.
+        """
         self.disabled = True
 
     def render(self):
