@@ -42,41 +42,7 @@ style.input ==
 ==
 
 evaluator ==
-from pltext import edit_distance
-
-def samestrings(str1, str2, diffmeasure="EditDist", tol=0, casesens=False):
-    if not casesens:
-        str1 = str1.casefold()
-        str2 = str2.casefold()
-    if diffmeasure == "EditRatio":
-        return edit_distance(str1, str2)/len(str2) <= tol
-    else:
-        return edit_distance(str1, str2) <= tol
-
-if isinstance(sol, str):
-    _sol_ = sol.splitlines()
-elif isinstance(sol, lst):
-    _sol_ = sol
-
-solution = _sol_[0]
-
-if any([samestrings(ans, item, diffmeasure=diffmeasure, tol=tol) for item in _sol_]):
-    score = 100
-else:
-    score = 0
-==
-
-getans ==
-ans = input.value
-==
-
-evalprocess ==
-if score == 100:
-    input.suffix = r'<i class="fas fa-check" style="color: green"></i>'
-elif score >= 0:
-    input.suffix = r'<i class="fas fa-times" style="color: crimson"></i></i>'
-if score != -1:
-    input.disabled = True
+input.eval()
 ==
 
 macros ==
