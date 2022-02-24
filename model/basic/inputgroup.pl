@@ -58,7 +58,7 @@ scores = [input.score for input in inputs]
 if -1 in scores:
     score = -1
 else:
-    score = int(average(scores))
+    score = average(scores)
 
 # display feedback
 if score == -1:
