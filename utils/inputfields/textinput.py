@@ -56,7 +56,6 @@ class TextInput(Component):
         cid = self.cid
         return f"<{selector} cid='{cid}'></{selector}>"
 
-
 def samestrings(str1, str2, diffmeasure="EditDist", tol=0, casesens=False):
     """
     Check if two strings are similar.
@@ -68,7 +67,6 @@ def samestrings(str1, str2, diffmeasure="EditDist", tol=0, casesens=False):
         return edit_distance(str1, str2)/len(str2) <= tol
     else:
         return edit_distance(str1, str2) <= tol
-
 
 def edit_distance(s1, s2):
     """
