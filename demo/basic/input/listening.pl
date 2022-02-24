@@ -1,4 +1,4 @@
-extends = /model/basic/input.pl
+extends = /model/basic/textinput.pl
 
 audiofile =$ /demo/media/english_sentence.mp3
 
