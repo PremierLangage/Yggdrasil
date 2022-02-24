@@ -27,7 +27,7 @@ else:
 
 if score in globals():
     input.score = score
-    if feedback in locals():
+    if feedback in globals():
         input.feedback = feedback
 else:
     input.eval()
