@@ -14,4 +14,4 @@ Oxygène
 
 diffmeasure = EditDist
 
-tol = 1
+tol = 2
