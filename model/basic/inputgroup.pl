@@ -47,7 +47,6 @@ process == #|py|
 # Evaluation scripts
 
 evaluator == #|py|
-
 # Evaluate all input fields
 for input in inputs:
     input.eval()
@@ -60,17 +59,17 @@ else:
     score = sum(lst)//len(lst)
 
 # Display feedback
-if score == -1:
+if score != -1:
+    for input in inputs:
+        input.display_feedback()
+else:
     for input in inputs:
         if input.score == -1:
             input.display_feedback()
         else:
             input.hide_feedback()
-else:
-    for input in inputs:
-        input.display_feedback()
 
-# Disable inputfields
+# Disable input fields
 if score != -1:
     for input in inputs:
         input.disable()
