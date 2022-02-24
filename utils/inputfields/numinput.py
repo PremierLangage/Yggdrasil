@@ -34,6 +34,7 @@ class NumInput(Component):
         Disable the input field.
         """
         self.type = 'text' # doesn't work when the type is 'number'
+        self.value = str(self.value)
         self.disabled = True
 
     def render(self):
