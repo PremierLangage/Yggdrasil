@@ -11,6 +11,7 @@ Donner un entier multiple de {{k}}, compris entre {{ a }} et {{ b }} (inclus).
 ==
 
 evaluator ==
+ans = input.value
 if not isinstance(ans, int):
     score = -1
     feedback = "La réponse doit être un entier."
@@ -22,4 +23,6 @@ elif ans < a or ans > b:
     feedback = f"Ce nombre n'est pas compris entre {a} et {b}."
 else:
     score = 100
+input.feedback = rf"""<i class="fas fa-times" style="margin-left: 0.5em; color: #E53935; cursor: pointer;" data-toggle="popover" data-placement="bottom" data-content="{msg}"></i>"""
+input.display_feedback()
 ==
