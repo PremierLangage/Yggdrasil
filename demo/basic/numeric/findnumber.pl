@@ -1,7 +1,5 @@
 extends = /model/basic/numinput.pl
 
-extends = /model/math/aux_mathinput.pl
-
 before ==
 k = randint(3, 6)
 a = randint(25, 75)
@@ -29,4 +27,23 @@ else:
 input.score = score
 input.feedback = "Erreur"
 input.display_feedback()
+==
+
+javascript.mathinput ==
+<script>
+// Active les popovers.
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+// Fonction appelée quand l'exercice est soumis (bouton valider).
+function onBeforeSubmitPL() {
+  // Cache les popovers avant que les éléments correspondants soient détruits du DOM.
+  $(function () {
+    $('[data-toggle="popover"]').popover('hide')
+  });
+
+  return true;
+}
+</script>
 ==
