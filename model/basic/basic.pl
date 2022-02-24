@@ -17,7 +17,7 @@ render == #|py|
 from jinja_env import Env
 for key in jinja_keys:
     if key in globals():
-        key = Env.from_string(macros + key).render(globals())
+        key = Env.from_string(key).render(globals())
 ==
 
 title =
