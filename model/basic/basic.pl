@@ -2,7 +2,7 @@ extends = /model/basic/hackpage.pl
 extends = /model/basic/utils.pl
 
 
-before_scripts = ["importfunc", "initinput", "before", "process", "render"]
+before_scripts = ["importfunc", "initinput", "before", "process"]
 eval_scripts = ["evaluator", "evalprocess"]
 jinja_keys = ["question", "inputblock", "solution"]
 
@@ -10,14 +10,6 @@ importfunc == #|python|
 from random import choice, choices, sample, shuffle
 from plrandom import randint, sampleint
 from plcsv import csv_choice, csv_sample, csv_col
-==
-
-
-render == #|py|
-from jinja_env import Env
-for key in jinja_keys:
-    if key in globals():
-        key = Env.from_string(key).render(globals())
 ==
 
 title =
