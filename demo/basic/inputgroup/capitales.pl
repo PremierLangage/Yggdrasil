@@ -24,3 +24,7 @@ inputblock == #|html|
 solution ==
 France : Paris ; Italie : Rome.
 ==
+
+test.group ==
+{{ test|component }}
+==
