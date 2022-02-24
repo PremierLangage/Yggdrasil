@@ -25,6 +25,4 @@ solution ==
 France : Paris ; Italie : Rome.
 ==
 
-test.group ==
-{{ test|toto }}
-==
+test ="{{ test|toto }}"
