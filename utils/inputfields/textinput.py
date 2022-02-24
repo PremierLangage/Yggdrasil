@@ -14,7 +14,7 @@ class TextInput(Component):
             self.sol = sol
 
     def eval(self):
-        if any([samestrings(self.value, item, diffmeasure=diffmeasure, tol=tol) for item in self.sol]):
+        if any([samestrings(self.value, item, **self.evalparam) for item in self.sol]):
             self.score = 100
         else:
             self.score = 0
