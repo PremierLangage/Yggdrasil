@@ -5,6 +5,7 @@ class TextInput(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-input'
         self.decorator = 'TextInput'
+        self.evalparam = kwargs.get('evalparam', '}')
         super().__init__(**kwargs)
 
     def set_sol(self, sol):
