@@ -42,7 +42,7 @@ form =
 
 text = 
 
-tplpage =@ /model/tplpage/multistep.html
+tplpage =@ /model/tplpage/multistep_2col.html
 
 style.basic =@ /model/css/basic.css.html
 
