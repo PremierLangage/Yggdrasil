@@ -29,7 +29,7 @@ input.feedback = "Erreur"
 input.display_feedback()
 ==
 
-javascript.mathinput ==
+javascript.popover ==
 <script>
 // Active les popovers.
 $(function () {
