@@ -29,6 +29,7 @@ from textinput import TextInput
 from numinput import NumInput
 from radio import Radio
 from checkbox import Checkbox
+weights = []
 ==
 
 before == #|py|
