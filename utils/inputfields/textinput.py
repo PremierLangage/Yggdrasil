@@ -10,7 +10,7 @@ class TextInput(Component):
 
     def set_sol(self, sol):
         """
-        Set the solution
+        Set the solution of the input field.
         """
         if isinstance(sol, str):
             self.sol = sol.splitlines()
@@ -74,6 +74,8 @@ def edit_distance(s1, s2):
     """
     Return the edit distance between two strings.
     """
+    # C'est une fonction classique qui doit exister dans un module.
+    # Il faudrait importer ce module dans la sandbox et appeler cette fonction.
     if len(s1) > len(s2):
         s1, s2 = s2, s1
     distances = range(len(s1) + 1)
