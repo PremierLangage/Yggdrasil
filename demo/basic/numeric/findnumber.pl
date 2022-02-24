@@ -4,7 +4,7 @@ before ==
 k = randint(3, 6)
 a = randint(25, 75)
 b = a + randint(6, 10)
-sol = 
+sol = 0
 ==
 
 question ==
