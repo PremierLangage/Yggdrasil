@@ -6,6 +6,7 @@ class NumInput(Component):
         self.selector = 'c-input'
         self.decorator = 'NumInput'
         self.type = 'number'
+        self.feedback = kwargs.get('feedback', '')
         super().__init__(**kwargs)
 
     def eval(self):
