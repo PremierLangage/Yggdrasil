@@ -16,7 +16,6 @@ diffmeasure = EditDist
 
 tol = 0
 
-
 # Input block
 
 prefix ==
@@ -57,7 +56,7 @@ before == #|py|
 ==
 
 process == #|py|
-input.sol = sol
+input.set_sol(sol)
 ==
 
 # Evaluation scripts
