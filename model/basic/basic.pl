@@ -4,6 +4,7 @@ extends = /model/basic/utils.pl
 
 before_scripts = ["importfunc", "initinput", "before", "process", "render"]
 eval_scripts = ["evaluator", "evalprocess"]
+jinja_keys = ["question", "inputblock", "solution"]
 
 importfunc == #|python|
 from random import choice, choices, sample, shuffle
