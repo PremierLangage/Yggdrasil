@@ -48,7 +48,7 @@ process == #|py|
 
 evaluator == #|py|
 def average(lst):
-    return sum(lst)/len(lst)
+    return sum(lst)//len(lst)
 
 # Evaluate all input fields
 for input in inputs:
