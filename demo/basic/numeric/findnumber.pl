@@ -12,45 +12,12 @@ Donner un entier multiple de {{k}}, compris entre {{ a }} et {{ b }} (inclus).
 ==
 
 evaluator ==
-ans = input.value
-if not isinstance(ans, int):
-    score = -1
-    feedback = "La réponse doit être un entier."
-elif ans % k != 0:
+if input.value % k != 0:
     score = 0
     feedback = "Ce nombre n'est pas un multiple de " + str(k) + "."
-elif ans < a or ans > b:
+elif input.value < a or input.value > b:
     score = 0
     feedback = f"Ce nombre n'est pas compris entre {a} et {b}."
 else:
     score = 100
-
-if 'score' in locals():
-    input.score = score
-    if 'feedback' in locals():
-        input.feedback = feedback
-else:
-    input.eval()
-
-input.display_feedback()
-input.disable()
-==
-
-javascript.popover ==
-<script>
-// Active les popovers.
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
-
-// Fonction appelée quand l'exercice est soumis (bouton valider).
-function onBeforeSubmitPL() {
-  // Cache les popovers avant que les éléments correspondants soient détruits du DOM.
-  $(function () {
-    $('[data-toggle="popover"]').popover('hide')
-  });
-
-  return true;
-}
-</script>
 ==
