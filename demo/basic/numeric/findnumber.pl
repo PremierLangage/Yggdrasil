@@ -25,9 +25,9 @@ elif ans < a or ans > b:
 else:
     score = 100
 input.score = score
-#input.feedback = "Erreur"
-#input.display_feedback()
-input.disabled = True
+input.feedback = "Erreur"
+input.display_feedback()
+input.disable()
 ==
 
 javascript.popover ==
