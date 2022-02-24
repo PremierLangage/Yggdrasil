@@ -52,7 +52,8 @@ before == #|py|
 ==
 
 process == #|py|
-input.sol = sol
+if 'sol' in locals():
+  input.sol = sol
 ==
 
 # Evaluation scripts
