@@ -11,7 +11,7 @@ question ==
 Donner un entier multiple de {{k}}, compris entre {{ a }} et {{ b }} (inclus).
 ==
 
-evaluator ==
+customeval ==
 if input.value % k != 0:
     score = 0
     feedback = "Ce nombre n'est pas un multiple de " + str(k) + "."
