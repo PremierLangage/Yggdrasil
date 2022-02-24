@@ -16,7 +16,7 @@ f = open('pays_europe.csv')
 datasample = csv_sample(f, n)
 
 for i in range(n):
-    inputs[i].sol = datasample[i]['capitale']
+    inputs[i].set_sol(datasample[i]['capitale'])
     capitales.append(datasample[i]['capitale'])
     pays.append(datasample[i]['pays'])
 ==
