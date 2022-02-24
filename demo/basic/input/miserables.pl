@@ -1,4 +1,4 @@
-extends = /model/basic/input.pl
+extends = /model/basic/textinput.pl
 
 question ==
 Qui a écrit *Les Misérables* ?
