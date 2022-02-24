@@ -11,6 +11,13 @@ from plrandom import randint, sampleint
 from plcsv import csv_choice, csv_sample, csv_col
 ==
 
+
+jinjarender == #|py|
+for key in jinja_keys:
+    if key in globals():
+        key = Env.from_string(macros + key).render(globals())
+==
+
 title =
 form = 
 text = 
