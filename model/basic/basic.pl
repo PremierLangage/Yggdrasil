@@ -2,7 +2,7 @@ extends = /model/basic/hackpage.pl
 extends = /model/basic/utils.pl
 
 
-before_scripts = ["importfunc", "initinput", "before", "process"]
+before_scripts = ["importfunc", "initinput", "before", "process", "render"]
 eval_scripts = ["evaluator", "evalprocess"]
 
 importfunc == #|python|
@@ -12,7 +12,8 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 
-jinjarender == #|py|
+render == #|py|
+from 
 for key in jinja_keys:
     if key in globals():
         key = Env.from_string(macros + key).render(globals())
