@@ -25,9 +25,9 @@ elif ans < a or ans > b:
 else:
     score = 100
 
-if score in globals():
+if 'score' in locals():
     input.score = score
-    if feedback in globals():
+    if 'feedback' in locals():
         input.feedback = feedback
 else:
     input.eval()
