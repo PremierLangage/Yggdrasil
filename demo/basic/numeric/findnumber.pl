@@ -1,5 +1,5 @@
 extends = /model/basic/numinput.pl
-
+extends = /model/math/aux_mathinput.pl
 before ==
 k = randint(3, 6)
 a = randint(25, 75)
