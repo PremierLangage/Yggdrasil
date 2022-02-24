@@ -68,6 +68,11 @@ function onReadyPL(nodes) {
     actions.find('br').remove();
     body.children('br').remove();
 
+    // Active les popovers.
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+
     {% if embed|length > 0 %}
     mathField.reflow();
     {% endif %}
