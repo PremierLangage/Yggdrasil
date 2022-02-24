@@ -25,4 +25,4 @@ solution ==
 France : Paris ; Italie : Rome.
 ==
 
-test ="{{ test|toto }}"
+test =["{{ test|toto }}"]
