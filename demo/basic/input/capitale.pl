@@ -1,4 +1,4 @@
-extends = /model/basic/input.pl
+extends = /model/basic/textinput.pl
 
 @ /demo/data/pays_europe.csv
 
