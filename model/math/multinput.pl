@@ -39,7 +39,7 @@ if -1 in [input.score for input in inputs]:
             input.display_feedback()
         else:
             input.hide_feedback()
-        inputblock = Env.from_string(templates['inputblock']).render(globals())
+        inputblock = "toto" #Env.from_string(templates['inputblock']).render(globals())
 else:
     score = int(average([input.score for input in inputs]))
     for input in inputs:
