@@ -25,7 +25,7 @@ from latex2sympy import latex2sympy
 style.basic =@ /model/css/basic.css.html
 
 jinja_keys = ["prefix", "question", "solution", "inputblock"]
-before_scripts = ["mathimport", "init_input", "before"]
+before_scripts = ["mathimport", "init_input", "before", "process"]
 eval_scripts = ["evalparam", "evaluator"]
 
 prefix = Réponse :
