@@ -1,12 +1,7 @@
 style.mathquill =@ /utils/components/mathinput/mathinput.css.html
 
-javascript.mathinput ==
+javascript.onbeforesubmit == #|js|
 <script>
-// Active les popovers.
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
-
 // Fonction appelée quand l'exercice est soumis (bouton valider).
 function onBeforeSubmitPL() {
   // Copie les valeurs des champs MathField dans des éléments input.
