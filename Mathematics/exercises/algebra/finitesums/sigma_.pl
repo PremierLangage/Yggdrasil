@@ -3,7 +3,7 @@ extends = /model/math/input.pl
 title = Symbole Sigma
 
 before ==
-v=randitem([Symbol('i'),Symbol('k')])
+v=choice([Symbol('i'),Symbol('k')])
 a=randint(*eval(param['range_init']))
 b=a+randint(*eval(param['range_length']))
 expr=choice(eval(param['expr']))
