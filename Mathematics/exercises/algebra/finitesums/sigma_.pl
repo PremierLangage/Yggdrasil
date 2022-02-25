@@ -11,7 +11,7 @@ S = Sum(expr, (v, a, b))
 sol = S.doit()
 ==
 
-text ==
+question ==
 Calculer $! \displaystyle {{S|latex}} !$.
 ==
 
