@@ -44,3 +44,15 @@ $! {{ input.sol|latex }} !$
 </div>
 {% endfor %}
 ==
+
+evaluator ==
+from mathinput import MathInput
+MathInput.message = message
+
+for input in inputs:
+    input.value = answers[input.id]
+    input.eval()
+    input.display_feedback()
+
+score = 50
+==
