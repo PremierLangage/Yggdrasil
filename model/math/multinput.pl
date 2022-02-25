@@ -3,7 +3,7 @@ extends = /model/math/input.pl
 before_scripts = ["mathimport", "init_input", "before", "process"]
 jinja_keys = ["prefix", "question", "solution", "inputblock"]
 
-templates.inputblock ==
+inputblock ==
 {% for input in inputs %}
 <div style="display: block; margin-bottom: 1em;">
 {{ prefixes[loop.index0] }} 
