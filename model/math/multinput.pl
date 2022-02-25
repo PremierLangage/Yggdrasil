@@ -2,7 +2,7 @@ extends = /model/math/input.pl
 
 before_scripts = ["mathimport", "init_input", "before", "process"]
 
-templates.inputblock ==
+template.inputblock ==
 {% for input in inputs %}
 <div style="display: block; margin-bottom: 1em;">
 {{ prefixes[loop.index0] }} 
