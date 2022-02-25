@@ -6,7 +6,7 @@ before ==
 v=randitem([Symbol('i'),Symbol('k')])
 a=randint(*eval(param['range_init']))
 b=a+randint(*eval(param['range_length']))
-expr=randitem(eval(param['expr']))
+expr=choice(eval(param['expr']))
 S = Sum(expr, (v, a, b))
 sol = S.doit()
 ==
