@@ -1,6 +1,7 @@
 extends = /model/math/input.pl
 
 before_scripts = ["mathimport", "init_input", "before", "process"]
+jinja_keys = ["prefix", "question", "solution", "inputblock"]
 
 templates.inputblock ==
 {% for input in inputs %}
