@@ -1,7 +1,7 @@
 extends = /model/basic/utils.pl
 extends = /model/basic/hackpage.pl
 extends = messages_math.pl
-extends = aux_mathinput.pl
+
 
 text =
 form = 
@@ -23,6 +23,7 @@ from latex2sympy import latex2sympy
 ==
 
 style.basic =@ /model/css/basic.css.html
+style.mathquill =@ /utils/components/mathinput/mathinput.css.html
 
 jinja_keys = ["prefix", "question", "solution", "inputblock"]
 before_scripts = ["mathimport", "init_input", "before", "process"]
