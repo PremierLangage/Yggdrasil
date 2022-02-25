@@ -3,6 +3,7 @@ extends = /model/math/input.pl
 title = Symbole Sigma
 
 before ==
+from sympy import Sum
 v=choice([Symbol('i'),Symbol('k')])
 a=randint(*eval(param['range_init']))
 b=a+randint(*eval(param['range_length']))
