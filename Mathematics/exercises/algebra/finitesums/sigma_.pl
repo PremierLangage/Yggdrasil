@@ -16,10 +16,6 @@ question ==
 Calculer $! \displaystyle {{S|latex}} !$.
 ==
 
-evaluator ==
-score, error = eval_expr(input.value, sol)
-feedback = message[error]
-==
 
 solution ==
 La solution est $! {{sol|latex}} !$.
