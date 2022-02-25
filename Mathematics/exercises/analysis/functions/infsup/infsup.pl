@@ -54,5 +54,5 @@ for input in inputs:
     input.eval()
     input.display_feedback()
 
-score = 50
+score = -1
 ==
