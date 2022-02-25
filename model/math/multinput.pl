@@ -1,6 +1,8 @@
 extends = /model/math/input.pl
 
-inputblock ==
+before_scripts = ["mathimport", "init_input", "before", "process"]
+
+templates.inputblock ==
 {% for input in inputs %}
 <div style="display: block; margin-bottom: 1em;">
 {{ prefixes[loop.index0] }} 
@@ -13,6 +15,10 @@ init_input ==
 from mathinput import MathInput
 ==
 
+process ==
+from jinja_env import Env
+inputblock = 
+==
 
 evaluator ==
 from mathinput import MathInput
