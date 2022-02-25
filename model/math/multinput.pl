@@ -17,10 +17,11 @@ from mathinput import MathInput
 
 process ==
 from jinja_env import Env
-inputblock = 
+inputblock = Env.from_string(template.inputblock).render(globals())
 ==
 
 evaluator ==
+from jinja_env import Env
 from mathinput import MathInput
 MathInput.message = message
 
@@ -38,13 +39,14 @@ if -1 in [input.score for input in inputs]:
             input.display_feedback()
         else:
             input.hide_feedback()
-        input.update()
+        inputblock = Env.from_string(template.inputblock).render(globals())
 else:
     score = int(average([input.score for input in inputs]))
     for input in inputs:
         input.display_feedback()
         input.disable()
-        input.update()
+        inputblock = Env.from_string(template.inputblock).render(globals())
+
 ==
 
 solution ==
