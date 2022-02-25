@@ -16,10 +16,6 @@ init_input ==
 from mathinput import MathInput
 ==
 
-process ==
-from jinja_env import Env
-inputblock = Env.from_string(templates['inputblock']).render(globals())
-==
 
 evaluator ==
 from jinja_env import Env
@@ -40,14 +36,11 @@ if -1 in [input.score for input in inputs]:
             input.display_feedback()
         else:
             input.hide_feedback()
-        inputblock = "toto" #Env.from_string(templates['inputblock']).render(globals())
 else:
     score = int(average([input.score for input in inputs]))
     for input in inputs:
         input.display_feedback()
         input.disable()
-        inputblock ="toto" # Env.from_string(templates['inputblock']).render(globals())
-
 ==
 
 solution ==
