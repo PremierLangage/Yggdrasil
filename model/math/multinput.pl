@@ -46,7 +46,7 @@ else:
         input.display_feedback()
         input.disable()
         inputblock = Env.from_string(templates['inputblock']).render(globals())
-
+x = y
 ==
 
 solution ==
