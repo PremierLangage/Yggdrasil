@@ -24,11 +24,23 @@ $$ A = \{ {{ f|latex }} \: | \: x \in [{{ a }}, {{ b }}] \}. $$
 Déterminer les bornes de cet ensemble.
 ==
 
+jinja_keys = ["prefix", "question", "solution", "inputblock"]
+
 inputblock ==
 {% for input in inputs %}
 <div style="display: block; margin-bottom: 1em;">
 {{ prefixes[loop.index0] }} 
 {{ input|mathinput }}
+</div>
+{% endfor %}
+==
+
+
+solution ==
+{% for input in inputs %}
+<div style="display: block; margin-bottom: 1em;">
+{{ prefixes[loop.index0] }} 
+$! {{ input.sol|latex }} !$
 </div>
 {% endfor %}
 ==
