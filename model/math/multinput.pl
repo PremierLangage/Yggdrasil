@@ -32,11 +32,13 @@ if -1 in [input.score for input in inputs]:
             input.display_feedback()
         else:
             input.hide_feedback()
+        input.update()
 else:
     score = int(average([input.score for input in inputs]))
     for input in inputs:
         input.display_feedback()
         input.disable()
+        input.update()
 ==
 
 solution ==
