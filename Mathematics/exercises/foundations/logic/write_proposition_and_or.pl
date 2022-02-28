@@ -1,6 +1,15 @@
-extends = /model/basic/mathdragdrop.pl
+extends = /model/basic/dropgroup.pl
 
 title = Ecrire une proposition
+
+labels ==
+et
+ou
+pairs
+impairs
+divisibles par 3
+divisibles par 5
+==
 
 before ==
 n=randint(20,30)
