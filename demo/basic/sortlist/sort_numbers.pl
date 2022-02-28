@@ -10,4 +10,4 @@ before ==
 sortedlist = list(range(1, 100))
 ==
 
-nbitems % 5
+nbitems = 5
