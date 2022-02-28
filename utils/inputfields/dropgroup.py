@@ -82,6 +82,9 @@ class DropGroup():
         for label in self.labels:
             label.disabled = True
 
+    def get_value(self):
+        return [drop.value for drop in self.drops]
+
 def process_filledtext(filledtext, name, style):
     """
     Return exercice elements from a filled text.
