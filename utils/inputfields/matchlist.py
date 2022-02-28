@@ -83,7 +83,7 @@ class MatchList(Component):
     def shuffle(self):
         rd.shuffle(self.nodes)
 
-    def eval(self, display=True, scoring="RightMinusWrong", disabled=True):
+    def eval(self):
         """
         Evaluate the answer stored in the component.
         """ 
