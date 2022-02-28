@@ -52,7 +52,7 @@ class MatchList(Component):
 
     def set_multiple(self):
         """
-        Add target nodes.
+        Set multiple mode.
         """
         for node in self.nodes:
             node['multiple'] = True
@@ -96,10 +96,8 @@ class MatchList(Component):
         for node in self.nodes:
             if 'source' in node and node['source']:
                 if node['id'] in rightsource:
-                    node['css'] = 'success-state icon-check-before'
                     nbright += 1
                 else:
-                    node['css'] = 'error-state icon-times-before'
                     nbwrong += 1
 
         if scoring == "AllOrNothing":
@@ -112,3 +110,19 @@ class MatchList(Component):
             raise ValueError(f"'{scoring}' is not a valid scoring")
 
         return score
+
+    def display_feedback():
+        """
+        Evaluate the answer stored in the component.
+        """ 
+        rightsource = []
+        for link in self.links:
+            if {'source': link['source'], 'target': link['target']} in self._sol:
+                rightsource.append(link['source'])
+
+        for node in self.nodes:
+            if 'source' in node and node['source']:
+                if node['id'] in rightsource:
+                    node['css'] = 'success-state icon-check-before'
+                else:
+                    node['css'] = 'error-state icon-times-before'
