@@ -61,8 +61,10 @@ if 'sol' in locals():
 eval_scripts = ["evaluator", "ending"] 
 
 evaluator == #|py|
-# This script can be used to perform a custom evaluation.
-# It should define a variable score.
+# This script can be used to perform a custom evaluation of the answer.
+# It should define a variable score and a variable feedback (optional).
+# If no variable score is defined, an automatic evaluation of the answer
+# will be performed subsequently.
 ==
 
 ending == #|py|
