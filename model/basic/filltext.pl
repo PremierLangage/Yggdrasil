@@ -68,7 +68,7 @@ def process_filledtext(filledtext, name):
     newstring += filledtext[start:]
     return sol, newstring, solution
 
-sol, inputblock1 = process_filledtext(filledtext, "input.drops")
+sol, inputblock1, solution = process_filledtext(filledtext, "input.drops")
 input.set_drops(len(sol))
 input.set_labels(list(set(sol + _labels_)))
 inputblock =  inputblock1 + "\n\n" + input.labels_html()
