@@ -13,7 +13,7 @@ Chez les individus d’une même espèce, un gène peut cependant exister sous d
 L’ensemble des allèles d’un individu définit son {{ drops[1] }}. Lorsqu’ils s’expriment, lors de la synthèse des protéines, les gènes participent à la construction de l’individu et à la mise en place de son {{ drops[2] }}. 
 </p>
 
-{% for label in labels %} {{ label }} {% endfor %}
+{% for label in input.labels %} {{ label|component }} {% endfor %}
 ==
 
 sol ==
