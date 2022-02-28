@@ -13,19 +13,19 @@ Os ethmoïde
 
 scheme =$ skull_bones.png
 
-question ==
+inputblock ==
 <div class="row">
 <div class="column">
 <img src="{{ scheme }}" style="max-width: 300px; vertical-align:top; display: inline-block">
 </div>
 <div class="column">
 <ul>
-{% for drop in drp.comp %}
+{% for drop in input.drops %}
 <li> {{ loop.index }}. {{ drop|component }} </li>
 {% endfor %}
 </ul>
 </div>
 </div> 
 
-{% for label in lab.comp %} {{ label|component }} {% endfor %}
+{% for label in input.labels %} {{ label|component }} {% endfor %}
 ==
