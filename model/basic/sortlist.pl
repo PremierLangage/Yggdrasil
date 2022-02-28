@@ -43,16 +43,3 @@ if not isinstance(_nbitems_, int):
 
 sortlist.setdata_from_list([_sortedlist_[i] for i in sorted(sample(range(len(_sortedlist_)), _nbitems_))])
 ==
-
-sortlist =: SortList
-
-@ /utils/components/sortlist.py [customsortlist.py]
-sortlist.decorator = CustomSortList
-
-inputblock ==
-{{ sortlist|component }}
-==
-
-evaluator ==
-score = sortlist.eval()
-==
