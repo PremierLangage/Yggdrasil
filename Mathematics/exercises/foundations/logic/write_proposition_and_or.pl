@@ -50,33 +50,15 @@ extracss == #|html|
 </style>
 ==
 
-drag1 =: DragDrop
-drag1.content = et
 
-drag2 =: DragDrop
-drag2.content = ou
-
-drag3 =: DragDrop
-drag3.content = pairs
-
-drag4 =: DragDrop
-drag4.content = impairs
-
-drag5 =: DragDrop
-drag5.content = divisibles par 3
-
-drag6 =: DragDrop
-drag6.content = divisibles par 5
-
-form ==
+inputblock ==
 {% macro list_components(lst) -%}
     {% for e in lst %}
         {{ e |component}}
     {% endfor %}
 {%- endmacro %}
 
-
-L'ensemble $! {{latexset}} !$ est l'ensemble des nombres entre 1 et {{n}} qui sont {{ drop1 | component }} {{ drop2 | component }} {{ drop3 | component }}. <br><br>
+L'ensemble $! {{latexset}} !$ est l'ensemble des nombres entre 1 et {{n}} qui sont {{ input.drops[0]|component }} {{ input.drops[1]|component }} {{ input.drops[2]|component }}. <br><br>
 
 {{ list_components(drags) }}
 ==
