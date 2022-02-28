@@ -62,9 +62,9 @@ L'ensemble $! {{latexset}} !$ est l'ensemble des nombres entre 1 et {{n}} qui so
 
 evaluator ==
 ans = " ".join(input.get_value())
-if ans==sol1 or ans==sol2:
-    score=100
+if ans == sol1 or ans == sol2:
+    score = 100
 else:
-    score=0
+    score = 0
 ==
 
