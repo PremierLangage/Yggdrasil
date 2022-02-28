@@ -52,15 +52,9 @@ extracss == #|html|
 
 
 inputblock ==
-{% macro list_components(lst) -%}
-    {% for e in lst %}
-        {{ e |component}}
-    {% endfor %}
-{%- endmacro %}
-
 L'ensemble $! {{latexset}} !$ est l'ensemble des nombres entre 1 et {{n}} qui sont {{ input.drops[0]|component }} {{ input.drops[1]|component }} {{ input.drops[2]|component }}. <br><br>
 
-{{ list_components(drags) }}
+{% for label in input.labels %} {{ label|component}} {% endfor %}
 ==
 
 evaluator ==
