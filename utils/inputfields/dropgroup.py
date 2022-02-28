@@ -9,6 +9,7 @@ class Drop(Component):
         self.droppable = True
         self.cloneable = False
         self.score = None
+        self.shuffled = False
         super().__init__(**kwargs)
 
 class Label(Component):
