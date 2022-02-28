@@ -49,10 +49,10 @@ elif isinstance(labels, list):
 else:
     _labels_ = []
 
-sol, inputblock1, solution = process_filledtext(filledtext, "input.drops", "color:green")
+sol, dropblock, solution = process_filledtext(filledtext, "input.drops", "color:green")
 input.set_drops(len(sol))
 input.set_labels(list(set(sol + _labels_)))
-inputblock =  inputblock1 + "\n\n" + input.labels_html()
+inputblock =  dropblock + "\n\n" + input.labels_html()
 input.sol = sol
 ==
 
