@@ -17,6 +17,8 @@
 @ /utils/inputfields/checkbox.py
 @ /utils/inputfields/textinput.py
 @ /utils/inputfields/numinput.py
+@ /utils/inputfields/matchlist.py
+@ /utils/inputfields/sortlist.py
 @ /utils/inputfields/dropgroup.py
 @ /utils/inputfields/inputgroup.py
 @ /utils/inputfields/scoring.py
