@@ -15,7 +15,7 @@ ces
 
 # Input block
 
-inputblock2 == #|html|
+inputblock == #|html|
 * Je voudrais {{ input.drops[0]|component }} chausures pour mon anniversaire.
 * Tu est toujours en retard, {{ input.drops[1]|component }} agaçant !
 * Je n'aime pas {{ input.drops[2]|component }} méthodes.
