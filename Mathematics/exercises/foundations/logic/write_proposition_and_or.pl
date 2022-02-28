@@ -62,6 +62,5 @@ if ans==sol1 or ans==sol2:
     score=100
 else:
     score=0
-feedback=""
 ==
 
