@@ -114,7 +114,7 @@ class MatchList(Component):
 
     def display_feedback(self):
         """
-        Evaluate the answer stored in the component.
+        Display visual feedback.
         """ 
         rightsource = []
         for link in self.links:
