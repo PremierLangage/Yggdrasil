@@ -38,7 +38,7 @@ from dropgroup import DropGroup
 input = DropGroup()
 ==
 
-process == # |py|
+process == #|py|
 
 if nbdrops == -1:
     if isinstance(sol, str):
@@ -47,17 +47,19 @@ if nbdrops == -1:
         _sol_ = sol
     input.set_drops(len(_sol_))
     input.sol = _sol_
+    _labels_ = _sol_
 else:
     input.set_drops(nbdrops)
+    _labels_ = []
 
 if isinstance(labels, str):
-    _labels_ = labels.splitlines()
+    _labels_ = list(set(_labels_ +  labels.splitlines()))
 elif isinstance(labels, list):
-    _labels_ = labels
+    _labels_ = list(set(_labels_ +  labels))
 else:
     _labels_ = []
 
-input.set_labels(list(set(_labels_ + _sol_)))
+input.set_labels(_labels_)
 ==
 
 # Evaluation scripts
