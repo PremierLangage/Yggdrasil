@@ -76,7 +76,7 @@ class DropGroup():
             if drop.score is None:
                 score = self.score
             else:
-                score = drop..score
+                score = drop.score
             if score == 100:
                 drop.css = "success-state"
             else:
