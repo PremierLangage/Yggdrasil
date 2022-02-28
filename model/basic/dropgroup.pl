@@ -39,10 +39,16 @@ input = DropGroup()
 ==
 
 process == # |py|
-if isinstance(sol, str):
-    _sol_ = sol.splitlines()
+
+if nbdrops == -1:
+    if isinstance(sol, str):
+        _sol_ = sol.splitlines()
+    else:
+        _sol_ = sol
+    input.set_drops(len(_sol_))
+    input.sol = _sol_
 else:
-    _sol_ = sol
+    input.set_drops(nbdrops)
 
 if isinstance(labels, str):
     _labels_ = labels.splitlines()
@@ -51,10 +57,7 @@ elif isinstance(labels, list):
 else:
     _labels_ = []
 
-if nbdrops = 
-input.set_drops(len(_sol_))
 input.set_labels(list(set(_labels_ + _sol_)))
-input.sol = _sol_
 ==
 
 # Evaluation scripts
