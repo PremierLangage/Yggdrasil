@@ -12,6 +12,8 @@ c'est
 ces
 ==
 
+labels ==
+==
 
 # Input block
 
