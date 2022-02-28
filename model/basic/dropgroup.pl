@@ -64,7 +64,8 @@ else:
 input.set_labels(_labels_)
 
 if shuffled:
-    input.shuffle()
+    pass
+    #input.shuffle()
 ==
 
 # Evaluation scripts
