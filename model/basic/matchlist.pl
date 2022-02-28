@@ -33,8 +33,8 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from checkbox import Checkbox
-input = Checkbox()
+from matchlist import MatchList
+input = MatchList()
 ==
 
 before == #|py|
