@@ -1,18 +1,53 @@
 extends = /model/basic/basic.pl
-@ /utils/components/scoring.py
-@ /utils/components/matchlist.py [matchlist.py]
 
-matchlist =: MatchList
-matchlist.decorator = MatchList
+# Main keys
+
+question ==
+Quelle est la réponse ?
+==
 
 multiple = False
-title = 
 
 nbmatches = None
 targets = []
+
 delimiter = ","
 
 scoring = RightMinusWrong
+
+
+# Input block
+
+inputblock == #|html|
+{{ input|component }}
+==
+
+# Before scripts
+
+before_scripts = ["importfunc", "initinput", "before", "process"]
+
+importfunc == #|py|
+from random import choice, choices, sample, shuffle
+from plrandom import randint, sampleint
+from plcsv import csv_choice, csv_sample, csv_col
+==
+
+initinput == #|py|
+from checkbox import Checkbox
+input = Checkbox()
+==
+
+before == #|py|
+# This script can be used to generate
+# any keys (items, indsol, etc.)
+==
+
+process == #|py|
+input.set_items(items)
+input.set_sol(indsol)
+if shuffled:
+    input.shuffle()
+==
 
 process ==
 import random as rd
@@ -32,19 +67,19 @@ if isinstance(nbmatches, int):
 else:
     _nbmatches_ = len(_matches_)
 
-matchlist.setdata_from_matches(rd.sample(_matches_, _nbmatches_))
-matchlist.add_targets(_targets_)
-matchlist.shuffle()
-matchlist.scoring = scoring
+input.set_data_from_matches(rd.sample(_matches_, _nbmatches_))
+input.add_targets(_targets_)
+input.shuffle()
+input.scoring = scoring
 
 if multiple:
-    matchlist.set_multiple()
+    input.set_multiple()
 ==
 
-inputblock ==
-{{ matchlist|component }}
-==
+# Evaluation scripts
 
-evaluator ==
-score = matchlist.eval()
+evaluator == #|py|
+score = input.eval()
+input.display_feedback()
+input.disable()
 ==
