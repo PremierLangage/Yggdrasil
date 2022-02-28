@@ -49,25 +49,7 @@ elif isinstance(labels, list):
     _labels_ = labels
 else:
     _labels_ = []
-
-def process_filledtext(filledtext, name):
-    sol = []
-    counter = 0
-    newstring = ''
-    solution = ''
-    start = 0
-    for m in re.finditer(r"{([^{}]+)}", filledtext):
-        end, newstart = m.span()
-        newstring += filledtext[start:end]
-        solution += filledtext[start:end]
-        rep = "{{ "+ name + "[" + str(counter) + "]|component }}"
-        sol.append(m.group(1)) 
-        newstring += rep
-        solution += rf'<span style="{style}">{m.group(1)}</span>' 
-        start = newstart
-        counter += 1
-    newstring += filledtext[start:]
-    return sol, newstring, solution
+from dragdrop import process_filledtext
 
 sol, inputblock1, solution = process_filledtext(filledtext, "input.drops", "color:green")
 input.set_drops(len(sol))
