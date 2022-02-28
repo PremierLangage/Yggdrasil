@@ -12,7 +12,7 @@ class SortList(Component):
         self._sol = []
         super().__init__(**kwargs)
 
-    def setdata_from_list(self, lst):
+    def set_data_from_list(self, lst):
         """
         Load items and set solution from an ordered list.
         """
@@ -30,29 +30,10 @@ class SortList(Component):
         """
         rd.shuffle(self.items)
 
-    def eval(self, display=True, scoring="KendallTau", disabled=True):
+    def eval(self):
         """
         Evaluate the answer stored in the component.
-        """
-
-        if display:
-            for i, e in enumerate(self.items):
-
-                id = e['id']
-
-                if id == self._sol[i]:
-                    e['css'] = 'success-state'
-                    css_state="success"
-                else:
-                    e['css'] = 'error-state'
-                    css_state="danger"
-
-                e['content']=  """<div class="d-flex justify-content-between align-items-center">
-                        <span class="badge badge-%s"> %s </span>
-                        <span> %s </span>
-                        <span></span>
-                    </div>""" % (css_state,str(1+self._sol.index(id)),e['content'])
-        
+        """       
         order = [self._sol.index(item['id']) for item in self.items]
 
         if scoring == "ExactOrder":
@@ -63,4 +44,40 @@ class SortList(Component):
             raise ValueError(f"'{scoring}' is not a valid scoring")
 
         return score
+
+    
+    def display_feedback(self):
+        """
+        Display visual feedback.
+        """
+        for i, e in enumerate(self.items):
+
+            id = e['id']
+
+            if id == self._sol[i]:
+                e['css'] = 'success-state'
+                css_state="success"
+            else:
+                e['css'] = 'error-state'
+                css_state="danger"
+
+            e['content']=  """<div class="d-flex justify-content-between align-items-center">
+                    <span class="badge badge-%s"> %s </span>
+                    <span> %s </span>
+                    <span></span>
+                </div>""" % (css_state,str(1+self._sol.index(id)),e['content'])
+
+
+    def hide_feedback(self):
+        """
+        Hide visual feedback.
+        """
+        pass
+
+
+    def disable(self):
+        """
+        Disable the component.
+        """
+        self.disabled = True
 
