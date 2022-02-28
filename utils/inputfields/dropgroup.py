@@ -8,6 +8,7 @@ class Drop(Component):
         self.selector = 'c-drag-drop'
         self.droppable = True
         self.cloneable = False
+        self.score = None
         super().__init__(**kwargs)
 
 class Label(Component):
@@ -16,6 +17,7 @@ class Label(Component):
         self.selector = 'c-drag-drop'
         self.droppable = False
         self.cloneable = False
+        self.score = None
         super().__init__(**kwargs)
 
 
@@ -71,7 +73,15 @@ class DropGroup():
         return score
 
     def display_feedback(self):
-        pass
+        for drop in self.drops:
+            if drop.score is None:
+                score = self.score
+            else:
+                score = drop..score
+            if score == 100:
+                drop.css = "success-state"
+            else:
+                drop..css = "error-state"
 
     def hide_feedback(self):
         pass
