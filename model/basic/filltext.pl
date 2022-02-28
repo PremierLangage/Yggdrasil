@@ -49,7 +49,7 @@ elif isinstance(labels, list):
     _labels_ = labels
 else:
     _labels_ = []
-from dragdrop import process_filledtext
+from dropgroup import process_filledtext
 
 sol, inputblock1, solution = process_filledtext(filledtext, "input.drops", "color:green")
 input.set_drops(len(sol))
