@@ -9,7 +9,6 @@ class Drop(Component):
         self.droppable = True
         self.cloneable = False
         self.score = None
-        self.shuffled = False
         super().__init__(**kwargs)
 
 class Label(Component):
@@ -29,6 +28,8 @@ class DropGroup():
         self.drops = kwargs.get('drops', [])
         self.labels = kwargs.get('labels', [])
         self.sol = kwargs.get('sol', [])
+        self.shuffled = kwargs.get('sol', False)
+
 
     def set_drops(self, n):
         self.drops = [Drop() for _ in range(n)]
