@@ -1,11 +1,38 @@
 extends = /model/basic/basic.pl
 
 
-title =
+# Main keys
 
 nbitems = None
 
-process ==
+
+# Input block
+
+inputblock == #|html|
+{{ input|component }}
+==
+
+# Before scripts
+
+before_scripts = ["importfunc", "initinput", "before", "process"]
+
+importfunc == #|py|
+from random import choice, choices, sample, shuffle
+from plrandom import randint, sampleint
+from plcsv import csv_choice, csv_sample, csv_col
+==
+
+initinput == #|py|
+from sortlist import SortList
+input = SortList()
+==
+
+before == #|py|
+# This script can be used to generate
+# any keys (items, indsol, etc.)
+==
+
+process == #|py|
 from random import randint, sample
 
 _nbitems_ = nbitems
@@ -18,8 +45,19 @@ elif isinstance(sortedlist, list):
 if not isinstance(_nbitems_, int):
     _nbitems_ = len(_sortedlist_)
 
-sortlist.set_data_from_list([_sortedlist_[i] for i in sorted(sample(range(len(_sortedlist_)), _nbitems_))])
+input.set_data_from_list([_sortedlist_[i] for i in sorted(sample(range(len(_sortedlist_)), _nbitems_))])
+input.scoring = scoring
 ==
+
+# Evaluation scripts
+
+evaluator == #|py|
+score = input.eval()
+input.display_feedback()
+input.disable()
+==
+
+
 
 doc == #|python|
 {
