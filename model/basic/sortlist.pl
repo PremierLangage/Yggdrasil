@@ -5,6 +5,7 @@ extends = /model/basic/basic.pl
 
 nbitems = None
 
+scoring = "ExactOrder"
 
 # Input block
 
