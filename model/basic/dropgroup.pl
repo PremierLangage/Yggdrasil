@@ -4,7 +4,6 @@ extends = /model/basic/basic.pl
 
 question ==
 Compléter les phrases suivantes avec les étiquettes proposées.
-
 ==
 
 sol ==
