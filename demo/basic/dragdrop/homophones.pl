@@ -1,18 +1,19 @@
 extends = /model/basic/dropgroup.pl
 
-
 question ==
 Compléter les phrases suivantes avec les étiquettes proposées.
-
-* Je voudrais {{ cdrops[0] }} chausures pour mon anniversaire.
-* Tu est toujours en retard, {{ cdrops[1] }} agaçant !
-* Je n'aime pas {{ cdrops[2] }} méthodes.
-
-{{ clabels[0] }} {{ clabels[1] }}
 ==
 
 sol ==
 ces
 c'est
 ces
+==
+
+inputblock == #|html|
+* Je voudrais {{ input.drops[0]|component }} chausures pour mon anniversaire.
+* Tu est toujours en retard, {{ input.drops[1]|component }} agaçant !
+* Je n'aime pas {{ input.drops[2]|component }} méthodes.
+
+{{ input.labels[0]|component }} {{ input.labels[1]|component }}
 ==
