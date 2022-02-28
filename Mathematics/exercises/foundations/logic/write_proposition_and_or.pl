@@ -11,6 +11,8 @@ divisibles par 3
 divisibles par 5
 ==
 
+nbdrops = 3
+
 before ==
 from sympy import FiniteSet
 from sympy2latex import latex
