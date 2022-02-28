@@ -127,3 +127,9 @@ class MatchList(Component):
                     node['css'] = 'success-state icon-check-before'
                 else:
                     node['css'] = 'error-state icon-times-before'
+
+    def disable(self):
+        """
+        Evaluate the answer stored in the component.
+        """ 
+        self.disabled = True
