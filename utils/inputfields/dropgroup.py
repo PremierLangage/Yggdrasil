@@ -28,7 +28,7 @@ class DropGroup():
         self.drops = kwargs.get('drops', [])
         self.labels = kwargs.get('labels', [])
         self.sol = kwargs.get('sol', [])
-        self.shuffled = kwargs.get('sol', False)
+        self.shuffled = kwargs.get('shuffled', False)
 
 
     def set_drops(self, n):
