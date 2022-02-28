@@ -1,5 +1,25 @@
 extends = /model/basic/basic.pl
-@ /utils/components/scoring.py
+
+
+title =
+
+nbitems = None
+
+process ==
+from random import randint, sample
+
+_nbitems_ = nbitems
+
+if isinstance(sortedlist, str):
+    _sortedlist_ = sortedlist.splitlines()
+elif isinstance(sortedlist, list):
+    _sortedlist_= sortedlist
+
+if not isinstance(_nbitems_, int):
+    _nbitems_ = len(_sortedlist_)
+
+sortlist.setdata_from_list([_sortedlist_[i] for i in sorted(sample(range(len(_sortedlist_)), _nbitems_))])
+==
 
 doc == #|python|
 {
@@ -22,24 +42,4 @@ doc == #|python|
         }
     }
 }
-==
-
-title =
-
-nbitems = None
-
-process ==
-from random import randint, sample
-
-_nbitems_ = nbitems
-
-if isinstance(sortedlist, str):
-    _sortedlist_ = sortedlist.splitlines()
-elif isinstance(sortedlist, list):
-    _sortedlist_= sortedlist
-
-if not isinstance(_nbitems_, int):
-    _nbitems_ = len(_sortedlist_)
-
-sortlist.setdata_from_list([_sortedlist_[i] for i in sorted(sample(range(len(_sortedlist_)), _nbitems_))])
 ==
