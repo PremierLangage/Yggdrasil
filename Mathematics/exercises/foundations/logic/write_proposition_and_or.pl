@@ -1,11 +1,6 @@
-extends = /Mathematics/template/mathdragdrop.pl
+extends = /model/basic/mathdragdrop.pl
 
 title = Ecrire une proposition
-
-lang = fr
-
-
-author = Moi
 
 before ==
 n=randint(20,30)
@@ -31,7 +26,7 @@ sol2=p2+" "+op+" "+p1
 drags = [drag1,drag2,drag3,drag4,drag5,drag6]
 ==
 
-text ==
+question ==
 Compléter la phrase suivante.
 ==
 
