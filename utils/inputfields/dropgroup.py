@@ -83,7 +83,7 @@ class DropGroup():
             label.disabled = True
 
     def get_value(self):
-        return [drop.value for drop in self.drops]
+        return [drop.content for drop in self.drops]
 
 def process_filledtext(filledtext, name, style):
     """
