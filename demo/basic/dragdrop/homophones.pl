@@ -15,6 +15,5 @@ inputblock == #|html|
 * Tu est toujours en retard, {{ input.drops[1]|component }} agaçant !
 * Je n'aime pas {{ input.drops[2]|component }} méthodes.
 
-
 {% for label in input.labels %} {{ label|component }} {% endfor %}
 ==
