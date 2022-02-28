@@ -41,6 +41,12 @@ input = DropGroup()
 ==
 
 process == #|py|
+if isinstance(labels, str):
+    _labels_ = labels.splitlines()
+elif isinstance(labels, list):
+    _labels_ = labels
+else:
+    _labels_ = []
 
 if nbdrops == -1:
     if isinstance(sol, str):
@@ -49,17 +55,11 @@ if nbdrops == -1:
         _sol_ = sol
     input.set_drops(len(_sol_))
     input.sol = _sol_
-    _labels_ = _sol_
+    for x in _sol_:
+        if x not in _labels_:
+            _labels_.append(x)
 else:
     input.set_drops(nbdrops)
-    _labels_ = []
-
-if isinstance(labels, str):
-    _labels_ = list(set(_labels_ +  labels.splitlines()))
-elif isinstance(labels, list):
-    _labels_ = list(set(_labels_ +  labels))
-else:
-    _labels_ = []
 
 input.set_labels(_labels_)
 
