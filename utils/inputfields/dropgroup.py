@@ -78,3 +78,28 @@ class DropGroup():
 
     def disable(self):
         pass
+
+
+def process_filledtext(filledtext, name, style):
+    """
+    Return exercice elements from a filled text.
+    
+    In the filled text the parts to be replaced by drop zones are between braces.
+    """
+    sol = []
+    counter = 0
+    dropblock = ''
+    solution = ''
+    start = 0
+    for m in re.finditer(r"{([^{}]+)}", filledtext):
+        end, newstart = m.span()
+        dropblock += filledtext[start:end]
+        solution += filledtext[start:end]
+        rep = "{{ "+ name + "[" + str(counter) + "]|component }}"
+        sol.append(m.group(1)) 
+        dropblock += rep
+        solution += rf'<span style="{style}">{m.group(1)}</span>' 
+        start = newstart
+        counter += 1
+    dropblock += filledtext[start:]
+    return sol, dropblock, solution
