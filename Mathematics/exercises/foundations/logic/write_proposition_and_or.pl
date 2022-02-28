@@ -21,9 +21,9 @@ div3=set(range(3,n+1,3))
 div5=set(range(5,n+1,5))
 S={'pairs':even,'impairs':odd,'divisibles par 3':div3,'divisibles par 5':div5}
 op=['et','et','ou','ou']
-p1=randitem(['pairs','impairs'])
-p2=randitem(['divisibles par 3', 'divisibles par 5'])
-op=randitem(['et','ou'])
+p1=choice(['pairs','impairs'])
+p2=choice(['divisibles par 3', 'divisibles par 5'])
+op=choice(['et','ou'])
 if op=='et':
     P=S[p1].intersection(S[p2])
 if op=='ou':
