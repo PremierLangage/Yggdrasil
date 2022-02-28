@@ -62,7 +62,7 @@ def process_filledtext(filledtext, name):
         rep = "{{ "+ name + "[" + str(counter) + "]|component }}"
         sol.append(m.group(1)) 
         newstring += rep
-        solution += rf'<span style="font-weight:bold;color:green">{m.group(1)}</span>' 
+        solution += rf'<span style="color:green">{m.group(1)}</span>' 
         start = newstart
         counter += 1
     newstring += filledtext[start:]
