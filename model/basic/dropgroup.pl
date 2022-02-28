@@ -51,6 +51,7 @@ elif isinstance(labels, list):
 else:
     _labels_ = []
 
+if nbdrops = 
 input.set_drops(len(_sol_))
 input.set_labels(list(set(_labels_ + _sol_)))
 input.sol = _sol_
