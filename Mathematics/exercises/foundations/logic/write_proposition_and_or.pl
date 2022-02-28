@@ -57,7 +57,7 @@ L'ensemble $! {{latexset}} !$ est l'ensemble des nombres entre 1 et {{n}} qui so
 ==
 
 evaluator ==
-ans=drop1.content+" "+drop2.content+" "+drop3.content
+ans = "".join(input.get_value())
 if ans==sol1 or ans==sol2:
     score=100
 else:
