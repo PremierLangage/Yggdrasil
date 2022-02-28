@@ -12,6 +12,7 @@ divisibles par 5
 ==
 
 before ==
+from sympy import FiniteSet
 from sympy2latex import latex
 n = randint(20,30)
 numbers = set(range(1,n+1))
