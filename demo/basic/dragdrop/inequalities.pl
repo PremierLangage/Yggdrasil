@@ -1,4 +1,4 @@
-extends = /model/basic/dragdrop.pl
+extends = /model/basic/dropgroup.pl
 
 before==
 numbers = []
