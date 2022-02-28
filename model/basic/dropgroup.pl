@@ -7,9 +7,6 @@ Compléter les phrases suivantes avec les étiquettes proposées.
 ==
 
 sol ==
-ces
-c'est
-ces
 ==
 
 labels ==
