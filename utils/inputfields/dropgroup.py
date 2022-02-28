@@ -80,7 +80,7 @@ class DropGroup():
             if score == 100:
                 drop.css = "success-state"
             else:
-                drop..css = "error-state"
+                drop.css = "error-state"
 
     def hide_feedback(self):
         pass
