@@ -12,15 +12,15 @@ divisibles par 5
 ==
 
 before ==
-n=randint(20,30)
-numbers=set(range(1,n+1))
+n = randint(20,30)
+numbers = set(range(1,n+1))
 even=set(range(2,n+1,2))
 odd=numbers.difference(even)
 div3=set(range(3,n+1,3))
 div5=set(range(5,n+1,5))
 S={'pairs':even,'impairs':odd,'divisibles par 3':div3,'divisibles par 5':div5}
 choices=[]
-numsol=list_randint_norep(randint(1,3),0,3)
+numsol=sample(randint(1,3),0,3)
 op=['et','et','ou','ou']
 p1=randitem(['pairs','impairs'])
 p2=randitem(['divisibles par 3', 'divisibles par 5'])
