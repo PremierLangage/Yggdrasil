@@ -63,13 +63,13 @@ def process_filledtext(filledtext, name):
         rep = "{{ "+ name + "[" + str(counter) + "]|component }}"
         sol.append(m.group(1)) 
         newstring += rep
-        solution += rf'<span style="color:green">{m.group(1)}</span>' 
+        solution += rf'<span style="{style}">{m.group(1)}</span>' 
         start = newstart
         counter += 1
     newstring += filledtext[start:]
     return sol, newstring, solution
 
-sol, inputblock1, solution = process_filledtext(filledtext, "input.drops")
+sol, inputblock1, solution = process_filledtext(filledtext, "input.drops", "color:green")
 input.set_drops(len(sol))
 input.set_labels(list(set(sol + _labels_)))
 inputblock =  inputblock1 + "\n\n" + input.labels_html()
