@@ -53,18 +53,16 @@ class DropGroup():
         return "".join(lst)
 
     def eval(self):
-        n = len(self.drops)
         num_right = 0
         num_wrong = 0
 
-        for i in range(n):
-            if self.drops[i].content == self.sol[i]:
+        for drop in self.drops:
+            if drop.content == self.sol[i]:
+                drop.score = 100
                 num_right += 1
-                self.drops[i].css = "success-state"
             else:
+                drop.score = 0
                 num_wrong +=1
-                self.drops[i].css = "error-state"
-
         if num_wrong > 0 :
             score = 0
         else:
