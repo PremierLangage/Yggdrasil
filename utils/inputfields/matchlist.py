@@ -9,7 +9,7 @@ class MatchList(Component):
         self.selector = 'c-match-list'
         self.decorator = 'MatchList'
         self.nodes = []
-        self._sol = []
+        self.sol = []
         super().__init__(**kwargs)
 
     def set_sources(self, sources):
@@ -57,7 +57,7 @@ class MatchList(Component):
         for node in self.nodes:
             node['multiple'] = True
 
-    def setdata_from_matches(self, matches):
+    def set_data_from_matches(self, matches):
         """
         Load matched pairs of items in the component.
         """ 
