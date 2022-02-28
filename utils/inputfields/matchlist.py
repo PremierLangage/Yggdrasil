@@ -8,6 +8,7 @@ class MatchList(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-match-list'
         self.decorator = 'MatchList'
+        self.scoring = 'RightMinusWrong'
         self.nodes = []
         self.sol = []
         super().__init__(**kwargs)
@@ -100,11 +101,11 @@ class MatchList(Component):
                 else:
                     nbwrong += 1
 
-        if scoring == "AllOrNothing":
+        if self.scoring == "AllOrNothing":
             score = all_or_nothing(nbright, nbwrong)
-        elif scoring == "RightMinusWrong":
+        elif self.scoring == "RightMinusWrong":
             score = right_minus_wrong(nbright, nbwrong, nbsol=len(self._sol))          
-        elif scoring == "Custom":
+        elif self.scoring == "Custom":
             score = custom_scoring(nbright, nbwrong, nbsol=len(self._sol), nbitems=len(self.items))
         else:
             raise ValueError(f"'{scoring}' is not a valid scoring")
