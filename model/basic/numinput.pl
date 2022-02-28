@@ -60,19 +60,18 @@ if 'sol' in locals():
 
 eval_scripts = ["customeval", "evaluator"] 
 
-customeval == #|py|
+evaluator == #|py|
 # This script can be used to perform a custom evaluation.
 # It should define a variable score.
 ==
 
-evaluator == #|py|
+endeval == #|py|
 if 'score' in locals():
     input.score = score
     if 'feedback' in locals():
         input.feedback = feedback
 else:
     score = input.eval()
-
 input.display_feedback()
 input.disable()
 ==
