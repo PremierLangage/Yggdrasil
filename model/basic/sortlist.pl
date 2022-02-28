@@ -18,7 +18,7 @@ elif isinstance(sortedlist, list):
 if not isinstance(_nbitems_, int):
     _nbitems_ = len(_sortedlist_)
 
-sortlist.setdata_from_list([_sortedlist_[i] for i in sorted(sample(range(len(_sortedlist_)), _nbitems_))])
+sortlist.set_data_from_list([_sortedlist_[i] for i in sorted(sample(range(len(_sortedlist_)), _nbitems_))])
 ==
 
 doc == #|python|
