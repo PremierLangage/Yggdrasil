@@ -32,7 +32,6 @@ if op=='ou':
 latexset=latex(FiniteSet(*P))
 sol1=p1+" "+op+" "+p2
 sol2=p2+" "+op+" "+p1
-drags = [drag1,drag2,drag3,drag4,drag5,drag6]
 ==
 
 question ==
