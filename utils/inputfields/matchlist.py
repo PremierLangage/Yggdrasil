@@ -112,7 +112,7 @@ class MatchList(Component):
 
         return score
 
-    def display_feedback():
+    def display_feedback(self):
         """
         Evaluate the answer stored in the component.
         """ 
