@@ -76,10 +76,11 @@ class DropGroup():
     def hide_feedback(self):
         pass
 
-
     def disable(self):
-        pass
-
+        for drop in self.drops:
+            drop.disabled = True
+        for label in self.labels:
+            label.disabled = True
 
 def process_filledtext(filledtext, name, style):
     """
