@@ -7,7 +7,7 @@ class SortList(Component):
 
     def __init__(self, **kwargs):
         self.selector = 'c-sort-list'
-        self.decorator = 'CustomSortList'
+        self.decorator = 'SortList'
         self.items = []
         self._sol = []
         super().__init__(**kwargs)
