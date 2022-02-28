@@ -13,6 +13,8 @@ sol ==
 labels ==
 ==
 
+shuffled = True
+
 # Input block
 
 inputblock == #|html|
