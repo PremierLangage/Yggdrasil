@@ -40,14 +40,6 @@ from dropgroup import DropGroup
 input = DropGroup()
 ==
 
-before == #|py|
-# This script can be used to generate
-# any keys (items, indsol, etc.)
-input.set_drops(2)
-input.set_labels(["AA", "BB", "CC"])
-input.sol = ["AA", "BB"]
-==
-
 process == # |py|
 if isinstance(sol, str):
     _sol_ = sol.splitlines()
@@ -68,8 +60,22 @@ input.sol = _sol_
 
 # Evaluation scripts
 
+eval_scripts = ["evaluator", "ending"] 
+
 evaluator == #|py|
-score = input.eval()
+# This script can be used to perform a custom evaluation of the answer.
+# It should define a variable score and a variable feedback (optional).
+# If no variable score is defined, an automatic evaluation of the answer
+# will be performed subsequently.
+==
+
+ending == #|py|
+if 'score' in locals():
+    input.score = score
+    if 'feedback' in locals():
+        input.feedback = feedback
+else:
+    score = input.eval()
 input.display_feedback()
 input.disable()
 ==
