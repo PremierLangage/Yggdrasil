@@ -46,8 +46,22 @@ input.set_labels(["AA", "BB", "CC"])
 input.sol = ["AA", "BB"]
 ==
 
-process == #|py|
+process == # |py|
+if isinstance(sol, str):
+    _sol_ = sol.splitlines()
+else:
+    _sol_ = sol
 
+if isinstance(labels, str):
+    _labels_ = labels.splitlines()
+elif isinstance(labels, list):
+    _labels_ = labels
+else:
+    _labels_ = []
+
+input.set_drops(len(_sol_))
+input.set_labels(list(set(_labels_ + _sol_)))
+input.sol = _sol_
 ==
 
 # Evaluation scripts
