@@ -36,9 +36,9 @@ class SortList(Component):
         """       
         order = [self._sol.index(item['id']) for item in self.items]
 
-        if scoring == "ExactOrder":
+        if self.scoring == "ExactOrder":
             score = exact_order(order)
-        elif scoring == "KendallTau":
+        elif self.scoring == "KendallTau":
             score = kendall_tau(order)         
         else:
             raise ValueError(f"'{scoring}' is not a valid scoring")
