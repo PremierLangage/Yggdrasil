@@ -11,6 +11,8 @@ divisibles par 3
 divisibles par 5
 ==
 
+shuffled = False
+
 nbdrops = 3
 
 before ==
