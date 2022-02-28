@@ -130,6 +130,6 @@ class MatchList(Component):
 
     def disable(self):
         """
-        Evaluate the answer stored in the component.
+        Disable the input field.
         """ 
         self.disabled = True
