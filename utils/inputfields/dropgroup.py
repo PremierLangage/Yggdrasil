@@ -28,16 +28,15 @@ class DropGroup():
         self.drops = kwargs.get('drops', [])
         self.labels = kwargs.get('labels', [])
         self.sol = kwargs.get('sol', [])
-        self.shuffled = kwargs.get('shuffled', False)
-
 
     def set_drops(self, n):
         self.drops = [Drop() for _ in range(n)]
 
     def set_labels(self, lst):
         self.labels = [Label(content=content) for content in lst]
-        if self.shuffled:
-            rd.shuffle(self.labels)
+
+    def shuffle(self):
+        rd.shuffle(self.labels)
 
     def labels_html(self):
         lst = []
