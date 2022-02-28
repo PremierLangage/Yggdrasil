@@ -14,6 +14,9 @@ for i in range(4):
 
 question ==
 Comparer les nombres suivants en utilisant le symbole adapté ({{ input.labels[0]|component }} ou {{ input.labels[1]|component }}).
+==
+
+inputblock ==
 {% for i in range(4) %}
 * {{ numbers[i][0] }}  {{ input.drops[i]|component }} {{ numbers[i][1] }}
 {% endfor %}
