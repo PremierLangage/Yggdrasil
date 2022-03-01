@@ -2,10 +2,6 @@ extends = /model/basic/basic.pl
 
 # Main keys
 
-question ==
-Quelle est la réponse ?
-==
-
 sol ==
 toto
 ==
