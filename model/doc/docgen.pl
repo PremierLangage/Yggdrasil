@@ -18,17 +18,17 @@ doc == #|json|
         },
         "nbitems": {
             "type": "(int, None)",
-            "default": "None"
+            "default": "None",
             "description": "Nombre d'items à proposer. Si cette clé vaut None, tous les items sont proposés."
         },
         "minright": {
             "type": "int",
-            "default": "0"
+            "default": "0",
             "description": "Nombre minimum de bonnes réponses à proposer."
         },
         "maxright": {
             "type": "(int, None)",
-            "default": "None"
+            "default": "None",
             "description": "Nombre minimum de bonnes réponses à proposer. Si cette clé vaut None, toutes les bonnes réponses sont proposées."
         },
         "scoring": {
