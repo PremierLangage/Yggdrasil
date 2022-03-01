@@ -75,6 +75,11 @@ apidoc == #|json|
             "type": "bool",
             "default": True,
             "description": "Valeur indiquant si les items seront mélangés."
+        },
+        "scoring": {
+            "type": "('AllOrNothing', 'RightMinusWrong', 'CorrectItems')",
+            "default": "'RightMinusWrong'",
+            "description": "Barème de l'exercice."
         }
     }
 }
