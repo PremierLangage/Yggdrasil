@@ -1,22 +1,19 @@
 extends = /model/basic/basic.pl
 
-# Main keys
+# Specific keys
 
-question ==
-Quelle est la réponse ?
-==
+items = []
 
-items ==
-Item 0
-Item 1
-Item 2
-==
-
-indsol = [0, 1]
+indsol = []
 
 shuffled = True
 
-# Input block
+scoring = "RightMinusWrong"
+
+# Question and input block
+
+question ==
+==
 
 inputblock == #|html|
 {{ input|component }}
@@ -56,6 +53,8 @@ score = input.eval()
 input.display_feedback()
 input.disable()
 ==
+
+# API documentation
 
 apidoc == #|json|
 {
