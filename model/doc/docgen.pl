@@ -29,7 +29,7 @@ doc == #|json|
         "maxright": {
             "type": "(int, None)",
             "default": "None",
-            "description": "Nombre minimum de bonnes réponses à proposer. Si cette clé vaut None, toutes les bonnes réponses sont proposées."
+            "description": "Nombre maximum de bonnes réponses à proposer. Si cette clé vaut None, toutes les bonnes réponses sont proposées."
         },
         "scoring": {
             "type": "('AllOrNothing', 'RightMinusWrong', 'CorrectItems')",
