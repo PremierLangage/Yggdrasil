@@ -8,7 +8,7 @@ wrong = []
 
 nbitems = None
 
-minright = None
+minright = 0
 
 maxright = None
 
