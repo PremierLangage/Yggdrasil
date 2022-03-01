@@ -1,26 +1,20 @@
 extends = /model/basic/basic.pl
 
-# Main keys
+# Specific keys
 
-question ==
-Quelle est la réponse ?
-==
+sol = []
 
-sol ==
-toto
-==
-
-casesens = False
-
-diffmeasure = EditDist
+diffmeasure = "EditDist"
 
 tol = 0
 
-# Input block
+casesens = False
 
 prefix ==
 Réponse :
 ==
+
+# Input block
 
 inputblock ==
 <div class="container">
@@ -82,6 +76,41 @@ input.display_feedback()
 input.disable()
 ==
 
+# API documentation
+
+apidoc == #|json|
+{
+    "name": "textinput",
+    "keys": {
+        "sol": {
+            "type": "(str, list[str])",
+            "default": "[]",
+            "description": "Liste des réponses acceptées. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+        },
+        "diffmeasure": {
+            "type": "('EditDist', 'EditRation')",
+            "default": "'EditDist'",
+            "description": "Mesure utilisée pour calculer l'écart entre la réponse saisie et les réponses acceptées."
+        },
+        "tol": {
+            "type": "(int, float)",
+            "default": "0",
+            "description": "Ecart maximum (par rapport à la mesure définie dans `diffmeasure`) pour considérer une réponse comme correcte."
+        },
+        "casesens": {
+            "type": "bool",
+            "default": "False",
+            "description": "Valeur indiquant si la casse est prise en compte pour évaluer la réponse."
+        },
+        "prefix": {
+            "type": "str",
+            "default": "'Réponse :'",
+            "description": "Texte affiché à gauche du champ de réponse."
+        }
+    }
+}
+==
+
 style.input ==
 <style>
 .mat-form-field-wrapper{
@@ -96,14 +125,3 @@ style.input ==
 </style>
 ==
 
-
-macros ==
-{% macro audio_button(sourcefile) -%}
-<button onclick="playAudio()" class="btn btn-info"><i class="fas fa-volume-up"></i></button>
-<audio id="Audio" style="display:none" src="{{ sourcefile }}"></audio> 
-<script>
-    var x = document.getElementById("Audio"); 
-    function playAudio() {x.play();} 
-</script>
-{%- endmacro %}
-==
