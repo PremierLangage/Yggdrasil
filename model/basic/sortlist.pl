@@ -60,7 +60,7 @@ input.disable()
 
 
 
-doc == #|json|
+apidoc == #|json|
 {
     "name": "sortlist",
     "keys": {
@@ -71,7 +71,7 @@ doc == #|json|
         },
         "nbitems": {
             "type": "(int, None)",
-            "default": None,
+            "default": "None",
             "description": "Nombre d'items à ordonner parmi la liste d'items. Si ce nombre n'est pas précisé, tous les items de la liste sont pris."
         },
         "scoring": {
