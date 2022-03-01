@@ -1,40 +1,34 @@
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
-
 doc == #|json|
 {
-    "name": "checkbox_rw",
+    "name": "textinput",
     "keys": {
-        "right": {
+        "sol": {
             "type": "(str, list[str])",
             "default": "[]",
-            "description": "Liste des bonnes réponses. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+            "description": "Liste des réponses acceptées. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
         },
-        "wrong": {
-            "type": "(str, list[str])",
-            "default": "[]",
-            "description": "Liste des mauvaises réponses. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+        "diffmeasure": {
+            "type": "('EditDist', 'EditRation')",
+            "default": "'EditDist'",
+            "description": "Mesure utilisée pour calculer l'écart entre la réponse saisie et les réponses acceptées."
         },
-        "nbitems": {
-            "type": "(int, None)",
-            "default": "None",
-            "description": "Nombre d'items à proposer. Si cette clé vaut None, tous les items sont proposés."
-        },
-        "minright": {
-            "type": "int",
+        "tol": {
+            "type": "(int, float)",
             "default": "0",
-            "description": "Nombre minimum de bonnes réponses à proposer."
+            "description": "Ecart maximum (par rapport à la mesure définie dans `diffmeasure`) pour considérer une réponse comme correcte."
         },
-        "maxright": {
-            "type": "(int, None)",
-            "default": "None",
-            "description": "Nombre maximum de bonnes réponses à proposer. Si cette clé vaut None, toutes les bonnes réponses sont proposées."
+        "casesens": {
+            "type": "bool",
+            "default": "False",
+            "description": "Valeur indiquant si la casse est prise en compte pour évaluer la réponse."
         },
-        "scoring": {
-            "type": "('AllOrNothing', 'RightMinusWrong', 'CorrectItems')",
-            "default": "'RightMinusWrong'",
-            "description": "Barème de l'exercice."
+        "prefix": {
+            "type": "str",
+            "default": "'Réponse :'",
+            "description": "Texte affiché à gauche du champ de réponse."
         }
     }
 }
