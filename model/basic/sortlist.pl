@@ -60,24 +60,24 @@ input.disable()
 
 
 
-doc == #|python|
+doc == #|json|
 {
     "name": "sortlist",
     "keys": {
         "sortedlist": {
             "type": "(str, list[str])",
             "default": "",
-            "description": "Liste des items."
+            "description": "Liste des items. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
         },
         "nbitems": {
             "type": "(int, None)",
             "default": None,
-            "description": "Nombre d'items à ordonner."
+            "description": "Nombre d'items à ordonner parmi la liste d'items. Si ce nombre n'est pas précisé, tous les items de la liste sont pris."
         },
         "scoring": {
             "type": "('KendalTau', 'ExactOrder')",
             "default": 'KendalTau',
-            "description": "Nombre d'items à ordonner."
+            "description": "Barème de l'exercice."
         }
     }
 }
