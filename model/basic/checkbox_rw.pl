@@ -67,7 +67,7 @@ apidoc == #|json|
             "default": "[]",
             "description": "Liste des bonnes réponses. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
         },
-        "right": {
+        "wrong": {
             "type": "(str, list[str])",
             "default": "[]",
             "description": "Liste des mauvaises réponses. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
