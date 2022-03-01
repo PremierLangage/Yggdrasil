@@ -14,7 +14,10 @@ shuffled = True
 
 scoring = "AllOrNothing"
 
-# Input block
+# Question and input block
+
+question ==
+==
 
 inputblock == #|html|
 {{ input|component }}
