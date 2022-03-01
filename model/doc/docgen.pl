@@ -13,7 +13,7 @@ doc == #|json|
         },
         "indsol": {
             "type": "list[int]",
-            "default": "[]"
+            "default": "[]",
             "description": "Indice des solutions dans la liste des items (la numérotation commence à 0)."
         },
         "shuffled": {
