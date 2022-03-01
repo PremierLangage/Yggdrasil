@@ -2,13 +2,13 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-doc == #|json|
+doc == #|py|
 {
     "name": "sortlist",
     "keys": {
         "sortedlist": {
             "type": "(str, list[str])",
-            "default": "",
+            "default": "[]",
             "description": "Liste des items. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
         },
         "nbitems": {
@@ -18,7 +18,7 @@ doc == #|json|
         },
         "scoring": {
             "type": "('KendalTau', 'ExactOrder')",
-            "default": 'KendalTau',
+            "default": "'KendalTau'",
             "description": "Barème de l'exercice."
         }
     }
