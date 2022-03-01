@@ -8,7 +8,7 @@ doc == #|json|
     "keys": {
         "items": {
             "type": "(str, list[str])",
-            "default": "",
+            "default": "[]",
             "description": "Liste des items. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
         },
         "indsol": {
