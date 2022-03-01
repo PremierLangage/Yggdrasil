@@ -6,11 +6,11 @@ right = []
 
 wrong = []
 
-nbitems = None
+nbitems = 0
 
 minright = 0
 
-maxright = None
+maxright = 0
 
 scoring = "AllOrNothing"
 
