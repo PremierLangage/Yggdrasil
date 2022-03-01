@@ -2,23 +2,28 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-doc == #|py|
+doc == #|json|
 {
-    "name": "sortlist",
+    "name": "checkbox",
     "keys": {
-        "sortedlist": {
+        "items": {
             "type": "(str, list[str])",
-            "default": "[]",
+            "default": "",
             "description": "Liste des items. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
         },
-        "nbitems": {
-            "type": "(int, None)",
-            "default": None,
-            "description": "Nombre d'items à ordonner parmi la liste d'items. Si ce nombre n'est pas précisé, tous les items de la liste sont pris."
+        "indsol": {
+            "type": "list[int]",
+            "default": "[]"
+            "description": "Indice des solutions dans la liste des items (la numérotation commence à 0)."
+        },
+        "shuffled": {
+            "type": "bool",
+            "default": True,
+            "description": "Valeur indiquant si les items seront mélangés."
         },
         "scoring": {
-            "type": "('KendalTau', 'ExactOrder')",
-            "default": "'KendalTau'",
+            "type": "('AllOrNothing', 'RightMinusWrong', 'CorrectItems')",
+            "default": "'RightMinusWrong'",
             "description": "Barème de l'exercice."
         }
     }
