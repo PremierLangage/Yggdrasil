@@ -76,7 +76,7 @@ doc == #|json|
         },
         "scoring": {
             "type": "('KendalTau', 'ExactOrder')",
-            "default": 'KendalTau',
+            "default": "'KendalTau'",
             "description": "Barème de l'exercice."
         }
     }
