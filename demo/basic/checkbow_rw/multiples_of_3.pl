@@ -12,5 +12,7 @@ Parmi les nombres suivants, lesquels sont des multiples de 3 ?
 ==
 
 nbitems = 5
+
 minright = 1
+
 maxright = 4
