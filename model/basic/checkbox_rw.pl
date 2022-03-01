@@ -12,8 +12,6 @@ minright = 0
 
 maxright = None
 
-shuffled = True
-
 scoring = "AllOrNothing"
 
 # Question and input block
