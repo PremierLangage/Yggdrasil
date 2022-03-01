@@ -74,8 +74,8 @@ apidoc == #|json|
         },
         "nbitems": {
             "type": "(int, None)",
-            "default": "None",
-            "description": "Nombre d'items à proposer. Si cette clé vaut None, tous les items sont proposés."
+            "default": "0",
+            "description": "Nombre d'items à proposer."
         },
         "minright": {
             "type": "int",
@@ -84,8 +84,8 @@ apidoc == #|json|
         },
         "maxright": {
             "type": "(int, None)",
-            "default": "None",
-            "description": "Nombre minimum de bonnes réponses à proposer. Si cette clé vaut None, toutes les bonnes réponses sont proposées."
+            "default": "0",
+            "description": "Nombre minimum de bonnes réponses à proposer."
         },
         "scoring": {
             "type": "('AllOrNothing', 'RightMinusWrong', 'CorrectItems')",
