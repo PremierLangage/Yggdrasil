@@ -73,7 +73,7 @@ apidoc == #|json|
             "description": "Liste des mauvaises réponses. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
         },
         "nbitems": {
-            "type": "(int, None)",
+            "type": "int",
             "default": "0",
             "description": "Nombre d'items à proposer."
         },
@@ -83,7 +83,7 @@ apidoc == #|json|
             "description": "Nombre minimum de bonnes réponses à proposer."
         },
         "maxright": {
-            "type": "(int, None)",
+            "type": "int",
             "default": "0",
             "description": "Nombre minimum de bonnes réponses à proposer."
         },
