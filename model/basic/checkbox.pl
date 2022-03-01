@@ -57,23 +57,23 @@ input.display_feedback()
 input.disable()
 ==
 
-doc == #|python|
+apidoc == #|json|
 {
     "name": "checkbox",
     "keys": {
         "items": {
-            "type": "(str, list)",
-            "default": "",
+            "type": "(str, list[str])",
+            "default": "[]",
             "description": "Liste des items."
         },
         "indsol": {
-            "type": "list",
-            "default": [],
+            "type": "list[int]",
+            "default": "[]",
             "description": "Indices des solutions dans la liste des items."
         },
         "shuffled": {
             "type": "bool",
-            "default": True,
+            "default": "True",
             "description": "Valeur indiquant si les items seront mélangés."
         }
     }
