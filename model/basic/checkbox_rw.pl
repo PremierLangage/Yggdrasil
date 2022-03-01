@@ -64,20 +64,30 @@ apidoc == #|json|
 {
     "name": "checkbox_rw",
     "keys": {
-        "items": {
+        "right": {
             "type": "(str, list[str])",
-            "default": "",
-            "description": "Liste des items. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+            "default": "[]",
+            "description": "Liste des bonnes réponses. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
         },
-        "indsol": {
-            "type": "list[int]",
-            "default": "[]"
-            "description": "Indice des solutions dans la liste des items (la numérotation commence à 0)."
+        "right": {
+            "type": "(str, list[str])",
+            "default": "[]",
+            "description": "Liste des mauvaises réponses. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
         },
-        "shuffled": {
-            "type": "bool",
-            "default": True,
-            "description": "Valeur indiquant si les items seront mélangés."
+        "nbitems": {
+            "type": "(int, None)",
+            "default": "None"
+            "description": "Nombre d'items à proposer. Si cette clé vaut None, tous les items sont proposés."
+        },
+        "minright": {
+            "type": "int",
+            "default": "0"
+            "description": "Nombre minimum de bonnes réponses à proposer."
+        },
+        "maxright": {
+            "type": "(int, None)",
+            "default": "None"
+            "description": "Nombre minimum de bonnes réponses à proposer. Si cette clé vaut None, toutes les bonnes réponses sont proposées."
         },
         "scoring": {
             "type": "('AllOrNothing', 'RightMinusWrong', 'CorrectItems')",
