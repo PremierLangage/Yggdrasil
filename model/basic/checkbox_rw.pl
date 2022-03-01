@@ -6,6 +6,8 @@ right = []
 
 wrong = []
 
+nbitems = None
+
 minright = None
 
 maxright = None
@@ -60,7 +62,7 @@ input.disable()
 
 apidoc == #|json|
 {
-    "name": "checkbox",
+    "name": "checkbox_rw",
     "keys": {
         "items": {
             "type": "(str, list[str])",
