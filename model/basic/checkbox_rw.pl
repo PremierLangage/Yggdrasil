@@ -1,36 +1,18 @@
 extends = /model/basic/basic.pl
 
-# Main keys
+# Specific keys
 
-question ==
-Quelle est la réponse ?
-==
+right = []
 
-right ==
-bonjour
-abc
-oui
-NON
-Ciao
-good_morning
-byeBye7
-\_UGE\_
-==
+wrong = []
 
+minright = None
 
-wrong ==
-Hi!
-au revoir
-6hello6
-def
-for
-good-afternoon
-f()
-==
-
-scoring = AllOrNothing
+maxright = None
 
 shuffled = True
+
+scoring = "AllOrNothing"
 
 # Input block
 
