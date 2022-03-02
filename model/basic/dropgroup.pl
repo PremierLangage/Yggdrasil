@@ -90,6 +90,35 @@ input.display_feedback()
 input.disable()
 ==
 
+apidoc == #|json|
+{
+    "name": "dropgroup",
+    "keys": {
+        "nbdrops": {
+            "type": "(int, None)",
+            "default": "None",
+            "description": "Nombre de zone de dépôts."
+        },
+        "sol": {
+            "type": "(str, list[str])",
+            "default": "[]",
+            "description": "Liste des solutions des zones de dépôts. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+        },
+        "labels": {
+            "type": "(str, list[str])",
+            "default": "[]",
+            "description": "Liste d'étiquettes supplémentaires. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+        },
+        "scoring": {
+            "type": "('AllOrNothing', 'RightMinusWrong', 'CorrectItems')",
+            "default": "'RightMinusWrong'",
+            "description": "Barème de l'exercice."
+        }
+    }
+}
+==
+
+
 # Style
 
 style.dragdrop ==
