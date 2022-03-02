@@ -39,7 +39,7 @@ apidoc == #|json|
 }
 ==
 before== #|python|
-doc = eval(doc)
+doc = eval(apidoc)
 ==
 
 evaluator== #|python|
