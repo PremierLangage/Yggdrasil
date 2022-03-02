@@ -28,6 +28,11 @@ apidoc == #|json|
             "default": "",
             "description": "Script Python permettant de générer les clés de l'exercice."
         },
+        "title": {
+            "type": "str",
+            "default": "",
+            "description": "Titre de l'exercice."
+        },
         "question": {
             "type": "str",
             "default": "",
