@@ -71,9 +71,9 @@ class MatchList(Component):
         if isinstance(matches, str): 
             matches = [match.split(separator) for match in matches.splitlines()]
 
-        if nbmatches is None:
-            nbmatches_ = len(matches)
-
+        if isinstance(nbmatches, int): 
+            matches = rd.sample(matches, nbmatches)
+        
         for source, target in matches:
             sourceid = str(uuid4())
             targetid = str(uuid4())
