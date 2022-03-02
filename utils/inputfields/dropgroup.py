@@ -100,7 +100,8 @@ def process_filledtext(filledtext, delimiters, name, style):
     """
     Return exercice elements from a filled text.
     
-    In the filled text the parts to be replaced by drop zones are between defined delimiters.
+    In the filled text the parts to be replaced by drop zones are between the defined delimiters.
+    The returned drop block uses name given in argument for the drop group.
     """
     sol = []
     counter = 0
