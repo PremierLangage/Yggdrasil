@@ -48,7 +48,7 @@ before == #|py|
 ==
 
 process == #|py|
-input.set_data_from_matches(matches, nbmatches)
+input.set_data_from_matches(matches, separator, nbmatches)
 input.add_targets(targets)
 input.shuffle()
 input.scoring = scoring
