@@ -28,6 +28,9 @@ class MatchList(Component):
         """
         Set target nodes.
         """
+        if isinstance(targets, str): 
+            targets = targets.splitlines()
+
         for target in targets:
             self.nodes.append({
                 "id": str(uuid4()),
@@ -58,12 +61,19 @@ class MatchList(Component):
         for node in self.nodes:
             node['multiple'] = True
 
-    def set_data_from_matches(self, matches):
+    def set_data_from_matches(self, matches, separator=",", nbmatches=None):
         """
         Load matched pairs of items in the component.
         """ 
         self.nodes = []
-        self._sol = []
+        self.sol = []
+
+        if isinstance(matches, str): 
+            matches = [match.split(separator) for match in matches.splitlines()]
+
+        if nbmatches is None:
+            nbmatches_ = len(matches)
+
         for source, target in matches:
             sourceid = str(uuid4())
             targetid = str(uuid4())
@@ -78,7 +88,7 @@ class MatchList(Component):
                 "target": True,
                 "multiple" : False
             })
-            self._sol.append({'source': sourceid, 'target': targetid})
+            self.sol.append({'source': sourceid, 'target': targetid})
         rd.shuffle(self.nodes)
 
     def shuffle(self):
