@@ -41,7 +41,7 @@ apidoc == #|json|
         "solution": {
             "type": "str",
             "default": "",
-            "description": "Template Markdown/HTML contenant l'énoncé de l'exercice."
+            "description": "Template Markdown/HTML contenant la correction de l'exercice."
         },
         "evaluator": {
             "type": "str",
