@@ -18,3 +18,31 @@ text =
 
 tplpage =@ /model/tplpage/basic.html
 style.basic =@ /model/css/basic.css.html
+
+apidoc == #|json|
+{
+    "name": "basic",
+    "keys": {
+        "before": {
+            "type": "str",
+            "default": "",
+            "description": "Script Python permettant de générer les clés de l'exercice."
+        },
+        "question": {
+            "type": "str",
+            "default": "",
+            "description": "Template Markdown/HTML contenant l'énoncé de l'exercice."
+        },
+        "inputblock": {
+            "type": "str",
+            "default": "",
+            "description": "Template Markdown/HTML contenant l'énoncé de l'exercice."
+        },
+        "evaluator": {
+            "type": "str",
+            "default": "",
+            "description": "Script Python permettant d'évaluer la réponse de l'exercice."
+        }
+    }
+}
+==
