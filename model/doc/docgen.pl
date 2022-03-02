@@ -6,7 +6,7 @@ apidoc == #|json|
     "name": "matchlist",
     "keys": {
         "matches": {
-            "matches": "(str, list[tuple[str, str]]",
+            "type": "(str, list[tuple[str, str]]",
             "default": "[]",
             "description": "Liste des correspondances (source, cible). Elle peut être saisie comme une liste de couples ou comme une chaîne multilignes (chaque ligne correspondant à une correspondance, les deux éléments étant distingués par un séparateur défini dans la clé `separator`)."
         },
