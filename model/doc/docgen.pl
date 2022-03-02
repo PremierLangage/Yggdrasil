@@ -3,32 +3,37 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 apidoc == #|json|
 {
-    "name": "dropgroup",
+    "name": "basic",
     "keys": {
-        "nbdrops": {
-            "type": "(int, None)",
-            "default": "None",
-            "description": "Nombre de zones de dépôt créées. Si cette clé vaut None, le nombre de zones créées est le nombre d'items de la clé `sol`"
+        "before": {
+            "type": "str",
+            "default": "",
+            "description": "Script Python permettant de générer les clés de l'exercice."
         },
-        "sol": {
-            "type": "(str, list[str])",
-            "default": "[]",
-            "description": "Liste des valeurs attendues dans les zones de dépôt. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+        "title": {
+            "type": "str",
+            "default": "",
+            "description": "Titre de l'exercice."
         },
-        "labels": {
-            "type": "(str, list[str])",
-            "default": "[]",
-            "description": "Liste d'étiquettes supplémentaires. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+        "question": {
+            "type": "str",
+            "default": "",
+            "description": "Template Markdown/HTML contenant l'énoncé de l'exercice."
         },
-        "shuffled": {
-            "type": "bool",
-            "default": "True",
-            "description": "Valeur indiquant si les étiquettes seront mélangées."
+        "inputblock": {
+            "type": "str",
+            "default": "",
+            "description": "Template Markdown/HTML contenant l'énoncé de l'exercice."
         },
-        "scoring": {
-            "type": "('AllOrNothing', 'RightMinusWrong', 'CorrectItems')",
-            "default": "'RightMinusWrong'",
-            "description": "Barème de l'exercice."
+        "solution": {
+            "type": "str",
+            "default": "",
+            "description": "Template Markdown/HTML contenant la correction de l'exercice."
+        },
+        "evaluator": {
+            "type": "str",
+            "default": "",
+            "description": "Script Python permettant d'évaluer la réponse de l'exercice."
         }
     }
 }
