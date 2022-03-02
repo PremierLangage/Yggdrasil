@@ -1,39 +1,43 @@
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
-doc == #|json|
+apidoc == #|json|
 {
-    "name": "textinput",
+    "name": "matchlist",
     "keys": {
-        "sol": {
+        "matches": {
+            "matches": "(str, list[tuple[str, str]]",
+            "default": "[]",
+            "description": "Liste des correspondances (source, cible). Elle peut être saisie comme une liste de couples ou comme une chaîne multilignes (chaque ligne correspondant à une correspondance, les deux éléments étant distingués par un séparateur défini dans la clé `separator`)."
+        },
+        "separator": {
+            "type": "str",
+            "default": "','",
+            "description": "Séparateur des éléments d'une correspondance (source, cible)."
+        },
+        "nbmatches": {
+            "type": "(int, None)",
+            "default": "None",
+            "description": "Nombre de correspondances à proposer parmi la liste de correspondances. Si cette clé vaut `None`, toutes les correspondances sont proposées."
+        },
+        "targets": {
             "type": "(str, list[str])",
             "default": "[]",
-            "description": "Liste des réponses acceptées. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+            "description": "Liste de cibles supplémentaires. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
         },
-        "diffmeasure": {
-            "type": "('EditDist', 'EditRation')",
-            "default": "'EditDist'",
-            "description": "Mesure utilisée pour calculer l'écart entre la réponse saisie et les réponses acceptées."
-        },
-        "tol": {
-            "type": "(int, float)",
-            "default": "0",
-            "description": "Ecart maximum (par rapport à la mesure définie dans `diffmeasure`) pour considérer une réponse comme correcte."
-        },
-        "casesens": {
+        "multiple": {
             "type": "bool",
-            "default": "False",
-            "description": "Valeur indiquant si la casse est prise en compte pour évaluer la réponse."
+            "default": "True",
+            "description": "Valeur indiquant si une cible peut être reliée à plusieurs sources."
         },
-        "prefix": {
-            "type": "str",
-            "default": "'Réponse :'",
-            "description": "Texte affiché à gauche du champ de réponse."
+        "scoring": {
+            "type": "('AllOrNothing', 'RightMinusWrong', 'CorrectItems')",
+            "default": "'RightMinusWrong'",
+            "description": "Barème de l'exercice."
         }
     }
 }
 ==
-
 before== #|python|
 doc = eval(doc)
 ==
