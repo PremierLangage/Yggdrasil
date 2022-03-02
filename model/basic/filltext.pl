@@ -41,17 +41,10 @@ before == #|py|
 
 process == #|py|
 from dropgroup import process_filledtext
-
-if isinstance(labels, str):
-    _labels_ = labels.splitlines()
-elif isinstance(labels, list):
-    _labels_ = labels
-else:
-    _labels_ = []
-
 sol, dropblock, solution = process_filledtext(filledtext, delimiters, "input.drops", "color:green")
 input.set_drops(len(sol))
-input.set_labels(list(set(sol + _labels_)))
+input.set_labels(sol)
+input.add_labels(labels)
 inputblock =  dropblock + "\n\n" + input.labels_html()
 input.sol = sol
 ==
