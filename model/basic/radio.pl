@@ -73,7 +73,7 @@ apidoc == #|json|
         },
         "shuffled": {
             "type": "bool",
-            "default": True,
+            "default": "True",
             "description": "Valeur indiquant si les items seront mélangés."
         }
     }
