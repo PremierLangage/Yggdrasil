@@ -48,25 +48,8 @@ before == #|py|
 ==
 
 process == #|py|
-import random as rd
-
-if isinstance(matches, str): 
-    _matches_ = [match.split(separator) for match in matches.splitlines()]
-else:
-    _matches_ = matches
-
-if isinstance(targets, str): 
-    _targets_ = targets.splitlines()
-else:
-    _targets_ = targets
-
-if isinstance(nbmatches, int):
-    _nbmatches_ = nbmatches
-else:
-    _nbmatches_ = len(_matches_)
-
-input.set_data_from_matches(rd.sample(_matches_, _nbmatches_))
-input.add_targets(_targets_)
+input.set_data_from_matches(matches, nbmatches)
+input.add_targets(targets)
 input.shuffle()
 input.scoring = scoring
 
