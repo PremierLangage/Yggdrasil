@@ -107,7 +107,6 @@ def process_filledtext(filledtext, delimiters, name, style):
     dropblock = ''
     solution = ''
     start = 0
-    pattern  = r"{([^{}]+)}"
     d0, d1 = delimiters
     pattern = d0 + "([^" + d0 + d1 + "]+)" + d1
     for m in re.finditer(pattern, filledtext):
