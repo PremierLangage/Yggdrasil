@@ -101,7 +101,7 @@ class MatchList(Component):
         nbright, nbwrong = 0, 0
         rightsource = []
         for link in self.links:
-            if {'source': link['source'], 'target': link['target']} in self._sol:
+            if {'source': link['source'], 'target': link['target']} in self.sol:
                 rightsource.append(link['source'])
 
         for node in self.nodes:
@@ -114,9 +114,9 @@ class MatchList(Component):
         if self.scoring == "AllOrNothing":
             score = all_or_nothing(nbright, nbwrong)
         elif self.scoring == "RightMinusWrong":
-            score = right_minus_wrong(nbright, nbwrong, nbsol=len(self._sol))          
+            score = right_minus_wrong(nbright, nbwrong, nbsol=len(self.sol))          
         elif self.scoring == "Custom":
-            score = custom_scoring(nbright, nbwrong, nbsol=len(self._sol), nbitems=len(self.items))
+            score = custom_scoring(nbright, nbwrong, nbsol=len(self.sol), nbitems=len(self.items))
         else:
             raise ValueError(f"'{scoring}' is not a valid scoring")
 
@@ -128,7 +128,7 @@ class MatchList(Component):
         """ 
         rightsource = []
         for link in self.links:
-            if {'source': link['source'], 'target': link['target']} in self._sol:
+            if {'source': link['source'], 'target': link['target']} in self.sol:
                 rightsource.append(link['source'])
 
         for node in self.nodes:
