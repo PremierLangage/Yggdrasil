@@ -3,17 +3,17 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 apidoc == #|json|
 {
-    "name": "filltext",
+    "name": "dropgroup",
     "keys": {
-        "filledtext": {
-            "type": "str",
-            "default": "",
-            "description": "Texte complet, avec les parties à compléter spécifiées par les délimiteurs définies dans la clé `delimiters`."
+        "nbdrops": {
+            "type": "(int, None)",
+            "default": "None",
+            "description": "Nombre de zones de dépôt."
         },
-        "delimiters": {
-            "type": "lst[str]",
-            "default": "['{', '}']",
-            "description": "Délimiteurs utilisés pour spécifier les parties à compléter."
+        "sol": {
+            "type": "(str, list[str])",
+            "default": "[]",
+            "description": "Liste des solutions des zones de dépôt. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
         },
         "labels": {
             "type": "(str, list[str])",
