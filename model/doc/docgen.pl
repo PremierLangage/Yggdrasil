@@ -8,17 +8,22 @@ apidoc == #|json|
         "nbdrops": {
             "type": "(int, None)",
             "default": "None",
-            "description": "Nombre de zones de dépôt."
+            "description": "Nombre de zones de dépôt créées. Si cette clé vaut None, le nombre de zones créées est le nombre d'items de la clé `sol`"
         },
         "sol": {
             "type": "(str, list[str])",
             "default": "[]",
-            "description": "Liste des solutions des zones de dépôt. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+            "description": "Liste des valeurs attendues dans les zones de dépôt. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
         },
         "labels": {
             "type": "(str, list[str])",
             "default": "[]",
             "description": "Liste d'étiquettes supplémentaires. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+        },
+        "shuffled": {
+            "type": "bool",
+            "default": "True",
+            "description": "Valeur indiquant si les étiquettes seront mélangées."
         },
         "scoring": {
             "type": "('AllOrNothing', 'RightMinusWrong', 'CorrectItems')",
