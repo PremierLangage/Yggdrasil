@@ -1,3 +1,7 @@
+# DO NOT MODIFY THIS FILE !
+
+# Ce modèle permet de fabriquer des exercices de correspondances.
+
 extends = /model/basic/basic.pl
 
 # Specific keys
@@ -14,7 +18,10 @@ multiple = False
 
 scoring = RightMinusWrong
 
-# Input block
+# Question and input block
+
+question ==
+==
 
 inputblock == #|html|
 {{ input|component }}
@@ -86,15 +93,15 @@ apidoc == #|json|
             "default": "[]",
             "description": "Liste des correspondances (source, cible). Elle peut être saisie comme une liste de couples ou comme une chaîne multilignes (chaque ligne correspondant à une correspondance, les deux éléments étant distingués par un séparateur défini dans la clé `separator`)."
         },
-        "indsol": {
-            "type": "list[int]",
-            "default": "[]"
-            "description": "Indice des solutions dans la liste des items (la numérotation commence à 0)."
+        "separator": {
+            "type": "str",
+            "default": "','",
+            "description": "Séparateur des éléments d'une correspondance (source, cible)."
         },
-        "shuffled": {
-            "type": "bool",
-            "default": True,
-            "description": "Valeur indiquant si les items seront mélangés."
+        "nbmatches": {
+            "type": "(int, None)",
+            "default": "None"
+            "description": "Nombre de correspondances à proposer parmi la liste de correspondances. Si cette clé vaut `None`, toutes les correspondances sont proposées."
         },
         "scoring": {
             "type": "('AllOrNothing', 'RightMinusWrong', 'CorrectItems')",
