@@ -9,7 +9,7 @@ Compléter les phrases suivantes avec les étiquettes proposées.
 filledtext ==
 ==
 
-delimiters = ["\[", "\]"]
+delimiters = ["{", "}"]
 
 labels = []
 
