@@ -100,8 +100,18 @@ apidoc == #|json|
         },
         "nbmatches": {
             "type": "(int, None)",
-            "default": "None"
+            "default": "None",
             "description": "Nombre de correspondances à proposer parmi la liste de correspondances. Si cette clé vaut `None`, toutes les correspondances sont proposées."
+        },
+        "targets": {
+            "type": "(str, list[str])",
+            "default": "[]",
+            "description": "Liste de cibles supplémentaires. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+        },
+        "multiple": {
+            "type": "bool",
+            "default": "True",
+            "description": "Valeur indiquant si une cible peut être reliée à plusieurs sources."
         },
         "scoring": {
             "type": "('AllOrNothing', 'RightMinusWrong', 'CorrectItems')",
