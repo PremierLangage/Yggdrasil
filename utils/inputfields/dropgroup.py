@@ -39,7 +39,7 @@ class DropGroup():
         if isinstance(labels, str):
             labels = labels.splitlines()
         for label in labels:
-            self.labels.append(Label(content=label)]
+            self.labels.append(Label(content=label))
 
     def shuffle(self):
         rd.shuffle(self.labels)
