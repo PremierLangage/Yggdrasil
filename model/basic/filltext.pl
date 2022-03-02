@@ -12,6 +12,8 @@ filledtext ==
 * Je n'aime pas {ces} méthodes.
 ==
 
+delimiters = ["\[", "\]"]
+
 labels ==
 ==
 
