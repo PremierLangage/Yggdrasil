@@ -52,7 +52,6 @@ input.set_data_from_matches(matches, nbmatches)
 input.add_targets(targets)
 input.shuffle()
 input.scoring = scoring
-
 if multiple:
     input.set_multiple()
 ==
