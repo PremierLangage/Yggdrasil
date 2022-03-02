@@ -3,32 +3,22 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 apidoc == #|json|
 {
-    "name": "matchlist",
+    "name": "filltext",
     "keys": {
-        "matches": {
-            "type": "(str, list[tuple[str, str]]",
-            "default": "[]",
-            "description": "Liste des correspondances (source, cible). Elle peut être saisie comme une liste de couples ou comme une chaîne multilignes (chaque ligne correspondant à une correspondance, les deux éléments étant distingués par un séparateur défini dans la clé `separator`)."
-        },
-        "separator": {
+        "filledtext": {
             "type": "str",
-            "default": "','",
-            "description": "Séparateur des éléments d'une correspondance (source, cible)."
+            "default": "",
+            "description": "Texte complet, avec les parties à compléter spécifiées par les délimiteurs définies dans la clé `delimiters`."
         },
-        "nbmatches": {
-            "type": "(int, None)",
-            "default": "None",
-            "description": "Nombre de correspondances à proposer parmi la liste de correspondances. Si cette clé vaut `None`, toutes les correspondances sont proposées."
+        "delimiters": {
+            "type": "lst[str]",
+            "default": "['{', '}']",
+            "description": "Délimiteurs utilisés pour spécifier les parties à compléter."
         },
-        "targets": {
+        "labels": {
             "type": "(str, list[str])",
             "default": "[]",
-            "description": "Liste de cibles supplémentaires. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
-        },
-        "multiple": {
-            "type": "bool",
-            "default": "True",
-            "description": "Valeur indiquant si une cible peut être reliée à plusieurs sources."
+            "description": "Liste d'étiquettes supplémentaires. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
         },
         "scoring": {
             "type": "('AllOrNothing', 'RightMinusWrong', 'CorrectItems')",
@@ -38,6 +28,7 @@ apidoc == #|json|
     }
 }
 ==
+
 before== #|python|
 doc = eval(apidoc)
 ==
