@@ -96,7 +96,7 @@ class DropGroup():
     def get_value(self):
         return [drop.content for drop in self.drops]
 
-def process_filledtext(filledtext, name, style):
+def process_filledtext(filledtext, delimiters, name, style):
     """
     Return exercice elements from a filled text.
     
@@ -107,7 +107,10 @@ def process_filledtext(filledtext, name, style):
     dropblock = ''
     solution = ''
     start = 0
-    for m in re.finditer(r"{([^{}]+)}", filledtext):
+    pattern  = r"{([^{}]+)}"
+    d0, d1 = delimiters
+    pattern = d0 + "([^" + d0 + d1 + "]+)" + d1
+    for m in re.finditer(pattern, filledtext):
         end, newstart = m.span()
         dropblock += filledtext[start:end]
         solution += filledtext[start:end]
