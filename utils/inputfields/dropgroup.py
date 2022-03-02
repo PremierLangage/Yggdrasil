@@ -35,6 +35,12 @@ class DropGroup():
     def set_labels(self, lst):
         self.labels = [Label(content=content) for content in lst]
 
+    def add_labels(self, labels):
+        if isinstance(labels, str):
+            labels = labels.splitlines()
+        for label in labels:
+            self.labels.append(Label(content=label)]
+
     def shuffle(self):
         rd.shuffle(self.labels)
 
