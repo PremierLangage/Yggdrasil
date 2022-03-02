@@ -1,20 +1,18 @@
 extends = /model/basic/basic.pl
 
-# Main keys
+# Specific keys
 
-question ==
-Quelle est la réponse ?
-==
-
-multiple = False
+matches = []
 
 nbmatches = None
-targets = []
 
 separator = ","
 
-scoring = RightMinusWrong
+targets = []
 
+multiple = False
+
+scoring = RightMinusWrong
 
 # Input block
 
@@ -75,4 +73,34 @@ evaluator == #|py|
 score = input.eval()
 input.display_feedback()
 input.disable()
+==
+
+# API documentation
+
+apidoc == #|json|
+{
+    "name": "matchlist",
+    "keys": {
+        "matches": {
+            "matches": "(str, list[tuple[str, str]]",
+            "default": "[]",
+            "description": "Liste des correspondances (source, cible). Elle peut être saisie comme une liste de couples ou comme une chaîne multilignes (chaque ligne correspondant à une correspondance, les deux éléments étant distingués par un séparateur défini dans la clé `separator`)."
+        },
+        "indsol": {
+            "type": "list[int]",
+            "default": "[]"
+            "description": "Indice des solutions dans la liste des items (la numérotation commence à 0)."
+        },
+        "shuffled": {
+            "type": "bool",
+            "default": True,
+            "description": "Valeur indiquant si les items seront mélangés."
+        },
+        "scoring": {
+            "type": "('AllOrNothing', 'RightMinusWrong', 'CorrectItems')",
+            "default": "'RightMinusWrong'",
+            "description": "Barème de l'exercice."
+        }
+    }
+}
 ==
