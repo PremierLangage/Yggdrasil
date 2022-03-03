@@ -2,7 +2,9 @@ extends = /model/basic/utils.pl
 extends = /model/basic/hackpage.pl
 extends = messages_math.pl
 
+# Specific keys
 
+keypad = []
 text =
 form = 
 latexsettings.ln_notation = True
