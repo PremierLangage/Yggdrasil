@@ -1,16 +1,16 @@
 extends = /model/basic/basic.pl
 
-# Main keys
+# Specific keys
 
 question ==
 Quelle est la réponse ?
 ==
 
-# Input block
-
 prefix ==
 Réponse :
 ==
+
+# Input block
 
 inputblock ==
 <div class="container">
@@ -76,4 +76,34 @@ else:
     score = input.eval()
 input.display_feedback()
 input.disable()
+==
+
+# API documentation
+
+apidoc == #|json|
+{
+    "name": "numinput",
+    "keys": {
+        "sol": {
+            "type": "(int, float)",
+            "default": "0",
+            "description": "Bonne réponse."
+        },
+        "diffmeasure": {
+            "type": "('AbsError', 'RelError')",
+            "default": "'AbsError'",
+            "description": "Mesure utilisée pour calculer l'écart entre la réponse saisie et la réponse acceptée."
+        },
+        "tol": {
+            "type": "(int, float)",
+            "default": "0",
+            "description": "Ecart maximum (par rapport à la mesure définie dans `diffmeasure`) pour considérer une réponse comme correcte."
+        },
+        "prefix": {
+            "type": "str",
+            "default": "'Réponse :'",
+            "description": "Texte affiché à gauche du champ de réponse."
+        }
+    }
+}
 ==
