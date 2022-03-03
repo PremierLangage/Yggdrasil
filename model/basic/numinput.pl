@@ -55,6 +55,7 @@ before == #|py|
 
 process == #|py|
 input.evalparam = {'diffmeasure': diffmeasure, 'tol': tol}
+input.sol = sol
 ==
 
 # Evaluation scripts
