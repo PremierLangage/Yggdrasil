@@ -11,9 +11,13 @@ class NumInput(Component):
         super().__init__(**kwargs)
 
     def eval(self):
-    # TODO : reprendre les modes d'évaluations
-    # plus sophistiqués du modèle input
-        if self.sol == self.value:
+        diffmeasure = self.evalparam.get('diffmeasure', 'AbsError')
+        tol = self.evalparam.get('tol', 0)
+        if diffmeasure == 'AbsError':
+            diff = abs(self.sol - self.value)
+        elif diffmeasure == 'RelError':
+            diff = abs(self.sol - self.value)/abs(self.sol)
+        if diff <= tol:
             self.score = 100
         else:
             self.score = 0
@@ -34,7 +38,7 @@ class NumInput(Component):
         """
         Disable the input field.
         """
-        self.type = 'text' # doesn't work when the type is 'number'
+        self.type = 'text' # HACK : doesn't work when the type is 'number'
         self.value = str(self.value)
         self.disabled = True
 
