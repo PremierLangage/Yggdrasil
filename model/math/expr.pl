@@ -3,7 +3,8 @@
 
 extends = /model/math/input.pl
 
-# Evaluation parameters
+# Specific keys
+
 input_type = "expr"
 checkratsimp = True
 symbol_dict = {'e': E}
