@@ -3,37 +3,27 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 apidoc == #|json|
 {
-    "name": "basic",
+    "name": "numinput",
     "keys": {
-        "before": {
-            "type": "str",
-            "default": "",
-            "description": "Script Python permettant de générer les clés de l'exercice."
+        "sol": {
+            "type": "(int, float)",
+            "default": "0",
+            "description": "Bonne réponse."
         },
-        "title": {
-            "type": "str",
-            "default": "",
-            "description": "Titre de l'exercice."
+        "diffmeasure": {
+            "type": "('AbsError', 'RelError')",
+            "default": "'AbsError'",
+            "description": "Mesure utilisée pour calculer l'écart entre la réponse saisie et la réponse acceptée."
         },
-        "question": {
-            "type": "str",
-            "default": "",
-            "description": "Template Markdown/HTML contenant l'énoncé de l'exercice."
+        "tol": {
+            "type": "(int, float)",
+            "default": "0",
+            "description": "Ecart maximum (par rapport à la mesure définie dans `diffmeasure`) pour considérer une réponse comme correcte."
         },
-        "inputblock": {
+        "prefix": {
             "type": "str",
-            "default": "",
-            "description": "Template Markdown/HTML contenant l'énoncé de l'exercice."
-        },
-        "solution": {
-            "type": "str",
-            "default": "",
-            "description": "Template Markdown/HTML contenant la correction de l'exercice."
-        },
-        "evaluator": {
-            "type": "str",
-            "default": "",
-            "description": "Script Python permettant d'évaluer la réponse de l'exercice."
+            "default": "'Réponse :'",
+            "description": "Texte affiché à gauche du champ de réponse."
         }
     }
 }
