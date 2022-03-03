@@ -28,7 +28,7 @@ before== #|python|
 doc = eval(apidoc)
 from jinja2 import Environment, BaseLoader, contextfilter, Template
 Env = Environment(loader=BaseLoader())
-text = Env.from_string(text).render({'doc': doc})
+text = "{% raw %}\n" + Env.from_string(text).render({'doc': doc}) + "{% endraw %}"
 ==
 
 evaluator== #|python|
