@@ -3,27 +3,22 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 apidoc == #|json|
 {
-    "name": "numinput",
+    "name": "expr",
     "keys": {
         "sol": {
+            "type": "Expr",
+            "default": "",
+            "description": "Bonne réponse. Elle doit être définie dans le script `before` comme un objet SymPy de type Expr."
+        },
+        "equality": {
+            "type": "('', 'UpToConstant', 'Modulo')",
+            "default": "''",
+            "description": "Type d'égalitée utilisé : égalité stricte (''), égalité à une constante près ('UpToConstant'), égalité modulo un nombre ('Modulo')."
+        },
+        "modulo": {
             "type": "(int, float)",
             "default": "0",
-            "description": "Bonne réponse."
-        },
-        "diffmeasure": {
-            "type": "('AbsError', 'RelError')",
-            "default": "'AbsError'",
-            "description": "Mesure utilisée pour calculer l'écart entre la réponse saisie et la réponse acceptée."
-        },
-        "tol": {
-            "type": "(int, float)",
-            "default": "0",
-            "description": "Ecart maximum (par rapport à la mesure définie dans `diffmeasure`) pour considérer une réponse comme correcte."
-        },
-        "prefix": {
-            "type": "str",
-            "default": "'Réponse :'",
-            "description": "Texte affiché à gauche du champ de réponse."
+            "description": "Nombre utilisé dans le cas d'une égalité modulo un nombre."
         }
     }
 }
