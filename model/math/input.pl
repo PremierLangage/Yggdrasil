@@ -14,6 +14,7 @@ prefix = Réponse :
 latexsettings.ln_notation = True
 latexsettings.inv_trig_style = full
 
+
 input_type = "expr"
 
 mathimport ==
