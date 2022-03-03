@@ -41,7 +41,9 @@ grade = (100, 'OK')
 title=
 
 form ==
-{{ doc.name }}
+{% raw %}
+{{ text }}
+{% endraw %}
 ==
 
 text =@ template.html
