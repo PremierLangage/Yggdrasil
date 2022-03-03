@@ -4,11 +4,16 @@ extends = messages_math.pl
 
 # Specific keys
 
+
 keypad = []
-text =
-form = 
+
+embed =
+
+prefix = Réponse :
+
 latexsettings.ln_notation = True
 latexsettings.inv_trig_style = full
+
 input_type = "expr"
 
 mathimport ==
@@ -31,9 +36,7 @@ jinja_keys = ["prefix", "question", "solution", "inputblock"]
 before_scripts = ["mathimport", "init_input", "before", "process"]
 eval_scripts = ["evalparam", "evaluator"]
 
-prefix = Réponse :
-keypad = []
-embed =
+
 
 title = Title
 
@@ -112,3 +115,6 @@ function onBeforeSubmitPL() {
 }
 </script>
 ==
+
+text =
+form = 
