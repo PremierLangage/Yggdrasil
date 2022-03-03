@@ -119,3 +119,27 @@ function onBeforeSubmitPL() {
 
 text =
 form = 
+
+
+apidoc == #|json|
+{
+    "name": "input",
+    "keys": {
+        "sol": {
+            "type": "Expr",
+            "default": "",
+            "description": "Bonne réponse. Elle doit être définie dans le script `before` comme un objet SymPy de type Expr."
+        },
+        "keypad": {
+            "type": "('', 'UpToConstant', 'Modulo')",
+            "default": "''",
+            "description": "Type d'égalitée utilisé : égalité stricte (''), égalité à une constante près ('UpToConstant'), égalité modulo un nombre ('Modulo')."
+        },
+        "prefix": {
+            "type": "str",
+            "default": "0",
+            "description": "Nombre utilisé dans le cas d'une égalité modulo un nombre."
+        }
+    }
+}
+==
