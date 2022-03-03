@@ -2,9 +2,11 @@ extends = /model/basic/basic.pl
 
 # Specific keys
 
-question ==
-Quelle est la réponse ?
-==
+sol = 0
+
+diffmeasure = "AbsError"
+
+tol = 0
 
 prefix ==
 Réponse :
