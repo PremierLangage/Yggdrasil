@@ -125,20 +125,40 @@ apidoc == #|json|
 {
     "name": "input",
     "keys": {
-        "sol": {
-            "type": "Expr",
+        "before": {
+            "type": "str",
             "default": "",
-            "description": "Bonne réponse. Elle doit être définie dans le script `before` comme un objet SymPy de type Expr."
+            "description": "Script Python permettant de générer les clés de l'exercice."
         },
+        "title": {
+            "type": "str",
+            "default": "",
+            "description": "Titre de l'exercice."
+        },
+        "question": {
+            "type": "str",
+            "default": "",
+            "description": "Template Markdown/HTML contenant l'énoncé de l'exercice."
+        },
+        "inputblock": {
+            "type": "str",
+            "default": "",
+            "description": "Template Markdown/HTML contenant l'énoncé de l'exercice."
+        },
+        "solution": {
+            "type": "str",
+            "default": "",
+            "description": "Template Markdown/HTML contenant la correction de l'exercice."
+        },
+        "evaluator": {
+            "type": "str",
+            "default": "",
+            "description": "Script Python permettant d'évaluer la réponse de l'exercice."
+        }
         "keypad": {
-            "type": "('', 'UpToConstant', 'Modulo')",
+            "type": "[]",
             "default": "''",
             "description": "Type d'égalitée utilisé : égalité stricte (''), égalité à une constante près ('UpToConstant'), égalité modulo un nombre ('Modulo')."
-        },
-        "prefix": {
-            "type": "str",
-            "default": "0",
-            "description": "Nombre utilisé dans le cas d'une égalité modulo un nombre."
         }
     }
 }
