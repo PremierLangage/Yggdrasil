@@ -54,8 +54,7 @@ before == #|py|
 ==
 
 process == #|py|
-if 'sol' in locals():
-  input.sol = sol
+input.evalparam = {'diffmeasure': diffmeasure, 'tol': tol}
 ==
 
 # Evaluation scripts
