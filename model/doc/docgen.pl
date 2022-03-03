@@ -41,6 +41,9 @@ apidoc == #|json|
 
 before== #|python|
 doc = eval(apidoc)
+from jinja2 import Environment, BaseLoader, contextfilter, Template
+Env = Environment(loader=BaseLoader())
+text = Env.from_string(text).render({'doc': doc})
 ==
 
 evaluator== #|python|
@@ -51,6 +54,7 @@ grade = (100, 'OK')
 
 
 title=
+
 form ==
 {{ doc.name }}
 ==
