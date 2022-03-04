@@ -14,6 +14,7 @@ class CustomLatexPrinter(LatexPrinter):
         _settings = {}
         _settings['interv_rev_brack'] = settings.pop('interv_rev_brack', False)
         LatexPrinter.__init__(self, settings)
+        self._settings = _settings
 
     
     # A enlever ? Bug MD fixé ?
