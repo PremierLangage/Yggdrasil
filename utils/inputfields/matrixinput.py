@@ -4,6 +4,8 @@ from evalsympy import eval_matrix
 
 class MatrixInput(Component):
 
+    message = {}
+
     def __init__(self, **kwargs):
         self.selector = 'c-math-matrix'
         self.decorator = 'MatrixInput'
