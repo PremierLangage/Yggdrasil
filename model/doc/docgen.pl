@@ -1,24 +1,25 @@
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
+
 apidoc == #|json|
 {
-    "name": "autoinput",
+    "name": "complex",
     "keys": {
         "sol": {
-            "type": "(str, list[str])",
-            "default": "[]",
-            "description": "Liste des réponses acceptées. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
-        },
-        "items": {
-            "type": "(str, list[str])",
+            "type": "Complex",
             "default": "",
-            "description": "Liste des items. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+            "description": "Bonne réponse. Elle doit être définie dans le script `before` comme un objet SymPy de type Complex."
         },
-        "prefix": {
+        "complex_form": {
+            "type": "('', 'Cartesian', 'Exponential')",
+            "default": "''",
+            "description": "Forme attendue de la réponse de l'élève : pas de forme particulière (''), forme cartésienne ('Cartesian'), forme exponentielle ('Exponential')."
+        },
+        "imaginary_unit": {
             "type": "str",
-            "default": "'Réponse :'",
-            "description": "Texte affiché à gauche du champ de réponse."
+            "default": "'i'",
+            "description": "Nom de l'unité imaginaire utilisée pour interpréter la réponse."
         }
     }
 }
