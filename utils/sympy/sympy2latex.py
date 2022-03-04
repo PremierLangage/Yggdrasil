@@ -11,7 +11,7 @@ class CustomLatexPrinter(LatexPrinter):
     """
 
     def __init__(self, settings=None):
-        self._settings['interv_rev_brack'] = settings.pop('interv_rev_brack', False)
+        #self._settings['interv_rev_brack'] = settings.pop('interv_rev_brack', False)
         settings.pop('interv_rev_brack', None)
         LatexPrinter.__init__(self, settings)
 
