@@ -801,10 +801,6 @@ def eval_matrix(matans, sol):
     """
     Evaluate an answer when the solution is a matrix.
     """
-    try:
-        ans = sp.Matrix(matans)
-    except:
-        return (-1, "NotMat")
     if ans.shape != sol.shape:
         return (0, "MatWrongSize")
     if not ans.equals(sol):
