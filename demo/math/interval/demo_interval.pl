@@ -5,5 +5,5 @@ sol = Interval(0, 2)
 ==
 
 question ==
-Entrer l'intervalle {{ sol|latex }}
+Entrer l'intervalle $! {{ sol|latex }} !$.
 ==
