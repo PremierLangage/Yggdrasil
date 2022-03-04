@@ -1,12 +1,17 @@
 extends = /model/basic/basic.pl
 
-# Main keys
+# Specific keys
 
-sol ==
-toto
+sol = ""
+
+items = []
+
+prefix = "Réponse :"
+
+# Question and input block
+
+question ==
 ==
-
-# Input block
 
 inputblock == #|html|
 {{ input|component }}
@@ -43,4 +48,29 @@ evaluator == #|py|
 score = input.eval()
 input.display_feedback()
 input.disable()
+==
+
+# API documentation
+
+apidoc == #|json|
+{
+    "name": "autoinput",
+    "keys": {
+        "sol": {
+            "type": "(str, list[str])",
+            "default": "[]",
+            "description": "Liste des réponses acceptées. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+        },
+        "items": {
+            "type": "(str, list[str])",
+            "default": "",
+            "description": "Liste des items. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+        },
+        "prefix": {
+            "type": "str",
+            "default": "'Réponse :'",
+            "description": "Texte affiché à gauche du champ de réponse."
+        }
+    }
+}
 ==
