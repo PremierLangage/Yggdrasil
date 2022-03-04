@@ -25,11 +25,11 @@ from plrandom import randint, sampleint
 from sympy2latex import latex
 from latex2sympy import latex2sympy
 ==
+
+
 jinja_keys = ["prefix", "question", "solution", "inputblock"]
 before_scripts = ["mathimport", "initinput", "before", "process"]
 eval_scripts = ["evalparam", "evaluator"]
-
-
 
 title = Title
 
@@ -56,10 +56,6 @@ solution ==
 {{ prefix }} 
 $! {{ sol|latex }} !$
 </div>
-==
-
-evalparam ==
-
 ==
 
 evaluator ==
@@ -89,15 +85,12 @@ else:
 ==
 
 
-form2 ==
+inputblock ==
 <div style="text-align:center">
-{{ mat|component }}
+{{ input|component }}
 </div>
 ==
 
-form ==
-{{ mat|component }}
-==
 
 settings.feedback = rightwrong
 
