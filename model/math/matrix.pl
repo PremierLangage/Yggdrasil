@@ -70,7 +70,9 @@ tplpage =@ /model/tplpage/basicmath.html
 
 
 inputblock ==
+<div style="text-align:center">
 {{ input|component }}
+</div>
 ==
 
 
@@ -85,18 +87,7 @@ else:
 ==
 
 
-inputblock ==
-<div style="text-align:center">
-{{ input|component }}
-</div>
-==
 
-
-settings.feedback = rightwrong
-
-settings.maxattempt % 1
-
-extends = messages_math.pl
 
 style.matrix ==
 .matrix-input {
@@ -109,15 +100,4 @@ style.matrix ==
     background-color: transparent !important;
     z-index:10;
 }
-==
-
-
-evaluator ==
-from evalsympy import eval_matrix
-score, error = eval_matrix(mat.getmatrix(), sol)
-feedback = message[error]
-==
-
-solution ==
-La solution est $$\left( {{ sol|latex }} \right).$$
 ==
