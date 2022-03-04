@@ -34,3 +34,20 @@ class MatrixInput(Component):
         """
         return [[item['value'] for item in row] for row in self.matrix]
         
+    def display_feedback(self):
+        """
+        Display visual feedback.
+        """
+        pass
+
+    def hide_feedback(self):
+        """
+        Hide visual feedback.
+        """
+        pass
+
+    def disable(self):
+        """
+        Disable the input field.
+        """
+        self.disabled = True
