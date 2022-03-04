@@ -9,6 +9,7 @@ class MatrixInput(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-math-matrix'
         self.decorator = 'MatrixInput'
+        self.sol = kwargs.get('sol', None)
         super().__init__(**kwargs)
 
     def set_matrix(self, M):
