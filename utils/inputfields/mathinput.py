@@ -1,5 +1,5 @@
 from uuid import uuid4
-from evalsympy import eval_expr, eval_complex, eval_poly, eval_set, eval_tuple
+from evalsympy import eval_expr, eval_complex, eval_poly, eval_set, eval_tuple, eval_interval
 from jinja2 import Template
 
 std_keypad = {
@@ -70,6 +70,8 @@ class MathInput:
             score, error = eval_set(self.value, self.sol, **self.evalparam)
         elif self.type == "tuple":
             score, error = eval_tuple(self.value, self.sol, **self.evalparam)
+        elif self.type == "interval":
+            score, error = eval_interval(self.value, self.sol, **self.evalparam)
         self.score = score
         self.feedback = MathInput.message.get(error, f"Error: {error}")
 
