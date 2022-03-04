@@ -49,6 +49,7 @@ if resizable:
     input.set_zeros(*initsize)
 else:
     input.set_zeros(sol.rows, sol.cols)
+input.evalparam = {}
 ==
 
 
