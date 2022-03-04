@@ -110,8 +110,8 @@ class CustomLatexPrinter(LatexPrinter):
             return r"\left%s%s, %s\right%s" % \
                     (left, self._print(i.start), self._print(i.end), right)
 
-
-    def _print_MatrixBase(self, expr):
+    # A enlever ? Bug MD fixé ?
+    def XXX_print_MatrixBase(self, expr):
         """
         Return a LaTeX code for a Matrix object.
 
