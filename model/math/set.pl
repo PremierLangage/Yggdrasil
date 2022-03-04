@@ -3,11 +3,13 @@
 
 extends = /model/math/input.pl
 
-# Evaluation parameters
+# Specific keys
+
+wobracket = False
+
 input_type = "set"
 checkratsimp = True
 symbol_dict = {'e': E}
-wobracket = False
 
 evalparam ==
 from sympy import sympify
@@ -25,7 +27,7 @@ apidoc == #|json|
         },
         "wobracket": {
             "type": "('', 'UpToConstant', 'Modulo')",
-            "default": "''",
+            "default": "'False",
             "description": "Type d'égalitée utilisé : égalité stricte (''), égalité à une constante près ('UpToConstant'), égalité modulo un nombre ('Modulo')."
         }
     }
