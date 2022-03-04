@@ -16,6 +16,8 @@ from sympy import sympify
 input.evalparam = {'wobracket': wobracket, 'checkratsimp': checkratsimp, 'local_dict': sympify(symbol_dict)}
 ==
 
+# API documentation
+
 apidoc == #|json|
 {
     "name": "set",
