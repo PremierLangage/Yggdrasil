@@ -17,6 +17,8 @@ poly_var = str(poly(sol).gen)
 input.evalparam = {'var': poly_var, 'form': poly_form}
 ==
 
+# API documentation
+
 apidoc == #|json|
 {
     "name": "poly",
@@ -40,7 +42,7 @@ apidoc == #|json|
             "type": "(str, None)",
             "default": "None",
             "description": "Variable du polynôme. Si cette clé vaut None, la variable est détectée automatiquement."
-        },
+        }
     }
 }
 ==
