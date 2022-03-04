@@ -42,7 +42,7 @@ class MatrixInput(Component):
         """
         Evaluate the input field.
         """
-        score, error = eval_matrix(self.get_value(), self.sol, **self.evalparam)
+        score, error = eval_matrix(sp.Matrix(self.get_value()), self.sol, **self.evalparam)
         self.score = score
         self.feedback = MathInput.message.get(error, f"Error: {error}")
         return self.score
