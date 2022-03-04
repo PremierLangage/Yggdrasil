@@ -2,7 +2,7 @@ extends = /model/math/matrix.pl
 
 
 before ==
-from randsympy import rand_int_matrix
+from randsympy import randint_matrix
 n = 2
 coeffbound = 3
 A = randmatrix(n, n, coeffbound)
