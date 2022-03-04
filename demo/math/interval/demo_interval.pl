@@ -1,7 +1,7 @@
 extends = /model/math/interval.pl
 
 before ==
-sol = Interval(0, 2)
+sol = Interval.Ropen(0, 2)
 ==
 
 question ==
