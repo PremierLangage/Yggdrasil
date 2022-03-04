@@ -28,7 +28,7 @@ before== #|python|
 doc = eval(apidoc)
 from jinja2 import Environment, BaseLoader, contextfilter, Template
 Env = Environment(loader=BaseLoader())
-text = "```" + Env.from_string(text).render({'doc': doc}) + "```"
+text = "``` \n" + Env.from_string(text).render({'doc': doc}) + "``` \n"
 ==
 
 evaluator== #|python|
@@ -40,9 +40,6 @@ grade = (100, 'OK')
 
 title=
 
-form ==
-{{ text }}
-==
 
 text =@ template.html
 
