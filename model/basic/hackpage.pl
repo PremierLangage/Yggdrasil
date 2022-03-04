@@ -1,6 +1,8 @@
 # HACK pour modifier l'apparence de la page html de l'exercice
 
-title = 
+title = ""
+
+text = ""
 
 style.hackpage == #|html|
 <style>
