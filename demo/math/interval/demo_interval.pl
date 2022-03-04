@@ -5,5 +5,5 @@ interv = Interval(0, 2)
 ==
 
 question ==
-Entrer l'intervalle 
+Entrer l'intervalle {{ interv|latex }}
 ==
