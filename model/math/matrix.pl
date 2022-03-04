@@ -59,6 +59,8 @@ $! {{ sol|latex }} !$
 ==
 
 evaluator ==
+from mathinput import MatrixInput
+MatrixInput.message = message
 input.eval()
 score = input.score
 input.display_feedback()
