@@ -1,5 +1,6 @@
 from components import Component
 from sympy import Matrix
+from evalsympy import eval_matrix
 
 class MatrixInput(Component):
 
