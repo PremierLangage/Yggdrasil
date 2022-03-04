@@ -4,22 +4,17 @@ builder =@ /builder/before.py
 
 apidoc == #|json|
 {
-    "name": "complex",
+    "name": "set",
     "keys": {
         "sol": {
-            "type": "Complex",
+            "type": "FiniteSet",
             "default": "",
-            "description": "Bonne réponse. Elle doit être définie dans le script `before` comme un objet SymPy de type Complex."
+            "description": "Bonne réponse. Elle doit être définie dans le script `before` comme un objet SymPy de type FiniteSet."
         },
-        "complex_form": {
-            "type": "('', 'Cartesian', 'Exponential')",
-            "default": "''",
-            "description": "Forme attendue de la réponse de l'élève : pas de forme particulière (''), forme cartésienne ('Cartesian'), forme exponentielle ('Exponential')."
-        },
-        "imaginary_unit": {
-            "type": "str",
-            "default": "'i'",
-            "description": "Nom de l'unité imaginaire utilisée pour interpréter la réponse."
+        "wobracket": {
+            "type": "bool",
+            "default": "'False",
+            "description": "Valeur indiquant si l'ensemble doit être saisi entre accolades."
         }
     }
 }
