@@ -11,10 +11,10 @@ class CustomLatexPrinter(LatexPrinter):
     """
 
     def __init__(self, settings=None):
-        _settings = {}
-        _settings['interv_rev_brack'] = settings.pop('interv_rev_brack', False)
+        custom_settings = {}
+        custom_settings['interv_rev_brack'] = settings.pop('interv_rev_brack', False)
         LatexPrinter.__init__(self, settings)
-        self._settings = _settings
+        self.custom_settings = custom_settings
 
     
     # A enlever ? Bug MD fixé ?
