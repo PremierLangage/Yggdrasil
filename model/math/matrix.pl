@@ -26,16 +26,23 @@ from sympy2latex import latex
 from latex2sympy import latex2sympy
 ==
 jinja_keys = ["prefix", "question", "solution", "inputblock"]
-before_scripts = ["mathimport", "init_input", "before", "process"]
+before_scripts = ["mathimport", "initinput", "before", "process"]
 eval_scripts = ["evalparam", "evaluator"]
 
 
 
 title = Title
 
-init_input ==
+initinput ==
 from matrixinput import MatrixInput
 input = MatrixInput()
+==
+
+before ==
+sol = 0
+==
+
+process ==
 input.resizable = resizable
 if resizable:
     input.set_zeros(*initsize)
@@ -43,9 +50,6 @@ else:
     input.set_zeros(sol.rows, sol.cols)
 ==
 
-before ==
-sol = 0
-==
 
 solution ==
 <div style="display: block">
