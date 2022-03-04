@@ -17,7 +17,8 @@ class CustomLatexPrinter(LatexPrinter):
         else:
             self._settings['interv_rev_brack'] = "True"
     
-    def _print_FiniteSet(self, s):
+    # A enlever ? Bug MD fixé ?
+    def XXXX_print_FiniteSet(self, s):
         """
         Return a LaTeX code for a FiniteSet object.
 
