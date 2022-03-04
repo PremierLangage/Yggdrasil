@@ -39,7 +39,7 @@ input = MatrixInput()
 ==
 
 before ==
-sol = 0
+
 ==
 
 process ==
