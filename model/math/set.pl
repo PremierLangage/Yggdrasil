@@ -28,9 +28,9 @@ apidoc == #|json|
             "description": "Bonne réponse. Elle doit être définie dans le script `before` comme un objet SymPy de type FiniteSet."
         },
         "wobracket": {
-            "type": "('', 'UpToConstant', 'Modulo')",
+            "type": "bool",
             "default": "'False",
-            "description": "Type d'égalitée utilisé : égalité stricte (''), égalité à une constante près ('UpToConstant'), égalité modulo un nombre ('Modulo')."
+            "description": "Valeur indiquant si l'ensemble doit être saisi entre accolades."
         }
     }
 }
