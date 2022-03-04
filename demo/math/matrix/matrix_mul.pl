@@ -12,7 +12,7 @@ sol = A*B
 
 question ==
 Soit les matrices
-$$ A = \left( {{ A|latex }} \right) \text{ et } B = \left( {{ B|latex }} \right) $$ 
+$$ A = {{ A|latex }} \text{ et } B = {{ B|latex }} $$ 
 Calculer $! A B !$.
 ==
 
