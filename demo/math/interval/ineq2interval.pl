@@ -3,7 +3,7 @@ extends = /model/math/interval.pl
 before ==
 a = randint(1, 3)
 b = randint(-3, 3)
-sol = Interval(-oo, b-a)
+sol = Interval(-oo, b - a)
 ==
 
 question ==
