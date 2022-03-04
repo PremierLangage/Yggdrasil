@@ -36,7 +36,9 @@ class MatrixInput(Component):
 
 
     def eval(self):
-        """Evaluate the input field."""
+        """
+        Evaluate the input field.
+        """
         score, error = eval_matrix(self.get_value(), self.sol, **self.evalparam)
         self.score = score
         self.feedback = MathInput.message.get(error, f"Error: {error}")
