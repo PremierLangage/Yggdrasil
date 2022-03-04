@@ -4,17 +4,22 @@ builder =@ /builder/before.py
 
 apidoc == #|json|
 {
-    "name": "tuple",
+    "name": "matrix",
     "keys": {
         "sol": {
-            "type": "(list, tuple, Tuple",
+            "type": "Matrix",
             "default": "",
-            "description": "Bonne réponse. Elle doit être définie dans le script `before` comme une liste/tuple d'objets SymPy ou un objet SymPy de type Tuple."
+            "description": "Bonne réponse. Elle doit être définie dans le script `before` comme un objet SymPy de type Matrix."
         },
-        "checksize": {
+        "resizable": {
             "type": "bool",
             "default": "'False",
-            "description": "Valeur indiquant si une réponse de taille incorrecte déclenche un avertissement."
+            "description": "Valeur indiquant si le champ de réponse est redimensionnable."
+        },
+        "initsize": {
+            "type": "lst[int, int]",
+            "default": "[2, 2]",
+            "description": "Dimention initiale du champ de réponse. Cette clé n'est utile que si le champ de réponse est redimensionnable. Autrement, la dimension du champ de réponse matrice est automatiquement égale à la dimension de sol."
         }
     }
 }
