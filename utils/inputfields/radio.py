@@ -77,7 +77,7 @@ class Radio(Component):
 
     def disable(self):
         """
-        Disable the component.
+        Disable the input field.
         """
         self.disabled = True
 
