@@ -43,7 +43,6 @@ before ==
 ==
 
 process ==
-input.sol = sol
 input.resizable = resizable
 if resizable:
     input.set_zeros(*initsize)
