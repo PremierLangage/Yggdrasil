@@ -102,7 +102,7 @@ apidoc == #|json|
     "name": "matrix",
     "keys": {
         "sol": {
-            "type": "FiniteSet",
+            "type": "Matrix",
             "default": "",
             "description": "Bonne réponse. Elle doit être définie dans le script `before` comme un objet SymPy de type Matrix."
         },
