@@ -76,19 +76,6 @@ inputblock ==
 ==
 
 
-before_scripts % ["importmath", "before", "initmat"]
-
-initmat ==
-mat.resizable = resizable
-if resizable:
-    mat.setzeros(*initsize)
-else:
-    mat.setzeros(sol.rows, sol.cols)
-==
-
-
-
-
 style.matrix ==
 .matrix-input {
     border : none;
