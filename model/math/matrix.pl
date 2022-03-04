@@ -80,6 +80,7 @@ inputblock ==
 
 
 style.matrix ==
+<style>
 .matrix-input {
     border : none;
     border-radius: 4px;
@@ -90,4 +91,5 @@ style.matrix ==
     background-color: transparent !important;
     z-index:10;
 }
+</style>
 ==
