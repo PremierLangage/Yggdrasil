@@ -11,7 +11,7 @@ evalparam ==
 input.evalparam = {}
 ==
 
-latexsettings.ln_notation = True
+latexsettings.interv_rev_brack = False
 
 # API documentation
 
