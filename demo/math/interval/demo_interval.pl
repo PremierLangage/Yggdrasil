@@ -1,7 +1,5 @@
 extends = /model/math/interval.pl
 
-title = Démonstration math/input
-
 before ==
 interv = Interval(0, 2)
 ==
