@@ -36,7 +36,7 @@ grade = (100, 'OK')
 ==
 
 #! linter:require:a
-
+form =
 
 title=
 
