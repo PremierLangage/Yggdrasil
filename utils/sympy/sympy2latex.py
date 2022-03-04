@@ -16,19 +16,6 @@ class CustomLatexPrinter(LatexPrinter):
         LatexPrinter.__init__(self, settings)
         self.custom_settings = custom_settings
 
-    
-    # A enlever ? Bug MD fixé ?
-    def XXXX_print_FiniteSet(self, s):
-        """
-        Return a LaTeX code for a FiniteSet object.
-
-        Modification : No braces around the elements to deal
-        with the markdown bug.
-        """
-        items = sorted(s, key=default_sort_key)
-        items = ", ".join(map(self._print, items))
-        return r"\{ %s \}" % items
-
     def _print_Poly(self, poly):
         """
         Return a LaTeX code for a Poly object.
@@ -109,35 +96,6 @@ class CustomLatexPrinter(LatexPrinter):
     
             return r"\left%s%s, %s\right%s" % \
                     (left, self._print(i.start), self._print(i.end), right)
-
-    # A enlever ? Bug MD fixé ?
-    def XXX_print_MatrixBase(self, expr):
-        """
-        Return a LaTeX code for a Matrix object.
-
-        Modification : No brackets/parentheses to deal
-        with the markdown bug.
-        """
-        lines = []
-
-        for line in range(expr.rows):  # horrible, should be 'rows'
-            lines.append(" & ".join([ self._print(i) for i in expr[line, :] ]))
-
-        mat_str = self._settings['mat_str']
-        if mat_str is None:
-            if self._settings['mode'] == 'inline':
-                mat_str = 'smallmatrix'
-            else:
-                if (expr.cols <= 10) is True:
-                    mat_str = 'matrix'
-                else:
-                    mat_str = 'array'
-
-        out_str = r'\begin{%MATSTR%}%s\end{%MATSTR%}'
-        out_str = out_str.replace('%MATSTR%', mat_str)
-        if mat_str == 'array':
-            out_str = out_str.replace('%s', '{' + 'c'*expr.cols + '}%s')
-        return out_str % r"\\\\".join(lines)
 
 def latex(expr, **settings):
     """
