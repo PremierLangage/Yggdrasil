@@ -797,7 +797,7 @@ def eval_chainineqold(strans, sol, local_dict={}, authorized_func={}):
         return (0,"WrongIneq")
     return (100,"Success")
 
-def eval_matrix(matans, sol):
+def eval_matrix(ans, sol):
     """
     Evaluate an answer when the solution is a matrix.
     """
