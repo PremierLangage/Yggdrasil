@@ -1,10 +1,79 @@
-extends = /model/math/math.pl
+extends = /model/basic/utils.pl
+extends = /model/basic/hackpage.pl
+extends = messages_math.pl
 
-@ /utils/components/mathmatrix.py [custommathmatrix.py]
-mat =: MathMatrix
-mat.decorator = CustomMathMatrix
-resizable % true
-initsize % [2, 2]
+# Specific keys
+
+resizable = True
+
+initsize = [2, 2]
+
+prefix = Réponse :
+
+latexsettings.ln_notation = True
+latexsettings.inv_trig_style = full
+
+mathimport ==
+from sympy import E, I, pi, oo
+from sympy import sqrt, Abs, sin, cos, tan, exp, ln
+from sympy import Symbol, symbols, var
+from sympy import sympify, simplify, Lambda
+from sympy import Integer, Rational, Poly, FiniteSet, Tuple, Interval
+from sympy import integrate
+from random import choice, choices, sample, shuffle
+from plrandom import randint, sampleint
+from sympy2latex import latex
+from latex2sympy import latex2sympy
+==
+jinja_keys = ["prefix", "question", "solution", "inputblock"]
+before_scripts = ["mathimport", "init_input", "before", "process"]
+eval_scripts = ["evalparam", "evaluator"]
+
+
+
+title = Title
+
+init_input ==
+from matrixinput import MatrixInput
+input = MatrixInput()
+input.resizable = resizable
+if resizable:
+    input.set_zeros(*initsize)
+else:
+    input.set_zeros(sol.rows, sol.cols)
+==
+
+before ==
+sol = 0
+==
+
+solution ==
+<div style="display: block">
+{{ prefix }} 
+$! {{ sol|latex }} !$
+</div>
+==
+
+evalparam ==
+
+==
+
+evaluator ==
+input.eval()
+score = input.score
+input.display_feedback()
+if score >= 0:
+  input.disable()
+==
+
+tplpage =@ /model/tplpage/basicmath.html
+
+
+inputblock ==
+{{ input|component }}
+==
+
+
 before_scripts % ["importmath", "before", "initmat"]
 
 initmat ==
