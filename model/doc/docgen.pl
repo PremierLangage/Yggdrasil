@@ -3,22 +3,22 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 apidoc == #|json|
 {
-    "name": "expr",
+    "name": "autoinput",
     "keys": {
         "sol": {
-            "type": "Expr",
+            "type": "(str, list[str])",
+            "default": "[]",
+            "description": "Liste des réponses acceptées. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
+        },
+        "items": {
+            "type": "(str, list[str])",
             "default": "",
-            "description": "Bonne réponse. Elle doit être définie dans le script `before` comme un objet SymPy de type Expr."
+            "description": "Liste des items. Elle peut être saisie comme une liste ou comme une chaîne multilignes (chaque ligne correspondant à un item)."
         },
-        "equality": {
-            "type": "('', 'UpToConstant', 'Modulo')",
-            "default": "''",
-            "description": "Type d'égalitée utilisé : égalité stricte (''), égalité à une constante près ('UpToConstant'), égalité modulo un nombre ('Modulo')."
-        },
-        "modulo": {
-            "type": "(int, float)",
-            "default": "0",
-            "description": "Nombre utilisé dans le cas d'une égalité modulo un nombre."
+        "prefix": {
+            "type": "str",
+            "default": "'Réponse :'",
+            "description": "Texte affiché à gauche du champ de réponse."
         }
     }
 }
