@@ -11,6 +11,8 @@ evalparam ==
 input.evalparam = {}
 ==
 
+latexsettings.ln_notation = True
+
 # API documentation
 
 apidoc == #|json|
