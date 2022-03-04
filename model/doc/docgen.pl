@@ -3,27 +3,12 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 apidoc == #|json|
 {
-    "name": "poly",
+    "name": "interval",
     "keys": {
         "sol": {
-            "type": "(Expr, Poly)",
+            "type": "(Interval, Union)",
             "default": "",
-            "description": "Bonne réponse. Elle doit être définie dans le script `before` comme un objet SymPy de type Expr ou Poly."
-        },
-        "poly_form": {
-            "type": "('', 'Expanded', 'Factorized')",
-            "default": "''",
-            "description": "Forme attendue de la réponse : pas de forme particulière (''), forme développée ('Expanded'), forme factorisée ('Factorized')."
-        },
-        "poly_domain": {
-            "type": "('R', 'C')",
-            "default": "'R'",
-            "description": "Domaine du polynôme : réels ('R'), complexes ('C')."
-        },
-        "poly_var": {
-            "type": "(str, None)",
-            "default": "None",
-            "description": "Variable du polynôme. Si cette clé vaut None, la variable est détectée automatiquement."
+            "description": "Bonne réponse. Elle doit être définie dans le script `before` comme un objet SymPy de type Interval ou Union."
         }
     }
 }
