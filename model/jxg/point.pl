@@ -89,7 +89,7 @@ inputblock ==
 
 style.jxgcss ==
 <style>
-.jsxgraph-component {
+.c-math-drawer {
   width: 500px;
 }
 </style>
