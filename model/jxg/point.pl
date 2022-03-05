@@ -1,4 +1,5 @@
-extends = /model/mathjsxgraph.pl
+extends = /model/basic/hackpage.pl
+extends = /model/basic/utils.pl
 
 ptname = M
 
