@@ -72,7 +72,7 @@ board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
 
 inputblock ==
 <div class="img img-60">
-{{ jxg|component }}
+{{ input|component }}
 </div>
 ==
 
