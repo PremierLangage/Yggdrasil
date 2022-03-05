@@ -25,7 +25,7 @@ jxg.attributes = attributes
 jxg.setscript(script_init)
 ==
 
-jxg_attributes % {"showNavigation":false, "boundingbox":[-1.25,1.25,1.25,-1.25]}
+jxg_attributes = {"showNavigation":False, "boundingbox":[-1.25,1.25,1.25,-1.25]}
 
 ptname = M
 
