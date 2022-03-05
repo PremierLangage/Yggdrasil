@@ -13,7 +13,7 @@ input.sol = [xsol, ysol]
 input.set_script(script_init + script_aux)
 ==
 
-jxg.attributes = {"showNavigation":False, "boundingbox":[-6,6,6,-6]}
+attributes = {"showNavigation":False, "boundingbox":[-6,6,6,-6]}
 
 
 script_init ==
