@@ -10,7 +10,7 @@ xsol = randint(-4, 4, [0])
 ysol = randint(-4, 4, [0])
 z = xsol + ysol*I
 input.sol = [xsol, ysol]
-input.set_script(script_init + script_aux)
+input.set_script(script_init + script_aux, globals())
 ==
 
 attributes = {"showNavigation":False, "boundingbox":[-6,6,6,-6]}
