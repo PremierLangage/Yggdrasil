@@ -71,15 +71,7 @@ board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
 ==
 
 evaluator ==
-x, y = jxg.getpoint(ptname)
-from math import hypot
-if hypot(x-xsol, y-ysol) < tol:
-    score = 100
-    jxg.addscript(script_solution, globals())
-else:
-    score = 0
-    jxg.addscript(script_solution, globals())
-feedback = ""
+input.eval()
 ==
 
 inputblock ==
