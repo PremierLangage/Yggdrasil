@@ -71,7 +71,7 @@ board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
 ==
 
 inputblock ==
-<div style="width=300px;">
+<div style="width: 300px;">
 {{ input|component }}
 </div>
 ==
