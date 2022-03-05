@@ -47,7 +47,7 @@ class JXGInput(Component):
         M.setAttribute({color: red});
         board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
         """
-        self.add_script(, {'xsol':self.sol[0], 'ysol':self.sol[1]})
+        self.add_script(script, {'xsol':self.sol[0], 'ysol':self.sol[1]})
 
 
 
