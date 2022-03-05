@@ -35,8 +35,8 @@ ysol = float(sin(valangle))
 ==
 
 process ==
-jxg.attributes = attributes
-jxg.setscript(script_init)
+input.attributes = attributes
+input.set_script(script_init)
 ==
 
 jxg_attributes = {"showNavigation":False, "boundingbox":[-1.25,1.25,1.25,-1.25]}
