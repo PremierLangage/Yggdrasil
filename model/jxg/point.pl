@@ -90,7 +90,8 @@ inputblock ==
 style.jxgcss ==
 <style>
 .jsxgraph-component {
-  width: 500px;
+  width: 500px !important;
+  height: 500px !important;
 }
 </style>
 ==
