@@ -43,7 +43,7 @@ class JXGInput(Component):
         return self.score
 
     def display_feedback(self):
-        self.addscript("board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});", {'xsol':self.sol[0], 'ysol':self.sol[1]})
+        self.add_script("board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});", {'xsol':self.sol[0], 'ysol':self.sol[1]})
 
 
 
