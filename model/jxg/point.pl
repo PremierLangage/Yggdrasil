@@ -71,7 +71,7 @@ board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
 ==
 
 evaluator ==
-input.eval()
+score = input.eval()
 ==
 
 inputblock ==
