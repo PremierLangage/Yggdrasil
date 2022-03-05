@@ -87,11 +87,22 @@ inputblock ==
 ==
 
 
-style.jxgcss ==
+style2.jxgcss ==
 <style>
 .jsxgraph-component {
   width: 500px !important;
   height: 500px !important;
+}
+</style>
+==
+
+style.jxgcss ==
+<style>
+.jsxgraph-component {
+    width: 500px;
+    max-width: 100%;
+    height: 100px;
+    margin: 0 auto;
 }
 </style>
 ==
