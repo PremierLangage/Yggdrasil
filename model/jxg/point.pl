@@ -91,7 +91,6 @@ style.jxgcss ==
 <style>
 .jsxgraph-component {
   width: 500px;
-  height: 500px;
 }
 </style>
 ==
