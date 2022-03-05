@@ -85,9 +85,6 @@ feedback = ""
 ==
 
 inputblock ==
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/jsxgraph@1.4.0/distrib/jsxgraph.css" />
-<script type="text/javascript" src="https://unpkg.com/jsxgraph@1.4.0/distrib/jsxgraphcore.js"></script>
-
 {{ input|component }}
 ==
 
