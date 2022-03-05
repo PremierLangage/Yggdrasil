@@ -9,6 +9,8 @@ tol = 0.05
 
 attributes = {"showNavigation":False, "boundingbox":[-1.25,1.25,1.25,-1.25]}
 
+# Question and input block
+
 question ==
 ==
 
@@ -77,6 +79,7 @@ board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
 
 evaluator ==
 score = input.eval()
+input.display_feedback()
 ==
 
 
