@@ -88,22 +88,12 @@ inputblock ==
 {{ input|component }}
 ==
 
-style2.jxgcss ==
-<style>
-.jsxgraph-component {
-    width: 500px;
-    max-width: 100%;
-    height: 100px;
-    margin: 0 auto;
-}
-</style>
-==
 
 style.jxgcss ==
 <style>
 .jsxgraph-component {
   width: 500px;
-  padding-bottom: 30%
+  height: 500px;
 }
 </style>
 ==
