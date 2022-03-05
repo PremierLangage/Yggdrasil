@@ -8,6 +8,7 @@ class JXGInput(Component):
         self.selector = 'c-math-drawer'
         self.decorator = 'JXGInput'
         self.pointname = 'M'
+        self.evalparam = {}
         super().__init__(**kwargs)
 
     def set_script(self, script, dic={}):
