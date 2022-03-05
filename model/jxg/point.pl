@@ -1,10 +1,22 @@
 extends = /model/basic/hackpage.pl
 extends = /model/basic/utils.pl
 
-ptname = M
+# Specific keys
+
+pointname = "M"
 
 tol = 0.05
 
+attributes = {"showNavigation":False, "boundingbox":[-1.25,1.25,1.25,-1.25]}
+
+question ==
+==
+
+inputblock ==
+{{ input|component }}
+==
+
+# Before scripts
 
 before_scripts = ["mathimport", "initinput", "before", "process"]
 
@@ -26,23 +38,15 @@ from jxginput import JXGInput
 input = JXGInput()
 ==
 
-before ==
-lstangle = [pi/4,pi/2]
-angle = choice(lstangle)
-valangle = float(angle.evalf())
-xsol = float(cos(valangle))
-ysol = float(sin(valangle))
-==
+
 
 process ==
 input.attributes = attributes
 input.sol = [xsol, ysol]
+input.evalparam = {'tol': tol}
 input.set_script(script_init + script_aux, globals())
 ==
 
-attributes = {"showNavigation":False, "boundingbox":[-1.25,1.25,1.25,-1.25]}
-
-ptname = M
 
 script_init ==
 board.create('line', [[0,0],[1,2]]);
@@ -75,19 +79,8 @@ evaluator ==
 score = input.eval()
 ==
 
-inputblock ==
-{{ input|component }}
-==
 
 
-style2.jxgcss ==
-<style>
-.jsxgraph-component {
-  width: 500px !important;
-  height: 500px !important;
-}
-</style>
-==
 
 style.jxgcss ==
 <style>
