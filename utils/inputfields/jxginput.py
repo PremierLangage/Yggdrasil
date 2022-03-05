@@ -34,6 +34,7 @@ class JXGInput(Component):
         Evaluate the input field
         """
         x, y = self.get_point(self.pointname)
+        xsol, ysol = self.sol
         tol = self.evalparam.get('tol', 0.1)
         if hypot(x-xsol, y-ysol) < tol:
             self.score = 100
