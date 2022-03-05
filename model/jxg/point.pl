@@ -36,7 +36,8 @@ ysol = float(sin(valangle))
 
 process ==
 input.attributes = attributes
-input.set_script(script_init)
+input.sol = [xsol, ysol]
+input.set_script(script_init + script_aux, globals())
 ==
 
 attributes = {"showNavigation":False, "boundingbox":[-1.25,1.25,1.25,-1.25]}
