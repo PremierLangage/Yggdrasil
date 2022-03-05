@@ -39,7 +39,7 @@ input.attributes = attributes
 input.set_script(script_init)
 ==
 
-attributes = {"showNavigation":True, "showReload":True, "boundingbox":[-1.25,1.25,1.25,-1.25]}
+attributes = {"showNavigation":False, "boundingbox":[-1.25,1.25,1.25,-1.25]}
 
 ptname = M
 
