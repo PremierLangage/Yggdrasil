@@ -72,12 +72,6 @@ script_solution ==
 board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
 ==
 
-inputblock ==
-<div class="jxgbox" style="width:500px; height:500px;">
-{{ input|component }}
-</div>
-==
-
 evaluator ==
 x, y = jxg.getpoint(ptname)
 from math import hypot
@@ -90,3 +84,29 @@ else:
 feedback = ""
 ==
 
+inputblock ==
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/jsxgraph@1.4.0/distrib/jsxgraph.css" />
+<script type="text/javascript" src="https://unpkg.com/jsxgraph@1.4.0/distrib/jsxgraphcore.js"></script>
+
+{{ jxg|component }}
+==
+
+style.jxgcss ==
+<style>
+.jsxgraph-component {
+    width: 500px;
+    max-width: 100%;
+    height: 100px;
+    margin: 0 auto;
+}
+</style>
+==
+
+style.jxgcss ==
+<style>
+.jsxgraph-component {
+  width: 500px;
+  padding-bottom: 30%
+}
+</style>
+==
