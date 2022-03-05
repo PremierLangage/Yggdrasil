@@ -12,10 +12,8 @@ z = xsol + ysol*I
 ==
 
 question ==
-Placer le point $! M !$ d'affixe $! {{ z|latex }} !$ dans le plan ci-dessous.
+Placer le point $! P !$ d'affixe $! {{ z|latex }} !$ dans le plan ci-dessous.
 ==
-
-pointname = "P"
 
 attributes = {"showNavigation":False, "boundingbox":[-6,6,6,-6]}
 
