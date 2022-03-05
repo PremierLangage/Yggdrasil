@@ -64,6 +64,8 @@ function down(e) {
 board.on('down', down)
 ==
 
+tplpage =@ /model/tplpage/basicmath.html
+
 script_solution ==
 board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
 ==
