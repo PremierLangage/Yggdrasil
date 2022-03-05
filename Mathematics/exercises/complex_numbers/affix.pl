@@ -23,6 +23,6 @@ script_init ==
 board.create('grid',[],{gridX:1, gridY:1});
 board.create('axis',[[0,0],[1,0]],{name:'Re',withLabel:true,label:{position:'urt',offset:[-5,10]},ticks:{visible: false}});
 board.create('axis',[[0,0],[0,1]],{name:'Im',withLabel:true,label:{position:'urt',offset:[10,0]},ticks:{visible: false}});
-var P = board.create('point',[0, 0],{size:2,name:'M',color:'blue'});
+var M = board.create('point',[0, 0],{size:2,name:'P',color:'blue'});
 ==
 
