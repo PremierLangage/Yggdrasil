@@ -99,8 +99,8 @@ style2.jxgcss ==
 style.jxgcss ==
 <style>
 .jsxgraph-component {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto;
 }
 </style>
