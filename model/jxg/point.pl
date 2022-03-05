@@ -91,7 +91,7 @@ inputblock ==
 {{ input|component }}
 ==
 
-style.jxgcss ==
+style2.jxgcss ==
 <style>
 .jsxgraph-component {
     width: 500px;
@@ -102,7 +102,7 @@ style.jxgcss ==
 </style>
 ==
 
-style.jxgcss ==
+style2.jxgcss ==
 <style>
 .jsxgraph-component {
   width: 500px;
