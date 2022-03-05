@@ -9,7 +9,7 @@ tol = 0.05
 before_scripts = ["mathimport", "initinput", "before", "process"]
 
 initinput ==
-from jxinput import JXGInput
+from jxginput import JXGInput
 input = JXGInput()
 ==
 
