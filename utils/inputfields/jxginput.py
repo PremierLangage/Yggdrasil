@@ -38,10 +38,8 @@ class JXGInput(Component):
         tol = self.evalparam.get('tol', 0.1)
         if hypot(x-xsol, y-ysol) < tol:
             self.score = 100
-            jxg.addscript(script_solution, globals())
         else:
             self.score = 0
-            jxg.addscript(script_solution, globals())
         return self.score
 
     def display_feedback(self):
