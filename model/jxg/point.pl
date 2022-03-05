@@ -71,7 +71,9 @@ board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
 ==
 
 inputblock ==
+<div class="img-container">
 {{ input|component }}
+</div>
 ==
 
 evaluator ==
