@@ -8,6 +8,19 @@ tol = 0.05
 
 before_scripts = ["mathimport", "initinput", "before", "process"]
 
+mathimport ==
+from sympy import E, I, pi, oo
+from sympy import sqrt, Abs, sin, cos, tan, exp, ln
+from sympy import Symbol, symbols, var
+from sympy import sympify, simplify, Lambda
+from sympy import Integer, Rational, Poly, FiniteSet, Tuple, Interval
+from sympy import integrate
+from random import choice, choices, sample, shuffle
+from plrandom import randint, sampleint
+from sympy2latex import latex
+from latex2sympy import latex2sympy
+==
+
 initinput ==
 from jxginput import JXGInput
 input = JXGInput()
