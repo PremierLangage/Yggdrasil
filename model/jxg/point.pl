@@ -102,7 +102,7 @@ style.jxgcss ==
     width: 400px;
     height: 400px;
     margin: 0 auto;
-    border: solid;
+    border: 1px solid;
 }
 </style>
 ==
