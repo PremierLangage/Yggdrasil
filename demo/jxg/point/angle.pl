@@ -1,7 +1,7 @@
 extends = /model/jxg/point.pl
 
 before ==
-angle=randitem([pi/4,pi/2,3*pi/4,pi,3*pi/2])
+angle=choice([pi/4,pi/2,3*pi/4,pi,3*pi/2])
 angle_float = angle.evalf()
 xsol = cos(angle_float)
 ysol = sin(angle_float)
