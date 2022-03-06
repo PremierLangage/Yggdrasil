@@ -21,7 +21,7 @@ class Radio(Component):
 
     def set_sol(self, index):
         """
-        Set the solution (from its index in the list of items).
+        Set the solution item (from its index in the list of items).
         """
         self.sol = self.items[index]['id']
 
