@@ -48,7 +48,7 @@ process ==
 input.attributes = attributes
 input.sol = [xsol, ysol]
 input.evalparam = {'tol': tol}
-input.set_script(script_init + script_aux, globals())
+input.set_script(jxgscript + script_aux, globals())
 ==
 
 script_aux ==
