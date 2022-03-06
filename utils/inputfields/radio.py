@@ -31,15 +31,6 @@ class Radio(Component):
         """
         rd.shuffle(self.items)
 
-    def fill(self, items, indsol=0, shuffled=True):
-        """
-        Set the list of items and the solution.
-        """
-        self.set_items(items)
-        self.set_sol(indsol)
-        if shuffled:
-            self.shuffle()
-
     def eval(self):
         """
         Evaluate the answer.
