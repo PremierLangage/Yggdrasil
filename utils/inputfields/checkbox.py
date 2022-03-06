@@ -1,7 +1,7 @@
-import random as rd
-from uuid import uuid4
 from components import Component
+from uuid import uuid4
 from scoring import *
+import random as rd
 
 class Checkbox(Component):
 
