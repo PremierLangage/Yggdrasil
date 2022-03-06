@@ -156,14 +156,19 @@ apidoc == #|json|
             "description": "Script Python permettant d'évaluer la réponse de l'exercice."
         },
         "keypad": {
-            "type": "[]",
-            "default": "''",
-            "description": "Type d'égalitée utilisé : égalité stricte (''), égalité à une constante près ('UpToConstant'), égalité modulo un nombre ('Modulo')."
+            "type": "list",
+            "default": "[]",
+            "description": "Liste des boutons du clavier virtuel attaché au champ de réponse."
         },
         "checkratsimp": {
             "type": "bool",
             "default": "True",
-            "description": "Type d'égalitée utilisé : égalité stricte (''), égalité à une constante près ('UpToConstant'), égalité modulo un nombre ('Modulo')."
+            "description": "Valeur indiquant si l'évaluation vérifie que les valeurs rationnelles sont simplifiées dans la réponse saisie."
+        },
+        "symbol_dict": {
+            "type": "dict",
+            "default": "{'e': E}",
+            "description": "Dictionnaire des symboles utilisés pour convertir la réponse saisie en expression SymPy."
         }
     }
 }
