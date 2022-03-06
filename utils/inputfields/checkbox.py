@@ -13,7 +13,7 @@ class Checkbox(Component):
 
     def set_items(self, items):
         """
-        Load items in the component.
+        Set the items for the list of choices.
         """
         if isinstance(items, list):
             self.items = [{"id": str(uuid4()), "content": str(item)} for item in items]
@@ -73,7 +73,7 @@ class Checkbox(Component):
 
     def eval(self):
         """
-        Evaluate the answer stored in the component.
+        Evaluate the input field.
         """
         nbright, nbwrong = 0, 0
 
@@ -121,13 +121,13 @@ class Checkbox(Component):
 
     def disable(self):
         """
-        Disable the component.
+        Disable the input field.
         """
         self.disabled = True
 
     def render(self):
         """
-        Return the HTML code of the component.
+        Return the HTML code of the input field.
         """
         selector = self.selector
         cid = self.cid
