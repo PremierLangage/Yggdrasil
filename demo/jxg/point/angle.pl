@@ -10,7 +10,7 @@ question ==
 Placer le point M de sorte que l'angle $! (\overrightarrow{OA},\overrightarrow{OM}) !$ ait une mesure égale à $% \displaystyle {{angle.latex}} %$. 
 ==
 
-attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
+attributes = {"showNavigation": False, "boundingbox":[-1.25, 1.25, 1.25, -1.25]}
 
 tol = 0.2
 
