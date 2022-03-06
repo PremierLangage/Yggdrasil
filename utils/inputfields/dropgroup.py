@@ -102,6 +102,7 @@ class DropGroup():
     def get_value(self):
         return [drop.content for drop in self.drops]
 
+
 def process_filledtext(filledtext, delimiters, name, style):
     """
     Return exercice elements from a filled text.
