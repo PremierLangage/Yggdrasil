@@ -2,25 +2,43 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+# API documentation
+
 apidoc == #|json|
 {
-    "name": "matrix",
+    "name": "textinput",
     "keys": {
-        "sol": {
-            "type": "Matrix",
+        "xsol": {
+            "type": "float",
             "default": "",
-            "description": "Bonne réponse. Elle doit être définie dans le script `before` comme un objet SymPy de type Matrix."
+            "description": "Abscisse du point solution."
         },
-        "resizable": {
-            "type": "bool",
-            "default": "'False",
-            "description": "Valeur indiquant si le champ de réponse est redimensionnable."
+        "ysol": {
+            "type": "float",
+            "default": "",
+            "description": "Ordonnée du point solution."
         },
-        "initsize": {
-            "type": "lst[int, int]",
-            "default": "[2, 2]",
-            "description": "Dimention initiale du champ de réponse. Cette clé n'est utile que si le champ de réponse est redimensionnable. Autrement, la dimension du champ de réponse matrice est automatiquement égale à la dimension de sol."
+        "attributes": {
+            "type": "dict",
+            "default": "{}",
+            "description": "Paramètres du panneau graphiqe interactif."
+        },
+        "jxgscript": {
+            "type": "str",
+            "default": "",
+            "description": "Script JSXGraph."
+        },
+        "pointname": {
+            "type": "str",
+            "default": "",
+            "description": "Nom du point à placer."
         }
+        "tol": {
+            "type": "float",
+            "default": "0.1",
+            "description": "Erreur maximum (en distance euclidienne) pour considérer une réponse comme correcte."
+        }
+
     }
 }
 ==
