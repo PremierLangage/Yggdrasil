@@ -26,7 +26,7 @@ class MatrixInput(Component):
 
     def set_zeros(self, rows, cols=None):
         """
-        Set a matrix.
+        Set a matrix of zeros.
         """
         if cols == None:
             cols = rows
@@ -34,7 +34,7 @@ class MatrixInput(Component):
 
     def get_value(self):
         """
-        Set a matrix.
+        Get the matrix.
         """
         return [[item['value'] for item in row] for row in self.matrix]
 
