@@ -12,13 +12,12 @@ class Radio(Component):
 
     def set_items(self, items):
         """
-        Set the list of items.
+        Set the items for the list of choices.
         """
-        if isinstance(items, str):
-            _items_ = items.splitlines()
-        else:
-            _items_ = items
-        self.items = [{"id": str(uuid4()), "content": str(item)} for item in _items_]
+        if isinstance(items, list):
+            self.items = [{"id": str(uuid4()), "content": str(item)} for item in items]
+        elif isinstance(items, str):
+            self.items = [{"id": str(uuid4()), "content": str(item)} for item in items.splitlines()]
 
     def set_sol(self, index):
         """
