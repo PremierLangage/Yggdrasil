@@ -43,6 +43,9 @@ class JXGInput(Component):
         return self.score
 
     def display_feedback(self):
+        """
+        Display visual feedback.
+        """ 
         if self.score == 100:
             script = """
             psol.setAttribute({color: 'green'});
