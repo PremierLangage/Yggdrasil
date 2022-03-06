@@ -179,6 +179,11 @@ apidoc == #|json|
             "type": "list[str]",
             "default": "[]",
             "description": "Liste des fonctions non autorisées."
+        },
+        "latexsettings": {
+            "type": "dict",
+            "default": "{}",
+            "description": "Dictionnaire des paramètres de conversion SymPy vers LaTeX."
         }
     }
 }
