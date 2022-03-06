@@ -48,6 +48,7 @@ process ==
 input.attributes = attributes
 input.sol = [xsol, ysol]
 input.evalparam = {'tol': tol}
+input.pointname = pointname
 input.set_script(jxgscript + script_aux, globals())
 ==
 
