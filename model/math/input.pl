@@ -138,26 +138,31 @@ apidoc == #|json|
         "question": {
             "type": "str",
             "default": "",
-            "description": "Template Markdown/HTML contenant l'énoncé de l'exercice."
+            "description": "Template HTML contenant l'énoncé de l'exercice."
         },
         "inputblock": {
             "type": "str",
             "default": "",
-            "description": "Template Markdown/HTML contenant l'énoncé de l'exercice."
+            "description": "Template HTML contenant l'énoncé de l'exercice."
         },
         "solution": {
             "type": "str",
             "default": "",
-            "description": "Template Markdown/HTML contenant la correction de l'exercice."
+            "description": "Template HTML contenant la correction de l'exercice."
         },
         "evaluator": {
             "type": "str",
             "default": "",
             "description": "Script Python permettant d'évaluer la réponse de l'exercice."
-        }
+        },
         "keypad": {
             "type": "[]",
             "default": "''",
+            "description": "Type d'égalitée utilisé : égalité stricte (''), égalité à une constante près ('UpToConstant'), égalité modulo un nombre ('Modulo')."
+        },
+        "checkratsimp": {
+            "type": "bool",
+            "default": "True",
             "description": "Type d'égalitée utilisé : égalité stricte (''), égalité à une constante près ('UpToConstant'), égalité modulo un nombre ('Modulo')."
         }
     }
