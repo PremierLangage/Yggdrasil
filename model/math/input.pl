@@ -169,6 +169,11 @@ apidoc == #|json|
             "type": "dict",
             "default": "{'e': E}",
             "description": "Dictionnaire des symboles utilisés pour convertir la réponse saisie en expression SymPy."
+        },
+        "unauthorized_func": {
+            "type": "list[str]",
+            "default": "[]",
+            "description": "Liste des fonctions non autorisées."
         }
     }
 }
