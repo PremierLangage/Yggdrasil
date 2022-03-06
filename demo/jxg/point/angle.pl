@@ -12,7 +12,7 @@ Placer le point M de sorte que l'angle $! (\overrightarrow{OA},\overrightarrow{O
 
 attributes = {"showNavigation": False, "boundingbox":[-1.25, 1.25, 1.25, -1.25]}
 
-tol = 0.2
+tol = 0.05
 
 pointname = "M"
 
