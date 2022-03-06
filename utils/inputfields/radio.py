@@ -8,7 +8,6 @@ class Radio(Component):
     def __init__(self, **kwargs):
         self.selector = 'c-radio-group'
         self.decorator = 'Radio'
-        #self.selection = None
         super().__init__(**kwargs)
 
     def set_items(self, items):
@@ -83,7 +82,7 @@ class Radio(Component):
 
     def render(self):
         """
-        Return the HTML code of the component.
+        Return the HTML code of the input field.
         """
         selector = self.selector
         cid = self.cid
