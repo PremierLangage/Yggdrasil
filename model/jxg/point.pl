@@ -3,11 +3,14 @@ extends = /model/basic/utils.pl
 
 # Specific keys
 
-pointname = "M"
+attributes = {}
+
+jxgscript ==
+==
+
+pointname = ""
 
 tol = 0.05
-
-attributes = {"showNavigation":False, "boundingbox":[-1.25,1.25,1.25,-1.25]}
 
 # Question and input block
 
@@ -41,17 +44,11 @@ input = JXGInput()
 ==
 
 
-
 process ==
 input.attributes = attributes
 input.sol = [xsol, ysol]
 input.evalparam = {'tol': tol}
 input.set_script(script_init + script_aux, globals())
-==
-
-
-script_init ==
-board.create('line', [[0,0],[1,2]]);
 ==
 
 script_aux ==
@@ -65,7 +62,7 @@ function getMouseCoords(e) {
 
 function down(e) {
     let coords = getMouseCoords(e);
-    M.setPosition(JXG.COORDS_BY_USER,[coords.usrCoords[1], coords.usrCoords[2]]);
+    psol.setPosition(JXG.COORDS_BY_USER,[coords.usrCoords[1], coords.usrCoords[2]]);
 }
 
 board.on('down', down)
@@ -73,13 +70,10 @@ board.on('down', down)
 
 tplpage =@ /model/tplpage/basicmath.html
 
-script_solution ==
-board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
-==
-
 evaluator ==
 score = input.eval()
 input.display_feedback()
+input.disable()
 ==
 
 
@@ -94,4 +88,45 @@ style.jxgcss ==
     border: 1px solid;
 }
 </style>
+==
+
+# API documentation
+
+apidoc == #|json|
+{
+    "name": "textinput",
+    "keys": {
+        "xsol": {
+            "type": "float",
+            "default": "",
+            "description": "Abscisse du point solution."
+        },
+        "ysol": {
+            "type": "float",
+            "default": "",
+            "description": "Ordonnée du point solution."
+        },
+        "attributes": {
+            "type": "dict",
+            "default": "{}",
+            "description": "Paramètres du panneau graphiqe interactif."
+        },
+        "jxgscript": {
+            "type": "str",
+            "default": "",
+            "description": "Script JSXGraph."
+        },
+        "pointname": {
+            "type": "str",
+            "default": "",
+            "description": "Nom du point à placer."
+        }
+        "tol": {
+            "type": "float",
+            "default": "0.1",
+            "description": "Erreur maximum (en distance euclidienne) pour considérer une réponse comme correcte."
+        }
+
+    }
+}
 ==
