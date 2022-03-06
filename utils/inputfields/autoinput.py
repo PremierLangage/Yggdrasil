@@ -8,8 +8,6 @@ class AutoInput(Component):
         super().__init__(**kwargs)
 
     def eval(self):
-    # TODO : reprendre les modes d'évaluations
-    # plus sophistiqués du modèle input
         if self.sol == self.value:
             self.score = 100
         else:
