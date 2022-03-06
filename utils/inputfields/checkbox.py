@@ -22,7 +22,7 @@ class Checkbox(Component):
 
     def set_sol(self, index):
         """
-        Set the component solutions from a list of indices.
+        Set the solution items from a list of indices.
         """
         if isinstance(index,list):
             self.sol = [self.items[i]['id'] for i in index]
@@ -61,13 +61,13 @@ class Checkbox(Component):
 
     def shuffle(self):
         """
-        Shuffle the component items.
+        Shuffle the items.
         """
         rd.shuffle(self.items)
 
     def sort(self):
         """
-        Sort the component items.
+        Sort the items.
         """
         self.items.sort(key = lambda item : item['content'])
 
