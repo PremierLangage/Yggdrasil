@@ -46,7 +46,6 @@ input = JXGInput()
 
 process ==
 input.attributes = attributes
-input.sol = [xsol, ysol]
 input.evalparam = {'tol': tol}
 input.pointname = pointname
 input.set_script(jxgscript + script_aux, globals())
@@ -72,6 +71,7 @@ board.on('down', down)
 tplpage =@ /model/tplpage/basicmath.html
 
 evaluator ==
+input.sol = [xsol, ysol]
 score = input.eval()
 input.display_feedback()
 input.disable()
