@@ -30,18 +30,30 @@ class DropGroup():
         self.sol = kwargs.get('sol', [])
 
     def set_drops(self, n):
+        """
+        Set the drop zones.
+        """
         self.drops = [Drop() for _ in range(n)]
 
     def set_labels(self, lst):
+        """
+        Set the labels.
+        """
         self.labels = [Label(content=content) for content in lst]
 
     def add_labels(self, labels):
+        """
+        Add labels in the list of labels.
+        """
         if isinstance(labels, str):
             labels = labels.splitlines()
         for label in labels:
             self.labels.append(Label(content=label))
 
     def shuffle(self):
+        """
+        Shuffle the list of labels.
+        """
         rd.shuffle(self.labels)
 
     def labels_html(self):
