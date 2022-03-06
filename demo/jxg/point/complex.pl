@@ -14,6 +14,8 @@ attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
 
 tol = 0.2
 
+pointname = "M"
+
 jxgscript == #|js|
 board.create('grid', [], {gridX: 1, gridY: 1});
 board.create('axis', [[0, 0], [1, 0]], {name: 'Re', withLabel: true, label: {position:'urt', offset: [-5, 10]}, ticks:{visible: false}});
