@@ -32,7 +32,7 @@ class SortList(Component):
 
     def eval(self):
         """
-        Evaluate the answer stored in the component.
+        Evaluate the input field.
         """       
         order = [self._sol.index(item['id']) for item in self.items]
 
