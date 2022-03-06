@@ -160,6 +160,11 @@ apidoc == #|json|
             "default": "[]",
             "description": "Liste des boutons du clavier virtuel attaché au champ de réponse."
         },
+        "embed": {
+            "type": "str",
+            "default": "''",
+            "description": "Formule dans laquelle est insérée le champ de réponse."
+        },
         "checkratsimp": {
             "type": "bool",
             "default": "True",
