@@ -1,4 +1,4 @@
-extends = /model/jxg/pointmath.pl
+extends = /model/jxg/point.pl
 
 before ==
 angle=randitem([pi/4,pi/2,3*pi/4,pi,3*pi/2])
