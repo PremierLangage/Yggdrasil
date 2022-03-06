@@ -80,6 +80,9 @@ class DropGroup():
         return score
 
     def display_feedback(self):
+        """
+        Display visual feedback.
+        """
         for drop in self.drops:
             if drop.score is None:
                 score = self.score
@@ -91,9 +94,15 @@ class DropGroup():
                 drop.css = "error-state"
 
     def hide_feedback(self):
+        """
+        Hide visual feedback.
+        """
         pass
 
     def disable(self):
+        """
+        Disable the input field.
+        """
         for drop in self.drops:
             drop.disabled = True
         for label in self.labels:
