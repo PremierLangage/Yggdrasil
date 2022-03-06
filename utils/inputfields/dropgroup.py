@@ -73,6 +73,9 @@ class DropGroup():
         return "".join(lst)
 
     def eval(self):
+        """
+        Evaluate the answer.
+        """
         n = len(self.drops)
         num_right = 0
         num_wrong = 0
