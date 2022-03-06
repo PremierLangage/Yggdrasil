@@ -43,11 +43,23 @@ class JXGInput(Component):
         return self.score
 
     def display_feedback(self):
-        script = """
-        M.setAttribute({color: 'red'});
-        board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
-        """
+        if self.score == 100:
+            script = """
+            M.setAttribute({color: 'green'});
+            """
+        else:
+            script = """
+            M.setAttribute({color: 'red'});
+            board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
+            """
         self.add_script(script, {'xsol':self.sol[0], 'ysol':self.sol[1]})
+
+    def disable(self):
+        """
+        Disable the input field.
+        """ 
+        self.disabled = True
+
 
 
 
