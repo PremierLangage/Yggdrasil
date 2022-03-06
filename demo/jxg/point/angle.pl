@@ -14,6 +14,8 @@ attributes = {"showNavigation": False, "boundingbox":[-1.25, 1.25, 1.25, -1.25]}
 
 tol = 0.2
 
+pointname = "M"
+
 jxgscript == #|js|
 var circle = board.create('circle', [[0, 0], [0, 1]], {strokeColor: 'blue', fixed: true});
 var O = board.create('point', [0, 0], {size: 1, name: 'O', color: 'black', fixed: true});
