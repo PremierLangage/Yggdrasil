@@ -27,7 +27,7 @@ class Radio(Component):
 
     def shuffle(self):
         """
-        Shuffle the list of items.
+        Shuffle the items.
         """
         rd.shuffle(self.items)
 
