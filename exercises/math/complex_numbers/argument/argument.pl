@@ -8,7 +8,7 @@ equality = "Modulo"
 
 modulo = 2*pi
 
-title = Argument d'un nombre complexe
+title = "Argument d'un nombre complexe"
 
 before ==
 from sympy import arg
