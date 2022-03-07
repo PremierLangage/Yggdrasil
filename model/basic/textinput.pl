@@ -124,7 +124,7 @@ style.input ==
 }
 
 .mat-form-field:disabled {
-  background-color: grey;
+  background-color: lightgrey;
 }
 </style>
 ==
