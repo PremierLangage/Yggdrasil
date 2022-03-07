@@ -7,7 +7,7 @@ extends = messages_math.pl
 
 keypad = []
 
-embed =
+embed = ""
 
 prefix = Réponse :
 
