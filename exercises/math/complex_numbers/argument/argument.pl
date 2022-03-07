@@ -1,6 +1,7 @@
-# Author: D. Doyen
-# Tags: complex numbers
-# 19/8/2020
+# D. Doyen
+# 7/3/2021
+# complex numbers, modulus
+# Déterminer un argument d'un nombre complexe
 
 extends = /model/math/expr.pl
 
