@@ -75,9 +75,6 @@ function onReadyPL(nodes) {
         $('[data-toggle="popover"]').popover()
     })
 
-    {% if embed|length > 0 %}
-    mathField.reflow();
-    {% endif %}
 
 }
 </script>
