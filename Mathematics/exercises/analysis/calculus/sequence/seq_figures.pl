@@ -4,6 +4,7 @@ extends = /model/math/expr.pl
 
 before ==
 import json
+import random as rd
 def mat2svg(M,h):
     n=len(M)
     m=len(M[0])
