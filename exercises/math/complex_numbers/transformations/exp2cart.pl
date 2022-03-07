@@ -15,5 +15,5 @@ sol = z.expand
 ==
 
 question == 
-Ecrire sous forme cartésienne le nombre complexe $! \\large {{ z|latex }} !$.
+Ecrire sous forme cartésienne le nombre complexe $! \displaystyle {{ z|latex }} !$.
 ==
