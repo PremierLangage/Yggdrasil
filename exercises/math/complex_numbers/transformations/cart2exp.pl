@@ -7,7 +7,7 @@ extends = /model/math/complex.pl
 
 complex_form = "Exponential"
 
-title = "Forme exponentielle vers cartésienne"
+title = "Forme cartésienne vers exponentielle"
 
 before == #|py|
 from sympy import arg
@@ -18,18 +18,4 @@ sol = abs(z)*exp(I*arg(z))
 
 question == 
 Ecrire sous forme exponentielle le nombre complexe $! \large {{z|latex}} !$.
-==
-
-before ==
-a = randint(1,3)
-theta = randitem([pi,pi/2,3*pi/2])
-
-with evaluate(False):
-    sol = a*exp(I*theta)
-
-z = expand_complex(sol)
-==
-
-text == 
-Ecrire sous forme exponentielle le nombre complexe $! \\large {{z|latex}} !$.
 ==
