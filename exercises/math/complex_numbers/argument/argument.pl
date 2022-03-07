@@ -11,6 +11,7 @@ modulo = 2*pi
 title = Argument d'un nombre complexe
 
 before ==
+from sympy import arg
 z = choice([I,-I,1,-1,1+I,1-I,I-1,-1-I])
 z = randint(1, 3)*z
 sol = arg(z)
