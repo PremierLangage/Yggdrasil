@@ -11,7 +11,7 @@ before ==
 from sympy import evaluate
 a = randint(1,3)
 z = a*exp(I*pi/4)
-sol = z.expand
+sol = z.expand()
 ==
 
 question == 
