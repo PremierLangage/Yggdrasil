@@ -123,7 +123,7 @@ style.input ==
     padding-bottom: 0.6em !important;
 }
 
-.mat-autocomplete:disabled {
+.mat-input-element:disabled {
   background-color: grey;
 }
 </style>
