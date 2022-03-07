@@ -15,5 +15,5 @@ $! {{ p }} \sqrt{ {{ q }} } = !$
 ==
 
 embed ==
-\frac{1}{1+\sqrt{\MathQuillMathField{}}}
+\frac{1}{1+\sqrt{ \MathQuillMathField{} }}
 ==
