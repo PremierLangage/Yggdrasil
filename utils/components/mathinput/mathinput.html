@@ -40,7 +40,7 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
 var mathField_{{ id }} = MQ.MathField(document.getElementById("{{ id }}"));
 mathField_{{ id }}.latex(String.raw`{{ value|safe }}`);
 {% else %}
-var mathField_{{ id }} = MQ.StaticMathField(document.getElementById("{{ id }}"));
+var mathField_{{ id }} = MQ.StaticMath(document.getElementById("{{ id }}"));
 //mathField.innerFields[0].latex(String.raw`{{ value|safe }}`);
 {% endif %}
 
