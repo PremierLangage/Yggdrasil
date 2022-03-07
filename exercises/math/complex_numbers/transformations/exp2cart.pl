@@ -7,7 +7,7 @@ extends = /model/math/complex.pl
 
 complex_form = "Cartesian"
 
-title = Forme exponentielle vers cartésienne
+title = "Forme exponentielle vers cartésienne"
 
 before ==
 from sympy import evaluate
