@@ -36,6 +36,9 @@ class MathInput:
             if isinstance(val, str):
                 self.keypad[i] = std_keypad[val]
 
+    def set_embed(self, embed):
+        self.embed = embed.replace("#", r"\MathQuillMathField{}")
+
     def display_feedback(self):
         """Display the feedback of the input field."""
         score = self.score
