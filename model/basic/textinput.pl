@@ -122,6 +122,10 @@ style.input ==
     padding-top: 0.8em !important;
     padding-bottom: 0.6em !important;
 }
+
+.mat-input-element:disabled {
+  background-color: grey;
+}
 </style>
 ==
 
