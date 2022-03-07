@@ -7,7 +7,8 @@ k, n = symbols('k n')
 
 b = choice([n-1, n, n+1])
 s = Sum(k, (k, 1, b))
-sol = s.doit().collect()
+from sympy import factor
+sol = factor(s.doit())
 ==
 
 question ==
