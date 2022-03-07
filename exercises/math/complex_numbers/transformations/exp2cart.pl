@@ -9,9 +9,8 @@ title = Forme exponentielle vers cartésienne
 
 before ==
 from sympy import evaluate
-a=randint(1,3)
-with evaluate(False):
-    z = a*exp(I*pi/4)
+a = randint(1,3)
+z = a*exp(I*pi/4)
 sol = z.expand
 ==
 
