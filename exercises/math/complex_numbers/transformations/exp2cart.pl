@@ -13,7 +13,7 @@ before ==
 from sympy import evaluate
 m = randint(-2, 2, [0]) * E
 a = I*choice([pi/4, pi/2, -pi/4, -pi/2, 3*pi/4, 3*pi/2])
-sol = (m^a).expand()
+sol = (m**a).expand()
 ==
 
 question == 
