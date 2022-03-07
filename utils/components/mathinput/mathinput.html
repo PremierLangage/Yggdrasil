@@ -31,7 +31,7 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
   autoOperatorNames: 'sin cos tan ln exp cup cap',
   });
 
-{% if embed|length < 1 %}
+{% if embed|length == 0 %}
 var mathField_{{ id }} = MQ.MathField(document.getElementById("{{ id }}"));
 mathField_{{ id }}.latex(String.raw`{{ value|safe }}`);
 {% else %}
