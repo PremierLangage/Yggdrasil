@@ -13,7 +13,8 @@ before ==
 from sympy import evaluate
 m = randint(1, 3)
 a = choice([pi/4, pi/2, -pi/4, -pi/2, 3*pi/4, 3*pi/2])
-z = m*exp(a*I)
+with evaluate(False):
+    z = m*exp(a*I)
 sol = z.expand()
 ==
 
