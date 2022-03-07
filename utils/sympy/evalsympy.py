@@ -656,12 +656,12 @@ def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, un
         return (-1, "NotCplx")
     if not equal(ans, sol):
         return (0, "NotEqual")
-    if form == "cartesian":
+    if form.lower() == "cartesian":
         if not is_complex_cartesian(ans):
             return (-1, "NotCplxCartesian")
         if checkratsimp and any(not is_rat_simp(part) for part in complex_cartesian_parts(ans)):
             return (-1, "NotRatSimp")
-    if form == "exponential" and not is_complex_exponential(ans):
+    if form.lower() == "exponential" and not is_complex_exponential(ans):
             return (-1, "NotCplxExponential")
     return (100, "Success")
 
