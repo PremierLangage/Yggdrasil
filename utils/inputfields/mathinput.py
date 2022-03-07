@@ -22,6 +22,7 @@ class MathInput:
         self.value = kwargs.get('value', '')
         self.prefix = kwargs.get('prefix', '')
         self.suffix = kwargs.get('suffix', '')
+        self.emebed = kwargs.get('emebed', '')
         self.disabled = kwargs.get('disabled', False)
         self.sol = kwargs.get('sol', None)
         self.type = kwargs.get('type', 'expr')
@@ -85,6 +86,7 @@ class MathInput:
         suffix = self.suffix
         keypad = self.keypad
         value = self.value
+        embed = self.embed
         if self.disabled:
             cls_disabled = "mq-disabled"
         with open('mathinput.html') as f:
