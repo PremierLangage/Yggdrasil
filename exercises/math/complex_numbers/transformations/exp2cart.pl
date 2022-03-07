@@ -1,7 +1,7 @@
 # D. Doyen
 # 7/3/2021
-# complex numbers, modulus
-# Calculer le module d'un nombre complexe (sous forme cartésienne) 
+# complex numbers, exponential form, cartesian form
+# Passer d'une forme exponentielle à une forme cartésienne
 
 extends = /model/math/complex.pl
 
