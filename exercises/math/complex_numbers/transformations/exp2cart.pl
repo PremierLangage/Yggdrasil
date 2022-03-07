@@ -9,10 +9,13 @@ complex_form = "Cartesian"
 
 title = "Forme exponentielle vers cartésienne"
 
-before ==
+before == #|py|
 from sympy import evaluate
+# Définition un peu compliquée du nombre complexe
+# pour éviter les simplifications automatiques faites par SymPy
+# ex : exp(I*pi/2) -> i
 m = randint(-2, 2, [0]) * E
-a = I*choice([pi/4, pi/2, -pi/4, -pi/2, 3*pi/4, 3*pi/2])
+a = I * choice([pi/4, pi/2, -pi/4, -pi/2, 3*pi/4, 3*pi/2])
 sol = (m**a).expand()
 ==
 
