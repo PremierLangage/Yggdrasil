@@ -11,13 +11,11 @@ title = "Forme exponentielle vers cartésienne"
 
 before ==
 from sympy import evaluate
-m = randint(-1, 3, [1])
-a = choice([pi/4, pi/2, -pi/4, -pi/2, 3*pi/4, 3*pi/2])
-with evaluate(False):
-    z = m*exp(a*I)
-sol = z.expand()
+m = randint(-2, 2, [0]) * E
+a = I*choice([pi/4, pi/2, -pi/4, -pi/2, 3*pi/4, 3*pi/2])
+sol = (m^a).expand()
 ==
 
 question == 
-Ecrire sous forme cartésienne le nombre complexe $! \displaystyle \large z = {{ z|latex }} !$.
+Ecrire sous forme cartésienne le nombre complexe $! \displaystyle \large z =  {{ m|latex }}^{  {{ a|latex }} } !$.
 ==
