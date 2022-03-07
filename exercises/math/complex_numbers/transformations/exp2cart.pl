@@ -8,6 +8,7 @@ extends = /model/math/complex.pl
 title = Forme exponentielle vers cartésienne
 
 before ==
+from sympy import evaluate
 a=randint(1,3)
 with evaluate(False):
     z = a*exp(I*pi/4)
