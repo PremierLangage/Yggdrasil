@@ -1,7 +1,11 @@
-extends = /Mathematics/template/mathinput.pl
+# D. Doyen
+# 7/3/2021
+# complex numbers, modulus
+# Calculer le module d'un nombre complexe (sous forme cartésienne) 
+
+extends = /model/math/complex.pl
 
 title = Forme exponentielle vers cartésienne
-
 
 before ==
 a=randint(1,3)
