@@ -111,7 +111,7 @@ apidoc == #|json|
 }
 ==
 
-style.input ==
+style2.input ==
 <style>
 .mat-form-field-wrapper{
   margin: 0 !important;
