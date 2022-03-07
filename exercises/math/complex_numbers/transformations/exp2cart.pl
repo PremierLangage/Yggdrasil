@@ -11,8 +11,9 @@ title = "Forme exponentielle vers cartésienne"
 
 before ==
 from sympy import evaluate
-a = randint(1,3)
-z = a*exp(I*pi/4)
+m = randint(1, 3)
+a = choice([pi/4, pi/2, -pi/4, -pi/2, 3*pi/4, 3*pi/2])
+z = a*exp(a*I)
 sol = z.expand()
 ==
 
