@@ -1,5 +1,8 @@
 <div class="{{cls_disabled}}" style="display: inline">
   <div class="mathinput" style="display: inline">
+    {% if embed|length > 1 %}
+    <div id="{{id }}"> {{ embed }}</div>
+    {% else %}
     <div class="btn-group">
       <div id="{{id}}" class="default {{cls_border}}" ></div>
       {% if keypad|length > 0 %}
@@ -13,6 +16,7 @@
       </button>
       {% endif %}
     </div>
+     {% endif %}
       {{ suffix }}
   </div>
 </div>
