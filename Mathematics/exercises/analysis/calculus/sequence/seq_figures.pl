@@ -32,7 +32,7 @@ text ==
 
 ==
 
-form ==
+question ==
 {{sol}}
 <style>
 figure {
