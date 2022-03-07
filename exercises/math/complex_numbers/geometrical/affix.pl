@@ -2,6 +2,7 @@
 # 7/3/2021
 # complex numbers, affix, complex plane, geometrical representation
 # Placer dans le plan un point d'affixe donné. 
+extends = /model/jxg/point.pl
 
 before ==
 xsol = randint(-4, 4, [0])
