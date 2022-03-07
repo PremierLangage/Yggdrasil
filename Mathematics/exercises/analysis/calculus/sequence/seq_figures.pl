@@ -28,12 +28,8 @@ for i in range(4):
     fig.append(mat2svg(seq[i],20))
 
 ==
-text ==
-
-==
 
 question ==
-{{sol}}
 <style>
 figure {
     display: inline-block;
@@ -60,18 +56,4 @@ figure figcaption {
 {{fig.3}}
 <figcaption>Fig. 4</figcaption>
 </figure>
-
-{{input_r1}}
 ==
-
-input.r1.type = mathexpr
-
-
-evaluator==
-x=Symbol('x')
-score,numerror,feedback=ans_poly_factor(answer['1'],x,sol)
-==
-
-
-
-
