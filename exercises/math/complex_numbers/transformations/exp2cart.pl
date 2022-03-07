@@ -11,7 +11,7 @@ title = "Forme exponentielle vers cartésienne"
 
 before ==
 from sympy import evaluate
-m = randint(1, 1)
+m = randint(-1, -1)
 a = choice([pi/4, pi/2, -pi/4, -pi/2, 3*pi/4, 3*pi/2])
 with evaluate(False):
     z = m*exp(a*I)
