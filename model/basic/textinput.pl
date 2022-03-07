@@ -123,7 +123,7 @@ style.input ==
     padding-bottom: 0.6em !important;
 }
 
-.mat-form-field:disabled {
+.mat-form-field-wrapper:disabled {
   background-color: lightgrey;
 }
 </style>
