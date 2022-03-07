@@ -1,9 +1,6 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /models/math/expr.pl
 @ data.json [data.json]
 
-title = Factorisation
-
-lang = fr
 
 before ==
 def mat2svg(M,h):
