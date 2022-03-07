@@ -12,7 +12,7 @@ a = randint(-8, 8, [0])
 b = randint(-8, 8, [0])
 lhs = ln(a*x + b)
 rhs = randint(-8, 8, [0])
-sol = factor(list(solveset(lhs-rhs, x, domain=S.Reals))[0])
+sol = list(solveset(lhs-rhs, x, domain=S.Reals))[0]
 ==
 
 question ==
