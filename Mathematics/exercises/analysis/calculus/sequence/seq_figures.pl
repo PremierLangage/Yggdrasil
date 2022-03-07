@@ -3,6 +3,7 @@ extends = /model/math/expr.pl
 
 
 before ==
+import json
 def mat2svg(M,h):
     n=len(M)
     m=len(M[0])
