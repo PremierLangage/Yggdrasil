@@ -18,5 +18,5 @@ sol = z.expand()
 ==
 
 question == 
-Ecrire sous forme cartésienne le nombre complexe $! \displaystyle z = {{ m*exp(a*I)|latex }} !$.
+Ecrire sous forme cartésienne le nombre complexe $! \displaystyle z = {{ z|latex }} !$.
 ==
