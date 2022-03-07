@@ -41,7 +41,7 @@ var mathField_{{ id }} = MQ.MathField(document.getElementById("{{ id }}"));
 mathField_{{ id }}.latex(String.raw`{{ value|safe }}`);
 {% else %}
 var mathField_{{ id }} = MQ.StaticMath(document.getElementById("{{ id }}"));
-//mathField.innerFields[0].latex(String.raw`{{ value|safe }}`);
+mathField_{{ id }}.innerFields[0].latex(String.raw`{{ value|safe }}`);
 {% endif %}
 
 if (typeof setOfMathFields == "undefined") {
