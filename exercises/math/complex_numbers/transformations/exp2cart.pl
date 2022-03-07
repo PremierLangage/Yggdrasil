@@ -5,6 +5,8 @@
 
 extends = /model/math/complex.pl
 
+complex_form = "Cartesian"
+
 title = Forme exponentielle vers cartésienne
 
 before ==
