@@ -22,7 +22,7 @@ class MathInput:
         self.value = kwargs.get('value', '')
         self.prefix = kwargs.get('prefix', '')
         self.suffix = kwargs.get('suffix', '')
-        self.emebed = kwargs.get('emebed', '')
+        self.embed = kwargs.get('embed', '')
         self.disabled = kwargs.get('disabled', False)
         self.sol = kwargs.get('sol', None)
         self.type = kwargs.get('type', 'expr')
