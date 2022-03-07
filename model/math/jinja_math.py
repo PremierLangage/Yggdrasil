@@ -11,16 +11,7 @@ def component(l):
     return "<%s cid='%s'></%s>" % (selector, cid, selector)
 
 def mathinput(l):
-    id = l.id
-    prefix = l.prefix
-    suffix = l.suffix
-    keypad = l.keypad
-    value = l.value
-    if l.disabled:
-        cls_disabled = "mq-disabled"
-    with open('mathinput.html') as f:
-        html = f.read()
-    return Template(html).render(locals())
+    return l.render()
 
 
 @contextfilter
