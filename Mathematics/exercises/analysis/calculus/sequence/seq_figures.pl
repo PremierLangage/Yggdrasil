@@ -1,4 +1,4 @@
-extends = /models/math/expr.pl
+extends = /model/math/expr.pl
 @ data.json [data.json]
 
 
