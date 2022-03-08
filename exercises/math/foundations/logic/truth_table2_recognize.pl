@@ -30,9 +30,9 @@ question ==
 Soit P et Q deux propositions logiques. On considère une proposition $! T(P,Q) !$, construite à partir des propositions P et Q, dont la table de vérité est donnée ci-dessous. 
 <table class="table table-bordered">
 <tr>
-<td style ="white-space: nowrap; width: 1%;"> $! P !$ </td>
-<td> $! Q !$ </td>
-<td> $! T(P,Q) !$ </td>
+<td style="white-space: nowrap; width: 1%;"> $! P !$ </td>
+<td style="white-space: nowrap; width: 1%;"> $! Q !$ </td>
+<td style="white-space: nowrap; width: 1%;"> $! T(P,Q) !$ </td>
 </tr>
 {% for i in range(4) %}
 <tr>
