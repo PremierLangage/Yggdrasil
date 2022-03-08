@@ -22,7 +22,7 @@ labels = [label_in, label_subset, ""]
 sol=[]
 lhs=[]
 rhs=[]
-n=5
+nbdrops = 5
 cases = [] #param['cases']
 
 shuffle(cases)
