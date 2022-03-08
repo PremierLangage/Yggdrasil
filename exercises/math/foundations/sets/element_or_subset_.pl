@@ -22,8 +22,8 @@ labels = [label_in, label_subset, ""]
 sol=[]
 lhs=[]
 rhs=[]
-nbdrops = 2
-cases = [3, 3] #param['cases']
+nbdrops = len(cases)
+cases = param['cases']
 
 shuffle(cases)
 for i in range(len(cases)):
