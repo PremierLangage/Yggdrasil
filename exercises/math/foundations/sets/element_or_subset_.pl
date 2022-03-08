@@ -28,7 +28,7 @@ cases = [3, 3] #param['cases']
 shuffle(cases)
 for i in range(len(cases)):
     rhs.append(sampleint(0, 9, randint(3, 5)))
-    nonrhs = [x for i in range(0, 10) if x not in rhs]
+    nonrhs = [x for x in range(0, 10) if x not in rhs]
     sol.append(choice(labels))
     if cases[i] == 1:
         if sol[i] == label_in:
