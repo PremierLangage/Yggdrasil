@@ -64,7 +64,7 @@ Compléter les propositions suivantes avec les {{text1}} {{ input.labels[0] | co
 ==
 
 
-form ==
+inputblock ==
 <ul>
 {% for i in range(nndrops) %}
 <li> $! {{ lhs[i]}} !$ {{ input.drops[i]|component }} $! {{ rhs[i] }} !$ </li>
