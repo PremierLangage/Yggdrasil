@@ -23,21 +23,19 @@ sol=[]
 lhs=[]
 rhs=[]
 nbdrops = 2
-cases = [1, 1, 1, 1, 1] #param['cases']
+cases = [2, 2] #param['cases']
 
 shuffle(cases)
 for i in range(len(cases)):
-    if cases[i]==1:
-        rhs.append(sampleint(0, 9, randint(3, 5)))
-        sol.append(choice(labels))
+    rhs.append(sampleint(0, 9, randint(3, 5)))
+    sol.append(choice(labels))
+    if cases[i] == 1:
         if sol[i] == label_in:
             lhs.append(choice(rhs[i]))
         else:
             lhs.append(randint(0, 9, rhs[i]))
-    elif cases[i]==2:
-        rhs.append(sampleint(0,9,randint(3,5)))
-        sol.append(choice([label_subset,label_subset,""]))
-        if sol[i]==label_subset:
+    elif cases[i] == 2:
+        if sol[i] == label_subset:
             lhs.append([choice(rhs[i])])
         else:
             lhs.append([randint(0,9,rhs[i])])
