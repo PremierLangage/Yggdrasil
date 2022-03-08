@@ -23,7 +23,7 @@ sol=[]
 lhs=[]
 rhs=[]
 nbdrops = 5
-cases = [] #param['cases']
+cases = [1] #param['cases']
 
 shuffle(cases)
 for i in range(len(cases)):
