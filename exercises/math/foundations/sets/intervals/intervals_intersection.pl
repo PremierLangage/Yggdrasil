@@ -12,7 +12,7 @@ elif cas==4:
     a,b,c,d=x1,x2,x0,x3
 
 interv=[rand_interval_type(a,b),rand_interval_type(c,d)]
-rd.shuffle(interv)
+shuffle(interv)
 A,B=interv
 sol=A.intersection(B)
 ==
