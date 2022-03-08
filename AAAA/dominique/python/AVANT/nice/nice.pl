@@ -5,12 +5,12 @@ extends = /ComputerScience/python/template/pltest.pl
 @ /builder/before.py [builder.py]
 
 @sol.py [build.py]
-@ennonce.md
-@data1
+@ennonce.md 
+
 
 @exemple
 
-title= Le cadeau de Tante Sue
+title= De bon Mots 
 
 text==
 
@@ -25,6 +25,8 @@ pltest0,pltest1=build.doit()
 
 with open("ennonce.md","r") as f:
     lenonce= f.read()
+
+
 
 ==
 
