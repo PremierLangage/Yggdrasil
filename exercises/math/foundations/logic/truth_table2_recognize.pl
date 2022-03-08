@@ -31,7 +31,7 @@ Soit P et Q deux propositions logiques. On considère une proposition $! T(P,Q) 
 
 <table class="table table-bordered table-fit">
 <tr>
-<td style="white-space: nowrap; width: 1%;"> $! P !$ </td>
+<td > $! P !$ </td>
 <td > $! Q !$ </td>
 <td > $! T(P,Q) !$ </td>
 </tr>
