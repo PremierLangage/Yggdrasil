@@ -29,7 +29,7 @@ for i in range(4):
 ==
 
 question == #|html|
-On considère la suite de figures suivantes.
+On considère la suite de figures suivantes. <br>
 <style>
 figure {
     display: inline-block;
@@ -42,6 +42,6 @@ figure {
 <figcaption style="text-align: center;">Fig. {{i+1}}</figcaption>
 </figure>
 {% endfor %}
-
+<br>
 Combien de cases possède la Figure $! n !$ ?
 ==
