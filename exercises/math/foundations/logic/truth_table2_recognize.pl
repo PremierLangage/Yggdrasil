@@ -28,6 +28,7 @@ row3 = ["V" if R[i] else "F" for i in range(4)]
 
 question ==
 Soit P et Q deux propositions logiques. On considère une proposition $! T(P,Q) !$, construite à partir des propositions P et Q, dont la table de vérité est donnée ci-dessous. 
+
 <table class="table table-bordered">
 <tr>
 <td style="white-space: nowrap; width: 1%;"> $! P !$ </td>
@@ -44,4 +45,20 @@ Soit P et Q deux propositions logiques. On considère une proposition $! T(P,Q) 
 </table>
 
 Parmi les propositions suivantes, laquelle est logiquement équivalente à $! T(P,Q) !$ ?
+==
+
+
+style.table ==
+<style>
+table.table-fit {
+    width: auto !important;
+    table-layout: auto !important;
+}
+table.table-fit thead th, table.table-fit tfoot th {
+    width: auto !important;
+}
+table.table-fit tbody td, table.table-fit tfoot td {
+    width: auto !important;
+}
+</style>
 ==
