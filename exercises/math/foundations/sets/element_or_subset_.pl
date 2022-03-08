@@ -30,14 +30,14 @@ for i in range(len(cases)):
         rhs.append(sampleint(0,9,randint(3,5)))
         sol.append(choice([label_in,label_in,""]))
         if sol[i]==label_in:
-            lhs.append(randitem(rhs[i]))
+            lhs.append(choice(rhs[i]))
         else:
             lhs.append(randint(0,9,rhs[i]))
     elif cases[i]==2:
         rhs.append(sampleint(0,9,randint(3,5)))
         sol.append(choice([label_subset,label_subset,""]))
         if sol[i]==label_subset:
-            lhs.append([randitem(rhs[i])])
+            lhs.append([choice(rhs[i])])
         else:
             lhs.append([randint(0,9,rhs[i])])
     elif cases[i]==3:
