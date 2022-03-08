@@ -27,7 +27,7 @@ cases = param['cases']
 shuffle(cases)
 for i in range(len(cases)):
     if cases[i]==1:
-        rhs.append(list_randint_norep(randint(3,5),0,9))
+        rhs.append(sampleint(0,9,randint(3,5)))
         sol.append(randitem([label_in,label_in,""]))
         if sol[i]==label_in:
             lhs.append(randitem(rhs[i]))
