@@ -1,7 +1,7 @@
 extends = /model/math/interval.pl
 
 before ==
-x0,x1,x2,x3=sorted(sampleint(4,-5,5))
+x0,x1,x2,x3=sorted(sampleint(-5,5, 4))
 
 cas=randint(1,4)
 if cas<=2:
