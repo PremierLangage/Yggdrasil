@@ -14,9 +14,9 @@ Par example:
 
      ugknbfddgicrmopn est agréable car il a au moins trois voyelles (u...i...o...), une lettre double (...dd...), et aucune des sous-chaînes interdites.
      aaa est agréable car il a au moins trois voyelles et une lettre double, même si les lettres utilisées par différentes règles se chevauchent.
-     jchzalrnumimmnmhp est méchant car il n'a pas de double lettre.
+     jchzalrnumimmnmhp est méchant car il n`a pas de double lettre.
      haegwjzuvuyypxyu est méchant car il contient la chaîne xy.
-     dvszwmarrgswjxmb est méchant car il ne contient qu'une seule voyelle. 
+     dvszwmarrgswjxmb est méchant car il ne contient qu`une seule voyelle. 
 
 Ecrire une fonction Question1() qui lit dans le fichier "data" et compte et retourne le nombre de chaines (une par ligne) gentilles.
 
