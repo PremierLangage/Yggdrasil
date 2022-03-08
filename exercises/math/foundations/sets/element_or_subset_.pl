@@ -28,24 +28,25 @@ cases = [3, 3] #param['cases']
 shuffle(cases)
 for i in range(len(cases)):
     rhs.append(sampleint(0, 9, randint(3, 5)))
+    nonrhs = [x for i in range(0, 10) if x not in rhs]
     sol.append(choice(labels))
     if cases[i] == 1:
         if sol[i] == label_in:
             lhs.append(choice(rhs[i]))
         else:
-            lhs.append(randint(0, 9, rhs[i]))
+            lhs.append(choice(nonrhs))
     elif cases[i] == 2:
         if sol[i] == label_subset:
             lhs.append([choice(rhs[i])])
         else:
-            lhs.append([randint(0, 9, rhs[i])])
+            lhs.append([choice(nonrhs)])
     elif cases[i] == 3:
         if sol[i] == label_subset:
-            lhs.append(sample(rhs[i], randint(2,len(rhs[i]))))
+            lhs.append(sample(rhs[i], randint(2, len(rhs[i]))))
         else:
-            b=randint(2, len(rhs[i]))
-            a=randint(1, b-1)
-            lhs.append(sample(a,0,9,rhs[i])+sample(rhs[i],b-a))
+            b = randint(2, len(rhs[i]))
+            a = randint(1, b-1)
+            lhs.append(sample(nonrhs, a) + sample(rhs[i], b-a))
 
 
 for i in range(len(cases)):
