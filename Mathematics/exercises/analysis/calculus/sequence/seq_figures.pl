@@ -40,20 +40,10 @@ figure figcaption {
 }
 </style>
 
+{% for i in range(4) %}
 <figure>
-{{fig.0}}
-<figcaption>Fig. 1</figcaption>
+{{ fig[i] }}
+<figcaption>Fig. {{i+1}}</figcaption>
 </figure>
-<figure>
-{{fig.1}} 
-<figcaption>Fig. 2</figcaption>
-</figure>
-<figure>
-{{fig.2}} 
-<figcaption>Fig. 3</figcaption>
-</figure>
-<figure>
-{{fig.3}}
-<figcaption>Fig. 4</figcaption>
-</figure>
+{% endfor %}
 ==
