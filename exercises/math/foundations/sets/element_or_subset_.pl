@@ -66,7 +66,7 @@ Compléter les propositions suivantes avec les {{text1}} {{ input.labels[0] | co
 
 inputblock ==
 <ul>
-{% for i in range(nndrops) %}
+{% for i in range(nbdrops) %}
 <li> $! {{ lhs[i]|latex}} !$ {{ input.drops[i]|component }} $! {{ rhs[i]|latex }} !$ </li>
 {% endfor %}
 </ul>
