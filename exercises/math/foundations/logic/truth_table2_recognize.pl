@@ -60,5 +60,10 @@ table.table-fit thead th, table.table-fit tfoot th {
 table.table-fit tbody td, table.table-fit tfoot td {
     width: auto !important;
 }
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>
 ==
