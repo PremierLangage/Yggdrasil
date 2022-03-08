@@ -70,8 +70,7 @@ def Question1():
                 last = x
             if taboo and nbv >= 3 and dwble >= 1 :
                 nice = nice +1 
-            else:
-                print(line)
+
     return nice        
 
 
