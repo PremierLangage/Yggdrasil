@@ -17,33 +17,33 @@ elif param['relation'] == "expr1":
     label_subset = "est un sous-ensemble de"
     text1, text2 = "expressions", "aucune de ces expressions"
 
-labelcontents = [label_in, label_subset, ""]
+labels = [label_in, label_subset, ""]
 
-dropsolutions=[]
+sol=[]
 lhs=[]
 rhs=[]
 n=5
 cases = param['cases']
-rd.shuffle(cases)
+shuffle(cases)
 for i in range(len(cases)):
     if cases[i]==1:
         rhs.append(list_randint_norep(randint(3,5),0,9))
-        dropsolutions.append(randitem([label_in,label_in,""]))
-        if dropsolutions[i]==label_in:
+        sol.append(randitem([label_in,label_in,""]))
+        if sol[i]==label_in:
             lhs.append(randitem(rhs[i]))
         else:
             lhs.append(randint(0,9,rhs[i]))
     elif cases[i]==2:
         rhs.append(list_randint_norep(randint(3,5),0,9))
-        dropsolutions.append(randitem([label_subset,label_subset,""]))
-        if dropsolutions[i]==label_subset:
+        sol.append(randitem([label_subset,label_subset,""]))
+        if sol[i]==label_subset:
             lhs.append([randitem(rhs[i])])
         else:
             lhs.append([randint(0,9,rhs[i])])
     elif cases[i]==3:
         rhs.append(list_randint_norep(randint(3,5),0,9))
-        dropsolutions.append(randitem([label_subset,label_subset,""]))
-        if dropsolutions[i]==label_subset:
+        sol.append(randitem([label_subset,label_subset,""]))
+        if sol[i]==label_subset:
             lhs.append(list_randitem_norep(randint(2,len(rhs[i])),rhs[i]))
         else:
             b=randint(2,len(rhs[i]))
@@ -58,31 +58,15 @@ for i in range(len(cases)):
         rhs[i]=latex(FiniteSet(*rhs[i]))
 ==
 
-text ==
-Compléter les propositions suivantes avec les {{text1}} {{ labels[0] | component }} ou {{ labels[1] | component }}. Si {{text2}} ne convient, laisser la case vide {{ labels[2] | component }}.
+question ==
+Compléter les propositions suivantes avec les {{text1}} {{ input.labels[0] | component }} ou {{ input.labels[1] | component }}. Si {{text2}} ne convient, laisser la case vide {{ input.labels[2] | component }}.
 ==
 
 
 form ==
 <ul>
 {% for i in range(n) %}
-<li> $! {{ lhs[i]}} !$ {{ drops[i]|component }} $! {{ rhs[i] }} !$ </li>
+<li> $! {{ lhs[i]}} !$ {{ input.drops[i]|component }} $! {{ rhs[i] }} !$ </li>
 {% endfor %}
 </ul>
-==
-
-
-evaluator ==
-num_right = 0
-num_wrong = 0
-
-for i in range(n):
-    if drops[i].content == lstdropsolutions[i]:
-        num_right += 1
-        drops[i].css += "success-state"
-    else:
-        num_wrong +=1
-        drops[i].css += "error-state"
-
-score = int(num_right/n*100)
 ==
