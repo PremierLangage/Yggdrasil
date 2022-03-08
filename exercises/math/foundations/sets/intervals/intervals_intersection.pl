@@ -19,5 +19,5 @@ sol=A.intersection(B)
 
 text == 
 On considère les intervalles $! A= {{A|latex}} !$ et $! B= {{B|latex}}. !$
-Déterminer $! {{expr|latex}} !$.
+Déterminer $! A \cap B!$.
 ==
