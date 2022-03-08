@@ -1,0 +1,27 @@
+extends = /Mathematics/template/mathexpr.pl
+
+title = Intervalles
+
+lang = fr
+
+before ==
+x0,x1,x2,x3=sorted(sampleint(4,-5,5))
+
+cas=randint(1,4)
+if cas<=2:
+    a,b,c,d=x0,x2,x1,x3
+elif cas==3:
+    a,b,c,d=x0,x1,x2,x3
+elif cas==4:
+    a,b,c,d=x1,x2,x0,x3
+
+interv=[rand_interval_type(a,b),rand_interval_type(c,d)]
+rd.shuffle(interv)
+A,B=interv
+sol=A.intersection(B)
+==
+
+text == 
+On considère les intervalles $! A= {{A|latex}} !$ et $! B= {{B|latex}}. !$
+Déterminer $! {{expr|latex}} !$.
+==
