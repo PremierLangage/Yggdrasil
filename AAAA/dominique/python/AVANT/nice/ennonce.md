@@ -37,4 +37,4 @@ Par example:
     ieodomkazucvgmuy est méchant car il a une lettre répétitive avec une entre (odo), mais aucune paire qui apparaît deux fois.
 
 Combien de chaînes sont agréables selon ces nouvelles règles ?
- 
+
