@@ -26,7 +26,7 @@ row2 = ["V" if Q[i] else "F" for i in range(4)]
 row3 = ["V" if R[i] else "F" for i in range(4)]
 ==
 
-text ==
+question ==
 Soit P et Q deux propositions logiques. On considère une proposition $! T(P,Q) !$, construite à partir des propositions P et Q, dont la table de vérité est donnée ci-dessous. 
 <table>
 <tr>
