@@ -24,31 +24,6 @@ lhs=[]
 rhs=[]
 n=5
 cases = param['cases']
-shuffle(cases)
-for i in range(len(cases)):
-    if cases[i]==1:
-        rhs.append(sampleint(0,9,randint(3,5)))
-        sol.append(choice([label_in,label_in,""]))
-        if sol[i]==label_in:
-            lhs.append(choice(rhs[i]))
-        else:
-            lhs.append(randint(0,9,rhs[i]))
-    elif cases[i]==2:
-        rhs.append(sampleint(0,9,randint(3,5)))
-        sol.append(choice([label_subset,label_subset,""]))
-        if sol[i]==label_subset:
-            lhs.append([choice(rhs[i])])
-        else:
-            lhs.append([randint(0,9,rhs[i])])
-    elif cases[i]==3:
-        rhs.append(sampleint(0,9,randint(3,5)))
-        sol.append(choice([label_subset,label_subset,""]))
-        if sol[i]==label_subset:
-            lhs.append(sample(rhs[i], randint(2,len(rhs[i]))))
-        else:
-            b=randint(2,len(rhs[i]))
-            a=randint(1,b-1)
-            lhs.append(list_randint_norep(a,0,9,rhs[i])+sample(rhs[i],b-a))
 
 
 for i in range(len(cases)):
