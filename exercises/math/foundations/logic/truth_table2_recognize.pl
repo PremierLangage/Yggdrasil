@@ -12,13 +12,13 @@ else:
 
 items = ["$!P!$ et non ($!Q!$)","$!P!$ ou non ($!Q!$)","non ($!P!$) et $!Q!$","non ($!P!$) ou $!Q!$"]
 indsol = randint(0,3)
-if case==0:
+if indsol ==0:
     R = [P[i] and not Q[i] for i in range(4)]
-elif case==1:
+elif indsol ==1:
     R = [P[i] or not Q[i] for i in range(4)]
-elif case==2:
+elif indsol==2:
     R = [not P[i] and Q[i] for i in range(4)]
-elif case==3:
+elif indsol ==3:
     R = [not P[i] or Q[i] for i in range(4)]
 
 row1 = ["V" if P[i] else "F" for i in range(4)]
