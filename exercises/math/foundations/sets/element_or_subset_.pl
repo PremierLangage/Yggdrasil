@@ -2,7 +2,7 @@ extends = /model/math/dropgroup.pl
 
 title = Elément et sous-ensemble
 
-param.cases % [1,1,2,3,3]
+param.cases = [1,1,2,3,3]
 
 param.relation = symbol
 
