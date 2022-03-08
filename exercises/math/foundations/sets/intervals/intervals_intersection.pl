@@ -1,8 +1,4 @@
-extends = /Mathematics/template/mathexpr.pl
-
-title = Intervalles
-
-lang = fr
+extends = /math/model/interval.pl
 
 before ==
 x0,x1,x2,x3=sorted(sampleint(4,-5,5))
