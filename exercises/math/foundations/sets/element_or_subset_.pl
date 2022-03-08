@@ -38,7 +38,7 @@ for i in range(len(cases)):
         if sol[i] == label_subset:
             lhs.append([choice(rhs[i])])
         else:
-            lhs.append([randint(0,9,rhs[i])])
+            lhs.append([randint(0, 9, rhs[i])])
     elif cases[i]==3:
         rhs.append(sampleint(0,9,randint(3,5)))
         sol.append(choice([label_subset,label_subset,""]))
