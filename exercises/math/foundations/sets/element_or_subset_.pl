@@ -28,21 +28,21 @@ shuffle(cases)
 for i in range(len(cases)):
     if cases[i]==1:
         rhs.append(sampleint(0,9,randint(3,5)))
-        sol.append(randitem([label_in,label_in,""]))
+        sol.append(choice([label_in,label_in,""]))
         if sol[i]==label_in:
             lhs.append(randitem(rhs[i]))
         else:
             lhs.append(randint(0,9,rhs[i]))
     elif cases[i]==2:
-        rhs.append(list_randint_norep(randint(3,5),0,9))
-        sol.append(randitem([label_subset,label_subset,""]))
+        rhs.append(sampleint(0,9,randint(3,5)))
+        sol.append(choice([label_subset,label_subset,""]))
         if sol[i]==label_subset:
             lhs.append([randitem(rhs[i])])
         else:
             lhs.append([randint(0,9,rhs[i])])
     elif cases[i]==3:
-        rhs.append(list_randint_norep(randint(3,5),0,9))
-        sol.append(randitem([label_subset,label_subset,""]))
+        rhs.append(sampleint(0,9,randint(3,5)))
+        sol.append(choice([label_subset,label_subset,""]))
         if sol[i]==label_subset:
             lhs.append(list_randitem_norep(randint(2,len(rhs[i])),rhs[i]))
         else:
