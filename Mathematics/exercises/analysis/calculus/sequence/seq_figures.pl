@@ -2,48 +2,44 @@ extends = /model/math/expr.pl
 @ data.json [data.json]
 
 
-before ==
+before == #|py|
 import json
-import random as rd
-def mat2svg(M,h):
-    n=len(M)
-    m=len(M[0])
-    svg=r"<svg width='%i' height='%i'>" % (n*h+2,m*h+2)
+
+def mat2svg(M, h):
+    n = len(M)
+    m = len(M[0])
+    svg = r"<svg width='%i' height='%i'>" % (n*h+2, m*h+2)
     for i in range(n):
         for j in range(m):
             if M[i][j]==1:
-                svg+=r"<rect x='%i' y='%i' width='20' height='20' style='stroke:black;stroke-width:1;fill-opacity:0' />" % (j*h+1,i*h+1)
-    svg+=r"</svg>"  
+                svg += r"<rect x='%i' y='%i' width='20' height='20' style='stroke:black;stroke-width:1;fill-opacity:0' />" % (j*h+1,i*h+1)
+    svg += r"</svg>"  
     return svg
 
-with open('data.json') as json_file:  
-    data = json.load(json_file)
-    key=rd.choice(list(data.keys()))
-    seq=data[key]['figure']
-    sol=sympify(data[key]['formula'])
+with open('data.json') as f:  
+    data = json.load(f)
+    key = choice(list(data.keys()))
+    seq = data[key]['figure']
+    sol = sympify(data[key]['formula'])
 
 fig=[]
 for i in range(4):
     seq[i].reverse()
     fig.append(mat2svg(seq[i],20))
-
 ==
 
-question ==
+question == #|html|
 <style>
 figure {
     display: inline-block;
     margin: 20px; /* adjust as needed */
-}
-figure figcaption {
-    text-align: center;
 }
 </style>
 
 {% for i in range(4) %}
 <figure>
 {{ fig[i] }}
-<figcaption>Fig. {{i+1}}</figcaption>
+<figcaption style="text-align: center;">Fig. {{i+1}}</figcaption>
 </figure>
 {% endfor %}
 ==
