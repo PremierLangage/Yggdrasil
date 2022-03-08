@@ -1,4 +1,4 @@
-extends = /model/basic/dropgroup.pl
+extends = /model/math/dropgroup.pl
 
 title = Ecrire une proposition
 
