@@ -29,7 +29,7 @@ row3 = ["V" if R[i] else "F" for i in range(4)]
 question ==
 Soit P et Q deux propositions logiques. On considère une proposition $! T(P,Q) !$, construite à partir des propositions P et Q, dont la table de vérité est donnée ci-dessous. 
 
-<table class="center table table-bordered table-fit">
+<table class="table table-bordered table-fit">
 <tr>
 <td > $! P !$ </td>
 <td > $! Q !$ </td>
@@ -59,11 +59,6 @@ table.table-fit thead th, table.table-fit tfoot th {
 }
 table.table-fit tbody td, table.table-fit tfoot td {
     width: auto !important;
-}
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
 }
 </style>
 ==
