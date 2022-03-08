@@ -46,19 +46,3 @@ Soit P et Q deux propositions logiques. On considère une proposition $! T(P,Q) 
 
 Parmi les propositions suivantes, laquelle est logiquement équivalente à $! T(P,Q) !$ ?
 ==
-
-
-style.table ==
-<style>
-table.table-fit {
-    width: auto !important;
-    table-layout: auto !important;
-}
-table.table-fit thead th, table.table-fit tfoot th {
-    width: auto !important;
-}
-table.table-fit tbody td, table.table-fit tfoot td {
-    width: auto !important;
-}
-</style>
-==
