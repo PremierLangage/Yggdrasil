@@ -54,9 +54,9 @@ for i in range(len(cases)):
 
 for i in range(len(cases)):
     if isinstance(lhs[i],list):
-        lhs[i]=latex(FiniteSet(*lhs[i]))
+        lhs[i]=FiniteSet(*lhs[i])
     if isinstance(rhs[i],list):
-        rhs[i]=latex(FiniteSet(*rhs[i]))
+        rhs[i]=FiniteSet(*rhs[i])
 ==
 
 question ==
@@ -67,7 +67,7 @@ Compléter les propositions suivantes avec les {{text1}} {{ input.labels[0] | co
 inputblock ==
 <ul>
 {% for i in range(nndrops) %}
-<li> $! {{ lhs[i]}} !$ {{ input.drops[i]|component }} $! {{ rhs[i] }} !$ </li>
+<li> $! {{ lhs[i]|latex}} !$ {{ input.drops[i]|component }} $! {{ rhs[i]|latex }} !$ </li>
 {% endfor %}
 </ul>
 ==
