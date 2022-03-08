@@ -30,7 +30,7 @@ question ==
 Soit P et Q deux propositions logiques. On considère une proposition $! T(P,Q) !$, construite à partir des propositions P et Q, dont la table de vérité est donnée ci-dessous. 
 <table class="table table-bordered">
 <tr>
-<td scope="col" class="col-auto"> $! P !$ </td>
+<td scope="row" class="col-auto"> $! P !$ </td>
 <td> $! Q !$ </td>
 <td> $! T(P,Q) !$ </td>
 </tr>
