@@ -11,7 +11,7 @@ elif cas==3:
 elif cas==4:
     a,b,c,d=x1,x2,x0,x3
 
-interv=[rand_interval_type(a,b),rand_interval_type(c,d)]
+interv=[Interval(a,b),Interval(c,d)]
 shuffle(interv)
 A,B=interv
 sol=A.intersection(B)
