@@ -7,7 +7,6 @@ Compléter les phrases suivantes avec les étiquettes proposées.
 ==
 
 sol ==
-
 ==
 
 labels ==
@@ -48,7 +47,7 @@ elif isinstance(labels, list):
 else:
     _labels_ = []
 
-if nbdrops == None:
+if len(sol) > 0:
     if isinstance(sol, str):
         _sol_ = sol.splitlines()
     else:
