@@ -30,6 +30,9 @@ if __name__ == "__main__":
     for k, v in dic.items():
         try:
             dic[k] = literal_eval(str(v))
+            if isinstance(dic[k], dict):
+                for k2, v2 in dic[k].items():
+                    dic[k][k2] = literal_eval(str(v2))
         except:
             pass
 
