@@ -66,7 +66,7 @@ Compléter les propositions suivantes avec les {{text1}} {{ input.labels[0] | co
 
 form ==
 <ul>
-{% for i in range(n) %}
+{% for i in range(nndrops) %}
 <li> $! {{ lhs[i]}} !$ {{ input.drops[i]|component }} $! {{ rhs[i] }} !$ </li>
 {% endfor %}
 </ul>
