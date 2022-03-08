@@ -48,7 +48,7 @@ elif isinstance(labels, list):
 else:
     _labels_ = []
 
-if nbdrops == -1:
+if nbdrops == None:
     if isinstance(sol, str):
         _sol_ = sol.splitlines()
     else:
