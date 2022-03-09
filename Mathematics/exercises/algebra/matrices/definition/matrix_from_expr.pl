@@ -21,6 +21,4 @@ question ==
 Soit $!A!$ la matrice de taille $!{{n}} \times {{p}}!$ dont les
 coefficients sont définis par l'expression $! a_{i,j} = {{ expr|latex }} !$.
 Déterminer les coefficients de la matrice $!A!$.
-
-*Note : La matrice est redimensionnable.*
 ==
