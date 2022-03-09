@@ -8,7 +8,7 @@ text==
 
 Ecrire une fonction **est_minuscule(texte)** qui renvoie un booléen pour indiquer que le texte est entièrement en minuscule. 
 
-On considérera que la chaine de caractère texte est composé entièrement de caractères alphabétiques ASCII.
+On considérera que la chaine de caractère texte est composé entièrement de caractères ASCII.
 
 Les méthodes isupper() et islower() sont interdites. On utilisera les points de code.
 
