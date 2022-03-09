@@ -12,7 +12,7 @@ On considérera que la chaine de caractère texte est composé entièrement de c
 
 ==
 
-taboo=isupper
+taboo=isupper|
 
 pltest==
 >>> est_minuscule("bonjour")
