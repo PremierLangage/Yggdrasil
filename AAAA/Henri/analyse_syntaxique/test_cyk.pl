@@ -23,6 +23,12 @@ for w in bad:
     wrong += w + '\n'
 ==
 
+right ==
+==
+
+wrong ==
+==
+
 
 nbitems = 4
 minright = 1
