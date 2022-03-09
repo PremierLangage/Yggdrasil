@@ -12,7 +12,7 @@ else:
     
 coeffbound = param['coeffbound']
 
-mat.setzeros(n, m)
+ininitsize = [n, m]
 
 a, b = sample([-2, -1, 1, 2], 2)
 var('A B')
