@@ -103,9 +103,7 @@ def generate_input(seed, n):
 	else:
 		return rules, [], []
 
-	data = random.sample(sorted(good_words | bad_words), 4)
-
-	return rules, [w for w in data if good_words], [w for w in data if w in bad_words]
+	return rules, list(good_words), list(bad_words)
 
 def get_input(ident):
     seed = time.time()
