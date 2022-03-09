@@ -26,6 +26,7 @@ Je rappelle par quelques exemples les fonctions principales à utiliser:
     >>> chr(0xAB + 1)  # Donne le caractère de point de code AC (en hexadecimal)
     ¬
 
+
 Je rappelle également le site de référence concernant l'unicode: (https://unicode.org/charts/)[https://unicode.org/charts/]
 
 ==
