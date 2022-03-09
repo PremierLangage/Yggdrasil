@@ -95,7 +95,7 @@ def generate_input(seed, n):
 	bad_words = set()
 
 	for _ in range(1000):
-		if len(bad_words) < 8:
+		if len(bad_words) >= 8:
 			break
 		word = random_word(8,10)
 		if not cyk(n-1,rules, word):
