@@ -14,7 +14,7 @@ Tout les exercices doivent être verts une fois que vous avez fini !
 A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
 mais vous pouvez naviger avec le menu de gauche.
 
-### fonctions principales à utiliser:
+### Fonctions principales à utiliser:
 
 
     >>> ord('a')  # Donne le point de code du caractère 'a'
