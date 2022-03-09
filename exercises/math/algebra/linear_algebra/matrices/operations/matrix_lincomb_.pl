@@ -14,7 +14,7 @@ coeffbound = param['coeffbound']
 
 mat.setzeros(n, m)
 
-a, b = sample([-2, -1, 1, 2], 2])
+a, b = sample([-2, -1, 1, 2], 2)
 var('A B')
 expr = simplify(a*A + b*B)
 MA = randint_matrix(n, m, coeffbound)
