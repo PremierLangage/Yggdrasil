@@ -20,10 +20,11 @@ def affiche_caractere(point_de_code):
 
 pltest==
 >>> affiche_caractere(8765)
-
+∽
 >>> affiche_caractere(0x0976)
-
+ॶ
 >>> affiche_caractere(0b1001110)
+N
 ==
 
 
