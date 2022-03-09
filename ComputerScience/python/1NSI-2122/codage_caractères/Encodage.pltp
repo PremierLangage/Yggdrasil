@@ -16,7 +16,7 @@ mais vous pouvez naviger avec le menu de gauche.
 
 Je rappelle par quelques exemples les fonctions principales à utiliser:
 
-```python
+`python
 >>> ord('a')  # Donne le point de code du caractère 'a'
 97
 >>> chr(97)  # Donne le caractère de points de code 97
@@ -25,7 +25,7 @@ a
 «
 >>> chr(0xAB + 1)  # Donne le caractère de points de code AC (en hexadecimal)
 ¬
-```
+`
 
 ==
 
