@@ -14,7 +14,7 @@ Tout les exercices doivent être verts une fois que vous avez fini !
 A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
 mais vous pouvez naviger avec le menu de gauche.
 
-## fonctions principales à utiliser:
+### fonctions principales à utiliser:
 
 
     >>> ord('a')  # Donne le point de code du caractère 'a'
@@ -27,7 +27,7 @@ mais vous pouvez naviger avec le menu de gauche.
     ¬
 
 
-## Unicode
+### Unicode
 
 Je rappelle également le site de référence concernant l'unicode: [https://unicode.org/charts/](https://unicode.org/charts/)
 
