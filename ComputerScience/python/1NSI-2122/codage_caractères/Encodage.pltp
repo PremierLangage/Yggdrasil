@@ -21,7 +21,7 @@ Je rappelle par quelques exemples les fonctions principales à utiliser:
 
 `97`
 
-`>>> chr(97)  # Donne le caractère de points de code 97``
+`>>> chr(97)  # Donne le caractère de points de code 97`
 
 `a`
 >>> chr(0xAB)  # Donne le caractère de points de code AB (en hexadecimal)
