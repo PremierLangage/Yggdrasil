@@ -4,6 +4,8 @@ title = Matrice définie par l'expression des coefficients
 
 initsize = [2, 2]
 
+resizable = True
+
 before ==
 var('i j')
 a = randint(-2, 2, [0])
