@@ -24,11 +24,10 @@ Je rappelle par quelques exemples les fonctions principales à utiliser:
 `>>> chr(97)  # Donne le caractère de points de code 97`
 
 `a`
->>> chr(0xAB)  # Donne le caractère de points de code AB (en hexadecimal)
-«
->>> chr(0xAB + 1)  # Donne le caractère de points de code AC (en hexadecimal)
-¬
-`
+    >>> chr(0xAB)  # Donne le caractère de points de code AB (en hexadecimal)
+    «
+    >>> chr(0xAB + 1)  # Donne le caractère de points de code AC (en hexadecimal)
+    ¬
 
 ==
 
