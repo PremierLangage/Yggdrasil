@@ -34,7 +34,6 @@ Je rappelle également le site de référence concernant l'unicode: (https://uni
 ==
 
 # Fonctions de base
-@ affiche_caractere_special.pl
 @ affiche_caractere.pl
 @ affiche_hiragana.pl
 @ carac_minuscule.pl
