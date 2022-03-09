@@ -14,6 +14,19 @@ Tout les exercices doivent être verts une fois que vous avez fini !
 A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
 mais vous pouvez naviger avec le menu de gauche.
 
+Je rappelle par quelques exemples les fonctions principales à utiliser:
+
+```python
+>>> ord('a')  # Donne le point de code du caractère 'a'
+97
+>>> chr(97)  # Donne le caractère de points de code 97
+a
+>>> chr(0xAB)  # Donne le caractère de points de code AB (en hexadecimal)
+«
+>>> chr(0xAB + 1)  # Donne le caractère de points de code AC (en hexadecimal)
+¬
+```
+
 ==
 
 # Fonctions de base 
