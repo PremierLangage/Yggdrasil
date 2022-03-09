@@ -2,19 +2,20 @@ extends = /model/math/hmatrix.pl
 
 title = Matrice définie par l'expression des coefficients
 
-matsize = [2, 2]
+initsize = [2, 2]
 
 before ==
 var('i j')
 a = randint(-2, 2, [0])
 b = randint(-2, 2, [0])
-
 expr = simplify(a*i+b*j)
-[n,p]=list_randint_norep(2,2,3)
+
+[n, p] = sample([2, 3], 2)
+
 sol = Matrix(n, p, lambda i,j : a*(i+1)+b*(j+1))
 ==
 
-text ==
+question ==
 Soit $!A!$ la matrice de taille $!{{n}} \times {{p}}!$ dont les
 coefficients sont définis par l'expression $! a_{i,j} = {{ expr|latex }} !$.
 Déterminer les coefficients de la matrice $!A!$.
