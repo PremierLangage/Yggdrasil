@@ -1,4 +1,4 @@
-extends = /model/math/hmatrix.pl
+extends = /model/math/matrix.pl
 
 title = Matrice définie par l'expression des coefficients
 
