@@ -15,11 +15,7 @@ Ces caractères sont sur le document [joint](https://unicode.org/charts/PDF/U060
 taboo=isupper|islower|
 
 pltest==
->>> est_minuscule("b")
-True
->>> est_minuscule("B")
-False
->>> est_minuscule("z")
-True
+>>> affiche_arabe()
+
 ==
 
