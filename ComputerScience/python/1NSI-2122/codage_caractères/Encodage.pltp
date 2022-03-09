@@ -29,6 +29,11 @@ Je rappelle par quelques exemples les fonctions principales à utiliser:
     >>> chr(0xAB + 1)  # Donne le caractère de points de code AC (en hexadecimal)
     ¬
 
+```
+essai
+essai
+```
+
 ==
 
 # Fonctions de base 
