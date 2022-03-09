@@ -6,7 +6,8 @@ title= Affiche minuscule
 text==
 
 
-Ecrire une fonction **est_minuscule(texte)** qui renvoie un booléen pour indiquer que le texte est en minuscule. 
+Ecrire une fonction **est_minuscule(texte)** qui renvoie un booléen pour indiquer que le texte est entièrement en minuscule. 
+
 On considérera que la chaine de caractère texte est composé entièrement de caractères ASCII.
 
 ==
