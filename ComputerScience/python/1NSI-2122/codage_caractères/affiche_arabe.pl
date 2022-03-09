@@ -12,7 +12,7 @@ Ces caractères sont sur le document [joint](https://unicode.org/charts/PDF/U060
 
 ==
 
-taboo=isupper|islower
+taboo=isupper()|islower
 
 pltest==
 >>> affiche_arabe()
