@@ -1,7 +1,7 @@
 extends = /ComputerScience/python/template/pltest.pl
 builder= /builder/before.py
 
-title= Affiche minuscule 
+title= Texte minuscule 
 
 text==
 
