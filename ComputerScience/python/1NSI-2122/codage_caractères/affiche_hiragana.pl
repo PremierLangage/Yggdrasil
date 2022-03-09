@@ -26,7 +26,7 @@ def affiche_hiragana():
             print(ligne)
             cmpt = 0
             ligne = ""
-===
+==
 
 pltest==
 >>> affiche_hiragana()
