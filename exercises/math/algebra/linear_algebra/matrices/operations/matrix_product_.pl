@@ -15,7 +15,6 @@ else:
 coeffbound = param['coeffbound']
 
 min = min([n, m, p])
-mat.setzeros(min)
 
 A = randint_matrix(n, m, coeffbound)
 B = randint_matrix(m, p, coeffbound)
