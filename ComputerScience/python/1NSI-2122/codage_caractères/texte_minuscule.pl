@@ -13,7 +13,7 @@ Les méthodes isupper() et islower() sont interdites. On utilisera les points de
 
 ==
 
-taboo=isupper|islower|
+taboo=isupper|islower
 
 pltest==
 >>> est_minuscule("bonjour")
