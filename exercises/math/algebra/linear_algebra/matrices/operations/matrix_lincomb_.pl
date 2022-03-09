@@ -25,6 +25,6 @@ sol = a*MA+b*MB
 
 question ==
 Soit les matrices
-$$ A = \left( {{ MA|latex }}\right) \text{ et } B = \left({{ MB|latex }}\right) $$ 
+$$ A = {{ MA|latex }} \text{ et } B = {{ MB|latex }} $$ 
 Calculer $! {{expr|latex}} !$.
 ==
