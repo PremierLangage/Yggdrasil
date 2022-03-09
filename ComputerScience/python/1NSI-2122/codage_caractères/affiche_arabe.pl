@@ -1,37 +1,26 @@
 
 extends = /ComputerScience/python/template/pltest.pl
 
-title= Affiche caractères arabes 
+title= Affiche caractères japonais 
 
 text==
 
 
-Ecrire une fonction **affiche_arabe()** qui affiche tous les caractères arabe unicode.
+Ecrire une fonction **affiche_hiragane()** qui affiche tous les caractères japonais hiragana unicode.
 
-Ces caractères sont sur le document [joint](https://unicode.org/charts/PDF/U0600.pdf) 
+Ces caractères sont sur le document [joint](https://unicode.org/charts/PDF/U3040.pdf) 
 
 ==
 
 taboo=isupper|islower
 
 pltest==
->>> affiche_arabe()
-؀؁؂؃؄؅؆؇؈؉؊؋،؍؎
-؏ؘؙؚؐؑؒؓؔؕؖؗ؛؜؝
-؞؟ؠءآأؤإئابةتثج
-حخدذرزسشصضطظعغػ
-ؼؽؾؿـفقكلمنهوىي
-ًٌٍَُِّْٕٖٓٔٗ٘ٙ
-ٜٟٚٛٝٞ٠١٢٣٤٥٦٧٨
-٩٪٫٬٭ٮٯٰٱٲٳٴٵٶٷ
-ٸٹٺٻټٽپٿڀځڂڃڄڅچ
-ڇڈډڊڋڌڍڎڏڐڑڒړڔڕ
-ږڗژڙښڛڜڝڞڟڠڡڢڣڤ
-ڥڦڧڨکڪګڬڭڮگڰڱڲڳ
-ڴڵڶڷڸڹںڻڼڽھڿۀہۂ
-ۃۄۅۆۇۈۉۊۋیۍێۏېۑ
-ےۓ۔ەۖۗۘۙۚۛۜ۝۞۟۠
-ۣۡۢۤۥۦۧۨ۩۪ۭ۫۬ۮۯ
-۰۱۲۳۴۵۶۷۸۹ۺۻۼ۽۾
+>>> affiche_hiragane()
+぀ぁあぃいぅうぇえぉおかがきぎく
+ぐけげこごさざしじすずせぜそぞた
+だちぢっつづてでとどなにぬねのは
+ばぱひびぴふぶぷへべぺほぼぽまみ
+むめもゃやゅゆょよらりるれろゎわ
+ゐゑをんゔゕゖ゗゘゙゚゛゜ゝゞゟ
 ==
 
