@@ -1,20 +1,23 @@
 extends = /ComputerScience/python/template/pltest.pl
 
-title= Distribution 
+title= Affiche minuscule 
 
 text==
 
 
-Ecrire une fonction **{{funcname}}** qui vérifie le doctest suivant :
-
-{{doctest}}
-
+Ecrire une fonction **est_minuscule(texte)** qui renvoie un booléen pour indiquer que le texte est en minuscule. 
+On considérera que la chaine de caractère texte est composé entièrement de caractères ASCII.
 
 ==
 
 
 pltest==
->>> deal([],3)
->>> deal([(1,2),(3,4)],1)
-[(1,2)],[(3,4)]
+>>> est_minuscule("bonjour")
+True
+>>> est_minuscule("")
+True
+>>> est_minuscule("Bonjour")
+False
+>>> est_minuscule("bonjour Bob")
+False
 ==
