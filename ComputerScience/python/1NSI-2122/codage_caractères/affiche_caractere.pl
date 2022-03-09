@@ -13,10 +13,16 @@ Ecrire une fonction **affiche_caractere(point_de_code)** qui affiche le caracter
 
 taboo=isupper|islower
 
-reponse==
+before==
 def affiche_caractere(point_de_code):
     print(chr(point_de_code))
+
+import random, sys
+
+point_de_code = random.randint(100,100000)
+pltest1=""">>> affiche_caractere({})\n{}""".format(point_de_code , chr(point_de_code ))
 ==
+
 
 pltest==
 >>> affiche_caractere(8765)
