@@ -6,7 +6,7 @@ title= Affiche caractères japonais
 text==
 
 
-Ecrire une fonction **affiche_hiragane()** qui affiche tous les caractères japonais hiragana unicode
+Ecrire une fonction **affiche_hiragana()** qui affiche tous les caractères japonais hiragana unicode
 par ligne de 16 caractères.
 
 Ces caractères sont sur le document [joint](https://unicode.org/charts/PDF/U3040.pdf) 
@@ -16,7 +16,7 @@ Ces caractères sont sur le document [joint](https://unicode.org/charts/PDF/U304
 taboo=isupper|islower
 
 pltest==
->>> affiche_hiragane()
+>>> affiche_hiragana()
 ぀ぁあぃいぅうぇえぉおかがきぎく
 ぐけげこごさざしじすずせぜそぞた
 だちぢっつづてでとどなにぬねのは
