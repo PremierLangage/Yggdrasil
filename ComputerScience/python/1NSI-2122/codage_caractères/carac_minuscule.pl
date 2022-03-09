@@ -1,14 +1,14 @@
 
 extends = /ComputerScience/python/template/pltest.pl
 
-title= Texte minuscule 
+title= Caractère minuscule 
 
 text==
 
 
-Ecrire une fonction **est_minuscule(texte)** qui renvoie un booléen pour indiquer que le texte est entièrement en minuscule. 
+Ecrire une fonction **est_minuscule(carac)** qui renvoie un booléen pour indiquer que le caractère `carac` est entièrement en minuscule. 
 
-On considérera que la chaine de caractère texte est composé entièrement de caractères ASCII.
+On considérera que la chaine de caractère carac est composé d'un unique caractères ASCII.
 
 Les méthodes isupper() et islower() sont interdites. On utilisera les points de code.
 
@@ -17,12 +17,10 @@ Les méthodes isupper() et islower() sont interdites. On utilisera les points de
 taboo=isupper|islower|
 
 pltest==
->>> est_minuscule("bonjour")
+>>> est_minuscule("b")
 True
->>> est_minuscule("")
+>>> est_minuscule("B")
+False
+>>> est_minuscule("z")
 True
->>> est_minuscule("Bonjour")
-False
->>> est_minuscule("bonjour Bob")
-False
 ==
