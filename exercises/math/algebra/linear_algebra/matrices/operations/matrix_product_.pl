@@ -5,6 +5,8 @@ Produit de matrices
 ==
 
 before ==
+from randsympy import randint_matrix
+
 if isinstance(param['size'][0], list):
     n, m, p = randitem(param['size'])
 else:
