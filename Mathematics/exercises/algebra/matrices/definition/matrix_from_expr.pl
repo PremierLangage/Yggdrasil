@@ -1,9 +1,10 @@
-extends = /model/math/mathmatrix.pl
+extends = /model/math/hmatrix.pl
 
 title = Matrice définie par l'expression des coefficients
 
+matsize = [2, 2]
+
 before ==
-mat.setzeros(2)
 var('i j')
 a = randint(-2, 2, [0])
 b = randint(-2, 2, [0])
