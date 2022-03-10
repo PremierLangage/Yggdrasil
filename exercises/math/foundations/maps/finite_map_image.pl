@@ -11,7 +11,6 @@ m=randint(5,9)
 row1=list(range(1,n+1))
 row2=[randint(1,m) for _ in range(n)]
 A=FiniteSet(*sample(row1, randint(3,4)))
-A_tex=latex(A)
 imA=FiniteSet(*[row2[x-1] for x in A])
 
 table= Template(tpltable).render(row1=row1,row2=row2)
@@ -24,7 +23,7 @@ On considère l'application $! f: \{1,\ldots,{{n}} \}\rightarrow \mathbb{N} !$ d
 {{table|safe}}
 <br>
 
-Déterminer l'image directe de l'ensemble $!\\{ {{A_tex}} \\}!$ par $! f !$.
+Déterminer l'image directe de l'ensemble $! {{A|latex}} !$ par $! f !$.
 ==
 
 evaluator==
