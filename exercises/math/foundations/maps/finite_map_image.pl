@@ -15,7 +15,7 @@ sol = FiniteSet(*[row2[x-1] for x in A])
 
 table.add_row(['$! x !$'] + row1)
 table.add_row(['$! f(x) !$'] + row2)
-table_html = table.get_html_string(header=False)
+table_html = table.get_html_string(header=False, attributes={"class":"table table-bordered w-auto"}))
 ==
 
 question ==
