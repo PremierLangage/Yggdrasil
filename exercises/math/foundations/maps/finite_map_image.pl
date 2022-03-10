@@ -1,4 +1,4 @@
-extends = finite_map_.pl
+extends = /model/math/expr.pl
 
 title = Image directe d'une application
 
