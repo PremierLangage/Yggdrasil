@@ -28,9 +28,9 @@ On considère l'application $! f: \{1,\ldots,{{n}} \}\rightarrow \mathbb{N} !$ d
 Déterminer l'image directe de l'ensemble $! {{A|latex}} !$ par $! f !$.
 ==
 
-extracss==
+style.mytable ==
 <style>
-table.mytable table, th, td {
+.mytable table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
