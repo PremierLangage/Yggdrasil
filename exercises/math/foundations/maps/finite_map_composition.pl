@@ -63,3 +63,18 @@ inputblock ==
 {{ e|component }}
 {%- endfor %}
 ==
+
+style.mytable ==
+<style>
+.mytable {
+    margin: auto;
+}
+.mytable th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0.5em;
+  text-align:center;
+}
+}
+</style>
+==
