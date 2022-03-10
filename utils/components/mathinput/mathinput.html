@@ -10,7 +10,7 @@
       <button class="btn btn-sm btn-outline-secondary shadow-none" onclick="mathField_{{ id }}.{{ item.action }}(String.raw`{{ item.value }}`);mathField_{{ id }}.focus()">{{ item.label|safe }}</button>
       {% endfor %}
       </div>
-      <button type="button" class="btn btn-xs btn-outline-secondary shadow-none btn-keypad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button type="button" class="btn btn-xs btn-outline-secondary shadow-none btn-keypad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {{ disabled }}>
       <i class="fas fa-keyboard fa-2x"></i>
       </button>
       {% endif %}
