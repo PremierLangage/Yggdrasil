@@ -29,24 +29,7 @@ Déterminer l'image directe de l'ensemble $! {{A|latex}} !$ par $! f !$.
 ==
 
 
-tpltable ==
-<table>
-<tr>
-<th> $! x !$ </th>
-{% for item in row1 %}
-<td> {{item}} </td>
-{% endfor %}
-</tr>
-<tr>
-<th> $! {{f}} (x) !$ </th>
-{% for item in row2 %}
-<td> {{item}} </td>
-{% endfor %}
-</tr>
-</table>
-==
-
-style2.table ==
+style.table ==
 <style>
 table, th, td {
   border: 1px solid black;
