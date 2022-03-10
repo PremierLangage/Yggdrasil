@@ -30,16 +30,15 @@ Déterminer l'image directe de l'ensemble $! {{A|latex}} !$ par $! f !$.
 
 style.mytable ==
 <style>
-.mytable table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-.mytable table {
+.mytable {
     margin: auto;
 }
 .mytable th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
   padding: 0.5em;
   text-align:center;
+}
 }
 </style>
 ==
