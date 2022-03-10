@@ -13,8 +13,8 @@ row2 = [randint(1,m) for _ in range(n)]
 A = FiniteSet(*sample(row1, randint(3,4)))
 sol = FiniteSet(*[row2[x-1] for x in A])
 
-table.add_row(['x'] + row1)
-table.add_row(['f(x)'] + row2)
+table.add_row(['$! x !$'] + row1)
+table.add_row(['$! f(x) !$'] + row2)
 table_html = table.get_html_string(header=False)
 ==
 
