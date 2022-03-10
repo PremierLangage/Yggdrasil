@@ -34,3 +34,21 @@ score,_,feedback=ans_struct_expr(input.value,imA,"composite")
 solution ==
 La solution est $! {{imA_tex}} !$
 ==
+
+
+tpltable ==
+<table>
+<tr>
+<th> $! x !$ </th>
+{% for item in row1 %}
+<td> {{item}} </td>
+{% endfor %}
+</tr>
+<tr>
+<th> $! {{f}} (x) !$ </th>
+{% for item in row2 %}
+<td> {{item}} </td>
+{% endfor %}
+</tr>
+</table>
+==
