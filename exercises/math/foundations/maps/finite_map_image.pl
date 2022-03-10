@@ -15,7 +15,7 @@ sol = FiniteSet(*[row2[x-1] for x in A])
 
 table.add_row(['$! x !$'] + row1)
 table.add_row(['$! f(x) !$'] + row2)
-table_html = table.get_html_string(header=False, attributes={"class":"table table-bordered w-auto"})
+table_html = table.get_html_string(header=False, attributes={"class":"mytable"})
 ==
 
 question ==
@@ -26,4 +26,20 @@ On considère l'application $! f: \{1,\ldots,{{n}} \}\rightarrow \mathbb{N} !$ d
 <br>
 
 Déterminer l'image directe de l'ensemble $! {{A|latex}} !$ par $! f !$.
+==
+
+extracss==
+<style>
+.mytable table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.mytable table {
+    margin: auto;
+}
+.mytable th, td {
+  padding: 0.5em;
+  text-align:center;
+}
+</style>
 ==
