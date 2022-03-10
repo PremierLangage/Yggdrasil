@@ -11,15 +11,15 @@ row1 = list(range(1,n+1))
 row2f = [randint(1,n) for _ in range(n)]
 row2g = [randint(1,n) for _ in range(n)]
 
-tablef = PrettyTable()
+tablef = PrettyTable(header=False)
 tablef.add_row(['$! x !$'] + row1)
 tablef.add_row(['$! f(x) !$'] + row2f)
 tablef_html = table.get_html_string(header=False, attributes={"class":"mytable"})
 
-tableg = PrettyTable()
+tableg = PrettyTable(header=False)
 tableg.add_row(['$! x !$'] + row1)
 tableg.add_row(['$! g(x) !$'] + row2g)
-tableg_html = table.get_html_string(header=False, attributes={"class":"mytable"})
+tableg_html = table.get_html_string(attributes={"class":"mytable"})
 
 case = choice([1, 2])
 sol = []
