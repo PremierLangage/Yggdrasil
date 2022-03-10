@@ -18,7 +18,7 @@ table.add_row(['$! f(x) !$'] + row2)
 table.border = True
 table.header = False
 table.padding_width = 5
-table_html = table.get_html_string(header=False)
+table_html = table.get_html_string()
 ==
 
 question ==
