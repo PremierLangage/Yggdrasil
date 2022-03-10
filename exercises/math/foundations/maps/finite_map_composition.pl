@@ -1,4 +1,4 @@
-extends = /model/math/dropgroup
+extends = /model/math/dropgroup.pl
 
 title = Composition d'applications
 
