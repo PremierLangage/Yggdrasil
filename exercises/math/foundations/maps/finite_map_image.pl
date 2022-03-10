@@ -10,7 +10,7 @@ n=randint(5,9)
 m=randint(5,9)
 row1=list(range(1,n+1))
 row2=list_randint(n,1,m)
-A=FiniteSet(*list_randitem_norep(randint(3,4),row1))
+A=FiniteSet(*sample(randint(3,4),row1))
 A_tex=latex(A)
 imA=FiniteSet(*[row2[x-1] for x in A])
 
