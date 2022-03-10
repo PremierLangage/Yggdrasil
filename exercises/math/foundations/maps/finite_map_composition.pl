@@ -6,8 +6,8 @@ before ==
 n=randint(4,5)
 
 row1 = list(range(1,n+1))
-row2f = list_randint(n,1,n)
-row2g = list_randint(n,1,n)
+row2f = [randint(1,n) for _ in range(n)]
+row2g = [randint(1,n) for _ in range(n)]
 
 tablef.add_row(['$! x !$'] + row1)
 tablef.add_row(['$! f(x) !$'] + row2f)
