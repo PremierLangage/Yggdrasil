@@ -4,8 +4,6 @@ title = Image directe d'une application
 
 before ==
 from jinja2 import Template
-
-
 n=randint(5,9)
 m=randint(5,9)
 row1=list(range(1,n+1))
@@ -24,14 +22,6 @@ On considère l'application $! f: \{1,\ldots,{{n}} \}\rightarrow \mathbb{N} !$ d
 <br>
 
 Déterminer l'image directe de l'ensemble $! {{A|latex}} !$ par $! f !$.
-==
-
-evaluator==
-score,_,feedback=ans_struct_expr(input.value,imA,"composite")
-==
-
-solution ==
-La solution est $! {{imA_tex}} !$
 ==
 
 
