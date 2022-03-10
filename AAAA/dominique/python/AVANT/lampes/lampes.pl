@@ -21,8 +21,8 @@ text==
 
 before==
 import build
-import os
-print("c casé ", file=os.err)
+import sys
+print("c casé ", file = sys.stderr )
 
 
 pltest0,pltest1=build.doit()
