@@ -56,9 +56,18 @@ def evalans(strans):
     if not equal(f(*ans),  y):
         return (0, "NotEqual")
     return (100, "Success")
-score, error = evalans(answers['math'])
 
+from mathinput import MathInput
+MathInput.message = message
+
+input.value = answers[input.id]
+score, error = evalans(input.value)
 feedback = message[error]
+
+score = input.score
+input.display_feedback()
+if score >= 0:
+  input.disable()
 ==
 
 
