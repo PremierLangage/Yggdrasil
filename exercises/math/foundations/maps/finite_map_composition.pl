@@ -17,7 +17,7 @@ tableg.add_row(['$! x !$'] + row1)
 tableg.add_row(['$! g(x) !$'] + row2g)
 tableg_html = table.get_html_string(header=False, attributes={"class":"mytable"})
 
-case=randitem([1,2])
+case = choice([1, 2])
 sol=[]
 if case==1:
     for i in range(n):
