@@ -30,7 +30,7 @@ Déterminer l'image directe de l'ensemble $! {{A|latex}} !$ par $! f !$.
 
 extracss==
 <style>
-.mytable table, th, td {
+table.mytable table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
