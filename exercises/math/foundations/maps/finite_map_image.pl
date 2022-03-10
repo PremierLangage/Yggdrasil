@@ -30,20 +30,3 @@ On considère l'application $! f: \{1,\ldots,{{n}} \}\rightarrow \mathbb{N} !$ d
 
 Déterminer l'image directe de l'ensemble $! {{A|latex}} !$ par $! f !$.
 ==
-
-
-style2.table ==
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-table {
-    margin: auto;
-}
-th, td {
-  padding: 0.5em;
-  text-align:center;
-}
-</style>
-==
