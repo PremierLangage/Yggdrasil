@@ -18,7 +18,7 @@ tableg.add_row(['$! g(x) !$'] + row2g)
 tableg_html = table.get_html_string(header=False, attributes={"class":"mytable"})
 
 case = choice([1, 2])
-sol=[]
+sol = []
 if case==1:
     for i in range(n):
         sol.append(row2f[row2g[i]-1])
@@ -30,8 +30,7 @@ else:
 ==
 
 question ==
-{{namedrag}}
-On considère les applications  $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{n}} \\} !$ et $! g:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldots,{{n}} \\} !$ définies par les tableaux ci-dessous.
+On considère les applications  $! f:\{1,\ldots,{{n}} \}\rightarrow \{1,\ldots,{{n}} \} !$ et $! g:\{1,\ldots,{{n}} \}\rightarrow \{1,\ldots,{{n}} \} !$ définies par les tableaux ci-dessous.
 <br>
 {{tablef|safe}}
 <br>
@@ -39,43 +38,3 @@ On considère les applications  $! f:\\{1,\ldots,{{n}} \\}\rightarrow \\{1,\ldot
 <br>
 Déterminer l'application $! {{h}} !$.
 ==
-
-form ==
-<table>
-<tr>
-<th> $! x !$ </th>
-{% for item in row1 %}
-<td> {{item|safe}} </td>
-{% endfor %}
-</tr>
-<tr>
-<th> $! {{h}} (x) !$ </th>
-{% for e in drop %}
-<td> {{e|component}} </td>
-{% endfor %}
-</tr>
-</table>
-
-{% for d in drag -%}
-{{ d|component }}
-{%- endfor %}
-==
-
-evaluator==
-drop=[]
-for i in range(1,n+1):
-    name="drop"+str(i)
-    drop.append(locals()[name])
-
-feedback=""
-score=100
-for i in range(n):
-    if drop[i].content==str(sol[i]):
-        drop[i].css = "success-state"
-    else:
-        score=0
-        drop[i].css = "error-state" 
-==
-
-
-
