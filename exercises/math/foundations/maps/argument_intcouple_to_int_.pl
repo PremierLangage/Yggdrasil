@@ -73,5 +73,5 @@ if score >= 0:
 
 
 solution ==
-Une antécédent possible est $! {{ (x1, x2) }} !$.
+Une antécédent possible est $! {{ x1 }}, {{ x2 }} !$.
 ==
