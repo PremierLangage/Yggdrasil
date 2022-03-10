@@ -1,4 +1,4 @@
-extends = /model/math/sets.pl
+extends = /model/math/set.pl
 
 title = Image directe d'une application
 
