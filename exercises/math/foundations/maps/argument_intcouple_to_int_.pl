@@ -65,7 +65,7 @@ score, error = evalans(input.value)
 feedback = message[error]
 
 input.score = score
-input.feedback = feedack
+input.feedback = feedback
 input.display_feedback()
 if score >= 0:
   input.disable()
