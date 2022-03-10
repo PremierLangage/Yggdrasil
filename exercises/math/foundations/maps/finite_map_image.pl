@@ -15,7 +15,7 @@ sol = FiniteSet(*[row2[x-1] for x in A])
 
 table.add_row(['$! x !$'] + row1)
 table.add_row(['$! f(x) !$'] + row2)
-table_html = table.get_html_string(header=False)
+table_html = table.get_html_string(header=False, border=True)
 ==
 
 question ==
@@ -29,7 +29,7 @@ Déterminer l'image directe de l'ensemble $! {{A|latex}} !$ par $! f !$.
 ==
 
 
-style.table ==
+style2.table ==
 <style>
 table, th, td {
   border: 1px solid black;
