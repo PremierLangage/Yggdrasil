@@ -36,9 +36,9 @@ else:
 question ==
 On considère les applications  $! f:\{1,\ldots,{{n}} \}\rightarrow \{1,\ldots,{{n}} \} !$ et $! g:\{1,\ldots,{{n}} \}\rightarrow \{1,\ldots,{{n}} \} !$ définies par les tableaux ci-dessous.
 <br>
-{{tablef|safe}}
+{{tablef_html|safe}}
 <br>
-{{tableg|safe}}
+{{tableg_html|safe}}
 <br>
 Déterminer l'application $! {{h}} !$.
 ==
