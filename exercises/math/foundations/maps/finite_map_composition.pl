@@ -42,3 +42,24 @@ On considère les applications  $! f:\{1,\ldots,{{n}} \}\rightarrow \{1,\ldots,{
 <br>
 Déterminer l'application $! {{h}} !$.
 ==
+
+inputblock ==
+<table>
+<tr>
+<th> $! x !$ </th>
+{% for item in row1 %}
+<td> {{item|safe}} </td>
+{% endfor %}
+</tr>
+<tr>
+<th> $! f^{-1}(x) !$ </th>
+{% for e in input.drops %}
+<td> {{e|component}} </td>
+{% endfor %}
+</tr>
+</table>
+
+{% for e in input.labels -%}
+{{ e|component }}
+{%- endfor %}
+==
