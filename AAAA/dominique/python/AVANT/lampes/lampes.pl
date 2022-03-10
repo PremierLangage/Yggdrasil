@@ -6,7 +6,7 @@ extends = /ComputerScience/python/template/pltest.pl
 
 @sol.py [build.py]
 @ennonce.md
-@data1
+
 
 @exemple
 
