@@ -46,7 +46,7 @@ tpltable ==
 </table>
 ==
 
-style.table ==
+style2.table ==
 <style>
 table, th, td {
   border: 1px solid black;
