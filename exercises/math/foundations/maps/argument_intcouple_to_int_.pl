@@ -73,5 +73,5 @@ if score >= 0:
 
 
 solution ==
-Une solution est par exemple.
+Une antécédent possible est $! {{ (x1, x2) }} !$.
 ==
