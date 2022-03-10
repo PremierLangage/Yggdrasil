@@ -22,7 +22,7 @@ text==
 before==
 import build
 import os
-print("c casé ", file=os.stderr)
+print("c casé ", file=os.err)
 
 
 pltest0,pltest1=build.doit()
