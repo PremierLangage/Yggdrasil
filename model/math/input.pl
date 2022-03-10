@@ -35,7 +35,7 @@ style.mathquill =@ /utils/components/mathinput/mathinput.css.html
 
 jinja_keys = ["prefix", "question", "solution", "inputblock"]
 before_scripts = ["mathimport", "init_input", "before", "process"]
-eval_scripts = ["evalparam", "evaluator"]
+eval_scripts = ["evalparam", "evaluator", "ending"]
 
 
 
