@@ -44,7 +44,7 @@ Déterminer l'application $! {{h}} !$.
 ==
 
 inputblock ==
-<table>
+<table class="mytable">
 <tr>
 <th> $! x !$ </th>
 {% for item in row1 %}
