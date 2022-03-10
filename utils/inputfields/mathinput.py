@@ -92,6 +92,7 @@ class MathInput:
         embed = self.embed
         if self.disabled:
             cls_disabled = "mq-disabled"
+            disabled = "disabled"
         with open('mathinput.html') as f:
             html = f.read()
         return Template(html).render(locals())
