@@ -113,15 +113,6 @@ function onBeforeSubmitPL() {
     mathFieldInput.value = mathField.latex();
     });
 
-    Object.values(setOfStaticMaths).forEach(function(mathField) {
-    var mathFieldInput = document.getElementById('form_'+mathField.el().id);
-      if (mathField.innerFields.length == 1) {
-      mathFieldInput.value = mathField.innerFields[0].latex();
-        } else {
-      mathFieldInput.value = [mathField.innerFields[0].latex(),mathField.innerFields[1].latex()];
-      }
-    };
-  });
 
   // Cache les popovers avant que les éléments correspondants soient détruits du DOM.
   $(function () {
