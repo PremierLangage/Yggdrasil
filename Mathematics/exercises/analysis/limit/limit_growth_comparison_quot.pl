@@ -2,6 +2,9 @@ extends = /model/math/multinput.pl
 
 title = Calcul de limites
 
+question ==
+Calculer les limites suivantes.
+==
 
 
 before == #|py|
