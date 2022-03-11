@@ -17,11 +17,6 @@ init_input ==
 from mathinput import MathInput
 ==
 
-evaluator2==
-
-score = 0
-solution = str(answers)
-==
 evaluator ==
 from jinja_env import Env
 from mathinput import MathInput
@@ -46,9 +41,6 @@ else:
     for input in inputs:
         input.display_feedback()
         input.disable()
-
-score = 0
-question = str(answers)
 ==
 
 solution ==
