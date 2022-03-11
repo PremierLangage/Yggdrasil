@@ -108,10 +108,15 @@ javascript.onbeforesubmit == #|js|
 // Fonction appelée quand l'exercice est soumis (bouton valider).
 function onBeforeSubmitPL() {
   // Copie les valeurs des champs MathField dans des éléments input.
+
+      if (typeof setOfMathFields != "undefined") {
+
   Object.values(setOfMathFields).forEach(function(mathField) {
     var mathFieldInput = document.getElementById('form_'+mathField.el().id);
     mathFieldInput.value = mathField.latex();
     });
+
+    }:
 
     if (typeof setOfStaticMaths != "undefined") {
  
