@@ -1,4 +1,4 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /model/math/set.pl
 
 before ==
 n, m = sample(symbols("n,m,p,q,r"), 2)
