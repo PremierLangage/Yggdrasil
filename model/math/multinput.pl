@@ -41,6 +41,9 @@ else:
     for input in inputs:
         input.display_feedback()
         input.disable()
+
+score = 0
+solution = str(answers)
 ==
 
 solution ==
