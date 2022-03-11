@@ -113,6 +113,8 @@ function onBeforeSubmitPL() {
     mathFieldInput.value = mathField.latex();
     });
 
+    if (typeof setOfStaticMaths != "undefined") {
+ 
     Object.values(setOfStaticMaths).forEach(function(mathField) {
     var mathFieldInput = document.getElementById('form_'+mathField.el().id);
       if (mathField.innerFields.length == 1) {
@@ -122,6 +124,7 @@ function onBeforeSubmitPL() {
       }
     });
 
+    };
 
   // Cache les popovers avant que les éléments correspondants soient détruits du DOM.
   $(function () {
