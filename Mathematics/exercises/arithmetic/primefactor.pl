@@ -17,6 +17,7 @@ sol = 0
 
 evaluator ==
 import sympy as sp
+from latex2sympy import latex2sympy
 def dict_factors_exponent(expr):
     dict = {}
     if type(expr) == sp.Mul:
