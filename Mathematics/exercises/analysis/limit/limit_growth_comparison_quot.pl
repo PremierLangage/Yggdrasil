@@ -15,7 +15,8 @@ n1,n2=sampleint(1, 5, 2)
 lstf=[[x**n1,exp(x)],[x**n2,ln(x)],[exp(x),ln(x)]]
 shuffle(lstf)
 
-for f in lstf:
+for i in range(n):
+    f = lstf[i]
     shuffle(f)
     lim=Limit(f[0]/f[1], x, oo)
     s = latex(lim)
