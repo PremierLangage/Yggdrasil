@@ -111,7 +111,8 @@ function onBeforeSubmitPL() {
   Object.values(setOfMathFields).forEach(function(mathField) {
     var mathFieldInput = document.getElementById('form_'+mathField.el().id);
     mathFieldInput.value = mathField.latex();
-    };
+    });
+
     Object.values(setOfStaticMaths).forEach(function(mathField) {
     var mathFieldInput = document.getElementById('form_'+mathField.el().id);
       if (mathField.innerFields.length == 1) {
