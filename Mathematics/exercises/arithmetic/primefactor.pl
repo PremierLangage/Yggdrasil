@@ -1,4 +1,4 @@
-extends = /model/mathinput.pl
+extends = /model/math/expr.pl
 
 title = Décomposition en facteurs premiers
 
