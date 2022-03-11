@@ -48,10 +48,10 @@ else:
         input.disable()
 
 score = 0
-solution = str(answers)
+question = str(answers)
 ==
 
-solution2 ==
+solution ==
 {% for input in inputs %}
 <div style="display: block; margin-bottom: 1em;">
 {{ prefixes[loop.index0] }} 
