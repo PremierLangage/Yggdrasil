@@ -7,6 +7,7 @@ Décomposer $! {{n}} !$ en produit de facteurs premiers.
 ==
 
 before ==
+from sympy import factorint
 while True:
     n = randint(10, 150)
     if sum(factorint(n).values()) > 2:
