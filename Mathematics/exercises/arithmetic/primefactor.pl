@@ -12,6 +12,7 @@ while True:
     n = randint(10, 150)
     if sum(factorint(n).values()) > 2:
         break
+sol = 0
 ==
 
 evaluator ==
