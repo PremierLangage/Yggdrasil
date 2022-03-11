@@ -1,35 +1,17 @@
 extends = /Mathematics/template/mathinput.pl
 
 before ==
-n,m=list_randitem_norep(2,symbols("n,m,p,q,r"))
-expr=randitem([n**2+m,n+m**2,n**2-m,n-m**2])
-nn=latex(n)
-mm=latex(m)
-expr_tex=latex(expr)
-f = Lambda ( (n,m) , expr)
+n, m = sample(symbols("n,m,p,q,r"), 2)
+expr = choice([n**2+m,n+m**2,n**2-m,n-m**2])
+f = Lambda((n ,m), expr)
 
-E = [(x,y) for x in range(-3,4) for y in range(-3,4)]
-A=FiniteSet(*list_randitem_norep(3,E))
-imA=FiniteSet(*[f(*x) for x in A])
-A_tex=latex(A)
-imA_tex=latex(imA)
+E = [(x, y) for x in range(-3,4) for y in range(-3,4)]
+A = FiniteSet(*sample(E, 2))
+sol = FiniteSet(*[f(*x) for x in A])
 ==
 
-text ==
+question ==
 On considère la fonction $! f : \mathbb{Z} \times \mathbb{Z} \rightarrow \mathbb{Z} !$ telle que
-$$f({{nn}},{{mm}})= {{expr_tex}}$$
-Déterminer $! f(\\{ {{A_tex}} \\}). !$
+$$ f({{ n }}, {{ m }})= {{ expr|latex }} $$
+Déterminer $! f( {{ A|latex }}). !$
 ==
-
-evaluator==
-score,_,feedback=ans_struct_expr(input.value,imA,"composite")
-==
-
-solution ==
-La solution est $! {{imA_tex}} !$
-==
-
-
-
-
-
