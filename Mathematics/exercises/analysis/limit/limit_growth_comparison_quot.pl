@@ -12,7 +12,7 @@ var('x')
 
 n1,n2=sampleint(1, 5, 2)   
 lstf=[[x**n1,exp(x)],[x**n2,ln(x)],[exp(x),ln(x)]]
-rd.shuffle(lstf)
+shuffle(lstf)
 
 for f in lstf:
     shuffle(f)
