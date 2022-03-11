@@ -16,7 +16,6 @@ shuffle(lstf)
 
 for f in lstf:
     shuffle(f)
-    sol.append()
     lim=Limit(f[0]/f[1], x, oo)
     s = latex(lim)
     prefixes.append(f"$! {s} = !$")
