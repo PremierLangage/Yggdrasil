@@ -3,7 +3,7 @@ extends = /model/math/expr.pl
 title = Décomposition en facteurs premiers
 
 question ==
-Décomposer $! {{n}} !$ en produit de facteurs premiers.
+Décomposer $! {{ n }} !$ en produit de facteurs premiers.
 ==
 
 before ==
