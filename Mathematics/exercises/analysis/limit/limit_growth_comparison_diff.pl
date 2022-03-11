@@ -24,7 +24,7 @@ for f in lstf:
     sol.append(lim.doit())
 ==
 
-text ==
+question ==
 Calculer les limites suivantes.
 ==
 
