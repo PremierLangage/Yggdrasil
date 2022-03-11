@@ -26,7 +26,7 @@ def average(lst):
     return sum(lst)/len(lst)
 
 for input in inputs:
-    input.value = answers[input.id] # HACK
+    input.value = "3"  #answers[input.id] # HACK
     input.eval()
 
 if -1 in [input.score for input in inputs]:
