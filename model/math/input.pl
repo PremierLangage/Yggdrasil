@@ -109,9 +109,9 @@ javascript.onbeforesubmit == #|js|
 function onBeforeSubmitPL() {
   // Copie les valeurs des champs MathField dans des éléments input.
 
-      if (typeof setOfMathFields != "undefined") {
+    if (typeof setOfMathFields != "undefined") {
 
-  Object.values(setOfMathFields).forEach(function(mathField) {
+    Object.values(setOfMathFields).forEach(function(mathField) {
     var mathFieldInput = document.getElementById('form_'+mathField.el().id);
     mathFieldInput.value = mathField.latex();
     });
