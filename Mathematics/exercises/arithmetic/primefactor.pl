@@ -50,5 +50,5 @@ def eval(strans, sol):
         return (0, "")
     return (100, "")
 
-score, feedback = eval(input.value, n)
+score, feedback = 0, "" #eval(input.value, n)
 ==
