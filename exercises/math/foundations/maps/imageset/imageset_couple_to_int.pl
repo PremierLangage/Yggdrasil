@@ -2,7 +2,7 @@ extends = /model/math/set.pl
 
 before ==
 n, m = sample(symbols("n,m,p,q,r"), 2)
-expr = choice([n**2+m,n+m**2,n**2-m,n-m**2])
+expr = choice([n**2+m, n+m**2, n**2-m, n-m**2])
 f = Lambda((n ,m), expr)
 
 E = [(x, y) for x in range(-3,4) for y in range(-3,4)]
