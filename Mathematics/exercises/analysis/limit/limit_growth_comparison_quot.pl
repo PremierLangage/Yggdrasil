@@ -2,6 +2,29 @@ extends = limit_.pl
 
 title = Calcul de limites
 
+
+
+before == #|python|
+n = 3
+inputs = [MathInput() for _ in range(n)]
+prefixes = []
+
+n1,n2=list_randint(2,1,5)   
+lstf=[[x**n1,exp(x)],[x**n2,ln(x)],[exp(x),ln(x)]]
+rd.shuffle(lstf)
+
+for f in lstf:
+    shuffle(f)
+    sol.append()
+    lim=Limit(f[0]/f[1], x, oo)
+    s = latex(lim)
+    prefixes.append(f"$! {s} = !$")
+    inputs[i].sol = lim.doit()
+    inputs[i].type = "expr"
+    inputs[i].evalparam = {}
+==
+
+
 before ==
 ninput=3
 lstinput=[input1,input2,input3]
