@@ -23,7 +23,7 @@ for i in range(n):
     shuffle(f)
     lim=Limit(f[0]/f[1], x, oo)
     s = latex(lim)
-    prefixes.append(f"$! {s} = !$")
+    prefixes.append(f"$! \displaystyle {s} = !$")
     inputs[i].sol = lim.doit()
     inputs[i].type = "expr"
     inputs[i].evalparam = {}
