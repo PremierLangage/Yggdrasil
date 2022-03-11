@@ -8,11 +8,9 @@ group =: CheckboxGroup
 
 # GENERATE A RANDOM QUESTION
 before==#|py|
-import time
 import cyk
 
 N = 7 
-seed = time.time()
 rules, good, bad = cyk.generate_input(seed, N)
 
 text += '\n\n'
@@ -38,7 +36,7 @@ for i in range(4):
 title = CYK
 
 text==
-En utilisant l'algorithme CYK, déterminez les mots reconnus par la grammaire.
+En utilisant l'algorithme CYK, déterminez le(s) mot(s) reconnu(s) par la grammaire suivante:
 ==
 
 form==
