@@ -39,13 +39,17 @@ MQ.config({charsThatBreakOutOfSupSub: '+-=<>',
 {% if embed|length == 0 %}
 var mathField_{{ id }} = MQ.MathField(document.getElementById("{{ id }}"));
 mathField_{{ id }}.latex(String.raw`{{ value|safe }}`);
-{% else %}
-var mathField_{{ id }} = MQ.StaticMath(document.getElementById("{{ id }}"));
-mathField_{{ id }}.innerFields[0].latex(String.raw`{{ value|safe }}`);
-{% endif %}
-
 if (typeof setOfMathFields == "undefined") {
    setOfMathFields = {};
 }
 setOfMathFields.{{ id }} = mathField_{{ id }}
+{% else %}
+var mathField_{{ id }} = MQ.StaticMath(document.getElementById("{{ id }}"));
+mathField_{{ id }}.innerFields[0].latex(String.raw`{{ value|safe }}`);
+if (typeof setOfStaticMaths == "undefined") {
+   setOfStaticMaths = {};
+}
+setOfStaticMaths.{{ id }} = mathField_{{ id }}
+{% endif %}
+
 </script>
