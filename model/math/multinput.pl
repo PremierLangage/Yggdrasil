@@ -17,7 +17,7 @@ init_input ==
 from mathinput import MathInput
 ==
 
-evaluator ==
+evaluator ==#|py|
 from jinja_env import Env
 from mathinput import MathInput
 MathInput.message = message
