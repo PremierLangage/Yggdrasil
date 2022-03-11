@@ -4,7 +4,8 @@ title = Calcul de limites
 
 
 
-before == #|python|
+before == #|py|
+from sympy import Limit
 n = 3
 inputs = [MathInput() for _ in range(n)]
 prefixes = []
