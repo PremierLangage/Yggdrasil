@@ -1,12 +1,10 @@
-extends = limit_.pl
+extends = /model/math/input.pl
+
 
 title = Calcul de limites
 
-lang = fr
-
 
 before ==
-ninput=3
 lstinput=[input1,input2,input3]
 
 
