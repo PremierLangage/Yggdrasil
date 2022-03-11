@@ -18,6 +18,11 @@ from mathinput import MathInput
 ==
 
 evaluator ==
+
+score = 0
+solution = str(answers)
+==
+evaluator2 ==
 from jinja_env import Env
 from mathinput import MathInput
 MathInput.message = message
