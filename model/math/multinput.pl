@@ -17,12 +17,12 @@ init_input ==
 from mathinput import MathInput
 ==
 
-evaluator ==
+evaluator2==
 
 score = 0
 solution = str(answers)
 ==
-evaluator2 ==
+evaluator ==
 from jinja_env import Env
 from mathinput import MathInput
 MathInput.message = message
