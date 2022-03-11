@@ -63,3 +63,5 @@ if total == 0:
 else:
     grade = ((right / total) * 100, f"{right} / {total}")
 ==
+
+settings.allow_reroll = true
