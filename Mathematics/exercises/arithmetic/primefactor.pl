@@ -16,6 +16,7 @@ sol = 0
 ==
 
 evaluator ==
+import sympy as sp
 def dict_factors_exponent(expr):
     dict = {}
     if type(expr) == sp.Mul:
