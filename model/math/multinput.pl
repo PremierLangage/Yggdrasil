@@ -17,7 +17,6 @@ init_input ==
 from mathinput import MathInput
 ==
 
-
 evaluator ==
 from jinja_env import Env
 from mathinput import MathInput
