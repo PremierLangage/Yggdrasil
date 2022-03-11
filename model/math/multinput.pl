@@ -51,7 +51,7 @@ score = 0
 solution = str(answers)
 ==
 
-solution ==
+solution2 ==
 {% for input in inputs %}
 <div style="display: block; margin-bottom: 1em;">
 {{ prefixes[loop.index0] }} 
