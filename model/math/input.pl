@@ -116,7 +116,7 @@ function onBeforeSubmitPL() {
     mathFieldInput.value = mathField.latex();
     });
 
-    }:
+    };
 
     if (typeof setOfStaticMaths != "undefined") {
  
