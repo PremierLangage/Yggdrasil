@@ -117,7 +117,7 @@ function onBeforeSubmitPL() {
     if (mathField instanceof MQ.StaticMath) {
       if (mathField.innerFields.length == 1) {
       mathFieldInput.value = mathField.innerFields[0].latex();
-    } else {
+        } else {
       mathFieldInput.value = [mathField.innerFields[0].latex(),mathField.innerFields[1].latex()];
     }
     };
