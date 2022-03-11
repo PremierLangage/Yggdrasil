@@ -37,7 +37,7 @@ def dict_factors_exponent(expr):
     return dict
 
 def eval(strans, sol):
-    ans = latex2sympy(input.value)
+    ans = latex2sympy(strans)
     dict_ans = dict_factors_exponent(ans)
     try:
         ans = latex2sympy(input.value)
