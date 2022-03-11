@@ -111,15 +111,14 @@ function onBeforeSubmitPL() {
   Object.values(setOfMathFields).forEach(function(mathField) {
     var mathFieldInput = document.getElementById('form_'+mathField.el().id);
     mathFieldInput.value = mathField.latex();
-    if (mathField instanceof MQ.MathField) {
-      mathFieldInput.value = mathField.latex();
     };
-    if (mathField instanceof MQ.StaticMath) {
+    Object.values(setOfStaticMaths).forEach(function(mathField) {
+    var mathFieldInput = document.getElementById('form_'+mathField.el().id);
       if (mathField.innerFields.length == 1) {
       mathFieldInput.value = mathField.innerFields[0].latex();
         } else {
       mathFieldInput.value = [mathField.innerFields[0].latex(),mathField.innerFields[1].latex()];
-    }
+      }
     };
   });
 
