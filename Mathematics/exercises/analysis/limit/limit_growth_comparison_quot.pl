@@ -6,7 +6,6 @@ question ==
 Calculer les limites suivantes.
 ==
 
-
 before == #|py|
 from sympy import Limit
 n = 3
@@ -21,7 +20,7 @@ shuffle(lstf)
 for i in range(n):
     f = lstf[i]
     shuffle(f)
-    lim=Limit(f[0]/f[1], x, oo)
+    lim = Limit(f[0]/f[1], x, oo)
     s = latex(lim)
     prefixes.append(f"$! \displaystyle {s} = !$")
     inputs[i].sol = lim.doit()
