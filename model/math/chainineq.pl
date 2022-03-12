@@ -1,5 +1,9 @@
 extends = /model/math/input.pl
 
+input_type = "chainineq"
+
+evalparam = {}
+
 jinja_keys = ["question", "text", "inputblock", "solution", "prefix", "embed"]
 
 before ==
