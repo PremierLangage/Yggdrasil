@@ -17,7 +17,7 @@ sol = Interval(1,2)
 ==
 
 embed ==
-# \ {{ expr |latex }} \ #
+# \ {{ expr|latex }} \ #
 ==
 
 evaluator ==
