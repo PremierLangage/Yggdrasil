@@ -45,7 +45,10 @@ if (typeof setOfMathFields == "undefined") {
 setOfMathFields.{{ id }} = mathField_{{ id }}
 {% else %}
 var mathField_{{ id }} = MQ.StaticMath(document.getElementById("{{ id }}"));
-mathField_{{ id }}.innerFields[0].latex(String.raw`{{ value|safe }}`);
+var arr = String.raw`{{ value|safe }}`.split(",");
+for (let j = 0; j < arr.length; j++) {
+mathField_{{ id }}.innerFields[j].latex(arr[j]);
+}
 if (typeof setOfStaticMaths == "undefined") {
    setOfStaticMaths = {};
 }
