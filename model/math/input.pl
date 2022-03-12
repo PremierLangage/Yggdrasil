@@ -47,7 +47,12 @@ input = MathInput()
 input.set_keypad(keypad)
 input.value = ""
 input.type = input_type
-# embed = embed.replace("#", r"\MathQuillMathField{}")
+==
+
+process ==
+from jinja_env import Env
+embed = Env.from_string(embed).render(locals())
+input.set_embed(embed)
 ==
 
 before ==
