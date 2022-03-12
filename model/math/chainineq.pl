@@ -1,6 +1,6 @@
 extends = /model/math/input.pl
 
-jinja_keys % ["question", "text", "inputblock", "solution", "prefix", "embed"]
+jinja_keys = ["question", "text", "inputblock", "solution", "prefix", "embed"]
 
 before ==
 from sympy import S, solveset, Intersection
@@ -20,12 +20,6 @@ embed ==
 # \ {{ expr|latex }} \ #
 ==
 
-evaluator ==
-from evalsympy import eval_chainineq
-from sympy2latex import latex_chainineq
-score, error = eval_chainineq(answers['math'], sol)
-feedback = message[error]
-==
 
 solution ==
 $! {{ sol_chainineq }} !$
