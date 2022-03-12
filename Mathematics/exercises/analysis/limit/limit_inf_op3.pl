@@ -19,10 +19,10 @@ shuffle(lstf)
 
 for i in range(n):
     n0=randint(1,5)   
-    g=[x**n0,exp(x),ln(x)]
+    g = [x**n0, exp(x), ln(x)]
     shuffle(g)
-    f=choice([g[0]/(g[1]-g[2]),(g[0]-g[1])/g[2]])
-    lim = Limit(f[0]/f[1], x, oo)
+    f = choice([g[0]/(g[1]-g[2]),(g[0]-g[1])/g[2]])
+    lim = Limit(f, x, oo)
     s = latex(lim)
     prefixes.append(f"$! \displaystyle {s} = !$")
     inputs[i].sol = lim.doit()
