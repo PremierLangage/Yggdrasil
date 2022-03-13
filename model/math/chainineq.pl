@@ -24,6 +24,7 @@ sol = Interval(1,2)
 
 process ==
 from jinja_env import Env
+from sympy2latex import latex_chainineq
 embed = Env.from_string(embed).render(locals())
 input.set_embed(embed)
 sol_chainineq = latex_chainineq(expr, sol)
