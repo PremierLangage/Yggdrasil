@@ -6,5 +6,5 @@ expr = "x"
 ==
 
 question ==
-Entrer l'intervalle $! {{ sol|latex }} !$.
+Soit $! x !$
 ==
