@@ -3,9 +3,9 @@ extends = /model/math/chainineq.pl
 before ==
 a = randint(0, 2)
 b = a + randint(1, 3)
-sol = Interval(a, b)
-sol.left_open = choice([True, False])
-sol.right_open = choice([True, False])
+left_open = choice([True, False])
+right_open = choice([True, False])
+sol = Interval(a, b, left_open, right_open)
 
 expr = "x"
 ==
