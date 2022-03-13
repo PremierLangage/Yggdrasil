@@ -26,7 +26,7 @@ process ==
 from jinja_env import Env
 embed = Env.from_string(embed).render(locals())
 input.set_embed(embed)
-sol_chainineq = latex(expr, sol)
+sol_chainineq = latex_chainineq(expr, sol)
 ==
 
 embed ==
