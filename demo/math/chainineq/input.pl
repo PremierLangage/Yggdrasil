@@ -6,5 +6,5 @@ expr = "x"
 ==
 
 question ==
-Soit $! x !$
+Soit $! x \in {{ sol|latex }} !$. En déduire un encadrement de $x$.
 ==
