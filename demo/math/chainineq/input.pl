@@ -6,7 +6,6 @@ b = a + randint(1, 3)
 left_open = choice([True, False])
 right_open = choice([True, False])
 sol = Interval(a, b, left_open, right_open)
-
 expr = "x"
 ==
 
