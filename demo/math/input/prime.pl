@@ -13,6 +13,7 @@ Donner un entier premier, compris entre {{ a }} et {{ b }} (au sens large).
 
 evaluator ==
 from latex2sympy import latex2sympy
+from sympy import isprime
 
 try:
     ans = latex2sympy(input.value)
@@ -26,7 +27,7 @@ else:
     elif not (a <= ans <= b):
         score = 0
         feedback = f"La réponse doit être comprise entre {a} et {b}."
-    elif not (a <= ans <= b):
+    elif not isprime(ans):
         score = 0
         feedback = "La réponse doit être un nombre premier."
     else:
