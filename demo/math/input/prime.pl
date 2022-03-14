@@ -31,3 +31,7 @@ else:
         score = 0
         feedback = "La réponse doit être un nombre premier."
 ==
+
+solution ==
+
+==
