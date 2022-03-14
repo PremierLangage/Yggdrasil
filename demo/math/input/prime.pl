@@ -3,9 +3,8 @@ extends = /model/math/input.pl
 title = Transformer une somme de logarithmes en un logarithme
 
 before ==
-k = randint(3, 6)
-a = randint(25, 75)
-b = a + randint(10, 20)
+a = randint(1, 30)
+b = a + 10
 ==
 
 question ==
