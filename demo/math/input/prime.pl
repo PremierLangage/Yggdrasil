@@ -5,8 +5,7 @@ title = Transformer une somme de logarithmes en un logarithme
 before ==
 k = randint(3, 6)
 a = randint(25, 75)
-b = a + randint(6, 10)
-sol = 0
+b = a + randint(10, 20)
 ==
 
 question ==
