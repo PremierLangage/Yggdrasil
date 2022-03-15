@@ -1,4 +1,4 @@
-extends = /model/math/input.pl
+extends = /model/math/multinput.pl
 
 
 title = Calcul de limites
