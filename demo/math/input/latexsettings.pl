@@ -10,3 +10,5 @@ question ==
 Calculer la dérivée de la fonction 
 $${{ f|latex }}$$
 ==
+
+latexsettings.ln_notation = False
