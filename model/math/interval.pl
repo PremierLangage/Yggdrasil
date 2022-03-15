@@ -1,4 +1,4 @@
-extends = /model/math/input.pl
+extends = /model/math/input0.pl
 
 # Evaluation parameters
 input_type = "interval"
