@@ -36,7 +36,7 @@ apidoc == #|json|
         "feedback": {
             "type": "str",
             "default": "",
-            "description": "Message d'avertissement ou d'erreur.. Il doit être produit par le script evaluator."
+            "description": "Message d'avertissement ou d'erreur. Il doit être produit par le script evaluator."
         }
     }
 }
