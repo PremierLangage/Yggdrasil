@@ -35,7 +35,7 @@ style.mathquill =@ /utils/components/mathinput/mathinput.css.html
 
 jinja_keys = ["prefix", "question", "solution", "inputblock"]
 before_scripts = ["mathimport", "init_input", "before", "process"]
-eval_scripts = ["evalparam", "getinput", "evaluator", "ending"]
+eval_scripts = ["evalparam", "getinput", "evaluator"]
 
 
 
@@ -74,26 +74,14 @@ getinput ==
 from mathinput import MathInput
 MathInput.message = message
 input.value = answers[input.id]
-if 'sol' in locals():
-    input.sol = sol
 ==
 
 evaluator ==
-#
-==
-
-ending ==
-if 'score' in locals():
-    input.score = score
-    if 'feedback' in locals():
-        input.feedback = feedback
-else:
-    score = input.eval()
+score = input.eval()
 input.display_feedback()
 if score >= 0:
   input.disable()
 ==
-
 
 
 tplpage =@ /model/tplpage/basicmath.html
