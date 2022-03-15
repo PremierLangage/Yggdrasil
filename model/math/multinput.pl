@@ -1,4 +1,4 @@
-extends = /model/math/input.pl
+extends = /model/math/input0.pl
 
 before_scripts = ["mathimport", "init_input", "before", "process"]
 jinja_keys = ["prefix", "question", "solution", "inputblock"]
