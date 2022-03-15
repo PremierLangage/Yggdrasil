@@ -77,6 +77,7 @@ input.value = answers[input.id]
 ==
 
 evaluator ==
+input.sol = sol
 score = input.eval()
 input.display_feedback()
 if score >= 0:
