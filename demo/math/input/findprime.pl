@@ -8,7 +8,7 @@ b = a + 10
 ==
 
 question ==
-Donner un entier premier, compris entre {{ a }} et {{ b }} (au sens large).
+Donner un nombre premier compris entre {{ a }} et {{ b }} (au sens large).
 ==
 
 evaluator ==
