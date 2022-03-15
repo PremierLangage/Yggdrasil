@@ -1,8 +1,6 @@
-# Model for a single math input field
-# with a custom evaluation
+# Model for a single math input field with a custom evaluation.
 
 extends = /model/math/input0.pl
-
 
 eval_scripts = ["evalparam", "getinput", "evaluator", "ending"]
 
