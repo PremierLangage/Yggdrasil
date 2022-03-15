@@ -10,8 +10,6 @@ getinput ==
 from mathinput import MathInput
 MathInput.message = message
 input.value = answers[input.id]
-if 'sol' in locals():
-    input.sol = sol
 ==
 
 evaluator ==
@@ -19,12 +17,8 @@ evaluator ==
 ==
 
 ending ==
-if 'score' in locals():
-    input.score = score
-    if 'feedback' in locals():
-        input.feedback = feedback
-else:
-    score = input.eval()
+input.score = score
+input.feedback = feedback
 input.display_feedback()
 if score >= 0:
   input.disable()
