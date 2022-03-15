@@ -5,22 +5,22 @@ builder =@ /builder/before.py
 # API documentation
 apidoc == #|json|
 {
-    "name": "AMC_TXT",
+    "name": "input_eval",
     "keys": {
-        "title": {
+        "evaluator": {
             "type": "str",
-            "default": "''",
-            "description": "Titre du quiz."
+            "default": "",
+            "description": "Script Python permettant d'évaluer la réponse de l'exercice."
         },
-        "intro": {
-            "type": "str",
-            "default": "''",
-            "description": "Texte d'introduction du quiz."
+        "score": {
+            "type": "int",
+            "default": "",
+            "description": "Score de l'exercice. Il doit être produit par le script evaluator."
         },
-        "quiz": {
+        "feedback": {
             "type": "str",
-            "default": "''",
-            "description": "Questions du quiz au format AMC-TXT."
+            "default": "",
+            "description": "Message d'avertissement ou d'erreur.. Il doit être produit par le script evaluator."
         }
     }
 }
