@@ -1,4 +1,4 @@
-# Model for a single math input field with a custom evaluation.
+# Model for an exercise with a single math input field and a custom evaluation.
 
 extends = /model/math/input0.pl
 
