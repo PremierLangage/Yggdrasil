@@ -16,7 +16,7 @@ from latex2sympy import latex2sympy
 from sympy import isprime
 
 try:
-    ans = latex2sympy(input.value)
+    ans = latex2sympy(input.get_value())
 except:
     score = -1
     feedback = "La réponse doit être un entier."
