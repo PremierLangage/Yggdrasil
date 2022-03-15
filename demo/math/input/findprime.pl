@@ -1,4 +1,4 @@
-extends = /model/math/input.pl
+extends = /model/math/input_eval.pl
 
 title = Trouver un nombre premier
 
