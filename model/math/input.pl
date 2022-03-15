@@ -6,12 +6,6 @@ extends = /model/math/input0.pl
 
 eval_scripts = ["evalparam", "getinput", "evaluator", "ending"]
 
-getinput ==
-from mathinput import MathInput
-MathInput.message = message
-input.value = answers[input.id]
-==
-
 evaluator ==
 #
 ==
