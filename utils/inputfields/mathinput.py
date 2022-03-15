@@ -98,3 +98,6 @@ class MathInput:
         with open('mathinput.html') as f:
             html = f.read()
         return Template(html).render(locals())
+
+    def get_value(self):
+        return self.value
