@@ -5,7 +5,7 @@ Commande plant uml
 -public + 
 -protected #
 -package ~
--proivate - 
+-private - 
 
 losange vide : agragation 
 losange noir composition 
@@ -16,12 +16,14 @@ fleche creuse -|> heritage (extends) ou implements
 ----> dépendance 
 
 Composition 
--> element constititif voiture:chassis 
+-> element constitutif voiture:chassis 
 si le containeur est détruit les composants aussi 
+
 
 Agr&agation 
 -> regroupement informatif 
 un professeur + ses élèves 
+
 
 Association 
 -> connection temporaire entre deux classes
