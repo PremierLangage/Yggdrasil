@@ -5,9 +5,13 @@
 
 extends = /model/math/interval.pl
 
+# Paramètres
+
 param.type = "product"
 
 param.bounds = "int"
+
+# Autres clés
 
 before == #|py|
 from sympy import S, solveset
