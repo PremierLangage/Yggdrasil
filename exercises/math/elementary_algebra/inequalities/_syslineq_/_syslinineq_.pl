@@ -66,10 +66,12 @@ while True:
         break
 if param['nonempty']:
     keypad = ["infty", "-infty"]
+    qstr = "Ecrire cet ensemble sous la forme d'un intervalle."
 else:
     keypad = ["infty", "-infty", "empty"]
+    qstr = "Ecrire cet ensemble sous la forme d'un intervalle (ou de l'ensemble vide)."
 ==
 
 question ==
-Déterminer l'ensemble des réels $% x %$ tels que $$ {{ ineq1|latex }}\quad\text{ et }\quad{{ ineq2|latex }}. $$ Ecrire cet ensemble sous la forme d'un intervalle (ou de l'ensemble vide).
+Déterminer l'ensemble des réels $% x %$ tels que $$ {{ ineq1|latex }}\quad\text{ et }\quad{{ ineq2|latex }}. $$ {{ qstr }}.
 ==
