@@ -9,7 +9,7 @@ extends = /model/math/interval.pl
 
 param.otherside = "zero"
 
-#
+# Autres clés
 
 before ==
 from sympy import S, solveset
