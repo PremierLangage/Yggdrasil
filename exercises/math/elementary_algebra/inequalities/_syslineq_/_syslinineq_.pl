@@ -64,6 +64,10 @@ while True:
             break
     else:
         break
+if param['nonempty']:
+    keypad = ["infty", "-infty"]
+else:
+    keypad = ["infty", "-infty", "empty"]
 ==
 
 question ==
