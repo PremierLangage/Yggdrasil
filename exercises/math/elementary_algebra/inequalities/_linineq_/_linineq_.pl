@@ -8,18 +8,21 @@ param.otherside = "zero"
 
 before ==
 from sympy import S, solveset
+
 a, c = sampleint(-6, 6, 2, [0])
 b, d = sampleint(-6, 6, 2, [-1, 0, 1])
 var('x')
 f = a*x+b
+
 if param['otherside'] == 'zero':
-    g=0
+    g = 0
 if param['otherside'] == 'cst':
-    g=d
+    g = d
 if param['otherside'] == 'aff':
-    g=c*x+d
-ineq=choice([f>=g,f>g,f<=g,f<g,g>=f,g>f,g<=f,g<f])
-sol=solveset(ineq,x,domain=S.Reals)
+    g = c*x + d
+
+ineq = choice([f>=g, f>g, f<=g, f<g, g>=f, g>f, g<=f, g<f])
+sol = solveset(ineq, x, domain=S.Reals)
 ==
 
 
