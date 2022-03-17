@@ -1,5 +1,5 @@
 # D. Doyen
-# 17/3/2020
+# 17/3/2022
 # inequalities
 # Résoudre une inéquation linéaire
 
