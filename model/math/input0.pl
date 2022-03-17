@@ -44,7 +44,6 @@ title = Title
 init_input ==
 from mathinput import MathInput
 input = MathInput()
-input.set_keypad(keypad)
 input.value = ""
 input.type = input_type
 ==
@@ -53,6 +52,7 @@ process ==
 from jinja_env import Env
 embed = Env.from_string(embed).render(locals())
 input.set_embed(embed)
+input.set_keypad(keypad)
 ==
 
 before ==
