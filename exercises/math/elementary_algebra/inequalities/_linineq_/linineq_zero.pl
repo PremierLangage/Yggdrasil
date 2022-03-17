@@ -1,5 +1,5 @@
 extends = _linineq_.pl
 
-param.otherside = "zeros"
+param.otherside = "zero"
 
 
