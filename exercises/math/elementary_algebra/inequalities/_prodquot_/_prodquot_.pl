@@ -44,3 +44,5 @@ sol = solveset(ineq, x, domain=S.Reals)
 question ==
 Déterminer l'ensemble des réels $% x %$ tels que $$ {{ineq|latex}}. $$ Ecrire cet ensemble sous la forme d'un intervalle ou d'une réunion d'intervalles.
 ==
+
+keypad = ["+infty", "-infty", "cup"]
