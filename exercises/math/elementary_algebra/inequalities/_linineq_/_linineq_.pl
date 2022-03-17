@@ -14,7 +14,7 @@ param.otherside = "zero"
 before == #|py|
 from sympy import S, solveset
 
-a, c = sampleint(-6, 6, 2, [0])
+a, c = sampleint(-6, 6, 2, [-1, 0, 1])
 b, d = sampleint(-6, 6, 2, [-1, 0, 1])
 var('x')
 f = a*x+b
