@@ -17,14 +17,14 @@ var('x')
 if param['bounds'] == 'int':
     b, d = sampleint(-6, 6, 2, [0])
     P, Q = (x+b), (x+d)
-if param['bounds'] == 'intrat':
+elif param['bounds'] == 'intrat':
     while True:
         b, d = [randint(-6, 6, [0]) for i in range(2)]
         a, c = [randint(-6, 6, [0, 1, -1]) for i in range(2)]
         if b*c !=d:
             break
     P, Q = (x+b), (c*x+d)
-if param['bounds'] =='rat':
+elif param['bounds'] =='rat':
     while True:
         b, d = [randint(-6, 6, [0]) for i in range(2)]
         a, c = [randint(-6, 6, [0, 1, -1]) for i in range(2)]
