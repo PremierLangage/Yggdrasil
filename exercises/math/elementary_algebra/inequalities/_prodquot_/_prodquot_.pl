@@ -21,7 +21,7 @@ elif param['bounds'] == 'intrat':
     while True:
         b, d = [randint(-6, 6, [0]) for i in range(2)]
         a, c = [randint(-6, 6, [0, 1, -1]) for i in range(2)]
-        if b*c !=d:
+        if b*c != d:
             break
     P, Q = (x+b), (c*x+d)
 elif param['bounds'] =='rat':
