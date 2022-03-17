@@ -7,7 +7,6 @@ extends = /model/math/interval.pl
 
 title = Iinéquation linéaire
 
-
 # Paramètres
 
 param.otherside = "zero"
