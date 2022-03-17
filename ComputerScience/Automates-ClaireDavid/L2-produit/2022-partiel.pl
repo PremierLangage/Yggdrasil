@@ -40,22 +40,20 @@ automate1 = '''
 
 automate2 = '''
     #states
-    3
-    4
-    5
+    p
+    q
     #initials
-    3
+    p
     #accepting
-    5
+    q
     #alphabet
     a
     b
     #transitions
-    3:a,b>4
-    4:a>5
-    4:b>4
-    5:a>5
-    5:b>4
+    p:a>p
+    q:a>q
+    p:b>q
+    q:b>p
 '''
 
 # Permet de faire la comparaison same_as imposé le template -- A ajuster cf TODO
