@@ -67,10 +67,10 @@ while True:
 
 
 if param['nonempty']:
-    keypad = ["infty", "-infty"]
+    keypad = ["+infty", "-infty"]
     qstr = "Ecrire cet ensemble sous la forme d'un intervalle."
 else:
-    keypad = ["infty", "-infty", "empty"]
+    keypad = ["+infty", "-infty", "empty"]
     qstr = "Ecrire cet ensemble sous la forme d'un intervalle (ou de l'ensemble vide)."
 ==
 
