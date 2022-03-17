@@ -11,7 +11,7 @@ param.otherside = "zero"
 
 # Autres clés
 
-before ==
+before == #|py|
 from sympy import S, solveset
 
 a, c = sampleint(-6, 6, 2, [0])
@@ -21,10 +21,12 @@ f = a*x+b
 
 if param['otherside'] == 'zero':
     g = 0
-if param['otherside'] == 'cst':
+elif param['otherside'] == 'cst':
     g = d
-if param['otherside'] == 'aff':
+elif param['otherside'] == 'aff':
     g = c*x + d
+else:
+    raise ValueError("Incorrect value for parameter otherside.")
 
 ineq = choice([f>=g, f>g, f<=g, f<g, g>=f, g>f, g<=f, g<f])
 sol = solveset(ineq, x, domain=S.Reals)
