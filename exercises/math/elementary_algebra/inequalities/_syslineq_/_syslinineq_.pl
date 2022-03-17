@@ -13,6 +13,8 @@ param.otherside1 = "zero"
 
 param.otherside2 = "zero"
 
+param.nonempty = True
+
 # Autres clés
 
 before == #|py|
