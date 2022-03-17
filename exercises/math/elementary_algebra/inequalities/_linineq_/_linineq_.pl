@@ -40,4 +40,4 @@ question ==
 Déterminer l'ensemble des réels $! x !$ tels que $$ {{ ineq|latex }}. $$ Ecrire cet ensemble sous la forme d'un intervalle.
 ==
 
-keypad = ["infty", "-infty"]
+keypad = ["+infty", "-infty"]
