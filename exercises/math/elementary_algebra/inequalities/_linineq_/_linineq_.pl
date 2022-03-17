@@ -18,7 +18,7 @@ var('x')
 a = randint(-6, 6, [-1, 0, 1])
 b = randint(-6, 6, [0])
 c = randint(-6, 6, [-1, 0, 1, a])
-d = randint(-6, 6, 2, [0, b])
+d = randint(-6, 6, [0, b])
 f = a*x + b
 
 if param['otherside'] == 'zero':
