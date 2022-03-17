@@ -7,6 +7,14 @@ extends = /model/math/interval.pl
 
 title = Système d'inéquations linéaires
 
+# Paramètres
+
+param.otherside1 = "zero"
+
+param.otherside2 = "zero"
+
+# Autres clés
+
 before == #|py|
 from sympy import S, solveset, Intersection
 
