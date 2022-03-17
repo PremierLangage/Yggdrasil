@@ -7,31 +7,46 @@ extends = /model/math/interval.pl
 
 title = Système d'inéquations linéaires
 
-before ==
+before == #|py|
 from sympy import S, solveset, Intersection
 
 var('x')
-a, c = sampleint(-6, 6, 2, [0])
-b, d = sampleint(-6, 6, 2, [-1, 0, 1])
-f=a*x+b
-if param['otherside1']=='zero':
-    g=0
-if param['otherside1']=='constant':
-    g=d
-if param['otherside1']=='linear':
-    g=c*x+d
-ineq1=choice([f>=g,f>g,f<=g,f<g,g>=f,g>f,g<=f,g<f])
+a = randint(-6, 6, [-1, 0, 1])
+b = randint(-6, 6, [0])
+c = randint(-6, 6, [-1, 0, 1, a])
+d = randint(-6, 6, [0, b])
+f = a*x + b
 
-a, c = sampleint(-6, 6, 2, [0])
-b, d = sampleint(-6, 6, 2, [-1, 0, 1])
-f=a*x+b
-if param['otherside2']=='zero':
-    g=0
-if param['otherside2']=='constant':
-    g=d
-if param['otherside2']=='linear':
-    g=c*x+d
-ineq2=choice([f>=g,f>g,f<=g,f<g,g>=f,g>f,g<=f,g<f])
+if param['otherside'] == 'zero':
+    g = 0
+elif param['otherside'] == 'cst':
+    g = d
+elif param['otherside'] == 'aff':
+    g = c*x + d
+else:
+    raise ValueError("Incorrect value for parameter otherside.")
+
+ineq1 = choice([f>=g, f>g, f<=g, f<g, g>=f, g>f, g<=f, g<f])
+sol1 = solveset(ineq, x, domain=S.Reals)
+
+var('x')
+a = randint(-6, 6, [-1, 0, 1])
+b = randint(-6, 6, [0])
+c = randint(-6, 6, [-1, 0, 1, a])
+d = randint(-6, 6, [0, b])
+f = a*x + b
+
+if param['otherside'] == 'zero':
+    g = 0
+elif param['otherside'] == 'cst':
+    g = d
+elif param['otherside'] == 'aff':
+    g = c*x + d
+else:
+    raise ValueError("Incorrect value for parameter otherside.")
+
+ineq1 = choice([f>=g, f>g, f<=g, f<g, g>=f, g>f, g<=f, g<f])
+sol2 = solveset(ineq, x, domain=S.Reals)
 
 sol1=solveset(ineq1,x,domain=S.Reals)
 sol2=solveset(ineq2,x,domain=S.Reals)
