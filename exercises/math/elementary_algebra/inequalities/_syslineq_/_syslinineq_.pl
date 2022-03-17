@@ -64,6 +64,8 @@ while True:
             break
     else:
         break
+
+
 if param['nonempty']:
     keypad = ["infty", "-infty"]
     qstr = "Ecrire cet ensemble sous la forme d'un intervalle."
