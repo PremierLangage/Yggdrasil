@@ -1,10 +1,15 @@
-# Author: D. Doyen
-# Tags: inequalities
-# 19/8/2020
+# D. Doyen
+# 17/3/2020
+# inequalities
+# Résoudre une inéquation linéaire
 
 extends = /model/math/interval.pl
 
+# Paramètres
+
 param.otherside = "zero"
+
+#
 
 before ==
 from sympy import S, solveset
@@ -24,7 +29,6 @@ if param['otherside'] == 'aff':
 ineq = choice([f>=g, f>g, f<=g, f<g, g>=f, g>f, g<=f, g<f])
 sol = solveset(ineq, x, domain=S.Reals)
 ==
-
 
 question ==
 Déterminer l'ensemble des réels $! x !$ tels que $$ {{ ineq|latex }}. $$ Ecrire cet ensemble sous la forme d'un intervalle.
