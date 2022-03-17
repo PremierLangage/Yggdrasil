@@ -14,9 +14,11 @@ param.otherside = "zero"
 before == #|py|
 from sympy import S, solveset
 
-a, c = sampleint(-6, 6, 2, [-1, 0, 1])
-b, d = sampleint(-6, 6, 2, [-1, 0, 1, a])
 var('x')
+a = randint(-6, 6, [-1, 0, 1])
+b = randint(-6, 6, [0])
+c = randint(-6, 6, [-1, 0, 1, a])
+d = randint(-6, 6, 2, [0, b])
 f = a*x + b
 
 if param['otherside'] == 'zero':
