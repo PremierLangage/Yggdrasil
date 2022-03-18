@@ -17,12 +17,12 @@ else:
 sx1,sx2=sample(['<','<='], 2)
 sy1,sy2=sample(['<','<='], 2)
 
-if sx1 == '<=':
+if sx1 == '<':
     left_open = True
 else:
     left_open = False
 
-if sx2 == '<=':
+if sx2 == '<':
     right_open = True
 else:
     right_open = False
@@ -80,12 +80,12 @@ if x2*y1==z2:
 if 0==z2:
     s2='<='
 
-if s1 == '<=':
+if s1 == '<':
     left_open = True
 else:
     left_open = False
 
-if s2 == '<=':
+if s2 == '<':
     right_open = True
 else:
     right_open = False
@@ -96,10 +96,8 @@ boundx = latex_chainineq(x, Ix)
 boundy = latex_chainineq(y, Iy)
 
 expr = x*y
-
 ==
 
-input.virtualKeyboards = relations
 
 question  ==
 Soit $! x !$ et $%y%$ des nombres tels que $! {{boundx}} !$ et $%{{boundy}} %$. Déterminer l'encadrement le plus précis possible de $% {{expr}} %$.
