@@ -28,7 +28,6 @@ else:
 
 Ix = Interval(x1, x2, left_open, right_open)
 
-
 if sy1 = '<=':
     left_open = True
 else:
@@ -40,7 +39,6 @@ else:
     right_open = False
 
 Iy = Interval(y1, y2, left_open, right_open)
-
 
 def strictest(s1,s2):
     if s1=='<=' and s2=='<=':
@@ -93,8 +91,8 @@ else:
 
 sol = Interval(z1, z2, left_open, right_open)
 
-boundx = latex_chainineq(x, )
-boundy = latex_ineq([y1,sy1,y,sy2,y2])
+boundx = latex_chainineq(x, Ix)
+boundx = latex_chainineq(y, Iy)
 
 expr = x*y
 
