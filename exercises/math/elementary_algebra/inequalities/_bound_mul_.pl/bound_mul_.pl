@@ -16,24 +16,24 @@ else:
 sx1,sx2=list_randitem(2,['<','<='])
 sy1,sy2=list_randitem(2,['<','<='])
 
-if sx1 = '<=':
+if sx1 == '<=':
     left_open = True
 else:
     left_open = False
 
-if sx2 = '<=':
+if sx2 == '<=':
     right_open = True
 else:
     right_open = False
 
 Ix = Interval(x1, x2, left_open, right_open)
 
-if sy1 = '<=':
+if sy1 == '<=':
     left_open = True
 else:
     left_open = False
 
-if sy2 = '<=':
+if sy2 == '<=':
     right_open = True
 else:
     right_open = False
@@ -79,12 +79,12 @@ if x2*y1==z2:
 if 0==z2:
     s2='<='
 
-if s1 = '<=':
+if s1 == '<=':
     left_open = True
 else:
     left_open = False
 
-if s2 = '<=':
+if s2 == '<=':
     right_open = True
 else:
     right_open = False
