@@ -1,10 +1,36 @@
-extends = /model/math/input0.pl
+# D. Doyen
+# 17/3/2022
+# inequalities
+# Résoudre une inéquation linéaire
 
-before ==
-sol = 0
+extends = /model/math/interval.pl
+
+title = Iinéquation linéaire
+
+# Paramètres
+
+param.otherside = "zero"
+
+# Autres clés
+
+before == #|py|
+from sympy import S, solveset
+
+var('x')
+a = randint(-6, 6, [-1, 0, 1])
+b = randint(-6, 6, [0])
+c = randint(-6, 6, [-1, 0, 1, a])
+d = randint(-6, 6, [0, b])
+f = a*x + b
+
+g = d
+
+ineq = choice([f>=g, f>g, f<=g, f<g, g>=f, g>f, g<=f, g<f])
+sol = solveset(ineq, x, domain=S.Reals)
 ==
 
 question ==
-On considère
+Déterminer l'ensemble des réels $! x !$ tels que $$ {{ ineq|latex }}. $$ Ecrire cet ensemble sous la forme d'un intervalle.
 ==
 
+keypad = ["+infty", "-infty"]
