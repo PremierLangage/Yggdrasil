@@ -44,6 +44,7 @@ except:
     feedback = "La réponse doit être un entier."
 else:
     score = 0
+    feedback = ""
     solution = str(ans)
 ==
 
