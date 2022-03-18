@@ -93,7 +93,7 @@ else:
 sol = Interval(z1, z2, left_open, right_open)
 
 boundx = latex_chainineq(x, Ix)
-boundx = latex_chainineq(y, Iy)
+boundy = latex_chainineq(y, Iy)
 
 expr = x*y
 
