@@ -13,8 +13,8 @@ else:
     x1,x2=randint(-8,-1),randint(0,8)
     y1,y2=randint(-8,0),randint(1,8)
 
-sx1,sx2=list_choice(2,['<','<='])
-sy1,sy2=list_choice(2,['<','<='])
+sx1,sx2=sample(['<','<='], 2)
+sy1,sy2=sample(['<','<='], 2)
 
 if sx1 == '<=':
     left_open = True
