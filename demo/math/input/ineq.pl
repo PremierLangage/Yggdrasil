@@ -36,7 +36,7 @@ Déterminer l'ensemble des réels $! x !$ tels que $$ {{ ineq|latex }}. $$ Ecrir
 evaluator ==
 from latex2sympy import latex2sympy
 from sympy import isprime, srepr
-from sympy import S, solveset
+from sympy import S, solveset, var
 var('x')
 
 try:
