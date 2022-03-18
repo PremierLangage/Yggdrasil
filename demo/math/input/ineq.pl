@@ -36,6 +36,8 @@ Déterminer l'ensemble des réels $! x !$ tels que $$ {{ ineq|latex }}. $$ Ecrir
 evaluator ==
 from latex2sympy import latex2sympy
 from sympy import isprime, srepr
+from sympy import S, solveset
+var('x')
 
 try:
     ans = latex2sympy(input.get_value())
@@ -44,7 +46,7 @@ except:
     feedback = "La réponse doit être un entier."
 else:
     score = 0
-    feedback = str(srepr(ans))
+    feedback = str(srepr(solveset(ans, x, domain=S.Reals)))
 ==
 
 keypad = ["+infty", "-infty"]
