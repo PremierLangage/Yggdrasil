@@ -7,8 +7,8 @@ param.sign = constant
 before ==
 var('x,y')
 if param['sign']=="constant":
-    x1,x2=choice([sorted(list_randint_norep(2,-8,0)),sorted(list_randint_norep(2,0,8))])
-    y1,y2=choice([sorted(list_randint_norep(2,-8,0)),sorted(list_randint_norep(2,0,8))])
+    x1,x2=choice([sorted(sampleint(-8,0, 2)),sorted(sampleint(0,8, 2))])
+    y1,y2=choice([sorted(sampleint(-8,0, 2)),sorted(sampleint(0,8, 2))])
 else:
     x1,x2=randint(-8,-1),randint(0,8)
     y1,y2=randint(-8,0),randint(1,8)
