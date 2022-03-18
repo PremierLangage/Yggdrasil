@@ -34,7 +34,6 @@ Déterminer l'ensemble des réels $! x !$ tels que $$ {{ ineq|latex }}. $$ Ecrir
 ==
 
 embed ==
-
 ==
 
 evaluator ==
