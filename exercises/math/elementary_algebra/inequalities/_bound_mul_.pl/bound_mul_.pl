@@ -5,6 +5,7 @@ title = Encadrement d'un produit
 param.sign = constant
 
 before ==
+from sympy2latex import latex_chainineq
 var('x,y')
 if param['sign']=="constant":
     x1,x2=choice([sorted(sampleint(-8,0, 2)),sorted(sampleint(0,8, 2))])
