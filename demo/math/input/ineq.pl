@@ -44,7 +44,7 @@ except:
     feedback = "La réponse doit être un entier."
 else:
     score = 0
-    feedback = str(ans)
+    feedback = str(srepr(ans))
 ==
 
 keypad = ["+infty", "-infty"]
