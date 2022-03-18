@@ -38,7 +38,7 @@ embed ==
 
 evaluator ==
 input.sol = sol
-score = input.eval()
+ans = input.get_value()
 input.display_feedback()
 if score >= 0:
   input.disable()
