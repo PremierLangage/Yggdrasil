@@ -33,4 +33,16 @@ question ==
 Déterminer l'ensemble des réels $! x !$ tels que $$ {{ ineq|latex }}. $$ Ecrire cet ensemble sous la forme d'un intervalle.
 ==
 
+embed ==
+
+==
+
+evaluator ==
+input.sol = sol
+score = input.eval()
+input.display_feedback()
+if score >= 0:
+  input.disable()
+==
+
 keypad = ["+infty", "-infty"]
