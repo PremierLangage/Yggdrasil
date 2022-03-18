@@ -65,6 +65,7 @@ if x1*y2==z1:
     s1=largest(s1,strictest(sx1,sy2))
 if x2*y1==z1:
     s1=largest(s1,strictest(sx2,sy1))
+# BUG ?
 if 0==z1:
     s1='<='
 
@@ -77,6 +78,7 @@ if x1*y2==z2:
     s2=largest(s2,strictest(sx1,sy2))
 if x2*y1==z2:
     s2=largest(s2,strictest(sx2,sy1))
+# BUG ?
 if 0==z2:
     s2='<='
 
