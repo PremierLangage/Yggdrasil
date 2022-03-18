@@ -43,18 +43,8 @@ except:
     score = -1
     feedback = "La réponse doit être un entier."
 else:
-    if not ans.is_Integer:
-        score = -1
-        feedback = "La réponse doit être un entier."
-    elif not (a <= ans <= b):
-        score = 0
-        feedback = f"La réponse doit être comprise entre {a} et {b}."
-    elif not isprime(ans):
-        score = 0
-        feedback = "La réponse doit être un nombre premier."
-    else:
-        score = 100
-        feedback = ""
+    score = 0
+    solution = str(ans)
 ==
 
 keypad = ["+infty", "-infty"]
