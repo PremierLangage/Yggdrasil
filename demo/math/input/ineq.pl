@@ -46,7 +46,7 @@ except:
     feedback = "La réponse doit être un entier."
 else:
     score = 0
-    feedback = str(solveset(ineq, x, domain=S.Reals))
+    feedback = "" str(solveset(ineq, x, domain=S.Reals))
 ==
 
 keypad = ["+infty", "-infty"]
