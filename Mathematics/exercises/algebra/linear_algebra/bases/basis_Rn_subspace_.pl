@@ -22,9 +22,6 @@ Déterminer une base de ce sous-espace (écrire cette base comme un ensemble, en
 ==
 
 evaluator ==
-from latex2sympy import latex2sympy
-from sympy import Matrix
-
 def evalans(strans):
     try:
         ans = latex2sympy(input.value)
