@@ -3,7 +3,6 @@ extends = /model/jxg/point.pl
 title = Addition de vecteurs
 
 before ==
-from jinja2 import Template
 while True:
     ux,uy=list_randint(2,-5,5,[-1,0,1])
     vx,vy=list_randint(2,-5,5,[-1,0,1])
