@@ -40,7 +40,7 @@ solution = '''
 
 
 #message de l'énoncé décrivant le langage
-message = "donné par l'automate ci-dessous"
+message = "donné par l'automate ci-dessous."
 ==
 
 #* Texte de l'énoncé
