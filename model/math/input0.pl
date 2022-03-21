@@ -22,7 +22,7 @@ from sympy import E, I, pi, oo
 from sympy import sqrt, Abs, sin, cos, tan, exp, ln
 from sympy import Symbol, symbols, var
 from sympy import sympify, simplify, factor, Lambda
-from sympy import Integer, Rational, Poly, FiniteSet, Tuple, Interval
+from sympy import Integer, Rational, Poly, FiniteSet, Tuple, Interval, Matrix
 from sympy import integrate
 from random import choice, choices, sample, shuffle
 from plrandom import randint, sampleint
