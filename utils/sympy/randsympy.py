@@ -58,7 +58,7 @@ def randint_matrix_inv(n, bound, excval=[], sparsity=0, mindet=0, maxdet=sp.S.In
         if mindet <= abs(M.det()) <= maxdet:
             return M
             
-def randint_matrix_fullrank(n,p,bound,excval=[],sparsity=0):
+def randmat_fullrank(n, p, bound, excval=[], sparsity=0):
     """
     Generate a full rank random matrix with integer entries.
     """
