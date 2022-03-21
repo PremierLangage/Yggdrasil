@@ -11,7 +11,8 @@ while True:
     if abs(wx)<6 and abs(wy)<6 and (wx,wy)!=(0,0):
         break
 
-jxg.script = Template(script).render(locals())
+xsol = 1
+ysol = 2
 ==
 
 script ==
