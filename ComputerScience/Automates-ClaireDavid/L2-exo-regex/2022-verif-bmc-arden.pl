@@ -40,7 +40,7 @@ solution = '''
 
 
 #message de l'énoncé décrivant le langage
-message = "des mots qui ont un nombre pair de b."
+message = "donné par l'automate ci-dessous"
 ==
 
 #* Texte de l'énoncé
@@ -49,7 +49,7 @@ message = "des mots qui ont un nombre pair de b."
 # l'automate minimisé du langage solution
 text ==
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>
-Donnez une expression reconnaissant le langage donné par l'automate ci-dessous <br>
+Donnez une expression reconnaissant le langage {{ message }}  <br>
 
 Automate $!\mathcal{A}_1!$ qui reconnaît $!L_1!$:
 {{ viewer_enonce1|component }}
