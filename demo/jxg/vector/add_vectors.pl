@@ -23,7 +23,7 @@ var OU = board.create('arrow',[O, U], {color:'purple'});
 
 var pt1 = board.create('point', [0, 0], {visible: false, name: 'A'});
 var pt2 = board.create('point', [0, 0], {visible: false, name: 'B'});
-var vec = board.create('arrow',[pt1, pt2],{color:'blue',fixed:true});
+var vec = board.create('arrow',[pt1, pt2],{color:'blue'});
 ==
 
 
