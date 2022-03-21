@@ -12,7 +12,7 @@ B=zeros(nbeq, 1)
 sys_tex = latexsys(A, B)
 ==
 
-text ==
+question ==
 On considère le sous-espace de $! \mathbb{R}^{{n}} !$ formé des vecteurs $! ({{lstvar}}) !$ tels que
 $$ {{sys_tex}} .$$
 Déterminer une base de ce sous-espace (écrire cette base comme un ensemble, entre accolades).
