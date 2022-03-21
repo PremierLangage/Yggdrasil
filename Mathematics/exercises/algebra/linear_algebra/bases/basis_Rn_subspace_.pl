@@ -7,7 +7,7 @@ m = n-nbeq
 
 lstvar = ",".join(["x","y","z","t","u","v"][:n])
 
-A=rand_int_matrix_fullrank(nbeq, n, 3, excluded_values=[0])
+A=randmat_fullrank(nbeq, n, 3, excluded_values=[0])
 B=zeros(nbeq, 1)
 sys_tex = latexsys(A, B)
 ==
