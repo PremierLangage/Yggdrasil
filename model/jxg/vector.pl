@@ -39,7 +39,7 @@ from latex2sympy import latex2sympy
 ==
 
 initinput ==
-from jxginput import JXGVector()
+from jxginput import JXGVector
 input = JXGVector()
 ==
 
