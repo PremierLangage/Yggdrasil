@@ -33,7 +33,7 @@ var OM = board.create('arrow',[O, M],{color:'red',fixed:true});
 ==
 
 
-text ==
+question ==
 On considère deux vecteurs u et v représentés graphiquement ci-dessous. On pose w=2u−12v. Cliquer à l'emplacement de l'extrémité du vecteur w. 
 ==
 
