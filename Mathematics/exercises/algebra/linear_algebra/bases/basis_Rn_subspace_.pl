@@ -1,4 +1,4 @@
-extends = /model/math/input.pl
+extends = /model/math/input_eval.pl
 
 before ==
 from randsympy randmat_fullrank
