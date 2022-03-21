@@ -1,11 +1,7 @@
-extends = /model/math.pl
-
-settings.feedback = rightwrong
+extends = /model/jxg/point.pl
 
 title = Addition de vecteurs
 
-jxg =: MathDrawer
-jxg.decorator = CustomJSXGraph
 
 before ==
 from jinja2 import Template
@@ -32,23 +28,8 @@ var OV = board.create('arrow',[O, V]);
 var U = board.create('point',[ {{ux}} , {{uy}} ],{size:0,name:'u'});
 var OU = board.create('arrow',[O, U]);
 
-var M = board.create('point',[0, 0],{name:'M',size:1,color:'none',withLabel:false});
+var p = board.create('point',[0, 0],{name:'M',size:1,color:'none',withLabel:false});
 var OM = board.create('arrow',[O, M],{color:'red',fixed:true});
-
-function getMouseCoords(e) {
-    let cPos = board.getCoordsTopLeftCorner(e);
-    let absPos = JXG.getPosition(e);
-    let dx = absPos[0]-cPos[0];
-    let dy = absPos[1]-cPos[1];
-    return new JXG.Coords(JXG.COORDS_BY_SCREEN, [dx, dy], board);
-}
-
-function down(e) {
-    let coords = getMouseCoords(e);
-    M.setPosition(JXG.COORDS_BY_USER,[coords.usrCoords[1], coords.usrCoords[2]]);
-}
-
-board.on('down', down)
 ==
 
 
