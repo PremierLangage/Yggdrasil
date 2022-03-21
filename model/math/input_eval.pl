@@ -2,7 +2,7 @@
 
 extends = /model/math/input0.pl
 
-eval_scripts = ["evalparam", "getinput", "evaluator", "ending"]
+eval_scripts = ["mathimport", "evalparam", "getinput", "evaluator", "ending"]
 
 evaluator ==
 #
