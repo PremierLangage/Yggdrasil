@@ -2,6 +2,7 @@ extends = /model/math/input_eval.pl
 
 before ==
 from randsympy import randmat_fullrank
+from sympy import zeros
 n = param['n']
 nbeq = param['nbeq']
 m = n-nbeq
@@ -9,7 +10,7 @@ m = n-nbeq
 lstvar = ",".join(["x","y","z","t","u","v"][:n])
 
 A=randmat_fullrank(nbeq, n, 3, excval=[0])
-B=zeros(nbeq, 1)
+B= zeros(nbeq, 1)
 sys_tex = latexsys(A, B)
 ==
 
