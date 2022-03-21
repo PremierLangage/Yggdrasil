@@ -32,7 +32,7 @@ def randint_poly(d, nc, bound, var='x'):
 
 # Matrices
 
-def randint_matrix(n, p, bound, excval=[], sparsity=0):
+def randmat(n, p, bound, excval=[], sparsity=0):
     """
     Return a random matrix with integer entries.
 
@@ -49,12 +49,12 @@ def randint_matrix(n, p, bound, excval=[], sparsity=0):
     rd.shuffle(entries)
     return sp.Matrix(n,p,entries)
 
-def randint_matrix_inv(n, bound, excval=[], sparsity=0, mindet=0, maxdet=sp.S.Infinity):
+def randmat_inv(n, bound, excval=[], sparsity=0, mindet=0, maxdet=sp.S.Infinity):
     """
     Return an invertible random matrix with integer entries.
     """
     while True:
-        M=randint_matrix_fullrank(n,n,bound,excval,sparsity)
+        M=randmat_fullrank(n,n,bound,excval,sparsity)
         if mindet <= abs(M.det()) <= maxdet:
             return M
             
@@ -63,11 +63,11 @@ def randmat_fullrank(n, p, bound, excval=[], sparsity=0):
     Generate a full rank random matrix with integer entries.
     """
     while True:
-        M=randint_matrix(n,p,bound,excval,sparsity)
+        M=randmat(n,p,bound,excval,sparsity)
         if M.rank()==min([n,p]):
             return M
 
-def randint_matrix_givenrank(n, m, r, magnitude=1):
+def randmat_givenrank(n, m, r, magnitude=1):
     """
     Generate a nxn random matrix with given rank.
 
@@ -77,8 +77,8 @@ def randint_matrix_givenrank(n, m, r, magnitude=1):
     magnitude : size of coefficients
     """
     while True:
-        P = randint_matrix_fullrank(n, r, 1)
-        Q = randint_matrix_fullrank(r, m, magnitude)
+        P = randmat_fullrank(n, r, 1)
+        Q = randmat_fullrank(r, m, magnitude)
         B = P*Q
         zerorows = sum([sum(B.row(i))==0 for i in range(n)])
         diffrows = len(set([tuple(B.row(i)) for i in range(n)]))
