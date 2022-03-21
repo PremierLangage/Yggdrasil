@@ -1,7 +1,7 @@
 extends = ../templates/new_editor-L2.pl
 
 #* titre de l'exercice
-title = Vérification solution BMC ou Arden
+title = Vérification de la solution de BMC ou Arden du partiel 2022
 
 #* Ajouter ici l'automate solution et autres variables de l'exo
 generate== #|py|
