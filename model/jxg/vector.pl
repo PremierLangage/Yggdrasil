@@ -41,7 +41,7 @@ from latex2sympy import latex2sympy
 ==
 
 initinput ==
-from jxgvectorimport JXGVector
+from jxgvector import JXGVector
 input = JXGVector()
 ==
 
