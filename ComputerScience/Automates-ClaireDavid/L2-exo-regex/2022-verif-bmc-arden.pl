@@ -38,8 +38,8 @@ solution = '''
     4:a>3
 '''
 #viewer_enonce permet un affichage non modifié de l'automate1 enoncé qui décrit le langage
-viewer_enonce = AutomatonDrawer()
-viewer_enonce.automaton = solution
+viewer_enonce1 = AutomatonDrawer()
+viewer_enonce1.automaton = solution
 
 #message de l'énoncé décrivant le langage
 message = "donné par l'automate ci-dessous."
