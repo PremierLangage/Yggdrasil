@@ -37,11 +37,6 @@ question ==
 On considère deux vecteurs u et v représentés graphiquement ci-dessous. On pose w=2u−12v. Cliquer à l'emplacement de l'extrémité du vecteur w. 
 ==
 
-script_solution ==
-board.create('point',[{{a}}, {{b}}],{size:2,name:'M',color:'green'});
-board.create('point',[{{x}}, {{y}}],{size:2,name:'',color:'red'});
-==
-
 evaluator ==
 x= jxg.points['M']['x']
 y= jxg.points['M']['y']
