@@ -51,27 +51,12 @@ input.pointname = pointname
 input.set_script(jxgscript + script_aux, globals())
 ==
 
-script_aux ==
-function getMouseCoords(e) {
-    let cPos = board.getCoordsTopLeftCorner(e);
-    let absPos = JXG.getPosition(e);
-    let dx = absPos[0]-cPos[0];
-    let dy = absPos[1]-cPos[1];
-    return new JXG.Coords(JXG.COORDS_BY_SCREEN, [dx, dy], board);
-}
 
-function down(e) {
-    let coords = getMouseCoords(e);
-    psol.setPosition(JXG.COORDS_BY_USER,[coords.usrCoords[1], coords.usrCoords[2]]);
-}
-
-board.on('down', down)
-==
 
 tplpage =@ /model/tplpage/basicmath.html
 
 evaluator ==
-input.sol = [xsol, ysol]
+input.sol = sol
 score = input.eval()
 input.display_feedback()
 input.disable()
