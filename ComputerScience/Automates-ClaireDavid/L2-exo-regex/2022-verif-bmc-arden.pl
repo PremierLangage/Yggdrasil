@@ -7,9 +7,12 @@ title = Vérification solution BMC ou Arden
 generate== #|py|
 
 #pour definir le type de réponse attendue (automaton par défaut)
-#answer_type = "simple-regex"
+answer_type = "simple-regex"
 
 alphabet = "a,b"
+
+#langage solution -- le nom solution est forcé par le template
+#solution = Automaton.parse('(a*ba*b)*a*')
 
 solution = '''
     #states
@@ -35,8 +38,6 @@ solution = '''
     4:a>3
 '''
 
-#langage solution -- le nom solution est forcé par le template
-solution = Automaton.parse('(a*ba*b)*a*')
 
 #message de l'énoncé décrivant le langage
 message = "des mots qui ont un nombre pair de b."
@@ -48,7 +49,11 @@ message = "des mots qui ont un nombre pair de b."
 # l'automate minimisé du langage solution
 text ==
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>
-Donnez une expression reconnaissant le langage donné par l'automate ci-dessus <br/>
+Donnez une expression reconnaissant le langage donné par l'automate ci-dessous <br>
+
+Automate $!\mathcal{A}_1!$ qui reconnaît $!L_1!$:
+{{ viewer_enonce1|component }}
+
 Cet exercice permet de vérifier votre résultat de l'application de BMC ou Arden sur l'automate du partiel 2022.<br/>
  <strong>Attention, cela ne permet pas de vérifier que vous appliquez la méthode choisie correctement.
   En cas de doute, rapprochez-vous de vos enseignants.</strong><br>
