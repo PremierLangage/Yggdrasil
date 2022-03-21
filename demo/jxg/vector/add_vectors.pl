@@ -20,8 +20,8 @@ attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
 
 jxgscript ==
 board.create('grid',[],{gridX:1,gridY:1});
-var V1 = board.create('point',[0, 0],{visible:false, fixed:true});
-var V2 = board.create('point',[ {{vx}} , {{vy}} ],{size:0,name:'v', fixed:true});
+var V1 = board.create('point',[0, 0],{visible:false});
+var V2 = board.create('point',[ {{vx}} , {{vy}} ],{size:0,name:'v'});
 var V = board.create('arrow',[V1, V2], {color:'orange'});
 var U1 = board.create('point',[0, 0],{visible:false});
 var U2 = board.create('point',[ {{ux}} , {{uy}} ],{size:0,name:'u'});
