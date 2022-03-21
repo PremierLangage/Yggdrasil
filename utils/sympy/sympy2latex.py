@@ -130,7 +130,7 @@ def latex_linsys(A, B, lstvar=['x','y','z','t','u','v','w']):
         else:
             terms.extend(["=", latex(B[i])])
     if n == 1:
-        return " ".join(terms)
+        return " ".join(terms[1:])
     else:
         return r"\left\lbrace \begin{align} %s \end{align} \right. " % " ".join(terms) 
 
