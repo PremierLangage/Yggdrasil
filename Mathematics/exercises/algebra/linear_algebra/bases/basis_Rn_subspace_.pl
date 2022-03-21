@@ -1,9 +1,6 @@
-extends = /model/mathinput.pl
+extends = /model/math/set.pl
 
 before ==
-keyboards_JSON['virtualKeyboards']="sets"
-input.config = keyboards_JSON
-
 n = param['n']
 nbeq = param['nbeq']
 m = n-nbeq
