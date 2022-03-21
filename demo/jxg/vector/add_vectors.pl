@@ -11,6 +11,8 @@ while True:
     xsol,ysol=ux+vx,uy+vy
     if abs(xsol)<6 and abs(ysol)<6 and (xsol,ysol)!=(0,0):
         break
+
+sol = [1, 2]
 ==
 
 jxgscript ==
