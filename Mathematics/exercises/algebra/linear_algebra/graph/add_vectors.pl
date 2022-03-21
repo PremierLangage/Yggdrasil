@@ -37,20 +37,4 @@ question ==
 On considère deux vecteurs u et v représentés graphiquement ci-dessous. On pose w=2u−12v. Cliquer à l'emplacement de l'extrémité du vecteur w. 
 ==
 
-evaluator ==
-x= jxg.points['M']['x']
-y= jxg.points['M']['y']
-
-from jinja2 import Template
-from math import hypot
-if hypot(x-wx, y-wy)<0.1:
-     score=100
-     #jxg.script = Template(script_solution).render(locals())
-     #jxg.points = {}
-     jxg.disabled = True
-else:
-     score=0
-feedback=""
-==
-
 
