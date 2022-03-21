@@ -1,5 +1,7 @@
 extends = /model/basic/hackpage.pl
 extends = /model/basic/utils.pl
+@ /utils/inputfields/jxgvector.py
+
 
 # Specific keys
 
