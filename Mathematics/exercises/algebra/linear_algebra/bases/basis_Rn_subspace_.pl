@@ -3,7 +3,7 @@ extends = /model/math/input_eval.pl
 before ==
 from randsympy import randmat_fullrank
 from sympy import zeros
-from sympy2latex import linsys
+from sympy2latex import latex_linsys
 n = param['n']
 nbeq = param['nbeq']
 m = n-nbeq
