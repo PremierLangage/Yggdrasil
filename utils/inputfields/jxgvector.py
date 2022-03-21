@@ -10,7 +10,8 @@ class JXGVector(JXGInput):
         self.pointnames = ['A', 'B']
         self.evalparam = {}
         super().__init__(**kwargs)
-
+        self.decorator = 'JXGInput'
+        
     def eval(self):
         """
         Evaluate the input field
