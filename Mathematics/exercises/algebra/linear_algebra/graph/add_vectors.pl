@@ -4,10 +4,12 @@ title = Addition de vecteurs
 
 before ==
 while True:
-    ux,uy=list_randint(2,-5,5,[-1,0,1])
-    vx,vy=list_randint(2,-5,5,[-1,0,1])
-    wx,wy=ux+vx,uy+vy
-    if abs(wx)<6 and abs(wy)<6 and (wx,wy)!=(0,0):
+    ux = randint(-5,5,[-1,0,1])
+    uy = randint(-5,5,[-1,0,1])
+    vx = randint(-5,5,[-1,0,1])
+    vy = randint(-5,5,[-1,0,1])
+    xsol,ysol=ux+vx,uy+vy
+    if abs(xsol)<6 and abs(ysol)<6 and (xsol,ysol)!=(0,0):
         break
 
 xsol = 1
