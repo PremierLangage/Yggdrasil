@@ -2,7 +2,6 @@ extends = /model/jxg/point.pl
 
 title = Addition de vecteurs
 
-
 before ==
 from jinja2 import Template
 while True:
