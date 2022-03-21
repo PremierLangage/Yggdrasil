@@ -8,7 +8,7 @@ attributes = {}
 jxgscript ==
 ==
 
-pointname = ""
+pointnames = ["A", "B"]
 
 tol = 0.05
 
