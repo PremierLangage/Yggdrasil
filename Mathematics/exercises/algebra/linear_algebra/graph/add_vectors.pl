@@ -15,10 +15,10 @@ while True:
 
 jxgscript ==
 board.create('grid',[],{gridX:1,gridY:1});
-var O = board.create('point',[0, 0],{visible:false});
-var V = board.create('point',[ {{vx}} , {{vy}} ],{size:0,name:'v'});
+var O = board.create('point',[0, 0],{visible:false, fixed:true});
+var V = board.create('point',[ {{vx}} , {{vy}} ],{size:0,name:'v', fixed:true});
 var OV = board.create('arrow',[O, V], {color:'orange'});
-var U = board.create('point',[ {{ux}} , {{uy}} ],{size:0,name:'u'});
+var U = board.create('point',[ {{ux}} , {{uy}} ],{size:0,name:'u', fixed:true});
 var OU = board.create('arrow',[O, U], {color:'green'});
 
 var psol = board.create('point',[0, 0],{name:'M',size:1,color:'none',withLabel:false});
