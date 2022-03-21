@@ -1,4 +1,4 @@
-extends = /model/math/set.pl
+extends = /model/math/input.pl
 
 before ==
 n = param['n']
