@@ -42,7 +42,7 @@ viewer_enonce1 = AutomatonDrawer()
 viewer_enonce1.automaton = solution
 
 #message de l'énoncé décrivant le langage
-message = "donné par l'automate ci-dessous."
+message = "donné par l'automate $!\mathcal{A}_1!$  ci-dessous."
 ==
 
 #* Texte de l'énoncé
@@ -53,7 +53,6 @@ text ==
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>
 Donnez une expression reconnaissant le langage {{ message }}  <br>
 
-Automate $!\mathcal{A}_1!$ qui reconnaît $!L_1!$:
 {{ viewer_enonce1|component }}
 
 Cet exercice permet de vérifier votre résultat de l'application de BMC ou Arden sur l'automate du partiel 2022.<br/>
