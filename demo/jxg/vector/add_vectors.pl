@@ -26,8 +26,8 @@ var OV = board.create('arrow',[O, V], {color:'orange'});
 var U = board.create('point',[ {{ux}} , {{uy}} ],{size:0,name:'u', fixed:true});
 var OU = board.create('arrow',[O, U], {color:'purple'});
 
-var pt1 = board.create('point', [0, 0], {visible: true, name: 'A', size: 0.5, withLabel: false});
-var pt2 = board.create('point', [1, 1], {visible: true, name: 'B', size: 0.5, withLabel: false});
+var pt1 = board.create('point', [0, 0], {visible: true, name: 'A', size: 0.5, withLabel: false, snapToGrid: true});
+var pt2 = board.create('point', [1, 1], {visible: true, name: 'B', size: 0.5, withLabel: false, snapToGrid: true});
 var vec = board.create('segment',[pt1, pt2],{color:'blue', lastArrow: {type: 2, size: 6}});
 ==
 
