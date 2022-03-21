@@ -13,7 +13,7 @@ while True:
         break
 ==
 
-script ==
+jxgscript ==
 board.create('grid',[],{gridX:1,gridY:1});
 var O = board.create('point',[0, 0],{visible:false});
 var V = board.create('point',[ {{vx}} , {{vy}} ],{size:0,name:'v'});
