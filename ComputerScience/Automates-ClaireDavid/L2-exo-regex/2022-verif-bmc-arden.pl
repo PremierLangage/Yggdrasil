@@ -48,7 +48,8 @@ message = "des mots qui ont un nombre pair de b."
 # l'automate minimisé du langage solution
 text ==
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>
-Donnez une expression reconnaissant le langage donné par l'automate ci-dessus <br>
+Donnez une expression reconnaissant le langage donné par l'automate ci-dessus <br/>
+Cet exercice permet de vérifier votre résultat de l'application de BMC ou Arden sur l'automate du partiel 2022. <strong>Attention, cela ne permet pas de vérifier que vous appliquez la méthode choisie correctement. En cas de doute, rapprochez-vous de vos enseignants.</strong><br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
 Il vous reste {{ maxattempt - attempt }} tentative(s) !
