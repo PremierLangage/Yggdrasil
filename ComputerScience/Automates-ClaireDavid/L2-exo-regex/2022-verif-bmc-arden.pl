@@ -7,7 +7,6 @@ title = Vérification solution BMC ou Arden
 generate== #|py|
 
 #pour definir le type de réponse attendue (automaton par défaut)
-answer_type = "simple-regex"
 
 alphabet = "a,b"
 
