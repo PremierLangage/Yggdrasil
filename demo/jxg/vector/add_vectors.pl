@@ -15,6 +15,9 @@ while True:
 sol = [1, 2]
 ==
 
+attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
+
+
 jxgscript ==
 board.create('grid',[],{gridX:1,gridY:1});
 var O = board.create('point',[0, 0],{visible:false, fixed:true});
