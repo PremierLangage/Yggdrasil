@@ -21,8 +21,8 @@ var OV = board.create('arrow',[O, V], {color:'orange'});
 var U = board.create('point',[ {{ux}} , {{uy}} ],{size:0,name:'u', fixed:true});
 var OU = board.create('arrow',[O, U], {color:'purple'});
 
-var pt1 = board.create('point', [0, 0], {visible: false, name: 'A'});
-var pt2 = board.create('point', [1, 1], {visible: false, name: 'B'});
+var pt1 = board.create('point', [0, 0], {visible: true, name: 'A'});
+var pt2 = board.create('point', [1, 1], {visible: true, name: 'B'});
 var vec = board.create('arrow',[pt1, pt2],{color:'blue'});
 ==
 
