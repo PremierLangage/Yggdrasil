@@ -23,7 +23,7 @@ automate1 = '''
     #initials
     1;2
     #accepting
-    3;4
+    2;4
     #alphabet
     a
     b
