@@ -3,8 +3,8 @@ extends = /model/math/input_eval.pl
 title = Base d'un sous-espace de $! \mathbb{R}_{2}[X] !$
 
 before ==
-x0, x1 = sampleinte(2, -2, 2)
-a =1
+x0, x1 = sampleint(2, -2, 2)
+a = 1
 b = choice([-1,1])
 n = 2
 m = 2
