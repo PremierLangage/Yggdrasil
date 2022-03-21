@@ -2,9 +2,9 @@ extends = /model/math/tuple.pl
 
 before ==
 n = param['n']
-A = rand_int_matrix_invertible(n,2,[],0,2,6)
+A = randmat_invertible(n,2,[],0,2,6)
 
-B = rand_int_matrix(n,1,2,[0])
+B = randmat(n,1,2,[0])
 
 sol = list(linsolve((A, B)))[0]
 sol_tex = latex(sol)
