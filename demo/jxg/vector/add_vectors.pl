@@ -12,7 +12,7 @@ while True:
     if abs(xsol)<6 and abs(ysol)<6 and (xsol,ysol)!=(0,0):
         break
 
-sol = [1, 2]
+sol = [vx-ux, vy-uy]
 ==
 
 attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
