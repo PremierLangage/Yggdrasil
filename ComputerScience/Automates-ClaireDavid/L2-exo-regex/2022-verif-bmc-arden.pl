@@ -11,7 +11,7 @@ answer_type = "simple-regex"
 
 alphabet = "a,b"
 
-automate1 = '''
+solution = '''
     #states
     1
     2
@@ -50,7 +50,8 @@ text ==
 On considère l'alphabet $!\Sigma= \\{ {{ alphabet }} \\}!$ .<br/>
 Donnez une expression reconnaissant le langage donné par l'automate ci-dessus <br/>
 Cet exercice permet de vérifier votre résultat de l'application de BMC ou Arden sur l'automate du partiel 2022.<br/>
- <strong>Attention, cela ne permet pas de vérifier que vous appliquez la méthode choisie correctement. En cas de doute, rapprochez-vous de vos enseignants.</strong><br>
+ <strong>Attention, cela ne permet pas de vérifier que vous appliquez la méthode choisie correctement.
+  En cas de doute, rapprochez-vous de vos enseignants.</strong><br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
 Il vous reste {{ maxattempt - attempt }} tentative(s) !
