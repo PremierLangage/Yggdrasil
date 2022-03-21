@@ -1,4 +1,4 @@
-extends = /model/jxg/vecror.pl
+extends = /model/jxg/vector.pl
 
 title = Addition de vecteurs
 
