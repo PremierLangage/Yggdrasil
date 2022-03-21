@@ -11,9 +11,6 @@ while True:
     xsol,ysol=ux+vx,uy+vy
     if abs(xsol)<6 and abs(ysol)<6 and (xsol,ysol)!=(0,0):
         break
-
-xsol = 1
-ysol = 2
 ==
 
 script ==
