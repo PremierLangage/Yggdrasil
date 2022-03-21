@@ -1,4 +1,6 @@
 from jxginput import JXGInput
+from jinja2 import Template
+from math import hypot
 
 class JXGVector(JXGInput):
 
