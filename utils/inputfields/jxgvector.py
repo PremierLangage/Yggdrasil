@@ -6,12 +6,11 @@ class JXGVector(JXGInput):
 
     def __init__(self, **kwargs):
         self.selector = 'c-math-drawer'
-        self.decorator = 'JXGVector'
         self.pointnames = ['A', 'B']
         self.evalparam = {}
         super().__init__(**kwargs)
-        self.decorator = 'JXGInput'
-        
+        self.decorator = 'JXGVector'
+
     def eval(self):
         """
         Evaluate the input field
