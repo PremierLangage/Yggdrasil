@@ -19,7 +19,7 @@ var O = board.create('point',[0, 0],{visible:false, fixed:true});
 var V = board.create('point',[ {{vx}} , {{vy}} ],{size:0,name:'v', fixed:true});
 var OV = board.create('arrow',[O, V], {color:'orange'});
 var U = board.create('point',[ {{ux}} , {{uy}} ],{size:0,name:'u', fixed:true});
-var OU = board.create('arrow',[O, U], {color:'green'});
+var OU = board.create('arrow',[O, U], {color:'purple'});
 
 var pt1 = board.create('point', [0, 0], {visible: false, name: 'A'});
 var pt2 = board.create('point', [0, 0], {visible: false, name: 'B'});
