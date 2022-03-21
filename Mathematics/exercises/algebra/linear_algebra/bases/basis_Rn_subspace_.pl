@@ -1,7 +1,7 @@
 extends = /model/math/input_eval.pl
 
 before ==
-from randsympy randmat_fullrank
+from randsympy import randmat_fullrank
 n = param['n']
 nbeq = param['nbeq']
 m = n-nbeq
