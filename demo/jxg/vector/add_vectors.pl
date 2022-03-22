@@ -3,13 +3,13 @@ extends = /model/jxg/vector.pl
 title = Addition de vecteurs
 
 before ==
-from math import norm
+from math import hypoth
 
 while True:
     u1x, u1y, u2x, u2y = [randint(0, 5) for _ in range(4)]
     v1x, v1y, v2x, v2y = [randint(0, 5) for _ in range(4)]
-    xsol,ysol=ux+vx,uy+vy
-    if abs(xsol)<6 and abs(ysol)<6 and (xsol,ysol)!=(0,0):
+    sol = [u2x - u1x + v2x - v1x, u2y - u1y + v2y - v1y]
+    if hypot(*sol) < 7 and hypot(*sol) > 2:
         break
 
 sol = [ux + vx, uy + vy]
