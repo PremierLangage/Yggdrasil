@@ -30,11 +30,11 @@ class JXGInput(Component):
         """ 
         if self.score == 100:
             script = """
-            psol.setAttribute({color: 'green'});
+            pt.setAttribute({color: 'green'});
             """
         else:
             script = """
-            psol.setAttribute({color: 'red'});
+            pt.setAttribute({color: 'red'});
             board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
             """
         self.add_script(script, {'xsol':self.sol[0], 'ysol':self.sol[1]})
