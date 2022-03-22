@@ -3,6 +3,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 # API documentation
+
 apidoc == #|json|
 {
     "name": "textinput",
@@ -26,7 +27,7 @@ apidoc == #|json|
             "type": "str",
             "default": "",
             "description": "Nom du point à placer."
-        }
+        },
         "tol": {
             "type": "float",
             "default": "0.1",
