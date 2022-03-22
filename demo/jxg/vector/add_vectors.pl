@@ -22,10 +22,10 @@ jxgscript ==
 board.create('grid',[],{gridX:1,gridY:1});
 var V1 = board.create('point',[ {{v1x}} , {{v1y}} ],{visible:false, name:'v1'});
 var V2 = board.create('point',[ {{v2x}} , {{v2y}} ],{size:0,name:'v'});
-var V = board.create('arrow',[V1, V2], {color:'orange'});
+var V = board.create('arrow',[V1, V2], {color:'orange', lastArrow: {type: 2, size: 6}}});
 var U1 = board.create('point',[ {{u1x}} , {{u1y}} ],{visible:false, name:'u1'});
 var U2 = board.create('point',[ {{u2x}} , {{u2y}} ],{size:0,name:'u'});
-var U = board.create('arrow',[U1, U2], {color:'purple'});
+var U = board.create('arrow',[U1, U2], {color:'purple', lastArrow: {type: 2, size: 6}}});
 
 var pt1 = board.create('point', [0, 0], {visible: true, name: 'A', size: 0.5, withLabel: false, snapToGrid: true});
 var pt2 = board.create('point', [1, 1], {visible: true, name: 'B', size: 0.5, withLabel: false, snapToGrid: true});
