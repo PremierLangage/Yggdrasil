@@ -6,8 +6,10 @@ before ==
 from math import hypot
 
 while True:
-    u1x, u1y, u2x, u2y = [randint(0, 5) for _ in range(4)]
-    v1x, v1y, v2x, v2y = [randint(0, 5) for _ in range(4)]
+    u1x, u2x = [randint(-5, 0) for _ in range(2)]
+    u1y, u2y = [randint(0, 5) for _ in range(2)]
+    v1x, v2x = [randint(-5, 0) for _ in range(2)]
+    v1y, v2y = [randint(0, 5) for _ in range(2)]
     sol = [u2x - u1x + v2x - v1x, u2y - u1y + v2y - v1y]
     if hypot(*sol) < 7 and hypot(*sol) > 2:
         break
