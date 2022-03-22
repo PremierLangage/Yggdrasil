@@ -17,7 +17,6 @@ while True:
 
 attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
 
-
 jxgscript == #|js|
 board.create('grid',[],{gridX:1,gridY:1});
 var V1 = board.create('point',[ {{v1x}} , {{v1y}} ],{visible:false, name:'v1'});
@@ -32,9 +31,6 @@ var pt2 = board.create('point', [-1, -3], {color:'blue', name: 'B', size: 0.5, w
 var vec = board.create('segment',[pt1, pt2],{color:'blue', lastArrow: {type: 2, size: 6}});
 ==
 
-
 question ==
 On considère deux vecteurs $! \vec{u} !$ et  $! \vec{v} !$ représentés graphiquement ci-dessous. Modifier le vecteur bleu de façon à ce qu'il représente le vecteur $! \vec{u} + \vec{v} !$ . 
 ==
-
-
