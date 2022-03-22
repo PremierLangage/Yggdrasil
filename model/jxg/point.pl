@@ -116,7 +116,7 @@ apidoc == #|json|
             "type": "str",
             "default": "",
             "description": "Nom du point à placer."
-        }
+        },
         "tol": {
             "type": "float",
             "default": "0.1",
