@@ -3,11 +3,11 @@ extends = /model/jxg/vector.pl
 title = Addition de vecteurs
 
 before ==
+from math import norm
+
 while True:
-    ux = randint(-5,5,[-1,0,1])
-    uy = randint(-5,5,[-1,0,1])
-    vx = randint(-5,5,[-1,0,1])
-    vy = randint(-5,5,[-1,0,1])
+    u1x, u1y, u2x, u2y = [randint(0, 5) for _ in range(4)]
+    v1x, v1y, v2x, v2y = [randint(0, 5) for _ in range(4)]
     xsol,ysol=ux+vx,uy+vy
     if abs(xsol)<6 and abs(ysol)<6 and (xsol,ysol)!=(0,0):
         break
