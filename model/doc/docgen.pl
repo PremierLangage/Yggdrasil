@@ -5,23 +5,34 @@ builder =@ /builder/before.py
 # API documentation
 apidoc == #|json|
 {
-    "name": "input_eval",
+    "name": "textinput",
     "keys": {
-        "evaluator": {
+        "sol": {
+            "type": "lst[float, float]",
+            "default": "",
+            "description": "Coordonnées point solution."
+        },
+        "attributes": {
+            "type": "dict",
+            "default": "{}",
+            "description": "Paramètres du panneau graphiqe interactif."
+        },
+        "jxgscript": {
             "type": "str",
             "default": "",
-            "description": "Script Python permettant d'évaluer la réponse de l'exercice."
+            "description": "Script JSXGraph."
         },
-        "score": {
-            "type": "int",
-            "default": "",
-            "description": "Score de l'exercice. Il doit être produit par le script evaluator."
-        },
-        "feedback": {
+        "pointname": {
             "type": "str",
             "default": "",
-            "description": "Message d'avertissement ou d'erreur. Il doit être produit par le script evaluator."
+            "description": "Nom du point à placer."
         }
+        "tol": {
+            "type": "float",
+            "default": "0.1",
+            "description": "Erreur maximum (en distance euclidienne) pour considérer une réponse comme correcte."
+        }
+
     }
 }
 ==
