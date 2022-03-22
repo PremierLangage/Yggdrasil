@@ -27,8 +27,8 @@ var U1 = board.create('point',[ {{u1x}} , {{u1y}} ],{visible:false, name:'u1'});
 var U2 = board.create('point',[ {{u2x}} , {{u2y}} ],{size:0,name:'u'});
 var U = board.create('segment',[U1, U2], {color:'purple', lastArrow: {type: 2, size: 6}});
 
-var pt1 = board.create('point', [0, 0], {visible: true, name: 'A', size: 0.5, withLabel: false, snapToGrid: true});
-var pt2 = board.create('point', [1, 1], {visible: true, name: 'B', size: 0.5, withLabel: false, snapToGrid: true});
+var pt1 = board.create('point', [0, 0], {color:'blue', name: 'A', size: 0.5, withLabel: false, snapToGrid: true});
+var pt2 = board.create('point', [1, 1], {color:'blue', name: 'B', size: 0.5, withLabel: false, snapToGrid: true});
 var vec = board.create('segment',[pt1, pt2],{color:'blue', lastArrow: {type: 2, size: 6}});
 ==
 
