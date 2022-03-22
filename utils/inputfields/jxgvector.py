@@ -29,13 +29,13 @@ class JXGVector(JXGInput):
         """
         Display visual feedback.
         """
-        x1, y1 = self.get_point(self.pointnames[1])
         if self.score == 100:
             script = """
             pt1.setAttribute({color: 'green'});
             pt2.setAttribute({color: 'green'});
             vec.setAttribute({color: 'green'});
             """
+            self.add_script(script)
         else:
             script = """
             pt1.setAttribute({color: 'red'});
@@ -43,4 +43,4 @@ class JXGVector(JXGInput):
             vec.setAttribute({color: 'red'});
             board.create('segment',[pt1, [{{x1}} + {{x}}, {{y1}} + {{y}}]],{color:'green', lastArrow: {type: 2, size: 6}});
             """
-        self.add_script(script, {'x':self.sol[0], 'y':self.sol[1], 'x1':x1, 'y1':y1})
+            self.add_script(script, {'x':self.sol[0], 'y':self.sol[1], 'x1':x1, 'y1':y1})
