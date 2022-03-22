@@ -34,7 +34,7 @@ var vec = board.create('segment',[pt1, pt2],{color:'blue', lastArrow: {type: 2, 
 
 
 question ==
-On considère deux vecteurs u et v représentés graphiquement ci-dessous. On pose w=2u−12v. Cliquer à l'emplacement de l'extrémité du vecteur w. 
+On considère deux vecteurs $! \vec{u} !$ et  $! \vec{v} !$ représentés graphiquement ci-dessous. Modifier le vecteur bleu de façon à ce qu'ilCliquer à l'emplacement de l'extrémité du vecteur w. 
 ==
 
 
