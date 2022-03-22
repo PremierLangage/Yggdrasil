@@ -28,7 +28,8 @@ class JXGVector(JXGInput):
     def display_feedback(self):
         """
         Display visual feedback.
-        """ 
+        """
+        x1, y1 = self.get_point(self.pointnames[1])
         if self.score == 100:
             script = """
             pt1.setAttribute({color: 'green'});
@@ -36,7 +37,6 @@ class JXGVector(JXGInput):
             vec.setAttribute({color: 'green'});
             """
         else:
-            x1, y1 = self.get_point(self.pointnames[1])
             script = """
             pt1.setAttribute({color: 'red'});
             pt2.setAttribute({color: 'red'});
