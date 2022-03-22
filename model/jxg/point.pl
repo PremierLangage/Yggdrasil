@@ -63,7 +63,7 @@ function getMouseCoords(e) {
 
 function down(e) {
     let coords = getMouseCoords(e);
-    psol.setPosition(JXG.COORDS_BY_USER,[coords.usrCoords[1], coords.usrCoords[2]]);
+    pt.setPosition(JXG.COORDS_BY_USER,[coords.usrCoords[1], coords.usrCoords[2]]);
 }
 
 board.on('down', down)
