@@ -1,4 +1,4 @@
-from components import Component
+from jxginput import JXGInput
 from jinja2 import Template
 from math import hypot
 
