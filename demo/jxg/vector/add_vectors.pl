@@ -3,7 +3,7 @@ extends = /model/jxg/vector.pl
 title = Addition de vecteurs
 
 before ==
-from math import hypoth
+from math import hypot
 
 while True:
     u1x, u1y, u2x, u2y = [randint(0, 5) for _ in range(4)]
