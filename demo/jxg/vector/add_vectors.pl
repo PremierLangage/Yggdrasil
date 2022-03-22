@@ -11,8 +11,6 @@ while True:
     sol = [u2x - u1x + v2x - v1x, u2y - u1y + v2y - v1y]
     if hypot(*sol) < 7 and hypot(*sol) > 2:
         break
-
-sol = [ux + vx, uy + vy]
 ==
 
 attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
