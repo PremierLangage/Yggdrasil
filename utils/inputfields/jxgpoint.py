@@ -2,7 +2,7 @@ from components import Component
 from jinja2 import Template
 from math import hypot
 
-class JXGInput(Component):
+class JXGPoint(JXGInput):
 
     def __init__(self, **kwargs):
         self.selector = 'c-math-drawer'
