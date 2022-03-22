@@ -75,3 +75,37 @@ style.jxgcss ==
 }
 </style>
 ==
+
+apidoc == #|json|
+{
+    "name": "textinput",
+    "keys": {
+        "sol": {
+            "type": "lst[float, float]",
+            "default": "",
+            "description": "Coordonnées du vecteur solution."
+        },
+        "attributes": {
+            "type": "dict",
+            "default": "{}",
+            "description": "Paramètres du panneau graphiqe interactif."
+        },
+        "jxgscript": {
+            "type": "str",
+            "default": "",
+            "description": "Script JSXGraph."
+        },
+        "pointnames": {
+            "type": "lst[str, str]",
+            "default": "",
+            "description": "Noms des points extrémités du vecteur à construire."
+        }
+        "tol": {
+            "type": "float",
+            "default": "0.1",
+            "description": "Erreur maximum (en norme euclidienne) pour considérer une réponse comme correcte."
+        }
+
+    }
+}
+==
