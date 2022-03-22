@@ -97,15 +97,10 @@ apidoc == #|json|
 {
     "name": "textinput",
     "keys": {
-        "xsol": {
-            "type": "float",
+        "sol": {
+            "type": "lst[float, float]",
             "default": "",
-            "description": "Abscisse du point solution."
-        },
-        "ysol": {
-            "type": "float",
-            "default": "",
-            "description": "Ordonnée du point solution."
+            "description": "Coordonnées point solution."
         },
         "attributes": {
             "type": "dict",
