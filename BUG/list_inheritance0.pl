@@ -4,9 +4,8 @@
 
 title =
 
-keylist % [1, 2]
 
-keylist % [1, 2]
+keylist = [1, 2]
 
 before ==
 
