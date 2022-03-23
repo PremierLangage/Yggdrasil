@@ -5,7 +5,7 @@
 title =
 
 
-top.keylist % [1, 2]
+top.keylist % {"1" : 2}
 
 before ==
 
