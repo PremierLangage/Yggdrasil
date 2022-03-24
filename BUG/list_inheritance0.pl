@@ -12,6 +12,7 @@ before ==
 
 text ==
 {{ keylist }}
+{{ __extends }}
 ==
 
 form ==
