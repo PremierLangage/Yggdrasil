@@ -4,7 +4,7 @@
 
 title =
 
-keylist % [1]
+keylist = [1]
 
 before ==
 
