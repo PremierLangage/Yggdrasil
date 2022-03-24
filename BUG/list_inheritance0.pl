@@ -2,8 +2,8 @@
 @ /grader/evaluator.py [grader.py]
 @ /utils/sandboxio.py
 
-extends = list_inheritance0.pl
-extends = listA.pl
+extends = A.pl
+extends = B.pl
 
 title =
 
