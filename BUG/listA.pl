@@ -1,2 +1,2 @@
 
-keylist = [0]
+keylist % [0]
