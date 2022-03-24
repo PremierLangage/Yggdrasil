@@ -1,2 +1,2 @@
-
-keylist % [0]
+extends = listP1.pl
+extends = listP2.pl
