@@ -11,7 +11,7 @@ before ==
 ==
 
 text ==
-{{keylist }}
+{{ keylist }}
 ==
 
 form ==
