@@ -4,15 +4,14 @@
 
 title =
 
-top.keylist % {"3" : 2}
-top.keylist % {"1" : 2}
+keylist = [1]
 
 before ==
 
 ==
 
 text ==
-{{ top.keylist }}
+{{keylist }}
 ==
 
 form ==
