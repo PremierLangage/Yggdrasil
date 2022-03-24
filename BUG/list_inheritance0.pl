@@ -2,9 +2,10 @@
 @ /grader/evaluator.py [grader.py]
 @ /utils/sandboxio.py
 
-title =
+extends = list_inheritance0.pl
+extends = listA.pl
 
-keylist = [1]
+title =
 
 before ==
 
