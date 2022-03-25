@@ -5,7 +5,7 @@ from sympy import O, series, sin, cos
 var('x')
 f = choice([sin(x), cos(x)])
 n = randint(2, 3)
-sol = series(f, x, 0, n+1).as_expr()
+sol = series(f, x, 0, n+1).removeO()
 ==
 
 equality = ""
