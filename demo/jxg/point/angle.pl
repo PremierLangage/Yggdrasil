@@ -2,8 +2,7 @@ extends = /model/jxg/point.pl
 
 before ==
 angle = choice([pi/4, pi/2, 3*pi/4, pi, 3*pi/2])
-xsol = cos(angle).evalf()
-ysol = sin(angle).evalf()
+sol = [cos(angle).evalf(), sin(angle).evalf()]
 ==
 
 question ==
