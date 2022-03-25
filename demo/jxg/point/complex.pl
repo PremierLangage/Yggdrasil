@@ -10,7 +10,8 @@ question ==
 Placer le point $! M !$ d'affixe $! {{ z|latex }} !$ dans le plan ci-dessous.
 ==
 
-attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
+attributes.showNavigation = False
+attributes.boundingbox = [-6, 6, 6, -6]
 
 tol = 0.2
 
