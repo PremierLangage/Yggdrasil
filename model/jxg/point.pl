@@ -72,7 +72,7 @@ board.on('down', down)
 tplpage =@ /model/tplpage/basicmath.html
 
 evaluator ==
-input.sol = [xsol, ysol]
+input.sol = sol
 score = input.eval()
 input.display_feedback()
 input.disable()
