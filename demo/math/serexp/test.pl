@@ -13,3 +13,7 @@ equality = ""
 question ==
 DL de $! {{ f|latex }} !$ à l'ordre {{ n }}
 ==
+
+embed ==
+# + o({{ x }}^{{ n }})
+==
