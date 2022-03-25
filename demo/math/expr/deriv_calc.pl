@@ -9,7 +9,7 @@ f = g * h
 sol = diff(f, x)
 ==
 
-equality = "UpToConstant"
+equality = ""
 
 question ==
 Calculer la dérivée de la fonction 
