@@ -1,9 +1,9 @@
 extends = /model/math/expr.pl
 
 before ==
-from sympy import O
+from sympy import Order
 var('x')
-sol = 1 + x**2 + O(x**3)
+sol = 1 + x**2 + Order(x**3)
 ==
 
 equality = ""
