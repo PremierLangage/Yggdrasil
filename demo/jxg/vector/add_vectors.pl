@@ -21,7 +21,7 @@ jxgscript == #|js|
 board.create('grid',[],{gridX:1,gridY:1});
 var V1 = board.create('point',[ {{v1x}} , {{v1y}} ],{visible:false, name:'v1', fixed:true});
 var V2 = board.create('point',[ {{v2x}} , {{v2y}} ],{size:0,name:'v', fixed:true});
-var V = board.create('segment',[V1, V2], {color:'orange', lastArrow: {type: 2, size: 6, isDraggable:true}});
+var V = board.create('segment',[[ {{v1x}} , {{v1y}}, [ {{v2x}} , {{v2y}} ] ]], {color:'orange', lastArrow: {type: 2, size: 6}});
 var U1 = board.create('point',[ {{u1x}} , {{u1y}} ],{visible:false, name:'u1'});
 var U2 = board.create('point',[ {{u2x}} , {{u2y}} ],{size:0,name:'u'});
 var U = board.create('segment',[U1, U2], {color:'purple', lastArrow: {type: 2, size: 6}});
