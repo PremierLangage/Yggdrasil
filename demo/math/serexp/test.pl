@@ -1,13 +1,15 @@
 extends = /model/math/expr.pl
 
 before ==
-from sympy import O
+from sympy import O, series, sin, cos
 var('x')
-sol = 1 + x**2 + O(x**3)
+f = choice([sin, cos])
+n = randint(2, 3)
+sol = series(f, x, 0, n)
 ==
 
 equality = ""
 
 question ==
-Calculer la dérivée de la fonction 
+DL de $! {{ f|latex }} !$ à l'ordre {{ n }}
 ==
