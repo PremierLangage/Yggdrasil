@@ -12,3 +12,13 @@ expr = "x"
 question ==
 Soit $! x \in {{ sol|latex }} !$. En déduire un encadrement de $!x !$.
 ==
+
+style.local ==
+<style>
+.mq-editable-field {
+  min-width: 1em; 
+  font-size:14pt;
+  padding: 0.2em;
+}
+</style>
+==
