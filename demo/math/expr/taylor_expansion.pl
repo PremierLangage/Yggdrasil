@@ -1,7 +1,7 @@
 extends = /model/math/expr.pl
 
 before ==
-from sympy import O, series, sin, cos, exp
+from sympy import O, series
 var('x')
 f = choice([sin(x), cos(x), exp(x), 1/(1-x)])
 n = randint(5, 6)
