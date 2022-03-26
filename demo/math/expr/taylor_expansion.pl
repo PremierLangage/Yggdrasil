@@ -18,4 +18,4 @@ embed ==
 # + o({{ x }}^{{ n }})
 ==
 
-latexsettings.order = 'lex'
+latexsettings.order = 'ilex'
