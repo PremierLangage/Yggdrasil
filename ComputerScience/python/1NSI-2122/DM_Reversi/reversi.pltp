@@ -20,34 +20,16 @@ Il se joue sur un tablier unicolore de 64 cases, 8 sur 8, appelé othellier. Les
 
 ### Exemple
 
-Voici un exemple de partie où l’on a choisi de jouer avec des allumettes, avec N = 21. 
-On fixe k = 3, ce qui signifie que chaque joueur peut retirer entre 1 et 3 allumettes :
+Noir commence toujours la partie. Puis les joueurs jouent à tour de rôle, chacun étant tenu de capturer des pions adverses 
+lors de son mouvement. Si un joueur ne peut pas capturer de pion(s) adverse(s), la partie s'arrête. Le gagnant en fin de partie 
+est celui qui possède le plus de pions.
 
-Situation initiale, la joueuse 1 commence, il y a 21 allumettes :
-![21 allumettes](https://igm.univ-mlv.fr/~ameyer/pr1/img/21/21-allumettes-1.png)
-La joueuse 1 a pris 1 allumette, il en reste 21 − 1 = 20 :
-![20 allumettes](https://igm.univ-mlv.fr/~ameyer/pr1/img/21/20-allumettes-2.png)
-Le joueur 2 a pris 2 allumettes, il en reste 20 − 2 = 18 ; 
-![18 allumettes](https://igm.univ-mlv.fr/~ameyer/pr1/img/21/18-allumettes-1.png)
-La joueuse 1 a pris 2 allumettes, il en reste 18 − 2 = 16 ;
-![16 allumettes](https://igm.univ-mlv.fr/~ameyer/pr1/img/21/16-allumettes-2.png)
-Le joueur 2 a pris 3 allumettes, il en reste 16 − 3 = 13 ;
-![13 allumettes](https://igm.univ-mlv.fr/~ameyer/pr1/img/21/13-allumettes-1.png)
-La joueuse 1 a pris 1 allumette, il en reste 13 − 1 = 12 ;
-![12 allumettes](https://igm.univ-mlv.fr/~ameyer/pr1/img/21/12-allumettes-2.png)
-Le joueur 2 a pris 1 allumette, il en reste 12 − 1 = 11 ;
-![11 allumettes](https://igm.univ-mlv.fr/~ameyer/pr1/img/21/11-allumettes-1.png)
-La joueuse 1 a pris 3 allumettes, il en reste 11 − 3 = 8 ;
-![8 allumettes](https://igm.univ-mlv.fr/~ameyer/pr1/img/21/8-allumettes-2.png)
-Le joueur 2 a pris 2 allumettes, il en reste 8 − 2 = 6 ;
-![6 allumettes](https://igm.univ-mlv.fr/~ameyer/pr1/img/21/6-allumettes-1.png)
-La joueuse 1 a pris 2 allumettes, il en reste 6 − 2 = 4 ;
-![4 allumettes](https://igm.univ-mlv.fr/~ameyer/pr1/img/21/4-allumettes-2.png)
-Le joueur 2 a pris 1 allumette, il en reste 4 − 1 = 3 ;
-![3 allumettes](https://html.brunache.ovh/3%20alumettes.png)
-La joueuse 1 a pris 2 allumettes, il en reste 3 − 2 = 1.
+La capture de pions survient lorsqu'un joueur place un de ses pions à l'extrémité d'un alignement de pions adverses 
+contigus et dont l'autre extrémité est déjà occupée par un de ses propres pions. Les alignements considérés peuvent 
+être une colonne, une ligne, ou une diagonale. Si le pion nouvellement placé vient fermer plusieurs alignements, il 
+capture tous les pions adverses des lignes ainsi fermées. La capture se traduit par le retournement des pions capturés.
+ Ces retournements n'entraînent pas d'effet de capture en cascade : seul le pion nouvellement posé est pris en compte.
 
-Dans cet exemple, le joueur 2 est obligé de prendre la dernière allumette, il a donc perdu.
 
 ## Travail demandé
 
