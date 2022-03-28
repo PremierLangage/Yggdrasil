@@ -71,7 +71,7 @@ et lancez le jeu avec la commande.
 ==
 
 # Fonctions de base 
-# @ init_plateau.pl
+@ affiche_plateau.pl
 
 
 reserve==
