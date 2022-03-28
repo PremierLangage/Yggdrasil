@@ -33,7 +33,35 @@ capture tous les pions adverses des lignes ainsi fermées. La capture se traduit
 
 ## Travail demandé
 
-La structure de données est la suivante. Le jeu est intégralement modélisé par un dictionnaire
+La structure de données est la suivante. Le jeu est intégralement modélisé par un dictionnaire 
+
+```
+jeu = {
+    "plateau": [
+        [-1, -1, -1, 0, 1, -1, -1, -1],
+        [-1, -1, -1, 0, 1, 1, -1, -1],
+        ...
+        ...
+        [-1, -1, -1, -1, -1, -1, -1, -1]
+        ],
+    "joueur actif": 0,
+    "joueurs":  [{
+            "nom": "joueur1",
+            "couleur": "white",
+            "score": 2 
+        },
+        {
+            "nom": "joueur2",
+            "couleur": "red",
+            "score": 2 
+        }],
+    "parametres":{
+        'framerate': 10,
+        'plateau' : 8,
+        'taille_fenetre' : 640
+        }
+    }
+```
 
 Réaliser toutes les étapes.
 
