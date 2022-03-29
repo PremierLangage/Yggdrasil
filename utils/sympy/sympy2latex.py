@@ -10,7 +10,7 @@ class CustomLatexPrinter(LatexPrinter):
     It overrides some methods and adds some settings.
     """
     printmethod = ""
-    
+
     def __init__(self, settings=None):
         custom_settings = {}
         custom_settings['interv_rev_brack'] = settings.pop('interv_rev_brack', False)
@@ -19,7 +19,7 @@ class CustomLatexPrinter(LatexPrinter):
 
     def emptyPrinter(self, expr):
         try:
-            return getattr(expr, "_latex")(self, **kwargs)
+            return getattr(expr, "_latex")(self)
         except:
             return str(expr)
 
