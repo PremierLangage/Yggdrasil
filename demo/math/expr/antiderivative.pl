@@ -13,4 +13,4 @@ Déterminer une primitive de $! f \mapsto \displaystyle {{ f|latex }} !$.
 
 equality = "UpToConstant"
 
-message.NotEqualUpToConstant = La réponse n'est pas une primitive.
+message.NotEqual = "La réponse n'est pas une primitive."
