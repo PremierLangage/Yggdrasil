@@ -17,10 +17,6 @@ class CustomLatexPrinter(LatexPrinter):
         LatexPrinter.__init__(self, settings)
         self.custom_settings = custom_settings
 
-    def emptyPrinter(self, expr):
-        return expr._latex()
-
-
     def _print_Poly(self, poly):
         """
         Return a LaTeX code for a Poly object.
@@ -102,8 +98,14 @@ class CustomLatexPrinter(LatexPrinter):
             return r"\left%s%s, %s\right%s" % \
                     (left, self._print(i.start), self._print(i.end), right)
 
+    def _print_ImaginaryUnit(self, expr):
+        return self._settings['imaginary_unit_latex']
+
     def _print_Infinity(self, expr):
         return r"+\infty"
+
+    def _print_NegativeInfinity(self, expr):
+        return r"-\infty"
 
 def latex(expr, **settings):
     """
