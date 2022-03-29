@@ -17,7 +17,10 @@ class CustomLatexPrinter(LatexPrinter):
         self.custom_settings = custom_settings
 
     def emptyPrinter(self, expr):
-        return str(expr)
+        try:
+            return getattr(expr, "_latex")(self, **kwargs)
+        except:
+            return str(expr)
 
     def _print_Poly(self, poly):
         """
