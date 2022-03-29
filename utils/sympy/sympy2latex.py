@@ -18,10 +18,8 @@ class CustomLatexPrinter(LatexPrinter):
         self.custom_settings = custom_settings
 
     def emptyPrinter(self, expr):
-        try:
-            return expr._latex()
-        except:
-            return str(expr)
+        return expr._latex()
+
 
     def _print_Poly(self, poly):
         """
