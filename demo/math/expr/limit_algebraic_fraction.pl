@@ -5,7 +5,7 @@ from sympy import Limit
 var('x')
 f, g = sample([2*x+1, x+2, 2*x**2+1, x**2+1], 2)
 lim = Limit(f/g, x, -oo)
-sol = lim.doit()
+sol = I
 ==
 
 question ==
@@ -13,7 +13,7 @@ Déterminer la limite suivante.
 ==
 
 prefix ==
-$!  \displaystyle {{ lim|latex }} =  !$
+$!  \displaystyle {{ lim|latex }} = !$
 ==
 
 keypad = ["+infty", "-infty"]
