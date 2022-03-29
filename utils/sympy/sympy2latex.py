@@ -19,7 +19,7 @@ class CustomLatexPrinter(LatexPrinter):
 
     def emptyPrinter(self, expr):
         try:
-            expr._latex()
+            return expr._late()
         except:
             return str(expr)
 
