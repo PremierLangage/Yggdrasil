@@ -10,6 +10,8 @@ class CustomLatexPrinter(LatexPrinter):
     It overrides some methods and adds some settings.
     """
 
+    print_method = ""
+
     def __init__(self, settings=None):
         custom_settings = {}
         custom_settings['interv_rev_brack'] = settings.pop('interv_rev_brack', False)
