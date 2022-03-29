@@ -10,7 +10,6 @@ sol = lim.doit()
 
 question ==
 Déterminer la limite suivante.
-$$ {{ test|latex }} $$
 ==
 
 prefix ==
