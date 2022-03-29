@@ -2,8 +2,8 @@ extends = /model/math/expr.pl
 
 before ==
 from sympy import integrate
-x = Symbol('x')
-f = choice([sin(x), cos(x),ln(x),exp(x)]) 
+var('x')
+f = choice([sin(x), cos(x), ln(x), exp(x)]) 
 sol = integrate(f, x) 
 ==
 
