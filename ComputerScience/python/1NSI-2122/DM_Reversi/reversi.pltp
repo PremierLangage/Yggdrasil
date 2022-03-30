@@ -71,6 +71,7 @@ et lancez le jeu avec la commande.
 # Fonctions de base 
 @ initialise_jeu.pl
 @ coups_possibles.pl
+@ jouer_coup.pl
 
 
 
