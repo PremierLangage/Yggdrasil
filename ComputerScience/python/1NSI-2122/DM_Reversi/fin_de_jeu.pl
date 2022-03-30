@@ -13,7 +13,7 @@ True
 before== #|python| 
 from random import randint
 
-dico= {(randint(2,3),randint(3,8)):[(1, randint(-1,1)]}
+dico= {(randint(2,3),randint(3,8)):[(1, randint(-1,1))]}
 bool = False
 pltest += """
 >>> dico = {} #
