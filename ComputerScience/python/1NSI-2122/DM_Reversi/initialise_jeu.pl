@@ -7,7 +7,7 @@ title= Initialise le jeu
 doctest==
     la fonction initialise_jeu(taille) initialise le dictionnaire jeu tel que défini dans la page d'accueil.
     Deux joueurs appelés "joueur1" et "joueur2".
-    Un plateau de taille par taille.
+    Un plateau de taille par taille. On fera l'hypothèse que taille est pair.
 
     exemple:
     >>> initialise_jeu(4)
