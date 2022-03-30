@@ -94,7 +94,7 @@ def initialise_jeu(taille):
 
 def coups_possibles(jeu):
     plateau = jeu['plateau']
-    joueur_actif = jeu['joueur_actif']
+    joueur_actif = jeu['joueur actif']
     dico = {}
     autrejoueur = 1 - joueur_actif
     directions = [(-1, -1),(-1, 0),(-1, 1),(0, -1),(0, 1),(1, -1),(1, 0),(1, 1)]
