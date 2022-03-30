@@ -1,12 +1,64 @@
-
 @ /builder/before.py [builder.py]
 extends = func.pl
 
-funcname= jouer_coup
-title= Jouer le coup
+funcname= joueur_coup
+title= Joueur un coup
 
 pltest==
+>>> jeu = {
+... "plateau": [
+...     [-1, -1, -1, -1],
+...     [-1,  0,  1, -1],
+...     [-1,  1,  0, -1],
+...     [-1, -1, -1, -1]
+...     ],
+... "joueur actif": 0,
+... "joueurs":  [{
+...         "nom": "joueur1",
+...         "couleur": "white",
+...         "score": 2 
+...     },
+...     {
+...         "nom": "joueur2",
+...         "couleur": "red",
+...         "score": 2 
+...     }],
+... "parametres":{
+...     'framerate': 10,
+...     'plateau' : 4,
+...     'taille_fenetre' : 640
+...     }
+... } # 
+>>> coups_possibles(jeu)
+{(0, 2): [(1, 0)], (1, 3): [(0, -1)], (2, 0): [(0, 1)], (3, 1): [(-1, 0)]}
+>>> jeu = {
+... "plateau": [
+...     [-1, -1, -1, -1],
+...     [-1,  0,  0, -1],
+...     [-1,  1,  0, -1],
+...     [-1, -1, -1, -1]
+...     ],
+... "joueur actif": 0,
+... "joueurs":  [{
+...         "nom": "joueur1",
+...         "couleur": "white",
+...         "score": 2 
+...     },
+...     {
+...         "nom": "joueur2",
+...         "couleur": "red",
+...         "score": 2 
+...     }],
+... "parametres":{
+...     'framerate': 10,
+...     'plateau' : 4,
+...     'taille_fenetre' : 640
+...     }
+... } # 
+>>> coups_possibles(jeu)
+{(0, 2): [(1, 0)], (1, 3): [(0, -1)]}
 ==
+
 
 before== #|python| 
 from random import randint
@@ -40,50 +92,80 @@ def initialise_jeu(taille):
     jeu['plateau'][taille // 2 - 1][taille // 2 ] = 1
     return jeu
 
+def coups_possibles(jeu):
+    plateau = jeu['plateau']
+    joueur_actif = jeu['joueur actif']
+    dico = {}
+    autrejoueur = 1 - joueur_actif
+    directions = [(-1, -1),(-1, 0),(-1, 1),(0, -1),(0, 1),(1, -1),(1, 0),(1, 1)]
+    for i in range(len(plateau)):
+        for j in range(len(plateau)):
+            if plateau[i][j] != -1:
+                continue
+            for dir in directions:
+                k = 1
+                while -1 < i + k * dir[0] < len(plateau) and -1 < j + k * dir[1] < len(plateau) and plateau[i + k * dir[0]][j + k * dir[1]] == autrejoueur:
+                    k += 1
+                if k != 1 and plateau[i + k * dir[0]][j + k * dir[1]] ==joueur_actif:
+                    if (i,j) in dico:
+                        dico[(i,j)].append(dir)
+                    else:
+                        dico[(i,j)] = [dir]
+    return dico
+
 taille = randint(3,8) * 2
 jeu = initialise_jeu(taille)
-
-
+coups = coups_possibles(jeu)
 
 pltest += """
->>> initialise_jeu({})
+>>> jeu = {} #
+>>> coups_possibles(jeu)
 {}
-""".format(taille, jeu)
+""".format(jeu, coups)
 ==
+
 
 doctest==
-    la fonction initialise_jeu(taille) initialise le dictionnaire jeu tel que défini dans la page d'accueil.
-    Deux joueurs appelés "joueur1" et "joueur2".
-    Un plateau de taille par taille. On fera l'hypothèse que taille est pair.
+    la fonction joueur_coup(case, jeu) joue le coup dans la case donnée.
+    La case est un couple (tuple). 
+
+    Il modifie donc le plateau du jeu ainsi que le joueur actif.
 
     exemple:
-    >>> initialise_jeu(4)
-    {"plateau": [
-        [-1, -1, -1, -1],
-        [-1,  0,  1, -1],
-        [-1,  1,  0, -1],
-        [-1, -1, -1, -1]
-        ],
-    "joueur actif": 0,
-    "joueurs":  [{
-            "nom": "joueur1",
-            "couleur": "white",
-            "score": 2 
-        },
-        {
-            "nom": "joueur2",
-            "couleur": "red",
-            "score": 2 
-        }],
-    "parametres":{
-        'framerate': 10,
-        'plateau' : 4,
-        'taille_fenetre' : 640
+    >>> jeu = {
+        "plateau": [
+            [-1, -1, -1, -1],
+            [-1,  0,  1, -1],
+            [-1,  1,  0, -1],
+            [-1, -1, -1, -1]
+            ],
+        "joueur actif": 0,
+        "joueurs":  [{
+                "nom": "joueur1",
+                "couleur": "white",
+                "score": 2 
+            },
+            {
+                "nom": "joueur2",
+                "couleur": "red",
+                "score": 2 
+            }],
+        "parametres":{
+            'framerate': 10,
+            'plateau' : 4,
+            'taille_fenetre' : 640
+            }
         }
-    }
+    >>> jouer_coup((0,2), jeu)
+    >>> jeu['plateau']
+    [[-1, -1, -1, -1],
+    [-1,  0,  1, -1],
+    [ 0,  0,  0, -1],
+    [-1, -1, -1, -1]]
+    >>> jeu['joueur actif']
+    1
     
 ==
-
 
 
 
