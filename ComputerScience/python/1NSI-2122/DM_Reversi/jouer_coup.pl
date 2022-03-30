@@ -83,9 +83,14 @@ def jouer_coup(jeu, case, dico_coups_possibles):
 taille = randint(3,8) * 2
 jeu = initialise_jeu(taille)
 jeu_init = copy.deepcopy(jeu)
-coups = coups_possibles(jeu)
-coup = choice(list(coups.keys()))
-jouer_coup(jeu, coup, coups)
+coups1 = coups_possibles(jeu)
+coup1 = choice(list(coups.keys()))
+jouer_coup(jeu, coup1, coups1)
+jeu1 = copy.deepcopy(jeu)
+coups2 = coups_possibles(jeu)
+coup2 = choice(list(coups.keys()))
+jouer_coup(jeu, coup2, coups2)
+
 
 pltest += """
 >>> jeu = {} #
@@ -97,7 +102,15 @@ pltest += """
 {}
 >>> jeu['joueurs'][0]['score']
 {}
-""".format(jeu_init, coups, coup, jeu['plateau'], jeu['joueur actif'], jeu['joueurs'][0]['score'])
+>>> coups = {}
+>>> jouer_coup(jeu, {}, coups) #
+>>> jeu['plateau']
+{}
+>>> jeu['joueur actif']
+{}
+>>> jeu['joueurs'][0]['score']
+{}
+""".format(jeu_init, coups1, coup1, jeu1['plateau'], jeu1['joueur actif'], jeu1['joueurs'][0]['score'], coups2, coup2, jeu['plateau'], jeu['joueur actif'], jeu['joueurs'][0]['score'])
 ==
 
 
