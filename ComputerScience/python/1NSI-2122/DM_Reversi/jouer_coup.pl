@@ -1,8 +1,8 @@
 @ /builder/before.py [builder.py]
 extends = func.pl
 
-funcname= joueur_coup
-title= Joueur un coup
+funcname= jouer_coup
+title= Jouer un coup
 
 pltest==
 
@@ -102,7 +102,7 @@ pltest += """
 
 
 doctest==
-    la fonction joueur_coup(case, jeu, dico_coups_possibles) joue 
+    la fonction jouer_coup(case, jeu, dico_coups_possibles) joue 
     le coup dans la case donnée.
 
     La case est un couple (tuple). 
