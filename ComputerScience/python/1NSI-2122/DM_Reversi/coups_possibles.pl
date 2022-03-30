@@ -4,6 +4,62 @@ extends = func.pl
 funcname= coups_possibles
 title= Quels sont les coups possibles ?
 
+pltest==
+>>> jeu = {
+... "plateau": [
+...     [-1, -1, -1, -1],
+...     [-1,  0,  1, -1],
+...     [-1,  1,  0, -1],
+...     [-1, -1, -1, -1]
+...     ],
+... "joueur actif": 0,
+... "joueurs":  [{
+...         "nom": "joueur1",
+...         "couleur": "white",
+...         "score": 2 
+...     },
+...     {
+...         "nom": "joueur2",
+...         "couleur": "red",
+...         "score": 2 
+...     }],
+... "parametres":{
+...     'framerate': 10,
+...     'plateau' : 4,
+...     'taille_fenetre' : 640
+...     }
+... } # 
+>>> coups_possibles(jeu)
+[(0, 2), (1, 3), (2, 0), (3, 1)]
+>>> jeu = {
+... "plateau": [
+...     [-1, -1, -1, -1],
+...     [-1,  0,  0, -1],
+...     [-1,  1,  0, -1],
+...     [-1, -1, -1, -1]
+...     ],
+... "joueur actif": 0,
+... "joueurs":  [{
+...         "nom": "joueur1",
+...         "couleur": "white",
+...         "score": 2 
+...     },
+...     {
+...         "nom": "joueur2",
+...         "couleur": "red",
+...         "score": 2 
+...     }],
+... "parametres":{
+...     'framerate': 10,
+...     'plateau' : 4,
+...     'taille_fenetre' : 640
+...     }
+... } # 
+>>> coups_possibles(jeu)
+[(2, 0), (3, 1)]
+==
+
+
 before== #|python| 
 from random import randint
 
@@ -59,11 +115,14 @@ def coups_possibles(jeu):
 
 taille = randint(3,8) * 2
 jeu = initialise_jeu(taille)
+coups = coups_possibles(jeu,0)
 
 pltest += """
->>> initialise_jeu({})
+>>> jeu = initialise_jeu({})
+{} #
+>>> coups_possibles(jeu,0)
 {}
-""".format(taille, jeu)
+""".format(taille, jeu, coups)
 ==
 
 
@@ -101,60 +160,7 @@ doctest==
     
 ==
 
-pltest==
->>> jeu = {
-... "plateau": [
-...     [-1, -1, -1, -1],
-...     [-1,  0,  1, -1],
-...     [-1,  1,  0, -1],
-...     [-1, -1, -1, -1]
-...     ],
-... "joueur actif": 0,
-... "joueurs":  [{
-...         "nom": "joueur1",
-...         "couleur": "white",
-...         "score": 2 
-...     },
-...     {
-...         "nom": "joueur2",
-...         "couleur": "red",
-...         "score": 2 
-...     }],
-... "parametres":{
-...     'framerate': 10,
-...     'plateau' : 4,
-...     'taille_fenetre' : 640
-...     }
-... } # 
->>> coups_possibles(jeu)
-[(0, 2), (1, 3), (2, 0), (3, 1)]
->>> jeu = {
-... "plateau": [
-...     [-1, -1, -1, -1],
-...     [-1,  0,  0, -1],
-...     [-1,  1,  0, -1],
-...     [-1, -1, -1, -1]
-...     ],
-... "joueur actif": 0,
-... "joueurs":  [{
-...         "nom": "joueur1",
-...         "couleur": "white",
-...         "score": 2 
-...     },
-...     {
-...         "nom": "joueur2",
-...         "couleur": "red",
-...         "score": 2 
-...     }],
-... "parametres":{
-...     'framerate': 10,
-...     'plateau' : 4,
-...     'taille_fenetre' : 640
-...     }
-... } # 
->>> coups_possibles(jeu)
-[(2, 0), (3, 1)]
-==
+
 
 
 
