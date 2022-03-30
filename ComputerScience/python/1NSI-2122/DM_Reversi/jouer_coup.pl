@@ -126,8 +126,14 @@ pltest += """
 
 
 doctest==
-    la fonction joueur_coup(case, jeu) joue le coup dans la case donnée.
+    la fonction joueur_coup(case, jeu, dico_coups_possibles) joue 
+    le coup dans la case donnée.
+
     La case est un couple (tuple). 
+
+    dico_coups_possibles est le dictionnaire renvoyée par la fonction
+    précédente, il permet de savoir dans quelle direction on va retourner
+    les pions.
 
     Il modifie donc le plateau du jeu ainsi que le joueur actif.
 
