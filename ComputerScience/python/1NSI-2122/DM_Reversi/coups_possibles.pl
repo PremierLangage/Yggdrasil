@@ -8,23 +8,62 @@ doctest==
     Il s'agit donc d'une liste de tuples
 
     exemple:
-    
-    >>> coups_possibles(4, ['|', '|', '|', '|', '|'],3)
-    False
-    >>> coup_possible(3, ['|', '|', '|', '|', '|'],3)
-    True
-    >>> coup_possible(3, ['|', '|'],3)
-    False
+    >>> jeu = {
+        "plateau": [
+            [-1, -1, -1, -1],
+            [-1,  0,  1, -1],
+            [-1,  1,  0, -1],
+            [-1, -1, -1, -1]
+            ],
+        "joueur actif": 0,
+        "joueurs":  [{
+                "nom": "joueur1",
+                "couleur": "white",
+                "score": 2 
+            },
+            {
+                "nom": "joueur2",
+                "couleur": "red",
+                "score": 2 
+            }],
+        "parametres":{
+            'framerate': 10,
+            'plateau' : 4,
+            'taille_fenetre' : 640
+            }
+        }
+    >>> coups_possibles(jeu)
+    [(0,2),(1,3),(2,0),(3,1)]
     
 ==
 
 pltest==
->>> coup_possible(4, ['|', '|', '|', '|', '|'],3)
-False
->>> coup_possible(3, ['|', '|', '|', '|', '|'],3)
-True
->>> coup_possible(3, ['|', '|'],3)
-False
+>>> jeu = {
+        "plateau": [
+            [-1, -1, -1, -1],
+            [-1,  0,  1, -1],
+            [-1,  1,  0, -1],
+            [-1, -1, -1, -1]
+            ],
+        "joueur actif": 0,
+        "joueurs":  [{
+                "nom": "joueur1",
+                "couleur": "white",
+                "score": 2 
+            },
+            {
+                "nom": "joueur2",
+                "couleur": "red",
+                "score": 2 
+            }],
+        "parametres":{
+            'framerate': 10,
+            'plateau' : 4,
+            'taille_fenetre' : 640
+            }
+        } # 
+>>> coups_possibles(jeu)
+[(0,2),(1,3),(2,0),(3,1)]
 ==
 
 
