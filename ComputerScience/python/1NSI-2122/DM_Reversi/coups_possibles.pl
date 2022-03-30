@@ -126,13 +126,16 @@ pltest += """
 
 
 doctest==
-    la fonction coups_possibles(jeu) retourne la liste des coups possibles dans un dictionnaire.
-    Chaque clé est le couple (tuple) correspondant au coup possible et la valeur est la direction
-    dans laquelle le coup est possible (sous forme de couple).
-    Si la fonction renvoie le dictionnaire {(4,2):[(-1,0),(-1,1)]} cela signifie qu'il n'y a qu'un coup
-    possible aux coordonnées (4,2) mais qu'il retournera des pions dans deux directions: (-1,0) c'est
-    à dire vers la gauche et (-1,1) c'est à dire en bas à gauche (attention les abscisses vont vers la droite
-    et les ordonnées vers le bas).
+    la fonction coups_possibles(jeu) retourne les coups possibles 
+    dans un dictionnaire.
+    Chaque clé est le couple (tuple) correspondant au coup possible 
+    et la valeur est la direction dans laquelle le coup est possible 
+    (sous forme de couple).
+    Si la fonction renvoie le dictionnaire {(4,2):[(-1,0),(-1,1)]}
+     cela signifie qu'il n'y a qu'un coup possible aux coordonnées (4,2) 
+     mais qu'il retournera des pions dans deux directions: (-1,0) c'est
+    à dire vers la gauche et (-1,1) c'est à dire en bas à gauche (attention
+     les abscisses vont vers la droite et les ordonnées vers le bas).
 
     exemple:
     >>> jeu = {
