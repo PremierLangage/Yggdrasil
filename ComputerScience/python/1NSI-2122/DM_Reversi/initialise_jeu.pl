@@ -5,7 +5,9 @@ extends = func.pl
 funcname= initialise_jeu
 title= Initialise le jeu
 
-before==
+before== #|python| 
+from random import randint
+
 def initialise_jeu(taille):
     assert taille % 2 == 0
     jeu = {
@@ -34,6 +36,14 @@ def initialise_jeu(taille):
     jeu['plateau'][taille // 2 ][taille // 2 - 1] = 1
     jeu['plateau'][taille // 2 - 1][taille // 2 ] = 1
     return jeu
+
+taille = randint(2,8) * 2
+jeu = initialise_jeu(taille)
+
+pltest += """
+>>> initialise_jeu({taille})
+{jeu}
+"""
 ==
 
 doctest==
