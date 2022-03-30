@@ -135,7 +135,7 @@ doctest==
     précédente, il permet de savoir dans quelle direction on va retourner
     les pions.
 
-    Il modifie donc le plateau du jeu ainsi que le joueur actif.
+    Il modifie donc le plateau du jeu, le joueur actif et les scores.
 
     exemple:
     >>> jeu = {
@@ -170,7 +170,10 @@ doctest==
     [-1, -1, -1, -1]]
     >>> jeu['joueur actif']
     1
-    
+    >>> jeu['joueurs'][0]['score']
+    4
+    >>> jeu['joueurs'][1]['score']
+    1
 ==
 
 
