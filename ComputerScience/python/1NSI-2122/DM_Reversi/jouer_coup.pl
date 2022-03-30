@@ -5,63 +5,13 @@ funcname= joueur_coup
 title= Joueur un coup
 
 pltest==
->>> jeu = {
-... "plateau": [
-...     [-1, -1, -1, -1],
-...     [-1,  0,  1, -1],
-...     [-1,  1,  0, -1],
-...     [-1, -1, -1, -1]
-...     ],
-... "joueur actif": 0,
-... "joueurs":  [{
-...         "nom": "joueur1",
-...         "couleur": "white",
-...         "score": 2 
-...     },
-...     {
-...         "nom": "joueur2",
-...         "couleur": "red",
-...         "score": 2 
-...     }],
-... "parametres":{
-...     'framerate': 10,
-...     'plateau' : 4,
-...     'taille_fenetre' : 640
-...     }
-... } # 
->>> coups_possibles(jeu)
-{(0, 2): [(1, 0)], (1, 3): [(0, -1)], (2, 0): [(0, 1)], (3, 1): [(-1, 0)]}
->>> jeu = {
-... "plateau": [
-...     [-1, -1, -1, -1],
-...     [-1,  0,  0, -1],
-...     [-1,  1,  0, -1],
-...     [-1, -1, -1, -1]
-...     ],
-... "joueur actif": 0,
-... "joueurs":  [{
-...         "nom": "joueur1",
-...         "couleur": "white",
-...         "score": 2 
-...     },
-...     {
-...         "nom": "joueur2",
-...         "couleur": "red",
-...         "score": 2 
-...     }],
-... "parametres":{
-...     'framerate': 10,
-...     'plateau' : 4,
-...     'taille_fenetre' : 640
-...     }
-... } # 
->>> coups_possibles(jeu)
-{(0, 2): [(1, 0)], (1, 3): [(0, -1)]}
+
 ==
 
 
 before== #|python| 
-from random import randint
+from random import randint, choice
+import copy
 
 def initialise_jeu(taille):
     assert taille % 2 == 0
@@ -113,7 +63,7 @@ def coups_possibles(jeu):
                         dico[(i,j)] = [dir]
     return dico
 
-def jouer(jeu, case, dico_coups_possibles):
+def jouer_coup(jeu, case, dico_coups_possibles):
     plateau = jeu['plateau']
     joueur_actif = jeu['joueur actif']
     i, j = case
@@ -132,13 +82,22 @@ def jouer(jeu, case, dico_coups_possibles):
 
 taille = randint(3,8) * 2
 jeu = initialise_jeu(taille)
+jeu_init = copy.deepcopy(jeu)
 coups = coups_possibles(jeu)
+coup = choice(list(coups.keys()))
+jouer_coup(jeu, coup, coups)
 
 pltest += """
 >>> jeu = {} #
->>> coups_possibles(jeu)
+>>> coups = {} #
+>>> jouer_coup(jeu, {}, coups)
+>>> jeu['plateau']
 {}
-""".format(jeu, coups)
+>>> jeu['joueur actif']
+{}
+>>> jeu['joueurs'][0]['score']
+{}
+""".format(jeu_init, coups, coup, jeu['plateau'], jeu['joueur actif'], jeu['joueurs'][0]['score'])
 ==
 
 
