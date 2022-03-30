@@ -115,12 +115,12 @@ def coups_possibles(jeu):
 
 taille = randint(3,8) * 2
 jeu = initialise_jeu(taille)
-coups = coups_possibles(jeu,0)
+coups = coups_possibles(jeu)
 
 pltest += """
 >>> jeu = initialise_jeu({})
 {} #
->>> coups_possibles(jeu,0)
+>>> coups_possibles(jeu)
 {}
 """.format(taille, jeu, coups)
 ==
