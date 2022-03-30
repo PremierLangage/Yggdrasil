@@ -102,7 +102,7 @@ pltest += """
 
 
 doctest==
-    la fonction jouer_coup(case, jeu, dico_coups_possibles) joue 
+    la fonction jouer_coup(jeu, case, dico_coups_possibles) joue 
     le coup dans la case donnée.
 
     La case est un couple (tuple). 
@@ -138,7 +138,7 @@ doctest==
             'taille_fenetre' : 640
             }
         }
-    >>> jouer_coup((0,2), jeu)
+    >>> jouer_coup(jeu, (0,2), coups_possibles)
     >>> jeu['plateau']
     [[-1, -1, -1, -1],
     [-1,  0,  1, -1],
