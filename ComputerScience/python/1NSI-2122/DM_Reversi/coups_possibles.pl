@@ -37,7 +37,7 @@ doctest==
     
 ==
 
-pltest==
+pltest1==
 >>> jeu = {
 ... "plateau": [
 ...     [-1, -1, -1, -1],
