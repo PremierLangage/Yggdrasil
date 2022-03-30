@@ -106,7 +106,7 @@ def coups_possibles(jeu):
                 k = 1
                 while -1 < i + k * dir[0] < len(plateau) and -1 < j + k * dir[1] < len(plateau) and plateau[i + k * dir[0]][j + k * dir[1]] == autrejoueur:
                     k += 1
-                if k != 1 and plateau[i + k * dir[0]][j + k * dir[1]] ==joueur_actif:
+                if -1 < i + k * dir[0] < len(plateau) and -1 < j + k * dir[1] < len(plateau) and k != 1 and plateau[i + k * dir[0]][j + k * dir[1]] ==joueur_actif:
                     if (i,j) in dico:
                         dico[(i,j)].append(dir)
                     else:
