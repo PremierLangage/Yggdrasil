@@ -84,11 +84,11 @@ taille = randint(3,8) * 2
 jeu = initialise_jeu(taille)
 jeu_init = copy.deepcopy(jeu)
 coups1 = coups_possibles(jeu)
-coup1 = choice(list(coups.keys()))
+coup1 = choice(list(coups1.keys()))
 jouer_coup(jeu, coup1, coups1)
 jeu1 = copy.deepcopy(jeu)
 coups2 = coups_possibles(jeu)
-coup2 = choice(list(coups.keys()))
+coup2 = choice(list(coups2.keys()))
 jouer_coup(jeu, coup2, coups2)
 
 
