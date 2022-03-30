@@ -46,9 +46,9 @@ taille = randint(2,8) * 2
 jeu = initialise_jeu(taille)
 
 pltest += """
->>> initialise_jeu({taille})
-{jeu}
-"""
+>>> initialise_jeu({})
+{}
+""".format(taille, jeu)
 ==
 
 doctest==
