@@ -2,8 +2,8 @@
 @ /builder/before.py [builder.py]
 extends = func.pl
 
-funcname= initialise_jeu
-title= Initialise le jeu
+funcname= jouer_coup
+title= Jouer le coup
 
 pltest==
 ==
