@@ -42,7 +42,7 @@ def initialise_jeu(taille):
     jeu['plateau'][taille // 2 - 1][taille // 2 ] = 1
     return jeu
 
-taille = randint(2,8) * 2
+taille = randint(3,8) * 2
 jeu = initialise_jeu(taille)
 
 pltest += """
