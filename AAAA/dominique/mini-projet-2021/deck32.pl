@@ -20,7 +20,7 @@ Ecrire la fonction **deck32** correspondant au doctest suivant
     returns a list of 32 pairs (heigth, color)  
 
 
-
+{{ seed }}
 ==
 
 
