@@ -90,7 +90,7 @@ jouer_coup(jeu, coup, coups)
 pltest += """
 >>> jeu = {} #
 >>> coups = {} #
->>> jouer_coup(jeu, {}, coups)
+>>> jouer_coup(jeu, {}, coups) #
 >>> jeu['plateau']
 {}
 >>> jeu['joueur actif']
