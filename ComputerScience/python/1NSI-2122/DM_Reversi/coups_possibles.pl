@@ -118,11 +118,9 @@ jeu = initialise_jeu(taille)
 coups = coups_possibles(jeu)
 
 pltest += """
->>> jeu = initialise_jeu({})
-{} #
->>> coups_possibles(jeu)
+>>> coups_possibles({})
 {}
-""".format(taille, jeu, coups)
+""".format(jeu, coups)
 ==
 
 
