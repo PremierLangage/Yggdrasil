@@ -102,7 +102,7 @@ pltest += """
 {}
 >>> jeu['joueurs'][0]['score']
 {}
->>> coups = {}
+>>> coups = {} #
 >>> jouer_coup(jeu, {}, coups) #
 >>> jeu['plateau']
 {}
