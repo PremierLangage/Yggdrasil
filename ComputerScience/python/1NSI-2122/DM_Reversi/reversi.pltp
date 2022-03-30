@@ -69,8 +69,9 @@ et lancez le jeu avec la commande.
 ==
 
 # Fonctions de base 
-@ coups_possibles.pl
 @ initialise_jeu.pl
+@ coups_possibles.pl
+
 
 
 reserve==
