@@ -113,6 +113,23 @@ def coups_possibles(jeu):
                         dico[(i,j)] = [dir]
     return dico
 
+def jouer(jeu, case, dico_coups_possibles):
+    plateau = jeu['plateau']
+    joueur_actif = jeu['joueur actif']
+    i, j = case
+    autrejoueur = 1 - joueur_actif
+    for dir in dico_coups_possibles[case]:
+        k = 1
+        while -1 < i + k * dir[0] < len(plateau) and -1 < j + k * dir[1] < len(plateau) and plateau[i + k * dir[0]][j + k * dir[1]] == autrejoueur:
+            plateau[i + k * dir[0]][ j + k * dir[1]] = joueur_actif
+            jeu['joueurs'][autrejoueur]['score'] -= 1
+            jeu['joueurs'][joueur_actif]['score'] += 1
+            k += 1
+    plateau[i][j] = joueur_actif
+    jeu['joueurs'][joueur_actif]['score'] += 1
+    jeu['joueur'] = autrejoueur
+    jeu['joueur actif'] = autrejoueur
+
 taille = randint(3,8) * 2
 jeu = initialise_jeu(taille)
 coups = coups_possibles(jeu)
