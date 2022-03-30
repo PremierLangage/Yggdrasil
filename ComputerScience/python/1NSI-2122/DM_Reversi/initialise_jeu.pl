@@ -5,6 +5,11 @@ extends = func.pl
 funcname= initialise_jeu
 title= Initialise le jeu
 
+pltest==
+>>> initialise_jeu(4)
+{'plateau': [[-1, -1, -1, -1], [-1, 0, 1, -1], [-1, 1, 0, -1], [-1, -1, -1, -1]], 'joueur actif': 0, 'joueurs': [{'nom': 'joueur1', 'couleur': 'white', 'score': 2}, {'nom': 'joueur2', 'couleur': 'red', 'score': 2}], 'parametres': {'framerate': 10, 'plateau': 4, 'taille_fenetre': 640}}
+==
+
 before== #|python| 
 from random import randint
 
@@ -79,10 +84,7 @@ doctest==
     
 ==
 
-pltest==
->>> initialise_jeu(4)
-{'plateau': [[-1, -1, -1, -1], [-1, 0, 1, -1], [-1, 1, 0, -1], [-1, -1, -1, -1]], 'joueur actif': 0, 'joueurs': [{'nom': 'joueur1', 'couleur': 'white', 'score': 2}, {'nom': 'joueur2', 'couleur': 'red', 'score': 2}], 'parametres': {'framerate': 10, 'plateau': 4, 'taille_fenetre': 640}}
-==
+
 
 
 
