@@ -30,4 +30,4 @@ pltest==
 ==
 
 
-settings.oneshot % true
+settings.oneshot % false
