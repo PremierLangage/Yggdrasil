@@ -589,26 +589,6 @@ def eval_expr(strans, sol, checkratsimp=True, equality="", modulo=0, unauthorize
         return (-1, "NotRatSimp")
     return (100, "Success")
 
-def eval_mult_expr(lstans, lstsol, checkratsimp=True, modulo=None, authorized_func=None, local_dict={}):
-    """
-    Evaluate multiple answers.
-    """
-    lsterror = []
-    lstscore = []
-    for strans, sol in zip(lstans, lstsol):
-        score, error = eval_expr(strans, sol, checkratsimp, modulo, authorized_func,  local_dict=local_dict)
-        lsterror.append(error)
-        lstscore.append(score)
-    if "NotExpr" in lsterror:
-        return (-1, "OneNotExpr")
-    if "UnauthorizedFunc" in lsterror:
-        return (-1, "OneUnauthorizedFunc")
-    if "NotEqual" in lsterror:
-        return (0, "NotEqual")
-    if "NotRatSimp" in lsterror:
-        return (-1, "NotRatSimp")
-    return (100, "Success")
-
 def eval_frac(strans, sol, simpwarning=True):
     """
     Evaluate an answer when the solution is a fraction.
