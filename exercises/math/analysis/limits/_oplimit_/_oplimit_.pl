@@ -32,7 +32,6 @@ sol=[]
 
 
 for i in [0, 1, 2]:
-    rd.shuffle(f)
     lim=Limit(rand_expr(i), x, oo)
     latexlim.append(latex(lim))
     sol.append(lim.doit())
