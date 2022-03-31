@@ -611,17 +611,6 @@ def eval_frac(strans, sol, simpwarning=True):
             return (0, "NotFracIrred")
     return (100, "Success")
 
-# plus nécessaire, à retirer
-def eval_function(strans, sol, checkratsimp=True, authorized_func=None, local_dict={}):
-    """
-    Evaluate an answer when the solution is a function.
-    >>> sp.var('x')
-    >>> eval_function("-2\sin(x)",2*sp.cos(x))
-    100,0
-    """
-    local_dict.update({'e': sp.E})
-    return eval_expr(strans, sol, checkratsimp, authorized_func, local_dict=local_dict)
-
 
 def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, unauthorized_func=[], authorized_func={}, local_dict={}):
     """
@@ -878,26 +867,3 @@ def eval_physical(strans, sol, tol, local_dict={}):
     if not equal_approx(numsol, num, tol=tol):
         return (0, "NotEqual")
     return (100, "Success")
-
-def ans_antiderivative(strans,sol,x,local_dict={}):
-    """
-    Analyze an answer of type expr.
-    """
-    x=sp.Symbol('x')
-    test1=[(is_expr,-1,"NotExpr","Votre réponse n'est pas une expression valide.")]
-    test2=[]
-    test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
-    return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
-
-
-
-
-
-
-
-
-
-
-
-
-
