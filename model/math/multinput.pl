@@ -58,3 +58,5 @@ $! {{ input.sol|latex }} !$
 </div>
 {% endfor %}
 ==
+
+latexsettings.ln_notation = True
