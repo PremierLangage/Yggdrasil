@@ -43,3 +43,4 @@ question ==
 Calculer les limites suivantes.
 ==
 
+latexsettings.ln_notation = True
