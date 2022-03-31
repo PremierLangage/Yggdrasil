@@ -4,12 +4,12 @@ import sympy as sp
 
 # Polynomials
 
-def randpoly(d, nc, bound, var='x'):
+def randpoly(degree, nbcoeff, bound, var='x'):
     """
     Return a random integr polynomial.
 
-    d : degree
-    nc : number of nonzero coefficients
+    degree : degree
+    nbcoeff : number of nonzero coefficients
     bound : bound on coefficients
     var : variable name
     """
@@ -17,9 +17,9 @@ def randpoly(d, nc, bound, var='x'):
         x = sp.Symbol(var)
     else:
         x = var
-    c = [randint(-bound, bound, [0]) for _ in range(nc)]
-    p = [d] + sampleint(0, d-1, nc-1)
-    return sum([c[i]*x**p[i] for i in range(nc)])
+    c = [randint(-bound, bound, [0]) for _ in range(nbcoeff)]
+    p = [degree] + sampleint(0, degree-1, nbcoeff-1)
+    return sum([c[i]*x**p[i] for i in range(nbcoeff)])
 
 # Matrices
 
