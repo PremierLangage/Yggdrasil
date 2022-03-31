@@ -62,7 +62,7 @@ def randmat_invertible(n, bound, excval=[], sparsity=0, detbound=[0, sp.S.Infini
             
 def randmat_fullrank(n, p, bound, excval=[], sparsity=0):
     """
-    Generate a full rank random matrix with integer entries.
+    Return a full rank random matrix with integer entries.
     """
     while True:
         M = randmat(n, p, bound, excval=excval, sparsity=sparsity)
