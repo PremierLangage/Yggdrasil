@@ -22,12 +22,6 @@ def rand_expr(i):
     elif i == 2:
         return inf1 + b1
 
-
-lstinput=[input1,input2,input3]
-
-
-
-
 latexlim=[]
 sol=[]
 
