@@ -26,7 +26,8 @@ from sympy import Integer, Rational, Poly, FiniteSet, Tuple, Interval, Matrix
 from sympy import integrate
 from random import choice, choices, sample, shuffle
 from plrandom import randint, sampleint
-from sympy2latex import latex
+from sympy2latex import CustomLatexPrinter
+latex = CustomLatexPrinter(latexsettings).doprint
 from latex2sympy import latex2sympy
 ==
 
