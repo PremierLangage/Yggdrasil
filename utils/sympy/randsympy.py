@@ -16,7 +16,7 @@ def sampleint(a, b, k, excval=[]):
 
 # Polynomials
 
-def randint_poly(d, nc, bound, var='x'):
+def randpoly(d, nc, bound, var='x'):
     """
     Return a random polynomial with integer coefficients.
 
@@ -25,7 +25,10 @@ def randint_poly(d, nc, bound, var='x'):
     bound : bound on coefficients
     var : variable name
     """
-    x = sp.Symbol(var)
+    if isinstance(var, str):
+        x = sp.Symbol(var)
+    else:
+        x = var
     c = sampleint(-bound, bound, nc, [0])
     p = [d] + sampleint(0, d-1, nc-1)
     return sum([c[i]*x**p[i] for i in range(nc)])
