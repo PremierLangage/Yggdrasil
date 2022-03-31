@@ -45,6 +45,12 @@ def randmat(rows, cols, bound, excval=[], sparsity=0):
 def randmat_invertible(size, bound, excval=[], sparsity=0, detbound=[0, sp.S.Infinity]):
     """
     Return an invertible random integer matrix.
+
+    size : number of rows/columns
+    bound : bound on entries
+    excval : excluded values for entries
+    sparsity : proportion of zero entries (value between 0 and 1)
+    detbound : bound on determinant
     """
     while True:
         M = randmat_fullrank(size, size, bound, excval=excval, sparsity=sparsity)
@@ -54,6 +60,12 @@ def randmat_invertible(size, bound, excval=[], sparsity=0, detbound=[0, sp.S.Inf
 def randmat_fullrank(rows, cols, bound, excval=[], sparsity=0):
     """
     Return a full rank random integer matrix.
+
+    rows : number of rows
+    cols : number of columns
+    bound : bound on entries
+    excval : excluded values for entries
+    sparsity : proportion of zero entries (value between 0 and 1)
     """
     while True:
         M = randmat(rows, cols, bound, excval=excval, sparsity=sparsity)
@@ -67,7 +79,7 @@ def randmat_givenrank(rows, cols, rank, magnitude=1):
     rows : number of rows
     cols : number of columns
     rank : rank
-    magnitude : size of coefficients
+    magnitude : size of entries
     """
     while True:
         P = randmat_fullrank(rows, rank, 1)
