@@ -17,6 +17,12 @@ class CustomLatexPrinter(LatexPrinter):
         LatexPrinter.__init__(self, settings)
         self.custom_settings = custom_settings
 
+    def updade_settings(self, settings):
+        custom_settings = {}
+        custom_settings['interv_rev_brack'] = settings.pop('interv_rev_brack', False)
+        self.settings.update(settings)
+        self.custom_settings = custom_settings
+
     def _print_Poly(self, poly):
         """
         Return a LaTeX code for a Poly object.
@@ -111,7 +117,6 @@ def latex(expr, **settings):
     """
     Return a LaTeX string for a SymPy object.
     """
-    # settings.update({"ln_notation": True})
     if isinstance(expr, list):
         return [latex(a) for a in expr]
     elif isinstance(expr, str):
