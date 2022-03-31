@@ -11,4 +11,4 @@ Calculer la dérivée de la fonction
 $${{ f|latex }}$$
 ==
 
-latexsettings.ln_notation = False
+latexsettings.ln_notation = True
