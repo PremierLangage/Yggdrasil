@@ -26,10 +26,6 @@ def rand_expr(i):
     elif i == 2:
         return inf1 + b1
 
-latexlim=[]
-sol=[]
-
-
 for i in range(n):
     lim = Limit(rand_expr(i), x, oo)
     s = latex(lim)
