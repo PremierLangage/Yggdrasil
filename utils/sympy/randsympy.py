@@ -25,7 +25,7 @@ def randpoly(d, nc, bound, var='x'):
 
 def randmat(n, p, bound, excval=[], sparsity=0):
     """
-    Return a random matrix with integer entries.
+    Return a random integer matrix.
 
     n : number of rows
     p : number of columns
@@ -44,7 +44,7 @@ def randmat(n, p, bound, excval=[], sparsity=0):
 
 def randmat_invertible(n, bound, excval=[], sparsity=0, detbound=[0, sp.S.Infinity]):
     """
-    Return an invertible random matrix with integer entries.
+    Return an invertible random integer matrix.
     """
     while True:
         M = randmat_fullrank(n, n, bound, excval=excval, sparsity=sparsity)
@@ -53,7 +53,7 @@ def randmat_invertible(n, bound, excval=[], sparsity=0, detbound=[0, sp.S.Infini
             
 def randmat_fullrank(n, p, bound, excval=[], sparsity=0):
     """
-    Return a full rank random matrix with integer entries.
+    Return a full rank random integer matrix.
     """
     while True:
         M = randmat(n, p, bound, excval=excval, sparsity=sparsity)
