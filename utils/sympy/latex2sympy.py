@@ -26,9 +26,7 @@ def str2sympy(s, local_dict={}, evaluate=False):
     >>> str2sympy("{0, pi, 2 pi}")
     [0, pi, 2*pi]
     """
-    s.strip()
-    
-    if s == "":
+    if s.strip() == "":
         return None
 
     s = s.replace("{", "[")
