@@ -26,7 +26,7 @@ B = randmat(m, p, coeffbound)
 sol = A*B
 ==
 
-text==
+tquestio ==
 Soit les matrices
 $$ A =  {{A|latex}} \text{ et } B = {{B|latex}} $$ 
 Calculer $! A B !$.
