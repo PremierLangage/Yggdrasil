@@ -1,9 +1,10 @@
 extends = /model/math/multinput.pl
 title = Calcul de limites
 
-param.form = [0, 0, 0]
+param.form = [0, 1, 2]
 
 before ==
+var('x')
 inf = [ln(x), exp(x), x]
 f = [atan(x), x/(x+1)]
 b = [sin(x), cos(x)]
@@ -25,7 +26,7 @@ lstinput=[input1,input2,input3]
 
 
 
-var('x')
+
 latexlim=[]
 sol=[]
 
