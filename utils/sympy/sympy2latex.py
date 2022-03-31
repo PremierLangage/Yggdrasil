@@ -117,14 +117,7 @@ def latex(expr, **settings):
     """
     Return a LaTeX string for a SymPy object.
     """
-    if isinstance(expr, list):
-        return [latex(a) for a in expr]
-    elif isinstance(expr, str):
-        expr = expr.replace("<=",r"\le")
-        expr = expr.replace(">=",r"\ge")
-        return expr
-    else:
-        return CustomLatexPrinter(settings).doprint(expr)
+    return CustomLatexPrinter(settings).doprint(expr)
 
 def latex_linsys(A, B, lstvar=['x','y','z','t','u','v','w']):
     """
