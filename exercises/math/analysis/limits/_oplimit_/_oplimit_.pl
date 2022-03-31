@@ -30,10 +30,15 @@ latexlim=[]
 sol=[]
 
 
-for i in [0, 1, 2]:
-    lim=Limit(rand_expr(i), x, oo)
-    latexlim.append(latex(lim))
-    sol.append(lim.doit())
+for i in range(n):
+    f = lstf[i]
+    shuffle(f)
+    lim = Limit(rand_expr(i), x, oo)
+    s = latex(lim)
+    prefixes.append(f"$! \displaystyle {s} = !$")
+    inputs[i].sol = lim.doit()
+    inputs[i].type = "expr"
+    inputs[i].evalparam = {}
 ==
 
 question ==
