@@ -9,7 +9,6 @@ B = randmat(n, 1, 2, [0])
 
 sol = list(linsolve((A, B)))[0]
 
-sys_tex=latexsys(A,B)
 basis = str(tuple([tuple(A.col(i)) for i in range(n)]))
 vec = str(tuple(B))
 tuple_name = ['couple', 'triplet', 'quadruplet'][n-2]
