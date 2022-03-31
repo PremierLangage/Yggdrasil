@@ -42,10 +42,14 @@ def randmat(n, p, bound, excval=[], sparsity=0):
     excval : excluded values for entries
     sparsity : proportion of zero entries (value between 0 and 1)
     """
-    nbzero = int(sp.floor(sparsity*n*p))
-    entries0 = [0]*nbzero
-    entries1 = sampleint(-bound, bound, n*p-nbzero, excval)
-    entries=entries0+entries1
+    if isinstance(bound, list):
+        binf, bsup = bound
+    else:
+        binf, bsup = -bound, bound
+    nbzeros = int(sp.floor(sparsity*n*p))
+    entries0 = [0]*nbzeros
+    entries1 = sampleint(-bound, bound, n*p-nbzeros, excval)
+    entries = entries0 + entries1
     rd.shuffle(entries)
     return sp.Matrix(n,p,entries)
 
