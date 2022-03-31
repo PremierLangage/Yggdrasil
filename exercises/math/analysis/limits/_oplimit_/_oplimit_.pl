@@ -37,8 +37,6 @@ for i in range(n):
 ==
 
 question ==
-{{ tt }}
-
 Calculer les limites suivantes.
 ==
 
