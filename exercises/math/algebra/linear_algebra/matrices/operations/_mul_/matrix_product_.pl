@@ -10,7 +10,7 @@ Produit de matrices
 ==
 
 before ==
-from randsympy import randint_matrix
+from randsympy import randmat
 
 if isinstance(param['size'][0], list):
     n, m, p = randitem(param['size'])
