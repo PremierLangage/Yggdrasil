@@ -5,8 +5,8 @@ import re
 
 def str2sympy(s, local_dict={}, evaluate=False):
     """
-    Convert a string into an expression or a nested structure of
-    lists and tuples of expressions.
+    Convert a string into a SymPy expression (or a structure of
+    lists and tuples of SymPy expressions).
 
     >>> str2sympy("x+3+2x")
     x + 2*x + 3
@@ -20,7 +20,7 @@ def str2sympy(s, local_dict={}, evaluate=False):
     >>> str2sympy("3!")
     factorial(3)
     
-    >>> str2sympy("1+i",{'i':sp.I})
+    >>> str2sympy("1+i", {'i': sp.I})
     1 + I
     
     >>> str2sympy("{0, pi, 2 pi}")
@@ -34,15 +34,13 @@ def str2sympy(s, local_dict={}, evaluate=False):
     s = s.replace("{", "[")
     s = s.replace("}", "]")
     
-    #global_dict = {}
-    #exec('from sympy import *', global_dict, global_dict)
-    #global_dict.update(local_dict)
+    # Hack
     def sqrt2(x):
         return sp.sqrt(x, evaluate=False)
     local_dict.update({'sqrt' : sqrt2})
-    transformations=prs.standard_transformations + (prs.implicit_multiplication_application,prs.convert_xor)
-    #transformations = (prs.standard_transformations + (prs.implicit_multiplication_application,))
-    return prs.parse_expr(s,local_dict=local_dict,transformations=transformations,evaluate=evaluate)
+
+    transformations=prs.standard_transformations + (prs.implicit_multiplication_application, prs.convert_xor)
+    return prs.parse_expr(s, local_dict=local_dict, transformations=transformations, evaluate=evaluate)
 
 def latex2str(s):
     r"""
