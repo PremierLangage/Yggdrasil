@@ -55,9 +55,8 @@ def randmat_invertible(n, bound, excval=[], sparsity=0, detbound=[0, sp.S.Infini
     """
     Return an invertible random matrix with integer entries.
     """
-
     while True:
-        M = randmat_fullrank(n,n,bound,excval,sparsity)
+        M = randmat_fullrank(n, n, bound, excval=excval, sparsity=sparsity)
         if detbound[0] <= abs(M.det()) <= detbound[1]:
             return M
             
@@ -66,8 +65,8 @@ def randmat_fullrank(n, p, bound, excval=[], sparsity=0):
     Generate a full rank random matrix with integer entries.
     """
     while True:
-        M=randmat(n,p,bound,excval,sparsity)
-        if M.rank()==min([n,p]):
+        M = randmat(n, p, bound, excval=excval, sparsity=sparsity)
+        if M.rank() == min([n, p]):
             return M
 
 def randmat_givenrank(n, m, r, magnitude=1):
