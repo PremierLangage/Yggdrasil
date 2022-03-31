@@ -47,11 +47,9 @@ def randmat(n, p, bound, excval=[], sparsity=0):
     else:
         binf, bsup = -bound, bound
     nbzeros = int(sp.floor(sparsity*n*p))
-    entries0 = [0]*nbzeros
-    entries1 = sampleint(-bound, bound, n*p-nbzeros, excval)
-    entries = entries0 + entries1
+    entries = [0]*nbzeros + sampleint(binf, bsup, n*p-nbzeros, excval)
     rd.shuffle(entries)
-    return sp.Matrix(n,p,entries)
+    return sp.Matrix(n, p, entries)
 
 def randmat_invertible(n, bound, excval=[], sparsity=0, mindet=0, maxdet=sp.S.Infinity):
     """
