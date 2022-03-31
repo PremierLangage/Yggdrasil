@@ -4,7 +4,11 @@ title = Calcul de limites
 param.form = [0, 1, 2]
 
 before ==
-from sympy import atan
+from sympy import atan, Limit
+n = 3
+inputs = [MathInput() for _ in range(n)]
+prefixes = []
+
 var('x')
 inf = [ln(x), exp(x), x]
 f = [atan(x), x/(x+1)]
