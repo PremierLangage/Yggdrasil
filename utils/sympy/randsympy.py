@@ -1,19 +1,6 @@
 import random as rd
-from plrandom import randint
+from plrandom import randint, sampleint
 import sympy as sp
-
-def sampleint(a, b, k, excval=[]):
-    """
-    Return a sample of random integers between two bounds (excluding some values).
-    """
-    # Le passage par des listes n'est pas super.
-    bound = [a]
-    bound.extend(sorted(excval))
-    bound.append(b+1)
-    lst = []
-    for i in range(len(bound)-1):
-        lst.extend(list(range(bound[i], bound[i+1])))
-    return rd.sample(lst, k)
 
 # Polynomials
 
@@ -30,7 +17,7 @@ def randpoly(d, nc, bound, var='x'):
         x = sp.Symbol(var)
     else:
         x = var
-    c = sampleint(-bound, bound, nc, [0])
+    c = [randint(-bound, bound, [0]) for _ in range(nc)]
     p = [d] + sampleint(0, d-1, nc-1)
     return sum([c[i]*x**p[i] for i in range(nc)])
 
