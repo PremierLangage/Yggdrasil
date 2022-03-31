@@ -37,7 +37,7 @@ def randmat(rows, cols, bound, excval=[], sparsity=0):
         binf, bsup = bound
     else:
         binf, bsup = -bound, bound
-    nbzeros = int(sp.floor(sparsity*n*p))
+    nbzeros = int(sp.floor(sparsity*rows*cols))
     entries = [0]*nbzeros + [randint(binf, bsup, excval) for  _ in range(rows*cols-nbzeros)]
     rd.shuffle(entries)
     return sp.Matrix(rows, cols, entries)
