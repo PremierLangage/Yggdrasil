@@ -1,4 +1,5 @@
 import random as rd
+from plrandom import randint
 import sympy as sp
 
 def sampleint(a, b, k, excval=[]):
