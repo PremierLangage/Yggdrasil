@@ -50,7 +50,7 @@ def randmat(n, p, bound, excval=[], sparsity=0):
     else:
         binf, bsup = -bound, bound
     nbzeros = int(sp.floor(sparsity*n*p))
-    entries = [0]*nbzeros + sampleint(binf, bsup, n*p-nbzeros, excval)
+    entries = [0]*nbzeros + [randint(binf, bsup, excval) for  _ in range(n*p-nbzeros)]
     rd.shuffle(entries)
     return sp.Matrix(n, p, entries)
 
