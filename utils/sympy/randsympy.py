@@ -23,12 +23,12 @@ def randpoly(degree, nbcoeff, bound, var='x'):
 
 # Matrices
 
-def randmat(n, p, bound, excval=[], sparsity=0):
+def randmat(rows, cols, bound, excval=[], sparsity=0):
     """
     Return a random integer matrix.
 
-    n : number of rows
-    p : number of columns
+    rows : number of rows
+    cols : number of columns
     bound : bound on entries
     excval : excluded values for entries
     sparsity : proportion of zero entries (value between 0 and 1)
@@ -38,43 +38,43 @@ def randmat(n, p, bound, excval=[], sparsity=0):
     else:
         binf, bsup = -bound, bound
     nbzeros = int(sp.floor(sparsity*n*p))
-    entries = [0]*nbzeros + [randint(binf, bsup, excval) for  _ in range(n*p-nbzeros)]
+    entries = [0]*nbzeros + [randint(binf, bsup, excval) for  _ in range(rows*cols-nbzeros)]
     rd.shuffle(entries)
-    return sp.Matrix(n, p, entries)
+    return sp.Matrix(rows, cols, entries)
 
-def randmat_invertible(n, bound, excval=[], sparsity=0, detbound=[0, sp.S.Infinity]):
+def randmat_invertible(size, bound, excval=[], sparsity=0, detbound=[0, sp.S.Infinity]):
     """
     Return an invertible random integer matrix.
     """
     while True:
-        M = randmat_fullrank(n, n, bound, excval=excval, sparsity=sparsity)
+        M = randmat_fullrank(size, size, bound, excval=excval, sparsity=sparsity)
         if detbound[0] <= abs(M.det()) <= detbound[1]:
             return M
             
-def randmat_fullrank(n, p, bound, excval=[], sparsity=0):
+def randmat_fullrank(rows, cols, bound, excval=[], sparsity=0):
     """
     Return a full rank random integer matrix.
     """
     while True:
-        M = randmat(n, p, bound, excval=excval, sparsity=sparsity)
-        if M.rank() == min([n, p]):
+        M = randmat(rows, cols, bound, excval=excval, sparsity=sparsity)
+        if M.rank() == min([rows, cols]):
             return M
 
-def randmat_givenrank(n, m, r, magnitude=1):
+def randmat_givenrank(rows, cols, rank, magnitude=1):
     """
     Return a given rank random integer matrix.
 
-    n : number of rows
-    m : number of columns
-    r : rank
+    rows : number of rows
+    cols : number of columns
+    rank : rank
     magnitude : size of coefficients
     """
     while True:
-        P = randmat_fullrank(n, r, 1)
-        Q = randmat_fullrank(r, m, magnitude)
+        P = randmat_fullrank(rows, rank, 1)
+        Q = randmat_fullrank(rank, cols, magnitude)
         B = P*Q
         zerorows = sum([sum(B.row(i))==0 for i in range(n)])
         diffrows = len(set([tuple(B.row(i)) for i in range(n)]))
         diffcols = len(set([tuple(B.col(i)) for i in range(m)]))
-        if zerorows == 0 and diffrows == n and diffcols == m:
+        if zerorows == 0 and diffrows == rows and diffcols == cols:
             return B
