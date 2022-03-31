@@ -6,7 +6,7 @@ import sympy as sp
 
 def randpoly(d, nc, bound, var='x'):
     """
-    Return a random polynomial with integer coefficients.
+    Return a random integr polynomial.
 
     d : degree
     nc : number of nonzero coefficients
