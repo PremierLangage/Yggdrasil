@@ -17,7 +17,7 @@ latexsettings.inv_trig_style = full
 
 input_type = "expr"
 
-mathimport ==
+mathimport == #|py|
 from sympy import E, I, pi, oo
 from sympy import sqrt, Abs, sin, cos, tan, exp, ln, atan, acos, asin
 from sympy import Symbol, symbols, var
