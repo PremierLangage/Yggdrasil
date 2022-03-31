@@ -3,7 +3,7 @@ extends = /model/math/tuple.pl
 before ==
 from randsympy import randmat_invertible, randmat
 n = param['n']
-A = randmat_invertible(n, 2)
+A = randmat_invertible(n, 2, mindet=0, maxdet=6)
 
 B = randmat(n, 1, 2, [0])
 
