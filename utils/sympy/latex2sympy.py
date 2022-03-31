@@ -65,11 +65,6 @@ def latex2str(s):
     lst=[r"\mleft", r"\mright", r"\left", r"\right"]
     for s1 in lst:
         s = s.replace(s1, "")
-    
-    # replace \frac{}{}
-    #pattern = re.compile(r'^(.*)\\frac\s*{((?:(?!frac).)*)}{((?:(?!frac).)*)}(.*)$')
-    #while pattern.search(s) is not None:
-    #    s = pattern.sub(r"\1(\2)/(\3)\4", s)
 
     # replace some substrings
     lst=[(r"\frac",""),
@@ -96,8 +91,8 @@ def latex2str(s):
          (r"\varnothing","{}"),
          ("\\", " ")]
          
-    for (s1,s2) in lst:
-        s = s.replace(s1,s2)
+    for (s1, s2) in lst:
+        s = s.replace(s1, s2)
         
     return s
 
