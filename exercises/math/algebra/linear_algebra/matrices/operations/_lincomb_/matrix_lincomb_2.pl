@@ -1,6 +1,6 @@
 extends = matrix_lincomb_.pl
 
-title==
+title ==
 Combinaison linéaire de matrices $! 2 \times 2 !$
 ==
 
