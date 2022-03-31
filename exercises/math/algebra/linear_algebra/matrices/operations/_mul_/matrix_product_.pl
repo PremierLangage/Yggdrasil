@@ -21,8 +21,8 @@ coeffbound = param['coeffbound']
 
 min = min([n, m, p])
 
-A = randint_matrix(n, m, coeffbound)
-B = randint_matrix(m, p, coeffbound)
+A = randmat(n, m, coeffbound)
+B = randmat(m, p, coeffbound)
 sol = A*B
 ==
 
