@@ -1,7 +1,7 @@
 extends = /model/math/expr.pl
 
 before ==
-from sympy import Limit, Order
+from sympy import Limit
 var('x')
 f, g = sample([2*x+1, x+2, 2*x**2+1, x**2+1], 2)
 lim = Limit(f/g, x, oo)
