@@ -51,13 +51,14 @@ def randmat(n, p, bound, excval=[], sparsity=0):
     rd.shuffle(entries)
     return sp.Matrix(n, p, entries)
 
-def randmat_invertible(n, bound, excval=[], sparsity=0, mindet=0, maxdet=sp.S.Infinity):
+def randmat_invertible(n, bound, excval=[], sparsity=0, detbound=[0, sp.S.Infinity]):
     """
     Return an invertible random matrix with integer entries.
     """
+
     while True:
-        M=randmat_fullrank(n,n,bound,excval,sparsity)
-        if mindet <= abs(M.det()) <= maxdet:
+        M = randmat_fullrank(n,n,bound,excval,sparsity)
+        if detbound[0] <= abs(M.det()) <= detbound[1]:
             return M
             
 def randmat_fullrank(n, p, bound, excval=[], sparsity=0):
