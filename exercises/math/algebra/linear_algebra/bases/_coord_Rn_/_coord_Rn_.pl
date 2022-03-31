@@ -1,7 +1,7 @@
 extends = /model/math/tuple.pl
 
 before ==
-from randsympy import randmat_invertible, randmat
+from randsympy import randmat_invertible, randmat, linsolve
 n = param['n']
 A = randmat_invertible(n, 2, detbound=[0, 6])
 
