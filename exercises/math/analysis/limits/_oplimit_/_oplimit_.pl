@@ -32,7 +32,6 @@ sol=[]
 
 for i in range(n):
     f = lstf[i]
-    shuffle(f)
     lim = Limit(rand_expr(i), x, oo)
     s = latex(lim)
     prefixes.append(f"$! \displaystyle {s} = !$")
