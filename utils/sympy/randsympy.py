@@ -62,7 +62,7 @@ def randmat_fullrank(n, p, bound, excval=[], sparsity=0):
 
 def randmat_givenrank(n, m, r, magnitude=1):
     """
-    Generate a nxn random matrix with given rank.
+    Return a given rank random integer matrix.
 
     n : number of rows
     m : number of columns
