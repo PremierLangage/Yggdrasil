@@ -23,7 +23,7 @@ $! {{ f|latex }} = !$
 ==
 
 solution ==
-Le DL de $! {{f|latex}} !$ est $! {{ sol|latex }} + o({{ x }}^{{ n }}) !$.
+Le DL de $! {{f|latex}} !$ est $! {{ sol|latex }} + o({{ x }}^{{ n }})  \quad [x \rightarrow 0]!$.
 ==
 
 
