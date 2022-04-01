@@ -15,11 +15,11 @@ Ecrire le développement limité de de $! {{ f|latex }} !$ autour de $! 0 !$ à 
 ==
 
 embed ==
-# + o({{ x }}^{{ n }} [x \rightarrow 0])
+# + o({{ x }}^{{ n }}) \, [x \rightarrow 0]
 ==
 
 prefix ==
-$! {{ f|latex }} !$
+$! {{ f|latex }} = !$
 ==
 
 latexsettings.order = 'ilex'
