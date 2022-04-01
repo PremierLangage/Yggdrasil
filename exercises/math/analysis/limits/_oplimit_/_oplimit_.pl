@@ -27,8 +27,10 @@ def rand_expr(i):
     elif i == 3:
         return inf1/inf2
 
-for i in [0, 1, 3]:
-    lim = Limit(rand_expr(i), x, oo)
+cases = [0, 1, 3]
+
+for i in range(n):
+    lim = Limit(rand_expr(cases[i]), x, oo)
     s = latex(lim)
     prefixes.append(f"$! \displaystyle {s} = !$")
     inputs[i].sol = lim.doit()
