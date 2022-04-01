@@ -22,4 +22,4 @@ prefix ==
 $! {{ f|latex }} = !$
 ==
 
-latexsettings.order = 'ilex'
+# latexsettings.order = 'ilex'
