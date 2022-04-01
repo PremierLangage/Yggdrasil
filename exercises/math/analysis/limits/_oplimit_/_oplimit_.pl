@@ -3,7 +3,7 @@ title = Calcul de limites
 
 param.form = [0, 1, 2]
 
-before ==
+before == #|py|
 from sympy import atan, Limit
 n = 3
 inputs = [MathInput() for _ in range(n)]
