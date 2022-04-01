@@ -5,7 +5,8 @@ from sympy import O, series
 var('x')
 f = choice([sin(x), cos(x), exp(x), 1/(1-x)])
 n = randint(5, 6)
-sol = series(f, x, 0, n+1).removeO()
+sol2 = series(f, x, 0, n+1)
+sol = sol2.removeO()
 ==
 
 equality = ""
@@ -22,4 +23,9 @@ prefix ==
 $! {{ f|latex }} = !$
 ==
 
-# latexsettings.order = 'ilex'
+solution ==
+Le DL de $! {{f|latex}} !$ est $! {{sol2|latex }} !$.
+==
+
+
+latexsettings.order = 'ilex'
