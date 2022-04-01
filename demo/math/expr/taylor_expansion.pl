@@ -5,8 +5,7 @@ from sympy import O, series
 var('x')
 f = choice([sin(x), cos(x), exp(x), 1/(1-x)])
 n = randint(5, 6)
-sol2 = series(f, x, 0, n+1)
-sol = sol2.removeO()
+sol = series(f, x, 0, n+1).remove0()
 ==
 
 equality = ""
@@ -24,7 +23,7 @@ $! {{ f|latex }} = !$
 ==
 
 solution ==
-Le DL de $! {{f|latex}} !$ est $! {{sol2|latex }} !$.
+Le DL de $! {{f|latex}} !$ est $! {{ sol|latex }} + o({{ x }}^{{ n }}) !$.
 ==
 
 
