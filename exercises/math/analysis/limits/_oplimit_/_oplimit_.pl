@@ -28,6 +28,7 @@ def rand_expr(i):
         return inf1/inf2
 
 cases = [0, 1, 3]
+shuffle(cases)
 
 for i in range(n):
     lim = Limit(rand_expr(cases[i]), x, oo)
