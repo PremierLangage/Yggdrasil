@@ -24,6 +24,8 @@ def rand_expr(i):
         return choice([-1, 1])*inf1 + choice([-1, 1])*f1
     elif i == 2:
         return choice([-1, 1])*inf1 + choice([-1, 1])*b1
+    elif i == 3:
+        return inf1/inf2
 
 for i in range(n):
     lim = Limit(rand_expr(i), x, oo)
