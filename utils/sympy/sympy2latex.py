@@ -112,6 +112,9 @@ class CustomLatexPrinter(LatexPrinter):
 
     def _print_NegativeInfinity(self, expr):
         return r"-\infty"
+    
+    def _print_Pi(self, expr):
+        return r"\pi"
 
 def latex(expr, **settings):
     """
