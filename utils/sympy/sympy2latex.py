@@ -11,11 +11,18 @@ class CustomLatexPrinter(LatexPrinter):
     """
     printmethod = ""
 
+    _default_custom_settings = {'interv_rev_brack': False}
+
+    @classmethod
+    def _get_initial_custom_settings(cls):
+        return cls._default_custom_settings.copy()
+
     def __init__(self, settings=None):
-        custom_settings = {}
-        custom_settings['interv_rev_brack'] = settings.pop('interv_rev_brack', False)
-        LatexPrinter.__init__(self, settings)
-        self.custom_settings = custom_settings
+        custom_settings = self._get_initial_custom_settings()
+        for k, v in custom_settings:
+            custom_settings[k] = settings.pop(k, v)
+        super().__init__(self, settings)
+        self._custom_settings = custom_settings
 
     def _print_Poly(self, poly):
         """
