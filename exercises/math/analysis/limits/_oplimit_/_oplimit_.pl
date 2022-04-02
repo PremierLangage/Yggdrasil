@@ -14,6 +14,7 @@ inf = [ln(x), exp(x), x]
 f = [atan(x), x/(x+1)]
 b = [sin(x), cos(x)]
 
+
 def rand_expr(i):
     inf1, inf2 = sample(inf, 2)
     f1, f2 = sample(f, 2)
