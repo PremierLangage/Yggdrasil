@@ -6,7 +6,7 @@ rd = random.Random()
 
 def csv_choice(f, **kwargs):
     """
-    Return a random row from a csv file/string (as a dictionary)
+    Return a random row from a csv file/string.
     """
 
     if isinstance(f, str):
@@ -16,7 +16,7 @@ def csv_choice(f, **kwargs):
 
 def csv_sample(f, k, **kwargs):
     """
-    Return a random sample from a csv file/string (as a list of dictionaries)
+    Return a random sample of rows from a csv file/string.
     """
     if isinstance(f, str):
         return rd.sample(list(DictReader(StringIO(f), **kwargs)), k)
@@ -25,7 +25,7 @@ def csv_sample(f, k, **kwargs):
 
 def csv_col(f, col, delimiter=','):
     """
-    Return data in sample from a csv file/string (as a list of dictionaries)
+    Return a given column from csv file/string.
     """
     if isinstance(f, str):
         reader = DictReader(StringIO(f), **kwargs)
