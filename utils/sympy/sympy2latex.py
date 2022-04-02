@@ -19,7 +19,7 @@ class CustomLatexPrinter(LatexPrinter):
 
     def __init__(self, settings=None):
         custom_settings = self._get_initial_custom_settings()
-        for k, v in custom_settings:
+        for k, v in custom_settings.items():
             custom_settings[k] = settings.pop(k, v)
         super().__init__(self, settings)
         self._custom_settings = custom_settings
