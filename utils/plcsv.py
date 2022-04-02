@@ -25,7 +25,7 @@ def csv_sample(f, k, **kwargs):
 
 def csv_col(f, col, delimiter=','):
     """
-    Return a given column from csv file/string.
+    Return a given column from a csv file/string.
     """
     if isinstance(f, str):
         reader = DictReader(StringIO(f), **kwargs)
