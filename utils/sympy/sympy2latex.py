@@ -21,7 +21,7 @@ class CustomLatexPrinter(LatexPrinter):
         custom_settings = self._get_initial_custom_settings()
         for k, v in custom_settings.items():
             custom_settings[k] = settings.pop(k, v)
-        super().__init__(self, settings)
+        super().__init__(settings)
         self._custom_settings = custom_settings
 
     def _print_Poly(self, poly):
