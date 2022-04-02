@@ -17,12 +17,6 @@ class CustomLatexPrinter(LatexPrinter):
         LatexPrinter.__init__(self, settings)
         self.custom_settings = custom_settings
 
-    def update_settings(self, settings):
-        custom_settings = {}
-        custom_settings['interv_rev_brack'] = settings.pop('interv_rev_brack', False)
-        self.settings.update(settings)
-        self.custom_settings = custom_settings
-
     def _print_Poly(self, poly):
         """
         Return a LaTeX code for a Poly object.
