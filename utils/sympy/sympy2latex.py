@@ -1,6 +1,5 @@
 import sympy as sp
 from sympy.printing.latex import LatexPrinter
-from sympy.core.compatibility import default_sort_key
 
 class CustomLatexPrinter(LatexPrinter):
     """ 
