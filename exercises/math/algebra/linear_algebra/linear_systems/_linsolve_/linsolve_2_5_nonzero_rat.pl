@@ -1,4 +1,4 @@
-extends = linsys_.pl
+extends = linsolve_.pl
 
 title = Système linéaire 2 x 2
 
