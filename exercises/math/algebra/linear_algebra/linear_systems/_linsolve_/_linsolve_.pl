@@ -15,13 +15,13 @@ coeffboundB = param['coeffboundB']
 sparsity = param['sparsity']
 
 if 'maxdet' in param:
-    A=randint_invertible(n,coeffboundA,[0], sparsity, param['mindet'], param['maxdet'])
+    A=randmat_invertible(n,coeffboundA,[0], sparsity=sparsity, detbound=[param['mindet'], param['maxdet']])
 else:
-    A=randint_invertible(n, coeffboundA,[0],sparsity)
+    A=randmat_invertible(n, coeffboundA,[0], sparsity=sparsity)
 if param['typesol']=="rat":
     B=randint_matrix(n,1,coeffboundB,[0])
 else:
-    sol=randint_matrix(n,1,5)
+    sol=randmat(n,1,5)
     B=A*sol
 
 sol = list(linsolve((A, B)))[0]
