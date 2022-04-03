@@ -31,7 +31,7 @@ from sympy2latex import CustomLatexPrinter
 latex = CustomLatexPrinter(latexsettings).doprint
 from latex2sympy import latex2sympy
 from randsympy import randpoly
-from randysmpy import randmat, randmat_invertible, randmat_fullrank, randmat_givenrank
+from randsympy import randmat, randmat_invertible, randmat_fullrank, randmat_givenrank
 ==
 
 style.basic =@ /model/css/basic.css.html
