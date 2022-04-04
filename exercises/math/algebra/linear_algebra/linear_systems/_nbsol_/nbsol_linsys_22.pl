@@ -30,7 +30,13 @@ def generate_data();
     system = latex_linsys(A, B)
     return indexsol, system
 
-indexsol, system = generate_data()
+inputs = [Radio() for _ in range(3)]
+
+for i in range(3):
+    indexsol, system = generate_data()
+    inputs[i].set_items(["Une unique solution", "Une infinité de solutions", "Aucune solution"])
+    inputs[i].set_sol(indexsol)
+
 
 system = latex_linsys(A, B)
 lstvar = "x, y"
