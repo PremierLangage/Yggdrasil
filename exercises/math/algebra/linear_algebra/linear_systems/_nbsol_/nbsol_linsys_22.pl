@@ -7,6 +7,8 @@ extends = model/math/inputgroup.pl
 title = Nombre de solutions d'un sytème
 
 before ==
+from radio import Radio
+
 from sympy2latex import latex_linsys
 n = 2
 vec = [randint(-2, 2) for _ in range(n)]
