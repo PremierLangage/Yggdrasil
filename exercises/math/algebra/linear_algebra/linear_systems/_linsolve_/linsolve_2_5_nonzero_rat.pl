@@ -1,6 +1,6 @@
 extends = _linsolve_.pl
 
-title = Système linéaire 2 x 2
+title = "Système linéaire 2 x 2"
 
 param.size = 2
 
@@ -12,9 +12,4 @@ param.sparsity = 0
 
 param.typesol = "rat"
 
-param.maxdet = 6
-
-param.mindet = 2
-
-
-
+param.detbound = [2, 6]
