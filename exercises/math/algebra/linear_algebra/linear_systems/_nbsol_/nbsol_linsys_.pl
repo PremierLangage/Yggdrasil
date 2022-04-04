@@ -16,7 +16,7 @@ Aucune solution
 
 before ==
 indexsol = randint(0, 2)
-vec = [randin(-2, 2) for _ in range(3)]
+vec = [randint(-2, 2) for _ in range(3)]
 
 if indexsol == 0:
     A = randmat_givenrank(3, 3, 3, magnitude=2)
