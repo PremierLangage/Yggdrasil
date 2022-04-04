@@ -2,7 +2,7 @@
 # Last update : 09/01/21
 # Keywords : linear systems
 
-extends = model/math/inputgroup.pl
+extends = model/math/input0.pl
 
 title = Nombre de solutions d'un sytème
 
