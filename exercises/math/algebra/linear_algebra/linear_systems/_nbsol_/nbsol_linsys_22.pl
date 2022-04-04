@@ -7,6 +7,7 @@ extends = nbsol_linsys_.pl
 title = Nombre de solutions d'un sytème 2x2
 
 before ==
+frim sympy2latex import latex_linsys
 n = 2
 indexsol = randint(0, 2)
 vec = [randint(-2, 2) for _ in range(n)]
