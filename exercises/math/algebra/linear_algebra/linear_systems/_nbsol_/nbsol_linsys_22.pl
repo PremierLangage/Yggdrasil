@@ -30,8 +30,7 @@ def generate_data();
     system = latex_linsys(A, B)
     return indexsol, system
 
-for i in range(3):
-    indexsol, system = generate_data
+indexsol, system = generate_data()
 
 system = latex_linsys(A, B)
 lstvar = "x, y"
