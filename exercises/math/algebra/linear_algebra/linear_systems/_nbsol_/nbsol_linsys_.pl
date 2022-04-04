@@ -6,9 +6,9 @@ extends = /model/math/radio.pl
 
 title = Nombre de solutions d'un sytème 3x3
 
-shuffle % false
+shuffle = False
 
-choices ==
+itmes ==
 Une unique solution
 Une infinité de solutions
 Aucune solution
