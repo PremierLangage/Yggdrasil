@@ -16,16 +16,16 @@ Aucune solution
 
 before ==
 indexsol = randint(0, 2)
-vec = list_randint(3, -2, 2)
+vec = [randin(-2, 2) for _ in range(3)]
 
 if indexsol == 0:
-    A = randint_matrix_givenrank(3, 3, 3, magnitude=2)
+    A = randmat_givenrank(3, 3, 3, magnitude=2)
     B = A*Matrix(vec)
 elif indexsol == 1:
-    A = randint_matrix_givenrank(3, 3, 2, magnitude=2)
+    A = randmat_givenrank(3, 3, 2, magnitude=2)
     B = A*Matrix(vec)
 else:
-    A = randint_matrix_givenrank(3, 3, 2, magnitude=2)
+    A = randmat_givenrank(3, 3, 2, magnitude=2)
     while True:
         perturbation = [0, 0, randitem([-1,1])]
         rd.shuffle(perturbation)
