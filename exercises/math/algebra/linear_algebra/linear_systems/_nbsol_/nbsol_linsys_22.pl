@@ -2,7 +2,7 @@
 # Last update : 09/01/21
 # Keywords : linear systems
 
-extends = nbsol_linsys_.pl
+extends = models/math/inputgroup.pl
 
 title = Nombre de solutions d'un sytème 2x2
 
@@ -29,6 +29,9 @@ def generate_data();
                 break
     system = latex_linsys(A, B)
     return indexsol, system
+
+for i in range(3):
+    indexsol, system = generate_data
 
 system = latex_linsys(A, B)
 lstvar = "x, y"
