@@ -6,7 +6,7 @@ extends = /model/math/tuple.pl
 
 title = Système linéaire
 
-before ==
+before == #|py|
 from sympy import linsolve
 from sympy2latex import latex_linsys
 n = param['size']
@@ -18,7 +18,7 @@ detbound = param['detbound']
 A=randmat_invertible(n,coeffboundA,[0], sparsity=sparsity, detbound=detbound)
 
 if param['typesol']=="rat":
-    B=randmat(n,1,coeffboundB,[0])
+    B = randmat(n,1,coeffboundB,[0])
 else:
     sol=randmat(n,1,5)
     B=A*sol
