@@ -85,8 +85,8 @@ def randmat_givenrank(rows, cols, rank, magnitude=1):
         P = randmat_fullrank(rows, rank, 1)
         Q = randmat_fullrank(rank, cols, magnitude)
         B = P*Q
-        zerorows = sum([sum(B.row(i))==0 for i in range(n)])
-        diffrows = len(set([tuple(B.row(i)) for i in range(n)]))
-        diffcols = len(set([tuple(B.col(i)) for i in range(m)]))
+        zerorows = sum([sum(B.row(i))==0 for i in range(rows)])
+        diffrows = len(set([tuple(B.row(i)) for i in range(rows)]))
+        diffcols = len(set([tuple(B.col(i)) for i in range(cols)]))
         if zerorows == 0 and diffrows == rows and diffcols == cols:
             return B
