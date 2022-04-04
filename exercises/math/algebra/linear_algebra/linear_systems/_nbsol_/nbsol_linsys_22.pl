@@ -9,7 +9,7 @@ title = Nombre de solutions d'un sytème 2x2
 before ==
 n = 2
 indexsol = randint(0, 2)
-vec = [randin(-2, 2) for _ in range(3)]
+vec = [randint(-2, 2) for _ in range(3)]
 
 if indexsol == 0:
     A = randmat_givenrank(n, n, n, magnitude=2)
