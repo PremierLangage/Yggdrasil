@@ -37,7 +37,7 @@ system = latex_linsys(A, B)
 lstvar = "x, y, z"
 ==
 
-text ==
+question ==
 On considère le système suivant (d'inconnues $!x, y, z !$) :
 $$ {{system}} $$
 Combion de solutions possède ce système ?
