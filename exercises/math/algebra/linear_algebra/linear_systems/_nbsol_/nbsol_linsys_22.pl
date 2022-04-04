@@ -4,7 +4,7 @@
 
 extends = model/math/inputgroup.pl
 
-title = Nombre de solutions d'un sytème 2x2
+title = Nombre de solutions d'un sytème
 
 before ==
 from sympy2latex import latex_linsys
@@ -34,4 +34,35 @@ indexsol, system = generate_data()
 
 system = latex_linsys(A, B)
 lstvar = "x, y"
+==
+
+
+
+evaluator == #|py|
+# Evaluate all input fields
+for input in inputs:
+    input.eval()
+
+# Compute score   
+scores = [input.score for input in inputs]
+if -1 in scores:
+    score = -1
+else:
+    score = sum(lst)//len(lst)
+
+# Display feedback
+if score != -1:
+    for input in inputs:
+        input.display_feedback()
+else:
+    for input in inputs:
+        if input.score == -1:
+            input.display_feedback()
+        else:
+            input.hide_feedback()
+
+# Disable input fields
+if score != -1:
+    for input in inputs:
+        input.disable()
 ==
