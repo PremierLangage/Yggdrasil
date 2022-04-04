@@ -8,7 +8,7 @@ title = Nombre de solutions d'un sytème 3x3
 
 shuffle = False
 
-itmes ==
+items ==
 Une unique solution
 Une infinité de solutions
 Aucune solution
