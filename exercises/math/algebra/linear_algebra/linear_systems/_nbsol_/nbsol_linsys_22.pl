@@ -13,7 +13,7 @@ from sympy2latex import latex_linsys
 n = 2
 vec = [randint(-2, 2) for _ in range(n)]
 
-def generate_data();
+def generate_data():
     indexsol = randint(0, 2)
     if indexsol == 0:
         A = randmat_givenrank(n, n, n, magnitude=2)
