@@ -13,7 +13,6 @@ inputs[1].sol = "Rome"
 ==
 
 inputblock == #|html|
-{{ test }}
 <div style="display:flex; align-items: center; margin-bottom: 1em;">
   <div> France : </div>
   <div style="margin-left: 1em;"> {{ inputs[0]|component }}</div>
