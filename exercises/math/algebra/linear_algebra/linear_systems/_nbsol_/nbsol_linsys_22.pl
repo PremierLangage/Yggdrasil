@@ -24,7 +24,7 @@ def generate_data():
     else:
         A = randmat_givenrank(n, n, n-1, magnitude=2)
         while True:
-            perturbation = [0, 0, choice([-1,1])]
+            perturbation = [0, choice([-1,1])]
             shuffle(perturbation)
             B = A*Matrix(vec) + Matrix(perturbation)
             if linsolve((A, B)) == EmptySet:
