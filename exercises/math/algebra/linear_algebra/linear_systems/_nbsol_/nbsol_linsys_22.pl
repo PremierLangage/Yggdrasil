@@ -8,7 +8,7 @@ title = Nombre de solutions d'un sytème
 
 extends = /model/basic/basic.pl
 
-before_scripts = ["mathimport", "initinput", "before", "process"]
+before_scripts = ["mathimport", "before"]
 
 
 mathimport == #|py|
