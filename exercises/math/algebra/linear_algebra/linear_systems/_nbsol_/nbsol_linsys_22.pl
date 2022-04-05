@@ -70,7 +70,7 @@ lstvar = "x, y"
 ==
 
 question ==
-
+Combien de solutions possède chacun des systèmes suivants ?
 ==
 
 solution ==
