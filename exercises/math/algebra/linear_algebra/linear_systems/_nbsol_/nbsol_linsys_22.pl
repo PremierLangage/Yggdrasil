@@ -43,6 +43,10 @@ for i in range(3):
 lstvar = "x, y"
 ==
 
+question ==
+
+==
+
 inputblock ==
 {% for input in inputs %}
 <div>
