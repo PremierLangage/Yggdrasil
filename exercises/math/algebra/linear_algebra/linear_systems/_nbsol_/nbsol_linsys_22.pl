@@ -39,9 +39,7 @@ for i in range(3):
     indexsol, system = generate_data()
     inputs[i].set_items(["Une unique solution", "Une infinité de solutions", "Aucune solution"])
     inputs[i].set_sol(indexsol)
-
-
-system = latex_linsys(A, B)
+    system = latex_linsys(A, B)
 lstvar = "x, y"
 ==
 
