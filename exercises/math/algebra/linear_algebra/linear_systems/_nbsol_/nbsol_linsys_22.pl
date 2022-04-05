@@ -59,8 +59,10 @@ def generate_data():
 
 inputs = [Radio() for _ in range(3)]
 
+systems = []
 for i in range(3):
     indexsol, system = generate_data()
+    systems.append(system)
     inputs[i].set_items(["Une unique solution", "Une infinité de solutions", "Aucune solution"])
     inputs[i].set_sol(indexsol)
 
@@ -76,10 +78,10 @@ solution ==
 ==
 
 inputblock ==
-{% for input in inputs %}
+{% for i in range(3) %}
 <div>
-1.
-{{ input|component }}
+1. [[ systems[i]
+{{ inputs[i]|component }}
 </div>
 {% endfor %}
 ==
