@@ -79,7 +79,7 @@ inputblock ==
 {% for input in inputs %}
 <div>
 1.
-{{ input|mathinput }}
+{{ input|component }}
 </div>
 {% endfor %}
 ==
