@@ -71,6 +71,10 @@ question ==
 
 ==
 
+solution ==
+
+==
+
 inputblock ==
 {% for input in inputs %}
 <div>
