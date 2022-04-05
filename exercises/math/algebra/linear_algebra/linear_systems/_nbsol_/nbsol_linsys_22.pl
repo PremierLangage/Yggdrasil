@@ -76,12 +76,7 @@ solution ==
 ==
 
 inputblock ==
-{% for input in inputs %}
-<div>
-1.
-{{ input|mathinput }}
-</div>
-{% endfor %}
+
 ==
 
 
