@@ -1,4 +1,4 @@
-extends = /model/basic/basic2.pl
+extends = /model/basic/basic.pl
 
 # Main keys
 
@@ -9,13 +9,14 @@ Quelle est la réponse ?
 # Input block
 
 inputblock == #|html|
-{{ group.inputs[0]|component }}
-{{ group.inputs[1]|component }}
+{{ inputs[0]|component }}
+{{ inputs[1]|component }}
 ==
 
 # Before scripts
 
 before_scripts = ["importfunc", "initinput", "before", "process"]
+jinja_keys = ["question", "inputblock", "solution"]
 
 importfunc == #|py|
 from random import choice, choices, sample, shuffle
@@ -24,18 +25,19 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from inputgroup import InputGroup
 from textinput import TextInput
+from numinput import NumInput
 from radio import Radio
-group = InputGroup()
+from checkbox import Checkbox
+weights = []
 ==
 
 before == #|py|
-group.inputs = [TextInput(), Radio()]
+inputs = [TextInput(), Radio()]
 
-group.inputs[0].sol = "toto"
-group.inputs[1].set_items(["AA", "BB", "CC"])
-group.inputs[1].set_sol(0)
+inputs[0].sol = "toto"
+inputs[1].set_items(["AA", "BB", "CC"])
+inputs[1].set_sol(0)
 ==
 
 process == #|py|
@@ -45,8 +47,30 @@ process == #|py|
 # Evaluation scripts
 
 evaluator == #|py|
-score = group.eval()
+# Evaluate all input fields
+for input in inputs:
+    input.eval()
+
+# Compute score   
+scores = [input.score for input in inputs]
+if -1 in scores:
+    score = -1
+else:
+    score = sum(scores)//len(scores)
+
+# Display feedback
 if score != -1:
-    group.display_feedback()
-    group.disable()
+    for input in inputs:
+        input.display_feedback()
+else:
+    for input in inputs:
+        if input.score == -1:
+            input.display_feedback()
+        else:
+            input.hide_feedback()
+
+# Disable input fields
+if score != -1:
+    for input in inputs:
+        input.disable()
 ==
