@@ -44,6 +44,13 @@ system = latex_linsys(A, B)
 lstvar = "x, y"
 ==
 
+inputblock ==
+{% for input in inputs %}
+1. {{ system }}
+{{ input|mathinput }}
+</div>
+{% endfor %}
+==
 
 
 evaluator == #|py|
