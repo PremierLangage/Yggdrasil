@@ -10,7 +10,7 @@ before ==
 from radio import Radio
 
 from sympy2latex import latex_linsys
-from sympy import linsolve
+from sympy import linsolve, EmptySet
 
 def generate_data():
     n = 2
