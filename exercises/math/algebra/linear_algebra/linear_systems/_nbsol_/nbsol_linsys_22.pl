@@ -97,7 +97,7 @@ scores = [input.score for input in inputs]
 if -1 in scores:
     score = -1
 else:
-    score = sum(lst)//len(lst)
+    score = sum(scores)//len(scores)
 
 # Display feedback
 if score != -1:
