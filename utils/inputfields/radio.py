@@ -12,7 +12,7 @@ class Radio(Component):
 
     def set_items(self, items):
         """
-        Set the items for the list of choices.
+        Set the list of items used as choices.
         """
         if isinstance(items, list):
             self.items = [{"id": str(uuid4()), "content": str(item)} for item in items]
@@ -21,7 +21,7 @@ class Radio(Component):
 
     def set_sol(self, index):
         """
-        Set the solution item (from its index in the list of items).
+        Set the solution item by giving its index in the list of items.
         """
         self.sol = self.items[index]['id']
 
