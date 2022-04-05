@@ -45,7 +45,7 @@ lstvar = "x, y"
 
 inputblock ==
 {% for input in inputs %}
-1. {{ system }}
+1.
 {{ input|mathinput }}
 </div>
 {% endfor %}
