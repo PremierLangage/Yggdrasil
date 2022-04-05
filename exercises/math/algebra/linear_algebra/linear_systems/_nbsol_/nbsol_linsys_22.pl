@@ -80,7 +80,7 @@ solution ==
 inputblock ==
 {% for i in range(3) %}
 <div>
-1. [[ systems[i]
+{{ i+1 }}. $$ {{ systems[i] }} $$
 {{ inputs[i]|component }}
 </div>
 {% endfor %}
