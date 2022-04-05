@@ -2,7 +2,7 @@
 # Last update : 09/01/21
 # Keywords : linear systems
 
-extends = /model/basic/basic.pl
+extends = /model/math/radio.pl
 
 title = Nombre de solutions d'un sytème
 
