@@ -15,5 +15,5 @@ var vec = board.create('segment',[pt1, pt2],{color:'blue', lastArrow: {type: 2, 
 ==
 
 question ==
-On considère deux vecteurs $! \vec{u} !$ et  $! \vec{v} !$ représentés graphiquement ci-dessous. Modifier le vecteur bleu de façon à ce qu'il représente le vecteur $! \vec{u} + \vec{v} !$ . 
+Modifier le vecteur bleu de façon à ce qu'il représente le vecteur de coordonnées {{ sol }} . 
 ==
