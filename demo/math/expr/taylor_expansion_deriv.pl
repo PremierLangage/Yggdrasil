@@ -7,8 +7,6 @@ dlf = 1 -x + x**2 + O(x**3)
 sol = diff(dlf, x)
 ==
 
-equality = ""
-
 question ==
 On a $! f(x) = {{ dlf|latex }} !$ (autour de $! 0 !$).
 En déduire le développement limité de de $! f' !$ (autour de $! 0 !$).
