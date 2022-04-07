@@ -85,4 +85,4 @@ Pour le boss indiqué ci dessus: le cout minimal pour tuer le boss est 79 et le 
 
 Pour votre boss (du fichier boss.json) écrire des fonctions
 
-question1 et question2 qui retourne les valeurs attendues.
+Question1 et Question2 qui retourne les valeurs attendues.
