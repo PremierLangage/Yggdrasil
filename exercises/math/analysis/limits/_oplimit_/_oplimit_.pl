@@ -1,4 +1,4 @@
-extends = /model/math/multinput.pl
+extends = /model/math/multimathinput.pl
 title = Calcul de limites
 
 param.form = [0, 1, 2]
