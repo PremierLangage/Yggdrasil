@@ -11,7 +11,6 @@ extends = /ComputerScience/python/template/pltest.pl
 @ armure.json
 @ exemple.json
 
-@exemple
 
 title= Boss Killer
 
