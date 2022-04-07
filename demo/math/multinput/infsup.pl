@@ -1,4 +1,4 @@
-extends = /model/math/multinput.pl
+extends = /model/math/multimathinput.pl
 
 title = Bornes d'un ensemble
 
