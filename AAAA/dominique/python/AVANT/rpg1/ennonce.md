@@ -60,15 +60,15 @@ Vous avez 100 points de vie. Les statistiques réelles du boss sont dans votre e
 Aujourd'hui on fait du json
 ---------------------------
 
-
+<code>
         import json
         with open('exemple.json',"r") as f:
              data= json.load(f)
          
         print(data)
-        
-        {'Points de vie': 103, 'Dommage': 9, 'Armure': 2}
 
+        {'Points de vie': 103, 'Dommage': 9, 'Armure': 2}
+</code>
 
 Vous avez a votre disposition 3 fichiers :
 "armes.json","armure.json","armure.json" qui contiennent les élements de la boutique sous forme d'un dictionnaire ou chaque objet est décrit par une liste de 3 entiers.
