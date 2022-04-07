@@ -3,26 +3,21 @@ extends = /model/math/expr.pl
 before ==
 from sympy import O, series
 var('x')
-f = choice([sin(x), cos(x), exp(x), 1/(1-x)])
-f = cos(sin(x))
-n = randint(5, 6)
-sol = series(f, x, 0, n+1).removeO()
+dlf = 1 -x + x**2 + O(x**3)
+sol = diff(dlf, x)
 ==
 
 equality = ""
 
 question ==
-Ecrire le développement limité de de $! {{ f|latex }} !$ autour de $! 0 !$ à l'ordre $! {{ n }} !$.
-==
-
-embed ==
-# + o({{ x }}^{{ n }}) \quad [x \rightarrow 0]
+On a $! f(x) = {{ dlf|latex }} !$ (autour de $! 0 !$).
+En déduire le développement limité de de $! f' !$ (autour de $! 0 !$).
 ==
 
 prefix ==
-$! {{ f|latex }} = !$
+$! f'(x) = !$
 ==
 
 solution ==
-$! {{ sol|latex }} + o({{ x }}^{{ n }})  \quad [x \rightarrow 0]!$.
+$! {{ sol|latex }} !$.
 ==
