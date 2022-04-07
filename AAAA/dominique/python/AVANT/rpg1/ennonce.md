@@ -60,13 +60,13 @@ Vous avez 100 points de vie. Les statistiques réelles du boss sont dans votre e
 Aujourd'hui on fait du json
 ---------------------------
 
-import json
-with open('exemple.json',"r") as f:
-        data= json.load(f)
+import json  
+with open('exemple.json',"r") as f:  
+        data= json.load(f)  
     
-print(data)
+print(data)  
 
-{'Points de vie': 103, 'Dommage': 9, 'Armure': 2}
+{'Points de vie': 103, 'Dommage': 9, 'Armure': 2}  
 
 
 Vous avez a votre disposition 3 fichiers :
