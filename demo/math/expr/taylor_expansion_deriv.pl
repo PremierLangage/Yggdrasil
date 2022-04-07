@@ -19,5 +19,5 @@ $! f'(x) = !$
 ==
 
 solution ==
-$! {{ sol|latex }} !$.
+$! {{ sol|latex }} !$
 ==
