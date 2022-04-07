@@ -37,6 +37,7 @@ class JXGVector(JXGInput):
             """
             self.add_script(script)
         else:
+            x1, y1 = self.get_point(self.pointnames[0])
             script = """
             pt1.setAttribute({color: 'red'});
             pt2.setAttribute({color: 'red'});
