@@ -1,7 +1,5 @@
 extends = /model/jxg/vector.pl
 
-title = Addition de vecteurs
-
 before ==
 sol = sampleint(-5, 5, 2)
 ==
@@ -15,5 +13,5 @@ var vec = board.create('segment',[pt1, pt2],{color:'blue', lastArrow: {type: 2, 
 ==
 
 question ==
-Modifier le vecteur bleu de façon à ce qu'il représente le vecteur de coordonnées {{ sol }} . 
+Modifier le vecteur ci-dessous pour en faire un vecteur de coordonnées $! {{ sol[0] }}, {{ sol[1] }} !$. 
 ==
