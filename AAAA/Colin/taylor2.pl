@@ -6,7 +6,7 @@ before ==
 from sympy import O, series
 var('x')
 dlf = 1 -x + x**2 + O(x**3)
-#sol = diff(dlf, x)
+sol = diff(dlf, x)
 ==
 
 question ==
