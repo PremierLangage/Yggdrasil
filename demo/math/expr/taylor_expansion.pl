@@ -8,8 +8,6 @@ n = randint(3, 4)
 sol = series(f, x, 0, n+1).removeO()
 ==
 
-equality = ""
-
 question ==
 Ecrire le développement limité de de $! {{ f|latex }} !$ autour de $! 0 !$ à l'ordre $! {{ n }} !$.
 ==
