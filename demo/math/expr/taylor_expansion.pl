@@ -4,8 +4,7 @@ before ==
 from sympy import O, series
 var('x')
 f = choice([sin(x), cos(x), exp(x), 1/(1-x)])
-f = cos(sin(x))
-n = randint(5, 6)
+n = randint(3, 4)
 sol = series(f, x, 0, n+1).removeO()
 ==
 
