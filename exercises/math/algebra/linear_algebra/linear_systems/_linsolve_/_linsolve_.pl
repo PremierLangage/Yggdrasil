@@ -6,6 +6,7 @@ extends = /model/math/tuple.pl
 
 title = Système linéaire
 
+
 before == #|py|
 from sympy import linsolve
 from sympy2latex import latex_linsys
