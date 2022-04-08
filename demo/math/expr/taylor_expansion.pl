@@ -1,7 +1,7 @@
 extends = /model/math/expr.pl
 
 before ==
-from sympy import O, series
+from sympy import series
 var('x')
 f = choice([sin(x), cos(x), exp(x), 1/(1-x)])
 n = randint(3, 4)
@@ -23,6 +23,5 @@ $! {{ f|latex }} = !$
 solution ==
 $! {{ sol|latex }} + o({{ x }}^{{ n }})  \quad [x \rightarrow 0]!$.
 ==
-
 
 latexsettings.order = 'ilex'
