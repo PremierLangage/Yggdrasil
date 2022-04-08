@@ -15,7 +15,7 @@ coeffboundB = param['coeffboundB']
 sparsity = param['sparsity']
 detbound = param['detbound']
 
-A=randmat_invertible(n,coeffboundA,[0], sparsity=sparsity, detbound=detbound)
+A = randmat_invertible(n,coeffboundA,[0], sparsity=sparsity, detbound=detbound)
 
 if param['typesol']=="rat":
     B = randmat(n,1,coeffboundB,[0])
