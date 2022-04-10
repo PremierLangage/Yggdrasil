@@ -50,8 +50,6 @@ if __name__ == "__main__":
                     dic[k][k2] = literal_eval(str(v2))
         except:
             pass
-
-    Component.sync_context(dic)
     
     before_scripts = dic.get('before_scripts', ['headerbefore', 'before', 'footerbefore'])
     code = "\n".join([dic.get(name, "") for name in before_scripts])
