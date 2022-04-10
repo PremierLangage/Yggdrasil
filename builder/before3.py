@@ -100,7 +100,13 @@ if __name__ == "__main__":
 
     dic['form'] = dic['tplpage']
 
+    # Serialize
     dic = json.loads(json.dumps(dic, cls=JSONEncoder))
+
+    # Duplicate
+    comps = getcomp(dic, 0)
+    for i in range(len(comps)):
+        dic[f"__comp{i}__"] = comps[i]
 
 
     with open(outputfilename, "w+") as f:
