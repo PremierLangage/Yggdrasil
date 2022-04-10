@@ -3,8 +3,10 @@ extends = /model/basic/numinput.pl
 
 before == #|py|
 sol = 3
+test = [NumInput(value=34), NumInput()]
 ==
 
 question ==
 Entrer 3
+{{test[0]|component}}
 ==
