@@ -4,7 +4,6 @@
 
 import sys, json, jsonpickle
 from components import Component
-from builderlib import aux_component
 from ast import literal_eval
 
 from sympy import Basic, Matrix
