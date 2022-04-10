@@ -7,15 +7,17 @@ from components import Component
 from builderlib import aux_component
 from ast import literal_eval
 
+from sympy import Basic, Matrix
+
 # import JSON encoder
 class JSONEncoder(json.JSONEncoder):
 
     def default(self, obj):
         if isinstance(obj, (Basic, Matrix)):
             return {'__SymPy__': True, 'srepr': srepr(obj)}
-        if isinstance(obj, Serializable): #Component
+        if isinstance(obj, Component):
             dic = vars(obj)
-            dic["__class__"] = obj.__class__.__name__
+            #dic["__class__"] = obj.__class__.__name__
             for k, v in dic.items():
                 if isinstance(v, dict):
                     dic[k] = self.default(v)
