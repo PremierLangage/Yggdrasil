@@ -70,8 +70,6 @@ if __name__ == "__main__":
     if 'javascript' in dic:
         dic['extrajs'] = "%s" % "\n".join(reversed(list(dic['javascript'].values())))
 
-    # HACK for components in lists
-
 
     #temporary
     if not 'question' in dic:
@@ -101,6 +99,9 @@ if __name__ == "__main__":
                     dic[key][i] = Env.from_string(macros + dic[key][i]).render(dic)
 
     dic['form'] = dic['tplpage']
+
+    dic = json.loads(json.dumps(dic, cls=JSONEncoder))
+
 
     with open(outputfilename, "w+") as f:
         json.dump(dic, f, cls=JSONEncoder)
