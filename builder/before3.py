@@ -71,7 +71,7 @@ if __name__ == "__main__":
         dic['extrajs'] = "%s" % "\n".join(reversed(list(dic['javascript'].values())))
 
     # HACK for components in lists
-    aux_component(dic)
+
 
     #temporary
     if not 'question' in dic:
