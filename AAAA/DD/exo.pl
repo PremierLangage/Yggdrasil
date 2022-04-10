@@ -1,4 +1,4 @@
-extends = /model/math/numinput.pl
+extends = /model/basic/numinput.pl
 @ /builder/before3.py [builder.py]
 
 before == #|py|
