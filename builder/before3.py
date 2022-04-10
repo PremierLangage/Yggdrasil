@@ -2,13 +2,26 @@
 # coding: utf-8
 # Nouvelle version de before
 
-import sys, json
+import sys, json, jsonpickle
 from components import Component
 from builderlib import aux_component
 from ast import literal_eval
 
 # import JSON encoder
-from json_encoder import JSONEncoder
+class JSONEncoder(json.JSONEncoder):
+
+    def default(self, obj):
+        if isinstance(obj, (Basic, Matrix)):
+            return {'__SymPy__': True, 'srepr': srepr(obj)}
+        if isinstance(obj, Serializable): #Component
+            dic = vars(obj)
+            dic["__class__"] = obj.__class__.__name__
+            for k, v in dic.items():
+                if isinstance(v, dict):
+                    dic[k] = self.default(v)
+            return dic
+        return jsonpickle.Pickler(unpicklable=False).flatten(obj)
+
 
 # import Jinja environnement
 from jinja_env import Env
