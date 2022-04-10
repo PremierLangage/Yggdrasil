@@ -110,6 +110,6 @@ if __name__ == "__main__":
 
 
     with open(outputfilename, "w+") as f:
-        json.dump(dic, f, cls=JSONEncoder)
+        json.dump(dic, f)
 
     sys.exit(0)
