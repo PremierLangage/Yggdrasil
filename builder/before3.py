@@ -24,6 +24,20 @@ class JSONEncoder(json.JSONEncoder):
             return dic
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
+def get_comps(obj, depth=0):
+    comps = []
+    if isinstance(obj, dict):
+        if 'cid' in obj:
+            if depth > 1:
+                return [obj]
+        else:
+            for k, v in obj.items():
+                comps += get_comps(v, depth+1)
+    if isinstance(obj, list):
+        for item in obj:
+            comps += get_comps(item, depth+1)
+    return comps
+    
 
 # import Jinja environnement
 from jinja_env import Env
@@ -104,7 +118,7 @@ if __name__ == "__main__":
     dic = json.loads(json.dumps(dic, cls=JSONEncoder))
 
     # Duplicate
-    comps = getcomp(dic, 0)
+    comps = get_comps(dic, 0)
     for i in range(len(comps)):
         dic[f"__comp{i}__"] = comps[i]
 
