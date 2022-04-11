@@ -68,7 +68,7 @@ def sync_comps(obj):
 if __name__ == "__main__":
 
     with open(sys.argv[1], "r") as f:
-        dic = json.load(f, cls=JSONDecoder)
+        dic = json.load(f)
 
     for k in list(dic.keys()):
         if k.startswith('__comp'):
@@ -78,6 +78,12 @@ if __name__ == "__main__":
         answers = json.load(f)
 
     sync_comps(dic)
+
+    # deserialize
+    dic = json.loads(json.dumps(dic), cls=JSONDecoder)
+
+        # Serialize
+    dic = json.loads(json.dumps(dic), cls=JSONDecoder)
 
     eval_scripts = dic.get('eval_scripts', ['evaluator'])
     code = "\n".join([dic.get(name, "") for name in eval_scripts])
