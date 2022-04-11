@@ -7,12 +7,11 @@ before == #|py|
 from inputfields import Radio, Checkbox
 sol = 3
 obj = Checkbox()
-obj.set_items(['AA', 'BB'])
+obj.set_items(['AA', 'BB', 'CC'])
 ttt = obj.render()
 ==
 
 evaluator ==
-obj.set_items(['AA', 'BB', 'CC'])
 score = 0
 ==
 
