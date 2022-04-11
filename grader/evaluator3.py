@@ -82,9 +82,6 @@ if __name__ == "__main__":
     # deserialize
     dic = json.loads(json.dumps(dic), cls=JSONDecoder)
 
-        # Serialize
-    dic = json.loads(json.dumps(dic), cls=JSONDecoder)
-
     eval_scripts = dic.get('eval_scripts', ['evaluator'])
     code = "\n".join([dic.get(name, "") for name in eval_scripts])
 
