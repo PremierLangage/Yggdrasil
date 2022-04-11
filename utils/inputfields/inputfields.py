@@ -5,7 +5,7 @@ from uuid import uuid4
 from components import Component
 from scoring import *
 
-class Serializable):
+class Serializable:
     pass
 
 class Radio(Serializable):
