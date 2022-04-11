@@ -16,15 +16,14 @@ class JSONEncoder(json.JSONEncoder):
 
     def default(self, obj):
         if isinstance(obj, (Basic, Matrix)):
-            return {'__SymPy__': True, 'srepr': srepr(obj)}
+            return {"py/object": "SymPy", 'srepr': srepr(obj)}
         if isinstance(obj, Serializable):
-            return jsonpickle.encode(obj)
-            #dic = vars(obj)
-            #dic["__classname__"] = obj.__class__.__name__
-            #for k, v in dic.items():
-            #    if isinstance(v, dict):
-            #        dic[k] = self.default(v)
-            #return dic
+            dic = vars(obj)
+            dic["py/object"] = obj.__class__.__name__
+            for k, v in dic.items():
+                if isinstance(v, dict):
+                    dic[k] = self.default(v)
+            return dic
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
 class JSONDecoder(json.JSONDecoder):
@@ -33,11 +32,11 @@ class JSONDecoder(json.JSONDecoder):
         json.JSONDecoder.__init__(self, object_hook=self.object_hook, *args, **kwargs)
 
     def object_hook(self, dic):
-        if '__SymPy__' in dic:
-            return sympify(dic['srepr'], evaluate=False)
-        if '__classname__' in dic:
-            return jsonpickle.decode(str(dic)
-            #return globals()[dic["__classname__"]](**dic)
+        if "py/object" in dic:
+            classname.dic.pop("py/object")
+            if classname = "SymPy"
+                return sympify(dic['srepr'], evaluate=False)
+            return globals()[classname](**dic)
         return dic
 
 def get_comps(obj, depth=0):
