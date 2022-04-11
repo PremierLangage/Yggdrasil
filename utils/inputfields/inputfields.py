@@ -1,5 +1,5 @@
 import random as rd
-import uuid
+from uuid import uuid4
 from components import Component
 from scoring import *
 
@@ -10,7 +10,7 @@ class Radio(Serializable):
 
     def __init__(self, **kwargs):
         if 'data' not in kwargs:
-            self.data = {'selector': 'c-radio-group', 'cid': str(uuid.uuid4())}
+            self.data = {'selector': 'c-radio-group', 'cid': str(uuid4())}
         for k, v in kwargs.items():
             setattr(self, k, v)
 
