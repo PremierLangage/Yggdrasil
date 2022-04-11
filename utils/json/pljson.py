@@ -1,5 +1,5 @@
 from sympy import Basic, Matrix
-from basicinput import Serializable, Radio, Checkbox
+from basicinput import *
 
 class Serializable:
     pass
