@@ -3,7 +3,6 @@ from uuid import uuid4
 from pljson import Serializable
 from scoring import *
 
-
 class Radio(Serializable):
 
     def __init__(self, **kwargs):
