@@ -9,6 +9,7 @@ from sympy import Basic, Matrix
 from inputfields import Serializable
 
 # import JSON encoder
+from json_encoder import JSONEncoder
 
 
 def get_comps(obj, depth=0):
