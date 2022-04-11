@@ -1,7 +1,5 @@
-
-
 import random as rd
-from uuid import uuid4
+import uuid
 from components import Component
 from scoring import *
 
