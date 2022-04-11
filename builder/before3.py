@@ -7,7 +7,7 @@ from components import Component
 from ast import literal_eval
 
 from sympy import Basic, Matrix
-
+from inputfields import Serializable
 # import JSON encoder
 class JSONEncoder(json.JSONEncoder):
 
