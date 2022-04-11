@@ -27,6 +27,10 @@ if __name__ == "__main__":
     with open(sys.argv[1], "r") as f:
         dic = json.load(f, cls=JSONDecoder)
 
+    for k in list(dic.keys()):
+        if k.startswith('__comp'):
+            del dic[k]
+
     with open(sys.argv[2], "r") as f:
         answers = json.load(f)
 
