@@ -11,5 +11,5 @@ obj.set_items(['AA', 'BB'])
 
 question ==
 Entrer 3
-{{obj|methinput}}
+{{obj|mathinput}}
 ==
