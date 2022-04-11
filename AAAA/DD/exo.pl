@@ -7,7 +7,7 @@ extends = /model/basic/basic.pl
 @ /utils/json/pljson.py
 
 before == #|py|
-from stdinput import Radio, Checkbox
+from basicinput import Radio, Checkbox
 sol = 3
 obj = Checkbox()
 obj.set_items(['AA', 'BB', 'CC'])
