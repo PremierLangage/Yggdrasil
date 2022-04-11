@@ -13,15 +13,14 @@ class JSONEncoder(json.JSONEncoder):
 
     def default(self, obj):
         if isinstance(obj, (Basic, Matrix)):
-            return {'__SymPy__': True, 'srepr': srepr(obj)}
+            return {"py/object": "SymPy", 'srepr': srepr(obj)}
         if isinstance(obj, Serializable):
-            return jsonpickle.encode(obj)
-            #dic = vars(obj)
-            #dic["__classname__"] = obj.__class__.__name__
-            #for k, v in dic.items():
-            #    if isinstance(v, dict):
-            #        dic[k] = self.default(v)
-            #return dic
+            dic = vars(obj)
+            dic["py/object"] = obj.__class__.__name__
+            for k, v in dic.items():
+                if isinstance(v, dict):
+                    dic[k] = self.default(v)
+            return dic
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
 def get_comps(obj, depth=0):
