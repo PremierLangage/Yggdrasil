@@ -10,6 +10,18 @@ from jinja_env import Env
 
 from json_encoder import JSONEncoder, JSONDecoder
 
+def sync_comps(obj):
+    if isinstance(obj, dict):
+        if 'cid' in obj:
+            obj = answers[obj['cid']]
+        # TODO : fid for form inputs
+        else:
+            for k, v in obj.items():
+                sync_comps(v)
+    if isinstance(obj, list):
+        for item in obj:
+            sync_comps(item)
+
 if __name__ == "__main__":
 
     with open(sys.argv[1], "r") as f:
