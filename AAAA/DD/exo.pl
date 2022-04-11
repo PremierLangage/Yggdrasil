@@ -12,6 +12,7 @@ ttt = obj.render()
 ==
 
 evaluator ==
+obj.set_items(['AA', 'BB', 'CC'])
 score = 0
 ==
 
