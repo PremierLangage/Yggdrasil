@@ -1,4 +1,4 @@
-extends = /model/basic/numinput.pl
+extends = /model/basic/basic.pl
 @ /builder/before3.py [builder.py]
 @ /grader/evaluator3.py [grader.py]
 @ /utils/inputfields/inputfields.py
