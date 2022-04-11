@@ -10,7 +10,7 @@ from jinja_env import Env
 from json_encoder import JSONEncoder, JSONDecoder
 
 from sympy import Basic, Matrix
-from inputfields import Serializable, Radio
+from inputfields import Serializable, Radio, Checkbox
 
 class JSONEncoder(json.JSONEncoder):
 
