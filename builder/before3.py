@@ -3,7 +3,6 @@
 # Nouvelle version de before
 
 import sys, json, jsonpickle
-from components import Component
 from ast import literal_eval
 
 from sympy import Basic, Matrix
@@ -15,7 +14,7 @@ class JSONEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, (Basic, Matrix)):
             return {'__SymPy__': True, 'srepr': srepr(obj)}
-        if isinstance(obj, (Component, Serializable)):
+        if isinstance(obj, Serializable):
             dic = vars(obj)
             #dic["__class__"] = obj.__class__.__name__
             for k, v in dic.items():
