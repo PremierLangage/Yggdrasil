@@ -8,7 +8,6 @@ from scoring import *
 class Serializable):
     pass
 
-
 class Radio(Serializable):
 
     def __init__(self, **kwargs):
