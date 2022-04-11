@@ -33,7 +33,7 @@ class JSONDecoder(json.JSONDecoder):
     def object_hook(self, dic):
         if "py/object" in dic:
             classname = dic.pop("py/object")
-            if classname == "SymPy"
+            if classname == "SymPy":
                 return sympify(dic['srepr'], evaluate=False)
             return globals()[classname](**dic)
         return dic
