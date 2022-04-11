@@ -1,5 +1,6 @@
 # Nouvelle version d'evaluator
 from jinja2 import Environment, BaseLoader
+import json
 
 # import Jinja environnement
 from jinja_env import Env
