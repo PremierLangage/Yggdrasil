@@ -10,7 +10,7 @@ from jinja_env import Env
 from json_encoder import JSONEncoder, JSONDecoder
 
 from sympy import Basic, Matrix
-from inputfields import Serializable
+from inputfields import Serializable, Radio
 
 class JSONEncoder(json.JSONEncoder):
 
@@ -25,6 +25,18 @@ class JSONEncoder(json.JSONEncoder):
                     dic[k] = self.default(v)
             return dic
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
+
+class JSONDecoder(json.JSONDecoder):
+
+    def __init__(self, *args, **kwargs):
+        json.JSONDecoder.__init__(self, object_hook=self.object_hook, *args, **kwargs)
+
+    def object_hook(self, dic):
+        if '__SymPy__' in dic:
+            return sympify(dic['srepr'], evaluate=False)
+        if '__class__' in dic:
+            return globals()[dic["__class__"]](**dic)
+        return dic
 
 def get_comps(obj, depth=0):
     comps = []
