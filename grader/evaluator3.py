@@ -1,7 +1,6 @@
 # Nouvelle version d'evaluator
 
 import sys, json, jsonpickle
-from builderlib import aux_component1, aux_component2, aux_component
 from jinja2 import Environment, BaseLoader
 
 # import Jinja environnement
