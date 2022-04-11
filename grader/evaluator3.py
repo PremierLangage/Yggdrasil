@@ -92,7 +92,14 @@ if __name__ == "__main__":
         if key in dic and dic[key] == namespace[key]:
             del dic[key]
 
-    aux_component2(dic)
+    # Serialize
+    dic = json.loads(json.dumps(dic, cls=JSONEncoder))
+
+    # Duplicate
+    comps = get_comps(dic, 0)
+    for i in range(len(comps)):
+        dic[f"__comp{i}__"] = comps[i]
+    
 
     if 'score' in dic:
         score = dic['score']    
