@@ -50,11 +50,11 @@ if __name__ == "__main__":
 
     outputfilename = sys.argv[2]
 
-    # JSON context is loaded
+    # parse PL file into Python dictionary
     with open(sys.argv[1], "r") as f:
         dic = json.load(f)
 
-    # HACK : parsing Python values
+    # parsing Python values
     for k, v in dic.items():
         try:
             dic[k] = literal_eval(str(v))
@@ -83,14 +83,6 @@ if __name__ == "__main__":
     if 'javascript' in dic:
         dic['extrajs'] = "%s" % "\n".join(reversed(list(dic['javascript'].values())))
 
-
-    #temporary
-    if not 'question' in dic:
-        dic['question'] = dic['text']
-        dic['text'] = ""
-
-    if not 'inputblock' in dic:
-        dic['inputblock'] = dic['form']
 
     # render some string values of the exercise dictionary with the custom Jinja environment 
     macros = dic.get('macros', '')
