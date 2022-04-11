@@ -56,7 +56,7 @@ def get_comps(obj, depth=0):
 def sync_comps(obj):
     if isinstance(obj, dict):
         if 'cid' in obj:
-            obj = {} # answers[obj['cid']]
+            obj.update(answers[obj['cid']])
         # TODO : fid for form inputs
         else:
             for k, v in obj.items():
