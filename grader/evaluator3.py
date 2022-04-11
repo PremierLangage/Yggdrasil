@@ -19,7 +19,7 @@ class JSONEncoder(json.JSONEncoder):
             return {'__SymPy__': True, 'srepr': srepr(obj)}
         if isinstance(obj, Serializable):
             dic = vars(obj)
-            #dic["__class__"] = obj.__class__.__name__
+            dic["__class__"] = obj.__class__.__name__
             for k, v in dic.items():
                 if isinstance(v, dict):
                     dic[k] = self.default(v)
