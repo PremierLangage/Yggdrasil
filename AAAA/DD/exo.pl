@@ -11,6 +11,11 @@ obj.set_items(['AA', 'BB'])
 ttt = obj.render()
 ==
 
+evaluator ==
+score = 0
+==
+
+
 question ==
 Entrer 3
 {{ ttt }}
