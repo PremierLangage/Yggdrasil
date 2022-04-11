@@ -1,10 +1,10 @@
 extends = /model/basic/basic.pl
 @ /builder/before3.py [builder.py]
 @ /grader/evaluator3.py [grader.py]
-@ /utils/inputfields/inputfields.py
+@ /utils/inputfields/stdinput.py
 
 before == #|py|
-from inputfields import Radio, Checkbox
+from stdinput import Radio, Checkbox
 sol = 3
 obj = Checkbox()
 obj.set_items(['AA', 'BB', 'CC'])
