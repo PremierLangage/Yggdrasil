@@ -14,7 +14,7 @@ class JSONEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, (Basic, Matrix)):
             return {'__SymPy__': True, 'srepr': srepr(obj)}
-        if isinstance(obj, Component):
+        if isinstance(obj, (Component, Serializable)):
             dic = vars(obj)
             #dic["__class__"] = obj.__class__.__name__
             for k, v in dic.items():
