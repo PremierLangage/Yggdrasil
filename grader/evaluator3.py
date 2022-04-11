@@ -49,7 +49,7 @@ if __name__ == "__main__":
     sync_comps(dic)
 
     for k in list(answers.keys()):
-        if isinstance(dic[k], dict)
+        if isinstance(dic[k], dict):
             del answers[k]
     
     dic['answers'] = answers
