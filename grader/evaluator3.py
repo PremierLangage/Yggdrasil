@@ -14,12 +14,11 @@ if __name__ == "__main__":
 
     with open(sys.argv[1], "r") as f:
         dic = json.load(f, cls=JSONDecoder)
-    Component.sync_context(dic)
 
     with open(sys.argv[2], "r") as f:
-        dic['answers'] = json.load(f)
+        answers = json.load(f)
 
-        
+    
 
     eval_scripts = dic.get('eval_scripts', ['evaluator'])
     code = "\n".join([dic.get(name, "") for name in eval_scripts])
