@@ -4,9 +4,9 @@ extends = /model/basic/basic.pl
 @ /utils/inputfields/inputfields.py
 
 before == #|py|
-from inputfields import Radio
+from inputfields import Radio, Checkbox
 sol = 3
-obj = Radio()
+obj = Checkbox()
 obj.set_items(['AA', 'BB'])
 ttt = obj.render()
 ==
