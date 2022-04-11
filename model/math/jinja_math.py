@@ -14,6 +14,9 @@ def mathinput(l):
     return l.render()
 
 
+def html(l):
+    return l.render()
+
 @contextfilter
 def customlatex(ctx, expr):
     return latex(expr, **ctx.get('latexsettings', {}))
@@ -22,3 +25,4 @@ Env = Environment(loader=BaseLoader())
 Env.filters["component"] = component
 Env.filters["latex"] = customlatex
 Env.filters["mathinput"] = mathinput
+Env.filters["html"] = html
