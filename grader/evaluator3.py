@@ -36,7 +36,8 @@ class JSONDecoder(json.JSONDecoder):
         if '__SymPy__' in dic:
             return sympify(dic['srepr'], evaluate=False)
         if '__classname__' in dic:
-            return globals()[dic["__classname__"]](**dic)
+            return jsonpickle.decode(str(dic)
+            #return globals()[dic["__classname__"]](**dic)
         return dic
 
 def get_comps(obj, depth=0):
