@@ -96,18 +96,18 @@ class Checkbox(Serializable):
         Set the items for the list of choices.
         """
         if isinstance(items, list):
-            self.items = [{"id": str(uuid4()), "content": str(item)} for item in items]
+            self.data['items'] = [{"id": str(uuid4()), "content": str(item)} for item in items]
         elif isinstance(items, str):
-            self.items = [{"id": str(uuid4()), "content": str(item)} for item in items.splitlines()]
+            self.data['items'] = [{"id": str(uuid4()), "content": str(item)} for item in items.splitlines()]
 
     def set_sol(self, index):
         """
         Set the solution items from a list of indices.
         """
         if isinstance(index,list):
-            self.sol = [self.items[i]['id'] for i in index]
+            self.sol = [self.data['items'][i]['id'] for i in index]
         elif isinstance(index,int):
-            self.sol = [self.items[index]['id']]
+            self.sol = [self.data['items'][index]['id']]
 
 
     def fill_from_rw(self, right, wrong, nbitems=None, nbright=None):
@@ -143,13 +143,8 @@ class Checkbox(Serializable):
         """
         Shuffle the items.
         """
-        rd.shuffle(self.items)
+        rd.shuffle(self.data['items'])
 
-    def sort(self):
-        """
-        Sort the items.
-        """
-        self.items.sort(key = lambda item : item['content'])
 
     def eval(self):
         """
@@ -157,7 +152,7 @@ class Checkbox(Serializable):
         """
         nbright, nbwrong = 0, 0
 
-        for item in self.items:
+        for item in self.data['items']:
             id = item['id']
             if id in self.sol and item['checked']:
                 nbright += 1
@@ -169,9 +164,9 @@ class Checkbox(Serializable):
         elif self.scoring == "RightMinusWrong":
             score = right_minus_wrong(nbright, nbwrong, nbsol=len(self.sol))          
         elif self.scoring == "CorrectItems":
-            score = correct_items(nbright, nbwrong, nbsol=len(self.sol), nbitems=len(self.items))
+            score = correct_items(nbright, nbwrong, nbsol=len(self.sol), nbitems=len(self.data['items']))
         elif self.scoring == "Custom":
-            score = self.custom_scoring(nbright, nbwrong, nbsol=len(self.sol), nbitems=len(self.items))
+            score = self.custom_scoring(nbright, nbwrong, nbsol=len(self.sol), nbitems=len(self.data['items']))
         else:
             raise ValueError(f"'{scoring}' is not a valid scoring")
 
@@ -181,7 +176,7 @@ class Checkbox(Serializable):
         """
         Display visual feedback.
         """
-        for item in self.items:
+        for item in self.data['items']:
             id = item['id']
             if id in self.sol:
                 item['css'] = 'icon-success-after'
@@ -193,7 +188,7 @@ class Checkbox(Serializable):
         """
         Hide visual feedback.
         """
-        for item in self.items:
+        for item in self.data['items']:
             s = item['css'] 
             s = s.replace('icon-success-after', '')
             s = s.replace('icon-fail-after', '')
@@ -203,12 +198,12 @@ class Checkbox(Serializable):
         """
         Disable the input field.
         """
-        self.disabled = True
+        self.data['disabled'] = True
 
     def render(self):
         """
         Return the HTML code of the input field.
         """
-        selector = self.selector
-        cid = self.cid
+        selector = self.data['selector']
+        cid = self.data['cid']
         return f"<{selector} cid='{cid}'></{selector}>"
