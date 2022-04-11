@@ -39,7 +39,7 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from radio import Radio
+from basicinput import Radio
 input = Radio()
 ==
 
