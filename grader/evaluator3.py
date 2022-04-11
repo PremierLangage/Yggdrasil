@@ -18,12 +18,13 @@ class JSONEncoder(json.JSONEncoder):
         if isinstance(obj, (Basic, Matrix)):
             return {'__SymPy__': True, 'srepr': srepr(obj)}
         if isinstance(obj, Serializable):
-            dic = vars(obj)
-            dic["__classname__"] = obj.__class__.__name__
-            for k, v in dic.items():
-                if isinstance(v, dict):
-                    dic[k] = self.default(v)
-            return dic
+            return jsonpickle.encode(obj)
+            #dic = vars(obj)
+            #dic["__classname__"] = obj.__class__.__name__
+            #for k, v in dic.items():
+            #    if isinstance(v, dict):
+            #        dic[k] = self.default(v)
+            #return dic
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
 class JSONDecoder(json.JSONDecoder):
