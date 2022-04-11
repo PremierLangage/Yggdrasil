@@ -1,6 +1,4 @@
 # Nouvelle version d'evaluator
-
-import sys, json, jsonpickle
 from jinja2 import Environment, BaseLoader
 
 # import Jinja environnement
