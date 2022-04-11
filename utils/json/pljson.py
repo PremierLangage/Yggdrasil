@@ -1,5 +1,8 @@
 from sympy import Basic, Matrix
-from inputfields import Serializable, Radio, Checkbox
+from stdinput import Serializable, Radio, Checkbox
+
+class Serializable:
+    pass
 
 class JSONEncoder(json.JSONEncoder):
 
