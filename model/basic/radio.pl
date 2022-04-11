@@ -25,7 +25,7 @@ shuffled = True
 # Input block
 
 inputblock == #|html|
-{{ input|component }}
+{{ input|html }}
 ==
 
 # Before scripts
