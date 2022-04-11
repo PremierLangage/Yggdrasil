@@ -19,7 +19,7 @@ class JSONEncoder(json.JSONEncoder):
             return {'__SymPy__': True, 'srepr': srepr(obj)}
         if isinstance(obj, Serializable):
             dic = vars(obj)
-            dic["__class__"] = obj.__class__.__name__
+            dic["__classname__"] = obj.__class__.__name__
             for k, v in dic.items():
                 if isinstance(v, dict):
                     dic[k] = self.default(v)
@@ -34,8 +34,8 @@ class JSONDecoder(json.JSONDecoder):
     def object_hook(self, dic):
         if '__SymPy__' in dic:
             return sympify(dic['srepr'], evaluate=False)
-        if '__class__' in dic:
-            return globals()[dic["__class__"]](**dic)
+        if '__classname__' in dic:
+            return globals()[dic["__classname__"]](**dic)
         return dic
 
 def get_comps(obj, depth=0):
