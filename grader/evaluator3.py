@@ -10,6 +10,36 @@ from jinja_env import Env
 
 from json_encoder import JSONEncoder, JSONDecoder
 
+
+class JSONEncoder(json.JSONEncoder):
+
+    def default(self, obj):
+        if isinstance(obj, (Basic, Matrix)):
+            return {'__SymPy__': True, 'srepr': srepr(obj)}
+        if isinstance(obj, Serializable):
+            dic = vars(obj)
+            #dic["__class__"] = obj.__class__.__name__
+            for k, v in dic.items():
+                if isinstance(v, dict):
+                    dic[k] = self.default(v)
+            return dic
+        return jsonpickle.Pickler(unpicklable=False).flatten(obj)
+
+def get_comps(obj, depth=0):
+    comps = []
+    if isinstance(obj, dict):
+        if 'cid' in obj:
+            if depth > 1:
+                return [obj]
+        else:
+            for k, v in obj.items():
+                comps += get_comps(v, depth+1)
+    if isinstance(obj, list):
+        for item in obj:
+            comps += get_comps(item, depth+1)
+    return comps
+
+
 def sync_comps(obj):
     if isinstance(obj, dict):
         if 'cid' in obj:
