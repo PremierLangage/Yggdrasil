@@ -5,9 +5,6 @@
 import sys, json
 from ast import literal_eval
 
-from sympy import Basic, Matrix
-from inputfields import Serializable
-
 # import JSON encoder
 from json_encoder import JSONEncoder
 
