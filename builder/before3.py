@@ -2,26 +2,14 @@
 # coding: utf-8
 # Nouvelle version de before
 
-import sys, json, jsonpickle
+import sys, json
 from ast import literal_eval
 
 from sympy import Basic, Matrix
 from inputfields import Serializable
 
 # import JSON encoder
-class JSONEncoder(json.JSONEncoder):
 
-    def default(self, obj):
-        if isinstance(obj, (Basic, Matrix)):
-            return {"py/object": "SymPy", 'srepr': srepr(obj)}
-        if isinstance(obj, Serializable):
-            dic = vars(obj)
-            dic["py/object"] = obj.__class__.__name__
-            for k, v in dic.items():
-                if isinstance(v, dict):
-                    dic[k] = self.default(v)
-            return dic
-        return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
 def get_comps(obj, depth=0):
     comps = []
