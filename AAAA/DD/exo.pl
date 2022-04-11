@@ -5,10 +5,10 @@ extends = /model/basic/numinput.pl
 before == #|py|
 from inputfields import Radio
 sol = 3
-test = [NumInput(value=34), NumInput()]
+obj = Radio()
 ==
 
 question ==
 Entrer 3
-{{test[0]|component}}
+{{obj|component}}
 ==
