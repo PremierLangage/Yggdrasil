@@ -1,5 +1,5 @@
 import json, jsonpickle
-from sympy import Basic, Matrix
+from sympy import Basic, Matrix, srepr
 from basicinput import *
 from mathinput import *
 from serializable import Serializable
