@@ -1,4 +1,10 @@
 extends = /model/basic/basic.pl
+@ /builder/before3.py [builder.py]
+@ /grader/evaluator3.py [grader.py]
+@ /utils/inputfields/basicinput.py
+@ /model/math/jinja_math.py [jinja_env.py]
+@ /utils/json/pljson.py [json_encoder.py]
+@ /utils/json/serializable.py
 
 # Specific keys
 
@@ -20,7 +26,7 @@ question ==
 ==
 
 inputblock == #|html|
-{{ input|component }}
+{{ inputfield|html }}
 ==
 
 # Before scripts
@@ -34,8 +40,8 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from checkbox import Checkbox
-input = Checkbox()
+from basicinput import Checkbox
+inputfield= Checkbox()
 ==
 
 before == #|py|
@@ -44,16 +50,16 @@ before == #|py|
 ==
 
 process == #|py|
-input.fill_from_rw(right, wrong, nbitems, randint(minright, maxright))
-input.scoring = scoring
+inputfield.fill_from_rw(right, wrong, nbitems, randint(minright, maxright))
+inputfield.scoring = scoring
 ==
 
 # Evaluation scripts
 
 evaluator == #|py|
-score = input.eval()
-input.display_feedback()
-input.disable()
+score = inputfield.eval()
+inputfield.display_feedback()
+inputfield.disable()
 ==
 
 # API documentation
