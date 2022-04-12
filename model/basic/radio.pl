@@ -58,9 +58,11 @@ if shuffled:
 # Evaluation scripts
 
 evaluator == #|py|
-score = inputfield.eval()
-inputfield.display_feedback()
-inputfield.disable()
+#score = inputfield.eval()
+#inputfield.display_feedback()
+#inputfield.disable()
+solution = str(inputfield)
+score = 0
 ==
 
 apidoc == #|json|
