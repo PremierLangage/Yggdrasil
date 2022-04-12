@@ -8,6 +8,8 @@ from ast import literal_eval
 # import JSON encoder
 from json_encoder import JSONEncoder
 
+# import Jinja environnement
+from jinja_env import Env
 
 def get_comps(obj, depth=0):
     comps = []
@@ -23,9 +25,6 @@ def get_comps(obj, depth=0):
             comps += get_comps(item, depth+1)
     return comps
     
-
-# import Jinja environnement
-from jinja_env import Env
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
