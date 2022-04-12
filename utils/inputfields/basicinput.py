@@ -38,7 +38,7 @@ class Radio(Serializable):
         """
         for item in self.data['items']:
             id = item['id']
-            if id == self.sol and id == self.selection:
+            if id == self.sol and id == self.dat['selection']:
                 self.score = 100
                 return 100
         self.score = 0
