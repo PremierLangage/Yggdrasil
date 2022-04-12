@@ -459,14 +459,14 @@ class MatchList(SingleComponent):
         """
         Set multiple mode.
         """
-        for node in self.nodes:
+        for node in self.data['nodes']:
             node['multiple'] = True
 
     def set_data_from_matches(self, matches, separator=",", nbmatches=None):
         """
         Load matched pairs of items in the component.
         """ 
-        self.nodes = []
+        self.data['nodes'] = []
         self.sol = []
 
         if isinstance(matches, str): 
@@ -478,12 +478,12 @@ class MatchList(SingleComponent):
         for source, target in matches:
             sourceid = str(uuid4())
             targetid = str(uuid4())
-            self.nodes.append({
+            self.data['nodes'].append({
                 "id": sourceid,
                 "content": str(source),
                 "source": True
             })
-            self.nodes.append({
+            self.data['nodes'].append({
                 "id": targetid,
                 "content": str(target),
                 "target": True,
@@ -493,7 +493,7 @@ class MatchList(SingleComponent):
         rd.shuffle(self.nodes)
 
     def shuffle(self):
-        rd.shuffle(self.nodes)
+        rd.shuffle(self.data['nodes'])
 
     def eval(self):
         """
@@ -501,11 +501,11 @@ class MatchList(SingleComponent):
         """ 
         nbright, nbwrong = 0, 0
         rightsource = []
-        for link in self.links:
+        for link in self.data['links']:
             if {'source': link['source'], 'target': link['target']} in self.sol:
                 rightsource.append(link['source'])
 
-        for node in self.nodes:
+        for node in self.data['nodes']:
             if 'source' in node and node['source']:
                 if node['id'] in rightsource:
                     nbright += 1
@@ -528,11 +528,11 @@ class MatchList(SingleComponent):
         Display visual feedback.
         """ 
         rightsource = []
-        for link in self.links:
+        for link in self.data['links']:
             if {'source': link['source'], 'target': link['target']} in self.sol:
                 rightsource.append(link['source'])
 
-        for node in self.nodes:
+        for node in self.data['nodes']:
             if 'source' in node and node['source']:
                 if node['id'] in rightsource:
                     node['css'] = 'success-state icon-check-before'
