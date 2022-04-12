@@ -300,20 +300,20 @@ class AutoInput(TextInput):
 class NumInput(Component):
 
     def __init__(self, **kwargs):
-        self.selector = 'c-input'
-        self.decorator = 'NumInput'
-        self.type = 'number'
-        self.evalparam = {}
-        self.feedback = kwargs.get('feedback', '')
-        super().__init__(**kwargs)
+        if 'data' not in kwargs:
+            self.data = {'selector': 'c-input', 'type':"number", 'cid': str(uuid4())}
+        for k, v in kwargs.items():
+            setattr(self, k, v)
+        self.evalparam = kwargs.get('evalparam', {})
+
 
     def eval(self):
         diffmeasure = self.evalparam.get('diffmeasure', 'AbsError')
         tol = self.evalparam.get('tol', 0)
         if diffmeasure == 'AbsError':
-            diff = abs(self.sol - self.value)
+            diff = abs(self.sol - self.data['value'])
         elif diffmeasure == 'RelError':
-            diff = abs(self.sol - self.value)/abs(self.sol)
+            diff = abs(self.sol - self.data['value'])/abs(self.sol)
         if diff <= tol:
             self.score = 100
         else:
@@ -321,15 +321,19 @@ class NumInput(Component):
         return self.score
 
     def display_feedback(self):
-        msg = self.feedback
+        """
+        Display the visual feedback of the input field.
+        """
         if self.score == 100:
-            self.suffix = r'<i class="fas fa-check" style="color: var(--success)"></i>'
+            self.data['suffix'] = r'<i class="fas fa-check" style="color: var(--success)"></i>'
         elif self.score >= 0:
-            self.suffix = r'<i class="fas fa-times" style="color: var(--danger)"></i></i>'
-            self.suffix = rf"""<i class="fas fa-times" style="margin-left: 0.5em; color: #E53935; cursor: pointer;" data-toggle="popover" data-placement="bottom" data-content="{msg}"></i>"""
-    
+            self.data['suffix'] = r'<i class="fas fa-times" style="color: var(--danger)"></i></i>'
+
     def hide_feedback(self):
-        self.suffix = ""
+        """
+        Hide the visual feedback of the input field.
+        """
+        self.data['suffix'] = ""
 
     def disable(self):
         """
