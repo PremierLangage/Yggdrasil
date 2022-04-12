@@ -11,10 +11,6 @@ tol = 0.05
 question ==
 ==
 
-inputblock ==
-{{ input|component }}
-==
-
 # Before scripts
 
 
