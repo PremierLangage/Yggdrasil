@@ -1,3 +1,5 @@
+extends = /model/basic/hackpage.pl
+
 @ /utils/std/plrandom.py
 @ /utils/std/plcsv.py
 
