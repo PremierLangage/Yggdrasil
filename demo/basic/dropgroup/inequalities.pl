@@ -13,7 +13,7 @@ for i in range(4):
 ==
 
 question ==
-Comparer les nombres suivants en utilisant le symbole adapté ({{ input.labels[0]|component }} ou {{ input.labels[1]|component }}).
+Comparer les nombres suivants en utilisant le symbole adapté ({{ inputfield.labels[0]|html }} ou {{ inputfield.labels[1]|html }}).
 ==
 
 inputblock ==
