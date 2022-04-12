@@ -433,7 +433,7 @@ class MatchList(SingleComponent):
             targets = targets.splitlines()
 
         for target in targets:
-            self.nodes.append({
+            self.data['nodes'].append({
                 "id": str(uuid4()),
                 "content": str(target),
                 "target": True,
@@ -444,7 +444,7 @@ class MatchList(SingleComponent):
         """
         Add target nodes.
         """
-        contents = [node['content'] for node in self.nodes if node.get('target', False)]
+        contents = [node['content'] for node in self.data['nodes'] if node.get('target', False)]
         contents = []
         for target in targets:
             if target not in contents:
