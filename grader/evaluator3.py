@@ -91,7 +91,7 @@ if __name__ == "__main__":
     for key in dic.get('jinja_keys', ['question', 'solution']):
         if key in dic:
             if isinstance(dic[key] , str):
-                dic[key] = "" #Env.from_string(macros + dic[key]).render(dic)
+                dic[key] = Env.from_string(macros + dic[key]).render(dic)
 
 
     dic['form'] = dic['tplpage']
