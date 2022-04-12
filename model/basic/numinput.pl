@@ -21,7 +21,7 @@ inputblock ==
 {{ prefix }} 
     </div>
     <div class="col-xs" style="padding-left:0.5em; padding-right:0;">
-{{ input|component }}
+{{ inputfield|html }}
     </div>
   </div>
 </div>
@@ -43,9 +43,9 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from numinput import NumInput
-input = NumInput()
-input.disabled = True
+from basicinput import NumInput
+inputfield = NumInput()
+inputfield.disable()
 ==
 
 before == #|py|
