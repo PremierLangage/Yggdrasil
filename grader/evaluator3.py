@@ -105,6 +105,17 @@ if __name__ == "__main__":
     except:
         pass
 
+    for key in dic.get('jinja_keys', ['question', 'solution']):
+        if key in dic:
+            if isinstance(dic[key] , str):
+                dic[key] = Env.from_string(macros + dic[key]).render(dic)
+            elif isinstance(dic[key] , dict):
+                for k in dic[key]:
+                    dic[key][k] = Env.from_string(macros + dic[key][k]).render(dic)
+            elif isinstance(dic[key] , list):
+                for i in range(len(dic[key])):
+                    dic[key][i] = Env.from_string(macros + dic[key][i]).render(dic)
+
     dic['form'] = dic['tplpage']
 
     with open(sys.argv[3], "w+") as f:
