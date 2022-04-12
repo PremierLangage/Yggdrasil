@@ -41,7 +41,7 @@ inputblock ==
 {{ input|html }}
 ==
 
-jinja_keys = ["prefix", "question", "solution", "inputblock"]
+jinja_keys = ["question", "solution", "inputblock"]
 
 
 # Before scripts
