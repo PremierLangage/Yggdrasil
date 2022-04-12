@@ -7,7 +7,7 @@ extends = messages_math.pl
 @ /builder/before3.py [builder.py]
 @ /grader/evaluator3.py [grader.py]
 @ /utils/inputfields/basicinput.py
-@ /utils/json/mathjinja.py  [jinja_env.py]
+@ /utils/jinja/mathjinja.py  [jinja_env.py]
 @ /utils/json/mathjson.py [json_encoder.py]
 @ /utils/json/serializable.py
 
