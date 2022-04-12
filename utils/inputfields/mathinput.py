@@ -1,8 +1,9 @@
 from uuid import uuid4
 from evalsympy import eval_expr, eval_complex, eval_poly, eval_set, eval_tuple, eval_interval, eval_chainineq
-from jinja2 import Template
-from sympy import Matrix
 from evalsympy import eval_matrix
+from sympy import Matrix
+from jinja2 import Template
+from serializable import Serializable
 
 std_keypad = {
     "emptyset": {"label": "$! \\varnothing !$", "action": "cmd", "value": "\\empty"},
@@ -13,7 +14,7 @@ std_keypad = {
     "-infty": {"label": "$! -\\infty !$", "action": "write", "value": "-\\infty"}
 }
 
-class MathInput:
+class MathInput(Serializable):
 
     message = {}
 
@@ -104,28 +105,27 @@ class MathInput:
     def get_value(self):
         return self.value
 
-
-class MatrixInput(Component):
+class MatrixInput(Serializable):
 
     message = {}
 
     def __init__(self, **kwargs):
-        self.selector = 'c-math-matrix'
-        self.decorator = 'MatrixInput'
-        self.sol = kwargs.get('sol', None)
-        super().__init__(**kwargs)
+        if 'data' not in kwargs:
+            self.data = {'selector': 'c-math-matrix', 'cid': str(uuid4())}
+        for k, v in kwargs.items():
+            setattr(self, k, v)
 
     def set_matrix(self, M):
         """
         Set a matrix.
         """
-        self.matrix = []
+        self.data['matrix'] = []
         if isinstance(M, list):
             for row in M:
-                self.matrix.append([{'value': str(value)} for value in row])
+                self.data['matrix'].append([{'value': str(value)} for value in row])
         elif isinstance(M, Matrix):
             for i in range(len(M.col(0))):
-                self.matrix.append([{'value': str(value)} for value in M.row(i)])
+                self.data['matrix'].append([{'value': str(value)} for value in M.row(i)])
 
     def set_zeros(self, rows, cols=None):
         """
@@ -139,7 +139,7 @@ class MatrixInput(Component):
         """
         Get the matrix.
         """
-        return [[item['value'] for item in row] for row in self.matrix]
+        return [[item['value'] for item in row] for row in self.data['matrix']]
 
 
     def eval(self):
@@ -157,15 +157,16 @@ class MatrixInput(Component):
         """
         pass
 
-    def hide_feedback(self):
-        """
-        Hide visual feedback.
-        """
-        pass
-
     def disable(self):
         """
         Disable the input field.
         """
-        self.disabled = True
+        self.data['disabled'] = True
 
+    def render(self):
+        """
+        Return the HTML code of the input field.
+        """
+        selector = self.data['selector']
+        cid = self.data['cid']
+        return f"<{selector} cid='{cid}'></{selector}>"
