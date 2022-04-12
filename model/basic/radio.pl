@@ -18,7 +18,7 @@ Item 1
 Item 2
 ==
 
-indsol = 1
+indsol = 0
 
 shuffled = True
 
