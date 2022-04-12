@@ -52,7 +52,7 @@ if __name__ == "__main__":
         if isinstance(answers[k], dict):
             del answers[k]
     
-    #dic['answers'] = answers
+    dic['answers'] = answers
 
     # deserialize
     dic = json.loads(json.dumps(dic), cls=JSONDecoder)
