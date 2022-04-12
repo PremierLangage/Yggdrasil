@@ -16,6 +16,7 @@ class MathInput(Serializable):
     message = {}
 
     def __init__(self, **kwargs):
+        self.__MathInput__ = True
         self.id = kwargs.get('id', "MathInput" + str(uuid4().hex))
         self.keypad = kwargs.get('keypad', [])
         self.value = kwargs.get('value', '')
