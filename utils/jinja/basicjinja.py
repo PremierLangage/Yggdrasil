@@ -12,7 +12,6 @@ def component(l):
 def html(l):
     return l.render()
 
-    
 Env = Environment(loader=BaseLoader())
 Env.filters["html"] = html
 Env.filters["component"] = component
