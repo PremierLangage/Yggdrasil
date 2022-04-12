@@ -16,7 +16,7 @@ question ==
 ==
 
 inputblock == #|html|
-{{ input|component }}
+{{ inputfield|html }}
 ==
 
 # Before scripts
@@ -30,8 +30,8 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from checkbox import Checkbox
-input = Checkbox()
+from  basicinput import Checkbox
+inputfield = Checkbox()
 ==
 
 before == #|py|
@@ -40,18 +40,18 @@ before == #|py|
 ==
 
 process == #|py|
-input.set_items(items)
-input.set_sol(indsol)
+inputfield.set_items(items)
+inputfield.set_sol(indsol)
 if shuffled:
-    input.shuffle()
+    inputfield.shuffle()
 ==
 
 # Evaluation scripts
 
 evaluator == #|py|
-score = input.eval()
-input.display_feedback()
-input.disable()
+score = inputfield.eval()
+inputfield.display_feedback()
+inputfield.disable()
 ==
 
 # API documentation
