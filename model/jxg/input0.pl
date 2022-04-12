@@ -41,6 +41,9 @@ inputblock ==
 {{ input|html }}
 ==
 
+jinja_keys = ["prefix", "question", "solution", "inputblock"]
+
+
 # Before scripts
 
 before_scripts = ["mathimport", "initinput", "before", "process"]
