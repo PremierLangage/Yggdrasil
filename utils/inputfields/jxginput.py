@@ -88,11 +88,8 @@ class JXGPoint(JXGInput):
 class JXGVector(JXGInput):
 
     def __init__(self, **kwargs):
-        self.selector = 'c-math-drawer'
-        self.pointnames = ['A', 'B']
         self.evalparam = {}
         super().__init__(**kwargs)
-        self.decorator = 'JXGVector'
 
     def eval(self):
         """
