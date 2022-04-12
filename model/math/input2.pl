@@ -1,45 +1,62 @@
 extends = /model/basic/utils.pl
 extends = /model/basic/hackpage.pl
 extends = messages_math.pl
-extends = aux_mathinput.pl
 
-text =
-form = 
+# Specific keys
+
+
+keypad = []
+
+embed = ""
+
+prefix = Réponse :
+
 latexsettings.ln_notation = True
-latexsettings.inv_trig_style = full
+latexsettings.inv_trig_style = "full"
 
-mathimport ==
+
+input_type = "expr"
+
+mathimport == #|py|
 from sympy import E, I, pi, oo
-from sympy import sqrt, Abs, sin, cos, tan, exp, ln
+from sympy import sqrt, Abs, sin, cos, tan, exp, ln, atan, acos, asin
 from sympy import Symbol, symbols, var
-from sympy import sympify, simplify, Lambda
-from sympy import Integer, Rational, Poly, FiniteSet, Tuple, Interval
-from sympy import integrate
+from sympy import sympify, simplify, factor, Lambda
+from sympy import Integer, Rational, Poly, FiniteSet, Tuple, Interval, Matrix
+from sympy import Sum, Limit
+from sympy import diff, integrate
 from random import choice, choices, sample, shuffle
 from plrandom import randint, sampleint
-from sympy2latex import latex
+from sympy2latex import CustomLatexPrinter
+latex = CustomLatexPrinter(latexsettings).doprint
 from latex2sympy import latex2sympy
+from randsympy import randpoly
+from randsympy import randmat, randmat_invertible, randmat_fullrank, randmat_givenrank
 ==
 
 style.basic =@ /model/css/basic.css.html
+style.mathquill =@ /utils/components/mathinput/mathinput.css.html
 
 jinja_keys = ["prefix", "question", "solution", "inputblock"]
-before_scripts = ["mathimport", "init_input", "before"]
-eval_scripts = ["evalparam", "evaluator"]
+before_scripts = ["mathimport", "init_input", "before", "process"]
+eval_scripts = ["evalparam", "getinput", "evaluator"]
 
-prefix = Réponse :
-keypad = []
-embed =
+
 
 title = Title
 
 init_input ==
 from mathinput import MathInput
 input = MathInput()
-input.set_keypad(keypad)
 input.value = ""
 input.type = input_type
-# embed = embed.replace("#", r"\MathQuillMathField{}")
+==
+
+process ==
+from jinja_env import Env
+embed = Env.from_string(embed).render(locals())
+input.set_embed(embed)
+input.set_keypad(keypad)
 ==
 
 before ==
@@ -57,20 +74,22 @@ evalparam ==
 
 ==
 
-evaluator ==
+getinput ==
 from mathinput import MathInput
 MathInput.message = message
-
 input.value = answers[input.id]
+==
+
+evaluator ==
 input.sol = sol
-input.eval()
-score = input.score
+score = input.eval()
 input.display_feedback()
 if score >= 0:
   input.disable()
 ==
 
-tplpage =@ /model/tplpage/basic.html
+
+tplpage =@ /model/tplpage/basicmath.html
 
 
 inputblock ==
@@ -79,3 +98,115 @@ inputblock ==
 {{ input|mathinput }}
 </div>
 ==
+
+
+javascript.onbeforesubmit == #|js|
+<script>
+// Fonction appelée quand l'exercice est soumis (bouton valider).
+function onBeforeSubmitPL() {
+  // Copie les valeurs des champs MathField dans des éléments input.
+
+    if (typeof setOfMathFields != "undefined") {
+
+    Object.values(setOfMathFields).forEach(function(mathField) {
+    var mathFieldInput = document.getElementById('form_'+mathField.el().id);
+    mathFieldInput.value = mathField.latex();
+    });
+
+    };
+
+    if (typeof setOfStaticMaths != "undefined") {
+ 
+    Object.values(setOfStaticMaths).forEach(function(mathField) {
+    var mathFieldInput = document.getElementById('form_'+mathField.el().id);
+      if (mathField.innerFields.length == 1) {
+      mathFieldInput.value = mathField.innerFields[0].latex();
+        } else {
+      mathFieldInput.value = [mathField.innerFields[0].latex(),mathField.innerFields[1].latex()];
+      }
+    });
+
+    };
+
+  // Cache les popovers avant que les éléments correspondants soient détruits du DOM.
+  $(function () {
+    $('[data-toggle="popover"]').popover('hide')
+  });
+
+  return true;
+}
+</script>
+==
+
+text =
+form = 
+
+
+apidoc == #|json|
+{
+    "name": "input",
+    "keys": {
+        "before": {
+            "type": "str",
+            "default": "",
+            "description": "Script Python permettant de générer les clés de l'exercice."
+        },
+        "title": {
+            "type": "str",
+            "default": "",
+            "description": "Titre de l'exercice."
+        },
+        "question": {
+            "type": "str",
+            "default": "",
+            "description": "Template HTML contenant l'énoncé de l'exercice."
+        },
+        "inputblock": {
+            "type": "str",
+            "default": "",
+            "description": "Template HTML contenant l'énoncé de l'exercice."
+        },
+        "solution": {
+            "type": "str",
+            "default": "",
+            "description": "Template HTML contenant la correction de l'exercice."
+        },
+        "evaluator": {
+            "type": "str",
+            "default": "",
+            "description": "Script Python permettant d'évaluer la réponse de l'exercice."
+        },
+        "keypad": {
+            "type": "list",
+            "default": "[]",
+            "description": "Liste des boutons du clavier virtuel attaché au champ de réponse."
+        },
+        "embed": {
+            "type": "str",
+            "default": "''",
+            "description": "Formule dans laquelle est insérée le champ de réponse."
+        },
+        "checkratsimp": {
+            "type": "bool",
+            "default": "True",
+            "description": "Valeur indiquant si l'évaluation vérifie que les valeurs rationnelles sont simplifiées dans la réponse saisie."
+        },
+        "symbol_dict": {
+            "type": "dict",
+            "default": "{'e': E}",
+            "description": "Dictionnaire des symboles utilisés pour convertir la réponse saisie en expression SymPy."
+        },
+        "unauthorized_func": {
+            "type": "list[str]",
+            "default": "[]",
+            "description": "Liste des fonctions non autorisées."
+        },
+        "latexsettings": {
+            "type": "dict",
+            "default": "{}",
+            "description": "Dictionnaire des paramètres de conversion SymPy vers LaTeX."
+        }
+    }
+}
+==
+
