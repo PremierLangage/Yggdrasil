@@ -344,6 +344,68 @@ class NumInput(SingleComponent):
         self.data['value'] = str(self.data['value'])
         self.data['disabled'] = True
 
+class SortList(SingleComponent):
+
+    def __init__(self, **kwargs):
+        if 'data' not in kwargs:
+            self.data = {'selector': 'c-sort-list', 'cid': str(uuid4())}
+        for k, v in kwargs.items():
+            setattr(self, k, v)
+
+    def set_items(self, items):
+        """
+        Set the list of items.
+        """
+        if isinstance(items, list):
+            self.data['items'] = [{"id": str(uuid4()), "content": str(item)} for item in items]
+        elif isinstance(items, str):
+            self.data['items'] = [{"id": str(uuid4()), "content": str(item)} for item in items.splitlines()]
+        self.sol = [item['id'] for item in self.data['items']]
+
+    def shuffle(self):
+        """
+        Shuffle the component items.
+        """
+        rd.shuffle(self.items)
+
+    def eval(self):
+        """
+        Evaluate the input field.
+        """       
+        order = [self.sol.index(item['id']) for item in self.data['items']]
+
+        if self.scoring == "ExactOrder":
+            score = exact_order(order)
+        elif self.scoring == "KendallTau":
+            score = kendall_tau(order)         
+        else:
+            raise ValueError(f"'{scoring}' is not a valid scoring")
+
+        return score
+
+    
+    def display_feedback(self):
+        """
+        Display visual feedback.
+        """
+        for i, e in enumerate(self.items):
+
+            id = e['id']
+
+            if id == self._sol[i]:
+                e['css'] = 'success-state'
+                css_state="success"
+            else:
+                e['css'] = 'error-state'
+                css_state="danger"
+
+            e['content']=  """<div class="d-flex justify-content-between align-items-center">
+                    <span class="badge badge-%s"> %s </span>
+                    <span> %s </span>
+                    <span></span>
+                </div>""" % (css_state,str(1+self._sol.index(id)),e['content'])
+
+
 class Drop(SingleComponent):
 
     def __init__(self, **kwargs):
@@ -495,3 +557,4 @@ def process_filledtext(filledtext, delimiters, name, style):
         counter += 1
     dropblock += filledtext[start:]
     return sol, dropblock, solution
+
