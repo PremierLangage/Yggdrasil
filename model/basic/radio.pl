@@ -1,6 +1,5 @@
 extends = /model/basic/basic2.pl
 
-
 # Main keys
 
 question ==
