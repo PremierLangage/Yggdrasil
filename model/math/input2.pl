@@ -118,7 +118,7 @@ tplpage =@ /model/tplpage/basicmath.html
 inputblock ==
 <div style="display: block; margin-top: 1em;">
 {{ prefix }}
-{{ input|mathinput }}
+{{ input|html }}
 </div>
 ==
 
