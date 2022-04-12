@@ -1,6 +1,7 @@
 import json, jsonpickle
 from sympy import Basic, Matrix, srepr, sympify
 from basicinput import *
+from steps import *
 from serializable import Serializable
 
 class JSONEncoder(json.JSONEncoder):
