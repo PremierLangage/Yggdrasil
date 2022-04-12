@@ -3,7 +3,24 @@ from uuid import uuid4
 from serializable import Serializable
 from scoring import *
 
-class Radio(Serializable):
+
+class SingleComponent(Serializable):
+
+    def disable(self):
+        """
+        Disable the input field.
+        """
+        self.data['disabled'] = True
+
+    def render(self):
+        """
+        Return the HTML code of the input field.
+        """
+        selector = self.data['selector']
+        cid = self.data['cid']
+        return f"<{selector} cid='{cid}'></{selector}>"
+
+class Radio(SingleComponent):
 
     def __init__(self, **kwargs):
         if 'data' not in kwargs:
@@ -65,22 +82,8 @@ class Radio(Serializable):
             s = s.replace('icon-fail-after', '')
             item['css'] = s
 
-    def disable(self):
-        """
-        Disable the input field.
-        """
-        self.data['disabled'] = True
 
-    def render(self):
-        """
-        Return the HTML code of the input field.
-        """
-        selector = self.data['selector']
-        cid = self.data['cid']
-        return f"<{selector} cid='{cid}'></{selector}>"
-
-
-class Checkbox(Serializable):
+class Checkbox(SingleComponent):
 
     def __init__(self, **kwargs):
         if 'data' not in kwargs:
@@ -190,17 +193,3 @@ class Checkbox(Serializable):
             s = s.replace('icon-success-after', '')
             s = s.replace('icon-fail-after', '')
             item['css'] = s
-
-    def disable(self):
-        """
-        Disable the input field.
-        """
-        self.data['disabled'] = True
-
-    def render(self):
-        """
-        Return the HTML code of the input field.
-        """
-        selector = self.data['selector']
-        cid = self.data['cid']
-        return f"<{selector} cid='{cid}'></{selector}>"
