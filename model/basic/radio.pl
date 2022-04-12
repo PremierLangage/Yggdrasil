@@ -4,7 +4,7 @@ extends = /model/basic/basic.pl
 @ /utils/inputfields/basicinput.py
 @ /model/math/jinja_math.py [jinja_env.py]
 @ /utils/json/pljson.py [json_encoder.py]
-@ /utils/json/pljson.py
+@ /utils/json/serializable.py
 
 # Main keys
 
