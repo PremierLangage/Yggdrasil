@@ -197,10 +197,11 @@ class Checkbox(SingleComponent):
 class TextInput(SingleComponent):
 
     def __init__(self, **kwargs):
-        self.selector = 'c-input'
-        self.decorator = 'TextInput'
+        if 'data' not in kwargs:
+            self.data = {'selector': 'c-input', 'cid': str(uuid4())}
+        for k, v in kwargs.items():
+            setattr(self, k, v)
         self.evalparam = kwargs.get('evalparam', {})
-        super().__init__(**kwargs)
 
     def set_sol(self, sol):
         """
