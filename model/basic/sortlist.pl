@@ -24,8 +24,8 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from sortlist import SortList
-input = SortList()
+from basicinput import SortList
+inputfield = SortList()
 ==
 
 before == #|py|
@@ -46,16 +46,16 @@ elif isinstance(sortedlist, list):
 if not isinstance(_nbitems_, int):
     _nbitems_ = len(_sortedlist_)
 
-input.set_data_from_list([_sortedlist_[i] for i in sorted(sample(range(len(_sortedlist_)), _nbitems_))])
-input.scoring = scoring
+inputfield.set_data_from_list([_sortedlist_[i] for i in sorted(sample(range(len(_sortedlist_)), _nbitems_))])
+inputfield.scoring = scoring
 ==
 
 # Evaluation scripts
 
 evaluator == #|py|
-score = input.eval()
-input.display_feedback()
-input.disable()
+score = inputfield.eval()
+inputfield.display_feedback()
+inputfield.disable()
 ==
 
 
