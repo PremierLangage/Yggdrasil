@@ -115,7 +115,7 @@ if score >= 0:
 tplpage =@ /model/tplpage/basicmath.html
 
 
-inputblock ==
+inputblock == #|html|
 <div style="display: block; margin-top: 1em;">
 {{ prefix }}
 {{ input|html }}
