@@ -90,7 +90,7 @@ if 'score' in locals():
     if 'feedback' in locals():
         inputfield.feedback = feedback
 else:
-    score = input.eval()
+    score = inputfield.eval()
 inputfield.display_feedback()
 inputfield.disable()
 ==
