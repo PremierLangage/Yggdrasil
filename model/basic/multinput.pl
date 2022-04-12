@@ -25,10 +25,7 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from textinput import TextInput
-from numinput import NumInput
-from radio import Radio
-from checkbox import Checkbox
+from basicinput import *
 weights = []
 ==
 
