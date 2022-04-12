@@ -34,8 +34,16 @@ class JXGInput(Serializable):
     def disable(self):
         """
         Disable the input field.
-        """ 
-        self.disabled = True
+        """
+        self.data['disabled'] = True
+
+    def render(self):
+        """
+        Return the HTML code of the input field.
+        """
+        selector = self.data['selector']
+        cid = self.data['cid']
+        return f"<{selector} cid='{cid}'></{selector}>"
 
 from math import hypot
 
