@@ -1,4 +1,10 @@
 extends = /model/basic/basic.pl
+@ /builder/before3.py [builder.py]
+@ /grader/evaluator3.py [grader.py]
+@ /utils/inputfields/basicinputfield.py
+@ /model/math/jinja_math.py [jinja_env.py]
+@ /utils/json/pljson.py [json_encoder.py]
+@ /utils/json/serializable.py
 
 # Main keys
 
@@ -29,8 +35,8 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from dropgroup import DropGroup
-input = DropGroup()
+from basicinput import DropGroup
+inputfield = DropGroup()
 ==
 
 before == #|py|
@@ -40,21 +46,21 @@ before == #|py|
 ==
 
 process == #|py|
-from dropgroup import process_filledtext
-sol, dropblock, solution = process_filledtext(filledtext, delimiters, "input.drops", "color:green")
-input.set_drops(len(sol))
-input.set_labels(sol)
-input.add_labels(labels)
-inputblock =  dropblock + "\n\n" + input.labels_html()
-input.sol = sol
+from basicinput import process_filledtext
+sol, dropblock, solution = process_filledtext(filledtext, delimiters, "inputfield.drops", "color:green")
+inputfield.set_drops(len(sol))
+inputfield.set_labels(sol)
+inputfield.add_labels(labels)
+inputblock =  dropblock + "\n\n" + inputfield.labels_html()
+inputfield.sol = sol
 ==
 
 # Evaluation scripts
 
 evaluator == #|py|
-score = input.eval()
-input.display_feedback()
-input.disable()
+score = inputfield.eval()
+inputfield.display_feedback()
+inputfield.disable()
 ==
 
 # API documentation
