@@ -12,6 +12,12 @@ class JXGInput(Serializable):
         for k, v in kwargs.items():
             setattr(self, k, v)
 
+    def set_attributes(self, attributes):
+        """
+        Set script and render it.
+        """
+        self.data['attributes'] = attributes
+
     def set_script(self, script, dic={}):
         """
         Set script and render it.
