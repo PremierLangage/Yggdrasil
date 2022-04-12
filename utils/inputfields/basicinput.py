@@ -2,7 +2,6 @@ import random as rd
 import re
 from uuid import uuid4
 from serializable import Serializable
-from scoring import *
 
 class SingleComponent(Serializable):
 
