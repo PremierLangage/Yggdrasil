@@ -388,11 +388,11 @@ class SortList(SingleComponent):
         """
         Display visual feedback.
         """
-        for i, e in enumerate(self.items):
+        for i, e in enumerate(self.data['items']):
 
             id = e['id']
 
-            if id == self._sol[i]:
+            if id == self.sol[i]:
                 e['css'] = 'success-state'
                 css_state="success"
             else:
@@ -403,7 +403,7 @@ class SortList(SingleComponent):
                     <span class="badge badge-%s"> %s </span>
                     <span> %s </span>
                     <span></span>
-                </div>""" % (css_state,str(1+self._sol.index(id)),e['content'])
+                </div>""" % (css_state,str(1+self.sol.index(id)),e['content'])
 
 
 class Drop(SingleComponent):
