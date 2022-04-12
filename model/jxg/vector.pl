@@ -21,7 +21,7 @@ question ==
 
 
 initinput ==
-from jxginputimport JXGVector
+from jxginput import JXGVector
 input = JXGVector()
 ==
 
