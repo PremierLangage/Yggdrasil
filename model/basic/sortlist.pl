@@ -46,7 +46,7 @@ elif isinstance(sortedlist, list):
 if not isinstance(_nbitems_, int):
     _nbitems_ = len(_sortedlist_)
 
-inputfield.set_data_from_list([_sortedlist_[i] for i in sorted(sample(range(len(_sortedlist_)), _nbitems_))])
+inputfield.set_items([_sortedlist_[i] for i in sorted(sample(range(len(_sortedlist_)), _nbitems_))])
 inputfield.scoring = scoring
 ==
 
