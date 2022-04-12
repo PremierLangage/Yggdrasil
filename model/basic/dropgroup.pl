@@ -17,11 +17,11 @@ shuffled = True
 # Input block
 
 inputblock == #|html|
-* Je voudrais {{ input.drops[0]|component }} chausures pour mon anniversaire.
-* Tu est toujours en retard, {{ input.drops[1]|component }} agaçant !
-* Je n'aime pas {{ input.drops[2]|component }} méthodes.
+* Je voudrais {{ inputfield.drops[0]|component }} chausures pour mon anniversaire.
+* Tu est toujours en retard, {{ inputfield.drops[1]|component }} agaçant !
+* Je n'aime pas {{ inputfield.drops[2]|component }} méthodes.
 
-{{ input.labels[0]|component }} {{ input.labels[1]|component }}
+{{ inputfield.labels[0]|component }} {{ inputfield.labels[1]|component }}
 ==
 
 # Before scripts
@@ -35,8 +35,8 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from dropgroup import DropGroup
-input = DropGroup()
+from basicinput import DropGroup
+inputfield = DropGroup()
 ==
 
 process == #|py|
@@ -52,15 +52,15 @@ if len(sol) > 0:
         _sol_ = sol.splitlines()
     else:
         _sol_ = sol
-    input.set_drops(len(_sol_))
-    input.sol = _sol_
+    inputfield.set_drops(len(_sol_))
+    inputfield.sol = _sol_
     for x in _sol_:
         if x not in _labels_:
             _labels_.append(x)
 else:
-    input.set_drops(nbdrops)
+    inputfield.set_drops(nbdrops)
 
-input.set_labels(_labels_)
+inputfield.set_labels(_labels_)
 
 if shuffled:
     pass
@@ -80,13 +80,13 @@ evaluator == #|py|
 
 ending == #|py|
 if 'score' in locals():
-    input.score = score
+    inputfield.score = score
     if 'feedback' in locals():
-        input.feedback = feedback
+        inputfield.feedback = feedback
 else:
     score = input.eval()
-input.display_feedback()
-input.disable()
+inputfield.display_feedback()
+inputfield.disable()
 ==
 
 apidoc == #|json|
