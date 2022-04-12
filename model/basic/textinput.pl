@@ -29,7 +29,7 @@ inputblock ==
 {{ prefix }} 
     </div>
     <div class="col col-sm-6 col-md-4" style="padding-left:0.5em; padding-right:0;">
-{{ input|html }}
+{{ inputfield|html }}
     </div>
   </div>
 </div>
