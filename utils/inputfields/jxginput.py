@@ -16,13 +16,13 @@ class JXGInput(Serializable):
         """
         Set script and render it.
         """
-        self.script = Template(script).render(dic)
+        self.data['script'] = Template(script).render(dic)
 
     def add_script(self, script, dic={}):
         """
         Add a script and render it.
         """
-        self.script += "\n" + Template(script).render(dic)
+        self.data['script'] += "\n" + Template(script).render(dic)
 
     def get_point(self, name):
         """
