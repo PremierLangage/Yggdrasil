@@ -1,4 +1,4 @@
-extends = /model/basic/basic.pl
+extends = /model/basic/basic2.pl
 
 
 # Main keys
@@ -10,7 +10,7 @@ scoring = "ExactOrder"
 # Input block
 
 inputblock == #|html|
-{{ input|component }}
+{{ inputfield|component }}
 ==
 
 # Before scripts
