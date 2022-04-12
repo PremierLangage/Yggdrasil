@@ -68,7 +68,7 @@ input = JXGPoint()
 
 
 process ==
-input.attributes = attributes
+input..set_attributes(attributes)
 input.evalparam = {'tol': tol}
 input.pointname = pointname
 input.set_script(jxgscript + script_aux, globals())
