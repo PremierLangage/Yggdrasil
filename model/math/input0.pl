@@ -1,6 +1,26 @@
-extends = /model/basic/utils.pl
 extends = /model/basic/hackpage.pl
 extends = messages_math.pl
+
+@ /utils/plrandom.py
+@ /utils/plcsv.py
+@ /utils/sympy/sympy2latex.py
+
+@ /builder/before3.py [builder.py]
+@ /grader/evaluator3.py [grader.py]
+@ /utils/inputfields/basicinput.py
+@ /model/math/jinja_math.py [jinja_env.py]
+@ /utils/json/mathjson.py [json_encoder.py]
+@ /utils/json/serializable.py
+
+
+@ /utils/sympy/evalsympy.py
+@ /utils/sympy/latex2sympy.py
+@ /utils/sympy/sympy2latex.py
+@ /utils/sympy/randsympy.py
+
+@ /utils/inputfields/mathinput2.py [mathinput.py]
+@ /utils/components/mathinput/mathinput.html
+
 
 # Specific keys
 
@@ -57,6 +77,7 @@ from jinja_env import Env
 embed = Env.from_string(embed).render(locals())
 input.set_embed(embed)
 input.set_keypad(keypad)
+_tpl_ = {'inputblock': inputblock}
 ==
 
 before ==
@@ -74,7 +95,7 @@ evalparam ==
 
 ==
 
-getinput ==
+getinput == #|py|
 from mathinput import MathInput
 MathInput.message = message
 input.value = answers[input.id]
@@ -86,16 +107,18 @@ score = input.eval()
 input.display_feedback()
 if score >= 0:
   input.disable()
+from jinja_env import Env
+inputblock = Env.from_string(_tpl_['inputblock']).render(globals())
 ==
 
 
 tplpage =@ /model/tplpage/basicmath.html
 
 
-inputblock ==
+inputblock == #|html|
 <div style="display: block; margin-top: 1em;">
 {{ prefix }}
-{{ input|mathinput }}
+{{ input|html }}
 </div>
 ==
 
@@ -209,3 +232,4 @@ apidoc == #|json|
     }
 }
 ==
+
