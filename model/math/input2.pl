@@ -99,6 +99,7 @@ getinput ==
 from mathinput import MathInput
 MathInput.message = message
 input.value = answers[input.id]
+inputblock = tpl.inputblock
 ==
 
 evaluator ==
