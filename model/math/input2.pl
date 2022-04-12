@@ -100,7 +100,7 @@ getinput ==
 from mathinput import MathInput
 MathInput.message = message
 input.value = answers[input.id]
-inputblock = _tpl_['inputblock']
+#inputblock = _tpl_['inputblock']
 ==
 
 evaluator ==
