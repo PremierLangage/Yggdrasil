@@ -1,4 +1,4 @@
-extends = /model/basic/basic2.pl
+extends = /model/basic/basic.pl
 
 # Main keys
 
