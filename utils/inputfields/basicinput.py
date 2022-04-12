@@ -270,3 +270,30 @@ def edit_distance(s1, s2):
                                              newDistances[-1])))
         distances = newDistances
     return distances[-1]
+
+class AutoInput(TextInput):
+
+    def __init__(self, **kwargs):
+        if 'data' not in kwargs:
+            self.data = {'selector': 'c-input', 'cid': str(uuid4())}
+        for k, v in kwargs.items():
+            setattr(self, k, v)
+
+    def set_items(self, items):
+        """
+        Set the items for the autocomplete list.
+        """
+        if isinstance(items, str):
+            self.data['autocomplete'] = items.splitlines()
+        else:
+            self.data['autocomplete'] = items
+
+    def eval(self):
+        """
+        Evaluate the input field.
+        """
+        if self.sol == self.data['value']:
+            self.score = 100
+        else:
+            self.score = 0
+        return self.score
