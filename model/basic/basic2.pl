@@ -7,7 +7,6 @@ extends = /model/basic/hackpage.pl
 @ /builder/before3.py [builder.py]
 @ /grader/evaluator3.py [grader.py]
 @ /utils/inputfields/basicinput.py
-@ /utils/inputfields/mathinput2.py [mathinput.py]
 @ /model/math/jinja_math.py [jinja_env.py]
 @ /utils/json/basicjson.py [json_encoder.py]
 @ /utils/json/serializable.py
