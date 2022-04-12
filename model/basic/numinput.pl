@@ -45,7 +45,6 @@ from plcsv import csv_choice, csv_sample, csv_col
 initinput == #|py|
 from basicinput import NumInput
 inputfield = NumInput()
-inputfield.disable()
 ==
 
 before == #|py|
@@ -54,8 +53,8 @@ before == #|py|
 ==
 
 process == #|py|
-input.evalparam = {'diffmeasure': diffmeasure, 'tol': tol}
-input.sol = sol
+inputfield.evalparam = {'diffmeasure': diffmeasure, 'tol': tol}
+inputfield.sol = sol
 ==
 
 # Evaluation scripts
@@ -71,13 +70,13 @@ evaluator == #|py|
 
 ending == #|py|
 if 'score' in locals():
-    input.score = score
+    inputfield.score = score
     if 'feedback' in locals():
-        input.feedback = feedback
+        inputfield.feedback = feedback
 else:
-    score = input.eval()
-input.display_feedback()
-input.disable()
+    score = inputfield.eval()
+inputfield.display_feedback()
+inputfield.disable()
 ==
 
 # API documentation
