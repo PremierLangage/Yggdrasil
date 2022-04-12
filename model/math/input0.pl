@@ -19,7 +19,7 @@ extends = messages_math.pl
 @ /utils/sympy/randsympy.py
 @ /utils/graphics/plmpl.py
 
-@ /utils/inputfields/mathinput2.py [mathinput.py]
+@ /utils/inputfields/mathinput.py
 @ /utils/components/mathinput/mathinput.html
 
 
