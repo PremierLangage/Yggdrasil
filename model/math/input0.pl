@@ -1,14 +1,13 @@
 extends = /model/basic/hackpage.pl
 extends = messages_math.pl
 
-@ /utils/plrandom.py
-@ /utils/plcsv.py
-@ /utils/sympy/sympy2latex.py
+@ /utils/std/plrandom.py
+@ /utils/std/plcsv.py
 
 @ /builder/before3.py [builder.py]
 @ /grader/evaluator3.py [grader.py]
 @ /utils/inputfields/basicinput.py
-@ /model/math/jinja_math.py [jinja_env.py]
+@ /utils/json/mathjinja.py  [jinja_env.py]
 @ /utils/json/mathjson.py [json_encoder.py]
 @ /utils/json/serializable.py
 
