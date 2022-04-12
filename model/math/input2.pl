@@ -78,7 +78,7 @@ from jinja_env import Env
 embed = Env.from_string(embed).render(locals())
 input.set_embed(embed)
 input.set_keypad(keypad)
-tpl.inputblock = inputblock
+_tpl_ = {'inputblock': inputblock}
 ==
 
 before ==
@@ -100,7 +100,7 @@ getinput ==
 from mathinput import MathInput
 MathInput.message = message
 input.value = answers[input.id]
-inputblock = tpl.inputblock
+inputblock = _tpl_.inputblock
 ==
 
 evaluator ==
