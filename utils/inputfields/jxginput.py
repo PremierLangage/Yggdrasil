@@ -14,7 +14,7 @@ class JXGInput(Serializable):
 
     def set_attributes(self, attributes):
         """
-        Set script and render it.
+        Set attributes.
         """
         self.data['attributes'] = attributes
 
