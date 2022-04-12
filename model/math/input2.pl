@@ -109,7 +109,7 @@ input.display_feedback()
 if score >= 0:
   input.disable()
 from jinja_env import Env
-inputblock = Env.from_string(_tpl_['inputblock']).render(dic)
+inputblock = Env.from_string(_tpl_['inputblock']).render(globals())
 ==
 
 
