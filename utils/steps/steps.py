@@ -1,10 +1,5 @@
 from jinja_env import Env
-from radio import Radio
-from checkbox import Checkbox
-from textinput import TextInput
-from numinput import NumInput
-from dropgroup import DropGroup
-
+from basicinput import *
 
 from uuid import uuid4
 import re
