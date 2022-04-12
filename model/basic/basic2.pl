@@ -9,7 +9,7 @@ extends = /model/basic/hackpage.pl
 @ /utils/inputfields/basicinput.py
 @ /utils/inputfields/mathinput2.py [mathinput.py]
 @ /model/math/jinja_math.py [jinja_env.py]
-@ /utils/json/pljson.py [json_encoder.py]
+@ /utils/json/basicjson.py [json_encoder.py]
 @ /utils/json/serializable.py
 
 before_scripts = ["importfunc", "initinput", "before", "process"]
