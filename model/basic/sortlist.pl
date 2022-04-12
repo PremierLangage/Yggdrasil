@@ -10,7 +10,7 @@ scoring = "ExactOrder"
 # Input block
 
 inputblock == #|html|
-{{ inputfield|component }}
+{{ inputfield|html }}
 ==
 
 # Before scripts
