@@ -1,13 +1,6 @@
-extends = /model/basic/hackpage.pl
-extends = /model/basic/utils.pl
-@ /utils/inputfields/jxgpoint.py
+extends = /model/jxg/input0.pl
 
 # Specific keys
-
-attributes = {}
-
-jxgscript ==
-==
 
 pointname = ""
 
@@ -24,23 +17,9 @@ inputblock ==
 
 # Before scripts
 
-before_scripts = ["mathimport", "initinput", "before", "process"]
-
-mathimport ==
-from sympy import E, I, pi, oo
-from sympy import sqrt, Abs, sin, cos, tan, exp, ln
-from sympy import Symbol, symbols, var
-from sympy import sympify, simplify, Lambda
-from sympy import Integer, Rational, Poly, FiniteSet, Tuple, Interval
-from sympy import integrate
-from random import choice, choices, sample, shuffle
-from plrandom import randint, sampleint
-from sympy2latex import latex
-from latex2sympy import latex2sympy
-==
 
 initinput ==
-from jxgpoint import JXGPoint
+from jxginput import JXGPoint
 input = JXGPoint()
 ==
 
@@ -69,28 +48,7 @@ function down(e) {
 board.on('down', down)
 ==
 
-tplpage =@ /model/tplpage/basicmath.html
 
-evaluator ==
-input.sol = sol
-score = input.eval()
-input.display_feedback()
-input.disable()
-==
-
-
-
-
-style.jxgcss ==
-<style>
-.jsxgraph-component {
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-    border: 1px solid;
-}
-</style>
-==
 
 # API documentation
 
