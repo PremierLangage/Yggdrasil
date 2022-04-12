@@ -73,11 +73,11 @@ evaluator == #|py|
 
 ending == #|py|
 if 'score' in locals():
-    input.score = score
+    inputfield.score = score
     if 'feedback' in locals():
-        input.feedback = feedback
+        inputfield.feedback = feedback
 else:
-    score = input.eval()
+    score = inputfield.eval()
 inputfield.display_feedback()
 inputfield.disable()
 ==
