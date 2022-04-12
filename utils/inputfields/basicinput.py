@@ -3,7 +3,6 @@ from uuid import uuid4
 from serializable import Serializable
 from scoring import *
 
-
 class SingleComponent(Serializable):
 
     def disable(self):
