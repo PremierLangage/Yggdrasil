@@ -1,4 +1,4 @@
-from components import Component
+from uuid import uuid4
 from jinja2 import Template
 from math import hypot
 from serializable import Serializable
