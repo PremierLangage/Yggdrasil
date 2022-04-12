@@ -24,7 +24,7 @@ scoring = "RightMinusWrong"
 # Input block
 
 # Before scripts
-jinja_keys = ["inputblock", "dropblock"]
+jinja_keys = ["inputblock"]
 
 before_scripts = ["importfunc", "initinput", "before", "process"]
 
@@ -53,6 +53,7 @@ inputfield.set_labels(sol)
 inputfield.add_labels(labels)
 inputblock =  dropblock + "\n\n" + inputfield.labels_html()
 inputfield.sol = sol
+del dropblock
 ==
 
 # Evaluation scripts
