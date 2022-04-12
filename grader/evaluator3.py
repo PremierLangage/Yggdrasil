@@ -86,14 +86,6 @@ if __name__ == "__main__":
     feedback = Env.from_string(feedback).render(dic)
     ffeedback = ""
 
-    macros = dic.get('macros', '')
-
-    for key in dic.get('jinja_keys', ['question', 'solution']):
-        if key in dic:
-            if isinstance(dic[key] , str):
-                dic[key] = Env.from_string(macros + dic[key]).render(dic)
-
-
     dic['form'] = dic['tplpage']
 
     with open(sys.argv[3], "w+") as f:
