@@ -14,7 +14,7 @@ question ==
 ==
 
 inputblock == #|html|
-{{ input|component }}
+{{ inputfield|html }}
 ==
 
 # Before scripts
@@ -28,8 +28,8 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from autoinput import AutoInput
-input = AutoInput()
+from basicinput import AutoInput
+inputfield = AutoInput()
 ==
 
 before == #|py|
@@ -38,16 +38,16 @@ before == #|py|
 ==
 
 process == #|py|
-input.sol = sol
-input.set_items(items)
+inputfield.sol = sol
+inputfield.set_items(items)
 ==
 
 # Evaluation scripts
 
 evaluator == #|py|
-score = input.eval()
-input.display_feedback()
-input.disable()
+score = inputfield.eval()
+inputfield.display_feedback()
+inputfield.disable()
 ==
 
 # API documentation
