@@ -348,18 +348,22 @@ class Drop(SingleComponent):
     def __init__(self, **kwargs):
         if 'data' not in kwargs:
             self.data = {'selector': 'c-drag-drop', 'droppable':True, 'cloneable':False, 'cid': str(uuid4())}
+        self.score = None        
         for k, v in kwargs.items():
             setattr(self, k, v)
-        self.score = None
+
 
 class Label(SingleComponent):
 
     def __init__(self, **kwargs):
         if 'data' not in kwargs:
             self.data = {'selector': 'c-drag-drop', 'droppable':False, 'cloneable':False, 'cid': str(uuid4())}
-        for k, v in kwargs.items():
-            setattr(self, k, v)
         self.score = None
+        for k, v in kwargs.items():
+            if k == 'content':
+                self.data['content'] = v
+            else:
+                setattr(self, k, v)
 
 class DropGroup(Serializable):
 
