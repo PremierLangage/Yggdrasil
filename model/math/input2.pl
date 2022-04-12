@@ -103,6 +103,7 @@ input.value = answers[input.id]
 inputblock = """
 <div style="display: block; margin-top: 1em;">
 {{ prefix }}
+{{ input }}
 </div>
 """
 ==
