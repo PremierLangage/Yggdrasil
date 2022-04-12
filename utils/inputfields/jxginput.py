@@ -7,11 +7,10 @@ from serializable import Serializable
 class JXGInput(Serializable):
 
     def __init__(self, **kwargs):
-        self.selector = 'c-math-drawer'
-        self.decorator = 'JXGInput'
-        self.pointname = 'M'
-        self.evalparam = {}
-        super().__init__(**kwargs)
+        if 'data' not in kwargs:
+            self.data = {'selector': 'c-math-drawer', 'cid': str(uuid4())}
+        for k, v in kwargs.items():
+            setattr(self, k, v)
 
     def set_script(self, script, dic={}):
         """
@@ -29,7 +28,7 @@ class JXGInput(Serializable):
         """
         Set script and render it.
         """
-        return (self.points[name]['x'], self.points[name]['y'])
+        return (self.data['points'][name]['x'], self.data['points'][name]['y'])
 
     def disable(self):
         """
@@ -45,16 +44,12 @@ class JXGInput(Serializable):
         cid = self.data['cid']
         return f"<{selector} cid='{cid}'></{selector}>"
 
-from math import hypot
 
 class JXGPoint(JXGInput):
 
     def __init__(self, **kwargs):
-        self.selector = 'c-math-drawer'
-        self.pointname = 'M'
         self.evalparam = {}
         super().__init__(**kwargs)
-        self.decorator = 'JXGPoint'
 
     def eval(self):
         """
