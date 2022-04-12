@@ -2,7 +2,7 @@ extends = /model/basic/hackpage.pl
 
 @ /utils/plrandom.py
 @ /utils/plcsv.py
-@ /utils/sympy/latex2sympy.py
+@ /utils/sympy/sympy2latex.py
 
 @ /builder/before3.py [builder.py]
 @ /grader/evaluator3.py [grader.py]
