@@ -1,6 +1,7 @@
 from uuid import uuid4
 from evalsympy import eval_expr, eval_complex, eval_poly, eval_set, eval_tuple, eval_interval, eval_chainineq
 from jinja2 import Template
+from serializable import Serializable
 
 std_keypad = {
     "emptyset": {"label": "$! \\varnothing !$", "action": "cmd", "value": "\\empty"},
