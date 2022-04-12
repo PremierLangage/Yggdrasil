@@ -86,7 +86,6 @@ score = input.eval()
 input.display_feedback()
 if score >= 0:
   input.disable()
-inputblock = tpl.inputblock
 ==
 
 
