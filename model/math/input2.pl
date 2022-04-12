@@ -78,6 +78,7 @@ from jinja_env import Env
 embed = Env.from_string(embed).render(locals())
 input.set_embed(embed)
 input.set_keypad(keypad)
+tpl.inputblock = inputblock
 ==
 
 before ==
