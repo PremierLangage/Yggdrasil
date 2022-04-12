@@ -1,4 +1,3 @@
-extends = /model/basic/utils.pl
 extends = /model/basic/hackpage.pl
 extends = messages_math.pl
 
