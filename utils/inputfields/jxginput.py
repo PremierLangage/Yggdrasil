@@ -1,6 +1,8 @@
 from components import Component
 from jinja2 import Template
 from math import hypot
+from serializable import Serializable
+
 
 class JXGInput(Serializable):
 
