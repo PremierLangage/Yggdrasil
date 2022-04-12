@@ -109,7 +109,6 @@ input.display_feedback()
 if score >= 0:
   input.disable()
 inputblock = _tpl_['inputblock']
-del _tpl_
 ==
 
 
