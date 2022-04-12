@@ -100,13 +100,7 @@ getinput == #|py|
 from mathinput import MathInput
 MathInput.message = message
 input.value = answers[input.id]
-inputblock = """
-<div style="display: block; margin-top: 1em;">
-{{ prefix }}
-{{ input|html }}
-toto
-</div>
-"""
+inputblock = _tpl_['inputblock']
 ==
 
 evaluator ==
