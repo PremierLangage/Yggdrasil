@@ -2,6 +2,16 @@ extends = /model/basic/utils.pl
 extends = /model/basic/hackpage.pl
 extends = messages_math.pl
 
+
+@ /utils/sympy/evalsympy.py
+@ /utils/sympy/latex2sympy.py
+@ /utils/sympy/sympy2latex.py
+@ /utils/sympy/randsympy.py
+
+@ /utils/inputfields/mathinput1.py
+@ /utils/components/mathinput/mathinput.html
+
+
 # Specific keys
 
 
