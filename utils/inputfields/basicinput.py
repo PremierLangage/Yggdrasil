@@ -297,7 +297,7 @@ class AutoInput(TextInput):
             self.score = 0
         return self.score
 
-class NumInput(Component):
+class NumInput(SingleComponent):
 
     def __init__(self, **kwargs):
         if 'data' not in kwargs:
