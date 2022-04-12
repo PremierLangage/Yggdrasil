@@ -103,3 +103,68 @@ class MathInput(Serializable):
     def get_value(self):
         return self.value
 
+class MatrixInput(Serializable):
+
+    message = {}
+
+    def __init__(self, **kwargs):
+        if 'data' not in kwargs:
+            self.data = {'selector': 'c-math-matrix', 'cid': str(uuid4())}
+        for k, v in kwargs.items():
+            setattr(self, k, v)
+
+    def set_matrix(self, M):
+        """
+        Set a matrix.
+        """
+        self.data['matrix'] = []
+        if isinstance(M, list):
+            for row in M:
+                self.data['matrix'].append([{'value': str(value)} for value in row])
+        elif isinstance(M, Matrix):
+            for i in range(len(M.col(0))):
+                self.data['matrix'].append([{'value': str(value)} for value in M.row(i)])
+
+    def set_zeros(self, rows, cols=None):
+        """
+        Set a matrix of zeros.
+        """
+        if cols == None:
+            cols = rows
+        self.set_matrix([cols * [0] for _ in range(rows)])
+
+    def get_value(self):
+        """
+        Get the matrix.
+        """
+        return [[item['value'] for item in row] for row in self.data['matrix']]
+
+
+    def eval(self):
+        """
+        Evaluate the input field.
+        """
+        score, error = eval_matrix(Matrix(self.get_value()), self.sol, **self.evalparam)
+        self.score = score
+        self.feedback = MatrixInput.message.get(error, f"Error: {error}")
+        return self.score
+        
+    def display_feedback(self):
+        """
+        Display visual feedback.
+        """
+        pass
+
+    def disable(self):
+        """
+        Disable the input field.
+        """
+        self.data['disabled'] = True
+
+    def render(self):
+        """
+        Return the HTML code of the input field.
+        """
+        selector = self.data['selector']
+        cid = self.data['cid']
+        return f"<{selector} cid='{cid}'></{selector}>"
