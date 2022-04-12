@@ -490,7 +490,7 @@ class MatchList(SingleComponent):
                 "multiple" : False
             })
             self.sol.append({'source': sourceid, 'target': targetid})
-        rd.shuffle(self.nodes)
+        rd.shuffle(self.data['nodes'])
 
     def shuffle(self):
         rd.shuffle(self.data['nodes'])
