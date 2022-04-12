@@ -486,7 +486,7 @@ def process_filledtext(filledtext, delimiters, name, style):
         end, newstart = m.span()
         dropblock += filledtext[start:end]
         solution += filledtext[start:end]
-        rep = "{{ "+ name + "[" + str(counter) + "]|component }}"
+        rep = "{{ "+ name + "[" + str(counter) + "]|html }}"
         sol.append(m.group(1)) 
         dropblock += rep
         solution += rf'<span style="{style}">{m.group(1)}</span>' 
