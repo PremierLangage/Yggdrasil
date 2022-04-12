@@ -301,7 +301,7 @@ class NumInput(SingleComponent):
 
     def __init__(self, **kwargs):
         if 'data' not in kwargs:
-            self.data = {'selector': 'c-input', 'type':"number", 'cid': str(uuid4())}
+            self.data = {'selector': 'c-input', 'type': 'number', 'cid': str(uuid4())}
         for k, v in kwargs.items():
             setattr(self, k, v)
         self.evalparam = kwargs.get('evalparam', {})
