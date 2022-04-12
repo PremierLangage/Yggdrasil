@@ -100,7 +100,6 @@ getinput == #|py|
 from mathinput import MathInput
 MathInput.message = message
 input.value = answers[input.id]
-inputblock = _tpl_['inputblock']
 ==
 
 evaluator ==
@@ -109,6 +108,7 @@ score = input.eval()
 input.display_feedback()
 if score >= 0:
   input.disable()
+inputblock = _tpl_['inputblock']
 ==
 
 
