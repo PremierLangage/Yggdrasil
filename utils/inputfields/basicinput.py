@@ -400,17 +400,13 @@ class DropGroup(Serializable):
     def labels_html(self):
         lst = []
         for label in self.labels:
-            selector = label.selector
-            cid = label.cid
-            lst.append(f"<{selector} cid='{cid}'></{selector}>")
+            lst.append(label.render())
         return "".join(lst)
 
     def drops_html(self):
         lst = []
         for label in self.drops:
-            selector = label.selector
-            cid = label.cid
-            lst.append(f"<{selector} cid='{cid}'></{selector}>")
+            lst.append(label.render())
         return "".join(lst)
 
     def eval(self):
