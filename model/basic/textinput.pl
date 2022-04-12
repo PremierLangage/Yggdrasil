@@ -78,8 +78,8 @@ if 'score' in locals():
         input.feedback = feedback
 else:
     score = input.eval()
-input.display_feedback()
-input.disable()
+inputfield.display_feedback()
+inputfield.disable()
 ==
 
 # API documentation
