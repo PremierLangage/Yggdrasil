@@ -448,7 +448,7 @@ class MatchList(SingleComponent):
         contents = []
         for target in targets:
             if target not in contents:
-                self.nodes.append({
+                self.data['nodes'].append({
                     "id": str(uuid4()),
                     "content": str(target),
                     "target": True,
