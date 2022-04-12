@@ -9,7 +9,7 @@ extends = messages_math.pl
 @ /grader/evaluator3.py [grader.py]
 @ /utils/inputfields/basicinput.py
 @ /model/math/jinja_math.py [jinja_env.py]
-@ /utils/json/pljson.py [json_encoder.py]
+@ /utils/json/mathjson.py [json_encoder.py]
 @ /utils/json/serializable.py
 
 
