@@ -2,7 +2,7 @@
 
 # Ce modèle permet de fabriquer des exercices de correspondances.
 
-extends = /model/basic/basic2.pl
+extends = /model/basic/basic.pl
 
 # Specific keys
 
