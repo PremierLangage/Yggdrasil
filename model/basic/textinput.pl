@@ -29,7 +29,7 @@ inputblock ==
 {{ prefix }} 
     </div>
     <div class="col col-sm-6 col-md-4" style="padding-left:0.5em; padding-right:0;">
-{{ input|component }}
+{{ input|html }}
     </div>
   </div>
 </div>
@@ -46,8 +46,8 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from textinput import TextInput
-input = TextInput()
+from basicinput import TextInput
+inputfield = TextInput()
 ==
 
 before == #|py|
@@ -56,8 +56,8 @@ before == #|py|
 ==
 
 process == #|py|
-input.set_sol(sol)
-input.evalparam = {'diffmeasure':diffmeasure, 'tol':tol, 'casesens':casesens}
+inputfield.set_sol(sol)
+inputfield.evalparam = {'diffmeasure':diffmeasure, 'tol':tol, 'casesens':casesens}
 ==
 
 # Evaluation scripts
