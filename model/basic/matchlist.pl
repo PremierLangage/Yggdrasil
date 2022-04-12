@@ -2,7 +2,7 @@
 
 # Ce modèle permet de fabriquer des exercices de correspondances.
 
-extends = /model/basic/basic.pl
+extends = /model/basic/basic2.pl
 
 # Specific keys
 
@@ -24,7 +24,7 @@ question ==
 ==
 
 inputblock == #|html|
-{{ input|component }}
+{{ inputfield|html }}
 ==
 
 # Before scripts
@@ -38,8 +38,8 @@ from plcsv import csv_choice, csv_sample, csv_col
 ==
 
 initinput == #|py|
-from matchlist import MatchList
-input = MatchList()
+from basicinput import MatchList
+inputfield = MatchList()
 ==
 
 before == #|py|
