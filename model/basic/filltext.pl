@@ -24,7 +24,7 @@ scoring = "RightMinusWrong"
 # Input block
 
 # Before scripts
-jinja_keys = ["inputblock"]
+jinja_keys = ["inputblock", "dropblock"]
 
 before_scripts = ["importfunc", "initinput", "before", "process"]
 
