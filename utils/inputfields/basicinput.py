@@ -409,7 +409,7 @@ class MatchList(SingleComponent):
 
     def __init__(self, **kwargs):
         if 'data' not in kwargs:
-            self.data = {'selector': 'c-match-list', 'cid': str(uuid4())}
+            self.data = {'selector': 'c-match-list', 'nodes':[], 'cid': str(uuid4())}
         for k, v in kwargs.items():
             setattr(self, k, v)
 
@@ -419,7 +419,7 @@ class MatchList(SingleComponent):
         Set source nodes.
         """
         for source in sources:
-            self.nodes.append({
+            self.data['nodes'].append({
                 "id": str(uuid4()),
                 "content": str(source),
                 "source": True
