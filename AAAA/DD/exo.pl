@@ -1,15 +1,16 @@
 extends = /model/basic/basic.pl
 
 question ==
+{% raw %}
 <div ng-app="myApp" ng-controller="personCtrl">
 
 First Name: <input type="text" ng-model="firstName"><br>
 Last Name: <input type="text" ng-model="lastName"><br>
 <br>
-
+Full Name: {{fullName()}}
 
 </div>
-
+{% endraw %}
 ==
 
 javascript.toto ==
