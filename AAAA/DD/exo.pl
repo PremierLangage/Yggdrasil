@@ -1,27 +1,23 @@
 extends = /model/basic/basic.pl
-@ /builder/before3.py [builder.py]
-@ /grader/evaluator3.py [grader.py]
-@ /utils/inputfields/basicinput.py
-@ /model/math/jinja_math.py [jinja_env.py]
-@ /utils/json/pljson.py [json_encoder.py]
-@ /utils/json/pljson.py
-
-before == #|py|
-from basicinput import Radio, Checkbox
-sol = 3
-obj = Checkbox()
-obj.set_items(['AA', 'BB', 'CC'])
-ttt = obj.render()
-==
-
-evaluator ==
-score = 0
-#obj.set_items(['AA', 'BB', 'CC', 'DD'])
-
-==
-
 
 question ==
-Entrer 3
-{{ ttt }}
+<div ng-app="myApp" ng-controller="personCtrl">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{fullName()}}
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('personCtrl', function($scope) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+    $scope.fullName = function() {
+        return $scope.firstName + " " + $scope.lastName;
+    };
+});
+</script>
 ==
