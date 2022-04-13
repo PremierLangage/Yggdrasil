@@ -6,14 +6,6 @@ extends=/ComputerScience/python/template/pltest.pl
 @ /builder/before.py [builder.py]
 title = Afficher les "n" premiers multiples d'un entier "x"
 
-code==
-
-
-?? = ??(input("Saisissez un entier strictement positif : "))
-
-
-print("\n de 0 fois",??,"à",??,"fois",n)
-==
 
 text==  
 
@@ -23,71 +15,35 @@ Ecrire une fonction `affiche_table` qui : <br>
     + un entier n <br>
 *imprime les n premiers multiples de x.
 
+Exemples:
+    >>> affiche_table(5,3)
+    5
+    10
+    15
+    >>> affiche_table(6,4)
+    6
+    12
+    18
+    24
+
 ==
-Xeditor.code==
-def table(x,n):
-    print("\nde 0 fois",n,"à",x,"fois",n)
-    for i in range(n):
-        print(i * x)
-def  saisie_entier_str_positif():
-    n=int(input("Saisissez un entier strictement positif : "))
-    while(n<=0):
-         n = int(input("Saisissez un entier strictement positif : "))
-    return n
 
-n = saisie_entier_str_positif()
-x = saisie_entier_str_positif()
 
-table(n,x)
-==
-soluce==#|python|
-def table(x,n):
-    print("\nde 0 fois",x,"à",n,"fois",x)
-    for i in range(n):
-        print(i * x)
-def  saisie_entier_str_positif():
-    n=int(input("Saisissez un entier strictement positif : "))
-    while(n<=0):
-         n = int(input("Saisissez un entier strictement positif : "))
-    return n
-
-n = saisie_entier_str_positif()
-x = saisie_entier_str_positif()
-
-table(n,x)
-==
 before==
 
 ==
-mplsoluce0==
-paire
-2
-4
-==
-mplsoluce1==
-impaire 
-3
-9
-==
 
-mplsoluce2==
-Grand 
-10
-40
-==
 
-mplsoluce3==
-nul
-0
-1
-10
-==
-
-mplsoluce4==
-négatif
-10
--2
-5
+pltest==
+    >>> affiche_table(5,3)
+    5
+    10
+    15
+    >>> affiche_table(6,4)
+    6
+    12
+    18
+    24
 ==
 
 
