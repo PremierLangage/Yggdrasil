@@ -34,7 +34,7 @@ pltest==
 
 
 testcode==
-def tri2valeur(val1, val2):
+def tri2valeurs(val1, val2):
     if val1 > val2:
         return val2, val1
     else:
