@@ -10,10 +10,6 @@ Last Name: <input type="text" ng-model="lastName"><br>
 Full Name: {{fullName()}}
 
 </div>
-{% endraw %}
-==
-
-javascript.toto ==
 <script>
 var app = angular.module('myApp', []);
 app.controller('personCtrl', function($scope) {
@@ -24,4 +20,9 @@ app.controller('personCtrl', function($scope) {
     };
 });
 </script>
+{% endraw %}
+==
+
+javascript.toto ==
+
 ==
