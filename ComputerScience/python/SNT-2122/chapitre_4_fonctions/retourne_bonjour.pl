@@ -3,6 +3,7 @@ name= Retourne bonjour
 title= Retourne bonjour # N'oubliez pas de remplir ce champs svp
 tag=def|parameters|return # N'oubliez pas de remplir ce champs svp
 extends=/ComputerScience/python/template/pltest.pl
+@ /builder/before.py [builder.py]
 piste=verte
 
 
