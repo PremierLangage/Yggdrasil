@@ -10,7 +10,16 @@ extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 piste=verte
 text==
 ## Une fonction carre
-## Ecrivez une fonction `carre` qui retourne le carré de son paramêtre
+Ecrivez une fonction `carre` qui retourne le carré de son paramêtre
+
+Exemple:
+
+    >>> carre(5)
+    25
+    >>> carre(-4)
+    16
+    >>> carre(100)
+    10000
 ==
 before==
 import random 
