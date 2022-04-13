@@ -16,6 +16,7 @@ Ecrire une fonction `affiche_table` qui : <br>
 *imprime les n premiers multiples de x.
 
 Exemples:
+
     >>> affiche_table(5,3)
     5
     10
