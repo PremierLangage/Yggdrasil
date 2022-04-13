@@ -2,6 +2,7 @@ extends = /model/basic/basic.pl
 
 question ==
 {% raw %}
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <div ng-app="myApp" ng-controller="personCtrl">
 
 First Name: <input type="text" ng-model="firstName"><br>
