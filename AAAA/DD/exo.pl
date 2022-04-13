@@ -8,8 +8,9 @@ question ==
 First Name: <input type="text" ng-model="firstName"><br>
 Last Name: <input type="text" ng-model="lastName"><br>
 <br>
+{% raw %}
 Full Name: {{fullName()}}
-
+{% endraw %}
 </div>
 <script>
 var app = angular.module('myApp', []);
