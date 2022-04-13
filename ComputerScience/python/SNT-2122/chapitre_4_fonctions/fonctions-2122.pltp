@@ -13,10 +13,12 @@ mais vous pouvez naviger avec le menu de gauche.
 
 
 ==
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/carre.pl
+@ carre.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/Conversion.pl
+@ Conversion.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/TriangleEtoile.pl
+@ estpremier.pl
+
+@ TriangleEtoile.pl
 
 
