@@ -13,7 +13,8 @@ mais vous pouvez naviger avec le menu de gauche.
 
 
 ==
-
+@ affiche_bonjour.pl
+@ retourne_bonjour.pl
 @ positif.pl
 @ carre.pl
 @ rectangle.pl
