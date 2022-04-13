@@ -22,14 +22,14 @@ Exemples :
 ==
 
 pltest==
-    >>> tri2valeurs(5, 2)
-    (2, 5)
-    >>> tri2valeurs(10, 10)
-    (10, 10)
-    >>> tri2valeurs(3, 7)
-    (3, 7)
-    >>> tri2valeurs(30, -7)
-    (-7, 30)
+    >>> tri3valeurs(5, 2, 1)
+    (1, 2, 5)
+    >>> tri2valeurs(10, 10, 3)
+    (3, 10, 10)
+    >>> tri2valeurs(3, 7, 4)
+    (3, 4, 7)
+    >>> tri2valeurs(30, -7, 2)
+    (-7, 2, 30)
 ==
 
 
