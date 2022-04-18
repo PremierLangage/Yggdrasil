@@ -12,6 +12,7 @@ form==
 
 grader==#|py|
 import json 
+import sys
 with open(sys.argv[2], 'r') as f:
     answers = json.load(f)
 with open(sys.argv[4], 'w+') as f:
