@@ -20,6 +20,7 @@ try:
         print(answers, file=f)
 except Exception as e:
     print(e, file=sys.stderr)
+print(100)
 ==
 
 settings.allow_reroll = true
