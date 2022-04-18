@@ -16,6 +16,7 @@ form==#|html|
         const el = document.createElement('input');
         el.id = "form_" + i;
         p.appendChild(el);
+        i++;
     })
 </script>
 ==
