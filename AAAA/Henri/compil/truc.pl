@@ -14,7 +14,7 @@ form==#|html|
     b.addEventListener('click', (e) => {
         const p = e.target.parentNode;
         const el = document.createElement('input');
-        input.id = "form_" + i;
+        el.id = "form_" + i;
         p.appendChild(el);
     })
 </script>
