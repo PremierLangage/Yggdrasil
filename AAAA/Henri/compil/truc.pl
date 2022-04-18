@@ -6,8 +6,16 @@ text==
 Test de dépot ?
 ==
 
-form==
+form==#|html|
+<button id="addfile">+</button>
 <input type="file" id="form_depot">
+<script>
+    const b = document.getElementById("addfile");
+    b.addEventListener('click', (e) => {
+        const b = e.target;
+        
+    })
+</script>
 ==
 
 grader==#|py|
@@ -22,5 +30,3 @@ except Exception as e:
     print(e, file=sys.stderr)
 print(100)
 ==
-
-settings.allow_reroll = true
