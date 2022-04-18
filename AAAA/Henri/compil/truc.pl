@@ -8,12 +8,14 @@ Test de dépot ?
 
 form==#|html|
 <button id="addfile">+</button>
-<input type="file" id="form_depot">
 <script>
+    let i = 1;
     const b = document.getElementById("addfile");
     b.addEventListener('click', (e) => {
-        const b = e.target;
-        
+        const p = e.target.parentNode;
+        const el = document.createElement('input');
+        input.id = "form_" + i;
+        p.appendChild(el);
     })
 </script>
 ==
