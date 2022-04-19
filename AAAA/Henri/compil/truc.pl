@@ -15,7 +15,7 @@ form==#|html|
     b.addEventListener('click', (e) => {
         const p = e.target.parentNode;
         const el = document.createElement('c-code-editor');
-        el.id = "form_" + i;
+        el.setAttribute("cid","form_code" + i);
         p.appendChild(el);
         i++;
     })
