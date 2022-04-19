@@ -14,7 +14,7 @@ form==#|html|
     const b = document.getElementById("addfile");
     b.addEventListener('click', (e) => {
         const p = e.target.parentNode;
-        const el = document.createElement('input');
+        const el = document.createElement('c-code-editor');
         el.id = "form_" + i;
         p.appendChild(el);
         i++;
