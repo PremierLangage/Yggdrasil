@@ -8,7 +8,6 @@ Test de dépot ?
 
 form==#|html|
 <button id="addfile">+</button>
-<c-code-editor cid="form_bidule"> </c-code-editor> 
 <script>
     let i = 1;
     const b = document.getElementById("addfile");
