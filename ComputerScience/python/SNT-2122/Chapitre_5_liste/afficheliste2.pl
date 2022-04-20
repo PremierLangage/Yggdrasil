@@ -33,11 +33,11 @@ pltest0==
 bonjour, 3, fois
 >>> affiche([1, 2, 3, 4])
 1, 2, 3, 4
->>> affiche([])
 ==
 
-
-
+pltest1==
+>>> affiche([])
+==
 
 
 
