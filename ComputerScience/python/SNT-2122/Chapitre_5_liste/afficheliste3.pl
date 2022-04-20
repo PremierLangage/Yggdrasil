@@ -1,6 +1,6 @@
 extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 
-title = Afficher liste avec virgules
+title = Afficher liste de listes
 
 text==
 
