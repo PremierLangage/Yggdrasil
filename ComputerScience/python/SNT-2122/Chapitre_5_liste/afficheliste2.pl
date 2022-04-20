@@ -24,6 +24,7 @@ def affiche(lst) :
             nb += 1
         else:
             chaine += ', ' + str(elem)
+    print(chaine)
 ==
 
 pltest0==
