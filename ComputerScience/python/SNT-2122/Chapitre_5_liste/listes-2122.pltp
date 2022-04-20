@@ -25,6 +25,8 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 @ afficheliste.pl
 @ existe_impair-2122.pl
 @ liststat-2122.pl
+@ afficheliste2.pl
+@ afficheliste3.pl
 
 # Construction de liste
 @ extends-2122.pl
