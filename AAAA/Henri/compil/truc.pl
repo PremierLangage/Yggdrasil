@@ -12,7 +12,6 @@ form==#|html|
 <script src="https://hderycke.frama.io/sharecode/mode/mllike/mllike.js"></script>
 <script src="https://hderycke.frama.io/sharecode/mode/clike/clike.js"></script>
 <script src="https://hderycke.frama.io/sharecode/mode/python/python.js"></script>
-<script src="https://hderycke.frama.io/sharecode/mode/y86/y86.js"></script>
 <script src="https://hderycke.frama.io/sharecode/mode/markdown/markdown.js"></script>
 
 <button onclick="addCM()">+</button>
@@ -25,6 +24,7 @@ form==#|html|
         const div = document.createElement('div');
         document.getElementById("section_code").appendChild(div);
 
+        // selecteur de lang (charge ce qui est dispo), ne fait pas parti de la data
         const selectLang = document.createElement('select');
         for (const lang of Object.getOwnPropertyNames(CodeMirror.mimeModes)) {
             const option = document.createElement('option');
@@ -41,7 +41,10 @@ form==#|html|
                 styleActiveLine: true,
             }
         );
+        // id pour PL (angular?)
         editor.getInputField().id = "form_code" + uid;
+
+        // nécessaire pour synchroniser la valeur de l'éditeur et de la textarea
         editor.on("changes", (cm) => cm.save());
 
         selectLang.addEventListener('change', () => {
