@@ -1,7 +1,6 @@
-@ /utils/sandboxio.py
-
 title = Truc
 
+# workaround, on triche
 editor =: CodeEditor
 editor.theme=dark
 editor.language=c
