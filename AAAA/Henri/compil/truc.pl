@@ -29,7 +29,7 @@ form==#|html|
             lineNumbers: true,
             styleActiveLine: true,
         });
-        editor.signal("changes", (cm) => cm.save());
+        editor.on("changes", (cm) => cm.save());
         const selectLang = document.getElementById('lang');
         for (const lang of Object.getOwnPropertyNames(CodeMirror.mimeModes)) {
             const option = document.createElement('option');
