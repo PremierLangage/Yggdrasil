@@ -2,7 +2,7 @@
 
 title = Truc
 
-editor =: CodeEditor
+editor =: Machin
 editor.theme=dark
 editor.language=c
 
