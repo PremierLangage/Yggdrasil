@@ -47,7 +47,7 @@ form==#|html|
     });
 </script>
 
-<pre>{ editor }</pre>
+<pre>{{ editor }}</pre>
 ==
 
 grader==#|py|
