@@ -22,6 +22,7 @@ form==#|html|
     <code><textarea id="form_code"></textarea></code>
 </div>
 <script>
+    document.addEventListener('load', () => {
     const code = document.getElementById('form_code');
     const editor = CodeMirror.fromTextArea(code, {
         lineNumbers: true,
@@ -36,6 +37,7 @@ form==#|html|
     }
     selectLang.addEventListener('change', () => {
         editor.setOption('mode', selectLang.value);
+    });
     });
 </script>
 ==
