@@ -22,22 +22,24 @@ form==#|html|
     <code><textarea id="form_code"></textarea></code>
 </div>
 <script>
+    // workaround pour la goutière 
     window.addEventListener('load', () => {
-    const code = document.getElementById('form_code');
-    const editor = CodeMirror.fromTextArea(code, {
-        lineNumbers: true,
-        styleActiveLine: true,
-    });
-    const selectLang = document.getElementById('lang');
-    for (const lang of Object.getOwnPropertyNames(CodeMirror.mimeModes)) {
-        const option = document.createElement('option');
-        option.value = lang;
-        option.textContent = (CodeMirror.findModeByMIME(lang) && CodeMirror.findModeByMIME(lang).name) || lang;
-        selectLang.appendChild(option);
-    }
-    selectLang.addEventListener('change', () => {
-        editor.setOption('mode', selectLang.value);
-    });
+        const code = document.getElementById('form_code');
+        const editor = CodeMirror.fromTextArea(code, {
+            lineNumbers: true,
+            styleActiveLine: true,
+        });
+        editor.signal("changes", (cm) => cm.save());
+        const selectLang = document.getElementById('lang');
+        for (const lang of Object.getOwnPropertyNames(CodeMirror.mimeModes)) {
+            const option = document.createElement('option');
+            option.value = lang;
+            option.textContent = (CodeMirror.findModeByMIME(lang) && CodeMirror.findModeByMIME(lang).name) || lang;
+            selectLang.appendChild(option);
+        }
+        selectLang.addEventListener('change', () => {
+            editor.setOption('mode', selectLang.value);
+        });
     });
 </script>
 ==
