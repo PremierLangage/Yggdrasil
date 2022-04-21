@@ -24,6 +24,7 @@ form==#|html|
         const uid = fileid++;
         const div = document.createElement('div');
         document.getElementById("section_code").appendChild(div);
+
         const selectLang = document.createElement('select');
         for (const lang of Object.getOwnPropertyNames(CodeMirror.mimeModes)) {
             const option = document.createElement('option');
@@ -33,10 +34,13 @@ form==#|html|
         }
         div.appendChild(selectLang);
 
-        const editor = CodeMirror(div, {
-            lineNumbers: true,
-            styleActiveLine: true,
-        });
+        const editor = CodeMirror.fromTextArea(
+            div.appendChild(document.createElement('textarea')), 
+            {
+                lineNumbers: true,
+                styleActiveLine: true,
+            }
+        );
         editor.getInputField().id = "form_code" + uid;
         editor.on("changes", (cm) => cm.save());
 
