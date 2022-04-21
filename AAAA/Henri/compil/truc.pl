@@ -1,10 +1,5 @@
 title = Truc
 
-# workaround, on triche
-editor =: CodeEditor
-editor.theme=dark
-editor.language=c
-
 text==
 Test de dépot ?
 ==
@@ -20,29 +15,39 @@ form==#|html|
 <script src="https://hderycke.frama.io/sharecode/mode/y86/y86.js"></script>
 <script src="https://hderycke.frama.io/sharecode/mode/markdown/markdown.js"></script>
 
-<p><select id="lang"></select></p>
-<div>
-    <code><textarea id="form_code"></textarea></code>
+<button onclick="addCM()">+</button>
+<div id="section_code">
 </div>
 <script>
-    // workaround pour la goutière 
-    window.addEventListener('load', () => {
-        const code = document.getElementById('form_code');
-        const editor = CodeMirror.fromTextArea(code, {
-            lineNumbers: true,
-            styleActiveLine: true,
-        });
-        editor.on("changes", (cm) => cm.save());
-        const selectLang = document.getElementById('lang');
+    let fileid = 0;
+    function addCM() {
+        const uid = fileid++;
+        const div = document.createElement('div');
+        document.getElementById("section_code").appendChild(div);
+        const selectLang = document.createElement('select');
         for (const lang of Object.getOwnPropertyNames(CodeMirror.mimeModes)) {
             const option = document.createElement('option');
             option.value = lang;
             option.textContent = (CodeMirror.findModeByMIME(lang) && CodeMirror.findModeByMIME(lang).name) || lang;
             selectLang.appendChild(option);
         }
+        div.appendChild(selectLang);
+
+        const editor = CodeMirror(div, {
+            lineNumbers: true,
+            styleActiveLine: true,
+        });
+        editor.getInputField().id = "form_code" + uid;
+        editor.on("changes", (cm) => cm.save());
+
         selectLang.addEventListener('change', () => {
             editor.setOption('mode', selectLang.value);
         });
+    }
+
+    // workaround pour la goutière 
+    window.addEventListener('load', () => {
+        addCM();
     });
 </script>
 
