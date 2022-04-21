@@ -22,7 +22,7 @@ form==#|html|
     <code><textarea id="form_code"></textarea></code>
 </div>
 <script>
-    document.addEventListener('load', () => {
+    window.addEventListener('load', () => {
     const code = document.getElementById('form_code');
     const editor = CodeMirror.fromTextArea(code, {
         lineNumbers: true,
