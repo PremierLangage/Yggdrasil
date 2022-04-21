@@ -50,8 +50,6 @@ form==#|html|
         addCM();
     });
 </script>
-
-<pre>{{ editor }}</pre>
 ==
 
 grader==#|py|
