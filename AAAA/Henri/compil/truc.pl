@@ -7,19 +7,36 @@ Test de dépot ?
 ==
 
 form==#|html|
-<button id="addfile">+</button>
-<c-code-editor cid="form_bidule"> </c-code-editor> 
-<c-code-editor cid="form_machin"> </c-code-editor> 
+<link rel="stylesheet" href="https://hderycke.frama.io/sharecode/lib/codemirror.css">
+<script src="https://hderycke.frama.io/sharecode/lib/codemirror.js"></script>
+<script src="https://hderycke.frama.io/sharecode/mode/meta.js"></script>
+<script src="https://hderycke.frama.io/sharecode/addon/selection/active-line.js"></script>
+<script src="https://hderycke.frama.io/sharecode/mode/mllike/mllike.js"></script>
+<script src="https://hderycke.frama.io/sharecode/mode/clike/clike.js"></script>
+<script src="https://hderycke.frama.io/sharecode/mode/python/python.js"></script>
+<script src="https://hderycke.frama.io/sharecode/mode/y86/y86.js"></script>
+<script src="https://hderycke.frama.io/sharecode/mode/markdown/markdown.js"></script>
+
+<p><select id="lang"></select></p>
+<div>
+    <code><textarea id="form_code"></textarea></code>
+</div>
 <script>
-    let i = 1;
-    const b = document.getElementById("addfile");
-    b.addEventListener('click', (e) => {
-        const p = e.target.parentNode;
-        const el = document.createElement('c-code-editor');
-        el.setAttribute("cid","form_code" + i);
-        p.appendChild(el);
-        i++;
-    })
+    const code = document.getElementById('form_code');
+    const editor = CodeMirror.fromTextArea(code, {
+        lineNumbers: true,
+        styleActiveLine: true,
+    });
+    const selectLang = document.getElementById('lang');
+    for (const lang of Object.getOwnPropertyNames(CodeMirror.mimeModes)) {
+        const option = document.createElement('option');
+        option.value = lang;
+        option.textContent = (CodeMirror.findModeByMIME(lang) && CodeMirror.findModeByMIME(lang).name) || lang;
+        selectLang.appendChild(option);
+    }
+    selectLang.addEventListener('change', () => {
+        editor.setOption('mode', selectLang.value);
+    });
 </script>
 ==
 
