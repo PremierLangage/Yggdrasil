@@ -2,6 +2,10 @@
 
 title = Truc
 
+editor =: CodeEditor
+editor.theme=dark
+editor.language=c
+
 text==
 Test de dépot ?
 ==
@@ -42,6 +46,8 @@ form==#|html|
         });
     });
 </script>
+
+<pre>{ editor }</pre>
 ==
 
 grader==#|py|
