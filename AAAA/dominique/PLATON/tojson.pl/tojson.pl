@@ -14,14 +14,9 @@ Initialisez les variables jour, mois, annee avec la date du jour.
 
 ==
 
-@ /builder/before.py [builder.py]
+@ before.py [builder.py]
 
 before==
-import json 
-bob = {}
-l = list(globals().items())
-
-text = l.__str__()
 
 ==
 
