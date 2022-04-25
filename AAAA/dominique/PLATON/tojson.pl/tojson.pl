@@ -18,7 +18,7 @@ Initialisez les variables jour, mois, annee avec la date du jour.
 
 before==
 import json 
-bob = globals()
+bob = globals().keys()
 
 del bob['__builtins']
 
