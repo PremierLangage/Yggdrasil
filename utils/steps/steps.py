@@ -11,7 +11,7 @@ class SingleInput(Serializable):
         self.question = kwargs.get('question', '')
         self.feedback = kwargs.get('feedback', '')
         self.solution = kwargs.get('solution', '')
-
+        
     def eval(self):
         """
         Evaluate the answer.
