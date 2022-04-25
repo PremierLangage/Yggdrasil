@@ -20,7 +20,7 @@ before==
 import json 
 bob = {}
 l = list(globals().items())
-for k,v in globals().items():
+for k,v in l :
      if not k.startswith('__'):
         bob[k]=v
 
