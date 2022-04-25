@@ -27,6 +27,7 @@ for i, q in enumerate(list_questions):
     sequence[i].question = q['text']
     if 'ordered' not in q['options']:
         sequence[i].inputfield.shuffle()
+    sequence[i].inputblock = sequence[i].inputfield.render()
 ==
 
 intro ==
