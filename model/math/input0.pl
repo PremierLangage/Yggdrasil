@@ -123,17 +123,6 @@ inputblock == #|html|
 </div>
 ==
 
-javascript.test ==
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [['$','$'], ['$!', '!$']],
-            skipTags: ["script", "noscript", "style"],
-        }
-    });
-</script>
-==
-
 javascript.onbeforesubmit == #|js|
 <script>
 // Fonction appelée quand l'exercice est soumis (bouton valider).
