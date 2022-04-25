@@ -4,7 +4,7 @@ extends = /model/quiz/basic.pl
 
 start == #|python|
 from AMC import parse_AMC_TXT
-from steps import StepRadio, StepCheckbox
+from steps import SingleInput
 
 list_questions = parse_AMC_TXT(quiz)
 
@@ -15,17 +15,18 @@ else:
 
 sequence = []
 for i, q in enumerate(list_questions):
+    sequence.append(SingleInput())
     if q['type'] == "Radio":
-        sequence.append(StepRadio())
-        sequence[i].set_items(q['items'])
-        sequence[i].set_sol(q['index'])
+        sequence[i].inputfield = Radio()
+        sequence[i].inputfield.set_items(q['items'])
+        sequence[i].inputfield.set_sol(q['index'])
     elif q['type'] == "Checkbox":
         sequence.append(StepCheckbox())
-        sequence[i].set_items(q['items'])
-        sequence[i].set_sol(q['index'])
+        sequence[i].inputfield.set_items(q['items'])
+        sequence[i].inputfield.set_sol(q['index'])
     sequence[i].question = q['text']
     if 'ordered' not in q['options']:
-        sequence[i].input.shuffle()
+        sequence[i].inputfield.shuffle()
 ==
 
 intro ==
