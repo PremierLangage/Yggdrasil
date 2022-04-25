@@ -8,10 +8,9 @@ import random as rd
 class SingleInput(Serializable):
 
     def __init__(self, **kwargs):
-        self.question = kwargs.get('question', '')
-        self.feedback = kwargs.get('feedback', '')
-        self.solution = kwargs.get('solution', '')
-        
+        for k, v in kwargs.items():
+            setattr(self, k, v)
+
     def eval(self):
         """
         Evaluate the answer.
