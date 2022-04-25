@@ -18,11 +18,10 @@ Initialisez les variables jour, mois, annee avec la date du jour.
 
 before==
 import json 
-bob = { i for i in globals().items()}
-
-for k in  globals().keys():
-    if k.startswith('__'):
-        del bob[k]
+bob = {}
+for k,v in globals().items():
+     if not k.startswith('__'):
+        bob[k]=v
 
 text = bob.__str__()
 ==
