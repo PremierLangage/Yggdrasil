@@ -123,7 +123,7 @@ inputblock == #|html|
 </div>
 ==
 
-javascript.test ==
+javascript3.test ==
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
