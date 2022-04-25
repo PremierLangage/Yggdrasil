@@ -95,3 +95,14 @@ function onBeforeSubmitPL() {
 }
 </script>
 ==
+
+javascript.mathjax ==
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$'], ['$!', '!$']],
+            skipTags: ["script", "noscript", "style"],
+        }
+    });
+</script>
+==
