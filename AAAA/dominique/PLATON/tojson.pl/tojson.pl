@@ -25,7 +25,7 @@ for k,v in l :
         bob[k]=v
 
 
-text = bob.__str__()
+text = l.__str__()
 ==
 
 code==
