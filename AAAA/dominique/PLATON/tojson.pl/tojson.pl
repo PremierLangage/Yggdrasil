@@ -20,7 +20,7 @@ before==
 import json 
 bob = globals()
 
-for k in bob.keys():
+for k in  globals().keys():
     if k.startswith('__'):
         del bob[k]
 
