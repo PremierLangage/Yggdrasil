@@ -87,6 +87,7 @@ class Checkbox(SingleComponent):
     def __init__(self, **kwargs):
         if 'data' not in kwargs:
             self.data = {'selector': 'c-checkbox-group', 'cid': str(uuid4())}
+        self.scoring = "AllOrNothing"
         for k, v in kwargs.items():
             setattr(self, k, v)
 
