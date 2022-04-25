@@ -18,7 +18,8 @@ Initialisez les variables jour, mois, annee avec la date du jour.
 
 before==
 import json 
-text = json.dumps(globals())
+bob = globals()
+text = json.dumps(bob)
 ==
 
 code==
