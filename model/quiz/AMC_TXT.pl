@@ -21,7 +21,7 @@ for i, q in enumerate(list_questions):
         sequence[i].inputfield.set_items(q['items'])
         sequence[i].inputfield.set_sol(q['index'])
     elif q['type'] == "Checkbox":
-        sequence.append(StepCheckbox())
+        sequence[i].inputfield = Checkbox()
         sequence[i].inputfield.set_items(q['items'])
         sequence[i].inputfield.set_sol(q['index'])
     sequence[i].question = q['text']
