@@ -5,7 +5,7 @@ extends = /model/quiz/basic.pl
 start == #|python|
 from AMC import parse_AMC_TXT
 from steps import SingleInput
-
+from basicinput import *
 list_questions = parse_AMC_TXT(quiz)
 
 if 'nbstep' in globals():
