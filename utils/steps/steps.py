@@ -5,6 +5,50 @@ from uuid import uuid4
 import re
 import random as rd
 
+class SingleInput(Serializable):
+
+    def __init__(self, **kwargs):
+        self.question = kwargs.get('question', '')
+        self.feedback = kwargs.get('feedback', '')
+        self.solution = kwargs.get('solution', '')
+
+    def eval(self):
+        """
+        Evaluate the answer.
+        """
+        return self.input.eval()
+
+    def show(self):
+        #deprecated
+        """
+        Display visual feedback.
+        """
+        self.input.show()
+
+    def display_feedback(self):
+        """
+        Display visual feedback.
+        """
+        self.input.display_feedback()
+
+    def hide_feedback(self):
+        """
+        Display visual feedback.
+        """
+        self.input.hide_feedback()
+
+    def disable(self):
+        """
+        Disable the exercise.
+        """
+        self.input.disabled = True
+
+    def render(self, name, dic):
+        """
+        Render an attribute.
+        """
+        setattr(self, name, Env.from_string(getattr(self, name)).render(dic))
+
 class Step(Serializable):
 
     def __init__(self, **kwargs):
