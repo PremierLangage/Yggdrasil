@@ -1,7 +1,7 @@
 extends = /model/quiz/basic.pl
 
 start == #|python|
-from steps import StepDropGroup
+from steps import SingleInput
 
 nbstep = 4
 
@@ -10,12 +10,12 @@ solutions = []
 feedbacks = []
 
 for i in range(nbstep):
-    sequence.append(StepDropGroup())
+    sequence.append(SingleInput())
     sequence[i].question = "Compléter"
-    sequence[i].input.set_drops(1)
-    sequence[i].input.set_labels(["habet", "habent"])
+    sequence[i].inputfield.set_drops(1)
+    sequence[i].inputfield.set_labels(["habet", "habent"])
     #sequence[i].set_filledtext("Pastor non pecuniam {habet}.")
-    sequence[i].inputblock = sequence[i].input.drops_html() + "\n\n" + sequence[i].input.labels_html()
+    sequence[i].inputblock = sequence[i].inputfield.drops_html() + "\n\n" + sequence[i].inputfield.labels_html()
     solutions.append("")
     feedbacks.append("")
 ==
