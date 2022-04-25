@@ -20,13 +20,11 @@ before==
 import json 
 bob = {}
 l = list(globals().items())
-for k,v in l :
-     if not k.startswith('__') and k != bob:
-        bob[k]=v
-
 
 text = l.__str__()
+
 ==
+
 
 code==
 
