@@ -20,7 +20,9 @@ before==
 import json 
 bob = globals()
 
-del bob['__builtins']
+for k in bob.keys():
+    if k.startswith('__'):
+        del bob[k]
 
 text = bob.__str__()
 ==
