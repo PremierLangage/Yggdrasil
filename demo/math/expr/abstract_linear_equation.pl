@@ -9,8 +9,8 @@ sol = (x - b)/a
 ==
 
 question ==
-Soit deux nombres $! x !$ et $! y !$ tels que $! x = {{ expr|latex }}. !$ 
-Exprimer $! y !$ en fonction $! x !$.
+Soit deux nombres $ x $ et $ y $ tels que $ x = {{ expr|latex }}. $ 
+Exprimer $ y $ en fonction $ x $. 15 \$
 ==
 
 prefix ==
