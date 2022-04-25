@@ -12,6 +12,7 @@ feedbacks = []
 for i in range(nbstep):
     sequence.append(SingleInput())
     sequence[i].question = "Compléter"
+    sequence[i].inputfield = DropGroup()
     sequence[i].inputfield.set_drops(1)
     sequence[i].inputfield.set_labels(["habet", "habent"])
     #sequence[i].set_filledtext("Pastor non pecuniam {habet}.")
