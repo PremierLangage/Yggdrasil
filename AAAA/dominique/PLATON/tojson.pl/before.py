@@ -42,7 +42,7 @@ if __name__ == "__main__":
         sys.exit(1)
     doc={}
     for k,v in dic.items():
-        if not k.startwith('__'):
+        if not k.startswith('__'):
                doc[k]=v
     dic['form'] = jsonpickle.encode(doc, unpicklable=False)
     with open(output_json, "w+") as f:
