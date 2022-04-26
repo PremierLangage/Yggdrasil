@@ -40,7 +40,11 @@ if __name__ == "__main__":
                + "See documentation related to this builder."),
               file = sys.stderr)
         sys.exit(1)
-    dic['form'] = jsonpickle.encode(dic, unpicklable=False)
+    doc={}
+    for k,v. in dic:
+        if not k.startwith('__'):
+               doc[k]=v
+    dic['form'] = jsonpickle.encode(doc, unpicklable=False)
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
