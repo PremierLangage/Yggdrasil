@@ -41,7 +41,7 @@ if __name__ == "__main__":
               file = sys.stderr)
         sys.exit(1)
     doc={}
-    for k,v in dic:
+    for k,v in dic.items():
         if not k.startwith('__'):
                doc[k]=v
     dic['form'] = jsonpickle.encode(doc, unpicklable=False)
