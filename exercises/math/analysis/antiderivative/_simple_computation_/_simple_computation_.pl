@@ -2,8 +2,11 @@ extends = /model/math/expr.pl
 
 title = Calcul de primitive
 
+param.form = [0, 1, 2]
+param.v = [0, 1, 
+
 # Paramètres
-# 0 : \alpha\ u'e^u
+# 0 : \alpha\ u' e^u
 # 1 : \alpha\ u' sin(u)
 # 2 : \alpha\ u' cos(u)
 # 3 : \alpha\ \frac{u'}{u}
@@ -19,13 +22,13 @@ title = Calcul de primitive
 # Paramètres
 # 0 : a x
 # 1 : a x^2
-# 3 : a x + b
-# 4 : a x^2 + b
-# 5 : a x^2 + b x
-# 6 : a x^n
-# 7 : a sin(x)
-# 8 : a cos(x)
-# 9 : a e^x
+# 2 : a x + b
+# 3 : a x^2 + b
+# 4 : a x^2 + b x
+# 5 : a x^n
+# 6 : a sin(x)
+# 7 : a cos(x)
+# 8 : a e^x
 
 
 question ==
