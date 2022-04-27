@@ -1,7 +1,7 @@
 extends = /demo/template/aleaQCM__template.pl
 @/grader/evaluator.py [grader.py]
 @ /utils/sandboxio.py
-@ /builder/before.py [builder.py]
+@ /AAAA/dominique/PLATON/tojson/before.py [builder.py]
 
 
 title = exemple 
