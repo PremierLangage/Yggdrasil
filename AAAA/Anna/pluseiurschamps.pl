@@ -1,6 +1,6 @@
 
 grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
+@ /AAAA/dominique/PLATON/tojson/before.py [builder.py]
 @ /utils/sandboxio.py
 
 editor =: CodeEditor
