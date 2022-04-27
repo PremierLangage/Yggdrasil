@@ -16,6 +16,21 @@ title = Calcul de primitive
 # 10 : \alpha\ u' u^r\) \((r\in \mathbb{Q})
 # 11 : \alpha\ u' \sqrt{u}
 
+# Paramètres
+# 0 : a x
+# 1 : a x^2
+# 2 : a x^3
+# 3 : \alpha\ \frac{u'}{u}
+# 4 : \alpha\ u'u
+# 5 : \alpha\ u'u^2
+# 6 : \alpha\ u'u^n (n\geq 3)
+# 7 : \alpha\ \frac{u'}{u^2}
+# 8 : \alpha\ \frac{u'}{u^n} (n\geq 3)
+# 9 : \alpha\ \frac{u'}{\sqrt{u}}
+# 10 : \alpha\ u' u^r\) \((r\in \mathbb{Q})
+# 11 : \alpha\ u' \sqrt{u}
+
+
 
 question ==
 Calculer une primitive de la fonction
