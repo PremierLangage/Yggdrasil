@@ -75,6 +75,7 @@ a*exp(x)]
 i = choice(param['u'])
 ux = lst_ux[i]
 
+
 f = alpha*diff(ux, x)*v(ux)
 
 
