@@ -54,14 +54,9 @@ sqrt(x),
 1/sqrt(x),
 x**r]
 
-i = choice(param['form'])
-vx = lst_vx[i]
-v = Lambda(x, vx)
-
-
-
-f = alpha*diff(ux, x)*v(ux)
-
+iterms = sample([0, 1, 2, 6, 7, 8], 2)
+for i in iterms:
+    f += lst_vx[i]
 
 sol = integrate(f, x).doit()
 ==
