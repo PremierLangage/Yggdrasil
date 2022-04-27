@@ -6,14 +6,19 @@ param.form = [0, 1, 2]
 param.u = [0, 1, 2]
 
 # Paramètres
-# 0 : 1
-# 1 : x
-# 2 : x^2
-# 3 : x^n
-# 4 : sin(x)
-# 5 : cos(x)
-# 6 : e^x
-
+# 0 : e^x
+# 1 : sin(x)
+# 2 : cos(x)
+# 3 : e^(ax)
+# 4 : sin(ax)
+# 5 : cos(ax)
+# 6 : x^n
+# 7 : 1/x
+# 8 : 1/x^2
+# 9 : 1/x^n
+# 10 : sqrt(x)
+# 11 : 1/sqrt(x)
+# 12 : x^r
 
 question ==
 Calculer une primitive de la fonction
