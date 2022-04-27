@@ -47,7 +47,7 @@ if __name__ == "__main__":
     dic['text']=''
     dic['title']=''
     dic['form'] = jsonpickle.encode(doc, unpicklable=False)
-    dic['form'] = json.dumps(doc)
+
     
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
