@@ -38,11 +38,7 @@ message.NotEqualUpToConstant = La réponse n'est pas une primitive.
 before ==
 from sympy import integrate
 var('x')
-alpha = choice ([Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4])
-a = 1
-b = 2
-n = 3
-r = Rational(2,3)
+lst_a = [Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4])
 
 lst_vx = [exp(x),
 sin(x),
@@ -62,18 +58,6 @@ i = choice(param['form'])
 vx = lst_vx[i]
 v = Lambda(x, vx)
 
-lst_ux = [a*x,
-a*x**2,
-a*x + b,
-a*x**2 + b,
-a*x**2 + b*x,
-a*x**n,
-a*sin(x),
-a*cos(x),
-a*exp(x)]
-
-i = choice(param['u'])
-ux = lst_ux[i]
 
 
 f = alpha*diff(ux, x)*v(ux)
