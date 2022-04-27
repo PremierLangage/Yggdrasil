@@ -13,9 +13,9 @@ title = Calcul de primitive
 # 7 : \alpha\ \frac{u'}{u^2}
 # 8 : \alpha\ \frac{u'}{u^n} (n\geq 3)
 # 9 : \alpha\ \frac{u'}{\sqrt{u}}
-# 10 : \alpha\ u' \sqrt{u}
-\(\alpha\ \frac{u'}{\sqrt{u}}\)
-\(\alpha\ u' u^r\) \((r\in \mathbb{Q})\)
+# 10 : \alpha\ u' u^r\) \((r\in \mathbb{Q})
+# 11 : \alpha\ u' \sqrt{u}
+
 
 question ==
 Calculer une primitive de la fonction
@@ -38,9 +38,20 @@ var('x')
 alpha = choice ([Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4])
 a = 1
 
-lst_vx = [exp(x),
+lst_v = [exp(x),
 sin(x),
-cos(x)]
+cos(x),
+1/x,
+x,
+x**2,
+x**n,
+1/x**2,
+1/x**n,
+1/sqrt(x),
+x**r,
+sqrt(x)]
+
+
 vx = choice(lst_vx)
 v = Lambda(x, vx)
 
