@@ -57,7 +57,7 @@ sqrt(x)]
 vx = choice(lst_vx)
 v = Lambda(x, vx)
 
-u = x
+u = 4*x+1
 
 f = alpha*diff(u, x)*v(u)
 
