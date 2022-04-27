@@ -47,15 +47,16 @@ r = Rational(2,3)
 lst_vx = [exp(x),
 sin(x),
 cos(x),
-1/x,
-x,
-x**2,
+exp(a*x),
+sin(a*x),
+cos(a*x),
 x**n,
+1/x,
 1/x**2,
-1/x**n,
+1/x^n,
+sqrt(x),
 1/sqrt(x),
-x**r,
-sqrt(x)]
+x**r]
 
 i = choice(param['form'])
 vx = lst_vx[i]
