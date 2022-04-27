@@ -29,8 +29,7 @@ cos(x)]
 vx = choice(lst_vx)
 v = Lambda(x, vx)
 
-v = choice([exp, sin, cos])
-
+u = x
 
 f = alpha*diff(u, x)*v(u)
 
