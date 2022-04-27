@@ -82,7 +82,8 @@ a*sin(x),
 a*cos(x),
 a*exp(x)]
 
-ux = choice(lst_ux)
+i = choice(param['u'])
+ux = lst_ux[i]
 
 f = alpha*diff(ux, x)*v(ux)
 
