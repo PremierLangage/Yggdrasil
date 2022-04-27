@@ -76,7 +76,7 @@ a*x**2 + b*x,
 a*x**n,
 a*sin(x),
 a*cos(x),
-a*e^x]
+a*exp(x)]
 
 ux = choice(lst_ux)
 
