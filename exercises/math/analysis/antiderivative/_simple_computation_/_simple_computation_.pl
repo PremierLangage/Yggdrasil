@@ -19,17 +19,13 @@ title = Calcul de primitive
 # Paramètres
 # 0 : a x
 # 1 : a x^2
-# 2 : a x^3
-# 3 : \alpha\ \frac{u'}{u}
-# 4 : \alpha\ u'u
-# 5 : \alpha\ u'u^2
-# 6 : \alpha\ u'u^n (n\geq 3)
-# 7 : \alpha\ \frac{u'}{u^2}
-# 8 : \alpha\ \frac{u'}{u^n} (n\geq 3)
-# 9 : \alpha\ \frac{u'}{\sqrt{u}}
-# 10 : \alpha\ u' u^r\) \((r\in \mathbb{Q})
-# 11 : \alpha\ u' \sqrt{u}
-
+# 3 : a x + b
+# 4 : a x^2 + b
+# 5 : a x^2 + b x
+# 6 : a x^n
+# 7 : a sin(x)
+# 8 : a cos(x)
+# 9 : a e^x
 
 
 question ==
@@ -68,13 +64,22 @@ x**n,
 x**r,
 sqrt(x)]
 
-
 vx = choice(lst_vx)
 v = Lambda(x, vx)
 
-u = 4*x+1
+lst_ux = [a*x,
+a*x**2,
+a*x + b,
+a*x**2 + b,
+a*x**2 + b*x,
+a*x**n,
+a*sin(x),
+a*cos(x),
+a*e^x]
 
-f = alpha*diff(u, x)*v(u)
+ux = choice(lst_ux)
+
+f = alpha*diff(ux, x)*v(ux)
 
 
 sol = integrate(f, x).doit()
