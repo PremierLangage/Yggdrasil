@@ -40,7 +40,7 @@ a = 1
 n = 3
 r = Rational(2,3)
 
-lst_v = [exp(x),
+lst_vx = [exp(x),
 sin(x),
 cos(x),
 1/x,
