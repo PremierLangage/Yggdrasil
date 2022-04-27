@@ -68,7 +68,8 @@ x**n,
 x**r,
 sqrt(x)]
 
-vx = choice(lst_vx)
+i = choice(param['form'])
+vx = lst_vx[i]
 v = Lambda(x, vx)
 
 lst_ux = [a*x,
