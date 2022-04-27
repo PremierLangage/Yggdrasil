@@ -39,7 +39,7 @@ before ==
 from sympy import integrate
 var('x')
 lst_a = [Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4])
-
+r = Rational(3, 2)
 lst_vx = [exp(x),
 sin(x),
 cos(x),
@@ -55,6 +55,7 @@ sqrt(x),
 x**r]
 
 iterms = sample([0, 1, 2, 6, 7, 8], 2)
+f = 0
 for i in iterms:
     f += lst_vx[i]
 
