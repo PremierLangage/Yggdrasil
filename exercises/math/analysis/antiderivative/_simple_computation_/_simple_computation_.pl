@@ -37,6 +37,8 @@ from sympy import integrate
 var('x')
 alpha = choice ([Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4])
 a = 1
+n = 3
+r = Rational(2,3)
 
 lst_v = [exp(x),
 sin(x),
