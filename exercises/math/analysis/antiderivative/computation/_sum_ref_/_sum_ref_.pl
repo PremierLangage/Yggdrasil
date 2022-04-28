@@ -23,11 +23,14 @@ param.addmon = True
 # 12 : x^r
 
 question ==
-Calculer une primitive de la fonction
+Déterminer une primitive $! F !$ de la fonction
 $$ f : x \mapsto {{ f|latex }} .$$
 {{ sur_intervalle }}
 ==
 
+prefix ==
+$! F(x) = !$
+==
 solution ==
 Les primitives de cette fonction sont les fonctions de la forme $$ x \mapsto {{ sol|latex }} + k $$
 
