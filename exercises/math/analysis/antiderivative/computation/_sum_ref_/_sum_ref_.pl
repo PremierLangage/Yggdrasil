@@ -2,6 +2,11 @@ extends = /model/math/expr.pl
 
 title = Calcul de primitive
 
+
+param.nbterms = 2
+param.types = [0, 7, 10]
+param.addmon = True
+
 # Paramètres
 # 0 : e^x
 # 1 : sin(x)
