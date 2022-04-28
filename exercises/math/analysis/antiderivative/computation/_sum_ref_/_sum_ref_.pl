@@ -41,14 +41,12 @@ equality = "UpToConstant"
 message.NotEqualUpToConstant = La réponse n'est pas une primitive.
 
 before == #|py|
-from sympy import integrate
+from sympy import integrate, S, Union
+from sympy.calculus.util import continuous_domain
+
 x = symbols('x')
 lst_a = [Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4]
 r = Rational(3, 2)
-
-from sympy import S, Union
-
-from sympy.calculus.util import continuous_domain
 
 def generate_f(nbterms, indices, addmon=False):
     coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
@@ -67,18 +65,16 @@ def generate_f(nbterms, indices, addmon=False):
     1/sqrt(x),
     x**r]
     iterms = sample(indices, nbterms)
-    positive = any([i >= 7 for i in iterms])
     terms = [lst_vx[i] for i in iterms]
     if addmon:
         terms.append(choice([1, x, x**2]))
-    return sum([choice([-1, 1])*coeff[i]*terms[i] for i in range(len(terms))]), positive
+    return sum([choice([-1, 1])*coeff[i]*terms[i] for i in range(len(terms))])
 
-f, positive = generate_f(param['nbterms'], param['typeterms'], param['addmon'])
-if positive:
-    sur_intervalle = r"sur l'intervalle $! ]0, +\infty[ !$."
+f = generate_f(param['nbterms'], param['typeterms'], param['addmon'])
 
 fdomain = continuous_domain(f, x, S.Reals)
 if isinstance(fdomain, Union):
     fdomain = fdomain.args[-1]
+
 sol = integrate(f, x).doit().expand()
 ==
