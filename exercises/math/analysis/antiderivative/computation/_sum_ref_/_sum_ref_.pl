@@ -56,7 +56,7 @@ def generate_f(nbterms, indices, addmon=False):
     terms = [lst_vx[i] for i in iterms]
     if addmon:
         terms.append(choice([1, x, x**2]))
-    return sum(terms)
+    return sum([coeff[i]*terms[i] for i in range(terms)])
 
 f = generate_f(2, [0, 1, 2], True)
 sol = integrate(f, x).doit()
