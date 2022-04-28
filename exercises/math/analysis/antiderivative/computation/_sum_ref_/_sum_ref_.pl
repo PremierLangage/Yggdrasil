@@ -69,6 +69,6 @@ def generate_f(nbterms, indices, addmon=False):
 
 f, positive = generate_f(param['nbterms'], param['typeterms'], param['addmon'])
 if positive:
-    sur_intervalle = r"sur l'intervalle $! ]0, +\infty[ $."
+    sur_intervalle = r"sur l'intervalle $! ]0, +\infty[ !$."
 sol = integrate(f, x).doit().expand()
 ==
