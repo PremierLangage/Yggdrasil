@@ -45,7 +45,7 @@ message.NotEqualUpToConstant = La réponse n'est pas une primitive.
 
 before == #|py|
 from sympy import integrate
-x = symbols('x', positive=True)
+x = symbols('x')
 lst_a = [Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4]
 r = Rational(3, 2)
 
