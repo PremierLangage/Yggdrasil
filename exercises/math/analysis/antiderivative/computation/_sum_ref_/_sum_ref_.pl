@@ -20,6 +20,7 @@ title = Calcul de primitive
 question ==
 Calculer une primitive de la fonction
 $$ f : x \mapsto {{ f|latex }} .$$
+{{ sur_intervalle }}
 ==
 
 solution ==
@@ -55,12 +56,14 @@ def generate_f(nbterms, indices, addmon=False):
     1/sqrt(x),
     x**r]
     iterms = sample(indices, nbterms)
+    positive = any([i >= 7 for i in iterms])
     terms = [lst_vx[i] for i in iterms]
-    # intervalle de définition
     if addmon:
         terms.append(choice([1, x, x**2]))
-    return sum([choice([-1, 1])*coeff[i]*terms[i] for i in range(len(terms))])
+    return sum([choice([-1, 1])*coeff[i]*terms[i] for i in range(len(terms))]), positive
 
-f = generate_f(2, [0, 1, 2], True)
+f, positive = generate_f(2, [0, 1, 2, 8, 9], True)
+if positive:
+    sur_intervalle = r"sur l'intervalle $ s]0, +\infty[ $."
 sol = integrate(f, x).doit()
 ==
