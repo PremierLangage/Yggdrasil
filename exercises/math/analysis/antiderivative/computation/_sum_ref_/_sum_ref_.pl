@@ -32,13 +32,14 @@ equality = "UpToConstant"
 
 message.NotEqualUpToConstant = La réponse n'est pas une primitive.
 
-before ==
+before == #|py|
 from sympy import integrate
 x = symbols('x', positive=True)
 lst_a = [Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4]
 r = Rational(3, 2)
 
 def generate_f(nbterms, indices, addmon=False):
+    coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
     lst_vx = [exp(x),
     sin(x),
     cos(x),
@@ -56,7 +57,7 @@ def generate_f(nbterms, indices, addmon=False):
     terms = [lst_vx[i] for i in iterms]
     if addmon:
         terms.append(choice([1, x, x**2]))
-    return sum([coeff[i]*terms[i] for i in range(terms)])
+    return sum([choice([-1, 1])*coeff[i]*terms[i] for i in range(terms)])
 
 f = generate_f(2, [0, 1, 2], True)
 sol = integrate(f, x).doit()
