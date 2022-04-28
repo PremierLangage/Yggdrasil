@@ -2,9 +2,6 @@ extends = /model/math/expr.pl
 
 title = Calcul de primitive
 
-param.form = [0, 1, 2]
-param.u = [0, 1, 2]
-
 # Paramètres
 # 0 : e^x
 # 1 : sin(x)
