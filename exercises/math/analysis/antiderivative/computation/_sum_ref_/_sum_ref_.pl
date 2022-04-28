@@ -4,7 +4,7 @@ title = Calcul de primitive
 
 
 param.nbterms = 2
-param.types = [0, 7, 10]
+param.typeterms = [0, 7, 10]
 param.addmon = True
 
 # Paramètres
