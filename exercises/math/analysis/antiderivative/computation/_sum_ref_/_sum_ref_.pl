@@ -80,6 +80,6 @@ f, positive = generate_f(param['nbterms'], param['typeterms'], param['addmon'])
 if positive:
     sur_intervalle = r"sur l'intervalle $! ]0, +\infty[ !$."
 
-interv = continuous_domain(f, x, S.Reals)
+interv = continuous_domain(f, x, S.Reals).args
 sol = integrate(f, x).doit().expand()
 ==
