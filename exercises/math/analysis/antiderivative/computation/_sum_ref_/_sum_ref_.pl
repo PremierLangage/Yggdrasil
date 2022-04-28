@@ -40,6 +40,7 @@ r = Rational(3, 2)
 
 def generate_f(nbterms, indices, addmon=False):
     coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
+    shuffle(coeff)
     lst_vx = [exp(x),
     sin(x),
     cos(x),
