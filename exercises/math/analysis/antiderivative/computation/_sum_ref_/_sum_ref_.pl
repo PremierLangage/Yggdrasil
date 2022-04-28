@@ -67,7 +67,7 @@ def generate_f(nbterms, indices, addmon=False):
         terms.append(choice([1, x, x**2]))
     return sum([choice([-1, 1])*coeff[i]*terms[i] for i in range(len(terms))]), positive
 
-f, positive = generate_f(2, [ 2, 8, 9], True)
+f, positive = generate_f(param['nbterms'], param['typeterms'], param['addmon'])
 if positive:
     sur_intervalle = r"sur l'intervalle $! ]0, +\infty[ $."
 sol = integrate(f, x).doit().expand()
