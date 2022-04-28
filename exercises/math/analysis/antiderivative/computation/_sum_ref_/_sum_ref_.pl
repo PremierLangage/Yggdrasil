@@ -56,6 +56,7 @@ def generate_f(nbterms, indices, addmon=False):
     x**r]
     iterms = sample(indices, nbterms)
     terms = [lst_vx[i] for i in iterms]
+    # intervalle de définition
     if addmon:
         terms.append(choice([1, x, x**2]))
     return sum([choice([-1, 1])*coeff[i]*terms[i] for i in range(len(terms))])
