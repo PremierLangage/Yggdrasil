@@ -65,5 +65,5 @@ def generate_f(nbterms, indices, addmon=False):
 f, positive = generate_f(2, [0, 1, 2, 8, 9], True)
 if positive:
     sur_intervalle = r"sur l'intervalle $ s]0, +\infty[ $."
-sol = integrate(f, x).doit()
+sol = integrate(f, x).doit().expand()
 ==
