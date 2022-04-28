@@ -49,7 +49,7 @@ x = symbols('x')
 lst_a = [Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4]
 r = Rational(3, 2)
 
-from sympy import S
+from sympy import S, Union
 
 from sympy.calculus.util import continuous_domain
 
@@ -80,6 +80,8 @@ f, positive = generate_f(param['nbterms'], param['typeterms'], param['addmon'])
 if positive:
     sur_intervalle = r"sur l'intervalle $! ]0, +\infty[ !$."
 
-interv = continuous_domain(f, x, S.Reals).args[-1]
+fdomain = continuous_domain(f, x, S.Reals)
+if isinstance(fdomain, Union):
+    fdomain = fdomain.args[-1]
 sol = integrate(f, x).doit().expand()
 ==
