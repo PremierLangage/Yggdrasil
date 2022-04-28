@@ -26,6 +26,8 @@ question ==
 Déterminer une primitive $! F !$ de la fonction
 $$ f : x \mapsto {{ f|latex }} .$$
 {{ sur_intervalle }}
+
+$! {{ interv|latex }} !$
 ==
 
 prefix ==
