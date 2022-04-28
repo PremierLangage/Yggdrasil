@@ -24,7 +24,7 @@ param.addmon = True
 
 question ==
 Déterminer une primitive $! F !$ de la fonction
-$$ f : x \mapsto {{ f|latex }} .$$
+$$ f : x \mapsto {{ f|latex }} $$
 sur $! {{ fdomain|latex }}. !$
 ==
 
