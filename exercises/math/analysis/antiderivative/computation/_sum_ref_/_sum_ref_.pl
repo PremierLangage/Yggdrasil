@@ -23,9 +23,8 @@ param.addmon = True
 # 12 : x^r
 
 question ==
-Déterminer une primitive $! F !$ de la fonction
-$$ f : x \mapsto {{ f|latex }} $$
-sur $! {{ fdomain|latex }}. !$
+Déterminer une primitive $! F !$ de la fonction $! f : {{ fdomain|latex }} \rightarrow \mathbb{R} !$ définie par
+$$ f (x) = {{ f|latex }}.$$
 ==
 
 prefix ==
