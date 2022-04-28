@@ -38,24 +38,26 @@ x = symbols('x', positive=True)
 lst_a = [Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4]
 r = Rational(3, 2)
 
-lst_vx = [exp(x),
-sin(x),
-cos(x),
-exp(choice(lst_a)*x),
-sin(choice(lst_a)*x),
-cos(choice(lst_a)*x),
-x**randint(3, 7),
-1/x,
-1/x**2,
-1/x**randint(3, 7),
-sqrt(x),
-1/sqrt(x),
-x**r]
+def generate_f(nbterms, indices, addmon=False):
+    lst_vx = [exp(x),
+    sin(x),
+    cos(x),
+    exp(choice(lst_a)*x),
+    sin(choice(lst_a)*x),
+    cos(choice(lst_a)*x),
+    x**randint(3, 7),
+    1/x,
+    1/x**2,
+    1/x**randint(3, 7),
+    sqrt(x),
+    1/sqrt(x),
+    x**r]
+    iterms = sample(indices, nbterms)
+    terms = [lst_vx[i] for i in iterms]
+    if addmon:
+        terms.append(choice([1, x, x**2]))
+    return sum(terms)
 
-iterms = sample([0, 1, 2, 6, 7, 8], 2)
-f = 0
-for i in iterms:
-    f += lst_vx[i]
-
+f = generate_f(2, [0, 1, 2], True)
 sol = integrate(f, x).doit()
 ==
