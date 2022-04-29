@@ -69,11 +69,11 @@ def generate_term(i):
     x**(choice([-1, 1])*Rational(choice(lst_r)))]
     return lst_vx[i]
 
-def generate_f(nbterms, indices, addmon=False):
+def generate_f(tterms):
     coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
     shuffle(coeff)
 
-    iterms = sample(indices, nbterms)
+    for n, lsti in tterms:
     for i in range(len(iterms)):
         if isinstance(iterms[i], list):
             iterms[i] = choice(iterms[i])
@@ -83,7 +83,7 @@ def generate_f(nbterms, indices, addmon=False):
         terms.append(choice([1, x, x**2]))
     return sum([choice([-1, 1])*coeff[i]*terms[i] for i in range(len(terms))])
 
-f = generate_f(param['nbterms'], param['types'], param['addmon'])
+f = generate_f(param['terms'])
 
 fdomain = continuous_domain(f, x, S.Reals)
 if isinstance(fdomain, Union):
