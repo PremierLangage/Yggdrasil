@@ -52,7 +52,7 @@ from sympy.calculus.util import continuous_domain
 
 x = symbols('x')
 lst_a = [Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4]
-r = Rational(3, 2)
+lst_r = ["3/2", "5/2", "5/3", "4/3", "7/3", "5/4"]
 
 def generate_f(nbterms, indices, addmon=False):
     coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
@@ -69,7 +69,7 @@ def generate_f(nbterms, indices, addmon=False):
     1/x**randint(3, 7),
     sqrt(x),
     1/sqrt(x),
-    x**r]
+    x**(choice([-1, 1])*Rational(choice(lst_r)))]
     iterms = sample(indices, nbterms)
     terms = [lst_vx[i] for i in iterms]
     if addmon:
