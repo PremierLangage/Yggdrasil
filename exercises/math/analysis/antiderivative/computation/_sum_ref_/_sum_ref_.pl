@@ -40,7 +40,7 @@ Les primitives de cette fonction sont les fonctions de la forme $$ x \mapsto {{ 
 où $ k $ est une constante réelle.
 ==
 
-latexsettings.interv_rev_brack = True
+latexsettings.interv_rev_brack = False
 
 equality = "UpToConstant"
 
