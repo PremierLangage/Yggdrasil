@@ -8,7 +8,7 @@ extends = /model/math/expr.pl
 title = Calcul de primitive
 
 param.nbterms = 1
-param.typeterms = [0, 7, 10]
+param.types = [0, 7, 10]
 param.addmon = True
 
 # Paramètres
@@ -39,6 +39,8 @@ Les primitives de cette fonction sont les fonctions de la forme $$ x \mapsto {{ 
 
 où $ k $ est une constante réelle.
 ==
+
+latexsetting.interv_revbrack = 
 
 equality = "UpToConstant"
 
