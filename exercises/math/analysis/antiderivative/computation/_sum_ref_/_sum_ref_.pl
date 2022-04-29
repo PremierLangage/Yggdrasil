@@ -75,6 +75,10 @@ def generate_f(nbterms, indices, addmon=False):
     shuffle(coeff)
 
     iterms = sample(indices, nbterms)
+    for i in range(len(iterms)):
+        if isinstance(iterms[i], list):
+            iterms[i] = chpoice(iterms[i])
+    
     terms = [generate_term(i) for i in iterms]
     if addmon:
         terms.append(choice([1, x, x**2]))
