@@ -77,7 +77,7 @@ def generate_f(nbterms, indices, addmon=False):
     iterms = sample(indices, nbterms)
     for i in range(len(iterms)):
         if isinstance(iterms[i], list):
-            iterms[i] = chpoice(iterms[i])
+            iterms[i] = choice(iterms[i])
     
     terms = [generate_term(i) for i in iterms]
     if addmon:
