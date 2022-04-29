@@ -7,7 +7,6 @@ extends = /model/math/expr.pl
 
 title = Calcul de primitive
 
-
 param.nbterms = 1
 param.typeterms = [0, 7, 10]
 param.addmon = True
