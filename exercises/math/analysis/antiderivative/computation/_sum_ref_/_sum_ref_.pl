@@ -1,3 +1,8 @@
+# Author: D. Doyen
+# Tags: antiderivative
+# Déterminer une primitive d'une combinaison linéaire de fonctions de référence.
+# 29/4/2022
+
 extends = /model/math/expr.pl
 
 title = Calcul de primitive
