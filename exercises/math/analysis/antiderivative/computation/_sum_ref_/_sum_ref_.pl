@@ -75,7 +75,7 @@ def generate_f(terms):
 
     sample_indices = []
     for n, indices in terms:
-        sample_indices.extends(sample(indices, n) )
+        sample_indices.extend(sample(indices, n) )
     sample_terms = [generate_term(i) for i in sample_indices]
     return sum([choice([-1, 1])*coeff[i]*terms[i] for i in range(len(sample_terms))])
 
