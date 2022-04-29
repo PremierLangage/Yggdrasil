@@ -76,7 +76,7 @@ def generate_f(nbterms, indices, addmon=False):
         terms.append(choice([1, x, x**2]))
     return sum([choice([-1, 1])*coeff[i]*terms[i] for i in range(len(terms))])
 
-f = generate_f(param['nbterms'], param['typeterms'], param['addmon'])
+f = generate_f(param['nbterms'], param['types'], param['addmon'])
 
 fdomain = continuous_domain(f, x, S.Reals)
 if isinstance(fdomain, Union):
