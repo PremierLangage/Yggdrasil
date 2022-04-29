@@ -54,9 +54,7 @@ x = symbols('x')
 lst_a = [Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4]
 lst_r = ["3/2", "5/2", "5/3", "4/3", "7/3", "5/4"]
 
-def generate_f(nbterms, indices, addmon=False):
-    coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
-    shuffle(coeff)
+def generate_term(i):
     lst_vx = [exp(x),
     sin(x),
     cos(x),
@@ -70,8 +68,14 @@ def generate_f(nbterms, indices, addmon=False):
     sqrt(x),
     1/sqrt(x),
     x**(choice([-1, 1])*Rational(choice(lst_r)))]
+    return lst_vx[i]
+
+def generate_f(nbterms, indices, addmon=False):
+    coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
+    shuffle(coeff)
+
     iterms = sample(indices, nbterms)
-    terms = [lst_vx[i] for i in iterms]
+    terms = [generate_term(i) for i in iterms]
     if addmon:
         terms.append(choice([1, x, x**2]))
     return sum([choice([-1, 1])*coeff[i]*terms[i] for i in range(len(terms))])
