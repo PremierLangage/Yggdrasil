@@ -73,9 +73,11 @@ def generate_f(terms):
     coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
     shuffle(coeff)
 
-    sample_indices = sum([sample(indices, n) for n, indices in terms], [])
-    #sample_terms = [generate_term(i) for i in sample_indices]
-    #return sum([choice([-1, 1])*coeff[i]*terms[i] for i in range(len(sample_terms))])
+    sample_indices = []
+    for n, indices in terms:
+        sample_indices.extends(sample(indices, n) )
+    sample_terms = [generate_term(i) for i in sample_indices]
+    return sum([choice([-1, 1])*coeff[i]*terms[i] for i in range(len(sample_terms))])
 
 f = generate_f(param['terms'])
 
