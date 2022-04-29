@@ -59,7 +59,7 @@ def generate_term(i):
     exp(choice(lst_a)*x),
     sin(choice(lst_a)*x),
     cos(choice(lst_a)*x),
-    x**randint(0, 2)
+    x**randint(0, 2),
     x**randint(3, 7),
     1/x,
     1/x**2,
