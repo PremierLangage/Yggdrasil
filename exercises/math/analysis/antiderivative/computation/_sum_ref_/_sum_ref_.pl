@@ -7,7 +7,7 @@ extends = /model/math/expr.pl
 
 title = Calcul de primitive
 
-param.terms = [(2, [0, 1, 2]), (1, 6)]
+param.terms = [(2, [0, 1, 2]), (1, [6])]
 
 # Paramètres
 # 0 : e^x
@@ -69,19 +69,13 @@ def generate_term(i):
     x**(choice([-1, 1])*Rational(choice(lst_r)))]
     return lst_vx[i]
 
-def generate_f(tterms):
+def generate_f(terms):
     coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
     shuffle(coeff)
 
-    for n, lsti in tterms:
-    for i in range(len(iterms)):
-        if isinstance(iterms[i], list):
-            iterms[i] = choice(iterms[i])
-    
-    terms = [generate_term(i) for i in iterms]
-    if addmon:
-        terms.append(choice([1, x, x**2]))
-    return sum([choice([-1, 1])*coeff[i]*terms[i] for i in range(len(terms))])
+    sample_indices = sum([sample(indices, n) for n, indices in terms)
+    sample_terms = [generate_term(i) for i in sample_indices]
+    return sum([choice([-1, 1])*coeff[i]*terms[i] for i in range(len(sample_terms))])
 
 f = generate_f(param['terms'])
 
