@@ -7,7 +7,7 @@ extends = /model/math/expr.pl
 
 title = Calcul de primitive
 
-param.terms = [(2, [0, 1, 2]), (1, [6])]
+param.terms = [(2, [0, 1, 2]), (2, [6, 6])]
 
 # Paramètres
 # 0 : e^x
