@@ -2,6 +2,4 @@ extends = _sum_ref_.pl
 
 title = Calcul de primitive
 
-param.nbterms = 2
-param.types = [7, [8, 9]]
-param.addmon = True
+param.terms = [(1, [8]), (1, [9, 10]), (1, [6])]
