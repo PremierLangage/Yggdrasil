@@ -53,7 +53,7 @@ before ==
 from sympy import integrate, S, Union
 from sympy.calculus.util import continuous_domain
 from sympy import integrate
-var('x')
+x = symbols('x', real=True)
 alpha = choice ([Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4])
 a = 1
 b = 2
