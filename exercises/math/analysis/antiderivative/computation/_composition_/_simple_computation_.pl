@@ -50,9 +50,8 @@ equality = "UpToConstant"
 message.NotEqualUpToConstant = La réponse n'est pas une primitive.
 
 before == #|py|
-from sympy import integrate, S, Union
+from sympy import integrate, S, Union, solveset, EmptySet
 from sympy.calculus.util import continuous_domain
-from sympy import integrate
 x = symbols('x', real=True)
 alpha = choice ([Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4])
 a = randint(1, 3)
@@ -99,8 +98,6 @@ fdomain = continuous_domain(f, x, S.Reals)
 if isinstance(fdomain, Union):
     fdomain = choice(fdomain.args)
 
-from sympy import solveset, EmptySet
-
 def fix_logs(expr, var, interv):
     replacements = {}
     for a in expr.atoms(ln):
@@ -108,6 +105,5 @@ def fix_logs(expr, var, interv):
             replacements[a] = ln(-a.args[0])
     return expr.xreplace(replacements)
 
-sol = integrate(f, x).doit()
-sol = fix_logs(sol, x, fdomain)
+sol = fix_logs(integrate(f, x).doit(), x, fdomain)
 ==
