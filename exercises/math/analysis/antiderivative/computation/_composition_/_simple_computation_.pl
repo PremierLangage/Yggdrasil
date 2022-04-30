@@ -96,13 +96,13 @@ fdomain = continuous_domain(f, x, S.Reals)
 if isinstance(fdomain, Union):
     fdomain = choice(fdomain.args)
 
-from sympy log, import solveset, EmptySet
+from sympy import solveset, EmptySet
 
 def fix_logs(expr, var, interv):
     replacements = {}
-    for a in expr.atoms(log):
+    for a in expr.atoms(ln):
         if solveset(a.args[0]>0, var, interv) == EmptySet:
-            replacements[a] = log(-a.args[0])
+            replacements[a] = ln(-a.args[0])
     return expr.xreplace(replacements)
 
 sol = integrate(f, x).doit()
