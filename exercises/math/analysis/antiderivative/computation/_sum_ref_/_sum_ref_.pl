@@ -58,7 +58,7 @@ def generate_term(i):
     lst_vx = [exp(x),
     sin(x),
     cos(x),
-    exp(choice(lst_a)*x),
+    exp(choice([-1, 1)]*choice(lst_a)*x),
     sin(choice(lst_a)*x),
     cos(choice(lst_a)*x),
     x**randint(0, 2),
