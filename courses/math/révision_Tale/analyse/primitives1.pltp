@@ -1,7 +1,8 @@
-title = Pimitives 1
+title = Primitives 1
 
 introduction ==
 Objectif :
+
 * Déterminer une primitive d'une combinaison linéaire de fonctions de référence.
 
 Fonctions de référence : $!sin !$, $! cos !$, $! exp !$, $! x^n !$ avec $!n \in \mathbb{Z} !$, $! 1/\sqrt{x} !$.
