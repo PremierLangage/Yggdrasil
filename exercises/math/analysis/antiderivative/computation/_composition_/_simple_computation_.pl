@@ -96,7 +96,7 @@ fdomain = continuous_domain(f, x, S.Reals)
 if isinstance(fdomain, Union):
     fdomain = choice(fdomain.args)
 
-from sympy import solveset, EmptySet
+from sympy log, import solveset, EmptySet
 
 def fix_logs(expr, var, interv):
     replacements = {}
