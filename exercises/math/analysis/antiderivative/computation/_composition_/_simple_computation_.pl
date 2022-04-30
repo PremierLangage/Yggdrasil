@@ -49,14 +49,14 @@ equality = "UpToConstant"
 
 message.NotEqualUpToConstant = La réponse n'est pas une primitive.
 
-before ==
+before == #|py|
 from sympy import integrate, S, Union
 from sympy.calculus.util import continuous_domain
 from sympy import integrate
 x = symbols('x', real=True)
 alpha = choice ([Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4])
-a = 1
-b = 2
+a = randint(1, 3)
+b = randint(-3, 3, [0])
 n = 3
 r = Rational(2,3)
 
