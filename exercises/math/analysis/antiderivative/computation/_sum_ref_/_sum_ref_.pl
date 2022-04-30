@@ -13,17 +13,14 @@ param.terms = [(2, [0, 1, 2]), (1, [6])]
 # 0 : e^x
 # 1 : sin(x)
 # 2 : cos(x)
-# 3 : e^(ax)
-# 4 : sin(ax)
-# 5 : cos(ax)
-# 6 : x^n
-# 7 : x^n
-# 8 : 1/x
-# 9 : 1/x^2
-# 10 : 1/x^n
-# 11 : sqrt(x)
-# 12 : 1/sqrt(x)
-# 13 : x^r
+# 3 : x^n
+# 4 : x^n
+# 5 : 1/x
+# 6 : 1/x^2
+# 7 : 1/x^n
+# 8 : sqrt(x)
+# 9 : 1/sqrt(x)
+# 10 : x^r
 
 question ==
 Déterminer une primitive $! F !$ de la fonction $! f : {{ fdomain|latex }} \rightarrow \mathbb{R} !$ définie par
