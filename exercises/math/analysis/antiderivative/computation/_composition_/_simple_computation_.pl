@@ -3,7 +3,7 @@ extends = /model/math/expr.pl
 title = Calcul de primitive
 
 param.form = [3]
-param.u = [2, 3? 4]
+param.u = [2, 3, 4]
 
 # Paramètres
 # 0 : \alpha\ u' e^u
