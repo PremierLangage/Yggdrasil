@@ -21,9 +21,9 @@ param.terms = [(2, [0, 1, 2]), (1, [6])]
 # 8 : 1/x
 # 9 : 1/x^2
 # 10 : 1/x^n
-# 10 : sqrt(x)
-# 11 : 1/sqrt(x)
-# 12 : x^r
+# 11 : sqrt(x)
+# 12 : 1/sqrt(x)
+# 13 : x^r
 
 question ==
 Déterminer une primitive $! F !$ de la fonction $! f : {{ fdomain|latex }} \rightarrow \mathbb{R} !$ définie par
@@ -33,6 +33,7 @@ $$ f (x) = {{ f|latex }}.$$
 prefix ==
 $! F(x) = !$
 ==
+
 solution ==
 Les primitives de cette fonction sont les fonctions de la forme $$ x \mapsto {{ sol|latex }} + k $$
 
