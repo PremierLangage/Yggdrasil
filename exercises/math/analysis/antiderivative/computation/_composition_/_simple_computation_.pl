@@ -32,8 +32,12 @@ param.u = [0, 1, 2]
 
 
 question ==
-Calculer une primitive de la fonction
-$$ f : x \mapsto {{ f|latex }} .$$
+Déterminer une primitive $! F !$ de la fonction $! f : {{ fdomain|latex }} \rightarrow \mathbb{R} !$ définie par
+$$ f (x) = {{ f|latex }}.$$
+==
+
+prefix ==
+$! F(x) = !$
 ==
 
 solution ==
