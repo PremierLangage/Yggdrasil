@@ -88,7 +88,10 @@ a*cos(x),
 a*exp(x)]
 
 i = choice(param['u'])
-ux = lst_ux[i]
+if isinstance(lst_ux[i], list):
+    ux = choice(lst_ux[i])
+else:
+    ux = lst_ux[i]
 
 f = alpha*diff(ux, x)*v(ux)
 
