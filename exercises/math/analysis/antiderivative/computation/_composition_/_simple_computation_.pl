@@ -94,7 +94,17 @@ f = alpha*diff(ux, x)*v(ux)
 
 fdomain = continuous_domain(f, x, S.Reals)
 if isinstance(fdomain, Union):
-    fdomain = fdomain.args[-1]
+    fdomain = choice(fdomain.args)
+
+from sympy import solveset, EmptySet
+
+def fix_logs(expr, var, interv):
+    replacements = {}
+    for a in expr.atoms(log):
+        if solveset(a.args[0]>0, var, interv) == EmptySet:
+            replacements[a] = log(-a.args[0])
+    return expr.xreplace(replacements)
 
 sol = integrate(f, x).doit()
+sol = fix_logs(f, x, fdomain)
 ==
