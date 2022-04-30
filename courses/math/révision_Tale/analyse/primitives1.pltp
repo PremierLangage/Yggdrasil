@@ -7,4 +7,4 @@ Objectif :
 Fonctions de référence : $!sin !$, $! cos !$, $! exp !$, $! x^n !$ avec $!n \in \mathbb{Z} !$, $! 1/\sqrt{x} !$.
 ==
 
-@ exercises/math/analysis/antiderivative/computation/_sum_ref_/sum_esincos.pl
+@ /exercises/math/analysis/antiderivative/computation/_sum_ref_/sum_esincos.pl
