@@ -79,9 +79,9 @@ v = Lambda(x, vx)
 
 lst_ux = [a*x,
 a*x**2,
-a*x + b,
-a*x**2 + b,
-a*x**2 + b*x,
+[a*x + b, a*x - b, b - a*x],
+[a*x**2 + b, a*x**2 - b, b - a*x**2],
+[a*x**2 + b*x, a*x**2 - b*x, b*x - a*x**2],
 a*x**n,
 a*sin(x),
 a*cos(x),
