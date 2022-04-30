@@ -30,7 +30,6 @@ param.u = [0, 1, 2]
 # 7 : a cos(x)
 # 8 : a e^x
 
-
 question ==
 Déterminer une primitive $! F !$ de la fonction $! f : {{ fdomain|latex }} \rightarrow \mathbb{R} !$ définie par
 $$ f (x) = {{ f|latex }}.$$
