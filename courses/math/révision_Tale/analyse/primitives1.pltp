@@ -9,3 +9,9 @@ Fonctions de référence : $!sin !$, $! cos !$, $! exp !$, $! x^n !$ avec $!n \i
 ==
 
 @ /exercises/math/analysis/antiderivative/computation/_sum_ref_/sum_esincos.pl
+
+@ /exercises/math/analysis/antiderivative/computation/_sum_ref_/sum_monomials.pl
+
+@ /exercises/math/analysis/antiderivative/computation/_sum_ref_/sum_inv.pl
+
+@ /exercises/math/analysis/antiderivative/computation/_sum_ref_/sum_invsqrt.pl
