@@ -56,7 +56,7 @@ from sympy import integrate
 x = symbols('x', real=True)
 alpha = choice ([Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4])
 a = randint(1, 3)
-b = randint(-3, 3, [0])
+b = randint(1,3)
 n = 3
 r = Rational(2,3)
 
