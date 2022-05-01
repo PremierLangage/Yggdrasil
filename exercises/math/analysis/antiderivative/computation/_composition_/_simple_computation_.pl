@@ -77,7 +77,7 @@ i = choice(param['form'])
 vx = lst_vx[i]
 v = Lambda(x, vx)
 
-lst_ux = [a*x,
+lst_ux = [a0*x,
 a*x**2,
 [a*x + b, a*x - b, b - a*x],
 [a*x**2 + b, a*x**2 - b, b - a*x**2],
