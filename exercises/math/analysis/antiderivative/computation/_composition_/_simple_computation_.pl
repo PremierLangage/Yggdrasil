@@ -2,8 +2,8 @@ extends = /model/math/expr.pl
 
 title = Calcul de primitive
 
-param.form = [3]
-param.u = [4]
+param.form = [0, 1, 2]
+param.u = [0]
 
 # Paramètres
 # 0 : \alpha\ u' e^u
