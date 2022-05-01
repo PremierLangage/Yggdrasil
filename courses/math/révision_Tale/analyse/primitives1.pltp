@@ -5,7 +5,7 @@ Objectif :
 
 * Déterminer une primitive d'une combinaison linéaire de fonctions de référence.
 
-Fonctions de référence : $!sin !$, $! cos !$, $! exp !$, $! x^n !$ avec $!n \in \mathbb{Z} !$, $! 1/\sqrt{x} !$.
+Fonctions de référence : $! \sin(x) !$, $! \cos(x) !$, $! \exp(x) !$, $! x^n !$ avec $!n \in \mathbb{Z} !$, $! 1/\sqrt{x} !$.
 ==
 
 @ /exercises/math/analysis/antiderivative/computation/_sum_ref_/sum_esincos.pl
