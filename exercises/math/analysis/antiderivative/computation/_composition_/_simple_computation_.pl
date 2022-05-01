@@ -105,4 +105,5 @@ def fix_logs(expr, var, interv):
     return expr.xreplace(replacements)
 
 sol = fix_logs(integrate(f, x).doit(), x, fdomain)
+test = f.as_two_terms()
 ==
