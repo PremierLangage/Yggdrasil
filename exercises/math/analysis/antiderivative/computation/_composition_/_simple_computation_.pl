@@ -94,9 +94,8 @@ else:
 
 f = diff(ux, x)*v(ux)
 try:
-    terms = f.as_two_terms()
-    if terms[0].is_constant:
-        f = terms[1]
+    terms = f.as_coeff_mul(x)
+    f = terms[1]
 except:
     pass
 
