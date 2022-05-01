@@ -14,10 +14,6 @@ param.form = [0, 1, 2]
 # 3 : fnz * inf
 # 4 : 0 * inf
 
-# 1 : inf/inf
-# 2 : inf/fnz
-# 3 : inf + f
-# 4 : inf + b
 
 
 before == #|py|
