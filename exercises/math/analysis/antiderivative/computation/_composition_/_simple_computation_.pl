@@ -95,7 +95,7 @@ else:
 f = diff(ux, x)*v(ux)
 try:
     terms = f.as_coeff_mul(x)
-    f = terms[1]
+    f = Mul(*terms[1])
 except:
     pass
 
