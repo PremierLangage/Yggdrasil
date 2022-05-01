@@ -51,7 +51,7 @@ equality = "UpToConstant"
 message.NotEqualUpToConstant = La réponse n'est pas une primitive.
 
 before == #|py|
-from sympy import integrate, S, Union, solveset, EmptySet
+from sympy import integrate, S, Union, solveset, EmptySet, Mul
 from sympy.calculus.util import continuous_domain
 x = symbols('x', real=True)
 alpha = choice ([Rational(1,2), Rational(1,3), Rational(1,4), 2, 3, 4])
