@@ -33,6 +33,7 @@ param.u = [0, 2]
 question ==
 Déterminer une primitive $! F !$ de la fonction $! f : {{ fdomain|latex }} \rightarrow \mathbb{R} !$ définie par
 $$ f (x) = {{ f|latex }}.$$
+$$ {{test|latex}} $$
 ==
 
 prefix ==
