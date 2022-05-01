@@ -4,7 +4,21 @@ title = Calcul de limites
 param.form = [0, 1, 2]
 
 # Paramètres
-# 
+# 1 : inf - inf
+# 2 : inf + inf
+# 3 : inf + f
+# 4 : inf + b
+
+# 1 : inf * inf
+# 2 : bc * inf
+# 3 : fnz * inf
+# 4 : 0 * inf
+
+# 1 : inf/inf
+# 2 : inf/fnz
+# 3 : inf + f
+# 4 : inf + b
+
 
 before == #|py|
 from sympy import atan, Limit
