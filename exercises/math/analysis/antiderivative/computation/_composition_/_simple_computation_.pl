@@ -93,11 +93,10 @@ else:
     ux = lst_ux[i]
 
 f = diff(ux, x)*v(ux)
-try:
-    terms = f.as_coeff_mul(x)
-    f = Mul(*terms[1])
-except:
-    pass
+
+terms = f.as_coeff_mul(x)
+f = Mul(*terms[1])
+
 
 
 
