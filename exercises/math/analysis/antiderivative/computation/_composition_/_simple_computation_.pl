@@ -2,7 +2,7 @@ extends = /model/math/expr.pl
 
 title = Calcul de primitive
 
-param.form = [0, 1, 2]
+param.form = [3]
 param.u = [4]
 
 # Paramètres
