@@ -92,7 +92,13 @@ if isinstance(lst_ux[i], list):
 else:
     ux = lst_ux[i]
 
-f = alpha*diff(ux, x)*v(ux)
+f = diff(ux, x)*v(ux)
+try:
+    terms = f.as_two_terms()
+    if terms[0].is_constant:
+        f = terms[1]
+
+
 
 fdomain = continuous_domain(f, x, S.Reals)
 if isinstance(fdomain, Union):
@@ -106,5 +112,4 @@ def fix_logs(expr, var, interv):
     return expr.xreplace(replacements)
 
 sol = fix_logs(integrate(f, x).doit(), x, fdomain)
-test = f.as_two_terms()
 ==
