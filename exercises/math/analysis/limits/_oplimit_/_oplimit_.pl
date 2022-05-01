@@ -30,6 +30,7 @@ var('x')
 inf = [ln(x), exp(x), x]
 f = [atan(x), x/(x+1)]
 b = [sin(x), cos(x)]
+f0 = []
 
 
 def rand_expr(i):
