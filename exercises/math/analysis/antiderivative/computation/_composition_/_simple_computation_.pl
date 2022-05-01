@@ -93,7 +93,7 @@ else:
     ux = lst_ux[i]
 
 f = diff(ux, x)*v(ux)
-f = Mul(*f.as_coeff_mul(x)[1])
+f = alpha*Mul(*f.as_coeff_mul(x)[1])
 
 
 
