@@ -45,6 +45,9 @@ else:
     for input in inputs:
         input.display_feedback()
         input.disable()
+
+from jinja_env import Env
+inputblock = Env.from_string(_tpl_['inputblock']).render(globals())
 ==
 
 solution ==
