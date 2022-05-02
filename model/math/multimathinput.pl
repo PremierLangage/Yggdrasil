@@ -18,10 +18,7 @@ from mathinput import MathInput
 ==
 
 process ==
-#from jinja_env import Env
-#embed = Env.from_string(embed).render(locals())
-#input.set_embed(embed)
-#input.set_keypad(keypad)
+_tpl_ = {'inputblock': inputblock}
 ==
 
 evaluator ==#|py|
