@@ -24,17 +24,6 @@ for i in range(n):
     inputs[i].sol = lim.doit()
     inputs[i].type = "expr"
     inputs[i].evalparam = {}
-
-
-
-rd.shuffle(lstd)
-lsta=list_randitem_norep(3,[oo,oo,-oo,-oo])
-
-for (d,a) in zip(lstd,lsta):
-
-    lim=Limit(f/g, x, a)
-    latexlim.append(latex(lim))
-    sol.append(lim.doit())
 ==
 
 
