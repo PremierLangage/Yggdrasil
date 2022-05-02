@@ -4,6 +4,8 @@ title = Calcul de limites
 
 before ==
 from sympy import atan, Limit
+from randsympy import randpoly
+
 n = 3
 inputs = [MathInput() for _ in range(n)]
 prefixes = []
