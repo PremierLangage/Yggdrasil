@@ -41,7 +41,7 @@ def rand_expr(i):
     elif i == 2:
         return choice([-1, 1])*inf1 + choice([-1, 1])*b1
     elif i == 3:
-        return f0*inf
+        return f01*inf1
 
 cases = [0, 1, 3]
 shuffle(cases)
