@@ -2,8 +2,12 @@ extends = /model/math/multimathinput.pl
 
 title = Calcul de limites
 
+question ==
+Calculer les limites suivantes.
+==
+
 before ==
-from sympy import atan, Limit
+from sympy import Limit
 from randsympy import randpoly
 
 n = 3
