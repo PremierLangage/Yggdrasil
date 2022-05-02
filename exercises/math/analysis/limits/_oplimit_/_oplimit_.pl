@@ -33,6 +33,7 @@ def rand_expr(i):
     inf1, inf2 = sample(inf, 2)
     f1, f2 = sample(f, 2)
     b1, b2 = sample(b, 2)
+    f01, f02 = sample(f0, 2)
     if i == 0:
         return inf1 - inf2
     elif i == 1:
