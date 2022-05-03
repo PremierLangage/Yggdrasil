@@ -13,8 +13,9 @@ for i in range(3):
     else:
         z1 = 1
         z2 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
-    s = latex(z1 / z2)
-    prefixes.append(f"$! {s} = !$")
+    s1 = latex(z1)
+    s2 = latex(z2)
+    prefixes.append(f"$! \frac{ {{s1}} }{ {{s2}} } = !$")
     inputs[i].sol = (z1/z2).expand()
 ==
 
