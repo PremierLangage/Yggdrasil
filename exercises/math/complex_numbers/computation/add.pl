@@ -23,16 +23,30 @@ from sympy import conjugate
 n = 5
 z1 = randint(-n, n, [0]) + randint(-n, n, [0])*I
 z2 = randint(-n, n, [0]) + randint(-n, n, [0])*I
-while z1==z2:
+while z1 == z2:
     z2 = randint(-n, n, [0]) + randint(-n, n, [0])*I
 
-z1b = conjugate(z1)
-z2b = conjugate(z2)
+#z1b = conjugate(z1)
+#z2b = conjugate(z2)
 
 formula = choice(param['formulas'])
+sols = []
 
-if formula == "add":
-    sol = z1 + z2
+prefixes.append(f"$! z_1 + z_2 = !$")
+sols.append( z1 + z2).expand()
+
+prefixes.append(f"$! z_1 - z_2 = !$")
+sols.append( z1 - z2).expand()
+
+coeff = [randint(-1, 1), choice([-3, -2, 2, 3]))]
+shuffle(coeff )
+s = latex_lincomb(coeff , ["z_1", "z_2])
+prefixes.append(f"$! {s} = !$")
+sols.append( coeff [0]*z1 + coeff[1]*z2).expand()
+
+
+
+    sol =
     expr = "z_1 + z_2"
 elif formula == "sub":
     sol = z1 - z2
