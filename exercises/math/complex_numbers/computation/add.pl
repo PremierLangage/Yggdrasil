@@ -27,7 +27,7 @@ prefixes.append(f"$! z_1 - z_2 = !$")
 sols.append((z1 - z2).expand())
 
 coeff = [randint(-1, 1), choice([-3, -2, 2, 3])]
-shuffle(coeff )
+shuffle(coeff)
 s = latex_lincomb(coeff , ["z_1", "z_2"])
 prefixes.append(f"$! {s} = !$")
 sols.append((coeff[0]*z1 + coeff[1]*z2).expand())
