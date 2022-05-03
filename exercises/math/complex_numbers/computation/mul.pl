@@ -3,7 +3,8 @@ extends = /model/math/multimathinput.pl
 title = Multiplication
 
 before == #|python|
-inputs = [MathInput(type="complex", evalparam = {'form': 'cartesian'}) for _ in range(3)]
+inputs = [MathInput(type="complex", evalparam={'form': 'cartesian'}) for _ in range(3)]
+
 prefixes = []
 for i in range(3):
     if i < 2:
