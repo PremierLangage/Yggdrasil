@@ -1,6 +1,6 @@
 extends = /model/math/multimathinput.pl
 
-title = Multiplication
+title = Addition
 
 before == #|python|
 inputs = [MathInput(type="complex", evalparam={'form': 'cartesian'}) for _ in range(3)]
