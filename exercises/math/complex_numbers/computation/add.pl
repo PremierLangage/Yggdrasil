@@ -37,6 +37,7 @@ for i in range(3):
 ==
 
 question == 
+{{coeff}}
 On considère les nombres complexes $! z_1= {{ z1|latex }} !$ et $! z_2= {{ z2|latex }} !$. Calculer les expressions suivantes (sous forme algébrique).
 ==
 
