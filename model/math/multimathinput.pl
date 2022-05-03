@@ -54,7 +54,7 @@ solution ==
 {% for input in inputs %}
 <div style="display: block; margin-bottom: 1em;">
 {{ prefixes[loop.index0] }} 
-$! {{ input.sol|latex }} !$
+$! \displaystyle {{ input.sol|latex }} !$
 </div>
 {% endfor %}
 ==
