@@ -6,7 +6,7 @@ before == #|python|
 inputs = [MathInput(type="complex", evalparam={'form': 'cartesian'}) for _ in range(3)]
 
 from sympy import conjugate
-from sympy2latex, latex_lincomb
+from sympy2latex import latex_lincomb
 
 n = 5
 z1 = randint(-n, n, [0]) + randint(-n, n, [0])*I
