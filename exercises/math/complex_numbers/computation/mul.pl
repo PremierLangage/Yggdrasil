@@ -7,9 +7,13 @@ n = 3
 inputs = [MathInput() for _ in range(n)]
 prefixes = []
 for i in range(n):
-    z1 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
-    z2 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
-    s = latex(z1 * z2)
+    if i < 2:
+        z1 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
+        z2 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
+        s = latex(z1 * z2)
+    else:
+        z = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
+        s = latex(z**2)
     prefixes.append(f"$! {s} = !$")
     inputs[i].sol = (z1 * z2).expand()
     inputs[i].type = "complex"
