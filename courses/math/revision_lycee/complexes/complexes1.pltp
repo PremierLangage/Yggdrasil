@@ -8,14 +8,14 @@ Objectif :
 
 ==
 
+
+
 @ /Mathematics/exercises/complex_numbers/cplx_computation_add_sub.pl
 
 @ /Mathematics/exercises/complex_numbers/cplx_computation_addconj_subconj.pl
 
 @ /Mathematics/exercises/complex_numbers/cplx_computation_mul.pl
 
-@ /Mathematics/exercises/complex_numbers/cplx_computation_sq.pl
+#@ /Mathematics/exercises/complex_numbers/cplx_computation_sq.pl
 
-@ /Mathematics/exercises/complex_numbers/cplx_computation_inv.pl
-
-@ /Mathematics/exercises/complex_numbers/cplx_computation_div.pl
+@ /exercises/math/complex_numbers/computation/div.pl
