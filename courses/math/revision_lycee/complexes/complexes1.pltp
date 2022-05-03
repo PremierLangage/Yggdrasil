@@ -14,6 +14,8 @@ Objectif :
 
 #@ /Mathematics/exercises/complex_numbers/cplx_computation_addconj_subconj.pl
 
+@ /exercises/math/complex_numbers/computation/add.pl
+
 @ /exercises/math/complex_numbers/computation/mul.pl
 
 @ /exercises/math/complex_numbers/computation/div.pl
