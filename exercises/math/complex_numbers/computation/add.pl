@@ -30,7 +30,7 @@ coeff = [randint(-1, 1), choice([-3, -2, 2, 3])]
 shuffle(coeff )
 s = latex_lincomb(coeff , ["z_1", "z_2"])
 prefixes.append(f"$! {s} = !$")
-sols.append( coeff [0]*z1 + coeff[1]*z2).expand()
+sols.append(coeff[0]*z1 + coeff[1]*z2).expand()
 
 for i in range(3):
     inputs[i].sol = sols[i]
