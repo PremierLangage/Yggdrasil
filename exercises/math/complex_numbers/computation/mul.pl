@@ -3,7 +3,7 @@ extends = /model/math/multimathinput.pl
 title = Multiplication
 
 before == #|python|
-inputs = [MathInput() for _ in range(n)]
+inputs = [MathInput() for _ in range(3)]
 prefixes = []
 for i in range(3):
     if i < 2:
