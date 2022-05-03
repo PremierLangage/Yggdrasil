@@ -152,7 +152,7 @@ def latex_lincomb(coeff, vec):
     code=""
     first = True
     for i in range(len(coeff)):
-        if coeff[i]! = 0:
+        if coeff[i] != 0:
             if not first and coeff[i] > 0:
                 code += "+ "
             if coeff[i] == 1:
