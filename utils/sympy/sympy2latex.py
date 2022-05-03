@@ -150,18 +150,18 @@ def latex_lincomb(coeff, vec):
     Return a LaTeX string for a linear combination.
     """
     code=""
-    first=True
+    first = True
     for i in range(len(coeff)):
-        if coeff[i]!=0:
-            if not first and coeff[i]>0:
-                code+="+ "
-            if coeff[i]==1:
-                code+=vec[i]
-            elif coeff[i]==-1:
+        if coeff[i]! = 0:
+            if not first and coeff[i] > 0:
+                code += "+ "
+            if coeff[i] == 1:
+                code += vec[i]
+            elif coeff[i] == -1:
                 code+="-"+vec[i]
             else:
                 code+=latex(coeff[i])+" "+vec[i]
-            first=False
+            first = False
     return code
 
 def latex_chainineq(expr, interv):
