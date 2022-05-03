@@ -44,15 +44,8 @@ s = latex_lincomb(coeff , ["z_1", "z_2])
 prefixes.append(f"$! {s} = !$")
 sols.append( coeff [0]*z1 + coeff[1]*z2).expand()
 
-
-
-    sol =
-    expr = "z_1 + z_2"
-elif formula == "sub":
-    sol = z1 - z2
-    expr = "z_1 - z_2"
-
-
+for i in range(3):
+    inputs[i].sol = sols[i]
 ==
 
 question == 
