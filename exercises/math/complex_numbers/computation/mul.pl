@@ -3,10 +3,9 @@ extends = /model/math/multimathinput.pl
 title = Multiplication
 
 before == #|python|
-n = 3
 inputs = [MathInput() for _ in range(n)]
 prefixes = []
-for i in range(n):
+for i in range(3):
     if i < 2:
         z1 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
         z2 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
