@@ -12,8 +12,9 @@ for i in range(3):
         z2 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
         s = latex(z1 * z2)
     else:
-        z = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
-        s = latex(z**2)
+        z1 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
+        z2 = z1
+        s = latex(z1**2)
     prefixes.append(f"$! {s} = !$")
     inputs[i].sol = (z1 * z2).expand()
 ==
