@@ -3,7 +3,7 @@ extends = /model/math/multimathinput.pl
 title = Multiplication
 
 before == #|python|
-inputs = [MathInput() for _ in range(3)]
+inputs = [MathInput(type="complex", evalparam = {'form': 'cartesian'}) for _ in range(3)]
 prefixes = []
 for i in range(3):
     if i < 2:
@@ -15,8 +15,6 @@ for i in range(3):
         s = latex(z**2)
     prefixes.append(f"$! {s} = !$")
     inputs[i].sol = (z1 * z2).expand()
-    inputs[i].type = "complex"
-    inputs[i].evalparam = {'form': 'cartesian'}
 ==
 
 question == 
