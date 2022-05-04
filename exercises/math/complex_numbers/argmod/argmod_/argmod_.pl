@@ -10,8 +10,8 @@ title = "Argument d'un nombre complexe"
 before ==
 from sympy import arg
 
-modulus = choice([I,-I,1,-1,1+I,1-I,I-1,-1-I])
-argument = choice
+z = choice(eval(param['coeff']))* choice(eval(param['z0']))
+z = z.expand()
 
 prefixes = []
 inputs = [MathInput(type="expr"), MathInput(type="expr", evalparam={'equality': "", 'modulo': 2*pi})]
