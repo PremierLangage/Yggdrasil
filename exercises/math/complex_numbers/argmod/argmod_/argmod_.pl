@@ -13,7 +13,7 @@ param.coeff = "1, 2, 3, Rational(1,2), Rational(1,3), sqrt(2), sqrt(3)"
 before ==
 from sympy import arg
 
-z = choice(eval(param['coeff']))*choice(eval(param['z0']))
+z = choice(sympify(param['coeff']))*choice(sympify(param['z0']))
 z = z.expand()
 
 prefixes = []
