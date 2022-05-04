@@ -29,7 +29,7 @@ while z1 == z2:
 prefixes = []
 inputs = []
 
-inputs = [MathInput(type="expr"), MathInput(type="expr")]
+inputs = [MathInput(type="expr"), MathInput(type="expr", evalparam = {'equality': "Modulo", 'modulo': 2*pi})]
 prefixes.append("module :")
 inputs
 
