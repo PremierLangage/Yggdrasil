@@ -7,11 +7,11 @@ extends = /model/math/multimathinput.pl
 
 title = "Argument d'un nombre complexe"
 
-before ==
-from sympy import arg
-
 param.z0 = "[I, -I, 1, -1, 1+I, 1-I, I-1, -1-I]"
 param.coeff = "[1, 2, 3, 1/2, 1/3, sqrt(2), sqrt(3)]"
+
+before ==
+from sympy import arg
 
 z = choice(eval(param['coeff']))* choice(eval(param['z0']))
 z = z.expand()
