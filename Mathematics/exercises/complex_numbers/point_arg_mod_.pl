@@ -4,10 +4,7 @@
 
 extends = /model/jxg/point.pl
 
-before ==
-sol = randint(-4, 4, [0]), randint(-4, 4, [0])
-z = sol[0] + sol[1]*I
-==
+title = Module et argument
 
 question ==
 Placer le point $! M !$ d'affixe $! {{ z|latex }} !$ dans le plan ci-dessous.
@@ -19,10 +16,7 @@ tol = 0.2
 
 pointname = "M"
 
-
-title = Module et argument
-
-param.lstarg = [0,pi/4,pi/2,3*pi/4,pi,5*pi/4,3*pi/2,7*pi/4,2*pi]
+param.lstarg = "[0,pi/4,pi/2,3*pi/4,pi,5*pi/4,3*pi/2,7*pi/4,2*pi]"
 
 before ==
 modulus = randint(1, 3)
