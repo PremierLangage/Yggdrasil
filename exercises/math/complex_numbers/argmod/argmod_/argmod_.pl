@@ -3,7 +3,7 @@
 # complex numbers, modulus
 # Déterminer un argument d'un nombre complexe
 
-extends = /model/math/expr.pl
+extends = /model/math/multimathinput.pl
 
 equality = "Modulo"
 
