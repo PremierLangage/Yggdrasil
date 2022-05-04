@@ -31,7 +31,7 @@ Placer le point $% M %$ dont l'affixe a pour module $! {{modulus}} !$ et  pour a
 ==
 
 jxgscript == #|js|
-JXG.Options.layer['point'] = 1;
+//JXG.Options.layer['point'] = 1;
 board.create('grid',[],{gridX:0.5,gridY:0.5});
 board.create('circle',[[0,0],1],{strokeWidth:0.6,fixed:true,strokeColor:'gray'});
 board.create('circle',[[0,0],2],{strokeWidth:0.6,fixed:true,strokeColor:'gray'});
