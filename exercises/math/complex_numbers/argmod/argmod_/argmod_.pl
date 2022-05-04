@@ -30,9 +30,3 @@ inputs[1].sol =  arg(z)
 question ==
 Déterminer le module et un argument du nombre complexe $! z= {{ z|latex }} !$.
 ==
-
-
-evaluator ==#|py|
-score = 0
-solution = str(inputs[1].evalparam)
-==
