@@ -6,9 +6,6 @@ extends = /model/jxg/point.pl
 
 title = Module et argument
 
-question ==
-Placer le point $! M !$ d'affixe $! {{ z|latex }} !$ dans le plan ci-dessous.
-==
 
 attributes = {"showNavigation":False, "boundingbox":[-3.5,3.5,3.5,-3.5]}
 
@@ -27,20 +24,15 @@ sol = (xsol, ysol)
 ==
 
 question ==
-Placer le point $% M %$ dont l'affixe a pour module $! {{modulus}} !$ et  pour argument $! \displaystyle {{arg|latex}} !$ dans le plan complexe.
+Placer le point $! M !$ dont l'affixe a pour module $! {{modulus}} !$ et  pour argument $! \displaystyle {{arg|latex}} !$ dans le plan complexe.
 ==
 
 jxgscript == #|js|
-//JXG.Options.layer['point'] = 1;
 board.create('grid',[],{gridX:0.5,gridY:0.5});
 board.create('circle',[[0,0],1],{strokeWidth:0.6,fixed:true,strokeColor:'gray'});
 board.create('circle',[[0,0],2],{strokeWidth:0.6,fixed:true,strokeColor:'gray'});
 board.create('circle',[[0,0],3],{strokeWidth:0.6,fixed:true,strokeColor:'gray'});
-
 board.create('axis', [[0, 0], [1, 0]], {name: 'Re', withLabel: true, label: {position:'urt', offset: [-5, 10]}, ticks:{visible: false}});
 board.create('axis', [[0, 0], [0, 1]], {name: 'Im', withLabel: true, label: {position: 'urt', offset: [10, 0]}, ticks:{visible: false}});
-
-//board.create('axis',[[0,0],[1,0]],{name:'Re',withLabel:true,label:{position:'urt',offset:[-5,10]},ticks:{visible: false}});
-//board.create('axis',[[0,0],[0,1]],{name:'Im',withLabel:true,label:{position:'urt',offset:[10,0]},ticks:{visible: false}});
 var pt = board.create('point', [0, 0], {size: 2, name: 'M', color: 'blue'});
 ==
