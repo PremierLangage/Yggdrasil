@@ -1,13 +1,9 @@
 # D. Doyen
 # 7/3/2021
-# complex numbers, modulus
+# complex numbers, modulus, argument
 # Déterminer un argument d'un nombre complexe
 
 extends = /model/math/multimathinput.pl
-
-equality = "Modulo"
-
-modulo = 2*pi
 
 title = "Argument d'un nombre complexe"
 
