@@ -5,3 +5,5 @@ Objectifs :
 * Représenter un nombre complexe par un point. Déterminer l’affixe d'un point.
 * Déterminer le module et les arguments d’un nombre complexe.
 ==
+
+@ /exercises/math/complex_numbers/geometrical/setpoint_from_affix.pl
