@@ -6,9 +6,8 @@
 extends = /model/jxg/point.pl
 
 before ==
-xsol = randint(-4, 4, [0])
-ysol = randint(-4, 4, [0])
-z = xsol + ysol*I
+sol = randint(-4, 4, [0]), randint(-4, 4, [0])
+z = sol[0] + sol[1]*I
 ==
 
 question ==
