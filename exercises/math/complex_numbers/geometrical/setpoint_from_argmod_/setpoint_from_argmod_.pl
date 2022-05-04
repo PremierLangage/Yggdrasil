@@ -8,7 +8,7 @@
 
 extends = /model/jxg/point.pl
 
-title = "Placer un point (argument/module)"
+title = Placer un point (argument/module)
 
 attributes = {"showNavigation":False, "boundingbox":[-3.5,3.5,3.5,-3.5]}
 
