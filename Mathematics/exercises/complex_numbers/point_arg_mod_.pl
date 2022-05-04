@@ -27,7 +27,7 @@ sol = (xsol, ysol)
 ==
 
 question ==
-Placer le point $% M %$ dont l'affixe a pour module $! {{modulus}} !$ et  pour argument $% \displaystyle {{arg|latex}} %$ dans le plan complexe.
+Placer le point $% M %$ dont l'affixe a pour module $! {{modulus}} !$ et  pour argument $! \displaystyle {{arg|latex}} !$ dans le plan complexe.
 ==
 
 jxgscript == #|js|
