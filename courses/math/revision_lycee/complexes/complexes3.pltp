@@ -1,0 +1,21 @@
+title = Nombres complexes et trigonométrie
+
+
+introduction ==
+Objectif :
+
+- Effectuer des calculs algébriques avec des nombres complexes.
+
+==
+
+
+
+#@ /Mathematics/exercises/complex_numbers/cplx_computation_add_sub.pl
+
+#@ /Mathematics/exercises/complex_numbers/cplx_computation_addconj_subconj.pl
+
+@ /exercises/math/complex_numbers/computation/add.pl
+
+@ /exercises/math/complex_numbers/computation/mul.pl
+
+@ /exercises/math/complex_numbers/computation/div.pl
