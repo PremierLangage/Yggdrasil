@@ -21,7 +21,7 @@ prefixes = []
 inputs = [MathInput(type="expr"), MathInput(type="expr", evalparam={'equality': "Modulo", 'modulo': 2*pi})]
 
 prefixes.append("module :")
-inputs[0].sol =  arg(z)
+inputs[0].sol =  abs(z)
 
 prefixes.append("argument :")
 inputs[1].sol =  arg(z)
