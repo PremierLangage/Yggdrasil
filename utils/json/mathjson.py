@@ -29,6 +29,6 @@ class JSONDecoder(json.JSONDecoder):
             classname = dic.pop("py/object")
             if classname == "SymPy":
                 return sympify(dic['srepr'], evaluate=False)
-            return globals()[classname](**dic)
+            return globals()[classname](**self.object_hook(dic))
         return dic
 
