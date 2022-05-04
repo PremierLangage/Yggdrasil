@@ -18,7 +18,7 @@ z = choice([I,-I,1,-1,1+I,1-I,I-1,-1-I])
 z = randint(1, 3)*z
 
 prefixes = []
-inputs = [MathInput(type="expr"), MathInput(type="expr", evalparam={'equality': "Modulo", 'modulo': 2*pi})]
+inputs = [MathInput(type="expr"), MathInput(type="expr", evalparam={'equality': "Modulo", 'modulo': "2*pi"})]
 
 prefixes.append("module :")
 inputs[0].sol =  abs(z)
