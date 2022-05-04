@@ -34,5 +34,5 @@ Déterminer le module et un argument du nombre complexe $! z= {{ z|latex }} !$.
 
 evaluator ==#|py|
 score = 0
-solution == str(inputs[1].evalparam)
+solution = str(inputs[1].evalparam)
 ==
