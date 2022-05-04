@@ -20,7 +20,7 @@ param.arguments = "0, pi/4, pi/2, 3*pi/4, pi, 5*pi/4, 3*pi/2, 7*pi/4, 2*pi"
 
 before ==
 modulus = randint(1, 3)
-arg = choice(eval(param['arguments']))
+arg = choice(sympify(param['arguments']))
 sol = ((modulus*cos(arg)).evalf(), (modulus*sin(arg)).evalf())
 ==
 
