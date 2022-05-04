@@ -25,6 +25,8 @@ class JSONDecoder(json.JSONDecoder):
         json.JSONDecoder.__init__(self, object_hook=self.object_hook, *args, **kwargs)
 
     def object_hook(self, dic):
+        if not isinstance(dic, dict):
+            return dic
         if "py/object" in dic:
             classname = dic.pop("py/object")
             if classname == "SymPy":
