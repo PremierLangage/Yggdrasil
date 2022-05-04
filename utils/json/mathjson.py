@@ -17,6 +17,8 @@ class JSONEncoder(json.JSONEncoder):
             #    if isinstance(v, dict):
             #        dic[k] = self.default(v)
             return {key: self.default(value) for key, value in dic.items()}
+        if isinstance(obj, dict):
+            return {key: self.default(value) for key, value in obj.items()}
         return jsonpickle.Pickler(unpicklable=False).flatten(obj)
 
 class JSONDecoder(json.JSONDecoder):
