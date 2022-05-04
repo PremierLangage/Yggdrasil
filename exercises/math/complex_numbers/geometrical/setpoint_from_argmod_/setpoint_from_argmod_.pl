@@ -3,8 +3,8 @@
 # complex numbers, affix, modulus, argument, complex plane, geometrical representation
 # Placer dans le plan un point de module et d'argument donnés.
 
-# Paramètres
-# arguments
+# Paramètres :
+# - arguments : chaîne contenant une liste d'arguments au format SymPy
 
 extends = /model/jxg/point.pl
 
