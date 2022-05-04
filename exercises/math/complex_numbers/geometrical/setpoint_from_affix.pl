@@ -5,7 +5,7 @@
 
 extends = /model/jxg/point.pl
 
-title  = "Placer un point"
+title = Placer un point (affixe)
 
 before ==
 sol = randint(-4, 4, [0]), randint(-4, 4, [0])
