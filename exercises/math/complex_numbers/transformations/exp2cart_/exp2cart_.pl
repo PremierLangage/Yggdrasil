@@ -20,5 +20,5 @@ sol = (m*E**a).expand(complex = True).simplify()
 ==
 
 question == 
-Ecrire sous forme cartésienne le nombre complexe $! \displaystyle \large z =  {{ m|latex }} e^{  {{ a|latex }} } !$.
+Ecrire sous forme cartésienne le nombre complexe $! \displaystyle \large z =  {{ m|latex }} \large e^{  {{ a|latex }} } !$.
 ==
