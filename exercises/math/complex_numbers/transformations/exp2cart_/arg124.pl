@@ -1,4 +1,4 @@
 extends = exp2cart_.pl
 
-param.z0 = "I, -I, -1, 1+I, 1-I, I-1, -1-I"
-param.coeff = "1, 2, 3, 1/2, 1/3, sqrt(2), sqrt(3)"
+param.arg = "pi/4, pi/2, -pi/4, -pi/2, 3*pi/4, 3*pi/2"
+
