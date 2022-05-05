@@ -16,7 +16,7 @@ from sympy import evaluate
 # ex : exp(I*pi/2) -> i
 m = choice(sympify(param['mod']))
 a = I * choice(sympify(param['arg']))
-sol = (m*E**a).expand()
+sol = (m*E**a).expand(complex = True).simplify()
 ==
 
 question == 
