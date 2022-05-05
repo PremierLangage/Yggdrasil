@@ -57,18 +57,15 @@ def generate(c):
         expr = -u*ln(p)
     elif c == 3:
         expr = ln(p) + ln(q)
-    elif formula=="ln(p)-ln(q)":
-        sol=p/q
-        expr=choice(["\ln( %(p)s ) - \ln( %(q)s )","-\ln( %(q)s ) + \ln( %(p)s )"]) % {"p":p,"q":q}
+    elif formula=="":
+        expr = ln(p)-ln(q)
     elif formula=="u*ln(p)+ln(q)":
         u,v=sample([1,randint(2,4)],2)
-        sol=p**u*q
-        expr="%d \ln(%d)+\ln(%d)" % (u,p,q)
+        expr=u*ln(p)+ln(q)
     elif formula=="u*ln(p)-ln(q)":
         s1,s2=sample(2,[-1,1])
         u,v=sample([s1*1,s2*randint(2,4)], 2)
-        sol=p**u*q**v
-        expr=latex(u*ln(p)+v*ln(q))
+        expr=u*ln(p)+v*ln(q)
     elif formula=="u*ln(p)+vln(q)":
         u,v=sampleint(2, 4, 2)
         sol=p**u*q**v
