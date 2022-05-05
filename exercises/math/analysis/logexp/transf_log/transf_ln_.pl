@@ -9,21 +9,9 @@ before ==
 
 inputs = [MathInput(type="complex", evalparam={'form': 'cartesian'}) for _ in range(3)]
 
-prefixes = []
-for i in range(3):
-    if i < 2:
-        z1 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
-        z2 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
-        s = latex(z1 * z2)
-    else:
-        z1 = randint(-3, 3, [0]) + randint(-3, 3, [0])*I
-        z2 = z1
-        s = latex(z1**2)
-    prefixes.append(f"$! {s} = !$")
-    inputs[i].sol = (z1 * z2).expand()
-
-p, q = sampleint(2,5, 2)
-formula=choice(eval(param['formulas']))
+# formula=choice(eval(param['formulas']))
+def generate(formula):
+    p, q = sampleint(2,5, 2)
     if formula=="u*ln(p)":
         u=randint(2,4)
         sol=p**u
@@ -58,6 +46,13 @@ formula=choice(eval(param['formulas']))
         sol=p**u*q**v
         expr="%d \ln(%d)+%d \ln(%d)" % (u,p,v,q)
     return expr, sol
+
+prefixes = []
+for i in range(3):
+    expr, sol = generate("u*ln(p)+ln(q)")
+    prefixes.append(expr)
+    inputs[i].sol = sol
+
 ==
 
 question ==
