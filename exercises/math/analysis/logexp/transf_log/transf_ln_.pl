@@ -47,7 +47,7 @@ def generate2(formula):
         expr="%d \ln(%d)+%d \ln(%d)" % (u,p,v,q)
     return expr, sol
 
-def generate(formula):
+def generate(c):
     p, q = sampleint(2, 5, 2)
     if c == 1:
         u = randint(2, 4)
