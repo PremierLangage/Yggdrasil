@@ -52,13 +52,11 @@ def generate(c):
     if c == 1:
         u = randint(2, 4)
         expr = u*ln(p)
-    elif formula=="-u*ln(p)":
-        u=randint(-4,-2)
-        sol=p**u
-        expr="%d \ln(%d)" % (u,p)
-    elif formula=="ln(p)+ln(q)":
-        sol=p*q
-        expr="\ln(%d) + \ln(%d)" % (p,q)
+    elif c == 2:
+        u = randint(-4, -2)
+        expr = -u*ln(p)
+    elif c == 3:
+        expr = ln(p) + ln(q)
     elif formula=="ln(p)-ln(q)":
         sol=p/q
         expr=choice(["\ln( %(p)s ) - \ln( %(q)s )","-\ln( %(q)s ) + \ln( %(p)s )"]) % {"p":p,"q":q}
