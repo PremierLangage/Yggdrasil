@@ -1,3 +1,3 @@
-param.arg = "pi/4, pi/2, -pi/4, -pi/2, 3*pi/4, 3*pi/2"
+param.arg = "pi/6, pi/3, -pi/6, -pi/3, 2*pi/3, 5*pi/6"
 
 param.mod = "2, 3, 1/2, 1/3, sqrt(3), 2*sqrt(3)"
