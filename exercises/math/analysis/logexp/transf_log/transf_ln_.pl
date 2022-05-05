@@ -50,7 +50,7 @@ def generate(formula):
 prefixes = []
 for i in range(3):
     expr, sol = generate("u*ln(p)+ln(q)")
-    prefixes.append(expr)
+    prefixes.append(f"$! {expr} = !$")
     inputs[i].sol = sol
 
 ==
