@@ -81,7 +81,7 @@ def generate(c):
         u,v=s1*u,s2*v
         sol=p**u*q**v
         expr="%d \ln(%d)+%d \ln(%d)" % (u,p,v,q)
-    return expr, simplify(E**exp)
+    return expr, simplify(E**expr)
 
 prefixes = []
 for i in range(3):
