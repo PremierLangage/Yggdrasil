@@ -14,9 +14,9 @@ from sympy import evaluate
 # Définition un peu compliquée du nombre complexe
 # pour éviter les simplifications automatiques faites par SymPy
 # ex : exp(I*pi/2) -> i
-m = choice(sympify(param['mod'])) * E
+m = choice(sympify(param['mod']))
 a = I * choice(sympify(param['arg']))
-sol = (m**a).expand()
+sol = (m*E**a).expand()
 ==
 
 question == 
