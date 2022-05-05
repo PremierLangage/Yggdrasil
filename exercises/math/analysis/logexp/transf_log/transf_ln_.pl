@@ -49,7 +49,7 @@ def generate2(formula):
 
 def generate(formula):
     p, q = sampleint(2, 5, 2)
-    if formula=="u*ln(p)":
+    if c == 1:
         u = randint(2, 4)
         expr = u*ln(p)
     elif formula=="-u*ln(p)":
