@@ -81,12 +81,12 @@ def generate(formula):
         u,v=s1*u,s2*v
         sol=p**u*q**v
         expr="%d \ln(%d)+%d \ln(%d)" % (u,p,v,q)
-    return expr, sol
+    return expr, simplify(E**exp)
 
 prefixes = []
 for i in range(3):
-    expr, sol = generate("u*ln(p)+ln(q)")
-    prefixes.append(f"$! {expr} = !$")
+    expr, sol = generate(1)
+    prefixes.append(f"$! {latex(expr)} = !$")
     inputs[i].sol = sol
     inputs[i].set_embed(embed)
 
