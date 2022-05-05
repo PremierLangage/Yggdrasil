@@ -7,7 +7,7 @@ extends = /model/math/multimathinput.pl
 
 before ==
 
-inputs = [MathInput(type="complex", emebed=embed, evalparam={'form': 'cartesian'}) for _ in range(3)]
+inputs = [MathInput(type="complex", evalparam={'form': 'cartesian'}) for _ in range(3)]
 
 # formula=choice(eval(param['formulas']))
 def generate(formula):
@@ -52,6 +52,7 @@ for i in range(3):
     expr, sol = generate("u*ln(p)+ln(q)")
     prefixes.append(f"$! {expr} = !$")
     inputs[i].sol = sol
+    inputs[i].set_embed(embed)
 
 ==
 
