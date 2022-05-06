@@ -2,7 +2,7 @@ extends = /model/math/input0.pl
 
 before_scripts = ["mathimport", "init_input", "before", "process"]
 jinja_keys = ["prefix", "question", "solution", "inputblock"]
-eval_scripts = ["evaluator"]
+eval_scripts = ["getinput", "evaluator", "ending"]
 
 inputblock ==
 {% for input in inputs %}
@@ -21,18 +21,22 @@ process ==
 _tpl_ = {'inputblock': inputblock}
 ==
 
-evaluator ==#|py|
+getinput ==#|py|
 from jinja_env import Env
 from mathinput import MathInput
 MathInput.message = message
 
 def average(lst):
     return sum(lst)/len(lst)
+==
 
+evaluator ==#|py|
 for input in inputs:
     input.value = answers[input.id] # HACK
     input.eval()
+==
 
+ending ==#|py|
 if -1 in [input.score for input in inputs]:
     score = -1
     for input in inputs:
