@@ -21,6 +21,12 @@ def generate(c):
     expr = lst_expr[c]
     return expr, simplify(E**expr)
 
+prefixes = []
+for i in range(n):
+    expr, sol = generate(param['types'][i])
+    prefixes.append(f"$! {latex(expr)} = !$")
+    inputs[i].sol = sol
+    inputs[i].set_embed(embed)
 
 p, q = sample([-5,-4,-3,-2,2,3,4,5], 2)
 formula = choice(eval(param['formulas']))
