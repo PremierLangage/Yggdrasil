@@ -24,3 +24,32 @@ elif param['form']=="p sqrt(q)/sqrt(r)":
 question ==
 Ecrire les expressions suivantes sous la forme  $% \sqrt{a} %$, où $% a %$ est un entier.
 ==
+
+evaluator ==#|py|
+import sympy as sp
+from evalsympy import equal, is_rat_simp
+from latex2sympy import latex2sympy
+
+def eval_ans(strans, sol):
+    try:
+        ans = latex2sympy(strans, {'e':sp.E})
+    except:
+        return (-1, "NotExpr")
+    if not isinstance(ans, sp.Expr):
+        return (-1, "NotExpr")
+    if not isinstance(ans, sp.Pow):
+        return (-1, "WrongForm")
+    if isinstance(ans, sp.Pow) and ans.args[0].has(sp.ln):
+        return (-1, "WrongForm")
+    if not equal(ans, sol):
+        return (0, "NotEqual")
+    if not is_rat_simp(ans):
+        return (-1, "NotRatSimp")
+    return (100, "Success")
+
+
+for input in inputs:
+    input.value = answers[input.id] # HACK
+    input.score, error = eval_ans(input.value, input.sol)
+    input.feeedback = message[error]
+==
