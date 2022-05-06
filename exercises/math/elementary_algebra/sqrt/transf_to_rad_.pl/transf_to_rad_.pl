@@ -42,7 +42,7 @@ for i in range(n):
 ==
 
 question ==
-Ecrire les expressions suivantes sous la forme  $% \sqrt{a} %$, où $% a %$ est un entier.
+Ecrire les expressions suivantes sous la forme  $% \sqrt{a} %$, où $% a %$ est un nombre.
 ==
 
 evaluator ==#|py|
