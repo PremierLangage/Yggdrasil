@@ -39,7 +39,7 @@ Ecrire $! \displaystyle {{expr}} !$ sous la forme  $! \exp(a) !$, où $! a !$ es
 ==
 
 embed ==
-\exp \left( # \right)
+e^{ # }
 ==
 
 
