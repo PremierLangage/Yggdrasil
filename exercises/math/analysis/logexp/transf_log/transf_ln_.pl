@@ -57,8 +57,8 @@ def generate(c):
         expr = -u*ln(p)
     elif c == 3:
         expr = ln(p) + ln(q)
-    elif formula=="":
-        expr = ln(p)-ln(q)
+    elif c == 4:
+        expr = ln(p) - ln(q)
     elif formula=="u*ln(p)+ln(q)":
         u,v=sample([1,randint(2,4)],2)
         expr=u*ln(p)+ln(q)
