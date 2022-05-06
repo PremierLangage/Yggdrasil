@@ -37,6 +37,25 @@ Ecrire les expressions suivantes sous la forme  $! \ln(a) !$, où $! a !$ est un
 ==
 
 evaluator ==#|py|
+def eval_expr(strans, sol, checkratsimp=True, equality="", modulo=0, unauthorized_func=[], authorized_func=None, embedfunc=None, local_dict={'e':sp.E, 'i':sp.I}):
+    for name in unauthorized_func:
+        if name in strans:
+            return (-1, "UnauthorizedFunc")
+    try:
+        ans = latex2sympy(strans, local_dict)
+    except:
+        return (-1, "NotExpr")
+    if not isinstance(ans, sp.Expr):
+        return (-1, "NotExpr")
+    if not isinstance(ans, ln):
+            return (-1, "NotExpr")
+    if not equal(ans, sol, modulo):
+            return (0, "NotEqual")
+    if checkratsimp and not is_rat_simp(ans):
+        return (-1, "NotRatSimp")
+    return (100, "Success")
+
+
 for input in inputs:
     input.value = answers[input.id] # HACK
     input.eval()
