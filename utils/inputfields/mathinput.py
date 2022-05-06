@@ -105,9 +105,6 @@ class MathInput(Serializable):
     def get_value(self):
         return self.value
 
-    def get_solution(self):
-        return self.value
-
 class MatrixInput(Serializable):
 
     message = {}
