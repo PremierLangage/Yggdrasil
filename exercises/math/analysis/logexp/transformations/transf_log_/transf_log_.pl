@@ -48,7 +48,7 @@ def eval_ans(strans, sol):
         return (-1, "NotExpr")
     if not isinstance(ans, sp.Expr):
         return (-1, "NotExpr")
-    if not isinstance(ans, ln):
+    if not isinstance(ans, sp.ln):
             return (-1, "NotExpr")
     if not equal(ans, sol, modulo):
             return (0, "NotEqual")
