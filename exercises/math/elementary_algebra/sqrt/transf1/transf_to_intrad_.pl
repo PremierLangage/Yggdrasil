@@ -18,23 +18,23 @@ inputs = [MathInput(type="expr") for _ in range(n)]
 
 def generate(c):
     while a==1 or b==1:
-    if c==0:
-        p=randint(50,200)
-        v=p
-        expr=r"\sqrt{ %d }" % (p)
-    elif c==1:
-        p=randint(5,10)
-        q,r=sample([2,3,5,6,7,8,10,11,12,13,14,15,18,20,21,22,24,26,27,28], k=2)
-        v=p**2*q*r
-        expr=r"%d \sqrt{ %d } \sqrt{ %d }" % (p,q,r)
-    elif c==2:
-        p=randint(2,6)
-        q,r= sample(2,[2,3,5,6,7,8,10,11,12], k=2)
-        v=p**2*Rational(q,r)
-        expr=r"%d \sqrt{ %d } \sqrt{ %d }" % (p,q,r)
-    v1,v2=fraction(v)
-    b=core(v1)
-    a=Rational(int(sqrt(v1/b)),v2)
+        if c==0:
+            p=randint(50,200)
+            v=p
+            expr=r"\sqrt{ %d }" % (p)
+        elif c==1:
+            p=randint(5,10)
+            q,r=sample([2,3,5,6,7,8,10,11,12,13,14,15,18,20,21,22,24,26,27,28], k=2)
+            v=p**2*q*r
+            expr=r"%d \sqrt{ %d } \sqrt{ %d }" % (p,q,r)
+        elif c==2:
+            p=randint(2,6)
+            q,r= sample(2,[2,3,5,6,7,8,10,11,12], k=2)
+            v=p**2*Rational(q,r)
+            expr=r"%d \sqrt{ %d } \sqrt{ %d }" % (p,q,r)
+        v1,v2=fraction(v)
+        b=core(v1)
+        a=Rational(int(sqrt(v1/b)),v2)
     return expr, a*sqrt(b)
 
 prefixes = []
