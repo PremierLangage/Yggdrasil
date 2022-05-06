@@ -67,8 +67,10 @@ def eval_ans(strans, sol):
         return (0, "NotEqual")
     return (100, "Success")
 
-score, error = eval_ans(answers['math'], sol)
-feedback = message[error]
+for input in inputs:
+    input.value = answers[input.id] # HACK
+    input.score, error = eval_ans(input.value, input.sol)
+    input.feedback = message[error]
 ==
 
 solution ==
