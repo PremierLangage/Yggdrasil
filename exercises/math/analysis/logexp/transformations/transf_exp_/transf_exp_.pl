@@ -10,7 +10,7 @@ param.types = [0, 1, 2, 3]
 before ==
 from sympy import evaluate
 n = len(param['types'])
-inputs = [MathInput(type="complex", evalparam={'form': 'cartesian'}) for _ in range(n)]
+inputs = [MathInput(type="expr", evalparam={'embedfunc': exp}) for _ in range(n)]
 
 def generate(c):
     p, q = sample([-5,-4,-3,-2,2,3,4,5], 2)
