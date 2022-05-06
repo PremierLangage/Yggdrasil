@@ -52,7 +52,7 @@ inputblock = Env.from_string(_tpl_['inputblock']).render(globals())
 
 solution ==
 {% for input in inputs %}
-<div style="display: block; margin-bottom: 1em;">
+<div style="display: block; margin-bottom: 0.5em;margin-top: 0.5em;">
 {{ prefixes[loop.index0] }} 
 $! \displaystyle {{ input.sol|latex }} !$
 </div>
