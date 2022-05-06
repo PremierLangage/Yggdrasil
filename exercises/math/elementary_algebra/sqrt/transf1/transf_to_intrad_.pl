@@ -9,11 +9,15 @@ param.types = [0, 1, 2]
 
 title = Transformation avec racine carrée
 
-before ==
+
+before == #|py|
 from sympy.ntheory.factor_ import core
 from sympy import fraction
-a,b=1,1
-while a==1 or b==1:
+n = len(param['types'])
+inputs = [MathInput(type="expr") for _ in range(n)]
+
+def generate(c):
+    while a==1 or b==1:
     if param['form']=="sqrt(p)":
         p=randint(50,200)
         v=p
@@ -31,7 +35,20 @@ while a==1 or b==1:
     v1,v2=fraction(v)
     b=core(v1)
     a=Rational(int(sqrt(v1/b)),v2)
-sol=a*sqrt(b)
+    return expr, a*sqrt(b)
+
+prefixes = []
+for i in range(n):
+    expr, sol = generate(param['types'][i])
+    prefixes.append(f"$! \displaystyle {expr} = !$")
+    inputs[i].sol = simplify(sol)
+==
+
+before ==
+
+a,b=1,1
+
+sol=
 ==
 
 text ==
