@@ -22,7 +22,7 @@ def generate(c):
         exp(p)/exp(q)]
         expr = lst_expr[c]
     
-    return expr, simplify(E**expr)
+    return expr, simplify(ln(expr))
 
 prefixes = []
 for i in range(n):
