@@ -30,16 +30,10 @@ for i in range(n):
     expr, sol = generate(param['types'][i])
     prefixes.append(f"$! {latex(expr)} = !$")
     inputs[i].sol = ln(simplify(E**expr))
-    inputs[i].set_embed(embed)
-
 ==
 
 question ==
 Ecrire les expressions suivantes sous la forme  $! \ln(a) !$, où $! a !$ est un nombre.
-==
-
-embed ==
-\ln \left( # \right)
 ==
 
 wims ==
