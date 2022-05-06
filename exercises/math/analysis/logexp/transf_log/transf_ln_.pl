@@ -49,8 +49,8 @@ def generate2(formula):
 
 def generate(c):
     p, q = sampleint(2, 5, 2)
+    u, v = sampleint(2, 4, 2)
     if c == 1:
-        u = randint(2, 4)
         expr = u*ln(p)
     elif c == 2:
         u = randint(-4, -2)
@@ -59,28 +59,19 @@ def generate(c):
         expr = ln(p) + ln(q)
     elif c == 4:
         expr = ln(p) - ln(q)
-    elif formula=="u*ln(p)+ln(q)":
-        u,v=sample([1,randint(2,4)],2)
-        expr=u*ln(p)+ln(q)
-    elif formula=="u*ln(p)-ln(q)":
-        s1,s2=sample(2,[-1,1])
-        u,v=sample([s1*1,s2*randint(2,4)], 2)
-        expr=u*ln(p)+v*ln(q)
-    elif formula=="u*ln(p)+vln(q)":
-        u,v=sampleint(2, 4, 2)
-        sol=p**u*q**v
-        expr="%d \ln(%d)+%d \ln(%d)" % (u,p,v,q)
-    elif formula=="u*ln(p)-vln(q)":
-        s1,s2=sample(2,[-1,1])
-        u,v=sampleint(2, 4, 2)
-        u,v=s1*u,s2*v
-        sol=p**u*q**v
-        expr="%d \ln(%d)+%d \ln(%d)" % (u,p,v,q)
+    elif c == 5:
+        expr = u*ln(p) + ln(q)
+    elif c == 6:
+        expr = u*ln(p) - ln(q)
+    elif c == 7:
+        expr = u*ln(p) + v*ln(q)
+    elif c == 8:
+        expr = u*ln(p) - v*ln(q)
     return expr, simplify(E**expr)
 
 prefixes = []
 for i in range(3):
-    expr, sol = generate(3)
+    expr, sol = generate(randint(1, 8))
     prefixes.append(f"$! {latex(expr)} = !$")
     inputs[i].sol = sol
     inputs[i].set_embed(embed)
