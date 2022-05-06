@@ -39,7 +39,7 @@ Ecrire les expressions suivantes sous la forme  $! \ln(a) !$, où $! a !$ est un
 evaluator ==#|py|
 from evalsympy import equal, is_rat_simp
 
-def eval_expr(strans, sol):
+def eval_ans(strans, sol):
     try:
         ans = latex2sympy(strans, {'e':sp.E})
     except:
