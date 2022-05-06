@@ -577,7 +577,7 @@ def eval_expr(strans, sol, checkratsimp=True, equality="", modulo=0, unauthorize
     if not isinstance(ans, sp.Expr):
         return (-1, "NotExpr")
     if embedfunc is not None:
-        if not isinstance(ans, sp.exp):
+        if not isinstance(ans, emebedfunc):
             return (-1, "NotExpr")
     if ans.has(sp.S.Infinity, sp.S.NegativeInfinity):
         if ans != sp.S.Infinity and ans != sp.S.NegativeInfinity:
