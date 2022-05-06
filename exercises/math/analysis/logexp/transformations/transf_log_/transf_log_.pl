@@ -29,7 +29,8 @@ prefixes = []
 for i in range(n):
     expr, sol = generate(param['types'][i])
     prefixes.append(f"$! {latex(expr)} = !$")
-    inputs[i].sol = ln(simplify(E**expr))
+    with evaluate(False)
+        inputs[i].sol = ln(simplify(E**expr))
 ==
 
 question ==
