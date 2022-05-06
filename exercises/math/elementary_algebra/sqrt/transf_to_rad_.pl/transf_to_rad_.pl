@@ -39,7 +39,7 @@ def eval_ans(strans, sol):
         return (-1, "NotExpr")
     if not isinstance(ans, sp.Pow):
         return (-1, "WrongForm")
-    if isinstance(ans, sp.Pow) and ans.args[0].has(sp.ln):
+    if isinstance(ans, sp.Pow) and ans.args[0].has(sp.Pow):
         return (-1, "WrongForm")
     if not equal(ans, sol):
         return (0, "NotEqual")
