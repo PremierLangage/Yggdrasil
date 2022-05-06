@@ -5,7 +5,7 @@
 
 extends = /model/math/multimathinput.pl
 
-param.types = [2, 3, 0, 1]
+param.types = [0, 1, 2, 3]
 
 before ==
 n = len(param['types'])
@@ -14,10 +14,10 @@ inputs = [MathInput(type="complex", evalparam={'form': 'cartesian'}) for _ in ra
 def generate(c):
     p, q = sampleint(2, 5, 2)
     u, v = sampleint(2, 4, 2)
-    lst_expr = [u*ln(p),
-    -u*ln(p),
-    ln(p) + ln(q),
+    lst_expr = [ln(p) + ln(q),
     ln(p) - ln(q),
+    u*ln(p),
+    -u*ln(p),
     u*ln(p) + ln(q),
     u*ln(p) - ln(q),
     u*ln(p) + v*ln(q),
