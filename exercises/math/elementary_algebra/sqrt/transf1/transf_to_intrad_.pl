@@ -18,16 +18,16 @@ inputs = [MathInput(type="expr") for _ in range(n)]
 
 def generate(c):
     while a==1 or b==1:
-    if param['form']=="sqrt(p)":
+    if c==0:
         p=randint(50,200)
         v=p
         expr=r"\sqrt{ %d }" % (p)
-    elif param['form']=="p sqrt(q) sqrt(r)":
+    elif c==1:
         p=randint(5,10)
         q,r=sample([2,3,5,6,7,8,10,11,12,13,14,15,18,20,21,22,24,26,27,28], k=2)
         v=p**2*q*r
         expr=r"%d \sqrt{ %d } \sqrt{ %d }" % (p,q,r)
-    elif param['form']=="p sqrt(q)/sqrt(r)":
+    elif c==2:
         p=randint(2,6)
         q,r= sample(2,[2,3,5,6,7,8,10,11,12], k=2)
         v=p**2*Rational(q,r)
@@ -44,15 +44,9 @@ for i in range(n):
     inputs[i].sol = simplify(sol)
 ==
 
-before ==
 
-a,b=1,1
-
-sol=
-==
-
-text ==
-Ecrire $! {{expr}} !$ sous la forme  $% a \sqrt{b}%$, où $%a%$ est un entier et $%b%$ est le plus petit entier positif possible.
+question ==
+Ecrire les expression ssuivantes sous la forme  $! a \sqrt{b} !$, où $! a !$ est un entier et $! b !$ est le plus petit entier positif possible.
 ==
 
 evaluator==
