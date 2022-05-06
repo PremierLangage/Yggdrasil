@@ -5,7 +5,7 @@
 
 extends = /model/math/multimathinput.pl
 
-param.types = [0, 1, 2, 3]
+param.types = [2, 3, 0, 1]
 
 before ==
 n = len(param['types'])
