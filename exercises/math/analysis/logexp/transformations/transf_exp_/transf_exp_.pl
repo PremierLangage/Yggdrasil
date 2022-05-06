@@ -70,6 +70,7 @@ else:
 from jinja_env import Env
 inputblock = Env.from_string(_tpl_['inputblock']).render(globals())
 solution = str(inputs[0].evalparam)
+score = 0
 ==
 
 
