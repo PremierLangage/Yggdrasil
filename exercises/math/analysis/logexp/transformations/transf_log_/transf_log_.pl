@@ -8,6 +8,7 @@ extends = /model/math/multimathinput.pl
 param.types = [0, 1, 2, 3]
 
 before ==
+from sympy import evaluate
 n = len(param['types'])
 inputs = [MathInput(type="expr", evalparam={'embedfunc': ln(2)}) for _ in range(n)]
 
