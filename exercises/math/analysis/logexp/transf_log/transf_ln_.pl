@@ -50,23 +50,15 @@ def generate2(formula):
 def generate(c):
     p, q = sampleint(2, 5, 2)
     u, v = sampleint(2, 4, 2)
-    if c == 1:
-        expr = u*ln(p)
-    elif c == 2:
-        u = randint(-4, -2)
-        expr = -u*ln(p)
-    elif c == 3:
-        expr = ln(p) + ln(q)
-    elif c == 4:
-        expr = ln(p) - ln(q)
-    elif c == 5:
-        expr = u*ln(p) + ln(q)
-    elif c == 6:
-        expr = u*ln(p) - ln(q)
-    elif c == 7:
-        expr = u*ln(p) + v*ln(q)
-    elif c == 8:
-        expr = u*ln(p) - v*ln(q)
+    lst_expr = [u*ln(p),
+    -u*ln(p),
+    ln(p) + ln(q),
+    ln(p) - ln(q),
+    u*ln(p) + ln(q),
+    u*ln(p) - ln(q),
+    u*ln(p) + v*ln(q),
+    u*ln(p) - v*ln(q)]
+    expr = lst_expr[c]
     return expr, simplify(E**expr)
 
 prefixes = []
