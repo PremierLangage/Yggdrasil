@@ -49,9 +49,11 @@ def eval_ans(strans, sol):
     if not isinstance(ans, sp.Expr):
         return (-1, "NotExpr")
     if not isinstance(ans, sp.ln):
-            return (-1, "NotExpr")
+        return (-1, "NotExpr")
+    if isinstance(ans, sp.ln) and ans.args.has:
+        return (-1, "NotExpr")
     if not equal(ans, sol):
-            return (0, "NotEqual")
+        return (0, "NotEqual")
     if not is_rat_simp(ans):
         return (-1, "NotRatSimp")
     return (100, "Success")
