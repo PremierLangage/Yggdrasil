@@ -42,7 +42,7 @@ from latex2sympy import latex2sympy
 
 def eval_ans(strans, sol):
     try:
-        ans = latex2sympy(strans, {'e':sp.E})
+        ans = latex2sympy(strans, {'e':E})
     except:
         return (-1, "NotExpr")
     if not isinstance(ans, sp.Expr):
