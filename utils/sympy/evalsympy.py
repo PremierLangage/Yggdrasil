@@ -541,7 +541,7 @@ def simplify_rset(lst):
     return lst
 
 
-def eval_expr(strans, sol, checkratsimp=True, equality="", modulo=0, unauthorized_func=[], authorized_func=None, embedfunc=None, local_dict={}):
+def eval_expr(strans, sol, checkratsimp=True, equality="", modulo=0, unauthorized_func=[], authorized_func=None, embedfunc=None, local_dict={'e':sp.E, 'i':sp.I}):
     r"""
     Evaluate an answer when the solution is an expression.
     
