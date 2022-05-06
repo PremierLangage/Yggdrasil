@@ -21,14 +21,13 @@ def generate(c):
         exp(p)*exp(q),
         exp(p)/exp(q)]
         expr = lst_expr[c]
-    
     return expr, simplify(ln(expr))
 
 prefixes = []
 for i in range(n):
     expr, sol = generate(param['types'][i])
     prefixes.append(f"$! {latex(expr)} = !$")
-    inputs[i].sol = sol
+    inputs[i].sol = simplify(sol)
     inputs[i].set_embed(embed)
 
 
