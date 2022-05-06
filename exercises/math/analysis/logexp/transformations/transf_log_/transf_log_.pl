@@ -23,13 +23,13 @@ def generate(c):
     u*ln(p) + v*ln(q),
     u*ln(p) - v*ln(q)]
     expr = lst_expr[c]
-    return expr, simplify(E**expr)
+    return expr, expr
 
 prefixes = []
 for i in range(n):
     expr, sol = generate(param['types'][i])
     prefixes.append(f"$! {latex(expr)} = !$")
-    inputs[i].sol = sol
+    inputs[i].sol = ln(simplify(E**expr))
     inputs[i].set_embed(embed)
 
 ==
