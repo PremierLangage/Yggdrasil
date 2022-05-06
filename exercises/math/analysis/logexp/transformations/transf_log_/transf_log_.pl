@@ -9,7 +9,7 @@ param.types = [0, 1, 2, 3]
 
 before ==
 n = len(param['types'])
-inputs = [MathInput(type="complex", evalparam={'form': 'cartesian'}) for _ in range(n)]
+inputs = [MathInput(type="expr", evalparam={'embedfunc': ln(2)}) for _ in range(n)]
 
 def generate(c):
     p, q = sampleint(2, 5, 2)
