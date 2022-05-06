@@ -541,7 +541,7 @@ def simplify_rset(lst):
     return lst
 
 
-def eval_expr(strans, sol, checkratsimp=True, equality="", modulo=0, unauthorized_func=[], authorized_func=None, local_dict={}):
+def eval_expr(strans, sol, checkratsimp=True, equality="", modulo=0, unauthorized_func=[], authorized_func=None, embedfunc=None, local_dict={}):
     r"""
     Evaluate an answer when the solution is an expression.
     
@@ -576,6 +576,9 @@ def eval_expr(strans, sol, checkratsimp=True, equality="", modulo=0, unauthorize
         return (-1, "NotExpr")
     if not isinstance(ans, sp.Expr):
         return (-1, "NotExpr")
+    if embedfunc is not None:
+        if not isinstance(ans, embedfunc):
+            return (-1, "NotExpr")
     if ans.has(sp.S.Infinity, sp.S.NegativeInfinity):
         if ans != sp.S.Infinity and ans != sp.S.NegativeInfinity:
             return (-1, "InftyOp")
