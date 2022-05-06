@@ -50,7 +50,7 @@ def eval_ans(strans, sol):
         return (-1, "NotExpr")
     if not isinstance(ans, sp.ln):
             return (-1, "NotExpr")
-    if not equal(ans, sol, modulo):
+    if not equal(ans, sol):
             return (0, "NotEqual")
     if not is_rat_simp(ans):
         return (-1, "NotRatSimp")
