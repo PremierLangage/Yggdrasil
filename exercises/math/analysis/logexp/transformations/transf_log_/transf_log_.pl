@@ -36,6 +36,15 @@ question ==
 Ecrire les expressions suivantes sous la forme  $! \ln(a) !$, où $! a !$ est un nombre.
 ==
 
+evaluator ==#|py|
+for input in inputs:
+    input.value = answers[input.id] # HACK
+    input.eval()
+==
+
+
+
+
 wims ==
 
 
