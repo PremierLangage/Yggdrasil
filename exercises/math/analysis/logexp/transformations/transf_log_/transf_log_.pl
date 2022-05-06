@@ -18,8 +18,8 @@ def generate(c):
     ln(p) - ln(q),
     u*ln(p),
     -u*ln(p),
-    choice(u*ln(p) + ln(q), ln(p) + v*ln(q)),
-    choice(u*ln(p) - ln(q), ln(p) - v*ln(q)),
+    choice([u*ln(p) + ln(q), ln(p) + v*ln(q)]),
+    choice([u*ln(p) - ln(q), ln(p) - v*ln(q)]),
     u*ln(p) + v*ln(q),
     u*ln(p) - v*ln(q)]
     expr = lst_expr[c]
