@@ -65,7 +65,8 @@ def eval_ans(strans, sol):
 
 for input in inputs:
     input.value = answers[input.id] # HACK
-    input.score, input.feedback = eval_ans(input.value, input.sol)
+    input.score, error = eval_ans(input.value, input.sol)
+    input.feeedback = message[error]
 ==
 
 
