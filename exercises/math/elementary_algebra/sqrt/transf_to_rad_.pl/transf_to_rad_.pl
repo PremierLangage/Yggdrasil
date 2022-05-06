@@ -1,24 +1,44 @@
-extends = /model/math/expr.pl
+# Author: D. Doyen
+# Tags: exponential
+# Transformer des expressions avec exponentielle
+# 19/7/2021
 
-title = Transformation d'écritures avec racine carrée
+extends = /model/math/multimathinput.pl
 
-before ==
+param.types = [0, 1, 2]
 
-if param['form']=="p sqrt(q)":
-    p=randint(2,5)
-    q=choice([2,3,4,5,7,9])
-    sol=p**2*q
-    expr=r"%d \sqrt{ %d }" % (p,q)
-elif param['form']=="p sqrt(q) sqrt(r)":
-    p=randint(2,3)
-    q,r=sample([2,3,4,5,7,9], 2)
-    sol=p**2*q*r
-    expr=r"%d \sqrt{ %d } \sqrt{ %d }" % (p,q,r)
-elif param['form']=="p sqrt(q)/sqrt(r)":
-    p=randint(2,4)
-    q,r=sample([2,3,4,5,7,9], 2)
-    sol=p**2*q/r
-    expr=r"%d \frac{ \sqrt{ %d } }{ \sqrt{ %d } }" % (p,q,r)
+title = Transformation avec racine carrée
+
+
+before == #|py|
+from sympy.ntheory.factor_ import core
+from sympy import fraction
+n = len(param['types'])
+inputs = [MathInput(type="expr") for _ in range(n)]
+
+def generate(c):
+    if c==0:
+        p=randint(2,5)
+        q=choice([2,3,4,5,7,9])
+        sol=p**2*q
+        expr=r"%d \sqrt{ %d }" % (p,q)
+    elif c==1:
+        p=randint(2,3)
+        q,r=sample([2,3,4,5,7,9], 2)
+        sol=p**2*q*r
+        expr=r"%d \sqrt{ %d } \sqrt{ %d }" % (p,q,r)
+    elif c==2:
+        p=randint(2,4)
+        q,r=sample([2,3,4,5,7,9], 2)
+        sol=p**2*q/r
+        expr=r"%d \frac{ \sqrt{ %d } }{ \sqrt{ %d } }" % (p,q,r)
+    return expr, a*sqrt(b)
+
+prefixes = []
+for i in range(n):
+    expr, sol = generate(param['types'][i])
+    prefixes.append(f"$! \displaystyle {expr} = !$")
+    inputs[i].sol = simplify(sol)
 ==
 
 question ==
