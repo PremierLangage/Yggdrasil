@@ -20,19 +20,19 @@ def generate(c):
     if c==0:
         p=randint(2,5)
         q=choice([2,3,4,5,7,9])
-        sol=p**2*q
+        sol=sqrt(p**2*q)
         expr=r"%d \sqrt{ %d }" % (p,q)
     elif c==1:
         p=randint(2,3)
         q,r=sample([2,3,4,5,7,9], 2)
-        sol=p**2*q*r
+        sol=sqrt(p**2*q*r)
         expr=r"%d \sqrt{ %d } \sqrt{ %d }" % (p,q,r)
     elif c==2:
         p=randint(2,4)
         q,r=sample([2,3,4,5,7,9], 2)
-        sol=p**2*q/r
+        sol=sqrt(p**2*q/r)
         expr=r"%d \frac{ \sqrt{ %d } }{ \sqrt{ %d } }" % (p,q,r)
-    return expr, a*sqrt(b)
+    return expr, sol
 
 prefixes = []
 for i in range(n):
