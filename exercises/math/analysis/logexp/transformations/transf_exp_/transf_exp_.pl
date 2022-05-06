@@ -28,9 +28,6 @@ for i in range(n):
     expr, sol = generate(param['types'][i])
     prefixes.append(f"$! {latex(expr)} = !$")
     inputs[i].sol = simplify(sol)
-    inputs[i].set_embed(embed)
-
-
 ==
 
 question ==
