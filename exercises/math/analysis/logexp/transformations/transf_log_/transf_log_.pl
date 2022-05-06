@@ -37,13 +37,13 @@ Ecrire les expressions suivantes sous la forme  $! \ln(a) !$, où $! a !$ est un
 ==
 
 evaluator ==#|py|
-from sympy import E
+import sympy as sp
 from evalsympy import equal, is_rat_simp
 from latex2sympy import latex2sympy
 
 def eval_ans(strans, sol):
     try:
-        ans = latex2sympy(strans, {'e':E})
+        ans = latex2sympy(strans, {'e':sp.E})
     except:
         return (-1, "NotExpr")
     if not isinstance(ans, sp.Expr):
