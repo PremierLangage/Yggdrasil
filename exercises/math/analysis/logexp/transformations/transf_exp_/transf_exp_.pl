@@ -8,17 +8,20 @@ extends = /model/math/multimathinput.pl
 param.types = [0, 1, 2, 3]
 
 before ==
+from sympy import evaluation
 n = len(param['types'])
 inputs = [MathInput(type="complex", evalparam={'form': 'cartesian'}) for _ in range(n)]
 
 def generate(c):
     p, q = sample([-5,-4,-3,-2,2,3,4,5], 2)
     u=randint(2,4)
-    lst_expr = [(exp(p))**u,
-    1/(exp(p))**u,
-    exp(p)*exp(q),
-    exp(p)/exp(q)]
-    expr = lst_expr[c]
+    with evaluation(False):
+        lst_expr = [(exp(p))**u,
+        1/(exp(p))**u,
+        exp(p)*exp(q),
+        exp(p)/exp(q)]
+        expr = lst_expr[c]
+    
     return expr, simplify(E**expr)
 
 prefixes = []
