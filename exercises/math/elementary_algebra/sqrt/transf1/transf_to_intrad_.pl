@@ -17,6 +17,7 @@ n = len(param['types'])
 inputs = [MathInput(type="expr") for _ in range(n)]
 
 def generate(c):
+    z, b = 1, 1
     while a==1 or b==1:
         if c==0:
             p=randint(50,200)
