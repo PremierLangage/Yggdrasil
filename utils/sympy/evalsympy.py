@@ -615,7 +615,7 @@ def eval_frac(strans, sol, simpwarning=True):
     return (100, "Success")
 
 
-def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, unauthorized_func=[], authorized_func={}, local_dict={}):
+def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, unauthorized_func=[], authorized_func={}, local_dict={'e':sp.E, 'i':sp.I}):
     """
     Evaluate an answer when the solution is a complex number.
     """
