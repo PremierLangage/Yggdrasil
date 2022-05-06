@@ -28,6 +28,23 @@ for i in range(n):
     inputs[i].sol = sol
     inputs[i].set_embed(embed)
 
+
+==
+
+question ==
+Ecrire $! \displaystyle {{expr}} !$ sous la forme  $! \exp(a) !$, où $! a !$ est un nombre.
+==
+
+embed ==
+\exp \left( # \right)
+==
+
+
+
+
+
+wims ==
+
 p, q = sample([-5,-4,-3,-2,2,3,4,5], 2)
 formula = choice(eval(param['formulas']))
 if formula=="(exp(p))^u":
@@ -44,21 +61,6 @@ elif formula=="exp(p)*exp(q)":
 elif formula=="exp(p)/exp(q)":
     sol=p-q
     expr=r"\frac{\exp( %d )}{\exp( %d )}" % (p,q)
-==
-
-question ==
-Ecrire $! \displaystyle {{expr}} !$ sous la forme  $! \exp(a) !$, où $! a !$ est un nombre.
-==
-
-embed ==
-\exp \left( # \right)
-==
-
-
-
-
-
-wims ==
 
 \if{\type=55}{
 \integer{u=randitem(-1,1)*randint(2..4)}
