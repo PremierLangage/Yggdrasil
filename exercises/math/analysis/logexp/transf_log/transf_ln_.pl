@@ -63,7 +63,7 @@ def generate(c):
 
 prefixes = []
 for i in range(3):
-    expr, sol = generate(randint(1, 8))
+    expr, sol = generate(randint(0, 3))
     prefixes.append(f"$! {latex(expr)} = !$")
     inputs[i].sol = sol
     inputs[i].set_embed(embed)
