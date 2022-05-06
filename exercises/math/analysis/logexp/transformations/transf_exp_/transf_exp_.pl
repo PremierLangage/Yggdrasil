@@ -10,7 +10,7 @@ param.types = [0, 1, 2, 3]
 before ==
 from sympy import evaluate
 n = len(param['types'])
-inputs = [MathInput(type="expr", evalparam={'embedfunc': exp}) for _ in range(n)]
+inputs = [MathInput(type="expr", evalparam={'embedfunc': exp(3)}) for _ in range(n)]
 
 def generate(c):
     p, q = sample([-5,-4,-3,-2,2,3,4,5], 2)
@@ -39,38 +39,6 @@ Ecrire $! \displaystyle {{expr}} !$ sous la forme  $! \exp(a) !$, où $! a !$ es
 
 embed ==
 e^{ # }
-==
-
-
-evaluator ==#|py|
-from jinja_env import Env
-from mathinput import MathInput
-MathInput.message = message
-
-def average(lst):
-    return sum(lst)/len(lst)
-
-for input in inputs:
-    input.value = answers[input.id] # HACK
-    input.eval()
-
-if -1 in [input.score for input in inputs]:
-    score = -1
-    for input in inputs:
-        if input.score == -1:
-            input.display_feedback()
-        else:
-            input.hide_feedback()
-else:
-    score = int(average([input.score for input in inputs]))
-    for input in inputs:
-        input.display_feedback()
-        input.disable()
-
-from jinja_env import Env
-inputblock = Env.from_string(_tpl_['inputblock']).render(globals())
-solution = str(inputs[0].evalparam)
-score = 0
 ==
 
 
