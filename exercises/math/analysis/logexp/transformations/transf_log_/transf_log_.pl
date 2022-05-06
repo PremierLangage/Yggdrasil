@@ -35,7 +35,7 @@ for i in range(n):
 ==
 
 question ==
-Ecrire les expressions suivantes sous la forme  $% \ln(a)%$, où $%a%$ est un nombre.
+Ecrire les expressions suivantes sous la forme  $! \ln(a) !$, où $! a !$ est un nombre.
 ==
 
 embed ==
