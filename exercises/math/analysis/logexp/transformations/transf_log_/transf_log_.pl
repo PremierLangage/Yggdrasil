@@ -50,7 +50,7 @@ def eval_ans(strans, sol):
         return (-1, "NotExpr")
     if not isinstance(ans, sp.ln):
         return (-1, "NotExpr")
-    if isinstance(ans, sp.ln) and ans.args.has:
+    if isinstance(ans, sp.ln) and ans.args[0].has(ln):
         return (-1, "NotExpr")
     if not equal(ans, sol):
         return (0, "NotEqual")
