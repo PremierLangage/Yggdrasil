@@ -26,8 +26,8 @@ def generate(c):
     return expr, simplify(E**expr)
 
 prefixes = []
-for i in range(3):
-    expr, sol = generate(randint(0, 3))
+for i in range(n):
+    expr, sol = generate(param['types'][i])
     prefixes.append(f"$! {latex(expr)} = !$")
     inputs[i].sol = sol
     inputs[i].set_embed(embed)
