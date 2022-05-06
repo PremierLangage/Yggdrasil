@@ -37,6 +37,7 @@ Ecrire les expressions suivantes sous la forme  $! \ln(a) !$, où $! a !$ est un
 ==
 
 evaluator ==#|py|
+from sympy import E
 from evalsympy import equal, is_rat_simp
 from latex2sympy import latex2sympy
 
