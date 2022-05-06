@@ -15,7 +15,7 @@ def generate(c):
     p, q = sample([-5,-4,-3,-2,2,3,4,5], 2)
     u=randint(2,4)
     lst_expr = [(exp(p))**u,
-    1/(exp(p))**u",
+    1/(exp(p))**u,
     exp(p)*exp(q),
     exp(p)/exp(q)]
     expr = lst_expr[c]
