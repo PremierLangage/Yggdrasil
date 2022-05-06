@@ -75,7 +75,3 @@ for input in inputs:
     input.score, error = eval_ans(input.value, input.sol)
     input.feedback = message[error]
 ==
-
-solution ==
-La solution est $! {{ sol|latex}} !$.
-==
