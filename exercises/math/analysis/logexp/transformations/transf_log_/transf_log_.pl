@@ -57,7 +57,7 @@ def eval_expr(strans, sol):
 
 for input in inputs:
     input.value = answers[input.id] # HACK
-    input.eval()
+    input.score, input.feedback = eval_ans(input.value, input.sol)
 ==
 
 
