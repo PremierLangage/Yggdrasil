@@ -38,6 +38,7 @@ Ecrire les expressions suivantes sous la forme  $! \ln(a) !$, où $! a !$ est un
 
 evaluator ==#|py|
 from evalsympy import equal, is_rat_simp
+from latex2sympy import latex2sympy
 
 def eval_ans(strans, sol):
     try:
