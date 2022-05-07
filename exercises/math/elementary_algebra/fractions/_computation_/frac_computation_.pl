@@ -31,8 +31,15 @@ param.formulas % ["f+f"]
 # 13 : f-(f+f)
 # 14 : f-(e+f)
 
+extends = /model/math/multimathinput.pl
+
+param.types = [0, 1, 2, 3]
 
 before ==
+from sympy import evaluate
+n = len(param['types'])
+inputs = [MathInput(type="expr", evalparam={'embedfunc': ln(2)}) for _ in range(n)]
+
 def generate(i):
     lstfrac=[(choice([1,3,5,7]),2),
     (choice([1,2,4,5,7,8]),3),
@@ -74,7 +81,7 @@ def generate(i):
 ==
 
 question ==
-Calculer l'expression $! \displaystyle {{expr}} !$ en l'écrivant sous la forme d'un entier ou d'une fraction irréductible.
+Calculer les expressions suivantes en les écrivant sous la forme d'un entier ou d'une fraction irréductible.
 ==
 
 
