@@ -74,6 +74,13 @@ def generate(i):
     expr = lst_expr[i]
     sol=simplify(latex2sympy(expr))
     return expr, sol
+
+
+prefixes = []
+for i in range(n):
+    expr, sol = generate(param['types'][i])
+    prefixes.append(f"$! \displaystyle {latex(expr)} = !$")
+    inputs[i].sol = simplify(sol)
 ==
 
 question ==
