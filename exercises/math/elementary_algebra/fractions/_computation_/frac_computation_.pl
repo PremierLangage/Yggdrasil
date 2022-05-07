@@ -6,13 +6,9 @@
 # les types de calculs proposés
 # 19/7/2021
 
-extends = /model/math/expr.pl
-
 title = Calculer avec des fractions
 
 param.numbers = small
-
-param.formulas % ["f+f"]
 
 # Paramètres
 # 0 : f+f
@@ -38,7 +34,7 @@ param.types = [0, 1, 2, 3]
 before ==
 from sympy import evaluate
 n = len(param['types'])
-inputs = [MathInput(type="expr", evalparam={'embedfunc': ln(2)}) for _ in range(n)]
+inputs = [MathInput(type="expr") for _ in range(n)]
 
 def generate(i):
     lstfrac=[(choice([1,3,5,7]),2),
