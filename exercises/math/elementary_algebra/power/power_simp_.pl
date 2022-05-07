@@ -16,10 +16,11 @@ from sympy import fraction
 n = len(param['types'])
 inputs = [MathInput(type="expr") for _ in range(n)]
 
-def generate(c):
+x=randint(2,3)
+
+def generate(c, x:
     ok=False
     while not ok:
-        x=randint(2,3)
         n1=randint(-4,6,[0,1])
         n2=randint(-4,6,[0,1])
         na,nb=sampleint(1, 3, 2)
@@ -37,7 +38,7 @@ def generate(c):
 
 prefixes = []
 for i in range(n):
-    expr, sol = generate(param['types'][i])
+    expr, sol = generate(param['types'][i], x)
     prefixes.append(f"$! \displaystyle {expr} = !$")
     inputs[i].sol = simplify(sol)
 ==
