@@ -6,7 +6,7 @@
 extends = /model/math/multimathinput.pl
 
 before ==
-from sympy import evaluate
+from sympy import evaluate, Pow
 n = 4
 inputs = [MathInput(type="expr") for _ in range(n)]
 
