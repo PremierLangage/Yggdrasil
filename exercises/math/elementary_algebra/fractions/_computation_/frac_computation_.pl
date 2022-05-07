@@ -53,7 +53,7 @@ def generate(i):
 
 
     lst_expr = ['%s %s %s' % (f1,s1,f2),
-        '%s \times %s' % (f1,f2),
+        r'%s \times %s' % (f1,f2),
         r'\frac{ %s }{ %s }' % (f1,f2),
         '%s %s %s' % (p1,s1,p2),
         r'%s \times %s' % (p1,p2),
