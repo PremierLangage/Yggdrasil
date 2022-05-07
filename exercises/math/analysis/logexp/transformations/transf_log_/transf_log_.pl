@@ -10,7 +10,7 @@ param.types = [0, 1, 2, 3]
 before ==
 from sympy import evaluate
 n = len(param['types'])
-inputs = [MathInput(type="expr", evalparam={'embedfunc': ln(2)}) for _ in range(n)]
+inputs = [MathInput(type="expr") for _ in range(n)]
 
 def generate(c):
     p, q = sampleint(2, 5, 2)
