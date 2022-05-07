@@ -7,7 +7,7 @@ extends = /model/math/multimathinput.pl
 
 before ==
 from sympy import evaluate
-n = len(param['types'])
+n = 4
 inputs = [MathInput(type="expr") for _ in range(n)]
 
 def rand_coeff(case):
@@ -36,7 +36,7 @@ def latex_number(s,x,y):
 
 
 prefixes = []
-case=sampleint(0,5,3)
+case=sampleint(0,5,4)
 for i in range(n):
     s,x,y=rand_coeff(case[i])
     prefixes.append(f"$! {latex_number(s,x,y)} = !$")
