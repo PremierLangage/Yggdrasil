@@ -4,7 +4,7 @@ introduction ==
 - Effectuer des calculs numériques ou littéraux mettant en jeu des puissances et des racines carrées.
 ==
 
-@ exercises/math/elementary_algebra/power/compute_power_integer_minus.pl
+@ /exercises/math/elementary_algebra/power/compute_power_integer_minus.pl
 
 # @ /Mathematics/exercises/algebra/elementary_algebra/power/sign_power.pl
 
