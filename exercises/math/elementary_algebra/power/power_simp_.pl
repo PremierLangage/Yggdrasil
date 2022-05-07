@@ -17,11 +17,12 @@ n = len(param['types'])
 inputs = [MathInput(type="expr") for _ in range(n)]
 
 def generate(c):
+    ok=False
     while not ok:
         x=randint(2,3)
         n1=randint(-4,6,[0,1])
         n2=randint(-4,6,[0,1])
-        na,nb=list_randint_norep(2,1,3)
+        na,nb=sampleint(1, 3, 2)
         a=x**na
         b=x**nb
         if c == 0:
@@ -42,7 +43,7 @@ for i in range(n):
 ==
 
 question ==
-Ecrire les expressions suivantes sous la forme  $% \sqrt{a} %$, où $% a %$ est un nombre.
+Simplifier l'expression $% {{expr}} %$ en l'écrivant sous la forme $% {{x}}^n %$, où $% n %$ est un entier.
 ==
 
 evaluator ==#|py|
@@ -73,46 +74,3 @@ for input in inputs:
     input.score, error = eval_ans(input.value, input.sol)
     input.feedback = message[error]
 ==
-
-
-before== #|python|
-keyboards_JSON['virtualKeyboards']="elementary"
-input1.config = keyboards_JSON
-
-ok=False
-
-
-sol_tex=" %s ^{ %s }" % (x,n)
-==
-
-
-text== #|html|
-Simplifier l'expression $% {{expr}} %$ en l'écrivant sous la forme $% {{x}}^n %$, où $% n %$ est un entier.
-==
-
-
-evaluator== #|python|
-
-def ans_eval(strans,x,n):
-    try:
-        ans=str2expr(strans)
-    except:
-        return (-1,"FailedConversion","Votre réponse n'est pas sous la forme attendue")
-    if type(ans)!=sp.Pow:
-        return (-1,"","Votre réponse n'est pas sous la forme attendue")
-    if ans.args[0]!=x:
-        return (-1,"","Votre réponse n'est pas sous la forme attendue")
-    if ans.args[1]!=n:
-        return (0,"","")
-    return (100,"","")
-
-score,_,feedback=ans_eval(input1.value,x,n)
-==
-
-solution ==
-La solution est $! {{sol_tex}} !$.
-==
-
-
-
-
