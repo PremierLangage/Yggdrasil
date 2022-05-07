@@ -1,6 +1,6 @@
 # Author: D. Doyen
-# Tags: logarithm
-# Transformer des expressions avec logarithme
+# Tags: power
+# Calculer avec des puissances
 # 19/7/2021
 
 extends = /model/math/multimathinput.pl
