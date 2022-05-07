@@ -49,7 +49,7 @@ Simplifier les expressions suivantes en l'écrivant sous la forme $! {{x}}^n !$,
 
 evaluator ==#|py|
 import sympy as sp
-from evalsympy import equal, is_rat_simp
+from evalsympy import equal
 from latex2sympy import latex2sympy
 
 def eval_ans(strans, sol):
@@ -65,8 +65,6 @@ def eval_ans(strans, sol):
         return (-1, "WrongForm")
     if not equal(ans, sol):
         return (0, "NotEqual")
-    if not is_rat_simp(ans):
-        return (-1, "NotRatSimp")
     return (100, "Success")
 
 
