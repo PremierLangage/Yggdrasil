@@ -18,7 +18,7 @@ inputs = [MathInput(type="expr") for _ in range(n)]
 
 x=randint(2,3)
 
-def generate(c, x:
+def generate(c, x):
     ok=False
     while not ok:
         n1=randint(-4,6,[0,1])
