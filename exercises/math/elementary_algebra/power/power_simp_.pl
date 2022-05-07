@@ -33,7 +33,7 @@ def generate(c):
             n=na*n1-nb*n2
         if n!=0 and n!=1:
             ok=True
-    return expr, n
+    return expr, x**n
 
 prefixes = []
 for i in range(n):
