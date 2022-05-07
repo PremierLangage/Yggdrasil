@@ -8,8 +8,6 @@
 
 title = Calculer avec des fractions
 
-param.numbers = small
-
 # Paramètres
 # 0 : f+f
 # 1 : f*f
