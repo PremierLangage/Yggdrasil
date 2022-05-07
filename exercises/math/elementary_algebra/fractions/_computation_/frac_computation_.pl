@@ -54,10 +54,10 @@ def generate(i):
 
     lst_expr = ['%s %s %s' % (f1,s1,f2),
         '%s \times %s' % (f1,f2),
-        '\\frac{ %s }{ %s }' % (f1,f2),
+        r'\frac{ %s }{ %s }' % (f1,f2),
         '%s %s %s' % (p1,s1,p2),
-        '%s \\times %s' % (p1,p2),
-        '\\frac{ %s }{ %s }' % (p1,p2),
+        r'%s \times %s' % (p1,p2),
+        r'\frac{ %s }{ %s }' % (p1,p2),
         r'%s %s %s %s %s' % (f1,s1,f2,s2,f3),
         r'%s %s %s %s %s' % (q1,s1,q2,s2,q3),
         choice([r"\frac{ %s }{ %s %s %s }" % (f3,f1,s1,f2), r"\frac{ %s %s %s }{ %s }" % (f1,s1,f2,f3)]),
