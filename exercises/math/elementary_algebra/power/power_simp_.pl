@@ -44,7 +44,7 @@ for i in range(n):
 ==
 
 question ==
-Simplifier l'expression $% {{expr}} %$ en l'écrivant sous la forme $! {{x}}^n !$, où $% n %$ est un entier.
+Simplifier les expressions suivantes en l'écrivant sous la forme $! {{x}}^n !$, où $! n !$ est un entier.
 ==
 
 evaluator ==#|py|
