@@ -50,7 +50,6 @@ s2=choice(["-","+"])
 p1,p2=sample([f1,e1],2)
 q1,q2,q3=sample([f1,f2,e1],3)
 
-op = choice(param['formulas'])
 
 lst_expr = ['%s %s %s' % (f1,s1,f2),
 '%s \times %s' % (f1,f2),
