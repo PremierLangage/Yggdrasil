@@ -52,48 +52,23 @@ q1,q2,q3=sample([f1,f2,e1],3)
 
 op = choice(param['formulas'])
 
-if op=="f+f":
-    expr='%s %s %s' % (f1,s1,f2)
-elif op=="f*f":
-    expr='%s \times %s' % (f1,f2)
-elif op=="f/f":
-    expr='\\frac{ %s }{ %s }' % (f1,f2)
-elif op=="e+f":
-    expr='%s %s %s' % (p1,s1,p2)
-elif op=="e*f":
-    expr='%s \\times %s' % (p1,p2)
-elif op=="e/f":
-    expr='\\frac{ %s }{ %s }' % (p1,p2)
-elif op=="f+f+f":
-    expr=r'%s %s %s %s %s' % (f1,s1,f2,s2,f3)
-elif op=="e+f+f":
-    expr=r'%s %s %s %s %s' % (q1,s1,q2,s2,q3)
-elif op=="f/(f+f)":
-    expr1=r"\frac{ %s }{ %s %s %s }" % (f3,f1,s1,f2)
-    expr2=r"\frac{ %s %s %s }{ %s }" % (f1,s1,f2,f3)
-    expr=choice([expr1,expr2])
-elif op=="f/(e+f)":
-    expr1=r"\frac{ %s }{ %s %s %s }" % (f3,p1,s1,p2)
-    expr2=r"\frac{ %s %s %s }{ %s }" % (p1,s1,p2,f3)
-    expr=choice([expr1,expr2])
-elif op=="f*(f+f)":
-    expr1=r"%s \times \left( %s %s %s \right)" % (f3,f1,s1,f2)
-    expr2=r"\left( %s %s %s \right)\times  %s" % (f1,s1,f2,f3)
-    expr=choice([expr1,expr2])
-elif op=="f*f+f":
-    expr1=r"%s \times %s %s %s" % (f3,f1,s1,f2)
-    expr2=r"%s %s %s \times %s" % (f1,s1,f2,f3)
-    expr=choice([expr1,expr2])
-elif op=="f*(e+f)":
-    expr1=r"%s \times \left(%s %s %s \right)" % (f3,p1,s1,p2)
-    expr2=r"\left(%s %s %s \right) \times %s" % (p1,s1,p2,f3)
-    expr=choice([expr1,expr2])
-elif op=="f-(f+f)":
-    expr=r'%s - \left(%s %s %s \right)' % (f1,f2,s1,f3)
-elif op=="f-(e+f)":
-    expr1=r"%s - \left(%s %s %s \right)" % (f3,p1,s1,p2)
-    expr2=r" - \left(%s %s %s \right) +%s" % (p1,s1,p2,f3)
-    expr=choice([expr1,expr2])
+lst_expr = ['%s %s %s' % (f1,s1,f2),
+'%s \times %s' % (f1,f2),
+'\\frac{ %s }{ %s }' % (f1,f2),
+'%s %s %s' % (p1,s1,p2),
+'%s \\times %s' % (p1,p2),
+'\\frac{ %s }{ %s }' % (p1,p2),
+r'%s %s %s %s %s' % (f1,s1,f2,s2,f3),
+r'%s %s %s %s %s' % (q1,s1,q2,s2,q3),
+choice([r"\frac{ %s }{ %s %s %s }" % (f3,f1,s1,f2), r"\frac{ %s %s %s }{ %s }" % (f1,s1,f2,f3)]),
+choice([r"\frac{ %s }{ %s %s %s }" % (f3,p1,s1,p2), r"\frac{ %s %s %s }{ %s }" % (p1,s1,p2,f3)]),
+choice([r"%s \times \left( %s %s %s \right)" % (f3,f1,s1,f2), r"\left( %s %s %s \right)\times  %s" % (f1,s1,f2,f3)]),
+choice([r"%s \times %s %s %s" % (f3,f1,s1,f2), r"%s %s %s \times %s" % (f1,s1,f2,f3)]),
+choice([r"%s \times \left(%s %s %s \right)" % (f3,p1,s1,p2), r"\left(%s %s %s \right) \times %s" % (p1,s1,p2,f3)]),
+r'%s - \left(%s %s %s \right)' % (f1,f2,s1,f3),
+choice([r"%s - \left(%s %s %s \right)" % (f3,p1,s1,p2), r" - \left(%s %s %s \right) +%s" % (p1,s1,p2,f3)])]
+
+expr = lst_expr[3]
 
 sol=simplify(latex2sympy(expr))
 ==
