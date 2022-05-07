@@ -80,7 +80,7 @@ prefixes = []
 for i in range(n):
     expr, sol = generate(param['types'][i])
     prefixes.append(f"$! \displaystyle {expr} = !$")
-    inputs[i].sol = simplify(sol)
+    inputs[i].sol = sol
 ==
 
 question ==
