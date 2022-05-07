@@ -32,7 +32,6 @@ extends = /model/math/multimathinput.pl
 param.types = [0, 1, 2, 3]
 
 before ==
-from sympy import evaluate
 n = len(param['types'])
 inputs = [MathInput(type="expr") for _ in range(n)]
 
