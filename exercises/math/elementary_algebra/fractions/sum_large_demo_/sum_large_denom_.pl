@@ -46,6 +46,7 @@ def generate(i):
         expr='%s %s %s %s %s' % (f[0],s1,f[1],s2,f[2])
 
     sol = simplify(latex2sympy(expr))
+    return expr, sol
 
 prefixes = []
 for i in range(n):
