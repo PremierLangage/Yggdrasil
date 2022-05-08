@@ -36,7 +36,6 @@ for i in range(n):
     expr, sol = generate(types[i])
     prefixes.append(expr)
     inputs[i].sol = sol
-
 ==
 
 question ==
