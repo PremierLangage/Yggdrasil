@@ -9,7 +9,7 @@ extends = /model/math/multimathinput.pl
 
 title = Simplifier des fractions
 
-param.types = [0, 0, 1, 1]
+param.types = [0, 1]
 
 before ==
 from sympy import fraction
