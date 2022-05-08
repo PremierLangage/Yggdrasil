@@ -5,14 +5,14 @@
 # - nbsize: taille des nombres
 # 19/7/2021
 
-extends = /model/math/expr.pl
+extends = /model/math/multimathinput.pl
 
-title = Simplifier une fraction
+title = Simplifier des fractions
 
 param.types = [0, 0, 1, 1]
 
 before ==
-types = param['types']:
+types = param['types']
 n = len(types)
 inputs = [MathInput(type="expr") for _ in range(n)]
 
