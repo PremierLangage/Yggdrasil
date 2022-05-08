@@ -18,9 +18,7 @@ Objectifs :
 
 #@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_computation_muladd.pl
 
-#@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_computation_divadd_3f.pl
-
-#@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_computation_divadd_1i2f.pl
+@ /exercises/math/elementary_algebra/fractions/computation_/types_89.pl
 
 #@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_sum_large_denom_2.pl
 
