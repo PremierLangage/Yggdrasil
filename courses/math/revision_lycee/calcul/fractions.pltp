@@ -8,9 +8,7 @@ Objectifs :
 
 ==
 
-#@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_simplify_small.pl
-
-#@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_simplify_large.pl
+@ /exercises/math/elementary_algebra/fractions/simplify_/types_0011.pl
 
 @ /exercises/math/elementary_algebra/fractions/computation_/types_012.pl
 
