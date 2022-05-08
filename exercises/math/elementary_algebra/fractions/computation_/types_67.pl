@@ -1,3 +1,3 @@
 extends = computation_.pl
 
-param.types = [8, 9]
+param.types = [10, 11]
