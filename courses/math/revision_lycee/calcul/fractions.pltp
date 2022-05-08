@@ -14,7 +14,7 @@ Objectifs :
 
 @ /exercises/math/elementary_algebra/fractions/computation_/types_012.pl
 
-@  /exercises/math/elementary_algebra/fractions/computation_/types_345.pl
+@ /exercises/math/elementary_algebra/fractions/computation_/types_345.pl
 
 #@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_computation_addmul_3f.pl
 
@@ -28,7 +28,7 @@ Objectifs :
 
 #@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_sum_large_denom_3.pl
 
-@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_simplify_mul2.pl
+# @ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_simplify_mul2.pl
 
-@ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_simplify_mul3.pl
+# @ /Mathematics/exercises/algebra/elementary_algebra/fraction/frac_simplify_mul3.pl
 
