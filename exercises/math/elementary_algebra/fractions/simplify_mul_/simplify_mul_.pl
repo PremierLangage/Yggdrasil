@@ -39,7 +39,7 @@ def generate(i):
 prefixes = []
 for i in range(n):
     expr, sol = generate(types[i])
-    prefixes.append(expr)
+    prefixes.append(rf"$! \displaystyle {expr} = !$")
     inputs[i].sol = sol
 ==
 
