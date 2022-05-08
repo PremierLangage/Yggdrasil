@@ -34,12 +34,6 @@ def generate(i):
             num,denom=fraction(sol)
 
         expr=r"\frac{ %d }{ %d } \times \frac{ %d }{ %d } \times \frac{ %d }{ %d }" % (a,b,c,d,e,f)
-    f=choice(lstf)
-    shuffle(f)
-    c=choice(lstc)
-    a,b=c*f[0],c*f[1]
-    sol=Rational(a,b)
-    expr = r"$! \displaystyle \frac{ %s }{ %s } = !$" % (a, b)
     return expr, sol
 
 prefixes = []
