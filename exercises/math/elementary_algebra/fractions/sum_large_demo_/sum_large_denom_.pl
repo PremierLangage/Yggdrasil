@@ -53,3 +53,7 @@ for i in range(n):
     prefixes.append(rf"$! \displaystyle {expr} = !$")
     inputs[i].sol = sol
 ==
+
+question ==
+Calculer les expressions suivantes en les écrivant sous la forme d'un entier ou d'une fraction irréductible.
+==
