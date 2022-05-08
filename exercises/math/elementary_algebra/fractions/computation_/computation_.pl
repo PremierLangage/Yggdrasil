@@ -35,7 +35,7 @@ for x in param['types']:
     if isinstance(x, list):
         types.append(choice(x))
     else:
-        types.append(c)
+        types.append(x)
 
 n = len(types)
 inputs = [MathInput(type="expr") for _ in range(n)]
