@@ -41,7 +41,6 @@ n = len(types)
 inputs = [MathInput(type="expr") for _ in range(n)]
 
 
-
 def generate(i):
     lstfrac=[(choice([1,3,5,7]),2),
     (choice([1,2,4,5,7,8]),3),
