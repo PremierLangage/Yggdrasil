@@ -44,5 +44,5 @@ for i in range(n):
 ==
 
 question ==
-Simplifier les fraction suivantes (en les écrivant sous forme d'entiers ou de fractions irréductibles).
+Simplifier les expressions suivantes (en les écrivant sous forme d'entiers ou de fractions irréductibles).
 ==
