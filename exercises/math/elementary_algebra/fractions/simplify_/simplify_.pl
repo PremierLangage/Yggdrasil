@@ -39,5 +39,5 @@ for i in range(n):
 ==
 
 question ==
-Simplifier la fraction $% \displaystyle \frac{ {{a}} }{ {{b}} } %$ en l'écrivant sous la forme d'un entier ou d'une fraction irréductible.
+Simplifier les fraction suivantes (en les écrivant sous forme d'entiers ou de fractions irréductibles).
 ==
