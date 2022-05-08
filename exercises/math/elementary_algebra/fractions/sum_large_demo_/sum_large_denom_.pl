@@ -14,17 +14,16 @@ param.types = [0, 1]
 before ==
 from math import gcd
 
-
 types = param['types']
 n = len(types)
 inputs = [MathInput(type="expr") for _ in range(n)]
 
-def generate(i):
+def generate(ind):
 
-    if i == 0:
+    if ind == 0:
         n=2
         k=choice([11,12,13,14,15,16,17,18,19])
-    if i == 1:
+    if ind == 1:
         n=3
         k=choice([7,9,11,13,14,15])
 
@@ -40,9 +39,9 @@ def generate(i):
     s1=choice(["-","+"])
     s2=choice(["-","+"])
 
-    if i == 0:
+    if ind == 0:
         expr='%s %s %s' % (f[0],s1,f[1])
-    if i == 1:
+    if ind == 1:
         expr='%s %s %s %s %s' % (f[0],s1,f[1],s2,f[2])
 
     sol = simplify(latex2sympy(expr))
