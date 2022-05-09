@@ -7,7 +7,6 @@ extends = /model/math/interval.pl
 
 title = Résolution d'une inéquation trigonométrique
 
-
 param.rhs = "Rational(1,2),-Rational(1,2),sqrt(2)/2,-sqrt(2)/2,sqrt(3)/2,-sqrt(3)/2"
 
 param.interval = "(-pi,pi),"
