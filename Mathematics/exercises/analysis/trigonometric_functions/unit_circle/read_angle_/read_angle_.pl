@@ -1,6 +1,6 @@
 extends = /model/math/expr.pl
 
-param.lstangle = "pi/4, pi/2, 3*pi/4, pi, 5*pi/4, 3*pi/2, 7*pi/4"
+param.angles = "pi/4, pi/2, 3*pi/4, pi, 5*pi/4, 3*pi/2, 7*pi/4"
 
 equality = "Modulo"
 
@@ -10,7 +10,7 @@ before ==
 from jxginput import JXGViewer
 jxg = JXGViewer()
 
-lstangle=eval(param['lstangle'])
+lstangle=eval(param['angles'])
 angle=choice(lstangle)
 cosangle=cos(angle).evalf()
 sinangle=sin(angle).evalf()
