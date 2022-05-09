@@ -21,13 +21,7 @@ a,b=choice(eval(param['interval']))
 interv=Interval(a,b)
 ineq = choice([lhs >= rhs, lhs <= rhs])
 sol = solveset(ineq, x, domain=S.Reals)
-if isinstance(sol, Union):
-    for inter in sol:
-        inter.start = inter.start-pi
-        inter.end = inter.end-pi
-else:
-    sol.start = sol.start-pi
-    sol.end = sol.end-pi
+sol = ImageSet(Lambda(x, x-2*pi), sol)  
 ==
 
 wobracket = True
