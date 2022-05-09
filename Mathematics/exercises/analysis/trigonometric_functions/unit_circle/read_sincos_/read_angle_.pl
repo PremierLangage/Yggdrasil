@@ -9,9 +9,6 @@ modulo = 2*pi
 before ==
 from jxginput import JXGViewer
 jxg = JXGViewer()
-
-inputs = [MathInput(type="expr"), MathInput(type="expr")]
-prefixes = ["sinus :", "cosinus :"]
 lstangle=eval(param['angles'])
 angle=choice(lstangle)
 cosangle=cos(angle).evalf()
@@ -21,6 +18,9 @@ yM=float(sinangle)
 sol = angle
 jxg.set_attributes(attributes)
 jxg.set_script(script, globals())
+
+inputs = [MathInput(type="expr"), MathInput(type="expr")]
+prefixes = ["sinus :", "cosinus :"]
 ==
 
 attributes ={"boundingbox": [-1.25, 1.25, 1.25, -1.25], "showNavigation": False, "axis": False, "grid": False}
