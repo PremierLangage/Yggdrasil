@@ -34,3 +34,14 @@ question ==
 Quelle est la mesure (en radians) de l'angle $% (\overrightarrow{OA},\overrightarrow{OM}) %$ représenté ci-dessous. 
 {{ jxg|html }}
 ==
+
+style.jxgcss ==
+<style>
+.jsxgraph-component {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid;
+}
+</style>
+==
