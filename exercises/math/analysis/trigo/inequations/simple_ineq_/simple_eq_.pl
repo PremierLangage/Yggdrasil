@@ -4,7 +4,7 @@
 # 19/7/2021
 
 
-extends = /model/math/set.pl
+extends = /model/math/interval.pl
 
 param.rhs = "Rational(1, 2), -Rational(1, 2)"
 
