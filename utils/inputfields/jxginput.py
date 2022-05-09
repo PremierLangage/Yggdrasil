@@ -3,6 +3,46 @@ from jinja2 import Template
 from math import hypot
 from serializable import Serializable
 
+class JXGViewer(Serializable):
+
+    def __init__(self, **kwargs):
+        if 'data' not in kwargs:
+            self.data = {'selector': 'c-math-drawer', 'cid': str(uuid4())}
+        for k, v in kwargs.items():
+            setattr(self, k, v)
+
+    def set_attributes(self, attributes):
+        """
+        Set attributes.
+        """
+        self.data['attributes'] = attributes
+
+    def set_script(self, script, dic={}):
+        """
+        Set script and render it.
+        """
+        self.data['script'] = Template(script).render(dic)
+
+    def add_script(self, script, dic={}):
+        """
+        Add a script and render it.
+        """
+        self.data['script'] += "\n" + Template(script).render(dic)
+
+    def disable(self):
+        """
+        Disable the input field.
+        """
+        self.data['disabled'] = True
+
+    def render(self):
+        """
+        Return the HTML code of the input field.
+        """
+        selector = self.data['selector']
+        cid = self.data['cid']
+        return f"<{selector} cid='{cid}'></{selector}>"
+
 
 class JXGInput(Serializable):
 
