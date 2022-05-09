@@ -20,7 +20,7 @@ rhs =choice(eval(param['rhs']))
 a,b=choice(eval(param['interval']))
 interv=Interval(a,b)
 ineq = choice([lhs >= rhs, lhs <= rhs])
-sol = solveset(ineq, x, domain=S.Reals).intersect(interv)
+sol = solveset(ineq, x, domain=S.Reals)
 ==
 
 wobracket = True
