@@ -20,9 +20,10 @@ rhs =choice(eval(param['rhs']))
 a,b=choice(eval(param['interval']))
 interv=Interval(a,b)
 ineq = choice([lhs >= rhs, lhs <= rhs])
-sol1 = solveset(ineq, x, domain=S.Reals)
-sol0 = Interval(sol1.start-2*pi, sol1.end-2*pi)
-sol = Union(sol0, sol1).intersect(interv)
+sol = solveset(ineq, x, domain=S.Reals)
+for inter in sol:
+    inter.start = inter.start-pi
+    inter.end = inter.end-pi
 ==
 
 wobracket = True
