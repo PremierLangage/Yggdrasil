@@ -13,7 +13,7 @@ param.interval = "(-pi,pi),"
 param.interval_type = closed
 
 before ==
-from sympy import solveset, S, Union
+from sympy import solveset, S, ImageSet, Union
 var('x')
 lhs = choice([cos(x),sin(x)])
 rhs =choice(eval(param['rhs']))
