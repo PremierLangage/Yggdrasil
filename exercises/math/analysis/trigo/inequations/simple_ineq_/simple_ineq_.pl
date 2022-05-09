@@ -13,14 +13,16 @@ param.interval = "(-pi,pi),"
 param.interval_type = closed
 
 before ==
-from sympy import solveset, S
+from sympy import solveset, S, Union
 var('x')
 lhs = choice([cos(x),sin(x)])
 rhs =choice(eval(param['rhs']))
 a,b=choice(eval(param['interval']))
 interv=Interval(a,b)
 ineq = choice([lhs >= rhs, lhs <= rhs])
-sol = solveset(ineq, x, domain=S.Reals)
+sol1 = solveset(ineq, x, domain=S.Reals)
+sol0 = Interval(sol1.start-2*pi, sol1.end-2*pi)
+sol = Union(sol0, sol1).intersect(interv)
 ==
 
 wobracket = True
