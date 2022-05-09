@@ -4,8 +4,7 @@ param.lstangle = [pi/4,pi/2,3*pi/4,pi,5*pi/4,3*pi/2,7*pi/4]
 
 before ==
 jxg = JXGViewer()
-jxg.set_attributes(attributes)
-jxg.set_script(script)
+
 lstangle=eval(param['lstangle'])
 angle=choice(lstangle)
 cosangle=cos(angle).evalf()
@@ -13,7 +12,8 @@ sinangle=sin(angle).evalf()
 xM=float(cosangle)
 yM=float(sinangle)
 sol = angle
-jxg.setscript(script, globals())
+jxg.set_attributes(attributes)
+jxg.set_script(script, globals())
 ==
 
 attributes ={"boundingbox": [-1.25, 1.25, 1.25, -1.25], "showNavigation": False, "axis": False, "grid": False}
