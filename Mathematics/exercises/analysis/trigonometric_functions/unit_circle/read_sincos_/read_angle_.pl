@@ -21,6 +21,8 @@ jxg.set_script(script, globals())
 
 inputs = [MathInput(type="expr"), MathInput(type="expr")]
 prefixes = ["sinus :", "cosinus :"]
+inputs[0].sol = sin(angle)
+inputs[1].sol = cos(angle)
 ==
 
 attributes ={"boundingbox": [-1.25, 1.25, 1.25, -1.25], "showNavigation": False, "axis": False, "grid": False}
