@@ -15,7 +15,6 @@ cosangle=cos(angle).evalf()
 sinangle=sin(angle).evalf()
 xM=float(cosangle)
 yM=float(sinangle)
-sol = angle
 jxg.set_attributes(attributes)
 jxg.set_script(script, globals())
 
