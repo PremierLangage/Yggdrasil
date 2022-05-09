@@ -19,7 +19,7 @@ jxg.set_attributes(attributes)
 jxg.set_script(script, globals())
 
 inputs = [MathInput(type="expr"), MathInput(type="expr")]
-prefixes = [f"$! \displaystyle \sin( {latex(angle)} ) !$=", f"$! \displaystyle\cos( {latex(angle)} ) = !$"]
+prefixes = [f"$! \displaystyle \sin( {latex(angle)} ) = !$", f"$! \displaystyle\cos( {latex(angle)} ) = !$"]
 inputs[0].sol = sin(angle)
 inputs[1].sol = cos(angle)
 ==
