@@ -1,8 +1,7 @@
 # Author: D. Doyen
-# Tags: trigonometric equation, sinus, cosinus
-# Résoudre une équation trigonométrique
+# Tags: trigonometric inequation, sinus, cosinus
+# Résoudre une inéquation trigonométrique
 # 19/7/2021
-
 
 extends = /model/math/interval.pl
 
