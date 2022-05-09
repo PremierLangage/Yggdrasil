@@ -1,7 +1,4 @@
 extends = /model/math/expr.pl
-jxg =: MathDrawer
-@ /utils/components/jsxgraph.py [customjsxgraph.py]
-jxg.decorator = CustomJSXGraph
 
 param.lstangle = [pi/4,pi/2,3*pi/4,pi,5*pi/4,3*pi/2,7*pi/4]
 
