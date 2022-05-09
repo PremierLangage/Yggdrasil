@@ -27,6 +27,6 @@ sol = Union(sol0, imageset(Lambda(x, x-2*pi), sol0)).intersect(interv)
 wobracket = True
 
 question ==
-Déterminer la ou les solutions de l'équation $$ {{ ineq|latex }} $$
-sur l'intervalle $! {{ interv|latex }} !$. Quand il y a plusieurs solutions, les séparer par des virgules.
+Résoudre l'inéquation $$ {{ ineq|latex }} $$
+sur l'intervalle $! {{ interv|latex }} !$.
 ==
