@@ -19,7 +19,6 @@ lhs = choice([cos(x),sin(x)])
 rhs =choice(eval(param['rhs']))
 a,b=choice(eval(param['interval']))
 interv=Interval(a,b)
-sol=FiniteSet(*list(solveset(lhs-rhs,x,domain=S.Reals).intersect(interv)))
 ineq = choice([lhs >= rhs, lhs <= rhs])
 sol = solveset(ineq, x, domain=S.Reals).intersect(interv)
 ==
