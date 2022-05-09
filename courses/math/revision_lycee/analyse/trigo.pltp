@@ -5,7 +5,7 @@ title = Fonctions trigonométriques
 introduction ==
 - Par lecture du cercle trigonométrique, retrouver les valeurs des cosinus et sinus
 - Lire/placer un angle sur le cercle trigonométrique.
-- Résoudre une équation trigonométrique.
+- Résoudre une équation du type $! cos(x)=a !$, une inéquation de la forme $! \cos(x)⩽a !$ sur $! [-pi,pi] !$.
 ==
 
 @ /exercises/math/analysis/trigo/unit_circle/read_angle_/angles_124.pl
