@@ -1,0 +1,16 @@
+# Verif 1
+
+title = Fonctions trigonométriques
+
+introduction ==
+- Par lecture du cercle trigonométrique, retrouver les valeurs des cosinus et sinus
+- Lire/placer un angle sur le cercle trigonométrique.
+==
+
+@ /exercises/math/analysis/trigo/unit_circle/read_angle_/angles_124.pl
+
+@ /exercises/math/analysis/trigo/unit_circle/read_sincos_/angles_124.pl
+
+@ /exercises/math/analysis/trigo/unit_circle/read_sincos_/angles_36.pl
+
+@ /exercises/math/analysis/trigo/unit_circle/read_angle_/angles_36.pl
