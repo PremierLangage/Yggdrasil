@@ -1,7 +1,7 @@
 extends = /model/math/multimathinput.pl
 title = Calcul de limites
 
-param.form = [0, 1, 2]
+param.terms = "ln(x), exp(x), x**randint(1, 4), sqrt(x), 1/x, exp(-x)"
 
 
 
@@ -12,15 +12,11 @@ inputs = [MathInput() for _ in range(n)]
 prefixes = []
 
 var('x')
-terms = [ln(x), exp(x), x**randint(1, 4), sqrt(x), 1/x, exp(-x)]
-f = [atan(x), x/(x+1)]
-b = [sin(x), cos(x)]
-f0 = [1/ln(x), 1/exp(x), 1/x]
+terms = simpify(param['terms'])
 
-
-def rand_expr(i):
-    f = sample(terms, 2)
-    c = sample([-2, -1, 1, 2], 2)
+def rand_expr(k):
+    f = sample(terms, k)
+    c = sample([-3, -2, -1, 1, 2, 3], k)
     return c[0]*f[0] + c[1]*f[1]
 
 cases = [0, 1, 3]
