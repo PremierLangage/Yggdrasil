@@ -26,7 +26,9 @@ def rand_expr(k):
 
 
 for i in range(n):
-    lim = Limit(rand_expr(nbterms[i]), x, oo)
+    nb = nbterms[i]
+    shuffle(nb)
+    lim = Limit(rand_expr(nb), x, oo)
     s = latex(lim)
     prefixes.append(f"$! \displaystyle {s} = !$")
     inputs[i].sol = lim.doit()
