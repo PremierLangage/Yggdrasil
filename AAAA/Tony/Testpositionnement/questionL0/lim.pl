@@ -6,7 +6,7 @@
 extends= /model/basic/checkbox_rw.pl
 
  
-text==
+question==
 Parmi ces limites, lesquelles valent $!+\infty!$? 
 ==
  
