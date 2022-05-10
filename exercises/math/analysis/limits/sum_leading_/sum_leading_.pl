@@ -6,7 +6,7 @@ param.terms = "ln(x), exp(x), x**randint(1, 4), sqrt(x), 1/x, exp(-x)"
 param.nbterms = [2, 2, 2]
 
 before == #|py|
-from sympy import atan, Limit
+from sympy import Limit
 n = 3
 inputs = [MathInput() for _ in range(n)]
 prefixes = []
