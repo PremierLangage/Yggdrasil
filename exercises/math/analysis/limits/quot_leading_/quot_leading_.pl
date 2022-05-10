@@ -15,13 +15,14 @@ n = len(nbterms)
 inputs = [MathInput() for _ in range(n)]
 prefixes = []
 
-def rand_expr(k):
-    f = sample(terms, k)
-    c = sample([-3, -2, -1, 1, 2, 3], k)
-    ff = sum([c[i]*f[i] for i in range(k)])
-    g = sample(terms, k)
-    c = sample([-3, -2, -1, 1, 2, 3], k)
-    gg = sum([c[i]*g[i] for i in range(k)])
+def rand_expr(nb):
+    k1, k2 = nb
+    sampterms = sample(terms, k1)
+    c = sample([-3, -2, -1, 1, 2, 3], k1)
+    f = sum([c[i]*sampterms[i] for i in range(k1)])
+    sampterms = sample(terms, k2)
+    c = sample([-3, -2, -1, 1, 2, 3], k2)
+    g = sum([c[i]*sampterms[i] for i in range(k2)])
     return ff/gg
 
 
