@@ -12,7 +12,7 @@ inputs = [MathInput() for _ in range(n)]
 prefixes = []
 
 var('x')
-terms = [ln(x), exp(x), x**randint(1, 4), 1/x, exp(-x)]
+terms = [ln(x), exp(x), x**randint(1, 4), sqrt(x), 1/x, exp(-x)]
 f = [atan(x), x/(x+1)]
 b = [sin(x), cos(x)]
 f0 = [1/ln(x), 1/exp(x), 1/x]
