@@ -15,7 +15,6 @@ n = len(nbterms)
 inputs = [MathInput() for _ in range(n)]
 prefixes = []
 
-
 def rand_expr(k):
     f = sample(terms, k)
     c = sample([-3, -2, -1, 1, 2, 3], k)
