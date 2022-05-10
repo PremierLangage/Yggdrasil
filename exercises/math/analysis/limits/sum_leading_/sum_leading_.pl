@@ -3,7 +3,7 @@ title = Calcul de limites
 
 param.terms = "ln(x), exp(x), x**randint(1, 4), sqrt(x), 1/x, exp(-x)"
 
-param.nbterms = [2, 2, 2]
+param.nbterms = [2, 2, 3, 3]
 
 before == #|py|
 from sympy import Limit
