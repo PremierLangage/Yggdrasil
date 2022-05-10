@@ -7,7 +7,7 @@ from jxginput import JXGViewer()
 jxg = JXGViewer()
 xA, yA = randint(-5, 5), randint(-5, 5)
 xB, yB = randint(-5, 5), randint(-5, 5)
-sol = sampleint(-5, 5, 2)
+sol = (xB-xA, yB-yA)
 ==
 
 attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
