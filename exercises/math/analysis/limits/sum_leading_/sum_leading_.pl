@@ -8,7 +8,7 @@ param.nbterms = [2, 2, 2]
 before == #|py|
 from sympy import Limit
 var('x')
-terms = sympify(param['terms'])
+terms = eval(param['terms'])
 nbterms = param['nbterms']
 n = len(nbterms)
 
