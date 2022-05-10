@@ -15,8 +15,7 @@ n = len(nbterms)
 inputs = [MathInput() for _ in range(n)]
 prefixes = []
 
-def rand_expr(nb):
-    k1, k2 = nb
+def rand_expr(k1, k2):
     sampterms = sample(terms, k1)
     c = sample([-3, -2, -1, 1, 2, 3], k1)
     f = sum([c[i]*sampterms[i] for i in range(k1)])
@@ -29,7 +28,7 @@ def rand_expr(nb):
 for i in range(n):
     nb = nbterms[i]
     shuffle(nb)
-    lim = Limit(rand_expr(nb), x, oo)
+    lim = Limit(rand_expr(*nb), x, oo)
     s = latex(lim)
     prefixes.append(f"$! \displaystyle {s} = !$")
     inputs[i].sol = lim.doit()
