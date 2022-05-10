@@ -16,7 +16,7 @@ inputs = [MathInput() for _ in range(n)]
 prefixes = []
 
 def rand_expr(nb):
-    k1, k2 = 2, 3
+    k1, k2 = sample(nb[i], 2)
     sampterms = sample(terms, k1)
     c = sample([-3, -2, -1, 1, 2, 3], k1)
     f = sum([c[i]*sampterms[i] for i in range(k1)])
