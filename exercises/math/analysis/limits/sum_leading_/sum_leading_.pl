@@ -20,6 +20,7 @@ f0 = [1/ln(x), 1/exp(x), 1/x]
 
 def rand_expr(i):
     f = sample(terms, 2)
+    return f[0] + f[1]
 
 cases = [0, 1, 3]
 shuffle(cases)
