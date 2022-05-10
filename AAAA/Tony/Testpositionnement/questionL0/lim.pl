@@ -27,6 +27,10 @@ question ==
 Parmi ces villes, lesquelles ne sont pas des capitales ?
 ==
 
+nbitems=4
+minright = 0
+maxright = 4
+
 right ==
 Barcelone
 Milan
