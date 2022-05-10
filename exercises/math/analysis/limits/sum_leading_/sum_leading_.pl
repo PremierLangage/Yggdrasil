@@ -13,7 +13,8 @@ prefixes = []
 
 var('x')
 terms = sympify(param['terms'])
-
+nbterms = param['nbterms']
+n = len(nbterms)
 def rand_expr(k):
     f = sample(terms, k)
     c = sample([-3, -2, -1, 1, 2, 3], k)
@@ -21,7 +22,7 @@ def rand_expr(k):
 
 
 for i in range(n):
-    lim = Limit(rand_expr(cases[i]), x, oo)
+    lim = Limit(rand_expr(nbterms[i]), x, oo)
     s = latex(lim)
     prefixes.append(f"$! \displaystyle {s} = !$")
     inputs[i].sol = lim.doit()
