@@ -8,6 +8,8 @@ jxg = JXGViewer()
 xA, yA = randint(-5, 5), randint(-5, 5)
 xB, yB = randint(-5, 5), randint(-5, 5)
 sol = (xB-xA, yB-yA)
+jxg.set_attributes(attributes)
+jxg.set_script(script, globals())
 ==
 
 attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
