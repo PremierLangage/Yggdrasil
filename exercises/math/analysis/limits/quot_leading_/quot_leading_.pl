@@ -22,6 +22,7 @@ def rand_expr(k):
     g = sample(terms, k)
     c = sample([-3, -2, -1, 1, 2, 3], k)
     gg = sum([c[i]*f[i] for i in range(k)])
+    return ff/gg
 
 
 for i in range(n):
