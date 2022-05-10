@@ -11,7 +11,7 @@ pointname = "M"
 param.angles = "pi/4, pi/2, 3*pi/4, pi, 5*pi/4, 3*pi/2, 7*pi/4, 2*pi"
 
 before ==
-lstangle = eval(param['angles'])
+lstangle = simpify(param['angles'])
 angle = choice(lstangle)
 valangle = float(angle.evalf())
 xsol = float(cos(valangle))
