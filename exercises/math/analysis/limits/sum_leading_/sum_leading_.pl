@@ -17,7 +17,7 @@ prefixes = []
 
 def rand_expr(k):
     f = sample(terms, k)
-    c = sample([-3, -2, -1, 1, 2, 3], k)
+    c = sample([-3, -2, -1, -1, -1, 1, 2, 3], k)
     return sum([c[i]*f[i] for i in range(k)])
 
 
