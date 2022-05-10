@@ -5,9 +5,7 @@
 
 extends= /model/basic/checkbox_rw.pl
 
-
-title= Savoir reconnaitre les caractéristiques d'une ED (linéarité, ordre…) : ordre
-
+ 
 text==
 Parmi ces limites, lesquelles valent $!+\infty!$? 
 ==
