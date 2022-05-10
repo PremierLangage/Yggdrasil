@@ -15,9 +15,9 @@ jxg.set_script(script, globals())
 attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
 
 script == #|js|
-var pt1 = board.create('point', [{{xA}}, {{yA}}], {color:'blue', name: 'A', size: 0.5, withLabel: false, snapToGrid: true});
-var pt2 = board.create('point', [{{xB}}, {{yB}}], {color:'blue', name: 'B', size: 0.5, withLabel: false, snapToGrid: true});
-var vec = board.create('segment', [pt1, pt2], {color:'blue', lastArrow: {type: 2, size: 6}});
+var pt1 = board.create('point', [{{xA}}, {{yA}}], {color:'blue', name: 'A', size: 0.5, withLabel: false, fixed: true});
+var pt2 = board.create('point', [{{xB}}, {{yB}}], {color:'blue', name: 'B', size: 0.5, withLabel: false, fixed: true});
+var vec = board.create('segment', [pt1, pt2], {color:'blue', fixed:true, lastArrow: {type: 2, size: 6}});
 ==
 
 
