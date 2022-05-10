@@ -3,7 +3,7 @@ title = Calcul de limites
 
 param.terms = "ln(x), exp(x), x**randint(1, 4), sqrt(x), 1/x, exp(-x), 1/ln(x), randint(-2,2,[0])"
 
-param.nbterms = [[2,1], [2,2], [2,2] [2,3]]
+param.nbterms = [[2,1], [2,2], [2,2], [2,3]]
 
 before == #|py|
 from sympy import Limit
@@ -16,7 +16,7 @@ inputs = [MathInput() for _ in range(n)]
 prefixes = []
 
 def rand_expr(nb):
-    k1, k2 = nb
+    k1, k2 = 2, 3
     sampterms = sample(terms, k1)
     c = sample([-3, -2, -1, 1, 2, 3], k1)
     f = sum([c[i]*sampterms[i] for i in range(k1)])
