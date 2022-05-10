@@ -3,7 +3,7 @@ title = Calcul de limites
 
 param.terms = "ln(x), exp(x), x**randint(1, 4), sqrt(x), 1/x, exp(-x)"
 
-
+param.nbterms = [2, 2, 2]
 
 before == #|py|
 from sympy import atan, Limit
@@ -19,8 +19,6 @@ def rand_expr(k):
     c = sample([-3, -2, -1, 1, 2, 3], k)
     return sum([c[i]*f[i] for i in range(k)])
 
-cases = [0, 1, 3]
-shuffle(cases)
 
 for i in range(n):
     lim = Limit(rand_expr(cases[i]), x, oo)
