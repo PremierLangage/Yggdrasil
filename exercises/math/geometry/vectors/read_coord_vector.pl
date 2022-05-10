@@ -18,6 +18,19 @@ var pt2 = board.create('point', [{{xB}}, {{yB}}], {color:'blue', name: 'B', size
 var vec = board.create('segment', [pt1, pt2], {color:'blue', lastArrow: {type: 2, size: 6}});
 ==
 
+
 question ==
-Modifier le vecteur ci-dessous pour en faire un vecteur de coordonnées $! ( {{ sol[0] }}, {{ sol[1] }} ) !$. 
+Déterminer les coordoonées du vecteur représenté ci-dessous.
+{{ jxg|html }}
+==
+
+style.jxgcss ==
+<style>
+.jsxgraph-component {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid;
+}
+</style>
 ==
