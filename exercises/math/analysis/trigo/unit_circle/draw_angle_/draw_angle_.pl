@@ -30,5 +30,5 @@ var circle = board.create('circle',[[0,0],[0,1]],{strokeColor:'blue',fixed:true}
 var O = board.create('point', [0,0],{size:1, name: 'O', color: 'black', fixed: true});
 var A = board.create('point', [1,0],{size:1, name: 'A', color: 'black', fixed: true});
 var pt = board.create('glider', [1, 0.5, circle],{name:'M',color:'blue',fixed:false});
-board.create('sector', [O, A, M], {color: 'orange'});
+board.create('sector', [O, A, pt], {color: 'orange'});
 ==
