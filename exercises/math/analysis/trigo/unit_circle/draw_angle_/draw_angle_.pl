@@ -8,7 +8,7 @@ tol = 0.01
 
 pointname = "M"
 
-param.angles = "0, pi/4, pi/2, 3*pi/4, pi, 5*pi/4, 3*pi/2, 7*pi/4, 2*pi"
+param.angles = "pi/4, pi/2, 3*pi/4, pi, 5*pi/4, 3*pi/2, 7*pi/4, 2*pi"
 
 before ==
 lstangle = eval(param['angles'])
