@@ -1,4 +1,4 @@
-extends = /model/jxg/tuple.pl
+extends = /model/math/tuple.pl
 
 title = Lire les coordonnées d'un vecteur
 
