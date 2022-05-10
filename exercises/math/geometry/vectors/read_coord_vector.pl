@@ -3,7 +3,7 @@ extends = /model/math/tuple.pl
 title = Lire les coordonnées d'un vecteur
 
 before ==
-from jxginput import JXGViewer()
+from jxginput import JXGViewer
 jxg = JXGViewer()
 xA, yA = randint(-5, 5), randint(-5, 5)
 xB, yB = randint(-5, 5), randint(-5, 5)
