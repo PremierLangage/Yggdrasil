@@ -22,7 +22,7 @@ sol = [xsol, ysol]
 
 name = "M"
 
-jxg ==
+jxgscript ==
 board.create('grid', [], {gridX: 0.25, gridY: 0.25});
 board.create('axis',[[0,0],[1,0]],{ticks:{visible:false}});
 board.create('axis',[[0,0],[0,1]],{ticks:{visible:false}});
