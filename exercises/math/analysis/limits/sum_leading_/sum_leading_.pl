@@ -12,7 +12,7 @@ inputs = [MathInput() for _ in range(n)]
 prefixes = []
 
 var('x')
-terms = simpify(param['terms'])
+terms = sympify(param['terms'])
 
 def rand_expr(k):
     f = sample(terms, k)
