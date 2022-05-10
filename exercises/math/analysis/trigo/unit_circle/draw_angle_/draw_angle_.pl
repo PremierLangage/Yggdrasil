@@ -32,3 +32,7 @@ var A = board.create('point', [1,0],{size:1, name: 'A', color: 'black', fixed: t
 var pt = board.create('glider', [1, 0.5, circle],{name:'M',color:'blue',fixed:false});
 board.create('sector', [O, A, pt], {color: 'orange'});
 ==
+
+question ==
+Placer sur le cercle unité ci-dessous le point M de sorte que l'angle $! (\overrightarrow{OA},\overrightarrow{OM}) !$ ait une mesure égale à $! {{ angle|latex }} !$. 
+==
