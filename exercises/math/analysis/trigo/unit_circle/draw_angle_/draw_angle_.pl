@@ -8,10 +8,10 @@ tol = 0.01
 
 pointname = "M"
 
-param.arguments = "0, pi/4, pi/2, 3*pi/4, pi, 5*pi/4, 3*pi/2, 7*pi/4, 2*pi"
+param.aangles = "0, pi/4, pi/2, 3*pi/4, pi, 5*pi/4, 3*pi/2, 7*pi/4, 2*pi"
 
 before ==
-lstangle = eval(param['lstangle'])
+lstangle = eval(param['angles'])
 angle = choice(lstangle)
 valangle = float(angle.evalf())
 xsol = float(cos(valangle))
