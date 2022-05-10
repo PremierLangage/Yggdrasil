@@ -1,4 +1,14 @@
-extends = /model/jsxgraph/clickpoint.pl
+extends = /model/jxg/point.pl
+
+title = Placer un angle
+
+attributes = {"showNavigation":False, "boundingbox":[-1.25,1.25,1.25,-1.25]}
+
+tol = 0.01
+
+pointname = "M"
+
+param.arguments = "0, pi/4, pi/2, 3*pi/4, pi, 5*pi/4, 3*pi/2, 7*pi/4, 2*pi"
 
 before ==
 lstangle = eval(param['lstangle'])
@@ -9,7 +19,6 @@ ysol = float(sin(valangle))
 jxg.setscript(script_init)
 ==
 
-attributes % {"showNavigation":False, "boundingbox":[-1.25,1.25,1.25,-1.25]}
 
 name = "M"
 
