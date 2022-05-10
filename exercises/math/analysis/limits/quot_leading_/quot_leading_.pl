@@ -23,7 +23,7 @@ def rand_expr(nb):
     sampterms = sample(terms, k2)
     c = sample([-3, -2, -1, 1, 2, 3], k2)
     g = sum([c[i]*sampterms[i] for i in range(k2)])
-    return ff/gg
+    return f/g
 
 
 for i in range(n):
