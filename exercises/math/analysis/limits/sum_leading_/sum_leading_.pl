@@ -17,7 +17,7 @@ terms = simpify(param['terms'])
 def rand_expr(k):
     f = sample(terms, k)
     c = sample([-3, -2, -1, 1, 2, 3], k)
-    return c[0]*f[0] + c[1]*f[1]
+    return sum([c[i]*f[i] for i in range(k)])
 
 cases = [0, 1, 3]
 shuffle(cases)
