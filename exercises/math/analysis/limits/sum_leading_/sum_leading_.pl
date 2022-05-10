@@ -7,14 +7,15 @@ param.nbterms = [2, 2, 2]
 
 before == #|py|
 from sympy import Limit
-n = 3
-inputs = [MathInput() for _ in range(n)]
-prefixes = []
-
 var('x')
 terms = sympify(param['terms'])
 nbterms = param['nbterms']
 n = len(nbterms)
+
+inputs = [MathInput() for _ in range(n)]
+prefixes = []
+
+
 def rand_expr(k):
     f = sample(terms, k)
     c = sample([-3, -2, -1, 1, 2, 3], k)
