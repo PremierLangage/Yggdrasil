@@ -40,7 +40,7 @@ var secOAM = board.create('sector',[O,A,M],{color:'orange'});
 ==
 
 question ==
-Sur le cercle unité ci-dessous, on a représenté l'angle $! (\overrightarrow{OA},\overrightarrow{OM}) !$ de mesure $! {{ angle|latex }} !$. En déduire le sinus et le cosinus de $! {{ angle|latex }} !$. 
+Sur le cercle trigonométrique ci-dessous, on a représenté l'angle $! (\overrightarrow{OA},\overrightarrow{OM}) !$ de mesure $! {{ angle|latex }} !$. En déduire le sinus et le cosinus de $! {{ angle|latex }} !$. 
 
 {{ jxg|html }}
 ==
