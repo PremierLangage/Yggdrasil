@@ -182,8 +182,8 @@ class JXGLine(JXGInput):
         """
         Evaluate the input field
         """
-        x0, y0 = self.get_point(self.pointnames[0])
-        x1, y1 = self.get_point(self.pointnames[1])
+        p0 = Point(*self.get_point(self.pointnames[0]))
+        p1 = Point(*self.get_point(self.pointnames[1]))
         from sympy import Point, Line
         psol0 = Point(*self.sol[0])
         psol1 = Point(*self.sol[1])
