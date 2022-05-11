@@ -31,7 +31,7 @@ f = interpolate(pts, x)
 expr = str(f).replace("**", "^")
 while True:
     a = randint(-4, 4)
-    sol = diff(f, x).evalf(subs={x:1.})
+    sol = diff(f, x).evalf(subs={x:a})
     if abs(sol) > 0.3:
         break
 
