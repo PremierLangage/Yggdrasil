@@ -201,9 +201,15 @@ class JXGLine(JXGInput):
             script = """
             pt1.setAttribute({color: 'green'});
             pt2.setAttribute({color: 'green'});
-            vec.setAttribute({color: 'green'});
+            line.setAttribute({color: 'green'});
             """
             self.add_script(script)
         else:
             x1, y1 = self.get_point(self.pointnames[0])
-            #self.add_script(script, {'x':self.sol[0], 'y':self.sol[1], 'x1':x1, 'y1':y1})
+            script = """
+            pt1.setAttribute({color: 'red'});
+            pt2.setAttribute({color: 'red'});
+            line.setAttribute({color: 'red'});
+            board.create('segment',[[{{x0}}, {{y0}}], [{{x1}}, {{y1}}]],{color:'green'});
+            """
+            self.add_script(script, {'x0':self.sol[0], 'y0':self.sol[0], 'x1':self.sol[1], 'y1':self.sol[1]})
