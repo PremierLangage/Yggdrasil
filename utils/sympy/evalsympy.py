@@ -828,7 +828,7 @@ def eval_numeric(strans, sol, tol=0.1, diffmeasure='AbsError'):
         ans = latex2sympy(strans)
     except:
         return (-1, "NotExpr")
-    if not ans.is_Float:
+    if not isinstance(ans, sp.Float):
         return (-1, "NotExpr")
     if diffmeasure == 'AbsError':
         diff = abs(sol - ans)
