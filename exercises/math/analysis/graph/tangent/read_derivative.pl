@@ -1,7 +1,8 @@
 extends = /model/math/expr.pl
 
 script ==
-board.create('functiongraph', [function(x){return {{ f }};},-5,5]);
+var f = board.create('functiongraph', [function(x){return {{ f }};}, -5, 5]);
+var t = board.create('tangent', [f], {dash:2, strokeColor:'#aa0000'});
 ==
 
 before ==
