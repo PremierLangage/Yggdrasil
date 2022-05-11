@@ -1,6 +1,8 @@
 extends = /model/math/expr.pl
 
 before ==
+from jxginput import JXGViewer()
+
 from plmpl import fig2svg, easyplot
 import matplotlib.pyplot as plt
 from math import floor, ceil
