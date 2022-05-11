@@ -30,7 +30,7 @@ pts = choice([[(-5, 2), (-1, 3), (1, 0), (4, -3)], [(-5, -1), (-1, -2), (2, 3), 
 f = interpolate(pts, x)
 
 df = diff(f, x)
-val = df.evalf(1)
+val = df.evalf(subs={x:1.})
 jxg = JXGViewer()
 xA, yA = randint(-5, 5), randint(-5, 5)
 xB, yB = randint(-5, 5), randint(-5, 5)
