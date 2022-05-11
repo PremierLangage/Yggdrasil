@@ -1,4 +1,4 @@
-extends = /model/math/numeric.pl
+extends = /model/jxg/line.pl
 
 
 jxgscript == #|js|
@@ -31,20 +31,5 @@ tol = 0.1S
 
 question ==
 On considère la fonction $! f !$ dont le graphe est tracé ci-desssous. En utilisant l'outil graphique qui affiche la tangente à la courbe, déterminer une valeur approchée de $! f( {{a}} ) !$ (à 15% près).
-{{ jxg|html }}
-==
-
-style.jxgcss ==
-<style>
-.jsxgraph-component {
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-    border: 1px solid;
-}
-</style>
-==
-
-prefix ==
-$! f( {{a}} ) \approx !$
+{{ slope }}
 ==
