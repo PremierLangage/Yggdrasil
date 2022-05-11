@@ -130,7 +130,7 @@ for q in [0, 1, 2, 3]:
 question ==
 {{ f }}
 {{ val }}
-Déterminer les coordoonées du vecteur représenté ci-dessous.
+En utilisant l'outil graphique qui affiche la tangente à la courbe, déterminer une valeur approchée de $! f( {{a}} ) !$.
 {{ jxg|html }}
 ==
 
