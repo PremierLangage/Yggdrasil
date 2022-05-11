@@ -28,7 +28,7 @@ input = JXGLine()
 
 process ==
 input.set_attributes(attributes)
-input.evalparam = {'tol': tol}
+input.evalparam = {'tol': 0.1}
 input.pointnames = pointnames
 input.set_script(jxgscript, globals())
 ==
