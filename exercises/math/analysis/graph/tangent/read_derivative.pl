@@ -5,6 +5,20 @@ board.create('functiongraph', [function(x){return x**2;},-5,5]);
 ==
 
 before ==
+from jxginput import JXGViewer
+jxg = JXGViewer()
+xA, yA = randint(-5, 5), randint(-5, 5)
+xB, yB = randint(-5, 5), randint(-5, 5)
+sol = (xB-xA, yB-yA)
+jxg.set_attributes(attributes)
+jxg.set_script(script, globals())
+sol = 0
+==
+
+attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
+
+
+before2 ==
 from jxginput import JXGViewer()
 
 from plmpl import fig2svg, easyplot
