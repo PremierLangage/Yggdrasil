@@ -1,7 +1,7 @@
 extends = /model/math/expr.pl
 
 script ==
-board.create('functiongraph', [function(x){return {{ f}};},-5,5]);
+board.create('functiongraph', [function(x){return {{ f }};},-5,5]);
 ==
 
 before ==
