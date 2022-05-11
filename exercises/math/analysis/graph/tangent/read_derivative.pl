@@ -1,9 +1,9 @@
 extends = /model/math/expr.pl
 
 script ==
-var sf = board.jc.snippet('-x^3', true, 'x', true);
-var f = board.create('functiongraph', [sf]);
-var g = board.create('glider', [0, 0, f], {name:'',style:8});
+var f = board.jc.snippet('{{ f }}', true, 'x', true);
+var c = board.create('functiongraph', [f, -5, 5]);
+var g = board.create('glider', [0, 0, c], {name:'',style:8});
 var t = board.create('tangent', [g], {dash:2,strokeColor:'#aa0000'});
 
 ==
