@@ -3,9 +3,8 @@ extends = /model/math/expr.pl
 script ==
 var f = board.jc.snippet('{{ expr }}', true, 'x', true);
 var c = board.create('functiongraph', [f, -5, 5]);
-var g = board.create('glider', [0, 0, c], {name:'',style:8});
-var t = board.create('tangent', [g], {dash:2,strokeColor:'#aa0000'});
-
+var g = board.create('glider', [0, 0, c], {name:'',style:8, strokeColor:blue});
+var t = board.create('tangent', [g], {dash:2,strokeColor:'blue'});
 ==
 
 before ==
