@@ -184,8 +184,10 @@ class JXGLine(JXGInput):
         """
         x0, y0 = self.get_point(self.pointnames[0])
         x1, y1 = self.get_point(self.pointnames[1])
-        xsol0, ysol0 = self.sol[0]
-        xsol1, ysol1 = self.sol[1]
+        from sympy import Point, Line
+        psol0 = Point(*self.sol[0])
+        psol1 = Point(*self.sol[1])
+        linesol = Line(psol0, psol1)
         tol = self.evalparam.get('tol', 0.1)
         if hypot(xx0-xsol0, yy0-ysol0) < tol and hypot(xx1-xsol1, yy1-ysol1) < tol :
             self.score = 100
