@@ -824,8 +824,6 @@ def eval_interval(strans, sol):
 
 
 def eval_numeric(strans, sol, tol=0.1, diffmeasure='AbsError'):
-    diffmeasure = self.evalparam.get('diffmeasure', 'AbsError')
-    tol = self.evalparam.get('tol', 0)
     try:
         ans = latex2sympy(strans)
     except:
