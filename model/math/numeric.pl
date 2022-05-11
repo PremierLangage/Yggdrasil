@@ -6,6 +6,8 @@ extends = /model/math/input0.pl
 # Specific keys
 
 input_type = "numeric"
+tol = 0.1
+diffmeasure = "RelError"
 
 evalparam ==
 from sympy import sympify
