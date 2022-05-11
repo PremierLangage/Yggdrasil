@@ -9,10 +9,7 @@ var line = board.create('line', [pt1, pt2], {color:'blue'});
 ==
 
 before ==
-from jxginput import JXGViewer
-from math import floor, ceil
 from sympy.polys.polyfuncs import interpolate
-import numpy as np
 
 var('x')
 
@@ -24,10 +21,6 @@ while True:
     sol = diff(f, x).evalf(subs={x:a})
     if abs(sol) > 0.3:
         break
-
-jxg = JXGViewer()
-jxg.set_attributes(attributes)
-jxg.set_script(script, globals())
 ==
 
 attributes = {"showNavigation": True, "boundingbox":[-5, 5, 5, -5]}
