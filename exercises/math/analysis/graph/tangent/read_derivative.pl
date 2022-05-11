@@ -105,12 +105,19 @@ for q in [0, 1, 2, 3]:
 ==
 
 question ==
-{{ f }}
-On considère la fonction $! f !$ dont le graphe est tracé ci-desssous.
-<div class="img w60">
-{{ image }}
-</div>
-Sélectionner les propositions qui sont vraies dans la liste ci-dessous.
+Déterminer les coordoonées du vecteur représenté ci-dessous.
+{{ jxg|html }}
+==
+
+style.jxgcss ==
+<style>
+.jsxgraph-component {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid;
+}
+</style>
 ==
 
 prefix ==
