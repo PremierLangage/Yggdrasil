@@ -22,7 +22,7 @@ while True:
     if abs(sol) > 0.3:
         break
 
-sol = [a, f.evalf(subs={x:a})], [a+1, f.evalf(subs={x:a}) + slope]
+sol = [[a, f.evalf(subs={x:a})], [a+1, f.evalf(subs={x:a}) + slope]]
 ==
 
 attributes = {"showNavigation": True, "boundingbox":[-5, 5, 5, -5]}
