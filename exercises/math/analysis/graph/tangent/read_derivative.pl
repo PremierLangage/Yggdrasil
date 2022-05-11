@@ -12,7 +12,6 @@ xB, yB = randint(-5, 5), randint(-5, 5)
 sol = (xB-xA, yB-yA)
 jxg.set_attributes(attributes)
 jxg.set_script(script, globals())
-sol = 0
 ==
 
 attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
