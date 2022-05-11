@@ -15,17 +15,6 @@ import numpy as np
 
 var('x')
 
-# lst = []
-# for i in range(200):
-#     x0, x1, x2, x3 = randint(-5, -4), randint(-2,-1), randint(1,2), randint(4,5)
-#     y0, y1, y2, y3 = randint(-4, 4), randint(-4, 4), randint(-4, 4), randint(-4, 4)
-#     f = interpolate([(x0, y0), (x1, y1), (x2, y2), (x3, y3)], x)
-#     minf, maxf = minmax(f, -5, 5)
-#     if minf > -4.5 and maxf < 4.5 and maxf-minf > 7:
-#         lst.append([(x0, y0), (x1, y1), (x2, y2), (x3, y3)])
-#     if len(lst)==10:
-#         break
-
 pts = choice([[(-5, 2), (-1, 3), (1, 0), (4, -3)], [(-5, -1), (-1, -2), (2, 3), (5, -2)], [(-5, -2), (-1, 2), (1, -2), (5, 1)], [(-5, 4), (-2, -4), (2, 1), (5, 1)], [(-4, -4), (-1, -2), (2, 1), (4, 3)], [(-4, -1), (-1, 2), (2, 1), (5, 4)], [(-4, 3), (-2, 2), (1, -3), (5, 2)], [(-5, -4), (-1, 3), (1, 3), (5, -2)], [(-4, -4), (-1, -3), (2, 0), (5, 4)], [(-4, 1), (-1, 3), (2, -2), (5, 1)]])
 f = interpolate(pts, x)
 expr = str(f).replace("**", "^")
