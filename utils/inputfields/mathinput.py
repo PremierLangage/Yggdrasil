@@ -1,6 +1,7 @@
 from uuid import uuid4
-from evalsympy import eval_expr, eval_complex, eval_poly, eval_set, eval_tuple, eval_interval, eval_chainineq
-from evalsympy import eval_numeric, eval_matrix
+from evalsympy import eval_expr, val_numeric, eval_complex, eval_poly, eval_set, eval_tuple
+from sympy import eval_interval, eval_chainineq
+from evalsympy import eeval_matrix
 from sympy import Matrix
 from jinja2 import Template
 from serializable import Serializable
