@@ -187,7 +187,7 @@ class JXGLine(JXGInput):
         xsol0, ysol0 = self.sol[0]
         xsol1, ysol1 = self.sol[1]
         tol = self.evalparam.get('tol', 0.1)
-        if hypot(x1-x0-xsol, y1-y0-ysol) < tol and :
+        if hypot(xx0-xsol0, yy0-ysol0) < tol and hypot(xx1-xsol1, yy1-ysol1) < tol :
             self.score = 100
         else:
             self.score = 0
