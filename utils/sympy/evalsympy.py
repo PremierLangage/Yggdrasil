@@ -826,15 +826,20 @@ def eval_interval(strans, sol):
 def eval_numeric(strans, sol, evalparam):
     diffmeasure = self.evalparam.get('diffmeasure', 'AbsError')
     tol = self.evalparam.get('tol', 0)
+    try:
+        ans = latex2sympy(strans, local_dict)
+    except:
+        return (-1, "NotExpr")
+    if not ans.is_FLoat:
+        return (-1, "NotExpr")
+
     if diffmeasure == 'AbsError':
-        diff = abs(self.sol - self.data['value'])
+        diff = abs(sol - ans)
     elif diffmeasure == 'RelError':
-        diff = abs(self.sol - self.data['value'])/abs(self.sol)
-    if diff <= tol:
-        self.score = 100
-    else:
-        self.score = 0
-    return self.score
+        diff = abs(sol-ans)/abs(sol)
+    if diff <= tol:        
+        return (0, "NotEqual")
+    return (100, "Success")
 
 from sympy.physics.units import Quantity, convert_to
 
