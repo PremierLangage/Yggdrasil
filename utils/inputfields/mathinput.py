@@ -1,6 +1,6 @@
 from uuid import uuid4
 from evalsympy import eval_expr, eval_complex, eval_poly, eval_set, eval_tuple, eval_interval, eval_chainineq
-from evalsympy import eval_matrix
+from evalsympy import eval_numeric, eval_matrix
 from sympy import Matrix
 from jinja2 import Template
 from serializable import Serializable
@@ -69,6 +69,8 @@ class MathInput(Serializable):
         """Evaluate the input field according to its type."""
         if self.type == "expr":
             score, error = eval_expr(self.value, self.sol, **self.evalparam)
+        elif self.type == "numeric":
+            score, error = eval_numeric(self.value, self.sol, **self.evalparam)
         elif self.type == "complex":
             score, error = eval_complex(self.value, self.sol, **self.evalparam)
         elif self.type == "poly":
