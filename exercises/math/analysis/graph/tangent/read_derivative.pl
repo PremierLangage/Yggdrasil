@@ -1,7 +1,8 @@
 extends = /model/math/expr.pl
 
 script ==
-var f = board.create('functiongraph', [function(x){return  0 + (- x**3) ;}, -5, 5]);
+var sf = board.jc.snippet("- x**3", true, 'x', true);
+var f = board.create('functiongraph', [sf, -5, 5]);
 var g = board.create('glider', [0, 0, f], {name:'',style:8});
 var t = board.create('tangent', [g], {dash:2,strokeColor:'#aa0000'});
 
