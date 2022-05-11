@@ -827,7 +827,7 @@ def eval_numeric(strans, sol, evalparam):
     diffmeasure = self.evalparam.get('diffmeasure', 'AbsError')
     tol = self.evalparam.get('tol', 0)
     try:
-        ans = latex2sympy(strans, local_dict)
+        ans = latex2sympy(strans)
     except:
         return (-1, "NotExpr")
     if not ans.is_FLoat:
