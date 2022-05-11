@@ -128,6 +128,7 @@ for q in [0, 1, 2, 3]:
 ==
 
 question ==
+{{ f }}
 {{ val }}
 Déterminer les coordoonées du vecteur représenté ci-dessous.
 {{ jxg|html }}
