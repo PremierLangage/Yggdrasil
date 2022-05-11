@@ -834,7 +834,7 @@ def eval_numeric(strans, sol, tol=0.1, diffmeasure='AbsError'):
         diff = abs(sol - ans)
     elif diffmeasure == 'RelError':
         diff = abs(sol-ans)/abs(sol)
-    if diff <= tol:        
+    if diff > tol:        
         return (0, "NotEqual")
     return (100, "Success")
 
