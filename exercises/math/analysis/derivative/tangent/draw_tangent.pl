@@ -18,8 +18,8 @@ f = interpolate(pts, x)
 expr = str(f).replace("**", "^")
 while True:
     a = randint(-4, 4)
-    sol = diff(f, x).evalf(subs={x:a})
-    if abs(sol) > 0.3:
+    slope = diff(f, x).evalf(subs={x:a})
+    if abs(slope) > 0.3:
         break
 
 sol = [[a, f.evalf(subs={x:a})], [a+1, f.evalf(subs={x:a}) + slope]]
