@@ -1,7 +1,6 @@
 extends = /model/math/checkbox.pl
 
 before ==
-from sympy2latex import sympy2latex
 from plmpl import fig2svg, easyplot
 import matplotlib.pyplot as plt
 from math import floor, ceil
