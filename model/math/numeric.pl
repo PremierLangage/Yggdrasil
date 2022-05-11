@@ -9,6 +9,6 @@ input_type = "numeric"
 
 evalparam ==
 from sympy import sympify
-input.evalparam = {}
+input.evalparam = {'tol':tol}
 ==
 
