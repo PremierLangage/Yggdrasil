@@ -1,4 +1,4 @@
-extends = /model/math/expr.pl
+extends = /model/math/numeric.pl
 
 script ==
 var f = board.jc.snippet('{{ expr }}', true, 'x', true);
