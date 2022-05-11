@@ -1,7 +1,6 @@
 extends = /model/math/expr.pl
 
 script ==
-
 board.create('functiongraph', [function(x){return x**2;},-5,5]);
 ==
 
