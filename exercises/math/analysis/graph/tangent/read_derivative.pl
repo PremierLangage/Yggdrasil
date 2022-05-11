@@ -86,6 +86,7 @@ for q in [0, 1, 2, 3]:
 ==
 
 question ==
+{{ f }}
 On considère la fonction $! f !$ dont le graphe est tracé ci-desssous.
 <div class="img w60">
 {{ image }}
