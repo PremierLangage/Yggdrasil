@@ -182,7 +182,7 @@ class JXGLine(JXGInput):
         """
         Evaluate the input field
         """
-            from sympy import Point, Line
+        from sympy import Point, Line
         p0 = Point(*self.get_point(self.pointnames[0]))
         p1 = Point(*self.get_point(self.pointnames[1]))
         linesol = Lineself.sol[0], self.sol[1])
