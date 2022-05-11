@@ -3,7 +3,7 @@ extends = /model/jxg/line.pl
 title = Tracer un vecteur
 
 before ==
-sol = sampleint(-5, 5, 2)
+sol = [[0,1], [3, 4]]
 ==
 
 attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
