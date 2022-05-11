@@ -189,7 +189,7 @@ class JXGLine(JXGInput):
         psol1 = Point(*self.sol[1])
         linesol = Line(psol0, psol1)
         tol = self.evalparam.get('tol', 0.1)
-        if hypot(xx0-xsol0, yy0-ysol0) < tol and hypot(xx1-xsol1, yy1-ysol1) < tol :
+        if p0.distance(linesol) < tol and p1.distance(linesol) < tol :
             self.score = 100
         else:
             self.score = 0
