@@ -2,7 +2,9 @@ extends = /model/math/expr.pl
 
 script ==
 var f = board.create('functiongraph', [function(x){return {{ f }};}, -5, 5]);
-var t = board.create('tangent', [f], {dash:2, strokeColor:'#aa0000'});
+var g = board.create('glider', [0,0,f], {name:'',style:8});
+var t = board.create('tangent', [g], {dash:2,strokeColor:'#aa0000'});
+
 ==
 
 before ==
