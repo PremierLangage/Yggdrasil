@@ -31,6 +31,7 @@ f = interpolate(pts, x)
 expr = str(f).replace("**", "^")
 df = diff(f, x)
 val = df.evalf(subs={x:1.})
+sol = val
 jxg = JXGViewer()
 xA, yA = randint(-5, 5), randint(-5, 5)
 xB, yB = randint(-5, 5), randint(-5, 5)
