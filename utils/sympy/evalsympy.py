@@ -823,18 +823,18 @@ def eval_interval(strans, sol):
     return (100, "Success")
 
 
-def eval_numeric(strans, sol):
-        diffmeasure = self.evalparam.get('diffmeasure', 'AbsError')
-        tol = self.evalparam.get('tol', 0)
-        if diffmeasure == 'AbsError':
-            diff = abs(self.sol - self.data['value'])
-        elif diffmeasure == 'RelError':
-            diff = abs(self.sol - self.data['value'])/abs(self.sol)
-        if diff <= tol:
-            self.score = 100
-        else:
-            self.score = 0
-        return self.score
+def eval_numeric(strans, sol, evalparam):
+    diffmeasure = self.evalparam.get('diffmeasure', 'AbsError')
+    tol = self.evalparam.get('tol', 0)
+    if diffmeasure == 'AbsError':
+        diff = abs(self.sol - self.data['value'])
+    elif diffmeasure == 'RelError':
+        diff = abs(self.sol - self.data['value'])/abs(self.sol)
+    if diff <= tol:
+        self.score = 100
+    else:
+        self.score = 0
+    return self.score
 
 from sympy.physics.units import Quantity, convert_to
 
