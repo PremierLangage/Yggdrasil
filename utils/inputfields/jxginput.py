@@ -185,7 +185,7 @@ class JXGLine(JXGInput):
         from sympy import Point, Line
         p0 = Point(*self.get_point(self.pointnames[0]))
         p1 = Point(*self.get_point(self.pointnames[1]))
-        linesol = Lineself.sol[0], self.sol[1])
+        linesol = Line(self.sol[0], self.sol[1])
         tol = self.evalparam.get('tol', 0.1)
         if p0.distance(linesol) < tol and p1.distance(linesol) < tol :
             self.score = 100
