@@ -14,7 +14,7 @@ jxg.set_attributes(attributes)
 jxg.set_script(script, globals())
 ==
 
-attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
+attributes = {"showNavigation": False, "boundingbox":[-5, 5, 5, -5]}
 
 
 before2 ==
