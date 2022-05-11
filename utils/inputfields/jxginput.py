@@ -206,10 +206,4 @@ class JXGLine(JXGInput):
             self.add_script(script)
         else:
             x1, y1 = self.get_point(self.pointnames[0])
-            script = """
-            pt1.setAttribute({color: 'red'});
-            pt2.setAttribute({color: 'red'});
-            vec.setAttribute({color: 'red'});
-            board.create('segment',[pt1, [{{x1}} + {{x}}, {{y1}} + {{y}}]],{color:'green', lastArrow: {type: 2, size: 6}});
-            """
-            self.add_script(script, {'x':self.sol[0], 'y':self.sol[1], 'x1':x1, 'y1':y1})
+            #self.add_script(script, {'x':self.sol[0], 'y':self.sol[1], 'x1':x1, 'y1':y1})
