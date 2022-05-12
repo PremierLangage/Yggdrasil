@@ -9,3 +9,9 @@ introduction ==
 - Déterminer le point d’intersection de deux droites sécantes
 
 ==
+
+@ /exercises/math/geometry/lines/equation/from_2pts.pl
+
+@ /exercises/math/geometry/lines/equation/from_1pt_dirvec.pl
+
+@ /exercises/math/geometry/lines/equation/from_1pt_slope.pl
