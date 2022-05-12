@@ -8,7 +8,8 @@ a = choice([1, 2, Rational(1, 2), Rational(1, 3)])
 b = choice([1, 2, 3, 4)
 f = choice([a*x**3+b*x, a*x**3+b*x**2 ])
 x0 = randint(-2, 2)
-
+dfx0 = diff(f, x).subs(x, x0)
+sol = simplify(f.subs(x, x0) + dfx0*(x-x0))
 ==
 
 question ==
