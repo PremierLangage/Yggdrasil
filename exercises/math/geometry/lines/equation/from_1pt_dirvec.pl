@@ -5,10 +5,10 @@ from sympy import Line
 xA, yA = randint(-3, 3), randint(-3, 3)
 while True:
     vx, vy = randint(-3, 3), randint(-3, 3)
-    if (xA, yA) != (0, 0):
+    if (vx, vy) != (0, 0):
         break
 
-line = Line((xA, yA), (xB, yB))  
+line = Line((xA, yA), (xA+vx, yA+vy))  
 sol = line.equation()
 ==
 
