@@ -37,7 +37,8 @@ def eval_ans(strans, sol):
         ans = sp.Line(ans)
     except:
         return (0, "NotLineEq")
-
+    if not sp.Line(sp.Eq(sol,0)).equals(ans):
+        return (0, "NotEq", ans.equation(), sp.Line(sp.Eq(sol,0)).equation() )
     return (100, "Success")
 
 score, error = eval_ans(input.value, sol)
