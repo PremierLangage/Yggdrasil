@@ -25,7 +25,7 @@ while True:
     if abs(slope) > 0.3:
         break
 
-approx_dfxa = slope.round(2)
+approx_dfxa = slope.round(1)
 sol = [[a, f.evalf(subs={x:a})], [a+1, f.evalf(subs={x:a}) + slope]]
 ==
 
