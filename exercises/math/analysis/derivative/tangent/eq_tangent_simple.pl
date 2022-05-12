@@ -14,7 +14,7 @@ sol = simplify(f.subs(x, x0) + dfx0*(x-x0))
 
 question ==
 {{sol|latex }}
-Soit la fonction $! f: x \mapsto {{ f }} !$. Déterminer l'équation de la tangente à la courbe représentative de $! f !$ au point d'abscisse $! {{ x0 }} !$.
+Soit la fonction $! f: x \mapsto {{ f|latex }} !$. Déterminer l'équation de la tangente à la courbe représentative de $! f !$ au point d'abscisse $! {{ x0 }} !$.
 ==
 
 prefix ==
