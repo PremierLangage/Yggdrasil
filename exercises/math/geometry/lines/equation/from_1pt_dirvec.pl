@@ -2,9 +2,8 @@ extends = equation_.pl
 
 before ==
 from sympy import Line
-var('x')
+xA, yA = randint(-3, 3), randint(-3, 3)
 while True:
-    xA, yA = randint(-3, 3), randint(-3, 3)
     xB, yB = randint(-3, 3), randint(-3, 3)
     if (xA, yA) != (xB, yB):
         break
