@@ -46,7 +46,7 @@ feedback = message[error]
 solution = str(eq1)+"  "+str(eq2)
 ==
 
-solution2 ==
+solution ==
 Une équation de cette droite est : $${{ sol|latex }} = 0.$$
 ==
 
