@@ -4,8 +4,8 @@ before ==
 from sympy import Line
 xA, yA = randint(-3, 3), randint(-3, 3)
 while True:
-    xB, yB = randint(-3, 3), randint(-3, 3)
-    if (xA, yA) != (xB, yB):
+    vx, vy = randint(-3, 3), randint(-3, 3)
+    if (xA, yA) != (0, 0):
         break
 
 line = Line((xA, yA), (xB, yB))  
