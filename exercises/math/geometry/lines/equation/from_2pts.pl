@@ -45,4 +45,4 @@ feedback = message[error]
 
 message.NotEq = "La réponse doit être une équation."
 
-message.NotLinEq = "La réponse n'est pas une équation de droite."
+message.NotLineEq = "La réponse n'est pas une équation de droite."
