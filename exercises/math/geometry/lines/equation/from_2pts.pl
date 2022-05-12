@@ -29,7 +29,7 @@ def eval_ans(strans, sol):
         p = strans.split('=')
         if len(p) != 2:
             return (-1, "NotEq")
-        ans = sp.Eq(latex2sympy(p[0]), latex2sympy(p[0]))
+        ans = sp.Eq(latex2sympy(p[0]), latex2sympy(p[1]))
     except:
         return (-1, "NotEq")
     try:
