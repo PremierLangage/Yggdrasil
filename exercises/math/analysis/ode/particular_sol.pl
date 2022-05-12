@@ -27,7 +27,7 @@ def eval_ans(strans, sol):
     try:
 	    res = sp.checkodesol(expr, ans)
     except:
-        return (-1, "NotExpr)
+        return (-1, "NotExpr")
     if not res[0]:
 	    return (0, "NotSol")
     return (100, "Success")
