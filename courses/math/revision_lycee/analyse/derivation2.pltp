@@ -7,3 +7,5 @@ Objectif :
 - Construire la tangente en un point à une courbe représentative connaissant le nombre dérivé.
 - Déterminer l’équation de la tangente en un point à la courbe représentative d’une fonction.
 ==
+
+@ /exercises/math/analysis/derivative/tangent/draw_tangent.pl
