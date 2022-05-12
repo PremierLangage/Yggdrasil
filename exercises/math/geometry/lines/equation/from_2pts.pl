@@ -16,6 +16,7 @@ sol = line.equation()
 ==
 
 question ==
+{{ sol }}
 Déterminer une équation de la droite passant par $! ({{xA}}, {{yA}}) !$ et $! ({{xB}}, {{yB}}) !$.
 ==
 
@@ -35,7 +36,9 @@ def eval_ans(strans, sol):
     try:
         ans = sp.Line(ans)
     except:
-        return (-1, "NotLineEq")
+        return (0, "NotLineEq")
+    if not Line(Eq(sol,0)).equals(ans):
+        return (0, "NotEq")
     return (100, "Success")
 
 score, error = eval_ans(input.value, sol)
