@@ -40,7 +40,7 @@ def eval_ans(strans, sol):
 
 score, error = eval_ans(input.value, sol)
 feedback = message[error]
-
+score = 1/
 ==
 
 message.NotEq = "La réponse doit être une équation."
