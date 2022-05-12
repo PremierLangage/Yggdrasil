@@ -1,5 +1,7 @@
 extends = /model/math/numeric.pl
 
+title = Déterminer graphiquement un nombre dérivé
+
 script ==
 var f = board.jc.snippet('{{ expr }}', true, 'x', true);
 var c = board.create('functiongraph', [f, -5, 5]);
