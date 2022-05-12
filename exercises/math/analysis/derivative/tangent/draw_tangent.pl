@@ -25,6 +25,7 @@ while True:
     if abs(slope) > 0.3:
         break
 
+approx_dfxa = slope.round(2)
 sol = [[a, f.evalf(subs={x:a})], [a+1, f.evalf(subs={x:a}) + slope]]
 ==
 
@@ -33,5 +34,5 @@ attributes = {"showNavigation": True, "boundingbox":[-5, 5, 5, -5]}
 tol = 0.15
 
 question ==
-On considère la fonction $! f !$ dont le graphe est tracé ci-desssous (en bleu). Tracer la tangente à cette courbe au point d'abscisse $!{{a}} !$ sachant que $! f'( {{a}} ) \approx !$. Pour tracer la tangente, on déplacera la droite noire à l'aide des deux points de contrôle.
+On considère la fonction $! f !$ dont le graphe est tracé ci-desssous (en bleu). Tracer la tangente à cette courbe au point d'abscisse $!{{a}} !$ sachant que $! f'( {{a}} ) \approx {{approx_dfxa}} !$. Pour tracer la tangente, on déplacera la droite noire à l'aide des deux points de contrôle.
 ==
