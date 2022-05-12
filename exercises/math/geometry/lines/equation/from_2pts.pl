@@ -38,14 +38,14 @@ def eval_ans(strans, sol):
     except:
         return (0, "NotLineEq")
     if sp.Line(sp.Eq(sol,0)) != ans:
-        return (0, "NotEq")
+        return (0, "NotEq", ans.equation(), sp.Line(sp.Eq(sol,0)).equation() )
     return (100, "Success")
 
 score, error = eval_ans(input.value, sol)
 feedback = message[error]
 ==
 
-solution ==
+solution2 ==
 Une équation de cette droite est : $${{ sol|latex }} = 0.$$
 ==
 
