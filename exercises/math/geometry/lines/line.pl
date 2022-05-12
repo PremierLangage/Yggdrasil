@@ -12,7 +12,7 @@ sol = [[0,b], [a+b, b]]
 ==
 
 
-text ==
+question ==
 Tracer la droite d'équation $! y = {{f|latex}} !$.
 ==
 
