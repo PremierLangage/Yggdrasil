@@ -16,7 +16,6 @@ sol = line.equation()
 ==
 
 question ==
-{{ sol }}
 Déterminer une équation de la droite passant par $! ({{xA}}, {{yA}}) !$ et $! ({{xB}}, {{yB}}) !$.
 ==
 
