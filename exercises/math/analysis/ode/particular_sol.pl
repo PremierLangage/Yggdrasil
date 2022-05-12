@@ -25,11 +25,11 @@ def eval_ans(strans, sol):
     except:
         return (-1, "NotExpr")
     try:
-	res = sp.checkodesol(expr, ans)
+	    res = sp.checkodesol(expr, ans)
     except:
         return (-1, "NotExpr)
     if not res[0]:
-	return (0, "NotSol")
+	    return (0, "NotSol")
     return (100, "Success")
 
 score, error = eval_ans(inputfield.value, sol)
