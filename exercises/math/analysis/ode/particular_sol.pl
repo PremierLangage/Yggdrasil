@@ -4,7 +4,7 @@ title = Déterminer une solution particulière
 
 before ==
 var('t')
-
+y = Symbols('y', cls=Function)
 expr = y(t).diff(t) + a*y(t) + b
 ==
 
