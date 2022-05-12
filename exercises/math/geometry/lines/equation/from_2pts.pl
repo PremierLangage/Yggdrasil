@@ -6,8 +6,8 @@ before ==
 from sympy import Line
 var('x')
 while True:
-    xA, yA = randint(-5, 5), randint(-5, 5)
-    xB, yB = randint(-5, 5), randint(-5, 5)
+    xA, yA = randint(-3, 3), randint(-3, 3)
+    xB, yB = randint(-3, 3), randint(-3, 3)
     if (xA, yA) != (xB, yB):
         break
 
