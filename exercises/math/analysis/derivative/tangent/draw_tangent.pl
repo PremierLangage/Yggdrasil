@@ -33,5 +33,4 @@ tol = 0.1S
 
 question ==
 On considère la fonction $! f !$ dont le graphe est tracé ci-desssous. En utilisant l'outil graphique qui affiche la tangente à la courbe, déterminer une valeur approchée de $! f( {{a}} ) !$ (à 15% près).
-{{ slope }} {{sol}}
 ==
