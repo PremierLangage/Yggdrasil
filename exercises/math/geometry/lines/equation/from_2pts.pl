@@ -46,7 +46,7 @@ feedback = message[error]
 ==
 
 solution ==
-$${{ sol|latex }} = 0 $$
+Une équation de cette droite est : $${{ sol|latex }} = 0.$$
 ==
 
 message.NotEq = "La réponse doit être une équation."
