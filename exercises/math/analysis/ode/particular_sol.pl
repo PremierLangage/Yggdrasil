@@ -19,7 +19,7 @@ evaluator ==
 import sympy as sp
 from latex2sympy import latex2sympy
 
-def eval_ans(strans, sol):
+def eval_ans(strans, expr):
     try:
         ans = latex2sympy(strans)
     except:
@@ -32,7 +32,7 @@ def eval_ans(strans, sol):
 	    return (0, "NotSol")
     return (100, "Success")
 
-score, error = eval_ans(input.value, sol)
+score, error = eval_ans(input.value, expr)
 feedback = message[error]
 ==
 
