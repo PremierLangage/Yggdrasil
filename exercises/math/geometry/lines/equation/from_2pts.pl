@@ -12,7 +12,7 @@ while True:
         break
 
 line = Line((xA, yA), (xB, yB))  
-sol = Line.equation()
+sol = line.equation()
 ==
 
 question ==
