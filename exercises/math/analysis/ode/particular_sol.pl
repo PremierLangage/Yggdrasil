@@ -3,6 +3,7 @@ extends = /model/math/input_eval.pl
 title = Déterminer une solution particulière
 
 before ==
+from sympy import Function
 var('t')
 y = Symbol('y', cls=Function)
 expr = y(t).diff(t) + a*y(t) + b
