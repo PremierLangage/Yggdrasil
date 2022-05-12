@@ -6,9 +6,9 @@ jxgscript == #|js|
 var f = board.jc.snippet('{{ expr }}', true, 'x', true);
 var c = board.create('functiongraph', [f, -5, 5]);
 
-var pt1 = board.create('point', [-2, -2], {color:'blue', name: 'A', size: 0.5, withLabel: false});
-var pt2 = board.create('point', [2, 2], {color:'blue', name: 'B', size: 0.5, withLabel: false});
-var line = board.create('line', [pt1, pt2], {color:'blue'});
+var pt1 = board.create('point', [-2, -2], {color:'back', name: 'A', size: 0.5, withLabel: false});
+var pt2 = board.create('point', [2, 2], {color:'black', name: 'B', size: 0.5, withLabel: false});
+var line = board.create('line', [pt1, pt2], {color:'black'});
 ==
 
 before ==
@@ -33,5 +33,5 @@ attributes = {"showNavigation": True, "boundingbox":[-5, 5, 5, -5]}
 tol = 0.15
 
 question ==
-On considère la fonction $! f !$ dont le graphe est tracé ci-desssous. En utilisant l'outil graphique qui affiche la tangente à la courbe, déterminer une valeur approchée de $! f( {{a}} ) !$ (à 15% près).
+On considère la fonction $! f !$ dont le graphe est tracé ci-desssous (en bleu). Tracer la tangente à cette courbe au point d'abscisse $!{{a}} !$ sachant que $! f'( {{a}} ) \approx !$. Pour tracer la tangente, on déplacera la droite noire à l'aide des deux points de contrôle.
 ==
