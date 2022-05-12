@@ -2,7 +2,6 @@ extends = /model/jxg/line.pl
 
 title = Tracer une tangente
 
-
 jxgscript == #|js|
 var f = board.jc.snippet('{{ expr }}', true, 'x', true);
 var c = board.create('functiongraph', [f, -5, 5]);
