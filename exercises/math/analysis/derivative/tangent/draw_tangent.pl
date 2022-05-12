@@ -6,7 +6,7 @@ jxgscript == #|js|
 var f = board.jc.snippet('{{ expr }}', true, 'x', true);
 var c = board.create('functiongraph', [f, -5, 5]);
 
-var pt1 = board.create('point', [-2, -2], {color:'back', name: 'A', size: 0.8, withLabel: false});
+var pt1 = board.create('point', [-2, -2], {color:'black', name: 'A', size: 0.8, withLabel: false});
 var pt2 = board.create('point', [2, 2], {color:'black', name: 'B', size: 0.8, withLabel: false});
 var line = board.create('line', [pt1, pt2], {color:'black'});
 ==
