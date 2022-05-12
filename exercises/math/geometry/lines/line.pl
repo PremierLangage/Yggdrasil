@@ -4,7 +4,7 @@ title = Tracer un vecteur
 
 
 before ==
-a = randint(-4,4,[0])
+a = choice([-1, 1])*choice([1, 2, 3, Rational(1,2), Rational(1,3), Rational(3,2)])
 b = randint(-4,4,[0])
 var('x')
 f = a*x+b
