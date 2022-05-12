@@ -5,7 +5,7 @@ title = Tracer un vecteur
 
 before ==
 a = choice([-1, 1])*choice([1, 2, 3, Rational(1,2), Rational(1,3), Rational(3,2)])
-b = randint(-4,4,[0])
+b = randint(-3, 3,[0])
 var('x')
 f = a*x+b
 sol = [[0,b], [a+b, b]]
