@@ -5,6 +5,20 @@ title = Tracer un vecteur
 before ==
 sol = [[0,1], [3, 4]]
 ==
+before ==
+a=randint(-4,4,[0])
+b=randint(-4,4,[0])
+x=symbols('x')
+f=a*x+b
+
+sol = [[0,b], [a+b, b]]
+==
+
+
+text ==
+Tracer la droite d'équation $! y = {{f|latex}} !$.
+==
+
 
 attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
 
