@@ -4,11 +4,10 @@ title = Tracer un vecteur
 
 
 before ==
-a=randint(-4,4,[0])
-b=randint(-4,4,[0])
-x=symbols('x')
-f=a*x+b
-
+a = randint(-4,4,[0])
+b = randint(-4,4,[0])
+x = symbols('x')
+f = a*x+b
 sol = [[0,b], [a+b, b]]
 ==
 
