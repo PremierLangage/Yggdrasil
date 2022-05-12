@@ -2,9 +2,7 @@ extends = /model/jxg/line.pl
 
 title = Tracer un vecteur
 
-before ==
-sol = [[0,1], [3, 4]]
-==
+
 before ==
 a=randint(-4,4,[0])
 b=randint(-4,4,[0])
