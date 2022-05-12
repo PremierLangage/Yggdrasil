@@ -42,8 +42,7 @@ def eval_ans(strans, sol):
     return (100, "Success")
 
 score, error = eval_ans(input.value, sol)
-feedback = error
-#solution = str(eq1)+"  "+str(eq2)
+feedback = message[error]
 ==
 
 solution ==
