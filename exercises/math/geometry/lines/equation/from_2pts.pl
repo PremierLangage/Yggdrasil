@@ -41,8 +41,9 @@ def eval_ans(strans, sol):
         return (0, "NotEq", ans.equation(), sp.Line(sp.Eq(sol,0)).equation() )
     return (100, "Success")
 
-score, error = eval_ans(input.value, sol)
+score, error, eq1, eq2 = eval_ans(input.value, sol)
 feedback = message[error]
+solution = str(eq1)+"  "+str(eq2)
 ==
 
 solution2 ==
