@@ -1,5 +1,6 @@
 extends = /model/jxg/line.pl
 
+title = Déterminer graphiquement un nombre dérivé
 
 jxgscript == #|js|
 var f = board.jc.snippet('{{ expr }}', true, 'x', true);
