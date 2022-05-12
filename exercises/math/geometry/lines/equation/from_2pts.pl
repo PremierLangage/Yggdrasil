@@ -3,6 +3,7 @@ extends = /model/math/expr.pl
 title = Déterminer une équation d'une droite
 
 before ==
+from sympy import Line
 var('x')
 while True:
     xA, yA = randint(-5, 5), randint(-5, 5)
