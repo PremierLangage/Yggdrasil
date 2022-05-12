@@ -36,7 +36,7 @@ attributes = {"showNavigation": True, "boundingbox":[-5, 5, 5, -5]}
 tol = 0.15
 
 question ==
-On considère la fonction $! f !$ dont le graphe est tracé ci-desssous. En utilisant l'outil graphique qui affiche la tangente à la courbe, déterminer une valeur approchée de $! f( {{a}} ) !$ (à 15% près).
+On considère la fonction $! f !$ dont la courbe représentative est tracée ci-desssous. En utilisant l'outil graphique qui affiche la tangente à la courbe, déterminer une valeur approchée de $! f( {{a}} ) !$ (à 15% près).
 <br><br>
 {{ jxg|html }}
 ==
