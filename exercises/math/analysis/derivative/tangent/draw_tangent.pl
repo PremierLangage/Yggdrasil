@@ -20,7 +20,7 @@ pts = choice([[(-5, 2), (-1, 3), (1, 0), (4, -3)], [(-5, -1), (-1, -2), (2, 3), 
 f = interpolate(pts, x)
 expr = str(f).replace("**", "^")
 while True:
-    a = randint(-4, 4)
+    a = randint(-3, 3)
     slope = diff(f, x).evalf(subs={x:a})
     if abs(slope) > 0.3:
         break
