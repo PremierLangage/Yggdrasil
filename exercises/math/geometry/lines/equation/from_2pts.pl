@@ -1,4 +1,4 @@
-extends = /model/math/input_eval.pl
+extends = equation_.pl
 
 title = Déterminer une équation d'une droite
 
