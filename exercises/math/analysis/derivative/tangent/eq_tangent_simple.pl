@@ -5,7 +5,7 @@ title = Déterminer l'équation d'une tangente
 before ==
 var('x')
 a = choice([1, 2, Rational(1, 2), Rational(1, 3)])
-b = choice([1, 2, 3, 4)
+b = choice([1, 2, 3, 4])
 f = choice([a*x**3+b*x, a*x**3+b*x**2 ])
 x0 = randint(-2, 2)
 dfx0 = diff(f, x).subs(x, x0)
