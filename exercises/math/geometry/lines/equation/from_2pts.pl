@@ -45,5 +45,9 @@ score, error = eval_ans(input.value, sol)
 feedback = message[error]
 ==
 
+solution ==
+$${{ sol|latex }} = 0 $$
+==
+
 message.NotEq = "La réponse doit être une équation."
 message.NotLineEq = "La réponse n'est pas une équation de droite."
