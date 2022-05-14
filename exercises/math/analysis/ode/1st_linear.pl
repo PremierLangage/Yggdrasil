@@ -10,7 +10,8 @@ var('k')
 y = symbols('y', cls=Function)
 a = randint(-3, 3, [0])
 b = randint(-3, 3, [0])
-expr = y(t).diff(t) + a*y(t) + b
+rhs = a*y(t) + b
+expr = y(t).diff(t) - rhs
 y0 = randint(-2, 2)
 ==
 
