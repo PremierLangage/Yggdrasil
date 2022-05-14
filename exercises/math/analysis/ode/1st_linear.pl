@@ -16,7 +16,9 @@ y0 = randint(-2, 2)
 ==
 
 question ==
-Considérons l'équation $! y'(t) =  {{rhs|latex}} !$
+Considérons l'équation différentielle
+
+$$ y'(t) =  {{rhs|latex}} $$
 ==
 
 inputblock ==
