@@ -18,6 +18,15 @@ question ==
 Considérons l'équation $! {{expr|latex}} !$
 ==
 
+inputblock ==
+1. Déterminer une solution particulière constante.
+{{ inputs[0]|html }}
+2. Déterminer une solution générale
+{{ inputs[1]|html }}
+3. Déterminer la solution telle que {{y0}}
+{{ inputs[2]|html }}
+==
+
 
 evaluator ==#|py|
 
