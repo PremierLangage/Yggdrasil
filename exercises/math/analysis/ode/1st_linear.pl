@@ -27,7 +27,9 @@ inputblock ==
 {{ inputs[2]|html }}
 ==
 
+solution ==
 
+==
 evaluator ==#|py|
 
 import sympy as sp
