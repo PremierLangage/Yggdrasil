@@ -3,7 +3,7 @@ extends = /model/math/multimathinput.pl
 title = Déterminer une solution particulière
 
 before ==
-inputs = [MathInput() for _ in range(3)]
+inputs = [MathInput(type="expr") for _ in range(3)]
 from sympy import Function
 var('t')
 var('k')
