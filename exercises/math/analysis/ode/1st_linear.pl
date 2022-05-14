@@ -19,7 +19,7 @@ Considérons l'équation
 inputblock ==
 1. Déterminer une solution particulière constante.
 {{ inputs[0]|html }}
-2. Déterminer une solution générale (
+2. Déterminer une solution générale
 {{ inputs[1]|html }}
 3. Déterminer la solution telle que 
 {{ inputs[2]|html }}
