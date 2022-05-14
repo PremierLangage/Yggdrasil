@@ -22,10 +22,10 @@ inputblock ==
 1. Déterminer une solution particulière constante de cette équation.<br><br>
 $! y_{p}(t) = !$ {{ inputs[0]|html }}
 <br><br>
-2. Déterminer une solution générale de cette équation. <br><br>
-$! y_{p}(t) = !$ {{ inputs[1]|html }}
+2. Déterminer une solution générale de cette équation. On utilisera la lettre $! k !$ pour désigner un paramètre réel libre.<br><br>
+$! y(t) = !$ {{ inputs[1]|html }}
 <br><br>
-3. Déterminer la solution telle que {{y0}}<br><br>
+3. Déterminer l'unique solution $g$ de cette équation telle que $! g(0) = {{y0|latex}} !$.<br><br>
 $! g(t) = !$ {{ inputs[2]|html }}
 ==
 
