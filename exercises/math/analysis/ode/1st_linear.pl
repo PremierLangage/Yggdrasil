@@ -19,10 +19,10 @@ Considérons l'équation $! {{expr|latex}} !$
 ==
 
 inputblock ==
-1. Déterminer une solution particulière constante.<br><br>
+1. Déterminer une solution particulière constante de cette équation.<br><br>
 {{ inputs[0]|html }}
 <br><br>
-2. Déterminer une solution générale<br><br>
+2. Déterminer une solution générale de cette équation. <br><br>
 {{ inputs[1]|html }}
 <br><br>
 3. Déterminer la solution telle que {{y0}}<br><br>
