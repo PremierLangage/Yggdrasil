@@ -22,7 +22,7 @@ from latex2sympy import latex2sympy
 
 def eval_ans(strans, expr):
     try:
-        ans = latex2sympy(strans)
+        ans = latex2sympy(strans, local_dict={'e':sp.E})
     except:
         return (-1, "NotExpr")
     try:
