@@ -77,12 +77,14 @@ def eval_expr(strans, sol, local_dict={'e':sp.E}):
         return (0, "NotGenSol")
     return (100, "Success")
 
-score, error = eval_ans(input.value, expr)
-feedback = error #message[error]
+
 
 for input in inputs:
     input.value = answers[input.id] # HACK
-    input.eval()
+    score, error = eval_ans(input.value, expr)
+    feedback = error #message[error]
+    input.feedback = feedback
+    input.score = score
 ==
 
 
