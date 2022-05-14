@@ -45,5 +45,3 @@ $! y'(t) = !$
 
 message.NotSol = "La réponse n'est pas une solution de l'équation."
 message.NotGenSol = "La réponse n'est pas une solution générale de l'équation."
-
-message.NotLinEq = "La réponse n'est pas une équation de droite."
