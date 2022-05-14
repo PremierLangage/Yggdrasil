@@ -14,7 +14,7 @@ y0 = randint(-2, 2)
 ==
 
 question ==
-Considérons l'équation
+Considérons l'équation $! {{expr|latex}} !$
 ==
 
 inputblock ==
