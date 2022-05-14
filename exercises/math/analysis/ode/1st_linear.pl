@@ -56,12 +56,12 @@ def eval_ans1(strans, expr):
         return (-1, "NotExpr")
     if not res[0]:
 	    return (0, str(res[1]))
-    y0 = ans.subs(t, 0)
-    if function_range(y0, k, sp.S.Reals) != sp.S.Reals:
+    ans0 = ans.subs(t, 0)
+    if function_range(ans0, k, sp.S.Reals) != sp.S.Reals:
         return (0, "NotGenSol")
     return (100, "Success")
 
-def eval_expr(strans, sol, local_dict={'e':sp.E}):
+def eval_ans2(strans, expr):
     try:
         ans = latex2sympy(strans, local_dict={'e':sp.E})
     except:
@@ -72,19 +72,30 @@ def eval_expr(strans, sol, local_dict={'e':sp.E}):
         return (-1, "NotExpr")
     if not res[0]:
 	    return (0, str(res[1]))
-    y0 = ans.subs(t, 0)
-    if function_range(y0, k, sp.S.Reals) != sp.S.Reals:
-        return (0, "NotGenSol")
+    ans0 = ans.subs(t, 0)
+    if sp.simplify(ans0-y0) != 0 :
+        return (0, "NotInitValue")
     return (100, "Success")
 
 
 
 for input in inputs:
     input.value = answers[input.id] # HACK
-    score, error = eval_ans(input.value, expr)
-    feedback = error #message[error]
-    input.feedback = feedback
-    input.score = score
+
+score, error = eval_ans0(inputs[0].value, expr)
+feedback = error #message[error]
+inputs[0].feedback = feedback
+inputs[0].score = score
+
+score, error = eval_ans1(inputs[1].value, expr)
+feedback = error #message[error]
+inputs[1].feedback = feedback
+inputs[1].score = score
+
+score, error = eval_ans1(inputs[2].value, expr)
+feedback = error #message[error]
+inputs[2].feedback = feedback
+inputs[2].score = score
 ==
 
 
