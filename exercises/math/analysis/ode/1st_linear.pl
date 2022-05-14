@@ -18,6 +18,7 @@ Déterminer une solution particulière $! {{ expr|latex }} = 0 !$.
 
 evaluator ==
 import sympy as sp
+from sympy.calculus.util import function_range
 from latex2sympy import latex2sympy
 
 def eval_ans(strans, expr):
@@ -32,7 +33,7 @@ def eval_ans(strans, expr):
     if not res[0]:
 	    return (0, str(res[1]))
     y0 = ans.subs(t, 0)
-    if sp.function_range(y0, k, sp.S.Reals) != sp.S.Reals:
+    if function_range(y0, k, sp.S.Reals) != sp.S.Reals:
         return (0, "NotGenSol")
     return (100, "Success")
 
