@@ -30,14 +30,14 @@ def eval_ans(strans, expr):
     except:
         return (-1, "NotExpr")
     if not res[0]:
-	    return (0, "NotSol")
+	    return (0, str(res[1]))
     y0 = ans.subs(t, 0)
     if sp.function_range(y0, k, sp.S.Reals) != sp.S.Reals:
         return (0, "NotGenSol")
     return (100, "Success")
 
 score, error = eval_ans(input.value, expr)
-feedback = message[error]
+feedback = error #message[error]
 ==
 
 prefix ==
