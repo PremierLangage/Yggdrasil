@@ -100,7 +100,7 @@ inputs[2].score = score
 ==
 
 
-evaluator ==
+evaluator2 ==
 import sympy as sp
 from sympy.calculus.util import function_range
 from latex2sympy import latex2sympy
