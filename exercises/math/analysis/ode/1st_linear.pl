@@ -20,13 +20,13 @@ Considérons l'équation $! {{expr|latex}} !$
 
 inputblock ==
 1. Déterminer une solution particulière constante de cette équation.<br><br>
-{{ inputs[0]|html }}
+$! y_{p}(t) = !$ {{ inputs[0]|html }}
 <br><br>
 2. Déterminer une solution générale de cette équation. <br><br>
-{{ inputs[1]|html }}
+$! y_{p}(t) = !$ {{ inputs[1]|html }}
 <br><br>
 3. Déterminer la solution telle que {{y0}}<br><br>
-{{ inputs[2]|html }}
+$! g(t) = !$ {{ inputs[2]|html }}
 ==
 
 solution ==
