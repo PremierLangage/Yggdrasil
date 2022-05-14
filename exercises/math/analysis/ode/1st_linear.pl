@@ -1,4 +1,4 @@
-extends = /model/math/input_eval.pl
+extends = /model/math/multimathinput.pl
 
 title = Déterminer une solution particulière
 
@@ -13,7 +13,14 @@ expr = y(t).diff(t) + a*y(t) + b
 ==
 
 question ==
-Déterminer une solution particulière $! {{ expr|latex }} = 0 !$.
+Considérons l'équation
+==
+
+inputblock ==
+1. Déterminer une solution particulière constante.
+{{ inputs[0]|html }}
+2. Déterminer une solution générale (
+{{ inputs[1]|html }}
 ==
 
 evaluator ==
