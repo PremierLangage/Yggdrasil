@@ -5,6 +5,7 @@ title = Déterminer une solution particulière
 before ==
 from sympy import Function
 var('t')
+var('k')
 y = symbols('y', cls=Function)
 a = randint(-3, 3, [0])
 b = randint(-3, 3, [0])
@@ -31,7 +32,7 @@ def eval_ans(strans, expr):
     if not res[0]:
 	    return (0, "NotSol")
     y0 = ans.subs(t, 0)
-    if sp.function_range(y0, t, sp.S.Reals) != sp.S.Reals:
+    if sp.function_range(y0, k, sp.S.Reals) != sp.S.Reals:
         return (0, "NotGenSol")
     return (100, "Success")
 
