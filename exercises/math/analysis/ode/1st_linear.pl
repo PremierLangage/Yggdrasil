@@ -99,7 +99,7 @@ feedback = error #message[error]
 inputs[1].feedback = feedback
 inputs[1].score = score
 
-score, error = eval_ans1(inputs[2].value, expr)
+score, error = eval_ans2(inputs[2].value, expr)
 feedback = error #message[error]
 inputs[2].feedback = feedback
 inputs[2].score = score
