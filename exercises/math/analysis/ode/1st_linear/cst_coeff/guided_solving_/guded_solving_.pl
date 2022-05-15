@@ -13,6 +13,7 @@ b = randint(-3, 3, [0])
 rhs = a*y(t) + b
 expr = y(t).diff(t) - rhs
 y0 = randint(-2, 2)
+sols = [-b, k*E**(-a*t)-b, E**(-a*t)-b]
 ==
 
 question ==
