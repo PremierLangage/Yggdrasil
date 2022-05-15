@@ -27,6 +27,7 @@ inputblock ==
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
+<td> {{inputs[1]|html}} </td>
 </tr>
 <tr>
 <td>&nbsp;</td>
