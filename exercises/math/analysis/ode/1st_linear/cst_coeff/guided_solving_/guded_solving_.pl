@@ -4,7 +4,7 @@ title = Résoudre une éq. diff. linéaire du 1er ordre
 
 before ==
 inputs = [MathInput(type="expr") for _ in range(3)]
-from sympy import Function, solveset
+from sympy import Function, solveset, Eq
 var('t')
 var('k')
 y = symbols('y', cls=Function)
