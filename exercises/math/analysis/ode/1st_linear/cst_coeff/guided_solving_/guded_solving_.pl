@@ -42,7 +42,7 @@ $! y_{p}(t) =  {{ sols[0]|latex }} !$
 $! y(t) = {{ sols[1]|latex }}!$
 <br><br>
 3. Unique solution $g$ de cette équation telle que $! g(0) = {{y0|latex}} !$.<br><br>
-$! g(t) = {{ sols[1]|latex }} !$
+$! g(t) = {{ sols[2]|latex }} !$
 ==
 
 evaluator ==#|py|
