@@ -9,6 +9,10 @@ before ==
 inputs = [MathInput() for _ in range(3)]
 ==
 
+solution ==
+
+==
+
 question ==
 Déterminer l'ensemble de définition (maximal) de la fonction 
 
