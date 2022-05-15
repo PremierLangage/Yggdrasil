@@ -8,7 +8,7 @@ var('k')
 y = symbols('y', cls=Function)
 a = randint(-3, 3, [0])
 b = randint(-3, 3, [0])
-b = randint(-3, 3, [0])
+c = randint(-3, 3, [0])
 rhs = a*y(t) + b * t + c
 expr = y(t).diff(t) - rhs
 psol = - b/a * t -c/a
