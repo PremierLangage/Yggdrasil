@@ -4,7 +4,7 @@ title = Résoudre une éq. diff. linéaire du 1er ordre
 
 before ==
 inputs = [MathInput(type="expr") for _ in range(3)]
-from sympy import Function
+from sympy import Function, solveset
 var('t')
 var('k')
 y = symbols('y', cls=Function)
@@ -13,7 +13,8 @@ b = randint(-3, 3, [0])
 rhs = a*y(t) + b
 expr = y(t).diff(t) - rhs
 y0 = randint(-2, 2)
-sols = [-b, k*E**(-a*t)-b, E**(-a*t)-b]
+k0 = solveset(Eq(k*E**(-a*t)-b, y0), k)[0]
+sols = [-b, k*E**(-a*t)-b, k0*E**(-a*t)-b]
 ==
 
 question ==
