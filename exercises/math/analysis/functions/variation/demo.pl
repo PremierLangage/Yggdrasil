@@ -20,7 +20,7 @@ $$f : x \mapsto {{ f|latex }}.$$
 ==
 
 inputblock ==
-<table border="1">
+<table border="0">
 <tbody>
 <tr>
 <td> {{inputs[0]|html}} </td>
