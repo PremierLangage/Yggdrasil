@@ -32,7 +32,7 @@ inputblock ==
 <tr>
 <td>&nbsp;</td>
 <td><svg width="100" height="100">
-  <line x1="0" y1="0" x2="100" y2="100" style="stroke:rgb(255,0,0);stroke-width:2" />
+  <line x1="0" y1="0" x2="100" y2="100" style="stroke:rgb(255,0,0);stroke-width:2" marker-end="url(#arrowhead)"/>
  </svg></td>
 <td>&nbsp;</td>
 <td><svg width="100" height="100">
