@@ -47,3 +47,16 @@ inputblock ==
 </tbody>
 </table>
 ==
+
+style.mathquillbis ==
+<style>
+
+.mq-editable-field {
+  min-width: 1em; 
+  font-size:14pt;
+  padding: 0.2em;
+}
+
+
+</style>
+==
