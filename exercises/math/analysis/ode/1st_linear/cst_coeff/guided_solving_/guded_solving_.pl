@@ -13,7 +13,7 @@ b = randint(-3, 3, [0])
 rhs = a*y(t) + b
 expr = y(t).diff(t) - rhs
 y0 = randint(-2, 2)
-k0 = solveset(Eq(k*E**(-a*t)-b, y0), k)[0]
+k0 = list(solveset(Eq(k*E**(-a*t)-b, y0), k))[0]
 sols = [-b, k*E**(-a*t)-b, k0*E**(-a*t)-b]
 ==
 
