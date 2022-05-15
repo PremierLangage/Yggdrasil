@@ -22,7 +22,7 @@ $$ y'(t) =  {{rhs|latex}} $$
 ==
 
 inputblock ==
-1. Déterminer une solution particulière de cette équation.<br><br>
+1. Déterminer une solution particulière de cette équation. {{ hint_particular }}<br><br>
 $! y_{p}(t) = !$ {{ inputs[0]|html }}
 <br><br>
 2. Déterminer une solution générale de cette équation. On utilisera la lettre $! k !$ pour désigner un paramètre réel libre.<br><br>
