@@ -38,8 +38,10 @@ inputblock ==
 <td><svg width="100" height="100">
   <line x1="0" y1="100" x2="100" y2="0" style="stroke:rgb(255,0,0);stroke-width:2" />
  </svg></td>
+ <td>&nbsp;</td>
 </tr>
 <tr>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
