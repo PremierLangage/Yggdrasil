@@ -65,6 +65,9 @@ def generate2():
     f1/f2,
     1/f2,
     1/f2]
+    expr = choice(lst_expr)
+
+    return expr.subs({'f1':generate(10, 2), 'f2':generate(11, 3)})
 
 sol = 0
 f = generate(3, 2)
