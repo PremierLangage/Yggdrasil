@@ -55,7 +55,7 @@ def generate(i, j):
     return f.subs(x, gx)
 
 sol = 0
-f = generate()
+f = generate(3, 2)
 ==
 
 question ==
