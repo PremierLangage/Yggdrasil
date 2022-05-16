@@ -4,7 +4,7 @@ before ==
 var('x')
 from sympy import sinh, cosh, tanh, asin, acos, atan
 
-def generate():
+def generate(i, j):
 
     a = 2
     a2 = 1
@@ -49,8 +49,8 @@ def generate():
     acos(x),
     atan(x)]
 
-    gx = choice(lst_g)
-    f = choice(lst_f)
+    gx = choice(lst_g[i])
+    f = choice(lst_f[j])
 
     return f.subs(x, gx)
 
