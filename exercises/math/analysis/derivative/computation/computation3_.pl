@@ -70,7 +70,7 @@ def generate2():
     return expr.subs({'f1':generate(10, 2), 'f2':generate(11, 3)})
 
 sol = 0
-f = generate(3, 2)
+f = generate2()
 ==
 
 question ==
