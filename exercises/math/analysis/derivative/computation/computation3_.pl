@@ -49,8 +49,8 @@ def generate(i, j):
     acos(x),
     atan(x)]
 
-    gx = choice(lst_g[i])
-    f = choice(lst_f[j])
+    gx = lst_g[i]
+    f = lst_f[j]
 
     return f.subs(x, gx)
 
