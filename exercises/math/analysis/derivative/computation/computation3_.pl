@@ -1,3 +1,4 @@
+extends = /model/math/expr.pl
 
 before ==
 var('x')
@@ -52,6 +53,9 @@ def generate()
     f = choice(lst_f)
 
     return f.subs(x, gx)
+
+sol = 0
+f = generate()
 ==
 
 
