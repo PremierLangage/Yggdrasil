@@ -59,7 +59,7 @@ f = generate()
 ==
 
 question ==
-{{ f|latex }}
+$! {{ f|latex }} !$
 ==
 
 wims ==
