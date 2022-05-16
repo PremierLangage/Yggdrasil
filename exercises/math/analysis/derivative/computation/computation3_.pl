@@ -4,7 +4,7 @@ before ==
 var('x')
 
 
-def generate()
+def generate():
 
     a = 2
     a2 = 1
