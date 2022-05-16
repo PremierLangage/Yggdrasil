@@ -27,26 +27,32 @@ a*x**3+b*x**2]
 
 % Création de l'expression f_i(g(x))
 
-\text{n=randint(4..8)}
-\rational{r=randitem(-1,1)*randitem(1/2,3/2,5/2,2/3,4/3,1/4,3/4,5/4,1/5,2/5,3/5)}
-\matrix{mf=(\gx)^\n
-1/(\gx)^\n
-(\gx)^(-\n)
-sqrt(\gx)
-1/sqrt(\gx)
-(\gx)^(\r)
-exp(\gx)
-ln(\gx)
-\c^(\gx)
-sin(\gx)
-cos(\gx)
-tan(\gx)
-sh(\gx)
-ch(\gx)
-th(\gx)
-arcsin(\gx)
-arccos(\gx)
-arctan(\gx)}
+c = 2
+n = randint(4,8)
+r = choice([-1,1])*choice([1/2,3/2,5/2,2/3,4/3,1/4,3/4,5/4,1/5,2/5,3/5])
+
+lst_g=[x**n,
+1/x**n,
+x**(-n),
+sqrt(x),
+1/sqrt(x),
+x**r,
+exp(x),
+ln(x),
+c**x,
+sin(x),
+cos(x),
+tan(x),
+sinh(x),
+cosh(x),
+tanh(x),
+asin(x),
+acos(x),
+atan(x)]
+==
+
+
+wims ==
 
 \text{fx=\mf[\typef;1]}
 
@@ -114,3 +120,4 @@ arctan(\gx)}
 \text{rrep=texmath(\rep)}
 \feedback{\delta<>0}{<br/>Votre réponse est \(\rrep\).<br/>
 La bonne réponse est \(\ddux\).}
+==
