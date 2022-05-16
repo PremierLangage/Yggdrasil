@@ -59,7 +59,7 @@ f = generate(3, 2)
 ==
 
 question ==
-$! {{ f|latex }} !$
+$! \displaystyle {{ f|latex }} !$
 ==
 
 wims ==
