@@ -3,52 +3,55 @@ before ==
 var('x')
 
 
-% Création des expressions de f_1(g_1(x)) et f_2(g_2(x))
+def generate()
 
-def 
+    a = 2
+    a2 = 1
+    a3 = 2
+    b = 1
+    b3 = 1
 
-\integer{a=randitem(-1,1)*randint(1..4)}
-\integer{b=randitem(-1,1)*randint(1..4)}
-\integer{c=randint(2..4)}
 
+    lst_g =[x,
+    x**2,
+    x**3,
+    a*x,
+    a2*x**2,
+    a*x**3,
+    a*x+b,
+    a3*x**2+b3,
+    a*x**3+b,
+    a*x**2+b*x,
+    a*x**3+b*x,
+    a*x**3+b*x**2]
 
-lst_g =[x,
-x**2,
-x**3,
-a*x,
-a2*x**2,
-a*x**3,
-a*x+b,
-a3*x**2+b3,
-a*x**3+b,
-a*x**2+b*x,
-a*x**3+b*x,
-a*x**3+b*x**2]
+    c = 2
+    n = randint(4,8)
+    r = choice([-1,1])*choice([1/2,3/2,5/2,2/3,4/3,1/4,3/4,5/4,1/5,2/5,3/5])
 
-% Création de l'expression f_i(g(x))
+    lst_g=[x**n,
+    1/x**n,
+    x**(-n),
+    sqrt(x),
+    1/sqrt(x),
+    x**r,
+    exp(x),
+    ln(x),
+    c**x,
+    sin(x),
+    cos(x),
+    tan(x),
+    sinh(x),
+    cosh(x),
+    tanh(x),
+    asin(x),
+    acos(x),
+    atan(x)]
 
-c = 2
-n = randint(4,8)
-r = choice([-1,1])*choice([1/2,3/2,5/2,2/3,4/3,1/4,3/4,5/4,1/5,2/5,3/5])
+    f = choice(lst_f)
+    gx = choice(lst_g)
 
-lst_g=[x**n,
-1/x**n,
-x**(-n),
-sqrt(x),
-1/sqrt(x),
-x**r,
-exp(x),
-ln(x),
-c**x,
-sin(x),
-cos(x),
-tan(x),
-sinh(x),
-cosh(x),
-tanh(x),
-asin(x),
-acos(x),
-atan(x)]
+    return 
 ==
 
 
