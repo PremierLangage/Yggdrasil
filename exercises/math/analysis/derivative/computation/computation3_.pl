@@ -54,6 +54,18 @@ def generate(i, j):
 
     return f.subs(x, gx)
 
+def generate2():
+    var('f1 f2')
+    
+    lst_expr=[f1 +choice([-1, 1])*f2,
+    f1 +choice([-1, 1])*f2,
+    f1*f2,
+    f1*f2,
+    f1/f2,
+    f1/f2,
+    1/f2,
+    1/f2]
+
 sol = 0
 f = generate(3, 2)
 ==
