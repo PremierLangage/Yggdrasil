@@ -58,6 +58,9 @@ sol = 0
 f = generate()
 ==
 
+question ==
+{{ f|latex }}
+==
 
 wims ==
 
