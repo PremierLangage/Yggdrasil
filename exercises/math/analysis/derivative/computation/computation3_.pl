@@ -30,7 +30,7 @@ def generate():
     n = randint(4,8)
     r = choice([-1,1])*choice([1/2,3/2,5/2,2/3,4/3,1/4,3/4,5/4,1/5,2/5,3/5])
 
-    lst_x=[x**n,
+    lst_f=[x**n,
     1/x**n,
     x**(-n),
     sqrt(x),
