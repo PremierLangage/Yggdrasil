@@ -2,7 +2,7 @@ extends = /model/math/expr.pl
 
 before ==
 var('x')
-
+from sympy import sinh, cosh, tanh, asin, acos, atan
 
 def generate():
 
