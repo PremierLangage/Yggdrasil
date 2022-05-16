@@ -69,8 +69,8 @@ def generate2():
 
     return expr.subs({'f1':generate(10, 2), 'f2':generate(11, 3)})
 
-sol = 0
 f = generate2()
+sol = diff(f,x)
 ==
 
 question ==
