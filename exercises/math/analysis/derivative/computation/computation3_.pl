@@ -29,6 +29,7 @@ def generate_fog(i, j):
     else:
         gx = lst_gx[i]
 
+
     c = 2
     n = randint(4,8)
     r = choice([-1,1])*choice([1/2,3/2,5/2,2/3,4/3,1/4,3/4,5/4,1/5,2/5,3/5])
@@ -52,7 +53,6 @@ def generate_fog(i, j):
     acos(x),
     atan(x)]
 
-    gx = lst_g[i]
     f = lst_f[j]
 
     return f.subs(x, gx)
