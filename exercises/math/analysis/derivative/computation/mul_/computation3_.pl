@@ -71,6 +71,7 @@ for ind in range(n):
 ==
 
 question ==
+Calculer les dérivées des fonctions suivantes.
 $! \displaystyle {{ f|latex }} !$
 ==
 
