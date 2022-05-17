@@ -1,6 +1,6 @@
 extends = /model/math/multimathinput.pl
 
-param.types = [[[1], [0]], [[3,4,6,7], [0]]]
+param.types = [[[1], [0], [3,4,6,7], [0]]]
 
 before ==
 n = len(param['types'])
@@ -77,9 +77,9 @@ def generate2(jj, kk):
 
 prefixes = []
 for ind in range(n):    
-    pf1, pf2 = param['types'][ind]
-    j1, j2 = choice(pf1[0]), choice(pf1[1])
-    k1, k2 = choice(pf2[0]), choice(pf2[1])
+    ii, jj, kk, ll = param['types'][ind]
+    j1, j2 = choice(ii), choice(jj)
+    k1, k2 = choice(kk), choice(ll)
     expr = generate2([j1, j2], [k1, k2])
     prefixes.append(f"$! \displaystyle {latex(expr)} = !$")
     inputs[ind].sol = diff(expr, x)
