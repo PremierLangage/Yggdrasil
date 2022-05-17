@@ -81,7 +81,7 @@ k1 = choice(kk)
 k2 = choice(kk)
 
 
-f = generate2()
+f = generate2(i, [j1, j2], [k1, k2])
 sol = diff(f, x)
 ==
 
