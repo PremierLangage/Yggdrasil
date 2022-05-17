@@ -65,7 +65,7 @@ for ind in range(n):
     ii, jj, kk, ll = param['types'][ind]
     j1, j2 = choice(ii), choice(jj)
     k1, k2 = choice(kk), choice(ll)
-    expr = generate_fog(j1, j2)/generate_fog(k1, k2)
+    expr = generate_fog(j1, j2) * generate_fog(k1, k2)
     prefixes.append(f"$! \displaystyle {latex(expr)} = !$")
     inputs[ind].sol = diff(expr, x)
 ==
