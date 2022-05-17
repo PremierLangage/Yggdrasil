@@ -1,4 +1,4 @@
-extends = /model/math/expr.pl
+extends = /model/math/multimathinput.pl
 
 param.types = [2, [6, 7, 8, 9], [0]]
 
