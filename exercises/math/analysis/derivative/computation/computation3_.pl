@@ -24,7 +24,7 @@ def generate(i, j):
     [a*x**3+b, a*x**3-b, b - a*x**3],
     [a*x+b*x, a*x-b*x, b*x - a*x],
     [a*x**2+b*x, a*x**2-b*x, b*x - a*x**2],
-    [a*x**3+b*x, a*x**3-b*x, b*x - a*x**3],
+    [a*x**3+b*x, a*x**3-b*x, b*x - a*x**3]]
 
     c = 2
     n = randint(4,8)
