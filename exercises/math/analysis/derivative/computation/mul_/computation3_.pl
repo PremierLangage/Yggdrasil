@@ -71,7 +71,7 @@ def generate2(jj, kk):
     f1/f2,
     1/f2,
     1/f2]
-    expr = lst_expr[2]
+    expr = f1*f2
 
     return expr.subs({'f1':generate_fog(jj[0], kk[0]), 'f2':generate_fog(jj[1], kk[1])})
 
