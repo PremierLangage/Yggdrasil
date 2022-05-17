@@ -75,6 +75,11 @@ def generate2():
     return expr.subs({'f1':generate(10, 2), 'f2':generate(11, 3)})
 
 ii, jj, kk = param['types']
+i = ii
+j1, j2 = sample(jj, 2)
+k1 = choice(kk)
+k2 = choice(kk)
+
 
 f = generate2()
 sol = diff(f, x)
