@@ -7,7 +7,7 @@ n = len(param['types'])
 inputs = [MathInput(type="expr") for _ in range(n)]
 
 var('x')
-from sympy import sinh, cosh, tanh, asin, acos, atan
+from sympy import sinh, cosh, tanh, asin, acos, atan, evaluate
 
 def generate_fog(i, j):
 
