@@ -10,10 +10,8 @@ def generate(i, j):
     a = randint(1, 3)
     ab= randint(1, 3)
     b = 1
-    b3 = 1
 
-
-    lst_g =[x,
+    lst_gx =[x,
     x**2,
     x**3,
     a0*x,
@@ -25,6 +23,11 @@ def generate(i, j):
     [a*x+b*x, a*x-b*x, b*x - a*x],
     [a*x**2+b*x, a*x**2-b*x, b*x - a*x**2],
     [a*x**3+b*x, a*x**3-b*x, b*x - a*x**3]]
+
+    if isinstance(lst_gx[i], list):
+        gx = choice(lst_gx[i])
+    else:
+        gx = lst_gx[i]
 
     c = 2
     n = randint(4,8)
