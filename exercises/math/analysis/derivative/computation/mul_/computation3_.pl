@@ -1,8 +1,9 @@
 extends = /model/math/multimathinput.pl
 
-param.types = [[2, [6, 7, 8, 9], [0]], [4, [6, 7, 8, 9], [0]], [6, [6, 7, 8, 9], [0]]]
+param.types = [[[1], [0]], [[1], [0]]]
 
 before ==
+n = len(param['types'])
 inputs = [MathInput(type="expr") for _ in range(3)]
 prefixes =["f_1", "f_2", "f_3"]
 
