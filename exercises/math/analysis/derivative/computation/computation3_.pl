@@ -4,7 +4,7 @@ before ==
 var('x')
 from sympy import sinh, cosh, tanh, asin, acos, atan
 
-def generate(i, j):
+def generate_fog(i, j):
 
     a0 = randint(2, 3)
     a = randint(1, 3)
