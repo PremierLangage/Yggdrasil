@@ -6,7 +6,7 @@ before ==
 var('x')
 from sympy import sinh, cosh, tanh, asin, acos, atan
 
-def generate_fog(i, j):
+def generate_fog(j, i):
 
     a0 = randint(2, 3)
     a = randint(1, 3)
@@ -59,7 +59,7 @@ def generate_fog(i, j):
 
     return f.subs(x, gx)
 
-def generate2():
+def generate2(i, jj, kk):
     var('f1 f2')
     
     lst_expr=[f1 +choice([-1, 1])*f2,
