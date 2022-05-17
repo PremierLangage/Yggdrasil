@@ -74,6 +74,8 @@ def generate2():
 
     return expr.subs({'f1':generate(10, 2), 'f2':generate(11, 3)})
 
+ii, jj, kk = param['types']
+
 f = generate2()
 sol = diff(f, x)
 ==
