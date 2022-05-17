@@ -68,7 +68,7 @@ for ind in range(n):
     with evaluate(False):
         expr = generate_fog(j1, j2)/generate_fog(k1, k2)
     prefixes.append(f"$! \displaystyle {latex(expr)} = !$")
-    inputs[ind].sol = diff(expr, x).collect()
+    inputs[ind].sol = diff(expr, x).factor()
 ==
 
 question ==
