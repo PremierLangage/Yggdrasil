@@ -1,6 +1,6 @@
 extends = /model/math/multimathinput.pl
 
-param.types = [[[1], [0]], [[1], [0]]]
+param.types = [[[1], [0]], [[3,4,6,7], [0]]]
 
 before ==
 n = len(param['types'])
@@ -78,7 +78,6 @@ def generate2(i, jj, kk):
 prefixes = []
 for ind in range(n):    
     ii, jj, kk = param['types'][ind]
-    i = ii
     j1, j2 = sample(jj, 2)
     k1 = choice(kk)
     k2 = choice(kk)
