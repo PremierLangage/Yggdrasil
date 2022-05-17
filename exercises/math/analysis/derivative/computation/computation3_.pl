@@ -80,16 +80,14 @@ def generate2(i, jj, kk):
 for ind in range(n):
     
     prefixes.append(f"$! \displaystyle {latex(expr)} = !$")
-    inputs[i].sol = simplify(sol)
+    
     ii, jj, kk = param['types'][ind]
     i = ii
     j1, j2 = sample(jj, 2)
     k1 = choice(kk)
     k2 = choice(kk)
     expr = generate2(i, [j1, j2], [k1, k2])
-
-f = 
-sol = diff(f, x)
+    inputs[i].sol = diff(expr, x)
 ==
 
 question ==
