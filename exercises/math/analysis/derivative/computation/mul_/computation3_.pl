@@ -1,6 +1,6 @@
 extends = /model/math/multimathinput.pl
 
-param.types = [[[0], [0], [5, 6], [0]]]
+param.types = [[[0], [0], [5, 6, 8, 9], [0]]]
 
 before ==
 n = len(param['types'])
