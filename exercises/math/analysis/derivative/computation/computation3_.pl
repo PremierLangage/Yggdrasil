@@ -77,7 +77,7 @@ def generate2(i, jj, kk):
 
     return expr.subs({'f1':generate_fog(jj[0], kk[0]), 'f2':generate_fog(jj[1], kk[1])})
 
-for ind in range(n):
+for ind in range(3):
     
     prefixes.append(f"$! \displaystyle {latex(expr)} = !$")
     
