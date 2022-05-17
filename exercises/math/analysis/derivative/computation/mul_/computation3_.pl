@@ -9,31 +9,7 @@ inputs = [MathInput(type="expr") for _ in range(n)]
 var('x')
 from sympy import sinh, cosh, tanh, asin, acos, atan
 
-def generate_fog(j, i):
-
-    a0 = randint(2, 3)
-    a = randint(1, 3)
-    ab= randint(1, 3)
-    b = 1
-
-    lst_gx =[x,
-    x**2,
-    x**3,
-    a0*x,
-    a0*x**2,
-    a0*x**3,
-    [a*x+b, a*x-b, b - a*x],
-    [a*x**2+b, a*x**2-b, b - a*x**2],
-    [a*x**3+b, a*x**3-b, b - a*x**3],
-    [a*x+b*x, a*x-b*x, b*x - a*x],
-    [a*x**2+b*x, a*x**2-b*x, b*x - a*x**2],
-    [a*x**3+b*x, a*x**3-b*x, b*x - a*x**3]]
-
-    if isinstance(lst_gx[i], list):
-        gx = choice(lst_gx[i])
-    else:
-        gx = lst_gx[i]
-
+def generate_fog(i, j):
 
     c = 2
     n = randint(4,8)
@@ -56,7 +32,30 @@ def generate_fog(j, i):
     acos(x),
     atan(x)]
 
-    f = lst_f[j]
+    f = lst_f[i]
+
+
+    a0 = randint(2, 3)
+    a = randint(1, 3)
+    b= randint(1, 3)
+
+    lst_gx =[x,
+    x**2,
+    x**3,
+    a0*x,
+    a0*x**2,
+    a0*x**3,
+    [a*x+b, a*x-b, b - a*x],
+    [a*x**2+b, a*x**2-b, b - a*x**2],
+    [a*x**3+b, a*x**3-b, b - a*x**3],
+    [a*x+b*x, a*x-b*x, b*x - a*x],
+    [a*x**2+b*x, a*x**2-b*x, b*x - a*x**2],
+    [a*x**3+b*x, a*x**3-b*x, b*x - a*x**3]]
+
+    if isinstance(lst_gx[j], list):
+        gx = choice(lst_gx[j])
+    else:
+        gx = lst_gx[j]
 
     return f.subs(x, gx)
 
