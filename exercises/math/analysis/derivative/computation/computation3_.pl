@@ -86,7 +86,7 @@ for ind in range(3):
     k2 = choice(kk)
     expr = generate2(i, [j1, j2], [k1, k2])
     prefixes.append(f"$! \displaystyle {latex(expr)} = !$")
-    inputs[i].sol = diff(expr, x)
+    inputs[ind].sol = diff(expr, x)
 ==
 
 question ==
