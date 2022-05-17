@@ -4,8 +4,7 @@ param.types = [[[1], [0]], [[1], [0]]]
 
 before ==
 n = len(param['types'])
-inputs = [MathInput(type="expr") for _ in range(3)]
-prefixes =["f_1", "f_2", "f_3"]
+inputs = [MathInput(type="expr") for _ in range(n)]
 
 var('x')
 from sympy import sinh, cosh, tanh, asin, acos, atan
