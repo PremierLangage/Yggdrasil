@@ -1,5 +1,7 @@
 extends = /model/math/expr.pl
 
+param.types = [2, [6, 7, 8, 9], [0]]
+
 before ==
 var('x')
 from sympy import sinh, cosh, tanh, asin, acos, atan
