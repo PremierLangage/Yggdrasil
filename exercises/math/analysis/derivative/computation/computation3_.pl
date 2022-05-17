@@ -72,7 +72,7 @@ def generate2(i, jj, kk):
     1/f2]
     expr = choice(lst_expr)
 
-    return expr.subs({'f1':generate(jj[0], kk[0]), 'f2':generate(jj[1], kk[1])})
+    return expr.subs({'f1':generate_fog(jj[0], kk[0]), 'f2':generate_fog(jj[1], kk[1])})
 
 ii, jj, kk = param['types']
 i = ii
