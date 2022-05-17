@@ -1,6 +1,6 @@
 extends = /model/math/multimathinput.pl
 
-param.types = [2, [6, 7, 8, 9], [0]]
+param.types = [[2, [6, 7, 8, 9], [0]], [4, [6, 7, 8, 9], [0]], [6, [6, 7, 8, 9], [0]]]
 
 before ==
 inputs = [MathInput(type="expr") for _ in range(3)]
@@ -77,14 +77,18 @@ def generate2(i, jj, kk):
 
     return expr.subs({'f1':generate_fog(jj[0], kk[0]), 'f2':generate_fog(jj[1], kk[1])})
 
-ii, jj, kk = param['types']
-i = ii
-j1, j2 = sample(jj, 2)
-k1 = choice(kk)
-k2 = choice(kk)
+for ind in range(n):
+    
+    prefixes.append(f"$! \displaystyle {latex(expr)} = !$")
+    inputs[i].sol = simplify(sol)
+    ii, jj, kk = param['types'][ind]
+    i = ii
+    j1, j2 = sample(jj, 2)
+    k1 = choice(kk)
+    k2 = choice(kk)
+    expr = generate2(i, [j1, j2], [k1, k2])
 
-
-f = generate2(i, [j1, j2], [k1, k2])
+f = 
 sol = diff(f, x)
 ==
 
