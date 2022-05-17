@@ -6,8 +6,8 @@ from sympy import sinh, cosh, tanh, asin, acos, atan
 
 def generate(i, j):
 
-    a = 2
-    a2 = 1
+    a0 = randint(2, 3)
+    a = randint(1, 3)
     a3 = 2
     b = 1
     b3 = 1
@@ -16,10 +16,10 @@ def generate(i, j):
     lst_g =[x,
     x**2,
     x**3,
-    a*x,
-    a2*x**2,
-    a*x**3,
-    a*x+b,
+    a0*x,
+    a0*x**2,
+    a0*x**3,
+    [a*x+b, a*x-b, b - a*x],
     a3*x**2+b3,
     a*x**3+b,
     a*x**2+b*x,
