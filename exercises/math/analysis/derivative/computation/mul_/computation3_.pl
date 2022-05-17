@@ -79,7 +79,7 @@ prefixes = []
 for ind in range(n):    
     pf1, pf2 = param['types'][ind]
     j1, j2 = choice(pf1[0]), choice(pf1[1])
-    k1, k2 = choice(pf1[0]), choice(pf1[1])
+    k1, k2 = choice(pf2[0]), choice(pf2[1])
     expr = generate2([j1, j2], [k1, k2])
     prefixes.append(f"$! \displaystyle {latex(expr)} = !$")
     inputs[ind].sol = diff(expr, x)
