@@ -60,7 +60,7 @@ def generate_fog(j, i):
 
     return f.subs(x, gx)
 
-def generate2(i, jj, kk):
+def generate2(jj, kk):
     var('f1 f2')
     
     lst_expr=[f1 +choice([-1, 1])*f2,
@@ -71,17 +71,17 @@ def generate2(i, jj, kk):
     f1/f2,
     1/f2,
     1/f2]
-    expr = lst_expr[i]
+    expr = lst_expr[2]
 
     return expr.subs({'f1':generate_fog(jj[0], kk[0]), 'f2':generate_fog(jj[1], kk[1])})
 
 prefixes = []
 for ind in range(n):    
-    ii, jj, kk = param['types'][ind]
+    pf1, pf2 = param['types'][ind]
     j1, j2 = sample(jj, 2)
     k1 = choice(kk)
     k2 = choice(kk)
-    expr = generate2(i, [j1, j2], [k1, k2])
+    expr = generate2([j1, j2], [k1, k2])
     prefixes.append(f"$! \displaystyle {latex(expr)} = !$")
     inputs[ind].sol = diff(expr, x)
 ==
