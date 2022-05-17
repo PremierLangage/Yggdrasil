@@ -8,7 +8,7 @@ def generate(i, j):
 
     a0 = randint(2, 3)
     a = randint(1, 3)
-    a3 = 2
+    ab= randint(1, 3)
     b = 1
     b3 = 1
 
