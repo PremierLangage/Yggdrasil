@@ -1,11 +1,8 @@
-extends = /model/math/multimathinput.pl
+extends = /model/math/expr.pl
 
-param.types = [[[0], [0], [4, 5, 7, 8], [0]]]
+param.types = [[0], [0], [4, 5, 7, 8], [0]]
 
 before ==
-n = len(param['types'])
-inputs = [MathInput(type="expr") for _ in range(n)]
-
 var('x')
 from sympy import sinh, cosh, tanh, asin, acos, atan
 
