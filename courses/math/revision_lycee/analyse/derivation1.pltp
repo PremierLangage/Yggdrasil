@@ -4,6 +4,8 @@ introduction ==
 Objectif :
 
 * Calculer  la  dérivée  d’une  fonction  donnée  par  une  formule  simple  mettant  en  jeu opérations algébriques et composition
+
+Fonctions de référence : $! \sin(x) !$, $! \cos(x) !$, $! \exp(x) !$, $! \ln(x) !$,  $! x^n !$ avec $!n \in \mathbb{Z} !$, $! \sqrt{x} !$.
 ==
 
 @ /exercises/math/analysis/derivative/computation/mul_/poly_esincosln.pl
