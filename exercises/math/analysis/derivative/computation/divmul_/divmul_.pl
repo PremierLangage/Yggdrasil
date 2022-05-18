@@ -78,7 +78,11 @@ def generate_fog(i, j):
 ii, jj, kk, ll = param['types']
 j1, j2 = choice(ii), choice(jj)
 k1, k2 = choice(kk), choice(ll)
-f = generate_fog(j1, j2) * generate_fog(k1, k2)
+if param['operation'] == "mul":
+    f = generate_fog(j1, j2) * generate_fog(k1, k2)
+else:
+    f = generate_fog(j1, j2) / generate_fog(k1, k2)
+
 
 sol = diff(f, x).factor()
 ==
