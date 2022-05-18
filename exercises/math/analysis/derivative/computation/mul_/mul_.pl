@@ -80,8 +80,8 @@ for ind in range(n):
 ==
 
 question ==
-On considère
-$! \displaystyle {{ f|latex }} !$
+Calculer la dérivée de la fonction $! f : {{ fdomain|latex }} \rightarrow \mathbb{R} !$ définie par
+$$ f (x) = {{ f|latex }}.$$
 ==
 
 wims ==
