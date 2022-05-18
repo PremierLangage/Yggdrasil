@@ -84,6 +84,10 @@ Calculer la dérivée de la fonction $! f : {{ fdomain|latex }} \rightarrow \mat
 $$ f (x) = {{ f|latex }}.$$
 ==
 
+prefix ==
+$! f'(x) = !$
+==
+
 wims ==
 
 \text{fx=\mf[\typef;1]}
