@@ -1,6 +1,6 @@
 extends = /model/math/expr.pl
 
-param.types = [[0], [0], [4, 5, 7, 8], [0]]
+param.types = [[0], [0], [5, 6, 8, 9], [0]]
 
 before ==
 var('x')
