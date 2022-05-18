@@ -8,9 +8,6 @@ extends = /model/math/multimathinput.pl
 param.types = [[[0], [0], [4, 5, 7, 8], [0]]]
 
 before ==
-n = len(param['types'])
-inputs = [MathInput(type="expr") for _ in range(n)]
-
 var('x')
 from sympy import sinh, cosh, tanh, asin, acos, atan, evaluate
 
@@ -20,7 +17,20 @@ def generate_fog(i, j):
     n = randint(4,8)
     r = choice([-1,1])*choice([1/2,3/2,5/2,2/3,4/3,1/4,3/4,5/4,1/5,2/5,3/5])
 
-    lst_f=[x**n,
+    a = randint(1, 3)
+    b = randint(1, 3)
+
+    lst_poly1 = [[a*x+b, a*x-b, b - a*x],
+    [a*x**2+b, a*x**2-b, b - a*x**2],
+    [a*x**3+b, a*x**3-b, b - a*x**3],
+    [a*x**2+b*x, a*x**2-b*x, b*x - a*x**2],
+    [a*x**3+b*x, a*x**3-b*x, b*x - a*x**3]]
+
+    poly1 = choice(choice(lst_poly1))
+
+    lst_f=[poly1,
+    x**randint(1, 3),
+    x**randint(4, 8),
     x**(-n),
     x**r,
     sqrt(x),
@@ -42,7 +52,7 @@ def generate_fog(i, j):
 
     a0 = randint(2, 3)
     a = randint(1, 3)
-    b= randint(1, 3)
+    b = randint(1, 3)
 
     lst_gx =[x,
     x**2,
@@ -53,7 +63,6 @@ def generate_fog(i, j):
     [a*x+b, a*x-b, b - a*x],
     [a*x**2+b, a*x**2-b, b - a*x**2],
     [a*x**3+b, a*x**3-b, b - a*x**3],
-    [a*x+b*x, a*x-b*x, b*x - a*x],
     [a*x**2+b*x, a*x**2-b*x, b*x - a*x**2],
     [a*x**3+b*x, a*x**3-b*x, b*x - a*x**3]]
 
@@ -64,16 +73,13 @@ def generate_fog(i, j):
 
     return f.subs(x, gx)
 
+  
+ii, jj, kk, ll = param['types']
+j1, j2 = choice(ii), choice(jj)
+k1, k2 = choice(kk), choice(ll)
+f = generate_fog(j1, j2) / generate_fog(k1, k2)
 
-prefixes = []
-for ind in range(n):    
-    ii, jj, kk, ll = param['types'][ind]
-    j1, j2 = choice(ii), choice(jj)
-    k1, k2 = choice(kk), choice(ll)
-    with evaluate(False):
-        expr = generate_fog(j1, j2)/generate_fog(k1, k2)
-    prefixes.append(f"$! \displaystyle {latex(expr)} = !$")
-    inputs[ind].sol = diff(expr, x).factor()
+sol = diff(f, x).factor()
 ==
 
 question ==
