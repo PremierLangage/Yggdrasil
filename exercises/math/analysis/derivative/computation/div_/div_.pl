@@ -1,3 +1,8 @@
+# D. Doyen
+# 18/5/22
+# derivation
+# Calculer la dérivée d'un quotient de fonctions
+
 extends = /model/math/multimathinput.pl
 
 param.types = [[[0], [0], [4, 5, 7, 8], [0]]]
