@@ -2,6 +2,7 @@ extends = /model/math/expr.pl
 
 title = Calculer la dérivée d'une fonction
 
+param.operation = "mul"
 param.types = [[0], [0], [5, 6, 8, 9], [0]]
 
 # Paramètres
