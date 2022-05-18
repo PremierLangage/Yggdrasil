@@ -4,7 +4,7 @@ param.types = [[0], [0], [4, 5, 7, 8], [0]]
 
 before ==
 var('x')
-from sympy import sinh, cosh, tanh, asin, acos, atan
+from sympy import sinh, cosh, tanh, asin, acos, atan, evaluate
 
 def generate_fog(i, j):
 
@@ -72,7 +72,8 @@ def generate_fog(i, j):
 ii, jj, kk, ll = param['types']
 j1, j2 = choice(ii), choice(jj)
 k1, k2 = choice(kk), choice(ll)
-f = generate_fog(j1, j2) * generate_fog(k1, k2)
+with evaluate(False):
+    f = generate_fog(j1, j2) * generate_fog(k1, k2)
 
 sol = diff(f, x).factor()
 ==
