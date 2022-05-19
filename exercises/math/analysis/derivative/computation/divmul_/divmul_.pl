@@ -93,7 +93,8 @@ while True:
     if param['operation'] == "mul":
         f = f1*f2
     else:
-        f = choice([f1/f2, f2/f1])
+        with evaluate(False):
+            f = choice([f1/f2, f2/f1])
 
     sol = diff(f, x).factor()
     try:
