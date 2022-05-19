@@ -2,7 +2,7 @@ extends= /model/basic/checkbox_rw.pl
 
  
 question==
-Quelles phrases sont vraies ?
+Quelles phrases sont vraies?
 ==
  
 
