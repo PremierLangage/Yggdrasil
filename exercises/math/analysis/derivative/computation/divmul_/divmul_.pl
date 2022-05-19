@@ -78,24 +78,26 @@ def generate_fog(i, j):
 ii, jj, kk, ll = param['types']
 j1, j2 = choice(ii), choice(jj)
 k1, k2 = choice(kk), choice(ll)
-if param['operation'] == "mul":
-    f = generate_fog(j1, j2) * generate_fog(k1, k2)
-else:
-    f = generate_fog(j1, j2) / generate_fog(k1, k2)
-
-try:
-    domain = continuous_domaine(f, x, S.Reals)
-    sol = diff(f, x).factor()
-    domain = continuous_domaine(sol, x, domain)
-    if domain == S.Reals:
-        domain = "R"
-    elif domain == EmptySet():
-        domain = "empty"
+while True:
+    if param['operation'] == "mul":
+        f = generate_fog(j1, j2) * generate_fog(k1, k2)
     else:
-        domain = "I"
-except:
-    domain = "I"
+        f = generate_fog(j1, j2) / generate_fog(k1, k2)
 
+    sol = diff(f, x).factor()
+    try:
+        domain = continuous_domaine(f, x, S.Reals)
+        domain = continuous_domaine(sol, x, domain)
+        if domain == S.Reals:
+            domain = "R"
+        elif domain == EmptySet():
+            domain = "empty"
+        else:
+            domain = "I"
+    except:
+        domain = "I"
+    if domain != "empty":
+        break
 
 sol = diff(f, x).factor()
 ==
@@ -103,7 +105,7 @@ sol = diff(f, x).factor()
 question ==
 On considère la fonction
 $$ f  : x \mapsto {{ f|latex }}.$$
-Cette fonction est définie sur un intervalle
+Cette fonction est définie sur {{ domain }}
 ==
 
 prefix ==
