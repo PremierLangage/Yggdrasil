@@ -102,12 +102,18 @@ while True:
         break
 
 sol = diff(f, x).factor()
+
+if domain == "I":
+    phrase = r"un certain intervalle $! I !$."
+else:
+    phrase = r"sur $! \mathbb{R} !$."
 ==
 
 question ==
 On considère la fonction
 $$ f  : x \mapsto {{ f|latex }}.$$
-Cette fonction est définie sur {{ domain }}
+Cette fonction est définie et dérivable sur {{ phrase }}
+Calculer sa dérivée.
 ==
 
 prefix ==
