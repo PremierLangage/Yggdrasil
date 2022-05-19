@@ -87,16 +87,19 @@ while True:
 
     sol = diff(f, x).factor()
     try:
-        domain = continuous_domaine(f, x, S.Reals)
-        domain = continuous_domaine(sol, x, domain)
-        if domain == S.Reals:
-            domain = "R"
-        elif domain == EmptySet():
-            domain = "empty"
-        else:
-            domain = "I"
+        pass
     except:
         domain = "I"
+
+    domain = continuous_domaine(f, x, S.Reals)
+    domain = continuous_domaine(sol, x, domain)
+    if domain == S.Reals:
+        domain = "R"
+    elif domain == EmptySet():
+        domain = "empty"
+    else:
+        domain = "I"
+        
     if domain != "empty":
         break
 
