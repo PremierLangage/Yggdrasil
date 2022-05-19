@@ -120,6 +120,7 @@ else:
 ==
 
 question ==
+{{ i1, i2, j1, j2  }}
 On considère la fonction
 $$ f  : x \mapsto {{ f|latex }}.$$
 Cette fonction est définie et dérivable sur {{ phrase }}
