@@ -2,7 +2,7 @@ extends= /model/basic/checkbox_rw.pl
 
  
 question==
- Lesquelles de ces suites convergent?
+Lesquelles de ces suites convergent?
 ==
  
 
