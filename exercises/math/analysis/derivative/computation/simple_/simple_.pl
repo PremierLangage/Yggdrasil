@@ -1,4 +1,4 @@
-extends = /model/math/expr.pl
+extends = /model/math/multimathinput.pl
 
 title = Calculer la dérivée d'une fonction
 
