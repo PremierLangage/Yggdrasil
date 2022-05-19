@@ -83,13 +83,19 @@ if param['operation'] == "mul":
 else:
     f = generate_fog(j1, j2) / generate_fog(k1, k2)
 
+try:
+    domain = continuous_domaine(f, x, S.Reals)
+    sol = diff(f, x).factor()
+    domain = continuous_domaine(sol, x, domain)
+
 
 sol = diff(f, x).factor()
 ==
 
 question ==
-Calculer la dérivée de la fonction $! f : {{ fdomain|latex }} \rightarrow \mathbb{R} !$ définie par
-$$ f (x) = {{ f|latex }}.$$
+On considère la fonction
+$$ f  : x \mapsto {{ f|latex }}.$$
+Cette fonction est définie sur un intervalle
 ==
 
 prefix ==
