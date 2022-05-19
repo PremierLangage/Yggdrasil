@@ -1,4 +1,3 @@
-
 extends= /model/basic/checkbox_rw.pl
 
  
