@@ -2,8 +2,8 @@ extends= /model/basic/checkbox_rw.pl
 
  
 question==
-Un concombre est formé de $99\%$ d’eau (en volume). Pendant la nuit, il s’assèche légèrement,
-et le lendemain il ne contient plus que $98\%$ d'eau. Quelles phrases sont vraies?
+Un concombre est formé de $!99\%!$ d’eau (en volume). Pendant la nuit, il s’assèche légèrement,
+et le lendemain il ne contient plus que $!98\%!$ d'eau. Quelles phrases sont vraies?
 
 Que dire en pourcentage de la variation du volume total du concombre ?
 ==
