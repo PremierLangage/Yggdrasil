@@ -3,7 +3,7 @@ extends= /model/basic/checkbox_rw.pl
  
 question==
 Parmi les arguments suivants, lesquels justifient un des points numérotés du calcul suivant fait pour $a,b$ deux nombres réels?
-\begin{equation*}
+$!\begin{equation*}
 \begin{array}{ll}
 (a+b)^2&\underset{(1)}{=}(a+b)(a+b)\\
 	&\underset{(2)}{=}(a+b)a+(a+b)b\\
@@ -11,7 +11,7 @@ Parmi les arguments suivants, lesquels justifient un des points numérotés du c
 	&\underset{(4)}{=}a^2+ab+ba+b^2\\
 	&\underset{(5)}{=}a^2+2ab+b^2
 \end{array}
-\end{equation*}
+\end{equation*}!$
 ==
  
 
