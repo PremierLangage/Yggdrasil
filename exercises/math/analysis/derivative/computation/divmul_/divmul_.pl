@@ -95,7 +95,7 @@ while True:
     domain = continuous_domain(sol, x, domain)
     if domain == S.Reals:
         domain = "R"
-    elif domain == EmptySet():
+    elif domain == EmptySet:
         domain = "empty"
     else:
         domain = "I"
