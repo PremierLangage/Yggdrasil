@@ -7,8 +7,8 @@ Quelles fonctions sont équivalentes en $!0!$ à $!t!$?
  
 
 nbitems=4
-minright = 1
-maxright = 1
+minright = 2
+maxright = 2
 
 right== 
 $!\frac{t^2+2t}{2+t^3}!$
