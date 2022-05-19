@@ -11,7 +11,8 @@ param.types = [[0], [0], [5, 6, 8, 9], [0]]
 before ==
 var('x')
 from sympy import sinh, cosh, tanh, asin, acos, atan, evaluate
-from sympy import S, EmptySet, continuous_domain
+from sympy import S, EmptySet
+from sympy.calculus.util import continuous_domain
 def generate_fog(i, j):
 
     c = 2
