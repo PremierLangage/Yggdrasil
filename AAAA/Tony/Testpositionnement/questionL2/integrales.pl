@@ -1,4 +1,3 @@
-
 extends= /model/basic/checkbox_rw.pl
 
  
@@ -8,8 +7,8 @@ Quelles intégrales valent $!\frac{5}{6}!$?
  
 
 nbitems=4
-minright = 0
-maxright = 0
+minright = 1
+maxright = 1
 
 right== 
 $!\int_{-1}^1 t^2+tdt!$
