@@ -17,13 +17,8 @@ $!\frac{x^2}{2}+2x!$ est une primitive de $!x+2!$
 ==
 
 wrong==
-$\frac{1}{x}$ est une primitive de $\ln(x)$  
+$!\frac{1}{x}!$ est une primitive de $!\ln(x)!$  
 ==
 
 scoring = RightMinusWrong 
-
-  \begin{reponses}
-    \bonne{}\bareme{b=1}
-    \bonne{}\bareme{b=1}
-    \mauvaise{}\bareme{b=1}
-    \bonne{
+ 
