@@ -82,8 +82,8 @@ if len(param['types']) == 4:
     k1, k2 = choice(kk), choice(ll)
 else:
     ii, jj = param['types']
-    j1, j2 = sample(ii, 2)
-    k1, k2 = choice(jj), choice(jj)
+    j1, k1 = sample(ii, 2)
+    j2, k2 = choice(jj), choice(jj)
 
 
 
