@@ -2,7 +2,7 @@ extends= /model/basic/checkbox_rw.pl
 
  
 question==
- Quelles intégrales valent $!1!$?
+Quelles intégrales valent $!1!$?
 ==
  
 
