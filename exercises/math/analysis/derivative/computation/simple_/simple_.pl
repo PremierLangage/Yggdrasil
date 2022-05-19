@@ -2,7 +2,6 @@ extends = /model/math/expr.pl
 
 title = Calculer la dérivée d'une fonction
 
-param.operation = "mul"
 param.types = [2, [5, 6, 8, 9], [0]]
 
 # Paramètres
@@ -30,8 +29,7 @@ def generate_fog(i, j):
 
     poly1 = choice(choice(lst_poly1))
 
-    lst_f=[poly1,
-    x**randint(1, 3),
+    lst_f=[x**randint(1, 3),
     x**randint(4, 8),
     x**(-n),
     x**r,
@@ -76,25 +74,15 @@ def generate_fog(i, j):
     return f.subs(x, gx)
 
 
-if len(param['types']) == 4:
-    ii, jj, kk, ll = param['types']
-    j1, j2 = choice(ii), choice(jj)
-    k1, k2 = choice(kk), choice(ll)
-else:
-    ii, jj = param['types']
-    j1, k1 = sample(ii, 2)
-    j2, k2 = choice(jj), choice(jj)
-
+nbterms, jj, kk = param['types']
+jjj = sample(jj, nbterms)
+kkk = [choice(kk) for _ in range(nbterms)]
 
 
 while True:
-    f1 = generate_fog(j1, j2)
-    f2 = generate_fog(k1, k2)
-    if param['operation'] == "mul":
-        f = f1*f2
-    else:
-        with evaluate(False):
-            f = choice([f1/f2, f2/f1])
+    f = 0
+    for k in range(nbterms):
+        f += generate_fog(jjj[k], kkk[k])
 
     sol = diff(f, x).factor()
     try:
