@@ -15,7 +15,7 @@ croissante sur $!\mathbb{R}!$
 ==
 
 wrong==
-décroissante sur $!\R!$
+décroissante sur $!\mathbb{R}!$
 décroissante sur $!]-\infty,0]!$ et croissante sur $![0,+\infty[!$
 croissante sur $!]-\infty,0]!$ et décroissante sur $![0,+\infty[!$
 ==
