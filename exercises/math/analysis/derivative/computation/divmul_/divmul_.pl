@@ -91,9 +91,9 @@ while True:
     f1 = generate_fog(j1, j2)
     f2 = generate_fog(k1, k2)
     if param['operation'] == "mul":
-        f = generate_fog(j1, j2) * 
+        f = f1*f2
     else:
-        f = generate_fog(j1, j2) / generate_fog(k1, k2)
+        f = choice([f1/f2, f2/f1])
 
     sol = diff(f, x).factor()
     try:
