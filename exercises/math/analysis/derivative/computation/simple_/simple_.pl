@@ -81,8 +81,8 @@ kkk = [choice(kk) for _ in range(nbterms)]
 
 while True:
     f = 0
-    for k in range(nbterms):
-        f += generate_fog(jjj[k], kkk[k])
+    for i in range(nbterms):
+        f += generate_fog(jjj[i], kkk[i])
 
     sol = diff(f, x).factor()
     try:
