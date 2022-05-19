@@ -2,7 +2,7 @@ extends= /model/basic/checkbox_rw.pl
 
  
 question==
-Quelles fonctions sont solutions de l'équation suivantes $y''-5y'+6y=0$?
+Lesquelles de ces applications sont linéaires ?
 ==
  
 nbitems=4
