@@ -91,8 +91,8 @@ while True:
     except:
         domain = "I"
 
-    domain = continuous_domaine(f, x, S.Reals)
-    domain = continuous_domaine(sol, x, domain)
+    domain = continuous_domain(f, x, S.Reals)
+    domain = continuous_domain(sol, x, domain)
     if domain == S.Reals:
         domain = "R"
     elif domain == EmptySet():
