@@ -87,6 +87,14 @@ try:
     domain = continuous_domaine(f, x, S.Reals)
     sol = diff(f, x).factor()
     domain = continuous_domaine(sol, x, domain)
+    if domain == S.Reals:
+        domain = "R"
+    elif domain == EmptySet():
+        domain = "empty"
+    else:
+        domain = "I"
+except:
+    domain = "I"
 
 
 sol = diff(f, x).factor()
