@@ -76,7 +76,7 @@ def generate_fog(i, j):
     return f.subs(x, gx)
 
 
-if len(param['types'][0]) == 4:
+if len(param['types']) == 4:
     ii, jj, kk, ll = param['types']
     j1, j2 = choice(ii), choice(jj)
     k1, k2 = choice(kk), choice(ll)
