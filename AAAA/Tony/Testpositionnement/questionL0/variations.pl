@@ -11,7 +11,7 @@ minright = 1
 maxright = 1
 
 right==
-croissante sur $!\R!$ 
+croissante sur $!\mathbb{R}!$ 
 ==
 
 wrong==
