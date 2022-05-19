@@ -74,39 +74,39 @@ def generate_fog(i, j):
 
     return f.subs(x, gx)
 
+def generate_f(par):
+    nbterms, jj, kk = par
+    jjj = sample(jj, nbterms)
+    kkk = [choice(kk) for _ in range(nbterms)]
 
-nbterms, jj, kk = param['types']
-jjj = sample(jj, nbterms)
-kkk = [choice(kk) for _ in range(nbterms)]
 
+    while True:
+        f = 0
+        for i in range(nbterms):
+            f += generate_fog(jjj[i], kkk[i])
 
-while True:
-    f = 0
-    for i in range(nbterms):
-        f += generate_fog(jjj[i], kkk[i])
-
-    sol = diff(f, x).factor()
-    try:
-        domain = continuous_domain(f, x, S.Reals)
-        domain = continuous_domain(sol, x, domain)
-        if domain == S.Reals:
-            domain = "R"
-        elif domain == EmptySet:
-            domain = "empty"
-        else:
+        sol = diff(f, x).factor()
+        try:
+            domain = continuous_domain(f, x, S.Reals)
+            domain = continuous_domain(sol, x, domain)
+            if domain == S.Reals:
+                domain = "R"
+            elif domain == EmptySet:
+                domain = "empty"
+            else:
+                domain = "I"
+        except:
             domain = "I"
-    except:
-        domain = "I"
 
-    if domain != "empty":
-        break
+        if domain != "empty":
+            break
+    return f
 
-sol = diff(f, x).factor()
 
-if domain == "I":
-    phrase = r"un certain intervalle $! I !$."
-else:
-    phrase = r"sur $! \mathbb{R} !$."
+for i in range(n):
+    f = generate_f(param['types'][i])
+    inputs.sol = diff(f, x).factor()
+
 ==
 
 question ==
