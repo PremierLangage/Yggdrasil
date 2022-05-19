@@ -75,10 +75,16 @@ def generate_fog(i, j):
 
     return f.subs(x, gx)
 
-  
-ii, jj, kk, ll = param['types']
-j1, j2 = choice(ii), choice(jj)
-k1, k2 = choice(kk), choice(ll)
+
+if len(param['types']) == 4:
+    ii, jj, kk, ll = param['types']
+    j1, j2 = choice(ii), choice(jj)
+    k1, k2 = choice(kk), choice(ll)
+else:
+    ii, jj = param['types']
+    j1, j2 = sample(ii, 2)
+    k1, k2 = choice(jj), choice(jj)
+
 while True:
     if param['operation'] == "mul":
         f = generate_fog(j1, j2) * generate_fog(k1, k2)
