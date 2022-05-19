@@ -2,7 +2,7 @@ extends = /model/math/expr.pl
 
 title = Calculer la dérivée d'une fonction
 
-param.types = [2, [4, 5, 6, 8, 9], [0]]
+param.types = [2, [5, 6, 7, 9, 10], [0]]
 
 # Paramètres
 
