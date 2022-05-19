@@ -85,9 +85,13 @@ else:
     j1, j2 = sample(ii, 2)
     k1, k2 = choice(jj), choice(jj)
 
+
+
 while True:
+    f1 = generate_fog(j1, j2)
+    f2 = generate_fog(k1, k2)
     if param['operation'] == "mul":
-        f = generate_fog(j1, j2) * generate_fog(k1, k2)
+        f = generate_fog(j1, j2) * 
     else:
         f = generate_fog(j1, j2) / generate_fog(k1, k2)
 
