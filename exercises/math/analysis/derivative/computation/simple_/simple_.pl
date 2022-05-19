@@ -109,7 +109,7 @@ prefixes = []
 
 for i in range(n):
     f = generate_f(param['types'][i])
-    inputs.sol = diff(f, x).factor()
+    inputs[i].sol = diff(f, x).factor()
     prefixes.append(rf"$! {latex(f)} !$")
 
 ==
