@@ -2,7 +2,7 @@ extends= /model/basic/checkbox_rw.pl
 
  
 question==
-Je pèse $!25 \%!$ de plus que toi combien de pourcent pèses-tu de moins que moi ? 
+Je pèse $!25 \%!$ de plus que toi combien de pourcents pèses-tu de moins que moi ? 
 ==
  
 
