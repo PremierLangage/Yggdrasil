@@ -11,12 +11,12 @@ minright = 2
 maxright = 2
 
 right== 
-$!\{(x,y,z)\in\R^3|x+y=0\}!$
-$!\{y\in C^2(\R)|y''+2y'-y=0\}!$
+$!\{(x,y,z)\in\mathbb{R}^3|x+y=0\}!$
+$!\{y\in C^2(\mathbb{R})|y''+2y'-y=0\}!$
 ==
 
 wrong==
-$!\R_2[X]!$
+$!\mathbb{R}_2[X]!$
 $!\{(x,y,z)\in\R^3|x+y=0,z=0\}!$
 ==
 
