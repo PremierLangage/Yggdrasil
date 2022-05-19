@@ -21,9 +21,4 @@ $!10 \%!$
 ==
 
 scoring = RightMinusWrong 
-
-  \begin{reponses}
-    \bonne{}\bareme{b=1}
-    \mauvaise{$25 \%$}\bareme{b=1}
-    \mauvaise{$15 \%$}\bareme{b=1}
-    \mauvaise{$10 \%$}\bareme{b=1}
+ 
