@@ -21,5 +21,3 @@ $!2-2t+\frac{8t^3}{3}!$
 ==
 
 scoring = RightMinusWrong
-  
-  
