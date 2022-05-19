@@ -9,32 +9,19 @@ $!z = -\overline{z} \underset{(1)}{\iff} a+ib= -(a-ib) \underset{(2)}{\iff} a+ib
 ==
  
 
-nbitems=6
+nbitems=5
 minright = 3
 maxright = 3
 
-right==
-car $!a \times b=b\times a!$ pour $!a,b!$ deux réels 
-car le carré d'un nombre est le produit de ce nombre par lui-même
-en développant l'expression
+right== 
+en divisant des deux côtés par le même nombre.
+en ajoutant $!a-ib!$ des deux côtés
+en développant
 ==
 
-wrong== 
-car $!a+b=b+a!$ pour $!a,b!$ deux réels
-en factorisant l'expression
-en multipliant des deux côtés par le même réel
+wrong==  
+car si la partie imaginaire est nulle, le nombre est imaginaire pur.
+car $!z = \overline{z}!$
 ==
 
 scoring = RightMinusWrong
-
-
-Quels sont les arguments justifiant un des points numérotés du raisonnement suivant 
-
-
-  \begin{reponses}
-    \bonne{en divisant des deux côtés par le même nombre.}\bareme{b=1}
-    \mauvaise{car si la partie imaginaire est nulle, le nombre est imaginaire pur.}\bareme{b=1}
-    \mauvaise{car $z = \overline{z}$}\bareme{b=1}
-    \bonne{en ajoutant $a-ib$ des deux côtés}\bareme{b=1}
-    \bonne{en développant}\bareme{b=1}
-    \mauvaise{Je n'en ai aucune idée}\bareme{b=0}
