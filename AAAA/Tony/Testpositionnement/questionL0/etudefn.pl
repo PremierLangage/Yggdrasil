@@ -13,12 +13,12 @@ maxright = 2
 
 right==
 L’image de $!1!$ par $!f!$ est $!\ln(2)!$
-$!e!$ a $!2!$ antécédents par $!f!$
+$!e!$ a deux antécédents par $!f!$
 ==
 
 wrong==
-$!f!$ coupe l’axe des abscisses à 2 reprises
-$!f!$ change de variations 2 fois.
+$!f!$ coupe l’axe des abscisses à deux reprises
+$!f!$ change de variations deux fois.
 ==
 
 scoring = RightMinusWrong
