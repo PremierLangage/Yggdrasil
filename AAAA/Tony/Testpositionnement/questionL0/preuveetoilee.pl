@@ -15,27 +15,21 @@ Parmi les arguments suivants, lesquels justifient un des points numérotés du c
 ==
  
 
-nbitems=4
-minright = 2
-maxright = 2
+nbitems=6
+minright = 3
+maxright = 3
 
 right==
-$!(0,0,0)!$
-$!(0,1,-1)!$
+car $a \times b=b\times a$ pour $a,b$ deux réels 
+car le carré d'un nombre est le produit de ce nombre par lui-même
+en développant l'expression
 ==
 
-wrong==
-$!(1,1,2)!$
-$!(-1,0,2)!$
+wrong== 
+car $a+b=b+a$ pour $a,b$ deux réels
+en factorisant l'expression
+en multipliant des deux côtés par le même réel
 ==
 
 scoring = RightMinusWrong
 
-
-  \begin{reponses}
-    \bonne{car $a \times b=b\times a$ pour $a,b$ deux réels}\bareme{b=1}
-    \mauvaise{car $a+b=b+a$ pour $a,b$ deux réels}\bareme{b=1}
-    \bonne{car le carré d'un nombre est le produit de ce nombre par lui-même}\bareme{b=1}
-    \bonne{en développant l'expression}\bareme{b=1}
-    \mauvaise{en factorisant l'expression}\bareme{b=1}
-    \mauvaise{en multipliant des deux côtés par le même réel}\bareme{b=1}
