@@ -20,13 +20,13 @@ minright = 3
 maxright = 3
 
 right==
-car $a \times b=b\times a$ pour $a,b$ deux réels 
+car $!a \times b=b\times a!$ pour $!a,b!$ deux réels 
 car le carré d'un nombre est le produit de ce nombre par lui-même
 en développant l'expression
 ==
 
 wrong== 
-car $a+b=b+a$ pour $a,b$ deux réels
+car $!a+b=b+a!$ pour $!a,b!$ deux réels
 en factorisant l'expression
 en multipliant des deux côtés par le même réel
 ==
