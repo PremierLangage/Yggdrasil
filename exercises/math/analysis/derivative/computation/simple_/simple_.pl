@@ -10,6 +10,7 @@ param.types = [2, [0, 1, 2, 5, 6, 7, 9, 10], [0]]
 before ==
 n = len(param['types'])
 inputs = [MathInput(type="expr") for _ in range(n)]
+
 var('x')
 from sympy import sinh, cosh, tanh, asin, acos, atan, evaluate
 from sympy import S, EmptySet
