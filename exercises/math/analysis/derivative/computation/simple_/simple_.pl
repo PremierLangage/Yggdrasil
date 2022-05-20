@@ -86,6 +86,8 @@ def generate_f(par):
 
     while True:
         f = 0
+        coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
+        shuffle(coeff)
         for i in range(nbterms):
             f += generate_fog(jjj[i], kkk[i])
 
