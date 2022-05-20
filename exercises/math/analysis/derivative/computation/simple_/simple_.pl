@@ -119,10 +119,7 @@ for i in range(n):
 ==
 
 question ==
-On considère la fonction
-$$ f  : x \mapsto {{ f|latex }}.$$
-Cette fonction est définie et dérivable sur {{ phrase }}
-Calculer sa dérivée.
+Calculer les dérivées des fonctions suivantes.
 ==
 
 inputblock ==
