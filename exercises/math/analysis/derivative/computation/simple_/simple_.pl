@@ -32,7 +32,7 @@ def generate_fog(i, j):
 
     poly1 = choice(choice(lst_poly1))
 
-    lst_f=[Integer(randint(-5, 5, [0])),
+    lst_f=[Integer(1),
     x**randint(1, 3),
     x**randint(4, 8),
     1/x,
