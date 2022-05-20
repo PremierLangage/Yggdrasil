@@ -106,11 +106,12 @@ def generate_f(par):
     return f
 
 prefixes = []
-
+expr = []
 for i in range(n):
     f = generate_f(param['types'][i])
     inputs[i].sol = diff(f, x).factor()
     prefixes.append(rf"$! {latex(f)} !$")
+    expr.append(latex(f))
 
 ==
 
@@ -120,6 +121,16 @@ $$ f  : x \mapsto {{ f|latex }}.$$
 Cette fonction est définie et dérivable sur {{ phrase }}
 Calculer sa dérivée.
 ==
+
+inputblock ==
+{% for i in range(3) %}
+1. $! f_{{i}}(x) =  {{ expr[i] }} $!
+<div style="display: block; margin-bottom: 1em;">
+{{ inputs[i]|html }}
+</div>
+{% endfor %}
+==
+
 
 prefix ==
 $! f'(x) = !$
