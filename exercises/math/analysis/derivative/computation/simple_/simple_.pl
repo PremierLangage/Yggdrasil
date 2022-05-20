@@ -9,21 +9,21 @@ param.types = [[2, [3, 2], [0]], [2, [0, 1, 2, 5, 6, 7, 9, 10], [0]], [2, [0, 1,
 # 1 : x^n (n <= 3)
 # 2 : x^n (n > 3)
 # 3 : 1/x
-# 4 : 1/x^n
-# 5 : x**r,
-# 6: sqrt(x),
-    exp(x),
-    ln(x),
-    c**x,
-    sin(x),
-    cos(x),
-    tan(x),
-    sinh(x),
-    cosh(x),
-    tanh(x),
-    asin(x),
-    acos(x),
-    atan(x)]
+# 4 : 1/x^n n > 1)
+# 5 : x**r
+# 6 : sqrt(x)
+# 7 : exp(x)
+# 8 : ln(x)
+# 9 : a^x
+# 10 : sin(x)
+# 11 : cos(x)
+# 12 : tan(x)
+# 13 : sinh(x)
+# 14 : cosh(x)
+# 15 : tanh(x)
+# 16 : asin(x)
+# 17 : acos(x)
+# 18 : atan(x)
 
 before ==
 n = len(param['types'])
