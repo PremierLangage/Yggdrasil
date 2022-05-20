@@ -124,9 +124,9 @@ Calculer sa dérivée.
 
 inputblock ==
 {% for i in range(3) %}
-1. $! f_{{i}}(x) =  {{ expr[i] }} $!
+1. $! f_{{i}}(x) =  {{ expr[i] }} !$
 <div style="display: block; margin-bottom: 1em;">
-{{ inputs[i]|html }}
+ $! f_{{i}}'(x)  =  !$ {{ inputs[i]|html }}
 </div>
 {% endfor %}
 ==
