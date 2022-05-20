@@ -5,7 +5,26 @@ title = Calculer la dérivée d'une fonction
 param.types = [[2, [3, 2], [0]], [2, [0, 1, 2, 5, 6, 7, 9, 10], [0]], [2, [0, 1, 2, 5, 6, 7, 9, 10], [0]]]
 
 # Paramètres
-
+# 0 : constant
+# 1 : x^n (n <= 3)
+# 2 : x^n (n > 3)
+# 3 : x^n (n > 3)
+    1/x,
+    x**-randint(3, 4),
+    x**r,
+    sqrt(x),
+    exp(x),
+    ln(x),
+    c**x,
+    sin(x),
+    cos(x),
+    tan(x),
+    sinh(x),
+    cosh(x),
+    tanh(x),
+    asin(x),
+    acos(x),
+    atan(x)]
 
 before ==
 n = len(param['types'])
