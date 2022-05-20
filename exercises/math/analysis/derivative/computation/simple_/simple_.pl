@@ -89,7 +89,7 @@ def generate_f(par):
         coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
         shuffle(coeff)
         for i in range(nbterms):
-            f += generate_fog(jjj[i], kkk[i])
+            f += choice([-1, 1])*coeff[i]*generate_fog(jjj[i], kkk[i])
 
         sol = diff(f, x).factor()
         try:
