@@ -37,12 +37,10 @@ def generate_fog(i, j):
 
     c = 2
     n = randint(4,8)
-    r = choice([-1,1])*choice([1/2,3/2,5/2,2/3,4/3,1/4,3/4,5/4,1/5,2/5,3/5])
+    r = choice([-1,1])*sympify(choice(["1/2","3/2","5/2","2/3","4/3","1/4","3/4","5/4","1/5","2/5","3/5"])
 
     a = randint(1, 3)
     b = randint(1, 3)
-
-
 
     lst_f=[Integer(randint(-3, 3, [0])),
     x**randint(1, 3),
@@ -53,7 +51,7 @@ def generate_fog(i, j):
     sqrt(x),
     exp(x),
     ln(x),
-    c**x,
+    randint(2, 5)**x,
     sin(x),
     cos(x),
     tan(x),
