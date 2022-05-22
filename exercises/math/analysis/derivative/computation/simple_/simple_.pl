@@ -42,13 +42,7 @@ def generate_fog(i, j):
     a = randint(1, 3)
     b = randint(1, 3)
 
-    lst_poly1 = [[a*x+b, a*x-b, b - a*x],
-    [a*x**2+b, a*x**2-b, b - a*x**2],
-    [a*x**3+b, a*x**3-b, b - a*x**3],
-    [a*x**2+b*x, a*x**2-b*x, b*x - a*x**2],
-    [a*x**3+b*x, a*x**3-b*x, b*x - a*x**3]]
 
-    poly1 = choice(choice(lst_poly1))
 
     lst_f=[Integer(randint(-3, 3, [0])),
     x**randint(1, 3),
