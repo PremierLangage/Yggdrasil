@@ -34,7 +34,7 @@ from sympy import sinh, cosh, tanh, asin, acos, atan, evaluate
 from sympy import S, EmptySet
 from sympy.calculus.util import continuous_domain
 
-def generate_f(i):
+def generate_fi(i):
 
     c = 2
     n = randint(4,8)
