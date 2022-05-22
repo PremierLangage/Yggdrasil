@@ -12,3 +12,5 @@ Berlin
 ==
 
 indsol = [0, 1]
+
+scoring = "CorrectItems"
