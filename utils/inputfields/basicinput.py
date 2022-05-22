@@ -712,8 +712,8 @@ def right_minus_wrong(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
     else:
         return int(round(max([(nbright - nbwrong)/nbsol*100,0])))
 
-def correct_items(nbright=0, nbwrong=0, nbsol=1, nbitems=1):
-    return int(round(max([(nbitems - 2*(nbsol - nbright + nbwrong))/nbitems*100,0])))
+def correct_items(nbright, nbwrong, nbsol, nbitems):
+    return int(round(((nbitems - nbwrong - (nbsol - nbright))/nbitems * 100)))
 
 def exact_order(order):
     n = len(order)
