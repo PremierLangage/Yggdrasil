@@ -42,6 +42,7 @@ before == #|py|
 process == #|py|
 inputfield.set_items(items)
 inputfield.set_sol(indsol)
+inputfield.scoring = scoring
 if shuffled:
     inputfield.shuffle()
 ==
