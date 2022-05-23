@@ -72,8 +72,8 @@ def generate_f(par):
         f = 0
         coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
         shuffle(coeff)
-        for subpar in par:
-            f += choice([-1, 1])*coeff[i]*generate_fog(*subpar)
+        for i in range(len(par)):
+            f += choice([-1, 1])*coeff[i]*generate_fi(par[i])
 
         sol = diff(f, x).factor()
         try:
