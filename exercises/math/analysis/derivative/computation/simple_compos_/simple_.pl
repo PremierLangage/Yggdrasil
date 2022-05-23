@@ -123,7 +123,6 @@ for i in range(n):
             par[j]= choice(par[j])
     f = generate_f(par)
     inputs[i].sol = diff(f, x)
-    prefixes.append(rf"$! {latex(f)} !$")
     expr.append(latex(f))
 
 ==
