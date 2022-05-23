@@ -25,6 +25,6 @@ $!(2,1,-1)!$
 $!(0,1,0)!$
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
 
  
