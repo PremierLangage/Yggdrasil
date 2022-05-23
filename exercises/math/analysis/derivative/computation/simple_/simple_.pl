@@ -2,7 +2,7 @@ extends = /model/math/multimathinput.pl
 
 title = Calculer la dérivée d'une fonction
 
-param.types = [[[7, 8], [0]], [[0, 1, 2, 5, 6, 7, 9, 10], [0]], [[0, 1, 2, 5, 6, 7, 9, 10], [0]]]
+param.types = [[[7, 8], [0, 1]], [[10, 11], [0, 1]], [[3, 4], [6, 2]]]
 
 # Paramètres
 # 0 : constant
