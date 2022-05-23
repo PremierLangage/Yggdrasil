@@ -25,6 +25,19 @@ param.types = [[[7, 8], [0, 1]], [[10, 11], [0, 1]], [[3, 4], [6, 2]]]
 # 17 : acos(x)
 # 18 : atan(x)
 
+
+# 0: x,
+# 1: x**2,
+# 2: x**3,
+# 2: a0*x,
+# 2: a0*x**2,
+# 2: a0*x**3,
+# 2: a*x+b, a*x-b, b - a*x],
+# 2: [a*x**2+b, a*x**2-b, b - a*x**2],
+# 2: [a*x**3+b, a*x**3-b, b - a*x**3],
+# 2: [a*x**2+b*x, a*x**2-b*x, b*x - a*x**2],
+# 2: [a*x**3+b*x, a*x**3-b*x, b*x - a*x**3]]
+
 before ==
 n = len(param['types'])
 inputs = [MathInput(type="expr") for _ in range(n)]
