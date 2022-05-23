@@ -36,10 +36,7 @@ from sympy.calculus.util import continuous_domain
 
 def generate_fi(i):
 
-    c = 2
-    n = randint(4,8)
     r = choice([-1,1])*sympify(choice(["1/2","3/2","5/2","2/3","4/3","1/4","3/4","5/4","1/5","2/5","3/5"])
-
     a = randint(1, 3)
     b = randint(1, 3)
 
