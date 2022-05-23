@@ -23,4 +23,4 @@ car si la partie imaginaire est nulle, le nombre est imaginaire pur.
 car $!z = \overline{z}!$
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
