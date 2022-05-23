@@ -66,7 +66,7 @@ def generate_fog(i, j):
     a = randint(1, 3)
     b = randint(1, 3)
 
-    lst_gx =[x,
+    lst_g =[x,
     x**2,
     x**3,
     a0*x,
@@ -78,9 +78,9 @@ def generate_fog(i, j):
     [a*x**2+b*x, a*x**2-b*x, b*x - a*x**2],
     [a*x**3+b*x, a*x**3-b*x, b*x - a*x**3]]
 
-    gx = lst_gx[j]
+    g = lst_g[j]
 
-    return f.subs(x, gx)
+    return f.subs(x, g)
 
 
 def generate_f(par):
