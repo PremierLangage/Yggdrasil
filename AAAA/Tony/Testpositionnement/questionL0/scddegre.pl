@@ -20,5 +20,5 @@ wrong==
 $!2x+2-3(4x-3)!$
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
  
