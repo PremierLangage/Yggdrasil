@@ -20,6 +20,6 @@ $!2^n!$
 $!2n+11!$ 
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
 
  
