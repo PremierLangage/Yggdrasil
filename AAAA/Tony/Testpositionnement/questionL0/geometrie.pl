@@ -20,4 +20,4 @@ la droite passant par les points $!(0,1)!$ et $!(1,0)!$
 la droite passant par $!(1,2)!$ et d'ordonnée à l'origine $!3!$
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
