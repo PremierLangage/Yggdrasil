@@ -21,4 +21,4 @@ $!\ln(1+\frac{1}{t})!$
 
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
