@@ -21,6 +21,6 @@ $!\int_{-1}^1 t^2+tdt!$
 $!\int_0^1 x\cos(x^2)dx!$
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
   
  
