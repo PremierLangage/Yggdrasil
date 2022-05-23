@@ -98,7 +98,6 @@ def generate_fog(i, j):
 
 def generate_f(par):
     while True:
-        f = 0
         coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
         f = choice([-1, 1])*coeff[i]*generate_fog(par[0], par[1])
         sol = diff(f, x).factor()
