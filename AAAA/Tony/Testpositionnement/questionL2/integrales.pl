@@ -20,6 +20,6 @@ $!\int_0^1 te^tdt!$
 $!\int_0^1 x\cos(x^2)dx!$
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
   
  
