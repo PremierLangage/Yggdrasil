@@ -60,7 +60,7 @@ def generate_fi(i):
     acos(x),
     atan(x)]
 
-    return = lst_f[i]
+    return lst_f[i]
 
 def generate_f(par):
     nbterms, jj, kk = par
