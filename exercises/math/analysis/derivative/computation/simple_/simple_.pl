@@ -2,7 +2,7 @@ extends = /model/math/multimathinput.pl
 
 title = Calculer la dérivée d'une fonction
 
-param.types = [[[3, 2], [0]], [[0, 1, 2, 5, 6, 7, 9, 10], [0]], [[0, 1, 2, 5, 6, 7, 9, 10], [0]]]
+param.types = [[[7, 8], [0]], [[0, 1, 2, 5, 6, 7, 9, 10], [0]], [[0, 1, 2, 5, 6, 7, 9, 10], [0]]]
 
 # Paramètres
 # 0 : constant
@@ -63,6 +63,7 @@ def generate_fi(i):
     return lst_f[i]
 
 def generate_f(par):
+    shuffle(par)
     while True:
         f = 0
         coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
