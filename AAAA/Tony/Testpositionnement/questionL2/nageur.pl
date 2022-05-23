@@ -23,14 +23,3 @@ La vitesse du courant est supérieure à 1 km/heure
 ==
 
 scoring = CorrectItems
- 
- 
-
-
-
-  \begin{reponses}
-    \bonne{La vitesse du courant est inférieure à 1 km/heure}
-    \bonne{Le nageur fait le retour en $1h$.}
-    \mauvaise{La vitesse du nageur est la même à l'aller et au retour.}
-    \mauvaise{La vitesse du courant est supérieure à 1 km/heure}
-    \mauvaise{Je n'en ai aucune idée}
