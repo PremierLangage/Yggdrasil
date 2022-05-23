@@ -91,7 +91,10 @@ def generate_fog(i, j):
     [a*x**2+b*x, a*x**2-b*x, b*x - a*x**2],
     [a*x**3+b*x, a*x**3-b*x, b*x - a*x**3]]
 
-    g = lst_g[j]
+    if isinstance(lst_g[j], list):
+        g = choice(lst_g[j])
+    else:
+        g = lst_g[j]
 
     return f.subs(x, g)
 
