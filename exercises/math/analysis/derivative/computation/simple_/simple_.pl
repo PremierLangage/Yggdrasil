@@ -63,7 +63,6 @@ def generate_fi(i):
     return lst_f[i]
 
 def generate_f(par):
-    shuffle(par)
     while True:
         f = 0
         coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
