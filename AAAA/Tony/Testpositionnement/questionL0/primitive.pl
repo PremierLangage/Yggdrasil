@@ -20,5 +20,5 @@ wrong==
 $!\frac{1}{x}!$ est une primitive de $!\ln(x)!$
 ==
 
-scoring = RightMinusWrong 
+scoring = CorrectItems 
  
