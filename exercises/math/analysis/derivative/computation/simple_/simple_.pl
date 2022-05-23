@@ -94,7 +94,7 @@ for i in range(n):
         if isinstance(par[j], list):
             par[j]= choice(par[j])
     f = generate_f(par)
-    inputs[i].sol = diff(f, x).factor()
+    inputs[i].sol = diff(f, x)
     prefixes.append(rf"$! {latex(f)} !$")
     expr.append(latex(f))
 
