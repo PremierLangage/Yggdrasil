@@ -20,5 +20,5 @@ $!15 \%!$
 $!10 \%!$ 
 ==
 
-scoring = RightMinusWrong 
+scoring = CorrectItems 
  
