@@ -20,4 +20,4 @@ wrong==
 $!\frac{(-1)^n}{2^n}!$
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
