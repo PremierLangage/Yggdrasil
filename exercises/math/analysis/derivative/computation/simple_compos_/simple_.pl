@@ -103,7 +103,6 @@ def generate_f(par):
             break
     return f
 
-prefixes = []
 expr = []
 for i in range(n):
     par = param['types'][i]
