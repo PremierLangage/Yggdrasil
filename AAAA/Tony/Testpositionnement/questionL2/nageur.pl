@@ -14,7 +14,7 @@ maxright = 2
 
 right==
 La vitesse du courant est inférieure à 1 km/heure
-Le nageur fait le retour en $1h$.
+Le nageur fait le retour en $!1h!$.
 ==
 
 wrong== 
