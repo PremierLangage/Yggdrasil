@@ -21,6 +21,6 @@ $!f!$ coupe l’axe des abscisses à deux reprises
 $!f!$ change de variations deux fois.
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
  
  
