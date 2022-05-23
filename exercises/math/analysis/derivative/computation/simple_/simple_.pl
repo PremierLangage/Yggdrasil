@@ -114,9 +114,9 @@ inputblock ==
 ==
 
 solution ==
-{% for input in inputs %}
+{% for i in range(n) %}
 <div style="display: block; margin-bottom: 0.5em;margin-top: 0.5em;">
-$! \displaystyle f_{{i+1}}'(x)  = {{ input.sol|latex }} !$
+$! \displaystyle f_{{i+1}}'(x)  = {{ inputs[i].sol|latex }} !$
 </div>
 {% endfor %}
 ==
