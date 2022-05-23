@@ -31,4 +31,4 @@ $!\begin{array}{ll}
    \end{array}!$ 
 ==
 
-scoring = RightMinusWrong 
+scoring = CorrectItems 
