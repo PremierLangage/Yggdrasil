@@ -79,16 +79,14 @@ def generate_f(par):
         try:
             domain = continuous_domain(f, x, S.Reals)
             domain = continuous_domain(sol, x, domain)
-            if domain == S.Reals:
-                domain = "R"
-            elif domain == EmptySet:
-                domain = "empty"
+            if domain == EmptySet:
+                okdomain = False
             else:
-                domain = "I"
+                okdomain = True
         except:
-            domain = "I"
+            okdomain = True
 
-        if domain != "empty":
+        if okdomain:
             break
     return f
 
