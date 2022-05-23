@@ -20,4 +20,4 @@ La probabilité de tomber sur un nombre supérieur à $!0.6!$ quand on tire un n
 La probabilité de tirer une carte figure dans un jeu de $!32!$ cartes.
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
