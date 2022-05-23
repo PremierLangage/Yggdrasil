@@ -116,8 +116,7 @@ inputblock ==
 solution ==
 {% for input in inputs %}
 <div style="display: block; margin-bottom: 0.5em;margin-top: 0.5em;">
-{{ prefixes[loop.index0] }} 
-$! \displaystyle {{ input.sol|latex }} !$
+$! \displaystyle f_{{i+1}}'(x)  = {{ input.sol|latex }} !$
 </div>
 {% endfor %}
 ==
