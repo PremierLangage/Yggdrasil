@@ -84,14 +84,10 @@ def generate_fog(i, j):
 
 
 def generate_f(par):
-    shuffle(par)
     while True:
         f = 0
         coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
-        shuffle(coeff)
-        for i in range(len(par)):
-            f += choice([-1, 1])*coeff[i]*generate_fi(par[i])
-
+        f = choice([-1, 1])*coeff[i]*generate_fog(par[0], par[1])
         sol = diff(f, x).factor()
         try:
             domain = continuous_domain(f, x, S.Reals)
