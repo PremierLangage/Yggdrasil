@@ -22,12 +22,3 @@ $!1!$
 ==
 
 scoring = CorrectItems
-
-   
-
-Lesquelles de ces séries convergent?
-  \begin{reponses}
-    \bonne{$\sum \frac{1}{n^2+3n+1}$}
-    \bonne{$\sum \frac{(-1)^n}{n^2}$}
-    \bonne{$\sum \frac{5}{n^4}+(\frac{1}{4})^n$}
-    \bonne{$\sum \frac{\ln(n)}{5^n}$}
