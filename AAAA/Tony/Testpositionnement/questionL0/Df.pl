@@ -20,4 +20,4 @@ wrong==
 $!x=2!$  
 ==
 
-scoring = RightMinusWrong 
+scoring = CorrectItems
