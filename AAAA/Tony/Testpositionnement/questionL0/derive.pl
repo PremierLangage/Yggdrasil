@@ -21,7 +21,7 @@ wrong==
 $!1!$
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
 
  
  
