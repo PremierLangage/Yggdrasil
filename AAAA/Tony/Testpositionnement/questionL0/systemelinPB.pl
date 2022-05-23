@@ -21,5 +21,5 @@ $!\left \{\begin{array}{rcl}x+y&=&1 \\ 2x+2y&=&4\end{array}\right.!$
 $!\left \{\begin{array}{rcl}x+y+z&=&1 \\ x+y-z&=&2\end{array}\right.!$ 
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
  
