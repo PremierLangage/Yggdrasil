@@ -93,7 +93,11 @@ def generate_f(par):
 prefixes = []
 expr = []
 for i in range(n):
-    f = generate_f(param['types'][i])
+    par = param['types'][i]
+    for j in range(len(par)):
+        if isinstance(par[j], list):
+            par[j]= choice(par[j])
+    f = generate_f()
     inputs[i].sol = diff(f, x).factor()
     prefixes.append(rf"$! {latex(f)} !$")
     expr.append(latex(f))
