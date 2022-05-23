@@ -20,5 +20,5 @@ wrong==
 $!\frac{1}{t-2}!$ 
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
  
