@@ -20,4 +20,4 @@ $!-11+5i!$
 $!\frac{1+i}{1-i}!$
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
