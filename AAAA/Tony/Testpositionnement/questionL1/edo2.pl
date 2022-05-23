@@ -19,4 +19,4 @@ $!5xe^{2x}-e^{2x}!$
 $!10e^{-2x}+e^{-3x}!$
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
