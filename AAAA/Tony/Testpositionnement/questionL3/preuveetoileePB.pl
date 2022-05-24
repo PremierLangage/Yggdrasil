@@ -18,19 +18,14 @@ minright = 2
 maxright = 2
 
 right== 
-\bonne{car $f$ est injective}\bareme{b=1}
-     \mauvaise{car $f(0_E)=0_F$}\bareme{b=1}
-    \bonne{par linéarité de $f$}\bareme{b=1}
-    \mauvaise{car $(f(e_1),\ldots,f(e_n))$ est libre}\bareme{b=1}
-    \mauvaise{car $(e_1,\ldots,e_n)$ est une base de $E$}\bareme{b=1}
+car $f$ est injective
+par linéarité de $f$ 
 ==
 
-wrong==  
-\bonne{car $f$ est injective}\bareme{b=1}
-     \mauvaise{car $f(0_E)=0_F$}\bareme{b=1}
-    \bonne{par linéarité de $f$}\bareme{b=1}
-    \mauvaise{car $(f(e_1),\ldots,f(e_n))$ est libre}\bareme{b=1}
-    \mauvaise{car $(e_1,\ldots,e_n)$ est une base de $E$}\bareme{b=1}
+wrong==   
+car $f(0_E)=0_F$
+car $(f(e_1),\ldots,f(e_n))$ est libre
+car $(e_1,\ldots,e_n)$ est une base de $E$
 ==
 
 scoring = CorrectItems
