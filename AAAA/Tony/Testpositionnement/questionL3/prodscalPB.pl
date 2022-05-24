@@ -33,5 +33,4 @@ $!\begin{array}{ll}
 ==
 
 scoring = CorrectItems
-
-Lesquelles de ces applis sont des produits scalaires ? 
+ 
