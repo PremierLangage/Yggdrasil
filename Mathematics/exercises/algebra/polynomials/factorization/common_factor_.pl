@@ -86,7 +86,7 @@ with evaluate(False):
 sol=factor(P)
 ==
 
-text ==
+question ==
 Factoriser l'expression suivante :
 $$ {{ P|latex }}.$$
 ==
