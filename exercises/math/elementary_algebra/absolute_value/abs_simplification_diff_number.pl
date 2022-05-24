@@ -16,7 +16,7 @@ for i in range(len(lst)):
     prefixes.append($! 
 ==
 
-quesion ==
+question ==
 Ecrire les expressions suivantes sans valeur absolue.
 ==
 
