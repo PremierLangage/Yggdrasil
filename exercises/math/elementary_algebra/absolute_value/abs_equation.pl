@@ -3,6 +3,7 @@ extends = /model/math/set.pl
 title = Equation avec valeur abolue
 
 before ==
+from sympy import solveset
 a = randint(-6, 6, [0,1,-1])
 b = randint(-6, 6, [0,1,-1])
 d = randint(1, 5)
