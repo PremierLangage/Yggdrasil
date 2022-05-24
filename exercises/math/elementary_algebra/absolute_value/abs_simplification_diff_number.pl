@@ -18,7 +18,7 @@ for i in range(3):
 ==
 
 question ==
-Ecrire les expressions suivantes sans utiliser de valeur absolue.
+Réécrire les expressions suivantes sans utiliser de valeur absolue.
 ==
 
 
