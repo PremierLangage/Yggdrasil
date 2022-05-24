@@ -2,6 +2,8 @@ extends = /model/math/set.pl
 
 title = Equation avec valeur abolue
 
+wobracket = True
+
 before ==
 from sympy import solveset, Eq, S
 a = randint(-6, 6, [0,1,-1])
