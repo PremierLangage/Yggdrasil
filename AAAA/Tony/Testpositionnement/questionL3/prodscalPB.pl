@@ -13,7 +13,7 @@ maxright = 1
 right==
 $!\begin{array}{ll}
 \varphi : &C^0([0,1])\times C^0([0,1])\longrightarrow \mathbf{R} \\
-   &(f,g) \mapsto \int_0^1f(t)g(t)dt
+&(f,g) \mapsto \int_0^1f(t)g(t)dt
 \end{array}!$
 ==
 
