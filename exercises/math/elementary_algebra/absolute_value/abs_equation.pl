@@ -9,8 +9,7 @@ b = randint(-6, 6, [0,1,-1])
 d = randint(1, 5)
 var('x')
 lhs = Abs(a*x+b)
-lstsol=list(solveset(Eq(lhs,d),x,domain=S.Reals))
-solution=r"Les solutions sont $! \displaystyle %s !$ et $! \displaystyle %s !$." % (latex(lstsol[0]),latex(lstsol[1]))
+sol = list(solveset(Eq(lhs,d),x,domain=S.Reals))
 ==
 
 question ==
