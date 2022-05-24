@@ -7,8 +7,8 @@ Quelles séries sont de rayon de convergence $1$ ?
  
 
 nbitems=4
-minright = 3
-maxright = 3
+minright = 2
+maxright = 2
 
 right==
 $!\sum \sin(n)x^n!$ 
