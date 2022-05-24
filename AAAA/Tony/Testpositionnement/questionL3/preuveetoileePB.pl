@@ -18,14 +18,14 @@ minright = 2
 maxright = 2
 
 right== 
-car $f$ est injective
-par linéarité de $f$ 
+car $!f!$ est injective
+par linéarité de $!f!$ 
 ==
 
 wrong==   
-car $f(0_E)=0_F$
-car $(f(e_1),\ldots,f(e_n))$ est libre
-car $(e_1,\ldots,e_n)$ est une base de $E$
+car $!f(0_E)=0_F!$
+car $!(f(e_1),\ldots,f(e_n))!$ est libre
+car $!(e_1,\ldots,e_n)!$ est une base de $!E!$
 ==
 
 scoring = CorrectItems
