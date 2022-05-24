@@ -13,7 +13,7 @@ for i in range(len(lst)):
     a = lst[i]
     b = choice([randint(1,floor(a)),randint(ceiling(a),ceiling(a)+2)])
     a,b = sample([a,b], 2)
-    prefixes.append($! 
+    prefixes.append(rf"$! |{a} - {b}| !$")
 ==
 
 question ==
