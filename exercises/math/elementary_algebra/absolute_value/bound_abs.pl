@@ -40,5 +40,5 @@ sol_chainineq = latex_chainineq(Abs(x), sol))
 ==
 
 question ==
-Soit un nombre $% x %$ tel que $! {{ineq}} !$. Déterminer l'encadrement le plus précis possible de $% {{expr|latex}} %$.
+Déterminer l'encadrement le plus précis possible de $% {{expr|latex}} %$.
 ==
