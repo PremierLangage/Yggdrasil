@@ -17,16 +17,13 @@ def refine_absval(expr, var, domain):
 
 n = 3
 inputs = [MathInput(type="expr") for _ in range(n)]
-shuffle(lst)
 prefixes = []
-for i in range(3):
+for i in range(n):
     a = lst[i]
     b = choice([randint(1,floor(a)),randint(ceiling(a),ceiling(a)+2)])
     a, b = sample([a,b], 2)
     inputs[i].sol = Abs(a-b)
     prefixes.append(rf"$! |{latex(a)} - {latex(b)}| = !$")
-
-
 
 ==
 
