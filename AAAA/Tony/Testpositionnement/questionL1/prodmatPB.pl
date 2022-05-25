@@ -2,7 +2,7 @@ extends= /model/basic/checkbox_rw.pl
 
  
 question==
-Parmi les produits suivants, lesquels ont pour résultat une matrice dont la somme des coefficients est positive? $! {{A|latex}} !$
+Parmi les produits suivants, lesquels ont pour résultat une matrice dont la somme des coefficients est positive? 
 ==
  
 
@@ -13,10 +13,8 @@ maxright = 2
 #Atex = latex(A)
 before ==
 from sympy import Matrix
-
 A = Matrix([[-1,2],[3,-2]]) 
-
-==
+=
 
 right==
 $$\begin{pmatrix}-1&2\\3&-2\end{pmatrix}\begin{pmatrix}1\\2\end{pmatrix}$$
