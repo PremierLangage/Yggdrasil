@@ -10,8 +10,7 @@ nbitems=4
 minright = 2
 maxright = 2
 
-#from sympy2latex import latex
-#Atex = latex(A)
+
 
 before ==
 from sympy import Matrix
