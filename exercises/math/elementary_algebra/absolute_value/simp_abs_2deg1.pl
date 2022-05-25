@@ -38,12 +38,17 @@ for i in range(n):
     case = randint(0, 2)
     if case == 0:
         ineq = x <= xmin
+        domain = Interval(-oo, xmin)
+        assump = rf"$! {latex(ineq)} !$"
     elif case == 1:
         ineq = x >= xmax
+        domain = Interval(xmax, oo)
+        assump = rf"$! {latex(ineq)} !$"
     else:
-        ineq = x >= x0
+        domain = Interval(xmin, xmax)
+        assump = rf"$! x \in {latex(domain)} !$"
     ineqs.append(ineq)
-    domain = solveset(ineq, x, domain=S.Reals)
+    
     inputs[i].sol = refine_absval(Abs(expr), x, domain)
     prefixes.append(rf"$! |{latex(expr)}| = !$")
 
