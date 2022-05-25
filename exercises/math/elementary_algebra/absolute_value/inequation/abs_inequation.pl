@@ -1,16 +1,18 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /Mathematics/template/mathlhs.pl
 
 title = Inéquation avec valeur absolue
 
 lang = fr
 
 before ==
-a,b=list_randint(2,-6,6,[0,1,-1])
-d=randint(1,5)
+from sympy import solveset, S
 var('x')
-expr = Abs(a*x+b)
+a = randint(-6, 6, [0,1,-1])
+b = randint(-6, 6, [0,1,-1])
+rhs = randint(1, 5)
+lhs = Abs(a*x + b)
 
-ineq = choice([expr>=d, expr>d, expr<=d, expr<d])
+ineq = choice([lhs >= rhs, lhs > rhs, lhs <= rhs, lhs < rhs])
 sol = solveset(ineq, x, domain=S.Reals)
 ==
 
