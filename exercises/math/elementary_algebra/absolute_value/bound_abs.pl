@@ -3,7 +3,7 @@
 # Encadrer ax+b
 # 19/8/2020
 
-extends = /model/math/chainineq.pl
+extends = /model/math/multimathinput.pl
 
 before ==
 from sympy import imageset
