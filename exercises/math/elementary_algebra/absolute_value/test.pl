@@ -19,11 +19,11 @@ n = 3
 inputs = [MathInput(type="expr") for _ in range(n)]
 prefixes = []
 for i in range(n):
-    a = lst[i]
-    b = choice([randint(1,floor(a)),randint(ceiling(a),ceiling(a)+2)])
-    a, b = sample([a,b], 2)
-    inputs[i].sol = Abs(a-b)
-    prefixes.append(rf"$! |{latex(a)} - {latex(b)}| = !$")
+    a = randint(-6, 6, [0])
+    b = randint(-6, 6, [0])
+    expr = Abs(a*x + b)
+    inputs[i].sol = refine_absval(expr)
+    prefixes.append(rf"$! {latex(expr)} = !$")
 
 ==
 
