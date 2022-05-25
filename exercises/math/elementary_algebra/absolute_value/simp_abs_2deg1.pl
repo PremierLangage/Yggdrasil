@@ -39,14 +39,14 @@ for i in range(n):
     if case == 0:
         ineq = x <= xmin
         domain = Interval(-oo, xmin)
-        assump = rf"$! {latex(ineq)} !$"
+        assumps.append(rf"$! {latex(ineq)} !$")
     elif case == 1:
         ineq = x >= xmax
         domain = Interval(xmax, oo)
-        assump = rf"$! {latex(ineq)} !$"
+        assumps.append(rf"$! {latex(ineq)} !$")
     else:
         domain = Interval(xmin, xmax)
-        assump = rf"$! x \in {latex(domain)} !$"
+        assumps.append(rf"$! x \in {latex(domain)} !$")
     
     inputs[i].sol = refine_absval(Abs(expr1) + Abs(expr2), x, domain)
     prefixes.append(rf"$! |{latex(expr1)}| + |{latex(expr2)}| = !$")
