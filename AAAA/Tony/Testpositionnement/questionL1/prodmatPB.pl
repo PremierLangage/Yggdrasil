@@ -16,7 +16,6 @@ A = Matrix([[-1,2],[3,-2]])
 ==
 
 right==
-#$${{ A|latex }}$$ 
 $$\begin{pmatrix}-1&2\\3&-2\end{pmatrix}\begin{pmatrix}1\\2\end{pmatrix}$$
 $!\begin{pmatrix}-1&2\\3&-2\end{pmatrix}\begin{pmatrix}1&0\\2&3\end{pmatrix}!$
 ==
