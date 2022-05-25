@@ -33,6 +33,8 @@ for i in range(n):
             break
     expr1 = a*x + b
     expr2 = c*x + d
+    xmin = min([x1, x2])
+    xmax = max([x1, x2])
     case = randint(0, 2)
     if case == 0:
         ineq = x <= x0
