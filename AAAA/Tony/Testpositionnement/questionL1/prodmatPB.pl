@@ -2,7 +2,7 @@ extends= /model/basic/checkbox_rw.pl
 
  
 question==
-Parmi les produits suivants, lesquels ont pour résultat une matrice dont la somme des coefficients est positive?
+Parmi les produits suivants, lesquels ont pour résultat une matrice dont la somme des coefficients est positive? $! {{A|latex}} !$
 ==
  
 
