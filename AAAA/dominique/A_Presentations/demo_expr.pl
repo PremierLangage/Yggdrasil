@@ -4,6 +4,9 @@ extends = dr_expr.pl
 title = Calculer la distance entre deux points du plan
 
 before ==
+import sys
+text= sys.version
+
 xA = randint(-5, 5)
 yA = randint(-5, 5)
 xB = randint(-5, 5)
