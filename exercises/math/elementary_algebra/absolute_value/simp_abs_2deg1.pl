@@ -49,7 +49,7 @@ for i in range(n):
         assump = rf"$! x \in {latex(domain)} !$"
     
     inputs[i].sol = refine_absval(Abs(expr1) + Abs(expr2), x, domain)
-    prefixes.append(rf"$! |{latex(expr)}| = !$")
+    prefixes.append(rf"$! |{latex(expr1)}| + |{latex(expr2)}| = !$")
 
 ==
 
