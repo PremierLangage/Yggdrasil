@@ -30,7 +30,7 @@ for i in range(n):
     else:
         ineq = x >= x0
     domain = solveset(ineq, x, domain=S.Reals)
-    inputs[i].sol = refine_absval(expr, x, Interval(1, oo))
+    inputs[i].sol = refine_absval(expr, x, domain)
     prefixes.append(rf"$! {latex(expr)} = !$")
 
 ==
