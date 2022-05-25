@@ -15,7 +15,8 @@ from sympy import Matrix
 A = Matrix([[-1,2],[3,-2]]) 
 ==
 
-right== 
+right==
+#{{A tex}} 
 $!\begin{pmatrix}
     -1&2\\3&-2
     \end{pmatrix}\begin{pmatrix}
