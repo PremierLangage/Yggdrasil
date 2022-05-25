@@ -6,7 +6,7 @@
 extends = /model/math/chainineq.pl
 
 before ==
-from sympy import imageset
+from sympy.calculus.util import function_range
 from sympy2latex import latex_chainineq
 var('x')
 a = randint(-3, 3, [0, 1])
