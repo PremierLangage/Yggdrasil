@@ -28,7 +28,7 @@ for i in range(n):
         c = randint(-6, 6, [0])
         d = randint(-6, 6, [0])
         x1 = -Rational(b, a)
-        x2 = -Rational(b, a)
+        x2 = -Rational(c, d)
         if x1 != x2:
             break
     expr1 = a*x + b
