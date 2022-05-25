@@ -37,9 +37,9 @@ for i in range(n):
     xmax = max([x1, x2])
     case = randint(0, 2)
     if case == 0:
-        ineq = x <= x0
+        ineq = x <= xmin
     elif case == 1:
-
+        ineq = x >= xmax
     else:
         ineq = x >= x0
     ineqs.append(ineq)
