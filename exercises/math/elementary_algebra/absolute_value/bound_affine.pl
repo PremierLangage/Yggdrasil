@@ -6,16 +6,21 @@
 extends = /model/math/chainineq.pl
 
 before ==
-from sympy.calculus.util import function_range
+from sympy import imageset
 from sympy2latex import latex_chainineq
 var('x')
+
+def image_abs(interv):
+    a, b = interv.start, interv.end
+    if a >= 0
+
 a = randint(-3, 3, [0, 1])
 b = randint(-8, 8, [0])
 x1, x2 = sorted(sampleint(-5, 5, 2))
 interv = choice([Interval.Lopen(x1, x2), Interval.Ropen(x1, x2)])
 expr = a*x+b
 
-sol = function_range(expr, x, interv) 
+sol = imageset(x, Abs(expr), interv) 
 sol_chainineq = latex_chainineq(expr, sol) 
 ineq = latex_chainineq(x, interv) 
 ==
