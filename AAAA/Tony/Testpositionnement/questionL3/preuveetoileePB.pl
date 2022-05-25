@@ -8,7 +8,7 @@ On montre que si une famille $!(e_1,\ldots,e_n)!$ d'un ev $!E!$ est libre et que
  $!\sum_{i=1}^n\lambda_if(e_i)=0_F!$  $!\underset{(1)}{alors}!$
  $!f\left(\sum_{i=1}^n\lambda_i e_i\right)=0_F!$
   $!\underset{(2)}{donc}!$ $!\sum_{i=1}^n\lambda_i e_i=0_E!$
-   $!\underset{(3)}{donc}!$ $!\forall i\in\{1,\ldots,n\}, \lambda_i=0!$.
+   $!\underset{(3)}{donc}!$ $!\forall i\in\{1,\ldots,n\}, \lambda_i=0!$
    donc $!(f(e_1),\ldots,f(e_n))!$ est libre.
 ==
  
