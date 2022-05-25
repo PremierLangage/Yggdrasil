@@ -10,9 +10,9 @@ nbitems=4
 minright = 2
 maxright = 2
 
-#before ==
-#A = Matrix([[-1,2],[3,-2]]) 
-#==
+before ==
+n=1
+==
 
 right== 
 $!\begin{pmatrix}
