@@ -47,9 +47,12 @@ for i in range(n):
     else:
         domain = Interval(xmin, xmax)
         assumps.append(rf"$! x \in {latex(domain)} !$")
-    
-    inputs[i].sol = refine_absval(Abs(expr1) + Abs(expr2), x, domain)
-    prefixes.append(rf"$! |{latex(expr1)}| + |{latex(expr2)}| = !$")
+    if i == 0:
+        inputs[i].sol = refine_absval(Abs(expr1) + Abs(expr2), x, domain)
+        prefixes.append(rf"$! |{latex(expr1)}| + |{latex(expr2)}| = !$")
+    else:
+        inputs[i].sol = refine_absval(Abs(expr1) - Abs(expr2), x, domain)
+        prefixes.append(rf"$! |{latex(expr1)}| - |{latex(expr2)}| = !$")
 
 ==
 
