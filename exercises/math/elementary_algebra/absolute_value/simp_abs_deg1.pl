@@ -17,7 +17,7 @@ def refine_absval(expr, var, domain):
             replacements[a] = a.args[0]
     return expr.xreplace(replacements)
 
-n = 2
+n = 3
 inputs = [MathInput(type="expr") for _ in range(n)]
 prefixes = []
 ineqs = []
