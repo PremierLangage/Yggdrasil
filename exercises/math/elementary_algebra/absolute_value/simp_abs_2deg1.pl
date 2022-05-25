@@ -60,7 +60,7 @@ Réécrire les expressions suivantes en fonction des hypothèses données sur $!
 inputblock ==
 {% for i in range(n) %}
 <div style="display: block; margin-bottom: 1em;">
-{{i+1}}. On suppose  $! {{ ineqs[i]|latex }} !$. <br><br>
+{{i+1}}. On suppose  {{ assump }}. <br><br>
 {{ prefixes[i] }} 
 {{ inputs[i]|html }}
 </div>
