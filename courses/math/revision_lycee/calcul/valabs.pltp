@@ -1,5 +1,9 @@
 title = Valeur absolue
 
+introduction ==
+
+==
+
 @ /exercises/math/elementary_algebra/absolute_value/simp_abs_nbdiff.pl
 
 @ /exercises/math/elementary_algebra/absolute_value/equation/absdeg1_cst.pl
