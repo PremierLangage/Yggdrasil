@@ -13,7 +13,7 @@ Ecrivez le code qui met dans la variable VERSION le numéro de version du python
 ==
 
 pltest==
->>> import sys
+>>> import sys #
 >>> sys.version == VERSION # Verification 
-true
+True
 ==
