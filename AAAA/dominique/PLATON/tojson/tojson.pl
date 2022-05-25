@@ -6,8 +6,7 @@ extends=/ComputerScience/python/template/pltest.pl
 @ /utils/sandboxio.py
 form=
 author=DR
-title= Initialisation d'une variable (3).
-tag=variable | affectation
+title= 
 text==
 
 
