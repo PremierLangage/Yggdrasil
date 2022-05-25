@@ -24,7 +24,7 @@ for i in range(n):
     a = randint(-6, 6, [0])
     b = randint(-6, 6, [0])
     expr = Abs(a*x + b)
-    inputs[i].sol = refine_absval(expr)
+    inputs[i].sol = refine_absval(expr, x, Interval(1, oo))
     prefixes.append(rf"$! {latex(expr)} = !$")
 
 ==
