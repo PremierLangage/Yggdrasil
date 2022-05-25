@@ -27,13 +27,17 @@ for i in range(n):
         b = randint(-6, 6, [0])
         c = randint(-6, 6, [0])
         d = randint(-6, 6, [0])
-        x0 = -Rational(b, a)
         x1 = -Rational(b, a)
-        if x0 != x1:
+        x2 = -Rational(b, a)
+        if x1 != x2:
             break
-    expr = a*x + b
-    if randint(0, 1) == 0:
+    expr1 = a*x + b
+    expr2 = c*x + d
+    case = randint(0, 2)
+    if case == 0:
         ineq = x <= x0
+    elif case == 1:
+
     else:
         ineq = x >= x0
     ineqs.append(ineq)
