@@ -33,10 +33,7 @@ for i in range(n):
     x1, x2 = sorted(sampleint(-5, 5, 2))
     interv = choice([Interval.Lopen(x1, x2), Interval.Ropen(x1, x2)])
     inputs[i].sol = image_abs(interv)
-    assumps.append(latex_chainineq(x, interv) 
-
-sol_chainineq = latex_chainineq(Abs(x), sol))
-
+    assumps.append(latex_chainineq(x, interv) )
 ==
 
 question ==
