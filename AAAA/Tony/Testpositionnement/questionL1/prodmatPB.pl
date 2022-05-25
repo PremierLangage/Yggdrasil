@@ -16,7 +16,7 @@ A = Matrix([[-1,2],[3,-2]])
 ==
 
 right==
-#{{A tex}} 
+$${{A}}$$ 
 $!\begin{pmatrix}
     -1&2\\3&-2
     \end{pmatrix}\begin{pmatrix}
