@@ -47,9 +47,8 @@ for i in range(n):
     else:
         domain = Interval(xmin, xmax)
         assump = rf"$! x \in {latex(domain)} !$"
-    ineqs.append(ineq)
     
-    inputs[i].sol = refine_absval(Abs(expr), x, domain)
+    inputs[i].sol = refine_absval(Abs(expr1) + Abs(expr2), x, domain)
     prefixes.append(rf"$! |{latex(expr)}| = !$")
 
 ==
