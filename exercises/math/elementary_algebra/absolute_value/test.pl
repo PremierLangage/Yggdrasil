@@ -6,6 +6,8 @@ title = Simplification de valeurs abolues
 before == #|py|
 from sympy import solveset, EmptySet, Interval
 
+var('x')
+
 def refine_absval(expr, var, domain):
     replacements = {}
     for a in expr.atoms(Abs):
