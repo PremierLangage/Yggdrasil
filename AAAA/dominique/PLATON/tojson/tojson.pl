@@ -15,7 +15,7 @@ Initialisez les variables jour, mois, annee avec la date du jour.
 ==
 
 #@ /AAAA/dominique/PLATON/tojson/before.py [builder.py]
-@ before.py [grader.py]
+@ before.py [builder.py]
 before==
 import sys
 text += sys.version
