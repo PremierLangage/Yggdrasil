@@ -22,16 +22,8 @@ $!\begin{pmatrix}-1&2\\3&-2\end{pmatrix}\begin{pmatrix}1&0\\2&3\end{pmatrix}!$
 ==
 
 wrong== 
-$!\begin{pmatrix}
-    1\\1
-    \end{pmatrix}\begin{pmatrix}
-    -1&2\\3&-2
-    \end{pmatrix}!$
-$!\begin{pmatrix}
-    -1&2\\3&-2
-    \end{pmatrix}\begin{pmatrix}
-    1&2&3\\2&2&1\\1&2&1
-    \end{pmatrix}!$
+$!\begin{pmatrix}1\\1 \end{pmatrix}\begin{pmatrix} -1&2\\3&-2 \end{pmatrix}!$
+$!\begin{pmatrix}-1&2\\3&-2\end{pmatrix}\begin{pmatrix}1&2&3\\2&2&1\\1&2&1\end{pmatrix}!$
 ==
 
 scoring = CorrectItems
