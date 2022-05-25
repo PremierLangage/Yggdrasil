@@ -15,7 +15,7 @@ x1, x2 = sorted(sampleint(-5, 5, 2))
 interv = choice([Interval.Lopen(x1, x2), Interval.Ropen(x1, x2)])
 expr = a*x+b
 
-sol = imageset(x, Abs(expr), interv) 
+sol = function_range(Abs(expr), x, interv) 
 sol_chainineq = latex_chainineq(expr, sol) 
 ineq = latex_chainineq(x, interv) 
 ==
