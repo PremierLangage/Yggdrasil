@@ -34,5 +34,5 @@ ineq = latex_chainineq(x, interv)
 ==
 
 question ==
-Soit un nombre $% x %$ tel que $% {{ineq}} %$. Déterminer l'encadrement le plus précis possible de $% {{expr|latex}} %$.
+Soit un nombre $% x %$ tel que $! {{ineq}} !$. Déterminer l'encadrement le plus précis possible de $% {{expr|latex}} %$.
 ==
