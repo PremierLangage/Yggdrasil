@@ -18,7 +18,7 @@ A = Matrix([[-1,2],[3,-2]])
 
 question ==
 Factoriser l'expression suivante :
-$$ {{ expr|latex }}. $$
+$$ {{ expr|latex }}. $$  $${{A|latex}}$$
 ==
 
 poly_form = "factorized"
