@@ -13,7 +13,7 @@ var('x')
 def image_abs(interv):
     a, b = interv.start, interv.end
     l, r = interv.left_open, interv.right_open
-    if a >=0 :
+    if a >=0:
         return Interval(a, b, left_open=l, right_open=r)
     if b <= 0:
         return Interval(Abs(b), Abs(a), left_open=r, right_open=l)
