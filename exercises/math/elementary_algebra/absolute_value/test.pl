@@ -25,7 +25,7 @@ for i in range(n):
     a = randint(-6, 6, [0])
     b = randint(-6, 6, [0])
     x0 = -Rational(b, a)
-    expr = Abs(a*x + b)
+    expr = a*x + b
     if randint(0, 1) == 0:
         ineq = x <= x0
     else:
@@ -33,7 +33,7 @@ for i in range(n):
     ineqs.append(ineq)
     domain = solveset(ineq, x, domain=S.Reals)
     inputs[i].sol = refine_absval(expr, x, domain)
-    prefixes.append(rf"$! |{latex(a*x+b)}| = !$")
+    prefixes.append(rf"$! |{latex(expr)}| = !$")
 
 ==
 
