@@ -41,4 +41,13 @@ question ==
 Réécrire les expressions suivantes sans utiliser de valeur absolue. {{ineq|latex}}
 ==
 
+inputblock ==
+{% for i in range(n) %}
+<div style="display: block; margin-bottom: 1em;">
+{{i+1}}. On suppose {{ ineqs{i]|latex }}. <br><br>
+{{ prefixes[i] }} 
+{{ inputs[i]|html }}
+</div>
+{% endfor %}
+==
 
