@@ -35,7 +35,7 @@ for i in range(n):
 ==
 
 question ==
-Réécrire les expressions suivantes sans utiliser de valeur absolue.
+Réécrire les expressions suivantes sans utiliser de valeur absolue. {{ineq|latex}}
 ==
 
 
