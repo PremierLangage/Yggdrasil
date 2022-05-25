@@ -11,7 +11,8 @@ minright = 2
 maxright = 2
 
 before ==
-A = Matrix([[-1,2],[3,-2]]) 
+n=1
+#A = Matrix([[-1,2],[3,-2]]) 
 ==
 
 right== 
