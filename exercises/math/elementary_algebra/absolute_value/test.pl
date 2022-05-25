@@ -4,7 +4,7 @@ title = Simplification de valeurs abolues
 
 
 before == #|py|
-from sympy import solveset, EmptySet, Interval
+from sympy import solveset, EmptySet, Interval, S
 
 var('x')
 
