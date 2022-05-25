@@ -11,7 +11,7 @@ minright = 2
 maxright = 2
 
 before ==
-#from sympy import Matrix
+from sympy import Matrix
 A = Matrix([[-1,2],[3,-2]]) 
 ==
 
