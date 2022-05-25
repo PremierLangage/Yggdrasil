@@ -43,7 +43,7 @@ Déterminer l'encadrement le plus précis possible de $% {{expr|latex}} %$.
 inputblock ==
 {% for i in range(n) %}
 <div style="display: block; margin-bottom: 1em;">
-{{i+1}}. On suppose  {{ assumps[i] }}. <br><br>
+{{i+1}}. On suppose  $! {{ assumps[i] }} !$. <br><br>
 {{ prefixes[i] }} 
 {{ inputs[i]|html }}
 </div>
