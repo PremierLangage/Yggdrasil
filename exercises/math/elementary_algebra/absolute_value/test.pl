@@ -20,7 +20,7 @@ def refine_absval(expr, var, domain):
 n = 3
 inputs = [MathInput(type="expr") for _ in range(n)]
 prefixes = []
-ineq = []
+ineqs = []
 for i in range(n):
     a = randint(-6, 6, [0])
     b = randint(-6, 6, [0])
