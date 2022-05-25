@@ -11,14 +11,11 @@ P = x + randint(-3, 3,[0])
 Q = x + randint(-3, 3,[0])
 sol = randint(-2, 2,[0]) * P * Q
 expr = sol.expand()
-
-from sympy import Matrix
-A = Matrix([[-1,2],[3,-2]]) 
 ==
 
 question ==
 Factoriser l'expression suivante :
-$$ {{ expr|latex }}. $$  $${{A|latex}}$$
+$$ {{ expr|latex }}. $$  
 ==
 
 poly_form = "factorized"
