@@ -11,8 +11,8 @@ minright = 2
 maxright = 2
 
 before ==
-n=1
-#A = Matrix([[-1,2],[3,-2]]) 
+from sympy import Matrix
+A = Matrix([[-1,2],[3,-2]]) 
 ==
 
 right== 
