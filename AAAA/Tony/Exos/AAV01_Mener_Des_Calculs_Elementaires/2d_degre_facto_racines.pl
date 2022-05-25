@@ -6,6 +6,7 @@ extends = /model/math/poly.pl
 title = Savoir résoudre une équation du second degré
 
 before ==
+from sympy2latex import latex
 x = Symbol('x')
 P = x + randint(-3, 3,[0])
 Q = x + randint(-3, 3,[0])
