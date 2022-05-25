@@ -38,7 +38,7 @@ for i in range(n):
 ==
 
 question ==
-Réécrire les expressions suivantes sans utiliser de valeur absolue. {{ineq|latex}}
+Réécrire les expressions suivantes en fonction des hypothèses données sur $! x !$ sans utiliser de valeur absolue.
 ==
 
 inputblock ==
