@@ -12,7 +12,11 @@ var('x')
 
 def image_abs(interv):
     a, b = interv.start, interv.end
-    if a >= 0
+    l, r = interv.left_open, interv.right_open
+    if a >=0 :
+        return Interval(a, b, left_open=l, right_open=r)
+    if b <= 0:
+        return Interval(Abs(b), Abs(a), left_open=r, right_open=l)
 
 a = randint(-3, 3, [0, 1])
 b = randint(-8, 8, [0])
