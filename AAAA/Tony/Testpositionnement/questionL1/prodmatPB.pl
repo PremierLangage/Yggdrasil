@@ -11,9 +11,9 @@ maxright = 2
 
 before ==
 from sympy import Matrix
-#from sympy2latex import latex
+from sympy2latex import latex
 A = Matrix([[-1,2],[3,-2]]) 
-#Atex = latex(A)
+Atex = latex(A)
 ==
 
 right==
