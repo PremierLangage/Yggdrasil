@@ -5,9 +5,6 @@ title = Inéquation avec valeur absolue
 lang = fr
 
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input1.config = keyboards_JSON
-
 a,b=list_randint(2,-6,6,[0,1,-1])
 d=randint(1,5)
 var('x')
