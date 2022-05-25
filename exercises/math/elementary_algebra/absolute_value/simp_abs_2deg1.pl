@@ -22,9 +22,15 @@ inputs = [MathInput(type="expr") for _ in range(n)]
 prefixes = []
 ineqs = []
 for i in range(n):
-    a = randint(-6, 6, [0])
-    b = randint(-6, 6, [0])
-    x0 = -Rational(b, a)
+    while True:
+        a = randint(-6, 6, [0])
+        b = randint(-6, 6, [0])
+        c = randint(-6, 6, [0])
+        d = randint(-6, 6, [0])
+        x0 = -Rational(b, a)
+        x1 = -Rational(b, a)
+        if x0 != x1:
+            break
     expr = a*x + b
     if randint(0, 1) == 0:
         ineq = x <= x0
