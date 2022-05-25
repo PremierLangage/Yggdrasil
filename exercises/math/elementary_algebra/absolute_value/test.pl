@@ -25,6 +25,10 @@ for i in range(n):
     b = randint(-6, 6, [0])
     x0 = -Rational(b, a)
     expr = Abs(a*x + b)
+    if randint(0, 1) == 0:
+        ineq = x <= x0
+    else:
+        ineq = x >= x0
     inputs[i].sol = refine_absval(expr, x, Interval(1, oo))
     prefixes.append(rf"$! {latex(expr)} = !$")
 
