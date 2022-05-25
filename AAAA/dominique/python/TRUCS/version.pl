@@ -1,5 +1,6 @@
 
 
+extends= /ComputerScience/python/template/pltest.pl
 
 
 title= Lire la doc 
