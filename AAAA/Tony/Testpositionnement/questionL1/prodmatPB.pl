@@ -10,6 +10,11 @@ nbitems=4
 minright = 2
 maxright = 2
 
+before ==
+ 
+A = Matrix([[-1,2],[3,-2]]) 
+==
+
 right== 
 $!\begin{pmatrix}
     -1&2\\3&-2
