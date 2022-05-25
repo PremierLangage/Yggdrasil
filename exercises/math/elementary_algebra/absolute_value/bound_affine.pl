@@ -17,6 +17,8 @@ def image_abs(interv):
         return Interval(a, b, left_open=l, right_open=r)
     if b <= 0:
         return Interval(Abs(b), Abs(a), left_open=r, right_open=l)
+    if Abs(a) < Abs(b):
+        return Interval(0, Abs(b), left_open=False, right_open=r)
 
 a = randint(-3, 3, [0, 1])
 b = randint(-8, 8, [0])
