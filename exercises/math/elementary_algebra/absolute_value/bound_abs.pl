@@ -29,7 +29,7 @@ interv = choice([Interval.Lopen(x1, x2), Interval.Ropen(x1, x2)])
 expr = a*x+b
 
 sol = image_abs(interv) 
-sol_chainineq = latex_chainineq(expr, sol) 
+sol_chainineq = latex_chainineq(Abs(x), sol) 
 ineq = latex_chainineq(x, interv) 
 ==
 
