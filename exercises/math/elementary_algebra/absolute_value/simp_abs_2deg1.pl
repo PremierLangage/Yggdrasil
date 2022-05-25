@@ -54,7 +54,7 @@ for i in range(n):
 ==
 
 question ==
-Réécrire les expressions suivantes en fonction des hypothèses données sur $! x !$ sans utiliser de valeur absolue.
+Réécrire les expressions suivantes (en fonction des hypothèses données sur $! x !$) sans utiliser de valeur absolue.
 ==
 
 inputblock ==
