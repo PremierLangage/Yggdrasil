@@ -1,4 +1,5 @@
 
+extends=/ComputerScience/python/template/pltest.pl
 
 # Ceci est un template pour faire des exercices avec la balise de correction pltest
 doc==
