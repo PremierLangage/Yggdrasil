@@ -7,8 +7,10 @@ title = Opérations sur les petits "o" : Somme.
 
 before ==
 var('x')
-n = randint(1, 4)
+n = randint(1, 3)
 m = randint(4,6)
+X1 = x**n
+X2 = x**m
 sol = x**n
 ==
 
@@ -22,11 +24,11 @@ embed ==
 ==
 
 prefix ==
-$! o(x^{{n|latex}}) + o(x^{{m|latex}}) = o( !$
+$! o({{X1|latex}}) + o({{X2|latex}}) = o( !$
 ==
 
 solution ==
-$$ o(x^{{n|latex}}) + o(x^{{m|latex}}) = o({{ sol|latex }})  .$$
+$$ o({{X1|latex}}) + o({{X2|latex}}) = o({{ sol|latex }})  .$$
 
 En effet, il faut appliquer ici la règle suivante : Si $! n \leq m!$ alors $! o(x^n) + o(x^m) = o(x^n) !$.
 ==
