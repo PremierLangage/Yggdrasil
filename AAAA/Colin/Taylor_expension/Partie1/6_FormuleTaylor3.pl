@@ -8,7 +8,7 @@ extends = /model/math/expr.pl
 before ==
 var('x')
 n = 3
-A=[-2,-1,1,2]
+A=[1,2]
 a=choice(A)
 
 L = []
@@ -19,7 +19,6 @@ for i in range(n+1) :
 f = L[0] + L[1]*(x-a) + L[2]*(x-a)**2 + L[3]*(x-a)**3
 sol = f
 
-X=x-a
 ==
 
 question ==
@@ -37,7 +36,7 @@ $! f(x) = !$
 ==
 
 solution ==
-$! f(x) = {{ sol|latex }} + o(({{X|latex}})^{{ n|latex }})  \quad [x \rightarrow {{a | latex}}]!$.
+$! f(x) = {{L[0] | latex}} + {{L[1] | latex}}{{X|latex}} + L[2]*(x-a)**2 + L[3]*(x-a)**3 + o(({{X|latex}})^{{ n|latex }})  \quad [x \rightarrow {{a | latex}}]!$.
 ==
 
 latexsettings.order = 'ilex'
