@@ -3,7 +3,7 @@
 
 extends = /model/math/expr.pl
 
-title = DL - Opérations sur les petits 0.
+title = Opérations sur les petits "o" : Produit 1.
 
 before ==
 var('x')
