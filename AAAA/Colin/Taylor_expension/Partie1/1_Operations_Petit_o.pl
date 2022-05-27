@@ -3,7 +3,7 @@
 
 title = DL - Opérations sur les petits 0.
 
-extends = limit_.pl
+extends = /model/math/multimathinput.pl
 
 before ==
 ninput=3
