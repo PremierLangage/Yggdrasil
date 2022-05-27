@@ -28,11 +28,11 @@ embed ==
 ==
 
 prefix ==
-$! {{a|latex}} \cdot {{Xn|latex}} \times o({{Xm|latex}}) + x^{ {{k|latex}} } + o(x^{{l|latex}}) = o( !$
+$! {{a|latex}}  {{Xn|latex}} \times o({{Xm|latex}}) + x^{ {{k|latex}} } + o(x^{{l|latex}}) = o( !$
 ==
 
 solution ==
-$! {{a|latex}} \cdot {{Xn|latex}} \times o({{Xm|latex}}) + x^{ {{k|latex}} } + o(x^{{l|latex}}) = o({{ sol|latex }})  !$.
+$! {{a|latex}}  {{Xn|latex}} \times o({{Xm|latex}}) + x^{ {{k|latex}} } + o(x^{{l|latex}}) = o({{ sol|latex }})  !$.
 ==
 
 latexsettings.order = 'ilex'
