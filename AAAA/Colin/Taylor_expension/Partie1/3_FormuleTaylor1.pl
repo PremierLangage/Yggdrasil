@@ -31,7 +31,7 @@ $! f(x) = !$
 ==
 
 solution ==
-$! f(x) = {{ sol|latex }} + o({{ x }}^{{ n|latex }})  \quad [x \rightarrow 0]!$.
+$! f(x) = {{ sol|latex }} + o(x^{{ n|latex }})  \quad [x \rightarrow 0]!$.
 ==
 
 latexsettings.order = 'ilex'
