@@ -31,9 +31,9 @@ if param['degree'] == 2:
     P = P/content(P)
     P = choice([-1,1])*choice([1 , 2])*P
     
-    if param['givenroot']=="int":
+    if param['givenroot'] == "int":
         x1 = q
-    elif param['givenroot']=="rat":
+    elif param['givenroot'] == "rat":
         x1 = Rational(b,a)
 
 sol = factor(P)
