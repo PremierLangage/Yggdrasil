@@ -15,12 +15,14 @@ for i in range(n+1) :
     a=randint(-10,10)
     b=a/factorial(i)
     L.append(b)
+
+f = L[0] + L[1]*x + L[2]*x**2 + L[3]*x**3 + L[4]*x**4
 sol = 0
 ==
 
 question ==
 Soit $! f !$ une fonction de classe $!\mathcal C^{{n|latex}} !$ sur $!\mathbb R!$ ayant pour développement limité en 0 et à l'ordre 4 :
-$$ f(x) = {{L[0]|latex}} + {{L[1]|latex}}  x + {{L[2]|latex}}  x^2 + {{L[3]|latex}}  x^3 + {{L[4]|latex}}  x^4 + o(x^4)$$
+$$ f(x) = {{f|latex}} + o(x^4).$$
 Retrouver à partir de la formule de Taylor-Youngla vameur de  $! f^{ {{m|latex}}}  !$.
 ==
 
