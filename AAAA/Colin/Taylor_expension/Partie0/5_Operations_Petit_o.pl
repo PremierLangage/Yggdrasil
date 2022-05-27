@@ -8,7 +8,9 @@ title = Opérations sur les petits "o" : Mix.
 before ==
 var('x')
 n = randint(1, 3)
+Xn = x**n
 m = randint(1,3)
+Xm = x**m
 a=randint(1,10)
 b=randint(-10,-1)
 l=randint(2,8)
@@ -26,7 +28,7 @@ embed ==
 ==
 
 prefix ==
-$! {{a|latex}} \cdot x^{{n|latex}} \times o(x^{{m|latex}}) + x^{ {{k|latex}} } + o(x^{{l|latex}}) = o( !$
+$! {{a|latex}} \cdot {{Xn|latex}} \times o({{Xm|latex}}) + x^{ {{k|latex}} } + o(x^{{l|latex}}) = o( !$
 ==
 
 solution ==
