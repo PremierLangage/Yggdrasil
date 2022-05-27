@@ -23,7 +23,7 @@ A l'aide de la formule de Taylor-Young, donner le développement limité de $! f
 ==
 
 embed ==
-# + o({{ x }}^{{ n|latex }}) \quad [x \rightarrow 0]
+# + o(x^{{ n|latex }}) \quad [x \rightarrow 0]
 ==
 
 prefix ==
