@@ -12,7 +12,7 @@ before ==
 from sympy import factor, content
 var('x')
 
-q, r, s = sample([1, 2, 3, 4, 5, 6, 7], 3)
+q, r, s = sample([1, 2, 3, 4, 5], 3)
 q=choice([-1,1])*q
 r=choice([-1,1])*r
 s=choice([-1,1])*s
