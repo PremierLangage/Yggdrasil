@@ -28,7 +28,7 @@ Retrouver à partir de la formule de Taylor-Youngla valeur de  $! f^{ ({{m|latex
 
 
 prefix ==
-$! f^{ {{m|latex}}}(0) = !$
+$! f^{ ({{m|latex}}) }(0) = !$
 ==
 
 solution ==
