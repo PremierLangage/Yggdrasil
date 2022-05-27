@@ -26,7 +26,7 @@ embed ==
 ==
 
 prefix ==
-$! {{a|latex}} \cdot x^{{n|latex}} \times o(x^{{m|latex}}) + x^{{k|latex}} + o(x^{{l|latex}}) = o( !$
+$! {{a|latex}} \cdot x^{{n|latex}} \times o(x^{{m|latex}}) + x^{ {{k|latex}} } + o(x^{{l|latex}}) = o( !$
 ==
 
 solution ==
