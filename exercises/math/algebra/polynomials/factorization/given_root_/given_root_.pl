@@ -26,14 +26,14 @@ if param['degree'] == 2:
     if param['roots'] == "int":
         P = (x-q)*(x-r)
     elif param['roots'] == "intrat":
-        P=(x-q)*(a*x-b)
+        P = (x-q)*(a*x-b)
     elif param['roots']=="rat":
         P = (a*x-b)*(c*x-d)
-    P=choice([-1,1])*choice([1,2])*P
+    P = choice([-1,1])*choice([1,2])*P
     if param['givenroot']=="int":
-        x1=q
+        x1 = q
     elif param['givenroot']=="rat":
-        x1=Rational(b,a)
+        x1 = Rational(b,a)
 
 sol = factor(P)
 expr = P.expand()
