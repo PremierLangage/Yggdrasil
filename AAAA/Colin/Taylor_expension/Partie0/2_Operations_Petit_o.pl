@@ -22,7 +22,7 @@ embed ==
 ==
 
 prefix ==
-$! x^{{n|latex}} * o(x^{{m|latex}}) = o( !$
+$! x^{{n|latex}} \times o(x^{{m|latex}}) = o( !$
 ==
 
 solution ==
