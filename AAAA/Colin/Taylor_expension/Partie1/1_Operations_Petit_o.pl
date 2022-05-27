@@ -14,7 +14,7 @@ sol = x**n
 ==
 
 question ==
-Simplifier l'expression $! o(x^{{n|latex}}) + o(x^{{n|latex}}) !$ (pour x qui tend vers $! 0 !$) en l'écrivant sous la forme
+Simplifier l'expression $! o(x^{{n|latex}}) + o(x^{{m|latex}}) !$ (pour x qui tend vers $! 0 !$) en l'écrivant sous la forme
  $! o(x^n) !$ pour un $! n !$ bien choisi.
 ==
 
