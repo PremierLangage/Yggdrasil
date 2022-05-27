@@ -5,8 +5,8 @@
 extends = /model/math/poly.pl
 
 param.degree = 2
-param.roots = int
-param.givenroot = int
+param.roots = "int"
+param.givenroot = "int"
 
 before ==
 from sympy import factor
