@@ -32,7 +32,7 @@ $$ {{ f|latex }} = {{ sol|latex }} + o({{ x }}^{{ n }})  \quad [x \rightarrow 0]
 
 En effet, il s'agit d'appliquer la formule de référence :
 
-$$ (1+x)^{ {{a|latex}} } &= 1+ {{a|latex}} x+ \frac{ {{a|latex}} ({{a|latex}} - 1)}{2!}x^2 +\frac{ {{a|latex}} ( {{a|latex}} -1) ({{a|latex}} - 2)}{3!}x^3 + o(x^3) . $$
+$$ (1+x)^{ {{a|latex}} } = 1+ {{a|latex}} x+ \frac{ {{a|latex}} ({{a|latex}} - 1)}{2!}x^2 +\frac{ {{a|latex}} ( {{a|latex}} -1) ({{a|latex}} - 2)}{3!}x^3 + o(x^3) . $$
 ==
 
 latexsettings.order = 'ilex'
