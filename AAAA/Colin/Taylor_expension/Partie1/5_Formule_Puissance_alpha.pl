@@ -1,7 +1,7 @@
 # Auteur : Colin Petitjean
-# Sujet : Développements Limités - Manipuler les formules de références 1
+# Sujet : Développements Limités - Fonction Puissance alpha
 
-title = DL - Formules de références 1
+title = DL - Formules de références : Fonctions puissances
 
 extends = /model/math/expr.pl
 
