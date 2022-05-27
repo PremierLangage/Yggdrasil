@@ -32,7 +32,7 @@ $! {{a|latex}} \cdot {{Xn|latex}} \times o({{Xm|latex}}) + x^{ {{k|latex}} } + o
 ==
 
 solution ==
-$! {{a|latex}} \cdot x^{{n|latex}} \times o(x^{{m|latex}}) + x^{ {{k|latex}} } + o(x^{{l|latex}}) = o({{ sol|latex }})  !$.
+$! {{a|latex}} \cdot {{Xn|latex}} \times o({{Xm|latex}}) + x^{ {{k|latex}} } + o(x^{{l|latex}}) = o({{ sol|latex }})  !$.
 ==
 
 latexsettings.order = 'ilex'
