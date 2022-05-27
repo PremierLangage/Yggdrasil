@@ -19,7 +19,7 @@ Simplifier l'expression $! {{ f|latex }} !$ (pour x qui tend vers $! 0 !$) en l'
 ==
 
 embed ==
-# + o({{ x }}^{{ n }}) \quad [x \rightarrow 0]
+# + ({{ x }}^{{ n }}) \quad [x \rightarrow 0]
 ==
 
 prefix ==
