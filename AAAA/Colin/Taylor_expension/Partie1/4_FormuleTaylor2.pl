@@ -7,18 +7,21 @@ extends = /model/math/expr.pl
 before ==
 var('x')
 n = 4
+m=randint(0,n)
 a0 = randint(-10, 10)
 a1 = randint(-10, 10)
 a2 = randint(-10, 10)
 a3 = randint(-10, 10)
 a4 = randint(-10, 10)
-sol = a0 + a1 * x + a2 * x**2/2 + a3 * x**3/6 + a4 * x**4/24
+
+
+sol = 
 ==
 
 question ==
-Soit $! f !$ une fonction de classe $!\mathcal C^{{n|latex}} !$ sur $!\mathbb R!$ telle que 
-$$ f(0) = {{a0|latex}}, \quad f^{'}(0) = {{a1|latex}}, \quad f^{''}(0) = {{a2|latex}}, \quad f^{(3)}(0) = {{a1|latex}}, \quad f^{(4)}(0) = {{a4|latex}}.$$ 
-A l'aide de la formule de Taylor-Young, donner le développement limité de $! f !$ en 0 et à l'ordre $! {{ n }} !$.
+Soit $! f !$ une fonction de classe $!\mathcal C^{{n|latex}} !$ sur $!\mathbb R!$ telle que le développement limité de $! f !$ en 0 et à l'ordre 4 vaut
+$$ f(x) = {{b0|latex}} + {{b1|latex}} * x + {{b2|latex}} * x**2 + {{b3|latex}} * x**3 + {{b4|latex}} * x**4 + o(x^4)$$
+Retrouver à partir de la formule de Taylor-Youngla vameur de  $! f^{ {{m|latex}}}  !$.
 ==
 
 embed ==
