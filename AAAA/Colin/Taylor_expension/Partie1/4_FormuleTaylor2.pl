@@ -1,4 +1,7 @@
+# Auteur : Colin Petitjean
+# Sujet : développements limités - Manipuler la formule de Taylor-Young 2
 
+title = DL - Formule de Taylor-Young 1
 extends = /model/math/expr.pl
 
 before ==
