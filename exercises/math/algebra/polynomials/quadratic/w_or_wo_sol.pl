@@ -7,7 +7,7 @@ from sympy import Eq
 var('x')
 indsol = []
 items = []
-for i in range(5):
+for i in range(4):
     a = randint(-3, 3, [0])
     b = randint(-5, 5)
     c = randint(-3, 3)
