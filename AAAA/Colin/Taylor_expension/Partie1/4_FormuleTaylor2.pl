@@ -12,7 +12,7 @@ m=randint(0,n)
 L=[]
 for i in range(n+1) :
     a=randint(-10,10)
-    b=a/factorial(i)
+    b=a/i!
     L.append(b)
 sol = 0
 ==
