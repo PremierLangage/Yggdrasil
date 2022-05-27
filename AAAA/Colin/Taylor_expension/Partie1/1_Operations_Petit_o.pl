@@ -18,15 +18,15 @@ Simplifier l'expression $! o(x^{{n|latex}}) + o(x^{{m|latex}}) !$ (pour x qui te
 ==
 
 embed ==
-# + o({{ x }}^{{ n }}) \quad [x \rightarrow 0]
+# ) \quad [x \rightarrow 0]
 ==
 
 prefix ==
-$! o(x^{{n|latex}}) + o(x^{{m|latex}}) = !$
+$! o(x^{{n|latex}}) + o(x^{{m|latex}}) = o( !$
 ==
 
 solution ==
-$! {{ sol|latex }} + o({{ x }}^{{ n }})  \quad [x \rightarrow 0]!$.
+$! {{ sol|latex }}  !$.
 ==
 
 latexsettings.order = 'ilex'
