@@ -13,7 +13,7 @@ a=randint(1,10)
 b=randint(-10,-1)
 l=randint(2,8)
 k=randint(7,10)
-sol = x**Min(n+m,l)
+sol = x**min(n+m,l)
 ==
 
 question ==
