@@ -23,7 +23,7 @@ sol = f
 question ==
 Soit $! f !$ une fonction de classe $!\mathcal C^{{n|latex}} !$ sur $!\mathbb R!$ telle que 
 $$ f({{a|latex}}) = {{L[0]|latex}}, \quad f'({{a|latex}}) = {{L[1]|latex}}, \quad f^{''}({{a|latex}}) = {{L[2]|latex}}, \quad f^{(3)}({{a|latex}}) = {{L[3]|latex}}.$$ 
-A l'aide de la formule de Taylor-Young, donner le développement limité de $! f !$ en {{a|latex}} et à l'ordre $! {{ n }} !$.
+A l'aide de la formule de Taylor-Young, donner le développement limité de $! f !$ en {{a|latex}} et à l'ordre $! {{ n|latex }} !$.
 ==
 
 embed ==
