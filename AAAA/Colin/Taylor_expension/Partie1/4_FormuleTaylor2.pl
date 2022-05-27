@@ -23,7 +23,7 @@ sol = L[m]*factorial(m)
 question ==
 Soit $! f !$ une fonction de classe $!\mathcal C^{{n|latex}} !$ sur $!\mathbb R!$ ayant pour développement limité en 0 et à l'ordre 4 :
 $$ f(x) = {{f|latex}} + o(x^4).$$
-Retrouver à partir de la formule de Taylor-Youngla valeur de  $! f^{ {{m|latex}}}(0)  !$.
+Retrouver à partir de la formule de Taylor-Youngla valeur de  $! f^{ ({{m|latex}}) }(0)  !$.
 ==
 
 
