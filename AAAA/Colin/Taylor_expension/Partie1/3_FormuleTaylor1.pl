@@ -31,7 +31,7 @@ $! f(x) = !$
 ==
 
 solution ==
-$ f(x) = {{ sol|latex }} + o(x^{{ n|latex }})  \quad [x \rightarrow 0].$$
+$$ f(x) = {{ sol|latex }} + o(x^{{ n|latex }})  \quad [x \rightarrow 0].$$
 En effet, rappelons la formule de Taylor-Young à l'ordre $! n !$ en 0 :
 $$f(x) = f(0)+\frac{f'(0)}{1!}x+ \frac{f''(0)}{2!}x^2+\cdots+\frac{f^{(n)}(0)}{n!}x^n+ o(x^n).$$
 ==
