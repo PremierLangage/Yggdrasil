@@ -1,7 +1,7 @@
 # Auteur : Colin Petitjean
 # Sujet : Développements Limités - Manipuler la formule de Taylor-Young 1
 
-title = DL - Formule de Taylor-Young 1
+title = DL - Formule de Taylor-Young 3
 
 extends = /model/math/expr.pl
 
