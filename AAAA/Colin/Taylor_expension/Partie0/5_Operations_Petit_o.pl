@@ -12,7 +12,7 @@ m = randint(1,3)
 a=randint(1,10)
 b=randint(-10,-1)
 l=randint(2,8)
-k=rand(7,10)
+k=randint(7,10)
 sol = x**Min(n+m,l)
 ==
 
