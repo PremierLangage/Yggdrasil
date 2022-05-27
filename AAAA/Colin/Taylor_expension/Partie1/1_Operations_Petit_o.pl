@@ -18,9 +18,17 @@ Simplifier l'expression $! {{ f|latex }} !$ (pour x qui tend vers $! 0 !$) en l'
  $! {{ o(x^n) }} !$ pour un $! n !$ bien choisi.
 ==
 
-
-solution ==
-$! o( {{ sol|latex }}  )  \quad [x \rightarrow 0]!$.
+embed ==
+# + o({{ x }}^{{ n }}) \quad [x \rightarrow 0]
 ==
 
+prefix ==
+$! {{ f|latex }} = !$
+==
+
+solution ==
+$! {{ sol|latex }} + o({{ x }}^{{ n }})  \quad [x \rightarrow 0]!$.
+==
+
+latexsettings.order = 'ilex'
 
