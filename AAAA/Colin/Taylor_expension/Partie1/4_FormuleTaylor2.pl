@@ -5,6 +5,7 @@ title = DL - Formule de Taylor-Young 1
 extends = /model/math/expr.pl
 
 before ==
+from sympy import Symbol, factorial, S
 var('x')
 n = 4
 m=randint(0,n)
@@ -12,7 +13,7 @@ m=randint(0,n)
 L=[]
 for i in range(n+1) :
     a=randint(-10,10)
-    b=a/i!
+    b=a/factorial(i)
     L.append(b)
 sol = 0
 ==
