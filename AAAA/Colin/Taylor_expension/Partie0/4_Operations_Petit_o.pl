@@ -1,4 +1,3 @@
-
 # Auteur : Colin Petitjean
 # Sujet : développements limités - Manipuler les petits o
 
