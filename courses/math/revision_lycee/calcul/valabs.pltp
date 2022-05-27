@@ -1,7 +1,10 @@
 title = Valeur absolue
 
 introduction ==
+Objectifs :
 
+- Simplifier une valeur absolue.
+- Résoudre une équation ou une inéquation impliquant une valeur absolue.
 ==
 
 @ /exercises/math/elementary_algebra/absolute_value/simp_abs_nbdiff.pl
