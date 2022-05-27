@@ -1,5 +1,5 @@
 # Auteur : Colin Petitjean
-# Sujet : développements limités - Manipuler les formules de références 1
+# Sujet : Développements Limités - Manipuler les formules de références 1
 
 title = DL - Formules de références 1
 
