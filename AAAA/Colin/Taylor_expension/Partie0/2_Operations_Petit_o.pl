@@ -7,8 +7,8 @@ title = DL - Opérations sur les petits 0.
 
 before ==
 var('x')
-n = randint(1, 4)
-m = randint(1,4)
+n = randint(2, 4)
+m = randint(2,4)
 sol = x**(n+m)
 ==
 
