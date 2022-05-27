@@ -26,7 +26,9 @@ $! x^{{n|latex}} \times o(x^{{m|latex}}) = o( !$
 ==
 
 solution ==
-$! o({{ sol|latex }})  !$.
+$$ x^{{n|latex}} \times o(x^{{m|latex}}) = o({{ sol|latex }})  $$
+
+En effet, il faut appliquer ici la règle suivante : Si $! n , m \in \mathbb N !$ alors $! x^n \times o(x^m) = o(x^{n+m}) !$.
 ==
 
 latexsettings.order = 'ilex'
