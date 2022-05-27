@@ -9,17 +9,16 @@ before ==
 var('x')
 n = randint(1, 4)
 m = randint(4,6)
-f = o(x^n) + o(x^m)
 sol = x^n
 ==
 
 question ==
-Simplifier l'expression $! {{ f|latex }} !$ (pour x qui tend vers $! 0 !$) en l'écrivant sous la forme
+Simplifier l'expression $! {{ o(x^n) + o(x^m)|latex }} !$ (pour x qui tend vers $! 0 !$) en l'écrivant sous la forme
  $! {{ o(x^n) }} !$ pour un $! n !$ bien choisi.
 ==
 
 embed ==
-# + ({{ x }}^{{ n }}) \quad [x \rightarrow 0]
+# + o({{ x }}^{{ n }}) \quad [x \rightarrow 0]
 ==
 
 prefix ==
