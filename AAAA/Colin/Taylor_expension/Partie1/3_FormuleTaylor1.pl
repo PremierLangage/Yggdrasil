@@ -1,5 +1,5 @@
 # Auteur : Colin Petitjean
-# Sujet : développements limités - Manipuler la formule de Taylor-Young 1
+# Sujet : Développements Limités - Manipuler la formule de Taylor-Young 1
 
 title = DL - Formule de Taylor-Young 1
 
