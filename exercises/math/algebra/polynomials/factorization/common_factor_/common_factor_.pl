@@ -6,18 +6,18 @@ extends = /model/math/poly.pl
 
 title = Facteur commun
 
-param.nterms % 2
+param.nterms = 2
 
-param.comfactor % 1
+param.comfactor = 1
 
-param.terms % [1, 1]
+param.terms = [1, 1]
 
-param.obvious % true
+param.obvious = True
 
 
 
 before == #|python|
-from sympy import Add, evaluate, factor
+from sympy import Add, evaluate, factor, gcd
 nterms = param['nterms']
 type_comfac = param['comfactor']
 type_terms = param['terms']
