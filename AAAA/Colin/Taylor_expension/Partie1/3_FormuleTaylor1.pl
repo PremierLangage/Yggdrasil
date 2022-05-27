@@ -12,8 +12,9 @@ sol = a0 + a1 * x + a2 * x**2/2 + a3 * x**3/6 + a4 * x**4/24
 ==
 
 question ==
-Soit $! f !$ une fonction de classe $!\mathcal C^n !$ sur $!\mathbb R!$ telle que $!f^{(i)}(0) = ai!$, pour $! i \in \llbracket 0, n\rrbracket!$. 
-A l'aide de la formule de Taylor, donner le développement limité de $f$ en 0 et à l'ordre $! {{ n }} !$.
+Soit $! f !$ une fonction de classe $!\mathcal C^n !$ sur $!\mathbb R!$ telle que 
+$$ f(0) = {{a0|latex}}, \quad f^{'}(0) = {{a1|latex}}, \quad f^{''}(0) = {{a2|latex}}, \quad f^{(3)}(0) = {{a1|latex}}, \quad f^{(4)}(0) = {{a4|latex}}.$$ 
+A l'aide de la formule de Taylor-Young, donner le développement limité de $f$ en 0 et à l'ordre $! {{ n }} !$.
 ==
 
 embed ==
