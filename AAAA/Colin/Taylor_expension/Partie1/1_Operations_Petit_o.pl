@@ -9,7 +9,7 @@ before ==
 var('x')
 n = randint(1, 4)
 m = randint(4,6)
-sol = x^n
+sol = x**n
 ==
 
 question ==
