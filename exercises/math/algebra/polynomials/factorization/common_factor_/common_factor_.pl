@@ -64,10 +64,10 @@ comfac = rand_factor(type_comfac)
 type = sample(type_terms, k=nterms)
 
 if param['obvious']:
-    coeff=[0,0,0,0]
+    coeff=[0, 0, 0, 0]
 else:
-    coeff=[0]+list_randitem_norep(nterms-1,[1,2])
-    rd.shuffle(coeff)
+    coeff = [0] + choices([1,2], nterms-1,)
+    shuffle(coeff)
 
 terms=[]
 for i in range(nterms):
