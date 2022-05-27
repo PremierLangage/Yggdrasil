@@ -18,6 +18,8 @@ for i in range(n+1) :
 
 f = L[0] + L[1]*(x-a) + L[2]*(x-a)**2 + L[3]*(x-a)**3
 sol = f
+
+X=x-a
 ==
 
 question ==
