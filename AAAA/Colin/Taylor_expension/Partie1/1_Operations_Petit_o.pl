@@ -5,24 +5,10 @@ title = DL - Opérations sur les petits 0.
 
 extends = /model/math/multimathinput.pl
 
-param.form = [0, 1, 2]
-
-# Paramètres
-# 1 : inf - inf
-# 2 : inf + inf
-# 3 : inf + f
-# 4 : inf + b
-
-# 1 : inf * inf
-# 2 : bc * inf
-# 3 : fnz * inf
-# 4 : 0 * inf
-
-
 
 before == #|py|
 from sympy import atan, Limit
-n = 3
+n = 5
 inputs = [MathInput() for _ in range(n)]
 prefixes = []
 
@@ -60,7 +46,7 @@ for i in range(n):
 ==
 
 question ==
-Calculer les limites suivantes.
+Dans chacun des cas, exprimer le résultat des calculs ci-dessous sous la forme $! o(x^n) !$.
 ==
 
 latexsettings.ln_notation = True
