@@ -19,7 +19,7 @@ sol =
 ==
 
 question ==
-Soit $! f !$ une fonction de classe $!\mathcal C^{{n|latex}} !$ sur $!\mathbb R!$ telle que le développement limité de $! f !$ en 0 et à l'ordre 4 vaut
+Soit $! f !$ une fonction de classe $!\mathcal C^{{n|latex}} !$ sur $!\mathbb R!$ ayant pour développement limité en 0 et à l'ordre 4 :
 $$ f(x) = {{b0|latex}} + {{b1|latex}} * x + {{b2|latex}} * x**2 + {{b3|latex}} * x**3 + {{b4|latex}} * x**4 + o(x^4)$$
 Retrouver à partir de la formule de Taylor-Youngla vameur de  $! f^{ {{m|latex}}}  !$.
 ==
