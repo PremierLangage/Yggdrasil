@@ -28,7 +28,7 @@ $! {{ f|latex }} = !$
 ==
 
 solution ==
-$$ {{ f|latex }} = {{ sol|latex }} + o({{ x }}^{{ n|latex}})  \quad [x \rightarrow 0] $$
+$$ {{ f|latex }} = {{ sol|latex }} + o( x ^{{ n|latex}})  \quad [x \rightarrow 0] $$
 
 En effet, il s'agit d'appliquer la formule de référence :
 
