@@ -30,7 +30,7 @@ $! {{a|latex}} \cdot x^{{n|latex}} \times o(x^{{m|latex}}) + x^{ {{k|latex}} } +
 ==
 
 solution ==
-$! o({{ sol|latex }})  !$.
+$! {{a|latex}} \cdot x^{{n|latex}} \times o(x^{{m|latex}}) + x^{ {{k|latex}} } + o(x^{{l|latex}}) = o({{ sol|latex }})  !$.
 ==
 
 latexsettings.order = 'ilex'
