@@ -26,7 +26,7 @@ $! o(x^{{n|latex}}) + o(x^{{m|latex}}) = o( !$
 ==
 
 solution ==
-$! o({{ sol|latex }})  !$.
+$! o(x^{{n|latex}}) + o(x^{{m|latex}}) = o({{ sol|latex }})  !$.\\
 
 
 En effet, il faut appliquer ici la règle suivante : Si $! n \leq m!$ alors $! o(x^n) + o(x^m) = o(x^n) !$.
