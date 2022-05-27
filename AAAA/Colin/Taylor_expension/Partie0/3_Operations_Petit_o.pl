@@ -27,7 +27,7 @@ $! o(x^{{n|latex}}) \times o(x^{{m|latex}}) = o( !$
 ==
 
 solution ==
-$! {{ sol|latex }}  !$.
+$! o({{ sol|latex }})  !$.
 ==
 
 latexsettings.order = 'ilex'
