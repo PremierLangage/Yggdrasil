@@ -4,6 +4,8 @@
 
 extends = /model/math/poly.pl
 
+poly_form = "factorized"
+
 param.degree = 2
 param.roots = "int"
 param.givenroot = "int"
