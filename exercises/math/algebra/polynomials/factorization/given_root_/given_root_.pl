@@ -9,10 +9,8 @@ param.roots = "int"
 param.givenroot = "int"
 
 before ==
-from sympy import factor
+from sympy import factor, content
 var('x')
-
-q,r,s=1,1,1
 
 q, r, s = sample([1, 2, 3, 4, 5], 3)
 q=choice([-1,1])*q
@@ -30,7 +28,9 @@ if param['degree'] == 2:
         P = (x-q)*(a*x-b)
     elif param['roots']=="rat":
         P = (a*x-b)*(c*x-d)
-    P = choice([-1,1])*choice([1,2])*P
+    P = P/content(P)
+    P = choice([-1,1])*choice([1 , 2])*P
+    
     if param['givenroot']=="int":
         x1 = q
     elif param['givenroot']=="rat":
