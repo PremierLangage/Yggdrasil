@@ -13,8 +13,8 @@ a=choice(A)
 
 L = []
 for i in range(n+1) :
-    a=randint(-10,10)
-    L.append(a)
+    b=randint(-10,10)
+    L.append(b)
 
 f = L[0] + L[1]*(x-a) + L[2]*(x-a)**2 + L[3]*(x-a)**3
 sol = f
@@ -28,7 +28,7 @@ A l'aide de la formule de Taylor-Young, donner le développement limité de $! f
 ==
 
 embed ==
-# + o( ({{X |latex }})^{{ n|latex }}) \quad [x \rightarrow {{a|latex}}]
+# + o(x - ({{a |latex }})^{{ n|latex }}) \quad [x \rightarrow {{a|latex}}]
 ==
 
 prefix ==
@@ -36,7 +36,7 @@ $! f(x) = !$
 ==
 
 solution ==
-$! f(x) = {{L[0] | latex}} + {{L[1] | latex}}{{X|latex}} + L[2]*(x-a)**2 + L[3]*(x-a)**3 + o(({{X|latex}})^{{ n|latex }})  \quad [x \rightarrow {{a | latex}}]!$.
+$! f(x) = {{L[0] | latex}} + {{L[1] | latex}}(x-{{a|latex}}) + \frac{ {{L[2] | latex}} }{2!} (x-{{a|latex}})^2 + \frac{ {{L[3] | latex}} }{3!} (x-{{a|latex}})^3 + o((x-{{a|latex}})^3)  \quad [x \rightarrow {{a | latex}}]!$.
 ==
 
 latexsettings.order = 'ilex'
