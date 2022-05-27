@@ -36,7 +36,10 @@ $! f(x) = !$
 ==
 
 solution ==
-$! f(x) = {{L[0] | latex}} + {{L[1] | latex}}(x-{{a|latex}}) + \frac{ {{L[2] | latex}} }{2!} (x-{{a|latex}})^2 + \frac{ {{L[3] | latex}} }{3!} (x-{{a|latex}})^3 + o((x-{{a|latex}})^3)  \quad [x \rightarrow {{a | latex}}]!$.
+$$ f(x) = {{L[0] | latex}} + {{L[1] | latex}}(x-{{a|latex}}) + \frac{ {{L[2] | latex}} }{2!} (x-{{a|latex}})^2 + \frac{ {{L[3] | latex}} }{3!} (x-{{a|latex}})^3 + o((x-{{a|latex}})^3)  \quad [x \rightarrow {{a | latex}}].$$
+Rappelons la formule de Taylor-Young en $a$ à l'ordre $n$ :
+$$f(x) = f(a)+\frac{f'(a)}{1!}(x-a)+ \frac{f''(a)}{2!}(x-a)^2+\cdots
++\frac{f^{(n)}(a)}{n!}(x-a)^n+ o(x^n).$$
 ==
 
 latexsettings.order = 'ilex'
