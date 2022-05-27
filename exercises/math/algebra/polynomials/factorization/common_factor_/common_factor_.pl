@@ -66,7 +66,7 @@ type = sample(type_terms, k=nterms)
 if param['obvious']:
     coeff=[0, 0, 0, 0]
 else:
-    coeff = [0] + choices([1,2], nterms-1,)
+    coeff = [0] + choices([1,2], k=nterms-1)
     shuffle(coeff)
 
 terms=[]
