@@ -32,7 +32,7 @@ $! f^{ ({{m|latex}}) }(0) = !$
 ==
 
 solution ==
-$! f^{ ({{m|latex}}) }(0) = {{ sol|latex }} !$.
+$! f^{ ({{m|latex}}) }(0) =  f^{ ({{m|latex}}) }(0) = {{ sol|latex }} !$.
 ==
 
 latexsettings.order = 'ilex'
