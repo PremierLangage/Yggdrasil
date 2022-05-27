@@ -11,6 +11,7 @@ n = randint(1, 3)
 Xn = x**n
 m = randint(1,3)
 Xm = x**m
+S=n+m
 a=randint(2,10)
 b=randint(-10,-1)
 l=randint(2,8)
@@ -32,7 +33,7 @@ $! {{a|latex}}  {{Xn|latex}} \times o({{Xm|latex}}) + x^{ {{k|latex}} } + o(x^{{
 ==
 
 solution ==
-$! {{a|latex}}  {{Xn|latex}} \times o({{Xm|latex}}) + x^{ {{k|latex}} } + o(x^{{l|latex}}) = o(x^{ {{n+m|latex}} }) + x^{ {{k|latex}} } + o(x^{{l|latex}}) = o({{ sol|latex }})  !$.
+$! {{a|latex}}  {{Xn|latex}} \times o({{Xm|latex}}) + x^{ {{k|latex}} } + o(x^{{l|latex}}) = o(x^{ {{S|latex}} }) + x^{ {{k|latex}} } + o(x^{{l|latex}}) = o({{ sol|latex }})  !$.
 ==
 
 latexsettings.order = 'ilex'
