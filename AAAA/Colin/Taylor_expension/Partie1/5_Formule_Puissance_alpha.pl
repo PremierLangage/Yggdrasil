@@ -8,7 +8,7 @@ extends = /model/math/expr.pl
 before ==
 from sympy import series
 var('x')
-n = randint(2, 3)
+n = 3
 p = [-3,-2,-1/2,1/2]
 a = choice(p)
 f = (1+x)**a
@@ -28,7 +28,11 @@ $! {{ f|latex }} = !$
 ==
 
 solution ==
-$! {{ f|latex }} = {{ sol|latex }} + o({{ x }}^{{ n }})  \quad [x \rightarrow 0]!$.
+$$ {{ f|latex }} = {{ sol|latex }} + o({{ x }}^{{ n }})  \quad [x \rightarrow 0]!$$
+
+En effet, il s'agit d'appliquer la formule de référence :
+
+$$ (1+x)^{ {{a|latex}} } &= 1+ {{a|latex}} x+ \frac{ {{a|latex}} ({{a|latex}} - 1)}{2!}x^2 +\frac{ {{a|latex}} ( {{a|latex}} -1) ({{a|latex}} - 2)}{3!}x^3 + o(x^3) . $$
 ==
 
 latexsettings.order = 'ilex'
