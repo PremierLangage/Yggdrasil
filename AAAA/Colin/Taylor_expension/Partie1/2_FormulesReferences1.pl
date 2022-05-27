@@ -26,7 +26,7 @@ $! {{ f|latex }} = !$
 ==
 
 solution ==
-$! {{ f|latex }} = {{ sol|latex }} + o({{ x }}^{{ n|latex }})  \quad [x \rightarrow 0]!$.
+$! {{ f|latex }} = {{ sol|latex }} + o(x^{{ n|latex }})  \quad [x \rightarrow 0]!$.
 ==
 
 latexsettings.order = 'ilex'
