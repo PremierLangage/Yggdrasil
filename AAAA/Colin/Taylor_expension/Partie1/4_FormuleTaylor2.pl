@@ -17,7 +17,7 @@ for i in range(n+1) :
     L.append(b)
 
 f = L[0] + L[1]*x + L[2]*x**2 + L[3]*x**3 + L[4]*x**4
-sol = L[m]*factorial(m)
+sol = L[m+1]*factorial(m)
 ==
 
 question ==
