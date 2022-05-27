@@ -17,7 +17,7 @@ for i in range(n+1) :
     L.append(b)
 
 f = L[0] + L[1]*x + L[2]*x**2 + L[3]*x**3 + L[4]*x**4
-sol = L[m+1]*factorial(m)
+sol = L[m]*factorial(m)
 ==
 
 question ==
@@ -36,7 +36,7 @@ $! f^{ ({{m|latex}}) }(0) = {{ sol|latex }} !$. En effet, d'un côté nous avons
 $$ f(x) = {{f|latex}} + o(x^4) , $$
 et d'un autre côté, la formule de Taylor-Young à l'ordre 4 en 0 s'écrit 
 $$ f(x) = f(0)+\frac{f'(0)}{1!}x+ \frac{f''(0)}{2!}x^2+ \frac{f^{(3)}(0)}{3!}x^3+\frac{f^{(4)}(0)}{4!}x^4+ o(x^4).$$
-Par unicité du développement limité, nous pouvons identifier que $!  \frac{ f^{ ({{m|latex}}) }(0)}{ {{m|latex}} } = {{L[m]|latex}} !$, d'où le résultat.
+Par unicité du développement limité, nous pouvons identifier que $!  \frac{ f^{ ({{m|latex}}) }(0)}{ {{m|latex}}! } = {{L[m]|latex}} !$, d'où le résultat.
 ==
 
 latexsettings.order = 'ilex'
