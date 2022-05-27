@@ -1,5 +1,11 @@
 extends = /model/basic/checkbox.pl
 
+@ /utils/sympy/evalsympy.py
+@ /utils/sympy/latex2sympy.py
+@ /utils/sympy/sympy2latex.py
+@ /utils/sympy/randsympy.py
+@ /utils/graphics/plmpl.py
+
 before_scripts = ["mathimport", "initinput", "before", "process"]
 
 latexsettings.ln_notation = True
