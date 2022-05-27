@@ -1,55 +1,33 @@
 # Auteur : Colin Petitjean
 # Sujet : développements limités - Manipuler les petits o
 
+extends = /model/math/expr.pl
+
 title = DL - Opérations sur les petits 0.
 
-extends = /model/math/multimathinput.pl
-
-
-before == #|py|
-from sympy import atan, Limit
-n = 5
-inputs = [MathInput() for _ in range(n)]
-prefixes = []
-
+before ==
 var('x')
-inf = [ln(x), exp(x), x]
-f = [atan(x), x/(x+1)]
-b = [sin(x), cos(x)]
-f0 = [1/ln(x), 1/exp(x), 1/x]
-
-
-def rand_expr(i):
-    inf1, inf2 = sample(inf, 2)
-    f1, f2 = sample(f, 2)
-    b1, b2 = sample(b, 2)
-    f01, f02 = sample(f0, 2)
-    if i == 0:
-        return inf1 - inf2
-    elif i == 1:
-        return choice([-1, 1])*inf1 + choice([-1, 1])*f1
-    elif i == 2:
-        return choice([-1, 1])*inf1 + choice([-1, 1])*b1
-    elif i == 3:
-        return f01*inf1
-
-cases = [0, 1, 3]
-shuffle(cases)
-
-for i in range(n):
-    lim = Limit(rand_expr(cases[i]), x, oo)
-    s = latex(lim)
-    prefixes.append(f"$! \displaystyle {s} = !$")
-    inputs[i].sol = lim.doit()
-    inputs[i].type = "expr"
-    inputs[i].evalparam = {}
+n = randint(1, 4)
+m = randint(4,6)
+f = o(x^n) + o(x^m)
+sol = x^n
 ==
 
 question ==
-Dans chacun des cas, exprimer le résultat des calculs ci-dessous sous la forme $! o(x^n) !$.
+Simplifier l'expression $! {{ f|latex }} !$ (pour x qui tend vers $! 0 !$) en l'écrivant sous la forme
+ $! {{ o(x^n) }} !$ pour un $! n !$ bien choisi.
 ==
 
-latexsettings.ln_notation = True
+embed ==
+# + o({{ x }}^{{ n }}) \quad [x \rightarrow 0]
+==
 
+prefix ==
+$! {{ f|latex }} = !$
+==
+
+solution ==
+$! o( {{ sol|latex }}  )  \quad [x \rightarrow 0]!$.
+==
 
 
