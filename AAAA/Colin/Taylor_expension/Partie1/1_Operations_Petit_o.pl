@@ -9,7 +9,6 @@ before ==
 var('x')
 n = randint(1, 4)
 m = randint(4,6)
-f = x**n + x**m
 sol = x**n
 ==
 
@@ -23,7 +22,7 @@ embed ==
 ==
 
 prefix ==
-$! {{ f|latex }} = !$
+$! o(x^{{n|latex}}) + o(x^{{m|latex}}) = !$
 ==
 
 solution ==
