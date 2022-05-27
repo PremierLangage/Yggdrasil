@@ -26,16 +26,13 @@ $$ f(x) = {{f|latex}} + o(x^4).$$
 Retrouver à partir de la formule de Taylor-Youngla valeur de  $! f^{ {{m|latex}}}(0)  !$.
 ==
 
-embed ==
-# + o({{ x }}^{{ n }}) \quad [x \rightarrow 0]
-==
 
 prefix ==
-$! f(x) = !$
+$! f^{ {{m|latex}}}(0) = !$
 ==
 
 solution ==
-$! {{ sol|latex }} + o({{ x }}^{{ n }})  \quad [x \rightarrow 0]!$.
+$! f^{ {{m|latex}}}(0) = {{ sol|latex }} !$.
 ==
 
 latexsettings.order = 'ilex'
