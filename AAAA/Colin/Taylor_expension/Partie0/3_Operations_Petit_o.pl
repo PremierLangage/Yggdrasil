@@ -26,7 +26,7 @@ $! o(x^{{n|latex}}) \times o(x^{{m|latex}}) = o( !$
 ==
 
 solution ==
-$$ o({{ sol|latex }})  .$$
+$$ o(x^{{n|latex}}) \times o(x^{{m|latex}}) =  o({{ sol|latex }})  .$$
 
 
 En effet, il faut appliquer ici la règle suivante : Si $! n , m \in \mathbb N !$ alors $! o(x^n) \times o(x^m) = o(x^{n+m}) !$.
