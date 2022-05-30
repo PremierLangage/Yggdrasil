@@ -1,4 +1,4 @@
-extends = quadratic_roots_.pl
+extends = quadratic_.pl
 
 param.roots = "intrat"
 
