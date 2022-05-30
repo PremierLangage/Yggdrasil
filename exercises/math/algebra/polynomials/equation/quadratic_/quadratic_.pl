@@ -22,7 +22,7 @@ elif param['roots'] == "intrat":
     P = (x-q)*(a*x-b)
 elif param['roots']=="rat":
     P = (a*x-b)*(c*x-d)
-P = choice([-1,1])*choice([1 , 2])*P//content(P)
+P = choice([-1,1])*choice([1 , 2])*P/content(P)
 
 sol=solveset(P, x, domain=S.Reals)
 P = P.expand()
