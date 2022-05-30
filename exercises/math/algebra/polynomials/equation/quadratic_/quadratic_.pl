@@ -1,6 +1,8 @@
 extends = /model/math/set.pl
 
-title = Equation quadratique
+title = Equation du second degré
+
+wobracket = True
 
 before ==
 a,c=list_randint_norep(2,-6,6,[0,1,-1])
