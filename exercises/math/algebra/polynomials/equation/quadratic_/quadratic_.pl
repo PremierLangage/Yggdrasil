@@ -5,7 +5,7 @@ title = Equation du second degré
 wobracket = True
 
 before ==
-from sympy import factor, content, solveset
+from sympy import factor, content, solveset, S
 var('x')
 
 q, r = sample([1, 2, 3, 4, 5], 2)
