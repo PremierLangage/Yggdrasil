@@ -8,7 +8,7 @@ before ==
 from sympy import factor, content
 var('x')
 
-q, r, s = sample([1, 2, 3, 4, 5], 2)
+q, r = sample([1, 2, 3, 4, 5], 2)
 q=choice([-1,1])*q
 r=choice([-1,1])*r
 [b, a], [d, c] = sample([[1,2],[3,2],[5,2],[1,3],[2,3],[4,3],[5,3],[1,4],[3,4],[5,4],[1,5],[2,5],[3,5],[4,5]], k=2)
