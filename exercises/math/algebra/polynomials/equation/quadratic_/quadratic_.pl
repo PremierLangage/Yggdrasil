@@ -30,5 +30,5 @@ P = P.expand()
 
 
 question ==
-Déterminer les solutions de l'équation $% {{P|latex}} = 0 %$. Séparer les différentes solutions par une virgule.
+Déterminer les solutions de l'équation $! {{P|latex}} = 0 !$. Séparer les différentes solutions par une virgule.
 ==
