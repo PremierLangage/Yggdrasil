@@ -23,19 +23,6 @@ elif len(lstsol)==2:
 ==
 
 
-text ==
+question ==
 Déterminer les solutions de l'équation $% {{P|latex}} = 0 %$. Séparer les différentes solutions par une virgule.
 ==
-
-evaluator ==
-score, error = eval_set(input.value, lstsol, wobracket=True)
-feedback = message[error]
-==
-
-solution ==
-{{solution_roots}}
-==
-
-
-
-
