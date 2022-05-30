@@ -24,22 +24,8 @@ elif param['roots']=="rat":
     P = (a*x-b)*(c*x-d)
 P = choice([-1,1])*choice([1 , 2])*P//content(P)
 
-
-var('x')
-f=a*x+b
-if param['roots']=='int':
-    P=(x+b)*(x+d)
-if param['roots']=='intrat':
-    P=(x+b)*(c*x+d)
-if param['roots']=='rat':
-    P=(a*x+b)*(c*x+d)
-lstsol=list(solveset(P,x,domain=S.Reals))
-P=expand(P)
-
-if len(lstsol)==1:
-    solution_roots=r"L'unique solution est $! \displaystyle %s !$." % latex(lstsol[0])
-elif len(lstsol)==2:
-    solution_roots=r"Les solutions sont $! \displaystyle %s !$ et $! \displaystyle %s !$." % (latex(lstsol[0]),latex(lstsol[1]))
+sol=list(solveset(P, x, domain=S.Reals))
+P = expand(P)
 ==
 
 
