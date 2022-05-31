@@ -3,6 +3,12 @@
 # Déterminer les solutions d'une équation quadratique.
 # 31/5/22
 
+# Parameters
+# roots
+# "int" : two integer roots
+# "intrat" : one integer root and one rational root
+# "rat" : two rational roots
+
 extends = /model/math/set.pl
 
 title = Equation du second degré
