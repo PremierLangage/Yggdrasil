@@ -1,3 +1,8 @@
+# D. Doyen
+# polynomials, polynomial equation, quadratic equation, quadratic polynomials, roots
+# Déterminer les solutions d'une équation quadratique.
+# 31/5/22
+
 extends = /model/math/set.pl
 
 title = Equation du second degré
