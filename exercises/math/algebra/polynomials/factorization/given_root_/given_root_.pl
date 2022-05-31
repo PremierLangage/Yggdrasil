@@ -1,5 +1,5 @@
-# Author: D. Doyen
-# Tags: polynomials
+# D. Doyen
+# polynomials
 # 19/8/2020
 
 extends = /model/math/poly.pl
