@@ -1,5 +1,5 @@
 # D. Doyen
-# derivation
+# derivation, composition
 # Calculer la dérivée d'une fonction (composition de fonctions de références avec des fonctions polynomiales).
 # 1/6/2022
 
