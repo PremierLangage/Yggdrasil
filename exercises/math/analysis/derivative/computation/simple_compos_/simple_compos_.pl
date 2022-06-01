@@ -1,6 +1,6 @@
 # D. Doyen
 # derivation
-# Calculer la dérivée d'une fonction (composition simple de fonctions de références).
+# Calculer la dérivée d'une fonction (composition de fonctions de références avec des fonctions polynomiales).
 # 1/6/2022
 
 extends = /model/math/multimathinput.pl
