@@ -1,3 +1,8 @@
+# D. Doyen
+# derivation
+# Calculer la dérivée d'une fonction (combinaison linéaire de fonctions de références).
+# 1/6/2022
+
 extends = /model/math/multimathinput.pl
 
 title = Calculer la dérivée d'une fonction
@@ -5,6 +10,7 @@ title = Calculer la dérivée d'une fonction
 param.types = [[[7, 8], [0, 1]], [[10, 11], [0, 1]], [[3, 4], [6, 2]]]
 
 # Paramètres
+# types : liste contenant les types de fonctions utilisées
 # 0 : constant
 # 1 : x^n (n <= 3)
 # 2 : x^n (n > 3)
