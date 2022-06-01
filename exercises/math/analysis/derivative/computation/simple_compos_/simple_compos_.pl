@@ -18,7 +18,7 @@ paramdoc == #|json|
     }
 }
 ==
-param.types = [[[10, 11], [0, 1]]]
+param.types = [[[7, 8], [0, 1]], [[10, 11], [0, 1]]]
 
 # Paramètres
 # 0 : constant
