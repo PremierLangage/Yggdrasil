@@ -9,6 +9,7 @@ title = Calculer la dérivée d'une fonction
 
 param.types = [[[7, 8], [0, 1]], [[10, 11], [0, 1]], [[3, 4], [6, 2]]]
 
+documentation ==
 # Paramètres
 # - types : Liste contenant les types de fonctions utilisées pour générer chaque fonction à dériver.
 # 0 : constant
@@ -30,6 +31,7 @@ param.types = [[[7, 8], [0, 1]], [[10, 11], [0, 1]], [[3, 4], [6, 2]]]
 # 16 : asin(x)
 # 17 : acos(x)
 # 18 : atan(x)
+==
 
 before == #|py|
 n = len(param['types'])
