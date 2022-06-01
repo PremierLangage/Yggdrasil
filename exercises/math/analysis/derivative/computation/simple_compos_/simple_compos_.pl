@@ -12,17 +12,20 @@ paramdoc == #|json|
     "keys": {
         "types": {
             "type": "list[list[list[int]]]",
-            "default": "[[[10, 11], [0, 1]]]",
+            "default": "[[[7, 8], [0, 1]], [[10, 11], [0, 1]]]",
             "description": "Types de fonctions utilisées pour générer les fonctions à dériver. Les fonctions générées sont de la forme f o g. Chaque sous-liste correspond à une fonction à générer. Chaque sous-liste contient deux listes : la liste des types pour f et la liste des types pour g."
         }
     }
 }
 ==
+
 param.types = [[[7, 8], [0, 1]], [[10, 11], [0, 1]]]
 
-# Paramètres
-# 0 : constant
-# 1 : x^n (n <= 3)
+paramnotes ==
+            
+Types de fonctions pour f
+0 : constant
+1 : x^n (n <= 3)
 # 2 : x^n (n > 3)
 # 3 : 1/x
 # 4 : 1/x^n (n > 1)
@@ -41,7 +44,6 @@ param.types = [[[7, 8], [0, 1]], [[10, 11], [0, 1]]]
 # 17 : acos(x)
 # 18 : atan(x)
 
-
 # 0: x,
 # 1: x**2,
 # 2: x**3,
@@ -53,6 +55,8 @@ param.types = [[[7, 8], [0, 1]], [[10, 11], [0, 1]]]
 # 8: [a*x**3+b, a*x**3-b, b - a*x**3],
 # 9: [a*x**2+b*x, a*x**2-b*x, b*x - a*x**2],
 # 10: [a*x**3+b*x, a*x**3-b*x, b*x - a*x**3]]
+==
+
 
 before ==
 n = len(param['types'])
