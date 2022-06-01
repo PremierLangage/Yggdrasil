@@ -1,3 +1,8 @@
+# D. Doyen
+# derivation
+# Calculer la dérivée d'une fonction (produit ou quotient de fonctions de références).
+# 1/6/2022
+
 extends = /model/math/expr.pl
 
 title = Calculer la dérivée d'une fonction
