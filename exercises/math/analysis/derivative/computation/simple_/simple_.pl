@@ -10,7 +10,7 @@ title = Calculer la dérivée d'une fonction
 param.types = [[[7, 8], [0, 1]], [[10, 11], [0, 1]], [[3, 4], [6, 2]]]
 
 # Paramètres
-# types : liste contenant les types de fonctions utilisées
+# - types : Liste contenant les types de fonctions utilisées pour générer chaque fonction à dériver.
 # 0 : constant
 # 1 : x^n (n <= 3)
 # 2 : x^n (n > 3)
@@ -31,7 +31,7 @@ param.types = [[[7, 8], [0, 1]], [[10, 11], [0, 1]], [[3, 4], [6, 2]]]
 # 17 : acos(x)
 # 18 : atan(x)
 
-before ==
+before == #|py|
 n = len(param['types'])
 inputs = [MathInput(type="expr") for _ in range(n)]
 
