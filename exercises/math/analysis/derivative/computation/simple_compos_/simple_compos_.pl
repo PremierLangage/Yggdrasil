@@ -7,7 +7,18 @@ extends = /model/math/multimathinput.pl
 
 title = Calculer la dérivée d'une fonction
 
-param.types = [[[7, 8], [3, 4, 6, 7]], [[10, 11], [3, 4, 6, 7]], [[3, 6], [6, 7]], [[2, 4], [6, 7]]]
+paramdoc == #|json|
+{
+    "keys": {
+        "types": {
+            "type": "list[list[list[int]]]",
+            "default": "[[[10, 11], [0, 1]]]",
+            "description": "Types de fonctions utilisées pour générer les fonctions à dériver. Les fonctions générées sont de la forme f o g. Chaque sous-liste correspond à une fonction à générer. Chaque sous-liste contient deux listes : la liste des types pour f et la liste des types pour g."
+        }
+    }
+}
+==
+param.types = [[[10, 11], [0, 1]]]
 
 # Paramètres
 # 0 : constant
