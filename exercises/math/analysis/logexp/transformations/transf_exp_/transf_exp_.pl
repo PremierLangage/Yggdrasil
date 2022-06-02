@@ -14,7 +14,7 @@ inputs = [MathInput(type="expr", evalparam={'embedfunc': exp(3)}) for _ in range
 
 def generate(c):
     p, q = sampleint(2, 5, 2)
-    u=randint(2,4)
+    u = randint(2,4)
     with evaluate(False):
         lst_expr = [(exp(p))**u,
         1/(exp(p))**u,
