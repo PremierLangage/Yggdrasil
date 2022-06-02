@@ -15,7 +15,7 @@ paramdoc == #|json|
         "functions": {
             "type": "list[list[list[int]]]",
             "default": "[[[7, 8], [0, 1]], [[10, 11], [0, 1]]]",
-            "description": "Types de fonctions utilisées pour générer les fonctions à dériver. Les fonctions générées sont de la forme f o g. Chaque sous-liste correspond à une fonction à générer. Chaque sous-liste contient deux listes : la liste des functions pour f et la liste des functions pour g."
+            "description": "Fonctions à dériver. Les fonctions générées sont de la forme f o g. Chaque sous-liste correspond à une fonction à générer. Chaque sous-liste contient deux listes : la liste des functions pour f et la liste des functions pour g."
         }
     }
 }
