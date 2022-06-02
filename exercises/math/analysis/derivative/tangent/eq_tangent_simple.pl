@@ -1,3 +1,8 @@
+# D. Doyen
+# derivative, tangent
+# Construire la tangente en un point à une courbe représentative connaissant le nombre dérivé.
+# 1/6/2022
+
 extends = /model/math/expr.pl
 
 title = Déterminer l'équation d'une tangente
