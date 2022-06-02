@@ -122,12 +122,12 @@ def generate_f(par):
     if len(par) == 2:
         par.append(True)
     if par[2]:
-        coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
+        coeff = choice([-1, 1]) * choice([1, 1, 2, 3, Rational(1,2), Rational(1,3)])
     else:
-        coeff = [1]
+        coeff = 1
 
     while True:
-        f = choice([-1, 1])*choice(coeff)*generate_fog(par[0], par[1])
+        f = coeff*generate_fog(par[0], par[1])
         sol = diff(f, x).factor()
         try:
             domain = continuous_domain(f, x, S.Reals)
