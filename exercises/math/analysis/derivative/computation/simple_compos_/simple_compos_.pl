@@ -120,7 +120,7 @@ def generate_fog(i, j):
 
 def generate_f(par):
     if len(par) == 2:
-        par.append(False)
+        par.append(True)
     if par[2]:
         coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
     else:
