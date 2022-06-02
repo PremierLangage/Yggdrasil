@@ -8,7 +8,7 @@ extends = /model/math/multimathinput.pl
 param.types = [0, 1, 2, 3]
 
 before ==
-from sympy import evaluate, srepr
+from sympy import evaluate, srepr, E
 n = len(param['types'])
 inputs = [MathInput(type="expr", evalparam={'embedfunc': exp(3)}) for _ in range(n)]
 
@@ -18,7 +18,7 @@ def generate(c):
     with evaluate(False):
         lst_expr = [(exp(p))**u,
         1/(exp(p))**u,
-        exp(p)*exp(q),
+        E**p*E**q,
         exp(p)/exp(q)]
         expr = lst_expr[c]
     return expr, expr
