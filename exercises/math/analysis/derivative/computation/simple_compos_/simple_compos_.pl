@@ -7,6 +7,8 @@ extends = /model/math/multimathinput.pl
 
 title = Calculer la dérivée d'une fonction
 
+param.types = [[[7, 8], [0, 1]], [[10, 11], [0, 1]]]
+
 paramdoc == #|json|
 {
     "keys": {
@@ -19,42 +21,40 @@ paramdoc == #|json|
 }
 ==
 
-param.types = [[[7, 8], [0, 1]], [[10, 11], [0, 1]]]
-
 paramnotes ==     
 Types de fonctions pour f
-0 : constant
-1 : x^n (n <= 3)
-# 2 : x^n (n > 3)
-# 3 : 1/x
-# 4 : 1/x^n (n > 1)
-# 5 : x**r
-# 6 : sqrt(x)
-# 7 : exp(x)
-# 8 : ln(x)
-# 9 : a^x
-# 10 : sin(x)
-# 11 : cos(x)
-# 12 : tan(x)
-# 13 : sinh(x)
-# 14 : cosh(x)
-# 15 : tanh(x)
-# 16 : asin(x)
-# 17 : acos(x)
-# 18 : atan(x)
+0: constant
+1: x^n (n <= 3)
+2: x^n (n > 3)
+3: 1/x
+4: 1/x^n (n > 1)
+5: x^r
+6: sqrt(x)
+7: exp(x)
+8: ln(x)
+9: a^x
+10: sin(x)
+11: cos(x)
+12: tan(x)
+13: sinh(x)
+14: cosh(x)
+15: tanh(x)
+16: asin(x)
+17: acos(x)
+18: atan(x)
 
 Types de fonctions pour g
-# 0: x
-# 1: x^2
-# 2: x^3
-# 3: ax
-# 4: ax^2
-# 5: ax^3
-# 6: ax+b
-# 7: ax^2+b
-# 8: ax^3+b
-# 9: ax^2+bx
-# 10: ax^3+bx
+0: x
+1: x^2
+2: x^3
+3: ax
+4: ax^2
+5: ax^3
+6: ax+b
+7: ax^2+b
+8: ax^3+b
+9: ax^2+bx
+10: ax^3+bx
 ==
 
 
