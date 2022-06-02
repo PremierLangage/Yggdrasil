@@ -8,7 +8,7 @@ extends = /model/math/multimathinput.pl
 param.types = [0, 1, 2, 3]
 
 before ==
-from sympy import evaluate
+from sympy import evaluate, srepr
 n = len(param['types'])
 inputs = [MathInput(type="expr", evalparam={'embedfunc': exp(3)}) for _ in range(n)]
 
@@ -28,9 +28,12 @@ for i in range(n):
     expr, sol = generate(param['types'][i])
     prefixes.append(f"$! \displaystyle {latex(expr)} = !$")
     inputs[i].sol = simplify(sol)
+    if i == 2:
+        expr0 = srepr(expr)
 ==
 
 question ==
+{{ expr0 }}
 Ecrire les expressions suivantes sous la forme  $! \exp(a) !$, où $! a !$ est un nombre.
 ==
 
