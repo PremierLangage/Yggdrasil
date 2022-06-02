@@ -35,7 +35,11 @@ def str2sympy(s, local_dict={}, evaluate=False):
     # Hack
     def sqrt2(x):
         return sp.sqrt(x, evaluate=False)
-    local_dict.update({'sqrt' : sqrt2})
+    def log2(x):
+        return sp.log(x, evaluate=False)
+    def exp2(x):
+        return sp.exp(x, evaluate=False)
+    local_dict.update({'sqrt' : sqrt2, 'log' : log2, 'ln' : log2, 'exp' : exp2})
 
     transformations=prs.standard_transformations + (prs.implicit_multiplication_application, prs.convert_xor)
     return prs.parse_expr(s, local_dict=local_dict, transformations=transformations, evaluate=evaluate)
