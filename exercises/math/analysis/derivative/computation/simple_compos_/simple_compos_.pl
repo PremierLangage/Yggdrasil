@@ -121,7 +121,7 @@ def generate_fog(i, j):
 def generate_f(par):
     while True:
         coeff = [1, 1, 2, 3, Rational(1,2), Rational(1,3)]
-        f = choice([-1, 1])*coeff[i]*generate_fog(par[0], par[1])
+        f = choice([-1, 1])*choice(coeff)*generate_fog(par[0], par[1])
         sol = diff(f, x).factor()
         try:
             domain = continuous_domain(f, x, S.Reals)
