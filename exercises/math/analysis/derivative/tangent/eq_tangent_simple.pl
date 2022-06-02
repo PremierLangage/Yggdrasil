@@ -1,6 +1,6 @@
 # D. Doyen
 # derivative, tangent
-# Construire la tangente en un point à une courbe représentative connaissant le nombre dérivé.
+# Déterminer l’équation de la tangente en un point à la courbe représentative d’une fonction.
 # 1/6/2022
 
 extends = /model/math/expr.pl
