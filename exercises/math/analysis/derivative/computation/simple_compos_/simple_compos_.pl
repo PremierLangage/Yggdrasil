@@ -21,8 +21,7 @@ paramdoc == #|json|
 
 param.types = [[[7, 8], [0, 1]], [[10, 11], [0, 1]]]
 
-paramnotes ==
-            
+paramnotes ==     
 Types de fonctions pour f
 0 : constant
 1 : x^n (n <= 3)
@@ -44,17 +43,18 @@ Types de fonctions pour f
 # 17 : acos(x)
 # 18 : atan(x)
 
-# 0: x,
-# 1: x**2,
-# 2: x**3,
-# 3: a0*x,
-# 4: a0*x**2,
-# 5: a0*x**3,
-# 6: a*x+b, a*x-b, b - a*x],
-# 7: [a*x**2+b, a*x**2-b, b - a*x**2],
-# 8: [a*x**3+b, a*x**3-b, b - a*x**3],
-# 9: [a*x**2+b*x, a*x**2-b*x, b*x - a*x**2],
-# 10: [a*x**3+b*x, a*x**3-b*x, b*x - a*x**3]]
+Types de fonctions pour g
+# 0: x
+# 1: x^2
+# 2: x^3
+# 3: ax
+# 4: ax^2
+# 5: ax^3
+# 6: ax+b
+# 7: ax^2+b
+# 8: ax^3+b
+# 9: ax^2+bx
+# 10: ax^3+bx
 ==
 
 
