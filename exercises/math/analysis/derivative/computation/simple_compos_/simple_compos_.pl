@@ -57,7 +57,6 @@ Types de fonctions pour g
 10: ax^3+bx
 ==
 
-
 before ==
 n = len(param['functions'])
 inputs = [MathInput(type="expr") for _ in range(n)]
