@@ -7,15 +7,15 @@ extends = /model/math/multimathinput.pl
 
 title = Calculer la dérivée d'une fonction
 
-param.types = [[[7, 8], [0, 1]], [[10, 11], [0, 1]]]
+param.functions = [[[7, 8], [0, 1]], [[10, 11], [0, 1]]]
 
 paramdoc == #|json|
 {
     "keys": {
-        "types": {
+        "functions": {
             "type": "list[list[list[int]]]",
             "default": "[[[7, 8], [0, 1]], [[10, 11], [0, 1]]]",
-            "description": "Types de fonctions utilisées pour générer les fonctions à dériver. Les fonctions générées sont de la forme f o g. Chaque sous-liste correspond à une fonction à générer. Chaque sous-liste contient deux listes : la liste des types pour f et la liste des types pour g."
+            "description": "Types de fonctions utilisées pour générer les fonctions à dériver. Les fonctions générées sont de la forme f o g. Chaque sous-liste correspond à une fonction à générer. Chaque sous-liste contient deux listes : la liste des functions pour f et la liste des functions pour g."
         }
     }
 }
@@ -59,7 +59,7 @@ Types de fonctions pour g
 
 
 before ==
-n = len(param['types'])
+n = len(param['functions'])
 inputs = [MathInput(type="expr") for _ in range(n)]
 
 var('x')
@@ -140,7 +140,7 @@ def generate_f(par):
 
 expr = []
 for i in range(n):
-    par = param['types'][i]
+    par = param['functions'][i]
     for j in range(len(par)):
         if isinstance(par[j], list):
             par[j]= choice(par[j])
