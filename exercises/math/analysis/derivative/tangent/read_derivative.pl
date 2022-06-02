@@ -1,3 +1,8 @@
+# D. Doyen
+# derivative, tangent
+# Déterminer graphiquement un nombre dérivé par la pente de la tangente. 
+# 1/6/2022
+
 extends = /model/math/numeric.pl
 
 title = Déterminer graphiquement un nombre dérivé
