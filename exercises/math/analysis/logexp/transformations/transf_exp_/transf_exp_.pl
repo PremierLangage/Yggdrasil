@@ -34,7 +34,7 @@ for i in range(n):
 
 question ==
 {{ expr0 }}
-Ecrire les expressions suivantes sous la forme  $! \exp(a) !$, où $! a !$ est un nombre.
+Ecrire les expressions suivantes sous la forme  $! e^a !$, où $! a !$ est un nombre.
 ==
 
 evaluator ==#|py|
