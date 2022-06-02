@@ -17,3 +17,5 @@ Fonctions de référence : $! \sin(x) !$, $! \cos(x) !$, $! \exp(x) !$, $! \ln(x
 @ /exercises/math/analysis/derivative/computation/divmul_/div_esincoslnsqrt.pl
 
 @ /exercises/math/analysis/derivative/computation/simple_compos_/e_ln_sin_cos.pl
+
+@ /exercises/math/analysis/derivative/computation/simple_compos_/xn_sqrt.pl
