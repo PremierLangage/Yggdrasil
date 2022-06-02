@@ -5,11 +5,11 @@
 
 extends = /model/math/multimathinput.pl
 
-param.types = [0, 1, 2, 3]
+param.transformations = [0, 1, 2, 3]
 
 before ==
 from sympy import evaluate, UnevaluatedExpr
-n = len(param['types'])
+n = len(param['transformations'])
 inputs = [MathInput(type="expr", evalparam={'embedfunc': exp(3)}) for _ in range(n)]
 
 def generate(c):
@@ -25,7 +25,7 @@ def generate(c):
 
 prefixes = []
 for i in range(n):
-    expr, sol = generate(param['types'][i])
+    expr, sol = generate(param['transformations'][i])
     prefixes.append(f"$! \displaystyle {latex(expr)} = !$")
     inputs[i].sol = simplify(sol)
 ==
