@@ -13,7 +13,7 @@ n = len(param['transformations'])
 inputs = [MathInput(type="expr", evalparam={'embedfunc': exp(3)}) for _ in range(n)]
 
 def generate(c):
-    p, q = sample([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5], 2)
+    p, q = sample([-5, -4, -3, -2, 2, 3, 4, 5], 2)
     u = randint(2,4)
     with evaluate(False):
         lst_expr = [(exp(p))**u,
