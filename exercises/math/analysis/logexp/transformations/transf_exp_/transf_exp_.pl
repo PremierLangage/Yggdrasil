@@ -18,7 +18,7 @@ def generate(c):
     with evaluate(False):
         lst_expr = [(exp(p))**u,
         1/(exp(p))**u,
-        exp(p)*exp(q),
+        2**p*2**q,
         exp(p)/exp(q)]
         expr = lst_expr[c]
     return expr, expr
