@@ -31,7 +31,6 @@ for i in range(n):
 ==
 
 question ==
-{{ expr0 }}
 Ecrire les expressions suivantes sous la forme  $! e^a !$, où $! a !$ est un nombre.
 ==
 
