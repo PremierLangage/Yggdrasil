@@ -18,7 +18,7 @@ def generate(c):
     with evaluate(False):
         lst_expr = [(exp(p))**u,
         1/(exp(p))**u,
-        UnevaluatedExpr(exp(p))*UnevaluatedExpr(exp(q))
+        UnevaluatedExpr(exp(p))*UnevaluatedExpr(exp(q)),
         exp(p)/exp(q)]
         expr = lst_expr[c]
     return expr, expr
