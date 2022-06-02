@@ -8,9 +8,60 @@ extends = /model/math/expr.pl
 title = Calculer la dérivée d'une fonction
 
 param.operation = "mul"
-param.types = [[0], [0], [5, 6, 8, 9], [0]]
+param.functions = [[0], [0], [5, 6, 8, 9], [0]]
 
-# Paramètres
+paramdoc == #|json|
+{
+    "keys": {
+        "operation": {
+            "type": "('mul','div')",
+            "default": "'mul'",
+            "description": "Type d'opération."
+        },
+        "functions": {
+            "type": "list[list[list[int]]]",
+            "default": "[[[7, 8], [0, 1]], [[10, 11], [0, 1]]]",
+            "description": "Fonctions utilisées pour le produit/quotient.Les quatre sous-listes contiennent respectivement : les types de fonction pour f1, g1, f2 et g2."
+        }
+    }
+}
+==
+
+paramnotes ==     
+Types de fonctions pour f
+0: constant
+1: x^n (n <= 3)
+2: x^n (n > 3)
+3: 1/x
+4: 1/x^n (n > 1)
+5: x^r
+6: sqrt(x)
+7: exp(x)
+8: ln(x)
+9: a^x
+10: sin(x)
+11: cos(x)
+12: tan(x)
+13: sinh(x)
+14: cosh(x)
+15: tanh(x)
+16: asin(x)
+17: acos(x)
+18: atan(x)
+
+Types de fonctions pour g
+0: x
+1: x^2
+2: x^3
+3: ax
+4: ax^2
+5: ax^3
+6: ax+b
+7: ax^2+b
+8: ax^3+b
+9: ax^2+bx
+10: ax^3+bx
+==
 
 
 before ==
@@ -81,12 +132,12 @@ def generate_fog(i, j):
     return f.subs(x, gx)
 
 
-if len(param['types']) == 4:
-    ii, jj, kk, ll = param['types']
+if len(param['functions']) == 4:
+    ii, jj, kk, ll = param['functions']
     j1, j2 = choice(ii), choice(jj)
     k1, k2 = choice(kk), choice(ll)
 else:
-    ii, jj = param['types']
+    ii, jj = param['functions']
     j1, k1 = sample(ii, 2)
     j2, k2 = choice(jj), choice(jj)
 
@@ -195,7 +246,7 @@ wims ==
 
 % Analyse de la réponse
 
-\answer{}{\rep}{type=function}{option=noanalyzeprint}
+\answer{}{\rep}{type=functions}{option=noanalyzeprint}
 \text{delta=maxima(print(ratsimp(trigreduce(trigsimp(\dux-(\rep)))));)}
 \condition{Bonne réponse}{\delta=0}
 
