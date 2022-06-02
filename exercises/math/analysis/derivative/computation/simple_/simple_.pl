@@ -7,34 +7,45 @@ extends = /model/math/multimathinput.pl
 
 title = Calculer la dérivée d'une fonction
 
-param.types = [[[7, 8], [0, 1]], [[10, 11], [0, 1]], [[3, 4], [6, 2]]]
+param.functions = [[[7, 8], [0, 1]], [[10, 11], [0, 1]]]]
 
-documentation ==
-# Paramètres
-# - types : Liste contenant les types de fonctions utilisées pour générer chaque fonction à dériver.
-# 0 : constant
-# 1 : x^n (n <= 3)
-# 2 : x^n (n > 3)
-# 3 : 1/x
-# 4 : 1/x^n (n > 1)
-# 5 : x**r
-# 6 : sqrt(x)
-# 7 : exp(x)
-# 8 : ln(x)
-# 9 : a^x
-# 10 : sin(x)
-# 11 : cos(x)
-# 12 : tan(x)
-# 13 : sinh(x)
-# 14 : cosh(x)
-# 15 : tanh(x)
-# 16 : asin(x)
-# 17 : acos(x)
-# 18 : atan(x)
+paramdoc == #|json|
+{
+    "keys": {
+        "functions": {
+            "type": "list[list[list[int]]]",
+            "default": "[[[7, 8], [0, 1]], [[10, 11], [0, 1]]]]",
+            "description": "Types de fonctions générées. Les fonctions générées sont des combinaisons linéaires de fonctions de base. Chaque sous-liste correspond à une fonction à générer. Chaque sous-liste contient des listes de fonctions de base dans lesquelles un élément est tiré."
+        }
+    }
+}
+==
+
+paramnotes ==     
+Types de fonctions de base
+0: constant
+1: x^n (n <= 3)
+2: x^n (n > 3)
+3: 1/x
+4: 1/x^n (n > 1)
+5: x^r
+6: sqrt(x)
+7: exp(x)
+8: ln(x)
+9: a^x
+10: sin(x)
+11: cos(x)
+12: tan(x)
+13: sinh(x)
+14: cosh(x)
+15: tanh(x)
+16: asin(x)
+17: acos(x)
+18: atan(x)
 ==
 
 before == #|py|
-n = len(param['types'])
+n = len(param['functions'])
 inputs = [MathInput(type="expr") for _ in range(n)]
 
 var('x')
@@ -96,7 +107,7 @@ def generate_f(par):
 prefixes = []
 expr = []
 for i in range(n):
-    par = param['types'][i]
+    par = param['functions'][i]
     for j in range(len(par)):
         if isinstance(par[j], list):
             par[j]= choice(par[j])
