@@ -171,7 +171,7 @@ while True:
 sol = diff(f, x).factor()
 
 if domain == "I":
-    phrase = r"un certain intervalle $! I !$."
+    phrase = r"un certain ensemble $! I !$."
 else:
     phrase = r"sur $! \mathbb{R} !$."
 ==
