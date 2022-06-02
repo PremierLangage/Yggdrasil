@@ -7,7 +7,7 @@ extends = /model/math/multimathinput.pl
 
 title = Calculer la dérivée d'une fonction
 
-param.functions = [[[7, 8], [0, 1]], [[10, 11], [0, 1]]]]
+param.functions = [[[7, 8], [0, 1]], [[10, 11], [0, 1]]]
 
 paramdoc == #|json|
 {
