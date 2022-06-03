@@ -1,0 +1,21 @@
+
+
+
+
+
+@ plrunner.py
+@ pltestgrader.py [grader.py]
+@ feedback2.py
+@ /ComputerScience/python/template/anothertemplate.html [template.html]
+# 
+
+@ /utils/sandboxio.py
+@ /builder/none.py [builder.py]
+
+editor.fontsize=14
+# une interface standard d'exercice avec un editeur pour la réponse
+form=@ /form/text_editor.html
+
+settings.allow_reroll=1
+
+
