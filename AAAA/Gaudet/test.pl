@@ -14,4 +14,4 @@ Quel est le plus petit nombre?
 
 items = nombres
 
-indsol = nombres.index(sol)
+indsol = 0
