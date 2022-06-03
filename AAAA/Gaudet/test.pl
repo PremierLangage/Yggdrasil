@@ -12,8 +12,6 @@ question ==
 Quel est le plus petit nombre?
 ==
 
-items ==
-{{ '\n'.join(nombres) }}
-==
+items = {{ nombres }}
 
 indsol = 0
