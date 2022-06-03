@@ -1,6 +1,14 @@
 
 
+title = exercices de programmation 
 
+
+introduction==
+
+
+
+
+==
 
 
 # SQL 
@@ -9,3 +17,6 @@
 # Saisie controlée de capitales
 
 @ /AAAA/dominique/MODULE2/autocomplet.pl 
+
+
+@ /AAAA/dominique/amcExemple.pl
