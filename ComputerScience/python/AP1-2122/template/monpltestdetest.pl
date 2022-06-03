@@ -21,3 +21,16 @@ le test utilise le code suivant :
     
     s='chaine'
 
+==
+
+testname0=Tests de base sans commentaires
+pltest0==
+>>> f(10) == 20
+True
+>>> f(12)
+24
+>>> 'k' in globals()
+True
+>>> 'g' in globals() and type(g)=='function'
+True
+==
