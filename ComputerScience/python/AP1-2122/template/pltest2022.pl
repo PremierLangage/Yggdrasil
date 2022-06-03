@@ -4,7 +4,7 @@
 
 
 @ plrunner.py
-@ pltestgrader.py [grader.py]
+@ pltestgrader2022.py [grader.py]
 @ feedback2.py
 @ /ComputerScience/python/template/anothertemplate.html [template.html]
 # 
