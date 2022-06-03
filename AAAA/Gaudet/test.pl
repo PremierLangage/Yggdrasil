@@ -2,13 +2,16 @@ extends = /model/basic/radio.pl
 
 title = "Test"
 
-question ==
-Quel pays a pour capitale Paris ?
+before == |py|
+from random import randint
+nombres = [randint(100) for i in range(4)]
+sol = min(nombres)
 ==
 
-items ==
-France
-Allemagne
-Italie
-Espagne
+question ==
+Quel est le plus petit nombre?
 ==
+
+items = nombres
+
+indsol = nombres.index(sol)
