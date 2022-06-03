@@ -4,7 +4,7 @@ title = "Test"
 
 before ==
 from random import randint
-nombres = [randint(100) for i in range(4)]
+nombres = [randint(0, 100) for i in range(4)]
 sol = min(nombres)
 ==
 
