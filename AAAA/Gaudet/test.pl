@@ -2,7 +2,7 @@ extends = /model/basic/radio.pl
 
 title = "Test"
 
-before == |py|
+before ==
 from random import randint
 nombres = [randint(100) for i in range(4)]
 sol = min(nombres)
