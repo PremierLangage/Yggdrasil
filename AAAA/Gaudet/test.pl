@@ -13,5 +13,3 @@ items = nombres
 question ==
 Quel est le plus petit nombre?
 ==
-
-text = "lmao"
