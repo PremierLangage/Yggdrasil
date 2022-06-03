@@ -7,28 +7,30 @@ Principe vous fournissez trois variables:
 le titre, le texte décrivant le code que vous souhaitez, le doctest python qui permet d'évaluer le code de l'élève.
 
 
-Exemple:  
-title= Une fonction facile  
-text==
-Ecrire un fonction exp7 qui retourne sont paramêtre à la puissance 7.
-==
+Exemple: 
+ 
+    title= Une fonction facile  
+    text==
+    Ecrire un fonction exp7 qui retourne sont paramêtre à la puissance 7.
+    ==
 
 Un test simple ou l'utilisateur vois le test explicitement 
-pltest0==
->>> exp7(3)
-2187
->>> exp7(3) == 2187
-True
-==
 
-pltest1==
->>> 'exp7' in globals() #
-True 
->>> exp7(3) # le test précédent n'apparait pas 
-2187
->>> exp7(3) == 2187#
-True
-##
+    pltest0==
+    >>> exp7(3)
+    2187
+    >>> exp7(3) == 2187
+    True 
+    ==
+
+    pltest1==
+    >>> 'exp7' in globals() #
+    True 
+    >>> exp7(3) # le test précédent n'apparait pas 
+    2187
+    >>> exp7(3) == 2187#
+    True
+    ==
 
 
 
