@@ -16,6 +16,7 @@ Exemple:
 
 Un test simple ou l'utilisateur vois le test explicitement 
 
+    testname0='Nom du groupe de test'
     pltest0==
     >>> exp7(3)
     2187
@@ -23,6 +24,7 @@ Un test simple ou l'utilisateur vois le test explicitement
     True 
     ==
 
+    testname1='Nom du groupe de test par default Groupe test 1'
     pltest1==
     >>> 'exp7' in globals() #
     True 
@@ -32,10 +34,13 @@ Un test simple ou l'utilisateur vois le test explicitement
     True
     ==
 
+    Les variables testname ont des valeurs par défaut.
 
     VERSION 2022
+    testvisX=False
+    Les options 
+    #PL: H=T/F E='problem erreur %t' F='feedback correct' 
 
-    Les options #PL: 
 
 
 
