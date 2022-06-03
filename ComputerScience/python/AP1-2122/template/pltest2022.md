@@ -8,10 +8,10 @@ le titre, le texte décrivant le code que vous souhaitez, le doctest python qui 
 
 
 Exemple: 
- 
+
     title= Une fonction facile  
     text==
-    Ecrire un fonction exp7 qui retourne sont paramêtre à la puissance 7.
+    Ecrire un fonction exp7 qui retourne son paramêtre à la puissance 7.
     ==
 
 Un test simple ou l'utilisateur vois le test explicitement 
@@ -26,7 +26,7 @@ Un test simple ou l'utilisateur vois le test explicitement
     pltest1==
     >>> 'exp7' in globals() #
     True 
-    >>> exp7(3) # le test précédent n'apparait pas 
+    >>> exp7(3) # le test précédent apparait qu'en cas d'erreur
     2187
     >>> exp7(3) == 2187#
     True
