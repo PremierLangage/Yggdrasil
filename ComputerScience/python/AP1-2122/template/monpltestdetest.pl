@@ -23,6 +23,21 @@ le test utilise le code suivant :
 
 ==
 
+editor.code ==
+def f(n):
+    return 2*n
+
+k = f(6)
+def g(p):
+    return f(p-1)+f(p+1)
+
+s='chaine'
+==
+
+
+
+
+
 testname0=Tests de base sans commentaires
 pltest0==
 >>> f(10) == 20
