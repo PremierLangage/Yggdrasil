@@ -49,8 +49,8 @@ form==
 
 evaluator==
 if inputbox.value == answer[0]:
-    grade = (0, '<span class="success-state">Good answer 👏👏👏</span>')
+    grade = (0, '<span class="success-state">Good answer</span>')
 else:
-    grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
+    grade = (0, '<span class="error-state">Bad answer</span>')
 
 ==
