@@ -11,4 +11,5 @@ Créez un référence 'a'.
 pltest==
 >>> 'a' in globals()
 True
+>>>
 ==
