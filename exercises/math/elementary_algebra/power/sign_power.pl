@@ -28,7 +28,7 @@ for i in range(4):
             s=latex_number(*nn)
         else:
             s=latex_number(*np)
-    items.append("$$ "+s+" $$")
+    items.append("$! "+s+" !$")
 ==
 
 question ==
