@@ -12,15 +12,15 @@ r = randint(1, 5)
 lhs = Abs(x - x0)
 
 if randint(0, 1) == 0:
-    ineq = lhs < rhs
+    ineq = lhs < r
     symb = "<"
 else:
-    ineq = lhs <= rhs
+    ineq = lhs <= r
     symb = "\leq"
 
 interv = solveset(ineq, x, domain=S.Reals)
 inputs[0].sol = x0
-
+inputs[1].sol = r
 ==
 
 question ==
