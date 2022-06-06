@@ -16,7 +16,7 @@ def latex_number(s,x,y):
 
 sol = sample([0, 1, 2, 3], randint(1, 4))
 items = []
-for i in range(len(sol)):
+for i in range(4):
     with evaluate(False):
         a=randint(2,20)
         b=randint(5,15)
