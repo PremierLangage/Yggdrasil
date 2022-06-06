@@ -24,5 +24,5 @@ inputs[1].sol = r
 ==
 
 question ==
-\'Ecrire l'intervalle $! {{ interv|latex }} !$ sous la forme $! |x - x_0| {{ symb }} r !$.
+Ecrire l'intervalle $! {{ interv|latex }} !$ sous la forme $! |x - x_0| {{ symb }} r !$.
 ==
