@@ -4,6 +4,8 @@ title = Signe d'une puissance
 
 
 before ==
+from sympy import evaluate
+
 def latex_number(s,x,y):
     tex=""
     if x<0:
