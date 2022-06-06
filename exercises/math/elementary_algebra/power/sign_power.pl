@@ -21,9 +21,9 @@ for i in range(len(sol)):
         a=randint(2,20)
         b=randint(5,15)
         p,q=2*b,2*b+1
-        r=randitem([p,q])
-        nn=randitem([("",-a,q),("-",-a,p),("-",a,r)])
-        np=randitem([("",-a,p),("-",-a,q)])
+        r=choice([p,q])
+        nn=choice([("",-a,q),("-",-a,p),("-",a,r)])
+        np=choice([("",-a,p),("-",-a,q)])
         if i in sol:
             s=latex_number(*nn)
         else:
