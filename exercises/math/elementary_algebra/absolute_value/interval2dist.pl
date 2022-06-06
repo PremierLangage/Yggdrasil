@@ -24,5 +24,5 @@ inputs[0].sol = x0
 ==
 
 question ==
-Ecrire sous la forme d'un intervalle l'ensemble des réels $! x !$ tels que $$ {{ ineq|latex }}. $$
+Ecrire l'intervalle {{ interv|latex }} sous la forme $! |x - x_0| {{ symb }} r !$.
 ==
