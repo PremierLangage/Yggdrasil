@@ -4,14 +4,23 @@ title = Intervalle et distance
 
 before ==
 inputs = [MathInput(type="expr"), MathInput(type="expr")]
+prefixes = ["$! x_0 = !$", "$! r = !$"]
 from sympy import solveset, S
 var('x')
-b = randint(1, 6)
-rhs = randint(1, 5)
-lhs = Abs(x - b)
+x0 = randint(1, 6)
+r = randint(1, 5)
+lhs = Abs(x - x0)
 
-ineq = choice([lhs <= rhs, lhs < rhs])
-sol = solveset(ineq, x, domain=S.Reals)
+if randint(0, 1) == 0:
+    ineq = lhs < rhs
+    symb = "<"
+else:
+    ineq = lhs <= rhs
+    symb = "\leq"
+
+interv = solveset(ineq, x, domain=S.Reals)
+inputs[0].sol = x0
+
 ==
 
 question ==
