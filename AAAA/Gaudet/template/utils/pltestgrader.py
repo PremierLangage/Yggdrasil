@@ -41,8 +41,11 @@ if __name__ == "__main__":
 
     outstr=""
 
+    # Récupération langage
+    handler = language_handlers['python']()
+
     # Compilation
-    
+
 
     
     if "pltest" in context:
