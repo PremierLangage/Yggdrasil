@@ -41,16 +41,16 @@ if __name__ == "__main__":
         stop=False
 
     outstr=""
-    
+
     
     if "pltest" in dic:
         pltest = dic['pltest']
-        tester = PlRunner(student,pltest)
+        tester = CodingGamesTestRunner(student,pltest)
         testname = dic['testname'] if 'testname' in dic else "Groupe de test un"
         a, b = tester.runpltest(testname)
     elif "pltest0" in dic:
         pltest = dic['pltest0']
-        tester = PlRunner(student,pltest)
+        tester = CodingGamesTestRunner(student,pltest)
         testname = dic['testname0'] if 'testname0' in dic else "Groupe de test 0"
         a, b = tester.runpltest(testname)
     else:
@@ -59,7 +59,7 @@ if __name__ == "__main__":
     i=1
     while "pltest"+str(i) in dic and (a or stop ) :
         outstr += b
-        testi = PlRunner(student,dic["pltest"+str(i)])
+        testi = CodingGamesTestRunner(student,dic["pltest"+str(i)])
         tname='testname'+str(i)
         testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
         a, b = testi.runpltest(testname)
