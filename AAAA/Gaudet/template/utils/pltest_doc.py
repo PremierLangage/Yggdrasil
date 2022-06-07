@@ -34,16 +34,9 @@ class CodingGamesTestRunner(doctest.DocTestRunner):
         
         self.fb.name=str(name)
         doctest_namespace = {'test': test_func}
-        try:
-            compile(self.student,"Votre code",'exec')
-            exec(self.student, dic)
-        except SyntaxError as e:
-            self.fb.addTestSyntaxError(name,subnlbybr(traceback.format_exc(limit=0,chain=False))," Syntaxe ")
-        except Exception as e:
-            self.fb.addTestSyntaxError(name,subnlbybr(traceback.format_exc(limit=0,chain=False))," Exception ")
-        else:
-            test = doctest.DocTestParser().get_doctest(self.pltest, dic, 'votre travail', 'foo.py', 0)
-            self.run(test)
+        
+        test = doctest.DocTestParser().get_doctest(self.pltest, dic, 'votre travail', 'foo.py', 0)
+        self.run(test)
         return self.grade(),self.fb.render()
 
     def report_start(self, out, test, example):
