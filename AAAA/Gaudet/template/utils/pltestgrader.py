@@ -27,7 +27,7 @@ if __name__ == "__main__":
         print(msg, file=sys.stderr)
         sys.exit(1)
 
-    
+    # Get context and checks 
     context = get_context()
     student_code = get_answers()['answer']
 
@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
     outstr=""
 
-    # Récupération langage
+    # Get language used
     lang = 'c'
     language_handlers = {
         'c': langhandlers.CHandler,
@@ -52,7 +52,7 @@ if __name__ == "__main__":
     # Compilation
     handler.compile()
 
-    # Lancement des tests
+    # Tests execution
     if "pltest" in context:
         pltest = context['pltest']
         tester = CodingGamesTestRunner(pltest, handler.exec_cmd)
