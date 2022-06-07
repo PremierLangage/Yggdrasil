@@ -26,10 +26,16 @@ def generate(c):
     return expr, simplify(latex2sympy(expr))
 
 prefixes = []
+sol_tex = []
 for i in range(n):
     expr, sol = generate(param['transformations'][i])
     prefixes.append(f"$! \displaystyle {expr} = !$")
-    inputs[i].sol = simplify(sol)
+    sol = simplify(sol)
+    inputs[i].sol = sol
+    if isinstance(sol, Pow):
+        sol_tex.append(r"$! a^{ %d } !$" % sol.args[1])
+    else:
+        sol_tex.append(r"$! %d !$" % sol)
 ==
 
 question ==
