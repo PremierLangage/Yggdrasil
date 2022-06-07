@@ -27,7 +27,7 @@ def generate(c):
         r"%d ^{ %d } \times %d ^{ %d }" % (a, p, b, q),
         r"\frac{ %d ^{ %d } }{ %d ^{ %d } }" % (a, p, b, q)]
         expr = lst_expr[c]
-    return expr, expr
+    return expr, latex2sympy(expr)
 
 prefixes = []
 for i in range(n):
