@@ -33,7 +33,7 @@ def generate(c):
 prefixes = []
 for i in range(n):
     expr, sol = generate(param['transformations'][i])
-    prefixes.append(f"$! \displaystyle {latex(expr)} = !$")
+    prefixes.append(f"$! \displaystyle {expr} = !$")
     inputs[i].sol = simplify(sol)
 ==
 
