@@ -50,7 +50,7 @@ if __name__ == "__main__":
     # Tests
     if "pltest" in context:
         pltest = context['pltest']
-        tester = CodingGamesTestRunner(student,pltest)
+        tester = CodingGamesTestRunner(pltest, )
         testname = context['testname'] if 'testname' in context else "Groupe de test 1"
         a, b = tester.runtests(testname)
     else:
