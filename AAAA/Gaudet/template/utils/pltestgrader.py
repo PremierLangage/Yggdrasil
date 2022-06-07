@@ -45,9 +45,9 @@ if __name__ == "__main__":
     handler = language_handlers['python'](student_code)
 
     # Compilation
+    handler.compile()
 
-
-    
+    # Tests
     if "pltest" in context:
         pltest = context['pltest']
         tester = CodingGamesTestRunner(student,pltest)
