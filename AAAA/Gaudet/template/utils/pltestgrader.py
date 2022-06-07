@@ -41,8 +41,6 @@ if __name__ == "__main__":
 
     outstr=""
 
-    
-
     # Récupération langage
     language_handlers = {
         'c': langhandlers.CHandler,
