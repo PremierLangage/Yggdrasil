@@ -13,7 +13,8 @@ extends = /model/math/multimathinput.pl
 param.transformations = [0, 1, 2, 3]
 
 before ==
-from sympy import evaluate, UnevaluatedExpr, Pow, latex2sympy
+from sympy import evaluate, UnevaluatedExpr, Pow
+from latex2sympy import latex2sympy
 n = len(param['transformations'])
 inputs = [MathInput(type="expr", evalparam={'embedfunc': exp(3)}) for _ in range(n)]
 var('a')
