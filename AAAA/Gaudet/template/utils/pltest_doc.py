@@ -4,7 +4,11 @@ import traceback
 import feedback2
 
 class CodingGamesTestRunner(doctest.DocTestRunner):
-    def __init__(self, source_code, test_string, run_cmd, fb=None):
+    def __init__(self, test_string, run_cmd, fb=None):
+        """test_string: string containing the doctests
+        run_cmd: command to be used to run the program (function 'test' in the test_string)
+        fb: class to use to format feedback
+        """
         self.optionflags= doctest.NORMALIZE_WHITESPACE
         self.right = 0
         self.fail = 0
@@ -14,7 +18,6 @@ class CodingGamesTestRunner(doctest.DocTestRunner):
             fb = feedback2.FeedBack()
         self.fb = fb
         
-        self.src = source_code
         self.tests = test_string
         super().__init__()
 
