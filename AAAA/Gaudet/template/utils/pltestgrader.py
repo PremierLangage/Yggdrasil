@@ -33,7 +33,7 @@ if __name__ == "__main__":
     with open("student.py","w") as ost:
         ost.write(student)
 
-    if "pltest" not in context and "pltest0" not in context :
+    if "pltest" not in context not in context :
         print("add  either pltest or pltest0..N , or change the template ", file=sys.stderr)
         sys.exit(1)
     if 'stopfirsterror' in context:
