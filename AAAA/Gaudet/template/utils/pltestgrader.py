@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     
     context = get_context()
-    student_code = get_answers()['answer'])
+    student_code = get_answers()['answer']
 
     if "pltest" not in context not in context :
         print("add  either pltest or pltest0..N , or change the template ", file=sys.stderr)
