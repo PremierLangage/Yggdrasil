@@ -54,20 +54,11 @@ if __name__ == "__main__":
         testname = dic['testname0'] if 'testname0' in dic else "Groupe de test 0"
         a, b = tester.runpltest(testname)
     else:
-
-        a,b= True, ""
-    i=1
-    while "pltest"+str(i) in dic and (a or stop ) :
-        outstr += b
-        testi = CodingGamesTestRunner(student,dic["pltest"+str(i)])
-        tname='testname'+str(i)
-        testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
-        a, b = testi.runpltest(testname)
-        i=i+1
+        a, b= True, ""
 
     outstr +=  b
     if "feedback" in dic: # FIXME feedback devrai être un dictionnaire.
-        outstr += dic["feedback"]+" valeur de stop "+ str(stop)
+        outstr += dic["feedback"] + " valeur de stop " + str(stop)
     output(a,outstr)
 
 
