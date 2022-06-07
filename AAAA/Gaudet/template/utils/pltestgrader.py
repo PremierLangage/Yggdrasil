@@ -21,7 +21,6 @@ It should declare a variable 'grade' which should contain a tuple (int, feedback
 
 
 if __name__ == "__main__":
-    # Check call validity
     if len(sys.argv) < 5:
         msg = ("Sandbox did not call grader properly:\n"
                + "Usage: python3 grader.py [input_json] [output_json] [answer_file] [feedback_file]")
