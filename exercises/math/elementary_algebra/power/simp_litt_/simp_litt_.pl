@@ -33,9 +33,9 @@ for i in range(n):
     sol = simplify(sol)
     inputs[i].sol = sol
     if isinstance(sol, Pow):
-        sol_tex.append(r"$! a^{ %d } !$" % sol.args[1])
+        sol_tex.append(r"a^{ %d }" % sol.args[1])
     else:
-        sol_tex.append(r"$! %d !$" % sol)
+        sol_tex.append(latex(sol))
 ==
 
 question ==
