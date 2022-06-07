@@ -17,8 +17,8 @@ class CodingGamesTestRunner(doctest.DocTestRunner):
         if not fb :
             fb = feedback2.FeedBack()
         self.fb = fb
-        
         self.tests = test_string
+        
         super().__init__()
 
     def runtests(self, name):
