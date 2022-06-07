@@ -4,7 +4,7 @@
 import sys, jsonpickle
 from sandboxio import output, get_context, get_answers
 from pltest_doc import CodingGamesTestRunner
-from langhandlers import language_handlers
+import langhandlers
 
 class StopBeforeExec(Exception):
     pass
@@ -45,8 +45,8 @@ if __name__ == "__main__":
 
     # Récupération langage
     language_handlers = {
-        'c': CHandler,
-        'python': PythonHandler
+        'c': langhandlers.CHandler,
+        'python': langhandlers.PythonHandler
     }
     handler = language_handlers['python'](student_code)
 
