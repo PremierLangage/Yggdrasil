@@ -19,6 +19,7 @@ pour cela vous utiliser la syntaxe de doctest par exemple pour tester une foncti
 @ ./utils/pltestgrader.py [grader.py]
 @ ./utils/feedback2.py
 @ ./utils/anothertemplate.html [template.html]
+@ ./utils/langhandlers.py
 # 
 
 @ /utils/sandboxio.py
