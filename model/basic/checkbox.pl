@@ -16,7 +16,9 @@ question ==
 ==
 
 inputblock == #|html|
+toto
 {{ inputfield|html }}
+tata
 ==
 
 # Before scripts
