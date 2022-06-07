@@ -19,6 +19,7 @@ class CodingGamesTestRunner(doctest.DocTestRunner):
             fb = feedback2.FeedBack()
         self.fb = fb
         self.tests = test_string
+        self.run_cmd = run_cmd
 
         super().__init__()
 
