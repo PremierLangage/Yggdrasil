@@ -31,11 +31,6 @@ if __name__ == "__main__":
     student = get_answers()['answer']
     with open("student.py","w") as ost:
         ost.write(student)
-    if "taboo" in dic:
-        t,mc = checktaboo(dic['taboo'], student)
-        if t:
-            output(0, "Le mot clef "+mc+" est proscrit.")
-            sys.exit(1)
 
     if "pltest" not in dic and "pltest0" not in dic :
         print("add  either pltest or pltest0..N , or change the template ", file=sys.stderr)
@@ -46,15 +41,7 @@ if __name__ == "__main__":
         stop=False
 
     outstr=""
-#    if "pltestbuilder" in dic:
-#        if "soluce" not in dic:
-#                print(" illegal use of pltestbuilder sql soluce is empty", file=sys.stderr)
-#                sys.exit(1)
-#        import pltestbuilder
-#        tester = SQLPlRunner(student,dic["soluce"])
-#        a, b = tester.runpltest(1)
-#    elif
-
+    
     
     if "pltest" in dic:
         pltest = dic['pltest']
