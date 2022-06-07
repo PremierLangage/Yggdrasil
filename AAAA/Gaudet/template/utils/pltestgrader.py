@@ -42,7 +42,7 @@ if __name__ == "__main__":
     outstr=""
 
     # Récupération langage
-    Handler = language_handlers['python']
+    handler = language_handlers['python'](student_code)
 
     # Compilation
 
