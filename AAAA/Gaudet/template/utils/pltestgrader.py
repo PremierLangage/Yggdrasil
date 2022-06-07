@@ -51,7 +51,7 @@ if __name__ == "__main__":
     # Compilation
     handler.compile()
 
-    # Tests
+    # Lancement des tests
     if "pltest" in context:
         pltest = context['pltest']
         tester = CodingGamesTestRunner(pltest, handler.exec_cmd)
