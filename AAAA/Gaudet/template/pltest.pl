@@ -13,31 +13,6 @@ pour cela vous utiliser la syntaxe de doctest par exemple pour tester une foncti
     True
     ==
 
-Si vous voulez plusieurs groupes de test vous notez pltest1 puis pltest2 etc 
-
-    pltest1==
-    Le test suivant sera affiché telquel à l'étudiant 
-    >>> f != f
-    True 
-    ET sera biensur toujour faux
-    le test suivant ne sera affiché que si il cause une erreur et seulement l'erreur sera affiché
-    >>> f==f #
-    True
-
-    le test suivant affichera le text qui suit le #
-    >> f == f # Bande de moules 
-    True
-    ==
-  #@ template.md [template.html]
-        
-
-Si vous souhaitez faire des tests sur le code de l'élève la variable __student__ est accessible dans le pltest
-
-    pltest2==
-    >>> student.count("if")>1 # Trop de tests IF 
-    False
-    ==
-
 ==
 
 @ ./utils/pltest_doc.py
