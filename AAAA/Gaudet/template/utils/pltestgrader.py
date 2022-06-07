@@ -48,11 +48,6 @@ if __name__ == "__main__":
         tester = CodingGamesTestRunner(student,pltest)
         testname = dic['testname'] if 'testname' in dic else "Groupe de test 1"
         a, b = tester.runtests(testname)
-    elif "pltest0" in dic:
-        pltest = dic['pltest0']
-        tester = CodingGamesTestRunner(student,pltest)
-        testname = dic['testname0'] if 'testname0' in dic else "Groupe de test 0"
-        a, b = tester.runtests(testname)
     else:
         a, b= True, ""
 
