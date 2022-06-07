@@ -49,7 +49,7 @@ if __name__ == "__main__":
         testname = context['testname'] if 'testname' in context else "Groupe de test 1"
         a, b = tester.runtests(testname)
     else:
-        a, b= True, ""
+        a, b = True, ""
 
     outstr +=  b
     if "feedback" in context: # FIXME feedback devrai être un dictionnaire.
