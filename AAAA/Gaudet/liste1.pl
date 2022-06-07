@@ -20,9 +20,3 @@ pltest= f"""
 '2'
 """
 ==
-
-
-code==
-def place(l,c):
-    l.insert(XX,c)
-==
