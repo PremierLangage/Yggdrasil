@@ -55,7 +55,7 @@ def eval_ans(strans, sol):
         return (-1, "NotExpr")
     if not isinstance(ans, (sp.Pow, sp.Integer)):
         return (-1, "WrongForm")
-    if isinstance(ans, sp.Pow) ans.args[0] != a:
+    if isinstance(ans, sp.Pow) and ans.args[0] != a:
         return (-1, "WrongForm")
     if not equal(ans, sol):
         return (0, "NotEqual")
