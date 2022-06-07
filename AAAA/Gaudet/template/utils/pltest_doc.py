@@ -3,7 +3,6 @@ import doctest
 import traceback
 import feedback2
 
-
 class PlRunner(doctest.DocTestRunner):
     def __init__(self, studentcode, pltest, fb=None):
         self.optionflags= doctest.NORMALIZE_WHITESPACE
