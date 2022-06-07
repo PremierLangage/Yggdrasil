@@ -8,15 +8,15 @@ extends= template/pltest.pl
 
 text==
 
-Ecrire un programme qui écrit ce qu'il reçoit
+Ecrire un programme qui écrit le successeur de l'entier envoyé en entrée
 
 ==
 
 before==
 pltest= f"""
 >>> test('1') # Test 1
-'1'
->>> test('2') # Test 2
 '2'
+>>> test('2') # Test 2
+'3'
 """
 ==
