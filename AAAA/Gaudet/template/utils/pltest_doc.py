@@ -3,8 +3,8 @@ import doctest
 import traceback
 import feedback2
 
-class PlRunner(doctest.DocTestRunner):
-    def __init__(self, studentcode, pltest, fb=None):
+class CodingGamesTestRunner(doctest.DocTestRunner):
+    def __init__(self, source_code, pltest, fb=None):
         self.optionflags= doctest.NORMALIZE_WHITESPACE
         self.right = 0
         self.fail = 0
@@ -14,8 +14,8 @@ class PlRunner(doctest.DocTestRunner):
             fb = feedback2.FeedBack()
         self.fb = fb
         
-        self.student= studentcode
-        self.pltest= pltest
+        self.src = source_code
+        self.pltest = pltest
         super().__init__()
 
     def runpltest(self, name):
