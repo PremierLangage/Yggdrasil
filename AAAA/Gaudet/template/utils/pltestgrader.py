@@ -27,33 +27,33 @@ if __name__ == "__main__":
         sys.exit(1)
 
     
-    dic = get_context()
+    context = get_context()
     student = get_answers()['answer']
     with open("student.py","w") as ost:
         ost.write(student)
 
-    if "pltest" not in dic and "pltest0" not in dic :
+    if "pltest" not in context and "pltest0" not in context :
         print("add  either pltest or pltest0..N , or change the template ", file=sys.stderr)
         sys.exit(1)
-    if 'stopfirsterror' in dic:
-        stop = bool(dic['stopfirsterror'])
+    if 'stopfirsterror' in context:
+        stop = bool(context['stopfirsterror'])
     else:
         stop = False
 
     outstr=""
 
     
-    if "pltest" in dic:
-        pltest = dic['pltest']
+    if "pltest" in context:
+        pltest = context['pltest']
         tester = CodingGamesTestRunner(student,pltest)
-        testname = dic['testname'] if 'testname' in dic else "Groupe de test 1"
+        testname = context['testname'] if 'testname' in context else "Groupe de test 1"
         a, b = tester.runtests(testname)
     else:
         a, b= True, ""
 
     outstr +=  b
-    if "feedback" in dic: # FIXME feedback devrai être un dictionnaire.
-        outstr += dic["feedback"] + " valeur de stop " + str(stop)
+    if "feedback" in context: # FIXME feedback devrai être un dictionnaire.
+        outstr += context["feedback"] + " valeur de stop " + str(stop)
     output(a, outstr)
 
 
