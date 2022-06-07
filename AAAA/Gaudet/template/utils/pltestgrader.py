@@ -1,7 +1,7 @@
 
 #!/usr/bin/env python3
 # coding: utf-8
-import sys, jsonpickle,re
+import sys, jsonpickle
 from sandboxio import output, get_context, get_answers
 from pltest_doc import CodingGamesTestRunner
 
