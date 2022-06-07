@@ -1,6 +1,4 @@
-
-# Version 26/9/2019
-# ajout de runcompiletest 
+# Classe permettant d'utiliser des doctests pour tester des entrées/sorties attendues d'un programme
 import doctest
 import traceback
 import feedback2
