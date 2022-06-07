@@ -1,10 +1,5 @@
 import subprocess
 
-language_handlers = {
-    'c': CHandler,
-    'python': PythonHandler
-}
-
 class CHandler():
     def __init__(self, source_code, func_name=None):
         self.exec_name = '_test'
