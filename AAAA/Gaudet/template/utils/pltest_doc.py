@@ -4,15 +4,6 @@ import traceback
 import feedback2
 import subprocess
 
-def test_func(arg):
-    proc = subprocess.run(_cmd,
-        input=arg,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
-        text=True,
-        timeout=1)
-    return proc.stdout.strip()
-
 class CodingGamesTestRunner(doctest.DocTestRunner):
     def __init__(self, test_string, run_cmd, fb=None):
         """test_string: string containing the doctests
@@ -32,6 +23,15 @@ class CodingGamesTestRunner(doctest.DocTestRunner):
         super().__init__()
 
     def runtests(self, name):
+        def test_func(arg):
+            proc = subprocess.run(self.run_cmd,
+                input=arg,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                timeout=1)
+            return proc.stdout.strip()
+        
         self.fb.name=str(name)
         doctest_namespace = {'test': test_func, '_cmd': run_cmd}
         try:
