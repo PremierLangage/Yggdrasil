@@ -33,7 +33,7 @@ class CodingGamesTestRunner(doctest.DocTestRunner):
             return proc.stdout.strip()
         
         self.fb.name=str(name)
-        doctest_namespace = {'test': test_func, '_cmd': run_cmd}
+        doctest_namespace = {'test': test_func}
         try:
             compile(self.student,"Votre code",'exec')
             exec(self.student, dic)
