@@ -16,15 +16,16 @@ before ==
 from sympy import evaluate, UnevaluatedExpr
 n = len(param['transformations'])
 inputs = [MathInput(type="expr", evalparam={'embedfunc': exp(3)}) for _ in range(n)]
+var('a')
 
 def generate(c):
     p, q = sample([-5, -4, -3, -2, 2, 3, 4, 5], 2)
     u = randint(2,4)
     with evaluate(False):
-        lst_expr = [(exp(p))**u,
-        1/(exp(p))**u,
-        UnevaluatedExpr(exp(p))*UnevaluatedExpr(exp(q)),
-        UnevaluatedExpr(exp(p))/(exp(q))]
+        lst_expr = [(a**p)**u,
+        1/(a**p)**u,
+        UnevaluatedExpr(a**p)*UnevaluatedExpr(a**q),
+        UnevaluatedExpr(a**p)/(a**q)]
         expr = lst_expr[c]
     return expr, expr
 
