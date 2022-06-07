@@ -39,6 +39,20 @@ class CodingGamesTestRunner(doctest.DocTestRunner):
         self.run(test)
         return self.grade(),self.fb.render()
 
+    def testtitle(self, line):
+            if line.endswith("\n"):
+                line = line[:-1]
+            if "#" not in line:
+                return line
+            else:
+                if line.endswith("#"): # Hidden
+                    return None
+                found = line.split("#", 1) # couper sur le premier #
+                if found[1].startswith("#"): # Numéro du test
+                    return " "
+                else:
+                    return found[1]
+
     def report_start(self, out, test, example):
         pass
     
