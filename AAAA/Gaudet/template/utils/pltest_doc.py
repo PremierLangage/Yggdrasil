@@ -33,7 +33,7 @@ class CodingGamesTestRunner(doctest.DocTestRunner):
 
     def runtests(self, name):
         self.fb.name=str(name)
-        doctest_namespace = {'test'}
+        doctest_namespace = {'test': test_func, '_cmd': run_cmd}
         try:
             compile(self.student,"Votre code",'exec')
             exec(self.student, dic)
