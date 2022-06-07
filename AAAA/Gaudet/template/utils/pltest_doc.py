@@ -35,7 +35,7 @@ class CodingGamesTestRunner(doctest.DocTestRunner):
         self.fb.name=str(name)
         doctest_namespace = {'test': test_func}
         
-        test = doctest.DocTestParser().get_doctest(self.pltest, dic, 'votre travail', 'foo.py', 0)
+        test = doctest.DocTestParser().get_doctest(self.test_string, doctest_namespace, 'votre travail', 'foo.py', 0)
         self.run(test)
         return self.grade(),self.fb.render()
 
