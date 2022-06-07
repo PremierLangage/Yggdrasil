@@ -36,9 +36,9 @@ if __name__ == "__main__":
         print("add  either pltest or pltest0..N , or change the template ", file=sys.stderr)
         sys.exit(1)
     if 'stopfirsterror' in dic:
-        stop=bool(dic['stopfirsterror'])
+        stop = bool(dic['stopfirsterror'])
     else:
-        stop=False
+        stop = False
 
     outstr=""
 
