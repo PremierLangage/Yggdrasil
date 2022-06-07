@@ -2,6 +2,7 @@
 import doctest
 import traceback
 import feedback2
+import subprocess
 
 def test_func(arg):
     proc = subprocess.run(_cmd,
