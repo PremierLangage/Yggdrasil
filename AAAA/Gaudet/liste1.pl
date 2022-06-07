@@ -8,9 +8,7 @@ extends= template/pltest.pl
 
 text==
 
-Ecrire une fonction **place** qui prend deux paramêtres une liste et une valeur : $%l , v%$.  
-
-Qui ajoute en place $%v%$ **{{position}}** dans la liste $%l%$.
+Ecrire un programme qui écrit ce qu'il reçoit
 
 ==
 
