@@ -13,7 +13,7 @@ extends = /model/math/multimathinput.pl
 param.transformations = [0, 1, 2, 3]
 
 before ==
-from sympy import evaluate, UnevaluatedExpr
+from sympy import evaluate, UnevaluatedExpr, Pow
 n = len(param['transformations'])
 inputs = [MathInput(type="expr", evalparam={'embedfunc': exp(3)}) for _ in range(n)]
 var('a')
@@ -24,7 +24,7 @@ def generate(c):
     with evaluate(False):
         lst_expr = [(a**p)**u,
         1/(a**p)**u,
-        UnevaluatedExpr(a**p)*UnevaluatedExpr(a**q),
+        Pow(a,p)*Pow(a, q),
         UnevaluatedExpr(a**p)/(a**q)]
         expr = lst_expr[c]
     return expr, expr
