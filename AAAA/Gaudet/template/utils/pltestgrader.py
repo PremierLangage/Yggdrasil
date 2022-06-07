@@ -4,6 +4,7 @@
 import sys, jsonpickle
 from sandboxio import output, get_context, get_answers
 from pltest_doc import CodingGamesTestRunner
+from langhandlers import language_handlers
 
 class StopBeforeExec(Exception):
     pass
