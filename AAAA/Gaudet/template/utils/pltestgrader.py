@@ -42,11 +42,12 @@ if __name__ == "__main__":
     outstr=""
 
     # Récupération langage
+    lang = 'python'
     language_handlers = {
         'c': langhandlers.CHandler,
         'python': langhandlers.PythonHandler
     }
-    handler = language_handlers['python'](student_code)
+    handler = language_handlers[lang](student_code)
 
     # Compilation
     handler.compile()
