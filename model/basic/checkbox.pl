@@ -53,7 +53,6 @@ evaluator == #|py|
 score = inputfield.eval()
 inputfield.display_feedback()
 inputfield.disable()
-inputblock = ""
 ==
 
 # API documentation
