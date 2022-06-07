@@ -7,7 +7,7 @@ import feedback2
 
 
 class PlRunner(doctest.DocTestRunner):
-    def __init__(self,studentcode,pltest,fb = None):
+    def __init__(self, studentcode, pltest, fb=None):
         self.optionflags= doctest.NORMALIZE_WHITESPACE
         self.right = 0
         self.fail = 0
@@ -25,8 +25,6 @@ class PlRunner(doctest.DocTestRunner):
     def runpltest(self, name):
         self.fb.name=str(name)
         dic = {}
-        # ~ with open("student.py","r") as f:
-        # ~ exec(f.read(),dic)
         dic['__student']=self.student
         try:
             compile(self.student,"Votre code",'exec')
@@ -38,7 +36,6 @@ class PlRunner(doctest.DocTestRunner):
         else:
             test = doctest.DocTestParser().get_doctest(self.pltest, dic, 'votre travail', 'foo.py', 0)
             self.run(test)
-            #print(self.fb.getOutput())
         return self.grade(),self.fb.render()
 
     def report_start(self, out, test, example):
