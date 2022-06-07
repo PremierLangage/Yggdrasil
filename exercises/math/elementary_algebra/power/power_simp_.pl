@@ -3,14 +3,73 @@
 # Transformer des expressions avec exponentielle
 # 19/7/2021
 
+# Author: D. Doyen
+# Tags: exponential
+# Transformer des expressions avec exponentielle
+# 19/7/2021
+
 extends = /model/math/multimathinput.pl
 
-param.types = [0, 1]
+param.transformations = [0, 1, 2, 3]
 
-title = Transformation avec racine carrée
+before ==
+from sympy import evaluate, UnevaluatedExpr
+n = len(param['transformations'])
+inputs = [MathInput(type="expr", evalparam={'embedfunc': exp(3)}) for _ in range(n)]
+
+def generate(c):
+    p, q = sample([-5, -4, -3, -2, 2, 3, 4, 5], 2)
+    u = randint(2,4)
+    with evaluate(False):
+        lst_expr = [(exp(p))**u,
+        1/(exp(p))**u,
+        UnevaluatedExpr(exp(p))*UnevaluatedExpr(exp(q)),
+        UnevaluatedExpr(exp(p))/(exp(q))]
+        expr = lst_expr[c]
+    return expr, expr
+
+prefixes = []
+for i in range(n):
+    expr, sol = generate(param['transformations'][i])
+    prefixes.append(f"$! \displaystyle {latex(expr)} = !$")
+    inputs[i].sol = simplify(sol)
+==
+
+question ==
+Ecrire les expressions suivantes sous la forme  $! a^n !$, où $! n !$ est un nombre.
+==
+
+evaluator ==#|py|
+import sympy as sp
+from evalsympy import equal, is_rat_simp
+from latex2sympy import latex2sympy
+
+def eval_ans(strans, sol):
+    try:
+        ans = latex2sympy(strans, {'e':sp.E})
+    except:
+        return (-1, "NotExpr")
+    if not isinstance(ans, sp.Expr):
+        return (-1, "NotExpr")
+    if not isinstance(ans, (sp.exp, type(sp.E))):
+        return (-1, "WrongForm")
+    if isinstance(ans, sp.exp) and ans.args[0].has(sp.exp):
+        return (-1, "WrongForm")
+    if not equal(ans, sol):
+        return (0, "NotEqual")
+    if not is_rat_simp(ans):
+        return (-1, "NotRatSimp")
+    return (100, "Success")
 
 
-before == #|py|
+for input in inputs:
+    input.value = answers[input.id] # HACK
+    input.score, error = eval_ans(input.value, input.sol)
+    input.feedback = message[error]
+==
+
+
+before3 == #|py|
 from sympy.ntheory.factor_ import core
 from sympy import fraction
 n = len(param['types'])
@@ -43,33 +102,3 @@ for i in range(n):
     inputs[i].sol = simplify(sol)
 ==
 
-question ==
-Simplifier les expressions suivantes en l'écrivant sous la forme $! {{x}}^n !$, où $! n !$ est un entier.
-==
-
-evaluator ==#|py|
-import sympy as sp
-from evalsympy import equal
-from latex2sympy import latex2sympy
-
-def eval_ans(strans, sol):
-    try:
-        ans = latex2sympy(strans, {'e':sp.E})
-    except:
-        return (-1, "NotExpr")
-    if not isinstance(ans, sp.Expr):
-        return (-1, "NotExpr")
-    if not isinstance(ans, sp.Pow):
-        return (-1, "WrongForm")
-    if isinstance(ans, sp.Pow) and ans.args[0].has(sp.Pow):
-        return (-1, "WrongForm")
-    if not equal(ans, sol):
-        return (0, "NotEqual")
-    return (100, "Success")
-
-
-for input in inputs:
-    input.value = answers[input.id] # HACK
-    input.score, error = eval_ans(input.value, input.sol)
-    input.feedback = message[error]
-==
