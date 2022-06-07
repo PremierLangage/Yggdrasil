@@ -15,37 +15,11 @@ Qui ajoute en place $%v%$ **{{position}}** dans la liste $%l%$.
 ==
 
 before==
-import random
-def f0(l,c):
-    l.insert(0,c)
-    return l
-def f1(l,c):
-    l.insert(1,c)
-    return l
-def fn(l,c):
-    l.insert(len(l),c)
-    return l
-
-
-position, f= random.choice([
-('au début',f0),
-('en deuxième position',f1),
-('à la fin',fn)
-])
-
-
 pltest= f"""
->>> l=[1,2,3]; place(l,4);l # Petite liste
-{f([1,2,3],4)}
->>> l=[];place(l,1); l # Liste vide 
-[1]
->>> place(l,1); l # Ajout de 1
-[1, 1]
->>> place(l,2); l # Ajout de 2
-{f([1,1],2)}
->>> place(l,34); l # Ajout de 34
-{f(f([1,1],2),34)}
-
+>>> test('1') # Test 1
+'1'
+>>> test('2') # Test 2
+'2'
 """
 ==
 
