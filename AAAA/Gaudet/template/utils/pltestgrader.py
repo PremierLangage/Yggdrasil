@@ -29,9 +29,7 @@ if __name__ == "__main__":
 
     
     context = get_context()
-    student = get_answers()['answer']
-    with open("student.py","w") as ost:
-        ost.write(student)
+    student_code = get_answers()['answer'])
 
     if "pltest" not in context not in context :
         print("add  either pltest or pltest0..N , or change the template ", file=sys.stderr)
