@@ -22,10 +22,10 @@ def generate(c):
     p, q = sample([-5, -4, -3, -2, 2, 3, 4, 5], 2)
     u = randint(2,4)
     with evaluate(False):
-        lst_expr = [(a**p)**u,
-        1/(a**p)**u,
-        Pow(a,p)*Pow(a, q),
-        UnevaluatedExpr(a**p)/(a**q)]
+        lst_expr = [r" \left(%d ^{ %d } \right)^{ %d }" % (a, p, u),
+        r" \frac{1}{ \left(%d ^{ %d } \right)^{ %d }}" % (a, p, u),
+        r"%d ^{ %d } \times %d ^{ %d }" % (a, p, b, q),
+        r"\frac{ %d ^{ %d } }{ %d ^{ %d } }" % (a, p, b, q)]
         expr = lst_expr[c]
     return expr, expr
 
