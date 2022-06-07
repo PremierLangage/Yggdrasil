@@ -55,10 +55,3 @@ if __name__ == "__main__":
     if "feedback" in context: # FIXME feedback devrai être un dictionnaire.
         outstr += context["feedback"] + " valeur de stop " + str(stop)
     output(a, outstr)
-
-
-
-
-
-
-
