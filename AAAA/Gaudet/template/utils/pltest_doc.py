@@ -11,9 +11,8 @@ class PlRunner(doctest.DocTestRunner):
         self.total = 0
         self.testnum = -1
         if not fb :
-            self.fb=feedback2.FeedBack()
-        else:
-            self.fb=fb
+            fb = feedback2.FeedBack()
+        self.fb = fb
         
         self.student= studentcode
         self.pltest= pltest
