@@ -15,8 +15,8 @@ pour cela vous utiliser la syntaxe de doctest par exemple pour tester une foncti
 
 ==
 
-@ ./utils/pltest_doc.py
-@ ./utils/pltestgrader.py [grader.py]
+@ ./utils/cgtest.py
+@ ./utils/cgtestgrader.py [grader.py]
 @ ./utils/feedback2.py
 @ ./utils/anothertemplate.html [template.html]
 @ ./utils/langhandlers.py
