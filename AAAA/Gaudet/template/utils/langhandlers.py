@@ -30,3 +30,19 @@ class PythonHandler():
         with open(self.exec_name, 'w') as output:
             output.write(self.src)
         return True, ''
+
+class JavaHandler():
+    def __init__(self, source_code):
+        self.exec_name = '_test'
+        self.exec_cmd = ['java', exec_name]
+        self.src = source_code
+    
+    def compile(self):
+        javafilename = self.exec_name + '.java'
+        with open(javafilename, 'r') as output:
+            output.write(self.src)
+        
+        cmd = ['javac', javafilename]
+        proc = subprocess.run(cmd, input=self.src, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+
+        return proc.returncode == 0, proc.stdout
