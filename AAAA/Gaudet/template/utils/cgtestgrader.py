@@ -15,7 +15,8 @@ if __name__ == "__main__":
     # Get context and checks 
     context = get_context()
     editor_id = context["editor"].cid
-    student_code = get_answers()[editor_id]['code']
+    answers = get_answers()
+    student_code = answers[editor_id]['code']
     
 
     if "cgtest" not in context :
@@ -25,7 +26,7 @@ if __name__ == "__main__":
     feedback = ""
 
     # Get language used
-    lang = get_answers()[editor_id]['language']
+    lang = answers[editor_id]['language']
     language_handlers = {
         'c': langhandlers.CHandler,
         'python': langhandlers.PythonHandler
