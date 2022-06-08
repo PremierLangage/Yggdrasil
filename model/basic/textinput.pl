@@ -1,5 +1,7 @@
 extends = /model/basic/basic.pl
 
+title = TextInput
+
 # Specific keys
 
 sol = []
