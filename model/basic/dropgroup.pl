@@ -1,5 +1,7 @@
 extends = /model/basic/basic.pl
 
+title = DropGroup
+
 # Main keys
 
 question ==
