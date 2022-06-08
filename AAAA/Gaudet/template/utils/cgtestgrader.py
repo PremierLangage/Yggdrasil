@@ -55,7 +55,7 @@ if __name__ == "__main__":
         a, b = tester.runtests(testname)
     else:
         a, b = True, ""
-    outstr +=  b
+    feedback +=  b
     if "feedback" in context: # FIXME feedback devrai être un dictionnaire.
         outstr += context["feedback"] + " valeur de stop " + str(stop)
     
