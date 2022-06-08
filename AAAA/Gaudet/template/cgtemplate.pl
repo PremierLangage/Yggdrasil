@@ -28,8 +28,9 @@ editor.theme = dark
 editor.language = python
 editor.codes %=
 [
-    { "language": "python", "code": "// write a csharp code here" },
-    { "language": "c", "code": "// write a c code here" }
+    { "language": "python", "code": "# Programme Python ici" },
+    { "language": "c", "code": "/* Programme en C ici */" },
+    { "language": "java", "code": "// Programme en Java ici"}
 ]
 ==
 
