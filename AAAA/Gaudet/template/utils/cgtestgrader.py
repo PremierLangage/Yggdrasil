@@ -19,7 +19,7 @@ if __name__ == "__main__":
     student_code = answers[editor_id]['code']
     
     if "cgtest" not in context :
-        print("add  either cgtest, or change the template ", file=sys.stderr)
+        print("cgtest missing, please specify tests to run", file=sys.stderr)
         sys.exit(1)
 
     feedback = ""
