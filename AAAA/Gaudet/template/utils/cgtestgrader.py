@@ -16,6 +16,7 @@ if __name__ == "__main__":
     context = get_context()
     editor_id = context["editor"].cid
     student_code = get_answers()[editor_id]['code']
+    
 
     if "cgtest" not in context :
         print("add  either cgtest, or change the template ", file=sys.stderr)
@@ -24,7 +25,7 @@ if __name__ == "__main__":
     feedback = ""
 
     # Get language used
-    lang = 'c'
+    lang = get_answers()[editor_id]['language']
     language_handlers = {
         'c': langhandlers.CHandler,
         'python': langhandlers.PythonHandler
