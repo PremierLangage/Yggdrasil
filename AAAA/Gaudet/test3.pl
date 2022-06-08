@@ -11,9 +11,9 @@ la sortie standard
 ==
 
 cgtest==
->>> test('1 2') # Somme simple
+>>> test('1\n2\n') # Somme simple
 '3'
->>> test('-6 4') # Somme avec négatif
+>>> test('-6\n4\n') # Somme avec négatif
 '-2'
 >>> from random import randint; a = randint(0, 100); test('2 ' + str(a)) == str(2 + a) # Test aléatoire
 True
