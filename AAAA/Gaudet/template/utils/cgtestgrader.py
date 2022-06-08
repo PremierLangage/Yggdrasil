@@ -34,7 +34,7 @@ if __name__ == "__main__":
         'python': langhandlers.PythonHandler
     }
     if lang not in language_handlers:
-        
+        raise ValueError(lang + " language not supported")
 
     handler = language_handlers[lang](student_code)
 
