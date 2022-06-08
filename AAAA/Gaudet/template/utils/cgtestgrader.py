@@ -14,7 +14,8 @@ if __name__ == "__main__":
 
     # Get context and checks 
     context = get_context()
-    student_code = get_answers()['answer']
+    editor_id = context["editor"].cid
+    student_code = get_answers()[editor_id]['code']
 
     if "cgtest" not in context :
         print("add  either cgtest, or change the template ", file=sys.stderr)
