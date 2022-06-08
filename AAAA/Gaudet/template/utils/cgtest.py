@@ -64,7 +64,7 @@ class CodingGamesTestRunner(doctest.DocTestRunner):
             self.right += 1
             self.total += 1
 
-    def report_failure(self, out, test, example, got):", line 38, in runtests
+    def report_failure(self, out, test, example, got):
         sortie = self.testtitle(example.source)
         if sortie:
             self.fb.addTestFailure(sortie, got, example.want)
