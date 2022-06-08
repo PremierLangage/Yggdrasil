@@ -10,11 +10,11 @@ La batterie de test est à mettre dans la variable cgtest
 
 Par exemple:
     cgtest==
-    >>> f == f # La fonction existe  ?
-    True
-    >>> f() # f retourne ou affiche  42
-    42
-    >>> f() == 42 # retourne 42 
+    >>> test('1 2') # Somme simple
+    '3'
+    >>> test('-6 4') # Somme avec négatif
+    '-2'
+    >>> from random import randint; a = randint(0, 100); test('2 ' + str(a)) == str(2 + a) # Test aléatoire
     True
     ==
 
