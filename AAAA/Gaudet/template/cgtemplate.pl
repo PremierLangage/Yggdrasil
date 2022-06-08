@@ -23,6 +23,15 @@ pour cela vous utiliser la syntaxe de doctest par exemple pour tester une foncti
 @ /utils/sandboxio.py
 @ /builder/none.py [builder.py]
 
+# création de l'éditeur de code
+editor =: CodeEditor
+editor.language = python
+#editor.cid = py_editor_0
+editor.code ==
+# Saisissez votre code ici, et cliquez sur le bouton
+# de validation quand vous avez terminé
+
+
 # une interface standard d'exercice avec un editeur pour la réponse
 form==
 {{editor|component}}
