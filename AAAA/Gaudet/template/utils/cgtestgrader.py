@@ -33,7 +33,13 @@ if __name__ == "__main__":
     # Compilation
     success, compile_feedback = handler.compile()
     if not success:
+        feedback += """<div class="card card-danger;" style="background-color: Tomato;">
+        Erreur de compilation:
+        
+        """
+        
         feedback += compile_feedback
+        feedback += "<div>"
 
     # Test execution
     if "cgtest" in context:
