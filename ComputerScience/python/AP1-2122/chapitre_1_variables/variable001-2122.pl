@@ -31,6 +31,10 @@ True
 ==
 
 
+pltest1==
+>>> pim == 2
+True
+==
 
 
 
