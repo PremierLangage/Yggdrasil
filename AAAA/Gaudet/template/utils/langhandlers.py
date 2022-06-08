@@ -5,7 +5,7 @@ import subprocess
 
 class CHandler():
     def __init__(self, source_code, func_name=None):
-        self.exec_name = 'Main'
+        self.exec_name = '_test'
         self.exec_cmd = ['./' + self.exec_name]
         self.src = source_code
     
@@ -33,7 +33,7 @@ class PythonHandler():
 
 class JavaHandler():
     def __init__(self, source_code):
-        self.exec_name = '_test'
+        self.exec_name = 'Main'
         self.exec_cmd = ['java', self.exec_name]
         self.src = source_code
     
