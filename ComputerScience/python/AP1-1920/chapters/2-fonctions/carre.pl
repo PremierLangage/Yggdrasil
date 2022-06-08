@@ -14,14 +14,19 @@ Ecrivez une fonction `carre` qui retourne le carré de son paramêtre
 before==
 import random 
 p=random.randint(23,77)
-pltest1=""">>> carre({})\n{}\n""".format(p, p**2)
+pltest2=""">>> carre({})\n{}\n""".format(p, p**2)
 p+=17
-pltest2=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
+pltest3=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
 
 ==
 
+pltest0==
+>>> "carre" in globals() # carre existe 
+True
+>>> type(carre) == function # est carre est une fonction 
+==
 
-pltest==
+pltest1==
 >>> carre(510) == 260100 # le carre de 510
 True
 >>> carre(0)
