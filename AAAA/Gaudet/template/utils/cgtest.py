@@ -26,13 +26,17 @@ class CodingGamesTestRunner(doctest.DocTestRunner):
     def runtests(self, name):
         def test_func(arg):
             """Wrapper pour appeler le programme avec une entrée, et renvoi de la sortie (stdout + stderr)"""
-            proc = subprocess.run(self.run_cmd,
-                input=arg,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                text=True,
-                timeout=1)
-            return proc.stdout.strip()
+            try:
+                proc = subprocess.run(self.run_cmd,
+                    input=arg,
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.STDOUT,
+                    text=True,
+                    timeout=1)
+            except TimeoutExpired:
+                
+            else:
+                return proc.stdout.strip()
         
         self.fb.name=str(name)
         # Injection de la fonction test dans le namespace des doctests
