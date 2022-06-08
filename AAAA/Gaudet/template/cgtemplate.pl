@@ -31,7 +31,7 @@ editor.codes %=
 [
     { "language": "python", "code": "if __name__ == '__main__':\n    pass\n" },
     { "language": "c", "code": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char *argv[]) {\n\n  return 0;\n}" },
-    { "language": "java", "code": "public class Main {\n"}
+    { "language": "java", "code": "public class Main {\n  public static void main(String args[]) {\n    \n  }\n}"}
 ]
 ==
 
