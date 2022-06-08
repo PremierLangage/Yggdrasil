@@ -39,7 +39,7 @@ if __name__ == "__main__":
         """
         feedback += compile_feedback
         feedback += "</code></pre><div>"
-        output(0, feedback)
+        score = 0
 
     else:
         # Test execution
@@ -52,5 +52,5 @@ if __name__ == "__main__":
             score, test_feedback = True, ""
         feedback += test_feedback
         
-        # Rajout résultat dans JSON
-        output(score, feedback)
+    # Rajout résultat dans JSON
+    output(score, feedback)
