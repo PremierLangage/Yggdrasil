@@ -34,7 +34,7 @@ class PythonHandler():
 class JavaHandler():
     def __init__(self, source_code):
         self.exec_name = '_test'
-        self.exec_cmd = ['java', exec_name]
+        self.exec_cmd = ['java', self.exec_name]
         self.src = source_code
     
     def compile(self):
