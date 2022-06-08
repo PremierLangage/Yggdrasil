@@ -31,8 +31,8 @@ if __name__ == "__main__":
     context = get_context()
     student_code = get_answers()['answer']
 
-    if "pltest" not in context not in context :
-        print("add  either pltest or pltest0..N , or change the template ", file=sys.stderr)
+    if "cgtest" not in context :
+        print("add  either cgtest, or change the template ", file=sys.stderr)
         sys.exit(1)
     if 'stopfirsterror' in context:
         stop = bool(context['stopfirsterror'])
@@ -53,8 +53,8 @@ if __name__ == "__main__":
     handler.compile()
 
     # Tests execution
-    if "pltest" in context:
-        pltest = context['pltest']
+    if "cgtest" in context:
+        pltest = context['cgtest']
         tester = CodingGamesTestRunner(pltest, handler.exec_cmd)
         testname = context['testname'] if 'testname' in context else "Groupe de test 1"
         a, b = tester.runtests(testname)
