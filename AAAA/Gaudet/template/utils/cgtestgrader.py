@@ -40,7 +40,7 @@ if __name__ == "__main__":
         feedback += compile_feedback
         feedback += "</code></pre><div>"
         output(0, feedback)
-        exit()
+        raise SystemExit(1)
 
     # Test execution
     if "cgtest" in context:
