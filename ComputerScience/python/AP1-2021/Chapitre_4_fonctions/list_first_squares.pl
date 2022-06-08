@@ -60,6 +60,7 @@ def premiers_carres(k) :
         print(carre(i))
 
 ==
+
 mplsoluce0==
 paire
 2
