@@ -1,5 +1,7 @@
 extends = /model/basic/basic.pl
 
+title = Checkbox
+
 # Specific keys
 
 right = []
