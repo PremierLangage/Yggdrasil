@@ -2,7 +2,7 @@ author=CG
 title=Test
 
 tag=function # N'oubliez pas de remplir ce champs svp
-extends= template/pltest.pl
+extends= template/cgtemplate.pl
 @ /builder/before.py [builder.py]
 
 
