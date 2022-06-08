@@ -56,9 +56,6 @@ if __name__ == "__main__":
     else:
         a, b = True, ""
     feedback +=  b
-
-    if "feedback" in context: # FIXME feedback devrai être un dictionnaire.
-        feedback += context["feedback"] + " valeur de stop " + str(stop)
     
     # Rajout résultat dans JSON
     output(a, feedback)
