@@ -24,7 +24,9 @@ class CodingGamesTestRunner(doctest.DocTestRunner):
         super().__init__()
 
     def runtests(self, name):
+
         def test_func(arg):
+        """Wrapper pour appeler le programme avec une entrée, et renvoi de la sortie"""
             proc = subprocess.run(self.run_cmd,
                 input=arg,
                 stdout=subprocess.PIPE,
