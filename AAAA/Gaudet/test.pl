@@ -6,7 +6,8 @@ extends= template/cgtemplate.pl
 @ /builder/before.py [builder.py]
 
 
-text==Ecrire un programme qui écrit le successeur de l'entier envoyé en entrée
+text==
+Ecrire un programme qui écrit le successeur de l'entier envoyé en entrée
 ==
 
 before==
