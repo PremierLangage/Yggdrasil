@@ -39,6 +39,8 @@ if __name__ == "__main__":
         """
         feedback += compile_feedback
         feedback += "</code></pre><div>"
+        output(score, feedback)
+        exit()
 
     # Test execution
     if "cgtest" in context:
