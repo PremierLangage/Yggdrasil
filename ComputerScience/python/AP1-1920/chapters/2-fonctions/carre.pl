@@ -24,6 +24,7 @@ pltest0==
 >>> "carre" in globals() # carre existe 
 True
 >>> type(carre) == function # est carre est une fonction 
+True
 ==
 
 pltest1==
