@@ -26,7 +26,7 @@ pour cela vous utiliser la syntaxe de doctest par exemple pour tester une foncti
 editor =: CodeEditor
 editor.theme = dark
 editor.language = python
-editor.codes ==
+editor.codes %=
 [
     { "language": "python", "code": "// write a csharp code here" },
     { "language": "c", "code": "// write a c code here" },
