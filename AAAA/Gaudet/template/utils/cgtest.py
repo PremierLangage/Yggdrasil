@@ -38,7 +38,7 @@ class CodingGamesTestRunner(doctest.DocTestRunner):
         
         test = doctest.DocTestParser().get_doctest(self.tests, doctest_namespace, 'votre travail', 'foo.py', 0)
         self.run(test)
-        return self.grade(),self.fb.render()
+        return self.grade(), self.fb.render()
 
     def testtitle(self, line):
         if line.endswith("\n"):
