@@ -32,7 +32,7 @@ if __name__ == "__main__":
         print("add  either cgtest, or change the template ", file=sys.stderr)
         sys.exit(1)
 
-    outstr = ""
+    feedback = ""
 
     # Get language used
     lang = 'python'
