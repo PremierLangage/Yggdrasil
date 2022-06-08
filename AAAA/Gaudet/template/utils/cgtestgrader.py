@@ -41,15 +41,16 @@ if __name__ == "__main__":
         feedback += "</code></pre><div>"
         output(0, feedback)
 
-    # Test execution
-    if "cgtest" in context:
-        cgtest = context['cgtest']
-        tester = CodingGamesTestRunner(cgtest, handler.exec_cmd)
-        testname = context['testname'] if 'testname' in context else "Groupe de test 1"
-        score, test_feedback = tester.runtests(testname)
     else:
-        score, test_feedback = True, ""
-    feedback += test_feedback
-    
-    # Rajout résultat dans JSON
-    output(score, feedback)
+        # Test execution
+        if "cgtest" in context:
+            cgtest = context['cgtest']
+            tester = CodingGamesTestRunner(cgtest, handler.exec_cmd)
+            testname = context['testname'] if 'testname' in context else "Groupe de test 1"
+            score, test_feedback = tester.runtests(testname)
+        else:
+            score, test_feedback = True, ""
+        feedback += test_feedback
+        
+        # Rajout résultat dans JSON
+        output(score, feedback)
