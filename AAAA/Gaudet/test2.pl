@@ -16,11 +16,3 @@ cgtest==
 '4'
 ==
 
-if __name__ == '__main__':
-    n = int(input())
-    maxi = -float(inf)
-    for _ in range(n):
-        a = int(input())
-        if a > maxi:
-            maxi = a
-    print(maxi)
