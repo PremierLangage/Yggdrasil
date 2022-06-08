@@ -29,7 +29,8 @@ editor.language = python
 #editor.cid = py_editor_0
 editor.code ==
 # Saisissez votre code ici, et cliquez sur le bouton
-# de validation quand vous avez terminé
+# de validation quand vous avez termin
+==
 
 
 # une interface standard d'exercice avec un editeur pour la réponse
