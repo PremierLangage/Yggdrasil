@@ -39,7 +39,7 @@ class JavaHandler():
     
     def compile(self):
         javafilename = self.exec_name + '.java'
-        with open(javafilename, 'r') as output:
+        with open(javafilename, 'w') as output:
             output.write(self.src)
         
         cmd = ['javac', javafilename]
