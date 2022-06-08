@@ -39,7 +39,7 @@ if __name__ == "__main__":
         """
         feedback += compile_feedback
         feedback += "</code></pre><div>"
-        output(score, feedback)
+        output(0, feedback)
         exit()
 
     # Test execution
