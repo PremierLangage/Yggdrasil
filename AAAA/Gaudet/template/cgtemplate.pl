@@ -29,7 +29,7 @@ editor.language = python
 editor.codes %=
 [
     { "language": "python", "code": "# Programme Python ici\n\nif __name__ == '__main__':\n\tpass\n" },
-    { "language": "c", "code": "/* Programme en C ici */" },
+    { "language": "c", "code": "/* Programme en C ici */\n#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char *argv[]) {\n\n\treturn 0;\n}" },
     { "language": "java", "code": "// Programme en Java ici"}
 ]
 ==
