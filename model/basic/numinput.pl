@@ -1,5 +1,7 @@
 extends = /model/basic/basic.pl
 
+title = NumInput
+
 # Specific keys
 
 sol = 0
