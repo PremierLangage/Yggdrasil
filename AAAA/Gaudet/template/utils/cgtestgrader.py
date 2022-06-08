@@ -42,7 +42,7 @@ if __name__ == "__main__":
     outstr=""
 
     # Get language used
-    lang = 'c'
+    lang = 'python'
     language_handlers = {
         'c': langhandlers.CHandler,
         'python': langhandlers.PythonHandler
