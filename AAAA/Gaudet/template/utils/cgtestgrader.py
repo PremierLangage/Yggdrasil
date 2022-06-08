@@ -49,8 +49,8 @@ if __name__ == "__main__":
 
     # Test execution
     if "cgtest" in context:
-        pltest = context['cgtest']
-        tester = CodingGamesTestRunner(pltest, handler.exec_cmd)
+        cgtest = context['cgtest']
+        tester = CodingGamesTestRunner(cgtest, handler.exec_cmd)
         testname = context['testname'] if 'testname' in context else "Groupe de test 1"
         a, b = tester.runtests(testname)
     else:
