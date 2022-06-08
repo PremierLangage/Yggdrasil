@@ -23,13 +23,18 @@ pour cela vous utiliser la syntaxe de doctest par exemple pour tester une foncti
 @ /utils/sandboxio.py
 @ /builder/none.py [builder.py]
 
-# création de l'éditeur de code
 editor =: CodeEditor
+editor.theme = dark
 editor.language = python
-#editor.cid = py_editor_0
-editor.code ==
-# Saisissez votre code ici, et cliquez sur le bouton
-# de validation quand vous avez termin
+editor.codes %=
+[
+    { "language": "csharp", "code": "// write a csharp code here" },
+    { "language": "c", "code": "// write a c code here" },
+    { "language": "cpp", "code": "// write a cpp code here" },
+    { "language": "java", "code": "// write a java code here" },
+    { "language": "python", "code": "# write a python code here" },
+    { "language": "javascript", "code": "// write a javascript code here" }
+]
 ==
 
 
