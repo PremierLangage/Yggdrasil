@@ -29,9 +29,9 @@ editor.language = python
 editor.height = 500px
 editor.codes %=
 [
-    { "language": "python", "code": "if __name__ == '__main__':\n\tpass\n" },
-    { "language": "c", "code": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char *argv[]) {\n\n\treturn 0;\n}" },
-    { "language": "java", "code": "// Programme en Java ici"}
+    { "language": "python", "code": "if __name__ == '__main__':\n    pass\n" },
+    { "language": "c", "code": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char *argv[]) {\n\n  return 0;\n}" },
+    { "language": "java", "code": "public class Main {\n"}
 ]
 ==
 
