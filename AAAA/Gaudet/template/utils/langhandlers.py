@@ -43,6 +43,6 @@ class JavaHandler():
             output.write(self.src)
         
         cmd = ['javac', javafilename]
-        proc = subprocess.run(cmd, input=self.src, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+        proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
 
         return proc.returncode == 0, proc.stdout
