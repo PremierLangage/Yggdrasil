@@ -33,7 +33,7 @@ if __name__ == "__main__":
     # Compilation
     success, compile_feedback = handler.compile()
     if not success:
-        feedback += """<div class="card card-danger;" style="background-color: Tomato;">
+        feedback += """<div style="border:1px solid black;padding:1%;margin:1%;background-color:Tomato;border-radius:4px;">
         Erreur de compilation:
         <pre style="background: #DDD"><code>
         """
