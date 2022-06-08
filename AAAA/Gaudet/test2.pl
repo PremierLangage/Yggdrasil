@@ -12,13 +12,9 @@ Ecrire un programme qui prend une liste d'entiers séparés par des retours à l
 
 before==
 cgtest= f"""
->>> test('1') # Test 1
-'2'
->>> test('2') # Test 2
-'3'
->>> test('-3') # Test négatif
-'-2'
->>> from random import randint; n = randint(0, 100); test(str(n)) == str(n + 1) # Test aléatoire
-True
+>>> test('1\n2\n3\n4\n') # Test 1
+'4'
+>>> test('45\n2\n987\n-4\n') # Test 2
+'987'
 """
 ==
