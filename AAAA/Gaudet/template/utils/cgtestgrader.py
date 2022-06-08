@@ -23,7 +23,7 @@ if __name__ == "__main__":
     feedback = ""
 
     # Get language used
-    lang = 'python'
+    lang = 'c'
     language_handlers = {
         'c': langhandlers.CHandler,
         'python': langhandlers.PythonHandler
