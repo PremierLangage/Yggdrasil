@@ -43,7 +43,7 @@ if __name__ == "__main__":
     handler = language_handlers[lang](student_code)
 
     # Compilation
-    success, feedback = handler.compile()
+    success, compile_feedback = handler.compile()
     if not success:
         raise ValueError
 
