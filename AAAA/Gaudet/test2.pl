@@ -15,7 +15,5 @@ before==
 cgtest= f"""
 >>> test('4\n1\n2\n3\n4\n') # Test 1
 '4'
->>> test('4\n45\n2\n987\n-4\n') # Test 2
-'987'
 """
 ==
