@@ -3,7 +3,7 @@ title=Test
 
 tag=function # N'oubliez pas de remplir ce champs svp
 extends= template/cgtemplate.pl
-@ /builder/before.py [builder.py]
+
 
 
 text==
