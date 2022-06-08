@@ -46,4 +46,4 @@ if __name__ == "__main__":
     feedback += test_feedback
     
     # Rajout résultat dans JSON
-    output(a, feedback)
+    output(score, feedback)
