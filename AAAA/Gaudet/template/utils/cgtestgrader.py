@@ -33,6 +33,9 @@ if __name__ == "__main__":
         'c': langhandlers.CHandler,
         'python': langhandlers.PythonHandler
     }
+    if lang not in language_handlers:
+        
+
     handler = language_handlers[lang](student_code)
 
     # Compilation
