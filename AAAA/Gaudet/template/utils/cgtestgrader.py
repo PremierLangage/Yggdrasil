@@ -33,7 +33,7 @@ if __name__ == "__main__":
     # Compilation
     success, compile_feedback = handler.compile()
     if not success:
-        raise ValueError
+        feedback += compile_feedback
 
     # Test execution
     if "cgtest" in context:
