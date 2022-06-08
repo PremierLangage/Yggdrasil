@@ -50,7 +50,7 @@ if __name__ == "__main__":
     handler = language_handlers[lang](student_code)
 
     # Compilation
-    handler.compile()
+    success, feedback = handler.compile()
 
     # Tests execution
     if "cgtest" in context:
