@@ -33,7 +33,7 @@ class CodingGamesTestRunner(doctest.DocTestRunner):
                     stderr=subprocess.STDOUT,
                     text=True,
                     timeout=1)
-            except TimeoutExpired:
+            except subprocess.TimeoutExpired:
                 return "__L'exécution du programme a pris trop de temps. Peut-être y-a-t'il une boucle infinie?__"
             else:
                 return proc.stdout.strip()
