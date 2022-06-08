@@ -11,6 +11,9 @@ Ecrire un programme qui prend une liste d'entiers séparés par des retours à l
 Le premier nombre envoyé correspondant à la taille de la liste
 ==
 
+before ==
+==
+
 cgtest==
 >>> test('4\n1\n2\n3\n4\n') # Test 1
 '4'
