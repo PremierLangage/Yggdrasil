@@ -51,7 +51,7 @@ def premiers_carres(k) :
 n = int(input("Saisissez un entier :"))
 print(premiers_carres(n))
 ==
-before==
+Xbefore==
 def carre(n):
     return(n*n)
 
