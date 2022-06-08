@@ -26,7 +26,7 @@ pour cela vous utiliser la syntaxe de doctest par exemple pour tester une foncti
 editor =: CodeEditor
 editor.theme = dark
 editor.language = python
-editor.height = 30
+editor.height = '400px'
 editor.codes %=
 [
     { "language": "python", "code": "# Programme Python ici\n\nif __name__ == '__main__':\n\tpass\n" },
