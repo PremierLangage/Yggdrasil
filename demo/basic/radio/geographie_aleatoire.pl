@@ -1,7 +1,5 @@
 extends = /model/basic/radio.pl
 
-title = Géographie
-
 before ==
 datasample = csv_sample(data, 4)
 capitale = datasample[0]['capitale']
