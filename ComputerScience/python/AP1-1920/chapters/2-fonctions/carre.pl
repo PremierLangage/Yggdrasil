@@ -24,7 +24,7 @@ pltest0==
 >>> import types #
 >>> "carre" in globals() # carre existe 
 True
->>> type(carre) == types.function # est carre est une fonction 
+>>> type(carre) == types.FunctionType # est carre est une fonction 
 True
 ==
 
