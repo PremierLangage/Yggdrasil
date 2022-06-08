@@ -35,6 +35,7 @@ class CodingGamesTestRunner(doctest.DocTestRunner):
             return proc.stdout.strip()
         
         self.fb.name=str(name)
+        # Injection de la fonction test dans le namespace des doctests
         doctest_namespace = {'test': test_func}
         
         test = doctest.DocTestParser().get_doctest(self.tests, doctest_namespace, 'votre travail', 'foo.py', 0)
