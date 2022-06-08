@@ -29,7 +29,7 @@ editor.language = python
 editor.codes %=
 [
     { "language": "python", "code": "// write a csharp code here" },
-    { "language": "c", "code": "// write a c code here" },
+    { "language": "c", "code": "// write a c code here" }
 ]
 ==
 
