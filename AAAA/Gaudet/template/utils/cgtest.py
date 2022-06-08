@@ -34,7 +34,7 @@ class CodingGamesTestRunner(doctest.DocTestRunner):
                     text=True,
                     timeout=1)
             except TimeoutExpired:
-                return "L'exécution du programme a pris trop de temps. Peut-être y-a-t'il une boucle infinie?"
+                return "__L'exécution du programme a pris trop de temps. Peut-être y-a-t'il une boucle infinie?__"
             else:
                 return proc.stdout.strip()
         
