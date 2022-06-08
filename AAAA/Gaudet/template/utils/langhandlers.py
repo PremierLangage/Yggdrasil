@@ -1,3 +1,4 @@
+# This module contains classes meant to handle different languages for the Coding Games template (cgtemplate.pl)
 import subprocess
 
 class CHandler():
