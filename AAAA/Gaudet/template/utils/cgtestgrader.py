@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 # coding: utf-8
+
+# Grader pour le template type Coding Games
+
 import sys, jsonpickle
 from sandboxio import output, get_context, get_answers
 from cgtest import CodingGamesTestRunner
