@@ -1,5 +1,3 @@
-
-
 # Ceci est un template pour faire des exercices avec la balise de correction pltest
 doc==
 pour cela vous utiliser la syntaxe de doctest par exemple pour tester une fonction f 
@@ -25,9 +23,10 @@ pour cela vous utiliser la syntaxe de doctest par exemple pour tester une foncti
 @ /utils/sandboxio.py
 @ /builder/none.py [builder.py]
 
-editor.fontsize=14
 # une interface standard d'exercice avec un editeur pour la réponse
-form=@ /form/text_editor.html
+form==
+{{editor|component}}
+==
 
 settings.allow_reroll=1
 
