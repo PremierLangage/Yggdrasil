@@ -40,10 +40,10 @@ if __name__ == "__main__":
         cgtest = context['cgtest']
         tester = CodingGamesTestRunner(cgtest, handler.exec_cmd)
         testname = context['testname'] if 'testname' in context else "Groupe de test 1"
-        a, b = tester.runtests(testname)
+        score, test_feedback = tester.runtests(testname)
     else:
-        a, b = True, ""
-    feedback +=  b
+        score, test_feedback = True, ""
+    feedback += test_feedback
     
     # Rajout résultat dans JSON
     output(a, feedback)
