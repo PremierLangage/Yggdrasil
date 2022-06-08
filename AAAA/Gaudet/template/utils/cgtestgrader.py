@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
     feedback = ""
 
-    # Get language used
+    # Get language used and the corresponding handler
     lang = answers[editor_id]['language']
     language_handlers = {
         'c': langhandlers.CHandler,
