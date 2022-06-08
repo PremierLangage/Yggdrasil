@@ -1,8 +1,9 @@
+extends= template/cgtemplate.pl
+
 author=CG
 title=Test
 
 tag=function
-extends= template/cgtemplate.pl
 
 text==
 Ecrire un programme qui prend une liste d'entiers séparés par des retours à la ligne et qui affiche le max.
