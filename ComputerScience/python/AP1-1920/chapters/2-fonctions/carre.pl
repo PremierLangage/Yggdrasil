@@ -25,7 +25,7 @@ pltest0==
 >>> "carre" in globals() # carre existe 
 True
 >>> type(carre)  # est carre est une fonction 
-types.FunctionType
+<type 'function'>
 ==
 
 pltest1==
