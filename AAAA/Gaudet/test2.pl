@@ -17,5 +17,7 @@ before ==
 cgtest==
 >>> test('4\n1\n2\n3\n4\n') # Test 1
 '4'
+>>> test('4\n64\n21\n1\n89\n3\n73\n') # Test 2
+'89'
 ==
 
