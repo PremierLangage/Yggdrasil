@@ -6,6 +6,8 @@ Une fonction spéciale 'test' est fournie qui prend en argument une chaine de ca
 passée dans l'entrée standard du programme écrit par l'étudiant et qui renvoie ce qui est mis sur
 la sortie standard et erreur par celui-ci.
 
+La batterie de test est à mettre dans la variable cgtest
+
 Par exemple:
     cgtest==
     >>> f == f # La fonction existe  ?
