@@ -21,9 +21,10 @@ pltest3=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
 ==
 
 pltest0==
+>>> import types #
 >>> "carre" in globals() # carre existe 
 True
->>> type(carre) == function # est carre est une fonction 
+>>> type(carre) == types.function # est carre est une fonction 
 True
 ==
 
