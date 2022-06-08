@@ -51,22 +51,19 @@ def premiers_carres(k) :
 n = int(input("Saisissez un entier :"))
 print(premiers_carres(n))
 ==
-Xbefore==
-def carre(n):
-    return(n*n)
+before==
 
-def premiers_carres(k) :
-    for i in range(k) :
-        print(carre(i))
+x="O est un peu neuneu"
 
 ==
 
 mplsoluce0==
-paire
+Test avec une valeur paire
 2
 ==
+
 mplsoluce1==
-impaire 
+Test avec une valeur impaire 
 3
 ==
 
