@@ -35,11 +35,10 @@ if __name__ == "__main__":
     if not success:
         feedback += """<div class="card card-danger;" style="background-color: Tomato;">
         Erreur de compilation:
-        
+        <pre style="background: #DDD"><code>
         """
-        
         feedback += compile_feedback
-        feedback += "<div>"
+        feedback += "</code></pre><div>"
 
     # Test execution
     if "cgtest" in context:
