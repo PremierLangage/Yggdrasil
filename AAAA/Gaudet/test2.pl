@@ -1,9 +1,8 @@
 author=CG
 title=Test
 
-tag=function # N'oubliez pas de remplir ce champs svp
+tag=function
 extends= template/cgtemplate.pl
-
 
 
 text==
