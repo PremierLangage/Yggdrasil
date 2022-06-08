@@ -47,7 +47,7 @@ if __name__ == "__main__":
     if not success:
         raise ValueError
 
-    # Tests execution
+    # Test execution
     if "cgtest" in context:
         pltest = context['cgtest']
         tester = CodingGamesTestRunner(pltest, handler.exec_cmd)
@@ -56,7 +56,7 @@ if __name__ == "__main__":
     else:
         a, b = True, ""
     feedback +=  b
-    
+
     if "feedback" in context: # FIXME feedback devrai être un dictionnaire.
         feedback += context["feedback"] + " valeur de stop " + str(stop)
     
