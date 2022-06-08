@@ -51,6 +51,8 @@ if __name__ == "__main__":
 
     # Compilation
     success, feedback = handler.compile()
+    if not success:
+        raise ValueError
 
     # Tests execution
     if "cgtest" in context:
