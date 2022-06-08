@@ -6,9 +6,6 @@ from sandboxio import output, get_context, get_answers
 from cgtest import CodingGamesTestRunner
 import langhandlers
 
-class StopBeforeExec(Exception):
-    pass
-
 missing_evaluator_stderr = """\
 The key 'evaluator' was not found in the context.
 When using this grader, the PL must declare a script inside a key 'evaluator'. This script have
@@ -34,10 +31,6 @@ if __name__ == "__main__":
     if "cgtest" not in context :
         print("add  either cgtest, or change the template ", file=sys.stderr)
         sys.exit(1)
-    if 'stopfirsterror' in context:
-        stop = bool(context['stopfirsterror'])
-    else:
-        stop = False
 
     outstr=""
 
