@@ -28,7 +28,7 @@ editor.theme = dark
 editor.language = python
 editor.codes %=
 [
-    { "language": "python", "code": "# Programme Python ici" },
+    { "language": "python", "code": "# Programme Python ici\n\nif __name__ == '__main__':\n\tpass\n" },
     { "language": "c", "code": "/* Programme en C ici */" },
     { "language": "java", "code": "// Programme en Java ici"}
 ]
