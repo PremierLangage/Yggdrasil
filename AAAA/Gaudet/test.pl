@@ -18,7 +18,7 @@ cgtest= f"""
 '3'
 >>> test('-3') # Test négatif
 '-2'
->>> from random import randint; n=randint(0, 100); test(str(n)) # Test aléatoire
+>>> from random import randint; n = randint(0, 100); test(str(n)) # Test aléatoire
 {str(n + 1)}
 """
 ==
