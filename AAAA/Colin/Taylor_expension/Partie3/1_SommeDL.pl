@@ -1,7 +1,7 @@
 # Auteur : Colin Petitjean
 # Sujet : Somme de Développements Limités
 
-title = DL - Formules de références 4
+title = Somme de développements limités
 
 extends = /model/math/expr.pl
 
