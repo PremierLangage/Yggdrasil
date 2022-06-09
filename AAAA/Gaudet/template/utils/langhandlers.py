@@ -26,7 +26,7 @@ class CHandler():
         return proc.returncode == 0, proc.stdout
 
 class CPPHandler():
-    base_code = """#include <iostream>\n#include <stdlib.h>\n\nint main(int argc, char *argv[]) {\n\n    return 0;\n}"""
+    base_code = """#include <iostream>\n\nint main(int argc, char *argv[]) {\n\n    return 0;\n}"""
 
     def __init__(self, source_code, func_name=None):
         self.exec_name = '_test'
