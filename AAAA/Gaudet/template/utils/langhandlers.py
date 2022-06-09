@@ -40,7 +40,7 @@ class PythonHandler():
 
 class JavaHandler():
     base_code = """public class Main {\n    public static void main(String args[]) {\n        \n    }\n}"""
-    
+
     def __init__(self, source_code):
         self.exec_name = 'Main'
         self.exec_cmd = ['java', self.exec_name]
@@ -66,6 +66,11 @@ implemented_languages = {
 def get_available_languages():
     """Returns a list of available languages"""
     return list(implemented_languages.keys())
+
+def get_base_code(language):
+    if language not in implemented_languages:
+        raise LanguageNotImplemented
+    return implemented_languages[language].base_code
 
 def get_language_handler(language, source_code):
     """Returns an instance of the handler for the language and source code given as arguments"""
