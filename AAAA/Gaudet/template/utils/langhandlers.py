@@ -14,7 +14,8 @@ available_languages = {
 
 def get_language_handler(language):
     if language no in available_languages:
-        raise 
+        raise LanguageNotImplemented
+    return available_languages[language]()
 
 
 class CHandler():
