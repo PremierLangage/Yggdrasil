@@ -9,6 +9,11 @@ text==
 Ecrire un programme qui écrit le successeur de l'entier envoyé en entrée
 ==
 
+languages==
+c
+python
+==
+
 cgtest==
 >>> test('1') # Test 1
 '2'
