@@ -15,7 +15,7 @@ P=0
 for i in range(n+1) :
     a=randint(-10,10)
     b=a/factorial(i)
-    L.append(b)
+    L.append(a)
     P=P+b*x**i
 
 sol=P
