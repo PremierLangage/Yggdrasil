@@ -29,15 +29,7 @@ if __name__ == "__main__":
 
     # Get language used and the corresponding handler
     lang = answers[editor_id]['language']
-    language_handlers = {
-        'c': langhandlers.CHandler,
-        'python': langhandlers.PythonHandler,
-        'java': langhandlers.JavaHandler
-    }
-    if lang not in language_handlers:
-        raise ValueError(lang + " language not supported")
-
-    handler = language_handlers[lang](student_code)
+    handler = langhandlers.get_language_handler(lang)
 
     # Compilation
     success, compile_feedback = handler.compile()
