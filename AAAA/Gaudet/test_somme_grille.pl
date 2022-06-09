@@ -6,7 +6,7 @@ title=Somme maximale dans une grille
 tag=function
 
 text==
-Ecrire un programme qui prend une grille 2x2 de nombres et qui renvoie la ligne ou colonne avec le total le plus élevé
+Ecrire un programme qui prend une grille a deux dimensions de nombres positifs et qui renvoie la ligne ou colonne avec le total le plus élevé
 
 Format d'entrée : les deux premiers numéros sont le nombre de lignes puis de colonnes, le contenu de la grille
 est ensuite énuméré un par un, de gauche à droite, de haut en bas
