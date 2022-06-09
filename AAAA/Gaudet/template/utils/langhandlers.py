@@ -56,8 +56,8 @@ available_languages = {
     'java': JavaHandler
 }
 
-def get_language_handler(language):
+def get_language_handler(language, source_code):
     """Returns an instance of the handler for the language given as argument"""
     if language not in available_languages:
         raise LanguageNotImplemented
-    return available_languages[language]()
+    return available_languages[language](source_code)
