@@ -34,7 +34,6 @@ if __name__ == "__main__":
     context['form'] = '{{editor|component}}'
 
     # Encoding + writing output JSON    
-    with open(output_json, "w+") as f:
-        f.write(jsonpickle.encode(context, unpicklable=False))
+    buildsave(sys.argv[2], context)
     
     sys.exit(0)
