@@ -38,6 +38,16 @@ c
 java
 ==
 
+before==
+editor.codes = []
+    for lang in langhandlers.get_available_languages():
+        editor.codes.append({
+            'language': lang,
+            'code': langhandlers.get_base_code(lang)
+        })
+    editor.language = 'python'
+==
+
 # une interface standard d'exercice avec un editeur pour la réponse
 form==
 {{editor|component}}
