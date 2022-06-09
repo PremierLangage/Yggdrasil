@@ -48,10 +48,13 @@ languages==
 before==#|py|
 import langhandlers
 editor.codes = []
+
 available_languages = langhandlers.get_available_languages()
+required_languages = languages.split('\n')
+if not required_languages:
+    required_languages = available_languages
 
-
-for lang in languages.split('\n'):
+for lang in required_languages:
     editor.codes.append({
         'language': lang,
         'code': langhandlers.get_base_code(lang)
