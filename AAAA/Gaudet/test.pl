@@ -1,9 +1,9 @@
+extends= template/cgtemplate.pl
+
 author=CG
 title=Test
 
 tag=function # N'oubliez pas de remplir ce champs svp
-extends= template/cgtemplate.pl
-
 
 text==
 Ecrire un programme qui écrit le successeur de l'entier envoyé en entrée
