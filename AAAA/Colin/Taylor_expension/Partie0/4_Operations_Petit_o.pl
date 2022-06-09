@@ -1,5 +1,6 @@
 # Auteur : Colin Petitjean
 # Sujet : développements limités - Manipuler les petits o
+# Maj : 26/05/2022
 
 extends = /model/math/expr.pl
 
