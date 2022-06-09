@@ -42,8 +42,7 @@ editor =: CodeEditor
 editor.theme = dark
 editor.height = 500px
 
-languages==
-==
+languages = ''
 
 before==#|py|
 import langhandlers
