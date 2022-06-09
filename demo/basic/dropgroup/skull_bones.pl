@@ -1,7 +1,5 @@
 extends = /model/basic/dropgroup.pl
 
-title = Os du crâne
-
 sol ==
 Os frontal
 Os pariétal
