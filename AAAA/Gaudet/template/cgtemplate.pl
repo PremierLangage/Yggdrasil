@@ -38,7 +38,7 @@ c
 java
 ==
 
-before==
+before==#|py|
 import langhandlers
 editor.codes = []
 for lang in langhandlers.get_available_languages():
