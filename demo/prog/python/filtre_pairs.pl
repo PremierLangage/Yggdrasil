@@ -20,11 +20,11 @@ def ref(lst):
 run(title='Évaluation du code', output='')
 
 begin_test_group("Tests de base")
-run('filtre_pairs([2,21,5,7,4,4,13,0])',title = 'Test 1', result = [2,4,4,0])
-run('filtre_pairs([3,13,7])', title = 'Test 1', result = [])
+run('filtre_pairs([2, 21, 5, 7, 4, 4, 13, 0])',title = 'Test 1', result = [2, 4, 4, 0])
+run('filtre_pairs([3, 13, 7])', title = 'Test 2', result = [])
 
 begin_test_group("Tests aléatoires")
-for _ in range(10):
+for _ in range(5):
     lst = [rd.randint(0,100) for _ in range(20)]
     lst2 = ref(lst)
     run(f'filtre_pairs({repr(lst)})', result = lst2)
