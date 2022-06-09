@@ -26,11 +26,11 @@ embed ==
 ==
 
 prefix ==
-$! {{ f|latex }} = !$
+$! {{ g|latex }} = !$
 ==
 
 solution ==
-$! {{ f|latex }} = {{ sol|latex }} + o(x^{{ n|latex }})  \quad [x \rightarrow 0]!$.
+$! {{ g|latex }} = {{ sol|latex }} + o(x^{{ n|latex }})  \quad [x \rightarrow 0]!$.
 ==
 
 latexsettings.order = 'ilex'
