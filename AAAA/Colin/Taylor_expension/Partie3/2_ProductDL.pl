@@ -11,18 +11,17 @@ from sympy import series
 var('x')
 
 n = 3
-a=choice([-2,-1,1,2])
-b=choice([1,2,3])
-c=choice([-2,-1,1,2])
-d=choice([1,2,3])
+a=choice([-1,1])
+b=choice([-1,1])
 
-y=a*x**b
-z=c*x**d
+
+y=a*x
+z=b*x
 
 f = choice([1/(1+y), exp(y), cos(y), sin(y), ln(1+y), atan(y), acos(y), asin(y)])
 g = choice([1/(1+z), exp(z), cos(z), sin(z), ln(1+z), atan(z), acos(z), asin(z)])
 
-h=f+g
+h=f*g
 
 sol = series(h, x, 0, n+1).removeO()
 ==
