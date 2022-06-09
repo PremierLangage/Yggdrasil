@@ -4,7 +4,7 @@
 import sys, json, jsonpickle
 from sandboxio import get_context, buildsave
 import langhandlers
-import components
+from components import CodeEditor
 
 
 if __name__ == "__main__":
