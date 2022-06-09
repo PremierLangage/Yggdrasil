@@ -18,7 +18,7 @@ if __name__ == "__main__":
         context = json.load(f)
     
     # Builder stuff
-    editor = editor_id = context['editor']
+    editor = context['editor']
     
 
 
