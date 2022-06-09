@@ -98,8 +98,8 @@ if not success:
     feedback += "</code></pre><div>"
     score = 0
 
+# Execution of tests
 else:
-    # Test execution
     tester = CodingGamesTestRunner(cgtest, handler.exec_cmd)
     testname = testname if 'testname' in globals() else "Groupe de test 1"
     score, test_feedback = tester.runtests(testname)
