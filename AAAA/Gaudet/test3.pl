@@ -15,8 +15,6 @@ cgtest==
 '3'
 >>> test('-6\n4\n') # Somme avec négatif
 '-2'
->>> from random import randint
->>> a = randint(0, 100)
->>> test('2\n' + str(a) + '\n') == str(2 + a) # Test aléatoire
+>>> from random import randint; a = randint(0, 100); test('2\n' + str(a) + '\n') == str(2 + a) # Test aléatoire
 True
 ==
