@@ -25,11 +25,12 @@ class CHandler():
         return proc.returncode == 0, proc.stdout
 
 class PythonHandler():
+    base_code = """if __name__ == '__main__':\n    pass\n"""
+    
     def __init__(self, source_code):
         self.exec_name = '_test.py'
         self.exec_cmd = ['python', self.exec_name]
         self.src = source_code
-        self.base_code = """if __name__ == '__main__':\n    pass\n"""
     
     def compile(self):
         with open(self.exec_name, 'w') as output:
