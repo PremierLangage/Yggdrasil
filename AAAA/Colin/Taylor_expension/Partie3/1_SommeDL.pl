@@ -11,9 +11,9 @@ var('x')
 
 n = 3
 a=choice([-2,-1,1,2])
-b=choice([-2,-1,1,2])
+b=choice([1,2,3])
 c=choice([-2,-1,1,2])
-d=choice([-2,-1,1,2])
+d=choice([1,2,3])
 
 y=a*x**b
 z=c*x**d
