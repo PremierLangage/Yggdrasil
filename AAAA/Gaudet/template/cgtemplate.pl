@@ -32,7 +32,7 @@ editor =: CodeEditor
 editor.theme = dark
 editor.height = 500px
 
-langages==
+languages==
 python
 c
 java
