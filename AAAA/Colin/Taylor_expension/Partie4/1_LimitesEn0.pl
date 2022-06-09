@@ -13,7 +13,7 @@ var('x')
 f = choice([2*x**2/(exp(x)-exp(-x)),
 (ln(1+x)-x)/(x**2),
 (ln(1+sin(x)))/(ln(1+x)),
-(arctan(x)+x-2*sin(x))/(x**5),
+(atan(x)+x-2*sin(x))/(x**5),
 (2**x-1)/(ln(1+x)),
 (cos(x) - sqrt(1-x**2))/(x**4),
 (sqrt(1+x**2)-sqrt(1-x**2))/(x),
