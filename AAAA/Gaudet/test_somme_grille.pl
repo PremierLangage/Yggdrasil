@@ -69,4 +69,10 @@ if __name__ == '__main__':
 cgtest==
 >>> test('3\n3\n1\n2\n3\n4\n5\n6\n7\n8\n9\n') # Grille 1
 '24'
+>>> test('4\n4\n2\n4\n7\n9\n3\n1\n2\n5\n1\n9\n5\n1\n5\n6\n2\n1\n') # Grille 2
+'22'
+>>> test('5\n1\n1\n2\n3\n4\n5\n') # Une colonne
+'15'
+>>> test('1\n5\n1\n2\n3\n4\n5\n') # Une ligne
+'15'
 ==
