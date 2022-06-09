@@ -32,10 +32,12 @@ Par exemple:
 
 editor =: CodeEditor
 editor.theme = dark
-
-# langage par defaut
-editor.language = python 
 editor.height = 500px
+
+# Langage par defaut
+editor.language = python 
+
+# Langages
 editor.codes %=
 [
     { "language": "python", "code": "if __name__ == '__main__':\n    pass\n" },
