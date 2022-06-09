@@ -1,7 +1,8 @@
 # Auteur : Colin Petitjean
 # Sujet : Développements Limités - Manipuler les formules de références 3 : Intégration termes à termes. 
 
-title = DL - Formules de références 1
+title = DL - Formules de références 3 - Intégration termes à termes 
+
 
 extends = /model/math/expr.pl
 
