@@ -9,7 +9,7 @@ before ==
 from sympy import series
 var('x')
 
-n = randint(3, 4)
+n = 3
 a=choice([-2,-1,1,2])
 b=choice([-2,-1,1,2])
 c=choice([-2,-1,1,2])
