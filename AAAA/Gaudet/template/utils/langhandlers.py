@@ -51,11 +51,14 @@ class JavaHandler():
         return proc.returncode == 0, proc.stdout
 
 # Available languages with corresponding handlers
-available_languages = {
+implemented_languages = {
     'c': CHandler,
     'python': PythonHandler,
     'java': JavaHandler
 }
+
+def get_available_languages():
+    return list(implemented_languages.keys())
 
 def get_language_handler(language, source_code):
     """Returns an instance of the handler for the language and source code given as arguments"""
