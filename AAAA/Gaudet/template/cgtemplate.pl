@@ -65,6 +65,11 @@ for lang in required_languages:
 editor.language = required_languages[0]
 ==
 
+evaluator==#|py|
+
+
+==
+
 # une interface standard d'exercice avec un editeur pour la réponse
 form==
 {{editor|component}}
