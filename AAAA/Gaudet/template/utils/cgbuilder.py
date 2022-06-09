@@ -2,6 +2,7 @@
 # coding: utf-8
 
 import sys, json, jsonpickle
+import langhandlers
 
 
 if __name__ == "__main__":
@@ -18,8 +19,12 @@ if __name__ == "__main__":
         context = json.load(f)
     
     # Builder stuff
+    available_codes = {
+        'python': ''
+    }
+
     editor = context['editor']
-    
+
 
 
     # Encoding + writing output JSON    
