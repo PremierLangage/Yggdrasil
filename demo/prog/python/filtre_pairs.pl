@@ -2,13 +2,15 @@ extends = /model/progpython.pl
 
 title = Filtrer une liste
 
-text==
+text ==
 Écrire une fonction `filtre_pairs(lst)` qui renvoie la liste des entiers pairs 
 
 Exemples d'appels :
 
-    >>> filtre_pairs([0,31,3,4,3])
-
+    >>> filtre_pairs([0, 31, 3, 4, 3])
+    [2, 4, 4, 0]
+    >>> filtre_pairs([0, 31, 3, 4, 3])
+    [2, 4, 4, 0]
 ==
 
 grader==#|python|
