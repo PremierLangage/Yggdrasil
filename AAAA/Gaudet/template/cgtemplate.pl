@@ -36,7 +36,7 @@ builder =@ /builder/before.py
 @ ./utils/langhandlers.py
 @ /utils/sandboxio.py
 
-settings.allow_reroll=1
+settings.allow_reroll = 1
 
 editor =: CodeEditor
 editor.theme = dark
