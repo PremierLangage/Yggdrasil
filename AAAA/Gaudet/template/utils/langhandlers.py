@@ -25,6 +25,23 @@ class CHandler():
 
         return proc.returncode == 0, proc.stdout
 
+class CPPHandler():
+    base_code = """#include <iostream>\n#include <stdlib.h>\n\nint main(int argc, char *argv[]) {\n\n    return 0;\n}"""
+
+    def __init__(self, source_code, func_name=None):
+        self.exec_name = '_test'
+        self.src = source_code
+        self.exec_cmd = ['./' + self.exec_name]
+    
+    def compile(self):
+        compiler = 'g++'
+
+        # Compilation directement à partir de l'entrée standard
+        cmd = [compiler, '-o', self.exec_name, '-xc++', '-']
+        proc = subprocess.run(cmd, input=self.src, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+
+        return proc.returncode == 0, proc.stdout
+
 class PythonHandler():
     base_code = """if __name__ == '__main__':\n    pass\n"""
 
