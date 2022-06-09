@@ -51,7 +51,11 @@ java
 before==#|py|
 import langhandlers
 editor.codes = []
-for lang in langhandlers.get_available_languages():
+available_languages = langhandlers.get_available_languages()
+
+
+for lang in languages.split('\n'):
+
     editor.codes.append({
         'language': lang,
         'code': langhandlers.get_base_code(lang)
