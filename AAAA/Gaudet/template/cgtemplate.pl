@@ -39,6 +39,7 @@ java
 ==
 
 before==
+import langhandlers
 editor.codes = []
 for lang in langhandlers.get_available_languages():
     editor.codes.append({
