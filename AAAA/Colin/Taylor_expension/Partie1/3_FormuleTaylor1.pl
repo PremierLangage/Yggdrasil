@@ -10,12 +10,14 @@ var('x')
 n = 4
 
 L=[]
-sol=0
+P=0
 for i in range(n+1) :
     a=randint(-10,10)
     b=a/factorial(i)
     L.append(b)
-    sol=sol+b*x**i
+    P=P+b*x**i
+
+sol=P
 ==
 
 question ==
