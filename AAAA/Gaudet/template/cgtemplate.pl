@@ -18,6 +18,12 @@ Par exemple:
     >>> from random import randint; a = randint(0, 100); test('2\n' + str(a) + '\n') == str(2 + a) # Test aléatoire
     True
     ==
+
+Les langages autorisés sont à indiquer dans la variable language comme ceci:
+    language ==
+    python
+    c
+    ==
 ==
 grader  =@ ./utils/cggrader.py
 builder =@ /builder/before.py
