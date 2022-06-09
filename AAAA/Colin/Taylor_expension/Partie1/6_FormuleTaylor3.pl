@@ -11,14 +11,15 @@ n = 3
 A=[1,2]
 a=choice(A)
 
+f=0
 L = []
 for i in range(n+1) :
     b=randint(-10,10)
     L.append(b)
+    c=b/factorial(i)
+    f=f + c*(x-a)**i
 
-f = L[0] + L[1]*(x-a) + L[2]*(x-a)**2 + L[3]*(x-a)**3
 sol = f
-
 ==
 
 question ==
