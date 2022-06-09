@@ -32,7 +32,6 @@ Correspond à la grille :
 Format de sortie : somme max trouvée
 
 Dans l'exemple précédent, c'est la 3ème ligne, dont la somme vaut 24
-
 ==
 
 cgtest==
