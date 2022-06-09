@@ -77,6 +77,8 @@ if "cgtest" not in context :
     print("cgtest missing, please specify tests to run", file=sys.stderr)
     sys.exit(1)
 
+
+
 ==
 
 # une interface standard d'exercice avec un editeur pour la réponse
