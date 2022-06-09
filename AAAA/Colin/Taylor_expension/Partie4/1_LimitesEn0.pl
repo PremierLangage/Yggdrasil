@@ -10,9 +10,7 @@ before ==
 from sympy import series
 var('x')
 
-f = choice([2*x**2/(exp(x)-exp(-x)), 
-(ln(1+x)-x)/(x^2), 
-ln(1+sin(x))/ln(1+x) ])
+f = choice([2*x**2/(exp(x)-exp(-x)), (ln(1+x)-x)/(x^2), ln(1+sin(x))/ln(1+x) ])
 
 sol = limit(f, x, 0)
 ==
