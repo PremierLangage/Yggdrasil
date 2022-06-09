@@ -15,13 +15,14 @@ if __name__ == "__main__":
     
     # Reading + decoding input JSON
     context = get_context()
-    
+
+    # Builder stuff
     editor = CodeEditor()
     editor.theme = 'dark'
     editor.height = '500px'
     editor.language = 'python'
 
-    # Builder stuff
+    
     editor.codes = []
     for lang in langhandlers.get_available_languages():
         editor.codes.append({
