@@ -9,8 +9,8 @@ Exemples d'appels :
 
     >>> filtre_pairs([0, 31, 3, 4, 3])
     [2, 4, 4, 0]
-    >>> filtre_pairs([0, 31, 3, 4, 3])
-    [2, 4, 4, 0]
+    >>> filtre_pairs([3, 13, 7])
+    []
 ==
 
 grader==#|python|
