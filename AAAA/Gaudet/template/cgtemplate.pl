@@ -30,7 +30,9 @@ Par exemple:
 grader  =@ ./utils/cggrader.py
 builder =@ /builder/before.py
 
-before =@ cgbefore.py
+before ==
+title = "Prout"
+==
 
 
 
