@@ -35,10 +35,6 @@ Dans l'exemple précédent, c'est la 3ème ligne, dont la somme vaut 24
 ==
 
 cgtest==
->>> test('1\n2\n') # Somme simple
-'3'
->>> test('-6\n4\n') # Somme avec négatif
-'-2'
->>> from random import randint; a = randint(0, 100); test('2\n' + str(a) + '\n') == str(2 + a) # Test aléatoire
-True
+>>> test('3\n3\n1\n2\n3\n4\n5\n6\n7\n8\n9\n') # Grille 1
+'24'
 ==
