@@ -1,7 +1,7 @@
 extends= template/cgtemplate.pl
 
 author=CG
-title=Test
+title=Somme maximale dans une grille
 
 tag=function
 
@@ -46,6 +46,24 @@ Correspond à la grille :
 Format de sortie : somme max trouvée
 
 Dans l'exemple précédent, c'est la 3ème ligne, dont la somme vaut 24
+==
+
+example==
+if __name__ == '__main__':
+    lines = int(input())
+    columns = int(input())
+
+    board = []
+    for _ in range(lines):
+        line = []
+        for _ in range(columns):
+            line.append(int(input()))
+        board.append(line)
+    
+    lines_sums = [sum(line) for line in board]
+    columns_sums = [sum(map(lambda line: line[col], board)) for col in range(columns)]
+
+    print(max(max(lines_sums), max(columns_sums)))
 ==
 
 cgtest==
