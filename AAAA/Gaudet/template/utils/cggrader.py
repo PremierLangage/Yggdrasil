@@ -3,7 +3,7 @@
 
 # Grader pour le template type Coding Games
 
-import sys, jsonpickle
+import sys
 from sandboxio import output, get_context, get_answers
 from cgtest import CodingGamesTestRunner
 import langhandlers
