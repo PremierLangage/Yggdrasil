@@ -100,7 +100,7 @@ else:
     tester = CodingGamesTestRunner(cgtest, handler.exec_cmd)
     testname = testname if 'testname' in globals() else "Groupe de test 1"
     score, test_feedback = tester.runtests(testname)
-
+    feedback += test_feedback
 
 grade = (score, feedback)
 ==
