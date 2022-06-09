@@ -18,7 +18,7 @@ if __name__ == "__main__":
     with open(input_json, "r") as f:
         context = json.load(f)
     
-    
+    context['editor'] = CodeEditor()
 
     # Builder stuff
     editor = context['editor']
