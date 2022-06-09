@@ -7,7 +7,7 @@ title = Application des développements limités : Calcul de limite en 0.
 extends = /model/math/expr.pl
 
 before ==
-from sympy import series
+from sympy import limit
 var('x')
 
 f = 2*x**2/(exp(x)-exp(-x)) 
