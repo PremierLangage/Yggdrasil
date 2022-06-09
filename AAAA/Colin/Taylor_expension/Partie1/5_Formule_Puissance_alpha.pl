@@ -1,5 +1,6 @@
 # Auteur : Colin Petitjean
 # Sujet : Développements Limités - Fonction Puissance alpha
+# Maj : 9/06/2022
 
 title = DL - Formules de références : Fonctions puissances
 
