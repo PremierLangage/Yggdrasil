@@ -30,31 +30,10 @@ Par exemple:
 grader  =@ ./utils/cggrader.py
 builder =@ ./utils/cgbuilder.py
 
-
-# Composant éditeur de code
-#editor =: CodeEditor
-#editor.theme = dark
-#editor.height = 500px
-
-# Langage par defaut
-#editor.language = python 
-
-# Langages
-#editor.codes %=
-#[
-#    { "language": "python", "code": "" }
-#]
-#==
-
 langages==
 python
 c
 java
-==
-
-# une interface standard d'exercice avec un editeur pour la réponse
-form==
-{{editor|component}}
 ==
 
 settings.allow_reroll=1
