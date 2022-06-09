@@ -1,5 +1,6 @@
 # Auteur : Colin Petitjean
 # Sujet : Développements Limités - Manipuler la formule de Taylor-Young 1
+# Maj : 9/06/2022
 
 title = DL - Formule de Taylor-Young 1
 
