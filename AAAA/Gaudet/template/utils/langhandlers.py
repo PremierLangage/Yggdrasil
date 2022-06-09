@@ -9,8 +9,9 @@ class LanguageNotImplemented(Exception):
 class CHandler():
     def __init__(self, source_code, func_name=None):
         self.exec_name = '_test'
-        self.exec_cmd = ['./' + self.exec_name]
         self.src = source_code
+        
+        self.exec_cmd = ['./' + self.exec_name]
     
     def compile(self):
         compiler = 'gcc'
