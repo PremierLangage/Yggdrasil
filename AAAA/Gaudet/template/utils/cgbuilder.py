@@ -22,7 +22,9 @@ if __name__ == "__main__":
     editor = context['editor']
 
     editor.codes = []
-        
+
+    for lang in langhandlers.get_available_languages():
+            
 
 
 
