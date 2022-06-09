@@ -64,6 +64,7 @@ for lang in required_languages:
         'language': lang,
         'code': langhandlers.get_base_code(lang)
     })
+
 # default language is first one in the list
 editor.language = required_languages[0]
 
