@@ -41,6 +41,7 @@ class JavaHandler():
         self.exec_name = 'Main'
         self.exec_cmd = ['java', self.exec_name]
         self.src = source_code
+        self.base_code = """public class Main {\n    public static void main(String args[]) {\n        \n    }\n}"""
     
     def compile(self):
         javafilename = self.exec_name + '.java'
