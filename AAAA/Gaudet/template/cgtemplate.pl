@@ -22,13 +22,14 @@ Par exemple:
 
 @ ./utils/cgtest.py
 @ ./utils/cggrader.py [grader.py]
+@ ./utils/cgbuilder.py [builder.py]
 @ ./utils/feedback2.py
 @ ./utils/template.html
 @ ./utils/langhandlers.py
 # 
 
 @ /utils/sandboxio.py
-@ /builder/none.py [builder.py]
+
 
 editor =: CodeEditor
 editor.theme = dark
