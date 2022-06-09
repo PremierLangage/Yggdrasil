@@ -2,7 +2,7 @@
 # coding: utf-8
 
 import sys, json, jsonpickle
-import sandboxio
+from sandboxio import get_context, buildsave
 import langhandlers
 
 
