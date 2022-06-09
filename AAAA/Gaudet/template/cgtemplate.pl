@@ -48,5 +48,3 @@ form==
 ==
 
 settings.allow_reroll=1
-
-
