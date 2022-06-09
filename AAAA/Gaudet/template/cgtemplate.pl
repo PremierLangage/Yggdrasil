@@ -40,7 +40,7 @@ editor.language = python
 # Langages
 editor.codes %=
 [
-    { "language": "python", "code": "if __name__ == '__main__':\n    pass\n" },
+    { "language": "python", "code": "if __name__ == '__main__':\n    pass\n" }
 ]
 ==
 
