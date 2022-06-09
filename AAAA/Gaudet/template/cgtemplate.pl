@@ -1,4 +1,5 @@
-# Ceci est un template pour faire des exercices avec la balise de correction pltest
+# Ceci est un template pour faire des exercices avec la balise de correction cgtest
+# Il s'agit d'une adaptation du template pltest
 doc==
 Ce template permet de faire des exercices pouvant être résolu avec différents langages, au choix
 de l'étudiant. Les tests sont écrits comme des doctests. 
