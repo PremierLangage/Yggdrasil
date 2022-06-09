@@ -1,0 +1,9 @@
+title = Exercices de mathématiques
+
+introduction ==
+Quelques exemples d'exercices de mathématiques.
+==
+
+@ /demo/math/complex/complex_mul.pl
+
+@ /demo/math/expr/abstract_linear_equation.pl
