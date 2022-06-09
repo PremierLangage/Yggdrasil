@@ -51,6 +51,7 @@ editor.codes = []
 
 available_languages = langhandlers.get_available_languages()
 
+# get required language, if none then all languages proposed by default
 required_languages = languages.split('\n')
 if not required_languages:
     required_languages = available_languages
