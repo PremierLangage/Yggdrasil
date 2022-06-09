@@ -17,6 +17,8 @@ if __name__ == "__main__":
     with open(input_json, "r") as f:
         context = json.load(f)
     
+    # Builder stuff
+
 
     # Writing output JSON    
     with open(output_json, "w+") as f:
