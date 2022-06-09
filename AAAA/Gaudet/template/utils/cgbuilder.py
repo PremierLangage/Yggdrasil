@@ -21,6 +21,8 @@ if __name__ == "__main__":
     # Builder stuff
     editor = context['editor']
 
+    
+
 
 
     # Encoding + writing output JSON    
