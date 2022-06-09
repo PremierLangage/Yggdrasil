@@ -19,16 +19,14 @@ Par exemple:
     True
     ==
 ==
+grader  =@ ./utils/cggrader.py
+builder =@ ./utils/cgbuilder.py
 
 @ ./utils/cgtest.py
 @ ./utils/feedback2.py
 @ ./utils/template.html
 @ ./utils/langhandlers.py
-# 
 @ /utils/sandboxio.py
-
-grader  =@ ./utils/cggrader.py
-builder =@ ./utils/cgbuilder.py
 
 langages==
 python
@@ -37,6 +35,8 @@ java
 ==
 
 # une interface standard d'exercice avec un editeur pour la réponse
-
+form==
+{{editor|component}}
+==
 
 settings.allow_reroll=1
