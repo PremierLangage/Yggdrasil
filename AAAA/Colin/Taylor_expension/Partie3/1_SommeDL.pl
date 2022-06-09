@@ -10,17 +10,24 @@ from sympy import series
 var('x')
 
 n = randint(3, 4)
-p=randint(1,3)
 a=choice([-2,-1,1,2])
+b=choice([-2,-1,1,2])
+c=choice([-2,-1,1,2])
+d=choice([-2,-1,1,2])
 
-y=a*x**p
-f = choice([ln(1+y),atan(y),asin(y),acos(y)])
+y=a*x**b
+z=c*x**d
 
-sol = series(f, x, 0, n+1).removeO()
+f = choice([1/(1+y), exp(y), cos(y), sin(y), ln(1+y), atan(y), acos(y), asin(y)])
+g = choice([1/(1+z), exp(z), cos(z), sin(z), ln(1+z), atan(z), acos(z), asin(z)])
+
+h=f+g
+
+sol = series(h, x, 0, n+1).removeO()
 ==
 
 question ==
-Ecrire le développement limité de $! {{ f|latex }} !$ autour de $! 0 !$ à l'ordre $! {{ n|latex }} !$.
+Ecrire le développement limité de $! {{ h|latex }} !$ autour de $! 0 !$ à l'ordre $! {{ n|latex }} !$.
 ==
 
 embed ==
@@ -28,11 +35,11 @@ embed ==
 ==
 
 prefix ==
-$! {{ f|latex }} = !$
+$! {{ h|latex }} = !$
 ==
 
 solution ==
-$! {{ f|latex }} = {{ sol|latex }} + o(x^{{ n|latex }})  \quad [x \rightarrow 0]!$.
+$! {{ h|latex }} = {{ sol|latex }} + o(x^{{ n|latex }})  \quad [x \rightarrow 0]!$.
 ==
 
 latexsettings.order = 'ilex'
