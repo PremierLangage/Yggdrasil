@@ -79,6 +79,23 @@ class JavaHandler():
         return proc.returncode == 0, proc.stdout
 
 
+class OCamlHandler():
+    base_code = ''
+
+    def __init__(self, source_code):
+        self.exec_name = '_test'
+        self.exec_cmd = ['./' + self.exec_name]
+        self.src = source_code
+    
+    def compile(self):
+        mlfilename = self.exec_name + '.ml'
+        with open(mlfilename, 'w') as output:
+            output.write(self.src)
+        
+        cmd = ['ocamlopt', '-o', self.exec_name, mlfilename]
+        proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+
+        return proc.returncode == 0, proc.stdout
 
 # Available languages with corresponding handlers
 implemented_languages = {
