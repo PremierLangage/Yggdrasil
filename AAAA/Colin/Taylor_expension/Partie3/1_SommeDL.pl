@@ -1,5 +1,6 @@
 # Auteur : Colin Petitjean
 # Sujet : Somme de Développements Limités
+# Maj : 9/06/2022
 
 title = Somme de développements limités
 
