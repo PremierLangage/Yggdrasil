@@ -43,9 +43,6 @@ editor.theme = dark
 editor.height = 500px
 
 languages==
-python
-c
-java
 ==
 
 before==#|py|
