@@ -6,6 +6,7 @@ title = DL - Formule de Taylor-Young 1
 extends = /model/math/expr.pl
 
 before ==
+from sympy import Symbol, factorial, S
 var('x')
 n = 4
 
