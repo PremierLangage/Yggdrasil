@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     # Get language used and the corresponding handler
     lang = answers[editor_id]['language']
-    handler = langhandlers.get_language_handler(lang)
+    handler = langhandlers.get_language_handler(lang, student_code)
 
     # Compilation
     success, compile_feedback = handler.compile()
