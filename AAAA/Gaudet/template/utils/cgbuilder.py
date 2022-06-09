@@ -25,6 +25,7 @@ if __name__ == "__main__":
             'language': lang,
             'code': langhandlers.get_base_code(lang)
         })
+    editor.language = 'python'
     # Encoding + writing output JSON    
     buildsave(sys.argv[2], context)
     
