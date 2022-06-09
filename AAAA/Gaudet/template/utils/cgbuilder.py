@@ -12,8 +12,6 @@ if __name__ == "__main__":
                +"Usage: python3 builder.py [input_json] [output_json]")
         print(msg, file=sys.stderr)
         sys.exit(1)
-    input_json = sys.argv[1]
-    output_json = sys.argv[2]
     
     # Reading + decoding input JSON
     with open(input_json, "r") as f:
