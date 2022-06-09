@@ -8,9 +8,6 @@ text ==
 Match each verbs to its preterit
 ==
 
-@ /AAAA/Anna/Irregular_verbs.csv [data]
-@ /AAAA/Anna/Irregular_verbs2.csv [data1]
-
 before ==
 import random as rd
 import csv
