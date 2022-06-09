@@ -17,6 +17,8 @@ if __name__ == "__main__":
     context = get_context()
 
     # Builder stuff
+    context['title'] = "prout"
+
     editor = CodeEditor()
     editor.theme = 'dark'
     editor.height = '500px'
