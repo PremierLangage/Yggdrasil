@@ -6,7 +6,7 @@
 import sys
 from sandboxio import output, get_context, get_answers
 from cgtest import CodingGamesTestRunner
-import langhandlers
+from langhandlers import *
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
