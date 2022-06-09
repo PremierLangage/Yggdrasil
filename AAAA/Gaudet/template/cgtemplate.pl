@@ -28,6 +28,11 @@ builder =@ ./utils/cgbuilder.py
 @ ./utils/langhandlers.py
 @ /utils/sandboxio.py
 
+editor := CodeEditor
+editor.theme = dark
+editor.height = 500px
+editor.language = python
+
 langages==
 python
 c
