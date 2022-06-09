@@ -66,6 +66,9 @@ editor.language = required_languages[0]
 ==
 
 evaluator==#|py|
+from cgtest import CodingGamesTestRunner
+import langhandlers
+
 
 
 ==
