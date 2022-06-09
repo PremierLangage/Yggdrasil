@@ -16,6 +16,7 @@ if __name__ == "__main__":
     
     # Reading + decoding input JSON
     context = get_context()
+    editor = context['editor']
 
     # Builder stuff   
     editor.codes = []
