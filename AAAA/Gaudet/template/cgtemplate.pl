@@ -22,7 +22,7 @@ Par exemple:
 @ ./utils/cgtest.py
 @ ./utils/cggrader.py [grader.py]
 @ ./utils/feedback2.py
-@ ./utils/anothertemplate.html [template.html]
+@ ./utils/template.html
 @ ./utils/langhandlers.py
 # 
 
