@@ -18,11 +18,11 @@ if __name__ == "__main__":
     with open(input_json, "r") as f:
         context = json.load(f)
     
+    
+
     # Builder stuff
     editor = context['editor']
-
     editor.codes = []
-
     for lang in langhandlers.get_available_languages():
         editor.codes.append({
             'language': lang,
