@@ -46,6 +46,7 @@ languages==
 ==
 
 before==#|py|
+
 import langhandlers
 editor.codes = []
 
@@ -63,9 +64,11 @@ for lang in required_languages:
         'code': langhandlers.get_base_code(lang)
     })
 editor.language = required_languages[0]
+
 ==
 
 evaluator==#|py|
+
 from cgtest import CodingGamesTestRunner
 import langhandlers
 
