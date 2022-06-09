@@ -45,7 +45,6 @@ editor.codes %=
 ]
 ==
 
-
 # une interface standard d'exercice avec un editeur pour la réponse
 form==
 {{editor|component}}
