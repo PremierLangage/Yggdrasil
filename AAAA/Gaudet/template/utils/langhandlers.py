@@ -7,11 +7,12 @@ class LanguageNotImplemented(Exception):
     pass
 
 class CHandler():
+    base_code = """#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char *argv[]) {\n\n    return 0;\n}"""
+    
     def __init__(self, source_code, func_name=None):
         self.exec_name = '_test'
         self.src = source_code
         self.exec_cmd = ['./' + self.exec_name]
-        self.base_code = """#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char *argv[]) {\n\n    return 0;\n}"""
     
     def compile(self):
         compiler = 'gcc'
@@ -26,7 +27,7 @@ class CHandler():
 
 class PythonHandler():
     base_code = """if __name__ == '__main__':\n    pass\n"""
-    
+
     def __init__(self, source_code):
         self.exec_name = '_test.py'
         self.exec_cmd = ['python', self.exec_name]
