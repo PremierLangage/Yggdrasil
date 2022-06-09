@@ -24,7 +24,10 @@ if __name__ == "__main__":
     editor.codes = []
 
     for lang in langhandlers.get_available_languages():
-            
+        editor.codes.append({
+            'language': lang,
+            'code': langhandlers.get_base_code(lang)
+        })    
 
 
 
