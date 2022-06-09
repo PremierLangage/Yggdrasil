@@ -36,6 +36,8 @@ builder =@ /builder/before.py
 @ ./utils/langhandlers.py
 @ /utils/sandboxio.py
 
+settings.allow_reroll=1
+
 editor =: CodeEditor
 editor.theme = dark
 editor.height = 500px
@@ -61,5 +63,3 @@ editor.language = 'python'
 form==
 {{editor|component}}
 ==
-
-settings.allow_reroll=1
