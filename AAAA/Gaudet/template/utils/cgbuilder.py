@@ -29,8 +29,6 @@ if __name__ == "__main__":
             'code': langhandlers.get_base_code(lang)
         })
 
-    context['editor'] = editor 
-
     # Encoding + writing output JSON    
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(context, unpicklable=False))
