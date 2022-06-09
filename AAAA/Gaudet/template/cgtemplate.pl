@@ -31,7 +31,6 @@ builder =@ ./utils/cgbuilder.py
 editor =: CodeEditor
 editor.theme = dark
 editor.height = 500px
-editor.language = python
 
 langages==
 python
