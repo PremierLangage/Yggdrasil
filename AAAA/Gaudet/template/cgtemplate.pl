@@ -30,19 +30,19 @@ Par exemple:
 @ /utils/sandboxio.py
 
 # Composant éditeur de code
-editor =: CodeEditor
-editor.theme = dark
-editor.height = 500px
+#editor =: CodeEditor
+#editor.theme = dark
+#editor.height = 500px
 
 # Langage par defaut
-editor.language = python 
+#editor.language = python 
 
 # Langages
-editor.codes %=
-[
-    { "language": "python", "code": "" }
-]
-==
+#editor.codes %=
+#[
+#    { "language": "python", "code": "" }
+#]
+#==
 
 langages==
 python
