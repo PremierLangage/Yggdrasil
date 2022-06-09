@@ -30,11 +30,6 @@ Par exemple:
 grader  =@ ./utils/cggrader.py
 builder =@ /builder/before.py
 
-before ==
-title = "Prout"
-==
-
-
 
 # Composant éditeur de code
 #editor =: CodeEditor
