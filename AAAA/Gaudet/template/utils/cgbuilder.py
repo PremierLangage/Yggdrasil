@@ -21,10 +21,10 @@ if __name__ == "__main__":
     # Builder stuff
     editor = context['editor']
 
-    context['editor'].codes = []
+    editor.codes = []
 
     for lang in langhandlers.get_available_languages():
-        context['editor'].codes.append({
+        editor.codes.append({
             'language': lang,
             'code': langhandlers.get_base_code(lang)
         })
