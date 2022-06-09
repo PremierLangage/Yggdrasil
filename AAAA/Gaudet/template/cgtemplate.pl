@@ -72,7 +72,10 @@ evaluator==#|py|
 from cgtest import CodingGamesTestRunner
 import langhandlers
 
-
+student_code = response[editor.cid]['code']
+if "cgtest" not in context :
+    print("cgtest missing, please specify tests to run", file=sys.stderr)
+    sys.exit(1)
 
 ==
 
