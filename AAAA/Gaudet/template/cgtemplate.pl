@@ -25,7 +25,7 @@ Les langages autorisés sont à indiquer dans la variable language comme ceci:
     c
     ==
 
-La liste des langages utilisables actuellement est : c, python, java
+La liste des langages utilisables actuellement est : c, cpp, python, java
 ==
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
