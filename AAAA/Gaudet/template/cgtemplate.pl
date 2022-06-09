@@ -30,6 +30,10 @@ Par exemple:
 grader  =@ ./utils/cggrader.py
 builder =@ /builder/before.py
 
+before =@ cgbefore.py
+
+
+
 # Composant éditeur de code
 #editor =: CodeEditor
 #editor.theme = dark
