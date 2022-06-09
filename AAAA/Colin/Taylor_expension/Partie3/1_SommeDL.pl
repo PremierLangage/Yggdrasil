@@ -1,0 +1,42 @@
+# Auteur : Colin Petitjean
+# Sujet : Somme de Développements Limités
+
+title = DL - Formules de références 4
+
+extends = /model/math/expr.pl
+
+before ==
+from sympy import series
+var('x')
+
+n = randint(3, 4)
+p=randint(1,3)
+a=choice([-2,-1,1,2])
+
+y=a*x**p
+f = choice([ln(1+y),atan(y),asin(y),acos(y)])
+
+sol = series(f, x, 0, n+1).removeO()
+==
+
+question ==
+Ecrire le développement limité de $! {{ f|latex }} !$ autour de $! 0 !$ à l'ordre $! {{ n|latex }} !$.
+==
+
+embed ==
+# + o(x^{{ n|latex }}) \quad [x \rightarrow 0]
+==
+
+prefix ==
+$! {{ f|latex }} = !$
+==
+
+solution ==
+$! {{ f|latex }} = {{ sol|latex }} + o(x^{{ n|latex }})  \quad [x \rightarrow 0]!$.
+==
+
+latexsettings.order = 'ilex'
+
+
+
+
