@@ -50,6 +50,7 @@ class JavaHandler():
 
         return proc.returncode == 0, proc.stdout
 
+# Available languages with corresponding handlers
 available_languages = {
     'c': CHandler,
     'python': PythonHandler,
