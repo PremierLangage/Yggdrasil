@@ -8,13 +8,17 @@ extends = /model/math/expr.pl
 before ==
 from sympy import series
 var('x')
-f = choice([sin(x), cos(x), exp(x), 1/(1-x) , 1/(1+x)])
+f = choice([sin(x), cos(x), exp(x), 1/(1-x) , 1/(1+x),(1+x)**(1/2),(1+x)**(-1/2)])
 n = randint(3, 4)
-sol = series(f, x, 0, n+1).removeO()
+p=randint(1,2,3)
+a=choice([-2,-1,2])
+g(x)=f(a*x**p)
+
+sol = series(g, x, 0, n+1).removeO()
 ==
 
 question ==
-Ecrire le développement limité de $! {{ f|latex }} !$ autour de $! 0 !$ à l'ordre $! {{ n }} !$.
+Ecrire le développement limité de $! {{ g|latex }} !$ autour de $! 0 !$ à l'ordre $! {{ n|latex }} !$.
 ==
 
 embed ==
