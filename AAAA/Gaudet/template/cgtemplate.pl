@@ -62,7 +62,7 @@ for lang in required_languages:
         'language': lang,
         'code': langhandlers.get_base_code(lang)
     })
-editor.language = 'python'
+editor.language = required_languages[0]
 ==
 
 # une interface standard d'exercice avec un editeur pour la réponse
