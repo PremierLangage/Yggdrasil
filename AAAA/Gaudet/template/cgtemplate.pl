@@ -77,7 +77,7 @@ if 'cgtest' not in globals() :
     print('cgtest missing, please specify tests to run', file=sys.stderr)
     sys.exit(1)
 
-feedback = ""
+feedback = ''
 
 # Get language used and the corresponding handler
 lang = reponse[editor_id]['language']
