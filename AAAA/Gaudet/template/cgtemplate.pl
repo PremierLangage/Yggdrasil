@@ -58,6 +58,7 @@ if languages.strip() == '':
 else:
     required_languages = languages.split('\n')
 
+# add languages to the CodeEditor
 for lang in required_languages:
     editor.codes.append({
         'language': lang,
