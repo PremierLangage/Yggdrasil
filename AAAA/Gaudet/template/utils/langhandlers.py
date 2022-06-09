@@ -3,6 +3,9 @@
 # indicates how to run the program
 import subprocess
 
+class LanguageNotImplemented(Exception):
+    pass
+
 available_languages = {
     'c': CHandler,
     'python': PythonHandler,
@@ -10,7 +13,8 @@ available_languages = {
 }
 
 def get_language_handler(language):
-    
+    if language no in available_languages:
+        raise 
 
 
 class CHandler():
