@@ -4,6 +4,7 @@
 import sys, json, jsonpickle
 from sandboxio import get_context, buildsave
 import langhandlers
+import components
 
 
 if __name__ == "__main__":
