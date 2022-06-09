@@ -10,7 +10,7 @@ before ==
 from sympy import series
 var('x')
 
-f = choice([2*x**2/(exp(x)-exp(-x)), (ln(1+x)-x)/(x^2), ln(1+sin(x))/ln(1+x) ])
+f = 2*x**2/(exp(x)-exp(-x)) 
 
 sol = limit(f, x, 0)
 ==
@@ -29,8 +29,3 @@ $! \lim\limits_{x \to 0} {{ f|latex }} =  {{ sol|latex }} !$
 ==
 
 latexsettings.order = 'ilex'
-
-
-
-
-
