@@ -1,7 +1,7 @@
 # Auteur : Colin Petitjean
 # Sujet : Développements Limités - Manipuler les formules de références 4 : Changements de variables et intégration termes à termes
 
-title = DL - Formules de références 1
+title = DL - Formules de références 4
 
 extends = /model/math/expr.pl
 
