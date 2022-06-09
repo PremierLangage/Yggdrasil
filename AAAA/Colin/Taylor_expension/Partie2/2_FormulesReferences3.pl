@@ -11,7 +11,7 @@ var('x')
 
 n = 3
 
-f = choice([ln(1+x),ln(1-x),atan(x),arcsin(x),arccos(x)])
+f = choice([ln(1+x),ln(1-x),atan(x),asin(x),acos(x)])
 
 sol = series(f, x, 0, n+1).removeO()
 ==
