@@ -10,8 +10,8 @@ class CHandler():
     def __init__(self, source_code, func_name=None):
         self.exec_name = '_test'
         self.src = source_code
-        
         self.exec_cmd = ['./' + self.exec_name]
+        self.base_code ='#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char *argv[]) {\n\n    return 0;\n}'
     
     def compile(self):
         compiler = 'gcc'
