@@ -21,6 +21,10 @@ f = choice([2*x**2/(exp(x)-exp(-x)),
 (ln(1+x)-sin(x))/(x),
 (x*sin(x))/(1-cos(x)),
 (exp(x**2)-cos(x))/(x**2),
+(sin(x)-x)/(x**3),
+(1+ln(1+x)-exp(x))/(1-cos(x)),
+(exp(sin(x))-exp(tan(x)))/(sin(x)-tan(x)),
+(asin(x)-sin(x))/(x**3)
 ])
 
 sol = limit(f, x, 0)
