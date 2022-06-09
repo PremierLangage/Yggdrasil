@@ -27,7 +27,9 @@ if __name__ == "__main__":
         editor.codes.append({
             'language': lang,
             'code': langhandlers.get_base_code(lang)
-        })    
+        })
+
+    context['editor'] = editor 
 
     # Encoding + writing output JSON    
     with open(output_json, "w+") as f:
