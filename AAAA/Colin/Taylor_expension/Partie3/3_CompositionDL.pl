@@ -19,7 +19,7 @@ sol = series(f, x, 0, n+1).removeO()
 ==
 
 question ==
-Ecrire le développement limité de $! \displaystyle {{ f|latex }} !$ autour de $! 0 !$ à l'ordre $! {{ n|latex }} !$.
+Ecrire le développement limité de $!\; \displaystyle {{ f|latex }} \;!$ autour de $! 0 !$ à l'ordre $! {{ n|latex }} !$.
 ==
 
 embed ==
