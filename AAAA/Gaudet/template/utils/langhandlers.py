@@ -102,7 +102,8 @@ implemented_languages = {
     'c': CHandler,
     'cpp': CPPHandler,
     'python': PythonHandler,
-    'java': JavaHandler
+    'java': JavaHandler,
+    'ocaml': OCamlHandler
 }
 
 def get_available_languages():
