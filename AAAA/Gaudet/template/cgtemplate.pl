@@ -27,7 +27,7 @@ Les langages autorisés sont à indiquer dans la variable language comme ceci:
 
 La liste des langages utilisables actuellement est : c, python, java
 ==
-grader  =@ ./utils/cggrader.py
+grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 @ ./utils/cgtest.py
