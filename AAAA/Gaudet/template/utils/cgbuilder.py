@@ -24,13 +24,15 @@ if __name__ == "__main__":
     editor.language = 'python'
 
     # Builder stuff
-    editor = context['editor']
     editor.codes = []
     for lang in langhandlers.get_available_languages():
         editor.codes.append({
             'language': lang,
             'code': langhandlers.get_base_code(lang)
         })
+    
+    context['editor'] = editor
+    context['form'] = '{{editor|component}}'
 
     # Encoding + writing output JSON    
     with open(output_json, "w+") as f:
