@@ -20,7 +20,7 @@ Par exemple:
     ==
 ==
 grader  =@ ./utils/cggrader.py
-builder =@ ./utils/cgbuilder.py
+builder =@ /builder/before.py
 
 @ ./utils/cgtest.py
 @ ./utils/feedback2.py
