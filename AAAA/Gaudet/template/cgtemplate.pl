@@ -106,6 +106,7 @@ else:
         score, test_feedback = True, ""
     feedback += test_feedback
 
+grade = (score, feedback)
 ==
 
 # une interface standard d'exercice avec un editeur pour la réponse
