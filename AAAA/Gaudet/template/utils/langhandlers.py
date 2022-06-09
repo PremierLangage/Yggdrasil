@@ -70,11 +70,11 @@ def get_available_languages():
 def get_base_code(language):
     """Returns the base code for a program to be written in the language given as argument"""
     if language not in implemented_languages:
-        raise LanguageNotImplemented
+        raise LanguageNotImplemented(language + " not implemented")
     return implemented_languages[language].base_code
 
 def get_language_handler(language, source_code):
     """Returns an instance of the handler for the language and source code given as arguments"""
     if language not in implemented_languages:
-        raise LanguageNotImplemented
+        raise LanguageNotImplemented(language + "not implemented")
     return implemented_languages[language](source_code)
