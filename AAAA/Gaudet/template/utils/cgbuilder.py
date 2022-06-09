@@ -13,11 +13,12 @@ if __name__ == "__main__":
     input_json = sys.argv[1]
     output_json = sys.argv[2]
     
+    # Reading input JSON
     with open(input_json, "r") as f:
         context = json.load(f)
     
-    
-            
+
+    # Writing output JSON    
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(context, unpicklable=False))
     
