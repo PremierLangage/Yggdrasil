@@ -68,6 +68,7 @@ def get_available_languages():
     return list(implemented_languages.keys())
 
 def get_base_code(language):
+    """Returns the base code for a program to be written in the language given as argumenté"""
     if language not in implemented_languages:
         raise LanguageNotImplemented
     return implemented_languages[language].base_code
