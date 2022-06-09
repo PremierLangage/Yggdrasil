@@ -58,6 +58,7 @@ implemented_languages = {
 }
 
 def get_available_languages():
+    """Returns a list of available languages"""
     return list(implemented_languages.keys())
 
 def get_language_handler(language, source_code):
