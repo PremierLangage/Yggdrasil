@@ -29,6 +29,7 @@ Par exemple:
 # 
 @ /utils/sandboxio.py
 
+# Composant éditeur de code
 editor =: CodeEditor
 editor.theme = dark
 editor.height = 500px
