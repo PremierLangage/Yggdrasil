@@ -27,5 +27,3 @@ $! \lim\limits_{x \to 0} {{ f|latex }} = !$
 solution ==
 $! \lim\limits_{x \to 0} {{ f|latex }} =  {{ sol|latex }} !$
 ==
-
-latexsettings.order = 'ilex'
