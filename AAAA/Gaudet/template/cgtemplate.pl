@@ -55,7 +55,6 @@ available_languages = langhandlers.get_available_languages()
 
 
 for lang in languages.split('\n'):
-
     editor.codes.append({
         'language': lang,
         'code': langhandlers.get_base_code(lang)
