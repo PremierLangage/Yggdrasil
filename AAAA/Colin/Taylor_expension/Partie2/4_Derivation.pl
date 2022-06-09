@@ -1,5 +1,6 @@
 # Auteur : Colin Petitjean
 # Sujet : Développements Limités - Dérivation d'un DL
+# Maj : 9/06/2022
 
 title = DL - Dérivation d'un développement limité
 
