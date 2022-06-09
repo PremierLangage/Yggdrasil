@@ -11,15 +11,9 @@ from sympy import series
 var('x')
 
 n = 3
-a=choice([-1,1])
-b=choice([-1,1])
 
-
-y=a*x
-z=b*x
-
-f = choice([1/(1+y), exp(y), cos(y), sin(y), ln(1+y), atan(y), acos(y), asin(y)])
-g = choice([1/(1+z), exp(z), cos(z), sin(z), ln(1+z), atan(z), acos(z), asin(z)])
+g = choice([exp(x)-1, cos(x)-1, sin(x), ln(1+x), \ln(1-x)])
+f = choice([1/(1+g), 1/(1-g), ln(1+g), \ln(1-g), cos(g), sin(g), ln(1+g), \ln(1-g)])
 
 h=f*g
 
