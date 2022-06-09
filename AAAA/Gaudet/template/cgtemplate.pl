@@ -32,7 +32,8 @@ Par exemple:
 
 editor =: CodeEditor
 editor.theme = dark
-editor.language = python
+# langage par defaut
+editor.language = python 
 editor.height = 500px
 editor.codes %=
 [
