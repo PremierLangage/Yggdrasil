@@ -8,7 +8,7 @@ extends = /model/math/expr.pl
 before ==
 from sympy import series
 var('x')
-f = choice([sin(x), cos(x), exp(x), 1/(1-x) , 1/(1+x),(1+x)**(1/2),(1+x)**(-1/2)])
+f(x) = choice([sin(x), cos(x), exp(x), 1/(1-x) , 1/(1+x),(1+x)**(1/2),(1+x)**(-1/2)])
 n = randint(3, 4)
 p=randint(1,2,3)
 a=choice([-2,-1,2])
