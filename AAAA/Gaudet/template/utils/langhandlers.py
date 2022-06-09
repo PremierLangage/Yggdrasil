@@ -8,7 +8,7 @@ class LanguageNotImplemented(Exception):
 
 class CHandler():
     base_code = """#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char *argv[]) {\n\n    return 0;\n}"""
-    
+
     def __init__(self, source_code, func_name=None):
         self.exec_name = '_test'
         self.src = source_code
@@ -39,11 +39,12 @@ class PythonHandler():
         return True, ''
 
 class JavaHandler():
+    base_code = """public class Main {\n    public static void main(String args[]) {\n        \n    }\n}"""
+    
     def __init__(self, source_code):
         self.exec_name = 'Main'
         self.exec_cmd = ['java', self.exec_name]
         self.src = source_code
-        self.base_code = """public class Main {\n    public static void main(String args[]) {\n        \n    }\n}"""
     
     def compile(self):
         javafilename = self.exec_name + '.java'
