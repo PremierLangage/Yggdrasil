@@ -1,0 +1,7 @@
+title = Python
+
+introduction ==
+Quelques exemples d'exercices de programmation Python.
+==
+
+@ /demo/python/doctest/variable.pl
