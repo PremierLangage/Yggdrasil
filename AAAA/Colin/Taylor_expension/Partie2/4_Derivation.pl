@@ -1,7 +1,7 @@
 # Auteur : Colin Petitjean
 # Sujet : Développements Limités - Dérivation d'un DL
 
-title = DL - Formule de Taylor-Young 1
+title = DL - Dérivation d'un développement limité
 
 extends = /model/math/expr.pl
 
