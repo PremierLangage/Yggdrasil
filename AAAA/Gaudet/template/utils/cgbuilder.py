@@ -14,8 +14,7 @@ if __name__ == "__main__":
         sys.exit(1)
     
     # Reading + decoding input JSON
-    with open(input_json, "r") as f:
-        context = json.load(f)
+    context = get_context()
     
     editor = CodeEditor()
     editor.theme = 'dark'
