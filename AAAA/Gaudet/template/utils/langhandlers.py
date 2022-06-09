@@ -14,7 +14,7 @@ available_languages = {
 
 def get_language_handler(language):
     """Returns an instance of the handler for the language given as argument"""
-    if language LanguageNotImplemented in available_languages:
+    if language not in available_languages:
         raise LanguageNotImplemented
     return available_languages[language]()
 
