@@ -3,14 +3,12 @@ title=Test
 
 tag=function # N'oubliez pas de remplir ce champs svp
 extends= template/cgtemplate.pl
-@ /builder/before.py [builder.py]
 
 
 text==
 Ecrire un programme qui écrit le successeur de l'entier envoyé en entrée
 ==
 
-before==
 cgtest= f"""
 >>> test('1') # Test 1
 '2'
@@ -21,4 +19,3 @@ cgtest= f"""
 >>> from random import randint; n = randint(0, 100); test(str(n)) == str(n + 1) # Test aléatoire
 True
 """
-==
