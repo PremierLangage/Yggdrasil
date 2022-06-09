@@ -9,7 +9,7 @@ text==
 Ecrire un programme qui écrit le successeur de l'entier envoyé en entrée
 ==
 
-cgtest= f"""
+cgtest==
 >>> test('1') # Test 1
 '2'
 >>> test('2') # Test 2
@@ -18,4 +18,4 @@ cgtest= f"""
 '-2'
 >>> from random import randint; n = randint(0, 100); test(str(n)) == str(n + 1) # Test aléatoire
 True
-"""
+==
