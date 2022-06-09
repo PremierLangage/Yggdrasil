@@ -6,19 +6,6 @@ import subprocess
 class LanguageNotImplemented(Exception):
     pass
 
-available_languages = {
-    'c': CHandler,
-    'python': PythonHandler,
-    'java': JavaHandler
-}
-
-def get_language_handler(language):
-    """Returns an instance of the handler for the language given as argument"""
-    if language not in available_languages:
-        raise LanguageNotImplemented
-    return available_languages[language]()
-
-
 class CHandler():
     def __init__(self, source_code, func_name=None):
         self.exec_name = '_test'
@@ -62,3 +49,15 @@ class JavaHandler():
         proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
 
         return proc.returncode == 0, proc.stdout
+
+available_languages = {
+    'c': CHandler,
+    'python': PythonHandler,
+    'java': JavaHandler
+}
+
+def get_language_handler(language):
+    """Returns an instance of the handler for the language given as argument"""
+    if language not in available_languages:
+        raise LanguageNotImplemented
+    return available_languages[language]()
