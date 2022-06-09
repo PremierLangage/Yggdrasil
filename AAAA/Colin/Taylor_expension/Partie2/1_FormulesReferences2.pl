@@ -12,7 +12,7 @@ f(x) = choice([sin(x), cos(x), exp(x), 1/(1-x) , 1/(1+x),(1+x)**(1/2),(1+x)**(-1
 n = randint(3, 4)
 p=randint(1,2,3)
 a=choice([-2,-1,2])
-g(x)=f(a*x**p)
+g=f(a*x**p)
 
 sol = series(g, x, 0, n+1).removeO()
 ==
