@@ -98,7 +98,7 @@ if not success:
 else:
     # Test execution
     tester = CodingGamesTestRunner(cgtest, handler.exec_cmd)
-    testname = context['testname'] if 'testname' in context else "Groupe de test 1"
+    testname = testname if 'testname' in globals() else "Groupe de test 1"
     score, test_feedback = tester.runtests(testname)
 
 
