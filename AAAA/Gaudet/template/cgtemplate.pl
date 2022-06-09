@@ -80,7 +80,7 @@ if 'cgtest' not in globals() :
 feedback = ''
 
 # Get language used and the corresponding handler
-lang = response[editor_id]['language']
+lang = response[editor.cid]['language']
 handler = langhandlers.get_language_handler(lang, student_code)
 
 # Compilation
