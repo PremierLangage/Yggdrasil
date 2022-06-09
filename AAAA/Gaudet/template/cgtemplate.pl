@@ -47,6 +47,9 @@ editor.codes %=
 ==
 
 langages==
+python
+c
+java
 ==
 
 # une interface standard d'exercice avec un editeur pour la réponse
