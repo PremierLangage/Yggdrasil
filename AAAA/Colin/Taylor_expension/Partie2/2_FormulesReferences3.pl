@@ -1,5 +1,5 @@
 # Auteur : Colin Petitjean
-# Sujet : Développements Limités - Manipuler les formules de références 3 : Intégrations termes à termes. 
+# Sujet : Développements Limités - Manipuler les formules de références 3 : Intégration termes à termes. 
 
 title = DL - Formules de références 1
 
