@@ -10,10 +10,10 @@ from sympy import series
 var('x')
 
 n = randint(3, 4)
-p=randint(1,2,3)
+p=randint(1,3)
 a=choice([-2,-1,2])
 
-y=x
+y=a*x**p
 f = choice([sin(y), cos(y), exp(y), 1/(1-y) , 1/(1+y),(1+y)**(1/2),(1+y)**(-1/2)])
 
 sol = series(f, x, 0, n+1).removeO()
