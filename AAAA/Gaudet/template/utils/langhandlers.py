@@ -97,6 +97,7 @@ class OCamlHandler():
 
         return proc.returncode == 0, proc.stdout
 
+
 # Available languages with corresponding handlers
 implemented_languages = {
     'c': CHandler,
