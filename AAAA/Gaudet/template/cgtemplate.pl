@@ -37,8 +37,6 @@ java
 ==
 
 # une interface standard d'exercice avec un editeur pour la réponse
-form==
-{{editor|component}}
-==
+
 
 settings.allow_reroll=1
