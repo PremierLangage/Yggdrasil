@@ -1,6 +1,6 @@
 extends=/ComputerScience/python/template/pltest.pl
 
-titl e= Initialisation d'une variable
+title = Initialisation d'une variable
 
 
 text ==
