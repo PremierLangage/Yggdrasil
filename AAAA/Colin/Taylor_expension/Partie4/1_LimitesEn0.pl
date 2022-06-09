@@ -2,7 +2,7 @@
 # Sujet : Application des DL : Limites en 0.
 # Maj : 9/06/2022
 
-title = Somme de développements limités
+title = Application des développements limités : Calcul de limite en 0.
 
 extends = /model/math/expr.pl
 
