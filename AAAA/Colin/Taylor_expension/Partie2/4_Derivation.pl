@@ -9,16 +9,11 @@ before ==
 from sympy import Symbol, factorial, S
 var('x')
 n = 4
+m=n-1
 
-L=[]
-P=0
-for i in range(n+1) :
-    a=randint(-10,10)
-    b=a/factorial(i)
-    L.append(a)
-    P=P+b*x**i
+P = randint(-3, 3) + randint(-3, 3)*x + randint(-3, 3)*x**2  + randint(-3, 3)*x**3  + randint(-3, 3)*x**4 
 
-sol=P
+sol=diff(P,x)
 ==
 
 question ==
