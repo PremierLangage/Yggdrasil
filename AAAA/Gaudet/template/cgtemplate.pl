@@ -28,7 +28,7 @@ Par exemple:
 @ /utils/sandboxio.py
 
 grader  =@ ./utils/cggrader.py
-builder =@ ./utils/cgbuilder.py
+builder =@ /builder/before.py
 
 # Composant éditeur de code
 #editor =: CodeEditor
