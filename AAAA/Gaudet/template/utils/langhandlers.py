@@ -3,6 +3,14 @@
 # indicates how to run the program
 import subprocess
 
+available_languages = {
+    'c': CHandler,
+    'python': PythonHandler,
+    'java': JavaHandler
+}
+
+
+
 class CHandler():
     def __init__(self, source_code, func_name=None):
         self.exec_name = '_test'
