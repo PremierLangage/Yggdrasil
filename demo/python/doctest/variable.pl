@@ -8,7 +8,7 @@ Initialiser la variable `X` avec la chaîne `toto`.
 ==
 
 pltest ==
->>> X==X # Initialisation d'une variable X
+>>> X in globals() # Initialisation d'une variable X
 True
 >>> X == "toto"
 True
