@@ -29,6 +29,9 @@ Par exemple:
 # 
 @ /utils/sandboxio.py
 
+grader  =@ grader.py
+builder =@ builder.py
+
 # Composant éditeur de code
 #editor =: CodeEditor
 #editor.theme = dark
