@@ -24,6 +24,8 @@ Les langages autorisés sont à indiquer dans la variable language comme ceci:
     python
     c
     ==
+
+La liste des langages utilisables est : c, python, java
 ==
 grader  =@ ./utils/cggrader.py
 builder =@ /builder/before.py
