@@ -76,7 +76,7 @@ class JavaHandler():
 # Available languages with corresponding handlers
 implemented_languages = {
     'c': CHandler,
-    'c++': CPPHandler,
+    'cpp': CPPHandler,
     'python': PythonHandler,
     'java': JavaHandler
 }
