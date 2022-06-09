@@ -42,6 +42,11 @@ editor =: CodeEditor
 editor.theme = dark
 editor.height = 500px
 
+# une interface standard d'exercice avec un editeur pour la réponse
+form==
+{{editor|component}}
+==
+
 languages==
 ==
 
@@ -107,9 +112,4 @@ else:
 
 # Final feedback
 grade = (score, feedback)
-==
-
-# une interface standard d'exercice avec un editeur pour la réponse
-form==
-{{editor|component}}
 ==
