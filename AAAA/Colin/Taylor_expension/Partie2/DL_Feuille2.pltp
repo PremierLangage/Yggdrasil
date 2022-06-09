@@ -1,0 +1,22 @@
+title = DL - Formules de références - Changements de variables - Intégration/Dérivation terme à terme. 
+
+introduction ==
+Objectifs : Dans cette deuxième feuille d'exercices sur les développements limités, de nouvelles formules de références sont travaillés. 
+En particulier, celles obtenues par changements de variables et intégration terme à terme de formules déjà étudiées dans la feuille n°1.
+ permet de se familiariser avec la formule de Taylor ainsi qu'avec quelques formules de références 
+($!\sin(x), \; \cos(x), \; \exp(x), \; \frac{1}{1-x}, \; \frac{1}{1+x}!$).
+
+==
+
+@ /AAAA/Colin/Taylor_expension/Partie1/2_FormulesReferences1.pl
+
+@ /AAAA/Colin/Taylor_expension/Partie1/3_FormuleTaylor1.pl
+
+@ /AAAA/Colin/Taylor_expension/Partie1/4_FormuleTaylor2.pl
+
+@ /AAAA/Colin/Taylor_expension/Partie1/5_Formule_Puissance_alpha.pl
+
+@ /AAAA/Colin/Taylor_expension/Partie1/6_FormuleTaylor3.pl
+
+
+
