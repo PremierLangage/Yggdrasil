@@ -77,7 +77,34 @@ if "cgtest" not in context :
     print("cgtest missing, please specify tests to run", file=sys.stderr)
     sys.exit(1)
 
+feedback = ""
 
+# Get language used and the corresponding handler
+lang = answers[editor_id]['language']
+handler = langhandlers.get_language_handler(lang, student_code)
+
+# Compilation
+success, compile_feedback = handler.compile()
+if not success:
+    feedback += """<div style="border:1px solid black;padding:1%;margin:1%;background-color:Tomato;border-radius:4px;color:black;">
+    La compilation/vérification du code a échoué<br>
+    Voici le détail:
+    <pre style="background: #DDD"><code>
+    """
+    feedback += compile_feedback
+    feedback += "</code></pre><div>"
+    score = 0
+
+else:
+    # Test execution
+    if "cgtest" in context:
+        cgtest = context['cgtest']
+        tester = CodingGamesTestRunner(cgtest, handler.exec_cmd)
+        testname = context['testname'] if 'testname' in context else "Groupe de test 1"
+        score, test_feedback = tester.runtests(testname)
+    else:
+        score, test_feedback = True, ""
+    feedback += test_feedback
 
 ==
 
