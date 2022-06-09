@@ -12,17 +12,17 @@ var('x')
 
 n = 3
 a=choice([-2,-1,1,2])
-b=choice([1,2,3])
-c=choice([-2,-1,1,2])
-d=choice([1,2,3])
+b=choice([-2,-1,1,2])
+p=choice([1,2,3])
+q=choice([1,2,3])
 
-y=a*x**b
-z=c*x**d
+y= x**p
+z= x**q
 
 f = choice([1/(1+y), exp(y), cos(y), sin(y), ln(1+y), atan(y), acos(y), asin(y)])
 g = choice([1/(1+z), exp(z), cos(z), sin(z), ln(1+z), atan(z), acos(z), asin(z)])
 
-h=f+g
+h=a*f+b*g
 
 sol = series(h, x, 0, n+1).removeO()
 ==
