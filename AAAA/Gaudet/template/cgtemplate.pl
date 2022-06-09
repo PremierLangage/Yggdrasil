@@ -27,9 +27,7 @@ Par exemple:
 @ ./utils/template.html
 @ ./utils/langhandlers.py
 # 
-
 @ /utils/sandboxio.py
-
 
 editor =: CodeEditor
 editor.theme = dark
