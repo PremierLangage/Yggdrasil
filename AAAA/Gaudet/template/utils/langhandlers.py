@@ -6,6 +6,7 @@ import subprocess
 class LanguageNotImplemented(Exception):
     pass
 
+
 class CHandler():
     base_code = """#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char *argv[]) {\n\n    return 0;\n}"""
 
@@ -25,6 +26,7 @@ class CHandler():
 
         return proc.returncode == 0, proc.stdout
 
+
 class CPPHandler():
     base_code = """#include <iostream>\n\nint main(int argc, char *argv[]) {\n\n    return 0;\n}"""
 
@@ -42,6 +44,7 @@ class CPPHandler():
 
         return proc.returncode == 0, proc.stdout
 
+
 class PythonHandler():
     base_code = """if __name__ == '__main__':\n    pass\n"""
 
@@ -54,6 +57,7 @@ class PythonHandler():
         with open(self.exec_name, 'w') as output:
             output.write(self.src)
         return True, ''
+
 
 class JavaHandler():
     base_code = """public class Main {\n    public static void main(String args[]) {\n        \n    }\n}"""
@@ -72,6 +76,8 @@ class JavaHandler():
         proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
 
         return proc.returncode == 0, proc.stdout
+
+
 
 # Available languages with corresponding handlers
 implemented_languages = {
