@@ -21,8 +21,6 @@ Par exemple:
 ==
 
 @ ./utils/cgtest.py
-@ ./utils/cggrader.py [grader.py]
-@ ./utils/cgbuilder.py [builder.py]
 @ ./utils/feedback2.py
 @ ./utils/template.html
 @ ./utils/langhandlers.py
