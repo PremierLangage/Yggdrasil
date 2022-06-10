@@ -4,7 +4,7 @@ title = Nombres Complexes
 
 before == #|python|
 e = 2
-inputs = [MathInput(type="expr") for _ in range(n)]
+inputs = [MathInput(type="expr") for _ in range(e)]
 prefixes = []
 
 for i in range(e):
