@@ -7,5 +7,6 @@ Afficher "Hello!" sur une première ligne et "Goodbye!" sur une seconde ligne.<b
 ==
 
 grader==#|python|
+begin_test_group("Tests")
 run(output="Hello!\nGoodbye!\n")
 ==
