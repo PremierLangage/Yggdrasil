@@ -8,7 +8,7 @@ inputs = [MathInput(type="expr") for _ in range(n)]
 prefixes = []
 
 for i in range(n):
-    if i=1 :
+    if i==1 :
     a=1
     b=2
     s = latex(a * b)
