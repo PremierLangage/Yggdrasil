@@ -14,7 +14,8 @@ for i in range(n):
         m = randint(1,10)
         X1 = x**n
         X2 = x**m
-        prefixes.append($! {{X1}} * {{X2}} !$)
+        s=latex(X1 * X2)
+        prefixes.append(f"$! {s} !$")
         inputs[i].sol = X1 * X2
     else :
         a=2
