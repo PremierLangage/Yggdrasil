@@ -16,11 +16,11 @@ sol = series(f, x, a, n+1).removeO()
 ==
 
 question ==
-Ecrire le développement limité de $! {{ f|latex }} !$ autour de $! {{a|latex}} !$ à l'ordre $! {{ n|latex }} !$.
+Ecrire le développement asymptotiques de $! {{ f|latex }} !$ autour de $! {{a|latex}} !$ à la précision $! 1/x^{{n|latex }} !$.
 ==
 
 embed ==
-# + o(x^{{ n|latex }}) \quad [x \rightarrow {{a|latex}}]
+# + o(1/x^{{ n|latex }}) \quad [x \rightarrow {{a|latex}}]
 ==
 
 prefix ==
@@ -28,7 +28,7 @@ $! {{ f|latex }} = !$
 ==
 
 solution ==
-$! {{ f|latex }} = {{ sol|latex }} + o(x^{{ n|latex }})  \quad [x \rightarrow {{a|latex}}]!$.
+$! {{ f|latex }} = {{ sol|latex }} + o(1/x^{{ n|latex }})  \quad [x \rightarrow {{a|latex}}]!$.
 ==
 
 latexsettings.order = 'ilex'
