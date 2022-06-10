@@ -9,7 +9,7 @@ prefixes = []
 for i in range(n):
     prefixes.append(f"Question {i}")
     inputs[i].sol = 0
-    inputs[i].embed = r"# + o(x^3) \quad [x \rightarrow 0]"    
+    #inputs[i].embed = r"# + o(x^3) \quad [x \rightarrow 0]"    
 ==
 
 question == 
