@@ -27,9 +27,9 @@ $! o({{X1|latex}}) - o({{X1|latex}}) = o( !$
 ==
 
 solution ==
-$$ o({{X1|latex}}) + o({{X2|latex}}) = o({{ sol|latex }})  .$$
+$$ o({{X1|latex}}) - o({{X1|latex}}) = o({{ sol|latex }})  .$$
 
-En effet, il faut appliquer ici la règle suivante : Si $! n \leq m!$ alors $! o(x^n) + o(x^m) = o(x^n) !$.
+En effet, il faut appliquer ici la règle suivante : $! o(x^n) - o(x^n) = o(x^n) !$.
 ==
 
 latexsettings.order = 'ilex'
