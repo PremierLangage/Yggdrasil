@@ -16,8 +16,9 @@ for i in range(n):
         X11 = latex(X1)
         X2 = x**m
         X22 = latex(X2)
+        s = x**min(n,m)
         prefixes.append(f"$! o({X11}) + o({X22}) = o( !$")
-        inputs[i].sol = X1 * X2
+        inputs[i].sol = s
         inputs[i].set_embed(r"#) \quad [x \rightarrow 0]")
     else :
         a=2
