@@ -32,7 +32,7 @@ for i in range(e):
         prefixes.append(f"$! {xn} \cdot o({xm}) = o(  !$")
         inputs[i].sol = s
         inputs[i].set_embed(r"#) \quad [x \rightarrow 0]")
-    else :
+    if i==2 :
         var('x')
         n = randint(1,5)
         m = randint(1,5)
