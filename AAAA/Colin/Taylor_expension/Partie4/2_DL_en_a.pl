@@ -2,7 +2,7 @@
 # Sujet : Développements Limités - Manipuler les formules de références 1
 # Maj : 10/06/2022
 
-title = DL - Formules de références 1
+title = Développements Limités en $!a \neq 0!$.
 
 extends = /model/math/expr.pl
 
