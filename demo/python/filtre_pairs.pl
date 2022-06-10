@@ -11,6 +11,7 @@ Exemples d'appels :
     [2, 4, 4, 0]
     >>> filtre_pairs([3, 13, 7])
     []
+
 <br>
 ==
 
