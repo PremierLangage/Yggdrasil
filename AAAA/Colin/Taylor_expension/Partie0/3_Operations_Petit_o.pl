@@ -14,7 +14,7 @@ sol = x**(n+m)
 ==
 
 question ==
-Simplifier l'expression ci-dessous (pour x qui tend vers $! 0 !$) en l'écrivant sous la forme
+Simplifier l'expression ci-dessous (pour $!x!$ qui tend vers $! 0 !$) en l'écrivant sous la forme
  $! o(x^n) !$ avec $! n \in \mathbb N !$ le plus grand possible.
 ==
 
