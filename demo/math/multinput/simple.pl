@@ -7,16 +7,17 @@ n = 3
 inputs = [MathInput(type="expr") for _ in range(n)]
 prefixes = []
 
-types = [0, 0, 1, 1]
+types = [0, 0, 1, 4]
 
 def generate(i):
-    prefix = i
+    prefix = str(i)
     sol = i
     return prefix, sol
 
 for i in range(n):
-    prefixes.append(f"Question {i}")
-    inputs[i].sol = 0
+    prefix, sol = generate(types[i])
+    prefixes.append(prefix)
+    inputs[i].sol = sol
     inputs[i].set_embed(r"# + o(x^3) \quad [x \rightarrow 0]")  
 ==
 
