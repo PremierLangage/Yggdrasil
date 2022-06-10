@@ -29,7 +29,7 @@ for i in range(e):
         s = x**(n+m)
         xn = latex(x**n)
         xm = latex(x**m)
-        prefixes.append(f"$! {xn} * o({xm}) = o(  !$")
+        prefixes.append(f"$! {xn} \cdot o({xm}) = o(  !$")
         inputs[i].sol = s
         inputs[i].set_embed(r"#) \quad [x \rightarrow 0]")
 ==
