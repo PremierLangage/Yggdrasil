@@ -9,7 +9,7 @@ extends = /model/math/expr.pl
 before ==
 from sympy import series
 var('x')
-n=3
+n=2
 f = choice([exp(x), 1/x, ln(x), sqrt(x), 1/sqrt(x)])
 a = choice([1,2])
 sol = series(f, x, a, n+1).removeO()
