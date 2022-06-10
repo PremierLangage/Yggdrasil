@@ -12,8 +12,7 @@ Exemples d'appels :
     >>> filtre_pairs([3, 13, 7])
     []
 
-**Attention**, *le programe doit fonctionner quelle que soit la valeur 
-de `nb`.*<br>
+<br><br>
 ==
 
 grader==#|python|
