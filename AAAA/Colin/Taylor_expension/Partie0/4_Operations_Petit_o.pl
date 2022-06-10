@@ -30,7 +30,7 @@ solution ==
 $$ {{m|latex}} \times o(x^{{n|latex}}) =  o({{ sol|latex }})  .$$
 
 
-En effet, il faut appliquer ici la règle suivante : Si $! C \in \mathbb R !$ et $!n \in \mathbb N!$ alors $!C \times o(x^n) = o(x^{n}) !$.
+En effet, il faut appliquer ici la règle suivante : Si $! C \in \mathbb R^* !$ et $!n \in \mathbb N!$ alors $!C \times o(x^n) = o(x^{n}) !$.
 ==
 
 latexsettings.order = 'ilex'
