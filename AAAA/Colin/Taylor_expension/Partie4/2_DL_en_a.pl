@@ -9,17 +9,17 @@ extends = /model/math/expr.pl
 before ==
 from sympy import series
 var('x')
-f = choice([sin(x), cos(x), exp(x), 1/(1-x) , 1/(1+x)])
-n = randint(3, 4)
-sol = series(f, x, 0, n+1).removeO()
+f = choice([exp(x), 1/x, ln(x), sqrt(x), 1/sqrt(x)])
+a = choice([1,2])
+sol = series(f, x, a, n+1).removeO()
 ==
 
 question ==
-Ecrire le développement limité de $! {{ f|latex }} !$ autour de $! 0 !$ à l'ordre $! {{ n|latex }} !$.
+Ecrire le développement limité de $! {{ f|latex }} !$ autour de $! {{a|latex}} !$ à l'ordre $! {{ n|latex }} !$.
 ==
 
 embed ==
-# + o(x^{{ n|latex }}) \quad [x \rightarrow 0]
+# + o(x^{{ n|latex }}) \quad [$!x \rightarrow {{a|latex}}!$]
 ==
 
 prefix ==
@@ -27,7 +27,7 @@ $! {{ f|latex }} = !$
 ==
 
 solution ==
-$! {{ f|latex }} = {{ sol|latex }} + o(x^{{ n|latex }})  \quad [x \rightarrow 0]!$.
+$! {{ f|latex }} = {{ sol|latex }} + o(x^{{ n|latex }})  \quad [x \rightarrow {{a|latex}}]!$.
 ==
 
 latexsettings.order = 'ilex'
