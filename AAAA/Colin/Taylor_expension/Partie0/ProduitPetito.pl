@@ -1,3 +1,7 @@
+# Auteur : Colin Petitjean
+# Sujet : développements limités - Manipuler les petits o
+# Maj : 10/06/2022
+
 extends = /model/math/multimathinput.pl
 
 title = Opérations sur les petits "o" : Produit
