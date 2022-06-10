@@ -17,7 +17,7 @@ for i in range(e):
         n = randint(2, 6)
         m = randint(-10,10,[0])
         s = x**n
-        prefixes.append(f"$! {{m|latex}} \times o(x^{{n|latex}}) = o(  !$")
+        prefixes.append(f"$! {m} \times o(x^{n}) = o(  !$")
         inputs[i].sol = s
         inputs[i].set_embed(r"#) \quad [x \rightarrow 0]")
     else :
