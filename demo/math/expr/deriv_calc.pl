@@ -1,5 +1,7 @@
 extends = /model/math/expr.pl
 
+title = Dérivation
+
 before ==
 from sympy import diff
 var('x')
