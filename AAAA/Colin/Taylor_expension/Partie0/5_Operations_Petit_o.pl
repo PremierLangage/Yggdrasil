@@ -16,7 +16,7 @@ S=n+m
 a=randint(2,10)
 b=randint(-10,-1)
 l=randint(2,8)
-k=randint(7,10)
+k=randint(2,8)
 sol = x**min(n+m,l)
 ==
 
