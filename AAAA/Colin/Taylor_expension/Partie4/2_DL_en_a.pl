@@ -10,7 +10,7 @@ before ==
 from sympy import series
 var('x')
 n=2
-f = choice([exp(x), 1/x, 1/x^2, ln(x), sqrt(x), 1/sqrt(x)])
+f = choice([exp(x), 1/x, 1/x**2, ln(x), sqrt(x), 1/sqrt(x)])
 a = choice([1,2])
 sol = series(f, x, a, n+1).removeO()
 ==
