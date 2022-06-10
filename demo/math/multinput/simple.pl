@@ -24,12 +24,3 @@ for i in range(n):
 question == 
 Calculer les produits de nombres complexes suivants (sous forme algébrique).
 ==
-
-inputblock ==
-{% for input in inputs %}
-<div style="display: block; margin-bottom: 1em;">
-{{ prefixes[loop.index0] }} toto
-{{ input|html }}
-</div>
-{% endfor %}
-==
