@@ -1,4 +1,4 @@
-extends = /model/math/multinput.pl
+extends = /model/math/multimathinput.pl
 
 title = Nombres Complexes
 
@@ -14,6 +14,7 @@ for i in range(n):
     inputs[i].sol = (z1 * z2).expand()
     inputs[i].type = "complex"
     inputs[i].evalparam = {'form': 'cartesian'}
+    
 ==
 
 question == 
