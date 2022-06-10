@@ -23,7 +23,7 @@ for i in range(e):
         prefixes.append(f"$! {mm} \cdot o({xn}) = o(  !$")
         inputs[i].sol = s
         inputs[i].set_embed(r"#) \quad [x \rightarrow 0]")
-        solution.append("Test")
+        solution.append(f"Test")
     else :
         var('x')
         n = randint(1, 5)
