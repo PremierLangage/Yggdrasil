@@ -29,7 +29,9 @@ $! o({{X1|latex}}) - o({{X1|latex}}) = o( !$
 solution ==
 $$ o({{X1|latex}}) - o({{X1|latex}}) = o({{ sol|latex }})  .$$
 
-En effet, il faut appliquer ici la règle suivante : $! o(x^n) - o(x^n) = o(x^n) !$.
+Il faut appliquer ici la règle suivante : $! o(x^n) - o(x^n) = o(x^n) !$.
+En effet, la différence de deux petits "o" d'une même puissance n'est bien souvent pas égale à 0, par exemple :
+$$2x^{{n|latex}} = o(x^{{n|latex}}), \quad x^{{n|latex}}=o(x^{{n|latex}}), \quad \text{et } \quad 2x^{{n|latex}} - x^{{n|latex}} = x^{{n|latex}} \neq 0. $$
 ==
 
 latexsettings.order = 'ilex'
