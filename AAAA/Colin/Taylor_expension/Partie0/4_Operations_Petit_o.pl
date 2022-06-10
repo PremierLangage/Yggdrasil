@@ -4,7 +4,7 @@
 
 extends = /model/math/expr.pl
 
-title = Opérations sur les petits "o" : Multiplication par une constante.
+title = Opérations sur les petits "o" : Multiplication par une constante non nulle.
 
 before ==
 var('x')
