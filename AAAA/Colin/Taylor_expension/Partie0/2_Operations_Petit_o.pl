@@ -8,8 +8,8 @@ title = Opérations sur les petits "o" : Produit 1.
 
 before ==
 var('x')
-n = randint(2, 4)
-m = randint(2,4)
+n = randint(1, 5)
+m = randint(1,5)
 sol = x**(n+m)
 ==
 
