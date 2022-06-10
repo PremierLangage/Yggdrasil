@@ -9,7 +9,7 @@ prefixes = []
 for i in range(n):
     prefixes.append(f"Question {i}")
     inputs[i].sol = 0
-    inputs[i].embed = "\sqrt{x} + # + 3"    
+    inputs[i].embed = r"\sqrt{x} + # + 3"    
 ==
 
 question == 
