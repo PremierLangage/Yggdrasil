@@ -10,6 +10,7 @@ before == #|python|
 e = 2
 inputs = [MathInput(type="expr") for _ in range(e)]
 prefixes = []
+solution = []
 
 for i in range(e):
     if i==0 :
@@ -22,6 +23,7 @@ for i in range(e):
         prefixes.append(f"$! {mm} \cdot o({xn}) = o(  !$")
         inputs[i].sol = s
         inputs[i].set_embed(r"#) \quad [x \rightarrow 0]")
+        solution.append("Test")
     else :
         var('x')
         n = randint(1, 5)
