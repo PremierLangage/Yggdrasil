@@ -9,7 +9,7 @@ extends = /model/math/expr.pl
 before ==
 from sympy import series
 var('x')
-n=3
+n=2
 f = choice([cos(x), sin(x)])
 a = choice([pi/6, pi/4, pi/3, pi/2])
 sol = series(f, x, a, n+1).removeO()
