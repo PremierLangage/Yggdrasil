@@ -23,8 +23,8 @@ for i in range(n):
     else :
         a=2
         b=3
-        s = latex(a * b)
-        prefixes.append(f"$! {s} = !$")
+        ss = latex(a * b)
+        prefixes.append(f"$! {ss} = !$")
         inputs[i].sol = a*b
 ==
 
