@@ -25,7 +25,7 @@ for i in range(e):
     s = x**min(n+m,l,k)
     xn = latex(Xn)
     xm = latex(Xm)
-    prefixes.append(f"$! {a} {xn} \cdot {xm} + x^{k} {b} o(x^{l})= o( !$")
+    prefixes.append(f"$! {a} o({xn}) \cdot {xm} + x^{k} {b} o(x^{l})= o( !$")
     inputs[i].sol = s
     inputs[i].set_embed(r"#) \quad [x \rightarrow 0]")
 ==
