@@ -45,8 +45,7 @@ process == #|py|
 from basicinput import process_filledtext
 sol, dropblock, solution = process_filledtext(filledtext, delimiters, "inputfield.drops", "color:green")
 inputfield.set_drops(len(sol))
-inputfield.set_labels(sol)
-inputfield.add_labels(labels)
+inputfield.set_labels(list(set(sol+labels)))
 inputblock =  dropblock + "\n\n" + inputfield.labels_html()
 inputfield.sol = sol
 del dropblock
