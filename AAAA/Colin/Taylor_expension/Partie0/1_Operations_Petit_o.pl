@@ -8,11 +8,11 @@ title = Opérations sur les petits "o" : Somme.
 
 before ==
 var('x')
-n = randint(1, 5)
-m = randint(5,10)
+n = randint(1, 10)
+m = randint(1,10)
 X1 = x**n
 X2 = x**m
-sol = x**n
+sol = x**min(n,m)
 ==
 
 question ==
