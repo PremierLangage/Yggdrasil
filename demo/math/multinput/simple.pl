@@ -16,7 +16,7 @@ def generate(i):
 
 for i in range(n):
     prefix, sol = generate(types[i])
-    prefixes.append(prefix)
+    prefixes.append("Question" + prefix)
     inputs[i].sol = sol
     inputs[i].set_embed(r"# + o(x^3) \quad [x \rightarrow 0]")  
 ==
