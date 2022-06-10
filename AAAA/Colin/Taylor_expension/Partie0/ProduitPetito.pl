@@ -14,7 +14,7 @@ prefixes = []
 for i in range(e):
     if i==0 :
         var('x')
-        n = randint(2, 6)
+        n = latex(randint(2, 6))
         m = randint(-10,10,[0])
         s = x**n
         prefixes.append(f"$! {m} \times o(x^{n}) = o(  !$")
