@@ -20,8 +20,8 @@ for i in range(e):
     S=n+m
     a=randint(2,10)
     b=randint(-10,-2)
-    l=randint(2,8)
-    k=randint(2,8)
+    l=randint(2,7)
+    k=randint(8,11)
     s = x**min(n+m,l,k)
     xn = latex(Xn)
     xm = latex(Xm)
