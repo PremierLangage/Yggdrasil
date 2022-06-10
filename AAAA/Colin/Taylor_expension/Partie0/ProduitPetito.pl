@@ -18,6 +18,8 @@ for i in range(e):
         m = randint(-10,10,[0])
         s = x**n
         prefixes.append(f"$! {{m|latex}} \times o(x^{{n|latex}}) = o(  !$")
+        inputs[i].sol = s
+        inputs[i].set_embed(r"#) \quad [x \rightarrow 0]")
     else :
         var('x')
         n = randint(1, 10)
