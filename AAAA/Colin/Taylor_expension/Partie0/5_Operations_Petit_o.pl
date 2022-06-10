@@ -15,7 +15,7 @@ Xm = x**m
 S=n+m
 a=randint(2,10)
 b=randint(-10,-2)
-l=randint(11,8)
+l=randint(8,11)
 k=randint(2,7)
 sol = x**min(n+m,l)
 ==
