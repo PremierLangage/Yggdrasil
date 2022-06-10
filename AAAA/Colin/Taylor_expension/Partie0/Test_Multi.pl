@@ -16,7 +16,7 @@ for i in range(n):
         X11 = latex(X1)
         X2 = x**m
         X22 = latex(X2)
-        prefixes.append(f"$! {X11} \cdot {X22}  !$")
+        prefixes.append(f"$! o({X11}) + o({X22})  !$")
         inputs[i].sol = X1 * X2
     else :
         a=2
