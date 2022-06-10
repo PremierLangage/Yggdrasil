@@ -1,5 +1,7 @@
 extends = /model/math/set.pl
 
+title = Intersection d'ensembles
+
 before ==
 from sympy import Intersection
 A = FiniteSet(*sampleint(1, 9, randint(3, 5)))
