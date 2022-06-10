@@ -20,7 +20,7 @@ Ecrire le développement limité de $! {{ f|latex }} !$ autour de $! {{a|latex}}
 ==
 
 embed ==
-# + o(x^{{ n|latex }}) \quad [$!x \rightarrow {{a|latex}}!$]
+# + o(x^{{ n|latex }}) \quad [x \rightarrow {{a|latex}}]
 ==
 
 prefix ==
