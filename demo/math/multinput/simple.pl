@@ -3,7 +3,7 @@ extends = /model/math/multimathinput.pl
 title = Nombres Complexes
 
 before == #|python|
-n = 3
+n = 4
 inputs = [MathInput(type="expr") for _ in range(n)]
 prefixes = []
 
