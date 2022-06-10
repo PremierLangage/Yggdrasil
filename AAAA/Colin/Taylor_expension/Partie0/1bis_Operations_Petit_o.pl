@@ -11,6 +11,7 @@ var('x')
 n = randint(1, 10)
 m=n+1
 X1 = x**n
+X2 = x**m
 sol = x**n
 ==
 
