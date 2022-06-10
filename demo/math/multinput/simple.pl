@@ -7,7 +7,7 @@ n = 3
 inputs = [MathInput(type="expr") for _ in range(n)]
 prefixes = []
 for i in range(n):
-        prefixes.append(f"Question {i}")
+    prefixes.append(f"Question {i}")
     inputs[i].sol = 0
     inputs[i].embed = "\sqrt{x} + # + 3"    
 ==
