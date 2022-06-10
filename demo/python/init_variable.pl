@@ -4,6 +4,7 @@ title = Initialisation variable
 
 text ==
 Créer une variable `X` contenant la chaîne `toto`.
+<br>
 ==
 
 grader==#|python|
