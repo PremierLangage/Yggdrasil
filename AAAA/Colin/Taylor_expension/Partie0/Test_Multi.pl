@@ -12,8 +12,8 @@ for i in range(n):
         var('x')
         n = randint(1, 10)
         m = randint(1,10)
-        X1 = latex(x**n)
-        X2 = latex(x**m)
+        X1 = x**n
+        X2 = x**m
         prefixes.append(f"$! {X1} * {X2} !$")
         inputs[i].sol = X1 * X2
     else :
