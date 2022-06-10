@@ -1,5 +1,8 @@
 extends = /model/math/expr.pl
 
+title = Limite d'une fraction rationnelle
+
+
 before ==
 from sympy import Limit
 var('x')
