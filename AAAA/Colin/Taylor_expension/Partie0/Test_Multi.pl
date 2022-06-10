@@ -13,6 +13,7 @@ for i in range(n):
         n = randint(1, 10)
         m = randint(1,10)
         X1 = x**n
+        X11 = latex(X1)
         X2 = x**m
         s=X1 * X2
         prefixes.append(f"$! {s} !$")
