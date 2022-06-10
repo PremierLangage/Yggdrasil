@@ -14,7 +14,7 @@ for i in range(n):
         s = latex(a * b)
         prefixes.append(f"$! {s} = !$")
         inputs[i].sol = a*b
-    else
+    else :
         a=2
         b=3
         s = latex(a * b)
