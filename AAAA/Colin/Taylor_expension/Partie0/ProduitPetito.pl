@@ -7,23 +7,17 @@ extends = /model/math/multimathinput.pl
 title = Opérations sur les petits "o" : Produit
 
 before == #|python|
-e = 2
+e = 3
 inputs = [MathInput(type="expr") for _ in range(e)]
 prefixes = []
 
 for i in range(e):
     if i==0 :
         var('x')
-        n = randint(1, 10)
-        m = randint(1,10)
-        X1 = x**n
-        X11 = latex(X1)
-        X2 = x**m
-        X22 = latex(X2)
-        s = x**min(n,m)
-        prefixes.append(f"$! o({X11}) + o({X22}) = o( !$")
-        inputs[i].sol = s
-        inputs[i].set_embed(r"#) \quad [x \rightarrow 0]")
+        n = randint(2, 6)
+        m = randint(-10,10,[0])
+        s = x**n
+        prefixes.append(f"$! {{m|latex}} \times o(x^{{n|latex}}) = o(  !$")
     else :
         var('x')
         n = randint(1, 10)
@@ -39,7 +33,7 @@ for i in range(e):
 ==
 
 question == 
-Simplifier l'expression ci-dessous (pour $!x!$ qui tend vers $! 0 !$) en l'écrivant sous la forme
+Simplifier les expressions ci-dessous (pour $!x!$ qui tend vers $! 0 !$) en les écrivant sous la forme
  $! o(x^n) !$ avec $! n \in \mathbb N !$ le plus grand possible.
 ==
 
