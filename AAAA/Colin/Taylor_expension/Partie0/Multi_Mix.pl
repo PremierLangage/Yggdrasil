@@ -22,7 +22,7 @@ for i in range(e):
     b=randint(-10,-2)
     l=randint(11,8)
     k=randint(2,7)
-    s = x**min(n+m,l,k)
+    s = x**min(n+m,l)
     xn = latex(Xn)
     xm = latex(Xm)
     prefixes.append(f"$! {a} o({xn}) \cdot {xm} + x^{k} {b} o(x^{l})= o( !$")
