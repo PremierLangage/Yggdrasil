@@ -10,8 +10,8 @@ before ==
 from sympy import series
 var('x')
 n=2
-f = choice([exp(1/x), ln(1+1/x) , ln(1- 1/x), 1/(1+1/x) , 1/(1-1/x), 1/(1+1/x**2), 1/(1-1/x**2), sqrt(1+1/x), 1/sqrt(1+1/x), sqrt(1-1/x), 1/sqrt(1-1/x)])
-a=choice([oo,-oo])
+f = choice(ln(1+x)-ln(x) , ln(x-1)-ln(x), 1/(1+x), x/(x+1), x/(x-1), 1/(1+x**2), 1/(x**2-1), x**2/(1+x**2), x/(1+x**2), sqrt(1+x), sqrt(x-1), 1/sqrt(1+x), 1/sqrt(x-1)])
+a=choice([oo])
 sol = series(f, x, a, n+1).removeO()
 ==
 
