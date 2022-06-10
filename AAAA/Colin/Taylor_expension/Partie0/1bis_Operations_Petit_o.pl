@@ -9,7 +9,7 @@ title = Opérations sur les petits "o" : Somme.
 before ==
 var('x')
 n = randint(1, 10)
-X1 = x^n
+X1 = x**n
 sol = x**n
 ==
 
