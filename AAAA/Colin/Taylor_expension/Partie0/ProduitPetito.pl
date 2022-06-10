@@ -19,7 +19,7 @@ for i in range(e):
         s = x**n
         xn = latex(s)
         mm = latex(m)
-        prefixes.append(f"$! {mm} \times o({xn}) = o(  !$")
+        prefixes.append(f"$! {mm} \cdot o({xn}) = o(  !$")
         inputs[i].sol = s
         inputs[i].set_embed(r"#) \quad [x \rightarrow 0]")
     else :
