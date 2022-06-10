@@ -9,7 +9,7 @@ title = Opérations sur les petits "o" : Multiplication par une constante.
 before ==
 var('x')
 n = randint(2, 6)
-m = randint(1,20)
+m = randint(-10,10,[0])
 sol = x**n
 ==
 
