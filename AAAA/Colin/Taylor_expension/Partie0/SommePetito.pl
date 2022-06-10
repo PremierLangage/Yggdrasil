@@ -1,6 +1,6 @@
 extends = /model/math/multimathinput.pl
 
-title = Somme de petit "o"
+title = Opérations sur les petits "o" : Somme et Différence.
 
 before == #|python|
 e = 2
