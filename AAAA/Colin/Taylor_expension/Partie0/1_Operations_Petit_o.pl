@@ -8,8 +8,8 @@ title = Opérations sur les petits "o" : Somme.
 
 before ==
 var('x')
-n = randint(1, 3)
-m = randint(4,6)
+n = randint(1, 5)
+m = randint(5,10)
 X1 = x**n
 X2 = x**m
 sol = x**n
@@ -17,7 +17,7 @@ sol = x**n
 
 question ==
 Simplifier l'expression ci-dessous (pour x qui tend vers $! 0 !$) en l'écrivant sous la forme
- $! o(x^n) !$ pour un $! n !$ bien choisi.
+ $! o(x^n) !$ avec $! n \in \mathbb N !$ le plus grand possible.
 ==
 
 embed ==
