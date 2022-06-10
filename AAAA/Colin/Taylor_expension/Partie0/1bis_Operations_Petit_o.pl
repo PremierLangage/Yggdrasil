@@ -4,7 +4,7 @@
 
 extends = /model/math/expr.pl
 
-title = Opérations sur les petits "o" : Somme.
+title = Opérations sur les petits "o" : Différence.
 
 before ==
 var('x')
