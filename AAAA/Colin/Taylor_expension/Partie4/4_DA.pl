@@ -31,7 +31,7 @@ solution ==
 $! {{ f|latex }} = {{ sol|latex }} + o(1/x^{{ n|latex }})  \quad [x \rightarrow {{a|latex}}]!$.
 ==
 
-latexsettings.order = 'ilex'
+# latexsettings.order = 'ilex'
 
 
 
