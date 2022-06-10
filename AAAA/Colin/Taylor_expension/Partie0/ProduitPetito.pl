@@ -14,10 +14,12 @@ prefixes = []
 for i in range(e):
     if i==0 :
         var('x')
-        n = latex(randint(2, 6))
+        n = randint(2, 6)
         m = randint(-10,10,[0])
         s = x**n
-        prefixes.append(f"$! {m} \times o(x^{n}) = o(  !$")
+        xn = latex(s)
+        mm = latex(m)
+        prefixes.append(f"$! {mm} \times o({xn}) = o(  !$")
         inputs[i].sol = s
         inputs[i].set_embed(r"#) \quad [x \rightarrow 0]")
     else :
