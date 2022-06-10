@@ -1,5 +1,7 @@
 extends = /model/math/interval.pl
 
+title = Intervalles
+
 keypad = ["-infty", "+infty"]
 
 before ==
