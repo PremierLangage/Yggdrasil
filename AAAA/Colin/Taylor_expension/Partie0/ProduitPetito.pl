@@ -24,15 +24,13 @@ for i in range(e):
         inputs[i].set_embed(r"#) \quad [x \rightarrow 0]")
     else :
         var('x')
-        n = randint(1, 10)
-        m=n+1
-        Y1 = x**n
-        Y11=latex(Y1)
-        Y2 = x**m
-        Y22=latex(Y2)
-        ss = x**n
-        prefixes.append(f"$! o({Y11}) - o({Y11}) = o( !$")
-        inputs[i].sol = ss
+        n = randint(1, 5)
+        m = randint(1,5)
+        s = x**(n+m)
+        xn = latex(x**n)
+        xm = latex(x**m)
+        prefixes.append(f"$! {xn} \times o({xm}) = o(  !$")
+        inputs[i].sol = s
         inputs[i].set_embed(r"#) \quad [x \rightarrow 0]")
 ==
 
@@ -41,15 +39,5 @@ Simplifier les expressions ci-dessous (pour $!x!$ qui tend vers $! 0 !$) en les 
  $! o(x^n) !$ avec $! n \in \mathbb N !$ le plus grand possible.
 ==
 
-solution ==
-$$ o({{X1|latex}}) + o({{X2|latex}}) = o({{ s|latex }})  .$$
-
-En effet, il faut appliquer ici la règle suivante : Si $! n \leq m!$ alors $! o(x^n) + o(x^m) = o(x^n) !$.
-$$ o({{Y1|latex}}) - o({{Y1|latex}}) = o({{ ss|latex }})  .$$
-
-Il faut appliquer ici la règle suivante : $! o(x^n) - o(x^n) = o(x^n) !$.
-En effet, la différence de deux petits "o" d'une même puissance n'est bien souvent pas égale à 0. Par exemple :
-$$2{{Y2|latex}} = o({{Y1|latex}}), \quad {{Y2|latex}} = o({{Y1|latex}}), \quad \text{et } \quad 2{{Y2|latex}} - {{Y2|latex}} = {{Y2|latex}} \neq 0.$$
-==
 
 latexsettings.order = 'ilex'
