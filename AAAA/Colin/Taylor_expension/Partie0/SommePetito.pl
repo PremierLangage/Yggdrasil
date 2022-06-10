@@ -39,7 +39,7 @@ for i in range(e):
 ==
 
 question == 
-Simplifier l'expression ci-dessous (pour $!x!$ qui tend vers $! 0 !$) en l'écrivant sous la forme
+Simplifier les expressions ci-dessous (pour $!x!$ qui tend vers $! 0 !$) en les écrivant sous la forme
  $! o(x^n) !$ avec $! n \in \mathbb N !$ le plus grand possible.
 ==
 
