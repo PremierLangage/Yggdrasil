@@ -14,8 +14,9 @@ for i in range(n):
         m = randint(1,10)
         X1 = x**n
         X2 = x**m
-        prefixes.append(f"o({{X1|latex}}) + o({{X2|latex}}) = o(")
-        inputs[i].sol = x**min(n,m)
+        s=latex(X1 * X2)
+        prefixes.append(f"$! {s} !S")
+        inputs[i].sol = X1 * X2
     else :
         a=2
         b=3
