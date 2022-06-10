@@ -2,7 +2,7 @@
 # Sujet : Développements Limités - Manipuler les formules de références 1
 # Maj : 10/06/2022
 
-title = Développements asymptotiques 1. 
+title = Développements asymptotiques 2. 
 
 extends = /model/math/expr.pl
 
