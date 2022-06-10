@@ -7,7 +7,7 @@ extends = /model/math/multimathinput.pl
 title = Opérations sur les petits "o" : Produit
 
 before == #|python|
-e = 2
+e = 3
 inputs = [MathInput(type="expr") for _ in range(e)]
 prefixes = []
 
@@ -22,7 +22,7 @@ for i in range(e):
         prefixes.append(f"$! {mm} \cdot o({xn}) = o(  !$")
         inputs[i].sol = s
         inputs[i].set_embed(r"#) \quad [x \rightarrow 0]")
-    else :
+    if i==1 :
         var('x')
         n = randint(1, 5)
         m = randint(1,5)
@@ -30,6 +30,16 @@ for i in range(e):
         xn = latex(x**n)
         xm = latex(x**m)
         prefixes.append(f"$! {xn} \cdot o({xm}) = o(  !$")
+        inputs[i].sol = s
+        inputs[i].set_embed(r"#) \quad [x \rightarrow 0]")
+    else :
+        var('x')
+        n = randint(1,5)
+        m = randint(1,5)
+        s = x**(n+m)
+        xn = latex(x**n)
+        xm = latex(x**m)
+        prefixes.append(f"$! o({xn}) \cdot o({xm}) = o(  !$")
         inputs[i].sol = s
         inputs[i].set_embed(r"#) \quad [x \rightarrow 0]")
 ==
