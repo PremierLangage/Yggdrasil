@@ -4,6 +4,8 @@ introduction ==
 Quelques exemples d'exercices de mathématiques.
 ==
 
+@ /demo/math/expr/derivative.pl
+
 @ /demo/math/complex/complex_mul.pl
 
 @ /demo/math/expr/abstract_linear_equation.pl
