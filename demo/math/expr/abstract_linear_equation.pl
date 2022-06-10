@@ -1,5 +1,7 @@
 extends = /model/math/expr.pl
 
+title = Exprimer une variable en fonction d'une autre
+
 before ==
 var('x y')
 a = randint(-5, 5, [0])
