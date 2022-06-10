@@ -9,11 +9,13 @@ prefixes = []
 
 for i in range(n):
     if i==0 :
-        a=1
-        b=2
-        s = latex(a * b)
-        prefixes.append(f"$! {s} = !$")
-        inputs[i].sol = a*b
+        var('x')
+        n = randint(1, 10)
+        m = randint(1,10)
+        X1 = x**n
+        X2 = x**m
+        prefixes.append(f"o({{X1|latex}}) + o({{X2|latex}}) = o(")
+        inputs[i].sol = x**min(n,m)
     else :
         a=2
         b=3
