@@ -7,7 +7,7 @@ extends = /model/math/multimathinput.pl
 title = Opérations sur les petits "o" : Produit
 
 before == #|python|
-e = 3
+e = 2
 inputs = [MathInput(type="expr") for _ in range(e)]
 prefixes = []
 
