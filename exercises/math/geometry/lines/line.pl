@@ -23,3 +23,5 @@ var pt1 = board.create('point', [-2, -2], {color:'blue', name: 'A', size: 0.5, w
 var pt2 = board.create('point', [2, 2], {color:'blue', name: 'B', size: 0.5, withLabel: false});
 var line = board.create('line', [pt1, pt2], {color:'blue'});
 ==
+
+tol = 0.15
