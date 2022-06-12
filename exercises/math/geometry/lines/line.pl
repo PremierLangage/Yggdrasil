@@ -1,6 +1,6 @@
 extends = /model/jxg/line.pl
 
-title = Tracer un vecteur
+title = Droite
 
 before ==
 a = choice([-1, 1])*choice([1, 2, 3, Rational(1,2), Rational(1,3), Rational(3,2)])
