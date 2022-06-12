@@ -1,53 +1,28 @@
 extends = /model/jxg/line.pl
 
-settings.feedback = rightwrong
-
 title = Droite
 
-jxg =: MathDrawer
-jxg.decorator = CustomJSXGraph
-
-jxg.attributes % {"showNavigation":false, "boundingbox":[-6,6,6,-6]}
-
 before ==
-a=randint(-4,4,[0])
-b=randint(-4,4,[0])
-x=symbols('x')
-f=a*x+b
-
-jxg.setscript(script_init)
+a = choice([-1, 1])*choice([1, 2, 3, Rational(1,2), Rational(1,3), Rational(3,2)])
+b = randint(-3, 3,[0])
+var('x')
+f = a*x+b
+sol = [[0,b], [1, a+b]]
 ==
 
-script_init ==
-var A = board.create('point',[1,1],{size:2,name:'A',color:'blue',withLabel:false});
-var B = board.create('point',[-1,-1],{size:2,name:'B',color:'blue',withLabel:false});
-var line = board.create('line',[A,B]);
+
+question ==
+Tracer la droite d'équation $! y = {{f|latex}} !$.
 ==
 
-text ==
-Tracer la droite d'équation $! y = {{f.latex}} !$.
+
+attributes = {"showNavigation": False, "boundingbox":[-6, 6, 6, -6]}
+
+jxgscript == #|js|
+var pt1 = board.create('point', [-2, -2], {color:'blue', name: 'A', size: 0.5, withLabel: false});
+var pt2 = board.create('point', [2, 2], {color:'blue', name: 'B', size: 0.5, withLabel: false});
+var line = board.create('line', [pt1, pt2], {color:'blue'});
 ==
 
-form ==
-{{ jxg | component }}
-==
-
-script_wrong ==
-var linesol = board.create('line',[[0,{{b}}],[1,{{a}}+{{b}}]],{color:'green'});
-==
-
-evaluator ==
-xA, yA = jxg.getpoint('A')
-xB, yB = jxg.getpoint('B')
-
-ansa = (yA-yB)/(xA-xB)
-ansb = yB-ansa*xB
-if equal_approx(atan2(ansa,1), atan2(a,1), 0.1, modulo=pi) and abs(ansb-b)<0.15:
-    score = 100
-else:
-    score = 0
-    jxg.addscript(script_wrong,globals())
-
-jxg.disabled = True
-==
+tol = 0.15
 
