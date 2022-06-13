@@ -11,10 +11,10 @@ Donner un entier multiple de {{k}}, compris entre {{ a }} et {{ b }} (inclus).
 ==
 
 evaluator ==
-if input.value % k != 0:
+if inputfield.value % k != 0:
     score = 0
     feedback = "Ce nombre n'est pas un multiple de " + str(k) + "."
-elif input.value < a or input.value > b:
+elif inputfield.value < a or inputfield.value > b:
     score = 0
     feedback = f"Ce nombre n'est pas compris entre {a} et {b}."
 else:
