@@ -2,10 +2,8 @@ extends = /model/basic/textinput.pl
 
 
 before ==
-f = open('pays_europe.csv')
-row = csv_choice(f)
-capitale = row['capitale']
-sol = row['pays']
+color = blue
+sol = blue
 ==
 
 question ==
