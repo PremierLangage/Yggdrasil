@@ -1,8 +1,8 @@
 extends = /model/basic/textinput.pl
 
 before ==
-color = "blue"
-sol = "blue"
+color = choice(["blue", "red", "green", "yellow"])
+sol = color
 ==
 
 question ==
