@@ -324,7 +324,7 @@ class NumInput(SingleComponent):
             self.score = 0
         return self.score
 
-        def display_feedback(self):
+    def display_feedback(self):
         """Display the feedback of the input field."""
         score = self.score
         msg = self.feedback
