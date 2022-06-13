@@ -324,7 +324,19 @@ class NumInput(SingleComponent):
             self.score = 0
         return self.score
 
-    def display_feedback(self):
+        def display_feedback(self):
+        """Display the feedback of the input field."""
+        score = self.score
+        msg = self.feedback
+        if score == 100:
+            self.data['suffix'] = r'<i class="fas fa-check" style="margin-left: 0.5em; color: #43A047"></i>'
+        elif score == -1:
+            self.data['suffix'] = rf"""<i class="fas fa-exclamation-circle" style="margin-left: 0.5em; color: #FFB300; cursor: pointer;" data-toggle="popover" data-placement="bottom" data-content="{msg}"></i>"""
+        else:
+            self.data['suffix'] = rf"""<i class="fas fa-times" style="margin-left: 0.5em; color: #E53935; cursor: pointer;" data-toggle="popover" data-placement="bottom" data-content="{msg}"></i>"""
+    
+
+    def display_feedback2(self):
         """
         Display the visual feedback of the input field.
         """
