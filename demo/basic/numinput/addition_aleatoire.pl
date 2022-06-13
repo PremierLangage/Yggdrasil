@@ -2,7 +2,7 @@ extends = /model/basic/numinput.pl
 
 
 # Creation d'exercice 
-before ==
+before == #|py|
 # TIRAGE ALEATOIRE
 a = randint(10, 50)
 b = randint(10, 50)
@@ -12,5 +12,5 @@ sol = a + b
 ==
 
 question ==
-Calculer {{ a }} + {{ b }}.
+Calculer {{a }} + {{ a + b }} + {{ b }}.
 ==
