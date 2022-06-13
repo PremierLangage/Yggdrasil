@@ -12,5 +12,5 @@ sol = a + b
 ==
 
 question ==
-Calculer {{a }} + {{ a + b }} + {{ b }}.
+Calculer {{ a }} + {{ b }}.
 ==
