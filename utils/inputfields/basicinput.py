@@ -11,6 +11,9 @@ class SingleComponent(Serializable):
         """
         self.data['disabled'] = True
 
+    def get_value(self):
+        return self.data['value']
+
     def render(self):
         """
         Return the HTML code of the input field.
