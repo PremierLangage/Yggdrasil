@@ -5,7 +5,8 @@ title = Dérivation
 before ==
 var('x')
 g = choice([sin(x), cos(x), exp(x)])
-h = choice([x, x**2])
+n = randint(1,5)
+h = choice([x, x**n])
 f = g * h
 sol = diff(f, x)
 ==
