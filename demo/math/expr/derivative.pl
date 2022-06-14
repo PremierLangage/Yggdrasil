@@ -4,10 +4,10 @@ title = Dérivation
 
 before ==
 var('x')
-g = choice([sin(x), cos(x), exp(x)])
-n = randint(2, 5)
+g = choice([sin, cos, exp])
+n = randint(5, 10)
 h = choice([x, x**n])
-f = g * h
+f = g(x) * h
 sol = diff(f, x)
 ==
 
