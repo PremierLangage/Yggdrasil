@@ -4,17 +4,6 @@
 import sys, json, jsonpickle
 from sandboxio import get_context
 
-class StopBeforeExec(Exception):
-    pass
-
-
-def add_try_clause(code, excpt):
-    """Add a try/except clause, excepting 'excpt' around code."""
-    code = code.replace('\t', '    ')
-    return ("try:\n    ...\n" + '\n'.join(["    " + line for line in code.split('\n')])
-            + "\nexcept " + excpt.__name__ + ":\n    pass")
-
-
 if __name__ == "__main__":
     if len(sys.argv) < 3:
         msg = ("Sandbox did not call builder properly:\n"
@@ -27,8 +16,6 @@ if __name__ == "__main__":
 
     if 'before' in dic:
         glob = {}
-        #dic['StopBeforeExec'] = StopBeforeExec
-        #exec(add_try_clause(dic['before'], StopBeforeExec), dic)
         exec(dic['before'],dic)
         exec("", glob)
         for key in glob:
