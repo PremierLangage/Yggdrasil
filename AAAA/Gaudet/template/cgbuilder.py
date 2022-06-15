@@ -48,6 +48,7 @@ if __name__ == "__main__":
               file = sys.stderr)
         sys.exit(1)
 
+    # save json
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(context, unpicklable=False))
     
