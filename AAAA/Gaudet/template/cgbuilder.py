@@ -39,6 +39,8 @@ if __name__ == "__main__":
     if 'before' in context:
         glob = {}
         exec(context['before'],context)
+
+        # Remove keys related to general execution context
         exec("", glob)
         for key in glob:
             if key in context and context[key] == glob[key]:
