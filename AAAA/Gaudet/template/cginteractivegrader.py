@@ -41,7 +41,7 @@ async def runtests(cmd, feedback, testcases):
     tests_total = 0
     tests_success = 0
     for testcase in testcases:
-        tests_totals += 1
+        tests_total += 1
         testargs, testname = testcase
         result = await test(cmd, feedback, *testargs)
         if result:
