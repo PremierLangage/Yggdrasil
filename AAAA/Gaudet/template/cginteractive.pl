@@ -2,7 +2,7 @@
 # Ceci est un template pour faire des exercices avec la balise de correction cgtest
 # Il s'agit d'une adaptation du template pltest
 doc==
-La liste des langages utilisables actuellement est : c, cpp, python, java
+La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
 ==
 grader  =@ ./cginteractivegrader.py
 builder =@ ./cgbuilder.py
