@@ -8,18 +8,7 @@ from asyncio import run
 from ast import literal_eval
 from feedback2 import FeedBack
 
-from sandboxio import output, get_context, get_answers
-
-def parseTestcases(testcases):
-    result = []
-    for testcase in testcases.strip().split('\n'):
-        if '#' in testcase:
-            args, name = testcase.split('#')
-        else:
-            args = testcase
-            name = 'Test sans nom'
-        result.append((literal_eval(args.strip()), name.strip()))
-    return result
+from sandboxio import output, get_context, get_answer
 
 async def test(cmd, feedback, *args):
     """Lance un test
