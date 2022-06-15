@@ -12,7 +12,7 @@ Recherche dichotomique
 languages==
 ==
 
-evalscript==
+evalscript==#|py|
 from random import randrange
 from math import log, ceil
 
