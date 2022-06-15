@@ -19,9 +19,6 @@ if __name__ == "__main__":
     editor = context['editor']
 
     student_code = response[editor.cid]['code']
-    if 'cgtest' not in globals() :
-        print('cgtest missing, please specify tests to run', file=sys.stderr)
-        sys.exit(1)
 
     feedback = ''
 
