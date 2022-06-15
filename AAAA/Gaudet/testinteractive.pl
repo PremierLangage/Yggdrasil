@@ -40,6 +40,6 @@ async def evalscript(student, N, n):
 testcases==
 (100, 0) # Valeur basse
 (100, 99) # Valeur haute
-(100, 49) # Valeur eu milieu
+(100, 49) # Valeur au milieu
 (1000000000, 43257) # N tres grand
 ==
