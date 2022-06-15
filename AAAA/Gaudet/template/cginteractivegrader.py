@@ -49,9 +49,9 @@ async def runtests(cmd, feedback, testcases):
         testargs, testname = testcase
         result = await test(cmd, feedback, *testargs)
         if result:
-            feedback.addTestSuccess('wesh', 'pass', 'pass')
+            feedback.addTestSuccess(testname, 'pass', 'pass')
         else:
-            feedback.addTestFailure('wesh', 'fail', 'pass')
+            feedback.addTestFailure(testname, 'fail', 'pass')
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
