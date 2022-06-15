@@ -72,7 +72,7 @@ if __name__ == "__main__":
     # Compilation
     success, compile_feedback = handler.compile()
     if not success:
-        feedback.addTestSyntaxError('Compilation', 'La compilation du code a échoué', compile_feedback)
+        feedback.addTestSyntaxError('Compilation', compile_feedback, 'La compilation du code a échoué')
         output(0, feedback.render(), context)
         sys.exit(1)
     
