@@ -3,7 +3,7 @@ extends = /ComputerScience/python/template/pltest.pl
 
 @sol.py [build.py]
 @ennonce.md
-@data
+@data [exemple]
 
 title= Pas le temps pour prendre un taxi
 
