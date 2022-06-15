@@ -44,6 +44,7 @@ if __name__ == "__main__":
         print(msg, file=sys.stderr)
         sys.exit(1)
     
+    # Get all required data from context
     context = get_context()
     response = get_answers()
     editor = context['editor']
