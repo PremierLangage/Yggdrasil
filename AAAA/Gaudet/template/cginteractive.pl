@@ -7,10 +7,10 @@ La liste des langages utilisables actuellement est : c, cpp, python, java
 grader  =@ ./cginteractivegrader.py
 builder =@ ./cgbuilder.py
 
-@ ./utils/cgtest.py
 @ ./utils/feedback2.py
 @ ./utils/template.html
 @ ./utils/langhandlers.py
+@ ./utils/cginteractive.py
 @ /utils/sandboxio.py
 
 settings.allow_reroll = 1
