@@ -34,7 +34,7 @@ async def test(cmd, *args):
 
 async def runtests(cmd, testcases):
     for testcase in testcases:
-        result, feedback = await test(*testcase)
+        result, feedback = await test(cmd, *testcase)
         if result:
             print("Success", file=sys.stderr)
         else:
