@@ -95,6 +95,6 @@ if __name__ == "__main__":
     testcases = parseTestcases(testcases)
 
     # Run tests
-    run(runtests(handler.exec_cmd, testcases))
+    run(runtests(handler.exec_cmd, feedback, testcases))
     
     output(100, feedback, context)
