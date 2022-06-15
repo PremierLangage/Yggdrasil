@@ -12,15 +12,15 @@ if __name__ == "__main__":
         sys.exit(1)
     output_json = sys.argv[2]
     
-    dic = get_context()
+    context = get_context()
 
-    if 'before' in dic:
+    if 'before' in context:
         glob = {}
-        exec(dic['before'],dic)
+        exec(context['before'],context)
         exec("", glob)
         for key in glob:
-            if key in dic and dic[key] == glob[key]:
-                del dic[key]
+            if key in context and context[key] == glob[key]:
+                del context[key]
     else:
         print(("Builder 'before' need a script declared in the key 'before'. "
                + "See documentation related to this builder."),
@@ -28,6 +28,6 @@ if __name__ == "__main__":
         sys.exit(1)
 
     with open(output_json, "w+") as f:
-        f.write(jsonpickle.encode(dic, unpicklable=False))
+        f.write(jsonpickle.encode(context, unpicklable=False))
     
     sys.exit(0)
