@@ -100,7 +100,7 @@ if __name__ == "__main__":
     testcases = eval(testcases)
 
     # Run tests
-    run(runtests(handler.exec_cmd, feedback, testcases))
+    score = run(runtests(handler.exec_cmd, feedback, testcases))
     
     # Write result to context and serialise to output JSON
-    output(100, feedback.render(), context)
+    output(score, feedback.render(), context)
