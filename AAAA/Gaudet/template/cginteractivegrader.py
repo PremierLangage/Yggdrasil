@@ -2,6 +2,8 @@
 # coding: utf-8
 
 import sys, json, jsonpickle, time
+from cgtest import CodingGamesTestRunner
+import langhandlers
 
 from sandboxio import output, get_context, get_answers
 
