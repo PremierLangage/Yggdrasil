@@ -12,11 +12,11 @@ def parseTestcases(testcases):
         result.append(literal_eval(testcase.strip()))
     return result
 
-async def test(*args):
+async def test(cmd, *args):
     result = False
     feedback = ''
 
-    student = CGInteractiveBinary(['./dicho'])
+    student = CGInteractiveBinary(cmd)
     await student.start()
 
     try:
