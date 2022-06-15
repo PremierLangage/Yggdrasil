@@ -50,6 +50,10 @@ if __name__ == "__main__":
 
     student_code = response[editor.cid]['code']
 
+    if evalscript not in context:
+        print("evalscript is not defined, please supply an evalscript", file=sys.stderr)
+        sys.exit(1)
+
     feedback = ''
 
     # Get language used and the corresponding handler
