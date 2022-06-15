@@ -17,6 +17,11 @@ def parseTestcases(testcases):
     return result
 
 async def test(cmd, feedback, *args):
+    """Lance un test
+        @param cmd commande pour lancer l'exécutable correspondant au programme soumis par l'étudiant
+        @param feedback objet de type FeedBack pour y inscrire le résultat du test
+        @param args arguments à ajouter à l'appel du script d'évaluation écrit par le professeur
+    """
     result = False
     feedback = ''
 
