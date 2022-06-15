@@ -49,6 +49,7 @@ async def runtests(cmd, feedback, testcases):
     """
     for testcase in testcases:
         testargs, testname = testcase
+        print(testargs, file=sys.stderr)
         result = await test(cmd, feedback, *testargs)
         if result:
             feedback.addTestSuccess(testname, 'pass', 'pass')
