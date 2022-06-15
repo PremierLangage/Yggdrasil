@@ -13,9 +13,8 @@ text==
 
 La liste des informations est dans le fichier "data" .
 
-Comme d'habitude vous avez un fichier "exemple" pour lequel les bonnes reponses sont  
-Question1 : 654,  
-Question2 : 57
+Comme d'habitude vous avez un fichier "exemple" pour lequel la bonne reponse est  
+Question : 
 
 
 ==
