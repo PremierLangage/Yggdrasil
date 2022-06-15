@@ -19,7 +19,7 @@ def parseTestcases(testcases):
         result.append(literal_eval(args.strip()), name.strip())
     return result
 
-async def test(cmd, feedback, *args):
+async def test(cmd, feedback, testcase):
     """Lance un test
         @param cmd commande pour lancer l'exécutable correspondant au programme soumis par l'étudiant
         @param feedback objet de type FeedBack pour y inscrire le résultat du test
@@ -27,12 +27,13 @@ async def test(cmd, feedback, *args):
         @return True si le test est passé, False sinon
     """
     result = False
+    testargs, testname = testcase
 
     student = CGInteractiveBinary(cmd)
     await student.start()
 
     try:
-        result = await evalscript(student, testcase)
+        result = await evalscript(student, *args)
     except InvalidCGBinaryExecution as err:
         result = False
 
