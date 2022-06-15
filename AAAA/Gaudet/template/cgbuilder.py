@@ -35,6 +35,7 @@ if __name__ == "__main__":
     context['editor'].language = required_languages[0]
 
     # Execute 'before' script
+    """
     if 'before' in context:
         glob = {}
         exec(context['before'],context)
@@ -46,7 +47,7 @@ if __name__ == "__main__":
         print(("Builder 'before' need a script declared in the key 'before'. "
                + "See documentation related to this builder."),
               file = sys.stderr)
-        sys.exit(1)
+        sys.exit(1)"""
 
     # save json
     with open(output_json, "w+") as f:
