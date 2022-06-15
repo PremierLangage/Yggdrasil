@@ -32,7 +32,7 @@ async def test(cmd, *args):
     await student.stop()
     return result, feedback
 
-async def runtests(testcases):
+async def runtests(cmd, testcases):
     for testcase in testcases:
         result, feedback = await test(*testcase)
         if result:
