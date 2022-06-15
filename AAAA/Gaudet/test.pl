@@ -1,4 +1,4 @@
-extends= template/cgbasic.pl
+extends= template/cginteractive.pl
 
 author=CG
 title=Test
