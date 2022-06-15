@@ -64,8 +64,6 @@ if __name__ == "__main__":
         sys.exit(1)
     testcases = context['testcases']
 
-    feedback = ''
-
     # Get language used and the corresponding handler
     lang = response[editor.cid]['language']
     handler = langhandlers.get_language_handler(lang, student_code)
@@ -89,6 +87,8 @@ if __name__ == "__main__":
     evalscript = dic.get('evalscript', None)
     if evalscript is None:
         raise ValueError("Failed to load eval script")
+    
+
 
     # Load test cases
     testcases = parseTestcases(testcases)
