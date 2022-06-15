@@ -16,6 +16,7 @@ if __name__ == "__main__":
     
     context = get_context()
     response = get_answers()
+    editor = context['editor']
 
     student_code = response[editor.cid]['code']
     if 'cgtest' not in globals() :
