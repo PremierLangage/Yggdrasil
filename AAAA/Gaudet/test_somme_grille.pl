@@ -1,4 +1,4 @@
-extends= template/cgtemplate.pl
+extends= template/cgbasic.pl
 
 author=CG
 title=Somme maximale dans une grille
