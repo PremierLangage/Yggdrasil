@@ -31,8 +31,8 @@ if __name__ == "__main__":
             'code': langhandlers.get_base_code(lang)
         })
 
-# default language is first one in the list
-editor.language = required_languages[0]
+    # default language is first one in the list
+    context['editor'].language = required_languages[0]
 
     # Execute before script
     if 'before' in context:
