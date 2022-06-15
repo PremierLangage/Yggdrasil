@@ -66,6 +66,7 @@ if __name__ == "__main__":
         """
         feedback += compile_feedback
         feedback += "</code></pre><div>"
-        score = 0
+        output(0, feedback, context)
+        sys.exit(1)
     
     output(100, feedback, context)
