@@ -8,7 +8,7 @@ from asyncio import run
 from ast import literal_eval
 from feedback2 import FeedBack
 
-from sandboxio import output, get_context, get_answer
+from sandboxio import output, get_context, get_answers
 
 async def test(cmd, feedback, *args):
     """Lance un test
