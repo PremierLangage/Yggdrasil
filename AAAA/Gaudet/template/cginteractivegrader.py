@@ -15,7 +15,7 @@ if __name__ == "__main__":
         sys.exit(1)
     
     context = get_context()
-    context['response'] = get_answers()
+    response = get_answers()
 
     student_code = response[editor.cid]['code']
     if 'cgtest' not in globals() :
