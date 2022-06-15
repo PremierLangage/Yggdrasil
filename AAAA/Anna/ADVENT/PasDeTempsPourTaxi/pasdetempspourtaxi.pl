@@ -1,6 +1,6 @@
 extends = /ComputerScience/python/template/pltest.pl
-@ /builder/before.py [builder.py]
 
+@ /builder/before.py [builder.py]
 @sol.py [build.py]
 @ennonce.md
 
