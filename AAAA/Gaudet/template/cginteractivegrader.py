@@ -14,7 +14,7 @@ def parseTestcases(testcases):
     result = []
     for testcase in testcases.strip().split('\n'):
         args, name = testcase.split('#')
-        result.append(literal_eval(args.strip()))
+        result.append(literal_eval(args.strip()), name.strip())
     return result
 
 async def test(cmd, feedback, *args):
