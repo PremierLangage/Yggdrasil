@@ -80,11 +80,11 @@ def doit():
     
 
     pltest= f"""
-    >>> question1() == {sol1} # Question 1 étage 
+    >>> Question1() == {sol1} # Question 1 étage 
     True
     """
     pltest2= f"""
-    >>> question2() == {sol2} # Question 2 position 
+    >>> Question2() == {sol2} # Question 2 position 
     True
     """
 
