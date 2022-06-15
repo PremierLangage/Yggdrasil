@@ -37,6 +37,8 @@ async def test(cmd, feedback, *args):
     return result
 
 async def runtests(cmd, feedback, testcases):
+    """Lance l'ensemble des test
+    """
     for testcase in testcases:
         result = await test(cmd, feedback, *testcase)
         if result:
