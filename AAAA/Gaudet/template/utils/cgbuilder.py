@@ -3,6 +3,7 @@
 
 import sys, json, jsonpickle
 from sandboxio import get_context
+import langhandlers
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
@@ -13,8 +14,25 @@ if __name__ == "__main__":
     output_json = sys.argv[2]
     
     context = get_context()
-
     
+    context['editor'].codes = []
+    available_languages = langhandlers.get_available_languages()
+
+    # get required language, if none then all languages proposed by default
+    if languages.strip() == '':
+        required_languages = available_languages
+    else:
+        required_languages = languages.split('\n')
+
+    # add languages to the CodeEditor
+    for lang in required_languages:
+        editor.codes.append({
+            'language': lang,
+            'code': langhandlers.get_base_code(lang)
+        })
+
+# default language is first one in the list
+editor.language = required_languages[0]
 
     # Execute before script
     if 'before' in context:
