@@ -13,7 +13,6 @@ if __name__ == "__main__":
         sys.exit(1)
     output_json = sys.argv[2]
     
-    # Obtain context
     context = get_context()
     
     context['editor'].codes = []
