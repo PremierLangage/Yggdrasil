@@ -19,7 +19,7 @@ if __name__ == "__main__":
     available_languages = langhandlers.get_available_languages()
 
     # get required language, if none then all languages proposed by default
-    if languages.strip() == '':
+    if context['languages'].strip() == '':
         required_languages = available_languages
     else:
         required_languages = languages.split('\n')
