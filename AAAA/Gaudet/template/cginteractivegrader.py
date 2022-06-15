@@ -76,7 +76,7 @@ if __name__ == "__main__":
         Voici le détail:
         <pre style="background: #DDD"><code>
         """
-        feedback += compile_feedback
+        feedback = compile_feedback
         feedback += "</code></pre><div>"
         output(0, feedback, context)
         sys.exit(1)
