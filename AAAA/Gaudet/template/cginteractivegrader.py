@@ -48,7 +48,7 @@ async def runtests(cmd, feedback, testcases):
         else:
             feedback.addTestFailure(testname, 'fail', 'pass')
     
-    
+    return tests_success * 100 // tests_success
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
