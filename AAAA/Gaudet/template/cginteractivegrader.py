@@ -14,6 +14,8 @@ def parseTestcases(testcases):
     result = []
     for testcase in testcases.strip().split('\n'):
         args, name = testcase.split('#')
+        if not name:
+            name = 'Test sans nom'
         result.append(literal_eval(args.strip()), name.strip())
     return result
 
