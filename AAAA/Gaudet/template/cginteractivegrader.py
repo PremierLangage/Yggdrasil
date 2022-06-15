@@ -36,13 +36,19 @@ async def runtests(cmd, feedback, testcases):
         @param feedback objet de type FeedBack pour y inscrire le résultat du test
         @param testcases liste de tuples de la forme (*args, testname) correspondant aux tests
     """
+    tests_total = 0
+    tests_success = 0
     for testcase in testcases:
+        tests_totals += 1
         testargs, testname = testcase
         result = await test(cmd, feedback, *testargs)
         if result:
             feedback.addTestSuccess(testname, 'pass', 'pass')
+            tests_success += 1
         else:
             feedback.addTestFailure(testname, 'fail', 'pass')
+    
+    
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
