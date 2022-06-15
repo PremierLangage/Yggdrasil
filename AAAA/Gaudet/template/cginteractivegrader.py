@@ -38,4 +38,4 @@ if __name__ == "__main__":
         feedback += "</code></pre><div>"
         score = 0
     
-    output(100, 'feedback', context)
+    output(100, feedback, context)
