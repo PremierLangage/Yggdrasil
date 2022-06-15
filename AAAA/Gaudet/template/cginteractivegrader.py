@@ -70,7 +70,7 @@ if __name__ == "__main__":
     # Compilation
     success, compile_feedback = handler.compile()
     if not success:
-        feedback += """<div style="border:1px solid black;padding:1%;margin:1%;background-color:Tomato;border-radius:4px;color:black;">
+        feedback = """<div style="border:1px solid black;padding:1%;margin:1%;background-color:Tomato;border-radius:4px;color:black;">
         La compilation/vérification du code a échoué<br>
         Voici le détail:
         <pre style="background: #DDD"><code>
