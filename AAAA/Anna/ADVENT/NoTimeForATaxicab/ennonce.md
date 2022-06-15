@@ -4,12 +4,9 @@ Collectez des étoiles en résolvant des énigmes. Deux puzzles seront mis à di
 
 Vous êtes parachuté près du quartier général du lapin de Pâques dans une ville quelque part. 
 
-"Proche", malheureusement, est aussi proche que possible - les instructions sur le document de recrutement
- du lapin de Pâques que les elfes ont intercepté commencent ici, et personne n'a eu le temps de les approfondir.
+"Proche", malheureusement, est aussi proche que possible - les instructions sur le document de recrutement du lapin de Pâques que les elfes ont intercepté commencent ici, et personne n'a eu le temps de les approfondir.
 
-Le document indique que vous devez commencer aux coordonnées données
- (où vous venez d'atterrir) et faire face au nord. 
- Ensuite, suivez la séquence fournie : soit tournez à gauche (L) ou à droite (R) à 90 degrés, puis avancez du nombre de blocs indiqué, en terminant à une nouvelle intersection.
+Le document indique que vous devez commencer aux coordonnées données(où vous venez d'atterrir) et faire face au nord. Ensuite, suivez la séquence fournie : soit tournez à gauche (L) ou à droite (R) à 90 degrés, puis avancez du nombre de blocs indiqué, en terminant à une nouvelle intersection.
 
 Cependant, vous n'avez pas le temps de suivre des instructions aussi ridicules à pied, alors vous prenez un moment et déterminez la destination. Étant donné que vous ne pouvez marcher que sur le quadrillage des rues de la ville, à quelle distance se trouve le chemin le plus court vers la destination ?
 
