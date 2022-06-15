@@ -1,5 +1,5 @@
 def calc(data):
-    for 
+    return True
 
 def build():
     res = calc(exemple)
