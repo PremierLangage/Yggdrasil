@@ -33,7 +33,7 @@ async def test(cmd, feedback, *args):
 
 async def runtests(cmd, feedback, testcases):
     for testcase in testcases:
-        result, message = await test(cmd, feedback, *testcase)
+        result = await test(cmd, feedback, *testcase)
         if result:
             feedback.addTestSuccess('wesh')
         else:
