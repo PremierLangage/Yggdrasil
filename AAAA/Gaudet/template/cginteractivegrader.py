@@ -13,7 +13,8 @@ from sandboxio import output, get_context, get_answers
 def parseTestcases(testcases):
     result = []
     for testcase in testcases.strip().split('\n'):
-        result.append(literal_eval(testcase.strip()))
+        args, name = testcase.split('#')
+        result.append(literal_eval(args.strip()))
     return result
 
 async def test(cmd, feedback, *args):
