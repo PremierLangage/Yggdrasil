@@ -100,7 +100,7 @@ if __name__ == "__main__":
         raise ValueError("Failed to load eval script")
 
     # Load test cases
-    testcases = parseTestcases(testcases)
+    testcases = eval(testcases)
 
     # Run tests
     run(runtests(handler.exec_cmd, feedback, testcases))
