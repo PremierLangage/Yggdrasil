@@ -34,7 +34,7 @@ if __name__ == "__main__":
     # default language is first one in the list
     context['editor'].language = required_languages[0]
 
-    # Execute before script
+    # Execute 'before' script
     if 'before' in context:
         glob = {}
         exec(context['before'],context)
