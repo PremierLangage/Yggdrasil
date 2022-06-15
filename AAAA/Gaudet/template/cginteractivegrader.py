@@ -69,6 +69,17 @@ if __name__ == "__main__":
         output(0, feedback, context)
         sys.exit(1)
     
-    
+    # Load eval script
+    dic = {}
+    exec(testexec, dic)
+    evalscript = dic.get('evalscript', None)
+    if evalscript is None:
+        raise ValueError("Failed to load eval script")
+
+    # Load test cases
+    testcases = parseTestcases(testcases)
+
+    # Run tests
+    run(runtests(testcases))
     
     output(100, feedback, context)
