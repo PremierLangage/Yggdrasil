@@ -6,6 +6,37 @@ import langhandlers
 
 from sandboxio import output, get_context, get_answers
 
+def parseTestcases(testcases):
+    result = []
+    for testcase in testcases.strip().split('\n'):
+        result.append(literal_eval(testcase.strip()))
+    return result
+
+async def test(*args):
+    result = False
+    feedback = ''
+
+    student = CGInteractiveBinary(['./dicho'])
+    await student.start()
+
+    try:
+        result = await evalscript(student, *args)
+        if not result:
+            feedback = 'Student code failed to pass the test'
+    except InvalidCGBinaryExecution as err:
+        feedback = 'Student code evaluation failed:\n' + str(err)
+
+    await student.stop()
+    return result, feedback
+
+async def runtests(testcases):
+    for testcase in testcases:
+        result, feedback = await test(*testcase)
+        if result:
+            print("Success")
+        else:
+            print("Failure:", feedback)
+
 if __name__ == "__main__":
     if len(sys.argv) < 5:
         msg = ("Sandbox did not call grader properly:\n"
