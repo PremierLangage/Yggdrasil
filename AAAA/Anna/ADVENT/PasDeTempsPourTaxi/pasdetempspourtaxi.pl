@@ -13,8 +13,7 @@ text==
 
 La liste des informations est dans le fichier "data" .
 
-Comme d'habitude vous avez un fichier "exemple" pour lequel la bonne reponse est  
-Question : 
+Comme d'habitude vous avez un fichier "exemple" pour lequel la bonne reponse est : 
 
 
 ==
@@ -22,7 +21,7 @@ Question :
 
 before==
 import build
-pltest0,pltest1=build.build()
+pltest = build.build()
 
 with open("ennonce.md","r") as f:
     lenonce= f.read()
