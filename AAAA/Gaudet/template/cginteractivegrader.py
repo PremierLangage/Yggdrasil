@@ -33,9 +33,9 @@ async def runtests(testcases):
     for testcase in testcases:
         result, feedback = await test(*testcase)
         if result:
-            print("Success")
+            print("Success", file=sys.stderr)
         else:
-            print("Failure:", feedback)
+            print("Failure:", feedback, file=sys.stderr)
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
