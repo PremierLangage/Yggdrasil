@@ -25,6 +25,5 @@ pltest = build.build()
 
 with open("ennonce.md","r") as f:
     lenonce = f.read()
-
 ==
 
