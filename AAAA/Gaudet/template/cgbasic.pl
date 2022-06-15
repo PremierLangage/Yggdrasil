@@ -50,12 +50,6 @@ form==
 languages==
 ==
 
-before==#|py|
-
-
-
-==
-
 evaluator==#|py|
 
 from cgtest import CodingGamesTestRunner
