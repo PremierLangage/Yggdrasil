@@ -25,17 +25,15 @@ async def test(cmd, feedback, *args):
 
     try:
         result = await evalscript(student, *args)
-        if not result:
-            feedback = 'Student code failed to pass the test'
     except InvalidCGBinaryExecution as err:
-        feedback = 'Student code evaluation failed:\n' + str(err)
+        return False
 
     await student.stop()
-    return result, feedback
+    return result
 
 async def runtests(cmd, feedback, testcases):
     for testcase in testcases:
-        result, feedback = await test(cmd, feedback, *testcase)
+        result, message = await test(cmd, feedback, *testcase)
         if result:
             feedback.addTestSuccess('Passé')
         else:
