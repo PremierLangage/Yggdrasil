@@ -1,4 +1,4 @@
-Le traîneau du Père Noël utilise une horloge de très haute précision pour guider ses mouvements, et l'oscillateur de l'horloge est régulé par des étoiles. Malheureusement, les étoiles ont été volées... par le lapin de Pâques. Pour sauver Noël, le Père Noël a besoin que vous récupériez les #cinquante étoiles# d'ici le 25 décembre.
+Le traîneau du Père Noël utilise une horloge de très haute précision pour guider ses mouvements, et l'oscillateur de l'horloge est régulé par des étoiles. Malheureusement, les étoiles ont été volées... par le lapin de Pâques. Pour sauver Noël, le Père Noël a besoin que vous récupériez les cinquante étoiles d'ici le 25 décembre.
 
 Collectez des étoiles en résolvant des énigmes. Deux puzzles seront mis à disposition chaque jour dans le calendrier de l'Avent ; le deuxième puzzle est déverrouillé lorsque vous terminez le premier. Chaque puzzle accorde une étoile. Bonne chance!
 
