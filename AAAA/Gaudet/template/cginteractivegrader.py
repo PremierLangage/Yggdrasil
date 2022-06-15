@@ -33,7 +33,7 @@ async def test(cmd, feedback, testcase):
     await student.start()
 
     try:
-        result = await evalscript(student, *args)
+        result = await evalscript(student, *testargs)
     except InvalidCGBinaryExecution as err:
         result = False
 
