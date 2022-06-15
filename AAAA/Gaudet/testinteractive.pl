@@ -38,5 +38,9 @@ async def evalscript(student, N, n):
 ==
 
 testcases==
-
+(100, 0)
+(100, 99)
+(100, 49)
+(10000000, 43257)
+(43, -1)
 ==
