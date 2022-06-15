@@ -3,6 +3,9 @@
 
 import sys, json, jsonpickle, time
 import langhandlers
+from cginteractive import CGInteractiveBinary, InvalidCGBinaryExecution
+from asyncio import run
+from ast import literal_eval
 
 from sandboxio import output, get_context, get_answers
 
