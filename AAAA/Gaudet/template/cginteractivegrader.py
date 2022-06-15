@@ -18,7 +18,7 @@ def parseTestcases(testcases):
         else:
             args = testcase
             name = 'Test sans nom'
-        result.append(literal_eval(args.strip()), name.strip())
+        result.append((literal_eval(args.strip()), name.strip()))
     return result
 
 async def test(cmd, feedback, *args):
