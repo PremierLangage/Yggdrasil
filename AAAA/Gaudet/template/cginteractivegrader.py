@@ -82,7 +82,7 @@ if __name__ == "__main__":
     
     # Load eval script
     dic = {}
-    exec(testexec, dic)
+    exec(evalscript, dic)
     evalscript = dic.get('evalscript', None)
     if evalscript is None:
         raise ValueError("Failed to load eval script")
