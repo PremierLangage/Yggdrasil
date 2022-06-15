@@ -15,7 +15,7 @@ def parseTestcases(testcases):
         result.append(literal_eval(testcase.strip()))
     return result
 
-async def test(cmd, *args):
+async def test(cmd, feedback, *args):
     result = False
     feedback = ''
 
@@ -32,9 +32,9 @@ async def test(cmd, *args):
     await student.stop()
     return result, feedback
 
-async def runtests(cmd, testcases):
+async def runtests(cmd, feedback, testcases):
     for testcase in testcases:
-        result, feedback = await test(cmd, *testcase)
+        result, feedback = await test(cmd, feedback, *testcase)
         if result:
             print("Success", file=sys.stderr)
         else:
