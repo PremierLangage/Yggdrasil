@@ -97,5 +97,5 @@ if __name__ == "__main__":
     # Run tests
     run(runtests(handler.exec_cmd, feedback, testcases))
     
-    # Output result to context and serialise to output JSON
+    # Write result to context and serialise to output JSON
     output(100, feedback, context)
