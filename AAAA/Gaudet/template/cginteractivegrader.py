@@ -53,6 +53,12 @@ if __name__ == "__main__":
     if evalscript not in context:
         print("evalscript is not defined, please supply an evalscript", file=sys.stderr)
         sys.exit(1)
+    evalscript = context['evalscript']
+
+    if testcases not in context:
+        print("testcases is not defined, please supply testcases", file=sys.stderr)
+        sys.exit(1)
+    testcases = context['testcases']
 
     feedback = ''
 
