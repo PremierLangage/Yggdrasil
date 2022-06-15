@@ -89,7 +89,7 @@ if __name__ == "__main__":
     if evalscript is None:
         raise ValueError("Failed to load eval script")
     
-    feedback = 
+    feedback = FeedBack()
 
     # Load test cases
     testcases = parseTestcases(testcases)
