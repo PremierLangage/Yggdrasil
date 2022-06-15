@@ -32,7 +32,7 @@ async def test(cmd, feedback, *args):
     await student.start()
 
     try:
-        result = await evalscript(student, *args)
+        result = await evalscript(student, testcase)
     except InvalidCGBinaryExecution as err:
         result = False
 
@@ -46,7 +46,7 @@ async def runtests(cmd, feedback, testcases):
         @param testcases liste de tuples de la forme (*args, testname) correspondant aux tests
     """
     for testcase in testcases:
-        result = await test(cmd, feedback, *testcase)
+        result = await test(cmd, feedback, testcase)
         if result:
             feedback.addTestSuccess('wesh', 'pass', 'pass')
         else:
