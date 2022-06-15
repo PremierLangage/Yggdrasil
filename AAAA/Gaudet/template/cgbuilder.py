@@ -3,7 +3,7 @@
 
 import sys, json, jsonpickle
 from sandboxio import get_context
-import langhandlers
+import utils.langhandlers
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
