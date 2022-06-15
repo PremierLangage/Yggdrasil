@@ -42,6 +42,11 @@ if __name__ == "__main__":
         for key in glob:
             if key in context and context[key] == glob[key]:
                 del context[key]
+    else:
+        print(("Builder 'before' need a script declared in the key 'before'. "
+               + "See documentation related to this builder."),
+              file = sys.stderr)
+        sys.exit(1)
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(context, unpicklable=False))
