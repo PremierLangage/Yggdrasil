@@ -14,7 +14,7 @@ if __name__ == "__main__":
     
     context = get_context()
 
-
+    
 
     # Execute before script
     if 'before' in context:
