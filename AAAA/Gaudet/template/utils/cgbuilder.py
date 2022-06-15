@@ -22,11 +22,11 @@ if __name__ == "__main__":
     if context['languages'].strip() == '':
         required_languages = available_languages
     else:
-        required_languages = languages.split('\n')
+        required_languages = context['languages'].split('\n')
 
     # add languages to the CodeEditor
     for lang in required_languages:
-        editor.codes.append({
+        context['editor'].codes.append({
             'language': lang,
             'code': langhandlers.get_base_code(lang)
         })
