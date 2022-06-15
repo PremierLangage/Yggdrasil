@@ -35,6 +35,8 @@ async def runtests(cmd, feedback, testcases):
         @param cmd commande pour lancer l'exécutable correspondant au programme soumis par l'étudiant
         @param feedback objet de type FeedBack pour y inscrire le résultat du test
         @param testcases liste de tuples de la forme (*args, testname) correspondant aux tests
+        @return la note correspondante sur 100
+
     """
     tests_total = 0
     tests_success = 0
