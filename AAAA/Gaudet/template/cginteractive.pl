@@ -9,7 +9,7 @@ Cela nécessite cependant d'écrire un script Python permettant de communiquer a
 
 Deux éléments sont à définir dans l'exercice:
 
-* evalscript
+***** evalscript *****
 
 Script Python devant contenir une fonction evalscript servant à évaluer le script étudiant. Des imports peuvent être réalisés ici au besoin.
 
@@ -19,6 +19,12 @@ Cette fonction nécessite <b>ce prototype précis</b>:
 
 Il s'agit d'une fonction asynchrone, nécessitant donc le mot clé async, et le premier argument doit être réservé pour récupérer le processus étudiant.
 Un nombre arbitraire d'autres arguments peut être ajouté pour paramétrer l'évaluation notamment pour les tests.
+
+Cette fonction doit renvoyer True si le test passe, False sinon.
+
+Pour interagir avec le processus étudiant, 3 méthodes sont disponibles :
+
+* 
 
 La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
 ==
