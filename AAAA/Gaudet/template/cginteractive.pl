@@ -14,7 +14,7 @@ Trois éléments sont à définir dans l'exercice:
 
 Script Python devant contenir une fonction evalscript servant à évaluer le script étudiant. Des imports peuvent être réalisés ici au besoin.
 
-Cette fonction nécessite <b>ce prototype précis</b>:
+Cette fonction nécessite <b>un prototype précis</b>:
 
 <b>async def evalscript(student, *args):</b>
 
