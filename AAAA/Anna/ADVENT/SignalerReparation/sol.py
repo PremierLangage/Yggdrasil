@@ -15,6 +15,28 @@ def getResults(array):
             if array[i] + array[j] == 2020:
                 return array[i] * array[j]
 
+def getQ():
+    builddata("data")
+    valeurs = fromFileToList(data)
+    mini = SIZE
+    nbsmalest = 0
+    q1 = fits(SIZE, valeurs, [], [0]*(SIZE+1))
+    q2 = nbsmalest
+    return q1, q2
+
+
+def build():
+    Q1, Q2 = getQ1Q2()
+
+    plt1 = f"""
+    >>> Question1() == {Q1} # Question 1
+    True
+    """
+    plt2 = f"""
+    >>> Question2() == {Q2} # Question 2
+    True"""
+    return plt1, plt2
+
 def build():
 
 
