@@ -21,7 +21,7 @@ res = {{res1}}
 ==
 
 choices == 
-0 #Bravo !Vous avez tous les points.
+{{res1}}:0.0 #Bravo !Vous avez tous les points.
 ==
 
 
