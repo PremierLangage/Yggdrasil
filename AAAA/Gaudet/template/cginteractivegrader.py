@@ -35,6 +35,7 @@ async def runtests(cmd, feedback, testcases):
     """
     tests_total = 0
     tests_success = 0
+    failed = False
     for testcase in testcases:
         tests_total += 1
         testargs, testname = testcase
