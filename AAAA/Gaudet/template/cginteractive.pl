@@ -39,9 +39,10 @@ Ceci doit être une liste Python contenant les différents cas de tests à réal
 
 Chaque test est automatiquement réalisé lorsque l'étudiant envoie son code, après compilation si celle-ci passe.
 
-***** testcases *****
+***** langages *****
 
-
+Liste des langages autorisés. Si vous laissez cette variable vide, tout les langages seront disponibles.
+Sinon, indiquez les langages souhaités, un par ligne
 
 La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
 ==
