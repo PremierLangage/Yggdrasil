@@ -14,3 +14,6 @@ def getResults(array):
         for j in range(i+1,len(array)):
             if array[i] + array[j] == 2020:
                 return array[i] * array[j]
+
+arr = fromFileToList(exemple)
+res = getResults(arr)
