@@ -43,12 +43,12 @@ async def runtests(cmd, feedback, testcases):
             result = await test(cmd, feedback, *testargs)
         except InvalidCGBinaryExecution as err:
             pass
-        
-        if result:
-            feedback.addTestSuccess(testname, 'pass', 'pass')
-            tests_success += 1
         else:
-            feedback.addTestFailure(testname, 'fail', 'pass')
+            if result:
+                feedback.addTestSuccess(testname, 'pass', 'pass')
+                tests_success += 1
+            else:
+                feedback.addTestFailure(testname, 'fail', 'pass')
     
     return tests_success * 100 // tests_success
 
