@@ -75,6 +75,7 @@ handler = langhandlers.get_language_handler(lang, student_code)
 # Compilation
 success, compile_feedback = handler.compile()
 if not success:
+    
     feedback += """<div style="border:1px solid black;padding:1%;margin:1%;background-color:Tomato;border-radius:4px;color:black;">
     La compilation/vérification du code a échoué<br>
     Voici le détail:
