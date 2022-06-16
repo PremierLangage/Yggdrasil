@@ -59,6 +59,7 @@ with open("ennonce.md","r") as f:
     lenonce = f.read()
 
 builddata("data")
+valeurs = fromFileToList("data")
 arr = fromFileToList("exemple")
 res = getResults(arr)
 print(res)
