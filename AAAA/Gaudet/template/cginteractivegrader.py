@@ -6,9 +6,8 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-import sys
+import sys, asyncio
 from enum import Enum
-from asyncio import run, Queue, gather, create_task
 
 import langhandlers
 from cginteractive import CGInteractiveBinary, InvalidCGBinaryExecution
@@ -61,21 +60,21 @@ async def runtests(cmd, feedback, testcases):
     results = [None for _ in range(len(testcases))]
 
     # Fill queue
-    queue = Queue()
+    queue = asyncio.Queue()
     for i, testcase in enumerate(testcases):
         queue.put_nowait((i, testcase))
     
     # Start worker tasks
     tasks = []
     for _ in range(5):
-        task = create_task(worker(queue, cmd, results))
+        task = asyncio.create_task(worker(queue, cmd, results))
         tasks.append(task)
     
     # Wait for queue to empty then stop all tasks
     await queue.join()
     for task in tasks:
         task.cancel()
-    await gather(*tasks, return_exceptions=True)
+    await asyncio.gather(*tasks, return_exceptions=True)
 
     # Create feedback
     for (_, testname), result in zip(testcases, results):
@@ -141,7 +140,7 @@ if __name__ == "__main__":
     testcases = eval(testcases)
 
     # Run tests
-    score = run(runtests(handler.exec_cmd, feedback, testcases))
+    score = asyncio.run(runtests(handler.exec_cmd, feedback, testcases))
     
     # Write result to context and serialise to output JSON
     output(score, feedback.render(), context)
