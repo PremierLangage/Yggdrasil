@@ -9,7 +9,7 @@
 import sys
 import langhandlers
 from cginteractive import CGInteractiveBinary, InvalidCGBinaryExecution
-from asyncio import run, Queue, gather
+from asyncio import run, Queue, gather, create_task
 from ast import literal_eval
 from feedback2 import FeedBack
 from enum import Enum
@@ -58,7 +58,10 @@ async def runtests(cmd, feedback, testcases):
     for testcase in testcases:
         queue.put_nowait(testcase)
     
-    
+    tasks = []
+    for _ in range(5):
+        task = asyncio.create_task(worker(queue, res))
+        tasks.append(task)
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
