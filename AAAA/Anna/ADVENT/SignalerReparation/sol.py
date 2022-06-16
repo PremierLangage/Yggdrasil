@@ -25,8 +25,6 @@ def build():
     r = getQ()
     return r
 
-def build():
-
 
 arr = fromFileToList("exemple")
 res = getResults(arr)
