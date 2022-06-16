@@ -55,20 +55,20 @@ async def runtests(cmd, feedback, testcases):
 
     """
     results = [None for _ in range(len(testcases))]
-    queue = Queue()
+    queue = asyncio.Queue()
     for i, testcase in enumerate(testcases):
         queue.put_nowait((i, testcase))
     
     tasks = []
     for _ in range(5):
-        task = create_task(worker(queue, cmd, results))
+        task = asyncio.create_task(worker(queue, cmd, results))
         tasks.append(task)
     
     await queue.join()
 
     for task in tasks:
         task.cancel()
-    await gather(*tasks, return_exceptions=True)
+    await asyncio.gather(*tasks, return_exceptions=True)
 
     for (_, testname), result in zip(testcases, results):
         if result == TestStatus.PASS:
