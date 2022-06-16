@@ -27,7 +27,7 @@ class CGInteractiveBinary():
         self.proc = await create_subprocess_exec(*finalcmd, stdin=PIPE, stdout=PIPE, stderr=PIPE)
 
     async def stop(self):
-        """Kills the process"""
+        """Kills the process if it's still running"""
         if self.proc.returncode is None:
             self.proc.kill()
             await self.proc.wait()
