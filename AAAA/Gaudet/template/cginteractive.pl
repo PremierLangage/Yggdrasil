@@ -2,6 +2,10 @@
 # Ceci est un template pour faire des exercices avec la balise de correction cgtest
 # Il s'agit d'une adaptation du template pltest
 doc==
+Ce template permet d'écrire des exercices pouvant être résolus dans un langage au choix de l'étudiant.
+
+
+
 La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
 ==
 grader  =@ ./cginteractivegrader.py
