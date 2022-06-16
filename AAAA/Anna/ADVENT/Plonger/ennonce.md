@@ -10,20 +10,20 @@ Notez que puisque vous êtes sur un sous-marin, le bas et le haut affectent votr
 
 Le sous-marin semble déjà avoir un parcours planifié (votre entrée de puzzle). Vous devriez probablement comprendre où ça va. Par exemple:
 
-avant 5
+vers l'avant 5
 vers le bas 5
-avant 8
-jusqu'à 3
+vers l'avant 8
+vers le haut 3
 vers le bas 8
-avant 2
+vers l'avant 2
 
 Votre position horizontale et votre profondeur commencent toutes deux à 0. Les étapes ci-dessus les modifieraient alors comme suit :
 
     - vers l'avant 5 ajoute 5 à votre position horizontale, un total de 5.
-    - down 5 ajoute 5 à votre profondeur, ce qui donne une valeur de 5.
-    - avant 8 ajoute 8 à votre position horizontale, un total de 13.
-    - jusqu'à 3 diminue votre profondeur de 3, ce qui donne une valeur de 2.
-    - 8 vers le bas ajoute 8 à votre profondeur, ce qui donne une valeur de 10.
+    - vers le bas 5 ajoute 5 à votre profondeur, ce qui donne une valeur de 5.
+    - vers l'avant 8 ajoute 8 à votre position horizontale, un total de 13.
+    - vers le haut 3 diminue votre profondeur de 3, ce qui donne une valeur de 2.
+    - vers le bas 8 ajoute 8 à votre profondeur, ce qui donne une valeur de 10.
     - vers l'avant 2 ajoute 2 à votre position horizontale, soit un total de 15.
 
 Après avoir suivi ces instructions, vous auriez une position horizontale de 15 et une profondeur de 10. (En les multipliant, vous obtenez 150.)
