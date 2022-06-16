@@ -1,4 +1,5 @@
 import random
+@exemple
 
 def builddata(filename):
     with open(filename, "w") as file:
