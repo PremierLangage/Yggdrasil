@@ -7,13 +7,12 @@
 # coding: utf-8
 
 import sys
+from enum import Enum
+from asyncio import run, Queue, gather, create_task
+
 import langhandlers
 from cginteractive import CGInteractiveBinary, InvalidCGBinaryExecution
-from asyncio import run, Queue, gather, create_task
-from ast import literal_eval
 from feedback2 import FeedBack
-from enum import Enum
-
 from sandboxio import output, get_context, get_answers
 
 class TestStatus(Enum):
