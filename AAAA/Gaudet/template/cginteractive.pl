@@ -49,8 +49,8 @@ Sinon, indiquez les langages souhaités, un par ligne
 
 La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
 
-Attention : il n'y pas de protection contre les deadlocks pouvant être occasionnés par la communication par tubes.
-Ainsi, il ne faut pas tenter de communication bilatérale simultanée, et ne procéder que par requete/réponse.
+<b>Attention : il n'y pas de protection contre les deadlocks pouvant être occasionnés par la communication par tubes.
+Ainsi, il ne faut pas tenter de communication bilatérale simultanée, et ne procéder que par requete/réponse.</b>
 ==
 grader  =@ ./cginteractivegrader.py
 builder =@ ./cgbuilder.py
