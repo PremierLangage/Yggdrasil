@@ -88,8 +88,6 @@ res1 = getResults(valeurs)
 
 arr = fromFileToList("exemple")
 res = getResults(arr)
-
-
 ==
 
 
