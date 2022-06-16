@@ -1,6 +1,4 @@
-
-# Ceci est un template pour faire des exercices avec la balise de correction cgtest
-# Il s'agit d'une adaptation du template pltest
+# Ceci est un template pour faire des exercices interactifs multilangages
 doc==
 Ce template permet d'écrire des exercices pouvant être résolus dans un langage au choix de l'étudiant.
 
