@@ -9,7 +9,7 @@
 import sys
 import langhandlers
 from cginteractive import CGInteractiveBinary, InvalidCGBinaryExecution
-import async
+import asyncio
 from ast import literal_eval
 from feedback2 import FeedBack
 from enum import Enum
