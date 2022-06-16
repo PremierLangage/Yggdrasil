@@ -21,7 +21,6 @@ Comme d'habitude vous avez un fichier "exemple" pour lequel la bonne reponse est
 
 
 before==
-
 with open("ennonce.md","r") as f:
     lenonce = f.read()
 
