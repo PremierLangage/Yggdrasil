@@ -8,7 +8,7 @@ class CGInteractiveBinary():
     """Class which allows to start, stop and interact with a process through its standard input and output easily.
     There is no deadlock protection, thus communication must always be unidirectional at any time, as in, both processes should
     not attempt to communicate with the other at the same time.
-    """
+    A strict query/response protocol will avoid any problem."""
     cmd_nobuf = ['stdbuf', '-oL']
 
     def __init__(self, cmd):
@@ -54,7 +54,7 @@ class CGInteractiveBinary():
 
     async def receive(self, timeout=1):
         """Receives data from the running process. The string to receive must be marked with a newline to indicate
-        the end of it"""
+        the end of it. An InvalidCGBinaryExecution exception is raised in case of a timeout while waiting for the answer"""
         try:
             output = await wait_for(self.proc.stdout.readline(), timeout)
         except TimeoutError:
