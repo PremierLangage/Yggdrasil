@@ -1,3 +1,6 @@
+# Date : 16/06/2022
+# Auteur : Clément Gaudet
+
 # This module contains classes meant to handle different languages for the Coding Games template (cgtemplate.pl)
 # They each must have a compile() method which prepares the source code to be executed and a exec_cmd attribute which
 # indicates how to run the program
