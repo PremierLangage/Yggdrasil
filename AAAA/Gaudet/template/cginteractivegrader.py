@@ -70,7 +70,8 @@ async def runtests(cmd, feedback, testcases):
         task.cancel()
     await gather(*tasks, return_exceptions=True)
 
-    
+    for testcase, result in zip(testcases, results):
+        
 
 
 if __name__ == "__main__":
