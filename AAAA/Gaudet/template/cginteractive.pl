@@ -7,7 +7,7 @@ Ce template permet d'écrire des exercices pouvant être résolus dans un langag
 Par rapport à la version basique, celle-ci permet plus d'interactivité avec le programme étudiant en réalisant plus qu'une seule entrée, et une seule sortie.
 Cela nécessite cependant d'écrire un script Python permettant de communiquer avec et d'évaluer le programme de l'étudiant et est donc plus complexe dans son utilisation.
 
-Deux éléments sont à définir dans l'exercice:
+Trois éléments sont à définir dans l'exercice:
 
 ***** evalscript *****
 
@@ -33,10 +33,15 @@ celui-ci peut être changé au besoin. En cas de timeout, le test est automatiqu
 * student.query(query, timeout=1) : méthode raccourci qui à la fois envoie une chaine de caractère (\n rajouté automatiquement si besoin) et attend une réponse directement après
 
 ***** testcases *****
+
 Ceci doit être une liste Python contenant les différents cas de tests à réaliser. Chaque test a le format suivant:
 [(tuple contenant les différents arguments à passer à evalscript), "nom du test"]
 
 Chaque test est automatiquement réalisé lorsque l'étudiant envoie son code, après compilation si celle-ci passe.
+
+***** testcases *****
+
+
 
 La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
 ==
