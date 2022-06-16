@@ -28,9 +28,6 @@ def build():
     >>> Question1() == {Q1} # Question 1
     True
     """
-    plt2 = f"""
-    >>> Question2() == {Q2} # Question 2
-    True"""
     return plt1, plt2
 
 def build():
