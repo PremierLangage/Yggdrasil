@@ -31,12 +31,12 @@ before==
 import random
 
 def builddata():
-
+    tab = [random.randint(x, 2020)) for x in range(200)]
 
 def buildfile(filename):
     with open(filename, "w") as file:
         for x in range(200):
-            file.write(str(random.randint(x, 2020))+"\n")
+            file.write(str(+"\n")
         randval = random.randint(200)
 
 def fromFileToList(filename):
