@@ -83,6 +83,14 @@ async def runtests(cmd, feedback, testcases):
     
     return len(list(filter(lambda a: a == TestStatus.PASS, results))) * 100 // len(testcases)
 
+def run_loop():
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop) # bind event loop to current thread
+
+    try:
+        return loop.run_until_complete(run(loop))
+    finally:
+        loop.close()
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
@@ -135,7 +143,7 @@ if __name__ == "__main__":
     # Run tests
     asyncio.get_child_watcher()
     loop = asyncio.get_event_loop()
-    coro = loop.run_in_executor(None, runtests(handler.exec_cmd, feedback, testcases))
+    coro = loop.run_in_executor(None, run_loop())
     score = loop.run_until_complete(coro)
 
     # Write result to context and serialise to output JSON
