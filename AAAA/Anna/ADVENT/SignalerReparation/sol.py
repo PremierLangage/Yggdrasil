@@ -28,5 +28,4 @@ def build():
 
 arr = fromFileToList("exemple")
 res = getResults(arr)
-
 print(res)
