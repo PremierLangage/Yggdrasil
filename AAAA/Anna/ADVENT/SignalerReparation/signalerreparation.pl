@@ -17,12 +17,12 @@ La liste des informations est dans le fichier "data" .
 Comme d'habitude vous avez un fichier "exemple" pour lequel la bonne reponse est : 145875
 
 Vos données sont les suivantes : {{valeurs}}
-myval =  {{res1}}
+myval =  
 
 ==
 
 choices == 
-0
+{{res1}}
 ==
 
 
