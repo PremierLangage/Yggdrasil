@@ -8,7 +8,7 @@ class CGInteractiveBinary():
     """Class which allows to start, stop and interact with a process through its standard input and output easily.
     There is no deadlock protection, thus communication must always be unidirectional at any time, as in, both processes should
     not attempt to communicate with the other at the same time.
-    A strict query/response protocol will avoid any problem."""
+    A strict query/response protocol will avoid any problem on that aspect."""
     cmd_nobuf = ['stdbuf', '-oL']
 
     def __init__(self, cmd):
