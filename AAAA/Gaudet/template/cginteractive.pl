@@ -28,7 +28,9 @@ Pour interagir avec le processus étudiant, 3 méthodes sont disponibles :
 Des \n sont ajoutés entre les différents arguments et à la fin de la dernier chaine automatiquement
 
 * student.receive(timeout=1) : cette méthode attend de récupérer une ligne complète sur la sortie standard du processus. Un timeout de 1 seconde est mise par défaut,
-celui-ci peut être changé au besoin
+celui-ci peut être changé au besoin. En cas de timeout, le test est automatiquent mis comme échoué
+
+
 
 La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
 ==
