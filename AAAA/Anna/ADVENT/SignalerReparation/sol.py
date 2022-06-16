@@ -15,6 +15,9 @@ def getResults(array):
             if array[i] + array[j] == 2020:
                 return array[i] * array[j]
 
+def build():
+
+
 arr = fromFileToList("exemple")
 res = getResults(arr)
 
