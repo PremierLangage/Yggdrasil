@@ -70,7 +70,7 @@ async def runtests(cmd, feedback, testcases):
         task.cancel()
     await gather(*tasks, return_exceptions=True)
 
-    for testcase, result in zip(testcases, results):
+    for (_, testname), result in zip(testcases, results):
         if result == TestStatus.PASS:
             feedback.addTestSuccess(testname, 'Validation', 'Validation')
         elif result == TestStatus.FAIL:
