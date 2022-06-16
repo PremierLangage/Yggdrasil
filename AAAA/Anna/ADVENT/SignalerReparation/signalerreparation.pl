@@ -22,7 +22,7 @@ choix = {{choices}}
 ==
 
 choices==
-res1.0:0.0 #Bravo !Vous avez tous les points.
+str(res1).0:0.0 #Bravo !Vous avez tous les points.
 ==
 
 
