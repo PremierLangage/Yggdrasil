@@ -24,7 +24,8 @@ async def test(cmd, *args):
     """Lance un test
         @param cmd commande pour lancer l'exécutable correspondant au programme soumis par l'étudiant
         @param args arguments à ajouter à l'appel du script d'évaluation écrit par le professeur
-        @return True si le test est passé, False sinon
+        @return TestStatus.PASS si le test est passé, TestStatus.FAIL si le test a échoué, TestStatus.ERROR en cas d'erreur
+        à l'exécution
     """
     result = None
 
