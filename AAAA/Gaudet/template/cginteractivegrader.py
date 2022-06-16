@@ -46,7 +46,7 @@ async def worker(queue, cmd, lst):
     while True:
         i, testcase = await queue.get()
         testargs, _ = testcase
-        lst[i] = wait test(cmd, *testargs)
+        lst[i] = await test(cmd, *testargs)
         queue.task_done()
 
 async def runtests(cmd, feedback, testcases):
