@@ -56,7 +56,7 @@ async def runtests(cmd, feedback, testcases):
         if failed:
             feedback.addTestFailure(testname, 'not attempted due to previous failure', 'pass')
     
-    return tests_success * 100 // tests_success
+    return tests_success * 100 // tests_total
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
