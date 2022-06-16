@@ -9,3 +9,8 @@ def fromFileToList(filename):
     with open(filename, "r") as file:
         return [x for x in file.readlines()]
 
+def getResults(array):
+    for i in range(len(array)):
+        for j in range(i+1,len(array)):
+            if array[i] + array[j] == 2020:
+                return array[i] * array[j]
