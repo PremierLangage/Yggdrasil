@@ -72,7 +72,6 @@ res1 = getResults(valeurs)
 arr = fromFileToList("exemple")
 res = getResults(arr)
 
-
 lines = choices.split('\n')
 choices = []
 liste = []
