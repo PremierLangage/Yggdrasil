@@ -15,7 +15,7 @@ def getResults(array):
             if array[i] + array[j] == 2020:
                 return array[i] * array[j]
 
-arr = fromFileToList("Yggdrasil/AAAA/Anna/ADVENT/SignalerReparation/exemple")
+arr = fromFileToList("exemple")
 res = getResults(arr)
 
 print(res)
