@@ -72,6 +72,8 @@ res1 = getResults(valeurs)
 
 arr = fromFileToList("exemple")
 res = getResults(arr)
+
+choices.append(res1)
 ==
 
 
