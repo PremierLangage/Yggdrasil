@@ -26,7 +26,8 @@ Cette fonction doit renvoyer True si le test passe, False sinon.
 Pour interagir avec le processus étudiant, 3 méthodes sont disponibles :
 
 * student.send(*args) : cette méthode permet d'envoyer une ou des chaines de caractères au processus via son entrée standard
-Des \n sont ajoutés entre les différents arguments et à la fin de la dernier chaine automatiquement
+Des \n sont ajoutés entre les différents arguments et à la fin de la dernier chaine automatiquement. 
+De plus, si les arguments sont automatiquement changés en leur représentation sous forme de chaine de caractère
 
 * student.receive(timeout=1) : cette méthode attend de récupérer une ligne complète sur la sortie standard du processus. Un timeout de 1 seconde est mise par défaut,
 celui-ci peut être changé au besoin. En cas de timeout, le test est automatiquent mis comme échoué
