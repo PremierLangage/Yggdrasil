@@ -31,7 +31,7 @@ before==
 import random
 
 def builddata():
-    tab = [random.randint(x, 2020)) for x in range(200)]
+    tab = [random.randint(x, 2020) for x in range(200)]
     randval1 = random.randint(200)
     randval2 = random.randint(200)
     tab[randval2] = 2020 - tab[randval1] 
