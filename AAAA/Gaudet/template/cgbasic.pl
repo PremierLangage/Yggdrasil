@@ -1,3 +1,6 @@
+# Date : 16/06/2022
+# Auteur : Clément Gaudet
+
 # Ceci est un template pour faire des exercices avec la balise de correction cgtest
 # Il s'agit d'une adaptation du template pltest
 doc==
