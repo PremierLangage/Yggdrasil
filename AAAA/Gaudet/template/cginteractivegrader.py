@@ -44,7 +44,8 @@ async def runtests(cmd, feedback, testcases):
             try:
                 result = await test(cmd, feedback, *testargs)
             except InvalidCGBinaryExecution as err:
-                feedback.addTestError(testname, 'error', 'pass')
+                feedback.addTestError(testname, "Erreur : le programme n'a pas répondu. Causes à considérer : boucle infinie, arrêt prématuré du programme \
+                                                ", 'pass')
                 failed = True
             else:
                 if result:
