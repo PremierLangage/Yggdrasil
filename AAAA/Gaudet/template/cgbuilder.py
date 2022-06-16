@@ -1,3 +1,8 @@
+# Date : 16/06/2022
+# Auteur : Clément Gaudet
+
+# Builder pour les templates cgbasic et cginteractive
+
 #!/usr/bin/env python3
 # coding: utf-8
 
