@@ -49,10 +49,10 @@ async def runtests(cmd, feedback, testcases):
                 failed = True
             else:
                 if result:
-                    feedback.addTestSuccess(testname, 'pass', 'pass')
+                    feedback.addTestSuccess(testname, 'Validation', 'Validation')
                     tests_success += 1
                 else:
-                    feedback.addTestFailure(testname, 'fail', 'pass')
+                    feedback.addTestFailure(testname, 'fail', 'Validation')
                     failed = True
         if failed:
             feedback.addTestFailure(testname, 'not attempted due to previous failure', 'pass')
