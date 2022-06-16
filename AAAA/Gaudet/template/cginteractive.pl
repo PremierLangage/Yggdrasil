@@ -48,6 +48,9 @@ Liste des langages autorisés. Si vous laissez cette variable vide, tout les lan
 Sinon, indiquez les langages souhaités, un par ligne
 
 La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
+
+Attention : il n'y pas de protection contre les deadlocks pouvant être occasionnés par la communication par pipes.
+Ainsi, il ne faut pas tenter de communication bilatérale bilatérale
 ==
 grader  =@ ./cginteractivegrader.py
 builder =@ ./cgbuilder.py
