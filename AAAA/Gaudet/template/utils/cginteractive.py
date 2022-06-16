@@ -5,6 +5,7 @@ class InvalidCGBinaryExecution(Exception):
     pass
 
 class CGInteractiveBinary():
+    """"""
     cmd_nobuf = ['stdbuf', '-oL']
 
     def __init__(self, cmd):
