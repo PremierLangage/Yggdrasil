@@ -63,6 +63,15 @@ async def runtests(cmd, feedback, testcases):
     for _ in range(5):
         task = create_task(worker(queue, cmd, results))
         tasks.append(task)
+    
+    await queue.join()
+
+    for task in tasks:
+        task.cancel()
+    await gather(*tasks, return_exceptions=True)
+
+    
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
