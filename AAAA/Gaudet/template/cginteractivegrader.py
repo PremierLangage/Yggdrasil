@@ -9,7 +9,7 @@
 import sys
 import langhandlers
 from cginteractive import CGInteractiveBinary, InvalidCGBinaryExecution
-from asyncio import run
+from asyncio import run, Queue
 from ast import literal_eval
 from feedback2 import FeedBack
 
