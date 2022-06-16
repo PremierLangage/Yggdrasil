@@ -21,9 +21,7 @@ async def test(cmd, feedback, *args):
 
     student = CGInteractiveBinary(cmd)
     await student.start()
-
     result = await evalscript(student, *args)
-
     await student.stop()
     return result
 
@@ -40,7 +38,7 @@ async def runtests(cmd, feedback, testcases):
     for testcase in testcases:
         tests_total += 1
         testargs, testname = testcase
-        
+
         try:
             result = await test(cmd, feedback, *testargs)
         except InvalidCGBinaryExecution as err:
