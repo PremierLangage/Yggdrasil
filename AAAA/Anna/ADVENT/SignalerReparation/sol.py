@@ -18,4 +18,4 @@ def getResults(array):
 arr = fromFileToList(exemple)
 res = getResults(arr)
 
-print res
+print(res)
