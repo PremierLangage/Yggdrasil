@@ -18,6 +18,7 @@ Comme d'habitude vous avez un fichier "exemple" pour lequel la bonne reponse est
 
 
 myarr = {{arr}}
+myval =  {{val}}
 
 ==
 
