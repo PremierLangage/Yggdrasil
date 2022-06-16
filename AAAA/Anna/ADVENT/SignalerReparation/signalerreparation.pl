@@ -35,6 +35,7 @@ def builddata():
     randval1 = random.randint(200)
     randval2 = random.randint(200)
     tab[randval2] = 2020 - tab[randval1] 
+    return tab
 
 def buildfile(filename):
     with open(filename, "w") as file:
