@@ -22,7 +22,7 @@ def getQ():
 
 
 def build():
-    Q1, Q2 = getQ1Q2()
+    r = getQ()
 
     plt1 = f"""
     >>> Question1() == {Q1} # Question 1
