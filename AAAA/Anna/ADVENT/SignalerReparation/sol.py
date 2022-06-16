@@ -17,7 +17,7 @@ def getResults(array):
 
 def getQ():
     builddata("data")
-    valeurs = fromFileToList(data)
+    valeurs = fromFileToList("data")
     return getResults(array)
 
 
