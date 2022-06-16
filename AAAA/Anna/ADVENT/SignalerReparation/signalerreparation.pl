@@ -24,7 +24,7 @@ before==
 with open("ennonce.md","r") as f:
     lenonce = f.read()
 
-r = getQ()
+r = sol.getQ()
 
 choices = r
 
