@@ -21,7 +21,6 @@ res = {{res1}}
 choix = {{choices}}
 ==
 
-
 before==
 import random
 import re
