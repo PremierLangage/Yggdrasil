@@ -21,7 +21,7 @@ res = {{res1}}
 ==
 
 choices == 
-float({{res1}}):0.0 #Bravo !Vous avez tous les points.
+0:0.0 #Bravo !Vous avez tous les points.
 ==
 
 
