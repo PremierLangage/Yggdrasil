@@ -40,6 +40,7 @@ async def runtests(cmd, feedback, testcases):
     for testcase in testcases:
         tests_total += 1
         testargs, testname = testcase
+        
         try:
             result = await test(cmd, feedback, *testargs)
         except InvalidCGBinaryExecution as err:
