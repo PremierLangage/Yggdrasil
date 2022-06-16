@@ -22,10 +22,7 @@ async def test(cmd, feedback, *args):
     student = CGInteractiveBinary(cmd)
     await student.start()
 
-    try:
-        result = await evalscript(student, *args)
-    except InvalidCGBinaryExecution as err:
-        result = False
+    result = await evalscript(student, *args)
 
     await student.stop()
     return result
