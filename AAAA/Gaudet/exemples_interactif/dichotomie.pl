@@ -33,7 +33,7 @@ from math import log, ceil
 async def evalscript(student, N, n):
     allowed = ceil(log(N, 2)) + 1
     
-    await student.send(str(N))
+    await student.send(N)
 
     for _ in range(allowed):
         queryResult = await student.receive()
