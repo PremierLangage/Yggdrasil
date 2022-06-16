@@ -68,7 +68,7 @@ res1 = getResults(valeurs)
 arr = fromFileToList("exemple")
 res = getResults(arr)
 
-choices = {'feedback': 'Bravo !Vous avez tous les points.', 'mode': ':', 'score': 100, 'v1': 'str(res1).0', 'v2': '0.0'}
+choices = {'feedback': 'Bravo !Vous avez tous les points.', 'mode': ':', 'score': 100, 'v1': str(res1), 'v2': '0.0'}
 
 ==
 
