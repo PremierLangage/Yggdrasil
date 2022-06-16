@@ -66,7 +66,7 @@ async def runtests(cmd, feedback, testcases):
     
     # Start worker tasks
     tasks = []
-    for _ in range(5):
+    for _ in range(6):
         task = asyncio.create_task(worker(queue, cmd, results))
         tasks.append(task)
     
