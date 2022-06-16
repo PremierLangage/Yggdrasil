@@ -18,7 +18,7 @@ Comme d'habitude vous avez un fichier "exemple" pour lequel la bonne reponse est
 
 
 myarr = {{arr}}
-myval =  {{valeurs}}
+myval =  {{res}}
 
 ==
 
@@ -68,7 +68,6 @@ with open("ennonce.md","r") as f:
 
 buildfile("data")
 valeurs = fromFileToList("data")
-res = getResults(arr)
 
 arr = fromFileToList("exemple")
 res = getResults(arr)
