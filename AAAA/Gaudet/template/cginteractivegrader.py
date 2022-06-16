@@ -9,7 +9,7 @@
 import sys
 import langhandlers
 from cginteractive import CGInteractiveBinary, InvalidCGBinaryExecution
-from asyncio import run, Queue, gather, create_task
+import async
 from ast import literal_eval
 from feedback2 import FeedBack
 from enum import Enum
@@ -133,6 +133,11 @@ if __name__ == "__main__":
     testcases = eval(testcases)
 
     # Run tests
+    asyncio.get_child_watcher()
+    loop = asyncio.get_event_loop()
+    coro = loop.run_in_executor(None, run_loop)
+    loop.run_until_complete(coro)
+
     score = run(runtests(handler.exec_cmd, feedback, testcases))
     
     # Write result to context and serialise to output JSON
