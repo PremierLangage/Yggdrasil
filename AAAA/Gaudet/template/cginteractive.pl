@@ -33,7 +33,10 @@ celui-ci peut être changé au besoin. En cas de timeout, le test est automatiqu
 * student.query(query, timeout=1) : méthode raccourci qui à la fois envoie une chaine de caractère (\n rajouté automatiquement si besoin) et attend une réponse directement après
 
 ***** testcases *****
-Ceci doit être une liste Python contenant les différents cas de tests à réaliser.
+Ceci doit être une liste Python contenant les différents cas de tests à réaliser. Chaque test a le format suivant:
+[(tuple contenant les différents arguments à passer à evalscript), "nom du test"]
+
+Chaque test est automatiquement réalisé lorsque l'étudiant envoie son code, après compilation si celle-ci passe.
 
 La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
 ==
