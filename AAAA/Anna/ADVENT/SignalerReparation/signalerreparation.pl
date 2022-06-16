@@ -35,7 +35,7 @@ with open("ennonce.md","r") as f:
 
 r = getQ()
 
-choices = r
+choices = r:0.0
 
 ==
 
