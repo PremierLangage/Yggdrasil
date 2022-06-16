@@ -41,7 +41,7 @@ def buildfile(filename):
     tab = builddata()
     with open(filename, "w") as file:
         for x in range(200):
-            file.write(str(random.randint(x, 2020))+"\n")
+            file.write(str(tab[x])+"\n")
 
 def fromFileToList(filename):
     with open(filename, "r") as file:
