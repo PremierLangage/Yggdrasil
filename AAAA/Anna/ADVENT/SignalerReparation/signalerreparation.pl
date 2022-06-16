@@ -66,7 +66,7 @@ def build():
 with open("ennonce.md","r") as f:
     lenonce = f.read()
 
-builddata("data")
+buildfile("data")
 valeurs = fromFileToList("data")
 arr = fromFileToList("exemple")
 res = getResults(arr)
