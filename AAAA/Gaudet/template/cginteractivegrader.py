@@ -26,8 +26,6 @@ async def test(cmd, *args):
         @return TestStatus.PASS si le test est passé, TestStatus.FAIL si le test a échoué, TestStatus.ERROR en cas d'erreur
         à l'exécution
     """
-    result = None
-
     student = CGInteractiveBinary(cmd)
     await student.start()
     try:
