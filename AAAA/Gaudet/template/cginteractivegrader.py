@@ -54,36 +54,7 @@ async def runtests(cmd, feedback, testcases):
 
     """
     results = [None for _ in range(len(testcases))]
-
-
-
-
-
-    tests_total = 0
-    tests_success = 0
-    failed = False
-    for testcase in testcases:
-        tests_total += 1
-        testargs, testname = testcase
-
-        if not failed:
-            try:
-                result = await test(cmd, *testargs)
-            except InvalidCGBinaryExecution as err:
-                feedback.addTestError(testname, "Erreur : le programme n'a pas répondu.\nCauses particulières à considérer : boucle infinie, arrêt prématuré du programme \
-                                                oubli d'un \n en fin d'écriture sur la sortie standard", 'Validation')
-                failed = True
-            else:
-                if result:
-                    feedback.addTestSuccess(testname, 'Validation', 'Validation')
-                    tests_success += 1
-                else:
-                    feedback.addTestFailure(testname, 'Echec', 'Validation')
-                    failed = True
-        if failed:
-            feedback.addTestFailure(testname, "Non réalisé (échec d'un test précédent)", 'Validation')
     
-    return tests_success * 100 // tests_total
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
