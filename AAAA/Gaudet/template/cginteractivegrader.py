@@ -71,7 +71,14 @@ async def runtests(cmd, feedback, testcases):
     await gather(*tasks, return_exceptions=True)
 
     for testcase, result in zip(testcases, results):
-        
+        if result == TestStatus.PASS:
+            pass
+        elif result == TestStatus.FAIL:
+            pass
+        elif result == TestStatus.ERROR:
+            pass
+        else:
+            raise AssertionError("Shouldn't be possible")
 
 
 if __name__ == "__main__":
