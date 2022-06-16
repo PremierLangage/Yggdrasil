@@ -7,6 +7,10 @@ Ce template permet d'écrire des exercices pouvant être résolus dans un langag
 Par rapport à la version basique, celle-ci permet plus d'interactivité avec le programme étudiant en réalisant plus qu'une seule entrée, et une seule sortie.
 Cela nécessite cependant d'écrire un script Python permettant de communiquer avec et d'évaluer le programme de l'étudiant et est donc plus complexe dans son utilisation.
 
+Deux éléments sont à définir dans l'exercice:
+
+* evalscript
+
 
 
 La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
