@@ -18,11 +18,7 @@ def getResults(array):
 def getQ():
     builddata("data")
     valeurs = fromFileToList(data)
-    mini = SIZE
-    nbsmalest = 0
-    q1 = fits(SIZE, valeurs, [], [0]*(SIZE+1))
-    q2 = nbsmalest
-    return q1, q2
+    return getResults(array)
 
 
 def build():
