@@ -55,8 +55,8 @@ async def runtests(cmd, feedback, testcases):
     """
     results = [None for _ in range(len(testcases))]
     queue = Queue()
-    for testcase in testcases:
-        queue.put_nowait(testcase)
+    for i, testcase in enumerate(testcases):
+        queue.put_nowait((i, testcase))
     
     tasks = []
     for _ in range(5):
