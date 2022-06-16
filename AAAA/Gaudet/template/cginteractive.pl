@@ -1,3 +1,6 @@
+# Date : 16/06/2022
+# Auteur : Clément Gaudet
+
 # Ceci est un template pour faire des exercices interactifs multilangages
 doc==
 Ce template permet d'écrire des exercices pouvant être résolus dans un langage au choix de l'étudiant.
