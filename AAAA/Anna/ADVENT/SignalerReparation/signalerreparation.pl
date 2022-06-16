@@ -21,6 +21,8 @@ res = {{res1}}
 choix = {{choices}}
 ==
 
+choices==
+==
 
 
 
