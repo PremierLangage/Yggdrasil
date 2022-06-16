@@ -40,6 +40,11 @@ async def test(cmd, *args):
     return result
 
 async def worker(queue, cmd, lst):
+    """Fonction servant à traiter les tests se trouvant dans la queue de travail
+        @param queue 
+        @param cmd commande pour lancer le programme étudiant
+        @param lst liste où mettre les résultats des exécutions
+    """
     while True:
         i, testcase = await queue.get()
         testargs, _ = testcase
