@@ -45,7 +45,6 @@ for line in lines:
     }
     choices.append(choice)
 
-
 def builddata():
     tab = [random.randint(x, 2020) for x in range(200)]
     randval1 = random.randint(0,200)
