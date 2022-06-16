@@ -54,7 +54,9 @@ def build():
     r = getQ()
     return r
 
-
+with open("ennonce.md","r") as f:
+    lenonce = f.read()
+    
 arr = fromFileToList("exemple")
 res = getResults(arr)
 print(res)
