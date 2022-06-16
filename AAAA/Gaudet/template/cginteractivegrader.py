@@ -9,7 +9,7 @@
 import sys
 import langhandlers
 from cginteractive import CGInteractiveBinary, InvalidCGBinaryExecution
-from asyncio import run
+from asyncio import run, Queue, gather
 from ast import literal_eval
 from feedback2 import FeedBack
 from enum import Enum
@@ -38,8 +38,8 @@ async def test(cmd, feedback, *args):
 
 async def worker(queue, lst, i):
     while True:
-        sleep_for = await queue.get()
-        await asyncio.sleep(sleep_for)
+        testargs, testname = await queue.get()
+        result = await 
         lst.append(sleep_for)
         queue.task_done()
 
