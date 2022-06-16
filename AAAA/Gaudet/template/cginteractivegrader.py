@@ -81,7 +81,7 @@ async def runtests(cmd, feedback, testcases):
         else:
             raise AssertionError("Shouldn't be possible")
     
-    return len(filter(lambda a: a == TestStatus.PASS, results)) * 100 // len(testcases)
+    return len(list(filter(lambda a: a == TestStatus.PASS, results))) * 100 // len(testcases)
 
 
 if __name__ == "__main__":
