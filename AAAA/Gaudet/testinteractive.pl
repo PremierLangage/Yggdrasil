@@ -15,6 +15,7 @@ Après cela, votre programme doit envoyé un nombre indiquant sa tentative et il
 * ">" si le nombre à deviner est plus grand
 * "=" si le nombre est correct
 
+Toutes les entrées et sorties doivent se terminer par un retour à la ligne!
 ==
 
 languages==
