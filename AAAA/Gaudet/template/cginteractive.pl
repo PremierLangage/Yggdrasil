@@ -11,7 +11,12 @@ Deux éléments sont à définir dans l'exercice:
 
 * evalscript
 
+Script Python devant contenir une fonction evalscript servant à évaluer le script étudiant. Cette fonction nécessite ce prototype précis:
 
+<b>async def evalscript(student, *args):</b>
+
+Il s'agit d'une fonction asynchrone, nécessitant donc le mot clé async, et le premier argument doit être réservé pour récupérer le processus étudiant.
+Un nombre arbitraire d'autres arguments peut être ajouté pour paramétrer l'évaluation notamment pour les tests.
 
 La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
 ==
