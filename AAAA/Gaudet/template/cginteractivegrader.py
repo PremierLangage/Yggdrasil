@@ -51,6 +51,9 @@ async def runtests(cmd, feedback, testcases):
         @return la note correspondante sur 100
 
     """
+    
+
+
     tests_total = 0
     tests_success = 0
     failed = False
