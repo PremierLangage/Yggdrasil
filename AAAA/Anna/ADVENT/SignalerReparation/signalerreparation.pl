@@ -14,7 +14,7 @@ text==
 
 La liste des informations est dans le fichier "data" .
 
-Comme d'habitude vous avez un fichier "exemple" pour lequel la bonne reponse est : 
+Comme d'habitude vous avez un fichier "exemple" pour lequel la bonne reponse est : 145875
 
 
 myarr = {{arr}}
