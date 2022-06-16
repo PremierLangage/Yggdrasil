@@ -54,7 +54,7 @@ def getResults(array):
                 return array[i] * array[j]
 
 def getQ():
-    builddata("data")
+    buildfile("data")
     valeurs = fromFileToList("data")
     return getResults(valeurs)
 
