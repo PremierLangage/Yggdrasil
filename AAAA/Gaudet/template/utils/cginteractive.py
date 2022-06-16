@@ -6,6 +6,8 @@ class InvalidCGBinaryExecution(Exception):
 
 class CGInteractiveBinary():
     """Class which allows to start, stop and interact with a process through its standard input and output easily.
+    There is no deadlock protection, thus communication must always be unidirectional at any time, as in, both processes should
+    not attempt to communicate with the other at the same time.
     """
     cmd_nobuf = ['stdbuf', '-oL']
 
