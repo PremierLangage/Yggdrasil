@@ -19,6 +19,8 @@ Après cela, votre programme doit envoyer un nombre indiquant sa tentative et il
 * "=" si le nombre est correct
 
 <b>Toutes les entrées et sorties doivent se terminer par un retour à la ligne, et se font sur l'entrée et la sortie standard!</b>
+
+(il n'est pas nécessaire de sécuriser les entrées/sorties)
 ==
 
 languages==
