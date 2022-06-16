@@ -18,12 +18,13 @@ avant 2
 
 Votre position horizontale et votre profondeur commencent toutes deux à 0. Les étapes ci-dessus les modifieraient alors comme suit :
 
-vers l'avant 5 ajoute 5 à votre position horizontale, un total de 5.
-down 5 ajoute 5 à votre profondeur, ce qui donne une valeur de 5.
-avant 8 ajoute 8 à votre position horizontale, un total de 13.
-jusqu'à 3 diminue votre profondeur de 3, ce qui donne une valeur de 2.
-8 vers le bas ajoute 8 à votre profondeur, ce qui donne une valeur de 10.
-vers l'avant 2 ajoute 2 à votre position horizontale, soit un total de 15.
+    - vers l'avant 5 ajoute 5 à votre position horizontale, un total de 5.
+    - down 5 ajoute 5 à votre profondeur, ce qui donne une valeur de 5.
+    - avant 8 ajoute 8 à votre position horizontale, un total de 13.
+    - jusqu'à 3 diminue votre profondeur de 3, ce qui donne une valeur de 2.
+    - 8 vers le bas ajoute 8 à votre profondeur, ce qui donne une valeur de 10.
+    - vers l'avant 2 ajoute 2 à votre position horizontale, soit un total de 15.
+
 Après avoir suivi ces instructions, vous auriez une position horizontale de 15 et une profondeur de 10. (En les multipliant, vous obtenez 150.)
 
 Calculez la position horizontale et la profondeur que vous auriez après avoir suivi le parcours prévu. Qu'obtenez-vous si vous multipliez votre position horizontale finale par votre profondeur finale ?s
