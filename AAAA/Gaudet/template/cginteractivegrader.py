@@ -62,17 +62,20 @@ async def runtests(cmd, feedback, testcases):
 
     """
     results = [None for _ in range(len(testcases))]
+
+    # Fill queue
     queue = Queue()
     for i, testcase in enumerate(testcases):
         queue.put_nowait((i, testcase))
     
+    # Start worker tasks
     tasks = []
     for _ in range(5):
         task = create_task(worker(queue, cmd, results))
         tasks.append(task)
     
+    # Wait for queue to empty then stopping all tasks
     await queue.join()
-
     for task in tasks:
         task.cancel()
     await gather(*tasks, return_exceptions=True)
