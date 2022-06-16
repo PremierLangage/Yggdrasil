@@ -103,9 +103,9 @@ class OCamlHandler():
 
 # Available languages with corresponding handlers
 implemented_languages = {
+    'python': PythonHandler,
     'c': CHandler,
     'cpp': CPPHandler,
-    'python': PythonHandler,
     'java': JavaHandler,
     'ocaml': OCamlHandler
 }
