@@ -1,12 +1,14 @@
 extends= template/cginteractive.pl
 
 author=CG
-title=Test
+title=Recherche dichotomique
 
 tag=function # N'oubliez pas de remplir ce champs svp
 
 text==
-Recherche dichotomique
+Le but est d'écrire un programme qui devine un nombre en un nombre le plus limité possible d'essais en implémentant une stratégie de recherche dichotomique.
+
+
 ==
 
 languages==
