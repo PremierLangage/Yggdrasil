@@ -46,10 +46,7 @@ async def worker(queue, cmd, lst):
     while True:
         i, testcase = await queue.get()
         testargs, _ = testcase
-        try:
-            lst[i] = TestStatus.PASS if await test(cmd, *testargs) else TestStatus.FAIL
-        except InvalidCGBinaryExecution:
-            lst[i] = TestStatus.ERROR
+        lst[i] = wait test(cmd, *testargs)
         queue.task_done()
 
 async def runtests(cmd, feedback, testcases):
