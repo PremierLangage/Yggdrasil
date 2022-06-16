@@ -51,7 +51,7 @@ async def runtests(cmd, feedback, testcases):
         @return la note correspondante sur 100
 
     """
-    
+    results = [None for _ in range(len(testcases))]
 
 
 
