@@ -97,6 +97,7 @@ if __name__ == "__main__":
         raise ValueError("Failed to load eval script")
 
     # Load test cases
+    from random import *
     testcases = eval(testcases)
 
     # Run tests
