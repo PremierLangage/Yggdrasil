@@ -30,11 +30,14 @@ choices ==
 before==
 import random
 
-def builddata(filename):
+def builddata():
+
+
+def buildfile(filename):
     with open(filename, "w") as file:
         for x in range(200):
             file.write(str(random.randint(x, 2020))+"\n")
-        randval = 
+        randval = random.randint(200)
 
 def fromFileToList(filename):
     with open(filename, "r") as file:
