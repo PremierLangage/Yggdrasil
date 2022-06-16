@@ -23,7 +23,6 @@ def getQ():
 
 def build():
     r = getQ()
-
     plt = f"""
     >>> Question1() == {Q1} # Question 1
     True
