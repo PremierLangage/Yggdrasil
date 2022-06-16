@@ -80,8 +80,8 @@ async def runtests(cmd, feedback, testcases):
         elif result == TestStatus.FAIL:
             feedback.addTestFailure(testname, 'Echec', 'Validation')
         elif result == TestStatus.ERROR:
-            feedback.addTestError(testname, "Erreur : le programme n'a pas répondu.\nCauses particulières à considérer : boucle infinie, arrêt prématuré du programme \
-                                            oubli d'un \n en fin d'écriture sur la sortie standard", 'Validation')
+            feedback.addTestError(testname, "Erreur : le programme n'a pas répondu.\nCauses particulières à considérer : boucle infinie, arrêt prématuré du programme" +
+                                            "oubli d'un \n en fin d'écriture sur la sortie standard", 'Validation')
         else:
             raise AssertionError("Shouldn't be possible")
     
