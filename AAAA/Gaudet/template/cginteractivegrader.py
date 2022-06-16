@@ -54,7 +54,7 @@ async def worker(queue, cmd, lst):
         queue.task_done()
 
 async def runtests(cmd, feedback, testcases):
-    """Lance l'ensemble des test
+    """Lance l'ensemble des test de manière concurrente
         @param cmd commande pour lancer l'exécutable correspondant au programme soumis par l'étudiant
         @param feedback objet de type FeedBack pour y inscrire le résultat du test
         @param testcases liste de tuples de la forme (*args, testname) correspondant aux tests
