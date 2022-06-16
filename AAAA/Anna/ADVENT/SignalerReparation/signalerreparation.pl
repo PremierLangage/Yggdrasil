@@ -68,7 +68,7 @@ with open("ennonce.md","r") as f:
 
 buildfile("data")
 valeurs = fromFileToList("data")
-res1 = getResults(arr)
+res1 = getResults(valeurs)
 
 arr = fromFileToList("exemple")
 res = getResults(arr)
