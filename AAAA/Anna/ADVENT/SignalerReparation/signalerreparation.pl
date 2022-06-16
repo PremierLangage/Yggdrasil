@@ -18,7 +18,7 @@ Comme d'habitude vous avez un fichier "exemple" pour lequel la bonne reponse est
 
 Vos données sont les suivantes : {{valeurs}}
 res = {{res1}}
-choix = choices
+choix = {{choices}}
 ==
 
 
