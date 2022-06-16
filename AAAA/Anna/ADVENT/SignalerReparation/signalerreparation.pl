@@ -32,7 +32,7 @@ import random
 
 def builddata(filename):
     with open(filename, "w") as file:
-        for x in range(200):
+        for x in range(199):
             file.write(str(random.randint(x, 2020))+"\n")
 
 def fromFileToList(filename):
