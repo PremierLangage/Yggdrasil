@@ -26,7 +26,7 @@ async def test(cmd, *args):
         @param args arguments à ajouter à l'appel du script d'évaluation écrit par le professeur
         @return True si le test est passé, False sinon
     """
-    result = False
+    result = None
 
     student = CGInteractiveBinary(cmd)
     await student.start()
