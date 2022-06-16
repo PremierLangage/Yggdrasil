@@ -135,10 +135,8 @@ if __name__ == "__main__":
     # Run tests
     asyncio.get_child_watcher()
     loop = asyncio.get_event_loop()
-    coro = loop.run_in_executor(None, run_loop)
-    loop.run_until_complete(coro)
+    coro = loop.run_in_executor(runtests(handler.exec_cmd, feedback, testcases), run_loop)
+    score = loop.run_until_complete(cor
 
-    score = run(runtests(handler.exec_cmd, feedback, testcases))
-    
     # Write result to context and serialise to output JSON
     output(score, feedback.render(), context)
