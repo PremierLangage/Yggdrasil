@@ -1,4 +1,4 @@
-extends = /ComputerScience/python/template/pltest.pl
+extends = /gift/templates/qnumericset.pl
 
 @ /builder/before.py [builder.py]
 @sol.py [build.py]
