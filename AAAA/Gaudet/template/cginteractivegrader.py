@@ -68,6 +68,7 @@ async def runtests(cmd, feedback, testcases):
 
     for task in tasks:
         task.cancel()
+    
     await gather(*tasks, return_exceptions=True)
 
     for (_, testname), result in zip(testcases, results):
