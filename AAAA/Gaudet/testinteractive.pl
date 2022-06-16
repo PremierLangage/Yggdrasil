@@ -50,5 +50,5 @@ testcases==
 [[(100, randint(0, 24)), "Valeur basse"],
 [(100, randint(76, 100), "Valeur haute"],
 [(100, randint(39, 61)), "Valeur au milieu"],
-[(1000000000, 43257), "N tres grand"]]
+[(1000000000, randint(0, 1000000000)), "N tres grand"]]
 ==
