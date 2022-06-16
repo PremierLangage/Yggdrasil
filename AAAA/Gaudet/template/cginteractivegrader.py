@@ -74,7 +74,7 @@ async def runtests(cmd, feedback, testcases):
         task = create_task(worker(queue, cmd, results))
         tasks.append(task)
     
-    # Wait for queue to empty then stopping all tasks
+    # Wait for queue to empty then stop all tasks
     await queue.join()
     for task in tasks:
         task.cancel()
