@@ -24,7 +24,10 @@ Cette fonction doit renvoyer True si le test passe, False sinon.
 
 Pour interagir avec le processus étudiant, 3 méthodes sont disponibles :
 
-* 
+* student.send(*args) : cette méthode permet d'envoyer une ou des chaines de caractères au processus via son entrée standard
+Des \n sont ajoutés entre les différents arguments et à la fin de la dernier chaine automatiquement
+
+* student.receive(timeout=1) : cette méthode attend de récupérer une ligne complète sur la sortie standard du processus. Cette méthode 
 
 La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
 ==
