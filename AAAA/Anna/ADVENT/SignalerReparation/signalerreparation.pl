@@ -23,8 +23,6 @@ choix = {{choices}}
 
 
 
-
-
 before==
 import random
 import re
