@@ -15,7 +15,7 @@ from feedback2 import FeedBack
 
 from sandboxio import output, get_context, get_answers
 
-async def test(cmd, feedback, *args):
+async def test(cmd, feedback, queue):
     """Lance un test
         @param cmd commande pour lancer l'exécutable correspondant au programme soumis par l'étudiant
         @param feedback objet de type FeedBack pour y inscrire le résultat du test
