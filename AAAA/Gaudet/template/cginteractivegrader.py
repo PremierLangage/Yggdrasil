@@ -43,11 +43,8 @@ async def worker(queue, cmd, lst, i):
         try:
             lst[i] = TestStatus.PASS if await test(cmd, *testargs) else TestStatus.FAIL
         except InvalidCGBinaryExecution as err:
-            pass
-        else:
-            pass
-            
-        lst.append(sleep_for)
+            lst[i] = TestStatus.ERROR
+        
         queue.task_done()
 
 async def runtests(cmd, feedback, testcases):
