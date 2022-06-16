@@ -40,7 +40,7 @@ def builddata():
 def buildfile(filename):
     tab = builddata()
     with open(filename, "w") as file:
-        for x in range(200):
+        for x in range(0,200):
             file.write(str(tab[x])+"\n")
 
 def fromFileToList(filename):
