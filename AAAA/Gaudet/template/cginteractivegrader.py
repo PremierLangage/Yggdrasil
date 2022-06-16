@@ -39,8 +39,9 @@ async def test(cmd, *args):
 async def worker(queue, cmd, lst):
     while True:
         i, testcase = await queue.get()
+        testargs, _ = testcase
         try:
-            lst[i] = TestStatus.PASS if await test(cmd, *testcase[0]) else TestStatus.FAIL
+            lst[i] = TestStatus.PASS if await test(cmd, *testargs) else TestStatus.FAIL
         except InvalidCGBinaryExecution as err:
             lst[i] = TestStatus.ERROR
         queue.task_done()
