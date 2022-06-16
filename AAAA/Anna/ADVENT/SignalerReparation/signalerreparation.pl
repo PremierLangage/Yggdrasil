@@ -21,7 +21,7 @@ res = {{res1}}
 ==
 
 choices == 
-res1
+res1:0.0
 ==
 
 
