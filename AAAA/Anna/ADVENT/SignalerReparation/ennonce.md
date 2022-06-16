@@ -18,6 +18,7 @@ Par exemple, supposons que votre note de frais contienne les éléments suivants
 299
 675
 1456
+
 Dans cette liste, les deux entrées qui totalisent 2020 sont 1721 et 299. En les multipliant ensemble, on obtient 1721 * 299 = 514579, donc la bonne réponse est 514579.
 
 Bien sûr, votre note de frais est beaucoup plus importante. Trouvez les deux entrées qui totalisent 2020 ; qu'est-ce que vous obtenez si vous les multipliez ensemble?
