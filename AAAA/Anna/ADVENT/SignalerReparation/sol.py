@@ -14,10 +14,9 @@ def getResults(array):
         for j in range(i+1,len(array)):
             if array[i] + array[j] == 2020:
                 return array[i] * array[j]
-builddata("data")
 
 def getQ():
-    
+    builddata("data")
     valeurs = fromFileToList(data)
     return getResults(array)
 
