@@ -54,6 +54,10 @@ async def runtests(cmd, feedback, testcases):
 
     """
     results = [None for _ in range(len(testcases))]
+    queue = asyncio.Queue()
+    for testcase in testcases:
+        queue.put_nowait(testcase)
+    
     
 
 if __name__ == "__main__":
