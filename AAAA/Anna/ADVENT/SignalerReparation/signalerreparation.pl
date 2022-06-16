@@ -42,9 +42,6 @@ def buildfile(filename):
     with open(filename, "w") as file:
         for x in range(random.randint(0, 200)):
             file.write(str(random.randint(x, 2020))+"\n")
-    with open(filename, "w") as file:
-        for x in range(200):
-            file.write(str(+"\n")
 
 def fromFileToList(filename):
     with open(filename, "r") as file:
