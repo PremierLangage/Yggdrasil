@@ -9,7 +9,7 @@
 import sys
 import langhandlers
 from cginteractive import CGInteractiveBinary, InvalidCGBinaryExecution
-import asyncio
+from asyncio import run, Queue, gather, create_task
 from ast import literal_eval
 from feedback2 import FeedBack
 from enum import Enum
@@ -55,20 +55,20 @@ async def runtests(cmd, feedback, testcases):
 
     """
     results = [None for _ in range(len(testcases))]
-    queue = asyncio.Queue()
+    queue = Queue()
     for i, testcase in enumerate(testcases):
         queue.put_nowait((i, testcase))
     
     tasks = []
     for _ in range(5):
-        task = asyncio.create_task(worker(queue, cmd, results))
+        task = create_task(worker(queue, cmd, results))
         tasks.append(task)
     
     await queue.join()
 
     for task in tasks:
         task.cancel()
-    await asyncio.gather(*tasks, return_exceptions=True)
+    await gather(*tasks, return_exceptions=True)
 
     for (_, testname), result in zip(testcases, results):
         if result == TestStatus.PASS:
@@ -83,14 +83,6 @@ async def runtests(cmd, feedback, testcases):
     
     return len(list(filter(lambda a: a == TestStatus.PASS, results))) * 100 // len(testcases)
 
-def run_loop():
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop) # bind event loop to current thread
-
-    try:
-        return loop.run_until_complete(run(loop))
-    finally:
-        loop.close()
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
@@ -141,10 +133,7 @@ if __name__ == "__main__":
     testcases = eval(testcases)
 
     # Run tests
-    asyncio.get_child_watcher()
-    loop = asyncio.get_event_loop()
-    coro = loop.run_in_executor(None, run_loop())
-    score = loop.run_until_complete(coro)
-
+    score = run(runtests(handler.exec_cmd, feedback, testcases))
+    
     # Write result to context and serialise to output JSON
     output(score, feedback.render(), context)
