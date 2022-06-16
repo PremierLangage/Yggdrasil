@@ -36,7 +36,7 @@ def builddata(filename):
 
 def fromFileToList(filename):
     with open(filename, "r") as file:
-        return [x for x in file.readlines()]
+        return [int(x[:-1]) for x in file.readlines()]
 
 def getResults(array):
     for i in range(len(array)):
