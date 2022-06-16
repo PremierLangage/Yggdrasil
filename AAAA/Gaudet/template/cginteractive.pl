@@ -27,7 +27,8 @@ Pour interagir avec le processus étudiant, 3 méthodes sont disponibles :
 * student.send(*args) : cette méthode permet d'envoyer une ou des chaines de caractères au processus via son entrée standard
 Des \n sont ajoutés entre les différents arguments et à la fin de la dernier chaine automatiquement
 
-* student.receive(timeout=1) : cette méthode attend de récupérer une ligne complète sur la sortie standard du processus. Cette méthode 
+* student.receive(timeout=1) : cette méthode attend de récupérer une ligne complète sur la sortie standard du processus. Un timeout de 1 seconde est mise par défaut,
+celui-ci peut être changé au besoin
 
 La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
 ==
