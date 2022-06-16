@@ -32,7 +32,11 @@ async def test(cmd, *args):
 
     student = CGInteractiveBinary(cmd)
     await student.start()
-    result = await evalscript(student, *args)
+    try:
+        result = await evalscript(student, *args)
+    except InvalidCGBinaryExecution:
+        await student.stop()
+        raise InvalidCGBinaryExecution
     await student.stop()
     return result
 
@@ -42,7 +46,7 @@ async def worker(queue, cmd, lst):
         testargs, _ = testcase
         try:
             lst[i] = TestStatus.PASS if await test(cmd, *testargs) else TestStatus.FAIL
-        except InvalidCGBinaryExecution as err:
+        except InvalidCGBinaryExecution:
             lst[i] = TestStatus.ERROR
         queue.task_done()
 
