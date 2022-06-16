@@ -11,8 +11,11 @@ Le but est d'écrire un programme qui devine un nombre en un nombre le plus limi
 Votre programme recevera d'abord un nombre N donnant l'intervalle sur lequel le nombre peut être tiré (de 0 à N exclu)
 
 Après cela, votre programme doit envoyé un nombre indiquant sa tentative et il recevra une réponse en retour:
+
 * "<" si le nombre à deviner est plus petit
+
 * ">" si le nombre à deviner est plus grand
+
 * "=" si le nombre est correct
 
 Toutes les entrées et sorties doivent se terminer par un retour à la ligne!
