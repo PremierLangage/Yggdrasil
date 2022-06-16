@@ -2,9 +2,10 @@ Maintenant, vous devez comprendre comment piloter cette chose.
 
 Il semble que le sous-marin puisse prendre une série de commandes comme vers l'avant 1, vers le bas 2 ou vers le haut 3 :
 
-vers l'avant X augmente la position horizontale de X unités.
-vers le bas X augmente la profondeur de X unités.
-vers le haut X diminue la profondeur de X unités.
+    - vers l'avant X augmente la position horizontale de X unités.
+    - vers le bas X augmente la profondeur de X unités.
+    - vers le haut X diminue la profondeur de X unités.
+
 Notez que puisque vous êtes sur un sous-marin, le bas et le haut affectent votre profondeur, et ils ont donc le résultat opposé à ce à quoi vous pourriez vous attendre.
 
 Le sous-marin semble déjà avoir un parcours planifié (votre entrée de puzzle). Vous devriez probablement comprendre où ça va. Par exemple:
