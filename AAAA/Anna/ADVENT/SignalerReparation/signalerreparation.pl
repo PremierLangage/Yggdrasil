@@ -38,6 +38,10 @@ def builddata():
     return tab
 
 def buildfile(filename):
+    tab = builddata()
+    with open(filename, "w") as file:
+        for x in range(random.randint(0, 200)):
+            file.write(str(random.randint(x, 2020))+"\n")
     with open(filename, "w") as file:
         for x in range(200):
             file.write(str(+"\n")
