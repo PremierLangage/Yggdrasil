@@ -26,7 +26,24 @@ choices ==
 
 
 before==
-import random
+import re
+lines = choices.split('\n')
+choices = []
+liste = []
+mode = None
+pattern = re.compile(r'(?:%(?P<score>.*)%)?(?P<v1>.*)(?P<mode>\:|\.\.)(?P<v2>(?:(?:\\\#)|[^\#])+)(?:\#(?P<feedback>.*))?')
+for line in lines:
+    match = pattern.match(line)
+    if not match:
+        continue
+    choice = {
+        "score": match.group('score') or 100,
+        "v1": match.group('v1').strip(),
+        "mode": match.group('mode'),
+        "v2": match.group('v2').strip(),
+        "feedback": match.group('feedback') or ''
+    }
+    choices.append(choice)
 
 def builddata():
     tab = [random.randint(x, 2020) for x in range(200)]
