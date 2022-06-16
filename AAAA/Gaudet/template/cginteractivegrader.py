@@ -80,6 +80,8 @@ async def runtests(cmd, feedback, testcases):
                                             oubli d'un \n en fin d'écriture sur la sortie standard", 'Validation')
         else:
             raise AssertionError("Shouldn't be possible")
+    
+    
 
 
 if __name__ == "__main__":
