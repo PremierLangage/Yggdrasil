@@ -6,7 +6,7 @@ title=Recherche dichotomique
 tag=dichotomy # N'oubliez pas de remplir ce champs svp
 
 text==
-Le but est d'écrire un programme qui devine un nombre en un nombre limité  d'essais en implémentant une stratégie de recherche dichotomique.
+Le but est d'écrire un programme dans un langage disponible de votre choix qui devine un nombre en un nombre limité d'essais en implémentant une stratégie de recherche dichotomique.
 
 Votre programme recevera d'abord un nombre N donnant l'intervalle sur lequel le nombre peut être tiré (de 0 à N exclu)
 
