@@ -36,7 +36,7 @@ async def test(cmd, *args):
     await student.stop()
     return result
 
-async def worker(queue, cmd, lst, i):
+async def worker(queue, cmd, lst):
     while True:
         testargs, _ = await queue.get()
         try:
@@ -54,13 +54,13 @@ async def runtests(cmd, feedback, testcases):
 
     """
     results = [None for _ in range(len(testcases))]
-    queue = asyncio.Queue()
+    queue = Queue()
     for testcase in testcases:
         queue.put_nowait(testcase)
     
     tasks = []
     for _ in range(5):
-        task = asyncio.create_task(worker(queue, res))
+        task = create_task(worker(queue, cmd, results))
         tasks.append(task)
 
 if __name__ == "__main__":
