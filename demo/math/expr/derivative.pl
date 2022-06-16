@@ -2,7 +2,7 @@ extends = /model/math/expr.pl
 
 title = Dérivation
 
-before ==
+before == #|py|
 var('x')
 g = choice([sin(x), cos(x), exp(x)])
 n = randint(5, 10)
