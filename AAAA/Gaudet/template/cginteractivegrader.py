@@ -12,8 +12,14 @@ from cginteractive import CGInteractiveBinary, InvalidCGBinaryExecution
 from asyncio import run
 from ast import literal_eval
 from feedback2 import FeedBack
+from enum import Enum
 
 from sandboxio import output, get_context, get_answers
+
+class TestStatus(Enum):
+    PASS = 1
+    FAIL = 2
+    ERROR = 3
 
 async def test(cmd, feedback, *args):
     """Lance un test
@@ -30,7 +36,7 @@ async def test(cmd, feedback, *args):
     await student.stop()
     return result
 
-async def worker(queue, lst):
+async def worker(queue, lst, i):
     while True:
         sleep_for = await queue.get()
         await asyncio.sleep(sleep_for)
