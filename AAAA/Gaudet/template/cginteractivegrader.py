@@ -21,7 +21,7 @@ class TestStatus(Enum):
     FAIL = 2
     ERROR = 3
 
-async def test(cmd, feedback, *args):
+async def test(cmd, *args):
     """Lance un test
         @param cmd commande pour lancer l'exécutable correspondant au programme soumis par l'étudiant
         @param feedback objet de type FeedBack pour y inscrire le résultat du test
@@ -36,10 +36,20 @@ async def test(cmd, feedback, *args):
     await student.stop()
     return result
 
-async def worker(queue, lst, i):
+async def worker(queue, cmd, lst, i):
     while True:
-        testargs, testname = await queue.get()
-        result = await 
+        testargs, _ = await queue.get()
+
+        try:
+            if await test(cmd, *testargs):
+                lst[i] = TestStatus.PASS
+            else:
+                lst[i] = TestStatus.FAIL
+        except InvalidCGBinaryExecution as err:
+            pass
+        else:
+            pass
+            
         lst.append(sleep_for)
         queue.task_done()
 
@@ -66,7 +76,7 @@ async def runtests(cmd, feedback, testcases):
 
         if not failed:
             try:
-                result = await test(cmd, feedback, *testargs)
+                result = await test(cmd, *testargs)
             except InvalidCGBinaryExecution as err:
                 feedback.addTestError(testname, "Erreur : le programme n'a pas répondu.\nCauses particulières à considérer : boucle infinie, arrêt prématuré du programme \
                                                 oubli d'un \n en fin d'écriture sur la sortie standard", 'Validation')
