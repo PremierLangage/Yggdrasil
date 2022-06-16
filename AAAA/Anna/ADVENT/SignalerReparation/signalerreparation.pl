@@ -26,6 +26,7 @@ choices ==
 
 
 before==
+import random
 import re
 lines = choices.split('\n')
 choices = []
