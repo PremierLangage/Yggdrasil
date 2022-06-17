@@ -35,7 +35,7 @@ async def test(cmd, *args):
         status = TestStatus.ERROR
         got, want = None, None
     await student.stop()
-    return result, got, want
+    return status, got, want
 
 async def worker(queue, cmd, lst):
     """Fonction servant à traiter les tests se trouvant dans la queue de travail
