@@ -35,7 +35,7 @@ async def evalscript(student, N, n):
     
     await student.send(N)
 
-    for _ in range(allowed):
+    for i in range(allowed):
         queryResult = await student.receive()
         if not queryResult.strip().isdigit():
             return False
