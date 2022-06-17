@@ -48,9 +48,9 @@ if __name__ == "__main__":
 
     sync_comps(dic)
 
-    for k in list(answers.keys()):
-        if isinstance(answers[k], dict):
-            del answers[k]
+    #for k in list(answers.keys()):
+    #    if isinstance(answers[k], dict):
+    #        del answers[k]
     
     dic['answers'] = answers
 
