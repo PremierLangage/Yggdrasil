@@ -51,7 +51,7 @@ if __name__ == "__main__":
                 else:
                     feedback.addTestFailure(name, proc.stdout.strip(), want.strip())
             else:
-                feedback.addTestError(name, "Erreur à l'exécution. Code de retour :" + str(proc.returncode) + " Sortie d'erreur : " + proc.stderr, want)
+                feedback.addTestError(name, "Erreur à l'exécution (code de retour " + str(proc.returncode) + ")\n Sortie d'erreur : " + proc.stderr, want)
 
     # Final feedback
     output(testSuccess * 100 // len(testcases), feedback.render(), context)
