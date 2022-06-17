@@ -34,6 +34,8 @@ if __name__ == "__main__":
     # Execution of tests
     from random import *
     testcases = eval(testcases)
+    test_reussis = 0
+
     for test, want, name in testcases:
         try:
             proc = subprocess.run(self.run_cmd, input=test, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
