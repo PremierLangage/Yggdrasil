@@ -78,9 +78,9 @@ async def runtests(cmd, feedback, testcases):
     # Create feedback
     for (_, testname), (result, got, want) in zip(testcases, results):
         if result == TestStatus.PASS:
-            feedback.addTestSuccess(testname, 'Validation', 'Validation')
+            feedback.addTestSuccess(testname, got, want)
         elif result == TestStatus.FAIL:
-            feedback.addTestFailure(testname, 'Echec', 'Validation')
+            feedback.addTestFailure(testname, got, want)
         elif result == TestStatus.ERROR:
             feedback.addTestError(testname, "Erreur : le programme n'a pas répondu. Causes probables: oubli d'un '\\n', boucle infinie, arrêt prématuré" ,
                                             'Validation')
