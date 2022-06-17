@@ -33,6 +33,7 @@ async def test(cmd, *args):
         status = TestStatus.PASS if result else TestStatus.FAIL
     except InvalidCGBinaryExecution:
         status = TestStatus.ERROR
+        got, want = None, None
     await student.stop()
     return result, got, want
 
