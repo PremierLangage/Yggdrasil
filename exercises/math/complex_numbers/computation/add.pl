@@ -18,7 +18,7 @@ while z1 == z2:
 #z2b = conjugate(z2)
 
 prefixes = []
-sols = []s
+sols = []
 
 prefixes.append(f"$! z_1 + z_2 = !$")
 sols.append((z1 + z2).expand())
