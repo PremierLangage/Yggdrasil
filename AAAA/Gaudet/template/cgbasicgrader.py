@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
     for test, want, name in testcases:
         try:
-            proc = subprocess.run(self.run_cmd, input=test, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+            proc = subprocess.run(handler.exec_cmd, input=test, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                 text=True, timeout=1)
         except subprocess.TimeoutExpired:
             feedback.addTestError(name, "Erreur : l'exécution a pris trop de temps" , want)
