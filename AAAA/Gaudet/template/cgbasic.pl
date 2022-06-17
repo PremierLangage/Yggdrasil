@@ -81,6 +81,7 @@ if not success:
     sys.exit(1)
 
 # Execution of tests
+from random import *
 testcases = eval(testcases)
 for test, want, name in testcases:
     try:
