@@ -89,10 +89,13 @@ for test, want, name in testcases:
     except subprocess.TimeoutExpired:
         feedback.addTestError(name, "Erreur : l'exécution a pris trop de temps" , want)
     else:
-        if proc.stdout.strip() == want.strip():
-            feedback.addTestSuccess(name, output, want)
+        if proc.returncode == 0:
+            if proc.stdout.strip() == want.strip():
+                feedback.addTestSuccess(name, output, want)
+            else:
+                feedback.addTestFailure(name, output, want)
         else:
-            feedback.addTestFailure(name, output, want)
+            
 
 # Final feedback
 grade = (score, feedback)
