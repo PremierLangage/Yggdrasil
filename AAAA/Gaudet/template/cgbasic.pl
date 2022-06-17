@@ -13,7 +13,7 @@ la sortie standard et erreur par celui-ci.
 La batterie de test est à mettre dans la variable testcases sous forme d'une liste python contenant
 des tuples de la forme (chaine a mettre dans stdin, chaine à recevoir dans stdout, chaine correspondant au nom du test)
 
-La liste des langages utilisables actuellement est : c, cpp, python, java
+La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
 ==
 grader  =@ ./cgbasicgrader.py
 builder =@ ./cgbuilder.py
