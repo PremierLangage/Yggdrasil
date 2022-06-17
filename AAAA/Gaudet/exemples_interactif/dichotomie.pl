@@ -42,7 +42,7 @@ async def evalscript(student, N, n):
         attempt = int(queryResult)
         if attempt == n:
             await student.send('=')
-            return True
+            return True, f'{n} en {i} coups', f'{n} en {allowed} coups max'
         elif attempt > n:
             await student.send('<')
         else:
