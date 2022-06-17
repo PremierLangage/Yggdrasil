@@ -81,16 +81,15 @@ if not success:
     sys.exit(1)
 
 # Execution of tests
-else:
-    testcases = eval(testcases)
-    for test, want, name in testcases:
-        try:
-            proc = subprocess.run(self.run_cmd, input=test, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                text=True, timeout=1)
-        except subprocess.TimeoutExpired:
-            pass
-        else:
-            pass
+testcases = eval(testcases)
+for test, want, name in testcases:
+    try:
+        proc = subprocess.run(self.run_cmd, input=test, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+            text=True, timeout=1)
+    except subprocess.TimeoutExpired:
+        pass
+    else:
+        pass
 
 # Final feedback
 grade = (score, feedback)
