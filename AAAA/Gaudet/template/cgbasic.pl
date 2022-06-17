@@ -90,6 +90,7 @@ for test, want, name in testcases:
         feedback.addTestError(name, "Erreur : l'exécution a pris trop de temps" , want)
     else:
         output = proc.stdout.read()
+        err = proc.stderr.read()
         if output.strip() == want.strip():
             feedback.addTestSuccess(name, output, want)
         else:
