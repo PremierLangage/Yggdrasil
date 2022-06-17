@@ -30,7 +30,7 @@ Les langages autorisés sont à indiquer dans la variable language comme ceci:
 
 La liste des langages utilisables actuellement est : c, cpp, python, java
 ==
-grader  =@ /grader/evaluator.py
+grader  =@ ./cgbasicgrader.py
 builder =@ ./cgbuilder.py
 
 @ ./utils/cgtest.py
@@ -54,50 +54,4 @@ languages==
 ==
 
 before==
-==
-
-evaluator==#|py|
-
-import langhandlers, subprocess
-
-student_code = response[editor.cid]['code']
-if 'testcases' not in globals() :
-    print('testcases missing, please specify tests to run', file=sys.stderr)
-    sys.exit(1)
-
-feedback = ''
-
-# Get language used and the corresponding handler
-lang = response[editor.cid]['language']
-handler = langhandlers.get_language_handler(lang, student_code)
-
-feedback = FeedBack(name="Tests")
-
-# Compilation
-success, compile_feedback = handler.compile()
-if not success:
-    feedback.addTestSyntaxError('Compilation', compile_feedback.replace('\n', '<br>'), 'La compilation du code a échoué')
-    output(0, feedback.render(), context)
-    sys.exit(1)
-
-# Execution of tests
-from random import *
-testcases = eval(testcases)
-for test, want, name in testcases:
-    try:
-        proc = subprocess.run(self.run_cmd, input=test, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-            text=True, timeout=1)
-    except subprocess.TimeoutExpired:
-        feedback.addTestError(name, "Erreur : l'exécution a pris trop de temps" , want)
-    else:
-        if proc.returncode == 0:
-            if proc.stdout.strip() == want.strip():
-                feedback.addTestSuccess(name, output, want)
-            else:
-                feedback.addTestFailure(name, output, want)
-        else:
-            feedback.addTestError(name, "Erreur à l'exécution. Code de retour :" + str(proc.returncode) + " Sortie d'erreur : " + proc.stderr, want)
-
-# Final feedback
-grade = (score, feedback)
 ==
