@@ -87,7 +87,7 @@ for test, want, name in testcases:
         proc = subprocess.run(self.run_cmd, input=test, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
             text=True, timeout=1)
     except subprocess.TimeoutExpired:
-        pass
+        feedback.addTestError(testname, "Erreur : l'exécution a pris trop de temps" , want)
     else:
         pass
 
