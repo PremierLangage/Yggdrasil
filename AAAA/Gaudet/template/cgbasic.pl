@@ -10,23 +10,8 @@ Une fonction spéciale 'test' est fournie qui prend en argument une chaine de ca
 passée dans l'entrée standard du programme écrit par l'étudiant et qui renvoie ce qui est mis sur
 la sortie standard et erreur par celui-ci.
 
-La batterie de test est à mettre dans la variable cgtest
-
-Par exemple:
-    cgtest==
-    >>> test('1\n2\n') # Somme simple
-    '3'
-    >>> test('-6\n4\n') # Somme avec négatif
-    '-2'
-    >>> from random import randint; a = randint(0, 100); test('2\n' + str(a) + '\n') == str(2 + a) # Test aléatoire
-    True
-    ==
-
-Les langages autorisés sont à indiquer dans la variable language comme ceci:
-    language ==
-    python
-    c
-    ==
+La batterie de test est à mettre dans la variable testcases sous forme d'une liste python contenant
+des tuples de la forme (chaine a mettre dans stdin, chaine à recevoir dans stdout, chaine correspondant au nom du test)
 
 La liste des langages utilisables actuellement est : c, cpp, python, java
 ==
