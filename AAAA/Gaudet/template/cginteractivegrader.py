@@ -76,7 +76,7 @@ async def runtests(cmd, feedback, testcases):
     await asyncio.gather(*tasks, return_exceptions=True)
 
     # Create feedback
-    for (_, testname), result in zip(testcases, results):
+    for (_, testname), (result, got, want) in zip(testcases, results):
         if result == TestStatus.PASS:
             feedback.addTestSuccess(testname, 'Validation', 'Validation')
         elif result == TestStatus.FAIL:
