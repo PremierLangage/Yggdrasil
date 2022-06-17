@@ -6,9 +6,6 @@
 doc==
 Ce template permet de faire des exercices pouvant être résolu avec différents langages, au choix
 de l'étudiant. 
-Une fonction spéciale 'test' est fournie qui prend en argument une chaine de caractères qui sera
-passée dans l'entrée standard du programme écrit par l'étudiant et qui renvoie ce qui est mis sur
-la sortie standard et erreur par celui-ci.
 
 La batterie de test est à mettre dans la variable testcases sous forme d'une liste python contenant
 des tuples de la forme (chaine a mettre dans stdin, chaine à recevoir dans stdout, chaine correspondant au nom du test)
