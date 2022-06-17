@@ -96,7 +96,7 @@ for test, want, name in testcases:
             else:
                 feedback.addTestFailure(name, output, want)
         else:
-            feedback.addTestError(name, "Erreur à l'exécution. Sortie d'erreur : " + proc.stderr, want)
+            feedback.addTestError(name, "Erreur à l'exécution. Code de retour :" + str(proc.returncode) + " Sortie d'erreur : " + proc.stderr, want)
 
 # Final feedback
 grade = (score, feedback)
