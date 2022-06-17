@@ -47,7 +47,7 @@ class CGInteractiveBinary():
         try:
             self.proc.stdin.write(query.encode())
             await self.proc.stdin.drain()
-        except ConnectionResetError:
+        except BrokenPipeError, ConnectionResetError:
             if self.proc.returncode is None:
                 raise InvalidCGBinaryExecution("Cannot sent data to subprocess: pipe is broken")
             else:
