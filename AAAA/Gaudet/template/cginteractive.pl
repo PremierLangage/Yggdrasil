@@ -21,7 +21,8 @@ Cette fonction nécessite <b>un prototype précis</b>:
 Il s'agit d'une fonction asynchrone, nécessitant donc le mot clé async, et le premier argument doit être réservé pour récupérer le processus étudiant.
 Un nombre arbitraire d'autres arguments peut être ajouté pour paramétrer l'évaluation notamment pour les tests.
 
-Cette fonction doit renvoyer True si le test passe, False sinon.
+Cette fonction doit renvoyer un triplet de la forme (result, got want) : result est un booléen indiquant si le test passe ou pas, got est une chaine de caractères
+indiquant ce qui a été obtenu par le processus étudiant, want est une chaine de caractères indiquant ce qui était voulu.
 
 Pour interagir avec le processus étudiant, 3 méthodes sont disponibles :
 
