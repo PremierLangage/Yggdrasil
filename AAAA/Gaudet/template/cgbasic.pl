@@ -10,7 +10,7 @@ de l'étudiant.
 La batterie de test est à mettre dans la variable testcases sous forme d'une liste python contenant
 des tuples de la forme (chaine a mettre dans stdin, chaine à recevoir dans stdout, chaine correspondant au nom du test)
 
-Un script Python peut être mis dans une variable python pour notamment avoir plus d'options pour générer le tableau
+Un script Python peut être mis dans une variable before pour notamment avoir plus d'options pour générer le tableau
 des tests
 
 La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
