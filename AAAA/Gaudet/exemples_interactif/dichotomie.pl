@@ -48,7 +48,7 @@ async def evalscript(student, N, n):
         else:
             await student.send('>')
     
-    return False
+    return False, f'{allowed} coups dépassés', f'{n} en {allowed} coups max'
 ==
 
 testcases==
