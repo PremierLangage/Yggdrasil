@@ -34,7 +34,7 @@ if __name__ == "__main__":
 
     # Execution of tests
     from random import *
-    testcases = eval(testcases)
+    testcases = eval(context['testcases'])
     testSuccess = 0
 
     for test, want, name in testcases:
