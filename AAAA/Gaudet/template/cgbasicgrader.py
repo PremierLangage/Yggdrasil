@@ -49,7 +49,7 @@ if __name__ == "__main__":
                     feedback.addTestSuccess(name, proc.stdout.strip(), want.strip())
                     testSuccess += 1
                 else:
-                    feedback.addTestFailure(name, output, want)
+                    feedback.addTestFailure(name, output.strip(), want.strip())
             else:
                 feedback.addTestError(name, "Erreur à l'exécution. Code de retour :" + str(proc.returncode) + " Sortie d'erreur : " + proc.stderr, want)
 
