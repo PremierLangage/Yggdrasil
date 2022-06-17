@@ -12,13 +12,8 @@ Ecrire un programme qui écrit le successeur de l'entier envoyé en entrée
 languages==
 ==
 
-cgtest==
->>> test('1') # Test 1
-'2'
->>> test('2') # Test 2
-'3'
->>> test('-3') # Test négatif
-'-2'
->>> from random import randint; n = randint(0, 100); test(str(n)) == str(n + 1) # Test aléatoire
-True
+testcases==
+[('1', '2', 'Test 1'),
+('2', '3', 'Test 1'),
+('-3', '-2', 'Test 1')]
 ==
