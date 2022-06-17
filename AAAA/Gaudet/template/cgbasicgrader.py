@@ -1,3 +1,8 @@
+# Date : 17/06/2022
+# Auteur : Clément Gaudet
+
+# Grader pour le template cgbasic.pl
+
 import sys, langhandlers, subprocess
 from sandboxio import output, get_context, get_answers
 from feedback2 import FeedBack
