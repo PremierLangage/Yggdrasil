@@ -85,16 +85,12 @@ else:
     testcases = eval(testcases)
     for test, want, name in testcases:
         try:
-            proc = subprocess.run(self.run_cmd,
-                input=arg,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                text=True,
-                timeout=1)
+            proc = subprocess.run(self.run_cmd, input=test, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                text=True, timeout=1)
         except subprocess.TimeoutExpired:
-            return "__L'exécution du programme a pris trop de temps. Peut-être y-a-t'il une boucle infinie?__"
+            pass
         else:
-            return proc.stdout.strip()
+            pass
 
 # Final feedback
 grade = (score, feedback)
