@@ -38,7 +38,7 @@ async def evalscript(student, N, n):
     for i in range(allowed):
         queryResult = await student.receive()
         if not queryResult.strip().isdigit():
-            return False
+            return False, f"{queryResult} qui n'est pas un nombre", f'{n} en {allowed} coups max'
         attempt = int(queryResult)
         if attempt == n:
             await student.send('=')
