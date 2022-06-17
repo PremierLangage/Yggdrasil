@@ -54,11 +54,11 @@ def generate(i):
 
     e1=randint(1,3)
     e1=str(e1)
-    e10=randint(2,5)
+    e1b=randint(2,5)
     s1=choice(["-","+"])
     s2=choice(["-","+"])
     p1,p2=sample([f1,e1],2)
-    p10,p20=sample([f1,e10],2)
+    p1b,p2b=sample([f1,e1b],2)
     q1,q2,q3=sample([f1,f2,e1],3)
 
 
@@ -66,8 +66,8 @@ def generate(i):
         r'%s \times %s' % (f1,f2),
         r'\frac{ %s }{ %s }' % (f1,f2),
         '%s %s %s' % (p1,s1,p2),
-        r'%s \times %s' % (p1,p2),
-        r'\frac{ %s }{ %s }' % (p1,p2),
+        r'%s \times %s' % (p1b,p2b),
+        r'\frac{ %s }{ %s }' % (p1b,p2b),
         r'%s %s %s %s %s' % (f1,s1,f2,s2,f3),
         r'%s %s %s %s %s' % (q1,s1,q2,s2,q3),
         choice([r"\frac{ %s }{ %s %s %s }" % (f3,f1,s1,f2), r"\frac{ %s %s %s }{ %s }" % (f1,s1,f2,f3)]),
