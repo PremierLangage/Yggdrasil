@@ -5,7 +5,7 @@
 # Il s'agit d'une adaptation du template pltest
 doc==
 Ce template permet de faire des exercices pouvant être résolu avec différents langages, au choix
-de l'étudiant. Les tests sont écrits comme des doctests. 
+de l'étudiant. 
 Une fonction spéciale 'test' est fournie qui prend en argument une chaine de caractères qui sera
 passée dans l'entrée standard du programme écrit par l'étudiant et qui renvoie ce qui est mis sur
 la sortie standard et erreur par celui-ci.
