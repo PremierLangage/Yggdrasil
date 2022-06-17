@@ -22,7 +22,7 @@ Il s'agit d'une fonction asynchrone, nécessitant donc le mot clé async, et le 
 Un nombre arbitraire d'autres arguments peut être ajouté pour paramétrer l'évaluation notamment pour les tests.
 
 Cette fonction doit renvoyer un triplet de la forme (result, got want) : result est un booléen indiquant si le test passe ou pas, got est une chaine de caractères
-indiquant ce qui a été obtenu par le processus étudiant, want est une chaine de caractères indiquant ce qui était voulu.
+indiquant ce qui a été obtenu par le processus étudiant, want est une chaine de caractères indiquant ce qui était voulu. Ces informations sont utilisées pour l'affichage
 
 Pour interagir avec le processus étudiant, 3 méthodes sont disponibles :
 
