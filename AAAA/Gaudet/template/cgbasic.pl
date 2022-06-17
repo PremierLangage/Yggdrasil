@@ -83,7 +83,9 @@ if not success:
 
 # Execution of tests
 else:
-    pass
+    testcases = eval(testcases)
+    for test, want, name in testcases:
+        
 
 # Final feedback
 grade = (score, feedback)
