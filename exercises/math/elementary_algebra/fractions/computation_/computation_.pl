@@ -54,9 +54,11 @@ def generate(i):
 
     e1=randint(1,3)
     e1=str(e1)
+    e10=randint(2,5)
     s1=choice(["-","+"])
     s2=choice(["-","+"])
     p1,p2=sample([f1,e1],2)
+    p10,p20=sample([f1,e10],2)
     q1,q2,q3=sample([f1,f2,e1],3)
 
 
