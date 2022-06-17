@@ -46,7 +46,7 @@ if __name__ == "__main__":
         else:
             if proc.returncode == 0:
                 if proc.stdout.strip() == want.strip():
-                    feedback.addTestSuccess(name, proc.stdout.strip(), want)
+                    feedback.addTestSuccess(name, proc.stdout.strip(), want.strip())
                     testSuccess += 1
                 else:
                     feedback.addTestFailure(name, output, want)
