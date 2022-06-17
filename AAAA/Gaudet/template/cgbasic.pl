@@ -72,6 +72,8 @@ feedback = ''
 lang = response[editor.cid]['language']
 handler = langhandlers.get_language_handler(lang, student_code)
 
+feedback = FeedBack(name="Tests")
+
 # Compilation
 success, compile_feedback = handler.compile()
 if not success:
