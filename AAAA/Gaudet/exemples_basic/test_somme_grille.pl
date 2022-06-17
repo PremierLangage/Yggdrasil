@@ -66,13 +66,9 @@ if __name__ == '__main__':
     print(max(max(lines_sums), max(columns_sums)))
 ==
 
-cgtest==
->>> test('3\n3\n1\n2\n3\n4\n5\n6\n7\n8\n9\n') # Grille 1
-'24'
->>> test('4\n4\n2\n4\n7\n9\n3\n1\n2\n5\n1\n9\n5\n1\n5\n6\n2\n1\n') # Grille 2
-'22'
->>> test('5\n1\n1\n2\n3\n4\n5\n') # Une colonne
-'15'
->>> test('1\n5\n1\n2\n3\n4\n5\n') # Une ligne
-'15'
+testcases==
+[('3\n3\n1\n2\n3\n4\n5\n6\n7\n8\n9\n', '24', 'Grille 1'),
+('4\n4\n2\n4\n7\n9\n3\n1\n2\n5\n1\n9\n5\n1\n5\n6\n2\n1\n', '22', 'Grille 2'),
+('5\n1\n1\n2\n3\n4\n5\n', '15', 'Grille 3'),
+('1\n5\n1\n2\n3\n4\n5\n', '15', 'Grille 4')]
 ==
