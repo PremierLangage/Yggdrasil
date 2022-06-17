@@ -34,7 +34,7 @@ if __name__ == "__main__":
     # Execution of tests
     from random import *
     testcases = eval(testcases)
-    test_reussis = 0
+    testSuccess = 0
 
     for test, want, name in testcases:
         try:
@@ -46,6 +46,7 @@ if __name__ == "__main__":
             if proc.returncode == 0:
                 if proc.stdout.strip() == want.strip():
                     feedback.addTestSuccess(name, output, want)
+                    testSuccess += 1
                 else:
                     feedback.addTestFailure(name, output, want)
             else:
