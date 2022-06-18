@@ -5,6 +5,8 @@
 
 extends = /model/math/multimathinput.pl
 
+title = Transformation logarithmes
+
 param.transformations = [0, 1, 2, 3]
 
 before ==
