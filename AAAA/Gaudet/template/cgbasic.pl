@@ -6,7 +6,7 @@ Ce template permet de faire des exercices pouvant être résolu avec différents
 de l'étudiant. 
 
 Le programme étudiant est compilé et exécuté pour faire les tests. La communication se fait directement par
-entrée et sorties standards.
+entrée et sortie standards.
 
 La batterie de test est à mettre dans la variable testcases sous forme d'une liste python contenant
 des tuples de la forme (chaine a mettre dans stdin, chaine à recevoir dans stdout, chaine correspondant au nom du test)
