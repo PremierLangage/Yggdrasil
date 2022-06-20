@@ -49,9 +49,9 @@ Chaque test est automatiquement réalisé lorsque l'étudiant envoie son code, a
 Liste des langages autorisés. Si vous laissez cette variable vide, tout les langages seront disponibles.
 Sinon, indiquez les langages souhaités, un par ligne
 
-La variable before peut être utilisée pour exécuter un script Python pendant la construction de l'exercice.
-
 La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
+
+La variable before peut être utilisée pour exécuter un script Python pendant la construction de l'exercice.
 
 <b>Attention : il n'y pas de protection contre les deadlocks pouvant être occasionnés par la communication par tubes.
 Ainsi, il ne faut pas tenter de communication bilatérale simultanée, et ne procéder que par requete/réponse.</b>
