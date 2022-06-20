@@ -40,7 +40,7 @@ if __name__ == "__main__":
     # Execute 'before' script if it's set
     if 'before' in context:
         glob = {}
-        exec(context['before'],context)
+        exec(context['before'], context)
 
         # Remove keys related to general execution context
         exec("", glob)
