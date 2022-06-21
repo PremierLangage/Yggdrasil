@@ -52,17 +52,15 @@ class PythonHandler():
     base_code = """if __name__ == '__main__':\n    pass\n"""
 
     def __init__(self, source_code):
-        self.exec_name = '_test.py'
+        self.exec_name = '_test'
         self.exec_cmd = ['python', self.exec_name]
         self.src = source_code
     
     def compile(self):
-        with open(self.exec_name, 'w') as output:
+        with open(self.exec_name + '.py', 'w') as output:
             output.write(self.src)
 
-        result = compile(self.src, self.exec_name, 'exec')
-        if result == SyntaxError:
-            return False, str(SyntaxError)
+        py_compile.compile(self.exec_name + '.py', cfile=self.exec_name + '.pyc')
 
         return True, ''
 
