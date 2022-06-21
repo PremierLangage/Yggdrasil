@@ -28,6 +28,7 @@ if __name__ == "__main__":
         required_languages = available_languages
     else:
         required_languages = context['languages'].split('\n')
+        required_languages = list(map(lambda s: s.lowercase(), required_languages))
 
     # add languages to the CodeEditor
     for lang in required_languages:
