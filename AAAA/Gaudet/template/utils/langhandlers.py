@@ -61,7 +61,7 @@ class PythonHandler():
         with open(self.exec_name, 'w') as output:
             output.write(self.src)
 
-        
+        compile(self.src, self.exec_name, 'exec')
 
 
         return True, ''
