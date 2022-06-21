@@ -11,6 +11,7 @@ Ecrire un programme qui écrit le successeur de l'entier envoyé en entrée
 
 languages==
 C
+python
 ==
 
 testcases==
