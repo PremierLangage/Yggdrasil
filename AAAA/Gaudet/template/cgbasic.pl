@@ -18,7 +18,6 @@ La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
 grader  =@ ./cgbasicgrader.py
 builder =@ ./cgbuilder.py
 
-@ ./utils/cgtest.py
 @ ./utils/feedback2.py
 @ ./utils/template.html
 @ ./utils/langhandlers.py
