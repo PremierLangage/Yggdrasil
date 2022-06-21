@@ -61,7 +61,9 @@ class PythonHandler():
         with open(self.exec_name, 'w') as output:
             output.write(self.src)
 
-        compile(self.src, self.exec_name, 'exec')
+        result = compile(self.src, self.exec_name, 'exec')
+        if type(result) == SyntaxError:
+            return False, str(SyntaxError)
 
         return True, ''
 
