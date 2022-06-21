@@ -53,7 +53,7 @@ class PythonHandler():
 
     def __init__(self, source_code):
         self.exec_name = '_test'
-        self.exec_cmd = ['python', self.exec_name]
+        self.exec_cmd = ['python', self.exec_name + '.py']
         self.src = source_code
     
     def compile(self):
