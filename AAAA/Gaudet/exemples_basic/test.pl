@@ -19,3 +19,17 @@ testcases==
 ('2', '3', 'Test 2'),
 ('-3', '-2', 'Test 3')]
 ==
+
+pltestcases==
+1|2|Test 1
+2|3| Test 2
+-3|-2|Test 3
+==
+
+before==
+
+pltescases += "44|45| Un autre test "
+# ou
+testcase.append( ('66', '67', 'Autre test'))
+==
+
