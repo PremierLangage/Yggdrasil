@@ -63,7 +63,6 @@ class PythonHandler():
 
         compile(self.src, self.exec_name, 'exec')
 
-
         return True, ''
 
 
