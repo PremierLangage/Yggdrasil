@@ -60,7 +60,7 @@ class PythonHandler():
         with open(self.exec_name + '.py', 'w') as output:
             output.write(self.src)
 
-        py_compile.compile(self.exec_name + '.py', cfile=self.exec_name + '.pyc')
+        py_compile.compile(self.exec_name + '.py', cfile=self.exec_name + '.pyc', doraise=True)
 
         return True, ''
 
