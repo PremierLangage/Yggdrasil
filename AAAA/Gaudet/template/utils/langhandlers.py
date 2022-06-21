@@ -57,6 +57,7 @@ class PythonHandler():
         self.src = source_code
     
     def compile(self):
+        """Run checks"""
         with open(self.exec_name + '.py', 'w') as output:
             output.write(self.src)
         return True, ''
