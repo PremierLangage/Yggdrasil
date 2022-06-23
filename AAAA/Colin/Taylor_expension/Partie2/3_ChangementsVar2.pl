@@ -2,7 +2,7 @@
 # Sujet : Développements Limités - Manipuler les formules de références 4 : Changements de variables et intégration termes à termes
 # Maj : 9/06/2022
 
-title = DL - Changements de variables et fonctions trigonométriques réciproques.
+title = DL - Changements de variables et fonctions logarithmes
 
 extends = /model/math/expr.pl
 
@@ -15,7 +15,7 @@ p=randint(1,3)
 a=choice([-2,-1,1,2])
 
 y=a*x**p
-f = choice([atan(y),asin(y),acos(y)])
+f = choice([ln(1+x),ln(1-x)])
 
 sol = series(f, x, 0, n+1).removeO()
 ==
