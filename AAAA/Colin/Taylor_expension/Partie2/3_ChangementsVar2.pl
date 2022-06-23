@@ -15,7 +15,7 @@ p=randint(1,3)
 a=choice([-2,-1,1,2])
 
 y=a*x**p
-f = choice([ln(1+x),ln(1-x)])
+f = choice([ln(1+y),ln(1-y)])
 
 sol = series(f, x, 0, n+1).removeO()
 ==
