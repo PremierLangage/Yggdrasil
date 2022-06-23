@@ -2,7 +2,7 @@
 # Sujet : Développements Limités - Manipuler les formules de références 4 : Changements de variables et intégration termes à termes
 # Maj : 9/06/2022
 
-title = DL - Formules de références 4
+title = DL - Changements de variables sur les fonctions trigonométriques réciproques.
 
 extends = /model/math/expr.pl
 
