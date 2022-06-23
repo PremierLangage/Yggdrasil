@@ -7,13 +7,15 @@ title = DL - Formules de références 3 - Intégration termes à termes
 
 extends = /model/math/expr.pl
 
+# atan(x),asin(x),acos(x) --> Traité ans la question suivante.
+
 before ==
 from sympy import series
 var('x')
 
 n = 3
 
-f = choice([ln(1+x),ln(1-x),atan(x),asin(x),acos(x)])
+f = choice([ln(1+x),ln(1-x)])
 
 sol = series(f, x, 0, n+1).removeO()
 ==
