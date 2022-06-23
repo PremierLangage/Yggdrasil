@@ -1,13 +1,14 @@
 # Auteur : Colin Petitjean
-# Sujet : Développements Limités - Manipuler les formules de références 3 : Intégration termes à termes. 
+# Sujet : Développements Limités - Manipuler les formules de références 3 : Fonctions trigonométriques réciproques.
 # Maj : 9/06/2022
 
-title = DL - Formules de références 3 - Intégration termes à termes 
+title = DL - Formules obtenues par intégration terme à terme : Fonctions trigonométriques réciproques.
+
 
 
 extends = /model/math/expr.pl
 
-# atan(x),asin(x),acos(x) --> Traité ans la question suivante.
+
 
 before ==
 from sympy import series
