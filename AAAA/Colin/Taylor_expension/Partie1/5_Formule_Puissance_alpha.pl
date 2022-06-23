@@ -10,7 +10,7 @@ before ==
 from sympy import series
 var('x')
 n = 3
-p = [-3,-2,-Rational(1,2),1/2]
+p = [-3,-2,-Rational(1,2),Rational(1,2)]
 a = choice(p)
 f = (1+x)**a
 sol = series(f, x, 0, n+1).removeO()
