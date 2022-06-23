@@ -21,7 +21,7 @@ Ecrire le développement limité de $! {{ f|latex }} !$ autour de $! 0 !$ à l'o
 ==
 
 embed ==
-# $!+ o(x^{{ n }}) \quad [x \rightarrow 0] !$
+# + o(x^{{ n }}) \quad [x \rightarrow 0] 
 ==
 
 prefix ==
