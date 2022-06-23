@@ -17,7 +17,7 @@ a=choice([-2,-1,2])
 y=a*x**p
 f = choice([sin(y), cos(y), exp(y), 1/(1-y) , 1/(1+y),(1+y)**(1/2),(1+y)**(-1/2)])
 
-sol = series(f, y, 0, n+1).removeO()
+sol = series(f, x, 0, n+1).removeO()
 ==
 
 question ==
