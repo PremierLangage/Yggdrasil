@@ -18,7 +18,7 @@ sol=diff(P,x)
 ==
 
 question ==
-Soit $! f !$ une fonction de classe $!\mathcal C^{{n|latex}} !$ sur $!\mathbb R!$. On suppose que $! f !$ possède le développement limité en 0 et à lordre $! {{ n|latex }} !$ suivant
+Soit $! f !$ une fonction de classe $!\mathcal C^{{n|latex}} !$ sur $!\mathbb R!$. On suppose que $! f !$ possède le développement limité en 0 et à l'ordre $! {{ n|latex }} !$ suivant
 $$ f(x) = {{P|latex}} + o(x^4).  $$ 
 En déduire le développement limité de $! f' !$ en 0 et à l'ordre $! {{ m|latex }} !$.
 ==
