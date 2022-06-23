@@ -8,7 +8,7 @@ extends = /model/math/expr.pl
 
 before ==
 from sympy import series
-var('x,y')
+var('x')
 
 n = randint(3, 4)
 p=randint(1,3)
