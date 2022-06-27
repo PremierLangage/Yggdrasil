@@ -24,14 +24,10 @@ def getResults(array):
             if array[i] + array[j] == 2020:
                 return array[i] * array[j]
 
-def getQ():
+def build():
     buildfile("data")
     valeurs = fromFileToList("data")
-    return getResults(valeurs)
-
-
-def build():
-    res = getQ()
+    res = getResults(valeurs)
     plt1 = f"""
     >>> Question1() == {res}
     True
