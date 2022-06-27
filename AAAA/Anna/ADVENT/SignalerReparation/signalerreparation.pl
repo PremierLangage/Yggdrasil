@@ -22,7 +22,7 @@ Vous pouvez tester votre fonction avec le fichier exemple ci-dessous dont le ré
 </blockquote></details>
 
 <details><summary>exemple</summary><blockquote>
-  {{lexemple}}
+  {{data}}
 </blockquote></details>
 
 
