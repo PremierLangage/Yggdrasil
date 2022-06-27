@@ -18,7 +18,7 @@ def buildfile(filename):
 
 def fromFileToList(filename):
     with open(filename, "r") as f:
-        return [int(x[:-1]) for x in f.readlines()]
+        return [int(x) for x in f.readlines()]
 
 def getResults(array):
     for i in range(len(array)):
