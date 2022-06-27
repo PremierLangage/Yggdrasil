@@ -12,13 +12,18 @@ def builddata():
             ok = True
         tab.append(val)
     ok = False
-    for i in range(len(array)):
-        for j in range(i+1,len(array)):
+    for i in range(len(tab)):
+        for j in range(i+1,len(tab)):
             if array[i] + array[j] == 2020:
                 ok = True
     if (ok == False):
         randIndice1 = random.randint(0, 200)
         randIndice2 = random.randint(0, 200)
+        if (randIndice1 == randIndice2) : 
+            randIndice1 = random.randint(0, 200)
+            randIndice2 = random.randint(0, 200)
+        else : 
+            tab 
     return tab
 
 def buildfile(filename):
