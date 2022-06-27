@@ -16,6 +16,7 @@ text==
 ::: note
 {{lexemple}}
 :::
+
 <details><summary>Hello</summary><blockquote>
   <details><summary>World</summary><blockquote>
     :smile:
