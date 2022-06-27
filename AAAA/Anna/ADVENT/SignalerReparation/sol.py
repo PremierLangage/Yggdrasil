@@ -19,11 +19,10 @@ def builddata():
     if (ok == False):
         randIndice1 = random.randint(0, 200)
         randIndice2 = random.randint(0, 200)
-        if (randIndice1 == randIndice2) : 
+        while (randIndice1 == randIndice2) : 
             randIndice1 = random.randint(0, 200)
-            randIndice2 = random.randint(0, 200)
-        else : 
-            tab[randIndice2] = 2020 - tab[randIndice1]
+            randIndice2 = random.randint(0, 200) 
+        tab[randIndice2] = 2020 - tab[randIndice1]
     return tab
 
 def buildfile(filename):
