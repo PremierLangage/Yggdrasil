@@ -25,5 +25,6 @@ Dans cette liste, les deux entrées qui totalisent 2020 sont 1721 et 299. En les
 
 Bien sûr, votre note de frais est beaucoup plus importante. 
 
-Vous devez écrire une fonction Question1() qui lit le fichier "data" avec les données et qui retourne le produit des deux entrées qui totalisent 2020.
+Vous devez écrire une fonction Question1() qui lit le fichier "data" avec les données
+et qui retourne le produit des deux entrées qui totalisent 2020.
 
