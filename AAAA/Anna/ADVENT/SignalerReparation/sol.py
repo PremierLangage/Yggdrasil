@@ -8,7 +8,7 @@ def builddata():
     for x in range(200):
         if (2020 - tab[x] in tab):
             ok = True
-        if (ok && 2020 - tab[x] in tab):
+        if (ok and 2020 - tab[x] in tab):
             tab.remove(tab[x])
     return tab
 
