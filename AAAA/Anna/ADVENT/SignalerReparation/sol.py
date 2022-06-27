@@ -3,6 +3,10 @@ import re
 
 def builddata():
     tab = [random.randint(x, 2020) for x in range(200)]
+    ok = False
+    for x in range(200):
+        if (2020 - tab[x] in tab):
+            ok = True
     randval1 = random.randint(0,200)
     randval2 = random.randint(0,200)
     tab[randval2] = 2020 - tab[randval1] 
