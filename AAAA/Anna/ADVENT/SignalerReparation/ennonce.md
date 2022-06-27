@@ -1,6 +1,8 @@
-Après avoir économisé Noël cinq années de suite, vous avez décidé de prendre des vacances dans un joli complexe sur une île tropicale. Certes, Noël continuera sans vous.
+Après avoir économisé Noël cinq années de suite, vous avez décidé de prendre des vacances dans un joli complexe
+ sur une île tropicale. Certes, Noël continuera sans vous.
 
-L'île tropicale a sa propre monnaie et n'accepte que les espèces. Les pièces d'or utilisées là-bas ont une petite image d'une étoile de mer; les habitants les appellent simplement des stars. Aucun des bureaux de change ne semble en avoir entendu parler, mais d'une manière ou d'une autre, vous devrez trouver cinquante de ces pièces au moment de votre arrivée afin de pouvoir payer la caution de votre chambre.
+L'île tropicale a sa propre monnaie et n'accepte que les espèces. Les pièces d'or utilisées là-bas ont
+ une petite image d'une étoile de mer; les habitants les appellent simplement des stars. Aucun des bureaux de change ne semble en avoir entendu parler, mais d'une manière ou d'une autre, vous devrez trouver cinquante de ces pièces au moment de votre arrivée afin de pouvoir payer la caution de votre chambre.
 
 Pour sauver vos vacances, vous devez obtenir les cinquante étoiles avant le 25 décembre.
 
