@@ -7,8 +7,8 @@
 @ /ComputerScience/python/template/anothertemplate.html [template.html]
 @ /ComputerScience/python/template/displayExample.html 
 @ /ComputerScience/python/template/displayData.html 
-@ /AAAA/Gaudet/template/utils/advent.html
-@ /utils/sandboxio.py [template.html]
+@ advent.html [template.html]
+@ /utils/sandboxio.py 
 @ /builder/none.py [builder.py]
 
 editor.fontsize=14
