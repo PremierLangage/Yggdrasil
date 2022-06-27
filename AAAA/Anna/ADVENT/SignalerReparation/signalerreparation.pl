@@ -14,13 +14,11 @@ text==
 {{lenonce}}
 
 ::: note
-{{lexemple}}
+
 :::
 
 <details><summary>Hello</summary><blockquote>
-  <details><summary>World</summary><blockquote>
-    :smile:
-  </blockquote></details>
+  <details>{{lexemple}}</details>
 </blockquote></details>
 
 La liste des informations est dans le fichier "data" .
