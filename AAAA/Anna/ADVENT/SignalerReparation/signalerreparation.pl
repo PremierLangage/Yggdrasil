@@ -39,7 +39,7 @@ with open("ennonce.md","r") as f:
 editor.code ==
 def Question1() :
     res = 0
-    with open("exemple","r") as f:
+    with open("data","r") as f:
         array = [int(x[:-1]) for x in f.readlines()]
     for i in range(len(array)):
             for j in range(i+1,len(array)):
