@@ -33,7 +33,7 @@ def getQ():
 def build():
     #res = getQ()
     array = fromFileToList(exemple)
-    getResults(array)
+    res = getResults(array)
     plt1 = f"""
     >>> Question1() == {res}
     True
