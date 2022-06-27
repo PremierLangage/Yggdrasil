@@ -36,7 +36,7 @@ with open("ennonce.md","r") as f:
     lenonce= f.read()
 
 with open("exemple","r") as f:
-    exemple= f.read()
+    lexemple= f.read()
 
 ==
 
