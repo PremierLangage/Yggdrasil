@@ -3,7 +3,7 @@ import re
 
 def builddata():
     tab = []
-    ok = False
+    okFor2 = False
     for x in range (200):
         val = random.randint(0, 2020)
         while 2020 - val in tab and ok == True :
