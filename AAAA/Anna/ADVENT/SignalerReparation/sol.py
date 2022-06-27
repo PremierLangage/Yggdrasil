@@ -6,17 +6,17 @@ def builddata():
     okFor2 = False
     for x in range (200):
         val = random.randint(0, 2020)
-        while 2020 - val in tab and ok == True :
+        while 2020 - val in tab and okFor2 == True :
             val = random.randint(0, 2020)
-        if 2020 - val in tab and ok == False : 
-            ok = True
+        if 2020 - val in tab and okFor2 == False : 
+            okFor2 = True
         tab.append(val)
-    ok = False
+    okFor2 = False
     for i in range(len(tab)):
         for j in range(i+1,len(tab)):
             if tab[i] + tab[j] == 2020:
-                ok = True
-    if (ok == False):
+                okFor2 = True
+    if (okFor2 == False):
         randIndice1 = random.randint(0, 200)
         randIndice2 = random.randint(0, 200)
         while (randIndice1 == randIndice2) : 
