@@ -4,6 +4,7 @@
 # This module contains classes meant to handle different languages for the Coding Games template (cgtemplate.pl)
 # They each must have a compile() method which prepares the source code to be executed and a exec_cmd attribute which
 # indicates how to run the program
+# For the language to become available, it must also be added to the available_languages dictionary lower down
 import subprocess, py_compile
 
 class LanguageNotImplemented(Exception):
