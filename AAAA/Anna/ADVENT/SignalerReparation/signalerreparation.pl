@@ -16,7 +16,11 @@ text==
 ::: note
 {{lexemple}}
 :::
-
+<details><summary>Hello</summary><blockquote>
+  <details><summary>World</summary><blockquote>
+    :smile:
+  </blockquote></details>
+</blockquote></details>
 
 La liste des informations est dans le fichier "data" .
 
