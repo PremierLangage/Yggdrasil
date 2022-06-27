@@ -52,6 +52,6 @@ def Question1() :
             for j in range(i+1,len(array)):
                 if array[i] + array[j] == 2020:
                     res = array[i] * array[j]
-    print(res) 
+
     return res              
 ==
