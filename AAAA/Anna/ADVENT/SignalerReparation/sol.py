@@ -32,8 +32,6 @@ def getQ():
 
 def build():
     res = getQ()
-    print("aaa")
-    print(res)
     plt1 = f"""
     >>> Question1() == {res}
     True
