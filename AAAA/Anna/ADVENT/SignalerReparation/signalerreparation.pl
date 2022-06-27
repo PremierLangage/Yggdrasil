@@ -47,7 +47,8 @@ with open("ennonce.md","r") as f:
 with open("exemple","r") as f:
     lexemple= f.read()
 
-
+with open("data","r") as f:
+    lexemple= f.read()
 ==
 
 
