@@ -11,6 +11,7 @@ def builddata():
             ok = True
         if (ok and 2020 - tab[x] in tab):
             tab.remove(tab[x])
+            size -= 1
     return tab
 
 def buildfile(filename):
