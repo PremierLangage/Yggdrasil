@@ -2,23 +2,27 @@ import random
 import re
 
 def builddata():
-    """
-    a list of integers with at least a pair that addeds to 2020
-
-    """
-    tab = [random.randint(1, 2020) for x in range(200)]
-    tab.append(2020-tab[0]) # a solution 
+    tab = []
+    tab1 = [r for x in range(200)]
+    ok = false
+    for x in range (200):
+        val = random.randint(x, 2020)
+        if 2020 - val in tab and !ok : 
+            tab.append(val)
+            ok = true
+        if 2020 - val in tab and ok :
+            val = random.randint(x, 2020)
     return tab
 
 def buildfile(filename):
     tab = builddata()
-    with open(filename, "w") as f:
-        for x in tab:
-            print(x,file=f)
+    with open(filename, "w") as file:
+        for x in range(200):
+            file.write(str(tab[x])+"\n")
 
 def fromFileToList(filename):
-    with open(filename, "r") as f:
-        return [int(x) for x in f.readlines()]
+    with open(filename, "r") as file:
+        return [int(x[:-1]) for x in file.readlines()]
 
 def getResults(array):
     for i in range(len(array)):
@@ -40,8 +44,7 @@ def build():
     """
     return plt1
 
-
-#with open("ennonce.md","r") as f:
-#    lenonce = f.read()
+with open("ennonce.md","r") as f:
+    lenonce = f.read()
 
 
