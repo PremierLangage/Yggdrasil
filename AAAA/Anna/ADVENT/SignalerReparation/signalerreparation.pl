@@ -13,8 +13,10 @@ text==
 
 {{lenonce}}
 
-
+::: note
 {{lexemple}}
+:::
+
 
 La liste des informations est dans le fichier "data" .
 
