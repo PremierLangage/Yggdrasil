@@ -7,7 +7,7 @@ def builddata():
     for x in range (200):
         val = random.randint(0, 2020)
         if 2020 - val in tab and ok == True :
-            val = random.randint(x, 2020)
+            val = random.randint(0, 2020)
         elif 2020 - val in tab and ok == False : 
             ok = True
         tab.append(val)
