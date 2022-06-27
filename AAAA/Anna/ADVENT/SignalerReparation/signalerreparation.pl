@@ -1,4 +1,4 @@
-extends = /gift/templates/qnumericset.pl
+extends = /ComputerScience/python/template/pltest.pl
 
 @ /builder/before.py [builder.py]
 @sol.py
@@ -22,53 +22,11 @@ choix = {{choices}}
 ==
 
 before==
-import random
-import re
-
-def builddata():
-    tab = [random.randint(x, 2020) for x in range(200)]
-    randval1 = random.randint(0,200)
-    randval2 = random.randint(0,200)
-    tab[randval2] = 2020 - tab[randval1] 
-    return tab
-
-def buildfile(filename):
-    tab = builddata()
-    with open(filename, "w") as file:
-        for x in range(200):
-            file.write(str(tab[x])+"\n")
-
-def fromFileToList(filename):
-    with open(filename, "r") as file:
-        return [int(x[:-1]) for x in file.readlines()]
-
-def getResults(array):
-    for i in range(len(array)):
-        for j in range(i+1,len(array)):
-            if array[i] + array[j] == 2020:
-                return array[i] * array[j]
-
-def getQ():
-    buildfile("data")
-    valeurs = fromFileToList("data")
-    return getResults(valeurs)
-
-
-def build():
-    r = getQ()
-    return r
+import build
+pltest0,pltest1=build.build()
 
 with open("ennonce.md","r") as f:
-    lenonce = f.read()
-
-buildfile("data")
-valeurs = fromFileToList("data")
-res1 = getResults(valeurs)
-
-arr = fromFileToList("exemple")
-res = getResults(arr)
-
-choices = {'feedback': 'Bravo !Vous avez tous les points.', 'mode': ':', 'score': 100, 'v1': str(res1), 'v2': '0.0'}
+    lenonce= f.read()
 
 ==
 
