@@ -11,6 +11,11 @@ def builddata():
         elif 2020 - val in tab and ok == False : 
             ok = True
         tab.append(val)
+    ok = False
+    for i in range(len(array)):
+        for j in range(i+1,len(array)):
+            if array[i] + array[j] == 2020:
+                return array[i] * array[j]
     return tab
 
 def buildfile(filename):
