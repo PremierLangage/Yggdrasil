@@ -31,7 +31,7 @@ def getQ():
 
 
 def build():
-    res = get()
+    res = getQ()
     plt1 = f"""
     >>> Question1() == {res}
     True
