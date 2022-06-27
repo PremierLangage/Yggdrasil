@@ -36,3 +36,14 @@ with open("ennonce.md","r") as f:
 ==
 
 
+editor.code ==
+def Question1() :
+    res = 0
+    with open("exemple","r") as f:
+        array = [int(x[:-1]) for x in file.readlines()]
+    for i in range(len(array)):
+            for j in range(i+1,len(array)):
+                if array[i] + array[j] == 2020:
+                    res = array[i] * array[j]
+    print(res)                
+==
