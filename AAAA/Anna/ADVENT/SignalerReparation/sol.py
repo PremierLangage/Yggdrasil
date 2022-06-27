@@ -6,7 +6,7 @@ def builddata():
     ok = False
     doubleok = False
     size = 200;
-    for x in range(200):
+    for x in range(size):
         if (2020 - tab[x] in tab):
             ok = True
         if (ok and 2020 - tab[x] in tab):
