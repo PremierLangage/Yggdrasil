@@ -45,7 +45,7 @@ Si vous souhaitez faire des tests sur le code de l'élève la variable __student
 @ feedback2.py
 @ /ComputerScience/python/template/anothertemplate.html [template.html]
 @ /ComputerScience/python/template/displayExample.html
-@ displayData.html
+@ /ComputerScience/python/template/displayData.html
 
 @ /utils/sandboxio.py
 @ /builder/none.py [builder.py]
