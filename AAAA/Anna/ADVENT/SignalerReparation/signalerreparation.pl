@@ -35,7 +35,6 @@ Vous pouvez par exemple ecrire :
             ...# votre code
         return res                
 
-<div 
 
 ==
 
