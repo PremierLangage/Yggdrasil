@@ -29,8 +29,8 @@ Vous pouvez par exemple ecrire :
 
     def Question1() :
         res = 0
-        with open("data","r") as f:
-            ...#votre code
+        with open("exemple","r") as f:
+            ...# votre code
         print(res)                
 
-Cela devrai afficher 1588178
+Cela devrai afficher 514579
