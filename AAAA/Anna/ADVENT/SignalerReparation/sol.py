@@ -31,8 +31,8 @@ def getQ():
 
 
 def build():
-    arr = build.fromFileToList("exemple")
-    res = build.getResults(arr)
+    arr = fromFileToList("exemple")
+    res = getResults(arr)
     plt1 = f"""
     >>> Question1() == {res}
     True
