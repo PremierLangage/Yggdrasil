@@ -37,9 +37,3 @@ def build():
 with open("ennonce.md","r") as f:
     lenonce = f.read()
 
-buildfile("data")
-valeurs = fromFileToList("data")
-res1 = getResults(valeurs)
-
-arr = fromFileToList("exemple")
-res = getResults(arr)
