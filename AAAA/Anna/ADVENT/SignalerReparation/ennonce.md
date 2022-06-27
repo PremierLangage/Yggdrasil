@@ -33,6 +33,6 @@ Vous pouvez par exemple ecrire :
         res = 0
         with open("exemple","r") as f:
             ...# votre code
-        print(res)                
+        return res                
 
 Cela devrait afficher 514579
