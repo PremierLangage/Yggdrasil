@@ -25,6 +25,8 @@ Vous pouvez par exemple ecrire :
             ...# votre code
         return res                
 
+<div 
+
 ==
 
 before==
@@ -33,6 +35,8 @@ pltest0=build.build()
 with open("ennonce.md","r") as f:
     lenonce= f.read()
 
+with open("exemple","r") as f:
+    exemple= f.read()
 
 ==
 
