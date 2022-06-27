@@ -24,13 +24,21 @@ def getResults(array):
             if array[i] + array[j] == 2020:
                 return array[i] * array[j]
 
-def build():
+def getQ():
     buildfile("data")
     valeurs = fromFileToList("data")
-    res = getResults(valeurs)
+    return getResults(valeurs)
+
+
+def build():
+    res = getQ()
     plt1 = f"""
     >>> Question1() == {res}
     True
     """
     return plt1
+
+with open("ennonce.md","r") as f:
+    lenonce = f.read()
+
 
