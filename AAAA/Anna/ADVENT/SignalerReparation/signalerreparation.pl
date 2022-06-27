@@ -16,8 +16,15 @@ La liste des informations est dans le fichier "data" .
 
 Comme d'habitude vous avez un fichier "exemple" pour lequel la bonne reponse est : 145875
 
-Vos données sont les suivantes : {{valeurs}}
-res = {{res1}}
+
+Vous pouvez par exemple ecrire : 
+
+    def Question1() :
+        res = 0
+        with open("exemple","r") as f:
+            ...# votre code
+        return res                
+
 ==
 
 before==
