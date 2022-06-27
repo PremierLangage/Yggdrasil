@@ -30,8 +30,6 @@ Vous pouvez par exemple ecrire :
 before==
 import build
 pltest0=build.build()
-with open("ennonce.md","r") as f:
-    lenonce= f.read()
 
 
 ==
