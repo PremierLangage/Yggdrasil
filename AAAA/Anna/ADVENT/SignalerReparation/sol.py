@@ -16,6 +16,8 @@ def builddata():
         for j in range(i+1,len(array)):
             if array[i] + array[j] == 2020:
                 ok = True
+    if (ok == False):
+        randIndice = random.randint(0, 200)
     return tab
 
 def buildfile(filename):
