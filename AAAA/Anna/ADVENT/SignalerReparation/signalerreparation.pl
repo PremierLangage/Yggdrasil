@@ -22,7 +22,12 @@ choix = {{choices}}
 ==
 
 before==
+buildfile("data")
+valeurs = fromFileToList("data")
+res1 = getResults(valeurs)
 
+arr = fromFileToList("exemple")
+res = getResults(arr)
 
 with open("ennonce.md","r") as f:
     lenonce= f.read()
