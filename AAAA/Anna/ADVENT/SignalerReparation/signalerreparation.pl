@@ -21,7 +21,7 @@ Vous pouvez tester votre fonction avec le fichier exemple ci-dessous dont le ré
   {{lexemple}}
 </blockquote></details>
 
-<details><summary>exemple</summary><blockquote>
+<details><summary>data</summary><blockquote>
   {{data}}
 </blockquote></details>
 
