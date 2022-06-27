@@ -13,10 +13,6 @@ text==
 
 {{lenonce}}
 
-::: note
-
-:::
-
 <details><summary>Hello</summary><blockquote>
   <details>{{lexemple}}</details>
 </blockquote></details>
