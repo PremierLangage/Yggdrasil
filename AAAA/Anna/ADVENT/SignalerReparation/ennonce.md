@@ -33,4 +33,4 @@ Vous pouvez par exemple ecrire :
             ...# votre code
         print(res)                
 
-Cela devrai afficher 514579
+Cela devrait afficher 514579
