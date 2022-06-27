@@ -48,7 +48,7 @@ with open("exemple","r") as f:
     lexemple= f.read()
 
 with open("data","r") as f:
-    lexemple= f.read()
+    donnees= f.read()
 ==
 
 
