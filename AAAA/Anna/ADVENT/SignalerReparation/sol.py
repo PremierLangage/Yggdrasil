@@ -23,7 +23,7 @@ def builddata():
             randIndice1 = random.randint(0, 200)
             randIndice2 = random.randint(0, 200)
         else : 
-            tab 
+            tab[randIndice2] = 2020 - tab[randIndice1]
     return tab
 
 def buildfile(filename):
