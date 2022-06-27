@@ -14,7 +14,7 @@ text==
 
 La liste des informations est dans le fichier "data" .
 
-Comme d'habitude vous avez un fichier "exemple" pour lequel la bonne reponse est : 145875
+Vous pouvez tester votre fonction avec le fichier [exemple](/AAAA/Anna/ADVENT/SignalerReparation/exemple) dont le résultat est : 145875
 
 
 Vous pouvez par exemple ecrire : 
@@ -32,6 +32,7 @@ import build
 pltest0=build.build()
 with open("ennonce.md","r") as f:
     lenonce= f.read()
+
 
 ==
 
