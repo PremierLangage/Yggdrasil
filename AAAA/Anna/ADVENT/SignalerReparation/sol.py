@@ -10,7 +10,7 @@ def builddata():
         if 2020 - val in tab and ok == False : 
             tab.append(val)
             ok = true
-        if 2020 - val in tab and ok :
+        if 2020 - val in tab and ok == True :
             val = random.randint(x, 2020)
     return tab
 
