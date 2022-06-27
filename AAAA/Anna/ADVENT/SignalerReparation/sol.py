@@ -3,13 +3,7 @@ import re
 
 def builddata():
     tab = [random.randint(x, 2020) for x in range(200)]
-    ok = False
-    doubleok = False
-    for x in range(200):
-        if (2020 - tab[x] in tab):
-            ok = True
-        if (ok and 2020 - tab[x] in tab):
-            tab.remove(tab[x])
+  
     return tab
 
 def buildfile(filename):
