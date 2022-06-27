@@ -13,11 +13,7 @@ text==
 
 {{lenonce}}
 
-<details><summary>exemple</summary><blockquote>
-  {{lexemple}}
-</blockquote></details>
-
-La liste des informations est dans le fichier "data" .
+La liste des informations est dans le fichier "data" ci-dessous.
 
 Vous pouvez tester votre fonction avec le fichier  dont le résultat est : 145875
 
