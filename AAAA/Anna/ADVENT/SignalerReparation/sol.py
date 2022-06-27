@@ -2,7 +2,7 @@ import random
 import re
 
 def builddata():
-    tab = [random.randint(x, 2020) for x in range(200)]
+    tab = [random.randint(1, 2020) for x in range(200)]
   
     return tab
 
