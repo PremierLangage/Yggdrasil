@@ -29,6 +29,7 @@ res1 = build.getResults(valeurs)
 arr = build.fromFileToList("exemple")
 res = build.getResults(arr)
 
+pltest0=build.build()
 with open("ennonce.md","r") as f:
     lenonce= f.read()
 
