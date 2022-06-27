@@ -7,7 +7,7 @@ def builddata():
 
     """
     tab = [random.randint(1, 2020) for x in range(200)]
-    tab.append(2020-tab[0])
+    tab.append(2020-tab[0]) # a solution 
     return tab
 
 def buildfile(filename):
