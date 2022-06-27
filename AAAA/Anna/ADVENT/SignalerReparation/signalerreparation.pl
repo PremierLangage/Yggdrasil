@@ -22,6 +22,7 @@ choix = {{choices}}
 ==
 
 before==
+import build
 buildfile("data")
 valeurs = fromFileToList("data")
 res1 = getResults(valeurs)
