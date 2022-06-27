@@ -2,7 +2,7 @@ extends = /ComputerScience/python/template/pltest.pl
 
 @ /builder/before.py [builder.py]
 @sol.py [build.py]
-lenonce = @ennonce.md
+@ennonce.md
 @exemple
 
 
@@ -14,7 +14,7 @@ text==
 
 La liste des informations est dans le fichier "data" .
 
-Vous pouvez tester votre fonction avec le fichier [exemple](/AAAA/Anna/ADVENT/SignalerReparation/exemple) dont le résultat est : 145875
+Vous pouvez tester votre fonction avec le fichier [exemple]("/AAAA/Anna/ADVENT/SignalerReparation/exemple") dont le résultat est : 145875
 
 
 Vous pouvez par exemple ecrire : 
@@ -30,6 +30,8 @@ Vous pouvez par exemple ecrire :
 before==
 import build
 pltest0=build.build()
+with open("ennonce.md","r") as f:
+    lenonce= f.read()
 
 
 ==
