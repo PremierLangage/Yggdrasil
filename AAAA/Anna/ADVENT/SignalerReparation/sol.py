@@ -32,7 +32,11 @@ def getQ():
 
 def build():
     r = getQ()
-    return r
+    plt1 = f"""
+    >>> Question1() == {r}
+    True
+    """
+    return plt1
 
 with open("ennonce.md","r") as f:
     lenonce = f.read()
