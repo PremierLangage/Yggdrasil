@@ -3,7 +3,8 @@ extends = /ComputerScience/python/template/pltest.pl
 @ /builder/before.py [builder.py]
 @sol.py [build.py]
 @ennonce.md
-@exemple
+@exemple 
+
 
 
 title= Signaler Reparation
@@ -12,6 +13,8 @@ text==
 
 {{lenonce}}
 
+
+{{lexemple}}
 La liste des informations est dans le fichier "data" .
 
 Vous pouvez tester votre fonction avec le fichier [exemple]("exemple") dont le résultat est : 145875
@@ -37,6 +40,7 @@ with open("ennonce.md","r") as f:
 
 with open("exemple","r") as f:
     lexemple= f.read()
+
 
 ==
 
