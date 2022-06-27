@@ -21,7 +21,7 @@ Vous pouvez par exemple ecrire :
 
     def Question1() :
         res = 0
-        with open("exemple","r") as f:
+        with open("data","r") as f:
             ...# votre code
         return res                
 
