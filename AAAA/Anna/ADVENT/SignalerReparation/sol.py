@@ -2,7 +2,7 @@ import random
 import re
 
 def builddata():
-    tab = [}
+    tab = []
     ok = False
     for x in range (200):
         val = random.randint(x, 2020)
