@@ -23,7 +23,7 @@ choix = {{choices}}
 
 before==
 import build
-pltest0,pltest1=build.build()
+pltest0=build.build()
 
 with open("ennonce.md","r") as f:
     lenonce= f.read()
