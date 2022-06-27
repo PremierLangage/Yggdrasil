@@ -5,6 +5,7 @@ def builddata():
     tab = [random.randint(x, 2020) for x in range(200)]
     ok = False
     doubleok = False
+    size = 200;
     for x in range(200):
         if (2020 - tab[x] in tab):
             ok = True
