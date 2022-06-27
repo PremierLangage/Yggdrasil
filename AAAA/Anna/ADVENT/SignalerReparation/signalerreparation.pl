@@ -21,12 +21,13 @@ Vous pouvez tester votre fonction avec le fichier exemple ci-dessous dont le ré
 <details><summary>exemple</summary><blockquote>
   {{lexemple}}
 </blockquote></details>
+```
 
 <details><summary>exemple</summary><blockquote>
   {{lexemple}}
 </blockquote></details>
 
-```
+
 
 Vous pouvez par exemple ecrire : 
 
