@@ -14,7 +14,7 @@ text==
 
 La liste des informations est dans le fichier "data" .
 
-Vous pouvez tester votre fonction avec le fichier [exemple]({{lexemple}}) dont le résultat est : 145875
+Vous pouvez tester votre fonction avec le fichier [exemple]("exemple") dont le résultat est : 145875
 
 
 Vous pouvez par exemple ecrire : 
