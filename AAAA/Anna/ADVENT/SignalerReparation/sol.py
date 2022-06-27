@@ -36,7 +36,8 @@ def build():
     """
     return plt1
 
-with open("ennonce.md","r") as f:
-    lenonce = f.read()
+
+#with open("ennonce.md","r") as f:
+#    lenonce = f.read()
 
 
