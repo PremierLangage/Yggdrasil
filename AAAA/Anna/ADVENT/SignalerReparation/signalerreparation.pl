@@ -13,8 +13,8 @@ text==
 
 {{lenonce}}
 
-<details><summary>Hello</summary><blockquote>
-  <details>{{lexemple}}</details>
+<details><summary>exemple</summary><blockquote>
+  {{lexemple}}
 </blockquote></details>
 
 La liste des informations est dans le fichier "data" .
