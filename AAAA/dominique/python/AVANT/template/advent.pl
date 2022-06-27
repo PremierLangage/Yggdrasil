@@ -22,6 +22,6 @@ settings.allow_reroll=1
 
 @ /builder/before.py [builder.py]
 
-@sol.py [build.py]
-@ennonce.md
-@data1
+#@sol.py [build.py]
+#@ennonce.md
+
