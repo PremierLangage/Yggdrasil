@@ -10,7 +10,7 @@ author=DR
 @ennonce.md
 
 exemple = @exemple
-
+@ exemple
 
 title= Du lait de poule au Frigo
 
