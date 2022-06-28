@@ -69,5 +69,5 @@ def Question2(array):
         for j in range(i + 1, len(array)-1): 
             for k in range(j + 1, len(array)):
                 if array[i] + array[j] + array[k] == 2020:
-                    res array[i] * array[j] * array[k]      
+                    return array[i] * array[j] * array[k]      
 ==
