@@ -51,7 +51,7 @@ def Question2(array):
 def getQ1(valeurs):
     return Question1(valeurs)
 
-def getQ1(valeurs): 
+def getQ2(valeurs): 
     return Question2(valeurs)
 
 def build():
