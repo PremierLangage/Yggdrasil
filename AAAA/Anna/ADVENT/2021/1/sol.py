@@ -12,6 +12,7 @@ def builddata():
             val += interval
         elif (incOrDec == 1) : 
             val -= interval
+        elif (val < 0) : 
         tab.append(val)
     return tab
 
