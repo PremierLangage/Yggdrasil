@@ -58,6 +58,7 @@ def build():
     buildfile("data")
     valeurs = fromFileToList("data")
     Q1 = getQ1(valeurs)
+    Q2 = getQ2(valeurs)
     plt1 = f"""
     >>> Question1() == {Q1}
     True
