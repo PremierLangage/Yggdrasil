@@ -49,10 +49,7 @@ def Question2(array):
                     return array[i] * array[j] * array[k]
 
 def getQ1(valeurs):
-    
-    q1 =  Question1(valeurs)
-    q2 =  Question2(valeurs)
-    return q1
+    return Question1(valeurs)
 
 def getQ1(valeurs):
     buildfile("data")
