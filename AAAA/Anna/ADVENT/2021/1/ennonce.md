@@ -25,3 +25,22 @@ Par exemple, supposons que vous disposiez du rapport suivant :
     269
     260
     263
+
+Ce rapport indique qu'en balayant vers l'extérieur depuis le sous-marin, le balayage du sonar a trouvé des profondeurs de 199, 200, 208, 210, etc.
+
+Le premier ordre du jour est de déterminer à quelle vitesse la profondeur augmente, juste pour que vous sachiez à quoi vous avez affaire - 
+vous ne savez jamais si les clés seront emportées dans des eaux plus profondes par un courant océanique ou un poisson ou quelque chose.
+
+Pour ce faire, comptez le nombre de fois qu'une mesure de profondeur augmente par rapport à la mesure précédente. 
+(Il n'y a pas de mesure avant la première mesure.) Dans l'exemple ci-dessus, les modifications sont les suivantes :
+
+    199 (N/A - no previous measurement)
+    200 (increased)
+    208 (increased)
+    210 (increased)
+    200 (decreased)
+    207 (increased)
+    240 (increased)
+    269 (increased)
+    260 (decreased)
+    263 (increased)
