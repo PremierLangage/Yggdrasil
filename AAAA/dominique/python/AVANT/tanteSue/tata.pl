@@ -1,6 +1,6 @@
 
 
-extends = /ComputerScience/python/template/pltest.pl
+extends = ../template/advent.pl
 @ /builder/before.py [builder.py]
 
 @sol.py [build.py]
