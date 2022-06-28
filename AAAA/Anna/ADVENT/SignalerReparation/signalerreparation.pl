@@ -30,7 +30,6 @@ Vous pouvez tester votre fonction avec le fichier exemple ci-dessous dont le ré
 Vous pouvez par exemple ecrire : 
 
     def Question1() :
-        res = 0
         with open("data","r") as f:
             ...# votre code
         return res                
