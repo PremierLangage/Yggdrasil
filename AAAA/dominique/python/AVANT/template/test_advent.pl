@@ -29,8 +29,10 @@ with open("template.html","r") as f:
      g = f.read()
 text += g
 
+data = g
 with open("data","w") as f:
     f.write(g)
+
 
 
 ==
