@@ -16,8 +16,7 @@ def builddata():
             if (incOrDec == 0) : 
                 val = val + interval
             elif (incOrDec == 1) : 
-                val = val - interval
-            
+                val = val - interval 
         tab.append(val)
         interval = random.randint(1,10)
         incOrDec = random.randint(0, 2)
