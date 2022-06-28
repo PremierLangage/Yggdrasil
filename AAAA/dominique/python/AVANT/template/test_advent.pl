@@ -13,6 +13,7 @@ text==
 Ecrivez une fonction `carre` qui retourne le carré de son paramêtre
 ==
 
+@ exemple
 exemple =@ exemple
 
 sol=33
