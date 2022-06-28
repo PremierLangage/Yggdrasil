@@ -5,8 +5,6 @@ def builddata():
     tab = []
     val = random.randint(0, 200)
     tab.append(val)
-    interval = random.randint(1,10)
-    incOrDec = random.randint(0, 2)
     for x in range (1999):
         if (incOrDec == 0) : 
             val += interval
@@ -14,6 +12,8 @@ def builddata():
             val = val - interval
         tab.append(val)
         val = random.randint(0, 200)
+        interval = random.randint(1,10)
+    incOrDec = random.randint(0, 2)
     tab.append(len(tab))
     return tab
 
