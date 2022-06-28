@@ -53,7 +53,7 @@ def getQ1Q2():
     valeurs = fromFileToList("data")
     val fromFileToList("exemple")
     q1 =  Question1(valeurs)
-    q2 =  Question2(valeurs)
+    q2 =  Question2(val)
     return q1, q2
 
 def build():
