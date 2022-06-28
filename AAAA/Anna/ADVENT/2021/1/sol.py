@@ -5,15 +5,17 @@ def builddata():
     tab = []
     val = random.randint(0, 200)
     tab.append(val)
+    interval = random.randint(1,10)
+    incOrDec = random.randint(0, 2)
     for x in range (1999):
         if (incOrDec == 0) : 
             val += interval
         elif (incOrDec == 1) : 
             val = val - interval
-        
+        val = random.randint(0, 200)
         interval = random.randint(1,10)
         incOrDec = random.randint(0, 2)
-        tab.append(val)
+    tab.append(val)
     return tab
 
 def buildfile(filename):
