@@ -3,27 +3,24 @@ import re
 
 def builddata():
     tab = []
-    okFor2 = False
-    okFor3 = False
-    for x in range (200):
-        val = random.randint(0, 2020)
-        while 2020 - val in tab and okFor2 == True :
+    val = random.randint(0, 2020)
+    tab.append(val)
+    tab.append(2020 - val)
+    val = random.randint(0, 2020)
+    if (val != 0) :
+        tab.append(val)
+        val1 = random.randint(0, val)
+        tab.append(val1)
+        tab.append(2020 - (val + val1))
+
+    for x in range (195):
+        while (2020 - val in tab) : 
             val = random.randint(0, 2020)
-        if 2020 - val in tab and okFor2 == False : 
-            okFor2 = True
+        for i in range(len(tab)):
+            while 2020 - (val + tab[i]) in tab : 
+                val = random.randint(0, 2020)
         tab.append(val) 
-    okFor2 = False
-    for i in range(len(tab)):
-        for j in range(i+1,len(tab)):
-            if tab[i] + tab[j] == 2020:
-                okFor2 = True
-    if (okFor2 == False):
-        randIndice1 = random.randint(0, 200)
-        randIndice2 = random.randint(0, 200)
-        while (randIndice1 == randIndice2) : 
-            randIndice1 = random.randint(0, 200)
-            randIndice2 = random.randint(0, 200) 
-        tab[randIndice2] = 2020 - tab[randIndice1]
+    tab.shuffle()
     return tab
 
 def buildfile(filename):
@@ -48,10 +45,6 @@ def Question2(array):
             for k in range(j + 1, len(array)):
                 if array[i] + array[j] + array[k] == 2020:
                     return array[i] * array[j] * array[k]
-      
-    # If we reach here, then no 
-    # triplet was found
-    return False
 
 def getQ():
     buildfile("data")
