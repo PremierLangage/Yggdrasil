@@ -16,5 +16,3 @@ testcases==
 ('exemple', '89', 'Test 2')]
 ==
 
-@data
-@exemple
