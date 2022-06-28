@@ -13,7 +13,7 @@ def builddata():
                 val += interval
             elif (incOrDec == 1) : 
                 val -= interval
-        tab[x] = va
+        tab[x] = val
     return tab
 
 def buildfile(filename):
