@@ -54,10 +54,10 @@ def getQ1Q2():
     val = fromFileToList("exemple")
     q1 =  Question1(valeurs)
     q2 =  Question2(val)
-    return q1, q2
+    return q2
 
 def build():
-    Q1, Q2 = getQ1Q2()
+    Q2 = getQ1Q2()
     plt1= f"""
     >>> Question1() == {Q1} # Question1 
     True
@@ -66,7 +66,7 @@ def build():
     >>> Question2() == {Q2} # Question2 
     True
     """
-    return plt1,plt2
+    return plt2
 
 
 
