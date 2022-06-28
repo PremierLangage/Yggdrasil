@@ -6,7 +6,7 @@ def builddata():
     val = random.randint(0, 200)
     tab.append(val)
     interval = random.randint(1,10)
-    incOrDec = random.randint(0, 1)
+    incOrDec = random.randint(0, 2)
     for x in range (1999):
         if (val > 0) :
             if (incOrDec == 0) : 
