@@ -8,8 +8,10 @@ def builddata():
     interval = random.randint(1,10)
     incOrDec = random.randint(0, 2)
     for x in range (500):
-        if (val > 0) : 
-            if (incOrDec == 0) : 
+        if (val > 0) :
+            while (interval == 0) :
+                 interval = random.randint(1,10)
+            elif (incOrDec == 0) : 
                 val = val + interval
             elif (incOrDec == 1) : 
                 val = val - interval
