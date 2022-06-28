@@ -57,7 +57,7 @@ def getQ1(valeurs):
 def build():
     buildfile("data")
     valeurs = fromFileToList("data")
-    Q1, Q2 = getQ1Q2()
+    Q1 = getQ1(valeurs)
     plt1 = f"""
     >>> Question1() == {Q1}
     True
