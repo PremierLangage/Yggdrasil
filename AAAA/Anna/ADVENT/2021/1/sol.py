@@ -13,22 +13,6 @@ def builddata():
         elif (incOrDec == 1) : 
             val -= interval
         tab.append(val)
-    while (val == 0) :
-        val = random.randint(0, 2020)
-    if (val != 0) :
-        tab.append(val)
-        val1 = random.randint(0, val)
-        tab.append(val1)
-        tab.append(2020 - (val + val1))
-    for x in range (195):
-        val = random.randint(0, 2020)
-        while (2020 - val in tab) : 
-            val = random.randint(0, 2020)
-        for i in range(len(tab)):
-            while 2020 - (val + tab[i]) in tab : 
-                val = random.randint(0, 2020)
-        tab.append(val) 
-    random.shuffle(tab)
     return tab
 
 def buildfile(filename):
