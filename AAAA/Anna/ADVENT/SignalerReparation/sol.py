@@ -62,7 +62,7 @@ def build():
     >>> Question2() == {Q2}
     True
     """
-    return plt1
+    return plt1, plt2
 
 with open("ennonce.md","r") as f:
     lenonce = f.read()
