@@ -10,11 +10,14 @@ hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
 hiddenElement.target = '_blank';
 hiddenElement.download = 'myFile.txt';
 
+function doclick(){
+    hiddenElement.click()
+}
 </script>
 
 
 <button type="button" class="btn-sm"
-   onclick="hiddenElement.click()" >
+   onclick="doclick" >
 Download exemple 
 </button>
 <!--
