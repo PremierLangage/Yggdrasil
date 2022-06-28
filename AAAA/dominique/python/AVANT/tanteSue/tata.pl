@@ -31,9 +31,9 @@ with open("template.html","r") as f:
      g = f.read()
 text += g
 
-data = g
-with open("data","w") as f:
-    f.write(g)
+
+with open("data","r") as f:
+    data = f.read()
 
 
 
