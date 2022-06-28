@@ -14,6 +14,7 @@ def builddata():
         tab.append(2020 - (val + val1))
 
     for x in range (195):
+        val = random.randint(0, 2020)
         while (2020 - val in tab) : 
             val = random.randint(0, 2020)
         for i in range(len(tab)):
