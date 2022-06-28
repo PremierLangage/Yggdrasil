@@ -9,7 +9,10 @@ author=DR
 @ennonce.md
 
 
+
 title= Du lait de poule au Frigo
+
+lenonce =@ ennonce.md
 
 text==
 
@@ -32,4 +35,9 @@ pltest0,pltest1=build.build()
 with open("ennonce.md","r") as f:
     lenonce= f.read()
 
+
+
+with open("template.html","r") as f:
+     g = f.read()
+text += g
 ==
