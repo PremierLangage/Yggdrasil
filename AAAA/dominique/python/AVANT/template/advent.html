@@ -9,20 +9,20 @@ hiddenElement.id = "exempledownload";
 hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
 hiddenElement.target = '_blank';
 hiddenElement.download = 'exemple';
-hiddenElement.click();
+
 function doclick(){
     console.log("doclick");
     console.log(textToSave);
     hiddenElement.click();
 }
-    var textToSave = `{{data}}`;
+    var textToSaveb = `{{data}}`;
 
 var hiddenElementb = document.createElement('a');
 hiddenElementb.id = "exempledownload";
-hiddenElementb.href = 'data:attachment/text,' + encodeURI(textToSave);
+hiddenElementb.href = 'data:attachment/text,' + encodeURI(textToSaveb);
 hiddenElementb.target = '_blank';
-hiddenElementb.download = 'exemple';
-hiddenElementb.click();
+hiddenElementb.download = 'data';
+
 function doclickb(){
     console.log("doclick");
     console.log(textToSave);
