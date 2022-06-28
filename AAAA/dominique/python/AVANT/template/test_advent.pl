@@ -29,7 +29,7 @@ with open("template.html","r") as f:
      g = f.read()
 text += g
 
-with open("data","r") as f:
+with open("data","w") as f:
     f.write(g)
 
 
