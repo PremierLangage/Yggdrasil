@@ -54,6 +54,7 @@ def getQ1Q2():
     val = fromFileToList("exemple")
     q1 =  Question1(valeurs)
     q2 =  Question2(val)
+    print(q2)
     return q2
 
 def build():
