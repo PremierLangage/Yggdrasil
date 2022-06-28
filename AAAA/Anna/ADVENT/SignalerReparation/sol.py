@@ -58,6 +58,7 @@ def getQ1Q2():
 
 def build():
     Q2 = getQ1Q2()
+    print(Q2)
     plt2= f"""
     >>> Question2() == {Q2} # Question2 
     True
