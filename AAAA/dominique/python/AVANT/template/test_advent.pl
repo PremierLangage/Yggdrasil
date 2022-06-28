@@ -1,8 +1,5 @@
 
 
-# Boris Jabot 10/09/2019 OK
-# Copyright 2016 Dominique Revuz <dr@univ-mlv.fr>
-#author=
 title=Une fonction carre
 
 tag=function # N'oubliez pas de remplir ce champs svp
@@ -15,7 +12,7 @@ Ecrivez une fonction `carre` qui retourne le carré de son paramêtre
 
 @ exemple
 exemple =@ exemple
-@ exemple [data]
+
 sol=33
 
 before==
@@ -29,6 +26,7 @@ pltest3=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
 with open("template.html","r") as f:
      g = f.read()
 text += g
+text += exemple
 
 data = g
 with open("data","w") as f:
