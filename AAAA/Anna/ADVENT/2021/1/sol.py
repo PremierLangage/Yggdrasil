@@ -7,7 +7,7 @@ def builddata():
     tab.append(val)
     interval = random.randint(1,10)
     incOrDec = random.randint(0, 2)
-    for x in range (500):
+    for x in range (2000):
         if (val > 0) : 
             if (incOrDec == 0) : 
                 val = val + interval
@@ -23,7 +23,7 @@ def builddata():
 def buildfile(filename):
     tab = builddata()
     with open(filename, "w") as file:
-        for x in range(500):
+        for x in range(2000):
             file.write(str(tab[x])+"\n")
 
 def fromFileToList(filename):
