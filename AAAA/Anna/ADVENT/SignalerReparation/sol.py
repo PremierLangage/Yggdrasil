@@ -52,7 +52,7 @@ def getQ1Q2():
     valeurs = fromFileToList("data")
     q1 =  Question1(valeurs)
     q2 =  Question2(valeurs)
-    return q1, q2
+    return q2
 
 def build():
     Q1, Q2 = getQ1Q2()
