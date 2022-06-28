@@ -7,6 +7,7 @@ extends = ../template/advent.pl
 @ennonce.md
 @data1
 
+exemple = @exemple
 @exemple
 
 title= Le cadeau de Tante Sue
