@@ -48,14 +48,21 @@ def Question2(array):
                 if array[i] + array[j] + array[k] == 2020:
                     return array[i] * array[j] * array[k]
 
-def getQ1Q2():
-    buildfile("data")
-    valeurs = fromFileToList("data")
+def getQ1(valeurs):
+    
     q1 =  Question1(valeurs)
     q2 =  Question2(valeurs)
-    return q1, q2
+    return q1
+
+def getQ1(valeurs):
+    buildfile("data")
+    valeurs = fromFileToList("data")
+    q2 =  Question2(valeurs)
+    return q2
 
 def build():
+    buildfile("data")
+    valeurs = fromFileToList("data")
     Q1, Q2 = getQ1Q2()
     plt1 = f"""
     >>> Question1() == {Q1}
