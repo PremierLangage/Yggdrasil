@@ -51,7 +51,7 @@ def Question2(array):
 def getQ1Q2():
     buildfile("data")
     valeurs = fromFileToList("data")
-    val =  fromFileToList("exemple")
+    val = fromFileToList("exemple")
     q1 =  Question1(valeurs)
     q2 =  Question2(val)
     return q1, q2
