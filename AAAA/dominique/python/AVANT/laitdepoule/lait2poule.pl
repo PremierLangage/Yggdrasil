@@ -9,7 +9,7 @@ author=DR
 @sol.py [build.py]
 @ennonce.md
 
-exemple = @exemple
+exemple =@ exemple
 @ exemple
 
 title= Du lait de poule au Frigo
