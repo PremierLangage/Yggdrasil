@@ -15,3 +15,13 @@ Sur un petit écran, le rapport de balayage du sonar (votre saisie de puzzle) ap
 
 Par exemple, supposons que vous disposiez du rapport suivant :
 
+    199
+    200
+    208
+    210
+    200
+    207
+    240
+    269
+    260
+    263
