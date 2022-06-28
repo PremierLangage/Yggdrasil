@@ -45,7 +45,8 @@ if __name__ == "__main__":
 
     for test, want, name in testcases:
         try:
-            q= Path(test)
+            # If input is the name of a file, it loads the file into the stdin
+            q = Path(test)
             if q.exists() :
                 with q.open() as f:
                     test = f.read()
