@@ -5,7 +5,7 @@
     var textToSave = '{{exemple}}';
 
 var hiddenElement = document.createElement('a');
-hiddenElement.id = "exempledownload"
+hiddenElement.id = "exempledownload";
 hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
 hiddenElement.target = '_blank';
 hiddenElement.download = 'myFile.txt';
