@@ -49,9 +49,9 @@ def Question2(array):
 def getQ1Q2():
     buildfile("data")
     valeurs = fromFileToList("data")
-    Q1 =  Question1(valeurs)
-    Q2 =  Question2(valeurs)
-
+    q1 =  Question1(valeurs)
+    q2 =  Question2(valeurs)
+    return q1, q2
 
 def build():
     res = getQ()
