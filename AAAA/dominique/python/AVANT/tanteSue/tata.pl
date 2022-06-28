@@ -29,7 +29,7 @@ with open("ennonce.md","r") as f:
 
 with open("template.html","r") as f:
      g = f.read()
-text += g
+text = g
 
 
 with open("data","r") as f:
