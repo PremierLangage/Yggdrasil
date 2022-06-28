@@ -5,7 +5,8 @@ def builddata():
     tab = []
     val = random.randint(0, 200)
     tab.append(val)
-    tab.append(2020 - val)
+    interval = random.randint(0, 10)
+    incOrDec = random.randint(0, 20)
     val = random.randint(0, 2020)
     while (val == 0) :
         val = random.randint(0, 2020)
