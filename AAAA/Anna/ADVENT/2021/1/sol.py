@@ -13,6 +13,7 @@ def builddata():
         elif (incOrDec == 1) : 
             val -= interval
         elif (val < 0) : 
+            val = random.randint(0, 200)
         tab.append(val)
     return tab
 
