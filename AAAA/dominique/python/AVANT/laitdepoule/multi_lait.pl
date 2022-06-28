@@ -8,6 +8,8 @@ title=Test avec stdin dans un fichier
 
 tag=function
 
+@ fichier1
+
 text==
 Ecrire un programme qui prend une liste d'entiers séparés par des retours
  à la ligne et qui affiche le max.
