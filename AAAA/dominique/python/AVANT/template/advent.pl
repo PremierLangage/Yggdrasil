@@ -17,7 +17,7 @@ form=@ editor.html
 
 settings.allow_reroll=1
 
-
+text =@ advent.html
 
 
 @ /builder/before.py [builder.py]
