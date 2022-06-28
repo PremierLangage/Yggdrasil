@@ -44,3 +44,6 @@ Pour ce faire, comptez le nombre de fois qu'une mesure de profondeur augmente pa
     269 (increased)
     260 (decreased)
     263 (increased)
+
+Dans cet exemple, 7 mesures sont supérieures à la mesure précédente.
+Combien de mesures sont supérieures à la mesure précédente ?
