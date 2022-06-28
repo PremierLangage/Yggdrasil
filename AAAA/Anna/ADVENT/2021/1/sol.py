@@ -13,7 +13,8 @@ def builddata():
                 val += interval
             elif (incOrDec == 1) : 
                 val -= interval
-        tab[x] = val
+        val = random.randint(0, 200)
+        tab.append(val)
     return tab
 
 def buildfile(filename):
