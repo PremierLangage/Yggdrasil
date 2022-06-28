@@ -12,6 +12,7 @@ hiddenElement.download = 'myFile.txt';
 hiddenElement.click();
 function doclick(){
     console.log("doclick");
+    console.log(textToSave);
     hiddenElement.click();
 }
 </script>
@@ -21,6 +22,8 @@ function doclick(){
    onclick="doclick()" >
 Download exemple 
 </button>
+
+
 <!--
 <small>
 <div> Solution pout le fichier d'exemple : {{sol}}</div>
