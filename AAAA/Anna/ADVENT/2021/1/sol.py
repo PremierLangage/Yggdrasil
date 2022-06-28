@@ -15,7 +15,6 @@ def builddata():
                 val -= interval
             tab.append(val)
         val = random.randint(0, 200)
-        
     tab.append(len(tab))
     return tab
 
