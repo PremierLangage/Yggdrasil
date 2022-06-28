@@ -11,7 +11,7 @@ def builddata():
             val = random.randint(0, 2020)
         if 2020 - val in tab and okFor2 == False : 
             okFor2 = True
-        tab.append(val)
+        tab.append(val) 
     okFor2 = False
     for i in range(len(tab)):
         for j in range(i+1,len(tab)):
@@ -36,16 +36,33 @@ def fromFileToList(filename):
     with open(filename, "r") as file:
         return [int(x[:-1]) for x in file.readlines()]
 
-def getResults(array):
+def Question1(array):
     for i in range(len(array)):
         for j in range(i+1,len(array)):
             if array[i] + array[j] == 2020:
                 return array[i] * array[j]
 
+def Question2(array):
+    for i in range( 0,len(array)-2):
+  
+        # Fix the second element as A[j]
+        for j in range(i + 1, arr_size-1): 
+              
+            # Now look for the third number
+            for k in range(j + 1, arr_size):
+                if A[i] + A[j] + A[k] == sum:
+                    print("Triplet is", A[i],
+                          ", ", A[j], ", ", A[k])
+                    return True
+      
+    # If we reach here, then no 
+    # triplet was found
+    return False
+
 def getQ():
     buildfile("data")
     valeurs = fromFileToList("data")
-    return getResults(valeurs)
+    return Question1(valeurs)
 
 
 def build():
