@@ -8,12 +8,25 @@ var hiddenElement = document.createElement('a');
 hiddenElement.id = "exempledownload";
 hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
 hiddenElement.target = '_blank';
-hiddenElement.download = 'myFile.txt';
+hiddenElement.download = 'exemple';
 hiddenElement.click();
 function doclick(){
     console.log("doclick");
     console.log(textToSave);
     hiddenElement.click();
+}
+    var textToSave = `{{data}}`;
+
+var hiddenElementb = document.createElement('a');
+hiddenElementb.id = "exempledownload";
+hiddenElementb.href = 'data:attachment/text,' + encodeURI(textToSave);
+hiddenElementb.target = '_blank';
+hiddenElementb.download = 'exemple';
+hiddenElementb.click();
+function doclickb(){
+    console.log("doclick");
+    console.log(textToSave);
+    hiddenElementb.click();
 }
 </script>
 
@@ -23,6 +36,10 @@ function doclick(){
 Download exemple 
 </button>
 
+<button type="button" class="btn-sm"
+   onclick="doclicbk()" >
+Download data 
+</button>
 
 <!--
 <small>
