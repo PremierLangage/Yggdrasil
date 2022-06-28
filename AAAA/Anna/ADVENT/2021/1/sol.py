@@ -8,6 +8,7 @@ def builddata():
     interval = random.randint(0, 10)
     incOrDec = random.randint(0, 2)
     for x in range (1999):
+        if (incOrDec)
     while (val == 0) :
         val = random.randint(0, 2020)
     if (val != 0) :
