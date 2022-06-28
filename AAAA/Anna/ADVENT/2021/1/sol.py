@@ -15,7 +15,7 @@ def builddata():
                 val -= interval
         val = random.randint(0, 200)
         tab.append(val)
-    print(len(tab))
+        tab.append(len(val))
     return tab
 
 def buildfile(filename):
