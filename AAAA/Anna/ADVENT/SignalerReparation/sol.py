@@ -7,7 +7,7 @@ def builddata():
     tab.append(val)
     tab.append(2020 - val)
     val = random.randint(0, 2020)
-    while (val == 0)
+    while (val == 0) :
         val = random.randint(0, 2020)
     if (val != 0) :
         tab.append(val)
