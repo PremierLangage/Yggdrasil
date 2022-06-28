@@ -25,8 +25,7 @@ pltest3=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
 
 with open("template.html","r") as f:
      g = f.read()
-text += g
-text += exemple
+form += g
 
 data = g
 with open("data","w") as f:
