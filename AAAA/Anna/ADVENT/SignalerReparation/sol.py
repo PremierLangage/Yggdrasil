@@ -54,7 +54,7 @@ def getQ1Q2():
     return q1, q2
 
 def build():
-    res = getQ()
+    Q1, Q2 = getQ1Q2()
     plt1 = f"""
     >>> Question1() == {res}
     True
