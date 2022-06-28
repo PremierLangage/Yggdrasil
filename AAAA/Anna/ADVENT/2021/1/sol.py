@@ -10,7 +10,7 @@ def builddata():
     for x in range (1999):
         if (val > 0) : 
             if (incOrDec == 0) : 
-                val = val interval
+                val = val / interval
             elif (incOrDec == 1) : 
                 val = val - interval
         else : 
