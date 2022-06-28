@@ -20,7 +20,7 @@ def builddata():
             while 2020 - (val + tab[i]) in tab : 
                 val = random.randint(0, 2020)
         tab.append(val) 
-    tab.shuffle()
+    random.shuffle(tab)
     return tab
 
 def buildfile(filename):
