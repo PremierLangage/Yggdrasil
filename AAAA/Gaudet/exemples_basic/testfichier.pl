@@ -15,3 +15,6 @@ testcases==
 [('data', '4000', 'Test 1'),
 ('exemple', '89', 'Test 2')]
 ==
+
+@data
+@exemple
