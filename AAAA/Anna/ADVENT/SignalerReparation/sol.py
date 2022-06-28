@@ -58,8 +58,8 @@ def build():
     plt1 = f"""
     >>> Question1() == {res}
     True
-    
-    >>> Question1() == {res}
+
+    >>> Question2() == {res}
     True
     """
     return plt1
