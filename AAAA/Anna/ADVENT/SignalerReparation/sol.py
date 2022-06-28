@@ -56,10 +56,10 @@ def getQ1Q2():
 def build():
     Q1, Q2 = getQ1Q2()
     plt1 = f"""
-    >>> Question1() == {res}
+    >>> Question1() == {Q1}
     True
 
-    >>> Question2() == {res}
+    >>> Question2() == {Q2}
     True
     """
     return plt1
