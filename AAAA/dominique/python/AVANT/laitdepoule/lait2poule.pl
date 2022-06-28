@@ -4,6 +4,7 @@ extends= /AAAA/Gaudet/template/cgbasic.pl
 
 author=DR
 
+@ /AAAA/dominique/python/AVANT/template/advent.html [download.html]
 
 @sol.py [build.py]
 @ennonce.md
@@ -38,7 +39,12 @@ with open("ennonce.md","r") as f:
 
 
 
-with open("template.html","r") as f:
+with open("download.html","r") as f:
      g = f.read()
 text += g
+
+with open("data","r") as f:
+     data = f.read()
+
+
 ==
