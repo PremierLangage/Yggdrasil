@@ -7,7 +7,7 @@ def builddata():
     tab.append(val)
     tab.append(2020 - val)
     val = random.randint(0, 2020)
-    while (val == 0) :
+    while (val == 0)
         val = random.randint(0, 2020)
     if (val != 0) :
         tab.append(val)
@@ -48,17 +48,15 @@ def Question2(array):
                 if array[i] + array[j] + array[k] == 2020:
                     return array[i] * array[j] * array[k]
 
-def getQ1(valeurs):
-    return Question1(valeurs)
-
-def getQ2(valeurs): 
-    return Question2(valeurs)
-
-def build():
+def getQ1Q2():
     buildfile("data")
     valeurs = fromFileToList("data")
-    Q1 = getQ1(valeurs)
-    Q2 = getQ2(valeurs)
+    q1 =  Question1(valeurs)
+    q2 =  Question2(valeurs)
+    return q1, q2
+
+def build():
+    Q1, Q2 = getQ1Q2()
     plt1 = f"""
     >>> Question1() == {Q1}
     True
