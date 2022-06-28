@@ -52,19 +52,22 @@ def getQ1Q2():
     buildfile("data")
     valeurs = fromFileToList("data")
     val = fromFileToList("exemple")
+    print(Question2(val))
     q1 =  Question1(valeurs)
-    q2 =  Question2(val)
-    print(q2)
-    return q2
+    q2 =  Question2(valeurs)
+    return q1, q2
 
 def build():
-    Q2 = getQ1Q2()
-    print(Q2)
+    Q1, Q2 = getQ1Q2()
+    plt1= f"""
+    >>> Question1() == {Q1} # Question1 
+    True
+    """
     plt2= f"""
     >>> Question2() == {Q2} # Question2 
     True
     """
-    return plt2
+    return plt1,plt2
 
 
 
