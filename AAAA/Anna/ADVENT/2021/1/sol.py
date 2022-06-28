@@ -3,7 +3,7 @@ import re
 
 def builddata():
     tab = []
-    val = random.randint(0, 2020)
+    val = random.randint(0, 200)
     tab.append(val)
     tab.append(2020 - val)
     val = random.randint(0, 2020)
