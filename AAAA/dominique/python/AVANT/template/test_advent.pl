@@ -12,6 +12,10 @@ piste=verte
 text==
 Ecrivez une fonction `carre` qui retourne le carré de son paramêtre
 ==
+
+
+
+
 before==
 import random 
 p=random.randint(23,77)
@@ -19,6 +23,9 @@ pltest2=""">>> carre({})\n{}\n""".format(p, p**2)
 p+=17
 pltest3=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
 
+
+with open("template.html","r") as f:
+    text += f.read()
 ==
 
 pltest0==
