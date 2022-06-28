@@ -16,7 +16,7 @@ Le premier nombre envoyé correspondant à la taille de la liste
 
 testcases==
 [('fichier1', '4000', 'Test 1'),
-('fichier2', '89', 'Test 2')]
+('fichier1', '89', 'Test 2')]
 ==
 
 # testcase = [f"('''{exemple}''','{sol}','Tst exemple question1')"]
