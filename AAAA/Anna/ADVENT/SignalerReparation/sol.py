@@ -43,9 +43,7 @@ def Question1(array):
                 return array[i] * array[j]
 
 def Question2(array):
-    for i in range( 0,len(array)-2):
-  
-        # Fix the second element as A[j]
+    for i in range( 0,len(array)-2): 
         for j in range(i + 1, arr_size-1): 
               
             # Now look for the third number
