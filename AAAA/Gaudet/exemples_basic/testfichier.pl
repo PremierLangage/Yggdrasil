@@ -2,7 +2,7 @@
 extends= ../template/cgbasic.pl
 
 author=DR
-title=Test d'entrée standard a a partir d'un fichier
+title=Test avec stdin dans un fichier
 
 tag=function
 
