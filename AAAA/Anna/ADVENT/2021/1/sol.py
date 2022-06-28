@@ -13,7 +13,7 @@ def builddata():
         tab.append(val)
         val = random.randint(0, 200)
         interval = random.randint(1,10)
-    incOrDec = random.randint(0, 2)
+        incOrDec = random.randint(0, 2)
     tab.append(len(tab))
     return tab
 
