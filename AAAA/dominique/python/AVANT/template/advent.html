@@ -5,7 +5,7 @@
     var textToSave = '{{exemple}}';
 
 var hiddenElement = document.createElement('a');
-
+hiddenElement.id = "exempledownload"
 hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
 hiddenElement.target = '_blank';
 hiddenElement.download = 'myFile.txt';
@@ -13,6 +13,10 @@ hiddenElement.download = 'myFile.txt';
 </script>
 
 
+<button type="button" class="btn-sm"
+   onclick="hiddenElement.click()" >
+Download exemple 
+</button>
 
 <small>
 <div> Solution pout le fichier d'exemple : {{sol}}</div>
