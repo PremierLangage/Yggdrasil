@@ -32,13 +32,12 @@ Vous pouvez par exemple ecrire :
     def Question1() :
         with open("data","r") as f:
             ...# votre code
-        return res                
+            return ...               
 
     def Question2() :
-        res = 0
         with open("data","r") as f:
             ...# votre code
-        return res  
+            return ...
 
 ==
 
