@@ -39,11 +39,16 @@ if __name__ == "__main__":
 
     # Execution of tests
     from random import *
+    from pathlib import *
     testcases = eval(context['testcases'])
     testSuccess = 0
 
     for test, want, name in testcases:
         try:
+            q= Path(test)
+            if q.exist() :
+                with q.open() as f:
+                    test = f.read()
             proc = subprocess.run(handler.exec_cmd, input=test, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                 text=True, timeout=1)
         except subprocess.TimeoutExpired:
