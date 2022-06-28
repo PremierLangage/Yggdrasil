@@ -15,7 +15,7 @@ Ecrivez une fonction `carre` qui retourne le carré de son paramêtre
 
 exemple =@ exemple
 
-
+sol=33
 
 before==
 import random 
