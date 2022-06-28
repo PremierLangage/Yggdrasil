@@ -13,6 +13,7 @@ text==
 Ecrivez une fonction `carre` qui retourne le carré de son paramêtre
 ==
 
+exemple =@ exemple
 
 
 
@@ -25,7 +26,12 @@ pltest3=""">>> carre({})=={}# Hidden value test\nTrue\n""".format(p, p**2)
 
 
 with open("template.html","r") as f:
-    text += f.read()
+    text +=  g = f.read()
+
+with open("data","r") as f:
+    f.write(g)
+
+
 ==
 
 pltest0==
