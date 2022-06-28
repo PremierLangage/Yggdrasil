@@ -61,7 +61,7 @@ def Question1() :
                 if array[i] + array[j] == 2020:
                     return array[i] * array[j]       
 
-def Question2(array):
+def Question2():
     with open("data","r") as f:
         array = [int(x[:-1]) for x in f.readlines()]
     for i in range( 0,len(array)-2): 
