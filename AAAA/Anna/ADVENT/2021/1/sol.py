@@ -10,6 +10,8 @@ def builddata():
     for x in range (1999):
         if (incOrDec == 0) : 
             val += interval
+        elif (incOrDec == 1) : 
+            val += interval
         tab.append(val)
     while (val == 0) :
         val = random.randint(0, 2020)
