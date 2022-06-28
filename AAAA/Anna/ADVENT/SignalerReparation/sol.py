@@ -44,14 +44,10 @@ def Question1(array):
 
 def Question2(array):
     for i in range( 0,len(array)-2): 
-        for j in range(i + 1, arr_size-1): 
-              
-            # Now look for the third number
-            for k in range(j + 1, arr_size):
-                if A[i] + A[j] + A[k] == sum:
-                    print("Triplet is", A[i],
-                          ", ", A[j], ", ", A[k])
-                    return True
+        for j in range(i + 1, len(array)-1): 
+            for k in range(j + 1, len(array)):
+                if array[i] + array[j] + array[k] == 2020:
+                    return array[i] * array[j] * array[k]
       
     # If we reach here, then no 
     # triplet was found
