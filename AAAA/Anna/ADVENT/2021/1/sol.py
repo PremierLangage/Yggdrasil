@@ -15,7 +15,7 @@ def builddata():
         val = random.randint(0, 200)
         interval = random.randint(1,10)
         incOrDec = random.randint(0, 2)
-    tab.append(val)
+        tab.append(val)
     return tab
 
 def buildfile(filename):
