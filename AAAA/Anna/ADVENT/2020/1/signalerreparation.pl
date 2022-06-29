@@ -1,7 +1,6 @@
 extends= /AAAA/Gaudet/template/cgbasic.pl
 
 lenonce =@ ennonce.md
-bob =@ exemple 
 
 @sol.py [build.py]
 
