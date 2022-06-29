@@ -52,8 +52,7 @@ with open("exemple","r") as f:
 
 testcases = build.build(lexemple)
 
-with open("data","r") as f:
-    donnees= f.read()
+
 ==
 
 
