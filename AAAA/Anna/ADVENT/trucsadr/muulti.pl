@@ -22,7 +22,5 @@ testcases==
 ('fichier1', '89', 'Test 2')]
 ==
 
-# testcase1 = [f"('''{exemple}''','{exemplesol}','Tst exemple question1')",
-
-f"  data sol ]
+# testcase1 = [f"('''{exemple}''','{exemplesol}','Tst exemple question1')",f"  data sol ]
 
