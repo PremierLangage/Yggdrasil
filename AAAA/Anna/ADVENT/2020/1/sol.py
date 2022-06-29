@@ -57,17 +57,18 @@ def getQ1Q2():
     q2 =  Question2(valeurs)
     return q1, q2
 
+
+testcases==
+[('4\n4000\n1\n2\n3', '4001', 'anna 1'),
+('4\n89\n1\n2\n31', '89', 'Test 2')]
+==
+
+# testcase1 =[f"('''{exemple}''','{exemplesol}','Tst exemple question1')",f"  data sol ]
+
+
 def build():
     Q1, Q2 = getQ1Q2()
-    plt1= f"""
-    >>> Question1() == {Q1} # Question1 
-    True
-    """
-    plt2= f"""
-    >>> Question2() == {Q2} # Question2 
-    True
-    """
-    return plt1,plt2
+    return f"('''{exemple}''','{exemplesol}','Tst exemple question1')",f"  data sol ]
 
 
 
