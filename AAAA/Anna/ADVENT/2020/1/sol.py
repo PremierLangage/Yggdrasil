@@ -58,7 +58,7 @@ def getQ1():
 
 def build():
     Qe,Qd = getQ1()
-    return f"""[('''{bob}''','{Qe}','Tst exemple question1')",
+    return f"""[('''{donnees}''','{Qe}','Tst exemple question1')",
      ('''{donnees}''','{Qd}','Tst data question1')]"""
 
 
