@@ -1,4 +1,4 @@
-
+extends= /AAAA/Gaudet/template/cgbasic.pl
 
 @sol.py [build.py]
 lenonce =@ ennonce.md
