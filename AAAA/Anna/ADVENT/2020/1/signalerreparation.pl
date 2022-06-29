@@ -6,6 +6,8 @@ lenonce =@ ennonce.md
 
 @exemple 
 
+lexemple =@exemple
+
 @/AAAA/dominique/python/AVANT/template/advent.pl [template.html]
 
 
