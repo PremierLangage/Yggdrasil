@@ -54,11 +54,13 @@ def Question2(array):
                 if array[i] + array[j] + array[k] == 2020:
                     return array[i] * array[j] * array[k]
 
-def build(lexemple, q='1'):
+def build(fichier, q='1'):
+    if lexemple:
+        pass 
     valeurs = builddata()
-    val = ToList(lexemple)
+    val = ToList(fichier)
     dataliteral = '\n'.join([ str(v) for v in valeurs])
-    return f"""[('''{lexemple}''','{Question1(val)}','Tst exemple question1'),
+    return f"""[('''{fichier}''','{Question1(val)}','Tst exemple question1'),
      ('''{dataliteral}''','{Question1(valeurs)}','Tst data question1')]""", dataliteral
 
 
