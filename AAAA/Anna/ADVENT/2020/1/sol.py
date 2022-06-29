@@ -55,8 +55,6 @@ def Question2(array):
                     return array[i] * array[j] * array[k]
 
 def build(fichier, q='1'):
-    if 'lexemple' not in globals():
-        lexemple += 3
     valeurs = builddata()
     val = ToList(fichier)
     dataliteral = '\n'.join([ str(v) for v in valeurs])
