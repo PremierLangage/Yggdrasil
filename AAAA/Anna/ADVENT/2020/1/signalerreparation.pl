@@ -57,9 +57,8 @@ testcases, donnees = build.build(lexemple)
 
 
 editor.code ==
-def Question1() :
-    with open("data","r") as f:
-        array = [int(x[:-1]) for x in f.readlines()]
+    import sys
+    array = [int(x[:-1]) for x in sys.stdin.readlines()]
     for i in range(len(array)):
             for j in range(i+1,len(array)):
                 if array[i] + array[j] == 2020:
