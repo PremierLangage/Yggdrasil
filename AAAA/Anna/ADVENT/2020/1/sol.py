@@ -52,10 +52,8 @@ def getQ1():
     buildfile("data")
     valeurs = fromFileToList("data")
     val = fromFileToList("exemple")
-    #q1 =  Question1(valeurs)
-    q1 =  Question1(val)
-    q =  Question2(valeurs)
-    return q, q1
+
+    return Question1(val), Question1(valeurs)
 
 
 testcases==
@@ -67,8 +65,9 @@ testcases==
 
 
 def build():
-    Q1 = getQ1()
-    return f"[('''{lexemple}''','{Q1}','Tst exemple question1')",f"  data sol ]
+    Qe,Qd = getQ1()
+    return f"""[('''{lexemple}''','{Qe}','Tst exemple question1')",
+     ('''{ldata}''','{Qd}','Tst data question1')"]
 
 
 
