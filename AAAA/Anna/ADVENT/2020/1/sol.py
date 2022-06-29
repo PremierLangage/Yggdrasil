@@ -35,7 +35,7 @@ def fromFileToList(filename):
     with open(filename, "r") as file:
         return [int(x[:-1]) for x in file.readlines()]
 
-def fromListToLiteral(filename):
+def fromListToLiteral(list):
     with open(filename, "r") as file:
         return file.read()
 
