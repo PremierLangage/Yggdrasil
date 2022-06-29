@@ -53,15 +53,15 @@ def getQ1():
     valeurs = fromFileToList("data")
     val = fromFileToList("exemple")
 
-    return Question1(val), Question1(valeurs)
+    return , 
 
 
 def build(lexemple, q='1'):
     buildfile("data")
     valeurs = fromFileToList("data")
     val = fromFileToList("exemple")
-    return f"""[('''{donnees}''','{Qe}','Tst exemple question1')",
-     ('''{donnees}''','{Qd}','Tst data question1')]"""
+    return f"""[('''{donnees}''','{Question1(val)}','Tst exemple question1')",
+     ('''{donnees}''','{Question1(valeurs)}','Tst data question1')]"""
 
 
 
