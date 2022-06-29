@@ -41,6 +41,10 @@ Vous pouvez par exemple ecrire :
 
 ==
 
+
+
+
+
 before==
 import build
 pltest0,pltest1 = build.build()
