@@ -54,7 +54,7 @@ bob="anna"
 with open("exemple","r") as f:
     lexemple= f.read()
 
-testcases = build.build(lexemple)
+testcases = build.build(exemple)
 
 with open("data","r") as f:
     donnees= f.read()
