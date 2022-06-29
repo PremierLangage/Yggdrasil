@@ -52,7 +52,6 @@ def getQ1Q2():
     buildfile("data")
     valeurs = fromFileToList("data")
     val = fromFileToList("exemple")
-
     #q1 =  Question1(valeurs)
     q1 =  Question1(val)
     q2 =  Question2(valeurs)
