@@ -48,7 +48,7 @@ def Question2(array):
                 if array[i] + array[j] + array[k] == 2020:
                     return array[i] * array[j] * array[k]
 
-def getQ1Q2():
+def getQ1():
     buildfile("data")
     valeurs = fromFileToList("data")
     val = fromFileToList("exemple")
@@ -67,7 +67,7 @@ testcases==
 
 
 def build():
-    Q1 = getQ1Q2()
+    Q1, Q2 = getQ1Q2()
     return f"[('''{lexemple}''','{Q1}','Tst exemple question1')",f"  data sol ]
 
 
