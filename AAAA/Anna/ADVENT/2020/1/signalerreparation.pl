@@ -46,11 +46,13 @@ Vous pouvez par exemple ecrire :
 
 before==
 import build
-with open("exemple","r") as f:
-    lexemple= f.read()
+
 if 'lexemple' not in globals(): 
     text+= "rate"
 
+with open("exemple","r") as f:
+    lexemple= f.read()
+    
 testcases = build.build()
 
 with open("data","r") as f:
