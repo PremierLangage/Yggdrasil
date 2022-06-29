@@ -41,9 +41,12 @@ Vous pouvez par exemple ecrire :
 
 ==
 
-testcases = [('exemple','{exemplesol}','Tst exemple question1')]
+testcases = [('exemple','145875','Tst exemple question1')]
 
-
+testcases==
+[('fichier1', '4000', 'Test 1'),
+('fichier1', '89', 'Test 2')]
+==
 
 before==
 import build
