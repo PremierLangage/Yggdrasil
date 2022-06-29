@@ -54,7 +54,7 @@ def getQ1():
     val = fromFileToList("exemple")
     #q1 =  Question1(valeurs)
     q1 =  Question1(val)
-    q2 =  Question2(valeurs)
+    q =  Question2(valeurs)
     return q1
 
 
