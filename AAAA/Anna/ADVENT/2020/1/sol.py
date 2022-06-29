@@ -55,7 +55,7 @@ def getQ1Q2():
     #q1 =  Question1(valeurs)
     q1 =  Question1(val)
     q2 =  Question2(valeurs)
-    return q1, q2
+    return q1
 
 
 testcases==
