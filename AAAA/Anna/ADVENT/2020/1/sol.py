@@ -57,7 +57,6 @@ def getQ1():
 
 
 def build():
-    global lexemple
     Qe,Qd = getQ1()
     return f"""[('''{bob}''','{Qe}','Tst exemple question1')",
      ('''{donnees}''','{Qd}','Tst data question1')]"""
