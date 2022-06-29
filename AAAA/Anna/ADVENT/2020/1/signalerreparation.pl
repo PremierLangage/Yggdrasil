@@ -41,8 +41,6 @@ Vous pouvez par exemple ecrire :
 
 ==
 
-testcases = [f"('''{exemple}''','{145875}','Tst exemple question2')"]
-
 
 
 before==
