@@ -36,7 +36,6 @@ def fromFileToList(filename):
         return [int(x[:-1]) for x in file.readlines()]
 
 def ToList(filec):
-    
     return [int(x) for x in filec[:-1].split('\n')] 
 
 
