@@ -57,6 +57,7 @@ def getQ1():
 
 
 def build():
+    global bob 
     Qe,Qd = getQ1()
     raise Exception(bob)
     return f"""[('''{donnees}''','{Qe}','Tst exemple question1')",
