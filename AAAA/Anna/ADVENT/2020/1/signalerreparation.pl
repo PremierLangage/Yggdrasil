@@ -47,7 +47,7 @@ Vous pouvez par exemple ecrire :
 before==
 import build
 if 'lexemple' not in globals(): 
-    
+    text+= "rate"
 
 testcases = build.build()
 
