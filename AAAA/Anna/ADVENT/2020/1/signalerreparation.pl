@@ -49,12 +49,17 @@ testcases, donnees = build.build(lexemple)
 
 
 editor.code ==
-    import sys
+import sys
+def titi():
     array = [int(x[:-1]) for x in sys.stdin.readlines()]
     for i in range(len(array)):
             for j in range(i+1,len(array)):
                 if array[i] + array[j] == 2020:
-                    return array[i] * array[j]       
+                    return array[i] * array[j]
+                    
+
+if __name__ == '__main__':
+    print(titi())  
 
 def Question2():
     with open("data","r") as f:
