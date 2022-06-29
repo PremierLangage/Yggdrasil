@@ -2,7 +2,7 @@
 
 @sol.py [build.py]
 @ennonce.md
-lexemple = @exemple 
+lexemple =@ exemple 
 @/AAAA/dominique/python/AVANT/template/advent.pl [template.html]
 
 
