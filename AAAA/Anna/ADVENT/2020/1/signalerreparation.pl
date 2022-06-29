@@ -1,9 +1,10 @@
 extends= /AAAA/Gaudet/template/cgbasic.pl
 
 @exemple 
-@sol.py [build.py]
 lenonce =@ ennonce.md
 lexemple =@ exemple 
+
+@sol.py [build.py]
 
 @/AAAA/dominique/python/AVANT/template/advent.pl [template.html]
 
@@ -52,7 +53,7 @@ if 'lexemple' not in globals():
 
 with open("exemple","r") as f:
     lexemple= f.read()
-    
+
 testcases = build.build()
 
 with open("data","r") as f:
