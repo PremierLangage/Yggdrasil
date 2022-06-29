@@ -18,8 +18,8 @@ Le premier nombre envoyé correspondant à la taille de la liste
 ==
 
 testcases==
-[('fichier1', '4000', 'Test 1'),
-('fichier1', '89', 'Test 2')]
+[('4\n4000\n1\n2\n3', '4000', 'Test 1'),
+('4\n89\n1\n2\n31', '89', 'Test 2')]
 ==
 
 # testcase1 = [f"('''{exemple}''','{exemplesol}','Tst exemple question1')",f"  data sol ]
