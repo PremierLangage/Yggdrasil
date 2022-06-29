@@ -47,6 +47,7 @@ Vous pouvez par exemple ecrire :
 before==
 import build
 if 'lexemple' in globals(): 
+    print("A")
 
 testcases = build.build()
 
