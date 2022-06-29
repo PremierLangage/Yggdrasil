@@ -36,7 +36,7 @@ def fromFileToList(filename):
         return [int(x[:-1]) for x in file.readlines()]
 
 def ToList(filec):
-    raise Exception(filec)
+    
     return [int(x.strip()) for x in filec if x] 
 
 
