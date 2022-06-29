@@ -57,7 +57,7 @@ def Question2(array):
 def build(lexemple, q='1'):
     valeurs = builddata()
     val = ToList(lexemple)
-    dataliteral = ''.join([ str(v) for v in valeurs])
+    dataliteral = '\n'.join([ str(v) for v in valeurs])
     return f"""[('''{lexemple}''','{Question1(val)}','Tst exemple question1')",
      ('''{dataliteral}''','{Question1(valeurs)}','Tst data question1')]""", dataliteral
 
