@@ -47,7 +47,7 @@ Vous pouvez par exemple ecrire :
 before==
 import build
 with open("exemple","r") as f:
-    donnees= f.read()
+    lexemmple= f.read()
 if 'lexemple' not in globals(): 
     text+= "rate"
 
