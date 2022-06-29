@@ -54,7 +54,7 @@ def Question2(array):
 
 def build(lexemple, q='1'):
     buildfile("data")
-    valeurs = fromFileToList("data")
+    valeurs = builddata()
     val = fromFileToList("lexemple")
     return f"""[('''{lexemple}''','{Question1(val)}','Tst exemple question1')",
      ('''{fromFileToLiteral(data)}''','{Question1(valeurs)}','Tst data question1')]"""
