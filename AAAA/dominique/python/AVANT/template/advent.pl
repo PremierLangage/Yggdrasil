@@ -13,6 +13,8 @@
 editor.fontsize=14
 title==
 ==
+text==
+==
 # une interface standard d'exercice avec un editeur pour la réponse
 form=@ editor.html
 
