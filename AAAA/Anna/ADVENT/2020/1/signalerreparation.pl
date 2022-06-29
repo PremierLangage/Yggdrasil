@@ -1,8 +1,9 @@
 
 
 @sol.py [build.py]
-@ennonce.md
+lenonce =@ ennonce.md
 lexemple =@ exemple 
+
 @/AAAA/dominique/python/AVANT/template/advent.pl [template.html]
 
 
