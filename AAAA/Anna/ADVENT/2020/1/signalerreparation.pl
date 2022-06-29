@@ -54,7 +54,7 @@ if 'lexemple' not in globals():
 with open("exemple","r") as f:
     lexemple= f.read()
 
-testcases = build.build()
+#testcases = build.build()
 
 with open("data","r") as f:
     donnees= f.read()
