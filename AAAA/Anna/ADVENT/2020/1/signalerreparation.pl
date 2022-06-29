@@ -46,8 +46,8 @@ Vous pouvez par exemple ecrire :
 
 before==
 import build
-if 'lexemple' in globals(): 
-    print("A")
+if 'lexemple' not in globals(): 
+    
 
 testcases = build.build()
 
