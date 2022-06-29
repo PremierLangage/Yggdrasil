@@ -48,12 +48,10 @@ Vous pouvez par exemple ecrire :
 
 before==
 import build
-bob="anna"
-
 with open("exemple","r") as f:
     lexemple= f.read()
 
-testcases = build.build(exemple)
+testcases = build.build(data)
 
 with open("data","r") as f:
     donnees= f.read()
