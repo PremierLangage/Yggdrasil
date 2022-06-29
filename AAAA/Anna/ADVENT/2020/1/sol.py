@@ -68,7 +68,7 @@ testcases==
 
 def build():
     Q1, Q2 = getQ1Q2()
-    return f"('''{exemple}''','{exemplesol}','Tst exemple question1')",f"  data sol ]
+    return f"[('''{lexemple}''','{exemplesol}','Tst exemple question1')",f"  data sol ]
 
 
 
