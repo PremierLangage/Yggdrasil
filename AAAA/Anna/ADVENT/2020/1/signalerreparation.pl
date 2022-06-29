@@ -4,7 +4,7 @@ extends = /ComputerScience/python/template/pltest.pl
 @sol.py [build.py]
 @ennonce.md
 @exemple 
-@Yggdrasil/AAAA/dominique/python/AVANT/template/advent.pl [template.html]
+@/AAAA/dominique/python/AVANT/template/advent.pl [template.html]
 
 
 title= Signaler Reparation
