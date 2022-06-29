@@ -48,8 +48,12 @@ Vous pouvez par exemple ecrire :
 
 before==
 import build
-with open("exemple","r") as f:
-    lexemple= f.read()
+with open("exemple","r") as file:
+    lexemple= [int(x[:-1]) for x in file.readlines()]
+
+def fromFileToList(filename):
+    with open(filename, "r") as file:
+        return 
 
 testcases = build.build(exemple)
 
