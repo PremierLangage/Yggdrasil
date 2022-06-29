@@ -50,7 +50,7 @@ import build
 with open("exemple","r") as f:
     lexemple= f.read()
 
-testcases = build.build(lexemple)
+testcases, donnees = build.build(lexemple)
 
 
 ==
