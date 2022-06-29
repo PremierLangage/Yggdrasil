@@ -35,7 +35,7 @@ def fromFileToList(filename):
     with open(filename, "r") as file:
         return [int(x[:-1]) for x in file.readlines()]
 
-def fromListToLiteral(list):
+def fromFileToLiteral(filename):
     with open(filename, "r") as file:
         return file.read()
 
@@ -54,7 +54,7 @@ def Question2(array):
 
 def build(lexemple, q='1'):
     valeurs = builddata()
-    val = lexemple
+    val = fromFileToList("lexemple")
     return f"""[('''{lexemple}''','{Question1(val)}','Tst exemple question1')",
      ('''{fromFileToLiteral(data)}''','{Question1(valeurs)}','Tst data question1')]"""
 
