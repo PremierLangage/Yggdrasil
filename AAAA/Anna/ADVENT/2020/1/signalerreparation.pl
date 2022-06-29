@@ -51,8 +51,7 @@ import build
 with open("exemple","r") as file:
     lexemple= [int(x[:-1]) for x in file.readlines()]
 
-
-testcases = build.build(exemple)
+testcases = build.build(lexemple)
 
 with open("data","r") as f:
     donnees= f.read()
