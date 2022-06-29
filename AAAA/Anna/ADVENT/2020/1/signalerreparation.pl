@@ -43,7 +43,6 @@ Vous pouvez par exemple ecrire :
 
 testcases = [f"('''{exemple}''','{exemplesol}','Tst exemple question1')"]
 
-
 before==
 import build
 pltest0,pltest1 = build.build()
