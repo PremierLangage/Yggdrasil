@@ -35,6 +35,10 @@ def fromFileToList(filename):
     with open(filename, "r") as file:
         return [int(x[:-1]) for x in file.readlines()]
 
+def fromFileToLiteral(filename):
+    with open(filename, "r") as file:
+        return file.read()
+
 def Question1(array):
     for i in range(len(array)):
         for j in range(i+1,len(array)):
