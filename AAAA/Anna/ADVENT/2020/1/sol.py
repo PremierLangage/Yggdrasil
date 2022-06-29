@@ -56,7 +56,6 @@ def getQ1():
     return Question1(val), Question1(valeurs)
 
 
-
 def build():
     Qe,Qd = getQ1()
     return f"""[('''{lexemple}''','{Qe}','Tst exemple question1')",
