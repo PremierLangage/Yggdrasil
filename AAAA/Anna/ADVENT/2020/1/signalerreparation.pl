@@ -50,9 +50,6 @@ Vous pouvez par exemple ecrire :
 before==
 import build
 
-if 'lexemple' not in globals(): 
-    text+= "rate"
-
 with open("exemple","r") as f:
     lexemple= f.read()
 
