@@ -41,7 +41,7 @@ Vous pouvez par exemple ecrire :
 
 ==
 
-testcases = [('exemple','145875','Tst exemple question1')]
+ testcase = [f"('''{exemple}''','{145875}','Tst exemple question2')"]
 
 testcases==
 [('fichier1', '4000', 'Test 1'),
