@@ -19,7 +19,8 @@ text==
 form=@ editor.html
 
 settings.allow_reroll=1
-
+before==
+==
 
 
 
