@@ -56,10 +56,10 @@ def getQ1():
     return Question1(val), Question1(valeurs)
 
 
-def build():
-    global bob 
-    Qe,Qd = getQ1()
-    raise Exception(globals())
+def build(lexemple, q='1'):
+    buildfile("data")
+    valeurs = fromFileToList("data")
+    val = fromFileToList("exemple")
     return f"""[('''{donnees}''','{Qe}','Tst exemple question1')",
      ('''{donnees}''','{Qd}','Tst data question1')]"""
 
