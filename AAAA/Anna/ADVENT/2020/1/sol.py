@@ -58,6 +58,7 @@ def getQ1():
 
 def build():
     Qe,Qd = getQ1()
+    raise Exception(donnees)
     return f"""[('''{donnees}''','{Qe}','Tst exemple question1')",
      ('''{donnees}''','{Qd}','Tst data question1')]"""
 
