@@ -56,13 +56,6 @@ def getQ1():
     return Question1(val), Question1(valeurs)
 
 
-testcases==
-[('4\n4000\n1\n2\n3', '4001', 'anna 1'),
-('4\n89\n1\n2\n31', '89', 'Test 2')]
-==
-
-# testcase1 =[f"('''{exemple}''','{exemplesol}','Tst exemple question1')",f"  data sol ]
-
 
 def build():
     Qe,Qd = getQ1()
