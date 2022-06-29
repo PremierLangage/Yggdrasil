@@ -5,7 +5,7 @@ bob =@ exemple
 
 @sol.py [build.py]
 
-@exemple [data]
+@exemple 
 
 @/AAAA/dominique/python/AVANT/template/advent.pl [template.html]
 
