@@ -1,6 +1,5 @@
 extends= /AAAA/Gaudet/template/cgbasic.pl
 
-@exemple 
 lenonce =@ ennonce.md
 bob =@ exemple 
 
