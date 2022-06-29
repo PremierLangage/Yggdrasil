@@ -24,3 +24,14 @@ testcases==
 
 # testcase1 = [f"('''{exemple}''','{exemplesol}','Tst exemple question1')",f"  data sol ]
 
+editor.code==
+if __name__ == '__main__':
+    x=int(input())
+    m=int(input())
+    for i in range(x-2):
+        r= int(input())
+        if m <r:
+            m=r
+    print(m)
+    
+==
