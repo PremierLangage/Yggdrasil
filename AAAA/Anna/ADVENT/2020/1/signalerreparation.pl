@@ -48,8 +48,6 @@ Vous pouvez par exemple ecrire :
 before==
 import build
 pltest0,pltest1 = build.build()
-with open("ennonce.md","r") as f:
-    lenonce= f.read()
 
 with open("data","r") as f:
     donnees= f.read()
