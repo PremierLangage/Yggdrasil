@@ -43,10 +43,6 @@ Vous pouvez par exemple ecrire :
 
 testcases = [f"('''{exemple}''','{exemplesol}','Tst exemple question1')"]
 
-testcases==
-[('fichier1', '4000', 'Test 1'),
-('fichier1', '89', 'Test 2')]
-==
 
 before==
 import build
