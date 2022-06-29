@@ -6,6 +6,8 @@ lexemple =@ exemple
 
 @sol.py [build.py]
 
+@exemple [data]
+
 @/AAAA/dominique/python/AVANT/template/advent.pl [template.html]
 
 
