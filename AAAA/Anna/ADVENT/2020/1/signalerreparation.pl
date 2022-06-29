@@ -32,14 +32,8 @@ Vous pouvez tester votre fonction avec le fichier exemple ci-dessous dont le ré
 Vous pouvez par exemple ecrire : 
 
     def Question1() :
-        with open("data","r") as f:
-            ...# votre code
-            return ...               
-
-    def Question2() :
-        with open("data","r") as f:
-            ...# votre code
-            return ...
+        lignes  = sys.stdin.readlines()
+        ...
 
 ==
 
@@ -47,8 +41,6 @@ Vous pouvez par exemple ecrire :
 
 before==
 import build
-with open("exemple","r") as f:
-    lexemple= f.read()
 
 testcases, donnees = build.build(lexemple)
 
