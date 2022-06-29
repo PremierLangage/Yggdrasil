@@ -45,11 +45,13 @@ if __name__ == "__main__":
 
     for test, want, name in testcases:
         try:
+            
             # If input is the name of a file, it loads the file into the stdin
-            q = Path(test)
-            if q.exists() :
-                with q.open() as f:
-                    test = f.read()
+            if len(test)<22:
+                q = Path(test)
+                if q.exists() :
+                    with q.open() as f:
+                        test = f.read()
             proc = subprocess.run(handler.exec_cmd, input=test, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                 text=True, timeout=1)
         except subprocess.TimeoutExpired:
