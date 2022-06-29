@@ -57,7 +57,7 @@ def build(lexemple, q='1'):
     valeurs = fromFileToList("data")
     val = fromFileToList("lexemple")
     return f"""[('''{lexemple}''','{Question1(val)}','Tst exemple question1')",
-     ('''{donnees}''','{Question1(valeurs)}','Tst data question1')]"""
+     ('''{fromFileToLiteral(data)}''','{Question1(valeurs)}','Tst data question1')]"""
 
 
 
