@@ -37,7 +37,7 @@ def fromFileToList(filename):
 
 def ToList(filec):
     raise Exception(list(filec.split(" ")))
-    return [int(x) for x in filec.split('\n')] 
+    return [int(x) for x in filec[:-1].split('\n')] 
 
 
 
