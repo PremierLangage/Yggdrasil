@@ -17,9 +17,6 @@ text==
 prefix = Réponse :
 
 form==
-<div style="display: block; margin-top: 1em;">
-{{ prefix }}
-</div>
 {{ mathinput|component}}
 ==
 
