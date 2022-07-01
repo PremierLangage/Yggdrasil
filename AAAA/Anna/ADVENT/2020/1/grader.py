@@ -69,8 +69,8 @@ if __name__ == "__main__":
     
     # Execute 'postevaluator' script if it's set for question 2
     if 'postevaluator' in context:
-        if testSuccess == 100 :
-            exec(context['postevaluator'], context)
+      
+        exec(context['postevaluator'], context)
     
     # Final feedback
     output(testSuccess * 100 // len(testcases), feedback.render(), context)
