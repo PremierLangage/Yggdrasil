@@ -42,12 +42,13 @@ before==
 import build
 build.build()
 q1done = false
-with open("ennonce.md","r") as f:
+with open("ennonce1.md","r") as f:
     lenonce= f.read()
 
 testcases, donnees = build.buildQ1(lexemple)
 
 if q1done : 
+
     
 
 
