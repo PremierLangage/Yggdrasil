@@ -67,7 +67,7 @@ def Question2():
                     
 
 if __name__ == '__main__':
-    print(titi())  
+    print(Question1())  
 
   
 ==
