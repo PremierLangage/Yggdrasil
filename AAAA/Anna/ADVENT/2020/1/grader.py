@@ -70,7 +70,14 @@ if __name__ == "__main__":
     # Execute 'postevaluator' script if it's set for question 2
     if 'postevaluator' in context:
         if testSuccess * 100 // len(testcases) == 100 :
+            glob = {}
             exec(context['postevaluator'], context)
+
+            # Remove keys related to general execution context
+            exec("", glob)
+            for key in glob:
+                if key in context and context[key] == glob[key]:
+                    del context[key]
     
     # Final feedback
     output(testSuccess * 100 // len(testcases), feedback.render(), context)
