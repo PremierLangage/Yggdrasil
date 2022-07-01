@@ -49,7 +49,7 @@ with open("ennonce1.md","r") as f:
     lenonce= f.read()
 
 testcases, donnees = build.buildQ1(lexemple,data)
-  
+changeText = False
 ==
 
 postevaluator==
