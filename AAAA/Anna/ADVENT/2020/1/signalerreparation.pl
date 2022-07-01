@@ -30,6 +30,7 @@ et 241861950 pour la question 2.
 </blockquote></details>
 
 Vous pouvez par exemple ecrire : 
+
     def Question1():
         array = [int(x[:-1]) for x in sys.stdin.readlines()]
         ...VOTRE CODE
