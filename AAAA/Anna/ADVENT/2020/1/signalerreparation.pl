@@ -1,6 +1,6 @@
 extends= /AAAA/Gaudet/template/cgbasic.pl
 
-@ennonce.md
+@ennonce1.md
 @sol.py [build.py]
 @exemple 
 lexemple =@exemple
