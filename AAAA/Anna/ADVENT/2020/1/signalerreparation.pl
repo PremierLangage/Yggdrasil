@@ -42,6 +42,7 @@ Vous pouvez par exemple ecrire :
 before==
 import build
 build.build()
+q1done = false
 testcases, donnees = build.buildQ1(lexemple)
 
 
