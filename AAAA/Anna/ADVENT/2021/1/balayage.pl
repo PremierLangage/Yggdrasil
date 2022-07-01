@@ -67,20 +67,8 @@ testcases, donnees = build.buildQ2(lexemple,data)
 editor.code ==
 import sys
 def Question1():
-    array = [int(x[:-1]) for x in sys.stdin.readlines()]
-    for i in range(len(array)):
-            for j in range(i+1,len(array)):
-                if array[i] + array[j] == 2020:
-                    return array[i] * array[j]
 
 def Question2():
-    array = [int(x[:-1]) for x in sys.stdin.readlines()]
-    for i in range( 0,len(array)-2): 
-        for j in range(i + 1, len(array)-1): 
-            for k in range(j + 1, len(array)):
-                if array[i] + array[j] + array[k] == 2020:
-                    return array[i] * array[j] * array[k]    
-                    
 
 if __name__ == '__main__':
     print(Question1())  
