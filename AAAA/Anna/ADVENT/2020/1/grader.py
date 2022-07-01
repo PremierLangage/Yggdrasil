@@ -80,5 +80,6 @@ if __name__ == "__main__":
                 if key in context and context[key] == glob[key] and key != 'text':
                     del context[key]
         changeText == True
+        
     # Final feedback
     output(testSuccess * 100 // len(testcases), feedback.render(), context)
