@@ -72,16 +72,5 @@ if __name__ == "__main__":
         if testSuccess == 100 :
             exec(context['postevaluator'], context)
     
-     
-   
-        glob = {}
-        
-
-        # Remove keys related to general execution context
-        exec("", glob)
-        for key in glob:
-            if key in context and context[key] == glob[key]:
-                del context[key]
-
     # Final feedback
     output(testSuccess * 100 // len(testcases), feedback.render(), context)
