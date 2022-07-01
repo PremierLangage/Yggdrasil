@@ -54,7 +54,7 @@ def Question2(array):
                 if array[i] + array[j] + array[k] == 2020:
                     return array[i] * array[j] * array[k]
 
-def build(fichier):
+def buildQ1(fichier):
     valeurs = builddata()
     val = ToList(fichier)
     dataliteral = '\n'.join([ str(v) for v in valeurs])
