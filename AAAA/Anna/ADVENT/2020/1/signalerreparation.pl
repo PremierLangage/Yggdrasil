@@ -42,6 +42,7 @@ before==
 import build
 build.build()
 q1done = false
+
 with open("ennonce1.md","r") as f:
     lenonce= f.read()
 
