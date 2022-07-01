@@ -37,7 +37,9 @@ if __name__ == "__main__":
             'code': langhandlers.get_base_code(lang)
         })
     context['editor'].language = required_languages[0]
-
+    context['editor'].codes.append({'language': "debug",
+            'code': context['solution']
+       })
     # Execute 'before' script if it's set
     if 'before' in context:
         glob = {}
