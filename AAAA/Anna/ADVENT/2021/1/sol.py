@@ -8,15 +8,14 @@ def builddata():
     interval = random.randint(1,10)
     incOrDec = random.randint(0, 1)
     for x in range(1999):
-        else : 
-            while (interval == 0) :
-                interval = random.randint(1,10)
-            if (incOrDec == 0) : 
-                val = val + interval
-            elif (incOrDec == 1) : 
-                val = val - interval 
-                if (val < 0) :
-                    val = random.randint(0, 200)
+        while (interval == 0) :
+            interval = random.randint(1,10)
+        if (incOrDec == 0) : 
+            val = val + interval
+        elif (incOrDec == 1) : 
+            val = val - interval 
+            if (val < 0) :
+                val = random.randint(0, 200)
         tab.append(val)
         interval = random.randint(1,10)
         incOrDec = random.randint(0, 2)
