@@ -77,7 +77,7 @@ if __name__ == "__main__":
             for key in glob:
                 if key in context and context[key] == glob[key] and key != 'text':
                     del context[key]
-        context['changeText'] == True
+    context['changeText'] == True
 
     # Final feedback
     output(testSuccess * 100 // len(testcases), feedback.render(), context)
