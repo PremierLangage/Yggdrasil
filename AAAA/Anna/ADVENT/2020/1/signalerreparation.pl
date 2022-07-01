@@ -49,9 +49,8 @@ testcases, donnees = build.buildQ1(lexemple)
 
 if q1done : 
 
-    
-
-
+    with open("ennonce1.md","r") as f:
+    lenonce= f.read()
 ==
 
 
