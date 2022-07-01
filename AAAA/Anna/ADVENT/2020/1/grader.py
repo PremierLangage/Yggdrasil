@@ -67,6 +67,7 @@ if __name__ == "__main__":
             else:
                 feedback.addTestError(name, "Erreur à l'exécution (code de retour " + str(proc.returncode) + ")\nSortie d'erreur : " + proc.stderr, want)
     
+    changeText = False
     # Execute 'postevaluator' script if it's set for question 2
     if 'postevaluator' in context:
         if testSuccess * 100 // len(testcases) == 100 :
