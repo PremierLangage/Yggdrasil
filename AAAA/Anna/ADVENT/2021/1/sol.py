@@ -35,7 +35,9 @@ def Question2(array):
                 if array[i] + array[j] + array[k] == 2020:
                     return array[i] * array[j] * array[k]
     
-
+def ToList(filec):
+    return [int(x) for x in filec[:-1].split('\n')] 
+    
 def buildQ1(fichier,data):
     val = ToList(fichier)
     dataliteral = '\n'.join([ str(v) for v in data])
