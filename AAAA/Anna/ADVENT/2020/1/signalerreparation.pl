@@ -40,9 +40,9 @@ Vous pouvez par exemple ecrire :
 
 before==
 import build
-build.build()
-q1done = False
 
+q1done = False
+data = build.builddata()
 with open("ennonce1.md","r") as f:
     lenonce= f.read()
 
