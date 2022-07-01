@@ -57,7 +57,7 @@ import build
 with open("ennonce2.md","r") as f:
     lenonce += f.read()
 testcase, donnees = build.buildQ2(lexemple,data)
-testcases.append(testcase)
+testcases += testcase
 ==
 
 
