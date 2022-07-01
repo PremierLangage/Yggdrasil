@@ -1,6 +1,6 @@
 extends= /AAAA/Gaudet/template/cgbasic.pl
 
-@Yggdrasil/AAAA/Gaudet/template/cgbasicgrader.py
+@/AAAA/Gaudet/template/cgbasicgrader.py
 
 @ennonce1.md
 @ennonce2.md
