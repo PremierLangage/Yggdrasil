@@ -56,8 +56,7 @@ import build
 
 with open("ennonce2.md","r") as f:
     lenonce += f.read()
-testcase, donnees = build.buildQ2(lexemple,data)
-testcases += testcase
+testcases, donnees = build.buildQ2(lexemple,data)
 ==
 
 
@@ -82,6 +81,6 @@ def Question2():
 
 if __name__ == '__main__':
     print(Question1())  
-
+    
   
 ==
