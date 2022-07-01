@@ -55,7 +55,6 @@ def Question2(array):
                     return array[i] * array[j] * array[k]
 def build():
     valeurs = builddata()
-    
     dataliteral = '\n'.join([ str(v) for v in valeurs])
 
 def buildQ1(fichier):
