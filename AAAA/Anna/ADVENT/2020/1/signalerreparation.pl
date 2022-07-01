@@ -30,10 +30,10 @@ et 241861950 pour la question 2.
 </blockquote></details>
 
 Vous pouvez par exemple ecrire : 
-
-    def Question1() :
-        lignes  = sys.stdin.readlines()
-        ...
+    def Question1():
+        array = [int(x[:-1]) for x in sys.stdin.readlines()]
+    if __name__ == '__main__':
+        print(Question1())  
 
 ==
 
@@ -56,7 +56,7 @@ import build
 
 with open("ennonce2.md","r") as f:
     lenonce += f.read()
-    
+
 testcases, donnees = build.buildQ2(lexemple,data)
 ==
 
