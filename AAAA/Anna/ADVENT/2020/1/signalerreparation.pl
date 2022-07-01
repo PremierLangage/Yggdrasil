@@ -50,7 +50,7 @@ testcases, donnees = build.build(lexemple)
 
 editor.code ==
 import sys
-def titi():
+def Question1():
     array = [int(x[:-1]) for x in sys.stdin.readlines()]
     for i in range(len(array)):
             for j in range(i+1,len(array)):
