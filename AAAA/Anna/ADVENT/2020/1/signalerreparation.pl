@@ -26,8 +26,6 @@ Vous pouvez tester votre fonction avec le fichier exemple ci-dessous dont le ré
   {{donnees}}
 </blockquote></details>
 
-
-
 Vous pouvez par exemple ecrire : 
 
     def Question1() :
