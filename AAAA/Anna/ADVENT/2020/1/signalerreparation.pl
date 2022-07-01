@@ -55,8 +55,6 @@ if testSuccess :
     testcases, donnees = build.buildQ2(lexemple,data)
 ==
 
-eva
-
 
 
 editor.code ==
