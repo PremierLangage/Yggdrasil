@@ -64,7 +64,7 @@ testcases, donnees = build.buildQ2(lexemple,data)
 
 
 
-editor.code ==
+solution ==
 import sys
 def Question1():
     array = [int(x[:-1]) for x in sys.stdin.readlines()]
