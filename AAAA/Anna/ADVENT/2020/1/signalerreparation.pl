@@ -49,7 +49,7 @@ with open("ennonce1.md","r") as f:
 
 testcases, donnees = build.buildQ1(lexemple,data)
 
-if testSuccess : 
+if True : 
     with open("ennonce2.md","r") as f:
         lenonce += f.read()
     testcases, donnees = build.buildQ2(lexemple,data)
