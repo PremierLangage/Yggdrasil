@@ -48,15 +48,13 @@ with open("ennonce1.md","r") as f:
     lenonce= f.read()
 
 testcases, donnees = build.buildQ1(lexemple,data)
-
-//if testSuccess : 
-//   with open("ennonce2.md","r") as f:
-//        lenonce += f.read()
-//    testcases, donnees = build.buildQ2(lexemple,data)
+  
 ==
 
 postevaluator==
-
+with open("ennonce2.md","r") as f:
+    lenonce += f.read()
+testcases, donnees = build.buildQ2(lexemple,data)
 ==
 
 
