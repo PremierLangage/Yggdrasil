@@ -76,7 +76,7 @@ if __name__ == "__main__":
             # Remove keys related to general execution context
             exec("", glob)
             for key in glob:
-                if key in context and context[key] == glob[key]:
+                if key in context and context[key] == glob[key] and key != 'text':
                     del context[key]
     
     # Final feedback
