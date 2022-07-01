@@ -22,16 +22,6 @@ def builddata():
         incOrDec = random.randint(0, 2)
     return tab
 
-def buildfile(filename):
-    tab = builddata()
-    with open(filename, "w") as file:
-        for x in range(500):
-            file.write(str(tab[x])+"\n")
-
-def fromFileToList(filename):
-    with open(filename, "r") as file:
-        return [int(x[:-1]) for x in file.readlines()]
-
 def Question1(array):
     for i in range(len(array)):
         for j in range(i+1,len(array)):
@@ -44,27 +34,16 @@ def Question2(array):
             for k in range(j + 1, len(array)):
                 if array[i] + array[j] + array[k] == 2020:
                     return array[i] * array[j] * array[k]
+    
 
-def getQ1Q2():
-    buildfile("data")
-    valeurs = fromFileToList("data")
-    val = fromFileToList("exemple")
-    print(Question2(val))
-    q1 =  Question1(valeurs)
-    q2 =  Question2(valeurs)
-    return q1, q2
+def buildQ1(fichier,data):
+    val = ToList(fichier)
+    dataliteral = '\n'.join([ str(v) for v in data])
+    return f"""[('''{fichier}''','{Question1(val)}','Tst exemple question1'),
+     ('''{dataliteral}''','{Question1(data)}','Tst data question1')]""", dataliteral
 
-def build():
-    Q1, Q2 = getQ1Q2()
-    plt1= f"""
-    >>> Question1() == {Q1} # Question1 
-    True
-    """
-    plt2= f"""
-    >>> Question2() == {Q2} # Question2 
-    True
-    """
-    return plt1,plt2
-
-
-
+def buildQ2(fichier,data):
+    val = ToList(fichier)
+    dataliteral = '\n'.join([ str(v) for v in data])
+    return f"""[('''{fichier}''','{Question2(val)}','Tst exemple question2'),
+     ('''{dataliteral}''','{Question2(data)}','Tst data question2')]""", dataliteral
