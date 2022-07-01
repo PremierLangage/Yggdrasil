@@ -1,5 +1,6 @@
 import random
 import re
+
 def builddata():
     tab = []
     val = random.randint(0, 200)
