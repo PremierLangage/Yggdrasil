@@ -1,6 +1,5 @@
 extends= /AAAA/Gaudet/template/cgbasic.pl
-
-lenonce =@ ennonce.md
+@ennonce.md
 
 @sol.py [build.py]
 @exemple 
@@ -43,6 +42,8 @@ before==
 import build
 build.build()
 q1done = false
+with open("ennonce.md","r") as f:
+    lenonce= f.read()
     testcases, donnees = build.buildQ1(lexemple)
 
 
