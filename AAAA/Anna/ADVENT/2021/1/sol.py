@@ -27,6 +27,7 @@ def ToList(filec):
     return [int(x) for x in filec[:-1].split('\n')] 
 
 def Question1(array):
+    isIncreased = 0
     for i in range(len(array)):
         for j in range(i+1,len(array)):
             if array[i] + array[j] == 2020:
