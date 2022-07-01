@@ -70,7 +70,7 @@ if __name__ == "__main__":
     changeText = False
     # Execute 'postevaluator' script if it's set for question 2
     if 'postevaluator' in context:
-        if testSuccess * 100 // len(testcases) == 100 :
+        if testSuccess * 100 // len(testcases) == 100 and changeText == Fasle:
             glob = {}
             exec(context['postevaluator'], context)
 
