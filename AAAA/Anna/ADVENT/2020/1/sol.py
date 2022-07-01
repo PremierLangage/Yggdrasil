@@ -54,7 +54,7 @@ def Question2(array):
                 if array[i] + array[j] + array[k] == 2020:
                     return array[i] * array[j] * array[k]
 def build():
-    retuen builddata()
+    return builddata()
     
 
 def buildQ1(fichier,data):
