@@ -49,7 +49,7 @@ with open("ennonce1.md","r") as f:
 testcases, donnees = build.buildQ1(lexemple)
 
 if q1done : 
-    //lenonce += <details><summary>data</summary><blockquote>"AAAAA"</blockquote></details>
+
     with open("ennonce2.md","r") as f:
         lenonce += f.read()
 ==
