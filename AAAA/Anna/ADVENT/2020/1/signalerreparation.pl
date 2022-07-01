@@ -1,6 +1,5 @@
 extends= /AAAA/Gaudet/template/cgbasic.pl
 
-grader  =@ ./grader.py
 @ennonce1.md
 @ennonce2.md
 @sol.py [build.py]
