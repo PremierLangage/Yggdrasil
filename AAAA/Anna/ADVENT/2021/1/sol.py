@@ -7,7 +7,7 @@ def builddata():
     tab.append(val)
     interval = random.randint(1,10)
     incOrDec = random.randint(0, 2)
-    for x in range (500):
+    for x in range (900):
         if (val < 0) :
            val = random.randint(0, 200)
         else : 
@@ -37,7 +37,7 @@ def Question2(array):
     
 def ToList(filec):
     return [int(x) for x in filec[:-1].split('\n')] 
-    
+
 def buildQ1(fichier,data):
     val = ToList(fichier)
     dataliteral = '\n'.join([ str(v) for v in data])
