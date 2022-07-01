@@ -28,14 +28,6 @@ et 241861950 pour la question 2.
   {{donnees}}
 </blockquote></details>
 
-Vous pouvez par exemple ecrire : 
-
-    def Question1():
-        array = [int(x[:-1]) for x in sys.stdin.readlines()]
-        ...VOTRE CODE
-    if __name__ == '__main__':
-        print(Question1())  
-
 ==
 
 
