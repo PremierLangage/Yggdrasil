@@ -38,9 +38,6 @@ def fromFileToList(filename):
 def ToList(filec):
     return [int(x) for x in filec[:-1].split('\n')] 
 
-
-
-
 def Question1(array):
     for i in range(len(array)):
         for j in range(i+1,len(array)):
