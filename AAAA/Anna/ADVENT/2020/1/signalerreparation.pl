@@ -55,6 +55,7 @@ changeText = False
 postevaluator==
 import build
 
+changeText = True
 with open("ennonce2.md","r") as f:
     lenonce += f.read()
 
