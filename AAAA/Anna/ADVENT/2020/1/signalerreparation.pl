@@ -43,10 +43,11 @@ import build
 
 data = build.builddata()
 q1done = False
+
 with open("ennonce1.md","r") as f:
     lenonce= f.read()
 
-testcases, donnees = build.buildQ1(lexemple)
+testcases, donnees = build.buildQ1(lexemple,data)
 
 if q1done : 
 
