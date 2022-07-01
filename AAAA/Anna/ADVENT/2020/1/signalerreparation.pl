@@ -41,7 +41,7 @@ Vous pouvez par exemple ecrire :
 
 before==
 import build
-
+build.build()
 testcases, donnees = build.build(lexemple)
 
 
