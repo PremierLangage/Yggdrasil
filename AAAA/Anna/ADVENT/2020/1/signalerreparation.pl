@@ -52,6 +52,8 @@ testcases, donnees = build.buildQ1(lexemple,data)
 ==
 
 postevaluator==
+import build
+
 with open("ennonce2.md","r") as f:
     lenonce += f.read()
 testcases, donnees = build.buildQ2(lexemple,data)
