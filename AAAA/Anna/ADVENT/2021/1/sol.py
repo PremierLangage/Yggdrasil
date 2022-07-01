@@ -14,7 +14,7 @@ def builddata():
             val = val + interval
         elif (incOrDec == 1) : 
             
-            if (val - interval  < 0) :
+            if (val - interval < 0) :
                 val = val + interval 
             else : 
                 val = val - interval 
