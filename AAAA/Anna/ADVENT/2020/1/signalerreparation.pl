@@ -55,6 +55,10 @@ testcases, donnees = build.buildQ1(lexemple,data)
 //    testcases, donnees = build.buildQ2(lexemple,data)
 ==
 
+postevaluator==
+
+==
+
 
 
 editor.code ==
