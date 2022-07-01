@@ -18,6 +18,7 @@ if __name__ == "__main__":
     context = get_context()
     response = get_answers()
     editor = context['editor']
+    changeText == False
 
     student_code = response[editor.cid]['code']
     if 'testcases' not in context :
