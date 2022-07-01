@@ -43,7 +43,7 @@ before==
 import build
 build.build()
 q1done = false
-testcases, donnees = build.buildQ1(lexemple)
+    testcases, donnees = build.buildQ1(lexemple)
 
 
 ==
