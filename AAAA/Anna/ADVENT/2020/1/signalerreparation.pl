@@ -48,8 +48,8 @@ with open("ennonce1.md","r") as f:
 testcases, donnees = build.buildQ1(lexemple)
 
 if q1done : 
-    with open("ennonce1.md","r") as f:
-    lenonce= f.read()
+    with open("ennonce2.md","r") as f:
+        lenonce += f.read()
 ==
 
 
