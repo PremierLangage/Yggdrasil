@@ -60,10 +60,11 @@ solution ==
 import sys
 def Question1():
     array = [int(x[:-1]) for x in sys.stdin.readlines()]
-    for i in range(len(array)):
-            for j in range(i+1,len(array)):
-                if array[i] + array[j] == 2020:
-                    return array[i] * array[j]
+    isIncreased = 0
+    for i in range(len(array) - 1):
+        if array[i] < array[i+1]:
+            isIncreased += 1
+    return isIncreased
 
 def Question2():
     array = [int(x[:-1]) for x in sys.stdin.readlines()]
