@@ -29,7 +29,7 @@ def ToList(filec):
 def Question1(array):
     isIncreased = 0
     for i in range(1, len(array)):
-        if array[i] < array[j] == 2020:
+        if array[i] < array[i+1] == 2020:
                 isIncreased += 1
     return isIncreased
 
