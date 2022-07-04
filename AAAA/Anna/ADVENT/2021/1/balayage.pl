@@ -61,9 +61,12 @@ import sys
 def Question1():
     array = [int(x[:-1]) for x in sys.stdin.readlines()]
     isIncreased = 0
+    isDecreased = 0
     for i in range(len(array) - 1):
-        if array[i] < array[i+1]:
+        if array[i] <= array[i+1]:
             isIncreased += 1
+        else : 
+            isIncreased = 0
     return isIncreased
 
 def Question2():
