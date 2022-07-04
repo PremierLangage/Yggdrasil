@@ -1,6 +1,7 @@
 import sympy as sp
 import sympy.parsing.sympy_parser as prs
 import re
+import sys
 
 
 def str2sympy(s, local_dict={}, evaluate=False):
@@ -26,6 +27,7 @@ def str2sympy(s, local_dict={}, evaluate=False):
     >>> str2sympy("{0, pi, 2 pi}")
     [0, pi, 2*pi]
     """
+    print(s, file=sys.stderr)
     if s.strip() == "":
         return None
 
