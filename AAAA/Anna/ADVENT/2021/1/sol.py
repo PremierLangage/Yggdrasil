@@ -30,7 +30,7 @@ def Question1(array):
     isIncreased = 0
     for i in range(len(array) - 1):
         if array[i] < array[i+1]:
-                isIncreased += 1
+            isIncreased += 1
     return isIncreased
 
 def Question2(array):
