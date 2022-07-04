@@ -24,7 +24,7 @@ def builddata():
     return tab
 
 def ToList(filec):
-    return [int(x) for x in filec.split('\n')] 
+    return [int(x) for x in filec[:-1].split('\n')] 
 
 def Question1(array):
     isIncreased = 0
