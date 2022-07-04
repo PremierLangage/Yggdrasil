@@ -62,10 +62,10 @@ def Question1():
     array = [int(x[:-1]) for x in sys.stdin.readlines()]
     isIncreased = 0
     for i in range(len(array) - 1):
-        if array[i] <= array[i+1]:
+        if array[i] < array[i+1]:
             isIncreased += 1
     return isIncreased
-
+    
 if __name__ == '__main__':
     print(Question1())  
 
