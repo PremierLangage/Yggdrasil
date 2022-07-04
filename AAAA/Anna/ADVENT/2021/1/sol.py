@@ -30,8 +30,9 @@ def Question1(array):
     isIncreased = 0
     for i in range(len(array)):
         for j in range(i+1,len(array)):
-            if array[i] + array[j] == 2020:
-                return array[i] * array[j]
+            if array[i] < array[j] == 2020:
+                isIncreased += 1
+    return isIncreased
 
 def Question2(array):
     for i in range( 0,len(array)-2): 
