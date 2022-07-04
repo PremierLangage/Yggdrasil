@@ -66,7 +66,7 @@ def Question1():
         if array[i] <= array[i+1]:
             isIncreased += 1
         else : 
-            isIncreased = 0
+            isDecreased += 1
     return isIncreased
 
 def Question2():
