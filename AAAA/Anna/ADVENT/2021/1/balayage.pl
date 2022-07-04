@@ -65,6 +65,9 @@ def Question1():
         if array[i] < array[i+1]:
             isIncreased += 1
     return isIncreased
+    
+if __name__ == '__main__':
+    print(Question1())  
 
 def Question2():
     array = [int(x[:-1]) for x in sys.stdin.readlines()]
