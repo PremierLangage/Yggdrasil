@@ -7,5 +7,5 @@ Sélectionner le plus petit nombre de la liste suivante.
 ==
 
 before ==
-items = sorted(sample(range(50), 4))
+items = ["0", "1", "2", "5"]
 ==
