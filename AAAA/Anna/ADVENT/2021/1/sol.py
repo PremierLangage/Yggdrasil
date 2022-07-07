@@ -34,12 +34,19 @@ def Question1(array):
     return isIncreased
 
 def Question2(array):
-    for i in range( 0,len(array)-2): 
-        for j in range(i + 1, len(array)-1): 
-            for k in range(j + 1, len(array)):
-                if array[i] + array[j] + array[k] == 2020:
-                    return array[i] * array[j] * array[k]
-    
+    tags = []
+    tag1 = 0
+    tag2 = 0
+    tag3 = 0
+    if len(array) >= 3 :
+        for i in range(len(array) - 2):
+            if i == 0: 
+                tags.append([tab[i]])
+                tag1 += 1
+            if i == 1: 
+                tags.append([tab[i]])
+                tag1 += 1
+                tag2 += 1
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
