@@ -51,4 +51,5 @@ Ensuite, pour déterminer la valeur nominale de l'épurateur de CO2 à partir du
 
 Enfin, pour trouver la cote de survie, multipliez la cote du générateur d'oxygène (23) par la cote de l'épurateur de CO2 (10) pour obtenir 230.
 
-Utilisez les nombres binaires dans votre rapport de diagnostic pour calculer la cote du générateur d'oxygène et la cote de l'épurateur de CO2, puis multipliez-les ensemble. Quelle est la cote de survie du sous-marin ? (Assurez-vous de représenter votre réponse en décimal et non en binaire.)
+Vous devez écrire une fonction Question1() qui lit le fichier "data" avec les nombres binaires de votre rapport de diagnostic, qui calcule la cote du générateur d'oxygène et la cote de l'épurateur de CO2 et renvoie le produit des deux. 
+Quelle est la cote de survie du sous-marin ? (Assurez-vous de représenter votre réponse en décimal et non en binaire.)
