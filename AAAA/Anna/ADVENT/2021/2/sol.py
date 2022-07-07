@@ -7,13 +7,13 @@ def builddata():
     subtab = []
     for x in range(1000):
         val = random.randint(0, 2)
+        val1 = random.randint(0, 9)
         if val == 0:
             subtab.append('avant')
         if val == 1:
             subtab.append('bas')
         if val == 2:
             subtab.append('haut')
-        val1 = random.randint(0, 9)
         subtab.append(str(val1))
         tab.append(subtab)
     return tab
