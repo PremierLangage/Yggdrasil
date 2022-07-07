@@ -22,7 +22,6 @@ group =: RadioGroup
 
 # GENERATE A RANDOM QUESTION
 before==#|python|
-
 # append random false answers to group.items array.
 group.items = []
 
@@ -30,9 +29,6 @@ group.items.append({ "id": 1, "content": "Vanille" })
 group.items.append({ "id": 2, "content": "Chocolat" })
 group.items.append({ "id": 3, "content": "Fraise" })
 group.items.append({ "id": 4, "content": "Pomme" })
-
-# shuffle the items
-random.shuffle(group.items)
 ==
 
 title = Les gouts et les couleurs
