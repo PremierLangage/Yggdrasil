@@ -45,6 +45,8 @@ def Question2(array, oxygen=True):
         if oxy:
             if len(uns) >= len(zeros):
                 ar = [elem for elem in uns]
+            else : 
+                ar = [elem for elem in zeros]
     return parseBinInt(nums[0])
 
 def buildQ1(fichier,data):
