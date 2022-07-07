@@ -4,17 +4,17 @@ from itertools import zip_longest
 
 def builddata():
     tab = []
-    str = ''
+    mystr = ''
     for x in range(1000):
         val = random.randint(0, 2)
         if val == 0:
-            str += 'avant'
+            mystr += 'avant'
         if val == 1:
-            str += 'bas'  
+            mystr += 'bas'  
         if val == 2:
-            str += 'haut'
+            mystr += 'haut'
         val1 = random.randint(0, 9)
-        str += str(val1)
+        mystr += str(val1)
         tab.append(str)
     return tab
 
