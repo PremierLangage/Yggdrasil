@@ -43,7 +43,7 @@ def Question2(array):
         elif input[0] == "u":
             aim -= int(input[1])
         elif input[0] == "d":
-            aim += int(temp_input[1])
+            aim += int(input[1])
     return position[0] * position[1]
 
 
