@@ -15,19 +15,19 @@ def ToList(filec):
     return [int(x) for x in filec.split('\n')] 
 
 def Question1(array):
-    bitlen = len(str(array[0]))
-    gamma_map = {k: 0 for k in range(bitlen)}
-    for elem in array:
-        for i in range(bitlen):
-            v = [int(x) for x in str(elem)]
-            bit = v[i]
-            gamma_map[bitlen - i - 1] += bit
-    gamma = 0
-    for pos, val in gamma_map.items():
-        bit = (val * 2) // len(array)
-        gamma += bit << pos
-    epsilon = ~gamma & (1 << bitlen) - 1
-    return gamma * epsilon
+    func getGamma(nums: seq[string]): int =
+    gamma = ""
+    countOnes: int
+    for i in 0 .. nums[0].high:
+        countOnes = 0
+        for num in nums:
+            if num[i] == '1':
+                inc countOnes
+        if countOnes >= nums.len div 2:
+            gamma += '1'
+        else:
+            gamma += '0'
+    result = parseBinInt gamma
 
 def Question2(array):
     isIncreased = 0
