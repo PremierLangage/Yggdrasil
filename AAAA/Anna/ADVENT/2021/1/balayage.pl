@@ -71,15 +71,17 @@ if __name__ == '__main__':
 
 def Question2():
     array = [int(x[:-1]) for x in sys.stdin.readlines()]
-    for i in range( 0,len(array)-2): 
-        for j in range(i + 1, len(array)-1): 
-            for k in range(j + 1, len(array)):
-                if array[i] + array[j] + array[k] == 2020:
-                    return array[i] * array[j] * array[k]    
+    isIncreased = 0
+    for i in range(3, len(array)):
+    left = array[i - 3] + array[i - 2] + deparrayths[i - 1]
+    right = array[i - 2] + array[i - 1] + array[i]
+    if left < right:
+        count += 1
+    return isIncreased 
                     
 
 if __name__ == '__main__':
-    print(Question1())  
+    print(Question2())  
     
   
 ==
