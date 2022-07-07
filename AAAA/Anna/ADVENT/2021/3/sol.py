@@ -21,14 +21,12 @@ def Question1(array):
         for i, char in enumerate(line):
             bit = int(char)
             gamma_map[bitlen - i - 1] += bit
-
     gamma = 0
     for pos, val in gamma_map.items():
-        bit = (val * 2) // len(file_input)
+        bit = (val * 2) // len(array)
         gamma += bit << pos
-
     epsilon = ~gamma & (1 << bitlen) - 1
-    print("Power consumption: " + str(gamma * epsilon))
+   return gamma * epsilon
 
 def Question2(array):
     isIncreased = 0
