@@ -24,14 +24,15 @@ Votre objectif est maintenant de compter le nombre de fois que la somme des mesu
 
 Dans l'exemple ci-dessus, la somme de chaque fenêtre de trois mesures est la suivante :
 
-A : 607 (N/A - pas de somme précédente)
-B : 618 (augmenté)
-C : 618 (pas de changement)
-D : 617 (diminué)
-E : 647 (augmenté)
-F : 716 (augmenté)
-G : 769 (augmenté)
-H : 792 (augmenté)
+    A : 607 (N/A - pas de somme précédente)
+    B : 618 (augmenté)
+    C : 618 (pas de changement)
+    D : 617 (diminué)
+    E : 647 (augmenté)
+    F : 716 (augmenté)
+    G : 769 (augmenté)
+    H : 792 (augmenté)
+    
 Dans cet exemple, il y a 5 sommes qui sont plus grandes que la somme précédente.
 Vous devez écrire une fonction Question1() qui lit le fichier "data" avec les données et qui retourne le nombre de
 sommes sont supérieures à la somme précédente 
