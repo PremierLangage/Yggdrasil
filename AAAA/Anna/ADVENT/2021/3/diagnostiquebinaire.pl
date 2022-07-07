@@ -61,7 +61,7 @@ import sys
 from itertools import zip_longest
 
 def Question1():
-    array = [x for x in sys.stdin.readlines()]
+    array = [x[:-1] for x in sys.stdin.readlines()]
     polarity = []
     for string in array:
         polarity = [
