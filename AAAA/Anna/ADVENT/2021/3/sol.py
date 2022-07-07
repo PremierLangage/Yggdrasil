@@ -26,7 +26,7 @@ def polarity(array):
     return polarity
 
 def Question1(array): 
-    polarity = bitPolarity(array)
+    pol = polarity(array)
     gamma = sum([2**i for i, x in enumerate(reversed(polarity)) if x > 0])
     epsilon = sum([2**i for i, x in enumerate(reversed(polarity)) if x < 0])
     return gamma * epsilon
