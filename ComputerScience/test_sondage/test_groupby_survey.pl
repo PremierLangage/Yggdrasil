@@ -36,6 +36,7 @@ groupbyselect.items = []
 
 groupbyselect.items.append({ "id": 1, "content": "Glace" })
 groupbyselect.items.append({ "id": 2, "content": "Gâteau" })
+groupbyselect.items.append({ "id": 3, "content": "Tarte" })
 ==
 
 title = Choix simple regroupé par un critère
