@@ -26,7 +26,7 @@ def Question1(array):
         bit = (val * 2) // len(array)
         gamma += bit << pos
     epsilon = ~gamma & (1 << bitlen) - 1
-   return gamma * epsilon
+    return gamma * epsilon
 
 def Question2(array):
     isIncreased = 0
