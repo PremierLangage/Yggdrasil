@@ -34,7 +34,8 @@ def buildQ1(fichier,data):
     dataliteral = '\n'
     for v in data : 
         for i in range(len(v)):
-            dataliteral += v[i] + ' '
+            lit = v[i] + ' '
+            dataliteral += lit
     return f"""[('''{fichier}''','{Question1(val)}','Tst exemple question1'),
      ('''{dataliteral}''','{Question1(data)}','Tst data question1')]""", dataliteral
 
