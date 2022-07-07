@@ -15,7 +15,7 @@ def ToList(filec):
     return [int(x) for x in filec.split('\n')] 
 
 def Question1(array):
-    bitlen = len(array[0])
+    bitlen = len(str(array[0]))
     gamma_map = {k: 0 for k in range(bitlen)}
     for elem in array:
         for i, char in enumerate(elem):
