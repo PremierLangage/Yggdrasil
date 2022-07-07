@@ -44,7 +44,7 @@ def Question2(array, oxygen=True):
                 zeros.append(elem)
         if oxy:
             if len(uns) >= len(zeros):
-                ar = [array[j] for j in uns]
+                ar = [elem for elem in uns]
     return parseBinInt(nums[0])
 
 def buildQ1(fichier,data):
