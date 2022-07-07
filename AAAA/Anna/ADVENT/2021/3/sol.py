@@ -52,7 +52,7 @@ def Q2(array, oxygen=True):
                 ar = [elem for elem in zeros]
             else : 
                 ar = [elem for elem in uns]
-    return int(ar[0], 2)
+    return ar[0], 2
 
 def Question2(array):
     return Q2(array) * Q2(array, false)
