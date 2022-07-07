@@ -39,7 +39,7 @@ def Question2(array):
         a = array[i - 3] + array[i - 2] + array[i - 1]
         b = array[i - 2] + array[i - 1] + array[i]
         if a < b:
-            count += 1
+            isIncreased += 1
     return isIncreased
 
 def buildQ1(fichier,data):
