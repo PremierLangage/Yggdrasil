@@ -17,8 +17,8 @@ text==
 
 La liste des informations est dans le fichier "data" ci-dessous.
 
-Vous pouvez tester votre fonction avec le fichier "exemple" ci-dessous dont le résultat est 145875 pour la question 1 
-et 241861950 pour la question 2.
+Vous pouvez tester votre fonction avec le fichier "exemple" ci-dessous dont le résultat est 1154 pour la question 1 
+et  pour la question 2.
 
 <details><summary>exemple</summary><blockquote>
   {{lexemple}}
