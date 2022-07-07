@@ -14,7 +14,7 @@ def builddata():
     return tab
 
 def ToList(filec):
-    return [x for x in filec] 
+    return [x for x in filec.split('\n')] 
 
 def Question1(array): 
     polarity = []
@@ -39,7 +39,7 @@ def Question2(array):
 def buildQ1(fichier,data):
     val = ToList(fichier)
     print(Question1(val))
-    dataliteral = '\n'.join([v for v in data])
+    dataliteral = '\n'.join([ str(v) for v in data])
     return f"""[('''{fichier}''','{Question1(val)}','Tst exemple question1'),
      ('''{dataliteral}''','{Question1(data)}','Tst data question1')]""", dataliteral
 
