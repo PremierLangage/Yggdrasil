@@ -27,7 +27,7 @@ def Question1(array):
     epsilon = sum([2**i for i, x in enumerate(reversed(polarity)) if x < 0])
     return gamma * epsilon
 
-def Question2(array):
+def rate(array):
     i = 0
     while True:
         polarity = []
@@ -43,8 +43,10 @@ def Question2(array):
             if len(array) == 1: return int(v[0], 2)
             j -= 1
         i += 1
-    oxygen= getRating(lambda c: '1' if c >= 0 else '0', array.copy())
-    co2 = getRating(lambda c: '0' if c >= 0 else '1', array.copy())
+
+def Question2(array):
+    oxygen= rate(lambda c: '1' if c >= 0 else '0', array.copy())
+    co2 = rate(lambda c: '0' if c >= 0 else '1', array.copy())
     return oxygen * co2
 
 def buildQ1(fichier,data):
