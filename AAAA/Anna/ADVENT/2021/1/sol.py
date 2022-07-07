@@ -34,19 +34,13 @@ def Question1(array):
     return isIncreased
 
 def Question2(array):
-    tags = []
-    tag1 = 0
-    tag2 = 0
-    tag3 = 0
-    if len(array) >= 3 :
-        for i in range(len(array) - 2):
-            if i == 0: 
-                tags.append([tab[i] + [tab[i+1] + tab[i+2]])
-                tag1 += 1
-            if i == 1: 
-                tags.append([tab[i]])
-                tag1 += 1
-                tag2 += 1
+    isIncreased = 0
+    for i in range(3, len(array)):
+    left = depths[i - 3] + depths[i - 2] + depths[i - 1]
+    right = depths[i - 2] + depths[i - 1] + depths[i]
+    if left < right:
+        count += 1
+    return isIncreased
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
