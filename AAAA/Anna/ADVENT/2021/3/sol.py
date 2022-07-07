@@ -26,6 +26,7 @@ def Question1(array):
             gamma += '1'
         else:
             gamma += '0'
+    epsilon = 2^len(nums[0]) - gamma
     result = parseBinInt gamma
 
 def Question2(array):
