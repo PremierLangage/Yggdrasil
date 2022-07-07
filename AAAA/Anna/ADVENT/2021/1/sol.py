@@ -36,10 +36,10 @@ def Question1(array):
 def Question2(array):
     isIncreased = 0
     for i in range(3, len(array)):
-    left = array[i - 3] + array[i - 2] + deparrayths[i - 1]
-    right = array[i - 2] + array[i - 1] + array[i]
-    if left < right:
-        count += 1
+        left = array[i - 3] + array[i - 2] + deparrayths[i - 1]
+        right = array[i - 2] + array[i - 1] + array[i]
+        if left < right:
+            count += 1
     return isIncreased
 
 def buildQ1(fichier,data):
