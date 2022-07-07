@@ -22,16 +22,20 @@ def builddata():
 def ToList(filec):
     return [x for x in filec.split('\n')] 
 
-def polarity(array):
-    polarity = []
-    for string in array:
-        polarity = [
-            s + (1 if x == '1' else -1)
-            for s, x in zip_longest(polarity, string, fillvalue=0)
-        ]
-    return polarity
+
+    temp_input = input.split(" ")
+    if temp_input[0][0] == "f":
+        position[0] += int(temp_input[1])
+    elif temp_input[0][0] == "u":
+        position[1] -= int(temp_input[1])
+    elif temp_input[0][0] == "d":
+        position[1] += int(temp_input[1])
+
+print(position[0] * position[1])
 
 def Question1(array): 
+    position = [0,0]
+    for elem in array:
     pol = polarity(array)
     gamma = sum([2**i for i, x in enumerate(reversed(pol)) if x > 0])
     epsilon = sum([2**i for i, x in enumerate(reversed(pol)) if x < 0])
