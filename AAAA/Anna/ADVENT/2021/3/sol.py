@@ -16,13 +16,17 @@ def builddata():
 def ToList(filec):
     return [x for x in filec.split('\n')] 
 
-def Question1(array): 
+def polarity(array):
     polarity = []
     for string in array:
         polarity = [
             s + (1 if x == '1' else -1)
             for s, x in zip_longest(polarity, string, fillvalue=0)
         ]
+    return polarity
+
+def Question1(array): 
+    
     gamma = sum([2**i for i, x in enumerate(reversed(polarity)) if x > 0])
     epsilon = sum([2**i for i, x in enumerate(reversed(polarity)) if x < 0])
     return gamma * epsilon
