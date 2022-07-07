@@ -33,7 +33,6 @@ def Question1(array):
 
 def Q2(array, oxygen=True):
     i = 0
-    ar = []
     while len(array) > 1:
         zeros = []
         uns = []
@@ -44,14 +43,14 @@ def Q2(array, oxygen=True):
                 zeros.append(elem)
         if oxygen:
             if len(uns) >= len(zeros):
-                ar = [elem for elem in uns]
+                array = [elem for elem in uns]
             else : 
-                ar = [elem for elem in zeros]
+                array = [elem for elem in zeros]
         else : 
             if len(zeros) <= len(uns):
-                ar = [elem for elem in zeros]
+                array = [elem for elem in zeros]
             else : 
-                ar = [elem for elem in uns]
+                array = [elem for elem in uns]
     return ar[0], 2
 
 def Question2(array):
