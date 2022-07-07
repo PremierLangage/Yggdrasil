@@ -38,10 +38,10 @@ groupbyselect.items.append({ "id": 1, "content": "Glace" })
 groupbyselect.items.append({ "id": 2, "content": "Gâteau" })
 ==
 
-title = Les gouts et les couleurs
+title = Choix simple regroupé par un critère
 
-text==
-Quel est votre parfum préféré ?
+text==#|markdown|
+
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
@@ -51,6 +51,7 @@ Que voulez vous manger ?
 {{ groupbyselect|component }}
 
 
+Quel parfum voulez-vous ?
 
 {{ group|component }}
 ==
