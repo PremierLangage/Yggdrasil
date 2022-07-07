@@ -17,20 +17,7 @@ def ToList(filec):
     return [int(x) for x in filec.split('\n')] 
 
 def Question1(array):
-    gamma = ""
-    countOnes: int
-    for i in range(len(str(array[0]))):
-        countOnes = 0
-        for num in array:
-            if num[i] == '1':
-                countOnes += 1
-        if countOnes >= len(array) % 2:
-            gamma += '1'
-        else:
-            gamma += '0'
-    intgamma = int(gamma, 2)
-    epsilon = 2^len(array[0]) - intgamma
-    return intgamma * epsilon
+    
 
 def Question2(array):
     isIncreased = 0
