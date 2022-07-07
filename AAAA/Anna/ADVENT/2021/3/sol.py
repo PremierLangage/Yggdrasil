@@ -31,17 +31,21 @@ def Question1(array):
     epsilon = sum([2**i for i, x in enumerate(reversed(pol)) if x < 0])
     return gamma * epsilon
 
-def Question2(array):
+def Question2(array, oxygen=True):
     i = 0
-    
+    ar = array.copy()
     while array.len > 1:
         zeros = []
         uns = []
         for elem in array :
             if elem[i] == '1':
-                uns.add j
+                uns.append(elem)
             else:
-                zeros.add j
+                zeros.append(elem)
+        if oxy:
+            if len(uns) >= len(zeros):
+    
+    return parseBinInt(nums[0])
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
