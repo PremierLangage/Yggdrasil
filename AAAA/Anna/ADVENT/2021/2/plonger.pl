@@ -54,15 +54,13 @@ solution ==
 import sys
 
 def Question1(array): 
-    array = [x[:-1] for x in sys.stdin.readlines()]
     position = [0,0]
-    for elem in array:
-        input = elem.split(" ")
-        if input[0][0] == "avant":
+    for input in array:
+        if input[0] == "avant":
             position[0] += int(input[1])
-        elif input[0][0] == "haut":
+        elif input[0] == "haut":
             position[1] -= int(input[1])
-        elif input[0][0] == "bas":
+        elif input[0] == "bas":
             position[1] += int(input[1])
     return position[0] * position[1]
 
