@@ -74,30 +74,39 @@ def Question1():
     
 if __name__ == '__main__':
     print(Question1())  
+import sys
+from itertools import zip_longest
 
 def Question2():
-    array = [x for x in sys.stdin.readlines()]
-    i = 0
-    while True:
-        polarity = []
-        for string in array[i]:
-            polarity = [
-                s + (1 if x == '1' else -1)
-                for s, x in zip_longest(polarity, string, fillvalue=0)
-            ]
-        j = len(array) - 1
-        for value in reversed(array):
-            if value[i] != v: array.pop(j)
-            if len(array) == 1: return int(v[0], 2)
-            j -= 1
-        i += 1
-    oxygen= getRating(lambda c: '1' if c >= 0 else '0', array.copy())
-    co2 = getRating(lambda c: '0' if c >= 0 else '1', array.copy())
-    return oxygen * co2
-                    
+    array = [x[:-1] for x in sys.stdin.readlines()]
+    ar1 = array
+    ar2 = array
+    position = 0
+    while position < len(array[0]):
+        if len(ar1) == 1 and len(ar2) == 1:
+            break
+        if len(ar1) > 1:
+            map1 = {k: [] for k in [0,1]}
+            for elem in ar1:
+                bit = int(elem[position])
+                map1[bit].append(elem)
+            if len(map1[0]) > len(map1[1]):
+                ar1 = map1[0]
+            else:
+                ar1 = map1[1]
+        if len(ar2) > 1:
+            map2 = {k: [] for k in [0,1]}
+            for elem in ar2:
+                bit = int(elem[position])
+                map2[bit].append(elem)
+            if len(map2[1]) < len(map2[0]):
+                ar2 = map2[1]
+            else:
+                ar2 = map2[0]
+        position += 1
+    return int(ar1[0], 2) * int(ar2[0], 2)
 
 if __name__ == '__main__':
     print(Question2())  
-    
   
 ==
