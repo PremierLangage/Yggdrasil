@@ -4,13 +4,18 @@ from itertools import zip_longest
 
 def builddata():
     tab = []
-    val = random.randint(0, 20)
+    str = ''
     for x in range(1000):
-        strnb = []
-        for y in range(val):
-            strnb.append(str(random.randint(0, 1)))
-        myst = ''.join([v for v in strnb])
-        tab.append(myst)
+        val = random.randint(0, 2)
+        if val == 0:
+            str += 'avant'
+        if val == 1:
+            str += 'bas'  
+        if val == 2:
+            str += 'haut'
+        val1 = random.randint(0, 9)
+        str += str(val1)
+        tab.append(str)
     return tab
 
 def ToList(filec):
