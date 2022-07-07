@@ -4,8 +4,9 @@ import re
 def builddata():
     tab = []
     val = random.randint(0, 20)
+
     strnb = ''
-    for x in range(1000):
+    for x in range(99):
         for y in range(val):
             strnb.join(str(random.randint(0, 1)))
         tab.append(int(strnb))
