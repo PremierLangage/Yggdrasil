@@ -20,7 +20,14 @@ def builddata():
     return tab
 
 def ToList(filec):
-    return [x.split(' ') for x in filec.split('\n')] 
+    lst = []
+    lst_tmp = []
+    for line in filec.split('\n'):
+        freq, letter, password = line.split(" ")
+        letter = letter[:len(letter) - 1]
+        low, high = map(int, freq.split('-'))
+        
+    return [x.split(' ') for x in filec.] 
 
 def Question1(array): 
     position = [0,0]
