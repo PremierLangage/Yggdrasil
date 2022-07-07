@@ -36,7 +36,7 @@ def rate(condition, array):
                 s + (1 if x == '1' else -1)
                 for s, x in zip_longest(polarity, string, fillvalue=0)
             ]
-        v = condition(polarity)
+        v = condition(polarity[i])
         j = len(array) - 1
         for value in reversed(array):
             if value[i] != v: array.pop(j)
