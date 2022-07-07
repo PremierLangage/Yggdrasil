@@ -7,7 +7,7 @@ def builddata():
     subtab = []
     for x in range(1000):
         val = random.randint(0, 2)
-        val1 = random.randint(0, 9)
+        val1 = random.randint(1, 9)
         if val == 0:
             subtab.append('avant')
         if val == 1:
