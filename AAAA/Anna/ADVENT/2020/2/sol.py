@@ -4,7 +4,6 @@ from itertools import zip_longest
 
 def builddata():
     tab = []
-    
     for x in range(1000):
         subtab = []
         val = random.randint(0, 2)
