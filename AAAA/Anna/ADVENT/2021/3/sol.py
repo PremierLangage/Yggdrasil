@@ -20,7 +20,7 @@ def Question1(array):
     for elem in array:
         for i in range(bitlen):
             v = [int(x) for x in str(elem)]
-            bit = v[0]
+            bit = v[i]
             gamma_map[bitlen - i - 1] += bit
     gamma = 0
     for pos, val in gamma_map.items():
