@@ -3,7 +3,7 @@ import re
 
 def builddata():
     tab = []
-    val = random.randint(0, 200)
+    val = random.randint(0, 2)
     tab.append(val)
     interval = random.randint(1,10)
     incOrDec = random.randint(0, 1)
