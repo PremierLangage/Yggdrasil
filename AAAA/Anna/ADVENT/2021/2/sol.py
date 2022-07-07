@@ -15,7 +15,7 @@ def builddata():
             mystr += 'haut'
         val1 = random.randint(0, 9)
         mystr += str(val1)
-        tab.append(str)
+        tab.append(mystr)
     return tab
 
 def ToList(filec):
