@@ -20,7 +20,7 @@ def Question1(array):
     for i in range(len(str(array[0]))):
         countOnes = 0
         for num in array:
-            if num[i] == '1':
+            if str(num)[i] == '1':
                 countOnes += 1
         if countOnes >= len(array) % 2:
             gamma += '1'
