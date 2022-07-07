@@ -14,7 +14,7 @@ def builddata():
     return tab
 
 def ToList(filec):
-    return [int(x) for x in filec.split('\n')] 
+    return [x for x in filec.split('\n')] 
 
 def polarity(array):
     polarity = []
