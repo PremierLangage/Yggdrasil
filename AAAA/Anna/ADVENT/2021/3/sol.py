@@ -34,7 +34,7 @@ def Question1(array):
 def Q2(array, oxygen=True):
     i = 0
     ar = []
-    while len(array) > 1:
+    while len(ar) != 1:
         zeros = []
         uns = []
         for elem in array :
