@@ -42,7 +42,7 @@ def Q2(array, oxygen=True):
                 uns.append(elem)
             else:
                 zeros.append(elem)
-        if oxy:
+        if oxygen:
             if len(uns) >= len(zeros):
                 ar = [elem for elem in uns]
             else : 
