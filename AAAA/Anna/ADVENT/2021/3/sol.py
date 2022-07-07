@@ -31,30 +31,38 @@ def Question1(array):
     epsilon = sum([2**i for i, x in enumerate(reversed(pol)) if x < 0])
     return gamma * epsilon
 
-def Q2(array, oxygen=True):
-    i = 0
-  
-    zeros = []
-    uns = []
-    for elem in array :
-        if elem[i] == '1':
-            uns.append(elem)
-        else:
-            zeros.append(elem)
-    if oxygen:
-        if len(uns) >= len(zeros):
-            array = [elem for elem in uns]
-        else : 
-            array = [elem for elem in zeros]
-    else : 
-        if len(zeros) <= len(uns):
-            array = [elem for elem in zeros]
-        else : 
-            array = [elem for elem in uns]
-    return int(array[0], 2)
-
 def Question2(array):
-    return Q2(array) * Q2(array, False)
+    ar1 = []
+    ar2 = []
+    position = 0
+    while pos < len(array[0]):
+        if len(ar1) == 1 and len(ar2) == 1:
+            break
+        if len(ar1) > 1:
+            common_map = {k: [] for k in [0,1]}
+            for elem in ar1:
+                bit = int(line[pos])
+                common_map[bit].append(line)
+            if len(common_map[0]) > len(common_map[1]):
+                ar1 = common_map[0]
+            else:
+                ar1 = common_map[1]
+        if len(ar2) > 1:
+            uncommon_map = {k: [] for k in [0,1]}
+            for line in ar2:
+                bit = int(line[pos])
+                uncommon_map[bit].append(line)
+            if len(uncommon_map[1]) < len(uncommon_map[0]):
+                ar2 = uncommon_map[1]
+            else:
+                ar2 = uncommon_map[0]
+    pos += 1
+
+oxygen_generator_rating = int(ar1[0], 2)
+co2_scrubber_rating = int(ar2[0], 2)
+print("Oxygen generator rating = " + str(oxygen_generator_rating))
+print("CO2 scrubber rating = " + str(co2_scrubber_rating))
+print("Life support rating = " + str(oxygen_generator_rating * co2_scrubber_rating))
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
