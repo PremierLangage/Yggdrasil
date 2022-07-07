@@ -7,16 +7,17 @@ Considérer chaque mesure n'est pas aussi utile que prévu : il y a tout simple
 
 Au lieu de cela, considérez les sommes d'une fenêtre glissante à trois mesures. Considérant à nouveau l'exemple ci-dessus:
 
-199 A
-200 A B
-208 A B C
-210 av. J.-C.
-200 E C D
-207 E F D
-240 E F G
-269 ​​FGH
-260GH
-263 heures
+    199  A      
+    200  A B    
+    208  A B C  
+    210    B C D
+    200  E   C D
+    207  E F   D
+    240  E F G  
+    269    F G H
+    260      G H
+    263        H
+
 Commencez par comparer les première et deuxième fenêtres de trois mesures. Les mesures dans la première fenêtre sont marquées A (199, 200, 208) ; leur somme est 199 + 200 + 208 = 607. La deuxième fenêtre est notée B (200, 208, 210) ; sa somme est de 618. La somme des mesures dans la deuxième fenêtre est supérieure à la somme de la première, donc cette première comparaison a augmenté.
 
 Votre objectif est maintenant de compter le nombre de fois que la somme des mesures dans cette fenêtre glissante augmente par rapport à la somme précédente. Alors, comparez A avec B, puis comparez B avec C, puis C avec D, et ainsi de suite. Arrêtez-vous lorsqu'il ne reste plus assez de mesures pour créer une nouvelle somme de trois mesures.
