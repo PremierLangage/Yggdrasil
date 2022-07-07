@@ -26,8 +26,9 @@ def Question1(array):
             gamma += '1'
         else:
             gamma += '0'
-    epsilon = 2^len(nums[0]) - gamma
-    result = parseBinInt gamma
+    intgamma = int(gamma, 2)
+    epsilon = 2^len(nums[0]) - intgamma
+    return intgamma * epsilon
 
 def Question2(array):
     isIncreased = 0
