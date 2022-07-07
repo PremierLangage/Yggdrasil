@@ -9,7 +9,6 @@ def builddata():
         for y in range(val):
             strnb.append(str(random.randint(0, 1)))
         tab.append(''.join([v for v in strnb]))
-        
     return tab
 
 def ToList(filec):
