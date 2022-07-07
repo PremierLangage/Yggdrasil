@@ -37,12 +37,12 @@ def Question2(array):
     aim = 0
     position = [0,0]
     for input in array:
-        if input[0] == "f":
+        if input[0] == "avant":
             position[0] += int(input[1])
             position[1] += (int(input[1]) * aim)
-        elif input[0] == "u":
+        elif input[0] == "haut":
             aim -= int(input[1])
-        elif input[0] == "d":
+        elif input[0] == "bas":
             aim += int(input[1])
     return position[0] * position[1]
 
