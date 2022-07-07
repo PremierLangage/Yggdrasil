@@ -5,11 +5,11 @@ def builddata():
     tab = []
     val = random.randint(0, 20)
     strnb = []
-   
-    for y in range(val):
-        strnb.append(str(random.randint(0, 1)))
+    for x in range(1000):
+        for y in range(val):
+            strnb.append(str(random.randint(0, 1)))
   
-    return strnb
+    return tab
 
 def ToList(filec):
     return [int(x) for x in filec.split('\n')] 
