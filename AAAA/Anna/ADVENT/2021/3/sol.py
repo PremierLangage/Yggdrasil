@@ -15,11 +15,20 @@ def ToList(filec):
     return [int(x) for x in filec.split('\n')] 
 
 def Question1(array):
-    isIncreased = 0
-    for i in range(1, len(array)):
-        if array[i] > array[i-1]:
-            isIncreased += 1
-    return isIncreased
+    bitlen = len(array[0])
+    gamma_map = {k: 0 for k in range(bitlen)}
+    for elem in array:
+        for i, char in enumerate(line):
+            bit = int(char)
+            gamma_map[bitlen - i - 1] += bit
+
+    gamma = 0
+    for pos, val in gamma_map.items():
+        bit = (val * 2) // len(file_input)
+        gamma += bit << pos
+
+    epsilon = ~gamma & (1 << bitlen) - 1
+    print("Power consumption: " + str(gamma * epsilon))
 
 def Question2(array):
     isIncreased = 0
