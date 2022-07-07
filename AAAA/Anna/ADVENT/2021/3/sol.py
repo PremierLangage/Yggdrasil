@@ -21,7 +21,7 @@ def Question1(array):
         countOnes = 0
         for num in nums:
             if num[i] == '1':
-                inc countOnes
+                countOnes += 1
         if countOnes >= nums.len div 2:
             gamma += '1'
         else:
