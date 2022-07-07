@@ -31,21 +31,17 @@ def Question1(array):
     epsilon = sum([2**i for i, x in enumerate(reversed(pol)) if x < 0])
     return gamma * epsilon
 
-def rate(condition, array):
-    i = 0
-    while True:
-        v = condition(polarity(array)[i])
-        j = len(array) - 1
-        for value in reversed(array):
-            if value[i] != v: array.pop(j)
-            if len(array) == 1: return int(v[0], 2)
-            j -= 1
-        i += 1
-
 def Question2(array):
-    oxygen= rate(lambda c: '1' if c >= 0 else '0', array.copy())
-    co2 = rate(lambda c: '0' if c >= 0 else '1', array.copy())
-    return oxygen * co2
+    i = 0
+    
+    while array.len > 1:
+        zeros = []
+        uns = []
+        for elem in array :
+            if elem[i] == '1':
+                uns.add j
+            else:
+                zeros.add j
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
