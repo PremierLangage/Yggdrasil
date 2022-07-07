@@ -33,7 +33,7 @@ def Question1(array):
         position[1] -= int(input[1])
     elif input[0][0] == "bas":
         position[1] += int(input[1])
-    print(position[0] * position[1])
+    return position[0] * position[1]
 
 def Question2(array):
     ar1 = array
