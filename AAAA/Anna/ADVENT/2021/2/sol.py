@@ -26,7 +26,7 @@ def ToList(filec):
 def Question1(array): 
     position = [0,0]
     for elem in array:
-    input = array.split(" ")
+    input = elem.split(" ")
     if input[0][0] == "avant":
         position[0] += int(input[1])
     elif input[0][0] == "haut":
