@@ -1,0 +1,1 @@
+Par exemple, supposons que vous disposiez du rapport suivant :
