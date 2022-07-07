@@ -57,7 +57,7 @@ def Question2(array):
             else:
                 ar2 = map2[0]
     position += 1
-
+    return int(ar1[0], 2) * int(ar2[0], 2)
 oxygen_generator_rating = int(ar1[0], 2)
 co2_scrubber_rating = int(ar2[0], 2)
 print("Oxygen generator rating = " + str(oxygen_generator_rating))
