@@ -19,7 +19,7 @@ def builddata():
     return tab
 
 def ToList(filec):
-    return [x for x in filec.split('\n')] 
+    return [x.split(' ') for x in filec.split('\n')] 
 
 def Question1(array): 
     position = [0,0]
