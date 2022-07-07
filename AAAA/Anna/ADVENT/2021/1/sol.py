@@ -36,8 +36,8 @@ def Question1(array):
 def Question2(array):
     isIncreased = 0
     for i in range(3, len(array)):
-    left = depths[i - 3] + depths[i - 2] + depths[i - 1]
-    right = depths[i - 2] + depths[i - 1] + depths[i]
+    left = array[i - 3] + array[i - 2] + deparrayths[i - 1]
+    right = array[i - 2] + array[i - 1] + array[i]
     if left < right:
         count += 1
     return isIncreased
