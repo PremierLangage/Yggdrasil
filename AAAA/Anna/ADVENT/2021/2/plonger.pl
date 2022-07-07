@@ -54,7 +54,7 @@ solution ==
 import sys
 
 def Question1(): 
-    array = [x[:-1] for x in sys.stdin.readlines()]
+    array = [x.split(' ') for x in sys.stdin.readlines()]
     position = [0,0]
     for input in array:
         if input[0] == "avant":
