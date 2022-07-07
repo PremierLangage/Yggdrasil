@@ -41,17 +41,17 @@ def Question2(array):
         if len(ar1) > 1:
             map1 = {k: [] for k in [0,1]}
             for elem in ar1:
-                bit = int(line[position])
-                map1[bit].append(line)
+                bit = int(elem[position])
+                map1[bit].append(elem)
             if len(map1[0]) > len(map1[1]):
                 ar1 = map1[0]
             else:
                 ar1 = map1[1]
         if len(ar2) > 1:
             map2 = {k: [] for k in [0,1]}
-            for line in ar2:
-                bit = int(line[position])
-                map2[bit].append(line)
+            for elem in ar2:
+                bit = int(elem[position])
+                map2[bit].append(elem)
             if len(map2[1]) < len(map2[0]):
                 ar2 = map2[1]
             else:
