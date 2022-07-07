@@ -37,13 +37,18 @@ Par exemple, pour déterminer la valeur nominale du générateur d'oxygène à l
     - En cinquième position, il y a un nombre égal de bits 0 et de bits 1 (un chacun). Donc, pour trouver la cote du générateur d'oxygène, gardez le nombre avec un 1 dans cette position : 10111.
     
     - Comme il ne reste qu'un seul numéro, arrêtez-vous; la cote du générateur d'oxygène est de 10111, soit 23 en décimal.
+
 Ensuite, pour déterminer la valeur nominale de l'épurateur de CO2 à partir du même exemple ci-dessus :
 
-Recommencez avec les 12 nombres et ne considérez que le premier bit de chaque nombre. Il y a moins de 0 bits (5) que de 1 bits (7), donc ne gardez que les 5 chiffres avec un 0 en première position : 
-00100, 01111, 00111, 00010 et 01010.
-Ensuite, considérons le second bit des 5 nombres restants : il y a moins de 1 bits (2) que de 0 bits (3), donc ne gardez que les 2 nombres avec un 1 en deuxième position : 01111 et 01010.
-En troisième position, il y a un nombre égal de bits 0 et de bits 1 (un chacun). Ainsi, pour trouver la cote de l'épurateur de CO2, conservez le nombre avec un 0 à cette position : 01010.
-Comme il ne reste qu'un seul numéro, arrêtez-vous; la cote de l'épurateur de CO2 est 01010, ou 10 en décimal.
+    - Recommencez avec les 12 nombres et ne considérez que le premier bit de chaque nombre. Il y a moins de 0 bits (5) que de 1 bits (7), donc ne gardez que les 5 chiffres avec un 0 en première position : 
+      00100, 01111, 00111, 00010 et 01010.
+
+    - Ensuite, considérons le second bit des 5 nombres restants : il y a moins de 1 bits (2) que de 0 bits (3), donc ne gardez que les 2 nombres avec un 1 en deuxième position : 01111 et 01010.
+
+    - En troisième position, il y a un nombre égal de bits 0 et de bits 1 (un chacun). Ainsi, pour trouver la cote de l'épurateur de CO2, conservez le nombre avec un 0 à cette position : 01010.
+
+    - Comme il ne reste qu'un seul numéro, arrêtez-vous; la cote de l'épurateur de CO2 est 01010, ou 10 en décimal.
+
 Enfin, pour trouver la cote de survie, multipliez la cote du générateur d'oxygène (23) par la cote de l'épurateur de CO2 (10) pour obtenir 230.
 
 Utilisez les nombres binaires dans votre rapport de diagnostic pour calculer la cote du générateur d'oxygène et la cote de l'épurateur de CO2, puis multipliez-les ensemble. Quelle est la cote de survie du sous-marin ? (Assurez-vous de représenter votre réponse en décimal et non en binaire.)
