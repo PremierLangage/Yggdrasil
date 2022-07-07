@@ -27,11 +27,11 @@ def Question1(array):
     position = [0,0]
     for elem in array:
     input = input.split(" ")
-    if input[0][0] == "f":
+    if input[0][0] == "avant":
         position[0] += int(input[1])
-    elif input[0][0] == "u":
+    elif input[0][0] == "haut":
         position[1] -= int(input[1])
-    elif input[0][0] == "d":
+    elif input[0][0] == "bas":
         position[1] += int(input[1])
     print(position[0] * position[1])
 
