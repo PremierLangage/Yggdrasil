@@ -33,24 +33,24 @@ def Question1(array):
 
 def Q2(array, oxygen=True):
     i = 0
-    while len(array) > 1:
-        zeros = []
-        uns = []
-        for elem in array :
-            if elem[i] == '1':
-                uns.append(elem)
-            else:
-                zeros.append(elem)
-        if oxygen:
-            if len(uns) >= len(zeros):
-                array = [elem for elem in uns]
-            else : 
-                array = [elem for elem in zeros]
+  
+    zeros = []
+    uns = []
+    for elem in array :
+        if elem[i] == '1':
+            uns.append(elem)
+        else:
+            zeros.append(elem)
+    if oxygen:
+        if len(uns) >= len(zeros):
+            array = [elem for elem in uns]
         else : 
-            if len(zeros) <= len(uns):
-                array = [elem for elem in zeros]
-            else : 
-                array = [elem for elem in uns]
+            array = [elem for elem in zeros]
+    else : 
+        if len(zeros) <= len(uns):
+            array = [elem for elem in zeros]
+        else : 
+            array = [elem for elem in uns]
     return array[0]
 
 def Question2(array):
