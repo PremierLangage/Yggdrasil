@@ -8,11 +8,11 @@ def builddata():
     for x in range(1000):
         val = random.randint(0, 2)
         if val == 0:
-            mystr += 'avant'
+            mystr += 'avant '
         if val == 1:
-            mystr += 'bas'  
+            mystr += 'bas '  
         if val == 2:
-            mystr += 'haut'
+            mystr += 'haut '
         val1 = random.randint(0, 9)
         mystr += str(val1)
         tab.append(mystr)
