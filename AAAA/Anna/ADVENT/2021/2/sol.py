@@ -14,7 +14,7 @@ def builddata():
         if val == 2:
             subtab.append('haut')
         val1 = random.randint(0, 9)
-        subtab.append(val1)
+        subtab.append(str(val1))
         tab.append(subtab)
     return tab
 
