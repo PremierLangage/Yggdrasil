@@ -22,7 +22,7 @@ def Question1(array):
         for num in array:
             if array[i] == '1':
                 countOnes += 1
-        if countOnes >= len(array) div 2:
+        if countOnes >= len(array) // 2:
             gamma += '1'
         else:
             gamma += '0'
