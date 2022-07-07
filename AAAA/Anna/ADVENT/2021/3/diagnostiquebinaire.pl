@@ -54,11 +54,20 @@ solution ==
 import sys
 def Question1():
     array = [int(x) for x in sys.stdin.readlines()]
-    isIncreased = 0
-    for i in range(1, len(array)):
-        if array[i] > array[i-1]:
-            isIncreased += 1
-    return isIncreased
+    gamma = ""
+    countOnes: int
+    for i in range(len(array[0])):
+        countOnes = 0
+        for num in nums:
+            if num[i] == '1':
+                countOnes += 1
+        if countOnes >= nums.len div 2:
+            gamma += '1'
+        else:
+            gamma += '0'
+    intgamma = int(gamma, 2)
+    epsilon = 2^len(nums[0]) - intgamma
+    return intgamma * epsilon
     
 if __name__ == '__main__':
     print(Question1())  
