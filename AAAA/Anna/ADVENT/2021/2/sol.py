@@ -23,23 +23,17 @@ def ToList(filec):
     return [x for x in filec.split('\n')] 
 
 
-    temp_input = input.split(" ")
-    if temp_input[0][0] == "f":
-        position[0] += int(temp_input[1])
-    elif temp_input[0][0] == "u":
-        position[1] -= int(temp_input[1])
-    elif temp_input[0][0] == "d":
-        position[1] += int(temp_input[1])
-
-print(position[0] * position[1])
-
 def Question1(array): 
     position = [0,0]
     for elem in array:
-    pol = polarity(array)
-    gamma = sum([2**i for i, x in enumerate(reversed(pol)) if x > 0])
-    epsilon = sum([2**i for i, x in enumerate(reversed(pol)) if x < 0])
-    return gamma * epsilon
+    input = input.split(" ")
+    if input[0][0] == "f":
+        position[0] += int(input[1])
+    elif input[0][0] == "u":
+        position[1] -= int(input[1])
+    elif input[0][0] == "d":
+        position[1] += int(input[1])
+    print(position[0] * position[1])
 
 def Question2(array):
     ar1 = array
