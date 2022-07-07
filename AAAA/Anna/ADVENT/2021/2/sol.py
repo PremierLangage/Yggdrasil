@@ -23,7 +23,7 @@ def ToList(filec):
 
 def Question1(array): 
     
-    return array
+    return 0
 
 def Question2(array):
     return 0
