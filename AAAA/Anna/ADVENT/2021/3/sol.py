@@ -17,7 +17,7 @@ def ToList(filec):
     return [int(x) for x in filec.split('\n')] 
 
 def Question1(array):
-    
+    return 0
 
 def Question2(array):
     isIncreased = 0
