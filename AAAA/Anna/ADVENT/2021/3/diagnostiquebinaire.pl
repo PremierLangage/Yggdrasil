@@ -53,20 +53,16 @@ postevaluator==
 solution ==
 import sys
 def Question1():
-    gamma = ""
-    countOnes: int
-    for i in range(len(array[0])):
-        countOnes = 0
-        for num in array:
-            if array[i] == '1':
-                countOnes += 1
-        if countOnes >= array.len div 2:
-            gamma += '1'
-        else:
-            gamma += '0'
-    intgamma = int(gamma, 2)
-    epsilon = 2^len(array[0]) - intgamma
-    return intgamma * epsilon
+    array = [x for x in sys.stdin.readlines()]
+    polarity = []
+    for string in array:
+        polarity = [
+            s + (1 if x == '1' else -1)
+            for s, x in zip_longest(polarity, string, fillvalue=0)
+        ]
+    gamma = sum([2**i for i, x in enumerate(reversed(polarity)) if x > 0])
+    epsilon = sum([2**i for i, x in enumerate(reversed(polarity)) if x < 0])
+    return gamma * epsilon
     
 if __name__ == '__main__':
     print(Question1())  
