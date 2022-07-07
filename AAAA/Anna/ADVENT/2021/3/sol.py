@@ -34,7 +34,7 @@ def Question1(array):
 def rate(condition, array):
     i = 0
     while True:
-        v = condition(polarity[i])
+        v = condition(polarity(array)[i])
         j = len(array) - 1
         for value in reversed(array):
             if value[i] != v: array.pop(j)
