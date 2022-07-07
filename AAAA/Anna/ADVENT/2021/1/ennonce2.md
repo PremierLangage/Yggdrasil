@@ -36,5 +36,5 @@ Dans l'exemple ci-dessus, la somme de chaque fenêtre de trois mesures est la su
     H : 792 (augmenté)
 
 Dans cet exemple, il y a 5 sommes qui sont plus grandes que la somme précédente.
-Vous devez écrire une fonction Question1() qui lit le fichier "data" avec les données et qui retourne le nombre de
+Vous devez écrire une fonction Question2() qui lit le fichier "data" avec les données et qui retourne le nombre de
 sommes sont supérieures à la somme précédente 
