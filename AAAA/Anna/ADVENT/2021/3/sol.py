@@ -9,7 +9,7 @@ def builddata():
     for y in range(val):
         strnb.append(str(random.randint(0, 1)))
   
-    return tab
+    return strnb
 
 def ToList(filec):
     return [int(x) for x in filec.split('\n')] 
