@@ -10,7 +10,7 @@ def builddata():
             strnb.append(str(random.randint(0, 1)))
         myst = ''.join([v for v in strnb])
         tab.append(myst)
-        tab.append(myst.type)
+        tab.append(type(myst))
     return tab
 
 def ToList(filec):
