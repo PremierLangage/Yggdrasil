@@ -15,6 +15,7 @@ def builddata():
             mystr += 'haut '
         val1 = random.randint(0, 9)
         mystr += str(val1)
+        mystr += ' '
         tab.append(mystr)
     return tab
 
