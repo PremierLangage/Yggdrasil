@@ -34,10 +34,10 @@ def Question1(array):
 def Question2(array, oxygen=True):
     i = 0
     ar = array.copy()
-    while array.len > 1:
+    while len(ar) > 1:
         zeros = []
         uns = []
-        for elem in array :
+        for elem in ar :
             if elem[i] == '1':
                 uns.append(elem)
             else:
