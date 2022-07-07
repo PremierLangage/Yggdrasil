@@ -9,15 +9,14 @@ def builddata():
     for x in range(1000):
         val = random.randint(0, 2)
         if val == 0:
-            subtab.append('avant ')
+            subtab.append('avant')
         if val == 1:
-            subtab.append('bas ')
+            subtab.append('bas')
         if val == 2:
-            subtab.append('haut ')
+            subtab.append('haut')
         val1 = random.randint(0, 9)
-        mystr += str(val1)
-        mystr += ' '
-        tab.append(mystr)
+        subtab.append(val1)
+        tab.append(subtab)
     return tab
 
 def ToList(filec):
