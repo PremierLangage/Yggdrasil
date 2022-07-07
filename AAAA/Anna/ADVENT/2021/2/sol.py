@@ -22,8 +22,16 @@ def ToList(filec):
     return [x.split(' ') for x in filec.split('\n')] 
 
 def Question1(array): 
-    
-    return 0
+    position = [0,0]
+    for input in array:
+        temp_input = input.split(" ")
+        if temp_input[0][0] == "f":
+            position[0] += int(temp_input[1])
+        elif temp_input[0][0] == "u":
+            position[1] -= int(temp_input[1])
+        elif temp_input[0][0] == "d":
+            position[1] += int(temp_input[1])
+    return position[0] * position[1]
 
 def Question2(array):
     return 0
