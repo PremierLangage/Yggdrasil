@@ -40,8 +40,8 @@ def buildQ1(fichier,data):
     val = ToList(fichier)
     dataliteral = '\n'
     for input in data:
-        dataliteral.join(input[0])
-        dataliteral.join(input[1])
+        dataliteral.join(input)
+
     return f"""[('''{fichier}''','{Question1(val)}','Tst exemple question1'),
      ('''{dataliteral}''','{Question1(data)}','Tst data question1')]""", dataliteral
 
