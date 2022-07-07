@@ -35,28 +35,28 @@ def Question2(array):
     ar1 = []
     ar2 = []
     position = 0
-    while pos < len(array[0]):
+    while position < len(array[0]):
         if len(ar1) == 1 and len(ar2) == 1:
             break
         if len(ar1) > 1:
-            common_map = {k: [] for k in [0,1]}
+            map1 = {k: [] for k in [0,1]}
             for elem in ar1:
-                bit = int(line[pos])
-                common_map[bit].append(line)
-            if len(common_map[0]) > len(common_map[1]):
-                ar1 = common_map[0]
+                bit = int(line[position])
+                map1[bit].append(line)
+            if len(map1[0]) > len(map1[1]):
+                ar1 = map1[0]
             else:
-                ar1 = common_map[1]
+                ar1 = map1[1]
         if len(ar2) > 1:
-            uncommon_map = {k: [] for k in [0,1]}
+            map2 = {k: [] for k in [0,1]}
             for line in ar2:
-                bit = int(line[pos])
-                uncommon_map[bit].append(line)
-            if len(uncommon_map[1]) < len(uncommon_map[0]):
-                ar2 = uncommon_map[1]
+                bit = int(line[position])
+                map2[bit].append(line)
+            if len(map2[1]) < len(map2[0]):
+                ar2 = map2[1]
             else:
-                ar2 = uncommon_map[0]
-    pos += 1
+                ar2 = map2[0]
+    position += 1
 
 oxygen_generator_rating = int(ar1[0], 2)
 co2_scrubber_rating = int(ar2[0], 2)
