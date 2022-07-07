@@ -45,7 +45,13 @@ changeText = False
 ==
 
 postevaluator==
+import build
 
+changeText = True
+with open("ennonce2.md","r") as f:
+    lenonce = f.read()
+
+testcases, donnees = build.buildQ2(lexemple,data)
 ==
 
 
@@ -53,7 +59,7 @@ postevaluator==
 solution ==
 import sys
 def Question1():
-    array = [int(x[:-1]) for x in sys.stdin.readlines()]
+    array = [int(x) for x in sys.stdin.readlines()]
     isIncreased = 0
     for i in range(1, len(array)):
         if array[i] > array[i-1]:
