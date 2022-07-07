@@ -30,7 +30,8 @@ def ToList(filec):
         lst_tmp.append(high)
         lst_tmp.append(letter)
         lst_tmp.append(password)
-    return [x.split(' ') for x in filec.] 
+        lst.append(lst_tmp)
+    return lst
 
 def Question1(array): 
     position = [0,0]
