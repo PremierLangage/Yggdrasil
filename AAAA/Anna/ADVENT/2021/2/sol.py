@@ -34,7 +34,18 @@ def Question1(array):
     return position[0] * position[1]
 
 def Question2(array):
-    return 0
+    aim = 0
+    position = [0,0]
+    for input in inputs:
+        temp_input = input.split(" ")
+        if temp_input[0][0] == "f":
+            position[0] += int(temp_input[1])
+            position[1] += (int(temp_input[1]) * aim)
+        elif temp_input[0][0] == "u":
+            aim -= int(temp_input[1])
+        elif temp_input[0][0] == "d":
+            aim += int(temp_input[1])
+    return position[0] * position[1]
 
 
 def buildQ1(fichier,data):
