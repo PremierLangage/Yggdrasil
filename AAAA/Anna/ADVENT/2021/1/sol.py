@@ -41,7 +41,7 @@ def Question2(array):
     if len(array) >= 3 :
         for i in range(len(array) - 2):
             if i == 0: 
-                tags.append([tab[i]])
+                tags.append([tab[i] + [tab[i+1] + tab[i+2]])
                 tag1 += 1
             if i == 1: 
                 tags.append([tab[i]])
