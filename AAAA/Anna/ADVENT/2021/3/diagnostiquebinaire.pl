@@ -53,20 +53,19 @@ postevaluator==
 solution ==
 import sys
 def Question1():
-    array = [int(x) for x in sys.stdin.readlines()]
     gamma = ""
     countOnes: int
     for i in range(len(array[0])):
         countOnes = 0
-        for num in nums:
-            if num[i] == '1':
+        for num in array:
+            if array[i] == '1':
                 countOnes += 1
-        if countOnes >= nums.len div 2:
+        if countOnes >= array.len div 2:
             gamma += '1'
         else:
             gamma += '0'
     intgamma = int(gamma, 2)
-    epsilon = 2^len(nums[0]) - intgamma
+    epsilon = 2^len(array[0]) - intgamma
     return intgamma * epsilon
     
 if __name__ == '__main__':
