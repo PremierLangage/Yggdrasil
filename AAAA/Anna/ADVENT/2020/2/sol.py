@@ -26,7 +26,10 @@ def ToList(filec):
         freq, letter, password = line.split(" ")
         letter = letter[:len(letter) - 1]
         low, high = map(int, freq.split('-'))
-        
+        lst_tmp.append(low)
+        lst_tmp.append(high)
+        lst_tmp.append(letter)
+        lst_tmp.append(password)
     return [x.split(' ') for x in filec.] 
 
 def Question1(array): 
