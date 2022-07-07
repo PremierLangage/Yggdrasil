@@ -16,9 +16,11 @@ Par exemple, supposons que vous ayez la liste suivante :
 2-9 c : ccccccccc
 
 Chaque ligne donne la politique de mot de passe puis le mot de passe. La politique de mot de passe indique le plus petit et le plus grand 
-nombre de fois qu'une lettre donnée doit apparaître pour que le mot de passe soit valide. Par exemple, 1-3 a signifie que le mot de passe doit contenir a au moins 1 fois et au plus 3 fois.
+nombre de fois qu'une lettre donnée doit apparaître pour que le mot de passe soit valide. Par exemple, 1-3 a signifie que le mot de passe 
+doit contenir a au moins 1 fois et au plus 3 fois.
 
 Dans l'exemple ci-dessus, 2 mots de passe sont valides. Le mot de passe du milieu, cdefg, ne l'est pas ; il ne contient aucune instance de b, 
-mais en a besoin d'au moins 1. Les premier et troisième mots de passe sont valides : ils contiennent un a ou neuf c, tous deux dans les limites de leurs politiques respectives.
+mais en a besoin d'au moins 1. Les premier et troisième mots de passe sont valides : ils contiennent un a ou neuf c, tous deux dans les limites 
+de leurs politiques respectives.
 
 Combien de mots de passe sont valides selon leurs politiques ?
