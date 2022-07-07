@@ -17,7 +17,7 @@ text==
 
 La liste des informations est dans le fichier "data" ci-dessous.
 
-Vous pouvez tester votre fonction avec le fichier "exemple" ci-dessous dont le résultat est 1154 pour la question 1 
+Vous pouvez tester votre fonction avec le fichier "exemple" ci-dessous dont le résultat est 4160394 pour la question 1 
 et  pour la question 2.
 
 <details><summary>exemple</summary><blockquote>
