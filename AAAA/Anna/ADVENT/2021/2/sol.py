@@ -36,7 +36,7 @@ def Question1(array):
     return position[0] * position[1]
 
 def Question2(array):
-    return 0;
+    return 0
 
 
 def buildQ1(fichier,data):
