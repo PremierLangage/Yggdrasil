@@ -1,5 +1,6 @@
 import random
 import re
+from itertools import zip_longest
 
 def builddata():
     tab = []
@@ -16,20 +17,20 @@ def ToList(filec):
     return [int(x) for x in filec.split('\n')] 
 
 def Question1(array):
-    gamma = ""
-    countOnes: int
-    for i in range(len(str(array[0]))):
-        countOnes = 0
-        for num in array:
-            if num[i] == '1':
-                countOnes += 1
-        if countOnes >= len(array) % 2:
-            gamma += '1'
-        else:
-            gamma += '0'
-    intgamma = int(gamma, 2)
-    epsilon = 2^len(array[0]) - intgamma
-    return intgamma * epsilon
+    
+    polarity = []
+    for string in strings:
+        polarity = [
+            s + (1 if x == '1' else -1)
+            for s, x in zip_longest(polarity, string, fillvalue=0)
+        ]
+    return polarity
+
+polarity = bitPolarity(input.splitlines())
+
+gamma = sum([2**i for i, x in enumerate(reversed(polarity)) if x > 0])
+epsilon = sum([2**i for i, x in enumerate(reversed(polarity)) if x < 0])
+print(gamma, epsilon, gamma * epsilon)
 
 def Question2(array):
     isIncreased = 0
