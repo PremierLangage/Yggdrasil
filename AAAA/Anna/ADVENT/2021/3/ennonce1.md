@@ -36,5 +36,5 @@ Ainsi, le taux gamma est le nombre binaire 10110, soit 22 en décimal.
 Le taux d'epsilon est calculé de la même manière ; plutôt que d'utiliser le bit le plus commun, le bit le moins commun 
 de chaque position est utilisé. Ainsi, le taux d'epsilon est 01001, soit 9 en décimal. La multiplication du taux gamma (22) par le taux epsilon (9) produit la consommation d'énergie, 198.
 
-Utilisez les nombres binaires de votre rapport de diagnostic pour calculer le taux gamma et le taux epsilon, 
-puis multipliez-les ensemble. Quelle est la consommation électrique du sous-marin ? (Assurez-vous de représenter votre réponse en décimal et non en binaire.)
+Vous devez écrire une fonction Question1() qui lit le fichier "data" avec les les nombres binaires de votre rapport de diagnostic, qui calcule le taux gamma et le taux epsilon, puis renvoie le produit des deux.
+Quelle est la consommation électrique du sous-marin ? (Assurez-vous que votre fonction renvoie la réponse en décimal et non en binaire.)
