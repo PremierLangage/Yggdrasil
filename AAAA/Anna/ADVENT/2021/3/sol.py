@@ -17,7 +17,7 @@ def ToList(filec):
 def Question1(array):
     gamma = ""
     countOnes: int
-    for i in range(len(array[0]):
+    for i in range(len(array[0])):
         countOnes = 0
         for num in nums:
             if num[i] == '1':
