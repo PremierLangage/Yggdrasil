@@ -8,6 +8,7 @@ def builddata():
     for x in range(1000):
         for x in range(val):
             strnb.join(str(random.randint(0, 1)))
+    tab.append(int(strnb))
     return tab
 
 def ToList(filec):
