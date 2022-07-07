@@ -74,14 +74,24 @@ if __name__ == '__main__':
     print(Question1())  
 
 def Question2():
-    array = [int(x) for x in sys.stdin.readlines()]
-    isIncreased = 0
-    for i in range(3, len(array)):
-        a = array[i - 3] + array[i - 2] + array[i - 1]
-        b = array[i - 2] + array[i - 1] + array[i]
-        if a < b:
-            isIncreased += 1
-    return isIncreased
+    array = [x for x in sys.stdin.readlines()]
+    i = 0
+    while True:
+        polarity = []
+        for string in array[i]:
+            polarity = [
+                s + (1 if x == '1' else -1)
+                for s, x in zip_longest(polarity, string, fillvalue=0)
+            ]
+        j = len(array) - 1
+        for value in reversed(array):
+            if value[i] != v: array.pop(j)
+            if len(array) == 1: return int(v[0], 2)
+            j -= 1
+        i += 1
+    oxygen= getRating(lambda c: '1' if c >= 0 else '0', array.copy())
+    co2 = getRating(lambda c: '0' if c >= 0 else '1', array.copy())
+    return oxygen * co2
                     
 
 if __name__ == '__main__':
