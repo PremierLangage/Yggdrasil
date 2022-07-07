@@ -74,6 +74,8 @@ def Question1():
     
 if __name__ == '__main__':
     print(Question1())  
+
+    
 import sys
 from itertools import zip_longest
 
