@@ -15,10 +15,9 @@ def ToList(filec):
     return [int(x) for x in filec.split('\n')] 
 
 def Question1(array):
-    func getGamma(nums: seq[string]): int =
     gamma = ""
     countOnes: int
-    for i in 0 .. nums[0].high:
+    for i in range(len(array[0]):
         countOnes = 0
         for num in nums:
             if num[i] == '1':
