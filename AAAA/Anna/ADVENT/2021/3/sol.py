@@ -56,7 +56,7 @@ def Question2(array):
                 ar2 = map2[1]
             else:
                 ar2 = map2[0]
-    position += 1
+        position += 1
     return int(ar1[0], 2) * int(ar2[0], 2)
 
 
