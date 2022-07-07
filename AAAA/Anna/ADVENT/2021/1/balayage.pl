@@ -73,11 +73,11 @@ def Question2():
     array = [int(x) for x in sys.stdin.readlines()]
     isIncreased = 0
     for i in range(3, len(array)):
-    left = array[i - 3] + array[i - 2] + deparrayths[i - 1]
-    right = array[i - 2] + array[i - 1] + array[i]
-    if left < right:
-        count += 1
-    return isIncreased 
+        a = array[i - 3] + array[i - 2] + array[i - 1]
+        b = array[i - 2] + array[i - 1] + array[i]
+        if a < b:
+            isIncreased += 1
+    return isIncreased
                     
 
 if __name__ == '__main__':
