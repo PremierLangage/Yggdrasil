@@ -47,4 +47,4 @@ Pour ce faire, comptez le nombre de fois qu'une mesure de profondeur augmente pa
 
 Dans cet exemple, 7 mesures sont supérieures à la mesure précédente.
 Vous devez écrire une fonction Question1() qui lit le fichier "data" avec les données et qui retourne le nombre 
-de mesures sont supérieures à la mesure précédente 
+de mesures supérieures à la mesure précédente 
