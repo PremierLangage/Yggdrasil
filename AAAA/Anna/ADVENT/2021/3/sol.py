@@ -16,21 +16,19 @@ def builddata():
 def ToList(filec):
     return [int(x) for x in filec.split('\n')] 
 
-def Question1(array):
-    
+def Question1(array): 
     polarity = []
-    for string in strings:
+    for string in array:
         polarity = [
             s + (1 if x == '1' else -1)
             for s, x in zip_longest(polarity, string, fillvalue=0)
         ]
-    return polarity
 
-polarity = bitPolarity(input.splitlines())
+    polarity = bitPolarity(input.splitlines())
 
-gamma = sum([2**i for i, x in enumerate(reversed(polarity)) if x > 0])
-epsilon = sum([2**i for i, x in enumerate(reversed(polarity)) if x < 0])
-print(gamma, epsilon, gamma * epsilon)
+    gamma = sum([2**i for i, x in enumerate(reversed(polarity)) if x > 0])
+    epsilon = sum([2**i for i, x in enumerate(reversed(polarity)) if x < 0])
+    print(gamma, epsilon, gamma * epsilon)
 
 def Question2(array):
     isIncreased = 0
