@@ -3,24 +3,11 @@ import re
 
 def builddata():
     tab = []
-    val = random.randint(0, 200)
-    tab.append(val)
-    interval = random.randint(1,10)
-    incOrDec = random.randint(0, 1)
-    for x in range(1999):
-        while (interval == 0) :
-            interval = random.randint(1,10)
-        if (incOrDec == 0) : 
-            val = val + interval
-        elif (incOrDec == 1) : 
-            if (val - interval < 0) :
-                val = val + interval 
-            else : 
-                val = val - interval 
-        if (val != tab[-1]) : 
-            tab.append(val)
-        interval = random.randint(1,10)
-        incOrDec = random.randint(0, 2)
+    val = random.randint(0, 20)
+    strnb = ''
+    for x in range(1000):
+        for x in range(val):
+            strnb.join(str(random.randint(0, 1)))
     return tab
 
 def ToList(filec):
