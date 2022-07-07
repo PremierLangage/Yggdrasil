@@ -11,9 +11,9 @@ def builddata():
         if val == 0:
             subtab.append('avant ')
         if val == 1:
-            mystr += 'bas '  
+            subtab.append('bas ')
         if val == 2:
-            mystr += 'haut '
+            subtab.append('haut ')
         val1 = random.randint(0, 9)
         mystr += str(val1)
         mystr += ' '
