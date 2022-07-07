@@ -58,11 +58,7 @@ def Question2(array):
                 ar2 = map2[0]
     position += 1
     return int(ar1[0], 2) * int(ar2[0], 2)
-oxygen_generator_rating = int(ar1[0], 2)
-co2_scrubber_rating = int(ar2[0], 2)
-print("Oxygen generator rating = " + str(oxygen_generator_rating))
-print("CO2 scrubber rating = " + str(co2_scrubber_rating))
-print("Life support rating = " + str(oxygen_generator_rating * co2_scrubber_rating))
+
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
