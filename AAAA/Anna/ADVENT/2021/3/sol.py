@@ -4,12 +4,12 @@ import re
 def builddata():
     tab = []
     val = random.randint(0, 20)
-    strnb = []
     for x in range(1000):
+        strnb = []
         for y in range(val):
             strnb.append(str(random.randint(0, 1)))
         tab.append(''.join([v for v in strnb]))
-        strnb = []
+        
     return tab
 
 def ToList(filec):
