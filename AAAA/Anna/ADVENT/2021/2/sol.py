@@ -47,7 +47,7 @@ def buildQ1(fichier,data):
 
 def buildQ2(fichier,data):
     val = ToList(fichier)
-     dataliteral = '\n'
+    dataliteral = '\n'
     for input in data:
         dataliteral.join(input[0])
         dataliteral.join(input[1])
