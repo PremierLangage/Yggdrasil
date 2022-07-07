@@ -4,11 +4,10 @@ import re
 def builddata():
     tab = []
     val = random.randint(0, 20)
-    r = random.randint(0, 1)
-    strnb = str(r)
+    strnb = []
     for x in range(1000):
-        for y in range(val-1):
-            strnb.join(str(random.randint(0, 1)))
+        for y in range(val):
+            strnb.append(str(random.randint(0, 1)))
         tab.append(int(strnb))
     return tab
 
