@@ -54,7 +54,7 @@ def Q2(array, oxygen=True):
     return array[0]
 
 def Question2(array):
-    return Q2(array) * Q2(array, false)
+    return Q2(array.copy()) * Q2(array.copy(), false)
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
