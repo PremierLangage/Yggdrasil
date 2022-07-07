@@ -24,13 +24,12 @@ def ToList(filec):
 def Question1(array): 
     position = [0,0]
     for input in array:
-        temp_input = input.split(" ")
-        if temp_input[0][0] == "avant":
-            position[0] += int(temp_input[1])
-        elif temp_input[0][0] == "haut":
-            position[1] -= int(temp_input[1])
-        elif temp_input[0][0] == "bas":
-            position[1] += int(temp_input[1])
+        if input[0] == "avant":
+            position[0] += int(input[1])
+        elif input[0] == "haut":
+            position[1] -= int(input[1])
+        elif input[0] == "bas":
+            position[1] += int(input[1])
     return position[0] * position[1]
 
 def Question2(array):
