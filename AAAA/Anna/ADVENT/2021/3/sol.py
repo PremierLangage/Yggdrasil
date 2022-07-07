@@ -32,7 +32,8 @@ def Question1(array):
     return gamma * epsilon
 
 def Question2(array):
-    ar1, ar2 = 0
+    ar1 = array
+    ar2 = array
     position = 0
     while position < len(array[0]):
         if len(ar1) == 1 and len(ar2) == 1:
