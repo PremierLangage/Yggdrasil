@@ -27,8 +27,8 @@ def polarity(array):
 
 def Question1(array): 
     pol = polarity(array)
-    gamma = sum([2**i for i, x in enumerate(reversed(polarity)) if x > 0])
-    epsilon = sum([2**i for i, x in enumerate(reversed(polarity)) if x < 0])
+    gamma = sum([2**i for i, x in enumerate(reversed(pol)) if x > 0])
+    epsilon = sum([2**i for i, x in enumerate(reversed(pol)) if x < 0])
     return gamma * epsilon
 
 def rate(condition, array):
