@@ -23,7 +23,6 @@ def Question1(array):
             s + (1 if x == '1' else -1)
             for s, x in zip_longest(polarity, string, fillvalue=0)
         ]
-
     gamma = sum([2**i for i, x in enumerate(reversed(polarity)) if x > 0])
     epsilon = sum([2**i for i, x in enumerate(reversed(polarity)) if x < 0])
     return gamma * epsilon
