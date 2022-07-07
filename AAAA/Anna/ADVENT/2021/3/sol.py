@@ -28,7 +28,7 @@ def Question1(array):
     return gamma * epsilon
 
 def Question2(array):
-   i = 0
+    i = 0
     while True:
         polarity = []
         for string in array[i]:
