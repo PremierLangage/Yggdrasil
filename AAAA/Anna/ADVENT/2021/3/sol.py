@@ -31,7 +31,7 @@ def Question1(array):
     epsilon = sum([2**i for i, x in enumerate(reversed(pol)) if x < 0])
     return gamma * epsilon
 
-def Question2(array, oxygen=True):
+def Q2(array, oxygen=True):
     i = 0
     ar = []
     while len(array) > 1:
@@ -47,7 +47,15 @@ def Question2(array, oxygen=True):
                 ar = [elem for elem in uns]
             else : 
                 ar = [elem for elem in zeros]
-    return parseBinInt(nums[0])
+        else : 
+            if len(zeros) <= len(uns):
+                ar = [elem for elem in zeros]
+            else : 
+                ar = [elem for elem in uns]
+    return int(ar[0], 2)
+
+def Question2(array):
+    return Q2(array) * Q2(array, false)
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
