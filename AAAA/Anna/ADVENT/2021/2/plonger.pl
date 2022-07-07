@@ -53,7 +53,8 @@ postevaluator==
 solution ==
 import sys
 
-def Question1(array): 
+def Question1(): 
+    array = [x[:-1] for x in sys.stdin.readlines()]
     position = [0,0]
     for input in array:
         if input[0] == "avant":
@@ -66,7 +67,6 @@ def Question1(array):
 
 if __name__ == '__main__':
     print(Question1())  
-
 
 import sys
 from itertools import zip_longest
