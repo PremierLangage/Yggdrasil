@@ -52,20 +52,20 @@ postevaluator==
 
 solution ==
 import sys
-from itertools import zip_longest
 
-def Question1():
+def Question1(array): 
     array = [x[:-1] for x in sys.stdin.readlines()]
-    polarity = []
-    for string in array:
-        polarity = [
-            s + (1 if x == '1' else -1)
-            for s, x in zip_longest(polarity, string, fillvalue=0)
-        ]
-    gamma = sum([2**i for i, x in enumerate(reversed(polarity)) if x > 0])
-    epsilon = sum([2**i for i, x in enumerate(reversed(polarity)) if x < 0])
-    return gamma * epsilon
-    
+    position = [0,0]
+    for elem in array:
+        input = elem.split(" ")
+        if input[0][0] == "avant":
+            position[0] += int(input[1])
+        elif input[0][0] == "haut":
+            position[1] -= int(input[1])
+        elif input[0][0] == "bas":
+            position[1] += int(input[1])
+    return position[0] * position[1]
+
 if __name__ == '__main__':
     print(Question1())  
 
