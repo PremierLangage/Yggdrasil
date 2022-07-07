@@ -8,7 +8,8 @@ def builddata():
         strnb = []
         for y in range(val):
             strnb.append(str(random.randint(0, 1)))
-        tab.append(''.join([v for v in strnb]))
+        myst = ''.join([v for v in strnb])
+        tab.append(int(myst))
     return tab
 
 def ToList(filec):
