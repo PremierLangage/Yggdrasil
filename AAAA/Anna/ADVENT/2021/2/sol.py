@@ -15,7 +15,7 @@ def builddata():
             subtab.append('haut')
         val1 = random.randint(0, 9)
         subtab.append(str(val1))
-        tab.append(subtab)
+    tab.append(subtab)
     return tab
 
 def ToList(filec):
