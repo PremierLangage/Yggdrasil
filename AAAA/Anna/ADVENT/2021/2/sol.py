@@ -38,8 +38,8 @@ def Question2(array):
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
-    dataliteral = '\n'.join([v for v in data])
-    return f"""[('''{fichier}''','{Question1(val)}','Tst exemple question1')]""", dataliteral
+
+    return f"""[('''{fichier}''','{Question1(val)}','Tst exemple question1')]"""
 
 
 
