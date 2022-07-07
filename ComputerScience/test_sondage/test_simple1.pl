@@ -46,7 +46,7 @@ form==
 evaluator==#|python|
 S = group.selection
 score = 100
-feedback = '<span class="error-state animated pulse infinite">Excellent choix !</span>'
+feedback = '<span class="success-state animated pulse infinite">Excellent choix !</span>'
 
 #for item in group.items:
 #    item['css'] = ''
