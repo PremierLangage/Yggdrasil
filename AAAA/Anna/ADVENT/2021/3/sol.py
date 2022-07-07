@@ -34,12 +34,6 @@ def Question1(array):
 def rate(condition, array):
     i = 0
     while True:
-        polarity = []
-        for string in array[i]:
-            polarity = [
-                s + (1 if x == '1' else -1)
-                for s, x in zip_longest(polarity, string, fillvalue=0)
-            ]
         v = condition(polarity[i])
         j = len(array) - 1
         for value in reversed(array):
