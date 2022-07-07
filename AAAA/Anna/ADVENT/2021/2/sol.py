@@ -22,7 +22,6 @@ def builddata():
 def ToList(filec):
     return [x for x in filec.split('\n')] 
 
-
 def Question1(array): 
     position = [0,0]
     for elem in array:
