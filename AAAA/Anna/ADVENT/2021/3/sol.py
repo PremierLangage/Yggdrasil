@@ -24,11 +24,9 @@ def Question1(array):
             for s, x in zip_longest(polarity, string, fillvalue=0)
         ]
 
-    polarity = bitPolarity(input.splitlines())
-
     gamma = sum([2**i for i, x in enumerate(reversed(polarity)) if x > 0])
     epsilon = sum([2**i for i, x in enumerate(reversed(polarity)) if x < 0])
-    print(gamma, epsilon, gamma * epsilon)
+    return gamma * epsilon
 
 def Question2(array):
     isIncreased = 0
