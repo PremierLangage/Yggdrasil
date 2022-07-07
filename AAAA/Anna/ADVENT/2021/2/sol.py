@@ -31,7 +31,6 @@ def Question2(array):
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
-    print(Question1(val))
     for v in data : 
         literal = v[0] + ' ' +  v[1] + ' '
     dataliteral = '\n'.join(literal)
