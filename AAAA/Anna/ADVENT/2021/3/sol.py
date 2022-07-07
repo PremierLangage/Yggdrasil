@@ -18,7 +18,7 @@ def Question1(array):
     bitlen = len(array[0])
     gamma_map = {k: 0 for k in range(bitlen)}
     for elem in array:
-        for i, char in enumerate(line):
+        for i, char in enumerate(elem):
             bit = int(char)
             gamma_map[bitlen - i - 1] += bit
     gamma = 0
