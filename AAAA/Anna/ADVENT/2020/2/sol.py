@@ -32,8 +32,15 @@ def ToList(filec):
         lst.append(lst_tmp)
     return lst
 
+def Q1(low, high, letter, password):
+    count = 0
+    for char in password:
+        if char == letter:
+            count += 1
+    return high >= count >= low
+
 def Question1(array): 
-    position = [0,0]
+    out1 = 0
     for input in array:
         if input[0] == "avant":
             position[0] += int(input[1])
