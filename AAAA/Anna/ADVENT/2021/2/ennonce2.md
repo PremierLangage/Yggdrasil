@@ -24,4 +24,4 @@ jusqu'à 3 diminue votre objectif de 3, ce qui donne une valeur de 2.
 vers l'avant 2 ajoute 2 à votre position horizontale, un total de 15. Parce que votre objectif est de 10, votre profondeur augmente de 2*10=20 pour un total de 60.
 Après avoir suivi ces nouvelles instructions, vous auriez une position horizontale de 15 et une profondeur de 60. (En les multipliant, vous obtenez 900.)
 
-En utilisant cette nouvelle interprétation des commandes, calculez la position horizontale et la profondeur que vous auriez après avoir suivi le parcours prévu. Qu'obtenez-vous si vous multipliez votre position horizontale finale par votre profondeur finale ?
+En utilisant cette nouvelle interprétation des commandes, vous devez écrire une fonction Question2() qui lit le fichier "data" avec les données et qui retourne la position horizontale et la profondeur que vous auriez après avoir suivi le parcours prévu. Qu'obtenez-vous si vous multipliez votre position horizontale finale par votre profondeur finale ?
