@@ -62,15 +62,11 @@ from itertools import zip_longest
 
 def Question1():
     array = [x[:-1] for x in sys.stdin.readlines()]
-    polarity = []
-    for string in array:
-        polarity = [
-            s + (1 if x == '1' else -1)
-            for s, x in zip_longest(polarity, string, fillvalue=0)
-        ]
-    gamma = sum([2**i for i, x in enumerate(reversed(polarity)) if x > 0])
-    epsilon = sum([2**i for i, x in enumerate(reversed(polarity)) if x < 0])
-    return gamma * epsilon
+    out = 0
+    for input in array:
+        if Q1(input[0], input[1], input[2], input[3]):
+            out += 1
+    return out
     
 if __name__ == '__main__':
     print(Question1())  
