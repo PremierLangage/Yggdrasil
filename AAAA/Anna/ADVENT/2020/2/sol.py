@@ -43,7 +43,7 @@ def Question1(array):
     out = 0
     for input in array:
         if Q1(input[0], input[1], input[2], input[3]):
-            out1 += 1
+            out += 1
     return out
 
 def Question2(array):
