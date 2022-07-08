@@ -50,17 +50,11 @@ def Q2(position1, position2, letter, password):
     return (password[position1] == letter) ^ (password[position2] == letter)
 
 def Question2(array):
-    aim = 0
-    position = [0,0]
+    out = 0
     for input in array:
-        if input[0] == "avant":
-            position[0] += int(input[1])
-            position[1] += (int(input[1]) * aim)
-        elif input[0] == "haut":
-            aim -= int(input[1])
-        elif input[0] == "bas":
-            aim += int(input[1])
-    return position[0] * position[1]
+        if Q2(input[0], input[1], input[2], input[3]):
+            out += 1
+    return out
 
 
 def buildQ1(fichier,data):
