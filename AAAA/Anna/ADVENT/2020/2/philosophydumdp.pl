@@ -58,7 +58,6 @@ testcases, donnees = build.buildQ2(lexemple,data)
 
 solution ==
 import sys
-from itertools import zip_longest
 
 def Question1():
     array = [x[:-1] for x in sys.stdin.readlines()]
