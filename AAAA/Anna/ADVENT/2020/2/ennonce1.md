@@ -23,4 +23,4 @@ Dans l'exemple ci-dessus, 2 mots de passe sont valides. Le mot de passe du milie
 mais en a besoin d'au moins 1. Les premier et troisième mots de passe sont valides : ils contiennent un a ou neuf c, tous deux dans les limites 
 de leurs politiques respectives.
 
-Combien de mots de passe sont valides selon leurs politiques ?
+Vous devez écrire une fonction Question1() qui lit le fichier "data" avec les données et qui retourne le nombre de mots de passe sont valides selon leurs politiques ?
