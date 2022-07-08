@@ -50,12 +50,24 @@ def ToList(filec):
             lst.append(lst_tmp)
     return lst
 
-def Q1(low, high, letter, password):
-    count = 0
-    for char in password:
-        if char == letter:
-            count += 1
-    return high >= count >= low
+def Q1(data: list, right: int = 3, down: int = 1):
+    pos = 0
+    trees = 0
+    first_row = True
+    for line in data[::down]:
+        line = line * 100
+        if pos != 0:
+            char = line[:pos][-1]
+        if first_row:
+            pos += right+1
+            first_row = False
+            continue
+        else:
+            pos += right
+        if char == "#":
+            trees += 1
+    print(f"Number of trees: {trees}")
+    return trees
 
 def Question1(array): 
     out = 0
