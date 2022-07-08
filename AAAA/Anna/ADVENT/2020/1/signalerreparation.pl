@@ -65,6 +65,10 @@ def Question1():
                 if array[i] + array[j] == 2020:
                     return array[i] * array[j]
 
+if __name__ == '__main__':
+    print(Question1())  
+
+import sys
 def Question2():
     array = [int(x[:-1]) for x in sys.stdin.readlines()]
     for i in range( 0,len(array)-2): 
@@ -75,7 +79,7 @@ def Question2():
                     
 
 if __name__ == '__main__':
-    print(Question1())  
+    print(Question2())  
     
   
 ==
