@@ -5,23 +5,15 @@ from itertools import zip_longest
 
 def builddata():
     tab = []
-    lst_tmp = []
     letters = list(string.ascii_lowercase)
-    rand_low = random.randint(1, 20)
-    rand_high = random.randint(rand_low, 20)
-    rand_letter = random.randint(1, 26)
-    letter = letters[rand_letter]
     for x in range(1000):
         subtab = []
-        val = random.randint(0, 2)
-        val1 = random.randint(1, 9)
-        if val == 0:
-            subtab.append('avant')
-        if val == 1:
-            subtab.append('bas')
-        if val == 2:
-            subtab.append('haut')
-        subtab.append(str(val1))
+        rand_low = random.randint(1, 20)
+        rand_high = random.randint(rand_low, 20)
+        rand_letter = letters[random.randint(1, 26)]
+        subtab.append(rand_low)
+        subtab.append(rand_high)
+        subtab.append(rand_letter)
         tab.append(subtab)
     return tab
 
