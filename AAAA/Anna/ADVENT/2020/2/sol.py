@@ -16,6 +16,7 @@ def builddata():
         subtab.append(rand_letter)
         len_password = random.randint(1, 20)
         password = ''
+        isValid = random.randint(0, 1)
         for i in range (len_password) :
             rand_letter = letters[random.randint(1, 26)]
             password += rand_letter
