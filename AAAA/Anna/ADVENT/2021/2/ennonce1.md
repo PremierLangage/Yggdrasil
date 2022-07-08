@@ -28,4 +28,4 @@ Votre position horizontale et votre profondeur commencent toutes deux à 0. Les 
 
 Après avoir suivi ces instructions, vous auriez une position horizontale de 15 et une profondeur de 10. (En les multipliant, vous obtenez 150.)
 
-Calculez la position horizontale et la profondeur que vous auriez après avoir suivi le parcours prévu. Qu'obtenez-vous si vous multipliez votre position horizontale finale par votre profondeur finale ?s
+Vous devez écrire une fonction Question1() qui lit le fichier "data" avec les données et qui retourne le produit la position horizontale et la profondeur que vous auriez après avoir suivi le parcours prévu. 
