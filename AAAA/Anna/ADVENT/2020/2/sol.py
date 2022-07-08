@@ -52,7 +52,7 @@ def Q2(position1, position2, letter, password):
 def Question2(array):
     out = 0
     for input in array:
-        if Q2(input[0], input[1], input[2], input[3]):
+        if Q2(input[0]-1, input[1]-1, input[2], input[3]):
             out += 1
     return out
 
