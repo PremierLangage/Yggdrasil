@@ -1,4 +1,4 @@
-extends= /AAAA/Gaudet/template/cgbasic.pl
+extends= ../../template/advent.pl
 
 @ennonce1.md
 @ennonce2.md
