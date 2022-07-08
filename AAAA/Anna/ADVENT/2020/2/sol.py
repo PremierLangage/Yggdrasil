@@ -21,6 +21,7 @@ def builddata():
             for i in range (len_password) :
                 letter = letters[random.randint(1, 26)]
                 password += letter
+            password = password[:rand_low] + rand_letter + password[rand_low+1:]
             password[rand_low] = rand_letter
             while password[rand_high] == rand_letter : 
                 letter = letters[random.randint(1, 26)]
