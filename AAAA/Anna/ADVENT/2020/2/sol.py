@@ -83,7 +83,7 @@ def buildQ1(fichier,data):
 
 def buildQ2(fichier,data):
     val = ToList(fichier)
-    dataliteral = fichier
+    dataliteral = '\n'.join([v[0] + '-' + v[1] + ' ' + v[2] + ': ' + v[3] for v in data])
     return f"""[('''{fichier}''','{Question2(val)}','Tst exemple question2'),
      ('''{dataliteral}''','{Question2(data)}','Tst data question2')]""", dataliteral
 
