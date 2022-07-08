@@ -9,7 +9,7 @@ lexemple =@exemple
 #@/AAAA/dominique/python/AVANT/template/advent.pl [template.html]
 
 
-title= Diagnostique Binaire
+title= Plonger
 
 text==
 
