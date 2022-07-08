@@ -40,15 +40,11 @@ def Q1(low, high, letter, password):
     return high >= count >= low
 
 def Question1(array): 
-    out1 = 0
+    out = 0
     for input in array:
-        if input[0] == "avant":
-            position[0] += int(input[1])
-        elif input[0] == "haut":
-            position[1] -= int(input[1])
-        elif input[0] == "bas":
-            position[1] += int(input[1])
-    return position[0] * position[1]
+        if Q1(low, high, letter, password):
+            out1 += 1
+    return out
 
 def Question2(array):
     aim = 0
