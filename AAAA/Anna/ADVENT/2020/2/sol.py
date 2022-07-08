@@ -24,6 +24,7 @@ def ToList(filec):
     for line in filec.split('\n'):
         ar = line.split(' ')
         if len(ar) == 3:
+            lst_tmp = []
             freq, letter, password = ar[0], ar[1], ar[2]
             letter = letter[:len(letter) - 1]
             low, high = map(int, freq.split('-'))
