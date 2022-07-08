@@ -10,7 +10,7 @@ def builddata():
         subtab = []
         rand_low = random.randint(1, 20)
         rand_high = random.randint(rand_low, 20)
-        rand_letter = letters[random.randint(1, 26)]
+        rand_letter = letters[random.randint(0, 25)]
         subtab.append(rand_low)
         subtab.append(rand_high)
         subtab.append(rand_letter)
