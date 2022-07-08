@@ -76,7 +76,7 @@ if __name__ == '__main__':
 
 import sys
 
-def Question1(): 
+def Question2(): 
     array = [x.split(' ') for x in sys.stdin.readlines()]
     aim = 0
     position = [0,0]
