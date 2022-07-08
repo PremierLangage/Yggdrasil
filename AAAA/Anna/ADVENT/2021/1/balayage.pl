@@ -69,6 +69,7 @@ def Question1():
 if __name__ == '__main__':
     print(Question1())  
 
+import sys
 def Question2():
     array = [int(x) for x in sys.stdin.readlines()]
     isIncreased = 0
