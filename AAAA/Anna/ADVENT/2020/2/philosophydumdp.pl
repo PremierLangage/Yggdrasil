@@ -105,12 +105,13 @@ def Question2():
         for char in lst_tmp[3]:
             if char == lst_tmp[2] : 
                 count += 1
-        if lst_tmp[3][lst_tmp[0] - 1] == letter ^ lst_tmp[3][lst_tmp[1] - 1] == letter :
+        if (lst_tmp[3][lst_tmp[0] - 1] == letter) ^ (lst_tmp[3][lst_tmp[1] - 1] == letter) :
             out += 1
     return out
 
 
 if __name__ == '__main__':
     print(Question2())  
+ 
   
 ==
