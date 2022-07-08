@@ -14,7 +14,7 @@ def builddata():
         subtab.append(rand_low)
         subtab.append(rand_high)
         subtab.append(rand_letter)
-        len_password = random.randint(1, 20)
+        len_password = random.randint(rand_high, 20)
         password = ''
         isValid = random.randint(0, 1)
         if isValid == 0 : 
