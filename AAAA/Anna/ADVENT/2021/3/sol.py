@@ -4,7 +4,7 @@ from itertools import zip_longest
 
 def builddata():
     tab = []
-    val = random.randint(0, 20)
+    val = random.randint(0, 200)
     for x in range(1000):
         strnb = []
         for y in range(val):
