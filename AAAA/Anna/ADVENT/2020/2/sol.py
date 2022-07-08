@@ -17,11 +17,18 @@ def builddata():
         len_password = random.randint(1, 20)
         password = ''
         isValid = random.randint(0, 1)
-        for i in range (len_password) :
-            if isValid == 0 : 
-                password += ''
-            rand_letter = letters[random.randint(1, 26)]
-            password += rand_letter
+        if isValid == 0 : 
+            for i in range (len_password) :
+                letter = letters[random.randint(1, 26)]
+                password += letter
+            password[rand_low] = rand_letter
+            while password[rand_high] == rand_letter : 
+                letter = letters[random.randint(1, 26)]
+                password[rand_high] = letter
+        else : 
+            for i in range (len_password) :
+                letter = letters[random.randint(1, 26)]
+                password += letter
         tab.append(subtab)
     return tab
 
