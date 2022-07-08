@@ -67,7 +67,7 @@ def Question1():
         for char in input[3]:
             if char == input[2] : 
                 count += 1
-        if input[1] >= count >= input[0]:
+        if int(input[1]) >= count >= int(input[0]):
             out += 1
     return out
     
