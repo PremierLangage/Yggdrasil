@@ -35,7 +35,7 @@ et 4125600 pour la question 2.
 before==
 import build
 
-data = build.builddata(lexemple)
+data = build.toList(lexemple)
 
 with open("ennonce1.md","r") as f:
     lenonce= f.read()
