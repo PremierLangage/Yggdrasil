@@ -11,9 +11,9 @@ et la politique de l'entreprise lorsque ce mot de passe a été défini.
 
 Par exemple, supposons que vous ayez la liste suivante :
 
-1-3 a : abcde
-1-3 b : cdefg
-2-9 c : ccccccccc
+    1-3 a : abcde
+    1-3 b : cdefg
+    2-9 c : ccccccccc
 
 Chaque ligne donne la politique de mot de passe puis le mot de passe. La politique de mot de passe indique le plus petit et le plus grand 
 nombre de fois qu'une lettre donnée doit apparaître pour que le mot de passe soit valide. Par exemple, 1-3 a signifie que le mot de passe 
