@@ -58,6 +58,12 @@ testcases, donnees = build.buildQ2(lexemple,data)
 
 solution ==
 import sys
+def Q1(low, high, letter, password):
+    count = 0
+    for char in password:
+        if char == letter:
+            count += 1
+    return high >= count >= low
 
 def Question1():
     array = [x[:-1] for x in sys.stdin.readlines()]
@@ -72,6 +78,10 @@ if __name__ == '__main__':
 
 
 import sys
+
+
+def Q2(position1, position2, letter, password):
+    return (password[position1] == letter) ^ (password[position2] == letter)
 
 def Question2():
     array = [x[:-1] for x in sys.stdin.readlines()]
