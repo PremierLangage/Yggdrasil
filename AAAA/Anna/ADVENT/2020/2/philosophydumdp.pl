@@ -63,11 +63,21 @@ def Question1():
     array = [x[:-1] for x in sys.stdin.readlines()]
     out = 0
     for input in array:
+        ar = input.split(' ')
+        if len(ar) == 3:
+            lst_tmp = []
+            freq, letter, password = ar[0], ar[1], ar[2]
+            letter = letter[:len(letter) - 1]
+            low, high = map(int, freq.split('-'))
+            lst_tmp.append(low)
+            lst_tmp.append(high)
+            lst_tmp.append(letter)
+            lst_tmp.append(password)
         count = 0
-        for char in input[3]:
-            if char == input[2] : 
+        for char in lst_tmp[3]:
+            if char == lst_tmp[2] : 
                 count += 1
-        if int(input[1]) >= count >= int(input[0]):
+        if int(lst_tmp[1]) >= count >= int(lst_tmp[0]):
             out += 1
     return out
     
@@ -77,17 +87,28 @@ if __name__ == '__main__':
 
 import sys
 
-
-def Q2(position1, position2, letter, password):
-    return (password[position1] == letter) ^ (password[position2] == letter)
-
 def Question2():
     array = [x[:-1] for x in sys.stdin.readlines()]
     out = 0
     for input in array:
-        if Q2(input[0]-1, input[1]-1, input[2], input[3]):
+        ar = input.split(' ')
+        if len(ar) == 3:
+            lst_tmp = []
+            freq, letter, password = ar[0], ar[1], ar[2]
+            letter = letter[:len(letter) - 1]
+            low, high = map(int, freq.split('-'))
+            lst_tmp.append(low)
+            lst_tmp.append(high)
+            lst_tmp.append(letter)
+            lst_tmp.append(password)
+        count = 0
+        for char in lst_tmp[3]:
+            if char == lst_tmp[2] : 
+                count += 1
+        if lst_tmp[3][lst_tmp[0] - 1] == letter ^ lst_tmp[3][lst_tmp[1] - 1] == letter :
             out += 1
     return out
+
 
 if __name__ == '__main__':
     print(Question2())  
