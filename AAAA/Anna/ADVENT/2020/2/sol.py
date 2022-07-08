@@ -19,6 +19,7 @@ def builddata():
         isValid = random.randint(0, 1)
         for i in range (len_password) :
             if isValid == 0 : 
+                password += ''
             rand_letter = letters[random.randint(1, 26)]
             password += rand_letter
         tab.append(subtab)
