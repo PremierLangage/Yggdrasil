@@ -46,6 +46,9 @@ def Question1(array):
             out += 1
     return out
 
+def Q2(position1, position2, letter, password):
+    return (password[position1] == letter) ^ (password[position2] == letter)
+
 def Question2(array):
     aim = 0
     position = [0,0]
