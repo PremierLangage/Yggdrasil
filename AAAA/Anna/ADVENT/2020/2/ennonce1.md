@@ -2,17 +2,18 @@ Une fois les problèmes de connexion à la luge résolus, vous partez en directi
 
 En raison de la géologie locale, les arbres de cette zone ne poussent que sur des coordonnées entières exactes dans une grille. Vous faites une carte (votre entrée de puzzle) des carrés ouverts (.) et des arbres (#) que vous pouvez voir. Par exemple:
 
-..##.......
-#...#...#..
-.#....#..#.
-..#.#...#.#
-.#...##..#.
-..#.##.....
-.#.#.#....#
-.#........#
-#.##...#...
-#...##....#
-.#..#...#.#
+    ..##.......
+    #...#...#..
+    .#....#..#.
+    ..#.#...#.#
+    .#...##..#.
+    ..#.##.....
+    .#.#.#....#
+    .#........#
+    #.##...#...
+    #...##....#
+    .#..#...#.#
+
 Ce ne sont pas les seuls arbres, cependant; en raison de quelque chose que vous avez lu une fois concernant la génétique arboricole et la stabilité du biome, le même schéma se répète plusieurs fois à droite :
 
     ..##.........##.........##.........##.........##.. .......##....... --->
@@ -26,7 +27,7 @@ Ce ne sont pas les seuls arbres, cependant; en raison de quelque chose que vous 
     #.##...#...#.##...#...#.##...#...#.##...#...#.##.. .#...#.##...#...
     #...##....##...##....##...##....##...##....##...## ....##...##....#
     .#..#...#.#.#..#...#.#.#..#...#.#.#..#...#.#.#..#. ..#.#.#..#...#.# --->
-    
+
 Vous commencez sur le carré ouvert (.) dans le coin supérieur gauche et devez atteindre le bas (sous la ligne la plus en bas sur votre carte).
 
 Le toboggan ne peut suivre que quelques pentes précises (vous avez opté pour un modèle moins cher qui préfère les nombres rationnels) ; commencez par compter tous les arbres que vous rencontrerez pour la pente à droite 3, en bas 1 :
