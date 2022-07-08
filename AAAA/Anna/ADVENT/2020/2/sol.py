@@ -23,14 +23,15 @@ def ToList(filec):
     lst_tmp = []
     for line in filec.split('\n'):
         ar = line.split(' ')
-        freq, letter, password = ar[0], ar[1], ar[2]
-        letter = letter[:len(letter) - 1]
-        low, high = map(int, freq.split('-'))
-        lst_tmp.append(low)
-        lst_tmp.append(high)
-        lst_tmp.append(letter)
-        lst_tmp.append(password)
-        lst.append(lst_tmp)
+        if len(ar) == 3:
+            freq, letter, password = ar[0], ar[1], ar[2]
+            letter = letter[:len(letter) - 1]
+            low, high = map(int, freq.split('-'))
+            lst_tmp.append(low)
+            lst_tmp.append(high)
+            lst_tmp.append(letter)
+            lst_tmp.append(password)
+            lst.append(lst_tmp)
     return lst
 
 def Q1(low, high, letter, password):
