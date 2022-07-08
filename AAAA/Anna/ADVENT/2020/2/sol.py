@@ -22,7 +22,7 @@ def ToList(filec):
     lst = []
     lst_tmp = []
     for line in filec.split('\n'):
-        ar = line.split(" ")
+        ar = line.split(' ')
         freq, letter, password = ar[0], ar[1], ar[2]
         letter = letter[:len(letter) - 1]
         low, high = map(int, freq.split('-'))
