@@ -21,7 +21,7 @@ def builddata():
 def ToList(filec):
     lst = []
     lst_tmp = []
-    for line in filec.split('\n'):
+    for line in filec:
         freq, letter, password = line.split(" ")
         letter = letter[:len(letter) - 1]
         low, high = map(int, freq.split('-'))
