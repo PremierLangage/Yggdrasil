@@ -29,6 +29,7 @@ def builddata():
             for i in range (len_password) :
                 letter = letters[random.randint(1, 26)]
                 password += letter
+        subtab.append(password)
         tab.append(subtab)
     return tab
 
