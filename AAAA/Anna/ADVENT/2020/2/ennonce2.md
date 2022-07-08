@@ -11,7 +11,8 @@ Chaque stratégie décrit en fait deux positions dans le mot de passe, où 1 sig
 
 Étant donné la même liste d'exemples ci-dessus :
 
-1-3 a : abcde est valide : la position 1 contient a et la position 3 non.
-1-3 b : cdefg est invalide : ni la position 1 ni la position 3 ne contiennent b.
-2-9 c : ccccccccc n'est pas valide : les positions 2 et 9 contiennent c.
+    1-3 a : abcde est valide : la position 1 contient a et la position 3 non.
+    1-3 b : cdefg est invalide : ni la position 1 ni la position 3 ne contiennent b.
+    2-9 c : ccccccccc n'est pas valide : les positions 2 et 9 contiennent c.
+    
 Combien de mots de passe sont valides selon la nouvelle interprétation des politiques ?
