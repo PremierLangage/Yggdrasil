@@ -27,7 +27,7 @@ def builddata():
                 password = password[:rand_high] + letter + password[rand_high+1:]
         else : 
             for i in range (len_password) :
-                letter = letters[random.randint(1, 26)]
+                letter = letters[random.randint(0, 25)]
                 password += letter
         subtab.append(password)
         tab.append(subtab)
