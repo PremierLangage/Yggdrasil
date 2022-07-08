@@ -19,11 +19,11 @@ def builddata():
         isValid = random.randint(0, 1)
         if isValid == 0 : 
             for i in range (len_password) :
-                letter = letters[random.randint(1, 26)]
+                letter = letters[random.randint(0, 25)]
                 password += letter
             password = password[:rand_low] + rand_letter + password[rand_low+1:]
             while password[rand_high] == rand_letter : 
-                letter = letters[random.randint(1, 26)]
+                letter = letters[random.randint(0, 25)]
                 password = password[:rand_high] + letter + password[rand_high+1:]
         else : 
             for i in range (len_password) :
