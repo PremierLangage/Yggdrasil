@@ -69,7 +69,11 @@ def Question1():
     array = [x[:-1] for x in sys.stdin.readlines()]
     out = 0
     for input in array:
-        if Q1(input[0], input[1], input[2], input[3]):
+        count = 0
+        for char in input[3]:
+            if char == input[2] : 
+                count += 1
+        if input[1] >= count >= input[0]:
             out += 1
     return out
     
