@@ -34,15 +34,15 @@ La liste des informations est dans le fichier "data" ci-dessous.
 Vous pouvez tester votre fonction avec le fichier "exemple" ci-dessous dont le résultat est 1154 pour la question 1 
 et 1127 pour la question 2.
 
-<span style="font-size:0.5em">
+<div style="font-size:0.5em">
 <button onclick="docopy('exemple')">Copy exemple</button>
-<details><summary>Fichier exemple</summary><blockquote id="exemple" style="font-size:0.5em;white-space: pre-line" 
+<details><summary>Fichier exemple</summary><blockquote id="exemple" style="white-space: pre-line" 
 >{{lexemple}}
 </blockquote></details>
 <button onclick="docopy('data')">Copy exemple</button>
-<details><summary>Fichier de données</summary><blockquote style="font-size:0.5em;white-space: pre-line" id="data">{{donnees}}
+<details><summary>Fichier de données</summary><blockquote style="white-space: pre-line" id="data">{{donnees}}
 </blockquote></details>
-</span>
+</div>
 ==
 
 
