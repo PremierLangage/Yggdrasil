@@ -13,7 +13,7 @@ lexemple =@exemple
 title= Signaler Reparation
 
 text==
-<button onclick="let a=document.getElementById("ex_value");a.content.select();document.execCommand('copy'); alert('Copied the text: ');">Copy</button>
+<button onclick="let a=document.getElementById("ex_value");a.content.select();document.execCommand('copy'); alert('Copied the text: ')">Copy</button>
 
 
 {{lenonce}}
