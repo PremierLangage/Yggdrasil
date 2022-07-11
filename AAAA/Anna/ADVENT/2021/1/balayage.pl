@@ -39,7 +39,7 @@ et 1127 pour la question 2.
 <details><summary>Fichier exemple</summary><blockquote id="exemple" 
 style="font-size:0.5em;white-space: pre-line">{{lexemple}}
 </blockquote></details>
-<button onclick="docopy('exemple')">Copy exemple</button>
+<button onclick="docopy('data')">Copy exemple</button>
 <details><summary>Fichier de données</summary><blockquote id="data">{{donnees}}
 </blockquote></details>
 
