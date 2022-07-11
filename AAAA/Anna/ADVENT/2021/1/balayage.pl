@@ -13,6 +13,8 @@ lexemple =@exemple
 title= Signaler Reparation
 
 text==
+<button onclick="let a=document.getElementById("ex_value");a.content.select();document.execCommand('copy'); alert('Copied the text: ');">Copy</button>
+
 
 {{lenonce}}
 
@@ -21,8 +23,7 @@ La liste des informations est dans le fichier "data" ci-dessous.
 Vous pouvez tester votre fonction avec le fichier "exemple" ci-dessous dont le résultat est 1154 pour la question 1 
 et 1127 pour la question 2.
 
-<details><summary>exemple</summary>
-<button onclick="let a=document.getElementById("ex_value");a.content.select();document.execCommand('copy'); alert('Copied the text: ');">Copy to presspapier </button>
+<button onclick="let a=document.getElementById("ex_value");a.content.select();document.execCommand('copy'); alert('Copied the text: ');">Copy</button>
 
 
 <blockquote id="ex_value" 
