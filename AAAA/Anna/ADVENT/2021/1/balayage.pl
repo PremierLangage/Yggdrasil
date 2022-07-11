@@ -17,7 +17,7 @@ extrajs== #|html|
 <script>
 function docopy(id){
 
-let a=document.getElementById('ex_value');
+let a=document.getElementById(id);
 navigator.clipboard.writeText(a.innerText);
 alert('Copied the text: '+a.innerText);
 }
