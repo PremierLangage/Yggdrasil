@@ -22,8 +22,10 @@ Vous pouvez tester votre fonction avec le fichier "exemple" ci-dessous dont le r
 et 1127 pour la question 2.
 
 <details><summary>exemple</summary>
+<button onclick="let a=document.getElementById(id);a.content.select();document.execCommand('copy')">Copy to presspapier </button>
+
+
 <blockquote id="ex_value" 
-onclick="let a=document.getElementById(id);a.content.select();document.execCommand('copy')"
 style="font-size:0.5em;white-space: pre-line">
   {{lexemple}}
 </blockquote></details>
