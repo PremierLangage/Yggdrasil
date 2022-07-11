@@ -39,8 +39,10 @@ et 1127 pour la question 2.
 >{{lexemple}}
 </blockquote></details>
 
-<details><summary>Fichier de données <button onclick="docopy('data')">Copy data</button></summary><blockquote style="white-space: pre-line" id="data">{{donnees}}
-</blockquote></details>
+<details><summary>Fichier de données <button onclick="docopy('data')">Copy data</button></summary>
+<blockquote style="white-space: pre-line" id="data">{{donnees}}
+</blockquote>
+</details>
 </div>
 ==
 
