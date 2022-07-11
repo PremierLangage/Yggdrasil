@@ -35,8 +35,7 @@ Vous pouvez tester votre fonction avec le fichier "exemple" ci-dessous dont le r
 et 1127 pour la question 2.
 
 <div style="font-size:0.5em">
-<button onclick="docopy('exemple')">Copy exemple</button>
-<details><summary>Fichier exemple</summary><blockquote id="exemple" style="white-space: pre-line" 
+<details><summary>Fichier exemple <button onclick="docopy('exemple')">Copy exemple</button></summary><blockquote id="exemple" style="white-space: pre-line" 
 >{{lexemple}}
 </blockquote></details>
 <button onclick="docopy('data')">Copy exemple</button>
