@@ -25,7 +25,6 @@ alert('Copied du fichier: '+id+' dans le press-papier');
 ==
 
 text==
-<button onclick="docopy('exemple')">Copy</button>
 
 
 {{lenonce}}
@@ -35,16 +34,13 @@ La liste des informations est dans le fichier "data" ci-dessous.
 Vous pouvez tester votre fonction avec le fichier "exemple" ci-dessous dont le résultat est 1154 pour la question 1 
 et 1127 pour la question 2.
 
-<button onclick="let a=document.getElementById("ex_value");a.content.select();document.execCommand('copy'); alert('Copied the text: ');">Copy</button>
 
-
-<blockquote id="ex_value" 
-style="font-size:0.5em;white-space: pre-line">
-  {{lexemple}}
+<button onclick="docopy('exemple')">Copy exemple</button>
+<details><blockquote id="exemple" 
+style="font-size:0.5em;white-space: pre-line">{{lexemple}}
 </blockquote></details>
-
-<details><summary>data</summary><blockquote>
-  {{donnees}}
+<button onclick="docopy('exemple')">Copy exemple</button>
+<details><summary>data</summary><blockquote id="data">{{donnees}}
 </blockquote></details>
 
 ==
