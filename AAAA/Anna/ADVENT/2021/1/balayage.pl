@@ -12,9 +12,16 @@ lexemple =@exemple
 
 title= Signaler Reparation
 
+
+extrajs== #|html| 
+<script>
+function docopy(id)
+let a=document.getElementById('ex_value');a.content.select();document.execCommand('copy');
+ alert('Copied the text: '+id)
+</script>
+==
 text==
-<button onclick="let a=document.getElementById('ex_value');a.content.select();document.execCommand('copy');
- alert('Copied the text: ')">Copy</button>
+<button onclick="docopy('ex_value')">Copy</button>
 
 
 {{lenonce}}
