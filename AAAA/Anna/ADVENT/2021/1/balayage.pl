@@ -19,13 +19,13 @@ function docopy(id){
 
 let a=document.getElementById(id);
 navigator.clipboard.writeText(a.innerText);
-alert('Copied the text: '+a.innerText);
+alert('Copied du fichier: '+id+' dans le press-papier');
 }
 </script>
 ==
 
 text==
-<button onclick="docopy('ex_value')">Copy</button>
+<button onclick="docopy('exemple')">Copy</button>
 
 
 {{lenonce}}
