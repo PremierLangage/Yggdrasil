@@ -22,6 +22,7 @@ document.execCommand('copy');
 alert('Copied the text: '+id)
 </script>
 ==
+
 text==
 <button onclick="docopy('ex_value')">Copy</button>
 
