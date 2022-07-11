@@ -18,8 +18,8 @@ extrajs== #|html|
 function docopy(id){
 
 let a=document.getElementById('ex_value');
-alert('Element opié '+a);
-a.innerhtml.select();
+alert('Element opié '+a.innerText);
+a.innerText.select();
 document.execCommand('copy');
 alert('Copied the text: '+id);
 }
