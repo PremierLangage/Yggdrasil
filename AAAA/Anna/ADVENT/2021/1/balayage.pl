@@ -15,11 +15,13 @@ title= Signaler Reparation
 
 extrajs== #|html| 
 <script>
-function docopy(id)
+function docopy(id){
+
 let a=document.getElementById('ex_value');
 a.content.select();
 document.execCommand('copy');
-alert('Copied the text: '+id)
+alert('Copied the text: '+id);
+}
 </script>
 ==
 
