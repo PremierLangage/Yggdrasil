@@ -16,9 +16,10 @@ title= Signaler Reparation
 extrajs== #|html| 
 <script>
 function docopy(id){
-alert('Copied the text: '+id);
+
 let a=document.getElementById('ex_value');
-a.select();
+alert('Element opié '+a);
+a.innerhtml.select();
 document.execCommand('copy');
 alert('Copied the text: '+id);
 }
