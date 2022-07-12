@@ -27,11 +27,10 @@ if __name__ == "__main__":
         param_json = sys.argv[3]
         with open(param_json) as p:
             param = json.load(p)
-    with open(input_json, "r") as f:
-        dic = json.load(f)
+
+    dic = get_context()
     for k,v in param.items():
         dic[k] = v # ecrassement des valeurs par defaut dans le dic 
-    dic = get_context()
 
     if 'before' in dic:
         glob = {}
