@@ -19,11 +19,18 @@ def add_try_clause(code, excpt):
 if __name__ == "__main__":
     if len(sys.argv) < 3:
         msg = ("Sandbox did not call builder properly:\n"
-               +"Usage: python3 builder.py [input_json] [output_json]")
+               +"Usage: python3 builder.py input_json output_json [param_json]")
         print(msg, file=sys.stderr)
         sys.exit(1)
     output_json = sys.argv[2]
-    
+    if len(sys.argv) == 4:
+        param_json = sys.argv[3]
+        with open(param_json) as p:
+            param = json.load(p)
+    with open(input_json, "r") as f:
+        dic = json.load(f)
+    for k,v in param.items():
+        dic[k] = v # ecrassement des valeurs par defaut dans le dic 
     dic = get_context()
 
     if 'before' in dic:
