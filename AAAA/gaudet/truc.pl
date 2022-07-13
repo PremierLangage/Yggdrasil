@@ -3,7 +3,7 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-mathinput =: MathInputQuill
+mathinput =: MathInput
 mathinput.config %=
 {
     "charsThatBreakOutOfSupSub": "+-=<>",
