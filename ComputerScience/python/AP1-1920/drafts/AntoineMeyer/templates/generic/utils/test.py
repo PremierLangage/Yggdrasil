@@ -108,7 +108,7 @@ class Test:
         :return: tuple `(added, deleted, modified, inputs)`, where:
             - `added` is a dictionary mapping new identifiers to their values;
             - `deleted` is a list of deleted identifiers;
-            - `momdified` is a dictionary mapping existing identifiers to their
+            - `modified` is a dictionary mapping existing identifiers to their
             (new) values;
             - `inputs` is a list of read input lines.
         """

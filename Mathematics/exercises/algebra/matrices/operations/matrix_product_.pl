@@ -22,6 +22,6 @@ sol = A*B
 
 text==
 Soit les matrices
-$$ A = \left( {{A.latex}}\right) \text{ et } B = \left({{B.latex}}\right) $$ 
+$$ A = \left( {{A|latex}}\right) \text{ et } B = \left({{B|latex}}\right) $$ 
 Calculer $! A B !$.
 ==

@@ -19,9 +19,10 @@ extends=/ComputerScience/C/template/std_progC.pl
 author=Nicolas Borie 
 
 title=Produit scalaire de vecteurs en dimension 3
+
 tag=structure|function
 
-text==
+text==#|markdown|
 Le produit scalaire $%\langle u, v \rangle%$ de deux vecteurs $%u = (x_u, y_u, z_u)%$ et 
 $%v = (x_v, y_v, z_v)%$ est donné par la formule 
 $% \langle u, v \rangle = x_u \times x_v + y_u \times y_v + z_u \times z_v%$.

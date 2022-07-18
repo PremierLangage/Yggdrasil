@@ -1,0 +1,23 @@
+title = Mathématiques
+
+introduction ==
+Quelques exemples d'exercices de mathématiques.
+==
+
+@ /demo/math/expr/derivative.pl
+
+@ /demo/math/complex/complex_mul.pl
+
+@ /demo/math/poly/factorization.pl
+
+@ /demo/math/expr/abstract_linear_equation.pl
+
+@ /demo/math/expr/line_equation.pl
+
+@ /demo/math/expr/limit_algebraic_fraction.pl
+
+@ /demo/math/set/intersection.pl
+
+@ /demo/math/interval/input.pl
+
+@ /demo/math/tuple/linsys.pl

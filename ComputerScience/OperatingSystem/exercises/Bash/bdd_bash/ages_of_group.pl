@@ -21,6 +21,8 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Ages des personnes d'un groupe
 
+tag=bash|unix|terminal|grep|cut|sort
+
 before==#|python|
 import random
 
@@ -43,14 +45,19 @@ instructions, expected_stdout = random.choice(experiences)
 
 ==
 
-text==
+text==#|markdown|
 Rappel de la structuration du fichier **MJC.txt**:   
-<br />
+<br>
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
-<br />
+<br>
 
 **Affichez en ordre croissant l'ensemble des ages avec répétition possible 
-(un age par ligne) {{ instructions }}.** N'hésitez à faire plusieus essais.
+(un age par ligne) {{ instructions }}**.
 ==
 
+solution==
+grep MJC.txt -e ":Alice:Peltier:" | cut -d ':' -f 4 | sort -n
+grep MJC.txt -e ":D.*:R.*:" | cut -d ':' -f 4 | sort
+grep MJC.txt -e ":.*z.*:.*.z.*:" | cut -d ':' -f 4 | sort
+==
 

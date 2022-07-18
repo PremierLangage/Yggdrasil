@@ -20,6 +20,8 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+tag=logique|booléen|circuit|karnaugh|table de vérité
+
 before==#|python|
 from utils_diagram import generate_random_diagram, diagram_to_string, karnaugh_table
 from components import GraphDrawer
@@ -35,8 +37,8 @@ title=Table de vérité d'un circuit logique
 
 text==
 Remplir le tableau de Karnaugh associé au circuit logique suivant. Prenez 
-votre temps et utilisez un stylo et du papier avant de remplir votre 
-proposition.
+votre temps, utilisez un stylo et du papier avant de remplir votre 
+proposition car une seulement une tentative sera autorisée.
 ==
 
 form==
@@ -100,7 +102,7 @@ form==
 </td></tr></table>
 ==
 
-correction_feedback==
+correction_feedback==#|markdown|
 <center>
 <table><tr><td>
 <table class="karnaugh">
@@ -281,6 +283,33 @@ else:
 text = correction_feedback
 
 final_grade = max(0, int((100*(nb_goods-8))/8) )
+
+form="""
+<style>
+ .graph-viewer-component {
+ pointer-events: none;
+}
+.karnaugh{
+ border: solid black 1px;
+ padding: 3px;
+}
+.karnaugh td{
+ text-align: center;
+ font-weight: bold;
+}
+</style>
+
+<center>
+<table>
+<tr>
+  <td>
+    {{ viewer | component }}
+  </td>
+</tr>
+</table>
+"""
+
+evaluator='grade = (final_grade, "&nbsp;")'
 
 grade = (final_grade, "&nbsp;")
 ==

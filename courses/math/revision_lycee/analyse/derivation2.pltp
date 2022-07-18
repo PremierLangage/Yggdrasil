@@ -1,0 +1,15 @@
+title = Dérivation 2 (tangente)
+
+introduction ==
+Objectifs :
+
+- Déterminer graphiquement un nombre dérivé par la pente de la tangente. 
+- Construire la tangente en un point à une courbe représentative connaissant le nombre dérivé.
+- Déterminer l’équation de la tangente en un point à la courbe représentative d’une fonction.
+==
+
+@ /exercises/math/analysis/derivative/tangent/read_derivative.pl
+
+@ /exercises/math/analysis/derivative/tangent/draw_tangent.pl
+
+@ /exercises/math/analysis/derivative/tangent/eq_tangent_simple.pl

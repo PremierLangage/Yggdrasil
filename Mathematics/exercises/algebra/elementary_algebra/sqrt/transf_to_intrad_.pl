@@ -1,16 +1,10 @@
-extends = /Mathematics/template/mathexpr.pl
+extends = /model/math/input.pl
 
 title = Transformation d'écritures avec racine carrée
 
-lang = fr
-
-
 before ==
-keyboards_JSON['virtualKeyboards']="elementary"
-input1.config = keyboards_JSON
-
 from sympy.ntheory.factor_ import core
-
+from sympy import fraction
 a,b=1,1
 while a==1 or b==1:
     if param['form']=="sqrt(p)":
@@ -19,19 +13,18 @@ while a==1 or b==1:
         expr=r"\sqrt{ %d }" % (p)
     elif param['form']=="p sqrt(q) sqrt(r)":
         p=randint(5,10)
-        q,r=list_randitem_norep(2,[2,3,5,6,7,8,10,11,12,13,14,15,18,20,21,22,24,26,27,28])
+        q,r=sample([2,3,5,6,7,8,10,11,12,13,14,15,18,20,21,22,24,26,27,28], k=2)
         v=p**2*q*r
         expr=r"%d \sqrt{ %d } \sqrt{ %d }" % (p,q,r)
     elif param['form']=="p sqrt(q)/sqrt(r)":
         p=randint(2,6)
-        q,r=list_randitem_norep(2,[2,3,5,6,7,8,10,11,12])
+        q,r= sample(2,[2,3,5,6,7,8,10,11,12], k=2)
         v=p**2*Rational(q,r)
         expr=r"%d \sqrt{ %d } \sqrt{ %d }" % (p,q,r)
     v1,v2=fraction(v)
     b=core(v1)
     a=Rational(int(sqrt(v1/b)),v2)
 sol=a*sqrt(b)
-sol_tex=latex(sol)
 ==
 
 text ==
@@ -39,30 +32,27 @@ Ecrire $! {{expr}} !$ sous la forme  $% a \sqrt{b}%$, où $%a%$ est un entier et
 ==
 
 evaluator==
-def ans_eval(strans,sol):
+from latex2sympy import latex2sympy
+from evalsympy import equal
+from sympy import log, sqrt
+import sympy as sp
+def eval_ans(strans, sol):
     try:
-        ans=str2expr(strans)
+        ans = latex2sympy(strans)
     except:
-        return (-1,"FailedConversion","Votre réponse n'est pas sous la forme attendue")
-    if type(ans)!=sp.Mul:
-        return (-1,"","Votre réponse n'est pas sous la forme attendue")
-    if not (is_sqrt(ans.args[0]) and ans.args[1].is_Integer) and not (is_sqrt(ans.args[1]) and ans.args[0].is_Integer):
-        return (-1,"",str(is_sqrt(ans.args[1]))+"Votre réponse n'est pas sous la forme attendue")
-    if not is_equal(ans,sol):
-        return (0,"","")
-    return (100,"","")
+        return (-1, "NotExpr")
+    if ans.func != sp.Mul:
+        return (-1, "WrongForm")
+    if not (ans.args[0].func == sp.Pow and ans.args[1] != 1) and not (ans.args[1].func == sp.Pow and ans.args[0] !=1):
+        return (-1, "WrongForm")
+    if not equal(ans, sol):
+        return (0, "NotEqual")
+    return (100, "Success")
 
-score,_,feedback=ans_eval(input1.value,sol)
+score, error = eval_ans(answers['math'], sol)
+feedback = message[error]
 ==
 
 solution ==
-La solution est $! {{sol_tex}} !$.
+La solution est $! {{ sol|latex}} !$.
 ==
-
-
-
-
-
-
-
-

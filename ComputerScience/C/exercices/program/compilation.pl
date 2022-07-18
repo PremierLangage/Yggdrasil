@@ -19,14 +19,23 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 # FORM
-title = Étapes durant la compilation avec gcc
+title = Étapes durant la compilation d'un programme C
 author = Nicolas Borie
 
-tag=C|compilation|gcc
+tag=C|compilation|clang
 
-text== 
+text==#|markdown|
 Mettre en ordre toutes les étapes transformant des sources en langage C 
-en un éxécutable fonctionnel à l'aide du compilateur **gcc**.
+en un éxécutable fonctionnel à l'aide du compilateur (**gcc** ou **clang**).
+
+<style>
+.error-state{
+   padding: 10px;
+}
+.success-state{
+   padding: 10px;
+}
+</style>
 ==
 
 form = {{ sortlist|component }}
@@ -63,9 +72,9 @@ for i, e in enumerate(sortlist.items):
         errors += 1
 
 if errors == 0:
-    grade = (100, '<span class="success-state">Bravo, il se passe effectivement tout cela lors d\'une passe complête de <b>gcc</b></span>.')
+    grade = (100, '<span class="success-state">Bravo, il se passe effectivement tout cela lors d\'une passe compl&ecirc;te du compilateur</span>.')
 else:
-    grade = (0, '<span class="error-state">%s étapes sont mal positionées.</span>' % errors)
+    grade = (0, '<span class="error-state">%s &eacute;tapes sont mal position&eacute;es.</span>' % errors)
 ==
 
 extracss==

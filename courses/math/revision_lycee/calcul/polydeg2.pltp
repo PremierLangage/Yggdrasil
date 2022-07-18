@@ -1,0 +1,17 @@
+title = Second degré
+
+introduction ==
+Objectifs :
+
+- 
+==
+
+@ /exercises/math/algebra/polynomials/equation/soldeg2.pl
+
+@ /exercises/math/algebra/polynomials/equation/quadratic_/int.pl
+
+@ /exercises/math/algebra/polynomials/equation/quadratic_/rat.pl
+
+@ /exercises/math/algebra/polynomials/factorization/given_root_/deg2_int_int.pl
+
+@ /exercises/math/algebra/polynomials/factorization/given_root_/deg2_intrat_int.pl

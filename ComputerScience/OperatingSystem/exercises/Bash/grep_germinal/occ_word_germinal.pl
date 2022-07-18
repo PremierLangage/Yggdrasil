@@ -21,20 +21,31 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Comptage d'occurences dans Germinal
 
-before==
+tag=bash|unix|terminal|grep|regex
+
+before==#|python|
 import random
 
-things = [("mine", "73\n"), ("maison", "115\n"), ("charbon", "75\n")]
+things = [("mine", "73\n"), ("maison", "115\n"), ("charbon", "75\n"), 
+          ("voiture", "25\n"), ("père", "164\n"), ("pain", "156\n")]
 (name_thing, expected_stdout) = random.choice(things)
 ==
 
-text==
+text==#|markdown|
 Un fichier **Germinal.txt** a été placé dans le répertoire courant de travail. 
 Établissez une **commande shell** qui affiche le nombre de fois que le mot 
-**{{ name_thing }}** apparait dans le texte (au singulier ou au pluriel). Débrouillez 
-vous pour que votre résultat numérique soit affiché seul sur une ligne. N'hésitez pas à
-faire plusieurs essais.
+**{{ name_thing }}** apparait dans le texte (au singulier ou au pluriel, avec 
+une majuscule ou non). Débrouillez vous pour que votre résultat numérique soit 
+affiché seul sur une ligne.
 ==
 
-
+solution==
+# EXO super dur !!!!!
+# dépend de la question tirée
+# Dans cet exo, les solutions sont hardcodées dans le builder
+# voici une solution avec sed qui fait une ligne par mot : sale !
+cat Germinal.txt | sed -e "s/\W/\n/g" | grep -c -e "^[cC]harbon$" -e "^[cC]harbons$"
+cat Germinal.txt | sed -e "s/\W/\n/g" | grep -c -e "^[pP]ère[s]*$"
+sed -e "s/\W/\n/g" Germinal.txt | grep -c -e "^[Mm]aison[s]*$"
+==
 

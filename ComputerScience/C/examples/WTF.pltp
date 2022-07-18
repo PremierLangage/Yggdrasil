@@ -20,10 +20,21 @@ title=Le pltp WTF
 tag=humour
 
 introduction==
-Des exercices PLaTon de toute beauté !
+Ce PLTP est une présentation rapides des possibles avec des images, des pistes audios
+ou encore des vidéos incrustés dans les exercices PLaTus. Tout le savoir faire des 
+enseignants éditeurs est concentré dans ces exercices. L'enseignement avant tout, 
+ces expériences ont été réalisées par des proffesionnels. Nous vous prions ne pas 
+tenter de les reproduire chez vous.
+
+
 ==
 
+@ /ComputerScience/C/examples/code_route.pl
 @ /ComputerScience/C/examples/tortues_ninja.pl
 @ /ComputerScience/C/examples/mouse.pl
 @ /ComputerScience/C/examples/partenaire.pl
+@ /ComputerScience/C/examples/ftl.pl
 @ /ComputerScience/C/examples/barbe.pl
+@ /ComputerScience/C/examples/le_cercueil.pl
+@ /ComputerScience/C/examples/reflechir.pl
+@ /ComputerScience/C/examples/titanic.pl

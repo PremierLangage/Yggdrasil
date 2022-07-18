@@ -23,7 +23,7 @@ tag=bitwise|function|miroir|renversement|bit|octet
 
 text==
 Écrire une fonction C **bit_miror** qui prend en argument une
-variable tenant sur un octet (faire un choix raisonnable) et retourne
+variable pointant sur un octet (faire un choix raisonnable) et retourne
 une donnée de même type ayant pour valeur la même donnée binaire mais
 dont les bits apparaissent dans l'ordre inverse que ceux de l'argument.
 

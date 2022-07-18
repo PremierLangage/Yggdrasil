@@ -2,21 +2,25 @@
 # Last update : 10/01/21
 # Keywords : linear systems
 
-extends = /model/mathinput.pl
+extends = /model/math/tuple.pl
 
 title = Système linéaire
 
 before ==
-n=param['size']
+from randsympy import randint_matrix, randint_matrix_inv
+from sympy import linsolve
+from sympy2latex import latex_linsys
+n = param['size']
 coeffboundA = param['coeffboundA']
 coeffboundB = param['coeffboundB']
-sparsity= param['sparsity']
+sparsity = param['sparsity']
+
 if 'maxdet' in param:
-    A=randint_matrix_invertible(n,coeffboundA,[0],sparsity,param['mindet'],param['maxdet'])
+    A=randint_matrix_inv(n,coeffboundA,[0], sparsity, param['mindet'], param['maxdet'])
 else:
-    A=randint_matrix_invertible(n,coeffboundA,[0],sparsity)
+    A=randint_matrix_inv(n, coeffboundA,[0],sparsity)
 if param['typesol']=="rat":
-    B=rand_int_matrix(n,1,coeffboundB,[0])
+    B=randint_matrix(n,1,coeffboundB,[0])
 else:
     sol=randint_matrix(n,1,5)
     B=A*sol
@@ -30,27 +34,8 @@ lstvar=",".join(["x","y","z","t","u","v"][:n])
 tuple_name=["couple","triplet","quadruplet","quintuplet"][n-2]
 ==
 
-text ==
+question ==
 Déterminer la solution du système suivant (d'inconnues $! {{lstvar}} !$) :
 $$ {{sys_tex}} $$
 Ecrire la solution sous forme d'un {{tuple_name}} de nombres.
 ==
-
-evaluator ==
-score, error = eval_tuple(input.value, sol, checksize=True)
-feedback = message[error]
-==
-
-message.NotTuple = Votre réponse n'est pas un {{tuple_name}} de nombres.
-message.WrongSize = Votre réponse n'est pas un {{tuple_name}} de nombres.
- 
-
-solution == 
-La solution est $! {{sol_tex}} !$.
-==
-
-
-
-
-
-

@@ -1,0 +1,51 @@
+
+
+title= Feuille d'exercice sur les boucles et boucles imbriquées 
+
+introduction==
+
+Bonjour,
+
+Ceci est votre troisième feuille de TP à faire en autonomie.
+
+Tout les exercices doivent être verts une fois que vous avez fini !
+
+Certains exercices peuvent être fait plusieurs fois, si vous en avez besoin c'est une bonne idée de les faire plusieurs fois.
+
+Il sont indiqués avec le mot répétable dans le titre cela veut dire qu'une fois que vous avez fait l'exercice correctement vous pouvez demander que l'on relance les dés.
+Cela produira un "nouvel" exercice avec des conditions légèrement modifiées.
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant, mais vous pouvez aussi naviguer avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide sur le forum d'entraide et passer à l'exercice suivant. 
+
+*Rappel : Votre cours est toujours votre première source d'information ...*
+
+==
+
+@ /ComputerScience/python/AP1-2021/chapitre_3_boucles/factorielle.pl
+
+@ /ComputerScience/python/AP1-2021/chapitre_3_boucles/bouclefact.pl
+
+@ /ComputerScience/python/AP1-2021/chapitre_3_boucles/boucle2croissant.pl
+
+@ /ComputerScience/python/AP1-2021/chapitre_3_boucles/boucletriangle.pl
+
+@ /ComputerScience/python/AP1-2021/chapitre_3_boucles/CouplesXY.pl
+
+@ /ComputerScience/python/AP1-2021/chapitre_3_boucles/Pointsdudisque.pl
+
+@ /ComputerScience/python/AP1-2021/chapitre_3_boucles/TripletPythagore.pl
+
+@ /ComputerScience/python/AP1-2021/chapitre_3_boucles/Flechettes.pl
+
+# a mettre en dernier puisque difficile
+
+@ /ComputerScience/python/AP1-2021/chapitre_3_boucles/tableau_entier.pl
+
+@ /ComputerScience/python/AP1-2021/chapitre_3_boucles/table_multiplication.pl
+
+# Ce dernier exercicie est jugé trop difficile dans son énoncée dans le distanciel
+# @ /ComputerScience/python/AP1-2021/chapitre_3_boucles/arrondiReel.pl
+
+

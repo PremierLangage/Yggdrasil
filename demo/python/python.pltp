@@ -1,0 +1,13 @@
+title = Python
+
+introduction ==
+Quelques exemples d'exercices de programmation Python.
+==
+
+@ /demo/python/init_variable.pl
+
+@ /demo/python/print.pl
+
+@ /demo/python/filtre_pairs.pl
+
+@ /demo/python/boucle.pl

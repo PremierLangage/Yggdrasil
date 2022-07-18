@@ -1,0 +1,11 @@
+title = Mathématiques (graphiques)
+
+introduction ==
+Quelques exemples d'exercices mathématiques graphiques.
+==
+
+@ /demo/jxg/point/angle.pl
+
+@ /demo/jxg/line/line.pl
+
+@ /demo/jxg/vector/add_vectors.pl

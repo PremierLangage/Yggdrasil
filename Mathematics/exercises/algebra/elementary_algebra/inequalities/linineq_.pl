@@ -2,15 +2,14 @@
 # Tags: inequalities
 # 19/8/2020
 
-extends = /model/mathinput.pl
-
-title = Inéquation linéaire
+extends = /model/math/interval.pl
 
 param.otherside = constant
 
 before ==
-a,c=list_randint_norep(2,-6,6,[0,1,-1])
-b,d=list_randint(2,-6,6,[0])
+from sympy import S, solveset
+a, c = sampleint(-6, 6, 2, [0])
+b, d = sampleint(-6, 6, 2, [-1, 0, 1])
 var('x')
 f=a*x+b
 if param['otherside'] == 'zero':
@@ -19,29 +18,11 @@ if param['otherside'] == 'constant':
     g=d
 if param['otherside'] == 'linear':
     g=c*x+d
-ineq=randitem([f>=g,f>g,f<=g,f<g,g>=f,g>f,g<=f,g<f])
+ineq=choice([f>=g,f>g,f<=g,f<g,g>=f,g>f,g<=f,g<f])
 sol=solveset(ineq,x,domain=S.Reals)
 ==
 
-input.virtualKeyboards = sets
 
-text ==
-Déterminer l'ensemble des réels $% x %$ tels que $$ {{ ineq|latex }}. $$ Ecrire cet ensemble sous la forme d'un intervalle.
+question ==
+Déterminer l'ensemble des réels $! x !$ tels que $$ {{ ineq|latex }}. $$ Ecrire cet ensemble sous la forme d'un intervalle.
 ==
-
-evaluator==
-score, error = eval_rset(input.value, sol)
-feedback = message[error]
-==
-
-solution==
-Cet ensemble est $! {{sol|latex}} !$.
-==
-
-
-
-
-
-
-
-

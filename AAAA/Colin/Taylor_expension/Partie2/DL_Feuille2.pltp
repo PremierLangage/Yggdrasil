@@ -1,0 +1,18 @@
+title = DL - Formules de références - Changements de variables - Intégration/Dérivation terme à terme. 
+
+introduction ==
+Objectifs : Dans cette deuxième feuille d'exercices sur les développements limités, de nouvelles formules de références sont travaillés. 
+En particulier, celles obtenues par changements de variables et intégration terme à terme de formules déjà étudiées dans la feuille n°1, par exemple :
+$$\frac{1}{1+x^2}, \; \frac{1}{1-x^2}, \ln(1+x), \;  \ln(1-x) \; , \arctan(x) , \; \arcsin(x), \; \arccos(x).$$
+
+==
+
+@ /AAAA/Colin/Taylor_expension/Partie2/1_FormulesReferences2.pl
+
+@ /AAAA/Colin/Taylor_expension/Partie2/2_FormulesReferences3.pl
+
+@ /AAAA/Colin/Taylor_expension/Partie2/3_ChangementsVar2.pl
+
+@ /AAAA/Colin/Taylor_expension/Partie2/4_Derivation.pl
+
+

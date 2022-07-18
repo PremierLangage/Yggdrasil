@@ -80,8 +80,8 @@ title= Cher enseignant vous n'avez pas changer le "title"
 
 before == #|python|
 import random as rd
-from customradio import CustomRadio
-from customcheckbox import CustomCheckbox
+from radio import Radio
+from checkbox import Checkbox
 from customtextselect import CustomTextSelect
 from AMC import parse_AMC_TXT
 
@@ -102,7 +102,7 @@ for i in range(10):
 list_questions = parse_AMC_TXT(questions)
 
 if "onepergroup" in globals() and onepergroup :
-    list_questions=onefromeachgroup(list_questions)
+    list_questions=onefromeachgroup(list_questions,1)
 elif 'nbstep' in globals():
     list_questions = rd.sample(list_questions, nbstep)
 
@@ -114,17 +114,17 @@ rd.shuffle(list_questions)
 for i, q in enumerate(list_questions):
     q=buildquestion(q) # Gestion de l'aléa 
     if q['type'] == "Radio":
-        comp.append(CustomRadio())
+        comp.append(Radio())
         statement.append(q['text'])
-        comp[i].setitems(q['items'])
-        comp[i].setsol_from_index(q['index'])
+        comp[i].set_items(q['items'])
+        comp[i].set_sol(q['index'])
         if 'ordered' not in q['options']:
             comp[i].shuffle()
     elif q['type'] == "Checkbox":
-        comp.append(CustomCheckbox())
+        comp.append(Checkbox())
         statement.append(q['text'])
-        comp[i].setitems(q['items'])
-        comp[i].setsol_from_index(q['index'])
+        comp[i].set_items(q['items'])
+        comp[i].set_sol(q['index'])
         if 'ordered' not in q['options']:
             comp[i].shuffle()
     elif  q['type'] == 'TextSelect':
@@ -132,7 +132,6 @@ for i, q in enumerate(list_questions):
         statement.append(q['text'])
         cst.setdata_from_textDR(q['items'][0])
         comp.append(cst)
-
 ==
 
 display=

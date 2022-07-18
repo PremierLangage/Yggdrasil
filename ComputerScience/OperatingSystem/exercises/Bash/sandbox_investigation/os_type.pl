@@ -29,24 +29,26 @@ inputbox.maxlength = 2
 inputbox.appearance = outline
 
 before==#|python|
-
+nb_attempt=0
 ==
 
 title==#|markdown|
-Quel est le système d'exploitation ?
+Quelle est la distribution du système d'exploitation ?
 ==
 
 text==#|markdown|
-Essayer de determiner quel est la **distribution** du système d'exploitation utilisé 
+Essayer de determiner quelle est la **distribution** du système d'exploitation utilisé 
 dans les sandbox docker de PLaTon. Vous devriez trouver votre bonheur avec la 
-fonction **uname** par exemple.
+fonction **uname** par exemple (avec une bonne option). 
 
 <br>
 
 Pour cela, utiliser 
 <a href="https://pl.u-pem.fr/filebrowser/demo/38096/" target="blank">
 l'émulateur de terminal sur sandbox
-</a>.
+</a>. Attention, PLaTon n'est pas multi-onglet. Il faut bien fermer vos onglets sur 
+l'émulateur de terminal et actualiser l'énoncé de l'exercice avant de soumettre votre 
+réponse.
 
 ==
 
@@ -60,16 +62,26 @@ form==#|markdown|
 evaluator==#|python|
 from utils_bash import display_as_shell_this, frame_message
 
+nb_attempt += 1
+
+grade_attempt = 50 + (200 // (3+nb_attempt))
+tenta = '('+str(nb_attempt)+' tentative'
+if nb_attempt > 1:
+    tenta += 's)'
+else:
+    tenta += ')'
+feedback='<br><p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Efficacité :</u> ' + str(grade_attempt) + '%</b> '+tenta+'</p>'
+
 moyen = ['Linux', 'linux', 'GNU/Linux']
 good = ['Debian', 'debian']
 
 if inputbox.value in good:
-    grade = (100, frame_message("C'est bien cela !", "ok"))
+    grade = (grade_attempt, frame_message("C'est bien cela !", "ok")+feedback)
 else:
     if inputbox.value in moyen:
-        grade = (50, frame_message("C'est presque ça, vous avez donné le système d'exploitation mais pas la distribution.", "warning"))
+        grade = (grade_attempt // 2, frame_message("C'est presque ça, vous avez donné le système d'exploitation mais pas la distribution.", "warning")+feedback)
     else:
-        grade = (0, frame_message("Ce n'est pas la bonne réponse.", "error"))
+        grade = (0, frame_message("Ce n'est pas la bonne réponse.", "error")+feedback)
 ==
 
 

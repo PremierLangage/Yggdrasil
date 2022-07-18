@@ -1,0 +1,14 @@
+title = Fonctions trigonométriques 2
+
+introduction ==
+Objectif :
+
+- Résoudre une équation du type $! cos(x) = a !$ sur $! [-\pi,\pi] !$.
+- Résoudre une inéquation du type $! \cos(x) ⩽ a !$ sur $! [-\pi,\pi] !$.
+==
+
+@ /exercises/math/analysis/trigo/equations/simple_eq_/sol12_1period.pl
+
+@ /exercises/math/analysis/trigo/equations/simple_eq_/sol346_1period.pl
+
+@ /exercises/math/analysis/trigo/inequations/simple_ineq_/sol346_1period.pl

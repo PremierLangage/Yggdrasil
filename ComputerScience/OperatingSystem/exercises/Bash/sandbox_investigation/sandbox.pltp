@@ -26,20 +26,19 @@ sera malheureusement un terminal simulé. Ce n'est pas la réalité des entrées
 sorties propres du shell. Toutefois, ces petits exercices fonctionneront 
 aussi depuis un smartphone ou une tablette.
 
-Le but est de mettre son nez à l'intérieur du projet PLaTon. PLaTon n'est pas 
-un système d’exploitation, c'est une application web. Mais cette application 
-web résout vraiment des problèmes extrêmement fins de système, comme par exemple
-exécuter massivement du code proposé par des élèves dans un environnement 
-sécurisé (imaginez, en deux ans et sur 880 000 propositions, combien de 
-boucles infinies, dans divers langages, ont été envoyées à PLaTon ?). 
+Le but est de mettre son nez à l'intérieur du projet PLaTon/Premier Langage. 
+PLaTon n'est pas un système d’exploitation, c'est une application web. 
+Mais cette application web résout vraiment des problèmes extrêmement fins 
+de système, comme par exemple exécuter massivement du code proposé par des élèves 
+dans un environnement sécurisé (imaginez, en deux ans et sur 1 200 000 propositions, 
+combien de boucles infinies, dans divers langages, ont été envoyées à PLaTon ?). 
 
 Ménagez les fragiles sandbox de PLaTon ! Il y a une différence entre ouvrir le
 capot de la voiture et donner des coups de masse sur ce dernier. Ce TP est 
 potentiellement dangereux pour la plateforme en terme de sécurité mais on 
 vous fait confiance justement. Actuellement, 1750 utilisateurs utilisent la
 plateforme de manière régulière, ne rajoutons pas trop de travail aux 
-développeurs (qui sont des étudiants I.G.M. en L3, M1 et M2 d'informatique 
-et qui ont accès à tous les logs comme D. Revuz ou N. Borie).
+développeurs.
 
 Have Fun !
 ==
@@ -63,3 +62,4 @@ Have Fun !
 @ /ComputerScience/OperatingSystem/exercises/Bash/sandbox_investigation/user_name.pl
 
 @ /ComputerScience/OperatingSystem/exercises/Bash/sandbox_investigation/moo.pl
+

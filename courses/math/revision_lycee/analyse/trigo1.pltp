@@ -1,0 +1,20 @@
+title = Fonctions trigonométriques 1
+
+introduction ==
+Objectifs :
+
+- Lire/placer un angle sur le cercle trigonométrique.
+- Par  lecture  du  cercle  trigonométrique, déterminer,  pour  des  valeurs  remarquables dex,les cosinus et sinus d’angles associés à x.
+==
+
+@ /exercises/math/analysis/trigo/unit_circle/read_angle_/angles_124.pl
+
+@ /exercises/math/analysis/trigo/unit_circle/draw_angle_/angles_124.pl
+
+@ /exercises/math/analysis/trigo/unit_circle/read_sincos_/angles_124.pl
+
+@ /exercises/math/analysis/trigo/unit_circle/read_sincos_/angles_36.pl
+
+@ /exercises/math/analysis/trigo/unit_circle/read_angle_/angles_36.pl
+
+@ /exercises/math/analysis/trigo/unit_circle/draw_angle_/angles_36.pl

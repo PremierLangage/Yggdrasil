@@ -50,6 +50,7 @@ if __name__ == "__main__":
     
     dic = get_context()
     student = get_answers()['answer']
+    dic['student']= student
     if "taboo" in dic:
         t,mc = checktaboo(dic['taboo'], student)
         if t:
@@ -86,7 +87,6 @@ if __name__ == "__main__":
         testname = dic['testname0'] if 'testname0' in dic else "Groupe de test 0"
         a, b = tester.runpltest(testname)
     else:
-
         a,b= True, ""
     i=1
     while "pltest"+str(i) in dic and (a or stop ) :

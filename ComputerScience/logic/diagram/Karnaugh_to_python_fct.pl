@@ -2,6 +2,8 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+tag=logique|booléen|circuit|karnaugh|table de vérité|Python
+
 editor =: CodeEditor
 editor.theme = dark
 editor.language = python
@@ -35,12 +37,13 @@ v1001 = randint(0, 1)
 v1011 = randint(0, 1)
 v1010 = randint(0, 1)
 
-
+nb_attempt = 0
+best_grade = 0
 ==
 
 title=Une fonction Python pour un tableau de Karnaugh.
 
-text==
+text==#|markdown|
 <style>
 .karnaugh{
  border: solid black 1px;
@@ -110,8 +113,7 @@ form==
 {{ editor|component }}
 ==
 
-
-correction_display==
+correction_display==#|markdown|
 <style>
 .karnaugh{
  border: solid black 1px;
@@ -244,17 +246,23 @@ correction_display==
 </center>
 <br />
 <center>
-<b>Note finale {{ final_grade }} / 100</b>
-<center>
-Votre fonction respectent {{ nb_goods }} case(s) du tableau de Karnaugh.
+<b>Note pour cette tentative {{ final_grade }} / 100</b>
+</center>
+
 ==
 
 
 evaluator==#|python|
 nb_goods = 0
 # Beurk, this will load the student function...
-exec(editor.code)
+try:
+    exec(editor.code)
+    code_python = True
+except:
+    Karnaugh = lambda x,y,z,t: False
+    code_python = False
 
+nb_attempt += 1
 
 # fisrt line checks
 o0000 = int(Karnaugh(0,0,0,0))
@@ -404,18 +412,29 @@ else:
     color_back1010 = "#f8d7da"
     color1010 = "red"
 
+comemnt_code = ""
+if not code_python:
+    nb_goods = 0
+    comemnt_code = """<span style="font-size: 1em; color: darkred;"><b>Il y a une erreur dans votre fonction Python, l'interprêteur Python refuse sa définition !</b><br><br>"""
 
+note_eff = 50 + (200 // (3+nb_attempt))
+final_grade = (max(0, int((100*(nb_goods-8))/8) ) * note_eff) // 100
 
-final_grade = max(0, int((100*(nb_goods-8))/8) )
+tent_rmrq = str(nb_attempt) + " Tentative"
+if nb_attempt > 1:
+    tent_rmrq = str(nb_attempt) + " Tentatives"
 
-text=correction_display
+note_finale = final_grade
+best_grade = max([note_finale, best_grade])
+
+feedback_note = "<br><u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toutes propositions confondues)</i><br>"
+feedback_note += "Votre fonction respectent "+str(nb_goods)+" / 16 cases du tableau de Karnaugh. <br>"
+feedback_note += "Partie tests : "+str(max(0, int((100*(nb_goods-8))/8) ))+"% <br>"
+feedback_note += "Partie efficacité : "+str(note_eff)+"% ("+tent_rmrq+")<br><br>"
+
+text=comemnt_code+correction_display+feedback_note
 
 grade = (final_grade, "&nbsp;")
-
-
-
-
-
 
 ==
 

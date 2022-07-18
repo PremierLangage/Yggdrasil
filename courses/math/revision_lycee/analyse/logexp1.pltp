@@ -1,0 +1,14 @@
+title = Exponentielle et logarithme
+
+introduction ==
+- Transformer une écriture en utilisant les propritétés algébriques du logarithme et de l'exponentielle.
+- Résoudre une équation impliquant un logarithme ou une exponentielle.
+==
+
+@ /exercises/math/analysis/logexp/transformations/transf_log_/0123.pl
+
+@ /exercises/math/analysis/logexp/transformations/transf_exp_/0123.pl
+
+@ /exercises/math/analysis/logexp/equation/log.pl
+
+@ /exercises/math/analysis/logexp/equation/exp.pl

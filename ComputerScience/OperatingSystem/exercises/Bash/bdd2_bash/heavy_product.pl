@@ -48,8 +48,10 @@ Rappel de la structuration du fichier **item.txt**:
 **Établissez une commande qui affiche le poids (avec son unité) {{ instructions }} **. 
 Veuillez à faire en sorte que votre 
 commande ne produise que l'affichage demandé seul sur une 
-ligne (puis un retour à la ligne). N'hésitez à faire plusieurs essais.
+ligne (puis un retour à la ligne).
 ==
 
-
+solution==
+grep item.txt -e ";Horloge;" | grep -e ";vert;" | grep -e "gr;" | cut -d ';' -f 4 | sort -rn | head -1
+==
 

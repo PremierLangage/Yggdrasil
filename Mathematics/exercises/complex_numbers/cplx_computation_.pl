@@ -1,193 +1,123 @@
 # Author: D. Doyen
-# Tags: complex numbers
-# 19/8/2020
+# Tags: complex numbers, algebraic operations
+# Calculer avec les nombres complexes
+# Parameters:
+# - formulas: list de chaînes indiquant 
+# les types de calculs proposés
+# 19/7/2021
 
-extends = /model/math/mathcomplex.pl
+extends = /model/math/complex2.pl
 
+title = Calculer avec des nombres complexes
 
-title = Opération sur les nombres complexes
+jinja_keys = ["question", "text1", "text2", "solution", "input_prefix", "inputblock"]
 
-param.formulas % ["z1+z2","z1-z2"]
+complex_form = cartesian
 
 before ==
-z1=rand_complex_int(5)
-z2=rand_complex_int(5)
+from sympy import conjugate
+
+n = 5
+z1 = randint(-n, n, [0]) + randint(-n, n, [0])*I
+z2 = randint(-n, n, [0]) + randint(-n, n, [0])*I
 while z1==z2:
-    z2=rand_complex_int(5)
-z1b=conjugate(z1)
-z2b=conjugate(z2)
+    z2 = randint(-n, n, [0]) + randint(-n, n, [0])*I
 
-formula=randitem(param['formulas'])
+z1b = conjugate(z1)
+z2b = conjugate(z2)
 
-if formula=="z1+z2":
-    sol=z1+z2
-    expr="z_1 + z_2"
-elif formula=="z1-z2":
-    sol=z1-z2
-    expr="z_1 - z_2"
-elif formula=="z1*z2":
-    sol=z1*z2
-    expr=r"z_1 \times z_2"
-elif formula=="z^2":
-    sol=z1*z1
-    expr=r"z^2"
-elif formula=="1/z":
-    sol=1/z1
-    expr=r"\frac{1}{z}"
-elif formula=="1/(z1*z2)":
-    sol=1/(z1*z2)
-    expr=r"\frac{1}{z_1 \times z_2}"
-elif formula=="z1/z2":
-    sol=z1/z2
-    expr=r"\frac{z_1}{z_2}"
-elif formula=="(z1+z2)b":
-    sol=z1b+z2b
-    expr="\overline{z_1+ z_2}"
-elif formula=="z1b+z2b":
-    sol=z1b+z2b
-    expr="\overline{z_1}+ \overline{z_2}"
-elif formula=="z1b+z2":
+formula = choice(param['formulas'])
+
+if formula == "add":
+    sol = z1 + z2
+    expr = "z_1 + z_2"
+elif formula == "sub":
+    sol = z1 - z2
+    expr = "z_1 - z_2"
+elif formula == "mul":
+    sol = z1 * z2
+    expr = r"z_1 \times z_2"
+elif formula == "sq":
+    sol = z1 * z1
+    expr = r"z^2"
+elif formula == "inv":
+    sol = 1/z1
+    expr = r"\frac{1}{z}"
+elif formula == "invmul":
+    sol = 1/(z1*z2)
+    expr = r"\frac{1}{z_1 \times z_2}"
+elif formula == "div":
+    sol = z1/z2
+    expr = r"\frac{z_1}{z_2}"
+elif formula == "conjadd":
+    sol = z1b+z2b
+    expr = "\overline{z_1+ z_2}"
+elif formula == "addconj":
+    sol = z1b+z2b
+    expr = "\overline{z_1} + \overline{z_2}"
+elif formula == "z1b+z2":
     if randitem([1,2])==1:
-        sol=z1b+z2
-        expr="\overline{z_1} + z_2"
+        sol = z1b+z2
+        expr = "\overline{z_1} + z_2"
     else:
-        sol=z1+z2b
-        expr="z_1 + \overline{z_2}"
-elif formula=="(z1-z2)b":
-    sol=z1b-z2b
-    expr="\overline{z_1 - z_2}" 
-elif formula=="z1b-z2b":
-    sol=z1b-z2b
-    expr="\overline{z_1} - \overline{z_2}"
-elif formula=="z1b-z2":
+        sol = z1+z2b
+        expr = "z_1 + \overline{z_2}"
+elif formula == "conjsub":
+    sol = z1b-z2b
+    expr = "\overline{z_1 - z_2}" 
+elif formula == "subconj":
+    sol = z1b-z2b
+    expr = "\overline{z_1} - \overline{z_2}"
+elif formula == "submix":
     if randitem([1,2])==1:
-        sol=z1b-z2
-        expr="\overline{z_1} - z_2"
+        sol = z1b-z2
+        expr = "\overline{z_1} - z_2"
     else:
-        sol=z1-z2b
-        expr="z_1 - \overline{z_2}"   
-elif formula=="(z1*z2)b":
-    sol=z1b*z2b
-    expr=r"\overline{z_1 \times z_2}" 
-elif formula=="z1b*z2b":
-    sol=z1b*z2b
-    expr=r"\overline{z_1} \times \overline{z_2}"
-elif formula=="z1b*z2":
+        sol = z1-z2b
+        expr = "z_1 - \overline{z_2}"   
+elif formula == "conjmul":
+    sol = z1b*z2b
+    expr = r"\overline{z_1 \times z_2}" 
+elif formula == "mulconj":
+    sol = z1b*z2b
+    expr = r"\overline{z_1} \times \overline{z_2}"
+elif formula == "mulmix":
     if randitem([1,2])==1:
-        sol=z1b*z2
-        expr=r"\overline{z_1} \times z_2"
+        sol = z1b*z2
+        expr = r"\overline{z_1} \times z_2"
     else:
-        sol=z1*z2b
-        expr="z_1 \times \overline{z_2}"  
-elif formula=="(z1/z2)b":
-    sol=z1b*z2b
-    expr=r"\overline{\left(\frac{z_1}{z_2}\right)}" 
-elif formula=="z1b*z2b":
-    sol=z1b*z2b
-    expr=r"\frac{ \overline{z_1} }{ \overline{z_2} }"
-elif formula=="z1b/z2":
-    if randitem([1,2])==1:
-        sol=z1b*z2
-        expr=r"\frac{ \overline{z_1} }{ z_2 }"
+        sol = z1*z2b
+        expr = "z_1 \times \overline{z_2}"  
+elif formula == "conjdiv":
+    sol = z1b/z2b
+    expr = r"\overline{\left(\frac{z_1}{z_2}\right)}" 
+elif formula == "divconj":
+    sol = z1b/z2b
+    expr = r"\frac{ \overline{z_1} }{ \overline{z_2} }"
+elif formula == "divmix":
+    if randint(0,1) == 1:
+        sol = z1b*z2
+        expr = r"\frac{ \overline{z_1} }{ z_2 }"
     else:
-        sol=z1*z2b
-        expr="\frac{ z_1 }{ \overline{z_2} }"  
+        sol = z1*z2b
+        expr = "\frac{ z_1 }{ \overline{z_2} }" 
+# cases remaining to do :
+# sqconj, conjsq
 
 sol = sol.expand()
 
-if formula in ["z^2","1/z"]:
-    text =r"On considère le nombre complexe $! z= %s !$. Calculer $! \displaystyle %s !$ (sous forme algébrique)." % (latex(z1),expr)
+if formula in ["sq", "inv"]:
+    question = text1
 else:
-    text =r"On considère les nombres complexes $! z_1= %s !$ et $! z_2= %s !$. Calculer $! \displaystyle %s !$ (sous forme algébrique)." % (latex(z1),latex(z2),expr)
-
+    question = text2
 ==
 
-input.virtualKeyboards = complex
-
-evaluator ==
-score, error = eval_complex(input.value,sol,form="cartesian")
-feedback = message[error]
+text1 ==
+On considère le nombre complexe $! z = {{ z1|latex }} !$. 
+Calculer $! \displaystyle {{ expr }} !$ (sous forme algébrique).
 ==
 
-solution ==
-La solution est $% {{ sol|latex}} %$.
+text2 ==
+On considère les nombres complexes $! z_1= {{ z1|latex }} !$ et $! z_2= {{ z2|latex }} !$. 
+Calculer $! \displaystyle {{ expr }} !$ (sous forme algébrique).
 ==
-
-wims ==
-\if{\type=13}{
-\text{nz=1}
-\text{expr=z^2}
-\complex{rep=(\z1)^2}
-}
-
-\if{\type=14}{
-\text{nz=1}
-\text{expr=randitem(\overline{z} \times \z,z \times \overline{z})}
-\complex{rep=(\zb1) * (\z1)}
-}
-
-\if{\type=15}{
-\text{nz=1}
-\text{expr=\overline{z}^2}
-\complex{rep=(\zb1)^2}
-}
-\if{\type=16}{
-\text{nz=1}
-\text{expr=\overline{z^2}}
-\complex{rep=(\zb1)^2}
-}
-
-\if{\type=17}{
-\text{expr=\frac{z_1}{z_2}}
-\complex{rep=(\z1)/(\z2)}
-}
-\if{\type=18}{
-\if{randint(1..2)=1}{
-\text{expr=\frac{\overline{z_1}}{z_2}}
-\complex{rep=(\zb1)/(\z2)}
-}{
-\text{expr=\frac{z_1}{\overline{z_2}}}
-\complex{rep=(\z1)/(\zb2)}
-}
-}
-\if{\type=19}{
-\text{expr=\frac{\overline{z_1}}{\overline{z_2}}}
-\complex{rep=(\zb1)/(\zb2)}
-}
-\if{\type=20}{
-\text{expr=\overline{\left(\frac{z_1}{z_2}\right)}}
-\complex{rep=(\zb1)/(\zb2)}
-}
-
-\if{\type=21}{
-\text{nz=1}
-\text{expr=\frac{1}{z}}
-\complex{rep=1/(\z1)}
-}
-
-\if{\type=22}{
-\text{nz=1}
-\text{expr=\frac{1}{\overline{z}}}
-\complex{rep=1/(\zb1)}
-}
-
-\if{\type=23}{
-\text{nz=1}
-\text{expr=\overline{\left(\frac{1}{z}\right)}}
-\complex{rep=1/(\zb1)}
-==
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -21,21 +21,30 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Ponctuation finale des lignes de Germinal.
 
-before==
+tag=bash|unix|terminal|grep|regex
+
+before==#|python|
 import random
 
 things = [("le nombre de lignes se terminant par un point d'interrogation", "190\n"),
           ("le nombre de lignes se terminant par un point d'exclamation", "375\n"),
-          ("le nombre de lignes se terminant par un point", "3234\n")]
+          ("le nombre de lignes se terminant par un point", "2372\n")]
 (name_thing, expected_stdout) = random.choice(things)
 ==
 
-text==
+text==#|markdown|
 Un fichier **Germinal.txt** (contenant le texte intégral de l'oeuvre de E. Zola) a 
 été placé dans le répertoire courant de travail. Établissez une **commande shell** 
 qui affiche **{{ name_thing }}** apparaissant dans le fichier. Débrouillez 
-vous pour que votre résultat numérique soit affiché seul sur une ligne. N'hésitez pas à
-faire plusieurs essais.
+vous pour que votre résultat numérique soit affiché seul sur une ligne. Attention, 
+**!** et **?** ne sont pas des caractères spéciaux pour les expressions régulières 
+mais **.** en est un. Pour forcer un point, il faut soit le déspécialiser avec `\.`
+ou encore le placer entre crochet `[.]` quand se dernier est inclus dans une 
+expression régulière **Unix**.
 ==
 
-
+solution==
+# dépend de la question tirée ! ? .
+# Dans cet exo, les solutions sont hardcodées dans le builder
+grep Germinal.txt -e "{!?.}$" | wc -l
+==

@@ -21,7 +21,9 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Lister des mots très longs dans germinals
 
-before==
+tag=bash|unix|terminal|grep|regex|sort|uniq|sed|difficile
+
+before==#|python|
 import random
 
 things = [
@@ -37,13 +39,19 @@ things = [
 (name_thing, expected_stdout) = random.choice(things)
 ==
 
-text==
+text==#|markdown|
 Un fichier **Germinal.txt** (contenant le texte intégral de l'oeuvre de E. Zola) a 
 été placé dans le répertoire courant de travail. Établissez une **commande shell** 
-qui affiche **{{ name_thing }}** apparaissant dans le fichier. Débrouillez 
-vous pour que votre résultat numérique soit affiché seul sur une ligne. N'hésitez pas à
-faire plusieurs essais.
+qui affiche **{{ name_thing }}** apparaissant dans le fichier. Faites en sorte que 
+votre commande affiche un mot par ligne (pas d'espace en trop avant ou après, 
+chaque ligne sera ainsi composée d'un mot seul puis d'un retour à la ligne).
 ==
 
-
+solution==
+# EXO super dur !!!!!
+# dépend de la question tirée
+# Dans cet exo, les solutions sont hardcodées dans le builder
+# voici une solution avec sed qui fait une ligne par mot : sale !
+sed Germinal.txt -e "s/\W/\n/g" | grep -e "^[a-z]\{19\}$" | sort -u
+==
 

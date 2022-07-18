@@ -1,0 +1,4 @@
+C1:type;C2:Partie de $%R%$;C3:majorants;C4:minorants;C5:sup;C6:inf;C7:pge (max);C8:ppe (min)
+I2;$%[\sqrt{3},5[\cap\mathbb{Q}%$;+;+;5;$%\sqrt{3}%$;-;-
+I2;$%[1,\frac{6\pi}{5}[\cap\mathbb{Q}%$;+;+;$%\frac{6\pi}{5}%$;1;-;+
+I3;$%[\sqrt{2},8[ \setminus]\sqrt{2},5[%$;+;+;8;$%\sqrt{2};-;-

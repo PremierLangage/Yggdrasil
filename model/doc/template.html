@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Clé</th>
+      <th scope="col">Description</th>
+      <th scope="col">Type</th>
+      <th scope="col">Défaut</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for row in doc['keys'] %}
+    <tr>
+      <th scope="row"> {{ row }} </th>
+      <td> {{ doc['keys'][row]['description'] }} </td>
+      <td> {{ doc['keys'][row]['type'] }} </td>
+      <td> {{ doc['keys'][row]['default'] }} </td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>

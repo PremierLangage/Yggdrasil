@@ -2,7 +2,7 @@
 # Tags: complex numbers
 # 19/8/2020
 
-extends = /model/mathinput.pl
+extends = /model/mathquill.pl
 
 title = Module d'un nombre complexe
 
@@ -16,11 +16,6 @@ sol=abs(z)
 
 text ==
 Déterminer le module du nombre complexe $% z= {{ z|latex }} %$.
-==
-
-evaluator ==
-score, error = eval_expr(input.value,sol)
-feedback = message[error]
 ==
 
 solution==

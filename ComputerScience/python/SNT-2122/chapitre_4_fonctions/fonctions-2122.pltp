@@ -1,0 +1,28 @@
+title= Feuille d'exercices sur les fonctions
+
+introduction==
+
+Bonjour,
+ceci est votre première feuille d'exercice sur les fonctions.
+
+Tout les exercices doivent être verts une fois que vous avez fini !
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+mais vous pouvez naviger avec le menu de gauche.
+
+
+
+==
+@ affiche_bonjour.pl
+# @ retourne_bonjour.pl
+@ positif.pl
+@ carre.pl
+@ rectangle.pl
+@ Conversion.pl
+@ tri2valeurs.pl
+@ table.pl
+@ estpremier.pl
+@ tri3valeurs.pl
+@ TriangleEtoile.pl
+
+

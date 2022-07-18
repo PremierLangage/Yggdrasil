@@ -32,6 +32,9 @@ editor.code ==
 #! linter:require:title::string
 #! linter:require:before
 
+nb_attempt=0
+best_grade = 0
+
 before==
 ==
 
@@ -40,7 +43,7 @@ title=bash code template (titre à surcharger!)
 text==
 ==
 
-form==
+form==#|markdown|
 {{ editor|component }}
 
 <input id="form_user_hack" name="form_user_hack" type="hidden" value="{{ user }}">
@@ -75,12 +78,37 @@ else:
 
     form += display_as_shell_this(editor.code, spout, str(response["user_hack"]), errout, returncode)
 
+    if not nb_attempt:
+        nb_attempt = 1
+    else:
+        nb_attempt = int(nb_attempt) + 1
+
+    best_grade = int(best_grade) if best_grade else 0
+    note_eff = 50 + (200 // (3+nb_attempt))
+
+    tent_rmrq = str(nb_attempt) + " Tentative"
+    if nb_attempt > 1:
+        tent_rmrq = str(nb_attempt) + " Tentatives"
+
+    if expected_stdout == spout:
+        grade_now = 100
+    else:
+        grade_now = 0
+
+    note_finale = (note_eff * grade_now) // 100
+    best_grade = max([note_finale, best_grade])
+
+    feedback_note = "<br><u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toutes propositions confondues)</i><br>"
+    feedback_note += "Note pour cette tentative : "+str(note_finale)+"% <br>"
+    feedback_note += "Partie tests : "+str(grade_now)+"% <br>"
+    feedback_note += "Partie efficacit&eacute; : "+str(note_eff)+"% ("+tent_rmrq+")<br><br>"
+
     if expected_stdout == spout:
         feedback = "Bravo, votre code fait le travail !"
-        grade = (100, frame_message(feedback, "ok"))
+        grade = (note_finale, frame_message(feedback, "ok") + feedback_note)
     else:
         feedback = "Désolé, votre code ne produit pas le résultat attendu. Modifiez votre commande."
-        grade = (0, frame_message(feedback, "error"))
+        grade = (note_finale, frame_message(feedback, "error") + feedback_note)
 
 ==
 

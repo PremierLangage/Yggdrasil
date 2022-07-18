@@ -1,0 +1,12 @@
+title = Primitives 2
+
+introduction ==
+Objectif :
+
+* Déterminer une primitive d'une fonction de la forme $! u'v(u) !$, où $! v !$ et $! u !$ sont des fonctions de référence.
+
+Fonctions de référence pour $! v !$ : $! \sin(x) !$, $! \cos(x) !$, $! \exp(x) !$, $! x^n !$ avec $!n \in \mathbb{Z} !$, $! 1/\sqrt{x} !$.
+==
+
+@ /exercises/math/analysis/antiderivative/computation/_composition_/composition_esincos_deg1.pl
+

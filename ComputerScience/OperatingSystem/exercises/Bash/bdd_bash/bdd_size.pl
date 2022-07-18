@@ -21,12 +21,14 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Taille de la base de données
 
+tag=bash|unix|terminal|wc
+
 before==#|python|
 
 expected_stdout = "2248\n"
 ==
 
-text==
+text==#|markdown|
 Rappel de la structuration du fichier **MJC.txt**:   
 <br />
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
@@ -36,6 +38,10 @@ Rappel de la structuration du fichier **MJC.txt**:
 contexte, cela revient à produire une commande qui affiche le nombre de membres 
 enregistrés de la MJC. Veuillez à faire en sorte que votre 
 commande ne produise que l'affichage numérique seul sur une 
-ligne. N'hésitez à faire plusieurs essais.
+ligne.
 ==
 
+solution==
+# faut pas faire le wc -l directement sur le fichier, stout...
+cat MJC.txt | wc -l
+==

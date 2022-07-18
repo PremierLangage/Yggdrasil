@@ -1,7 +1,15 @@
 extends = /model/mathjsxgraph.pl
 
-script_aux ==
+ptname = M
 
+tol = 0.05
+
+
+script_init ==
+board.create('line', [[0,0],[1,2]]);
+==
+
+script_aux ==
 function getMouseCoords(e) {
     let cPos = board.getCoordsTopLeftCorner(e);
     let absPos = JXG.getPosition(e);
@@ -16,17 +24,22 @@ function down(e) {
 }
 
 board.on('down', down)
-
 ==
 
 script_solution ==
 board.create('point',[{{xsol}}, {{ysol}}],{size:2,name:'',color:'green'});
 ==
 
+inputblock ==
+<div class="img img-60">
+{{ jxg|component }}
+</div>
+==
+
 evaluator ==
-x, y = jxg.getpoint('M')
+x, y = jxg.getpoint(ptname)
 from math import hypot
-if hypot(x-xsol, y-ysol) < 0.1:
+if hypot(x-xsol, y-ysol) < tol:
     score = 100
     jxg.addscript(script_solution, globals())
 else:

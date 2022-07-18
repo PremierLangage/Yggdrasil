@@ -20,16 +20,22 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+tag=logique|booléen|circuit|simple
+
 group =: RadioGroup
+
+size_diagram=3
+complexity_diagram=4
 
 before==#|python|
 from utils_diagram import generate_random_diagram, diagram_to_string, eval_diagram, diagram_to_string_color
 from components import GraphDrawer
 from random import randint
 
-size_diagram = 3
+size_diagram=int(size_diagram)
+complexity_diagram=int(complexity_diagram)
 
-diagram = generate_random_diagram(size_diagram, 4)
+diagram = generate_random_diagram(size_diagram, complexity_diagram)
 
 viewer = GraphDrawer(graph = diagram_to_string(diagram))
 
@@ -56,7 +62,7 @@ group.items.append({
 
 title=Évaluation d'un petit circuit logique
 
-text==
+text==#|markdown|
 <style>
  .graph-viewer-component {
  pointer-events: none;
@@ -70,9 +76,11 @@ text==
  font-weight: bold;
 }
 </style>
+==
 
-Évaluer l'unique sortie **f** de ce circuit logique dont voici les valeurs des 
-variables en entrées.   
+form==#|markdown|
+Évaluer l'unique sortie <b>f</b> de ce circuit logique dont voici les valeurs des 
+variables en entrées.<br>
 {% for k,v in eval_point.items() %} <b>{{k}}</b> : <b>{{v}}</b>, {% endfor %}
 <center>
 <table>
@@ -91,11 +99,23 @@ variables en entrées.
 </center>
 ==
 
-form==
-
-==
-
 evaluator==#|python|
+
+form="""
+Évaluer l'unique sortie <b>f</b> de ce circuit logique dont voici les valeurs des 
+variables en entrées.<br>
+{% for k,v in eval_point.items() %} <b>{{k}}</b> : <b>{{v}}</b>, {% endfor %}
+<center>
+<table>
+<tr>
+<td>
+{{ viewer | component }}
+</td>
+</tr>
+</table>
+</center>
+"""
+
 S = group.selection
 score=50
 
@@ -107,16 +127,15 @@ for item in group.items:
         if item['content'] == str(final_value):
             item['css'] = 'success-border'
             score = 100
-            feedback = '<span class="success-state animated pulse infinite">Bonne réponse</span>'
+            feedback = '<span class="success-state animated pulse infinite" style="padding: 1em;">Bonne r&eacute;ponse</span>'
         else:
             item['css'] = 'error-border'
-            feedback = '<span class="error-state animated pulse infinite">Mauvaise réponse</span>'
+            feedback = '<span class="error-state animated pulse infinite" style="padding: 1em;">Mauvaise r&eacute;ponse</span>'
     elif item['content'] == str(final_value):
         item['css'] = 'success-border animated pulse infinite'
 
-feedback = '<center>' + feedback + '</center>'
+feedback = '<center>' + feedback + '</center><br>'
 
 grade = (score, feedback)
 ==
-
 

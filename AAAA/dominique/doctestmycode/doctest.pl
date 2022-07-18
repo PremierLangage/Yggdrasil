@@ -4,8 +4,9 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/none.py
 
 editor =: CodeEditor
-editor.theme = dark
+editor.theme = light
 editor.language = python
+editor.height = 400px
 editor.code ==
 """# n'oublier pas une chaine multiligne est inspectée par doctest pour y trouver des tests   
 >>> import math # Ici le test c'est pour savoir si il y a l'import math sur PlaTon :)   

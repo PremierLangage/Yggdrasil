@@ -1,21 +1,21 @@
-extends = /model/mathinput.pl
+extends = /model/math/input_eval.pl
 
 before ==
-keyboards_JSON['virtualKeyboards']="sets"
-input.config = keyboards_JSON
-
+from randsympy import randmat_fullrank
+from sympy import zeros
+from sympy2latex import latex_linsys
 n = param['n']
 nbeq = param['nbeq']
 m = n-nbeq
 
 lstvar = ",".join(["x","y","z","t","u","v"][:n])
 
-A=rand_int_matrix_fullrank(nbeq, n, 3, excluded_values=[0])
-B=zeros(nbeq, 1)
-sys_tex = latexsys(A, B)
+A=randmat_fullrank(nbeq, n, 3, excval=[0])
+B= zeros(nbeq, 1)
+sys_tex = latex_linsys(A, B)
 ==
 
-text ==
+question ==
 On considère le sous-espace de $! \mathbb{R}^{{n}} !$ formé des vecteurs $! ({{lstvar}}) !$ tels que
 $$ {{sys_tex}} .$$
 Déterminer une base de ce sous-espace (écrire cette base comme un ensemble, entre accolades).

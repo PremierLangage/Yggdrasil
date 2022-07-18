@@ -1,0 +1,100 @@
+
+
+
+title= Nommage Variables, Input, Affectation Conditionnelles 
+
+introduction==
+
+Bonjour,
+ceci est votre première feuille de TP PLaTon à faire en autonomie.
+
+Tous les exercices doivent être verts une fois que vous avez fini !
+
+Certains exercices peuvent être fait plusieurs fois, si vous en avez besoin c'est une bonne idée de les faire plusieurs fois.
+
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+ mais vous pouvez naviguer avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide sur le forum d'entraide et passer à l'exercice suivant. 
+
+    Votre cours est votre première source d'information ....
+
+l'équipe.
+
+
+
+==
+
+#### Manipulation des variables ####
+
+@/ComputerScience/python/AP1-2021/chapitre1/variable001-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/variable002-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/variable003-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/initialisation-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/echange_deux_variables-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/expressionaleatoires-2021.pl
+
+#### Compréhension des expressions ####
+
+@/ComputerScience/python/AP1-2021/chapitre1/priority-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/operateursbooleens-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/occure-int-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/bascule-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/deux-divisions-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/intstr-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/occure-2021.pl
+
+#### Applications simple ###
+
+@/ComputerScience/python/AP1-2021/chapitre1/rectanglefixe-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/rectangle-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/rectanglediagonale-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/convertirMPG_2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/plusmoins-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/aleaagecap-2021.pl
+
+#### Lourd ###
+
+@/ComputerScience/python/AP1-2021/chapitre1/trinome-2021.pl
+
+@/ComputerScience/python/AP1-2021/chapitre1/tri_trois_valeurs-2021.pl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

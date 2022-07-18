@@ -47,7 +47,12 @@ Rappel de la structuration du fichier **item.txt**:
 **Établissez une commande qui affiche le nombre de type produits ayant la couleur {{ instructions }}**. 
 Veuillez à faire en sorte que votre 
 commande ne produise que l'affichage numérique seul sur une 
-ligne (puis un retour à la ligne). N'hésitez à faire plusieurs essais.
+ligne (puis un retour à la ligne).
 ==
 
 
+solution==
+cut item.txt -d ';' -f 2,3 | grep -e "jaune" | cut -d ';' -f 1 | sort -u | wc -l
+# autre version
+grep item.txt -e ";vert;" | cut -d ";" -f 2 | sort -u | wc -l
+==

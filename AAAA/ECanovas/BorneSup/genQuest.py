@@ -30,27 +30,51 @@ def initDonnees():
         listeBornesup=list(csv.DictReader(csvfile, delimiter=';'))
     return random.choice(listeBornesup)
 
+def Convert(string): 
+    li = list(string.split(",")) 
+    return li 
+
+def functest2(a,b):
+  return a==b
+
+def functest3(a,b="oui"):
+  if (a.lower()==b or a[0].lower()==b[0]):
+    return T
+  return F
+
+testReponse=functest2
+
 def question(numero,uneLigne):
-
+  bReponse=uneLigne['C5:sup']
   if numero == 1:
-    intiQuestion="Quel est le sup de l'ensemble {{uneLigne['C1:type']}} {{uneLigne['C2:Partie de $%R%$']}} "
-    indication="(On écrira +oo si l'ensemble n'est pas majoré et -oo si l'ensemble est vide)"
-    bReponse=uneLigne['C5:sup']
-    if uneLigne['C5:sup'] ==' +':
-     bReponse="+\infty "
-    else:
-     bReponse="-\infty "
+    intiQuestion="Quelle est la borne supérieure de l'ensemble {{uneLigne['C2:Partie de $%R%$']}} "
+    indication=" "
+    if uneLigne['C5:sup'].strip() =='+':
+     bReponse="+\infty"
+    if uneLigne['C5:sup'].strip() =='-':
+     bReponse="-\infty"
   if numero == 2:
-    intiQuestion="Donner un majorant de l'ensemble {{uneLigne['C1:type']}} {{uneLigne['C2:Partie de $%R%$']}}"
-    indication="(On écrira +oo si l'ensemble n'est pas majoré et - oo si l'ensemble est vide)"
-    bReponse=uneLigne['C5:sup']
+    intiQuestion="Donner un majorant de l'ensemble {{uneLigne['C2:Partie de $%R%$']}}"
+    indication=" "
+    if uneLigne['C5:sup'].strip() =='+':
+     bReponse="+\infty"
+    if uneLigne['C5:sup'].strip() =='-':
+     bReponse="-\infty"
+    testReponse=functest2
   if numero == 3:
-    intiQuestion="L'ensemble {{uneLigne['C1:type']}} {{uneLigne['C2:Partie de $%R%$']}} a-t-il un plus grand élément ?"
-    indication="(On écrira le texte oui ou le texte non)"
-    if uneLigne['C5:sup'] ==' +':
-     bReponse="oui"
+    intiQuestion="L'ensemble {{uneLigne['C2:Partie de $%R%$']}} a-t-il un plus grand élément"
+    indication=""
+    if uneLigne['C7:pge'].strip() =='-':
+     bReponse="F"
     else:
-     bReponse="non"
+     bReponse="T"
+    testReponse=functest3
+  if numero == 4:
+    intiQuestion="Cochez les nombres réels qui sont des majorants de l'ensemble {{uneLigne['C2:Partie de $%R%$']}}"
+    indication=""
+    bReponse={'bonnes':uneLigne['C9:des_majorants'],'autres':uneLigne['C10:des non-majorants']}
 
+    testReponse=functest2
+  
   return intiQuestion,indication,bReponse
 

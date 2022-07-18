@@ -1,0 +1,18 @@
+title = Nombres complexes 1 (point de vue algébrique)
+
+
+introduction ==
+Objectif : Effectuer des calculs de base (addition, multiplication, division) avec des nombres complexes sous forme algébrique.
+==
+
+
+
+#@ /Mathematics/exercises/complex_numbers/cplx_computation_add_sub.pl
+
+#@ /Mathematics/exercises/complex_numbers/cplx_computation_addconj_subconj.pl
+
+@ /exercises/math/complex_numbers/computation/add.pl
+
+@ /exercises/math/complex_numbers/computation/mul.pl
+
+@ /exercises/math/complex_numbers/computation/div.pl

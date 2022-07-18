@@ -133,6 +133,6 @@ score = max([0, 100 - ((total-right)*50) ])
 if score == 100:
     grade = (score, frame_message("Quel talent!", "ok"))
 else:
-    feedb = "Quelques erreurs ici et là... <br>Il fallait selectionner "+" ".join(solution)+"."
+    feedb = "Quelques erreurs ici et l&agrave;... <br>Il fallait selectionner "+" ".join(solution)+"."
     grade = (score, frame_message(feedb, "error"))
 ==

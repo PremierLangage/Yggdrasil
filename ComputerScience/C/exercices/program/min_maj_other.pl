@@ -21,9 +21,9 @@ author=Nicolas Borie
 title=Compter trois types de lettres
 tag=programme|argument|terminal|affichage|type|char|chaîne
 
-text==
+text==#|markdown|
 Écrire un programme C qui lit son premier argument et compte les
-caractères de différents types dans le premier argument donné au
+caractères de différents types dans le **premier argument** donné au
 programme. Il y aura trois types de caractères à compter : les lettres
 minuscules, les lettres majuscules et le reste du monde. Une fois le
 comptage terminé, votre programme devra faire un résumé de ce qu'il a
@@ -84,8 +84,15 @@ checks_args_stdin==#|python|
   ["Un de chaque", ["a A"], ""],
   ["Chaîne vide", [""], ""],
   ["Exemple complet", ["Voici un EXEMPLE un peu PLUS long..."], ""],
-  ["Test alátoire 1", ["".join([choice("abcdeABCDE ,.?!@$&*(){}") for i in range(randint(20, 40))])], ""],
-  ["Test alátoire 2", ["".join([choice("abcdeABCDE ,.?!@$&*(){}") for i in range(randint(20, 40))])], ""],
-  ["Test alátoire 3", ["".join([choice("abcdeABCDE ,.?!@$&*(){}") for i in range(randint(20, 40))])], ""], ]
+  ["Test alátoire 1", ["".join([choice("abcdeABCDE ?!$*") for i in range(randint(20, 40))])], ""],
+  ["Test alátoire 2", ["".join([choice("abcdeABCDE ?!$*") for i in range(randint(20, 40))])], ""],
+  ["Test alátoire 3", ["".join([choice("abcdeABCDE ?!$*") for i in range(randint(20, 40))])], ""], ]
 ==
 
+astuces==#|python|
+[
+  { "content": """Lisez bien l'énoncé, une bonne boucle `for` sur les éléments du tableau `argv[1]` doit suffire."""},
+  { "content": """Les lettres (minuscules et majuscules) sont rangées dans l'ordre croissant dans le code ASCII. Ainsi, une lettre `char c;` est minuscule si `c >= 'a'` et si `c <= 'z'`."""},
+  { "content": """Attention à bien respecter les affichages finaux : `printf("Description de la quantité : %d\\n", var);` est un bon type de commande ne générant pas d'espace superflu."""}
+]
+==

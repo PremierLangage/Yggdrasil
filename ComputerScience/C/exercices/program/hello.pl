@@ -45,8 +45,6 @@ du programme lors de l'exécution. Un programme C opère exactement
 tout se qui se trouve dans sa fonction **main**, ni plus, ni moins. 
 Ici, il vous faut juste faire de l'affichage. Un bon appel à la
 fonction **printf** doit suffire.
-
-<br />
 ==
 
 editor.code==#|c|
@@ -78,5 +76,11 @@ checks_args_stdin==#|python|
   ["Autre éxécution", ["avec", "des", "arguments", "inutiles"],""] ]
 ==
 
-
+astuces==#|python|
+[
+  { "content": """Il suffit, dans cet exercice, d'utiliser une seule fois la fonction `printf` avec un seul argument : une chaîne de caractère statique bien préparé."""},
+  { "content": """S'il vous semble que votre fonction fait ce qui est attendu mais que la plateforme vous compte une erreur, c'est que vous ne gérez pas correctement le retour à la ligne final. Et attention, ne rajoutez pas d'expace surperflu avant ce retour à la ligne."""},
+  { "content": """`printf("Hello World!\n");` est l'unique instruction à insérer dans votre fonction `main`. N'oubliez pas non plus de retourner un entier : ici `0` car cette fonction se comporte normalement en opérant son affichage."""}
+]
+==
 

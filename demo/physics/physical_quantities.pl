@@ -1,14 +1,8 @@
-extends = /model/mathinput.pl
+extends = /model/math/input.pl
 
 title = Quantités physiques
 
-input.virtualKeyboards = elementary
-
 settings.feedback = raw
-
-before ==
-
-==
 
 text ==
 Ecrire une quantité physique.
@@ -22,12 +16,15 @@ kelvin, mole, candela, newton, joule, watt, pascal, hertz, coulomb, volt, ohm
 
 from sympy.physics.units import Quantity
 from sympy.physics.units.systems.si import dimsys_SI, SI
+from latex2sympy import latex2sympy
+from evalsympy import arg_flat_mul
+import sympy as sp
 
 def get_numeric_unit(expr):
     """
     Return the numerical part and the unit of a physical quantity.
     """
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     args_numeric = []
     args_quantity = []
     for a in args:
@@ -45,7 +42,7 @@ def get_numeric_unit(expr):
 unit_dict = {'m': meter, 'g': gram, 'kg': kilogram, 's': second, 'A': ampere, 'K': kelvin, 'mol': mole, 'cd': candela, 'N': newton, 'J': joule, 'W': watt, 'Pa': pascal, 'Hz': hertz, 'C': coulomb, 'V': volt, 'Omega': ohm}
 
 score = 100
-ans = latex2sympy(input.value, local_dict=unit_dict)
+ans = latex2sympy(answers['math'], local_dict=unit_dict)
 num, unit = get_numeric_unit(ans)
 dim = dimsys_SI.get_dimensional_dependencies(SI.get_dimensional_expr(unit))
 feedback = f"""

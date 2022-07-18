@@ -1,0 +1,25 @@
+
+
+
+#author=Marc zipstein
+title=La représentation fils gauche frère droit en C
+
+introduction==
+
+Des exercices sur les fils gauche frère droit.
+==
+
+
+@ /ComputerScience/Algo/Tree/filsgauche_freredroit/appartient.pl
+
+
+@ /ComputerScience/Algo/Tree/filsgauche_freredroit/nbmots.pl
+
+@ /ComputerScience/Algo/Tree/filsgauche_freredroit/pluslong.pl
+
+@ /ComputerScience/Algo/Tree/filsgauche_freredroit/ajoute.pl
+
+
+
+
+

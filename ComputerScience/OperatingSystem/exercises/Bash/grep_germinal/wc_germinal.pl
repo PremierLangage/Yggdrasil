@@ -21,17 +21,23 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Comptage textuel dans Germinal
 
-before==
+tag=bash|unix|terminal|wc
+
+before==#|python|
 import random
 
-things = [("lignes", "6518\n"), ("mots", "165960\n"), ("caractères", "1030016\n")]
+things = [("de lignes", "6518\n"), ("de mots", "165960\n"), ("d'octets", "1030016\n")]
 (name_thing, expected_stdout) = random.choice(things)
 ==
 
-text==
+text==#|markdown|
 Un fichier **Germinal.txt** a été placé dans le répertoire courant de travail. 
-Établissez une **commande shell** qui affiche le nombre de **{{ name_thing }}**. Débrouillez 
-vous pour votre résultat numérique soit affiché seul sur une ligne. N'hésitez pas à
-faire plusieurs essais.
+Établissez une **commande shell** qui affiche le nombre **{{ name_thing }}**. Débrouillez 
+vous pour que votre résultat numérique soit affiché seul sur une ligne. Le nom du fichier ne 
+doit pas être répété, il faudra juste produire l'affichage de la grandeur numérique.
 ==
 
+solution==
+# depend de la question tirée lwc : ligne, mot ou caractère
+cat Germinal.txt | wc -{lwc}
+==

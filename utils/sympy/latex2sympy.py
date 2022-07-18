@@ -1,12 +1,13 @@
 import sympy as sp
 import sympy.parsing.sympy_parser as prs
 import re
+import sys
 
 
 def str2sympy(s, local_dict={}, evaluate=False):
     """
-    Convert a string into an expression or a nested structure of
-    lists and tuples of expressions.
+    Convert a string into a SymPy expression (or a structure of
+    lists and tuples of SymPy expressions).
 
     >>> str2sympy("x+3+2x")
     x + 2*x + 3
@@ -20,26 +21,29 @@ def str2sympy(s, local_dict={}, evaluate=False):
     >>> str2sympy("3!")
     factorial(3)
     
-    >>> str2sympy("1+i",{'i':sp.I})
+    >>> str2sympy("1+i", {'i': sp.I})
     1 + I
     
     >>> str2sympy("{0, pi, 2 pi}")
     [0, pi, 2*pi]
     """
-    s.strip()
-    
-    if s == "":
+    if s.strip() == "":
         return None
 
     s = s.replace("{", "[")
     s = s.replace("}", "]")
     
-    global_dict = {}
-    exec('from sympy import *', global_dict, global_dict)
-    global_dict.update(local_dict)
-    transformations=prs.standard_transformations + (prs.implicit_multiplication_application,prs.convert_xor)
-    #transformations = (prs.standard_transformations + (prs.implicit_multiplication_application,))
-    return prs.parse_expr(s,global_dict=global_dict,transformations=transformations,evaluate=evaluate)
+    # Hack
+    def sqrt2(x):
+        return sp.sqrt(x, evaluate=False)
+    def log2(x):
+        return sp.log(x, evaluate=False)
+    def exp2(x):
+        return sp.exp(x, evaluate=False)
+    local_dict.update({'sqrt' : sqrt2, 'log' : log2, 'ln' : log2, 'exp' : exp2})
+
+    transformations=prs.standard_transformations + (prs.implicit_multiplication_application, prs.convert_xor)
+    return prs.parse_expr(s, local_dict=local_dict, transformations=transformations, evaluate=evaluate)
 
 def latex2str(s):
     r"""
@@ -62,11 +66,6 @@ def latex2str(s):
     lst=[r"\mleft", r"\mright", r"\left", r"\right"]
     for s1 in lst:
         s = s.replace(s1, "")
-    
-    # replace \frac{}{}
-    #pattern = re.compile(r'^(.*)\\frac\s*{((?:(?!frac).)*)}{((?:(?!frac).)*)}(.*)$')
-    #while pattern.search(s) is not None:
-    #    s = pattern.sub(r"\1(\2)/(\3)\4", s)
 
     # replace some substrings
     lst=[(r"\frac",""),
@@ -90,10 +89,11 @@ def latex2str(s):
          (r"\arcsin", "asin"),
          (r"\arctan", "atan"),
          (r"\emptyset","{}"),
+         (r"\varnothing","{}"),
          ("\\", " ")]
          
-    for (s1,s2) in lst:
-        s = s.replace(s1,s2)
+    for (s1, s2) in lst:
+        s = s.replace(s1, s2)
         
     return s
 
@@ -104,7 +104,7 @@ def latex2sympy(s, local_dict={}):
     """
     return str2sympy(latex2str(s), local_dict)
     
-def str2interval(s, notation="bracket", local_dict={}):
+def str2interval(s, separator = ",", notation="bracket", local_dict={}):
     """
     Convert a string into an interval.
     
@@ -117,28 +117,35 @@ def str2interval(s, notation="bracket", local_dict={}):
     >>> str2interval("[1,oo[")
     Interval(1, oo)
     """
-    # TODO : english notation
+    # TODO : french/english notation
     # TODO : raise error when closed infinity endpoint
-    # TODO : , or ; as separator ?
     s = s.strip()
-    
+    lc = r"\["
+    lo = r"\("
+    rc = r"\]"
+    ro = r"\)"
+    plcrc = "^" + lc + "(.*)" + separator + "(.*)" + rc + "$"
+    plcro = "^" + lc + "(.*)" + separator + "(.*)" + ro + "$"
+    plorc = "^" + lo + "(.*)" + separator + "(.*)" + rc + "$"
+    ploro = "^" + lo + "(.*)" + separator + "(.*)" + ro + "$"
+
     pattern = re.compile(r'^{(.*)}$')
     if pattern.search(s) is not None:
         return sp.FiniteSet(str2sympy(pattern.search(s).group(1)))
-    pattern = re.compile(r'^\[(.*),(.*)\]$')
     
+    pattern = re.compile(plcrc)
     if pattern.search(s) is not None:
         return sp.Interval(str2sympy(pattern.search(s).group(1)),str2sympy(pattern.search(s).group(2)))
         
-    pattern = re.compile(r'^\[(.*),(.*)\[$')
+    pattern = re.compile(plcro)
     if pattern.search(s) is not None:
         return sp.Interval.Ropen(str2sympy(pattern.search(s).group(1)),str2sympy(pattern.search(s).group(2)))
         
-    pattern = re.compile(r'^\](.*),(.*)\]$')
+    pattern = re.compile(plorc)
     if pattern.search(s) is not None:
         return sp.Interval.Lopen(str2sympy(pattern.search(s).group(1)),str2sympy(pattern.search(s).group(2)))
         
-    pattern = re.compile(r'^\](.*),(.*)\[$')
+    pattern = re.compile(ploro)
     if pattern.search(s) is not None:
         return sp.Interval.open(str2sympy(pattern.search(s).group(1)),str2sympy(pattern.search(s).group(2)))
         
@@ -221,7 +228,7 @@ def FiniteSet2struct(S):
         return []
     elif isinstance(S, (sp.Set, set)):
         return [FiniteSet2struct(x) for x in S]
-    elif isinstance(S, tuple):
+    elif isinstance(S, (sp.Tuple, tuple)):
         return tuple([FiniteSet2struct(x) for x in S])
     else:
         return S

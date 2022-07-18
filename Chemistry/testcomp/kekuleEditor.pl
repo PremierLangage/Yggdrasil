@@ -18,7 +18,7 @@ form ==
 <script src="https://unpkg.com/kekule/dist/kekule.js?modules=chemWidget,algorithm"></script>
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/kekule/dist/themes/default/kekule.css" />
 
-<div id="composer" style="width:500px;height:500px" data-widget="Kekule.Editor.Composer" data-chem-obj="url(#molecule)"></div>
+<div id="composer" style="width:500px;height:200px" data-widget="Kekule.Editor.Composer" data-chem-obj="url(#molecule)"></div>
 <br>
 <input value="Get Smiles" onclick="getSmile()" type="button">
 <h2> SMILES </h2>
@@ -28,6 +28,7 @@ form ==
 ==
 extrajs==
 <script>
+
 var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
 composer.setCommonToolButtons(['undo', 'redo','zoomIn', 'zoomOut']);
 composer.setChemToolButtons(['manipulate', 'erase', 'bond', 'atomAndFormula', 'ring', 'charge']);

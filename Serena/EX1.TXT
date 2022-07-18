@@ -1,0 +1,7 @@
+règle : Proposizioni semplici *di*, *a*, *da*.
+
+description : *di* è la preposizione semplice. 
+
+mauvais : La casa a Marco è gialla.
+bon : La casa di Marco è gialla.
+explication : La proposizione semplice "di" permette di determinare la proprietà di un bene.

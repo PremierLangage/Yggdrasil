@@ -1,0 +1,25 @@
+title = Exercices de base
+
+introduction ==
+Quelques exemples d'exercices.
+==
+
+@ /demo/basic/radio/geographie_aleatoire.pl
+
+@ /demo/basic/radio/drapeau.pl
+
+@ /demo/basic/checkbox_rw/capitales.pl
+
+@ /demo/basic/numinput/addition_aleatoire.pl
+
+@ /demo/basic/textinput/capitale.pl
+
+@ /demo/basic/autoinput/geographie_fixe.pl
+
+@ /demo/basic/textinput/listening.pl
+
+@ /demo/basic/sortlist/premiers_ministres.pl
+
+@ /demo/basic/filltext/homophones.pl
+
+@ /demo/basic/dropgroup/skull_bones.pl

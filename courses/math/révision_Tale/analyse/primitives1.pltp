@@ -1,0 +1,17 @@
+title = Primitives 1
+
+introduction ==
+Objectif :
+
+* Déterminer une primitive d'une combinaison linéaire de fonctions de référence.
+
+Fonctions de référence : $! \sin(x) !$, $! \cos(x) !$, $! \exp(x) !$, $! x^n !$ avec $!n \in \mathbb{Z} !$, $! 1/\sqrt{x} !$.
+==
+
+@ /exercises/math/analysis/antiderivative/computation/_sum_ref_/sum_esincos.pl
+
+@ /exercises/math/analysis/antiderivative/computation/_sum_ref_/sum_monomials.pl
+
+@ /exercises/math/analysis/antiderivative/computation/_sum_ref_/sum_inv.pl
+
+@ /exercises/math/analysis/antiderivative/computation/_sum_ref_/sum_invsqrt.pl

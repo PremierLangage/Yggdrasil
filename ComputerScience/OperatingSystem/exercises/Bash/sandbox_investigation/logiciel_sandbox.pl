@@ -33,8 +33,8 @@ group.items.append({"id": "y1", "content": "la suite de compilation **gcc**"})
 group.items.append({"id": "y2", "content": "le compilateur Haskell **ghc**"})
 group.items.append({"id": "y3", "content": "un interprèteur **python3**"})
 group.items.append({"id": "y4", "content": "l'utilitaire Unix **make**"})
+group.items.append({"id": "y5", "content": "le compilateur C **clang**"})
 
-group.items.append({"id": "n1", "content": "le compilateur C **clang**"})
 group.items.append({"id": "n2", "content": "le manuel Unix **man**"})
 group.items.append({"id": "n3", "content": "l'utilitaire Unix **less**"})
 group.items.append({"id": "n4", "content": "la librairie graphiqe **libMLV**"})
@@ -58,7 +58,9 @@ les sandbox ?
 Pour cela, utiliser 
 <a href="https://pl.u-pem.fr/filebrowser/demo/38096/" target="blank">
 l'émulateur de terminal sur sandbox
-</a>.
+</a>. Attention, PLaTon n'est pas multi-onglet. Il faut bien fermer vos onglets sur 
+l'émulateur de terminal et actualiser l'énoncé de l'exercice avant de soumettre votre 
+réponse.
 
 ==
 
@@ -89,7 +91,7 @@ for item in group.items:
             item['css'] = 'success-border animated pulse infinite'
 
 if total == right:
-    grade = (100, frame_message("C'est exactement ça !", "ok"))
+    grade = (100, frame_message("C'est exactement &ccedil;a !", "ok"))
 else:
     feedb = "Vous avez fait "+str(total-right)
     if total-right > 1 :

@@ -21,6 +21,8 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Liste de toutes les activités pratiquées
 
+tag=bash|unix|terminal|cut|sed|grep|sort
+
 before==#|python|
 
 expected_stdout = "Anglais\nArt plastique\nChorale\nCinema\nCirque\nCouture\nCuisine\nDanse\nHistoire\nPate a sel\nPiano\nPoterie\nSophrologie\nSport\nTheatre\nYoga\n"
@@ -33,8 +35,10 @@ Rappel de la structuration du fichier **MJC.txt**:
 <br />
 
 **Listez l'ensemble de toutes les activités pratiquées à la MJC peu importe 
-le jour. Ordonner ces activités alphabétiquement, une par ligne.** N'hésitez 
-à faire plusieurs essais.
+le jour. Ordonner ces activités alphabétiquement, une par ligne.**
 ==
 
+solution==
+cut MJC.txt -d ':' -f 5 | sed -e "s/,/\n/g" | grep -v -e "^$" | sort -u
+==
 

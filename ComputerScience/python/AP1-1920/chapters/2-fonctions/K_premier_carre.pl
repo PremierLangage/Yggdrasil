@@ -4,7 +4,7 @@
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-title = Afficher les k premiers carrés $%\big (%$de $%0%$ à $%(k-1)^2 \big )%$
+title = Afficher les k premiers carrés $% (%$de $%0%$ à $%(k-1)^2 \big )%$
 
 code==
 
@@ -40,33 +40,26 @@ def premiers_carres(k) :
     for i in range(k) :
         print (carre(i))
 
+
 n = int(input("Saisissez un entier : "))
 premiers_carres(n)
 ==
-before==
-def carre(n):
-    return(n*n)
-
-def premiers_carres(k) :
-    for i in range(k) :
-        print(carre(i))
-
-==
+before=
 mplsoluce0==
 paire
 2
 ==
-mplsoluce1==
+mplsoluce4==
 impaire 
-3
+7
 ==
 
-mplsoluce2==
+mplsoluce7==
 Grand 
 10
 ==
 
-mplsoluce3==
+mplsoluce1==
 nul
 0
 ==

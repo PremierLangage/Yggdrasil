@@ -1,4 +1,4 @@
-extends = /model/mathinput.pl
+extends = /model/mathquill.pl
 
 title = Simplification d'un produit
 
@@ -20,7 +20,7 @@ Calculer l'expression $% \displaystyle {{expr}} %$ en l'écrivant sous la forme 
 ==
 
 evaluator ==
-score, error = eval_frac(input.value, sol, simpwarning=False)
+score, error = eval_frac(answers['math'], sol, simpwarning=False)
 feedback = message[error]
 ==
 

@@ -40,7 +40,6 @@ def getmultioption(q):
 
 def optiondic(l):
     d={}
-
     for x in l:
         k,v= x.split('=')
         d[k]=v
@@ -76,12 +75,15 @@ def buildquestion(questionp):
     """
     #if question.get('extended') == False:
     #    return question
-    question=dict(questionp)
+    if type(questionp) == dict :
+        question=questionp
+    else : 
+        question=questionp[0]
     try:
         
         d=optiondic(question.get('options'))
         nb =int(d.get("nb",4))
-        if questionp.get('type') == 'TextSelect' :# j'ai pas de syntaxe etendue pour le moment 
+        if question.get('type') == 'TextSelect' :# j'ai pas de syntaxe etendue pour le moment 
             return questionp 
         if question.get('type') == 'Radio' :
             bonne=question.get('index')

@@ -1,35 +1,21 @@
-extends = /model/basic/vraifaux.pl
+extends = /model/basic/filltext.pl
 
-title= Un exemple de proposition vraie ou fausse 
-
-text==
-Le cheval **blanc** de *Henri V* est il blanc ? 
-
-$% \int f%$ 
-
-$! \frac{n}{m} !$ 
-
-aussi
-
+question ==
+Compléter le texte suivante avec les bonnes étiquettes.
 ==
 
-
-answer=Non
-
-
-# pour aligner les propositions 
-horizontal % true 
-
-feedback_correct ==
-Bien vu il est gris car il s'est roulé dans la poussière.  
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Lol_LOL.png">
-==
-feedback_wrong = Il vous manque des informations.
-general_feedback==
-
-
-
-Bien entendu c'est une question piège.
+filledtext ==
+L’ensemble des gènes caractéristiques de l’espèce à laquelle appartient un organisme, 
+constitue son {génome}. 
+Chez les individus d’une même espèce, un gène peut cependant exister sous différentes formes 
+présentant de légères modifications de séquence : les allèles. 
+L’ensemble des allèles d’un individu définit son {génotype}. 
+Lorsqu’ils s’expriment, lors de la synthèse des protéines, les gènes participent 
+à la construction de l’individu et à la mise en place de son {phénotype}. 
 ==
 
-
+labels ==
+caryotype
+ADN
+ARN
+==

@@ -1,0 +1,22 @@
+
+
+#author=Marc zipstein
+title=Les Tas en C
+
+introduction==
+
+Des exercices sur les tas, le père est inférieur aux fils;
+
+
+==
+
+
+@ /ComputerScience/Algo/Tree/File-de-priorite/ajout_tas.pl
+
+
+@ /ComputerScience/Algo/Tree/File-de-priorite/otermin.pl
+
+
+
+
+

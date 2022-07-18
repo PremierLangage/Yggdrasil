@@ -1,10 +1,13 @@
-extends = /model/mathinput.pl
+# Author: D. Doyen
+# Tags: exponential
+# Transformer des expressions avec exponentielle
+# 19/7/2021
 
-title = Transformation d'expressions avec exponentielles
+extends = /model/math/expr.pl
 
 before ==
-p,q=list_randint_norep(2,-5,5,[-1,0,1])
-formula=randitem(eval(param['formulas']))
+p, q = sample([-5,-4,-3,-2,2,3,4,5], 2)
+formula = choice(eval(param['formulas']))
 if formula=="(exp(p))^u":
     u=randint(2,4)
     sol=p*u
@@ -21,25 +24,17 @@ elif formula=="exp(p)/exp(q)":
     expr=r"\frac{\exp( %d )}{\exp( %d )}" % (p,q)
 ==
 
-text ==
-Ecrire $%\displaystyle {{expr}} %$ sous la forme  $% \exp(a)%$, où $%a%$ est un nombre.
+question ==
+Ecrire $! \displaystyle {{expr}} !$ sous la forme  $! \exp(a) !$, où $! a !$ est un nombre.
+==
+
+embed ==
+\exp \left( # \right)
 ==
 
 
-evaluator==
-def ans_eval(strans,sol):
-    try:
-        ans = latex2sympy(strans)
-    except:
-        return (-1,"FailedConversion","Votre réponse n'est pas sous la forme attendue")
-    if type(ans)!=sp.exp:
-        return (-1,"","Votre réponse n'est pas sous la forme attendue")
-    if not equal(ans.args[0],sol):
-        return (0,"","")
-    return (100,"","")
 
-score,_,feedback=ans_eval(input.value,sol)
-==
+
 
 wims ==
 
@@ -110,9 +105,5 @@ wims ==
 }
 
 ==
-
-
-
-
 
 

@@ -1,0 +1,15 @@
+title = DL - Développements limités en $!a\neq 0!$ et applications
+
+introduction ==
+Objectifs : L'objectif de cette feuille est d'utiliser les développements limités pour déterminer des limites, de réaliser des développements limités en $! a \neq 0 !$ et des développements asymptotiques. 
+==
+
+@ /AAAA/Colin/Taylor_expension/Partie4/1_LimitesEn0.pl
+
+@ /AAAA/Colin/Taylor_expension/Partie4/2_DL_en_a.pl
+
+@ /AAAA/Colin/Taylor_expension/Partie4/3_DL_en_a_trigo.pl
+
+@ /AAAA/Colin/Taylor_expension/Partie4/4_DA.pl
+
+@ /AAAA/Colin/Taylor_expension/Partie4/5_DA_2.pl

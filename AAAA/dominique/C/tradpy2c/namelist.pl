@@ -1,0 +1,85 @@
+@ a.py
+@ a.c
+@ a_testcode.c
+
+@ b.py
+@ b.c
+@ b_testcode.c
+
+@ c.py
+@ c.c
+@ c_testcode.c
+
+@ d.py
+@ d.c
+@ d_testcode.c
+kiki==
+@ e.py
+@ e.c
+@ e_testcode.c
+==
+koko==
+@ f.py
+@ f.c
+@ f_testcode.c
+@ g.py
+@ g.c
+@ g_testcode.c
+@ h.py
+@ h.c
+@ h_testcode.c
+@ i.py
+@ i.c
+@ i_testcode.c
+@ j.py
+@ j.c
+@ j_testcode.c
+@ k.py
+@ k.c
+@ k_testcode.c
+@ l.py
+@ l.c
+@ l_testcode.c
+@ m.py
+@ m.c
+@ m_testcode.c
+@ n.py
+@ n.c
+@ n_testcode.c
+@ o.py
+@ o.c
+@ o_testcode.c
+@ p.py
+@ p.c
+@ p_testcode.c
+@ q.py
+@ q.c
+@ q_testcode.c
+@ r.py
+@ r.c
+@ r_testcode.c
+@ s.py
+@ s.c
+@ s_testcode.c
+@ t.py
+@ t.c
+@ t_testcode.c
+@ u.py
+@ u.c
+@ u_testcode.c
+@ v.py
+@ v.c
+@ v_testcode.c
+@ w.py
+@ w.c
+@ w_testcode.c
+@ x.py
+@ x.c
+@ x_testcode.c
+@ y.py
+@ y.c
+@ y_testcode.c
+@ z.py
+@ z.c
+@ z_testcode.c
+==

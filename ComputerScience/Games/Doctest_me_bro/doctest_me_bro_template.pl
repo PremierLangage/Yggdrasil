@@ -140,11 +140,11 @@ nb_attempt += 1
 note_eff = 50 + (200 // (3+nb_attempt))
 
 if g_with_fail > 0 :
-    feedback = '<br><span class="error-state animated pulse infinite" style="padding: 1em;">Vos tests sont incohérents car il existe au moins une bonne réponse ne passant pas tous vos tests.</span><br /><br><br>' + feedback
+    feedback = '<br><span class="error-state animated pulse infinite" style="padding: 1em;">Vos tests sont incoh&eacute;rents car il existe au moins une bonne r&eacute;ponse ne passant pas tous vos tests.</span><br /><br><br>' + feedback
     note_tests = 0
 else:
     if b_with_no_fail > 0:
-        feedback = '<br><span class="error-state animated pulse infinite" style="padding: 1em;">Il manque des tests car il existe au moins une mauvaise réponse passant tous vos tests.</span><br /><br><br>' + feedback
+        feedback = '<br><span class="error-state animated pulse infinite" style="padding: 1em;">Il manque des tests car il y a au moins une mauvaise r&eacute;ponse qui passent tous vos tests.</span><br /><br><br>' + feedback
         note_tests = (100*(len(b_code_keys) - b_with_no_fail)) // len(b_code_keys)
     else:
         feedback = '<br><span class="success-state animated pulse infinite" style="padding: 1em;">Bravo, vos tests discriminent correctement les bons et mauvais codes.</span><br /><br><br>' + feedback
@@ -153,7 +153,7 @@ else:
 feed_rmrq = ""
 if look_code:
     note_eff = 50
-    feed_rmrq = ", méga-feedback activé"
+    feed_rmrq = ", m&eacute;ga-feedback activ&eacute;"
 
 tent_rmrq = str(nb_attempt)+" Tentative"
 if nb_attempt > 1:
@@ -165,7 +165,7 @@ best_grade = max([note_finale, best_grade])
 feedback_note = "<u>Note finale :</u> <b>"+str(best_grade)+"%</b> <i>(Toutes propositions confondues)</i><br>"
 feedback_note += "Note pour cette tentative : "+str(note_finale)+"% <br>"
 feedback_note += "Partie tests : "+str(note_tests)+"% <br>"
-feedback_note += "Partie efficacité : "+str(note_eff)+"% ("+tent_rmrq+feed_rmrq+")<br><br>"
+feedback_note += "Partie efficacit&eacute; : "+str(note_eff)+"% ("+tent_rmrq+feed_rmrq+")<br><br>"
 
 if 'megafeed' in response:
     look_code = True

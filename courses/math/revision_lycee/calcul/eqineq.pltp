@@ -1,0 +1,12 @@
+title = Equations et inéquations
+
+introduction ==
+Objectifs :
+
+* Résoudre une inéquation du premier degré.
+* Résoudre  un  système  de  deux  équations  linéaires  à  deux  inconnues
+==
+
+@ /exercises/math/elementary_algebra/inequalities/ineqdeg1_/cst.pl
+
+@ /exercises/math/elementary_algebra/inequalities/ineqdeg1_/deg1.pl

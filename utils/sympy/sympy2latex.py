@@ -1,6 +1,5 @@
 import sympy as sp
 from sympy.printing.latex import LatexPrinter
-from sympy.core.compatibility import default_sort_key
 
 class CustomLatexPrinter(LatexPrinter):
     """ 
@@ -9,20 +8,20 @@ class CustomLatexPrinter(LatexPrinter):
     This printer is based on the standard LaTeX Printer.
     It overrides some methods and adds some settings.
     """
-    custom_settings = {
-        "interv_rev_brack": True
-    }
+    printmethod = ""
 
-    def _print_FiniteSet(self, s):
-        """
-        Return a LaTeX code for a FiniteSet object.
+    _default_custom_settings = {'interv_rev_brack': False}
 
-        Modification : No braces around the elements to deal
-        with the markdown bug.
-        """
-        items = sorted(s, key=default_sort_key)
-        items = ", ".join(map(self._print, items))
-        return r"\{ %s \}" % items
+    @classmethod
+    def _get_initial_custom_settings(cls):
+        return cls._default_custom_settings.copy()
+
+    def __init__(self, settings=None):
+        custom_settings = self._get_initial_custom_settings()
+        for k, v in custom_settings.items():
+            custom_settings[k] = settings.pop(k, v)
+        super().__init__(settings)
+        self._custom_settings = custom_settings
 
     def _print_Poly(self, poly):
         """
@@ -87,7 +86,7 @@ class CustomLatexPrinter(LatexPrinter):
             
         else:
             if i.left_open:
-                if self.custom_settings["interv_rev_brack"]:
+                if self._custom_settings["interv_rev_brack"] == True:
                     left = ']'
                 else:
                     left = '('
@@ -95,7 +94,7 @@ class CustomLatexPrinter(LatexPrinter):
                 left = '['
     
             if i.right_open:
-                if self.custom_settings["interv_rev_brack"]:
+                if self._custom_settings["interv_rev_brack"] == True:
                     right = '['
                 else:
                     right = ')'
@@ -105,47 +104,23 @@ class CustomLatexPrinter(LatexPrinter):
             return r"\left%s%s, %s\right%s" % \
                     (left, self._print(i.start), self._print(i.end), right)
 
+    def _print_ImaginaryUnit(self, expr):
+        return self._settings['imaginary_unit_latex']
 
-    def _print_MatrixBase(self, expr):
-        """
-        Return a LaTeX code for a Matrix object.
+    def _print_Infinity(self, expr):
+        return r"+\infty"
 
-        Modification : No brackets/parentheses to deal
-        with the markdown bug.
-        """
-        lines = []
+    def _print_NegativeInfinity(self, expr):
+        return r"-\infty"
+    
+    def _print_Pi(self, expr):
+        return r"\pi"
 
-        for line in range(expr.rows):  # horrible, should be 'rows'
-            lines.append(" & ".join([ self._print(i) for i in expr[line, :] ]))
-
-        mat_str = self._settings['mat_str']
-        if mat_str is None:
-            if self._settings['mode'] == 'inline':
-                mat_str = 'smallmatrix'
-            else:
-                if (expr.cols <= 10) is True:
-                    mat_str = 'matrix'
-                else:
-                    mat_str = 'array'
-
-        out_str = r'\begin{%MATSTR%}%s\end{%MATSTR%}'
-        out_str = out_str.replace('%MATSTR%', mat_str)
-        if mat_str == 'array':
-            out_str = out_str.replace('%s', '{' + 'c'*expr.cols + '}%s')
-        return out_str % r"\\\\".join(lines)
-
-try:
-    from latex_settings import _default_settings
-except ModuleNotFoundError:
-    _default_settings = {
-        'ln_notation': True
-    }
-
-def latex(expr):
+def latex(expr, **settings):
     """
     Return a LaTeX string for a SymPy object.
     """
-    return CustomLatexPrinter(_default_settings).doprint(expr)
+    return CustomLatexPrinter(settings).doprint(expr)
 
 def latex_linsys(A, B, lstvar=['x','y','z','t','u','v','w']):
     """
@@ -162,41 +137,46 @@ def latex_linsys(A, B, lstvar=['x','y','z','t','u','v','w']):
     for i in range(n):
         terms.extend(["&", latex_lincomb(A[i,:], lstvar)])
         if i < n-1:
-            terms.extend(["=", latex(B[i]), "\\\\\\"])
+            terms.extend(["=", latex(B[i]), r"\\"])
         else:
             terms.extend(["=", latex(B[i])])
     if n == 1:
-        return " ".join(terms)
+        return " ".join(terms[1:])
     else:
-        return "\\left\lbrace \\\\begin{align} %s \\\\end{align} \\right. " % " ".join(terms) 
+        return r"\left\lbrace \begin{align} %s \end{align} \right. " % " ".join(terms) 
 
 def latex_lincomb(coeff, vec):
     """
     Return a LaTeX string for a linear combination.
     """
     code=""
-    first=True
+    first = True
     for i in range(len(coeff)):
-        if coeff[i]!=0:
-            if not first and coeff[i]>0:
-                code+="+ "
-            if coeff[i]==1:
-                code+=vec[i]
-            elif coeff[i]==-1:
+        if coeff[i] != 0:
+            if not first and coeff[i] > 0:
+                code += "+ "
+            if coeff[i] == 1:
+                code += vec[i]
+            elif coeff[i] == -1:
                 code+="-"+vec[i]
             else:
                 code+=latex(coeff[i])+" "+vec[i]
-            first=False
+            first = False
     return code
 
-def latex_ineq(lst):
-    expr1,rel1,expr,rel2,expr2=lst
-    rel1=rel1.replace("<=",r"\le")
-    rel1=rel1.replace(">=",r"\ge")
-    rel2=rel2.replace("<=",r"\le")
-    rel2=rel2.replace(">=",r"\ge")
-    return latex(expr1)+rel1+" "+latex(expr)+rel2+" "+latex(expr2)
-
-
-
-
+def latex_chainineq(expr, interv):
+    """
+    Return a LaTeX string for a chained inequality.
+    """
+    elem = [latex(interv.start)]
+    if interv.left_open:
+        elem.append("<")
+    else:
+        elem.append("\leq")
+    elem.append(latex(expr))
+    if interv.right_open:
+        elem.append("<")
+    else:
+        elem.append("\leq")
+    elem.append(latex(interv.end))
+    return " ".join(elem)

@@ -2,11 +2,9 @@
 # Tags : sets, finite sets
 # 19/8/2020
 
-extends = /model/mathinput.pl
+extends = /model/mathquill.pl
 
 title = Opérations sur les ensembles
-
-input.virtualKeyboards = sets
 
 param.cases % [1, 2, 3, 4]
 
@@ -61,17 +59,18 @@ elif case == 12:
 
 text == 
 On considère les ensembles suivants :
-$$ A= \\{ {{ A|latex }} \\},\ B= \\{ {{ B|latex }} \\},\ C= \\{ {{ C|latex }} \\}.$$
+$$ A= {{ A|latex }},\ B= {{ B|latex }},\ C= {{ C|latex }} .$$
 Déterminer $! {{expr}} !$.
 ==
 
 evaluator ==
-score, error = eval_set(input.value, sol)
+score, error = eval_set(answers['math'], sol)
 feedback = message[error]
 ==
 
 solution ==
 La solution est $! { {{sol|latex}} } !$.
 ==
+
 
 

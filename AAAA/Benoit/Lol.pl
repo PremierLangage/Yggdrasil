@@ -7,7 +7,7 @@ Le cheval blanc de Henri V est il blanc ?
 ==
 
 
-answer=Non
+answer=T
 
 
 # pour aligner les propositions 

@@ -1,5 +1,7 @@
 
-extends = /model/checkbox/div3.pl
+#extends = /model/checkbox/div3.pl
+
+extends = /model/checkbox/checkbox.pl
 
 title = Choix Multiple 
 text= Cochez les réponses positives
@@ -41,3 +43,4 @@ else:
     checkbox.setdata_from_rw(good, bad, nb , nbtrue)
 
 ==
+

@@ -1,6 +1,6 @@
 @ /utils/sandboxio.py
 @ /utils/components/scoring.py
-@ /utils/components/radio.py [customradio.py]
+@ /utils/components/radio.py [radio.py]
 @ /utils/components/checkbox.py [customcheckbox.py]
 @ /utils/components/textselect.py [customtextselect.py]
 
@@ -23,10 +23,10 @@ text = Pas de text
 
 before==
 
-from customradio import CustomRadio
+from radio import Radio
 from customcheckbox import CustomCheckbox
 from customtextselect import CustomTextSelect
-radio = CustomRadio() 
+radio = Radio() 
 check = CustomCheckbox()
 ztext = CustomTextSelect()
 import random

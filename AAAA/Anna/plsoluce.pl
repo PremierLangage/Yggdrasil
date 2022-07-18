@@ -1,6 +1,6 @@
 extends = /ComputerScience/python/AP1-1920/templates/pltest.pl
 
-before=
+@ /AAAA/dominique/PLATON/tojson/before.py [builder.py]
 
 
 

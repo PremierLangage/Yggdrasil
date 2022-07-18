@@ -23,7 +23,7 @@ tag=allocation|fonction|reallocation|realloc|difficile
 
 editor.height=350px
 
-text==
+text==#|markdown|
 L'objectif de cet exercice est de coder une fonction d'insertion triée 
 dans un tableau dynamique. 
 

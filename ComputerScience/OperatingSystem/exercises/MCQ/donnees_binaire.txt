@@ -70,13 +70,14 @@
 - Il y a exactement 1 bit par octet.
 - Il faut 16 bits pour avoir un octet, c'est pour cela qu'on les écrit en hexadécimal.
 - Quand un octet est incomplet, il peut contenir 2 ou 3 bits seulement.
+- Il y a 1024 bits dans un octet.
 
 
 ** Quelles sont les déclarations vraies à propos du code ASCII?
 + Les lettres minuscules et majuscules sont rangées dans l'ordre alphabétique.
 + Un caractère se stocke sur un octet.
 + Les caractères associés aux chiffres sont rangés dans l'ordre.
-+ Tous les caractères ne sont pas affichables.
++ Toutes les valeurs possibles d'octet ne sont pas des caractères affichables.
 + ASCII a été inventé par les américains, il n'y ont pas mis les lettres accentuées.
 - On peut tout écrire avec ASCII, notamment, toutes les langues parlées sur la terre.
 - Plus un caractère ASCII est compliqué, plus il occupe de place mémoire.
@@ -100,7 +101,7 @@
 - 127
 - 111
 - 132
-+ $% \displaystyle\sum_{i=1}^5 2^i %$
+- $% \displaystyle\sum_{i=1}^5 2^i %$
 
 
 ** Comment reconnaître un nombre positif pair en binaire?

@@ -1,12 +1,10 @@
-extends = limit_.pl
+extends = /model/math/multinput.pl
+
 
 title = Calcul de limites
 
-lang = fr
-
 
 before ==
-ninput=3
 lstinput=[input1,input2,input3]
 
 
@@ -26,7 +24,7 @@ for f in lstf:
     sol.append(lim.doit())
 ==
 
-text ==
+question ==
 Calculer les limites suivantes.
 ==
 

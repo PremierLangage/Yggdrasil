@@ -3,7 +3,7 @@ from latex2sympy import *
 
 # Utils
 
-def equal(a, b, modulo=None):
+def equal(a, b, modulo=0):
     """
     Check if two expressions are equal after simplification.
     """
@@ -14,21 +14,21 @@ def equal(a, b, modulo=None):
     if isinstance(diff, sp.Expr) and diff.is_complex:
         diff = sp.expand_complex(diff)
     
-    if modulo is None:
+    if modulo == 0:
         return sp.simplify(diff) == 0
     else:
         return sp.simplify(diff) % modulo == 0
 
-def equal_approx(a, b, tol, modulo=None):
+def equal_approx(a, b, tol, modulo=0):
     """
     Check if two expressions are approximately equal.
     """
-    if modulo is None:
+    if modulo == 0:
         return abs(a - b).evalf() < tol
     else:
         return abs((abs(a - b) + modulo/2) % modulo - modulo/2).evalf() < tol
 
-def equal_struct(p, q, modulo=None):
+def equal_struct(p, q, modulo=0):
     """
     Check if two nested structures of lists and tuples of expressions 
     (where lists are viewed as sets) are equal.
@@ -112,30 +112,30 @@ def duplicates(p):
 
     return False
 
-def arg_nested_add(expr):
+def arg_flat_add(expr):
     """
-    Return the terms of a nested sum.
+    Return the terms of sum (flattened).
     """
     if not expr.is_Add:
         return [expr]
     args = []
     for a in expr.args:
         if a.is_Add:
-            args = args + arg_nested_add(a)
+            args = args + arg_flat_add(a)
         else:
             args.append(a)
     return args
 
-def arg_nested_mul(expr):
+def arg_flat_mul(expr):
     """
-    Return the terms of a nested product.
+    Return the terms of a product (flattened).
     """
     if not expr.is_Mul:
         return [expr]
     args = []
     for a in expr.args:
         if a.is_Mul:
-            args = args + arg_nested_mul(a)
+            args = args + arg_flat_mul(a)
         else:
             args.append(a)
     return args
@@ -144,7 +144,7 @@ def is_coeff_mul(expr, x):
     """
     Check if an expression is of the form 'something times x'.
     """
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     return args.count(x) == 1 and sum([a.has(x) for a in args]) == 1
 
 def coeff_mul(expr, x):
@@ -167,7 +167,7 @@ def coeff_mul(expr, x):
     >>> coeff_mul(x, x)
     1
     """
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     args.remove(x)
     if len(args) == 0:
         return sp.Integer(1)
@@ -184,7 +184,7 @@ def is_coeff_exponent(expr, x):
     n = sp.degree(sp.simplify(expr), x)
     if n == 0:
         return True
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     return args.count(x**n)==1 and sum([a.has(x) for a in args])==1
     
 def coeff_exponent(expr, x):
@@ -210,7 +210,7 @@ def coeff_exponent(expr, x):
     n = sp.degree(expr, x)
     if n == 0:
         return (expr, n)
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     args.remove(x**n)
     if len(args) == 0:
         return (sp.Integer(1), n)
@@ -227,6 +227,7 @@ def is_real_or_inf(expr):
     if expr == sp.S.Infinity or expr == sp.S.NegativeInfinity:
         return True
     return expr.is_real and not expr.is_infinite
+
 
 def is_rat_simp(expr):
     """
@@ -249,10 +250,17 @@ def is_rat_simp(expr):
     True
     """
     if isinstance(expr, sp.Expr):
-        if sp.simplify(expr).is_rational:
-            return is_frac_int(expr) and is_frac_irred(expr)
+        if expr.func == sp.Mul:
+            return is_mul_ratsimp(expr)
+        elif expr.func == sp.Add:
+            return is_add_ratsimp(expr)
         elif expr.is_Atom or expr.is_Boolean:
             return True
+        elif expr.is_rational:
+            if expr.is_Rational:
+                return True
+            else:
+                return False
         else:
             return all(is_rat_simp(subexpr) for subexpr in expr.args)
     elif isinstance(expr, (list, tuple, sp.Tuple, set, sp.FiniteSet)):
@@ -276,10 +284,83 @@ def is_frac_int(expr):
     >>> is_frac_int(expr)
     False
     """
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     # remove sign
     if len(args) > 1 and sp.Integer(-1) in args:
         args.remove(sp.Integer(-1))
+    with sp.evaluate(False):
+        expr = sp.Mul(*args)
+    f = sp.fraction(expr, exact=True)
+    return f[0].is_Integer and f[1].is_Integer
+
+def is_mul_ratsimp(expr):
+    """
+    Check if rational factors in a product are simplified.
+    """
+    args = arg_flat_mul(expr)
+    rat_args = [a for a in args if a.is_rational]
+    nonrat_args = [a for a in args if not a.is_rational]
+
+    p, q = sp.Integer(1), sp.Integer(1)
+    # TODO : Traiter un peu plus proprement les 1 et -1
+    for a in rat_args:
+        if a == sp.Integer(1) or a == sp.Integer(-1):
+            pass
+        elif a.is_Integer:
+            if p == sp.Integer(1):
+                p = a 
+            else:
+                return False
+        elif a.is_Rational:
+            if p == sp.Integer(1) and q == sp.Integer(1):
+                p, q = a.p, a.q 
+            else:
+                return False
+        elif a.func == sp.Pow and a.args[1] == sp.Integer(-1):
+            if q == sp.Integer(1):
+                q = a.args[0]
+            else:
+                return False
+        else:
+            return False
+    return (sp.gcd(p, q) == 1) and is_rat_simp(nonrat_args)
+
+def is_add_ratsimp(expr):
+    """
+    Check if rational factors in a sum are simplified.
+    """
+    args = arg_flat_add(expr)
+    rat_args = [a for a in args if a.is_rational]
+    nonrat_args = [a for a in args if not a.is_rational]
+    return len(rat_args) <= 1 and is_rat_simp(nonrat_args)
+    
+
+def fraction2(expr):
+    """
+    Return a pair with expression’s numerator and denominator. 
+    
+    If the given expression is not a fraction then this function will return None.
+    """
+    if expr.is_Integer:
+        return (expr, sp.Integer(1))
+    if expr.func != sp.Mul:
+        return None
+    args = expr.args
+    if len(args) > 2:
+        return None
+    if args[0].is_Integer:
+        a = args[0]
+        b = args[1]
+    elif args[1].is_Integer:
+        a = args[1]
+        b = args[0]
+    else:
+        return None
+    if b.func != sp.Pow or b.args[1] != sp.Integer(-1):
+        return None
+    return (a, b.args[0])
+
+        
     with sp.evaluate(False):
         expr = sp.Mul(*args)
     f = sp.fraction(expr, exact=True)
@@ -289,7 +370,7 @@ def is_frac_irred(expr):
     """
     Check if a fraction of integers is irreducible.
     """
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     # remove sign
     if len(args) > 1 and sp.Integer(-1) in args:
         args.remove(sp.Integer(-1))
@@ -315,7 +396,7 @@ def is_complex_cartesian(expr):
     >>> is_complex_cartesian(z)
     False
     """
-    args = arg_nested_add(expr)
+    args = arg_flat_add(expr)
     ni = [is_coeff_mul(a, sp.I) for a in args].count(True)
     nr = [a.is_real for a in args].count(True)
     return ni <= 1 and ni + nr == len(args)
@@ -336,7 +417,7 @@ def complex_cartesian_parts(expr):
     >>> complex_cartesian_parts(z)
     (0, 1)
     """
-    args = arg_nested_add(expr)
+    args = arg_flat_add(expr)
     im = next((coeff_mul(a, sp.I) for a in args if is_coeff_mul(a, sp.I)), 0)
     lstre = [a for a in args if a.is_real]
     if len(lstre) == 0:
@@ -363,7 +444,7 @@ def is_complex_exponential(expr):
     """
     Check if a complex number is in exponential form.
     """
-    args=arg_nested_mul(expr)
+    args=arg_flat_mul(expr)
     if is_e_i_theta(args[-1]):
         for a in args[:-1]:
             if not a.is_real or not a>0:
@@ -382,7 +463,7 @@ def is_poly_expanded(expr, x):
     >>> is_poly_expanded(x + x**2 + 3*x, x)
     True
     """
-    args = arg_nested_add(expr)
+    args = arg_flat_add(expr)
     return all(is_coeff_exponent(a,x) for a in args)
 
     
@@ -403,7 +484,7 @@ def is_poly_ratsimp(expr, x):
     >>> is_poly_ratsimp(P, x)
     True
     """
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     for a in args:
         if type(a) == sp.Pow:
             a = a.args[0]
@@ -430,21 +511,23 @@ def is_poly_factorized(expr, x, domain='R'):
     >>> is_poly_factorized(x**2 + 1, x, domain='C')
     False
     """
-    if domain == 'C':
-        kwargs = {'extension': [sp.I]}
-    else:
-        kwargs = {'domain': domain}
-        
-    args = arg_nested_mul(expr)
-    for a in args:
-        if type(a) == sp.Pow:
+    # loop through multiplicative factors
+    for a in arg_flat_mul(expr):
+        # remove power if necessary
+        if a.func == sp.Pow:
             exponent = a.args[1]
             if exponent.is_Integer and exponent > 0:
                 a = a.args[0]
             else:
                 return False
-        if not sp.Poly(a, x, **kwargs).is_irreducible:
-            return False
+        # check if the factor is irreducible
+        p = sp.poly(a, x)
+        if domain == 'R':
+            if p.degree() > 2 or (p.degree() == 2 and p.discriminant() > 0):
+                return False
+        elif domain == 'C':
+            if p.degree() > 2:
+                return False
     return True
 
 def simplify_rset(lst):
@@ -457,42 +540,8 @@ def simplify_rset(lst):
         lst[i] =  sp.Interval(left, right, interv.left_open, interv.right_open)
     return lst
 
-def func_in_expr(expr):
-    """
-    Return the functions involved in an expression.
-    
-    >>> expr = sp.sympify("sin(p/3)", evaluate=False)
-    >>> func_in_expr(expr)
-    {sin}
-    
-    >>> expr = sp.sympify("x + sin(x)**2 * cos(x)", evaluate=False)
-    >>> func_in_expr(expr)
-    {sin, cos}
-    
-    >>> expr = sp.sympify("sqrt(ln(1 + x**2))", evaluate=False)
-    >>> func_in_expr(expr)
-    {log}
-    """
-    return set([type(a) for a in expr.atoms(sp.Function)])
 
-
-# Answer evaluation functions
-
-def add_feedback(eval):
-    def eval_with_feedback(*args, **kwargs):
-        if 'dictfeedback' in kwargs:
-            feedback = {**_feedback_, **kwargs['dictfeedback']}
-            kwargs.pop('dictfeedback')
-        else:
-            feedback = _feedback_
-        score, error = eval(*args, **kwargs)
-        if error in _feedback_:
-            return score, error, feedback[error]
-        else:
-            return score, error, ""
-    return eval_with_feedback
-
-def eval_expr(strans, sol, checkratsimp=True, modulo=None, authorized_func=None, local_dict={}):
+def eval_expr(strans, sol, checkratsimp=True, equality="", modulo=0, unauthorized_func=[], authorized_func=None, local_dict={'e':sp.E, 'i':sp.I}):
     r"""
     Evaluate an answer when the solution is an expression.
     
@@ -518,37 +567,25 @@ def eval_expr(strans, sol, checkratsimp=True, modulo=None, authorized_func=None,
     >>> eval_expr("\exp(1)", sp.E, local_dict={'e': sp.E})[1]
     'Success'
     """
+    for name in unauthorized_func:
+        if name in strans:
+            return (-1, "UnauthorizedFunc")
     try:
         ans = latex2sympy(strans, local_dict)
     except:
         return (-1, "NotExpr")
     if not isinstance(ans, sp.Expr):
         return (-1, "NotExpr")
-    if authorized_func is not None and not func_in_expr(ans).issubset(authorized_func):
-        return (-1, "UnauthorizedFunc")
-    if not equal(ans, sol, modulo):
-        return (0, "NotEqual")
+    if ans.has(sp.S.Infinity, sp.S.NegativeInfinity):
+        if ans != sp.S.Infinity and ans != sp.S.NegativeInfinity:
+            return (-1, "InftyOp")
+    if equality == "UpToConstant":
+        if not (ans - sol).is_constant():
+            return (0, "NotEqualUpToConstant")
+    else:
+        if not equal(ans, sol, modulo):
+            return (0, "NotEqual")
     if checkratsimp and not is_rat_simp(ans):
-        return (-1, "NotRatSimp")
-    return (100, "Success")
-
-def eval_mult_expr(lstans, lstsol, checkratsimp=True, modulo=None, authorized_func=None, local_dict={}):
-    """
-    Evaluate multiple answers.
-    """
-    lsterror = []
-    lstscore = []
-    for strans, sol in zip(lstans, lstsol):
-        score, error = eval_expr(strans, sol, checkratsimp, modulo, authorized_func,  local_dict=local_dict)
-        lsterror.append(error)
-        lstscore.append(score)
-    if "NotExpr" in lsterror:
-        return (-1, "OneNotExpr")
-    if "UnauthorizedFunc" in lsterror:
-        return (-1, "OneUnauthorizedFunc")
-    if "NotEqual" in lsterror:
-        return (0, "NotEqual")
-    if "NotRatSimp" in lsterror:
         return (-1, "NotRatSimp")
     return (100, "Success")
 
@@ -562,42 +599,20 @@ def eval_frac(strans, sol, simpwarning=True):
         return (-1, "NotFrac")
     if not isinstance(ans, sp.Expr):
         return (-1, "NotFrac")
-    if not is_frac_int(ans):
+    f = fraction2(ans)
+    if f is None:
         return (-1, "NotFrac")
     if not equal(ans, sol):
         return (0, "NotEqual")
-    if not is_frac_irred(ans):
+    if not (sp.gcd(f[0], f[1]) == 1 and f[1] > 0):
         if simpwarning:
             return (-1, "NotFracIrred")
         else:
             return (0, "NotFracIrred")
     return (100, "Success")
 
-def eval_function(strans, sol, checkratsimp=True, authorized_func=None, local_dict={}):
-    """
-    Evaluate an answer when the solution is a function.
-    >>> sp.var('x')
-    >>> eval_function("-2\sin(x)",2*sp.cos(x))
-    100,0
-    """
-    local_dict.update({'e': sp.E})
-    return eval_expr(strans, sol, checkratsimp, authorized_func, local_dict=local_dict)
 
-def eval_real_or_inf(strans, sol, local_dict={}):
-    """
-    Evaluate an answer when the solution is real or equal to infinity.
-    """
-    try:
-        ans = latex2sympy(strans, local_dict)
-    except:
-        return (-1, "NotRealOrInf")
-    if not isinstance(ans, sp.Expr) or not is_real_or_inf(ans):
-        return (-1, "NotRealOrInf")
-    if not equal(ans, sol):
-        return (0, "NotEqual")
-    return (100, "Success")
-
-def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, authorized_func={}, local_dict={}):
+def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, unauthorized_func=[], authorized_func={}, local_dict={}):
     """
     Evaluate an answer when the solution is a complex number.
     """
@@ -608,20 +623,18 @@ def eval_complex(strans, sol, imaginary_unit="i", form="", checkratsimp=True, au
         return (-1, "NotCplx")
     if not isinstance(ans, sp.Expr) or not ans.is_complex:
         return (-1, "NotCplx")
-    if authorized_func is not None and not func_in_expr(ans).issubset(authorized_func):
-        return (-1, "UnauthorizedFunc")
     if not equal(ans, sol):
         return (0, "NotEqual")
-    if form == "cartesian":
+    if form.lower() == "cartesian":
         if not is_complex_cartesian(ans):
             return (-1, "NotCplxCartesian")
         if checkratsimp and any(not is_rat_simp(part) for part in complex_cartesian_parts(ans)):
             return (-1, "NotRatSimp")
-    if form == "exponential" and not is_complex_exponential(ans):
+    if form.lower() == "exponential" and not is_complex_exponential(ans):
             return (-1, "NotCplxExponential")
     return (100, "Success")
 
-def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imaginary_unit='i',  authorized_func={}, local_dict={}):
+def eval_poly(strans, sol, var='', domain='R', form='', checkratsimp=True, imaginary_unit='i',  authorized_func={}, local_dict={}):
     """
     Evaluate an answer when the solution is a polynomial.
     
@@ -640,22 +653,26 @@ def eval_poly(strans, sol, var='x', domain='R', form='', checkratsimp=True, imag
     >>> eval_poly("x^2 + 2x + 1", P, form="factorized")[1]
     'PolyNotFactorized'
     """
-    x = sp.Symbol(var)
-    local_dict.update({imaginary_unit: sp.I, var: x})
+    if var == '':
+        x = sp.poly(sol).gens[0]
+    else:
+        x = sp.Symbol(var)
+    x = sp.poly(sol).gens[0]
+    local_dict.update({imaginary_unit: sp.I})
     try:
         ans = latex2sympy(strans, local_dict)
     except:
         return (-1, "NotPoly")
     if not isinstance(ans,sp.Expr) or not ans.is_polynomial(x):
         return (-1, "NotPoly")
-    if form == "expanded" and not is_poly_expanded(ans ,x):
+    if form == "expanded" and not is_poly_expanded(ans, x):
         return (-1, "PolyNotExpanded")
     elif form == "factorized" and not is_poly_factorized(ans, x, domain):
         return (-1, "PolyNotFactorized")
     if not equal(ans,sol):
         return (0, "NotEqual")
-    #if checkratsimp and not is_poly_ratsimp(ans, x):
-    #    return (-1, "PolyNotRatSimp")
+    if checkratsimp and not is_rat_simp(ans):
+        return (-1, "NotRatSimp")
     return (100, "Success")
 
 def eval_set(strans, sol, checkratsimp=True, wobracket=False, local_dict={}):
@@ -727,7 +744,7 @@ def eval_tuple(strans, sol, checksize=False, local_dict={}):
         ans = latex2sympy(strans, local_dict)
     except:
         return (-1,"NotTuple")
-    if not isinstance(ans,tuple):
+    if not isinstance(ans, tuple):
         return (-1,"NotTuple")
     if checksize and len(ans) != len(sol):
         return (-1, "TupleWrongSize")
@@ -735,7 +752,7 @@ def eval_tuple(strans, sol, checksize=False, local_dict={}):
         return (0, "NotEqual")
     return (100, "Success")
 
-def eval_chainineq(strans, sol, local_dict={}, authorized_func={}):
+def eval_chainineqold(strans, sol, local_dict={}, authorized_func={}):
     """
     Analyze an answer expected to be chained inequalities.
     """
@@ -753,17 +770,37 @@ def eval_matrix(matans, sol):
     """
     Evaluate an answer when the solution is a matrix.
     """
-    try:
-        ans = sp.Matrix(matans)
-    except:
-        return (-1, "NotMat")
-    if ans.shape != sol.shape:
+    if matans.shape != sol.shape:
         return (0, "MatWrongSize")
-    if not ans.equals(sol):
+    if not matans.equals(sol):
         return (0, "NotEqual")
     return (100, "Success")
 
-def eval_rset(strans, sol):
+def eval_chainineq(strans, sol):
+    """
+    Evaluate an answer when the solution is an union of intervals.
+    """
+    # TODO : handle empty set
+    sp.var('x')
+    try:
+        ans = strans.split(',')
+        S1 = sp.solve_univariate_inequality(latex2sympy(ans[0] + ' x'),x,False)
+        S2 = sp.solve_univariate_inequality(latex2sympy('x ' + ans[1]),x,False)
+        ans = sp.Intersection(S1, S2)
+    except:
+        return (-1, "NotChainIneq")
+        try:
+            ans = strans.split(',')
+            S1 = sp.solve_univariate_inequality(latex2sympy(ans[1] + ' x'),x,False)
+            S2 = sp.solve_univariate_inequality(latex2sympy('x ' + ans[0]),x,False)
+            ans = sp.Intersection(S1, S2)
+        except:
+            return (-1, "NotChainIneq")
+    if ans != sol:
+        return (0, "NotEqual")
+    return (100, "Success")
+
+def eval_interval(strans, sol):
     """
     Evaluate an answer when the solution is an union of intervals.
     """
@@ -775,15 +812,31 @@ def eval_rset(strans, sol):
         # even with simplification, not sure comparison always works
         ans = simplify_rset(ans)
     except:
-        return (-1, "NotRSet")
+        return (-1, "NotInterval")
     if len(ans) > 1:
         for i in range(len(ans)):
             for j in range(i+1,len(ans)):
                 if sp.Intersection(ans[i], ans[j]) != sp.EmptySet:
-                    return (-1, "RSetNotDisjoint")
+                    return (-1, "IntervalsNotDisjoint")
     if sp.Union(*ans) != sol:
         return (0, "NotEqual")
-    return (100,"")
+    return (100, "Success")
+
+
+def eval_numeric(strans, sol, tol=0.1, diffmeasure='AbsError'):
+    try:
+        ans = latex2sympy(strans)
+    except:
+        return (-1, "NotExpr")
+    if not isinstance(ans, (sp.Float, sp.Integer)):
+        return (-1, "NotExpr")
+    if diffmeasure == 'AbsError':
+        diff = abs(sol - ans)
+    elif diffmeasure == 'RelError':
+        diff = abs(sol-ans)/abs(sol)
+    if diff > tol:        
+        return (0, "NotEqual")
+    return (100, "Success")
 
 from sympy.physics.units import Quantity, convert_to
 
@@ -791,7 +844,7 @@ def get_numeric_unit(expr):
     """
     Return the numerical part and the unit of a physical quantity.
     """
-    args = arg_nested_mul(expr)
+    args = arg_flat_mul(expr)
     args_numeric = []
     args_quantity = []
     for a in args:
@@ -830,26 +883,3 @@ def eval_physical(strans, sol, tol, local_dict={}):
     if not equal_approx(numsol, num, tol=tol):
         return (0, "NotEqual")
     return (100, "Success")
-
-def ans_antiderivative(strans,sol,x,local_dict={}):
-    """
-    Analyze an answer of type expr.
-    """
-    x=sp.Symbol('x')
-    test1=[(is_expr,-1,"NotExpr","Votre réponse n'est pas une expression valide.")]
-    test2=[]
-    test2.append((is_rat_simp,-1,"NotRatSimp","L'expression peut encore être simplifiée."))
-    return ans_eqconstant_(strans,sol,x,local_dict,test1,test2)
-
-
-
-
-
-
-
-
-
-
-
-
-

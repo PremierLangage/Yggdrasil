@@ -1,0 +1,43 @@
+#*****************************************************************************
+#  Copyright (C) 2021 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+author=Prog C L2 Team
+
+title=Expressions dans le langage C
+
+introduction==
+Les exercices qui suivent portent sur les notions de variables, de types 
+et d'instructions dans le langage C. Il y a quelques exercices de cours mais 
+aussi quelques exercices de programmation.
+
+Attention, certains exercices vous autoriseront à formuler plusieurs réponses 
+et d'autre pas. PL reste un lieu d'entrainement seulement, l'erreur dans PL 
+est sans conséquence et évite de faire les mêmes erreurs en examen. Rappelez 
+vous que dans un examen écrit, on ne peut formuler qu'une seule réponse.
+==
+
+@ /ComputerScience/C/exercices/L2_C17/expressions/carac_var.pl
+@ /ComputerScience/C/exercices/L2_C17/expressions/identificateurs.pl
+
+@ /ComputerScience/C/exercices/L2_C17/expressions/size_int_types.pl
+@ /ComputerScience/C/exercices/L2_C17/expressions/corrige_type1.pl
+@ /ComputerScience/C/exercices/L2_C17/expressions/corrige_type2.pl
+@ /ComputerScience/C/exercices/L2_C17/expressions/corrige_type3.pl
+
+@ /ComputerScience/C/exercices/L2_C17/expressions/double_change.pl
+@ /ComputerScience/C/exercices/L2_C17/expressions/double_change.pl
+
+

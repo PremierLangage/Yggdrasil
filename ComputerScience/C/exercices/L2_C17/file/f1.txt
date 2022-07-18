@@ -1,0 +1,2 @@
+Ceci est un fichier. Et puis au final,
+c'est un fichier qui contient deux lignes.

@@ -1,0 +1,12 @@
+title = Limites 1
+
+introduction ==
+Objectif :
+
+* Déterminer dans des cas simples la limite d’une suite ou d’une fonction en un point, en ± ∞,  en  utilisant  les  limites  usuelles,  les croissances  comparées,  les  opérations sur  les  limites,  des  majorations,  minorations  ou  encadrements,  la  factorisation  du terme prépondérant dans une somme.
+
+==
+
+@ /exercises/math/analysis/limits/sum_leading_/log_exp_power_2223.pl
+
+@ /exercises/math/analysis/limits/quot_leading_/log_exp_power.pl

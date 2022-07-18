@@ -1,0 +1,21 @@
+introduction==
+
+Voici des exercices de vocabulaire et un test sur l'application identité et la composition.
+
+== 
+title= Application 
+
+@Application_vocabulaire_remplir.pl
+@Application_def.pl
+@Application_identite.pl
+@preimage_nico.pl
+
+
+# on peut rajouter d'autres exercices 
+#@ un autre exo .pl 
+
+
+
+
+
+

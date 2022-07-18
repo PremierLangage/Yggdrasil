@@ -1,0 +1,34 @@
+# author = Anthony Labarre
+
+title = Échauffement TP 1
+
+introduction ==
+ Le questionnaire ci-dessous vous permettra de vérifier votre compréhension des prérequis pour le TP 1 .
+==
+
+# Projet de feuille d'échauffement 1: il faut valider les notions suivantes du CM 1: 
+# (retirer les TODO le cas échéant; réévaluer en cours de route: ne pas oublier que c'est un échauffement et pas un TP)
+# TODO: relire TP 1 et ajuster cette feuille en fonction de ce qu'il y a dedans 
+
+# Nommage des variables: cocher les noms valides
+@../exercices/noms_variables.pl
+
+# Expressions booléennes: étant données des affectations de variables, évaluer des expressions booléennes
+@../exercices/expressions_booleennes.pl
+
+ 
+        
+# TODO Suite de calculs ou d'instructions, et donner le résultat ("que fait le code suivant")
+
+# TODO corrigez le code suivant pour obtenir le(s) bon(s) résultat(s) (input, oubli de transtypage)
+
+# TODO tests de transtypage, donner type résultat et résultat, ... (voir comment Platon interprète les input ... tout est probablement en str)
+
+# TODO Expliquez les erreurs suivantes et corrigez les
+
+# TODO TypeError
+
+# TODO Indentation à corriger
+
+# TODO écrire des conditions booléennes basiques
+

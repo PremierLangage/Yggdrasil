@@ -58,8 +58,9 @@
 + Le programmeur est responsable de savoir quel champ doit être utilisé ou pas.
 + Leur taille mémoire est la taille maximum des champs qui la composent.
 + Normalement, pour chaque variable d'un tel type, seul un champ est valide.
++ Lire un champ invalide peut provoquer une erreur de segmentation.
 - Leur taille mémoire vaut au moins la somme des tailles mémoires des types des différents champs.
-- Lire un champ invalide peut provoquer une erreur de segmentation.
+
 
 
 ** Quelles sont les particularités des structures C de type **enum** ?

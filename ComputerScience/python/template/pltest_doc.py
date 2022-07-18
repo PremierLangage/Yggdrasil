@@ -33,6 +33,7 @@ def subnlbybr(str):
 
 class PlRunner(doctest.DocTestRunner):
     def __init__(self,studentcode,pltest,fb = None):
+        self.optionflags= doctest.NORMALIZE_WHITESPACE
         self.right = 0
         self.fail = 0
         self.total = 0

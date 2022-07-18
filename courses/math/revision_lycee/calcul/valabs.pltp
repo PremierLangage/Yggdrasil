@@ -1,0 +1,18 @@
+title = Valeur absolue
+
+introduction ==
+Objectifs :
+
+- Simplifier une valeur absolue.
+- Résoudre une équation ou une inéquation impliquant une valeur absolue.
+==
+
+@ /exercises/math/elementary_algebra/absolute_value/simp_abs_nbdiff.pl
+
+@ /exercises/math/elementary_algebra/absolute_value/simp_abs_deg1.pl
+
+@ /exercises/math/elementary_algebra/absolute_value/simp_abs_2deg1.pl
+
+@ /exercises/math/elementary_algebra/absolute_value/equation/absdeg1_cst.pl
+
+@ /exercises/math/elementary_algebra/absolute_value/inequation/absdeg1_cst.pl

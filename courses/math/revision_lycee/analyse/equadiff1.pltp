@@ -1,0 +1,12 @@
+title = Equations différentielles
+
+introduction ==
+Objectifs :
+
+* Pour une équation différentielle y’ = ay + b (a ≠ 0) : déterminer une solution
+particulière constante ; utiliser cette solution pour déterminer toutes les solutions.
+* Pour une équation différentielle y’ = ay + ƒ : à partir de la donnée d’une solution
+particulière, déterminer toutes les solutions.
+==
+
+@ /exercises/math/analysis/ode/1st_linear/cst_coeff/guided_solving_/cst_rhs.pl

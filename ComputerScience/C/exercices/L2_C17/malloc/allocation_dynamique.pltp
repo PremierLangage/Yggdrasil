@@ -1,0 +1,42 @@
+#*****************************************************************************
+#  Copyright (C) 2021 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+author=Prog C L2 Team
+
+title=Allocation dynamique de mémoire
+
+introduction==#|markdown|
+Cette fiche d'exercices porte sur la découverte de l'allocation dynamique 
+de mémoire en langage C. Il y a de nombreuses questions de cours ou de 
+culture générale avec le langage C.
+
+Les exercices de programmation portent plus sur une découverte de `malloc`
+et les premières utilisations de l'allocation dynamique.
+==
+
+@ /ComputerScience/C/exercices/L2_C17/malloc/tab1d.pl
+@ /ComputerScience/C/exercices/L2_C17/malloc/rules_with_malloc.pl
+@ /ComputerScience/C/exercices/L2_C17/malloc/when_use_malloc.pl
+@ /ComputerScience/C/exercices/L2_C17/malloc/nb_malloc.pl
+@ /ComputerScience/C/exercices/L2_C17/malloc/order_size.pl
+@ /ComputerScience/C/exercices/L2_C17/malloc/first_last_name.pl
+@ /ComputerScience/C/exercices/L2_C17/malloc/linked_double.pl
+@ /ComputerScience/C/exercices/L2_C17/malloc/linked_world.pl
+@ /ComputerScience/C/exercices/L2_C17/malloc/tab_from_stdin.pl
+
+
+
+

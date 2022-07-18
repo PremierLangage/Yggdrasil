@@ -71,7 +71,14 @@ Il faudra bien sûr remplacer XXXX et YYYY par les valeurs des
 arguments lors des exécutions.
 ==
 
+solution==
+#!/bin/bash
 
-
-
+if [[ $1 == *$2* ]]; 
+  then
+    echo "$2 est bien un sous-mot de $1."
+  else
+    echo "$2 n'est pas un sous-mot de $1."
+fi
+==
 

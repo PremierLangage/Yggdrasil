@@ -41,7 +41,7 @@ var parameters = {
         "showMenuBar":false,
         "showAlgebraInput":false,
         "customToolbar":"0 || 2 || 4 || 5 || 19 ||53 ",
-        "showResetIcon":true,
+        "showResetIcon":false,
         "enableLabelDrags":false,
         "enableShiftDragZoom":true,
         "enableRightClick":true,
@@ -63,7 +63,7 @@ var parameters2 = {
         "borderColor":null,
         "showMenuBar":false,
         "showAlgebraInput":false,
-        "showResetIcon":true,
+        "showResetIcon":false,
         "enableLabelDrags":false,
         "enableShiftDragZoom":true,
         "enableRightClick":true,
@@ -74,7 +74,7 @@ var parameters2 = {
 }
 
 parameters.appletOnLoad = function() {
-app1.evalCommand('A=(3,0)\nB=(-3,2)\nC=(-2,-1)\nPolygon(A,B,C)\nShowLabel(A,true)\nShowLabel(B,true)\nShowLabel(C,true)\nShowAxes(false)');	
+app1.evalCommand('A=(3,0)\nSetFixed(A,true,false)\nB=(-3,2)\nC=(-2,-1)\nPolygon(A,B,C)\nShowLabel(A,true)\nShowLabel(B,true)\nShowLabel(C,true)\nShowAxes(false)');	
 }
 
 var applet = new GGBApplet('5.0', parameters);

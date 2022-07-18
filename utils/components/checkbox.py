@@ -7,20 +7,20 @@ class CustomCheckbox(Component):
 
     def __init__(self, **kwargs):
         self.selector = 'c-checkbox-group'
-        self.decorator = 'CustomCheckbox'
+        self.decorator = 'Checkbox'
         super().__init__(**kwargs)
         self.statement =''
 
-    def setStatement(self, s):
-        self.statement = s 
-
-    def setitems(self, contents):
+    def set_items(self, items):
         """
         Load items in the component.
         """
-        self.items = [{"id": str(uuid4()), "content": content} for content in contents]
+        if isinstance(items, list):
+            self.items = [{"id": str(uuid4()), "content": str(item)} for item in items]
+        elif isinstance(items, str):
+            self.items = [{"id": str(uuid4()), "content": str(item)} for item in items.splitlines()]
 
-    def setsol_from_index(self, index):
+    def set_sol(self, index):
         """
         Set the component solutions from a list of indices.
         """
@@ -29,27 +29,33 @@ class CustomCheckbox(Component):
         elif isinstance(index,int):
             self._sol = [self.items[index]['id']]
 
-    def setsol_from_content(self, content):
-        """
-        Set the component solutions from a list of contents.
-        """
-        if isinstance(index,list):
-            self._sol = [id for id in self.items if self.items['content'] in content]
-        elif isinstance(index,str):
-            self._sol = [next(item['id'] for item in self.items if item['content'] == content)]
 
-    def setdata_from_rw(self, right, wrong, nbitems=None, nbright=None):
+    def fill_from_rw(self, right, wrong, nbitems=None, nbright=None):
         """
         Set items and solutions from lists of right and wrong items.
         """
+        if isinstance(right, str):
+            _right_ = right.splitlines()
+        elif isinstance(right, list):
+            _right_ = right
+        else:
+            _right_ = [right]
+
+        if isinstance(wrong, str):
+            _wrong_ = wrong.splitlines()
+        elif isinstance(wrong, list):
+            _wrong_ = wrong
+        else:
+            _wrong_ = [wrong]
+
         if nbitems is None:
-            nbitems = len(right) + len(wrong)
+            nbitems = len(_right_) + len(_wrong_)
         if nbright is None:
-            nbright = len(right)
+            nbright = len(_right_)
 
-        self.setitems(rd.sample(right, nbright) + rd.sample(wrong, nbitems-nbright))
+        self.set_items(rd.sample(_right_, nbright) + rd.sample(_wrong_, nbitems-nbright))
 
-        self.setsol_from_index(list(range(nbright)))
+        self.set_sol(list(range(nbright)))
 
         self.shuffle()
 
@@ -95,9 +101,30 @@ class CustomCheckbox(Component):
         else:
             raise ValueError(f"'{scoring}' is not a valid scoring")
 
-        self.disabled = disabled
-
         return score
 
+    def show(self):
+        """
+        Display visual feedback.
+        """
+        pass
 
+    def display_feedback(self):
+        """
+        Display visual feedback.
+        """
+        pass
 
+    def disable(self):
+        """
+        Disable the component.
+        """
+        self.disabled = True
+
+    def render(self):
+        """
+        Return the HTML code of the component.
+        """
+        selector = self.selector
+        cid = self.cid
+        return f"<{selector} cid='{cid}'></{selector}>"

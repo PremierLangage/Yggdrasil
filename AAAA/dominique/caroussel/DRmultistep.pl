@@ -59,11 +59,11 @@ Prenez bien le temps de répondre aux {{ nb_quest }} questions avant de valider.
 
 
 before==
-from customradio import CustomRadio
-from customcheckbox import CustomCheckbox
+from customradio import Radio
+from customcheckbox import Checkbox
 from customtextselect import CustomTextSelect
-radio = CustomRadio() 
-check = CustomCheckbox()
+radio = Radio() 
+check = Checkbox()
 ztext = CustomTextSelect()
 import random
 random.seed(42) # DEBUG FIXME
@@ -109,19 +109,19 @@ for i, q in enumerate(list_questions):
     if type(q)== list :
         continue
     if q['type'] == "Radio":
-        newcomp = CustomRadio()
+        newcomp = Radio()
         
-        newcomp.setStatement(q['text'])
-        newcomp.setitems(q['items'])
-        newcomp.setsol_from_index(q['index'])
+        #newcomp.setStatement(q['text'])
+        newcomp.set_items(q['items'])
+        newcomp.set_sol(q['index'])
         if 'ordered' not in q['options']:
             newcomp.shuffle()
         comp.append(newcomp)
     elif q['type'] == "Checkbox":
-        newcomp = CustomCheckbox()
-        newcomp.setStatement(q['text'])
-        newcomp.setitems(q['items'])
-        newcomp.setsol_from_index(q['index'])
+        newcomp = Checkbox()
+        #newcomp.setStatement(q['text'])
+        newcomp.set_items(q['items'])
+        newcomp.set_sol(q['index'])
         if 'ordered' not in q['options']:
             newcomp.shuffle()
         comp.append(newcomp)

@@ -1,0 +1,17 @@
+title = Nombres complexes 3 (trigonométrie)
+
+
+introduction ==
+Objectif :
+
+- Passer de la forme algébrique d’un nombre complexe à sa forme trigonométrique ou exponentielle et inversement.
+
+==
+
+@ /exercises/math/complex_numbers/transformations/exp2cart_/arg124.pl
+
+@ /exercises/math/complex_numbers/transformations/exp2cart_/arg36.pl
+
+@ /exercises/math/complex_numbers/transformations/cart2exp_/arg124.pl
+
+@ /exercises/math/complex_numbers/transformations/cart2exp_/arg36.pl

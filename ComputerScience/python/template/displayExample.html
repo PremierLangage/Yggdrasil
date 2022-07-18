@@ -1,0 +1,18 @@
+
+<div class="ex">
+<p><iframe src="exemple" frameborder="0" height="400"
+    width="95%"></iframe></p>
+</div>
+<button id="toggle">Hide THIRD div</button>
+<script>
+const targetDiv = document.getElementById("ex");
+const btn = document.getElementById("toggle");
+btn.onclick = function () {
+    if (targetDiv.style.display !== "none") {
+    targetDiv.style.display = "none";
+    } else {
+    targetDiv.style.display = "block";
+    }
+};
+</script>
+

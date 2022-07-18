@@ -27,7 +27,7 @@ numero+=1
 if numero<len(slides):
     text=slides[numero]
     title= f"les slides {numero}"
-    grade=(0,"continuez")
+    grade=(1,"continuez")
 else:
     grade=(100,"Bonne continuation")
 ==

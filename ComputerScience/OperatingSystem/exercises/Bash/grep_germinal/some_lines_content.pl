@@ -21,24 +21,29 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Quelques lignes par leur contenu
 
-before==
+tag=bash|unix|terminal|grep|regex
+
+before==#|python|
 import random
 
-things = [("le nombre de lignes composées uniquement de lettres majuscules", "40\n"),
+things = [("le nombre de lignes non vides composées uniquement de lettres majuscules", "40\n"),
           ("le nombre de lignes contenant un mot de 16 lettres minuscules ou plus", "25\n"),
           ("le nombre de lignes contenant un chiffre", "12\n")]
 (name_thing, expected_stdout) = random.choice(things)
 ==
 
-text==
+text==#|markdown|
 Un fichier **Germinal.txt** (contenant le texte intégral de l'oeuvre de E. Zola) a 
 été placé dans le répertoire courant de travail. Établissez une **commande shell** 
 qui affiche **{{ name_thing }}** apparaissant dans le fichier. Débrouillez 
-vous pour que votre résultat numérique soit affiché seul sur une ligne. N'hésitez pas à
-faire plusieurs essais.
+vous pour que votre résultat numérique soit affiché seul sur une ligne.
 ==
 
-
+solution==
+# dépend de la question tirée
+# Dans cet exo, les solutions sont hardcodées dans le builder
+grep Germinal.txt -c -e "^[A-Z]*$"
+==
 
 
 

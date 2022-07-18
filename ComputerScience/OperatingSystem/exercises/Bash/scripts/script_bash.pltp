@@ -22,19 +22,25 @@ d'autres sont plus avancés. Il est globalement conseillé de s'aider un peu
 du web pour arriver à ses fins. Bon courage avec la syntaxe du plaisir.
 ==
 
-
+# Afficher les arguments d'un programme bash
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/print_args.pl
 
+# Verifier un encadrement de trois valeurs
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/check_args_int.pl
 
+# Entier max en argument + traitement special si pas de arg
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/max_int_args.pl
 
+# Nombres binomiaux
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/binomial.pl
 
+# Afficher les arguments d'un programme bash dans l'ordre inverse
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/reverse.pl
 
+# is substring en bash
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/substring.pl
 
+# décomposition base 2 d'entiers potitifs en bash
 @ /ComputerScience/OperatingSystem/exercises/Bash/scripts/decimal_to_binary.pl
 
 

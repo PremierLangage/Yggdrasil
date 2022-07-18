@@ -39,8 +39,9 @@ Analyser une vidéo
 ==
 
 text==
-Dans le clip suivant, combien de souris le **chat** fait-il couiné ? Cet exercice 
-est plus simple avec le son d'activé.
+Dans le clip suivant, combien de souris le **chat** fait-il couiner ?
+
+Cet exercice est plus simple avec le son d'activé. Attention, le chat peut stimuler plusieurs fois la même souris.
 
 <br>
 
@@ -65,7 +66,7 @@ evaluator==#|python|
 if 2 == int(inputbox.value):
     grade = (100, '''<span class="success-state">Mais oui, c'est clair!</span> <br> <br>''')
 else:
-    grade = (0, '''<span class="error-state">Regardez mieux! Le chat, c'est celui qui a le plus de poil...</span> <br> <br>''')
+    grade = (0, '''<span class="error-state">Regardez mieux! Le chat, c'est celui qui a le plus de poils...</span> <br> <br>''')
 ==
 
 

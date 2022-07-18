@@ -1,6 +1,108 @@
 from components import Component
 from random import shuffle
 from uuid import uuid4
+from multicomp import MultiComp
+
+class DropGroup(MultiComp):
+
+    def __init__(self, param=None, **kwargs):
+        self.__MultiComp__ = "DropGroup"
+        self.comp = kwargs.get('comp', [])
+        self._sol = kwargs.get('_sol', [])
+        self.embed = kwargs.get('embed', '')
+        if isinstance(param, int):
+            self.comp = [CustomDragDrop.Drop() for _ in range(param)]
+        elif isinstance(param, list):
+            self.comp = [CustomDragDrop.Drop() for _ in range(len(param))]
+            self._sol = param
+
+    def set_filledtext(self, filledtext):
+        counter = 0
+        newstring = ''
+        start = 0
+        for m in re.finditer(r"{([^{}]+)}", filledtext):
+            end, newstart = m.span()
+            newstring += filledtext[start:end]
+            self.comp.append(CustomDragDrop.Drop())
+            self._sol.append(m.group(1))
+            rep = "{ }"
+            newstring += rep
+            start = newstart
+            counter += 1
+        newstring += filledtext[start:]
+        self.embed = newstring
+
+    def paste_embed(self):
+        counter = 0
+        newstring = ''
+        start = 0
+        for m in re.finditer(r"{([^{}]*)}", self.embed):
+            end, newstart = m.span()
+            newstring += self.embed[start:end]
+            selector = self.comp[counter].selector
+            cid = self.comp[counter].cid
+            rep = f"<{selector} cid='{cid}'></{selector}>"
+            newstring += rep
+            start = newstart
+            counter += 1
+        newstring += self.embed[start:]
+        return newstring
+    
+    def eval(self):
+        n = len(self.comp)
+        num_right = 0
+        num_wrong = 0
+
+        for i in range(n):
+            if self.comp[i].content == self._sol[i]:
+                num_right += 1
+                self.comp[i].css = "success-state"
+            else:
+                num_wrong +=1
+                self.comp[i].css = "error-state"
+
+        if num_wrong > 0 :
+            score = 0
+        else:
+            score = 100
+            
+        return score
+
+class LabelGroup(MultiComp):
+
+    def __init__(self, param=None, **kwargs):
+        self.__MultiComp__ = "LabelGroup"
+        self.comp = kwargs.get('comp', [])
+        if isinstance(param, list):
+            self.comp = [CustomDragDrop.Label(content=content) for content in param]
+
+    def paste_all(self, shuffled=True):
+        lst = []
+        for comp in self.comp:
+            selector = comp.selector
+            cid = comp.cid
+            lst.append(f"<{selector} cid='{cid}'></{selector}>")
+        shuffle(lst)
+        return "".join(lst)
+
+import re
+
+def process_filledtext(filledtext, name):
+    sol = []
+    counter = 0
+    newstring = ''
+    start = 0
+    for m in re.finditer(r"{([^{}]+)}", filledtext):
+        end, newstart = m.span()
+        newstring += filledtext[start:end]
+        rep = "{{ "+ name + ".comp[" + str(counter) + "]|component }}"
+        sol.append(m.group(1)) 
+        newstring += rep
+        start = newstart
+        counter += 1
+    newstring += filledtext[start:]
+    return sol, newstring
+
 
 class MyComponent(Component):
 

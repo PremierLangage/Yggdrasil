@@ -5,7 +5,7 @@ v1;La borne supérieure est-elle atteinte ?; oui/non; (réponse : C7)
 v2;I est-elle minorée ?; oui /non (réponse C4)
 v2;I admet-elle une borne supérieure ?; oui/non;  (réponse : non si - en C6) si oui indiquez la borne supérieure  : (réponse : C7)
 v2;La borne supérieure est-elle atteinte ?; oui/non; (réponse : C8)
-v3;I admet-elle un plus grand élément ?; oui /non; (réponse : non si - en C7), si oui afficher  p.g.e.(I)= réponse C7
-v4;I admet-elle un plus petit élément ?; oui /non; (réponse : non si - en C8), si oui afficher  p.p.e.(I)= réponse C8
+v3;I admet-elle un plus grand élément ?; oui /non; (réponse : non si - en C7), si oui afficher  pge(I)= réponse C7
+v4;I admet-elle un plus petit élément ?; oui /non; (réponse : non si - en C8), si oui afficher  ppe(I)= réponse C8
 v5;$%a%$ est-il un majorant de I ?; oui/non;choisir au hasard a entre [-100, 100] (réponse  oui si ((C5 est une valeur numérique) et (a\ge  C5)) ou  (C5=-)
 v6;$%a%$ est-il un minorant de I ?;  oui/non;choisir au hasard a entre [-100, 100] (réponse  oui si ((C6 est une valeur numérique) et (a\ge  C6)) ou  (C6=-) 

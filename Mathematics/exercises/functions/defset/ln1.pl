@@ -1,27 +1,23 @@
-extends = /model/mathinput.pl
+# Author: D. Doyen
+# Tags: definition set, logarithm, linear inequality
+# Déterminer l'ensemble de définition (maximal) d'une fonction
+# 19/7/2021
 
-title = Ensemble de définition (logarithme 1)
-
-lang = fr
-
-virtualKeyboards = sets
+extends = /model/math/interval.pl
 
 before ==
+from sympy.solvers.inequalities import solve_univariate_inequality
 a=randint(-6,6,[0,1,-1])
 b=randint(-6,6,[0])
-x=symbols('x')
+var('x')
 f=ln(a*x+b)
-latexf=latex(f)
-from sympy.solvers.inequalities import solve_univariate_inequality
 sol = solve_univariate_inequality(a*x+b > 0, x, relational=False)
 ==
 
-text ==
-Déterminer l'ensemble de définition de la fonction $%f : x \mapsto {{latexf}}%$.
+question ==
+Déterminer l'ensemble de définition (maximal) de la fonction 
+
+$$f : x \mapsto {{ f|latex }}.$$
 ==
 
-evaluator==
-score,_,feedback=ans_interval(answer['1'],sol)
-==
-
-
+latexsettings.interv_rev_brack = False

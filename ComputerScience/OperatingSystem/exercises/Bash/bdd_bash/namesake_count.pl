@@ -21,12 +21,14 @@ extends=/ComputerScience/OperatingSystem/templates/bash_template.pl
 author=Nicolas Borie
 title=Comptage des couples (prénom, nom) des homonymes
 
+tag=bash|unix|terminal|cut|sort|uniq|wc
+
 before==#|python|
 
 expected_stdout = "111\n"
 ==
 
-text==
+text==#|markdown|
 Rappel de la structuration du fichier **MJC.txt**:   
 <br />
 **id:prénom:nom:age:activité lundi,activité mardi,...,activité dimanche:jour:mois:année**   
@@ -38,7 +40,10 @@ Cela revient à lister tous les couples (prénom, nom) de la base de données pu
 ne selectionner que les lignes dupliqués. On termine en comptant ces lignes 
 soigneusement selectionnées. Veuillez à faire en sorte que votre 
 commande ne produise que l'affichage numérique seul sur une 
-ligne. N'hésitez à faire plusieurs essais.
+ligne.
 ==
 
+solution==
+cut MJC.txt -d ':' -f 2,3 | sort | uniq -d | wc -l
+==
 

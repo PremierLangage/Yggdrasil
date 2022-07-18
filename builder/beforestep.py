@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # coding: utf-8
-
 import sys, json, jsonpickle
 from sandboxio import get_context
 from components import Component

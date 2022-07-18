@@ -1,23 +1,19 @@
-# Author : D. Doyen
-# Keywords : 
+extends = /model/math/matrix.pl
 
-extends = /model/mathmatrix.pl
-
-title ==
-Produit de matrices $! 2 \times 2 !$
-==
 
 before ==
+from randsympy import randint_matrix
 n = 2
 coeffbound = 3
-mat.setzeros(n)
-A = rand_int_matrix(n, n, coeffbound)
-B = rand_int_matrix(n, n, coeffbound)
+A = randint_matrix(n, n, coeffbound)
+B = randint_matrix(n, n, coeffbound)
 sol = A*B
 ==
 
-text ==
+question ==
 Soit les matrices
-$$ A = \left( {{ A|latex }} \right) \text{ et } B = \left( {{ B|latex }} \right) $$ 
+$$ A = {{ A|latex }} \text{ et } B = {{ B|latex }} $$ 
 Calculer $! A B !$.
 ==
+
+resizable = False

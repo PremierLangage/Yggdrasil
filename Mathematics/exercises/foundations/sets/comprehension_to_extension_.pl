@@ -1,26 +1,24 @@
-extends = /Mathematics/template/mathinput.pl
+extends = /model/math/set.pl
 
-title = Définition d'un ensemble en compréhension
-
-lang = fr
+title = Ecrire en extension un ensemble donné en compréhension
 
 before ==
-keyboards_JSON['virtualKeyboards']="sets"
-input.config = keyboards_JSON
+# S,cond=randitem(param['sets'])
 
-S,cond=randitem(param['sets'])
+cond = "square"
+S = "N"
 
-n=20
-if S=="N":
+n = 20
+if S == "N":
     S_tex=r"\mathbb{N}"
     lstS=list(range(n))
-elif S=="N*":
+elif S == "N*":
     S_tex=r"\mathbb{N}^*"
     lstS=list(range(1,n))
-elif S=="Z":
+elif S == "Z":
     S_tex=r"\mathbb{Z}"
     lstS=list(range(-n+1,n))
-elif S=="Z*":
+elif S == "Z*":
     S_tex=r"\mathbb{Z}^*"
     lstS=list(range(-n+1,0))+list(range(1,n))
 
@@ -29,10 +27,10 @@ symb=["<","\leq"]
 setlength=9
 while (setlength>8 or setlength<1):
     if cond=="square":
-        a=randitem([4,6,9,15,16,19,21,25,27])
+        a = choice([4,6,9,15,16,19,21,25,27])
         ka=randint(0,1)
-        globals()['aa']=a+ka
-        lstA=[x for x in lstS if x**2 < aa]
+        aa = a+ka
+        lstA = [x for x in lstS if x**2 < aa]
         cond_tex=r"n^2 %s %d" % (symb[ka],a)
     elif cond=="square2":
         ka=randint(0,1)
@@ -45,23 +43,9 @@ while (setlength>8 or setlength<1):
     setlength=len(lstA)
 
 
-sol=FiniteSet(*lstA)
-sol_tex=latex(sol)
+sol = FiniteSet(*lstA)
 ==
 
-text == 
-Ecrire en extension l'ensemble $!\\left \\{ n \in {{S_tex}} \:|\: {{cond_tex}} \\right \\}!$.
+question == 
+Ecrire en extension l'ensemble $!\left \{ n \in {{S_tex}} \:|\: {{cond_tex}} \right \}!$.
 ==
-
-evaluator ==
-score,_,feedback=ans_struct_expr(input.value,sol,"set")
-==
-
-solution ==
-La solution est $! { {{sol_tex}} } !$.
-==
-
-
-
-
-

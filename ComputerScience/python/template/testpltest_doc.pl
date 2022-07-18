@@ -6,10 +6,14 @@ text==
 Hop A égal à 2 et B à 3 
 ==
 
+taboo= con|nul|pauvre
+
 editor.code==
 A=2
 B=3
-#
+C=2
+D=2
+E=2
 ==
 
 # les tests avec un seul # ne sont pas visible par l'étudiant
@@ -25,19 +29,6 @@ True
 3
 ==
 
-pltest0==
->>> 1==12
-True
->>> 1==1
-True
->>> 1==1
-True
->>> 1==1
-True
->>> 1==1
-True
-==
-
 pltest1==
 >>> C==C
 True
@@ -47,11 +38,17 @@ True
 True
 ==
 
+pltest2==
+>>> with open("student.py","r") as f :
+...    student = f.read()
+...    student.count("A")>1 # Trop de A
+False
+==
 
 
 extends= /ComputerScience/python/template/pltest.pl
 
-@ template.html
+#@ template.html
 
 
 

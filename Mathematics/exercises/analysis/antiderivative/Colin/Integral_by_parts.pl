@@ -1,20 +1,22 @@
 # Author : C. Petitjean.
 
-extends = /model/mathinput.pl
+extends = /model/math/expr.pl
 
 title = Calcul d'une intégrale par intégration par parties
 
 before ==
+from sympy import frac, integrate
+
 var('x') # crée le symbole x
 
 
 
-c = randitem([i for i in range(2,10)])
+c = choice([i for i in range(2,10)])
 
 
 S = [x*exp(c*x),x*ln(c*x),x*cos(c*x),x*sin(c*x)]
 
-f = randitem(S)
+f = choice(S)
 
 
 if f==x*exp(c*x):
@@ -37,18 +39,13 @@ sol = integrate(f,(x,a,b)) # Solution
 ==
 
 text ==
-Grâce à la formule d'intégration par parties, calculer l'intégrale  
+
+<span style="font-size:2em;">
+Grâce à la formule d'intégration par parties, calculer l'intégrale
 $$ \int_{ {{a | latex }} }^{ {{b | latex }} } {{f | latex}} \mathrm dx $$ 
+</span>
 ==
 
-evaluator ==
-score, error = eval_function(input.value, sol)
-feedback = message[error]
-==
-
-solution ==
-La solution est $! {{ sol|latex}} !$.
-==
 
 
 

@@ -1,21 +1,11 @@
-from components import Component
-from json import load
+from uuid import uuid4
 
-json_file = open('keyboards.JSON')
-keyboards_JSON = load(json_file)
-json_file.close()
-
-class CustomMathInput(Component):
+class MathInput:
 
     def __init__(self, **kwargs):
-        self.selector = 'c-math-input'
-        self.decorator = 'CustomMathInput'
-        if 'inlineShortcuts' in kwargs:
-            keyboards_JSON['inlineShortcuts'] = kwargs['inlineShortcuts']
-        if 'virtualKeyboards' in kwargs:
-            keyboards_JSON['virtualKeyboards'] = kwargs['virtualKeyboards']
-        self.config = keyboards_JSON
-        super().__init__(**kwargs)
-
-
-
+        self.__MathInput__ = True
+        self.id = kwargs.get('id', str(uuid4()))
+        self.keypad = kwargs.get('keypad', [])
+        self.value = kwargs.get('value', '')
+        self.prefix = kwargs.get('prefix', '')
+        self.disabled = kwargs.get('disabled', False)

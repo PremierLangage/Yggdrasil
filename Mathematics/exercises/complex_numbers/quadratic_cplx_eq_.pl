@@ -1,18 +1,33 @@
-extends = /model/mathinput.pl
+# Author: D. Doyen
+# Tags: complex numbers, quadratic equations, roots
+# Déterminer les solutions (complexes) d'une équation quadratique.
+# Parameters:
+# - roots: list de chaînes indiquant 
+# les types de racines
+# 19/7/2021
 
-title = Equation quadratique
+extends = /model/math/set.pl
 
 param.roots = int
 
-before ==
-a,b=list_randint(2,-4,4,[0])
-a2,b2=list_randint(2,-4,4,[0])
-while equal(a-b*I,a2+b2*I):
-    a2,b2=list_randint(2,-4,4,[0])
+wobracket = True
 
-c=randint(-5,5,[0,1,-1])
-s=randitem([-1,1])
-s2=randitem([-I,I,1+I,1-I,I-1])
+
+before ==
+from evalsympy import equal
+from sympy import solveset, S, expand
+
+a = randint(-4, 4, [0])
+b = randint(-4, 4, [0])
+a2 = randint(-4, 4, [0])
+b2 = randint(-4, 4, [0])
+while equal(a-b*I,a2+b2*I):
+    a2 = randint(-4, 4, [0])
+    b2 = randint(-4, 4, [0])
+
+c = randint(-5,5,[0,1,-1])
+s = choice([-1,1])
+s2 = choice([-I,I,1+I,1-I,I-1])
 
 var('x')
 if param['roots']=='int':
@@ -23,28 +38,11 @@ if param['roots']=='int3':
     P=s2*(x+a+b*I)*(x+a2+b2*I)
 if param['roots']=='rat':
     P=s*(c*x+a+b*I)*(c*x+a-b*I)
-lstsol=list(solveset(P,x,domain=S.Complexes))
-P = poly(expand(P),x)
-solution=r"Les solutions sont $! \displaystyle %s !$ et $! \displaystyle %s !$." % (latex(lstsol[0]),latex(lstsol[1]))
+sol=list(solveset(P,x,domain=S.Complexes))
+P = Poly(expand(P),x)
+solution=r"Les solutions sont $! \displaystyle %s !$ et $! \displaystyle %s !$." % (latex(sol[0]),latex(sol[1]))
 ==
 
-text ==
+question ==
 Déterminer les solutions (complexes) de l'équation $! {{ P|latex }} = 0 !$. Séparer les différentes solutions par une virgule.
 ==
-
-input.virtualKeyboards = complex
-
-evaluator==
-score, error = eval_set_complex(input.value, lstsol,wobracket=True)
-feedback = message[error]
-==
-
-
-
-
-
-
-
-
-
-

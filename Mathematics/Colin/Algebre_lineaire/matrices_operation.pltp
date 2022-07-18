@@ -1,0 +1,11 @@
+introduction=Voici une feuille d'exercices pour s'entrainer sur le calcul Matriciel. 
+title=Opérations sur les matrices.
+
+@ /Mathematics/exercises/algebra/matrices/definition/matrix_coeff.pl
+
+@ /Mathematics/exercises/algebra/matrices/operations/matrix_lincomb_2.pl
+ 
+@ /Mathematics/exercises/algebra/matrices/operations/matrix_product_2.pl
+
+@ /Mathematics/exercises/algebra/matrices/operations/matrix_product_3.pl
+

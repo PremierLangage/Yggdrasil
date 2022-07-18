@@ -1,0 +1,23 @@
+title = Fractions
+
+introduction ==
+Objectifs :
+
+- Effectuer des calculs sur des fractions.
+- Présenter un résultat fractionnaire sous forme de fraction irréductible.
+
+==
+
+@ /exercises/math/elementary_algebra/fractions/simplify_/types_0011.pl
+
+@ /exercises/math/elementary_algebra/fractions/computation_/types_012.pl
+
+@ /exercises/math/elementary_algebra/fractions/computation_/types_345.pl
+
+@ /exercises/math/elementary_algebra/fractions/computation_/types_10_11.pl
+
+@ /exercises/math/elementary_algebra/fractions/computation_/types_89.pl
+
+@ /exercises/math/elementary_algebra/fractions/sum_large_demo_/types_01.pl
+
+@ /exercises/math/elementary_algebra/fractions/simplify_mul_/types_01.pl

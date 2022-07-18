@@ -59,6 +59,18 @@ devra afficher le message suivant : **c n'est pas compris entre a et b.**
 prennent les trois paramètres durant l'exécution.
 ==
 
-
+solution==#|shell|
+if [ $1 -le $3 ]
+  then
+    if [ $3 -le $2 ]
+      then
+        echo "La contrainte $1 <= $3 <= $2 est vérifiée."
+      else
+        echo "$3 n'est pas compris entre $1 et $2."
+    fi
+  else
+    echo "$3 n'est pas compris entre $1 et $2."
+fi
+==
 
 

@@ -1,0 +1,117 @@
+#*****************************************************************************
+#  Copyright (C) 2021 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+extends=/ComputerScience/C/template/std_progC17_clang.pl
+
+title=Plus long mot d'un fichier
+
+tag=fichier|programme|affichage|mot|chaine|lecture
+
+author=Nicolas Borie
+
+editor.height=300px
+
+@f1.txt
+@f2.txt
+@f3.txt
+@f4.txt
+@f5.txt
+@f6.txt
+@titi
+@toto
+
+text==#|markdown|
+Écrire un programme C qui prend un argument qui sera toujours le nom d'un 
+fichier positionné dans le répertoire courrant et sur dont vous aurez les 
+droits de lecture. Votre programme afficher le mot le plus long contenu dans 
+le fichier. Si plusieurs mots sont de longueur maximal, on affichera le 
+premier mot du fichier ayant cette longueur.
+
+Par soucis de simplicité, on respectera les démiliteurs du langage C. Un mot 
+sera donc une séquence de caractères encadré par des démiliteurs (espace, tabulation 
+et retour chariot).
+
+    Voici un exemple de contenu de fichier, c'est cool hein !
+
+Dans l'exemple au dessus, on par exemple le mot `fichier,` (avec la virgule) 
+ou bien le mot `c'est` qui est encadré par deux espaces. Cette simplification 
+suit les capacités de lecture de `fscanf(" %s", ...)` qui découpe la lecture 
+exactement comme décrit au dessus. Tous les mots apparaissants dans les fichiers 
+ne comporteront jamais plus de 255 caractères.
+
+Votre programme devra juste afficher le mot le plus long, tout seul sur une ligne 
+(donc avec un retour chariot final) mais sans espace superflu. Pour un fichier 
+vide, on considéra le mot vide comme le mot le plus long du fichier.
+
+
+==
+
+code_before==#|c|
+==
+
+editor.code==#|c|
+#include <stdio.h>
+#include <string.h>
+#define MAX 256
+
+int main(int argc, char* argv[]){
+  char mot[MAX];
+  // Votre code ici 
+}
+==
+
+solution==#|c|
+#include <stdio.h>
+#include <string.h>
+#define MAX 256
+
+int main(int argc, char* argv[]){
+  char mot[MAX];
+  char max[MAX];
+  mot[0] = '\0';
+  max[0] = '\0';
+  FILE* f=fopen(argv[1], "r");
+
+  while (fscanf(f, " %s", mot) == 1)
+    if (strlen(mot) > strlen(max))
+      strcpy(max, mot);
+  fclose(f);
+  puts(max);
+  return 0;
+}
+==
+
+code_after==#|c|
+
+==
+
+checks_args_stdin==#|python|
+[ ["Simple éxécution", ["f1.txt"], ""],
+  ["Fichier vide", ["f3.txt"], ""],
+  ["Test aléatoire 1", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""],
+  ["Test aléatoire 2", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""],
+  ["Test aléatoire 3", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""] ]
+==
+
+astuces==#|python|
+[
+  { "content": """La première étape consiste à ouvrir le fichier dont le nom est dans `argv[1]`. Il faudra ouvrir ce fichier en mode lecture en utilisant donc un second argument `"r"`."""},
+  { "content": """La stratégie consiste à lire le fichier mot par mot tant que `fscnaf(fichier_ouvert, " %s", ...) == 1` (ce qui signifie tant que l'on lit un mot valide)."""},
+  { "content": """Il faut utiliser `strlen` et `strcpy` de `<string.h>` ainsi que deux variables locales de types `char[MAX]`. Une des deux chaînes stockera le mot courrant lu et l'autre sauvegardera le mot de longueur maximal."""}
+]
+==
+
+

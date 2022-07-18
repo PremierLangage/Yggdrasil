@@ -1,0 +1,60 @@
+{% if state == "intro" %}
+<div class="question">
+{{isintro}}
+{{ intro|markdown }}
+</div>
+<hr class="divide">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Clé</th>
+      <th scope="col">Type</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for card in cards %}
+    <tr>
+      <td> {{ card[0] }} </td>
+      <td> {{ card[1] }} </td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+<button class="btn btn-primary action-submit"> Démarrer </button>
+{% endif %}
+
+{% if state == "active" %}
+<div class="question">
+{{ question|markdown }}
+</div>
+<div style="display: block; margin-top: 1em;">
+{{ inputblock|markdown|safe }}
+</div>
+<hr class="divide">
+<button class="btn btn-primary action-submit"> Valider </button>
+<button type="button" style="float: right;" class="btn success-state"> {{step}} / 5 </button>
+{% endif %}
+
+{% if state == "inactive" %}
+<div class="question">
+{{ question|markdown }}
+</div>
+<div style="display: block; margin-top: 1em;">
+{{ inputblock|markdown|safe }}
+</div>
+<hr class="divide">
+<button class="btn btn-primary action-submit"> Nouveau mot </button>
+<button type="button" style="float: right;" class="btn success-state"> {{step}} / 5 </button>
+{% endif %}
+
+{% if state == "last" %}
+<div class="question">
+{{ question|markdown }}
+</div>
+<div style="display: block; margin-top: 1em;">
+{{ inputblock|markdown|safe }}
+</div>
+<hr class="divide">
+<button class="btn btn-primary action-submit"> Nouvelle série </button>
+<button type="button" style="float: right;" class="btn success-state"> {{step}} / 5 </button>
+{% endif %}

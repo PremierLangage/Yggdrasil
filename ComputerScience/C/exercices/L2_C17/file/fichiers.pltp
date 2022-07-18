@@ -1,0 +1,36 @@
+#*****************************************************************************
+#  Copyright (C) 2021 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+author=Prog C L2 Team
+
+title=Manipulations de fichier
+
+introduction==
+Voici quelques exercices portant sur la maniupaltion de fichier avec le 
+langage C.
+
+Outre quelques fonctions d'entrées/sorties, `fopen` et `fclose` seront donc 
+vos meilleurs amis pour cette salve d'exercices. Il faudra aussi opérer des 
+lectures et des écritures dans les fichiers ouverts.
+==
+
+
+@ /ComputerScience/C/exercices/L2_C17/file/cat_on_file.pl
+@ /ComputerScience/C/exercices/L2_C17/file/nb_lines_file.pl
+@ /ComputerScience/C/exercices/L2_C17/file/long_word.pl
+@ /ComputerScience/C/exercices/L2_C17/file/test_open_file.pl
+@ /ComputerScience/C/exercices/L2_C17/file/fill_file.pl
+@ /ComputerScience/C/exercices/L2_C17/file/letters_in_file.pl

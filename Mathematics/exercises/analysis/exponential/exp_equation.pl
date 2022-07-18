@@ -1,27 +1,20 @@
-extends = /model/mathinput.pl
+# Author: D. Doyen
+# Tags: logarithm, exponential equation
+# Résoudre une équation avec exponentielle
+# 19/7/2021
 
-title = Equation avec exponentielle
+extends = /model/math/expr.pl
 
 before ==
+from sympy import solveset, S
 var('x')
-a,b=list_randint(2,-8,8,[0])
+a = randint(-8,8,[0])
+b= randint(-8,8,[0])
 lhs = exp(a*x+b)
 rhs = randint(1,8)
 sol = list(solveset(lhs-rhs,x,domain=S.Reals))[0]
 ==
 
-text ==
+question ==
 Déterminer la solution de l'équation $$ {{lhs|latex}} = {{rhs|latex}}.$$
 ==
-
-evaluator ==
-score, error = eval_expr(input.value, sol)
-feedback = feedback_message[error]
-==
-
-solution ==
-La solution est $! {{ sol|latex }} !$.
-==
-
-
-

@@ -1,5 +1,4 @@
 from components import Component
-from customdragdrop import DragDropGroup
 import json, jsonpickle
 from jinja2 import Environment, BaseLoader
 import uuid
@@ -26,25 +25,7 @@ ComponentEnv.filters["component"] = component
 def aux_component(dic):
     newcomp = []
     for key in dic:
-        if isinstance(dic[key], list):
-            for i in range(len(dic[key])):
-                item = dic[key][i]
-                if isinstance(item, Component):
-                    name = "c" + uuid.uuid4().hex
-                    newcomp.append((name, item))
-                    dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
-                else:
-                    break
-        if isinstance(dic[key], DragDropGroup):
-            for k, item in dic[key].labels.items():
-                    name = "c" + uuid.uuid4().hex
-                    newcomp.append((name, item))
-                    dic[key].labels[k] = {"cid": item.cid, "name": name, "selector": item.selector}
-            for k, item in dic[key].drops.items():
-                    name = "c" + uuid.uuid4().hex
-                    newcomp.append((name, item))
-                    dic[key].drops[k] = {"cid": item.cid, "name": name, "selector": item.selector}
-
+        newcomp = newcomp + getnewcomp(dic[key])
     for name, comp in newcomp:
         comp.name = name
         dic[name] = comp
@@ -54,43 +35,39 @@ def aux_component(dic):
 # by corresponding components
 def aux_component1(dic):
     for key in dic:
-        if isinstance(dic[key], list):
-            for i in range(len(dic[key])):
-                item = dic[key][i]
-                if isinstance(item, dict) and 'cid' in item:
-                    name = item['name']
-                    dic[key][i] = dic[name]
-                    dic[key][i].name = name
-        if isinstance(dic[key], dict) and 'serialize' in dic[key] and dic[key]['serialize'] == 'DragDropGroup':
-            for k, item in dic[key]['labels'].items():
-                    name = item['name']
-                    dic[key]['labels'][k] = dic[name]
-                    dic[key]['labels'][k].name = name
-            for k, item in dic[key]['drops'].items():
-                    name = item['name']
-                    dic[key]['drops'][k] = dic[name]
-                    dic[key]['drops'][k].name = name
-
-            dic[key] = DragDropGroup.fromdict(**dic[key])
+        dic2comp(dic[key], dic)
 
 # HACK for components in lists
 # components in lists are duplicated outside the lists
 # and replaced by dictionaries inside the lists
 def aux_component2(dic):
     for key in dic:
-        if isinstance(dic[key], list):
-            for i in range(len(dic[key])):
-                item = dic[key][i]
-                if isinstance(item, Component):
-                    name = item.name
-                    dic[key][i] = {"cid": item.cid, "name": name, "selector": item.selector}
-        if isinstance(dic[key], DragDropGroup):
-            for k, item in dic[key].labels.items():
-                    name = item.name
-                    dic[key].labels[k] = {"cid": item.cid, "name": name, "selector": item.selector}
-            for k, item in dic[key].drops.items():
-                    name = item.name
-                    dic[key].drops[k] = {"cid": item.cid, "name": name, "selector": item.selector}
+        comp2dic(dic[key])
 
+def getnewcomp(obj):
+    newcomp = []
+    if isinstance(obj, list):
+        for i in range(len(obj)):
+            if isinstance(obj[i], Component):
+                item = obj[i]
+                name = "c" + uuid.uuid4().hex
+                newcomp.append((name, item))
+                obj[i] = {"cid": item.cid, "name": name, "selector": item.selector} 
+    return newcomp
 
+def comp2dic(obj):
+    newcomp = []
+    if isinstance(obj, list):
+        for i in range(len(obj)):
+            if isinstance(obj[i], Component):
+                item = obj[i]
+                obj[i] = {"cid": item.cid, "name": item.name, "selector": item.selector} 
 
+def dic2comp(obj, dic):
+    newcomp = []
+    if isinstance(obj, list):
+        for i in range(len(obj)):
+            if isinstance(obj[i], dict) and 'cid' in obj[i]:
+                name = obj[i]['name']
+                obj[i] = dic[name]
+                obj[i].name = name

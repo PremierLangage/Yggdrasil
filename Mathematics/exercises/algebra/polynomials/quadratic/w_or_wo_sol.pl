@@ -1,23 +1,21 @@
-extends = /model/checkbox.pl
-extends = /model/math.pl
+extends = /model/math/checkbox.pl
 
-title = Equations quadratiques
+title = Déterminer si une équation quadratique a des solutions
 
 before ==
+from sympy import Eq
 var('x')
-sol = []
-choices = []
-for i in range(3):
-    a=randint(-5,5,[0])
-    b,c = list_randint_norep(2,-5,5)
-    if b**2-4*a*c<0:
-        sol.append(i)
-    sides = randitem([[a*x**2+b*x+c,0],[a*x**2+b*x,-c],[a*x**2,-b*x-c],[a*x**2+c,-b*x]])
-    rd.shuffle(sides)
-    s = r"$! %s !$" % latex(Eq(*sides))
-    choices.append(s)
-checkbox.setitems(choices)
-checkbox.setsol_from_index(sol)
+indsol = []
+items = []
+for i in range(4):
+    a = randint(-3, 3, [0])
+    b = randint(-5, 5)
+    c = randint(-3, 3)
+    if b**2-4*a*c < 0:
+        indsol.append(i)
+    sides = choice([[a*x**2+b*x+c,0],[a*x**2+b*x,-c],[a*x**2,-b*x-c],[a*x**2+c,-b*x]])
+    shuffle(sides)
+    items.append(r"$! %s !$" % latex(Eq(*sides)))
 ==
 
 text ==

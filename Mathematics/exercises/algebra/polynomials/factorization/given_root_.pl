@@ -2,25 +2,25 @@
 # Tags: polynomials
 # 19/8/2020
 
-extends = /model/mathinput.pl
-
-title = Factorisation
+extends = /model/math/poly.pl
 
 param.degree % 2
 param.roots = int
 param.givenroot = int
 
 before ==
+from sympy import factor
 var('x')
 
-q,r,s=list_randint_norep(3,1,5,[0])
-q=randitem([-1,1])*q
-r=randitem([-1,1])*r
-s=randitem([-1,1])*s
-[a,b],[c,d],[e,f]=list_randitem_norep(3,[[1,2],[3,2],[5,2],[1,3],[2,3],[4,3],[5,3],[1,4],[3,4],[5,4],[1,5],[2,5],[3,5],[4,5],[1,6],[5,6],[1,7],[2,7],[3,7],[4,7]])
-a=randitem([-1,1])*a
-c=randitem([-1,1])*c
-e=randitem([-1,1])*e
+q,r,s=1,1,1
+
+q=choice([-1,1])*q
+r=choice([-1,1])*r
+s=choice([-1,1])*s
+[a,b],[c,d],[e,f]=sample([[1,2],[3,2],[5,2],[1,3],[2,3],[4,3],[5,3],[1,4],[3,4],[5,4],[1,5],[2,5],[3,5],[4,5],[1,6],[5,6],[1,7],[2,7],[3,7],[4,7]], k=3)
+a=choice([-1,1])*a
+c=choice([-1,1])*c
+e=choice([-1,1])*e
 
 if param['degree']==2:
     if param['roots']=="int":
@@ -29,7 +29,7 @@ if param['degree']==2:
         P=(x-q)*(a*x-b)
     elif param['roots']=="rat":
         P=(a*x-b)*(c*x-d)
-    P=randitem([-1,1])*randitem([1,2])*P
+    P=choice([-1,1])*choice([1,2])*P
     if param['givenroot']=="int":
         x1=q
     elif param['givenroot']=="rat":
@@ -39,16 +39,12 @@ sol = factor(P)
 expr = P.expand()
 ==
 
-text ==
+question ==
 Factoriser le polynôme
 $$P(x)= {{ expr|latex }}$$
-en remarquant que $% P( {{ x1 |latex }} )=0 %$.
+en remarquant que $! P( {{ x1 |latex }} )=0 !$.
 ==
 
-evaluator ==
-score, error = eval_poly(input.value, sol, var="x", form="factorized")
-feedback = message[error]
-==
 
 solution ==
 Une factorisation de cette expression est $! {{ sol|latex }} !$.
@@ -89,57 +85,57 @@ target= deg2ent1 deg2rat1 deg3ent2 deg3rat2 deg2noent deg2noentrat deg2norat
 #endif
 #if defined TARGET_deg2rat1
 \text{s=shuffle(1/2,3/2,5/2,1/3,2/3,4/3,5/3,1/4,3/4,5/4,1/5,2/5,3/5,4/5,1/6,5/6,1/7,2/7,3/7,4/7)}
-\rational{x1=randitem(-1,1)*\s[1]}
-\rational{x2=randitem(-1,1)*\s[2]}
+\rational{x1=choice(-1,1)*\s[1]}
+\rational{x2=choice(-1,1)*\s[2]}
 \text{b1=pari(denominator(\x1))}
 \text{b2=pari(denominator(\x2))}
-\text{poly=simplify(randitem(-1,1)*randint(1..2)*(\b1*\x-\b1*\x1)*(\b2*\x-\b2*\x2))}
+\text{poly=simplify(choice(-1,1)*randint(1..2)*(\b1*\x-\b1*\x1)*(\b2*\x-\b2*\x2))}
 \text{Frbis=(\x-\x1)}
 \text{Fr=(simplify(\b1*\x-\b1*\x1))}
 #endif
 #if defined TARGET_deg2noent
 \text{s=shuffle(7)}
-\integer{x1=randitem(-1,1)*\s[1]}
-\integer{x2=randitem(-1,1)*\s[2]}
-\text{poly=simplify(randitem(-1,1)*randint(1..3)*(\x-\x1)*(\x-\x2))}
+\integer{x1=choice(-1,1)*\s[1]}
+\integer{x2=choice(-1,1)*\s[2]}
+\text{poly=simplify(choice(-1,1)*randint(1..3)*(\x-\x1)*(\x-\x2))}
 \text{Fr=(simplify(\x-\x1))*(simplify(\x-\x2))}
 #endif
 #if defined TARGET_deg2noentrat
-\integer{x1=randitem(-1,1)*randint(1..7)}
-\rational{x2=randitem(-1,1)*randitem(1/2,3/2,5/2,1/3,2/3,4/3,5/3,1/4,3/4,5/4,1/5,2/5,3/5,4/5)}
+\integer{x1=choice(-1,1)*randint(1..7)}
+\rational{x2=choice(-1,1)*choice(1/2,3/2,5/2,1/3,2/3,4/3,5/3,1/4,3/4,5/4,1/5,2/5,3/5,4/5)}
 \text{b2=pari(denominator(\x2))}
-\text{poly=simplify(randitem(-1,1)*randint(1..3)*(\x-\x1)*(\b2*\x-\b2*\x2))}
+\text{poly=simplify(choice(-1,1)*randint(1..3)*(\x-\x1)*(\b2*\x-\b2*\x2))}
 \text{Frbis=(\x-\x1)(\x-\x2)}
 \text{Fr=(simplify(\x-\x1))*(simplify(\b2*\x-\b2*\x2))}
 #endif
 #if defined TARGET_deg2norat
 \text{s=shuffle(1/2,3/2,5/2,1/3,2/3,4/3,5/3,1/4,3/4,5/4,1/5,2/5,3/5,4/5)}
-\rational{x1=randitem(-1,1)*\s[1]}
-\rational{x2=randitem(-1,1)*\s[2]}
+\rational{x1=choice(-1,1)*\s[1]}
+\rational{x2=choice(-1,1)*\s[2]}
 \text{b1=pari(denominator(\x1))}
 \text{b2=pari(denominator(\x2))}
-\text{poly=simplify(randitem(-1,1)*randint(1..3)*(\b1*\x-\b1*\x1)*(\b2*\x-\b2*\x2))}
+\text{poly=simplify(choice(-1,1)*randint(1..3)*(\b1*\x-\b1*\x1)*(\b2*\x-\b2*\x2))}
 \text{Frbis=(\x-\x1)(\x-\x2)}
 \text{Fr=(simplify(\b1*\x-\b1*\x1))*(simplify(\b2*\x-\b2*\x2))}
 #endif
 #if defined TARGET_deg3ent2
 \text{s=shuffle(5)}
-\integer{x1=randitem(-1,1)*\s[1]}
-\integer{x2=randitem(-1,1)*\s[2]}
-\rational{x3=randitem(-1,1)*randitem(1/2,3/2,5/2,1/3,2/3,4/3,5/3,1/4,3/4,5/4,1/5,2/5,3/5,4/5,1/6,5/6,1/7,2/7,3/7,4/7)}
+\integer{x1=choice(-1,1)*\s[1]}
+\integer{x2=choice(-1,1)*\s[2]}
+\rational{x3=choice(-1,1)*choice(1/2,3/2,5/2,1/3,2/3,4/3,5/3,1/4,3/4,5/4,1/5,2/5,3/5,4/5,1/6,5/6,1/7,2/7,3/7,4/7)}
 \text{b3=pari(denominator(\x3))}
-\text{poly=simplify(randitem(-1,1)*(\x-\x1)*(\x-\x2)*(\b3*\x+\b3*\x3))}
+\text{poly=simplify(choice(-1,1)*(\x-\x1)*(\x-\x2)*(\b3*\x+\b3*\x3))}
 \text{Fr=(simplify(\x-\x1))*(simplify(\x-\x2))}
 #endif
 #if defined TARGET_deg3rat2
 \text{s=shuffle(1/2,3/2,5/2,1/3,2/3,4/3,5/3,1/4,3/4,5/4,1/5,2/5,3/5,4/5)}
-\rational{x1=randitem(-1,1)*\s[1]}
-\rational{x2=randitem(-1,1)*\s[2]}
-\rational{x3=randitem(-1,1)*\s[3]}
+\rational{x1=choice(-1,1)*\s[1]}
+\rational{x2=choice(-1,1)*\s[2]}
+\rational{x3=choice(-1,1)*\s[3]}
 \text{b1=pari(denominator(\x1))}
 \text{b2=pari(denominator(\x2))}
 \text{b3=pari(denominator(\x3))}
-\text{poly=simplify(randitem(-1,1)*(\b1*\x-\b1*\x1)*(\b2*\x-\b2*\x2)*(\b3*\x-\b3*\x3))}
+\text{poly=simplify(choice(-1,1)*(\b1*\x-\b1*\x1)*(\b2*\x-\b2*\x2)*(\b3*\x-\b3*\x3))}
 \text{Frbis=(\x-\x1)(\x-\x2)}
 \text{Fr=(simplify(\b1*\x-\b1*\x1))*(simplify(\b2*\x-\b2*\x2))}
 #endif

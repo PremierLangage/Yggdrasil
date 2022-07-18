@@ -1,0 +1,97 @@
+#*****************************************************************************
+#  Copyright (C) 2021 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#
+#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
+#  Creative Commons CC-by-SA 3.0
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+#  The full text of the CC-By-SA 3.0 is available at:
+#
+#            https://creativecommons.org/licenses/by-sa/3.0/
+#            https://creativecommons.org/licenses/by-sa/3.0/fr/
+#*****************************************************************************
+
+author=Nicolas Borie
+title=Base de données primitive 2 en bash (cut, grep, etc)
+
+introduction==#|markdown|
+Un fichier, nommé **item.txt**, a été placé dans le répertoire courant de travail 
+pour tous les exercices qui suivent. Chacune des lignes du fichier **item.txt** 
+contient les informations suivantes :
+
+<br />
+**id;type;couleur;poids;quantité;jour;mois;année**   
+<br />
+
+* id est un entier unique par produit
+
+* type désigne le type de produit (Lampe, Serviette, Rideau, Bougie, etc)
+
+* couleur donne la couleur principal du produit
+
+* poids donne le poids du produit en kilogrammes ou en grammes (ex: 230gr, 1.4kg)
+
+* quantité est la quantité disponible du produits dans l'entrepot
+
+* jour, mois et année est la date d'entrée du produit dans le catalogue
+
+
+## Rappels pour cette salve d'exercices :
+
+    grep -e "MOTIF REGEXP" [fichier ou stdin]
+`grep` permet de selectionner des lignes contenant
+un certain MOTIF sous forme d'expression régulière (`-v` inverse la sélection 
+et donc affiche les lignes qui ne contiennent pas le MOTIF).
+
+    cut -d 'CHAR' -f ENTIER1, ENTIER2, ... , ENTIERn [fichier ou stdin]
+`cut` permet de selectionner une ou plusieurs colonnes dans un fichier 
+strcuturé par lignes où les délimiteurs sont spécifiés par CHAR et les 
+numéros de colonnes par ENTIER1, ENTIER2, etc. La première colonne porte 
+le numéro 1.
+
+    wc -[l|c|w] [fichier ou stdin]
+Word Count `wc` compte le nombre de caractères, de mots et de lignes dans 
+le fichier en argument ou l'entrée standard. Attention, si l'argument est 
+un fichier, le nom de l'argument est bégayé sur la sortie standard.
+
+    sed -e "s/ANCIEN MOTIF/NOUVEAU MOTIF/g" [fichier ou stdin]
+`sed` et sa fonction `s` pour substitution avec paramètre `g` va chercher TOUTES(g) 
+les occurences de l'ANCIEN MOTIF (REGEXP) et les transformer(s) en une 
+occurence du NOUVEAU MOTIF. `sed` oppère son travail sur l'entrée standard 
+ou bien un fichier spécifié en argument.
+
+    sort -[u|n] [fichier ou stdin]
+    sort [fichier ou stdin] | uniq -d 
+`sort` trie par lignes le fichier en argument s'il est spécifié ou l'entrée 
+standard sinon. L'option `-u` supprime les doublons au vol lorsque le tri est 
+opéré. Le trie est fait suivant l'ordre lexicoASCII. L'option `-n` demande 
+un tri numérique à la place. `uniq -d` fait un peu l'inverse une fois que le 
+flux est déjà trié car il ne selectionne que les doublons (une seule 
+occurence est gardé par groupe de lignes réppétées).
+
+    uniq [-c]
+`uniq` supprime les doublons consécutifs mais peut aussi compter les occurences
+de chaque ligne lorsque le flux qui lui est transmis a été trié en amont.
+==
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/bdd2_bash/bdd_size.pl
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/bdd2_bash/info1.pl
+
+@ /ComputerScience/C/examples/titanic.pl
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/bdd2_bash/info2.pl
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/bdd2_bash/info3.pl
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/bdd2_bash/list_products.pl
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/bdd2_bash/most_product_day.pl
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/bdd2_bash/heavy_product.pl
+
+@ /ComputerScience/OperatingSystem/exercises/Bash/bdd2_bash/dominent_color.pl
+

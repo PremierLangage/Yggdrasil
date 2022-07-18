@@ -52,3 +52,22 @@ Il faudra bien sur remplacer XXX par l'argument entier du script et YYY par
 la succession de 0 et de 1 donnant l'écriture binaire de l'argument.
 ==
 
+solution==#|shell|
+#!/bin/bash
+
+n=$1
+while [ $n -gt "0" ];
+do
+  let i=$n%2;
+  let n=$n/2;
+  ans=$i$ans;
+done
+
+if [ -z $ans ]
+  then
+    ans=0
+fi
+
+echo "$1 s'écrit $ans en binaire."
+==
+

@@ -48,7 +48,7 @@ answer = []
 for e in sortlist.items:
     # generate random id because students can
     # guest the answer if ids like 1, 2, 3 are used
-    e["id"] = uuid.uuid4()
+    e["id"] = str(uuid.uuid4())
     answer.append(e["id"])
 random.shuffle(sortlist.items)
 ==
@@ -85,7 +85,7 @@ for i, e in enumerate(sortlist.items):
         errors += 1
 
 if errors == 0:
-    grade = (100, '''<center><span class="success-state animated pulse infinite" style="padding: 10px">Mais c'est bien sûr!</span></center>''')
+    grade = (100, '''<center><span class="success-state animated pulse infinite" style="padding: 10px">Mais c'est bien sur !</span></center>''')
 else:
     grade = (0, f'<center><span class="error-state animated pulse infinite" style="padding: 10px">{ errors } éléments mal positionés</span></center>')
 ==

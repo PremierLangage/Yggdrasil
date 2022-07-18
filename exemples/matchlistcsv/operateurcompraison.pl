@@ -17,7 +17,7 @@ match =: MatchList
 
 @ content.csv #  le fichier de données avec deux collones target;source et d'autre valeur si il faut 
 
-@ mkl.py
+@ /exemples/mkl.py
 
 # STEP 2
 before==

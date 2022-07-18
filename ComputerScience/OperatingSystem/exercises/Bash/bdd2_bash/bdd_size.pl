@@ -27,32 +27,23 @@ before==#|python|
 expected_stdout = "7248\n"
 ==
 
-text==
-On change de contexte... On souhaite maintenant extraire des informations 
-d'une base de produits, elle aussi donnée sous la forme d'un fichier structuré par lignes.
+text==#|markdown|
+On souhaite maintenant extraire des informations de la base de produits, elle aussi 
+donnée sous la forme d'un fichier structuré par lignes.
 
-Le fichier se nomme **item.txt** et chacune de ses lignes contient les informations suivantes :
-
+Rappel de la structuration du fichier **item.txt**:   
 <br />
 **id;type;couleur;poids;quantité;jour;mois;année**   
 <br />
-
-* id est un entier unique par produit
-
-* type désigne le type de produit (Lampe, Serviette, Rideau, Bougie, etc)
-
-* couleur donne la couleur principal du produit
-
-* poids donne le poids du produit en kilogrammes ou en grammes (ex: 230gr, 1.4kg)
-
-* quantité est la quantité disponible du produits dans l'entrepot
-
-* jour, mois et année est la date d'entrée du produit dans le catalogue
 
 
 **Établissez une commande qui affiche le nombre de produits dans la base de données**. 
 Veuillez à faire en sorte que votre 
 commande ne produise que l'affichage numérique seul sur une 
-ligne (puis un retour à la ligne). N'hésitez à faire plusieurs essais.
+ligne (puis un retour à la ligne).
+==
+
+solution==#|shell|
+cat item.txt | wc -l
 ==
 
