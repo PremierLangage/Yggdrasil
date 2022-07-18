@@ -1,0 +1,29 @@
+UN entete a la con de AMXC
+
+
+* 12 Ceci est une question 
+- ceci n'est pas une bonne réponse 
++ ça c'est une bonne réponse 
+
+
+* 66 Ceci est une question 
+- ceci n'est pas une bonne réponse 
++ ça c'est une bonne réponse 
+
+
+* 33 Ceci est une question 
++ et ça c'est une bonne réponse 
+- ce.  ci n'est pas une bonne réponse 
+
+
+* Quel code numérique correspond aux droits rwxr-xr-- ?
+- 721
+- 761
+- 764
+- 713
+- 731
+- 651
+- 741
++ 754
+
+

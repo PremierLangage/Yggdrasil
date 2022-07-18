@@ -41,7 +41,7 @@ Un exemple complet d'exécution du programme est :<br><br>
 ==
 Xeditor.code==
 def table(x,n):
-    print('\nDe 0 fois', x, 'à', n - 1, 'fois', x, ':')
+    print('\n de 0 fois', x, 'à', n - 1, 'fois', x, ':')
     for i in range(n):
         print(i * x)
 def  saisie_entier_str_positif():
@@ -56,7 +56,7 @@ x = saisie_entier_str_positif()
 table(n,x)
 ==
 soluce==#|python|
-def  saisie_entier_str_positif():
+def saisie_entier_str_positif():
     n=int(input("Saisissez un entier strictement positif : "))
     while(n<=0):
          n = int(input("Saisissez un entier strictement positif : "))

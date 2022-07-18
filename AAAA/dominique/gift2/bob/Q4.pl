@@ -11,5 +11,5 @@ Quel animal mange quoi ?
 choices==
 =Chat -> Nourriture pour chats
 =Chien -> Nourriture pour chiens
-=Ours -> Nourriture pour ours
+
 ==

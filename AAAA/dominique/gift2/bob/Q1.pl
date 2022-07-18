@@ -18,6 +18,6 @@ Bonne réponse !
 
 # Feedback shown when the student gives the wrong answer
 feedback_wrong==
-Non la réponse était c'est faux.
+Non la réponse était 2
 ==
 

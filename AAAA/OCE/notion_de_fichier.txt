@@ -1,0 +1,154 @@
+** Dans les systèmes d'exploitation de type Unix, quels sont les éléments modélisés avec la notion de fichier ?
+- L'humeur de l'utilisateur.
+- La fatigue des circuits imprimés.
+- La dissipation de la chaleur dans le CPU.
++ Les périphériques.
++ Les disques de stockage.
++ Les fichiers exécutables.
++ Les fichiers humainement lisibles.
++ La souris.
++ Le clavier.
++ Une connexion internet.
+
+
+** Quelles informations sont stockées dans l'inode d'un fichier ?
+- Le nom du fichier.
+- Le chemin pour atteindre le fichier depuis la racine.
+- Le type du fichier : image, film, fichier texte.
++ L'emplacement physique du fichier sur le périphérique de stockage.
++ Les droits du fichier.
++ Des informations temporelles sur la création, dernière modification.
++ Le nombre de lien : nombre de ressources actives qui référencent le fichier.
++ Le propriétaire du fichier.
+
+
+** Parmi les types suivants, lesquels sont des types de fichiers au sens du système Unix ?
+- Archive oubliée.
+- Lien du sang.
+- Tube musical de l'été.
+- Périphérique mobile.
+- Fichier imprimable.
++ Fichier ordinaire.
++ Répertoire.
++ Périphérique caractère.
++ Périphérique bloc.
++ Tube nommé (FIFO).
++ Lien symbolique.
++ Socket, connexion réseau.
+
+
+** Que peut-on trouver dans l'organisation logique d'un disque dur formaté en Ext4 ?
+- Le bloc print pour exploiter les imprimantes.
+- Un dictionnaire Python des sockets et connexions réseaux.
+- Une liste des répertoires.
+- La liste brute des noms des fichiers stockés sur le disque.
++ Un tableau d'inodes (certaines sont libres, certaines sont occupées).
++ Des blocs de données de taille fixe pour stocker les fichiers.
++ Un morceau réservé au système pour le démarrage de la machine (boot block).
+
+
+** Sélectionner les déclarations correctes sur les modes de bufferisation.
+- La bufferisation totale est appliquée sur l'entrée standard **stdin**.
+- La bufferisation limite l'usure de l'écran.
+- La bufferisation permet aux bovins se changer de sexe.
+- Les deux sorties standards ne sont pas bufferisées.
++ La sortie standard **stdout** est bufferisée par ligne.
++ La sortie standard d'erreur **stderr** n'est pas bufferisée.
++ La bufferisation permet d'éviter de soliciter des mécanismes lourds <br> pour trop peu de données transférées.
++ L'entrée standard **stdin** est bufferisée par ligne.
+
+
+** Sélectionner les fonctionalités de redirection valides en bash .
+- `<2`
+- `><`
+- `XD`
+- `:-;`
+- `1&3>`
+- `<3`
++ `|`
++ `<`
++ `<<`
++ `2>`
++ `2&1>`
+
+
+** Quelle(s) action(s) replace(nt) l'indicateur de position au début d'un fichier en C ?
+- On déplace le curseur clignotant avec la souris pour le remmettre au début.
+- C'est impossible, il faut absolument faire un nouveau fichier.
+- On exécute **fseek(f, 42, SEEK_CUR)** où **f** est le fichier ouvert.
+- On exécute **fseek(f, 0, SEEK_END)** où **f** est le fichier ouvert.
+- On ferme le fichier (**fclose**) et on le ré-ouvre en mode "a" (**fopen**).
++ On ferme le fichier (**fclose**) et on le ré-ouvre en mode "r" (**fopen**).
++ On appelle la fonction **rewind** sur le fichier ouvert.
++ On exécute **fseek(f, 0, SEEK_SET)** où **f** est le fichier ouvert.
+
+
+** Quels sont les enjeux relevés par un système de fichiers dans un système d'exploitation ?
+- L'humour : faire en sorte que l'ouverture et la fermeture des fichiers soient drôles.
+- L'affichage : pouvoir afficher à l'écran le contenu des fichiers.
+- La programmation : planifier les futures tâches que le C.P.U. devra traiter.
+- L'élagage : pouvoir couper les branches dans l'arborecence des fichiers.
++ Le partage : assurer l'utilisation simultanée de plusieurs disques <br> et/ou plusieurs fichiers.
++ L'efficacité : optimisation via des caches, accès standardisés et uniformes.
++ Les droits : protection du système, protections entre les utilisateurs.
++ La cohérence : assurer l'alignement et la cohérence du contenu <br> des fichiers sur les disques.
+
+
+** Quels indices et informations peuvent aider Unix à déterminer le type d'un fichier ?
+- L'extension .txt garantie que le fichier est humainement lisible.
+- L'icone contraint le contenu du fichier.
+- Le nom du fichier garantie le type de son contenu.
+- L'extension garantie le type du fichier.
++ Le nom du fichier (XXXXrc, config, makefile, etc...).
++ L'extension donne un indice (.c, .py, .txt, .png, .jpg, .mp3, etc...).
++ Les droits.
++ Les premiers octets du fichier (magic numbers, ELF, etc...).
++ Le contenu du fichier (en dernier recours...).
++ Unix est permissif pour le nom des fichiers, on peut attribuer de mauvais noms.
+
+
+** Dans quel(s) repertoire(s) trouve-t-on les programmes exécutables de base d'Unix ?
+- tmp/
+- dtc/
+- dev/
+- mnt/
+- etc/
++ bin/
++ sbin/
+
+
+** Quel(s) sont les flux d'octets standard en Unix ?
+- setin, le flux conventionnel.
+- bloodout, le flux mensuel.
+- corsa, le canal habituel.
+- errno, le flux entier.
+- errin, l'entrée standard d'erreur.
++ stdin, l'entrée standard.
++ stdout, la sortie standard.
++ stderr, la sortie standard d'erreur.
+
+
+** Que fais la commande : man printf >> log.txt ?
+- La commande rajoute la documentation de printf au début du fichier.
+- La commande retourne True si la documentation de printf est <br> plus longue que le fichier.
+- La commande retourne True si on trouve la documentation de printf dans le fichier.
+- La commande détruit l'ancien contenu du fichier log.txt.
+- La commande déclanche une erreur si le fichier log.txt n'existe pas.
++ La commande crée le fichier log.txt s'il n'existe pas.
++ La commande laisse l'ancien contenu du fichier log.txt au début du fichier.
++ La commande rajoute la documentation de printf à la fin du fichier.
+
+
+** Que fais la ligne de commande : ./is_abr < abr.txt ?
+- La commmande exécute le programme is_abr avec les deux arguments '<' et 'abr.txt'.
+- La commande trouve les chaînes de texte contenues dans le fichier 'is_abr'.
+- La commande construit un arbre binaire de recherche 'abr'.
+- La commande redirige la sortie vers le fichier 'abr.txt'.
+- La commande n'affichera plus rien à l'écran.
++ Cela exécute is_abr en connectant une ouverture du fichier 'abr.txt' <br> sur l'entrée standard .
++ les scanf dans le programme is_abr seront opérés sur le contenu du fichier 'abr.txt'.
++ Cela s'appelle faire une redirection en entrée du programme is_abr.
++ Le clavier n'est plus utile durant l'exécution de la commande.
+
+
+

@@ -21,7 +21,18 @@ pim,pam,pom=0,0,0
 pltest==
 >>> pim # Pim vaut un
 1
->>> pam == pam  #
+>>> "pam" in globals() #
+True
+>>> pam
+2
+>>> pom
+3
+==
+
+pltest2==
+>>> pim # Pim vaut un
+1
+>>> "pam" in globals() #
 True
 >>> pam
 2

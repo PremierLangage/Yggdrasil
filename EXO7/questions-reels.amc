@@ -1,0 +1,278 @@
+
+** Quelles sont les assertions vraies ?
+ 
++ $%\frac{14}{12}+\frac{12}{14} = \frac{85}{42}%$
++ $%\frac{36}{5} - 3 = \frac{21}{5}%$
++ $%\frac{14}{15}/\frac{21}{35} = \frac{14}{9}%$
+- $%\frac{4}{16}+\frac{4}{20} = \frac{9}{16}%$
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ Le nombre dont l'écriture décimale est $%0,090909\ldots%$ est un nombre rationnel.
++ $%9,99999\ldots = 10%$
+- $%\frac{1}{7} = 0,142142142\ldots%$
+- $%\frac{1}{5} = 0,202020\ldots%$
+
+
+
+** Soient $%x%$ et $%y%$ deux nombres rationnels strictement positifs.
+Parmi les nombres réels suivants, lesquels sont aussi des nombres rationnels ?
+ 
++ $%\frac{x-y}{x+y}%$
++ $%x-y^2%$
++ $%(\sqrt{x}-\sqrt{y})(\sqrt{x}+\sqrt{y})%$
+- $%\frac{\sqrt{x}}{\sqrt{y}}%$
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ La somme de deux nombres rationnels est un nombre rationnel.
++ Le produit de deux nombres rationnels est un nombre rationnel.
+- La somme de deux nombres irrationnels est un nombre irrationnel.
+- Le produit de deux nombres irrationnels est un nombre irrationnel.
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ L'écriture décimale de $%\frac{n}{n+1}%$ est finie ou périodique (quelque soit $%n\in\mathbb{N}%$).
++ Un nombre réel qui admet une écriture décimale finie est un nombre rationnel.
+- L'écriture décimale de $%\sqrt{3}%$ est finie ou périodique.
+- Un nombre réel qui admet une écriture décimale infinie est un nombre irrationnel.
+
+
+
+** Je veux montrer que $%\log 13%$, est un nombre irrationnel. On rappelle que $%\log 13%$ est le réel tel que $%10^{\log 13} = 13%$. Quelle démarche puis-je adopter ?
+ 
++ Je suppose par l'absurde que $%\log 13 = \frac pq%$, avec $%p,q \in \mathbb{N}^*%$ et je cherche une contradiction après avoir écrit $%13^q = 10^p%$.
+- Par division je calcule l'écriture décimale de $%\log 13%$ et je montre qu'elle est périodique.
+- Je prouve par récurrence que $%\log n%$ est irrationnel pour $%n\ge2%$.
+- Il est faux que $%\log 3%$ soit un nombre irrationnel.
+
+
+
+** Comment s'appelle les propriétés suivantes de $%\mathbb{R}%$ ?
+ 
++ $%(a+b)+c=a+(b+c)%$ est l'associativité de l'addition.
++ $%a \times b = b\times a%$ est la commutativité de la multiplication.
+- $%(a \times b) \times c=a \times (b \times c)%$ est la distributivité de la multiplication.
+- $%a \times (b+c) = a\times b + a \times c%$ est l'intégrité.
+
+
+
+** Soient $%x,y \in \mathbb{R}%$ tels que $%x \leqslant 2y%$.
+Quelles sont les assertions vraies ?
+ 
++ $%2x \leqslant x+2y%$
++ $%-2y \leqslant -x%$
+- $%x^2 \leqslant 2xy%$
+- $%y\leqslant \frac{x}{2}%$
+
+
+
+** Notation : $%E(x)%$ désigne la partie entière du réel $%x%$.
+Quelles sont les assertions vraies ?
+ 
++ $%E(-3,33) = -4%$
+- $%E(7,9) = 8%$
+- $%E(\frac{5}{3}) = 5%$
+- $%E(x)=0 \implies x=0%$
+
+
+
+** Pour $%x\in\mathbb{R}%$, on définit $%f(x)= x - |x|%$.
+Quelles sont les assertions vraies ?
+ 
++ $%\forall x \in \mathbb{R} \quad f(x)\le0%$
++ $%\forall x >0 \quad f(x) =  0%$
+- $%\forall x \in \mathbb{R} \quad f(x)\ge0%$
+- $%\forall x < 0 \quad f(x) =  -2x%$
+
+
+
+** Quelles sont les assertions vraies concernant le maximum de nombres réels ?
+ 
++ $%\max(a,b) \geqslant a%$ et $%\max(a,b) \geqslant b%$
++ $%\max( \max(a,b), c ) = \max(a,b,c)%$
++ $%\min(a, \max(a,b)) = a%$
+- $%\max(a,b) > a%$ ou $%\max(a,b) > b%$
+
+
+
+** Notation : $%E(x)%$ désigne la partie entière du réel $%x%$.
+Quelles sont les assertions qui caractérisent la partie entière ?
+ 
++ $%E(x)%$ est le plus grand entier inférieur ou égal à $%x%$.
++ $%E(x)%$ est l'entier tel que $%E(x) \leqslant x < E(x)+1%$
+- $%E(x)%$ est le plus petit entier supérieur ou égal à $%x%$.
+- $%E(x)%$ est l'entier tel que $%x \leqslant E(x) < x+1%$
+
+
+
+** Pour $%x\in \mathbb{R}%$, on définit $%G(x) = E(10x)%$.
+ 
++ $%G(x)=G(y) \implies |x-y| \leqslant \frac{1}{10}%$
+- $%G(\frac23) = 66%$
+- $%\forall x>0 \quad G(x) \geqslant 1%$
+- $%G(x)=10 \iff x \in\{10,11,12,\ldots,19\}%$
+
+
+
+** Quelles sont les assertions vraies pour $%x\in\mathbb{R}%$ ?
+ 
++ $%x\neq 0 \iff |x|>0%$
++ $%\sqrt{x^2} = |x|%$
++ $%x+|x|=0 \iff x \leqslant 0%$
+- $%|x|>1 \iff x \geqslant 1%$
+
+
+
+** Quelles propriétés découlent de la propriété d’Archimède des réels (c'est-à-dire $%\mathbb{R}%$ est archimédien) ?
+ 
++ $%\forall x>0 \quad \exists n \in\mathbb{N} \quad n>x%$
++ $%\forall arepsilon >0 \quad \exists n \in \mathbb{N} \quad 0 < \frac 1n < arepsilon%$
++ $%\forall x>0 \quad \forall y>0 \quad \exists n \in \mathbb{N} \quad nx >y%$
+- $%\exists x>0 \quad \forall n \in\mathbb{N} \quad x>n%$
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ $%\max(x,y) = \frac{x+y + |x-y|}{2}%$
+- $%\max(x,y) = \frac{x+y-|x|-|y|}{2}%$
+- $%\max(x,y) = \frac{x+y-|x+y|}{2}%$
+- $%\max(x,y) = \frac{|x+y|-x-y}{2}%$
+
+
+
+** Quelles sont les assertions vraies, pour tout $%x,y\in\mathbb{R}%$ ?
+ 
++ $%|x| \leqslant |x-y|+|y|%$
++ $%|x-y| \leqslant |x| + |y|%$
+- $%|x-y| \leqslant |x|-|y|%$
+- $%|x+y| \geqslant |x| + |y|%$
+
+
+
+** On définit la partie fractionnaire d'un réel $%x%$, par $%F(x) = x -E(x)%$.
+ 
++ Si $%F(x)=F(y)%$ alors $%x-y \in \mathbb{Z}%$.
+- $%F(x) = 0 \iff 0 \leqslant x <1%$
+- Si $%7 \leqslant x <8%$ alors $%F(x) = 7%$.
+- Si $%x=-0,2%$ alors $%F(x) = -0,2%$.
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ $%x \in ]5;7[ \iff |x-6|<1%$
+- $%x \in ]5;7[ \iff |x-1|<6%$
+- $%x \in [0,999 \, ; \, 1,001] \iff |x+1|<0,001%$
+- $%x \in [0,999 \, ; \, 1,001] \iff |x+1|\leqslant 0,001%$
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ $%[a,b[\cap ]a,b] = ]a,b[%$
+- $%[3,7] \cup [8,10] = [3,10]%$
+- $%[-3,5] \cap [2,7] = [-3,7]%$
+- $%[a,b[\cup ]a,b] = ]a,b[%$
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ $%x \in [x_0,x_0+arepsilon] \implies |x-x_0| \leqslant arepsilon%$
++ $%|x-y|=1 \iff y=x+1%$ ou $%y=x-1%$
+- $%x-x_0 \leqslant arepsilon \implies x \in [x_0,x_0+arepsilon]%$
+- $%|x| > A \iff x > A%$ ou  $%x < A%$
+
+
+
+** Soient $%x,y \in \mathbb{R}%$ avec $%x<y%$.
+ 
++ Il existe $%c\in\mathbb{Q}%$ tel que $%x < c < y%$.
++ Il existe $%c\in\mathbb{R}\setminus\mathbb{Q}%$ tel que $%x < c <y%$.
++ Il existe une infinité de $%c\in\mathbb{Q}%$ tels que $%x < c < y%$.
+- Il existe $%c\in\mathbb{Z}%$ tel que $%x < c < y%$.
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ Il existe $%x\in\mathbb{Q}%$ tel que $%x-\sqrt2 < 10^{-10}%$.
++ Il existe $%x\in\mathbb{R}\setminus\mathbb{Q}%$ tel que $%x-\frac43 < 10^{-10}%$.
++ Il existe une suite de nombres rationnels dont la limite est $%\sqrt 2%$.
++ Il existe une suite de nombres irrationnels dont la limite est $%\frac43%$.
+
+
+
+** Pour $%n\geqslant 1%$ on définit l'intervalle $%I_n = [0,\frac1n]%$. 
+Quelles sont les assertions vraies ?
+ 
++ Si $%x \in I_n%$ pour tout $%n\ge1%$, alors $%x=0%$.
+- Pour tout $%n\geqslant 1%$, $%I_n \subset I_{n+1}%$.
+- L'union de tous les $%I_n%$ (pour $%n%$ parcourant $%\mathbb{N}^*%$) est $%[0,+\infty[%$.
+- Pour $%n < m%$ alors $%I_n \cap I_{n+1} \cap \ldots \cap I_m = I_n%$.
+
+
+
+** Pour $%n\geqslant 1%$ on définit l'intervalle $%I_n = [0,n]%$. 
+Quelles sont les assertions vraies ?
+ 
++ Pour tout $%n\geqslant 1%$, $%I_n \subset I_{n+1}%$.
++ L'union de tous les $%I_n%$ (pour $%n%$ parcourant $%\mathbb{N}^*%$) est $%[0,+\infty[%$.
++ Pour $%n < m%$ alors $%I_n \cap I_{n+1} \cap \ldots \cap I_m = I_n%$.
+- Si $%x \in I_n%$ pour tout $%n\ge1%$, alors $%x=0%$.
+
+
+
+** Soient $%I%$ et $%J%$ deux intervalles de $%\mathbb{R}%$. Quelles sont les assertions vraies ?
+ 
++ $%I \cap J%$ est un intervalle (éventuellement réduit à un point ou vide).
++ Si $%I \cap J \neq \varnothing%$ alors $%I \cup J%$ est un intervalle.
++ Si $%I \subset J%$ alors $%I \cup J%$ est un intervalle.
+- $%I \cup J%$ est un intervalle.
+
+
+
+** Soit $%I%$ un intervalle ouvert de $%\mathbb{R}%$. Soient $%x,y \in\mathbb{R}%$ avec $%x < y%$.
+Quelles sont les assertions vraies ?
+ 
++ Si $%x,y\in I%$, il existe $%c\in I%$ tel que $%x < c < y%$.
++ Si $%x,y\in I%$, alors pour tout $%c%$ tel que $%x < c < y%$, on a $%c \in I%$.
++ Si $%x \notin I%$ et $%y\in I%$, il existe $%c\in I%$ tel que $%x < c < y%$.
+- Si $%x \notin I%$ et $%y\in I%$, il existe $%c\notin I%$ tel que $%x < c < y%$.
+
+
+
+** Le maximum d'un ensemble $%E%$, s'il existe, est le réel $%m \in E%$ tel que pour tout $%x\in E%$, on a $%x \leqslant m%$.
+ 
++ Si $%E = [-3,-1]%$ alors $%-1%$ est le maximum de $%E%$.
++ L'ensemble $%E = [-3,-1[%$ n'admet pas de maximum.
+- Si $%E = [3,7]%$ alors $%8%$ est un maximum de $%E%$.
+- L'ensemble $%E = [-3,2[ \  \cap \  ]-1,1]%$ n'admet pas de maximum.
+
+
+
+** On dit que $%M \in \mathbb{R}%$ est un majorant d'un ensemble $%E \subset \mathbb{R}%$ si pour tout $%x\in E%$, on a $%x \leqslant M%$.
+ 
++ Si $%E = [3,7]%$ alors $%8%$ est un majorant de $%E%$.
++ Si $%E = [-3,-1[%$ alors tout $%M \geqslant -1%$ est un majorant de $%E%$.
+- Si $%E = ]0,+\infty[%$ alors tout $%M \geqslant 0%$ est un majorant de $%E%$.
+- Si $%E = [2,3] \cup [5,10]%$ alors tout $%M \geqslant 3%$ est un majorant de $%E%$.
+
+
+
+** On dit que $%M \in \mathbb{R}%$ est un majorant d'un ensemble $%E \subset \mathbb{R}%$ si pour tout $%x\in E%$, on a $%x \leqslant M%$.
+ 
++ Un intervalle non vide et borné admet au moins deux majorants.
++ Un ensemble qui admet un majorant, en admet une infinité.
+- Un intervalle non vide et différent de $%\mathbb{R}%$ admet toujours un majorant.
+- L'ensemble $%\mathbb{N}%$ admet une infinité de majorants.
+
+
