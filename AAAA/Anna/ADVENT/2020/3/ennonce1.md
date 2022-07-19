@@ -1,4 +1,5 @@
-Une fois les problèmes de connexion à la luge résolus, vous partez en direction de l'aéroport. Bien que voyager en toboggan puisse être facile, ce n'est certainement pas sûr : il y a très peu de direction et la zone est couverte d'arbres. Vous aurez besoin de voir quels angles vous amèneront près du moins d'arbres.
+Une fois les problèmes de connexion à la luge résolus, vous partez en direction de l'aéroport. Bien que voyager en toboggan puisse être facile, ce n'est certainement pas sûr : il y a très peu de direction et la zone est couverte d'arbres. 
+Vous aurez besoin de voir quels angles vous amèneront près du moins d'arbres.
 
 En raison de la géologie locale, les arbres de cette zone ne poussent que sur des coordonnées entières exactes dans une grille. Vous faites une carte (votre entrée de puzzle) des carrés ouverts (.) et des arbres (#) que vous pouvez voir. Par exemple:
 
@@ -13,7 +14,7 @@ En raison de la géologie locale, les arbres de cette zone ne poussent que sur d
     #.##...#...
     #...##....#
     .#..#...#.#
-    
+
 Ce ne sont pas les seuls arbres, cependant; en raison de quelque chose que vous avez lu une fois concernant la génétique arboricole et la stabilité du biome, le même schéma se répète plusieurs fois à droite :
 
     ..##.........##.........##.........##.........##.. .......##....... --->
