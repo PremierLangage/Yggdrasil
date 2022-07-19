@@ -4,11 +4,12 @@ Si vous pouvez modéliser la façon dont la fumée traverse les grottes, vous po
 
 La fumée s'écoule vers le point le plus bas de la zone dans laquelle elle se trouve. Par exemple, considérez la carte de hauteur suivante :
 
-2199943210
-3987894921
-9856789892
-8767896789
-9899965678
+    2199943210
+    3987894921
+    9856789892
+    8767896789
+    9899965678
+
 Chaque nombre correspond à la hauteur d'un emplacement particulier, où 9 est le plus haut et 0 est le plus bas qu'un emplacement puisse être.
 
 Votre premier objectif est de trouver les points bas - les emplacements qui sont plus bas que n'importe lequel de ses emplacements adjacents. La plupart des emplacements ont quatre emplacements adjacents (haut, bas, gauche et droite) ; les emplacements sur le bord ou le coin de la carte ont trois ou deux emplacements adjacents, respectivement. (Les emplacements en diagonale ne comptent pas comme adjacents.)
