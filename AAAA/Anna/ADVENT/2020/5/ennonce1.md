@@ -35,5 +35,4 @@ BFFFBBFRRR : ligne 70, colonne 7, ID de siège 567.
 FFFBBBFRRR : ligne 14, colonne 7, ID de siège 119.
 BBFFBBFRLL : ligne 102, colonne 4, ID de siège 820.
 
-
 Pour vérifier votre santé mentale, parcourez votre liste de cartes d'embarquement. Quel est l'ID de siège le plus élevé sur une carte d'embarquement ?
