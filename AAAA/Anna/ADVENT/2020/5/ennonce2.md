@@ -16,4 +16,4 @@ Les autres occurrences de la lettre ne sont pas pertinentes aux fins de l'applic
     1-3 b : cdefg est invalide : ni la position 1 ni la position 3 ne contiennent b.
     2-9 c : ccccccccc n'est pas valide : les positions 2 et 9 contiennent c.
 
-Vous devez écrire une fonction Question2() qui lit le fichier "data" avec les données et qui retourne le nombre de mots de passe sont valides selon la nouvelle interprétation des politiques ?
+Vous devez écrire une fonction Question2() qui lit le fichier "data" avec les données et qui retourne le nombre de mots de passe sont valides selon la nouvelle interprétation des politiques 
