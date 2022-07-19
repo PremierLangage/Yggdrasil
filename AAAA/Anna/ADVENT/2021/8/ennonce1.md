@@ -4,23 +4,25 @@ Alors que votre sous-marin progresse lentement dans le système de grottes, vous
 
 Chaque chiffre d'un affichage à sept segments est rendu en activant ou désactivant l'un des sept segments nommés de a à g :
 
-  0 : 1 : 2 : 3 : 4 :
- aaaa .... aaaa aaaa ....
-avant JC  . c. c. c b c
-avant JC  . c. c. c b c
- .... .... dddd dddd dddd
-ef. f e . . F  . F
-ef. f e . . F  . F
- gggg .... gggg gggg ....
+    0 : 1 : 2 : 3 : 4 :
+    aaaa .... aaaa aaaa ....
+    avant JC  . c. c. c b c
+    avant JC  . c. c. c b c
+    .... .... dddd dddd dddd
+    ef. f e . . F  . F
+    ef. f e . . F  . F
+    gggg .... gggg gggg ....
 
-  5 : 6 : 7 : 8 : 9 :
- aaaa aaaa aaaa aaaa aaaa
-b. b. . c b c b c
-b. b. . c b c b c
- dddd dddd .... dddd dddd
-. f e f . f e f . F
-. f e f . f e f . F
- gggg gggg .... gggg gggg
+    5 : 6 : 7 : 8 : 9 :
+    aaaa aaaa aaaa aaaa aaaa
+    b. b. . c b c b c
+    b. b. . c b c b c
+    dddd dddd .... dddd dddd
+    . f e f . f e f . F
+    . f e f . f e f . F
+    gggg gggg .... gggg gggg
+
+
 Ainsi, pour rendre un 1, seuls les segments c et f seraient activés ; le reste serait éteint. Pour rendre un 7, seuls les segments a, c et f seraient activés.
 
 Le problème est que les signaux qui contrôlent les segments ont été mélangés sur chaque écran. Le sous-marin essaie toujours d'afficher des nombres en produisant une sortie sur les fils de signal a à g, mais ces fils sont connectés aux segments de manière aléatoire. Pire, les connexions fil/segment sont mélangées séparément pour chaque affichage à quatre chiffres ! (Cependant, tous les chiffres d'un affichage utilisent les mêmes connexions.)
