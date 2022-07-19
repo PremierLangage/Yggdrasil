@@ -22,16 +22,17 @@ Votre objectif est de trouver le nombre de chemins distincts qui commencent au d
 
 Compte tenu de ces règles, il existe 10 chemins à travers cet exemple de système de grottes :
 
-début,A,b,A,c,A,fin
-début, A, b, A, fin
-début, A, b, fin
-début,A,c,A,b,A,fin
-début,A,c,A,b,fin
-début,A,c,A,fin
-début, A, fin
-début,b,A,c,A,fin
-début,b,A,fin
-début, b, fin
+    début,A,b,A,c,A,fin
+    début, A, b, A, fin
+    début, A, b, fin
+    début,A,c,A,b,A,fin
+    début,A,c,A,b,fin
+    début,A,c,A,fin
+    début, A, fin
+    début,b,A,c,A,fin
+    début,b,A,fin
+    début, b, fin
+
 (Chaque ligne de la liste ci-dessus correspond à un chemin unique ; les grottes visitées par ce chemin sont répertoriées dans l'ordre dans lequel elles sont visitées et séparées par des virgules.)
 
 Notez que dans ce système de grottes, la grotte d n'est jamais visitée par aucun chemin : pour ce faire, la grotte b devrait être visitée deux fois (une fois sur le chemin de la grotte d et une seconde fois en revenant de la grotte d), et depuis la grotte b est petit, ce n'est pas autorisé.
