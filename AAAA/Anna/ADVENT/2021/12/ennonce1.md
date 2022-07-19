@@ -38,43 +38,46 @@ Notez que dans ce système de grottes, la grotte d n'est jamais visitée par auc
 
 Voici un exemple un peu plus grand :
 
-dc-end
-HN-démarrage
-commencer-kj
-démarrage à courant continu
-dc-HN
-LN-cc
-Fin HN
-kj-sa
-kj-HN
-kj-dc
+    dc-fin
+    HN-début
+    début-kj
+    dec-début
+    dc-HN
+    LN-cc
+    HN-fin
+    kj-sa
+    kj-HN
+    kj-dc
+
+
 Les 19 chemins qui le traversent sont les suivants :
 
-début,HN,dc,HN,fin
-début,HN,dc,HN,kj,HN,fin
-début,HN,dc,fin
-début, HN, dc, kj, HN, fin
-début, HN, fin
-début, HN, kj, HN, dc, HN, fin
-début, HN, kj, HN, dc, fin
-début,HN,kj,HN,fin
-début,HN,kj,dc,HN,fin
-début,HN,kj,dc,fin
-début,cc,HN,fin
-début,dc,HN,kj,HN,fin
-début, courant continu, fin
-début,dc,kj,HN,fin
-début,kj,HN,dc,HN,fin
-début,kj,HN,dc,fin
-début,kj,HN,fin
-début, kj, dc, HN, fin
-début, kj, dc, fin
+    début,HN,dc,HN,fin
+    début,HN,dc,HN,kj,HN,fin
+    début,HN,dc,fin
+    début, HN, dc, kj, HN, fin
+    début, HN, fin
+    début, HN, kj, HN, dc, HN, fin
+    début, HN, kj, HN, dc, fin
+    début,HN,kj,HN,fin
+    début,HN,kj,dc,HN,fin
+    début,HN,kj,dc,fin
+    début,cc,HN,fin
+    début,dc,HN,kj,HN,fin
+    début, courant continu, fin
+    début,dc,kj,HN,fin
+    début,kj,HN,dc,HN,fin
+    début,kj,HN,dc,fin
+    début,kj,HN,fin
+    début, kj, dc, HN, fin
+    début, kj, dc, fin
+
 Enfin, cet exemple encore plus grand comporte 226 chemins le traversant :
 
-    fs-fini
+    fs-fin
     il-DX
     fs-il
-    commence-DX
+    début-DX
     pj-DX
     fin-zg
     zg-sl
@@ -84,10 +87,10 @@ Enfin, cet exemple encore plus grand comporte 226 chemins le traversant :
     fs-DX
     pj-RW
     zg-RW
-    commence-pj
+    début-pj
     il-WI
     zg-il
     pj-fs
-    commence-RW
+    début-RW
 
 Combien de chemins à travers ce système de grottes y a-t-il qui visitent de petites grottes au plus une fois ?
