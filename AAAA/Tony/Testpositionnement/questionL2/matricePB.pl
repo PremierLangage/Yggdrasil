@@ -2,10 +2,10 @@ extends= /model/basic/checkbox_rw.pl
 
  
 question==
-L'application $§\begin{array}{ll}
-\varphi : &\R_2[X]\longrightarrow \R_2[X] \\
+L'application $!\begin{array}{ll}
+\varphi : &\R_2[X]\longrightarrow \R_2[X] \\\\
    &P \mapsto P+P'
-\end{array}§$ a pour matrice dans la base canonique : 
+\end{array}!$ a pour matrice dans la base canonique : 
 ==
  
 nbitems=4
