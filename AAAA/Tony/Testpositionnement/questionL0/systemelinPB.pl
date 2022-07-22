@@ -17,7 +17,7 @@ $!\left \{\begin{array}{rcl}x+y-z&=&0 \\\\ y+z&=&0\\\\ 2z&=&0\end{array}\right.!
 ==
 
 wrong==
-$!\left \{\begin{array}{rcl}x+y&=&1 \\\\ 2x+2y&=&4\end{array}\right.!$
+$!\left \\{\begin{array}{rcl}x+y&=&1 \\\\ 2x+2y&=&4\end{array}\right.!$
 $!\left \{\begin{array}{rcl}x+y+z&=&1 \\\\ x+y-z&=&2\end{array}\right.!$ 
 ==
 
