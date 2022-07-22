@@ -3,14 +3,15 @@ extends= /model/basic/checkbox_rw.pl
  
 question==
 Parmi les arguments suivants, lesquels justifient un des points numérotés du calcul suivant?
+
 $!
 \begin{array}{ll}
 z = -\overline{z} &\underset{(1)}{\iff} a+ib= -(a-ib) \\\\
 &\underset{(2)}{\iff} a+ib = -a+ib \\\\
 &\underset{(3)}{\iff} 2a=0 \\\\
 &\underset{(4)}{\iff} a=0 \\\\
-& \underset{(5)}{\iff} z
-\end{array}!$ est imaginaire pur.
+& \underset{(5)}{\iff} z est imaginaire pur.
+\end{array}!$ 
 
 ==
  
