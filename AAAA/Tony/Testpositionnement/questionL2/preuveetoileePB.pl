@@ -4,7 +4,7 @@ extends= /model/basic/checkbox_rw.pl
 question==
 Voici la preuve de "Si $!|q|<1!$ alors $!\sum q^n!$ converge". Parmi les arguments donnés, quels sont ceux qui justifient un des points numérotés ci-dessous.
  
-$!\begin{array}{ll}\forall N\in\mathbb{N},\quad (1-q)S_N&\underset{(1)}{=}\sum_{n=0}^N(1-q)q^n\\\\&\underset{(2)}{=}\sum_{n=0}^N(q^n-q^{n+1})\\\\&\underset{(3)}{=}\sum_{n=0}^N q^n-\sum_{n=0}^N q^{n+1}\\\\&\underset{(4)}{=}\sum_{n=0}^N q^n-\sum_{n=1}^{N+1} q^{n}\\\\&\underset{(5)}{=} 1-q^{N+1}.!$
+$!\begin{array}{ll}\forall N\in\mathbb{N},\quad (1-q)S_N&\underset{(1)}{=}\sum_{n=0}^N(1-q)q^n\\\\&\underset{(2)}{=}\sum_{n=0}^N(q^n-q^{n+1})\\\\&\underset{(3)}{=}\sum_{n=0}^N q^n-\sum_{n=0}^N q^{n+1}\\\\&\underset{(4)}{=}\sum_{n=0}^N q^n-\sum_{n=1}^{N+1} q^{n}\\\\&\underset{(5)}{=} 1-q^{N+1}.\end{array}!$
 
 ==
  
