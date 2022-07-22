@@ -15,9 +15,9 @@ $!\begin{array}{ll}\varphi : &C^0([0,1])\times C^0([0,1])\longrightarrow \mathbf
 ==
 
 wrong==  
-$!\begin{array}{ll}\varphi : &\mM_n(\mathbf{R})\times \mM_n(\mathbf{R}) \longrightarrow \mM_n(\mathbf{R}) \\\\   &(A,B) \mapsto AB\end{array}!$
-$!\begin{array}{ll}\varphi : &\mathbf{R}^2 \longrightarrow \mathbf{R} \\\\   &(x,y) \mapsto x+x^2\end{array}!$
-$!\begin{array}{ll}\varphi : &\mathbf{R}^2\times \mathbf{R}^2 \longrightarrow \mathbf{R} \\\\   &((x_1,y_1),(x_2,y_2)) \mapsto x_1x_2+y_1\end{array}!$
+$!\begin{array}{ll}\varphi : &\mathcal{M}_n(\mathbb{R})\times \mathcal{M}_n(\mathbb{R}) \longrightarrow \mathcal{M}_n(\mathbf{R}) \\\\   &(A,B) \mapsto AB\end{array}!$
+$!\begin{array}{ll}\varphi : &\mathbb{R}^2 \longrightarrow \mathbb{R} \\\\   &(x,y) \mapsto x+x^2\end{array}!$
+$!\begin{array}{ll}\varphi : &\mathbb{R}^2\times \mathbb{R}^2 \longrightarrow \mathbf{R} \\\\   &((x_1,y_1),(x_2,y_2)) \mapsto x_1x_2+y_1\end{array}!$
 ==
 
 scoring = CorrectItems
