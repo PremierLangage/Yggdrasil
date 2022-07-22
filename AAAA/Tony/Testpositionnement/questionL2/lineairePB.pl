@@ -10,7 +10,7 @@ minright = 3
 maxright = 3
 
 right==
-$!\begin{array}{ll}
+$!\\begin{array}{ll}
 \varphi : &\R_2[X]\longrightarrow \R_2[X] \\\\
    &P \mapsto P'+P
 \end{array}!$
