@@ -2,7 +2,7 @@ extends= /model/basic/checkbox_rw.pl
 
  
 question==
-Lesquels de ces vecteurs sont solutions du système $!\left \{
+Lesquels de ces vecteurs sont solutions du système $!\left \\{
 \begin{array}{rcl}
 x+y+z&=&0 \\
 y+z&=&0\\
