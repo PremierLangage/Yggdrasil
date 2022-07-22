@@ -14,12 +14,12 @@ minright = 2
 maxright = 2
 
 right==
-La variation du volume total du concombre est supérieure à $!40 \%!$
-La variation du volume d'eau du concombre est inférieure à $!10 \%!$
+La variation du volume total du concombre est supérieure à $!40 \\%!$
+La variation du volume d'eau du concombre est inférieure à $!10 \\%!$
 ==
 
 wrong== 
-La variation du volume total du concombre est inférieure à $!30 \%!$
+La variation du volume total du concombre est inférieure à $!30 \\%!$
 Le volume de la partie sans eau a changé.
 ==
 
