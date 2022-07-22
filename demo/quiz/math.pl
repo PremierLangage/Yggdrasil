@@ -6,7 +6,7 @@ Ce quiz est composé de 3 questions.
 
 quiz ==
 * Quel est le déterminant de
-\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}
+$$\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$$
 + Yaoundé
 - Douala
 - Kribi
