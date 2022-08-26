@@ -21,4 +21,4 @@ $!\pi!$
 $!+\infty!$
 ==
 
-scoring = CorrectItems 
+scoring = AllOrNothing 
