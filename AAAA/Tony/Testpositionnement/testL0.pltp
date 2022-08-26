@@ -1,0 +1,20 @@
+title = Test de positionnement à l'entrée de L1.
+
+introduction ==  
+==
+
+@ questionL0/systemelin2.pl  
+@ questionL0/Df.pl 
+@ questionL0/geometrie.pl 
+@ questionL0/lim.pl 
+@ questionL0/derive.pl
+@ questionL0/etudefn.pl  
+@ questionL0/integrale2.pl 
+@ questionL0/complexe.pl 
+@ questionL0/integrale.pl 
+
+
+ 
+
+
+
