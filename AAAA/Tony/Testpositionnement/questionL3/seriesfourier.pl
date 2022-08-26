@@ -20,4 +20,4 @@ $!\frac{i(-1)^n}{n\pi}!$
 $!\frac{i}{n^2\pi}!$
 ==
 
-scoring = CorrectItems 
+scoring = AllOrNothing 
