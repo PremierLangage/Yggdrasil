@@ -1,8 +1,8 @@
 extends= /model/basic/checkbox_rw.pl
 
  
- title = Séries entières
- 
+title = Séries entières
+
 question==
 Quelles séries sont de rayon de convergence $1$ ? 
 ==
