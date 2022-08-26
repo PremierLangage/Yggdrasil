@@ -4,14 +4,22 @@ introduction ==
 ==
 
 @ questionL0/systemelin2.pl  
+@ questionL0/pourcentage.pl 
+@ questionL0/proba.pl 
+@ questionL0/scddegre.pl 
 @ questionL0/Df.pl 
 @ questionL0/geometrie.pl 
 @ questionL0/lim.pl 
 @ questionL0/derive.pl
+@ questionL0/systemelin.pl 
+@ questionL0/variations.pl 
 @ questionL0/etudefn.pl  
-@ questionL0/integrale2.pl 
+@ questionL0/integrale2.pl
+@ questionL0/primitive.pl  
 @ questionL0/complexe.pl 
 @ questionL0/integrale.pl 
+@ questionL0/suites.pl 
+@ questionL0/preuveetoilee.pl 
 
 
  
