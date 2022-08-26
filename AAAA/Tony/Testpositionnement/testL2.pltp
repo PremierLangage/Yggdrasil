@@ -6,9 +6,14 @@ une feuille pour effectuer vos calculs et que vous restiez l'heure entière. Il 
 ==
 
 @ questionL0/lim.pl  
-@ questionL0/systemelin.pl  
+@ questionL1/systemelin.pl  
 @ questionL0/etudefn.pl   
 @ questionL0/suites.pl 
+
+ 
+@ questionL1/prodmat.pl   
+@ questionL1/edo1.pl
+@ questionL1/edo2.pl 
 
 @ questionL2/integrale.pl 
 
