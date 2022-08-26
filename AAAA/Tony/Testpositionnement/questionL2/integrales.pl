@@ -1,5 +1,6 @@
 extends= /model/basic/checkbox_rw.pl
 
+title = Calcul d'intégrales
  
 question==
 Quelles intégrales valent $!\frac{5}{6}!$?
