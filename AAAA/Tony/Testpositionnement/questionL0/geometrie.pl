@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Equation de droite
+
 question==
 Parmi ces droites, lesquelles ont une pente strictement positive ? 
 ==
