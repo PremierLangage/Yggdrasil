@@ -1,5 +1,6 @@
 extends= /model/basic/checkbox_rw.pl
 
+title = Dérivées
  
 question==
 Parmi ces fonctions, lesquelles ont leur dérivée qui vaut $!1!$ en $!0!$?
