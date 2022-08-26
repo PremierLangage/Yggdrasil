@@ -6,8 +6,7 @@ une feuille pour effectuer vos calculs et que vous restiez l'heure entière. Il 
 ==
 
 @ questionL0/systemelin2.pl  
-@ questionL0/scddegre.pl 
-@ questionL0/Df.pl 
+@ questionL0/scddegre.pl  
 @ questionL0/geometrie.pl 
 @ questionL0/lim.pl 
 @ questionL0/derive.pl
