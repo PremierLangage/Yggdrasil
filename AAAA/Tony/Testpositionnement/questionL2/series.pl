@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Convergence de séries
+
 question==
  Lesquelles de ces séries convergent?
 ==
