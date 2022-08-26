@@ -1,6 +1,6 @@
 extends= /model/basic/checkbox_rw.pl
 
-title = Preuve étoilée
+title = Décortiquer une preuve
 
 question==
 Parmi les arguments suivants, lesquels justifient un des points numérotés du calcul suivant fait pour $!a,b!$ deux nombres réels?
