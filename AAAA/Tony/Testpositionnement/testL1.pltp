@@ -14,8 +14,9 @@ une feuille pour effectuer vos calculs et que vous restiez l'heure entière. Il 
 @ questionL0/etudefn.pl  
 @ questionL0/integrale2.pl 
 @ questionL0/complexe.pl 
-@ questionL0/integrale.pl 
 @ questionL0/suites.pl  
+
+@ questionL1/integrale.pl 
 
 
  
