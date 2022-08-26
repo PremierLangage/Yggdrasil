@@ -1,5 +1,6 @@
 extends= /model/basic/checkbox_rw.pl
 
+title = Signe d'intégrales
  
 question==
 Quelles fonctions ont leur intégrale positive sur $![0,1]!$? 
