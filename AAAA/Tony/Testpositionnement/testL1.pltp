@@ -6,7 +6,6 @@ une feuille pour effectuer vos calculs et que vous restiez l'heure entière. Il 
 ==
 
 @ questionL0/systemelin2.pl  
-@ questionL0/pourcentage.pl  
 @ questionL0/scddegre.pl 
 @ questionL0/Df.pl 
 @ questionL0/geometrie.pl 
@@ -17,8 +16,7 @@ une feuille pour effectuer vos calculs et que vous restiez l'heure entière. Il 
 @ questionL0/integrale2.pl 
 @ questionL0/complexe.pl 
 @ questionL0/integrale.pl 
-@ questionL0/suites.pl 
-@ questionL0/preuveetoilee.pl 
+@ questionL0/suites.pl  
 
 
  
