@@ -22,4 +22,4 @@ $!\frac{1+i}{1-i}!$
 ==
 
 scoring = CorrectItems
-settings.allow_reroll = true
+#settings.allow_reroll = true
