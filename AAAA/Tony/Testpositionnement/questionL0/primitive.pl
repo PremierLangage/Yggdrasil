@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Primitives
+
 question==
 Quelles phrases sont vraies?
 ==
