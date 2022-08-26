@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Solution de système linéaire
+
 question==
 Lesquels de ces vecteurs sont solutions du système $!\left \\{
 \begin{array}{rcl}
