@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Probabilités
+
 question==
 Quelles probas sont supérieures ou égales à $!0.5!$ ?
 ==
