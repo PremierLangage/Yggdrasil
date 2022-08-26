@@ -22,5 +22,5 @@ $!\frac{1+i}{1-i}!$
 ==
 
 scoring = CorrectItems
-settings.oneshot = false
+settings.oneshot = true
 #settings.allow_reroll = false 
