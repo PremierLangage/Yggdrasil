@@ -1,5 +1,6 @@
 extends= /model/basic/checkbox_rw.pl
 
+title = Intégrales généralisées
  
 question==
  Lesquelles de ces integrales généralisées convergent?
