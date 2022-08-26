@@ -4,8 +4,8 @@ title = Matrice d'une application linéaire
  
 question==
 L'application $!\begin{array}{ll}
-\varphi : &\mathbb{R}_2[X]\longrightarrow \mathbb{R}_2[X] \\\\
-   &P \mapsto P+P'
+\varphi : &\mathbb{R}^3\longrightarrow \mathbb{R}^3 \\\\
+   &(x,y,z) \mapsto (x+y,y+2z,z)
 \end{array}!$ a pour matrice dans la base canonique : 
 ==
  
