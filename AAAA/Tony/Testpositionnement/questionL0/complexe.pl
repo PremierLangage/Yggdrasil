@@ -1,5 +1,6 @@
 extends= /model/basic/checkbox_rw.pl
 
+title = Nombres complexes
  
 question==
 Quels complexes ont leur partie réelle strictement positive?
