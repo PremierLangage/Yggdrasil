@@ -20,4 +20,4 @@ $!-\frac{xy}{(x^2y+y^2)^2}!$
 $!\frac{x^2y^2-y^3}{(x^2y+y^2)^2}!$ 
 ==
 
-scoring = CorrectItems
+scoring = AllOrNothing
