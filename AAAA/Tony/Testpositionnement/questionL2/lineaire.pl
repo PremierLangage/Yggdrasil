@@ -1,5 +1,6 @@
 extends= /model/basic/checkbox_rw.pl
 
+title = Linéarité
  
 question==
 Lesquelles de ces applications sont linéaires ?
