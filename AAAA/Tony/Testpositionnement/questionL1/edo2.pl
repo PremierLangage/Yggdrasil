@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Equation différentielle d'ordre 2.
+
 question==
 Quelles fonctions sont solutions de l'équation suivantes $y''-5y'+6y=0$?
 ==
