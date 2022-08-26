@@ -1,6 +1,8 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+
+title = limites
+
 question==
 Parmi ces limites, lesquelles valent $!+\infty!$? 
 ==
