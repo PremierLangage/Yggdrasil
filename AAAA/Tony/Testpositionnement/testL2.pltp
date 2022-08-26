@@ -16,6 +16,14 @@ une feuille pour effectuer vos calculs et que vous restiez l'heure entière. Il 
 @ questionL1/edo2.pl 
 
 @ questionL2/integrale.pl 
+@ questionL2/DL.pl
+@ questionL2/equivalent.pl
+@ questionL2/ev.pl
+@ questionL2/integralegeneralisees.pl
+@ questionL2/lineaire.pl
+@ questionL2/matrice.pl
+@ questionL2/series.pl
+@ questionL2/preuveetoilee.pl        
 
 
  
