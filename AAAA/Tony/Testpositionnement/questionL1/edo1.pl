@@ -20,7 +20,7 @@ $!e^{-1}!$
 $!e^{1}!$
 ==
 
-scoring = AllOrNothing'
+scoring = AllOrNothing
  
  
  
