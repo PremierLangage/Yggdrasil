@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Equation différentielle d'ordre 1
+
 question==
 Que vaut la solution de l'équation différentielle  $!y'+2xy=0!$ munie de la condition initiale $!y(0)=1!$ en $!x=2!$? 
 ==
