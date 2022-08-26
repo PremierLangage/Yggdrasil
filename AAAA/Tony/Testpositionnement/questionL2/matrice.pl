@@ -1,5 +1,6 @@
 extends= /model/basic/checkbox_rw.pl
 
+title = Matrice d'une application linéaire
  
 question==
 L'application $!\begin{array}{ll}
