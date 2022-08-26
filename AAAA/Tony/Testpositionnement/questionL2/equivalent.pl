@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Equivalents
+
 question==
 Quelles fonctions sont équivalentes en $!0!$ à $!t!$?
 ==
