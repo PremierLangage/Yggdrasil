@@ -1,7 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
 
-title = limites
+title = Limites
 
 question==
 Parmi ces limites, lesquelles valent $!+\infty!$? 
