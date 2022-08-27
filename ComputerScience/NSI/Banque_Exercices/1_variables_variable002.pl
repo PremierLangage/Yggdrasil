@@ -8,7 +8,7 @@ tag=variable|affectation
 
 text==
 
-Initialisez la variable X avec la chaîne Toto.
+Initialisez la variable `X` avec la chaîne de caractères Toto.
 
 ==
 
