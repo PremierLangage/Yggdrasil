@@ -10,7 +10,7 @@ extends=/ComputerScience/python/template/pltest.pl
 
 text==
 
-Créer trois variables `pim`, `pam` et `pom` contenant respectivement 1 2 et 3.
+Créer trois variables `pim`, `pam` et `pom` contenant respectivement 1, 2 et 3.
 
 ==
 
