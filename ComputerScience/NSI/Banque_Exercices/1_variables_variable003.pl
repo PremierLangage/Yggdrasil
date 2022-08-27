@@ -22,7 +22,7 @@ pltest="""
 %d
 >>> mois # le mois
 %d
->>> annee # l'année 
+>>> annee # l'annee 
 %d
 >>>
 """ % (d.day, d.month, d.year)
