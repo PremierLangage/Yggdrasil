@@ -1,8 +1,8 @@
 # author = Antoine Meyer
 
-# extends=/ComputerScience/python/template/pltest.pl
-extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
-builder=/builder/before.py
+extends=/ComputerScience/python/template/pltest.pl
+# extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
+@ /builder/before.py [builder.py]
 
 title = Échange de deux variables
 
