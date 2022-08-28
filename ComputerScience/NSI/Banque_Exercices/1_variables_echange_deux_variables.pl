@@ -1,7 +1,6 @@
 # author = Antoine Meyer
 
 extends=/ComputerScience/python/template/pltest.pl
-# extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
 @ /builder/before.py [builder.py]
 
 title = Échange de deux variables
@@ -12,7 +11,7 @@ before==
 from random import randint
 a = randint(1,100)
 b = a - randint(1,100)
-pltest1 = f">>> a\n{b}\n>>> b\n{a}"
+pltest = f">>> a\n{b}\n>>> b\n{a}"
 after = before
 ==
 
@@ -28,8 +27,6 @@ sans rien afficher.
 de `a` et `b` et leurs types (qui peuvent être différents).*<br>
 ==
 
-pltest0==
-==
 
 
 
