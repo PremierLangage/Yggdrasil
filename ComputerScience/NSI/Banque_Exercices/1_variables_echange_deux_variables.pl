@@ -9,12 +9,7 @@ tag= variable|valeur|affectation
 before==
 a = randint(1,100)
 b = a - randint(1,100)
-pltest="""
->>> a
-{}
->>> b
-{}
-""".format(b,a)
+pltest=f">>> a\n{b}\n>>> b\n{a}"
 ==
 
 text==
