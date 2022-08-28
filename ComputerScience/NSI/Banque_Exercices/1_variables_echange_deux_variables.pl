@@ -12,9 +12,9 @@ from random import randint
 a = randint(1,100)
 b = a - randint(1,100)
 pltest = """>>> a\n{}\n>>> b\n{}""".format(b, a)
-after = before
-==
 
+==
+# after = before
 text==
 On suppose qu'il existe deux variables `a` et `b` de valeurs et de types 
 quelconques précédemment fixées (vous n'avez donc pas à les initialiser
