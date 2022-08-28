@@ -1,6 +1,7 @@
 # author = Antoine Meyer
 
 extends=/ComputerScience/python/template/pltest.pl
+builder=/builder/before.py
 
 title = Échange de deux variables
 
