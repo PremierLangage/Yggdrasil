@@ -8,7 +8,7 @@ title = Échange de deux variables
 tag= variable|valeur|affectation
 
 before==
-# from random import randint
+from random import randint
 a = randint(1,100)
 b = a - randint(1,100)
 pltest0 = """>>> a\n{}\n>>> b\n{}""".format(b, a)
