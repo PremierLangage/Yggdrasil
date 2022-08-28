@@ -11,7 +11,7 @@ before==
 from random import randint
 a = randint(1,100)
 b = a - randint(1,100)
-pltest = """>>> a\n{}\n>>> b\n{}""".format(b, a)
+pltest0 = """>>> a\n{}\n>>> b\n{}""".format(b, a)
 
 ==
 # after = before
