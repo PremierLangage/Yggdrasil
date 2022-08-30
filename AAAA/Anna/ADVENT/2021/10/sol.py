@@ -34,7 +34,7 @@ def Question1(array):
     '>': 25137,
     }
     illegal_chars = []
-    for input in inputs:
+    for input in array:
         stack = []
         for char in input:
             is_gt = char == '>' and len(stack) > 0 and stack[-1] == '<'
@@ -49,7 +49,7 @@ def Question1(array):
                 # Collect all illegal chars
                 illegal_chars.append(char)
                 break
-    return sum([illegal_points[char] for char in illegal_chars])}
+    return sum([illegal_points[char] for char in illegal_chars])
 
 def Question2(array):
     return 0
