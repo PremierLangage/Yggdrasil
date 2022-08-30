@@ -2,10 +2,10 @@ import random
 import re
 
 def builddata():
-    characters = ['(',')','[',']','{','}']
+    characters = ['(',')','[',']','{','}','<','>']
     tab = []
     for x in range(100):
-       val = random.randint(0, 5)
+       val = random.randint(0, 7)
        tab.append(characters[val])
     return tab
 
