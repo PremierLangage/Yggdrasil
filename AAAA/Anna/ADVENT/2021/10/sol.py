@@ -2,7 +2,7 @@ import random
 import re
 
 def builddata():
-    characters = ['(',')','[',']','{','}','<<','>>']
+    characters = ['(',')','[',']','{','}']
     tab = []
     for x in range(100):
        val = random.randint(0, 7)
@@ -17,19 +17,19 @@ def Question1(array):
     ')': 3,
     ']': 57,
     '}': 1197,
-    '>': 25137,
+  
     }
     illegal_chars = []
     for input in array:
         stack = []
         for char in input:
-            is_gt = char == '>' and len(stack) > 0 and stack[-1] == '<'
+  
             is_sq = char == ']' and len(stack) > 0 and stack[-1] == '['
             is_cl = char == '}' and len(stack) > 0 and stack[-1] == '{'
             is_ci = char == ')' and len(stack) > 0 and stack[-1] == '('
             if is_gt or is_sq or is_cl or is_ci:
                 stack.pop()
-            elif char in ['(', '[', '{', '<']:
+            elif char in ['(', '[', '{']:
                 stack.append(char)
             else:
                 illegal_chars.append(char)
