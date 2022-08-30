@@ -105,14 +105,43 @@ if __name__ == '__main__':
 
 import sys
 def Question2():
-    array = [int(x) for x in sys.stdin.readlines()]
-    isIncreased = 0
-    for i in range(3, len(array)):
-        a = array[i - 3] + array[i - 2] + array[i - 1]
-        b = array[i - 2] + array[i - 1] + array[i]
-        if a < b:
-            isIncreased += 1
-    return isIncreased
+    points = {
+        ')': 1,
+        ']': 2,
+        '}': 3,
+        '>': 4,
+    }
+    bracket_mapping = {
+        '(': ')',
+        '[': ']',
+        '{': '}',
+        '<': '>'
+    }
+    total_scores = []
+    for input in array:
+        is_corrupt = False
+        stack = []
+        for char in input:
+            is_gt = char == '>' and len(stack) > 0 and stack[-1] == '<'
+            is_sq = char == ']' and len(stack) > 0 and stack[-1] == '['
+            is_cl = char == '}' and len(stack) > 0 and stack[-1] == '{'
+            is_ci = char == ')' and len(stack) > 0 and stack[-1] == '('
+            if is_gt or is_sq or is_cl or is_ci:
+                stack.pop()
+            elif char in ['(', '[', '{', '<']:
+                stack.append(char)
+            else:
+                is_corrupt = True
+                break
+        if is_corrupt:
+            continue
+        score = 0
+        stack.reverse()
+        for char in stack:
+            score = score * 5 + points[bracket_mapping[char]]
+        total_scores.append(score)
+    total_scores.sort()
+    return total_scores[len(total_scores) // 2]
                     
 
 if __name__ == '__main__':
