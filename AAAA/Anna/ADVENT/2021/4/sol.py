@@ -73,7 +73,7 @@ def Question1(array):
     boards = dict()
     lines = []
     for elem in range(1,len(array)):
-        lines.append(elem)
+        lines.append(array[elem])
     for j in range(len(array) - 1):
         boards[j] = Board()
         boards[j].read_from_lines(lines[(2 + j*6):(2+5+(j+1)*6)])
