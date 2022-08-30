@@ -50,15 +50,9 @@ def Question1(array):
                 illegal_chars.append(char)
                 break
     return sum([illegal_points[char] for char in illegal_chars])}
-    
+
 def Question2(array):
-    isIncreased = 0
-    for i in range(3, len(array)):
-        a = array[i - 3] + array[i - 2] + array[i - 1]
-        b = array[i - 2] + array[i - 1] + array[i]
-        if a < b:
-            isIncreased += 1
-    return isIncreased
+    return 0
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
