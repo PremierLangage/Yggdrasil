@@ -27,7 +27,7 @@ def Question1(array):
             is_sq = char == ']' and len(stack) > 0 and stack[-1] == '['
             is_cl = char == '}' and len(stack) > 0 and stack[-1] == '{'
             is_ci = char == ')' and len(stack) > 0 and stack[-1] == '('
-            if is_gt or is_sq or is_cl or is_ci:
+            if is_cl or is_ci:
                 stack.pop()
             elif char in ['(', '[', '{']:
                 stack.append(char)
