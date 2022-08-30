@@ -5,6 +5,7 @@ from itertools import zip_longest
 def builddata():
     tab = []
     numbers = []
+    final_tab = []
     for z in range(100):
         tab1 = []
         for x in range(5):
@@ -16,6 +17,7 @@ def builddata():
                 tab2.append(val)
             tab1.append(tab2)
         tab.append(tab1)
+    final_tab.append(random.shuffle(numbers))
     return tab
 
 def ToList(filec):
