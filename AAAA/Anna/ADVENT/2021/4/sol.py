@@ -23,9 +23,6 @@ def builddata():
         final_tab.append(elem)
     return final_tab
 
-def ToList(filec):
-    return [x for x in filec.split('\n')] 
-
 class Board:
     def __init__(self):
         self.board = np.zeros((5,5), dtype=int)
@@ -73,7 +70,7 @@ def Question1(array):
     boards = dict()
     for j in range(len(array) - 2):
         boards[j] = Board()
-        boards[j].read_from_lines(array[(2 + j*6):(2+5+(j+1)*6)])
+        boards[j].read_from_lines(lines[(2 + j*6):(2+5+(j+1)*6)])
     winner_index, called_number = find_first_winner(array[0], boards)    
     return boards[winner_index].calculate_score(called_number)
 
