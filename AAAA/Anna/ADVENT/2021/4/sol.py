@@ -7,11 +7,10 @@ def builddata():
     tab = []
     numbers = []
     final_tab = []
-    literal = ''
     for z in range(100):
         tab1 = []
         for x in range(5):
-            tab2 = []
+            literal = ''
             for y in range(5):
                 val = random.randint(0, 99)
                 if val not in numbers : 
