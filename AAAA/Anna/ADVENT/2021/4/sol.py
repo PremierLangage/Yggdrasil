@@ -25,15 +25,6 @@ def builddata():
 def ToList(filec):
     return [x for x in filec.split('\n')] 
 
-def polarity(array):
-    polarity = []
-    for string in array:
-        polarity = [
-            s + (1 if x == '1' else -1)
-            for s, x in zip_longest(polarity, string, fillvalue=0)
-        ]
-    return polarity
-
 def Question1(array): 
     pol = polarity(array)
     gamma = sum([2**i for i, x in enumerate(reversed(pol)) if x > 0])
