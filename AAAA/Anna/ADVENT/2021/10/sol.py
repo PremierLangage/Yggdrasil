@@ -5,7 +5,7 @@ def builddata():
     characters = ['(',')','[',']','{','}']
     tab = []
     for x in range(100):
-       val = random.randint(0, 7)
+       val = random.randint(0, 5)
        tab.append(characters[val])
     return tab
 
