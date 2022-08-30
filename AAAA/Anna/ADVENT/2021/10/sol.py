@@ -1,6 +1,8 @@
 import random
 import re
 
+lexemple =@exemple
+
 def builddata():
     characters = ['(',')','[',']','{','}','<','>']
     tab = []
