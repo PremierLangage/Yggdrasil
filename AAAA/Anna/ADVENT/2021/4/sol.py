@@ -61,7 +61,7 @@ def Question1(array):
         boards[j] = Board()
         boards[j].read_from_lines(lines[(2 + j*6):(2+5+(j+1)*6)])
     winner_index, called_number = find_first_winner(array[0], boards)    
-    print('score', boards[winner_index].calculate_score(called_number))
+    return boards[winner_index].calculate_score(called_number))
 
 def Question2(array):
     ar1 = array
