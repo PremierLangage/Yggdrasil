@@ -104,6 +104,7 @@ def Question1():
 if __name__ == '__main__':
     print(Question1())  
 
+
 import sys
 def Question2():
     points = {
@@ -147,22 +148,5 @@ def Question2():
 
 if __name__ == '__main__':
     print(Question2())  
-    
-
-def Question1(array):
-    isIncreased = 0
-    for i in range(1, len(array)):
-        if array[i] > array[i-1]:
-            isIncreased += 1
-    return isIncreased
-
-def Question2(array):
-    isIncreased = 0
-    for i in range(3, len(array)):
-        a = array[i - 3] + array[i - 2] + array[i - 1]
-        b = array[i - 2] + array[i - 1] + array[i]
-        if a < b:
-            isIncreased += 1
-    return isIncreased
 ==
 
