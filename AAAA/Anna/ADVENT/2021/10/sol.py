@@ -2,6 +2,7 @@ import random
 import re
 
 def builddata():
+    characters = ['(',')','[',']','{','}','<','>']
     tab = []
     val = random.randint(0, 200)
     tab.append(val)
