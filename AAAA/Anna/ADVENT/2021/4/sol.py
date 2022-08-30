@@ -16,7 +16,7 @@ def builddata():
                 if val not in numbers : 
                     numbers.append(val)
                 literal += str(val)
-            tab1.append(tab2)
+            tab1.append(literal)
         tab.append(tab1)
     final_tab.append(numbers)
     for elem in tab:
