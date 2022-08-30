@@ -32,7 +32,6 @@ def Question1(array):
             elif char in ['(', '[', '{', '<']:
                 stack.append(char)
             else:
-                # Collect all illegal chars
                 illegal_chars.append(char)
                 break
     return sum([illegal_points[char] for char in illegal_chars])
