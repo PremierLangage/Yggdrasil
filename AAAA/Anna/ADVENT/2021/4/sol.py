@@ -15,7 +15,7 @@ def builddata():
                 val = random.randint(0, 99)
                 if val not in numbers : 
                     numbers.append(val)
-                literal += str(val)
+                literal += str(val) + " "
             tab1.append(literal)
         tab.append(tab1)
     final_tab.append(numbers)
