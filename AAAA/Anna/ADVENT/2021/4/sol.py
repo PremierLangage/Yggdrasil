@@ -23,6 +23,9 @@ def builddata():
         final_tab.append(elem)
     return final_tab
 
+def ToList(filec):
+    return [x for x in filec.split('\n')] 
+
 class Board:
     def __init__(self):
         self.board = np.zeros((5,5), dtype=int)
