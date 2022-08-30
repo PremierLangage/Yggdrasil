@@ -10,7 +10,7 @@ def builddata():
     return tab
 
 def ToList(filec):
-    return [x for x in filec.split('\n')] 
+    return [[y for y in x] for x in filec.split('\n')] 
 
 def Question1(array):
     illegal_points = {
