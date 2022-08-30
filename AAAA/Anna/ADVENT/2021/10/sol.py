@@ -50,6 +50,7 @@ def Question1(array):
                 illegal_chars.append(char)
                 break
     return sum([illegal_points[char] for char in illegal_chars])}
+    
 def Question2(array):
     isIncreased = 0
     for i in range(3, len(array)):
