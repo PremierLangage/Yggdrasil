@@ -27,6 +27,7 @@ alert('Copied du fichier: '+id+' dans le press-papier');
 text==
 
 
+{{lenonce}}
 
 La liste des informations est dans le fichier "data" ci-dessous.
 
