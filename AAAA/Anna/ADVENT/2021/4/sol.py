@@ -7,6 +7,7 @@ def builddata():
     tab = []
     numbers = []
     final_tab = []
+    literal = ''
     for z in range(100):
         tab1 = []
         for x in range(5):
@@ -15,7 +16,7 @@ def builddata():
                 val = random.randint(0, 99)
                 if val not in numbers : 
                     numbers.append(val)
-                tab2.append(val)
+                literal += str(val)
             tab1.append(tab2)
         tab.append(tab1)
     final_tab.append(numbers)
