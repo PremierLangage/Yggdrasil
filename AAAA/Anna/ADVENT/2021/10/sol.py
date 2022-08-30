@@ -29,7 +29,7 @@ def Question1(array):
             is_ci = char == ')' and len(stack) > 0 and stack[-1] == '('
             if is_gt or is_sq or is_cl or is_ci:
                 stack.pop()
-            elif char in ['\\(', '\\[', '\\{', '\\<']:
+            elif char in ['(', '[', '{', '<']:
                 stack.append(char)
             else:
                 illegal_chars.append(char)
