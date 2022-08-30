@@ -2,11 +2,14 @@ import random
 import re
 
 def builddata():
-    characters = ['\\(','\\)','\\[','\\]','\\{','\\}','\\<','\\>']
+    characters = ['(',')','[',']','{','}','<','>']
     tab = []
-    for x in range(100):
-       val = random.randint(0, 7)
-       tab.append(characters[val])
+    for y in range(100):
+        tab1 = []
+        for x in range(100):
+           val = random.randint(0, 7)
+           tab1.append(characters[val])
+        tab.append(tab1)
     return tab
 
 def ToList(filec):
