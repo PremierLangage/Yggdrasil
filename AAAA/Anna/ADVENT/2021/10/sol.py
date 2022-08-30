@@ -1,7 +1,6 @@
 import random
 import re
-
-lexemple =@exemple
+import exemple
 
 def builddata():
     characters = ['(',')','[',']','{','}','<','>']
