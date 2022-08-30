@@ -13,7 +13,7 @@ le deuxième puzzle est déverrouillé lorsque vous terminez le premier. Chaque 
 Lorsque le sous-marin descend sous la surface de l'océan, il effectue automatiquement un balayage sonar du fond marin à proximité. 
 Sur un petit écran, le rapport de balayage du sonar (votre saisie de puzzle) apparaît : chaque ligne est une mesure de la profondeur du fond marin à mesure que le balayage s'éloigne de plus en plus du sous-marin.
 
-Par exemple, supposons que vous disposiez du rapport suivant : <jnn;<,w>
+Par exemple, supposons que vous disposiez du rapport suivant : <jnnw>
 
     199
     200
