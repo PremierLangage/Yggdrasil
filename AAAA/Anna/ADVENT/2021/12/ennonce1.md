@@ -13,11 +13,12 @@ Ceci est une liste de la façon dont toutes les grottes sont connectées. Vous c
 
 Ainsi, le système de grottes ci-dessus ressemble à peu près à ceci :
 
-    début
-    / \
-c--A-----b--d
-    \ /
-     fin
+        début
+        / \
+    c--A-----b--d
+        \ /
+        fin
+
 Votre objectif est de trouver le nombre de chemins distincts qui commencent au début, se terminent à la fin et ne visitent pas les petites grottes plus d'une fois. Il existe deux types de grottes : les grandes grottes (écrites en majuscules, comme A) et les petites grottes (écrites en minuscules, comme b). Ce serait une perte de temps de visiter une petite grotte plus d'une fois, mais les grandes grottes sont suffisamment grandes pour qu'il vaille la peine de les visiter plusieurs fois. Ainsi, tous les chemins que vous trouvez doivent visiter de petites grottes au plus une fois et peuvent visiter de grandes grottes un certain nombre de fois.
 
 Compte tenu de ces règles, il existe 10 chemins à travers cet exemple de système de grottes :
