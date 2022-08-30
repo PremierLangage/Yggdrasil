@@ -14,10 +14,10 @@ def ToList(filec):
 
 def Question1(array):
     illegal_points = {
-    '\\)': 3,
-    '\\]': 57,
-    '\\}': 1197,
-    '\\>': 25137,
+    ')': 3,
+    ']': 57,
+    '}': 1197,
+    '>': 25137,
     }
     illegal_chars = []
     for input in array:
