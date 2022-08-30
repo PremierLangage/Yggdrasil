@@ -6,7 +6,7 @@ def builddata():
     tab = []
     for x in range(100):
        val = random.randint(0, 7)
-       tab.append(val)
+       tab.append(characters[val])
     return tab
 
 def ToList(filec):
