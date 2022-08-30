@@ -10,7 +10,7 @@ lexemple =@exemple
 
 
 
-title= Syntax Scoring
+title= Notation Syntaxique
 
 
 extrajs== #|html| 
