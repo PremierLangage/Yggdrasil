@@ -20,7 +20,7 @@ def builddata():
     final_tab.append(random.shuffle(numbers))
     for elem in tab:
         final_tab.append(elem)
-    return tab
+    return final_tab
 
 def ToList(filec):
     return [x for x in filec.split('\n')] 
