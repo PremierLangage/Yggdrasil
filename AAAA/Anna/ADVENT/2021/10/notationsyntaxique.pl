@@ -77,12 +77,28 @@ testcases, donnees = build.buildQ2(lexemple,data)
 solution ==
 import sys
 def Question1():
-    array = [int(x) for x in sys.stdin.readlines()]
-    isIncreased = 0
-    for i in range(1, len(array)):
-        if array[i] > array[i-1]:
-            isIncreased += 1
-    return isIncreased
+    illegal_points = {
+    ')': 3,
+    ']': 57,
+    '}': 1197,
+    '>': 25137,
+    }
+    illegal_chars = []
+    for input in array:
+        stack = []
+        for char in input:
+            is_gt = char == '>' and len(stack) > 0 and stack[-1] == '<'
+            is_sq = char == ']' and len(stack) > 0 and stack[-1] == '['
+            is_cl = char == '}' and len(stack) > 0 and stack[-1] == '{'
+            is_ci = char == ')' and len(stack) > 0 and stack[-1] == '('
+            if is_gt or is_sq or is_cl or is_ci:
+                stack.pop()
+            elif char in ['(', '[', '{', '<']:
+                stack.append(char)
+            else:
+                illegal_chars.append(char)
+                break
+    return sum([illegal_points[char] for char in illegal_chars])
     
 if __name__ == '__main__':
     print(Question1())  
@@ -102,6 +118,21 @@ def Question2():
 if __name__ == '__main__':
     print(Question2())  
     
-  
+
+def Question1(array):
+    isIncreased = 0
+    for i in range(1, len(array)):
+        if array[i] > array[i-1]:
+            isIncreased += 1
+    return isIncreased
+
+def Question2(array):
+    isIncreased = 0
+    for i in range(3, len(array)):
+        a = array[i - 3] + array[i - 2] + array[i - 1]
+        b = array[i - 2] + array[i - 1] + array[i]
+        if a < b:
+            isIncreased += 1
+    return isIncreased
 ==
 
