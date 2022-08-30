@@ -23,10 +23,10 @@ def Question1(array):
     for input in array:
         stack = []
         for char in input:
-            is_gt = char == '\\>' and len(stack) > 0 and stack[-1] == '\\<'
-            is_sq = char == '\\]' and len(stack) > 0 and stack[-1] == '\\['
-            is_cl = char == '\\}' and len(stack) > 0 and stack[-1] == '\\{'
-            is_ci = char == '\\)' and len(stack) > 0 and stack[-1] == '\\('
+            is_gt = char == '>' and len(stack) > 0 and stack[-1] == '<'
+            is_sq = char == ']' and len(stack) > 0 and stack[-1] == '['
+            is_cl = char == '}' and len(stack) > 0 and stack[-1] == '{'
+            is_ci = char == ')' and len(stack) > 0 and stack[-1] == '('
             if is_gt or is_sq or is_cl or is_ci:
                 stack.pop()
             elif char in ['\\(', '\\[', '\\{', '\\<']:
