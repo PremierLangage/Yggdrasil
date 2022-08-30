@@ -40,7 +40,43 @@ def Question1(array):
     return sum([illegal_points[char] for char in illegal_chars])
 
 def Question2(array):
-    return 0
+    points = {
+        ')': 1,
+        ']': 2,
+        '}': 3,
+        '>': 4,
+    }
+    bracket_mapping = {
+        '(': ')',
+        '[': ']',
+        '{': '}',
+        '<': '>'
+    }
+    total_scores = []
+    for input in array:
+        is_corrupt = False
+        stack = []
+        for char in input:
+            is_gt = char == '>' and len(stack) > 0 and stack[-1] == '<'
+            is_sq = char == ']' and len(stack) > 0 and stack[-1] == '['
+            is_cl = char == '}' and len(stack) > 0 and stack[-1] == '{'
+            is_ci = char == ')' and len(stack) > 0 and stack[-1] == '('
+            if is_gt or is_sq or is_cl or is_ci:
+                stack.pop()
+            elif char in ['(', '[', '{', '<']:
+                stack.append(char)
+            else:
+                is_corrupt = True
+                break
+        if is_corrupt:
+            continue
+        score = 0
+        stack.reverse()
+        for char in stack:
+            score = score * 5 + points[bracket_mapping[char]]
+        total_scores.append(score)
+    total_scores.sort()
+    return total_scores[len(total_scores) // 2]
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
