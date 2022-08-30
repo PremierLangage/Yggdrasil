@@ -74,7 +74,7 @@ def Question1(array):
     lines = []
     for elem in range(1,len(array)):
         lines.append(elem)
-    for j in range(len(array) - 2):
+    for j in range(len(array) - 1):
         boards[j] = Board()
         boards[j].read_from_lines(lines[(2 + j*6):(2+5+(j+1)*6)])
     winner_index, called_number = find_first_winner(array[0], boards)    
