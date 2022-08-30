@@ -32,8 +32,7 @@ text==
 La liste des informations est dans le fichier "data" ci-dessous.
 
 Vous pouvez tester votre fonction avec le fichier "exemple" ci-dessous
- dont le résultat est 1154 pour la question 1462
-et 1127 pour la question 2.
+ dont le résultat est 1154 pour la question 1462 et 1127 pour la question 2.
 
 <div style="font-size:0.5em">
 <details><summary>Fichier exemple <button onclick="docopy('exemple')">Copy exemple</button></summary><blockquote id="exemple" style="white-space: pre-line" 
