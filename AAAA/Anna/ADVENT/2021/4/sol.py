@@ -18,7 +18,7 @@ def builddata():
                 tab2.append(val)
             tab1.append(tab2)
         tab.append(tab1)
-    final_tab.append(numbers)
+    final_tab.append(random.shuffle(numbers))
     for elem in tab:
         final_tab.append(elem)
     return final_tab
