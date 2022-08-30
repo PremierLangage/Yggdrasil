@@ -77,6 +77,7 @@ testcases, donnees = build.buildQ2(lexemple,data)
 solution ==
 import sys
 def Question1():
+    array = [int(x) for x in sys.stdin.readlines()]
     illegal_points = {
     ')': 3,
     ']': 57,
