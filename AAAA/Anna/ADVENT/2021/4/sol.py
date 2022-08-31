@@ -24,7 +24,7 @@ def builddata():
     return final_tab
 
 def ToList(filec):
-    return [entry.strip() for entry in filec.split('\n')]
+    return [entry.strip() for entry in filec.split('\n\n')]
 
 
 def play_game(numbers: list, cards: list) -> list:
