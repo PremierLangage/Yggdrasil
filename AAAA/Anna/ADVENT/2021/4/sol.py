@@ -24,7 +24,10 @@ def builddata():
     return final_tab
 
 def ToList(filec):
-    return [entry.strip() for entry in filec.split('\n\n')]
+    data = filec.split("\n\n")
+    numbers = raw_data[0]
+    list_of_numbers = [int(n) for n in numbers.split(",")]
+    return [entry.strip() for entry in ]
 
 class Board:
     def __init__(self):
