@@ -26,8 +26,6 @@ def builddata():
 def ToList(filec):
     return [entry.strip() for entry in filec.split('\n')]
 
-import numpy as np
-
 
 def play_game(numbers: list, cards: list) -> list:
     print("Playing game ...")
@@ -59,7 +57,6 @@ def play_game(numbers: list, cards: list) -> list:
 
                     results.append(sum_card * num)
                     card["bingo"] = True
-
     return results
 
 def Question1(array): 
