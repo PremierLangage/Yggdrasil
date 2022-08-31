@@ -10,13 +10,13 @@ def builddata():
     for z in range(100):
         tab1 = []
         for x in range(5):
-            tab2 = []
+            literal = ''
             for y in range(5):
                 val = random.randint(0, 99)
                 if val not in numbers : 
                     numbers.append(val)
-                tab2.append(val)
-            tab1.append(tab2)
+                literal += str(val) + " "
+            tab1.append(literal)
         tab.append(tab1)
     final_tab.append(numbers)
     for elem in tab:
@@ -24,40 +24,50 @@ def builddata():
     return final_tab
 
 def ToList(filec):
-    return [entry.strip() for entry in filec.split('\n\n')]
+    return [entry.strip() for entry in filec.split('\n')]
 
+class Board:
+    def __init__(self):
+        self.board = np.zeros((5,5), dtype=int)
+        self.marked = np.zeros((5,5))
 
-def play_game(numbers: list, cards: list) -> list:
-    print("Playing game ...")
-    results = []
+    def read_from_lines(self, lines):
+        for i in range(5):
+            line_entries = [int(entry) for entry in lines[i].split(' ') if entry != '']
+            self.board[i] = line_entries
+    
+    def check_called_number(self, called_number):
+        if called_number in self.board:
+            indices = np.where(self.board == called_number)
+            self.marked[indices[0], indices[1]] = 1
 
-    for num in numbers:
+    def check_win(self):
+        return self.marked.all(axis=0).any() or self.marked.all(axis=1).any()
 
-        for card in cards:
+    def calculate_score(self, called_number):
+        return (self.board * (self.marked==0)).sum() * called_number
 
-            # Only consider card that have not already called bingo
-            if not card["bingo"]:
-
-                # If the number exists replace with 100
-                card["card"] = np.where(card["card"] == num, 100, card["card"])
-
-                # Check the row and column totals
-                # If 500 then we have bingo
-                # Calculate the result and set card to bingo
-                sum_rows = np.sum(card["card"], axis=1)
-                sum_cols = np.sum(card["card"], axis=0)
-
-                if 500 in sum_rows or 500 in sum_cols:
-
-                    # Set all the 100 values to 0
-                    card["card"] = np.where(card["card"] == 100, 0, card["card"])
-
-                    # Get the sum of the card
-                    sum_card = np.sum(card["card"])
-
-                    results.append(sum_card * num)
-                    card["bingo"] = True
-    return results
+def find_first_winner(called_numbers, boards):
+    for called_number in called_numbers:
+        for j in range(len(boards)):
+            boards[j].check_called_number(called_number)
+            if boards[j].check_win():
+                print(f"Board {j+1} won!")
+                print(boards[j].marked)
+                return j, called_number
+            
+def find_last_winner(called_numbers, boards):
+    winners = []
+    winner_call = 0
+    for called_number in called_numbers:
+        for j in range(len(boards)):
+            if j not in winners:
+                boards[j].check_called_number(called_number)
+                if boards[j].check_win():
+                    winners.append(j)
+                    print(f"Board {j+1} won!")
+                    winner_call = called_number
+    return winners[-1], winner_call
 
 def Question1(array): 
     boards = dict()
