@@ -28,11 +28,15 @@ def ToList(filec):
     numbers = raw_data[0]
     list_of_numbers = [int(n) for n in numbers.split(",")]
     list_of_cards = []
+    list_final = []
+    list_final.append(numbers)
     for card in raw_data[1:]:
         rows = card.split("\n")
         card_array = np.array([[int(n) for n in (row.split())] for row in rows])
         card = {"card": card_array, "bingo": False}
         list_of_cards.append(card)
+    list_final.append(list_of_cards)
+    
 
 class Board:
     def __init__(self):
