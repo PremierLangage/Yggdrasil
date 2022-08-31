@@ -1,8 +1,17 @@
 title=Itérables
 
 introduction==
-Cette fiche PL est pour vous entraîner sur la manipulation des itérables : listes, tuples, chaînes de caractères, fichiers, ...
+Ceci est votre sixème feuille d'exercices Python en libre service.
 
+Cette fiche PLaTon concerne la manipulation des itérables : listes, tuples, chaînes de caractères, fichiers, ...
+
+Tous les exercices doivent être verts une fois que vous avez fini !
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+mais vous pouvez naviger avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide sur le salon d'entraide PLaTon sous Discord de la L1 
+et passer à l'exercice suivant. 
 
 Pour ceux qui s'ennuient: il y a des exercices un peu plus difficiles à la fin.
 ==
