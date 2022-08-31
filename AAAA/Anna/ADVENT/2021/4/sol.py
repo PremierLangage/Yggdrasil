@@ -24,10 +24,15 @@ def builddata():
     return final_tab
 
 def ToList(filec):
-    data = filec.split("\n\n")
+    raw_data = filec.split("\n\n")
     numbers = raw_data[0]
     list_of_numbers = [int(n) for n in numbers.split(",")]
-    return [entry.strip() for entry in ]
+    list_of_cards = []
+    for card in raw_data[1:]:
+        rows = card.split("\n")
+        card_array = np.array([[int(n) for n in (row.split())] for row in rows])
+        card = {"card": card_array, "bingo": False}
+        list_of_cards.append(card)
 
 class Board:
     def __init__(self):
