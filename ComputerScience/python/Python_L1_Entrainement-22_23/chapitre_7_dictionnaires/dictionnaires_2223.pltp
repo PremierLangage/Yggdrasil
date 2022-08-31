@@ -18,13 +18,13 @@ Pour ceux qui s'ennuient: il y a des exercices un peu plus difficiles à la fin.
 ==
 
 
-@ ajout.pl
-@ charlie.pl
-@ somme_valeurs.pl
-@ creer_dico.pl
-@ liste_cles_condition.pl
-@ somme_dicos.pl
-@ imposable.pl
-@ tous_clesValeurs.pl
-@ IntersectionDicts.pl
-@ fusionerDicts.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/ajout.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/charlie.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/somme_valeurs.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/creer_dico.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/liste_cles_condition.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/somme_dicos.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/imposable.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/tous_clesValeurs.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/IntersectionDicts.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/fusionerDicts.pl
