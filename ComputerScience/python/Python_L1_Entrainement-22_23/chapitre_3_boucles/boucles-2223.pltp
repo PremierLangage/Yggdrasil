@@ -4,22 +4,17 @@ title= Feuille d'exercice sur les boucles et boucles imbriquées
 
 introduction==
 
-Bonjour,
+Ceci est votre troisième feuille d'exercices Python en libre service.
 
-Ceci est votre troisième feuille de TP à faire en autonomie.
+Les exercices suivants concernent les concepts d'expressions booléennes et d'instructions conditionnelles.
 
-Tout les exercices doivent être verts une fois que vous avez fini !
+Ils doivent être verts une fois que vous avez fini !
 
-Certains exercices peuvent être fait plusieurs fois, si vous en avez besoin c'est une bonne idée de les faire plusieurs fois.
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+mais vous pouvez naviger avec le menu de gauche.
 
-Il sont indiqués avec le mot répétable dans le titre cela veut dire qu'une fois que vous avez fait l'exercice correctement vous pouvez demander que l'on relance les dés.
-Cela produira un "nouvel" exercice avec des conditions légèrement modifiées.
-
-A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant, mais vous pouvez aussi naviguer avec le menu de gauche.
-
-Si un exercice vous semble faux vous pouvez demander de l'aide sur le forum d'entraide et passer à l'exercice suivant. 
-
-*Rappel : Votre cours est toujours votre première source d'information ...*
+Si un exercice vous semble faux vous pouvez demander de l'aide sur le salon d'entraide PLaTon sous Discord de la L1 
+et passer à l'exercice suivant. 
 
 ==
 
