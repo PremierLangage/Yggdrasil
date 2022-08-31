@@ -2,23 +2,19 @@ title=Listes
 
 introduction==
 
-Des fonctions de manipulation de liste.
+Ceci est votre quatrième feuille de TP à faire en autonomie.
 
+Elle concrne les listes en Python
 
-	def malongueur(l):
-	    n = 0
-	    for e in l:
-	        n = n + 1 
-	    return n
-	
-	def somme(l):
-	   s = 0
-	   for e in l:
-	       s = s + e
-	   return s
+Tout les exercices doivent être verts une fois que vous avez fini !
 
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+mais vous pouvez naviger avec le menu de gauche.
 
 Pour ceux qui s'ennuient: il y a des exercices un peu plus difficiles à la fin.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide au chargé de TP ou sur le forum d'entraide et passer à l'exercice suivant. 
+
 ==
 
 
