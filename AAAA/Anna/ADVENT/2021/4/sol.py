@@ -36,6 +36,7 @@ def ToList(filec):
         card = {"card": card_array, "bingo": False}
         list_of_cards.append(card)
     list_final.append(list_of_cards)
+    return list_final
     
 
 class Board:
