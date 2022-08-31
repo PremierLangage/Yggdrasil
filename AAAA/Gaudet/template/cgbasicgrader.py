@@ -65,19 +65,6 @@ if __name__ == "__main__":
                     feedback.addTestFailure(name, proc.stdout.strip(), want.strip())
             else:
                 feedback.addTestError(name, "Erreur à l'exécution (code de retour " + str(proc.returncode) + ")\nSortie d'erreur : " + proc.stderr, want)
-    
-    # Execute 'postevaluator' script if it's set for question 2
-    if 'postevaluator' in context and context['changeText'] == False:
-        if testSuccess * 100 // len(testcases) == 100:
-            glob = {}
-            exec(context['postevaluator'], context)
-
-            # Remove keys related to general execution context
-            exec("", glob)
-            for key in glob:
-                if key in context and context[key] == glob[key] and key != 'text':
-                    del context[key]
-
 
     # Final feedback
     output(testSuccess * 100 // len(testcases), feedback.render(), context)
