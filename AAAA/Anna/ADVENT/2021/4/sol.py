@@ -33,8 +33,7 @@ def ToList(filec):
     for card in raw_data[1:]:
         rows = card.split("\n")
         card_array = np.array([[int(n) for n in (row.split())] for row in rows])
-        card = {"card": card_array, "bingo": False}
-        list_of_cards.append(card)
+        list_of_cards.append(card_array)
     list_final.append(list_of_cards)
     return list_final
     
