@@ -10,12 +10,12 @@ def builddata():
     for z in range(100):
         tab1 = []
         for x in range(5):
-            literal = ''
+            tab2 = []
             for y in range(5):
                 val = random.randint(0, 99)
                 if val not in numbers : 
                     numbers.append(val)
-                literal += str(val) + " "
+                tab2.append(val)
             tab1.append(literal)
         tab.append(tab1)
     final_tab.append(numbers)
