@@ -49,7 +49,7 @@ def tabToBoards(final_tab):
     boards = dict()
     for j in range(number_of_boards):
         boards[j] = Board()
-        boards[j].read_from_lines(line[(2 + j*6):(2+5+(j+1)*6)])
+        boards[j].read_from_lines(lines[(2 + j*6):(2+5+(j+1)*6)])
     return called_numbers,boards,tab
 
 def find_first_winner(called_numbers, boards): 
