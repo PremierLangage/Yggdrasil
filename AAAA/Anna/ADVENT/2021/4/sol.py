@@ -1,42 +1,6 @@
 import random
 import re
-from itertools import zip_longest
 import numpy as np
-
-def builddata():
-    tab = []
-    numbers = []
-    final_tab = []
-    for z in range(100):
-        tab1 = []
-        for x in range(5):
-            literal = ''
-            for y in range(5):
-                val = random.randint(0, 99)
-                if val not in numbers : 
-                    numbers.append(val)
-                literal += str(val) + " "
-            tab1.append(literal)
-        tab.append(tab1)
-    final_tab.append(numbers)
-    for elem in tab:
-        final_tab.append(elem)
-    return final_tab
-
-def ToList(filec):
-    raw_data = filec.split("\n\n")
-    numbers = raw_data[0]
-    list_of_numbers = [int(n) for n in numbers.split(",")]
-    list_of_cards = []
-    list_final = []
-    list_final.append(numbers)
-    for card in raw_data[1:]:
-        rows = card.split("\n")
-        card_array = [[int(n) for n in (row.split())] for row in rows]
-        list_of_cards.append(card_array)
-    list_final.append(list_of_cards)
-    return list_final
-    
 
 class Board:
     def __init__(self):
@@ -59,16 +23,40 @@ class Board:
     def calculate_score(self, called_number):
         return (self.board * (self.marked==0)).sum() * called_number
 
-def find_first_winner(called_numbers, boards):
+def builddata():
+    tab = []
+    numbers = []
+    final_tab = []
+    for z in range(100):
+        for x in range(5):
+            tab2 = []
+            lit = ""
+            for y in range(5):
+                val = random.randint(0, 99)
+                if val not in numbers : 
+                    numbers.append(val)
+                lit += str(val) + " "
+            tab.append(lit)
+    final_tab.append(numbers)
+    final_tab.extend(tab)
+    called_numbers = final_tab[0]
+    number_of_boards = (len(final_tab)-1)//6
+    boards = dict()
+    for j in range(number_of_boards):
+        boards[j] = Board()
+        boards[j].read_from_lines(final_tab[(2 + j*6):(2+5+(j+1)*6)])
+    return called_numbers,boards
+
+   
+
+def find_first_winner(called_numbers, boards): 
     for called_number in called_numbers:
         for j in range(len(boards)):
             boards[j].check_called_number(called_number)
             if boards[j].check_win():
-                print(f"Board {j+1} won!")
-                print(boards[j].marked)
                 return j, called_number
-            
-def find_last_winner(called_numbers, boards):
+
+def find_last_winner(called_numbers, boards): 
     winners = []
     winner_call = 0
     for called_number in called_numbers:
@@ -77,30 +65,25 @@ def find_last_winner(called_numbers, boards):
                 boards[j].check_called_number(called_number)
                 if boards[j].check_win():
                     winners.append(j)
-                    print(f"Board {j+1} won!")
                     winner_call = called_number
     return winners[-1], winner_call
 
-def Question1(array): 
+def ToBoards(filec):
+    lines =  [entry.strip() for entry in filec] 
+    called_numbers = [int(entry) for entry in lines[0].split(',')]
+    number_of_boards = (len(lines)-1)//6
     boards = dict()
-    lines = []
-    for elem in range(1,len(array)):
-        lines.append(array[elem])
-    for j in range(len(array) - 1):
+    for j in range(number_of_boards):
         boards[j] = Board()
         boards[j].read_from_lines(lines[(2 + j*6):(2+5+(j+1)*6)])
-    winner_index, called_number = find_first_winner(array[0], boards)    
+    return called_numbers,boards
+
+def Question1(called_numbers, boards):
+    winner_index, called_number = find_first_winner(called_numbers, boards)
     return boards[winner_index].calculate_score(called_number)
 
-def Question2(array):
-    boards = dict()
-    lines = []
-    for elem in range(1,len(array)):
-        lines.append(elem)
-    for j in range(len(array) - 2):
-        boards[j] = Board()
-        boards[j].read_from_lines(lines[(2 + j*6):(2+5+(j+1)*6)])
-    winner_index, called_number = find_last_winner(array[0], boards)    
+def Question2(called_numbers, boards):
+    winner_index, called_number = find_last_winner(called_numbers, boards)
     return boards[winner_index].calculate_score(called_number)
 
 
