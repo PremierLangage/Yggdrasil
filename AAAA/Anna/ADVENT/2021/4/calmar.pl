@@ -40,7 +40,7 @@ called_numbers,boards = build.builddata()
 with open("ennonce1.md","r") as f:
     lenonce= f.read()
 
-testcases, donnees = build.buildQ1(lexemple,data)
+testcases, donnees = build.buildQ1(lexemple,called_numbers,boards)
 changeText = False
 ==
 
