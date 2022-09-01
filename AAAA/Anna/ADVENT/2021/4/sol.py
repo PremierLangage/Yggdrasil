@@ -36,7 +36,7 @@ def builddata():
                 val = random.randint(0, 99)
                 if val not in numbers : 
                     numbers.append(val)
-                    num += str(val) + " "
+                    num += str(val) + ","
                 lit += str(val) + " "
             lit += "\n"
             tab.append(lit)
