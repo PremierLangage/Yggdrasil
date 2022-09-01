@@ -42,7 +42,7 @@ def builddata():
     final_tab.extend(tab)
     return final_tab
 
-def tabtoBoards(final_tab):
+def tabToBoards(final_tab):
     called_numbers = final_tab[0]
     number_of_boards = (len(final_tab)-1)//6
     boards = dict()
