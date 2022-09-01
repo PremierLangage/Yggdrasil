@@ -25,7 +25,7 @@ class Board:
 
 def builddata():
     tab = []
-    numbers = []
+    numbers = ""
     final_tab = []
     for z in range(100):
         for x in range(5):
