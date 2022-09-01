@@ -40,6 +40,7 @@ def builddata():
             tab.append(lit)
     final_tab.append(numbers)
     final_tab.extend(tab)
+    return final_tab
 
 TabtoBoards(final_tab):
     called_numbers = final_tab[0]
