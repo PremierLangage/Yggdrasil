@@ -34,7 +34,7 @@ et 7075 pour la question 2.
 before==
 import build
 tab = build.builddata()
-called_numbers,boards,data = build.tabToBoards(tab)
+called_numbers,boards,data = build.ToBoards(tab)
 
 with open("ennonce1.md","r") as f:
     lenonce= f.read()
