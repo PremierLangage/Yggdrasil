@@ -86,7 +86,6 @@ def Question2(called_numbers, boards):
     winner_index, called_number = find_last_winner(called_numbers, boards)
     return boards[winner_index].calculate_score(called_number)
 
-
 def buildQ1(fichier,called_numbers,boards):
     val1,val2 = ToBoards(fichier)
     dataliteral = '\n'.join([v for v in data])
