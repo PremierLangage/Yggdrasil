@@ -36,7 +36,10 @@ def builddata():
                 val = random.randint(0, 99)
                 if val not in numbers : 
                     numbers.append(val)
-                    num += str(val) + ","
+                    if z!= 100: 
+                        num += str(val) + ","
+                    else :  
+                        num += str(val)
                 lit += str(val) + " "
             lit += "\n"
             tab.append(lit)
