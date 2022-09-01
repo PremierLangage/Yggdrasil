@@ -42,16 +42,6 @@ def builddata():
     final_tab.extend(tab)
     return final_tab
 
-def tabToBoards(final_tab):
-    lines = [entry.strip() for entry in final_tab] 
-    called_numbers = final_tab[0]
-    number_of_boards = (len(final_tab)-1)//6
-    boards = dict()
-    for j in range(number_of_boards):
-        boards[j] = Board()
-        boards[j].read_from_lines(lines[(2 + j*6):(2+5+(j+1)*6)])
-    return called_numbers,boards,tab
-
 def find_first_winner(called_numbers, boards): 
     for called_number in called_numbers:
         for j in range(len(boards)):
