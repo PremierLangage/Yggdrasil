@@ -38,9 +38,9 @@ called_numbers,boards = build.builddata()
 with open("ennonce1.md","r") as f:
     lenonce= f.read()
 
-with open("/Users/annadiaw/Desktop/ADVENT/exemple","r") as f:
+with open("exemple","r") as f:
         lexemple= f.readlines()
-        
+
 testcases, donnees = build.buildQ1(lexemple,called_numbers,boards)
 changeText = False
 ==
