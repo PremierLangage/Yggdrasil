@@ -88,7 +88,7 @@ def Question2(called_numbers, boards):
 
 
 def buildQ1(fichier,called_numbers,boards):
-    val = ToList(fichier)
+    val = ToBoards(fichier)
     print(Question1(val))
     dataliteral = '\n'.join([v for v in data])
     return f"""[('''{fichier}''','{Question1(val)}','Tst exemple question1'),
