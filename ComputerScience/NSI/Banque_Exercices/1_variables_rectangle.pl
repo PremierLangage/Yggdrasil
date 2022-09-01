@@ -16,10 +16,12 @@ Le périmètre est ?? et la surface est ?? !
 <u>**Information**</u> : Le programme testeur fournira les deux valeurs pour évaluation.
 ==
 
-#before==
-#import random
-#mplsoluce2="Test tiré aléatoirement \n{}\n{}\n".format(random.randint(1,1000),random.randint(1,1000))
-#==
+before==
+import random
+l = random.randint(1,1000)
+la = random.randint(1,1000)
+mplsoluce2="Test tiré aléatoirement \n{}\n{}\n".format(l,la)
+==
 
 soluce==
 l=int(input())
