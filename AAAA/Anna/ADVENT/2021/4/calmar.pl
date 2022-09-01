@@ -62,20 +62,54 @@ solution ==
 import sys
 from itertools import zip_longest
 
-def Question1():
-    array = [x[:-1] for x in sys.stdin.readlines()]
-    polarity = []
-    for string in array:
-        polarity = [
-            s + (1 if x == '1' else -1)
-            for s, x in zip_longest(polarity, string, fillvalue=0)
-        ]
-    gamma = sum([2**i for i, x in enumerate(reversed(polarity)) if x > 0])
-    epsilon = sum([2**i for i, x in enumerate(reversed(polarity)) if x < 0])
-    return gamma * epsilon
+class Board:
+    def __init__(self):
+        self.board = np.zeros((5,5), dtype=int)
+        self.marked = np.zeros((5,5))
+
+    def read_from_lines(self, lines):
+        for i in range(5):
+            line_entries = [int(entry) for entry in lines[i].split(' ') if entry != '']
+            self.board[i] = line_entries
+    
+    def check_called_number(self, called_number):
+        if called_number in self.board:
+            indices = np.where(self.board == called_number)
+            self.marked[indices[0], indices[1]] = 1
+
+    def check_win(self):
+        return self.marked.all(axis=0).any() or self.marked.all(axis=1).any()
+
+    def calculate_score(self, called_number):
+        return (self.board * (self.marked==0)).sum() * called_number
+
+def find_first_winner(called_numbers, boards): 
+    for called_number in called_numbers:
+        for j in range(len(boards)):
+            boards[j].check_called_number(called_number)
+            if boards[j].check_win():
+                return j, called_number
+
+def ToBoards(filec):
+    lines = [entry.strip() for entry in filec] 
+    called_numbers = [int(entry) for entry in lines[0].split(',')]
+    number_of_boards = (len(lines)-1)//6
+    boards = dict()
+    for j in range(number_of_boards):
+        boards[j] = Board()
+        boards[j].read_from_lines(lines[(2 + j*6):(2+5+(j+1)*6)])
+    return called_numbers,boards
+
+def Question1(called_numbers, boards):
+    winner_index, called_number = find_first_winner(called_numbers, boards)
+    return boards[winner_index].calculate_score(called_number)
     
 if __name__ == '__main__':
+    filec = sys.stdin.readlines()
+    called_numbers, boards = ToBoards(filec)
     print(Question1())  
+
+
 
 
 import sys
