@@ -35,7 +35,7 @@ def builddata():
                 val = random.randint(0, 99)
                 if val not in numbers : 
                     numbers.append(val)
-                lit += str(val) + " "
+                lit += str(val) + "\n"
             tab.append(lit)
     final_tab.append(numbers)
     final_tab.extend(tab)
@@ -46,8 +46,6 @@ def builddata():
         boards[j] = Board()
         boards[j].read_from_lines(final_tab[(2 + j*6):(2+5+(j+1)*6)])
     return called_numbers,boards,tab
-
-   
 
 def find_first_winner(called_numbers, boards): 
     for called_number in called_numbers:
