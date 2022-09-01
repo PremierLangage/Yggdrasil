@@ -18,9 +18,6 @@ sans rien afficher.
 de `a` et `b` et leurs types (qui peuvent être différents).*<br>
 ==
 
-editor.fontsize=14
-# une interface standard d'exercice avec un editeur pour la réponse
-form=@ /form/text_editor.html
 
 
 grader==#|python|
