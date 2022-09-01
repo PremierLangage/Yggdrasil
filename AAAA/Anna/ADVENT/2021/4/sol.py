@@ -69,7 +69,7 @@ def find_last_winner(called_numbers, boards):
     return winners[-1], winner_call
 
 def ToBoards(filec):
-    lines =  [entry.strip() for entry in filec] 
+    lines = [entry.strip() for entry in filec] 
     called_numbers = [int(entry) for entry in lines[0].split(',')]
     number_of_boards = (len(lines)-1)//6
     boards = dict()
