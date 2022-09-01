@@ -41,7 +41,7 @@ with open("ennonce1.md","r") as f:
 with open("exemple","r") as f:
         lexemple= f.readlines()
 
-testcases, donnees = build.buildQ1(lexemple,called_numbers,boards)
+testcases, donnees = build.buildQ1(lexemple,called_numbers,boards,data)
 changeText = False
 ==
 
@@ -52,7 +52,7 @@ changeText = True
 with open("ennonce2.md","r") as f:
     lenonce = f.read()
 
-testcases, donnees = build.buildQ2(lexemple,called_numbers,boards)
+testcases, donnees = build.buildQ2(lexemple,called_numbers,boards,data)
 ==
 
 
