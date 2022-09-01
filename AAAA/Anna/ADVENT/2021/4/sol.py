@@ -34,7 +34,7 @@ def builddata():
             for y in range(5):
                 val = random.randint(0, 99)
                 if val not in numbers : 
-                    numbers += val
+                    numbers += val + " "
                 lit += str(val) + " "
             lit += "\n"
             tab.append(lit)
