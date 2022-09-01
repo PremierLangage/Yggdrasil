@@ -36,7 +36,7 @@ def builddata():
                 if val not in numbers : 
                     numbers.append(val)
                 lit += str(val) + " "
-            lit += "\n"
+            //lit += "\n"
             tab.append(lit)
     final_tab.append(numbers)
     final_tab.extend(tab)
