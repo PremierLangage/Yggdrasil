@@ -87,6 +87,7 @@ def Question2(called_numbers, boards):
     return boards[winner_index].calculate_score(called_number)
 
 def buildQ1(fichier,called_numbers,boards):
+    print(fichier)
     val1,val2 = ToBoards(fichier)
     dataliteral = '\n'.join([v for v in data])
     return f"""[('''{fichier}''','{Question1(val1,val2)}','Tst exemple question1'),
