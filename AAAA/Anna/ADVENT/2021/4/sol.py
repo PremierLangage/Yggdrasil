@@ -91,12 +91,12 @@ def buildQ1(fichier,called_numbers,boards):
     val1,val2 = ToBoards(fichier)
     dataliteral = '\n'.join([v for v in data])
     return f"""[('''{fichier}''','{Question1(val1,val2)}','Tst exemple question1'),
-     ('''{dataliteral}''','{Question1(data)}','Tst data question1')]""", dataliteral
+     ('''{dataliteral}''','{Question1(called_numbers,boards)}','Tst data question1')]""", dataliteral
 
-def buildQ2(fichier,called_numbers,boards):
+def buildQ2(fichier,called_numbers,called_numbers):
     val1,val2  = ToList(fichier)
     dataliteral = '\n'.join([ v for v in data])
     return f"""[('''{fichier}''','{Question2(val1,val2)}','Tst exemple question2'),
-     ('''{dataliteral}''','{Question2(data)}','Tst data question2')]""", dataliteral
+     ('''{dataliteral}''','{Question2(called_numbers,called_numbers)}','Tst data question2')]""", dataliteral
 
 
