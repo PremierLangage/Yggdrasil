@@ -104,7 +104,7 @@ def Question2(array):
     return boards[winner_index].calculate_score(called_number)
 
 
-def buildQ1(fichier,data):
+def buildQ1(fichier,boards, data):
     val = ToList(fichier)
     print(Question1(val))
     dataliteral = '\n'.join([v for v in data])
