@@ -45,7 +45,7 @@ def builddata():
     for j in range(number_of_boards):
         boards[j] = Board()
         boards[j].read_from_lines(final_tab[(2 + j*6):(2+5+(j+1)*6)])
-    return called_numbers,boards
+    return called_numbers,boards,final_tab
 
    
 
