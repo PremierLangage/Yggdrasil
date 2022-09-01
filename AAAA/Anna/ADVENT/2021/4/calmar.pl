@@ -35,7 +35,7 @@ et 7075 pour la question 2.
 before==
 import build
 
-data = build.builddata()
+called_numbers,boards = build.builddata()
 
 with open("ennonce1.md","r") as f:
     lenonce= f.read()
