@@ -1,3 +1,8 @@
+** BRAVO VOUS ETES A LA DEUXIEME PARTIE**
+
+
+--- Deuxième Partie ---
+
 Malheureusement, ne considérer que les lignes horizontales et verticales ne vous donne pas une image complète ; vous devez également tenir compte des lignes diagonales.
 
 En raison des limites du système de cartographie des évents hydrothermaux, les lignes de votre liste ne seront jamais horizontales, verticales ou diagonales qu'à exactement 45 degrés. Autrement dit:
