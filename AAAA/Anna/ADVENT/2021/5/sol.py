@@ -29,7 +29,6 @@ def Question1(array):
 
 def Question2(array):
     seats = (array
-        .strip()
         .replace("B", "1")
         .replace("F", "0")
         .replace("R", "1")
