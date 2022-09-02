@@ -16,16 +16,17 @@ def builddata():
 def ToList(filec):
     return [x.strip() for x in filec] 
 
-def Question1(array): 
-    seats = (array
-        .split
-        .replace("B", "1")
-        .replace("F", "0")
-        .replace("R", "1")
-        .replace("L", "0")
-        .split("\n") for v in array
-    )
-    return max([int(s, 2) for s in seats])
+def Question1(lines): 
+    max_x = 0
+    max_y = 0
+    for line in lines:
+        x1, y1, x2, y2 = [int(entry)
+                        for entry in re.sub('[^0-9]', ' ', line).split()]
+        max_x = max(max_x, x1, x2)
+        max_y = max(max_y, y1, y2)
+
+    print('max x', max_x, 'max y', max_y)
+    grid = np.zeros((max_y+1, max_x+1), dtype=int)
 
 def Question2(array):
     seats = (v
