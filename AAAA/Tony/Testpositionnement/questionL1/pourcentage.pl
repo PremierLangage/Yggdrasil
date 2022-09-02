@@ -26,4 +26,5 @@ Le volume de la partie sans eau a changé.
 
 scoring = CorrectItems
  
- 
+
+reroll = False 
