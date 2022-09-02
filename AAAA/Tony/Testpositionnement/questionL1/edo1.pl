@@ -23,7 +23,6 @@ $!e^{1}!$
 
 scoring = AllOrNothing
  
-
 reroll = False
  
  
