@@ -19,7 +19,7 @@ def calculate_fuel(positions):
             min_pos = pos
     return  min_fuel)
 
-def part1(file_name):
+def Question1(file_name):
     with open(file_name, 'r') as f:
         lines = f.readlines()
         positions = [int(entry) for entry in lines[0].strip().split(',')]
