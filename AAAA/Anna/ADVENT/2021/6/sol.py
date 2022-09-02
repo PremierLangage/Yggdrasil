@@ -43,7 +43,7 @@ def buildQ1(fichier,data):
 
 def buildQ2(fichier,data):
     val = ToList(fichier)
-    return f"""[('''{fichier}''','{Question2(val,80)}','Tst exemple question2'),
-     ('''{dataliteral}''','{Question2(data,80)}','Tst data question2')]""", dataliteral
+    return f"""[('''{fichier}''','{Question2(val,256)}','Tst exemple question2'),
+     ('''{dataliteral}''','{Question2(data,256)}','Tst data question2')]""", dataliteral
 
 
