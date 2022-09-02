@@ -71,7 +71,8 @@ def buildQ1(fichier,data):
      ('''{dataliteral}''','{Question1(val2)}','Tst data question1')]""", dataliteral
 
 def buildQ2(fichier,data):
-    val = ToList(fichier)
+    va1 = create_grid(fichier)
+    val2 = create_grid(data)
     dataliteral = '\n'.join([ v for v in data])
     return f"""[('''{fichier}''','{Question2(val1)}','Tst exemple question2'),
      ('''{dataliteral}''','{Question2(val2)}','Tst data question2')]""", dataliteral
