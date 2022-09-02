@@ -20,8 +20,8 @@ def simulate_days(days, ages):
     return(len(ages))
 
 def Question1(ages, days):
-    a = simulate_days(days, ages)
-    return a
+    res = simulate_days(days, ages)
+    return res
 
 def simulate_days2(days, fish_at_stage):
     for day in range(1, days+1):
