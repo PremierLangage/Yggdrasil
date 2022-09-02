@@ -37,7 +37,8 @@ def calculate_fuel2(positions):
             min_pos = pos
     return min_fuel
 
-def Question2(positions):
+def Question2(lines):
+    positions = [int(entry) for entry in lines[0].strip().split(',')]
     return calculate_fuel2(np.array(positions))
 
 def buildQ1(fichier,data):
