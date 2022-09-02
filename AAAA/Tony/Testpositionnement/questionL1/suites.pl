@@ -22,3 +22,5 @@ $!\frac{(-1)^n}{2^n}!$
 ==
 
 scoring = CorrectItems
+
+reroll = False
