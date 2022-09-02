@@ -33,3 +33,5 @@ car $!z = \overline{z}!$
 ==
 
 scoring = CorrectItems
+
+reroll = False
