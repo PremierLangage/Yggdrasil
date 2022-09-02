@@ -90,17 +90,6 @@ def ToBoards(filec):
         boards[j].read_from_lines(lines[(2 + j*6):(2+5+(j+1)*6)])
     return called_numbers,boards
 
-def ToBoardsTab(tab):
-    lines = [entry.strip() for entry in tab] 
-    called_numbers = [int(entry) for entry in lines[0].split(',')]
-    number_of_boards = (len(lines)-1)//6
-    boards = dict()
-    for j in range(number_of_boards):
-        boards[j] = Board()
-        boards[j].read_from_lines(lines[(2 + j*6):(2+5+(j+1)*6)])
-    return called_numbers,boards
-
-
 def Question1(called_numbers, boards):
     winner_index, called_number = find_first_winner(called_numbers, boards)
     return boards[winner_index].calculate_score(called_number)
