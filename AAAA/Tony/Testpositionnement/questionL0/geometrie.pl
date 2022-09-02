@@ -22,3 +22,5 @@ la droite passant par $!(1,2)!$ et d'ordonnée à l'origine $!3!$
 ==
 
 scoring = CorrectItems
+
+reroll = False
