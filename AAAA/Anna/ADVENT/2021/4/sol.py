@@ -109,7 +109,6 @@ def buildQ1(fichier,tab):
     for card in raw_data[1:]:
         rows = card.split('\n')
         list_of_cards_literal.join([[int(n) for n in (row.split())] for row in rows])
-        list_of_cards_literal.join([int(n) for n in raw_data[0][1:][0].split(" ")])
     dataliteral = '\n'.join(numbersliteral).join(list_of_cards_literal)
     return f"""[('''{fichier}''','{Question1(val1,val2)}','Tst exemple question1'),
      ('''{tab}''','{Question1(val3,val4)}','Tst data question1')]""", dataliteral
