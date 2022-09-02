@@ -3,7 +3,6 @@ import re
 import numpy as np
 from itertools import zip_longest
 
-import sys
 def builddata():
     tab = []
     same = random.randint(0,1)
@@ -59,7 +58,6 @@ def Question1(lines):
     max_x = 0
     max_y = 0
     for line in lines:
-        sys.out(line)
         x1, y1, x2, y2 = [int(entry)
                         for entry in re.sub('[^0-9]', ' ', line).split()]
         max_x = max(max_x, x1, x2)
