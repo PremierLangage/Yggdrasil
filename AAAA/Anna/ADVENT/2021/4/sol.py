@@ -106,7 +106,7 @@ def buildQ1(fichier,tab):
     raw_data = [elem.split("\n\n") for elem in tab]
     numbersliteral = '\n'.join([n for n in raw_data[0]])
     list_of_cards_literal = '\n'
-    for card in raw_data[1:]:
+    for card in raw_data[1:][0]:
         rows = card.split('\n')
         list_of_cards_literal.join([[int(n) for n in (row.split())] for row in rows])
     dataliteral = '\n'.join(numbersliteral).join(list_of_cards_literal)
