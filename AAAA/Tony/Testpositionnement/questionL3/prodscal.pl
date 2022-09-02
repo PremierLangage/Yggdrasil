@@ -22,3 +22,5 @@ $!\begin{array}{ll}\varphi : &\mathbb{R}^2\times \mathbb{R}^2 \longrightarrow \m
 ==
 
 scoring = CorrectItems
+
+reroll = False
