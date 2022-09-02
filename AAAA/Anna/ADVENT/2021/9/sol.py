@@ -47,7 +47,6 @@ def Question1(grid):
 
 def Question2(grid):
     groups = []
-
     def count_groups(i, j):
         if j < 0 or j >= len(grid) or i < 0 or i >= len(grid[0]) or grid[j][i] == 9 or grid[j][i] == -1:
             return
@@ -66,7 +65,8 @@ def Question2(grid):
     return math.prod(sorted(groups, reverse=True)[:3])
 
 def buildQ1(fichier,data):
-    val = create_grid(fichier)
+    va1 = create_grid(fichier)
+    val2 = create_grid(data)
     dataliteral = '\n'.join([v for v in data])
     return f"""[('''{fichier}''','{Question1(val)}','Tst exemple question1'),
      ('''{dataliteral}''','{Question1(data)}','Tst data question1')]""", dataliteral
