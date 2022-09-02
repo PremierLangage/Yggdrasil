@@ -29,4 +29,7 @@ $!(0,1,0)!$
 
 scoring = CorrectItems
 
+
+reroll = False
+
  
