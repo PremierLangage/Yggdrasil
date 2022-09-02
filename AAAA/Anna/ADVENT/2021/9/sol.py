@@ -91,7 +91,10 @@ def Question2(lines):
 def buildQ1(fichier,data):
     val = ToList(fichier)
     print(Question1(val))
-    dataliteral = '\n'.join([v[i] for v in data for i in range(len(data))])
+    dataliteral = '\n'
+    for i in range(len(data)):
+        for v in data :
+            dataliteral.join(v[i])
     return f"""[('''{fichier}''','{Question1(val)}','Tst exemple question1'),
      ('''{data}''','{Question1(data)}','Tst data question1')]""", data
 
