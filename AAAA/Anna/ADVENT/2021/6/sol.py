@@ -20,7 +20,6 @@ def simulate_days(days, ages):
     return(len(ages))
 
 def Question1(ages, days):
-    ages = [int(entry) for entry in lines[0].strip().split(',')]
     a = simulate_days(days, ages)
     return a
 
