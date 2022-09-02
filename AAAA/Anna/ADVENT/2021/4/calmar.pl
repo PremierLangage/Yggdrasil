@@ -34,15 +34,14 @@ et 7075 pour la question 2.
 before==
 import build
 tab = build.builddata()
-called_numbers,boards = build.ToBoards(tab)
 
 with open("ennonce1.md","r") as f:
     lenonce= f.read()
 
 with open("exemple","r") as f:
         lexemple= f.readlines()
-        
-testcases, donnees = build.buildQ1(lexemple,called_numbers,boards,tab)
+
+testcases, donnees = build.buildQ1(lexemple,tab)
 changeText = False
 ==
 
