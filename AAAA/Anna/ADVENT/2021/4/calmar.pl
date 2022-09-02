@@ -4,7 +4,7 @@ extends= /AAAA/Gaudet/template/cgbasic.pl
 @ennonce2.md
 @sol.py [build.py]
 @exemple 
-lexemple =@exemple
+
 
 #@/AAAA/dominique/python/AVANT/template/advent.pl [template.html]
 
@@ -39,9 +39,9 @@ with open("ennonce1.md","r") as f:
     lenonce= f.read()
 
 with open("exemple","r") as f:
-    l= f.readlines()
+    lexemple= f.readlines()
 
-testcases, donnees = build.buildQ1(l,tab)
+testcases, donnees = build.buildQ1(lexemple,tab)
 changeText = False
 ==
 
