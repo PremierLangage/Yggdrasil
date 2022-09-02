@@ -18,8 +18,8 @@ text==
 
 La liste des informations est dans le fichier "data" ci-dessous.
 
-Vous pouvez tester votre fonction avec le fichier "exemple" ci-dessous dont le résultat est 4160394 pour la question 1 
-et 4125600 pour la question 2.
+Vous pouvez tester votre fonction avec le fichier "exemple" ci-dessous dont le résultat est 4160394 pour la question 7297
+et 21038 pour la question 2.
 
 <details><summary>exemple</summary><blockquote>
   {{lexemple}}
