@@ -24,7 +24,7 @@ def create_grid(tab):
         grid.append(list(map(int, input.strip())))
     return grid
 
-def get_adjacents(i, j):
+def get_adjacents(grid,i, j):
     adjacents = []
     if i+1 < len(grid[0]):
         adjacents.append(grid[j][i+1])
