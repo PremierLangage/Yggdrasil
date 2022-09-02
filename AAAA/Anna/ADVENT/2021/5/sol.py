@@ -17,10 +17,7 @@ def ToList(filec):
     return [x for x in filec.split('\n')] 
 
 def Question1(array): 
-    pol = polarity(array)
-    gamma = sum([2**i for i, x in enumerate(reversed(pol)) if x > 0])
-    epsilon = sum([2**i for i, x in enumerate(reversed(pol)) if x < 0])
-    return gamma * epsilon
+    (int("".join(map(lambda x: "1" if x in "BR" else "0", s.rstrip())), 2))
 
 def Question2(array):
     ar1 = array
