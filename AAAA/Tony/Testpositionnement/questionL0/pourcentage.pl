@@ -22,6 +22,5 @@ $!10 \%!$
 ==
 
 scoring = AllOrNothing 
- 
- 
+
 reroll = False
