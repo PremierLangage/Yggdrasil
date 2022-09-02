@@ -42,7 +42,7 @@ with open("ennonce1.md","r") as f:
 with open("exemple","r") as f:
         lexemple= f.readlines()
 
-testcases, donnees = build.buildQ1(lexemple,called_numbers,boardstab)
+testcases, donnees = build.buildQ1(lexemple,called_numbers,boards,tab)
 changeText = False
 ==
 
