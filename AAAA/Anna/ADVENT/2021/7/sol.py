@@ -23,9 +23,9 @@ def calculate_fuel(positions):
             min_pos = pos
     return  min_fuel
 
-def Question1(array):
+def Question1(lines):
     positions = [int(entry) for entry in array[0]]
-    return calculate_fuel(np.array(positions))
+    return calculate_fuel(np.array(lines))
 
 def calculate_fuel2(positions):
     min_pos = -1
