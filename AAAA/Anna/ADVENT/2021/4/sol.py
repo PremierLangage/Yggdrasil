@@ -52,6 +52,8 @@ def builddata():
                     lit += str(val) + " "
             lit += "\n"
             tab.append(lit)
+        if d == 5 : 
+            tab.append("\n")
     num += "\n"
     final_tab.append(num)
     final_tab.extend(tab)
