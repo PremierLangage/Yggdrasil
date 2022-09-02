@@ -22,3 +22,5 @@ $!x=2!$
 ==
 
 scoring = CorrectItems
+
+reroll = False
