@@ -17,7 +17,7 @@ def ToList(filec):
     return [x for x in filec] 
 
 def Question1(array): 
-    s = array
+    seats = array
         .replace("B", "1")
         .replace("F", "0")
         .replace("R", "1")
