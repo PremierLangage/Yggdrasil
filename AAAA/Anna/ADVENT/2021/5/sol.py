@@ -57,22 +57,18 @@ def Question1(lines):
 
 
 def Question2(array):
-    seats = (v
-        .split()
-        .replace("B", "1")
-        .replace("F", "0")
-        .replace("R", "1")
-        .replace("L", "0")
-        .split("\n") for v in array
-    )
-    allseats = set(range(128 * 8))
-    openseats = allseats - claimed
-    myseat = [
-        seat
-        for seat in openseats
-        if seat + 1 not in openseats and seat - 1 not in openseats
-    ]
-    return myseat[0]
+    max_x = 0
+    max_y = 0
+    for line in lines:
+        x1, y1, x2, y2 = [int(entry)
+                        for entry in re.sub('[^0-9]', ' ', line).split()]
+        max_x = max(max_x, x1, x2)
+        max_y = max(max_y, y1, y2)
+    grid = np.zeros((max_y+1, max_x+1), dtype=int)
+    for line in lines:
+        x1, y1, x2, y2 = [int(entry) for entry in re.sub('[^0-9]', ' ', line).split()]
+        enter_line_extended(grid, x1, y1, x2, y2)
+    return (grid >= 2).sum()
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
