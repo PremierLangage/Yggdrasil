@@ -22,3 +22,5 @@ $!\begin{pmatrix}  1&2\\\\0&1\end{pmatrix}!$
 ==
 
 scoring = CorrectItems
+
+reroll = False
