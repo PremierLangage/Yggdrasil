@@ -30,6 +30,7 @@ def builddata():
     final_tab = []
     counter = 0
     for z in range(100):
+        d = 0
         for x in range(5):
             tab2 = []
             lit = ""
