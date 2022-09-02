@@ -30,7 +30,7 @@ def get_adjacents(grid,i, j):
         adjacents.append(grid[j][i+1])
     if i-1 >= 0:
         adjacents.append(grid[j][i-1])
-    if j+1 < len(grid):
+    if j+1 < len(grid) -1:
         adjacents.append(grid[j+1][i])
     if j-1 >= 0:
         adjacents.append(grid[j-1][i])
