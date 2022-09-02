@@ -15,7 +15,7 @@ def builddata():
     return tab
 
 def ToList(filec):
-    return [x.strip() for x in filec] 
+    return [x for x in filec] 
 
 def enter_line(grid, x1, y1, x2, y2):
     if x1 == x2:
