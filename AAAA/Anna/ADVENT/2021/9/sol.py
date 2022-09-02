@@ -49,7 +49,7 @@ def Question1(lines):
         for y in range(grid.shape[1]):
             if is_low_point(x, y, grid):
                 score += get_score(x, y, grid)
-    print(score)
+    return score
 
 def Question2(array):
     ar1 = array
