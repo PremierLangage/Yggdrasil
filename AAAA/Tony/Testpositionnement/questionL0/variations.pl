@@ -22,3 +22,5 @@ croissante sur $!]-\infty,0]!$ et décroissante sur $![0,+\infty[!$
 ==
 
 scoring = AllOrNothing
+
+reroll = False
