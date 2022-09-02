@@ -38,7 +38,6 @@ def get_adjacents(i, j):
 
 def Question1(grid):
     result = 0
-  
     for j in range(0, len(grid)):
         for i in range(0, len(grid[0])):
             if grid[j][i] < min(get_adjacents(i, j)):
