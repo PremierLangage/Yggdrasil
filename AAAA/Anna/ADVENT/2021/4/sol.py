@@ -52,6 +52,7 @@ def builddata():
             lit += "\n"
             tab.append(lit)
         d += 1
+        print(d)
         if d == 5 : 
             tab.append("\n")
     num += "\n"
