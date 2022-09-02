@@ -24,3 +24,5 @@ La vitesse du courant est supérieure à 1 km/heure
 ==
 
 scoring = CorrectItems
+
+reroll = False
