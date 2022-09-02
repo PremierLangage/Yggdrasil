@@ -21,7 +21,7 @@ def create_grid(lines):
     grid = np.zeros((len(lines), len(lines[0])), dtype=int)
     for index, line in enumerate(lines):
         entries = [int(entry) for entry in list(line)]
-        grid[index] = entries
+        grid[index] = entries[0:len(lines)]
     return grid
 
 def get_neighbors(x, y, grid):
