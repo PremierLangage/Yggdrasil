@@ -6,10 +6,11 @@ from itertools import zip_longest
 def builddata():
     tab = []
     for x in range(100): 
+        literal = ""
         for y in range(100):
-            literal = ""
             val = random.randint(0, 10)
-            literal += str(val)
+            if len(literal) < 100:
+                literal += str(val)
         tab.append(literal)
     return tab
 
