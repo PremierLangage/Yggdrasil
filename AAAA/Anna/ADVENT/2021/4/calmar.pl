@@ -40,9 +40,11 @@ with open("ennonce1.md","r") as f:
     lenonce= f.read()
 
 with open("exemple","r") as f:
-        l = f.read()
         lexemple= f.readlines()
 
+with open("exemple","r") as f:
+        l = f.read()
+        
 testcases, donnees = build.buildQ1(lexemple,called_numbers,boards,tab)
 changeText = False
 ==
