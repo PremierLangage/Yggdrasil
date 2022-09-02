@@ -12,14 +12,17 @@ def builddata():
 def ToList(filec):
     return [x for x in filec.split(",")] 
 
-def polarity(array):
-    polarity = []
-    for string in array:
-        polarity = [
-            s + (1 if x == '1' else -1)
-            for s, x in zip_longest(polarity, string, fillvalue=0)
-        ]
-    return polarity
+def simulate_days(days, ages):
+    for day in range(1, days+1):
+        new_fish = ages.count(0)
+        ages = [a-1 if a>0 else 6 for a in ages]
+        ages += [8] * new_fish
+    print(f"After {day} days: {len(ages)}")
+
+def Question1(array, days):
+    ages = [int(entry) for entry in lines[0].strip().split(',')]
+    
+    simulate_days(days, ages)
 
 def Question1(array): 
     pol = polarity(array)
