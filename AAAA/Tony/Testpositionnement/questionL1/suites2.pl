@@ -22,3 +22,5 @@ $!\left(\frac{1}{2}\right)^n+(-1)^n!$
 ==
 
 scoring = CorrectItems
+
+reroll = False
