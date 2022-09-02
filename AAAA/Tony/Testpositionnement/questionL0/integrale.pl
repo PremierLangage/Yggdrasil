@@ -21,7 +21,7 @@ $!\int_0^1 e^tdt!$
 $!\int_{-1}^1 t^2+tdt!$
 ==
 
-scoring = 
+scoring = CorrectItems
 
 reroll = False
   
