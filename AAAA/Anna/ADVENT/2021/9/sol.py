@@ -64,7 +64,7 @@ def Question2(grid):
     return math.prod(sorted(groups, reverse=True)[:3])
 
 def buildQ1(fichier,data):
-    va1 = create_grid(fichier)
+    val1 = create_grid(fichier)
     val2 = create_grid(data)
     dataliteral = '\n'.join([v for v in data])
     return f"""[('''{fichier}''','{Question1(val1)}','Tst exemple question1'),
