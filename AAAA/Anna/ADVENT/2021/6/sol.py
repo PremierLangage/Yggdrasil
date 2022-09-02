@@ -10,7 +10,7 @@ def builddata():
     return tab
 
 def ToList(filec):
-    return [x for x in filec.split(",")] 
+    return [int(x) for x in filec.split(",")] 
 
 def simulate_days(days, ages):
     for day in range(1, days+1):
