@@ -40,7 +40,7 @@ def Question1(grid):
     result = 0
     for j in range(0, len(grid)):
         for i in range(0, len(grid[0])):
-            if grid[j][i] < min(get_adjacents(i, j)):
+            if grid[j][i] < min(get_adjacents(grid,i, j)):
                 result += 1 + grid[j][i]
     return result
 
