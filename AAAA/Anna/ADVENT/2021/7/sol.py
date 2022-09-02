@@ -39,7 +39,7 @@ def calculate_fuel2(positions):
     return min_fuel
 
 def Question2(lines):
-    return calculate_fuel2(np.array(positions))
+    return calculate_fuel2(np.array(lines))
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
