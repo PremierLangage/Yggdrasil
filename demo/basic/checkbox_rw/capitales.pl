@@ -4,8 +4,6 @@ question ==
 Parmi ces villes, lesquelles sont des capitales d'états européens ?
 ==
 
-reroll = True
-
 right ==
 Paris
 Rome
