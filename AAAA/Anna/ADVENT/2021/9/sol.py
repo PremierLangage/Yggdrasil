@@ -86,8 +86,7 @@ def Question2(lines):
             if is_low_point(x, y, grid):
                 basin_sizes.append(get_basin_size(x, y, grid))
     basin_sizes.sort(reverse=True)
-    print('basin sizes', basin_sizes)
-    print('score', basin_sizes[0]*basin_sizes[1]*basin_sizes[2])
+    return basin_sizes[0]*basin_sizes[1]*basin_sizes[2]
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
