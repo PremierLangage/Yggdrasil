@@ -98,12 +98,12 @@ def Question2(called_numbers, boards):
 def buildQ1(fichier,called_numbers,boards,tab):
     val1,val2 = ToBoards(fichier)
     return f"""[('''{fichier}''','{Question1(val1,val2)}','Tst exemple question1'),
-     ('''{dataliteral}''','{Question1(called_numbers,boards)}','Tst data question1')]""", tab
+     ('''{tab}''','{Question1(called_numbers,boards)}','Tst data question1')]""", tab
 
 def buildQ2(fichier,called_numbers,boards,tab):
     val1,val2  = ToBoards(fichier)
     dataliteral = [ v for v in tab]
     return f"""[('''{fichier}''','{Question2(val1,val2)}','Tst exemple question2'),
-     ('''{dataliteral}''','{Question2(called_numbers,boards)}','Tst data question2')]""", tab
+     ('''{tab}''','{Question2(called_numbers,boards)}','Tst data question2')]""", tab
 
 
