@@ -6,10 +6,10 @@ from itertools import zip_longest
 def builddata():
     tab = []
     for x in range(100): 
-        tab1 = []
+        literal = ""
         for y in range(100):
             val = random.randint(0, 10)
-            tab1.append(val)
+            literal += str(val)
         tab.append(tab1)
     return tab
 
@@ -92,10 +92,7 @@ def buildQ1(fichier,data):
     val = ToList(fichier)
     print(Question1(val))
     dataliteral = '\n'
-    for i in range(100):
-        for v in data :
-            print(v[i])
-            dataliteral.join(str(v[i]))
+    dataliteral = '\n'.join([ str(v[w]) for v in [w for w in data])
     return f"""[('''{fichier}''','{Question1(val)}','Tst exemple question1'),
      ('''{dataliteral}''','{Question1(data)}','Tst data question1')]""", dataliteral
 
