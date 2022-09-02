@@ -15,12 +15,14 @@ def builddata():
 
 def ToList(filec):
     return [x for x in filec] 
-    
+
 def Question1(array): 
-    pol = polarity(array)
-    gamma = sum([2**i for i, x in enumerate(reversed(pol)) if x > 0])
-    epsilon = sum([2**i for i, x in enumerate(reversed(pol)) if x < 0])
-    return gamma * epsilon
+    s = array
+        .replace("B", "1")
+        .replace("F", "0")
+        .replace("R", "1")
+        .replace("L", "0")
+        .split("\n")
 
 def Question2(array):
     ar1 = array
