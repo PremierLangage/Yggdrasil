@@ -6,7 +6,7 @@ def builddata():
     tab = []
     for x in range(100): 
         tab1 = []
-        for y in range(100:)
+        for y in range(100):
             val = random.randint(0, 10)
             tab1.append(val)
         tab.append(tab1)
