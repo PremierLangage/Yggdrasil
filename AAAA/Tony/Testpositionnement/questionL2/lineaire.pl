@@ -21,3 +21,5 @@ $!\begin{array}{ll}\varphi : &\mathbb{R}^2\longrightarrow \mathbb{R} \\\\&(x,y) 
 ==
 
 scoring = CorrectItems 
+
+reroll = False
