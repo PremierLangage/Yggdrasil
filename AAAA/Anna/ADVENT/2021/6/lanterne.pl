@@ -58,55 +58,71 @@ testcases, donnees = build.buildQ2(lexemple,data)
 
 solution ==
 import sys
+import random
+import re
 from itertools import zip_longest
 
+def simulate_days(days, ages):
+    for day in range(1, days+1):
+        new_fish = ages.count(0)
+        ages = [a-1 if a>0 else 6 for a in ages]
+        ages += [8] * new_fish
+    return(len(ages))
+
 def Question1():
-    array = [x[:-1] for x in sys.stdin.readlines()]
-    polarity = []
-    for string in array:
-        polarity = [
-            s + (1 if x == '1' else -1)
-            for s, x in zip_longest(polarity, string, fillvalue=0)
-        ]
-    gamma = sum([2**i for i, x in enumerate(reversed(polarity)) if x > 0])
-    epsilon = sum([2**i for i, x in enumerate(reversed(polarity)) if x < 0])
-    return gamma * epsilon
-    
+    array = [x for x in sys.stdin.readlines()]
+    ages = []
+    for x in array[0].split(','):
+        if (x != ''):
+            ages.append(int(x))
+    res = simulate_days(80, ages)
+    return res
+
+def simulate_days2(days, fish_at_stage):
+    for day in range(1, days+1):
+        expired_fish = fish_at_stage.pop(0)
+        fish_at_stage[6] += expired_fish
+        fish_at_stage.append(expired_fish)
+    return sum(fish_at_stage)
+
+def Question2():
+    array = [x for x in sys.stdin.readlines()]
+    ages = []
+    for x in array[0].split(','):
+        if (x != ''):
+            ages.append(int(x))
+    fish_at_stage = [ages.count(i) for i in range(9)]
+    res = simulate_days2(256, fish_at_stage)
+    return res
+
 if __name__ == '__main__':
     print(Question1())  
 
 
+
+
+
 import sys
+import random
+import re
 from itertools import zip_longest
 
+def simulate_days2(days, fish_at_stage):
+    for day in range(1, days+1):
+        expired_fish = fish_at_stage.pop(0)
+        fish_at_stage[6] += expired_fish
+        fish_at_stage.append(expired_fish)
+    return sum(fish_at_stage)
+
 def Question2():
-    array = [x[:-1] for x in sys.stdin.readlines()]
-    ar1 = array
-    ar2 = array
-    position = 0
-    while position < len(array[0]):
-        if len(ar1) == 1 and len(ar2) == 1:
-            break
-        if len(ar1) > 1:
-            map1 = {k: [] for k in [0,1]}
-            for elem in ar1:
-                bit = int(elem[position])
-                map1[bit].append(elem)
-            if len(map1[0]) > len(map1[1]):
-                ar1 = map1[0]
-            else:
-                ar1 = map1[1]
-        if len(ar2) > 1:
-            map2 = {k: [] for k in [0,1]}
-            for elem in ar2:
-                bit = int(elem[position])
-                map2[bit].append(elem)
-            if len(map2[1]) < len(map2[0]):
-                ar2 = map2[1]
-            else:
-                ar2 = map2[0]
-        position += 1
-    return int(ar1[0], 2) * int(ar2[0], 2)
+    array = [x for x in sys.stdin.readlines()]
+    ages = []
+    for x in array[0].split(','):
+        if (x != ''):
+            ages.append(int(x))
+    fish_at_stage = [ages.count(i) for i in range(9)]
+    res = simulate_days2(256, fish_at_stage)
+    return res
 
 if __name__ == '__main__':
     print(Question2())  
