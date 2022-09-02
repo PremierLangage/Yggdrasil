@@ -38,16 +38,16 @@ def get_adjacents(i, j):
 
 def Question1(grid):
     result = 0
-    grid = create_grid(tab)
+  
     for j in range(0, len(grid)):
         for i in range(0, len(grid[0])):
             if grid[j][i] < min(get_adjacents(i, j)):
                 result += 1 + grid[j][i]
     return result
 
-def Question2(tab):
+def Question2(grid):
     groups = []
-    grid = create_grid(tab)
+
     def count_groups(i, j):
         if j < 0 or j >= len(grid) or i < 0 or i >= len(grid[0]) or grid[j][i] == 9 or grid[j][i] == -1:
             return
