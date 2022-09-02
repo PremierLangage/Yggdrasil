@@ -40,8 +40,6 @@ data = build.builddata()
 with open("ennonce1.md","r") as f:
     lenonce= f.read()
 
-l = '\n'.join([ v for v in lexemple])
-
 testcases, donnees = build.buildQ1(lexemple,data)
 changeText = False
 ==
