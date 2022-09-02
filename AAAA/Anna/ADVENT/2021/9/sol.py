@@ -60,7 +60,6 @@ def Question2(grid):
         for j in range(0, len(grid[0])):
             groups.append(0)
             count_groups(grid, j, i)
-
     return math.prod(sorted(groups, reverse=True)[:3])
 
 def buildQ1(fichier,data):
