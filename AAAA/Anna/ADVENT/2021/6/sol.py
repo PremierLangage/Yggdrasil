@@ -30,13 +30,12 @@ def simulate_days2(days, fish_at_stage):
         fish_at_stage.append(expired_fish)
     return sum(fish_at_stage)
 
-def part2(file_name, days):
+def Question2(ages, days):
     with open(file_name, 'r') as f:
         lines = f.readlines()
         ages = [int(entry) for entry in lines[0].strip().split(',')]
         fish_at_stage = [ages.count(i) for i in range(9)]
-    print('ages/input', ages)
-    print('fish at stage', fish_at_stage)
+
     simulate_days2(days, fish_at_stage)
 
 def buildQ1(fichier,data):
