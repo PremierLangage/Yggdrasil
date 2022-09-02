@@ -44,7 +44,7 @@ def Question1(tab):
                 result += 1 + grid[j][i]
     return result
 
-def Question2(tab);
+def Question2(tab):
     groups = []
     grid = create_grid(tab)
     def count_groups(i, j):
