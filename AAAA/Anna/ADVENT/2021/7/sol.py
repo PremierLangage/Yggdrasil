@@ -8,6 +8,9 @@ def builddata():
         val = random.randint(0, 1500)
         tab.append(val)
     return tab
+
+def ToList(filec):
+    return [int(x) for x in filec.split(",")] 
     
 def calculate_fuel(positions):
     min_pos = -1
