@@ -23,3 +23,5 @@ $!+\infty!$
 ==
 
 scoring = AllOrNothing 
+
+reroll = False
