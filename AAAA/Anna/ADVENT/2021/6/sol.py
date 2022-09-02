@@ -31,7 +31,6 @@ def simulate_days2(days, fish_at_stage):
     return sum(fish_at_stage)
 
 def Question2(ages, days):
-    ages = [int(entry) for entry in lines[0].strip().split(',')]
     fish_at_stage = [ages.count(i) for i in range(9)]
     res = simulate_days2(days, fish_at_stage)
     return res
