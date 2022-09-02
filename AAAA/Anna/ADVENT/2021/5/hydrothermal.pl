@@ -42,7 +42,7 @@ with open("ennonce1.md","r") as f:
     lenonce= f.read()
 
 with open("exemple","r") as f:
-    lexemple= [v.strip('\n') for v in f.read()]
+    lexemple= [v.strip('\n') for v in f.readlines()]
 
 testcases, donnees = build.buildQ1(lexemple,data)
 changeText = False
