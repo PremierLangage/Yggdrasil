@@ -22,4 +22,5 @@ $!2x+2-3(4x-3)!$
 ==
 
 scoring = CorrectItems
- 
+
+reroll = False
