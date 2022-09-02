@@ -21,7 +21,7 @@ def ToList(filec):
 def create_grid(tab):
     grid = []
     for input in tab:
-        grid.append(list(map(int, input.strip('\n'))))
+        grid.append(list(map(int, input.split('\n'))))
     return grid
 
 def get_adjacents(i, j):
