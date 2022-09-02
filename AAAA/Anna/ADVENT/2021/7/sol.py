@@ -17,13 +17,22 @@ def calculate_fuel(positions):
         if fuel_needed < min_fuel:
             min_fuel = fuel_needed
             min_pos = pos
-    return  min_fuel)
+    return  min_fuel
 
-def Question1(file_name):
-    with open(file_name, 'r') as f:
-        lines = f.readlines()
-        positions = [int(entry) for entry in lines[0].strip().split(',')]
+def Question1(positions):
+    #positions = [int(entry) for entry in lines[0].strip().split(',')]
     return calculate_fuel(np.array(positions))
+
+def calculate_fuel2(positions):
+    min_pos = -1
+    min_fuel = np.infty
+    for pos in range(min(positions), max(positions)+1):
+        distances = (np.abs(positions - pos))
+        fuel_needed = sum([(n*(n+1))/2 for n in distances])
+        if fuel_needed < min_fuel:
+            min_fuel = fuel_needed
+            min_pos = pos
+    return min_fuel
 
 def Question2(array):
     ar1 = array
