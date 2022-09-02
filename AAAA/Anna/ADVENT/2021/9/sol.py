@@ -36,7 +36,7 @@ def get_adjacents(i, j):
         adjacents.append(grid[j-1][i])
     return adjacents
 
-def Question1(tab):
+def Question1(grid):
     result = 0
     grid = create_grid(tab)
     for j in range(0, len(grid)):
