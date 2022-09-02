@@ -23,4 +23,5 @@ $!2n+11!$
 
 scoring = CorrectItems
 
+reroll = False
  
