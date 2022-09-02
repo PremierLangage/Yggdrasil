@@ -105,7 +105,8 @@ def buildQ1(fichier,tab):
     val3,val4 = ToBoards(tab)
     raw_data = elem.split("\n\n") for elem in tab
     numbersliteral = '\n'.join([int(n) for n in raw_data[0].split(",")])
-    dataliteral = '\n'.join([])
+    list_of_cards_literal = 
+    dataliteral = '\n'.join(numbersliteral).join(list_of_cards_literal)
     return f"""[('''{fichier}''','{Question1(val1,val2)}','Tst exemple question1'),
      ('''{tab}''','{Question1(val3,val4)}','Tst data question1')]""", dataliteral
 
