@@ -14,61 +14,51 @@ def builddata():
     return tab
 
 def ToList(filec):
-    return [x.strip() for x in filec] 
+    return [x for x in filec.split('\n')] 
 
-def enter_line(grid, x1, y1, x2, y2):
-    if x1 == x2:
-        for y in range(min(y1, y2), max(y1, y2)+1):
-            grid[y, x1] += 1
-    if y1 == y2:
-        for x in range(min(x1, x2), max(x1, x2)+1):
-            grid[y1, x] += 1
+def polarity(array):
+    polarity = []
+    for string in array:
+        polarity = [
+            s + (1 if x == '1' else -1)
+            for s, x in zip_longest(polarity, string, fillvalue=0)
+        ]
+    return polarity
 
-def enter_line_extended(grid, x1, y1, x2, y2):
-    if x1 == x2:
-        for y in range(min(y1, y2), max(y1, y2)+1):
-            grid[y, x1] += 1
-        return
-    if y1 == y2:
-        for x in range(min(x1, x2), max(x1, x2)+1):
-            grid[y1, x] += 1
-        return
-    line_length = abs(x1-x2)+1
-    step_x = 1 if x2-x1 > 0 else -1
-    step_y = 1 if y2-y1 > 0 else -1
-    for i in range(line_length):
-        new_x = x1 + i*step_x
-        new_y = y1 + i*step_y
-        grid[new_y, new_x] += 1
-
-def Question1(lines): 
-    max_x = 0
-    max_y = 0
-    for line in lines:
-        x1, y1, x2, y2 = [int(entry)
-                        for entry in re.sub('[^0-9]', ' ', line).split()]
-        max_x = max(max_x, x1, x2)
-        max_y = max(max_y, y1, y2)
-    grid = np.zeros((max_y+1, max_x+1), dtype=int)
-    for line in lines:
-        x1, y1, x2, y2 = [int(entry) for entry in re.sub('[^0-9]', ' ', line).split()]
-        enter_line(grid, x1, y1, x2, y2)
-    return (grid >= 2).sum()
-
+def Question1(array): 
+    pol = polarity(array)
+    gamma = sum([2**i for i, x in enumerate(reversed(pol)) if x > 0])
+    epsilon = sum([2**i for i, x in enumerate(reversed(pol)) if x < 0])
+    return gamma * epsilon
 
 def Question2(array):
-    max_x = 0
-    max_y = 0
-    for line in lines:
-        x1, y1, x2, y2 = [int(entry)
-                        for entry in re.sub('[^0-9]', ' ', line).split()]
-        max_x = max(max_x, x1, x2)
-        max_y = max(max_y, y1, y2)
-    grid = np.zeros((max_y+1, max_x+1), dtype=int)
-    for line in lines:
-        x1, y1, x2, y2 = [int(entry) for entry in re.sub('[^0-9]', ' ', line).split()]
-        enter_line_extended(grid, x1, y1, x2, y2)
-    return (grid >= 2).sum()
+    ar1 = array
+    ar2 = array
+    position = 0
+    while position < len(array[0]):
+        if len(ar1) == 1 and len(ar2) == 1:
+            break
+        if len(ar1) > 1:
+            map1 = {k: [] for k in [0,1]}
+            for elem in ar1:
+                bit = int(elem[position])
+                map1[bit].append(elem)
+            if len(map1[0]) > len(map1[1]):
+                ar1 = map1[0]
+            else:
+                ar1 = map1[1]
+        if len(ar2) > 1:
+            map2 = {k: [] for k in [0,1]}
+            for elem in ar2:
+                bit = int(elem[position])
+                map2[bit].append(elem)
+            if len(map2[1]) < len(map2[0]):
+                ar2 = map2[1]
+            else:
+                ar2 = map2[0]
+        position += 1
+    return int(ar1[0], 2) * int(ar2[0], 2)
+
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
