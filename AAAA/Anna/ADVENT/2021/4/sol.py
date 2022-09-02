@@ -98,11 +98,11 @@ def Question2(called_numbers, boards):
     winner_index, called_number = find_last_winner(called_numbers, boards)
     return boards[winner_index].calculate_score(called_number)
 
-def buildQ1(fichier,tab):
+def buildQ1(tab,tab):
     val1,val2 = ToBoards(fichier)
-    val3,val4 = ToBoards(tab)
+    #val3,val4 = ToBoards(tab)
     return f"""[('''{fichier}''','{Question1(val1,val2)}','Tst exemple question1'),
-     ('''{tab}''','{Question1(val3,val4)}','Tst data question1')]""", tab
+     ('''{tab}''','{Question1(val1,val2)}','Tst data question1')]""", tab
 
 def buildQ2(fichier,called_numbers,boards,tab):
     val1,val2  = ToBoards(fichier)
