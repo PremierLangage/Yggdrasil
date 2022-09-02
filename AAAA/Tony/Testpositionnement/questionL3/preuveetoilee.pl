@@ -30,4 +30,5 @@ car $!(e_1,\ldots,e_n)!$ est une base de $!E!$
 ==
 
 scoring = CorrectItems
- 
+
+reroll = False
