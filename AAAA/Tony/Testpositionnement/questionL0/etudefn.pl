@@ -23,5 +23,7 @@ $!f!$ change de variations deux fois.
 ==
 
 scoring = CorrectItems
+
+reroll = False
  
  
