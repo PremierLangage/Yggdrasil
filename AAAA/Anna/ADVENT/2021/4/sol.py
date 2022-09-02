@@ -90,6 +90,17 @@ def ToBoards(filec):
         boards[j].read_from_lines(lines[(2 + j*6):(2+5+(j+1)*6)])
     return called_numbers,boards
 
+def ToBoardsTab(tab):
+    lines = [entry.strip() for entry in filec] 
+    called_numbers = [int(entry) for entry in lines[0].split(' ')]
+    number_of_boards = (len(lines)-1)//6
+    boards = dict()
+    for j in range(number_of_boards):
+        boards[j] = Board()
+        boards[j].read_from_lines(lines[(2 + j*6):(2+5+(j+1)*6)])
+    return called_numbers,boards
+
+
 def Question1(called_numbers, boards):
     winner_index, called_number = find_first_winner(called_numbers, boards)
     return boards[winner_index].calculate_score(called_number)
@@ -100,7 +111,7 @@ def Question2(called_numbers, boards):
 
 def buildQ1(fichier,tab):
     val1,val2 = ToBoards(fichier)
-    val3,val4 = ToBoards(tab)
+    val3,val4 = ToBoardsTab(tab)
     return f"""[('''{fichier}''','{Question1(val1,val2)}','Tst exemple question1'),
      ('''{tab}''','{Question1(val3,val4)}','Tst data question1')]""", tab
 
