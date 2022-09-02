@@ -21,7 +21,7 @@ Vous pouvez tester votre fonction avec le fichier "exemple" ci-dessous dont le r
 et 4125600 pour la question 2.
 
 <details><summary>exemple</summary><blockquote>
-  {{l}}
+  {{lexemple}}
 </blockquote></details>
 
 <details><summary>data</summary><blockquote>
