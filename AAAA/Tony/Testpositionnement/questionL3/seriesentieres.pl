@@ -23,3 +23,5 @@ $!\sum n!x^n!$
 ==
 
 scoring = CorrectItems
+
+reroll = False
