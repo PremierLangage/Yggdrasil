@@ -22,5 +22,6 @@ $!\int_0^1 x\cos(x^2)dx!$
 ==
 
 scoring = CorrectItems
-  
+
+reroll = False
  
