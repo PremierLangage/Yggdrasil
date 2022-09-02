@@ -1,5 +1,6 @@
 import random
 import re
+import numpy as np
 from itertools import zip_longest
 
 def builddata():
