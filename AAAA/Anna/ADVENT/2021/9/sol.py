@@ -48,6 +48,7 @@ def Question1(grid):
 
 def Question2(grid):
     groups = []
+    
     def count_groups(grid, i, j):
         if j < 0 or j >= len(grid) or i < 0 or i >= len(grid[0]) or grid[j][i] == 9 or grid[j][i] == -1:
             return
@@ -57,7 +58,7 @@ def Question2(grid):
         count_groups(i-1, j)
         count_groups(i, j+1)
         count_groups(i, j-1)
-        
+
     for i in range(0, len(grid)):
         for j in range(0, len(grid[0])):
             groups.append(0)
