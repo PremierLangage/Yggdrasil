@@ -9,7 +9,7 @@ class Board:
 
     def read_from_lines(self, lines):
         for i in range(5):
-            line_entries = [int(entry) for entry in lines[i].split(' ') if (entry != '' and entry != "")]
+            line_entries = [int(entry) for entry in lines[i].split(' ') if (entry != '' and entry != "\n")]
             self.board[i] = line_entries
     
     def check_called_number(self, called_number):
