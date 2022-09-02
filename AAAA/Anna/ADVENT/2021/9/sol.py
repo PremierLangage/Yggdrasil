@@ -51,34 +51,45 @@ def Question1(lines):
                 score += get_score(x, y, grid)
     return score
 
-def Question2(array):
-    ar1 = array
-    ar2 = array
-    position = 0
-    while position < len(array[0]):
-        if len(ar1) == 1 and len(ar2) == 1:
-            break
-        if len(ar1) > 1:
-            map1 = {k: [] for k in [0,1]}
-            for elem in ar1:
-                bit = int(elem[position])
-                map1[bit].append(elem)
-            if len(map1[0]) > len(map1[1]):
-                ar1 = map1[0]
-            else:
-                ar1 = map1[1]
-        if len(ar2) > 1:
-            map2 = {k: [] for k in [0,1]}
-            for elem in ar2:
-                bit = int(elem[position])
-                map2[bit].append(elem)
-            if len(map2[1]) < len(map2[0]):
-                ar2 = map2[1]
-            else:
-                ar2 = map2[0]
-        position += 1
-    return int(ar1[0], 2) * int(ar2[0], 2)
+def count_basin_neighbors(x, y, grid, visited):
+    # print('x', x, 'y', y)
+    visited[x, y] = 1
+    count = 0
+    if x+1 < grid.shape[0]:
+        if grid[x+1, y] < 9:
+            if not visited[x+1, y]:
+                count += 1 + count_basin_neighbors(x+1, y, grid, visited)
+    if x-1 >= 0:
+        if grid[x-1, y] < 9:
+            if not visited[x-1, y]:
+                count += 1 + count_basin_neighbors(x-1, y, grid, visited)
+    if y+1 < grid.shape[1]:
+        if grid[x, y+1] < 9:
+            if not visited[x, y+1]:
+                count += 1 + count_basin_neighbors(x, y+1, grid, visited)
+    if y-1 >= 0:
+        if grid[x, y-1] < 9:
+            if not visited[x, y-1]:
+                count += 1 + count_basin_neighbors(x, y-1, grid, visited)
+    return count
 
+def get_basin_size(x, y, grid):
+    visited = np.zeros(grid.shape, dtype=int)
+    size = count_basin_neighbors(x, y, grid, visited) + 1
+    return size
+
+def Question2(lines):
+    basin_sizes = []
+    grid = create_grid(lines)
+    print(grid)
+    
+    for x in range(grid.shape[0]):
+        for y in range(grid.shape[1]):
+            if is_low_point(x, y, grid):
+                basin_sizes.append(get_basin_size(x, y, grid))
+    basin_sizes.sort(reverse=True)
+    print('basin sizes', basin_sizes)
+    print('score', basin_sizes[0]*basin_sizes[1]*basin_sizes[2])
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
