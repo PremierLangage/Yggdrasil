@@ -17,12 +17,14 @@ def ToList(filec):
     return [x for x in filec] 
 
 def Question1(array): 
-    seats = array
+    seats = (array
+        .strip()
         .replace("B", "1")
         .replace("F", "0")
         .replace("R", "1")
         .replace("L", "0")
         .split("\n")
+    )
     return max([int(s, 2) for s in seats])
 
 def Question2(array):
