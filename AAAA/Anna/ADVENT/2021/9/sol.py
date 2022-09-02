@@ -10,7 +10,7 @@ def builddata():
         literal = ""
         for y in range(100):
             val = random.randint(0, 10)
-            if len(literal) < 100 - 1:
+            if len(literal) < 100:
                 literal += str(val)
         tab.append(literal)
     return tab
