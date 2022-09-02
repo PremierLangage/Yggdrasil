@@ -28,25 +28,34 @@ def builddata():
     numbers = []
     num = ""
     final_tab = []
+    counter = 0
     for z in range(100):
         for x in range(5):
             tab2 = []
             lit = ""
+            c = 0
             for y in range(5):
                 val = random.randint(0, 99)
                 if val not in numbers : 
+                    counter += 1
                     numbers.append(val)
-                    if z!= 100: 
-                        num += str(val) + ","
+                    if counter == 100: 
+                        num += str(val) 
                     else :  
-                        num += str(val)
-                lit += str(val) + " "
+                        num += str(val) + ","
+                c += 1
+                print(c)
+                if c == 5:
+                    lit += str(val)
+                else:
+                    lit += str(val) + " "
             lit += "\n"
             tab.append(lit)
     num += "\n"
     final_tab.append(num)
     final_tab.extend(tab)
     return final_tab
+
 
 def find_first_winner(called_numbers, boards): 
     for called_number in called_numbers:
