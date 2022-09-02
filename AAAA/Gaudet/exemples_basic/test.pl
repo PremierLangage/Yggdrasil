@@ -28,7 +28,7 @@ pltestcases==
 
 before==
 
-pltescases += "44|45| Un autre test "
+pltestcases += "44|45| Un autre test "
 # ou
 testcase.append( ('66', '67', 'Autre test'))
 ==
