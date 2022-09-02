@@ -22,4 +22,6 @@ $!\frac{1}{x}!$ est une primitive de $!\ln(x)!$
 ==
 
 scoring = CorrectItems 
- 
+
+
+reroll = False
