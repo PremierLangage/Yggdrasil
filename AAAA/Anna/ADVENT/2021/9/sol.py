@@ -57,7 +57,6 @@ def Question2(grid):
         count_groups(i-1, j)
         count_groups(i, j+1)
         count_groups(i, j-1)
-
     for i in range(0, len(grid)):
         for j in range(0, len(grid[0])):
             groups.append(0)
