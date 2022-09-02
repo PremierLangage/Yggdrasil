@@ -103,15 +103,8 @@ def Question2(called_numbers, boards):
 def buildQ1(fichier,tab):
     val1,val2 = ToBoards(fichier)
     val3,val4 = ToBoards(tab)
-    raw_data = [elem.split("\n\n") for elem in tab]
-    numbersliteral = '\n'.join([n for n in raw_data[0]])
-    list_of_cards_literal = '\n'
-    for card in raw_data[1:][0][0]:
-        rows = card.split('\n')
-        list_of_cards_literal.join([[int(n) for n in (row.split())] for row in rows])
-    dataliteral = '\n'.join(numbersliteral).join(list_of_cards_literal)
     return f"""[('''{fichier}''','{Question1(val1,val2)}','Tst exemple question1'),
-     ('''{tab}''','{Question1(val3,val4)}','Tst data question1')]""", dataliteral
+     ('''{tab}''','{Question1(val3,val4)}','Tst data question1')]""", tab
 
 def buildQ2(fichier,called_numbers,boards,tab):
     val1,val2  = ToBoards(fichier)
