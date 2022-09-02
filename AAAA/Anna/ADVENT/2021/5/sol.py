@@ -68,7 +68,6 @@ def Question1(lines):
         enter_line(grid, x1, y1, x2, y2)
     return (grid >= 2).sum()
 
-
 def Question2(array):
     max_x = 0
     max_y = 0
