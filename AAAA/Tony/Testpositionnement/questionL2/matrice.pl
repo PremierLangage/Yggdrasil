@@ -25,4 +25,5 @@ $!\begin{pmatrix}    -1&1&1\\\\1&2&1\\\\4&5&6    \end{pmatrix}!$
 
 scoring = AllOrNothing
 
+reroll = False
  
