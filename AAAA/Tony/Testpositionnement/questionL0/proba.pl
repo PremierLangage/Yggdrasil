@@ -22,3 +22,5 @@ La probabilité de tirer une carte figure dans un jeu de $!32!$ cartes.
 ==
 
 scoring = CorrectItems
+
+reroll = False
