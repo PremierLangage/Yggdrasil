@@ -21,3 +21,5 @@ $!\frac{i}{n^2\pi}!$
 ==
 
 scoring = AllOrNothing 
+
+reroll = False
