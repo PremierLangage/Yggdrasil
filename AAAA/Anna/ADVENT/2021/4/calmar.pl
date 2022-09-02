@@ -30,7 +30,6 @@ et 7075 pour la question 2.
 ==
 
 
-
 before==
 import build
 tab = build.builddata()
