@@ -40,9 +40,6 @@ data = build.builddata()
 with open("ennonce1.md","r") as f:
     lenonce= f.read()
 
-with open("exemple","r") as f:
-    lexemple= [v.strip('\n') for v in f.readlines()]
-
 l = '\n'.join([ v for v in lexemple])
 
 testcases, donnees = build.buildQ1(lexemple,data)
