@@ -24,8 +24,6 @@ def Question1(lines):
                         for entry in re.sub('[^0-9]', ' ', line).split()]
         max_x = max(max_x, x1, x2)
         max_y = max(max_y, y1, y2)
-
-    print('max x', max_x, 'max y', max_y)
     grid = np.zeros((max_y+1, max_x+1), dtype=int)
 
 def Question2(array):
