@@ -104,7 +104,7 @@ def buildQ1(fichier,tab):
     val1,val2 = ToBoards(fichier)
     val3,val4 = ToBoards(tab)
     raw_data = [elem.split("\n\n") for elem in tab]
-    numbersliteral = '\n'.join([n for n in raw_data[0])
+    numbersliteral = '\n'.join([n for n in raw_data[0]])
     list_of_cards_literal = '\n'
     for card in raw_data[1:]:
         rows = card.split('\n')
