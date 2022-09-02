@@ -37,6 +37,7 @@ def Question1(lines):
         x1, y1, x2, y2 = [int(entry) for entry in re.sub('[^0-9]', ' ', line).split()]
         enter_line(grid, x1, y1, x2, y2)
     return (grid >= 2).sum()
+
     
 def Question2(array):
     seats = (v
