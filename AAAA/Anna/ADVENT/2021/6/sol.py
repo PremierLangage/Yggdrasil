@@ -37,7 +37,7 @@ def Question2(ages, days):
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
-    dataliteral = '\n'.join([str(v) for v in data])
+    dataliteral = ','.join([str(v) for v in data])
     return f"""[('''{fichier}''','{Question1(val,80)}','Tst exemple question1'),
      ('''{dataliteral}''','{Question1(data,80)}','Tst data question1')]""", dataliteral
 
