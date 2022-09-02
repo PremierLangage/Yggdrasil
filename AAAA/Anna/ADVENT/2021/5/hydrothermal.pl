@@ -109,7 +109,7 @@ from itertools import zip_longest
 def ToList(filec):
     return [x for x in filec] 
 
-def enter_line(grid, x1, y1, x2, y2):
+def enter_line_extended(grid, x1, y1, x2, y2):
     if x1 == x2:
         for y in range(min(y1, y2), max(y1, y2)+1):
             grid[y, x1] += 1
