@@ -4,6 +4,8 @@ extends= /AAAA/Gaudet/template/cgbasic.pl
 @ennonce2.md
 @sol.py [build.py]
 @exemple 
+l =@exemple
+
 
 #@/AAAA/dominique/python/AVANT/template/advent.pl [template.html]
 
