@@ -28,33 +28,22 @@ def Question1(array):
     return max([int(s, 2) for s in seats])
 
 def Question2(array):
-    ar1 = array
-    ar2 = array
-    position = 0
-    while position < len(array[0]):
-        if len(ar1) == 1 and len(ar2) == 1:
-            break
-        if len(ar1) > 1:
-            map1 = {k: [] for k in [0,1]}
-            for elem in ar1:
-                bit = int(elem[position])
-                map1[bit].append(elem)
-            if len(map1[0]) > len(map1[1]):
-                ar1 = map1[0]
-            else:
-                ar1 = map1[1]
-        if len(ar2) > 1:
-            map2 = {k: [] for k in [0,1]}
-            for elem in ar2:
-                bit = int(elem[position])
-                map2[bit].append(elem)
-            if len(map2[1]) < len(map2[0]):
-                ar2 = map2[1]
-            else:
-                ar2 = map2[0]
-        position += 1
-    return int(ar1[0], 2) * int(ar2[0], 2)
-
+    seats = (array
+        .strip()
+        .replace("B", "1")
+        .replace("F", "0")
+        .replace("R", "1")
+        .replace("L", "0")
+        .split("\n")
+    )
+    allseats = set(range(128 * 8))
+    openseats = allseats - claimed
+    myseat = [
+        seat
+        for seat in openseats
+        if seat + 1 not in openseats and seat - 1 not in openseats
+    ]
+    return myseat[0]
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
