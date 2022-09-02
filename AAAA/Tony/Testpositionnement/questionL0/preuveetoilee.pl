@@ -33,3 +33,5 @@ en multipliant des deux côtés par le même réel
 
 scoring = CorrectItems
 
+
+reroll = False
