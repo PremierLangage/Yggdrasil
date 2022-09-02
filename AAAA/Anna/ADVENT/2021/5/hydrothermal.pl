@@ -3,7 +3,7 @@ extends= /AAAA/Gaudet/template/cgbasic.pl
 @ennonce1.md
 @ennonce2.md
 @sol.py [build.py]
-@exemple 
+lexemple =@exemple
 
 
 #@/AAAA/dominique/python/AVANT/template/advent.pl [template.html]
