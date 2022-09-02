@@ -91,7 +91,7 @@ def ToBoards(filec):
     return called_numbers,boards
 
 def ToBoardsTab(tab):
-    lines = [entry.strip() for entry in filec] 
+    lines = [entry.strip() for entry in tab] 
     called_numbers = [int(entry) for entry in lines[0].split(' ')]
     number_of_boards = (len(lines)-1)//6
     boards = dict()
