@@ -110,6 +110,6 @@ def buildQ2(fichier,called_numbers,boards,tab):
     val1,val2  = ToBoards(fichier)
     val3,val4 = ToBoards(tab)   
     return f"""[('''{fichier}''','{Question2(val1,val2)}','Tst exemple question2'),
-     ('''{tab}''','{Question1(val3,val4)}','Tst data question2')]""", tab
+     ('''{tab}''','{Question2(val3,val4)}','Tst data question2')]""", tab
 
 
