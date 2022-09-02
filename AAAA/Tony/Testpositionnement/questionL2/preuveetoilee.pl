@@ -27,4 +27,6 @@ par linéarité de l'intégrale
 ==
 
 scoring = CorrectItems
- 
+
+
+reroll = False
