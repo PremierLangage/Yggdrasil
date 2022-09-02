@@ -43,11 +43,7 @@ def get_score(x, y, grid):
     return grid[x, y] + 1
 
 def Question1(lines):
-    with open(file_name, 'r') as f:
-        lines = [line.strip() for line in f.readlines()]
-    
     score = 0
-
     grid = create_grid(lines)
     for x in range(grid.shape[0]):
         for y in range(grid.shape[1]):
