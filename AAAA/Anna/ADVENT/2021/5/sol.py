@@ -27,12 +27,13 @@ def Question1(array):
     return max([int(s, 2) for s in seats])
 
 def Question2(array):
-    seats = (array
+    seats = (v
+        .split()
         .replace("B", "1")
         .replace("F", "0")
         .replace("R", "1")
         .replace("L", "0")
-        .split("\n")
+        .split("\n") for v in array
     )
     allseats = set(range(128 * 8))
     openseats = allseats - claimed
