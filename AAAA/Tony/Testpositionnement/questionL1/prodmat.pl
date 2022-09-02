@@ -24,3 +24,5 @@ $!\begin{pmatrix}-1&2\\\\3&-2\end{pmatrix}\begin{pmatrix}1&2&3\\\\2&2&1\\\\1&2&1
 ==
 
 scoring = CorrectItems
+
+reroll = False
