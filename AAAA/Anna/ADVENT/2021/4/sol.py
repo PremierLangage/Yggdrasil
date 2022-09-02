@@ -45,13 +45,13 @@ def builddata():
                     else :  
                         num += str(val) + ","
                 c += 1
-                print(c)
                 if c == 5:
                     lit += str(val)
                 else:
                     lit += str(val) + " "
             lit += "\n"
             tab.append(lit)
+        d += 1
         if d == 5 : 
             tab.append("\n")
     num += "\n"
