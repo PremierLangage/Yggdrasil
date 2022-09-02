@@ -24,6 +24,8 @@ $!\lim\limits_{x\rightarrow +\infty} \frac{x^2+2}{2x-x^2}!$
 
 scoring = CorrectItems
 
+reroll = False
+
  
  
 
