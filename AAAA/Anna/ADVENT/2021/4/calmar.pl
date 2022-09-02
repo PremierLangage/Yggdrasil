@@ -53,7 +53,7 @@ changeText = True
 with open("ennonce2.md","r") as f:
     lenonce = f.read()
 
-testcases, donnees = build.buildQ2(lexemple,called_numbers,boards,data)
+testcases, donnees = build.buildQ2(lexemple,called_numbers,boards,tab)
 ==
 
 
