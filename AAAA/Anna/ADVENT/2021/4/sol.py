@@ -103,7 +103,7 @@ def Question2(called_numbers, boards):
 def buildQ1(fichier,tab):
     val1,val2 = ToBoards(fichier)
     val3,val4 = ToBoards(tab)
-    dataliteral = [elem.split("\n\n") for elem in tab]
+    dataliteral = '\n'.join([elem.split("\n\n") for elem in tab])
     return f"""[('''{fichier}''','{Question1(val1,val2)}','Tst exemple question1'),
      ('''{tab}''','{Question1(val3,val4)}','Tst data question1')]""", dataliteral
 
