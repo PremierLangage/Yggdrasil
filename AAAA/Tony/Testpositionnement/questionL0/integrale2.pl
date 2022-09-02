@@ -22,4 +22,6 @@ $!\frac{1}{t-2}!$
 ==
 
 scoring = CorrectItems
+
+reroll = False
  
