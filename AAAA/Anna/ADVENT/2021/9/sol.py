@@ -41,7 +41,7 @@ def Question1(tab):
         for i in range(0, len(grid[0])):
             if grid[j][i] < min(get_adjacents(i, j)):
                 result += 1 + grid[j][i]
-    print(result)
+    return resul
 
 def buildQ1(fichier,data):
     val = ToList(fichier)
