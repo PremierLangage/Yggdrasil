@@ -81,8 +81,6 @@ def get_basin_size(x, y, grid):
 def Question2(lines):
     basin_sizes = []
     grid = create_grid(lines)
-    print(grid)
-    
     for x in range(grid.shape[0]):
         for y in range(grid.shape[1]):
             if is_low_point(x, y, grid):
