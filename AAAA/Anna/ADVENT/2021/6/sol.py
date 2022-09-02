@@ -21,8 +21,8 @@ def simulate_days(days, ages):
 
 def Question1(array, days):
     ages = [int(entry) for entry in lines[0].strip().split(',')]
-    simulate_days(days, ages)
-
+    a = simulate_days(days, ages)
+    return a
 
 def Question2(array):
     ar1 = array
