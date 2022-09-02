@@ -78,23 +78,6 @@ def Question1():
     res = simulate_days(80, ages)
     return res
 
-def simulate_days2(days, fish_at_stage):
-    for day in range(1, days+1):
-        expired_fish = fish_at_stage.pop(0)
-        fish_at_stage[6] += expired_fish
-        fish_at_stage.append(expired_fish)
-    return sum(fish_at_stage)
-
-def Question2():
-    array = [x for x in sys.stdin.readlines()]
-    ages = []
-    for x in array[0].split(','):
-        if (x != ''):
-            ages.append(int(x))
-    fish_at_stage = [ages.count(i) for i in range(9)]
-    res = simulate_days2(256, fish_at_stage)
-    return res
-
 if __name__ == '__main__':
     print(Question1())  
 
