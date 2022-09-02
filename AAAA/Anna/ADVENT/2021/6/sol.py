@@ -19,7 +19,7 @@ def simulate_days(days, ages):
         ages += [8] * new_fish
     return(len(ages))
 
-def Question1(array, days):
+def Question1(ages, days):
     ages = [int(entry) for entry in lines[0].strip().split(',')]
     a = simulate_days(days, ages)
     return a
