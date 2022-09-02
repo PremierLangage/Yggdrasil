@@ -23,6 +23,7 @@ $!\\{(x,y,z)\in\mathbb{R}^3|x+y=0,z=0\\}!$
 
 scoring = CorrectItems
   
- 
+
+reroll = False
 
  
