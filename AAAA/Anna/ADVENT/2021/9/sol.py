@@ -68,13 +68,13 @@ def buildQ1(fichier,data):
     va1 = create_grid(fichier)
     val2 = create_grid(data)
     dataliteral = '\n'.join([v for v in data])
-    return f"""[('''{fichier}''','{Question1(val)}','Tst exemple question1'),
-     ('''{dataliteral}''','{Question1(data)}','Tst data question1')]""", dataliteral
+    return f"""[('''{fichier}''','{Question1(val1)}','Tst exemple question1'),
+     ('''{dataliteral}''','{Question1(val2)}','Tst data question1')]""", dataliteral
 
 def buildQ2(fichier,data):
     val = ToList(fichier)
     dataliteral = '\n'.join([ v for v in data])
-    return f"""[('''{fichier}''','{Question2(val)}','Tst exemple question2'),
-     ('''{dataliteral}''','{Question2(data)}','Tst data question2')]""", dataliteral
+    return f"""[('''{fichier}''','{Question2(val1)}','Tst exemple question2'),
+     ('''{dataliteral}''','{Question2(val2)}','Tst data question2')]""", dataliteral
 
 
