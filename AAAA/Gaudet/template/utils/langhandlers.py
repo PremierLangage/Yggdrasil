@@ -102,7 +102,29 @@ class OCamlHandler():
         return proc.returncode == 0, proc.stdout
 
 
+class JavascriptHandler():
+    base_code = ''
+
+    def __init__(self, source_code):
+        self.exec_name = '_test.js'
+        self.exec_cmd = ['node', self.exec_name]
+        self.src = source_code
+
+    def compile(self):
+        with open(self.exec_name, 'w') as output:
+            output.write(self.src)
+        return True, ''
+
+
 # Available languages with corresponding handlers
+implemented_languages = {
+    'python': PythonHandler,
+    'c': CHandler,
+    'cpp': CPPHandler,
+    'java': JavaHandler,
+    'ocaml': OCamlHandler,
+    'javascript': JavascriptHandler
+}# Available languages with corresponding handlers
 implemented_languages = {
     'python': PythonHandler,
     'c': CHandler,
