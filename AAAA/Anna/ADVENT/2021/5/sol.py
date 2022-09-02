@@ -23,6 +23,7 @@ def Question1(array):
         .replace("R", "1")
         .replace("L", "0")
         .split("\n")
+    return max([int(s, 2) for s in seats])
 
 def Question2(array):
     ar1 = array
