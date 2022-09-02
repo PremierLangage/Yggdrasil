@@ -92,7 +92,7 @@ def buildQ1(fichier,data):
     val = ToList(fichier)
     print(Question1(val))
     dataliteral = '\n'
-    for i in range(len(data)):
+    for i in range(100):
         for v in data :
             dataliteral.join(str(v[i]))
     return f"""[('''{fichier}''','{Question1(val)}','Tst exemple question1'),
