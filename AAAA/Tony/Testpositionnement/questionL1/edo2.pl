@@ -21,3 +21,5 @@ $!10e^{-2x}+e^{-3x}!$
 ==
 
 scoring = CorrectItems
+
+reroll = False
