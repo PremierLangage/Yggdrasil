@@ -23,3 +23,5 @@ $!\ln(1+\frac{1}{t})!$
 ==
 
 scoring = CorrectItems
+
+reroll = False
