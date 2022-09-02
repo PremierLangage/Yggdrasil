@@ -44,10 +44,7 @@ def Question1(grid):
                 result += 1 + grid[j][i]
     return result
 
-def Question2(grid):
-    groups = []
-    
-    def count_groups(i, j):
+def count_groups(grid, i, j):
         if j < 0 or j >= len(grid) or i < 0 or i >= len(grid[0]) or grid[j][i] == 9 or grid[j][i] == -1:
             return
         grid[j][i] = -1
@@ -57,10 +54,12 @@ def Question2(grid):
         count_groups(i, j+1)
         count_groups(i, j-1)
 
+def Question2(grid):
+    groups = []
     for i in range(0, len(grid)):
         for j in range(0, len(grid[0])):
             groups.append(0)
-            count_groups(j, i)
+            count_groups(grid, j, i)
 
     return math.prod(sorted(groups, reverse=True)[:3])
 
