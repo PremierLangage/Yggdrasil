@@ -23,4 +23,5 @@ $!\frac{1+i}{1-i}!$
 
 scoring = CorrectItems
 
+reroll = False
 #settings.allow_reroll = false 
