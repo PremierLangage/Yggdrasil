@@ -10,7 +10,7 @@ def builddata():
         for y in range(100):
             val = random.randint(0, 10)
             literal += str(val)
-        tab.append(tab1)
+        tab.append(literal)
     return tab
 
 def ToList(filec):
