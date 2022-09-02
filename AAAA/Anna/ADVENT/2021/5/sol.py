@@ -3,6 +3,7 @@ import re
 import numpy as np
 from itertools import zip_longest
 
+import sys
 def builddata():
     tab = []
     same = random.randint(0,1)
