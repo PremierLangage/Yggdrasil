@@ -22,6 +22,27 @@ def create_grid(tab):
     for input in tab:
         grid.append(list(map(int, input)))
 
+def get_adjacents(i, j):
+    adjacents = []
+    if i+1 < len(grid[0]):
+        adjacents.append(grid[j][i+1])
+    if i-1 >= 0:
+        adjacents.append(grid[j][i-1])
+    if j+1 < len(grid):
+        adjacents.append(grid[j+1][i])
+    if j-1 >= 0:
+        adjacents.append(grid[j-1][i])
+    return adjacents
+
+def Question1(tab):
+    result = 0
+    grid = create_grid(tab)
+    for j in range(0, len(grid)):
+        for i in range(0, len(grid[0])):
+            if grid[j][i] < min(get_adjacents(i, j)):
+                result += 1 + grid[j][i]
+    print(result)
+
 def buildQ1(fichier,data):
     val = ToList(fichier)
     dataliteral = '\n'.join([v for v in data])
