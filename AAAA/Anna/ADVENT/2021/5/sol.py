@@ -59,12 +59,14 @@ def Question1(lines):
     max_x = 0
     max_y = 0
     for line in lines:
+        sys.out(line)
         x1, y1, x2, y2 = [int(entry)
                         for entry in re.sub('[^0-9]', ' ', line).split()]
         max_x = max(max_x, x1, x2)
         max_y = max(max_y, y1, y2)
     grid = np.zeros((max_y+1, max_x+1), dtype=int)
     for line in lines:
+        sys.out(line)
         x1, y1, x2, y2 = [int(entry) for entry in re.sub('[^0-9]', ' ', line).split()]
         enter_line(grid, x1, y1, x2, y2)
     return (grid >= 2).sum()
@@ -80,7 +82,6 @@ def Question2(array):
         max_y = max(max_y, y1, y2)
     grid = np.zeros((max_y+1, max_x+1), dtype=int)
     for line in lines:
-        sys.out(line)
         x1, y1, x2, y2 = [int(entry) for entry in re.sub('[^0-9]', ' ', line).split()]
         enter_line_extended(grid, x1, y1, x2, y2)
     return (grid >= 2).sum()
