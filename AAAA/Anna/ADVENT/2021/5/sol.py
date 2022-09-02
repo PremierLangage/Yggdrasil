@@ -18,11 +18,12 @@ def ToList(filec):
 
 def Question1(array): 
     seats = (array
+        .split
         .replace("B", "1")
         .replace("F", "0")
         .replace("R", "1")
         .replace("L", "0")
-        .split("\n")
+        .split("\n") for v in array
     )
     return max([int(s, 2) for s in seats])
 
