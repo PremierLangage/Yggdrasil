@@ -22,6 +22,7 @@ def create_grid(tab):
     grid = []
     for input in tab:
         grid.append(list(map(int, input)))
+    return grid
 
 def get_adjacents(i, j):
     adjacents = []
