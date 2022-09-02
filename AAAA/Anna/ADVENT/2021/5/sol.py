@@ -14,7 +14,7 @@ def builddata():
     return tab
 
 def ToList(filec):
-    return [x for x in filec] 
+    return [x.strip() for x in filec] 
 
 def Question1(array): 
     seats = (array
