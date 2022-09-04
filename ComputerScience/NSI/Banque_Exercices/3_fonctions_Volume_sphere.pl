@@ -16,10 +16,12 @@ text==
 
 Calculer le volume d'une sphère à l'aide de la formule $%V=\frac{4}{3}{\pi}R^3%$. <br>
 
-Vous devez écrire deux fonctions,<br>
- `cube` qui retourne le cube d'un réel et <br>
-`volume_sphere` qui retourne le volume de la sphere 
-en faisant appel à la fonction ``**. <br>
+Vous devez écrire deux fonctions:
+
+* `cube` qui retourne le cube d'un réel et
+
+* `volume_sphere` qui retourne le volume de la sphere 
+en faisant appel à la fonction `cube`<br>
 
 
 ==
