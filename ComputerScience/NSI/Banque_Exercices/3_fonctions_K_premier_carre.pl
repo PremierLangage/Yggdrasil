@@ -26,14 +26,14 @@ def carre(n):
     return(n*n)
 
 def premiers_carres(k) :
+    liste = ""
     for i in range(k) :
-        print(carre(i))
+        liste += str(carre(i)) + "\n"
+    return liste
 
 pltest1 = """>>> premiers_carres(2)
-{}
->>> premiers_carres(4)
-{}
->>> premiers_carres(20)
+{}>>> premiers_carres(4)
+{}>>> premiers_carres(20)
 {}
 """.format(premiers_carres(2), premiers_carres(4), premiers_carres(20))
 ==
