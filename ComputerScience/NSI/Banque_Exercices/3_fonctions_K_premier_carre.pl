@@ -21,6 +21,16 @@ Programmer ensuite une fonction **premiers_carres** qui : <br>
 
 ==
 
+# Pour info
+solution==
+def carre(n):
+    return(n*n)
+
+def premiers_carres(k) :
+    for i in range(k) :
+        print(carre(i))
+==
+
 before==
 def carre(n):
     return(n*n)
