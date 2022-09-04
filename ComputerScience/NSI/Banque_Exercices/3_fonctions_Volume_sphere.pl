@@ -37,14 +37,15 @@ pltest0 = """>>> cube(2)
 >>> cube(5)
 {}
 >>> cube(-7)
-{}
->>> volume_sphere(2)
+{}""".format(cube(2), cube(5), cube(-7))
+
+pltest1 =""">>> volume_sphere(2)
 {}
 >>> volume_sphere(5)
 {}
 >>> volume_sphere(7)
 {}
-""".format(cube(2), cube(5), cube(-7), volume_sphere(2), volume_sphere(5), volume_sphere(7))
+""".format( volume_sphere(2), volume_sphere(5), volume_sphere(7))
 ==
 soluce==#|python|
 from math import pi
