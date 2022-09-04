@@ -17,7 +17,7 @@ Programmer une fonction **carre** qui prend en paramètre un entier et retourne 
 
 Programmer ensuite une fonction **premiers_carres** qui : <br>
 * prend en paramètre un entier k <br>
-* imprime les k premiers carrés de 0 à (k-1)^2 <br>
+* affiche (imprime) les k premiers carrés de 0 à (k-1)^2 <br>
 
 ==
 
