@@ -28,7 +28,7 @@ def premiers_carres(k) :
     for i in range(k) :
         print(carre(i))
 
-pltest1 = """>>> premiers_carres(2)
+pltest0 += """>>> premiers_carres(2)
 {}
 >>> premiers_carres(4)
 {}
