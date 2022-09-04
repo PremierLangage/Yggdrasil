@@ -1,7 +1,7 @@
 
 fextends = /ComputerScience/python/AP1-1920/templates/pltest.pl
 
-extends= /ComputerScience/python/AP1-1920/templates/pltest.pl
+extends = /ComputerScience/python/template/pltest.pl
 # author = Zip
 
 title = Valeur absolue
