@@ -7,7 +7,7 @@ extends = /ComputerScience/python/template/pltest.pl
 
 title = Sphère
 
-code.editor==
+editor.code ==
 from math import pi
 
 ==
