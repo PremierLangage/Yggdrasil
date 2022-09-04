@@ -20,17 +20,6 @@ Programmer ensuite une fonction **premiers_carres** qui : <br>
 
 ==
 
-soluce==#|python|
-def carre(n):
-    return(n*n)
-
-def premiers_carres(k) :
-    for i in range(k) :
-        print (carre(i))
-
-n = int(input("Saisissez un entier :"))
-premiers_carres(n)
-==
 before==
 def carre(n):
     return(n*n)
@@ -39,27 +28,23 @@ def premiers_carres(k) :
     for i in range(k) :
         print(carre(i))
 
-==
-mplsoluce0==
-paire
-2
-==
-mplsoluce1==
-impaire 
-3
-==
-
-mplsoluce2==
-Grand 
-10
+pltest1=f""">>> premiers_carres(2)
+{}
+>>> premiers_carres(4)
+{}
+>>> premiers_carres(20)
+{}
+""".format(premiers_carres(2), premiers_carres(4), premiers_carres(20))
 ==
 
-mplsoluce3==
-nul
-0
+pltest0==
+>>> carre(2)
+4
+>>> carre(4)
+16
+>>> carre(-8)
+64
 ==
-
-
 
 
 
