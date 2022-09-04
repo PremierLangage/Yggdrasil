@@ -1,0 +1,72 @@
+#author=OCE
+#réécriture par Emmanuel Brunache
+
+# Heritage d'un type d'exercice 
+extends = /ComputerScience/python/template/pltest.pl
+@ /builder/before.py [builder.py]
+
+title = Sphère
+
+code==
+from math import pi
+
+==
+
+text==  
+
+Calculer le volume d'une sphère à l'aide de la formule $%V=\frac{4}{3}{\pi}R^3%$. <br>
+
+Vous devez écrire deux fonctions,<br>
+ `cube` qui retourne le cube d'un réel et <br>
+`volume_sphere` qui retourne le volume de la sphere 
+en faisant appel à la fonction ``**. <br>
+
+
+==
+before==
+def cube(n):
+    return n ** 3
+
+def volume_sphere(r):
+    return 4 / 3 * pi * cube(r)
+
+pltest0 = """>>> cube(2)
+{}
+>>> cube(5)
+{}
+>>> cube(-7)
+{}
+>>> volume_sphere(2)
+{}
+>>> volume_sphere(5)
+{}
+>>> volume_sphere(7)
+{}
+""".format(cube(2), cube(5), cube(-7), volume_sphere(2), volume_sphere(5), volume_sphere(7))
+==
+soluce==#|python|
+from math import pi
+
+def cube(n):
+    return n ** 3
+
+def volume_sphere(r):
+    return 4 / 3 * pi * cube(r)
+
+r = float(input("Entrez la valeur du rayon : "))
+while r <0:
+    r = float(input("Entrez la valeur du rayon : "))
+    
+print("Le volume de cette sphere vaut", volume_sphere(r))
+==
+
+
+
+
+
+
+
+
+
+
+
