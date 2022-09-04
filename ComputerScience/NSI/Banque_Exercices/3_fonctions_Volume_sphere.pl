@@ -24,6 +24,8 @@ en faisant appel à la fonction ``**. <br>
 
 ==
 before==
+from math import pi
+
 def cube(n):
     return n ** 3
 
