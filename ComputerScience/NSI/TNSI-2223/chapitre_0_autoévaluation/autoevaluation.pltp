@@ -78,6 +78,41 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 
 #@/ComputerScience/pythonBanque_Exercices/1_variables_tri_trois_valeurs.pl
 
+# Exercice avec des boucles for 
+@ /ComputerScience/NSI/Banque_Exercices/2_conditionnelles_boucles_boucle-qui-compte-de-0-a-nb-moins-1-2021.pl
+
+@ /ComputerScience/NSI/Banque_Exercices/2_conditionnelles_boucles_boucle-qui-compte-de-1-a-nb-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/2_conditionnelles_boucles_dynafor-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/2_conditionnelles_boucles_dynafor1-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/2_conditionnelles_boucles_dynafor2-2021.pl
+
+
+# @ /ComputerScience/python/AP1-1920/drafts/OCE/Suite_raison_aleatoire.pl
+# @ /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/exercises/boucles/suite-geometrique.pl
+# @ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/suite-geometrique.pl
+# Faire une boucle croissante 
+# @ /ComputerScience/python/AP1-1920/drafts/zip/boucle1/bouclecroissant.pl
+@ /ComputerScience/NSI/Banque_Exercices/2_conditionnelles_boucles_bouclecroissant.pl
+
+# Faire une boucle diviser 
+# @ /ComputerScience/python/AP1-1920/drafts/zip/boucle1/boucledivise.pl
+@ /ComputerScience/NSI/Banque_Exercices/2_conditionnelles_boucles_boucledivise.pl
+
+
+
+# Faire une boucle avec des if
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/boucleif-2122.pl
+
+# Faire une boucle avec des chaines de caractères 
+@ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/bouclestr.pl
+
+# Exercice avec des boucles while
+# @ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/dynawhile.pl
+# @ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/syracuse.pl
+
+# Exercice sur les boucles répétable sans taboo #
+#  @  /ComputerScience/python/1NSI-2122/chapitre_3_boucles/loop_exo.pl
+
 
 
 
