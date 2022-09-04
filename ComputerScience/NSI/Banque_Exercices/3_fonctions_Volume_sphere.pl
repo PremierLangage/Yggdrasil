@@ -7,7 +7,7 @@ extends = /ComputerScience/python/template/pltest.pl
 
 title = Sphère
 
-code==
+code.editor==
 from math import pi
 
 ==
@@ -56,11 +56,6 @@ def cube(n):
 def volume_sphere(r):
     return 4 / 3 * pi * cube(r)
 
-r = float(input("Entrez la valeur du rayon : "))
-while r <0:
-    r = float(input("Entrez la valeur du rayon : "))
-    
-print("Le volume de cette sphere vaut", volume_sphere(r))
 ==
 
 
