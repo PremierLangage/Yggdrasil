@@ -31,7 +31,7 @@ n = int(input("Saisie : "))
 print(dix_mais_pas_trois(n))
 ==
 
-before==
+before==#|python|
 def dix_mais_pas_trois(n):
     return n%10==0 and n%3!=0
 
