@@ -3,6 +3,7 @@
 
 # Heritage d'un type d'exercice 
 extends = /ComputerScience/python/template/pltest.pl
+@ /builder/before.py [builder.py]
 
 title = Afficher les k premiers carrés (de 0 à (k-1)^2)
 
