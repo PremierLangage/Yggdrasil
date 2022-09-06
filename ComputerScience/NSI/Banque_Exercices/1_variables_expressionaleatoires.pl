@@ -6,8 +6,6 @@ builder =@ /builder/before.py
 
 
 
-nbechec%0
-
 before== #|python|
 import random
 essai = 4
