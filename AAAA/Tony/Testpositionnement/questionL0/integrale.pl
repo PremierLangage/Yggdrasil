@@ -3,7 +3,7 @@ extends= /model/basic/checkbox_rw.pl
 title =  Calcul d'intégrales
 
 question==
- Quelle(s) intégrale(s) valent $!0!$?
+ Quelles intégrales valent $!0!$?
 ==
  
 
