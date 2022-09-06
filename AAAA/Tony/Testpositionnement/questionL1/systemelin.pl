@@ -19,12 +19,12 @@ maxright = 2
 
 right==
 $!(0,0,0)!$
-$!(1,1,2)!$
 ==
 
 wrong==
 $!(2,1,-1)!$
 $!(0,1,0)!$
+$!(1,1,2)!$
 ==
 
 scoring = CorrectItems
