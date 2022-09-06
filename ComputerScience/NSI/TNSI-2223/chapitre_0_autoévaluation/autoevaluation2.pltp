@@ -38,7 +38,7 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 @ ../../Banque_Exercices/4_listes_doublons-2122.pl
 
 # Exos durs (math, algo, ...)
-@ ../../Banque_Exercices/4_listes__difficle.pl
+#@ ../../Banque_Exercices/4_listes__difficle.pl
 
-@ ../../Banque_Exercices/4_listes_histogramme-2122.pl
-@ ../../Banque_Exercices/4_listes_zip-list-2122.pl
+#@ ../../Banque_Exercices/4_listes_histogramme-2122.pl
+#@ ../../Banque_Exercices/4_listes_zip-list-2122.pl
