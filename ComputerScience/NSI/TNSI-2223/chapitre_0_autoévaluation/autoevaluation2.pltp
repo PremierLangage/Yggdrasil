@@ -42,3 +42,14 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 
 #@ ../../Banque_Exercices/4_listes_histogramme-2122.pl
 #@ ../../Banque_Exercices/4_listes_zip-list-2122.pl
+
+### Dictionnaires
+
+@ ../../Banque_Exercices/5_dictionnaires_ajout.pl
+@ ../../Banque_Exercices/5_dictionnaires_charlie.pl
+@ ../../Banque_Exercices/5_dictionnaires_somme_valeurs.pl
+@ ../../Banque_Exercices/5_dictionnaires_liste_cles_condition.pl
+@ ../../Banque_Exercices/5_dictionnaires_somme_dicos.pl
+@ ../../Banque_Exercices/5_dictionnaires_imposable.pl
+@ ../../Banque_Exercices/5_dictionnaires_tous_clesValeurs.pl
+@ ../../Banque_Exercices/5_dictionnaires_IntersectionDicts.pl
