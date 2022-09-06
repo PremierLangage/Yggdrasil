@@ -14,8 +14,8 @@ y+z&=&0
  
 
 nbitems=4
-minright = 2
-maxright = 2
+minright = 1
+maxright = 1
 
 right==
 $!(0,0,0)!$
