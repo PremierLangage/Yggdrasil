@@ -22,7 +22,7 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 
 # Parcours des éléments de liste
 @ ../../Banque_Exercices/4_listes_existe_impair-2122.pl
-@ liststat-2122.pl
+@ ../../Banque_Exercices/4_listes_liststat-2122.pl
 
 # Construction de liste
 @ ../../Banque_Exercices/4_listes_extends-2122.pl
@@ -38,10 +38,10 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 @ ../../Banque_Exercices/4_listes_doublons-2122.pl
 
 # Exos durs (math, algo, ...)
-#@ ../../Banque_Exercices/4_listes__difficle.pl
+# @ ../../Banque_Exercices/4_listes__difficle.pl
 
-#@ ../../Banque_Exercices/4_listes_histogramme-2122.pl
-#@ ../../Banque_Exercices/4_listes_zip-list-2122.pl
+# @ ../../Banque_Exercices/4_listes_histogramme-2122.pl
+# @ ../../Banque_Exercices/4_listes_zip-list-2122.pl
 
 ### Dictionnaires
 
