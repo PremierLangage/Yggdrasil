@@ -3,7 +3,7 @@ extends= /model/basic/checkbox_rw.pl
 title = Variations de fonctions
 
 question==
-On considère la fonction définie sur $!\R!$ par $!f(x)=x^3+x!$. $!f!$ est
+On considère la fonction définie sur $!\mathbb{R}!$ par $!f(x)=x^3+x!$. $!f!$ est
 ==
  
 
