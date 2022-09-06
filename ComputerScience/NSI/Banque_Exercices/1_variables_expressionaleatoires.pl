@@ -34,8 +34,8 @@ while cnt < N:
 solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
 inputs = []
-#for i in range(N):
-#    inputs.append(globals()[f"input{i}"])
+for i in range(N):
+    inputs.append(globals()[f"input{i}"])
 ==
 
 evaluator== #|python|
