@@ -1,8 +1,8 @@
 # au 17/08/2021 test OCE : ne fonctionne pas !
 
 @ /utils/sandboxio.py
-grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
+@ /grader/evaluator.py [grader.py]
+@ /builder/before.py [builder.py]
 
 
 
