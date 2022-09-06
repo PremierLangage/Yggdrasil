@@ -18,7 +18,7 @@ La probabilité d'avoir au moins un garçon lorsqu'on a deux enfants et autant d
 
 wrong==
 La probabilité de tomber sur un nombre supérieur à $!0.6!$ quand on tire un nombre au hasard entre $!0!$ et $!1!$.
-La probabilité de tirer une carte figure dans un jeu de $!32!$ cartes.
+La probabilité de tirer une carte figure (valet, dame, roi) dans un jeu de $!32!$ cartes.
 ==
 
 scoring = CorrectItems
