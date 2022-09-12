@@ -29,11 +29,11 @@ text = Pas de text
 before==
 
 from radio import Radio
-from checkbox import Checkbox
-from textselect import TextSelect
+from checkbox import CustomCheckbox
+from textselect import CustomTextSelect
 radio = Radio() 
-check = Checkbox()
-ztext = TextSelect()
+check = CustomCheckbox()
+ztext = CustomTextSelect()
 import random
 from AMC import parse_AMC_TXT
 
