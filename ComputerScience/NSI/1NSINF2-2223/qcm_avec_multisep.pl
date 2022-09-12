@@ -28,7 +28,7 @@ text = Pas de text
 
 before==
 
-from customradio import Radio
+from customradio import Radio as CustomRadio
 from customcheckbox import CustomCheckbox
 from customtextselect import CustomTextSelect
 radio = CustomRadio() 
