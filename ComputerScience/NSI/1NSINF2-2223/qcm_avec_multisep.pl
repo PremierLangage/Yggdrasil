@@ -1,9 +1,9 @@
 
 @ /utils/sandboxio.py
 @ /utils/components/scoring.py
-@ /utils/components/radio.py [customradio.py]
-@ /utils/components/checkbox.py [customcheckbox.py]
-@ /utils/components/textselect.py [customtextselect.py]
+@ /utils/components/radio.py [radio.py]
+@ /utils/components/checkbox.py [checkbox.py]
+@ /utils/components/textselect.py [textselect.py]
 
 
 @ /model/AMC2/AMC2.py [AMC.py]
@@ -28,12 +28,12 @@ text = Pas de text
 
 before==
 
-from customradio import Radio as CustomRadio
-from customcheckbox import CustomCheckbox
-from customtextselect import CustomTextSelect
-radio = CustomRadio() 
-check = CustomCheckbox()
-ztext = CustomTextSelect()
+from radio import Radio
+from checkbox import Checkbox
+from textselect import TextSelect
+radio = Radio() 
+check = Checkbox()
+ztext = TextSelect()
 import random
 from AMC import parse_AMC_TXT
 
@@ -124,7 +124,7 @@ def strfromcomp(q):
     if q['type'] == "Radio":
         return "{{ radio | component }}"
     if q['type'] == "Checkbox":
-        return "{{ CheckboxGroup | component }}"
+        return "{{ check | component }}"
     if  q['type'] == 'TextSelect':
         return "{{ ztext | component }}"
 
