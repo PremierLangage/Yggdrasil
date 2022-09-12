@@ -82,7 +82,7 @@ before == #|python|
 import random as rd
 from radio import Radio as CustomRadio
 from checkbox import CustomCheckbox as CustomCheckbox
-from textselect import Textselect as CustomTextSelect
+from textselect import CustomTextSelect as CustomTextSelect
 from AMC import parse_AMC_TXT
 
 from aleaq import buildquestion, onefromeachgroup, getmultioption
