@@ -80,9 +80,9 @@ title= Cher enseignant vous n'avez pas changer le "title"
 
 before == #|python|
 import random as rd
-from radio import radio as CustomRadio
-from checkbox import checkbox as CustomCheckbox
-from textselect import textselect as CustomTextSelect
+from radio import Radio as CustomRadio
+from checkbox import Checkbox as CustomCheckbox
+from textselect import Textselect as CustomTextSelect
 from AMC import parse_AMC_TXT
 
 from aleaq import buildquestion, onefromeachgroup, getmultioption
