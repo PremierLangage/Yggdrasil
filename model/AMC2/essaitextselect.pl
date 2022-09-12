@@ -66,8 +66,8 @@ berk==
 title= QCM de python 
 before == #|python|
 import random as rd
-from customradio import CustomRadio
-from customcheckbox import CustomCheckbox
+from radio import Radio as CustomRadio
+from checkbox import CustomCheckbox as CustomCheckbox
 from customtextselect import CustomTextSelect
 from AMC import parse_AMC_TXT
 
