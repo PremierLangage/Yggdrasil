@@ -124,7 +124,7 @@ def strfromcomp(q):
     if q['type'] == "Radio":
         return "{{ radio | component }}"
     if q['type'] == "Checkbox":
-        return "{{ check | component }}"
+        return "{{ CheckboxGroup | component }}"
     if  q['type'] == 'TextSelect':
         return "{{ ztext | component }}"
 
