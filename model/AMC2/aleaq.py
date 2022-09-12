@@ -13,7 +13,7 @@
 import random
 from collections import defaultdict
 
-def onefromeachgroup(questions, nbpergroup):
+def onefromeachgroup(questions, nbpergroup=1):
     """
     >>> a=onefromeachgroup([{"options":["group=1"]},{"options":["group=1"]},{"options":[],"moules":"frittes"},{"options":["group=toto"]}])
     >>> a == [{'options': [], 'moules': 'frittes'}, {'options': ['group=1']}, {'options': ['group=toto']}]    
