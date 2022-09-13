@@ -62,10 +62,10 @@ list_questions=l2
 
 onepergroup=True
 
-if "onepergroup" in globals() and onepergroup :
-    list_questions=onefromeachgroup(list_questions)
-elif 'nbstep' in globals():
-    list_questions = random.sample(list_questions, nbstep)
+#if "onepergroup" in globals() and onepergroup :
+#    list_questions=onefromeachgroup(list_questions)
+#elif 'nbstep' in globals():
+#    list_questions = random.sample(list_questions, nbstep)
 
 
 
