@@ -7,7 +7,7 @@
 
 
 @ /model/AMC2/AMC2.py [AMC.py]
-@ /home/ComputerScience/NSI/AMC/aleaq.py 
+@ /ComputerScience/NSI/AMC/aleaq.py 
 @ /utils/sandboxio.py
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
