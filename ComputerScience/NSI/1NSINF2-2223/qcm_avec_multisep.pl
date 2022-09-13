@@ -61,7 +61,7 @@ for q in list_questions:
         l2.append(buildquestion(q))
 list_questions=l2
 
-onepergroup=True
+onepergroup=False
 
 if "onepergroup" in globals() and onepergroup :
     list_questions=onefromeachgroup(list_questions)
