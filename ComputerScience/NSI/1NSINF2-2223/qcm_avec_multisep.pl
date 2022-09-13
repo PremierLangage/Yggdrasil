@@ -125,7 +125,6 @@ def evaluate(q):
             return 0
     if q['type'] == "Checkbox":
         for item in check.items:
-            print(item['sol'], file=sys.stderr)
             if not ((item['checked'] and item['sol']) or (not item['checked'] and not item['sol'])):
                 return 0
         return 100
@@ -152,14 +151,8 @@ if step> -1:
     currentscore=sum(scores)//nbstep
 
 step = step+1
-print(step , file=sys.stderr)
-print(nbstep , file=sys.stderr)
 if step<nbstep:
     q=list_questions[step]
-    print(q , file=sys.stderr)
-    print('ligne 159', file=sys.stderr)
-    print(q['type'] , file=sys.stderr)
-    print('ligne 161', file=sys.stderr)
     if q['type'] == "Radio":
         radio.items = []
         for i, item in enumerate(q['items']):
