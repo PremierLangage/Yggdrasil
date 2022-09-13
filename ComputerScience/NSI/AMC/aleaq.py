@@ -32,7 +32,7 @@ def onefromeachgroup(questions, nbpergroup=1):
                 groups[ng].append(q)
     # création de la sélection de nbpergroup questions par groupes
     for gl in groups.values():
-        nogroup.append(random.sample(gl,min(len(gl),nbpergroup)))
+        nogroup.extend(random.sample(gl,min(len(gl),nbpergroup)))
     return nogroup
 
 def getmultioption(q):
