@@ -2,7 +2,7 @@
 @ /utils/sandboxio.py
 @ /utils/components/scoring.py
 @ /utils/components/radio.py [radio.py]
-@ /utils/components/checkbox.py [checkbox.py]
+# @ /utils/components/checkbox.py [checkbox.py]
 @ /utils/components/textselect.py [textselect.py]
 
 
@@ -29,7 +29,7 @@ text = Pas de text
 before==
 
 from radio import Radio
-from checkbox import CustomCheckbox
+# from checkbox import CustomCheckbox
 from textselect import CustomTextSelect
 radio = Radio() 
 check = CustomCheckbox()
