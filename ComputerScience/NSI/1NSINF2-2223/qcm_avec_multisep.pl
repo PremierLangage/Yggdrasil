@@ -155,6 +155,7 @@ print(step , file=sys.stderr)
 print(nbstep , file=sys.stderr)
 if step<nbstep:
     q=list_questions[step]
+    print(q , file=sys.stderr)
     print(q['type'] , file=sys.stderr)
     if q['type'] == "Radio":
         radio.items = []
