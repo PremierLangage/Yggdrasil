@@ -148,7 +148,7 @@ if step<nbstep:
     q=list_questions[step]
     if q['type'] == "Radio":
         radio.items = []
-        for i, item in enumarate(q['items']):
+        for i, item in enumerate(q['items']):
             radio.items.append({
                 "id": str(i),
                 "content": item
@@ -160,7 +160,7 @@ if step<nbstep:
 #            radio.shuffle()
     elif q['type'] == "Checkbox":
         check.items = []
-        for i, item in enumarate(q['items']):
+        for i, item in enumerate(q['items']):
             check.items.append({
                 "id": str(i),
                 "content": item
