@@ -80,32 +80,18 @@ intro ==
 Ce quiz contient {{nbstep}} questions.
 ==
 
-
+@ /AAAA/dominique/01_MULTISTEP/jinjafilter.py
 
 evaluator==
-from jinja2 import Environment, BaseLoader
+from jinjafilter import setFilter
+
+env = setFilter()
+
 
 def format_feedback_lightscore(score,feedback):
     if score==-1:
         return f"""<div class="alert alert-info "><strong>{score}</strong> <br> {feedback}</div>"""
     return  f"""<div class="alert alert-secondary"><strong>Score : {score} / 100 <br> </strong> {feedback}</div>"""
-
-
-def component(l):
-    if isinstance(l,dict):
-        selector = l["selector"]
-        cid = l["cid"]
-    else:
-        selector = l.selector
-        cid = l.cid
-    return f"<{selector} cid='{cid}'></{selector}>"
-    
-
-env = Environment(loader=BaseLoader())
-env.globals.update({
-    "component":    component
-})
-env.filters["component"] = component
 
 
 def evaluate(q):
