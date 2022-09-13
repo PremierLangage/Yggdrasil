@@ -88,6 +88,7 @@ XX==
 ==
 
 evaluator==
+import sys
 from jinja2 import Environment, BaseLoader
 
 def format_feedback_lightscore(score,feedback):
@@ -124,7 +125,7 @@ def evaluate(q):
         # return radio.eval()
     if q['type'] == "Checkbox":
         for item in check.items:
-            print(item['sol'])
+            print(item['sol'], file=sys.stderr)
             if item['checked'] and item['sol']:
                 return 100
             else:
