@@ -149,8 +149,8 @@ if step> -1:
     score = evaluate(q)
     scores.append(score)
     fifi = text + " \n " + strfromcomp(q)
-    print(fifi, file=sys.stderr)
     feedbacks += env.from_string(fifi).render(globals())
+    print(feedbacks, file=sys.stderr)
     currentscore=sum(scores)//nbstep
 
 step = step+1
