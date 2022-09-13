@@ -98,8 +98,8 @@ def component(l):
     else:
         selector = l.selector
         cid = l.cid
-    return "<%s cid='%s'></%s>" % (selector, cid, selector)
-
+    return f"<{selector} cid='{cid}'></{selector}>"
+    
 
 env = Environment(loader=BaseLoader())
 env.globals.update({
