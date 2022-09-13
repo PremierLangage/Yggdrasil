@@ -135,7 +135,7 @@ def evaluate(q):
 
 def strfromcomp(q):
     if q['type'] == "Radio":
-        return "{{ radio | component }}"
+        return "{{ radio | component }}"
     if q['type'] == "Checkbox":
         return "{{ check | component }}"
     if  q['type'] == 'TextSelect':
