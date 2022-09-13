@@ -147,11 +147,17 @@ if step<nbstep:
 
     q=list_questions[step]
     if q['type'] == "Radio":
-        radio.setitems(q['items'])
-        radio.setsol_from_index(q['index'])
-        radio.disabled = False
-        if 'ordered' not in q['options']:
-            radio.shuffle()
+        radio.items = []
+        for i, item in enumarate(q['items']):
+            radio.items.append({
+                "id": str(i),
+                "content": item
+            })
+#        radio.setitems(q['items'])
+#        radio.setsol_from_index(q['index'])
+#        radio.disabled = False
+#        if 'ordered' not in q['options']:
+#            radio.shuffle()
     elif q['type'] == "Checkbox":
         check.items = []
         for i, item in enumarate(q['items']):
