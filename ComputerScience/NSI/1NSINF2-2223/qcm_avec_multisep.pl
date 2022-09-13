@@ -153,6 +153,12 @@ if step<nbstep:
         if 'ordered' not in q['options']:
             radio.shuffle()
     elif q['type'] == "Checkbox":
+        check.items = []
+        for i, item in enumarate(q['items']):
+            check.items.append({
+                "id": str(i),
+                "content": item
+            })
 #        check.setitems(q['items'])
 #        check.setsol_from_index(q['index'])
 #        check.disabled = False
