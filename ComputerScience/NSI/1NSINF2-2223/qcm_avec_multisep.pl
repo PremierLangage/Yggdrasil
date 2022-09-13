@@ -171,10 +171,18 @@ if step<nbstep:
     elif q['type'] == "Checkbox":
         check.items = []
         for i, item in enumerate(q['items']):
-            check.items.append({
-                "id": str(i),
-                "content": item
-            })
+            if i in q['index']:
+                check.items.append({
+                    "id": i,
+                    "content": item,
+                    "sol": True
+                })
+            else:
+                check.items.append({
+                    "id": i,
+                    "content": item,
+                    "sol": False
+                })
 #        check.setitems(q['items'])
 #        check.setsol_from_index(q['index'])
 #        check.disabled = False
