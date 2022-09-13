@@ -21,6 +21,7 @@ questions==
 
 check =: CheckboxGroup
 ztext =: Text
+radio =: RadioGroup
 title= QCM PL AP1 
 
 @ questions.txt [question1.txt]
@@ -29,10 +30,10 @@ text = Pas de text
 
 before==
 
-from radio import Radio
+# from radio import Radio
 # from checkbox import CustomCheckbox
-from textselect import CustomTextSelect
-radio = Radio() 
+# from textselect import CustomTextSelect
+#radio = Radio() 
 
 # ztext = CustomTextSelect()
 import random
