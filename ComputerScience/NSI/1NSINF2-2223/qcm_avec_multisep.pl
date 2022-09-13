@@ -151,6 +151,7 @@ if step> -1:
     currentscore=sum(scores)//nbstep
 
 step = step+1
+print(q , file=sys.stderr)
 if step<nbstep:
 
     q=list_questions[step]
