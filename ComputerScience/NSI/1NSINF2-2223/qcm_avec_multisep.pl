@@ -149,10 +149,16 @@ if step<nbstep:
     if q['type'] == "Radio":
         radio.items = []
         for i, item in enumerate(q['items']):
-            radio.items.append({
-                "id": str(i),
-                "content": item
-            })
+            if i in q['index']:
+                radio.items.append({
+                    "id": 2022,
+                    "content": item
+                })
+            else:
+                radio.items.append({
+                    "id": i,
+                    "content": item
+                })
 #        radio.setitems(q['items'])
 #        radio.setsol_from_index(q['index'])
 #        radio.disabled = False
