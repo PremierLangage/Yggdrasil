@@ -124,6 +124,7 @@ def evaluate(q):
         # return radio.eval()
     if q['type'] == "Checkbox":
         for item in check.items:
+            print(item['sol'])
             if item['checked'] and item['sol']:
                 return 100
             else:
