@@ -122,14 +122,12 @@ def evaluate(q):
             return 100
         else:
             return 0
-        # return radio.eval()
     if q['type'] == "Checkbox":
         for item in check.items:
-            print(item['sol'], file=sys.stderr)
+            # print(item['sol'], file=sys.stderr)
             if not ((item['checked'] and item['sol']) or (not item['checked'] and not item['sol'])):
                 return 0
         return 100
-        # return check.eval()
     if  q['type'] == 'TextSelect':
         return ztext.eval()
 
