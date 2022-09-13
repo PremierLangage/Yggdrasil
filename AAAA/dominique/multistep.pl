@@ -2,6 +2,7 @@
 @ /utils/components/scoring.py
 @ /utils/components/radio.py [radio.py]
 @ /utils/components/checkbox.py [customcheckbox.py]
+@ /utils/components/checkbox.py [checkbox.py]
 @ /utils/components/textselect.py [customtextselect.py]
 
 
