@@ -117,7 +117,11 @@ env.filters["component"] = component
 
 def evaluate(q):
     if q['type'] == "Radio":
-        return radio.eval()
+        if radio.selection == 2022:
+            return 100
+        else:
+            return 0
+        # return radio.eval()
     if q['type'] == "Checkbox":
         return check.eval()
     if  q['type'] == 'TextSelect':
