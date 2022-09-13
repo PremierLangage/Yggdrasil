@@ -153,11 +153,11 @@ if step<nbstep:
         if 'ordered' not in q['options']:
             radio.shuffle()
     elif q['type'] == "Checkbox":
-        check.setitems(q['items'])
-        check.setsol_from_index(q['index'])
-        check.disabled = False
-        if 'ordered' not in q['options']:
-            check.shuffle()
+#        check.setitems(q['items'])
+#        check.setsol_from_index(q['index'])
+#        check.disabled = False
+#        if 'ordered' not in q['options']:
+#            check.shuffle()
     elif  q['type'] == 'TextSelect':
         ztext.setdata_from_textDR(q['items'][0])
     statement = q['text']
