@@ -37,6 +37,7 @@ before==
 # radio = Radio() 
 
 # ztext = CustomTextSelect()
+import sys
 import random
 from AMC import parse_AMC_TXT
 
@@ -62,10 +63,12 @@ list_questions=l2
 
 onepergroup=True
 
-#if "onepergroup" in globals() and onepergroup :
-#    list_questions=onefromeachgroup(list_questions)
-#elif 'nbstep' in globals():
-#    list_questions = random.sample(list_questions, nbstep)
+if "onepergroup" in globals() and onepergroup :
+    list_questions=onefromeachgroup(list_questions)
+    print('68' , file=sys.stderr)
+elif 'nbstep' in globals():
+    list_questions = random.sample(list_questions, nbstep)
+    print('71' , file=sys.stderr)
 
 
 
