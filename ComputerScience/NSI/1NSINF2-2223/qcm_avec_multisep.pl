@@ -151,9 +151,8 @@ if step> -1:
     currentscore=sum(scores)//nbstep
 
 step = step+1
-print(q , file=sys.stderr)
+print(list_questions , file=sys.stderr)
 if step<nbstep:
-
     q=list_questions[step]
     print(q['type'] , file=sys.stderr)
     if q['type'] == "Radio":
