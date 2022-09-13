@@ -126,10 +126,9 @@ def evaluate(q):
     if q['type'] == "Checkbox":
         for item in check.items:
             print(item['sol'], file=sys.stderr)
-            if item['checked'] and item['sol']:
-                return 100
-            else:
+            if not ((item['checked'] and item['sol']) or (not item['checked'] and not item['sol'])):
                 return 0
+        return 100
         # return check.eval()
     if  q['type'] == 'TextSelect':
         return ztext.eval()
