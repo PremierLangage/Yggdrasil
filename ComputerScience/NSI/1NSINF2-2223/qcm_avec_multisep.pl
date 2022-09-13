@@ -32,7 +32,7 @@ from radio import Radio
 # from checkbox import CustomCheckbox
 from textselect import CustomTextSelect
 radio = Radio() 
-check = CustomCheckbox()
+check =: CheckboxGroup
 ztext = CustomTextSelect()
 import random
 from AMC import parse_AMC_TXT
