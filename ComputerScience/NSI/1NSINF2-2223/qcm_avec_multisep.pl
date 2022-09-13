@@ -25,7 +25,7 @@ radio =: RadioGroup
 
 title= QCM PL AP1 
 
-@ questions_sample.txt [question1.txt]
+@ questions.txt [question1.txt]
 
 text = Pas de text 
 
