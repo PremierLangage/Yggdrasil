@@ -123,6 +123,7 @@ def evaluate(q):
             radio.items[q['index']]['css'] = 'success-state icon-check-after'
             return 100
         else:
+            radio.items[q['index']]['css'] = 'error-state icon-check-after'
             return 0
     if q['type'] == "Checkbox":
         for item in check.items:
