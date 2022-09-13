@@ -80,19 +80,15 @@ intro ==
 Ce quiz contient {{nbstep}} questions.
 ==
 
-XX==
 
-==
 
 evaluator==
 from jinja2 import Environment, BaseLoader
 
 def format_feedback_lightscore(score,feedback):
     if score==-1:
-        tpl="""<div class="alert {}"><strong>{}</strong> <br> {}</div>"""
-        return tpl.format('alert-info',score, feedback)
-    tpl="""<div class="alert alert-secondary"><strong>Score : {} / 100 <br> </strong> {}</div>"""
-    return tpl.format(score,feedback)
+        return f"""<div class="alert alert-info "><strong>{score}</strong> <br> {feedback}</div>"""
+    return  f"""<div class="alert alert-secondary"><strong>Score : {score} / 100 <br> </strong> {feedback}</div>"""
 
 
 def component(l):
