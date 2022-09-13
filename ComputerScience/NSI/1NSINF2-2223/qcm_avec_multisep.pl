@@ -120,6 +120,7 @@ env.filters["component"] = component
 def evaluate(q):
     if q['type'] == "Radio":
         if radio.selection == 2022:
+            radio.items[q['index']]['css'] = 'success-state icon-check-after'
             return 100
         else:
             return 0
