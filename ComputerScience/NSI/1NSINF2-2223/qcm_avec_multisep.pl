@@ -20,7 +20,7 @@ questions==
 ==
 
 check =: CheckboxGroup
-
+ztext =: Text
 title= QCM PL AP1 
 
 @ questions.txt [question1.txt]
@@ -34,7 +34,7 @@ from radio import Radio
 from textselect import CustomTextSelect
 radio = Radio() 
 
-ztext = CustomTextSelect()
+# ztext = CustomTextSelect()
 import random
 from AMC import parse_AMC_TXT
 
