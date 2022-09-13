@@ -148,7 +148,7 @@ if step<nbstep:
     q=list_questions[step]
     title = str(step)+str(q)
     if q['type'] == "Radio":
-        radio = CustomRadio() 
+        radio = Radio() 
         radio.setitems(q['items'])
         radio.setsol_from_index(q['index'])
         if 'ordered' not in q['options']:
