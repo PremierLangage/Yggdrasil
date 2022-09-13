@@ -7,7 +7,7 @@
 
 
 @ /model/AMC2/AMC2.py [AMC.py]
-@ /model/AMC2/aleaq.py 
+@ /home/ComputerScience/NSI/AMC/aleaq.py 
 @ /utils/sandboxio.py
 @ /builder/before.py [builder.py]
 @ /grader/evaluator.py [grader.py]
@@ -65,10 +65,8 @@ onepergroup=True
 
 if "onepergroup" in globals() and onepergroup :
     list_questions=onefromeachgroup(list_questions)
-    print('68' , file=sys.stderr)
 elif 'nbstep' in globals():
     list_questions = random.sample(list_questions, nbstep)
-    print('71' , file=sys.stderr)
 
 
 
