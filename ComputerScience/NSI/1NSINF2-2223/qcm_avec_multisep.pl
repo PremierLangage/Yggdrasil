@@ -157,7 +157,7 @@ if step<nbstep:
     if q['type'] == "Radio":
         radio.items = []
         for i, item in enumerate(q['items']):
-            if i in q['index']:
+            if i == q['index']:
                 radio.items.append({
                     "id": 2022,
                     "content": item
