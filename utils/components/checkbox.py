@@ -5,6 +5,7 @@ from scoring import *
 
 class Checkbox(Component):
     pass
+
 class CustomCheckbox(Checkbox):
 
     def __init__(self, **kwargs):
