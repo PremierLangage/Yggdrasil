@@ -152,6 +152,7 @@ if step> -1:
 
 step = step+1
 print(step , file=sys.stderr)
+print(nbstep , file=sys.stderr)
 if step<nbstep:
     q=list_questions[step]
     print(q['type'] , file=sys.stderr)
