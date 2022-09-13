@@ -157,6 +157,7 @@ if step<nbstep:
     q=list_questions[step]
     print(q , file=sys.stderr)
     print(q['type'] , file=sys.stderr)
+    print('ligne 160', file=sys.stderr)
     if q['type'] == "Radio":
         radio.items = []
         for i, item in enumerate(q['items']):
