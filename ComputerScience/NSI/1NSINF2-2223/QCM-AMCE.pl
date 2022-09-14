@@ -17,7 +17,7 @@ extends = /model/multistep.pl
 
 @ /model/AMC2/AMC2.py [AMC.py]
 
-@ aleaq.py 
+@ /ComputerScience/NSI/AMC/aleaq.py 
 
 settings.cumulative % false
 
