@@ -37,5 +37,7 @@ form==
 languages==
 ==
 
+showWanted = True
+
 before==
 ==
