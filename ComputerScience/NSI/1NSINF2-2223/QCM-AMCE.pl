@@ -152,6 +152,9 @@ formstep ==
 ==
 
 evaluatorstep ==
+from radio import Radio
+from checkbox import CustomCheckbox
+from customtextselect import CustomTextSelect
 import sys
 print(dir(comp[step]), file=sys.stderr)
 score = comp[step].eval()
