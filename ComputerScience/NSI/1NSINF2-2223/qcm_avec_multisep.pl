@@ -84,19 +84,19 @@ comp = []
 statement  = []
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
-        rad = radio()
-        rad.items = []
+        radio.items = []
         for i, item in enumerate(q['items']):
             if i == q['index']:
-                rad.items.append({
+                radio.items.append({
                     "id": 2022,
                     "content": item
                 })
             else:
-                rad.items.append({
+                radio.items.append({
                     "id": i,
                     "content": item
                 })
+        comp.append(radio)
 #        radio.setitems(q['items'])
 #        radio.setsol_from_index(q['index'])
 #        radio.disabled = False
