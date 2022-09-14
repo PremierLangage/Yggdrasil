@@ -74,11 +74,12 @@ Oui heureusement il y en a des faciles...
 ==
 
 form== #|html|
-
+{{inputs}}
 <ul>
+
 {% for input in inputs %}
 {% if not solved[loop.index0]%}
-<li>  {{enonce[loop.index0]}} = {{ inputs[loop.index0]|component }}  </li>
+<li>  {{enonce[loop.index0]}}   </li>
 {% endif %}
 {% endfor %}
 </ul>
