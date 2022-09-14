@@ -27,7 +27,7 @@ solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
-    inp = Input()
+    inp = {"cid": i, "selector": "c-input"}
     globals()[f"input{i}"] = inp
     inputs.append(inp)
 ==
@@ -74,7 +74,6 @@ Oui heureusement il y en a des faciles...
 ==
 
 form== #|html|
-{{inputs}}
 <ul>
 
 {% for input in inputs %}
