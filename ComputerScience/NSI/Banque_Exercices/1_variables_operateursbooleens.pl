@@ -34,7 +34,7 @@ for i in range(N):
     globals()[f"input{i}"] = inp
     inputs.append(inp.cid)
 
-input = Input()
+# input = Input()
 ==
 
 evaluator== #|python|
