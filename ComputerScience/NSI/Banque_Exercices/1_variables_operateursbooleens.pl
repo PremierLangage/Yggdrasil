@@ -30,9 +30,8 @@ solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
-    inp = Input()
-    globals()[f"input{i}"] = inp
-    inputs.append(inp.cid)
+    inputs.append(inp)
+    
 
 # input = Input()
 ==
@@ -42,7 +41,7 @@ import sys
 cpt = 0
 for i in range(N):
     box = inputs[i]
-    print(box.value,file=sys.stderr)
+    print(box,file=sys.stderr)
     try:
         dummy= box.value
     except Exception as e:
