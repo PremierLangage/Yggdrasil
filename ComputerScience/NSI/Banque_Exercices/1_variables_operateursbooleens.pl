@@ -83,7 +83,7 @@ form== #|html|
 {{res}}
 <ul>
 
-{% for input in inputs %}
+{% for inputa in inputs %}
 {% if not solved[loop.index0]%}
 <li>  {{enonce[loop.index0]}} = {{input|component}}  </li>
 {% endif %}
