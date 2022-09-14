@@ -45,6 +45,7 @@ if __name__ == "__main__":
     testSuccess = 0
 
     for test, want, name in testcases:
+        wantedText = want.strip() if showWanted else 'Caché'
         try:
             
             # If input is the name of a file, it loads the file into the stdin
@@ -63,10 +64,9 @@ if __name__ == "__main__":
                     feedback.addTestSuccess(name, proc.stdout.strip(), want.strip())
                     testSuccess += 1
                 else:
-                    wantedText = want.strip() if showWanted else 'Caché'
                     feedback.addTestFailure(name, proc.stdout.strip(), wantedText)
             else:
-                feedback.addTestError(name, "Erreur à l'exécution (code de retour " + str(proc.returncode) + ")\nSortie d'erreur : " + proc.stderr, want)
+                feedback.addTestError(name, "Erreur à l'exécution (code de retour " + str(proc.returncode) + ")\nSortie d'erreur : " + proc.stderr, showWanted)
     
     # Execute 'postevaluator' script if it's set for question 2
     if 'postevaluator' in context and ('changeText' not in context or not context['changeText']):
