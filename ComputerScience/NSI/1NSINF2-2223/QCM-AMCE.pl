@@ -13,21 +13,11 @@
 # FAITES UN EXTENDS DESSUS ET DEFINISER VOTRE BALISE questions
 # extends=  /model/AMC2/essaitextselect.pl 
 
-extends= /model/multistep.pl
+extends = /model/multistep.pl
 
-# @ /model/multistep.pl
+@ /model/AMC2/AMC2.py [AMC.py]
 
-# @ /utils/components/radio.py
-# @ /utils/components/checkbox.py
-# @ /utils/components/textselect.py [customtextselect.py]
-
-@ /model/AMCM/AMCM.py [AMC.py]
-
-@ /ComputerScience/NSI/AMC/aleaq.py 
-
-#@ /model/basic/radio.pl [CustomRadio.py]
-
-#@ /model/basic/checkbox.pl [CustomCheckbox.py]
+@ aleaq.py 
 
 settings.cumulative % false
 
@@ -90,12 +80,12 @@ title= Cher enseignant vous n'avez pas changer le "title"
 
 before == #|python|
 import random as rd
-from radio import Radio as CustomRadio
-from checkbox import CustomCheckbox as CustomCheckbox
-from customtextselect import CustomTextSelect as CustomTextSelect
+from radio import Radio
+from checkbox import CustomCheckbox
+from customtextselect import CustomTextSelect
 from AMC import parse_AMC_TXT
 
-from aleaq import buildquestion, onefromeachgroup, getmultioption
+from aleaq import buildquestion, onefromeachgroup
 ######
 
 
@@ -111,16 +101,8 @@ for i in range(10):
 ######
 list_questions = parse_AMC_TXT(questions)
 
-
-l2=[]
-for q in list_questions:
-    for _ in range(getmultioption(q)):
-        l2.append(q)
-list_questions = l2 
-
-
 if "onepergroup" in globals() and onepergroup :
-    list_questions=onefromeachgroup(list_questions)
+    list_questions=onefromeachgroup(list_questions,1)
 elif 'nbstep' in globals():
     list_questions = rd.sample(list_questions, nbstep)
 
@@ -128,12 +110,11 @@ nbstep = len(list_questions)
 
 comp = []
 statement  = []
-if "shuffle" in globals():
-    rd.shuffle(list_questions)
+rd.shuffle(list_questions)
 for i, q in enumerate(list_questions):
     q=buildquestion(q) # Gestion de l'aléa 
     if q['type'] == "Radio":
-        comp.append(CustomRadio())
+        comp.append(Radio())
         statement.append(q['text'])
         comp[i].set_items(q['items'])
         comp[i].set_sol(q['index'])
@@ -151,7 +132,6 @@ for i, q in enumerate(list_questions):
         statement.append(q['text'])
         cst.setdata_from_textDR(q['items'][0])
         comp.append(cst)
-
 ==
 
 display=
@@ -172,10 +152,6 @@ formstep ==
 evaluatorstep ==
 score = comp[step].eval()
 ==
-
-
-
-
 
 
 
