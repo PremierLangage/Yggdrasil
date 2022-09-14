@@ -33,10 +33,11 @@ for i in range(N):
 ==
 
 evaluator== #|python|
-
+import sys
 cpt = 0
 for i in range(N):
     box = inputs[i]
+    print(box,file=sys.stderr)
     try:
         dummy= box.value
     except Exception as e:
