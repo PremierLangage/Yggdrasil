@@ -13,15 +13,15 @@
 # FAITES UN EXTENDS DESSUS ET DEFINISER VOTRE BALISE questions
 # extends=  /model/AMC2/essaitextselect.pl 
 
-extends = /model/multistep.pl
+@  /model/multistep.pl
 
 @ /model/AMCM/AMCM.py [AMC.py]
 
 @ /ComputerScience/NSI/AMC/aleaq.py 
 
-@ /model/basic/radio.pl [CustomRadio.py]
+#@ /model/basic/radio.pl [CustomRadio.py]
 
-@ /model/basic/checkbox.pl [CustomCheckbox.py]
+#@ /model/basic/checkbox.pl [CustomCheckbox.py]
 
 settings.cumulative % false
 
@@ -84,8 +84,8 @@ title= Cher enseignant vous n'avez pas changer le "title"
 
 before == #|python|
 import random as rd
-from CustomRadio import Radio as CustomRadio
-from CustomCheckbox import Checkbox as CustomCheckbox
+from radio import Radio as CustomRadio
+from checkbox import Checkbox as CustomCheckbox
 from customtextselect import CustomTextSelect as CustomTextSelect
 from AMC import parse_AMC_TXT
 
