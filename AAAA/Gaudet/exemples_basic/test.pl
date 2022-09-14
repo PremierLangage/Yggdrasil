@@ -14,6 +14,8 @@ C
 python
 ==
 
+showWanted = False
+
 testcases==
 [('1', '2', 'Test 1'),
 ('2', '3', 'Test 2'),
