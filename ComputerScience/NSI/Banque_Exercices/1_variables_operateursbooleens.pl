@@ -6,6 +6,8 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+@ /utils/inputfields/basicinput.py
+
 nbechec%0
 
 before== #|python|
