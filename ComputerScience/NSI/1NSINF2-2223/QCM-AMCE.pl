@@ -152,7 +152,7 @@ for i, q in enumerate(list_questions):
         if 'ordered' not in q['options']:
             comp[i].shuffle()
     elif  q['type'] == 'TextSelect':
-        cst = CustomTextSelect()
+        cst = TextSelect()
         statement.append(q['text'])
         cst.setdata_from_textDR(q['items'][0])
         comp.append(cst)
