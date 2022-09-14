@@ -11,7 +11,7 @@ builder =@ /builder/before.py
 nbechec%0
 
 before== #|python|
-from input import Input as CustomInput
+from input import Input
 import random
 essai = 1
 N = 3
@@ -30,10 +30,7 @@ solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
-    inputs.append(CustomInput())
-    
-
-# input = Input()
+    inputs.append(Input())
 ==
 
 evaluator== #|python|
@@ -41,7 +38,7 @@ import sys
 cpt = 0
 for i in range(N):
     box = inputs[i]
-    print(box.value,file=sys.stderr)
+    print(box,file=sys.stderr)
     try:
         dummy= box.value
     except Exception as e:
