@@ -6,8 +6,6 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-@ /utils/inputfields/basicinput.py
-@ /utils/json/serializable.py
 
 nbechec%0
 
