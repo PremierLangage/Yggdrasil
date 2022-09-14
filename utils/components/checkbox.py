@@ -4,8 +4,7 @@ from components import Component
 from scoring import *
 
 class Checkbox(Component):
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
+    pass
 
 class CustomCheckbox(Checkbox):
 
