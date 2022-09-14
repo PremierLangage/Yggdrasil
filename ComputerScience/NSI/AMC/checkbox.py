@@ -3,10 +3,10 @@ from uuid import uuid4
 from components import Component
 from scoring import *
 
-class Checkbox(Component):
-    pass
+#class Checkbox(Component):
+#    pass
 
-class CustomCheckbox(Component):
+class Checkbox(Component):
 
     def __init__(self, **kwargs):
         self.selector = 'c-checkbox-group'
