@@ -85,12 +85,7 @@ questions==
 
 ==
 
-text==
-Essai
-==
-form==
-Essai
-==
+
 title= Cher enseignant vous n'avez pas changer le "title" 
 
 before == #|python|
