@@ -73,7 +73,7 @@ Oui heureusement il y en a des faciles...
 **Attention il faut fournir une valeur booléenne: True ou False sur chaque ligne.**
 ==
 
-formold== #|html|
+form== #|html|
 Nombre d'essais : {{essai}}
 <ul>
 {% for input in inputs %}
