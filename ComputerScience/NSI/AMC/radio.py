@@ -48,13 +48,13 @@ class Radio(Component):
         """
         Evaluate the answer.
         """
+        self.display_feedback()
         for item in self.items:
             id = item['id']
             if id == self._sol and id == self.selection:
                 self.score = 100
                 return 100
         self.score = 0
-        self.display_feedback()
         return 0
 
     def show(self):
