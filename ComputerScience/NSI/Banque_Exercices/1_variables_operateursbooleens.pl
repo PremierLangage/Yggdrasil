@@ -33,6 +33,8 @@ for i in range(N):
     inp = Input()
     globals()[f"input{i}"] = inp
     inputs.append(inp)
+
+input = Input()
 ==
 
 evaluator== #|python|
