@@ -84,15 +84,16 @@ comp = []
 statement  = []
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
-        radio.items = []
+        rad = radio()
+        rad.items = []
         for i, item in enumerate(q['items']):
             if i == q['index']:
-                radio.items.append({
+                rad.items.append({
                     "id": 2022,
                     "content": item
                 })
             else:
-                radio.items.append({
+                rad.items.append({
                     "id": i,
                     "content": item
                 })
