@@ -38,7 +38,7 @@ import sys
 cpt = 0
 for i in range(N):
     box = inputs[i]
-    print(box,file=sys.stderr)
+    print(box.value,file=sys.stderr)
     try:
         dummy= box.value
     except Exception as e:
@@ -87,6 +87,8 @@ form== #|html|
 </ul>
 
 {{inputs[0]|component}}
+{{inputs[1]|component}}
+{{inputs[2]|component}}
 ==
 
 
