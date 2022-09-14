@@ -85,6 +85,8 @@ form== #|html|
 {% endif %}
 {% endfor %}
 </ul>
+
+{{inputs[0]|component}}
 ==
 
 
