@@ -41,7 +41,7 @@ if __name__ == "__main__":
     from random import *
     from pathlib import *
     testcases = eval(context['testcases'])
-    showWanted = context.get('showWanted', True)
+    showWanted = context.get('showWanted', False)
     testSuccess = 0
 
     for test, want, name in testcases:
