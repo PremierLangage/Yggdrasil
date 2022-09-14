@@ -78,7 +78,7 @@ Nombre d'essais : {{essai}}
 <ul>
 {% for input in inputs %}
 
-<li>  {{ input|component }}  </li>
+<li>  essai  </li>
 
 {% endfor %}
 </ul>
