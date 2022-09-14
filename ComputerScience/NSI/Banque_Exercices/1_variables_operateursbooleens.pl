@@ -31,7 +31,7 @@ isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
     inputs.append(Input())
-inputs[0].eval
+inputs[0].eval()
 ==
 
 evaluator== #|python|
