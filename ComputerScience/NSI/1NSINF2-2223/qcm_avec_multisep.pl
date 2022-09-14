@@ -84,24 +84,25 @@ comp = []
 statement  = []
 for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
-        radio.items = []
-        for i, item in enumerate(q['items']):
-            if i == q['index']:
-                radio.items.append({
-                    "id": 2022,
-                    "content": item
-                })
-            else:
-                radio.items.append({
-                    "id": i,
-                    "content": item
-                })
-        comp.append(radio)
-#        radio.setitems(q['items'])
-#        radio.setsol_from_index(q['index'])
-#        radio.disabled = False
-#        if 'ordered' not in q['options']:
-#            radio.shuffle()
+        #radio.items = []
+        #for i, item in enumerate(q['items']):
+        #    if i == q['index']:
+        #        radio.items.append({
+        #            "id": 2022,
+        #            "content": item
+        #        })
+        #    else:
+        #        radio.items.append({
+        #            "id": i,
+        #            "content": item
+        #        })
+        #comp.append(radio)
+        radio = Radio()
+        radio.setitems(q['items'])
+        radio.setsol_from_index(q['index'])
+        radio.disabled = False
+        if 'ordered' not in q['options']:
+            radio.shuffle()
     elif q['type'] == "Checkbox":
         check.items = []
         for i, item in enumerate(q['items']):
