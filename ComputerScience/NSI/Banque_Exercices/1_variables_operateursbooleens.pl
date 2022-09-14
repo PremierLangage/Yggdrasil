@@ -74,6 +74,7 @@ Oui heureusement il y en a des faciles...
 ==
 
 form== #|html|
+{{res}}
 <ul>
 
 {% for input in inputs %}
