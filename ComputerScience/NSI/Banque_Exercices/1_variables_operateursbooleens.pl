@@ -80,16 +80,16 @@ form== #|html|
 {{res}}
 <ul>
 
-{% for input in inputs %}
+{% for specinput in specinputs %}
 {% if not solved[loop.index0]%}
-<li>  {{enonce[loop.index0]}} = <c-input cid="{{input}}"> <c-input/>  </li>
+<li>  {{enonce[loop.index0]}} = <c-input cid="{{specinput}}"> <c-input/>  </li>
 {% endif %}
 {% endfor %}
 </ul>
 
-{{inputs[0]|component}}
-{{inputs[1]|component}}
-{{inputs[2]|component}}
+{{specinputs[0]|component}}
+{{specinputs[1]|component}}
+{{specinputs[2]|component}}
 ==
 
 
