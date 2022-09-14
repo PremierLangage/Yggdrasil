@@ -79,6 +79,7 @@ questions==
 title= Cher enseignant vous n'avez pas changer le "title" 
 
 before == #|python|
+import sys
 import random as rd
 from radio import Radio
 from checkbox import CustomCheckbox
