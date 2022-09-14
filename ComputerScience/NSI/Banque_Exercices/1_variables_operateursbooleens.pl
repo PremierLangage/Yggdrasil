@@ -38,7 +38,36 @@ for i in range(N):
 
 ==
 
+evaluator== #|python|
+import sys
+cpt = 0
+for i in range(N):
+    # box = globals()[f"input{i}"]
+    box = inputs[i]
+    print(box.value,file=sys.stderr)
+    try:
+        dummy= box.value
+    except Exception as e:
+        continue
+    if solved[i]:
+        cpt += 1
+        continue
+    if box.value == str(res[i]):
+        cpt += 1
+        solved[i]= True
+    else:
+        if type(res[i])==type(0.0):
+            isfloat[i]= True
 
+score = int(cpt / N * 100)
+feedback = 'Bravo' if score == 100 else 'Corriger les erreurs'
+essai -= 1 if score != 100 else 0
+if score <100 and essai<1 :
+    exec(before)
+    nbechec += 1
+    feedback ="essayez avec d'autres valeurs nombre d'echec= "+str(nbechec)
+grade = (score, feedback)
+==
 
 title = Expressions booléennes 
 # y a pas besoin d'énoncé 
