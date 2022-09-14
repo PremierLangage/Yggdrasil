@@ -28,9 +28,9 @@ res = [ eval(enonce[n]) for n in range(N)]
 
 solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
-inputs = []
+specinputs = []
 for i in range(N):
-    inputs.append(Input())
+    specinputs.append(Input())
 
 ==
 
@@ -38,7 +38,7 @@ evaluator== #|python|
 import sys
 cpt = 0
 for i in range(N):
-    inputs[i].eval()
+    box = specinputs[i]
     print(box.eval(),file=sys.stderr)
     try:
         dummy= box.value
