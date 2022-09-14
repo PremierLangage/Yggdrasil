@@ -1,9 +1,9 @@
 
 @ /utils/sandboxio.py
 @ /utils/components/scoring.py
-@ /utils/components/radio.py [radio.py]
+# @ /utils/components/radio.py [radio.py]
 # @ /utils/components/checkbox.py [checkbox.py]
-@ /utils/components/textselect.py [textselect.py]
+# @ /utils/components/textselect.py [textselect.py]
 
 
 @ /model/AMC2/AMC2.py [AMC.py]
@@ -29,7 +29,7 @@ title= QCM PL AP1
 
 text = Pas de text 
 
-before==
+before==#|python|
 
 # from radio import Radio
 # from checkbox import CustomCheckbox
@@ -79,6 +79,51 @@ text= f"Ce test contient {nbstep} questions. Pas de retour arrière et un seul e
 
 scores=[]
 feedbacks=""
+
+comp = []
+statement  = []
+for i, q in enumerate(list_questions):
+    if q['type'] == "Radio":
+        radio.items = []
+        for i, item in enumerate(q['items']):
+            if i == q['index']:
+                radio.items.append({
+                    "id": 2022,
+                    "content": item
+                })
+            else:
+                radio.items.append({
+                    "id": i,
+                    "content": item
+                })
+#        radio.setitems(q['items'])
+#        radio.setsol_from_index(q['index'])
+#        radio.disabled = False
+#        if 'ordered' not in q['options']:
+#            radio.shuffle()
+    elif q['type'] == "Checkbox":
+        check.items = []
+        for i, item in enumerate(q['items']):
+            if i in q['index']:
+                check.items.append({
+                    "id": i,
+                    "content": item,
+                    "sol": True
+                })
+            else:
+                check.items.append({
+                    "id": i,
+                    "content": item,
+                    "sol": False
+                })
+#        check.setitems(q['items'])
+#        check.setsol_from_index(q['index'])
+#        check.disabled = False
+#        if 'ordered' not in q['options']:
+#            check.shuffle()
+    elif  q['type'] == 'TextSelect':
+        ztext.setdata_from_textDR(q['items'][0])
+
 ==
 intro ==
 Ce quiz contient {{nbstep}} questions.
@@ -88,7 +133,7 @@ XX==
 
 ==
 
-evaluator==
+evaluator==#|python|
 import sys
 from jinja2 import Environment, BaseLoader
 
@@ -156,47 +201,7 @@ if step> -1:
 
 step = step+1
 if step<nbstep:
-    q=list_questions[step]
-    if q['type'] == "Radio":
-        radio.items = []
-        for i, item in enumerate(q['items']):
-            if i == q['index']:
-                radio.items.append({
-                    "id": 2022,
-                    "content": item
-                })
-            else:
-                radio.items.append({
-                    "id": i,
-                    "content": item
-                })
-#        radio.setitems(q['items'])
-#        radio.setsol_from_index(q['index'])
-#        radio.disabled = False
-#        if 'ordered' not in q['options']:
-#            radio.shuffle()
-    elif q['type'] == "Checkbox":
-        check.items = []
-        for i, item in enumerate(q['items']):
-            if i in q['index']:
-                check.items.append({
-                    "id": i,
-                    "content": item,
-                    "sol": True
-                })
-            else:
-                check.items.append({
-                    "id": i,
-                    "content": item,
-                    "sol": False
-                })
-#        check.setitems(q['items'])
-#        check.setsol_from_index(q['index'])
-#        check.disabled = False
-#        if 'ordered' not in q['options']:
-#            check.shuffle()
-    elif  q['type'] == 'TextSelect':
-        ztext.setdata_from_textDR(q['items'][0])
+
     statement = q['text']
     grade=(currentscore, "<br>")
     text="""Question {{ step + 1 }}.
@@ -217,6 +222,19 @@ form==
 {% elif q['type'] == "TextSelect" %}
     {{ ztext | component }}
 {% endif %}
+==
+
+textstep ==
+<strong> Question {{ step + 1 }}. </strong> 
+{{ statement[step] }}
+==
+
+formstep ==
+{{ comp[step]|component }}
+==
+
+evaluatorstep ==
+score = comp[step].eval()
 ==
 
 
