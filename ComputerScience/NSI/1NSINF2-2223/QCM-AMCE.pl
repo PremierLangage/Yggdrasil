@@ -150,7 +150,7 @@ formstep ==
 ==
 
 evaluatorstep ==
-score = comp[step].eva()
+score = comp[step].eval()
 ==
 
 
