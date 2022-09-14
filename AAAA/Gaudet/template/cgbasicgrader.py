@@ -48,7 +48,6 @@ if __name__ == "__main__":
     for test, want, name in testcases:
         wantedText = want.strip() if showWanted else 'Caché'
         try:
-            
             # If input is the name of a file, it loads the file into the stdin
             if len(test)<22:
                 q = Path(test)
