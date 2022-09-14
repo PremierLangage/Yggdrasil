@@ -9,6 +9,7 @@ builder =@ /builder/before.py
 nbechec%0
 
 before== #|python|
+from basicinput import TextInput
 import random
 essai = 1
 N = 3
