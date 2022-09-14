@@ -128,7 +128,6 @@ for i, q in enumerate(list_questions):
         comp[i].set_sol(q['index'])
         if 'ordered' not in q['options']:
             comp[i].shuffle()
-        print(dir(comp[i]), file=sys.stderr)
     elif  q['type'] == 'TextSelect':
         cst = CustomTextSelect()
         statement.append(q['text'])
@@ -152,8 +151,6 @@ formstep ==
 ==
 
 evaluatorstep ==
-import sys
-print(dir(comp[step]), file=sys.stderr)
 score = comp[step].eval()
 ==
 
