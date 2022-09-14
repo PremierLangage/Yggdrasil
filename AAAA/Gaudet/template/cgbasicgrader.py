@@ -66,7 +66,7 @@ if __name__ == "__main__":
                 else:
                     feedback.addTestFailure(name, proc.stdout.strip(), wantedText)
             else:
-                feedback.addTestError(name, "Erreur à l'exécution (code de retour " + str(proc.returncode) + ")\nSortie d'erreur : " + proc.stderr, showWanted)
+                feedback.addTestError(name, "Erreur à l'exécution (code de retour " + str(proc.returncode) + ")\nSortie d'erreur : " + proc.stderr, wantedText)
     
     # Execute 'postevaluator' script if it's set for question 2
     if 'postevaluator' in context and ('changeText' not in context or not context['changeText']):
