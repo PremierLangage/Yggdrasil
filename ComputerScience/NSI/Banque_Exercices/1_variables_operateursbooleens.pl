@@ -74,7 +74,7 @@ Oui heureusement il y en a des faciles...
 ==
 
 form== #|html|
-Nombre d'essais : {{essai}}
+
 <ul>
 {% for input in inputs %}
 {% if not solved[loop.index0]%}
