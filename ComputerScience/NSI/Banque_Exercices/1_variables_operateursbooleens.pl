@@ -31,7 +31,9 @@ solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
-    inputs.append(TextInput())
+    inp = TextInput()
+    inp.sol = res[i]
+    inputs.append(inp)
     # globals()[f"input{i}"] = inputs[i]
     
 
@@ -80,13 +82,13 @@ Oui heureusement il y en a des faciles...
 **Attention il faut fournir une valeur booléenne: True ou False sur chaque ligne.**
 ==
 
-form== #|html|
+inputblock== #|html|
 {{res}}
 <ul>
 
 {% for input in inputs %}
 {% if not solved[loop.index0]%}
-<li>  {{enonce[loop.index0]}} = {{input.cid}}<c-input cid="{{input.cid}}"> <c-input/>  </li>
+<li>  {{enonce[loop.index0]}} = {{input|component}}  </li>
 {% endif %}
 {% endfor %}
 </ul>
