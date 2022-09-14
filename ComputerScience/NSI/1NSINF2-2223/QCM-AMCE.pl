@@ -120,13 +120,14 @@ for i, q in enumerate(list_questions):
         comp[i].set_sol(q['index'])
         if 'ordered' not in q['options']:
             comp[i].shuffle()
-    elif q['type'] == "CustomCheckbox":
+    elif q['type'] == "Checkbox":
         comp.append(CustomCheckbox())
         statement.append(q['text'])
         comp[i].set_items(q['items'])
         comp[i].set_sol(q['index'])
         if 'ordered' not in q['options']:
             comp[i].shuffle()
+        q['type'] == "CustomCheckbox"
     elif  q['type'] == 'TextSelect':
         cst = CustomTextSelect()
         statement.append(q['text'])
