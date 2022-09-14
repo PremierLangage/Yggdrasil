@@ -13,7 +13,7 @@
 # FAITES UN EXTENDS DESSUS ET DEFINISER VOTRE BALISE questions
 # extends=  /model/AMC2/essaitextselect.pl 
 
-@  /model/multistep.pl
+@ /model/multistep.pl
 
 @ /model/AMCM/AMCM.py [AMC.py]
 
