@@ -75,13 +75,7 @@ Oui heureusement il y en a des faciles...
 
 form== #|html|
 
-<ul>
 
-
-<li>  pouet  </li>
-
-
-</ul>
 ==
 
 formold== #|html|
