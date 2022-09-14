@@ -11,7 +11,6 @@ extends = /model/basic/multinput.pl
 nbechec%0
 
 before== #|python|
-from input import Input
 import random
 import sys
 essai = 1
