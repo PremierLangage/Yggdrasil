@@ -63,6 +63,7 @@ if __name__ == "__main__":
                     feedback.addTestSuccess(name, proc.stdout.strip(), want.strip())
                     testSuccess += 1
                 else:
+                    wantedText = want.strip() if showWanted else 'Caché'
                     feedback.addTestFailure(name, proc.stdout.strip(), want.strip())
             else:
                 feedback.addTestError(name, "Erreur à l'exécution (code de retour " + str(proc.returncode) + ")\nSortie d'erreur : " + proc.stderr, want)
