@@ -135,15 +135,15 @@ for i, q in enumerate(list_questions):
     if q['type'] == "Radio":
         comp.append(CustomRadio())
         statement.append(q['text'])
-        comp[i].setitems(q['items'])
-        comp[i].setsol_from_index(q['index'])
+        comp[i].set_items(q['items'])
+        comp[i].set_sol(q['index'])
         if 'ordered' not in q['options']:
             comp[i].shuffle()
     elif q['type'] == "Checkbox":
         comp.append(CustomCheckbox())
         statement.append(q['text'])
         comp[i].set_items(q['items'])
-        comp[i].setsol_from_index(q['index'])
+        comp[i].set_sol(q['index'])
         if 'ordered' not in q['options']:
             comp[i].shuffle()
     elif  q['type'] == 'TextSelect':
