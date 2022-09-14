@@ -42,7 +42,6 @@ if __name__ == "__main__":
     from pathlib import *
     testcases = eval(context['testcases'])
     showWanted = eval(context.get('showWanted', True))
-    showWanted = False
     testSuccess = 0
 
     for test, want, name in testcases:
