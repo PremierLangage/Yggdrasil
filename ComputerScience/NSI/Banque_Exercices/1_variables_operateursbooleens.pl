@@ -32,7 +32,7 @@ inputs = []
 for i in range(N):
     inp = Input()
     globals()[f"input{i}"] = inp
-    inputs.append(inp)
+    inputs.append(inp.cid)
 
 input = Input()
 ==
@@ -83,9 +83,9 @@ form== #|html|
 {{res}}
 <ul>
 
-{% for inputa in inputs %}
+{% for input in inputs %}
 {% if not solved[loop.index0]%}
-<li>  {{enonce[loop.index0]}} = {{input|component}}  </li>
+<li>  {{enonce[loop.index0]}} = <c-input cid="{{}}"> <c-input/>  </li>
 {% endif %}
 {% endfor %}
 </ul>
