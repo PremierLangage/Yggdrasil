@@ -40,7 +40,7 @@ evaluator== #|python|
 import sys
 cpt = 0
 for i in range(N):
-    box = inputs[i]
+    box = globals()[f"input{i}"]
     print(box.eval(),file=sys.stderr)
     try:
         dummy= box.value
