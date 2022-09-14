@@ -31,10 +31,8 @@ isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
     inp = Input()
+    globals()[f"input{i}"] = inp
     inputs.append(Input())
-    inp.sol = "True"
-    inp.value = "True"
-    inp.eval()
 
 ==
 
