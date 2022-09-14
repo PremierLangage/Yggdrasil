@@ -24,14 +24,14 @@ ope2 = [random.choice(list({'and','or'})) for n in range(N)]
 enonce=[]
 for n in range(N):
     enonce.append(op1[n]+' '+ope[n]+' '+op2[n]+' '+ope2[n]+' '+op3[n])
-res = [ eval(enonce[n]) for n in range(N)]
+res = [ str(eval(enonce[n])) for n in range(N)]
 
 solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
     inp = TextInput()
-    inp.sol = str(res[i])
+    inp.sol = res[i]
     inputs.append(inp)
     # globals()[f"input{i}"] = inputs[i]
     
