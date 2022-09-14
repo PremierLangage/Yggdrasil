@@ -66,27 +66,15 @@ title = Expressions booléennes
 text==
 Attention vous avez un nombre limité d'essai pour répondre a toutes les égalitées.
 
-Sinon cela redémarre au début avec égalités.
+Sinon cela redémarre au début avec {{N}} égalités.
 
 Oui heureusement il y en a des faciles...
 
 **Attention il faut fournir une valeur booléenne: True ou False sur chaque ligne.**
 ==
 
-form==
+form== #|html|
 
-
-==
-
-formold== #|html|
-Nombre d'essais : {{essai}}
-<ul>
-{% for input in inputs %}
-{% if not solved[loop.index0]%}
-<li>  {{enonce[loop.index0]}} = {{ input|component }}  </li>
-{% endif %}
-{% endfor %}
-</ul>
 ==
 
 
