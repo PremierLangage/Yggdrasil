@@ -13,6 +13,7 @@ nbechec%0
 before== #|python|
 from input import Input
 import random
+import sys
 essai = 1
 N = 3
 boolval = ["True","False","not True","not False"]
