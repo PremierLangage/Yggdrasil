@@ -13,7 +13,7 @@
 # FAITES UN EXTENDS DESSUS ET DEFINISER VOTRE BALISE questions
 # extends=  /model/AMC2/essaitextselect.pl 
 
-extends = /ComputerScience/NSI/AMC/multistep.pl
+extends = /home/ComputerScience/NSI/AMC/multistep.pl
 
 @ /model/AMC2/AMC2.py [AMC.py]
 
