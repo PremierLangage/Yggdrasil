@@ -6,7 +6,7 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-@ /utils/components/input.py
+extends = /model/basic/multinput.pl
 
 nbechec%0
 
