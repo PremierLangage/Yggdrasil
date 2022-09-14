@@ -32,6 +32,7 @@ inputs = []
 for i in range(N):
     inp = Input()
     globals()[f"input{i}"] = inp
+    print(inp.cid,file=sys.stderr)
     inputs.append(Input())
 
 ==
