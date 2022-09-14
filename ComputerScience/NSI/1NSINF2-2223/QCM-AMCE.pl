@@ -27,7 +27,7 @@ settings.cumulative % false
 
 onepergroup=true
 
-questions==
+exemple_de_questions==
 
 
 
