@@ -32,8 +32,9 @@ isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
     inp = Input()
-    globals()[f"input{i}"] = inp
     inputs.append(inp)
+    globals()[f"input{i}"] = inp
+    
 
 ==
 
