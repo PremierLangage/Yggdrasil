@@ -87,7 +87,7 @@ inputblock== #|html|
 
 {% for input in inputs %}
 {% if not solved[loop.index0]%}
-<li>  {{enonce[loop.index0]}} = {{input|component}}  </li>
+<li>  {{enonce[loop.index0]}} = {{input|html}}  </li>
 {% endif %}
 {% endfor %}
 </ul>
