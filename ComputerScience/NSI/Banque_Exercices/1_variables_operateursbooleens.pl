@@ -11,7 +11,7 @@ builder =@ /builder/before.py
 nbechec%0
 
 before== #|python|
-from input import Input
+from input import Input as CustomInput
 import random
 essai = 1
 N = 3
