@@ -150,6 +150,7 @@ formstep ==
 ==
 
 evaluatorstep ==
+print(dir(comp[step]), file=sys.stderr)
 score = comp[step].eval()
 ==
 
