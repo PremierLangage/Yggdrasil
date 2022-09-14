@@ -27,7 +27,8 @@ solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
-    inp = {"cid": i, "selector": "c-input"}
+    #inp = {"cid": i, "selector": "c-input"}
+    inp =: Input
     globals()[f"input{i}"] = inp
     inputs.append(inp)
 ==
