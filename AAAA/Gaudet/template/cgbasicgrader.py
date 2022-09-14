@@ -55,6 +55,7 @@ if __name__ == "__main__":
                 if q.exists() :
                     with q.open() as f:
                         test = f.read()
+            
             proc = subprocess.run(handler.exec_cmd, input=test, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                 text=True, timeout=1)
         except subprocess.TimeoutExpired:
