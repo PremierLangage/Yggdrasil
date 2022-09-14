@@ -5,4 +5,4 @@ questions==
 
 ==
 
-@ questions.txt [question1.txt]
+@ questions_sample.txt [question1.txt]
