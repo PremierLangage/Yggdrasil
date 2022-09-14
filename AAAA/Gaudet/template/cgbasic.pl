@@ -14,6 +14,8 @@ des tuples de la forme (chaine a mettre dans stdin, chaine à recevoir dans stdo
 La variable before peut être utilisée pour exécuter un script Python pendant la construction de l'exercice.
 
 La liste des langages utilisables actuellement est : c, cpp, python, java, ocaml
+
+La variable showWanted est un booléen indiquant si la réponse attendue est affichée ou non dans le cas ou un test ne passe pas.
 ==
 grader  =@ ./cgbasicgrader.py
 builder =@ ./cgbuilder.py
