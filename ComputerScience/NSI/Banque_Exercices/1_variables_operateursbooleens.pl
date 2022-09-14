@@ -75,9 +75,7 @@ Oui heureusement il y en a des faciles...
 
 form== #|html|
 Nombre d'essais : {{essai}}
-<ul>
 
-</ul>
 ==
 
 formold== #|html|
