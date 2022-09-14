@@ -41,8 +41,9 @@ evaluator== #|python|
 import sys
 cpt = 0
 for i in range(N):
-    box = globals()[f"input{i}"]
-    print(box.cid,file=sys.stderr)
+    # box = globals()[f"input{i}"]
+    box = inputs[i]
+    print(box.value,file=sys.stderr)
     try:
         dummy= box.value
     except Exception as e:
