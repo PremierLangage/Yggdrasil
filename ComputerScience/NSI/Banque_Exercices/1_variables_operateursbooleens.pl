@@ -41,7 +41,7 @@ import sys
 cpt = 0
 for i in range(N):
     box = globals()[f"input{i}"]
-    print(box.eval(),file=sys.stderr)
+    print(box.cid,file=sys.stderr)
     try:
         dummy= box.value
     except Exception as e:
