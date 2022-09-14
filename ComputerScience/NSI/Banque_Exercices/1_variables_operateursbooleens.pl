@@ -36,7 +36,7 @@ evaluator== #|python|
 
 cpt = 0
 for i in range(N):
-    box = globals()[f"input{i}"]
+    box = inputs[i]
     try:
         dummy= box.value
     except Exception as e:
