@@ -19,9 +19,9 @@ extends = /model/multistep.pl
 
 @ /ComputerScience/NSI/AMC/aleaq.py 
 
-@ radio.pl [CustomRadio.py]
+@ /model/basic/radio.pl [CustomRadio.py]
 
-@ checkbox.pl [CustomCheckbox.py]
+@ /model/basic/checkbox.pl [CustomCheckbox.py]
 
 settings.cumulative % false
 
