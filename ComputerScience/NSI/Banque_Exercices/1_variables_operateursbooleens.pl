@@ -28,9 +28,9 @@ res = [ eval(enonce[n]) for n in range(N)]
 
 solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
-specinputs = []
+inputs = []
 for i in range(N):
-    specinputs.append(Input())
+    inputs.append(Input())
 
 ==
 
@@ -38,7 +38,7 @@ evaluator== #|python|
 import sys
 cpt = 0
 for i in range(N):
-    box = specinputs[i]
+    box = inputs[i]
     print(box.eval(),file=sys.stderr)
     try:
         dummy= box.value
@@ -80,16 +80,13 @@ form== #|html|
 {{res}}
 <ul>
 
-{% for specinput in specinputs %}
+{% for input in inputs %}
 {% if not solved[loop.index0]%}
-<li>  {{enonce[loop.index0]}} = <c-input cid="{{specinput}}"> <c-input/>  </li>
+<li>  {{enonce[loop.index0]}} = <c-input cid="{{input.cid}}"> <c-input/>  </li>
 {% endif %}
 {% endfor %}
 </ul>
 
-{{specinputs[0]|component}}
-{{specinputs[1]|component}}
-{{specinputs[2]|component}}
 ==
 
 
