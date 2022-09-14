@@ -76,11 +76,7 @@ Oui heureusement il y en a des faciles...
 form== #|html|
 Nombre d'essais : {{essai}}
 <ul>
-{% for input in inputs %}
 
-<li>  {{ input|component }}  </li>
-
-{% endfor %}
 </ul>
 ==
 
