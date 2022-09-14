@@ -78,7 +78,7 @@ form== #|html|
 <ul>
 {% for input in inputs %}
 
-<li>  essai  </li>
+<li>  {enonce[loop.index0]} = {{ input|component }}  </li>
 
 {% endfor %}
 </ul>
