@@ -32,6 +32,7 @@ inputs = []
 for i in range(N):
     inp = Input()
     inputs.append(Input())
+    inp.sol = "True"
     inp.eval()
 
 ==
