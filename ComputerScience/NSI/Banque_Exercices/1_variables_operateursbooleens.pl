@@ -73,8 +73,26 @@ Oui heureusement il y en a des faciles...
 **Attention il faut fournir une valeur booléenne: True ou False sur chaque ligne.**
 ==
 
-form== #|html|
+formold== #|html|
+Nombre d'essais : {{essai}}
+<ul>
+{% for input in inputs %}
 
+<li>  {{ input|component }}  </li>
+
+{% endfor %}
+</ul>
+==
+
+formold== #|html|
+Nombre d'essais : {{essai}}
+<ul>
+{% for input in inputs %}
+{% if not solved[loop.index0]%}
+<li>  {{enonce[loop.index0]}} = {{ input|component }}  </li>
+{% endif %}
+{% endfor %}
+</ul>
 ==
 
 
