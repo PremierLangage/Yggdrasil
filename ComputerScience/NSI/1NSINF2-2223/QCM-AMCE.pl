@@ -19,9 +19,9 @@ extends = /model/multistep.pl
 
 @ /ComputerScience/NSI/AMC/aleaq.py 
 
-@ /model/basic/radio.pl
+@ /model/basic/radio.pl [CustomRadio.py]
 
-@ /model/basic/checkbox.pl
+@ /model/basic/checkbox.pl [CustomCheckbox.py]
 
 settings.cumulative % false
 
@@ -84,8 +84,8 @@ title= Cher enseignant vous n'avez pas changer le "title"
 
 before == #|python|
 import random as rd
-from radio import Radio as CustomRadio
-from checkbox import Checkbox as CustomCheckbox
+from CustomRadio import Radio as CustomRadio
+from CustomCheckbox import Checkbox as CustomCheckbox
 from customtextselect import CustomTextSelect as CustomTextSelect
 from AMC import parse_AMC_TXT
 
