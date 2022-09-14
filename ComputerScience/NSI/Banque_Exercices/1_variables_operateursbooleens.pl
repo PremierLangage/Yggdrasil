@@ -11,7 +11,7 @@ builder =@ /builder/before.py
 nbechec%0
 
 before== #|python|
-from input import Input
+from input import Input as CustomInput
 import random
 essai = 1
 N = 3
@@ -30,7 +30,7 @@ solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
-    inputs.append(Input())
+    inputs.append(CustomInput())
     
 
 # input = Input()
