@@ -147,8 +147,7 @@ textstep ==
 ==
 
 formstep ==
-import sys
-print(dir(comp[step]), file=sys.stderr)
+{{print(dir(comp[step]), file=sys.stderr)}}
 {{ comp[step]|component }}
 ==
 
