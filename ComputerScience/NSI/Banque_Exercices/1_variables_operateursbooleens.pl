@@ -31,7 +31,7 @@ solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
-    inputs.append(Input())
+    inputs.append(TextInput())
     # globals()[f"input{i}"] = inputs[i]
     
 
