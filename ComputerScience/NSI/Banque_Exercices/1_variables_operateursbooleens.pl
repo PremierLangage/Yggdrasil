@@ -76,11 +76,11 @@ Oui heureusement il y en a des faciles...
 form== #|html|
 
 <ul>
+{% for input in inputs %}
 
+<li>  {{enonce[loop.index0]}} = {{ input|component }}  </li>
 
-<li>  pouet</li>
-
-
+{% endfor %}
 </ul>
 ==
 
