@@ -85,7 +85,7 @@ form== #|html|
 
 {% for input in inputs %}
 {% if not solved[loop.index0]%}
-<li>  {{enonce[loop.index0]}} = <c-input cid="{{}}"> <c-input/>  </li>
+<li>  {{enonce[loop.index0]}} = <c-input cid="{{input}}"> <c-input/>  </li>
 {% endif %}
 {% endfor %}
 </ul>
