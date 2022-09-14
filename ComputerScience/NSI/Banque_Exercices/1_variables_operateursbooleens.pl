@@ -31,7 +31,7 @@ isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
     inp = TextInput()
-    inp.sol = res[i]
+    inp.sol = str(res[i])
     inputs.append(inp)
     # globals()[f"input{i}"] = inputs[i]
     
