@@ -78,7 +78,7 @@ form== #|html|
 <ul>
 {% for input in inputs %}
 
-<li> {{ input|component }}  </li>
+<li> {{ input }}  </li>
 
 {% endfor %}
 </ul>
