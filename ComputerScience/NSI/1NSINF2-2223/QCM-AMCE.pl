@@ -17,6 +17,10 @@ extends= /model/multistep.pl
 
 #@ /model/multistep.pl
 
+@ /utils/components/radio.py
+@ /utils/components/checkbox.py
+@ /utils/components/textselect.py [customtextselect.py]
+
 @ /model/AMCM/AMCM.py [AMC.py]
 
 @ /ComputerScience/NSI/AMC/aleaq.py 
