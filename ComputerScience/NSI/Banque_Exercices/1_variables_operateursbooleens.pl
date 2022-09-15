@@ -71,7 +71,7 @@ evaluator == #|py|
 import sys
 for input in inputs:
     print(input.data, file=sys.stderr)
-    if input.sol == input.data['values']:
+    if input.sol == input.data['value']:
         input.score = 100
     else:
         input.score = 0
