@@ -65,51 +65,39 @@ inputblock== #|html|
 
 ==
 
+
 evaluator == #|py|
 # Evaluate all input fields
 import sys
-
-def samestrings(str1, str2, diffmeasure="EditDist", tol=0, casesens=False):
-    """
-    Check if two strings are similar.
-    """
-    if not casesens:
-        str1 = str1.casefold()
-        str2 = str2.casefold()
-    if diffmeasure == "EditRatio":
-        return edit_distance(str1, str2)/len(str2) <= tol
-    else:
-        return edit_distance(str1, str2) <= tol
-
-def edit_distance(s1, s2):
-    """
-    Return the edit distance between two strings.
-    """
-    # C'est une fonction classique qui doit exister dans un module.
-    # Il faudrait importer ce module dans la sandbox et appeler cette fonction.
-    if len(s1) > len(s2):
-        s1, s2 = s2, s1
-    distances = range(len(s1) + 1)
-    for index2,char2 in enumerate(s2):
-        newDistances = [index2+1]
-        for index1, char1 in enumerate(s1):
-            if char1 == char2:
-                newDistances.append(distances[index1])
-            else:
-                newDistances.append(1 + min((distances[index1],
-                                             distances[index1+1],
-                                             newDistances[-1])))
-        distances = newDistances
-    return distances[-1]
-
 for input in inputs:
-    print(input.data['value'], file=sys.stderr)
-    print(input.sol, file=sys.stderr)
-    print(input.sol == input.data['value'], file=sys.stderr)
-    print([samestrings(input.data['value'], item) for item in input.sol], file=sys.stderr)
-    print(any([samestrings(input.data['value'], item) for item in input.sol]), file=sys.stderr)
+    print(input.data, file=sys.stderr)
+    if input.sol == input.data['values']:
+        input.score = 100
+    else:
+        input.score = 0
 
+# Compute score   
+scores = [input.score for input in inputs]
+if -1 in scores:
+    score = -1
+else:
+    score = sum(scores)//len(scores)
 
+# Display feedback
+if score != -1:
+    for input in inputs:
+        input.display_feedback()
+else:
+    for input in inputs:
+        if input.score == -1:
+            input.display_feedback()
+        else:
+            input.hide_feedback()
 
+# Disable input fields
+if score != -1:
+    for input in inputs:
+        input.disable()
 ==
+
 
