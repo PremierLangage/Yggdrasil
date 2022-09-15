@@ -65,7 +65,7 @@ inputblock== #|html|
 
 ==
 
-evaluator +== #|py|
+evaluator == #|py|
 # Evaluate all input fields
 import sys
 for input in inputs:
