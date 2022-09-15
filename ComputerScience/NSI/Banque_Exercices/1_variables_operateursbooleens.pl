@@ -82,7 +82,7 @@ def samestrings(str1, str2, diffmeasure="EditDist", tol=0, casesens=False):
         return edit_distance(str1, str2) <= tol
 
 for input in inputs:
-    print([samestrings(self.data['value'], item, **self.evalparam) for item in self.sol], file=sys.stderr)
+    print([samestrings(input.data['value'], item) for item in input.sol], file=sys.stderr)
 
 
 
