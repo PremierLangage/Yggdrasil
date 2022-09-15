@@ -106,7 +106,7 @@ for input in inputs:
     print(input.data['value'], file=sys.stderr)
     print(input.sol, file=sys.stderr)
     print(input.sol == input.data['value'], file=sys.stderr)
-    print([samestrings(input.data['value'], item) for item in input.sol], file=sys.stderr)
+    print(any([samestrings(input.data['value'], item) for item in input.sol]), file=sys.stderr)
 
 
 
