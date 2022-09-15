@@ -69,7 +69,7 @@ evaluator == #|py|
 # Evaluate all input fields
 import sys
 for input in inputs:
-    print(input.value, file=sys.stderr)
+    print(input.data, file=sys.stderr)
 
 ==
 
