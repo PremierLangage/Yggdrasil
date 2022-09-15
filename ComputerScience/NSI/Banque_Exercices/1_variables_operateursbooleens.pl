@@ -1,6 +1,8 @@
 
 # au 17/08/2021 test OCE : ne marche pas !!!
 # y a pas de TAG
+# Grosse modification pour utiliser multiinput en modifiant l'évaluateur car le eval de textinput
+# ne fonctionne pas
 
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
