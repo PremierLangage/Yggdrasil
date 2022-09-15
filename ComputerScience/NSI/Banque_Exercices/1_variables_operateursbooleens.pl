@@ -68,9 +68,7 @@ inputblock== #|html|
 
 evaluator == #|py|
 # Evaluate all input fields
-import sys
 for input in inputs:
-    print(input.data, file=sys.stderr)
     if input.sol == input.data['value']:
         input.score = 100
     else:
