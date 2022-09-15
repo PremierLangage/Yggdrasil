@@ -68,8 +68,23 @@ inputblock== #|html|
 evaluator == #|py|
 # Evaluate all input fields
 import sys
+
+def samestrings(str1, str2, diffmeasure="EditDist", tol=0, casesens=False):
+    """
+    Check if two strings are similar.
+    """
+    if not casesens:
+        str1 = str1.casefold()
+        str2 = str2.casefold()
+    if diffmeasure == "EditRatio":
+        return edit_distance(str1, str2)/len(str2) <= tol
+    else:
+        return edit_distance(str1, str2) <= tol
+
 for input in inputs:
-    print(input.data["value"], file=sys.stderr)
+    print([samestrings(self.data['value'], item, **self.evalparam) for item in self.sol], file=sys.stderr)
+
+
 
 ==
 
