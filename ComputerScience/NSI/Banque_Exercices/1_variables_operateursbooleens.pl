@@ -42,7 +42,7 @@ for i in range(N):
 
 title = Expressions booléennes 
 # y a pas besoin d'énoncé 
-text==
+question==
 Attention vous avez un nombre limité d'essai pour répondre a toutes les égalitées.
 
 Sinon cela redémarre au début avec {{N}} égalités.
