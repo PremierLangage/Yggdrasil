@@ -53,7 +53,6 @@ Oui heureusement il y en a des faciles...
 ==
 
 inputblock== #|html|
-{{res}}
 <ul>
 
 {% for input in inputs %}
