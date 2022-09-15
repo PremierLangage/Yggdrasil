@@ -81,6 +81,27 @@ def samestrings(str1, str2, diffmeasure="EditDist", tol=0, casesens=False):
     else:
         return edit_distance(str1, str2) <= tol
 
+def edit_distance(s1, s2):
+    """
+    Return the edit distance between two strings.
+    """
+    # C'est une fonction classique qui doit exister dans un module.
+    # Il faudrait importer ce module dans la sandbox et appeler cette fonction.
+    if len(s1) > len(s2):
+        s1, s2 = s2, s1
+    distances = range(len(s1) + 1)
+    for index2,char2 in enumerate(s2):
+        newDistances = [index2+1]
+        for index1, char1 in enumerate(s1):
+            if char1 == char2:
+                newDistances.append(distances[index1])
+            else:
+                newDistances.append(1 + min((distances[index1],
+                                             distances[index1+1],
+                                             newDistances[-1])))
+        distances = newDistances
+    return distances[-1]
+
 for input in inputs:
     print(input.data['value'], file=sys.stderr)
     print(input.sol, file=sys.stderr)
