@@ -94,3 +94,6 @@ class Radio(Component):
         selector = self.selector
         cid = self.cid
         return f"<{selector} cid='{cid}'></{selector}>"
+
+
+CustomRadio= Radio
