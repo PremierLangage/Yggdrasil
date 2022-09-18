@@ -14,6 +14,10 @@ class CustomCheckbox(Checkbox):
         super().__init__(**kwargs)
         self.statement =''
 
+    def setitems(self,items):
+        self.set_items(items)
+
+
     def set_items(self, items):
         """
         Load items in the component.
