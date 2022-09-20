@@ -80,7 +80,13 @@ step = step+1
 
 
 
-if step<nbstep:
+if step>=nbstep:
+
+     # Fin de l'exo 
+    text  = format_feedback_lightscore(currentscore, "") + feedbacks
+    form= ""
+    grade=(currentscore, "Merci et à Bientot.")
+else:
     q=list_questions[step]
     curcomp=  Component.deserialize(q['type'],q)
     if True:
@@ -107,10 +113,7 @@ if step<nbstep:
     text="""Question {{ step + 1 }}.
     {{ statement | safe }}"""
     form="{{ curcomp | component }}"
-else: # Fin de l'exo 
-    text  = format_feedback_lightscore(currentscore, "") + feedbacks
-    form= ""
-    grade=(currentscore, "Merci et à Bientot.")
+
 
 
 
