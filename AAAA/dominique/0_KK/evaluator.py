@@ -79,11 +79,13 @@ step = step+1
 
 
 
+
 if step<nbstep:
     q=list_questions[step]
     curcomp=  Component.deserialize(q['type'],q)
-    if debug:
-        print(curcomp)
+    if True:
+        import sys
+        print(curcomp, sys.stderr)
     quit()
     title = "Question "+str(step)
     if q['type'] == "Radio":
