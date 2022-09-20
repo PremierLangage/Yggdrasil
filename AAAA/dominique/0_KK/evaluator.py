@@ -92,7 +92,6 @@ else:
     if True:
         import sys
         print(curcomp, sys.stderr)
-    quit()
     title = "Question "+str(step)
     if q['type'] == "Radio":
         curcomp = CustomRadio() 
