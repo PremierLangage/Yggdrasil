@@ -31,6 +31,7 @@ SELECTORS = {
     "AutomatonDrawer": "c-automaton-drawer",
     "AutomatonEditor": "c-automaton-editor",
     "CheckboxGroup": "c-checkbox-group",
+    "Checkbox": "c-checkbox-group",
     "CodeEditor": "c-code-editor",
     "DragDrop": "c-drag-drop",
     "GraphDrawer": "c-graph-drawer",
