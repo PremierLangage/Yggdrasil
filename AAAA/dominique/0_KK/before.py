@@ -48,3 +48,4 @@ debug=True
 if "debug" in globals() and debug:
     print(list_questions)
 
+selector = "radio"
