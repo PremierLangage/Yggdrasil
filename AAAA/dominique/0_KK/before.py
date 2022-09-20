@@ -44,7 +44,7 @@ text= f"Ce test contient {nbstep} questions. Pas de retour arrière et un seul e
 
 scores=[]
 feedbacks=""
-
+debug=True
 if "debug" in globals() and debug:
     print(list_questions)
 
