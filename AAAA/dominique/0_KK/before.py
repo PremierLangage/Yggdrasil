@@ -1,11 +1,5 @@
 
 
-from radio import Radio
-from checkbox import Checkbox
-from textselect import TextSelect
-radio = Radio() 
-check = Checkbox()
-ztext = TextSelect()
 import random
 from AMC import parse_AMC_TXT
 
