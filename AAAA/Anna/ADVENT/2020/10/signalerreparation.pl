@@ -54,7 +54,7 @@ with open("ennonce2.md","r") as f:
 testcases, donnees = build.buildQ2(lexemple,data)
 ==
 
-showWanted= False
+#showWanted= False
 
 solution ==
 import sys
