@@ -58,61 +58,57 @@ def strfromcomp(q):
     if  q['type'] == 'TextSelect':
         return "{{ ztext | component }}"
 
-nbstep= len(list_questions)
 
-def evaluator(debug=False):
- 
-    global step,nbstep
-    currentscore=0
-    if step> -1:
+currentscore=0
+if step> -1:
 
-        # Evaluation de la réponse et stockage pour la suite 
+    # Evaluation de la réponse et stockage pour la suite 
 
-        previous = Component.deseralize(list_questions[step])
+    previous = Component.deseralize(list_questions[step])
 
-        scores.append(previous.eval())
-        fifi = previous.formstr()
-        q=list_questions[step]
-        score = evaluate(q)
-        scores.append(score)
-        fifi = text + " \n " + strfromcomp(q)
-        feedbacks += str(env.from_string(fifi).render(globals()))
-        currentscore=sum(scores)//nbstep
+    scores.append(previous.eval())
+    fifi = previous.formstr()
+    q=list_questions[step]
+    score = evaluate(q)
+    scores.append(score)
+    fifi = text + " \n " + strfromcomp(q)
+    feedbacks += str(env.from_string(fifi).render(globals()))
+    currentscore=sum(scores)//nbstep
 
-    step = step+1
+step = step+1
 
 
 
-    if step<nbstep:
-        q=list_questions[step]
-        curcomp=  Component.deserialize(q['type'],q)
-        if debug:
-            print(curcomp)
-        quit()
-        title = "Question "+str(step)
-        if q['type'] == "Radio":
-            curcomp = CustomRadio() 
-            curcomp.setitems(q['items'])
-            curcomp.setsol_from_index(q['index'])
-            if 'ordered' not in q['options']:
-                curcomp.shuffle()
-        elif q['type'] == "Checkbox":
-            curcomp=CustomCheckbox()
-            curcomp.setitems(q['items'])
-            curcomp.setsol_from_index(q['index'])
-            if 'ordered' not in q['options']:
-                curcomp.shuffle()
-        elif  q['type'] == 'TextSelect':
-            curcomp.setdata_from_textDR(q['items'][0])
-        statement = curcomp.text
-        grade=(currentscore, "<br>")
-        text="""Question {{ step + 1 }}.
-        {{ statement | safe }}"""
-        form="{{ curcomp | component }}"
-    else: # Fin de l'exo 
-        text  = format_feedback_lightscore(currentscore, "") + feedbacks
-        form= ""
-        grade=(currentscore, "Merci et à Bientot.")
+if step<nbstep:
+    q=list_questions[step]
+    curcomp=  Component.deserialize(q['type'],q)
+    if debug:
+        print(curcomp)
+    quit()
+    title = "Question "+str(step)
+    if q['type'] == "Radio":
+        curcomp = CustomRadio() 
+        curcomp.setitems(q['items'])
+        curcomp.setsol_from_index(q['index'])
+        if 'ordered' not in q['options']:
+            curcomp.shuffle()
+    elif q['type'] == "Checkbox":
+        curcomp=CustomCheckbox()
+        curcomp.setitems(q['items'])
+        curcomp.setsol_from_index(q['index'])
+        if 'ordered' not in q['options']:
+            curcomp.shuffle()
+    elif  q['type'] == 'TextSelect':
+        curcomp.setdata_from_textDR(q['items'][0])
+    statement = curcomp.text
+    grade=(currentscore, "<br>")
+    text="""Question {{ step + 1 }}.
+    {{ statement | safe }}"""
+    form="{{ curcomp | component }}"
+else: # Fin de l'exo 
+    text  = format_feedback_lightscore(currentscore, "") + feedbacks
+    form= ""
+    grade=(currentscore, "Merci et à Bientot.")
 
 
-evaluator(debug=True)
+
