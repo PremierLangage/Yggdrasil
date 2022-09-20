@@ -1,4 +1,11 @@
 @ /utils/sandboxio.py
+@ /builder/before.py [builder.py]
+@ /grader/evaluator.py [grader.py]
+
+
+
+
+
 @ scoring.py
 @ radio.py [radio.py]
 @ checkbox.py [checkbox.py]
@@ -8,11 +15,8 @@
 @ components.py
 
 
-@ /model/AMC2/AMC2.py [AMC.py]
-@ /model/AMC2/aleaq.py 
-@ /utils/sandboxio.py
-@ /builder/before.py [builder.py]
-@ /grader/evaluator.py [grader.py]
+@ AMC.py [AMC.py]
+@ aleaq.py 
 
 settings.cumulative % false
 
