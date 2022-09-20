@@ -2,7 +2,7 @@
 @ /utils/components/scoring.py
 @ /utils/components/radio.py [radio.py]
 @ /utils/components/checkbox.py [checkbox.py]
-@ /utils/components/textselect.py [textselect.py]
+@ textselect.py [textselect.py]
 
 
 @ /model/AMC2/AMC2.py [AMC.py]
