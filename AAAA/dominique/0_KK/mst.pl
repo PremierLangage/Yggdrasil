@@ -5,6 +5,9 @@
 @ textselect.py [textselect.py]
 
 
+@ components.py
+
+
 @ /model/AMC2/AMC2.py [AMC.py]
 @ /model/AMC2/aleaq.py 
 @ /utils/sandboxio.py
