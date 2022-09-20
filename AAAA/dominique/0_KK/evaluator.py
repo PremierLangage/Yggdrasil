@@ -94,7 +94,7 @@ else:
         print(curcomp, sys.stderr)
     title = "Question "+str(step)
     if q['type'] == "Radio":
-        curcomp = CustomRadio() 
+        radio= curcomp
         curcomp.setitems(q['items'])
         curcomp.setsol_from_index(q['index'])
         if 'ordered' not in q['options']:
