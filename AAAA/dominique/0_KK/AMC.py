@@ -132,7 +132,8 @@ def parse_AMC_TXT(txt):
             
             
 
-            questions.append({'type': question_type, 'selector':question_type
+            questions.append({'type': question_type, 
+            'selector':question_type,
             'text': statement, 
             'items': items, 
             'index': index, 
