@@ -38,6 +38,7 @@ evaluator=@evaluator.py
 
 
 form==
+<p>Starting form </p>
 {% if q['type'] == "Radio" %}
     {{ radio | component }}
 {% elif q['type'] == "Checkbox" %}
@@ -45,6 +46,8 @@ form==
 {% elif q['type'] == "TextSelect" %}
     {{ ztext | component }}
 {% endif %}
+
+<p>ending form </p>
 ==
 
 
