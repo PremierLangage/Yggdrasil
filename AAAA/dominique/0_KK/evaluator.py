@@ -100,12 +100,13 @@ else:
         if 'ordered' not in q['options']:
             curcomp.shuffle()
     elif q['type'] == "Checkbox":
-        curcomp=CustomCheckbox()
+        check= curcomp
         curcomp.setitems(q['items'])
         curcomp.setsol_from_index(q['index'])
         if 'ordered' not in q['options']:
             curcomp.shuffle()
     elif  q['type'] == 'TextSelect':
+        ztext = curcomp
         curcomp.setdata_from_textDR(q['items'][0])
     statement = curcomp.text
     grade=(currentscore, "<br>")
