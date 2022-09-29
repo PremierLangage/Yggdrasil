@@ -19,7 +19,7 @@ Calculer les racines carrées de $! {{z|latex}} !$ (sous forme algébrique).  S�
 ==
 
 solution ==
-Les racines carrées sont $! {{sol[0]|latex}} !$ et $! {{sol[0]|latex}} !$.
+Les racines carrées sont $! {{sol[0]|latex}} !$ et $! {{sol[1]|latex}} !$.
 ==
 
 
