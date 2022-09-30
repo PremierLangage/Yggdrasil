@@ -10,11 +10,12 @@ class Radio(Component):
         self.decorator = 'Radio'
         self.selection = None
         super().__init__(**kwargs)
-        import sys
-        print(self,sys.stderr)
-        self.statement =''
-        self.set_items(self.qitems)
-        self.set_sol(self.index)
+        try:
+            self.statement =''
+            self.set_items(self.qitems)
+            self.set_sol(self.index)
+        except Exception:
+            raise Exception(str(**kwargs)):
 
     def setitems(self, ite):
         self.set_items(ite)
