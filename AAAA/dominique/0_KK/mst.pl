@@ -12,7 +12,7 @@
 @ textselect.py [textselect.py]
 
 
-@ ../0_KK/components.py [components.py]
+@ ../0_KK/components.py [xx.py]
 
 
 @ AMC.py [AMC.py]
