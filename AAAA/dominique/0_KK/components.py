@@ -77,10 +77,10 @@ def createcomponent(data):
     """
     if not isinstance(data, dict):
         raise Exception("Invalide parameter to createcomponent")
-    if not "decorator" in data:
+    if not "decorator" in data and not "type" in data :
         raise Exception("No decorator in dict")
     
-    decorator = data.get('decorator')
+    decorator = data.get('decorator', data.get('type'))
 
     if decorator:
         try:
@@ -93,7 +93,7 @@ def createcomponent(data):
         return getattr(module, decorator)(**data)
 
 
-
+    
 
 
 
