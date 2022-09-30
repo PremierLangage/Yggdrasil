@@ -12,9 +12,8 @@ class Radio(Component):
         super().__init__(**kwargs)
 
         self.statement =''
-        # self.set_items(self.qitems)
-        self.set_items([])
-        #self.set_sol(self.index)
+        self.set_items(self.qitems)
+        self.set_sol(self.index)
 
     def prepare(self):
         pass
