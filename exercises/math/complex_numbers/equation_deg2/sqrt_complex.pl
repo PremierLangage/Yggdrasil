@@ -5,6 +5,8 @@
 
 extends = /model/math/set.pl
 
+title = Racines carrées d'un nombre complexe
+
 wobracket = True
 
 symbol_dict = {'e': E, 'i': I}
