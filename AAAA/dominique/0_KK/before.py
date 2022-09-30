@@ -38,7 +38,7 @@ text= f"Ce test contient {nbstep} questions. Pas de retour arrière et un seul e
 
 scores=[]
 feedbacks=""
-debug=True
+debug=False
 if "debug" in globals() and debug:
     import sys
     print(list_questions, file=sys.stderr)
