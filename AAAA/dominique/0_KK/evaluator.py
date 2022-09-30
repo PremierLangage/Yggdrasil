@@ -29,6 +29,9 @@ def addFilter():
 import importlib
 components= importlib.import_module("components")
 
+import nsys
+print(components, file=sys.stderr)
+
 from components import Component,Input
 from components import createcomponent
 from radio import Radio
