@@ -27,16 +27,6 @@ def addFilter():
     return env
 
 
-import sys
-
-print("bande de moules",sys.stderr)
-
-import importlib
-components= importlib.import_module("components")
-
-print(components, file=sys.stderr)
-
-sys.exit(3)
 
 
 from components import Component,Input
