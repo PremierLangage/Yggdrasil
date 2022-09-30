@@ -26,11 +26,18 @@ def addFilter():
     env.filters["component"] = component
     return env
 
+
+import sys
+
+print("bande de moules",sys.stderr)
+
 import importlib
 components= importlib.import_module("components")
 
-import sys
 print(components, file=sys.stderr)
+
+
+
 
 from components import Component,Input
 from components import createcomponent
