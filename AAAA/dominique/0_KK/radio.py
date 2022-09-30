@@ -52,7 +52,7 @@ class Radio(Component):
         """
         Evaluate the answer.
         """
-        for item in self.items:
+        for item in self.__items:
             id = item['id']
             if id == self._sol and id == self.selection:
                 self.score = 100
