@@ -94,7 +94,7 @@ def createcomponent(data):
         for k,v in data:
             setattr(newcomp, k,v )
 
-
+        return newcomp
 
 
 
