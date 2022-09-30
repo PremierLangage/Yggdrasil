@@ -11,6 +11,8 @@ class Radio(Component):
         self.selection = None
         super().__init__(**kwargs)
         self.statement =''
+        self.set_items(self.items)
+        self.set_sol(self.index)
 
     def setitems(self, ite):
         self.set_items(ite)
@@ -23,13 +25,13 @@ class Radio(Component):
             _items_ = items.splitlines()
         else:
             _items_ = items
-        self.items = [{"id": str(uuid4()), "content": str(item)} for item in _items_]
+        self.__items = [{"id": str(uuid4()), "content": str(item)} for item in _items_]
 
     def set_sol(self, index):
         """
         Set the solution (from its index in the list of items).
         """
-        self._sol = self.items[index]['id']
+        self._sol = self.__items[index]['id']
 
     def shuffle(self):
         """
