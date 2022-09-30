@@ -16,6 +16,10 @@ class Radio(Component):
         self.set_items(str(self))
         #self.set_sol(self.index)
 
+    def prepare(self):
+        pass
+
+
     def setitems(self, ite):
         self.set_items(ite)
 
