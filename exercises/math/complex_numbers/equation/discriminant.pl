@@ -2,6 +2,7 @@ extends = /model/math/complex.pl
 
 title = Discriminant d'une équation du second degré
 
+form = "Cartesian"
 
 before ==
 a = randint(-4,4) + I*randint(-4,4,[0])
