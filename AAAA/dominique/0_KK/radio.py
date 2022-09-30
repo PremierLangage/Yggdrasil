@@ -10,7 +10,7 @@ class Radio(Component):
         self.decorator = 'Radio'
         self.selection = None
         super().__init__(**kwargs)
-        return
+
         self.statement =''
         self.set_items(self.qitems)
         self.set_sol(self.index)
