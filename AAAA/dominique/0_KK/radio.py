@@ -12,7 +12,7 @@ class Radio(Component):
         super().__init__(**kwargs)
         self.statement =''
 
-    def setitems(slef, ite):
+    def setitems(self, ite):
         self.set_items(ite)
 
     def set_items(self, items):
