@@ -2,7 +2,7 @@
 """
             questions.append({'type': question_type, 
             'text': statement, 
-            'items': items, 
+            'qitems': items, 
             'index': index, 
             'options': options,
             'extended': extended
