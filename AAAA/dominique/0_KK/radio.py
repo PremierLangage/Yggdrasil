@@ -14,7 +14,7 @@ class Radio(Component):
         self.statement =''
         # self.set_items(self.qitems)
         self.set_items(str(self))
-        self.set_sol(self.index)
+        #self.set_sol(self.index)
 
     def setitems(self, ite):
         self.set_items(ite)
