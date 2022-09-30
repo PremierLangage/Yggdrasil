@@ -71,15 +71,11 @@ class Component:
             raise Exception("Erreur la classe {} n'a pas de formtype".format(self.__class__.__name__))
         return "{{" + self.formtype + " | component }}"
 
-
-
-
-
     @staticmethod 
     def createcomponent(data):
         """
         Create the good component from a dict, the typename of the component must be in key 'decorator' 
-        
+
         >>> Component.createcomponent(123)
         Traceback (most recent call last):
         ...
