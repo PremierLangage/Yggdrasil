@@ -39,7 +39,7 @@ if param['roots']=='int1':
 if param['roots']=='int2':
     P=s2*(x+a+b*I)*(x+a2+b2*I)
 if param['roots']=='rat1':
-    P=s*(c*x+a+b*I)*(c*x+a-b*I)
+    P=s*(c*x+a+b*I)*(c*x+a2+b2*I)
 sol=list(solveset(P,x,domain=S.Complexes))
 P = Poly(expand(P),x)
 solution=r"Les solutions sont $! \displaystyle %s !$ et $! \displaystyle %s !$." % (latex(sol[0]),latex(sol[1]))
