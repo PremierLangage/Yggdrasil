@@ -6,7 +6,7 @@ title = Discriminant d'une équation du second degré
 before ==
 a = randint(-4,4) + I*randint(-4,4,[0])
 b = randint(-4,4) + I*randint(-4,4)
-c = randint(-4,4) + I*randint(-4,4, [0])
+c = randint(-4,4) + I*randint(-4,4)
 x = Symbol('z')
 P = a*x**2+b*x+c
 
