@@ -23,11 +23,11 @@ from sympy import solveset, S, expand
 
 a = randint(-4, 4, [0])
 b = randint(-4, 4, [0])
-a2 = randint(-4, 4, [0])
-b2 = randint(-4, 4, [0])
+a2 = randint(-3, 3, [0])
+b2 = randint(-3, 3, [0])
 while equal(a-b*I,a2+b2*I):
-    a2 = randint(-4, 4, [0])
-    b2 = randint(-4, 4, [0])
+    a2 = randint(-3, 3, [0])
+    b2 = randint(-3, 3, [0])
 
 c = randint(-5,5,[0,1,-1])
 s = choice([-1,1])
