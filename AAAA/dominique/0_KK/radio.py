@@ -11,7 +11,7 @@ class Radio(Component):
         self.selection = None
         super().__init__(**kwargs)
         self.statement =''
-        self.set_items(self.items)
+        self.set_items(self.qitems)
         self.set_sol(self.index)
 
     def setitems(self, ite):
@@ -25,19 +25,19 @@ class Radio(Component):
             _items_ = items.splitlines()
         else:
             _items_ = items
-        self.__items = [{"id": str(uuid4()), "content": str(item)} for item in _items_]
+        self.items = [{"id": str(uuid4()), "content": str(item)} for item in _items_]
 
     def set_sol(self, index):
         """
         Set the solution (from its index in the list of items).
         """
-        self._sol = self.__items[index]['id']
+        self._sol = self.items[index]['id']
 
     def shuffle(self):
         """
         Shuffle the list of items.
         """
-        rd.shuffle(self.__items)
+        rd.shuffle(self.items)
 
     # def fill(self, items, indsol=0, shuffled=True):
     #     """
@@ -52,7 +52,7 @@ class Radio(Component):
         """
         Evaluate the answer.
         """
-        for item in self.__items:
+        for item in self.getitems():
             id = item['id']
             if id == self._sol and id == self.selection:
                 self.score = 100
@@ -77,7 +77,7 @@ class Radio(Component):
         """
         Display visual feedback.
         """
-        for item in self.items:
+        for item in self.getitems():
             id = item['id']
             if id == self._sol and id == self.selection:
                 item['css'] = 'success-state icon-check-after'
