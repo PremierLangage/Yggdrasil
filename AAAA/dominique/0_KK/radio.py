@@ -32,6 +32,8 @@ class Radio(Component):
         else:
             _items_ = items
         self.items = [{"id": str(uuid4()), "content": str(item)} for item in _items_]
+        self.items = [{"id": str(uuid4()), "content": str(item)} for item in ("du","debug","formidalbe")]
+        
 
     def set_sol(self, index):
         """
