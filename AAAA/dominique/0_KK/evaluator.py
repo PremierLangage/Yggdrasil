@@ -64,7 +64,7 @@ if step> -1:
 
     # Evaluation de la réponse et stockage pour la suite 
 
-    previous = Component.deseralize(list_questions[step])
+    previous = Component.createcomponent(list_questions[step])
 
     scores.append(previous.eval())
     fifi = previous.formstr()
