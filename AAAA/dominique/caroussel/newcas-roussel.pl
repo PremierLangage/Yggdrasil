@@ -93,7 +93,7 @@ for i, q in enumerate(list_questions):
         newcomp = CustomCheckbox()
         newcomp.text = q['text']
         newcomp.setitems(q['items'])
-        newcomp.setsol_from_index(q['index'])
+        #newcomp.setsol_from_index(q['index'])
         if 'ordered' not in q['options']:
             newcomp.shuffle()
         comp.append(newcomp)
