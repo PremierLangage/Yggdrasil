@@ -91,7 +91,7 @@ for i, q in enumerate(list_questions):
         comp.append(newcomp)
     elif q['type'] == "Checkbox":
         newcomp = CustomCheckbox()
-        newcomp['text']=q['text']
+        newcomp.text = q['text']
         newcomp.setitems(q['items'])
         newcomp.setsol_from_index(q['index'])
         if 'ordered' not in q['options']:
@@ -99,7 +99,7 @@ for i, q in enumerate(list_questions):
         comp.append(newcomp)
     elif  q['type'] == 'TextSelect':
         newcomp = CustomTextSelect()
-        newcomp['text']= q['text']
+        newcomp.text = q['text']
         newcomp.setdata_from_textDR(q['items'][0])
         comp.append(newcomp)
 
