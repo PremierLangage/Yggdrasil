@@ -11,7 +11,7 @@ title = Equation du second degré à coefficients complexes
 
 extends = /model/math/set.pl
 
-param.roots = "int"
+param.roots = "int2"
 
 wobracket = True
 
