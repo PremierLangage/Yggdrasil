@@ -90,10 +90,11 @@ def createcomponent(data):
             module = importlib.import_module("components")
             if not hasattr(module, decorator):
                 raise ModuleNotFoundError("No module named '{}'".format(decorator))
-        return getattr(module, decorator)(**data)
+        newcomp =  getattr(module, decorator)(**data)
+        for k,v in data:
+            setattr(newcomp, k,v )
 
 
-    
 
 
 
