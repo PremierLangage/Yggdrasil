@@ -9,11 +9,12 @@ class Radio(Component):
         self.selector = 'c-radio-group'
         self.decorator = 'Radio'
         self.selection = None
-        super().__init__(**kwargs)
+        if kwargs:
+            super().__init__(**kwargs)
 
-        self.statement =''
-        self.set_items(self.qitems)
-        self.set_sol(self.index)
+            self.statement =''
+            self.set_items(self.qitems)
+            self.set_sol(self.index)
 
     def prepare(self):
         pass
