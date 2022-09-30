@@ -10,11 +10,7 @@ Objectif :
 
 
 
-#@ /Mathematics/exercises/complex_numbers/cplx_computation_add_sub.pl
+@ /exercises/math/complex_numbers/equation_deg2/solve/solve_int1.pl
 
-#@ /Mathematics/exercises/complex_numbers/cplx_computation_addconj_subconj.pl
-
-@ /exercises/math/complex_numbers/computation/add.pl
-
-@ /exercises/math/complex_numbers/computation/mul.pl
+@ /exercises/math/complex_numbers/equation_deg2/solve/solve_int2.pl
 
