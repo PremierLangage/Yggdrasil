@@ -26,7 +26,7 @@ def addFilter():
     env.filters["component"] = component
     return env
 
-
+components= importlib.import_module("components")
 
 from components import Component,createcomponent
 from radio import Radio
