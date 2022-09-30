@@ -11,7 +11,7 @@ title = Equation du second degré à coefficients complexes
 
 extends = /model/math/set.pl
 
-param.roots = "int2"
+param.roots = "int1"
 
 wobracket = True
 
@@ -33,11 +33,11 @@ s = choice([-1,1])
 s2 = choice([-I,I,1+I,1-I,I-1])
 
 var('x')
-if param['roots']=='int2':
+if param['roots']=='int1':
     P=s*(x+a+b*I)*(x+a2+b2*I)
-if param['roots']=='int3':
+if param['roots']=='int2':
     P=s2*(x+a+b*I)*(x+a2+b2*I)
-if param['roots']=='rat':
+if param['roots']=='rat1':
     P=s*(c*x+a+b*I)*(c*x+a-b*I)
 sol=list(solveset(P,x,domain=S.Complexes))
 P = Poly(expand(P),x)
