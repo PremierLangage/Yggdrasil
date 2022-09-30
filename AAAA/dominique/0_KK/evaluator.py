@@ -122,3 +122,4 @@ else:
 
 
 
+text += str(curcomp)
