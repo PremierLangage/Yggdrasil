@@ -1,3 +1,3 @@
 extends = solve_.pl
 
-param.roots = "int2"
+param.roots = "rat1"
