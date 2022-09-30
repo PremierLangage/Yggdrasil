@@ -80,6 +80,7 @@ step = step+1
 
 
 
+
 if step>=nbstep:
 
      # Fin de l'exo 
@@ -88,7 +89,7 @@ if step>=nbstep:
     grade=(currentscore, "Merci et à Bientot.")
 else:
     q=list_questions[step]
-    curcomp=  Component.createcomponentq)
+    curcomp=  Component.createcomponent(q)
     if True:
         import sys
         print(curcomp, sys.stderr)
