@@ -34,7 +34,7 @@ if "suffle" in globals() and suffle:
 
 step= -1 # première étape 
 text= f"Ce test contient {nbstep} questions. Pas de retour arrière et un seul essai ! "
-text += list_questions
+text += str(list_questions)
 
 scores=[]
 feedbacks=""
