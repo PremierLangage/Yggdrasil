@@ -37,7 +37,7 @@ class Radio(Component):
         """
         Shuffle the list of items.
         """
-        rd.shuffle(self.items)
+        rd.shuffle(self.__items)
 
     # def fill(self, items, indsol=0, shuffled=True):
     #     """
