@@ -82,7 +82,7 @@ for i, q in enumerate(list_questions):
     q=buildquestion(q) # Gestion de l'aléa 
     if q['type'] == "Radio":
         newcomp = CustomRadio()
-        
+        newcomp.text = q['text']
         newcomp['text']=q['text']
         newcomp.setitems(q['items'])
         newcomp.setsol_from_index(q['index'])
