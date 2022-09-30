@@ -29,7 +29,8 @@ def addFilter():
 import importlib
 components= importlib.import_module("components")
 
-from components import Component,Input,createcomponent
+from components import Component,Input
+from components import createcomponent
 from radio import Radio
 from checkbox import Checkbox
 from textselect import TextSelect
