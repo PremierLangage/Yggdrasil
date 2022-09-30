@@ -96,6 +96,8 @@ else:
         import sys
         print(curcomp, sys.stderr)
     title = "Question "+str(step)
+
+    curcomp.prepare()
     if q['type'] == "Radio":
         radio= curcomp
         curcomp.setitems(q['items'])
