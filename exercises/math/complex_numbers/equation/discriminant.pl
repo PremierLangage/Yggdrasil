@@ -4,9 +4,9 @@ title = Discriminant d'une équation du second degré
 
 
 before ==
-a = rand_complex_int(3)
-b = rand_complex_int(3)
-c = rand_complex_int(4)
+a = randint(-4,4) + I*randint(-4,4,[0])
+b = randint(-4,4) + I*randint(-4,4)
+b = randint(-4,4) + I*randint(-4,4, [0])
 x = Symbol('z')
 P = a*x**2+b*x+c
 
