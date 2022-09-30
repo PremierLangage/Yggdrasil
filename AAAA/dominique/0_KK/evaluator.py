@@ -26,6 +26,7 @@ def addFilter():
     env.filters["component"] = component
     return env
 
+import importlib
 components= importlib.import_module("components")
 
 from components import Component,createcomponent
