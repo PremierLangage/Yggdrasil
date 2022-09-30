@@ -111,7 +111,7 @@ def parse_AMC_TXT(txt):
             items.append(line.lstrip("> "))
             questions.append({'type': question_type,
             'text': statement, 
-            'items': items, 
+            'qitems': items, 
             'index': [], 
             'options': options,
             'extended': extended
