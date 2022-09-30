@@ -15,7 +15,7 @@ sol=(b*b-4*a*c).expand()
 sol_tex=latex(sol)
 ==
 
-text ==
+question ==
 Calculer le discriminant de l'équation $! {{latexP}} = 0 !$.
 ==
 
