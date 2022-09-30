@@ -88,7 +88,7 @@ if step>=nbstep:
     grade=(currentscore, "Merci et à Bientot.")
 else:
     q=list_questions[step]
-    curcomp=  Component.createcomponent(q['type'],q)
+    curcomp=  Component.createcomponentq)
     if True:
         import sys
         print(curcomp, sys.stderr)
