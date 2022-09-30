@@ -60,6 +60,12 @@ class Radio(Component):
         """
         Evaluate the answer.
         """
+        if self.sol == self.selection : 
+            self.score =100 
+        else:
+            self.score = 0
+        return 0
+
         for item in self.getitems():
             id = item['id']
             if id == self._sol and id == self.selection:
