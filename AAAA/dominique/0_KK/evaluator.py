@@ -92,9 +92,6 @@ if step>=nbstep:
 else:
     q=list_questions[step]
     curcomp= createcomponent(q)
-    if True:
-        import sys
-        print(curcomp, sys.stderr)
     title = "Question "+str(step)
 
     curcomp.prepare()
@@ -115,7 +112,7 @@ else:
         curcomp.setdata_from_textDR(q['items'][0])
     statement = curcomp.text
     grade=(currentscore, "<br>")
-    text="""Question {{ step + 1 }}.
+    text="""Question §{{ step + 1 }}.
     {{ statement | safe }}"""
     form="{{ curcomp | component }}"
 
