@@ -109,7 +109,7 @@ def parse_AMC_TXT(txt):
         
         elif line.startswith(">"): # special text select 
             items.append(line.lstrip("> "))
-            questions.append({'type': question_type, 
+            questions.append({'type': question_type,
             'text': statement, 
             'items': items, 
             'index': [], 
