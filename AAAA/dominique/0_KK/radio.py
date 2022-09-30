@@ -23,14 +23,14 @@ class Radio(Component):
     def setitems(self, ite):
         self.set_items(ite)
 
-    def set_items(self, items):
+    def set_items(self, qitems):
         """
         Set the list of items.
         """
-        if isinstance(items, str):
-            _items_ = items.splitlines()
+        if isinstance(qitems, str):
+            _items_ = qitems.splitlines()
         else:
-            _items_ = items
+            _items_ = qitems
         self.items = [{"id": str(uuid4()), "content": str(item)} for item in _items_]
         
 
