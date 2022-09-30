@@ -33,7 +33,7 @@ c = randint(-5,5,[0,1,-1])
 s = choice([-1,1])
 s2 = choice([-I,I,1+I,1-I,I-1])
 
-var('x')
+x = Symbol('z')
 if param['roots']=='int1':
     P=s*(x+a+b*I)*(x+a2+b2*I)
 if param['roots']=='int2':
