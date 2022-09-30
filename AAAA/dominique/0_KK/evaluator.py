@@ -40,7 +40,7 @@ ztext =TextSelect()
 
 
 
-
+curcomp=None
 
 
 
