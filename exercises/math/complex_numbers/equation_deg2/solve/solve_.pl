@@ -15,6 +15,7 @@ param.roots = "int1"
 
 wobracket = True
 
+symbol_dict = {'e': E, 'i': I}
 
 before ==
 from evalsympy import equal
