@@ -19,6 +19,8 @@ for q in list_questions:
 list_questions=l2
 # onepergroup -> possibilité de faire une tirage aléatoire dans un groupe de questions
 
+list_questions=[list_questions[0]]
+
 onepergroup = 1
 
 if "onepergroup" in globals() and onepergroup > 0 :
