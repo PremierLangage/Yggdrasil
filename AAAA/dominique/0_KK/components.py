@@ -78,7 +78,8 @@ class Component:
     @staticmethod 
     def createcomponent(data):
         """
-        Create a component from a dict
+        Create the good component from a dict, the typename of the component must be in key 'decorator' 
+        
         >>> Component.createcomponent(123)
         Traceback (most recent call last):
         ...
