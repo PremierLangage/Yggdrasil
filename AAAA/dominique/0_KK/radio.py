@@ -13,7 +13,7 @@ class Radio(Component):
 
         self.statement =''
         # self.set_items(self.qitems)
-        self.set_items(str(self))
+        self.set_items(" ".join(str(self).split("\n")))
         #self.set_sol(self.index)
 
     def prepare(self):
