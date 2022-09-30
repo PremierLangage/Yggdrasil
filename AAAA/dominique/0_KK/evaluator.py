@@ -29,7 +29,7 @@ def addFilter():
 import importlib
 components= importlib.import_module("components")
 
-import nsys
+import sys
 print(components, file=sys.stderr)
 
 from components import Component,Input
