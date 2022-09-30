@@ -28,7 +28,7 @@ def addFilter():
 
 
 
-from components import Component
+from components import Component,createcomponent
 from radio import Radio
 from checkbox import Checkbox
 from textselect import TextSelect
@@ -64,7 +64,7 @@ if step> -1:
 
     # Evaluation de la réponse et stockage pour la suite 
 
-    previous = Component.createcomponent(list_questions[step])
+    previous = createcomponent(list_questions[step])
 
     scores.append(previous.eval())
     fifi = previous.formstr()
@@ -89,7 +89,7 @@ if step>=nbstep:
     grade=(currentscore, "Merci et à Bientot.")
 else:
     q=list_questions[step]
-    curcomp=  Component.createcomponent(q)
+    curcomp= createcomponent(q)
     if True:
         import sys
         print(curcomp, sys.stderr)
