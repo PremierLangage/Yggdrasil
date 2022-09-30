@@ -55,10 +55,7 @@ questions==
 =**[group=operateurs_jf,nbg=3,nbb=4]Lesquels de ces opérateurs ne sont ni des opérateurs logiques ni des opérateurs de comparaison?
 -=["<","<=","==","!=","and","or","not"]
 +=["=","+","*"]
-
 ==
-
-
 before==#|python|
 # Le même parseur que AMC2 sinon ça va encore chialer grave !!!
 from AMC import parse_AMC_TXT
