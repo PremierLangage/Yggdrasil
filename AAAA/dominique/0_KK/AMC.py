@@ -123,7 +123,7 @@ def parse_AMC_TXT(txt):
                 statement += "\n"
             else:
                 statement += " " + line
-        # les reponses ce suivent et ventuellemet précédée d'une ligne vide et suivies d'une ligne vide
+        # les reponses se suivent et sont eventuellemet précédées d'une ligne vide et suivies d'une ligne vide
         elif line == "" and pending and k > 0:
             if question_type == "Radio":
                 if len(index) == 0:
