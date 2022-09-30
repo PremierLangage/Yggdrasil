@@ -48,6 +48,58 @@ SELECTORS = {
 }
 
 
+def createcomponent(data):
+    """
+    Create the good component from a dict, the typename of the component must be in key 'decorator' 
+
+    >>> Component.createcomponent(123)
+    Traceback (most recent call last):
+    ...
+    Exception: Invalide parameter to createcomponent
+    >>> Component.createcomponent({'formtype': 'input'})
+    Traceback (most recent call last):
+    ...
+    Exception: No decorator in dict
+    >>> c= Component.createcomponent({'formtype': 'input', 'decorator': 'Input'})
+    >>> type(c)
+    <class 'components.Input'>
+    >>> c= Component.createcomponent({'formtype': 'input', 'decorator': 'Radio'})
+    >>> type(c)
+    <class 'radio.Radio'>
+    >>> c= Component.createcomponent({'formtype': 'input', 'decorator': 'TextSelect'})
+    >>> type(c)
+    <class 'textselect.TextSelect'>
+    >>> c= Component.createcomponent({'formtype': 'input', 'decorator': 'Checkbox', 'cid': '123'})
+    >>> type(c)
+    <class 'checkbox.Checkbox'>
+    >>> c.cid
+    '123'
+    """
+    if not isinstance(data, dict):
+        raise Exception("Invalide parameter to createcomponent")
+    if not "decorator" in data:
+        raise Exception("No decorator in dict")
+    
+    decorator = data.get('decorator')
+
+    if decorator:
+        try:
+
+            module = importlib.import_module(decorator.lower())
+        except ModuleNotFoundError:
+            module = importlib.import_module("components")
+            if not hasattr(module, decorator):
+                raise ModuleNotFoundError("No module named '{}'".format(decorator))
+        return getattr(module, decorator)(**data)
+
+
+
+
+
+
+
+
+
 class Component:
     """
         Base class of the components.
@@ -71,50 +123,6 @@ class Component:
             raise Exception("Erreur la classe {} n'a pas de formtype".format(self.__class__.__name__))
         return "{{" + self.formtype + " | component }}"
 
-    @staticmethod 
-    def createcomponent(data):
-        """
-        Create the good component from a dict, the typename of the component must be in key 'decorator' 
-
-        >>> Component.createcomponent(123)
-        Traceback (most recent call last):
-        ...
-        Exception: Invalide parameter to createcomponent
-        >>> Component.createcomponent({'formtype': 'input'})
-        Traceback (most recent call last):
-        ...
-        Exception: No decorator in dict
-        >>> c= Component.createcomponent({'formtype': 'input', 'decorator': 'Input'})
-        >>> type(c)
-        <class 'components.Input'>
-        >>> c= Component.createcomponent({'formtype': 'input', 'decorator': 'Radio'})
-        >>> type(c)
-        <class 'radio.Radio'>
-        >>> c= Component.createcomponent({'formtype': 'input', 'decorator': 'TextSelect'})
-        >>> type(c)
-        <class 'textselect.TextSelect'>
-        >>> c= Component.createcomponent({'formtype': 'input', 'decorator': 'Checkbox', 'cid': '123'})
-        >>> type(c)
-        <class 'checkbox.Checkbox'>
-        >>> c.cid
-        '123'
-        """
-        if not isinstance(data, dict):
-            raise Exception("Invalide parameter to createcomponent")
-        if not "decorator" in data:
-            raise Exception("No decorator in dict")
-        
-        decorator = data.get('decorator')
-
-        if decorator:
-            try:
-
-                module = importlib.import_module(decorator.lower())
-            except ModuleNotFoundError:
-                module = importlib.import_module("components")
-                if not hasattr(module, decorator):
-                    raise ModuleNotFoundError("No module named '{}'".format(decorator))
-            return getattr(module, decorator)(**data)
 
 
 
