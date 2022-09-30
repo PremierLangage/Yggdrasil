@@ -36,7 +36,7 @@ components= importlib.import_module("components")
 
 print(components, file=sys.stderr)
 
-
+sys.exit(-1)
 
 
 from components import Component,Input
