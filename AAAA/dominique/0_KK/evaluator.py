@@ -114,7 +114,7 @@ else:
     grade=(currentscore, "<br>")
     text="""Question §{{ step + 1 }}.
     {{ statement | safe }}"""
-    form="{{ curcomp | component }}"
+    form="FROM {{ curcomp | component }} MORF"
 
 
 
