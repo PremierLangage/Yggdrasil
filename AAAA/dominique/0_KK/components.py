@@ -91,7 +91,7 @@ def createcomponent(data):
             if not hasattr(module, decorator):
                 raise ModuleNotFoundError("No module named '{}'".format(decorator))
         newcomp =  getattr(module, decorator)(**data)
-        for k,v in data:
+        for k,v in data.items():
             setattr(newcomp, k,v )
 
         return newcomp
