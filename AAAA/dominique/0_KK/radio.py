@@ -63,7 +63,7 @@ class Radio(Component):
             self.score =100 
         else:
             self.score = 0
-        return 0
+        return self.score
 
         for item in self.getitems():
             id = item['id']
