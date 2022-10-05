@@ -32,7 +32,7 @@ editor.code ==
 ==
 
 minibrain_action_before==
-[ ['factorielle de 1', ''], ]
+[ ['Remplissage des 6 lignes', ''], ]
 ==
 
 minibrain_check_after==
