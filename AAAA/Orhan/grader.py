@@ -63,4 +63,4 @@ if __name__ == "__main__":
     except :
         aze = "couldn't read the file"
     
-    output(dic['grade'][0], aze, dic)
+    output(dic['grade'][0], os.listdir(), dic)
