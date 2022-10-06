@@ -1,6 +1,6 @@
 
 @ /utils/sandboxio.py
-@ Yggdrasil/AAAA/Orhan/grader.py [grader.py]
+@ /Yggdrasil/AAAA/Orhan/grader.py [grader.py]
 @ /builder/before.py [builder.py]
 
 radio =: RadioGroup
