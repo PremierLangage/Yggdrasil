@@ -58,9 +58,9 @@ if __name__ == "__main__":
 
     aze = ""
     try: 
-        with open("answer.json", "r") as f:
+        with open("answers.json", "r") as f:
             aze = f.read()
     except :
         aze = "couldn't read the file"
     
-    output(dic['grade'][0], os.listdir(), dic)
+    output(dic['grade'][0], aze, dic)
