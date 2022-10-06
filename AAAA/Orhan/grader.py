@@ -57,10 +57,5 @@ if __name__ == "__main__":
 
 
     aze = ""
-    try: 
-        with open("answers.json", "r") as f:
-            aze = f.read()
-    except :
-        aze = "couldn't read the file"
+    os.rename("answers.json", "feedback.html")
     
-    output(dic['grade'][0], aze, dic)
