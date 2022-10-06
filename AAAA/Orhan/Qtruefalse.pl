@@ -11,6 +11,7 @@ general_feedback=
 
 title = Question 1
 text  = La longueure du tunnel sous la manche est de 50,5km
+answer = T
 form  = {{radio|component}}
 
 before== #|python|
