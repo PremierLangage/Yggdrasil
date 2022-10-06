@@ -54,5 +54,13 @@ if __name__ == "__main__":
     if 'grade' not in dic:
         print(missing_grade_stderr, file=sys.stderr)
         sys.exit(1)
+
+
+    aze = ""
+    try: 
+        with open("answer.json", "r") as f:
+            aze = f.read()
+    except :
+        aze = "couldn't read the file"
     
-    output(dic['grade'][0], "coucou", dic)
+    output(dic['grade'][0], aze, dic)
