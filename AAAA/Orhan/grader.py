@@ -54,9 +54,5 @@ if __name__ == "__main__":
     if 'grade' not in dic:
         print(missing_grade_stderr, file=sys.stderr)
         sys.exit(1)
-
-    a = ""
-    with open(sys.argv[2], "r") as f:
-        a = f.read()
     
-    output(dic['grade'][0], a, dic)
+    output(dic['grade'][0], dic['grade'][1], dic)
