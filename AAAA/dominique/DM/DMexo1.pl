@@ -39,12 +39,21 @@ editor.code==#|c|
 
 
 solution==#|c|
-
+char square='❑'
+char flag='⚑';
+char mine='☀';
+char blank=' ';
 
 void print_terrain(int h, int *t[l],int l){
+    int c;
     for(int i=0;i < h; i++){
     for(int j=0;j < l ; j++) {
-        print("%c",t[i][j]);
+        switch(t[i][j]){
+            case 0: c = square; break;
+            case 2: case 3: c=flag; break;
+            case 4: c= blank; break;
+
+        print("%c",c);
         }
     printf("\n");
     }
@@ -62,9 +71,11 @@ code_before==#|c|
 code_after==#|c|
 
 int main(int argc, char* argv[]){
-  int a = atoi(argv[1]);
-  cube_it(&a);
-  printf("Cube --> %d\n",a);
+    int H,L,**t;
+    readFile("game.ga",&H,&L,&M,&t);
+
+    
+  
   return 0;
 }
 
