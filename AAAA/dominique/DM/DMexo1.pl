@@ -55,7 +55,7 @@ void print_terrain(int h, int *t[],int l){
             case 2: case 3: c=flag; break;
             case 4: c= blank; break;
         }
-        print("%c",c);
+        printf("%c",c);
         }
     printf("\n");
     }
