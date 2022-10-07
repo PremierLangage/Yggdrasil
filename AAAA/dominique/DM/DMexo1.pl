@@ -128,7 +128,7 @@ int readFile(char *filename, int *H, int *L, int *M, int ***r)
 code_after==#|c|
 
 int main(int argc, char* argv[]){
-    int H,L,**t;
+    int H,L,M,**t;
     readFile("game.ga",&H,&L,&M,&t);
 
     print_terrain(t,H,L);
