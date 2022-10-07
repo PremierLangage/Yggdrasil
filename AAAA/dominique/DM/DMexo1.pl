@@ -31,11 +31,11 @@ un tableau de  pointeur sur des tablaux d'entiers) la hauteur du terrain et la l
 ==
 
 editor.code==#|c|
-void terrain(... t,int H, int L){
+void terrain(int ** t,int H, int L){
   // Votre code ici...
 
 
-  
+
 }
 ==
 
