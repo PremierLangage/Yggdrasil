@@ -31,7 +31,7 @@ un tableau de  pointeur sur des tablaux d'entiers) la hauteur du terrain et la l
 ==
 
 editor.code==#|c|
-vodi print_terrain(int h, int *t[l],int l){
+void print_terrain(int h, int *t[l],int l){
   // Votre code ici...
 
 ;
