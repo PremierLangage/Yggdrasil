@@ -52,7 +52,7 @@ void print_terrain(int h, int *t[l],int l){
             case 0: c = square; break;
             case 2: case 3: c=flag; break;
             case 4: c= blank; break;
-
+        }
         print("%c",c);
         }
     printf("\n");
@@ -65,7 +65,63 @@ code_before==#|c|
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
 
+int readFile(char *filename, int *H, int *L, int *M, int ***r)
+{
+    FILE *fp;
+    char c;
+    int i, j;
+    int **t;
+    fp = fopen(filename, "r");
+    if (fp == NULL)
+    {
+        printf("Error opening file %s", filename);
+        exit(1);
+    }
+    if (3 != fscanf(fp, "%d %d %d", H, L, M))
+    {
+        printf("Error reading file %s", filename);
+        exit(1);
+    }
+    fscanf(fp, "%c", &c); // linefeed
+    t = (int **)malloc(*L * *H * sizeof(int *));
+    for (i = 0; i < *H; i++)
+    {
+        t[i] = (int *)malloc(*L * sizeof(int));
+        for (int j = 0; j < *L; j++)
+        {
+            // printf("(/%d/%d/)", i, j);
+            if (1 != fscanf(fp, "%c", &c))
+            {
+                fprintf(stderr, "Error reading file %s pos %d %d", filename, i, j);
+                exit(1);
+            }
+            // printf("%d:%c ", j, c);
+            t[i][j] = (int)(c - '0');
+        }
+        c = 0;
+        fscanf(fp, "%c", &c); // line feed
+        // printf("%c", c);
+        if (c != '\n')
+        {
+            if (c == 0)
+            {
+                fprintf(stderr, "Missing linefeed at end of file");
+            }
+            else
+            {
+                fprintf(stderr, "Error reading line feed char=%d \n", (int)c);
+                exit(1);
+            }
+        }
+    }
+    *r = t;
+   return 1; // ok
+}
 ==
 
 code_after==#|c|
