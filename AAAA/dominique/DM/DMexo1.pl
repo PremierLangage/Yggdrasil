@@ -131,7 +131,7 @@ int main(int argc, char* argv[]){
     int H,L,M,**t;
     readFile("game.ga",&H,&L,&M,&t);
 
-    print_terrain(t,H,L);
+    print_terrain(H,t,L);
   
   return 0;
 }
