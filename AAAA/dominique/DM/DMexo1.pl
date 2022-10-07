@@ -76,7 +76,6 @@ int readFile(char *filename, int *H, int *L, int *M, int ***r)
 {
     FILE *fp;
     char c;
-    int i, j;
     int **t;
     fp = fopen(filename, "r");
     if (fp == NULL)
@@ -91,7 +90,7 @@ int readFile(char *filename, int *H, int *L, int *M, int ***r)
     }
     fscanf(fp, "%c", &c); // linefeed
     t = (int **)malloc(*L * *H * sizeof(int *));
-    for (i = 0; i < *H; i++)
+    for (int i = 0; i < *H; i++)
     {
         t[i] = (int *)malloc(*L * sizeof(int));
         for (int j = 0; j < *L; j++)
