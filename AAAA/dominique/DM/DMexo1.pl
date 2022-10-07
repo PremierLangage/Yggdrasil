@@ -40,9 +40,14 @@ editor.code==#|c|
 
 solution==#|c|
 
-void cube_it(int *p)
-{
-    *p = *p * *p * *p;
+
+void print_terrain(int h, int *t[l],int l){
+    for(int i=0;i < h; i++){
+    for(int j=0;j < l ; j++) {
+        print("%c",t[i][j]);
+        }
+    printf("\n");
+    }
 }
 
 ==
