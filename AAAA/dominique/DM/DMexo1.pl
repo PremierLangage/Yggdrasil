@@ -54,6 +54,7 @@ void print_terrain(int h, int *t[],int l){
             case 0: c = square; break;
             case 2: case 3: c=flag; break;
             case 4: c= blank; break;
+            case 1: c=mine; break;
         }
         printf("%c",c);
         }
