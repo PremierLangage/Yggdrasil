@@ -31,8 +31,11 @@ un tableau de  pointeur sur des tablaux d'entiers) la hauteur du terrain et la l
 ==
 
 editor.code==#|c|
-... cube_it(...){
+void terrain(... t,int H, int L){
   // Votre code ici...
+
+
+  
 }
 ==
 
