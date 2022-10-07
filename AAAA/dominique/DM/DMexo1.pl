@@ -139,12 +139,7 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[["Test basique", ["1"], ""],
- ["Simple nombre négatif", ["-3"], ""],
- ["Test aléatoire 1", [str(randint(1, 33))], ""],
- ["Test aléatoire 2", [str(randint(-50, -12))], ""],
- ["Test aléatoire 3", [str(randint(-100, 100))], ""],
- ["Test aléatoire 4", [str(randint(-100, 100))], ""]]
+[["Test basique", ["game.ga"], ""],
 ==
 
 astuces==#|python|
