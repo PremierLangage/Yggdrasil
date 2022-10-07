@@ -46,7 +46,7 @@ char flag='⚑';
 char mine='☀';
 char blank=' ';
 
-void print_terrain(int h, int *t[l],int l){
+void print_terrain(int h, int *t[],int l){
     int c;
     for(int i=0;i < h; i++){
     for(int j=0;j < l ; j++) {
