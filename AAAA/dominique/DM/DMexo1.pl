@@ -24,10 +24,9 @@ title=Mettre au cube une valeur pointée
 tag=fonction|pointeur|variable
 
 text==#|markdown|
-Écrire une function **cube_it** qui prend l'adresse d'un entier (pointeur vers 
-un entier) et remplace la valeur pointée par son cube (c'est à dire l'ancienne 
-valeur élevée à la puissance 3). Faire un choix cohérent pour le prototype de 
-la fonction.
+Écrire une function **print_terrain** qui prend l'adresse d'un vecteur d'entier (pointeur vers 
+un tableau de  pointeur sur des tablaux d'entiers) la hauteur du terrain et la largeur et affiche le terrain en utilisant les caractères suivants mine,square,flag,blank:
+*, ⚑, ❑ et l’espace.
 
 ==
 
