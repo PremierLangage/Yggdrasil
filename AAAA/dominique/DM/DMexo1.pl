@@ -181,6 +181,8 @@ int main(int argc, char* argv[]){
 
 
 @ game.ga
+@ gaga.ga
+
 
 checks_args_stdin==#|python|
 [["Test basique", ["game.ga"], ""],
