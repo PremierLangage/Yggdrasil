@@ -128,7 +128,7 @@ code_after==#|c|
 
 int main(int argc, char* argv[]){
     int H,L,M,**t;
-    printf(argv[1]);
+    printf("%s\n",argv[1]);
     readFile(argv[1],&H,&L,&M,&t);
 
     print_terrain(H,t,L);
