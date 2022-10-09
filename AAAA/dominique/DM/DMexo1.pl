@@ -34,7 +34,7 @@ un tableau de  pointeur sur des tablaux d'entiers) la hauteur du terrain et la l
 ==
 
 editor.code==#|c|
-char square='S'
+char square='S';
 char flag='F';
 char mine='M';
 char blank=' ';
