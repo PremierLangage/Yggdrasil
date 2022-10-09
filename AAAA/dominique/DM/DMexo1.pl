@@ -31,12 +31,27 @@ un tableau de  pointeur sur des tablaux d'entiers) la hauteur du terrain et la l
 ==
 
 editor.code==#|c|
+char square='❑'
+char flag='⚑';
+char mine='☀';
+char blank=' ';
+
 void print_terrain(int h, int *t[],int l){
-  // Votre code ici...
-
-;
-
+    int c;
+    for(int i=0;i < h; i++){
+    for(int j=0;j < l ; j++) {
+        switch(t[i][j]){
+            case 0: c = square; break;
+            case 2: case 3: c=flag; break;
+            case 4: c= blank; break;
+            case 1: c=mine; break;
+        }
+        printf("%c",c);
+        }
+    printf("\n");
+    }
 }
+
 ==
 
 
