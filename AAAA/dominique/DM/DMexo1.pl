@@ -25,15 +25,18 @@ tag=fonction|pointeur|variable
 
 text==#|markdown|
 Écrire une function **print_terrain** qui prend l'adresse d'un vecteur d'entier (pointeur vers 
-un tableau de  pointeur sur des tablaux d'entiers) la hauteur du terrain et la largeur et affiche le terrain en utilisant les caractères suivants mine,square,flag,blank:
-*, ⚑, ❑ et l’espace.
+un tableau de  pointeur sur des tablaux d'entiers) la hauteur du terrain et la largeur et affiche le terrain en utilisant les caractères suivants :
+    char square='S'
+    char flag='F';
+    char mine='M';
+    char blank=' ';
 
 ==
 
 editor.code==#|c|
-char square='❑'
-char flag='⚑';
-char mine='☀';
+char square='S'
+char flag='F';
+char mine='M';
 char blank=' ';
 
 void print_terrain(int h, int *t[],int l){
@@ -56,9 +59,9 @@ void print_terrain(int h, int *t[],int l){
 
 
 solution==#|c|
-char square='❑'
-char flag='⚑';
-char mine='☀';
+char square='S';
+char flag='F';
+char mine='M';
 char blank=' ';
 
 void print_terrain(int h, int *t[],int l){
