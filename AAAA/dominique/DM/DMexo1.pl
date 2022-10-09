@@ -24,13 +24,25 @@ title= Print terrain
 tag=fonction|pointeur|variable
 
 text==#|markdown|
-Écrire une function **print_terrain** qui prend l'adresse d'un vecteur d'entier (pointeur vers 
-un tableau de  pointeur sur des tablaux d'entiers) la hauteur du terrain et la largeur et affiche le terrain en utilisant les caractères suivants :
+Écrire une function **print_terrain** qui prend 
+- un entier representant la hauteur du terrain 
+- l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers) 
+- la largeur et affiche le terrain en utilisant les caractères suivants :
+
     char square='S'
     char flag='F';
     char mine='M';
     char blank=' ';
+    char boom='B';
 
+L'encodage est le suivant:
+Si la case ne contient rien et qui n’est pas découverte c’est indiqué par un square: 0
+Si la case contient une mine c’est indiqué par un 1 étoile. 
+Si la case contient un drapeau c’est indiqué avec un 2 drapeau.
+Donc 3 indique à la fois une mine et un drapeau. 
+si la case est découverte c’est indiqué par un 4 (Action Pied)
+Dans cet exemple, il y a 4 mines, 2 drapeaux et une case découverte.
+Un 5 indique que le jeux est terminé ... et donc il faut afficher toutes les mines avec boom.
 ==
 
 editor.code==#|c|
@@ -40,19 +52,7 @@ char mine='M';
 char blank=' ';
 
 void print_terrain(int h, int *t[],int l){
-    int c;
-    for(int i=0;i < h; i++){
-    for(int j=0;j < l ; j++) {
-        switch(t[i][j]){
-            case 0: c = square; break;
-            case 2: case 3: c=flag; break;
-            case 4: c= blank; break;
-            case 1: c=mine; break;
-        }
-        printf("%c",c);
-        }
-    printf("\n");
-    }
+    ;
 }
 
 ==
@@ -66,8 +66,12 @@ char blank=' ';
 
 void print_terrain(int h, int *t[],int l){
     int c;
+    int bb=0;
+    for(int i=0;i < h && !bb; i++) for(int j=0;j < l  && !bb; j++) if (t[i][j]==5) bb=1;
     for(int i=0;i < h; i++){
     for(int j=0;j < l ; j++) {
+        if (bb && (t[i][j] & 1) c=boom;
+        else
         switch(t[i][j]){
             case 0: c = square; break;
             case 2: case 3: c=flag; break;
