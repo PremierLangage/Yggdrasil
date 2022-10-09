@@ -20,7 +20,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Dominique Revuz
 
-title=Mettre au cube une valeur pointée
+title= Print terrain 
 tag=fonction|pointeur|variable
 
 text==#|markdown|
