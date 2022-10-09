@@ -89,7 +89,10 @@ void print_terrain(int h, int *t[],int l){
     for(int i=0;i < h && !bb; i++) for(int j=0;j < l  && !bb; j++) if (t[i][j]==5) bb=1;
     for(int i=0;i < h; i++){
     for(int j=0;j < l ; j++) {
-        if (bb && (t[i][j] & 1)) c=boom;
+        if (bb && (t[i][j] & 1)) {
+            c=boom;
+
+        }
         else
         switch(t[i][j]){
             case 0: c = square; break;
