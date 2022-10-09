@@ -81,6 +81,7 @@ char square='S';
 char flag='F';
 char mine='M';
 char blank=' ';
+char boom='B';
 
 void print_terrain(int h, int *t[],int l){
     int c;
