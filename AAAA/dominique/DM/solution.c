@@ -38,18 +38,19 @@ void freeGame(Game *g)
     free(g);
 }
 
-int **read_t(FILE *f, int *H, int *L, int *M)
-{   int **t;
-    fscanf(f, "%d %d %d", &H, &L, &M);
-    t = malloc(H * sizeof(int *));
-    for (int i = 0; i < H; i++)
+int** read_t(FILE* f, int* H, int* L, int* M)
+{   
+    int **t;
+    fscanf(f, "%d %d %d", H, L, M);
+    t = malloc(*H * sizeof(int *));
+    for (int i = 0; i < *H; i++)
     {
-        t[i] = malloc(L * sizeof(int));
+        t[i] = malloc(*L * sizeof(int));
     }
 
-    for (int i = 0; i < H; i++)
+    for (int i = 0; i < *H; i++)
     {
-        for (int j = 0; j < L; j++)
+        for (int j = 0; j < *L; j++)
         {
             fscanf(f, "%d", t[i][j]);
         }
@@ -73,29 +74,8 @@ void readGame(FILE *f, Game *g)
     }
 }
 
-int **randomTerrain(int H, int L, int M){
-    int **t;
-    
-    t=malloc(H * sizeof(int *));
-        for (int i = 0; i < H; i++)
-        {
-            t[i] = malloc(L * sizeof(int));
-        }
-    
-    for (i = 0; i < H; i++)
-        for (j = 0; j < L; j++)
-            t[i][j] = 0;
-    for (i = 0; i < M; i++)
-    {
-        int h, l;
-        do
-        {
-            h = rand() % H;
-            l = rand() % L;
-        } while (t[h][l] == 9);
-        t[h][l] = 9;
-    }
-    return t;
+void readGameFromFile(FILE *f, Game *g){
+
 }
 
 void printGame(Game *g)
