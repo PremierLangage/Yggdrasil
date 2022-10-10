@@ -21,7 +21,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Dominique Revuz
 
-title= DM - Print terrain 
+title= DM - Drapeau 
 tag=DM
 
 text==#|markdown|
