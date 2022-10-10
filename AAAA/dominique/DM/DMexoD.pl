@@ -28,6 +28,7 @@ text==#|markdown|
 Écrire une function **Drapeau** qui prend 
 - deux entiers représenant les dimensions de la grille
 - deux entiers représenant les coordonées du choix
+- la grille
 
 et ajoute un drapeau aux coordonées choisit si la case est non découverte, enlève le drapeau si il y a un drapeau, et rien sinon.
 
@@ -37,7 +38,7 @@ et ajoute un drapeau aux coordonées choisit si la case est non découverte, enl
 editor.code==#|c|
 
 
-void Drapeau(int H, int L, int i, int j){
+void Drapeau(int H, int L, int i, int j, int t[H][L]){
 
 
 }
@@ -46,34 +47,14 @@ void Drapeau(int H, int L, int i, int j){
 
 
 solution==#|c|
-char square='S';
-char flag='F';
-char mine='M';
-char blank=' ';
-char boom='B';
 
-void print_terrain(int h, int *t[],int l){
-    int c;
-    int bb=0;
-    for(int i=0;i < h && !bb; i++) for(int j=0;j < l  && !bb; j++) if (t[i][j]==5) bb=1;
-    for(int i=0;i < h; i++){
-    for(int j=0;j < l ; j++) {
-        if (bb && (t[i][j] & 1)) {
-            c=boom;
 
-    }
-        else
-        switch(t[i][j]){
-            case 0: c = square; break;
-            case 2: case 3: c=flag; break;
-            case 4: c= blank; break;
-            case 1: c=mine; break;
-        }
-        printf("%c",c);
-        }
-    printf("\n");
-    }
+
+void Drapeau(int H, int L, int i, int j, int t[H][L]){
+    
+
 }
+
 
 ==
 
