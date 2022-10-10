@@ -20,8 +20,8 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Dominique Revuz
 
-title= Print terrain 
-tag=fonction|pointeur|variable
+title= DM - Print terrain 
+tag=DM
 
 text==#|markdown|
 Écrire une function **print_terrain** qui prend 
@@ -92,7 +92,7 @@ void print_terrain(int h, int *t[],int l){
         if (bb && (t[i][j] & 1)) {
             c=boom;
 
-        }
+    }
         else
         switch(t[i][j]){
             case 0: c = square; break;
