@@ -73,7 +73,7 @@ void readGame(FILE *f, Game *g)
     }
 }
 
-void readGameFromFile(FILE *f, Game *g){
+int **randomTerrain(int H, int L, int M){
 
 }
 
