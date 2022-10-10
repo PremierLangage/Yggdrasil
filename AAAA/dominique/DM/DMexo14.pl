@@ -47,23 +47,7 @@ editor.code==#|c|
 ==
 
 
-solution==#|c|
-
-
-int nbm
-ines(int H, int **t, int L, int i, int j){
-    int nb=0;
-    for(int i=-1; i <H ; i++)
-        for(int j=-1; j < L; j++)
-        {
-            if ( i==j && i==0) continue;
-            if (t[i][j]==9 || t[i][j]== -9)
-                nb++;
-    }
-    return nb;
-    }
-==
-
+solution=@ solution.c
 code_before==#|c|
 
 #include <stdio.h>
@@ -148,13 +132,5 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [["Test basique", ["game.ga"], ""],
 ["Test encore ", ["gaga.ga"], ""]
-]
-==
-
-astuces==#|python|
-[
-  { "content": """Votre fonction pourrait retourner `void` sans problème mais doit prendre en argument un pointeur vers un entier (`int*`)."""},
-  { "content": """Pour utiliser la valeur d'un pointeur `int* p`, il faut affecter ou utiliser `*p`."""},
-  { "content": """L'instruction `*p = *p * 20;` met à jour la valeur pointée en la remplacant par 20 fois l'ancienne valeur."""}
 ]
 ==
