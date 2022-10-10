@@ -164,10 +164,7 @@ void createGame(Game *g, int H, int L, int M)
         } while (g->t[h][l] == 9);
         g->t[h][l] = 9;
     }
-    // for (i = 0; i < g->H; i++)
-    //     for (j = 0; j < g->L; j++)
-    //         if (g->t[i][j] != 9)
-    //             g->t[i][j] = nbmines(g->H, g->L, g->t, i, j);
+
 }
 
 int P(int **t, int H, int L, int i, int j)
