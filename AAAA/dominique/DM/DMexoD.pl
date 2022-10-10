@@ -77,8 +77,9 @@ code_before==#|c|
 
 
 int **read_t(FILE *f, int *H, int *L, int *M)
-{   int **t;
-    fscanf(f, "%d %d %d", &H, &L, &M);
+{   
+    int **t;
+    fscanf(f, "%d %d %d", H, L, M);
     t = malloc(H * sizeof(int *));
     for (int i = 0; i < H; i++)
     {
