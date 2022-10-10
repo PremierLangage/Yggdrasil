@@ -38,6 +38,29 @@ void freeGame(Game *g)
     free(g);
 }
 
+int **read_t(FILE *f, int *H, int *L, int *M)
+{   int **t;
+    fscanf(f, "%d %d %d", &H, &L, &M);
+    t = malloc(H * sizeof(int *));
+    for (int i = 0; i < H; i++)
+    {
+        t[i] = malloc(L * sizeof(int));
+    }
+
+    for (int i = 0; i < H; i++)
+    {
+        for (int j = 0; j < L; j++)
+        {
+            fscanf(f, "%d", t[i][j]);
+        }
+    }
+    return t;
+}
+
+
+
+
+
 void readGame(FILE *f, Game *g)
 {
     fscanf(f, "%d %d %d", &g->H, &g->L, &g->M);
@@ -48,6 +71,10 @@ void readGame(FILE *f, Game *g)
             fscanf(f, "%d", &g->t[i][j]);
         }
     }
+}
+
+void readGameFromFile(FILE *f, Game *g){
+
 }
 
 void printGame(Game *g)
