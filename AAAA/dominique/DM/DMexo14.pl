@@ -115,6 +115,7 @@ int main(int argc, char* argv[]){
     else { 
         FILE f= open(argv[1],"r");
         t = read_t(f, &H, &L, &M);
+    }
     // int nbmines(int H, int **t, int L, int i, int j){
     printf("%d %d %d\n", nbmines(H,t,L, 3,4), nbmines(H,t,L, 2,2), nbmines(H,t,L, 0,0));
     printf("%d %d %d\n", nbmines(H,t,L, H,L), nbmines(H,t,L, H,0), nbmines(H,t,L, 0,L));
