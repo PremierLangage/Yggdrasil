@@ -75,6 +75,31 @@ int **read_t(FILE *f, int *H, int *L, int *M)
 }
 
 
+int **randomTerrain(int H, int L, int M){
+    int **t;
+    
+    t=malloc(H * sizeof(int *));
+        for (int i = 0; i < H; i++)
+        {
+            t[i] = malloc(L * sizeof(int));
+        }
+    
+    for (i = 0; i < H; i++)
+        for (j = 0; j < L; j++)
+            t[i][j] = 0;
+    for (i = 0; i < M; i++)
+    {
+        int h, l;
+        do
+        {
+            h = rand() % H;
+            l = rand() % L;
+        } while (t[h][l] == 9);
+        t[h][l] = 9;
+    }
+    return t;
+}
+
 
 ==
 
@@ -87,11 +112,12 @@ int main(int argc, char* argv[]){
          H=10; L=10; M=10;
         t = randomterrain(H,L,M);
     }
+    else { 
+        FILE f= open(argv[1],"r");
+        t = read_t(f, &H, &L, &M);
     // int nbmines(int H, int **t, int L, int i, int j){
     printf("%d %d %d\n", nbmines(H,t,L, 3,4), nbmines(H,t,L, 2,2), nbmines(H,t,L, 0,0));
     printf("%d %d %d\n", nbmines(H,t,L, H,L), nbmines(H,t,L, H,0), nbmines(H,t,L, 0,L));
-    
-  
   return 0;
 }
 
@@ -103,7 +129,7 @@ int main(int argc, char* argv[]){
 
 
 checks_args_stdin==#|python|
-[["Test basique", ["game.ga"], ""],
+[["Test basique", ["alea"], ""],
 ["Test encore ", ["gaga.ga"], ""]
 ]
 ==
