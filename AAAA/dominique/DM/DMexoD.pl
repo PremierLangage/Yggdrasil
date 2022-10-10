@@ -75,57 +75,27 @@ code_before==#|c|
 #include <string.h>
 #include <math.h>
 
-int readFile(char *filename, int *H, int *L, int *M, int ***r)
-{
-    FILE *fp;
-    char c;
-    int **t;
-    fp = fopen(filename, "r");
-    if (fp == NULL)
+
+int **read_t(FILE *f, int *H, int *L, int *M)
+{   int **t;
+    fscanf(f, "%d %d %d", &H, &L, &M);
+    t = malloc(H * sizeof(int *));
+    for (int i = 0; i < H; i++)
     {
-        printf("Error opening file %s", filename);
-        exit(1);
+        t[i] = malloc(L * sizeof(int));
     }
-    if (3 != fscanf(fp, "%d %d %d", H, L, M))
+
+    for (int i = 0; i < H; i++)
     {
-        printf("Error reading file %s", filename);
-        exit(1);
-    }
-    fscanf(fp, "%c", &c); // linefeed
-    t = (int **)malloc(*L * *H * sizeof(int *));
-    for (int i = 0; i < *H; i++)
-    {
-        t[i] = (int *)malloc(*L * sizeof(int));
-        for (int j = 0; j < *L; j++)
+        for (int j = 0; j < L; j++)
         {
-            // printf("(/%d/%d/)", i, j);
-            if (1 != fscanf(fp, "%c", &c))
-            {
-                fprintf(stderr, "Error reading file %s pos %d %d", filename, i, j);
-                exit(1);
-            }
-            // printf("%d:%c ", j, c);
-            t[i][j] = (int)(c - '0');
-        }
-        c = 0;
-        fscanf(fp, "%c", &c); // line feed
-        // printf("%c", c);
-        if (c != '\n')
-        {
-            if (c == 0)
-            {
-                fprintf(stderr, "Missing linefeed at end of file");
-            }
-            else
-            {
-                fprintf(stderr, "Error reading line feed char=%d \n", (int)c);
-                exit(1);
-            }
+            fscanf(f, "%d", t[i][j]);
         }
     }
-    *r = t;
-   return 1; // ok
+    return t;
 }
+
+
 ==
 
 code_after==#|c|
@@ -133,7 +103,7 @@ code_after==#|c|
 int main(int argc, char* argv[]){
     int H,L,M,**t;
     printf("%s\n",argv[1]);
-    readFile(argv[1],&H,&L,&M,&t);
+    t == read_t(argv[1],&H,&L,&M);
 
     Drapeau(H,L,1,2,t);
   
