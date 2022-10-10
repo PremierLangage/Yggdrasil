@@ -50,7 +50,8 @@ editor.code==#|c|
 solution==#|c|
 
 
-int nbmines(int H, int **t, int L, int i, int j){
+int nbm
+ines(int H, int **t, int L, int i, int j){
     int nb=0;
     for(int i=-1; i <H ; i++)
         for(int j=-1; j < L; j++)
