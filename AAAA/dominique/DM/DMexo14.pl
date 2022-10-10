@@ -40,12 +40,12 @@ Les cases contenant une mine contiennent soit 9 soit -9.
 
 ==
 
-editor.code==#|c|
+Xeditor.code==#|c|
 
 
 
 ==
-
+editor.code = @ @ solution.c
 
 solution=@ solution.c
 code_before==#|c|
