@@ -35,7 +35,7 @@ text==#|markdown|
     char mine='M';
     char blank=' ';
     char boom='B';
-Et les chiffres de '1' à '8'.
+Et les chiffres de '1' à '8' pour les cases découvertes.
 
 L'encodage est le suivant:
 Si la case ne contient rien et qui n’est pas découverte c’est indiqué par un square: 0
@@ -105,6 +105,26 @@ char mine='M';
 char blank=' ';
 char boom='B';
 
+
+int hasmine(int h, int l,  int *t[], int i, int j)
+{
+    if (i<0 || i>h-1 || j <l || j>l-1) return 0;
+    return t[i][j] % 2;
+}
+
+int nbmines(int h, int l, int *t[], int i, int j){
+
+    return hasmine(h, l, t, i-1, j-1)
+        +hasmine(h, l, t, i-1, j)
+        +hasmine(h, l, t, i-1, j+1)
+        +hasmine(h, l, t, i, j-1)
+        +hasmine(h, l, t, i, j+1)
+        +hasmine(h, l, t, i+1, j-1)
+        +hasmine(h, l, t, i+1, j)
+        +hasmine(h, l, t, i+1, j+1);
+
+}
+
 void print_terrain(int h, int *t[],int l){
     int c;
     int bb=0;
@@ -120,7 +140,7 @@ void print_terrain(int h, int *t[],int l){
             case 0: c = square; break;
             case 2: case 3: c=flag; break;
             case 4: c= blank; break;
-            case 1: c=mine; break;
+            case 1: c=nbmines(h, l, t, i, j); break;
         }
         printf("%c",c);
         }
