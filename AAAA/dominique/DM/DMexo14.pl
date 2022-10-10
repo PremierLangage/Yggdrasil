@@ -45,7 +45,7 @@ Xeditor.code==#|c|
 
 
 ==
-editor.code = @ @ solution.c
+editor.code =@  solution.c
 
 solution=@ solution.c
 code_before==#|c|
