@@ -43,40 +43,24 @@ Les cases contenant une mine contiennent soit 9 soit -9.
 editor.code==#|c|
 
 
- mis par defaut l dans lediteur des etudiatns 
+
 ==
 
 
 solution==#|c|
-char square='S';
-char flag='F';
-char mine='M';
-char blank=' ';
-char boom='B';
 
-void print_terrain(int h, int *t[],int l){
-    int c;
-    int bb=0;
-    for(int i=0;i < h && !bb; i++) for(int j=0;j < l  && !bb; j++) if (t[i][j]==5) bb=1;
-    for(int i=0;i < h; i++){
-    for(int j=0;j < l ; j++) {
-        if (bb && (t[i][j] & 1)) {
-            c=boom;
 
+int nbmines(int H, int **t, int L, int i, int j){
+    int nb=0;
+    for(int i=-1; i <H ; i++)
+        for(int j=-1; j < L; j++)
+        {
+            if ( i==j && i==0) continue;
+            if (t[i][j]==9 || t[i][j]== -9)
+                nb++;
     }
-        else
-        switch(t[i][j]){
-            case 0: c = square; break;
-            case 2: case 3: c=flag; break;
-            case 4: c= blank; break;
-            case 1: c=mine; break;
-        }
-        printf("%c",c);
-        }
-    printf("\n");
+    return nb;
     }
-}
-
 ==
 
 code_before==#|c|
@@ -145,8 +129,10 @@ int main(int argc, char* argv[]){
     int H,L,M,**t;
     printf("%s\n",argv[1]);
     readFile(argv[1],&H,&L,&M,&t);
-
-    print_terrain(H,t,L);
+    // int nbmines(int H, int **t, int L, int i, int j){
+    printf("%d %d %d\n", nbmines(H,t,L, 3,4), nbmines(H,t,L, 2,2), nbmines(H,t,L, 0,0));
+    printf("%d %d %d\n", nbmines(H,t,L, H,L), nbmines(H,t,L, H,0), nbmines(H,t,L, 0,L));
+    
   
   return 0;
 }
