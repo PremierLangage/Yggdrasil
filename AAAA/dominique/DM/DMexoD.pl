@@ -135,7 +135,7 @@ int main(int argc, char* argv[]){
     printf("%s\n",argv[1]);
     readFile(argv[1],&H,&L,&M,&t);
 
-    print_terrain(H,t,L);
+    Drapeau(H,L,1,2,t);
   
   return 0;
 }
