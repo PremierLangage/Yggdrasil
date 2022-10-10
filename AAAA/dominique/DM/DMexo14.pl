@@ -127,7 +127,7 @@ code_after==#|c|
 
 int main(int argc, char* argv[]){
     int H,L,M,**t;
-    printf("%s\n",argv[1]);
+    //printf("%s\n",argv[1]);
     readFile(argv[1],&H,&L,&M,&t);
     // int nbmines(int H, int **t, int L, int i, int j){
     printf("%d %d %d\n", nbmines(H,t,L, 3,4), nbmines(H,t,L, 2,2), nbmines(H,t,L, 0,0));
@@ -140,7 +140,7 @@ int main(int argc, char* argv[]){
 ==
 
 
-@ game.ga
+@ game.ga 
 @ gaga.ga
 
 
