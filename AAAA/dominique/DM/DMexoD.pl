@@ -101,9 +101,9 @@ int **read_t(FILE *f, int *H, int *L, int *M)
 code_after==#|c|
 
 int main(int argc, char* argv[]){
-    int H,L,M,**t;
+    int H, L, M, **t;
     printf("%s\n",argv[1]);
-    t == read_t(argv[1],&H,&L,&M);
+    t = read_t(argv[1],&H,&L,&M);
 
     Drapeau(H,L,1,2,t);
   
