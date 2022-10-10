@@ -55,18 +55,25 @@ code_before==#|c|
 #include <string.h>
 #include <math.h>
 
-
-void readGame(FILE *f, Game *g)
-{
-    fscanf(f, "%d %d %d", &g->H, &g->L, &g->M);
-    for (int i = 0; i < g->H; i++)
+int **read_t(FILE *f, int *H, int *L, int *M)
+{   int **t;
+    fscanf(f, "%d %d %d", &H, &L, &M);
+    t = malloc(H * sizeof(int *));
+    for (int i = 0; i < H; i++)
     {
-        for (int j = 0; j < g->L; j++)
+        t[i] = malloc(L * sizeof(int));
+    }
+
+    for (int i = 0; i < H; i++)
+    {
+        for (int j = 0; j < L; j++)
         {
-            fscanf(f, "%d", &g->t[i][j]);
+            fscanf(f, "%d", t[i][j]);
         }
     }
+    return t;
 }
+
 
 
 ==
@@ -77,8 +84,9 @@ int main(int argc, char* argv[]){
     int H,L,M,**t;
     //printf("%s\n",argv[1]);
     if (strcmp(argv[1],"alea"){
-
-
+         H=10; L=10; M=10;
+        t = randomterrain(H,L,M);
+    }
     // int nbmines(int H, int **t, int L, int i, int j){
     printf("%d %d %d\n", nbmines(H,t,L, 3,4), nbmines(H,t,L, 2,2), nbmines(H,t,L, 0,0));
     printf("%d %d %d\n", nbmines(H,t,L, H,L), nbmines(H,t,L, H,0), nbmines(H,t,L, 0,L));
