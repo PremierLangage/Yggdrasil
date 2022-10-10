@@ -26,7 +26,7 @@ tag=DM
 
 text==#|markdown|
 Écrire une function **Drapeau** qui prend 
-- un entier representant la hauteur du terrain 
+- deux entiers représenant les dimensions de la grille
 - l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers) 
 - la largeur et affiche le terrain en utilisant les caractères suivants :
 
