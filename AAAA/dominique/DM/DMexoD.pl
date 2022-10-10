@@ -27,8 +27,9 @@ tag=DM
 text==#|markdown|
 Écrire une function **Drapeau** qui prend 
 - deux entiers représenant les dimensions de la grille
-- l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers) 
-- la largeur et affiche le terrain en utilisant les caractères suivants :
+- deux entiers représenant les coordonées du choix
+
+et ajoute un drapeau aux coordonées choisit si la case est non découverte, enlève le drapeau si il y a un drapeau, et rien sinon.
 
     char square='S'
     char flag='F';
