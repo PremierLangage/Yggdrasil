@@ -55,7 +55,7 @@ solution==#|c|
 
 
 
-void Drapeau(int H, int L, int i, int j, int t[H][L]){
+void Drapeau(int H, int L, int i, int j, int** t){
     switch(t[i][j]){
         case -9 : t[i][j] = 9; break;
         case -10 : t[i][j] = 0; break;
