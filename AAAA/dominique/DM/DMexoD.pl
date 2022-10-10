@@ -35,12 +35,7 @@ et ajoute un drapeau aux coordonées choisit si la case est non découverte, enl
 ==
 
 editor.code==#|c|
-char square='S';
-char flag='F';
-char mine='M';
-char blank=' ';
 
-char boom='B';
 
 void Drapeau(int H, int L, int i, int j){
 
