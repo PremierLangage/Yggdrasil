@@ -46,64 +46,53 @@ Un 5 indique que le jeux est terminé ... et donc il faut afficher toutes les mi
 ==
 
 editor.code==#|c|
-char square='S';
-char flag='F';
-char mine='M';
-char blank=' ';
+// impression de la matrice de jeu dans un fichier
 
-char boom='B';
-
-void print_terrain(int h, int *t[],int l){
+void fprint_t(FILE *f, int h, int *t[], int l)
+{
     int c;
-    int bb=0;
-    for(int i=0;i < h && !bb; i++) for(int j=0;j < l  && !bb; j++) if (t[i][j]==5) bb=1;
-    for(int i=0;i < h; i++){
-    for(int j=0;j < l ; j++) {
-        if (bb && (t[i][j] & 1)) c=boom;
-        else
-        switch(t[i][j]){
-            case 0: c = square; break;
-            case 2: case 3: c=flag; break;
-            case 4: c= blank; break;
-            case 1: c=mine; break;
+    int bb = 0;
+
+    for (int i = 0; i < h; i++)
+    {
+        for (int j = 0; j < l; j++)
+        {
+            fprintf(f, "%d ", t[i][j]);
         }
-        printf("%c",c);
-        }
-    printf("\n");
+        fprintf(f, "\n");
     }
 }
 
+// affichage de la matrice de jeu sur stdout
+void print_t(int h, int *t[], int l)
+{
+    fprint_t(stdout, h, t, l);
+}
 ==
 
 
 solution==#|c|
-char square='S';
-char flag='F';
-char mine='M';
-char blank=' ';
-char boom='B';
+// impression de la matrice de jeu dans un fichier
 
-void print_terrain(int h, int *t[],int l){
+void fprint_t(FILE *f, int h, int *t[], int l)
+{
     int c;
-    int bb=0;
-    for(int i=0;i < h && !bb; i++) for(int j=0;j < l  && !bb; j++) if (t[i][j]==5) bb=1;
-    for(int i=0;i < h; i++){
-    for(int j=0;j < l ; j++) {
-        if (bb && (t[i][j] & 1)) {
-            c=boom;
+    int bb = 0;
 
-    }
-        else
-        switch(t[i][j]){
-            case 0: c = square; break;
-            case 2: case 3: c=flag; break;
-            case 4: c= blank; break;
-            case 1: c=mine; break;
+    for (int i = 0; i < h; i++)
+    {
+        for (int j = 0; j < l; j++)
+        {
+            fprintf(f, "%d ", t[i][j]);
         }
-        printf("%c",c);
-        }
-    printf("\n");
+        fprintf(f, "\n");
     }
+}
+
+// affichage de la matrice de jeu sur stdout
+void print_t(int h, int *t[], int l)
+{
+    fprint_t(stdout, h, t, l);
 }
 
 ==
