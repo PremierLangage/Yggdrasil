@@ -8,7 +8,7 @@ read_t()
 
 hasmine(i,j)
 nbmines(i,j)  DR 
-print_terrain()  DR
+print_t()  DR
 
 verif_terrain() // endofgame()  
 P(i,j)
