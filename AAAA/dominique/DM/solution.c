@@ -14,6 +14,8 @@ struct _game
 
 typedef struct _game Game;
 
+// allocation de la structure game
+// et d'une matrice de taille H*L et initialisation à 0
 void *mallocGame(int H, int L, int M)
 {
     Game *g = malloc(sizeof(Game));
@@ -21,13 +23,14 @@ void *mallocGame(int H, int L, int M)
     g->H = H;
     g->L = L;
     g->M = M;
-    g->t = malloc(H * sizeof(int *));
+    g->t = calloc(1, H * sizeof(int *));
     for (int i = 0; i < H; i++)
     {
-        g->t[i] = malloc(L * sizeof(int));
+        g->t[i] = calloc(1, L * sizeof(int));
     }
     return g;
 }
+// libération de la mémoire
 void freeGame(Game *g)
 {
     for (int i = 0; i < g->H; i++)
@@ -38,8 +41,8 @@ void freeGame(Game *g)
     free(g);
 }
 
-int** read_t(FILE* f, int* H, int* L, int* M)
-{   
+int **read_t(FILE *f, int *H, int *L, int *M)
+{
     int **t;
     fscanf(f, "%d %d %d", H, L, M);
     t = malloc(*H * sizeof(int *));
@@ -52,52 +55,30 @@ int** read_t(FILE* f, int* H, int* L, int* M)
     {
         for (int j = 0; j < *L; j++)
         {
-            fscanf(f, "%d", t[i][j]);
+            fscanf(f, "%d", &(t[i][j]));
         }
     }
     return t;
 }
 
-
-
-
-
-void readGame(FILE *f, Game *g)
+//  allocation de la structure et lecture du fichier
+Game *readGame(FILE *f)
 {
-    fscanf(f, "%d %d %d", &g->H, &g->L, &g->M);
-    for (int i = 0; i < g->H; i++)
+    int H, L, M;
+    fscanf(f, "%d %d %d", &H, &L, &M);
+    Game *g = mallocGame(H, L, M);
+    int **t = g->t;
+    for (int i = 0; i < H; i++)
     {
-        for (int j = 0; j < g->L; j++)
+        for (int j = 0; j < L; j++)
         {
-            fscanf(f, "%d", &g->t[i][j]);
+            fscanf(f, "%d", &(t[i][j]));
         }
     }
+    return g;
 }
 
-void readGameFromFile(FILE *f, Game *g){
-
-}
-
-void printGame(Game *g)
-{
-    printf("%d %d %d\n", g->H, g->L, g->M);
-    for (int i = 0; i < g->H; i++)
-    {
-        for (int j = 0; j < g->L; j++)
-        {
-            printf("%d ", g->t[i][j]);
-        }
-        printf("\n");
-    }
-}
-
-char square = 'S'; //
-char flag = 'F';
-char mine = 'M';
-char blank = ' ';
-char boom = 'B';
-
-int hasmine(int h, int l, int *t[], int i, int j)
+int hasmine_t(int h, int l, int *t[], int i, int j)
 {
     if ((i < 0) || (i > h - 1) || (j < 0) || (j > l - 1))
         return 0;
@@ -105,42 +86,24 @@ int hasmine(int h, int l, int *t[], int i, int j)
     // mine ou mine sous drapeau
     return t[i][j] == 9 || t[i][j] == -9;
 }
-
-int nbmines(int h, int l, int *t[], int i, int j)
+int hasmine_g(Game *g, int i, int j)
 {
-
-    return hasmine(h, l, t, i - 1, j - 1) + hasmine(h, l, t, i - 1, j) + hasmine(h, l, t, i - 1, j + 1) + hasmine(h, l, t, i, j - 1) + hasmine(h, l, t, i, j + 1) + hasmine(h, l, t, i + 1, j - 1) + hasmine(h, l, t, i + 1, j) + hasmine(h, l, t, i + 1, j + 1);
+    return hasmine_t(g->H, g->L, g->t, i, j);
 }
 
-// Version 1
-/*
-void print_terrain(int h, int *t[],int l){
-    int c;
-    int bb=0;
-    for(int i=0;i < h && !bb; i++) for(int j=0;j < l  && !bb; j++) if (t[i][j]==5) bb=1;
-    for(int i=0;i < h; i++){
-    for(int j=0;j < l ; j++) {
-        if (bb && (t[i][j] & 1)) {
-            c=boom;
-
-    }
-        else
-        switch(t[i][j]){
-            case 0: c = square; break;
-            case 2: case 3: c=flag; break;
-            case 4: c= blank; break;
-            case 1: c=mine; break;
-        }
-        printf("%c",c);
-        }
-    printf("\n");
-    }
+int nbmines_t(int h, int l, int *t[], int i, int j)
+{
+    return hasmine_t(h, l, t, i - 1, j - 1) + hasmine_t(h, l, t, i - 1, j) + hasmine_t(h, l, t, i - 1, j + 1) + hasmine_t(h, l, t, i, j - 1) + hasmine_t(h, l, t, i, j + 1) + hasmine_t(h, l, t, i + 1, j - 1) + hasmine_t(h, l, t, i + 1, j) + hasmine_t(h, l, t, i + 1, j + 1);
 }
-*/
 
-// version 2
+int nbmines_g(Game *g, int i, int j)
+{
+    return nbmines_t(g->H, g->L, g->t, i, j);
+}
 
-void fprint_terrain(FILE *f, int h, int *t[], int l)
+// impression de la matrice de jeu dans un fichier
+
+void fprint_t(FILE *f, int h, int *t[], int l)
 {
     int c;
     int bb = 0;
@@ -154,29 +117,68 @@ void fprint_terrain(FILE *f, int h, int *t[], int l)
         fprintf(f, "\n");
     }
 }
-void print_terrain(int h, int *t[], int l)
+
+// affichage de la matrice de jeu sur stdout
+void print_t(int h, int *t[], int l)
 {
-    fprint_terrain(stdout, h, t, l);
+    fprint_t(stdout, h, t, l);
 }
 
 void saveGame(FILE *f, Game *g)
 {
     fprintf(f, "%d %d %d\n", g->H, g->L, g->M);
-    for (int i = 0; i < g->H; i++)
-    {
-        for (int j = 0; j < g->L; j++)
-            fprintf(f, "%d ", g->t[i][j]);
-        fprintf(f, "\n");
-    }
+    fprint_t(f, g->H, g->t, g->L);
 }
 
-void save(FILE *f, int **r, int H, int L, int M)
+void printGame(Game *g)
+{
+    saveGame(stdout, g);
+}
+
+// sauvegarde dans un fichier
+void save_t(FILE *f, int **t, int H, int L, int M)
 {
     fprintf(f, "%d %d %d\n", H, L, M);
-    fprint_terrain(f, H, r, L);
+    fprint_t(f, H, t, L);
 }
 
-void createGame(Game *g, int H, int L, int M)
+int **alloc_t(int H, int L)
+{ // calloc inits memory with zeros
+    int **t = calloc(1, H * sizeof(int *));
+    for (int i = 0; i < H; i++)
+    {
+        t[i] = calloc(1, L * sizeof(int));
+    }
+    return t;
+}
+
+// alloc and create a new terrain
+int **random_t(int H, int L, int M)
+{
+    // alloc
+    int **t = alloc_t(H, L);
+    // random mines (M)
+    for (int i = 0; i < M; i++)
+    {
+        int h, l;
+        do
+        {
+            h = rand() % H;
+            l = rand() % L;
+        } while (t[h][l] == 9);
+        t[h][l] = 9;
+    }
+    return t;
+}
+
+Game *randomGame(int H, int L, int M)
+{
+    Game *g = mallocGame(H, L, M);
+    g->t = random_t(H, L, M);
+    return g;
+}
+
+void restartGame(Game *g)
 {
     int i, j;
     for (i = 0; i < g->H; i++)
@@ -192,13 +194,12 @@ void createGame(Game *g, int H, int L, int M)
         } while (g->t[h][l] == 9);
         g->t[h][l] = 9;
     }
-
 }
 
 int P(int **t, int H, int L, int i, int j)
 {
     // case découverte pas d'action
-    if (t[i][j] > 0 && t[i][j] < 9)
+    if (t[i][j] > 0 && t[i][j] < 9 || t[i][j] == -11)
         return 0;
     // case avec une mine
     if (t[i][j] == 9)
@@ -210,7 +211,7 @@ int P(int **t, int H, int L, int i, int j)
     if (t[i][j] < -8) // -9 ou -10
         return 0;
     // case pas découverte et pas de drapeau
-    t[i][j] = nbmines(H, L, t, i, j);
+    t[i][j] = nbmines_t(H, L, t, i, j);
     if (t[i][j] == 0)
         t[i][j] = -11;
     return 0;
@@ -229,7 +230,7 @@ void D(int **t, int H, int L, int i, int j)
         t[i][j] = 9;
         return;
     }
-    // retirer un drapeau
+    // toggle un drapeau
     if (t[i][j] == 0)
     {
         t[i][j] = -10;
@@ -243,19 +244,30 @@ void D(int **t, int H, int L, int i, int j)
     // sinon pas d'effet sur le terrain
 }
 
-void PG(Game *g, int i, int j)
+int PG(Game *g, int i, int j)
 { // click gauche sur la case i,j
-    P(g->t, g->H, g->L, i, j);
+    return P(g->t, g->H, g->L, i, j);
 }
 
-void playGame(Game *p)
+// return if the game is over (1) or not (0)
+int playGame(Game *p)
 {
     int i, j;
-    printf("i j ? ");
-    scanf("%d %d", &i, &j);
-    PG(p, i, j);
+    int formats = 0;
+    do
+    {
+        printf("i j ? ");
+        scanf("%d %d", &i, &j);
+        if (formats != 2)
+        {
+            printf("Erreur de d'entree, veuillez reessayer");
+        }
+    } while (formats != 2);
+
+    return PG(p, i, j);
 }
 
+// affiche le terrain après explosion
 void printEndGame(Game *g)
 {
     for (int i = 0; i < g->H; i++)
@@ -267,27 +279,125 @@ void printEndGame(Game *g)
             else if (g->t[i][j] == -9)
                 printf("%c", 'O');
             else
-                printf("%c", nbmines(g->H, g->L, g->t, i, j) + '0');
+                printf("%c", nbmines_g(g, i, j) + '0');
+        }
+        printf("\n");
+    }
+}
+void printEnd_t(int H, int L, int **t)
+{
+    for (int i = 0; i < H; i++)
+    {
+        for (int j = 0; j < L; j++)
+        {
+            if (t[i][j] == 9)
+                printf("%c", 'X');
+            else if (t[i][j] == -9)
+                printf("%c", 'O');
+            else
+                printf("%c", nbmines_t(H, L, t, i, j) + '0');
         }
         printf("\n");
     }
 }
 
-// int main(int argc, char *argv[])
-// {
-//     FILE *f = fopen("go.ga", "r");
-//     Game *g = mallocGame(10, 10, 10);
-//     // readGame(f, g);
-//     createGame(g, 10, 10, 10);
-//     while (!g->termine)
-//     {
-//         // printEndGame(g);
-//         printf("\n");
-//         playGame(g);
-//         saveGame(stdout, g);
-//     }
-//     saveGame(f, g);
-//     freeGame(g);
-//     fclose(f);
-//     return 0;
-// }
+int nbdrapeau(int H, int L, int **t)
+{
+    int i, j, n = 0;
+    for (i = 0; i < H; i++)
+        for (j = 0; j < L; j++)
+            if (t[i][j] == -9 || t[i][j] == -10)
+                n++;
+    return n;
+}
+int verif_t(int H, int L, int M, int **t)
+{
+    int i, j;
+    if (nbdrapeau(H, L, t) != M)
+        return 0;
+
+    for (i = 0; i < H; i++)
+        for (j = 0; j < L; j++)
+            if (t[i][j] == 9)
+                return 1;
+    return 0;
+}
+
+int verifGame(Game *g)
+{
+    int i, j;
+    if (nbdrapeau(g->H, g->L, g->t) != g->M)
+        return 0;
+    for (i = 0; i < g->H; i++)
+        for (j = 0; j < g->L; j++)
+            if (g->t[i][j] == 9)
+                return 1; // boom mine sans drapeau
+    return 0;
+}
+
+// return if the game is over (1) or not (0)
+int play_t(int H, int L, int **t)
+{
+    int i, j;
+    int formats = 0;
+    do
+    {
+        printf("i j ? ");
+        formats = scanf("%d %d", &i, &j);
+        if (formats != 2)
+        {
+            printf("Erreur de d'entree, veuillez reessayer");
+        }
+    } while (formats != 2);
+
+    return P(t, H, L, i, j);
+}
+
+void v_t()
+{
+    int H = 10, L = 10, M = 20;
+    int **t;
+    t = random_t(H, L, M);
+    print_t(H, t, L);
+    while (!verif_t(H, L, M, t))
+    {
+        if (play_t(H, L, t))
+        {
+            printEnd_t(H, L, t);
+            printf("BOOM !!\n");
+        }
+        else
+            print_t(H, t, L);
+    }
+}
+
+void vgame()
+{
+    int terminer = 0; // pas fini
+    int victoire = 0; // pas encore gagné
+    Game *g = randomGame(10, 10, 10);
+    printGame(g);
+
+    while (!terminer)
+    {
+        terminer = playGame(g);
+        // option
+        // si le nombre de drapeau est égal au nombre de mines
+        // verifier que les drapeaux sont bien placés
+        // si c'est le cas, gagner la partie !
+        if (verifGame(g))
+        {
+            terminer = 1;
+            victoire = 1;
+        }
+        printGame(g);
+    }
+    printEndGame(g);
+}
+
+int main()
+{
+    // vgame();
+    v_t();
+    return 0;
+}
