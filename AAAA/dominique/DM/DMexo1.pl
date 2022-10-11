@@ -24,25 +24,14 @@ title= DM - Print terrain
 tag=DM
 
 text==#|markdown|
-Écrire une function **print_terrain** qui prend 
-- un entier representant la hauteur du terrain 
-- l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers) 
-- la largeur et affiche le terrain en utilisant les caractères suivants :
+Écrire une function **print_t** qui prend  
+- un entier representant la hauteur du terrain  
+- l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers)  
+- un entier la largeur  
+et qui  
+affiche le terrain sous forme d'entiers 
 
-    char square='S'
-    char flag='F';
-    char mine='M';
-    char blank=' ';
-    char boom='B';
 
-L'encodage est le suivant:
-Si la case ne contient rien et qui n’est pas découverte c’est indiqué par un square: 0
-Si la case contient une mine c’est indiqué par un 1 étoile. 
-Si la case contient un drapeau c’est indiqué avec un 2 drapeau.
-Donc 3 indique à la fois une mine et un drapeau. 
-si la case est découverte c’est indiqué par un 4 (Action Pied)
-Dans cet exemple, il y a 4 mines, 2 drapeaux et une case découverte.
-Un 5 indique que le jeux est terminé ... et donc il faut afficher toutes les mines avec boom.
 ==
 
 editor.code==#|c|
