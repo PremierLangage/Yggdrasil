@@ -39,8 +39,12 @@ affiche le terrain sous forme d'entiers par exemple
     0 0 0 0 0 0 0 0 0 0 
 
 ==
-
-editor.code==#|c|
+editor.code==
+void print_t(int ..., int *...[], int ...){
+...
+}
+==
+editorXcode==#|c|
 // impression de la matrice de jeu dans un fichier
 
 void fprint_t(FILE *f, int h, int *t[], int l)
