@@ -16,7 +16,11 @@ text==#|markdown|
 - un entier i  
 - un entier j  
 et qui retourne le nombre de mines sur les 8 cases adjacente de la case de coordonées i,j
-affiche le terrain sous forme d'entiers par exemple 
+avec le terrain suivant on a  
+nbmines(...,0,1)-> 1  
+nbmines(...,1,1)-> 2  
+nbmines(...,2,2)-> 1  
+nbmines(...,0,2)-> 1 ne pas compter la mine en 0,2
 
     0 0 9 9 0 9 0 0 0 0 
     0 2 0 3 0 0 0 0 0 0 
