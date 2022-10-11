@@ -1,0 +1,20 @@
+
+
+# Fonciton outils
+check_t()
+read_t()
+
+# Version avec H,L,t 
+
+hasmine(i,j)
+nbmines(i,j)  DR 
+print_terrain()  DR
+
+verif_terrain() // endofgame()  
+P(i,j)
+D(i,j)
+save_terrain() 
+
+# Version avec Game 
+
+
