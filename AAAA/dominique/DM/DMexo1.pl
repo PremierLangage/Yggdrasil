@@ -115,67 +115,66 @@ code_before==#|c|
 #include <string.h>
 #include <math.h>
 
-int readFile(char *filename, int *H, int *L, int *M, int ***r)
+int **read_t(FILE *f, int *H, int *L, int *M)
 {
-    FILE *fp;
-    char c;
     int **t;
-    fp = fopen(filename, "r");
-    if (fp == NULL)
-    {
-        printf("Error opening file %s", filename);
-        exit(1);
-    }
-    if (3 != fscanf(fp, "%d %d %d", H, L, M))
-    {
-        printf("Error reading file %s", filename);
-        exit(1);
-    }
-    fscanf(fp, "%c", &c); // linefeed
-    t = (int **)malloc(*L * *H * sizeof(int *));
+    fscanf(f, "%d %d %d", H, L, M);
+    t = malloc(*H * sizeof(int *));
     for (int i = 0; i < *H; i++)
     {
-        t[i] = (int *)malloc(*L * sizeof(int));
+        t[i] = malloc(*L * sizeof(int));
+    }
+
+    for (int i = 0; i < *H; i++)
+    {
         for (int j = 0; j < *L; j++)
         {
-            // printf("(/%d/%d/)", i, j);
-            if (1 != fscanf(fp, "%c", &c))
-            {
-                fprintf(stderr, "Error reading file %s pos %d %d", filename, i, j);
-                exit(1);
-            }
-            // printf("%d:%c ", j, c);
-            t[i][j] = (int)(c - '0');
-        }
-        c = 0;
-        fscanf(fp, "%c", &c); // line feed
-        // printf("%c", c);
-        if (c != '\n')
-        {
-            if (c == 0)
-            {
-                fprintf(stderr, "Missing linefeed at end of file");
-            }
-            else
-            {
-                fprintf(stderr, "Error reading line feed char=%d \n", (int)c);
-                exit(1);
-            }
+            fscanf(f, "%d", &(t[i][j]));
         }
     }
-    *r = t;
-   return 1; // ok
+    return t;
+}
+
+int **alloc_t(int H, int L)
+{ // calloc inits memory with zeros
+    int **t = calloc(1, H * sizeof(int *));
+    for (int i = 0; i < H; i++)
+    {
+        t[i] = calloc(1, L * sizeof(int));
+    }
+    return t;
+}
+
+// alloc and create a new terrain
+int **random_t(int H, int L, int M)
+{
+    // alloc
+    int **t = alloc_t(H, L);
+    // random mines (M)
+    for (int i = 0; i < M; i++)
+    {
+        int h, l;
+        do
+        {
+            h = rand() % H;
+            l = rand() % L;
+        } while (t[h][l] == 9);
+        t[h][l] = 9;
+    }
+    return t;
 }
 ==
 
 code_after==#|c|
-
+// Idée du test
+// lire un fichier et faire afficher le fichier
+// l'etudiant doit ecrire la fonction print_t
 int main(int argc, char* argv[]){
-    int H,L,M,**t;
-    printf("%s\n",argv[1]);
-    readFile(argv[1],&H,&L,&M,&t);
+    int H=10,L=10,M=10,**t;
+    // printf("%s\n",argv[1]);
+    t= random_t(H,L,M);
 
-    print_terrain(H,t,L);
+    print_t(H,t,L);
   
   return 0;
 }
