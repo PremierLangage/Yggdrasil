@@ -29,8 +29,14 @@ text==#|markdown|
 - l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers)  
 - un entier la largeur  
 et qui  
-affiche le terrain sous forme d'entiers 
+affiche le terrain sous forme d'entiers par exemple 
 
+    0 0 9 9 0 9 0 0 0 0 
+    0 2 0 3 0 0 0 0 0 0 
+    0 1 9 0 0 0 0 0 0 0 
+    0 0 0 0 0 0 0 0 9 9 
+    0 0 0 0 0 0 0 0 9 0 
+    0 0 0 0 0 0 0 0 0 0 
 
 ==
 
@@ -174,14 +180,14 @@ astuces==#|python|
 [
   { "content": """
   Lire l'introduction du pltp."""},
-  { "content": """Les entiers  stockés dans le terrain indiquent:
+  { "content": """Les entiers  stockés dans le terrain indiquent:  
 0 Case non découverte sans mine  
-9 case non découverte avec une mine 
+9 case non découverte avec une mine  
 1 à 8 case découverte sans mine, l'entier indique le nombre de mines des cases avoisinantes, -11 si zéro mines.  
--9 une mine avec un drapeau placé dessus
+-9 une mine avec un drapeau placé dessus  
 -10 une case sans mine avec un drapeau placé dessus.
 """},
-  { "content": """L'instruction `*p = *p * 20;` met à jour la valeur pointée en la remplacant par 20 fois l'ancienne valeur."""}
+  { "content": """Il y a des espaces en fin de ligne."""}
 ]
 ==
 
