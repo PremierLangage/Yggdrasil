@@ -38,6 +38,7 @@ affiche le terrain sous forme d'entiers par exemple
     0 0 0 0 0 0 0 0 9 0 
     0 0 0 0 0 0 0 0 0 0 
 
+rappel: on réalise un https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu_vid%C3%A9o)
 ==
 editor.code==
 void print_t(int ..., int *...[], int ...){
