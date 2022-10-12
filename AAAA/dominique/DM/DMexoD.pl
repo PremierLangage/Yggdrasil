@@ -142,7 +142,7 @@ void fprint_t(FILE *f, int h, int *t[], int l)
 }
 
 // affichage de la matrice de jeu sur stdout
-void print_t(int h, int *t[], int l)
+void print_t(int *t[], int h, int l)
 {
     fprint_t(stdout, h, t, l);
 }
@@ -158,6 +158,11 @@ int main(int argc, char* argv[]){
     t = read_t(f,&H,&L,&M);
 
     Drapeau(H,L,1,2,t);
+    print_t(t, H, L);
+    Drapeau(H,L,2,4,t);
+    print_t(t, H, L);
+    Drapeau(H,L,1,2,t);
+    print_t(t, H, L);
   
   return 0;
 }
