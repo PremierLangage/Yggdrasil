@@ -25,10 +25,10 @@ title= DM - Drapeau
 tag=DM
 
 text==#|markdown|
-Écrire une function **Drapeau** qui prend 
-- deux entiers représenant les dimensions de la grille
-- deux entiers représenant les coordonées du choix
-- la grille
+Écrire une function **Drapeau** qui prend   
+- deux entiers représenant les dimensions de la grille  
+- deux entiers représenant les coordonées du choix  
+- la grille  
 
 et ajoute un drapeau aux coordonées choisit si la case est non découverte, enlève le drapeau si il y a un drapeau, et rien sinon.
 
