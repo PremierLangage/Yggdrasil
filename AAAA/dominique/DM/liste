@@ -11,8 +11,8 @@ nbmines(i,j)  DR
 print_t()  DR
 
 verif_terrain() // endofgame()  
-P(i,j)
-D(i,j)
+P(i,j) //JR
+D(i,j) //JR
 save_terrain() 
 
 # Version avec Game 
