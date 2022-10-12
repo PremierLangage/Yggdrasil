@@ -40,18 +40,18 @@ int hauteur;
 int largeur;  
 int mines;  
 int **terrain;  
-// où terrain est un vecteur (tableau de pointeurs vers des tableaux d’entiers).
-Les entiers  stockés dans le terrain indiquent:
+// où terrain est un vecteur (tableau de pointeurs vers des tableaux d’entiers).  
+Les entiers  stockés dans le terrain indiquent:  
 0 Case non découverte sans mine  
-9 case non découverte avec une mine 
+9 case non découverte avec une mine  
 1 à 8 case découverte sans mine, l'entier indique le nombre de mines des cases avoisinantes, -11 si zéro mines.  
--9 une mine avec un drapeau placé dessus
--10 une case sans mine avec un drapeau placé dessus.
+-9 une mine avec un drapeau placé dessus  
+-10 une case sans mine avec un drapeau placé dessus.  
 
 
-# Utilisation d'une structure 
+# Utilisation d'une structure   
 
-## Modalités de stockage du jeu
+## Modalités de stockage du jeu  
 
 en mémoire ou sur disque d’une partie  
 
