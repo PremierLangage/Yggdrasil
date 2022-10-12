@@ -128,9 +128,6 @@ int **random_t(int H, int L, int M)
 // impression de la matrice de jeu dans un fichier
 void fprint_t(FILE *f, int h, int *t[], int l)
 {
-    int c;
-    int bb = 0;
-
     for (int i = 0; i < h; i++)
     {
         for (int j = 0; j < l; j++)
