@@ -176,7 +176,7 @@ int main(int argc, char* argv[]){
 
 
 checks_args_stdin==#|python|
-[["Test basique", ["jeudedepart.ga"], ""],
+[["Test basique", ["game.ga"], ""],
 ["Test encore ", ["gaga.ga"], ""]
 ]
 ==
