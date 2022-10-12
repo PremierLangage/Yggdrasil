@@ -19,7 +19,7 @@
 
 extends=/ComputerScience/C/template/std_progC17_clang.pl
 
-author=Dominique Revuz
+author=Julien Roupin
 
 title= DM - Drapeau 
 tag=DM
@@ -76,8 +76,8 @@ code_before==#|c|
 #include <math.h>
 
 
-int** read_t(FILE* f, int* H, int* L, int* M)
-{   
+int **read_t(FILE *f, int *H, int *L, int *M)
+{
     int **t;
     fscanf(f, "%d %d %d", H, L, M);
     t = malloc(*H * sizeof(int *));
@@ -90,8 +90,37 @@ int** read_t(FILE* f, int* H, int* L, int* M)
     {
         for (int j = 0; j < *L; j++)
         {
-            fscanf(f, "%d", t[i][j]);
+            fscanf(f, "%d", &(t[i][j]));
         }
+    }
+    return t;
+}
+
+int **alloc_t(int H, int L)
+{ // calloc inits memory with zeros
+    int **t = calloc(1, H * sizeof(int *));
+    for (int i = 0; i < H; i++)
+    {
+        t[i] = calloc(1, L * sizeof(int));
+    }
+    return t;
+}
+
+// alloc and create a new terrain
+int **random_t(int H, int L, int M)
+{
+    // alloc
+    int **t = alloc_t(H, L);
+    // random mines (M)
+    for (int i = 0; i < M; i++)
+    {
+        int h, l;
+        do
+        {
+            h = rand() % H;
+            l = rand() % L;
+        } while (t[h][l] == 9);
+        t[h][l] = 9;
     }
     return t;
 }
