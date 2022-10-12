@@ -162,12 +162,12 @@ checks_args_stdin==#|python|
 ["Test basique 4", ["game.ga"], "9 7"],
 ["Test basique 5", ["game.ga"], "0 0"],
 ["Test basique 5", ["game.ga"], "15 12"],
-["Test supplémentaire 1", ["gaga.ga"], "3 4"],
-["Test supplémentaire 2", ["gaga.ga"], "1 2"],
-["Test supplémentaire 3", ["gaga.ga"], "0 3"],
-["Test supplémentaire 4", ["gaga.ga"], "9 7"],
-["Test supplémentaire 5", ["gaga.ga"], "0 0"],
-["Test supplémentaire 5", ["gaga.ga"], "15 12"],
+["Test supplémentaire 1", ["ex_flag.ga"], "3 4"],
+["Test supplémentaire 2", ["ex_flag.ga"], "1 2"],
+["Test supplémentaire 3", ["ex_flag.ga"], "0 3"],
+["Test supplémentaire 4", ["ex_flag.ga"], "9 7"],
+["Test supplémentaire 5", ["ex_flag.ga"], "0 0"],
+["Test supplémentaire 5", ["ex_flag.ga"], "15 12"],
 ]
 ==
 
