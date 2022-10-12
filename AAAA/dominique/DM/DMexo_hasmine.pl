@@ -182,7 +182,7 @@ astuces==#|python|
 -9 une mine avec un drapeau placé dessus  
 -10 une case sans mine avec un drapeau placé dessus.
 """},
-  { "content": """Il y a des espaces en fin de ligne."""}
+  { "content": """Penser au cas où il y a un drapeau sur la mine."""}
 ]
 ==
 
