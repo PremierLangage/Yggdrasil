@@ -42,6 +42,7 @@ Si une case est pas découverte :
 Si une case est découverte:  
     1 - 8  nombre de mines autour de la case  
     -11 pour 0 mines   
+    10 pour une mine explosée   
 
 ==
 
@@ -62,10 +63,8 @@ solution==#|c|
 
 void Pied(int H, int L, int i, int j, int** t){
     switch(t[i][j]){
-        case -9 : t[i][j] = 9; break;
-        case -10 : t[i][j] = 0; break;
-        case 0 : t[i][j] = -10; break;
-        case 9 : t[i][j] = -9; break;
+        case 9 : t[i][j] = 10; break;
+        case 0 : t[i][j] = 0; break;
         default : break;
     }
 }
@@ -160,11 +159,11 @@ int main(int argc, char* argv[]){
     t = read_t(f,&H,&L,&M);
 
     scanf(" %d %d", &a, &b);
-    Drapeau(H,L,a,b,t);
+    Pied(H,L,a,b,t);
     print_t(t, H, L);
     printf("\n");
     scanf(" %d %d", &a, &b);
-    Drapeau(H,L,a,b,t);
+    Pied(H,L,a,b,t);
     print_t(t, H, L);
   
   return 0;
