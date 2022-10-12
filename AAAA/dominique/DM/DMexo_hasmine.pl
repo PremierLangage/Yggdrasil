@@ -34,23 +34,11 @@ renvoie un 1 si la case en question possède une mine et 0 sinon.
 
 rappel: on réalise un https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu_vid%C3%A9o)
 ==
-editor.code==
+editor.code==#|c|
 void hasmine_t(int ...,  int ..., int *...[], int ..., int ...){
 ...
 }
 ==
-editorXcode==#|c|
-// impression de la matrice de jeu dans un fichier
-int hasmine_t(int h, int l, int *t[], int i, int j)
-{
-    if ((i < 0) || (i > h - 1) || (j < 0) || (j > l - 1))
-        return 0;
-
-    return t[i][j] == 9 || t[i][j] == -9;
-}
-
-==
-
 
 solution==#|c|
 // impression de la matrice de jeu dans un fichier
@@ -125,17 +113,17 @@ int **random_t(int H, int L, int M)
 ==
 
 code_after==#|c|
-// Idée du test
-// lire un fichier et faire afficher le fichier
-// l'etudiant doit ecrire la fonction print_t
-int main(int argc, char* argv[]){
-    int H=10,L=10,M=10,**t;
-    int i_un=0, j_un=0, i_deux=5, j_deux=7;
-    // printf("%s\n",argv[1]);
-    t= random_t(H,L,M);
 
-    hasmine_t(H,L,t,i_un,j_un);
-    hasmine_t(H,L,t,i_deux,j_deux);
+int main(int argc, char* argv[]){
+    int H,L,M,**t, i, j, v;
+    printf("%s\n",argv[1]);
+    FILE* f = fopen(argv[1],"r");
+    t = read_t(f,&H,&L,&M);
+    scanf(" %d %d", &i, &j);
+    print_t(t, H, L);
+    printf("\n");
+    printf("%d",hasmine_t(H,L,t,i,j);
+
   
   return 0;
 }
@@ -148,8 +136,19 @@ int main(int argc, char* argv[]){
 
 
 checks_args_stdin==#|python|
-[["Test basique", ["game.ga"], ""],
-["Test encore ", ["gaga.ga"], ""]
+[
+["Test basique 1", ["jeudedepart.ga"], "1 2 3 4"],
+["Test basique 2", ["jeudedepart.ga"], "1 2 1 2"],
+["Test basique 3", ["jeudedepart.ga"], "0 4 2 2"],
+["Test basique 4", ["jeudedepart.ga"], "0 1 4 3"],
+["Test basique 5", ["jeudedepart.ga"], "0 0 0 0"],
+["Test basique 5", ["jeudedepart.ga"], "0 2 0 2"],
+["Test supplémentaire 1", ["gaga.ga"], "1 2 3 4"],
+["Test supplémentaire 2", ["gaga.ga"], "1 2 1 2"],
+["Test supplémentaire 3", ["gaga.ga"], "0 4 2 2"],
+["Test supplémentaire 4", ["gaga.ga"], "0 1 4 3"],
+["Test supplémentaire 5", ["gaga.ga"], "0 0 0 0"],
+["Test supplémentaire 5", ["gaga.ga"], "0 2 0 2"],
 ]
 ==
 
