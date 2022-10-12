@@ -64,7 +64,7 @@ solution==#|c|
 void Pied(int H, int L, int i, int j, int** t){
     switch(t[i][j]){
         case 9 : t[i][j] = 10; break;
-        case 0 : t[i][j] = 0; break;
+        case 0 : t[i][j] = nbmines; break;
         default : break;
     }
 }
@@ -146,6 +146,11 @@ void fprint_t(FILE *f, int h, int *t[], int l)
 void print_t(int *t[], int h, int l)
 {
     fprint_t(stdout, h, t, l);
+}
+
+int nbmines()
+{
+    return 0;
 }
 
 ==
