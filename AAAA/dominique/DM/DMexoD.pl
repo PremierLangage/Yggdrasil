@@ -163,6 +163,10 @@ int main(int argc, char* argv[]){
     print_t(t, H, L);
     Drapeau(H,L,1,2,t);
     print_t(t, H, L);
+    Drapeau(H,L,3,2,t);
+    print_t(t, H, L);
+    Drapeau(H,L,0,5,t);
+    print_t(t, H, L);
   
   return 0;
 }
