@@ -125,6 +125,27 @@ int **random_t(int H, int L, int M)
     return t;
 }
 
+// impression de la matrice de jeu dans un fichier
+void fprint_t(FILE *f, int h, int *t[], int l)
+{
+    int c;
+    int bb = 0;
+
+    for (int i = 0; i < h; i++)
+    {
+        for (int j = 0; j < l; j++)
+        {
+            fprintf(f, "%d ", t[i][j]);
+        }
+        fprintf(f, "\n");
+    }
+}
+
+// affichage de la matrice de jeu sur stdout
+void print_t(int h, int *t[], int l)
+{
+    fprint_t(stdout, h, t, l);
+}
 
 ==
 
