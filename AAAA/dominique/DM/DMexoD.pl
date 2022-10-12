@@ -155,10 +155,11 @@ int main(int argc, char* argv[]){
     t = read_t(f,&H,&L,&M);
 
     scanf(" %d %d", &a, &b);
-    Drapeau(H,L,1,2,t);
+    Drapeau(H,L,a,b,t);
     print_t(t, H, L);
     printf("\n");
-    Drapeau(H,L,2,4,t);
+    scanf(" %d %d", &a, &b);
+    Drapeau(H,L,a,b,t);
     print_t(t, H, L);
   
   return 0;
