@@ -115,14 +115,14 @@ int **random_t(int H, int L, int M)
 code_after==#|c|
 
 int main(int argc, char* argv[]){
-    int H,L,M,**t, i, j, v;
+    int H,L,M,**t, i, j;
     printf("%s\n",argv[1]);
     FILE* f = fopen(argv[1],"r");
     t = read_t(f,&H,&L,&M);
     scanf(" %d %d", &i, &j);
     print_t(t, H, L);
     printf("\n");
-    printf("%d",hasmine_t(H,L,t,i,j);
+    printf("%d",hasmine_t(H,L,t,i,j));
 
   
   return 0;
