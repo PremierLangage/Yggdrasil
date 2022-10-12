@@ -48,13 +48,8 @@ editor.code==#|c|
 
 
 void Drapeau(int H, int L, int i, int j, int** t){
-    switch(t[i][j]){
-        case -9 : t[i][j] = 9; break;
-        case -10 : t[i][j] = 0; break;
-        case 0 : t[i][j] = -10; break;
-        case 9 : t[i][j] = -9; break;
-        default : break;
-    }
+
+
 }
 
 ==
