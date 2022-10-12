@@ -151,7 +151,7 @@ int main(int argc, char* argv[]){
 
 
 @ jeudedepart.ga [game.ga]
-@ gaga.ga
+@ ex_flag.ga
 
 
 checks_args_stdin==#|python|
