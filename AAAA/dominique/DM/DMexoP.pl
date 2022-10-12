@@ -148,7 +148,7 @@ void print_t(int *t[], int h, int l)
     fprint_t(stdout, h, t, l);
 }
 
-int nbmines()
+int nbmines(int i, int j, int H, int L, int** t)
 {
     return 0;
 }
