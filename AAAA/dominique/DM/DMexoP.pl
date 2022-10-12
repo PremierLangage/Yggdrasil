@@ -31,7 +31,7 @@ text==#|markdown|
 - deux entiers représentant les coordonées du choix   
 - la grille   
 
-et pose le pied aux coordonées choisient si la case est non découverte, et ne fait rien si la case est déjà découverte.   
+et pose le pied aux coordonées choisient si la case est non découverte et sans drapeau, et ne fait rien si la case est déjà découverte ou a un drapeau. 
 
 Pour rappel, le code est le suivant :   
 Si une case est pas découverte :  
@@ -48,7 +48,7 @@ Si une case est découverte:
 editor.code==#|c|
 
 
-void Drapeau(int H, int L, int i, int j, int** t){
+void Pied(int H, int L, int i, int j, int** t){
 
 
 }
@@ -60,7 +60,7 @@ solution==#|c|
 
 
 
-void Drapeau(int H, int L, int i, int j, int** t){
+void Pied(int H, int L, int i, int j, int** t){
     switch(t[i][j]){
         case -9 : t[i][j] = 9; break;
         case -10 : t[i][j] = 0; break;
