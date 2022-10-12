@@ -133,6 +133,7 @@ code_after==#|c|
 int main(int argc, char* argv[]){
     int H, L, M, **t;
     printf("%s\n",argv[1]);
+    FILE* f = fopen(argv[1],"r");
     t = read_t(argv[1],&H,&L,&M);
 
     Drapeau(H,L,1,2,t);
