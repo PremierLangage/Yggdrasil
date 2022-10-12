@@ -64,7 +64,7 @@ solution==#|c|
 void Pied(int H, int L, int i, int j, int** t){
     switch(t[i][j]){
         case 9 : t[i][j] = 10; break;
-        case 0 : t[i][j] = nbmines; break;
+        case 0 : t[i][j] = nbmines(i, j, H, L, t); break;
         default : break;
     }
 }
