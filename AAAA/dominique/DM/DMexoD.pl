@@ -149,20 +149,16 @@ void print_t(int *t[], int h, int l)
 code_after==#|c|
 
 int main(int argc, char* argv[]){
-    int H, L, M, **t;
+    int H, L, M, **t, a, b;
     printf("%s\n",argv[1]);
     FILE* f = fopen(argv[1],"r");
     t = read_t(f,&H,&L,&M);
 
+    scanf(" %d %d", &a, &b);
     Drapeau(H,L,1,2,t);
     print_t(t, H, L);
+    printf("\n");
     Drapeau(H,L,2,4,t);
-    print_t(t, H, L);
-    Drapeau(H,L,1,2,t);
-    print_t(t, H, L);
-    Drapeau(H,L,3,2,t);
-    print_t(t, H, L);
-    Drapeau(H,L,0,5,t);
     print_t(t, H, L);
   
   return 0;
