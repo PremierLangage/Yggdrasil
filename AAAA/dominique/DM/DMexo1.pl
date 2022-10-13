@@ -135,9 +135,11 @@ int **alloc_t(int H, int L)
 }
 
 // alloc and create a new terrain
-int **random_t(int H, int L, int M)
+int **random_t(int H, int L, int M, int seed)
 {
     // alloc
+    if (seed) srand(time(NULL));
+
     int **t = alloc_t(H, L);
     // random mines (M)
     for (int i = 0; i < M; i++)
