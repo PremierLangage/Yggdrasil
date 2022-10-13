@@ -21,7 +21,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 author=Julien Roupin
 
-title= DM - Drapeau 
+title= DM - Drapeau click droit
 tag=DM
 
 text==#|markdown|
