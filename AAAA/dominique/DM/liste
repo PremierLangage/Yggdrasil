@@ -6,14 +6,16 @@ read_t()
 
 # Version avec H,L,t 
 
-hasmine(i,j)
-nbmines(i,j)  DR 
+hasmine_t(i,j) julien
+nbmines_t(i,j)  DR 
 print_t()  DR
 
-verif_terrain() // endofgame()  
-P(i,j) //JR
-D(i,j) //JR
-save_terrain() 
+fin_t() // le nombre de drapeau == nombre de mine + bien placés 
+verif_t()  // récupération d'un fichier de jeu vérification qu'il est correct (légal)
+P_t(i,j)   click gauche 
+Drapeau_t(i,j)   click droit mise d'un drapeau 
+read_t() lecture d'un fichier
+save_t ()  
 
 # Version avec Game 
 
