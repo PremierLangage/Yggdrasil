@@ -6,7 +6,7 @@ complex_form = "Cartesian"
 
 before ==
 x = Symbol('x')
-expr = sin(2x)*sin(3*x)
+expr = sin(2*x)*sin(3*x)
 
 sol = expr.rewrite(sin, exp).rewrite(cos, exp).expand().rewrite(exp, sin).simplify()
 
