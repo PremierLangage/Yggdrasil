@@ -103,7 +103,7 @@ code_before==#|c|
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-
+#include <time.h>
 int **read_t(FILE *f, int *H, int *L, int *M)
 {
     int **t;
