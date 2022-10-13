@@ -173,16 +173,15 @@ checks_args_stdin==#|python|
 
 astuces==#|python|
 [
-  { "content": """
-  Lire l'introduction du pltp."""},
-  { "content": """Les entiers  stockés dans le terrain indiquent:  
+  { "content": """rappel: Les entiers  stockés dans le terrain indiquent:  
 0 Case non découverte sans mine  
 9 case non découverte avec une mine  
 1 à 8 case découverte sans mine, l'entier indique le nombre de mines des cases avoisinantes, -11 si zéro mines.  
 -9 une mine avec un drapeau placé dessus  
 -10 une case sans mine avec un drapeau placé dessus.
 """},
-  { "content": """Penser au cas où il y a un drapeau sur la mine."""}
+  { "content": """Penser au cas où il y a un drapeau sur la mine."""},
+  { "content": """On veut que la fonction renvoie 0 si les coordonnées sont hors du terrain."""}
 ]
 ==
 
