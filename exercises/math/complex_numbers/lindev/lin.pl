@@ -36,5 +36,5 @@ else:
 ==
 
 question ==
-Linéariser l'expression $! {{expr, sol|latex}} !$.
+Linéariser l'expression $! {{ans|latex}} !$.
 ==
