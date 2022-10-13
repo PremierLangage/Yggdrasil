@@ -153,17 +153,16 @@ void print_t(int *t[], int h, int l)
 code_after==#|c|
 
 int main(int argc, char* argv[]){
-    int H, L, M, **t, a, b;
+    int H, L, M, **t, a, b, c, d;
     printf("%s\n",argv[1]);
     FILE* f = fopen(argv[1],"r");
     t = read_t(f,&H,&L,&M);
-
-    scanf(" %d %d", &a, &b);
+    // paranoiac je fait toutes mes lectures sur stdin avant d'appeler la fonction de l'élève.
+    scanf(" %d %d", &a, &b, &c, &d);
     Drapeau(H,L,a,b,t);
     print_t(t, H, L);
     printf("\n");
-    scanf(" %d %d", &a, &b);
-    Drapeau(H,L,a,b,t);
+    Drapeau(H,L,c,d,t);
     print_t(t, H, L);
   
   return 0;
