@@ -30,7 +30,7 @@ except:
     score = -1
     feedback = "La réponse doit être un entier."
 else:
-    if not all([lin_term(f) for f in ans.arg_flat_add()]):
+    if not all([lin_term(f) for f in arg_flat_add(ans)]):
         score = -1
         feedback = "Pas linéarisé."
     elif not equal(ans, sol):
