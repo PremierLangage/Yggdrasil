@@ -25,8 +25,8 @@ tag=DM
 
 text==#|markdown|
 Écrire une function **hasmine_t** qui prend  
-- un entier representant la hauteur du terrain
-- un entier representant la largeur  
+- un entier representant la hauteur du terrain  
+- un entier representant la largeur du terrain  
 - l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers)  
 - deux entiers correspondant aux coordonnées d'une case  
 et qui  
