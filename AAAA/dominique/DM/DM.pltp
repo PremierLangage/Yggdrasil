@@ -77,9 +77,15 @@ Si une case est découverte:
 
 ==
 
-@ DMexo1.pl
+@ DMexo1.pl  # print_t
 
-@ DMexo2.pl
+@ DMexo_hasmine.pl
+
+@ DMexo2.pl # nbmines_t
+
+@ DMexoD.pl # drapeau 
+
+
 
 
 
