@@ -162,7 +162,7 @@ code_after==#|c|
 // l'etudiant doit ecrire la fonction print_t
 int main(int argc, char* argv[]){
     int H=10,L=10,M=10,**t;
-    // printf("%s\n",argv[1]);
+    int seed= ! strcmp(argv[1],"alea");
     t= random_t(H,L,M,0);
 
     print_t(H,t,L);
