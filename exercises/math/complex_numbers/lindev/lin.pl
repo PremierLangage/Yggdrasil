@@ -14,6 +14,9 @@ sol = expr.rewrite(sin, exp).rewrite(cos, exp).expand().rewrite(exp, sin).simpli
 
 evaluator ==
 from latex2sympy import latex2sympy
+from evalsympy import equal
+from sympy import log
+
 
 try:
     ans = latex2sympy(input.get_value())
@@ -21,15 +24,12 @@ except:
     score = -1
     feedback = "La réponse doit être un entier."
 else:
-    if not ans.is_Integer:
+    if ans.func == log:
         score = -1
-        feedback = "La réponse doit être un entier."
-    elif not (a <= ans <= b):
+        feedback = "Pas linéarisé."
+    elif not equal(ans, sol):
         score = 0
-        feedback = f"La réponse doit être comprise entre {a} et {b}."
-    elif not isprime(ans):
-        score = 0
-        feedback = "La réponse doit être un nombre premier."
+        feedback = "Pas égale."
     else:
         score = 100
         feedback = ""
