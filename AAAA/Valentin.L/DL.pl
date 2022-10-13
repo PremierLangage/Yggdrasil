@@ -9,11 +9,11 @@ before ==
 from sympy import series
 var('x')
 
-n = 3
+n = 5
 a=choice([-2,-1,1,2])
 b=choice([-2,-1,1,2])
-alpha=choice([2,3,4])
-p=choice([1,2,3])
+alpha=choice([2,3,4,5])
+p=choice([2,3])
 q=choice([1,2,3])
 
 y= x**p
