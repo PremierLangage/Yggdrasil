@@ -163,10 +163,16 @@ code_after==#|c|
 int main(int argc, char* argv[]){
     int H=10,L=10,M=10,**t;
     // printf("%s\n",argv[1]);
-    t= random_t(H,L,M);
+    t= random_t(H,L,M,0);
 
     print_t(H,t,L);
   
+    t= random_t(H,L,M,1);
+
+    print_t(H,t,L);
+  
+
+
   return 0;
 }
 
