@@ -15,7 +15,7 @@ sol = expr.rewrite(sin, exp).rewrite(cos, exp).expand().rewrite(exp, sin).simpli
 evaluator ==
 from latex2sympy import latex2sympy
 from evalsympy import equal, arg_flat_add
-from sympy import log
+from sympy import Pow
 
 def lin_term(expr):
     if expr.has(Pow):
