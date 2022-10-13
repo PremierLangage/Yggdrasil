@@ -15,20 +15,8 @@ text==#|markdown|
 - un entier la largeur  
 - un entier i  
 - un entier j  
-et qui retourne le nombre de mines sur les 8 cases adjacentes de la case de coordonées i,j
-avec le terrain suivant on a  
-nbmines(...,0,1)-> 1  
-nbmines(...,1,1)-> 2  
-nbmines(...,2,2)-> 1  
-nbmines(...,0,2)-> 1 ne pas compter la mine en 0,2
+et qui réalise un click gauche (test de la présence d'une mine) sur la case de coordonnées i,j
 
+Le terrain est modifié en conséquence. 
 
-    0 0 9 9 0 9 0 0 0 0 
-    0 2 0 3 0 0 0 0 0 0 
-    0 1 9 0 0 0 0 0 0 0 
-    0 0 0 0 0 0 0 0 9 9 
-    0 0 0 0 0 0 0 0 9 0 
-    0 0 0 0 0 0 0 0 0 0 
-
-rappel: on réalise un https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu_vid%C3%A9o)
 ==
