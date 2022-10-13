@@ -12,11 +12,27 @@ sol = expr.rewrite(sin, exp).rewrite(cos, exp).expand().rewrite(exp, sin).simpli
 
 ==
 
-evalparam ==
-from sympy import sympify
-if modulo != 0:
-    modulo = sympify(modulo)
-input.evalparam = {'equality': "", 'modulo': 0, 'checkratsimp': True, 'unauthorized_func': [sp.Pow], 'local_dict': {}}
+evaluator ==
+from latex2sympy import latex2sympy
+
+try:
+    ans = latex2sympy(input.get_value())
+except:
+    score = -1
+    feedback = "La réponse doit être un entier."
+else:
+    if not ans.is_Integer:
+        score = -1
+        feedback = "La réponse doit être un entier."
+    elif not (a <= ans <= b):
+        score = 0
+        feedback = f"La réponse doit être comprise entre {a} et {b}."
+    elif not isprime(ans):
+        score = 0
+        feedback = "La réponse doit être un nombre premier."
+    else:
+        score = 100
+        feedback = ""
 ==
 
 question ==
