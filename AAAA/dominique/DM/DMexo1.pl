@@ -163,14 +163,8 @@ code_after==#|c|
 int main(int argc, char* argv[]){
     int H=10,L=10,M=10,**t;
     int seed= ! strcmp(argv[1],"alea");
-    t= random_t(5,5,5,seed);
-
-    print_t(5,t,5);
-    printf("-----------------------\n");
     t= random_t(H,L,M,seed);
-
     print_t(H,t,L);
-  
 
 
   return 0;
