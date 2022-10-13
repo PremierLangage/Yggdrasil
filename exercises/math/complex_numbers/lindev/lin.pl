@@ -12,6 +12,13 @@ sol = expr.rewrite(sin, exp).rewrite(cos, exp).expand().rewrite(exp, sin).simpli
 
 ==
 
+evalparam ==
+from sympy import sympify
+if modulo != 0:
+    modulo = sympify(modulo)
+input.evalparam = {'equality': "", 'modulo': 0, 'checkratsimp': True, 'unauthorized_func': [sp.Pow], 'local_dict': {}}
+==
+
 question ==
 Linéariser l'expression $! {{expr|latex}} !$.
 ==
