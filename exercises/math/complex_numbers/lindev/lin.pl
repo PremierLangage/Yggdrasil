@@ -1,4 +1,4 @@
-extends = /model/math/expr.pl
+extends = /model/math/input_eval.pl
 
 title = Discriminant d'une équation du second degré
 
