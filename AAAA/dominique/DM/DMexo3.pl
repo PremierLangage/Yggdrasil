@@ -152,13 +152,19 @@ int main(int argc, char* argv[]){
     case 1: printf("Victoire \n"); break;
     case -1: printf("Boom !! \n");
     }
-
   return 0;
 }
-
-
-
 ==
+
+checks_args_stdin==#|python|
+[["Test victoire de peu", ["notvictory.ga"], ""],
+["Test Vraie victoire ", ["rvic"], ""],
+["Test continue ", ["full"],""]
+]
+==
+
+
+
 
 @ notvictory.ga
 
