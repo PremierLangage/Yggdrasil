@@ -28,8 +28,4 @@ prefix ==
 $! {{ h|latex }} = !$
 ==
 
-solution ==
-$! {{ h|latex }} = {{ sol|latex }} + o(x^{{ n|latex }})  \quad [x \rightarrow 0]!$.
-==
-
 latexsettings.order = 'ilex'
