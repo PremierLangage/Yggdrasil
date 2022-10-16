@@ -96,28 +96,54 @@ int **random_t(int H, int L, int M, int seed)
 }
 ==
 
+
+
+solution==
+
+int hasmine_t(int h, int l, int *t[], int i, int j)
+{
+    if ((i < 0) || (i > h - 1) || (j < 0) || (j > l - 1))
+        return 0;
+
+    // mine ou mine sous drapeau
+    return t[i][j] == 9 || t[i][j] == -9;
+}
+int hasmine_g(Game *g, int i, int j)
+{
+    return hasmine_t(g->H, g->L, g->t, i, j);
+}
+
+int nbmines_t(int h, int l, int *t[], int i, int j)
+{
+    return hasmine_t(h, l, t, i - 1, j - 1) + hasmine_t(h, l, t, i - 1, j) + hasmine_t(h, l, t, i - 1, j + 1) + hasmine_t(h, l, t, i, j - 1) + hasmine_t(h, l, t, i, j + 1) + hasmine_t(h, l, t, i + 1, j - 1) + hasmine_t(h, l, t, i + 1, j) + hasmine_t(h, l, t, i + 1, j + 1);
+}
+
+int nbmines_g(Game *g, int i, int j)
+{
+    return nbmines_t(g->H, g->L, g->t, i, j);
+}
+
+==
+
+
 code_after==#|c|
 // Idée du test
 // lire un fichier et faire afficher le fichier
 // l'etudiant doit ecrire la fonction print_t
 int main(int argc, char* argv[]){
     int H=10,L=10,M=10,**t;
+    int to[]={ 2,2, 1,2, 0,3, 2,0, 5,5, 0,0, 9,9}; 
+    int i=0;
     int seed= ! strcmp(argv[1],"alea");
     t= random_t(H,L,M,seed);
-    print_t(H,t,L);
-
+    for (i=0; i < 14; i+=2) 
+        print("%d %d -> %d \n",to[i],to[i+1], nbmines_t(H,L,t,to[i],to[i+1]));
 
   return 0;
 }
 
 ==
 
-
-solution==
-
-
-
-==
 
 
 checks_args_stdin==#|python|
