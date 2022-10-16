@@ -134,7 +134,7 @@ int main(int argc, char* argv[]){
     int seed= ! strcmp(argv[1],"dense");
     if (seed==1) M *= 3;
     t= random_t(H,L,M,seed);
-    if (! strcmp(argv[1],"dense"))
+    if (! strcmp(argv[1],"full"))
         for(int j=0;j <H;j++)
             for(int i=0;i <L;i++)
                 t[i][j]= 9;
