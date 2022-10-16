@@ -11,7 +11,8 @@ var('x')
 
 n = 4
 
-h=x**(1/(-1+ln(x))
+h=x**(1/(ln(x)-1))
+
 sol = series(h, x, 1, n+1).removeO()
 ==
 
