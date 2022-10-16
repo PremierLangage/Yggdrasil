@@ -3,27 +3,15 @@
 # Maj : 13/10/2022
 
 title = Calculs de développements limités
-
 extends = /model/math/expr.pl
 
 before ==
 from sympy import series
 var('x')
 
-n = 3
-a=choice([-2,-1,1,2])
-b=choice([-2,-1,1,2])
-alpha=choice([2,3,4])
-p=choice([1,2,3])
-q=choice([1,2,3])
+n = 4
 
-y= x**p
-z= x**q
-
-f = choice([1/(1+y), exp(y), cos(y), sin(y), ln(1+y),(1+y)^alpha])
-g = choice([1/(1+z), exp(z), cos(z), sin(z), ln(1+z),(1+z)^alpha])])
-
-h=a*f+b*g
+h=sqrt((1+sqrt(1+x**2)))
 
 sol = series(h, x, 0, n+1).removeO()
 ==
