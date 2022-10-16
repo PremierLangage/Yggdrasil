@@ -4,7 +4,7 @@ extends=DMexo1.pl
 
 
 
-title= DM - Print terrain 
+title= DM - nombre de mines avoisinantes
 tag=DM
 
 text==#|markdown|
@@ -23,12 +23,12 @@ nbmines(...,2,2)-> 1
 nbmines(...,0,2)-> 1 ne pas compter la mine en 0,2
 
 
-    0 0 9 9 0 9 0 0 0 0 
-    0 2 0 3 0 0 0 0 0 0 
-    0 1 9 0 0 0 0 0 0 0 
-    0 0 0 0 0 0 0 0 9 9 
-    0 0 0 0 0 0 0 0 9 0 
-    0 0 0 0 0 0 0 0 0 0 
+    0 0 9 9 0 9 0 0 0 0  
+    0 2 0 3 0 0 0 0 0 0  
+    0 1 9 0 0 0 0 0 0 0  
+    0 0 0 0 0 0 0 0 9 9  
+    0 0 0 0 0 0 0 0 9 0  
+    0 0 0 0 0 0 0 0 0 0  
 
 rappel: on réalise un https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu_vid%C3%A9o)
 
@@ -147,5 +147,9 @@ checks_args_stdin==#|python|
 [["Test basique", ["not alea"], ""],
 ["Test encore ", ["alea"], ""]
 ]
+==
+
+astuces==#|python|
+[]
 ==
 
