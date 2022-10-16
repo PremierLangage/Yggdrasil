@@ -131,7 +131,7 @@ int main(int argc, char* argv[]){
     int H=10,L=10,M=30,**t;
     int to[]={ 2,2, 1,2, 0,3, 2,0, 5,5, 0,0, 9,9}; 
     int i=0;
-    int seed= ! strcmp(argv[1],"alea");
+    int seed= ! strcmp(argv[1],"dense");
     if (seed==1) M *= 3;
     t= random_t(H,L,M,seed);
     for (i=0; i < 14; i+=2) 
@@ -145,8 +145,8 @@ int main(int argc, char* argv[]){
 
 
 checks_args_stdin==#|python|
-[["Test basique", ["not alea"], ""],
-["Test encore ", ["alea"], ""]
+[["Test plus toto vide", ["clairseme"], ""],
+["Test dense ", ["dense"], ""]
 ]
 ==
 
