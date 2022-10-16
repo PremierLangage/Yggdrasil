@@ -135,7 +135,7 @@ int main(int argc, char* argv[]){
     if (seed==1) M *= 3;
     t= random_t(H,L,M,seed);
     if (! strcmp(argv[1],"dense"))
-        for(int j=0;j <H)
+        for(int j=0;j <H;j++)
             for(int i=0;i <L;i++)
                 t[i][j]= 9;
     for (i=0; i < 14; i+=2) 
