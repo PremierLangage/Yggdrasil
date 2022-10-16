@@ -134,6 +134,10 @@ int main(int argc, char* argv[]){
     int seed= ! strcmp(argv[1],"dense");
     if (seed==1) M *= 3;
     t= random_t(H,L,M,seed);
+    if (! strcmp(argv[1],"dense"))
+        for(int j=0;j <H)
+            for(int i=0;i <L;i++)
+                t[i][j]= 9;
     for (i=0; i < 14; i+=2) 
         printf("%d %d -> %d \n",to[i],to[i+1], nbmines_t(H,L,t,to[i],to[i+1]));
 
