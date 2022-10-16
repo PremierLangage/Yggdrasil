@@ -32,12 +32,7 @@ int victoire(int **t,int m, int h, int l){
 }
 ==
 
-solution==
-int nbdrapeaux(int h, int l, int **t){
-
-return n;
-}   
-
+solution== 
 int victoire(int **t,int m, int h, int l){
     int n=0;
     int bad=0;
@@ -54,14 +49,89 @@ int victoire(int **t,int m, int h, int l){
 }
 ==
 
+code_before==
+int **alloc_t(int H, int L)
+{ // calloc inits memory with zeros
+    int **t = calloc(1, H * sizeof(int *));
+    for (int i = 0; i < H; i++)
+    {
+        t[i] = calloc(1, L * sizeof(int));
+    }
+    return t;
+}
+
+// alloc and create a new terrain
+int **random_victory(int H, int L, int M)
+{
+    // alloc
+    int **t = alloc_t(H, L);
+    // random mines (M)
+    for (int i = 0; i < M; i++)
+    {
+        int h, l;
+        do
+        {
+            h = rand() % H;
+            l = rand() % L;
+        } while (t[h][l] == -9);
+        t[h][l] = -9;
+    }
+    return t;
+}
+
+int **read_t(FILE *f, int *H, int *L, int *M)
+{
+    int **t;
+    fscanf(f, "%d %d %d", H, L, M);
+    t = malloc(*H * sizeof(int *));
+    for (int i = 0; i < *H; i++)
+    {
+        t[i] = malloc(*L * sizeof(int));
+    }
+
+    for (int i = 0; i < *H; i++)
+    {
+        for (int j = 0; j < *L; j++)
+        {
+            fscanf(f, "%d", &(t[i][j]));
+        }
+    }
+    return t;
+}
 
 
-code_after==
+
 
 
 ==
 
+code_after==
+int main(int argc, char* argv[]){
+    int H=10,L=10,M=30,**t;
 
+    int i=0;
+    if (! strcmp(argv[1],"notvictory.ga"))
+    {
+    t =read_t(fopen("notvictory.ga","r"), 
+    if (! strcmp(argv[1],"rvic"))
+    {
+    
+    t= random_victory(H,L,M,seed);
+    if (! strcmp(argv[1],"full"))
+        for(int j=0;j <H;j++)
+            for(int i=0;i <L;i++)
+                t[j][i]= 9;
+    for (i=0; i < 14; i+=2) 
+        printf("%d %d -> %d \n",to[i],to[i+1], nbmines_t(H,L,t,to[i],to[i+1]));
+
+  return 0;
+}
+
+
+
+==
+
+@ notvictory.ga
 
 astuces==#|python|
 []
