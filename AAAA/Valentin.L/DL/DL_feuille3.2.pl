@@ -20,7 +20,7 @@ Ecrire le développement limité de $! {{ h|latex }} !$ autour de $! +\infty !$ 
 ==
 
 embed ==
-# + o(x^{{ n|latex }}) \quad [x \rightarrow 0]
+# + o((1/x)^{{ n|latex }}) \quad [x \rightarrow +\infty]
 ==
 
 prefix ==
@@ -28,7 +28,7 @@ $! {{ h|latex }} = !$
 ==
 
 solution ==
-$! {{ h|latex }} = {{ sol|latex }} + o(x^{{ n|latex }})  \quad [x \rightarrow 0]!$.
+$! {{ h|latex }} = {{ sol|latex }} + o((1/x)^{{ n|latex }})  \quad [x \rightarrow \infty]!$.
 ==
 
 latexsettings.order = 'ilex'
