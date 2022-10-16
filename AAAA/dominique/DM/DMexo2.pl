@@ -137,7 +137,7 @@ int main(int argc, char* argv[]){
     int seed= ! strcmp(argv[1],"alea");
     t= random_t(H,L,M,seed);
     for (i=0; i < 14; i+=2) 
-        print("%d %d -> %d \n",to[i],to[i+1], nbmines_t(H,L,t,to[i],to[i+1]));
+        printf("%d %d -> %d \n",to[i],to[i+1], nbmines_t(H,L,t,to[i],to[i+1]));
 
   return 0;
 }
