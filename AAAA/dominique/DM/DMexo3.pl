@@ -116,7 +116,7 @@ int **read_t(FILE *f, int *H, int *L, int *M)
 code_after==
 int main(int argc, char* argv[]){
     int H=10,L=10,M=30,**t;
-
+    int seed=1;
     int v=0;
     if (! strcmp(argv[1],"notvictory.ga"))
     {
