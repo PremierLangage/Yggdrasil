@@ -72,8 +72,10 @@ Si une case est pas découverte :
 
 Si une case est découverte:  
 
-    1 - 8  nombre de mines autour de la case  
-    -11 pour 0 mines   
+    de 1 à 8 pour le nombre de mines autour de la case  
+    -11 pour 0 mines (zéro était déjà pris).
+
+D'autres exercices seront ajoutés au fur et à mesure.
 
 
 
