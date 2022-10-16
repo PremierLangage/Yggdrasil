@@ -167,11 +167,11 @@ int main(int argc, char* argv[]){
     t = read_t(f,&H,&L,&M);
 
     scanf(" %d %d", &a, &b);
-    Pied(H,L,a,b,t);
+    if (Pied(H,L,a,b,t)) print("\nBoom!\n");
     print_t(t, H, L);
     printf("\n");
     scanf(" %d %d", &a, &b);
-    Pied(H,L,a,b,t);
+    if (Pied(H,L,a,b,t)) print("\nBoom!\n");
     print_t(t, H, L);
   
   return 0;
