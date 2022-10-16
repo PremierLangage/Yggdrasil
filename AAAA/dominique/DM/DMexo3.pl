@@ -25,6 +25,37 @@ sinon retourne 0 dans les autres cas.
 ==
 
 
+editor.code==
+int victoire(int **t,int m, int h, int l){
+
+
+}
+==
+
+solution==
+int nbdrapeaux(int h, int l, int **t){
+
+return n;
+}   
+
+int victoire(int **t,int m, int h, int l){
+    int n=0;
+    int bad=0;
+    for(int i=0; i < h; i++)
+        for(int j=0; j <l ; j++){
+            if (t[i][j]== -9 )
+                n++; 
+            if ( t[i][j]== -10)
+                {n++; bad++; }
+    if (nbdrapeaux(h,l,t) != m) return 0;
+    if (bad) return -1;
+    return 1;
+
+}
+==
+
+
+
 code_after==
 
 
