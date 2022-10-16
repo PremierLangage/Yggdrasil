@@ -38,7 +38,7 @@ int victoire(int **t,int m, int h, int l){
                 {n++; bad++; }
 
             }
-   // print("%d %d %d",m,n,bad);
+   print("%d %d %d",m,n,bad);
     if (n != m) return 0;
     if (bad) return -1;
     return 1;
