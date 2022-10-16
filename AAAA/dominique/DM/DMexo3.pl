@@ -28,7 +28,7 @@ sinon retourne 0 dans les autres cas.
 editor.code==
 int victoire(int **t,int m, int h, int l){
 
-
+return 1;
 }
 ==
 
