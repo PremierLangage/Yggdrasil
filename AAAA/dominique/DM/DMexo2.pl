@@ -137,7 +137,7 @@ int main(int argc, char* argv[]){
     if (! strcmp(argv[1],"full"))
         for(int j=0;j <H;j++)
             for(int i=0;i <L;i++)
-                t[i][j]= 9;
+                t[j][i]= 9;
     for (i=0; i < 14; i+=2) 
         printf("%d %d -> %d \n",to[i],to[i+1], nbmines_t(H,L,t,to[i],to[i+1]));
 
