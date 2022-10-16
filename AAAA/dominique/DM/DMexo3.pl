@@ -112,11 +112,12 @@ int main(int argc, char* argv[]){
     int i=0;
     if (! strcmp(argv[1],"notvictory.ga"))
     {
-    t =read_t(fopen("notvictory.ga","r"), 
+    t =read_t(fopen("notvictory.ga","r"), &H, &L, &M);
+    }
     if (! strcmp(argv[1],"rvic"))
     {
-    
     t= random_victory(H,L,M,seed);
+    }
     if (! strcmp(argv[1],"full"))
         for(int j=0;j <H;j++)
             for(int i=0;i <L;i++)
