@@ -21,7 +21,7 @@ Ecrire le développement limité de $! {{ h|latex }} !$ autour de $! 1 !$ à l'o
 ==
 
 embed ==
-# + o(x^{{ n|latex }}) \quad [x \rightarrow 1]
+# + o((x-1)^{{ n|latex }}) \quad [x \rightarrow 1]
 ==
 
 prefix ==
@@ -29,7 +29,7 @@ $! {{ h|latex }} = !$
 ==
 
 solution ==
-$! {{ h|latex }} = {{ sol|latex }} + o(x^{{ n|latex }})  \quad [x \rightarrow 1]!$.
+$! {{ h|latex }} = {{ sol|latex }} + o((x-1)^{{ n|latex }})  \quad [x \rightarrow 1]!$.
 ==
 
 latexsettings.order = 'ilex'
