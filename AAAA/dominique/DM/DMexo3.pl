@@ -135,7 +135,7 @@ int main(int argc, char* argv[]){
     v  = victory(H,L,M,t);
     switch(v){
     case 0:  printf("Dud\n"); break;
-    case 1: print("Victoire \n"); break;
+    case 1: printf("Victoire \n"); break;
     case -1: printf("Boom !! \n");
     }
 
