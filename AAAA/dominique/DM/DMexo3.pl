@@ -4,19 +4,28 @@ extends=DMexo1.pl
 
 
 
-title= DM - Print terrain 
-tag=DM
+title= Test de fin de partie 
 
-text==#|markdown|
-Écrire une function **play_t** qui prend  
 
-- l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers)  
-- un entier representant la hauteur du terrain  
-- un entier la largeur  
-- un entier i  
-- un entier j  
-et qui réalise un click gauche (test de la présence d'une mine) sur la case de coordonnées i,j
+text== 
 
-Le terrain est modifié en conséquence. 
+Quand le nombre de drapeau est égale au nombre de mines. 
+Et que les drapeaux sont biens placés le joueur à gagné !
+
+La fonction **victoire** prend en parametre :
+- la grille  
+- un entier avec le nombre de mines
+- deux entiers représentant les dimensions de la grille  
+
+et retourne 
+oui(1) si la grille contient une configuration de victoire,  
+si par contre le nombre de drapeaux est égal aux nombre de mines mais qu'un drapeau est mal placé retourne (-1) BOOM !!  
+sinon retourne 0 dans les autres cas.
+
+==
+
+
+code_after==
+
 
 ==
