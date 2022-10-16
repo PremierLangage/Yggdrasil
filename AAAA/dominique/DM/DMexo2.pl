@@ -35,6 +35,11 @@ rappel: on réalise un https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu
 Remarque: On peut utiliser la fonction hasmine_t ....
 ==
 
+editor.code==
+int nbmines_t(int h, int l, int *t[], int i, int j){
+return 1;
+}
+==
 
 
 code_before==#|c|
@@ -147,7 +152,7 @@ int main(int argc, char* argv[]){
 
 
 checks_args_stdin==#|python|
-[["Test basique", ["not alea"], "1 2"],
+[["Test basique", ["not alea",""],
 ["Test encore ", ["alea"], ""]
 ]
 ==
