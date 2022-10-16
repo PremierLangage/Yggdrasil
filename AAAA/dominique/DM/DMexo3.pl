@@ -47,7 +47,7 @@ int victoire(int **t,int m, int h, int l){
                 n++; 
             if ( t[i][j]== -10)
                 {n++; bad++; }
-    if (nbdrapeaux(h,l,t) != m) return 0;
+    if (n != m) return 0;
     if (bad) return -1;
     return 1;
 
