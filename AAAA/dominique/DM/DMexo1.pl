@@ -192,7 +192,7 @@ astuces==#|python|
 -9 une mine avec un drapeau placé dessus  
 -10 une case sans mine avec un drapeau placé dessus.
 """},
-  { "content": """Il y a des espaces en fin de ligne."""}
+  { "content": """Il y a des espaces en fin de ligne dans le format de fichier."""}
 ]
 ==
 
