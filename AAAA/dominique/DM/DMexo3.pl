@@ -17,7 +17,7 @@ La fonction **victoire** prend en parametre :
 - un entier avec le nombre de mines  
 - deux entiers représentant les dimensions de la grille  
  
- 
+
 et retourne  
 oui(1) si la grille contient une configuration de victoire,  
 si par contre le nombre de drapeaux est égal aux nombre de mines mais qu'un drapeau est mal placé retourne (-1) BOOM !!  
@@ -51,6 +51,13 @@ int victoire(int **t,int m, int h, int l){
 ==
 
 code_before==
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include <time.h>
+
+
 int **alloc_t(int H, int L)
 { // calloc inits memory with zeros
     int **t = calloc(1, H * sizeof(int *));
