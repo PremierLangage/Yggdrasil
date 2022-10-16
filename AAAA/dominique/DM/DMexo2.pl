@@ -132,6 +132,7 @@ int main(int argc, char* argv[]){
     int to[]={ 2,2, 1,2, 0,3, 2,0, 5,5, 0,0, 9,9}; 
     int i=0;
     int seed= ! strcmp(argv[1],"alea");
+    if (seed==1) m *= 2;
     t= random_t(H,L,M,seed);
     for (i=0; i < 14; i+=2) 
         printf("%d %d -> %d \n",to[i],to[i+1], nbmines_t(H,L,t,to[i],to[i+1]));
