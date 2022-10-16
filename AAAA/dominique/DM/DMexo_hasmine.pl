@@ -29,8 +29,10 @@ text==#|markdown|
 - un entier representant la largeur du terrain  
 - l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers)  
 - deux entiers correspondant aux coordonnées d'une case  
-et qui  
-renvoie 1 si les coordonées correspondent à une case avec une mine et 0 si c'est une case sans mines ou si les coordonnées sont en dehors du terrain.  
+et qui renvoie  
+
+1 si les coordonées correspondent à une case avec une mine  
+0 si c'est une case sans mines ou si les coordonnées sont en dehors du terrain.  
 
 rappel: on réalise un https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu_vid%C3%A9o)
 ==
