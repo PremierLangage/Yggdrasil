@@ -61,7 +61,7 @@ int **alloc_t(int H, int L)
 }
 
 // alloc and create a new terrain
-int **random_victory(int H, int L, int M)
+int **random_victory(int H, int L, int M, int val)
 {
     // alloc
     int **t = alloc_t(H, L);
@@ -73,8 +73,8 @@ int **random_victory(int H, int L, int M)
         {
             h = rand() % H;
             l = rand() % L;
-        } while (t[h][l] == -9);
-        t[h][l] = -9;
+        } while (t[h][l] == val);
+        t[h][l] = val;
     }
     return t;
 }
@@ -114,11 +114,13 @@ int main(int argc, char* argv[]){
     {
     t =read_t(fopen("notvictory.ga","r"), &H, &L, &M);
     }
-    if (! strcmp(argv[1],"rvic"))
+    else if (! strcmp(argv[1],"rvic"))
     {
     t= random_victory(H,L,M,seed);
     }
-    
+    else {
+    t =random
+    }
     victory(H,L,M,t);
     switch(v){
     case 0:  printf("Dud\n"); break;
