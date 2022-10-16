@@ -109,7 +109,7 @@ code_after==
 int main(int argc, char* argv[]){
     int H=10,L=10,M=30,**t;
 
-    int i=0;
+    int v=0;
     if (! strcmp(argv[1],"notvictory.ga"))
     {
     t =read_t(fopen("notvictory.ga","r"), &H, &L, &M);
@@ -118,12 +118,13 @@ int main(int argc, char* argv[]){
     {
     t= random_victory(H,L,M,seed);
     }
-    if (! strcmp(argv[1],"full"))
-        for(int j=0;j <H;j++)
-            for(int i=0;i <L;i++)
-                t[j][i]= 9;
-    for (i=0; i < 14; i+=2) 
-        printf("%d %d -> %d \n",to[i],to[i+1], nbmines_t(H,L,t,to[i],to[i+1]));
+    
+    victory(H,L,M,t);
+    switch(v){
+    case 0:  printf("Dud\n"); break;
+    case 1: print("Victoire \n"); break;
+    case -1: printf("Boom !! \n");
+    }
 
   return 0;
 }
