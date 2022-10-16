@@ -53,7 +53,7 @@ editor.code==#|c|
 
 int Pied(int H, int L, int i, int j, int** t){
 
-
+return 1; // boom 
 }
 
 ==
