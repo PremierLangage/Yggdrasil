@@ -116,10 +116,10 @@ int main(int argc, char* argv[]){
     }
     else if (! strcmp(argv[1],"rvic"))
     {
-    t= random_victory(H,L,M,seed);
+    t= random_victory(H,L,M,seed, -9);
     }
     else {
-    t =random
+    t =random_victory(H,L,M,seed,9);
     }
     victory(H,L,M,t);
     switch(v){
