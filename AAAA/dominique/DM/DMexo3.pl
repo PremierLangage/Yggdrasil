@@ -29,3 +29,9 @@ code_after==
 
 
 ==
+
+
+
+astuces==#|python|
+[]
+==
