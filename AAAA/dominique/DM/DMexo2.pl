@@ -36,7 +36,7 @@ Remarque: On peut utiliser la fonction hasmine_t ....
 ==
 
 editor.code==
-int nbmines_t(int h, int l, int *t[], int i, int j){
+int nbmines_t(              ){
 return 1;
 }
 ==
