@@ -133,7 +133,7 @@ int **read_t(FILE *f, int *H, int *L, int *M)
 
 code_after==
 int main(int argc, char* argv[]){
-    int H=10,L=10,M=30,**t;
+    int H=10,L=10,M=10,**t;
     int seed=1;
     int v=0;
     if (! strcmp(argv[1],"notvictory.ga"))
@@ -160,7 +160,7 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [["Test victoire de peu", ["notvictory.ga"], ""],
 ["Test Vraie victoire ", ["rvic"], ""],
-["Test continue ", ["full"],""]
+["Test continue ", [""],""]
 ]
 ==
 
