@@ -12,7 +12,7 @@ var('x')
 n = 4
 p=Rational(1,3)
 h=(x**3+x)**p-(x**3-x)**p
-sol = series(h, 1/x, 0, n+1).removeO()
+sol = series(h, x, oo, n+1).removeO()
 ==
 
 question ==
