@@ -147,7 +147,7 @@ int main(int argc, char* argv[]){
     else {
     t =random_victory(H,L,M,seed,9);
     }
-    v  = victoire(t,H,L,M);
+    v  = victoire(t,M,H,L);
     switch(v){
     case 0:  printf("Dud\n"); break;
     case 1: printf("Victoire \n"); break;
