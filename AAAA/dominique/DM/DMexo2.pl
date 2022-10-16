@@ -113,19 +113,11 @@ int hasmine_t(int h, int l, int *t[], int i, int j)
     // mine ou mine sous drapeau
     return t[i][j] == 9 || t[i][j] == -9;
 }
-int hasmine_g(Game *g, int i, int j)
-{
-    return hasmine_t(g->H, g->L, g->t, i, j);
-}
+
 
 int nbmines_t(int h, int l, int *t[], int i, int j)
 {
     return hasmine_t(h, l, t, i - 1, j - 1) + hasmine_t(h, l, t, i - 1, j) + hasmine_t(h, l, t, i - 1, j + 1) + hasmine_t(h, l, t, i, j - 1) + hasmine_t(h, l, t, i, j + 1) + hasmine_t(h, l, t, i + 1, j - 1) + hasmine_t(h, l, t, i + 1, j) + hasmine_t(h, l, t, i + 1, j + 1);
-}
-
-int nbmines_g(Game *g, int i, int j)
-{
-    return nbmines_t(g->H, g->L, g->t, i, j);
 }
 
 ==
