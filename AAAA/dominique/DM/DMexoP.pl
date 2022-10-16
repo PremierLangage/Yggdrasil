@@ -33,6 +33,8 @@ text==#|markdown|
 
 et pose le pied aux coordonées choisient si la case est non découverte et sans drapeau, et ne fait rien si la case est déjà découverte ou a un drapeau. 
 
+et retourne si vous avez explosé (1) ou non (0).
+
 Pour rappel, le code est le suivant :   
 Si une case est pas découverte :  
     9 si il y a une mine   
@@ -49,7 +51,7 @@ Si une case est découverte:
 editor.code==#|c|
 
 
-void Pied(int H, int L, int i, int j, int** t){
+int Pied(int H, int L, int i, int j, int** t){
 
 
 }
@@ -61,12 +63,13 @@ solution==#|c|
 
 
 
-void Pied(int H, int L, int i, int j, int** t){
+int Pied(int H, int L, int i, int j, int** t){
     switch(t[i][j]){
-        case 9 : t[i][j] = 10; break;
+        case 9 : t[i][j] = 10; return 1; break;
         case 0 : t[i][j] = nbmines(i, j, H, L, t); break;
         default : break;
     }
+    return 0;
 }
 
 
