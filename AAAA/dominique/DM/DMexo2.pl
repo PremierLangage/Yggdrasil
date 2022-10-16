@@ -152,8 +152,6 @@ int main(int argc, char* argv[]){
 
 
 checks_args_stdin==#|python|
-[["Test basique", ["not alea",""],
-["Test encore ", ["alea"], ""],
-]
+
 ==
 
