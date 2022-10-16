@@ -128,7 +128,7 @@ code_after==#|c|
 // lire un fichier et faire afficher le fichier
 // l'etudiant doit ecrire la fonction print_t
 int main(int argc, char* argv[]){
-    int H=10,L=10,M=10,**t;
+    int H=10,L=10,M=20,**t;
     int to[]={ 2,2, 1,2, 0,3, 2,0, 5,5, 0,0, 9,9}; 
     int i=0;
     int seed= ! strcmp(argv[1],"alea");
