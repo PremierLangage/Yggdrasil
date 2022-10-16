@@ -151,7 +151,7 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [["Test plus toto vide", ["clairseme"], ""],
 ["Test dense ", ["dense"], ""],
-[”Test full", ["full"],""]
+["Test full", ["full"],""]
 ]
 ==
 
