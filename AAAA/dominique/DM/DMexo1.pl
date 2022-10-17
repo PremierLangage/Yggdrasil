@@ -25,9 +25,11 @@ tag=DM
 
 text==#|markdown|
 Écrire une function **print_t** qui prend  
+
 - un entier representant la hauteur du terrain  
 - l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers)  
 - un entier la largeur  
+
 et qui  
 affiche le terrain sous forme d'entiers par exemple 
 
