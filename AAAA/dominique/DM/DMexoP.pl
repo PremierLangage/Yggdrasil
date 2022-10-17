@@ -54,7 +54,7 @@ Pour rappel, le code est le suivant :
 editor.code==#|c|
 
 
-int Pied(int H, int L, int i, int j, int* t[]){
+int Pied_t(int H, int L, int i, int j, int* t[]){
     
 }
 
@@ -65,7 +65,7 @@ solution==#|c|
 
 
 
-int Pied(int H, int L, int i, int j, int* t[]){
+int Pied_t(int H, int L, int i, int j, int* t[]){
     switch(t[i][j]){
         case 9 : t[i][j] = 10; return 1; break;
         case 0 : t[i][j] = nbmines_t(H, L, t, i, j); break;
@@ -178,11 +178,11 @@ int main(int argc, char* argv[]){
     t = read_t(f,&H,&L,&M);
 
     scanf(" %d %d", &a, &b);
-    if (Pied(H,L,a,b,t)) printf("\nBoom!\n");
+    if (Pied_t(H,L,a,b,t)) printf("\nBoom!\n");
     print_t(t, H, L);
     printf("\n");
     scanf(" %d %d", &a, &b);
-    if (Pied(H,L,a,b,t)) printf("\nBoom!\n");
+    if (Pied_t(H,L,a,b,t)) printf("\nBoom!\n");
     print_t(t, H, L);
   
   return 0;
