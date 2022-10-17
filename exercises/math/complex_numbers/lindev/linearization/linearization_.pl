@@ -1,8 +1,6 @@
 extends = /model/math/input_eval.pl
 
-title = Discriminant d'une équation du second degré
-
-complex_form = "Cartesian"
+title = Linéarisation d'expressions trigonométriques
 
 expressions ==
 sin(2*x)*sin(3*x)
