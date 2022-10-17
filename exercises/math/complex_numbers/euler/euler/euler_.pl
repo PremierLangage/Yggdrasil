@@ -21,7 +21,7 @@ prefixes.append("module :")
 inputs[0].sol =  abs(2*cos((a-b)/2))
 
 prefixes.append("argument :")
-inputs[1].sol =  (a+b)/2
+inputs[1].sol =  (a+b)/2*pi
 ==
 
 question ==
