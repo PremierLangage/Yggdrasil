@@ -28,6 +28,7 @@ tag=DM
 
 text==#|markdown|
 Écrire une function **nbmines** qui prend  
+
 - un entier representant la hauteur du terrain  
 - l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers)  
 - un entier la largeur  
