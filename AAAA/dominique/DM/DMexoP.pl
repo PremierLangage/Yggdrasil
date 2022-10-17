@@ -67,9 +67,9 @@ solution==#|c|
 
 int Pied_t(int H, int L, int i, int j, int* t[]){
     switch(t[i][j]){
-        case 9 : t[i][j] = 10; return 1; break;
+        case 9 : t[i][j] = 10; return 1;
         case 0 : t[i][j] = nbmines_t(H, L, t, i, j);
-        if(t[i][j] == 0) {t[i][j] = -11;} break;
+        if(t[i][j] == 0) {t[i][j] = -11;}
         default : break;
     }
     return 0;
