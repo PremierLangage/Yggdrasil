@@ -25,19 +25,20 @@ title= DM - Drapeau click droit
 tag=DM
 
 text==#|markdown|
-Écrire une function **Drapeau** qui prend   
-- deux entiers représentant les dimensions de la grille   
-- deux entiers représentant les coordonées du choix   
-- la grille   
+Écrire une function **Drapeau** qui prend
+
+- deux entiers représentant les dimensions de la grille
+- deux entiers représentant les coordonées du choix
+- la grille
 
 et ajoute un drapeau aux coordonées choisient si la case est non découverte, enlève le drapeau si il y a un drapeau, et ne fait rien si la case est découverte.   
 
 Pour rappel, le code est le suivant :   
 Si une case est pas découverte :  
-    9 si il y a une mine   
-    -9 si il y a une mine et un drapeau  
+      9 si il y a une mine   
+     -9 si il y a une mine et un drapeau  
     -10 si il y a un drapeau  
-    0 sinon  
+      0 sinon  
 Si une case est découverte:  
     1 - 8  nombre de mines autour de la case  
     -11 pour 0 mines   
