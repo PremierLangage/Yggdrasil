@@ -32,9 +32,9 @@ text==#|markdown|
 - deux entiers représentant les coordonées du choix   
 - la grille   
 
-et pose le pied aux coordonées choisient si la case est non découverte et sans drapeau, et ne fait rien si la case est déjà découverte ou a un drapeau. 
+et pose le pied aux coordonées choisient si la case est non découverte et sans drapeau, et ne fait rien si la case est déjà découverte ou a un drapeau.   
 
-et retourne si vous avez explosé (1) ou non (0).
+Le fonction retourne un entier selon si avez explosé (1) ou non (0).
 
 Pour rappel, le code est le suivant :
 
