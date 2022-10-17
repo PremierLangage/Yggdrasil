@@ -42,3 +42,7 @@ else:
 question ==
 Linéariser l'expression $! {{expr|latex}} !$.
 ==
+
+solution ==
+L'expression linéarisée est $! {{ sol|latex }} !$.
+==
