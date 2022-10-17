@@ -11,7 +11,7 @@ sin(3*x)*sin(2*x)
 
 before ==
 x = Symbol('x')
-expr = simpyfy(choice(expressions.split()))
+expr = sympify(choice(expressions.split()))
 sol = expr.rewrite(sin, exp).rewrite(cos, exp).expand().rewrite(exp, sin).simplify()
 
 ==
