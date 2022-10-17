@@ -168,7 +168,6 @@ int main(int argc, char* argv[]){
     t= random_t(H,L,M,seed);
     print_t(H,t,L);
 
-    t = read_t(&h,&l,&m,
 
   return 0;
 }
