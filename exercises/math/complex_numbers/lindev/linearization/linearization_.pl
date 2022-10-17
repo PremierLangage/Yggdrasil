@@ -5,7 +5,6 @@ title = Linéarisation d'expressions trigonométriques
 before ==
 x = Symbol('x')
 expr = sympify(choice(expressions.split()))
-expr = cos(2*x)*cos(3*x)
 sol = expr.rewrite(sin, exp).rewrite(cos, exp).expand().rewrite(exp, sin).simplify()
 ==
 
