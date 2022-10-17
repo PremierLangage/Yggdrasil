@@ -50,7 +50,7 @@ Pour rappel, le code est le suivant :
 editor.code==#|c|
 
 
-void Drapeau(int H, int L, int i, int j, int** t){
+void Drapeau_t(int H, int L, int i, int j, int** t){
 
 
 }
@@ -62,7 +62,7 @@ solution==#|c|
 
 
 
-void Drapeau(int H, int L, int i, int j, int* t[]){
+void Drapeau_t(int H, int L, int i, int j, int* t[]){
     switch(t[i][j]){
         case -9 : t[i][j] = 9; break;
         case -10 : t[i][j] = 0; break;
@@ -162,10 +162,10 @@ int main(int argc, char* argv[]){
     t = read_t(f,&H,&L,&M);
     // paranoiac je fait toutes mes lectures sur stdin avant d'appeler la fonction de l'élève.
     scanf(" %d %d", &a, &b, &c, &d);
-    Drapeau(H,L,a,b,t);
+    Drapeau_t(H,L,a,b,t);
     print_t(t, H, L);
     printf("\n");
-    Drapeau(H,L,c,d,t);
+    Drapeau_t(H,L,c,d,t);
     print_t(t, H, L);
   
   return 0;
