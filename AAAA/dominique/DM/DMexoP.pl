@@ -153,6 +153,15 @@ void print_t(int *t[], int h, int l)
     fprint_t(stdout, h, t, l);
 }
 
+
+int hasmine_t(int h, int l, int *t[], int i, int j)
+{
+    if ((i < 0) || (i > h - 1) || (j < 0) || (j > l - 1))
+        return 0;
+
+    return t[i][j] == 9 || t[i][j] == -9;
+}
+
 int nbmines_t(int h, int l, int *t[], int i, int j)
 {
     return hasmine_t(h, l, t, i - 1, j - 1) + hasmine_t(h, l, t, i - 1, j) + hasmine_t(h, l, t, i - 1, j + 1) + hasmine_t(h, l, t, i, j - 1) + hasmine_t(h, l, t, i, j + 1) + hasmine_t(h, l, t, i + 1, j - 1) + hasmine_t(h, l, t, i + 1, j) + hasmine_t(h, l, t, i + 1, j + 1);
