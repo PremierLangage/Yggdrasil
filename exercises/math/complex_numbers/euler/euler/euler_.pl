@@ -12,7 +12,7 @@ while a + b == 0:
     a = pi*choice([-1, 1]) * sympify(choice(['1/4', '3/4', '1/3', '2/3']))
     b = pi*choice([-1, 1]) * sympify(choice(['1/4', '3/4', '1/3', '2/3']))
 
-z =  exp(I*pi*a) + exp(I*pi*b)
+z =  exp(I*a) + exp(I*b)
 
 prefixes = []
 inputs = [MathInput(type="expr"), MathInput(type="expr", evalparam={'equality': "", 'modulo': 2*pi})]
