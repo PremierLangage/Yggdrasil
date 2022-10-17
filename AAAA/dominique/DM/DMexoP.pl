@@ -57,7 +57,7 @@ editor.code==#|c|
 int Pied(int H, int L, int i, int j, int* t[]){
     switch(t[i][j]){
         case 9 : t[i][j] = 10; return 1; break;
-        case 0 : t[i][j] = nbmines_t(i, j, H, L, t); break;
+        case 0 : t[i][j] = nbmines_t(H, L, t, i, j); break;
         default : break;
     }
     return 0;
