@@ -154,9 +154,9 @@ void print_t(int *t[], int h, int l)
     fprint_t(stdout, h, t, l);
 }
 
-int nbmines(int i, int j, int H, int L, int** t)
+int nbmines_t(int h, int l, int *t[], int i, int j)
 {
-    return 0;
+    return hasmine_t(h, l, t, i - 1, j - 1) + hasmine_t(h, l, t, i - 1, j) + hasmine_t(h, l, t, i - 1, j + 1) + hasmine_t(h, l, t, i, j - 1) + hasmine_t(h, l, t, i, j + 1) + hasmine_t(h, l, t, i + 1, j - 1) + hasmine_t(h, l, t, i + 1, j) + hasmine_t(h, l, t, i + 1, j + 1);
 }
 
 ==
