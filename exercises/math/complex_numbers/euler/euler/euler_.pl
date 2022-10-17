@@ -9,9 +9,9 @@ from sympy import arg
 
 theta1, theta2 = 0, 0
 while theta1+theta2 == 0:
-    theta1 = pi * choice([-1, 1]) * choice([1/4, 3/4, 1/3, 2/3, 4/3, 1/6, 5/6])
-    theta2 = pi * choice([-1, 1]) * choice([1/4, 3/4, 1/3, 2/3, 4/3, 1/6, 5/6])
-
+    theta1 = pi * choice([-1, 1]) * sympify(choice(['1/4', '3/4', '1/3', '2/3', '4/3', '1/6', '5/6']))
+    theta2 = pi * choice([-1, 1]) * sympify(choice(['1/4', '3/4', '1/3', '2/3', '4/3', '1/6', '5/6']))
+    
 z = exp(I*theta1) + exp(I*theta2)
 
 prefixes = []
