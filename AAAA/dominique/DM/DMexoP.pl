@@ -54,7 +54,7 @@ Pour rappel, le code est le suivant :
 editor.code==#|c|
 
 
-int Pied(int H, int L, int i, int j, int** t){
+int Pied(int H, int L, int i, int j, int* t[]){
 
 }
 
