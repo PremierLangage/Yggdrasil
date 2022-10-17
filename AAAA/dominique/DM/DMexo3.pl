@@ -12,7 +12,8 @@ text==
 Quand le nombre de drapeau est égale au nombre de mines.   
 Et que les drapeaux sont biens placés le joueur à gagné !  
 
-La fonction **victoire** prend en parametre :  
+La fonction **victoire** prend en parametre : 
+ 
 - la grille  
 - un entier avec le nombre de mines  
 - deux entiers représentant les dimensions de la grille  
