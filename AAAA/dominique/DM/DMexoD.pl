@@ -41,8 +41,9 @@ Pour rappel, le code est le suivant :
     - -10 si il y a un drapeau  
     - 0 sinon  
   - Si une case est découverte:  
-    - 1 - 8  nombre de mines autour de la case  
+    - 1 à 8 le nombre de mines autour de la case  
     - -11 pour 0 mines   
+
 
 ==
 
