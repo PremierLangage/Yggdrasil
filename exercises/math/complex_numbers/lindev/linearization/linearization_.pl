@@ -6,14 +6,16 @@ complex_form = "Cartesian"
 
 expressions ==
 sin(2*x)*sin(3*x)
-sin(3*x)*sin(2*x)
+cos(2*x)*cos(3*x)
+sin(x)*sin(3*x)
+cos(x)*cos(3*x)
 ==
 
 before ==
 x = Symbol('x')
 expr = sympify(choice(expressions.split()))
+expr = cos(2*x)*cos(3*x)
 sol = expr.rewrite(sin, exp).rewrite(cos, exp).expand().rewrite(exp, sin).simplify()
-
 ==
 
 evaluator ==
