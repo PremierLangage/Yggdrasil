@@ -10,9 +10,9 @@ tag=DM
 text==#|markdown|
 Écrire une function **nbmines_t** qui prend  
 
-- l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers)  
 - un entier representant la hauteur du terrain  
 - un entier la largeur  
+- l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers)  
 - un entier i  
 - un entier j  
 et qui retourne le nombre de mines sur les 8 cases adjacente de la case de coordonées i,j
