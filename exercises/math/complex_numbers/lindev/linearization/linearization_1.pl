@@ -1,4 +1,4 @@
-extends = /linearization_.pl
+extends = linearization_.pl
 
 expressions ==
 sin(2*x)*sin(3*x)
