@@ -26,7 +26,8 @@ title= DM - Drapeau
 tag=DM
 
 text==#|markdown|
-Écrire une function **Pied** qui prend   
+Écrire une function **Pied** qui prend
+
 - deux entiers représentant les dimensions de la grille   
 - deux entiers représentant les coordonées du choix   
 - la grille   
@@ -35,16 +36,18 @@ et pose le pied aux coordonées choisient si la case est non découverte et sans
 
 et retourne si vous avez explosé (1) ou non (0).
 
-Pour rappel, le code est le suivant :   
-Si une case est pas découverte :  
-    9 si il y a une mine   
-    -9 si il y a une mine et un drapeau  
-    -10 si il y a un drapeau  
-0 sinon  
-Si une case est découverte:  
-    1 - 8  nombre de mines autour de la case  
-    -11 pour 0 mines   
-    10 pour une mine explosée   
+Pour rappel, le code est le suivant :
+
+- Si une case est pas découverte :
+    - 9 si il y a une mine   
+    - -9 si il y a une mine et un drapeau  
+    - -10 si il y a un drapeau  
+    - 0 sinon  
+- Si une case est découverte:  
+    - 1 à 8 le nombre de mines autour de la case  
+    - -11 pour 0 mine
+    - 10 pour une mine explosée   
+
 
 ==
 
