@@ -9,8 +9,8 @@ from sympy import arg
 
 a, b = 0, 0
 while a + b == 0:
-    a = choice([-1, 1]) * sympify(choice(['1/4', '3/4', '1/3', '2/3', '4/3', '1/6', '5/6']))
-    b = choice([-1, 1]) * sympify(choice(['1/4', '3/4', '1/3', '2/3', '4/3', '1/6', '5/6']))
+    a = choice([-1, 1]) * sympify(choice(['1/4', '3/4', '1/3', '2/3']))
+    b = choice([-1, 1]) * sympify(choice(['1/4', '3/4', '1/3', '2/3']))
 
 z =  exp(I*pi*a) + exp(I*pi*b)
 
