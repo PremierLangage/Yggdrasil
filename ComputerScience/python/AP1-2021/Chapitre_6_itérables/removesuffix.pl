@@ -5,7 +5,7 @@ extends=/ComputerScience/python/template/pltest.pl
 builder=/builder/before.py
 
 author=Dominique Revuz
-title= Retirer le préfix 
+title= Retirer le Suffixe 
 
 text==
 Ecrire une fonction ``retirersuffix(s, pref)`` qui retourner la chaine  ``s`` privé de son suffixe ``pref``.
@@ -39,9 +39,9 @@ pltest0==
 ''
 >>> retirersuffix('la France','not a suffix') # Ne pas toucher si pas un suffix
 'la France'
->>> retirersuffix('la France la chine et la pologne','la pologne') # 
+>>> retirersuffix('la France la chine et la pologne','la pologne')
 'la France la chine et '
->>> retirersuffix('la France la chine et la pologne','') # suffix vide
+>>> retirersuffix('la France la chine et la pologne','')
 'la France la chine et la pologne'
 ==
 
