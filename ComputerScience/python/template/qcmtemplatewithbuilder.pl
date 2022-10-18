@@ -11,6 +11,9 @@ il faut que before  intialise
 
 ==
 
+text= Votre question ?
+
+
 form=dummy for the pl grammar the builder is making the form
 
 feedback.success=<div class="btn-success"> Voila votre resultat : {{  evaluation }} </div>
