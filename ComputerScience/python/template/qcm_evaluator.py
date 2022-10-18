@@ -144,6 +144,7 @@ if __name__ == "__main__":
         dic['form'] += """<TR><td><input id="form_answer_"""+str(i)+"""\"  type="checkbox"  placeholder="" required>  """+p[0]+"</td></TR>"
     dic['form'] += "</table></div>"
 
+    dic['done'] = 1
 
     output(grade,outstr,dic)
 
