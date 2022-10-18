@@ -109,60 +109,33 @@ void print_g(Game *g){
 
 code_before==#|c|
 
-#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <math.h>
-#include <time.h>
-int **read_t(FILE *f, int *H, int *L, int *M)
+struct _game
 {
+    int termine;
+    int H;
+    int L;
+    int M;
     int **t;
-    fscanf(f, "%d %d %d", H, L, M);
-    t = malloc(*H * sizeof(int *));
-    for (int i = 0; i < *H; i++)
-    {
-        t[i] = malloc(*L * sizeof(int));
-    }
+};
 
-    for (int i = 0; i < *H; i++)
-    {
-        for (int j = 0; j < *L; j++)
-        {
-            fscanf(f, "%d", &(t[i][j]));
-        }
-    }
-    return t;
-}
+typedef struct _game Game;
 
-int **alloc_t(int H, int L)
-{ // calloc inits memory with zeros
-    int **t = calloc(1, H * sizeof(int *));
+// allocation de la structure game
+// et d'une matrice de taille H*L et initialisation à 0
+void *mallocGame(int H, int L, int M)
+{
+    Game *g = malloc(sizeof(Game));
+    g->termine = 0;
+    g->H = H;
+    g->L = L;
+    g->M = M;
+    g->t = calloc(1, H * sizeof(int *));
     for (int i = 0; i < H; i++)
     {
-        t[i] = calloc(1, L * sizeof(int));
+        g->t[i] = calloc(1, L * sizeof(int));
     }
-    return t;
-}
-
-// alloc and create a new terrain
-int **random_t(int H, int L, int M, int seed)
-{
-    // alloc
-    if (seed) srand(time(NULL));
-
-    int **t = alloc_t(H, L);
-    // random mines (M)
-    for (int i = 0; i < M; i++)
-    {
-        int h, l;
-        do
-        {
-            h = rand() % H;
-            l = rand() % L;
-        } while (t[h][l] == 9);
-        t[h][l] = 9;
-    }
-    return t;
+    return g;
 }
 ==
 
