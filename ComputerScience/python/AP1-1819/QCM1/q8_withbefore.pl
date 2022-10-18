@@ -23,7 +23,7 @@ bad += '\n0'
 text= Indiquez les lignes qui sont des commentaires en python :
 
 nb=4
-# nbtrues=1
+nbtrues=1
 uncrosedfalse=
 feedback=show
 
