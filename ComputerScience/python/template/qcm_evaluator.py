@@ -125,7 +125,7 @@ if __name__ == "__main__":
             dic["form"]= ""
 
     badpairs=dic['badpairs'] if 'badpairs' in dic else []
-    goodpairs=dic['goodpairs']if 'goodpairs' in dic else []
+    goodpairs=dic['goodpairs'] if 'goodpairs' in dic else []
     
     
     if "nb" not in dic:
