@@ -39,9 +39,9 @@ et qui affiche le terrain sous forme d'entiers par exemple
     0 0 0 0 0 0 0 0 0 0 
 
 Dans cet exercice on suppose que la structure de type Game a 3 champs qui sont :
-- un entier **hauteur**  
-- un entier **largeur**  
-- un tableau de hauteur pointeurs sur des tableaux de largeur entiers **grille**
+- un entier **H**  
+- un entier **L**  
+- un tableau de hauteur pointeurs sur des tableaux de largeur entiers **t**
 
 ==
 editor.code==#|c|
@@ -104,8 +104,9 @@ void print_t(int h, int *t[], int l)
 }
 
 void print_g(Game *g){
-    print_t(g->hauteur,g->grille,g->largeur);
+    print_t(g->h,g->t,g->l);
 }
+
 ==
 
 code_before==#|c|
