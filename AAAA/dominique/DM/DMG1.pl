@@ -137,6 +137,25 @@ void *mallocGame(int H, int L, int M)
     }
     return g;
 }
+
+
+Game *readGame(FILE *f)
+{
+    int H, L, M;
+    fscanf(f, "%d %d %d", &H, &L, &M);
+    Game *g = mallocGame(H, L, M);
+    int **t = g->t;
+    for (int i = 0; i < H; i++)
+    {
+        for (int j = 0; j < L; j++)
+        {
+            fscanf(f, "%d", &(t[i][j]));
+        }
+    }
+    return g;
+}
+
+
 ==
 
 code_after==#|c|
@@ -144,11 +163,8 @@ code_after==#|c|
 // lire un fichier et faire afficher le fichier
 // l'etudiant doit ecrire la fonction print_t
 int main(int argc, char* argv[]){
-    int H=10,L=10,M=10,**t;
-    int seed= ! strcmp(argv[1],"alea");
-    t= random_t(H,L,M,seed);
-    print_t(H,t,L);
 
+    Game *g= mallocGame(
 
   return 0;
 }
