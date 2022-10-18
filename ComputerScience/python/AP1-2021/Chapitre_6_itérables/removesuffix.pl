@@ -17,13 +17,13 @@ Par exemple, pour ``s = "ceci n'est pas une pipe", pref="pipe "``, l'appel ``ret
 tag=ForIn|stringIndex
 
 samplesol==
-def retirerprefix(self: str, prefix: str, /) -> str:
+def retirerprefix(self , prefix) :
     if self.startswith(prefix):
         return self[len(prefix):]
     else:
         return self[:]
 
-def retirersuffix(self: str, suffix: str, /) -> str:
+def retirersuffix(self, suffix) -> str:
     # suffix='' should not call self[:-0].
     if suffix and self.endswith(suffix):
         return self[:-len(suffix)]
