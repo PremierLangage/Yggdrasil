@@ -4,7 +4,7 @@ extends=/ComputerScience/python/template/qcm_template.pl
 title=Question 5
 
 
-text= En python 3, quelle est la meilleure description caractérisant la fonction input ?
+text= En python 3, quelle est la meilleure description caractérisant ``input`` ?
 
 nb=4
 nbtrues=1
