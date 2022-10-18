@@ -98,8 +98,8 @@ if __name__ == "__main__":
     
     studentdic = get_answers()
 
-    if "done" in studentdic:
-        output(studentdic['done'], studentdic['outstr'],studentdic)
+    if "done" in dic:
+        output(dic['done'], dic['outstr'],dic)
         sys.exit(0)   
 
     a, t= calculategrade(dic['pairs'],studentdic,('uncrosedfalse' in dic and dic['uncrosedfalse'] ))
