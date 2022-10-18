@@ -40,6 +40,8 @@ pltest0==
 'la France'
 >>> retirerprefix('la France la chine et la pologne','la France ') # 
 'la chine et la pologne'
+>>> retirerprefix('la France la chine et la pologne','') # prefix vide
+'la chine et la pologne'
 ==
 
 
