@@ -13,7 +13,7 @@ text=""" Qu'affiche le programme suivant :
 
     print(len('{}')*{})""".format(chaine,entier)
 
-good=str(len(chaine)*entier)+"\n"
+good=str(len(chaine)*entier)+"\n"+'vrai\ntrue\nright\neffectivement'
 bad=chaine*entier
 bad+='\n'
 bad += chaine+str(entier)
