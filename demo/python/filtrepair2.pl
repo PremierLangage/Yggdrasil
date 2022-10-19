@@ -17,8 +17,11 @@ text==
 Ecire une fonction filtre_pair(liste) qui élimine de la liste les valeur paires.
 ==
 
-before==#|py|
+before==
 import random 
+
+def maketest(n,str):
+
 
 l=[random.randint(1,1000) for i in range(20)]
 l2=[ x for x in l if x%2 ==1] 
@@ -27,6 +30,8 @@ l2=[ x for x in l if x%2 ==1]
 pltest0=f""">>> filtre_pair({repr(l)}) 
 {repr(l2)}
 """
+
+
 ==
 
 
