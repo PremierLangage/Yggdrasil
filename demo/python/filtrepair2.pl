@@ -29,27 +29,11 @@ pltest0=""">>> filtre_pair({repr(l)})
 
 ==
 
-pltest0==
->>> import types #
->>> "carre" in globals() # carre existe 
-True
->>> type(carre)  # est carre est une fonction 
-<type 'function'>
-==
-
-pltest1==
->>> carre(510) == 260100 # le carre de 510
-True
->>> carre(0)
-0
->>> carre(-10)
-100
->>> 
-==
 
 
 editor.code==
-
+def filtre_pair(lx):
+    return [ x for x in lx if x%2 ==1] 
 ==
 editor.height=145
 
