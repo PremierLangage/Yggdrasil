@@ -20,9 +20,11 @@ Ecire une fonction filtre_pair(liste) qui élimine de la liste les valeur paires
 before==
 import random 
 
-l=[random.randint(1,1000) for i in range(20)]#
+l=[random.randint(1,1000) for i in range(20)]
 l2=[ x for x in l if x%2 ==1] 
-pltest0=""">>> filtre_pair({repr(l)}) 
+
+
+pltest0=f""">>> filtre_pair({repr(l)}) 
 {repr(l2)}
 """
 
