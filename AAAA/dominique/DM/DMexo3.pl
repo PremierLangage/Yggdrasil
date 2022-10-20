@@ -116,6 +116,37 @@ Game *readGame(FILE *f)
     return g;
 }
 
+void fprint_t(FILE *f, int h, int *t[], int l)
+{
+    int c;
+    int bb = 0;
+
+    for (int i = 0; i < h; i++)
+    {
+        for (int j = 0; j < l; j++)
+        {
+            fprintf(f, "%d ", t[i][j]);
+        }
+        fprintf(f, "\n");
+    }
+}
+
+// affichage de la matrice de jeu sur stdout
+void print_t(int h, int *t[], int l)
+{
+    fprint_t(stdout, h, t, l);
+}
+
+void saveGame(FILE *f, Game *g)
+{
+    fprintf(f, "%d %d %d\n", g->H, g->L, g->M);
+    fprint_t(f, g->H, g->t, g->L);
+}
+
+void printGame(Game *g)
+{
+    saveGame(stdout, g);
+}
 
 ==
 
@@ -129,6 +160,8 @@ int main(int argc, char* argv[]){
     while (*++argv){
         f= fopen(*argv,"r") ;
         g= readGame(f);
+        printf("\n");
+        print_g(g);
         printf("Victoire %s : %d\n",*argv, victoire_t(g->t,g->H,g->L,g->M));
         fclose(f);
     }
