@@ -49,7 +49,7 @@ void Drapeau_t(int H, int L, int i, int j, int* t[]){
     }
 }
 
-void Drapeau_g(Game *g){
+void Drapeau_g(Game *g, int i, int j){
     Drapeau_t(g->H, g-> L, i,j,g->t);
 
 }
