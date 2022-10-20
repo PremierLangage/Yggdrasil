@@ -72,7 +72,7 @@ void print_t(int h, int *t[], int l)
 
 
 void print_g(Game *g){
-    print_t(g->h,g->t,g->l);
+    print_t(g->H,g->t,g->L);
 }
 
 
