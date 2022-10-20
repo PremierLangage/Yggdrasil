@@ -112,7 +112,6 @@ int main(int argc, char* argv[]){
     printf("%s\n",argv[1]);
     FILE* f = fopen(argv[1],"r");
     Game g= = readGame(f);
-
     scanf("%d%d%d%d", &a, &b, &c, &d);
     Drapeau_g(g,a,b);
     print_g(g);
