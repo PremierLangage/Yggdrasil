@@ -39,8 +39,6 @@ editor.code==
 
 solution==#|c|
 
-
-
 void Drapeau_t(int H, int L, int i, int j, int* t[]){
     switch(t[i][j]){
         case -9 : t[i][j] = 9; break;
@@ -56,5 +54,73 @@ void Drapeau_g(Game *g){
 
 }
 
+==
+
+code_before==
+#include <stdio.h>
+#include <stdlib.h>
+struct _game
+{
+    int termine;
+    int H;
+    int L;
+    int M;
+    int **t;
+};
+
+typedef struct _game Game;
+
+// allocation de la structure game
+// et d'une matrice de taille H*L et initialisation à 0
+void *mallocGame(int H, int L, int M)
+{
+    Game *g = malloc(sizeof(Game));
+    g->termine = 0;
+    g->H = H;
+    g->L = L;
+    g->M = M;
+    g->t = calloc(1, H * sizeof(int *));
+    for (int i = 0; i < H; i++)
+    {
+        g->t[i] = calloc(1, L * sizeof(int));
+    }
+    return g;
+}
+
+
+Game *readGame(FILE *f)
+{
+    int H, L, M;
+    fscanf(f, "%d %d %d", &H, &L, &M);
+    Game *g = mallocGame(H, L, M);
+    int **t = g->t;
+    for (int i = 0; i < H; i++)
+    {
+        for (int j = 0; j < L; j++)
+        {
+            fscanf(f, "%d", &(t[i][j]));
+        }
+    }
+    return g;
+}
+==
+
+code_after==#|c|
+
+int main(int argc, char* argv[]){
+    int H, L, M, **t, a, b, c, d;
+    printf("%s\n",argv[1]);
+    FILE* f = fopen(argv[1],"r");
+    t = read_t(f,&H,&L,&M);
+    Game g={
+    scanf("%d%d%d%d", &a, &b, &c, &d);
+    Drapeau_t(H,L,a,b,t);
+    print_t(t, H, L);
+    printf("\n");
+    Drapeau_t(H,L,c,d,t);
+    print_t(t, H, L);
+  
+  return 0;
+}
 
 ==
