@@ -45,7 +45,7 @@ Dans cet exercice on suppose que la structure de type Game a 3 champs qui sont :
 
 ==
 editor.code==#|c|
-void print_t(Game ){
+void print_t(Game ...){
 ...
 }
 ==
