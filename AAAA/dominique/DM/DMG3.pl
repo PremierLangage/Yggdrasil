@@ -18,7 +18,7 @@ Attention le test est un peu long.
 ==
 
 
-editor.code==
+editorXcode==
 int victoire_t(int **t, int H, int L, int M){
 int nb=0;
 int bad=0;
