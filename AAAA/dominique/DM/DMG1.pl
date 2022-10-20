@@ -80,30 +80,7 @@ void print_g(Game *g){
 
 
 solution==#|c|
-// impression de la matrice de jeu dans un fichier
 
-void fprint_t(FILE *f, int h, int *t[], int l)
-{
-
-    for (int i = 0; i < h; i++)
-    {
-        for (int j = 0; j < l; j++)
-        {
-            fprintf(f, "%d ", t[i][j]);
-        }
-        fprintf(f, "\n");
-    }
-}
-
-// affichage de la matrice de jeu sur stdout
-void print_t(int h, int *t[], int l)
-{
-    fprint_t(stdout, h, t, l);
-}
-
-void print_g(Game *g){
-    print_t(g->h,g->t,g->l);
-}
 
 ==
 
@@ -155,6 +132,30 @@ Game *readGame(FILE *f)
     return g;
 }
 
+// impression de la matrice de jeu dans un fichier
+
+void fprint_t(FILE *f, int h, int *t[], int l)
+{
+
+    for (int i = 0; i < h; i++)
+    {
+        for (int j = 0; j < l; j++)
+        {
+            fprintf(f, "%d ", t[i][j]);
+        }
+        fprintf(f, "\n");
+    }
+}
+
+// affichage de la matrice de jeu sur stdout
+void print_t(int h, int *t[], int l)
+{
+    fprint_t(stdout, h, t, l);
+}
+
+void print_g(Game *g){
+    print_t(g->h,g->t,g->l);
+}
 
 ==
 
