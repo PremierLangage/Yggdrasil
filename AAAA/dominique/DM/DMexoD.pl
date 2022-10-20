@@ -161,7 +161,7 @@ int main(int argc, char* argv[]){
     FILE* f = fopen(argv[1],"r");
     t = read_t(f,&H,&L,&M);
     // paranoiac je fait toutes mes lectures sur stdin avant d'appeler la fonction de l'élève.
-    scanf(" %d %d", &a, &b, &c, &d);
+    scanf("%d%d%d%d", &a, &b, &c, &d);
     Drapeau_t(H,L,a,b,t);
     print_t(t, H, L);
     printf("\n");
