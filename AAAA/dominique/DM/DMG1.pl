@@ -174,26 +174,11 @@ int main(int argc, char* argv[]){
 
 ==
 
-
+@ jeudedepart.ga
 
 checks_args_stdin==#|python|
-[["Test basique", ["not alea"], ""],
+[["Test basique", ["jeudedepart.ga"], ""],
 ["Test encore ", ["alea"], ""]
-]
-==
-
-astuces==#|python|
-[
-  { "content": """
-  Lire l'introduction du pltp."""},
-  { "content": """Les entiers  stockés dans le terrain indiquent:  
-0 Case non découverte sans mine  
-9 case non découverte avec une mine  
-1 à 8 case découverte sans mine, l'entier indique le nombre de mines des cases avoisinantes, -11 si zéro mines.  
--9 une mine avec un drapeau placé dessus  
--10 une case sans mine avec un drapeau placé dessus.
-"""},
-  { "content": """Il y a des espaces en fin de ligne dans le format de fichier."""}
 ]
 ==
 
