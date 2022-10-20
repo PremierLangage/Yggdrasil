@@ -44,8 +44,8 @@ Dans cet exercice on suppose que la structure de type Game a 3 champs qui sont :
 - un tableau de hauteur pointeurs sur des tableaux de largeur entiers **t**
 
 ==
-editorXcode==#|c|
-void print_t(Game ...){
+editor.code==#|c|
+void print_g(Game ...){
 ...
 }
 ==
