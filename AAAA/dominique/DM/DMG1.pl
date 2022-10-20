@@ -165,8 +165,8 @@ code_after==#|c|
 int main(int argc, char* argv[]){
 
     FILE *f= fopen(argv[1],"r") ;
-    Game *g= mallocGame();
-    
+    Game *g= readGame(f);
+    print_g(g);
 
   return 0;
 }
