@@ -26,10 +26,12 @@ Attention le test est un peu long.
 ==
 
 editor.code==#|C|
-int victoire_t(int **t, int H, int L, int M){
+int victoire_g(Game *g){
 int nb=0;
 int bad=0;
 int nm=0;
+int H=g->H,L=g->L,M=g->M;
+int **t=g->t;
 for(int i=0; i < H; i++)
     for(int j=0; j< L; j++)
     {
@@ -141,7 +143,7 @@ void saveGame(FILE *f, Game *g)
     fprint_t(f, g->H, g->t, g->L);
 }
 
-void printGame(Game *g)
+void print_g(Game *g)
 {
     saveGame(stdout, g);
 }
@@ -160,7 +162,7 @@ int main(int argc, char* argv[]){
         g= readGame(f);
         printf("\n");
         print_g(g);
-        printf("Victoire %s : %d\n",*argv, victoire_t(g->t,g->H,g->L,g->M));
+        printf("Victoire %s : %d\n",*argv, victoire_g(g));
         fclose(f);
     }
 
