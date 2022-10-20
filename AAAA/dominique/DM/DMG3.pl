@@ -17,6 +17,30 @@ La condition de victoire est:
 Attention le test est un peu long.
 ==
 
+
+editor.code==
+int victoire_t(int **t, int H, int L, int M){
+int nb=0;
+int bad=0;
+int nm=0;
+for(int i=0; i < H; i++)
+    for(int j=0; j< L; j++)
+    {
+        if (t[i][j]==-9) nb++;
+        if (t[i][j]==-10) bad++;
+        if (t[i][j]==0) nm++;
+    }
+
+if (((nb == M)||(nm==0)) && bad ==0) return 1;
+return 0;
+}
+int victoire_g(Game *g){
+    return victoire_t(g->t, g->H, g->L, g->M);
+}
+
+==
+
+
 solution==
 
 
@@ -37,6 +61,28 @@ return 0;
 }
 int victoire_g(Game *g){
     return victoire_t(g->t, g->H, g->L, g->M);
+}
+
+
+==
+
+code_after==#|c|
+// Idée du test
+// lire un fichier et faire afficher le fichier
+// l'etudiant doit ecrire la fonction print_t
+int main(int argc, char* argv[]){
+    FILE *f;
+    Game *g;
+    while (*++argv){
+        f= fopen(*argv,"r") ;
+        g= readGame(f);
+        printf("\n");
+        print_g(g);
+        printf("Victoire %s : %d\n",*argv, victoire_t(g->t,g->H,g->L,g->M));
+        fclose(f);
+    }
+
+  return 0;
 }
 
 ==
