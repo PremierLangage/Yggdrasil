@@ -49,7 +49,7 @@ void print_t(Game ...){
 ...
 }
 ==
-editor.code==#|c|
+editorXcode==#|c|
 // impression de la matrice de jeu dans un fichier
 
 void fprint_t(FILE *f, int h, int *t[], int l)
