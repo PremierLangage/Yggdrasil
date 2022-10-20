@@ -4,17 +4,16 @@ extends=DMexo1.pl
 
 
 
-title= DM - play click gauche
+title= DM - Victoire
 tag=DM
 
 text==#|markdown|
-Écrire une function **victory** qui prend  
+Écrire une function **victoir_te** qui prend  
 
 - l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers)  
 - un entier representant la hauteur du terrain  
 - un entier la largeur  
-- un entier i  
-- un entier j  
+- un entier le nombre de mines
 et qui retourne si oui ou non c'est une victoire.
 
 La condition de victoire est:
@@ -24,15 +23,33 @@ La condition de victoire est:
 
 ==
 
-
-
-solution==
-
-
-int victoire(int **t, int H, int L){
+editor.code==#|C|
+int victoire_t(int **t, int H, int L, int M){
 
 return 0;
 
+}
+
+==
+
+solution==
+
+int nbdrapeau(int **t, int H, int L){
+
+int victoire_t(int **t, int H, int L, int M){
+int nb=0;
+int bad=0;
+int nm=0;
+for(int i=0; i < H; i++)
+    for(int j=0; j< L; j++)
+    {
+        if (t[i][j]==-9) nb++;
+        if (t[i][j]==-10) bad++;
+        if (t[i][j]==0) nm++;
+    }
+}
+if (((nb == M)||(nm==0)) && bad ==0) return 1;
+return 0;
 }
 
 ==
@@ -99,19 +116,22 @@ int main(int argc, char* argv[]){
 
     FILE *f= fopen(argv[1],"r") ;
     Game *g= readGame(f);
-    print("Victoire :",victoire(g->t,g->H,g->L));
+    print("Victoire :",victoire_t(g->t,g->H,g->L));
 
   return 0;
 }
 
 ==
 
-@ jeudedepart.ga [test1]
-@ nbmines.ga [test2]
+@ victoire1.ga [test1]
+@ victoire2.ga [test2]
+@ nbmines.ga [test3]
+@ jeudedepart.ga [test4]
 
 checks_args_stdin==#|python|
 [["Test un", ["test1"], ""],
 ["Test deux ", ["test2"], ""]
-]
+["Test trois ", ["test3"], ""]
+["Test quatre ", ["test4"], ""]]
 ==
 
