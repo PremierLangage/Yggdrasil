@@ -49,79 +49,53 @@ int hasmine_g(Game *g, int i, int j)
 ==
 
 code_before==#|c|
-
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <math.h>
-
-int **read_t(FILE *f, int *H, int *L, int *M)
+struct _game
 {
+    int termine;
+    int H;
+    int L;
+    int M;
     int **t;
-    fscanf(f, "%d %d %d", H, L, M);
-    t = malloc(*H * sizeof(int *));
-    for (int i = 0; i < *H; i++)
-    {
-        t[i] = malloc(*L * sizeof(int));
-    }
+};
 
-    for (int i = 0; i < *H; i++)
+typedef struct _game Game;
+
+// allocation de la structure game
+// et d'une matrice de taille H*L et initialisation à 0
+void *mallocGame(int H, int L, int M)
+{
+    Game *g = malloc(sizeof(Game));
+    g->termine = 0;
+    g->H = H;
+    g->L = L;
+    g->M = M;
+    g->t = calloc(1, H * sizeof(int *));
+    for (int i = 0; i < H; i++)
     {
-        for (int j = 0; j < *L; j++)
+        g->t[i] = calloc(1, L * sizeof(int));
+    }
+    return g;
+}
+
+
+Game *readGame(FILE *f)
+{
+    int H, L, M;
+    fscanf(f, "%d %d %d", &H, &L, &M);
+    Game *g = mallocGame(H, L, M);
+    int **t = g->t;
+    for (int i = 0; i < H; i++)
+    {
+        for (int j = 0; j < L; j++)
         {
             fscanf(f, "%d", &(t[i][j]));
         }
     }
-    return t;
+    return g;
 }
 
-int **alloc_t(int H, int L)
-{ // calloc inits memory with zeros
-    int **t = calloc(1, H * sizeof(int *));
-    for (int i = 0; i < H; i++)
-    {
-        t[i] = calloc(1, L * sizeof(int));
-    }
-    return t;
-}
-
-// alloc and create a new terrain
-int **random_t(int H, int L, int M)
-{
-    // alloc
-    int **t = alloc_t(H, L);
-    // random mines (M)
-    for (int i = 0; i < M; i++)
-    {
-        int h, l;
-        do
-        {
-            h = rand() % H;
-            l = rand() % L;
-        } while (t[h][l] == 9);
-        t[h][l] = 9;
-    }
-    return t;
-}
-
-// impression de la matrice de jeu dans un fichier
-void fprint_t(FILE *f, int h, int *t[], int l)
-{
-    for (int i = 0; i < h; i++)
-    {
-        for (int j = 0; j < l; j++)
-        {
-            fprintf(f, "%d ", t[i][j]);
-        }
-        fprintf(f, "\n");
-    }
-}
-
-// affichage de la matrice de jeu sur stdout
-void print_t(int *t[], int h, int l)
-{
-    fprint_t(stdout, h, t, l);
-}
 ==
 
 code_after==#|c|
