@@ -5,6 +5,8 @@ extends=DMexo1.pl
 
 
 title= DM - Victoire
+
+
 tag=DM
 
 text==#|markdown|
@@ -25,16 +27,25 @@ La condition de victoire est:
 
 editor.code==#|C|
 int victoire_t(int **t, int H, int L, int M){
-
+int nb=0;
+int bad=0;
+int nm=0;
+for(int i=0; i < H; i++)
+    for(int j=0; j< L; j++)
+    {
+        if (t[i][j]==-9) nb++;
+        if (t[i][j]==-10) bad++;
+        if (t[i][j]==0) nm++;
+    }
+}
+if (((nb == M)||(nm==0)) && bad ==0) return 1;
 return 0;
-
 }
 
 ==
 
 solution==
 
-int nbdrapeau(int **t, int H, int L){
 
 int victoire_t(int **t, int H, int L, int M){
 int nb=0;
@@ -130,8 +141,8 @@ int main(int argc, char* argv[]){
 
 checks_args_stdin==#|python|
 [["Test un", ["test1"], ""],
-["Test deux ", ["test2"], ""]
-["Test trois ", ["test3"], ""]
+["Test deux ", ["test2"], ""],
+["Test trois ", ["test3"], ""],
 ["Test quatre ", ["test4"], ""]]
 ==
 
