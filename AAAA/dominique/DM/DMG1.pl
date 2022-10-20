@@ -176,12 +176,12 @@ int main(int argc, char* argv[]){
 
 ==
 
-@ jeudedepart.ga
-@ nbmines.ga
+@ jeudedepart.ga [test1]
+@ nbmines.ga [test2]
 
 checks_args_stdin==#|python|
-[["Test un", ["jeudedepart.ga"], ""],
-["Test deux ", ["nbmines.ga"], ""]
+[["Test un", ["test1"], ""],
+["Test deux ", ["test2"], ""]
 ]
 ==
 
