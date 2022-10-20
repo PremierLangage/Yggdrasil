@@ -20,7 +20,7 @@ et qui retourne le nombre de mines sur les 8 cases adjacente de la case de coord
 avec le terrain suivant on a  
 nbmines(...,0,1)-> 1  
 nbmines(...,1,1)-> 2  
-nbmines(...,2,2)-> 1  
+nbmines(...,2,2)-> 0  
 nbmines(...,0,2)-> 1 ne pas compter la mine en 0,2
 
 
