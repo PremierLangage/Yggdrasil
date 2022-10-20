@@ -10,12 +10,12 @@ title = DM - Victoire
 tag=DM
 
 text==#|markdown|
-Écrire une function **victoir_te** qui prend  
+Écrire une function **victoir_t** qui prend  
 
 - l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers)  
 - un entier representant la hauteur du terrain  
 - un entier la largeur  
-- un entier le nombre de mines
+- un entier le nombre de mines  
 et qui retourne si oui ou non c'est une victoire.
 
 La condition de victoire est:
@@ -37,7 +37,7 @@ for(int i=0; i < H; i++)
         if (t[i][j]==-10) bad++;
         if (t[i][j]==0) nm++;
     }
-}
+
 if (((nb == M)||(nm==0)) && bad ==0) return 1;
 return 0;
 }
@@ -58,7 +58,7 @@ for(int i=0; i < H; i++)
         if (t[i][j]==-10) bad++;
         if (t[i][j]==0) nm++;
     }
-}
+
 if (((nb == M)||(nm==0)) && bad ==0) return 1;
 return 0;
 }
@@ -124,10 +124,14 @@ code_after==#|c|
 // lire un fichier et faire afficher le fichier
 // l'etudiant doit ecrire la fonction print_t
 int main(int argc, char* argv[]){
-
-    FILE *f= fopen(argv[1],"r") ;
-    Game *g= readGame(f);
-    print("Victoire :",victoire_t(g->t,g->H,g->L));
+    FILE *f;
+    Game *g;
+    while (*++argv){
+        f= fopen(*argv,"r") ;
+        g= readGame(f);
+        printf("Victoire %s : %d",*argv, victoire_t(g->t,g->H,g->L,g->M));
+        fclose(f);
+    }
 
   return 0;
 }
@@ -140,10 +144,7 @@ int main(int argc, char* argv[]){
 @ jeudedepart.ga [test4]
 
 checks_args_stdin==#|python|
-[["Test un", ["test1"], ""],
-["Test deux ", ["test2"], ""],
-["Test trois ", ["test3"], ""],
-["Test quatre ", ["test4"], ""]]
+[["Test un", ["test1","test2","test3","test4"], ""]]
 ==
 
 
