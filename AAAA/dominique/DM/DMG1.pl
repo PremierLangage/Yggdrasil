@@ -164,6 +164,7 @@ code_after==#|c|
 // l'etudiant doit ecrire la fonction print_t
 int main(int argc, char* argv[]){
 
+    FILE *f= fopen(argv[1],"r") ;
     Game *g= mallocGame(
 
   return 0;
