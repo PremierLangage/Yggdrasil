@@ -18,11 +18,11 @@ text==#|markdown|
 - un entier le nombre de mines  
 et qui retourne si oui ou non c'est une victoire.
 
-La condition de victoire est:
-- soit il y a autant de drapeaux que de mines et que les drapeaux sont bien placés.
-- soit toutes les cases sans mines sont découvertes (et les mines ne sont pas découverte).
+La condition de victoire est:  
+- soit il y a autant de drapeaux que de mines et que les drapeaux sont bien placés.  
+- soit toutes les cases sans mines sont découvertes (et les mines ne sont pas découverte).  
 
-
+Attention le test est un peu long.
 ==
 
 editor.code==#|C|
@@ -129,7 +129,7 @@ int main(int argc, char* argv[]){
     while (*++argv){
         f= fopen(*argv,"r") ;
         g= readGame(f);
-        printf("Victoire %s : %d",*argv, victoire_t(g->t,g->H,g->L,g->M));
+        printf("Victoire %s : %d\n",*argv, victoire_t(g->t,g->H,g->L,g->M));
         fclose(f);
     }
 
