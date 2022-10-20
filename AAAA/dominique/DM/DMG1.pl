@@ -44,12 +44,12 @@ Dans cet exercice on suppose que la structure de type Game a 3 champs qui sont :
 - un tableau de hauteur pointeurs sur des tableaux de largeur entiers **t**
 
 ==
-editor.code==#|c|
+editorXcode==#|c|
 void print_t(Game ...){
 ...
 }
 ==
-editorXcode==#|c|
+editor.code==#|c|
 // impression de la matrice de jeu dans un fichier
 
 void fprint_t(FILE *f, int h, int *t[], int l)
