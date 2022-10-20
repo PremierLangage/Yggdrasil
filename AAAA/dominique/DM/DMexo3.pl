@@ -18,7 +18,7 @@ text==#|markdown|
 et qui retourne si oui ou non c'est une victoire.
 
 La condition de victoire est:
-- soit il y a autant de drapeau que de mines et que les drapeaux sont bien placés.
+- soit il y a autant de drapeaux que de mines et que les drapeaux sont bien placés.
 - soit toutes les cases sans mines sont découvertes (et les mines ne sont pas découverte).
 
 
@@ -30,6 +30,8 @@ solution==
 
 
 int victoire(int **t, int H, int L){
+
+return 0;
 
 }
 
@@ -97,7 +99,7 @@ int main(int argc, char* argv[]){
 
     FILE *f= fopen(argv[1],"r") ;
     Game *g= readGame(f);
-    print_g(g);
+    print("Victoire :",victoire(g->t,g->H,g->L));
 
   return 0;
 }
