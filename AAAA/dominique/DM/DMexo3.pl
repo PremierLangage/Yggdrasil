@@ -10,7 +10,7 @@ title = DM - Victoire
 tag=DM
 
 text==#|markdown|
-Écrire une function **victoir_t** qui prend  
+Écrire une function **victoire_t** qui prend  
 
 - l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers)  
 - un entier representant la hauteur du terrain  
@@ -118,8 +118,6 @@ Game *readGame(FILE *f)
 
 void fprint_t(FILE *f, int h, int *t[], int l)
 {
-    int c;
-    int bb = 0;
 
     for (int i = 0; i < h; i++)
     {
@@ -180,4 +178,5 @@ checks_args_stdin==#|python|
 [["Test un", ["test1","test2","test3","test4"], ""]]
 ==
 
+astuces=[]
 
