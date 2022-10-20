@@ -111,14 +111,14 @@ int main(int argc, char* argv[]){
     int H, L, M, **t, a, b, c, d;
     printf("%s\n",argv[1]);
     FILE* f = fopen(argv[1],"r");
-    t = read_t(f,&H,&L,&M);
-    Game g={
+    Game g= = readGame(f);
+
     scanf("%d%d%d%d", &a, &b, &c, &d);
-    Drapeau_t(H,L,a,b,t);
-    print_t(t, H, L);
+    Drapeau_g(g,a,b);
+    print_g(g);
     printf("\n");
-    Drapeau_t(H,L,c,d,t);
-    print_t(t, H, L);
+    Drapeau_g(g,c,d);
+    print_g(g);
   
   return 0;
 }
