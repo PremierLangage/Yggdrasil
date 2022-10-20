@@ -85,7 +85,7 @@ solution==#|c|
 ==
 
 code_before==#|c|
-
+#include <stdio.h>
 #include <stdlib.h>
 struct _game
 {
