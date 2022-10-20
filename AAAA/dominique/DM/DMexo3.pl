@@ -4,7 +4,7 @@ extends=DMexo1.pl
 
 
 
-title= DM - Victoire
+title = DM - Victoire
 
 
 tag=DM
@@ -145,4 +145,5 @@ checks_args_stdin==#|python|
 ["Test trois ", ["test3"], ""],
 ["Test quatre ", ["test4"], ""]]
 ==
+
 
