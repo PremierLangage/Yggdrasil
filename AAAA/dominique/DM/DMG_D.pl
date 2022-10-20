@@ -12,7 +12,7 @@ text==#|markdown|
 Écrire une function **Drapeau_g** qui prend
 
 - une structure Game en paramêtre
-- deux entiers représentant les coordonées du choix de la casr   
+- deux entiers représentant les coordonées du choix de la case   
 
 
 et ajoute un drapeau aux coordonées choisient si la case est non découverte, enlève le drapeau si il y a un drapeau, et ne fait rien si la case est découverte.   
@@ -111,7 +111,7 @@ int main(int argc, char* argv[]){
     int H, L, M, **t, a, b, c, d;
     printf("%s\n",argv[1]);
     FILE* f = fopen(argv[1],"r");
-    Game g= = readGame(f);
+    Game *g = readGame(f);
     scanf("%d%d%d%d", &a, &b, &c, &d);
     Drapeau_g(g,a,b);
     print_g(g);
