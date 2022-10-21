@@ -61,5 +61,16 @@ title= Excercice de démonstration du model pltest
 
 text==
 
+Ecrire un deux fonctions carre et cube qui calcul le carre et le cube du parametre 
 
 ==
+
+editor.code==
+def carre(i):
+    return i*i
+
+def cube(i):
+    return i*i*i
+
+==
+
