@@ -179,16 +179,18 @@ int main(int argc, char* argv[]){
     int H, L, M, **t, a, b;
     printf("%s\n",argv[1]);
     FILE* f = fopen(argv[1],"r");
-    t = read_t(f,&H,&L,&M);
+    g = readGame(f);
 
     scanf(" %d %d", &a, &b);
-    if (Pied_t(H,L,a,b,t)) printf("\nBoom!\n");
-    print_t(t, H, L);
+    print_g(g);
+    printf("Click on %d %d \n",a,b);
+    if (Pied_g(g,a,b)) printf("\nBoom!\n");
     printf("\n");
     scanf(" %d %d", &a, &b);
-    if (Pied_t(H,L,a,b,t)) printf("\nBoom!\n");
-    print_t(t, H, L);
-  
+    print_g(g);
+    printf("Click on %d %d \n",a,b);
+    if (Pied_g(g,a,b)) printf("\nBoom!\n");
+    
   return 0;
 }
 
