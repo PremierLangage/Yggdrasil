@@ -25,7 +25,7 @@ La condition de victoire est:
 Attention le test est un peu long.
 ==
 
-editor.code==#|C|
+editorXcode==#|C|
 int victoire_g(Game *g){
 int nb=0;
 int bad=0;
@@ -69,85 +69,63 @@ return 0;
 
 
 
-
 code_before==#|c|
+
 #include <stdio.h>
 #include <stdlib.h>
-struct _game
+#include <string.h>
+#include <math.h>
+#include <time.h>
+int **read_t(FILE *f, int *H, int *L, int *M)
 {
-    int termine;
-    int H;
-    int L;
-    int M;
     int **t;
-};
-
-typedef struct _game Game;
-
-// allocation de la structure game
-// et d'une matrice de taille H*L et initialisation à 0
-void *mallocGame(int H, int L, int M)
-{
-    Game *g = malloc(sizeof(Game));
-    g->termine = 0;
-    g->H = H;
-    g->L = L;
-    g->M = M;
-    g->t = calloc(1, H * sizeof(int *));
-    for (int i = 0; i < H; i++)
+    fscanf(f, "%d %d %d", H, L, M);
+    t = malloc(*H * sizeof(int *));
+    for (int i = 0; i < *H; i++)
     {
-        g->t[i] = calloc(1, L * sizeof(int));
+        t[i] = malloc(*L * sizeof(int));
     }
-    return g;
-}
 
-
-Game *readGame(FILE *f)
-{
-    int H, L, M;
-    fscanf(f, "%d %d %d", &H, &L, &M);
-    Game *g = mallocGame(H, L, M);
-    int **t = g->t;
-    for (int i = 0; i < H; i++)
+    for (int i = 0; i < *H; i++)
     {
-        for (int j = 0; j < L; j++)
+        for (int j = 0; j < *L; j++)
         {
             fscanf(f, "%d", &(t[i][j]));
         }
     }
-    return g;
+    return t;
 }
 
-void fprint_t(FILE *f, int h, int *t[], int l)
-{
-
-    for (int i = 0; i < h; i++)
+int **alloc_t(int H, int L)
+{ // calloc inits memory with zeros
+    int **t = calloc(1, H * sizeof(int *));
+    for (int i = 0; i < H; i++)
     {
-        for (int j = 0; j < l; j++)
-        {
-            fprintf(f, "%d ", t[i][j]);
-        }
-        fprintf(f, "\n");
+        t[i] = calloc(1, L * sizeof(int));
     }
+    return t;
 }
 
-// affichage de la matrice de jeu sur stdout
-void print_t(int h, int *t[], int l)
+// alloc and create a new terrain
+int **random_t(int H, int L, int M, int seed)
 {
-    fprint_t(stdout, h, t, l);
-}
+    // alloc
+    if (seed) srand(time(NULL));
 
-void saveGame(FILE *f, Game *g)
-{
-    fprintf(f, "%d %d %d\n", g->H, g->L, g->M);
-    fprint_t(f, g->H, g->t, g->L);
+    int **t = alloc_t(H, L);
+    // random mines (M)
+    for (int i = 0; i < M; i++)
+    {
+        int h, l;
+        do
+        {
+            h = rand() % H;
+            l = rand() % L;
+        } while (t[h][l] == 9);
+        t[h][l] = 9;
+    }
+    return t;
 }
-
-void print_g(Game *g)
-{
-    saveGame(stdout, g);
-}
-
 ==
 
 code_after==#|c|
@@ -162,7 +140,7 @@ int main(int argc, char* argv[]){
         g= readGame(f);
         printf("\n");
         print_g(g);
-        printf("Victoire %s : %d\n",*argv, victoire_g(g));
+        printf("Victoire %s : %d\n",*argv, victoire_t(g->t,g->H,g->L,g->M));
         fclose(f);
     }
 
