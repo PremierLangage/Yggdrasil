@@ -57,3 +57,9 @@ form=@ /form/text_editor.html
 settings.allow_reroll=1
 
 
+title= Excercice de démonstration du model pltest
+
+text==
+
+
+==
