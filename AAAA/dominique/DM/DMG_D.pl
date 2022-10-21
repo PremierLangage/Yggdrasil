@@ -139,7 +139,7 @@ void printGame(Game *g)
 code_after==#|c|
 
 int main(int argc, char* argv[]){
-    int H, L, M, **t, a, b, c, d;
+    int  a, b, c, d;
     printf("%s\n",argv[1]);
     FILE* f = fopen(argv[1],"r");
     Game *g = readGame(f);
