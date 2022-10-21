@@ -224,6 +224,12 @@ Game *readGame(FILE *f)
 
 code_after==#|c|
 
+void print_g(Game *g)
+{
+    saveGame(stdout, g);
+}
+
+
 int main(int argc, char* argv[]){
     int a,b;
     //printf("%s\n",argv[1]);
