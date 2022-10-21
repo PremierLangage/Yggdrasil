@@ -55,7 +55,7 @@ Pour rappel, le code est le suivant :
 editor.code==#|c|
 
 
-int Pied_G(Game ..., int i, int j){
+int Pied_G(Game *g, int i, int j){
     return 0;
 }
 
