@@ -78,7 +78,7 @@ int main(int argc, char* argv[]){
         g= readGame(f);
         printf("\n");
         print_g(g);
-        printf("Victoire %s : %d\n",*argv, victoire_t(g->t,g->H,g->L,g->M));
+        printf("Victoire %s : %d\n",*argv, victoire_g(g));
         fclose(f);
     }
 
