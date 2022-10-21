@@ -95,9 +95,16 @@ D'autres exercices seront ajoutés au fur et à mesure.
 
 @ section.pl
 
-# @ DMG1.pl # Print_g 
+@ DMG1.pl # Print_g 
 
-# @ DMG2.pl #  hasmine_g 
+@ DMG2.pl #  hasmine_g 
+
+@ DMG3.pl # Victoire
+
+@ DMG_D.pl # Drapeau Click Droit 
+
+
+@ DMG_P.pl # Click gauche 
 
 
 
