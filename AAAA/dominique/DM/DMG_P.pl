@@ -224,6 +224,16 @@ Game *readGame(FILE *f)
 
 code_after==#|c|
 
+
+void saveGame(FILE *f, Game *g)
+{
+    fprintf(f, "%d %d %d\n", g->H, g->L, g->M);
+    fprint_t(f, g->H, g->t, g->L);
+}
+
+
+
+
 void print_g(Game *g)
 {
     saveGame(stdout, g);
