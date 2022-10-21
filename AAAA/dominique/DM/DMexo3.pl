@@ -25,7 +25,7 @@ La condition de victoire est:
 Attention le test est un peu long.
 ==
 
-editor.code==#|C|
+editorXcode==#|C|
 
 int victoire_t(int **t, int H, int L, int M){
 int nb=0;
