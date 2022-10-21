@@ -25,13 +25,12 @@ La condition de victoire est:
 Attention le test est un peu long.
 ==
 
-editorXcode==#|C|
-int victoire_g(Game *g){
+editor.code==#|C|
+
+int victoire_t(int **t, int H, int L, int M){
 int nb=0;
 int bad=0;
 int nm=0;
-int H=g->H,L=g->L,M=g->M;
-int **t=g->t;
 for(int i=0; i < H; i++)
     for(int j=0; j< L; j++)
     {
