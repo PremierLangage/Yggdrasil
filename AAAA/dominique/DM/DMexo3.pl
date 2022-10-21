@@ -75,6 +75,87 @@ code_before==#|c|
 #include <string.h>
 #include <math.h>
 #include <time.h>
+
+#include <stdio.h>
+#include <stdlib.h>
+struct _game
+{
+    int termine;
+    int H;
+    int L;
+    int M;
+    int **t;
+};
+
+typedef struct _game Game;
+
+// allocation de la structure game
+// et d'une matrice de taille H*L et initialisation à 0
+void *mallocGame(int H, int L, int M)
+{
+    Game *g = malloc(sizeof(Game));
+    g->termine = 0;
+    g->H = H;
+    g->L = L;
+    g->M = M;
+    g->t = calloc(1, H * sizeof(int *));
+    for (int i = 0; i < H; i++)
+    {
+        g->t[i] = calloc(1, L * sizeof(int));
+    }
+    return g;
+}
+
+
+Game *readGame(FILE *f)
+{
+    int H, L, M;
+    fscanf(f, "%d %d %d", &H, &L, &M);
+    Game *g = mallocGame(H, L, M);
+    int **t = g->t;
+    for (int i = 0; i < H; i++)
+    {
+        for (int j = 0; j < L; j++)
+        {
+            fscanf(f, "%d", &(t[i][j]));
+        }
+    }
+    return g;
+}
+
+
+void fprint_t(FILE *f, int h, int *t[], int l)
+{
+    for (int i = 0; i < h; i++)
+    {
+        for (int j = 0; j < l; j++)
+        {
+            fprintf(f, "%d ", t[i][j]);
+        }
+        fprintf(f, "\n");
+    }
+}
+
+// affichage de la matrice de jeu sur stdout
+void print_t(int h, int *t[], int l)
+{
+    fprint_t(stdout, h, t, l);
+}
+
+void saveGame(FILE *f, Game *g)
+{
+    fprintf(f, "%d %d %d\n", g->H, g->L, g->M);
+    fprint_t(f, g->H, g->t, g->L);
+}
+
+void printGame(Game *g)
+{
+    saveGame(stdout, g);
+}
+
+
+
+
 int **read_t(FILE *f, int *H, int *L, int *M)
 {
     int **t;
