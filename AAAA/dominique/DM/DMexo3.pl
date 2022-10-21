@@ -148,7 +148,7 @@ void saveGame(FILE *f, Game *g)
     fprint_t(f, g->H, g->t, g->L);
 }
 
-void printGame(Game *g)
+void print_g(Game *g)
 {
     saveGame(stdout, g);
 }
