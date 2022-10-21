@@ -176,7 +176,7 @@ int nbmines_t(int h, int l, int *t[], int i, int j)
 code_after==#|c|
 
 int main(int argc, char* argv[]){
-    int H, L, M, **t, a, b;
+    int a,b;
     printf("%s\n",argv[1]);
     FILE* f = fopen(argv[1],"r");
     g = readGame(f);
