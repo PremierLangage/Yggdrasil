@@ -257,15 +257,14 @@ int main(int argc, char* argv[]){
     Game *g = readGame(f);
 
     scanf(" %d %d", &a, &b);
-    print_g(g);
     printf("Click on %d %d \n",a,b);
-    if (Pied_g(g,a,b)) printf("\nBoom!\n");
-    printf("\n");
+    if (Pied_g(g,a,b)) printf("Boom!\n");
+    print_g(g);
     scanf(" %d %d", &a, &b);
-    print_g(g);
+
     printf("Click on %d %d \n",a,b);
-    if (Pied_g(g,a,b)) printf("\nBoom!\n");
-    
+    if (Pied_g(g,a,b)) printf("Boom!\n");
+    print_g(g);
   return 0;
 }
 
