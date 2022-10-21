@@ -76,7 +76,7 @@ int Pied_t(int H, int L, int i, int j, int* t[]){
     return 0;
 }
 
-int Pied_g(Game *g){
+int Pied_g(Game *g, int i, int j){
     return Pied_t(g->H,g->L,i,j, g->t);
 }
 
