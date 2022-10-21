@@ -105,9 +105,6 @@ int nbmines_g(Game *g, int i, int j)
 
 void fprint_t(FILE *f, int h, int *t[], int l)
 {
-    int c;
-    int bb = 0;
-
     for (int i = 0; i < h; i++)
     {
         for (int j = 0; j < l; j++)
