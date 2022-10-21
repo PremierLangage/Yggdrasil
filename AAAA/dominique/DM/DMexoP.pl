@@ -20,17 +20,17 @@
 
 extends=/ComputerScience/C/template/std_progC17_clang.pl
 
-author=DR 
+author=Julien Roupin
 
-title= DM - Struct - Pied 
+title= DM - Pied 
 tag=DM
 
 text==#|markdown|
-Écrire une function **Pied_g** qui prend
+Écrire une function **Pied** qui prend
 
-- une structure Game 
-- deux entiers représentant les coordonées de la case à tester (click gauche)  
-  
+- deux entiers représentant les dimensions de la grille   
+- deux entiers représentant les coordonées du choix   
+- la grille   
 
 et pose le pied aux coordonées choisient si la case est non découverte et sans drapeau, et ne fait rien si la case est déjà découverte ou a un drapeau.   
 
@@ -54,8 +54,8 @@ Pour rappel, le code est le suivant :
 editor.code==#|c|
 
 
-int Pied_G(Game ..., int i, int j){
-    return 0;
+int Pied_t(int H, int L, int i, int j, int* t[]){
+    
 }
 
 ==
@@ -75,9 +75,6 @@ int Pied_t(int H, int L, int i, int j, int* t[]){
     return 0;
 }
 
-int Pied_g(Game *g){
-    return Pied_t(g->H,g->L,i,j, g->t);
-}
 
 ==
 
@@ -176,21 +173,19 @@ int nbmines_t(int h, int l, int *t[], int i, int j)
 code_after==#|c|
 
 int main(int argc, char* argv[]){
-    int a,b;
+    int H, L, M, **t, a, b;
     printf("%s\n",argv[1]);
     FILE* f = fopen(argv[1],"r");
-    g = readGame(f);
+    t = read_t(f,&H,&L,&M);
 
     scanf(" %d %d", &a, &b);
-    print_g(g);
-    printf("Click on %d %d \n",a,b);
-    if (Pied_g(g,a,b)) printf("\nBoom!\n");
+    if (Pied_t(H,L,a,b,t)) printf("\nBoom!\n");
+    print_t(t, H, L);
     printf("\n");
     scanf(" %d %d", &a, &b);
-    print_g(g);
-    printf("Click on %d %d \n",a,b);
-    if (Pied_g(g,a,b)) printf("\nBoom!\n");
-    
+    if (Pied_t(H,L,a,b,t)) printf("\nBoom!\n");
+    print_t(t, H, L);
+  
   return 0;
 }
 
