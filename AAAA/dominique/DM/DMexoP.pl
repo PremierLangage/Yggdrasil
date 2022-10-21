@@ -20,17 +20,17 @@
 
 extends=/ComputerScience/C/template/std_progC17_clang.pl
 
-author=Julien Roupin
+author=DR 
 
-title= DM - Pied 
+title= DM - Struct - Pied 
 tag=DM
 
 text==#|markdown|
-Écrire une function **Pied** qui prend
+Écrire une function **Pied_g** qui prend
 
-- deux entiers représentant les dimensions de la grille   
-- deux entiers représentant les coordonées du choix   
-- la grille   
+- une structure Game 
+- deux entiers représentant les coordonées de la case à tester (click gauche)  
+  
 
 et pose le pied aux coordonées choisient si la case est non découverte et sans drapeau, et ne fait rien si la case est déjà découverte ou a un drapeau.   
 
@@ -54,8 +54,8 @@ Pour rappel, le code est le suivant :
 editor.code==#|c|
 
 
-int Pied_t(int H, int L, int i, int j, int* t[]){
-    
+int Pied_G(Game ..., int i, int j){
+    return 0;
 }
 
 ==
@@ -75,6 +75,9 @@ int Pied_t(int H, int L, int i, int j, int* t[]){
     return 0;
 }
 
+int Pied_g(Game *g){
+    return Pied_t(g->H,g->L,i,j, g->t);
+}
 
 ==
 
