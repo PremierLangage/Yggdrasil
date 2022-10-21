@@ -54,6 +54,12 @@ Pour rappel, le code est le suivant :
 
 editor.code==#|c|
 
+    Pied_g()
+
+==
+
+editorXcode==#|c|
+
 
 int Pied_t(int H, int L, int i, int j, int* t[]){
     switch(t[i][j]){
