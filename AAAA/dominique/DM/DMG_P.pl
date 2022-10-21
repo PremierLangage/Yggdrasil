@@ -89,6 +89,16 @@ code_before==#|c|
 #include <string.h>
 #include <math.h>
 
+struct _game
+{
+    int termine;
+    int H;
+    int L;
+    int M;
+    int **t;
+};
+
+typedef struct _game Game;
 
 int **read_t(FILE *f, int *H, int *L, int *M)
 {
