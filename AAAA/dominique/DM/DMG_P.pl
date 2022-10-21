@@ -228,7 +228,7 @@ int main(int argc, char* argv[]){
     int a,b;
     //printf("%s\n",argv[1]);
     FILE* f = fopen(argv[1],"r");
-    g = readGame(f);
+    Game *g = readGame(f);
 
     scanf(" %d %d", &a, &b);
     print_g(g);
