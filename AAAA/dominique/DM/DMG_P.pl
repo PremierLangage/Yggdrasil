@@ -100,6 +100,24 @@ struct _game
 
 typedef struct _game Game;
 
+
+// allocation de la structure game
+// et d'une matrice de taille H*L et initialisation à 0
+void *mallocGame(int H, int L, int M)
+{
+    Game *g = malloc(sizeof(Game));
+    g->termine = 0;
+    g->H = H;
+    g->L = L;
+    g->M = M;
+    g->t = calloc(1, H * sizeof(int *));
+    for (int i = 0; i < H; i++)
+    {
+        g->t[i] = calloc(1, L * sizeof(int));
+    }
+    return g;
+}
+
 int **read_t(FILE *f, int *H, int *L, int *M)
 {
     int **t;
