@@ -12,7 +12,7 @@ param.coeff = "1, 2, 3, 1/2, 1/3, sqrt(2), sqrt(3)"
 
 before ==
 from randsympy import randpoly
-
+from sympy.polys.polytools import quo, rem
 var('X')
 P = randpoly(3, randint(2,3), 5, X)
 Q = randpoly(1, 2, 5, X)
@@ -21,10 +21,10 @@ prefixes = []
 inputs = [MathInput(type="poly"), MathInput(type="poly")]
 
 prefixes.append("quotient :")
-inputs[0].sol =  P//Q
+inputs[0].sol =  quo(P, Q)
 
 prefixes.append("reste :")
-inputs[1].sol =  P%Q
+inputs[1].sol =  rem(P, Q)
 ==
 
 question ==
