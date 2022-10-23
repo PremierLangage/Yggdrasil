@@ -14,8 +14,8 @@ before ==
 from randsympy import randpoly
 from sympy.polys.polytools import quo, rem
 var('X')
-P = randpoly(3, randint(2,3), 5, X)
-Q = randpoly(1, 2, 5, X)
+P = Poly(randpoly(3, randint(2,3), 5, X), X)
+Q = Poly(randpoly(1, 2, 5, X), X)
 
 prefixes = []
 inputs = [MathInput(type="poly"), MathInput(type="poly")]
