@@ -7,9 +7,6 @@ extends = /model/math/multimathinput.pl
 
 title = Division euclidienne
 
-param.genP = "Poly(randpoly(3, 3, 4, X), X)"
-param.genQ = "Poly(X + randint(-3, 3), X)"
-
 before ==
 from randsympy import randpoly
 from sympy.polys.polytools import quo, rem
