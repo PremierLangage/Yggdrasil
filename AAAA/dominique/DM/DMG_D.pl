@@ -56,7 +56,7 @@ void Drapeau_g(Game *g, int i, int j){
 
 ==
 
-code_before==
+code_before==#|c|
 #include <stdio.h>
 #include <stdlib.h>
 struct _game
@@ -145,10 +145,10 @@ int main(int argc, char* argv[]){
     Game *g = readGame(f);
     scanf("%d%d%d%d", &a, &b, &c, &d);
     Drapeau_g(g,a,b);
-    print_g(g);
+    printGame(g);
     printf("\n");
     Drapeau_g(g,c,d);
-    print_g(g);
+    printGame(g);
   
   return 0;
 }
