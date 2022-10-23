@@ -20,13 +20,13 @@ Q = randpoly(1, 2, 5, X)
 prefixes = []
 inputs = [MathInput(type="poly"), MathInput(type="poly")]
 
-prefixes.append("quotien :")
+prefixes.append("quotient :")
 inputs[0].sol =  P//Q
 
-prefixes.append("rest :")
+prefixes.append("reste :")
 inputs[1].sol =  P%Q
 ==
 
 question ==
-Déterminer le module et un argument du nombre complexe $! z= {{ z|latex }} !$.
+Effectuer la division euclidienne du polynôme $! {{ P|latex }} !$ par le poynôme $! {{ Q|latex }} !$ .
 ==
