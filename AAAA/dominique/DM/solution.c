@@ -121,10 +121,6 @@ void print_t(int h, int *t[], int l)
     fprint_t(stdout, h, t, l);
 }
 
-void print_g(Game g)
-{
-    print_t(g.H, g.t, g.L);
-}
 
 void saveGame(FILE *f, Game *g)
 {
