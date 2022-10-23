@@ -7,15 +7,15 @@ extends = /model/math/multimathinput.pl
 
 title = Division euclidienne
 
-param.genP = "I, -I, 1, -1, 1+I, 1-I, I-1, -1-I"
-param.genQ = "1, 2, 3, 1/2, 1/3, sqrt(2), sqrt(3)"
+param.genP = "Poly(randpoly(3, randint(2,3), 5, X), X)"
+param.genQ = "Poly(randpoly(1, 2, 5, X), X)"
 
 before ==
 from randsympy import randpoly
 from sympy.polys.polytools import quo, rem
 var('X')
-P = Poly(randpoly(3, randint(2,3), 5, X), X)
-Q = Poly(randpoly(1, 2, 5, X), X)
+P = eval(param['genP'])
+Q = eval(param['genQ'])
 
 prefixes = []
 inputs = [MathInput(type="poly"), MathInput(type="poly")]
