@@ -14,8 +14,6 @@ C
 python
 ==
 
-languages.test = bonjour
-
 showWanted = False
 
 testcases==
