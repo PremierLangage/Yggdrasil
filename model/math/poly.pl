@@ -10,10 +10,11 @@ symbol_dict = {'e': E}
 unauthorized_func = []
 poly_form =
 poly_domain = "R"
+poly_var = "x"
 
 evalparam ==
 from sympy import poly
-poly_var = str(poly(sol).gen)
+
 input.evalparam = {'var': poly_var, 'form': poly_form, 'domain': poly_domain}
 ==
 
