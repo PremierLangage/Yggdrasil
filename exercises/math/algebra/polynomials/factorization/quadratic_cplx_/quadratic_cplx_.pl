@@ -38,6 +38,6 @@ $$P(X)= {{ expr|latex }}.$$
 
 
 solution ==
-Une factorisation dans $! \mathbb{C} !$ de cette expression est $! {{ sol|latex }} !$.
+Une factorisation dans $! \mathbb{C} !$ de ce polynôme est $! {{ sol|latex }} !$.
 ==
 
