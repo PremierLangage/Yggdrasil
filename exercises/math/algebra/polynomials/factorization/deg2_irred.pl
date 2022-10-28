@@ -20,7 +20,7 @@ for i in range(4):
         indsol.append(i)
     P = a*x**2+b*x+c
     if randint(0, 1) == 1:
-        P = P * (x - randint(-3, 3, [0])
+        P = P * (x - randint(-3, 3, [0]))
     items.append(r"$! %s !$" % latex(P))
 ==
 
