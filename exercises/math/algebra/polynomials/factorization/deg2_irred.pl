@@ -20,7 +20,8 @@ for i in range(4):
         indsol.append(i)
     P = a*x**2+b*x+c
     if randint(0, 1) == 1:
-        P = P * (x - randint(-3, 3, [0]))
+        Q = randint(1, 3) *x + randint(-3, 3, [0])
+        P = choice([Q*P, P*Q])
     items.append(r"$! %s !$" % latex(P))
 ==
 
