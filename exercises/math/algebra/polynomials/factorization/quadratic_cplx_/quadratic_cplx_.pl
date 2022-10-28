@@ -8,6 +8,8 @@ poly_form = "factorized"
 
 poly_domain = "C"
 symbol_dict = {'e': E, 'i': I}
+poly_var = "X"
+
 
 before ==
 from sympy import factor, content, solveset, S
