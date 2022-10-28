@@ -12,14 +12,7 @@ var('X')
 P = eval(param['genP'])
 Q = eval(param['genQ'])
 
-prefixes = []
-inputs = [MathInput(type="poly", evalparam = {'var': "X", 'form': "factorized", 'domain': "C"}), MathInput(type="poly", evalparam = {'var': "X", 'form': "factorized", 'domain': "R"})]
 
-prefixes.append("factorisation dans $! \mathbb{C} !$ :")
-inputs[0].sol =  solC
-
-prefixes.append("factorisation dans $! \mathbb{R} !$ :")
-inputs[1].sol =  solR
 ==
 
 
@@ -35,13 +28,22 @@ r = choice([-1,1])*r
 a=choice([-1,1])*a
 c=choice([-1,1])*c
 
-P = (x-x1)*(x-q+r*I)*(x-q-r*I)
+Q1 = (x-q+r*I)*(x-q-r*I)
+Q2 = Q1.expand()
+coeff = choice([-1,1])*choice([1 , 2])
+solC = factor(coeff*(x-x1)*Q1)
+solR = factor(coeff*(x-x1)*Q2)
 
+expr = solR.expand()
 
-P = choice([-1,1])*choice([1 , 2])*P/content(P)
+prefixes = []
+inputs = [MathInput(type="poly", evalparam = {'var': "X", 'form': "factorized", 'domain': "C"}), MathInput(type="poly", evalparam = {'var': "X", 'form': "factorized", 'domain': "R"})]
 
-sol = factor(P)
-expr = P.expand()
+prefixes.append("factorisation dans $! \mathbb{C} !$ :")
+inputs[0].sol =  solC
+
+prefixes.append("factorisation dans $! \mathbb{R} !$ :")
+inputs[1].sol =  solR
 ==
 
 question ==
