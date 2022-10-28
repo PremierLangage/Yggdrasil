@@ -16,7 +16,11 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-author=Dominique Revuz
+
+grader  =@ /grader/evaluator.py
+builder =@ /builder/before.py
+
+author=Henri Derycke
 
 title= DM - Print terrain 
 tag=DM
