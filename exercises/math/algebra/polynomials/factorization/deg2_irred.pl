@@ -9,7 +9,7 @@ title = Déterminer si une équation quadratique a des solutions
 
 before ==
 from sympy import Eq
-var('x')
+x = Symbol('X')
 indsol = []
 items = []
 for i in range(4):
