@@ -657,7 +657,6 @@ def eval_poly(strans, sol, var='', domain='R', form='', checkratsimp=True, imagi
         x = sp.poly(sol).gens[0]
     else:
         x = sp.Symbol(var)
-    x = sp.poly(sol).gens[0]
     local_dict.update({imaginary_unit: sp.I})
     try:
         ans = latex2sympy(strans, local_dict)
