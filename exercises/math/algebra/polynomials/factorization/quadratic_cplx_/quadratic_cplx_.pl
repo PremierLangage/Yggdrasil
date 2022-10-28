@@ -11,7 +11,7 @@ symbol_dict = {'e': E, 'i': I}
 
 before ==
 from sympy import factor, content, solveset, S
-x = Symbol('X')
+x = Symbol('x')
 
 q, r = sample([1, 2, 3, 4, 5], 2)
 q = choice([-1,1])*q
