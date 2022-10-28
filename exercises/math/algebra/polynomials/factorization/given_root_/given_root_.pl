@@ -45,7 +45,7 @@ expr = P.expand()
 question ==
 Factoriser le polynôme
 $$P(X)= {{ expr|latex }}$$
-en remarquant que $! {{ x1 |latex }} !$ est racine du polynôme.
+en remarquant que $! {{ x1 |latex }} !$ est une racine du polynôme.
 ==
 
 
