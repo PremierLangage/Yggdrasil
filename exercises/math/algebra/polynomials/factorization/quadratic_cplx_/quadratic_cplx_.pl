@@ -6,10 +6,12 @@ extends = /model/math/poly.pl
 
 poly_form = "factorized"
 
+poly_domain = C
+
 
 before ==
 from sympy import factor, content, solveset, S
-var('x')
+x = Symbol('X')
 
 q, r = sample([1, 2, 3, 4, 5], 2)
 q = choice([-1,1])*q
