@@ -9,7 +9,7 @@ checkratsimp = True
 symbol_dict = {'e': E}
 unauthorized_func = []
 poly_form =
-poly_domain = R
+poly_domain = "R"
 
 evalparam ==
 from sympy import poly
