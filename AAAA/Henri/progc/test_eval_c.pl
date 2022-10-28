@@ -16,8 +16,6 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/C/template/std_progC17_clang.pl
-
 author=Dominique Revuz
 
 title= DM - Print terrain 
@@ -42,6 +40,11 @@ affiche le terrain sous forme d'entiers par exemple
 
 rappel: on réalise un https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu_vid%C3%A9o)
 ==
+
+editor =: CodeEditor
+editor.theme=dark
+editor.language=c
+
 editor.code==#|c|
 void print_t(int ..., int *...[], int ...){
 ...
