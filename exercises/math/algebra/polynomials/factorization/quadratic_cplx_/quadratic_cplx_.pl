@@ -6,7 +6,7 @@ extends = /model/math/poly.pl
 
 poly_form = "factorized"
 
-poly_domain = C
+poly_domain = "C"
 symbol_dict = {'e': E, 'i': I}
 
 before ==
