@@ -16,10 +16,10 @@ prefixes = []
 inputs = [MathInput(type="poly"), MathInput(type="poly")]
 
 prefixes.append("factorisation dans $! \mathbb{C} !$ :")
-inputs[0].sol =  quo(P, Q)
+inputs[0].sol =  solC
 
 prefixes.append("factorisation dans $! \mathbb{R} !$ :")
-inputs[1].sol =  rem(P, Q)
+inputs[1].sol =  solR
 ==
 
 
