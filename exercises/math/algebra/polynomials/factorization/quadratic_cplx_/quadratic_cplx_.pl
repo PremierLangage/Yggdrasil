@@ -33,6 +33,7 @@ poly_var = str(poly(sol).gen)
 ==
 
 question ==
+{{ poly_var }}
 Factoriser le polynôme
 $$P(x)= {{ expr|latex }}$$
 $$ {{ P|latex }}$$
