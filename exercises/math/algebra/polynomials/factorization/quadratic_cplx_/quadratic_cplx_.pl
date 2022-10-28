@@ -27,6 +27,9 @@ P = choice([-1,1])*choice([1 , 2])*P/content(P)
 
 sol = factor(P)
 expr = P.expand()
+
+from sympy import poly
+poly_var = str(poly(sol).gen)
 ==
 
 question ==
