@@ -32,7 +32,7 @@ expr = P.expand()
 ==
 
 question ==
-Factoriser le polynôme
+Factoriser dans $! \mathbb{C} !$ et dans $! \mathbb{C} !$  le polynôme
 $$P(x)= {{ expr|latex }}$$
 en remarquant que $! P( {{ x1 |latex }} )=0 !$.
 ==
