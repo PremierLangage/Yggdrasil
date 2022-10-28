@@ -20,12 +20,8 @@ r = choice([-1,1])*r
 a=choice([-1,1])*a
 c=choice([-1,1])*c
 
-if param['roots'] == "int":
-    P = (x-q+r*I)*(x-q-r*I)
-elif param['roots'] == "intrat":
-    P = (x-q)*(a*x-b)
-elif param['roots']=="rat":
-    P = (a*x-b)*(c*x-d)
+P = (x-q+r*I)*(x-q-r*I)
+
 
 P = choice([-1,1])*choice([1 , 2])*P/content(P)
 
