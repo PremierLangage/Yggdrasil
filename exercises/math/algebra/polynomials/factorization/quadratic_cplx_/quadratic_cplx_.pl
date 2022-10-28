@@ -13,7 +13,7 @@ poly_var = "X"
 
 before ==
 from sympy import factor, content, solveset, S
-x = Symbol('x')
+x = Symbol('X')
 
 q, r = sample([1, 2, 3, 4, 5], 2)
 q = choice([-1,1])*q
