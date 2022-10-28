@@ -7,7 +7,7 @@ extends = /model/math/poly.pl
 poly_form = "factorized"
 
 poly_domain = C
-
+symbol_dict = {'e': E, 'i': I}
 
 before ==
 from sympy import factor, content, solveset, S
