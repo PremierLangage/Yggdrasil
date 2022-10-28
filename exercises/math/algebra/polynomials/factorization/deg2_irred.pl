@@ -21,7 +21,7 @@ for i in range(4):
     P = a*x**2+b*x+c
     if randint(0, 1) == 1:
         P = P * (x - randint(-3, 3, [0])
-    items.append(r"$! %s !$" % latex(a*x**2+b*x+c))
+    items.append(r"$! %s !$" % latex(P))
 ==
 
 question ==
