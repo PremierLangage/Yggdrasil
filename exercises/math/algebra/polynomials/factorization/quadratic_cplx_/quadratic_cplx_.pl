@@ -36,6 +36,7 @@ expr = P.expand()
 question ==
 Factoriser le polynôme
 $$P(x)= {{ expr|latex }}$$
+$$ {{ P|latex }}$$
 en remarquant que $! P( {{ x1 |latex }} )=0 !$.
 ==
 
