@@ -2,13 +2,26 @@
 # polynomials
 # 19/8/2020
 
-extends = /model/math/poly.pl
+extends = /model/math/multimathinput.pl
 
-poly_form = "factorized"
 
-param.degree = 2
-param.roots = "int"
-param.givenroot = "int"
+before ==
+from randsympy import randpoly
+from sympy.polys.polytools import quo, rem
+var('X')
+P = eval(param['genP'])
+Q = eval(param['genQ'])
+
+prefixes = []
+inputs = [MathInput(type="poly"), MathInput(type="poly")]
+
+prefixes.append("factorisation dans $! \mathbb{C} !$ :")
+inputs[0].sol =  quo(P, Q)
+
+prefixes.append("factorisation dans $! \mathbb{R} !$ :")
+inputs[1].sol =  rem(P, Q)
+==
+
 
 before ==
 from sympy import factor, content, solveset, S
@@ -32,12 +45,7 @@ expr = P.expand()
 ==
 
 question ==
-Factoriser dans $! \mathbb{C} !$ et dans $! \mathbb{C} !$  le polynôme
+Factoriser dans $! \mathbb{C} !$ et dans $! \mathbb{R} !$  le polynôme
 $$P(x)= {{ expr|latex }}$$
 en remarquant que $! P( {{ x1 |latex }} )=0 !$.
-==
-
-
-solution ==
-Une factorisation de cette expression est $! {{ sol|latex }} !$.
 ==
