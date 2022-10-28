@@ -46,6 +46,9 @@ affiche le terrain sous forme d'entiers par exemple
 rappel: on réalise un https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu_vid%C3%A9o)
 ==
 
+before ==
+==
+
 form ==
 ==
 
