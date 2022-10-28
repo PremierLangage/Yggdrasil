@@ -13,7 +13,7 @@ P = eval(param['genP'])
 Q = eval(param['genQ'])
 
 prefixes = []
-inputs = [MathInput(type="poly"), MathInput(type="poly")]
+inputs = [MathInput(type="poly", evalparam = {'var': "X", 'form': "factorized", 'domain': "C"}), MathInput(type="poly", evalparam = {'var': "X", 'form': "factorized", 'domain': "R"})]
 
 prefixes.append("factorisation dans $! \mathbb{C} !$ :")
 inputs[0].sol =  solC
