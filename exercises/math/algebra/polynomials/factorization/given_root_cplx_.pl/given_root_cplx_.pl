@@ -48,6 +48,7 @@ inputs[1].sol =  solR
 
 question ==
 Factoriser dans $! \mathbb{C} !$ et dans $! \mathbb{R} !$  le polynôme
+{{solR, solC}}
 $$P(x)= {{ expr|latex }}$$
 en remarquant que $! P( {{ x1 |latex }} )=0 !$.
 ==
