@@ -50,7 +50,7 @@ en remarquant que $! {{ x1 |latex }} !$ est racine du polynôme.
 
 
 solution ==
-Une factorisation de cette expression est $! {{ sol|latex }} !$.
+Une factorisation de ce polynôme est $! {{ sol|latex }} !$.
 ==
 
 
