@@ -15,14 +15,14 @@ from sympy import factor, content, solveset, S
 x = Symbol('X')
 
 q, r = sample([1, 2, 3, 4, 5], 2)
-r1, r2 = sample([1, 2, -1, -2], 2)
+x1, x2 = sample([1, 2, -1, -2], 2)
 q = choice([-1,1])*q
 r = choice([-1,1])*r
 [b, a], [d, c] = sample([[1,2],[3,2],[5,2],[1,3],[2,3],[4,3],[5,3],[1,4],[3,4],[5,4],[1,5],[2,5],[3,5],[4,5]], k=2)
 a=choice([-1,1])*a
 c=choice([-1,1])*c
 
-P = (x-r1)*(x-q+r*I)*(x-q-r*I)
+P = (x-x1)*(x-q+r*I)*(x-q-r*I)
 
 
 P = choice([-1,1])*choice([1 , 2])*P/content(P)
