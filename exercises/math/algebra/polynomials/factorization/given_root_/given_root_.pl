@@ -5,14 +5,14 @@
 extends = /model/math/poly.pl
 
 poly_form = "factorized"
-
+poly_var = "X"
 param.degree = 2
 param.roots = "int"
 param.givenroot = "int"
 
 before ==
 from sympy import factor, content
-var('x')
+x = Symbol('X')
 
 q, r, s = sample([1, 2, 3, 4, 5], 3)
 q=choice([-1,1])*q
