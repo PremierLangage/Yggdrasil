@@ -12,7 +12,7 @@ from sympy import Eq
 x = Symbol('X')
 indsol = []
 items = []
-for i in range(4):
+for i in range(5):
     a = randint(-3, 3, [0])
     b = randint(-5, 5)
     c = randint(-3, 3)
