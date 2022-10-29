@@ -48,7 +48,6 @@ inputs[1].sol =  solR
 
 question ==
 Factoriser dans $! \mathbb{C} !$ et dans $! \mathbb{R} !$  le polynôme
-{{solR, solC}}
-$$P(x)= {{ expr|latex }}$$
+$$P(X)= {{ expr|latex }}$$
 en remarquant que $! x1 !$ est une racine du polynôme.
 ==
