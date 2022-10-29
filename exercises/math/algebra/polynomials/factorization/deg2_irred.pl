@@ -5,7 +5,7 @@
 
 extends = /model/math/checkbox.pl
 
-title = Polynômes irréductibles dans R
+title = Polynômes quadratiques irréductibles dans R
 
 before ==
 from sympy import Eq
