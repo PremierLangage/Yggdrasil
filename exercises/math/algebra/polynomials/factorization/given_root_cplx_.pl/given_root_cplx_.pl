@@ -50,5 +50,5 @@ question ==
 Factoriser dans $! \mathbb{C} !$ et dans $! \mathbb{R} !$  le polynôme
 {{solR, solC}}
 $$P(x)= {{ expr|latex }}$$
-en remarquant que $! P( {{ x1 |latex }} )=0 !$.
+en remarquant que $! x1 !$ est une racine du polynôme.
 ==
