@@ -10,6 +10,9 @@ param.degree = 2
 param.roots = "int"
 param.givenroot = "int"
 
+title = Factorisaation (racine donnée)
+
+
 before ==
 from sympy import factor, content
 x = Symbol('X')
