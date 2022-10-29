@@ -7,17 +7,6 @@ extends = /model/math/multimathinput.pl
 title = Factorisation (racine donnée)
 
 before ==
-from randsympy import randpoly
-from sympy.polys.polytools import quo, rem
-var('X')
-P = eval(param['genP'])
-Q = eval(param['genQ'])
-
-
-==
-
-
-before ==
 from sympy import factor, content, solveset, S
 x = Symbol('X')
 
