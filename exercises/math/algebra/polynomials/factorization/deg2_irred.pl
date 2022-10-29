@@ -5,7 +5,7 @@
 
 extends = /model/math/checkbox.pl
 
-title = Déterminer si une équation quadratique a des solutions
+title = Polynômes irréductibles dans R
 
 before ==
 from sympy import Eq
