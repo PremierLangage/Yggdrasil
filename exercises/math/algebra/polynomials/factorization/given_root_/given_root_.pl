@@ -10,7 +10,7 @@ param.degree = 2
 param.roots = "int"
 param.givenroot = "int"
 
-title = Factorisaation (racine donnée)
+title = Factorisation (racine donnée)
 
 
 before ==
