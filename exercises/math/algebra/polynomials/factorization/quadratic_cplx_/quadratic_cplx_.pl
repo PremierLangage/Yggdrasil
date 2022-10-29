@@ -10,6 +10,7 @@ poly_domain = "C"
 symbol_dict = {'e': E, 'i': I}
 poly_var = "X"
 
+title = Factorisation dans C d'un polynôme quadratique
 
 before ==
 from sympy import factor, content, solveset, S
