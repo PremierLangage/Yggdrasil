@@ -23,6 +23,6 @@ for i in range(4):
 ==
 
 question ==
-Sélectionner les polynômes qui sont irréductibles dans $! \mathbb{R} !$ (c'est-à-dire qui ne sont pas factorisables dans $! \mathbb{R} !$). 
+Sélectionner les polynômes qui sont irréductibles dans $! \mathbb{R} !$ (c'est-à-dire qui ne peuvent pas se factoriser en un produit de deux polynômes réels de degré 1). 
 ==
 
