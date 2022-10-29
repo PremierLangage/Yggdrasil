@@ -50,5 +50,5 @@ inputs[1].sol =  solR
 question ==
 Factoriser dans $! \mathbb{C} !$ et dans $! \mathbb{R} !$  le polynôme
 $$P(X)= {{ expr|latex }}$$
-en remarquant que $! x1 !$ est une racine du polynôme.
+en remarquant que $! {{x1|latex}} !$ est une racine du polynôme.
 ==
