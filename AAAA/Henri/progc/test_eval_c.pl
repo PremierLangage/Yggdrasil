@@ -321,6 +321,7 @@ class Source:
             f.write(self.code)
             f.write('\n\n')
             f.write(self.after)
+        return this
 
     def build(self, compiler="gcc", cflags=["-Wall", "-ansi"]):
         command_args = [compiler, self.name, "-c", "-o", self.name + ".o"] + cflags
@@ -359,13 +360,13 @@ class Program:
         return expected_ouput
 
 
-src_student = Source("src_student.c", editor.code, code_before, code_before)
-src_teacher = Source("src_teacher.c", solution, code_before, code_before)
+src_student = Source("src_student.c", editor.code, code_before, code_before).write()
+src_teacher = Source("src_teacher.c", solution, code_before, code_before).write()
 
 # Compile the teacher solution
-assert src_teacher.build()
+assert src_teacher.build(), "La version du prof ne build pas..."
 pgr_teacher = Program("teacher_prog", [src_teacher])
-assert pgr_teacher.link()
+assert pgr_teacher.link(), "La version du prof ne link pas..."
 
 # Compile the student proposition
 student_build = src_student.build()
