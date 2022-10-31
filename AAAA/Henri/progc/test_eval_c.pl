@@ -337,15 +337,17 @@ for h in headers:
 for src in srcs:
     srcs.build()
 
-src_student = Source("src_student.c", editor.code, code_before, code_after).write()
-
 # Compile the teacher solution
 pgr_teacher = Program("teacher_prog", srcs.values())
 assert pgr_teacher.link(), "La version du prof ne link pas...: " + pgr_teacher.link().errout
 
 # Compile the student proposition
+src_student = Source("src_student.c", editor.code, code_before, code_after).write()
 student_build = src_student.build()
-pgr_student = Program("student_prog", [src_student])
+pgr_student = Program(
+    "student_prog", 
+    [src_student] + [srcs[s] for s in srcs if s != student_source]
+)
 student_compile = student_build * pgr_student.link()
 
 grade_compil = student_compile.grade()
