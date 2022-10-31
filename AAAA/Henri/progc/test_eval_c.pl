@@ -132,7 +132,7 @@ int **alloc_t(int H, int L)
 }
 ==
 
-headers.random_t==#|c|
+headers.print_t==#|c|
 void print_t(int h, int *t[], int l);
 ==
 sources.print_t==#|c|
