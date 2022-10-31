@@ -10,7 +10,7 @@ group =: CheckboxGroup
 before==#|py|
 import cyk
 
-N = 7 
+N = 6
 rules, good, bad = cyk.generate_input(seed, N)
 
 text += '\n\n'
