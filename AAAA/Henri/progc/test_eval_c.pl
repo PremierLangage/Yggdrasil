@@ -58,6 +58,16 @@ void print_t(int ..., int *...[], int ...){
 }
 ==
 
+student_source = print_t
+
+code_after==#|c|
+==
+
+code_before==#|c|
+#include <stdio.h>
+==
+
+
 sources.main==#|c|
 #include <string.h>
 
@@ -148,14 +158,6 @@ void print_t(int h, int *t[], int l)
 {
     fprint_t(stdout, h, t, l);
 }
-==
-
-
-code_after==#|c|
-==
-
-code_before==#|c|
-#include <stdio.h>
 ==
 
 
@@ -326,14 +328,20 @@ class Program:
             expected_ouput += "Process exited with UNIX signal ("+str(-sp.returncode)+")"
         return expected_ouput
 
+# Create files and build files
+srcs = {
+    src: Source(src + '.c', sources[src]).write()
+}
+for h in headers:
+    Source(h + '.h', headers[h]).write()
+for src in srcs:
+    srcs.build()
 
 src_student = Source("src_student.c", editor.code, code_before, code_after).write()
-src_teacher = Source("src_teacher.c", solution, code_before, code_after).write()
 
 # Compile the teacher solution
-assert src_teacher.build(), "La version du prof ne build pas: " + src_teacher.build().errout
-pgr_teacher = Program("teacher_prog", [src_teacher])
-assert pgr_teacher.link(), "La version du prof ne link pas..."
+pgr_teacher = Program("teacher_prog", srcs.values())
+assert pgr_teacher.link(), "La version du prof ne link pas..." + pgr_teacher.link().errout
 
 # Compile the student proposition
 student_build = src_student.build()
