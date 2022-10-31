@@ -385,7 +385,7 @@ if not student_compile.error():
             + html.escape(expected_ouput)
             + "</pre>"
         )
-        terminal_log += expected_ouput
+        
         stdin_explain = ""
         if len(test_c[2]) > 0:
             stdin_explain = "Contenu de l'entrée standard durant l'exécution : <br />"
