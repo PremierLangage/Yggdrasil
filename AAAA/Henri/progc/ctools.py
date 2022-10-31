@@ -1,7 +1,7 @@
 import subprocess
 import html
 
-from std_progC_utils import make_hide_block_on_click, terminal_code
+from std_progC_utils import make_hide_block_on_click
 
 # principals signals
 signals = {
@@ -132,11 +132,11 @@ class Program:
         command_args = ['./' + self.name] + argv
         sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
         try: 
-            expected_ouput = sp.stdout.decode() + sp.stderr.decode()
+            ouput = sp.stdout.decode() + sp.stderr.decode()
         except:
-            expected_ouput = "Impossible de décoder la sortie standard"
+            ouput = "Impossible de décoder la sortie standard"
         if -sp.returncode in signals:
-            expected_ouput += "Process exited with UNIX signal ("+str(-sp.returncode)+") "+signals[-sp.returncode]
+            ouput += "Process exited with UNIX signal ("+str(-sp.returncode)+") "+signals[-sp.returncode]
         elif sp.returncode < 0:
-            expected_ouput += "Process exited with UNIX signal ("+str(-sp.returncode)+")"
-        return expected_ouput
+            ouput += "Process exited with UNIX signal ("+str(-sp.returncode)+")"
+        return ouput
