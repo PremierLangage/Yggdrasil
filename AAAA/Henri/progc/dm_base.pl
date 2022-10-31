@@ -181,6 +181,11 @@ int **alloc_t(int H, int L)
 
 ==
 headers.struct==#|c|
+int **random_t(int H, int L, int M);
+==
+headers.struct==#|c|
+#include <stdlib.h>
+#include "alloc_t.h"
 // alloc and create a new terrain
 int **random_t(int H, int L, int M)
 {
@@ -201,7 +206,14 @@ int **random_t(int H, int L, int M)
 }
 
 ==
-headers.struct==#|c|
+headers.randomGame==#|c|
+#include "struct.h"
+Game *randomGame(int H, int L, int M);
+==
+sources.randomGame==#|c|
+#include "struct.h"
+#include "mallocGame.h"
+#include "random_t.h"
 Game *randomGame(int H, int L, int M)
 {
     Game *g = mallocGame(H, L, M);
@@ -210,7 +222,14 @@ Game *randomGame(int H, int L, int M)
 }
 
 ==
-headers.struct==#|c|
+headers.restartGame==#|c|
+#include "struct.h"
+void restartGame(Game *g)
+==
+sources.restartGame==#|c|
+#include <stdlib.h>
+
+#include "struct.h"
 void restartGame(Game *g)
 {
     int i, j;
@@ -230,7 +249,11 @@ void restartGame(Game *g)
 }
 
 ==
-headers.struct==#|c|
+headers.P==#|c|
+int P(int **t, int H, int L, int i, int j);
+==
+headers.P==#|c|
+#include "nbmines_t.h"
 int P(int **t, int H, int L, int i, int j)
 {
     // case découverte pas d'action
@@ -253,7 +276,10 @@ int P(int **t, int H, int L, int i, int j)
 }
 
 ==
-headers.struct==#|c|
+headers.D==#|c|
+void D(int **t, int H, int L, int i, int j);
+==
+sources.D==#|c|
 void D(int **t, int H, int L, int i, int j)
 { // click droit sur la case i,j
     // placement d'un drapeau
@@ -282,14 +308,28 @@ void D(int **t, int H, int L, int i, int j)
 }
 
 ==
-headers.struct==#|c|
+headers.PG==#|c|
+#include "struct.h"
+int PG(Game *g, int i, int j);
+==
+sources.PG==#|c|
+#include "struct.h"
+#include "P.h"
+
 int PG(Game *g, int i, int j)
 { // click gauche sur la case i,j
     return P(g->t, g->H, g->L, i, j);
 }
 
 ==
-headers.struct==#|c|
+headers.playGame==#|c|
+#include "struct.h"
+int playGame(Game *p);
+==
+sources.playGame==#|c|
+#include <stdio.h>
+
+#include "struct.h"
 // return if the game is over (1) or not (0)
 int playGame(Game *p)
 {
@@ -309,7 +349,15 @@ int playGame(Game *p)
 }
 
 ==
-headers.struct==#|c|
+headers.printEndGame==#|c|
+#include "struct.h"
+void printEndGame(Game *g);
+==
+sources.printEndGame==#|c|
+#include <stdio.h>
+
+#include "struct.h"
+#include "nbmines_t.h"
 // affiche le terrain après explosion
 void printEndGame(Game *g)
 {
@@ -329,6 +377,13 @@ void printEndGame(Game *g)
 }
 ==
 headers.struct==#|c|
+void printEnd_t(int H, int L, int **t);
+==
+headers.struct==#|c|
+#include <stdio.h>
+
+#include "nbmines_t.h"
+
 void printEnd_t(int H, int L, int **t)
 {
     for (int i = 0; i < H; i++)
@@ -347,7 +402,10 @@ void printEnd_t(int H, int L, int **t)
 }
 
 ==
-headers.struct==#|c|
+headers.nbdrapeau==#|c|
+int nbdrapeau(int H, int L, int **t);
+==
+sources.nbdrapeau==#|c|
 int nbdrapeau(int H, int L, int **t)
 {
     int i, j, n = 0;
@@ -358,7 +416,11 @@ int nbdrapeau(int H, int L, int **t)
     return n;
 }
 ==
-headers.struct==#|c|
+headers.verif_t==#|c|
+int verif_t(int H, int L, int M, int **t);
+==
+sources.verif_t==#|c|
+#include "nbdrapeau.h"
 int verif_t(int H, int L, int M, int **t)
 {
     int i, j;
@@ -372,7 +434,12 @@ int verif_t(int H, int L, int M, int **t)
     return 0;
 }
 ==
-headers.struct==#|c|
+headers.verifGame==#|c|
+#include "struct.h"
+int verifGame(Game *g);
+==
+sources.verifGame==#|c|
+#include "nbdrapeau.h"
 
 int verifGame(Game *g)
 {
@@ -387,7 +454,14 @@ int verifGame(Game *g)
 }
 
 ==
-headers.struct==#|c|
+headers.play_t==#|c|
+int play_t(int H, int L, int **t);
+==
+sources.play_t==#|c|
+#include <stdio.h>
+
+#include "P.h"
+
 // return if the game is over (1) or not (0)
 int play_t(int H, int L, int **t)
 {
@@ -414,6 +488,7 @@ sources.v_t==#|c|
 
 #include "random_t.h"
 #include "print_t.h"
+#include "verif_t.h"
 #include "play_t.h"
 #include "printEnd.h"
 
