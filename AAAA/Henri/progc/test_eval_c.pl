@@ -315,7 +315,7 @@ class Source:
         self.built = False
 
     def write(self):
-        with open(self.name, 'ro') as f:
+        with open(self.name, 'w') as f:
             f.write(self.before)
             f.write('\n\n')
             f.write(self.code)
