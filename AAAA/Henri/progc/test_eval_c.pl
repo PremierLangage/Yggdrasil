@@ -410,7 +410,7 @@ if not student_compile.error():
                 + make_hide_block_on_click(
                     "details_check"+str(nb_good+nb_bad), 
                     test_c[0], 
-                    stdin_explainv
+                    stdin_explain
                     + "Attendu: " + terminal_log
                     + "Obtenu: " + (
                         "<pre>" 
