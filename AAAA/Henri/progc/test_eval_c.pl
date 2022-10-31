@@ -246,7 +246,7 @@ class CompileResult:
         self.cflags = cflags
 
     def success(self):
-        return not self.taboo_error() and len(self.spout) + len(errout) == 0
+        return not self.taboo_error() and len(self.spout) + len(self.errout) == 0
 
     def warning(self):
         return not self.taboo_error() and not self.success() and "error:" not in self.errout
