@@ -86,6 +86,7 @@ evaluator==#|python|
 import subprocess
 import html
 
+from std_progC_utils import make_hide_block_on_click
 from ctools import Source, Program
 
 # Update nb attempt
