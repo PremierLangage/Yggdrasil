@@ -304,7 +304,7 @@ class CompileResult:
         )
 
     def __bool__(self):
-        return returncode == 0
+        return self.returncode == 0
 
 class Source:
     def __init__(self, name, code="", before="", after=""):
