@@ -7,7 +7,6 @@ tag=function # N'oubliez pas de remplir ce champs svp
 
 text==
 Ecrire un programme qui écrit le successeur de l'entier envoyé en entrée
-test
 ==
 
 languages==
