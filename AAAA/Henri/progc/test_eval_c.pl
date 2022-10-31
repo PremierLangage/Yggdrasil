@@ -321,7 +321,7 @@ class Source:
             f.write(self.code)
             f.write('\n\n')
             f.write(self.after)
-        return this
+        return self
 
     def build(self, compiler="gcc", cflags=["-Wall", "-ansi"]):
         command_args = [compiler, self.name, "-c", "-o", self.name + ".o"] + cflags
