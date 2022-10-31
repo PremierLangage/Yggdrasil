@@ -226,7 +226,9 @@ astuces==#|python|
 
 evaluator==#|python|
 import subprocess
-from std_progC_utils import make_hide_block_on_click, terminal_code, subnlbybr
+import html
+from std_progC_utils import make_hide_block_on_click, terminal_code
+
 
 # principals signals
 signals = {
@@ -407,40 +409,49 @@ if not student_compile.error():
         # Now execute the student programm
         spout = pgr_student.run(test_c[1])
 
+        terminal_log = (
+              "<pre>" 
+            + html.escape("Platon@debian~$> ./a.out " + " ".join(test_c[1])) + "\n"
+            + html.escape(expected_ouput)
+            + "</pre>"
+        )
+        terminal_log += expected_ouput
+        stdin_explain = ""
+        if len(test_c[2]) > 0:
+            stdin_explain = "Contenu de l'entrée standard durant l'exécution : <br />"
+            stdin_explain += "<pre>" + html.escape(test_c[2]) + "</pre>"
+
         if spout == expected_ouput:
             nb_good += 1
-            feedback_checks += '<div class="success-state" style="margin: 2px;padding: 5px; border: 1px solid #155724 transparent;">'
-            terminal_log = "Platon@debian~$> ./a.out " + " ".join(test_c[1]) + "\n"
-            terminal_log += expected_ouput
-            if len(test_c[2]) > 0:
-                stdin_explain = "Contenu de l'entrée standard durant l'exécution : <br />"
-                stdin_explain += subnlbybr(test_c[2])
-                if test_c[2][-1] != '\n':
-                    stdin_explain += "<br />"
-            else:
-                stdin_explain = ""
-            feedback_checks += make_hide_block_on_click("details_check"+str(nb_good+nb_bad), test_c[0], stdin_explain + terminal_code(terminal_log), "")
-            feedback_checks += '</div>'
+            feedback_checks = (
+                  '<div class="success-state" style="margin: 2px;padding: 5px; border: 1px solid #155724 transparent;">'
+                + make_hide_block_on_click(
+                    "details_check"+str(nb_good+nb_bad), 
+                    test_c[0], 
+                    stdin_explain + terminal_log, 
+                    ""
+                )
+                + '</div>'
+            )
         else:
             nb_bad += 1
-            feedback_checks += '<div class="error-state" style="margin: 2px;padding: 5px; border: 1px solid #155724 transparent;">'
-            term_tot = "Attendu : <br />"
-            terminal_log = "Platon@debian~$> ./a.out " + " ".join(test_c[1]) + "\n"
-            terminal_log += expected_ouput
-            if len(test_c[2]) > 0:
-                stdin_explain = "Contenu de l'entrée standard durant l'exécution : <br />"
-                stdin_explain += subnlbybr(test_c[2])
-                if test_c[2][-1] != '\n':
-                    stdin_explain += "<br />"
-            else:
-                stdin_explain = ""
-            term_tot += terminal_code(terminal_log)
-            term_tot += "Obtenu : <br />"
-            terminal_log = "Platon@debian~$> ./a.out " + " ".join(test_c[1]) + "\n"
-            terminal_log += spout
-            term_tot += terminal_code(terminal_log)
-            feedback_checks += make_hide_block_on_click("details_check"+str(nb_good+nb_bad), test_c[0], stdin_explain + term_tot, "")
-            feedback_checks += '</div>'
+            feedback_checks = (
+                  '<div class="error-state" style="margin: 2px;padding: 5px; border: 1px solid #155724 transparent;">'
+                + make_hide_block_on_click(
+                    "details_check"+str(nb_good+nb_bad), 
+                    test_c[0], 
+                    stdin_explain
+                    + "Attendu: " + terminal_log
+                    + "Obtenu: " + (
+                        "<pre>" 
+                        + html.escape("Platon@debian~$> ./a.out " + " ".join(test_c[1])) + "\n"
+                        + html.escape(spout)
+                        + "</pre>"
+                    ), 
+                    ""
+                )
+                + '</div>'
+            )
 
     grade_checks = min([((nb_good*100) // (nb_good+nb_bad)) , (100 // (2**nb_bad))])
 
@@ -452,8 +463,6 @@ if student_compile.error():
     feedback += '<b>Erreur à la compilation :</b> Pas de test lancé</div>'
 else:
     feedback += feedback_checks
-
-grade_alone = 100
 
 grade_attempt = 50 + (200 // (3+nb_attempt))
 
@@ -471,6 +480,5 @@ else:
 # overall grade !
 feedback = '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Note actuelle :</u> ' + str(max(all_grade)) + '/100</b></p>' + feedback
 
-grade=((grade_compil * grade_checks * grade_attempt * grade_alone) // 1000000, feedback)
-grade= (grade_alone, feedback)
+grade=((grade_compil * grade_checks * grade_attempt ) // 10000, feedback)
 ==
