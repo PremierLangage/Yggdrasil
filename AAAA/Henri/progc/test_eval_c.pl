@@ -152,19 +152,10 @@ void print_t(int h, int *t[], int l)
 
 
 code_after==#|c|
-// Idée du test
-// lire un fichier et faire afficher le fichier
-// l'etudiant doit ecrire la fonction print_t
-int main(int argc, char* argv[]){
-    int H=10,L=10,M=10,**t;
-    int seed= ! strcmp(argv[1],"alea");
-    t= random_t(H,L,M,seed);
-    print_t(H,t,L);
+==
 
-
-  return 0;
-}
-
+code_before==#|c|
+#include <stdio.h>
 ==
 
 
