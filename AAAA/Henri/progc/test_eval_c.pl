@@ -49,6 +49,9 @@ rappel: on réalise un https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu
 ==
 
 before ==
+before ==#|python|
+# Some globals variables
+nb_attempt=0
 ==
 
 form ==
