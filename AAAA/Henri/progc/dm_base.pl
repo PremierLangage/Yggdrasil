@@ -1,11 +1,8 @@
 extends = eval_mult_c.pl
 
-
-sources.main==#|c|
-#include <stdio.h>
-#include <stdlib.h>
-==
 headers.struct==#|c|
+#ifndef __STRUCT__
+#define __STRUCT__
 struct _game
 {
     int termine;
@@ -16,9 +13,14 @@ struct _game
 };
 
 typedef struct _game Game;
-
+#endif
 ==
-headers.struct==#|c|
+headers.mallocGame==#|c|
+void *mallocGame(int H, int L, int M);
+==
+sources.mallocGame==#|c|
+#include <stdlib.h>
+#include "struct.h"
 // allocation de la structure game
 // et d'une matrice de taille H*L et initialisation à 0
 void *mallocGame(int H, int L, int M)
@@ -36,7 +38,13 @@ void *mallocGame(int H, int L, int M)
     return g;
 }
 ==
-headers.struct==#|c|
+headers.freeGame==#|c|
+#include "struct.h"
+void freeGame(Game *g);
+==
+sources.freeGame==#|c|
+#include <stdlib.h>
+#include "struct.h"
 // libération de la mémoire
 void freeGame(Game *g)
 {
@@ -49,7 +57,14 @@ void freeGame(Game *g)
 }
 
 ==
-headers.struct==#|c|
+headers.read_t==#|c|
+#include <stdio.h>
+int **read_t(FILE *f, int *H, int *L, int *M);
+==
+sources.read_t==#|c|
+#include <stdio.h>
+#include <stdlib.h>
+
 int **read_t(FILE *f, int *H, int *L, int *M)
 {
     int **t;
@@ -71,7 +86,16 @@ int **read_t(FILE *f, int *H, int *L, int *M)
 }
 
 ==
-headers.struct==#|c|
+headers.readGame==#|c|
+#include <stdio.h>
+#include "struct.h"
+
+Game *readGame(FILE *f);
+==
+sources.readGame==#|c|
+#include <stdio.h>
+#include "struct.h"
+#include "mallocGame.h"
 //  allocation de la structure et lecture du fichier
 Game *readGame(FILE *f)
 {
@@ -90,7 +114,10 @@ Game *readGame(FILE *f)
 }
 
 ==
-headers.struct==#|c|
+headers.hasmine_t==#|c|
+int hasmine_t(int h, int l, int *t[], int i, int j);
+==
+sources.hasmine_t==#|c|
 int hasmine_t(int h, int l, int *t[], int i, int j)
 {
     if ((i < 0) || (i > h - 1) || (j < 0) || (j > l - 1))
@@ -100,21 +127,37 @@ int hasmine_t(int h, int l, int *t[], int i, int j)
     return t[i][j] == 9 || t[i][j] == -9;
 }
 ==
-headers.struct==#|c|
+headers.hasmine_g==#|c|
+#include "struct.h"
+int hasmine_g(Game *g, int i, int j);
+==
+sources.hasmine_g==#|c|
+#include "struct.h"
+#include "hasmine_t.h"
 int hasmine_g(Game *g, int i, int j)
 {
     return hasmine_t(g->H, g->L, g->t, i, j);
 }
 
 ==
-headers.struct==#|c|
+headers.nbmines_t==#|c|
+int nbmines_t(int h, int l, int *t[], int i, int j);
+==
+sources.nbmines_t==#|c|
+#include "hasmine_t.h"
 int nbmines_t(int h, int l, int *t[], int i, int j)
 {
     return hasmine_t(h, l, t, i - 1, j - 1) + hasmine_t(h, l, t, i - 1, j) + hasmine_t(h, l, t, i - 1, j + 1) + hasmine_t(h, l, t, i, j - 1) + hasmine_t(h, l, t, i, j + 1) + hasmine_t(h, l, t, i + 1, j - 1) + hasmine_t(h, l, t, i + 1, j) + hasmine_t(h, l, t, i + 1, j + 1);
 }
 
 ==
-headers.struct==#|c|
+headers.nbmines_g==#|c|
+#include "struct.h"
+int nbmines_g(Game *g, int i, int j);
+==
+sources.nbmines_g==#|c|
+#include "struct.h"
+#include "nbmines_t.h"
 int nbmines_g(Game *g, int i, int j)
 {
     return nbmines_t(g->H, g->L, g->t, i, j);
@@ -122,6 +165,11 @@ int nbmines_g(Game *g, int i, int j)
 
 ==
 headers.struct==#|c|
+void print_t(int h, int *t[], int l);
+==
+headers.struct==#|c|
+#include <stdio.h>
+
 // impression de la matrice de jeu dans un fichier
 
 void fprint_t(FILE *f, int h, int *t[], int l)
@@ -144,7 +192,14 @@ void print_t(int h, int *t[], int l)
 
 
 ==
-headers.struct==#|c|
+headers.saveGame==#|c|
+#include <stdio.h>
+#include "struct.h"
+void saveGame(FILE *f, Game *g);
+==
+sources.saveGame==#|c|
+#include <stdio.h>
+#include "struct.h"
 void saveGame(FILE *f, Game *g)
 {
     fprintf(f, "%d %d %d\n", g->H, g->L, g->M);
@@ -152,14 +207,26 @@ void saveGame(FILE *f, Game *g)
 }
 
 ==
-headers.struct==#|c|
+headers.printGame==#|c|
+#include "struct.h"
+void printGame(Game *g);
+==
+sources.printGame==#|c|
+#include "struct.h"
+#include "saveGame.h"
 void printGame(Game *g)
 {
     saveGame(stdout, g);
 }
 
 ==
-headers.struct==#|c|
+headers.save_t==#|c|
+// sauvegarde dans un fichier
+void save_t(FILE *f, int **t, int H, int L, int M);
+==
+sources.save_t==#|c|
+#include <stdio.h>
+
 // sauvegarde dans un fichier
 void save_t(FILE *f, int **t, int H, int L, int M)
 {
@@ -168,7 +235,12 @@ void save_t(FILE *f, int **t, int H, int L, int M)
 }
 
 ==
-headers.struct==#|c|
+headers.alloc_t==#|c|
+int **alloc_t(int H, int L);
+==
+sources.alloc_t==#|c|
+#include <stdlib.h>
+
 int **alloc_t(int H, int L)
 { // calloc inits memory with zeros
     int **t = calloc(1, H * sizeof(int *));
@@ -180,10 +252,10 @@ int **alloc_t(int H, int L)
 }
 
 ==
-headers.struct==#|c|
+headers.random_t==#|c|
 int **random_t(int H, int L, int M);
 ==
-headers.struct==#|c|
+sources.random_t==#|c|
 #include <stdlib.h>
 #include "alloc_t.h"
 // alloc and create a new terrain
