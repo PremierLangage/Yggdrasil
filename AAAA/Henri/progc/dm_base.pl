@@ -164,10 +164,10 @@ int nbmines_g(Game *g, int i, int j)
 }
 
 ==
-headers.struct==#|c|
+headers.print_t==#|c|
 void print_t(int h, int *t[], int l);
 ==
-headers.struct==#|c|
+sources.print_t==#|c|
 #include <stdio.h>
 
 // impression de la matrice de jeu dans un fichier
