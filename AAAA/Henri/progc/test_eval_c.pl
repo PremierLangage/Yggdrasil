@@ -48,22 +48,6 @@ affiche le terrain sous forme d'entiers par exemple
 rappel: on réalise un https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu_vid%C3%A9o)
 ==
 
-before ==#|python|
-# Some globals variables
-nb_attempt=0
-
-if "taboo" in globals(): 
-    text+='<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
-    text+="<b>Taboo :</b> attention, il y aura un refus de compilation si vous proposez un code qui utilise les mots suivants (ne les mentionnez pas ni en fonction, ni en nom de variable) : "
-    text+=str(taboo)
-    text+='</div> <br />\n'
-
-text+=" {{ editor|component }} "
-==
-
-form ==
-==
-
 editor =: CodeEditor
 editor.theme=dark
 editor.language=c
@@ -73,94 +57,31 @@ void print_t(int ..., int *...[], int ...){
 ...
 }
 ==
-editorXcode==#|c|
-// impression de la matrice de jeu dans un fichier
 
-void fprint_t(FILE *f, int h, int *t[], int l)
-{
-    int c;
-    int bb = 0;
-
-    for (int i = 0; i < h; i++)
-    {
-        for (int j = 0; j < l; j++)
-        {
-            fprintf(f, "%d ", t[i][j]);
-        }
-        fprintf(f, "\n");
-    }
-}
-
-// affichage de la matrice de jeu sur stdout
-void print_t(int h, int *t[], int l)
-{
-    fprint_t(stdout, h, t, l);
-}
-==
-
-
-solution==#|c|
-// impression de la matrice de jeu dans un fichier
-
-void fprint_t(FILE *f, int h, int *t[], int l)
-{
-    int c;
-    int bb = 0;
-
-    for (int i = 0; i < h; i++)
-    {
-        for (int j = 0; j < l; j++)
-        {
-            fprintf(f, "%d ", t[i][j]);
-        }
-        fprintf(f, "\n");
-    }
-}
-
-// affichage de la matrice de jeu sur stdout
-void print_t(int h, int *t[], int l)
-{
-    fprint_t(stdout, h, t, l);
-}
-
-==
-
-code_before==#|c|
-
-#include <stdio.h>
-#include <stdlib.h>
+sources.main==#|c|
 #include <string.h>
-#include <math.h>
+
+#include "print_t.h"
+#include "random_t.h"
+
+int main(int argc, char* argv[]){
+    int H=10,L=10,M=10,**t;
+    int seed= ! strcmp(argv[1],"alea");
+    t= random_t(H,L,M,seed);
+    print_t(H,t,L);
+    return 0;
+}
+==
+
+headers.random_t==#|c|
+int **random_t(int H, int L, int M, int seed);
+==
+soures.random_t==#|c|
+#include <stdlib.h>
 #include <time.h>
-int **read_t(FILE *f, int *H, int *L, int *M)
-{
-    int **t;
-    fscanf(f, "%d %d %d", H, L, M);
-    t = malloc(*H * sizeof(int *));
-    for (int i = 0; i < *H; i++)
-    {
-        t[i] = malloc(*L * sizeof(int));
-    }
+#include <math.h>
 
-    for (int i = 0; i < *H; i++)
-    {
-        for (int j = 0; j < *L; j++)
-        {
-            fscanf(f, "%d", &(t[i][j]));
-        }
-    }
-    return t;
-}
-
-int **alloc_t(int H, int L)
-{ // calloc inits memory with zeros
-    int **t = calloc(1, H * sizeof(int *));
-    for (int i = 0; i < H; i++)
-    {
-        t[i] = calloc(1, L * sizeof(int));
-    }
-    return t;
-}
+#include "alloc_t.h"
 
 // alloc and create a new terrain
 int **random_t(int H, int L, int M, int seed)
@@ -184,6 +105,52 @@ int **random_t(int H, int L, int M, int seed)
 }
 ==
 
+headers.random_t==#|c|
+int **alloc_t(int H, int L);
+==
+sources.alloc_t==#|c|
+#include <stdlib.h>
+
+int **alloc_t(int H, int L)
+{ // calloc inits memory with zeros
+    int **t = calloc(1, H * sizeof(int *));
+    for (int i = 0; i < H; i++)
+    {
+        t[i] = calloc(1, L * sizeof(int));
+    }
+    return t;
+}
+==
+
+headers.random_t==#|c|
+void print_t(int h, int *t[], int l);
+==
+sources.print_t==#|c|
+#include <stdio.h>
+
+void fprint_t(FILE *f, int h, int *t[], int l)
+{
+    int c;
+    int bb = 0;
+
+    for (int i = 0; i < h; i++)
+    {
+        for (int j = 0; j < l; j++)
+        {
+            fprintf(f, "%d ", t[i][j]);
+        }
+        fprintf(f, "\n");
+    }
+}
+
+// affichage de la matrice de jeu sur stdout
+void print_t(int h, int *t[], int l)
+{
+    fprint_t(stdout, h, t, l);
+}
+==
+
+
 code_after==#|c|
 // Idée du test
 // lire un fichier et faire afficher le fichier
@@ -201,28 +168,27 @@ int main(int argc, char* argv[]){
 ==
 
 
-
 checks_args_stdin==#|python|
 [["Test basique", ["not alea"], ""],
 ["Test encore ", ["alea"], ""]
 ]
 ==
 
-astuces==#|python|
-[
-  { "content": """
-  Lire l'introduction du pltp."""},
-  { "content": """Les entiers  stockés dans le terrain indiquent:  
-0 Case non découverte sans mine  
-9 case non découverte avec une mine  
-1 à 8 case découverte sans mine, l'entier indique le nombre de mines des cases avoisinantes, -11 si zéro mines.  
--9 une mine avec un drapeau placé dessus  
--10 une case sans mine avec un drapeau placé dessus.
-"""},
-  { "content": """Il y a des espaces en fin de ligne dans le format de fichier."""}
-]
+before ==#|python|
+# Some globals variables
+nb_attempt=0
+
+if "taboo" in globals(): 
+    text+='<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+    text+="<b>Taboo :</b> attention, il y aura un refus de compilation si vous proposez un code qui utilise les mots suivants (ne les mentionnez pas ni en fonction, ni en nom de variable) : "
+    text+=str(taboo)
+    text+='</div> <br />\n'
+
+text+=" {{ editor|component }} "
 ==
 
+form ==
+==
 
 evaluator==#|python|
 import subprocess
