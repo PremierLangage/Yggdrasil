@@ -86,7 +86,7 @@ int main(int argc, char* argv[]){
 headers.random_t==#|c|
 int **random_t(int H, int L, int M, int seed);
 ==
-soures.random_t==#|c|
+sources.random_t==#|c|
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
@@ -285,11 +285,13 @@ class Source:
 
     def write(self):
         with open(self.name, 'w') as f:
-            f.write(self.before)
-            f.write('\n\n')
+            if self.before:
+                f.write(self.before)
+                f.write('\n\n')
             f.write(self.code)
-            f.write('\n\n')
-            f.write(self.after)
+            if self.after:
+                f.write('\n\n')
+                f.write(self.after)
         return self
 
     def build(self, compiler="gcc", cflags=["-Wall", "-std=c17"]):
