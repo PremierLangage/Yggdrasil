@@ -339,7 +339,7 @@ class Program:
         self.sources = sources
 
     def link(self, compiler="gcc", ldflags=[]):
-        command_args = [compiler, "-o", self.name] + ldflags + [ src.name + '.o' for src in sources ]
+        command_args = [compiler, "-o", self.name] + ldflags + [ src.name + '.o' for src in self.sources ]
         sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         spout = sp.stdout.decode()
         errout = sp.stderr.decode()
