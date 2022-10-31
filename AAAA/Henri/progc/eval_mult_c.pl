@@ -59,87 +59,9 @@ int main(int argc, char* argv[]){
 }
 ==
 
-headers.random_t==#|c|
-int **random_t(int H, int L, int M, int seed);
-==
-sources.random_t==#|c|
-#include <stdlib.h>
-#include <time.h>
-#include <math.h>
-
-#include "alloc_t.h"
-
-// alloc and create a new terrain
-int **random_t(int H, int L, int M, int seed)
-{
-    // alloc
-    if (seed) srand(time(NULL));
-
-    int **t = alloc_t(H, L);
-    // random mines (M)
-    for (int i = 0; i < M; i++)
-    {
-        int h, l;
-        do
-        {
-            h = rand() % H;
-            l = rand() % L;
-        } while (t[h][l] == 9);
-        t[h][l] = 9;
-    }
-    return t;
-}
-==
-
-headers.alloc_t==#|c|
-int **alloc_t(int H, int L);
-==
-sources.alloc_t==#|c|
-#include <stdlib.h>
-
-int **alloc_t(int H, int L)
-{ // calloc inits memory with zeros
-    int **t = calloc(1, H * sizeof(int *));
-    for (int i = 0; i < H; i++)
-    {
-        t[i] = calloc(1, L * sizeof(int));
-    }
-    return t;
-}
-==
-
-headers.print_t==#|c|
-void print_t(int h, int *t[], int l);
-==
-sources.print_t==#|c|
-#include <stdio.h>
-
-void fprint_t(FILE *f, int h, int *t[], int l)
-{
-    int c;
-    int bb = 0;
-
-    for (int i = 0; i < h; i++)
-    {
-        for (int j = 0; j < l; j++)
-        {
-            fprintf(f, "%d ", t[i][j]);
-        }
-        fprintf(f, "\n");
-    }
-}
-
-// affichage de la matrice de jeu sur stdout
-void print_t(int h, int *t[], int l)
-{
-    fprint_t(stdout, h, t, l);
-}
-==
-
-
 checks_args_stdin==#|python|
-[["Test basique", ["not alea"], ""],
-["Test encore ", ["alea"], ""]
+[["Test basique", [], ""],
+["Test encore ", ["truc", "bidule"], ""]
 ]
 ==
 
