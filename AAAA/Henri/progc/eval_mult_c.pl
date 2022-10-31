@@ -30,7 +30,7 @@ title= DM - Print terrain
 tag=DM
 
 text==#|markdown|
-Écrire un main...
+Écrire un programme qui affiche le nombre de ses arguments
 ==
 
 editor =: CodeEditor
@@ -38,8 +38,7 @@ editor.theme=dark
 editor.language=c
 
 editor.code==#|c|
-void print_t(int ..., int *...[], int ...){
-...
+int main(int ..., char ...) {
 }
 ==
 
