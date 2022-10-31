@@ -38,32 +38,24 @@ editor.theme=dark
 editor.language=c
 
 editor.code==#|c|
-int main(int ..., char ...) {
+int main(int ..., char *...[]) {
+    ...
 }
 ==
 
-student_source = print_t
+student_source = main
 
 code_after==#|c|
 ==
 
 code_before==#|c|
-#include <stdio.h>
 ==
 
-
 sources.main==#|c|
-#include <string.h>
-
-#include "print_t.h"
-#include "random_t.h"
+#include <stdio.h>
 
 int main(int argc, char* argv[]){
-    int H=10,L=10,M=10,**t;
-    int seed= ! strcmp(argv[1],"alea");
-    t= random_t(H,L,M,seed);
-    print_t(H,t,L);
-    return 0;
+    printf("%d\n", argc - 1);
 }
 ==
 
