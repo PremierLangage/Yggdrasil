@@ -115,7 +115,7 @@ int **random_t(int H, int L, int M, int seed)
 }
 ==
 
-headers.random_t==#|c|
+headers.alloc_t==#|c|
 int **alloc_t(int H, int L);
 ==
 sources.alloc_t==#|c|
