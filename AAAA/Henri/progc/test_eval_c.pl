@@ -374,7 +374,6 @@ pgr_student = Program("student_prog", [src_student])
 student_compile = student_build * pgr_student.link()
 
 grade_compil = student_compile.grade()
-text_compil = student_compile.text()
 
 # Tests
 nb_good = 0
