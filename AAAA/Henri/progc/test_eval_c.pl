@@ -331,6 +331,7 @@ class Program:
 # Create files and build files
 srcs = {
     src: Source(src + '.c', sources[src]).write()
+    for src in sources
 }
 for h in headers:
     Source(h + '.h', headers[h]).write()
