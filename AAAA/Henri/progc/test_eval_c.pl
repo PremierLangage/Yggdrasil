@@ -302,7 +302,7 @@ class Source:
         returncode = sp.returncode
         if returncode == 0:
             self.built = True
-        return CompileResult(returncode, spout, errout)
+        return CompileResult(returncode, spout, errout, cflags=cflags)
 
 class Program:
     def __init__(self, name, sources):
