@@ -323,7 +323,7 @@ class Source:
             f.write(self.after)
         return self
 
-    def build(self, compiler="gcc", cflags=["-Wall", "-ansi"]):
+    def build(self, compiler="gcc", cflags=["-Wall", "-std=c17"]):
         command_args = [compiler, self.name, "-c", "-o", self.name + ".o"] + cflags
         sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         spout = sp.stdout.decode()
