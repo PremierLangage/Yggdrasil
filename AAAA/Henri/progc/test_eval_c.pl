@@ -341,7 +341,7 @@ src_student = Source("src_student.c", editor.code, code_before, code_after).writ
 
 # Compile the teacher solution
 pgr_teacher = Program("teacher_prog", srcs.values())
-assert pgr_teacher.link(), "La version du prof ne link pas..." + pgr_teacher.link().errout
+assert pgr_teacher.link(), "La version du prof ne link pas...: " + pgr_teacher.link().errout
 
 # Compile the student proposition
 student_build = src_student.build()
