@@ -511,6 +511,7 @@ headers.verifGame==#|c|
 int verifGame(Game *g);
 ==
 sources.verifGame==#|c|
+#include "struct.h"
 #include "nbdrapeau.h"
 
 int verifGame(Game *g)
