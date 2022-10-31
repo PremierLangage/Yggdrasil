@@ -322,7 +322,7 @@ class Source:
             f.write('\n\n')
             f.write(self.after)
 
-    def build(self, compiler, cflags=["-Wall", "-ansi"]):
+    def build(self, compiler="gcc", cflags=["-Wall", "-ansi"]):
         command_args = [compiler, self.name, "-c", "-o", self.name + ".o"] + cflags
         sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         spout = sp.stdout.decode()
@@ -337,7 +337,7 @@ class Program:
         self.name = name
         self.sources = sources
 
-    def link(self, compiler, ldflags=[]):
+    def link(self, compiler="gcc", ldflags=[]):
         command_args = [compiler, "-o", self.name] + ldflags + [ src.name + '.o' for src in sources ]
         sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         spout = sp.stdout.decode()
