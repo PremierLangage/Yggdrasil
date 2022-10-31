@@ -364,7 +364,7 @@ src_student = Source("src_student.c", editor.code, code_before, code_before).wri
 src_teacher = Source("src_teacher.c", solution, code_before, code_before).write()
 
 # Compile the teacher solution
-assert src_teacher.build(), "La version du prof ne build pas..."
+assert src_teacher.build(), "La version du prof ne build pas: " + src_teacher.build().texte()
 pgr_teacher = Program("teacher_prog", [src_teacher])
 assert pgr_teacher.link(), "La version du prof ne link pas..."
 
