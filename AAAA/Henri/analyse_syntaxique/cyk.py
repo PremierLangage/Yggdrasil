@@ -3,7 +3,7 @@ import random
 import sys
 import time
 
-N = 7
+N = 6
 
 # assume all rules are A -> B C or A -> 'a'
 def cyk(start, rules, word):
