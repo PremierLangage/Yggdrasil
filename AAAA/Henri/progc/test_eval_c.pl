@@ -255,7 +255,7 @@ class CompileResult:
         if self.taboo_error():
             feedback += "<b>Refus de compilation :</b> non respect du taboo : " + self.taboo
         elif not self.success():
-            feedback += make_hide_block_on_click("compil_ans", self.texte() + ' avec flags ' + ' '.join(self.cflags), terminal_code(self.spout+self.errout), "")
+            feedback += make_hide_block_on_click("compil_ans", self.texte() + ' avec flags ' + ' '.join(self.cflags), "<pre>" + html.escape(self.spout+self.errout) + "</pre>", "")
         else:
             feedback += make_hide_block_on_click("compil_ans", self.texte() + ' avec flags ' + ' '.join(self.cflags), "C'était parfait, le compilateur n'a rien dit...", "")
         feedback += '</div>'
