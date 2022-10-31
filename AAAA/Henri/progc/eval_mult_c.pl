@@ -38,8 +38,8 @@ editor.theme=dark
 editor.language=c
 
 editor.code==#|c|
-int main(int ..., char *...[]) {
-    ...
+int main() {
+    
 }
 ==
 
