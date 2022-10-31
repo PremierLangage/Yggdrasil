@@ -360,8 +360,8 @@ class Program:
         return expected_ouput
 
 
-src_student = Source("src_student.c", editor.code, code_before, code_before).write()
-src_teacher = Source("src_teacher.c", solution, code_before, code_before).write()
+src_student = Source("src_student.c", editor.code, code_before, code_after).write()
+src_teacher = Source("src_teacher.c", solution, code_before, code_after).write()
 
 # Compile the teacher solution
 assert src_teacher.build(), "La version du prof ne build pas: " + src_teacher.build().errout
