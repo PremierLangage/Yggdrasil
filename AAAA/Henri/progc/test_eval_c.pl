@@ -336,7 +336,7 @@ srcs = {
 for h in headers:
     Source(h + '.h', headers[h]).write()
 for src in srcs:
-    srcs.build()
+    srcs[src].build()
 
 # Compile the teacher solution
 pgr_teacher = Program("teacher_prog", srcs.values())
