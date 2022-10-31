@@ -51,6 +51,7 @@ code_after==#|c|
 code_before==#|c|
 ==
 
+headers % {}
 sources.main==#|c|
 #include <stdio.h>
 
