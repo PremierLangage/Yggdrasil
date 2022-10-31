@@ -297,7 +297,7 @@ class CompileResult:
             return self
         if self.returncode != 0 or self.taboo_error():
             return self
-        return Compilation(
+        return CompileResult(
             other.returncode,
             self.spout + other.spout,
             self.errout + other.errout
@@ -435,9 +435,11 @@ if not student_compile.error():
             feedback_checks += '</div>'
 
     grade_checks = min([((nb_good*100) // (nb_good+nb_bad)) , (100 // (2**nb_bad))])
+
+feedback = student_compile.formatted_feedback()
 feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Tests :</u> ' + str(grade_checks) + '%</b> (cliquer sur les tests pour afficher/réduire leurs détails)</p>'
 
-if compil_state == 'error':
+if student_compile.error():
     feedback += '<div class="error-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
     feedback += '<b>Erreur à la compilation :</b> Pas de test lancé</div>'
 else:
