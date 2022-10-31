@@ -324,12 +324,12 @@ void restartGame(Game *g)
 headers.P==#|c|
 int P(int **t, int H, int L, int i, int j);
 ==
-headers.P==#|c|
+sources.P==#|c|
 #include "nbmines_t.h"
 int P(int **t, int H, int L, int i, int j)
 {
     // case découverte pas d'action
-    if (t[i][j] > 0 && t[i][j] < 9 || t[i][j] == -11)
+    if ((t[i][j] > 0 && t[i][j] < 9) || t[i][j] == -11)
         return 0;
     // case avec une mine
     if (t[i][j] == 9)
@@ -448,10 +448,10 @@ void printEndGame(Game *g)
     }
 }
 ==
-headers.struct==#|c|
+headers.printEnd_t==#|c|
 void printEnd_t(int H, int L, int **t);
 ==
-headers.struct==#|c|
+sources.printEnd_t==#|c|
 #include <stdio.h>
 
 #include "nbmines_t.h"
