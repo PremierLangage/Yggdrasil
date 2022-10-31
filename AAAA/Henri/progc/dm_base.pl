@@ -624,7 +624,7 @@ sources.main==#|c|
 int main()
 {
     // vgame();
-    v_t();
+    // v_t();
     return 0;
 }
 ==
