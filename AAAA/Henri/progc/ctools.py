@@ -73,7 +73,7 @@ class CompileResult:
         return feedback
 
     def __mul__(self, other):
-        if not self or not other:
+        if not self:
             return self
         if self.returncode != 0 or self.taboo_error():
             return self
