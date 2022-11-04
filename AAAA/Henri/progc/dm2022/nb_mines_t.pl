@@ -30,7 +30,7 @@ int main(int argc, char *argv[]) {
     int h = 9, l = 10;
     long seed = strtol(argv[1], NULL, 10);
     srandom(seed);
-    int **t = random_t(h, l, rand() % 10 + 5);
+    int **t = random_t(h, l, rand() % 10 + 10);
     printf("Dans la grille:\n");
     print_t(h, t, l);
     puts("");
