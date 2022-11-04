@@ -38,7 +38,7 @@ headers.print_t==#|c|
 void print_t(int h, int *t[], int l);
 ==
 sources.print_t==#|c|
-#include "fprint_f.h"
+#include "fprint_t.h"
 
 // affichage de la matrice de jeu sur stdout
 void print_t(int h, int *t[], int l)
