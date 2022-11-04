@@ -134,7 +134,7 @@ feedback_checks = ""
 from random import *
 checks_data = eval(checks_args_stdin)
 
-if student_compile.error():
+if not student_compile.error():
     for test_c in checks_data:
         f_in=open("stdin_content", "w")
         f_in.write(test_c[2])
