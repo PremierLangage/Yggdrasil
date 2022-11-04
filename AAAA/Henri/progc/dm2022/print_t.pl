@@ -10,7 +10,7 @@ source_student = print_t
 
 editor.code ==
 void print_t(int h, int *t[], int l) {
-    ...
+    
 }
 ==
 
