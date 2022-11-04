@@ -6,7 +6,7 @@ text ==
 Afficher une grille
 ==
 
-source_student = print_t
+student_source = print_t
 
 editor.code ==
 void print_t(int h, int *t[], int l) {
