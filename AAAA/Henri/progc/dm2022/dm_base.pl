@@ -16,7 +16,8 @@ int nb_mines_t(int h, int l, int *t[], int i, int j) {
 ==
 
 headers.fprint_t==#|c|
-void fprint_t(int h, int *t[], int l);
+#include <stdio.h>
+void fprint_t(FILE*, int h, int *t[], int l);
 ==
 sources.fprint_t==#|c|
 #include <stdio.h>
