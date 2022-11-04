@@ -15,12 +15,11 @@ int nb_mines_t(int h, int l, int *t[], int i, int j) {
 }
 ==
 
-headers.print_t==#|c|
-void print_t(int h, int *t[], int l);
+headers.fprint_t==#|c|
+void fprint_t(int h, int *t[], int l);
 ==
-sources.print_t==#|c|
+sources.fprint_t==#|c|
 #include <stdio.h>
-
 // impression de la matrice de jeu dans un fichier
 
 void fprint_t(FILE *f, int h, int *t[], int l)
@@ -32,6 +31,13 @@ void fprint_t(FILE *f, int h, int *t[], int l)
         fprintf(f, "\n");
     }
 }
+==
+
+headers.print_t==#|c|
+void print_t(int h, int *t[], int l);
+==
+sources.print_t==#|c|
+#include "fprint_f.h"
 
 // affichage de la matrice de jeu sur stdout
 void print_t(int h, int *t[], int l)
@@ -46,6 +52,7 @@ void save_t(FILE *f, int **t, int H, int L, int M);
 ==
 sources.save_t==#|c|
 #include <stdio.h>
+#include "fprint_t.h"
 
 // sauvegarde dans un fichier
 void save_t(FILE *f, int **t, int H, int L, int M)
@@ -370,6 +377,7 @@ void save_game(FILE *f, Game *g);
 sources.save_game==#|c|
 #include <stdio.h>
 #include "struct.h"
+#include "fprint_t.h"
 void save_game(FILE *f, Game *g)
 {
     fprintf(f, "%d %d %d\n", g->H, g->L, g->M);
