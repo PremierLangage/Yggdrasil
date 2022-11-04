@@ -4,7 +4,8 @@ title = DM Démineur
 
 headers.nb_mines_t==#|c|
 int nb_mines_t(int h, int l, int *t[], int i, int j);
-== sources.nb_mines_t == #|c|
+== 
+sources.nb_mines_t == #|c|
 #include "has_mine_t.h"
 int nb_mines_t(int h, int l, int *t[], int i, int j) {
     return has_mine_t(h, l, t, i - 1, j - 1) + has_mine_t(h, l, t, i - 1, j) +
