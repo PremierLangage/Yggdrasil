@@ -8,13 +8,13 @@ Afficher une grille
 
 student_source = print_t
 
-editor.code ==
+editor.code == #|c|
 void print_t(int h, int *t[], int l) {
     
 }
 ==
 
-code_before ==
+code_before == #|c|
 #include <stdio.h>
 ==
 
