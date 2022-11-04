@@ -33,22 +33,13 @@ int main(int argc, char *argv[]) {
     int **t = random_t(h, l, rand() % 10 + 10);
     printf("Dans la grille:\n");
     print_t(h, t, l);
-    puts("");
-
-    int test[][2] = {
-        { 0, 0 },
-        { h-1, l-1 },
-        { 0, l-1 },
-        { h-1, 0 },
-        { 2, 4 }
-    };
-    for (int i = 0; i < sizeof(test) / sizeof(test[0]); i++) {
-        printf("nb_mines_t(9, 10, grille, %d, %d): %d\n", 
-            test[i][0], test[i][1], 
-            nb_mines_t(h, l, t, test[i][0], test[i][1])
-        );
+    puts("Nombre de mines vues depuis chaque case");
+    for (int i = 0; i < h; i++) {
+        for (int j = 0; j < l; j++) {
+            printf("%d ", nb_mines_t(h, l, t, i, j));
+        }
+        printf("\n");
     }
-
     // free_t(h, t);
     return 0;
 }
