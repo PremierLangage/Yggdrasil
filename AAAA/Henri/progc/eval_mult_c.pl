@@ -2,6 +2,7 @@
 #*****************************************************************************
 #  Copyright (C) 2017 Dominique Revuz
 #  Copyright (C) 2021 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#  Copyright (C) 2022 Henri Derycke
 #
 #  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
 #  Creative Commons CC-by-SA 3.0
@@ -26,8 +27,7 @@ builder =@ /builder/before.py
 
 author=Henri Derycke
 
-title= DM - Print terrain 
-tag=DM
+title= Exemple d'évaluation par fonction
 
 text==#|markdown|
 Écrire un programme qui affiche le nombre de ses arguments
@@ -52,11 +52,15 @@ code_before==#|c|
 ==
 
 headers % {}
+sources % {}
+
+# Correction
 sources.main==#|c|
 #include <stdio.h>
 
 int main(int argc, char* argv[]){
     printf("%d\n", argc - 1);
+    return 0;
 }
 ==
 
