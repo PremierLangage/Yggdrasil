@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
     int h = 9, l = 10;
     long seed = strtol(argv[1], NULL, 10);
     srandom(seed);
-    int **t = random_t(h, l);
+    int **t = random_t(h, l, rand() % 10 + 5);
     print_t(h, t, l);
     // free_t(h, t);
     return 0;
