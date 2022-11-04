@@ -112,13 +112,11 @@ assert pgr_teacher.link(), "La version du prof ne link pas...: " + pgr_teacher.l
 
 # Compile the student proposition
 src_student = Source("src_student.c", editor.code, code_before, code_after).write()
-student_build = src_student.build()
 pgr_student = Program(
     "student_prog", 
     [src_student] + [srcs[s] for s in srcs if s != student_source]
 )
-student_compile = student_build * pgr_student.link()
-assert not student_compile,  pgr_student.link().spout + pgr_student.link().errout
+student_compile = src_student.build() * pgr_student.link()
 
 grade_compil = student_compile.grade()
 
