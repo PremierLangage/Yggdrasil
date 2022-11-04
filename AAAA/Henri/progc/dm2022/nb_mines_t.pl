@@ -25,7 +25,7 @@ avec le terrain suivant on a
     0 0 0 0 0 0 0 0 9 0  
     0 0 0 0 0 0 0 0 0 0  
 
-Rappel: on réalise un [https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu_vid%C3%A9o)]
+Rappel: on réalise un [Démineur (genre de jeu vidéo))[https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu_vid%C3%A9o)]
 
 Remarque: On peut utiliser la fonction `has_mine_t` ....
 ==
