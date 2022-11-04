@@ -1,9 +1,34 @@
 extends = dm_base.pl
 
-title = Affichage d'un plateau
+title = Nombre de mines voisines
 
-text ==
-Afficher une grille
+text ==#|markdown|
+Écrire une function **nbmines_t** qui prend
+
+- un entier représentant la hauteur du terrain
+- un entier représentant la largeur
+- l'adresse d'un vecteur d'entier (pointeur vers un tableau de hauteur pointeurs sur des tableaux de largeur entiers)
+- un entier i
+- un entier j
+
+et qui retourne le nombre de mines sur les 8 cases adjacente de la case de coordonées i,j
+avec le terrain suivant on a  
+nbmines(...,0,1)-> 1  
+nbmines(...,1,1)-> 2  
+nbmines(...,2,2)-> 0  
+nbmines(...,0,2)-> 1 ne pas compter la mine en 0,2
+
+
+    0 0 9 9 0 9 0 0 0 0  
+    0 2 0 3 0 0 0 0 0 0  
+    0 1 9 0 0 0 0 0 0 0  
+    0 0 0 0 0 0 0 0 9 9  
+    0 0 0 0 0 0 0 0 9 0  
+    0 0 0 0 0 0 0 0 0 0  
+
+rappel: on réalise un https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu_vid%C3%A9o)
+
+Remarque: On peut utiliser la fonction `hasmine_t ....
 ==
 
 student_source = nb_mines_t
