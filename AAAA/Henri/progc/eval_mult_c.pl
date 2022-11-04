@@ -118,7 +118,7 @@ pgr_student = Program(
     [src_student] + [srcs[s] for s in srcs if s != student_source]
 )
 student_compile = student_build * pgr_student.link()
-assert student_compile, student_compile.errout
+assert not student_compile, student_compile.errout
 
 grade_compil = student_compile.grade()
 
