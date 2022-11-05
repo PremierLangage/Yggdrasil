@@ -44,7 +44,7 @@ Pour que les tests s'arrète sur la première erreur
     stopfirsterror=True # Valeur par defaut (True)
 
 
-TODO: avoir une variable lpltest qui contient une liste de pltest
+TODO: avoir une variable lpltest qui contient une liste de pltest multilignes qui sont joués comme des groupes.
 
 
 ==
