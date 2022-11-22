@@ -17,7 +17,7 @@ pltest==
 True
 >>> toto #
 12
->>> toto == 12 #
+>>> toto = 12 #
 True
 ==
 
