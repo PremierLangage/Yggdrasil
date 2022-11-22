@@ -21,7 +21,7 @@ True
 True
 ==
 
-pltest2==
+pltest1==
 >>> toto != 12 
 True
 >>> toto #
