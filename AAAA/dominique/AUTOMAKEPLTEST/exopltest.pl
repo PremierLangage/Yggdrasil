@@ -15,5 +15,9 @@ qui doit valoir 12 !!
 pltest==
 >>> toto== 12 
 True
+>>> toto #
+12
+>>> toto == 12 #
+True
 ==
 
