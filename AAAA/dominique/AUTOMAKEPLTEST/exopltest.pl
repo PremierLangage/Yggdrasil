@@ -21,3 +21,11 @@ True
 True
 ==
 
+pltest2==
+>>> toto != 12 
+True
+>>> toto #
+13
+>>> toto != 12 #
+True
+==
