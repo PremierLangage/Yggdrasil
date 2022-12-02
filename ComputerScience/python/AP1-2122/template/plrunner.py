@@ -81,25 +81,25 @@ class PlRunner(doctest.DocTestRunner):
             
             
     def testtitle(self, line):
-    """
-    Définie l'affichage correspondant à la ligne de test.
-    Si il n'y a pas de # alors retourner le code du test comme titre 
-    Si le dernier caractère est un # c'est un test caché-> return none ce qui fait qu'aucun affichage n'est fait 
-    exemple '>>> import random # j'ai besoin de choice #'
-    
-    """
-            if line.endswith("\n"):
-                line = line[:-1]
-            if "#" not in line:
-                return line
+        """
+        Définie l'affichage correspondant à la ligne de test.
+        Si il n'y a pas de # alors retourner le code du test comme titre 
+        Si le dernier caractère est un # c'est un test caché-> return none ce qui fait qu'aucun affichage n'est fait 
+        exemple '>>> import random # j'ai besoin de choice #'
+        
+        """
+        if line.endswith("\n"):
+            line = line[:-1]
+        if "#" not in line:
+            return line
+        else:
+            if line.endswith("#"): # Hidden
+                return None
+            found = line.split("#", 1) # couper sur le premier #
+            if found[1].startswith("#"): # Numéro du test
+                return " "
             else:
-                if line.endswith("#"): # Hidden
-                    return None
-                found = line.split("#", 1) # couper sur le premier #
-                if found[1].startswith("#"): # Numéro du test
-                    return " "
-                else:
-                    return found[1]
+                return found[1]
 
     def report_start(self, out, test, example):
         pass
