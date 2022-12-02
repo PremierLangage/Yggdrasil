@@ -43,7 +43,7 @@ True
 ==
 
 
-testname0=Tests cachés
+testname1=Hidden Tests
 pltest1==
 >>> f(10) == 20#
 True
@@ -54,3 +54,6 @@ True
 >>> 'g' in globals() and type(g)=='function'#
 True
 ==
+
+
+
