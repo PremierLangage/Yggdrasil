@@ -38,8 +38,9 @@ True
 24
 >>> 'k' in globals()
 True
->>> 'g' in globals() and type(g)== 'function'
-True
+>>> 'g' in globals() == True ## IL faut definir une fonction g. 
+>>> type(g)== 'function'
+
 ==
 
 
