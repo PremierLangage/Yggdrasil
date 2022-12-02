@@ -32,15 +32,14 @@ s='chaine'
 
 testname0=Tests de base sans commentaires
 pltest0==
+>>> def _hid(): pass#
 >>> f(10) == 20
 True
 >>> f(12)
 24
 >>> 'k' in globals()
 True
->>> 'g' in globals() == True ## IL faut definir une fonction g. 
->>> type(g)== 'function'
-
+>>> 'g' in globals() == True and type(g)== type(_hid) ## IL faut definir une fonction g. 
 ==
 
 
