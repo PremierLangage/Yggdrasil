@@ -41,3 +41,16 @@ True
 >>> 'g' in globals() and type(g)=='function'
 True
 ==
+
+
+testname0=Tests cachés
+pltest1==
+>>> f(10) == 20#
+True
+>>> f(12)#
+24
+>>> 'k' in globals()#
+True
+>>> 'g' in globals() and type(g)=='function'#
+True
+==
