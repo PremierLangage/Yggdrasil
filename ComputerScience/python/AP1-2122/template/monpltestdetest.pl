@@ -38,7 +38,7 @@ True
 24
 >>> 'k' in globals()
 True
->>> 'g' in globals() and type(g)=='function'
+>>> 'g' in globals() and type(g)== function
 True
 ==
 
