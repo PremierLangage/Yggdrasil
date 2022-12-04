@@ -3,7 +3,7 @@ fextends = /ComputerScience/python/AP1-1920/templates/pltest.pl
 
 extends = /ComputerScience/python/template/pltest.pl
 # author = Zip
-
+tag=function
 title = Valeur absolue
 
 text==
