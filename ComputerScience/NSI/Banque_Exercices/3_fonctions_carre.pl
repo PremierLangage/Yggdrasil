@@ -9,7 +9,6 @@ extends = /ComputerScience/python/template/pltest.pl
 @ /builder/before.py [builder.py]
 piste=verte
 text==
-## Une fonction carre
 Ecrivez une fonction `carre` qui retourne le carré de son paramêtre.
 >>> carre(3)
 9
