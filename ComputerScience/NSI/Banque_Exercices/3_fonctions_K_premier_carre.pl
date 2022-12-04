@@ -16,9 +16,16 @@ text==
 Programmer une fonction **carre** qui prend en paramètre un entier et retourne son carré.<br>
 
 Programmer ensuite une fonction **affiche_premiers_carres** qui : <br>
-* prend en paramètre un entier k <br>
+* prend en paramètre un entier positif k <br>
 * affiche (imprime) les k premiers carrés de 0 à (k-1)^2 <br>
 
+Exemple:
+
+    >>> affiche_premiers_carres(4)
+    0
+    1
+    4
+    9
 ==
 
 editor.code==
