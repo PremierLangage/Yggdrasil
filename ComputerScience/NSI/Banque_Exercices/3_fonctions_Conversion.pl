@@ -14,6 +14,11 @@ Rappel :
 $%
 Tf = 32 +1.8 * Tc\\\
 %$
+
+Exemple:
+
+    >>> conv(20, "CF")
+    68.0
 ==
 Zeditor.code==
 def conv(t,n):
