@@ -23,7 +23,7 @@ Retourne `True` si c'est le cas, `False` sinon.
 
 ==
 
-editor_code==
+editor.code==
 ==
 
 solution==#|python|
