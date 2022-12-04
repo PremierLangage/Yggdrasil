@@ -19,9 +19,9 @@ Exemples
     >>> nombre_chiffres(0,1)
     1
     >>> nombre_chiffres(8,1)
-    0
+    0 # car 2 ** 8 = 256 n'a aucun 1
     >>> nombre_chiffres(18,4)
-    2
+    2 # car 2 ** 18 = 262144 a 2 fois le chiffe 4
 ==
 
 editor.code ==
