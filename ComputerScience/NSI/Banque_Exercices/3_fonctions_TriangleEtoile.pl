@@ -30,21 +30,19 @@ Pour cela:
 
 - écrire une fonction `triangle_etoiles(n)` qui reçoit un entier n 
  et si n est >0 et renvoie une chaine formant un triangle
-de 2n-1 lignes
-
-Exemple
+de 2n-1 lignes. Exemple:
  
-    >>> triangle_etoile(3) 
-    '\n*+**\n*+**+***\n*+**\n*\n'
+        >>> triangle_etoile(3) 
+        '\n*+**\n*+**+***\n*+**\n*\n'
 
-dont l'affichage produit <br>
-'<br>
-\*<br>
-\*+\*\*<br>
-\*+\*\*+\*\*\*<br>
-\*+\*\*<br>
-\*<br>
-'
+    dont l'affichage produit <br>
+    '<br>
+    \*<br>
+    \*+\*\*<br>
+    \*+\*\*+\*\*\*<br>
+    \*+\*\*<br>
+    \*<br>
+    '
 
 ==
 
