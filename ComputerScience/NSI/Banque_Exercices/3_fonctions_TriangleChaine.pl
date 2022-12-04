@@ -12,6 +12,7 @@ text==
 Modifier les fonctions de l'exercice TriangleEtoile pour que l'utilisateur choisisse la chaine à répéter. <br> 
 Vous devez transformer la fonction `ligne-etoiles(n)` en `ligne(n,ch)` et la fonction `triangle_etoiles(n)` en `triangle(n,ch)`
 `
+
 Exemple:
 
     >>> print(triangle(3,'*'))
