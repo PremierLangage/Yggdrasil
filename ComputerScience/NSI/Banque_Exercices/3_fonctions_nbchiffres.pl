@@ -24,6 +24,9 @@ True<br>
 2<br>
 ==
 
+editor.code ==
+==
+
 Xeditor.code==
 def nombre_chiffres(n,c):
     if n<0 or not 0<=c<=9:
