@@ -12,7 +12,7 @@ def table(x,n):
     lst = []
     for i in range(n):
         lst.append(str(i * x))
-    return "\n".joint(lst)
+    return "\n".join(lst)
 x, n = random.randint(4,20), random.randint(4,20)
 pltest1= "affiche_table({}, {})\n{}".format(x, n, table(x, n))
 ==
