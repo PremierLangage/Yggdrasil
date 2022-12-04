@@ -15,6 +15,7 @@ def table(x,n):
     return "\n".join(lst)
 x, n = random.randint(4,20), random.randint(4,20)
 pltest1= "affiche_table({}, {})\n{}".format(x, n, table(x, n))
+after = before
 ==
 
 text==  
