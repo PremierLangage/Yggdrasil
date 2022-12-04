@@ -15,9 +15,14 @@ text==
 
 Programmer une fonction **carre** qui prend en paramètre un entier et retourne son carré.<br>
 
-Programmer ensuite une fonction **premiers_carres** qui : <br>
+Programmer ensuite une fonction **affiche_premiers_carres** qui : <br>
 * prend en paramètre un entier k <br>
 * affiche (imprime) les k premiers carrés de 0 à (k-1)^2 <br>
+
+==
+
+editor.code==
+
 
 ==
 
@@ -26,7 +31,7 @@ solution==
 def carre(n):
     return(n*n)
 
-def premiers_carres(k) :
+def affiche_premiers_carres(k) :
     for i in range(k) :
         print(carre(i))
 ==
@@ -35,17 +40,17 @@ before==
 def carre(n):
     return(n*n)
 
-def premiers_carres(k) :
+def affiche_premiers_carres(k) :
     liste = ""
     for i in range(k) :
         liste += str(carre(i)) + "\n"
     return liste
 
-pltest1 = """>>> premiers_carres(2)
-{}>>> premiers_carres(4)
-{}>>> premiers_carres(20)
+pltest1 = """>>> affiche_premiers_carres(2)
+{}>>> affiche_premiers_carres(4)
+{}>>> affiche_premiers_carres(20)
 {}
-""".format(premiers_carres(2), premiers_carres(4), premiers_carres(20))
+""".format(affiche_premiers_carres(2), affiche_premiers_carres(4), affiche_premiers_carres(20))
 ==
 
 pltest0==
