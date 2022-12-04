@@ -7,6 +7,14 @@ extends=/ComputerScience/python/template/pltest.pl
 title = Afficher les "n" premiers multiples d'un entier "x"
 
 before==
+import random
+def table(x,n):
+    lst = []
+    for i in range(n):
+        lst.append(str(i * x))
+    return "\n".joint(lst)
+x, n = random.randint(4,20), random.randint(4,20)
+pltest1= "affiche_table({}, {})\n{}".format(x, n, table(x, n))
 ==
 
 text==  
@@ -19,6 +27,7 @@ Ecrire une fonction `affiche_table` qui : <br>
 * imprime les n premiers multiples de x.
 
 Exemple:
+
     >>> affiche_table(4, 6)
     0
     4
@@ -37,7 +46,7 @@ def table(x,n):
         print(i * x)
 ==
 
-pltest1==
+pltest0==
 >>> affiche_table(4, 6)
 0
 4
