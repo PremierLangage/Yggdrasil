@@ -12,16 +12,16 @@ On veut déterminer le nombre d'apparition d'un chiffre particulier dans $%2^n%$
 Pour cela écrire une fonction  `nombre_chiffres(exp,chiffre)` qui reçoit un entier positif "exp" et un chiffre "chiffre" et renvoie le nombre 
 d'apparition du chiffre dans $%2^{exp}%$ (le code n'utilisera pas de str). 
  
-Si exp n'est pas un entier positif ou si chiffre n'est pas un chiffre, la fonction renvoie None. <br>
+Si exp n'est pas un entier positif ou si chiffre n'est pas un chiffre, la fonction renvoie None.
 
-Exemples<br>
+Exemples
 
-&gt;&gt;&gt; nombre_chiffres(0,1)==1<br>
-True<br>
-&gt;&gt;&gt; nombre_chiffres(8,1)<br>
-0<br>
-&gt;&gt;&gt; nombre_chiffres(18,4)<br>
-2<br>
+    >>> nombre_chiffres(0,1)
+    1
+    >>> nombre_chiffres(8,1)
+    0
+    >>> nombre_chiffres(18,4)
+    2
 ==
 
 editor.code ==
