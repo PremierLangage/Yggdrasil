@@ -16,6 +16,11 @@ Exemples :
     5
 ==
 
+editor.code==
+
+
+==
+
 pltest==
 
 >>> val_abs(-44)
