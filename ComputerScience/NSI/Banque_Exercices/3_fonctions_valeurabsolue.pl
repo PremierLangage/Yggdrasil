@@ -7,9 +7,14 @@ extends = /ComputerScience/python/template/pltest.pl
 title = Valeur absolue
 
 text==
-Écrivez une fonction `val_abs`  qui renvoie la valeur absolue
- de son paramètre
+Écrivez une fonction `val_abs`  qui renvoie la valeur absolue de son paramètre
 
+Exemples :
+
+	>>> val_abs(5)
+    5
+    >>> val_abs(-5)
+    5
 ==
 
 pltest==
