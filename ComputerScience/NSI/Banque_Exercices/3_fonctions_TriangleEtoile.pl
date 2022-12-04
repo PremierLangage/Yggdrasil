@@ -34,7 +34,9 @@ de 2n-1 lignes
 
 Exemple
  
-triangle_etoile(3) renvoie la chaine "\n\*+\*\*\n\*+\*\*+\*\*\*\n\*+\*\*\n\*\n"
+    >>> triangle_etoile(3) 
+    '\n*+**\n*+**+***\n*+**\n*\n'
+
 dont l'affichage produit <br>
 '<br>
 \*<br>
