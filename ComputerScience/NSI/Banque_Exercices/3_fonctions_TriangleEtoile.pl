@@ -21,12 +21,12 @@ Pour cela:
 - écrire une fonction `ligne_etoile(n)` qui reçoit un entier et renvoie une chaine formée de :
 1 caractère étoile ('\*'), 2 caractères étoiles ('\*'),...,n caractères étoile ('*') séparés par des caratères plus ('+').<br>
     
-    >>> ligne_etoiles(4) 
-    '*+**+***+****'
-    >>> ligne_etoiles(1) 
-    '*'
-    >>> ligne_etoiles(0) 
-    ''
+        >>> ligne_etoiles(4) 
+        '*+**+***+****'
+        >>> ligne_etoiles(1) 
+        '*'
+        >>> ligne_etoiles(0) 
+        ''
 
 - écrire une fonction `triangle_etoiles(n)` qui reçoit un entier n 
  et si n est >0 et renvoie une chaine formant un triangle
