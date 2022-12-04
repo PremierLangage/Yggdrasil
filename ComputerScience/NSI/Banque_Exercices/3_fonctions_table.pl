@@ -19,7 +19,6 @@ pltest1= ">>> affiche_table({}, {})\n{}".format(x, n, table(x, n))
 
 text==  
 
-Ecrire une fonction `saisie_entier_str_positif` que force la saisie d'un entier strictement positif et le renvoie<br>
 Ecrire une fonction `affiche_table` qui : <br> 
 * prend en paramètre deux entiers strictement positif : <br>
     + un entier x  <br>
