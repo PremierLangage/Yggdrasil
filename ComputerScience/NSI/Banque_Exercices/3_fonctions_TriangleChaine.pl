@@ -31,6 +31,7 @@ Exemple:
     to+toto
     to
     
+    
 ==
 
 editor.code==
