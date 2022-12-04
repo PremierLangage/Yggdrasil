@@ -10,10 +10,13 @@ extends = /ComputerScience/python/template/pltest.pl
 piste=verte
 text==
 Ecrivez une fonction `carre` qui retourne le carré de son paramêtre.
->>> carre(3)
-9
->>> carre(-4)
-16
+
+Exemples :
+
+	>>> carre(3)
+    9
+    >>> carre(-4)
+    16
 ==
 before==
 import random 
