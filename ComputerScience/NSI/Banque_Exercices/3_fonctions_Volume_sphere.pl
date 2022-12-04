@@ -23,6 +23,10 @@ Vous devez écrire deux fonctions:
 * `volume_sphere` qui retourne le volume de la sphere 
 en faisant appel à la fonction `cube`<br>
 
+Exemple:
+
+    >>> volume_sphere(3)
+    113.09733552923254
 
 ==
 before==
