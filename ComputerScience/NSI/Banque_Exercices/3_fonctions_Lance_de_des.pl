@@ -7,6 +7,13 @@ title = Lancés de dés
 text==  
 Coder une fonction `Lances_Des` qui prend en paramètre un entier "n" compris entre 3 et 18 et renvoie le nombre de façons de faire "n" en lançant trois dés.
 
+Exemple:
+    >>> Lances_Des(1)
+    0 # Il est impossible de faire 1 avec la somme de 3 dés
+    >>> Lances_Des(3)
+    1 # Il n'y a qu'une manière de faire 3 avec la somme de 3 dés
+    >>> Lances_Des(4)
+    3 # Il y a trois manières de faire 4 avec la somme de 3 dés (1 + 1 + 2 ou 1 + 2 + 1 ou 2 + 1 + 1)
 ==
 
 editor.code==
