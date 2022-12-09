@@ -112,17 +112,17 @@ def case_appartient_plateau(jeu, case):
 def coup_possible(jeu, coup):
     plateau = jeu['plateau']
     joueur_actif = jeu['joueur actif']
-    lst = []
     autrejoueur = autre_joueur(joueur_actif)
+    lst = []
     i, j = coup
     directions = [(-1, -1),(-1, 0),(-1, 1),(0, -1),(0, 1),(1, -1),(1, 0),(1, 1)]
     for dir in directions:
-        x, y = i + dir[0], j + dir[1]
+        dx, dy = dir
+        x, y = i + dx, j + dy
         lstdir = []
         while case_appartient_plateau(jeu, (x, y)) and plateau[x][y] == autrejoueur:
             lstdir.append((x, y))
-            x, y = x + 1, y + 1
-        x, y = x + 1, y + 1
+            x, y = x + dx, y + dy
         if case_appartient_plateau(jeu, (x, y)) and plateau[x][y] == joueur_actif:
             lst.extend(lstdir)
     return lst
