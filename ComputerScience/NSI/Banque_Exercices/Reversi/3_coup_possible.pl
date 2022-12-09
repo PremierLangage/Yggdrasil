@@ -114,27 +114,28 @@ def coup_possible(jeu, coup):
     joueur_actif = jeu['joueur actif']
     lst = []
     autrejoueur = autre_joueur(joueur_actif)
+    i, j = coup
     directions = [(-1, -1),(-1, 0),(-1, 1),(0, -1),(0, 1),(1, -1),(1, 0),(1, 1)]
     for dir in directions:
-        k = 1
-        while case_appartient_plateau(jeu, (i + k * dir[0], j + k * dir[1])) and plateau[i + k * dir[0]][j + k * dir[1]] == autrejoueur:
-            k += 1
-        if -1 < i + k * dir[0] < len(plateau) and -1 < j + k * dir[1] < len(plateau) and k != 1 and plateau[i + k * dir[0]][j + k * dir[1]] ==joueur_actif:
-            if (i,j) in dico:
-                dico[(i,j)].append(dir)
-            else:
-                dico[(i,j)] = [dir]
-    return dico
+        x, y = i + dir[0], j + dir[1]
+        lstdir = []
+        while case_appartient_plateau(jeu, (x, y)) and plateau[x][y] == autrejoueur:
+            lstdir.append((x, y))
+            x, y = x + 1, y + 1
+        x, y = x + 1, y + 1
+        if case_appartient_plateau(jeu, (x, y)) and plateau[x][y] == joueur_actif:
+            lst.extend(lstdir)
+    return lst
 
 taille = randint(3,8) * 2
 jeu = initialise_jeu(taille)
-coups = coups_possibles(jeu)
+coup = coup_possible(jeu,(0,0))
 
 pltest += """
 >>> jeu = {} #
->>> coups_possibles(jeu)
+>>> coup_possible(jeu, (0, 0))
 {}
-""".format(jeu, coups)
+""".format(jeu, coup)
 ==
 
 
