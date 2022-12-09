@@ -95,10 +95,10 @@ def initialise_jeu(taille):
     jeu['plateau'][taille // 2 - 1][taille // 2 ] = 1
     return jeu
 
-def coups_possibles(jeu):
+def coup_possible(jeu, coup):
     plateau = jeu['plateau']
     joueur_actif = jeu['joueur actif']
-    dico = {}
+    lst = []
     autrejoueur = 1 - joueur_actif
     directions = [(-1, -1),(-1, 0),(-1, 1),(0, -1),(0, 1),(1, -1),(1, 0),(1, 1)]
     for i in range(len(plateau)):
