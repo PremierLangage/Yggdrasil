@@ -58,8 +58,8 @@ pltest==
 ...     'taille_fenetre' : 640
 ...     }
 ... } # 
->>> coup_possible(jeu, )
-{(0, 2): [(1, 0)], (1, 3): [(0, -1)]}
+>>> coup_possible(jeu, (0,2))
+[(1, 1),(1, 2),(2, 2)]
 ==
 
 
