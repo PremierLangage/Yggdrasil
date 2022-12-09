@@ -62,7 +62,7 @@ pltest==
 [(1, 1),(1, 2),(2, 2)]
 ==
 
-grader +==
+"""grader +==
 def autre_joueur(joueur):
    if joueur == "joueur1":
        return "joueur2"
@@ -76,9 +76,7 @@ def case_appartient_plateau(jeu, case):
    else:
        return False
 
-
-
-==
+=="""
 
 
 
