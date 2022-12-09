@@ -70,7 +70,7 @@ def initialise_jeu(taille):
     assert taille % 2 == 0
     jeu = {
         "plateau": [],
-        "joueur actif": 0,
+        "joueur actif": "joueur1",
         "joueur1":  {
                 "nom": "joueur1",
                 "couleur": "white",
