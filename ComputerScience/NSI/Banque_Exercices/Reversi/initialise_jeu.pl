@@ -59,25 +59,26 @@ doctest==
     exemple:
     >>> initialise_jeu(4)
     {"plateau": [
-        [-1, -1, -1, -1],
-        [-1,  0,  1, -1],
-        [-1,  1,  0, -1],
-        [-1, -1, -1, -1]
+        [-1, -1, -1, 0, 1, -1, -1, -1],
+        [-1, -1, -1, 0, 1, 1, -1, -1],
+        ...
+        ...
+        [-1, -1, -1, -1, -1, -1, -1, -1]
         ],
-    "joueur actif": 0,
-    "joueurs":  [{
+    "joueur actif": "joueur1",
+    "joueur1": {
             "nom": "joueur1",
             "couleur": "white",
             "score": 2 
         },
-        {
+    "joueur2": {
             "nom": "joueur2",
             "couleur": "red",
             "score": 2 
-        }],
+        },
     "parametres":{
         'framerate': 10,
-        'plateau' : 4,
+        'plateau' : 8,
         'taille_fenetre' : 640
         }
     }
