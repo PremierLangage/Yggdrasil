@@ -16,9 +16,9 @@ before== #|python|
 from random import randint
 
 def autre_joueur(joueur):
-    if joueur = "joueur1":
+    if joueur == "joueur1":
         return "joueur2"
-    elif joueur = "joueur2":
+    elif joueur == "joueur2":
         return "joueur1"
 
 ==
