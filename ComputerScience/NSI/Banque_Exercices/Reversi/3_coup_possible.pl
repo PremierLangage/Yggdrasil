@@ -101,6 +101,14 @@ def autre_joueur(joueur):
     elif joueur == "joueur2":
         return "joueur1"
 
+def case_appartient_plateau(jeu, case):
+    plateau = jeu['plateau']
+    i, j = case
+    if -1 < i < len(plateau) and -1 < j < len(plateau):
+        return True
+    else:
+        return False
+
 def coup_possible(jeu, coup):
     plateau = jeu['plateau']
     joueur_actif = jeu['joueur actif']
@@ -109,7 +117,7 @@ def coup_possible(jeu, coup):
     directions = [(-1, -1),(-1, 0),(-1, 1),(0, -1),(0, 1),(1, -1),(1, 0),(1, 1)]
     for dir in directions:
         k = 1
-        while -1 < i + k * dir[0] < len(plateau) and -1 < j + k * dir[1] < len(plateau) and plateau[i + k * dir[0]][j + k * dir[1]] == autrejoueur:
+        while case_appartient_plateau(jeu, (i + k * dir[0], j + k * dir[1])) and plateau[i + k * dir[0]][j + k * dir[1]] == autrejoueur:
             k += 1
         if -1 < i + k * dir[0] < len(plateau) and -1 < j + k * dir[1] < len(plateau) and k != 1 and plateau[i + k * dir[0]][j + k * dir[1]] ==joueur_actif:
             if (i,j) in dico:
