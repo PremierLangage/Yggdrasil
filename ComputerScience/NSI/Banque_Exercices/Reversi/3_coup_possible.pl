@@ -71,16 +71,16 @@ def initialise_jeu(taille):
     jeu = {
         "plateau": [],
         "joueur actif": 0,
-        "joueurs":  [{
+        "joueur1":  {
                 "nom": "joueur1",
                 "couleur": "white",
                 "score": 2 
             },
-            {
+        "joueur2":  {
                 "nom": "joueur2",
                 "couleur": "red",
                 "score": 2 
-            }],
+            },
         "parametres":{
             'framerate': 10,
             'plateau' : taille,
