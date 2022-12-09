@@ -62,6 +62,25 @@ pltest==
 [(1, 1),(1, 2),(2, 2)]
 ==
 
+grader +==
+def autre_joueur(joueur):
+   if joueur == "joueur1":
+       return "joueur2"
+   elif joueur == "joueur2":
+       return "joueur1"
+def case_appartient_plateau(jeu, case):
+   plateau = jeu['plateau']
+   i, j = case
+   if -1 < i < len(plateau) and -1 < j < len(plateau):
+       return True
+   else:
+       return False
+
+
+
+==
+
+
 
 before== #|python| 
 from random import randint
