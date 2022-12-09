@@ -5,18 +5,6 @@ funcname= coup_possible
 title= Ce coup est-il possible ?
 
 pltest==
->>> def autre_joueur(joueur):
-...    if joueur == "joueur1":
-...        return "joueur2"
-...    elif joueur == "joueur2":
-...        return "joueur1"
->>> def case_appartient_plateau(jeu, case):
-...    plateau = jeu['plateau']
-...    i, j = case
-...    if -1 < i < len(plateau) and -1 < j < len(plateau):
-...        return True
-...    else:
-...        return False
 >>> jeu = {
 ... "plateau": [
 ...     [None, None, None, None],
