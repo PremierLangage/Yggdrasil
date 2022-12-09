@@ -143,7 +143,7 @@ doctest==
             [1 ,  0,  0, -1],
             [1 , -1,  1, -1]
             ],
-        "joueur actif": "joueur1",
+        "joueur actif": "joueur2",
         "joueur1":  {
                 "nom": "joueur1",
                 "couleur": "white",
@@ -161,7 +161,9 @@ doctest==
             }
         }
     >>> coup_possible(jeu, (0, 2))
-    [(1, 1),(1, 2),(2, 2)]
+    [(1, 1),(1, 2),(2, 2)] # Le joueur2 peut joueur en (0, 2). Il retournera 3 pions
+    >>> coup_possible(jeu, (3, 1))
+    [] # Le joueur2 ne peut pas joueur en (3, 1).
 ==
 
 
