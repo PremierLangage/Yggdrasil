@@ -7,10 +7,10 @@ title= Ce coup est-il possible ?
 pltest==
 >>> jeu = {
 ... "plateau": [
-...     [-1, -1, -1, -1],
-...     [-1,  0,  1, -1],
-...     [-1,  1,  0, -1],
-...     [-1, -1, -1, -1]
+...     [None, None, None, None],
+...     [None,  "joueur1",  "joueur2", None],
+...     [None,  1"joueur2",  "joueur1", None],
+...     [None, None, None, None]
 ...     ],
 ... "joueur actif": "joueur1",
 ... "joueur1": {
@@ -36,10 +36,10 @@ pltest==
 []
 >>> jeu = {
 ... "plateau": [
-...     [-1, -1, -1, -1],
-...     [-1,  0,  0, -1],
-...     [1 ,  0,  0, -1],
-...     [1 , -1,  1, -1]
+...     [None, None, None, None],
+...     [None,  "joueur1",  "joueur1", None],
+...     ["joueur2" ,  "joueur1",  "joueur1", None],
+...     ["joueur2" , None,  "joueur2", None]
 ...     ],
 ... "joueur actif": "joueur2",
 ... "joueur1":  {
@@ -88,32 +88,34 @@ def initialise_jeu(taille):
             }
         }
     for i in range(taille):
-        jeu['plateau'].append([-1] * taille)
-    jeu['plateau'][taille // 2 - 1][taille // 2 - 1] = 0
-    jeu['plateau'][taille // 2 ][taille // 2 ] = 0
-    jeu['plateau'][taille // 2 ][taille // 2 - 1] = 1
-    jeu['plateau'][taille // 2 - 1][taille // 2 ] = 1
+        jeu['plateau'].append([None] * taille)
+    jeu['plateau'][taille // 2 - 1][taille // 2 - 1] = "joueur1"
+    jeu['plateau'][taille // 2 ][taille // 2 ] = "joueur1"
+    jeu['plateau'][taille // 2 ][taille // 2 - 1] = "joueur2"
+    jeu['plateau'][taille // 2 - 1][taille // 2 ] = "joueur2"
     return jeu
+
+def autre_joueur(joueur):
+    if joueur == "joueur1":
+        return "joueur2"
+    elif joueur == "joueur2":
+        return "joueur1"
 
 def coup_possible(jeu, coup):
     plateau = jeu['plateau']
     joueur_actif = jeu['joueur actif']
     lst = []
-    autrejoueur = 1 - joueur_actif
+    autrejoueur = autre_joueur(joueur_actif)
     directions = [(-1, -1),(-1, 0),(-1, 1),(0, -1),(0, 1),(1, -1),(1, 0),(1, 1)]
-    for i in range(len(plateau)):
-        for j in range(len(plateau)):
-            if plateau[i][j] != -1:
-                continue
-            for dir in directions:
-                k = 1
-                while -1 < i + k * dir[0] < len(plateau) and -1 < j + k * dir[1] < len(plateau) and plateau[i + k * dir[0]][j + k * dir[1]] == autrejoueur:
-                    k += 1
-                if -1 < i + k * dir[0] < len(plateau) and -1 < j + k * dir[1] < len(plateau) and k != 1 and plateau[i + k * dir[0]][j + k * dir[1]] ==joueur_actif:
-                    if (i,j) in dico:
-                        dico[(i,j)].append(dir)
-                    else:
-                        dico[(i,j)] = [dir]
+    for dir in directions:
+        k = 1
+        while -1 < i + k * dir[0] < len(plateau) and -1 < j + k * dir[1] < len(plateau) and plateau[i + k * dir[0]][j + k * dir[1]] == autrejoueur:
+            k += 1
+        if -1 < i + k * dir[0] < len(plateau) and -1 < j + k * dir[1] < len(plateau) and k != 1 and plateau[i + k * dir[0]][j + k * dir[1]] ==joueur_actif:
+            if (i,j) in dico:
+                dico[(i,j)].append(dir)
+            else:
+                dico[(i,j)] = [dir]
     return dico
 
 taille = randint(3,8) * 2
