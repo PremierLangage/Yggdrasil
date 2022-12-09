@@ -9,7 +9,7 @@ pltest==
 ... "plateau": [
 ...     [None, None, None, None],
 ...     [None,  "joueur1",  "joueur2", None],
-...     [None,  1"joueur2",  "joueur1", None],
+...     [None,  "joueur2",  "joueur1", None],
 ...     [None, None, None, None]
 ...     ],
 ... "joueur actif": "joueur1",
