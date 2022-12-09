@@ -149,10 +149,10 @@ doctest==
     exemple:
     >>> jeu = {
         "plateau": [
-            [-1, -1, -1, -1],
-            [-1,  0,  0, -1],
-            [1 ,  0,  0, -1],
-            [1 , -1,  1, -1]
+            [None, None, None, None],
+            [None,  "joueur1",  "joueur1", None],
+            ["joueur2" ,  "joueur1",  "joueur1", None],
+            ["joueur2" , None,  "joueur2", None]
             ],
         "joueur actif": "joueur2",
         "joueur1":  {
