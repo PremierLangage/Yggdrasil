@@ -17,7 +17,8 @@ h = f1
 # choice([f1, f2, f3])
 
 if h == f1 :
-    sol = Interval(-oo, (p-n)/2, False, False)
+    sol = (-oo, (p-n)/2)
+    #Interval(-oo, (p-n)/2, False, False)
 if h == f2 :
     sol = 1
 if h == f3 : 
@@ -35,8 +36,12 @@ embed ==
 ==
 
 prefix ==
+$! ] !$
+==
+
+ending ==
+$! [ !$
 ==
 
 latexsettings.order = 'ilex'
-
 
