@@ -5,27 +5,23 @@ extends = /model/math/input0.pl
 before ==
 from sympy import series
 var('x')
+var('a')
 
 n = randint(1, 10)
 p = randint(1, 10)
+m = randint(1, 10)
 
-f1 = ln(abs(x - p) - abs(x + n))
-f2 = sqrt(x - n)/(x + p)
-f3 = ln(x + p)/(x - n)
+f = a*sqrt(x + n)
+g = p*x + m
 
-h = f1
-# choice([f1, f2, f3])
-
-if h == f1 :
-    sol = Interval(-oo, (p-n)/2, False, False)
-if h == f2 :
-    sol = 1
-if h == f3 : 
-    sol = 1
+sol = m/sqrt(n)
 ==
 
 question ==
-Donner le domaine de définition de la fonction $! {{ h|latex }} !$ .
+Donner la valeur de $! a !$ pour que la fonction $! h !$ définie par $! \\
+    h(x) = \begin{cases} {{ f|latex }} & \text{ si } x > 0 , \\ 
+    {{ g|latex }} & \text{ si } x < 0 \end{cases} !$
+    soit continue sur $! \mathbb{R} !$.
 ==
 
 embed ==
