@@ -13,13 +13,14 @@ f1 = ln(abs(x - p) - abs(x + n))
 f2 = sqrt(x - n)/(x + p)
 f3 = ln(x + p)/(x - n)
 
-h = choice([f1, f2, f3])
+h = f1
+# choice([f1, f2, f3])
 
 if h == f1 :
-    sol = [-oo, (p-n)/2[
-elif h == f2 :
+    sol = Interval(-oo, (p-n)/2, False, False)
+if h == f2 :
     sol = 1
-else :
+if h == f3 : 
     sol = 1
 ==
 
@@ -30,8 +31,12 @@ Donner le domaine de définition de la fonction $! {{ h|latex }} !$ .
 embed ==
 ==
 
+embed ==
+==
+
 prefix ==
 ==
 
 latexsettings.order = 'ilex'
+
 
