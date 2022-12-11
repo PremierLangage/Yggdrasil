@@ -8,22 +8,23 @@ title= Quels sont tous les coups possibles ?
 pltest==
 >>> jeu = {
 ... "plateau": [
-...     [-1, -1, -1, -1],
-...     [-1,  0,  1, -1],
-...     [-1,  1,  0, -1],
-...     [-1, -1, -1, -1]
+...     [None, None, None, None],
+...     [None,  "joueur1",  "joueur2", None],
+...     [None,  "joueur2",  "joueur1", None],
+...     [None, None, None, None]
 ...     ],
-... "joueur actif": 0,
-... "joueurs":  [{
+... "joueur actif": "joueur1",
+... "joueur1": {
 ...         "nom": "joueur1",
 ...         "couleur": "white",
 ...         "score": 2 
 ...     },
+... "joueur2":
 ...     {
 ...         "nom": "joueur2",
 ...         "couleur": "red",
 ...         "score": 2 
-...     }],
+...     },
 ... "parametres":{
 ...     'framerate': 10,
 ...     'plateau' : 4,
@@ -34,10 +35,10 @@ pltest==
 {(0, 2): [(1, 0)], (1, 3): [(0, -1)], (2, 0): [(0, 1)], (3, 1): [(-1, 0)]}
 >>> jeu = {
 ... "plateau": [
-...     [-1, -1, -1, -1],
-...     [-1,  0,  0, -1],
-...     [-1,  1,  0, -1],
-...     [-1, -1, -1, -1]
+...     [None, None, None, None],
+...     [None,  "joueur1",  "joueur1", None],
+...     [None,  "joueur2",  "joueur1", None],
+...     [None, None, None, None]
 ...     ],
 ... "joueur actif": 0,
 ... "joueurs":  [{
@@ -68,17 +69,17 @@ def initialise_jeu(taille):
     assert taille % 2 == 0
     jeu = {
         "plateau": [],
-        "joueur actif": 0,
-        "joueurs":  [{
+        "joueur actif": "joueur1",
+        "joueur1":  {
                 "nom": "joueur1",
                 "couleur": "white",
                 "score": 2 
             },
-            {
+        "joueur2":  {
                 "nom": "joueur2",
                 "couleur": "red",
                 "score": 2 
-            }],
+            },
         "parametres":{
             'framerate': 10,
             'plateau' : taille,
@@ -86,11 +87,11 @@ def initialise_jeu(taille):
             }
         }
     for i in range(taille):
-        jeu['plateau'].append([-1] * taille)
-    jeu['plateau'][taille // 2 - 1][taille // 2 - 1] = 0
-    jeu['plateau'][taille // 2 ][taille // 2 ] = 0
-    jeu['plateau'][taille // 2 ][taille // 2 - 1] = 1
-    jeu['plateau'][taille // 2 - 1][taille // 2 ] = 1
+        jeu['plateau'].append([None] * taille)
+    jeu['plateau'][taille // 2 - 1][taille // 2 - 1] = "joueur1"
+    jeu['plateau'][taille // 2 ][taille // 2 ] = "joueur1"
+    jeu['plateau'][taille // 2 ][taille // 2 - 1] = "joueur2"
+    jeu['plateau'][taille // 2 - 1][taille // 2 ] = "joueur2"
     return jeu
 
 def autre_joueur(joueur):
