@@ -1,5 +1,6 @@
 @ /builder/before.py [builder.py]
 extends = func.pl
+@ /ComputerScience/NSI/Banque_Exercices/Reversi/pltestgrader_before.py [grader.py]
 
 funcname= coup_possible
 title= Ce coup est-il possible ?
@@ -62,7 +63,7 @@ pltest==
 [(1, 1),(1, 2),(2, 2)]
 ==
 
-grader +=
+befor ==
 def autre_joueur(joueur):
    if joueur == "joueur1":
        return "joueur2"
