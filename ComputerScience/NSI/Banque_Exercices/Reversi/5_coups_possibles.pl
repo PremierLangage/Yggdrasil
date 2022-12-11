@@ -31,7 +31,7 @@ pltest==
 ...     'taille_fenetre' : 640
 ...     }
 ... } #
->>> jeu["plateau"]
+>>> affiche(jeu["plateau"])
 [[None, None, None, None], [None, 'joueur1', 'joueur2', None], [None, 'joueur2', 'joueur1', None], [None, None, None, None]]
 >>> coups_possibles(jeu)
 {(0, 2): [(1, 2)], (1, 3): [(1, 2)], (2, 0): [(2, 1)], (3, 1): [(2, 1)]}
@@ -155,6 +155,21 @@ pltest += """
 ==
 
 befor ==
+def affiche(plateau):
+    chaine = ""
+    for ligne in plateau:
+        lstligne = []
+        for cell in ligne:
+            if cell == None:
+                lstligne.append(" ")
+            elif cell =="joueur1":
+                lstligne.append("1")
+            else:
+                lstligne.append("2")
+        chaine += "| " + " | ".join(lstligne) + " |\n"
+    print(chaine)
+
+
 def autre_joueur(joueur):
     if joueur == "joueur1":
         return "joueur2"
