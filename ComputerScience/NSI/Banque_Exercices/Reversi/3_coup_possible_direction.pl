@@ -147,7 +147,7 @@ def coup_possible_direction(jeu, coup):
 
 taille = randint(3, 8) * 2
 jeu = initialise_jeu(taille)
-coup = coup_possible(jeu, (0, 0), (1, 0))
+coup = coup_possible_direction(jeu, (0, 0), (1, 0))
 
 pltest += """
 >>> jeu = {} #
