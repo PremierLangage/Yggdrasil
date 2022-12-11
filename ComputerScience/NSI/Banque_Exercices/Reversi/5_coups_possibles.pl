@@ -36,7 +36,6 @@ pltest==
 |   | 1 | 2 |   |
 |   | 2 | 1 |   |
 |   |   |   |   |
-
 >>> coups_possibles(jeu)
 {(0, 2): [(1, 2)], (1, 3): [(1, 2)], (2, 0): [(2, 1)], (3, 1): [(2, 1)]}
 >>> jeu = {
@@ -68,7 +67,6 @@ pltest==
 |   | 1 | 1 |   |
 |   | 2 | 1 |   |
 |   |   |   |   |
-
 >>> coups_possibles(jeu)
 {(2, 0): [(2, 1)], (3, 0): [(2, 1)], (3, 1): [(2, 1)]}
 ==
@@ -166,7 +164,7 @@ pltest += """
 
 befor ==
 def affiche(plateau):
-    chaine = ""
+    lst = []
     for ligne in plateau:
         lstligne = []
         for cell in ligne:
@@ -176,8 +174,8 @@ def affiche(plateau):
                 lstligne.append("1")
             else:
                 lstligne.append("2")
-        chaine += "| " + " | ".join(lstligne) + " |\n"
-    print(chaine)
+        lst.append("| " + " | ".join(lstligne) + " |")
+    print("\n".join(lst))
 
 
 def autre_joueur(joueur):
