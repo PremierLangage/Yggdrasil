@@ -32,6 +32,7 @@ pltest==
 ...     }
 ... } #
 >>> jeu["plateau"]
+[[None, None, None, None], [None, 'joueur1', 'joueur2', None], [None, 'joueur2', 'joueur1', None], [None, None, None, None]]
 >>> coups_possibles(jeu)
 {(0, 2): [(1, 2)], (1, 3): [(1, 2)], (2, 0): [(2, 1)], (3, 1): [(2, 1)]}
 >>> jeu = {
@@ -57,7 +58,7 @@ pltest==
 ...     'plateau' : 4,
 ...     'taille_fenetre' : 640
 ...     }
-... } # 
+... } #
 >>> coups_possibles(jeu)
 {(2, 0): [(2, 1)], (3, 0): [(2, 1)], (3, 1): [(2, 1)]}
 ==
