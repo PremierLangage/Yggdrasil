@@ -75,8 +75,7 @@ def case_appartient_plateau(jeu, case):
        return True
    else:
        return False"""
-
-
+==
 
 
 
