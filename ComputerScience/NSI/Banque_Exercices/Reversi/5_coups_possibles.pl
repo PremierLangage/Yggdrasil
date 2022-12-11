@@ -206,22 +206,23 @@ doctest==
     exemple:
     >>> jeu = {
         "plateau": [
-            [-1, -1, -1, -1],
-            [-1,  0,  1, -1],
-            [-1,  1,  0, -1],
-            [-1, -1, -1, -1]
+            [None, None, None, None],
+            [None,  "joueur1",  "joueur2", None],
+            [None,  "joueur2",  "joueur1", None],
+            [None, None, None, None]
             ],
-        "joueur actif": 0,
-        "joueurs":  [{
+        "joueur actif": "joueur1",
+        "joueur1": {
                 "nom": "joueur1",
                 "couleur": "white",
                 "score": 2 
             },
+        "joueur2":
             {
                 "nom": "joueur2",
                 "couleur": "red",
                 "score": 2 
-            }],
+            },
         "parametres":{
             'framerate': 10,
             'plateau' : 4,
