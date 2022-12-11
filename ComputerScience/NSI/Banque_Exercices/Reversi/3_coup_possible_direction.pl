@@ -158,10 +158,19 @@ pltest += """
 
 
 doctest==
-    la fonction coup_possible(jeu, coup) retourne les coordonnées des
-    pions à retourner si le coup est possible pour le joueur actif.
-    Si la fonction renvoie la liste [(1, 1),(1, 2),(2, 2)] cela signifie
-    que le coup est possible et qu'il permettra de retourner 3 pions aux
+    la fonction coup_possible_direction(jeu, coup, dir) retourne une liste des coordonnées des
+    pions à retourner si le coup est possible dans la direction dir pour le joueur actif.
+    coup est donc un tuple de l'endroit ou on tente de jouer. (1, 2) signifie que l'on tente
+    de jouer à la ligne 1 (on compte à partir de 0) et à la colonne 2.
+    dir est un tuple de la direction dans laquelle on veut savoir si on va retourner des 
+    pions adverses. 
+     * (-1, 0) signifie que l'on veut savoir si on va retourner des pions 
+    vers le haut:  -1 pour dire une ligne en moins, 0 signifie même colonne.
+     * (1, 1) signifie que l'on veut savoir si on va retourner des pions 
+    vers le bas à droite (diagonale):  1 pour dire une ligne en plus, 1 signifie 
+    une colonne en plus.
+    Si la fonction renvoie la liste [(1, 2),(2, 2)] cela signifie
+    que le coup dans cette direction permettra de retourner 2 pions aux
     coordonnées indiquées.
 
     exemple:
@@ -189,10 +198,10 @@ doctest==
             'taille_fenetre' : 640
             }
         }
-    >>> coup_possible(jeu, (0, 2))
-    [(1, 1),(1, 2),(2, 2)] # Le joueur2 peut joueur en (0, 2). Il retournera 3 pions
-    >>> coup_possible(jeu, (3, 1))
-    [] # Le joueur2 ne peut pas joueur en (3, 1).
+    >>> coup_possible(jeu, (0, 2), (1, 0))
+    [(1, 2),(2, 2)] # Le joueur2 peut joueur en (0, 2). Il retournera 2 pions vers le bas.
+    >>> coup_possible(jeu, (3, 1), (0, 1))
+    [] # Le joueur2 ne retournera aucun pion vers la droite si il joueu en (3, 1).
 ==
 
 
