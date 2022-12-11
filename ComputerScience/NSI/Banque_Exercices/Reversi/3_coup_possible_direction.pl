@@ -129,7 +129,7 @@ def case_appartient_plateau(jeu, case):
     else:
         return False
 
-def coup_possible_direction(jeu, coup):
+def coup_possible_direction(jeu, coup, dir):
     plateau = jeu['plateau']
     joueur_actif = jeu['joueur actif']
     autrejoueur = autre_joueur(joueur_actif)
