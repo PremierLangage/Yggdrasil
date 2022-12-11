@@ -35,7 +35,7 @@ pltest==
 [(1, 2)]
 >>> coup_possible_direction(jeu, (1, 3), (-1, 0))
 []
->>> coup_possible(jeu, (0, 1), (0, 1))
+>>> coup_possible_direction(jeu, (0, 1), (0, 1))
 []
 >>> jeu = {
 ... "plateau": [
