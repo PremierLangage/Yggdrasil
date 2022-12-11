@@ -142,22 +142,27 @@ def case_appartient_plateau(jeu, case):
     else:
         return False
 
-def coup_possible(jeu, coup):
+def coup_possible_direction(jeu, coup, dir):
     plateau = jeu['plateau']
     joueur_actif = jeu['joueur actif']
     autrejoueur = autre_joueur(joueur_actif)
-    lst = []
     i, j = coup
+    dx, dy = dir
+    x, y = i + dx, j + dy
+    lstdir = []
+    while case_appartient_plateau(jeu, (x, y)) and plateau[x][y] == autrejoueur:
+        lstdir.append((x, y))
+        x, y = x + dx, y + dy
+    if case_appartient_plateau(jeu, (x, y)) and plateau[x][y] == joueur_actif:
+        return lstdir
+    else:
+        return []
+
+def coup_possible(jeu, coup):
+    lst = []
     directions = [(-1, -1),(-1, 0),(-1, 1),(0, -1),(0, 1),(1, -1),(1, 0),(1, 1)]
     for dir in directions:
-        dx, dy = dir
-        x, y = i + dx, j + dy
-        lstdir = []
-        while case_appartient_plateau(jeu, (x, y)) and plateau[x][y] == autrejoueur:
-            lstdir.append((x, y))
-            x, y = x + dx, y + dy
-        if case_appartient_plateau(jeu, (x, y)) and plateau[x][y] == joueur_actif:
-            lst.extend(lstdir)
+        lst.extend(coup_possible_direction(jeu, coup, dir))
     return lst
 
 taille = randint(3,8) * 2
@@ -178,6 +183,10 @@ doctest==
     Si la fonction renvoie la liste [(1, 1),(1, 2),(2, 2)] cela signifie
     que le coup est possible et qu'il permettra de retourner 3 pions aux
     coordonnées indiquées.
+    On utilisera la fonction coup_possible_direction et on rappelle que
+    8 direction sont possibles, on peut les lister dans une liste comme
+    ci-dessous:
+    directions = [(-1, -1),(-1, 0),(-1, 1),(0, -1),(0, 1),(1, -1),(1, 0),(1, 1)]
 
     exemple:
     >>> jeu = {
