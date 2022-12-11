@@ -30,7 +30,8 @@ pltest==
 ...     'plateau' : 4,
 ...     'taille_fenetre' : 640
 ...     }
-... } 
+... } #
+>>> jeu["plateau"]
 >>> coups_possibles(jeu)
 {(0, 2): [(1, 2)], (1, 3): [(1, 2)], (2, 0): [(2, 1)], (3, 1): [(2, 1)]}
 >>> jeu = {
