@@ -1,5 +1,6 @@
 @ /builder/before.py [builder.py]
 extends = func.pl
+@ /ComputerScience/NSI/Banque_Exercices/Reversi/pltestgrader_before.py [grader.py]
 
 funcname= jouer_coup
 title= Jouer un coup
@@ -134,6 +135,71 @@ pltest += """
 >>> jeu['joueur1']['score']
 {}
 """.format(jeu_init, coups1, coup1, jeu1['plateau'], jeu1['joueur actif'], jeu1['joueur1']['score'], coups2, coup2, jeu['plateau'], jeu['joueur actif'], jeu['joueur1']['score'])
+==
+
+befor ==
+def affiche(plateau):
+    lst = []
+    for ligne in plateau:
+        lstligne = []
+        for cell in ligne:
+            if cell == None:
+                lstligne.append(" ")
+            elif cell =="joueur1":
+                lstligne.append("1")
+            else:
+                lstligne.append("2")
+        lst.append("| " + " | ".join(lstligne) + " |")
+    print("\n".join(lst))
+
+
+def autre_joueur(joueur):
+    if joueur == "joueur1":
+        return "joueur2"
+    elif joueur == "joueur2":
+        return "joueur1"
+
+def case_appartient_plateau(jeu, case):
+    plateau = jeu['plateau']
+    i, j = case
+    if -1 < i < len(plateau) and -1 < j < len(plateau):
+        return True
+    else:
+        return False
+
+def coup_possible_direction(jeu, coup, dir):
+    plateau = jeu['plateau']
+    joueur_actif = jeu['joueur actif']
+    autrejoueur = autre_joueur(joueur_actif)
+    i, j = coup
+    dx, dy = dir
+    x, y = i + dx, j + dy
+    lstdir = []
+    while case_appartient_plateau(jeu, (x, y)) and plateau[x][y] == autrejoueur:
+        lstdir.append((x, y))
+        x, y = x + dx, y + dy
+    if case_appartient_plateau(jeu, (x, y)) and plateau[x][y] == joueur_actif:
+        return lstdir
+    else:
+        return []
+
+def coup_possible(jeu, coup):
+    lst = []
+    directions = [(-1, -1),(-1, 0),(-1, 1),(0, -1),(0, 1),(1, -1),(1, 0),(1, 1)]
+    for dir in directions:
+        lst.extend(coup_possible_direction(jeu, coup, dir))
+    return lst
+
+
+def coups_possibles(jeu):
+    plateau = jeu['plateau']
+    dico = {}
+    for i in range(len(plateau)):
+        for j in range(len(plateau)):
+            possible = coup_possible(jeu, (i, j))
+            if len(possible) != 0:
+                dico[(i,j)] = possible
+    return dico
 ==
 
 
