@@ -43,6 +43,20 @@ def initialise_jeu(taille):
     jeu['plateau'][taille // 2 - 1][taille // 2 ] = "joueur2"
     return jeu
 
+def affiche(plateau):
+    lst = []
+    for ligne in plateau:
+        lstligne = []
+        for cell in ligne:
+            if cell == None:
+                lstligne.append(" ")
+            elif cell =="joueur1":
+                lstligne.append("1")
+            else:
+                lstligne.append("2")
+        lst.append("| " + " | ".join(lstligne) + " |")
+    return "\n".join(lst)
+
 def autre_joueur(joueur):
     if joueur == "joueur1":
         return "joueur2"
@@ -120,7 +134,7 @@ pltest += """
 >>> jeu = {} #
 >>> coups = {} #
 >>> jouer_coup(jeu, {}, coups) #
->>> jeu['plateau']
+>>> affiche(jeu['plateau'])
 {}
 >>> jeu['joueur actif']
 '{}'
@@ -128,13 +142,13 @@ pltest += """
 {}
 >>> coups = {} #
 >>> jouer_coup(jeu, {}, coups) #
->>> jeu['plateau']
+>>> affiche(jeu['plateau'])
 {}
 >>> jeu['joueur actif']
 '{}'
 >>> jeu['joueur1']['score']
 {}
-""".format(jeu_init, coups1, coup1, jeu1['plateau'], jeu1['joueur actif'], jeu1['joueur1']['score'], coups2, coup2, jeu['plateau'], jeu['joueur actif'], jeu['joueur1']['score'])
+""".format(jeu_init, coups1, coup1, affiche(jeu1['plateau']), jeu1['joueur actif'], jeu1['joueur1']['score'], coups2, coup2, affiche(jeu['plateau']), jeu['joueur actif'], jeu['joueur1']['score'])
 ==
 
 befor ==
