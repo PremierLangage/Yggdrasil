@@ -123,7 +123,7 @@ pltest += """
 >>> jeu['plateau']
 {}
 >>> jeu['joueur actif']
-{}
+'{}'
 >>> jeu['joueur1']['score']
 {}
 >>> coups = {} #
@@ -131,7 +131,7 @@ pltest += """
 >>> jeu['plateau']
 {}
 >>> jeu['joueur actif']
-{}
+'{}'
 >>> jeu['joueur1']['score']
 {}
 """.format(jeu_init, coups1, coup1, jeu1['plateau'], jeu1['joueur actif'], jeu1['joueur1']['score'], coups2, coup2, jeu['plateau'], jeu['joueur actif'], jeu['joueur1']['score'])
