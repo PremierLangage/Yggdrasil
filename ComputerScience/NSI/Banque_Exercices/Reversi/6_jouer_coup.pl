@@ -218,22 +218,22 @@ doctest==
     exemple:
     >>> jeu = {
         "plateau": [
-            [-1, -1, -1, -1],
-            [-1,  0,  1, -1],
-            [-1,  1,  0, -1],
-            [-1, -1, -1, -1]
+            [None, None, None, None],
+            [None,  'joueur1',  'joueur2', None],
+            [None,  'joueur2',  'joueur1', None],
+            [None, None, None, None]
             ],
         "joueur actif": 0,
-        "joueurs":  [{
+        "joueur1":  {
                 "nom": "joueur1",
                 "couleur": "white",
                 "score": 2 
             },
-            {
+        "joueur2":  {
                 "nom": "joueur2",
                 "couleur": "red",
                 "score": 2 
-            }],
+            },
         "parametres":{
             'framerate': 10,
             'plateau' : 4,
@@ -242,15 +242,15 @@ doctest==
         }
     >>> jouer_coup(jeu, (0,2), coups_possibles)
     >>> jeu['plateau']
-    [[-1, -1, -1, -1],
-    [-1,  0,  1, -1],
-    [ 0,  0,  0, -1],
-    [-1, -1, -1, -1]]
+    [[None, None, None, None],
+    [None,  'joueur1',  'joueur2', None],
+    [ 'joueur1',  'joueur1',  'joueur1', None],
+    [None, None, None, None]]
     >>> jeu['joueur actif']
     1
-    >>> jeu['joueurs'][0]['score']
+    >>> jeu['joueur1']['score']
     4
-    >>> jeu['joueurs'][1]['score']
+    >>> jeu['joueur2']['score']
     1
 ==
 
