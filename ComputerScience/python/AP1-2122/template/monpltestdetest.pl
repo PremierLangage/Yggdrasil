@@ -47,7 +47,7 @@ True
 
 testname1=Hidden Tests
 pltest1==
->>> f(10) == 20#
+>>> f(10) == 20 #
 True
 >>> f(12)#
 24
