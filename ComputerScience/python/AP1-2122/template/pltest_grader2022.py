@@ -79,7 +79,9 @@ if __name__ == "__main__":
 #        a, b = tester.runpltest(1)
 #    elif
 
-    
+
+testname= stop
+
     if "pltest" in dic:
         pltest = dic['pltest']
         tester = PlRunner(student,pltest)
