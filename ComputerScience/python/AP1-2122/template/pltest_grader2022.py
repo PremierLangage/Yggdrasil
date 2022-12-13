@@ -80,7 +80,7 @@ if __name__ == "__main__":
 #    elif
 
 
-    testname= stop
+    testname0= stop
 
     if "pltest" in dic:
         pltest = dic['pltest']
