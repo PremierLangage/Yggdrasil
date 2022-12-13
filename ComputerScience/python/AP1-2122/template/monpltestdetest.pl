@@ -53,7 +53,7 @@ True
 24
 >>> 'k' in globals()#
 True
->>> 'g' in globals() #
+>>> 'g' in globals() # Vous devez définir une fonction g #
 True
 ==
 
