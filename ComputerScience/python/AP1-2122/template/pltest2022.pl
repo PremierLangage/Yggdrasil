@@ -6,8 +6,10 @@
 @ plrunner.py [pltest_doc.py]
 @ pltest_grader2022.py [grader.py]
 @ feedback2022.py [feedback2.py]
-@ /ComputerScience/python/template/anothertemplate.html [template.html]
+#@ /ComputerScience/python/template/anothertemplate.html [template.html]
 # 
+
+@  template2022.html [template.html]
 
 @ /utils/sandboxio.py
 @ /builder/none.py [builder.py]
