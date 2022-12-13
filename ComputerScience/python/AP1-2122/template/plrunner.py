@@ -98,7 +98,7 @@ class PlRunner(doctest.DocTestRunner):
                 if len(found[1])>1:
                     return False,found[1][:-1]
                 else:
-                    eturn False,found[0]
+                    return False,found[0]
             
             if found[1].startswith("#"): # Numéro du test
                 return True,"un test"+str(self.testnum)
