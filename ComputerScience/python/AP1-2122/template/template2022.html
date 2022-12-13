@@ -1,9 +1,10 @@
 
 
 
+{% if feedback.tests %}
 
 
-<!-- default template used by the feedback code can be bypassed in  feedback class see documentation -->
+
 {% if feedback.globalok %}
 <div style="border:1px solid black;padding:0%;margin:1%;background-color:LightGreen;border-radius:4px;">
 <button type="button" class="btn btn-block btn-success"
@@ -101,5 +102,5 @@
 
 
 
-
+{%  endif %}
 
