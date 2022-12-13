@@ -97,7 +97,7 @@ class PlRunner(doctest.DocTestRunner):
                 return False,""
             found = line.split("#", 1) # couper sur le premier #
             if found[1].startswith("#"): # Numéro du test
-                return True,"un test"
+                return True,"un test"+str(self.testnum)
             else:
                 return True,found[1]
 
