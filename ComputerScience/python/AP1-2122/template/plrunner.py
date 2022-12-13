@@ -91,39 +91,38 @@ class PlRunner(doctest.DocTestRunner):
         if line.endswith("\n"):
             line = line[:-1]
         if "#" not in line:
-            return line
+            return True,line
         else:
             if line.endswith("#"): # Hidden
-                return None
+                return False,""
             found = line.split("#", 1) # couper sur le premier #
             if found[1].startswith("#"): # Numéro du test
-                return " "
+                return True,""
             else:
-                return found[1]
+                return True,found[1]
 
     def report_start(self, out, test, example):
         pass
     def report_success(self, out, test, example, got):
-        sortie = self.testtitle(example.source)
-        if sortie:
-            self.fb.addTestSuccess(sortie, got, example.want)
+        sortie, texte = self.testtitle(example.source)
+        if sortie: # hidden 
+            self.fb.addTestSuccess(texte, got, example.want)
             self.right += 1
             self.total += 1
 
     def report_failure(self, out, test, example, got):
-        sortie = self.testtitle(example.source)
-        if sortie:
-            self.fb.addTestFailure(sortie, got, example.want)
-            self.fail += 1
-            self.total += 1
+        sortie, texte = self.testtitle(example.source)
+        self.fb.addTestFailure(texte, got, example.want)
+        self.fail += 1
+        self.total += 1
 
     def report_unexpected_exception(self, out, test, example, exc_info):
-        sortie = self.testtitle(example.source)
+        sortie,texte = self.testtitle(example.source)
         self.total += 1
         if not sortie :
             self.fb.addTestError("Erreur !","<br>".join(traceback.format_exception(exc_info[0],exc_info[1],exc_info[2],limit=1)),"")
         else :
-            self.fb.addTestError(sortie+": en erreur ! ", "<br>".join(traceback.format_exception(exc_info[0],exc_info[1],exc_info[2],limit=1)), "")
+            self.fb.addTestError(texte+": en erreur ! ", "<br>".join(traceback.format_exception(exc_info[0],exc_info[1],exc_info[2],limit=1)), "")
 
     def summarize(self):
         self.fb.doTextOutput()
