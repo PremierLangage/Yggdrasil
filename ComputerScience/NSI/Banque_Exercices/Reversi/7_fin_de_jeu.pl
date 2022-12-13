@@ -25,7 +25,8 @@ pltest += """
 doctest==
     la fonction fin_de_jeu(jeu) renvoie True si le joueur actif n'a aucun coup possible ou si 
     il n'y a plus de place sur le plateau (si la somme des scores est égale au nombre de case
-    sur le plateau). Renvoie False dans le cas contraire
+    sur le plateau). Renvoie False dans le cas contraire.
+    Cette fonction utilise donc la fonction coups_possible.
 
     exemple:
     >>> jeu = {
