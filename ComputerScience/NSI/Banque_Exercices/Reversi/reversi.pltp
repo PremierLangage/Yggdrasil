@@ -37,11 +37,11 @@ La structure de données est la suivante. Le jeu est intégralement modélisé p
 
     jeu = {
         "plateau": [
-            [-1, -1, -1, 0, 1, -1, -1, -1],
-            [-1, -1, -1, 0, 1, 1, -1, -1],
+            [None, None, None, 'joueur1', 'joueur2', None, None, None],
+            [None, None, None, 'joueur1', 'joueur2', 'joueur2', None, None],
             ...
             ...
-            [-1, -1, -1, -1, -1, -1, -1, -1]
+            [None, None, None, None, None, None, None, None]
             ],
         "joueur actif": "joueur1",
         "joueur1": {
@@ -69,10 +69,13 @@ et lancez le jeu.
 ==
 
 # Fonctions de base 
-@ initialise_jeu.pl
-@ coups_possibles.pl
-@ jouer_coup.pl
-@ fin_de_jeu.pl
+@ 1_initialise_jeu.pl
+@ 2_autre_joueur.pl
+@ 3_coup_possible_direction.pl
+@ 4_coup_possible.pl
+@ 5_coups_possibles.pl
+@ 6_jouer_coup.pl
+@ 7_fin_de_jeu.pl
 
 
 
