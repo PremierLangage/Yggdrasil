@@ -93,9 +93,13 @@ class PlRunner(doctest.DocTestRunner):
         if "#" not in line:
             return True,line
         else:
-            if line.endswith("#"): # Hidden
-                return False,""
             found = line.split("#", 1) # couper sur le premier #
+            if line.endswith("#"): # Hidden
+                if len(found[1])>1:
+                    return False,found[1][:-1]
+                else:
+                    eturn False,found[0]
+            
             if found[1].startswith("#"): # Numéro du test
                 return True,"un test"+str(self.testnum)
             else:
