@@ -109,11 +109,12 @@ def jouer_coup(jeu, coup, dico_coups_possibles):
     joueur_actif = jeu['joueur actif']
     autrejoueur = autre_joueur(joueur_actif)
     score_coup = 0
+    i, j = coup
+    plateau[i][j] = joueur_actif
     for case in dico_coups_possibles[coup]:
         i, j = case
         plateau[i][j] = joueur_actif
         score_coup += 1
-    plateau[i][j] = joueur_actif
     jeu[joueur_actif]['score'] += score_coup + 1
     jeu[autrejoueur]['score'] -= score_coup
     jeu['joueur actif'] = autrejoueur
