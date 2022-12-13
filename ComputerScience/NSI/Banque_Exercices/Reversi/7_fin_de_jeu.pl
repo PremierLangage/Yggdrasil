@@ -30,7 +30,7 @@ pltest==
 ...        'plateau' : 4,
 ...        'taille_fenetre' : 640
 ...        }
-...    }
+...    } #
 >>> fin_de_jeu(jeu)
 False
 >>> jeu = {
@@ -56,7 +56,7 @@ False
 ...        'plateau' : 4,
 ...        'taille_fenetre' : 640
 ...        }
-...    }
+...    } #
 >>> fin_de_jeu(jeu)
 True
 ==
