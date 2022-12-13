@@ -38,9 +38,10 @@ pltest0==
 True
 >>> f(12)
 24
->>> 'k' in globals()
+>>> 'k' in globals() #
 True
->>> 'g' in globals()
+>>> 'g' in globals() #
+True
 ==
 
 
