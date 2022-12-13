@@ -32,7 +32,7 @@ pltest==
 ...        }
 ...    } #
 >>> fin_de_jeu(jeu)
-False
+False # Tout va bien, la partie peut continuer
 >>> jeu = {
 ...    "plateau": [
 ...        [None, None, None, None],
@@ -58,7 +58,33 @@ False
 ...        }
 ...    } #
 >>> fin_de_jeu(jeu)
-True
+True # Le joueur actif ne peut plus jouer
+>>> jeu = {
+...    "plateau": [
+...        [None, None, None, None],
+...        [None,  'joueur2',  'joueur2', None],
+...        [None,  'joueur2',  'joueur1', None],
+...        [None, None, None, None]
+...        ],
+...    "joueur actif": "joueur1",
+...    "joueur1":  {
+...            "nom": "joueur1",
+...            "couleur": "white",
+...            "score": 18 
+...        },
+...    "joueur2":  {
+...            "nom": "joueur2",
+...            "couleur": "red",
+...            "score": 2 
+...        },
+...    "parametres":{
+...        'framerate': 10,
+...        'plateau' : 4,
+...        'taille_fenetre' : 640
+...        }
+...    } #
+>>> fin_de_jeu(jeu)
+True # Plus de place sur le plateau
 ==
 
 before== #|python| 
