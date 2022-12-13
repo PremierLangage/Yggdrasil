@@ -29,9 +29,56 @@ doctest==
 
     exemple:
     >>> jeu = {
-    >>> fin_de_jeu({})
-    True
-    >>> fin_de_jeu({(1,2):[(1,1)]})
+        "plateau": [
+            [None, None, None, None],
+            [None,  'joueur1',  'joueur2', None],
+            [None,  'joueur2',  'joueur1', None],
+            [None, None, None, None]
+            ],
+        "joueur actif": "joueur1",
+        "joueur1":  {
+                "nom": "joueur1",
+                "couleur": "white",
+                "score": 2 
+            },
+        "joueur2":  {
+                "nom": "joueur2",
+                "couleur": "red",
+                "score": 2 
+            },
+        "parametres":{
+            'framerate': 10,
+            'plateau' : 4,
+            'taille_fenetre' : 640
+            }
+        }
+    >>> fin_de_jeu(jeu)
+    False
+    >>> jeu = {
+        "plateau": [
+            [None, None, None, None],
+            [None,  'joueur2',  'joueur2', None],
+            [None,  'joueur2',  'joueur2', None],
+            [None, None, None, None]
+            ],
+        "joueur actif": "joueur1",
+        "joueur1":  {
+                "nom": "joueur1",
+                "couleur": "white",
+                "score": 2 
+            },
+        "joueur2":  {
+                "nom": "joueur2",
+                "couleur": "red",
+                "score": 2 
+            },
+        "parametres":{
+            'framerate': 10,
+            'plateau' : 4,
+            'taille_fenetre' : 640
+            }
+        }
+    >>> fin_de_jeu(jeu)
     False
     
 ==
