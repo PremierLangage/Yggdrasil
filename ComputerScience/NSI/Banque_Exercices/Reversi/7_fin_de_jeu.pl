@@ -70,7 +70,7 @@ True
 ...    "joueur1":  {
 ...            "nom": "joueur1",
 ...            "couleur": "white",
-...            "score": 18 
+...            "score": 14 
 ...        },
 ...    "joueur2":  {
 ...            "nom": "joueur2",
