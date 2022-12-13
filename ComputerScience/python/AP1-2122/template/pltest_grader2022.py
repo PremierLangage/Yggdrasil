@@ -67,7 +67,7 @@ if __name__ == "__main__":
     if 'stopfirsterror' in dic:
         stop=bool(dic['stopfirsterror'])
     else:
-        stop=True
+        stop=False
 
     outstr=""
 #    if "pltestbuilder" in dic:
@@ -80,7 +80,6 @@ if __name__ == "__main__":
 #    elif
 
 
-    dic['testname0']= False
 
     if "pltest" in dic:
         pltest = dic['pltest']
