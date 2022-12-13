@@ -62,7 +62,12 @@ True
 ==
 
 before== #|python| 
-
+def fin_de_jeu(jeu):
+    if jeu['joueur1']['score'] + jeu['joueur2']['score'] == jeu['parametres']['plateau'] ** 2:
+        return True
+    if len(coups_possibles(jeu)) == 0:
+        return True
+    return False
 ==
 
 befor==
