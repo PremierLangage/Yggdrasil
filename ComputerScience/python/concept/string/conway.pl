@@ -5,6 +5,8 @@ name=Conway
 title=Conway
 tag=string|function
 
+extends = 
+
 text==
 # la suite de Conway :
 
