@@ -40,6 +40,7 @@ True
 24
 >>> 'k' in globals()
 True
+>>> 'g' in globals()
 ==
 
 
