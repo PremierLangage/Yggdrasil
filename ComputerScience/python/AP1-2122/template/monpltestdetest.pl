@@ -20,6 +20,7 @@ def f(n):
     return 2*n
 
 k = f(6)
+
 def g(p):
     return f(p-1)+f(p+1)
 
