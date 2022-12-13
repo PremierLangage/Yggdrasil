@@ -79,7 +79,7 @@ doctest==
             }
         }
     >>> fin_de_jeu(jeu)
-    False
+    True # Car le joueur 1 ne peut plus jouer
     
 ==
 
