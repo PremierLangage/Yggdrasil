@@ -26,7 +26,7 @@ def g(p):
 s='chaine'
 ==
 
-
+stopfirsterror= True
 
 
 
