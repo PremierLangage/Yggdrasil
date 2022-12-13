@@ -7,7 +7,7 @@ title= Initialise le jeu
 
 pltest==
 >>> initialise_jeu(4)
-{'plateau': [[None, None, None, None], [None, 0, 'joueur2', None], [None, 'joueur2', 0, None], [None, None, None, None]], 'joueur actif': 0, 'joueur1': {'nom': 'joueur1', 'couleur': 'white', 'score': 2}, 'joueur2': {'nom': 'joueur2', 'couleur': 'red', 'score': 2}, 'parametres': {'framerate': 10, 'plateau': 4, 'taille_fenetre': 640}}
+{'plateau': [[None, None, None, None], [None, 'joueur1', 'joueur2', None], [None, 'joueur2', 'joueur1', None], [None, None, None, None]], 'joueur actif': 0, 'joueur1': {'nom': 'joueur1', 'couleur': 'white', 'score': 2}, 'joueur2': {'nom': 'joueur2', 'couleur': 'red', 'score': 2}, 'parametres': {'framerate': 10, 'plateau': 4, 'taille_fenetre': 640}}
 ==
 
 before== #|python| 
@@ -59,11 +59,10 @@ doctest==
     exemple:
     >>> initialise_jeu(4)
     {"plateau": [
-        [None, -1, -1, 0, 1, -1, -1, -1],
-        [-1, -1, -1, 0, 1, 1, -1, -1],
-        ...
-        ...
-        [-1, -1, -1, -1, -1, -1, -1, -1]
+        [None, None, None, None],
+        [None, 'joueur1', 'joueur2', None],
+        [None, 'joueur2', 'joueur1', None],
+        [None, None, None, None]
         ],
     "joueur actif": "joueur1",
     "joueur1": {
