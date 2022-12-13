@@ -33,8 +33,8 @@ stopfirsterror= False
 testname0=Tests de base sans commentaires
 pltest0==
 >>> def _hid():    pass # Vous devez définir une fonction g #
->>> 'g' in globals() == True and type(g)== type(_hid) 
-True
+>>> 'g' in globals() == True and type(g)
+function
 >>> f(10) == 20 ##
 True
 >>> f(12)
