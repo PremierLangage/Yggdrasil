@@ -35,7 +35,7 @@ pltest0==
 >>> def _hid(): pass#
 >>> 'g' in globals() == True and type(g)== type(_hid) # Vous devez définir une fonction g #
 True
->>> f(10) == 2
+>>> f(10) == 20
 True
 >>> f(12)
 24
