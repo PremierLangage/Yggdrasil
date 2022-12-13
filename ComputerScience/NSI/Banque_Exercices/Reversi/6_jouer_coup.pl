@@ -238,7 +238,7 @@ doctest==
             [None,  'joueur2',  'joueur1', None],
             [None, None, None, None]
             ],
-        "joueur actif": 0,
+        "joueur actif": "joueur1",
         "joueur1":  {
                 "nom": "joueur1",
                 "couleur": "white",
