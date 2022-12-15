@@ -24,8 +24,10 @@ def autre_joueur(joueur):
 ==
 
 doctest==
-    la fonction autre_joueur(joueur) donne l'information de quel est l'autre joueur: "joueur1" ou "joueur2".
-    Si joueur est "joueur1" alors la fonction retourne "joueur2" et inversement.
+    la fonction autre_joueur(joueur) donne l'information de quel 
+    est l'autre joueur: "joueur1" ou "joueur2".
+    Si joueur est "joueur1" alors la fonction 
+    retourne "joueur2" et inversement.
 
     exemple:
     >>> autre_joueur("joueur2")
