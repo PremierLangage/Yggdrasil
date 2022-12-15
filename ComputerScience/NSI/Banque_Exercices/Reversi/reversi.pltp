@@ -16,7 +16,7 @@ L’objectif de ce devoir est d’implémenter un jeu de stratégie [Reversi](ht
 
 ### Principe général
 
-Il se joue sur un tablier unicolore de 64 cases, 8 sur 8, appelé othellier. Les joueurs disposent de 64 pions bicolores, rouge d'un côté et blancs de l'autre. En début de partie, quatre pions sont déjà placés au centre de l'othellier : deux rouge, en e4 et d5, et deux blancs, en d4 et e5. Chaque joueur, rouge et blanc, pose l'un après l'autre un pion de sa couleur sur l'othellier selon des règles précises. Le jeu s'arrête quand un joueur ne peut plus poser de pion. On compte alors le nombre de pions. Le joueur ayant le plus grand nombre de pions de sa couleur sur l'othellier a gagné.
+Il se joue sur un tablier unicolore de n cases sur n (ou n est un nombre pair), appelé othellier. Les joueurs disposent de 64 pions bicolores, rouge d'un côté et blancs de l'autre. En début de partie, quatre pions sont déjà placés au centre de l'othellier : deux rouge, en e4 et d5, et deux blancs, en d4 et e5. Chaque joueur, rouge et blanc, pose l'un après l'autre un pion de sa couleur sur l'othellier selon des règles précises. Le jeu s'arrête quand un joueur ne peut plus poser de pion. On compte alors le nombre de pions. Le joueur ayant le plus grand nombre de pions de sa couleur sur l'othellier a gagné.
 
 ### Exemple
 
@@ -63,7 +63,7 @@ La structure de données est la suivante. Le jeu est intégralement modélisé p
 
 Réaliser toutes les étapes.
 
-Si vous arrivez à la fin, recopiez toutes les fonctions dans le fichier donné sur classroom dans spyder, 
+Si vous arrivez à la fin, recopiez toutes les fonctions dans le fichier donné dans moodle, 
 et lancez le jeu.
 
 ==
