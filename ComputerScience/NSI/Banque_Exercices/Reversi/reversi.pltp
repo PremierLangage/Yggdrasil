@@ -18,7 +18,10 @@ L’objectif de ce devoir est d’implémenter un jeu de stratégie [Reversi](ht
 
 Il se joue sur un tablier unicolore de n cases sur n (ou n est un nombre pair), appelé othellier. 
 Les joueurs disposent de n² pions bicolores, noirs d'un côté et blancs de l'autre. En début de partie, 
-quatre pions sont déjà placés au centre de l'othellier : deux noirs, en e4 et d5, et deux blancs, en d4 et e5. 
+quatre pions sont déjà placés au centre de l'othellier : 
+
+!(https://commons.wikimedia.org/wiki/File:Othello-Standard-Board.jpg#/media/File:Othello-Standard-Board.jpg)[https://commons.wikimedia.org/wiki/File:Othello-Standard-Board.jpg#/media/File:Othello-Standard-Board.jpg]
+ 
 Chaque joueur, noir et blanc, pose l'un après l'autre un pion de sa couleur sur l'othellier selon des 
 règles précises. Le jeu s'arrête quand un joueur ne peut plus poser de pion. On compte alors le nombre de pions. 
 Le joueur ayant le plus grand nombre de pions de sa couleur sur l'othellier a gagné.
