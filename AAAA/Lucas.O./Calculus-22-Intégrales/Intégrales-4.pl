@@ -1,4 +1,4 @@
-title = Changement de variables
+title = Décomposition en éléments simples
 extends = /model/math/expr.pl
 extends = /model/math/input0.pl
 
