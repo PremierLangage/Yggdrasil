@@ -26,7 +26,7 @@ class PldoubleRunner(doctest.DocTestRunner):
                 return 0,self.etat
             return 25,'<span class="error-state">Votre test pass pour la deuxi&eacute;me version ce qui n'est pas voulu </span>'
 
-        return 100, '<span class="success-state">Bravo ! Bientôt tester pro.</span>'
+        return 100, '<span class="success-state">Bravo ! Bientôt testeur pro.</span>'
 
     def runf1test(self):
         """
