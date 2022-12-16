@@ -1,4 +1,4 @@
-title = Croissances comparées, facteur dominant
+title = Intégrales
 extends = /model/math/expr.pl
 extends = /model/math/input0.pl
 
@@ -7,14 +7,15 @@ from sympy import series
 from sympy import Integral
 var('x')
 
-h1 = (3* x**2 + 1)(x**3 + x + 1)**2
-h2 = ln(x)/x
-h3 = 2*x*exp(x**2)
-
 a = randint(1, 4)
 b = randint(5, 7)
 
-h = integrate(choice([h1, h2, h3]), (x, a, b))
+c = randint(1, 3)
+d = randint(1, 7)
+
+h = Integral(choice([(c * x**2 + d)*(c*(x**3)/3 + d*x + 1)**2, ln(x)/x, 2*x*exp(x**2)]), (x, a, b))
+
+sol = h.doit()
 ==
 
 question ==
@@ -29,4 +30,3 @@ $! {{ h|latex }} = !$
 ==
 
 latexsettings.order = 'ilex'
-
