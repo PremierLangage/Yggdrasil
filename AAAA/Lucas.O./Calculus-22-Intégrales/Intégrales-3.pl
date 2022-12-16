@@ -25,7 +25,7 @@ sol = h.doit()
 ==
 
 question ==
-Calculer l'intégrale suivante, en faisant le changement de variable $! u = {{ y|latex }} !$
+Calculer l'intégrale suivante, en faisant le changement de variable $! u = {{ y|latex }} !$.
 ==
 
 embed ==
