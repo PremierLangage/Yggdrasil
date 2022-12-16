@@ -28,6 +28,7 @@ embed ==
 ==
 
 prefix ==
+$! {{ a|latex }} = !$
 ==
 
 latexsettings.order = 'ilex'
