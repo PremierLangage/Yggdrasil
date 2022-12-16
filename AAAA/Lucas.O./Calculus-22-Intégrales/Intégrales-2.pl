@@ -16,7 +16,7 @@ sol = h.doit()
 ==
 
 question ==
-Calculer l'intégrale suivante.
+Calculer l'intégrale suivante, en faisant une intégration par parties.
 ==
 
 embed ==
