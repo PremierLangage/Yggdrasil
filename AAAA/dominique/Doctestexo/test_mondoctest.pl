@@ -2,12 +2,12 @@
 extends = modeldoctest.pl
 
 
-code1==
+f1==
 def f():
     return 3
 ==
 
-code2==
+f2==
 
 def f():
     return 4
