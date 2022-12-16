@@ -10,12 +10,15 @@ var('x')
 a = randint(1, 5)
 b = randint(a+1, 10)
 
-h = choice([Integral(exp(2*x)*sin(exp(x)), (x, a, b)),
-    Integral((cos(x))**3, (x, a, b)), 
-    Integral(sqrt(x)/(x+1)**2, (x, a, b))])
+c = randint(1, 6)
+d = randint(1, 4)
 
-if h == Integral(exp(2*x) * sin(exp(x)), (x, a, b)) :
-    y = exp(x)
+h = choice([Integral(c/((x+1)*(x+2)), (x, a, b)),
+    Integral(, (x, a, b)), 
+    Integral(, (x, a, b))])
+
+if h == Integral(c/((x+1)*(x+2)), (x, a, b)) :
+    y = 
 if h == Integral((cos(x))**3, (x, a, b)) :
     y = sin(x)
 if h == Integral(sqrt(x)/(x+1)**2, (x, a, b)) :
@@ -25,7 +28,7 @@ sol = h.doit()
 ==
 
 question ==
-Calculer l'intégrale suivante, en faisant le changement de variable $! u = {{ y|latex }} !$.
+Calculer l'intégrale suivante, en mettant sous la forme $!  !$
 ==
 
 embed ==
