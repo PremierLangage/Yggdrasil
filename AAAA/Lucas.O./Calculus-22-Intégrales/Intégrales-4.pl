@@ -28,7 +28,7 @@ sol = h.doit()
 ==
 
 question ==
-Calculer l'intégrale suivante, en mettant sous la forme $! {{ h|latex }} !$.
+Calculer l'intégrale suivante, en mettant sous la forme $! {{ y|latex }} !$.
 ==
 
 embed ==
