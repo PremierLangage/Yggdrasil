@@ -18,11 +18,11 @@ h = choice([Integral(c/((x+1)*(x+2)), (x, a, b)),
     Integral((c*(x**3) + d*(x**2) + (c-d)*x)/(x**2 + 1), (x, a, b))])
 
 if h == Integral(c/((x+1)*(x+2)), (x, a, b)) :
-    y = "$! A/(x+1) + B/(x+2) !$"
+    y = "latex(A/(x+1) + B/(x+2))"
 if h == Integral(d/(x**2 + 5*x + 6), (x, a, b)) :
-    y = "$! A/(x+2) + B/(x+3) !$"
+    y = "latex(A/(x+2) + B/(x+3))"
 if h == Integral((c*(x**3) + d*(x**2) + (c-d)*x)/(x**2 + 1), (x, a, b)) :
-    y = "$! A*x + B + (C*x)/(x**2 + 1) + D/(x**2 + 1) !$"
+    y = "latex(A*x + B + (C*x)/(x**2 + 1) + D/(x**2 + 1))"
 
 sol = h.doit()
 ==
