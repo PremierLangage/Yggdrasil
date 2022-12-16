@@ -10,7 +10,7 @@ var('x')
 a = randint(1, 5)
 b = randint(a+1, 10)
 
-h = choice([Integral(exp(2x)*sin(exp(x)), (x, a, b)),
+h = choice([Integral(exp(2*x)*sin(exp(x)), (x, a, b)),
     Integral((cos(x))**3, (x, a, b)), 
     Integral(sqrt(x)/(x+1)**2, (x, a, b))])
 
