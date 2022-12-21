@@ -22,7 +22,7 @@ text=f"""Initialisez la variable {var} avec une valeur de type { type_var } quel
 
 
 pltest=f"""
->>> type({var})=={type_var} # V&eaccute;rification du type = 
+>>> type({var})=={type_var} # V&eacute;rification du type = 
 True
 """
 
