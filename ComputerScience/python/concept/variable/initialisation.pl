@@ -12,6 +12,11 @@ title = Initialisation de variable en Python
 
 before== #|python| 
 
+import random 
+random.seed(seed)
+type_var = random.choice(["int","str","float","bool"])
+var = random.choice(["a", "b", "c", "X", "Y"])
+
 
 
 ==
