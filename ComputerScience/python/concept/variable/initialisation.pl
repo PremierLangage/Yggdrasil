@@ -26,6 +26,6 @@ pltest=f"""
 True
 """
 
-editor.code=f"""{var}= """
+editor["code"]=f"""{var}= """
 
 ==
