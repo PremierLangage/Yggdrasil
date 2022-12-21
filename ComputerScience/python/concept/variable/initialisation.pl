@@ -10,3 +10,4 @@ title = Initialisation de variable en Python
 
 
 
+before=
