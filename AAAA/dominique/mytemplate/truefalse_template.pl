@@ -15,6 +15,8 @@ title = PLEASE OVERRIDE THE TITLE OF THE EXERCISE
 text  = PLEASE OVERRIDE THE TEXT OF THE EXERCISE
 form  = {{ radio|component}}
 
+answer=T
+
 before== #|python|
 if not "answer" in globals() and answer != 'T' and answer != 'F':
     raise Exception('you must define a variable "answer = T or F"')
