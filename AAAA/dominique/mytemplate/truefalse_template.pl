@@ -16,7 +16,7 @@ text  = PLEASE OVERRIDE THE TEXT OF THE EXERCISE
 form  = {{ radio|component}}
 
 before== #|python|
-if answer != 'T' and answer != 'F':
+if not "answer" in globals{} and answer != 'T' and answer != 'F':
     raise Exception('you must define a variable "answer = T or F"')
 
 radio.horizontal = horizontal
