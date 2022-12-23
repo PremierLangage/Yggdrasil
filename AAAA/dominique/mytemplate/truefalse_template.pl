@@ -12,7 +12,7 @@ feedback_wrong =
 general_feedback=
 
 title = PLEASE OVERRIDE THE TITLE OF THE EXERCISE
-text  = PLEASE OVERRIDE THE TEXT OF THE EXERCISE
+text  = choisisez la bonne réponse 
 form  = {{ radio|component}}
 
 
