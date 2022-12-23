@@ -15,7 +15,12 @@ title = PLEASE OVERRIDE THE TITLE OF THE EXERCISE
 text  = PLEASE OVERRIDE THE TEXT OF THE EXERCISE
 form  = {{ radio|component}}
 
+
 answer=T
+feedback=" vous avez répondu "
+feedback_correct = "bravo c'est correct "
+feedback_wrong = "non c'est pas correct"
+general_feedback = "general feedback "
 
 before== #|python|
 if not "answer" in globals() and answer != 'T' and answer != 'F':
@@ -23,8 +28,8 @@ if not "answer" in globals() and answer != 'T' and answer != 'F':
 
 radio.horizontal = horizontal
 radio.items = [
-    { "id": "choice1", "content": "<i class='fas fa-check'></i>" },
-    { "id": "choice2", "content": "<i class='fas fa-times'></i>" }
+    { "id": "choice1", "content": "<i class='fas fa-check'>c'est correct </i>" },
+    { "id": "choice2", "content": "<i class='fas fa-times'>c'est faux</i>" }
 ]
 ==
 
