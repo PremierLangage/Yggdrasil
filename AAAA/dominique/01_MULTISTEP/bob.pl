@@ -29,7 +29,7 @@ for i in range(4):
 # append random right answer to group.items array.
 group.items.append({
     "id": R,
-    "content": str(A * B)+str(R)
+    "content": str(A * B)+"  "+str(R)
 })
 
 # shuffle the items
