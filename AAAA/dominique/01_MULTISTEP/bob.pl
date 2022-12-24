@@ -20,15 +20,16 @@ for i in range(4):
     n = random.randint(0, 100)
     while n == A * B:
         n = random.randint(0, 100)
+    U = uuid.uuid4()
     group.items.append({
-        "id": uuid.uuid4(), # generate a random id instead of an hardcoded to avoid cheat
-        "content": str(n)
+        "id": U, # generate a random id instead of an hardcoded to avoid cheat
+        "content": str(n)+str(U)
     })
 
 # append random right answer to group.items array.
 group.items.append({
     "id": R,
-    "content": str(A * B)
+    "content": str(A * B)+str(R)
 })
 
 # shuffle the items
@@ -50,7 +51,7 @@ form==
 evaluator==
 S = group.selection
 score = 0
-feedback = '<span class="error-state animated pulse infinite">Bad answer</span>'
+feedback = f'<span class="error-state animated pulse infinite">Bad answer: {S}</span>'
 
 for item in group.items:
     item['css'] = ''
