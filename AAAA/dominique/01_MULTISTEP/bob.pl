@@ -34,6 +34,7 @@ group.items.append({
 
 # shuffle the items
 random.shuffle(group.items)
+try=0
 ==
 
 title = Radio Group Component
