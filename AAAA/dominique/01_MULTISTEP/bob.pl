@@ -61,7 +61,7 @@ if essai == 0:
             if S == R:
                 item['css'] = 'success-border'
                 score = 100
-                feedback = '<span class="success-state ">Bonne réponse.</span>'
+                feedback = '<span class="success-state ">Bonne r&eacute;ponse.</span>'
             else:
                 item['css'] = 'error-border'
         elif item['id'] == R:
