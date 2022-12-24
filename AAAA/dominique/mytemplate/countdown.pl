@@ -7,6 +7,10 @@ countdown % { "cid": "countdown", "selector": "c-countdown" }
 countdown.time % 10
 countdown.hidden % false
 
+group =: CheckboxGroup
+
+
+
 autoSubmit== #|js|
 const btn = document.querySelector('.action-submit');
 btn.click()
@@ -23,12 +27,23 @@ countdown.actions = [
     { "time": 0, "action": autoSubmit }
 ]
 counter = 0
+
+import random
+group.items = []
+for i in range(4):
+    group.items.append({
+        "id": str(i),
+        "content": str(random.randint(0, 100))
+    })
+
+
 ==
 
 title = Count Down Component
 text =
 form ==
  {{ countdown|component }}
+
 ==
 
 evaluator== #|python|
@@ -43,3 +58,42 @@ grade = (100, f'<h3>remaining: {remaining}, counter: {counter}</h3>')
 
 ==
 
+
+# GENERATE A RANDOM QUESTION
+before==
+
+==
+
+title = Checkbox Group Component
+
+text==
+Select even numbers.
+==
+
+# PRESENT THE QUESTION TO THE STUDENT
+form==
+{{ group|component }}
+==
+
+# EVALUATE THE STUDENT ANSWER
+evaluator==
+right = 0
+total = 0
+for item in group.items:
+    checked = item['checked']
+    content = int(item['content'])
+    if content % 2 == 0:
+        total += 1
+        item['css'] = 'success-border animated pulse infinite'
+        if checked:
+            right += 1
+            item['css'] = 'success-border'
+    elif checked:
+        item['css'] = 'error-border'
+
+
+if total == 0:
+    grade = (100, 'Right')
+else:
+    grade = ((right / total) * 100, f"{right} / {total}")
+==
