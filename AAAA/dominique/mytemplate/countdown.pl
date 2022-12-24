@@ -5,7 +5,7 @@ builder =@ /builder/bbefore.py
 
 countdown % { "cid": "countdown", "selector": "c-countdown" }
 countdown.time % 30
-countdown.hidden % false
+countdown.hidden % true
 
 group =: CheckboxGroup
 
@@ -59,8 +59,8 @@ evaluator==
 
 remaining = countdown.time
 # reset timer
-for e in countdown.actions:
-    e['consumed'] = False
+#for e in countdown.actions:
+#    e['consumed'] = False
 
 counter = -1
 
