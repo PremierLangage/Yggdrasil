@@ -53,7 +53,7 @@ evaluator==
 if essai == 0:
     S = group.selection
     score = 0
-    feedback = f'<span class="error-state animated pulse infinite">Bad answer: {S}</span>'
+    feedback = f'<span class="error-state">Mauvaise réponse.</span>'
 
     for item in group.items:
         item['css'] = ''
