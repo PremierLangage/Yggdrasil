@@ -42,11 +42,21 @@ for i in range(4):
 title = Count Down Component
 
 form ==
- {{ countdown|component }}
+{{ countdown|component }}
 {{ group|component }}
 ==
 
-evaluator== #|python|
+title = Checkbox Group Component plus countdown
+
+text==
+Select even numbers.
+==
+
+
+
+# EVALUATE THE STUDENT ANSWER
+evaluator==
+
 remaining = countdown.time
 # reset timer
 for e in countdown.actions:
@@ -56,27 +66,8 @@ countdown.time = 10
 counter += 1
 grade = (100, f'<h3>remaining: {remaining}, counter: {counter}</h3>')
 
-==
 
 
-# GENERATE A RANDOM QUESTION
-before==
-
-==
-
-title = Checkbox Group Component plus countdown
-
-text==
-Select even numbers.
-==
-
-# PRESENT THE QUESTION TO THE STUDENT
-form==
-
-==
-
-# EVALUATE THE STUDENT ANSWER
-evaluator==
 right = 0
 total = 0
 for item in group.items:
