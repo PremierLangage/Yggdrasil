@@ -12,7 +12,7 @@ import uuid
 
 A = random.randint(0, 10)
 B = random.randint(0, 10)
-R = uuid.uuid4()
+R = str(uuid.uuid4())
 
 # append random false answers to group.items array.
 group.items = []
@@ -20,7 +20,7 @@ for i in range(4):
     n = random.randint(0, 100)
     while n == A * B:
         n = random.randint(0, 100)
-    U = uuid.uuid4()
+    U = str(uuid.uuid4())
     group.items.append({
         "id": U+"a", # generate a random id instead of an hardcoded to avoid cheat
         "content": str(n)+"  "+str(U)
