@@ -69,7 +69,6 @@ remaining = countdown.time
 counter = -1
 
 right = 0
-wrong = 0
 total = 0
 for item in group.items:
     checked = item['checked']
@@ -82,7 +81,6 @@ for item in group.items:
             item['css'] = 'success-border'
     elif checked:
         item['css'] = 'error-border'
-        wrong += 1 
 
 
 if total == right or total == 0:
