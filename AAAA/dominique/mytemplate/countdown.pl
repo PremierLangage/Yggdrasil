@@ -1,7 +1,7 @@
 
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
+builder =@ /builder/bbefore.py
 
 countdown % { "cid": "countdown", "selector": "c-countdown" }
 countdown.time % 10
@@ -17,7 +17,7 @@ logOnConsole==#|js|
 console.log('hello world');
 ==
 
-before== #|python|
+beforeA== #|python|
 countdown.actions = [
     { "time": 5, "action": logOnConsole },
     { "time": 0, "action": autoSubmit }
