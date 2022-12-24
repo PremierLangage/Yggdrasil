@@ -70,7 +70,7 @@ if essai == 0:
     grade = (score, feedback)
     essai=1
 elif essai == 1:
-    text += "\n Un seul essai" 
+    text += """\n <span class="error-state animated pulse infinite">Un seul essai</span>"""
     essai = 2
 
 ==
