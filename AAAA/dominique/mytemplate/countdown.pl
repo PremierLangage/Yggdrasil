@@ -40,10 +40,10 @@ for i in range(4):
 ==
 
 title = Count Down Component
-text =
+
 form ==
  {{ countdown|component }}
-
+{{ group|component }}
 ==
 
 evaluator== #|python|
@@ -64,7 +64,7 @@ before==
 
 ==
 
-title = Checkbox Group Component
+title = Checkbox Group Component plus countdown
 
 text==
 Select even numbers.
@@ -72,7 +72,7 @@ Select even numbers.
 
 # PRESENT THE QUESTION TO THE STUDENT
 form==
-{{ group|component }}
+
 ==
 
 # EVALUATE THE STUDENT ANSWER
