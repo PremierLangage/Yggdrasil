@@ -4,7 +4,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/bbefore.py
 
 countdown % { "cid": "countdown", "selector": "c-countdown" }
-countdown.time % 10
+countdown.time % 30
 countdown.hidden % false
 
 group =: CheckboxGroup
@@ -18,7 +18,7 @@ btn.click()
 
 logOnConsole==#|js|
 // you may open the browser console to see the message
-console.log('hello world');
+console.log('plus vite chauffeur');
 ==
 
 beforeA== #|python|
