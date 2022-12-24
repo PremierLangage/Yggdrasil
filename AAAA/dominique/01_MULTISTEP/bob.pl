@@ -50,21 +50,27 @@ form==
 
 # EVALUATE THE STUDENT ANSWER
 evaluator==
-S = group.selection
-score = 0
-feedback = f'<span class="error-state animated pulse infinite">Bad answer: {S}</span>'
+if try == 0:
+    S = group.selection
+    score = 0
+    feedback = f'<span class="error-state animated pulse infinite">Bad answer: {S}</span>'
 
-for item in group.items:
-    item['css'] = ''
-    if item['id'] == S:
-        if S == R:
-            item['css'] = 'success-border'
-            score = 100
-            feedback = '<span class="success-state animated pulse infinite">Good answer</span>'
-        else:
-            item['css'] = 'error-border'
-    elif item['id'] == R:
-        item['css'] = 'success-border animated pulse infinite'
+    for item in group.items:
+        item['css'] = ''
+        if item['id'] == S:
+            if S == R:
+                item['css'] = 'success-border'
+                score = 100
+                feedback = '<span class="success-state animated pulse infinite">Good answer</span>'
+            else:
+                item['css'] = 'error-border'
+        elif item['id'] == R:
+            item['css'] = 'success-border animated pulse infinite'
 
-grade = (score, feedback)
+    grade = (score, feedback)
+    try=1
+elif try == 1:
+    text += "\n Un seul essai" 
+    try = 2
+
 ==
