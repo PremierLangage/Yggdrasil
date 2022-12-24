@@ -22,7 +22,7 @@ for i in range(4):
         n = random.randint(0, 100)
     U = str(uuid.uuid4())
     group.items.append({
-        "id": U+"a", # generate a random id instead of an hardcoded to avoid cheat
+        "id": U, # generate a random id instead of an hardcoded to avoid cheat
         "content": str(n)+"  "+str(U)
     })
 
@@ -33,7 +33,7 @@ group.items.append({
 })
 
 # shuffle the items
-#random.shuffle(group.items)
+random.shuffle(group.items)
 ==
 
 title = Radio Group Component
