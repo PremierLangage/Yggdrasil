@@ -30,10 +30,14 @@ counter = 0
 
 import random
 group.items = []
-for i in range(4):
+for i in range(2):
     group.items.append({
         "id": str(i),
-        "content": str(random.randint(0, 100))
+        "content": str(random.randint(0, 100)*2)
+    })
+    group.items.append({
+        "id": str(i),
+        "content": str(random.randint(0, 100)*2+1)
     })
 
 
@@ -65,6 +69,7 @@ remaining = countdown.time
 counter = -1
 
 right = 0
+wrong = 0
 total = 0
 for item in group.items:
     checked = item['checked']
@@ -77,6 +82,7 @@ for item in group.items:
             item['css'] = 'success-border'
     elif checked:
         item['css'] = 'error-border'
+        wrong += 1 
 
 
 if total == 0:
