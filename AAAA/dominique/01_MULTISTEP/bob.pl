@@ -23,7 +23,7 @@ for i in range(4):
     U = uuid.uuid4()
     group.items.append({
         "id": U, # generate a random id instead of an hardcoded to avoid cheat
-        "content": str(n)+str(U)
+        "content": str(n)+"  "+str(U)
     })
 
 # append random right answer to group.items array.
