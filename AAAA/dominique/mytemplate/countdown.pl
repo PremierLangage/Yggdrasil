@@ -5,7 +5,7 @@ builder =@ /builder/bbefore.py
 
 countdown % { "cid": "countdown", "selector": "c-countdown" }
 countdown.time % 30
-countdown.hidden % true
+countdown.hidden % false
 
 group =: CheckboxGroup
 
