@@ -7,10 +7,10 @@
 
 radio =: RadioGroup
 horizontal % false
-choices ==
-exemples
-de valeurs
-de choix
+choices==
+=jaune #Bonne réponse; bravo !
+~rouge #Mauvaise réponse, c'est jaune.
+~bleu #Mauvaise réponse, c'est jaune.
 ==
 general_feedback = 
 
