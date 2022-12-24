@@ -80,7 +80,7 @@ for item in group.items:
 
 
 if total == 0:
-    grade = (100, 'Right')
+    grade = (100, 'Right : 100')
 else:
-    grade = ((right / total) * 100, f"{right} / {total}")
+    grade = ((right / total) * 100, f" Voila : {right} / {total}")
 ==
