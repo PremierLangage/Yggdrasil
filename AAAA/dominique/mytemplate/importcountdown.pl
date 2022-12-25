@@ -2,13 +2,13 @@
 
 
 countdown % { "cid": "countdown", "selector": "c-countdown" }
-countdown.time % 30
+countdown.time % 10
 countdown.hidden % false
 
-group =: CheckboxGroup
-
+counter = 0
 
 countdown.actions % [{ "time": 0, "action": autoSubmit }]
+
 autoSubmit== #|js|
 const btn = document.querySelector('.action-submit');
 btn.click()
@@ -23,5 +23,5 @@ console.log('plus vite chauffeur');
 
 beforeA== #|python|
 
-counter = 0
-
+form += "{{ countdown|component }}"
+==
