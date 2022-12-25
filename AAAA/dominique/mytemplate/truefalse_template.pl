@@ -28,7 +28,7 @@ if not "answer" in globals() and answer != 'T' and answer != 'F':
 
 radio.horizontal = horizontal
 radio.items = [
-    { "id": "choice1", "content": "<i class='fas fa-check'>c'est correct </i>" },
+    { "id": "choice1", "content": "<i class='fas fa-check'></i> l'affirmation est juste. " },
     { "id": "choice2", "content": "<i class='fas fa-times'>c'est faux</i>" }
 ]
 ==
@@ -63,3 +63,4 @@ grade = (score, f"<p>{feedback}</p>")
 ==
 
 
+extends= importcountdown.pl
