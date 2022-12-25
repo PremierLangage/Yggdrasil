@@ -23,7 +23,11 @@ console.log('plus vite chauffeur');
 ==
 
 beforeA== #|python|
-countdown.actions = [{ "time": 0, "action": autoSubmit }]
+countdown.actions = [
+    { "time": 5, "action": logOnConsole },
+    { "time": 0, "action": autoSubmit }
+]
+
 form += "{{ countdown|component }}"
 title = "imported countdown "
 ==
