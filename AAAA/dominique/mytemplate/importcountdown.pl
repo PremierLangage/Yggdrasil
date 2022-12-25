@@ -7,7 +7,7 @@ countdown.hidden % false
 
 counter = 0
 
-countdown.actions % [{ "time": 0, "action": autoSubmit }]
+
 
 autoSubmit== #|js|
 const btn = document.querySelector('.action-submit');
@@ -22,6 +22,6 @@ console.log('plus vite chauffeur');
 ==
 
 beforeA== #|python|
-
+countdown.actions = [{ "time": 0, "action": autoSubmit }]
 form += "{{ countdown|component }}"
 ==
