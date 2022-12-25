@@ -28,6 +28,6 @@ countdown.actions = [
     { "time": 0, "action": autoSubmit }
 ]
 
-form += "{{ countdown|component }}"
+form += "\n {{ countdown|component }}"
 title = "imported countdown "
 ==
