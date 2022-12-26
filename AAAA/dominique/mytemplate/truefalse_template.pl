@@ -63,4 +63,4 @@ grade = (score, f"<p>{feedback}</p>")
 ==
 
 
-extends= importcountdown.pl
+extends= /AAAA/dominique/mytemplate/importcountdown.pl
