@@ -64,3 +64,4 @@ grade = (score, f"<p>{feedback}</p>")
 
 
 extends= /AAAA/dominique/mytemplate/importcountdown.pl
+countdown.time % 99
