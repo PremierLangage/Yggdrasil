@@ -1,5 +1,5 @@
 #*****************************************************************************
-#  Copyright (C) 2021 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
+#  Copyright (C) 2023 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
 #
 #  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
 #  Creative Commons CC-by-SA 3.0
@@ -33,12 +33,12 @@ nb_attempt=0
 ==
 
 title==#|markdown|
-Quel est la version du noyau ?
+Quel est le type d'architecture du noyau ?
 ==
 
 text==#|markdown|
-Il apparait que les sandbox exécutent un noyau Linux, mais quelle est la version 
-de révision précise du noyau ? Une option bien choisie de **uname** (R.T.F.M.) 
+Il apparait que les sandbox exécutent un noyau Linux, mais pour quelle type d'architecture est adaptée 
+la version du noyau ? Une option bien choisie de **uname** (R.T.F.M.) 
 devrait vous permettre de trouver votre bonheur. Attention, on veut la chaine complète 
 décrivant la révision du noyau (il n'a pas que des chiffres et des points normalement).
 
