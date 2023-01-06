@@ -57,6 +57,11 @@ True
 True
 >>> 'errors' in globals() #
 True
+>>> 'errors' in globals() # Vous devez definir une variable errors #
+True
+>>> 'errors' in globals() #
+True
+
 ==
 
 
