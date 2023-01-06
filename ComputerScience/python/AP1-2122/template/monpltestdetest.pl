@@ -28,13 +28,13 @@ Test cachés :
 pltest1 =
 """
 
- {{pltest1}}
+ {{pltest1| replace('\n','<br>') | safe}}
 
 """
 pltest2 = 
 """
 
-{pltest2}
+{{pltest2| replace('\n','<br>') | safe}}
 
 """
 ==
