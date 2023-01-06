@@ -57,6 +57,7 @@ True
 True
 >>> 'g' in globals() and type(g)=='function'  ## IL faut definir une fonction g. 
 True
+>>> 'errors' in globals() == True # errors a definir
 ==
 
 
