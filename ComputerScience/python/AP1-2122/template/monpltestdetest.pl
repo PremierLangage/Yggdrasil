@@ -24,13 +24,15 @@ pltest0 = """
 
 """
 
-Test cachés :
+Test cachés il y a un commentaire vide en fin de ligne ou le commentaire se termine par un # :
+
 pltest1 =
 """
 
  {{pltest1| replace('\n','<br>') | safe}}
 
 """
+Tests standard:
 pltest2 = 
 """
 
