@@ -15,7 +15,7 @@ Ce test a pour objectif de tester les capacités du model pltest2022.
 En particulier les options #PL.
 Voici les tests réalisés:
 
-pltest0 = {{pltest0 | indent(2, true)}}
+pltest0 = {{pltest0 | replace('\n','<br>')}}
 Test cachés :
 pltest1 = {{pltest1}}
 
