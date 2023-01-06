@@ -40,10 +40,10 @@ True
 testname2=Tests de base sans commentaires
 pltest2==
 >>> def _hid(): pass#
-
 >>> 'k' in globals()
 True
 >>> 'g' in globals() == True and type(g)== type(_hid) ## IL faut definir une fonction g. 
+True
 ==
 
 
