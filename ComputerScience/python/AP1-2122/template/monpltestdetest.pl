@@ -59,7 +59,7 @@ True
 True
 >>> 'errors' in globals() # Vous devez definir une variable errors #
 True
->>> 'errors' in globals() #
+>>> 'errors' in globals() # Si le commentaire ne fini pas par sharp 
 True
 
 ==
