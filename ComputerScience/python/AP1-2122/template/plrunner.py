@@ -49,6 +49,7 @@ class PlRunner(doctest.DocTestRunner):
 
     def runpltest(self, name, numgroup):
         self.fb.name=str(name)
+        self.fb.testgroupenum= numgroup
         dic = {}
         # ~ with open("student.py","r") as f:
         # ~ exec(f.read(),dic)
