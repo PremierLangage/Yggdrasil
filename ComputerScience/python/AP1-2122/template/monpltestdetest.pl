@@ -15,7 +15,7 @@ Ce test a pour objectif de tester les capacités du model pltest2022.
 En particulier les options #PL.
 Voici les tests réalisés:
 
-pltest0 = {{pltest0}}
+pltest0 = {{pltest0 | html}}
 Test cachés :
 pltest1 = {{pltest1}}
 
