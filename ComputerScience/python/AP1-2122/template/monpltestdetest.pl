@@ -13,6 +13,9 @@ text==
 Ce test a pour objectif de tester les capacités du model pltest2022.
 
 En particulier les options #PL.
+
+
+
 Voici les tests réalisés:
 
 pltest0 = """
@@ -22,10 +25,18 @@ pltest0 = """
 """
 
 Test cachés :
-pltest1 = {{pltest1}}
+pltest1 =
+"""
 
-pltest2 = {pltest2}
+ {{pltest1}}
 
+"""
+pltest2 = 
+"""
+
+{pltest2}
+
+"""
 ==
 
 editor.code ==
