@@ -47,7 +47,7 @@ class PlRunner(doctest.DocTestRunner):
         self.pltest= pltest
         super().__init__()
 
-    def runpltest(self, name):
+    def runpltest(self, name, numgroup):
         self.fb.name=str(name)
         dic = {}
         # ~ with open("student.py","r") as f:
@@ -57,7 +57,7 @@ class PlRunner(doctest.DocTestRunner):
             compile(self.student,"Votre code",'exec')
             exec(self.student, dic)
         except SyntaxError as e:
-            self.fb.addTestSyntaxError(name,subnlbybr(traceback.format_exc(limit=0,chain=False))," Syntaxe ")
+            self.fb.addTestSyntaxError(name,subnlbybr(traceback.format_exc(limit=0,chain=False))," Syntaxe ", )
         except Exception as e:
             self.fb.addTestSyntaxError(name,subnlbybr(traceback.format_exc(limit=0,chain=False))," Exception ")
         else:
