@@ -45,6 +45,8 @@ True
 ==
 
 
+# si aucun test du groupe n'echoue il n'y aura aucun affichage.
+# car ils sont tous hidden (terminé par #).
 testname1=Hidden Tests
 pltest1==
 >>> f(10) == 20 #
@@ -59,9 +61,6 @@ True
 True
 >>> 'errors' in globals() # Vous devez definir une variable errors #
 True
->>> 'errors' in globals() # Si le commentaire ne fini pas par sharp 
-True
-
 ==
 
 
