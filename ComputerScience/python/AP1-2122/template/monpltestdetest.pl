@@ -40,7 +40,7 @@ True
 testname2=Tests de base sans commentaires
 pltest2==
 >>> def _hid(): pass#
->>> 'g' in globals() == True and type(g)== type(_hid) ## IL faut definir une fonction g. 
+>>> 'g' in globals() == True and type(g)== type(_hid) 
 True
 >>> 'k' in globals()
 True
