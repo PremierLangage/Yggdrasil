@@ -9,7 +9,7 @@
 <div style="border:1px solid black;padding:0%;margin:1%;background-color:LightGreen;border-radius:4px;">
 <button type="button" class="btn btn-block btn-success"
    data-toggle="collapse" data-target="#suite{{feedback.testgroupenum}}">
-{{feedback.name}} success
+{{feedback.name}} - ok
 </button>
 <div id="suite{{feedback.testgroupenum}}" class="collapse">
 <div class="card card-success;" style="background-color: LightGreen;">
@@ -18,7 +18,7 @@
    <button type="button" class="btn btn-block  btn-danger"
       aria-expanded="true" aria-controls="suite{{feedback.testgroupenum}}"
       data-toggle="collapse" data-target="#suite{{feedback.testgroupenum}}">
-   {{feedback.name}}  Failure
+   {{feedback.name}}  - echec du test
    </button>
    <div id="suite{{feedback.testgroupenum}}" class="show">
       <div class="card card-danger;" style="background-color: Tomato;">
