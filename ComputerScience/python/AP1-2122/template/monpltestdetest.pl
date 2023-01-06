@@ -55,6 +55,8 @@ True
 True
 >>> 'g' in globals() # Vous devez définir une fonction g #
 True
+>>> 'errors' in globals() 
+True
 ==
 
 
