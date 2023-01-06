@@ -43,13 +43,15 @@ Comment utiliser feedback2
 
 
 class FeedBack():
-    def __init__(self,name="",filename="template.html"):
+    def __init__(self,name="",filename="template.html", oktext="ok", failtext=" echec "):
         self.tests = []
         self.globalok = True  # if not true at least one problem
         self.numtest = 0
         self.name = str(name)
         self.filename=filename
         self.globalfeedback =""
+        self.oktext = oktext
+        self.failtext = failtext
 
     def addTestSuccess(self, text, got, want):
         """
