@@ -15,7 +15,7 @@ Ce test a pour objectif de tester les capacités du model pltest2022.
 En particulier les options #PL.
 Voici les tests réalisés:
 
-pltest0 = {{pltest0 | safe}}
+pltest0 = {{pltest0 | code}}
 Test cachés :
 pltest1 = {{pltest1}}
 
