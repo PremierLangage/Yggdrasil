@@ -39,9 +39,9 @@ Quel est le type d'architecture du noyau ?
 text==#|markdown|
 Il apparait que les sandbox exécutent un noyau Linux, mais pour quelle type d'architecture est adaptée 
 la version du noyau ? Une option bien choisie de **uname** (R.T.F.M.) 
-devrait vous permettre de trouver votre bonheur. Attention, on veut la chaine complète 
-décrivant la révision du noyau (il n'a pas que des chiffres et des points normalement).
-
+devrait vous permettre de trouver le type de processeur visé par le noyau. Les processeurs de PC 
+32 bits utilisent un noyau pour *i386* alors que les processeurs 64 bits visent une architecture *x86_64*.
+Quel est le type d'architecture des processeurs des sandbox ?
 <br>
 
 Pour cela, utiliser 
