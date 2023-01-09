@@ -47,16 +47,18 @@ evaluator==#|py|
 right = 0
 total = 0
 for item in group.items:
+    total += 1
     checked = item['checked']
     content = item['content']
     if content in good:
-        total += 1
         item['css'] = 'success-border animated pulse infinite'
         if checked:
             right += 1
             item['css'] = 'success-border'
     elif checked:
         item['css'] = 'error-border'
+    else:
+        right += 1
 
 if total == 0:
     grade = (100, 'Right')
