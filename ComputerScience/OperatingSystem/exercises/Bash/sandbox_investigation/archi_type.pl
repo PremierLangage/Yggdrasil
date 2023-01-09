@@ -64,7 +64,7 @@ evaluator==#|python|
 import subprocess
 from utils_bash import display_as_shell_this, frame_message
 
-cmd = """uname -p"""
+cmd = """uname -m"""
 sp = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
 solution = sp.communicate()[0].decode().replace(' ', '').replace('\n', '')
 student_ans = (inputbox.value).replace(' ', '').replace('\n', '')
