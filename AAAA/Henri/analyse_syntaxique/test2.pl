@@ -60,7 +60,7 @@ for item in group.items:
     else:
         right += 1
 
-grade = (right / total) * 100
+grade = ((right / total) * 100, f'{right} / {total}')
 ==
 
 settings.allow_reroll = true
