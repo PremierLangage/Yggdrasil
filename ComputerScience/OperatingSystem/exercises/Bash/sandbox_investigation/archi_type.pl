@@ -39,9 +39,9 @@ Quel est le type d'architecture du noyau ?
 text==#|markdown|
 Il apparait que les sandbox exécutent un noyau Linux, mais pour quelle type d'architecture est adaptée 
 la version du noyau ? Une option bien choisie de **uname** (R.T.F.M.) 
-devrait vous permettre de trouver le type de processeur visé par le noyau. Les processeurs de PC 
+devrait vous permettre de trouver le type d'architecture de la machine. Les processeurs de PC 
 32 bits utilisent un noyau pour *i386* alors que les processeurs 64 bits visent une architecture *x86_64*.
-Quel est le type d'architecture des processeurs des sandbox ?
+Quel est le type d'architecture des machines virtuelles exécutant des sandbox ?
 <br>
 
 Pour cela, utiliser 
@@ -64,7 +64,7 @@ evaluator==#|python|
 import subprocess
 from utils_bash import display_as_shell_this, frame_message
 
-cmd = """uname -rv"""
+cmd = """uname -p"""
 sp = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
 solution = sp.communicate()[0].decode().replace(' ', '').replace('\n', '')
 student_ans = (inputbox.value).replace(' ', '').replace('\n', '')
