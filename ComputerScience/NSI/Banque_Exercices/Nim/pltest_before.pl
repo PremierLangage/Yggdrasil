@@ -41,7 +41,7 @@ Si vous souhaitez faire des tests sur le code de l'élève la variable __student
 ==
 
 @ /ComputerScience/python/template/pltest_doc.py
-@ /ComputerScience/python/NSI/Banque_Exercices/Nim/pltestgrader_before.py [grader.py]
+@ /ComputerScience/NSI/Banque_Exercices/Nim/pltestgrader_before.py [grader.py]
 @ /ComputerScience/python/template/feedback2.py
 @ /ComputerScience/python/template/anothertemplate.html [template.html]
 # 
