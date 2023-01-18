@@ -8,11 +8,11 @@
 radio =: RadioGroup
 horizontal % false
 choices==
-=jaune #Bonne réponse; bravo !
+=jaune #Bonne réponse, bravo !
 ~rouge #Mauvaise réponse, c'est jaune.
 ~bleu #Mauvaise réponse, c'est jaune.
 ==
-general_feedback = 
+
 
 title = PLEASE OVERRIDE THE TITLE OF THE EXERCISE
 text  = PLEASE OVERRIDE THE TEXT OF THE EXERCISE
