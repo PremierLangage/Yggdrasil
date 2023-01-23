@@ -12,6 +12,8 @@ Par exemple:
 a = 1
 ```
 
+Donc un nom de variable ici *a* le signe égal *=* et une constante ici *1*.  
+
 
 ==
 
