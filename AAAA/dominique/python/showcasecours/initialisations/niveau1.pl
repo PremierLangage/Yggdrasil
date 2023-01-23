@@ -42,6 +42,11 @@ type: str
 Les chaines - sequences de caractères - doivent être mise entre guillemets ou apostrophes pour être différentiées des autre textes comme les mots clefs. 
 
 
+**Votre mission: créer une variable {{name}} de type {{ type_var }} en l'initialisant avec une constante quelconque (du bon type ;).**
+
+
+
+
 ==
 
 
