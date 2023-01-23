@@ -54,7 +54,9 @@ Les chaines - sequences de caractères - doivent être mise entre guillemets ou 
 
 before==
 
-
+name= "var1"
+type_var= "int"
 
 
 ==
+
