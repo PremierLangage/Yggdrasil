@@ -1,6 +1,9 @@
 
 extends= ../template/pltest.pl
 
+
+@ ../template/studentcode_grader.py [grader.py]
+
 title= Initialisation de variables 
 
 text==
@@ -58,5 +61,12 @@ name= "var1"
 type_var= "int"
 
 
+
 ==
+
+
+evaluator==
+
+
+
 
