@@ -5,6 +5,8 @@ title= Initialisation de variables
 
 text==
 
+# intialisation
+
 Pour créer une variable en python il faut l'initialiser, le plus simple est de faire une affectation.   
 
 Par exemple:
@@ -12,7 +14,32 @@ Par exemple:
 a = 1
 ```
 
-Donc un nom de variable ici *a* le signe égal *=* et une constante ici *1*.  
+Donc un nom de variable ici **a** le signe égal **=** et une constante ici **1**.  
+
+# Les constantes 
+
+## Booléens 
+
+type: bool  
+
+True False  
+
+## les entiers 
+
+type: int  
+1 2 etc.  
+
+## les flotants
+
+type: float  
+0.1 13 -0.77 
+
+Remarquez que la notation est anglaise avec des **.** au lieux de virgules **,** pour séparer la partie entière de la partie décimale .  
+
+## Les chaines 
+
+type: str
+Les chaines - sequences de caractères - doivent être mise entre guillemets ou apostrophes pour être différentiées des autre textes comme les mots clefs. 
 
 
 ==
