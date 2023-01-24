@@ -67,15 +67,15 @@ et lancez le jeu avec la commande `jeu_de_nim(21,3)` par exemple.
 ==
 
 # Fonctions de base 
-@ 1_init_plateau.pl
-@ 2_coup_possible.pl
-@ 3_jouer_coup.pl
-@ 4_victoire.pl
-@ 5_entree_joueurs.pl
-@ 6_affiche_plateau.pl
-@ 7_entree_coup.pl
-@ 8_tour.pl
-@ 9_jeu_de_nim.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/1_init_plateau.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/2_coup_possible.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/3_jouer_coup.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/4_victoire.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/5_entree_joueurs.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/6_affiche_plateau.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/7_entree_coup.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/8_tour.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/9_jeu_de_nim.pl
 
 
 reserve==
