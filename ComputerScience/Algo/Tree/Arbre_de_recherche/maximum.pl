@@ -19,14 +19,14 @@
 #extends=/ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
 extends=/ComputerScience/C/template/std_progC.pl
 #author=Marc Zipstein
-title=Extraire le maximum dans un arbre binaire de recherche
+title= maximum d'un arbre binaire de recherche
 tag=recherche
 
 editor.height=300px
 
 text== 
-Écrire une fonction C **extraire_maximum** qui extrait le maximumun d'un **arbre binaire de recherche**.
-La fonction renvoie 1 en cas d'extraction réussie et 0 sinon.La valeur extraite est transmise par adresse.
+Écrire une fonction C ** maximum** qui retourne le maximumun d'un **arbre binaire de recherche**.
+La fonction renvoie 1 en cas d'extraction réussie et 0 sinon.La valeur du max est réciupérée par un passage par adresse.
 
 On utilisera le type   
 typedef struct node{  
@@ -39,8 +39,9 @@ typedef struct node{
 
 editor.code==#|c|
 
-int extraire_maximum(...){
+int extraire_maximum(Tree t, ... max){
  
+ return 0;
 }
 
 ==
