@@ -62,8 +62,10 @@ int main(int argc, char* argv[]){
   int size=1;
   int index=0;
   build_tree(&tree);
-
-
+  construire_tableau(tree, &t, &index, &size);
+  for(size=0; size < index; size++)
+    fprintf(stderr,"%d ",t[size]);
+  fprintf(stderr,"Nombre de reallocation: %d",nbrealloc);
 return 0;
 }
 
