@@ -56,18 +56,14 @@ code_after==#|c|
 
 
 int main(int argc, char* argv[]){
-  Tree t=NULL;
+  Tree tree=NULL;
+  int *t;
+  t=malloc(sizeof(int);
+  int size=1;
+  int index=0;
+  build_tree(&tree);
 
 
-  build_tree(&t);
-  if(appartient(t,4))
-    printf(" 4 appartient à l'arbre \n");
-else
-   printf(" 4 n'appartient pas à l'arbre \n");
- if(appartient(t,42))
-    printf(" 42 appartient à l'arbre \n");
-else
-   printf(" 42 n'appartient pas à l'arbre \n");
 return 0;
 }
 
