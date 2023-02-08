@@ -39,10 +39,16 @@ typedef struct node{
 
 editor.code==#|c|
 
-int maximum(Tree t, ... max){
- 
- return 0;
+int maximum(Tree t,int *max){
+  Tree a;
+  if(t==NULL)
+    return 0;
+  while(t->right)
+    t=t->right;
+  *max= t->val ;
+  return 1;
 }
+
 
 ==
 
