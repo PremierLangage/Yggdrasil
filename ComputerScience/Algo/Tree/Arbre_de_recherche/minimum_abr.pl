@@ -173,6 +173,7 @@ int x;
     
   fprintf(stderr,"arbre après %s\n",code) ;
  
+  printf("Nombre de libérations : %d \n",nbfree);
   return 0;
 }
 ==
