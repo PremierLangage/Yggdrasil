@@ -23,18 +23,20 @@ typedef struct node{
 
 editor.code==
 
+
 void construire_tableau(Tree a, int *t, int *i, int *size) {
     if (a != NULL) {
-        construire_tableau(a->fg, t, i);
-        t[*i] = a->val;
+        construire_tableau(a->left, t, i,size);
+        t[*i] = a->value;
         if (*i == *size - 1) {
             *size *= 2;
             t = (int *)realloc(t, *size * sizeof(int));
         }
         (*i)++;
-        construire_tableau(a->fd, t, i);
+        construire_tableau(a->right, t, i,size);
     }
 }
+
 
 ==
 
@@ -60,8 +62,7 @@ code_after==#|c|
 
 int main(int argc, char* argv[]){
   Tree tree=NULL;
-  int *t;
-  t=malloc(sizeof(int);
+  int *t = malloc(sizeof(int);
   int size=1;
   int index=0;
   build_tree(&tree);
