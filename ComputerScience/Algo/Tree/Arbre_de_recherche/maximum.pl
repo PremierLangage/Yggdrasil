@@ -146,8 +146,6 @@ int x;
 
 
   build_tree(&t);
- 
-   code=arbre_vers_code(t);
   if (maximum(t,&x))
     fprintf(stderr,"maximum = %d\n",x) ;
   else
