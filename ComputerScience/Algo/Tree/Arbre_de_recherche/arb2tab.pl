@@ -64,7 +64,7 @@ code_after==#|c|
 
 int main(int argc, char* argv[]){
   Tree tree=NULL;
-  int *t = malloc(sizeof(int);
+  int *t = malloc(sizeof(int));
   int size=1;
   int index=0;
   build_tree(&tree);
