@@ -43,13 +43,7 @@ void construire_tableau(Tree a, int *t, int *i, int *size) {
         construire_tableau(a->fd, t, i);
     }
 }
-int nbrealloc=0;
-void *dobob(void *p, int size){
-    nbrealloc++;
-    return realloc(p,size);
-}
 
-#define realloc dobob
 ==
 
 code_after==#|c|
