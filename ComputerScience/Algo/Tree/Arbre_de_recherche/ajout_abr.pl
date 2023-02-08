@@ -48,6 +48,30 @@ int ajoute(Tree *t,int val){
 
 ==
 
+solution==#|c|
+
+int ajout(Tree *t, int val){
+   
+    if(*t == NULL){
+        *t = (Tree)malloc(sizeof(Node));
+        (*t)->value = val;
+        (*t)->left = NULL;
+        (*t)->right = NULL;
+        return 1;
+    }
+    if((*t)->value == val){
+        return 0;
+    }
+    if(val < (*t)->value){
+        return ajout(&((*t)->left), val);
+    }
+    return ajout(&((*t)->right), val);
+}
+==
+
+
+
+
 code_after==#|c|
 
 int build_tree(Tree* t){
