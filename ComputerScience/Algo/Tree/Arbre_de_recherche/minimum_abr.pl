@@ -151,7 +151,7 @@ char *arbre_vers_code(Tree t){
 
 int nbfree=0;
 
-void free(void *){
+void free(void *dummy){
   nbfree++;
   }
 
