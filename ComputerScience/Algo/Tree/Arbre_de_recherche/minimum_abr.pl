@@ -29,11 +29,12 @@ text==
 La fonction renvoie 1 en cas d'extraction réussie et 0 sinon.La valeur extraite est transmise par adresse.
 
 On utilisera le type   
-typedef struct node{  
-  int value;  
-  struct node * left;  
-  struct node * right;  
-}Node, *Tree;  
+
+  typedef struct node{  
+    int value;  
+    struct node * left;  
+    struct node * right;  
+  }Node, *Tree;  
 
 ==
 
