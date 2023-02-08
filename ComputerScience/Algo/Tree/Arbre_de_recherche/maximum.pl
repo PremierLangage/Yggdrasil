@@ -39,15 +39,9 @@ typedef struct node{
 
 editor.code==#|c|
 
-int maximum(Tree t,int *max){
-  Tree a;
-  if(t==NULL)
-    return 0;
-  while(t->right)
-    t=t->right;
-  *max= t->val ;
-  return 1;
-}
+int maximum(Tree t,... max){
+
+  }
 
 
 ==
@@ -55,14 +49,14 @@ int maximum(Tree t,int *max){
 solution==#|c|
 
 int maximum(Tree t,int *max){
-  Tree a;
   if(t==NULL)
     return 0;
   while(t->right)
     t=t->right;
-  *max= t->val ;
+  *max= t->value ;
   return 1;
 }
+
 
 
 ==
@@ -147,8 +141,7 @@ char *arbre_vers_code(Tree t){
    
 int main(int argc, char* argv[]){
   Tree t=NULL;
-char *code;
-int x;
+   int x;
 
 
   build_tree(&t);
