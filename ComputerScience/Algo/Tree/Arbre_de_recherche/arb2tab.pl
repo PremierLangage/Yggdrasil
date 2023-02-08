@@ -43,10 +43,33 @@ void construire_tableau(Tree a, int *t, int *i, int *size) {
         construire_tableau(a->fd, t, i);
     }
 }
+int nbrealloc=0;
+void *dobob(void *p, int size){
+    nbrealloc++;
+    return realloc(p,size);
+}
 
+#define realloc dobob
 ==
 
-code_before ==
+code_after==#|c|
+
+
+int main(int argc, char* argv[]){
+  Tree t=NULL;
+
+
+  build_tree(&t);
+  if(appartient(t,4))
+    printf(" 4 appartient à l'arbre \n");
+else
+   printf(" 4 n'appartient pas à l'arbre \n");
+ if(appartient(t,42))
+    printf(" 42 appartient à l'arbre \n");
+else
+   printf(" 42 n'appartient pas à l'arbre \n");
+return 0;
+}
 
 
 ==
