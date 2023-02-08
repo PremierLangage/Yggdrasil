@@ -16,9 +16,9 @@
 #*****************************************************************************
 
 
-extends= /ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
+extends= appartient.pl
 
-#author=Marc Zipstein
+author=Marc Zipstein & DR
 title=Ajouter dans un arbre binaire de recherche
 tag=recherche
 
@@ -28,21 +28,12 @@ text==
 Écrire une fonction C **ajoute** qui ajoute une valeur à un **arbre binaire de recherche**.
 La fonction renvoie 1 en cas d'ajout réussi ou si la valeur est déjà dans l'arbre, et 0 sinon
 On utilisera le type  
-typedef struct node{  
-  int value;  
-  struct node * left;  
-  struct node * right;  
-}Node, *Tree;  
 
-==
-
-code_before==
-
-typedef struct node{  
-  int value;  
-  struct node * left;  
-  struct node * right;  
-}Node, *Tree;  
+  typedef struct node{  
+    int value;  
+    struct node * left;  
+    struct node * right;  
+  }Node, *Tree;  
 
 ==
 
