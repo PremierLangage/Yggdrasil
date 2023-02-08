@@ -38,6 +38,15 @@ On utilisera le type
 ==
 
 
+editor.code==
+
+
+int ajoute(Tree *t,int val){
+ 
+ return 0;
+}
+
+==
 
 code_after==#|c|
 
