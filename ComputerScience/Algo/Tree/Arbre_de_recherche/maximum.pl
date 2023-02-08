@@ -145,7 +145,7 @@ int main(int argc, char* argv[]){
 
 
   build_tree(&t);
-  if (maximum(t,&x))
+  if (maximum(t,&x)==1)
     fprintf(stderr,"maximum = %d\n",x) ;
   else
     fprintf(stderr," arbre vide \n");
