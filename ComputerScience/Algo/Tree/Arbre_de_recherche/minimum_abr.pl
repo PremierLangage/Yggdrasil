@@ -27,6 +27,7 @@ editor.height=300px
 text== 
 Écrire une fonction C **extraire_minimum** qui extrait le minimumun d'un **arbre binaire de recherche**.
 La fonction renvoie 1 en cas d'extraction réussie et 0 sinon.La valeur extraite est transmise par adresse.
+Le noeud est libéré avec la fonction free.  
 
 On utilisera le type   
 
@@ -147,7 +148,13 @@ char *arbre_vers_code(Tree t){
   s[strlen(s)]= 0;
   return s;
 }
-   
+
+int nbfree=0;
+
+void free(void *){
+  nbfree++;
+  }
+
 int main(int argc, char* argv[]){
   Tree t=NULL;
 char *code;
