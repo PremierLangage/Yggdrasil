@@ -27,14 +27,26 @@ editor.height=300px
 text== 
 Écrire une fonction C **ajoute** qui ajoute une valeur à un **arbre binaire de recherche**.
 La fonction renvoie 1 en cas d'ajout réussi ou si la valeur est déjà dans l'arbre, et 0 sinon
-On utilisera le type 
-typedef struct node{
-  int value;
-  struct node * left;
-  struct node * right;
-}Node, *Tree;
+On utilisera le type  
+typedef struct node{  
+  int value;  
+  struct node * left;  
+  struct node * right;  
+}Node, *Tree;  
 
 ==
+
+code_before==
+
+typedef struct node{  
+  int value;  
+  struct node * left;  
+  struct node * right;  
+}Node, *Tree;  
+
+==
+
+
 
 code_after==#|c|
 
