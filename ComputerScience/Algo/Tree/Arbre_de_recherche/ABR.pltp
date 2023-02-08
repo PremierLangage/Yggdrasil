@@ -5,6 +5,14 @@ title=Les arbres binaires en C
 introduction==
 
 Des exercices sur les arbres binaires de recherche, sans doublons;
+
+
+le type utilisé est 
+
+
+
+
+
 ==
 
 @ /ComputerScience/Algo/Tree/Arbre_de_recherche/appartient.pl
