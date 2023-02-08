@@ -39,7 +39,7 @@ typedef struct node{
 
 editor.code==#|c|
 
-int extraire_maximum(Tree t, ... max){
+int maximum(Tree t, ... max){
  
  return 0;
 }
@@ -48,8 +48,8 @@ int extraire_maximum(Tree t, ... max){
 
 solution==#|c|
 
-int extraire_maximum(Tree t,int *max){
-  Tree a,tmp;
+int maximum(Tree t,int *max){
+  Tree a;
   if(t==NULL)
     return 0;
   while(t->right)
