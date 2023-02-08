@@ -10,6 +10,12 @@ Des exercices sur les arbres binaires de recherche, sans doublons;
 le type utilisé est 
 
 
+  typedef struct node{  
+    int value;  
+    struct node * left;  
+    struct node * right;  
+  }Node, *Tree;  
+
 
 
 
