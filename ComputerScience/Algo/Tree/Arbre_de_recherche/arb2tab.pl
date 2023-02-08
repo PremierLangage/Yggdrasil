@@ -8,6 +8,25 @@ title= Convertion d'un arbre en tableau
 
 text==
 
+Ecrire la fonction **void construire_tableau(Tree a, int *t, int *i, int *size)** qui remplie le tableau **t** avec les valeur de l'arbre dans l'ordre croissant.
+
+Si le tableau est trop petit il est réalloué a une taille double. 
+
+On utilisera le type   
+typedef struct node{  
+  int value;  
+  struct node * left;  
+  struct node * right;  
+}Node, *Tree;  
+
+==
+
+editor.code==
+
+void construire_tableau(Tree a, int *t, int *i, int *size){
+// héhé 
+}
+
 ==
 
 solution==
@@ -27,3 +46,7 @@ void construire_tableau(Tree a, int *t, int *i, int *size) {
 
 ==
 
+code_before ==
+
+
+==
