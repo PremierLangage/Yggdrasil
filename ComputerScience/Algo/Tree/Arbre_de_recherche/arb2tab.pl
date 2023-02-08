@@ -42,18 +42,20 @@ void construire_tableau(Tree a, int *t, int *i, int *size) {
 
 solution==
 // Construire un tableau trié a partir d'un Tree 
+
 void construire_tableau(Tree a, int *t, int *i, int *size) {
     if (a != NULL) {
-        construire_tableau(a->fg, t, i);
-        t[*i] = a->val;
+        construire_tableau(a->left, t, i,size);
+        t[*i] = a->value;
         if (*i == *size - 1) {
             *size *= 2;
             t = (int *)realloc(t, *size * sizeof(int));
         }
         (*i)++;
-        construire_tableau(a->fd, t, i);
+        construire_tableau(a->right, t, i,size);
     }
 }
+
 
 ==
 
