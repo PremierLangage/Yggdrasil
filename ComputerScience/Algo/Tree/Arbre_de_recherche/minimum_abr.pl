@@ -39,7 +39,7 @@ typedef struct node{
 
 editor.code==#|c|
 
-int extraire_minimum(...){
+int extraire_minimum(Tree *t){
 
 }
 
