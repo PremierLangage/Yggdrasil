@@ -23,8 +23,17 @@ typedef struct node{
 
 editor.code==
 
-void construire_tableau(Tree a, int *t, int *i, int *size){
-// héhé 
+void construire_tableau(Tree a, int *t, int *i, int *size) {
+    if (a != NULL) {
+        construire_tableau(a->fg, t, i);
+        t[*i] = a->val;
+        if (*i == *size - 1) {
+            *size *= 2;
+            t = (int *)realloc(t, *size * sizeof(int));
+        }
+        (*i)++;
+        construire_tableau(a->fd, t, i);
+    }
 }
 
 ==
