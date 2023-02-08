@@ -148,15 +148,10 @@ int x;
   build_tree(&t);
  
    code=arbre_vers_code(t);
-    
-  fprintf(stderr,"arbre avant %s\n",code) ;
-
- extraire_maximum(&t,&x);
-   
-   code=arbre_vers_code(t);
-    
-  fprintf(stderr,"arbre après %s\n",code) ;
- 
+  if (maximum(t,&x))
+    fprintf(stderr,"maximum = %d\n",x) ;
+  else
+    fprintf(stderr," arbre vide \n");
   return 0;
 }
 ==
