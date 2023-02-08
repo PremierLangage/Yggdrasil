@@ -41,8 +41,9 @@ On utilisera le type
 
 editor.code==#|c|
 
-int extraire_minimum(Tree *t){
+int extraire_minimum(Tree *t,int *min){
 
+return 0;
 }
 
 ==
