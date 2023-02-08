@@ -48,23 +48,13 @@ int extraire_maximum(Tree t, ... max){
 
 solution==#|c|
 
-int extraire_maximum(Tree *t,int *min){
+int extraire_maximum(Tree t,int *max){
   Tree a,tmp;
-  if(*t==NULL)
+  if(t==NULL)
     return 0;
-  a=*t;
-  if(a->right==NULL){
-    *min=(*t)->value;
-    *t=(*t)->left;
-    free(a);
-    return 1;
-  }
-  while(a->right->right!=NULL)
-    a=a-right;
-  *min=a->left->value;
-  tmp=a->right;
-  a->right=a->right->left;
-  free(tmp);
+  while(t->right)
+    t=t->right;
+  *max= t->val ;
   return 1;
 }
 
