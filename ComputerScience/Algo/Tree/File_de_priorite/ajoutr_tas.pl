@@ -48,6 +48,14 @@ int ajoute  (Tas *t,int val){
 ==
 
 solution==#|c|
+
+void swap(int *a, int *b){
+  int tmp=*a;
+  *a=*b;
+  *b=tmp;
+  }
+
+
 int ajoute  (Tas *t,int val){
   int enfant,parent,tmp;
 
@@ -62,13 +70,10 @@ int ajoute  (Tas *t,int val){
     t->arbre[t->taille]=val;
     t->taille ++;
     enfant=t->taille -1;
-    parent=(enfant -1)/2;
-    while (enfant>0 && t->arbre[enfant]< t->arbre[parent]){
-      tmp= t->arbre[enfant];
-      t->arbre[enfant]=t->arbre[parent];
-      t->arbre[parent]=tmp;
-      enfant=parent;
-      parent=(parent-1)/2;
+    while (enfant>0 && t->arbre[enfant]< t->arbre[enfant/2]){
+      swap(&(t->arbre[enfant]),&(t->arbre[enfant/2]));
+    // swap(t->arbre+enfant, t->arbre+enfant/2);
+      enfant=enfant/2;
     }
     return 1;
 }
