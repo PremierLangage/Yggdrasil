@@ -92,6 +92,15 @@ typedef struct{
   int max;
 }Tas;
 
+int estTas(int tab[], int taille){
+    int i;
+    for(i=1; i<taille; i++){
+        if(tab[i] < tab[i/2]){
+            return 0;
+        }
+    }
+    return 1;
+}
 
 
 void affiche(Tas t){
