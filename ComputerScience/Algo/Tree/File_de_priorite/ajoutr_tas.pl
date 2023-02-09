@@ -72,7 +72,7 @@ int ajoute  (Tas *t,int val){
     enfant=t->taille -1;
     while (enfant>0 && t->arbre[enfant]< t->arbre[enfant/2]){
       swap(&(t->arbre[enfant]),&(t->arbre[enfant/2]));
-    // swap(t->arbre+enfant, t->arbre+enfant/2);
+    /* swap(t->arbre+enfant, t->arbre+enfant/2); */
       enfant=enfant/2;
     }
     return 1;
