@@ -63,7 +63,7 @@ int ajoute  (Tas *t,int val){
     t->taille ++;
     enfant=t->taille -1;
     parent=(enfant -1)/2;
-    while (enfant>0 && t->arbre[enfant]<t->arbre[parent]){
+    while (enfant>0 && t->arbre[enfant]< t->arbre[parent]){
       tmp= t->arbre[enfant];
       t->arbre[enfant]=t->arbre[parent];
       t->arbre[parent]=tmp;
@@ -148,6 +148,8 @@ int main(int argvc,char* argv[]){
 checks_args_stdin==#|python|
 	[["Arbre feuille","","4"],
 	 ["arbre à 3 mots","","12  5 2"],
+   ["arbre à N mots","","15 14 13 12 11 10 9 8 7 6 5 4 3 2 1"],
+   
      ["Arbre aléatoire II", []," ".join([ str(randint(1,100)) for i in range(10) ])]
 ]
 ==
