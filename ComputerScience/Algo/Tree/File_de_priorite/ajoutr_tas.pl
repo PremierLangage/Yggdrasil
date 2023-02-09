@@ -42,28 +42,7 @@ Ceci écite des allocations_désallocations succéssives.
 
 editor.code==#|c|
 int ajoute  (Tas *t,int val){
-  int enfant,parent,tmp;
-
-  if(t->taille==t->max){
-        int *tmp;
-	if((tmp=realloc(t->arbre,(t->max +BLOC)*sizeof(int)))==NULL)
-	  return 0;
-	else{
-	  t->arbre=tmp;
-	t->max+=BLOC;
-	}
-  }
-    t->arbre[t->taille]=val;
-    t->taille ++;
-    enfant=t->taille -1;
-    parent=(enfant -1)/2;
-    while (enfant>0 && t->arbre[enfant]<t->arbre[parent]){
-      tmp= t->arbre[enfant];
-      t->arbre[enfant]=t->arbre[parent];
-      t->arbre[parent]=tmp;
-      enfant=parent;
-      parent=(parent-1)/2;
-    }
+ 
     return 1;
 }
 ==
