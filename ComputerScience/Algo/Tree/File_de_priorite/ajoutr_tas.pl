@@ -18,7 +18,7 @@
 extends=/ComputerScience/C/template/std_progC.pl
 
 
-#author=Marc Zipstein
+author=Marc Zipstein
 title=Ajout dans un tas dynamique
 tag=recherche
 
@@ -110,9 +110,6 @@ typedef struct{
 }Tas;
 
 
-==
-
-code_after==#|c|
 
 void affiche(Tas t){
   int i;
@@ -132,6 +129,25 @@ int init(Tas *t){
   }
   return 0;
 }
+
+
+
+
+int nbrealloc=0;
+void *dobob(void *p, int size){
+    nbrealloc ++;
+    return realloc(p, size);
+}
+
+int getNbrealloc(){
+    return nbrealloc;
+}
+
+#define realloc(p, size) dobob(p, size)
+
+==
+
+code_after==#|c|
 
 int main(int argvc,char* argv[]){
     Tas t;
