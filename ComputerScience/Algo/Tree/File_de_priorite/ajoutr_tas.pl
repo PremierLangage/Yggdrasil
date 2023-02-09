@@ -150,7 +150,7 @@ int main(int argvc,char* argv[]){
     while(1==    scanf("%d",&x)){
         ajoute(&t,x);
         affiche(t);
-        if (! estTas(t.tas, t.taille)) {fprintf(stderr, " n'est pas un tas "); break;}
+        if (! estTas(t.arbre, t.taille)) {fprintf(stderr, " n'est pas un tas "); break;}
     }
 
   return 0;
