@@ -174,10 +174,10 @@ def prepare_code_to_file(src_code, filename):
 
 
 # The two file to proceed the checks
-prepare_code_to_file(editor.code, "src_student.c")
-prepare_code_to_file(solution, "src_teacher.c")
+prepare_code_to_file(editor.code, STUDENT)
+prepare_code_to_file(solution, TEACHER)
 
-def compile_source(src_name, prog_name, compiler, cflags=["-Wall", "-ansi"], libflags=[]):
+def compile_source(src_name, prog_name, compiler, cflags=[], libflags=[]):
     """
     compile the source in argument and return 
     """
@@ -190,9 +190,10 @@ def compile_source(src_name, prog_name, compiler, cflags=["-Wall", "-ansi"], lib
 
 # Compile the teacher solution
 returncode, spout, errout =compile_source(TEACHER, "teacher_prog", compiler, cflags, libflags)
+
 if len(spout) + len(errout) == 0:
     teachercoderror=''
-    returncode, spout, errout = compile_source("src_student.c", "student_prog", compiler, cflags, libflags)
+    returncode, spout, errout = compile_source(STUDENT, "student_prog", compiler, cflags, libflags)
 else:
     teachercoderror="<h1> Error du code prof </h1>"
 
@@ -367,19 +368,7 @@ else:
 # overall grade !
 feedback = '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Note actuelle :</u> ' + str(max(all_grade)) + '/100</b></p>' + feedback
 
-grade=((grade_compil * grade_checks * grade_attempt * grade_alone) // 1000000, feedback)
-==
-
-
-
-
-
-
-
-
-
-
-k)
+grade=((grade_compil * grade_checks * grade_attempt * grade_alone) // 1000000, teachercoderror+feedback)
 ==
 
 
