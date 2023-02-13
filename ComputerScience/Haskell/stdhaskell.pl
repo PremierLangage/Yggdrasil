@@ -106,6 +106,8 @@ code_before==#|haskell|
 
 solution==#|haskell|
 
+/* grosse erreur */
+
 main = putStrLn "Hello, world!"
 
 ==
