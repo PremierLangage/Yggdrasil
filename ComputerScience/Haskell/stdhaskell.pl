@@ -38,7 +38,7 @@ That prints the current date and says hello.
 
 editor =: CodeEditor
 editor.theme=dark
-editor.language=c
+editor.language = haskell
 # editor.height=350px
 
 editor.code==#|c|
