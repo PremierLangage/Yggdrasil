@@ -12,7 +12,7 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-title=Standard C Programming exercise template (summer 2021)
+title=Standard haskell programming Janvier 2023
 
 hints % { "cid": "hints", "selector": "c-hint" }
 hints.label=<b>Besoin d'aide ? Libérez un indice...</b>
