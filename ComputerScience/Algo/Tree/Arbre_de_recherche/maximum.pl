@@ -35,6 +35,8 @@ typedef struct node{
   struct node * right;  
 }Node, *Tree;  
 
+
+
 ==
 
 editor.code==#|c|
