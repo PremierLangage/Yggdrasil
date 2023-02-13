@@ -41,8 +41,7 @@ editor.theme=dark
 editor.language = haskell
 # editor.height=350px
 
-editor.code==#|c|
-/* write your code here */
+editor.code==#|hs|
 import System.Environment
 
 main = do
@@ -105,18 +104,13 @@ code_before==#|haskell|
 
 ==
 
-solution==#|c|
+solution==#|haskell|
 
-import System.Environment
-
-main = do
-    getArgs >>= print
-    getProgName >>= print
-    getEnvironment >>= print
+main = putStrLn "Hello, world!"
 
 ==
 
-code_after==#|c|
+code_after==#|haskell|
 
 ==
 
@@ -361,7 +355,7 @@ else:
     feedback += str(nb_attempt)+' tentatives</div>'
     all_grade.append((grade_compil * grade_checks * grade_attempt * grade_alone) // 1000000)
 
-print("")
+
 # overall grade !
 
 feedback = '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Note actuelle :</u> ' + str(max(all_grade)) + '/100</b></p>' + feedback
