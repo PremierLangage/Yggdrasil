@@ -1,4 +1,4 @@
-extends= DMG2.pl
+extends= DMG1.pl
 
 
 
@@ -16,7 +16,7 @@ et qui renvoie
   - 1 si les coordonées correspondent à une case avec une mine
   - 0 si c'est une case sans mines ou si les coordonnées sont en dehors du terrain.
 
-rappel: on réalise un https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu_vid%C3%A9o)
+
 ==
 editor.code==#|c|
 int hasmine_g(Game *g, int i, int j){
@@ -121,6 +121,16 @@ int main(int argc, char* argv[]){
 checks_args_stdin==#|python|
 [
 ["Test basique 1", ["game.ga"], "3 4"],
-
+["Test basique 2", ["game.ga"], "1 1"],
+["Test basique 3", ["game.ga"], "0 3"],
+["Test basique 4", ["game.ga"], "9 7"],
+["Test basique 5", ["game.ga"], "0 0"],
+["Test basique 6", ["game.ga"], "15 -12"],
+["Test supplémentaire 1", ["ex_flag.ga"], "3 4"],
+["Test supplémentaire 2", ["ex_flag.ga"], "1 1"],
+["Test supplémentaire 3", ["ex_flag.ga"], "0 3"],
+["Test supplémentaire 4", ["ex_flag.ga"], "9 7"],
+["Test supplémentaire 5", ["ex_flag.ga"], "0 0"],
+["Test supplémentaire 6", ["ex_flag.ga"], "15 -12"],
 ]
 ==

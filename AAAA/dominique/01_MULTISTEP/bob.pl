@@ -53,7 +53,7 @@ evaluator==
 if essai == 0:
     S = group.selection
     score = 0
-    feedback = f'<span class="error-state">Mauvaise réponse.</span>'
+    feedback = f'<span class="error-state">Mauvaise r&eacute;ponse.</span>'
 
     for item in group.items:
         item['css'] = ''
@@ -70,7 +70,7 @@ if essai == 0:
     grade = (score, feedback)
     essai=1
 elif essai == 1:
-    text += """\n <span class="error-state animated pulse infinite">Un seul essai</span>"""
+    text += """\n <span class="error-state animated pulse infinite">Un seul essai !</span>"""
     essai = 2
 
 ==

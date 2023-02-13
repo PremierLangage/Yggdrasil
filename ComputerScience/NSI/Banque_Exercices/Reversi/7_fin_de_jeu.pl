@@ -31,7 +31,7 @@ pltest==
 ...        'taille_fenetre' : 640
 ...        }
 ...    } #
->>> fin_de_jeu(jeu) # Tout va bien, la partie peut continuer
+>>> fin_de_jeu(jeu) # Tout va bien, la partie peut continuer :
 False
 >>> jeu = {
 ...    "plateau": [
@@ -57,7 +57,7 @@ False
 ...        'taille_fenetre' : 640
 ...        }
 ...    } #
->>> fin_de_jeu(jeu)  # Le joueur actif ne peut plus jouer
+>>> fin_de_jeu(jeu)  # Le joueur actif ne peut plus jouer :
 True
 >>> jeu = {
 ...    "plateau": [
@@ -83,7 +83,7 @@ True
 ...        'taille_fenetre' : 640
 ...        }
 ...    } #
->>> fin_de_jeu(jeu)  # Plus de place sur le plateau
+>>> fin_de_jeu(jeu)  # Plus de place sur le plateau :
 True
 ==
 

@@ -1,0 +1,75 @@
+from random import randint
+
+MIN = 2
+MAX = 5
+
+def ennemi(n):
+    # n : numéro de salle
+    # Endurance proportionnelle à n, 
+    # et dépend d'un tirage aléatoire entre MIN et MAX
+    return n * randint(MIN, MAX)
+
+def combattre(endur_joueur, endur_monstre):
+    # endur_joueur : endurance du joueur
+    # endur_monstre : endurance du monstre
+    # tant que les deux endurance sont > 0, lance un dé de 20 pour chacun
+    # ce qui est plus grand l'emporte
+    # A la fin, soit l'endurance du monstre = 0, soit celle du joueur = 0
+    while endur_joueur > 0 and endur_monstre > 0:
+        de_joueur = randint(1, 20)
+        de_monstre = randint(1, 20)
+        if de_joueur > de_monstre:
+            endur_monstre -= (de_joueur - de_monstre)
+            print("Le joueur fait un coup de " + str(de_joueur - de_monstre))
+        elif de_joueur < de_monstre:
+            endur_joueur -= de_monstre - de_joueur
+            print("Le monstre fait un coup de " + str(de_monstre-de_joueur))
+    if endur_joueur < 0:
+        endur_joueur = 0
+    if endur_monstre < 0:
+        endur_monstre = 0
+    print("Fin de partie.")
+    print("Endurance du joueur : " + str(endur_joueur))
+    print("Endurance du monstre : " + str(endur_monstre))
+    return endur_joueur
+    
+def fouiller_salle(n):
+    # n : numéro de salle
+    # renvoie le nombre de pièces d'or, et la potion
+    # qui sont possible de 0 à n
+    return randint(0, n), randint(0, n)
+
+def visiter_salle(n, endurance, portefeuille):
+    # n : numéro de salle
+    # Monstre dans 1/2 des cases
+    print("Le joueur rentre dans la salle", n)
+    if randint(1,2) == 1: # détection positive du monstre
+        endur_monstre = ennemi(n)
+        print("Monstre ! HP :", endur_monstre)
+        endurance = combattre(endurance, endur_monstre)
+    if endurance > 0:
+        pieces, potions = fouiller_salle(n)
+        print("Survi ! Pièces d'or :", pieces, " avec", potions, "potions")
+        portefeuille += pieces
+        for i in range(potions):
+            endurance += randint(1, 3)
+    return endurance, portefeuille
+
+def affiche_etat(endurance, portefeuille, salle):
+    print("Etat courant:")
+    print("Salle", salle, "| Endurance", endurance, "| Portefeuille", portefeuille)
+    print("")
+
+
+# Programme principal
+# Initialisation
+endurance = 100
+portefeuille = 0
+salle = 1
+# Aventure !
+while endurance > 0:
+    endurance, portefeuille = visiter_salle(salle, endurance, portefeuille)
+    affiche_etat(endurance, portefeuille, salle)
+    salle += 1
+print("Fin d'aventure.")
+print("J'étais comme vous avant de prendre une flèche dans mes genoux...")

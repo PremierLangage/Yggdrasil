@@ -1,55 +1,19 @@
-Une fois les problèmes de connexion à la luge résolus, vous partez en direction de l'aéroport. Bien que voyager en toboggan puisse être facile, ce n'est certainement pas sûr : 
-il y a très peu de direction et la zone est couverte d'arbres. Vous aurez besoin de voir quels angles vous amèneront près du moins d'arbres.
+Votre vol part dans quelques jours de l'aéroport côtier ; le chemin le plus simple vers la côte à partir d'ici est par le toboggan.
 
-En raison de la géologie locale, les arbres de cette zone ne poussent que sur des coordonnées entières exactes dans une grille. Vous faites une carte (votre entrée de puzzle) des 
-carrés ouverts (.) et des arbres (#) que vous pouvez voir. Par exemple:
+Le commerçant du North Pole Toboggan Rental Shop passe une mauvaise journée. « Quelque chose ne va pas avec nos ordinateurs ; nous ne pouvons pas nous connecter ! » Vous demandez si vous pouvez jeter un œil.
 
-    ..##.......
-    #...#...#..
-    .#....#..#.
-    ..#.#...#.#
-    .#...##..#.
-    ..#.##.....
-    .#.#.#....#
-    .#........#
-    #.##...#...
-    #...##....#
-    .#..#...#.#
+Leur base de données de mots de passe semble être un peu corrompue : certains mots de passe n'auraient pas été autorisés par la politique d'entreprise officielle de Toboggan qui était en vigueur lorsqu'ils ont été choisis.
 
-Ce ne sont pas les seuls arbres, cependant; en raison de quelque chose que vous avez lu une fois concernant la génétique arboricole et la stabilité du biome, le même schéma se répète plusieurs fois à droite :
+Pour essayer de déboguer le problème, ils ont créé une liste (votre saisie de puzzle) de mots de passe (selon la base de données corrompue) et la politique de l'entreprise lorsque ce mot de passe a été défini.
 
-    ..##.........##.........##.........##.........##.. .......##....... --->
-    #...#...#..#...#...#..#...#...#..#...#...#..#...#. ..#..#...#...#..
-    .#....#..#..#....#..#..#....#..#..#....#..#..#.... #..#..#....#..#.
-    ..#.#...#.#..#.#...#.#..#.#...#.#..#.#...#.#..#.#. ..#.#..#.#...#.#
-    .#...##..#..#...##..#..#...##..#..#...##..#..#...# #..#..#...##..#.
-    ..#.##.......#.##.......#.##.......#.##.......#.## .......#.##..... --->
-    .#.#.#....#.#.#.#....#.#.#.#....#.#.#.#....#.#.#.# ....#.#.#.#....#
-    .#........#.#........#.#........#.#........#.#.... ....#.#........#
-    #.##...#...#.##...#...#.##...#...#.##...#...#.##.. .#...#.##...#...
-    #...##....##...##....##...##....##...##....##...## ....##...##....#
-    .#..#...#.#.#..#...#.#.#..#...#.#.#..#...#.#.#..#. ..#.#.#..#...#.# --->
+Par exemple, supposons que vous ayez la liste suivante :
 
-Vous commencez sur le carré ouvert (.) dans le coin supérieur gauche et devez atteindre le bas (sous la ligne la plus en bas sur votre carte).
+    1-3 a : abcde
+    1-3 b : cdefg
+    2-9 c : ccccccccc
 
-Le toboggan ne peut suivre que quelques pentes précises (vous avez opté pour un modèle moins cher qui préfère les nombres rationnels) ; commencez par compter tous les arbres que vous rencontrerez pour la pente à droite 3, en bas 1 :
+Chaque ligne donne la politique de mot de passe puis le mot de passe. La politique de mot de passe indique le plus petit et le plus grand nombre de fois qu'une lettre donnée doit apparaître pour que le mot de passe soit valide. Par exemple, 1-3 a signifie que le mot de passe doit contenir a au moins 1 fois et au plus 3 fois.
 
-À partir de votre position de départ en haut à gauche, vérifiez la position qui est à droite 3 et en bas 1. Ensuite, vérifiez la position qui est à droite 3 et en bas 1 à partir de là, et ainsi de suite jusqu'à ce que vous dépassiez le bas de la carte.
+Dans l'exemple ci-dessus, 2 mots de passe sont valides. Le mot de passe du milieu, cdefg, ne l'est pas ; il ne contient aucune instance de b, mais en a besoin d'au moins 1. Les premier et troisième mots de passe sont valides : ils contiennent un a ou neuf c, tous deux dans les limites de leurs politiques respectives.
 
-Les emplacements que vous vérifieriez dans l'exemple ci-dessus sont marqués ici d'un O là où il y avait un carré ouvert et d'un X là où il y avait un arbre :
-
-    ..##.........##.........##.........##.........##.. .......##....... --->
-    #..O#...#..#...#...#..#...#...#..#...#...#..#...#. ..#..#...#...#..
-    .#....X..#..#....#..#..#....#..#..#....#..#..#.... #..#..#....#..#.
-    ..#.#...#O#..#.#...#.#..#.#...#.#..#.#...#.#..#.#. ..#.#..#.#...#.#
-    .#...##..#..X...##..#..#...##..#..#...##..#..#...# #..#..#...##..#.
-    ..#.##.......#.X#.......#.##.......#.##.......#.##. ......#.##..... --->
-    .#.#.#....#.#.#.#.O..#.#.#.#....#.#.#.#....#.#.#.# ....#.#.#.#....#
-    .#........#.#........X.#........#.#........#.#.... ....#.#........#
-    #.##...#...#.##...#...#.X#...#...#.##...#...#.##... #...#.##...#...
-    #...##....##...##....##...#X....##...##....##...## ....##...##....#
-    .#..#...#.#.#..#...#.#.#..#...X.#.#..#...#.#.#..#. ..#.#.#..#...#.# --->
-
-Dans cet exemple, traverser la carte en utilisant cette pente vous ferait rencontrer 7 arbres.
-
-En commençant par le coin supérieur gauche de votre carte et en suivant une pente de 3 à droite et de 1 en bas, combien d'arbres rencontreriez-vous ?
+Vous devez écrire une fonction Question2() qui lit le fichier "data" avec les données et qui retourne le nombre de mots de passe sont valides selon leurs politiques 
