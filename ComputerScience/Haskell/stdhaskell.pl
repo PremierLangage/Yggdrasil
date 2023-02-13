@@ -189,9 +189,12 @@ def compile_source(src_name, prog_name, compiler, cflags=["-Wall", "-ansi"], lib
     return (returncode, spout, errout)
 
 # Compile the teacher solution
-compile_source(TEACHER, "teacher_prog", compiler, cflags, libflags)
-# Compile the student proposition
-returncode, spout, errout = compile_source("src_student.c", "student_prog", compiler, cflags, libflags)
+returncode, spout, errout =compile_source(TEACHER, "teacher_prog", compiler, cflags, libflags)
+if len(spout) + len(errout) == 0:
+    teachercoderror=''
+    returncode, spout, errout = compile_source("src_student.c", "student_prog", compiler, cflags, libflags)
+else:
+    teachercoderror="<h1> Error du code prof </h1>"
 
 # Compilation ok
 if len(spout) + len(errout) == 0:
@@ -367,13 +370,19 @@ feedback = '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Note actuelle 
 grade=((grade_compil * grade_checks * grade_attempt * grade_alone) // 1000000, feedback)
 ==
 
-# tests.test1.editor.code==
-# ==
-# tests.test1.editor.code = int carre(int p){ return p*p; }
-# tests.test1.editor.code = "int carre(int p){ return p*p; }"
-# tests.test1.editor.code = 'int carre(int p){ return p*p; }'
-# tests.test1.editor.code = solution
-# tests.test1.grade = 100
+
+
+
+
+
+
+
+
+
+k)
+==
+
+
 
 
 
