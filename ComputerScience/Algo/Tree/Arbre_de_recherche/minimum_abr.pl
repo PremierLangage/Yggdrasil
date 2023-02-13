@@ -100,7 +100,6 @@ Node * allocate_node(int val){
 
 code_after==#|c|
 
-
 int ajoute(Tree *t,int valeur){
   if (*t == NULL){
     if ((*t=allocate_node(valeur))==NULL)
