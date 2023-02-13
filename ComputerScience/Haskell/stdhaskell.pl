@@ -56,9 +56,9 @@ from random import randint
 nb_attempt=0
 
 # Place here your favorite C compiler
-compiler="gcc"
+compiler="ghc"
 # PLace here the compilation flags
-cflags=["-Wall", "-ansi"]
+cflags=[]
 # Place here library flags
 libflags=[]
 
@@ -142,6 +142,9 @@ signals = {
     15: "SIGTERM"
 };
 
+TEACHER="src_teacher.hs"
+STUDENT="src_student.hs"
+
 def control_returncode(rc, output):
     """
     Update the output of the terminal if UNIX did kill the process
@@ -186,7 +189,7 @@ def compile_source(src_name, prog_name, compiler, cflags=["-Wall", "-ansi"], lib
     return (returncode, spout, errout)
 
 # Compile the teacher solution
-compile_source("src_teacher.c", "teacher_prog", compiler, cflags, libflags)
+compile_source(TEACHER, "teacher_prog", compiler, cflags, libflags)
 # Compile the student proposition
 returncode, spout, errout = compile_source("src_student.c", "student_prog", compiler, cflags, libflags)
 
