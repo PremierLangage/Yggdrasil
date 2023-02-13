@@ -43,10 +43,13 @@ editor.language=c
 
 editor.code==#|c|
 /* write your code here */
-/* For testing purpose, we did place here a square function on integers... */
-int carre(int n){
-    return n*n;
-}
+import System.Environment
+
+main = do
+    getArgs >>= print
+    getProgName >>= print
+    getEnvironment >>= print
+
 ==
 
 before ==#|python|
@@ -98,30 +101,23 @@ form==
 
 ==
 
-code_before==#|c|
+code_before==#|haskell|
 
 ==
 
 solution==#|c|
-int carre(int p){
-    return p*p;
-}
+
+import System.Environment
+
+main = do
+    getArgs >>= print
+    getProgName >>= print
+    getEnvironment >>= print
+
 ==
 
 code_after==#|c|
-#include <stdio.h>
-#include <stdlib.h>
 
-int main(int argc, char* argv[]){
-    int i, j;
-    
-    i = atoi(argv[1]);
-    scanf("%d", &j);
-
-    printf("Le carré de i = %d est %d\n", i, carre(i));
-    printf("Le carré de j = %d est %d\n", j, carre(j));
-    return 0;
-}
 ==
 
 evaluator==#|python|
@@ -366,6 +362,21 @@ else:
     all_grade.append((grade_compil * grade_checks * grade_attempt * grade_alone) // 1000000)
 
 # overall grade !
+feedback = '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Note actuelle :</u> ' + str(max(all_grade)) + '/100</b></p>' + feedback
+
+grade=((grade_compil * grade_checks * grade_attempt * grade_alone) // 1000000, teachercoderror+feedback)
+==
+
+
+
+
+
+
+
+
+
+
+ grade !
 feedback = '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Note actuelle :</u> ' + str(max(all_grade)) + '/100</b></p>' + feedback
 
 grade=((grade_compil * grade_checks * grade_attempt * grade_alone) // 1000000, teachercoderror+feedback)
