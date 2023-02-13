@@ -106,7 +106,6 @@ code_before==#|haskell|
 
 solution==#|haskell|
 
-/* grosse erreur */
 
 main = putStrLn "Hello, world!"
 
@@ -181,11 +180,11 @@ def compile_source(src_name, prog_name, compiler, cflags=[], libflags=[]):
     return (returncode, spout, errout)
 
 # Compile the teacher solution
-returncode, spout, errout =compile_source(TEACHER, "teacher_prog", compiler, cflags, libflags)
+returncode, spout, errout =compile_source(TEACHER, "./teacher_prog", compiler, cflags, libflags)
 
 if len(spout) + len(errout) == 0:
     teachercoderror=''
-    returncode, spout, errout = compile_source(STUDENT, "student_prog", compiler, cflags, libflags)
+    returncode, spout, errout = compile_source(STUDENT, "./student_prog", compiler, cflags, libflags)
 else:
     teachercoderror="<h1> Error du code prof </h1>"
 
