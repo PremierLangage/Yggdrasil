@@ -33,6 +33,8 @@ for i in range(N):
     inp = Input()
     globals()[f"input{i}"] = inp
     www.append(inp)
+
+x = www[1]
 ==
 
 form== #|html|
