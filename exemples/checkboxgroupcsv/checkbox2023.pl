@@ -28,9 +28,12 @@ for item in group.items:
         item['css'] = 'correct'
         if checked:
             right += 1
-            item['css'] = 'success-border'
-    elif checked:
-        item['css'] = 'error-border'
+            item['css'] = 'success-border '
+    else:
+        if checked:
+            item['css'] = 'error-border blink'
+        else:
+            item['css'] = 'error-border'
 
 
 
