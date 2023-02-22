@@ -11,7 +11,7 @@ extracss ==
     font-size: 24px !important;
 }
 .correct {
-    color: green !important;
+    color: blue !important;
     font-size: 24px !important;
 }
 </style>
