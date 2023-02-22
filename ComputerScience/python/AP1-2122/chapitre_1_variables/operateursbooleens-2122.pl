@@ -25,11 +25,11 @@ res = [ eval(enonce[n]) for n in range(N)]
 
 solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
-inputs = []
+www = []
 for i in range(N):
     inp = Input()
     globals()[f"input{i}"] = inp
-    inputs.append(inp)
+    www.append(inp)
 ==
 
 evaluator== #|python|
@@ -76,7 +76,7 @@ Oui heureusement il y en a des faciles...
 form== #|html|
 Nombre d'essais : {{essai}}
 <ul>
-{% for m in inputs %}
+{% for m in www %}
 {{ m|component }}
 {% endfor %}
 </ul>
