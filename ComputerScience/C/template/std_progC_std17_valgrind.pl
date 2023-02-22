@@ -16,12 +16,15 @@
 #*****************************************************************************
 
 #*****************************************************************************
-# This is an adaptation of general template for prog C L2 - S3
+# This is an adaptation of general template for prog C L2 - S3 2023+
 # --> clang and -std=c17
 #
 # This template juste overwrite compiler 
 # (TODO since clang is not inside the sandbox)
 # and overwrite options of compilation. (-std=c17)
+#
+# THIS template must add controls done with valgrind PARTICULARly memcheck 
+# 
 #
 #*****************************************************************************
 
