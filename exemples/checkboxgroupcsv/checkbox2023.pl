@@ -11,7 +11,7 @@ extracss ==
     font-size: 24px !important;
 }
 .correct {
- color: green !important;
+    color: green !important;
     font-size: 24px !important;
 }
 </style>
@@ -31,6 +31,7 @@ for item in group.items:
             item['css'] = 'success-border'
     elif checked:
         item['css'] = 'error-border'
+
 
 
 if total == 0:
