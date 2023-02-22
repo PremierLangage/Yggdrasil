@@ -31,9 +31,9 @@ for item in group.items:
             item['css'] = 'success-border correct'
     else:
         if checked:
-            item['css'] = 'error-border blink'
-        else:
             item['css'] = 'error-border animated pulse infinite'
+        else:
+            item['css'] = 'error-border '
 
 
 
