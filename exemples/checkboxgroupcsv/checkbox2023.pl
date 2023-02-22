@@ -25,15 +25,15 @@ for item in group.items:
     iindex = item['index']
     if iindex in indexs:
         total += 1
-        item['css'] = 'correct'
+        item['css'] = 'correct '
         if checked:
             right += 1
-            item['css'] = 'success-border '
+            item['css'] = 'success-border correct'
     else:
         if checked:
             item['css'] = 'error-border blink'
         else:
-            item['css'] = 'error-border'
+            item['css'] = 'error-border animated pulse infinite'
 
 
 
