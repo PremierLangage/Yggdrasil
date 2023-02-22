@@ -25,12 +25,27 @@ res = [ eval(enonce[n]) for n in range(N)]
 
 solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
+
+
+
 www = []
 for i in range(N):
     inp = Input()
     globals()[f"input{i}"] = inp
     www.append(inp)
 ==
+
+form== #|html|
+Nombre d'essais : {{essai}}
+<ul>
+{% for m in www %}
+{{ m|component }}
+{% endfor %}
+</ul>
+==
+
+
+
 
 evaluator== #|python|
 
@@ -73,14 +88,7 @@ Oui heureusement il y en a des faciles...
 **Attention il faut fournir une valeur booléenne: True ou False sur chaque ligne.**
 ==
 
-form== #|html|
-Nombre d'essais : {{essai}}
-<ul>
-{% for m in www %}
-{{ m|component }}
-{% endfor %}
-</ul>
-==
+
 
 sdsds==
 
