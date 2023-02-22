@@ -50,10 +50,10 @@ for item in group.items:
     iindex = item['index']
     if iindex in indexs:
         total += 1
-        item['css'] = 'success-border animated pulse infinite'
+        item['css'] = 'success success-border animated pulse infinite'
         if checked:
             right += 1
-            item['css'] = 'success-border'
+            item['css'] = 'success success-border'
     elif checked:
         item['css'] = 'error-border'
 
