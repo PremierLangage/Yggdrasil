@@ -1,12 +1,16 @@
-
+# author = Anthony Labarre
+# basé sur Yggdrasil/ComputerScience/python/AP1-1920/chapters/1-bases-imperatif/operateursbooleens.pl
+# 
+# Génération d'expressions booléennes aléatoires sur des variables dont 
+# l'affectation est également aléatoire. L'étudiant doit rentrer True ou False
+# pour chacune des expressions.
+#
+# Imports ---------------------------------------------------------------------
 @ /utils/sandboxio.py
 @ ressources_exercices.py
 
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
-
-
-radio =: RadioGroup
 
 before== #|python|
 from random import randint
@@ -35,18 +39,10 @@ affectations_formattees = ", ".join(
 )
 
 # associer un champ input à chaque formule
-reponses = []
+inputs = []
 for i in range(nb_questions):
-    inp = Input()
-    globals()[f"input{i}"] = inp
-    reponses.append(inp)
-
-"""
-radio.horizontal = True
-radio.items = []
-for i in reponses:
-    radio.items.append({"id": i, "content": f"<p>{i}</p>"})
-"""
+    globals()[f"input{i}"] = Input()
+    inputs.append(inp)
 ==
 
 evaluator== #|python|
@@ -75,25 +71,20 @@ if note != nb_questions:
 grade = (note, feedback)
 ==
 
-title ==
-Expressions booléennes
-==
+title = Expressions booléennes 
 
 text==
 Donnez la valeur booléenne des expressions suivantes, sachant que {{affectations_formattees}}.
 ==
 
-form ==#|html|
-
+form== #|html|
 <!--Nombre d'essais : {{essai}}-->
 <ul>
-{% for i in reponses %}
+{% for input in inputs %}
 <!--{% if not solved[loop.index0]%}-->
-<li>  {{enonce[loop.index0]}} = {{i}}</li>
+<li>  {{enonce[loop.index0]}} = {{ input|component }}  </li>
 <!--{% endif %}-->
 {% endfor %}
 </ul>
-
-{{radio|component}}
 ==
 
