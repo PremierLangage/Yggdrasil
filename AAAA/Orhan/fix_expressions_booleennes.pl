@@ -43,8 +43,6 @@ inputs = []
 for i in range(nb_questions):
     globals()[f"input{i}"] = Input()
     #inputs.append(Input())
-    #globals()[f"input{i}"] = Input()
-
 ==
 
 evaluator== #|python|
@@ -82,13 +80,12 @@ Donnez la valeur booléenne des expressions suivantes, sachant que {{affectation
 form== #|html|
 <!--Nombre d'essais : {{essai}}-->
 <ul>
-{% for i in inputs %}
+{% for i in range(nb_questions) %}
 <!--{% if not solved[loop.index0]%}-->
-<li>  {{enonce[loop.index0]}} =  {{ input0 |component}}</li>
+<li>  {{enonce[loop.index0]}} =  </li>
 <!--{% endif %}-->
 {% endfor %}
 </ul>
 
-{{input0 | component}}
 ==
 
