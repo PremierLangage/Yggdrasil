@@ -42,7 +42,7 @@ affectations_formattees = ", ".join(
 inputs = []
 for i in range(nb_questions):
     globals()[f"input{i}"] = Input()
-    inputs.append(f"input{i}")
+    inputs.append(globals()[f"input{i}"])
     #inputs.append(Input())
 ==
 
@@ -83,8 +83,7 @@ form== #|html|
 <ul>
 {% for i in inputs %}
 <!--{% if not solved[loop.index0]%}-->
-<p>value : {{ input0 }}</p>
-
+<p>value : {{ i }}</p>
 <li>  {{enonce[loop.index0]}} = </li>
 <!--{% endif %}-->
 {% endfor %}
