@@ -85,7 +85,7 @@ form== #|html|
 <!--{% if not solved[loop.index0]%}-->
 <p>{{i}}</p>
 {% set r = globals()[i] %}
-<p>{{r}}</p>
+<p>{{ key[i] }}</p>
 
 <li>  {{enonce[loop.index0]}} = {{ globals()[i]|component }} </li>
 <!--{% endif %}-->
