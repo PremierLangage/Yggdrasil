@@ -44,7 +44,7 @@ for i in range(nb_questions):
 radio.horizontal = True
 radio.items = []
 for i in inputs:
-    radio.items.append({"id": i, "content": "<i class='fas fa-check'></i>"})
+    radio.items.append({"id": i, "content": i})
 ==
 
 evaluator== #|python|
