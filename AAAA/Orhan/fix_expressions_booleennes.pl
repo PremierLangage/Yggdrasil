@@ -84,7 +84,7 @@ form== #|html|
 {% for i in inputs %}
 <!--{% if not solved[loop.index0]%}-->
 <p>{{i}}</p>
-<li>  {{enonce[loop.index0]}} =  {% {{ i | component }} %} </li>
+<li>  {{enonce[loop.index0]}} =  {{ i|safe | component }} </li>
 <!--{% endif %}-->
 {% endfor %}
 </ul>
