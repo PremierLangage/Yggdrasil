@@ -1,16 +1,12 @@
-# author = Anthony Labarre
-# basé sur Yggdrasil/ComputerScience/python/AP1-1920/chapters/1-bases-imperatif/operateursbooleens.pl
-# 
-# Génération d'expressions booléennes aléatoires sur des variables dont 
-# l'affectation est également aléatoire. L'étudiant doit rentrer True ou False
-# pour chacune des expressions.
-#
-# Imports ---------------------------------------------------------------------
+
 @ /utils/sandboxio.py
 @ ressources_exercices.py
 
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
+
+
+radio =: RadioGroup
 
 before== #|python|
 from random import randint
@@ -44,6 +40,10 @@ for i in range(nb_questions):
     inp = Input()
     globals()[f"input{i}"] = inp
     inputs.append(inp)
+
+radio.horizontal = True
+for i in inputs:
+    radio.items.append({"id": i, "content": "<i class='fas fa-check'></i>"})
 ==
 
 evaluator== #|python|
@@ -78,14 +78,5 @@ text==
 Donnez la valeur booléenne des expressions suivantes, sachant que {{affectations_formattees}}.
 ==
 
-form== #|html|
-<!--Nombre d'essais : {{essai}}-->
-<ul>
-{% for input in inputs %}
-<!--{% if not solved[loop.index0]%}-->
-<li>  {{enonce[loop.index0]}} = {{ input|component }}  </li>
-<!--{% endif %}-->
-{% endfor %}
-</ul>
-==
+form = {{radio|component}}
 
