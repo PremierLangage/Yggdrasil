@@ -42,8 +42,7 @@ affectations_formattees = ", ".join(
 inputs = []
 for i in range(nb_questions):
     inputs.append(Input())
-    #globals()[f"input{i}"] = Input()
-    #inputs.append(inp)
+    globals()[f"input{i}"] = inputs[-1]
 
 ==
 
