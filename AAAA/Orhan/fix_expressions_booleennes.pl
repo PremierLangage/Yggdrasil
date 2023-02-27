@@ -35,16 +35,18 @@ affectations_formattees = ", ".join(
 )
 
 # associer un champ input à chaque formule
-inputs = []
+reponses = []
 for i in range(nb_questions):
     inp = Input()
     globals()[f"input{i}"] = inp
-    inputs.append(inp)
+    reponses.append(inp)
 
+"""
 radio.horizontal = True
 radio.items = []
-for i in inputs:
+for i in reponses:
     radio.items.append({"id": i, "content": f"<p>{i}</p>"})
+"""
 ==
 
 evaluator== #|python|
@@ -85,9 +87,9 @@ form ==#|html|
 
 <!--Nombre d'essais : {{essai}}-->
 <ul>
-{% for input in inputs %}
+{% for i in reponses %}
 <!--{% if not solved[loop.index0]%}-->
-<li>  {{enonce[loop.index0]}} =  </li>
+<li>  {{enonce[loop.index0]}} = {{i}}</li>
 <!--{% endif %}-->
 {% endfor %}
 </ul>
