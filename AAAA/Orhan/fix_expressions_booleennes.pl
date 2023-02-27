@@ -83,8 +83,7 @@ form== #|html|
 <ul>
 {% for i in inputs %}
 <!--{% if not solved[loop.index0]%}-->
-<p>{{i}}</p>
-<p>{{ getattr(i) }}</pw>
+<p>{{ getattr(i) }}</p>
 
 <li>  {{enonce[loop.index0]}} = </li>
 <!--{% endif %}-->
