@@ -75,12 +75,14 @@ grade = (note, feedback)
 
 title ==
 Expressions booléennes
-<p>{{inputs}}</p>
 ==
 
 text==
 Donnez la valeur booléenne des expressions suivantes, sachant que {{affectations_formattees}}.
 ==
 
-form = {{radio|component}}
+form ==#|html|
+<p>{{inputs}}</p>
+{{radio|component}}
+==
 
