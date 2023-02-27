@@ -42,6 +42,7 @@ affectations_formattees = ", ".join(
 inputs = []
 for i in range(nb_questions):
     globals()[f"input{i}"] = Input()
+    inputs.append(f"input{i}")
     #inputs.append(Input())
 ==
 
@@ -80,9 +81,9 @@ Donnez la valeur booléenne des expressions suivantes, sachant que {{affectation
 form== #|html|
 <!--Nombre d'essais : {{essai}}-->
 <ul>
-{% for i in range(nb_questions) %}
+{% for i in inputs %}
 <!--{% if not solved[loop.index0]%}-->
-<li>  {{enonce[loop.index0]}} = {{ f"input{i}" | component }} </li>
+<li>  {{enonce[loop.index0]}} = {{ i | component }} </li>
 <!--{% endif %}-->
 {% endfor %}
 </ul>
