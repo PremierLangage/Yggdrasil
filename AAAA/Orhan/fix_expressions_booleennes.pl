@@ -87,8 +87,6 @@ form== #|html|
 {% set r = globals()[i] %}
 <p>{{ globals()[f"{i}"] }}</p>
 
-
-
 <li>  {{enonce[loop.index0]}} = </li>
 <!--{% endif %}-->
 {% endfor %}
