@@ -41,8 +41,9 @@ affectations_formattees = ", ".join(
 # associer un champ input à chaque formule
 inputs = []
 for i in range(nb_questions):
+    [f"input{i}"] = Input()
     #inputs.append(Input())
-    globals()[f"input{i}"] = Input()
+    #globals()[f"input{i}"] = Input()
 
 ==
 
@@ -87,5 +88,7 @@ form== #|html|
 <!--{% endif %}-->
 {% endfor %}
 </ul>
+
+{{input0 | component}}
 ==
 
