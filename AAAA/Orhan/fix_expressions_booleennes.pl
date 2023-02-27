@@ -45,7 +45,6 @@ for i in range(nb_questions):
     #inputs.append(inp)
 
 for i in range(nb_questions):
-    pass
     inputs.append(globals()[f"input{i}"])
 ==
 
