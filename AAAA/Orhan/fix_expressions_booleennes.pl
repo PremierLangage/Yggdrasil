@@ -83,13 +83,8 @@ Donnez la valeur booléenne des expressions suivantes, sachant que {{affectation
 
 form ==#|html|
 
-<ul>
-{% for i in inputs %}
-<!--{% if not solved[loop.index0]%}-->
-<li> <p>{{i.selector}}</p>  </li>
-<!--{% endif %}-->
-{% endfor %}
-</ul>
+{{input0|component}}
+{{input1|component}}
 
 {{radio|component}}
 ==
