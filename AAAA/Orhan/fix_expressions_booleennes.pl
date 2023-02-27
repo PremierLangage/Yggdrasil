@@ -84,9 +84,9 @@ Donnez la valeur booléenne des expressions suivantes, sachant que {{affectation
 form ==#|html|
 
 <ul>
-{% for input in inputs %}
+{% for i in inputs %}
 <!--{% if not solved[loop.index0]%}-->
-<li> <p>{{input.selector}}</p>  </li>
+<li> <p>{{i.selector}}</p>  </li>
 <!--{% endif %}-->
 {% endfor %}
 </ul>
