@@ -86,7 +86,7 @@ form ==#|html|
 <ul>
 {% for input in inputs %}
 <!--{% if not solved[loop.index0]%}-->
-<li> <p>{{input}}</p>  </li>
+<li> <p>{{input.selector}}</p>  </li>
 <!--{% endif %}-->
 {% endfor %}
 </ul>
