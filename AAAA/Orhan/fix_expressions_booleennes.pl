@@ -42,7 +42,10 @@ affectations_formattees = ", ".join(
 inputs = []
 for i in range(nb_questions):
     globals()[f"input{i}"] = Input()
-    inputs.append(str(globals()[f"input{i}"]))
+    inputs.append({
+        "selector": globals()[f"input{i}"].selector,
+        "cid": globals()[f"input{i}"].cid
+    })
     #inputs.append(Input())
 ==
 
