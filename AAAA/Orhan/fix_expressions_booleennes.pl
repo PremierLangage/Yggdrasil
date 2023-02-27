@@ -84,7 +84,9 @@ form== #|html|
 {% for i in inputs %}
 <!--{% if not solved[loop.index0]%}-->
 <p>{{i}}</p>
-<p>{{ globals()[f"i"] }}</p>
+{% set r = globals()[i] %}
+<p>{{r}}</p>
+
 <li>  {{enonce[loop.index0]}} = {{ globals()[i]|component }} </li>
 <!--{% endif %}-->
 {% endfor %}
