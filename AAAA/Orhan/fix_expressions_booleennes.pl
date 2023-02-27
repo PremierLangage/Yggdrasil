@@ -82,7 +82,15 @@ Donnez la valeur booléenne des expressions suivantes, sachant que {{affectation
 ==
 
 form ==#|html|
-<p>{{inputs}}</p>
+
+<ul>
+{% for input in inputs %}
+<!--{% if not solved[loop.index0]%}-->
+<li> {{ input|component }}  </li>
+<!--{% endif %}-->
+{% endfor %}
+</ul>
+
 {{radio|component}}
 ==
 
