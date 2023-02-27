@@ -89,7 +89,7 @@ form== #|html|
 
 
 
-<li>  {{enonce[loop.index0]}} = {{ globals()[f"{i}"] |component }} </li>
+<li>  {{enonce[loop.index0]}} = </li>
 <!--{% endif %}-->
 {% endfor %}
 </ul>
