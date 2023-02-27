@@ -82,7 +82,7 @@ form== #|html|
 <ul>
 {% for i in range(nb_questions) %}
 <!--{% if not solved[loop.index0]%}-->
-<li>  {{enonce[loop.index0]}} =  </li>
+<li>  {{enonce[loop.index0]}} = {{ f"input{i}" | component }} </li>
 <!--{% endif %}-->
 {% endfor %}
 </ul>
