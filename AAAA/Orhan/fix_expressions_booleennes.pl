@@ -73,7 +73,10 @@ if note != nb_questions:
 grade = (note, feedback)
 ==
 
-title = Expressions booléennes 
+title ==
+Expressions booléennes
+<p>{{inputs}}</p>
+==
 
 text==
 Donnez la valeur booléenne des expressions suivantes, sachant que {{affectations_formattees}}.
