@@ -86,7 +86,7 @@ form ==#|html|
 <ul>
 {% for input in inputs %}
 <!--{% if not solved[loop.index0]%}-->
-<li> {{ input|component }}  </li>
+<li> <p>{{input}}</p>  </li>
 <!--{% endif %}-->
 {% endfor %}
 </ul>
