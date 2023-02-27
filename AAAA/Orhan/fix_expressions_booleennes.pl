@@ -43,6 +43,9 @@ inputs = []
 for i in range(nb_questions):
     globals()[f"input{i}"] = Input()
     #inputs.append(inp)
+
+for i in range(nb_questions):
+    inputs.append(globals()[f"input{i}"])
 ==
 
 evaluator== #|python|
