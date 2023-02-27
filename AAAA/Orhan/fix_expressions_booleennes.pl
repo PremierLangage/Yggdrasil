@@ -41,9 +41,8 @@ affectations_formattees = ", ".join(
 # associer un champ input à chaque formule
 inputs = []
 for i in range(nb_questions):
-    inp = Input()
-    globals()[f"inp{i}"] = inp
-    inputs.append(inp)
+    globals()[f"input{i}"] = Input()
+    #inputs.append(inp)
 ==
 
 evaluator== #|python|
