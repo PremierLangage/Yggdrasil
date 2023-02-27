@@ -80,9 +80,9 @@ Donnez la valeur booléenne des expressions suivantes, sachant que {{affectation
 form== #|html|
 <!--Nombre d'essais : {{essai}}-->
 <ul>
-{% for input in inputs %}
+{% for i in input %}
 <!--{% if not solved[loop.index0]%}-->
-<li>  {{enonce[loop.index0]}} =  </li>
+<li>  {{enonce[loop.index0]}} = {{i}} </li>
 <!--{% endif %}-->
 {% endfor %}
 </ul>
