@@ -59,6 +59,7 @@ for i in range(nb_questions):
     try: # ??
         dummy = box.value
     except Exception as e:
+        feedback = " <p>beurk!</p> "
         continue
     if box.value == str(res[i]):
         note += 1
@@ -66,7 +67,7 @@ for i in range(nb_questions):
         faux.append(str(i+1))
 
 # affichage du feedback
-feedback = '<p style="color:green">Bravo!<p>' 
+feedback += '<p style="color:green">Bravo!<p>' 
 if note != nb_questions:
     if len(faux) > 1:
         feedback = '<p style="color:red">Les réponses ' + ", ".join(faux) + " sont fausses.</p>"
