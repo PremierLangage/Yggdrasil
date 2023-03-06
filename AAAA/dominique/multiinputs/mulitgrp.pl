@@ -27,7 +27,7 @@ for i in range(nb_questions):
             "content": str(X)
         })
         if X==res[i]:
-            R[i]=Ri
+            R.append(Ri)
 
 
     inputs.append({
