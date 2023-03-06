@@ -16,12 +16,13 @@ for i in range(3):
     text += globals()[f"input{i}"].selector
     titi.items = list()
     titi.horizontal = True
-    return
+
     for i in ["True","False","Error"]:
         titi.items.append({
             "id": str(i),
             "content": i
         })
+    return
     inputs.append({
         "selector": globals()[f"input{i}"].selector,
         "cid": globals()[f"input{i}"].cid
