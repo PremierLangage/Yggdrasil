@@ -32,6 +32,10 @@ for i in range(nb_questions):
             R.append(Ri)
 
 
+    inputs.append({
+        "selector": globals()[f"input{i}"].selector,
+        "cid": globals()[f"input{i}"].cid
+    })
 
 
 
