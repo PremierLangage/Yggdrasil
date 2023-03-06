@@ -13,7 +13,7 @@ import uuid
 from string import ascii_letters
 from ressources import *
 
-nb_variables=3
+nb_variables=2
 nb_questions = 4
 inputs = []
 affectations = { var : random.choice(["True","False"]) for var in ascii_letters[:nb_variables] }
