@@ -44,7 +44,10 @@ def expression_booleenne_with_errors(variables):
     variables = list(variables)
     if randint(1,4) >2 :
         variables += ["X"]
+    
     shuffle(variables)
+    while variables[0] == "X":
+        shuffle(variables)
     # on applique une négation aléatoire à chaque variable
     expr_vars = [["", "not "][randint(0, 1)] + var for var in variables]
     expr_ops = [choice(operateurs) for _ in range(len(variables)-1)]
