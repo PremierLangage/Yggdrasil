@@ -34,7 +34,7 @@ def expression_booleenne(variables):
 def expression_booleenne_with_errors(variables):
     """Renvoie une expression booléenne aléatoire sur les variables données.
     Chaque variable apparaîtra exactement une fois.
-
+    Plus la variable X qui n'est pas définie
     :rtype: tuple de chaînes
     :type variables: itérable de chaînes
     """
@@ -44,7 +44,6 @@ def expression_booleenne_with_errors(variables):
     # on applique une négation aléatoire à chaque variable
     expr_vars = [["", "not "][randint(0, 1)] + var for var in variables]
     expr_ops = [choice(operateurs) for _ in range(len(variables)-1)]
-
     return sum(list(zip_longest(expr_vars, expr_ops, fillvalue="")), ())[:-1]
 
 
@@ -69,10 +68,15 @@ def evaluer_expression_booleenne(expression, affectations):
             terme_sans_not = expression[i].replace("not ", "")
             if terme_sans_not in affectations:  # remplacer une variable négative
                 expression[i] = str(not affectations[terme_sans_not])
-        
     # renvoyer l'évaluation
-    return eval(" ".join(expression))
-
+    try:
+        return str(eval(" ".join(expression)))
+    except NameError as e:
+        return "Error"
+    except Exception as e:
+        import sys
+        printf("Expression incalculable ??? bizare", file=sys.stderr)
+        sys.exit(1)
 
 # ----- Exercices sur les noms de variable ------------------------------------
 def mot_aleatoire(longueur):
