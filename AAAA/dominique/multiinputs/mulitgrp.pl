@@ -12,14 +12,12 @@ import random
 
 inputs = []
 for i in range(3):
-    titi = globals()[f"input{i}"] = CheckboxGroup()
-    text += str( globals()[f"input{i}"].selector) + " - "
-    text += str( globals()[f"input{i}"].cid) + " + "
-    titi.items = list()
-    titi.horizontal = True
+    globals()[f"input{i}"] = CheckboxGroup()
+    globals()[f"input{i}"].items = list()
+    globals()[f"input{i}"].horizontal = True
 
     for i in ["True","False","Error"]:
-        titi.items.append({
+        globals()[f"input{i}"].items.append({
             "id": str(i),
             "content": str(i)
         })
@@ -45,7 +43,7 @@ form== #|html|
 <ol>
 {% for i in inputs %}
 <!--{% if not solved[loop.index0]%}-->
-<li>  {{enonce[loop.index0]}}</li>
+<li>  {{enonce[loop.index0]}} {i | component</li>
 <!--{% endif %}-->
 {% endfor %}
 </ol>
