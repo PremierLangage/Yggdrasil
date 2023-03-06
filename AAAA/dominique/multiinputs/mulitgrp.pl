@@ -10,7 +10,7 @@ group2 =: CheckboxGroup
 before==
 import random
 import uuid
-from string import ascii_letter
+from string import ascii_letters
 
 nb_variables=3
 nb_questions = 4
