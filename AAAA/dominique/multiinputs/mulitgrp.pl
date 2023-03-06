@@ -59,13 +59,7 @@ note = 0
 faux = list()
 for i in range(nb_questions):
     box = globals()[f"input{i}"]
-
-
-    content = box['content']
-    if content == res[i]:
-        note += 1
-    else:
-        faux.append(str(i+1))
+    feedback += str(box)
 
 # affichage du feedback
 feedback += '<p style="color:green">Bravo!<p>' 
