@@ -64,7 +64,7 @@ for i in range(nb_questions):
         content = item['content']
         if checked :
             if content == res[i]:
-                feedback += "bravo"
+                note += 1
             else:
                 faux.append(str(i+1))
 
