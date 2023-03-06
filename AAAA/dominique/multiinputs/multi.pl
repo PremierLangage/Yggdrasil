@@ -30,6 +30,12 @@ for i in range(3):
 enonce=["Q1","Q2","Q3"]
 res = ["True","False","Error"]
 
+
+
+
+
+
+
 ==
 
 evaluator== #|python|
@@ -37,7 +43,7 @@ feedback=''
 # calcul de la note = somme du nombre de cases dont la valeur est correcte
 note = 0
 faux = list()
-for i in range(nb_questions):
+for i in range(3):
     box = globals()[f"input{i}"]
     try: # ??
         dummy = box.value
