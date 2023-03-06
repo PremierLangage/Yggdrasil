@@ -4,16 +4,16 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-group =: CheckboxGroup
-group2 =: CheckboxGroup
+
 # GENERATE A RANDOM QUESTION
 before==
 import random
 import uuid
 
-nb_questions = 3
+if not "nb_questions" in globals():
+    nb_questions = 3
 inputs = []
-res = ["True","False","Error"]
+enonce
 R=[]
 for i in range(nb_questions):
     globals()[f"input{i}"] = RadioGroup()
