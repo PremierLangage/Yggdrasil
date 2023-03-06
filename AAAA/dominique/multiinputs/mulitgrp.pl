@@ -30,7 +30,7 @@ for i in range(3):
     })
 
 
-text += str(inputs)
+
 
 ==
 
