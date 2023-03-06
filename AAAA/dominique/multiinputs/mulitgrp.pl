@@ -61,7 +61,7 @@ for i in range(nb_questions):
     box = globals()[f"input{i}"]
     for item in box.items:
         checked = item['checked']
-        content = int(item['content'])
+        content = item['content']
         if content == res[i]:
             feedback += "bravo"
         else:
