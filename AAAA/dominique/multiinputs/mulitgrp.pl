@@ -26,7 +26,8 @@ for i in range(nb_questions):
             "id":Ri,
             "content": str(X)
         })
-        if X==res[i]: # plante si il n'y a pas de bonne réponses
+        if X==res[i]: 
+            # plante si il n'y a pas de bonne réponses
             R.append(Ri)
 
 
