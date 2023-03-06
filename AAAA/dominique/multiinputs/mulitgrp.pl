@@ -12,24 +12,31 @@ import random
 
 nb_questions = 3
 inputs = []
+res = ["True","False","Error"]
 for i in range(nb_questions):
     globals()[f"input{i}"] = RadioGroup()
     globals()[f"input{i}"].items = list()
     globals()[f"input{i}"].horizontal = True
 
     for X in ["True","False","Error"]:
+        Ri= uuid.uuid4()
         globals()[f"input{i}"].items.append({
-            "id": str(X),
+            "id":Ri,
             "content": str(X)
         })
+        if X==res[i]:
+            R[i]=Ri
+
 
     inputs.append({
         "selector": globals()[f"input{i}"].selector,
         "cid": globals()[f"input{i}"].cid
     })
 
+
+
 enonce=["Q1","Q2","Q3"]
-res = ["True","False","Error"]
+
 
 ==
 
@@ -77,7 +84,7 @@ def validate(group, R):
 feedback=''
 # calcul de la note = somme du nombre de cases dont la valeur est correcte
 note = 0
-faux = list()
+
 for i in range(nb_questions):
     note += validate(globals()[f"input{i}"], R[i])
 
