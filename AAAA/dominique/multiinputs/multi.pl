@@ -59,10 +59,14 @@ if note != nb_questions:
 grade = (note, feedback)
 ==
 
-title = Expressions booléennes 
+title = Validations 
 
 text==
-Donnez la valeur booléenne des expressions suivantes, sachant que {{affectations_formattees}}.
+Sachant que {{affectations_formattees}} indiquez la valeur de vérité True, False, Error.
+
+
+Error est dans le cas ou l'expression génére une erreur à l'exécution.
+
 ==
 
 form== #|html|
