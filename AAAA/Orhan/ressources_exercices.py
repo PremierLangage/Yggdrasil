@@ -50,7 +50,7 @@ def expression_booleenne_with_errors(variables):
 
 
 
-def evaluer_expression_booleenne(expression, affectations):
+def evaluer_expression_booleenne(pexpression, affectations):
     """Renvoie la valeur de l'expression booléenne étant données les
     affectations choisies.
     
@@ -59,7 +59,7 @@ def evaluer_expression_booleenne(expression, affectations):
     :type affectations: un dictionnaire contenant pour chaque variable positive
     sa valeur booléenne associée.
     """
-    expression = list(expression)
+    expression = list(pexpression)
     # remplacer les valeurs
     for i in range(len(expression)):
         if expression[i] in affectations:  # remplacer une variable positive
@@ -70,7 +70,7 @@ def evaluer_expression_booleenne(expression, affectations):
                 expression[i] = str(not affectations[terme_sans_not])
     # renvoyer l'évaluation
     try:
-        return str(eval(" ".join(expression)))
+        return pexpression,str(eval(" ".join(expression)))
     except NameError as e:
         return "Error"
     except Exception as e:
