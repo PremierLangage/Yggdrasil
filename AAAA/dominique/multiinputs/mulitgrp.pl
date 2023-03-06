@@ -62,10 +62,11 @@ for i in range(nb_questions):
     for item in box.items:
         checked = item['checked']
         content = item['content']
-        if checked and content == res[i]:
-            feedback += "bravo"
-        else:
-            faux.append(str(i+1))
+        if checked :
+            if content == res[i]:
+                feedback += "bravo"
+            else:
+                faux.append(str(i+1))
 
 # affichage du feedback
 feedback += '<p style="color:green">Bravo!<p>' 
