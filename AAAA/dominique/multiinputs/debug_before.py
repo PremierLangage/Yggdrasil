@@ -32,6 +32,8 @@ if __name__ == "__main__":
         #exec(add_try_clause(dic['before'], StopBeforeExec), dic)
         try:
             exec(dic['before'],dic)
+        except KeyError as ke:
+            print("KzeuError" , str(e),file=sys.stderr)
         except Exception as e:
             print(type(e),file=sys.stderr)
             print(str(e),file=sys.stderr)
