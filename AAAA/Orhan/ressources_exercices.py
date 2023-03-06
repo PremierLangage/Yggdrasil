@@ -31,6 +31,26 @@ def expression_booleenne(variables):
 
     return sum(list(zip_longest(expr_vars, expr_ops, fillvalue="")), ())[:-1]
 
+def expression_booleenne_with_errors(variables):
+    """Renvoie une expression booléenne aléatoire sur les variables données.
+    Chaque variable apparaîtra exactement une fois.
+
+    :rtype: tuple de chaînes
+    :type variables: itérable de chaînes
+    """
+    operateurs = ["and", "or"]
+    variables = list(variables)+["X"]
+    shuffle(variables)
+
+    # on applique une négation aléatoire à chaque variable
+    expr_vars = [["", "not "][randint(0, 1)] + var for var in variables]
+    expr_ops = [choice(operateurs) for _ in range(len(variables)-1)]
+
+    return sum(list(zip_longest(expr_vars, expr_ops, fillvalue="")), ())[:-1]
+
+
+
+
 
 def evaluer_expression_booleenne(expression, affectations):
     """Renvoie la valeur de l'expression booléenne étant données les
