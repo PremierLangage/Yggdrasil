@@ -90,7 +90,8 @@ feedback=''
 note = 0
 
 for i in range(nb_questions):
-    note += validate(globals()[f"input{i}"], R[i])
+    if validate(globals()[f"input{i}"], R[i]) == 1 :
+        note+=1 
 
-grade = (note, feedback)
+grade = ((note/nb_questions)*100, feedback)
 ==
