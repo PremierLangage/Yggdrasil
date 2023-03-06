@@ -41,7 +41,9 @@ def expression_booleenne_with_errors(variables):
     :type variables: itérable de chaînes
     """
     operateurs = ["and", "or"]
-    variables = list(variables)+["X"]
+    variables = list(variables)
+    if randint(1,4) >2 :
+        variables += ["X"]
     shuffle(variables)
     # on applique une négation aléatoire à chaque variable
     expr_vars = [["", "not "][randint(0, 1)] + var for var in variables]
