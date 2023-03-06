@@ -62,7 +62,7 @@ grade = (note, feedback)
 title = Validations 
 
 text==
-Sachant que {{affectations_formattees}} indiquez la valeur de vérité True, False, Error.
+Sachant que {{affectations_formattees}} indiquez la valeur de vérité **True, False, Error**.
 
 
 Error est dans le cas ou l'expression génére une erreur à l'exécution.
