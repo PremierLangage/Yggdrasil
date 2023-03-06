@@ -53,13 +53,33 @@ form== #|html|
 
 # EVALUATE THE STUDENT ANSWER
 evaluator==
+
+def validate(group, R):
+    S = group.selection
+    score = 0
+    feedback = '<span class="error-state animated pulse infinite">Bad answer</span>'
+
+    for item in group.items:
+        item['css'] = ''
+        if item['id'] == S:
+            if S == R:
+                return 1
+            else:
+                item['css'] = 'error-border'
+        elif item['id'] == R:
+            item['css'] = 'success-border animated pulse infinite'
+    return 0
+
+
+
+
+
 feedback=''
 # calcul de la note = somme du nombre de cases dont la valeur est correcte
 note = 0
 faux = list()
 for i in range(nb_questions):
-    box = globals()[f"input{i}"]
-    feedback += str(box)
+    note 
 
 # affichage du feedback
 feedback += '<p style="color:green">Bravo!<p>' 
