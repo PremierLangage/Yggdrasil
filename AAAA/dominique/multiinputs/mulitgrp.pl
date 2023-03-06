@@ -14,6 +14,7 @@ import uuid
 nb_questions = 3
 inputs = []
 res = ["True","False","Error"]
+R=[]
 for i in range(nb_questions):
     globals()[f"input{i}"] = RadioGroup()
     globals()[f"input{i}"].items = list()
