@@ -73,8 +73,8 @@ for i in range(nb_questions):
 feedback += '<p style="color:green">Bravo!<p>' 
 if note != nb_questions:
     if len(faux) > 1:
-        feedback = '<p style="color:red">Les réponses ' + ", ".join(faux) + " sont fausses.</p>"
+        feedback += '<p style="color:red">Les réponses ' + ", ".join(faux) + " sont fausses.</p>"
     else:
-        feedback = '<p style="color:red">La réponse ' + ", ".join(faux) + " est fausse.</p>"
+        feedback += '<p style="color:red">La réponse ' + ", ".join(faux) + " est fausse.</p>"
 grade = (note, feedback)
 ==
