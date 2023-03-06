@@ -46,7 +46,7 @@ def expression_booleenne_with_errors(variables):
         variables += ["X"]
     
     shuffle(variables)
-    while variables[0] == "X":
+    while variables[0] == "X" and len(variables)> 1 :
         shuffle(variables)
     # on applique une négation aléatoire à chaque variable
     expr_vars = [["", "not "][randint(0, 1)] + var for var in variables]
