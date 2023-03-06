@@ -24,6 +24,11 @@ for i in range(3):
             "content": str(i)
         })
 
+    inputs.append({
+        "selector": globals()[f"input{i}"].selector,
+        "cid": globals()[f"input{i}"].cid,
+        "inputError": 0
+    })
 
 
 ==
