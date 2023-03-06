@@ -17,7 +17,7 @@ nb_questions = 4
 inputs = []
 affectations = { var : random.choice(["True","False"]) for var in ascii_letter[:nb_variables] }
 for i in range(nb_questions):
-    txt,val = g
+    txt,val = 1,2
 res = ["True","False","Error","True"]
 R=[]
 for i in range(nb_questions):
