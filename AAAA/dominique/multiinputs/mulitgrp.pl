@@ -2,7 +2,7 @@
 @ /utils/sandboxio.py
 
 grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
+builder =@ debug_before.py
 
 group =: CheckboxGroup
 group2 =: CheckboxGroup
