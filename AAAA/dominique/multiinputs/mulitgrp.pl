@@ -11,7 +11,7 @@ before==
 import random
 import uuid
 
-if nb_questions not in globals():
+if "nb_questions" not in globals():
     nb_questions = 3
 #inputs = []
 res = ["True","False","Error"]
