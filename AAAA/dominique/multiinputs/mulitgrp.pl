@@ -52,23 +52,28 @@ form== #|html|
 
 # EVALUATE THE STUDENT ANSWER
 evaluator==
-right = 0
-total = 0
-for item in group.items:
-    checked = item['checked']
-    content = int(item['content'])
-    if content % 2 == 0:
-        total += 1
-        item['css'] = 'success-border animated pulse infinite'
-        if checked:
-            right += 1
-            item['css'] = 'success-border'
-    elif checked:
-        item['css'] = 'error-border'
+feedback=''
+# calcul de la note = somme du nombre de cases dont la valeur est correcte
+note = 0
+faux = list()
+for i in range(nb_questions):
+    box = globals()[f"input{i}"]
+    try: # ??
+        dummy = box.value
+    except Exception as e:
+        feedback = " <p>beurk!</p> "
+        continue
+    if box.value == str(res[i]):
+        note += 1
+    else:
+        faux.append(str(i+1))
 
-
-if total == 0:
-    grade = (100, 'Right')
-else:
-    grade = ((right / total) * 100, f"{right} / {total}")
+# affichage du feedback
+feedback += '<p style="color:green">Bravo!<p>' 
+if note != nb_questions:
+    if len(faux) > 1:
+        feedback = '<p style="color:red">Les réponses ' + ", ".join(faux) + " sont fausses.</p>"
+    else:
+        feedback = '<p style="color:red">La réponse ' + ", ".join(faux) + " est fausse.</p>"
+grade = (note, feedback)
 ==
