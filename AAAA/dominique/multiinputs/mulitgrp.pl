@@ -14,6 +14,7 @@ inputs = []
 for i in range(3):
     titi = globals()[f"input{i}"] = CheckboxGroup()
     text += str( globals()[f"input{i}"].selector) + " - "
+    text += str( globals()[f"input{i}"].cid) + " + "
     titi.items = list()
     titi.horizontal = True
 
@@ -23,6 +24,10 @@ for i in range(3):
             "content": str(i)
         })
 
+    inputs.append({
+        "selector": globals()[f"input{i}"].selector,
+        "cid": globals()[f"input{i}"].cid
+    })
 
 
 ==
