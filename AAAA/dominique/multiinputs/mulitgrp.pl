@@ -62,7 +62,7 @@ for i in range(nb_questions):
     try: # ??
         dummy = box.value
     except Exception as e:
-        feedback = " <p>beurk!</p> "
+        feedback += " <p>beurk!</p> "
         continue
     if box.value == str(res[i]):
         note += 1
