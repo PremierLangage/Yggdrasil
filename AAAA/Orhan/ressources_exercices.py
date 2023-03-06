@@ -47,9 +47,6 @@ def expression_booleenne_with_errors(variables):
     return sum(list(zip_longest(expr_vars, expr_ops, fillvalue="")), ())[:-1]
 
 
-
-
-
 def evaluer_expression_booleenne(pexpression, affectations):
     """Renvoie la valeur de l'expression booléenne étant données les
     affectations choisies.
