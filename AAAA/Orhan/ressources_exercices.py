@@ -72,7 +72,7 @@ def evaluer_expression_booleenne(pexpression, affectations):
     try:
         return pexpression,str(eval(" ".join(expression)))
     except NameError as e:
-        return "Error"
+        return pexpression,"Error"
     except Exception as e:
         import sys
         printf("Expression incalculable ??? bizare", file=sys.stderr)
