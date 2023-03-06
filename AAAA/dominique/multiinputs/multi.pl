@@ -28,7 +28,7 @@ for i in range(3):
     })
 
 enonce=["Q1","Q2","Q3"]
-
+res = ["True","False","Error"]
 
 ==
 
