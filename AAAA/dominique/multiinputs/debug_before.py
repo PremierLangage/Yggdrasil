@@ -33,7 +33,7 @@ if __name__ == "__main__":
         try:
             exec(dic['before'],dic)
         except Exception as e:
-            print(str(e),file=stderr)
+            print(str(e),file=sys.stderr)
             sys.exit(1)
         exec("", glob)
         for key in glob:
