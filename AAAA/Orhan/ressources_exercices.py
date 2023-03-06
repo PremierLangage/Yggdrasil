@@ -70,9 +70,9 @@ def evaluer_expression_booleenne(pexpression, affectations):
                 expression[i] = str(not affectations[terme_sans_not])
     # renvoyer l'évaluation
     try:
-        return pexpression,str(eval(" ".join(expression)))
+        return " ".join(pexpression),str(eval(" ".join(expression)))
     except NameError as e:
-        return pexpression,"Error"
+        return " ".join(pexpression),"Error"
     except Exception as e:
         import sys
         printf("Expression incalculable ??? bizare", file=sys.stderr)
