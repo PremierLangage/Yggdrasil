@@ -9,25 +9,12 @@ group2 =: CheckboxGroup
 # GENERATE A RANDOM QUESTION
 before==
 import random
-group.items = []
-group2.items = list()
-group.horizontal = True
-group2.horizontal = True
-
-for i in ["True","False","Error"]:
-    group.items.append({
-        "id": str(i),
-        "content": i
-    })
-    group2.items.append({
-        "id": str(i),
-        "content": i
-    })
 
 inputs = []
 for i in range(3):
     titi = globals()[f"input{i}"] = CheckboxGroup()
     titi.items = list()
+    titi.horizontal = True
     for i in ["True","False","Error"]:
         titi.items.append({
             "id": str(i),
