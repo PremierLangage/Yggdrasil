@@ -9,6 +9,7 @@ group2 =: CheckboxGroup
 # GENERATE A RANDOM QUESTION
 before==
 import random
+import uuid
 
 nb_questions = 3
 inputs = []
