@@ -4,8 +4,8 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-group =: CheckboxGroup
-group2 =: CheckboxGroup
+@ ressources.py
+
 # GENERATE A RANDOM QUESTION
 before==
 import random
@@ -17,7 +17,7 @@ nb_questions = 4
 inputs = []
 affectations = { var : random.choice(["True","False"]) for var in ascii_letters[:nb_variables] }
 for i in range(nb_questions):
-    txt,val = 1,2
+    txt,val = 
 res = ["True","False","Error","True"]
 R=[]
 for i in range(nb_questions):
