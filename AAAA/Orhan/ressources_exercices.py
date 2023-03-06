@@ -41,7 +41,6 @@ def expression_booleenne_with_errors(variables):
     operateurs = ["and", "or"]
     variables = list(variables)+["X"]
     shuffle(variables)
-
     # on applique une négation aléatoire à chaque variable
     expr_vars = [["", "not "][randint(0, 1)] + var for var in variables]
     expr_ops = [choice(operateurs) for _ in range(len(variables)-1)]
