@@ -73,6 +73,7 @@ def validate(group, R):
         item['css'] = ''
         if item['id'] == S:
             if S == R:
+                item['css'] = 'success-border'
                 return 1
             else:
                 item['css'] = 'error-border'
