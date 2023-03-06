@@ -27,8 +27,7 @@ for i in range(3):
         "selector": globals()[f"input{i}"].selector,
         "cid": globals()[f"input{i}"].cid
     })
-    if i==3:
-        return
+
 ==
 
 title = Checkbox Group Component
