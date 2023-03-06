@@ -17,6 +17,7 @@ nb_variables=3
 nb_questions = 4
 inputs = []
 affectations = { var : random.choice(["True","False"]) for var in ascii_letters[:nb_variables] }
+affectations_formattees = ", ".join( var + " = " + str(val) for var, val in affectations.items())
 res= list()
 enonce=list()
 for i in range(nb_questions):
