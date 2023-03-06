@@ -59,15 +59,13 @@ note = 0
 faux = list()
 for i in range(nb_questions):
     box = globals()[f"input{i}"]
-    try: # ??
-        dummy = box.value
-    except Exception as e:
-        feedback += f" <p>beurk! {str(e)}</p> "
-        continue
-    if box.value == str(res[i]):
-        note += 1
-    else:
-        faux.append(str(i+1))
+    for item in box.items:
+        checked = item['checked']
+        content = int(item['content'])
+        if content == res[i]:
+            feedback += "bravo"
+        else:
+            faux.append(str(i+1))
 
 # affichage du feedback
 feedback += '<p style="color:green">Bravo!<p>' 
