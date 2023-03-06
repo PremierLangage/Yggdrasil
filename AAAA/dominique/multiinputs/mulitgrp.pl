@@ -11,7 +11,7 @@ import random
 import uuid
 
 if not "nb_questions" in globals():
-    nb_questions = 6
+    nb_questions = 3
 
 enonce=["Q1","Q2","Q3"]
 res = ["True","False","Error"]
