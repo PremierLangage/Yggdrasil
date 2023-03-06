@@ -26,7 +26,13 @@ for i in ["True","False","Error"]:
 
 inputs = []
 for i in range(3):
-    globals()[f"input{i}"] = CheckboxGroup()
+    titi = globals()[f"input{i}"] = CheckboxGroup()
+    
+    for i in ["True","False","Error"]:
+        titi.items.append({
+            "id": str(i),
+            "content": i
+        })
     inputs.append({
         "selector": globals()[f"input{i}"].selector,
         "cid": globals()[f"input{i}"].cid
