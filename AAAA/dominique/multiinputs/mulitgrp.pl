@@ -4,16 +4,15 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-
+group =: CheckboxGroup
+group2 =: CheckboxGroup
 # GENERATE A RANDOM QUESTION
 before==
 import random
 import uuid
 
-if not "nb_questions" in globals():
-    nb_questions = 3
-
-enonce=["Q1","Q2","Q3"]
+nb_questions = 3
+inputs = []
 res = ["True","False","Error"]
 R=[]
 for i in range(nb_questions):
@@ -31,6 +30,15 @@ for i in range(nb_questions):
             # problem si il n'y a pas de bonne réponses
             R.append(Ri)
 
+
+    inputs.append({
+        "selector": globals()[f"input{i}"].selector,
+        "cid": globals()[f"input{i}"].cid
+    })
+
+
+
+enonce=["Q1","Q2","Q3"]
 
 
 ==
