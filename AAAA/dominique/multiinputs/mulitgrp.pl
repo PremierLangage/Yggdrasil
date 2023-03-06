@@ -15,7 +15,6 @@ if not "nb_questions" in globals():
 
 enonce=["Q1","Q2","Q3"]
 res = ["True","False","Error"]
-
 R=[]
 for i in range(nb_questions):
     globals()[f"input{i}"] = RadioGroup()
