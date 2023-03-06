@@ -23,7 +23,7 @@ for i in range(nb_questions):
     for X in ["True","False","Error"]:
         Ri= uuid.uuid4()
         globals()[f"input{i}"].items.append({
-            "id":Ri,
+            "id":Ri.hex,
             "content": str(X)
         })
         if X==res[i]: 
