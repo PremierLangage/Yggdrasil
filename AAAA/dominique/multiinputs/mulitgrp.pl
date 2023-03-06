@@ -79,7 +79,7 @@ feedback=''
 note = 0
 faux = list()
 for i in range(nb_questions):
-    note 
+    note += validate(globals()[f"input{i}"], R[i])
 
 # affichage du feedback
 feedback += '<p style="color:green">Bravo!<p>' 
