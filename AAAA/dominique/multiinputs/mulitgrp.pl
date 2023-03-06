@@ -11,9 +11,9 @@ before==
 import random
 import uuid
 
-if "nb_questions" not in globals():
-    nb_questions = 3
-#inputs = []
+
+nb_questions = 3
+inputs = []
 res = ["True","False","Error"]
 R=[]
 for i in range(nb_questions):
@@ -32,6 +32,10 @@ for i in range(nb_questions):
             R.append(Ri)
 
 
+    inputs.append({
+        "selector": globals()[f"input{i}"].selector,
+        "cid": globals()[f"input{i}"].cid
+    })
 
 
 
