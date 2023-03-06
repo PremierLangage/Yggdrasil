@@ -10,10 +10,14 @@ group2 =: CheckboxGroup
 before==
 import random
 import uuid
+from string import ascii_letter
 
-
+nb_variables=3
 nb_questions = 4
 inputs = []
+affectations = { var : random.choice(["True","False"]) for var in ascii_letter[:nb_variables]
+for i in range(nb_questions):
+    txt,val = g
 res = ["True","False","Error","True"]
 R=[]
 for i in range(nb_questions):
