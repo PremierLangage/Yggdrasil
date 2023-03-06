@@ -50,7 +50,7 @@ for i in range(nb_questions):
 ==
 
 evaluator== #|python|
-
+feedback=''
 # calcul de la note = somme du nombre de cases dont la valeur est correcte
 note = 0
 faux = list()
