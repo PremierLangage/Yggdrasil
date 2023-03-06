@@ -16,10 +16,10 @@ for i in range(3):
     globals()[f"input{i}"].items = list()
     globals()[f"input{i}"].horizontal = True
 
-    for i in ["True","False","Error"]:
+    for X in ["True","False","Error"]:
         globals()[f"input{i}"].items.append({
-            "id": str(i),
-            "content": str(i)
+            "id": str(X),
+            "content": str(X)
         })
 
     inputs.append({
