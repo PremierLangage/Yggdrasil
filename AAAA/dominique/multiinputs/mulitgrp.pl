@@ -13,7 +13,7 @@ import random
 inputs = []
 for i in range(3):
     titi = globals()[f"input{i}"] = CheckboxGroup()
-    text += f" { globals()[f"input{i}"].selector }" 
+    text += str( globals()[f"input{i}"].selector) + " - "
     titi.items = list()
     titi.horizontal = True
 
