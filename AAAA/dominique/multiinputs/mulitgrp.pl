@@ -22,11 +22,12 @@ for i in range(3):
             "id": str(i),
             "content": i
         })
-    return
+
     inputs.append({
         "selector": globals()[f"input{i}"].selector,
         "cid": globals()[f"input{i}"].cid
     })
+    return
 ==
 
 title = Checkbox Group Component
