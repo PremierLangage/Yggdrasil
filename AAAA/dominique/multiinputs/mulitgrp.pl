@@ -11,7 +11,7 @@ before==
 import random
 import uuid
 from string import ascii_letters
-
+from ressources import *
 nb_variables=3
 nb_questions = 4
 inputs = []
