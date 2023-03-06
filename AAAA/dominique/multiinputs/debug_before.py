@@ -30,11 +30,7 @@ if __name__ == "__main__":
         glob = {}
         #dic['StopBeforeExec'] = StopBeforeExec
         #exec(add_try_clause(dic['before'], StopBeforeExec), dic)
-        try:
-            exec(dic['before'],dic)
-        except Exception as e:
-            print(str(e), file=sys.stderr)
-            sys.exit(1)
+        exec(dic['before'],dic)
         exec("", glob)
         for key in glob:
             if key in dic and dic[key] == glob[key]:
