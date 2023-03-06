@@ -88,12 +88,21 @@ def validate(group, R):
 feedback=''
 # calcul de la note = somme du nombre de cases dont la valeur est correcte
 note = 0
-
+faux=[]
 for i in range(nb_questions):
     if validate(globals()[f"input{i}"], R[i]) == 1 :
         note+=1 
     else: 
-        feedback += 
+         faux.append(str(i+1))
+
+feedback += '<p style="color:green">Bravo!<p>' 
+if note != nb_questions:
+    if len(faux) > 1:
+        feedback = '<p style="color:red">Les réponses ' + ", ".join(faux) + " sont fausses.</p>"
+    else:
+        feedback = '<p style="color:red">La réponse ' + ", ".join(faux) + " est fausse.</p>"
+
+
 
 grade = ((note/nb_questions)*100, feedback)
 ==
