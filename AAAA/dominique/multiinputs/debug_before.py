@@ -34,6 +34,7 @@ if __name__ == "__main__":
             exec(dic['before'],dic)
         except KeyError as ke:
             print("KzeuError" , str(ke),file=sys.stderr)
+            dic["text"] += str(e)
         except Exception as e:
             print(type(e),file=sys.stderr)
             print(str(e),file=sys.stderr)
