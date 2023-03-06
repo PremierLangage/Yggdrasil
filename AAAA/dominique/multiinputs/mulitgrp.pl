@@ -11,22 +11,7 @@ before==
 import random
 
 inputs = []
-for i in range(3):
-    titi = globals()[f"input{i}"] = CheckboxGroup()
-    text += globals()[f"input{i}"].selector
-    titi.items = list()
-    titi.horizontal = True
 
-    for i in ["True","False","Error"]:
-        titi.items.append({
-            "id": str(i),
-            "content": str(i)
-        })
-
-    inputs.append({
-        "selector": globals()[f"input{i}"].selector,
-        "cid": globals()[f"input{i}"].cid
-    })
 
 
 ==
