@@ -12,9 +12,9 @@ import random
 import uuid
 
 
-nb_questions = 3
+nb_questions = 4
 inputs = []
-res = ["True","False","Error"]
+res = ["True","False","Error","True"]
 R=[]
 for i in range(nb_questions):
     globals()[f"input{i}"] = RadioGroup()
