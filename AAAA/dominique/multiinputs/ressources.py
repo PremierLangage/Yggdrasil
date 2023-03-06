@@ -57,6 +57,8 @@ def evaluer_expression_booleenne2(pexpression, affectations):
     un littéral ("x", "not x", ...) ou un opérateur ("and" ou "or")
     :type affectations: un dictionnaire contenant pour chaque variable positive
     sa valeur booléenne associée.
+
+    Gère l'existance de variables non définies (X par exemple)
     """
     expression = list(pexpression)
     # remplacer les valeurs
