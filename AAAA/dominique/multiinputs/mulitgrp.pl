@@ -31,7 +31,7 @@ for i in range(nb_questions):
     globals()[f"input{i}"].items = list()
     globals()[f"input{i}"].horizontal = True
 
-    for X in res:
+    for X in ["True","False","Error"]:
         Ri= str(uuid.uuid4())
         globals()[f"input{i}"].items.append({
             "id":Ri,
