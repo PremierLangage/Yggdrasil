@@ -13,7 +13,7 @@ import random
 nb_questions = 3
 inputs = []
 for i in range(nb_questions):
-    globals()[f"input{i}"] = CheckboxGroup()
+    globals()[f"input{i}"] = RadioGroup()
     globals()[f"input{i}"].items = list()
     globals()[f"input{i}"].horizontal = True
 
