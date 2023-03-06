@@ -11,9 +11,11 @@ import random
 import uuid
 
 if not "nb_questions" in globals():
-    nb_questions = 3
-inputs = []
-enonce
+    nb_questions = 6
+
+enonce=["Q1","Q2","Q3"]
+res = ["True","False","Error"]
+
 R=[]
 for i in range(nb_questions):
     globals()[f"input{i}"] = RadioGroup()
@@ -30,15 +32,6 @@ for i in range(nb_questions):
             # problem si il n'y a pas de bonne réponses
             R.append(Ri)
 
-
-    inputs.append({
-        "selector": globals()[f"input{i}"].selector,
-        "cid": globals()[f"input{i}"].cid
-    })
-
-
-
-enonce=["Q1","Q2","Q3"]
 
 
 ==
