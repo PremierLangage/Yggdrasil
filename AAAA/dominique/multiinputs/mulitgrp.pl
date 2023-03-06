@@ -21,13 +21,13 @@ for i in range(3):
     for i in ["True","False","Error"]:
         titi.items.append({
             "id": str(i),
-            "content": str(i)
+            "content": str(i),
+        "inputError": 0
         })
 
     inputs.append({
         "selector": globals()[f"input{i}"].selector,
-        "cid": globals()[f"input{i}"].cid,
-        "inputError": 0
+        "cid": globals()[f"input{i}"].cid
     })
 
 
