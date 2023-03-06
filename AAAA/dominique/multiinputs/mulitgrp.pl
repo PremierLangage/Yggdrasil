@@ -52,10 +52,11 @@ for i in range(nb_questions):
 
 ==
 
-title = Checkbox Group Component
+title = Evaluer des expression booleennes 
+
 
 text==
-Select even numbers.
+Donnez la valeur booléenne des expressions suivantes, sachant que {{affectations_formattees}}.
 ==
 
 form== #|html|
