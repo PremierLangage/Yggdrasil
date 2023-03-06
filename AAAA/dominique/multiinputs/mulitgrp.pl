@@ -27,8 +27,8 @@ for i in range(3):
         "cid": globals()[f"input{i}"].cid
     })
 
-
-
+enonce=["Q1","Q2","Q3"]
+res = ["True","False","Error"]
 
 ==
 
