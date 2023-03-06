@@ -21,8 +21,7 @@ for i in range(3):
     for i in ["True","False","Error"]:
         titi.items.append({
             "id": str(i),
-            "content": str(i),
-        "inputError": 0
+            "content": str(i)
         })
 
     inputs.append({
