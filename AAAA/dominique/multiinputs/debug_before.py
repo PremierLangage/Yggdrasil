@@ -34,6 +34,7 @@ if __name__ == "__main__":
             exec(dic['before'],dic)
         except Exception as e:
             print(str(e), file=sys.stderr)
+            sys.exit(1)
         exec("", glob)
         for key in glob:
             if key in dic and dic[key] == glob[key]:
