@@ -78,7 +78,7 @@ def validate(group, R):
             else:
                 item['css'] = 'error-border'
         elif item['id'] == R:
-            item['css'] = 'success-border animated pulse infinite'
+            item['css'] = 'error-border animated pulse infinite'
     return 0
 
 
