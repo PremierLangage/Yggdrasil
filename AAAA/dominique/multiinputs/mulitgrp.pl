@@ -22,6 +22,8 @@ res= list()
 enonce=list()
 for i in range(nb_questions):
     txt,val = evaluer_expression_booleenne2(expression_booleenne_with_errors(ascii_letters[:nb_variables]),affectations)
+    while txt in enonce:
+            txt,val = evaluer_expression_booleenne2(expression_booleenne_with_errors(ascii_letters[:nb_variables]),affectations)
     enonce.append(txt)
     res.append(val)
 #res = ["True","False","Error","True"]
