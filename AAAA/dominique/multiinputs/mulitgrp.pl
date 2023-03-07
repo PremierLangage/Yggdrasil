@@ -14,7 +14,7 @@ from string import ascii_letters
 from ressources import *
 
 nb_variables=3
-nb_questions = 4
+nb_questions = 5
 inputs = []
 affectations = { var : random.choice(["True","False"]) for var in ascii_letters[:nb_variables] }
 affectations_formattees = ", ".join( var + " = " + str(val) for var, val in affectations.items())
