@@ -43,4 +43,6 @@ def tri2valeurs(val1, val2):
 
 
 editor.code==
+def tri2valeurs(val1, val2):
+    ...
 ==
