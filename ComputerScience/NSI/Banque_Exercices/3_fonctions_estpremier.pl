@@ -54,4 +54,6 @@ def estpremier(p):
    return True
 ==
 
+editor.code==
+==
 
