@@ -8,7 +8,7 @@
 typedef struct
 {
     int taille;
-    int *arbre;
+    int *tab;
     int max;
 } ENSEMBLE;
 
