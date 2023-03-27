@@ -37,7 +37,8 @@ En résumé, les ensembles en informatique sont des structures de données qui p
 
 Dans les exercices suivants nous utiliserons l'interface Ensemble suivante :
 
-<verb> typedef ... *ENSEMBLE;
+```
+typedef ... *ENSEMBLE;
 int ajoute(ENSEMBLE *, int valeur); // retourne 1 si la valeur a été ajouté à l'ensemble, sinon retourne zéro pour indiqué qu'elle était déjà présente .
 int retire(ENSEMBLE *, int valeur); // retourne 1 si la valeur a été retiré à l'ensemble, sinon retourne zéro pour indiqué qu'elle était déjà absente .
 int appartient(ENSEMBLE *, int valeur); // retourne 1 si la valeur est présente dans l'ensemble, sinon retourne zéro
@@ -50,7 +51,8 @@ int print(ENSEMBLE *);
 int taille(ENSEMBLE *);
 // pour chaque type d'ensemble il existe une fonction d'allocation avec des paramêtre spécifiques 
 ENSEMBLE *alloue_type_ensemble(...)
-</verb>
+```
+
 
 ==
 
