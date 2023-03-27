@@ -54,13 +54,19 @@ Et une fonction int resize(ENSEMBLE *e);
 
 si taille == max et réalloue le tableau avec BLOC d'élements en plus,
 
-si taille + 2*BLOC @gt; max réalloue le tableau avec BLOC éléments en moins.
+si taille + 2*BLOC est plus petit que max réalloue le tableau avec BLOC éléments en moins.
 
+La fonction resize retourne 1 si une réallocation a eu lieux. 
 ==
 
 editor.code==#|c|
 ENSEMBLE *alloueTabDyn(){}
 int resize(ENSEMBLE *e){}
+
+==
+
+
+debug==
 /*
 ENSEMBLE *alloueTabDyn(){
     ENSEMBLE *s= malloc(sizeof(ENSEMBLE));
