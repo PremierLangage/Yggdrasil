@@ -56,7 +56,7 @@ solution==#|c|
 ==
 
 # A faire ne premeir 
-# création des variables 
+# création des variables code_before solution codeafter 
 beforeA==
 
 
