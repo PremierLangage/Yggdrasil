@@ -2,16 +2,7 @@
 extends = /ComputerScience/Algo/Tree/BinaryTree/string_code_bin_tree.pl
 
 evaluator==#|python|
-form = """
-<style>
-.error-state{
-   padding: 10px;
-}
-.success-state{
-   padding: 10px;
-}
-</style>
-"""
+
 
 if "trys" not in globals():
     trys = 0
@@ -37,6 +28,16 @@ def cmp_str_delim(s1, s2):
 
 if trys % 2 == 0:
     if cmp_str_delim(soluce, inputbox.value):
+        form = """
+<style>
+.error-state{
+   padding: 10px;
+}
+.success-state{
+   padding: 10px;
+}
+</style>
+"""
         grade = (100, f''' <span class="success-state">Bravo,{trys} c'est exactement cela : {soluce} </span>''')
     else:
         grade = (0, f''' <span class="error-state">Désolé,{trys} vous avez fait une erreur, la réponse attendue était : '''+str(soluce)+'</span>')
