@@ -41,14 +41,14 @@ if trys % 2 == 0:
     """
     if cmp_str_delim(soluce, inputbox.value):
         success += 1
-        grade = (100, f''' <span class="success-state">Bravo,{trys} c'est exactement cela : {soluce} </span>''')
+        grade = (100, f''' <span class="success-state">Bravo, c'est exactement cela : {soluce} </span>''')
     else:
         g =100 if success else 0
-        grade = (g, f''' <span class="error-state">Désolé,{trys} vous avez fait une erreur, la réponse attendue était : '''+str(soluce)+'</span>')
+        grade = (g, f''' <span class="error-state">Désolé, vous avez fait une erreur, la réponse attendue était : '''+str(soluce)+'</span>')
 else:
     form = oldform
     g =100 if success else 0
-    grade = (g,f"Try again: {success}/{trys//2}")
+    grade = (g,f"Try again: {success}/{(1+trys)//2}")
     exec(before,globals())
 
 ==
