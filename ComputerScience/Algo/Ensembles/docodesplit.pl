@@ -6,8 +6,8 @@
 # With line comments starting with varname== or == 
 # line comments msut start ina  fixed way define by CSTART
 # default values for c =
-codefile="code.c" 
-CSTART="// PL:"
+codefile=code.c
+CSTART=// PL:
 varlist=["codebefore","solution","codeafter"]
 beforeH==
 #!/usr/bin/env python3
