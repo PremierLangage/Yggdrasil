@@ -6,6 +6,7 @@ evaluator==#|python|
 
 if "trys" not in globals():
     trys = 0
+    oldform = form
 else:
     trys+=1
 
@@ -27,22 +28,23 @@ def cmp_str_delim(s1, s2):
     return reduce_string(s1) == reduce_string(s2)
 
 if trys % 2 == 0:
+    form = """
+    <style>
+    .error-state{
+    padding: 10px;
+    }
+    .success-state{
+    padding: 10px;
+    }
+    </style>
+    """
     if cmp_str_delim(soluce, inputbox.value):
-        form = """
-<style>
-.error-state{
-   padding: 10px;
-}
-.success-state{
-   padding: 10px;
-}
-</style>
-"""
+    
         grade = (100, f''' <span class="success-state">Bravo,{trys} c'est exactement cela : {soluce} </span>''')
     else:
         grade = (0, f''' <span class="error-state">Désolé,{trys} vous avez fait une erreur, la réponse attendue était : '''+str(soluce)+'</span>')
 else:
-    grade = (0,"exo suivant")
+    form = oldform
     exec(before,globals())
 
 ==
