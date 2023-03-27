@@ -37,7 +37,7 @@ def cmp_str_delim(s1, s2):
 
 if trys % 2 == 0:
     if cmp_str_delim(soluce, inputbox.value):
-        grade = (100, f''' <span class="success-state">Bravo,{trys} c'est exactement cela : {soluce} </span>')
+        grade = (100, f''' <span class="success-state">Bravo,{trys} c'est exactement cela : {soluce} </span>''')
     else:
         grade = (0, f''' <span class="error-state">Désolé,{trys} vous avez fait une erreur, la réponse attendue était : '''+str(soluce)+'</span>')
 else:
