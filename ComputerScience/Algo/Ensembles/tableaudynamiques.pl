@@ -30,10 +30,14 @@ text==
 
 On représente un ensemble grace à un tableau dynamique non trié.   
 ```
-    typedef struct {    
+    typedef struct {   
+
         int taille;/* nombre d'éléments présents*/   
+    
         int *tab;   
+    
         int max;/* nombre maximum d'éléments */   
+    
     } ENSEMBLE;    
 ```
 
