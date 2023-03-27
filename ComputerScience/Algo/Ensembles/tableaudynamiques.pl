@@ -33,6 +33,7 @@ text==
 
 On représente un ensemble grace à un tableau dynamique non trié.   
 ```
+
     typedef struct {   
 
         int taille;/* nombre d'éléments présents*/   
@@ -49,8 +50,11 @@ Nous allons dans cet exercice gérer uniquement l'aspect réallocation. Nous sup
 
 Fournissez une fonction ENSEMBLE *alloueTabDyn(); qui alloue un tableau de taille BLOC. 
 
-Et une fonction int resize(ENSEMBLE *e); qui si taille == max et réalloue le tableau avec BLOC d'élements en plus,
-qui si taille + 2*BLOC <max réalloue le tableau avec BLOC éléments en moins.
+Et une fonction int resize(ENSEMBLE *e); 
+
+si taille == max et réalloue le tableau avec BLOC d'élements en plus,
+
+si taille + 2*BLOC @gt; max réalloue le tableau avec BLOC éléments en moins.
 
 ==
 
