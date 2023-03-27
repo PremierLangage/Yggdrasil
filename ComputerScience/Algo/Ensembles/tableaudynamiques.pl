@@ -18,23 +18,25 @@
 
 extends=/ComputerScience/C/template/std_progC.pl
 
+extends = ./docodesplit.pl
 
-author=Marc Zipstein
+author=Dominique Revuz
 title=Ajout dans un tableau dynamique
-tag=recherche
+tag=allocation|Ensembles
 
 editor.height=300px
 
 text==
 
 On représente un ensemble grace à un tableau dynamique non trié.   
-<code>
+```
     typedef struct {    
         int taille;/* nombre d'éléments présents*/   
         int *tab;   
         int max;/* nombre maximum d'éléments */   
     } ENSEMBLE;    
-</code>
+```
+
 
 Nous allons dans cet exercice gérer uniquement l'aspect réallocation. Nous suppons que la constante globale BLOC est définie. 
 
