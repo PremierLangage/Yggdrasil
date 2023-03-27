@@ -1,5 +1,4 @@
 
-
 // PL:code_before==
 #include <stdio.h>
 #include <stdlib.h>
@@ -39,6 +38,25 @@ int printallocs()
 #define malloc(size) dobob(NULL, size)
 // PL:==
 
+// PL:solution==
+
+ENSEMBLE *alloueTabDyn()
+{
+    ENSEMBLE *s = malloc(sizeof(ENSEMBLE));
+    s->tab = malloc(BLOC * sizeof(int));
+    return s;
+}
+int resize(ENSEMBLE *e)
+{
+    if (e->taille == e->max)
+        return (int)s->tab = realloc(s->tab, s->max += BLOC);
+    if (e->taille + 2 * BLOC < e->max)
+        return (int)s->tab = realloc(s->tab, s->max -= BLOC);
+    return 0;
+}
+
+// PL:==
+
 // PL:code_after==
 int main(int argvc, char *argv[])
 {
@@ -47,16 +65,14 @@ int main(int argvc, char *argv[])
     if (init(&t) == 0)
         return 1;
 
-    while (1 == scanf("%d", &x))
-    {
-        ajoute(&t, x);
-        affiche(t);
-        if (!estTas(t.arbre, t.taille))
-        {
-            fprintf(stderr, " n'est pas un tas ");
-            break;
-        }
-    }
+    t->taille = t->max;
+    resize(t);
+    t->taille = t->max;
+    resize(t);
+    t->taille = t->max;
+    resize(t);
+    t->taille = t->max / 2;
+    resize(t);
 
     return 0;
 }
