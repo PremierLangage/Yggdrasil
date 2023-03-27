@@ -38,19 +38,19 @@ En résumé, les ensembles en informatique sont des structures de données qui p
 Dans les exercices suivants nous utiliserons l'interface Ensemble suivante :
 
 ```
-typedef ... *ENSEMBLE;
-int ajoute(ENSEMBLE *, int valeur); // retourne 1 si la valeur a été ajouté à l'ensemble, sinon retourne zéro pour indiqué qu'elle était déjà présente .
-int retire(ENSEMBLE *, int valeur); // retourne 1 si la valeur a été retiré à l'ensemble, sinon retourne zéro pour indiqué qu'elle était déjà absente .
-int appartient(ENSEMBLE *, int valeur); // retourne 1 si la valeur est présente dans l'ensemble, sinon retourne zéro
-ENSEMBLE*union(ENSEMBLE*,ENSEMBLE*); // Alloue et construit l'ensemble qui forme l'union des deux ensembles. Accepte NULL comme deuxième paramêtre
-ENSEMBLE*intersection(ENSEMBLE*,ENSEMBLE*); // Alloue et construit l'ensemble qui forme l'union des deux ensembles.
-ENSEMBLE*difference(ENSEMBLE*A,ENSEMBLE*B); // Alloue et construit l'ensemble qui forme la difference des deux ensembles éléments de A qui ne sont pas dans B.
-ENSEMBLE*differenceSymetrique(ENSEMBLE*,ENSEMBLE*); // Alloue et construit l'ensemble qui forme la differenceSymetrique des deux ensembles (union moins l'intersection).
-int egalité(ENSEMBLE*,ENSEMBLE*);// vrai si les deux ensembles sont égaux
-int print(ENSEMBLE *);
-int taille(ENSEMBLE *);
+typedef ... *ENSEMBLE;  
+int ajoute(ENSEMBLE *, int valeur); // retourne 1 si la valeur a été ajouté à l'ensemble, sinon retourne zéro pour indiqué qu'elle était déjà présente .  
+int retire(ENSEMBLE *, int valeur); // retourne 1 si la valeur a été retiré à l'ensemble, sinon retourne zéro pour indiqué qu'elle était déjà absente .  
+int appartient(ENSEMBLE *, int valeur); // retourne 1 si la valeur est présente dans l'ensemble, sinon retourne zéro  
+ENSEMBLE*union(ENSEMBLE*,ENSEMBLE*); // Alloue et construit l'ensemble qui forme l'union des deux ensembles. Accepte NULL comme deuxième paramêtre  
+ENSEMBLE*intersection(ENSEMBLE*,ENSEMBLE*); // Alloue et construit l'ensemble qui forme l'union des deux ensembles.  
+ENSEMBLE*difference(ENSEMBLE*A,ENSEMBLE*B); // Alloue et construit l'ensemble qui forme la difference des deux ensembles éléments de A qui ne sont pas dans B.  
+ENSEMBLE*differenceSymetrique(ENSEMBLE*,ENSEMBLE*); // Alloue et construit l'ensemble qui forme la differenceSymetrique des deux ensembles (union moins l'intersection).  
+int egalité(ENSEMBLE*,ENSEMBLE*);// vrai si les deux ensembles sont égaux  
+int print(ENSEMBLE *);  
+int taille(ENSEMBLE *);  
 // pour chaque type d'ensemble il existe une fonction d'allocation avec des paramêtre spécifiques 
-ENSEMBLE *alloue_type_ensemble(...)
+ENSEMBLE *alloue_type_ensemble(...)  
 ```
 
 
