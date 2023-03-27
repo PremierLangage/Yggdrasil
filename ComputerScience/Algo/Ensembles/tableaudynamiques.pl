@@ -16,9 +16,12 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-extends=/ComputerScience/C/template/std_progC.pl
 
 extends = ./docodesplit.pl
+
+extends=/ComputerScience/C/template/std_progC.pl
+
+
 
 author=Dominique Revuz
 title=Ajout dans un tableau dynamique
