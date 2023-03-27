@@ -7,6 +7,7 @@ evaluator==#|python|
 if "trys" not in globals():
     trys = 0
     oldform = form
+    sucess = 0
 else:
     trys+=1
 
@@ -42,6 +43,7 @@ if trys % 2 == 0:
         success += 1
         grade = (100, f''' <span class="success-state">Bravo,{trys} c'est exactement cela : {soluce} </span>''')
     else:
+
         grade = (0, f''' <span class="error-state">Désolé,{trys} vous avez fait une erreur, la réponse attendue était : '''+str(soluce)+'</span>')
 else:
     form = oldform
