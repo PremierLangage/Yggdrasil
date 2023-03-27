@@ -17,6 +17,10 @@
 
 extends=/ComputerScience/C/template/std_progC.pl
 
+@/builder/bbefore.py
+
+
+
 
 author=Marc Zipstein
 title=Ajout dans un tas dynamique
