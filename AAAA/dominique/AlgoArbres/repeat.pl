@@ -41,6 +41,6 @@ if trys % 2 == 0:
     else:
         grade = (0, ''' <span class="error-state">Désolé, vous avez fait une erreur, la réponse attendue était : '''+str(soluce)+'</span>')
 else:
-    exec(before,globals()
+    exec(before,globals())
 
 ==
