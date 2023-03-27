@@ -25,7 +25,6 @@ varlist=["codebefore","solution","codeafter"]
 
 import sys
 
-codefile = "dyntab.c"
 
 with open(codefile, 'r') as f:
     start = 0
