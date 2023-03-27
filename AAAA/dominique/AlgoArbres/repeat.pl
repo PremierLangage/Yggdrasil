@@ -45,6 +45,7 @@ if trys % 2 == 0:
         grade = (0, f''' <span class="error-state">Désolé,{trys} vous avez fait une erreur, la réponse attendue était : '''+str(soluce)+'</span>')
 else:
     form = oldform
+    grade = (grade[0],"Try again")
     exec(before,globals())
 
 ==
