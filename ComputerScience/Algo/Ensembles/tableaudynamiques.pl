@@ -55,7 +55,12 @@ solution==#|c|
 
 ==
 
+# A faire ne premeir 
+# création des variables 
+beforeA==
 
+
+==
 
 code_before==#|c|
 #include<stdio.h>
