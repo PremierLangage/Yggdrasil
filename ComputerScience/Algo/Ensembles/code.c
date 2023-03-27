@@ -1,6 +1,6 @@
 
 
-// PL:codebefore==
+// PL:code_before==
 #include <stdio.h>
 #include <stdlib.h>
 #define BLOC 5
@@ -39,7 +39,7 @@ int printallocs()
 #define malloc(size) dobob(NULL, size)
 // PL:==
 
-// PL:codeafter==
+// PL:code_after==
 int main(int argvc, char *argv[])
 {
     ENSEMBLE *t = alloueTabDyn();
