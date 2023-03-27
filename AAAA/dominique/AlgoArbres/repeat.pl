@@ -13,6 +13,11 @@ form = """
 </style>
 """
 
+if "trys" not in globals():
+    trys = 0
+else:
+    trys+=1
+
 def reduce_string(s):
     """
     Return a string built from `s` but containing only ascii letter `d,l,r,f` 
@@ -30,11 +35,12 @@ def cmp_str_delim(s1, s2):
     """
     return reduce_string(s1) == reduce_string(s2)
 
-if cmp_str_delim(soluce, inputbox.value):
-    grade = (100, ''' <span class="success-state">Bravo, c'est exactement cela : '''+str(soluce)+'</span>')
+if trys % 2 == 0:
+    if cmp_str_delim(soluce, inputbox.value):
+        grade = (100, ''' <span class="success-state">Bravo, c'est exactement cela : '''+str(soluce)+'</span>')
+    else:
+        grade = (0, ''' <span class="error-state">Désolé, vous avez fait une erreur, la réponse attendue était : '''+str(soluce)+'</span>')
 else:
-    grade = (0, ''' <span class="error-state">Désolé, vous avez fait une erreur, la réponse attendue était : '''+str(soluce)+'</span>')
-
-exec(before,globals())
+    exec(before,globals()
 
 ==
