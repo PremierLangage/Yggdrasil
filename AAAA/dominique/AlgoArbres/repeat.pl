@@ -43,11 +43,12 @@ if trys % 2 == 0:
         success += 1
         grade = (100, f''' <span class="success-state">Bravo,{trys} c'est exactement cela : {soluce} </span>''')
     else:
-
-        grade = (0, f''' <span class="error-state">Désolé,{trys} vous avez fait une erreur, la réponse attendue était : '''+str(soluce)+'</span>')
+        g =100 if success else 0
+        grade = (g, f''' <span class="error-state">Désolé,{trys} vous avez fait une erreur, la réponse attendue était : '''+str(soluce)+'</span>')
 else:
     form = oldform
-    grade = (0,f"Try again: {success}/{trys//2}")
+    g =100 if success else 0
+    grade = (g,f"Try again: {success}/{trys//2}")
     exec(before,globals())
 
 ==
