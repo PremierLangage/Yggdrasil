@@ -61,11 +61,22 @@ si taille + 2*BLOC @gt; max réalloue le tableau avec BLOC éléments en moins.
 editor.code==#|c|
 ENSEMBLE *alloueTabDyn(){}
 int resize(ENSEMBLE *e){}
+/*
+ENSEMBLE *alloueTabDyn(){
+    ENSEMBLE *s= malloc(sizeof(ENSEMBLE));
+    s->tab=malloc( BLOC*sizeof(int));
+    return s;
+}
+int resize(ENSEMBLE *e){
+    if (e->taille == e->max) return (int) s->tab = realloc(s->tab,s->max+=BLOC);
+    if (e->taille +2*BLOC <  e->max) return (int) s->tab = realloc(s->tab,s->max-=BLOC);
+    return 0;
+}
 
+*/
 ==
 
 @ code.c
-
 
 
 checks_args_stdin==#|python|
