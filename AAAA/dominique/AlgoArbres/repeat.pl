@@ -7,7 +7,7 @@ evaluator==#|python|
 if "trys" not in globals():
     trys = 0
     oldform = form
-    sucess = 0
+    success = 0
 else:
     trys+=1
 
