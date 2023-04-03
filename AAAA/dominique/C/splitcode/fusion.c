@@ -90,7 +90,9 @@ Arbre fusion(Arbre a1, Arbre a2) {
 int main() {
     Arbre a = lireArbre();
     Arbre b = lireArbre();
-
+    afficher_arbre(a);
+    afficher_arbre(b);
+    afficher_arbre(fusion(a,b));
     return 0;
 }
 // PL:==
