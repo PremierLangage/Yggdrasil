@@ -4,14 +4,15 @@
 /*
 Ecrire une fonction *fusion* qui prend deux arbres binaires de recherche en paramêtres et retourne un nouvel arbre
 qui contient tout les éléments présents dans au moins un des deux arbres. Le type d'arbre a utiliser est :
-*/
+
+
 typedef struct _noeud {
     struct _noeud *gauche;
     struct _noeud *droite;
     int valeur;
 } Noeud,*Arbre;
 // PL:==
-
+*/
 // PL:code_before==
 #include <stdio.h>
 #include <stdlib.h>
