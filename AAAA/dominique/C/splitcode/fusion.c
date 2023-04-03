@@ -46,19 +46,19 @@ Arbre fusion(Arbre a1, Arbre a2);
 // PL:==
 
 // PL:solution==
+copy(Arbre *dest,Arbre source){
+    if (source){
+        *dest= nouveau_noeud(source->valeur);
+    
+    }
+    else *dest = NULL;
+}
+
 Arbre fusion(Arbre a1, Arbre a2) {
     if (a1 == NULL) return a2;
     if (a2 == NULL) return a1;
 
-    Arbre result = malloc(sizeof(Noeud));
-    if (result == NULL) {
-        fprintf(stderr, "Erreur: impossible d'allouer la mémoire\n");
-        exit(EXIT_FAILURE);
-    }
 
-    result->valeur = a1->valeur + a2->valeur;
-    result->gauche = fusion(a1->gauche, a2->gauche);
-    result->droite = fusion(a1->droite, a2->droite);
 
     return result;
 }
