@@ -40,7 +40,7 @@ Noeud* nouveau_noeud(int valeur) {
 
 int insertion(Arbre *a,int valeur) {
     if (*a == NULL) {
-        *a = alloueNoeud(valeur);
+        *a = nouveau_noeud(valeur);
         return 1;
     }
     if (valeur == (*a)->valeur) {
@@ -57,7 +57,10 @@ Arbre lireArbre(){
     while (scanf("%d",&i)==1){
         insertion(&a,i);
     }
-    getchar(); // consomation du | 
+    while (scanf("%c",&i)==1){
+        if (i=='|') break;
+        if (i == EOF) break;
+    }
     return a;
 }
 
@@ -70,16 +73,17 @@ Arbre fusion(Arbre a1, Arbre a2);
 
 // PL:solution==
 copy(Arbre *dest,Arbre source){
+    //if (source) printf("copy: %d",source->valeur);
     if (source){
-        insertion(dest,source->val);
+        insertion(dest,source->valeur);
         copy(dest, source->gauche);
         copy(dest,source->droite);
     }
-    else *dest = NULL;
+    
 }
 
 Arbre fusion(Arbre a1, Arbre a2) {
-    Arbre a;
+    Arbre a = NULL;
     copy(&a,a1);
     copy(&a,a2);
     return a;
@@ -90,9 +94,12 @@ Arbre fusion(Arbre a1, Arbre a2) {
 int main() {
     Arbre a = lireArbre();
     Arbre b = lireArbre();
-    afficher_arbre(a);
-    afficher_arbre(b);
-    afficher_arbre(fusion(a,b));
+    printf("\nArbre 1:");
+    afficher_arbre(a,0);
+    printf("\nArbre 2:");
+    afficher_arbre(b,0);
+    printf("\nArbre fusion:");
+    afficher_arbre(fusion(a,b),0);
     return 0;
 }
 // PL:==
