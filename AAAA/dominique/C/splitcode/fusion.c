@@ -38,6 +38,29 @@ Noeud* nouveau_noeud(int valeur) {
     return n;
 }
 
+int insertion(Arbre *a,int valeur) {
+    if (*a == NULL) {
+        *a = alloueNoeud(valeur);
+        return 1;
+    }
+    if (valeur == (*a)->valeur) {
+        return 0;
+    }
+    if (valeur < (*a)->valeur) {
+        return insertion(&(*a)->gauche,valeur);
+    }
+    return insertion(&(*a)->droite,valeur);
+ }
+
+Arbre lireArbre(){
+    Arbre a; int i;
+    while (scanf("%d",&i)==1){
+        insertion(&a,i);
+    }
+    getchar(); // consomation du | 
+    return a;
+}
+
 
 // PL:==
 
@@ -48,48 +71,30 @@ Arbre fusion(Arbre a1, Arbre a2);
 // PL:solution==
 copy(Arbre *dest,Arbre source){
     if (source){
-        *dest= nouveau_noeud(source->valeur);
-    
+        insertion(dest,source->val);
+        copy(dest, source->gauche);
+        copy(dest,source->droite);
     }
     else *dest = NULL;
 }
 
 Arbre fusion(Arbre a1, Arbre a2) {
-    if (a1 == NULL) return a2;
-    if (a2 == NULL) return a1;
-
-
-
-    return result;
+    Arbre a;
+    copy(&a,a1);
+    copy(&a,a2);
+    return a;
 }
 // PL:==
 
 // PL:code_after==
 int main() {
-    Arbre a1 = malloc(sizeof(Noeud));
-    a1->valeur = 1;
-    a1->gauche = NULL;
-    a1->droite = malloc(sizeof(Noeud));
-    a1->droite->valeur = 3;
-    a1->droite->gauche = NULL;
-    a1->droite->droite = NULL;
-
-    Arbre a2 = malloc(sizeof(Noeud));
-    a2->valeur = 2;
-    a2->gauche = malloc(sizeof(Noeud));
-    a2->gauche->valeur = 1;
-    a2->gauche->gauche = NULL;
-    a2->gauche->droite = NULL;
-    a2->droite = malloc(sizeof(Noeud));
-    a2->droite->valeur = 3;
-    a2->droite->gauche = NULL;
-    a2->droite->droite = NULL;
-
-    Arbre result = fusion(a1, a2);
-    printf("%d %d %d %d\n", result->valeur, result->gauche->valeur, result->gauche->gauche == NULL, result->gauche->droite == NULL);
-    printf("%d %d %d %d\n", result->droite->valeur, result->droite->gauche == NULL, result->droite->droite == NULL, result->droite->gauche == NULL ? 1 : result->droite->gauche->valeur);
+    Arbre a;
+    Arbre b;
 
     return 0;
 }
 // PL:==
-
+// PL:Inputs==
+5 6 7 8 910 12 34 77 | 19 76 54 39 29 8 9
+1 2 3 4 5 6 7 8 9 10 | 19 10 9 8 7 6 5 4 3 2 1
+==
