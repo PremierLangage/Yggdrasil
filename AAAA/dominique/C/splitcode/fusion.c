@@ -16,6 +16,27 @@ typedef struct _noeud {
 #include <stdio.h>
 #include <stdlib.h>
 
+// définition de la fonction d'affichage d'un arbre binaire
+void afficher_arbre(Arbre a, int niveau) {
+    if (a == NULL) {
+        return;
+    }
+    afficher_arbre(a->droite, niveau + 1);
+    for (int i = 0; i < niveau; i++) {
+        printf("    ");
+    }
+    printf("%d\n", a->valeur);
+    afficher_arbre(a->gauche, niveau + 1);
+}
+
+// fonction pour allouer un nouveau noeud
+Noeud* nouveau_noeud(int valeur) {
+    Noeud* n = (Noeud*)malloc(sizeof(Noeud));
+    n->gauche = NULL;
+    n->droite = NULL;
+    n->valeur = valeur;
+    return n;
+}
 
 
 // PL:==
