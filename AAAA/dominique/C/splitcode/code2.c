@@ -41,6 +41,21 @@ Noeud* nouveau_noeud(int valeur) {
     return n;
 }
 
+int insertion(Arbre *a,int valeur) {
+    if (*a == NULL) {
+        *a = alloueNoeud(valeur);
+        return 1;
+    }
+    if (valeur == (*a)->valeur) {
+        return 0;
+    }
+    if (valeur < (*a)->valeur) {
+        return insertion(&(*a)->gauche,valeur);
+    }
+    return insertion(&(*a)->droite,valeur);
+ }
+
+
 // PL:==
 
 // PL:prototype==
