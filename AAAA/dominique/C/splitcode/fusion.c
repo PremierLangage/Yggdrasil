@@ -88,8 +88,8 @@ Arbre fusion(Arbre a1, Arbre a2) {
 
 // PL:code_after==
 int main() {
-    Arbre a;
-    Arbre b;
+    Arbre a = lireArbre();
+    Arbre b = lireArbre();
 
     return 0;
 }
