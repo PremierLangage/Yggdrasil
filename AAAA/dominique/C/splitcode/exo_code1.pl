@@ -30,12 +30,12 @@ tag=allocation|Ensembles
 
 editor.height=300px
 
-text==
-{{enonce + type(editor) }}
-==
+
 
 before==
 
+text += "\n" 
+text += type(editor)
 
 #editor.code==#|c|
 
