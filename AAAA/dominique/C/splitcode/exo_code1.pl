@@ -35,8 +35,9 @@ editor.height=300px
 before==
 
 text += "\n" 
-text += "exist" if 'editor' in globals() else "NON"
+# text += "exist" if 'editor' in globals() else "NON"
 text += str(type(editor))
+
 
 #editor.code==#|c|
 
