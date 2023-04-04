@@ -31,8 +31,7 @@ tag=allocation|Ensembles
 editor.height=300px
 
 text==
-{enonce}
-{ type(editor) }
+{{enonce + type(editor) }}
 ==
 
 before==
