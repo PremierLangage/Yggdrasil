@@ -9,7 +9,7 @@
 # default values for c =
 codefile=code.c
 CSTART=// PL:
-varlist=["codebefore","solution","codeafter"]
+varlist=["code_before","solution","code_after"]
 beforeH==
 #!/usr/bin/env python3
 import sys
