@@ -31,38 +31,14 @@ tag=allocation|Ensembles
 editor.height=300px
 
 text==
+{enonce}
 
-On représente un ensemble grace à un tableau dynamique non trié.   
-```
-
-    typedef struct {   
-
-        int taille;/* nombre d'éléments présents*/   
-    
-        int *tab;   
-    
-        int max;/* nombre maximum d'éléments */   
-    
-    } ENSEMBLE;    
-```
-
-
-Nous allons dans cet exercice gérer uniquement l'aspect réallocation. Nous suppons que la constante globale BLOC est définie. 
-
-Fournissez une fonction ENSEMBLE *alloueTabDyn(); qui alloue un tableau de taille BLOC. 
-
-Et une fonction int resize(ENSEMBLE *e); 
-
-si taille == max et réalloue le tableau avec BLOC d'élements en plus,
-
-si taille + 2*BLOC est plus petit que max réalloue le tableau avec BLOC éléments en moins.
-
-La fonction resize retourne 1 si une réallocation a eu lieux. 
 ==
 
-editor.code==#|c|
-ENSEMBLE *alloueTabDyn(){}
-int resize(ENSEMBLE *e){}
+before==
+editor['code']=prototype
+
+#editor.code==#|c|
 
 ==
 
