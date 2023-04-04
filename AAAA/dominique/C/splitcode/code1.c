@@ -1,5 +1,5 @@
 
-// PL:enonce==
+// PL:text==
 La fonction insertionTrie doit insérer un élément dans une liste en respectant l'ordre croissant des éléments.
 Si l'élément est déjà présent dans la liste, il n'est pas ajouté et la fonction retourne 0. Sinon, l'élément est ajouté et la fonction retourne 1.
 Le type utilisé pour les maillons est le suivant:
