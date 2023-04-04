@@ -35,7 +35,7 @@ editor.height=300px
 before==
 
 text += "\n" 
-text += type(editor)
+text += str(type(editor))
 
 #editor.code==#|c|
 
