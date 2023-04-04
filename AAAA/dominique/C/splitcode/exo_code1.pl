@@ -39,7 +39,7 @@ text += "\n"
 text += str(type(editor))
 
 
-#editor.code==#|c|
+editor.code = "Toto"
 
 ==
 
