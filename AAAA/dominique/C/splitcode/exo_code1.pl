@@ -32,7 +32,7 @@ editor.height=300px
 
 text==
 {enonce}
-{ type(editor}
+{ type(editor) }
 ==
 
 before==
