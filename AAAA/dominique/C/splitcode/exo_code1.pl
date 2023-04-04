@@ -32,11 +32,11 @@ editor.height=300px
 
 text==
 {enonce}
-
+{ type(editor}
 ==
 
 before==
-editor['code']=prototype
+
 
 #editor.code==#|c|
 
