@@ -38,7 +38,7 @@ with get_session(table_class = Response, base=Base) as session:
         session.commit()
     last_user_response = session.query(Response).order_by(Response.id.desc()).first().response
 
-
+del Base
 ==
 
 title==
