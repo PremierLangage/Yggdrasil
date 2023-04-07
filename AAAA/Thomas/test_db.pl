@@ -76,7 +76,7 @@ class Response(Base):
 
 
 if numEtudiant == 0:
-    feedback= ""
+    feedback= "Bande de moiules"
     with get_session(table_class = Response, base=Base) as session:
         for txt in session.query(Response).all():
             feedback += f"<p>{txt}</p>"
@@ -92,5 +92,5 @@ elif reponse.value and numEtudiant.value:
         session.commit()
     del Base
 else:
-    grade = (0, '<span class="error-state">Je ne peux pas valider ça problem numéro étudiant ou réponse 👎👎👎</span>')
+    grade = (0, '<span class="error-state">Je ne peux pas valider ça problem numéro étudiant ou réponse </span>')
 ==
