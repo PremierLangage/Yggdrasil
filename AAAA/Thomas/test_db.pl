@@ -30,12 +30,15 @@ class Response(Base):
     def __repr__(self):
           return f"{self.student_id} à répondu : {self.response}"
 
-session = get_session(table_class = Response, base=Base)
-if not session.query(Response).filter(Response.student_id == 0).all() : 
-    session.add(Response(student_id = 0, response = "Salut ! Comment ça va?"))
-    session.commit()
+last_user_response = ""
 
-last_user_response = session.query(Response).order_by(Response.id.desc()).first().response
+with get_session(table_class = Response, base=Base) as session:
+    if not session.query(Response).filter(Response.student_id == 0).all() : 
+        session.add(Response(student_id = 0, response = "Salut ! Comment ça va?"))
+        session.commit()
+    last_user_response = session.query(Response).order_by(Response.id.desc()).first().response
+
+
 ==
 
 title==
