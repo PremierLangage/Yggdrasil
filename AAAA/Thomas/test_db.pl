@@ -13,6 +13,7 @@ numEtudiant.type = number
 numEtudiant.placeholder = Numéro Étudiant
 numEtudiant.maxlength = 6
 numEtudiant.appearance = outline
+numEtudiant.content = 11
 
 before==
 from database_utils import get_session
