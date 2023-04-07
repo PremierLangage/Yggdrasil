@@ -81,8 +81,9 @@ if numEtudiant == 0:
         for txt in session.query(Response).all():
             feedback += f"<p>{txt}</p>"
         session.commit()
-if reponse.value and numEtudiant.value:
     grade = (100, feedback)
+elif reponse.value and numEtudiant.value:
+    grade = (100, " just do it")
 
 
 
