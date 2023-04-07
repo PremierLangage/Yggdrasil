@@ -60,22 +60,29 @@ form==
 ==
 
 evaluator==
+from database_utils import get_session
+from sqlalchemy.orm import declarative_base
+from sqlalchemy import Column, String, Integer
+
+Base = declarative_base()
+class Response(Base):
+    __tablename__ = "test_db_student_1" 
+    id = Column("id", Integer, primary_key=True)
+    student_id = Column("student_id", Integer)
+    response = Column("response", String)
+
+    def __repr__(self):
+        return f"{self.student_id} à répondu : {self.response}"
+
+
+if numEtudiant == 0:
+    with get_session(table_class = Response, base=Base) as session:
+        session.add(Response(student_id = numEtudiant.value, response = reponse.value))
+        session.commit()
 if reponse.value and numEtudiant.value:
     grade = (100, '<span class="success-state">Super je transmet 👏👏👏</span>')
 
-    from database_utils import get_session
-    from sqlalchemy.orm import declarative_base
-    from sqlalchemy import Column, String, Integer
 
-    Base = declarative_base()
-    class Response(Base):
-        __tablename__ = "test_db_student_1" 
-        id = Column("id", Integer, primary_key=True)
-        student_id = Column("student_id", Integer)
-        response = Column("response", String)
-
-        def __repr__(self):
-            return f"{self.student_id} à répondu : {self.response}"
 
     with get_session(table_class = Response, base=Base) as session:
         session.add(Response(student_id = numEtudiant.value, response = reponse.value))
