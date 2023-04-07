@@ -71,7 +71,7 @@ if reponse.value and numEtudiant.value:
         def __repr__(self):
             return f"{self.student_id} à répondu : {self.response}"
 
-    with get_session(table_class = Response) as session:
+    with get_session(table_class = Response, base=Base) as session:
         session.add(Response(student_id = numEtudiant.value, response = reponse.value))
         session.commit()
     del Base
