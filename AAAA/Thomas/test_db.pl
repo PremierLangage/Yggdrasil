@@ -19,7 +19,9 @@ from database_utils import get_session
 from sqlalchemy import Column, String, Integer
 from sqlalchemy.orm import declarative_base
 
-class Response(declarative_base()):
+Base = declarative_base()
+
+class Response(Base):
     __tablename__ = "test_db_student_1" 
     id = Column("id", Integer, primary_key=True)
     student_id = Column("student_id", Integer)
