@@ -43,12 +43,27 @@ Le dernier étudiant à dit : {{last_user_response}}
 ==
 
 form==
+{{ numEtudiant|component}}
 {{ reponse|component}}
 ==
 
 evaluator==
-if r == reponse.value:
-    grade = (100, '<span class="success-state">Good 👏👏👏</span>')
+if reponse.value and numEtudiant.value:
+    grade = (100, '<span class="success-state">Super je transmet 👏👏👏</span>')
+    from databas_utils import get_session
+    from sqlalchemy.orm import declarative_base
+
+    class Response(declarative_base()):
+        __tablename__ = "test_db_student_1" 
+        id = Column("id", Integer, primary_key=True)
+        student_id = Column("student_id", Integer)
+        response = Column("response", String)
+
+        def __repr__(self):
+            return f"{self.student_id} à répondu : {self.response}"
+
+    session.add(Response(student_id = numEtudiant.value, response = reponse.value))
+    session.commit()
 else:
-    grade = (0, '<span class="error-state">Bad answer 👎👎👎</span>')
+    grade = (0, '<span class="error-state">Je ne peux pas valider ça problem numéro étudiant ou réponse 👎👎👎</span>')
 ==
