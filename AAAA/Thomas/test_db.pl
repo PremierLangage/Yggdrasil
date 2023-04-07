@@ -15,7 +15,10 @@ numEtudiant.maxlength = 6
 numEtudiant.appearance = outline
 
 before==
-class Responses(Base):
+from databas_utils import get_session
+from sqlalchemy.orm import declarative_base
+
+class Response(declarative_base()):
     __tablename__ = "test_db_student_1" 
     id = Column("id", Integer, primary_key=True)
     student_id = Column("student_id", Integer)
@@ -24,21 +27,19 @@ class Responses(Base):
     def __repr__(self):
           return f"{self.student_id} à répondu : {self.response}"
 
+if not session.query(Response).filter(Response.student_id == 0).all() : 
+    session.add(Response(student_id = 0, response = "Salut ! Comment ça va?"))
+    session.commit()
 
-
-if session.query(Responses).filter(Responses.student_id == 0).all
-
-
-last_user_response = 
-
+last_user_response = session.query(Response).order_by(Response.id.desc()).first().response
 ==
 
 title==
-Input Component
+Test BDD sandbox
 ==
 
 text==
-Enter the result of ** {{ a }} + {{ b }} ** inside the input box.
+Le dernier étudiant à dit : {{last_user_response}}
 ==
 
 form==
