@@ -75,7 +75,7 @@ class Response(Base):
         return f"{self.student_id} à répondu : {self.response}"
 
 
-if numEtudiant == 0:
+if numEtudiant.value == 0:
     feedback= "Bande de moiules"
     with get_session(table_class = Response, base=Base) as session:
         for txt in session.query(Response).all():
