@@ -30,7 +30,7 @@ class Response(Base):
     def __repr__(self):
           return f"{self.student_id} à répondu : {self.response}"
 
-session = get_session(table_class = Response)
+session = get_session(table_class = Response, Base)
 if not session.query(Response).filter(Response.student_id == 0).all() : 
     session.add(Response(student_id = 0, response = "Salut ! Comment ça va?"))
     session.commit()
