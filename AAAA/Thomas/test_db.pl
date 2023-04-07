@@ -32,8 +32,8 @@ class Response(Base):
 
 last_user_response = ""
 db_url = "activities-db"
-db_name = "activity_db",
-db_user = "activity_user",
+db_name = "activity_db"
+db_user = "activity_user"
 db_password = "Dimz80k7X97!"
 
 with get_session(table_class= Response, base=Base, db_url = db_url  , db_name =db_name , db_user =db_user, db_password =  db_password ) as session:
