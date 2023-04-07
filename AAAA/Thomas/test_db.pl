@@ -16,6 +16,7 @@ numEtudiant.appearance = outline
 
 before==
 from database_utils import get_session
+from sqlalchemy import Column, String, Integer
 from sqlalchemy.orm import declarative_base
 
 class Response(declarative_base()):
@@ -50,9 +51,10 @@ form==
 evaluator==
 if reponse.value and numEtudiant.value:
     grade = (100, '<span class="success-state">Super je transmet 👏👏👏</span>')
-    
+
     from database_utils import get_session
     from sqlalchemy.orm import declarative_base
+    from sqlalchemy import Column, String, Integer
 
     class Response(declarative_base()):
         __tablename__ = "test_db_student_1" 
