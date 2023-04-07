@@ -62,7 +62,8 @@ if reponse.value and numEtudiant.value:
     from sqlalchemy.orm import declarative_base
     from sqlalchemy import Column, String, Integer
 
-    class Response(declarative_base()):
+    Base = declarative_base()
+    class Response(Base):
         __tablename__ = "test_db_student_1" 
         id = Column("id", Integer, primary_key=True)
         student_id = Column("student_id", Integer)
