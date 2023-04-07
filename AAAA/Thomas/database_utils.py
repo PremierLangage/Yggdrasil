@@ -6,17 +6,3 @@ def get_session(table_class, db_url = "activities-db", db_name = "activity_db", 
     if not engine.dialect.has_table(engine, table_class.__tablename__):
         declarative_base().metadata.create_all(engine)
     return sessionmaker(bind=engine)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
