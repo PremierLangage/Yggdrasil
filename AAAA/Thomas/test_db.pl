@@ -74,6 +74,7 @@ if reponse.value and numEtudiant.value:
     with get_session(table_class = Response) as session:
         session.add(Response(student_id = numEtudiant.value, response = reponse.value))
         session.commit()
+    del Base
 else:
     grade = (0, '<span class="error-state">Je ne peux pas valider ça problem numéro étudiant ou réponse 👎👎👎</span>')
 ==
