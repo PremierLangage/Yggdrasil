@@ -76,11 +76,13 @@ class Response(Base):
 
 
 if numEtudiant == 0:
+    feedback= ""
     with get_session(table_class = Response, base=Base) as session:
-        session.add(Response(student_id = numEtudiant.value, response = reponse.value))
+        for txt in session.query(Response).all():
+            feedback += f"<p>{txt}</p>"
         session.commit()
 if reponse.value and numEtudiant.value:
-    grade = (100, '<span class="success-state">Super je transmet 👏👏👏</span>')
+    grade = (100, feedback)
 
 
 
