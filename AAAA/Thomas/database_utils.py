@@ -5,4 +5,4 @@ def get_session(table_class, db_url = "activities-db", db_name = "activity_db", 
     engine = create_engine(f"postgresql://{db_user}:{db_password}@{db_url}/{db_name}")
     if not inspect(engine).has_table(table_class.__tablename__):
         declarative_base().metadata.create_all(engine)
-    return sessionmaker(bind=engine)
+    return sessionmaker(bind=engine)()
