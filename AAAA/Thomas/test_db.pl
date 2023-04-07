@@ -2,7 +2,7 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-@databas_utils.py 
+@database_utils.py 
 
 reponse =: Input
 reponse.placeholder = Ta réponse
@@ -15,7 +15,7 @@ numEtudiant.maxlength = 6
 numEtudiant.appearance = outline
 
 before==
-from databas_utils import get_session
+from database_utils import get_session
 from sqlalchemy.orm import declarative_base
 
 class Response(declarative_base()):
@@ -50,7 +50,8 @@ form==
 evaluator==
 if reponse.value and numEtudiant.value:
     grade = (100, '<span class="success-state">Super je transmet 👏👏👏</span>')
-    from databas_utils import get_session
+    
+    from database_utils import get_session
     from sqlalchemy.orm import declarative_base
 
     class Response(declarative_base()):
