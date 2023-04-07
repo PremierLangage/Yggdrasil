@@ -36,9 +36,6 @@ db_name = "activity_db",
 db_user = "activity_user",
 db_password = "Dimz80k7X97!"
 
-
-(table_class= Response, base=Base, db_url , db_name , db_user, db_password )
-
 with get_session(table_class= Response, base=Base, db_url , db_name , db_user, db_password ) as session:
     if not session.query(Response).filter(Response.student_id == 0).all() : 
         session.add(Response(student_id = 0, response = "Salut ! Comment ça va?"))
