@@ -43,6 +43,9 @@ with get_session(table_class= Response, base=Base, db_url = db_url  , db_name =d
         session.commit()
     last_user_response = session.query(Response).order_by(Response.id.desc()).first().response
 
+
+numEtudiant.value = user__id
+
 del session
 del Base
 ==
