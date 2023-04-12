@@ -9,18 +9,8 @@ reponse.placeholder = Ta réponse
 reponse.appearance = outline
 
 before==
-from database_utils import get_session, Base
+from database_utils import get_session, Base, Response
 from sqlalchemy import Column, String, Integer
-
-class Response(Base):
-    base = Base
-    __tablename__ = "test_db_student_1" 
-    id = Column("id", Integer, primary_key=True)
-    student_id = Column("student_id", Integer)
-    response = Column("response", String)
-
-    def __repr__(self):
-          return f"{self.student_id} à répondu : {self.response}"
 
 blabla = f"Le numéro de l'activité est : {activity__id}\n\n" 
 blabla += f"Vous êtes connecté votre numéro d'utillisateur est : {user__id}" if user__id else f"Vous êtes anonyme, votre numéro de session est : {session__id}"
@@ -56,17 +46,8 @@ form==
 ==
 
 evaluator==
-from database_utils import get_session, Base
+from database_utils import get_session, Base, Response
 from sqlalchemy import Column, String, Integer
-
-class Response(Base):
-    __tablename__ = "test_db_student_1" 
-    id = Column("id", Integer, primary_key=True)
-    student_id = Column("student_id", Integer)
-    response = Column("response", String)
-
-    def __repr__(self):
-        return f"{self.student_id} à répondu : {self.response}"
 
 if reponse.value.lower() == "je veux tout voir!":
     feedback = ""
