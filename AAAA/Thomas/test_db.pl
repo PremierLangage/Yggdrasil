@@ -8,13 +8,6 @@ reponse =: Input
 reponse.placeholder = Ta réponse
 reponse.appearance = outline
 
-numEtudiant =: Input
-numEtudiant.type = number
-numEtudiant.placeholder = Numéro Étudiant
-numEtudiant.maxlength = 6
-numEtudiant.appearance = outline
-numEtudiant.value = 11
-
 before==
 from database_utils import get_session
 from sqlalchemy import Column, String, Integer
@@ -31,7 +24,7 @@ class Response(Base):
     def __repr__(self):
           return f"{self.student_id} à répondu : {self.response}"
 
-blabla = f"Le numéro de l'activité est : {activity__id}\n" 
+blabla = f"Le numéro de l'activité est : {activity__id}\n\n" 
 blabla += f"Vous êtes connecté votre numéro d'utillisateur est : {user__id}" if user__id else f"Vous êtes anonyme, votre numéro de session est : {session__id}"
 
 last_user_response = ""
@@ -56,7 +49,8 @@ Test BDD sandbox
 
 text==
 {{blabla}}
-
+</br>
+</br>
 Le dernier étudiant à dit : {{last_user_response}}
 ==
 
@@ -81,6 +75,7 @@ class Response(Base):
 
 
 if reponse.value.lower() == "je veux tout voir!":
+    feedback = ""
     with get_session(table_class = Response, base=Base) as session:
         for txt in session.query(Response).all():
             feedback += f"<p>{txt}</p>"
@@ -89,7 +84,7 @@ if reponse.value.lower() == "je veux tout voir!":
 elif reponse.value:
     grade = (100, " just do it")
     with get_session(table_class = Response, base=Base) as session:
-        session.add(Response(student_id = numEtudiant.value, response = reponse.value))
+        session.add(Response(student_id = user__id if user__id else session__id, response = reponse.value))
         session.commit()
     del Base
 else:
