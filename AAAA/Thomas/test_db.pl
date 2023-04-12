@@ -31,6 +31,8 @@ class Response(Base):
     def __repr__(self):
           return f"{self.student_id} à répondu : {self.response}"
 
+blabla = "Vous êtes connecté votre numéro d'utillisateur est : {user__id}" if user__id else f"Vous êtes anonyme, votre numéro de session est : {session__id}"
+
 last_user_response = ""
 db_url = "activities-db"
 db_name = "activity_db"
@@ -43,7 +45,6 @@ with get_session(table_class= Response, base=Base, db_url = db_url  , db_name =d
         session.commit()
     last_user_response = session.query(Response).order_by(Response.id.desc()).first().response
 
-
 numEtudiant.value = user__id
 
 del session
@@ -55,6 +56,7 @@ Test BDD sandbox
 ==
 
 text==
+
 Le dernier étudiant à dit : {{last_user_response}}
 ==
 
