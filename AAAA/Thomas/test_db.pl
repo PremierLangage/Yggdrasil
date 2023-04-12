@@ -63,6 +63,7 @@ from database_utils import get_session
 from sqlalchemy.orm import declarative_base
 from sqlalchemy import Column, String, Integer
 
+"""
 Base = declarative_base()
 class Response(Base):
     __tablename__ = "test_db_student_1" 
@@ -72,7 +73,7 @@ class Response(Base):
 
     def __repr__(self):
         return f"{self.student_id} à répondu : {self.response}"
-
+"""
 
 if reponse.value.lower() == "je veux tout voir!":
     feedback = ""
