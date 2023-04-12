@@ -56,6 +56,7 @@ Test BDD sandbox
 ==
 
 text==
+{{blabla}}
 
 Le dernier étudiant à dit : {{last_user_response}}
 ==
