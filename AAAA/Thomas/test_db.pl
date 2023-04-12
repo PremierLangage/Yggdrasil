@@ -9,11 +9,8 @@ reponse.placeholder = Ta réponse
 reponse.appearance = outline
 
 before==
-from database_utils import get_session
+from database_utils import get_session, Base
 from sqlalchemy import Column, String, Integer
-from sqlalchemy.orm import declarative_base
-
-Base = declarative_base()
 
 class Response(Base):
     base = Base
