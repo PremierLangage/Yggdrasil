@@ -31,7 +31,8 @@ class Response(Base):
     def __repr__(self):
           return f"{self.student_id} à répondu : {self.response}"
 
-blabla = "Vous êtes connecté votre numéro d'utillisateur est : {user__id}" if user__id else f"Vous êtes anonyme, votre numéro de session est : {session__id}"
+blabla = f"Le numéro de l'activité est : {activity__id}\n" 
+blabla += f"Vous êtes connecté votre numéro d'utillisateur est : {user__id}" if user__id else f"Vous êtes anonyme, votre numéro de session est : {session__id}"
 
 last_user_response = ""
 db_url = "activities-db"
@@ -44,8 +45,6 @@ with get_session(table_class= Response, base=Base, db_url = db_url  , db_name =d
         session.add(Response(student_id = 0, response = "Salut ! Comment ça va?"))
         session.commit()
     last_user_response = session.query(Response).order_by(Response.id.desc()).first().response
-
-numEtudiant.value = user__id
 
 del session
 del Base
@@ -62,7 +61,6 @@ Le dernier étudiant à dit : {{last_user_response}}
 ==
 
 form==
-{{ numEtudiant|component}}
 {{ reponse|component}}
 ==
 
@@ -82,18 +80,14 @@ class Response(Base):
         return f"{self.student_id} à répondu : {self.response}"
 
 
-if numEtudiant.value == 0:
-    feedback= "Bande de moiules"
+if reponse.value.lower() == "je veux tout voir!":
     with get_session(table_class = Response, base=Base) as session:
         for txt in session.query(Response).all():
             feedback += f"<p>{txt}</p>"
         session.commit()
     grade = (100, feedback)
-elif reponse.value and numEtudiant.value:
+elif reponse.value:
     grade = (100, " just do it")
-
-
-
     with get_session(table_class = Response, base=Base) as session:
         session.add(Response(student_id = numEtudiant.value, response = reponse.value))
         session.commit()
