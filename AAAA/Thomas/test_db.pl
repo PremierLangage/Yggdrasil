@@ -58,10 +58,11 @@ form==
 {{ reponse|component}}
 ==
 
-evaluator==python
+evaluator==
 from database_utils import get_session
 from sqlalchemy.orm import declarative_base
 from sqlalchemy import Column, String, Integer
+from builder import Response
 
 """
 Base = declarative_base()
