@@ -57,12 +57,9 @@ form==
 ==
 
 evaluator==
-from database_utils import get_session
-from sqlalchemy.orm import declarative_base
+from database_utils import get_session, Base
 from sqlalchemy import Column, String, Integer
-import builder 
 
-"""
 Base = declarative_base()
 class Response(Base):
     __tablename__ = "test_db_student_1" 
@@ -72,11 +69,10 @@ class Response(Base):
 
     def __repr__(self):
         return f"{self.student_id} à répondu : {self.response}"
-"""
 
 if reponse.value.lower() == "je veux tout voir!":
     feedback = ""
-    with get_session(table_class = Response, base=Response.base) as session:
+    with get_session(table_class = Response, base=Base) as session:
         for txt in session.query(Response).all():
             feedback += f"<p>{txt}</p>"
         session.commit()
