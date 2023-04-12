@@ -60,7 +60,6 @@ evaluator==
 from database_utils import get_session, Base
 from sqlalchemy import Column, String, Integer
 
-Base = declarative_base()
 class Response(Base):
     __tablename__ = "test_db_student_1" 
     id = Column("id", Integer, primary_key=True)
