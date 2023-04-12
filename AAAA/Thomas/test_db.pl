@@ -16,11 +16,11 @@ from sqlalchemy.orm import declarative_base
 Base = declarative_base()
 
 class Response(Base):
+    base = Base
     __tablename__ = "test_db_student_1" 
     id = Column("id", Integer, primary_key=True)
     student_id = Column("student_id", Integer)
     response = Column("response", String)
-    base = Base
 
     def __repr__(self):
           return f"{self.student_id} à répondu : {self.response}"
@@ -79,7 +79,7 @@ class Response(Base):
 
 if reponse.value.lower() == "je veux tout voir!":
     feedback = ""
-    with get_session(table_class = Response, base=Base) as session:
+    with get_session(table_class = Response, base=Response.base) as session:
         for txt in session.query(Response).all():
             feedback += f"<p>{txt}</p>"
         session.commit()
