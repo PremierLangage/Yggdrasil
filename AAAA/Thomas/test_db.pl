@@ -20,6 +20,7 @@ class Response(Base):
     id = Column("id", Integer, primary_key=True)
     student_id = Column("student_id", Integer)
     response = Column("response", String)
+    base = Base
 
     def __repr__(self):
           return f"{self.student_id} à répondu : {self.response}"
