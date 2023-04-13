@@ -10,7 +10,6 @@ reponse.appearance = outline
 
 before==#|py|
 from database_utils import get_session, Base, Response
-from sqlalchemy import Column, String, Integer
 
 blabla = f"Le numéro de l'activité est : {activity__id}\n\n" 
 blabla += f"Vous êtes connecté votre numéro d'utillisateur est : {user__id}" if user__id else f"Vous êtes anonyme, votre numéro de session est : {session__id}"
