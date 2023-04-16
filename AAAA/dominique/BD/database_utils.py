@@ -28,6 +28,7 @@ class Evalution(Base):
     base=Base
     __tablename__ = "eval_response"
     id=  Column("id", Integer, primary_key=True)
+    reponse_id = mapped_column(ForeignKey("response.id"))
     evaluation =  Column("ealuation", String)
     student_id = Column("corrector_id", Integer)
     response: Mapped["response"] = relationship(back_populates="evals")
