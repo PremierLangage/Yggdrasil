@@ -6,7 +6,7 @@ builder =@ /builder/bbefore.py
 text = 
 before==
 
-import sqlachemy
+import sqlalchemy
 version = sqlalchemy.__version__
 
 text = f"Version de sqlachemy:{sqlalchemy.__version__}"
