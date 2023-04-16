@@ -3,6 +3,9 @@ from sqlalchemy import create_engine, ForeignKey, inspect
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import declarative_base
 from sqlalchemy import Column, String, Integer
+from sqlalchemy.orm import Mapped
+from sqlalchemy.orm import mapped_column
+from sqlalchemy.orm import relationship
 
 Base = declarative_base()
 
