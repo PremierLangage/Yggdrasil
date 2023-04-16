@@ -21,3 +21,11 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
     if not inspect(engine).has_table(table_class.__tablename__):
         base.metadata.create_all(engine)
     return sessionmaker(bind=engine)()
+
+class Evalution(Base):
+    base=Base
+    __tablename__ = "eval_response"
+    id=  Column("id", Integer, primary_key=True)
+    evaluation =  Column("ealuation", String)
+    student_id = Column("corrector_id", Integer)
+    
