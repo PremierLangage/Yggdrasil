@@ -9,9 +9,11 @@ Base = declarative_base()
 class Response(Base):
     base = Base
     __tablename__ = "test_db_student_1" 
-    id = Column("id", Integer, primary_key=True)
+    id:Mapped[int] =  mapped_column(primary_key=True)
+    # Column("id", Integer, primary_key=True)
     student_id = Column("student_id", Integer)
     response = Column("response", String)
+    evals: Mapped[List["Evaluation"]] = relationship(back_populates="response")
 
     def __repr__(self):
           return f"{self.student_id} à répondu : {self.response}"
@@ -28,4 +30,4 @@ class Evalution(Base):
     id=  Column("id", Integer, primary_key=True)
     evaluation =  Column("ealuation", String)
     student_id = Column("corrector_id", Integer)
-    
+    response: Mapped["response"] = relationship(back_populates="evals")
