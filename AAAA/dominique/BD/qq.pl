@@ -3,7 +3,7 @@
 
 title= introspection BD 
 builder =@ /builder/bbefore.py
-
+text = 
 before==
 
 import sqlachemy
