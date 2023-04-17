@@ -1,7 +1,9 @@
 
+extends = /AAAA/Thomas/template/pltest.pl
 
+author = Thomas SAILLARD
 
-extends=/AAAA/Thomas/template/pltest.pl
+title = Exercice python sur les listes (test pour intéraction avec la base de données)
 
 
 
