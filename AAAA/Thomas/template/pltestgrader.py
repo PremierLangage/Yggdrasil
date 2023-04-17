@@ -106,4 +106,4 @@ if __name__ == "__main__":
 
 
 
-    output(a,outstr + "\n\n\n PROUT : " + a)
+    output(a,outstr + "\n\n\n PROUT : " + str(a))
