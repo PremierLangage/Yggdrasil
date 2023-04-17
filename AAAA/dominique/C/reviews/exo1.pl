@@ -1,6 +1,6 @@
 
 @ /utils/sandboxio.py
-
+@ /AAAA/dominique/utils/drutils.py 
 title=
 text=
 form=
@@ -9,15 +9,11 @@ builder=@ /builder/bbefore.py
 grader=
 
 before==
+from drutils import raiseifabsent
 
-if not 'texts' in globals():
-    print("Ce model necessite une liste de textes de description de chaque critères.")
-    print(" '**Critére 1** : Description du critère 1' ")
-    raise Exception("missing parameter")
+raiseifabsent('texts', ' Liste de critères ')
 texts = first + texts
+raiseifabsent('formfills','liste de choix des différents critères ')
 
-if not 'formsfill' in globals():
-    print("Ce model necessite une liste de textes de description de chaque critères.")
-    print(" '**Critére 1** : Description du critère 1' ")
-    exit(1)
+
 ==
