@@ -1,4 +1,5 @@
 
+#import pour intéractions avec bdd
 @database_utils.py
 
 extends = /AAAA/Thomas/template/pltest.pl
