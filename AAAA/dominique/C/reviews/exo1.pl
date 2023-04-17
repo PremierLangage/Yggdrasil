@@ -13,6 +13,13 @@ grader=
 
 formfills=[["raté","correct","bien","très bien"],["echec","passable","bien","très bien"]]
 
+firstform ==
+<table style="border-spacing: 30px; border-collapse: separate;">
+<tr><td>Votre <b>nom</b> (en tant que relecteur) </td><td> <input type=text id="form_nom" /> </td></tr>
+<tr><td>Nom de l\'<b>auteur</b> de la production </td><td> <input type=text id="form_author" /> </td></tr>
+<tr><td>Nom du code ou <b>projet</b> relu </td><td> <input type=text id="form_code" /> </td></tr>
+</table>
+===
 
 first==
 ## **Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review de code en langage C.**
