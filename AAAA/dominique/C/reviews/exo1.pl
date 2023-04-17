@@ -5,7 +5,7 @@ title=
 text=
 form=
 
-builder= @/builder/bbfore.py
+builder=@ /builder/bbfore.py
 grader=
 
 before==
