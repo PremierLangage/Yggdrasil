@@ -2,7 +2,7 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/bbefore.py
 
-@database_utils.py 
+@database_utils.py
 
 editor =: CodeEditor
 editor.code ==#|py|
@@ -61,14 +61,35 @@ from sqlalchemy import Column, String, Integer
 
 ##### TEST CODE ETUDIANT ######
 
-for i in range(10): 
+from typing import List
+from random import sample
 
+def solution(l : List[int]) -> int : 
+    return sum(i for i in l if i > 0)
 
+note = 100
 
+try: 
+    exec(editor.code)
+    for i in range(10):
+        randomList = sample(range(-500, 500), 100)
+        if solution(randomList) != sum_of_positive(randomList):
+            note -= 10
+except SyntaxError:
+    grade = (0, "Ton code contient une erreur de syntax :(")
+except : 
+    grade = (0, "Ton code à levé une exception ://")
+finally:
+    if note == 100:
+        grade = (note, "Bravo ! Tu peux passer aux corrections")
 
+    with get_session(table_class = Response, base=Base) as session:
+        session.add(Response(student_id = user__id if user__id else session__id, response = editor.code))
+        session.commit()
+    else:
+        grade = (note, "Mince il semble que ton code compile mais ne donne pas le résultat attendu ! Réessaye") 
 
-
-
+"""
 if reponse.value.lower() == "je veux tout voir!":
     feedback = ""
     with get_session(table_class = Response, base=Base) as session:
@@ -84,4 +105,5 @@ elif reponse.value:
     del Base
 else:
     grade = (0, '<span class="error-state">Ton code ne donne pas la réponse attendue, reessaye !</span>')
+"""
 ==
