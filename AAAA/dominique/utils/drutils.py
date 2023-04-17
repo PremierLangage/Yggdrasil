@@ -5,7 +5,8 @@ def raiseifabsent(name, comment=" variable obligatoire"):
         raise Exception(" Missing variable :"+name+comment)
 
 
-def buildform(formfill):
+def additems(group, listitem):
+    
 
 
     
