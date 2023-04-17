@@ -9,7 +9,7 @@ builder=@ /builder/bbefore.py
 grader=
 
 
-texts=["critère1", "The other criture"]
+
 
 formfills=[["raté","correct","bien","très bien"],["echec","passable","bien","très bien"]]
 
@@ -26,7 +26,7 @@ Prennez votre temps pour valider pas à pas votre rapport mais ATTENTION n'actua
 
 before==
 from drutils import raiseifabsent, additems
-
+texts=["critère1", "The other criture"]
 raiseifabsent('texts', ' Liste de critères ')
 texts = first + texts
 raiseifabsent('formfills','liste de choix des différents critères ')
