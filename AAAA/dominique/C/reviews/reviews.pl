@@ -33,6 +33,10 @@ ceci est le code
 
 before==#|python|
 
+if "code" not in globals():
+    code = "Merdre"
+
+
 # step index 
 step = 0
 
