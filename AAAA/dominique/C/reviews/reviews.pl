@@ -98,6 +98,7 @@ forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
        '<tr><td>Votre <b>nom</b> (en tant que relecteur) </td><td> <input type=text id="form_nom" /> </td></tr>'
        '<tr><td>Nom de l\'<b>auteur</b> de la production </td><td> <input type=text id="form_author" /> </td></tr>'
        '<tr><td>Nom du code ou <b>projet</b> relu </td><td> <input type=text id="form_code" /> </td></tr>'
+       '<tr><td>Nom du cours ou <b>projet</b> relu </td><td> <input type=text id="form_cours" /> </td></tr>'
        '</table>',
        ' {{ group|component }} \n<br />\n'
        ' Précisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> '
