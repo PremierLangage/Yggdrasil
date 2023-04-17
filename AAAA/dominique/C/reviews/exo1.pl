@@ -42,6 +42,10 @@ texts = [first] + texts
 raiseifabsent('formfills','liste de choix des différents critères ', globals())
 forms = [firstform] + formfills
 
+step=0
+text=texts[step]
+from=forms[step]
+
 ==
 
 
