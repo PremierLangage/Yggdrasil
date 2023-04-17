@@ -37,7 +37,7 @@ before==#|python|
 step = 0
 
 # Les énoncés
-texts=['Bande de moules",
+texts=['Bande de moules',
 
         "## **Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review "
        "de code en langage C.**\n<br />\n"
