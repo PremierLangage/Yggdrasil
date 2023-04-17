@@ -3,7 +3,7 @@
 
 def raiseifabsent(name, comment=" variable obligatoire"):
     if not name in globals():
-        raise Exception(" Missing variable :"+name+comment+"\n"+globals())
+        raise Exception(" Missing variable :"+name+comment+"\n"+str(globals())
 
 
 def additems(group, listitem, step):
