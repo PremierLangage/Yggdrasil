@@ -1,4 +1,10 @@
 
+
+
+title=
+text=
+form=
+
 builder= @ /builder/bbfore.py
 
 
