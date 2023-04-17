@@ -52,8 +52,9 @@ form=forms[step]
 
 evaluator==
 
-grade=(1,"")
+grade=(1,"bande de moules")
 ==
+
 fifi==
 if step==0:
     report = "# Rapport de relecture de code\n\n"
