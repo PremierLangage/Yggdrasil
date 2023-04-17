@@ -11,7 +11,6 @@ grader=
 
 
 
-formfills=[["raté","correct","bien","très bien"],["echec","passable","bien","très bien"]]
 
 firstform==
 <table style="border-spacing: 30px; border-collapse: separate;">
@@ -33,6 +32,8 @@ Prennez votre temps pour valider pas à pas votre rapport mais ATTENTION n'actua
 
 before==
 from drutils import raiseifabsent, additems
+
+formfills=[["raté","correct","bien","très bien"],["echec","passable","bien","très bien"]]
 
 texts=["critère1", "The other criture"]
 raiseifabsent('texts', ' Liste de critères ', globals())
