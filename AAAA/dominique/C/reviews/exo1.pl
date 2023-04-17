@@ -33,8 +33,8 @@ forms = firstform + buildform(formfills)
 evaluator==
 
 if step==0:
-        report += "# Rapport de relecture de code\n\n"
-    report_html += "<h1>Rapport de relecture de code</h1><br />"
+    report = "# Rapport de relecture de code\n\n"
+    report_html = "<h1>Rapport de relecture de code</h1><br />"
     if len(response['code']) > 0:
         report += "Production soumise à la relecture : **"+response['code']+"**\n"
         report_html += "Production soumise à la relecture : <b>"+response['code']+"</b><br />"
