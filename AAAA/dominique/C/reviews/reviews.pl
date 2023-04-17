@@ -26,10 +26,6 @@ tag=review|code|relecture|validation|correction|évaluation|pairs
 
 group =: RadioGroup
 
-code==
-ceci est le code 
-
-==
 
 before==#|python|
 
@@ -38,9 +34,7 @@ before==#|python|
 step = 0
 
 # Les énoncés
-texts=['Bande de moules',
-
-        "## **Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review "
+texts=["## **Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review "
        "de code en langage C.**\n<br />\n"
        "Commencez par vous présenter, précisez l'auteur du code reviewé ainsi qu'une description pour "
        "la production évaluée. Prennez votre temps pour valider pas à pas votre rapport mais "
@@ -100,8 +94,7 @@ texts=['Bande de moules',
        "<b>Les sources des programmes et productions sont elles correctement commentées ?</b>",
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
 
-forms=['Valider pour démarrer',
-       '<table style="border-spacing: 30px; border-collapse: separate;">'
+forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
        '<tr><td>Votre <b>nom</b> (en tant que relecteur) </td><td> <input type=text id="form_nom" /> </td></tr>'
        '<tr><td>Nom de l\'<b>auteur</b> de la production </td><td> <input type=text id="form_author" /> </td></tr>'
        '<tr><td>Nom du code ou <b>projet</b> relu </td><td> <input type=text id="form_code" /> </td></tr>'
@@ -145,9 +138,6 @@ mois=["janvier", "février", "mars", "avril",
       "mai", "juin", "juillet", "août", 
       "septembre", "octobre", "novembre", "décembre"]
 
-
-if "code" not in globals():
-    code = "Merdre"
 
 
 
