@@ -18,11 +18,15 @@ def sum_of_positive(l : List[int]) -> int :
 ==
 
 pltest==
->>> f == f # La fonction existe  ?
+>>> sum_of_positive == sum_of_positive # La fonction existe ?
 True
->>> f() # f retourne ou affiche  42
-42
->>> f() == 42 # retourne 42 
+>>> sum_of_positive([]) == 0 # La fonction renvoie 0 si on lui passe une liste vide
+True
+>>> sum_of_positive([-1, -67, -998]) == 0 # La fonction renvoie 0 si on lui passe des entiers négatifs
+True
+>>> from random import sample
+>>> l = sample(range(-1000, 1000), 200)
+>>> sum_of_positive(l) == sum(i for i in l if i > 0)
 True
 ==
 
