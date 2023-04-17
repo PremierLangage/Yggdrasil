@@ -76,7 +76,9 @@ if step==0:
     report_html += "<br /><br />"
 
 step +=1
+==
 
+off==
 if step <len(texts):
     report += "## {titlerecrit[step]} \n\n"
     report_html += "<b>Concision et propreté des rendus</b><br />"
@@ -94,4 +96,5 @@ if step <len(texts):
        '<textarea id="form_comcrit{step}" rows="6" cols="80" ></textarea>'''
     group= additems(group,formfills[step], step)
     grade=(-1,"")
+
 ==
