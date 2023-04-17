@@ -26,6 +26,11 @@ tag=review|code|relecture|validation|correction|évaluation|pairs
 
 group =: RadioGroup
 
+code==
+ceci est le code 
+
+==
+
 before==#|python|
 
 # step index 
@@ -124,7 +129,8 @@ forms=['<table style="border-spacing: 30px; border-collapse: separate;">'
 report=""
 report_html=""
 
-text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
+#text='<b><span style="color: darkred;">Étape '+str(step+1)+'/9</span></b><br/><br />\n\n'+texts[step]
+
 form=forms[step]
 ==
 
