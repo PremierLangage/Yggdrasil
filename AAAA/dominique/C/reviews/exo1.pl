@@ -9,6 +9,11 @@ builder=@ /builder/bbefore.py
 grader=
 
 
+texts=["critère1", "The other criture"]
+
+formfill=[["raté","correct","bien","très bien"],["echec","passable","bien","très bien"]]
+
+
 first==
 ## **Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review de code en langage C.**
 <br />
