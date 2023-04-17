@@ -28,9 +28,9 @@ before==
 from drutils import raiseifabsent, additems
 texts=["critère1", "The other criture"]
 raiseifabsent('texts', ' Liste de critères ', globals())
-texts = first + texts
+texts = [first] + texts
 raiseifabsent('formfills','liste de choix des différents critères ', globals())
-forms = firstform + formfills
+forms = [firstform] + formfills
 
 ==
 
