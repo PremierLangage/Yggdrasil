@@ -6,7 +6,7 @@ text=
 form=
 
 builder=@ /builder/bbefore.py
-grader=
+grader=@/grader/evaluator.py
 
 
 
