@@ -1,9 +1,9 @@
 
 
 
-def raiseifabsent(name, comment=" variable obligatoire"):
-    if not name in globals():
-        raise Exception(" Missing variable :"+name+comment+"\n"+str(globals()))
+def raiseifabsent(name, comment=" variable obligatoire",dic):
+    if not name in dic:
+        raise Exception(" Missing variable :"+name+comment+"\n"+str(dic))
 
 
 def additems(group, listitem, step):
