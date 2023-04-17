@@ -36,6 +36,7 @@ from drutils import raiseifabsent, additems
 formfills=[["raté","correct","bien","très bien"],["echec","passable","bien","très bien"]]
 
 texts=["critère1", "The other criture"]
+titlecrit=["intro","Crit1","crit2"]
 raiseifabsent('texts', ' Liste de critères ', globals())
 texts = [first] + texts
 
@@ -77,7 +78,7 @@ if step==0:
 step +=1
 
 if step <len(texts):
-    report += "## {titlrecrit[step]} \n\n"
+    report += "## {titlerecrit[step]} \n\n"
     report_html += "<b>Concision et propreté des rendus</b><br />"
     S = group.selection
     for item in group.items:
