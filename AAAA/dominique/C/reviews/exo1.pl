@@ -44,7 +44,7 @@ forms = [firstform] + formfills
 
 step=0
 text=texts[step]
-from=forms[step]
+form=forms[step]
 
 ==
 
