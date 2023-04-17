@@ -34,9 +34,8 @@ Prennez votre temps pour valider pas à pas votre rapport mais ATTENTION n'actua
 before==
 from drutils import raiseifabsent, additems
 
-
-raiseifabsent('texts', ' Liste de critères ', globals())
 texts=["critère1", "The other criture"]
+raiseifabsent('texts', ' Liste de critères ', globals())
 texts = [first] + texts
 
 raiseifabsent('formfills','liste de choix des différents critères ', globals())
