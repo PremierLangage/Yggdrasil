@@ -1,7 +1,7 @@
 
 
 
-def raiseifabsent(name, comment=" variable obligatoire",dic):
+def raiseifabsent(name, comment,dic):
     if not name in dic:
         raise Exception(" Missing variable :"+name+comment+"\n"+str(dic))
 
