@@ -52,7 +52,7 @@ form=forms[step]
 
 evaluator==
 
-garde=(1,"")
+grade=(1,"")
 ==
 fifi==
 if step==0:
