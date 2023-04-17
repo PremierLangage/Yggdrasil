@@ -25,7 +25,7 @@ Prennez votre temps pour valider pas à pas votre rapport mais ATTENTION n'actua
 
 
 before==
-from drutils import raiseifabsent, buildform
+from drutils import raiseifabsent, additems
 
 raiseifabsent('texts', ' Liste de critères ')
 texts = first + texts
