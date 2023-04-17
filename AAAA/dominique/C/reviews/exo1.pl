@@ -16,8 +16,11 @@ Commencez par vous présenter, précisez l'auteur du code reviewé ainsi qu'une 
 
 Prennez votre temps pour valider pas à pas votre rapport mais ATTENTION n'actualiser la page à aucun moment, vous perdriez votre début de rapport et cela réinitialiserait le générateur à la première étape.
 ==
+
+
+
 before==
-from drutils import raiseifabsent
+from drutils import raiseifabsent, buildform
 
 raiseifabsent('texts', ' Liste de critères ')
 texts = first + texts
