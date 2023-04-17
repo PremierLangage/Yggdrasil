@@ -52,6 +52,9 @@ form=forms[step]
 
 evaluator==
 
+grdae=(1,"")
+==
+fifi==
 if step==0:
     report = "# Rapport de relecture de code\n\n"
     report_html = "<h1>Rapport de relecture de code</h1><br />"
