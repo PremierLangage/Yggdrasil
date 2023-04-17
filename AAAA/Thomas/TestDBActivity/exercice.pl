@@ -12,6 +12,13 @@ def sum_of_positive(l : List[int]) -> int :
     # write your code here
 ==
 
+solution==#|py|
+from typing import List
+
+def sum_of_positive(l : List[int]) -> int : 
+    return sum(i for i in l if i > 0)
+==
+
 before==#|py|
 from database_utils import get_session, Base, Response
 
@@ -50,6 +57,18 @@ evaluator==#|py|
 from database_utils import get_session, Base, Response
 from sqlalchemy import Column, String, Integer
 
+
+
+##### TEST CODE ETUDIANT ######
+
+for i in range(10): 
+
+
+
+
+
+
+
 if reponse.value.lower() == "je veux tout voir!":
     feedback = ""
     with get_session(table_class = Response, base=Base) as session:
@@ -64,5 +83,5 @@ elif reponse.value:
         session.commit()
     del Base
 else:
-    grade = (0, '<span class="error-state">Je ne peux pas valider ça problem numéro étudiant ou réponse </span>')
+    grade = (0, '<span class="error-state">Ton code ne donne pas la réponse attendue, reessaye !</span>')
 ==
