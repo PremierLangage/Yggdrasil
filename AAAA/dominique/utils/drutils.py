@@ -7,7 +7,6 @@ def raiseifabsent(name, comment=" variable obligatoire"):
 
 
 def additems(group, listitem, step):
-
     group.items = []
     for num,item in enumerate(listitem) :
         group.items.append({
