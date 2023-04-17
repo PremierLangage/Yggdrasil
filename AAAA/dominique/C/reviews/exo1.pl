@@ -1,2 +1,2 @@
 
-@ /builder/bbfore.py
+builder= @ /builder/bbfore.py
