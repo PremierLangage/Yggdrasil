@@ -13,7 +13,7 @@ grader=
 
 formfills=[["raté","correct","bien","très bien"],["echec","passable","bien","très bien"]]
 
-firstform ==
+firstform==
 <table style="border-spacing: 30px; border-collapse: separate;">
 <tr><td>Votre <b>nom</b> (en tant que relecteur) </td><td> <input type=text id="form_nom" /> </td></tr>
 <tr><td>Nom de l\'<b>auteur</b> de la production </td><td> <input type=text id="form_author" /> </td></tr>
