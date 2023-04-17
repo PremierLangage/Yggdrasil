@@ -74,7 +74,19 @@ if step==0:
     report += "\n\n"
     report_html += "<br /><br />"
 
+step +=1
+
 if step <len(texts):
+    report += "## {titlrecrit[step]} \n\n"
+    report_html += "<b>Concision et propreté des rendus</b><br />"
+    S = group.selection
+    for item in group.items:
+        if item['id'] == S:
+            report += item['content']+"\n\n"
+            report_html += item['content']+"<br /><br />"
+    if 'comcrit1' in response and len(response['comcrit1']) > 0:
+        report += response['comcrit1']+"\n\n"
+        report_html += response['comcrit1']+"<br /><br />"
     text= report_htlm
     form=f''' {{ group|component }} \n<br />\nPrécisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> 
        '<textarea id="form_comcrit{step}" rows="6" cols="80" ></textarea>'''
