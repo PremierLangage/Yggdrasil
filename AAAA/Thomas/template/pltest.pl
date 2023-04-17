@@ -44,9 +44,8 @@ Si vous souhaitez faire des tests sur le code de l'élève la variable __student
 @ pltest_doc.py
 @ pltestgrader.py [grader.py]
 @ feedback2.py
-@ /ComputerScience/python/template/anothertemplate.html [template.html]
-@ /ComputerScience/python/template/displayExample.html 
-@ /ComputerScience/python/template/displayData.html 
+@ anothertemplate.html [template.html]
+@ displayExample.html 
 
 @ /utils/sandboxio.py
 @ /builder/none.py [builder.py]
