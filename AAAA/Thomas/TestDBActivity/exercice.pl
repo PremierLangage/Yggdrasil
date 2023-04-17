@@ -1,88 +1,68 @@
+@ /utils/sandboxio.py
+grader  =@ /grader/evaluator.py
+builder =@ /builder/bbefore.py
 
-#*****************************************************************************
-#  Copyright (C) 2017 Nicolas Borie <nicolas dot borie at univ-eiffel . fr>
-#
-#  Distributed under the terms of Creative Commons Attribution-ShareAlike 3.0
-#  Creative Commons CC-by-SA 3.0
-#
-#    This code is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-#
-#  The full text of the CC-By-SA 3.0 is available at:
-#
-#            https://creativecommons.org/licenses/by-sa/3.0/
-#            https://creativecommons.org/licenses/by-sa/3.0/fr/
-#*****************************************************************************
+@database_utils.py 
 
-extends=/ComputerScience/C/template/std_progC.pl
+editor =: CodeEditor
+editor.code ==#|py|
+from typing import List
 
-author=Nicolas Borie
+def sum_of_positive(l : List[int]) -> int : 
+    # write your code here
+==
 
-title=Somme des éléments positifs d'un tableau
-tag=tableau|parcours|condition
+before==#|py|
+from database_utils import get_session, Base, Response
+
+blabla = f"Le numéro de l'activité est : {activity__id}\n\n" 
+blabla += f"Vous êtes connecté votre numéro d'utillisateur est : {user__id}" if user__id else f"Vous êtes anonyme, votre numéro de session est : {session__id}"
+
+last_user_response = ""
+db_url = "activities-db"
+db_name = "activity_db"
+db_user = "activity_user"
+db_password = "Dimz80k7X97!"
+
+with get_session(table_class= Response, base=Base, db_url = db_url  , db_name =db_name , db_user =db_user, db_password =  db_password ) as session:
+    if not session.query(Response).filter(Response.student_id == 0).all() : 
+        session.add(Response(student_id = 0, response = "Salut ! Comment ça va?"))
+        session.commit()
+    last_user_response = session.query(Response).order_by(Response.id.desc()).first().response
+
+del session
+==
+
+title==
+Test BDD sandbox
+==
 
 text==
-
-Écrire une fonction C **sum_of_positives** qui prend en paramètre un
-tableau d'entiers ansi que son nombre d'éléments. La fonction
-retournera la somme des éléments positifs contenus dans le tableau. Il ne faut 
-donc pas ajouter les négatifs s'il y en a.
-
-<br />
+{{blabla}}
+</br>
 ==
 
-editor.code==
-... sum_of_positives(...){
-    /* Votre code ici */
-}
+form==
+{{editor|component}}
 ==
 
-solution==#|c|
-int sum_of_positives(int* tab, int taille){
-  int i;
-  int somme=0;
+evaluator==#|py|
+from database_utils import get_session, Base, Response
+from sqlalchemy import Column, String, Integer
 
-  for (i=0 ; i<taille ; i++){
-    if (tab[i] > 0)
-      somme += tab[i];	  
-  }
-  
-  return somme;
-}
+if reponse.value.lower() == "je veux tout voir!":
+    feedback = ""
+    with get_session(table_class = Response, base=Base) as session:
+        for txt in session.query(Response).all():
+            feedback += f"<p>{txt}</p>"
+        session.commit()
+    grade = (100, feedback)
+elif reponse.value:
+    grade = (100, " just do it")
+    with get_session(table_class = Response, base=Base) as session:
+        session.add(Response(student_id = user__id if user__id else session__id, response = reponse.value))
+        session.commit()
+    del Base
+else:
+    grade = (0, '<span class="error-state">Je ne peux pas valider ça problem numéro étudiant ou réponse </span>')
 ==
-
-code_before==
-
-==
-
-code_after==#|c|
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(int argc, char* argv[]){
-  int nb_term = argc-1;
-  int* tab = (int*)malloc(nb_term*sizeof(int));
-  int i;
-
-  for (i=0 ; i<nb_term ; i++){
-    tab[i] = atoi(argv[i+1]);
-  }
-
-  printf("Somme des positifs : %d\n", sum_of_positives(tab, nb_term));
-  free(tab);
-  return 0;
-}
-==
-
-checks_args_stdin==#|python|
-[ ["Exécution simple", ["1"], ""],
-  ["Quelques éléments", ["12", "-3", "52", "0", "41"], ""],
-  ["Tableau vide", [], ""],
-  ["Test aléatoire 1", [str(randint(-100, 100)) for i in range(randint(5, 10))], ""],
-  ["Test aléatoire 2", [str(randint(-100, 100)) for i in range(randint(5, 10))], ""],
-  ["Test aléatoire 3", [str(randint(-100, 100)) for i in range(randint(5, 10))], ""],
-  ["Test aléatoire 4", [str(randint(-100, 100)) for i in range(randint(5, 10))], ""],
-  ["Test aléatoire 5", [str(randint(-100, 100)) for i in range(randint(5, 10))], ""] ]
-==
-
