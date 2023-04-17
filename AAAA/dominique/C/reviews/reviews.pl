@@ -33,9 +33,6 @@ ceci est le code
 
 before==#|python|
 
-if "code" not in globals():
-    code = "Merdre"
-
 
 # step index 
 step = 0
@@ -147,6 +144,12 @@ from datetime import date
 mois=["janvier", "février", "mars", "avril", 
       "mai", "juin", "juillet", "août", 
       "septembre", "octobre", "novembre", "décembre"]
+
+
+if "code" not in globals():
+    code = "Merdre"
+
+
 
 if step == 0:
     report += "# Rapport de relecture de code\n\n"
