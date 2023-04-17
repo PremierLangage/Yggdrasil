@@ -19,7 +19,7 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-# author=Nicolas Borie
+author=Nicolas Borie
 
 title=Assistant générateur de rapport de review de code
 tag=review|code|relecture|validation|correction|évaluation|pairs
