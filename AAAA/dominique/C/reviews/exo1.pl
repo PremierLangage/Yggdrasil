@@ -11,7 +11,7 @@ grader=
 
 texts=["critère1", "The other criture"]
 
-formfill=[["raté","correct","bien","très bien"],["echec","passable","bien","très bien"]]
+formfills=[["raté","correct","bien","très bien"],["echec","passable","bien","très bien"]]
 
 
 first==
