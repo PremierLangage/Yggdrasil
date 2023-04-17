@@ -26,7 +26,7 @@ True
 True
 >>> from random import sample
 >>> l = sample(range(-1000, 1000), 200)
->>> sum_of_positive(l) == sum(i for i in l if i > 0)
+>>> sum_of_positive(l) == sum(i for i in l if i > 0) # La fonction s'execute comme la solution
 True
 ==
 
