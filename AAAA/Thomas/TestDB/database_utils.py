@@ -20,6 +20,7 @@ class Response(Base):
 class Evalutaion(Base):
     base = Base
     id = Column("id", Integer, primary_key=True)
+    parent_id: Mapped[int] = mapped_column(ForeignKey("test_db_student_1.id"))
     student_id = Column("student_id", Integer)
     eval = Column("eval", String)
 
