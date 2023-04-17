@@ -6,7 +6,7 @@ author = Thomas SAILLARD
 title = Exercice python sur les listes (test pour intéraction avec la base de données)
 
 text==
-Ecrire une fonction `sum_` qui prend en argument une liste d'entiers et qui 
+Ecrire une fonction `sum_of_positive` qui prend en argument une liste d'entiers et qui 
 renvoie la somme des entiers positifs de cette liste.
 ==
 
