@@ -2,7 +2,7 @@
 
 
 def raiseifabsent(name, comment=" variable obligatoire"):
-    if name not in globals():
+    if not name in globals():
         raise Exception(" Missing variable :"+name+comment)
 
 
