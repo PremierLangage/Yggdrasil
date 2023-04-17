@@ -46,8 +46,12 @@ if step==0:
     if len(response['nom']) > 0:
         report += " par **"+response['nom']+"**"
         report_html += " par <b>"+response['nom']+"</b>"
-    report += " le "+str(date.today().day)+" "+mois[date.today().month - 1]+" "+str(date.today().year)
-    report_html += " le "+str(date.today().day)+" "+mois[date.today().month - 1]+" "+str(date.today().year)
+
+    import locale, time
+    locale.setlocale(locale.LC_ALL, 'fr_FR')
+    maintenant = time.strftime('%A %d %B %Y %H:%M:%S')
+    report += " le "+maintenant 
+    report_html += " le "+maintenant 
     report += "\n\n"
     report_html += "<br /><br />"
 
