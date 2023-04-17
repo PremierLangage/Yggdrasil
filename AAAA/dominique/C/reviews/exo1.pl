@@ -13,7 +13,7 @@ before==
 if not 'texts' in globals():
     print("Ce model necessite une liste de textes de description de chaque critères.")
     print(" '**Critére 1** : Description du critère 1' ")
-    exit(1)
+    raise Exception("missing parameter")
 texts = first + texts
 
 if not 'formsfill' in globals():
