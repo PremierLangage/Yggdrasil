@@ -25,6 +25,12 @@ from drutils import raiseifabsent, buildform
 raiseifabsent('texts', ' Liste de critères ')
 texts = first + texts
 raiseifabsent('formfills','liste de choix des différents critères ')
-forms = fristform + buildform(formfills)
+forms = firstform + buildform(formfills)
+
+==
+
+
+evaluator==
+
 
 ==
