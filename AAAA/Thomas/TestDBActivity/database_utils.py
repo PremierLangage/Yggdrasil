@@ -10,7 +10,7 @@ Base = declarative_base()
 
 class Response(Base):
     base = Base
-    __tablename__ = "test_db_activity_response_2" 
+    __tablename__ = "test_db_activity_response_3" 
     id : Mapped[int] = mapped_column(primary_key=True)
     student_id : Mapped[int] = mapped_column(Integer)
     value : Mapped[Text] = mapped_column(Text)
@@ -21,12 +21,12 @@ class Response(Base):
 
 
 class Evaluation(Base):
-    __tablename__ = "test_db_activity_evaluation_2" 
+    __tablename__ = "test_db_activity_evaluation_3" 
     id : Mapped[int] = mapped_column(primary_key=True)
     student_id : Mapped[int] = mapped_column(Integer)
     eval : Mapped[Text] = mapped_column(Text)
 
-    response_id : Mapped[int] = mapped_column(ForeignKey('test_db_activity_response_1.id'))
+    response_id : Mapped[int] = mapped_column(ForeignKey('test_db_activity_response_3.id'))
     response : Mapped["Response"] = relationship(back_populates="evaluations")
 
     def __repr__(self):
