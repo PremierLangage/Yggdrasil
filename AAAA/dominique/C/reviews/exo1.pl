@@ -98,5 +98,6 @@ elif step <len(texts):
        '<textarea id="form_comcrit{step}" rows="6" cols="80" ></textarea>'''
     group= additems(group,formfills[step], step)
     grade=(-1,"")
+    step+=1 
 
 ==
