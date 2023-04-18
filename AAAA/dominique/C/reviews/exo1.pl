@@ -8,7 +8,7 @@ form=
 builder=@ /builder/bbefore.py
 grader=@/grader/evaluator.py
 
-
+group =: RadioGroup
 
 
 
