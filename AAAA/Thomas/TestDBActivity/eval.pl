@@ -36,9 +36,9 @@ with get_session(table_class= Response, base=Base) as session:
     if not session.query(Response).filter(Response.student_id == 0).all() : 
         session.add(Response(student_id = 0, value = "Salut ! Comment ça va?"))
         session.commit()
-    last_user_response = session.query(Response).join(Evaluation, Response.id == Evaluation.response_id,isouter=True).where(Response.student_id != user__id and Evaluation.student_id != user__id).order_by(func.random()).first()
+    last_user_response = session.query(Response).join(Evaluation, Response.id == Evaluation.response_id,isouter=True).where(Response.student_id != user__id and Evaluation.student_id != user__id).order_by(func.random())
 
-codeAnswer.code = last_user_response.value
+codeAnswer.code = last_user_response
 
 # paramètre data contenant la question et la réponse de l'élève
 data = {"question": "Quel âge avez-vous ?", "answer": last_user_response.value}
