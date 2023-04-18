@@ -27,9 +27,6 @@ Commencez par vous présenter, précisez l'auteur du code reviewé ainsi qu'une 
 
 Prennez votre temps pour valider pas à pas votre rapport mais ATTENTION n'actualiser la page à aucun moment, vous perdriez votre début de rapport et cela réinitialiserait le générateur à la première étape.
 ==
-
-
-
 before==
 from drutils import raiseifabsent, additems
 
@@ -51,6 +48,8 @@ form=forms[step]
 
 
 evaluator==
+from drutils import raiseifabsent, additems
+
 if step==0:
     report = "# Rapport de relecture de code\n\n"
     report_html = "<h1>Rapport de relecture de code</h1><br />"
