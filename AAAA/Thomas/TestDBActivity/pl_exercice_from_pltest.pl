@@ -27,8 +27,8 @@ True
 True
 >>> sum_of_positive([-1, -67, -998]) == 0 # La fonction renvoie 0 si on lui passe des entiers négatifs
 True
->>> from random import sample
->>> l = sample(range(-1000, 1000), 200)
+>>> from random import sample #
+>>> l = sample(range(-1000, 1000), 200) #
 >>> sum_of_positive(l) == sum(i for i in l if i > 0) # La fonction s'execute comme la solution
 True
 ==
