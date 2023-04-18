@@ -34,7 +34,7 @@ from sqlalchemy.sql import func
 
 with get_session(table_class= Response, base=Base) as session:
     if not session.query(Response).filter(Response.student_id == 0).all() : 
-        session.add(Response(student_id = 0, value = "Salut ! Comment ça va?"))
+        session.add(Response(student_id = 0, vale = "Salut ! Comment ça va?"))
         session.commit()
     last_user_response = session.query(Response).where(Response.student_id != user__id and ~Response.evaluations.any(Evaluation.student_id == user__id)).order_by(func.random()).first()
 
