@@ -100,7 +100,7 @@ J'ai l'id : {{user__id}}
 Enoncé de la question :  
 <p style="color: rgb(50, 100, 250);">{{data.question}}<p>
 <br/>
-Réponse de l'élève :  {{user__id}}
+Réponse de l'élève :  {{last_user_response.student_id}}
 {{ codeAnswer|component }}
 <p style="color: rgb(50, 100, 250);">{{data.answer}}<p>
 <br/>
