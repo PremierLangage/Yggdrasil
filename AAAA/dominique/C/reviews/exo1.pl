@@ -74,10 +74,14 @@ if step==0:
     report_html += " le "+maintenant 
     report += "\n\n"
     report_html += "<br /><br />"
+    step = 1
+    form=f''' {{ group|component }} \n<br />\nPrécisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> 
+    '<textarea id="form_comcrit{step}" rows="6" cols="80" ></textarea>'''
+    group= additems(group,formfills[step], step)
+    grade=(-1,"")
 
-step +=1
 
-if step <len(texts):
+elif step <len(texts):
     report += "## {titlerecrit[step]} \n\n"
     report_html += "<b>Concision et propreté des rendus</b><br />"
     S = group.selection
