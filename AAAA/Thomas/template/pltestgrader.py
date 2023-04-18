@@ -106,7 +106,7 @@ if __name__ == "__main__":
 
     if 'after' in dic:
         dic['grade'] = a
-        if answer or dic.get('answer', None):
+        if answer==answer or dic.get('answer', None):
             outstr += "ANSWER IS DEFINED AND EQUALS : " + answer or dic.get('answer', None)
         else :
             outstr += "NO ANSWER HERE"
