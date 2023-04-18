@@ -95,7 +95,7 @@ elif step <len(texts):
     step+=1 
     if step == len(texts):
         text = report + report_html
-        form=
+        form=''
         step -= 1 
         grade=(100,"")
     else:
