@@ -38,7 +38,6 @@ after==#|py|
 from database_utils import get_session, Base, Response
 from sqlalchemy import Column, String, Integer
 import sys
-print("PROUT !!!!!!!!!!!!!!!!!!", sys.stderr)
 
 if grade == 100:
     print("AJOUUUUUTT !!!!!!!!!!!!!!!!!!", sys.stderr)
@@ -48,5 +47,5 @@ if grade == 100:
         session.commit()
 else : 
     print("REFUSEEEE !!!!!!!!!!!!!!!!!!", sys.stderr)
-    sys.exit(1)
+    sys.exit(2)
 ==
