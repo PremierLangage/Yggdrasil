@@ -26,6 +26,7 @@ class Evaluation(Base):
     student_id : Mapped[int] = mapped_column(Integer)
     eval : Mapped[Text] = mapped_column(Text)
 
+    response_id : Mapped[int] = mapped_column(ForeignKey('test_db_activity_response_1.id'))
     response : Mapped["Response"] = relationship(back_populates="evaluations")
 
     def __repr__(self):
