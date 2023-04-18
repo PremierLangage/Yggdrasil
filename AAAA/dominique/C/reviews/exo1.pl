@@ -13,6 +13,8 @@ group =: RadioGroup
 
 formfills=[["raté","correct","bien","très bien"],["echec","passable","bien","très bien"],["oui","non","pzu ztrz"]]
 
+texts=["critère1", "The other criture"]
+titlecrit=["intro","Crit1","crit2"]
 
 
 firstform==
@@ -34,15 +36,12 @@ before==
 from drutils import raiseifabsent, additems
 from ast import literal_eval 
 
-formfills=literal_eval(formfills) 
 
-texts=["critère1", "The other criture"]
-titlecrit=["intro","Crit1","crit2"]
 raiseifabsent('texts', ' Liste de critères ', globals())
-texts = [first] + texts
-
+texts=[first] + literal_eval(texts)
+titlecrit=literal_eval(titlecrit)
 raiseifabsent('formfills','liste de choix des différents critères ', globals())
-forms = [firstform] + formfills
+forms = [firstform] + literal_eval(formfills) 
 
 step=0
 text=texts[step]
