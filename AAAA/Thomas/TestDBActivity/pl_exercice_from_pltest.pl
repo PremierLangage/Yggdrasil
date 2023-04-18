@@ -39,7 +39,8 @@ from database_utils import get_session, Base, Response
 from sqlalchemy import Column, String, Integer
 import sys
 
-if grade == 100:
+
+if grade[0].tutu == 100:
     with get_session(table_class = Response, base=Base) as session:
         session.add(Response(student_id = user__id if user__id else session__id, value = editor['code']))
         session.commit()
