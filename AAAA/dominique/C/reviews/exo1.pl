@@ -92,11 +92,12 @@ elif step <len(texts):
     if name in response and len(response[name]) > 0:
         report += response[name]+"\n\n"
         report_html += response[name]+"<br /><br />"
+    step+=1 
     text=texts[step]
     form=f''' {{ group|component }} \n<br />\nPrécisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> 
        '<textarea id="form_comcrit{step}" rows="6" cols="80" ></textarea>'''
     group= additems(group,formfills[step], step)
     grade=(-1,"")
-    step+=1 
+
 
 ==
