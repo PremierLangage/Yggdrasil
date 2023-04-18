@@ -6,7 +6,10 @@ extends= exo1.pl
 
 
 titlecrit==
-["**Concision et propreté des productions en programmation**",
+["Introduction review",
+"**Concision et propreté des productions en programmation**",
+
+
 ==
 
 fillform==
@@ -14,7 +17,10 @@ fillform==
 "Les productions transmises et leurs éléments sont corrects et bien identifiés.",
 "Les productions transmises sont particulièrement bien structurées et la précision du nommage <br />ne laisse aucun doute sur le contenu des répertoires et fichiers.",
 "Les contenus transmis sont à la fois concis et complets. Un maximum d'éléments sont générés <br />automatiquement rendant la production minimale en taille lors de sa diffusion."],
-[]
+["Pas de makefile ou la compilation d'un programme échoue ou la compilation <br/>manque de vérifications ou produit trop de warning.",
+"Un makefile permet la compilation de toutes les sources sans grave warning et avec, a minima, le flag -Wall.",
+"Un makefile propre, lisible et complet permet la compilation de toutes les sources sans aucun warning <br />et avec les drapeaux -Wall et -ansi (voire -pedantic). Le makefile gère correctement les dépendances <br />et intègre une règle pour le nettoyage des produits de compilation.",
+"Le makefile est bien documenté, il propose un haut niveau de verbose et intègre des règles <br />pour générer un ou plusieurs contenus annexes (documentation avec doxygen, <br />programme de tests supplémentaires, etc)."]
 ]
 ==
 
