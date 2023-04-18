@@ -11,6 +11,9 @@ grader=@/grader/evaluator.py
 group =: RadioGroup
 
 
+formfills=[["raté","correct","bien","très bien"],["echec","passable","bien","très bien"],["oui","non","pzu ztrz"]]
+
+
 
 firstform==
 <table style="border-spacing: 30px; border-collapse: separate;">
@@ -29,8 +32,9 @@ Prennez votre temps pour valider pas à pas votre rapport mais ATTENTION n'actua
 ==
 before==
 from drutils import raiseifabsent, additems
+from ast import literal_eval 
 
-formfills=[["raté","correct","bien","très bien"],["echec","passable","bien","très bien"],["oui","non","pzu ztrz"]]
+formfills=literal_eval(formfill) 
 
 texts=["critère1", "The other criture"]
 titlecrit=["intro","Crit1","crit2"]
