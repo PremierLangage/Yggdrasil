@@ -68,7 +68,7 @@ if step==0:
         report_html += " par <b>"+response['nom']+"</b>"
 
     import locale, time
-    locale.setlocale(locale.LC_ALL, 'fr_FR')
+    # locale.setlocale(locale.LC_ALL, 'fr_FR') # il faut une instalation de language pack sur la sandbox
     maintenant = time.strftime('%A %d %B %Y %H:%M:%S')
     report += " le "+maintenant 
     report_html += " le "+maintenant 
