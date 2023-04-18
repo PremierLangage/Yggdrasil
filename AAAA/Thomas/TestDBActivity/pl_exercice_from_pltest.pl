@@ -42,7 +42,7 @@ import sys
 
 if int(grade) == 100:
     with get_session(table_class = Response, base=Base) as session:
-        session.add(Response(student_id = user__id if user__id else session__id, value = editor['code']))
+        session.add(Response(student_id = user__id if user__id else session__id, value = answer))
         session.commit()
 
 ==
