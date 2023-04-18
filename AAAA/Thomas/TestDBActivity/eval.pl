@@ -38,7 +38,7 @@ with get_session(table_class= Response, base=Base) as session:
         session.commit()
     last_user_response = session.query(Response).where(Response.student_id != user__id and ~Response.evaluations.any(Evaluation.student_id == user__id)).order_by(func.random()).first().value
 
-
+codeAnswer.code = last_user_response
 
 # paramètre data contenant la question et la réponse de l'élève
 data = {"question": "Quel âge avez-vous ?", "answer": last_user_response}
