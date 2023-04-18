@@ -39,7 +39,7 @@ with get_session(table_class= Response, base=Base, db_url = db_url  , db_name =d
 
 
 # paramètre data contenant la question et la réponse de l'élève
-data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
+data = {"question": "Quel âge avez-vous ?", "answer": last_user_response}
 
 # paramètre criteria contenant la grille critériée
 criteria =[
