@@ -40,7 +40,7 @@ from sqlalchemy import Column, String, Integer
 import sys
 
 
-if grade[1] == 100:
+if grade[0] == 100:
     with get_session(table_class = Response, base=Base) as session:
         session.add(Response(student_id = user__id if user__id else session__id, value = editor['code']))
         session.commit()
