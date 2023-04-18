@@ -105,6 +105,7 @@ if __name__ == "__main__":
         outstr += dic["feedback"]+" valeur de stop "+ str(stop)
 
     if 'after' in dic:
+        dic['grade'] = a
         glob = {}
         exec(dic['after'],dic)
         exec("", glob)
