@@ -76,7 +76,7 @@ if step==0:
     text=texts[step]+" Step : "+str(step)
     form="{{ group|component }} \n"+f''' <br />\nPrécisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> 
     '<textarea id="form_comcrit{step}" rows="6" cols="80" ></textarea>'''
-    group= additems(group,formfills[step], step)
+    group= additems(group,forms[step], step)
     grade=(-1,"")
 
 
