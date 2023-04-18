@@ -8,6 +8,7 @@ extends= exo1.pl
 titlecrit==
 ["Introduction review",
 "**Concision et propreté des productions en programmation**",
+"** Installation et compilation des sources transmises **",
 
 
 ==
