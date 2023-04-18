@@ -104,6 +104,19 @@ if __name__ == "__main__":
     if "feedback" in dic: # FIXME feedback devrai être un dictionnaire.
         outstr += dic["feedback"]+" valeur de stop "+ str(stop)
 
+    if 'after' in dic:
+        glob = {}
+        #dic['StopBeforeExec'] = StopBeforeExec
+        #exec(add_try_clause(dic['before'], StopBeforeExec), dic)
+        exec(dic['after'],dic)
+        exec("", glob)
+        for key in glob:
+            if key in dic and dic[key] == glob[key]:
+                del dic[key]
+    else:
+        print(("Grader 'pltest_grader_after' need a script declared in the key 'after'. "
+               + "See documentation related to this builder."),
+              file = sys.stderr)
+        sys.exit(1)
 
-
-    output(a,outstr + "\n\n\n PROUT : " + str(a))
+    output(a,outstr)
