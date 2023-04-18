@@ -32,7 +32,7 @@ before == #|python|
 from database_utils import get_session, Base, Response
 from sqlalchemy.sql import func
 
-with get_session(table_class= Response, base=Base, db_url = db_url  , db_name =db_name , db_user =db_user, db_password =  db_password ) as session:
+with get_session(table_class= Response, base=Base) as session:
     if not session.query(Response).filter(Response.student_id == 0).all() : 
         session.add(Response(student_id = 0, response = "Salut ! Comment ça va?"))
         session.commit()
