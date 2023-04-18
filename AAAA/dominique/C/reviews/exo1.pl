@@ -30,7 +30,7 @@ Prennez votre temps pour valider pas à pas votre rapport mais ATTENTION n'actua
 before==
 from drutils import raiseifabsent, additems
 
-formfills=[["raté","correct","bien","très bien"],["echec","passable","bien","très bien"]]
+formfills=[["raté","correct","bien","très bien"],["echec","passable","bien","très bien"],["oui","non","pzu ztrz"]]
 
 texts=["critère1", "The other criture"]
 titlecrit=["intro","Crit1","crit2"]
