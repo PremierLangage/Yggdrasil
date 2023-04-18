@@ -10,7 +10,7 @@ Base = declarative_base()
 
 class Response(Base):
     base = Base
-    __tablename__ = "test_db_activity_response_1" 
+    __tablename__ = "test_db_activity_response_2" 
     id : Mapped[int] = mapped_column(primary_key=True)
     student_id : Mapped[int] = mapped_column(Integer)
     value : Mapped[Text] = mapped_column(Text)
@@ -21,7 +21,7 @@ class Response(Base):
 
 
 class Evaluation(Base):
-    __tablename__ = "test_db_activity_evaluation_1" 
+    __tablename__ = "test_db_activity_evaluation_2" 
     id : Mapped[int] = mapped_column(primary_key=True)
     student_id : Mapped[int] = mapped_column(Integer)
     eval : Mapped[Text] = mapped_column(Text)
