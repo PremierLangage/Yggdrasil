@@ -106,6 +106,7 @@ if __name__ == "__main__":
 
     if 'after' in dic:
         dic['grade'] = a
+        dic['answer'] = student
         glob = {}
         exec(dic['after'],dic)
         exec("", glob)
