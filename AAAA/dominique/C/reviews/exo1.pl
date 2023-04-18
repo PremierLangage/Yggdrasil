@@ -98,7 +98,7 @@ elif step <len(texts):
         grade=(100,"")
     else:
         text=texts[step]+" Step : "+str(step)
-        form=f''' {{ group|component }} \n<br />\nPrécisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> 
+        form="{{ group|component }} \n"+f'''<br />\nPrécisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> 
         '<textarea id="form_comcrit{step}" rows="6" cols="80" ></textarea>'''
         
         
