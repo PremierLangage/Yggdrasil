@@ -23,8 +23,10 @@ comment_by_criteria = True
 
 
 before == #|python|
+
+
 # paramètre data contenant la question et la réponse de l'élève
-#data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
+data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
 
 # paramètre criteria contenant la grille critériée
 criteria =[
@@ -83,6 +85,7 @@ Enoncé de la question :
 <p style="color: rgb(50, 100, 250);">{{data.question}}<p>
 <br/>
 Réponse de l'élève :  
+{{ codeAnswer|component }}
 <p style="color: rgb(50, 100, 250);">{{data.answer}}<p>
 <br/>
 
