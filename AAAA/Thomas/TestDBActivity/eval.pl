@@ -29,7 +29,7 @@ codeAnswer.theme = light
 before == #|python|
 
 #Obtention d'un réponse aléatoire qui n'est pas la mienne et que je n'ai jamais corrigé
-from database_utils import get_session, Base, Response
+from database_utils import get_session, Base, Response, Evaluation
 from sqlalchemy.sql import func
 
 with get_session(table_class= Response, base=Base) as session:
