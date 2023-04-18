@@ -99,7 +99,7 @@ form  == #|html|
 Enoncé de la question :  
 <p style="color: rgb(50, 100, 250);">{{data.question}}<p>
 <br/>
-Réponse de l'élève :  
+Réponse de l'élève :  {{user__id}}
 {{ codeAnswer|component }}
 <p style="color: rgb(50, 100, 250);">{{data.answer}}<p>
 <br/>
