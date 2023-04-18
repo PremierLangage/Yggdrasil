@@ -26,6 +26,17 @@ codeAnswer.theme = light
 
 before == #|python|
 
+#Obtention d'un réponse aléatoire qui n'est pas la mienne et que je n'ai jamais corrigé
+from database_utils import get_session, Base, Response
+from sqlalchemy.sql import func
+
+with get_session(table_class= Response, base=Base, db_url = db_url  , db_name =db_name , db_user =db_user, db_password =  db_password ) as session:
+    if not session.query(Response).filter(Response.student_id == 0).all() : 
+        session.add(Response(student_id = 0, response = "Salut ! Comment ça va?"))
+        session.commit()
+    last_user_response = session.query(Response).where(Response.student_id != user__id and ~Response.evaluations.any(Evaluation.student_id == user__id)).order_by(func.random()).first()
+
+
 
 # paramètre data contenant la question et la réponse de l'élève
 data = {"question": "Quel âge avez-vous ?", "answer": "J'ai 20 ans."}
