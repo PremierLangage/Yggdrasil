@@ -39,7 +39,7 @@ from database_utils import get_session, Base, Response
 from sqlalchemy import Column, String, Integer
 
 with get_session(table_class = Response, base=Base) as session:
-    print(editor, file=sys.stderr
+    print(editor, file=sys.stderr)
     session.add(Response(student_id = user__id if user__id else session__id, value = editor.code))
     session.commit()
 
