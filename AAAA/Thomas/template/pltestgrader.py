@@ -106,8 +106,6 @@ if __name__ == "__main__":
 
     if 'after' in dic:
         glob = {}
-        #dic['StopBeforeExec'] = StopBeforeExec
-        #exec(add_try_clause(dic['before'], StopBeforeExec), dic)
         exec(dic['after'],dic)
         exec("", glob)
         for key in glob:
