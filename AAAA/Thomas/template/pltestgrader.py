@@ -108,8 +108,7 @@ if __name__ == "__main__":
         glob = {}
         exec(dic['after'],dic)
         exec("", glob)
-        for key in glob:
-            outstr += f"\nglob[{key}] = {glob[key]} and dic[{key}]={dic.get(key, None)}\n"
+        for key in glob: # Cette boucle sert a supprimer les valeurs entrées par défaut par la fonction exec
             if key in dic and dic[key] == glob[key]:
                 del dic[key]
     else:
