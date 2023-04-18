@@ -37,7 +37,6 @@ True
 after==#|py|
 from database_utils import get_session, Base, Response
 from sqlalchemy import Column, String, Integer
-import sys
 
 if int(grade) == 100:
     with get_session(table_class = Response, base=Base) as session:
