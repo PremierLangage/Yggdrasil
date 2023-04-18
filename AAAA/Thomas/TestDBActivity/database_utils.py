@@ -2,7 +2,7 @@ from typing import List
 from sqlalchemy import create_engine, inspect
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import declarative_base
-from sqlalchemy import Text
+from sqlalchemy import Text, Integer
 from sqlalchemy.orm import Mapped
 from sqlalchemy.orm import mapped_column, relationship
 
