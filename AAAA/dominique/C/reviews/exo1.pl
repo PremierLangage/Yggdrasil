@@ -104,7 +104,7 @@ elif step <len(texts):
         
         grade=(-1,"")
         
-        group= additems(group,formfills[step], step)
+        group= additems(group,forms[step], step)
 
 
 
