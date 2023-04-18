@@ -53,7 +53,11 @@ texts==
        "</ul>"
        "<b>Comment sont les productions transmises en terme de praticité "
        "d’installation, de compilation des sources et contenus annexes ?</b>",
-       "## **Fonctionnalités implantées dans les rendus**\n<br />\n"
+      
+==
+
+bob==
+ "## **Fonctionnalités implantées dans les rendus**\n<br />\n"
        "<u>Objectifs :</u>"
        "<ul>"
        "<li>Les fonctionnalités programmées se comportent comme attendu voire comme spécifié dans le cahier des charges.</li>"
@@ -89,6 +93,6 @@ texts==
        "</ul>"
        "<b>Les sources des programmes et productions sont elles correctement commentées ?</b>",
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
-
+==
 
 
