@@ -5,7 +5,26 @@
 extends= exo1.pl
 
 
-texts=["## **Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review "
+titlecrit==
+["**Concision et propreté des productions en programmation**",
+==
+
+fillform==
+[["L'auteur a laissé des éléments inutiles ou des fichiers mal identifiés dans ses contenus.",
+"Les productions transmises et leurs éléments sont corrects et bien identifiés.",
+"Les productions transmises sont particulièrement bien structurées et la précision du nommage <br />ne laisse aucun doute sur le contenu des répertoires et fichiers.",
+"Les contenus transmis sont à la fois concis et complets. Un maximum d'éléments sont générés <br />automatiquement rendant la production minimale en taille lors de sa diffusion."],
+[]
+]
+==
+
+
+
+
+
+
+texts==
+["## **Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review "
        "de code en langage C.**\n<br />\n"
        "Commencez par vous présenter, précisez l'auteur du code reviewé ainsi qu'une description pour "
        "la production évaluée. Prennez votre temps pour valider pas à pas votre rapport mais "
@@ -64,4 +83,6 @@ texts=["## **Bienvenu sur l'assistant online d'aide à la génération de rappor
        "</ul>"
        "<b>Les sources des programmes et productions sont elles correctement commentées ?</b>",
        "## Avez-vous des derniers commentaires ou informations supplémentaires à donner ?"]
+
+
 
