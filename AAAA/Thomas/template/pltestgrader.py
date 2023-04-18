@@ -109,6 +109,7 @@ if __name__ == "__main__":
         exec(dic['after'],dic)
         exec("", glob)
         for key in glob:
+            outstr += f"\nglob[{key}] = {glob[key]} and dic[{key}]={dic.get(key, None)}\n"
             if key in dic and dic[key] == glob[key]:
                 del dic[key]
     else:
