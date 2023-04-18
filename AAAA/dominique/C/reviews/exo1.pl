@@ -39,6 +39,7 @@ from ast import literal_eval
 
 raiseifabsent('texts', ' Liste de critères ', globals())
 texts=[first] + literal_eval(texts)
+raiseifabsent('titlecrit', ' titre de critères ', globals())
 titlecrit=literal_eval(titlecrit)
 raiseifabsent('formfills','liste de choix des différents critères ', globals())
 forms = [firstform] + literal_eval(formfills) 
