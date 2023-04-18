@@ -102,10 +102,10 @@ elif step <len(texts):
         '<textarea id="form_comcrit{step}" rows="6" cols="80" ></textarea>'''
         
         
-        
+         grade=(-1,"")
         
         group= additems(group,formfills[step], step)
-        grade=(-1,"")
+
 
 
 ==
