@@ -25,6 +25,7 @@ from database_utils import get_session, Base, Response
 blabla = f"Le numéro de l'activité est : {activity__id}\n\n" 
 blabla += f"Vous êtes connecté votre numéro d'utillisateur est : {user__id}" if user__id else f"Vous êtes anonyme, votre numéro de session est : {session__id}"
 
+
 last_user_response = ""
 db_url = "activities-db"
 db_name = "activity_db"
