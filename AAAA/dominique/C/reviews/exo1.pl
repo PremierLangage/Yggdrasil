@@ -52,10 +52,6 @@ form=forms[step]
 
 evaluator==
 
-grade=(1,"bande de moules")
-==
-
-fifi==
 if step==0:
     report = "# Rapport de relecture de code\n\n"
     report_html = "<h1>Rapport de relecture de code</h1><br />"
@@ -80,9 +76,7 @@ if step==0:
     report_html += "<br /><br />"
 
 step +=1
-==
 
-off==
 if step <len(texts):
     report += "## {titlerecrit[step]} \n\n"
     report_html += "<b>Concision et propreté des rendus</b><br />"
