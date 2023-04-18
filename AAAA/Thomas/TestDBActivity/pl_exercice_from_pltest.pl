@@ -48,4 +48,5 @@ if grade == 100:
         session.commit()
 else : 
     print("REFUSÉÉÉÉÉ !!!!!!!!!!!!!!!!!!", sys.stderr)
+    sys.exit(1)
 ==
