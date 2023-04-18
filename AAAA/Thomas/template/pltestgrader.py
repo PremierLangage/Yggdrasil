@@ -106,6 +106,10 @@ if __name__ == "__main__":
 
     if 'after' in dic:
         dic['grade'] = a
+        if answer:
+            outstr += "ANSWER IS DEFINED AND EQUALS : " + answer
+        else :
+            outstr += "NO ANSWER HERE"
         dic['answer'] = student
         glob = {}
         exec(dic['after'],dic)
