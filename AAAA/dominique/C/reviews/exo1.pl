@@ -34,7 +34,7 @@ before==
 from drutils import raiseifabsent, additems
 from ast import literal_eval 
 
-formfills=literal_eval(formfill) 
+formfills=literal_eval(formfills) 
 
 texts=["critère1", "The other criture"]
 titlecrit=["intro","Crit1","crit2"]
