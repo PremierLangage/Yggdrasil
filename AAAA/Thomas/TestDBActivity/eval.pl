@@ -36,12 +36,12 @@ with get_session(table_class= Response, base=Base) as session:
     if not session.query(Response).filter(Response.student_id == 0).all() : 
         session.add(Response(student_id = 0, value = "Salut ! Comment ça va?"))
         session.commit()
-    last_user_response = session.query(Response).where(Response.student_id != user__id and ~Response.evaluations.any(Evaluation.student_id == user__id)).order_by(func.random()).first().value
+    last_user_response = session.query(Response).where(Response.student_id != user__id and ~Response.evaluations.any(Evaluation.student_id == user__id)).order_by(func.random()).first()
 
-codeAnswer.code = last_user_response
+codeAnswer.code = last_user_response.value
 
 # paramètre data contenant la question et la réponse de l'élève
-data = {"question": "Quel âge avez-vous ?", "answer": last_user_response}
+data = {"question": "Quel âge avez-vous ?", "answer": last_user_response.value}
 
 # paramètre criteria contenant la grille critériée
 criteria =[
@@ -95,6 +95,7 @@ for value in criteria :
 
 form  == #|html|
 <b style="color: red;">Remplissez tous les champs de l'évaluation</b>
+J'ai l'id : {{user__id}}
 <br/><br/>
 Enoncé de la question :  
 <p style="color: rgb(50, 100, 250);">{{data.question}}<p>
