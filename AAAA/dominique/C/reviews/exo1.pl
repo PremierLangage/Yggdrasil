@@ -82,7 +82,7 @@ if step==0:
 
 elif step <len(texts):
     report += f"## {titlecrit[step]} \n\n"
-    report_html += "<b>Concision et propreté des rendus</b><br />"
+    report_html += f"<b>{titlecrit[step]}</b><br />"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
