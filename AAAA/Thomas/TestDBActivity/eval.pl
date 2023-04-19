@@ -49,7 +49,7 @@ with get_session(table_class= Response, base=Base) as session:
                 or_(Evaluation.student_id != user__id, Evaluation.student_id is None),
                 Response.student_id != user__id
                 )
-            )
+            ).all()
 
 codeAnswer.code = str(last_user_response)
 
