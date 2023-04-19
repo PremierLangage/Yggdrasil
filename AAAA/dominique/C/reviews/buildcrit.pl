@@ -5,6 +5,8 @@ builder =@ /builder/before.py
 
 author = Dominique Revuz 2023
 
+title = Générateur de grilles critèriées
+
 before==
 
 
