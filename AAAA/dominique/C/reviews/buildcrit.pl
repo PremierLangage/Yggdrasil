@@ -52,8 +52,9 @@ else:
         text= str(ledico)
         grade=(100,"")
     else:
-        response={}
+
         ledico['crit'+str(step)]= make_dict(response,[name[0] for name in listofnames])
+        response={}
         form=make_form(listofnames)
 
 grade=(0,feedback)
