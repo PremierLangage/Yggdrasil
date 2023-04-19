@@ -140,6 +140,8 @@ Réponse de l'élève :  {{response_user_id}}
 ==
 
 
+
+
 evaluator == #|python|
 from math import ceil
 from database_utils import get_session, Base, Evaluation
@@ -202,5 +204,9 @@ if error:
 else:
     feedback += "<br/>note = "+str(response['note'])
     grade = (100, feedback)
+
+
+
+feedback = <span style="text-align: center" class="success-state">Votre formulaire à bien été transmit</span>
 ==
 
