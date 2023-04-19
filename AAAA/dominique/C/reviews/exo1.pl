@@ -80,8 +80,8 @@ if step==0:
 
 
 elif step <len(texts):
-    report += f"## {titlecrit[step]} \n\n"
-    report_html += f"<h2>{titlecrit[step]}</h2><br />"
+    report += f"## {CRIT["title"]} \n\n"
+    report_html += f"<h2>{CRIT["title"]}</h2><br />"
     S = group.selection
     for item in group.items:
         if item['id'] == S:
@@ -98,7 +98,9 @@ elif step <len(texts):
         step -= 1 
         grade=(100,"")
     else:
-        text=texts[step]+" Step : "+str(step)
+        CRIT=criteres[step]
+        text=CRIT["description"]+" Step : "+str(step)
+        title=CRIT["title"]
         form="{{ group|component }} \n"+f'''<br />\nPrécisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> 
         '<textarea id="form_comcrit{step}" rows="6" cols="80" ></textarea>'''
         
