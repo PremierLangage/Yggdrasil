@@ -43,13 +43,15 @@ if step == 0:
     step=1
     form=make_form(listofnames)
 else:
-    if len(response['title'])==0:
+    if len(response[listofnames[0][0])==0:
         # fin de critères 
         # wrapit up
         text= str(ledico)
         grade=(100,"")
     else:
         ledico['crit'+str(step)]= make_dict(response,[name[0] for name in listofnames])
+        text= "Merci"
+        form=""
 
 grade=(0,"")
 
