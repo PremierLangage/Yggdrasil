@@ -23,7 +23,7 @@ def make_form(namelist): # type: (List[(str,str)]) -> str
         if len(name[1]) == 0:
             form += f'<tr><td>{name[0]}</td><td> <input type=text id="form_{name[0]}" /> </td></tr>'
         else:
-            form += f'<tr><td>{name[0]}</td><td> <input title="{name[1]}" type=text id="form_{name[0]}" /> </td></tr>'
+            form += f'<tr><td>{name[0]}</td><td> <input required title="{name[1]}" type=text id="form_{name[0]}" /> </td></tr>'
     form += '</table>'
     return form
 
