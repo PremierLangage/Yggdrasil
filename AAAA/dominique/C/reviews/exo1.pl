@@ -103,11 +103,11 @@ elif step <len(criteres):
         title=CRIT["title"]
         form="{{ group|component }} \n"+f'''<br />\nPrécisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> 
         '<textarea id="form_comcrit{step}" rows="6" cols="80" ></textarea>'''
-        
+        group= additems(group,CRIT["evals"], step)
         
         grade=(-1,"")
         
-        group= additems(group,forms[step], step)
+        
 
 
 
