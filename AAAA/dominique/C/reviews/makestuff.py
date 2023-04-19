@@ -1,3 +1,8 @@
+## une liste de noms de variables 
+## pour produire un formulaire de saisie
+
+
+
 
 def make_form(namelist): # type: (List[(str,str)]) -> str
     form = '<table style="border-spacing: 30px; border-collapse: separate;">'
