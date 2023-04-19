@@ -61,9 +61,11 @@ def streval(response, namelist):
         s += f"{name} = {d[name]}<BR> "
     return s
 
-grade=(100,streval(response,[name[0] for name in listofnames]))
 
-form=''
-text=''
+text=streval(response,[name[0] for name in listofnames])
+listeofnames = [('truc",''),('prenom',' mettez ce que vous voulez '),('alias',' pas mieux')]
+form=make_form(listofnames)
+grade=(100,"")
+
 
 ==
