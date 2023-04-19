@@ -207,6 +207,6 @@ else:
 
 
 
-feedback = <span style="text-align: center" class="success-state">Votre formulaire à bien été transmit</span>
+feedback = '<span style="text-align: center" class="success-state">Votre formulaire à bien été transmit</span>'
 ==
 
