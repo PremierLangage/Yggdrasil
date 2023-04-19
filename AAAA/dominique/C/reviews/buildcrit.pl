@@ -21,7 +21,7 @@ from tools import *
 
 listofnames =[('nom',' votre nom'),('sujet',' le titre/description du travail a accomplir')]
 form = make_form(listofnames)
-text= "** Remplir les champs SVP**" 
+text= "** Remplir les champs SVP**<br>" 
 
 ==
 
