@@ -53,6 +53,7 @@ with get_session(table_class= Response, base=Base) as session:
 
 codeAnswer.code = str(last_user_response.value)
 response_id = last_user_response.id
+response_user_id = last_user_response.student_id
 
 # paramètre data contenant la question et la réponse de l'élève
 data = {"question": "Quel âge avez-vous ?", "answer": last_user_response.value}
@@ -111,7 +112,7 @@ form  == #|html|
 <b style="color: red;">Remplissez tous les champs de l'évaluation</b>
 J'ai l'id : {{user__id}}
 <br/><br/>
-Enoncé de la question : {{response_id}}
+Enoncé de la question : {{response_user_id}}
 <p style="color: rgb(50, 100, 250);">{{data.question}}<p>
 <br/>
 Réponse de l'élève :  {{last_user_response.student_id}}
