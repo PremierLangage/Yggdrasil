@@ -208,6 +208,6 @@ else:
 
 
 feedback = '<span style="text-align: center" class="success-state">Votre formulaire à bien été transmit</span>'
-
+grade = (100, feedback)
 ==
 
