@@ -63,7 +63,7 @@ def streval(response, namelist):
 
 
 text=streval(response,[name[0] for name in listofnames])
-listeofnames = [('truc",''),('prenom',' mettez ce que vous voulez '),('alias',' pas mieux')]
+listeofnames = [('truc',''),('prenom',' mettez ce que vous voulez '),('alias',' pas mieux')]
 form=make_form(listofnames)
 grade=(100,"")
 
