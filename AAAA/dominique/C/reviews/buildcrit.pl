@@ -43,7 +43,7 @@ if step == 0:
     step=1
     form=make_form(listofnames)
 else:
-    if len(response[listofnames[0][0]])==0:
+    if len(response[listeofevals[0][0]])==0:
         # fin de critères 
         # wrapit up
         text= str(ledico)
