@@ -46,3 +46,12 @@ form = make_form([('nom',' votre nom'),('sujet',' le titre du travaiil a accompl
 text= "remplir les champs" 
 
 ==
+
+evaluator==
+
+grade=(100,streval(response,[name[0] for name in [('nom',' votre nom'),('sujet',' le titre du travaiil a accomplir')]]))
+
+form=
+text=
+
+==
