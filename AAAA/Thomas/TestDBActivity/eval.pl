@@ -154,6 +154,7 @@ note_student = 0
 
 # vérifie que le correcteur a répondu à toutes les réponses radio
 # en même temps on calcule les points de la copie évaluée en fonction des réponses cliquées
+form=""
 feedback = "Réponses : "
 for crit in criteria:
     num = str(crit["id"])
