@@ -48,6 +48,12 @@ text= "remplir les champs"
 ==
 
 evaluator==
+def make_evaluator(response, namelist):
+    d={}
+    for name in namelist:
+        d[name] = response.get(name, "")
+    return d
+    
 def streval(response, namelist):
     d = make_evaluator(response, namelist)
     s=""
