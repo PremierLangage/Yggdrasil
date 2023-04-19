@@ -17,7 +17,7 @@ text=
 before==
 from tools import *
 
-
+ledico={}
 
 listofnames =[('titre',' Titre de l\'évaluation'),('description','Ceci décrit l\'objectif de l\'evaluation et les critères de façon générale')]
 form = make_form(listofnames)
@@ -35,9 +35,20 @@ step=0
 evaluator==
 from tools import *
 
-text +=streval(response,[name[0] for name in listofnames])
-listofnames = [('truc',''),('prenom',' mettez ce que vous voulez '),('alias',' pas mieux')]
-form=make_form(listofnames)
-grade=(100,"")
+if step == 0:
+    ledico =make_dict(response,[name[0] for name in listofnames])
+    listofnames = listeofevals
+    step=1
+    form=make_form(listofnames)
+else:
+    if len(response['title'])==0:
+        # fin de critères 
+        # wrapit up
+        text= str(ledico)
+        grade=(100,"")
+    else:
+        ledico['crit'+str(step)]= make_dict(response,[name[0] for name in listofnames])
+
+grade=(0,"")
 
 ==
