@@ -11,7 +11,7 @@ extends= exo1.pl
 
 beforeA==
 
-evaluateur = json.load(open("evaluateur.json")))
+evaluateur = json.load(open("evaluateur.json"))
 
 criteres = evaluateur["criteres"]
 
