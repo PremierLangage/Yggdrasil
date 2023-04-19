@@ -42,8 +42,8 @@ def streval(response, namelist):
 
 
     
-form = make_form([('nom',' votre nom'),('sujet',' le titre du travaiil a accomplir')])
-text= "remplir les champs" 
+form = make_form([('nom',' votre nom'),('sujet',' le titre/description du travail a accomplir')])
+text= "** Remplir les champs SVP**" 
 
 ==
 
@@ -53,7 +53,7 @@ def make_evaluator(response, namelist):
     for name in namelist:
         d[name] = response.get(name, "")
     return d
-    
+
 def streval(response, namelist):
     d = make_evaluator(response, namelist)
     s=""
