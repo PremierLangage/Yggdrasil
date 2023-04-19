@@ -10,7 +10,7 @@ grader=@/grader/evaluator.py
 
 group =: RadioGroup
 
-author=Nicolas Borie & DR
+#author=Nicolas Borie & DR
 firstform==
 <table style="border-spacing: 30px; border-collapse: separate;">
 <tr><td>Votre <b>nom</b> (en tant que relecteur) </td><td> <input type=text id="form_nom" /> </td></tr>
