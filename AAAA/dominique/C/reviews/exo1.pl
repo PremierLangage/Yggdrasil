@@ -24,7 +24,7 @@ lastform==
 <tr><td>Votre évaluation sur 1 à 100 </td><td> <input type=number min=1 max=100 id="form_note" value=100 /> </td></tr>
 </table>
 
-
+==
 
 
 
