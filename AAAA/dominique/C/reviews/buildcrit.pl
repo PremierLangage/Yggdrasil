@@ -37,13 +37,15 @@ from tools import *
 listeofevals=[('titre','Titre du critère'),('description','description du critère'),('echec', 'décrire ce que (ne) contient (pas) la réponse de l\'élève qui implique un échec sur ce critère '),('passable','Décrire ce qui pour cet exercice est une copie passable'),('bien','décrire les élements de qualité attendu pour valoriser la copie sur ce critère'), ('très bien','décrire les élements de qualité qui rendent la copie remarquable')]
 
 
+feedback=str(make_dict(response,[name[0] for name in listofnames]))
+
 if step == 0:
     ledico =make_dict(response,[name[0] for name in listofnames])
     listofnames = listeofevals
     step=1
     form=make_form(listofnames)
 else:
-    feedback=make_dict(response,[name[0] for name in listofnames])
+
     if len(response[listeofevals[0][0]])==0:
         # fin de critères 
         # wrapit up
