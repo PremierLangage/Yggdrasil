@@ -3,7 +3,7 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-@ make_stuff.py [tools.py]
+@ makestuff.py [tools.py]
 
 
 author = Dominique Revuz 2023
