@@ -152,6 +152,8 @@ with get_session(table_class = Evaluation, base=Base) as session:
 
 
 
+
+"""
 error = 0
 note_student = 0
 
@@ -204,10 +206,6 @@ if error:
 else:
     feedback += "<br/>note = "+str(response['note'])
     grade = (100, feedback)
-
-
-
-feedback = '<span style="text-align: center" class="success-state">Votre formulaire à bien été transmit</span>'
-grade = (100, feedback)
+"""
 ==
 
