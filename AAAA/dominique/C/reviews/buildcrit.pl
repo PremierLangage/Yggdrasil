@@ -61,7 +61,7 @@ def streval(response, namelist):
         s += f"{name} = {d[name]}<BR> "
     return s
 
-grade=(100,streval(response,[name[0] for name in namelist))
+grade=(100,streval(response,[name[0] for name in namelist]))
 
 form=''
 text=''
