@@ -140,6 +140,13 @@ Réponse de l'élève :  {{last_user_response.student_id}}
 
 evaluator == #|python|
 from math import ceil
+from database_utils import get_session, Base, Evaluation
+
+with get_session(table_class = Response, base=Base) as session:
+    session.add(Evaluation(student_id = user__id if user__id else session__id, eval = str(response), response_id = last_user_response.id)
+    session.commit()
+
+
 
 error = 0
 note_student = 0
