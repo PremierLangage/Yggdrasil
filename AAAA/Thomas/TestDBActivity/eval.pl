@@ -143,7 +143,7 @@ from math import ceil
 from database_utils import get_session, Base, Evaluation
 
 with get_session(table_class = Evaluation, base=Base) as session:
-    session.add(Evaluation(student_id = user__id if user__id else session__id, eval = str(response), response_id = last_user_response.id))
+    session.add(Evaluation(student_id = user__id if user__id else session__id, eval = str(response), response_id = response_id))
     session.commit()
 
 
