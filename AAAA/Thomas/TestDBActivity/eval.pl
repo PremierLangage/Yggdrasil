@@ -117,7 +117,6 @@ Enoncé de la question :
 <br/>
 Réponse de l'élève :  {{response_user_id}}
 {{ codeAnswer|component }}
-<p style="color: rgb(50, 100, 250);">{{data.answer}}<p>
 <br/>
 
 {% for rg in radio %} 
@@ -158,6 +157,7 @@ with get_session(table_class = Evaluation, base=Base) as session:
 
 grade = (100, feedback)
 
+aa=
 """
 error = 0
 note_student = 0
