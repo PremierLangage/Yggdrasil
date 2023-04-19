@@ -52,6 +52,7 @@ with get_session(table_class= Response, base=Base) as session:
     last_user_response = session.execute(text(f"SELECT responses.id, responses.value FROM test_db_activity_response_3 AS responses LEFT OUTER JOIN test_db_activity_evaluation_3 AS evals ON responses.id = evals.response_id WHERE (evals.student_id != {user__id} OR evals.response_id IS NULL) AND responses.student_id != {user__id};")).first()
 
 codeAnswer.code = str(last_user_response.value)
+response_id = last_user_response.id
 
 # paramètre data contenant la question et la réponse de l'élève
 data = {"question": "Quel âge avez-vous ?", "answer": last_user_response.value}
