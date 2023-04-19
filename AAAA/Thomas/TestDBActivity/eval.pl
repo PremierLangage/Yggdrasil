@@ -111,7 +111,7 @@ form  == #|html|
 <b style="color: red;">Remplissez tous les champs de l'évaluation</b>
 J'ai l'id : {{user__id}}
 <br/><br/>
-Enoncé de la question :  
+Enoncé de la question : {{response_id}}
 <p style="color: rgb(50, 100, 250);">{{data.question}}<p>
 <br/>
 Réponse de l'élève :  {{last_user_response.student_id}}
