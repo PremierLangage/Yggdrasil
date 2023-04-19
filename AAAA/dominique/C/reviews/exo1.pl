@@ -21,7 +21,7 @@ firstform==
 
 lastform==
 <table style="border-spacing: 30px; border-collapse: separate;">
-<tr><td>Votre évaluation sur 1 à 100 </td><td> <input type=text id="form_note" default=100 /> </td></tr>
+<tr><td>Votre évaluation sur 1 à 100 </td><td> <input type=text id="form_note" value=100 /> </td></tr>
 </table>
 
 
