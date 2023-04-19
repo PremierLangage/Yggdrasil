@@ -49,7 +49,7 @@ with get_session(table_class= Response, base=Base) as session:
                 or_(Evaluation.student_id != user__id, Evaluation.student_id is None),
                 Response.student_id != user__id
                 )
-    last_user_response = session.execute(text(f"SELECT responses.id, responses.value, responses.student_id FROM test_db_activity_response_3 AS responses LEFT OUTER JOIN test_db_activity_evaluation_3 AS evals ON responses.id = evals.response_id WHERE (evals.student_id != {user__id} OR evals.response_id IS NULL) AND responses.student_id != {user__id};")).first()
+    last_user_response = session.execute(text(f"SELECT * FROM test_db_activity_response_3 AS responses WHERE student_id != {user__id} AND id NOT IN (SELECT response_id FROM test_db_activity_evaluation_3 WHERE student_id = {user__id});")).first()
 
 codeAnswer.code = str(last_user_response.value)
 response_id = last_user_response.id
