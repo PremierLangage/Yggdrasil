@@ -33,5 +33,4 @@ listeofnames = [('truc',''),('prenom',' mettez ce que vous voulez '),('alias',' 
 form=make_form(listofnames)
 grade=(100,"")
 
-
 ==
