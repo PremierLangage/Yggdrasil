@@ -1,6 +1,9 @@
 
+@ /utils/sandboxio.py
+grader  =@ /grader/evaluator.py
+builder =@ /builder/before.py
 
-
+author = Dominique Revuz 2023
 
 before==
 
