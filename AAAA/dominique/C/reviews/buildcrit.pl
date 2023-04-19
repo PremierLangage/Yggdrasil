@@ -15,10 +15,7 @@ text=
 
 
 before==
-
-
-## une liste de noms de variables 
-## pour produire un formulaire de saisie
+from tools import *
 
 
 
@@ -29,6 +26,7 @@ text= "** Remplir les champs SVP**"
 ==
 
 evaluator==
+from tools import *
 def make_evaluator(response, namelist):
     d={}
     for name in namelist:
