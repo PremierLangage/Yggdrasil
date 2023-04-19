@@ -43,6 +43,7 @@ if step == 0:
     ledico =make_dict(response,[name[0] for name in listofnames])
     listofnames = listeofevals
     step=1
+    response={}
     form=make_form(listofnames)
 else:
     feedback = listeofevals[0][0] +":"+response[listeofevals[0][0]]+"!"
