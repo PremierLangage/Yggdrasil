@@ -79,7 +79,7 @@ if step==0:
     grade=(-1,"")
 
 
-elif step <len(texts):
+elif step <len(criteres):
     report += f'## {CRIT["title"]} \n\n'
     report_html += f'<h2>{CRIT["title"]}</h2><br />'
     S = group.selection
@@ -92,7 +92,7 @@ elif step <len(texts):
         report += response[name]+"\n\n"
         report_html += response[name]+"<br /><br />"
     step+=1 
-    if step == len(texts):
+    if step == len(criteres):
         text = report + report_html
         form=''
         step -= 1 
