@@ -54,7 +54,7 @@ with get_session(table_class= Response, base=Base) as session:
 codeAnswer.code = str(last_user_response)
 
 # paramètre data contenant la question et la réponse de l'élève
-data = {"question": "Quel âge avez-vous ?", "answer": last_user_response}
+data = {"question": "Quel âge avez-vous ?", "answer": last_user_response.value}
 
 # paramètre criteria contenant la grille critériée
 criteria =[
