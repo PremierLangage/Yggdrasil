@@ -147,11 +147,16 @@ from math import ceil
 from database_utils import get_session, Base, Evaluation
 
 with get_session(table_class = Evaluation, base=Base) as session:
-    session.add(Evaluation(student_id = user__id if user__id else session__id, eval = str(response), response_id = response_id))
-    session.commit()
+    try : 
+        session.add(Evaluation(student_id = user__id if user__id else session__id, eval = str(response), response_id = response_id))
+        session.commit()
+        feedback = "<span class="success-state center">Votre formulaire à bien été transmit</span>"
+        form=""
+    except: 
+        feedback = "<span class="error-state center">Le serveur a rencontré une erreur, merci de réessayer. Si le problème persiste veuillez contacter votre professeur</span>"
 
 
-
+grade = (100, feedback)
 
 """
 error = 0
