@@ -45,7 +45,7 @@ if step == 0:
     step=1
     form=make_form(listofnames)
 else:
-
+    feedback = listeofevals[0][0] +":"+response[listeofevals[0][0]]+"!"
     if len(response[listeofevals[0][0]])==0:
         # fin de critères 
         # wrapit up
