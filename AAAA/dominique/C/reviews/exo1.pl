@@ -80,8 +80,8 @@ if step==0:
 
 
 elif step <len(texts):
-    report += f"## {CRIT["title"]} \n\n"
-    report_html += f"<h2>{CRIT["title"]}</h2><br />"
+    report += f'## {CRIT["title"]} \n\n'
+    report_html += f'<h2>{CRIT["title"]}</h2><br />'
     S = group.selection
     for item in group.items:
         if item['id'] == S:
