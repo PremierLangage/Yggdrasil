@@ -157,8 +157,7 @@ with get_session(table_class = Evaluation, base=Base) as session:
 
 grade = (100, feedback)
 
-aa=
-"""
+aa="""
 error = 0
 note_student = 0
 
