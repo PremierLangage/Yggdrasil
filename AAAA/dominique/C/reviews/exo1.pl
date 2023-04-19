@@ -22,7 +22,7 @@ firstform==
 <tr><td>Votre <b>nom</b> (en tant que relecteur) </td><td> <input type=text id="form_nom" /> </td></tr>
 <tr><td>Nom de l'<b>auteur</b> de la production </td><td> <input type=text id="form_author" /> </td></tr>
 <tr><td>Nom du code ou <b>projet</b> relu </td><td> <input type=text id="form_code" /> </td></tr>
-<tr><td>Note</td><td> <input type=number minInteger=0 maxInteger=100 id="form_code" /> </td></tr>
+<tr><td>Note</td><td> <input type=number minInteger=0 maxInteger=100 id="form_note" /> </td></tr>
 </table>
 ==
 
