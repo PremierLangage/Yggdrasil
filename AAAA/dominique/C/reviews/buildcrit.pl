@@ -41,8 +41,8 @@ def streval(response, namelist):
     return s
 
 
-    
-form = make_form([('nom',' votre nom'),('sujet',' le titre/description du travail a accomplir')])
+listofnames =[('nom',' votre nom'),('sujet',' le titre/description du travail a accomplir')]
+form = make_form(listofnames)
 text= "** Remplir les champs SVP**" 
 
 ==
@@ -61,7 +61,7 @@ def streval(response, namelist):
         s += f"{name} = {d[name]}<BR> "
     return s
 
-grade=(100,streval(response,[name[0] for name in namelist]))
+grade=(100,streval(response,[name[0] for name in listofnames]))
 
 form=''
 text=''
