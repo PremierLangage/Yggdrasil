@@ -38,7 +38,7 @@ text = evaluateur["description"]
 #text += '<a href="https://pl-preprod.u-pem.fr/filebrowser/option?name=download_resource&path=Yggdrasil/storage/5431f071-e9ce-4d2c-8d2c-556df5263811-43165-1816/crits.txt"> download </a>'
 form = firstform
 
-
+criteres = criteres[:2] # pour les tests 
 step=0
 
 
@@ -105,7 +105,7 @@ elif step <len(criteres):
         form="{{ group|component }} \n"+f'''<br />\nPrécisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> 
         '<textarea id="form_comcrit{step}" rows="6" cols="80" ></textarea>'''
         group= additems(group,CRIT["evals"], step)
-        
+        form += """Nom du code ou <b>projet</b> relu </td><td> <input type=text id="form_code" />"""
         grade=(-1,"")
         
         
