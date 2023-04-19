@@ -14,14 +14,14 @@ def make_form(namelist): # type: (List[(str,str)]) -> str
     form += '</table>'
     return form
 
-def make_evaluator(response, namelist):
+def make_dict(response, namelist):
     d={}
     for name in namelist:
         d[name] = response.get(name, "")
     return d
 
 def streval(response, namelist):
-    d = make_evaluator(response, namelist)
+    d = make_dict(response, namelist)
     s=""
     for name in namelist:
         s += f"{name} = {d[name]}<BR> "
