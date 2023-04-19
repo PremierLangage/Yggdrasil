@@ -42,14 +42,14 @@ with get_session(table_class= Response, base=Base) as session:
         Response.student_id, Response.value).join(
             Evaluation, Response.id == Evaluation.response_id,isouter=True).filter(
                 Evaluation.student_id != user__id or Evaluation.student_id is None).order_by(func.random())
-    last_user_response = session.execute(
-        select(Response.student_id, Response.value).join(
+    last_user_response = session.query(
+        Response.student_id, Response.value).join(
             Evaluation, Response.id == Evaluation.response_id, isouter=True
             ).filter(
                 or_(Evaluation.student_id != user__id, Evaluation.student_id is None),
                 Response.student_id != user__id
                 )
-            ).all()
+            ).
 
 codeAnswer.code = str(last_user_response)
 
