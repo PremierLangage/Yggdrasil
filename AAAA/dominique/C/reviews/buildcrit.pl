@@ -48,7 +48,12 @@ text= "remplir les champs"
 ==
 
 evaluator==
-
+def make_evaluator(response, namelist):
+    d={}
+    for name in namelist:
+        d[name] = response.get(name, "")
+    return d
+    
 grade=(100,streval(response,[name[0] for name in [('nom',' votre nom'),('sujet',' le titre du travaiil a accomplir')]]))
 
 form=''
