@@ -70,10 +70,12 @@ if step==0:
     report += "\n\n"
     report_html += "<br /><br />"
     step = 1
-    text=texts[step]+" Step : "+str(step)
+    CRIT=criteres[step]
+    text=CRIT["description"]+" Step : "+str(step)
+    title=CRIT["title"]
     form="{{ group|component }} \n"+f''' <br />\nPrécisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> 
     '<textarea id="form_comcrit{step}" rows="6" cols="80" ></textarea>'''
-    group= additems(group,forms[step], step)
+    group= additems(group,CRIT["evals"], step)
     grade=(-1,"")
 
 
