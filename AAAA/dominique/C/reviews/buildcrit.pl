@@ -27,19 +27,6 @@ text= "** Remplir les champs SVP**"
 
 evaluator==
 from tools import *
-def make_evaluator(response, namelist):
-    d={}
-    for name in namelist:
-        d[name] = response.get(name, "")
-    return d
-
-def streval(response, namelist):
-    d = make_evaluator(response, namelist)
-    s=""
-    for name in namelist:
-        s += f"{name} = {d[name]}<BR> "
-    return s
-
 
 text=streval(response,[name[0] for name in listofnames])
 listeofnames = [('truc',''),('prenom',' mettez ce que vous voulez '),('alias',' pas mieux')]
