@@ -38,7 +38,7 @@ with get_session(table_class= Response, base=Base) as session:
         session.commit()
     last_user_response = session.query(
         Response.student_id, Response.value).join(
-            Evaluation, Response.id == Evaluation.response_id,isouter=True).where(
+            Evaluation, Response.id == Evaluation.response_id,isouter=True).filter(
                 Evaluation.student_id != user__id or Evaluation.student_id is None).order_by(func.random())
 
 codeAnswer.code = str(last_user_response)
