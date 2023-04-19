@@ -19,9 +19,16 @@ from tools import *
 
 
 
-listofnames =[('nom',' votre nom'),('sujet',' le titre/description du travail a accomplir')]
+listofnames =[('titre',' Titre de l\'évaluation'),('description','Ceci décrit l\'objectif de l\'evaluation et les critères de façon générale')]
 form = make_form(listofnames)
 text= "** Remplir les champs SVP**<br>" 
+
+
+
+listeofevals=[('titre du critère',''),('description du critère'),('echec', 'décrire ce que (ne) contient (pas) la réponse de l'élève qui imlique un échec sur ce critère '),('passable','Décrire ce qui pour cet exercice est une copie passable'),('bien','décrire les élements de qualité attendu pour valoriser la copie sur ce critère'), ('très bien','décrire les élements de qualité qui rendent la copie remarquable')]
+
+
+step=0
 
 ==
 
