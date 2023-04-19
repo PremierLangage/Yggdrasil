@@ -7,6 +7,10 @@ author = Dominique Revuz 2023
 
 title = Générateur de grilles critèriées
 
+form=
+text=
+
+
 before==
 
 
