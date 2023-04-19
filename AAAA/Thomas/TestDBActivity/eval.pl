@@ -31,7 +31,7 @@ before == #|python|
 #Obtention d'un réponse aléatoire qui n'est pas la mienne et que je n'ai jamais corrigé
 from database_utils import get_session, Base, Response, Evaluation
 from sqlalchemy.sql import func
-from sqlalchemy import select, or_
+from sqlalchemy import select, or_, text
 
 with get_session(table_class= Response, base=Base) as session:
     if not session.query(Response).filter(Response.student_id == 0).all() : 
