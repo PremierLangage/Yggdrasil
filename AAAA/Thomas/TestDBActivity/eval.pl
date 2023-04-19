@@ -36,7 +36,7 @@ with get_session(table_class= Response, base=Base) as session:
     if not session.query(Response).filter(Response.student_id == 0).all() : 
         session.add(Response(student_id = 0, value = "Salut ! Comment ça va?"))
         session.commit()
-    last_user_response = session.query(Response.student_id, Response.value).join(Evaluation, Response.id == Evaluation.response_id,isouter=True).where(Response.student_id != user__id and (Evaluation.student_id != user__id or Evaluation.student_id is null)).order_by(func.random())
+    last_user_response = session.query(Response.student_id, Response.value).join(Evaluation, Response.id == Evaluation.response_id,isouter=True).where(Response.student_id != user__id and (Evaluation.student_id != user__id or Evaluation.student_id is null)).order_by(func.random()).first()
 
 codeAnswer.code = str(last_user_response)
 
