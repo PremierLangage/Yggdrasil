@@ -28,28 +28,18 @@ lastform==
 
 
 
-first==
-## **Bienvenu sur l'assistant online d'aide à la génération de rapport pour la review de code en langage C.**
-<br />
-Commencez par vous présenter, précisez l'auteur du code reviewé ainsi qu'une description pour la production évaluée.
 
-Prennez votre temps pour valider pas à pas votre rapport mais ATTENTION n'actualiser la page à aucun moment, vous perdriez votre début de rapport et cela réinitialiserait le générateur à la première étape.
-==
 before==
 from drutils import raiseifabsent, additems
 from ast import literal_eval 
 
+title =evaluateur["title"]
+text = evaluateur["description"]
+form = firstform
 
-raiseifabsent('texts', ' Liste de critères ', globals())
-texts=[first] + literal_eval(texts)
-raiseifabsent('titlecrit', ' titre de critères ', globals())
-titlecrit=literal_eval(titlecrit)
-raiseifabsent('formfills','liste de choix des différents critères ', globals())
-forms = [firstform] + literal_eval(formfills) 
 
 step=0
-text=texts[step]
-form=forms[step]
+
 
 ==
 
