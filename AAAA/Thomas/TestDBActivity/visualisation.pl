@@ -23,7 +23,7 @@ for response in responses:
     code_editor = CodeEditor()
     code_editor.code = response.value
     code_editor.theme = "light"
-    
+
     rep_dic["response"] = code_editor
     rep_dic["student_id"] = response.student_id
     evals_list = list()
@@ -59,7 +59,7 @@ form==
 <p>Vous êtes un {{user__role}}</p>
 
 {% for student_response in display_data %}
-
+    {{ student_response.response|component }}
 
     {% for evaluation in student_response["evaluations"] %}
 
