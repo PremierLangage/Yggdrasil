@@ -73,6 +73,7 @@ with get_session(table_class= Response, base=Base) as session:
 
             for i in range(100):
                 radio = evaluation.get(str(i), None)
+                globals()[str(radio["cid"])] = radio
                 if not radio:
                     break
                 
@@ -89,7 +90,6 @@ with get_session(table_class= Response, base=Base) as session:
         rep_dic["evaluations"] = evals_list
         display_data.append(rep_dic)
 
-aa = list(map(str, range(20)))
 
 ==
 
