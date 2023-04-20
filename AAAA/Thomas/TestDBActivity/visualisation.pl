@@ -12,6 +12,7 @@ Ce n'est pas un exercice à proprement parler juste une façon de visualiser les
 
 before==#|py|
 from database_utils import get_session, Base, Response
+import sys
 
 responses = list()
 display_data = list()
@@ -37,6 +38,8 @@ with get_session(table_class= Response, base=Base) as session:
             
             crit_list = list()
             evaluation = eval(evaluation.eval)
+
+            print("AHHHHHH", 
 
             for i in range(100):
                 radio = evaluation.get(str(i), None)
