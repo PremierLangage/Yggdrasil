@@ -76,8 +76,8 @@ with get_session(table_class= Response, base=Base) as session:
                 if not radio:
                     break
 
-                radio["cid"] = uuid.uuid4()
-                globals()[str(radio["cid"])] = radio
+                radio["cid"] = str(uuid.uuid4())
+                globals()[radio["cid"]] = radio
                 crit = dict()
                 radio["disabled"] = True
                 radio["horizontal"] = True
