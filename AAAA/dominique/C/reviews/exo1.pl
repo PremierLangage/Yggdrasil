@@ -105,7 +105,6 @@ elif step <len(criteres):
         form="{{ group|component }} \n"+f'''<br />\nPrécisions le cas échéant (en particulier si vous avez des suggestions d\'amélioration) : <br /> 
         '<textarea id="form_comcrit{step}" rows="6" cols="80" ></textarea>'''
         group= additems(group,CRIT["evals"], step)
-        form += """Nom  <input type=range min=1 max=100 id="form_note" />"""
         grade=(-1,"")
         
         
