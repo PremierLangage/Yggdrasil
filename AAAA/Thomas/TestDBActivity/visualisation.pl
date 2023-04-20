@@ -77,7 +77,6 @@ form==
         {% for crit in evaluation["crit_list"] %}
             <p> Ceci est un critaire : <p></br>
             {{ evaluation["radio"] }}
-            {{ evaluation["radio"]|component }}
             {% if evaluation["comment"] != None %}
             <textarea name="justificatif" cols=30% rows="2" readonly=true>{{ evaluation["comment"] }}</textarea>
             {% endif %}
