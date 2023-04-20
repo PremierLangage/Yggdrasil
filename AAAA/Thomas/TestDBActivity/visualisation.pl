@@ -27,7 +27,7 @@ with get_session(table_class= Response, base=Base) as session:
     for response in responses:
         rep_dic = dict()
         code_editor = CodeEditor(cid = uuid.uuid4())
-        code_editor.code = response.value
+        code_editor.code = str(response.value)
         code_editor.theme = "light"
 
         rep_dic["response"] = vars(code_editor)
