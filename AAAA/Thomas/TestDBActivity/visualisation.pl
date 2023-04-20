@@ -20,7 +20,11 @@ display_data = list()
 
 for response in responses:
     rep_dic = dict()
-    rep_dic["response"] = response.value
+    code_editor = CodeEditor()
+    code_editor.code = response.value
+    code_editor.theme = "light"
+    
+    rep_dic["response"] = code_editor
     rep_dic["student_id"] = response.student_id
     evals_list = list()
     for evaluation in evaluations:
@@ -42,7 +46,7 @@ for response in responses:
         
         eval_dic["crit_list"] = crit_list or None
         evals_list.append(eval_dic)
-    rep_dic["evals"] = evals_list
+    rep_dic["evaluations"] = evals_list
     display_data.append(rep_dic)
 
 ==
@@ -55,7 +59,10 @@ form==
 <p>Vous êtes un {{user__role}}</p>
 
 {% for student_response in display_data %}
-    {% for evaluation in student_response.evaluations %}
+
+
+    {% for evaluation in student_response["evaluations"] %}
+
 
 
 {% endfor %} 
