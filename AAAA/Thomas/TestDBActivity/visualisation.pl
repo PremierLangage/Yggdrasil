@@ -75,6 +75,7 @@ with get_session(table_class= Response, base=Base) as session:
                 if not radio:
                     break
                 
+                aaaaa = radio
                 crit = dict()
                 radio["disabled"] = True
                 crit["radio"] = radio
