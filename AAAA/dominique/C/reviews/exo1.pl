@@ -106,9 +106,5 @@ elif step <len(criteres):
         '<textarea id="form_comcrit{step}" rows="6" cols="80" ></textarea>'''
         group= additems(group,CRIT["evals"], step)
         grade=(-1,"")
-        
-        
-
-
 
 ==
