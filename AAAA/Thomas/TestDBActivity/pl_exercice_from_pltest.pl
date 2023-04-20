@@ -1,6 +1,7 @@
 
 #import pour intéractions avec bdd
 @database_utils.py
+@ /builder/before.py [builder.py]
 
 extends = /AAAA/Thomas/template/pltest.pl
 
@@ -31,6 +32,18 @@ True
 >>> l = sample(range(-1000, 1000), 200) #
 >>> sum_of_positive(l) == sum(i for i in l if i > 0) # La fonction s'execute comme la solution
 True
+==
+
+
+before==#|py|
+from database_utils import get_session, Base, Response
+
+already_anwsered = False
+
+with get_session(table_class= Response, base=Base) as session:
+    if session.query(Response).filter(Response.student_id == user__id).first() : 
+        already_anwsered = True
+del session
 ==
 
 
