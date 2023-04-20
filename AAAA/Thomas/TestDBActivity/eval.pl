@@ -110,7 +110,7 @@ for value in criteria :
 
 
 form  == #|html|
-{% if last_user_response is None %}
+{% if last_user_response == None %}
 <p>Aucune copie à corriger, revenez plus tard.</p>
 {% else %}
 <b style="color: red;">Remplissez tous les champs de l'évaluation</b>
