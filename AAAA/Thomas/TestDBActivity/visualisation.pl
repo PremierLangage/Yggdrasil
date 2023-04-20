@@ -75,8 +75,6 @@ form==
 
 {% for student_response in display_data %}
     <p>Reponse de l'élève : {{ student_response["student_id"] }}</p>
-    {{ student_response["response"]|component }}
-
 
 {% endfor %} 
 
