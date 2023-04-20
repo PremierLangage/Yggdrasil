@@ -21,7 +21,7 @@ aaaaa = ""
 
 with get_session(table_class= Response, base=Base) as session:
     if user__role == "teacher":
-        responses = session.query(Response).filter(Reponse.student_id == "43292").all()
+        responses = session.query(Response).filter(Response.student_id == "43292").all()
     else :
         responses = session.query(Response).filter(Response.student_id == user__id).all()
 
