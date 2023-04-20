@@ -70,7 +70,7 @@ form==
 <p>Vous êtes un {{user__role}}</p>
 
 {% for i in aa %}
-<p>i</p>
+<p>{{ i }}</p>
 {% endfor %}
 
 
