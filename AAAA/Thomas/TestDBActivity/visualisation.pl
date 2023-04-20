@@ -17,6 +17,7 @@ import uuid
 
 responses = list()
 display_data = list()
+aaaaa = ""
 
 with get_session(table_class= Response, base=Base) as session:
     if user__role == "teacher":
@@ -28,6 +29,7 @@ with get_session(table_class= Response, base=Base) as session:
         rep_dic = dict()
         code_editor = CodeEditor(cid = uuid.uuid4())
         code_editor.code = str(response.value)
+        aaaaa = str(response.value)
         code_editor.theme = "light"
 
         rep_dic["response"] = vars(code_editor)
