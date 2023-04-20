@@ -30,11 +30,11 @@ with get_session(table_class= Response, base=Base) as session:
 
     for response in responses:
         rep_dic = dict()
-        code_editor = CodeEditor(cid = uuid.uuid4())
+        code_editor = CodeEditor(cid = str(uuid.uuid4()))
         code_editor.code = str(response.value)
         aaaaa = str(response.value)
         code_editor.theme = "light"
-        code_editor.debug = True
+     #   code_editor.debug = True
 
         rep_dic["response"] = vars(code_editor)
         rep_dic["student_id"] = response.student_id
@@ -55,7 +55,7 @@ with get_session(table_class= Response, base=Base) as session:
                     break
                 
                 crit = dict()
-            radio["disabled"] = True
+                radio["disabled"] = True
                 crit["radio"] = radio
                 crit["comment"] = evaluation.get("commentaire_"+str(i), None)
                 crit_list.append(crit)
