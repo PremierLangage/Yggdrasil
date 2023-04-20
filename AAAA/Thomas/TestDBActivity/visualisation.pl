@@ -31,8 +31,9 @@ with get_session(table_class= Response, base=Base) as session:
         code_editor.code = str(response.value)
         aaaaa = str(response.value)
         code_editor.theme = "light"
+        code_editor.debug = True
 
-        rep_dic["response"] = code_editor
+        rep_dic["response"] = vars(code_editor)
         rep_dic["student_id"] = response.student_id
         evals_list = list()
         for evaluation in response.evaluations:
