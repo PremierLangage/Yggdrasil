@@ -46,7 +46,6 @@ with get_session(table_class= Response, base=Base) as session:
                 if not radio:
                     break
                 
-                aaaaa = radio
                 crit = dict()
                 radio["disabled"] = True
                 crit["radio"] = radio
@@ -68,7 +67,7 @@ grader==
 
 form==
 <p>Vous êtes un {{user__role}}</p>
-{{aaaaa|component}}
+{{display_data}}
 
 {% for student_response in display_data %}
     <p>Reponse de l'élève : {{ student_response["student_id"] }}</p>
@@ -78,7 +77,7 @@ form==
         <p> Évaluation faite par l'élève : {{evaluation["student_id"]}} </p>
         {% for crit in evaluation["crit_list"] %}
             <p> Ceci est un critaire : <p></br>
-            {{ evaluation["radio"] }}
+            
             {{ evaluation["radio"]|component }}
             {% if evaluation["comment"] != None %}
             <textarea name="justificatif" cols=30% rows="2" readonly=true>{{ evaluation["comment"] }}</textarea>
