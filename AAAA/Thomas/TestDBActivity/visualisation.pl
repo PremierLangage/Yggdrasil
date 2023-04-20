@@ -13,6 +13,7 @@ Ce n'est pas un exercice à proprement parler juste une façon de visualiser les
 before==#|py|
 from database_utils import get_session, Base, Response
 import sys
+import uuid
 
 responses = list()
 display_data = list()
@@ -25,7 +26,7 @@ with get_session(table_class= Response, base=Base) as session:
 
     for response in responses:
         rep_dic = dict()
-        code_editor = CodeEditor()
+        code_editor = CodeEditor(cid = uuid.uuid4())
         code_editor.code = response.value
         code_editor.theme = "light"
 
@@ -69,9 +70,6 @@ grader==
 form==
 <p>Vous êtes un {{user__role}}</p>
 
-{% for i in aa %}
-<p>{{ i }}</p>
-{% endfor %}
 
 {% for student_response in display_data %}
     <p>Reponse de l'élève : {{ student_response["student_id"] }}</p>
