@@ -9,6 +9,7 @@
 title= Visualisation des évaluations
 
 text==
+Ce n'est pas un exercice à proprement parler juste une façon de visualiser les différents remarques faites sur les copies rendues.
 ==
 
 before==#|py|
