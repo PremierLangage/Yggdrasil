@@ -28,7 +28,7 @@ comment_by_criteria = True
 before == #|python|
 
 codeAnswer = CodeEditor(cid = "codeAnswer")
-codeAnswer.theme = light
+codeAnswer.theme = "light"
 
 #Obtention d'un réponse aléatoire qui n'est pas la mienne et que je n'ai jamais corrigé
 from database_utils import get_session, Base, Response, Evaluation
