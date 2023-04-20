@@ -38,11 +38,12 @@ True
 before==#|py|
 from database_utils import get_session, Base, Response
 
-already_anwsered = False
 
 with get_session(table_class= Response, base=Base) as session:
     if session.query(Response).filter(Response.student_id == user__id).first() : 
-        already_anwsered = True
+        form = ''
+        text = 'Vous avez déjà soumis une réponse. Veuillez passer à la partie correction'
+
 del session
 ==
 
