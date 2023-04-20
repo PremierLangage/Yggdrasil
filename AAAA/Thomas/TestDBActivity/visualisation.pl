@@ -36,6 +36,7 @@ with get_session(table_class= Response, base=Base) as session:
             eval_dic["student_id"] = evaluation.student_id
             
             crit_list = list()
+            evaluation = eval(evaluation.eval)
 
             for i in range(100):
                 radio = evaluation.get(str(i), None)
