@@ -108,9 +108,6 @@ form==
         <p> Évaluation faite par l'élève : {{evaluation["student_id"]}} </p>
         {% for crit in evaluation["crit_list"] %}
             <p> Ceci est un critaire : <p></br>
-            {{crit["radio"]}}
-            </br>
-           
             {{ crit["radio"]|component }}
             {% if crit["comment"] != None %}
             <textarea name="justificatif" cols=30% rows="2" readonly=true>{{ crit["comment"] }}</textarea>
