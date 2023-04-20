@@ -1,4 +1,6 @@
 
+@ /builder/before.py [builder.py]
+
 title= Visualisation des évaluations
 
 text==
