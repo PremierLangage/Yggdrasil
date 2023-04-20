@@ -15,7 +15,7 @@ class Response(Base):
     student_id : Mapped[int] = mapped_column(Integer)
     value : Mapped[Text] = mapped_column(Text)
     evaluations : Mapped[List["Evaluation"]] = relationship(back_populates="response", cascade="all, delete-orphan")
-
+    
     def __repr__(self):
           return f"{self.student_id} à répondu : {self.value}. Il a eu {len(self.evaluations)} évaluations."
 
@@ -25,11 +25,11 @@ class Evaluation(Base):
     id : Mapped[int] = mapped_column(primary_key=True)
     student_id : Mapped[int] = mapped_column(Integer)
     eval : Mapped[Text] = mapped_column(Text)
-
+    
     response_id : Mapped[int] = mapped_column(ForeignKey('test_db_activity_response_3.id'))
     response : Mapped["Response"] = relationship(back_populates="evaluations")
-
-    def __re    pr__(self):
+    
+    def __repr__(self):
           return f"{self.student_id} à évalué la réponse : {self.response.id}"
 
 
