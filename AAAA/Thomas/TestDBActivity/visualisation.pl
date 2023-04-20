@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 title= Visualisation des évaluations
 
 text==
@@ -25,6 +18,8 @@ del session
 ==
 
 form==
+<p>Vous êtes un {{user__role}}</p>
+
 
 ==
 
