@@ -29,7 +29,7 @@ with get_session(table_class= Response, base=Base) as session:
         code_editor.code = response.value
         code_editor.theme = "light"
 
-        rep_dic["response"] = code_editor
+        rep_dic["response"] = vars(code_editor)
         rep_dic["student_id"] = response.student_id
         evals_list = list()
         for evaluation in response.evaluations:
@@ -75,7 +75,17 @@ form==
 
 {% for student_response in display_data %}
     <p>Reponse de l'élève : {{ student_response["student_id"] }}</p>
+    {{ student_response["response"]|component }}
 
+    {% for evaluation in student_response["evaluations"] %}
+        <p> Évaluation faite par l'élève : {{evaluation["student_id"]}} </p>
+        {% for crit in evaluation["crit_list"] %}
+            {{ evaluation["radio"]|component }}
+            {% if evaluation["comment"] != None %}
+            <textarea name="justificatif" cols=30% rows="2" readonly=true>{{ evaluation["comment"] }}</textarea>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
 {% endfor %} 
 
 
