@@ -20,7 +20,7 @@ display_data = list()
 
 with get_session(table_class= Response, base=Base) as session:
     if user__role == "teacher":
-        responses = session.query(Response).all()
+        responses = session.query(Response).first()
     else :
         responses = session.query(Response).filter(Response.student_id == user__id).all()
 
