@@ -32,7 +32,7 @@ for response in responses:
     rep_dic["response"] = code_editor
     rep_dic["student_id"] = response.student_id
     evals_list = list()
-    for evaluation in evaluations:
+    for evaluation in response.evaluations:
         eval_dic = dict()
         eval_dic["student_id"] = evaluation.student_id
         
