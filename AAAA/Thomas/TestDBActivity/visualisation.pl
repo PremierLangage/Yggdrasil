@@ -15,6 +15,9 @@ from database_utils import get_session, Base, Response
 import sys
 import uuid
 
+normalCodeEditor = CodeEditor(cid = "codeAnswer")
+normalCodeEditor.theme = "light"
+normalCodeEditor.code = "import python\n..."
 responses = list()
 display_data = list()
 aaaaa = ""
@@ -77,6 +80,9 @@ form==
 {% for student_response in display_data %}
     <p>Reponse de l'élève : {{ student_response["student_id"] }}</p>
     {{ student_response["response"]|component }}
+    {{ student_response["response"] }}
+    normal one : 
+    {{  }}
 
     {% for evaluation in student_response["evaluations"] %}
         <p> Évaluation faite par l'élève : {{evaluation["student_id"]}} </p>
