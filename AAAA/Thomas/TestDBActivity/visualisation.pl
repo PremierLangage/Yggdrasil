@@ -73,10 +73,9 @@ with get_session(table_class= Response, base=Base) as session:
 
             for i in range(100):
                 radio = evaluation.get(str(i), None)
-                globals()[str(radio["cid"])] = radio
                 if not radio:
                     break
-                
+                globals()[str(radio["cid"])] = radio
                 bbbbb = radio if i < 2 else ""
                 aaaaa = radio
                 crit = dict()
