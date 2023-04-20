@@ -51,12 +51,13 @@ with get_session(table_class= Response, base=Base) as session:
                 )
     last_user_response = session.execute(text(f"SELECT * FROM test_db_activity_response_3 AS responses WHERE student_id != {user__id} AND id NOT IN (SELECT response_id FROM test_db_activity_evaluation_3 WHERE student_id = {user__id});")).first()
 
-codeAnswer.code = str(last_user_response.value)
-response_id = last_user_response.id
-response_user_id = last_user_response.student_id
+if last_user_response: 
+    codeAnswer.code = str(last_user_response.value)
+    response_id = last_user_response.id
+    response_user_id = last_user_response.student_id
 
-# paramètre data contenant la question et la réponse de l'élève
-data = {"question": "Quel âge avez-vous ?", "answer": last_user_response.value}
+    # paramètre data contenant la question et la réponse de l'élève
+    data = {"question": "Quel âge avez-vous ?", "answer": last_user_response.value}
 
 # paramètre criteria contenant la grille critériée
 criteria =[
@@ -109,6 +110,9 @@ for value in criteria :
 
 
 form  == #|html|
+{% if last_user_response is None %}
+<p>Aucune copie à corriger, revenez plus tard.</p>
+{% else %}
 <b style="color: red;">Remplissez tous les champs de l'évaluation</b>
 J'ai l'id : {{user__id}}
 <br/><br/>
@@ -136,6 +140,7 @@ Réponse de l'élève :  {{response_user_id}}
 <br/>
 <p>Explication et commentaire général :</p>
 <textarea id="form_commentaire" name="Commentaire" cols=100% rows="5"></textarea>
+{% endif %}
 ==
 
 
