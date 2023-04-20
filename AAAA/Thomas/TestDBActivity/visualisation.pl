@@ -15,9 +15,6 @@ from database_utils import get_session, Base, Response
 import sys
 import uuid
 
-normalCodeEditor = CodeEditor(cid = "codeAnswer")
-normalCodeEditor.theme = "light"
-normalCodeEditor.code = "import python\n..."
 responses = list()
 display_data = list()
 aaaaa = ""
@@ -32,9 +29,7 @@ with get_session(table_class= Response, base=Base) as session:
         rep_dic = dict()
         code_editor = CodeEditor(cid = str(uuid.uuid4()))
         code_editor.code = str(response.value)
-        aaaaa = str(response.value)
         code_editor.theme = "light"
-     #   code_editor.debug = True
 
         rep_dic["response"] = vars(code_editor)
         rep_dic["student_id"] = response.student_id
@@ -75,15 +70,10 @@ grader==
 
 form==
 <p>Vous êtes un {{user__role}}</p>
-{{aaaaa}}
 
 {% for student_response in display_data %}
     <p>Reponse de l'élève : {{ student_response["student_id"] }}</p>
     {{ student_response["response"]|component }}
-
-    {{ student_response["response"] }}</br>
-    normal one : </br>
-    {{ normalCodeEditor }}</br>
 
     {% for evaluation in student_response["evaluations"] %}
         <p> Évaluation faite par l'élève : {{evaluation["student_id"]}} </p>
