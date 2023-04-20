@@ -16,6 +16,10 @@ with get_session(table_class= Response, base=Base) as session:
 """
 ==
 
+grader==
+
+==
+
 form==
 <p>Vous êtes un {{user__role}}</p>
 
