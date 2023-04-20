@@ -110,7 +110,7 @@ form==
             <p> Ceci est un critaire : <p></br>
             {{crit["radio"]}}
             </br>
-            {{ aaaaa }}
+           
             {{ crit["radio"]|component }}
             {% if crit["comment"] != None %}
             <textarea name="justificatif" cols=30% rows="2" readonly=true>{{ crit["comment"] }}</textarea>
