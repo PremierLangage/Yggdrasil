@@ -55,7 +55,7 @@ with get_session(table_class= Response, base=Base) as session:
                     break
                 
                 crit = dict()
-                radio["disabled"] = True
+            radio["disabled"] = True
                 crit["radio"] = radio
                 crit["comment"] = evaluation.get("commentaire_"+str(i), None)
                 crit_list.append(crit)
