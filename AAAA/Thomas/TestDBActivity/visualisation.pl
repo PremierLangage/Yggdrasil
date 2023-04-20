@@ -82,7 +82,7 @@ form==
     {{ student_response["response"]|component }}
     {{ student_response["response"] }}
     normal one : 
-    {{  }}
+    {{ normalCodeEditor }}
 
     {% for evaluation in student_response["evaluations"] %}
         <p> Évaluation faite par l'élève : {{evaluation["student_id"]}} </p>
