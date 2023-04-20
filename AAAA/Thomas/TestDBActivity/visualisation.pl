@@ -78,7 +78,6 @@ form==
     {{ student_response["response"]|component }}
 
 
-    {% endfor %}
 {% endfor %} 
 
 
