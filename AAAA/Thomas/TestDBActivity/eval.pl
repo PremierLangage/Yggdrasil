@@ -23,10 +23,12 @@ text  =
 # balise comment_by_criteria : option pour avoir un commentaire par critère
 comment_by_criteria = True
 
-codeAnswer =: CodeEditor
-codeAnswer.theme = light
+
 
 before == #|python|
+
+codeAnswer = CodeEditor(cid = "codeAnswer")
+codeAnswer.theme = light
 
 #Obtention d'un réponse aléatoire qui n'est pas la mienne et que je n'ai jamais corrigé
 from database_utils import get_session, Base, Response, Evaluation
