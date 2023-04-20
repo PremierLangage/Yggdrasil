@@ -49,7 +49,7 @@ for response in responses:
     rep_dic["evaluations"] = evals_list
     display_data.append(rep_dic)
 
-aa = list(range(20))
+aa = list(map(str, range(20)))
 
 ==
 
