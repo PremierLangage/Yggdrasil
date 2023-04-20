@@ -46,7 +46,7 @@ import uuid
 
 responses = list()
 display_data = list()
-aaaaa = ""
+radios = []
 
 with get_session(table_class= Response, base=Base) as session:
     if user__role == "teacher":
@@ -75,7 +75,7 @@ with get_session(table_class= Response, base=Base) as session:
                 if not radio:
                     break
                 
-                aaaaa = radio
+                radios.append(radio)
                 crit = dict()
                 radio["disabled"] = True
                 crit["radio"] = radio
