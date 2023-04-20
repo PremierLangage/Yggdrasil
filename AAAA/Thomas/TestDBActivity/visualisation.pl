@@ -10,7 +10,36 @@ text==
 Ce n'est pas un exercice à proprement parler juste une façon de visualiser les différents remarques faites sur les copies rendues.
 ==
 
+group =: RadioGroup
+
+
 before==#|py|
+#########################################################################
+import random
+import uuid
+
+A = random.randint(0, 10)
+B = random.randint(0, 10)
+R = uuid.uuid4()
+
+# append random false answers to group.items array.
+group.items = []
+for i in range(4):
+    n = random.randint(0, 100)
+    while n == A * B:
+        n = random.randint(0, 100)
+    group.items.append({
+        "id": uuid.uuid4(), # generate a random id instead of an hardcoded to avoid cheat
+        "content": str(n)
+    })
+
+# append random right answer to group.items array.
+group.items.append({
+    "id": R,
+    "content": str(A * B)
+})
+#########################################################################
+
 from database_utils import get_session, Base, Response
 import sys
 import uuid
@@ -78,6 +107,8 @@ form==
         {% for crit in evaluation["crit_list"] %}
             <p> Ceci est un critaire : <p></br>
             {{crit["radio"]}}
+            </br>
+            {{ group|component }}
             {{ crit["radio"]|component }}
             {% if crit["comment"] != None %}
             <textarea name="justificatif" cols=30% rows="2" readonly=true>{{ crit["comment"] }}</textarea>
