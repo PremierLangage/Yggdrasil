@@ -51,7 +51,7 @@ bbbbb = ""
 
 with get_session(table_class= Response, base=Base) as session:
     if user__role == "teacher":
-        responses = session.query(Response).filter(Response.student_id == 43292).all()
+        responses = session.query(Response).all()
     else :
         responses = session.query(Response).filter(Response.student_id == user__id).all()
 
@@ -75,9 +75,9 @@ with get_session(table_class= Response, base=Base) as session:
                 radio = evaluation.get(str(i), None)
                 if not radio:
                     break
+
+                
                 globals()[str(radio["cid"])] = radio
-                bbbbb = radio if i < 2 else ""
-                aaaaa = radio
                 crit = dict()
                 radio["disabled"] = True
                 radio["horizontal"] = True
@@ -99,8 +99,6 @@ grader==
 
 form==
 <p>Vous êtes un {{user__role}}</p>
-{{display_data}}
-
 
 {% for student_response in display_data %}
     <p>Reponse de l'élève : {{ student_response["student_id"] }}</p>
