@@ -35,11 +35,12 @@ with get_session(table_class= Response, base=Base) as session:
         for evaluation in response.evaluations:
             eval_dic = dict()
             eval_dic["student_id"] = evaluation.student_id
+            print("BBBBBBBBBB", file=sys.stderr)
             
             crit_list = list()
             evaluation = eval(evaluation.eval)
 
-            print("AHHHHHH", 
+            print("AHHHHHH", file=sys.stderr)
 
             for i in range(100):
                 radio = evaluation.get(str(i), None)
