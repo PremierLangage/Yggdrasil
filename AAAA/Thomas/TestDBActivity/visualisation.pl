@@ -99,6 +99,7 @@ form==
 <p>Vous êtes un {{user__role}}</p>
 {{display_data}}
 
+
 {% for student_response in display_data %}
     <p>Reponse de l'élève : {{ student_response["student_id"] }}</p>
     {{ student_response["response"]|component }}
@@ -109,7 +110,7 @@ form==
             <p> Ceci est un critaire : <p></br>
             {{crit["radio"]}}
             </br>
-            {{ group }}
+            {{ aaaaa }}
             {{ crit["radio"]|component }}
             {% if crit["comment"] != None %}
             <textarea name="justificatif" cols=30% rows="2" readonly=true>{{ crit["comment"] }}</textarea>
