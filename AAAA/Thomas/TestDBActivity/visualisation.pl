@@ -97,16 +97,28 @@ grader==
 ==
 
 form==
+<pre>
+<code class="language-python">
+def fun():
+    return "coucou";
+</code>
+</pre>
+
+
 <p>Vous êtes un {{user__role}}</p>
 
 {% for student_response in display_data %}
     <p>Reponse de l'élève : {{ student_response["student_id"] }}</p>
     {{ student_response["response"]|component }}
-
+    <pre>
+    <code class="language-python">
+    {{student_response["response"].code}}
+    </code>
+    </pre>
     {% for evaluation in student_response["evaluations"] %}
         <p> Évaluation faite par l'élève : {{evaluation["student_id"]}} </p>
         {% for crit in evaluation["crit_list"] %}
-            <p> Ceci est un critaire : <p></br>
+            <p> Ceci est un critère : <p></br>
             {{ crit["radio"]|component }}
             {% if crit["comment"] != None %}
             <textarea name="justificatif" cols=30% rows="2" readonly=true>{{ crit["comment"] }}</textarea>
