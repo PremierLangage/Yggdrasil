@@ -38,7 +38,7 @@ text = evaluateur["description"]
 #text += '<a href="https://pl-preprod.u-pem.fr/filebrowser/option?name=download_resource&path=Yggdrasil/storage/5431f071-e9ce-4d2c-8d2c-556df5263811-43165-1816/crits.txt"> download </a>'
 form = firstform
 
-criteres = criteres[:3] # pour les tests 
+criteres = criteres # pour les tests 
 step=0
 
 
@@ -64,7 +64,7 @@ if step==0:
         report_html += " par <b>"+response['nom']+"</b>"
 
     import locale, time
-    # locale.setlocale(locale.LC_ALL, 'fr_FR') # il faut une instalation de language pack sur la sandbox
+    locale.setlocale(locale.LC_ALL, 'fr_FR') # il faut une instalation de language pack sur la sandbox
     maintenant = time.strftime('%A %d %B %Y %H:%M:%S')
     report += " le "+maintenant 
     report_html += " le "+maintenant 
