@@ -112,7 +112,7 @@ def fun():
     {{ student_response["response"]|component }}
     <pre>
     <code class="language-python">
-    {{student_response["response"].code}}
+{{student_response["response"].code}}
     </code>
     </pre>
     {% for evaluation in student_response["evaluations"] %}
