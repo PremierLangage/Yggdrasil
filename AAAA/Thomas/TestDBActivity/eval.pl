@@ -51,7 +51,7 @@ with get_session(table_class= Response, base=Base) as session:
                 or_(Evaluation.student_id != user__id, Evaluation.student_id is None),
                 Response.student_id != user__id
                 )
-    last_user_response = session.execute(text(f"SELECT * FROM test_db_activity_response_3 AS responses WHERE student_id != {user__id} AND id NOT IN (SELECT response_id FROM test_db_activity_evaluation_3 WHERE student_id = {user__id});")).first()
+    last_user_response = session.execute(text(f"SELECT * FROM test_db_activity_response_3 AS responses WHERE student_id != {user__id} AND id NOT IN (SELECT response_id FROM test_db_activity_evaluation_3 WHERE student_id = {user__id}) ORDER BY random();")).first()
 
 if last_user_response: 
     codeAnswer.code = str(last_user_response.value)
