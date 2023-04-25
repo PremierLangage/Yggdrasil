@@ -41,8 +41,8 @@ if __name__ == "__main__":
               file = sys.stderr)
         sys.exit(1)
     
-    print("ANTONINNNNNNNNN. --------", file=sys.stderr)
-   # sys.exit(69)
+    print("ANTONINNNNNNNNN. --------", dic, file=sys.stderr)
+    sys.exit(69)
 
     with open(output_json, "w+") as f:
         jsonpickle.encode(dic, unpicklable=False)
