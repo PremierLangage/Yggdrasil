@@ -45,7 +45,7 @@ if __name__ == "__main__":
     sys.exit(69)
 
     with open(output_json, "w+") as f:
-        jsonpickle.encode(dic, unpicklable=False)
+        jsonpickle.encode(dic["orhan"], unpicklable=False)
        # f.write()
         """
         f.seek(1)
