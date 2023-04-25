@@ -6,8 +6,10 @@ builder =@ /builder/before.py
 
 group =: RadioGroup
 
+before ==
 with open("test3.html", "r") as f:
     form = f.read()
+
 ==
 
 title = Radio Group Component
