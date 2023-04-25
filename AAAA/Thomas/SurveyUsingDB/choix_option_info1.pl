@@ -42,14 +42,13 @@ Logiciel
 Réseaux
 ==
 
-NUMBER_QUESTIONS=3
 
 ############################################
 
 before==#|python|
 radio = []
 
-for i in range(int(NUMBER_QUESTIONS)):
+for i in range(len(items.splitlines())):
     tmp = RadioGroup()
     tmp.question = globals()["question"+str(i+1)]
     tmp.items = []
@@ -82,6 +81,8 @@ feedback = '<span class="success-state">Réponse enregistrée</span>'
 answer = {}
 for i, r in enumerate(radio):
     answer[r.items[r.selection - 1]] = i
+
+if len(answer) != 
 
 if int(grade) == 100:
     with get_session(table_class = Response, base=Base) as session:
