@@ -6,6 +6,10 @@ builder =@ /builder/before.py
 group =: RadioGroup
 
 before ==
+import os
+
+os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib-ogs20b_w"
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
