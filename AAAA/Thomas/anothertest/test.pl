@@ -39,15 +39,6 @@ ax.set_xlabel('x')
 ax.set_ylabel('y')
 
 form = mpld3.fig_to_html(fig)
-d = {"form" : form}
-with open('test.html', 'w') as f:
-    print(d, file=f)
-
-"""
-with open('form.html', 'w') as f:
-    print(jsonpickle.encode(d, unpicklable=False), file=f)
-"""
-
 
 # deleting unserializable variables
 del ax
