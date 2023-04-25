@@ -48,6 +48,7 @@ group2 =: RadioGroup
 group3 =: RadioGroup
 
 before==#|python|
+vos_choix = ""
 
 group1.items = []
 group2.items = []
@@ -60,6 +61,7 @@ for i, item in enumerate(items.splitlines()):
 ==
 
 form==
+{{ vos choix }}
 
 {{ question1 }}
 
@@ -79,6 +81,11 @@ form==
 evaluator == #|py|
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
+.
+vos_choix = ""
+    vos_choix += "<b>Premier choix : </b>" + group1.selection
+    vos_choix += "<b>Second choix : </b>" + group2.selection
+    vos_choix += "<b>Troisième choix : </b>" + group3.selection
 
 grade = (score, feedback)
 ==
