@@ -61,7 +61,8 @@ for i, item in enumerate(items.splitlines()):
 ==
 
 form==
-{{ vos choix }}
+
+{{ vos_choix }}
 
 {{ question1 }}
 
