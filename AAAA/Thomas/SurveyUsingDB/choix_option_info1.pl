@@ -45,10 +45,6 @@ NUMBER_QUESTIONS=3
 
 ############################################
 
-group1 =: RadioGroup
-group2 =: RadioGroup
-group3 =: RadioGroup
-
 before==#|python|
 radio = []
 
