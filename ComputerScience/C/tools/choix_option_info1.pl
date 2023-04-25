@@ -29,8 +29,6 @@ classer les trois options de votre premier voeux (l'option qui vous interesse le
 (l'option qui vous interesse le moins).
 
 
-{{ vos_choix }}
-
 <br />
 ==
 
