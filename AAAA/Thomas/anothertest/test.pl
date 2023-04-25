@@ -38,6 +38,7 @@ for key, val in df.items():
 ax.set_xlabel('x')
 ax.set_ylabel('y')
 
+
 d = {"form", mpld3.fig_to_html(fig)}
 with open('test.html', 'w') as f:
     print(d, file=f)
@@ -47,7 +48,9 @@ with open('form.html', 'w') as f:
     print(jsonpickle.encode(d, unpicklable=False), file=f)
 """
 del d
-
+del df
+del hist
+del ax
 
 with open("test.html", "r") as f:
     form = f.read()
