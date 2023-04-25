@@ -50,6 +50,7 @@ group2 =: RadioGroup
 group3 =: RadioGroup
 
 before==#|python|
+import uuid
 
 radio = []
 
