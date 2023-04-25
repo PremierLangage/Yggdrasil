@@ -83,6 +83,7 @@ answer = {}
 for i, r in enumerate(radio):
     answer[r['items'][r['selection'] - 1]] = i
 
+form = radio
 if len(answer) != NUMBER_QUESTIONS:
     score = 0
 
