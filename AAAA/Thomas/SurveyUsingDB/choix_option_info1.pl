@@ -83,12 +83,9 @@ answer = {}
 for i, r in enumerate(radio):
     answer[r.items[r.selection - 1]] = i
 
-
-
-
 if int(grade) == 100:
     with get_session(table_class = Response, base=Base) as session:
-        session.add(Response(student_id = user__id if user__id else session__id, value = answer))
+        session.add(Response(student_id = user__id if user__id else session__id, value = json.dumps(answer))
         session.commit()
 
 grade = (score, feedback)
