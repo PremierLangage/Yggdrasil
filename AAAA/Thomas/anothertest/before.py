@@ -43,7 +43,6 @@ if __name__ == "__main__":
     
     print("ANTONINNNNNNNNN. --------", file=sys.stderr)
 
-    del dic["form"]
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
         """
