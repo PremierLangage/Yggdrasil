@@ -84,7 +84,7 @@ evaluator == #|py|
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
 
-vos_choix = "<br />"
+vos_choix = "<br /><br />"
 vos_choix += "<b>Premier choix :</b> " + str(group1.items[group1.selection]['content']) + "<br />"
 vos_choix += "<b>Second choix :</b> " + str(group2.items[group2.selection]['content']) + "<br />"
 vos_choix += "<b>Troisième choix :</b> " + str(group3.items[group3.selection]['content']) + "<br />"
