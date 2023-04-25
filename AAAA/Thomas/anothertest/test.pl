@@ -48,8 +48,8 @@ with open('form.html', 'w') as f:
     print(jsonpickle.encode(d, unpicklable=False), file=f)
 """
 del df
-del hist
 del ax
+del fig
 del l
 
 
