@@ -43,18 +43,18 @@ Réseaux
 
 ############################################
 
-group1 =: RadioGroup
+group =: RadioGroup
 group2 =: RadioGroup
 group3 =: RadioGroup
 
 before==#|python|
 
-group1.items = []
+group.items = []
 group2.items = []
 group3.items = []
 
 for i, item in enumerate(items.splitlines()):
-    group1.items.append({ "id": i, "content": item })
+    group.items.append({ "id": i, "content": item })
     group2.items.append({ "id": i, "content": item })
     group3.items.append({ "id": i, "content": item })
 ==
@@ -63,7 +63,7 @@ form==
 
 {{ question1 }}
 
-{{ group1|component }}
+{{ group|component }}
 
 {{ question2 }}
 
