@@ -51,7 +51,7 @@ before==#|python|
 
 radio = []
 
-for j in range(NUMBER_QUESTIONS):
+for i in range(NUMBER_QUESTIONS):
     for i, item in enumerate(items.splitlines()):
         tmp = RadioGroup()
         tmp.items = []
