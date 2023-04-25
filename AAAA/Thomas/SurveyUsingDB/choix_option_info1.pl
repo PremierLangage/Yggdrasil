@@ -41,6 +41,8 @@ Logiciel
 Réseaux
 ==
 
+NUMBER_QUESTIONS=3
+
 ############################################
 
 group1 =: RadioGroup
