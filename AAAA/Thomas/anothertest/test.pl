@@ -45,11 +45,17 @@ print("AHHHHHHHHHHHHH" ,  file=sys.stderr)
 
 with open('test3.html', 'w') as f:
     print(mpld3.fig_to_html(fig), file=f)
+
+print("AHHHHHHHHHHHHH69" ,  file=sys.stderr)
+
 sys.exit(69)
 
 
 with open("test3.html", "r") as f:
     form = f.read()
+
+
+print("AHHHHHHHHHHHHH70" ,  file=sys.stderr)
 
 ==
 
