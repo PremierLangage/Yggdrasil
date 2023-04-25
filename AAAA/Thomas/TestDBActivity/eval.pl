@@ -108,6 +108,9 @@ for value in criteria :
         tmp.items.append({"id": str(elem["id"]), "content": elem["description"]})
     globals()[str(value["id"])] = tmp
     radio.append(vars(tmp))
+    
+import os
+os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib-pkrkyoye"
 
 import matplotlib.pyplot as plt
 import numpy as np
