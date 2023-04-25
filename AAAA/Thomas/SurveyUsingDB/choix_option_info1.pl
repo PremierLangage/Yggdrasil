@@ -68,7 +68,7 @@ for i in range(int(NUMBER_QUESTIONS)):
 form==
 
 {% for r in radio %}
-{{ r.question }}
+{{ r.question|safe }}
 
 {{ r|component }}
 
