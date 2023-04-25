@@ -60,6 +60,7 @@ Select the result of **{{ A }}** x **{{ B }}**.
 
 # PRESENT THE QUESTION TO THE STUDENT
 form==
+{{prout}}
 ==
 
 # EVALUATE THE STUDENT ANSWER
