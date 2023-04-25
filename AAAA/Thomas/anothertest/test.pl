@@ -55,7 +55,6 @@ with open("test3.html", "r") as f:
 
 
 print("AHHHHHHHHHHHHH70" ,  file=sys.stderr)
-sys.exit(69)
 
 ==
 
