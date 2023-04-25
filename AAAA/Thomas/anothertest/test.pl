@@ -53,8 +53,6 @@ with open('form.html', 'w') as f:
 del ax
 del fig
 del l
-
-
 ==
 
 title = Radio Group Component
