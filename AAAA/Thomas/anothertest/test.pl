@@ -41,7 +41,6 @@ with open('form.html', 'w') as f:
     print(jsonpickle.encode(d, unpicklable=False), file=f)
 
 del d
-
 ==
 
 title = Radio Group Component
