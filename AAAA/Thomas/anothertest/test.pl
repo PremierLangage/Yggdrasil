@@ -7,8 +7,8 @@ builder =@ before.py
 
 before ==#|py|
 
-with 
-
+with open("test.html", "r") as f:
+    form = f.read()
 
 ==
 
