@@ -39,7 +39,7 @@ ax.set_ylabel('y')
 ax.set_title('Interactive legend', size=20)
 d = {"form", mpld3.fig_to_html(fig)}
 with open('form.html', 'w') as f:
-    print(jsonpickle.encode(d, unpickable=False), file=f)
+    print(jsonpickle.encode(d, unpicklable=False), file=f)
 
 ==
 
