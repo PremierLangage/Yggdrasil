@@ -40,6 +40,8 @@ if __name__ == "__main__":
                + "See documentation related to this builder."),
               file = sys.stderr)
         sys.exit(1)
+    
+    print("ANTONINNNNNNNNN. --------", file=sys.stderr)
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
