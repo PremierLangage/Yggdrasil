@@ -10,6 +10,7 @@ import os
 import sys
 
 os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib-ogs20b_w"
+print("AHHHHHHHHHHHHH1" ,  file=sys.stderr)
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -17,21 +18,25 @@ import pandas as pd
 import mpld3
 from mpld3 import plugins
 np.random.seed(9615)
+print("AHHHHHHHHHHHHH2" ,  file=sys.stderr)
 
 # generate df
 N = 100
 df = pd.DataFrame((.1 * (np.random.random((N, 5)) - .5)).cumsum(0),
                   columns=['a', 'b', 'c', 'd', 'e'],)
+print("AHHHHHHHHHHHHH3" ,  file=sys.stderr)
 
 # plot line + confidence interval
 fig, ax = plt.subplots()
 ax.grid(True, alpha=0.3)
+print("AHHHHHHHHHHHHH4" ,  file=sys.stderr)
 
 for key, val in df.items():
     l, = ax.plot(val.index, val.values, label=key)
     ax.fill_between(val.index,
                     val.values * .5, val.values * 1.5,
                     color=l.get_color(), alpha=.4)
+print("AHHHHHHHHHHHHH5" ,  file=sys.stderr)
 
 ax.set_xlabel('x')
 ax.set_ylabel('y')
