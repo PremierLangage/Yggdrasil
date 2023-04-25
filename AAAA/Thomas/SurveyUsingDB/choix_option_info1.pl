@@ -80,7 +80,8 @@ score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
 
 answer = {}
-for i, item in enumerate(radio):
+for i, r in enumerate(radio):
+    answer[r.items[r.selection - 1]]
 
 
 
