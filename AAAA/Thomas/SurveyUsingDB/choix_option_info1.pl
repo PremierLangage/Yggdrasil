@@ -52,7 +52,7 @@ before==#|python|
 radio = []
 
 for i in range(NUMBER_QUESTIONS):
-    for i, item in enumerate(items.splitlines()):
+    for j, item in enumerate(items.splitlines()):
         tmp = RadioGroup()
         tmp.items = []
         for elem in value["levels"] :
