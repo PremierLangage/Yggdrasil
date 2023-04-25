@@ -2,7 +2,7 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-import sys, json, jsonpickle
+import sys, json, jsonpickle, json
 from sandboxio import get_context
 
 class StopBeforeExec(Exception):
@@ -44,6 +44,6 @@ if __name__ == "__main__":
     print("ANTONINNNNNNNNN. --------", file=sys.stderr)
 
     with open(output_json, "w+") as f:
-        jsonpickle.encode(dic, unpicklable=False)
-    sys.exit(99)
+        f.write(jsonpickle.encode(dic, unpicklable=False))
+    
     sys.exit(0)
