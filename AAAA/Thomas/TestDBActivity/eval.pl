@@ -153,6 +153,7 @@ evaluator == #|python|
 from math import ceil
 from database_utils import get_session, Base, Evaluation
 
+
 with get_session(table_class = Evaluation, base=Base) as session:
     try : 
         session.add(Evaluation(student_id = user__id if user__id else session__id, eval = str(response), response_id = response_id))
@@ -161,7 +162,7 @@ with get_session(table_class = Evaluation, base=Base) as session:
         form = "<br/><br/><br/><br/><br/><br/>"
     except: 
         feedback = '<span class="error-state center">Le serveur a rencontré une erreur, merci de réessayer. Si le problème persiste veuillez contacter votre professeur</span>'
-
+form = criteria
 
 grade = (100, feedback)
 
