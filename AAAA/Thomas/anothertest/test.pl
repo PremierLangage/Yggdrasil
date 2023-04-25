@@ -30,7 +30,6 @@ print("AHHHHHHHHHHHHH3" ,  file=sys.stderr)
 fig, ax = plt.subplots()
 ax.grid(True, alpha=0.3)
 print("AHHHHHHHHHHHHH4" ,  file=sys.stderr)
-sys.exit(69)
 
 for key, val in df.items():
     l, = ax.plot(val.index, val.values, label=key)
@@ -38,6 +37,7 @@ for key, val in df.items():
                     val.values * .5, val.values * 1.5,
                     color=l.get_color(), alpha=.4)
 print("AHHHHHHHHHHHHH5" ,  file=sys.stderr)
+sys.exit(69)
 
 ax.set_xlabel('x')
 ax.set_ylabel('y')
