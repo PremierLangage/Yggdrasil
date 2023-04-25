@@ -60,7 +60,7 @@ for i in range(int(NUMBER_QUESTIONS)):
     tmp.items = []
     for j, item in enumerate(items.splitlines()):        
         tmp.items.append({ "id": j+1, "content": item })
-    globals()[str(value["id"])] = tmp
+    globals()[str(i)] = tmp
     radio.append(vars(tmp))
 
 ==
