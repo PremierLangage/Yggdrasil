@@ -31,9 +31,9 @@ classer les trois options de votre premier voeux (l'option qui vous interesse le
 
 question1=<b>Quel est votre premier choix d'option ?</b>
 
-question2=Quel est votre second choix d'option ?
+question2=<b>Quel est votre second choix d'option ?</b>
 
-question3=Quel est votre troisième choix d'option ?
+question3=<b>Quel est votre troisième choix d'option ?</b>
 
 items==
 Géomatique
