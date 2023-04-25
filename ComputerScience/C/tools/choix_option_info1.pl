@@ -61,15 +61,15 @@ for i, item in enumerate(items.splitlines()):
 
 form==
 
-{{ question1 }}
+**{{ question1 }}**
 
 {{ group1|component }}
 
-{{ question2 }}
+**{{ question2 }}**
 
 {{ group2|component }}
 
-{{ question3 }}
+**{{ question3 }}**
 
 {{ group3|component }}
 
