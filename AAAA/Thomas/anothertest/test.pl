@@ -19,6 +19,7 @@ import mpld3
 from mpld3 import plugins
 np.random.seed(9615)
 print("AHHHHHHHHHHHHH2" ,  file=sys.stderr)
+sys.exit(69)
 
 # generate df
 N = 100
