@@ -42,13 +42,14 @@ Logiciel
 Réseaux
 ==
 
+NUMBER_QUESTIONS=3
 
 ############################################
 
 before==#|python|
 radio = []
 
-for i in range(len(items.splitlines())):
+for i in range(int(NUMBER_QUESTIONS)):
     tmp = RadioGroup()
     tmp.question = globals()["question"+str(i+1)]
     tmp.items = []
