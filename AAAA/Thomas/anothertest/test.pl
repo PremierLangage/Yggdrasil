@@ -39,7 +39,7 @@ ax.set_xlabel('x')
 ax.set_ylabel('y')
 
 form = mpld3.fig_to_html(fig)
-d = {"form" : }
+d = {"form" : form}
 with open('test.html', 'w') as f:
     print(d, file=f)
 
