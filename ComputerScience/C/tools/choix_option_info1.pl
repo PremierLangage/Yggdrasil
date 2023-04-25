@@ -29,7 +29,7 @@ classer les trois options de votre premier voeux (l'option qui vous interesse le
 (l'option qui vous interesse le moins).
 ==
 
-question1=Quel est votre premier choix d'option ?
+question1=**Quel est votre premier choix d'option ?**
 
 question2=Quel est votre second choix d'option ?
 
@@ -61,15 +61,15 @@ for i, item in enumerate(items.splitlines()):
 
 form==
 
-**{{ question1 }}**
+{{ question1 }}
 
 {{ group1|component }}
 
-**{{ question2 }}**
+{{ question2 }}
 
 {{ group2|component }}
 
-**{{ question3 }}**
+{{ question3 }}
 
 {{ group3|component }}
 
