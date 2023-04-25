@@ -59,7 +59,7 @@ for i, item in enumerate(items.splitlines()):
     group3.items.append({ "id": i, "content": item })
 ==
 
-form ==
+form==
 
 {{ question1 }}
 
@@ -72,6 +72,7 @@ form ==
 {{ question3 }}
 
 {{ group3|component }}
+
 ==
 
 # EVALUATE THE STUDENT ANSWER
