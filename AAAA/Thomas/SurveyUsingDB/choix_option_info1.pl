@@ -81,7 +81,7 @@ feedback = '<span class="success-state">Réponse enregistrée</span>'
 
 answer = {}
 for i, r in enumerate(radio):
-    answer[r.items[r.selection - 1]]
+    answer[r.items[r.selection - 1]] = i
 
 
 
