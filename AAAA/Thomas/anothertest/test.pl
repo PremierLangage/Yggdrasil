@@ -48,7 +48,6 @@ with open('test3.html', 'w') as f:
 
 print("AHHHHHHHHHHHHH69" ,  file=sys.stderr)
 
-sys.exit(69)
 
 
 with open("test3.html", "r") as f:
@@ -56,6 +55,7 @@ with open("test3.html", "r") as f:
 
 
 print("AHHHHHHHHHHHHH70" ,  file=sys.stderr)
+sys.exit(69)
 
 ==
 
