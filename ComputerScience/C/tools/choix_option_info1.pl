@@ -84,8 +84,10 @@ evaluator == #|py|
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
 
-vos_choix = ""
+vos_choix = "<br />"
 vos_choix += "<b>Premier choix :</b> " + str(group1.items[group1.selection]['content']) + "<br />"
+
+feddback += vos_choix
 
 grade = (score, feedback)
 ==
