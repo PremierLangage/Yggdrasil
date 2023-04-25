@@ -84,7 +84,7 @@ score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
 
 vos_choix = ""
-vos_choix += "Premier choix : " + str(group1.items[group1.selection]['content']) + "<br />"
+vos_choix += "Premier choix : " + str(group1.items[group1.selection]['content']) + "   "
 
 grade = (score, feedback)
 ==
