@@ -51,6 +51,7 @@ del d
 del df
 del hist
 del ax
+del fig
 
 with open("test.html", "r") as f:
     form = f.read()
