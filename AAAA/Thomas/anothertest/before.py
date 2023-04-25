@@ -45,5 +45,5 @@ if __name__ == "__main__":
 
     with open(output_json, "w+") as f:
         jsonpickle.encode(dic, unpicklable=False)
-    
+    sys.exit(99)
     sys.exit(0)
