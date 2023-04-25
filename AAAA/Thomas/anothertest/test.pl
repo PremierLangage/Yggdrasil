@@ -19,13 +19,13 @@ import mpld3
 from mpld3 import plugins
 np.random.seed(9615)
 print("AHHHHHHHHHHHHH2" ,  file=sys.stderr)
-sys.exit(69)
 
 # generate df
 N = 100
 df = pd.DataFrame((.1 * (np.random.random((N, 5)) - .5)).cumsum(0),
                   columns=['a', 'b', 'c', 'd', 'e'],)
 print("AHHHHHHHHHHHHH3" ,  file=sys.stderr)
+sys.exit(69)
 
 # plot line + confidence interval
 fig, ax = plt.subplots()
