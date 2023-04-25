@@ -42,10 +42,10 @@ ax.set_xlabel('x')
 ax.set_ylabel('y')
 ax.set_title('Interactive legend', size=20)
 print("AHHHHHHHHHHHHH" ,  file=sys.stderr)
-sys.exit(69)
 
 with open('test3.html', 'w') as f:
     print(mpld3.fig_to_html(fig), file=f)
+sys.exit(69)
 
 
 with open("test3.html", "r") as f:
