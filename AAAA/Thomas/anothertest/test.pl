@@ -60,6 +60,7 @@ with open("test.html", "r") as f:
 orhan = "orhan est un bg"
 del orhan
 del __warningregistry__
+del f 
 
 ==
 
