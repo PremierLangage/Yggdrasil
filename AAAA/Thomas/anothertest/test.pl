@@ -18,10 +18,11 @@ import jsonpickle
 np.random.seed(9615)
 
 # generate df
-N = 100
-df = pd.DataFrame((.1 * (np.random.random((N, 5)) - .5)).cumsum(0),
-                  columns=['a', 'b', 'c', 'd', 'e'],)
-
+df = pd.DataFrame({
+    'length': [1.5, 0.5, 1.2, 0.9, 3],
+    'width': [0.7, 0.2, 0.15, 0.2, 1.1]
+    }, index=['pig', 'rabbit', 'duck', 'chicken', 'horse'])
+hist = df.hist(bins=3)
 # plot line + confidence interval
 fig, ax = plt.subplots()
 ax.grid(True, alpha=0.3)
@@ -36,6 +37,10 @@ ax.set_xlabel('x')
 ax.set_ylabel('y')
 
 d = {"form", mpld3.fig_to_html(fig)}
+with open('form.html', 'w') as f:
+    print(d, file=f)
+
+
 with open('form.html', 'w') as f:
     print(jsonpickle.encode(d, unpicklable=False), file=f)
 
