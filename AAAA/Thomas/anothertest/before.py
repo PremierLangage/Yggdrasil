@@ -42,12 +42,8 @@ if __name__ == "__main__":
         sys.exit(1)
     
     print("ANTONINNNNNNNNN. --------", file=sys.stderr)
-    sys.exit(69)
 
-    try:
-        with open(output_json, "w+") as f:
-            f.write(jsonpickle.encode(dic, unpicklable=False))
-    except: 
-        print("FFFFFFFFFFFFFFFFFFFFFFF", file=sys.stderr)
+    with open(output_json, "w+") as f:
+        jsonpickle.encode(dic, unpicklable=False)
     
     sys.exit(0)
