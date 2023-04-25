@@ -44,6 +44,9 @@ with open('form.html', 'w') as f:
 
 del d
 
+print("AHHHHHH ANTONIN")
+
+
 ==
 
 title = Radio Group Component
