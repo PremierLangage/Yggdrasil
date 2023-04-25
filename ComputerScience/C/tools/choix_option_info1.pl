@@ -80,6 +80,7 @@ evaluator == #|py|
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
 
-
+grade = (score, feedback)
+==
 
 
