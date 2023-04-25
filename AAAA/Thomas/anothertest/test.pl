@@ -3,8 +3,6 @@
 grader  =@ /grader/evaluator.py
 builder =@ before.py
 
-group =: RadioGroup
-
 before ==#|py|
 import os
 import sys
