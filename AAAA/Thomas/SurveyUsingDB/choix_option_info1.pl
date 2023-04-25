@@ -85,10 +85,12 @@ for i, r in enumerate(radio):
    # answer[r['items'][r['selection'] - 1]] = i
 
 form = radio
+
+
 if len(answer) != NUMBER_QUESTIONS:
     score = 0
 
-if int(grade) == 100:
+if int(score) == 100:
     with get_session(table_class = Response, base=Base) as session:
         session.add(Response(student_id = user__id if user__id else session__id, value = json.dumps(answer)))
         session.commit()
