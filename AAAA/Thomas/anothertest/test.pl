@@ -55,9 +55,6 @@ del key
 del val
 del l
 
-with open("test.html", "r") as f:
-    form = f.read()
-
 
 orhan = "orhan est un bg"
 del orhan
