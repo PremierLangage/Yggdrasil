@@ -44,6 +44,6 @@ if __name__ == "__main__":
     print("ANTONINNNNNNNNN. --------", file=sys.stderr)
 
     with open(output_json, "w+") as f:
-        f.write(json.dumps(dic, unpicklable=False))
+        f.write(json.dumps(dic))
     
     sys.exit(0)
