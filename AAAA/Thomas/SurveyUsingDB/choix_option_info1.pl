@@ -56,7 +56,7 @@ radio = []
 
 for i in range(int(NUMBER_QUESTIONS)):
     tmp = RadioGroup()
-    tmp.question = "question"+str(i+1)
+    tmp.question = globals()["question"+str(i+1)]
     tmp.items = []
     for j, item in enumerate(items.splitlines()):        
         tmp.items.append({ "id": j+1, "content": item })
