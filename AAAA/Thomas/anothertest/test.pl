@@ -49,7 +49,7 @@ ax.set_xlabel('x')
 ax.set_ylabel('y')
 ax.set_title('Interactive legend', size=20)
 
-form = mpld3.fig_to_html(fig)
+prout = mpld3.fig_to_html(fig)
 ==
 
 title = Radio Group Component
