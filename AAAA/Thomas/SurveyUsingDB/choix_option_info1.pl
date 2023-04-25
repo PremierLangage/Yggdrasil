@@ -15,7 +15,6 @@
 #*****************************************************************************
 
 @database_utils.py
-
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
@@ -74,11 +73,22 @@ form==
 
 # EVALUATE THE STUDENT ANSWER
 evaluator == #|py|
-
-
+from database_utils import get_session, Base, Response
+import json
 
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
+
+answer = {}
+for i, item in enumerate(radio):
+
+
+
+
+if int(grade) == 100:
+    with get_session(table_class = Response, base=Base) as session:
+        session.add(Response(student_id = user__id if user__id else session__id, value = answer))
+        session.commit()
 
 grade = (score, feedback)
 ==
