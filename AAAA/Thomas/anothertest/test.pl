@@ -49,7 +49,7 @@ with open('form.html', 'w') as f:
 """
 
 
-# deleting 
+# deleting variables cause not serializable
 del ax
 del fig
 del l
