@@ -47,15 +47,13 @@ with open('test.html', 'w') as f:
 with open('form.html', 'w') as f:
     print(jsonpickle.encode(d, unpicklable=False), file=f)
 """
+
+
+# deleting 
 del ax
 del fig
 del l
 
-
-orhan = "orhan est un bg"
-del orhan
-del __warningregistry__
-del f 
 
 ==
 
