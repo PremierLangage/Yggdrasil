@@ -82,11 +82,9 @@ form==
 evaluator == #|py|
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
-.
+
 vos_choix = ""
-    vos_choix += "<b>Premier choix : </b>" + group1.selection
-    vos_choix += "<b>Second choix : </b>" + group2.selection
-    vos_choix += "<b>Troisième choix : </b>" + group3.selection
+    vos_choix += "<b>Premier choix : </b>" + str(group1.selection)
 
 grade = (score, feedback)
 ==
