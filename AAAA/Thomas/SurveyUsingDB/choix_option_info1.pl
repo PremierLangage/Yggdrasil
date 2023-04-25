@@ -62,15 +62,6 @@ for i in range(int(NUMBER_QUESTIONS)):
     globals()[str(value["id"])] = tmp
     radio.append(vars(tmp))
 
-
-group1.items = []
-group2.items = []
-group3.items = []
-
-for i, item in enumerate(items.splitlines()):
-    
-    group2.items.append({ "id": i+1, "content": item })
-    group3.items.append({ "id": i+1, "content": item })
 ==
 
 form==
