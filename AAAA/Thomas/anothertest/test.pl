@@ -34,7 +34,6 @@ for key, val in df.items():
 
 ax.set_xlabel('x')
 ax.set_ylabel('y')
-ax.set_title('Interactive legend', size=20)
 
 d = {"form", mpld3.fig_to_html(fig)}
 with open('form.html', 'w') as f:
