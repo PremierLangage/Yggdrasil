@@ -47,7 +47,6 @@ with open('test.html', 'w') as f:
 with open('form.html', 'w') as f:
     print(jsonpickle.encode(d, unpicklable=False), file=f)
 """
-del df
 del ax
 del fig
 del l
