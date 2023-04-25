@@ -29,11 +29,11 @@ classer les trois options de votre premier voeux (l'option qui vous interesse le
 (l'option qui vous interesse le moins).
 ==
 
-question1=Quelle est votre premier choix d'option ?
+question1=Quel est votre premier choix d'option ?
 
-question2=Quelle est votre second choix d'option ?
+question2=Quel est votre second choix d'option ?
 
-question3=Quelle est votre troisième choix d'option ?
+question3=Quel est votre troisième choix d'option ?
 
 items==
 Géomatique
