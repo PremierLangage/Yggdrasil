@@ -44,8 +44,8 @@ if __name__ == "__main__":
     print("ANTONINNNNNNNNN. --------", str(type(dic)), file=sys.stderr)
 
     with open(output_json, "w+") as f:
-        jsonpickle.encode(dic, unpicklable=False)
-       # f.write()
+        
+        f.write(jsonpickle.encode(dic, unpicklable=False))
         """
         f.seek(1)
         with open(output_json, "r") as f2:
