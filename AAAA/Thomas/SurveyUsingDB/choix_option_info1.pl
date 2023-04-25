@@ -68,6 +68,8 @@ for i in range(int(NUMBER_QUESTIONS)):
 form==
 
 {% for r in radio %}
+
+{% endfor %}
 {{ question1 }}
 
 {{ group1|component }}
