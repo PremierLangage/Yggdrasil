@@ -25,12 +25,12 @@ N = 100
 df = pd.DataFrame((.1 * (np.random.random((N, 5)) - .5)).cumsum(0),
                   columns=['a', 'b', 'c', 'd', 'e'],)
 print("AHHHHHHHHHHHHH3" ,  file=sys.stderr)
-sys.exit(69)
 
 # plot line + confidence interval
 fig, ax = plt.subplots()
 ax.grid(True, alpha=0.3)
 print("AHHHHHHHHHHHHH4" ,  file=sys.stderr)
+sys.exit(69)
 
 for key, val in df.items():
     l, = ax.plot(val.index, val.values, label=key)
