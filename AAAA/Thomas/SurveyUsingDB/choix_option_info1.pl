@@ -83,7 +83,8 @@ answer = {}
 for i, r in enumerate(radio):
     answer[r.items[r.selection - 1]] = i
 
-if len(answer) != 
+if len(answer) != NUMBER_QUESTIONS:
+    score = -1
 
 if int(grade) == 100:
     with get_session(table_class = Response, base=Base) as session:
