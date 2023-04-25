@@ -29,7 +29,7 @@ classer les trois options de votre premier voeux (l'option qui vous interesse le
 (l'option qui vous interesse le moins).
 ==
 
-question1=**Quel est votre premier choix d'option ?**
+question1=<b>Quel est votre premier choix d'option ?</b>
 
 question2=Quel est votre second choix d'option ?
 
