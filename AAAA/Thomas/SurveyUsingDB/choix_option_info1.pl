@@ -49,6 +49,18 @@ group3 =: RadioGroup
 
 before==#|python|
 
+radio = []
+
+for j in range(NUMBER_QUESTIONS):
+    for i, item in enumerate(items.splitlines()):
+        tmp = RadioGroup()
+        tmp.items = []
+        for elem in value["levels"] :
+            tmp.items.append({"id": str(elem["id"]), "content": elem["description"]})
+        globals()[str(value["id"])] = tmp
+        radio.append(vars(tmp))
+
+
 group1.items = []
 group2.items = []
 group3.items = []
