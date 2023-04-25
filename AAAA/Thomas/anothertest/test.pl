@@ -52,6 +52,9 @@ del d
 with open("test.html", "r") as f:
     form = f.read()
 
+
+orhan = "orhan est un bg"
+
 ==
 
 title = Radio Group Component
