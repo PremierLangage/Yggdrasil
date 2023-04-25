@@ -73,17 +73,6 @@ form==
 {{ r|component }}
 
 {% endfor %}
-{{ question1 }}
-
-{{ group1|component }}
-
-{{ question2 }}
-
-{{ group2|component }}
-
-{{ question3 }}
-
-{{ group3|component }}
 
 ==
 
