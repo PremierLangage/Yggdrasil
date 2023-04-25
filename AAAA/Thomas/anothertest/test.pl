@@ -37,12 +37,12 @@ for key, val in df.items():
                     val.values * .5, val.values * 1.5,
                     color=l.get_color(), alpha=.4)
 print("AHHHHHHHHHHHHH5" ,  file=sys.stderr)
-sys.exit(69)
 
 ax.set_xlabel('x')
 ax.set_ylabel('y')
 ax.set_title('Interactive legend', size=20)
 print("AHHHHHHHHHHHHH" ,  file=sys.stderr)
+sys.exit(69)
 
 with open('test3.html', 'w') as f:
     print(mpld3.fig_to_html(fig), file=f)
