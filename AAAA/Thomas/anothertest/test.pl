@@ -7,6 +7,7 @@ group =: RadioGroup
 
 before ==
 import os
+import sys
 
 os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib-ogs20b_w"
 
@@ -39,6 +40,7 @@ ax.set_title('Interactive legend', size=20)
 with open('test3.html', 'w') as f:
     print(mpld3.fig_to_html(fig), file=f)
 
+print("AHHHHHHHHHHHHH" ,  file=sys.stderr)
 
 with open("test3.html", "r") as f:
     form = f.read()
