@@ -53,6 +53,7 @@ del ax
 del fig
 del key
 del val
+del l
 
 with open("test.html", "r") as f:
     form = f.read()
