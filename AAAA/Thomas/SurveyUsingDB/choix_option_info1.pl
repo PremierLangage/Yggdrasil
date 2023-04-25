@@ -54,9 +54,9 @@ group2.items = []
 group3.items = []
 
 for i, item in enumerate(items.splitlines()):
-    group1.items.append({ "id": i, "content": item })
-    group2.items.append({ "id": i, "content": item })
-    group3.items.append({ "id": i, "content": item })
+    group1.items.append({ "id": i+1, "content": item })
+    group2.items.append({ "id": i+1, "content": item })
+    group3.items.append({ "id": i+1, "content": item })
 ==
 
 form==
