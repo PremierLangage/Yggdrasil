@@ -56,6 +56,7 @@ radio = []
 
 for i in range(int(NUMBER_QUESTIONS)):
     tmp = RadioGroup()
+    tmp.question = "question"+str(i+i)
     tmp.items = []
     for j, item in enumerate(items.splitlines()):        
         tmp.items.append({ "id": i+1, "content": item })
@@ -66,6 +67,7 @@ for i in range(int(NUMBER_QUESTIONS)):
 
 form==
 
+{% for  %}
 {{ question1 }}
 
 {{ group1|component }}
