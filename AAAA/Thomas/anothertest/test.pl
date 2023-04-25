@@ -49,7 +49,7 @@ with open('form.html', 'w') as f:
 """
 del df
 del hist
-del fig
+del ax
 del l
 
 
