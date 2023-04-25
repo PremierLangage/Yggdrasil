@@ -29,32 +29,49 @@ classer les trois options de votre premier voeux (l'option qui vous interesse le
 (l'option qui vous interesse le moins).
 ==
 
-question=Quel est votre parfum préféré ?
+question1=Quelle est votre premier choix d'option ?
+
+question2=Quelle est votre second choix d'option ?
+
+question3=Quelle est votre troisième choix d'option ?
 
 items==
-Vanille
-Chocolat
-Fraise
-Pomme
+Géomatique
+Logiciel
+Réseaux
 ==
 
 ############################################
 
-group =: RadioGroup
+group1 =: RadioGroup
+group2 =: RadioGroup
+group3 =: RadioGroup
 
 before==#|python|
 
-group.items = []
+group1.items = []
+group2.items = []
+group3.items = []
 
 for i, item in enumerate(items.splitlines()):
-    group.items.append({ "id": i, "content": item })
+    group1.items.append({ "id": i, "content": item })
+    group2.items.append({ "id": i, "content": item })
+    group3.items.append({ "id": i, "content": item })
 ==
 
 form ==
 
-{{ question }}
+{{ question1 }}
 
-{{ group|component }}
+{{ group1|component }}
+
+{{ question2 }}
+
+{{ group2|component }}
+
+{{ question3 }}
+
+{{ group3|component }}
 ==
 
 # EVALUATE THE STUDENT ANSWER
