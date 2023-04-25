@@ -54,7 +54,6 @@ Select the result of **{{ A }}** x **{{ B }}**.
 
 # PRESENT THE QUESTION TO THE STUDENT
 form==
-Coucou les copains
 ==
 
 # EVALUATE THE STUDENT ANSWER
