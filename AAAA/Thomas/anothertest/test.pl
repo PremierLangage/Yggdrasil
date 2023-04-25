@@ -5,7 +5,7 @@ builder =@ /builder/before.py
 
 group =: RadioGroup
 
-before ==
+before ==#|py|
 import os
 import sys
 
