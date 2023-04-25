@@ -46,6 +46,8 @@ if __name__ == "__main__":
     del d["form"]
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
-        f
+        f.seek(1)
+        with open(output_json, "r") as f2:
+            f.write(f2.read())
     
     sys.exit(0)
