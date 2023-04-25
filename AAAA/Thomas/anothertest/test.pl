@@ -40,10 +40,10 @@ d = {"form", mpld3.fig_to_html(fig)}
 with open('form.html', 'w') as f:
     print(d, file=f)
 
-
+"""
 with open('form.html', 'w') as f:
     print(jsonpickle.encode(d, unpicklable=False), file=f)
-
+"""
 del d
 ==
 
