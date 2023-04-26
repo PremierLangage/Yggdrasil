@@ -52,6 +52,8 @@ from database_utils import get_session, Base, Response
 from graph_utils import draw_hist, draw_camembert
 
 if user__role == "teacher" :
+    with get_session(table_class= Response, base=Base) as session:
+        answer = session.query(Response.value).all() 
 
 
 with get_session(table_class= Response, base=Base) as session:
