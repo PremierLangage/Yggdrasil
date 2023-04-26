@@ -62,6 +62,7 @@ from mpld3 import plugins
 if user__role == "teacher" :
     with get_session(table_class= Response, base=Base) as session:
         answers = session.query(Response.value).all()
+        a2 = session.query(Response.value).first()
     
     data = {v:{} for v in range(int(NUMBER_QUESTIONS))}
     answers_csv = ""
