@@ -49,6 +49,7 @@ NUMBER_QUESTIONS=3
 
 before==#|python|
 from database_utils import get_session, Base, Response
+from graph_utils import draw_hist, draw_camembert
 
 if user__role == "teacher" :
 
