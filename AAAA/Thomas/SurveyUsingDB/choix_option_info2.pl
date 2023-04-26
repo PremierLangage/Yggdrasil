@@ -101,7 +101,7 @@ form==#|html|
 <style>
     .mpld3-yaxis { display: none !important; }
     .mpld3-xaxis { display: none !important; }
-    .mpld3-figure { width: 100%; height: 100%; }
+    /* .mpld3-figure { width: 100%; height: 100%; } */
     .answer {
         display: flex;
         flex-direction: row;
