@@ -105,7 +105,7 @@ form==#|html|
         position: relative !important; /* obligatoire pour que z-index fonctionne */
         z-index: 10000000 !important; 
     }
-    g.mpld3-paths {
+    .mpld3-paths {
         overflow: scroll !important;
     }
     .answer {
