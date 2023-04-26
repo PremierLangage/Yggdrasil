@@ -64,6 +64,8 @@ if user__role == "teacher" :
         answers = session.query(Response.value).all()
         a2 = session.query(Response.value).first()
     
+    form += a2.value
+    
     data = {v:{} for v in range(int(NUMBER_QUESTIONS))}
     answers_csv = ""
     
