@@ -74,5 +74,4 @@ def draw_graphs(data):
     labels = [f'{k}' for k in keys]
     axs[1].legend(bars, labels, loc='upper right')
 
-    plt.show()
-    return fig
+    return mpld3.fig_to_html(fig, no_extras=False, template_type='simple')
