@@ -139,9 +139,9 @@ document.getElementById("dwn-btn").addEventListener("click", function(){
     {% else %}
         {% for r in radio %}
         <div class="answer">
-            {{ r.question|safe }}
+            <div>{{ r.question|safe }}</div>
 
-            {{graphs|safe}}
+            <div>{{graphs|safe}}</div>
         </div>
         {% endfor %}
     {% endif %}
