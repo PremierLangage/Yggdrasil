@@ -60,7 +60,7 @@ def draw_graphs(data):
 
     # Sous-graphe 2 : Histogramme
     # je redéfinis un set de clés pour intégrer un affichage 1 ligne sur 2
-    bars = axs[1].bar(keys, values, color=colors, tick_label=_keys)
+    bars = axs[1].bar(keys, values, color=colors, tick_label=keys)
     axs[1].set_title('Histogramme')
     for i, v in enumerate(values):
         if (i <= len(values)-3):
