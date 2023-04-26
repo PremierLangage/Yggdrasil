@@ -64,12 +64,14 @@ if user__role == "teacher" :
         answers = session.query(Response).all()
     
     data = {v:{} for v in range(int(NUMBER_QUESTIONS))}
+    answers_csv = ""
     
     for answer in answers:
-        form += str(answer)
-        """
+        choices = [""]*int(NUMBER_QUESTIONS)
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
+            choices[int(v)] = k
+        answers_csv += f"{answer.username},{answer.firstname},{answer.lastname},{answer.email},{','.join(choices)}\n"
         
 
     hist = draw_hist(data[0])
