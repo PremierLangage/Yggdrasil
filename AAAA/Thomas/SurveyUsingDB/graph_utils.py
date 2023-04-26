@@ -2,8 +2,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from random import shuffle
-data = {f"value {i}" : i for i in range(15)}
-
 
 def draw_hist(data):
     # Generate some random data
