@@ -102,6 +102,11 @@ form==#|html|
     .mpld3-yaxis { display: none !important; }
     .mpld3-xaxis { display: none !important; }
 
+    .answer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     
 </style>
 
