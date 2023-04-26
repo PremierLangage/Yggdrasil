@@ -104,7 +104,7 @@ form==#|html|
 
     .answer {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
     }
     
