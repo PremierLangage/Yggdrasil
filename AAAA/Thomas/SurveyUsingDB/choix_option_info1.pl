@@ -94,6 +94,12 @@ for i in range(int(NUMBER_QUESTIONS)):
 ==
 
 form==#|html|
+<style>
+    .mpld3-yaxis { display: none !important; }
+    .mpld3-xaxis { display: none !important; }
+</style>
+
+
 {% if user__role == "teacher" %}
     <script>
 function download(filename, text) {
