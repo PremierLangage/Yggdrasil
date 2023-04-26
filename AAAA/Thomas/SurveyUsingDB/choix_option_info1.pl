@@ -58,8 +58,8 @@ if user__role == "teacher" :
     
     data = {v:{} for v in range(int(NUMBER_QUESTIONS))}
 
-#    for a in answers : 
- #       form += str(json.loads(str(a[0]))) + "<br>"
+    for a in answers : 
+        form += str(json.loads(str(a[0]))) + "<br>"
     
     for answer in answers:
         for elem in json.loads(str(answer[0])):
