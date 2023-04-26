@@ -41,7 +41,7 @@ def draw_camembert(data):
     return plt.gcf()
 
 
-def draw_graphs():
+def draw_graphs(data):
     keys = list(data.keys())
     values = list(data.values())
 
