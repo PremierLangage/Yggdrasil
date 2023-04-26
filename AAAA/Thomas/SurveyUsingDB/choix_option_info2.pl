@@ -142,9 +142,9 @@ document.getElementById("dwn-btn").addEventListener("click", function(){
     {% else %}
         {% for i in [0,1,2] %}
             <div class="answer">
-                <div>{{ radio[int(i)].question|safe }}</div>
+                <div>{{ radio[i].question|safe }}</div>
 
-                <div>{{ graphs[int(i)]|safe }}</div>
+                <div>{{ graphs[i]|safe }}</div>
             </div>
         {% endfor %}
     {% endif %}
