@@ -48,7 +48,7 @@ def draw_graphs(data):
     WIDTH = 10
     HEIGHT = 4
     # ---
-    
+
     keys = list(data.keys())
     values = list(data.values())
 
@@ -56,7 +56,7 @@ def draw_graphs(data):
     cmap = plt.colormaps['tab20c']
     colors = [cmap(i) for i in range(len(keys))]
 
-    fig, axs = plt.subplots(nrows=1, ncols=3, figsize=(10, 4), gridspec_kw={'width_ratios': [4, 5, 1], 'wspace': 0.5})
+    fig, axs = plt.subplots(nrows=1, ncols=3, figsize=(WIDTH, HEIGHT), gridspec_kw={'width_ratios': [4, 5, 1], 'wspace': 0.5})
 
     # Sous-graphe 1 : Camembert
     axs[0].pie(values, colors=colors, 
