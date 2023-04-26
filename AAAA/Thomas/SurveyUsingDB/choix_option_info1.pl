@@ -75,6 +75,8 @@ if user__role == "teacher" :
     camembert = mpld3.fig_to_html(camembert)
 
     graphs = draw_graphs(data[0])
+    legend_plugin = plugins.InteractiveLegendPlugin(ax2, [ax2.bar(range(len(data)), data.values(), align='center', alpha=0)], data.keys())
+    plugins.connect(graphs, legend_plugin)
     graphs = mpld3.fig_to_html(graphs)
 
 
