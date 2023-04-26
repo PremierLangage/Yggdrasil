@@ -106,11 +106,7 @@ form==#|html|
 
 
 {% if user__role == "teacher" %}
-    {{graphs|safe}}
-    <br>
-    <br>
-    <input type="button" id="dwn-btn" value="Téléchargement des choix des élèves"/>
-        <script>
+    <script>
 function download(filename, text) {
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -127,12 +123,17 @@ function download(filename, text) {
 // Start file download.
 document.getElementById("dwn-btn").addEventListener("click", function(){
     // Generate download of hello.txt file with some content
-    var text = "coucou";
+    var text = {{answers_csv}};
     var filename = "answers.csv";
     
     download(filename, text);
 }, false);
     </script>
+
+    {{graphs|safe}}
+    <br>
+    <br>
+    <input type="button" id="dwn-btn" value="Téléchargement des choix des élèves"/>
 {% else %}
     {% if answer != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
