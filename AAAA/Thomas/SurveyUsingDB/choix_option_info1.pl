@@ -106,7 +106,12 @@ form==#|html|
 
 
 {% if user__role == "teacher" %}
-    <script>
+
+    {{graphs|safe}}
+    <br>
+    <br>
+    <input type="button" id="dwn-btn" value="Téléchargement des choix des élèves"/>
+        <script>
 function download(filename, text) {
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -129,11 +134,6 @@ document.getElementById("dwn-btn").addEventListener("click", function(){
     download(filename, text);
 }, false);
     </script>
-
-    {{graphs|safe}}
-    <br>
-    <br>
-    <input type="button" id="dwn-btn" value="Téléchargement des choix des élèves"/>
 {% else %}
     {% if answer != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
