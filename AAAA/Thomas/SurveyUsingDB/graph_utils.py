@@ -25,6 +25,7 @@ def draw_hist(data):
     # Ajouter des étiquettes d'axe et une légende
     plt.xlabel('Choix')
     plt.ylabel('Valeurs')
+    return plt
 
 
 
