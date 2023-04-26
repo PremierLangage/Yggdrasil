@@ -140,11 +140,11 @@ document.getElementById("dwn-btn").addEventListener("click", function(){
     {% if answer != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
     {% else %}
-        {% for r in radio %}
+        {% for i in [0,1,2] %}
             <div class="answer">
-                <div>{{ r.question|safe }}</div>
+                <div>{{ radio[i].question|safe }}</div>
 
-                <div>{{"coucou"|safe}}</div>
+                <div>{{graphs[i]|safe}}</div>
             </div>
         {% endfor %}
     {% endif %}
