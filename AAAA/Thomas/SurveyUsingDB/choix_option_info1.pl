@@ -56,12 +56,12 @@ if user__role == "teacher" :
     with get_session(table_class= Response, base=Base) as session:
         answers = session.query(Response.value).all()
     
-    data = {}
+    data = {v:{} for v in range(NUMBER_QUESTIONS)}
     for answer in answers:
         for k, v in json.loads(answer):
-            data[v]
+            data[k] = data.get(k, 0) + 1
 
-    draw_hist()
+    fig = draw_hist(data)
 
 
 with get_session(table_class= Response, base=Base) as session:
