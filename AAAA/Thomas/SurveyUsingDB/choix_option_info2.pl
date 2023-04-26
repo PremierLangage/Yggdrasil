@@ -110,6 +110,9 @@ form==#|html|
         padding: 18px;
         margin: 18px;
     }
+    .graph {
+        border: 2px outset #d4d4d4;
+    }
 
 </style>
 
