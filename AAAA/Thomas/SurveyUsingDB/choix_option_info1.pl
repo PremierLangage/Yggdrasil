@@ -61,14 +61,14 @@ from mpld3 import plugins
 
 if user__role == "teacher" :
     with get_session(table_class= Response, base=Base) as session:
-        answers = session.query(Response).all()
+        answers = session.query(Response.value).all()
     
     data = {v:{} for v in range(int(NUMBER_QUESTIONS))}
     answers_csv = ""
     
     for answer in answers:
         choices = [""]*int(NUMBER_QUESTIONS)
-        for k, v in json.loads(str(answer.value[0])).items():
+        for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
             choices[int(v)] = k
        # answers_csv += f"{answer.username},{answer.firstname},{answer.lastname},{answer.email},{','.join(choices)}\n"
