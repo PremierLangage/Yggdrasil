@@ -106,6 +106,9 @@ form==#|html|
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: green;
+        padding: 18px;
+        margin: 18px;
     }
     
 </style>
