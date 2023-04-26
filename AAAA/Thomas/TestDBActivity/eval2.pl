@@ -165,7 +165,7 @@ else:
 
 
 
-grade = (100, str(response))
+grade = (100, str(response) + "<br><br>" + str(criteria))
 ==
 
 
