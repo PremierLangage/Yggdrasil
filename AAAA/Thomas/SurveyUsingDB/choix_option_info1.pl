@@ -67,7 +67,7 @@ if user__role == "teacher" :
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data.get(k, 0) + 1
 
-    graph = draw_hist(data[0])
+    graph = draw_hist({'Géomatique': 4})
     graph = mpld3.fig_to_html(graph)
 
 
