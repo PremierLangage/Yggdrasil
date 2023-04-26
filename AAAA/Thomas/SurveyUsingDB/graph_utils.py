@@ -63,8 +63,7 @@ def draw_graphs(data):
     bars = axs[1].bar(keys, values, color=colors, tick_label=keys)
     axs[1].set_title('Histogramme')
     for i, v in enumerate(values):
-        if (i <= len(values)):
-            axs[1].text(i, v+.05,  str(v), color='blue', fontweight='bold', ha="center")
+        axs[1].text(i, v+.05,  str(v), color='blue', fontweight='bold', ha="center")
     
     labels = [f'{k}' for k in keys]
     axs[2].legend(axs[2].bar(keys, [0 for i in keys], color=colors, tick_label=keys), labels, loc='upper center')
