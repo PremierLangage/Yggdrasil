@@ -112,6 +112,10 @@ form==#|html|
         margin: 18px;
     }
     
+    .graph {
+        width = 500px;
+        height= 300px;
+    }
 </style>
 
     <script>
@@ -145,7 +149,7 @@ document.getElementById("dwn-btn").addEventListener("click", function(){
             <div class="answer">
                 <div>{{ radio[i].question|safe }}</div>
 
-                <div>{{ graphs[i]|safe }}</div>
+                <div class="graph">{{ graphs[i]|safe }}</div>
             </div>
         {% endfor %}
     {% endif %}
