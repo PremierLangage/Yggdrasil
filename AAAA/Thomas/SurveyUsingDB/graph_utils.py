@@ -60,17 +60,12 @@ def draw_graphs(data):
 
     # Sous-graphe 2 : Histogramme
     # je redéfinis un set de clés pour intégrer un affichage 1 ligne sur 2
-    _keys = [('|\n' if i % 2 else '') + f"{list(data.keys())[i]}" for i in range(len(data.keys()))]
-    _keys.append("|\n|")
-    _keys.append("legende")
-    values.append(0)
-    values.append(0)
-    bars = axs[1].bar(_keys, values, color=colors, tick_label=_keys)
+    bars = axs[1].bar(keys, values, color=colors, tick_label=_keys)
     axs[1].set_title('Histogramme')
     for i, v in enumerate(values):
         if (i <= len(values)-3):
             axs[1].text(i, v+.05,  str(v), color='blue', fontweight='bold', ha="center")
     
     labels = [f'{k}' for k in keys]
-    axs[2].legend(axs[2].bar(_keys, values, color=colors, tick_label=_keys), labels, loc='upper right')
+    axs[2].legend(axs[2].bar(keys, [0 for i in keys], color=colors, tick_label=keys), labels, loc='upper center')
     return mpld3.fig_to_html(fig, no_extras=False, template_type='simple')
