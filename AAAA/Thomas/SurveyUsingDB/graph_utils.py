@@ -54,7 +54,7 @@ def draw_graphs(data):
     fig, axs = plt.subplots(nrows=1, ncols=3, figsize=(10, 4), gridspec_kw={'width_ratios': [4, 5, 1], 'wspace': 0.5})
 
     # Sous-graphe 1 : Camembert
-    axs[0].pie(values, labels=data, colors=colors, 
+    axs[0].pie(values, colors=colors, 
             autopct='%1.1f%%', startangle=90)
     axs[0].axis('equal')
 
