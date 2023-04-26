@@ -169,7 +169,13 @@ if len(answer) != int(NUMBER_QUESTIONS):
 
 if int(score) == 100:
     with get_session(table_class = Response, base=Base) as session:
-        session.add(Response(student_id = user__id if user__id else session__id, value = json.dumps(answer)))
+        session.add(
+            Response(student_id = user__id if user__id else session__id, 
+            username = user__username,
+            firstname = user__firstname,
+            lastname = user__lastname,
+            email = user__email,
+            value = json.dumps(answer)))
         session.commit()
 else :
     feedback = '<span class="error-state">Vous ne pouvez pas sélectionner plusieurs fois la même option</span>'
