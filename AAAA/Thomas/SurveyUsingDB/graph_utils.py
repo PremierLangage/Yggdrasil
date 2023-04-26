@@ -26,7 +26,6 @@ def draw_hist(data):
     return plt.gcf()
 
 
-
 def draw_camembert(data):
     # Obtenir les clés et les valeurs du dictionnaire
     keys = list(data.keys())
