@@ -68,7 +68,7 @@ if user__role == "teacher" :
     
     for answer in answers:
         choices = [""]*int(NUMBER_QUESTIONS)
-        for k, v in json.loads(str(answer.value[0])).items():
+        for k, v in json.loads(answer.value).items():
             data[v][k] = data[v].get(k, 0) + 1
             choices[int(v)] = k
        # answers_csv += f"{answer.username},{answer.firstname},{answer.lastname},{answer.email},{','.join(choices)}\n"
