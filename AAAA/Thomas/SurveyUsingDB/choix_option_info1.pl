@@ -71,7 +71,7 @@ if user__role == "teacher" :
         for k, v in json.loads(str(answer.value[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
             choices[int(v)] = k
-        answers_csv += f"{answer.username},{answer.firstname},{answer.lastname},{answer.email},{','.join(choices)}\n"
+       # answers_csv += f"{answer.username},{answer.firstname},{answer.lastname},{answer.email},{','.join(choices)}\n"
         
 
     hist = draw_hist(data[0])
@@ -82,8 +82,6 @@ if user__role == "teacher" :
 
     graphs = draw_graphs(data[0])
     
-    
-
 
 with get_session(table_class= Response, base=Base) as session:
     answer = session.query(Response).filter(Response.student_id == user__id).first()
