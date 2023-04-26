@@ -51,7 +51,7 @@ def draw_graphs(data):
     cmap = plt.colormaps['tab20c']
     colors = [cmap(i) for i in range(len(keys))]
 
-    fig, axs = plt.subplots(nrows=1, ncols=3, figsize=(15, 5), gridspec_kw={'width_ratios': [14, 20, 1], 'wspace': 0.3})
+    fig, axs = plt.subplots(nrows=1, ncols=2, figsize=(15, 5), gridspec_kw={'width_ratios': [1, 2], 'wspace': 0.3})
 
     # Sous-graphe 1 : Camembert
     axs[0].pie(values, labels=data, colors=colors, 
@@ -61,24 +61,18 @@ def draw_graphs(data):
     # Sous-graphe 2 : Histogramme
     # je redéfinis un set de clés pour intégrer un affichage 1 ligne sur 2
     _keys = [('|\n' if i % 2 else '') + f"{list(data.keys())[i]}" for i in range(len(data.keys()))]
-
-    axs[1].bar(_keys, values, color=colors, tick_label=_keys)
+    _keys.append("|\n|")
+    _keys.append("legende")
+    values.append(0)
+    values.append(0)
+    bars = axs[1].bar(_keys, values, color=colors, tick_label=_keys)
     axs[1].set_title('Histogramme')
     for i, v in enumerate(values):
-        axs[1].text(i, v+.05,  str(v), color='blue', fontweight='bold', ha="center")
+        if (i <= len(values)-3):
+            axs[1].text(i, v+.05,  str(v), color='blue', fontweight='bold', ha="center")
     
-    # Sous-graphe 3 : Légende personnalisée
-    legend_handles = []
-    axs[2].axis('off')
-    for i in range(len(keys)):
-        legend_handles.append(axs[2].bar(0, 0, color=colors[i % len(colors)]))
-    axs[2].legend(legend_handles, keys, loc='center')
-    axs[2].axis('off')
+    labels = [f'{k}' for k in keys]
+    axs[1].legend(bars, labels, loc='upper right')
 
-    for i in range(3): axs[i].patch.set_alpha(0)
-
-    """
-    legend_plugin = plugins.InteractiveLegendPlugin(axs[2], [axs[2].bar(range(len(data)), values, align='center', alpha=0)], keys)
-    plugins.connect(fig, legend_plugin)
-    """
-    return mpld3.fig_to_html(fig, no_extras=False, template_type='simple')
+    plt.show()
+    return fig
