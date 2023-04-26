@@ -112,12 +112,6 @@ form==#|html|
         margin: 18px;
     }
 
-
-    
-    .graph {
-        width = 500px;
-        height= 300px;
-    }
 </style>
 
     <script>
