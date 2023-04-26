@@ -125,16 +125,10 @@ document.getElementById("dwn-btn").addEventListener("click", function(){
 }, false);
     </script>
 
-    {{ hist|safe }}
-    {{ camembert|safe }}
     {{graphs|safe}}
     <br>
     <br>
-    <br>
-    <br>
-    <br>
     <input type="button" id="dwn-btn" value="Téléchargement des choix des élèves"/>
-    {{data}}
 {% else %}
     {% if answer != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
