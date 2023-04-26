@@ -60,13 +60,13 @@ if user__role == "teacher" :
 
     for a in answers : 
         form += str(a)
-    
+    """
     for answer in answers:
         for k, v in json.loads(answer[0]):
             data[v][k] = data.get(k, 0) + 1
 
     fig = draw_hist(data)
-    
+    """
 
 
 with get_session(table_class= Response, base=Base) as session:
