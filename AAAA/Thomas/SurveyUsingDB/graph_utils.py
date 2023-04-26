@@ -73,5 +73,7 @@ def draw_graphs(data):
     
     labels = [f'{k}' for k in keys]
     axs[1].legend(bars, labels, loc='upper right')
-
+    plugins = [mpld3.plugins.PluginBase(fig, None)]
+    for plugin in plugins:
+        plugin.set_axis_off()
     return mpld3.fig_to_html(fig, no_extras=False, template_type='simple')
