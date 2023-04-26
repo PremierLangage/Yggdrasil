@@ -58,15 +58,16 @@ if user__role == "teacher" :
     
     data = {v:{} for v in range(int(NUMBER_QUESTIONS))}
 
-    for a in answers : 
-        form += str(json.loads(str(a[0]))) + "<br>"
-    """
+#    for a in answers : 
+ #       form += str(json.loads(str(a[0]))) + "<br>"
+    
     for answer in answers:
-        for k, v in json.loads(answer[0]):
-            data[v][k] = data.get(k, 0) + 1
+        for k, v in json.loads(str(answer[0])):
+            form += str(k) + " " str(v) + "<br>"
 
-    fig = draw_hist(data)
-    """
+       #     data[v][k] = data.get(k, 0) + 1
+
+#    fig = draw_hist(data)
 
 
 with get_session(table_class= Response, base=Base) as session:
