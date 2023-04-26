@@ -44,6 +44,11 @@ def draw_camembert(data):
 
 
 def draw_graphs(data):
+    # Size are multiplied by 100 pixels to state the final static const size of the graph
+    WIDTH = 10
+    HEIGHT = 4
+    # ---
+    
     keys = list(data.keys())
     values = list(data.values())
 
