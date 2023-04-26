@@ -74,7 +74,7 @@ if user__role == "teacher" :
     camembert = draw_camembert(data[0])
     camembert = mpld3.fig_to_html(camembert)
 
-    graphs = [draw_graphs(data[0]) for i in range(NUMBER_QUESTIONS)]
+    graphs = [draw_graphs(data[i]) for i in range(NUMBER_QUESTIONS)]
     
 
 
