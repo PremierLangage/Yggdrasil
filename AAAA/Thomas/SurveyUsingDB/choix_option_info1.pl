@@ -70,6 +70,7 @@ if user__role == "teacher" :
     fig = draw_hist(data[0])
     graph = mpld3.fig_to_html(fig)
 
+del fig
 
 with get_session(table_class= Response, base=Base) as session:
     answer = session.query(Response).filter(Response.student_id == user__id).first()
