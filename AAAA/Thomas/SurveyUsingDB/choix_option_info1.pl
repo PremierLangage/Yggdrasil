@@ -81,7 +81,6 @@ feedback = '<span class="success-state">Réponse enregistrée</span>'
 
 answer = {}
 for i, r in enumerate(radio):
-    break
     answer[response[str(i)]['items'][int(response[str(i)]['selection'])]] = i
 
 form = radio
@@ -97,7 +96,7 @@ if int(score) == 100:
 else :
     feedback = '<span class="error-state">Vous ne pouvez pas sélectionner plusieurs fois la même option</span>'
 
-grade = (score, response)
+grade = (score, str(response)+ "<br>" + str(answer))
 ==
 
 
