@@ -50,15 +50,16 @@ NUMBER_QUESTIONS=3
 before==#|python|
 from database_utils import get_session, Base, Response
 from graph_utils import draw_hist, draw_camembert
+import json
 
 if user__role == "teacher" :
     with get_session(table_class= Response, base=Base) as session:
         answers = session.query(Response.value).all()
     
     data = {i:[] for i in range(NUMBER_QUESTIONS)}
-    
     for answer in answers:
-
+        for k, v in json.decode(answer):
+            data[v]
 
     draw_hist()
 
