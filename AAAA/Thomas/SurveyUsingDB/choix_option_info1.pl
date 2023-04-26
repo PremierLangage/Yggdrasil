@@ -67,7 +67,7 @@ if user__role == "teacher" :
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data.get(k, 0) + 1
 
-    hist = draw_hist({'Géomatique': 1, 'Mathématiques':6})
+    hist = draw_hist(data[0])
     hist = mpld3.fig_to_html(hist)
 
     camembert = draw_camembert(data[0])
