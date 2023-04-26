@@ -63,7 +63,7 @@ if user__role == "teacher" :
     
     for answer in answers:
         for elem in json.loads(str(answer[0])):
-            form += str(k) + " " + str(v) + "<br>"
+            form += str(elem) + "<br>"
 
        #     data[v][k] = data.get(k, 0) + 1
 
