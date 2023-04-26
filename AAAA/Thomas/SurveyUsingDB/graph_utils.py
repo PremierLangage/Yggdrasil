@@ -57,6 +57,8 @@ def draw_graphs(data):
     axs[0].pie(values, colors=colors, 
             autopct='%1.1f%%', startangle=90)
     axs[0].axis('equal')
+    axs[0].set_title('Proportions')
+
 
     # Sous-graphe 2 : Histogramme
     # je redéfinis un set de clés pour intégrer un affichage 1 ligne sur 2
@@ -67,4 +69,6 @@ def draw_graphs(data):
     
     labels = [f'{k}' for k in keys]
     axs[2].legend(axs[2].bar(keys, [0 for i in keys], color=colors, tick_label=keys), labels, loc='upper center')
+    axs[2].set_title('Légendes')
+
     return mpld3.fig_to_html(fig, no_extras=False, template_type='simple')
