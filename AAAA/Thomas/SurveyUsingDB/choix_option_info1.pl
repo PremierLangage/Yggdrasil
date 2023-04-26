@@ -92,10 +92,10 @@ for i in range(int(NUMBER_QUESTIONS)):
 
 form==
 {% if user__role == "teacher" %}
-    <span>
+    <p>
     {{ hist|safe }}
     {{ camembert|safe }}
-    </span>
+    </p>
 {% else %}
     {% if answer != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
