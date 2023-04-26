@@ -129,9 +129,11 @@ document.getElementById("dwn-btn").addEventListener("click", function(){
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
     {% else %}
         {% for r in radio %}
+        <div style="{display:'flex'; flex-direction: 'column'}">
             {{ r.question|safe }}
 
             {{graphs|safe}}
+        </div>
         {% endfor %}
     {% endif %}
     <br>
