@@ -62,13 +62,16 @@ for i in range(int(NUMBER_QUESTIONS)):
 
 form==
 
-{% for r in radio %}
-{{ r.question|safe }}
+{% if  %}
+<span class="success-state">Vous avez déjà répondu à ce sondage</span>
+{% else %}
+    {% for r in radio %}
+        {{ r.question|safe }}
 
-{{ r|component }}
+        {{ r|component }}
 
-{% endfor %}
-
+    {% endfor %}
+{% endif %}
 ==
 
 # EVALUATE THE STUDENT ANSWER
