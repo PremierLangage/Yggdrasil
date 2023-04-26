@@ -59,7 +59,7 @@ if user__role == "teacher" :
     data = {v:{} for v in range(NUMBER_QUESTIONS)}
     for answer in answers:
         for k, v in json.loads(answer):
-            data[k] = data.get(k, 0) + 1
+            data[v][k] = data.get(k, 0) + 1
 
     fig = draw_hist(data)
 
