@@ -106,7 +106,7 @@ form==#|html|
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: light-gray;
+        background-color: light-grey;
         padding: 18px;
         margin: 18px;
     }
