@@ -71,7 +71,7 @@ if user__role == "teacher" :
         for k, v in json.loads(answer.value).items():
             data[v][k] = data[v].get(k, 0) + 1
             choices[int(v)] = k
-        answers_csv += f"{answer.username},{answer.firstname},{answer.lastname},{answer.email},{','.join(choices)}\n"
+        answers_csv += f"{answer.username},{answer.firstname},{answer.lastname},{answer.email},{','.join(choices)}\\n"
         
 
     hist = draw_hist(data[0])
@@ -123,7 +123,7 @@ function download(filename, text) {
 // Start file download.
 document.getElementById("dwn-btn").addEventListener("click", function(){
     // Generate download of hello.txt file with some content
-    var text = "{{answers_csv | safe}}";
+    var text = "{{answers_csv}}";
     var filename = "answers.csv";
     
     download(filename, text);
