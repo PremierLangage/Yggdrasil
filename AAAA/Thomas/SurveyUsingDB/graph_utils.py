@@ -2,6 +2,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from random import shuffle
+import mpld3
+from mpld3 import plugins
 
 def draw_hist(data):
     # Generate some random data
