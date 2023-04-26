@@ -86,7 +86,7 @@ for i, r in enumerate(radio):
 form = NUMBER_QUESTIONS
 
 
-if len(answer) != NUMBER_QUESTIONS:
+if len(answer) != int(NUMBER_QUESTIONS):
     score = 0
 
 if int(score) == 100:
