@@ -54,7 +54,7 @@ import json
 
 if user__role == "teacher" :
     with get_session(table_class= Response, base=Base) as session:
-        answers = session.query(Response).all()
+        answers = session.query(Response.value).all()
     
     data = {v:{} for v in range(int(NUMBER_QUESTIONS))}
 
