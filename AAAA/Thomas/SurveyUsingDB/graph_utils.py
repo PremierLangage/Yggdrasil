@@ -68,7 +68,7 @@ def draw_graphs(data):
     # Sous-graphe 3 : Légende personnalisée
     legend_handles = []
     for i in range(len(keys)):
-        legend_handles.append(axs[2].bar(0, 0, color=colors[i % len(colors)]))
+        legend_handles.append(axs[2].bar(0, 0, color=colors[i % len(colors)], visible=False))
     axs[2].legend(legend_handles, keys, loc='center')
     axs[2].axis('off')
 
