@@ -61,7 +61,7 @@ from mpld3 import plugins
 
 if user__role == "teacher" :
     with get_session(table_class= Response, base=Base) as session:
-        answers = session.query(Response.value).all()
+        answers = session.query(Response).all()
     
     data = {v:{} for v in range(int(NUMBER_QUESTIONS))}
     
