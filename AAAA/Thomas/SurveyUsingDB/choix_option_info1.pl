@@ -90,6 +90,7 @@ for i in range(int(NUMBER_QUESTIONS)):
 form==
 {% if user__role == "teacher" %}
     {{ graph|safe }}
+    <br>
     {{ data[0] }}
 {% else %}
     {% if answer != None %}
