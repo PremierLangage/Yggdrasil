@@ -87,7 +87,7 @@ for i, r in enumerate(radio):
 
   #  answer[response[str(i)]['items'][int(response[str(i)]['selection'])]] = i
 
-form = radio
+form = answer
 
 
 if len(answer) != NUMBER_QUESTIONS:
