@@ -50,7 +50,7 @@ before==#|python|
 radio = []
 
 for i in range(int(NUMBER_QUESTIONS)):
-    tmp = RadioGroup()
+    tmp = RadioGroup(cid=str(i))
     tmp.question = globals()["question"+str(i+1)]
     tmp.items = []
     for j, item in enumerate(items.splitlines()):        
