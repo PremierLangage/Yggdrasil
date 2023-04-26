@@ -81,7 +81,7 @@ if user__role == "teacher" :
     camembert = mpld3.fig_to_html(camembert)
 
     graphs = draw_graphs(data[0])
-    """
+    
     
 
 
