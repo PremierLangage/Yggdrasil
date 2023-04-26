@@ -73,5 +73,7 @@ def draw_graphs(data):
     axs[2].legend(legend_handles, keys, loc='center')
     axs[2].axis('off')
 
-    plt.show()
-    return fig
+    legend_plugin = plugins.InteractiveLegendPlugin(axs[2], [axs[2].bar(range(len(data)), values, align='center', alpha=0)], keys)
+    plugins.connect(fig, legend_plugin)
+
+    return mpld3.fig_to_html(fig)
