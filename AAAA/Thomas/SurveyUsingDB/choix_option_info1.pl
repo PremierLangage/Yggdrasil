@@ -127,6 +127,7 @@ document.getElementById("dwn-btn").addEventListener("click", function(){
     <br>
     <br>
     <br>
+    <input type="button" id="dwn-btn" value="Téléchargement des choix des élèves"/>
     {{data}}
 {% else %}
     {% if answer != None %}
