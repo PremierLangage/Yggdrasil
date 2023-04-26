@@ -82,12 +82,8 @@ feedback = '<span class="success-state">Réponse enregistrée</span>'
 answer = {}
 for i, r in enumerate(radio):
     answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
- #   break
 
-
-  #  answer[response[str(i)]['items'][int(response[str(i)]['selection'])]] = i
-
-form = answer
+form = NUMBER_QUESTIONS
 
 
 if len(answer) != NUMBER_QUESTIONS:
