@@ -120,6 +120,7 @@ document.getElementById("dwn-btn").addEventListener("click", function(){
 
     {{ hist|safe }}
     {{ camembert|safe }}
+    {{graphs|safe}}
     <br>
     <br>
     <br>
