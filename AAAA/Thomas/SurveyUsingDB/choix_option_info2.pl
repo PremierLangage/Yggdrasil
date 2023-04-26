@@ -144,7 +144,7 @@ document.getElementById("dwn-btn").addEventListener("click", function(){
             <div class="answer">
                 <div>{{ r.question|safe }}</div>
 
-                <div>{{graphs|safe}}</div>
+                <div>{{"coucou"|safe}}</div>
             </div>
         {% endfor %}
     {% endif %}
