@@ -15,6 +15,7 @@
 #*****************************************************************************
 
 @database_utils.py
+@graph_utils.py
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
@@ -48,6 +49,9 @@ NUMBER_QUESTIONS=3
 
 before==#|python|
 from database_utils import get_session, Base, Response
+
+if user__role == "teacher" :
+
 
 with get_session(table_class= Response, base=Base) as session:
     answer = session.query(Response).filter(Response.student_id == user__id).first()
