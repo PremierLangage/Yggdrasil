@@ -86,8 +86,6 @@ answer = {}
 for i, r in enumerate(radio):
     answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
 
-form = NUMBER_QUESTIONS
-
 
 if len(answer) != int(NUMBER_QUESTIONS):
     score = 0
