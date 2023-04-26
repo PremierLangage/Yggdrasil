@@ -57,6 +57,8 @@ if user__role == "teacher" :
         answers = session.query(Response.value).all()
     
     data = {v:{} for v in range(NUMBER_QUESTIONS)}
+
+    form = answers
     for answer in answers:
         for k, v in json.loads(answer):
             data[v][k] = data.get(k, 0) + 1
