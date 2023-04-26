@@ -54,7 +54,7 @@ import os
 os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib-ogs20b_w"
 
 from database_utils import get_session, Base, Response
-from graph_utils import draw_hist, draw_camembert
+from graph_utils import draw_hist, draw_camembert, draw_graphs
 import json, mpld3
 
 if user__role == "teacher" :
@@ -72,6 +72,9 @@ if user__role == "teacher" :
 
     camembert = draw_camembert(data[0])
     camembert = mpld3.fig_to_html(camembert)
+
+    graphs = draw_graphs(data[0])
+    graphs = mpld3.fig_to_html(graphs)
 
 
 with get_session(table_class= Response, base=Base) as session:
