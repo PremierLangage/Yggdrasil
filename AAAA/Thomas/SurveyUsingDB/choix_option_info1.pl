@@ -56,7 +56,7 @@ if user__role == "teacher" :
     with get_session(table_class= Response, base=Base) as session:
         answers = session.query(Response.value).all()
     
-    data = {i:[] for i in range(NUMBER_QUESTIONS)}
+    data = {}
     for answer in answers:
         for k, v in json.loads(answer):
             data[v]
