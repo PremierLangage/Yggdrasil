@@ -47,6 +47,11 @@ NUMBER_QUESTIONS=3
 ############################################
 
 before==#|python|
+from database_utils import get_session, Base, Response
+
+with get_session(table_class= Response, base=Base) as session:
+    answer = session.query(Response).filter(Response.student_id == user__id).first()
+
 radio = []
 
 for i in range(int(NUMBER_QUESTIONS)):
