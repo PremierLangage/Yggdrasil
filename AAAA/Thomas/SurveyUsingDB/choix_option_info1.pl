@@ -93,6 +93,7 @@ for i in range(int(NUMBER_QUESTIONS)):
 form==
 {% if user__role == "teacher" %}
     {{ hist|safe }}
+    {{ camembert|safe }}
 
 {% else %}
     {% if answer != None %}
