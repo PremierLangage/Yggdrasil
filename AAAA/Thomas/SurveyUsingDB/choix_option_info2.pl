@@ -102,7 +102,7 @@ form==#|html|
     .mpld3-yaxis { display: none !important; }
     .mpld3-xaxis { display: none !important; }
     .mpld3-text { 
-        position: relative !important; /* obligatoire pour que z-index fonctionne */
+        position: absolute !important; /* obligatoire pour que z-index fonctionne */
         z-index: 10000000 !important; 
     }
     .mpld3-paths {
