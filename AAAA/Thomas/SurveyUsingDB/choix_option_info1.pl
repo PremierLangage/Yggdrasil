@@ -66,6 +66,7 @@ if user__role == "teacher" :
     data = {v:{} for v in range(int(NUMBER_QUESTIONS))}
     
     for answer in answers:
+        form += answer
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
 
