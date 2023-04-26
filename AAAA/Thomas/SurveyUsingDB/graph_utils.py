@@ -25,7 +25,7 @@ def draw_hist(data):
     # Ajouter des étiquettes d'axe et une légende
     plt.xlabel('Choix')
     plt.ylabel('Valeurs')
-    return plt
+    return plt.gcf()
 
 
 
@@ -41,4 +41,4 @@ def draw_camembert(data):
             autopct='%1.1f%%', shadow=True, startangle=90)
 
     plt.axis('equal')
-    
+    return plt.gcf()
