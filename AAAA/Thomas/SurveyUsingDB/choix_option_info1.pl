@@ -70,6 +70,9 @@ if user__role == "teacher" :
     hist = draw_hist({'Géomatique': 1, 'Mathématiques':6})
     hist = mpld3.fig_to_html(graph)
 
+    camembert = draw_camembert(data[0])
+    camembert = mpld3.fig_to_html(camembert)
+
 
 with get_session(table_class= Response, base=Base) as session:
     answer = session.query(Response).filter(Response.student_id == user__id).first()
