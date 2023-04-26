@@ -113,8 +113,8 @@ form==#|html|
     }
     
     .graph {
-        width = 500px !important;
-        height= 300px !important;
+        width = 500px;
+        height= 300px;
     }
 </style>
 
