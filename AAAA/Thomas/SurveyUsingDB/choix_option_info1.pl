@@ -64,7 +64,7 @@ if user__role == "teacher" :
         answers = session.query(Response).all()
         
     data = {v:{} for v in range(int(NUMBER_QUESTIONS))}
-    answers_csv = f"usernmae,firsname,lastname,email,{','.join(eval(str('question'+str(i+1))) for i in range(int(NUMBER_QUESTIONS)))}\\n"
+    answers_csv = f"username,firsname,lastname,email,{','.join(eval(str('question'+str(i+1))) for i in range(int(NUMBER_QUESTIONS)))}\\n"
     
     for answer in answers:
         choices = [""]*int(NUMBER_QUESTIONS)
