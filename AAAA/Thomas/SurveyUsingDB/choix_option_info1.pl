@@ -53,7 +53,14 @@ from graph_utils import draw_hist, draw_camembert
 
 if user__role == "teacher" :
     with get_session(table_class= Response, base=Base) as session:
-        answer = session.query(Response.value).all() 
+        answers = session.query(Response.value).all()
+    
+    data = {i:[] for i in range(NUMBER_QUESTIONS)}
+    
+    for answer in answers:
+
+
+    draw_hist()
 
 
 with get_session(table_class= Response, base=Base) as session:
