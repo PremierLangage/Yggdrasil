@@ -123,7 +123,7 @@ function download(filename, text) {
 // Start file download.
 document.getElementById("dwn-btn").addEventListener("click", function(){
     // Generate download of hello.txt file with some content
-    var text = {{answers_csv}};
+    var text = "{{answers_csv}}";
     var filename = "answers.csv";
     
     download(filename, text);
