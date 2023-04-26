@@ -56,6 +56,7 @@ os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib-ogs20b_w"
 from database_utils import get_session, Base, Response
 from graph_utils import draw_hist, draw_camembert, draw_graphs
 import json, mpld3
+from mpld3 import plugins
 
 if user__role == "teacher" :
     with get_session(table_class= Response, base=Base) as session:
