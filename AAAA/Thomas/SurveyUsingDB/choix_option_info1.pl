@@ -48,6 +48,11 @@ NUMBER_QUESTIONS=3
 ############################################
 
 before==#|python|
+
+import os
+
+os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib-ogs20b_w"
+
 from database_utils import get_session, Base, Response
 from graph_utils import draw_hist, draw_camembert
 import json, mpld3
