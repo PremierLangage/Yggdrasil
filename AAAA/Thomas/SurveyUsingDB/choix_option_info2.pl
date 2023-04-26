@@ -104,7 +104,7 @@ form==#|html|
 
     .answer {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         background-color: light-grey;
         padding: 18px;
