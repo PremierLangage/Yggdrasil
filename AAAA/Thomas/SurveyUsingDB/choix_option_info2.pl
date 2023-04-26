@@ -124,17 +124,16 @@ document.getElementById("dwn-btn").addEventListener("click", function(){
     download(filename, text);
 }, false);
     </script>
+    
     {% if answer != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
     {% else %}
         {% for r in radio %}
             {{ r.question|safe }}
 
-            {{ r|component }}
-
+            {{graphs|safe}}
         {% endfor %}
     {% endif %}
-    {{graphs|safe}}
     <br>
     <br>
     <input type="button" id="dwn-btn" value="Téléchargement des choix des élèves"/>
