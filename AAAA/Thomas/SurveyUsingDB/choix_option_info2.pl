@@ -106,7 +106,7 @@ form==#|html|
         z-index: 10000000 !important; 
     }
     g.mpld3-paths {
-        overflow: auto !important;
+        overflow: scroll !important;
     }
     .answer {
         display: flex;
