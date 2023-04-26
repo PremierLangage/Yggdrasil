@@ -104,7 +104,7 @@ form==#|html|
     /* .mpld3-figure { width: 100%; height: 100%; } */
     .answer {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: light-grey;
