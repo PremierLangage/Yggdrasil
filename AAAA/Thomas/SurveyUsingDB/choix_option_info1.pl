@@ -111,7 +111,7 @@ form==#|html|
     <br>
     <br>
     <input type="button" id="dwn-btn" value="Téléchargement des choix des élèves"/>
-        <script>
+    <script>
 function download(filename, text) {
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
