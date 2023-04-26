@@ -101,7 +101,7 @@ form==#|html|
 <style>
     .mpld3-yaxis { display: none !important; }
     .mpld3-xaxis { display: none !important; }
-
+    .mpld3-figure { width: 100%; height: 100%; }
     .answer {
         display: flex;
         flex-direction: row;
@@ -111,6 +111,8 @@ form==#|html|
         padding: 18px;
         margin: 18px;
     }
+
+
     
     .graph {
         width = 500px;
