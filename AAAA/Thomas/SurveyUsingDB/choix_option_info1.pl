@@ -97,7 +97,7 @@ if int(score) == 100:
 else :
     feedback = '<span class="error-state">Vous ne pouvez pas sélectionner plusieurs fois la même option</span>'
 
-grade = (score, feedback)
+grade = (score, response)
 ==
 
 
