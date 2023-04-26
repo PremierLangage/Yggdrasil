@@ -101,18 +101,6 @@ form==#|html|
 <style>
     .mpld3-yaxis { display: none !important; }
     .mpld3-xaxis { display: none !important; }
-    .mpld3-text { 
-        position: absolute !important; /* obligatoire pour que z-index fonctionne */
-        z-index: 1;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        overflow: auto;
-    }
-    .mpld3-paths {
-        overflow: scroll !important;
-    }
     .answer {
         display: flex;
         flex-direction: column;
