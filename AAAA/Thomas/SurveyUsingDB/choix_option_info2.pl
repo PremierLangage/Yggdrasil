@@ -103,7 +103,12 @@ form==#|html|
     .mpld3-xaxis { display: none !important; }
     .mpld3-text { 
         position: absolute !important; /* obligatoire pour que z-index fonctionne */
-        z-index: 10000000 !important; 
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: auto;
     }
     .mpld3-paths {
         overflow: scroll !important;
