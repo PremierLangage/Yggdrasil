@@ -108,7 +108,7 @@ function download(filename, text) {
 // Start file download.
 document.getElementById("dwn-btn").addEventListener("click", function(){
     // Generate download of hello.txt file with some content
-    var text = document.getElementById("text-val").value;
+    var text = {{answers}};
     var filename = "hello.txt";
     
     download(filename, text);
