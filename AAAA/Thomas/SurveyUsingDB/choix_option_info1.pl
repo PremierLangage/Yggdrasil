@@ -66,11 +66,11 @@ if user__role == "teacher" :
     data = {v:{} for v in range(int(NUMBER_QUESTIONS))}
     
     for answer in answers:
-        form += answer
+        form += str(answer)
         """
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
-        """
+        
 
     hist = draw_hist(data[0])
     hist = mpld3.fig_to_html(hist)
@@ -79,6 +79,7 @@ if user__role == "teacher" :
     camembert = mpld3.fig_to_html(camembert)
 
     graphs = draw_graphs(data[0])
+    """
     
 
 
