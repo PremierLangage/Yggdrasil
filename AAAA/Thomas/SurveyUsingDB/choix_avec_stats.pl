@@ -41,6 +41,9 @@ question_a=<b>Deuxième exemple</b>
 items==
 Choix exemple 1
 Choix exemple 2
+Choix exemple 3
+Choix exemple 4
+Choix exemple 5
 ==
 
 ############################################
