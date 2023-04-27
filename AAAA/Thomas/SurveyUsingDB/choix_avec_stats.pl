@@ -45,7 +45,7 @@ import json, mpld3
 from mpld3 import plugins
 
 QUESTIONS = [q for q in globals() if q.startswith("question_")]
-NUMBER_QUESTIONS = len(questions)
+NUMBER_QUESTIONS = len(QUESTIONS)
 
 
 if user__role == "teacher" :
