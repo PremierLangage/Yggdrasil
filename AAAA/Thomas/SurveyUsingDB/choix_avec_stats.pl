@@ -24,6 +24,7 @@ dummy statement
 # question_a=<b>deuxième question</b>
 
 # Possibilité de réponses aux questions:
+# Doivent être uniques
 items==
 Dummy choice 1
 Dummy choice 2
