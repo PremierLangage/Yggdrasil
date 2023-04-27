@@ -11,7 +11,7 @@ Base = declarative_base()
 
 class Response(Base):
     base = Base
-    __tablename__ = "test_db_choix_option_3" 
+    __tablename__ = "test_db_choix_option_4" 
     id : Mapped[int] = mapped_column(primary_key=True)
     
     username : Mapped[str] = mapped_column(String)
