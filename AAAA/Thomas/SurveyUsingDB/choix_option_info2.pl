@@ -77,7 +77,7 @@ with get_session(table_class= Response, base=Base) as session:
     answer = session.query(Response).filter(Response.student_id == user__id).first()
 
 radio = []
-
+tmp.question = [q for q in globals() if q.startswith("question_")]
 for i in range(int(NUMBER_QUESTIONS)):
     tmp = RadioGroup(cid=str(i))
     tmp.question = globals()["question_"+str(i+1)]
