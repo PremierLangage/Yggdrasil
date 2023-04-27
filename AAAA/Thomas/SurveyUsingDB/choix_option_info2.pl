@@ -102,7 +102,7 @@ form==#|html|
     .mpld3-yaxis { display: none !important; }
     .mpld3-xaxis { display: none !important; }
     path.mpld3-path:hover {
-        fill: rgba(255,255,255,0.1);
+        fill: rgba(255,255,255,0.1) !important;
         -webkit-box-shadow: 0px 0px 100px 0px rgba(255,165,0,1);
         -moz-box-shadow: 0px 0px 100px 0px rgba(255,165,0,1);
         box-shadow: 0px 0px 100px 0px rgba(255,165,0,1);    
