@@ -104,12 +104,15 @@ form==#|html|
     @keyframes smooth-zoom {
         0% {
             transform: scale(1);
+            opacity: 0.9;
         }
         50% {
             transform: scale(1.005);
+            opacity: 1.0;
         }
         100% {
             transform: scale(1);
+            opacity: 0.9;
         }
     }
     path.mpld3-path:hover {
