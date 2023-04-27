@@ -23,6 +23,7 @@ dummy statement
 # question_1=<b>première question</b>
 # question_a=<b>deuxième question</b>
 
+# Possibilité de réponses aux questions:
 items==
 Géomatique
 Logiciel
