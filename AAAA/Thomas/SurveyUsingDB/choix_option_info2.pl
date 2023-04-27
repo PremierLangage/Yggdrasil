@@ -139,6 +139,9 @@ form==#|html|
         border: 2px outset #d4d4d4;
         transform-origin: center !important;
     }
+    .c_btn {
+        cursor: pointer;
+    }
 </style>
 
     
@@ -157,7 +160,7 @@ form==#|html|
     <br>
 
     <div class="exercise__actions text-center">
-        <div class="btn btn-primary action-submit" id="dwn-btn"> 
+        <div class="btn btn-primary c_btn" id="dwn-btn"> 
             <i class="fas fa-download"></i>
             <span class="ion-hide-md-down">Téléchargement des choix des élèves</span>
         </div>
