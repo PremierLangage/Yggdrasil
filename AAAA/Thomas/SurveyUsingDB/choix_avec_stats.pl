@@ -5,18 +5,16 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 ################### Modifier ici ###########################
-author = Thomas Saillard <thomas.saillard@edu.univ-eiffel.fr> & Antonin Jean <antonin.jean@edu.univ-eiffel.fr>
+author = Thomas Saillard & Antonin Jean
 
 # Ecrire un titre ici
 title= dummy title
 
 # Ecrire un énoncé ici
 text ==
-Vous devez définir des questions au format suivant : `question_X`
+Vous pouvez définir des questions au format suivant : `question_X`
 
-Où `X` est un identifiant se devant d'être unique et n'ayant aucune incidence dans la suite du code.
-
-Vous devez aussi définir un titre `title`, et les éléments `items`.
+Où X est un identifiant se devant d'être unique et n'ayant aucune incidence dans la suite du code.
 
 ---
 
@@ -24,13 +22,7 @@ Vous devez aussi définir un titre `title`, et les éléments `items`.
 
 > **question_1**=`<b>première question</b>`
 
-> **question_2**=`<b>deuxième question</b>`
-
-> **title**=`<b>deuxième question</b>`
-
-> **question_2**=`<b>deuxième question</b>`
-
-
+> **question_a**=`<b>deuxième question</b>`
 ==
 
 # Vous pouvez définir des questions au format suivant : question_X
@@ -55,7 +47,7 @@ Choix exemple 2
 
 before==#|python|
 
-import os, sys
+import os, sys, time
 
 os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib-ogs20b_w"
 
@@ -69,12 +61,14 @@ print(QUESTIONS, file=sys.stderr)
 NUMBER_QUESTIONS = len(QUESTIONS)
 
 
-if user__role == "teacher" : # C'est un prof, on récupère les réponses de tout les élèves puis on contruit les graphs ainsi que le fichier de réponses
+if user__role == "teacher" :
     with get_session(table_class= Response, base=Base) as session:
         answers = session.query(Response.value).all()
-
+    
     data = {v:{} for v in range(NUMBER_QUESTIONS)}
+    
     answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
+
 
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
@@ -84,19 +78,19 @@ if user__role == "teacher" : # C'est un prof, on récupère les réponses de tou
         
 
         
-else: # C'est un élève on regarde si il a déjà répondu au questionnaire puis on contruit les composants
-    with get_session(table_class= Response, base=Base) as session:
-        answer = session.query(Response).filter(Response.student_id == user__id).first()
 
-    radio = []
-    for i in range(len(QUESTIONS)):
-        tmp = RadioGroup(cid=str(i))
-        tmp.question = QUESTIONS[i]
-        tmp.items = []
-        for j, item in enumerate(items.splitlines()):        
-            tmp.items.append({ "id": j+1, "content": item })
-        globals()[str(i)] = tmp
-        radio.append(vars(tmp))
+with get_session(table_class= Response, base=Base) as session:
+    answer = session.query(Response).filter(Response.student_id == user__id).first()
+
+radio = []
+for i in range(len(QUESTIONS)):
+    tmp = RadioGroup(cid=str(i))
+    tmp.question = QUESTIONS[i]
+    tmp.items = []
+    for j, item in enumerate(items.splitlines()):        
+        tmp.items.append({ "id": j+1, "content": item })
+    globals()[str(i)] = tmp
+    radio.append(vars(tmp))
 ==
 
 form==#|html|
@@ -104,7 +98,6 @@ form==#|html|
 
 
 {% if user__role == "teacher" %}
-
 <style>
     .mpld3-yaxis { display: none !important; }
     .mpld3-xaxis { display: none !important; }
@@ -155,6 +148,8 @@ form==#|html|
         cursor: pointer;
     }
 </style>
+
+    
         {% for i in range(NUMBER_QUESTIONS) %}
             <div class="answer">
                 <div>{{  radio[i].question|safe }}</div>
@@ -162,6 +157,8 @@ form==#|html|
                 <div class="graph">{{ graphs[i]|safe }}</div>
             </div>
         {% endfor %}
+    <br>
+    <br>
 
     <div class="exercise__actions text-center">
         <div class="btn btn-primary c_btn" id="dwn-btn"> 
@@ -185,6 +182,7 @@ form==#|html|
 
         // Start file download.
         document.getElementById("dwn-btn").addEventListener("click", function(){
+            // Generate download of hello.txt file with some content
             var text = "{{answers_csv}}";
             var filename = "answers.csv";
             
@@ -225,16 +223,17 @@ if len(answer) != int(NUMBER_QUESTIONS):
 if int(score) == 100:
     with get_session(table_class = Response, base=Base) as session:
         session.add(
-            Response(
-                student_id = user__id if user__id else session__id, 
-                username = user__username,
-                firstname = user__firstname,
-                lastname = user__lastname,
-                email = user__email,
-                value = json.dumps(answer)))
+            Response(student_id = user__id if user__id else session__id, 
+            username = user__username,
+            firstname = user__firstname,
+            lastname = user__lastname,
+            email = user__email,
+            value = json.dumps(answer)))
         session.commit()
 else :
     feedback = '<span class="error-state">Vous ne pouvez pas sélectionner plusieurs fois la même option</span>'
 
 grade = (score, feedback)
 ==
+
+
