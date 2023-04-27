@@ -156,7 +156,7 @@ form==#|html|
     <br>
     <br>
 
-    <div type="button" class="btn btn-primary" id="dwn-btn"> 
+    <div class="btn btn-primary" id="dwn-btn"> 
         <i class="fas fa-download"></i>
         <span class="ion-hide-md-down">Téléchargement des choix des élèves</span>
     </div>
