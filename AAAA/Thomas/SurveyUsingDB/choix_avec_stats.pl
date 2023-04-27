@@ -16,13 +16,21 @@ Vous devez définir des questions au format suivant : `question_X`
 
 Où `X` est un identifiant se devant d'être unique et n'ayant aucune incidence dans la suite du code.
 
+Vous devez aussi définir un titre `title`, et les éléments `items`.
+
 ---
 
 <u>exemples :</u>
 
 > **question_1**=`<b>première question</b>`
 
-> **question_a**=`<b>deuxième question</b>`
+> **question_2**=`<b>deuxième question</b>`
+
+> **title**=`<b>deuxième question</b>`
+
+> **question_2**=`<b>deuxième question</b>`
+
+
 ==
 
 # Vous pouvez définir des questions au format suivant : question_X
