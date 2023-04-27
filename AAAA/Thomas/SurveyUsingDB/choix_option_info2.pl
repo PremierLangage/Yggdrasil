@@ -118,7 +118,6 @@ form==#|html|
     path.mpld3-path:hover {
         animation: smooth-zoom 2s ease-in-out infinite;
         opacity: 0.9;
-        box-shadow: 50px 50px 5px 2px rgba(255, 0, 0, 0.5); /* Ajouter une bordure floue blanche */
         transform-origin: 50% 50% !important;
         margin: 0 auto !important; /* Centrer horizontalement */
     }
