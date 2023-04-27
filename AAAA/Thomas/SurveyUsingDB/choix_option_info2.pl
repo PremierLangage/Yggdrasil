@@ -117,7 +117,7 @@ form==#|html|
     }
     path.mpld3-path:hover {
         animation: smooth-zoom 2s ease-in-out infinite;
-        transform-origin: left !important;
+        transform-origin: center !important;
         margin: 0 auto !important; /* Centrer horizontalement */
     }
     .answer {
