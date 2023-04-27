@@ -22,7 +22,7 @@ dummy statement
 # exemple :
 # question_1=<b>première question</b>
 # question_a=<b>deuxième question</b>
-question_1=test
+question_1=<b>test</b>
 
 # Possibilité de réponses aux questions:
 # Doivent être uniques
@@ -35,7 +35,7 @@ Dummy choice 2
 
 before==#|python|
 
-import os
+import os, sys
 
 os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib-ogs20b_w"
 
@@ -45,6 +45,7 @@ import json, mpld3
 from mpld3 import plugins
 
 QUESTIONS = [q for q in globals() if q.startswith("question_")]
+print(QUESTIONS, file=sys.stderr)
 NUMBER_QUESTIONS = len(QUESTIONS)
 
 
