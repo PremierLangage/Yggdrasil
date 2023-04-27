@@ -7,10 +7,12 @@ builder =@ /builder/before.py
 ################### Modifier ici ###########################
 author = Thomas Saillard & Antonin Jean
 
-title= # CHANGER TITRE ICI
+# Ecrire un titre ici
+title= dummy title
 
-text ==
 # Ecrire un énoncé ici
+text ==
+dummy state
 ==
 
 # Vous pouvez définir des questions au format suivant : question_X
