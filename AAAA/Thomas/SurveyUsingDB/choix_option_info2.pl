@@ -128,7 +128,7 @@ form==#|html|
             opacity: 1;
         }
     }
-    .graph:first-child {
+    .mpld3-figure:first-child {
         animation: load-animation 2s ease-in-out;
     }
     .answer {
