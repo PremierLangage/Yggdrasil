@@ -58,7 +58,7 @@ if user__role == "teacher" :
     data = {v:{} for v in range(NUMBER_QUESTIONS)}
     print("CHHHHHHHHHHHHHHHHHHHHHHHHHHHHH", QUESTIONS,NUMBER_QUESTIONS  , file=sys.stderr)
     
-    answers_csv = f"username,firsname,lastname,email,{','.join(eval(str('question'+str(i+1))) for i in range(NUMBER_QUESTIONS))}\\n"
+    answers_csv = f"username,firsname,lastname,email,{','.join(eval(str('question_'+str(i+1))) for i in range(NUMBER_QUESTIONS))}\\n"
     print("DHHHHHHHHHHHHHHHHHHHHHHHHHHHHH", QUESTIONS,NUMBER_QUESTIONS  , file=sys.stderr)
 
 
