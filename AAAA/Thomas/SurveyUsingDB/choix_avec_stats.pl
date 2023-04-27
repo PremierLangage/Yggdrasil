@@ -5,9 +5,9 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 ################### Modifier ici ###########################
-author=ESIEE info AD&D année 1
+author = Thomas Saillard & Antonin Jean
 
-title=Vos choix d'options personnels
+title= dummy # CHANGER ICI
 
 text ==
 Sans consultation de vos maitres d'apprentissage et seulement en interrogeant vos goûts personnels, veuillez 
