@@ -102,7 +102,7 @@ form==#|html|
     .mpld3-yaxis { display: none !important; }
     .mpld3-xaxis { display: none !important; }
     .mpld3-path:hover {
-        background-color: black;
+        fill: black;
     }
     .answer {
         display: flex;
