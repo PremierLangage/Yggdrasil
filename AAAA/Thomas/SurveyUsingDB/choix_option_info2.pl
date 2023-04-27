@@ -103,13 +103,13 @@ form==#|html|
     .mpld3-xaxis { display: none !important; }
     @keyframes smooth-zoom {
         0% {
-            box-shadow: 0 0 5px 2px rgba(255, 255, 0, 0.9) !important; /* Ajouter une bordure floue blanche */
+            box-shadow: 0 0 50px 2px rgba(255, 255, 0, 1.0) !important; /* Ajouter une bordure floue blanche */
         }
         50% {
-            box-shadow: 0 0 10px 4px rgba(255, 255, 0, 0.9) !important; /* Ajouter une bordure floue blanche */
+            box-shadow: 0 0 100px 4px rgba(255, 255, 0, 0.9) !important; /* Ajouter une bordure floue blanche */
         }
         100% {
-            box-shadow: 0 0 5px 2px rgba(255, 255, 0, 0.9) !important; /* Ajouter une bordure floue blanche */
+            box-shadow: 0 0 50px 2px rgba(255, 255, 0, 0.9) !important; /* Ajouter une bordure floue blanche */
         }
     }
     path.mpld3-path:hover {
