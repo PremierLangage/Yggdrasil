@@ -103,13 +103,13 @@ form==#|html|
     .mpld3-xaxis { display: none !important; }
     @keyframes smooth-zoom {
         0% {
-            transform: scale(1);
+            box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5); /* Ajouter une bordure floue blanche */
         }
         50% {
-            transform: scale(1.005);
+            box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.5); /* Ajouter une bordure floue blanche */
         }
         100% {
-            transform: scale(1);
+            box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5); /* Ajouter une bordure floue blanche */
         }
     }
     path.mpld3-path:hover {
@@ -117,7 +117,6 @@ form==#|html|
         transform-origin: center; /* Centrer la transformation */
         opacity: 0.9;
         box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5); /* Ajouter une bordure floue blanche */
-        margin: 0 auto;
     }
     .answer {
         display: flex;
