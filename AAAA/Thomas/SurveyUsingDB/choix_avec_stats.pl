@@ -23,6 +23,7 @@ dummy statement
 # question_1=<b>première question</b>
 # question_a=<b>deuxième question</b>
 question_a=<b>test</b>
+question1=<b>test2</b>
 
 # Possibilité de réponses aux questions:
 # Doivent être uniques
