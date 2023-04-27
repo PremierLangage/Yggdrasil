@@ -113,7 +113,7 @@ form==#|html|
         }
     }
     path.mpld3-path:hover {
-        animation: smooth-zoom 2s ease-in-out infinite;
+        animation: smooth-zoom 2s ease-in-out infinite !important;
         transform-origin: center; /* Centrer la transformation */
         opacity: 0.9;
     }
