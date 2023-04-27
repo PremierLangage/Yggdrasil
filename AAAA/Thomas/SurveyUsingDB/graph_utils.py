@@ -77,3 +77,34 @@ def draw_graphs(data):
     axs[2].set_title('Légendes')
 
     return mpld3.fig_to_html(fig, no_extras=False, template_type='simple')
+
+
+import plotly.graph_objs as go
+import plotly.io as pio
+from random import choice
+def generate_html(data):
+    # Utilisation de Plotly pour créer un graphique en secteurs
+    labels = list(data.keys())
+    values = list(data.values())
+
+    pie_trace = go.Pie(labels=labels, values=values)
+    pie_layout = go.Layout(title='Répartition des votes')
+    pie_fig = go.Figure(data=[pie_trace], layout=pie_layout)
+    pie_chart = pio.to_html(pie_fig, full_html=False, include_plotlyjs=False)
+
+    data_distri = []
+    for d in labels: data_distri += [d] * data[d]
+    # Utilisation de Plotly pour créer un histogramme
+    hist_trace = go.Histogram(x=data_distri)
+    hist_layout = go.Layout(title='Distribution des réponses')
+    hist_fig = go.Figure(data=[hist_trace], layout=hist_layout)
+    hist_chart = pio.to_html(hist_fig, full_html=False, include_plotlyjs=False)
+
+    # Concaténation des trois graphiques en un bloc HTML
+    html = f'''
+        <div style="display:flex;flex-wrap:wrap;">
+            <div style="flex-basis:40%;">{pie_chart}</div>
+            <div style="flex-basis:60%;">{hist_chart}</div>
+        </div>
+    '''
+    return html
