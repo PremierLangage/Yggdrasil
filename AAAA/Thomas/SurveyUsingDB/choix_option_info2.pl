@@ -113,7 +113,8 @@ form==#|html|
         }
     }
     path.mpld3-path:hover {
-        opacity: 0.9 important;
+        animation: smooth-zoom 2s ease-in-out infinite;
+        opacity: 0.9;
         background-color: #f0f0f0 !important;
     }
     .answer {
