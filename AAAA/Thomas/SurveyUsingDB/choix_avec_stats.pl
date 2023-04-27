@@ -73,16 +73,16 @@ if user__role == "teacher" :
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
-    logtemps = []
-    a = time.time();
+
     graphs = [draw_graphs(data[i]) for i in range(NUMBER_QUESTIONS)]
-    logtemps.append(time.time() -a)    
 
         
-
+logSession = time.time()
 with get_session(table_class= Response, base=Base) as session:
     answer = session.query(Response).filter(Response.student_id == user__id).first()
+logSession = time.time() - logSession
 
+logComposant = time.time()
 radio = []
 for i in range(len(QUESTIONS)):
     tmp = RadioGroup(cid=str(i))
@@ -92,11 +92,14 @@ for i in range(len(QUESTIONS)):
         tmp.items.append({ "id": j+1, "content": item })
     globals()[str(i)] = tmp
     radio.append(vars(tmp))
+logComposant = time.time() logComposant
 ==
 
 form==#|html|
 
-{{ logtemps }}
+session : {{ logSession }}
+
+composant : {{ logComposant }}
 
 {% if user__role == "teacher" %}
 <style>
