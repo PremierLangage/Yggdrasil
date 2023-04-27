@@ -22,7 +22,7 @@ dummy statement
 # exemple :
 # question_1=<b>première question</b>
 # question_a=<b>deuxième question</b>
-question_1=<b>test</b>
+question_a=<b>test</b>
 
 # Possibilité de réponses aux questions:
 # Doivent être uniques
