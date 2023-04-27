@@ -76,7 +76,6 @@ for i in range(len(QUESTIONS)):
         tmp.items.append({ "id": j+1, "content": item })
     globals()[str(i)] = tmp
     radio.append(vars(tmp))
-print("end : "+ QUESTIONS, file=sys.stderr)
 ==
 
 form==#|html|
