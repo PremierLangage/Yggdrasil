@@ -73,9 +73,10 @@ if user__role == "teacher" :
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
-
+    logtemps = []
+    a = time.time();
     graphs = [draw_graphs(data[i]) for i in range(NUMBER_QUESTIONS)]
-        
+    logtemps.append(time.time() -a)    
 
         
 
@@ -95,7 +96,7 @@ for i in range(len(QUESTIONS)):
 
 form==#|html|
 
-
+{{ logtemps }}
 
 {% if user__role == "teacher" %}
 <style>
