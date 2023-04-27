@@ -157,7 +157,7 @@ form==#|html|
     <br>
 
     <div class="exercise__actions text-center">
-        <div class="btn btn-primary" id="dwn-btn"> 
+        <div class="btn btn-primary action-submit" id="dwn-btn"> 
             <i class="fas fa-download"></i>
             <span class="ion-hide-md-down">Téléchargement des choix des élèves</span>
         </div>
