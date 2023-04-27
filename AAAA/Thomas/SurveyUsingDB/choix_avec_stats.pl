@@ -30,13 +30,13 @@ __exemples :__
 # exemple :
 # question_1=<b>première question</b>
 # question_a=<b>deuxième question</b>
-question_a=<b>test</b>
+question_a=<b>Question d'Exemple</b>
 
 # Possibilité de réponses aux questions:
 # Doivent être uniques
 items==
-Dummy choice 1
-Dummy choice 2
+Choix exemple 1
+Choix exemple 2
 ==
 
 ############################################
