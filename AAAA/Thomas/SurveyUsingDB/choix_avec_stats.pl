@@ -72,6 +72,7 @@ NUMBER_QUESTIONS = len(QUESTIONS)
 if user__role == "teacher" : # C'est un prof, on récupère les réponses de tout les élèves puis on contruit les graphs ainsi que le fichier de réponses
     with get_session(table_class= Response, base=Base) as session:
         answers = session.query(Response.value).all()
+
     data = {v:{} for v in range(NUMBER_QUESTIONS)}
     answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
 
@@ -103,6 +104,7 @@ form==#|html|
 
 
 {% if user__role == "teacher" %}
+
 <style>
     .mpld3-yaxis { display: none !important; }
     .mpld3-xaxis { display: none !important; }
@@ -153,8 +155,6 @@ form==#|html|
         cursor: pointer;
     }
 </style>
-
-    
         {% for i in range(NUMBER_QUESTIONS) %}
             <div class="answer">
                 <div>{{  radio[i].question|safe }}</div>
@@ -162,8 +162,6 @@ form==#|html|
                 <div class="graph">{{ graphs[i]|safe }}</div>
             </div>
         {% endfor %}
-    <br>
-    <br>
 
     <div class="exercise__actions text-center">
         <div class="btn btn-primary c_btn" id="dwn-btn"> 
@@ -187,7 +185,6 @@ form==#|html|
 
         // Start file download.
         document.getElementById("dwn-btn").addEventListener("click", function(){
-            // Generate download of hello.txt file with some content
             var text = "{{answers_csv}}";
             var filename = "answers.csv";
             
@@ -228,17 +225,16 @@ if len(answer) != int(NUMBER_QUESTIONS):
 if int(score) == 100:
     with get_session(table_class = Response, base=Base) as session:
         session.add(
-            Response(student_id = user__id if user__id else session__id, 
-            username = user__username,
-            firstname = user__firstname,
-            lastname = user__lastname,
-            email = user__email,
-            value = json.dumps(answer)))
+            Response(
+                student_id = user__id if user__id else session__id, 
+                username = user__username,
+                firstname = user__firstname,
+                lastname = user__lastname,
+                email = user__email,
+                value = json.dumps(answer)))
         session.commit()
 else :
     feedback = '<span class="error-state">Vous ne pouvez pas sélectionner plusieurs fois la même option</span>'
 
 grade = (score, feedback)
 ==
-
-
