@@ -44,8 +44,10 @@ from graph_utils import draw_hist, draw_camembert, draw_graphs
 import json, mpld3
 from mpld3 import plugins
 
-questions = [q for q in globals() if q.startswith("question_")]
+QUESTIONS = [q for q in globals() if q.startswith("question_")]
 NUMBER_QUESTIONS = len(questions)
+
+
 if user__role == "teacher" :
     with get_session(table_class= Response, base=Base) as session:
         answers = session.query(Response.value).all()
@@ -65,9 +67,9 @@ with get_session(table_class= Response, base=Base) as session:
     answer = session.query(Response).filter(Response.student_id == user__id).first()
 
 radio = []
-for i in range(len(questions)):
+for i in range(len(QUESTIONS)):
     tmp = RadioGroup(cid=str(i))
-    tmp.question = questions[i]
+    tmp.question = QUESTIONS[i]
     tmp.items = []
     for j, item in enumerate(items.splitlines()):        
         tmp.items.append({ "id": j+1, "content": item })
