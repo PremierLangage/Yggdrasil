@@ -101,8 +101,8 @@ form==#|html|
 <style>
     .mpld3-yaxis { display: none !important; }
     .mpld3-xaxis { display: none !important; }
-    .mpld3-path:hover {
-        fill: black;
+    path.mpld3-path:hover {
+        fill: black !important;
     }
     .answer {
         display: flex;
