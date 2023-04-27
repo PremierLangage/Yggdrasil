@@ -10,9 +10,7 @@ author = Thomas Saillard & Antonin Jean
 title= dummy # CHANGER ICI
 
 text ==
-Sans consultation de vos maitres d'apprentissage et seulement en interrogeant vos goûts personnels, veuillez 
-classer les trois options de votre premier voeux (l'option qui vous interesse le plus) à votre troisième voeux 
-(l'option qui vous interesse le moins).
+lorem ipsum # CHANGER ICI
 ==
 
 question1=<b>Quel est votre premier choix d'option ?</b>
