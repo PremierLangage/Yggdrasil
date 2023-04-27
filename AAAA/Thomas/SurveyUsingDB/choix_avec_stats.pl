@@ -56,6 +56,7 @@ if user__role == "teacher" :
     
     data = {v:{} for v in range(NUMBER_QUESTIONS)}
     answers_csv = f"username,firsname,lastname,email,{','.join(eval(str('question'+str(i+1))) for i in range(NUMBER_QUESTIONS))}\\n"
+    print("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHH", QUESTIONS,NUMBER_QUESTIONS  , file=sys.stderr)
 
 
     for answer in answers:
@@ -65,7 +66,6 @@ if user__role == "teacher" :
     graphs = [draw_graphs(data[i]) for i in range(NUMBER_QUESTIONS)]
         
 
-print("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHH", QUESTIONS,NUMBER_QUESTIONS,  , file=sys.stderr)
         
 
 with get_session(table_class= Response, base=Base) as session:
