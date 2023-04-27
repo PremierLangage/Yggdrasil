@@ -86,19 +86,19 @@ if user__role == "teacher" :
         
 
         
+else: # C'est un élève on regarde si il a déjà répondu au questionnaire puis on contruit les composants
+    with get_session(table_class= Response, base=Base) as session:
+        answer = session.query(Response).filter(Response.student_id == user__id).first()
 
-with get_session(table_class= Response, base=Base) as session:
-    answer = session.query(Response).filter(Response.student_id == user__id).first()
-
-radio = []
-for i in range(len(QUESTIONS)):
-    tmp = RadioGroup(cid=str(i))
-    tmp.question = QUESTIONS[i]
-    tmp.items = []
-    for j, item in enumerate(items.splitlines()):        
-        tmp.items.append({ "id": j+1, "content": item })
-    globals()[str(i)] = tmp
-    radio.append(vars(tmp))
+    radio = []
+    for i in range(len(QUESTIONS)):
+        tmp = RadioGroup(cid=str(i))
+        tmp.question = QUESTIONS[i]
+        tmp.items = []
+        for j, item in enumerate(items.splitlines()):        
+            tmp.items.append({ "id": j+1, "content": item })
+        globals()[str(i)] = tmp
+        radio.append(vars(tmp))
 ==
 
 form==#|html|
