@@ -10,7 +10,7 @@ author = Thomas Saillard & Antonin Jean
 title= dummy # CHANGER ICI
 
 text ==
-lorem ipsum # CHANGER ICI
+# Ecrire un énoncé ici
 ==
 
 question1=<b>Quel est votre premier choix d'option ?</b>
