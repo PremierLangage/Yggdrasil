@@ -142,8 +142,22 @@ form==#|html|
 
 </style>
 
+    
+    {% if answer != None %}
+        <span class="success-state">Vous avez déjà répondu à ce sondage</span>
+    {% else %}
+        {% for i in [0,1,2] %}
+            <div class="answer">
+                <div>{{  radio[i].question|safe }}</div>
+
+                <div class="graph">{{ graphs[i]|safe }}</div>
+            </div>
+        {% endfor %}
+    {% endif %}
+    <br>
+    <br>
     <input type="button" id="dwn-btn" value="Téléchargement des choix des élèves"/>
-    <script>
+        <script>
 function download(filename, text) {
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -166,21 +180,6 @@ document.getElementById("dwn-btn").addEventListener("click", function(){
     download(filename, text);
 }, false);
     </script>
-    
-    {% if answer != None %}
-        <span class="success-state">Vous avez déjà répondu à ce sondage</span>
-    {% else %}
-        {% for i in [0,1,2] %}
-            <div class="answer">
-                <div>{{ radio[i].question|safe }}</div>
-
-                <div class="graph">{{ graphs[i]|safe }}</div>
-            </div>
-        {% endfor %}
-    {% endif %}
-    <br>
-    <br>
-    <input type="button" id="dwn-btn" value="Téléchargement des choix des élèves"/>
 {% else %}
     {% if answer != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
