@@ -25,9 +25,8 @@ dummy statement
 
 # Possibilité de réponses aux questions:
 items==
-Géomatique
-Logiciel
-Réseaux
+Dummy choice 1
+Dummy choice 2
 ==
 
 NUMBER_QUESTIONS=3
