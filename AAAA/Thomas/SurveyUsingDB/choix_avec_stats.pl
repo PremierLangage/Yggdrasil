@@ -32,7 +32,9 @@ Où X est un identifiant se devant d'être unique et n'ayant aucune incidence da
 # exemple :
 # question_1=<b>première question</b>
 # question_a=<b>deuxième question</b>
-question_a=<b>Question d'Exemple</b>
+question_1=<b>Question d'exemple</b>
+question_a=<b>Deuxième exemple</b>
+
 
 # Possibilité de réponses aux questions:
 # Doivent être uniques
