@@ -12,7 +12,7 @@ title= dummy title
 
 # Ecrire un énoncé ici
 text ==
-dummy state
+dummy statement
 ==
 
 # Vous pouvez définir des questions au format suivant : question_X
