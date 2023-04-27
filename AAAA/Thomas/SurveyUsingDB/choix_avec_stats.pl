@@ -48,14 +48,18 @@ QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
 print(QUESTIONS, file=sys.stderr)
 NUMBER_QUESTIONS = len(QUESTIONS)
 
+print("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHH", QUESTIONS,NUMBER_QUESTIONS  , file=sys.stderr)
 
 if user__role == "teacher" :
     with get_session(table_class= Response, base=Base) as session:
         answers = session.query(Response.value).all()
+    print("BHHHHHHHHHHHHHHHHHHHHHHHHHHHHH", QUESTIONS,NUMBER_QUESTIONS  , file=sys.stderr)
     
     data = {v:{} for v in range(NUMBER_QUESTIONS)}
+    print("CHHHHHHHHHHHHHHHHHHHHHHHHHHHHH", QUESTIONS,NUMBER_QUESTIONS  , file=sys.stderr)
+    
     answers_csv = f"username,firsname,lastname,email,{','.join(eval(str('question'+str(i+1))) for i in range(NUMBER_QUESTIONS))}\\n"
-    print("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHH", QUESTIONS,NUMBER_QUESTIONS  , file=sys.stderr)
+    print("DHHHHHHHHHHHHHHHHHHHHHHHHHHHHH", QUESTIONS,NUMBER_QUESTIONS  , file=sys.stderr)
 
 
     for answer in answers:
