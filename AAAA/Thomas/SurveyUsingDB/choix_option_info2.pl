@@ -101,6 +101,17 @@ form==#|html|
 <style>
     .mpld3-yaxis { display: none !important; }
     .mpld3-xaxis { display: none !important; }
+    @keyframes smooth-zoom {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
     path.mpld3-path:hover {
         opacity: 0.9 important;
         background-color: #f0f0f0 !important;
