@@ -12,9 +12,9 @@ title= dummy title
 
 # Ecrire un énoncé ici
 text ==
-Vous pouvez définir des questions au format suivant : `question_X`
+Vous devez définir des questions au format suivant : `question_X`
 
-Où X est un identifiant se devant d'être unique et n'ayant aucune incidence dans la suite du code.
+Où `X` est un identifiant se devant d'être unique et n'ayant aucune incidence dans la suite du code.
 
 ---
 
