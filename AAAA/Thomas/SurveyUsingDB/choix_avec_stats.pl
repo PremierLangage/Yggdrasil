@@ -5,7 +5,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 ################### Modifier ici ###########################
-author = Thomas Saillard & Antonin Jean
+author = Thomas Saillard <thomas.saillard@edu.univ-eiffel.fr> & Antonin Jean <antonin.jean@edu.univ-eiffel.fr>
 
 # Ecrire un titre ici
 title= dummy title
