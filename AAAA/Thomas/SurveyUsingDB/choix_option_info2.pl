@@ -101,22 +101,19 @@ form==#|html|
 <style>
     .mpld3-yaxis { display: none !important; }
     .mpld3-xaxis { display: none !important; }
-    @keyframes smooth-zoom {
+    @keyframes smooth-select {
         0% {
-            transform: scale(1);
             opacity: 0.9;
         }
         50% {
-            transform: scale(1.005);
             opacity: 1.0;
         }
         100% {
-            transform: scale(1);
             opacity: 0.9;
         }
     }
     path.mpld3-path:hover {
-        animation: smooth-zoom 2s ease-in-out infinite;
+        animation: smooth-select 2s ease-in-out;
         transform-origin: center !important;
         margin: 0 auto !important; /* Centrer horizontalement */
     }
