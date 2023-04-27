@@ -50,8 +50,8 @@ if user__role == "teacher" :
     with get_session(table_class= Response, base=Base) as session:
         answers = session.query(Response.value).all()
     
-    data = {v:{} for v in range(int(NUMBER_QUESTIONS))}
-    answers_csv = f"username,firsname,lastname,email,{','.join(eval(str('question'+str(i+1))) for i in range(int(NUMBER_QUESTIONS)))}\\n"
+    data = {v:{} for v in range(NUMBER_QUESTIONS)}
+    answers_csv = f"username,firsname,lastname,email,{','.join(eval(str('question'+str(i+1))) for i in range(NUMBER_QUESTIONS))}\\n"
 
 
     for answer in answers:
