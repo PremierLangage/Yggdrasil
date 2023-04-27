@@ -18,6 +18,10 @@ dummy statement
 # Vous pouvez définir des questions au format suivant : question_X
 # Où X est un identifiant se devant d'être unique et n'ayant aucune
 # incidence dans la suite du code.
+#
+# exemple :
+# question_1=<b>première question</b>
+# question_a=deuxième question
 question1=<b>Quel est votre premier choix d'option ?</b>
 
 question2=<b>Quel est votre second choix d'option ?</b>
