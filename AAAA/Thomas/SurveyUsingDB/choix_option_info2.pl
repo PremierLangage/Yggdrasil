@@ -103,17 +103,17 @@ form==#|html|
     .mpld3-xaxis { display: none !important; }
     @keyframes smooth-select {
         0% {
-            opacity: 0.9;
-        }
-        50% {
             opacity: 1.0;
         }
+        50% {
+            opacity: 0.8;
+        }
         100% {
-            opacity: 0.9;
+            opacity: 1.0;
         }
     }
     path.mpld3-path:hover {
-        animation: smooth-select 2s ease-in-out;
+        animation: smooth-select 2s ease-in-out infinite;
         transform-origin: center !important;
         margin: 0 auto !important; /* Centrer horizontalement */
     }
