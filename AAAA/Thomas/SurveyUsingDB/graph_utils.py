@@ -1,4 +1,4 @@
-
+"""
 import matplotlib.pyplot as plt
 import numpy as np
 from random import shuffle
@@ -77,7 +77,7 @@ def draw_graphs(data):
     axs[2].set_title('Légendes')
 
     return mpld3.fig_to_html(fig, no_extras=False, template_type='simple')
-
+"""
 
 import plotly.graph_objs as go
 import plotly.io as pio
