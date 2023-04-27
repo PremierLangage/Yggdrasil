@@ -18,7 +18,7 @@ Où X est un identifiant se devant d'être unique et n'ayant aucune incidence da
 
 ---
 
-_exemples :_
+<u>exemples :</u>
 
 > **question_1**=`<b>première question</b>`
 
