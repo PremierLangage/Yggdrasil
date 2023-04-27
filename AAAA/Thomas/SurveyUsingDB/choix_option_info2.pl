@@ -156,11 +156,11 @@ form==#|html|
     <br>
     <br>
 
-<div class="exercise__actions text-center">
-    <div class="btn btn-primary" id="dwn-btn"> 
-        <i class="fas fa-download"></i>
-        <span class="ion-hide-md-down">Téléchargement des choix des élèves</span>
-    </div>
+    <div class="exercise__actions text-center">
+        <div class="btn btn-primary" id="dwn-btn"> 
+            <i class="fas fa-download"></i>
+            <span class="ion-hide-md-down">Téléchargement des choix des élèves</span>
+        </div>
     </div>
     <script>
         function download(filename, text) {
