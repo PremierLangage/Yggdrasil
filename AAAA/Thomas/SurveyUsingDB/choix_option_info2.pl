@@ -104,15 +104,15 @@ form==#|html|
     @keyframes smooth-select {
         0% {
             opacity: 1.0;
-            outline: 1px solid rgba(0, 0, 0, 0.2) !important;
+            outline: 2px solid red !important;
         }
         50% {
             opacity: 0.8;
-            outline: 4px solid rgba(0, 0, 0, 0.4) !important;
+            outline: 8px solid red !important;
         }
         100% {
             opacity: 1.0;
-            outline: 1px solid rgba(0, 0, 0, 0.2) !important;
+            outline: 2px solid red !important;
         }
     }
     path.mpld3-path:hover {
