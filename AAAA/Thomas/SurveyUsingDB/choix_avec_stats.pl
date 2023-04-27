@@ -21,7 +21,7 @@ dummy statement
 #
 # exemple :
 # question_1=<b>première question</b>
-# question_a=deuxième question
+# question_a=<b>deuxième question</b>
 question1=<b>Quel est votre premier choix d'option ?</b>
 
 question2=<b>Quel est votre second choix d'option ?</b>
