@@ -7,7 +7,7 @@ builder =@ /builder/before.py
 ################### Modifier ici ###########################
 author = Thomas Saillard & Antonin Jean
 
-title= # CHANGER ICI
+title= # CHANGER TITRE ICI
 
 text ==
 # Ecrire un énoncé ici
