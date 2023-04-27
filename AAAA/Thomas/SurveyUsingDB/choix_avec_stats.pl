@@ -40,7 +40,7 @@ import os, sys
 os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib-ogs20b_w"
 
 from database_utils import get_session, Base, Response
-from graph_utils import draw_hist, draw_camembert, draw_graphs
+from graph_utils import draw_graphs
 import json, mpld3
 from mpld3 import plugins
 
@@ -76,6 +76,7 @@ for i in range(len(QUESTIONS)):
         tmp.items.append({ "id": j+1, "content": item })
     globals()[str(i)] = tmp
     radio.append(vars(tmp))
+print("end : "+ QUESTIONS, file=sys.stderr)
 ==
 
 form==#|html|
