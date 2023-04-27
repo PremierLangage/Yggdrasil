@@ -102,9 +102,7 @@ def generate_html(data):
 
     # Concaténation des trois graphiques en un bloc HTML
     html = f'''
-        <div style="display:flex;flex-wrap:wrap;">
-            <div style="flex-basis:40%;">{pie_chart}</div>
-            <div style="flex-basis:60%;">{hist_chart}</div>
-        </div>
+            <div >{pie_chart}</div>
+            <div >{hist_chart}</div>
     '''
     return html
