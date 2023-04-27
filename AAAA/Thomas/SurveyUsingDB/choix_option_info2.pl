@@ -116,9 +116,7 @@ form==#|html|
         animation: smooth-select 2s ease-in-out infinite;
         transform-origin: center !important;
         margin: 0 auto !important; /* Centrer horizontalement */
-        transform: translate(-50%, -50%) rotate(360deg);
-        transition: transform 1s;
-        box-shadow: 0 0 0 2px black;
+
     }
     .answer {
         display: flex;
