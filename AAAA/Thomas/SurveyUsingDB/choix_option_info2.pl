@@ -157,28 +157,28 @@ form==#|html|
     <br>
     <br>
     <input type="button" id="dwn-btn" value="Téléchargement des choix des élèves"/>
-        <script>
-function download(filename, text) {
-    var element = document.createElement('a');
-    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-    element.setAttribute('download', filename);
+    <script>
+        function download(filename, text) {
+            var element = document.createElement('a');
+            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+            element.setAttribute('download', filename);
 
-    element.style.display = 'none';
-    document.body.appendChild(element);
+            element.style.display = 'none';
+            document.body.appendChild(element);
 
-    element.click();
+            element.click();
 
-    document.body.removeChild(element);
-}
+            document.body.removeChild(element);
+        }
 
-// Start file download.
-document.getElementById("dwn-btn").addEventListener("click", function(){
-    // Generate download of hello.txt file with some content
-    var text = "{{answers_csv}}";
-    var filename = "answers.csv";
-    
-    download(filename, text);
-}, false);
+        // Start file download.
+        document.getElementById("dwn-btn").addEventListener("click", function(){
+            // Generate download of hello.txt file with some content
+            var text = "{{answers_csv}}";
+            var filename = "answers.csv";
+            
+            download(filename, text);
+        }, false);
     </script>
 {% else %}
     {% if answer != None %}
