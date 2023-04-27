@@ -129,15 +129,14 @@ form==#|html|
         animation: load-animation 2s ease-in-out;
     }
     .answer {
-        /* display: flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: light-grey; */
+        background-color: light-grey;
     }
     .graph {
-        /* border: 2px outset #d4d4d4;
-        transform-origin: center !important; */
+        border: 2px outset #d4d4d4;
     }
     .c_btn {
         cursor: pointer;
