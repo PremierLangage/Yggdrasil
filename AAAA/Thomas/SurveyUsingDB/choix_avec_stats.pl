@@ -134,12 +134,8 @@ form==#|html|
         align-items: center;
         justify-content: center;
         background-color: light-grey;
-        padding: 18px;
-        margin: 18px;
     }
     .graph {
-        border: 2px outset #d4d4d4;
-        transform-origin: center !important;
     }
     .c_btn {
         cursor: pointer;
