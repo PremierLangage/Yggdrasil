@@ -135,7 +135,7 @@ form==#|html|
     {% if answer != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
     {% else %}
-        {% for i in [0,1,2] %}
+        {% for i in range(len(questions)) %}
             <div class="answer">
                 <div>{{  radio[i].question|safe }}</div>
 
