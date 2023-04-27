@@ -155,7 +155,7 @@ form==#|html|
     {% endif %}
     <br>
     <br>
-    <input type="button" id="dwn-btn" value="Téléchargement des choix des élèves"/>
+    <input type="button" class="btn btn-primary" id="dwn-btn" value="Téléchargement des choix des élèves"/>
     <script>
         function download(filename, text) {
             var element = document.createElement('a');
