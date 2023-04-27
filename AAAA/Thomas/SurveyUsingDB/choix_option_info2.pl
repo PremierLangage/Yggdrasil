@@ -103,20 +103,19 @@ form==#|html|
     .mpld3-xaxis { display: none !important; }
     @keyframes smooth-zoom {
         0% {
-            box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5); /* Ajouter une bordure floue blanche */
+            box-shadow: 0 0 5px 2px rgba(255, 255, 0, 0.9); /* Ajouter une bordure floue blanche */
         }
         50% {
-            box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.5); /* Ajouter une bordure floue blanche */
+            box-shadow: 0 0 10px 4px rgba(255, 255, 0, 0.9); /* Ajouter une bordure floue blanche */
         }
         100% {
-            box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5); /* Ajouter une bordure floue blanche */
+            box-shadow: 0 0 5px 2px rgba(255, 255, 0, 0.9); /* Ajouter une bordure floue blanche */
         }
     }
     path.mpld3-path:hover {
         animation: smooth-zoom 2s ease-in-out infinite;
         transform-origin: center; /* Centrer la transformation */
         opacity: 0.9;
-        box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5); /* Ajouter une bordure floue blanche */
     }
     .answer {
         display: flex;
