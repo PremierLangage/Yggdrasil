@@ -114,6 +114,7 @@ form==#|html|
     }
     path.mpld3-path:hover {
         animation: smooth-zoom 2s ease-in-out infinite;
+        transform-origin: center; /* Centrer la transformation */
         opacity: 0.9;
         background-color: #f0f0f0 !important;
     }
