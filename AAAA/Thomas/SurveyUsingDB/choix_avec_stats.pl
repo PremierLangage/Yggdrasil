@@ -150,7 +150,7 @@ form==#|html|
 </style>
 
     
-    {% if True or answer != None %}
+    {% if False and answer != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
     {% else %}
         {% for i in range(NUMBER_QUESTIONS) %}
