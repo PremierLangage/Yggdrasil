@@ -69,14 +69,11 @@ print(QUESTIONS, file=sys.stderr)
 NUMBER_QUESTIONS = len(QUESTIONS)
 
 
-if user__role == "teacher" :
+if user__role == "teacher" : # C'est un prof, on récupère les réponses de tout les élèves puis on contruit les graphs ainsi que le fichier de réponses
     with get_session(table_class= Response, base=Base) as session:
         answers = session.query(Response.value).all()
-    
     data = {v:{} for v in range(NUMBER_QUESTIONS)}
-    
     answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
-
 
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
