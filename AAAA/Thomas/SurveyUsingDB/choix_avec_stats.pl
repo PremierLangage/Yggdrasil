@@ -58,7 +58,7 @@ if user__role == "teacher" :
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
 
-    graphs = [draw_graphs(data[i]) for i in range(int(NUMBER_QUESTIONS))]
+    graphs = [draw_graphs(data[i]) for i in range(NUMBER_QUESTIONS)]
         
 
 with get_session(table_class= Response, base=Base) as session:
