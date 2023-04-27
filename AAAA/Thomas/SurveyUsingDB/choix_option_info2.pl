@@ -107,7 +107,7 @@ form==#|html|
             opacity: 0.9;
         }
         50% {
-            transform: scale(1.2);
+            transform: scale(1.005);
             opacity: 1.0;
         }
         100% {
