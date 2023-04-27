@@ -23,7 +23,7 @@ dummy statement
 # question_1=<b>première question</b>
 # question_a=<b>deuxième question</b>
 question_a=<b>test</b>
-question1 =<b>test2</b>
+question1=<b>test2</b>
 
 # Possibilité de réponses aux questions:
 # Doivent être uniques
@@ -63,6 +63,9 @@ if user__role == "teacher" :
             data[v][k] = data[v].get(k, 0) + 1
 
     graphs = [draw_graphs(data[i]) for i in range(NUMBER_QUESTIONS)]
+        
+
+print("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHH", QUESTIONS,NUMBER_QUESTIONS,  , file=sys.stderr)
         
 
 with get_session(table_class= Response, base=Base) as session:
