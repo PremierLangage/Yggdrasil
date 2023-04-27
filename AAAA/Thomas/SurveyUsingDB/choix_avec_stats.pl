@@ -22,6 +22,7 @@ dummy statement
 # exemple :
 # question_1=<b>première question</b>
 # question_a=<b>deuxième question</b>
+question_1=test
 
 # Possibilité de réponses aux questions:
 # Doivent être uniques
@@ -29,8 +30,6 @@ items==
 Dummy choice 1
 Dummy choice 2
 ==
-
-NUMBER_QUESTIONS=3
 
 ############################################
 
@@ -45,6 +44,8 @@ from graph_utils import draw_hist, draw_camembert, draw_graphs
 import json, mpld3
 from mpld3 import plugins
 
+questions = [q for q in globals() if q.startswith("question_")]
+NUMBER_QUESTIONS = len(questions)
 if user__role == "teacher" :
     with get_session(table_class= Response, base=Base) as session:
         answers = session.query(Response.value).all()
@@ -64,7 +65,6 @@ with get_session(table_class= Response, base=Base) as session:
     answer = session.query(Response).filter(Response.student_id == user__id).first()
 
 radio = []
-questions = [q for q in globals() if q.startswith("question_")]
 for i in range(len(questions)):
     tmp = RadioGroup(cid=str(i))
     tmp.question = questions[i]
