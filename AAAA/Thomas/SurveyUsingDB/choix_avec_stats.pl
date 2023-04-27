@@ -44,7 +44,7 @@ from graph_utils import draw_graphs
 import json, mpld3
 from mpld3 import plugins
 
-QUESTIONS = [q for q in globals() if q.startswith("question_")]
+QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
 print(QUESTIONS, file=sys.stderr)
 NUMBER_QUESTIONS = len(QUESTIONS)
 
