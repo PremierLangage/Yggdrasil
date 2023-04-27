@@ -147,6 +147,7 @@ form==#|html|
 
 </style>
 
+    <input type="button" id="dwn-btn" value="Téléchargement des choix des élèves"/>
     <script>
 function download(filename, text) {
     var element = document.createElement('a');
@@ -164,7 +165,7 @@ function download(filename, text) {
 // Start file download.
 document.getElementById("dwn-btn").addEventListener("click", function(){
     // Generate download of hello.txt file with some content
-    var text = {{answers_csv}};
+    var text = "{{answers_csv}}";
     var filename = "answers.csv";
     
     download(filename, text);
