@@ -15,8 +15,8 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-@database_utils.py
-@graph_utils.py
+@ database_utils.py
+@ graph_utils.py
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
