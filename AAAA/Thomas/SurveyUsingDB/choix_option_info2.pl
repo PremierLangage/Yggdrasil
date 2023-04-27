@@ -118,6 +118,9 @@ form==#|html|
         margin: 0 auto !important; /* Centrer horizontalement */
         outline: none !important;
     }
+    path.mpld3-path:first-child {
+        animation: load-animation 2s ease-in-out;
+    }
     .answer {
         display: flex;
         flex-direction: column;
