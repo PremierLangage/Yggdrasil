@@ -118,6 +118,16 @@ form==#|html|
         margin: 0 auto !important; /* Centrer horizontalement */
         outline: none !important;
     }
+    @keyframes load-animation {
+        0% {
+            transform: scale(0.5);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
     path.mpld3-path:first-child {
         animation: load-animation 2s ease-in-out;
     }
