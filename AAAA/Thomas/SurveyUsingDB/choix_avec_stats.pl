@@ -55,7 +55,7 @@ if user__role == "teacher" :
     
     data = {v:{} for v in range(NUMBER_QUESTIONS)}
     
-    answers_csv = f"username,firsname,lastname,email,{','.join(eval(str('question_'+str(i+1))) for i in range(NUMBER_QUESTIONS))}\\n"
+    answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
 
 
     for answer in answers:
