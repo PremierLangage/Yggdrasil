@@ -119,7 +119,7 @@ form==#|html|
         animation: smooth-zoom 2s ease-in-out infinite;
         transform-origin: center; /* Centrer la transformation */
         opacity: 0.9;
-        box-shadow: 50px 50px 5px 2px rgba(255, 255, 255, 0.5); /* Ajouter une bordure floue blanche */
+        box-shadow: 50px 50px 5px 2px rgba(255, 0, 0, 0.5); /* Ajouter une bordure floue blanche */
         transform-origin: 50% 50% !important;
         margin: 0 auto; /* Centrer horizontalement */
     }
