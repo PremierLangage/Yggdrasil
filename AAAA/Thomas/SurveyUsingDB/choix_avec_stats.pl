@@ -76,16 +76,11 @@ if user__role == "teacher" :
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
-    logGraph = time.time()
-    graphs = [draw_graphs(data[i]) for i in range(NUMBER_QUESTIONS)]
-    logGraph = time.time() - logGraph
+    graphs = [generate_html(data[i]) for i in range(NUMBER_QUESTIONS)]
         
-logSession = time.time()
 with get_session(table_class= Response, base=Base) as session:
     answer = session.query(Response).filter(Response.student_id == user__id).first()
-logSession = time.time() - logSession
 
-logComposant = time.time()
 radio = []
 for i in range(len(QUESTIONS)):
     tmp = RadioGroup(cid=str(i))
@@ -95,17 +90,10 @@ for i in range(len(QUESTIONS)):
         tmp.items.append({ "id": j+1, "content": item })
     globals()[str(i)] = tmp
     radio.append(vars(tmp))
-logComposant = time.time() - logComposant
 ==
 
 form==#|html|
 
-session : {{ logSession }}
-<br>
-composant : {{ logComposant }}
-<br>
-graph : {{logGraph}}
-<br>
 {% if user__role == "teacher" %}
 <style>
     .mpld3-yaxis { display: none !important; }
