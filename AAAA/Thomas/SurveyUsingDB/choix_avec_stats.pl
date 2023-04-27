@@ -150,9 +150,6 @@ form==#|html|
 </style>
 
     
-    {% if False and answer != None %}
-        <span class="success-state">Vous avez déjà répondu à ce sondage</span>
-    {% else %}
         {% for i in range(NUMBER_QUESTIONS) %}
             <div class="answer">
                 <div>{{  radio[i].question|safe }}</div>
@@ -160,7 +157,6 @@ form==#|html|
                 <div class="graph">{{ graphs[i]|safe }}</div>
             </div>
         {% endfor %}
-    {% endif %}
     <br>
     <br>
 
@@ -194,7 +190,7 @@ form==#|html|
         }, false);
     </script>
 {% else %}
-    {% if answer != None %}
+    {% if False and answer != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
     {% else %}
         {% for r in radio %}
