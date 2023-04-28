@@ -134,7 +134,7 @@ form==#|html|
         align-items: center;
         justify-content: center;
         background-color: light-grey;
-        width:100%
+        width:100%;
     }
     .graph {
         border: 2px outset #d4d4d4;
