@@ -55,7 +55,7 @@ import os
 os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib-ogs20b_w"
 
 from database_utils import get_session, Base, Response
-from graph_utils import draw_hist, draw_camembert, generate_html_plotly
+from graph_utils import draw_hist, draw_camembert, generate_html_matplotlib
 import json, mpld3
 from mpld3 import plugins
 
@@ -80,7 +80,7 @@ if user__role == "teacher" :
     camembert = draw_camembert(data[0])
     camembert = mpld3.fig_to_html(camembert)
 
-    graphs = generate_html_plotly(data[0])
+    graphs = generate_html_matplotlib(data[0])
     
 
 with get_session(table_class= Response, base=Base) as session:
