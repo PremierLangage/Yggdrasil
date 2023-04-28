@@ -114,7 +114,7 @@ def generate_html(data, full_html=False):
     </div>
 </body>
 </html>
-    ''' if full_html else 
+    ''' if full_html else \
     f'''
     <div style="display:flex;flex-wrap:wrap;">
         <div style="flex-basis:40%;">{pie_chart}</div>
