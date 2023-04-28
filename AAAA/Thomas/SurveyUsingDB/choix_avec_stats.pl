@@ -154,7 +154,7 @@ form==#|html|
         {% for i in range(NUMBER_QUESTIONS) %}
             <div class="answer">
                 <div>{{  radio[i].question|safe }}</div>
-                <iframe src={{graphs[i]|safe}} width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+                <iframe src=graphs[i] width="100%" height="400" frameborder="0" scrolling="no"></iframe>
             </div>
         {% endfor %}
     <br>
