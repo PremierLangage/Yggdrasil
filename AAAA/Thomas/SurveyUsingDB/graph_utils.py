@@ -82,7 +82,7 @@ def draw_graphs(data):
 import plotly.graph_objs as go
 import plotly.io as pio
 from random import choice
-def generate_html(data):
+def generate_html(data, full_html=False):
     # Utilisation de Plotly pour créer un graphique en secteurs
     labels = list(data.keys())
     values = list(data.values())
@@ -114,5 +114,11 @@ def generate_html(data):
     </div>
 </body>
 </html>
+    ''' if full_html else 
+    f'''
+    <div style="display:flex;flex-wrap:wrap;">
+        <div style="flex-basis:40%;">{pie_chart}</div>
+        <div style="flex-basis:60%;">{hist_chart}</div>
+    </div>
     '''
     return html
