@@ -55,7 +55,7 @@ import os, sys, time
 os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib-ogs20b_w"
 
 from database_utils import get_session, Base, Response
-from graph_utils import generate_html_plotly
+from graph_utils import generate_html_plotly, generate_html_matplotlib
 import json, mpld3
 from mpld3 import plugins
 
@@ -76,7 +76,7 @@ if user__role == "teacher" :
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
-    graphs = [generate_html(data[i]) for i in range(NUMBER_QUESTIONS)]
+    graphs = [generate_html_matplotlib(data[i]) for i in range(NUMBER_QUESTIONS)]
     # remplacer ici par draw_graphs pour utiliser l'ancienne version
 with get_session(table_class= Response, base=Base) as session:
     answer = session.query(Response).filter(Response.student_id == user__id).first()
