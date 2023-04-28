@@ -90,7 +90,7 @@ def generate_html(data):
     pie_trace = go.Pie(labels=labels, values=values)
     pie_layout = go.Layout(title='Répartition des votes')
     pie_fig = go.Figure(data=[pie_trace], layout=pie_layout)
-    pie_chart = pio.to_html(pie_fig, include_plotlyjs=False, responsive=True)
+    pie_chart = pio.to_html(pie_fig, include_plotlyjs=False)
 
     data_distri = []
     for d in labels: data_distri += [d] * data[d]
@@ -98,7 +98,7 @@ def generate_html(data):
     hist_trace = go.Histogram(x=data_distri)
     hist_layout = go.Layout(title='Distribution des réponses')
     hist_fig = go.Figure(data=[hist_trace], layout=hist_layout)
-    hist_chart = pio.to_html(hist_fig, include_plotlyjs=False, responsive=True)
+    hist_chart = pio.to_html(hist_fig, include_plotlyjs=False)
 
     # Concaténation des trois graphiques en un bloc HTML
     html = f'''
