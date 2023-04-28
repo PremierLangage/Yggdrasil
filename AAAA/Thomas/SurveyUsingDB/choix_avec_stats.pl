@@ -141,7 +141,7 @@ form==#|html|
     }
     .c_btn {
         cursor: pointer;
-        
+
     }
 </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.33.1/plotly.min.js" integrity="sha512-V0j9LhrK9IMNdFYZqh+IqU4cjo7wdxyHNyH+L0td4HryBuZ7Oq6QxP2/CWr6TituX31+gv5PnolvERuTbz8UNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -149,7 +149,7 @@ form==#|html|
         <div class="answer">
             <div>{{  radio[i].question|safe }}</div>
             <!-- <div class="graph"> {{ graphs[i]|safe }} </div> -->
-            <iframe src="data:text/html;charset=utf-8,{{graphs[i]}}" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+            <iframe src='data:text/html;charset=utf-8,{{graphs[i]}}' width="100%" height="400" frameborder="0" scrolling="no"></iframe>
         </div>
     {% endfor %}
     <br>
