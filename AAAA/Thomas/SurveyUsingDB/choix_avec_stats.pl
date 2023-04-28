@@ -143,8 +143,8 @@ form==#|html|
     .c_btn {
         cursor: pointer;
     }
-    div._test {
-        background-color: rgba(0,0,0,0)
+    div._test svg {
+        margin auto;
     }
 </style>
 
