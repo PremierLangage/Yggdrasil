@@ -107,7 +107,7 @@ def generate_html(data):
         <div class="_test" style="flex-basis: 50%; flex-grow: 1; padding: 20px;">
             { pie_chart }
         </div>
-        <div class="_test"  style="flex-basis: 50%; flex-grow: 1; padding: 20px;">
+        <div class="_test" style="flex-basis: 50%; flex-grow: 1; padding: 20px;">
             { hist_chart }
         </div>
     </div>
