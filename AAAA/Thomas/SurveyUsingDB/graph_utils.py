@@ -43,7 +43,7 @@ def draw_camembert(data):
     return plt.gcf()
 
 
-def draw_graphs(data):
+def generate_html_matplotlib(data):
     # Size are multiplied by 100 pixels to state the final static const size of the graph
     WIDTH = 10
     HEIGHT = 4
@@ -82,7 +82,7 @@ def draw_graphs(data):
 import plotly.graph_objs as go
 import plotly.io as pio
 from random import choice
-def generate_html(data, full_html=False):
+def generate_html_plotly(data, full_html=False):
     # Utilisation de Plotly pour créer un graphique en secteurs
     labels = list(data.keys())
     values = list(data.values())
