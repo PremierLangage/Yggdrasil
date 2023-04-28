@@ -144,7 +144,7 @@ form==#|html|
         cursor: pointer;
     }
     div._test svg {
-        margin auto;
+        margin: auto;
     }
 </style>
 
