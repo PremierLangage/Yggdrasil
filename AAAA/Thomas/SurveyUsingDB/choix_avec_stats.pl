@@ -148,6 +148,7 @@ form==#|html|
         height: 100%;
         max-width: 800px; /* ajustez la largeur maximale si nécessaire */
         max-height: 600px; /* ajustez la hauteur maximale si nécessaire */
+        margin: 0;
     }
 </style>
 
