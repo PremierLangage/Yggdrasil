@@ -148,7 +148,7 @@ form==#|html|
             <div class="answer">
                 <div>{{  radio[i].question|safe }}</div>
                 <!-- <div class="graph"> {{ graphs[i]|safe }} </div> -->
-                <iframe src="test.html" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+                <iframe src="./test.html" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
             </div>
         {% endfor %}
     <br>
