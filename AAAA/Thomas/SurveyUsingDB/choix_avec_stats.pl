@@ -138,17 +138,17 @@ form==#|html|
     }
     .graph {
         border: 2px outset #d4d4d4;
-        width : 100%;
+        display: flex; justify-content: center; align-items: center; height: 100vh;
     }
     .c_btn {
         cursor: pointer;
     }
-            div._test {
-                width: 100%;
-                height: 100%;
-                max-width: 800px; /* ajustez la largeur maximale si nécessaire */
-                max-height: 600px; /* ajustez la hauteur maximale si nécessaire */
-            }
+    div._test {
+        width: 100%;
+        height: 100%;
+        max-width: 800px; /* ajustez la largeur maximale si nécessaire */
+        max-height: 600px; /* ajustez la hauteur maximale si nécessaire */
+    }
 </style>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.33.1/plotly.min.js" integrity="sha512-V0j9LhrK9IMNdFYZqh+IqU4cjo7wdxyHNyH+L0td4HryBuZ7Oq6QxP2/CWr6TituX31+gv5PnolvERuTbz8UNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
