@@ -96,7 +96,7 @@ def generate_html(data):
     for d in labels: data_distri += [d] * data[d]
     # Utilisation de Plotly pour créer un histogramme
     hist_trace = go.Histogram(x=data_distri)
-    hist_layout = go.Layout(title='Distribution des réponses', width=400, height=400)
+    hist_layout = go.Layout(title='Distribution des réponses')
     hist_fig = go.Figure(data=[hist_trace], layout=hist_layout)
     hist_chart = pio.to_html(hist_fig, include_plotlyjs=False,  div_id="answer_graph")
 
