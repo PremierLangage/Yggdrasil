@@ -102,13 +102,13 @@ def generate_html(data):
 
     # Concaténation des trois graphiques en un bloc HTML
     html = f'''
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction:row;">
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction:r">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; max-width: 1000px;">
         <div style="flex-basis: 50%; flex-grow: 1; padding: 20px;">
-            \{\{{ pie_chart } | safe \}\}
+            { pie_chart }
         </div>
         <div style="flex-basis: 50%; flex-grow: 1; padding: 20px;">
-            \{\{{ hist_chart } | safe \}\}
+            { hist_chart }
         </div>
     </div>
 </div>
