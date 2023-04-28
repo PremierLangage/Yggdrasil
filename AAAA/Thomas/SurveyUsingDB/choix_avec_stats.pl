@@ -96,8 +96,8 @@ form==#|html|
 
 {% if user__role == "teacher" %}
 <style>
-    .mpld3-yaxis { display: none !important; }
-    .mpld3-xaxis { display: none !important; }
+    /* .mpld3-yaxis { display: none !important; }
+    .mpld3-xaxis { display: none !important; } */
     @keyframes smooth-select {
         0% {
             opacity: 1.0;
@@ -134,6 +134,7 @@ form==#|html|
         align-items: center;
         justify-content: center;
         background-color: light-grey;
+        width:100%
     }
     .graph {
         border: 2px outset #d4d4d4;
