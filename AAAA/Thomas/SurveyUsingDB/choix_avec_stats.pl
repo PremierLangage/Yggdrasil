@@ -81,7 +81,6 @@ if user__role == "teacher" :
 with get_session(table_class= Response, base=Base) as session:
     answer = session.query(Response).filter(Response.student_id == user__id).first()
 
-form = graphs[0]
 radio = []
 for i in range(len(QUESTIONS)):
     tmp = RadioGroup(cid=str(i))
