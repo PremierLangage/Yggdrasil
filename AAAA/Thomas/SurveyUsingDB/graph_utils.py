@@ -88,7 +88,7 @@ def generate_html(data):
     values = list(data.values())
 
     pie_trace = go.Pie(labels=labels, values=values)
-    pie_layout = go.Layout(title='Répartition des votes', width=400, height=400)
+    pie_layout = go.Layout(title='Répartition des votes')
     pie_fig = go.Figure(data=[pie_trace], layout=pie_layout)
     pie_chart = pio.to_html(pie_fig, include_plotlyjs=False, div_id="answer_graph")
 
