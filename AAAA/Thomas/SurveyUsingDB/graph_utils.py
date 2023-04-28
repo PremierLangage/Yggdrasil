@@ -113,5 +113,6 @@ def generate_html(data):
         <div style="flex-basis:60%;">{hist_chart}</div>
     </div>
 </body>
+</html>
     '''
     return html
