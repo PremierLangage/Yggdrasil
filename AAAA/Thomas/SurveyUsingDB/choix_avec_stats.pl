@@ -96,8 +96,8 @@ form==#|html|
 
 {% if user__role == "teacher" %}
 <style>
-    /* .mpld3-yaxis { display: none !important; }
-    .mpld3-xaxis { display: none !important; } */
+    .mpld3-yaxis { display: none !important; }
+    .mpld3-xaxis { display: none !important; }
     @keyframes smooth-select {
         0% {
             opacity: 1.0;
@@ -129,12 +129,12 @@ form==#|html|
         animation: load-animation 2s ease-in-out;
     }
     .answer {
-        /* display: flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: light-grey;
-        width: 600px; */
+        width: 600px;
     }
     .graph {
         border: 2px outset #d4d4d4;
