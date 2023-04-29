@@ -153,7 +153,7 @@ def levenshtein(chaine1, chaine2):
                 )
     return (levenshtein_matrix[taille_chaine1 - 1, taille_chaine2 - 1])
 
-if levenshtein("AC/DC", inputbox.value) <= 2:
+if levenshtein(samples[samples_keys[current_index]][2], inputbox.value) <= samples[samples_keys[current_index]][1]:
     mark = 100
     feedback = "Vous avez trouvé la bonne réponse en " + str(33 - countdown.time) + " secondes."
     form = ""
