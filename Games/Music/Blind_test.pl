@@ -66,6 +66,7 @@ Vous devez trouver **le nom du groupe** interprétant originellement ce morceaux
 
 
 form==#|html|
+<br />
 <center>Temps restant : </center>
 
  {{ countdown|component }}
