@@ -163,6 +163,43 @@ def levenshtein(chaine1, chaine2):
                 )
     return (levenshtein_matrix[taille_chaine1 - 1, taille_chaine2 - 1])
 
+def make_text_exo(sample_meta):
+    """
+    Return the python string generating the text exercice adapted to meta information in argument
+    """
+    ans=sample_meta[3]
+    ans+="<br /><br />"
+    ans+="""
+    <center>
+    <div>
+    <audio controls autoplay>
+    """
+    ans+='<source src="'+sample_meta[5]+'" type="audio/mp3">'
+    ans+="""
+        Votre navigateur ne supporte pas la lecture du clip audio.
+    </audio>
+    </div>
+    </center>
+    """
+    return ans
+
+def make_form(sample_meta):
+    """
+    Return the python string generating the form adapted to the meta information in argument
+    """
+    ans="""
+    <br />
+    <center><b>Temps restant : </b></center>
+
+    {{ countdown|component }}
+
+    <br />
+
+    {{ inputbox|component}}
+    """
+    return ans
+
+
 if make_next:
     make_next=False
     if current_index < number_of_sample:
