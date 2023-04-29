@@ -84,7 +84,7 @@ Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morce
 <center>
 <div>
 <audio controls autoplay>
-  <source src="{{ url_sample }}" type="audio/mp3">
+  <source src="{{ url_sample1 }}" type="audio/mp3">
   Votre navigateur ne supporte pas la lecture du clip audio.
 </audio>
 </div>
