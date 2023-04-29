@@ -27,6 +27,12 @@ const btn = document.querySelector('.action-submit');
 btn.click()
 ==
 
+inputbox =: Input
+inputbox.type = text
+inputbox.placeholder = Le groupe de musique
+inputbox.appearance = outline
+
+
 url_sample =$ Samples/back_in_black.mp3
 
 logOnConsole==#|js|
