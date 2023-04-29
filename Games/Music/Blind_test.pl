@@ -168,6 +168,7 @@ if make_next:
     if current_index < number_of_sample:
         # Time to set the nest music sample with its question
         text= make_text_exo(samples[samples_keys[current_index]])
+        form=make_form(samples[samples_keys[current_index]])
         inputbox.placeholder=samples[samples_keys[current_index]][4]
         countdown.time=samples[samples_keys[current_index]][0]
         grade = (sum(mark) // len(mark), "")
