@@ -62,8 +62,14 @@ text==#|html|
 
 
 
-form ==
+form==#|html|
+<center>Temps restant : </center>
+
  {{ countdown|component }}
+
+
+
+ {{ inputbox|component}}
 ==
 
 evaluator== #|python|
