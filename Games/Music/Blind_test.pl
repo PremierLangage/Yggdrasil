@@ -124,6 +124,7 @@ inputbox.placeholder=samples[samples_keys[current_index]][4]
 countdown.time=samples[samples_keys[current_index]][0]
 make_next = False
 mark=[]
+tps_ans=[]
 ==
 
 title=Bind test
@@ -223,7 +224,8 @@ if make_next:
         text=""
         form=""
         nb_ok=mark.count(100)
-        feedback="C'est fini, vous avez obtenu "+str(nb_ok)+" r&eacute;ponses correctes sur "+str(number_of_sample)+" questions."
+        feedback="C'est fini, vous avez obtenu "+str(nb_ok)+" r&eacute;ponses correctes sur "+str(number_of_sample)+" questions.<br /><br />"
+        feedback+="Temps de réponses moyen : "
         grade = (sum(mark) // len(mark), feedback)
 
 else:
@@ -235,6 +237,7 @@ else:
         mark.append(0)
         feedback = "Non, ce n'est pas la bonne réponse."
 
+    tps_ans.append(samples[samples_keys[current_index]][0] - countdown.time)
     text=""
     current_index += 1
     form = "<br />{{ countdown|component }} <br /><br />Attendez calmement le démarrage du prochain morceau..."
