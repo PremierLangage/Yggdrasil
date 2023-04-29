@@ -19,13 +19,15 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 countdown % { "cid": "countdown", "selector": "c-countdown" }
-countdown.time % 10
+countdown.time % 30
 countdown.hidden % false
 
 autoSubmit== #|js|
 const btn = document.querySelector('.action-submit');
 btn.click()
 ==
+
+url_sample =$ Samples/back_in_black.mp3
 
 logOnConsole==#|js|
 // you may open the browser console to see the message
