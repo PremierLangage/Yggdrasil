@@ -69,7 +69,7 @@ samples = [[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interpr�
 [80, 4, "Bob Marley", "Vous devez trouver <b>le prénom et le nom du chanteur</b> interprétant originellement ce morceaux.", "Le chanteur de cette chanson", url_sample9],
 [59, 3, "Partenaire particulier", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample10],
 [45, 2, "Wejdene", "Vous devez trouver <b>le nom de la chanteuse</b> interprétant originellement ce morceaux.", "Le nom de la chanteuse", url_sample11],
-[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample12],
+[36, 2, "Titanic", "Vous devez trouver <b>le nom du film</b> ayant dans sa bande originale ce magnifique morceau.", "Le nom du film", url_sample12],
 [65, 2, "Tortues ninjas", "Vous devez trouver <b>le nom de la série d'animés</b> dont ce morceau est le générique.", "La série d'animés", url_sample13],
 [66, 4, "Pixies", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample14]]
 
