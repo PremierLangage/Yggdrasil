@@ -50,7 +50,7 @@ counter = 0
 title=Bind test
 
 text==#|html|
-Vous devez trouver **le nom du groupe** interprétant originellement ce morceaux.
+Vous devez trouver **le nom du groupe** interprétant originellement ce morceaux.<br /><br />
 
 
 <center>
