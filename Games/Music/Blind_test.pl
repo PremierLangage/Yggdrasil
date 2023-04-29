@@ -91,11 +91,9 @@ def make_text_exo(sample_meta):
     <center>
     <div>
     <audio controls autoplay>
-        <source src="
     """
-    ans+=sample_meta[4]
-    """
-    " type="audio/mp3">
+    ans+='<source src="'+sample_meta[4]+'" type="audio/mp3">'
+    ans+="""
         Votre navigateur ne supporte pas la lecture du clip audio.
     </audio>
     </div>
