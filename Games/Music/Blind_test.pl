@@ -62,7 +62,7 @@ samples = [[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interpr�
 [33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample2],
 [33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample3],
 [33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample4],
-[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample5],
+[91, 3, "cercueil", "Vous devez trouver <b>le nom de l'objet</b> avec lequel les acteurs du clip de ce même internet dansent frénétiquement.", "Le nom de l'objet", url_sample5],
 [37, 2, "La fille du coupeur de joint", "Vous devez trouver <b>le titre de la chansom</b> interprétant originellement par Hubert Félix Thiéfaine.", "Le titre de la chanson", url_sample6],
 [64, 2, "Naruto", "Vous devez trouver <b>le nom de la série d'animés</b> dans laquelle on peut enttendre ce morceaux.", "La série animée", url_sample7],
 [65, 6, "Unité spéciale", "Vous devez trouver <b>le nom de la série</b> (après NY) dans laquelle on peut suivre Olivia Benson.", "Le nom de la série", url_sample8],
