@@ -36,7 +36,6 @@ console.log('hello world');
 
 before== #|python|
 countdown.actions = [
-    { "time": 5, "action": logOnConsole },
     { "time": 0, "action": autoSubmit }
 ]
 counter = 0
