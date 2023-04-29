@@ -46,7 +46,6 @@ title = Count Down Component
 text==#|html|
 <center>
 <div>
-<img src="{{ url_phot }}" style="width:30%" alt="les instruments de musiques de l'enfer"/><br>
 <audio controls>
   <source src="{{ url_clip }}" type="audio/ogg">
   Votre navigateur ne supporte pas la lecture du clip audio.
