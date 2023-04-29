@@ -96,7 +96,7 @@ remaining = countdown.time
 for e in countdown.actions:
     e['consumed'] = False
 
-countdown.time = 10
+countdown.time = 33
 counter += 1
 grade = (100, f'<h3>remaining: {remaining}, counter: {counter}</h3>')
 
