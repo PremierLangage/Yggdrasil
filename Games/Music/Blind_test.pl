@@ -104,19 +104,20 @@ def levenshtein(chaine1, chaine2):
     return (levenshtein_matrix[taille_chaine1 - 1, taille_chaine2 - 1])
 
 if levenshtein("AC/DC", "") <= 2:
-    ans = True
+    mark = 100
+    feedback = "Vous avez trouvé la bonne réponse en " + str(33 - countdown.time) + " secondes."
+    form = ""
 else:
-    ans = False
-
-form=""
+    mark = 0
+    feedback = "Non, ce n'est pas la bonne réponse."
 
 remaining = countdown.time
 # reset timer
 for e in countdown.actions:
     e['consumed'] = False
 
-countdown.time = 33
+countdown.time = remaining
 counter += 1
-grade = (100, f'<h3>remaining: {remaining}, counter: {counter}</h3>')
+grade = (100, feedback)
 
 ==
