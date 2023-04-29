@@ -117,7 +117,6 @@ for e in countdown.actions:
     e['consumed'] = False
 
 countdown.time = remaining
-counter += 1
 grade = (mark, feedback)
 
 ==
