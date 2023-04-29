@@ -101,9 +101,28 @@ def make_text_exo(sample_meta):
     """
     return ans
 
-text= make_text_exo(samples[samples_keys[current_index]])
+def make_form(sample_meta):
+    """
+    Return the python string generating the form adapted to the meta information in argument
+    """
+    ans="""
+    <br />
+    <center><b>Temps restant : </b></center>
+
+    {{ countdown|component }}
+
+    <br />
+
+    {{ inputbox|component}}
+    """
+    return ans
+
+text=make_text_exo(samples[samples_keys[current_index]])
+form=make_form(samples[samples_keys[current_index]])
 inputbox.placeholder=samples[samples_keys[current_index]][4]
 countdown.time=samples[samples_keys[current_index]][0]
+make_next = False
+mark=[]
 ==
 
 title=Bind test
@@ -112,17 +131,8 @@ text==#|html|
 
 ==
 
-
-
 form==#|html|
-<br />
-<center><b>Temps restant : </b></center>
 
- {{ countdown|component }}
-
-<br />
-
- {{ inputbox|component}}
 ==
 
 evaluator== #|python|
@@ -153,21 +163,39 @@ def levenshtein(chaine1, chaine2):
                 )
     return (levenshtein_matrix[taille_chaine1 - 1, taille_chaine2 - 1])
 
-if levenshtein(samples[samples_keys[current_index]][2], inputbox.value) <= samples[samples_keys[current_index]][1]:
-    mark = 100
-    feedback = "Vous avez trouvé la bonne réponse en " + str(samples[samples_keys[current_index]][0] - countdown.time) + " secondes."
-    form = ""
-    text = ""
+if make_next:
+    make_next=False
+    if current_index < number_of_sample:
+        # Time to set the nest music sample with its question
+        text= make_text_exo(samples[samples_keys[current_index]])
+        inputbox.placeholder=samples[samples_keys[current_index]][4]
+        countdown.time=samples[samples_keys[current_index]][0]
+        grade = (sum(mark) // len(mark), "")
+    else:
+        # It's over thus it is time to provide final score
+        text=""
+        form=""
+        feedback="C'est fini, voici vos notes : "+str(mark)
+        grade = (sum(mark) // len(mark), feedback)
+
 else:
-    mark = 0
+
+if levenshtein(samples[samples_keys[current_index]][2], inputbox.value) <= samples[samples_keys[current_index]][1]:
+    mark.append(100)
+    feedback = "Vous avez trouvé la bonne réponse en " + str(samples[samples_keys[current_index]][0] - countdown.time) + " secondes."
+else:
+    mark.append(0)
     feedback = "Non, ce n'est pas la bonne réponse."
 
-remaining = countdown.time
+text=""
+current_index += 1
+form = "<br />{{ countdown|component }} <br /><br />Attendez calmement avant le prochain morceau..."
+make_next = True
+countdown.time = 10
+
 # reset timer
 for e in countdown.actions:
     e['consumed'] = False
 
-countdown.time = remaining
-grade = (mark, feedback)
-
+grade = (sum(mark) // len(mark), feedback)
 ==
