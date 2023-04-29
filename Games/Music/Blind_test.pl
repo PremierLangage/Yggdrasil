@@ -44,7 +44,6 @@ before== #|python|
 countdown.actions = [
     { "time": 0, "action": autoSubmit }
 ]
-counter = 0
 ==
 
 title=Bind test
@@ -104,8 +103,12 @@ def levenshtein(chaine1, chaine2):
                 )
     return (levenshtein_matrix[taille_chaine1 - 1, taille_chaine2 - 1])
 
+if levenshtein("AC/DC", "") <= 2:
+    ans = True
+else:
+    ans = False
 
-
+form=""
 
 remaining = countdown.time
 # reset timer
