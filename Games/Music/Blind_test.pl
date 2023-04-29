@@ -48,7 +48,7 @@ text==#|html|
 <div>
 <img src="{{ url_phot }}" style="width:30%" alt="les instruments de musiques de l'enfer"/><br>
 <audio controls>
-  <source src="{{ url_clip }}" type="audio/mp3">
+  <source src="{{ url_clip }}" type="audio/ogg">
   Votre navigateur ne supporte pas la lecture du clip audio.
 </audio>
 </div>
