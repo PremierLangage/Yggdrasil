@@ -53,6 +53,9 @@ console.log('hello world');
 ==
 
 before== #|python|
+import random
+
+# Change here to select the number of question outside all possibles samples
 number_of_sample=5
 
 samples = [[33, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample1],
@@ -73,22 +76,42 @@ samples = [[33, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interpréta
 countdown.actions = [
     { "time": 0, "action": autoSubmit }
 ]
+
+# the indices of the ranmdomly selected samples
+samples_keys = random.sample(range(len(samples)), number_of_sample)
+current_index = 0
+
+def make_text_exo(sample_meta):
+    """
+    Return the python string generating the text exercice adapted to meta information in argument
+    """
+    ans=sample_meta[2]
+    ans+="<br /><br />"
+    ans+="""
+    <center>
+    <div>
+    <audio controls autoplay>
+        <source src="
+    """
+    ans+=sample_meta[4]
+    """
+    " type="audio/mp3">
+        Votre navigateur ne supporte pas la lecture du clip audio.
+    </audio>
+    </div>
+    </center>
+    """
+    return ans
+
+text= make_text_exo(samples[samples_keys[current_index]])
+inputbox.placeholder=samples[samples_keys[current_index]][3]
+countdown.time=samples[samples_keys[current_index]][0]
 ==
 
 title=Bind test
 
 text==#|html|
-Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.<br /><br />
 
-
-<center>
-<div>
-<audio controls autoplay>
-  <source src="{{ url_sample1 }}" type="audio/mp3">
-  Votre navigateur ne supporte pas la lecture du clip audio.
-</audio>
-</div>
-</center>
 ==
 
 
