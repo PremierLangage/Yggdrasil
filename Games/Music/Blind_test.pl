@@ -74,7 +74,7 @@ samples = [[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interpr�
 [36, 2, "Titanic", "Vous devez trouver <b>le nom du film</b> ayant dans sa bande originale ce magnifique morceau.", "Le nom du film", url_sample12],
 [65, 2, "Tortues ninjas", "Vous devez trouver <b>le nom de la série d'animés</b> dont ce morceau est le générique.", "La série d'animés", url_sample13],
 [66, 4, "Pixies", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample14],
-[66, 4, "Quelque chose de Tennessee", "Vous devez trouver <b>le titre de cette chanson</b> magnifiquement interprétée avec une flûte.", "Le titre de la chanson", url_sample15]]
+[66, 5, "Quelque chose de Tennessee", "Vous devez trouver <b>le titre de cette chanson</b> magnifiquement interprétée avec une flûte.", "Le titre de la chanson", url_sample15]]
 
 countdown.actions = [
     { "time": 0, "action": autoSubmit }
@@ -117,11 +117,11 @@ def make_form(sample_meta):
     <br />
 
     {{ inputbox|component}}
-    """
-    return ans
+    """'
+    ret'
 
-text=make_text_exo(samples[samples_keys[current_index]])
-form=make_form(samples[samples_keys[current_index]])
+text=ma'ex]])
+form=ma')
 inputbox.placeholder=samples[samples_keys[current_index]][4]
 countdown.time=samples[samples_keys[current_index]][0]
 make_next = False
