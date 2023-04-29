@@ -42,7 +42,8 @@ countdown.actions = [
 counter = 0
 ==
 
-title = Count Down Component
+title=Bind test
+
 text==#|html|
 <center>
 <div>
@@ -61,6 +62,11 @@ form ==
 ==
 
 evaluator== #|python|
+
+
+
+
+
 remaining = countdown.time
 # reset timer
 for e in countdown.actions:
