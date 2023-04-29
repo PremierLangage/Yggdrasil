@@ -244,7 +244,7 @@ else:
     current_index += 1
     form = "<br />{{ countdown|component }} <br /><br />Attendez calmement le démarrage du prochain morceau..."
     make_next = True
-    countdown.time = 10
+    countdown.time = 5
 
     # reset timer
     for e in countdown.actions:
