@@ -46,8 +46,8 @@ title = Count Down Component
 text==#|html|
 <center>
 <div>
-<audio controls>
-  <source src="{{ url_clip }}" type="audio/mp3">
+<audio controls autoplay>
+  <source src="{{ url_sample }}" type="audio/mp3">
   Votre navigateur ne supporte pas la lecture du clip audio.
 </audio>
 </div>
