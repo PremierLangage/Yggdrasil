@@ -118,6 +118,6 @@ for e in countdown.actions:
 
 countdown.time = remaining
 counter += 1
-grade = (100, feedback)
+grade = (mark, feedback)
 
 ==
