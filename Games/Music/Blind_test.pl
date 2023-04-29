@@ -209,6 +209,7 @@ if make_next:
         form=make_form(samples[samples_keys[current_index]])
         inputbox.placeholder=samples[samples_keys[current_index]][4]
         countdown.time=samples[samples_keys[current_index]][0]
+        inputbox.value=""
         make_next = False
         feedback=""
 
