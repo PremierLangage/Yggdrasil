@@ -155,7 +155,7 @@ def levenshtein(chaine1, chaine2):
 
 if levenshtein(samples[samples_keys[current_index]][2], inputbox.value) <= samples[samples_keys[current_index]][1]:
     mark = 100
-    feedback = "Vous avez trouvé la bonne réponse en " + str(33 - countdown.time) + " secondes."
+    feedback = "Vous avez trouvé la bonne réponse en " + str(samples[samples_keys[current_index]][0] - countdown.time) + " secondes."
     form = ""
     text = ""
 else:
