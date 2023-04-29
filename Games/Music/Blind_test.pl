@@ -73,8 +73,8 @@ samples = [[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interpr�
 [45, 2, "Wejdene", "Vous devez trouver <b>le nom de la chanteuse</b> interprétant originellement ce morceaux.", "Le nom de la chanteuse", url_sample11],
 [36, 2, "Titanic", "Vous devez trouver <b>le nom du film</b> ayant dans sa bande originale ce magnifique morceau.", "Le nom du film", url_sample12],
 [65, 2, "Tortues ninjas", "Vous devez trouver <b>le nom de la série d'animés</b> dont ce morceau est le générique.", "La série d'animés", url_sample13],
-[66, 4, "Pixies", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample14]]
-#[62, 5, "Quelque chose de Tennessee", "Vous devez trouver <b>le titre de cette chanson</b> magnifiquement interprétée avec une flûte.", "Le titre de la chanson", url_sample15]]
+[66, 4, "Pixies", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample14],
+[62, 5, "Quelque chose de Tennessee", "Vous devez trouver <b>le titre de cette chanson</b> magnifiquement interprétée avec une flûte.", "Le titre de la chanson", url_sample15]]
 
 countdown.actions = [
     { "time": 0, "action": autoSubmit }
@@ -140,7 +140,7 @@ form==#|html|
 ==
 
 evaluator== #|python|
-# I did found this relatively efficient Livenshtein distance using Numpy
+# I did found this relatively efficient Livenshtein distance' using Numpy
 import numpy as np
 
 def levenshtein(chaine1, chaine2):
