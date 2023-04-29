@@ -32,8 +32,20 @@ inputbox.type = text
 inputbox.placeholder = Le nom du groupe 
 inputbox.appearance = outline
 
-
-url_sample =$ Samples/back_in_black.mp3
+url_sample1 =$ Samples/back_in_black.mp3
+url_sample2 =$ Samples/chop_suey.mp3
+url_sample3 =$ Samples/completement_siphone.mp3
+url_sample4 =$ Samples/je_t_aime_de_ouf.mp3
+url_sample5 =$ Samples/la_chanson_du_cerceuil.mp3
+url_sample6 =$ Samples/la_fille_du_coupeur_de_joint.mp3
+url_sample7 =$ Samples/naruto.mp3
+url_sample8 =$ Samples/new_york_unite_speciale.mp3
+url_sample9 =$ Samples/no_woman_no_cry.mp3
+url_sample10 =$ Samples/partenaire_particulier.mp3
+url_sample11 =$ Samples/reflechir.mp3
+url_sample12 =$ Samples/titanic.mp3
+url_sample13 =$ Samples/tortues_ninjas.mp3
+url_sample14 =$ Samples/where_is_my_mind.mp3
 
 logOnConsole==#|js|
 // you may open the browser console to see the message
@@ -41,6 +53,23 @@ console.log('hello world');
 ==
 
 before== #|python|
+number_of_sample=5
+
+samples = [[33, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample1],
+[33, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample2],
+[33, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample3],
+[33, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample4],
+[33, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample5],
+[33, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample6],
+[33, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample7],
+[33, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample8],
+[33, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample9],
+[33, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample10],
+[33, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample11],
+[33, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample12],
+[33, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample13],
+[33, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample14]]
+
 countdown.actions = [
     { "time": 0, "action": autoSubmit }
 ]
@@ -49,7 +78,7 @@ countdown.actions = [
 title=Bind test
 
 text==#|html|
-Vous devez trouver **le nom du groupe** interprétant originellement ce morceaux.<br /><br />
+Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.<br /><br />
 
 
 <center>
