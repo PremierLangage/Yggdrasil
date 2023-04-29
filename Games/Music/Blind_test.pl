@@ -220,7 +220,8 @@ if make_next:
         # It's over thus it is time to provide final score
         text=""
         form=""
-        feedback="C'est fini, voici vos notes : "+str(mark)
+        nb_ok=mark.count(100)
+        feedback="C'est fini, vous avez obtenu "+str(nb_ok)+" réponses correctes sur "+str(number_of_sample)+" questions."
         grade = (sum(mark) // len(mark), feedback)
 
 else:
@@ -234,7 +235,7 @@ else:
 
     text=""
     current_index += 1
-    form = "<br />{{ countdown|component }} <br /><br />Attendez calmement avant le prochain morceau..."
+    form = "<br />{{ countdown|component }} <br /><br />Attendez calmement le démarrage du prochain morceau..."
     make_next = True
     countdown.time = 10
 
