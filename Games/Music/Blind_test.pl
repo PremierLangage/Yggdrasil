@@ -29,7 +29,7 @@ btn.click()
 
 inputbox =: Input
 inputbox.type = text
-inputbox.placeholder = Le groupe de musique
+inputbox.placeholder = Le nom du groupe 
 inputbox.appearance = outline
 
 
@@ -50,6 +50,9 @@ counter = 0
 title=Bind test
 
 text==#|html|
+Vous devez trouver le nom du groupe original interprétant originellement ce morceaux.
+
+
 <center>
 <div>
 <audio controls autoplay>
