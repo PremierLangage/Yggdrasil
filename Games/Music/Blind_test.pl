@@ -70,7 +70,7 @@ samples = [[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interpr�
 [33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample10],
 [33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample11],
 [33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample12],
-[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample13],
+[65, 2, "Tortues ninjas", "Vous devez trouver <b>le nom de la série d'animés</b> dont ce morceau est le générique.", "La série d'animés", url_sample13],
 [66, 4, "Pixies", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample14]]
 
 countdown.actions = [
