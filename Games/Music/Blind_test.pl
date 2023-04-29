@@ -171,12 +171,13 @@ if make_next:
         form=make_form(samples[samples_keys[current_index]])
         inputbox.placeholder=samples[samples_keys[current_index]][4]
         countdown.time=samples[samples_keys[current_index]][0]
+        feedback=""
 
         # reset timer
         for e in countdown.actions:
             e['consumed'] = False
         
-        grade = (sum(mark) // len(mark), "")
+        grade = (sum(mark) // len(mark), feedback)
     else:
         # It's over thus it is time to provide final score
         text=""
