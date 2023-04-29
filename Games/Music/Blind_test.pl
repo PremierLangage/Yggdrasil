@@ -107,6 +107,7 @@ if levenshtein("AC/DC", inputbox.value) <= 2:
     mark = 100
     feedback = "Vous avez trouvé la bonne réponse en " + str(33 - countdown.time) + " secondes."
     form = ""
+    text = ""
 else:
     mark = 0
     feedback = "Non, ce n'est pas la bonne réponse."
