@@ -27,7 +27,7 @@ const btn = document.querySelector('.action-submit');
 btn.click()
 ==
 
-url_sample =$ Samples/back_in_black.ogg
+url_sample =$ Samples/back_in_black.mp3
 
 logOnConsole==#|js|
 // you may open the browser console to see the message
@@ -47,7 +47,7 @@ text==#|html|
 <center>
 <div>
 <audio controls>
-  <source src="{{ url_clip }}" type="audio/ogg">
+  <source src="{{ url_clip }}" type="audio/mp3">
   Votre navigateur ne supporte pas la lecture du clip audio.
 </audio>
 </div>
