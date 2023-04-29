@@ -222,7 +222,7 @@ if make_next:
         text=""
         form=""
         nb_ok=mark.count(100)
-        feedback="C'est fini, vous avez obtenu "+str(nb_ok)+" réponses correctes sur "+str(number_of_sample)+" questions."
+        feedback="C'est fini, vous avez obtenu "+str(nb_ok)+" r&eacute;ponses correctes sur "+str(number_of_sample)+" questions."
         grade = (sum(mark) // len(mark), feedback)
 
 else:
