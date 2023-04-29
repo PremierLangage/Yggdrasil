@@ -56,7 +56,7 @@ before== #|python|
 import random
 
 # Change here to select the number of question outside all possibles samples
-number_of_sample=1
+number_of_sample=5
 
 samples = [[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample1],
 [62, 3, "System of a down", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample2],
@@ -171,7 +171,7 @@ if make_next:
         form=make_form(samples[samples_keys[current_index]])
         inputbox.placeholder=samples[samples_keys[current_index]][4]
         countdown.time=samples[samples_keys[current_index]][0]
-        
+
         # reset timer
         for e in countdown.actions:
             e['consumed'] = False
