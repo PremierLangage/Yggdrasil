@@ -47,6 +47,10 @@ url_sample12 =$ Samples/titanic.mp3
 url_sample13 =$ Samples/tortues_ninjas.mp3
 url_sample14 =$ Samples/where_is_my_mind.mp3
 url_sample15 =$ Samples/tennessee.mp3
+url_sample16 =$ Samples/moi_lolita.mp3
+url_sample17 =$ Samples/stairway.mp3
+url_sample18 =$ Samples/sunday_bloody_sunday.mp3
+
 
 logOnConsole==#|js|
 // you may open the browser console to see the message
