@@ -80,7 +80,7 @@ samples = [[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interpr�
 [66, 4, "Pixies", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample14],
 [62, 4, "Quelque chose de Tennessee", "Vous devez trouver <b>le titre de cette chanson</b> magnifiquement interprétée avec une flûte.", "Le titre de la chanson", url_sample15],
 [62, 5, "Moi... Lolita", "Vous devez trouver <b>le titre de cette chanson</b> magnifiquement interprétée en sifflotant.", "Le titre de la chanson", url_sample16],
-[62, 3, "Led Zeppelin", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample17],
+[50, 3, "Led Zeppelin", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample17],
 [62, 4, "Sunday bloody sunday", "Vous devez trouver <b>le titre de cette chanson</b> magnifiquement interprétée avec une flûte.", "Le titre de la chanson", url_sample18]]
 
 countdown.actions = [
