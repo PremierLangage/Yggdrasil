@@ -266,18 +266,21 @@ if make_next:
         grade = (sum(mark) // len(mark), feedback)
 
 else:
-
-    if levenshtein(samples[samples_keys[current_index]][2], inputbox.value) <= samples[samples_keys[current_index]][1]:
+    dist_error = levenshtein(samples[samples_keys[current_index]][2], inputbox.value)
+    if dist_error <= samples[samples_keys[current_index]][1]:
         mark.append(100)
-        feedback = "Vous avez trouvé la bonne réponse en " + str(samples[samples_keys[current_index]][0] - countdown.time) + " secondes."
+        feedback = "Réponse donnée : "+inputbox.value+" (erreurs : "+dist_error+")<br />"
+        feedback += "Réponse attendue : <b>"+samples[samples_keys[current_index]][2]+"</b><br />"
+        feedback += "Vous avez trouvé la bonne réponse en " + str(samples[samples_keys[current_index]][0] - countdown.time) + " secondes."
     else:
         mark.append(0)
-        feedback = "Non, ce n'est pas la bonne réponse."
+        feedback = "Non, ce n'est pas la bonne réponse.<br />"
+        feedback += "Réponse attendue : <b>"+samples[samples_keys[current_index]][2]+"</b>"
 
     tps_ans.append(samples[samples_keys[current_index]][0] - countdown.time)
     text=""
     current_index += 1
-    form = "<br />{{ countdown|component }} <br /><br />Attendez calmement le démarrage du prochain morceau..."
+    form = "<br />{{ countdown|component }} <br /><br />Attendez calmement le démarrage automatique du prochain morceau..."
     make_next = True
     countdown.time = 8
 
