@@ -70,7 +70,7 @@ import random
 
 # Change here to select the number of question outside all possibles samples
 # Please provide more than 2 due to plural feedback formulation...
-number_of_sample=10
+number_of_sample=8
 
 samples = [[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample1],
 [62, 3, "System of a down", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample2],
