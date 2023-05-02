@@ -104,7 +104,8 @@ samples = [[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interpr�
 [35, 4, "La bamba", "Vous devez trouver <b>le titre de la chanson</b> magnifiquement interprétée avec une flûte.", "le titre de la chanson", url_sample26],
 [45, 4, "Joe Dassin", "Vous devez trouver <b>le nom de l'artiste</b> interprétant originellement ce morceaux.", "Prénom et nom de l'artiste", url_sample27],
 [58, 4, "Pierre Bachelet", "Vous devez trouver <b>le nom de l'artiste</b> interprétant originellement ce morceaux (hymne d'un stade du chnord).", "Prénom et nom de l'artiste", url_sample28],
-[66, 5, "Rolling Stones", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample29]]
+[66, 5, "Rolling Stones", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample29],
+[81, 5, "Bob Marley", "Vous devez trouver <b>le prénom et le nom du chanteur</b> interprétant originellement ce morceaux.", "Le chanteur de cette chanson", url_sample30]]
 
 
 
