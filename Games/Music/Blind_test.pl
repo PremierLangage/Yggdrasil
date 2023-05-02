@@ -56,7 +56,7 @@ url_sample21 =$ Samples/creeps.mp3
 url_sample22 =$ Samples/des_que_le_vent_soufflera.mp3
 url_sample23 =$ Samples/encore_un_matin.mp3
 url_sample24 =$ Samples/foule_sentimentale.mp3
-
+url_sample25 =$ Samples/je_te_promets.mp3
 
 logOnConsole==#|js|
 // you may open the browser console to see the message
@@ -93,7 +93,8 @@ samples = [[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interpr�
 [68, 3, "Radiohead", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "le nom du groupe", url_sample21],
 [43, 3, "Renaud", "Vous devez trouver <b>le nom de l'artiste</b> interprétant originellement ce morceaux.", "le nom de l'artiste", url_sample22],
 [65, 3, "Jean-Jacques Goldman", "Vous devez trouver <b>le nom de l'artiste</b> interprétant originellement ce morceaux.", "Prénom et nom de l'artiste", url_sample23],
-[52, 4, "Alain Souchon", "Vous devez trouver <b>le nom de l'artiste</b> interprétant originellement ce morceaux.", "Prénom et nom de l'artiste", url_sample24]]
+[52, 4, "Alain Souchon", "Vous devez trouver <b>le nom de l'artiste</b> interprétant originellement ce morceaux.", "Prénom et nom de l'artiste", url_sample24],
+[63, 4, "Je te promets", "Vous devez trouver <b>le titre de la chanson</b> magnifiquement interprétée avec une flûte.", "le titre de la chanson", url_sample25]]
 
 
 countdown.actions = [
