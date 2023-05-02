@@ -269,7 +269,7 @@ else:
     dist_error = levenshtein(samples[samples_keys[current_index]][2], inputbox.value)
     if dist_error <= samples[samples_keys[current_index]][1]:
         mark.append(100)
-        feedback = "Réponse donnée : "+inputbox.value+" (erreurs : "+dist_error+")<br />"
+        feedback = "Réponse donnée : "+inputbox.value+" (erreurs : "+str(int(dist_error))+")<br />"
         feedback += "Réponse attendue : <b>"+samples[samples_keys[current_index]][2]+"</b><br />"
         feedback += "Vous avez trouvé la bonne réponse en " + str(samples[samples_keys[current_index]][0] - countdown.time) + " secondes."
     else:
