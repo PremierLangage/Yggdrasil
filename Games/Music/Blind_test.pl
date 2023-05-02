@@ -57,6 +57,7 @@ url_sample22 =$ Samples/des_que_le_vent_soufflera.mp3
 url_sample23 =$ Samples/encore_un_matin.mp3
 url_sample24 =$ Samples/foule_sentimentale.mp3
 url_sample25 =$ Samples/je_te_promets.mp3
+url_sample26 =$ Samples/la_bamba.mp3
 
 logOnConsole==#|js|
 // you may open the browser console to see the message
