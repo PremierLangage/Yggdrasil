@@ -84,7 +84,8 @@ samples = [[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interpr�
 [55, 4, "Sunday bloody sunday", "Vous devez trouver <b>le titre de cette chanson</b> magnifiquement interprétée avec une flûte.", "Le titre de la chanson", url_sample18]]
 
 L = [[0, 0, "Sex Pistols", "Question", "le nom du groupe", "URL du sample"],
-     [0, 0, "Green Day", "Question", "le nom du groupe", "URL du sample"],]
+     [0, 0, "Green Day", "Question", "le nom du groupe", "URL du sample"],
+     [0, 0, "Green Day", "Question", "le nom du groupe", "URL du sample"]]
 
 countdown.actions = [
     { "time": 0, "action": autoSubmit }
