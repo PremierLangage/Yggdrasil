@@ -61,6 +61,7 @@ url_sample26 =$ Samples/la_bamba.mp3
 url_sample27 =$ Samples/les_champs_elysees.mp3
 url_sample28 =$ Samples/les_corons.mp3
 url_sample29 =$ Samples/paint_it_black.mp3
+url_sample30 =$ Samples/redemption_song.mp3
 
 
 logOnConsole==#|js|
