@@ -59,6 +59,9 @@ url_sample24 =$ Samples/foule_sentimentale.mp3
 url_sample25 =$ Samples/je_te_promets.mp3
 url_sample26 =$ Samples/la_bamba.mp3
 url_sample27 =$ Samples/les_champs_elysees.mp3
+url_sample28 =$ Samples/les_corons.mp3
+url_sample29 =$ Samples/paint_it_black.mp3
+
 
 logOnConsole==#|js|
 // you may open the browser console to see the message
@@ -98,7 +101,9 @@ samples = [[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interpr�
 [52, 4, "Alain Souchon", "Vous devez trouver <b>le nom de l'artiste</b> interprétant originellement ce morceaux.", "Prénom et nom de l'artiste", url_sample24],
 [63, 4, "Je te promets", "Vous devez trouver <b>le titre de la chanson</b> magnifiquement interprétée avec une flûte.", "le titre de la chanson", url_sample25],
 [35, 4, "La bamba", "Vous devez trouver <b>le titre de la chanson</b> magnifiquement interprétée avec une flûte.", "le titre de la chanson", url_sample26],
-[45, 4, "Joe Dassin", "Vous devez trouver <b>le nom de l'artiste</b> interprétant originellement ce morceaux.", "Prénom et nom de l'artiste", url_sample27]]
+[45, 4, "Joe Dassin", "Vous devez trouver <b>le nom de l'artiste</b> interprétant originellement ce morceaux.", "Prénom et nom de l'artiste", url_sample27],
+[58, 4, "Pierre Bachelet", "Vous devez trouver <b>le nom de l'artiste</b> interprétant originellement ce morceaux (hymne d'un stade du chnord).", "Prénom et nom de l'artiste", url_sample28],
+[66, 5, "Rolling Stones", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample29]]
 
 
 
