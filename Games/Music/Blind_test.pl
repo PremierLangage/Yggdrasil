@@ -101,6 +101,7 @@ samples = [[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interpr�
 [45, 4, "Joe Dassin", "Vous devez trouver <b>le nom de l'artiste</b> interprétant originellement ce morceaux.", "Prénom et nom de l'artiste", url_sample27]]
 
 
+
 countdown.actions = [
     { "time": 0, "action": autoSubmit }
 ]
