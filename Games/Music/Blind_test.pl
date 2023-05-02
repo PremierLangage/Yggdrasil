@@ -50,6 +50,8 @@ url_sample15 =$ Samples/tennessee.mp3
 url_sample16 =$ Samples/moi_lolita.mp3
 url_sample17 =$ Samples/stairway.mp3
 url_sample18 =$ Samples/sunday_bloody_sunday.mp3
+url_sample19 =$ Samples/anarchy_in_the_uk.mp3
+url_sample20 =$ Samples/basket_case.mp3
 
 
 logOnConsole==#|js|
@@ -81,11 +83,9 @@ samples = [[33, 2, "AC/DC", "Vous devez trouver <b>le nom du groupe</b> interpr�
 [62, 4, "Quelque chose de Tennessee", "Vous devez trouver <b>le titre de cette chanson</b> magnifiquement interprétée avec une flûte.", "Le titre de la chanson", url_sample15],
 [69, 5, "Moi... Lolita", "Vous devez trouver <b>le titre de cette chanson</b> magnifiquement interprétée en sifflotant.", "Le titre de la chanson", url_sample16],
 [50, 3, "Led Zeppelin", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "Le nom du groupe", url_sample17],
-[55, 4, "Sunday bloody sunday", "Vous devez trouver <b>le titre de cette chanson</b> magnifiquement interprétée avec une flûte.", "Le titre de la chanson", url_sample18]]
-
-L = [[0, 0, "Sex Pistols", "Question", "le nom du groupe", "URL du sample"],
-     [0, 0, "Green Day", "Question", "le nom du groupe", "URL du sample"],
-     [0, 0, "Green Day", "Question", "le nom du groupe", "URL du sample"]]
+[55, 4, "Sunday bloody sunday", "Vous devez trouver <b>le titre de cette chanson</b> magnifiquement interprétée avec une flûte.", "Le titre de la chanson", url_sample18],
+[59, 4, "Sex Pistols", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "le nom du groupe", url_sample19],
+[60, 4, "Green Day", "Vous devez trouver <b>le nom du groupe</b> interprétant originellement ce morceaux.", "le nom du groupe", url_sample20]]
 
 countdown.actions = [
     { "time": 0, "action": autoSubmit }
