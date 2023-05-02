@@ -162,7 +162,9 @@ mark=[]
 tps_ans=[]
 ==
 
-title=Bind test
+title=Le bind test du fou à la flûte
+
+author=Nicolaï Nightmare
 
 text==#|html|
 
