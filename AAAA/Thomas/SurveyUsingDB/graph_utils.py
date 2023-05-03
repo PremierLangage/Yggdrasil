@@ -170,4 +170,4 @@ if __name__ == '__main__':
     # examples datas
     data = {f"value {i}" : i for i in range(5)}
     with open("output.html", "w") as file:
-        file.write(gen_html(data))
+        file.write(gen_graph_html_plotly(data))
