@@ -156,8 +156,7 @@ f"""<!-- generated with Python script : graph_utils.gen_graph_html_plotly -->
 {SCRIPT_IMPORT if include_script_import else ''}
 <div class="graph_container" style="width:{width};height:{height};display:flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;align-items: center;">
     {pie_chart}
-        {hist_chart}
-    </div>
+    {hist_chart}
 </div>
 """
 
