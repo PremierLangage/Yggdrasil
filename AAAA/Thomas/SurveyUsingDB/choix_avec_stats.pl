@@ -145,8 +145,8 @@ form==#|html|
     }
     .test {
         all:unset;
-        width: 1000px;
-        height: 300px;
+        width: 100%;
+        height: 400px;
     }
 </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.33.1/plotly.min.js" integrity="sha512-V0j9LhrK9IMNdFYZqh+IqU4cjo7wdxyHNyH+L0td4HryBuZ7Oq6QxP2/CWr6TituX31+gv5PnolvERuTbz8UNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
