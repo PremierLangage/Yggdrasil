@@ -1,4 +1,4 @@
-"""
+
 import matplotlib.pyplot as plt
 import numpy as np
 from random import shuffle
@@ -122,8 +122,8 @@ def generate_html_plotly(data, full_html=False):
     </div>
     '''
     return html
-"""
-## NEW VERSION :
+
+## NEW VERSION
 
 import plotly.graph_objs as go
 import plotly.io as pio
