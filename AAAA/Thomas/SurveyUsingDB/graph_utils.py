@@ -150,7 +150,7 @@ def gen_graph_html_plotly(data : dict, width = "100%", height = "100%", include_
     hist_chart = pio.to_html(hist_fig, include_plotlyjs=False, full_html=False)
 
     return \
-f"""<!-- generated with Python script : graph_generator -->
+f"""<!-- generated with Python script : graph_utils.gen_graph_html_plotly -->
 <style>
     div.graph_container {{width: {width} ;height: {height};}}
 </style>
