@@ -129,7 +129,7 @@ import plotly.graph_objs as go
 import plotly.io as pio
 from random import choice
 
-SCRIPT_IMPORT = '<!-- SCRIPT INCLUSION DEFAULT SET BY PYTHON SCRIPT, can be disabled with include_script_import=False -->\n<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.33.1/plotly.min.js" integrity="sha512-V0j9LhrK9IMNdFYZqh+IqU4cjo7wdxyHNyH+L0td4HryBuZ7Oq6QxP2/CWr6TituX31+gv5PnolvERuTbz8UNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><div>'
+SCRIPT_IMPORT = '<!-- SCRIPT INCLUSION DEFAULT SET BY PYTHON SCRIPT, can be disabled with gen_graph_html_plotly.include_script_import=False -->\n<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.33.1/plotly.min.js" integrity="sha512-V0j9LhrK9IMNdFYZqh+IqU4cjo7wdxyHNyH+L0td4HryBuZ7Oq6QxP2/CWr6TituX31+gv5PnolvERuTbz8UNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><div>'
 
 def gen_graph_html_plotly(data : dict, width = "100%", height = "100%", include_script_import=True):
     values  = list(data.values())
