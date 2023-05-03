@@ -158,10 +158,10 @@ f"""<!-- generated with Python script : graph_utils.gen_graph_html_plotly -->
 </style>
 {SCRIPT_IMPORT if include_script_import else ''}
 <div class="graph_container" style="display:flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;align-items: center;">
-    <div style="width:40%">
+    <div style="width:40%; height:100%;">
         {pie_chart}
     </div>
-    <div style="width:60%">
+    <div style="width:60%; height:100%;">
         {hist_chart}
     </div>
 </div>
