@@ -144,7 +144,6 @@ form==#|html|
         cursor: pointer;
     }
     .test {
-        all:unset;
         width: 100%;
         height: 400px;
     }
