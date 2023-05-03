@@ -157,7 +157,7 @@ f"""<!-- generated with Python script : graph_utils.gen_graph_html_plotly -->
     div.graph_container {{ all: unset; width: {width} ;height: {height}; }}
 </style>
 {SCRIPT_IMPORT if include_script_import else ''}
-<div class="graph_container" style="display:flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;align-items: center;">
+<div class="graph_container" style="all:unset;width:{width};height:{height};display:flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;align-items: center;">
     <div style="width:40%; height:100%;">
         {pie_chart}
     </div>
