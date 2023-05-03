@@ -143,10 +143,6 @@ form==#|html|
     .c_btn {
         cursor: pointer;
     }
-    .plotly-graph-div {
-        display: flex !important;
-        background-color: red !important;
-    }
     .test {
         width: 100%;
         height: 400px;
