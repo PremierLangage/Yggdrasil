@@ -134,7 +134,8 @@ form==#|html|
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: light-grey;    }
+        background-color: light-grey;
+    }
     .graph {
         border: 2px outset #d4d4d4;
     }
