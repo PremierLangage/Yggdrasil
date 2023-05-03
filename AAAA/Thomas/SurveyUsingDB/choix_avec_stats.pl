@@ -145,6 +145,7 @@ form==#|html|
     }
     .plotly-graph-div {
         display: flex;
+        background-color: red;
     }
     .test {
         width: 100%;
