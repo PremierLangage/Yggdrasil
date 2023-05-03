@@ -55,7 +55,7 @@ import os, sys, time
 os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib-ogs20b_w"
 
 from database_utils import get_session, Base, Response
-from graph_utils import generate_html_plotly, generate_html_matplotlib
+from graph_utils import gen_graph_html_plotly
 import json, mpld3
 from mpld3 import plugins
 
