@@ -137,6 +137,7 @@ form==#|html|
         background-color: light-grey;
     }
     .graph {
+        all:unset;
         border: 2px outset #d4d4d4;
     }
     .c_btn {
