@@ -144,7 +144,6 @@ form==#|html|
         cursor: pointer;
     }
     .plotly-graph-div {
-        display: flex !important;
     }
     .test {
         width: 100%;
