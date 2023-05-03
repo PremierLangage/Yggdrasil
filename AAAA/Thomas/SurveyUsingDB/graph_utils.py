@@ -155,9 +155,7 @@ def gen_graph_html_plotly(data : dict, width = "100%", height = "100%", include_
 f"""<!-- generated with Python script : graph_utils.gen_graph_html_plotly -->
 {SCRIPT_IMPORT if include_script_import else ''}
 <div class="graph_container" style="width:{width};height:{height};display:flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;align-items: center;">
-    <div style="width:40%; height:100%;">
         {pie_chart}
-    </div>
     <div style="width:60%; height:100%;">
         {hist_chart}
     </div>
