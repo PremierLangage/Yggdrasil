@@ -124,7 +124,9 @@ def generate_html_plotly(data, full_html=False):
     return html
 
 ## NEW VERSION
-
+# Author : Antonin JEAN
+# Date : 03/05/2023
+#
 import plotly.graph_objs as go
 import plotly.io as pio
 from random import choice
