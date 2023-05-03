@@ -142,10 +142,13 @@ form==#|html|
     }
     .c_btn {
         cursor: pointer;
-
     }
 </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.33.1/plotly.min.js" integrity="sha512-V0j9LhrK9IMNdFYZqh+IqU4cjo7wdxyHNyH+L0td4HryBuZ7Oq6QxP2/CWr6TituX31+gv5PnolvERuTbz8UNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <div class="test">
+        <div>{{  radio[0].question|safe }}</div>
+        <div class="graph"> {{ graphs[0]|safe }} </div>  
+    </div>
     {% for i in range(NUMBER_QUESTIONS) %}
         <div class="answer">
             <div>{{  radio[i].question|safe }}</div>
