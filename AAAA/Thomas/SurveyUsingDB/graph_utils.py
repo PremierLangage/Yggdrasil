@@ -122,3 +122,53 @@ def generate_html_plotly(data, full_html=False):
     </div>
     '''
     return html
+
+## NEW VERSION :
+
+import plotly.graph_objs as go
+import plotly.io as pio
+from random import choice
+
+SCRIPT_IMPORT = '<!-- SCRIPT INCLUSION DEFAULT SET BY PYTHON SCRIPT, can be disabled with include_script_import=False -->\n<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.33.1/plotly.min.js" integrity="sha512-V0j9LhrK9IMNdFYZqh+IqU4cjo7wdxyHNyH+L0td4HryBuZ7Oq6QxP2/CWr6TituX31+gv5PnolvERuTbz8UNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><div>'
+
+def gen_graph_plotly(data : dict, width = "100%", height = "100%", include_script_import=True):
+    values  = list(data.values())
+    labels    = list(data.keys())
+    # ---------------------------
+
+    pie_trace = go.Pie(labels=labels, values=values)
+    pie_layout = go.Layout(title='Répartition des votes')
+    pie_fig = go.Figure(data=[pie_trace], layout=pie_layout)
+    pie_chart = pio.to_html(pie_fig, include_plotlyjs=False, full_html=False)
+
+    data_distri = []
+    for d in labels: data_distri += [d] * data[d]
+    # Utilisation de Plotly pour créer un histogramme
+    hist_trace = go.Histogram(x=data_distri)
+    hist_layout = go.Layout(title='Distribution des réponses')
+    hist_fig = go.Figure(data=[hist_trace], layout=hist_layout)
+    hist_chart = pio.to_html(hist_fig, include_plotlyjs=False, full_html=False)
+
+    return \
+f"""<!-- generated with Python script : graph_generator -->
+<style>
+    div.graph_container {{width: {width} ;height: {height};}}
+</style>
+{SCRIPT_IMPORT if include_script_import else ''}
+<div class="graph_container" style="display:flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;align-items: center;">
+    <div style="width:40%">
+        {pie_chart}
+    </div>
+    <div style="width:60%">
+        {hist_chart}
+    </div>
+</div>
+"""
+
+
+if __name__ == '__main__':
+    # You can test the program with 'output.html' file
+    # examples datas
+    data = {f"value {i}" : i for i in range(5)}
+    with open("output.html", "w") as file:
+        file.write(gen_html(data))
