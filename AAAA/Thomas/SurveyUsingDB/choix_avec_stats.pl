@@ -77,7 +77,7 @@ if user__role == "teacher" :
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
     # GRAPH GENERATION
-    graphs = [gen_graph_html_plotly(data[i], include_script_import=False) for i in range(NUMBER_QUESTIONS)]
+    graphs = [gen_graph_html_plotly(data[i], include_script_import=True) for i in range(NUMBER_QUESTIONS)]
     # ----------------
 with get_session(table_class= Response, base=Base) as session:
     answer = session.query(Response).filter(Response.student_id == user__id).first()
