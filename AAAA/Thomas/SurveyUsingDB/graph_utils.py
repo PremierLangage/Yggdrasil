@@ -154,7 +154,7 @@ def gen_graph_html_plotly(data : dict, width = "100%", height = "100%", include_
     return \
 f"""<!-- generated with Python script : graph_utils.gen_graph_html_plotly -->
 <style>
-    div.graph_container {{width: {width} ;height: {height};}}
+    div.graph_container {{ all: inherit; width: {width} ;height: {height}; }}
 </style>
 {SCRIPT_IMPORT if include_script_import else ''}
 <div class="graph_container" style="display:flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;align-items: center;">
