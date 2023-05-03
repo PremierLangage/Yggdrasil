@@ -144,8 +144,8 @@ form==#|html|
         cursor: pointer;
     }
     .plotly-graph-div {
-        display: flex;
-        background-color: red;
+        display: flex !important;
+        background-color: red !important;
     }
     .test {
         width: 100%;
