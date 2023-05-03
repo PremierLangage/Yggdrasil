@@ -149,6 +149,7 @@ form==#|html|
         <div>{{  radio[0].question|safe }}</div>
         <div class="graph"> {{ graphs[0]|safe }} </div>  
     </div>
+    
     {% for i in range(NUMBER_QUESTIONS) %}
         <div class="answer">
             <div>{{  radio[i].question|safe }}</div>
