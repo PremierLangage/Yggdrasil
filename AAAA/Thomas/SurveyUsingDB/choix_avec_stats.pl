@@ -79,6 +79,9 @@ if user__role == "teacher" :
     # GRAPH GENERATION
     graphs = [gen_graph_html_plotly(data[i], include_script_import=True) for i in range(NUMBER_QUESTIONS)]
     # ----------------
+    graphs= list(map(lambda x : f"""
+    """))
+
 with get_session(table_class= Response, base=Base) as session:
     answer = session.query(Response).filter(Response.student_id == user__id).first()
 
@@ -91,6 +94,9 @@ for i in range(len(QUESTIONS)):
         tmp.items.append({ "id": j+1, "content": item })
     globals()[str(i)] = tmp
     radio.append(vars(tmp))
+
+
+
 ==
 
 form==#|html|
