@@ -96,7 +96,7 @@ if user__role == "teacher" :
     for i in range(len(graphs)):
         graphContent += f"""
         <div class="answer">
-            <div>{ radio[i].question }</div>
+            <div>{ radio[i]['question'] }</div>
             <div class="graph"> { graphs[i] } </div>
         </div>
         """
