@@ -63,6 +63,19 @@ QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
 print(QUESTIONS, file=sys.stderr)
 NUMBER_QUESTIONS = len(QUESTIONS)
 
+with get_session(table_class= Response, base=Base) as session:
+    answer = session.query(Response).filter(Response.student_id == user__id).first()
+
+radio = []
+for i in range(len(QUESTIONS)):
+    tmp = RadioGroup(cid=str(i))
+    tmp.question = QUESTIONS[i]
+    tmp.items = []
+    for j, item in enumerate(items.splitlines()):        
+        tmp.items.append({ "id": j+1, "content": item })
+    globals()[str(i)] = tmp
+    radio.append(vars(tmp))
+
 
 if user__role == "teacher" :
     with get_session(table_class= Response, base=Base) as session:
@@ -80,21 +93,15 @@ if user__role == "teacher" :
     graphs = [gen_graph_html_plotly(data[i], include_script_import=True) for i in range(NUMBER_QUESTIONS)]
     # ----------------
     graphContent = '<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.33.1/plotly.min.js" integrity="sha512-V0j9LhrK9IMNdFYZqh+IqU4cjo7wdxyHNyH+L0td4HryBuZ7Oq6QxP2/CWr6TituX31+gv5PnolvERuTbz8UNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>\n'
+    for i in range(len(graphs)):
+        graphContent += f"""
+        <div class="answer">
+            <div>{ radio[i].question }</div>
+            <div class="graph"> { graphs[i] } </div>
+        </div>
+        """
 
 
-
-with get_session(table_class= Response, base=Base) as session:
-    answer = session.query(Response).filter(Response.student_id == user__id).first()
-
-radio = []
-for i in range(len(QUESTIONS)):
-    tmp = RadioGroup(cid=str(i))
-    tmp.question = QUESTIONS[i]
-    tmp.items = []
-    for j, item in enumerate(items.splitlines()):        
-        tmp.items.append({ "id": j+1, "content": item })
-    globals()[str(i)] = tmp
-    radio.append(vars(tmp))
 
 
 
