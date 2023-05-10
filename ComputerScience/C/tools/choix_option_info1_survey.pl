@@ -94,10 +94,10 @@ choix2 = str(group2.items[group2.selection]['content'])
 choix3 = str(group3.items[group3.selection]['content']) 
 
 if choix1 == choix2 or choix2 == choix3 or choix1 == choix3 :
-    grade = 0
+    score = 0
     feedback = " vous devez classer vos choix "
 else:
-    grade = 100
+    score = 100
     feedback += vos_choix
 grade = (score, feedback)
 ==
