@@ -1,7 +1,6 @@
 
 
 
-@ /AAAA/Thomas/SurveyUsingDB/database_utils.py 
 
 extends= choixsurvey.pl
 
