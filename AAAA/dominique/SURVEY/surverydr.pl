@@ -3,7 +3,6 @@ extends= choixsurvey.pl
 
 
 
-
 question1=<b>Quel est votre premier choix d'option ?</b>
 
 question2=<b>Quel est votre second choix d'option ?</b>
