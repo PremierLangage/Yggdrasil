@@ -105,14 +105,11 @@ form==#|html|
     .mpld3-xaxis { display: none !important; }
 </style>
 
-
-{% if user__role == "teacher" %}
-
-    {{graphs|safe}}
-    <br>
-    <br>
-    <input type="button" id="dwn-btn" value="Téléchargement des choix des élèves"/>
-    <script>
+{{graphs|safe}}
+<br>
+<br>
+<input type="button" id="dwn-btn" value="Téléchargement des choix des élèves"/>
+<script>
 function download(filename, text) {
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -134,20 +131,7 @@ document.getElementById("dwn-btn").addEventListener("click", function(){
     
     download(filename, text);
 }, false);
-    </script>
-{% else %}
-    {% if answer != None %}
-        <span class="success-state">Vous avez déjà répondu à ce sondage</span>
-    {% else %}
-        {% for r in radio %}
-            {{ r.question|safe }}
-
-            {{ r|component }}
-
-        {% endfor %}
-    {% endif %}
-{% endif %}
-
+</script>
 ==
 
 
