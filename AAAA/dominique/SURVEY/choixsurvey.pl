@@ -15,7 +15,7 @@
 #*****************************************************************************
 
 
-extends= /AAAA/Thomas/SurveyUsingDB/imports.pl
+extends= /AAAA/Thomas/SurveyUsingDB/import.pl
 
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
