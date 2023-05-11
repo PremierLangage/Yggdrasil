@@ -39,11 +39,11 @@ question_a=<b>Deuxième exemple</b>
 # Possibilité de réponses aux questions:
 # Doivent être uniques
 items==
-Choix exemple 1
-Choix exemple 2
-Choix exemple 3
-Choix exemple 4
-Choix exemple 5
+pas du tout d'accord 
+pas d'accord
+sans option
+d'accord
+tout à fait d'accord
 ==
 
 ############################################
