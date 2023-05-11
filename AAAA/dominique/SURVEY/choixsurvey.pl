@@ -68,7 +68,7 @@ with get_session(table_class= Response, base=Base) as session:
 radio = []
 for i in range(int(NUMBER_QUESTIONS)):
     tmp = RadioGroup(cid=str(i))
-    tmp.question = globals()["question_"+str(i+1)]
+    tmp.question = globals()["question"+str(i+1)]
     tmp.items = []
     for j, item in enumerate(items.splitlines()):        
         tmp.items.append({ "id": j+1, "content": item })
