@@ -7,6 +7,6 @@ NUMBER_QUESTIONS = len(QUESTIONS)
 HAS_ANSWERED = False
 # ---
 
-
 with get_session(table_class= Response, base=Base) as session:
     HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
+
