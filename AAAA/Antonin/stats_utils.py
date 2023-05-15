@@ -10,6 +10,8 @@ html code that will use chart.js to display itself.
 Contact: ofghanirre@gmail.com
 """
 
+@graph_utils.py
+
 from graph_utils import generer_histogramme, SCRIPT
 from typing import List
 
