@@ -9,7 +9,7 @@ Base = declarative_base()
 
 class Response(Base):
     base = Base
-    __tablename__ = "test_db_student_42" 
+    __tablename__ = "test_db_student_1" 
     id = Column("id", Integer, primary_key=True)
     student_id = Column("student_id", Integer)
     response = Column("response", String)
@@ -18,7 +18,7 @@ class Response(Base):
           return f"{self.student_id} à répondu : {self.response}"
 
 
-class Evalutaion(Base):
+class Evaluation(Base):
     base = Base
     id = Column("id", Integer, primary_key=True)
     parent_id: Mapped[int] = mapped_column(ForeignKey("test_db_student_1.id"))
