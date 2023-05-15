@@ -94,8 +94,9 @@ form==#|html|
 {% if user__role == "teacher" %}
 <style>
 </style>
-
-
+    <div class="graph">
+        {{graphContent|safe}}
+    </div>
     <br>
     <br>
     <div class="exercise__actions text-center">
