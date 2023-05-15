@@ -12,7 +12,7 @@ class StatInput():
         self.data  = data
     
     def generate_graph(self):
-        return generer_histogramme()
+        return generer_histogramme(self.data)
 
 class Stat():
     def __init__(self, data : List[StatInput]):
