@@ -51,7 +51,7 @@ tout à fait d'accord
 ############################################
 
 before==#|python|
-
+import json
 import os, sys, time
 
 from database_utils import get_session, Base, Response
