@@ -86,7 +86,7 @@ if user__role == "teacher":
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
-    print(data[i].items(), file=sys.stderr)
+    print(data[0].items(), file=sys.stderr)
     # GRAPH GENERATION
     statInputs = [StatInput(QUESTIONS[i], data[i].items()) for i in range(NUMBER_QUESTIONS)]
     stat = Stat(statInputs)
