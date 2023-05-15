@@ -17,8 +17,7 @@ class Stat():
         """
         :param data:    list(StatInput), list of data
         """
-        self.questions = [v for q, v in globals().items() if q.startswith("question_")]
-        self.question_amount = len(questions)
+        self.data = data
         self.has_answered = False
         with get_session(table_class= Response, base=Base) as session:
             self.has_answered = (session.query(Response).filter(Response.student_id == user__id).first()) != None
