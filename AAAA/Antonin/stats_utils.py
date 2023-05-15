@@ -11,7 +11,7 @@ class StatInput():
         self.title = title
         self.data  = data
     
-    def generate_graph(self):
+    def generate_graph(self, id : str):
         return generer_histogramme(self.data, generate_hash(title))
 
     def generate_hash(self, name):
@@ -30,5 +30,6 @@ class Stat():
     
     def generate_graph(self):
         result = {};
-        for 
+        for elem in self.data:
+            result
     
