@@ -1,8 +1,9 @@
 from database_utils import get_session, Base, Response
 from graph_utils import gen_graph_html_plotly
+from typing import List
 
 class StatInput():
-    def __init__(self, title: str, data : list):
+    def __init__(self, title: str, data : List[Tuple[str, int]]):
         self.title = title
         self.data  = data
 
