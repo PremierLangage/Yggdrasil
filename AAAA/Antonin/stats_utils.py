@@ -33,7 +33,7 @@ class StatInput():
         return hash(name)
 
 class Stat():
-    def __init__(self, data : list):
+    def __init__(self, data : List[StatInput]):
         """
         :param data:    list[StatInput], list of data
         """
