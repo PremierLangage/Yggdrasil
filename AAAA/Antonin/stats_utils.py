@@ -1,6 +1,10 @@
 from database_utils import get_session, Base, Response
 from graph_utils import gen_graph_html_plotly
 
+
+class Stat():
+    def __init__(self, globals_dict : dict):
+
 # globals
 # Here are defined globals values 
 QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
