@@ -49,7 +49,7 @@ if step != "fin" :
         response={}
         form=f"Ceci est votre critère numéro {step} "+ make_form(listofnames)
     else:
-        #feedback = listeofevals[0][0] +":"+response[listeofevals[0][0]]+"!"
+        feedback = listeofevals[0][0] +":"+response[listeofevals[0][0]]+"!"
         if len(response[listeofevals[0][0]])==0 or response[listeofevals[0][0]]=="fin" :
             # fin de critères 
             # wrapit up
