@@ -104,61 +104,9 @@ form==#|html|
 
 {% if user__role == "teacher" %}
 <style>
-    .mpld3-yaxis { display: none !important; }
-    .mpld3-xaxis { display: none !important; }
-    @keyframes smooth-select {
-        0% {
-            opacity: 1.0;
-        }
-        50% {
-            opacity: 0.8;
-        }
-        100% {
-            opacity: 1.0;
-        }
-    }
-    path.mpld3-path:hover {
-        animation: smooth-select 2s ease-in-out infinite;
-        transform-origin: center !important;
-        margin: 0 auto !important; /* Centrer horizontalement */
-        outline: none !important;
-    }
-    @keyframes load-animation {
-        0% {
-            transform: scale(0.5);
-            opacity: 0;
-        }
-        100% {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-    .mpld3-figure:first-child {
-        animation: load-animation 2s ease-in-out;
-    }
-    .answer {
-        /display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: light-grey;
-    }
-    .graph {
-        all:inherit;
-        border: 2px outset #d4d4d4;
-    }
-    .c_btn {
-        cursor: pointer;
-    }
-    .plotly-graph-div {
-    }
-
-
 </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.33.1/plotly.min.js" integrity="sha512-V0j9LhrK9IMNdFYZqh+IqU4cjo7wdxyHNyH+L0td4HryBuZ7Oq6QxP2/CWr6TituX31+gv5PnolvERuTbz8UNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <div style="height:{{500*NUMBER_QUESTIONS}}px; overflow:auto; overflow-y: hidden; overflow-x: hidden;">
-        <iframe style="all:unset;width:100%;height:100%;" srcdoc='{{graphContent}}'></iframe>
-    </div>
+
+
     <br>
     <br>
     <div class="exercise__actions text-center">
