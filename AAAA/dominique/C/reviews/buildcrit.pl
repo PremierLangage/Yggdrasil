@@ -56,7 +56,7 @@ else:
 
         ledico['platon_crit'+str(step)]= make_dict(response,[name[0] for name in listofnames])
         response={}
-        form=make_form(listofnames)
+        form=f"Ceci est votre critère numéro {step} "+make_form(listofnames)
 
 grade=(0,feedback)
 
