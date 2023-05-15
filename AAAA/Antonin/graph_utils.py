@@ -32,17 +32,17 @@ def generer_histogramme(votes : list, question = str) -> str:
             'borderWidth': 1
         }]
     }
-
+    
     # Convertir les données en JSON
     donnees_json = json.dumps(donnees)
 
     # Générer le code HTML et JavaScript correspondant à l'histogramme
     html = f'''
-        <canvas id="histogramme"></canvas>
+        <canvas id="histogramme-{hash(question)}"></canvas>
         <script>
             document.addEventListener('DOMContentLoaded', function() {{
                 var donnees = {donnees_json};
-                var ctx = document.getElementById('histogramme').getContext('2d');
+                var ctx = document.getElementById('histogramme-{hash(question)}').getContext('2d');
                 new Chart(ctx, {{
                     type: 'bar',
                     data: donnees,
@@ -57,8 +57,6 @@ def generer_histogramme(votes : list, question = str) -> str:
                 }});
             }});
         </script>
-    </body>
-    </html>
     '''
 
     return html
