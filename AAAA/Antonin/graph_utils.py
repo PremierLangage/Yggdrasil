@@ -10,7 +10,7 @@ Contact: ofghanirre@gmail.com
 """
 
 import json
-from typing import List, Tuple
+from typing import Tuple
 
 # Globals
 SCRIPT = '<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>'
@@ -25,7 +25,7 @@ def count_occurences(votes : list) -> dict:
             occurrences[vote] = 1
     return occurrences
 
-def generate_histogram_data(votes : list) -> tuple(list, list):
+def generate_histogram_data(votes : list) -> Tuple[list, list]:
     occurrences = count_occurences(votes)
     return list(occurrences.keys()), list(occurrences.values())
 
