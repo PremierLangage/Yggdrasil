@@ -189,16 +189,12 @@ form==#|html|
         }, false);
     </script>
 {% else %}
-    {% if False and answer != None %}
-        <span class="success-state">Vous avez déjà répondu à ce sondage</span>
-    {% else %}
         {% for r in radio %}
             {{ r.question|safe }}
 
             {{ r|component }}
 
         {% endfor %} 
-    {% endif %}
 {% endif %}
 
 ==
