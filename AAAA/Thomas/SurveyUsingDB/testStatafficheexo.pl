@@ -51,6 +51,10 @@ from graph_utils import gen_graph_html_plotly
 import json, mpld3
 from mpld3 import plugins
 
+
+Response.__tablename__ = "__tablename__1"
+
+
 QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
 print(QUESTIONS, file=sys.stderr)
 NUMBER_QUESTIONS = len(QUESTIONS)
