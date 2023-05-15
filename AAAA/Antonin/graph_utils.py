@@ -1,5 +1,9 @@
 import json
 
+# Globals
+script = '<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>'
+# ---
+
 def count_occurences(votes : list) -> dict:
     occurrences = {}
     for vote in votes:
