@@ -74,7 +74,7 @@ for i in range(len(QUESTIONS)):
 
 with get_session(table_class= Response, base=Base) as session:
         doit = len( session.query(Response.value).all())
-
+doit = 12
 if doit > 6  :
     with get_session(table_class= Response, base=Base) as session:
         answers = session.query(Response.value).all()
