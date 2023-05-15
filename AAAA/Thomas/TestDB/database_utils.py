@@ -9,7 +9,7 @@ Base = declarative_base()
 
 class Response(Base):
     base = Base
-    __tablename__ = "test_db_student_1" 
+    __tablename__ = "test_db_student_42" 
     id = Column("id", Integer, primary_key=True)
     student_id = Column("student_id", Integer)
     response = Column("response", String)
