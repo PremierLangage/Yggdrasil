@@ -1,4 +1,4 @@
-from graph_utils import generer_histogramme
+from graph_utils import generer_histogramme, SCRIPT
 from typing import List, Tuple
 
 class StatInput():
@@ -27,3 +27,5 @@ class Stat():
     def get_graph(self):
         return self.graph
     
+    def get_graph_as_html(self, containsScript = False):
+        graphs = '\n'.joint(self.get_graph)
