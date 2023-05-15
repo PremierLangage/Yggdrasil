@@ -28,4 +28,5 @@ class Stat():
         return self.graph
     
     def get_graph_as_html(self, containsScript = False):
-        graphs = '\n'.join(self.get_graph)
+        result = (SCRIPT if containsScript else '') + '\n'
+        result += '\n'.join(self.get_graph)
