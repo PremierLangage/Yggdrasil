@@ -14,17 +14,7 @@ title= dummy title
 
 # Ecrire un énoncé ici
 text ==
-Vous pouvez définir des questions au format suivant : `question_X`
-
-Où X est un identifiant se devant d'être unique et n'ayant aucune incidence dans la suite du code.
-
----
-
-<u>exemples :</u>
-
-> **question_1**=`<b>première question</b>`
-
-> **question_a**=`<b>deuxième question</b>`
+Mardre a ce qui le lira 
 ==
 
 # Vous pouvez définir des questions au format suivant : question_X
