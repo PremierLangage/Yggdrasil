@@ -71,7 +71,7 @@ for i in range(len(QUESTIONS)):
     radio.append(vars(tmp))
 
 
-if user__role == "teacher" :
+if user__role == "teacher":
     with get_session(table_class= Response, base=Base) as session:
         answers = session.query(Response.value).all()
     
