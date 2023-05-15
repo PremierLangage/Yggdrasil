@@ -14,6 +14,9 @@ class StatInput():
 
 class Stat():
     def __init__(self, data : List[StatInput]):
+        """
+        :param data:    list(tuple(str, int)), list of couple key, amount of value
+        """
         self.questions = [v for q, v in globals().items() if q.startswith("question_")]
         self.question_amount = len(questions)
         self.has_answered = False
