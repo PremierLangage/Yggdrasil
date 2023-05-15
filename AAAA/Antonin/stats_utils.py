@@ -3,7 +3,8 @@ from graph_utils import gen_graph_html_plotly
 
 class StatInput():
     def __init__(self, title: str, data : list):
-        
+        self.title = title
+        self.data  = data
 
 class Stat():
     def __init__(self, question_data):
