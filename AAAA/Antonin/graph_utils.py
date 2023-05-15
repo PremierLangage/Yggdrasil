@@ -10,7 +10,8 @@ def count_occurences(votes : list) -> dict:
     return occurrences
 
 def generate_histogram_data(votes : list) -> tuple(list, list):
-
+    occurrences = count_occurences(votes)
+    return list(occurrences.keys()), list(occurrences.values())
 
 def generer_histogramme(votes):
     # Compter les occurrences de chaque vote
