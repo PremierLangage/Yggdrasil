@@ -9,7 +9,6 @@ Currently only being able to generate histograms
 Contact: ofghanirre@gmail.com
 """
 
-import json
 from typing import Tuple
 
 # Globals
