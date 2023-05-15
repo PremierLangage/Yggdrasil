@@ -89,6 +89,8 @@ if user__role == "teacher":
     # GRAPH GENERATION
     statInputs = [StatInput(QUESTIONS[i], data[i].items()) for i in range(NUMBER_QUESTIONS)]
     stat = Stat(statInputs)
+    print(stat.get_graph(), file=sys.stderr)
+
     graphContent = stat.get_graph_as_html(containsScript=True)
     print(graphContent, file=sys.stderr)
 ==
