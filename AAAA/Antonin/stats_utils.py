@@ -1,5 +1,4 @@
 from graph_utils import generer_histogramme, SCRIPT
-from typing import List, Tuple
 
 class StatInput():
     def __init__(self, title: str, data : list):
@@ -17,9 +16,9 @@ class StatInput():
         return hash(name)
 
 class Stat():
-    def __init__(self, data : List[StatInput]):
+    def __init__(self, data : list):
         """
-        :param data:    list(StatInput), list of data
+        :param data:    list[StatInput], list of data
         """
         self.data = data
         self.graph = [elem.generate_graph() for elem in self.data]
