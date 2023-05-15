@@ -40,7 +40,7 @@ class Stat():
         self.data = data
         self.graph = [elem.generate_graph() for elem in self.data]
     
-    def get_graph(self):
+    def get_graph(self) -> List[str]:
         return self.graph
     
     def get_graph_as_html(self, containsScript = False):
