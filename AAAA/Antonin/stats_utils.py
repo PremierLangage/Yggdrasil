@@ -1,6 +1,6 @@
 from database_utils import get_session, Base, Response
 from graph_utils import gen_graph_html_plotly
-from typing import List
+from typing import List, Tuple
 
 class StatInput():
     def __init__(self, title: str, data : List[Tuple[str, int]]):
