@@ -22,8 +22,8 @@ class Stat():
         :param data:    list(StatInput), list of data
         """
         self.data = data
-        self.graph = []
+        self.graph = [elem.generate_graph() for elem in self.data]
     
-    def generate_graph(self):
-        return [elem.generate_graph() for elem in self.data]
+    def get_graph(self):
+        return self.graph
     
