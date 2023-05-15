@@ -17,7 +17,7 @@ def generate_histogram_data(votes : list) -> tuple(list, list):
     occurrences = count_occurences(votes)
     return list(occurrences.keys()), list(occurrences.values())
 
-def generer_histogramme(votes : list) -> str:
+def generer_histogramme(votes : list, question = str) -> str:
     # Extraire les valeurs
     valeurs, frequences = generate_histogram_data(votes)
 
@@ -38,15 +38,7 @@ def generer_histogramme(votes : list) -> str:
 
     # Générer le code HTML et JavaScript correspondant à l'histogramme
     html = f'''
-    <html>
-    <head>
-        <title>Histogramme des votes</title>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    </head>
-    <body>
-        <h1>Histogramme des votes</h1>
         <canvas id="histogramme"></canvas>
-
         <script>
             document.addEventListener('DOMContentLoaded', function() {{
                 var donnees = {donnees_json};
