@@ -1,5 +1,5 @@
 from database_utils import get_session, Base, Response
-from graph_utils import gen_graph_html_plotly
+from graph_utils import generer_histogramme
 from typing import List, Tuple
 
 class StatInput():
