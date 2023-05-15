@@ -10,6 +10,7 @@ Contact: ofghanirre@gmail.com
 """
 
 import json
+from typing import List, Tuple
 
 # Globals
 SCRIPT = '<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>'
