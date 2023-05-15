@@ -51,8 +51,8 @@ tout à fait d'accord
 ############################################
 
 before==#|python|
-import json
-import os, sys, time
+
+import os, sys, time, json
 
 from database_utils import get_session, Base, Response
 from stats_utils import Stat, StatInput
