@@ -59,7 +59,6 @@ os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib-ogs20b_w"
 from database_utils import get_session, Base, Response
 from graph_utils import gen_graph_html_plotly
 import json, mpld3
-from mpld3 import plugins
 
 QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
 print(QUESTIONS, file=sys.stderr)
