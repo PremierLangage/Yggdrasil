@@ -94,7 +94,6 @@ if user__role == "teacher":
 ==
 
 form==#|html|
-
 {% if user__role == "teacher" %}
 <style>
 </style>
