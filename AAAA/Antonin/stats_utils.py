@@ -11,6 +11,7 @@ class StatInput():
         """
         self.title = title
         self.data  = data
+        self.graph = []
 
 class Stat():
     def __init__(self, data : List[StatInput]):
