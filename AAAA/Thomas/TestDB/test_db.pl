@@ -39,7 +39,7 @@ text==
 {{blabla}}
 </br>
 </br>
-Le dernier étudiant à dit : {{last_user_response}}
+Le dernier étudiant {{last_user}} à dit : {{last_user_response}}
 ==
 
 form==
