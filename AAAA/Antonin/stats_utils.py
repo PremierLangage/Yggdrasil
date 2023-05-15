@@ -3,7 +3,12 @@ from graph_utils import gen_graph_html_plotly
 from typing import List, Tuple
 
 class StatInput():
+
     def __init__(self, title: str, data : List[Tuple[str, int]]):
+        """
+        @param title : str name of the graph
+        @param data  : List[Tuple[str, int]] : list of couple key, amount of value
+        """
         self.title = title
         self.data  = data
 
