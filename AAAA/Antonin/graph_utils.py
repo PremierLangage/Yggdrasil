@@ -1,3 +1,13 @@
+"""
+Author : Antonin JEAN
+Date : 15/05/2023
+-*-
+Handles the graph generation using chart.js
+Currently only being able to generate histograms
+
+Contact: ofghanirre@gmail.com
+"""
+
 import json
 
 # Globals
