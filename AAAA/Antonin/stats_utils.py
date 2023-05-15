@@ -1,3 +1,8 @@
+"""
+Author : Antonin JEAN
+Date : 15/05/2023
+"""
+
 from graph_utils import generer_histogramme, SCRIPT
 
 class StatInput():
