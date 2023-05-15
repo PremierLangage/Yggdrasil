@@ -10,7 +10,7 @@ def make_form(namelist): # type: (List[(str,str)]) -> str
         title =''
         if len(name[1]) != 0:
             title=f'title="{name[1]}"'
-        
+        form += "<th>Champs</th><th> Valeur </th><th width="50px"></th>"
         if name[0]=='description':
             form += f'<tr><td>{name[0]}</td><td colspan="2"> <textarea id="form_{name[0]}" ></textarea> </td></tr>'
         else:
