@@ -39,24 +39,26 @@ listeofevals=[('titre','Titre du critère'),('description','description du crit�
 
 feedback=str(make_dict(response,[name[0] for name in listofnames]))
 
-if step == 0:
-    ledico =make_dict(response,[name[0] for name in listofnames])
-    listofnames = listeofevals
-    step=1
-    response={}
-    form=make_form(listofnames)
-else:
-    feedback = listeofevals[0][0] +":"+response[listeofevals[0][0]]+"!"
-    if len(response[listeofevals[0][0]])==0 or response[listeofevals[0][0]]=="fin" :
-        # fin de critères 
-        # wrapit up
-        text= str(ledico)
-        form=""
-        grade=(100,"")
-    else:
-        ledico['platon_crit'+str(step)]= make_dict(response,[name[0] for name in listofnames])
+if step != "fin" :
+    if step == 0:
+        ledico =make_dict(response,[name[0] for name in listofnames])
+        listofnames = listeofevals
+        step=1
         response={}
-        form=f"Ceci est votre critère numéro {step} "+make_form(listofnames)
+        form=make_form(listofnames)
+    else:
+        feedback = listeofevals[0][0] +":"+response[listeofevals[0][0]]+"!"
+        if len(response[listeofevals[0][0]])==0 or response[listeofevals[0][0]]=="fin" :
+            # fin de critères 
+            # wrapit up
+            step = "fin"
+            text= str(ledico)
+            form=""
+            grade=(100,"")
+        else:
+            ledico['platon_crit'+str(step)]= make_dict(response,[name[0] for name in listofnames])
+            response={}
+            form=f"Ceci est votre critère numéro {step} "+make_form(listofnames)
 
 grade=(0,feedback)
 
