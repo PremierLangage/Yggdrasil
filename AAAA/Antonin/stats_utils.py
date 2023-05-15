@@ -2,6 +2,7 @@ from database_utils import get_session, Base, Response
 from graph_utils import gen_graph_html_plotly
 
 # globals
+# Here are defined globals values 
 QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
 NUMBER_QUESTIONS = len(QUESTIONS)
 HAS_ANSWERED = False
