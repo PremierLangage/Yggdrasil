@@ -1,6 +1,6 @@
 import json
 
-def count_occurences(votes : list):
+def count_occurences(votes : list) -> dict:
     occurrences = {}
     for vote in votes:
         if vote in occurrences:
@@ -8,6 +8,9 @@ def count_occurences(votes : list):
         else:
             occurrences[vote] = 1
     return occurrences
+
+def generate_histogram_data(votes : list) -> tuple(list, list):
+
 
 def generer_histogramme(votes):
     # Compter les occurrences de chaque vote
