@@ -34,7 +34,7 @@ Où X est un identifiant se devant d'être unique et n'ayant aucune incidence da
 # question_a=<b>deuxième question</b>
 question_1=<b>La palteforme est excellente</b>
 question_a=<b>Je pense utilise la plateforme dans l'avenir proche</b>
-question_a=<b>Quoi?</b>
+question_b=<b>Quoi?</b>
 
 
 
