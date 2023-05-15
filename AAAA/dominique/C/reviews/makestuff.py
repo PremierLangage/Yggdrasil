@@ -5,7 +5,7 @@
 
 
 def make_form(namelist): # type: (List[(str,str)]) -> str
-    form = '<table style="border-spacing: 3px; border-collapse: separate;" width="100%" >'
+    form = '<table style="border-spacing: 3px; border-collapse: separate; width:100%" >'
     for name in namelist:
         title =''
         if len(name[1]) != 0:
