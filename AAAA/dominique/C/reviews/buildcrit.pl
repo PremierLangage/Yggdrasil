@@ -48,14 +48,14 @@ if step != "fin" :
         text= str(ledico)
         form=f"Ceci est votre critère numéro {step} "+ make_form(listofnames)
     else:
-        feedback = listeofevals[0][0] +":"+response[listeofevals[0][0]]+"!"
+        #feedback = listeofevals[0][0] +":"+response[listeofevals[0][0]]+"!"
         if len(response[listeofevals[0][0]])==0 or response[listeofevals[0][0]]=="fin" :
             # fin de critères 
             # wrapit up
             step = "fin"
             text= str(ledico)
             form=""
-            grade=(100,"")
+            grade=(100,"") 
         else:
             ledico['platon_crit'+str(step)]= make_dict(response,[name[0] for name in listofnames])
             response={}
