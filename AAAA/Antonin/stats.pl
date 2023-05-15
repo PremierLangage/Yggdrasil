@@ -58,7 +58,7 @@ QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
 NUMBER_QUESTIONS = len(QUESTIONS)
 
 with get_session(table_class= Response, base=Base) as session:
-    ANSWER = session.query(Response).filter(Response.student_id == user__id).first()
+    HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
 
 radio = []
 for i in range(len(QUESTIONS)):
