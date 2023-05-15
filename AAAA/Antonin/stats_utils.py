@@ -1,6 +1,13 @@
 """
 Author : Antonin JEAN
 Date : 15/05/2023
+
+-*-
+Handles the stat generation through the class Stat, the latter, after
+being initialized with a list of data, can be used to generate proper
+html code that will use chart.js to display itself.
+
+Contact: ofghanirre@gmail.com
 """
 
 from graph_utils import generer_histogramme, SCRIPT
