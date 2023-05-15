@@ -12,7 +12,10 @@ class StatInput():
         self.data  = data
     
     def generate_graph(self):
-        return generer_histogramme(self.data)
+        return generer_histogramme(self.data, generate_hash(title))
+
+    def generate_hash(self, name):
+        return hash(name)
 
 class Stat():
     def __init__(self, data : List[StatInput]):
@@ -29,5 +32,3 @@ class Stat():
         result = {};
         for 
     
-    def generate_hash(self, name):
-        return hash(name)
