@@ -106,7 +106,7 @@ if user__role == "teacher" :
 
 form==#|html|
 
-{% if user__role == "teacher" %}
+{% if user__role != "teacher" %}
 <style>
     .mpld3-yaxis { display: none !important; }
     .mpld3-xaxis { display: none !important; }
