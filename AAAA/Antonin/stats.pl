@@ -52,7 +52,7 @@ before==#|python|
 import os, sys, time
 
 from database_utils import get_session, Base, Response
-from graph_utils import Stat, Stat_input
+from graph_utils import Stat, StatInput
 
 QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
 NUMBER_QUESTIONS = len(QUESTIONS)
