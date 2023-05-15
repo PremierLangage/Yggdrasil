@@ -24,6 +24,8 @@ def make_dict(response, namelist):
         d[name] = response.get(name, "<not used>")
         if d[name] == '':
             d[name] = "<not used>"
+        else:
+            d[name] = f"<{d[name]}>"
     return d
 
 def streval(response, namelist):
