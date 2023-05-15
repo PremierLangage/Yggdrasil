@@ -197,7 +197,7 @@ form==#|html|
 
             {{ r|component }}
 
-        {% endfor %}
+        {% endfor %} 
     {% endif %}
 {% endif %}
 
