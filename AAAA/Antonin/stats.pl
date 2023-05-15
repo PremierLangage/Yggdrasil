@@ -52,7 +52,7 @@ before==#|python|
 import os, sys, time
 
 from database_utils import get_session, Base, Response
-from stat_utils import Stat, StatInput
+from graph_utils import Stat, Stat_input
 
 QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
 NUMBER_QUESTIONS = len(QUESTIONS)
@@ -84,7 +84,7 @@ if user__role == "teacher":
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
     # GRAPH GENERATION
-    stats = StatInput(
+    graphs = [gen_graph_html_plotly(data[i], include_script_import=True) for i in range(NUMBER_QUESTIONS)]
     # ----------------
     graphContent = '<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.33.1/plotly.min.js" integrity="sha512-V0j9LhrK9IMNdFYZqh+IqU4cjo7wdxyHNyH+L0td4HryBuZ7Oq6QxP2/CWr6TituX31+gv5PnolvERuTbz8UNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>\n'
     for i in range(len(graphs)):
