@@ -3,14 +3,16 @@ from graph_utils import generer_histogramme
 from typing import List, Tuple
 
 class StatInput():
-
-    def __init__(self, title: str, data : List[Tuple[str, int]]):
+    def __init__(self, title: str, data : list):
         """
         :param title:   str, name of the graph
         :param data:    list(tuple(str, int)), list of couple key, amount of value
         """
         self.title = title
         self.data  = data
+    
+    def generate_graph(self):
+        return generer_histogramme()
 
 class Stat():
     def __init__(self, data : List[StatInput]):
@@ -25,6 +27,7 @@ class Stat():
     
     def generate_graph(self):
         result = {};
+        for 
     
     def generate_hash(self, name):
         return hash(name)
