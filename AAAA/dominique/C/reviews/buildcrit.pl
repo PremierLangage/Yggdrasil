@@ -45,7 +45,8 @@ if step != "fin" :
         listofnames = listeofevals
         step=1
         response={}
-        form=make_form(listofnames)
+        text= str(ledico)
+        form=f"Ceci est votre critère numéro {step} "+ make_form(listofnames)
     else:
         feedback = listeofevals[0][0] +":"+response[listeofevals[0][0]]+"!"
         if len(response[listeofevals[0][0]])==0 or response[listeofevals[0][0]]=="fin" :
