@@ -1,7 +1,7 @@
 import json
 
 # Globals
-script = '<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>'
+SCRIPT = '<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>'
 # ---
 
 def count_occurences(votes : list) -> dict:
@@ -17,7 +17,7 @@ def generate_histogram_data(votes : list) -> tuple(list, list):
     occurrences = count_occurences(votes)
     return list(occurrences.keys()), list(occurrences.values())
 
-def generer_histogramme(votes : list, question = str) -> str:
+def generer_histogramme(votes : list, id : str) -> str:
     # Extraire les valeurs
     valeurs, frequences = generate_histogram_data(votes)
 
@@ -38,11 +38,11 @@ def generer_histogramme(votes : list, question = str) -> str:
 
     # Générer le code HTML et JavaScript correspondant à l'histogramme
     html = f'''
-        <canvas id="histogramme-{hash(question)}"></canvas>
+        <canvas id="histogramme-{id}"></canvas>
         <script>
             document.addEventListener('DOMContentLoaded', function() {{
                 var donnees = {donnees_json};
-                var ctx = document.getElementById('histogramme-{hash(question)}').getContext('2d');
+                var ctx = document.getElementById('histogramme-{id}').getContext('2d');
                 new Chart(ctx, {{
                     type: 'bar',
                     data: donnees,
