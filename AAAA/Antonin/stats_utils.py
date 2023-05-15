@@ -8,7 +8,7 @@ class StatInput():
         self.data  = data
 
 class Stat():
-    def __init__(self, data : list(StatInput)):
+    def __init__(self, data : List[StatInput]):
         self.questions = [v for q, v in globals().items() if q.startswith("question_")]
         self.question_amount = len(questions)
         self.has_answered = False
