@@ -165,7 +165,6 @@ form==#|html|
     </div>
     <br>
     <br>
-
     <div class="exercise__actions text-center">
         <div class="btn btn-primary c_btn" id="dwn-btn"> 
             <i class="fas fa-download"></i>
