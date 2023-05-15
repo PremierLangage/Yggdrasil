@@ -1,5 +1,5 @@
 
-extends = /model/math/input.pl
+extends = /model/math/input0.pl
 
 checkratsimp = True
 symbol_dict = {'e': E}
