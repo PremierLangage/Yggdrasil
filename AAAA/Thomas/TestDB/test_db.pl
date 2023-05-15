@@ -25,7 +25,8 @@ with get_session(table_class= Response, base=Base, db_url = db_url  , db_name =d
     if not session.query(Response).filter(Response.student_id == 0).all() : 
         session.add(Response(student_id = 0, response = "Salut ! Comment ça va?"))
         session.commit()
-    last_user_response = session.query(Response).order_by(Response.id.desc()).first().response
+    var =session.query(Response).order_by(Response.id.desc()).first()
+    last_user_response, last_user = var.response, var.student_id
 
 del session
 ==
