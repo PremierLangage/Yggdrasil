@@ -24,4 +24,7 @@ class Stat():
         self.graph = []
     
     def generate_graph(self):
-        
+        result = {};
+    
+    def generate_hash(self, name):
+        return hash(name)
