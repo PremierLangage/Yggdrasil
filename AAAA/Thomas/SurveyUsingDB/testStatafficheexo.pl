@@ -109,7 +109,7 @@ if doit < 6  :
 
 form==#|html|
 
-{% if user__role == "teacher" %}
+{% if doit > 6 %}
 <style>
     .mpld3-yaxis { display: none !important; }
     .mpld3-xaxis { display: none !important; }
