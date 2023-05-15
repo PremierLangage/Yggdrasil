@@ -9,7 +9,7 @@ Currently only being able to generate histograms
 Contact: ofghanirre@gmail.com
 """
 
-from json import dumps
+import json
 from typing import Tuple
 
 # Globals
@@ -46,7 +46,7 @@ def generer_histogramme(votes : list, id : str) -> str:
     }
     
     # Convertir les données en JSON
-    donnees_json = dumps(donnees)
+    donnees_json = json.dumps(donnees)
 
     # Générer le code HTML et JavaScript correspondant à l'histogramme
     html = f'''
