@@ -36,4 +36,3 @@ class Stat():
         result += '\n'.join(self.get_graph)
         result = "<!-- end of generated script -->\n"
         return result
-
