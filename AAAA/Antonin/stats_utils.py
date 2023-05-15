@@ -13,6 +13,10 @@ class StatInput():
         return generer_histogramme(self.data, generate_hash(title))
 
     def generate_hash(self, name):
+        """ 
+        Function used to generate hash for graph's UUID. The id are used for HTML 
+        identification to locate div containing the graphs; Thus they must be unique.
+        """
         return hash(name)
 
 class Stat():
