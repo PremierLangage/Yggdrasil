@@ -6,8 +6,8 @@ class StatInput():
 
     def __init__(self, title: str, data : List[Tuple[str, int]]):
         """
-        title : str, name of the graph
-        data  : List[Tuple[str, int]], list of couple key, amount of value
+        :param title:   str, name of the graph
+        :param data:    list(tuple(str, int)), list of couple key, amount of value
         """
         self.title = title
         self.data  = data
