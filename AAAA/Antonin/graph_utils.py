@@ -58,5 +58,4 @@ def generer_histogramme(votes : list, question = str) -> str:
             }});
         </script>
     '''
-
     return html
