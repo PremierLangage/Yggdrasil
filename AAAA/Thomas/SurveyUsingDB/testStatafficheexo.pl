@@ -81,7 +81,7 @@ for i in range(len(QUESTIONS)):
 with get_session(table_class= Response, base=Base) as session:
         doit = len( session.query(Response.value).all())
 
-if user__role == "teacher" :
+if doit < 6  :
     with get_session(table_class= Response, base=Base) as session:
         answers = session.query(Response.value).all()
     
