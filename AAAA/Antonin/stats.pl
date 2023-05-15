@@ -51,17 +51,14 @@ before==#|python|
 
 import os, sys, time
 
-os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib-ogs20b_w"
-
 from database_utils import get_session, Base, Response
 from graph_utils import gen_graph_html_plotly
-import json, mpld3
 
 QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
 NUMBER_QUESTIONS = len(QUESTIONS)
 
 with get_session(table_class= Response, base=Base) as session:
-    answer = session.query(Response).filter(Response.student_id == user__id).first()
+    ANSWER = session.query(Response).filter(Response.student_id == user__id).first()
 
 radio = []
 for i in range(len(QUESTIONS)):
