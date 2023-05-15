@@ -51,6 +51,7 @@ else:
         # fin de critères 
         # wrapit up
         text= str(ledico)
+        form=""
         grade=(100,"")
     else:
 
