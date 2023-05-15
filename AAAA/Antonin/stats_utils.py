@@ -11,7 +11,6 @@ class StatInput():
         """
         self.title = title
         self.data  = data
-        self.graph = []
 
 class Stat():
     def __init__(self, data : List[StatInput]):
@@ -22,5 +21,7 @@ class Stat():
         self.has_answered = False
         with get_session(table_class= Response, base=Base) as session:
             self.has_answered = (session.query(Response).filter(Response.student_id == user__id).first()) != None
-
-
+        self.graph = []
+    
+    def generate_graph(self):
+        
