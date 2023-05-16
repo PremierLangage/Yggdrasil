@@ -90,6 +90,7 @@ formstudent==#|html|
     <b style="color: red">No form Student were defined</b>
     <p>
         Please define a field <code>formstudent</code> into your pl file to define a playable form for student
+        Here is a little cat while you write your thing!
     </p>
 <div class="ascii-animation"><div class="ascii-animation-inner">
 \     /\   /   /\ \     ^^   /   ^^ \     ^^   /   ^^ \     ^^   /   ^^ \     /\   /   /\ \     /\   /   /\ \     /\   /   /\ \     /\   /   /\ \     /\   /   /\ 
