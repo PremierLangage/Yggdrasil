@@ -62,7 +62,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 ############################################
 
-data % {"test1": ([0,1,2,3], [1,2,2,3,3,3]), "test": (["coucou", "test", "a", "rien"], ["coucou", "test", "a", "a"])}
+data % {"test1": [[0,1,2,3], [1,2,2,3,3,3]], "test": [["coucou", "test", "a", "rien"], ["coucou", "test", "a", "a"]]}
 answer_csv="username,firsname,lastname,email,title,statement,grade\\n"
 formstudent==#|html|
 <style>
