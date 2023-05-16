@@ -29,7 +29,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     > **value :** liste valeurs : list
 
-    - __exemple__: 
+    Exemple: 
     
     > ```data % {"test1": [1,2,2,3,3,3], "test": ["coucou", "test", "a", "a"]}```
 
