@@ -20,7 +20,9 @@ class Response(Base):
     email : Mapped[str] = mapped_column(String)
 
     student_id : Mapped[int] = mapped_column(Integer)
-    value : Mapped[Text] = mapped_column(Text)    
+    title : Mapped[str] = mapped_column(String)
+    statement : Mapped[Text] = mapped_column(Text)    
+
     def __repr__(self):
           return f"{self.student_id} à répondu : {self.value}."
 
