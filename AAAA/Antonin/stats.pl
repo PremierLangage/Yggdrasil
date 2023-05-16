@@ -90,6 +90,7 @@ formstudent==#|html|
   }
 }
 </style>
+{{data.items()}}
 <div style="display:flex; flex-direction:column">
     <b style="color: red">No form Student were defined</b>
     <p>
