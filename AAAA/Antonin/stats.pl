@@ -70,6 +70,9 @@ formstudent==#|html|
     }
   }
 }
+.ascii-animation:hover {
+    pointer-events: none;
+}
 
 .ascii-animation-inner {
   width: 162ch;
