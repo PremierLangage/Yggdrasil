@@ -57,7 +57,7 @@ for i in range(len(QUESTIONS)):
 
 if user__role == "teacher":
     entry = { item : 0 for item in items.splitlines()}
-    data = { v : copy(entry) for v in range(NUMBER_QUESTIONS)}
+    data = { v : entry.copy() for v in range(NUMBER_QUESTIONS)}
     answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
     with get_session(table_class= RadioResponse, base=Base) as session:
         answers = session.query(RadioResponse.value).all()
