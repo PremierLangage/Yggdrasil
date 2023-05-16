@@ -50,7 +50,7 @@ tout à fait d'accord
 
 ############################################
 
-data % {"value": [1,1,1,1,2,4,5,2,5,5,5,5]}
+data % {"value": [1,1,1,1,2,4,5,2,5,5,5,5], "test": ["coucou", "test", "a", "b", "a", "coucou"]}
 answer_csv="username,firsname,lastname,email,title,statement,grade\\n"
 formstudent==#|html|
 <div style="display:flex; flex-direction:column">
