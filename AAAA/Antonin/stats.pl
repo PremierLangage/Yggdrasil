@@ -63,12 +63,6 @@ formstudent==#|html|
   overflow: hidden;
   position: relative;
 }
-.ascii-animation:hover {
-    pointer-events: none;
-}
-.ascii-animation::-webkit-scrollbar {
-    display: none;
-}
 
 .ascii-animation-inner {
   width: 162ch;
