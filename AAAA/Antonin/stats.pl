@@ -77,7 +77,7 @@ before==#|python|
 
 before_graph==#|python|
 # GRAPH GENERATION
-print(data, type(data), type(date["value"]), file=sys.stderr)
+print(data, type(data), type(data["value"]), file=sys.stderr)
 statInputs = [StatInput(k, v) for k, v in range(data.items())]
 stat = Stat(statInputs)
 
