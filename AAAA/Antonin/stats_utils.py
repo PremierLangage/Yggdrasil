@@ -14,7 +14,7 @@ from graph_utils import generer_histogramme, SCRIPT
 from typing import List
 
 class StatInput():
-    def __init__(self, title: str, data : list):
+    def __init__(self, title: str, data : list, label : set):
         """
         :param title:   str, name of the graph
         :param data:    list(int), list of values
