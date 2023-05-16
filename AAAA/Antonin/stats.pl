@@ -16,7 +16,9 @@ title= Statistic Activity *Dummy title*
 # Ecrire un énoncé ici
 text ==#|markdown|
 Ici vous pouvez définir une activité intégrant un système de statistiques:
+
 - affichage de graphe représentant les données pour l'enseignant
+
 - récupération des entrées au format csv
 
 ---
