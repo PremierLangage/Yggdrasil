@@ -11,41 +11,19 @@ builder =@ statbefore.py
 author = Thomas Saillard & Antonin Jean
 
 # Ecrire un titre ici
-title= dummy title
+title= Statistic Activity *<Dummy title>*
 
 # Ecrire un énoncé ici
 text ==
-Vous pouvez définir des questions au format suivant : `question_X`
+Ici vous pouvez définir une activité intégrant un système de statistiques:
+- affichage de graphe représentant les données pour l'enseignant
+- récupération des entrées au format csv
 
-Où X est un identifiant se devant d'être unique et n'ayant aucune incidence dans la suite du code.
- 
----
 
-<u>exemples :</u>
-
-> **question_1**=`<b>première question</b>`
-
-> **question_a**=`<b>deuxième question</b>`
-==
-
-# Vous pouvez définir des questions au format suivant : question_X
-# Où X est un identifiant se devant d'être unique et n'ayant aucune
-# incidence dans la suite du code.
-#
-# exemple :
-# question_1=<b>première question</b>
-# question_a=<b>deuxième question</b>
-question_1=<b>première question</b>
-question_a=<b>deuxième question</b>
-
-# Possibilité de réponses aux questions:
-# Doivent être uniques
-items==
-pas du tout d'accord 
-pas d'accord
-sans option
-d'accord
-tout à fait d'accord
+Pour ce faire vous devez définir les variables globales suivantes:
+- data : dictionnaire contenant les données au format : 
+> **key   :** nom graphe : str
+> **value :** liste valeurs : list
 ==
 
 ############################################
