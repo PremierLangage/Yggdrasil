@@ -11,7 +11,7 @@ builder =@ statbefore.py
 author = Thomas Saillard & Antonin Jean
 
 # Ecrire un titre ici
-title= Statistic Activity *Dummy title*
+title= Statistic Activity
 
 # Ecrire un énoncé ici
 text ==#|markdown|
