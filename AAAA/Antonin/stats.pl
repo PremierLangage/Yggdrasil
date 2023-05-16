@@ -63,13 +63,11 @@ formstudent==#|html|
   overflow: hidden;
   position: relative;
 }
-
 .ascii-animation-inner {
   width: 162ch;
   animation: pew-pew 10s steps(18, end) infinite;
   position: relative;
 }
-
 
 @keyframes pew-pew {
   0% {
