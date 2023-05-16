@@ -67,7 +67,7 @@ if user__role == "teacher":
     
     data = dict()
     
-    answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
+    answers_csv = f"username,firsname,lastname,email,title,statement,grade\\n"
 
 
     for answer in answers:
