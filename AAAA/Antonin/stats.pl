@@ -135,6 +135,8 @@ form==#|html|
 </style>
     <code>
         {{data.items()}}
+        <br>
+        {{items.splitlines()}}
     </code>
     <div class="graph">
         <h4><u>Graphiques:</u></h4>
