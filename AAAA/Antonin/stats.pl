@@ -134,7 +134,7 @@ form==#|html|
     }
 </style>
     <code>
-        {{data}}
+        {{data.items()}}
     </code>
     <div class="graph">
         <h4><u>Graphiques:</u></h4>
