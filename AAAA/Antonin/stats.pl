@@ -81,7 +81,7 @@ if user__role == "teacher":
 
 before_graph==
     # GRAPH GENERATION
-    statInputs = [StatInput(i, data[i].items()) for i in range(len(data))]
+    statInputs = [StatInput(i, data[i]) for i in range(len(data))]
     stat = Stat(statInputs)
 
     graphContent = stat.get_graph_as_html(containsScript=True)
@@ -132,16 +132,7 @@ form==#|html|
         }, false);
     </script>
 {% else %}
-    {% if False and answer != None %}
-        <span class="success-state">Vous avez déjà répondu à ce sondage</span>
-    {% else %}
-        {% for r in radio %}
-            {{ r.question|safe }}
-
-            {{ r|component }}
-
-        {% endfor %}
-    {% endif %}
+    {{formstudent|safe}}
 {% endif %}
 ==
 
