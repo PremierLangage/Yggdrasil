@@ -5,7 +5,7 @@ title= Test title
 
 before==#|python|
 
-from "../database_utils" import get_session, Base, RadioResponse
+from database_utils import get_session, Base, RadioResponse
 
 QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
 NUMBER_QUESTIONS = len(QUESTIONS)
