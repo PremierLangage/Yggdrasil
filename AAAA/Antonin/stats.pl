@@ -72,7 +72,7 @@ formstudent==#|html|
 }
 
 .ascii-animation-inner {
-  width: 104ch;
+  width: 126ch;
   animation: pew-pew 5s steps(13, end) infinite alternate;
   position: relative;
 }
@@ -82,7 +82,7 @@ formstudent==#|html|
      left: 0;
   }
   100% {
-     left: -104ch;
+     left: -126ch;
   }
 }
 </style>
@@ -94,8 +94,8 @@ formstudent==#|html|
 <div class="ascii-animation"><div class="ascii-animation-inner">
 \     /\   /   /\ \     ^^   /   ^^ \     ^^   /   ^^ \     ^^   /   ^^ \     /\   /   /\ \     /\   /   /\ \     /\   /   /\ 
  )   ( ') (   ( ') )   (',) (   ('') )   (--) (   (--) )   ('') (   (',) )   ( ') (   ( ') )   ( -) (   ( -) )   ( -) (   ( -)
- (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  ) (  /  )    ) /  ) (  /  )    ) /  ) 
-  \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|  \(__)|    ((__)|  \(__)|    ((__)| 
+ (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  ) 
+  \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|  \(__)|    ((__)|   \(__)|   ((__)| 
 </div></div>
 </div>
 ==
