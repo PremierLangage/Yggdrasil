@@ -42,9 +42,9 @@ if __name__ == "__main__":
     output_json = sys.argv[2]
     
     dic = get_context()
-    test_before_clause('before_stat')
-    test_before_clause('before')
-    test_before_clause('before_graph')
+    test_before_clause('before_stat', dic)
+    test_before_clause('before', dic)
+    test_before_clause('before_graph', dic)
 
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
