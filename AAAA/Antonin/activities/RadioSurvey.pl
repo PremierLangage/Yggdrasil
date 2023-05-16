@@ -29,7 +29,7 @@ if user__role == "teacher":
 ==
 
 formstudent==#|html|
-{% if False and answer != None %}
+{% if False and HAS_ANSWERED != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
     {% else %}
         {% for r in radio %}
