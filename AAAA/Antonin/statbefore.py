@@ -46,7 +46,6 @@ if __name__ == "__main__":
     test_before_clause('before')
     test_before_clause('before_graph')
 
-
     with open(output_json, "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
