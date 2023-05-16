@@ -71,6 +71,7 @@ if int(score) == 100:
             email       = user__email,
             title       = title,
             text        = text,
+            grade       = 
             value       = json.dumps(answer)))
         session.commit()
 else :
