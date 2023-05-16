@@ -41,3 +41,37 @@ formstudent==#|html|
         {% endfor %}
 {% endif %}
 ==
+
+# EVALUATE THE STUDENT ANSWER
+evaluator == #|py|
+from database_utils import get_session, Base, RadioResponse
+import json
+
+score = 100
+feedback = '<span class="success-state">Réponse enregistrée</span>'
+
+answer = {}
+for i, r in enumerate(radio):
+    answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
+
+
+if len(answer) != int(NUMBER_QUESTIONS):
+    score = 0
+
+if int(score) == 100:
+    with get_session(table_class = RadioResponse, base=Base) as session:
+        session.add(
+            RadioResponse(student_id = user__id if user__id else session__id, 
+            username    = user__username,
+            firstname   = user__firstname,
+            lastname    = user__lastname,
+            email       = user__email,
+            title       = title,
+            text        = text,
+            value       = json.dumps(answer)))
+        session.commit()
+else :
+    feedback = '<span class="error-state">Vous ne pouvez pas sélectionner plusieurs fois la même option</span>'
+
+grade = (score, feedback)
+==
