@@ -3,6 +3,41 @@ extends = /AAAA/Antonin/stats.pl
 # Ecrire un titre ici
 title= Test title
 
+# Ecrire un énoncé ici
+text ==
+Vous pouvez définir des questions au format suivant : `question_X`
+
+Où X est un identifiant se devant d'être unique et n'ayant aucune incidence dans la suite du code.
+ 
+---
+
+<u>exemples :</u>
+
+> **question_1**=`<b>première question</b>`
+
+> **question_a**=`<b>deuxième question</b>`
+==
+
+# Vous pouvez définir des questions au format suivant : question_X
+# Où X est un identifiant se devant d'être unique et n'ayant aucune
+# incidence dans la suite du code.
+#
+# exemple :
+# question_1=<b>première question</b>
+# question_a=<b>deuxième question</b>
+question_1=<b>première question</b>
+question_a=<b>deuxième question</b>
+
+# Possibilité de réponses aux questions:
+# Doivent être uniques
+items==
+pas du tout d'accord 
+pas d'accord
+sans option
+d'accord
+tout à fait d'accord
+==
+
 before==#|python|
 
 from database_utils import get_session, Base, RadioResponse
