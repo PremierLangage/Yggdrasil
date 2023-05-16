@@ -133,11 +133,6 @@ form==#|html|
         flex-direction:column;
     }
 </style>
-    <code>
-        {{data.items()}}
-        <br>
-        {{items.splitlines()}}
-    </code>
     <div class="graph">
         <h4><u>Graphiques:</u></h4>
         {{graphContent|safe}}
