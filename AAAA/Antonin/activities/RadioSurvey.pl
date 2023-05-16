@@ -57,14 +57,14 @@ for i in range(len(QUESTIONS)):
 
 if user__role == "teacher":
     labels = items.splitlines()
-    data = { v : [] for v in range(NUMBER_QUESTIONS)}
+    data = { v : [[labels], []] for v in range(NUMBER_QUESTIONS)}
     answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
     with get_session(table_class= RadioResponse, base=Base) as session:
         answers = session.query(RadioResponse.value).all()
  
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
-            data[v].append(k)
+            data[v][1].append(k)
     globals()["data"] = data
 ==
 
