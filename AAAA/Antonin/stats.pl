@@ -29,9 +29,9 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     > **key   :** str : nom graphe
 
-    > **value :** tuple : Couple contenant les labels (valeurs possibles) et les values (valeurs)
+    > **value :** list : Couple contenant les labels (valeurs possibles) et les values (valeurs)
         
-        > **labels :** set : valeurs possibles (seront représentées sur l'histogramme)
+        > **labels :** list : valeurs possibles (seront représentées sur l'histogramme)
 
         > **values :** list : valeurs à afficher dans l'histogramme
 
