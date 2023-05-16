@@ -63,7 +63,7 @@ if user__role == "teacher":
  
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
-            data[v] += [k] * v
+            data[v] += [k,v]
     globals()["data"] = data
 ==
 
