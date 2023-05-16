@@ -123,7 +123,7 @@ before==#|python|
 
 before_graph==#|python|
 # GRAPH GENERATION
-statInputs = [StatInput(k, v) for k, (labels, values) in data.items()]
+statInputs = [StatInput(title, values, labels) for title, (labels, values) in data.items()]
 stat = Stat(statInputs)
 
 graphContent = stat.get_graph_as_html(containsScript=True)
