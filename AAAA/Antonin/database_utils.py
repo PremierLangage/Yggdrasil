@@ -15,7 +15,7 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
         base.metadata.create_all(engine)
     return sessionmaker(bind=engine)()
 
-    
+
 class Response(Base):
     base = Base
     __tablename__ = "test_db_choix_option_6" 
@@ -30,6 +30,3 @@ class Response(Base):
     value : Mapped[Text] = mapped_column(Text)    
     def __repr__(self):
           return f"{self.student_id} à répondu : {self.value}."
-
-
-
