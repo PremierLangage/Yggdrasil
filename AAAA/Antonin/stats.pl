@@ -69,7 +69,6 @@ if user__role == "teacher":
     
     answers_csv = f"username,firsname,lastname,email,title,statement,grade\\n"
 
-
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
