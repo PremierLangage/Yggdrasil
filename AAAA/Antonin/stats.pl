@@ -72,8 +72,8 @@ formstudent==#|html|
 }
 
 .ascii-animation-inner {
-  width: 32ch;
-  animation: pew-pew 1s steps(2, end) infinite alternate;
+  width: 128ch;
+  animation: pew-pew 2s steps(8, end) infinite alternate;
   position: relative;
 }
 
@@ -82,7 +82,7 @@ formstudent==#|html|
      left: 0;
   }
   100% {
-     left: -32ch;
+     left: -128ch;
   }
 }
 </style>
