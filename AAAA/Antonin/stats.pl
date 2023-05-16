@@ -50,7 +50,7 @@ tout à fait d'accord
 
 ############################################
 
-data % {}
+data % {1}
 answer_csv="username,firsname,lastname,email,title,statement,grade\\n"
 formstudent==#|html|
 <div style="display:flex; flex-direction:column">
