@@ -56,6 +56,7 @@ for i in range(len(QUESTIONS)):
     radio.append(vars(tmp))
 
 if user__role == "teacher":
+    labels = items.splitlines()
     data = { v : [] for v in range(NUMBER_QUESTIONS)}
     answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
     with get_session(table_class= RadioResponse, base=Base) as session:
