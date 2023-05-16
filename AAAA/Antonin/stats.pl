@@ -85,7 +85,7 @@ formstudent==#|html|
     <p>
         Please define a field <code>formstudent</code> into your pl file to define a playable form for student
     </p>
-    <i> Here is a little cat while you write your thing ... </i>
+    <i> Here is a little sleepy cat while you write your thing ... </i>
     <div class="ascii-animation">
         <div class="ascii-animation-inner">
 \     /\   /   /\ \     ^^   /   ^^ \     ^^   /   ^^ \     ^^   /   ^^ \     /\   /   /\ \     /\   /   /\ \     /\   /   /\ \     /\   /   /\ \     /\   /   /\ 
