@@ -29,6 +29,8 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     > **value :** liste valeurs : list
 
+    __exemple__: `data % {"test1": [1,1,1,1,2,4,5,2,5,5,5,5], "test": ["coucou", "test", "a", "b", "a", "coucou"]}`
+
 - answer_csv : string représentant le format d'une ligne du csv
 
 - formstudent : block html au format string représentant la partie jouable par un utilisateur lambda
