@@ -1,4 +1,3 @@
-extends = /AAAA/Antonin/stats.pl
 
 # Ecrire un titre ici
 title= Test title
@@ -22,3 +21,5 @@ if user__role == "teacher":
     answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
 
 ==
+
+extends = /AAAA/Antonin/stats.pl
