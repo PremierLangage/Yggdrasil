@@ -125,7 +125,9 @@ form==#|html|
         flex-direction:column;
     }
 </style>
-{{data}}
+    <code>
+        {{data}}
+    </code>
     <div class="graph">
         <h4><u>Graphiques:</u></h4>
         {{graphContent|safe}}
