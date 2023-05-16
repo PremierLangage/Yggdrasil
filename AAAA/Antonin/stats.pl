@@ -35,8 +35,17 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 - `answer_csv` : string représentant le format d'une ligne du csv
 
+
+    Exemple: 
+    
+    > ```answer_csv="username,firsname,lastname,email,title,statement,grade\\n"```
+
 - `formstudent` : block html au format string représentant la partie jouable par un utilisateur lambda
 
+    Exemple: 
+    
+    > ```formstudent==#|html|
+    <h2> Hello World ! </h2>```
 ==
 
 ############################################
