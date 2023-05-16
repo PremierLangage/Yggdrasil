@@ -92,7 +92,8 @@ formstudent==#|html|
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
-
+    top: -5px;
+    left: 105%;
     &:hover {
       visibility: visible;
     }
