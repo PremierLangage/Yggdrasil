@@ -27,9 +27,13 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 - **`data`** : dictionnaire contenant les données au format : 
 
-    > **key   :** nom graphe : str
+    > **key   :** str : nom graphe
 
-    > **value :** liste valeurs : list
+    > **value :** tuple : Couple contenant les labels (valeurs possibles) et les values (valeurs)
+        
+        > **labels :** set : valeurs possibles (seront représentées sur l'histogramme)
+
+        > **values :** list : valeurs à afficher dans l'histogramme
 
     Exemple: 
     
