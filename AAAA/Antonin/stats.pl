@@ -79,25 +79,6 @@ formstudent==#|html|
      left: -162ch;
   }
 }
-
-.tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-    top: -5px;
-    left: 105%;
-    &:hover {
-      visibility: visible;
-    }
-  }
 </style>
 <div style="display:flex; flex-direction:column">
     <b style="color: red">No form Student were defined</b>
@@ -113,7 +94,6 @@ formstudent==#|html|
   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)| 
         </div>
     </div>
-    <span class="tooltiptext">Don't mind it he's sleepy...</span>
 </div>
 ==
 
