@@ -50,10 +50,13 @@ tout à fait d'accord
 
 ############################################
 
+data=dict()
+
+bbefore=
+
 before==#|python|
 
 import os, sys, time, json
-
 from database_utils import get_session, Base, RadioResponse
 from stats_utils import Stat, StatInput
 
@@ -89,6 +92,7 @@ form==#|html|
         flex-direction:column;
     }
 </style>
+{{data}}
     <div class="graph">
         <h4><u>Graphiques:</u></h4>
         {{graphContent|safe}}
