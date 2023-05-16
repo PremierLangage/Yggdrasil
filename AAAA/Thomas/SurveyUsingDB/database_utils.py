@@ -18,21 +18,15 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
 
 class Response(Base):
     base = Base
-    __tablename__ = "test_db_choix_option_68" 
+    __tablename__ = "test_db_choix_option_6" 
     id : Mapped[int] = mapped_column(primary_key=True)
-    # User Informations:
+    
     username : Mapped[str] = mapped_column(String)
     firstname : Mapped[str] = mapped_column(String)
     lastname : Mapped[str] = mapped_column(String)
     email : Mapped[str] = mapped_column(String)
+
     student_id : Mapped[int] = mapped_column(Integer)
-
-    # Exercise Informations:
-    title : Mapped[str] = mapped_column(String)
-    statement : Mapped[Text] = mapped_column(Text)   
-
-    # Grade value:
-    grade : Mapped[int] = mapped_column(Integer)
-
+    value : Mapped[Text] = mapped_column(Text)    
     def __repr__(self):
-          return f"{self.student_id} a obtenu un score de : {self.grade}."
+          return f"{self.student_id} à répondu : {self.value}."
