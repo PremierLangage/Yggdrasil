@@ -76,11 +76,11 @@ before==#|python|
 ==
 
 before_graph==
-    # GRAPH GENERATION
-    statInputs = [StatInput(i, data[i]) for i in range(len(data))]
-    stat = Stat(statInputs)
+# GRAPH GENERATION
+statInputs = [StatInput(i, data[i]) for i in range(len(data))]
+stat = Stat(statInputs)
 
-    graphContent = stat.get_graph_as_html(containsScript=True)
+graphContent = stat.get_graph_as_html(containsScript=True)
 ==
 
 form==#|html|
