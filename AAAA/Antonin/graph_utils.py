@@ -16,7 +16,7 @@ from typing import Tuple
 SCRIPT = '<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>'
 # ---
 
-def count_occurences(votes : list) -> dict:
+def count_occurences(votes : list, labels : set) -> dict:
     occurrences = {}
     for vote in votes:
         if vote in occurrences:
