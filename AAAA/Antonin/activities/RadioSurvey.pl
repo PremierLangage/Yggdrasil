@@ -3,7 +3,7 @@ extends = /AAAA/Antonin/stats.pl
 # Ecrire un titre ici
 title= Test title
 
-before==
+before==#|python|
 QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
 NUMBER_QUESTIONS = len(QUESTIONS)
 
@@ -26,6 +26,7 @@ if user__role == "teacher":
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
+    globals()["data"] = data
 ==
 
 formstudent==#|html|
