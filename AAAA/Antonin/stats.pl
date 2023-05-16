@@ -53,7 +53,12 @@ tout à fait d'accord
 data=dict()
 answer_csv="username,firsname,lastname,email,title,statement,grade\\n"
 formstudent==#|html|
-
+<div style="display:flex; flex-direction:column">
+    <h3>No form Student were defined</h3>
+    <p>
+        Please define a field <code>formstudent</code> into your pl file to define a playable form for student
+    </p>
+</div>
 ==
 
 before_stat==#|python|
