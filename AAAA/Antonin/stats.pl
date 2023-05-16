@@ -62,6 +62,25 @@ formstudent==#|html|
   white-space: pre;
   overflow: hidden;
   position: relative;
+
+
+  .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+
+    &:hover {
+      visibility: visible;
+    }
+  }
 }
 
 .ascii-animation-inner {
@@ -85,12 +104,15 @@ formstudent==#|html|
         Please define a field <code>formstudent</code> into your pl file to define a playable form for student
     </p>
     <i> Here is a little cat while you write your thing ... </i>
-<div class="ascii-animation"><div class="ascii-animation-inner">
+    <div class="ascii-animation">
+        <div class="ascii-animation-inner">
 \     /\   /   /\ \     ^^   /   ^^ \     ^^   /   ^^ \     ^^   /   ^^ \     /\   /   /\ \     /\   /   /\ \     /\   /   /\ \     /\   /   /\ \     /\   /   /\ 
  )   ( ') (   ( ') )   ('') (   ('') )   (--) (   (--) )   (--) (   ('') )   ( ') (   ( ') )   ( -) (   ( -) )   ( -) (   ( -) )   ( -) (   ( -) )   ( -) (   ( -)
  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  ) 
   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)| 
-</div></div>
+        </div>
+    </div>
+    <span class="tooltiptext">Don't mind it he's sleepy...</span>
 </div>
 ==
 
