@@ -17,6 +17,7 @@ SCRIPT = '<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>'
 # ---
 
 def count_occurences(votes : list, labels : list) -> dict:
+    print(labels, file=sys.stderr)
     occurrences = {l : 0 for l in labels}
     for vote in votes:
         if vote in occurrences:
