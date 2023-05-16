@@ -62,13 +62,6 @@ formstudent==#|html|
   white-space: pre;
   overflow: hidden;
   position: relative;
-  &:hover {
-    overflow: auto;
-    
-    .ascii-animation-inner {
-      animation: none;
-    }
-  }
 }
 .ascii-animation:hover {
     pointer-events: none;
