@@ -51,6 +51,7 @@ tout à fait d'accord
 ############################################
 
 before==#|python|
+
 import os, sys, time, json
 
 from database_utils import get_session, Base, RadioResponse
@@ -60,24 +61,15 @@ with get_session(table_class= RadioResponse, base=Base) as session:
     HAS_ANSWERED = (session.query(RadioResponse).filter(RadioResponse.student_id == user__id).first()) != None
 
 
-QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
-NUMBER_QUESTIONS = len(QUESTIONS)
-
-radio = []
-for i in range(len(QUESTIONS)):
-    tmp = RadioGroup(cid=str(i))
-    tmp.question = QUESTIONS[i]
-    tmp.items = []
-    for j, item in enumerate(items.splitlines()):        
-        tmp.items.append({ "id": j+1, "content": item })
-    globals()[str(i)] = tmp
-    radio.append(vars(tmp))
-
 if user__role == "teacher":
-    data = {v:{} for v in range(NUMBER_QUESTIONS)}
-    answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
     with get_session(table_class= RadioResponse, base=Base) as session:
         answers = session.query(RadioResponse.value).all()
+    
+    if ("data" not in globals()):
+        data = dict()
+    
+    if ("answers_csv" not in globals()):
+        answers_csv = f"username,firsname,lastname,email,title,statement,grade\\n"
  
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
@@ -97,7 +89,6 @@ form==#|html|
         flex-direction:column;
     }
 </style>
-{{data}}
     <div class="graph">
         <h4><u>Graphiques:</u></h4>
         {{graphContent|safe}}
