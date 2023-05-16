@@ -28,7 +28,7 @@ class Response(Base):
 
     # Exercise Informations:
     title : Mapped[str] = mapped_column(String)
-    statement : Mapped[Text] = mapped_column(Text)   
+    text : Mapped[Text] = mapped_column(Text)   
 
     # Grade value:
     grade : Mapped[int] = mapped_column(Integer)
@@ -39,4 +39,4 @@ class Response(Base):
 
 
 class RadioResponse(Response):
-    value : Mapped[Text] = mapped_column(Text)    
+    value : Mapped[Text] = mapped_column(Text)
