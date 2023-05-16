@@ -73,7 +73,7 @@ formstudent==#|html|
 
 .ascii-animation-inner {
   width: 72ch;
-  animation: pew-pew 2s steps(8, end) infinite alternate;
+  animation: pew-pew 5s steps(8, end) infinite alternate;
   position: relative;
 }
 
