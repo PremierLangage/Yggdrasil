@@ -39,4 +39,4 @@ class Response(Base):
 
 
 class RadioResponse(Response):
-    value : Mapped[str] = mapped_column(String)
+    value : Mapped[Text] = mapped_column(Text)    
