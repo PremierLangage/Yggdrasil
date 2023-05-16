@@ -62,9 +62,25 @@ formstudent==#|html|
   white-space: pre;
   overflow: hidden;
   position: relative;
+}
+
+.ascii-animation-inner {
+  width: 162ch;
+  animation: pew-pew 10s steps(18, end) infinite alternate;
+  position: relative;
+}
 
 
-  .tooltiptext {
+@keyframes pew-pew {
+  0% {
+     left: 0;
+  }
+  100% {
+     left: -162ch;
+  }
+}
+
+.tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -81,22 +97,6 @@ formstudent==#|html|
       visibility: visible;
     }
   }
-}
-
-.ascii-animation-inner {
-  width: 162ch;
-  animation: pew-pew 10s steps(18, end) infinite alternate;
-  position: relative;
-}
-
-@keyframes pew-pew {
-  0% {
-     left: 0;
-  }
-  100% {
-     left: -162ch;
-  }
-}
 </style>
 <div style="display:flex; flex-direction:column">
     <b style="color: red">No form Student were defined</b>
