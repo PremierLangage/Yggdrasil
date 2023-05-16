@@ -23,7 +23,7 @@ Ici vous pouvez définir une activité intégrant un système de statistiques:
 
 Pour ce faire vous devez définir les variables globales suivantes:
 
-- data : dictionnaire contenant les données au format : 
+- `data` : dictionnaire contenant les données au format : 
 
     > **key   :** nom graphe : str
 
@@ -31,11 +31,11 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     - __exemple__: 
     
-    > `data % {"test1": [1,2,2,3,3,3], "test": ["coucou", "test", "a", "a"]}`
+    > ```data % {"test1": [1,2,2,3,3,3], "test": ["coucou", "test", "a", "a"]}```
 
-- answer_csv : string représentant le format d'une ligne du csv
+- `answer_csv` : string représentant le format d'une ligne du csv
 
-- formstudent : block html au format string représentant la partie jouable par un utilisateur lambda
+- `formstudent` : block html au format string représentant la partie jouable par un utilisateur lambda
 
 ==
 
