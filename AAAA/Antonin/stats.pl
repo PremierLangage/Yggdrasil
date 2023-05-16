@@ -53,11 +53,50 @@ tout à fait d'accord
 data % {"value": [1,1,1,1,2,4,5,2,5,5,5,5], "test": ["coucou", "test", "a", "b", "a", "coucou"]}
 answer_csv="username,firsname,lastname,email,title,statement,grade\\n"
 formstudent==#|html|
+<style>
+.ascii-animation { 
+  font-family: monospace;
+  width: 16ch;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  overflow: hidden;
+  position: relative;
+  &:hover {
+    overflow: auto;
+    
+    .ascii-animation-inner {
+      animation: none;
+    }
+  }
+}
+
+.ascii-animation-inner {
+  width: 16ch * 2;
+  animation: pew-pew 3s steps(6, end) infinite alternate;
+  position: relative;
+}
+
+@keyframes pew-pew {
+  0% {
+     left: 0;
+  }
+  100% {
+     left: -16ch * 2;
+  }
+}
+</style>
 <div style="display:flex; flex-direction:column">
     <b style="color: red">No form Student were defined</b>
     <p>
         Please define a field <code>formstudent</code> into your pl file to define a playable form for student
     </p>
+    <div class="ascii-animation"><div class="ascii-animation-inner">
+ \     /\          /   /\   
+  )   ( ')        (   ( ')  
+  (  /  )          ) /  )   
+   \(__)|          \(__)|   
+    </div></div>
 </div>
 ==
 
