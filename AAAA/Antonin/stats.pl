@@ -18,7 +18,7 @@ text ==
 Vous pouvez définir des questions au format suivant : `question_X`
 
 Où X est un identifiant se devant d'être unique et n'ayant aucune incidence dans la suite du code.
-
+ 
 ---
 
 <u>exemples :</u>
@@ -57,28 +57,15 @@ import os, sys, time, json
 from database_utils import get_session, Base, RadioResponse
 from stats_utils import Stat, StatInput
 
-QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
-NUMBER_QUESTIONS = len(QUESTIONS)
-
 with get_session(table_class= RadioResponse, base=Base) as session:
     HAS_ANSWERED = (session.query(RadioResponse).filter(RadioResponse.student_id == user__id).first()) != None
-
-radio = []
-for i in range(len(QUESTIONS)):
-    tmp = RadioGroup(cid=str(i))
-    tmp.question = QUESTIONS[i]
-    tmp.items = []
-    for j, item in enumerate(items.splitlines()):        
-        tmp.items.append({ "id": j+1, "content": item })
-    globals()[str(i)] = tmp
-    radio.append(vars(tmp))
 
 
 if user__role == "teacher":
     with get_session(table_class= RadioResponse, base=Base) as session:
         answers = session.query(RadioResponse.value).all()
     
-    data = {v:{} for v in range(NUMBER_QUESTIONS)}
+    data = dict()
     
     answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
 
@@ -86,13 +73,11 @@ if user__role == "teacher":
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
-    print(data[0].items(), file=sys.stderr)
     # GRAPH GENERATION
     statInputs = [StatInput(QUESTIONS[i], data[i].items()) for i in range(NUMBER_QUESTIONS)]
     stat = Stat(statInputs)
 
     graphContent = stat.get_graph_as_html(containsScript=True)
-    print(graphContent, file=sys.stderr)
 ==
 
 form==#|html|
