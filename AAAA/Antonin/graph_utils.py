@@ -25,15 +25,13 @@ def count_occurences(votes : list) -> dict:
             occurrences[vote] = 1
     return occurrences
 
-def generate_histogram_data(votes : list) -> Tuple[list, list]:
-    occurrences = count_occurences(votes)
+def generate_histogram_data(votes : list, labels : set) -> Tuple[list, list]:
+    occurrences = count_occurences(votes, labels)
     return list(occurrences.keys()), list(occurrences.values())
 
 def generer_histogramme(votes : list, id : str, labels : list = None) -> str:
     # Extraire les valeurs
-    valeurs, frequences = generate_histogram_data(votes)
-    if labels != None:
-        valeurs = list(set(valeurs + labels))
+    valeurs, frequences = generate_histogram_data(votes, set(labels))
     # Créer le dictionnaire de données pour Chart.js
     donnees = {
         'labels': valeurs,
