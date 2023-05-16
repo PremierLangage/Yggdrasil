@@ -29,7 +29,7 @@ def generate_histogram_data(votes : list) -> Tuple[list, list]:
     occurrences = count_occurences(votes)
     return list(occurrences.keys()), list(occurrences.values())
 
-def generer_histogramme(votes : list, id : str) -> str:
+def generer_histogramme(votes : list, id : str, labels : list =None) -> str:
     # Extraire les valeurs
     valeurs, frequences = generate_histogram_data(votes)
     
