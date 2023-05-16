@@ -13,7 +13,7 @@ class Response(Base):
     base = Base
     __tablename__ = "test_db_choix_option_68" 
     id : Mapped[int] = mapped_column(primary_key=True)
-    # User Informations
+    # User Informations:
     username : Mapped[str] = mapped_column(String)
     firstname : Mapped[str] = mapped_column(String)
     lastname : Mapped[str] = mapped_column(String)
