@@ -19,9 +19,9 @@ class StatInput():
         :param title:   str, name of the graph
         :param data:    list(int), list of values
         """
-        self.title = title
-        self.data  = data
-        self.labels= labels
+        self.title  = title
+        self.data   = data
+        self.labels = labels
     
     def generate_graph(self):
         return generer_histogramme(self.data, self.generate_hash(self.title), labels=self.labels
