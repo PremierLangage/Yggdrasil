@@ -65,9 +65,11 @@ if user__role == "teacher":
     with get_session(table_class= RadioResponse, base=Base) as session:
         answers = session.query(RadioResponse.value).all()
     
-    data = dict()
+    if ("data" not in globals()):
+        data = dict()
     
-    answers_csv = f"username,firsname,lastname,email,title,statement,grade\\n"
+    if ("answers_csv" not in globals()):
+        answers_csv = f"username,firsname,lastname,email,title,statement,grade\\n"
  
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
