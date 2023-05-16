@@ -84,10 +84,11 @@ form==#|html|
 <style>
     .graph {
         display:flex;
+        flex-direction:column;
     }
 </style>
     <div class="graph">
-        <span>Graphiques:</span>
+        <h4><u>Graphiques:</u></h4>
         {{graphContent|safe}}
     </div>
     <br>
