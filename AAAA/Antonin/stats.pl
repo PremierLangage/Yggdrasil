@@ -71,7 +71,8 @@ with get_session(table_class= Response, base=Base) as session:
 ==
 
 before==#|python|
-#Nothing, work is done in implementations
+# Nothing, work is done in implementations
+# needs to be overwriten
 ==
 
 before_graph==
