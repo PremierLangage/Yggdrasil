@@ -32,7 +32,8 @@ def generate_histogram_data(votes : list) -> Tuple[list, list]:
 def generer_histogramme(votes : list, id : str, labels : list = None) -> str:
     # Extraire les valeurs
     valeurs, frequences = generate_histogram_data(votes)
-    
+    if labels != None:
+        valeurs = set(valeurs + labels)
     # Créer le dictionnaire de données pour Chart.js
     donnees = {
         'labels': valeurs,
