@@ -18,8 +18,8 @@ class Response(Base):
     firstname : Mapped[str] = mapped_column(String)
     lastname : Mapped[str] = mapped_column(String)
     email : Mapped[str] = mapped_column(String)
-
     student_id : Mapped[int] = mapped_column(Integer)
+    
     title : Mapped[str] = mapped_column(String)
     statement : Mapped[Text] = mapped_column(Text)    
 
