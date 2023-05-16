@@ -42,22 +42,9 @@ if __name__ == "__main__":
     output_json = sys.argv[2]
     
     dic = get_context()
-    if 'before_stat' in dic:
-        dobuilderclause('before_stat', dic)
-    else:
-        print(("Builder 'before' need a script declared in the key 'before_stat'. "
-               + "See documentation related to this builder."),
-              file = sys.stderr)
-        sys.exit(1)
-        if 'before' in dic:
-            dobuilderclause('before', dic)
-    if 'before_graph' in dic:
-        dobuilderclause('before_stat', dic)
-    else:
-        print(("Builder 'before' need a script declared in the key 'before_stat'. "
-            + "See documentation related to this builder."),
-            file = sys.stderr)
-        sys.exit(1)
+    test_before_clause('before_stat')
+    test_before_clause('before')
+    test_before_clause('before_graph')
 
 
     with open(output_json, "w+") as f:
