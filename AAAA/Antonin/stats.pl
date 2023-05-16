@@ -82,8 +82,12 @@ if user__role == "teacher":
 form==#|html|
 {% if user__role == "teacher" %}
 <style>
+    .graph {
+        display:flex;
+    }
 </style>
     <div class="graph">
+        <span>Graphiques:</span>
         {{graphContent|safe}}
     </div>
     <br>
