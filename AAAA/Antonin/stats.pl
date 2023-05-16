@@ -71,7 +71,7 @@ if user__role == "teacher":
             data[v][k] = data[v].get(k, 0) + 1
 ==
 
-before_graph_generation==
+before_graph==
     # GRAPH GENERATION
     statInputs = [StatInput(i, data[i].items()) for i in range(len(data))]
     stat = Stat(statInputs)
