@@ -25,9 +25,13 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 - data : dictionnaire contenant les données au format : 
 
-> **key   :** nom graphe : str
+    > **key   :** nom graphe : str
 
-> **value :** liste valeurs : list
+    > **value :** liste valeurs : list
+
+- answer_csv : string représentant le format d'une ligne du csv
+
+- formstudent : block html au format string représentant la partie jouable par un utilisateur lambda
 
 ==
 
