@@ -92,7 +92,7 @@ form==#|html|
         flex-direction:column;
     }
 </style>
-{{data}}
+{{data}} {{data.items()}} {{type(date["value"]}}
     <div class="graph">
         <h4><u>Graphiques:</u></h4>
         {{graphContent|safe}}
