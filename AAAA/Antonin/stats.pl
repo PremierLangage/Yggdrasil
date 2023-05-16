@@ -72,8 +72,8 @@ formstudent==#|html|
 }
 
 .ascii-animation-inner {
-  width: 90ch;
-  animation: pew-pew 5s steps(10, end) infinite alternate;
+  width: 112ch;
+  animation: pew-pew 5s steps(14, end) infinite alternate;
   position: relative;
 }
 
@@ -82,7 +82,7 @@ formstudent==#|html|
      left: 0;
   }
   100% {
-     left: -90ch;
+     left: -112ch;
   }
 }
 </style>
@@ -92,10 +92,10 @@ formstudent==#|html|
         Please define a field <code>formstudent</code> into your pl file to define a playable form for student
     </p>
 <div class="ascii-animation"><div class="ascii-animation-inner">
-\     /\   /   /\ \     ^^   /   ^^ \     ^^   /   ^^ \     ^^   /   ^^ \     /\   /   /\ \     /\   /   /\ \     /\ 
- )   ( ') (   ( ') )   (',) (   ('') )   (--) (   (--) )   ('') (   (',) )   ( ') (   ( ') )   ( -) (   ( -) )   ( -)
- (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  ) (  /  )    ) /  ) (  /  )  
-  \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|  \(__)|    ((__)|  \(__)|  
+\     /\   /   /\ \     ^^   /   ^^ \     ^^   /   ^^ \     ^^   /   ^^ \     /\   /   /\ \     /\   /   /\ \     /\   /   /\ 
+ )   ( ') (   ( ') )   (',) (   ('') )   (--) (   (--) )   ('') (   (',) )   ( ') (   ( ') )   ( -) (   ( -) )   ( -) (   ( -)
+ (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  ) (  /  )    ) /  ) (  /  )    ) /  ) 
+  \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|  \(__)|    ((__)|  \(__)|    ((__)| 
 </div></div>
 </div>
 ==
