@@ -200,5 +200,3 @@ else :
 
 grade = (score, feedback)
 ==
-
-
