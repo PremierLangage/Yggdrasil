@@ -45,7 +45,10 @@ Pour ce faire vous devez définir les variables globales suivantes:
     Exemple: 
     
     > ```formstudent==#|html|
-    <h2> Hello World ! </h2>```
+
+    <h2> Hello World ! </h2>
+    
+    ==```
 
 ---
 
