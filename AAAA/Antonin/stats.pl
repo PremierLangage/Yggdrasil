@@ -68,12 +68,12 @@ if user__role == "teacher":
     data = dict()
     
     answers_csv = f"username,firsname,lastname,email,title,statement,grade\\n"
-
+ 
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
     # GRAPH GENERATION
-    statInputs = [StatInput(QUESTIONS[i], data[i].items()) for i in range(NUMBER_QUESTIONS)]
+    statInputs = [StatInput(i, data[i].items()) for i in range(len(data)]
     stat = Stat(statInputs)
 
     graphContent = stat.get_graph_as_html(containsScript=True)
