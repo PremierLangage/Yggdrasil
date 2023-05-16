@@ -36,4 +36,3 @@ class Response(Base):
 
     def __repr__(self):
           return f"{self.student_id} a obtenu un score de : {self.grade}."
-
