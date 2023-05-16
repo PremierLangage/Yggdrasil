@@ -54,7 +54,7 @@ data % {"value": [1,1,1,1,2,4,5,2,5,5,5,5], "test": ["coucou", "test", "a", "b",
 answer_csv="username,firsname,lastname,email,title,statement,grade\\n"
 formstudent==#|html|
 <div style="display:flex; flex-direction:column">
-    <h3>No form Student were defined</h3>
+    <b style="color: red">No form Student were defined</b>
     <p>
         Please define a field <code>formstudent</code> into your pl file to define a playable form for student
     </p>
