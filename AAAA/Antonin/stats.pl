@@ -78,7 +78,7 @@ before==#|python|
 before_graph==#|python|
 # GRAPH GENERATION
 print(data, type(data), type(data["value"]), file=sys.stderr)
-statInputs = [StatInput(k, v) for k, v in range(data.items())]
+statInputs = [StatInput(k, v) for k, v in data.items()]
 stat = Stat(statInputs)
 
 graphContent = stat.get_graph_as_html(containsScript=True)
