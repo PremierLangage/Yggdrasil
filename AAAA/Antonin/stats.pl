@@ -52,6 +52,9 @@ tout à fait d'accord
 
 data=dict()
 answer_csv="username,firsname,lastname,email,title,statement,grade\\n"
+formstudent==#|html|
+
+==
 
 before_stat==#|python|
 
@@ -77,9 +80,6 @@ before_graph==
     stat = Stat(statInputs)
 
     graphContent = stat.get_graph_as_html(containsScript=True)
-
-
-
 ==
 
 form==#|html|
