@@ -54,14 +54,14 @@ before==#|python|
 
 import os, sys, time, json
 
-from database_utils import get_session, Base, Response
+from database_utils import get_session, Base, RadioResponse
 from stats_utils import Stat, StatInput
 
 QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
 NUMBER_QUESTIONS = len(QUESTIONS)
 
-with get_session(table_class= Response, base=Base) as session:
-    HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
+with get_session(table_class= RadioResponse, base=Base) as session:
+    HAS_ANSWERED = (session.query(RadioResponse).filter(RadioResponse.student_id == user__id).first()) != None
 
 radio = []
 for i in range(len(QUESTIONS)):
@@ -75,8 +75,8 @@ for i in range(len(QUESTIONS)):
 
 
 if user__role == "teacher":
-    with get_session(table_class= Response, base=Base) as session:
-        answers = session.query(Response.value).all()
+    with get_session(table_class= RadioResponse, base=Base) as session:
+        answers = session.query(RadioResponse.value).all()
     
     data = {v:{} for v in range(NUMBER_QUESTIONS)}
     
@@ -150,7 +150,7 @@ form==#|html|
 
 # EVALUATE THE STUDENT ANSWER
 evaluator == #|py|
-from database_utils import get_session, Base, Response
+from database_utils import get_session, Base, RadioResponse
 import json
 
 score = 100
@@ -165,14 +165,16 @@ if len(answer) != int(NUMBER_QUESTIONS):
     score = 0
 
 if int(score) == 100:
-    with get_session(table_class = Response, base=Base) as session:
+    with get_session(table_class = RadioResponse, base=Base) as session:
         session.add(
-            Response(student_id = user__id if user__id else session__id, 
-            username = user__username,
-            firstname = user__firstname,
-            lastname = user__lastname,
-            email = user__email,
-            value = json.dumps(answer)))
+            RadioResponse(student_id = user__id if user__id else session__id, 
+            username    = user__username,
+            firstname   = user__firstname,
+            lastname    = user__lastname,
+            email       = user__email,
+            title       = title,
+            text        = text,
+            value       = json.dumps(answer)))
         session.commit()
 else :
     feedback = '<span class="error-state">Vous ne pouvez pas sélectionner plusieurs fois la même option</span>'
