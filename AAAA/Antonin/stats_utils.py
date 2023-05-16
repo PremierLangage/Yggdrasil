@@ -14,16 +14,17 @@ from graph_utils import generer_histogramme, SCRIPT
 from typing import List
 
 class StatInput():
-    def __init__(self, title: str, data : list, label : set):
+    def __init__(self, title: str, data : list, labels : set):
         """
         :param title:   str, name of the graph
         :param data:    list(int), list of values
         """
         self.title = title
         self.data  = data
+        self.labels= labels
     
     def generate_graph(self):
-        return generer_histogramme(self.data, self.generate_hash(self.title))
+        return generer_histogramme(self.data, self.generate_hash(self.title), labels=self.labels
 
     def generate_hash(self, name):
         """ 
