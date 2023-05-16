@@ -56,7 +56,7 @@ formstudent==#|html|
 <style>
 .ascii-animation { 
   font-family: monospace;
-  width: 16ch;
+  width: 14ch;
   margin: 0;
   padding: 0;
   white-space: pre;
@@ -72,7 +72,7 @@ formstudent==#|html|
 }
 
 .ascii-animation-inner {
-  width: 16ch * 2;
+  width: 14ch * 2;
   animation: pew-pew 3s steps(2, end) infinite alternate;
   position: relative;
 }
@@ -82,7 +82,7 @@ formstudent==#|html|
      left: 0;
   }
   100% {
-     left: -16ch * 2;
+     left: -14ch * 2;
   }
 }
 </style>
