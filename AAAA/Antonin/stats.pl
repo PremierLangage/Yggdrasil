@@ -89,6 +89,7 @@ form==#|html|
         flex-direction:column;
     }
 </style>
+{{data}}
     <div class="graph">
         <h4><u>Graphiques:</u></h4>
         {{graphContent|safe}}
@@ -136,7 +137,6 @@ form==#|html|
         {% endfor %}
     {% endif %}
 {% endif %}
-
 ==
 
 # EVALUATE THE STUDENT ANSWER
