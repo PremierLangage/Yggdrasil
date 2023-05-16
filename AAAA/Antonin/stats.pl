@@ -51,31 +51,24 @@ tout à fait d'accord
 ############################################
 
 data=dict()
+answer_csv="username,firsname,lastname,email,title,statement,grade\\n"
 
-before_init==#|python|
+before_stat==#|python|
 
 import os, sys, time, json
-from database_utils import get_session, Base, RadioResponse
+from database_utils import get_session, Base, Response
 from stats_utils import Stat, StatInput
 
-with get_session(table_class= RadioResponse, base=Base) as session:
-    HAS_ANSWERED = (session.query(RadioResponse).filter(RadioResponse.student_id == user__id).first()) != None
-
+with get_session(table_class= Response, base=Base) as session:
+    HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
 
 if user__role == "teacher":
-    with get_session(table_class= RadioResponse, base=Base) as session:
-        answers = session.query(RadioResponse.value).all()
-    
-    if ("data" not in globals()):
-        data = dict()
-    
-    if ("answers_csv" not in globals()):
-        answers_csv = f"username,firsname,lastname,email,title,statement,grade\\n"
+    with get_session(table_class= Response, base=Base) as session:
+        answers = session.query(Response.value).all()
  
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
-
 ==
 
 before_graph_generation==
