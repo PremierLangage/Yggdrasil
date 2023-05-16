@@ -3,7 +3,7 @@ extends = /AAAA/Antonin/stats.pl
 # Ecrire un titre ici
 title= Test title
 
-bbefore==
+before==
 QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
 NUMBER_QUESTIONS = len(QUESTIONS)
 
@@ -20,5 +20,23 @@ for i in range(len(QUESTIONS)):
 if user__role == "teacher":
     data = {v:{} for v in range(NUMBER_QUESTIONS)}
     answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
+    with get_session(table_class= Response, base=Base) as session:
+        answers = session.query(Response.value).all()
+ 
+    for answer in answers:
+        for k, v in json.loads(str(answer[0])).items():
+            data[v][k] = data[v].get(k, 0) + 1
+==
 
+formstudent==#|html|
+{% if False and answer != None %}
+        <span class="success-state">Vous avez déjà répondu à ce sondage</span>
+    {% else %}
+        {% for r in radio %}
+            {{ r.question|safe }}
+
+            {{ r|component }}
+
+        {% endfor %}
+{% endif %}
 ==
