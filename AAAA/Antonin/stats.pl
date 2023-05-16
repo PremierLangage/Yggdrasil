@@ -5,7 +5,7 @@
 
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
+builder =@ statbefore.py
 
 ################### Modifier ici ###########################
 author = Thomas Saillard & Antonin Jean
@@ -52,9 +52,7 @@ tout à fait d'accord
 
 data=dict()
 
-bbefore=
-
-before==#|python|
+before_init==#|python|
 
 import os, sys, time, json
 from database_utils import get_session, Base, RadioResponse
@@ -77,11 +75,18 @@ if user__role == "teacher":
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
+
+==
+
+before_graph_generation==
     # GRAPH GENERATION
     statInputs = [StatInput(i, data[i].items()) for i in range(len(data))]
     stat = Stat(statInputs)
 
     graphContent = stat.get_graph_as_html(containsScript=True)
+
+
+
 ==
 
 form==#|html|
