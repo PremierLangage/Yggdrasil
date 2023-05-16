@@ -14,16 +14,20 @@ author = Thomas Saillard & Antonin Jean
 title= Statistic Activity *<Dummy title>*
 
 # Ecrire un énoncé ici
-text ==
+text ==#|markdown|
 Ici vous pouvez définir une activité intégrant un système de statistiques:
 - affichage de graphe représentant les données pour l'enseignant
 - récupération des entrées au format csv
 
 
 Pour ce faire vous devez définir les variables globales suivantes:
+
 - data : dictionnaire contenant les données au format : 
+
 > **key   :** nom graphe : str
+
 > **value :** liste valeurs : list
+
 ==
 
 ############################################
