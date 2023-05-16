@@ -48,7 +48,6 @@ Pour ce faire vous devez définir les variables globales suivantes:
     formstudent==#|html|
 
     <h2> Hello World ! </h2>
-    
     ==
     ```
 
