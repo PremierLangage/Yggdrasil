@@ -75,7 +75,7 @@ before==#|python|
 # needs to be overwriten
 ==
 
-before_graph==
+before_graph==#|python|
 # GRAPH GENERATION
 statInputs = [StatInput(i, data[i]) for i in range(len(data))]
 stat = Stat(statInputs)
