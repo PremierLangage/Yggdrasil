@@ -50,7 +50,7 @@ tout à fait d'accord
 
 ############################################
 
-data=dict()
+data%={}
 answer_csv="username,firsname,lastname,email,title,statement,grade\\n"
 formstudent==#|html|
 <div style="display:flex; flex-direction:column">
