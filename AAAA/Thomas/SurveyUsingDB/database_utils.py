@@ -24,7 +24,7 @@ class Response(Base):
     title : Mapped[str] = mapped_column(String)
     statement : Mapped[Text] = mapped_column(Text)   
 
-    # Grade value
+    # Grade value:
     grade : Mapped[int] = mapped_column(Integer)
 
     def __repr__(self):
