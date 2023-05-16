@@ -73,7 +73,7 @@ if user__role == "teacher":
         for k, v in json.loads(str(answer[0])).items():
             data[v][k] = data[v].get(k, 0) + 1
     # GRAPH GENERATION
-    statInputs = [StatInput(i, data[i].items()) for i in range(len(data)]
+    statInputs = [StatInput(i, data[i].items()) for i in range(len(data))]
     stat = Stat(statInputs)
 
     graphContent = stat.get_graph_as_html(containsScript=True)
