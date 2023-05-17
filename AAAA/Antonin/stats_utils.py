@@ -24,7 +24,7 @@ class StatInput():
         self.labels = labels
     
     def generate_graph(self):
-        return generer_histogramme(self.data, self.generate_hash(self.title), self.labels)
+        return generer_histogramme(self.data, self.generate_hash(self.title), self.labels, title=self.title)
 
     def generate_hash(self, name):
         """ 
