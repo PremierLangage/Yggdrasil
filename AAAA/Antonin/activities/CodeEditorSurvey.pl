@@ -38,7 +38,7 @@ formstudent==#|html|
 ==
 
 evaluator==#|py|
-from database_utils import get_session, Base, RadioResponse
+from database_utils import get_session, Base, Response
 import json
 
 score = 100
@@ -47,6 +47,18 @@ if __save_editor_code == editor.code:
 
 if "if" in editor.code:
     score = 100
+    with get_session(table_class = Response, base=Base) as session:
+        session.add(
+            Response(
+                student_id = user__id if user__id else session__id, 
+                username    = user__username,
+                firstname   = user__firstname,
+                lastname    = user__lastname,
+                email       = user__email,
+                title       = title,
+                text        = text,
+                grade       = score,
+        session.commit()
 else:
     feedback = '<span class="error-state">Vous n\'avez rien saisis, annulation de l\'envois de la réponse</span>'
     score = 0
