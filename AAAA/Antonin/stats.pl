@@ -23,6 +23,8 @@ Ici vous pouvez définir une activité intégrant un système de statistiques:
 
 ---
 
+**Manuel utilisateur:**
+
 Pour ce faire vous devez définir les variables globales suivantes:
 
 - **`data`** : dictionnaire contenant les données au format : 
