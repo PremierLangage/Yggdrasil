@@ -57,7 +57,7 @@ def generer_histogramme(
 
     # Générer le code HTML et JavaScript correspondant à l'histogramme
     html = f'''
-        <br>
+        <hr>
         <canvas id="histogramme-{id}"></canvas>
         <script>
             document.addEventListener('DOMContentLoaded', function() {{
