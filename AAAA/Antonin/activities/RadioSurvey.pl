@@ -59,7 +59,7 @@ Test
 ==
 
 before==#|python|
-import json
+import json, sys
 from database_utils import get_session, Base, RadioResponse
 
 QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
@@ -70,10 +70,12 @@ for i in range(len(QUESTIONS)):
     tmp = RadioGroup(cid=str(i))
     tmp.question = QUESTIONS[i]
     tmp.items = []
+    print(f"in - {items}", file=sys.stderr)
     for j, item in enumerate(items.splitlines()):        
         tmp.items.append({ "id": j+1, "content": item })
     globals()[str(i)] = tmp
     radio.append(vars(tmp))
+print(f"out - {items}", file=sys.stderr)
 
 if user__role == "teacher":
     labels = items.splitlines()
