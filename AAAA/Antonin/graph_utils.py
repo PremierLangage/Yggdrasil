@@ -41,7 +41,8 @@ def generer_histogramme(votes : list, id : str, labels : list, title : str = "St
             'backgroundColor': 'rgba(75, 192, 192, 0.2)',
             'borderColor': 'rgba(75, 192, 192, 1)',
             'borderWidth': 1
-        }]
+        }],
+        'title': title
     }
     
     # Convertir les données en JSON
