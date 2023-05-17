@@ -22,13 +22,13 @@ if user__role == "teacher":
 
     with get_session(table_class=Response, base=Base) as session:
         answers = session.query(Response.grade).all()
-    data = list(map(lambda x : x['_data'][0], answers))
-
+    data["grade"][1] = list(map(lambda x : x['_data'][0], answers))
+    [data["grade"][0].append(x) for x in data["grade"][1] if x not in data["grade"][0]]
     globals()["data"] = data
 ==
 
 formstudent==#|html|
-{{ data}}
+{{ answers }}
 {{ editor|component }}
 ==
 
