@@ -80,15 +80,10 @@ if user__role == "teacher" and NUMBER_QUESTIONS != 0:
     with get_session(table_class= RadioResponse, base=Base) as session:
         answers = session.query(RadioResponse.value).all()
     
-    print(f"in - {answers}", file=sys.stderr)
     for answer in answers:
-        print(f"1 - {answer}", file=sys.stderr)
         for k, v in json.loads(str(answer[0])).items():
-            print(f"2 - {k, v}", file=sys.stderr)
-
             data[QUESTIONS[int(v)]][1].append(k)
     globals()["data"] = data
-print(f"out - {data}", file=sys.stderr)
 ==
 
 formstudent==#|html|
