@@ -16,15 +16,15 @@ editor.code ==
 __save_editor_code = editor.code
 
 before==#|python|
-from database_utils import get_session, Base, Response
+from database_utils import get_session, Base, CodeEditorResponse
 import json
 
 if user__role == "teacher":
     labels = []
     data = {"grade": [labels, []]}
 
-    with get_session(table_class=Response, base=Base) as session:
-        answers = session.query(Response.grade).all()
+    with get_session(table_class=CodeEditorResponse, base=Base) as session:
+        answers = session.query(CodeEditorResponse.value).all()
     
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
