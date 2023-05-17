@@ -52,10 +52,11 @@ before=
 
 evaluator==
 
+numero += 1
 for e in selectable.selections:
     e['css'] = "error-state"
     if e['index'] is 0 :
-        numero -=1
+        numero -= 2
         if numero <0:
             numero = 0
     if e['index'] is 1 : # restart
