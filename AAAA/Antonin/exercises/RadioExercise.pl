@@ -2,9 +2,8 @@ extends = /AAAA/Antonin/activities/RadioSurvey.pl
 
 title = Exercice d'exemple | RadioGroup
 
+# Ecrire un énoncé ici
 text==#|markdown|
-Ceci est un exemple d'exercice visant à montrer l'utilisation de l'activité PL [`RadioSurvey.pl`](/AAAA/Antonin/activities/RadioSurvey.pl) dont voici la documentation:
-
 Ici vous pouvez définir une activité de RadioGroup incluant le module de Statistique:
 
     - exercice radio : selection de choix répondant à une liste de question
@@ -51,7 +50,17 @@ Pour ce faire vous devez définir les variables globales suivantes:
     ==
 
     </code>
- 
+
+**Options:**
+
+-  **`unique_answers`** : `Boolean`   -   Défaut: `False`
+
+    > L'utilisateur peut-il choisir la même réponse pour des questions différentes
+
+    Exemple:
+
+    > ```unique_answers = True```
+    
 ---
 
 ==
