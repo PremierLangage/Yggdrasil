@@ -92,7 +92,7 @@ if user__role == "teacher" and NUMBER_QUESTIONS != 0:
     labels = items.splitlines()
     data = { q : [labels, []] for q in QUESTIONS}
     answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
-    with get_session(table_class= RadioResponse, base=Base) as session:
+    with get_session(table_class=RadioResponse, base=Base) as session:
         answers = session.query(RadioResponse.value).all()
     
     for answer in answers:
@@ -133,7 +133,7 @@ if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
     score = 0
 
 if int(score) == 100:
-    with get_session(table_class = Response, base=Base) as session:
+    with get_session(table_class = RadioResponse, base=Base) as session:
         session.add(
             RadioResponse(
                 student_id = user__id if user__id else session__id, 
