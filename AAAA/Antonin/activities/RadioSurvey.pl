@@ -53,6 +53,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 # Possibilité de réponses aux questions:
 # Doivent être uniques
+items = ""
 
 before==#|python|
 import json
