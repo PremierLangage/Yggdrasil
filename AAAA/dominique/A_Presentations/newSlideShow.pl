@@ -90,9 +90,3 @@ form==
 {{ selectable|component}}
 ==
 
-evaluator==
-score = 100
-
-
-==
-
