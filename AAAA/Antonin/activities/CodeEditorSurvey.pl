@@ -14,5 +14,11 @@ editor.code ==
 ==
 
 before==#|python|
+from database_utils import get_session, Base, RadioResponse
 
+
+==
+
+formstudent==#|html|
+{{ editor|component }}
 ==
