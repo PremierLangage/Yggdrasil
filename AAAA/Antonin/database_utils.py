@@ -17,7 +17,7 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
 
 class Response(Base):
     base = Base 
-    __tablename__ = "test_db_choix_option_6"
+    __tablename__ = "test_db_choix_option_42"
 
     id : Mapped[int] = mapped_column(primary_key=True)
     # User Informations:
