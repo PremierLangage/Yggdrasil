@@ -54,7 +54,8 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 **Options:**
 
--  **`unique_answers`** : `Boolean`  : Si vous souhaitez que l'utilisateur ne puisse pas selectionner le même choix sur plusieurs questions différentes vous pouvez définir la variable : **`unique_answers = True`**
+-  **`unique_answers`** : `Boolean`  : Définit que l'utilisateur ne puisse pas selectionner le même choix sur plusieurs questions différentes vous pouvez définir la variable : **`unique_answers = True`**
+Par défaut sur False
 ---
 
 ==
