@@ -56,11 +56,11 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 -  **`unique_answers`** : `Boolean`   -   Défaut: `False`
 
-    L'utilisateur peut-il choisir la même réponse pour des questions différentes
+    > L'utilisateur peut-il choisir la même réponse pour des questions différentes
 
     Exemple:
 
-    > ```unique_answers = True```
+    ```unique_answers = True```
 ---
 
 ==
