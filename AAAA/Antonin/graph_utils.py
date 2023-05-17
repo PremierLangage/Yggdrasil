@@ -16,7 +16,7 @@ from typing import Tuple
 SCRIPT = '<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>'
 # ---
 
-def count_occurences(votes : list, labels : set) -> dict:
+def count_occurences(votes : list, labels : list) -> dict:
     occurrences = {l : 0 for l in labels}
     for vote in votes:
         if vote in occurrences:
@@ -25,7 +25,7 @@ def count_occurences(votes : list, labels : set) -> dict:
             occurrences[vote] = 1
     return occurrences
 
-def generate_histogram_data(votes : list, labels : set) -> Tuple[list, list]:
+def generate_histogram_data(votes : list, labels : list) -> Tuple[list, list]:
     occurrences = count_occurences(votes, labels)
     return list(occurrences.keys()), list(occurrences.values())
 
@@ -38,7 +38,7 @@ def generer_histogramme(
         borderColor : str       = 'rgba(75, 192, 250, 1)',
         borderWidth : int       = 1) -> str:
     # Extraire les valeurs
-    valeurs, frequences = generate_histogram_data(votes, set(labels))
+    valeurs, frequences = generate_histogram_data(votes, labels)
     # Créer le dictionnaire de données pour Chart.js
     donnees = {
         'labels': valeurs,
