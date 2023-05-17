@@ -4,7 +4,10 @@
 
 title= TITRE DE LA PRESENTATION
 text= 
-form= 
+form==
+
+<button>Bob</button>
+==
 
 
 @cours-contenu.md [cours.md]
