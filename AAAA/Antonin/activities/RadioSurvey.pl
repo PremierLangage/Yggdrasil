@@ -148,7 +148,7 @@ if int(score) == 100:
                 value       = json.dumps(answer)))
         session.commit()
 else :
-    feedback = f'<span class="error-state">Vous ne pouvez pas sélectionner plusieurs fois la même option</span> {unique_choice} {score}'
+    feedback = '<span class="error-state">Vous ne pouvez pas sélectionner plusieurs fois la même option</span>'
 
 grade = (score, feedback)
 ==
