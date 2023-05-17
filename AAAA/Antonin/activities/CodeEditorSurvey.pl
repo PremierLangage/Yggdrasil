@@ -14,9 +14,14 @@ editor.code ==
 ==
 
 before==#|python|
-from database_utils import get_session, Base, RadioResponse
+from database_utils import get_session, Base, Response
 
+if user__role == "teacher":
+    labels = []
+    data = {"grade": [labels, []]}
 
+    with get_session(table_class=Response, base=Base) as session:
+        answers = session.query(Response.grade).all()
 ==
 
 formstudent==#|html|
