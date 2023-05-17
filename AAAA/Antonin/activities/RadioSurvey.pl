@@ -133,17 +133,20 @@ if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
     score = 0
 
 if int(score) == 100:
-    with get_session(table_class = RadioResponse, base=Base) as session:
+    __response = Response(activity__id)
+    with get_session(table_class = __response, base=Base) as session:
         session.add(
-            RadioResponse(student_id = user__id if user__id else session__id, 
-            username    = user__username,
-            firstname   = user__firstname,
-            lastname    = user__lastname,
-            email       = user__email,
-            title       = title,
-            text        = text,
-            grade       = 100,
-            value       = json.dumps(answer)))
+            RadioResponse(
+                table_identifer=activity__id
+                student_id = user__id if user__id else session__id, 
+                username    = user__username,
+                firstname   = user__firstname,
+                lastname    = user__lastname,
+                email       = user__email,
+                title       = title,
+                text        = text,
+                grade       = 100,
+                value       = json.dumps(answer)))
         session.commit()
 else :
     feedback = f'<span class="error-state">Vous ne pouvez pas sélectionner plusieurs fois la même option</span> {unique_choice} {score}'
