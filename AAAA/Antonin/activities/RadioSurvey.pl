@@ -69,6 +69,8 @@ Pour ce faire vous devez définir les variables globales suivantes:
 # L'utilisateur doit-il choisir une réponse différente par question
 unique_choice = False
 
+# Role : Traitement donnée, doit remplir la variable globale : data
+# Format spécifié dans le fichier stats.pl
 before==#|python|
 import json, sys
 from database_utils import get_session, Base, RadioResponse
