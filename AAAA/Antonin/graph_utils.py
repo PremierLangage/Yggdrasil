@@ -34,7 +34,7 @@ def generer_histogramme(
         id : str, 
         labels : list, 
         title : str = "Statistiques",
-        backgroundColor : str = ) -> str:
+        backgroundColor : str = 'rgba(75, 192, 250, 0.2)') -> str:
     # Extraire les valeurs
     valeurs, frequences = generate_histogram_data(votes, set(labels))
     # Créer le dictionnaire de données pour Chart.js
@@ -43,7 +43,7 @@ def generer_histogramme(
         'datasets': [{
             'label': 'Fréquence des valeurs',
             'data': frequences,
-            'backgroundColor': 'rgba(75, 192, 250, 0.2)',
+            'backgroundColor': backgroundColor,
             'borderColor': 'rgba(75, 192, 250, 1)',
             'borderWidth': 1
         }],
