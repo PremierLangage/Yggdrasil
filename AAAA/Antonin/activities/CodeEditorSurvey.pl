@@ -52,8 +52,6 @@ else:
         score = 100
     else:
         score = 0
-
-
     with get_session(table_class = Response, base=Base) as session:
     session.add(
         Response(
