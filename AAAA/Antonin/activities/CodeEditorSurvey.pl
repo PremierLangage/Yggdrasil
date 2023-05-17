@@ -63,6 +63,9 @@ else:
                 title       = title,
                 text        = text,
                 grade       = score,
+            )
+        )
         session.commit()
+
 grade = (score, feedback)
 ==
