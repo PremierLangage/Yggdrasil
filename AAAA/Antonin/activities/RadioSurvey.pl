@@ -124,7 +124,7 @@ for i, r in enumerate(radio):
     answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
 
 
-if unique_choice != "False" and len(answer) != int(NUMBER_QUESTIONS):
+if (unique_choice != "False") and len(answer) != int(NUMBER_QUESTIONS):
     score = 0
 
 if int(score) == 100:
