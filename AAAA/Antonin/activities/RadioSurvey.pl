@@ -39,7 +39,7 @@ tout à fait d'accord
 ==
 
 before==#|python|
-
+import json
 from database_utils import get_session, Base, RadioResponse
 
 QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
