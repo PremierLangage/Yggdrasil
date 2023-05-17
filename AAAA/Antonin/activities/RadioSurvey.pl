@@ -48,7 +48,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     La couleur bleu
 
-    ==
+    ==#|markdown|
 
     </code>
 
