@@ -60,7 +60,8 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     Exemple:
 
-    ```unique_answers = True```
+    > ```unique_answers = True```
+    
 ---
 
 ==
