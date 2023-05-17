@@ -10,7 +10,6 @@ question_1 = Que pensez vous de cet exercice?
 question_2 = Et globalement de PL
 question_3 = Êtes vous satisfait de l'affichage des graphes
 
-
 items==
 Très satisfaisant
 Satisfaisant
