@@ -62,7 +62,7 @@ else:
                 email       = user__email,
                 title       = title,
                 text        = text,
-                grade       = score,
+                grade       = score
             )
         )
         session.commit()
