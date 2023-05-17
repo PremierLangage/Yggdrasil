@@ -90,7 +90,6 @@ formstudent==#|html|
   }
 }
 </style>
-{{data.items()}}
 <div style="display:flex; flex-direction:column">
     <b style="color: red">No form Student were defined</b>
     <p>
@@ -131,7 +130,7 @@ graphContent = stat.get_graph_as_html(containsScript=True)
 ==
 
 form==#|html|
-{% if user__role == "teacher" %}
+{% if user__role != "teacher" %}
 <style>
     .graph {
         display:flex;
