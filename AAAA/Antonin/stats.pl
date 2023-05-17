@@ -113,8 +113,9 @@ before_stat==#|python|
 from database_utils import get_session, Base, Response
 from stats_utils import Stat, StatInput
 
-with get_session(table_class= Response, base=Base) as session:
-    HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
+__response = Response(activity__id)
+with get_session(table_class= __response, base=Base) as session:
+    HAS_ANSWERED = (session.query(__response).filter(__response.student_id == user__id).first()) != None
 ==
 
 before==#|python|
