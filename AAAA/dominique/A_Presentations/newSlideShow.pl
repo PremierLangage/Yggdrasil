@@ -48,6 +48,7 @@ if numero<len(slides):
 
 ==
 
+before=
 
 evaluator==
 
