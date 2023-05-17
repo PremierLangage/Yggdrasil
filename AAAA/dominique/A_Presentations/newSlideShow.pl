@@ -51,7 +51,14 @@ if numero<len(slides):
 
 evaluator==
 
-numero+=1
+for e in selectable.selections:
+    e['css'] = "error-state"
+    if e['index'] is 0 :
+        numero -=1
+        if numero <0:
+            numero = 0
+    if e['index'] is 1 : # restart
+        numero = 0
 if numero<len(slides):
     text=slides[numero][1]+ f"   \n <p style='text-align:right;'>Slide {numero}</p> \n"
     title= slides[numero][0].strip("#") 
@@ -84,13 +91,6 @@ form==
 evaluator==
 score = 100
 
-for e in selectable.selections:
-    e['css'] = "error-state"
-    if e['index'] in indices:
-        e['css'] = "success-state"
-        indices = [i for i in indices if i != e['index']]
-    else:
-        indices.append(e['css'])
 
 ==
 
