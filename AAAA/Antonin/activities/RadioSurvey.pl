@@ -70,16 +70,16 @@ for i in range(len(QUESTIONS)):
     tmp = RadioGroup(cid=str(i))
     tmp.question = QUESTIONS[i]
     tmp.items = []
-    print(f"in - {items}", file=sys.stderr)
     for j, item in enumerate(items.splitlines()):        
         tmp.items.append({ "id": j+1, "content": item })
     globals()[str(i)] = tmp
     radio.append(vars(tmp))
-print(f"out - {items}", file=sys.stderr)
 
 if user__role == "teacher":
+    print(f"1 - {items}", file=sys.stderr)
     labels = items.splitlines()
     data = { q : [labels, []] for q in QUESTIONS}
+    print(f"2 - {data}", file=sys.stderr)
     answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
     with get_session(table_class= RadioResponse, base=Base) as session:
         answers = session.query(RadioResponse.value).all()
