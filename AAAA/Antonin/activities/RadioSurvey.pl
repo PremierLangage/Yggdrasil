@@ -53,13 +53,13 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 **Options:**
 
--  **`unique_answers`** : `Boolean`   -   Défaut: `False`
+-  **`unique_choice`** : `Boolean`   -   Défaut: `False`
 
     > L'utilisateur doit-il choisir une réponse différente par question
 
     Exemple:
 
-    > ```unique_answers = True```
+    > ```unique_choice = True```
     
 ---
 
