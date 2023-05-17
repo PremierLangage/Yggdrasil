@@ -108,7 +108,6 @@ formstudent==#|html|
 ==
 
 before_stat==#|python|
-import os, sys, time, json
 from database_utils import get_session, Base, Response
 from stats_utils import Stat, StatInput
 
