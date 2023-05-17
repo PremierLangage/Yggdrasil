@@ -3,7 +3,7 @@ extends = /AAAA/Antonin/activities/RadioSurvey.pl
 title = Exercice d'exemple | RadioGroup
 
 text==#|markdown|
-Ceci est un exemple d'exercice visant à montrer l'utilisation de l'activité PL [`RadioSurvey.pl`](Yggdrasil/AAAA/Antonin/activities/RadioSurvey.pl) dont voici la documentation:
+Ceci est un exemple d'exercice visant à montrer l'utilisation de l'activité PL [`RadioSurvey.pl`](filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/activities/RadioSurvey.pl) dont voici la documentation:
 
 Ici vous pouvez définir une activité de RadioGroup incluant le module de Statistique:
 
