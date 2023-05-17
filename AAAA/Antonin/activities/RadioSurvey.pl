@@ -133,11 +133,9 @@ if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
     score = 0
 
 if int(score) == 100:
-    __response = Response(activity__id)
-    with get_session(table_class = __response, base=Base) as session:
+    with get_session(table_class = Response, base=Base) as session:
         session.add(
             RadioResponse(
-                table_identifer=activity__id
                 student_id = user__id if user__id else session__id, 
                 username    = user__username,
                 firstname   = user__firstname,
