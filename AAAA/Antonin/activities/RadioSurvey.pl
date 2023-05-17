@@ -19,7 +19,7 @@ Ici vous pouvez définir une activité de RadioGroup incluant le module de Stati
 
 Pour ce faire vous devez définir les variables globales suivantes:
 
-- Un ensemble de question au format suivant : `question_X`
+- Un ensemble de question au format suivant : `question_X`:
 
     Où X est un identifiant se devant d'être unique et n'ayant aucune incidence dans la suite du code.
 
@@ -30,6 +30,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     > ```question_plus_pertinente = Est-ce que vous aussi vous avez du mal à finir vos...```
 
+- Une liste de réponses possibles dans une variable `items`, une réponse équivaut à une ligne:
 
 
  
@@ -52,8 +53,6 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 # Possibilité de réponses aux questions:
 # Doivent être uniques
-items==
-==
 
 before==#|python|
 import json
