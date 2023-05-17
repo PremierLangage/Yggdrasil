@@ -1,5 +1,5 @@
-
 extends = /AAAA/Antonin/activities/RadioSurvey.pl
+
 title = Exercice d'exemple | RadioGroup
 
 text==#|markdown|
