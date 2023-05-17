@@ -25,17 +25,10 @@ Où X est un identifiant se devant d'être unique et n'ayant aucune incidence da
 # exemple :
 # question_1=<b>première question</b>
 # question_a=<b>deuxième question</b>
-question_1=<b>première question</b>
-question_a=<b>deuxième question</b>
 
 # Possibilité de réponses aux questions:
 # Doivent être uniques
 items==
-pas du tout d'accord 
-pas d'accord
-sans option
-d'accord
-tout à fait d'accord
 ==
 
 before==#|python|
