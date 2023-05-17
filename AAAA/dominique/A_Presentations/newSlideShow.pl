@@ -59,6 +59,7 @@ for e in selectable.selections:
             numero = 0
     if e['index'] is 1 : # restart
         numero = 0
+
 if numero<len(slides):
     text=slides[numero][1]+ f"   \n <p style='text-align:right;'>Slide {numero}</p> \n"
     title= slides[numero][0].strip("#") 
