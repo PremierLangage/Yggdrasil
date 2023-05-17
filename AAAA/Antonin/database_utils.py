@@ -7,9 +7,10 @@ from sqlalchemy.orm import Mapped
 from sqlalchemy.orm import mapped_column, relationship
 
 Base = declarative_base()
-
+import sys
 def get_session(table_class, base, db_url = "activities-db", db_name = "activity_db", db_user = "activity_user", db_password = "Dimz80k7X97!"):
     engine = create_engine(f"postgresql://{db_user}:{db_password}@{db_url}/{db_name}")
+    print(dir(table_class), file=sys.stderr)
     if not inspect(engine).has_table(table_class.__tablename__):
         base.metadata.create_all(engine)
     return sessionmaker(bind=engine)()
