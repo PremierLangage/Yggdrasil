@@ -64,6 +64,12 @@ def generer_histogramme(votes : list, id : str, labels : list, title : str = "St
                             y: {{
                                 beginAtZero: true
                             }}
+                        }},
+                        plugins: {{
+                            title: {{
+                                display: true,
+                                text: donnees.title  // Utiliser le titre du graphe ici
+                            }}
                         }}
                     }}
                 }});
