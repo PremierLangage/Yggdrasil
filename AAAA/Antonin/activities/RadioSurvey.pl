@@ -1,9 +1,8 @@
 extends = /AAAA/Antonin/stats.pl
 
-# Ecrire un titre ici
 title= Test title
 
-# Ecrire un énoncé ici
+# Enonce / Tutoriel d'utilisation d'un RadioSurvey
 text==#|markdown|
 Ici vous pouvez définir une activité de RadioGroup incluant le module de Statistique:
 
