@@ -51,10 +51,13 @@ Pour ce faire vous devez définir les variables globales suivantes:
     ==
 
     </code>
- 
+
+- Par défaut l'utilisateur peut rentrer librement un choix par réponse. Si vous souhaitez que l'utilisateur ne puisse pas selectionner le même choix sur plusieurs questions différentes vous pouvez définir la variable : **`unique_answers = True`**
 ---
 
 ==
+
+unique_choice = False
 
 before==#|python|
 import json, sys
@@ -112,7 +115,7 @@ for i, r in enumerate(radio):
     answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
 
 
-if False and len(answer) != int(NUMBER_QUESTIONS):
+if unique_choice and len(answer) != int(NUMBER_QUESTIONS):
     score = 0
 
 if int(score) == 100:
