@@ -33,9 +33,6 @@ class Response(Base):
     # Grade value:
     grade : Mapped[int] = mapped_column(Integer)
 
-    def __init__(self, table_identifer : str):
-        self.__tablename__ = table_identifer
-
     def __repr__(self):
           return f"{self.student_id} a obtenu un score de : {self.grade}."
 
