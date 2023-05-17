@@ -37,7 +37,7 @@ for s in slides:
 
 slides=docslides
 if numero<len(slides):
-    text=slides[numero][1]+ f"   \n <br><p style='text-align:right;'>Slide {numero}</p> \n"
+    text=slides[numero][1]+ f"   \n <br/><p style='text-align:right;'>Slide {numero}</p> \n"
     title= slides[numero][0].strip("#") 
 
 
