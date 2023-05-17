@@ -33,9 +33,10 @@ def generer_histogramme(
         votes : list, 
         id : str, 
         labels : list, 
-        title : str = "Statistiques",
-        backgroundColor : str = 'rgba(75, 192, 250, 0.2)',
-        borderColor : str     = 'rgba(75, 192, 250, 1)') -> str:
+        title : str             = "Statistiques",
+        backgroundColor : str   = 'rgba(75, 192, 250, 0.2)',
+        borderColor : str       = 'rgba(75, 192, 250, 1)',
+        borderWidth : int       = 1) -> str:
     # Extraire les valeurs
     valeurs, frequences = generate_histogram_data(votes, set(labels))
     # Créer le dictionnaire de données pour Chart.js
@@ -46,7 +47,7 @@ def generer_histogramme(
             'data': frequences,
             'backgroundColor': backgroundColor,
             'borderColor': borderColor,
-            'borderWidth': 1
+            'borderWidth': borderWidth
         }],
         'title': title
     }
@@ -56,6 +57,7 @@ def generer_histogramme(
 
     # Générer le code HTML et JavaScript correspondant à l'histogramme
     html = f'''
+        <br>
         <canvas id="histogramme-{id}"></canvas>
         <script>
             document.addEventListener('DOMContentLoaded', function() {{
