@@ -22,8 +22,10 @@ if user__role == "teacher":
 
     with get_session(table_class=Response, base=Base) as session:
         answers = session.query(Response.grade).all()
+    
 ==
 
 formstudent==#|html|
+{{answers}}
 {{ editor|component }}
 ==
