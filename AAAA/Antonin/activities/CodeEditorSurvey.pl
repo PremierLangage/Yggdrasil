@@ -41,7 +41,6 @@ formstudent==#|html|
 
 evaluator==#|py|
 from database_utils import get_session, Base, Response
-import json
 
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
