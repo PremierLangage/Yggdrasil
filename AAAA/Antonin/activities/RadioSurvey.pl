@@ -4,10 +4,34 @@ extends = /AAAA/Antonin/stats.pl
 title= Test title
 
 # Ecrire un énoncé ici
-text ==
-Ici vous pouvez définir des questions au format suivant : `question_X`
+text ==#|markdown|
+Ici vous pouvez définir une activité de RadioGroup incluant le module de Statistique:
 
-Où X est un identifiant se devant d'être unique et n'ayant aucune incidence dans la suite du code.
+    - exercice radio : selection de choix répondant à une liste de question
+
+    - affichage de graphe (histogramme) représentant les données pour l'enseignant
+
+    - récupération des entrées au format `csv`
+
+---
+
+**Manuel utilisateur:**
+
+Pour ce faire vous devez définir les variables globales suivantes:
+
+- Un ensemble de question au format suivant : `question_X`
+
+    Où X est un identifiant se devant d'être unique et n'ayant aucune incidence dans la suite du code.
+
+
+    Exemple:
+
+    > ```question_1 = Que pensez-vous de ce tutoriel ?```
+
+    > ```question_plus_pertinente = Est-ce que vous aussi vous avez du mal à finir vos...```
+
+
+
  
 ---
 
