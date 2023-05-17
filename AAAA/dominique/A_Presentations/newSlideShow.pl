@@ -77,7 +77,7 @@ else:
 
 
 selectable =: Text
-selectable.text = Back Forward
+selectable.text = Back Restart
 selectable.mode = word
 
 beforeB==
