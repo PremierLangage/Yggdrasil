@@ -73,7 +73,7 @@ for i in range(len(QUESTIONS)):
     globals()[str(i)] = tmp
     radio.append(vars(tmp))
 
-if user__role == "teacher":
+if user__role == "teacher" and NUMBER_QUESTIONS != 0:
     labels = items.splitlines()
     data = { q : [labels, []] for q in QUESTIONS}
     answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
