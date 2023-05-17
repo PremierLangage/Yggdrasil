@@ -22,7 +22,7 @@ if user__role == "teacher":
 
     with get_session(table_class=Response, base=Base) as session:
         answers = session.query(Response.grade).all()
-    data = list(map(lambda x : x['_data'][0]), answers)
+    data = list(map(lambda x : x['_data'][0], answers))
 
     globals()["data"] = data
 ==
@@ -30,4 +30,14 @@ if user__role == "teacher":
 formstudent==#|html|
 {{ data}}
 {{ editor|component }}
+==
+
+evaluator==#|py|
+
+if "if" in editor.code:
+    grade = (100, f"student code:\n{editor.code}")
+else:
+    grade=(0," non vous n'avez pas répondu a la question")
+
+
 ==
