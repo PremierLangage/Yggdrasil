@@ -55,7 +55,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 -  **`unique_answers`** : `Boolean`   -   Défaut: `False`
 
-    > L'utilisateur peut-il choisir la même réponse pour des questions différentes
+    > L'utilisateur doit-il choisir une réponse différente par question
 
     Exemple:
 
@@ -65,6 +65,8 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 ==
 
+# Flags:
+# L'utilisateur doit-il choisir une réponse différente par question
 unique_choice = False
 
 before==#|python|
