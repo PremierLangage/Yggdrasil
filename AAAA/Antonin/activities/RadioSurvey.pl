@@ -89,13 +89,13 @@ if user__role == "teacher" and NUMBER_QUESTIONS != 0:
 formstudent==#|html|
 {% if False and HAS_ANSWERED != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
-    {% else %}
-        {% for r in radio %}
-            {{ r.question|safe }}
+{% else %}
+    {% for r in radio %}
+        {{ r.question|safe }}
 
-            {{ r|component }}
+        {{ r|component }}
 
-        {% endfor %}
+    {% endfor %} 
 {% endif %}
 ==
 
@@ -112,7 +112,7 @@ for i, r in enumerate(radio):
     answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
 
 
-if len(answer) != int(NUMBER_QUESTIONS):
+if False and len(answer) != int(NUMBER_QUESTIONS):
     score = 0
 
 if int(score) == 100:
