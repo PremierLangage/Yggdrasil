@@ -4,7 +4,7 @@ extends = /AAAA/Antonin/stats.pl
 title= Test title
 
 # Ecrire un énoncé ici
-text ==#|markdown|
+text==#|markdown|
 Ici vous pouvez définir une activité de RadioGroup incluant le module de Statistique:
 
     - exercice radio : selection de choix répondant à une liste de question
@@ -32,15 +32,28 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 - Une liste de réponses possibles dans une variable **`items`**, une réponse équivaut à une ligne:
 
+    Exemple:
 
+    <code>
+    
+    items==
+
+    Bien
+
+    Passable
+
+    Mal (faute de goût objectivement)
+
+    42
+
+    La couleur bleu
+
+    ==
+
+    </code>
  
 ---
 
-<u>exemples :</u>
-
-> **question_1**=`<b>première question</b>`
-
-> **question_a**=`<b>deuxième question</b>`
 ==
 
 # Vous pouvez définir des questions au format suivant : question_X
