@@ -36,10 +36,10 @@ def generer_histogramme(votes : list, id : str, labels : list, title : str = "St
     donnees = {
         'labels': valeurs,
         'datasets': [{
-            'label': 'Fréquence des votes',
+            'label': 'Fréquence des valeurs',
             'data': frequences,
-            'backgroundColor': 'rgba(75, 192, 192, 0.2)',
-            'borderColor': 'rgba(75, 192, 192, 1)',
+            'backgroundColor': 'rgba(75, 192, 250, 0.2)',
+            'borderColor': 'rgba(75, 192, 250, 1)',
             'borderWidth': 1
         }],
         'title': title
