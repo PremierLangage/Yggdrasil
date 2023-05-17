@@ -35,13 +35,21 @@ Pour ce faire vous devez définir les variables globales suivantes:
     Exemple:
 
     <code>
+    
     items==
+
     Bien
+
     Passable
+
     Mal (faute de goût objectivement)
+
     42
+
     La couleur bleu
+
     ==
+
     </code>
  
 ---
