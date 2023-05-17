@@ -6,8 +6,6 @@ from sqlalchemy import Text, Integer, ForeignKey, String
 from sqlalchemy.orm import Mapped
 from sqlalchemy.orm import mapped_column, relationship
 
-global activity__id
-
 Base = declarative_base()
 
 def get_session(table_class, base, db_url = "activities-db", db_name = "activity_db", db_user = "activity_user", db_password = "Dimz80k7X97!"):
@@ -20,7 +18,7 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
 class Response(Base):
     base = Base 
     id : Mapped[int] = mapped_column(primary_key=True)
-    __tablename__ = activity__id
+    __tablename__ = "test_db_with_stat_0"
     # User Informations:
     username : Mapped[str] = mapped_column(String)
     firstname : Mapped[str] = mapped_column(String)
