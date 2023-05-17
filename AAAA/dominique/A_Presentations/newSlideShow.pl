@@ -61,7 +61,8 @@ for e in selectable.selections:
             numero = 0
     if e['index'] is 1 : # restart
         numero = 0
-
+    if  e['index'] is 2 : # End
+        numero = len(slides)
 if numero<len(slides):
     text=slides[numero][1]+ f"   \n <p style='text-align:right;'>Slide {numero}</p> \n"
     title= slides[numero][0].strip("#") 
@@ -77,7 +78,7 @@ else:
 
 
 selectable =: Text
-selectable.text = Back Restart
+selectable.text = Back Restart end
 selectable.mode = word
 
 beforeB==
