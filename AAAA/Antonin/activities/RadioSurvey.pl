@@ -133,7 +133,7 @@ if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
     score = 0
 
 if int(score) == 100:
-    with get_session(table_class = RadioResponse, base=Base) as session:
+    with get_session(table_class = Response, base=Base) as session:
         session.add(
             RadioResponse(
                 student_id = user__id if user__id else session__id, 
