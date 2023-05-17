@@ -89,7 +89,7 @@ if user__role == "teacher":
         for k, v in json.loads(str(answer[0])).items():
             data[QUESTIONS[int(v)]][1].append(k)
     globals()["data"] = data
-print(f"4 - {answers}", file=sys.stderr)
+print(f"4 - {data}", file=sys.stderr)
 ==
 
 formstudent==#|html|
