@@ -25,13 +25,16 @@ class Response(Base):
     lastname : Mapped[str] = mapped_column(String)
     email : Mapped[str] = mapped_column(String)
     student_id : Mapped[int] = mapped_column(Integer)
-
+ 
     # Exercise Informations:
     title : Mapped[str] = mapped_column(String)
     text : Mapped[Text] = mapped_column(Text)   
 
     # Grade value:
     grade : Mapped[int] = mapped_column(Integer)
+
+    def __init__(self, table_identifer : str):
+        self.__tablename__ = table_identifer
 
     def __repr__(self):
           return f"{self.student_id} a obtenu un score de : {self.grade}."
