@@ -36,7 +36,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     <code>
     
-    items==
+    items\=\=
 
     Bien
 
@@ -48,7 +48,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     La couleur bleu
 
-    ==
+    \=\=
 
     </code>
 
@@ -58,7 +58,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     > L'utilisateur peut-il choisir la même réponse pour des questions différentes
 
-    Exemple:
+    Exemple
 
     > ```unique_answers = True```
 ---
