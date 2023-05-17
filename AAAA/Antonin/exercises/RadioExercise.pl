@@ -4,6 +4,39 @@ title = Exercice d'exemple | RadioGroup
 
 text==
 Ceci est un exemple d'exercice visant à montrer l'utilisation de l'activité PL [`RadioSurvey.pl`](/AAAA/Antonin/activities/RadioSurvey.pl)
+
+text ==#|markdown|
+Ici vous pouvez définir une activité de RadioGroup incluant le module de Statistique:
+
+    - exercice radio : selection de choix répondant à une liste de question
+
+    - affichage de graphe (histogramme) représentant les données pour l'enseignant
+
+    - récupération des entrées au format `csv`
+
+---
+
+**Manuel utilisateur:**
+
+Pour ce faire vous devez définir les variables globales suivantes:
+
+- Un ensemble de question au format suivant : **`question_X`**:
+
+    Où X est un identifiant se devant d'être unique et n'ayant aucune incidence dans la suite du code.
+
+
+    Exemple:
+
+    > ```question_1 = Que pensez-vous de ce tutoriel ?```
+
+    > ```question_plus_pertinente = Est-ce que vous aussi vous avez du mal à finir vos...```
+
+- Une liste de réponses possibles dans une variable **`items`**, une réponse équivaut à une ligne:
+
+
+ 
+---
+
 ==
 
 question_1 = Que pensez vous de cet exercice?
