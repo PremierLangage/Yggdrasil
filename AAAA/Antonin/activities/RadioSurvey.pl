@@ -83,7 +83,8 @@ if user__role == "teacher":
     answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
     with get_session(table_class= RadioResponse, base=Base) as session:
         answers = session.query(RadioResponse.value).all()
- 
+    
+    print(f"3 - {answers}", file=sys.stderr)
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
             data[QUESTIONS[int(v)]][1].append(k)
