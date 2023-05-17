@@ -8,7 +8,7 @@
 text=
 form=
 
-@ slides.md [slides.md]
+@ lot1.md [slides.md]
 
 
 
