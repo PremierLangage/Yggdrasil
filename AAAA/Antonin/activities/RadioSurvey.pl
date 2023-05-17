@@ -76,20 +76,18 @@ for i in range(len(QUESTIONS)):
     radio.append(vars(tmp))
 
 if user__role == "teacher":
-    print(f"1 - {items}", file=sys.stderr)
     labels = items.splitlines()
     data = { q : [labels, []] for q in QUESTIONS}
-    print(f"2 - {data}", file=sys.stderr)
     answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
     with get_session(table_class= RadioResponse, base=Base) as session:
         answers = session.query(RadioResponse.value).all()
     
-    print(f"3 - {answers}", file=sys.stderr)
+    print(f"in - {answers}", file=sys.stderr)
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
             data[QUESTIONS[int(v)]][1].append(k)
     globals()["data"] = data
-print(f"4 - {data}", file=sys.stderr)
+print(f"out - {data}", file=sys.stderr)
 ==
 
 formstudent==#|html|
