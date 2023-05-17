@@ -10,8 +10,12 @@ form=
 
 @ slides.md [slides.md]
 
+
+
+
+
 title=Des slides pour vous  
-before==
+beforeA==
 
 
 def getfirstnomlancklineandcut(s):
@@ -59,4 +63,34 @@ else:
 
 
 
+
+
+
+selectable =: Text
+selectable.text = Back Forward
+selectable.mode = word
+
+beforeB==
+selectable.separator = ' '
+==
+
+
+
+
+form==
+{{ selectable|component}}
+==
+
+evaluator==
+score = 100
+
+for e in selectable.selections:
+    e['css'] = "error-state"
+    if e['index'] in indices:
+        e['css'] = "success-state"
+        indices = [i for i in indices if i != e['index']]
+    else:
+        indices.append(e['css'])
+
+==
 
