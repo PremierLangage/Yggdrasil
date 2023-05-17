@@ -53,16 +53,16 @@ else:
     else:
         score = 0
     with get_session(table_class = Response, base=Base) as session:
-    session.add(
-        Response(
-            student_id = user__id if user__id else session__id, 
-            username    = user__username,
-            firstname   = user__firstname,
-            lastname    = user__lastname,
-            email       = user__email,
-            title       = title,
-            text        = text,
-            grade       = score,
-    session.commit()
+        session.add(
+            Response(
+                student_id = user__id if user__id else session__id, 
+                username    = user__username,
+                firstname   = user__firstname,
+                lastname    = user__lastname,
+                email       = user__email,
+                title       = title,
+                text        = text,
+                grade       = score,
+        session.commit()
 grade = (score, feedback)
 ==
