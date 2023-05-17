@@ -116,7 +116,7 @@ formstudent==#|html|
 {% endif %}
 ==
 
-# EVALUATE THE STUDENT ANSWER
+# Evaluation de la réponse de l'étudiant
 evaluator == #|py|
 from database_utils import get_session, Base, RadioResponse
 import json
