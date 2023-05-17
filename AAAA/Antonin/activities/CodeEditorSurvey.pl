@@ -40,7 +40,7 @@ formstudent==#|html|
 ==
 
 evaluator==#|py|
-from database_utils import get_session, Base, Response
+from database_utils import get_session, Base, CodeEditorResponse
 
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
@@ -52,9 +52,9 @@ else:
         score = 100
     else:
         score = 0
-    with get_session(table_class = Response, base=Base) as session:
+    with get_session(table_class = CodeEditorResponse, base=Base) as session:
         session.add(
-            Response(
+            CodeEditorResponse(
                 student_id  = user__id if user__id else session__id, 
                 username    = user__username,
                 firstname   = user__firstname,
