@@ -56,21 +56,6 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 ==
 
-# Vous pouvez définir des questions au format suivant : question_X
-# Où X est un identifiant se devant d'être unique et n'ayant aucune
-# incidence dans la suite du code.
-#
-# exemple :
-# question_1=<b>première question</b>
-# question_a=<b>deuxième question</b>
-
-# Possibilité de réponses aux questions:
-# Doivent être uniques
-items==
-Dummy
-Test
-==
-
 before==#|python|
 import json, sys
 from database_utils import get_session, Base, RadioResponse
