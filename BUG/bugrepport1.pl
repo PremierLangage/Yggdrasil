@@ -40,8 +40,8 @@ inputstring=inputbox.value
 @ /grader/evaluator.py [grader.py]
 
 evaluator==
-a=inputbox.value
-b="inputstring"
+a=editor.code
+b=eval(a)
 c=str(response)
 grade= (33,f"aa {a} bb{b} cc{c} ")
 
