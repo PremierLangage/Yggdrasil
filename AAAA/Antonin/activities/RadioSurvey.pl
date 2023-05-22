@@ -128,13 +128,13 @@ answer = {}
 for i, r in enumerate(radio):
     answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
 
+# Default Grade intilisation
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
 ==
 
 #default evaluator
 evaluator==#|py| 
-score = 100
 if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
     score = -1
 ==
