@@ -1,8 +1,5 @@
 extends = /AAAA/Antonin/stats.pl
 
-grader  =@ /grader/evaluator.py
-
-
 title= Dummy Title CodeEditorSurvey
 
 text==
