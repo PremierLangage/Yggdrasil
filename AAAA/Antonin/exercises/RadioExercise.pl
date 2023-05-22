@@ -23,3 +23,6 @@ score = 42
 if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
     score = 0
 ==
+
+include_stats_score = True
+include_stats_participation = True
