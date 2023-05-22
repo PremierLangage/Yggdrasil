@@ -136,11 +136,15 @@ formstudent==#|html|
 ==
 
 before_stat==#|python|
-with open("database_utils.py", "w+") as f:
-    f.write(f"activity__id = '{activity__id}'")
+
+from database_name import set_database_name
+
+set_database_name(f'prout{Response.__tablename__}{activity__id}')
+
 
 from database_utils import get_session, Base, Response, CodeEditorResponse
 from stats_utils import Stat, StatInput
+
 
 Response.__tablename__ = f'prout{Response.__tablename__}{activity__id}'
 with get_session(table_class= Response, base=Base) as session:
