@@ -39,9 +39,13 @@ class Response(Base):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
 
 class CodeEditorResponse(Response):
+    __mapper_args__ = {'polymorphic_identity' : 'codeEditor'}
+
     score : Mapped[int] = mapped_column(Integer)
 
 
 
 class RadioResponse(Response):
+    __mapper_args__ = {'polymorphic_identity' : 'radio'}
+
     value : Mapped[Text] = mapped_column(Text)
