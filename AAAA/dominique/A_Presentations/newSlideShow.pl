@@ -15,7 +15,14 @@ form=
 
 
 title=Des slides pour vous  
-beforeA==
+
+XeforeA==
+import markdown 
+
+
+==
+
+beforeB==
 
 def getfirstnomblancklineandcut(s):
     global text
