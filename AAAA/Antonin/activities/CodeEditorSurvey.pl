@@ -55,8 +55,7 @@ evaluator==#|py|
 evaluator_after==#|py|
 if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
     score = -1
-    
-if score >= 0:
+else:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
         session.add(
             CodeEditorResponse(
