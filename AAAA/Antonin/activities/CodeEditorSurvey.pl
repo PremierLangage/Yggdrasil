@@ -34,7 +34,6 @@ if user__role == "teacher":
 
 formstudent==#|html|
 {{ answers }}
-{{ data }}
 {{ editor|component }}
 ==
 
