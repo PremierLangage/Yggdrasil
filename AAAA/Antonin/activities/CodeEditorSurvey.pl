@@ -49,9 +49,10 @@ if editor.codes[0]['defaultCode'] == editor.code:
     score = -1
 ==
 
+#default evaluator dummy
 evaluator==#|py|
-
 ==
+
 evaluator_after==#|py|
 if score >= 0:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
