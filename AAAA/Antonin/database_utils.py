@@ -48,7 +48,6 @@ def init(tablename):
 
     class RadioResponse(Response):        
         __tablename__ = "db_survey_radio_1"
-
         value : Mapped[Text] = mapped_column(Text)
 
     class CodeEditorResponse(Response):
