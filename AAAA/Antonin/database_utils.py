@@ -14,32 +14,33 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
     return sessionmaker(bind=engine)()
 
 
-class Response(Base):
-    base = Base 
-    __tablename__ = tablename
-   
-    id : Mapped[int] = mapped_column(primary_key=True)
-    # User Informations:
-    username : Mapped[str] = mapped_column(String)
-    firstname : Mapped[str] = mapped_column(String)
-    lastname : Mapped[str] = mapped_column(String)
-    email : Mapped[str] = mapped_column(String)
-    student_id : Mapped[int] = mapped_column(Integer)
- 
-    # Exercise Informations:
-    title : Mapped[str] = mapped_column(String)
-    text : Mapped[Text] = mapped_column(Text)   
+def init(tablename):
+    class Response(Base):
+        base = Base 
+        __tablename__ = tablename
+    
+        id : Mapped[int] = mapped_column(primary_key=True)
+        # User Informations:
+        username : Mapped[str] = mapped_column(String)
+        firstname : Mapped[str] = mapped_column(String)
+        lastname : Mapped[str] = mapped_column(String)
+        email : Mapped[str] = mapped_column(String)
+        student_id : Mapped[int] = mapped_column(Integer)
+    
+        # Exercise Informations:
+        title : Mapped[str] = mapped_column(String)
+        text : Mapped[Text] = mapped_column(Text)   
 
-    # Grade value:
-    grade : Mapped[int] = mapped_column(Integer)
+        # Grade value:
+        grade : Mapped[int] = mapped_column(Integer)
 
-    def __repr__(self):
-          return f"{self.student_id} a obtenu un score de : {self.grade}."
+        def __repr__(self):
+            return f"{self.student_id} a obtenu un score de : {self.grade}."
 
 
 
-class RadioResponse(Response):
-    value : Mapped[Text] = mapped_column(Text)
+    class RadioResponse(Response):
+        value : Mapped[Text] = mapped_column(Text)
 
-class CodeEditorResponse(Response):
+    class CodeEditorResponse(Response):
     score : Mapped[int] = mapped_column(Integer)
