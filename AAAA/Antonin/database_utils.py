@@ -41,7 +41,7 @@ class Response(Base):
 
 class CodeEditorResponse(Response):
     __mapper_args__ = {'polymorphic_identity' : 'codeEditor'}
-
+    id : Mapped[int] = mapped_column(ForeignKey("parent_table.id"))
     score : Mapped[int] = mapped_column(Integer)
 
 
