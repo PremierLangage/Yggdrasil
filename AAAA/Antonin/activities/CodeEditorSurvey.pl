@@ -15,6 +15,7 @@ editor.code ==
 
 
 before==#|python|
+    globals()["data"] = {}
 ==
 
 formstudent==#|html|
