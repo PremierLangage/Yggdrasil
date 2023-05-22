@@ -6,7 +6,6 @@ text==
 TODO # Enonce / Tutoriel d'utilisation d'un RadioSurvey
 ==
 
-editor =: CodeEditor
 editor.theme = dark
 editor.language = python
 editor.code ==
