@@ -16,7 +16,7 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
 
 class Response(Base):
     base = Base 
-    __tablename__ = "tablename_test_1"
+    __tablename__ = "tablename_test_2"
 
     id : Mapped[int] = mapped_column(primary_key=True)
     # User Informations:
@@ -38,8 +38,3 @@ class Response(Base):
 
 class CodeEditorResponse(Response):
     score : Mapped[int] = mapped_column(Integer)
-
-
-
-class RadioResponse(Response):
-    value : Mapped[Text] = mapped_column(Text)
