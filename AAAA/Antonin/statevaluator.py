@@ -55,9 +55,9 @@ if __name__ == "__main__":
     dic = get_context()
     dic['response'] = get_answers()
 
-    test_before_clause('evaluator_before')
-    test_before_clause('evaluator')
-    test_before_clause('evaluator_after')
+    test_before_clause('evaluator_before', dic)
+    test_before_clause('evaluator', dic)
+    test_before_clause('evaluator_after', dic)
     
     if 'grade' not in dic:
         print(missing_grade_stderr, file=sys.stderr)
