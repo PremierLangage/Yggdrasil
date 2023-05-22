@@ -53,7 +53,6 @@ def init(tablename):
 
     class CodeEditorResponse(Response):
         __tablename__ = "db_survey_codeeditor_1"
-
         score : Mapped[int] = mapped_column(Integer)
 
 
