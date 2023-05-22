@@ -32,7 +32,7 @@ if user__role == "teacher":
     with get_session(table_class=CodeEditorResponse, base=Base) as session:
         print("in", file=sys.stderr)
         t = text(f"SELECT count(*) FROM {CodeEditorResponse.__tablename__} GROUP BY student_id;")
-        answers = session.execute().all()
+        answers = session.execute(t).all()
 
     print(answers, file=sys.stderr)
     
