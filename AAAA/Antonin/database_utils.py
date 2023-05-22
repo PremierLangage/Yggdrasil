@@ -18,12 +18,14 @@ global RadioResponse
 global CodeEditorResponse
 
 def init(tablename):
-
-    
     class Response(Base):
         base = Base 
-        __tablename__ = tablename
-    
+        __tablename__ = None
+
+        def __init_subclass__(cls, **kwargs):
+            super().__init_subclass__(**kwargs)
+            cls.__tablename__ = cls.nom_table
+
         id : Mapped[int] = mapped_column(primary_key=True)
         # User Informations:
         username : Mapped[str] = mapped_column(String)
@@ -44,10 +46,14 @@ def init(tablename):
 
 
 
-    class RadioResponse(Response):
+    class RadioResponse(Response):        
+        __tablename__ = "db_survey_radio_1"
+
         value : Mapped[Text] = mapped_column(Text)
 
     class CodeEditorResponse(Response):
+        __tablename__ = "db_survey_codeeditor_1"
+
         score : Mapped[int] = mapped_column(Integer)
 
 
