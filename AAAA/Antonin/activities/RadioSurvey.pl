@@ -117,14 +117,9 @@ formstudent==#|html|
 {% endif %}
 ==
 
-scorer==#|py|
-score = 100
-if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
-    score = 0
-==
 
 # Evaluation de la réponse de l'étudiant
-evaluator == #|py|
+evaluator_before == #|py|
 from database_utils import get_session, Base, RadioResponse
 import json
 
@@ -133,9 +128,16 @@ feedback = '<span class="success-state">Réponse enregistrée</span>'
 answer = {}
 for i, r in enumerate(radio):
     answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
+==
 
-{{scorer}}
 
+evaluator==#|py|
+score = 100
+if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
+    score = 0
+==
+
+evaluator_after == #|py|
 if int(score) == 100:
     with get_session(table_class = RadioResponse, base=Base) as session:
         session.add(
