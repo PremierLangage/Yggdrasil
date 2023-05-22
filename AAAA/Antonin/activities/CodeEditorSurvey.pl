@@ -31,6 +31,7 @@ if user__role == "teacher":
 
     with get_session(table_class=CodeEditorResponse, base=Base) as session:
         answers = session.execute(text(f"SELECT count(*) FROM {CodeEditorResponse.__tablename__} GROUP BY student_id;")).all()
+    print(answers, file=sys.stderr)
     
     for answer in answers:
         data["tryAmount"][1].append(answer[0]) # mapping row -> int
