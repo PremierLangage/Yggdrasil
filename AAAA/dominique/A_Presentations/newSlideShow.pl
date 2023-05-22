@@ -6,7 +6,7 @@
 @ /grader/evaluator.py [grader.py]
 
 text=
-form=
+
 
 @ lot1.md [slides.md]
 
