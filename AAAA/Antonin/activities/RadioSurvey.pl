@@ -134,7 +134,7 @@ for i, r in enumerate(radio):
 evaluator==#|py| 
 score = 100
 if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
-    score = 0
+    score = -1
 ==
 
 evaluator_after == #|py|
@@ -149,7 +149,7 @@ if int(score) > 0:
                 email       = user__email,
                 title       = title,
                 text        = text,
-                grade       = 100,
+                grade       = score,
                 value       = json.dumps(answer)))
         session.commit()
 else :
