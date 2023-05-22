@@ -38,3 +38,8 @@ class Response(Base):
 
 class CodeEditorResponse(Response):
     score : Mapped[int] = mapped_column(Integer)
+
+
+
+class RadioResponse(Response):
+    value : Mapped[Text] = mapped_column(Text)
