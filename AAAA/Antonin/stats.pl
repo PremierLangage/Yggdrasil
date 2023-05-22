@@ -133,14 +133,15 @@ before_graph==#|python|
 # GRAPH GENERATION
 statInputs = [StatInput(title, values, labels) for title, (labels, values) in data.items()]
 if (include_stats_score != "False"):
-    result = [[], []]
+    values = []
+    labels = []
     with get_session(table_class=Response, base=Base) as session:
         answers = session.query(Response.grade).all()
     for answer in answers:
-        data["grade"][1].append(answer[0]) # mapping row -> int
-    [data["grade"][0].append(x) for x in data["grade"][1] if x not in data["grade"][0]]
-    data["grade"][0].sort()
-    statInputs.append(StatInput())
+        values.append(answer[0]) # mapping row -> int
+    [labels.append(x) for x in values if x not in labels]
+    labels.sort()
+    statInputs.append(StatInput("Score", values, labels))
 if (include_stats_participation != "False"):
 
     with get_session(table_class=CodeEditorResponse, base=Base) as session:
