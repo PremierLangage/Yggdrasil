@@ -16,6 +16,8 @@ h1 {
   font-weight: bold;
   color: red !important;
   font-size: 64px !important;
+  text-align: center;
+
 }
 
 
