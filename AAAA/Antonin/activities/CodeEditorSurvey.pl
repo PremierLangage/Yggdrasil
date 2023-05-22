@@ -35,8 +35,8 @@ if user__role == "teacher":
 ==
 
 formstudent==#|html|
-{{__save_editor_code}}
-{{editor.code}}
+save: {{__save_editor_code}}<br>
+code: {{editor.code}}<br>
 {{ editor|component }}
 ==
 
