@@ -41,9 +41,12 @@ formstudent==#|html|
 
 evaluator_before==#|py|
 from database_utils import get_session, Base, CodeEditorResponse
+
+# Default Grade intilisation
+score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
 
-score = 100
+
 if editor.codes[0]['defaultCode'] == editor.code:
     feedback = '<span class="error-state">Vous n\'avez rien saisis, annulation de l\'envois de la réponse</span>'
     score = -1
