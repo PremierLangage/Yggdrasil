@@ -59,7 +59,6 @@ if __name__ == "__main__":
     test_before_clause('evaluator')
     test_before_clause('evaluator_after')
     
-    
     if 'grade' not in dic:
         print(missing_grade_stderr, file=sys.stderr)
         sys.exit(1)
