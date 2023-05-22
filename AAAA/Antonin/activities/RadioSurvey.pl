@@ -139,10 +139,9 @@ evaluator==#|py|
 ==
 
 evaluator_after == #|py|
-
 if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
     score = -1
-    
+
 if int(score) >= 0:
     with get_session(table_class = RadioResponse, base=Base) as session:
         session.add(
