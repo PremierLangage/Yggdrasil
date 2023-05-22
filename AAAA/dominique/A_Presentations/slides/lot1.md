@@ -31,7 +31,7 @@ La version 2023 (Platon) devrait être en Béta avant l’été.
 <span style="center"> **Connectez Vous !**</span>
 
 
-<p style="center" > https://elearning.univ-eiffel.fr/</p>
+<p style="center" > https://elearning.univ-eiffel.fr/enrol/index.php?id=58</p>
 
 
 
