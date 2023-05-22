@@ -1,5 +1,8 @@
 extends = /AAAA/Antonin/stats.pl
 
+grader  =@ /grader/evaluator.py
+
+
 title= Dummy Title CodeEditorSurvey
 
 text==
@@ -43,6 +46,7 @@ from database_utils import get_session, Base, CodeEditorResponse
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
 
+
 ==
 
 # default evaluator dummy
@@ -50,7 +54,9 @@ evaluator==#|py|
 ==
 
 evaluator_after==#|py|
-if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
+
+if editor.codes[0]['defaultCode'] == editor.code:
+    feedback = '<span class="error-state">Vous n\'avez rien saisis, annulation de l\'envois de la réponse</span>'
     score = -1
 else:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
