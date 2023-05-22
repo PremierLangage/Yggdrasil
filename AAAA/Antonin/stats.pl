@@ -133,9 +133,9 @@ before_graph==#|python|
 # GRAPH GENERATION
 statInputs = [StatInput(title, values, labels) for title, (labels, values) in data.items()]
 if (include_stats_score != "False"):
+    result = [[], []]
     with get_session(table_class=Response, base=Base) as session:
-        answers = session.query(Response.score).all()
-    
+        answers = session.query(Response.grade).all()
     for answer in answers:
         data["grade"][1].append(answer[0]) # mapping row -> int
     [data["grade"][0].append(x) for x in data["grade"][1] if x not in data["grade"][0]]
