@@ -130,8 +130,8 @@ for i, r in enumerate(radio):
     answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
 ==
 
-
-evaluator==#|py| #default evaluator
+#default evaluator
+evaluator==#|py| 
 score = 100
 if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
     score = 0
