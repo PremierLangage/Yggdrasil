@@ -117,6 +117,11 @@ formstudent==#|html|
 {% endif %}
 ==
 
+scorer==#|py|
+if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
+    score = 0
+==
+
 # Evaluation de la réponse de l'étudiant
 evaluator == #|py|
 from database_utils import get_session, Base, RadioResponse
@@ -129,9 +134,7 @@ answer = {}
 for i, r in enumerate(radio):
     answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
 
-
-if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
-    score = 0
+{{scorer}}
 
 if int(score) == 100:
     with get_session(table_class = RadioResponse, base=Base) as session:
