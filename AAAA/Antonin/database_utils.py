@@ -41,12 +41,12 @@ class Response(Base):
 
 class CodeEditorResponse(Response):
     __mapper_args__ = {'polymorphic_identity' : 'codeEditor'}
-    id : Mapped[int] = mapped_column(ForeignKey("parent_table.id"))
+    id : Mapped[int] = mapped_column(ForeignKey(Response.__tablename__))
     score : Mapped[int] = mapped_column(Integer)
 
 
 
 class RadioResponse(Response):
     __mapper_args__ = {'polymorphic_identity' : 'radio'}
-
+    id : Mapped[int] = mapped_column(ForeignKey(Response.__tablename__))
     value : Mapped[Text] = mapped_column(Text)
