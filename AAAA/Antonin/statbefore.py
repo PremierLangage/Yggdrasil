@@ -17,7 +17,6 @@ def add_try_clause(code, excpt):
 def dobuilderclause(name,dic):
         glob = {}
         dic['StopBeforeExec'] = StopBeforeExec
-        print(add_try_clause(dic[name], StopBeforeExec), file=sys.stderr)
         exec(add_try_clause(dic[name], StopBeforeExec), dic)
         exec("", glob)
         for key in glob:
