@@ -33,6 +33,8 @@ class Response(Base):
     # Grade value:
     grade : Mapped[int] = mapped_column(Integer)
 
+    __mapper_args__ = {'polymorphic_on': reponse_type}
+
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
 
