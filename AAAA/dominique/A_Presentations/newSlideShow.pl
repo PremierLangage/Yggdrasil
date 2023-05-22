@@ -108,9 +108,9 @@ for e in selectable.selections:
 if numero<len(slides):
     text=slides[numero]+"<br/> <br/> <br/>"
     title= ''
-    grade=(0,"continuez")
+    grade=(0,"")
 else:
-    grade=(100,"Bonne continuation")
+    grade=(100,"<h1> A vos question </h1>")
 ==
 
 
