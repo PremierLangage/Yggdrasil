@@ -33,9 +33,9 @@ if user__role == "teacher":
         answers = session.execute(text(f"SELECT count(*) FROM {CodeEditorResponse.__tablename__} GROUP BY student_id;")).all()
     
     for answer in answers:
-        data["grade"][1].append(answer[0]) # mapping row -> int
-    [data["grade"][0].append(x) for x in data["grade"][1] if x not in data["grade"][0]]
-    data["grade"][0].sort()
+        data["tryAmount"][1].append(answer[0]) # mapping row -> int
+    [data["tryAmount"][0].append(x) for x in data["tryAmount"][1] if x not in data["tryAmount"][0]]
+    data["tryAmount"][0].sort()
 
     globals()["data"] = data
 ==
