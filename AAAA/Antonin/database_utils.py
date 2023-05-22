@@ -17,42 +17,41 @@ global Response
 global RadioResponse
 global CodeEditorResponse
 
-def init(tablename):
-    class Response(Base):
-        base = Base 
-        __tablename__ = None
+class Response(Base):
+    base = Base 
+    __tablename__ = None
 
-        def __init_subclass__(cls, **kwargs):
-            super().__init_subclass__(**kwargs)
-            cls.__tablename__ = cls.nom_table
+    def __init_subclass__(cls, **kwargs):
+        super().__init_subclass__(**kwargs)
+        cls.__tablename__ = cls.nom_table
 
-        id : Mapped[int] = mapped_column(primary_key=True)
-        # User Informations:
-        username : Mapped[str] = mapped_column(String)
-        firstname : Mapped[str] = mapped_column(String)
-        lastname : Mapped[str] = mapped_column(String)
-        email : Mapped[str] = mapped_column(String)
-        student_id : Mapped[int] = mapped_column(Integer)
-    
-        # Exercise Informations:
-        title : Mapped[str] = mapped_column(String)
-        text : Mapped[Text] = mapped_column(Text)   
+    id : Mapped[int] = mapped_column(primary_key=True)
+    # User Informations:
+    username : Mapped[str] = mapped_column(String)
+    firstname : Mapped[str] = mapped_column(String)
+    lastname : Mapped[str] = mapped_column(String)
+    email : Mapped[str] = mapped_column(String)
+    student_id : Mapped[int] = mapped_column(Integer)
 
-        # Grade value:
-        grade : Mapped[int] = mapped_column(Integer)
+    # Exercise Informations:
+    title : Mapped[str] = mapped_column(String)
+    text : Mapped[Text] = mapped_column(Text)   
 
-        def __repr__(self):
-            return f"{self.student_id} a obtenu un score de : {self.grade}."
+    # Grade value:
+    grade : Mapped[int] = mapped_column(Integer)
 
+    def __repr__(self):
+        return f"{self.student_id} a obtenu un score de : {self.grade}."
 
 
-    class RadioResponse(Response):        
-        __tablename__ = "db_survey_radio_1"
-        value : Mapped[Text] = mapped_column(Text)
 
-    class CodeEditorResponse(Response):
-        __tablename__ = "db_survey_codeeditor_1"
-        score : Mapped[int] = mapped_column(Integer)
+class RadioResponse(Response):        
+    __tablename__ = "db_survey_radio_1"
+    value : Mapped[Text] = mapped_column(Text)
+
+class CodeEditorResponse(Response):
+    __tablename__ = "db_survey_codeeditor_1"
+    score : Mapped[int] = mapped_column(Integer)
 
 
     
