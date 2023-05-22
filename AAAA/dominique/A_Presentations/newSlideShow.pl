@@ -82,7 +82,7 @@ for e in selectable.selections:
         numero = 0
     if  e['index'] is 2 : # End
         numero = len(slides)
-selectable.selections = []
+
 if numero<len(slides):
     text=slides[numero][1]+ f"   \n <p style='text-align:right;'>Slide {numero}</p> \n"
     title= slides[numero][0].strip("#") 
@@ -96,7 +96,7 @@ evaluator==
 
 numero += 1
 for e in selectable.selections:
-    e['css'] = "error-state"
+
     if e['index'] is 0 :
         numero -= 2
         if numero <0:
@@ -105,6 +105,7 @@ for e in selectable.selections:
         numero = 0
     if  e['index'] is 2 : # End
         numero = len(slides)
+selectable.selections = []
 if numero<len(slides):
     text=slides[numero]+"<br/> <br/> <br/>"
     title= ''
