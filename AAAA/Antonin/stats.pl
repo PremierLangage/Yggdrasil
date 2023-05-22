@@ -133,7 +133,8 @@ before_graph==#|python|
 # GRAPH GENERATION
 statInputs = [StatInput(title, values, labels) for title, (labels, values) in data.items()]
 if (unique_choice != "False"):
-    statInut
+    statInputs.append(StatInput())
+    
 stat = Stat(statInputs)
 
 graphContent = stat.get_graph_as_html(containsScript=True)
