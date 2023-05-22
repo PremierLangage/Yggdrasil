@@ -44,3 +44,8 @@ def init(tablename):
 
     class CodeEditorResponse(Response):
         score : Mapped[int] = mapped_column(Integer)
+
+    global Response
+    global RadioResponse
+    global CodeEditorResponse
+    
