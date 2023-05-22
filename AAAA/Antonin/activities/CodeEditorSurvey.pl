@@ -46,10 +46,6 @@ from database_utils import get_session, Base, CodeEditorResponse
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
 
-
-if editor.codes[0]['defaultCode'] == editor.code:
-    feedback = '<span class="error-state">Vous n\'avez rien saisis, annulation de l\'envois de la réponse</span>'
-    score = -1
 ==
 
 # default evaluator dummy
@@ -57,6 +53,9 @@ evaluator==#|py|
 ==
 
 evaluator_after==#|py|
+if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
+    score = -1
+    
 if score >= 0:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
         session.add(
