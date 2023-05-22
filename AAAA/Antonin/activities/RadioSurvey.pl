@@ -128,6 +128,8 @@ feedback = '<span class="success-state">Réponse enregistrée</span>'
 answer = {}
 for i, r in enumerate(radio):
     answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
+
+score = 100
 ==
 
 #default evaluator
