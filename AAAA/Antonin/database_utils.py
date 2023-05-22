@@ -40,7 +40,7 @@ class Response(Base):
 
 class CodeEditorResponse(Base):
     base = Base 
-    __tablename__ = "db_survey_CodeEditorResponse_{activity__id}"
+    __tablename__ = f"db_survey_CodeEditorResponse_{activity__id}"
 
     id : Mapped[int] = mapped_column(primary_key=True)
     # User Informations:
