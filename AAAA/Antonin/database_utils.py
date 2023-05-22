@@ -13,10 +13,6 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
         base.metadata.create_all(engine)
     return sessionmaker(bind=engine)()
 
-global Response
-global RadioResponse
-global CodeEditorResponse
-
 
 class Response(Base):
     base = Base 
