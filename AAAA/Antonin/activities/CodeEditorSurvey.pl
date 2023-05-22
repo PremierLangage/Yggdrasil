@@ -29,11 +29,12 @@ if user__role == "teacher":
     for answer in answers:
         data["grade"][1].append(answer[0]) # mapping row -> int
     [data["grade"][0].append(x) for x in data["grade"][1] if x not in data["grade"][0]]
+
+
     globals()["data"] = data
 ==
 
 formstudent==#|html|
-{{ answers }}
 {{ editor|component }}
 ==
 
