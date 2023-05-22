@@ -19,8 +19,7 @@ from database_utils import get_session, Base, CodeEditorResponse
 from sqlalchemy import text
 import json, sys
 if user__role == "teacher":
-    labels = []
-    data = {"grade": [labels, []], "tryAmount": [labels, []]}
+    data = {"grade": [[], []], "tryAmount": [[], []]}
 
     with get_session(table_class=CodeEditorResponse, base=Base) as session:
         answers = session.query(CodeEditorResponse.score).all()
