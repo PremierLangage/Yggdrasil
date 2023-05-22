@@ -38,7 +38,6 @@ formstudent==#|html|
 
 evaluator==#|py|
 from database_utils import get_session, Base, CodeEditorResponse
-import sys
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
 if editor.codes[0]['defaultCode'] == editor.code:
