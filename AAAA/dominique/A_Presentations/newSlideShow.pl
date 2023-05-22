@@ -29,7 +29,7 @@ numero=0
 
 
 if numero<len(slides):
-    text=  slides[0] # md.convert(slides[0])
+    text=  slides[0] +"<br/> <br/> <br/>"
     title= ''
 
 
