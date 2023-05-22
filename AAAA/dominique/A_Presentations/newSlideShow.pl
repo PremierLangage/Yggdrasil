@@ -16,7 +16,7 @@ form=
 
 title=Des slides pour vous  
 beforeA==
-
+import markdown
 
 def getfirstnomlancklineandcut(s):
     global text
