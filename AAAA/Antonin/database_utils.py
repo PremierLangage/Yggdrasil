@@ -38,8 +38,8 @@ class Response(Base):
 
 
 
-class RadioResponse(Base, Response):
+class RadioResponse(Response):
     value : Mapped[Text] = mapped_column(Text)
 
-class CodeEditorResponse(Base, Response):
+class CodeEditorResponse(Response):
     value : Mapped[Text] = mapped_column(Text)
