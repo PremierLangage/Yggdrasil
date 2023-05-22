@@ -14,32 +14,10 @@ editor.code ==
 ==
 
 
+include_stats_score = True
+include_stats_participation = True
+
 before==#|python|
-from database_utils import get_session, Base, CodeEditorResponse
-from sqlalchemy import text
-import json, sys
-from collections import Counter
-
-if user__role == "teacher":
-    data = {"grade": [[], []], "tryAmount": [[], []]}
-
-    with get_session(table_class=CodeEditorResponse, base=Base) as session:
-        answers = session.query(CodeEditorResponse.score).all()
-    
-    for answer in answers:
-        data["grade"][1].append(answer[0]) # mapping row -> int
-    [data["grade"][0].append(x) for x in data["grade"][1] if x not in data["grade"][0]]
-    data["grade"][0].sort()
-
-    with get_session(table_class=CodeEditorResponse, base=Base) as session:
-        answers = session.query(CodeEditorResponse.student_id).all()
-
-    for answer in Counter(answers).values():
-        data["tryAmount"][1].append(answer) # mapping row -> int
-    [data["tryAmount"][0].append(x) for x in data["tryAmount"][1] if x not in data["tryAmount"][0]]
-    data["tryAmount"][0].sort()
-
-    globals()["data"] = data
 ==
 
 formstudent==#|html|
