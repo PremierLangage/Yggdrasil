@@ -118,6 +118,7 @@ formstudent==#|html|
 ==
 
 scorer==#|py|
+score = 100
 if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
     score = 0
 ==
@@ -127,7 +128,6 @@ evaluator == #|py|
 from database_utils import get_session, Base, RadioResponse
 import json
 
-score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
 
 answer = {}
