@@ -16,7 +16,7 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
 
 class Response(Base):
     base = Base 
-    __tablename__ = "tablename_test_6"
+    __tablename__ = "db_survey_defaultResponse_0"
 
     id : Mapped[int] = mapped_column(primary_key=True)
     # User Informations:
@@ -41,7 +41,7 @@ class Response(Base):
 
 class CodeEditorResponse(Base):
     base = Base 
-    __tablename__ = "tablename_test_6"
+    __tablename__ = "db_survey_CodeEditorResponse_0"
 
     id : Mapped[int] = mapped_column(primary_key=True)
     # User Informations:
@@ -69,7 +69,7 @@ class CodeEditorResponse(Base):
 
 class RadioResponse(Base):
     base = Base 
-    __tablename__ = "tablename_test_6"
+    __tablename__ = "db_survey_RadioResponse_0"
 
     id : Mapped[int] = mapped_column(primary_key=True)
     # User Informations:
