@@ -43,4 +43,4 @@ def init(tablename):
         value : Mapped[Text] = mapped_column(Text)
 
     class CodeEditorResponse(Response):
-    score : Mapped[int] = mapped_column(Integer)
+        score : Mapped[int] = mapped_column(Integer)
