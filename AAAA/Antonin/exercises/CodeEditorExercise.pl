@@ -15,6 +15,8 @@ editor.code ==
 evaluator==#|py|
 if "if" in editor.code:
     score = 100
+elif "else" in editor.code:
+    score = 42
 else:
     score = 0
 ==
