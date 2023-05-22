@@ -50,7 +50,7 @@ if __name__ == "__main__":
     print(dic, file=sys.stderr)
 
     if 'grade' not in dic:
-        print(missing_grade_stderr, file=sys.stderr)
+        print(missing_grade_stderr + "prout", file=sys.stderr) 
         sys.exit(1)
     
     output(dic['grade'][0], dic['grade'][1], dic)
