@@ -30,9 +30,9 @@ if user__role == "teacher":
     data["grade"][0].sort()
 
     with get_session(table_class=CodeEditorResponse, base=Base) as session:
-
-        answers = session.execute(text(f"SELECT count(*) FROM {CodeEditorResponse.__tablename__} GROUP BY student_id;")).all()
         print("in", file=sys.stderr)
+        t = text(f"SELECT count(*) FROM {CodeEditorResponse.__tablename__} GROUP BY student_id;")
+        answers = session.execute().all()
 
     print(answers, file=sys.stderr)
     
