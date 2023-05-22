@@ -6,6 +6,11 @@ import sys, json, jsonpickle, time
 from sandboxio import output, get_context, get_answers
 
 
+missing_grade_stderr = """\
+'evaluator' did not declare the variable 'grade'. 
+The script have access to every variable declared in the PL and its 'before' script.
+It should declare a variable 'grade' which should contain a tuple (int, feedback) where int is the grade between [0, 100]. Negative grade means an error has occured, and can be handled by the script"""
+
 class StopEvaluatorExec(Exception):
     pass
 
