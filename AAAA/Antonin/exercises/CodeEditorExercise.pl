@@ -14,7 +14,7 @@ editor.code ==
 
 evaluator==#|py|
 if "if" in editor.code:
-    grade = (100, f"student code:\n{editor.code}")
+    score = 100
 else:
-    grade=(0," non vous n'avez pas répondu a la question")
+    score = 0
 ==
