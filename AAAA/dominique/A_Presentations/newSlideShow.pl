@@ -111,7 +111,7 @@ if numero<len(slides):
     grade=(0,"")
 else:
     grade=(100,"""<h1> Vos questions </h1>
-    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Ffr%2Fphotos%2Fpoint-d-interrogation&psig=AOvVaw02tlFlir--T9epxB6EMnfc&ust=1684833439754000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMDF6ejLiP8CFQAAAAAdAAAAABAI" >
+    <img src="https://media.istockphoto.com/id/943657262/fr/photo/point-dinterrogation-bleu-3d-point-dinterrogation-marque-de-ponctuation-demandant-signe-de.jpg?s=612x612&w=0&k=20&c=4A0md9LtHeQGooXTc0OXqmCddKvT4xg3xn1RzJpSEwY=" >
     
     """)
 ==
