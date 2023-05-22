@@ -4,7 +4,11 @@
 
 extends= /AAAA/Antonin/activities/RadioSurvey.pl
 
-champs==
+
+question_1 = Que pensez vous de  vos étudiants ? Mes Etudiants 
+
+
+items==
 sont très hétérogènes en niveaux
 ont besoin d’entraînement
 ne sont pas engagés
