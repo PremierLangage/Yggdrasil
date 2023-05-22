@@ -15,7 +15,7 @@ extracss ==
 h1 {
   font-weight: bold;
   color: red !important;
-  font-size: 128px;
+  font-size: 128px !important;
 }
 
 
