@@ -2,7 +2,7 @@
 
 
 
-extends= /AAAA/Antonin/stats.pl
+extends= /AAAA/Antonin/activities/RadioSurvey.pl
 
 champs==
 sont très hétérogènes en niveaux
