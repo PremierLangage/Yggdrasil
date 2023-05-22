@@ -43,7 +43,7 @@ from database_utils import get_session, Base, CodeEditorResponse
 import sys
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
-if editor.codes[0].defaultCode == editor.code:
+if editor.codes[0]['defaultCode'] == editor.code:
     feedback = '<span class="error-state">Vous n\'avez rien saisis, annulation de l\'envois de la réponse</span>'
     score = 0
 else:
