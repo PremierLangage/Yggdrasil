@@ -110,7 +110,7 @@ if numero<len(slides):
     title= ''
     grade=(0,"")
 else:
-    grade=(100,"<h1> A vos question </h1>")
+    grade=(100,"<h1> A vos questions </h1>")
 ==
 
 
