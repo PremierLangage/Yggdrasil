@@ -54,7 +54,6 @@ evaluator==#|py|
 ==
 
 evaluator_after==#|py|
-
 if editor.codes[0]['defaultCode'] == editor.code:
     feedback = '<span class="error-state">Vous n\'avez rien saisis, annulation de l\'envois de la réponse</span>'
     score = -1
