@@ -13,7 +13,7 @@ editor.code ==
 # write your code here
 ==
 
-__save_editor_code = None
+__save_editor_code = overwriten later
 
 before==#|python|
 from database_utils import get_session, Base, CodeEditorResponse
