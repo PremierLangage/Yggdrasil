@@ -113,7 +113,7 @@ before_stat==#|python|
 from database_utils import get_session, Base, Response
 from stats_utils import Stat, StatInput
 
-Response.__tablename__ = f"cequejeveux_{activity__id}" 
+Response.__tablename__ = f'{Response.__tablename__}{activity__id}'
 with get_session(table_class= Response, base=Base) as session:
     HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
 ==
