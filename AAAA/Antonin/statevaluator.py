@@ -64,4 +64,3 @@ if __name__ == "__main__":
         sys.exit(1)
     
     output(dic['grade'][0], dic['grade'][1], dic)
-
