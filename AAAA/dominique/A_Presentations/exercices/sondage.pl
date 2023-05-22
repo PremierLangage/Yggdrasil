@@ -1,6 +1,9 @@
 
 
 
+
+extends= /AAAA/Antonin/stats.pl
+
 champs==
 sont très hétérogènes en niveaux
 ont besoin d’entraînement
