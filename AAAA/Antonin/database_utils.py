@@ -33,7 +33,7 @@ class Response(Base):
     # Grade value:
     grade : Mapped[int] = mapped_column(Integer)
 
-    response_type : Mapped[str] = mapped_column(Text)
+    response_type : Mapped[str] = mapped_column(String)
     __mapper_args__ = {'polymorphic_on': reponse_type}
 
     def __repr__(self):
