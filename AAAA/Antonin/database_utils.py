@@ -20,7 +20,7 @@ class Response(Base):
 
     def __init_subclass__(cls, **kwargs):
         super().__init_subclass__(**kwargs)
-        self.__tablename__ = cls.nom_table
+        cls.__tablename__ = cls.nom_table
 
     id : Mapped[int] = mapped_column(primary_key=True)
     # User Informations:
