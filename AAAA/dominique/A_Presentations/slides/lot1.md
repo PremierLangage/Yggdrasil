@@ -4,11 +4,11 @@
 
 
 # Réussir avec PLaTon
-    équipe Conception:
-    Dominique Revuz, Magdalena kobylanski, Nicolas Borie, David Doyen
 
-    équipe développement:
-    Christophe Callet, Quentin Coumes, Mamadou Cisse, Orhan Uyar, Thomas Saillard, Clément Gaudet, Antonin Jean, DR&NB
+
+**Conception**:Dominique Revuz, Magdalena kobylanski, Nicolas Borie, David Doyen
+
+**Développement**: Christophe Callet, Quentin Coumes, Mamadou Cisse, Orhan Uyar, Thomas Saillard, Clément Gaudet, Antonin Jean, DR&NB
 
 
 
