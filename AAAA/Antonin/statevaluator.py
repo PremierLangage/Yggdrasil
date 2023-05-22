@@ -16,7 +16,7 @@ def add_try_clause(code, excpt):
     return ("try:\n    ...\n" + '\n'.join(["    " + line for line in code.split('\n')])
             + "\nexcept " + excpt.__name__ + ":\n    pass")
 
-def dobuilderclause(name,dic):
+def dograderclause(name,dic):
         glob = {}
         dic['StopBeforeExec'] = StopBeforeExec
         exec(add_try_clause(dic[name], StopBeforeExec), dic)
@@ -27,7 +27,7 @@ def dobuilderclause(name,dic):
 
 def test_before_clause(name: str, dic : dict):
     if name in dic:
-        dobuilderclause(name, dic)
+        dograderclause(name, dic)
     else:
         print((f"Grader 'evaluator' need a script declared in the key '{name}'. "
                + "See documentation related to this builder."),
@@ -55,17 +55,10 @@ if __name__ == "__main__":
     dic = get_context()
     dic['response'] = get_answers()
 
-    if 'evaluator' in dic:
-        glob = {}
-        dic['StopEvaluatorExec'] = StopEvaluatorExec
-        exec(add_try_clause(dic['evaluator'], StopEvaluatorExec), dic)
-        exec("", glob)
-        for key in glob:
-            if key in dic and dic[key] == glob[key]:
-                del dic[key]
-    else:
-        print(missing_evaluator_stderr, file=sys.stderr)
-        sys.exit(1)
+    test_before_clause('evaluator_before')
+    test_before_clause('evaluator')
+    test_before_clause('evaluator_after')
+    
     
     if 'grade' not in dic:
         print(missing_grade_stderr, file=sys.stderr)
