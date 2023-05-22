@@ -106,7 +106,7 @@ for e in selectable.selections:
     if  e['index'] is 2 : # End
         numero = len(slides)
 if numero<len(slides):
-    text=slides[numero]
+    text=slides[numero]+"<br/> <br/> <br/>"
     title= ''
     grade=(0,"continuez")
 else:
