@@ -1,3 +1,5 @@
+activity__id = 456789
+
 from typing import List
 from sqlalchemy import create_engine, inspect
 from sqlalchemy.orm import sessionmaker
@@ -17,7 +19,7 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
 class Response(Base):
 
     base = Base 
-    __tablename__ = "db_survey_defaultResponse_"
+    __tablename__ = f"db_survey_defaultResponse_{}"
 
     id : Mapped[int] = mapped_column(primary_key=True)
     # User Informations:
