@@ -137,7 +137,7 @@ formstudent==#|html|
 
 before_stat==#|python|
 
-with open("truc.py", "r+") as f:
+with open("database_utils.py", "r+") as f:
     f.seek(0, 0)
     f.write(f"activity_id={activity__id}")
 
