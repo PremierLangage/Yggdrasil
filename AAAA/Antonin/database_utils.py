@@ -38,7 +38,7 @@ class Response(Base):
 
 
 
-class RadioResponse(Response):
+class RadioResponse(Base, Response):
     __tablename__ = "test_db_choix_option_16_other"
     value : Mapped[Text] = mapped_column(Text)
 
