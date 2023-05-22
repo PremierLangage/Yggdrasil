@@ -13,12 +13,12 @@ editor.code ==
 # write your code here
 ==
 
-__save_editor_code = {{editor.code}}
+__save_editor_code = None
 
 before==#|python|
 from database_utils import get_session, Base, CodeEditorResponse
 import json, sys
-
+globals()["__save_editor_code"] = editor.code
 if user__role == "teacher":
     labels = []
     data = {"grade": [labels, []]}
