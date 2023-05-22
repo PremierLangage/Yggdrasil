@@ -45,8 +45,6 @@ from database_utils import get_session, Base, CodeEditorResponse
 # Default Grade intilisation
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
-
-
 ==
 
 # default evaluator dummy
