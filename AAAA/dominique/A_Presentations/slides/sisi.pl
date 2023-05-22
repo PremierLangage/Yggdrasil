@@ -20,6 +20,9 @@ h1 {
 
 }
 
+body {
+  font-size: 16px;
+}
 
 </style>
 ==
