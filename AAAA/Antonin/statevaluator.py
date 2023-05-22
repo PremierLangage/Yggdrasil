@@ -52,8 +52,7 @@ if __name__ == "__main__":
     test_evaluator_clause('evaluator_before', dic)
     test_evaluator_clause('evaluator', dic)
     test_evaluator_clause('evaluator_after', dic)
-    print(dic, file=sys.stderr)
-
+    
     if 'grade' not in dic:
         print(missing_grade_stderr, file=sys.stderr) 
         sys.exit(1)
