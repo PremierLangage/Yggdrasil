@@ -138,7 +138,6 @@ before_stat==#|python|
 with open("database_utils.py", "w+") as f:
     f.write(f"activity__id = '{activity__id}'")
 
-
 from database_utils import get_session, Base, Response, CodeEditorResponse
 from stats_utils import Stat, StatInput
 
