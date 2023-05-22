@@ -17,9 +17,3 @@ Moyennement satisfaisant
 Mediocre
 La couleur bleu
 ==
-
-scorer==
-score = 69
-if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
-    score = 42
-==
