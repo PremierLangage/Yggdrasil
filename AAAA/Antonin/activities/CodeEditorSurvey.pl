@@ -13,12 +13,10 @@ editor.code ==
 # write your code here
 ==
 
-__save_editor_code = dummy overwriten later
 
 before==#|python|
 from database_utils import get_session, Base, CodeEditorResponse
 import json, sys
-globals()["__save_editor_code"] = editor.code
 if user__role == "teacher":
     labels = []
     data = {"grade": [labels, []]}
@@ -45,7 +43,7 @@ from database_utils import get_session, Base, CodeEditorResponse
 import sys
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
-if __save_editor_code == editor.code:
+if editor.codes[0].defaultCode == editor.code:
     feedback = '<span class="error-state">Vous n\'avez rien saisis, annulation de l\'envois de la réponse</span>'
     score = 0
 else:
