@@ -41,5 +41,5 @@ class Response(Base):
 class RadioResponse(Response):
     value : Mapped[Text] = mapped_column(Text)
 
-class CodeEditorResponse(Response):
-    value : Mapped[Text] = mapped_column(Text)
+#class CodeEditorResponse(Response):
+#    value : Mapped[Text] = mapped_column(Text)
