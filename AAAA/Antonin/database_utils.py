@@ -1,4 +1,3 @@
-activity__id = 456789
 
 from typing import List
 from sqlalchemy import create_engine, inspect
@@ -19,7 +18,7 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
 class Response(Base):
 
     base = Base 
-    __tablename__ = f"db_survey_defaultResponse_{}"
+    __tablename__ = f"db_survey_defaultResponse_{activity__id}"
 
     id : Mapped[int] = mapped_column(primary_key=True)
     # User Informations:
@@ -41,7 +40,7 @@ class Response(Base):
 
 class CodeEditorResponse(Base):
     base = Base 
-    __tablename__ = "db_survey_CodeEditorResponse_"
+    __tablename__ = "db_survey_CodeEditorResponse_{activity__id}"
 
     id : Mapped[int] = mapped_column(primary_key=True)
     # User Informations:
