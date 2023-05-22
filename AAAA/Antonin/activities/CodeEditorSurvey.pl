@@ -14,9 +14,6 @@ editor.code ==
 ==
 
 
-include_stats_score = True
-include_stats_participation = True
-
 before==#|python|
 ==
 
