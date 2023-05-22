@@ -15,6 +15,7 @@ extracss ==
 h1 {
   font-weight: bold;
   font-size: 32px !important;
+  color: blue;
   text-align: center;
 
 }
