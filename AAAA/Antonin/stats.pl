@@ -110,8 +110,10 @@ formstudent==#|html|
 ==
 
 before_stat==#|python|
-from database_utils import get_session, Base, Response
+from database_utils import get_session, Base, init
 from stats_utils import Stat, StatInput
+
+init("la_database_"+activity__id)
 
 with get_session(table_class= Response, base=Base) as session:
     HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
