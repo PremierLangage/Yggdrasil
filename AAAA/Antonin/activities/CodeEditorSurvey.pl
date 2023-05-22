@@ -29,8 +29,9 @@ if user__role == "teacher":
     [data["grade"][0].append(x) for x in data["grade"][1] if x not in data["grade"][0]]
     data["grade"][0].sort()
 
-    print("in", file=sys.stderr)
     with get_session(table_class=CodeEditorResponse, base=Base) as session:
+        print("in", file=sys.stderr)
+
         answers = session.execute(text(f"SELECT count(*) FROM {CodeEditorResponse.__tablename__} GROUP BY student_id;")).all()
     print(answers, file=sys.stderr)
     
