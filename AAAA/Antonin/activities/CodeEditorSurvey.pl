@@ -17,7 +17,7 @@ __save_editor_code = editor.code
 
 before==#|python|
 from database_utils import get_session, Base, CodeEditorResponse
-import json
+import json, sys
 
 if user__role == "teacher":
     labels = []
@@ -27,7 +27,8 @@ if user__role == "teacher":
         answers = session.query(CodeEditorResponse.score).all()
     
     for answer in answers:
-        data["grade"][1].append(answer)
+        print(answer, file= sys.stderr)
+        data["grade"][1].append(s)
     [data["grade"][0].append(x) for x in data["grade"][1] if x not in data["grade"][0]]
     globals()["data"] = data
 ==
