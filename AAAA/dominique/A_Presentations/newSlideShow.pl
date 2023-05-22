@@ -17,7 +17,21 @@ form=
 title=Des slides pour vous  
 
 XeforeA==
-import markdown 
+#import markdown 
+#md = markdown.Markdown()
+
+
+with open ("slides.md" , "r") as f:
+    t=f.readlines()
+
+slides=("\n".join(t)).split("\n***\n")
+numero=0
+
+
+if numero<len(slides):
+    text=  slides[0] # md.convert(slides[0])
+    title= ''
+
 
 
 ==
