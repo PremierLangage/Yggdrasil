@@ -49,7 +49,7 @@ if editor.codes[0]['defaultCode'] == editor.code:
     score = -1
 ==
 
-#default evaluator dummy
+# default evaluator dummy
 evaluator==#|py|
 ==
 
