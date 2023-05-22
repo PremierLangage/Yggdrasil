@@ -29,7 +29,7 @@ def test_before_clause(name: str, dic : dict):
     if name in dic:
         dobuilderclause(name, dic)
     else:
-        print((f"Builder 'before' need a script declared in the key '{name}'. "
+        print((f"Builder 'evaluator' need a script declared in the key '{name}'. "
                + "See documentation related to this builder."),
               file = sys.stderr)
         sys.exit(1)
