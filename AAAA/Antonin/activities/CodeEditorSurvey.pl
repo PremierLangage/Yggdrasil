@@ -16,6 +16,7 @@ editor.code ==
 
 before==#|python|
 from database_utils import get_session, Base, CodeEditorResponse
+from sqlalchemy import text
 import json, sys
 if user__role == "teacher":
     labels = []
