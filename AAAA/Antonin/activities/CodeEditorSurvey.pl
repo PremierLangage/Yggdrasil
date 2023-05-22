@@ -18,6 +18,8 @@ before==#|python|
 from database_utils import get_session, Base, CodeEditorResponse
 from sqlalchemy import text
 import json, sys
+from collections import Counter
+
 if user__role == "teacher":
     data = {"grade": [[], []], "tryAmount": [[], []]}
 
@@ -32,7 +34,7 @@ if user__role == "teacher":
     with get_session(table_class=CodeEditorResponse, base=Base) as session:
         answers = session.query(CodeEditorResponse.student_id).all()
     
-    for answer in answers:
+    for answer in Counter(answers).values():
         data["tryAmount"][1].append(answer[0]) # mapping row -> int
     [data["tryAmount"][0].append(x) for x in data["tryAmount"][1] if x not in data["tryAmount"][0]]
     data["tryAmount"][0].sort()
