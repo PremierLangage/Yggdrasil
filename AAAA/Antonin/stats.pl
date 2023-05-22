@@ -133,14 +133,14 @@ before_graph==#|python|
 # GRAPH GENERATION
 statInputs = [StatInput(title, values, labels) for title, (labels, values) in data.items()]
 if (include_stats_score != "False"):
-    statInputs.append(StatInput())
-    with get_session(table_class=CodeEditorResponse, base=Base) as session:
-        answers = session.query(CodeEditorResponse.score).all()
+    with get_session(table_class=Response, base=Base) as session:
+        answers = session.query(Response.score).all()
     
     for answer in answers:
         data["grade"][1].append(answer[0]) # mapping row -> int
     [data["grade"][0].append(x) for x in data["grade"][1] if x not in data["grade"][0]]
     data["grade"][0].sort()
+    statInputs.append(StatInput())
 if (include_stats_participation != "False"):
 
     with get_session(table_class=CodeEditorResponse, base=Base) as session:
@@ -151,7 +151,7 @@ if (include_stats_participation != "False"):
     [data["tryAmount"][0].append(x) for x in data["tryAmount"][1] if x not in data["tryAmount"][0]]
     data["tryAmount"][0].sort()
 
-    globals()["data"] = data
+    statInputs.append(StatInput())
 stat = Stat(statInputs)
 
 graphContent = stat.get_graph_as_html(containsScript=True)
