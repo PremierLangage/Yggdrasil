@@ -20,7 +20,7 @@ from sqlalchemy import text
 import json, sys
 if user__role == "teacher":
     labels = []
-    data = {"grade": [labels, []]}
+    data = {"grade": [labels, []], "tryAmount": [labels, []]}
 
     with get_session(table_class=CodeEditorResponse, base=Base) as session:
         answers = session.query(CodeEditorResponse.score).all()
