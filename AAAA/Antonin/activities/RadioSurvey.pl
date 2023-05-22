@@ -135,7 +135,6 @@ feedback = '<span class="success-state">Réponse enregistrée</span>'
 
 #default evaluator
 evaluator==#|py| 
-
 ==
 
 evaluator_after == #|py|
