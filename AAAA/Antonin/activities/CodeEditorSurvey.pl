@@ -24,7 +24,7 @@ if user__role == "teacher":
     data = {"grade": [labels, []]}
 
     with get_session(table_class=CodeEditorResponse, base=Base) as session:
-        answers = session.query(CodeEditorResponse.value).all()
+        answers = session.query(CodeEditorResponse.score).all()
     
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
@@ -63,7 +63,7 @@ else:
                 title       = title,
                 text        = text,
                 grade       = score,
-                value       = score
+                score       = score
             )
         )
         session.commit()
