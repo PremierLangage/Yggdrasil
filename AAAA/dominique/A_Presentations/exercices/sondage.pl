@@ -4,6 +4,8 @@
 
 extends= /AAAA/Antonin/activities/RadioSurvey.pl
 
+text = Exemple de choix multiple 
+
 
 question_1 = Que pensez vous de  vos étudiants ? Mes Etudiants 
 
