@@ -138,7 +138,7 @@ if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
 ==
 
 evaluator_after == #|py|
-if int(score) > 0:
+if int(score) >= 0:
     with get_session(table_class = RadioResponse, base=Base) as session:
         session.add(
             RadioResponse(
