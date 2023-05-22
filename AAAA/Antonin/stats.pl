@@ -66,7 +66,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 # Statistiques de score:
 include_stats_score = False
 # Statistiques de participation:
-include_stats_participation
+include_stats_participation = False
 
 ############################################
 
