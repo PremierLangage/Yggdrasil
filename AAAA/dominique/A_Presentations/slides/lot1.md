@@ -23,10 +23,34 @@ Les ressources de la plateforme sont partagées en CC-BY SA 3.0.
 Développé depuis 2017 la version 0.7.8 (PL) et accessible en ligne à partir d’un moodle (ou autre LMS).
 La version 2023 (Platon) devrait être en Béta avant l’été.
 
+***
+
+# Pourquoi 
+
+
+
+
+
+En 2015 pas de plate-formes facile d'utilisation pour faire des exercices de math ou d'informatique.
+Moodle n'est pas adaptée.
+WIMS a une dette technique trop importante.
+Des solutions propriétaires existent.
+
 
 ***
 
-# C'est pas tout cela mais !
+# Notre objectif 
+
+Un outil d'enseignement adapté !
+
+Facile d'utilisation mais puissant !
+
+Extensisble et partagé !
+
+
+***
+
+# C'est pas tout cela mais ! Essayons
 
 <span style="center"> **Connectez Vous !**</span>
 
@@ -38,5 +62,17 @@ La version 2023 (Platon) devrait être en Béta avant l’été.
 
 ***
 
-## C'est fini 
+# Première étape 
+
+Suivre le cours : en temps réel 
+
+A postériori.
+
+***
+
+# Un exercice interactif en amphi 
+
+Nous allons passer a un exercice interactif, vous allez répondre à un exercice.
+
+Une fois que je suis passé à l'étape suivante rechargez la page sur votre  Navigateur.
 
