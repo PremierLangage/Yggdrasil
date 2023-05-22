@@ -15,6 +15,10 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
 
 
 def init(tablename):
+    global Response
+    global RadioResponse
+    global CodeEditorResponse
+    
     class Response(Base):
         base = Base 
         __tablename__ = tablename
@@ -45,7 +49,5 @@ def init(tablename):
     class CodeEditorResponse(Response):
         score : Mapped[int] = mapped_column(Integer)
 
-    global Response
-    global RadioResponse
-    global CodeEditorResponse
+
     
