@@ -139,7 +139,6 @@ from database_utils import get_session, Base, Response, CodeEditorResponse
 from stats_utils import Stat, StatInput
 
 Response.__tablename__ = f'prout{Response.__tablename__}{activity__id}'
-CodeEditorResponse.__tablename__ = f'prout{Response.__tablename__}{activity__id}'
 with get_session(table_class= Response, base=Base) as session:
     HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
 ==
