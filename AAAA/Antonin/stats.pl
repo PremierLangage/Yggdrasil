@@ -5,6 +5,7 @@
 
 @ /utils/sandboxio.py
 builder =@ statbefore.py
+grader  =@ /grader/evaluator.py
 
 ################### Modifier ici ###########################
 author = Thomas Saillard & Antonin Jean
