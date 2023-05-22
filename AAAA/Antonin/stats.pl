@@ -110,7 +110,7 @@ formstudent==#|html|
 ==
 
 before_stat==#|python|
-from database_utils import get_session, Base, init
+from database_utils import get_session, Base, init, Response
 from stats_utils import Stat, StatInput
 
 init(f"la_database_{activity__id}")
