@@ -45,7 +45,7 @@ from database_utils import get_session, Base, CodeEditorResponse
 import sys
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
-print(f"save:{globals()['__save_editor_code]'}, code : {editor.code}, test:{globals()['__save_editor_code]' == editor.code}", file=sys.stderr)
+print(f"save:{globals()['__save_editor_code']}, code : {editor.code}, test:{globals()['__save_editor_code'] == editor.code}", file=sys.stderr)
 raise Exception("logging")
 if __save_editor_code == editor.code:
     feedback = '<span class="error-state">Vous n\'avez rien saisis, annulation de l\'envois de la réponse</span>'
