@@ -2,8 +2,8 @@ extends = /AAAA/Antonin/stats.pl
 
 title= Dummy Title CodeEditorSurvey
 
-text==
-TODO # Enonce / Tutoriel d'utilisation d'un RadioSurvey
+text==#|markdown|
+Ici vous pouvez définir une activité de **CodeEditor** incluant le module de Statistique :
 ==
 
 editor =: CodeEditor
