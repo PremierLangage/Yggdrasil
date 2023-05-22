@@ -139,7 +139,7 @@ before_stat==#|python|
 
 from database_name import set_database_name
 
-set_database_name(f'prout{Response.__tablename__}{activity__id}')
+set_database_name(f'{activity__id}')
 
 
 from database_utils import get_session, Base, Response, CodeEditorResponse
