@@ -17,3 +17,6 @@ Moyennement satisfaisant
 Mediocre
 La couleur bleu
 ==
+
+evaluator==#|py|
+==
