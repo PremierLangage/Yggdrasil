@@ -26,10 +26,11 @@ La version 2023 (Platon) devrait être en Béta avant l’été.
 
 ***
 
+# C'est pas tout cela mais !
 
-Yes !
+**Connectez Vous !**
 
-**oo**
+
 
 ***
 
