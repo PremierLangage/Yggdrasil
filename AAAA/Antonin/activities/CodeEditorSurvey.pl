@@ -1,6 +1,6 @@
 extends = /AAAA/Antonin/stats.pl
 
-title= Dummy Title RadioSurvey
+title= Dummy Title CodeEditorSurvey
 
 text==
 TODO # Enonce / Tutoriel d'utilisation d'un RadioSurvey
