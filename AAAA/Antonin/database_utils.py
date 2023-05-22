@@ -65,7 +65,7 @@ class CodeEditorResponse(Base):
 
 class RadioResponse(Base):
     base = Base 
-    __tablename__ = "db_survey_RadioResponse_"
+    __tablename__ = f"db_survey_RadioResponse_{activity__id}"
 
     id : Mapped[int] = mapped_column(primary_key=True)
     # User Informations:
