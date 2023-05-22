@@ -149,6 +149,7 @@ before==#|python|
 ==
 
 before_graph==#|python|
+from collections import Counter
 # GRAPH GENERATION
 statInputs = [StatInput(title, values, labels) for title, (labels, values) in data.items()]
 if (include_stats_score != "False"):
