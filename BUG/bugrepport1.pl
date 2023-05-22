@@ -43,7 +43,7 @@ evaluator==
 a=inputbox.value
 b="inputstring"
 c=str(response)
-grade= (33,f"aa {a} bb{b} c{c} ")
+grade= (33,f"aa {a} bb{b} cc{c} ")
 
 ==
 
