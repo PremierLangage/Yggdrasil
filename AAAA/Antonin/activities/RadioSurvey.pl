@@ -123,13 +123,13 @@ evaluator_before == #|py|
 from database_utils import get_session, Base, RadioResponse
 import json
 
-feedback = '<span class="success-state">Réponse enregistrée</span>'
 
 answer = {}
 for i, r in enumerate(radio):
     answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
 
 score = 100
+feedback = '<span class="success-state">Réponse enregistrée</span>'
 ==
 
 #default evaluator
