@@ -19,7 +19,7 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
 class Response(Base):
 
     base = Base 
-    __tablename__ = f"db_survey_defaultResponse_{activity__id}"
+    __tablename__ = f"db_survey_defaultResponse_{get_database_name()}"
 
     id : Mapped[int] = mapped_column(primary_key=True)
     # User Informations:
@@ -41,7 +41,7 @@ class Response(Base):
 
 class CodeEditorResponse(Base):
     base = Base 
-    __tablename__ = f"db_survey_CodeEditorResponse_{activity__id}"
+    __tablename__ = f"db_survey_CodeEditorResponse_{get_database_name()}"
 
     id : Mapped[int] = mapped_column(primary_key=True)
     # User Informations:
@@ -66,7 +66,7 @@ class CodeEditorResponse(Base):
 
 class RadioResponse(Base):
     base = Base 
-    __tablename__ = f"db_survey_RadioResponse_{activity__id}"
+    __tablename__ = f"db_survey_RadioResponse_{get_database_name()}"
 
     id : Mapped[int] = mapped_column(primary_key=True)
     # User Informations:
