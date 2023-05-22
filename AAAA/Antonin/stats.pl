@@ -161,7 +161,7 @@ if (include_stats_score != "False"):
         values.append(answer[0]) # mapping row -> int
     [labels.append(x) for x in values if x not in labels]
     labels.sort()
-    statInputs.append(StatInput("Score", values, labels))
+    statInputs.append(StatInput("__Score__", values, labels))
 if (include_stats_participation != "False"):
     values = []
     labels = []
@@ -172,7 +172,7 @@ if (include_stats_participation != "False"):
     [labels.append(x) for x in values if x not in labels]
     labels.sort()
 
-    statInputs.append(StatInput("Participation", values, labels))
+    statInputs.append(StatInput("__Participation__", values, labels))
 stat = Stat(statInputs)
 
 graphContent = stat.get_graph_as_html(containsScript=True)
