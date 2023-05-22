@@ -1,7 +1,7 @@
 
 
 
-extends = /model/markdown/lecteurdeslide.pl
+extends = ../newSlideShow.pl
 
 @ lot1.md [slides.md]
 
