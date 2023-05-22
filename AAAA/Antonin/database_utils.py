@@ -6,7 +6,7 @@ from sqlalchemy.orm import declarative_base
 from sqlalchemy import Text, Integer, ForeignKey, String
 from sqlalchemy.orm import Mapped
 from sqlalchemy.orm import mapped_column, relationship
-from database_name import ger_database_name
+from database_name import get_database_name
 
 Base = declarative_base()
 def get_session(table_class, base, db_url = "activities-db", db_name = "activity_db", db_user = "activity_user", db_password = "Dimz80k7X97!"):
