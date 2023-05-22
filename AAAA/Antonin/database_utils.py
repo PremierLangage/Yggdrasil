@@ -13,14 +13,14 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
         base.metadata.create_all(engine)
     return sessionmaker(bind=engine)()
 
+global Response
+global RadioResponse
+global CodeEditorResponse
+
 
 class Response(Base):
     base = Base 
-    __tablename__ = None
-
-    def __init_subclass__(cls, **kwargs):
-        super().__init_subclass__(**kwargs)
-        cls.__tablename__ = cls.nom_table
+    __tablename__ = "tablename_test_"
 
     id : Mapped[int] = mapped_column(primary_key=True)
     # User Informations:
@@ -42,12 +42,10 @@ class Response(Base):
 
 
 
-class RadioResponse(Response):        
-    nom_table  = "db_survey_radio_1"
+class RadioResponse(Response):
     value : Mapped[Text] = mapped_column(Text)
 
 class CodeEditorResponse(Response):
-    nom_table  = "db_survey_codeeditor_1"
     score : Mapped[int] = mapped_column(Integer)
 
 
