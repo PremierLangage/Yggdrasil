@@ -70,7 +70,7 @@ if numero<len(slides):
 
 before=
 
-evaluator==
+evaluatorX==
 
 numero += 1
 for e in selectable.selections:
@@ -91,7 +91,27 @@ else:
     grade=(100,"Bonne continuation")
 ==
 
+# Version avec markdown
+evaluator==
 
+numero += 1
+for e in selectable.selections:
+    e['css'] = "error-state"
+    if e['index'] is 0 :
+        numero -= 2
+        if numero <0:
+            numero = 0
+    if e['index'] is 1 : # restart
+        numero = 0
+    if  e['index'] is 2 : # End
+        numero = len(slides)
+if numero<len(slides):
+    text=slides[numero]
+    title= ''
+    grade=(0,"continuez")
+else:
+    grade=(100,"Bonne continuation")
+==
 
 
 
