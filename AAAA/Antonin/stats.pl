@@ -2,6 +2,7 @@
 @graph_utils.py
 @stats_utils.py
 
+
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 builder =@ statbefore.py
@@ -131,7 +132,7 @@ graphContent = stat.get_graph_as_html(containsScript=True)
 ==
 
 form==#|html|
-{% if user__role != "teacher" %}
+{% if user__role == "teacher" %}
 <style>
     .graph {
         display:flex;
