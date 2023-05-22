@@ -16,9 +16,8 @@ form=
 
 title=Des slides pour vous  
 beforeA==
-import markdown
 
-def getfirstnomlancklineandcut(s):
+def getfirstnomblancklineandcut(s):
     global text
     r=""
 
@@ -38,7 +37,7 @@ numero=0
 
 docslides=[]
 for s in slides:
-    docslides.append(getfirstnomlancklineandcut(s))
+    docslides.append(getfirstnomblancklineandcut(s))
 
 slides=docslides
 if numero<len(slides):
