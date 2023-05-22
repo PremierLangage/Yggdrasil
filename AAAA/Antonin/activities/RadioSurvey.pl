@@ -131,7 +131,7 @@ for i, r in enumerate(radio):
 ==
 
 
-evaluator==#|py|
+evaluator==#|py| #default evaluator
 score = 100
 if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
     score = 0
