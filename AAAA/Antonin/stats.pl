@@ -62,6 +62,12 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 ==
 
+# Flags:
+# Statistiques de score:
+include_stats_score = False
+# Statistiques de participation:
+include_stats_participation
+
 ############################################
 
 data % {"test1": [[0,1,2,3], [1,2,2,3,3,3]], "test":  [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"]]}
