@@ -16,7 +16,7 @@ form=
 
 title=Des slides pour vous  
 
-XeforeA==
+beforeA==
 #import markdown 
 #md = markdown.Markdown()
 
@@ -36,7 +36,7 @@ if numero<len(slides):
 
 ==
 
-beforeB==
+XeforeB==
 
 def getfirstnomblancklineandcut(s):
     global text
