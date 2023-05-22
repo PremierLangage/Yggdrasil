@@ -16,7 +16,7 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
 
 class Response(Base):
     base = Base 
-    
+
     def __init__(self, tablename):
          __tablename__ = tablename
    
@@ -44,4 +44,4 @@ class RadioResponse(Response):
     value : Mapped[Text] = mapped_column(Text)
 
 class CodeEditorResponse(Response):
-    value : Mapped[Text] = mapped_column(Text)
+    score : Mapped[int] = mapped_column(Integer)
