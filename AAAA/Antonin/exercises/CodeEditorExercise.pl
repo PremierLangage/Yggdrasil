@@ -20,3 +20,6 @@ elif "else" in editor.code:
 else:
     score = 0
 ==
+
+include_stats_score = True
+include_stats_participation = True
