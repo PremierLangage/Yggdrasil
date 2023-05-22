@@ -141,7 +141,6 @@ with open("truc.py", "r+") as f:
     f.seek(0, 0)
     f.write(f"activity__id={activity__id}")
 
-
 from database_utils import get_session, Base, Response, CodeEditorResponse
 from stats_utils import Stat, StatInput
 
