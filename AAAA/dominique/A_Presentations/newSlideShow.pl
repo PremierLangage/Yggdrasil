@@ -136,3 +136,4 @@ form==
 {{ selectable|component}}
 ==
 
+learningpath=[0,1]
