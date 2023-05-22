@@ -1,4 +1,4 @@
-extends = /AAAA/Antonin/stats.pl
+extends = /AAAA/Antonin/activities/CodeEditorSurvey.pl
 
 title= Dummy Title CodeEditorResponse
 
@@ -12,32 +12,8 @@ editor.code ==
 # write your code here
 ==
 
-
-before==#|python|
-from database_utils import get_session, Base, CodeEditorResponse
-import json, sys
-if user__role == "teacher":
-    labels = []
-    data = {"grade": [labels, []]}
-
-    with get_session(table_class=CodeEditorResponse, base=Base) as session:
-        answers = session.query(CodeEditorResponse.score).all()
-    
-    for answer in answers:
-        data["grade"][1].append(answer[0]) # mapping row -> int
-    [data["grade"][0].append(x) for x in data["grade"][1] if x not in data["grade"][0]]
-
-
-    globals()["data"] = data
-==
-
-formstudent==#|html|
-{{ editor|component }}
-==
-
 evaluator==#|py|
 from database_utils import get_session, Base, CodeEditorResponse
-import sys
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
 if editor.codes[0]['defaultCode'] == editor.code:
