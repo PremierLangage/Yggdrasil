@@ -13,7 +13,7 @@ editor.code ==
 # write your code here
 ==
 
-__save_editor_code = editor.code
+__save_editor_code = {editor.code}
 
 before==#|python|
 from database_utils import get_session, Base, CodeEditorResponse
