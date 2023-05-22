@@ -42,9 +42,10 @@ code: {{editor.code}}<br>
 
 evaluator==#|py|
 from database_utils import get_session, Base, CodeEditorResponse
-
+import sys
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
+print(f"save:{__save_editor_code}, code : {editor.code}, test:{__save_editor_code == editor.code}", file=sys.stderr)
 if __save_editor_code == editor.code:
     feedback = '<span class="error-state">Vous n\'avez rien saisis, annulation de l\'envois de la réponse</span>'
     score = 0
