@@ -143,16 +143,16 @@ if (include_stats_score != "False"):
     labels.sort()
     statInputs.append(StatInput("Score", values, labels))
 if (include_stats_participation != "False"):
-
-    with get_session(table_class=CodeEditorResponse, base=Base) as session:
-        answers = session.query(CodeEditorResponse.student_id).all()
-
+    values = []
+    labels = []
+    with get_session(table_class=Response, base=Base) as session:
+        answers = session.query(Response.student_id).all()
     for answer in Counter(answers).values():
-        data["tryAmount"][1].append(answer) # mapping row -> int
-    [data["tryAmount"][0].append(x) for x in data["tryAmount"][1] if x not in data["tryAmount"][0]]
-    data["tryAmount"][0].sort()
+        values.append(answer) # mapping row -> int
+    [labels.append(x) for x in values if x not in labels]
+    labels.sort()
 
-    statInputs.append(StatInput())
+    statInputs.append(StatInput("Participation", values, labels))
 stat = Stat(statInputs)
 
 graphContent = stat.get_graph_as_html(containsScript=True)
