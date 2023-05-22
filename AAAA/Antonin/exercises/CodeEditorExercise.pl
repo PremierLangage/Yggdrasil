@@ -12,5 +12,9 @@ editor.code ==
 # write your code here
 ==
 
-grader==#|py|
+evaluator==#|py|
+if "if" in editor.code:
+    grade = (100, f"student code:\n{editor.code}")
+else:
+    grade=(0," non vous n'avez pas répondu a la question")
 ==
