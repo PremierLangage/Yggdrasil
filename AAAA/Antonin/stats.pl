@@ -135,7 +135,7 @@ formstudent==#|html|
 ==
 
 before_stat==#|python|
-from database_utils import get_session, Base, Response
+from database_utils import get_session, Base, Response, CodeEditorResponse
 from stats_utils import Stat, StatInput
 
 Response.__tablename__ = f'prout{Response.__tablename__}{activity__id}'
