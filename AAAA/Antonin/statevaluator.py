@@ -13,9 +13,26 @@ class StopEvaluatorExec(Exception):
 def add_try_clause(code, excpt):
     """Add a try/except clause, excepting 'excpt' around code."""
     code = code.replace('\t', '    ')
-    return ("try:\n" + '\n'.join(["    " + line for line in code.split('\n')])
+    return ("try:\n    ...\n" + '\n'.join(["    " + line for line in code.split('\n')])
             + "\nexcept " + excpt.__name__ + ":\n    pass")
 
+def dobuilderclause(name,dic):
+        glob = {}
+        dic['StopBeforeExec'] = StopBeforeExec
+        exec(add_try_clause(dic[name], StopBeforeExec), dic)
+        exec("", glob)
+        for key in glob:
+            if key in dic and dic[key] == glob[key]:
+                del dic[key]
+
+def test_before_clause(name: str, dic : dict):
+    if name in dic:
+        dobuilderclause(name, dic)
+    else:
+        print((f"Builder 'before' need a script declared in the key '{name}'. "
+               + "See documentation related to this builder."),
+              file = sys.stderr)
+        sys.exit(1)
 
 missing_evaluator_stderr = """\
 The key 'evaluator' was not found in the context.
