@@ -4,7 +4,6 @@
 
 
 @ /utils/sandboxio.py
-grader  =@ /grader/evaluator.py
 builder =@ statbefore.py
 
 ################### Modifier ici ###########################
