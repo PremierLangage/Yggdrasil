@@ -39,14 +39,56 @@ class Response(Base):
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
 
-class CodeEditorResponse(Response):
-    __mapper_args__ = {'polymorphic_identity' : 'codeEditor'}
-    id : Mapped[int] = mapped_column(ForeignKey(Response.__tablename__), primary_key=True)
+class CodeEditorResponse(Base):
+    base = Base 
+    __tablename__ = "tablename_test_6"
+
+    id : Mapped[int] = mapped_column(primary_key=True)
+    # User Informations:
+    username : Mapped[str] = mapped_column(String)
+    firstname : Mapped[str] = mapped_column(String)
+    lastname : Mapped[str] = mapped_column(String)
+    email : Mapped[str] = mapped_column(String)
+    student_id : Mapped[int] = mapped_column(Integer)
+
+    # Exercise Informations:
+    title : Mapped[str] = mapped_column(String)
+    text : Mapped[Text] = mapped_column(Text)   
+
+    # Grade value:
+    grade : Mapped[int] = mapped_column(Integer)
+
+    response_type : Mapped[str] = mapped_column(String)
+    __mapper_args__ = {'polymorphic_on': response_type}
+
+    def __repr__(self):
+        return f"{self.student_id} a obtenu un score de : {self.grade}."
     score : Mapped[int] = mapped_column(Integer)
 
 
 
-class RadioResponse(Response):
-    __mapper_args__ = {'polymorphic_identity' : 'radio'}
-    id : Mapped[int] = mapped_column(ForeignKey(Response.__tablename__), primary_key=True)
+class RadioResponse(Base):
+    base = Base 
+    __tablename__ = "tablename_test_6"
+
+    id : Mapped[int] = mapped_column(primary_key=True)
+    # User Informations:
+    username : Mapped[str] = mapped_column(String)
+    firstname : Mapped[str] = mapped_column(String)
+    lastname : Mapped[str] = mapped_column(String)
+    email : Mapped[str] = mapped_column(String)
+    student_id : Mapped[int] = mapped_column(Integer)
+
+    # Exercise Informations:
+    title : Mapped[str] = mapped_column(String)
+    text : Mapped[Text] = mapped_column(Text)   
+
+    # Grade value:
+    grade : Mapped[int] = mapped_column(Integer)
+
+    response_type : Mapped[str] = mapped_column(String)
+    __mapper_args__ = {'polymorphic_on': response_type}
+
+    def __repr__(self):
+        return f"{self.student_id} a obtenu un score de : {self.grade}."
     value : Mapped[Text] = mapped_column(Text)
