@@ -80,9 +80,6 @@ class RadioResponse(Base):
     # Grade value:
     grade : Mapped[int] = mapped_column(Integer)
 
-    response_type : Mapped[str] = mapped_column(String)
-    __mapper_args__ = {'polymorphic_on': response_type}
-
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
     value : Mapped[Text] = mapped_column(Text)
