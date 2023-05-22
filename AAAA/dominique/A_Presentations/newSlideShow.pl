@@ -110,11 +110,10 @@ if numero<len(slides):
     title= ''
     grade=(0,"")
 else:
-    text="""<h1> Vos questions </h1>
-    <img src="https://media.istockphoto.com/id/943657262/fr/photo/point-dinterrogation-bleu-3d-point-dinterrogation-marque-de-ponctuation-demandant-signe-de.jpg?s=612x612&w=0&k=20&c=4A0md9LtHeQGooXTc0OXqmCddKvT4xg3xn1RzJpSEwY=" >
-    """
+    text="<h1> Vos questions </h1><br/>"
     title= ''
-    grade=(100,'')
+    grade=(100,"""<img src="https://media.istockphoto.com/id/943657262/fr/photo/point-dinterrogation-bleu-3d-point-dinterrogation-marque-de-ponctuation-demandant-signe-de.jpg?s=612x612&w=0&k=20&c=4A0md9LtHeQGooXTc0OXqmCddKvT4xg3xn1RzJpSEwY=" >
+    """)
 ==
 
 
