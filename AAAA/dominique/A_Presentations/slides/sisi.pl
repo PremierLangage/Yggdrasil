@@ -7,7 +7,7 @@ extends = /model/markdown/lecteurdeslide.pl
 
 extracss ==
 <style>
-.h1 {
+.hot {
     color: red !important;
     font-size: 24px !important;
 }
