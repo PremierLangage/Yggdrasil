@@ -13,9 +13,10 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
         base.metadata.create_all(engine)
     return sessionmaker(bind=engine)()
 
+
 class Response(Base):
-    base = "db_survey_default_1" 
-    __tablename__ = None
+    base = Base 
+    __tablename__ = "db_survey_default_1"
 
     def __init_subclass__(cls, **kwargs):
         super().__init_subclass__(**kwargs)
