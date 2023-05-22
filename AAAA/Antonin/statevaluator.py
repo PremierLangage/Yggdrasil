@@ -18,14 +18,14 @@ def add_try_clause(code, excpt):
 
 def dograderclause(name,dic):
         glob = {}
-        dic['StopBeforeExec'] = StopBeforeExec
-        exec(add_try_clause(dic[name], StopBeforeExec), dic)
+        dic['StopEvaluatorExec'] = StopEvaluatorExec
+        exec(add_try_clause(dic[name], StopEvaluatorExec), dic)
         exec("", glob)
         for key in glob:
             if key in dic and dic[key] == glob[key]:
                 del dic[key]
 
-def test_before_clause(name: str, dic : dict):
+def test_evaluator_clause(name: str, dic : dict):
     if name in dic:
         dograderclause(name, dic)
     else:
@@ -55,9 +55,9 @@ if __name__ == "__main__":
     dic = get_context()
     dic['response'] = get_answers()
 
-    test_before_clause('evaluator_before', dic)
-    test_before_clause('evaluator', dic)
-    test_before_clause('evaluator_after', dic)
+    test_evaluator_clause('evaluator_before', dic)
+    test_evaluator_clause('evaluator', dic)
+    test_evaluator_clause('evaluator_after', dic)
     
     if 'grade' not in dic:
         print(missing_grade_stderr, file=sys.stderr)
