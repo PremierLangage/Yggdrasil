@@ -35,7 +35,7 @@ if user__role == "teacher":
         answers = session.query(CodeEditorResponse.student_id).all()
     print(Counter(answers).values(), file=sys.stderr)
     for answer in Counter(answers).values():
-        data["tryAmount"][1].append(answer[0]) # mapping row -> int
+        data["tryAmount"][1].append(answer) # mapping row -> int
     [data["tryAmount"][0].append(x) for x in data["tryAmount"][1] if x not in data["tryAmount"][0]]
     data["tryAmount"][0].sort()
 
