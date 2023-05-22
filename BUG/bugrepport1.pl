@@ -9,7 +9,7 @@ text= Exécuter votre code sur la sandbox
 inputbox =: Input
 inputbox.type = multiline
 inputbox.placeholder = Entrée du programme (stdin)
-inputbox.maxlength = 2
+inputbox.maxlength = 200
 inputbox.appearance = outline
 
 
