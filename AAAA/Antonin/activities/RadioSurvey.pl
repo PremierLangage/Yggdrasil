@@ -164,11 +164,9 @@ formstudent==#|html|
 evaluator_before == #|py|
 from database_utils import get_session, Base, RadioResponse
 import json,sys
-print( response, file=sys.stderr)
 
 answer = {}
-for i, response in enumerate(radio):
-    print(i, response, file=sys.stderr)
+for i, r in enumerate(radio):
     answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
 
 # Default Grade intilisation
