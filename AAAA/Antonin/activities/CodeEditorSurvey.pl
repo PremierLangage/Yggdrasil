@@ -40,7 +40,9 @@ Pour ce faire vous devez définir les variables globales suivantes:
     > Default :
     
     `editor.code ==`
-    `\# write your code here`
+
+    `# write your code here`
+
     `==`
 
     Exemple:
