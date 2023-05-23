@@ -200,7 +200,7 @@ stat = Stat(statInputs)
 
 graphContent = stat.get_graph_as_html(containsScript=True)
 log("out")
-log_print()
+
 del Response
 ==
 
