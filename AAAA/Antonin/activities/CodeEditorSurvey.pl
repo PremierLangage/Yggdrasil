@@ -25,11 +25,19 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     Exemple:
 
-    > ```editor.theme = ```
+    > ```editor.theme = white```
 
-    - **`editor.language`**
+    - **`editor.language`**: Définit la langue utilisée pour la coloration syntaxique
+
+    > Default : `python`
+
+    Exemple:
+
+    > ```editor.language = c```
 
     - **`editor.code`**
+
+    - 
 ==
 
 editor =: CodeEditor
