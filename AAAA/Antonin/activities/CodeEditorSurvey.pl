@@ -41,7 +41,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     <code>
     editor.code ==
-    # write your code here
+    \# write your code here
     ==
     </code>
 
@@ -49,7 +49,25 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     > ```editor.language = c```
 
-    - 
+**Options:**
+
+-  **`include_stats_score`** : `Boolean`   -   Défaut: `False`
+
+    > Afficher le graphe représentant le score des utilisateurs
+
+    Exemple:
+
+    > ```include_stats_score = True```
+
+-  **`include_stats_participation`** : `Boolean`   -   Défaut: `False`
+
+    > Afficher le graphe représentant le taux de participation des utilisateurs
+
+    Exemple:
+
+    > ```include_stats_score = True```
+
+---
 ==
 
 editor =: CodeEditor
