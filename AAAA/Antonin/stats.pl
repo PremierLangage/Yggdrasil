@@ -153,6 +153,7 @@ from utils import *
 Response = get_response(dataType)
 with get_session(table_class= Response, base=Base) as session:
     HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
+del Response
 ==
 
 before==#|python|
@@ -163,6 +164,7 @@ before==#|python|
 before_graph==#|python|
 from collections import Counter
 # GRAPH GENERATION
+Response = get_response(dataType)
 statInputs = [StatInput(title, values, labels) for title, (labels, values) in data.items()]
 if (include_stats_score != "False"):
     values = []
