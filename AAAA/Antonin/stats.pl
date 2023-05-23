@@ -95,7 +95,7 @@ include_stats_participation = False
 
 ############################################
 data % {"test1": [[0,1,2,3], [1,2,2,3,3,3]], "test":  [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"]]}
-dataType = CodeEditorResponse
+dataType = Response
 answer_csv="username,firsname,lastname,email,title,statement,grade\\n"
 formstudent==#|html|
 <style>
@@ -151,8 +151,8 @@ from stats_utils import Stat, StatInput
 from utils import *
 
 __Response = eval(dataType)
-with get_session(table_class= Response, base=Base) as session:
-    HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
+with get_session(table_class= __Response, base=Base) as session:
+    HAS_ANSWERED = (session.query(__Response).filter(__Response.student_id == user__id).first()) != None
 ==
 
 before==#|python|
@@ -167,8 +167,8 @@ statInputs = [StatInput(title, values, labels) for title, (labels, values) in da
 if (include_stats_score != "False"):
     values = []
     labels = []
-    with get_session(table_class=Response, base=Base) as session:
-        answers = session.query(Response.grade).all()
+    with get_session(table_class=__Response, base=Base) as session:
+        answers = session.query(__Response.grade).all()
     for answer in answers:
         values.append(answer[0]) # mapping row -> int
     [labels.append(x) for x in values if x not in labels]
@@ -177,8 +177,8 @@ if (include_stats_score != "False"):
 if (include_stats_participation != "False"):
     values = []
     labels = []
-    with get_session(table_class=Response, base=Base) as session:
-        answers = session.query(Response.student_id).all()
+    with get_session(table_class=__Response, base=Base) as session:
+        answers = session.query(__Response.student_id).all()
     for answer in Counter(answers).values():
         values.append(answer) # mapping row -> int
     [labels.append(x) for x in values if x not in labels]
