@@ -121,6 +121,7 @@ editor.code ==
 
 before==#|python|
 globals()["data"] = {}
+globals()["dataType"] = "CodeEditorResponse"
 ==
 
 formstudent==#|html|
