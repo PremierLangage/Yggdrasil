@@ -198,7 +198,8 @@ if (include_stats_participation != "False"):
 
     statInputs.append(StatInput("__Participation__", values, labels))
 stat = Stat(statInputs)
-
+log("out")
+log_print()
 graphContent = stat.get_graph_as_html(containsScript=True)
 del Response
 ==
