@@ -153,7 +153,6 @@ from utils import *
 Response = get_response(dataType)
 with get_session(table_class= Response, base=Base) as session:
     HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
-    log("out-1")
 ==
 
 before==#|python|
