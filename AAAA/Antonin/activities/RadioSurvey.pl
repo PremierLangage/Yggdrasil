@@ -167,7 +167,8 @@ import json
 answer = {}
 for i in range(len(radio)):
     answer[ i ] = response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content']
-
+log(answer)
+log_print()
 # Default Grade intilisation
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
