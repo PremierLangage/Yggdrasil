@@ -107,14 +107,13 @@ api==#|markdown|
 
         - **valeur** est le nom de la réponse selectionnée par l'utilisateur
 
-    - **`questions`** : `Dictionnaire`     -   Défaut:     `{}`
+    - **`questions`** : `list`     -   Défaut:     `[]`
 
-    - Contient les réponses de l'utilisateur, au format: `clé : valeur`, où:
+    - Contient les questions de l'exercice, dans l'ordre
         
-        - **clé** est l'indice de la question *`(0 : nombre de question - 1)`*
+    - **`number_questions`** : `list`     -   Défaut:     `[]`
 
-        - **valeur** est le nom de la réponse selectionnée par l'utilisateur
-
+    - Le nombre de question de l'exercice
 - Sortie:
 
     - 
