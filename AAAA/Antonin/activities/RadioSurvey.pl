@@ -176,10 +176,7 @@ for i in range(len(radio)):
 
 # Default Grade intilisation
 score = 100
-feedback = '<span class="success-state">Réponse enregistrée</span>'
-
-log(QUESTIONS)
-log_print()
+feedback = '<span class="success-state">Réponse enregistrée</span>
 ==
 
 #default evaluator
