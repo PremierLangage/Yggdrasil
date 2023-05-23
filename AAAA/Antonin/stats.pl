@@ -150,7 +150,7 @@ from database_utils import get_session, Base, Response, CodeEditorResponse
 from stats_utils import Stat, StatInput
 from utils import *
 log(dataType["type"])
-log(eval(dataType["type"]).__str__())
+log(eval(dataType["type"]))
 log_print()
 with get_session(table_class= Response, base=Base) as session:
     HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
