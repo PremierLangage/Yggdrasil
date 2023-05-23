@@ -51,9 +51,14 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     </code>
 
-**Options:**
+<u>**Options:**</u>
 
 {{options}}
+
+<u>**Evaluate:**</u>
+
+- Vous pouvez définir la manière dont sera évalué votre exercice à l'aide de la balise `evaluator`, vous aurez accès à un certains nombres de valeurs et aurez à charge de définir des valeurs sortantes.
+
 
 ---
 
@@ -89,6 +94,9 @@ options==#|markdown|
 
     - ```include_stats_participation = True```
 ==
+
+api==#|markdown|
+
 
 # Flags:
 # L'utilisateur doit-il choisir une réponse différente par question
@@ -147,7 +155,6 @@ formstudent==#|html|
 evaluator_before == #|py|
 from database_utils import get_session, Base, RadioResponse
 import json
-
 
 answer = {}
 for i, r in enumerate(radio):
