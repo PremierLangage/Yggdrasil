@@ -169,6 +169,7 @@ answer = {}
 print(radio, file=sys.stderr)
 for i, response in enumerate(radio):
     answer[ response[i]['items'][ int(response[i]['selection'])-1 ]['content'] ] = i
+print("out", file=sys.stderr)
 
 # Default Grade intilisation
 score = 100
