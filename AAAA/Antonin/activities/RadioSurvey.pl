@@ -57,15 +57,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 <u>**Evaluate:**</u>
 
-- Vous pouvez définir la manière dont sera évalué votre exercice à l'aide de la balise `evaluator`, vous aurez accès à un certains nombres de valeurs et aurez à charge de définir des valeurs sortantes.
-
-- Entrées:
-
-    - `answer` : 
-
-- Sortie:
-
-    - 
+{{api}}
 
 ---
 
