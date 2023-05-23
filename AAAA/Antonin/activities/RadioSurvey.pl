@@ -95,6 +95,16 @@ options==#|markdown|
 ==
 
 api==#|markdown|
+- Vous pouvez définir la manière dont sera évalué votre exercice à l'aide de la balise `evaluator`, vous aurez accès à un certains nombres de valeurs et aurez à charge de définir des valeurs sortantes.
+
+- Entrées:
+
+    - `answer` : 
+
+- Sortie:
+
+    - 
+
 ==
 
 # Flags:
