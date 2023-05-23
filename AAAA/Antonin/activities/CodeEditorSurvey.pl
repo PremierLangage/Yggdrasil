@@ -27,7 +27,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     > ```editor.theme = white```
 
-    - **`editor.language`**: Définit la langue utilisée pour la coloration syntaxique
+    - **`editor.language`**: Définit la langue utilisée pour la coloration syntaxique de l'IDE
 
     > Default : `python`
 
@@ -35,7 +35,19 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     > ```editor.language = c```
 
-    - **`editor.code`**
+    - **`editor.code`**: Définit le code initialement présent dans l'IDE
+
+    > Default :
+
+    <code>
+    editor.code ==
+    # write your code here
+    ==
+    </code>
+
+    Exemple:
+
+    > ```editor.language = c```
 
     - 
 ==
