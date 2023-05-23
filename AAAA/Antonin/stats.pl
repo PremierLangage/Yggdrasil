@@ -66,8 +66,11 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 ---
 ==
-
 options==#|markdown|
+Empty dummy
+==
+
+options+=#|markdown|
 -  **`include_stats_score`** : `Boolean`   -   Défaut: `False`
 
     > Afficher le graphe représentant le score des utilisateurs
