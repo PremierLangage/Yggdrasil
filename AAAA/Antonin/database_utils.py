@@ -41,7 +41,7 @@ class Response(Base):
     type: Mapped[str]
 
     __mapper_args__ = {
-        "polymorphic_identity": "employee",
+        "polymorphic_identity": "Response",
         "polymorphic_on": "type",
     }
     ######################
