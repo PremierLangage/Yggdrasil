@@ -94,7 +94,6 @@ include_stats_score = False
 include_stats_participation = False
 
 ############################################
-from database_utils import Response
 data % {"test1": [[0,1,2,3], [1,2,2,3,3,3]], "test":  [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"]]}
 dataType % {"type": Response}
 answer_csv="username,firsname,lastname,email,title,statement,grade\\n"
