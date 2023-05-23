@@ -89,9 +89,9 @@ options==#|markdown|
 
 # Flags:
 # Statistiques de score:
-include_stats_score = True
+include_stats_score = False
 # Statistiques de participation:
-include_stats_participation = True
+include_stats_participation = False
 
 ############################################
 data % {"test1": [[0,1,2,3], [1,2,2,3,3,3]], "test":  [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"]]}
