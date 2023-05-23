@@ -14,4 +14,5 @@ def log(message : str):
     print(f"Log:\n{message}\n" + message, )
 
 def log_print():
+    print(f"Exited program to display logging" + message, )
     sys.exit(42)
