@@ -47,8 +47,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
     `==`
 
     {{t}}
-    {t}
-    t
+
     Exemple:
 
     > ```editor.language = c```
