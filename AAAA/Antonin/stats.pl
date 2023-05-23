@@ -152,7 +152,7 @@ from utils import *
 
 __Response = eval(dataType)
 with get_session(table_class= __Response, base=Base) as session:
-    HAS_ANSWERED = (session.query(__Response).filter(__Response.student_id == user__id).first()) != None
+    HAS_ANSWERED = (session.query(__Response).filter(__Response.student_id == user__id).first()) is not None
 ==
 
 before==#|python|
