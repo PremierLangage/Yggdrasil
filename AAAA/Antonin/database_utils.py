@@ -1,4 +1,4 @@
-#PLACEHOLDER#################################################
+#PLACEHOLDER#################################################DON'T DELETE THE COMMENT ON THIS FILE
 #DON'T DELETE THE COMMENT ON THIS FILE
 from typing import List
 from sqlalchemy import create_engine, inspect
@@ -62,9 +62,6 @@ class CodeEditorResponse(Response):
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
 
-
-
-
 class RadioResponse(Response):
     __tablename__ = f"db_survey_RadioResponse_{activity_id}"
     __mapper_args__ = {
@@ -78,7 +75,6 @@ class RadioResponse(Response):
     
     value : Mapped[Text] = mapped_column(Text)
 
-
 class InvalidResponseException(Exception):
     pass
 
@@ -87,6 +83,7 @@ Mapping_response = {
     "codeeditorresponse": CodeEditorResponse,
     "radioresponse": RadioResponse
 }
+
 def get_response(name : str):
     r = Mapping_response.get(name.lower())
     if r:
