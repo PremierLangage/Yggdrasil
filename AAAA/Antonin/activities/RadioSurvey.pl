@@ -59,7 +59,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 ==
 
-options+=#|markdown|
+options==#|markdown|
 
 **[Options RadioSurvey.pl](https://pl-preprod.u-pem.fr/filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/activities/RadioSurvey.pl)**
 
