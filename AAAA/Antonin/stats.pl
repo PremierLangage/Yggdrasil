@@ -174,6 +174,7 @@ if (include_stats_score != "False"):
         log("out1")
         answers = session.query(Response.grade).all()
     log("out2")
+    print_log()
     for answer in answers:
         values.append(answer[0]) # mapping row -> int
     [labels.append(x) for x in values if x not in labels]
