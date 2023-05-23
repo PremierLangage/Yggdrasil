@@ -177,7 +177,6 @@ if (include_stats_score != "False"):
     [labels.append(x) for x in values if x not in labels]
     labels.sort()
     statInputs.append(StatInput("__Score__", values, labels))
-log_print()
 if (include_stats_participation != "False"):
     values = []
     labels = []
