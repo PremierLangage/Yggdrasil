@@ -167,7 +167,7 @@ import json,sys
 
 answer = {}
 for i in range(len(radio)):
-    answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
+    answer[ i ] = response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content']
 
 print(answer, file=sys.stderr)
 sys.exit(1)
