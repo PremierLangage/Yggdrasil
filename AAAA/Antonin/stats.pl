@@ -195,6 +195,7 @@ if (include_stats_participation != "False"):
 stat = Stat(statInputs)
 
 graphContent = stat.get_graph_as_html(containsScript=True)
+del Response
 ==
 
 form==#|html|
