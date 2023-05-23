@@ -17,6 +17,20 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
     return sessionmaker(bind=engine)()
 
 
+class InvalidResponseException(Exception):
+    pass
+
+Mapping_response = {
+    "response": Response,
+    "codeeditorresponse": CodeEditorResponse,
+    "radioresponse": RadioResponse
+}
+def get_response(name : str):
+    r = Mapping_response.get(name)
+    if r:
+        return r
+    raise InvalidResponseException(f"Could not load a proper Response with the key <{name}>") 
+
 class Response(Base):
 
     base = Base 
@@ -87,3 +101,5 @@ class RadioResponse(Base):
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
     value : Mapped[Text] = mapped_column(Text)
+
+
