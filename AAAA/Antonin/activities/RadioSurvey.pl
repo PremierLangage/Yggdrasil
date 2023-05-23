@@ -166,7 +166,7 @@ from database_utils import get_session, Base, RadioResponse
 import json,sys
 
 answer = {}
-for i, r in enumerate(radio):
+for i in range(len(radio)):
     answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
 
 # Default Grade intilisation
