@@ -158,7 +158,6 @@ formstudent==#|html|
 {% endif %}
 ==
 
-
 # Evaluation de la réponse de l'étudiant
 evaluator_before == #|py|
 from database_utils import get_session, Base, RadioResponse
