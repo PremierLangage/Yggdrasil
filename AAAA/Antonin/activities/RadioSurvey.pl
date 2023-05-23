@@ -163,13 +163,11 @@ formstudent==#|html|
 # Evaluation de la réponse de l'étudiant
 evaluator_before == #|py|
 from database_utils import get_session, Base, RadioResponse
-import json, sys
+import json
 
 answer = {}
-print(radio, file=sys.stderr)
 for i, response in enumerate(radio):
-    answer[ response[i]['items'][ int(response[i]['selection'])-1 ]['content'] ] = i
-print("out", file=sys.stderr)
+    answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
 
 # Default Grade intilisation
 score = 100
