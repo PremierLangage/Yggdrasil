@@ -150,7 +150,7 @@ from database_utils import *
 from stats_utils import Stat, StatInput
 from utils import *
 
-log(eval(dataType))
+__Response = log(eval(dataType))
 
 log_print()
 with get_session(table_class= Response, base=Base) as session:
