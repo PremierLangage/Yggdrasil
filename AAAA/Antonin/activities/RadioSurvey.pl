@@ -168,6 +168,7 @@ formstudent==#|html|
 evaluator_before == #|py|
 from database_utils import get_session, Base, RadioResponse
 import json
+from utils import *
 
 answer = {}
 for i in range(len(radio)):
@@ -176,6 +177,9 @@ for i in range(len(radio)):
 # Default Grade intilisation
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
+
+log(QUESTIONS)
+log_print()
 ==
 
 #default evaluator
