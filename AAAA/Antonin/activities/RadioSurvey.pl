@@ -122,7 +122,7 @@ api==#|markdown|
 
     - Définis le score de l'étudiant, si le score est inférieur à 0, on considère que c'est une erreur et la réponse ne sera pas enregistrée.
 
-    - **`feedback`** : `str`     -   Défaut:     `<span class="success-state">Réponse enregistrée</span>`
+    - **`feedback`** : `str`     -   Défaut:     `\<span class="success-state"\>Réponse enregistrée\</span\>`
 
     - Définis le message affichée à l'étudiant après évaluation de son score.
 
