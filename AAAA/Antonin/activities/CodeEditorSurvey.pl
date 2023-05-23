@@ -95,7 +95,7 @@ options==#|python|
 
     Exemple:
 
-    - ```include_stats_score = True```
+    - ```include_stats_participation = True```
 ==
 
 editor =: CodeEditor
