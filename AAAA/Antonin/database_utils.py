@@ -16,21 +16,6 @@ def get_session(table_class, base, db_url = "activities-db", db_name = "activity
         base.metadata.create_all(engine)
     return sessionmaker(bind=engine)()
 
-
-class InvalidResponseException(Exception):
-    pass
-
-Mapping_response = {
-    "response": Response,
-    "codeeditorresponse": CodeEditorResponse,
-    "radioresponse": RadioResponse
-}
-def get_response(name : str):
-    r = Mapping_response.get(name.lower())
-    if r:
-        return r
-    raise InvalidResponseException(f"Could not load a proper Response with the key <{name}>") 
-
 class Response(Base):
 
     base = Base 
