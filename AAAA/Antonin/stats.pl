@@ -62,6 +62,12 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 **Options:**
 
+{{local_options}}
+
+---
+==
+
+local_options==#|markdown|
 -  **`include_stats_score`** : `Boolean`   -   Défaut: `False`
 
     > Afficher le graphe représentant le score des utilisateurs
@@ -77,8 +83,8 @@ Pour ce faire vous devez définir les variables globales suivantes:
     Exemple:
 
     > ```include_stats_score = True```
-
----
+==
+options+==#|markdown|
 
 ==
 
