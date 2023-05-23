@@ -2,7 +2,6 @@ extends = /AAAA/Antonin/stats.pl
 
 title= Dummy Title CodeEditorSurvey
 
-t = testCOmmenç
 text==#|markdown|
 Ici vous pouvez définir une activité de **CodeEditor** incluant le module de Statistique :
 
@@ -45,8 +44,6 @@ Pour ce faire vous devez définir les variables globales suivantes:
     `# write your code here`
 
     `==`
-
-    {{t}}
 
     Exemple:
 
