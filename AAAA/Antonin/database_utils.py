@@ -49,24 +49,8 @@ class Response(Base):
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
 
-class CodeEditorResponse(Base):
-    base = Base 
+class CodeEditorResponse(Response):
     __tablename__ = f"db_survey_CodeEditorResponse_{activity_id}"
-
-    id : Mapped[int] = mapped_column(primary_key=True)
-    # User Informations:
-    username : Mapped[str] = mapped_column(String)
-    firstname : Mapped[str] = mapped_column(String)
-    lastname : Mapped[str] = mapped_column(String)
-    email : Mapped[str] = mapped_column(String)
-    student_id : Mapped[int] = mapped_column(Integer)
-
-    # Exercise Informations:
-    title : Mapped[str] = mapped_column(String)
-    text : Mapped[Text] = mapped_column(Text)   
-
-    # Grade value:
-    grade : Mapped[int] = mapped_column(Integer)
 
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
@@ -74,24 +58,9 @@ class CodeEditorResponse(Base):
 
 
 
-class RadioResponse(Base):
-    base = Base 
+class RadioResponse(Response):
     __tablename__ = f"db_survey_RadioResponse_{activity_id}"
 
-    id : Mapped[int] = mapped_column(primary_key=True)
-    # User Informations:
-    username : Mapped[str] = mapped_column(String)
-    firstname : Mapped[str] = mapped_column(String)
-    lastname : Mapped[str] = mapped_column(String)
-    email : Mapped[str] = mapped_column(String)
-    student_id : Mapped[int] = mapped_column(Integer)
-
-    # Exercise Informations:
-    title : Mapped[str] = mapped_column(String)
-    text : Mapped[Text] = mapped_column(Text)   
-
-    # Grade value:
-    grade : Mapped[int] = mapped_column(Integer)
 
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
