@@ -214,7 +214,9 @@ if int(score) >= 0:
                 title       = title,
                 text        = text,
                 grade       = score,
-                value       = json.dumps(answer)))
+                value       = json.dumps(answer),
+                feedback    = feedback
+            ))
         session.commit()
 else :
     feedback = '<span class="error-state">Vous ne pouvez pas sélectionner plusieurs fois la même option</span>'
