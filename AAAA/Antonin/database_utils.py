@@ -88,3 +88,16 @@ class RadioResponse(Base):
     value : Mapped[Text] = mapped_column(Text)
 
 
+class InvalidResponseException(Exception):
+    pass
+
+Mapping_response = {
+    "response": Response,
+    "codeeditorresponse": CodeEditorResponse,
+    "radioresponse": RadioResponse
+}
+def get_response(name : str):
+    r = Mapping_response.get(name.lower())
+    if r:
+        return r
+    raise InvalidResponseException(f"Could not load a proper Response with the key <{name}>") 
