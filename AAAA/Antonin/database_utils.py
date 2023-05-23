@@ -92,9 +92,9 @@ class InvalidResponseException(Exception):
     pass
 
 Mapping_response = {
-    "response": Response(),
-    "codeeditorresponse": CodeEditorResponse(),
-    "radioresponse": RadioResponse()
+    "response": Response,
+    "codeeditorresponse": CodeEditorResponse,
+    "radioresponse": RadioResponse
 }
 def get_response(name : str):
     r = Mapping_response.get(name.lower())
