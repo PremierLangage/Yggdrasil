@@ -4,10 +4,36 @@ title= Dummy Title CodeEditorSurvey
 
 text==#|markdown|
 Ici vous pouvez définir une activité de **CodeEditor** incluant le module de Statistique :
+
+    - exercice codeEditor : Rédaction et execution de code informatique dans un IDE adapté.
+
+    - affichage de graphe (histogramme) représentant les données pour l'enseignant
+
+    - récupération des entrées au format `csv`
+
+---
+
+**Manuel Utilisateur:**
+
+Pour ce faire vous devez définir les variables globales suivantes:
+
+- Les spécificités de l'éditeur de code:
+
+    - **`editor.theme`**: Définit le thème pour l'affichage de l'IDE
+
+    > Default : `dark`
+
+    Exemple:
+
+    > ```editor.theme = ```
+
+    - **`editor.language`**
+
+    - **`editor.code`**
 ==
 
 editor =: CodeEditor
-editor.theme = dark
+editor.theme = white
 editor.language = python
 editor.code ==
 # write your code here
