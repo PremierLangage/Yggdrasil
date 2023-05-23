@@ -149,11 +149,6 @@ with open("database_utils.py", "r+") as f:
 from database_utils import get_session, Base, Response, CodeEditorResponse
 from stats_utils import Stat, StatInput
 from utils import *
-log(dataType["type"])
-a = eval(dataType["type"])
-log(type(a))
-log(dir(Response))
-v= Response();
 log(getattr(globals()["Response"], "Response", None))
 log_print()
 with get_session(table_class= Response, base=Base) as session:
