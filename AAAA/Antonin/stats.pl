@@ -153,6 +153,7 @@ log(dataType["type"])
 a = eval(dataType["type"])
 log(Response)
 log(type(a))
+log(type(Response))
 log(a)
 log_print()
 with get_session(table_class= Response, base=Base) as session:
