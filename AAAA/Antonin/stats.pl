@@ -184,7 +184,7 @@ if (include_stats_participation != "False"):
 
     with get_session(table_class=Response, base=Base) as session:
         log("out4")
-
+        log_print()
         answers = session.query(Response.student_id).all()
     for answer in Counter(answers).values():
         values.append(answer) # mapping row -> int
