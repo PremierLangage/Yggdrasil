@@ -146,10 +146,10 @@ with open("database_utils.py", "r+") as f:
     f.seek(0, 0)
     f.write(f"activity_id={activity__id}")
 
-from database_utils import get_session, Base, Response, CodeEditorResponse
+from database_utils import *
 from stats_utils import Stat, StatInput
 from utils import *
-log(getattr(globals()["Response"], "Response", None))
+log()
 log_print()
 with get_session(table_class= Response, base=Base) as session:
     HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
