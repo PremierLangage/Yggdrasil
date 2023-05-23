@@ -53,6 +53,13 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 **Options:**
 
+
+
+---
+
+==
+
+radio_options==#|markdown|
 -  **`unique_choice`** : `Boolean`   -   Défaut: `False`
 
     > L'utilisateur doit-il choisir une réponse différente par question
@@ -77,7 +84,9 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     > ```include_stats_score = True```
 
----
+♦ Héritées par **[stats.pl](https://pl-preprod.u-pem.fr/filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/stats.pl)**
+
+{{stats_options}}
 
 ==
 
