@@ -154,7 +154,7 @@ a = eval(dataType["type"])
 log(type(a))
 log(dir(Response))
 v= Response();
-log(v)
+log(getattr(globals()["Response"], "Response", None))
 log_print()
 with get_session(table_class= Response, base=Base) as session:
     HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
