@@ -151,7 +151,6 @@ from stats_utils import Stat, StatInput
 from utils import *
 log(dataType["type"])
 a = eval(dataType["type"])
-log(globals())
 log(type(a))
 log(Response.__class__())
 log(dir(Response))
