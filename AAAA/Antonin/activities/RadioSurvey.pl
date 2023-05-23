@@ -169,6 +169,8 @@ answer = {}
 for i in range(len(radio)):
     answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
 
+print(answer, file=sys.stderr)
+sys.exit(1)
 # Default Grade intilisation
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
