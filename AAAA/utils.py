@@ -12,3 +12,6 @@ import sys
 
 def log(message : str):
     print(f"Log:\n{message}\n" + message, )
+
+def log_print():
+    sys.exit(42)
