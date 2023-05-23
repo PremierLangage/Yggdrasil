@@ -150,7 +150,7 @@ from database_utils import *
 from stats_utils import Stat, StatInput
 from utils import *
 
-__Response = type(eval(dataType))
+__Response = eval(dataType)
 with get_session(table_class= __Response, base=Base) as session:
     HAS_ANSWERED = (session.query(__Response).filter(__Response.student_id == user__id).first()) != None
 ==
