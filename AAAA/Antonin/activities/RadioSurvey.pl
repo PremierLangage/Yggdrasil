@@ -162,7 +162,8 @@ formstudent==#|html|
 # Evaluation de la réponse de l'étudiant
 evaluator_before == #|py|
 from database_utils import get_session, Base, RadioResponse
-import json 
+import json
+from utils import $
 
 answer = {}
 for i in range(len(radio)):
