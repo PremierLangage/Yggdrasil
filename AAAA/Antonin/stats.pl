@@ -95,7 +95,7 @@ include_stats_participation = False
 
 ############################################
 data % {"test1": [[0,1,2,3], [1,2,2,3,3,3]], "test":  [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"]]}
-dataType % {"type": "Response"}
+dataType = Response
 answer_csv="username,firsname,lastname,email,title,statement,grade\\n"
 formstudent==#|html|
 <style>
@@ -149,7 +149,7 @@ with open("database_utils.py", "r+") as f:
 from database_utils import *
 from stats_utils import Stat, StatInput
 from utils import *
-log()
+log(get_response(dataType))
 log_print()
 with get_session(table_class= Response, base=Base) as session:
     HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
