@@ -38,11 +38,10 @@ Pour ce faire vous devez définir les variables globales suivantes:
     - **`editor.code`**: Définit le code initialement présent dans l'IDE
 
     > Default :
-
-    <code>
-    editor.code ==
-    \# write your code here
-    ==
+    
+    `editor.code ==`
+    `\# write your code here`
+    `==`
     </code>
 
     Exemple:
