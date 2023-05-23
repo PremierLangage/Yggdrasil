@@ -167,8 +167,6 @@ from collections import Counter
 
 
 Response = get_response(dataType)
-log("out")
-log_print()
 statInputs = [StatInput(title, values, labels) for title, (labels, values) in data.items()]
 if (include_stats_score != "False"):
     values = []
