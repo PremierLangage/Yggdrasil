@@ -146,7 +146,7 @@ with open("database_utils.py", "r+") as f:
     f.seek(0, 0)
     f.write(f"activity_id={activity__id}")
 
-from database_utils import get_session, Response
+from database_utils import get_session, get_session, Base, Response
 from stats_utils import Stat, StatInput
 from utils import *
 
