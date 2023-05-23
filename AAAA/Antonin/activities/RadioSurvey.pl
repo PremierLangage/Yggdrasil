@@ -168,7 +168,7 @@ import json, sys
 answer = {}
 print(radio, file=sys.stderr)
 for i, response in enumerate(radio):
-    answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
+    answer[ response[i]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
 
 # Default Grade intilisation
 score = 100
