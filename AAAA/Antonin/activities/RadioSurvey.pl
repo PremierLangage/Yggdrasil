@@ -111,12 +111,20 @@ api==#|markdown|
 
     - Contient les questions de l'exercice, dans l'ordre
         
-    - **`number_questions`** : `list`     -   Défaut:     `[]`
+    - **`number_questions`** : `int`     -   Défaut:     `0`
 
     - Le nombre de question de l'exercice
+
+
 - Sortie:
 
-    - 
+    - **`score`** : `int`     -   Défaut:     `100`
+
+    - Définis le score de l'étudiant, si le score est inférieur à 0, on considère que c'est une erreur et la réponse ne sera pas enregistrée.
+
+    - **`feedback`** : `str`     -   Défaut:     `100`
+
+    - Définis le score de l'étudiant, si le score est inférieur à 0, on considère que c'est une erreur et la réponse ne sera pas enregistrée.
 
 ==
 
@@ -183,7 +191,7 @@ for i in range(len(radio)):
 
 # Default Grade intilisation
 score = 100
-feedback = '<span class="success-state">Réponse enregistrée</span>
+feedback = '<span class="success-state">Réponse enregistrée</span>'
 ==
 
 #default evaluator
