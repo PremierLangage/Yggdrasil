@@ -150,8 +150,7 @@ from database_utils import *
 from stats_utils import Stat, StatInput
 from utils import *
 
-__Response = log(eval(dataType))
-
+log(eval(dataType))
 log_print()
 with get_session(table_class= Response, base=Base) as session:
     HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
