@@ -62,12 +62,12 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 **Options:**
 
-{{local_options}}
+{{stat_local_options}}
 
 ---
 ==
 
-local_options==#|markdown|
+stat_local_options==#|markdown|
 -  **`include_stats_score`** : `Boolean`   -   Défaut: `False`
 
     > Afficher le graphe représentant le score des utilisateurs
