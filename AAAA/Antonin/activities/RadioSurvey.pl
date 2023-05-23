@@ -86,7 +86,7 @@ radio_options==#|markdown|
 
 ♦ Héritées par **[stats.pl](https://pl-preprod.u-pem.fr/filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/stats.pl)**
 
-{{stats_options}}
+{{globals()["stats_options"]}}
 
 ==
 
