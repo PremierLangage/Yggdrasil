@@ -38,7 +38,7 @@ class Response(Base):
     feedback : Mapped[Text] = mapped_column(Text)
 
     # For polymorphism
-    type: Mapped[str]
+    type: Mapped[str] = mapped_column(String)
 
     __mapper_args__ = {
         "polymorphic_identity": "Response",
