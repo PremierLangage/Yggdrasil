@@ -85,7 +85,6 @@ stats_options==#|markdown|
     > ```include_stats_score = True```
 ==
 
-
 # Flags:
 # Statistiques de score:
 include_stats_score = False
