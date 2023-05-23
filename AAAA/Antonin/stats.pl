@@ -60,7 +60,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
     `==`
 
 
-**Options:**
+<u>**Options:**</u>
 
 {{options}}
 
