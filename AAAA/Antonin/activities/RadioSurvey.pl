@@ -164,6 +164,7 @@ formstudent==#|html|
 evaluator_before == #|py|
 from database_utils import get_session, Base, RadioResponse
 import json,sys
+print( response, file=sys.stderr)
 
 answer = {}
 for i, response in enumerate(radio):
