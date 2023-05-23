@@ -11,8 +11,8 @@ Contact: ofghanirre@gmail.com
 import sys
 
 def log(message : str):
-    print(f"Log:\n{message}\n" + message, )
+    print(f"Log:\n{message}\n", file=sys.stderr)
 
 def log_print():
-    print(f"Exited program to display logging" + message, )
+    print(f"Exited program to display logging" )
     sys.exit(42)
