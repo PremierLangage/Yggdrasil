@@ -151,7 +151,7 @@ from stats_utils import Stat, StatInput
 from utils import *
 log(dataType["type"])
 a = eval(dataType["type"])
-log(Response)
+log(globals())
 log(type(a))
 log(type(Response))
 log(a)
