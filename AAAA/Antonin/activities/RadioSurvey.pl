@@ -99,7 +99,15 @@ api==#|markdown|
 
 - Entrées:
 
-    - `answer` : `Dictionnaire`     -   Défaut: `{}`
+    - **`answer`** : `Dictionnaire`     -   Défaut:     `{}`
+
+    - Contient les réponses de l'utilisateur, au format: `clé : valeur`, où:
+        
+        - **clé** est l'indice de la question *`(0 : nombre de question - 1)`*
+
+        - **valeur** est le nom de la réponse selectionnée par l'utilisateur
+
+    - **`questions`** : `Dictionnaire`     -   Défaut:     `{}`
 
     - Contient les réponses de l'utilisateur, au format: `clé : valeur`, où:
         
@@ -123,29 +131,29 @@ before==#|python|
 import json, sys
 from database_utils import get_session, Base, RadioResponse
 
-QUESTIONS = [v for q, v in globals().items() if q.startswith("question_")]
-NUMBER_QUESTIONS = len(QUESTIONS)
+questions = [v for q, v in globals().items() if q.startswith("question_")]
+number_questions = len(questions)
 
 radio = []
-for i in range(len(QUESTIONS)):
+for i in range(len(questions)):
     tmp = RadioGroup(cid=str(i))
-    tmp.question = QUESTIONS[i]
+    tmp.question = questions[i]
     tmp.items = []
     for j, item in enumerate(items.splitlines()):        
         tmp.items.append({ "id": j+1, "content": item })
     globals()[str(i)] = tmp
     radio.append(vars(tmp))
 
-if user__role == "teacher" and NUMBER_QUESTIONS != 0:
+if user__role == "teacher" and number_questions != 0:
     labels = items.splitlines()
-    data = { q : [labels, []] for q in QUESTIONS}
-    answers_csv = f"username,firsname,lastname,email,{','.join(QUESTIONS)}\\n"
+    data = { q : [labels, []] for q in questions}
+    answers_csv = f"username,firsname,lastname,email,{','.join(questions)}\\n"
     with get_session(table_class=RadioResponse, base=Base) as session:
         answers = session.query(RadioResponse.value).all()
     
     for answer in answers:
         for k, v in json.loads(str(answer[0])).items():
-            data[QUESTIONS[int(v)]][1].append(k)
+            data[questions[int(v)]][1].append(k)
     globals()["data"] = data
 ==
 
@@ -184,7 +192,7 @@ evaluator==#|py|
 ==
 
 evaluator_after == #|py|
-if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
+if (unique_choice != "False") and (len(answer) != int(number_questions)):
     score = -1
 if int(score) >= 0:
     with get_session(table_class = RadioResponse, base=Base) as session:
