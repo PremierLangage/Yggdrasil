@@ -54,6 +54,8 @@ class CodeEditorResponse(Response):
     __mapper_args__ = {
         "polymorphic_identity": "CodeEditorResponse",
     }
+
+    id: Mapped[int] = mapped_column(ForeignKey(f"db_survey_defaultResponse_{activity_id}.id"), primary_key=True)
     
     score : Mapped[int] = mapped_column(Integer)
 
@@ -68,6 +70,8 @@ class RadioResponse(Response):
     __mapper_args__ = {
         "polymorphic_identity": "RadioResponse",
     }
+
+    id: Mapped[int] = mapped_column(ForeignKey(f"db_survey_defaultResponse_{activity_id}.id"), primary_key=True)
 
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
