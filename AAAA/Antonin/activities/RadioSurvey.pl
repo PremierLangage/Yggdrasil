@@ -166,7 +166,7 @@ from database_utils import get_session, Base, RadioResponse
 import json, sys
 
 answer = {}
-print(answer, file=sys.stderr)
+print(radio, file=sys.stderr)
 for i, response in enumerate(radio):
     answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
 
