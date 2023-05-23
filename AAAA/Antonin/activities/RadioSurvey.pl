@@ -163,9 +163,10 @@ formstudent==#|html|
 # Evaluation de la réponse de l'étudiant
 evaluator_before == #|py|
 from database_utils import get_session, Base, RadioResponse
-import json
+import json, sys
 
 answer = {}
+print(answer, file=ssys.stderr)
 for i, response in enumerate(radio):
     answer[ response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content'] ] = i
 
