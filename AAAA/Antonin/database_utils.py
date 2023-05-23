@@ -37,6 +37,14 @@ class Response(Base):
     grade : Mapped[int] = mapped_column(Integer)
     feedback : Mapped[Text] = mapped_column(Text)
 
+    # For polymorphism
+    type: Mapped[str]
+
+    __mapper_args__ = {
+        "polymorphic_identity": "employee",
+        "polymorphic_on": "type",
+    }
+
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
 
