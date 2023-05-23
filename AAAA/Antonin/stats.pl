@@ -164,8 +164,8 @@ before==#|python|
 before_graph==#|python|
 from collections import Counter
 # GRAPH GENERATION
-log("out0")
-print_log()
+log("out")
+log_print()
 
 Response = get_response(dataType)
 statInputs = [StatInput(title, values, labels) for title, (labels, values) in data.items()]
