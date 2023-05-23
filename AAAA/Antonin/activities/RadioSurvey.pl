@@ -99,7 +99,13 @@ api==#|markdown|
 
 - Entrées:
 
-    - `answer` : 
+    - `answer` : `Dictionnaire`     -   Défaut: `{}`
+
+    - Contient les réponses de l'utilisateur, au format: `clé : valeur`, où:
+        
+        - **clé** est l'indice de la question *`(0 : nombre de question - 1)`*
+
+        - **valeur** est le nom de la réponse selectionnée par l'utilisateur
 
 - Sortie:
 
