@@ -11,4 +11,4 @@ Contact: ofghanirre@gmail.com
 import sys
 
 def log(message : str):
-    print("Log:\n"message, )
+    print(f"Log:\n{message}\n" + message, )
