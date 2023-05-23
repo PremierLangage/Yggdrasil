@@ -164,17 +164,20 @@ before==#|python|
 before_graph==#|python|
 from collections import Counter
 # GRAPH GENERATION
+log("out0")
+print_log()
+
 Response = get_response(dataType)
 statInputs = [StatInput(title, values, labels) for title, (labels, values) in data.items()]
 if (include_stats_score != "False"):
     values = []
     labels = []
     log("out0")
+
     with get_session(table_class=Response, base=Base) as session:
         log("out1")
         answers = session.query(Response.grade).all()
     log("out2")
-    print_log()
     for answer in answers:
         values.append(answer[0]) # mapping row -> int
     [labels.append(x) for x in values if x not in labels]
