@@ -162,6 +162,7 @@ if user__role == "teacher" and number_questions != 0:
         for k, v in json.loads(str(answer[0])).items():
             data[questions[int(v)]][1].append(k)
     globals()["data"] = data
+    globals()["dataType"] = "CodeEditorResponse"
 ==
 
 # Bloc html définissant le bloc utilisateur permettant de remplir des données pour les stats
