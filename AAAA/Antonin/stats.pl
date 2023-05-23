@@ -149,8 +149,8 @@ with open("database_utils.py", "r+") as f:
 from database_utils import *
 from stats_utils import Stat, StatInput
 from utils import *
-log(get_response(dataType).__tablename__)
-log(eval(dataType).__tablename__)
+
+log(eval(dataType))
 
 log_print()
 with get_session(table_class= Response, base=Base) as session:
