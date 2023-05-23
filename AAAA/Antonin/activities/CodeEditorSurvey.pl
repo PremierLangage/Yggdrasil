@@ -53,6 +53,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 **Options:**
 
 > Héritée de **[stats.pl](https://pl-preprod.u-pem.fr/filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/stats.pl)**
+
 -  **`include_stats_score`** : `Boolean`   -   Défaut: `False`
 
     > Afficher le graphe représentant le score des utilisateurs
