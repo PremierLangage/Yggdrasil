@@ -51,19 +51,27 @@ class Response(Base):
 
 class CodeEditorResponse(Response):
     __tablename__ = f"db_survey_CodeEditorResponse_{activity_id}"
+    __mapper_args__ = {
+        "polymorphic_identity": "CodeEditorResponse",
+    }
+    
+    score : Mapped[int] = mapped_column(Integer)
 
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
-    score : Mapped[int] = mapped_column(Integer)
+
 
 
 
 class RadioResponse(Response):
     __tablename__ = f"db_survey_RadioResponse_{activity_id}"
-
+    __mapper_args__ = {
+        "polymorphic_identity": "RadioResponse",
+    }
 
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
+    
     value : Mapped[Text] = mapped_column(Text)
 
 
