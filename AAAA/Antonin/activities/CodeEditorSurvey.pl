@@ -95,14 +95,9 @@ api==#|markdown|
 
         - **valeur** est le nom de la réponse selectionnée par l'utilisateur
 
-    - **`questions`** : `list`     -   Défaut:     `[]`
+    - **`editor.code`** : `str`     -   Défaut:     `# write your code here`
 
-    - Contient les questions de l'exercice, dans l'ordre
-        
-    - **`number_questions`** : `int`     -   Défaut:     `0`
-
-    - Le nombre de question de l'exercice
-
+    - Contient le code rentré par l'étudiant
 
 - Sortie:
 
