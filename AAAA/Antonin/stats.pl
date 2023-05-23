@@ -141,7 +141,7 @@ formstudent==#|html|
 ==
 
 before_stat==#|python|
-from utils import log, log_print
+from utils import *
 
 with open("database_utils.py", "r+") as f:
     f.seek(0, 0)
