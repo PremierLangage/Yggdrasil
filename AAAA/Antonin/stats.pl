@@ -150,7 +150,6 @@ from database_utils import *
 from stats_utils import Stat, StatInput
 from utils import *
 
-Response = eval(dataType)
 with get_session(table_class= Response, base=Base) as session:
     HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
 ==
@@ -170,12 +169,9 @@ statInputs = [StatInput(title, values, labels) for title, (labels, values) in da
 if (include_stats_score != "False"):
     values = []
     labels = []
-    log("out0")
 
     with get_session(table_class=Response, base=Base) as session:
-        log("out1")
         answers = session.query(Response.grade).all()
-    log("out2")
     for answer in answers:
         values.append(answer[0]) # mapping row -> int
     [labels.append(x) for x in values if x not in labels]
@@ -184,11 +180,8 @@ if (include_stats_score != "False"):
 if (include_stats_participation != "False"):
     values = []
     labels = []
-    log("out3")
 
     with get_session(table_class=Response, base=Base) as session:
-        log("out4")
-        
         answers = session.query(Response.student_id).all()
     for answer in Counter(answers).values():
         values.append(answer) # mapping row -> int
@@ -199,9 +192,6 @@ if (include_stats_participation != "False"):
 stat = Stat(statInputs)
 
 graphContent = stat.get_graph_as_html(containsScript=True)
-log("out")
-log(globals())
-del Response
 ==
 
 form==#|html|
