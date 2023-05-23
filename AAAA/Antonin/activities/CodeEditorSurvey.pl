@@ -156,7 +156,8 @@ else:
                 title       = title,
                 text        = text,
                 grade       = score,
-                score       = score
+                score       = score,
+                feedback    = feedback
             )
         )
         session.commit()
