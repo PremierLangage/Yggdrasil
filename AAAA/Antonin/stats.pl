@@ -85,12 +85,6 @@ local_options==#|markdown|
     > ```include_stats_score = True```
 ==
 
-options+==#|markdown|
-
-♦ Héritées de **[stats.pl](https://pl-preprod.u-pem.fr/filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/stats.pl)**
-
-{{local_options}}
-==
 
 # Flags:
 # Statistiques de score:
