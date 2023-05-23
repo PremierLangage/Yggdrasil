@@ -159,8 +159,8 @@ if user__role == "teacher" and number_questions != 0:
         answers = session.query(RadioResponse.value).all()
     
     for answer in answers:
-        for k, v in json.loads(str(answer[0])).items():
-            data[questions[int(v)]][1].append(k)
+        for i, q in json.loads(str(answer[0])).items():
+            data[questions[int(i)]][1].append(q)
     globals()["data"] = data
     globals()["dataType"] = "CodeEditorResponse"
 ==
