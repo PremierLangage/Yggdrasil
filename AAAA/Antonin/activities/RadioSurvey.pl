@@ -53,13 +53,13 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 **Options:**
 
-
+{{options}}
 
 ---
 
 ==
 
-radio_options==#|markdown|
+options+=#|markdown|
 -  **`unique_choice`** : `Boolean`   -   Défaut: `False`
 
     > L'utilisateur doit-il choisir une réponse différente par question
