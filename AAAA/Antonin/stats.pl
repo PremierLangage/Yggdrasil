@@ -153,8 +153,8 @@ log(dataType["type"])
 a = eval(dataType["type"])
 log(globals())
 log(type(a))
-log(type(Response))
-log(a)
+log(Response.__class__())
+log(dir(Response))
 log_print()
 with get_session(table_class= Response, base=Base) as session:
     HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
