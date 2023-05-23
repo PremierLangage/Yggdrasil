@@ -84,7 +84,7 @@ options==#|markdown|
 
     Exemple:
 
-    - ```include_stats_score = True```
+    - ```include_stats_participation = True```
 ==
 
 # Flags:
