@@ -1,4 +1,8 @@
 extends = /AAAA/Antonin/stats.pl
+# ===============================================
+# Documentation Loading
+extends = docs/radioSurvey/imports.pl
+# ===============================================
 
 title= Dummy Title RadioSurvey
 
