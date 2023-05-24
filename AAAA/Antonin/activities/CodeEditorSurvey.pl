@@ -58,7 +58,6 @@ globals()["answers_csv"] = answers_csv
 ==
 
 formstudent==#|html|
-{{ answers_csv }}
 {{ editor|component }}
 ==
 
