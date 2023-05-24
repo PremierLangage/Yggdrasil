@@ -3,9 +3,7 @@ extends = /AAAA/Antonin/stats.pl
 title= Dummy Title RadioSurvey
 
 # Enonce / Tutoriel d'utilisation d'un RadioSurvey
-text==#|markdown|
 
-==
 
 
 # Flags:
