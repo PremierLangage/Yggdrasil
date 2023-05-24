@@ -65,7 +65,7 @@ if user__role == "teacher" and number_questions != 0:
     data = { q : [labels, []] for q in questions}
     answers_csv = f"username,firsname,lastname,email,{','.join(questions)}\\n"
     with get_session(table_class=RadioResponse, base=Base) as session:
-        answers = session.query(RadioResponse.value).all()
+        answers = session.query(RadioResponse).all()
     
     for answer in answers:
         line_csv = [user__id,user__firstname,user__lastname,user__email]
