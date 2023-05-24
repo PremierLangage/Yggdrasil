@@ -3,12 +3,16 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 summary==#|markdown|
+Summary
 ==
 user_manual==#|markdown|
+Manual
 ==
 options==#|markdown|
+options
 ==
 evaluation==#|markdown|
+evaluation
 ==
 
 documentation==#|markdown|
