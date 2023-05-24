@@ -14,7 +14,9 @@ extends = docs/stats/imports.pl
 author = Thomas Saillard & Antonin Jean
 title= Statistic Activity
 text ==#|markdown|
+
 {{documentation}}
+
 # Documentation:
 
 {{summary}}
