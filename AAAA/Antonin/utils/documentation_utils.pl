@@ -2,8 +2,8 @@
 title= Documentation_Utils
 text= None
 form= None
-grader= None
-builder= None
+builder =@ statbefore.py
+grader  =@ statevaluator.py
 
 summary==#|markdown|
 ==
