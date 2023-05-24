@@ -103,17 +103,17 @@ formstudent==#|html|
 # Stat handling
 # ===============================================
 before_stat==#|python|
+if user__role == "teacher":
+    with open("database_utils.py", "r+") as f:
+        f.seek(0, 0)
+        f.write(f"activity_id={activity__id}")
 
-with open("database_utils.py", "r+") as f:
-    f.seek(0, 0)
-    f.write(f"activity_id={activity__id}")
+    from database_utils import get_session, get_session, Base, Response
+    from stats_utils import Stat, StatInput
+    from utils import *
 
-from database_utils import get_session, get_session, Base, Response
-from stats_utils import Stat, StatInput
-from utils import *
-
-with get_session(table_class= Response, base=Base) as session:
-    HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
+    with get_session(table_class= Response, base=Base) as session:
+        HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
 ==
 # ===============================================
 # Data handling
@@ -129,34 +129,34 @@ before==#|python|
 # ===============================================
 before_graph==#|python|
 from collections import Counter
+if user__role == "teacher":
+    statInputs = [StatInput(title, values, labels) for title, (labels, values) in data.items()]
+    if (include_stats_score != "False"):
+        values = []
+        labels = []
 
-statInputs = [StatInput(title, values, labels) for title, (labels, values) in data.items()]
-if (include_stats_score != "False"):
-    values = []
-    labels = []
+        with get_session(table_class=Response, base=Base) as session:
+            answers = session.query(Response.grade).all()
+        for answer in answers:
+            values.append(answer[0]) # mapping row -> int
+        [labels.append(x) for x in values if x not in labels]
+        labels.sort()
+        statInputs.append(StatInput("__Score__", values, labels))
+    if (include_stats_participation != "False"):
+        values = []
+        labels = []
 
-    with get_session(table_class=Response, base=Base) as session:
-        answers = session.query(Response.grade).all()
-    for answer in answers:
-        values.append(answer[0]) # mapping row -> int
-    [labels.append(x) for x in values if x not in labels]
-    labels.sort()
-    statInputs.append(StatInput("__Score__", values, labels))
-if (include_stats_participation != "False"):
-    values = []
-    labels = []
+        with get_session(table_class=Response, base=Base) as session:
+            answers = session.query(Response.student_id).all()
+        for answer in Counter(answers).values():
+            values.append(answer) # mapping row -> int
+        [labels.append(x) for x in values if x not in labels]
+        labels.sort()
 
-    with get_session(table_class=Response, base=Base) as session:
-        answers = session.query(Response.student_id).all()
-    for answer in Counter(answers).values():
-        values.append(answer) # mapping row -> int
-    [labels.append(x) for x in values if x not in labels]
-    labels.sort()
+        statInputs.append(StatInput("__Participation__", values, labels))
+    stat = Stat(statInputs)
 
-    statInputs.append(StatInput("__Participation__", values, labels))
-stat = Stat(statInputs)
-
-graphContent = stat.get_graph_as_html(containsScript=True)
+    graphContent = stat.get_graph_as_html(containsScript=True)
 ==
 
 # FORM PLAYER
