@@ -2,17 +2,7 @@
 
 - Entrées:
 
-    - **`answer`** : `Dictionnaire`     -   Défaut:     `{}`
-
-        - Contient les réponses de l'utilisateur, au format: `clé : valeur`, où:
-        
-            - **clé** est l'indice de la question *`(0 : nombre de question - 1)`*
-
-            - **valeur** est le nom de la réponse selectionnée par l'utilisateur
-
-    - **`editor.code`** : `str`     -   Défaut:     `# write your code here`
-
-        - Contient le code rentré par l'étudiant
+    Doit être définis et documenté par les implémentations de `stats.pl`
 
 - Sortie:
 
