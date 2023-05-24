@@ -1,4 +1,4 @@
-@ evaluation.md
-@ options.md
-@ summary.md
-@ user_manual.md
+evaluation =@ evaluation.md
+options =@ options.md
+summary =@ summary.md
+user_manual =@ user_manual.md
