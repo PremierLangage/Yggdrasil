@@ -5,21 +5,6 @@ title= Dummy Title RadioSurvey
 # Enonce / Tutoriel d'utilisation d'un RadioSurvey
 text==#|markdown|
 
-
----
-
-**Manuel utilisateur:**
-
-<u>**Options:**</u>
-
-{{options}}
-
-<u>**Evaluation:**</u>
-
-{{api}}
-
----
-
 ==
 
 
