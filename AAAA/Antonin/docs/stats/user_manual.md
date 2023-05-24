@@ -14,7 +14,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
     
     - `data` % {'test1': [[0,1,2,3], [1,2,2,3,3,3]], "test": [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"]]}
 
-- **`answers_csv`** : string représentant le format d'une ligne du csv
+- **`answers_csv`** : string représentant le texte à télécharger au format csv
 
     Exemple: 
     
