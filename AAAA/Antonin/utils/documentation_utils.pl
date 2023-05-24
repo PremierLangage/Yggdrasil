@@ -13,6 +13,29 @@ evaluation==#|markdown|
 ==
 
 documentation==#|markdown|
+# Documentation:
+
+{{summary}}
+
+---
+
+# Manuel Utilisateur:
+
+{{user_manual}}
+
+---
+
+# Options:
+
+{{options}}
+
+---
+
+# Evaluation:
+
+{{options}}
+
+
 ==
 
 before==#|python|
