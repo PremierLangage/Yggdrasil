@@ -39,7 +39,9 @@ text ==#|markdown|
 # L'utilisateur doit-il choisir une réponse différente par question
 unique_choice = False
 
-# Role : Traitement donnée, doit remplir la variable globale : data
+# Role : Traitement donnée, 
+# - doit remplir la variable globale : data
+# - doit remplir la variable globale : answers_csv
 # Format spécifié dans le fichier stats.pl
 before==#|python|
 import json, sys
@@ -70,6 +72,8 @@ if user__role == "teacher" and number_questions != 0:
             data[questions[int(i)]][1].append(q)
     globals()["data"] = data
     globals()["dataType"] = "CodeEditorResponse"
+
+
 ==
 
 # Bloc html définissant le bloc utilisateur permettant de remplir des données pour les stats
