@@ -24,8 +24,8 @@ Ici vous pouvez définir une activité intégrant un système de statistiques:
 
 ---
 
-user_manual @= docs/user_manual.md
-options @= docs/options.md
+user_manual =@ docs/user_manual.md
+options =@ docs/options.md
 
 # Flags:
 # Statistiques de score:
