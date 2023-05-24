@@ -13,7 +13,6 @@ evaluation =@ docs/stats/evaluation.md
 options =@ docs/stats/options.md
 summary =@ docs/stats/summary.md
 user_manual =@ docs/stats/user_manual.md
-
 # ===============================================
 author = Thomas Saillard & Antonin Jean
 title= Statistic Activity
