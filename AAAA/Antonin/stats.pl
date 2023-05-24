@@ -3,7 +3,8 @@
 @utils/stats_utils.py
 @utils/utils.py
 @utils/documentation_utils.pl
-@ /utils/sandboxio.py
+@docs/stats/imports.pl
+@/utils/sandboxio.py
 builder =@ statbefore.py
 grader  =@ statevaluator.py
 
