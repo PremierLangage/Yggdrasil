@@ -47,6 +47,9 @@ editor.code ==
 
 before==#|python|
 globals()["data"] = {}
+answers_csv = f"username,firsname,lastname,email,grade\\n"
+with get_session(table_class=CodeEditorResponse, base=Base) as session:
+    answers = session.query(CodeEditorResponse).all()
 ==
 
 formstudent==#|html|
