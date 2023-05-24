@@ -12,7 +12,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     Exemple: 
     
-    - `data % {"test1": [[0,1,2,3], [1,2,2,3,3,3]], "test": [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"]]}`
+    - `data % {'test1': [[0,1,2,3], [1,2,2,3,3,3]], "test": [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"]]}`
 
 - **`answer_csv`** : string représentant le format d'une ligne du csv
 
