@@ -72,7 +72,7 @@ if user__role == "teacher" and number_questions != 0:
         for i, q in json.loads(str(answer[0])).items():
             data[questions[int(i)]][1].append(q)
             line_csv.append(q)
-        answers_csv += f"{','.join(line_csv)}
+        answers_csv += ','.join(line_csv)
     globals()["data"] = data
     globals()["answers_csv"] = answers_csv
 ==
