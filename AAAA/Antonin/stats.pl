@@ -14,7 +14,6 @@ user_manual =@  docs/stats/user_manual.md
 options =@      docs/stats/options.md
 evaluation =@      docs/stats/evaluation.md
 
-
 author = Thomas Saillard & Antonin Jean
 title= Statistic Activity
 text ==#|markdown|
