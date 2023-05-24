@@ -47,9 +47,10 @@ before==#|python|
 import json, sys
 from database_utils import get_session, Base, RadioResponse
 
-data = {}
 questions = [v for q, v in globals().items() if q.startswith("question_")]
 number_questions = len(questions)
+data = {}
+answers_csv = f"username,firsname,lastname,email,{','.join(questions)}\\n"
 
 radio = []
 for i in range(len(questions)):
@@ -64,7 +65,6 @@ for i in range(len(questions)):
 if user__role == "teacher" and number_questions != 0:
     labels = items.splitlines()
     data = { q : [labels, []] for q in questions}
-    answers_csv = f"username,firsname,lastname,email,{','.join(questions)}\\n"
     with get_session(table_class=RadioResponse, base=Base) as session:
         answers = session.query(RadioResponse).all()
     
