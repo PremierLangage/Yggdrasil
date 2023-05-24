@@ -103,17 +103,16 @@ formstudent==#|html|
 # Stat handling
 # ===============================================
 before_stat==#|python|
-if user__role == "teacher":
-    with open("database_utils.py", "r+") as f:
-        f.seek(0, 0)
-        f.write(f"activity_id={activity__id}")
+with open("database_utils.py", "r+") as f:
+    f.seek(0, 0)
+    f.write(f"activity_id={activity__id}")
 
-    from database_utils import get_session, get_session, Base, Response
-    from stats_utils import Stat, StatInput
-    from utils import *
+from database_utils import get_session, get_session, Base, Response
+from stats_utils import Stat, StatInput
+from utils import *
 
-    with get_session(table_class= Response, base=Base) as session:
-        HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
+with get_session(table_class= Response, base=Base) as session:
+    HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
 ==
 # ===============================================
 # Data handling
