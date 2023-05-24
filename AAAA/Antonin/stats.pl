@@ -2,6 +2,7 @@
 @utils/graph_utils.py
 @utils/stats_utils.py
 @utils/utils.py
+@utils/documentation_utils.pl
 
 @ /utils/sandboxio.py
 builder =@ statbefore.py
