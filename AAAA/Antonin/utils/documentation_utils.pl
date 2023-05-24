@@ -3,9 +3,6 @@ builder =@ statbefore.py
 grader  =@ statevaluator.py
 
 
-documentation==#|markdown|
-
-==
 summary==#|markdown|
 ==
 user_manual==#|markdown|
