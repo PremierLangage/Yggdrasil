@@ -33,7 +33,6 @@ text ==#|markdown|
 {{evaluation}}
 
 ---
-
 ==
 
 summary =@      docs/stats/summary.md
