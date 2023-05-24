@@ -68,12 +68,13 @@ if user__role == "teacher" and number_questions != 0:
         answers = session.query(RadioResponse.value).all()
     
     for answer in answers:
+        line_csv = []
         for i, q in json.loads(str(answer[0])).items():
             data[questions[int(i)]][1].append(q)
+            line_csv.append(q)
+        answers_csv += ",".join(line_csv)
     globals()["data"] = data
-    globals()["dataType"] = "CodeEditorResponse"
-
-
+    globals()["answers_csv"] = answers_csv
 ==
 
 # Bloc html définissant le bloc utilisateur permettant de remplir des données pour les stats
