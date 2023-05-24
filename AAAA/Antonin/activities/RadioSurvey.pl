@@ -80,6 +80,7 @@ if user__role == "teacher" and number_questions != 0:
 # Bloc html définissant le bloc utilisateur permettant de remplir des données pour les stats
 # C'est la partie jouable de l'exercice
 formstudent==#|html|
+{{answers_csv}}
 {% if False and HAS_ANSWERED != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
 {% else %}
