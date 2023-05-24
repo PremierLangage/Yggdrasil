@@ -19,9 +19,9 @@ text ==#|markdown|
 {{documentation}}
 ==
 
-summary =@      docs/summary.md
-user_manual =@  docs/user_manual.md
-options =@      docs/options.md
+summary =@      docs/stats/summary.md
+user_manual =@  docs/stats/user_manual.md
+options =@      docs/stats/options.md
 
 # Flags:
 # Statistiques de score:
