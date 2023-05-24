@@ -2,10 +2,17 @@
 @utils/graph_utils.py
 @utils/stats_utils.py
 @utils/utils.py
-@docs/stats/imports.pl
+
 @ /utils/sandboxio.py
 builder =@ statbefore.py
 grader  =@ statevaluator.py
+# Documentation Loading
+@docs/stats/imports.pl
+summary =@      docs/stats/summary.md
+user_manual =@  docs/stats/user_manual.md
+options =@      docs/stats/options.md
+evaluation =@      docs/stats/evaluation.md
+
 
 author = Thomas Saillard & Antonin Jean
 title= Statistic Activity
