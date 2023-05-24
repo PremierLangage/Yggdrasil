@@ -35,11 +35,6 @@ text ==#|markdown|
 ---
 ==
 
-summary =@      docs/stats/summary.md
-user_manual =@  docs/stats/user_manual.md
-options =@      docs/stats/options.md
-evaluation =@      docs/stats/evaluation.md
-
 
 # Flags:
 # Statistiques de score:
