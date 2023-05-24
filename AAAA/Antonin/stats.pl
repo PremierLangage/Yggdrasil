@@ -35,6 +35,10 @@ text ==#|markdown|
 
 ## Evaluation
 
+{{evaluation
+
+---
+
 ==
 
 summary =@      docs/stats/summary.md
