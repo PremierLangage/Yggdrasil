@@ -1,6 +1,6 @@
 @ /utils/sandboxio.py
-builder =@ /utils/before.py
-grader  =@ /utils/evaluator.py
+grader  =@ /grader/evaluator.py
+builder =@ /builder/before.py
 
 title= Documentation_Utils
 text= None
