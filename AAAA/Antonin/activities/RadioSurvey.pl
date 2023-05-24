@@ -31,6 +31,7 @@ text ==#|markdown|
 
 ---
 ==
+
 # Flags:
 # L'utilisateur doit-il choisir une réponse différente par question
 unique_choice = False
