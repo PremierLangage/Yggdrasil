@@ -3,7 +3,7 @@
 @utils/stats_utils.py
 @utils/utils.py
 @utils/documentation_utils.pl
-
+@docs/imports.pl
 @ /utils/sandboxio.py
 builder =@ statbefore.py
 grader  =@ statevaluator.py
@@ -17,6 +17,7 @@ title= Statistic Activity
 # Ecrire un énoncé ici
 text ==#|markdown|
 ==
+
 summary =@      docs/summary.md
 user_manual =@  docs/user_manual.md
 options =@      docs/options.md
