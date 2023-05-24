@@ -55,7 +55,7 @@ include_stats_participation = False
 # ===============================================
 # Can (should) be redefined in implementations (see doc)
 data % {"test1": [[0,1,2,3], [1,2,2,3,3,3]], "test":  [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"]]}
-answers_csv="username,firsname,lastname,email,title,statement,grade,try_amount\\n"
+answers_csv="username,firsname,lastname,email,title,statement,grade\\n"
 formstudent==#|html|
 <style>
 .ascii-animation { 
