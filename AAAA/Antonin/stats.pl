@@ -1,7 +1,7 @@
-@database_utils.py
-@graph_utils.py
-@stats_utils.py
-@utils.py
+@utils/database_utils.py
+@utils/graph_utils.py
+@utils/stats_utils.py
+@utils/utils.py
 
 @ /utils/sandboxio.py
 builder =@ statbefore.py
