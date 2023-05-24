@@ -2,13 +2,10 @@
 @utils/graph_utils.py
 @utils/stats_utils.py
 @utils/utils.py
-
-@/utils/sandboxio.py
+@docs/imports.pl
+@ /utils/sandboxio.py
 builder =@ statbefore.py
 grader  =@ statevaluator.py
-summary =@      docs/stats/summary.md
-user_manual =@  docs/stats/user_manual.md
-options =@      docs/stats/options.md
 
 ################### Modifier ici ###########################
 author = Thomas Saillard & Antonin Jean
@@ -21,9 +18,9 @@ text ==#|markdown|
 {{documentation}}
 ==
 
-@utils/documentation_utils.pl
-@docs/stats/imports.pl
-
+summary =@      docs/summary.md
+user_manual =@  docs/user_manual.md
+options =@      docs/options.md
 
 # Flags:
 # Statistiques de score:
