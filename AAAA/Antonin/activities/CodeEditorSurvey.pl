@@ -46,6 +46,8 @@ editor.code ==
 
 
 before==#|python|
+from database_utils import CodeEditorResponse
+
 globals()["data"] = {}
 answers_csv = f"username,firsname,lastname,email,grade\\n"
 with get_session(table_class=CodeEditorResponse, base=Base) as session:
