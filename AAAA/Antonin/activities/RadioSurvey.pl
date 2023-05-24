@@ -68,11 +68,11 @@ if user__role == "teacher" and number_questions != 0:
         answers = session.query(RadioResponse.value).all()
     
     for answer in answers:
-        line_csv = []
+        line_csv = [user__id,user__firstname,user__lastname,user__email]
         for i, q in json.loads(str(answer[0])).items():
             data[questions[int(i)]][1].append(q)
             line_csv.append(q)
-        answers_csv += ",".join(line_csv)
+        answers_csv += f"{','.join(line_csv)}
     globals()["data"] = data
     globals()["answers_csv"] = answers_csv
 ==
