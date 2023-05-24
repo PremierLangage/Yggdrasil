@@ -54,7 +54,7 @@ with get_session(table_class=CodeEditorResponse, base=Base) as session:
 
     answers = session.query(CodeEditorResponse).all()
     for answer in answers:
-        answers_csv += answer
+        answers_csv += str(answer)
 ==
 
 formstudent==#|html|
