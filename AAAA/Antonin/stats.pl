@@ -7,6 +7,9 @@
 @/utils/sandboxio.py
 builder =@ statbefore.py
 grader  =@ statevaluator.py
+summary =@      docs/stats/summary.md
+user_manual =@  docs/stats/user_manual.md
+options =@      docs/stats/options.md
 
 ################### Modifier ici ###########################
 author = Thomas Saillard & Antonin Jean
@@ -19,9 +22,6 @@ text ==#|markdown|
 {{documentation}}
 ==
 
-summary =@      docs/stats/summary.md
-user_manual =@  docs/stats/user_manual.md
-options =@      docs/stats/options.md
 
 # Flags:
 # Statistiques de score:
