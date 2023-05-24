@@ -9,11 +9,10 @@ grader  =@ statevaluator.py
 
 # ===============================================
 # Documentation Loading
-@docs/stats/imports.pl
-evaluation = evaluation
-options = options
-summary = summary
-user_manual = user_manual
+evaluation =@ docs/stats/evaluation.md
+options =@ docs/stats/options.md
+summary =@ docs/stats/summary.md
+user_manual =@ docs/stats/user_manual.md
 
 # ===============================================
 author = Thomas Saillard & Antonin Jean
