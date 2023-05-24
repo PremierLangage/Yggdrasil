@@ -61,9 +61,10 @@ for i in range(len(questions)):
         tmp.items.append({ "id": j+1, "content": item })
     globals()[str(i)] = tmp
     radio.append(vars(tmp))
-labels = items.splitlines()
-data = { q : [labels, []] for q in questions}
 if user__role == "teacher" and number_questions != 0:
+
+    labels = items.splitlines()
+    data = { q : [labels, []] for q in questions}
     with get_session(table_class=RadioResponse, base=Base) as session:
         answers = session.query(RadioResponse).all()
     
