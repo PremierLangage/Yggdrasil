@@ -14,11 +14,11 @@ Pour ce faire vous devez définir les variables globales suivantes:
     
     - `data` % {'test1': [[0,1,2,3], [1,2,2,3,3,3]], "test": [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"]]}
 
-- **`answer_csv`** : string représentant le format d'une ligne du csv
+- **`answers_csv`** : string représentant le format d'une ligne du csv
 
     Exemple: 
     
-    - `answer_csv=`"username,firsname,lastname,email,title,statement,grade\\n"
+    - `answers_csv=`"username,firsname,lastname,email,title,statement,grade\\n"
 
 - **`formstudent`** : block html au format string représentant la partie jouable par un utilisateur lambda
 
