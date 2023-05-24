@@ -117,15 +117,18 @@ from utils import *
 with get_session(table_class= Response, base=Base) as session:
     HAS_ANSWERED = (session.query(Response).filter(Response.student_id == user__id).first()) != None
 ==
+# ===============================================
+# Data handling
+# ===============================================
 
 before==#|python|
 # Nothing, work is done in implementations
 # needs to be overwriten
 ==
-# ===============================================
-# Graph Generation
-# ===============================================
 
+# ===============================================
+# Graph generation
+# ===============================================
 before_graph==#|python|
 from collections import Counter
 
