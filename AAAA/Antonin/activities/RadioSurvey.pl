@@ -6,10 +6,6 @@ extends = ../docs/radioSurvey/imports.pl
 
 title= Dummy Title RadioSurvey
 
-# Enonce / Tutoriel d'utilisation d'un RadioSurvey
-
-
-
 # Flags:
 # L'utilisateur doit-il choisir une réponse différente par question
 unique_choice = False
