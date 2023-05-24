@@ -23,9 +23,9 @@ Ici vous pouvez définir une activité intégrant un système de statistiques:
 - récupération des entrées au format `csv`
 
 ---
-summary =@ docs/summary.md
-user_manual =@ docs/user_manual.md
-options =@ docs/options.md
+summary =@      docs/summary.md
+user_manual =@  docs/user_manual.md
+options =@      docs/options.md
 
 # Flags:
 # Statistiques de score:
