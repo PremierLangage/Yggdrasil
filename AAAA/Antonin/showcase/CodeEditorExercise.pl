@@ -10,6 +10,16 @@ Il contient l'affichage des deux graphes par défaut optionnels:
 - statistiques des scores 
 
 - statistiques de participation
+
+## Exemple :
+Renseignez un code avec une condition simple
+
+Scoring:
+
+- if = 100pt
+
+- else = 42pt
+
 ==
 
 editor.theme = dark
