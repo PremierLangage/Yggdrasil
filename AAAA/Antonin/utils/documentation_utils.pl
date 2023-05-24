@@ -2,10 +2,6 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
-title= Documentation_Utils
-text= None
-form= None
-
 summary==#|markdown|
 ==
 user_manual==#|markdown|
@@ -40,6 +36,11 @@ documentation==#|markdown|
 
 
 ==
+
+title= Documentation_Utils
+text= {{documentation}}
+form= None
+
 
 before==#|python|
 ==
