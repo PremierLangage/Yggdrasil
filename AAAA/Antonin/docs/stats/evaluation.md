@@ -2,7 +2,7 @@
 
 - Entrées:
 
-    Doit être définis et documenté par les implémentations de `stats.pl`
+    *Doit être définis et documenté par les implémentations de `stats.pl`*
 
 - Sortie:
 
