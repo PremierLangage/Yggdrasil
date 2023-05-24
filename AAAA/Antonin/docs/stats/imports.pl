@@ -3,7 +3,7 @@ options =@ options.md
 summary =@ summary.md
 user_manual =@ user_manual.md
 
-documentation#|markdown|
+documentation==#|markdown|
 # Documentation:
 
 {{summary}}
