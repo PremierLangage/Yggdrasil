@@ -7,13 +7,14 @@
 builder =@ statbefore.py
 grader  =@ statevaluator.py
 
+# ===============================================
 # Documentation Loading
 @docs/stats/imports.pl
 summary =@      docs/stats/summary.md
 user_manual =@  docs/stats/user_manual.md
 options =@      docs/stats/options.md
 evaluation =@      docs/stats/evaluation.md
-
+# ===============================================
 author = Thomas Saillard & Antonin Jean
 title= Statistic Activity
 text ==#|markdown|
@@ -42,13 +43,17 @@ text ==#|markdown|
 ---
 ==
 
+# ===============================================
 # Flags:
+# ===============================================
 # Statistiques de score:
 include_stats_score = False
 # Statistiques de participation:
 include_stats_participation = False
 
+# ===============================================
 # Values required for the program to work
+# ===============================================
 # Can (should) be redefined in implementations (see doc)
 data % {"test1": [[0,1,2,3], [1,2,2,3,3,3]], "test":  [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"]]}
 dataType = CodeEditorResponse
@@ -96,6 +101,9 @@ formstudent==#|html|
 </div>
 ==
 
+# ===============================================
+# Stat handling
+# ===============================================
 before_stat==#|python|
 
 with open("database_utils.py", "r+") as f:
@@ -114,10 +122,12 @@ before==#|python|
 # Nothing, work is done in implementations
 # needs to be overwriten
 ==
+# ===============================================
+# Graph Generation
+# ===============================================
 
 before_graph==#|python|
 from collections import Counter
-# GRAPH GENERATION
 
 statInputs = [StatInput(title, values, labels) for title, (labels, values) in data.items()]
 if (include_stats_score != "False"):
