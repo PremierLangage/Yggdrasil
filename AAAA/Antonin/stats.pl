@@ -16,13 +16,7 @@ title= Statistic Activity
 
 # Ecrire un énoncé ici
 text ==#|markdown|
-Ici vous pouvez définir une activité intégrant un système de statistiques:
-
-- affichage de graphe (histogramme) représentant les données pour l'enseignant
-
-- récupération des entrées au format `csv`
-
----
+==
 summary =@      docs/summary.md
 user_manual =@  docs/user_manual.md
 options =@      docs/options.md
