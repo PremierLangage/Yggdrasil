@@ -7,13 +7,8 @@
 builder =@ statbefore.py
 grader  =@ statevaluator.py
 
-################### Modifier ici ###########################
 author = Thomas Saillard & Antonin Jean
-
-# Ecrire un titre ici
 title= Statistic Activity
-
-# Ecrire un énoncé ici
 text ==#|markdown|
 # Documentation:
 
