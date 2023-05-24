@@ -14,29 +14,7 @@ grader  =@ statevaluator.py
 author = Thomas Saillard & Antonin Jean
 title= Statistic Activity
 text ==#|markdown|
-# Documentation:
-
-{{summary}}
-
----
-
-## Manuel Utilisateur:
-
-{{user_manual}}
-
----
-
-## Options:
-
-{{options}}
-
----
-
-## Evaluation
-
-{{evaluation}}
-
----
+{{documentation}}
 ==
 
 # ===============================================
