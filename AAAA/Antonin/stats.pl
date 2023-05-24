@@ -16,6 +16,7 @@ title= Statistic Activity
 
 # Ecrire un énoncé ici
 text ==#|markdown|
+{{documentation}}
 ==
 
 summary =@      docs/summary.md
