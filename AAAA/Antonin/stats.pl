@@ -56,7 +56,7 @@ include_stats_participation = False
 # Can (should) be redefined in implementations (see doc)
 data % {"test1": [[0,1,2,3], [1,2,2,3,3,3]], "test":  [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"]]}
 dataType = CodeEditorResponse
-answer_csv="username,firsname,lastname,email,title,statement,grade\\n"
+answers_csv="username,firsname,lastname,email,title,statement,grade\\n"
 formstudent==#|html|
 <style>
 .ascii-animation { 
@@ -198,7 +198,7 @@ form==#|html|
         // Start file download.
         document.getElementById("dwn-btn").addEventListener("click", function(){
             // Generate download of hello.txt file with some content
-            var text = "{{answer_csv}}";
+            var text = "{{answers_csv}}";
             var filename = "answers.csv";
             
             download(filename, text);
