@@ -47,6 +47,7 @@ before==#|python|
 import json, sys
 from database_utils import get_session, Base, RadioResponse
 
+data = {}
 questions = [v for q, v in globals().items() if q.startswith("question_")]
 number_questions = len(questions)
 
@@ -60,7 +61,7 @@ for i in range(len(questions)):
     globals()[str(i)] = tmp
     radio.append(vars(tmp))
 
-if number_questions != 0:
+if user__role == "teacher" and number_questions != 0:
     labels = items.splitlines()
     data = { q : [labels, []] for q in questions}
     answers_csv = f"username,firsname,lastname,email,{','.join(questions)}\\n"
@@ -73,8 +74,8 @@ if number_questions != 0:
             data[questions[int(i)]][1].append(q)
             line_csv.append(q)
         answers_csv += ','.join(line_csv) + '\\n'
-    globals()["data"] = data
-    globals()["answers_csv"] = answers_csv
+globals()["data"] = data
+globals()["answers_csv"] = answers_csv
 ==
 
 # Bloc html définissant le bloc utilisateur permettant de remplir des données pour les stats
