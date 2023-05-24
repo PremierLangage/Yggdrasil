@@ -6,6 +6,31 @@ extends = ../docs/radioSurvey/imports.pl
 
 title= Dummy Title RadioSurvey
 
+text ==#|markdown|
+# Documentation:
+
+{{summary}}
+
+---
+
+## Manuel Utilisateur:
+
+{{user_manual}}
+
+---
+
+## Options:
+
+{{options}}
+
+---
+
+## Evaluation
+
+{{evaluation}}
+
+---
+==
 # Flags:
 # L'utilisateur doit-il choisir une réponse différente par question
 unique_choice = False
