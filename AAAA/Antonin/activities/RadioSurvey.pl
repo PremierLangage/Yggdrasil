@@ -4,52 +4,11 @@ title= Dummy Title RadioSurvey
 
 # Enonce / Tutoriel d'utilisation d'un RadioSurvey
 text==#|markdown|
-Ici vous pouvez définir une activité de RadioGroup incluant le module de Statistique:
 
-    - exercice radio : selection de choix répondant à une liste de question
-
-    - affichage de graphe (histogramme) représentant les données pour l'enseignant
-
-    - récupération des entrées au format `csv`
 
 ---
 
 **Manuel utilisateur:**
-
-Pour ce faire vous devez définir les variables globales suivantes:
-
-- Un ensemble de question au format suivant : **`question_X`**:
-
-    Où X est un identifiant se devant d'être unique et n'ayant aucune incidence dans la suite du code.
-
-
-    Exemple:
-
-    > ```question_1 = Que pensez-vous de ce tutoriel ?```
-
-    > ```question_plus_pertinente = Est-ce que vous aussi vous avez du mal à finir vos...```
-
-- Une liste de réponses possibles dans une variable **`items`**, une réponse équivaut à une ligne:
-
-    Exemple:
-
-    <code>
-    
-    items==
-
-    Bien
-
-    Passable
-
-    Mal (faute de goût objectivement)
-
-    42
-
-    La couleur bleu
-
-    ==
-
-    </code>
 
 <u>**Options:**</u>
 
@@ -65,66 +24,10 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 options==#|markdown|
 
-[Options RadioSurvey.pl](https://pl-preprod.u-pem.fr/filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/activities/RadioSurvey.pl)
 
--  **`unique_choice`** : `Boolean`   -   Défaut: `False`
-
-    - L'utilisateur doit-il choisir une réponse différente par question
-
-    Exemple:
-
-    - ```unique_choice = True```
-
-[Options stats.pl](https://pl-preprod.u-pem.fr/filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/stats.pl)
-
--  **`include_stats_score`** : `Boolean`   -   Défaut: `False`
-
-    - Afficher le graphe représentant le score des utilisateurs
-
-    Exemple:
-
-    - ```include_stats_score = True```
-
--  **`include_stats_participation`** : `Boolean`   -   Défaut: `False`
-
-    - Afficher le graphe représentant le taux de participation des utilisateurs
-
-    Exemple:
-
-    - ```include_stats_participation = True```
 ==
 
 api==#|markdown|
-- Vous pouvez définir la manière dont sera évalué votre exercice à l'aide de la balise `evaluator`, vous aurez accès à un certains nombres de valeurs et aurez à charge de définir des valeurs sortantes.
-
-- Entrées:
-
-    - **`answer`** : `Dictionnaire`     -   Défaut:     `{}`
-
-        - Contient les réponses de l'utilisateur, au format: `clé : valeur`, où:
-        
-            - **clé** est l'indice de la question *`(0 : nombre de question - 1)`*
-
-            - **valeur** est le nom de la réponse selectionnée par l'utilisateur
-
-    - **`questions`** : `list`     -   Défaut:     `[]`
-
-        - Contient les questions de l'exercice, dans l'ordre
-        
-    - **`number_questions`** : `int`     -   Défaut:     `0`
-
-        - Le nombre de question de l'exercice
-
-
-- Sortie:
-
-    - **`score`** : `int`     -   Défaut:     `100`
-
-        - Définis le score de l'étudiant, si le score est inférieur à 0, on considère que c'est une erreur et la réponse ne sera pas enregistrée.
-
-    - **`feedback`** : `str`     -   Défaut:     <span class="success-state">Réponse enregistrée</span>
-
-        - Définis le message affichée à l'étudiant après évaluation de son score.
 
 ==
 
