@@ -51,11 +51,14 @@ from database_utils import CodeEditorResponse
 globals()["data"] = {}
 answers_csv = f"username,firsname,lastname,email,grade\\n"
 with get_session(table_class=CodeEditorResponse, base=Base) as session:
+
     answers = session.query(CodeEditorResponse).all()
+    for answer in answers:
+        answers_csv += answer
 ==
 
 formstudent==#|html|
-{{ answers }}
+{{ answers_csv }}
 {{ editor|component }}
 ==
 
