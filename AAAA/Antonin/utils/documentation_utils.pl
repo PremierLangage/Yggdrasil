@@ -1,6 +1,8 @@
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
+@docs/stats/imports.pl
+
 
 summary==#|markdown|
 Summary
