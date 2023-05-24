@@ -9,7 +9,7 @@ grader  =@ statevaluator.py
 
 # ===============================================
 # Documentation Loading
-extends docs/stats/imports.pl
+extends = docs/stats/imports.pl
 # ===============================================
 author = Thomas Saillard & Antonin Jean
 title= Statistic Activity
