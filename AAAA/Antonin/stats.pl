@@ -42,7 +42,6 @@ text ==#|markdown|
 ---
 ==
 
-
 # Flags:
 # Statistiques de score:
 include_stats_score = False
