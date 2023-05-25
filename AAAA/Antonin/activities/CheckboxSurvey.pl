@@ -97,7 +97,7 @@ formstudent==#|html|
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
 {% else %}
     {% for i, g in checkBoxsI %}
-        {{ questions[i]|safe }}
+        <b>{{ questions[i]|safe }}</b>
 
         {{ g|component }}
 
