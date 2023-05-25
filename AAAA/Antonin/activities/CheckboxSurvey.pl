@@ -113,7 +113,7 @@ utils.log(response)
 
 answer = {}
 for i, g in range(len(checkBoxsI)):
-    answer[ questions[i] ] = [i['Checked'] for i in response[f"checkbox_{questions[i]}"]['items']]
+    answer[ questions[i] ] = [1 if i['Checked'] == 'True' else 0 for i in response[f"checkbox_{questions[i]}"]['items']]
 utils.log(answer)
 utils.log_print()
 # Default Grade intilisation
