@@ -1,6 +1,20 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
+"""
+Author : Antonin JEAN
+Date : 22/05/2023
+
+-*-
+Evaluator for statistics handling
+Contains 3 clauses in order:
+evaluator_before :  toload answers data
+evaluator :         to handle score / feedback settings (in implemented file)
+evaluator_after :   to push answers in DB
+
+Contact: ofghanirre@gmail.com
+"""
+
 import sys, json, jsonpickle, time
 
 from sandboxio import output, get_context, get_answers
