@@ -59,6 +59,16 @@ from itertools import combinations
 def getValuesAsString(values: list) -> str:
     return ' - '.join(values)
 
+def get_combinations(lst):
+    combinations = []
+    n = len(lst)
+    
+    # Générer les combinaisons de 1 à n éléments
+    for r in range(1, n+1):
+        combinations.extend(list(combinations(lst, r)))
+    
+    return list(map(getValuesAsString,combinations))
+
 inputValues = {k[len("question_"):] : {"question": v, "items": []} for k, v in globals().items() if k.startswith("question_")} 
 for k, v in [(k, v) for k, v in globals().items() if k.startswith("items_")]:
     k = k[len("items_"):]
@@ -80,11 +90,8 @@ for i, key in enumerate(inputValues):
 
 if user__role =="teacher" and number_questions != 0:
     for i in inputValues:
-        utils.log(f"items : {inputValues[i]['items']}")
         combis = list(combinations(inputValues[i]["items"], len(inputValues[i]["items"])))
-        utils.log(f"combis : {combis}")
         labels = list(map(getValuesAsString, combis))
-        utils.log(f"labels : {labels}")
         data[inputValues[i]["question"]] = [labels, []]
 
     with get_session(table_class=CheckboxResponse, base=Base) as session:
