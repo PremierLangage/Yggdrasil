@@ -162,8 +162,6 @@ if user__role == "teacher":
 # FORM PLAYER
 # change line {% if user__role == "teacher" %} to {% if user__role != "teacher" %} to access student mode
 form==#|html|
-data : {{data}}
-
 {% if user__role == "teacher" %}
 <style>
     .graph {
