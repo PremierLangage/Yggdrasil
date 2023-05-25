@@ -44,7 +44,7 @@ unique_choice = False
 # - doit remplir la variable globale : answers_csv
 # Format spécifié dans le fichier stats.pl
 before==#|python|
-import json, sys
+import json
 from database_utils import get_session, Base, RadioResponse
 
 questions = [v for q, v in globals().items() if q.startswith("question_")]
