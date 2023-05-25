@@ -79,9 +79,11 @@ class Question:
     def __init__(self, name, items):
         self.name = name
         self.items = items
-        
+
 def get_question(_id: str):
-    
+    v = inputValues.get(_id)
+    if not v: return None
+    return Question(v["question"], v["items"])
 
 
 questions = list(inputValues.keys())
