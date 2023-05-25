@@ -92,3 +92,14 @@ test:  {{test.value}}
     {% endfor %} 
 {% endif %}
 ==
+
+# Evaluation de la réponse de l'étudiant
+evaluator_before == #|py|
+==
+
+#default evaluator
+evaluator==#|py| 
+==
+
+evaluator_after == #|py|
+==
