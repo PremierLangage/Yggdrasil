@@ -35,6 +35,11 @@ text ==#|markdown|
 ---
 ==
 
+# Flags:
+# L'utilisateur doit-il choisir une réponse différente par question
+all_possibilities = False
+
+
 # Role : Traitement donnée, 
 # - doit remplir la variable globale : data
 # - doit remplir la variable globale : answers_csv
@@ -78,7 +83,7 @@ for i, key in enumerate(inputValues):
 
 if user__role =="teacher" and number_questions != 0:
     for i in inputValues:           
-        labels = get_combinations(inputValues[i]["items"])
+        labels = get_combinations(inputValues[i]["items"]) if all_possibilities != 'False' else []
         data[inputValues[i]["question"]] = [labels, []]
 
     with get_session(table_class=CheckboxResponse, base=Base) as session:
