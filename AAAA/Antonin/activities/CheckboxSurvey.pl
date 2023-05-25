@@ -98,8 +98,7 @@ if user__role =="teacher" and number_questions != 0:
     for answer in answers:
         line_csv = [answer.username,answer.firstname,answer.lastname,answer.email]
         for q, items in json.loads(str(answer.values)).items():
-            val = (items)
-            data[q][1].append(getValuesAsString(val))
+            data[q][1].append(getValuesAsString(items))
             line_csv += [q] + items
         answers_csv += ','.join(map(str, line_csv)) + '\\n'
 
@@ -134,7 +133,7 @@ import json, utils
 
 answer = {}
 for i in range(len(checkBoxs)):
-    answer[ questions_name[i] ] = [int(i['checked']) for i in response[f"checkbox_{questions[i]}"]['items']]
+    answer[ questions[i] = (questions_name[i], [i['content'] for i in response[f"checkbox_{questions[i]}"]['items']])
 
 # Default Grade intilisation
 score = 100
