@@ -118,7 +118,6 @@ answer = {}
 for i in range(len(checkBoxs)):
     answer[ questions[i] ] = [int(i['checked']) for i in response[f"checkbox_{questions[i]}"]['items']]
 
-utils.log(answer)
 # Default Grade intilisation
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
