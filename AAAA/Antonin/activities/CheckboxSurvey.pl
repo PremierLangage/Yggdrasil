@@ -54,6 +54,7 @@ number_questions = len(questions)
 data = {}
 answers_csv = f"username,firsname,lastname,email,{','.join([','.join([inputValues[key]['question']] + inputValues[key]['items'])])}\\n"
 
+checkBoxs
 for key in inputValues:
     tmp = CheckboxGroup(cid=str(i))
     tmp.items() = [{"id": f"item_{key}_{i}",  "content": i} for i in inputValues[key]["items"]]
