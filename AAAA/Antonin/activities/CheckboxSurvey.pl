@@ -59,7 +59,6 @@ inputValues = {k[len("question_"):] : {"question": v, "items": []} for k, v in g
 for k, v in globals().items():
     log(inputValues)
     log((k, v))
-    log_print()
     if k.startswith("items_"):
         k = k[len("items_"):]
         if k in inputValues:
