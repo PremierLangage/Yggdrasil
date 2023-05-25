@@ -1,6 +1,21 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
+"""
+Author : Antonin JEAN
+Date : 19/05/2023
+
+-*-
+Before for statistics handling
+Contains 3 clauses in order:
+before_stat :   to handle statistics initialisation
+before :        to handle data filling (in implemented file)
+before_graph :  to handle graph displaying
+
+Contact: ofghanirre@gmail.com
+"""
+
+
 import sys, json, jsonpickle
 from sandboxio import get_context
 
