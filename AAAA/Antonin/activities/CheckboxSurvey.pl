@@ -143,7 +143,7 @@ if int(score) >= 0:
             ))
         session.commit()
 else :
-    feedback = '<span class="error-state">Votre entrée est invalide...</span>'
+    feedback = '<span class="error-state">Votre entrée est invalide</span>'
 
 grade = (score, feedback)
 ==
