@@ -84,7 +84,7 @@ if user__role =="teacher" and number_questions != 0:
         for q, items in json.loads(str(answer.values)).items():
             data[q][1].append(items)
             line_csv += [q] + items
-        answers_csv += ','.join(line_csv) + '\\n'
+        answers_csv += ','.join(map(str, line_csv)) + '\\n'
 
 checkBoxsI = list(enumerate(checkBoxs))
 globals()["data"] = data
