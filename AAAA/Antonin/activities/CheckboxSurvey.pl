@@ -53,7 +53,7 @@ Bb
 # Format spécifié dans le fichier stats.pl
 before==#|python|
 from database_utils import get_session, Base, CheckboxResponse
-import json
+import json, utils
 from itertools import combinations
 
 def getValuesAsString(values: list) -> str:
@@ -89,7 +89,8 @@ if user__role =="teacher" and number_questions != 0:
             data[q][1].append(items)
             line_csv += [q] + items
         answers_csv += ','.join(map(str, line_csv)) + '\\n'
-
+utils.log(data)
+log_print()
 checkBoxsI = list(enumerate(checkBoxs))
 globals()["data"] = data
 globals()["answers_csv"] = answers_csv
