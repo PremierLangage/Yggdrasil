@@ -15,10 +15,19 @@ Il contient l'affichage des réponses par question ainsi que l'affichage des deu
 
 question_1 = Que pensez vous de cet exercice?
 
-items_1 ==
+items_1==
 Très satisfaisant
 Satisfaisant
 Moyennement satisfaisant
 Mediocre
 La couleur bleu
+==
+
+question_2 = Et que pensez-vous des gens qui ne finissent pas leurs ...
+
+items_2==
+...
+Pas grand ...
+Leurs ?
+J'aime bien surtout ceux
 ==
