@@ -1,3 +1,14 @@
+[Options Checkbox.pl](https://pl-preprod.u-pem.fr/filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/activities/CheckboxSurvey.pl)
+
+-  **`all_possibilities`** : `Boolean`   -   Défaut: `False`
+
+    - L'utilisateur doit-il choisir une réponse différente par question
+
+    Exemple:
+
+    - ```unique_choice = True```
+
+
 [Options stats.pl](https://pl-preprod.u-pem.fr/filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/stats.pl)
 
 -  **`include_stats_score`** : `Boolean`   -   Défaut: `False`
