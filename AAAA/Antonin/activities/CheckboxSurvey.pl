@@ -54,6 +54,8 @@ Bb
 before==#|python|
 from database_utils import get_session, Base, CheckboxResponse
 import json
+from itertools import combinations
+
 
 inputValues = {k[len("question_"):] : {"question": v, "items": []} for k, v in globals().items() if k.startswith("question_")} 
 for k, v in [(k, v) for k, v in globals().items() if k.startswith("items_")]:
@@ -75,7 +77,7 @@ for i, key in enumerate(inputValues):
     checkBoxs.append(vars(tmp))
 
 if user__role =="teacher" and number_questions != 0:
-    data = { inputValues[i]["question"] : [inputValues[i]["items"], []] for i in inputValues}
+    data = { inputValues[i]["question"] : [combinations(inputValues[i]["items"], len(inputValues[i]["items"]), []] for i in inputValues}
     with get_session(table_class=CheckboxResponse, base=Base) as session:
         answers = session.query(CheckboxResponse).all()
     
