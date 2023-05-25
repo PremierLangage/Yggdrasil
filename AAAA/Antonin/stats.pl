@@ -161,7 +161,7 @@ if user__role == "teacher":
 # FORM PLAYER
 # change line {% if user__role == "teacher" %} to {% if user__role != "teacher" %} to access student mode
 form==#|html|
-{% if user__role != "teacher" %}
+{% if user__role == "teacher" %}
 <style>
     .graph {
         display:flex;
