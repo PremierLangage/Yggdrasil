@@ -77,8 +77,9 @@ for i, key in enumerate(inputValues):
     checkBoxs.append(vars(tmp))
 
 if user__role =="teacher" and number_questions != 0:
-    for i in inputValues:           #get_combinations(inputValues[i]["items"])
-        data[inputValues[i]["question"]] = [[], []]
+    for i in inputValues:           
+        labels = get_combinations(inputValues[i]["items"])
+        data[inputValues[i]["question"]] = [labels, []]
 
     with get_session(table_class=CheckboxResponse, base=Base) as session:
         answers = session.query(CheckboxResponse).all()
