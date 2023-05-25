@@ -112,7 +112,7 @@ import json, utils
 utils.log(response)
 
 answer = {}
-for i, g in range(len(checkBoxsI)):
+for i in range(len(checkBoxsI)):
     answer[ questions[i] ] = [1 if i['Checked'] == 'True' else 0 for i in response[f"checkbox_{questions[i]}"]['items']]
 utils.log(answer)
 utils.log_print()
