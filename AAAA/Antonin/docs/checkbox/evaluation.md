@@ -6,9 +6,13 @@
 
         - Contient les réponses de l'utilisateur, au format: `clé : valeur`, où:
         
-            - **clé** est l'indice de la question *`(0 : nombre de question - 1)`*
+            - **clé** est l'identifiant de la question
 
-            - **valeur** est le nom de la réponse selectionnée par l'utilisateur
+            - **valeur** est un couple contenant:
+
+                - **question** : le nom de la question
+
+                - **items** : les réponses selectionnés à la question
 
     - **`questions`** : `list`     -   Défaut:     `[]`
 
