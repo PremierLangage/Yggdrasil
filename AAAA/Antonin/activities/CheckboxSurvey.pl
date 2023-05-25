@@ -41,7 +41,7 @@ text ==#|markdown|
 # Format spécifié dans le fichier stats.pl
 before==#|python|
 import json
-from database_utils import get_session, Base, RadioResponse
+from database_utils import get_session, Base, CheckboxResponse
 
 ==
 
