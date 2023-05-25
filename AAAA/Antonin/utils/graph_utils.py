@@ -68,6 +68,7 @@ def generer_histogramme(
                     type: 'bar',
                     data: donnees,
                     options: {{
+                        indexAxis: 'y',
                         responsive: true,
                         scales: {{
                             y: {{
