@@ -49,6 +49,8 @@ text ==#|markdown|
 include_stats_score = False
 # Statistiques de participation:
 include_stats_participation = False
+# Barres Horizontales:
+horizontale = False
 
 # ===============================================
 # Values required for the program to work
