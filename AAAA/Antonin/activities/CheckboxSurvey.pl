@@ -97,7 +97,8 @@ if user__role =="teacher" and number_questions != 0:
     
     for answer in answers:
         line_csv = [answer.username,answer.firstname,answer.lastname,answer.email]
-        for q, items in json.loads(str(answer.values)).items():
+        for q, i in json.loads(str(answer.values)).items():
+            question, items = i
             data[q][1].append(getValuesAsString(items))
             line_csv += [q] + items
         answers_csv += ','.join(map(str, line_csv)) + '\\n'
