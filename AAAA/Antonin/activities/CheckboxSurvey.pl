@@ -97,7 +97,7 @@ test:  {{checkBoxs}}
 {% if False and HAS_ANSWERED != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
 {% else %}
-    {% for g in checkBoxs %}
+    {% for i, g in checkBoxsI %}
         {{ questions[i]|safe }}
 
         {{ g|component }}
