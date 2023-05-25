@@ -16,7 +16,7 @@
 
     - **`questions`** : `list`     -   Défaut:     `[]`
 
-        - Contient les questions de l'exercice, dans l'ordre
+        - Contient les identifiants des questions de l'exercice, dans l'ordre
         
     - **`number_questions`** : `int`     -   Défaut:     `0`
 
