@@ -77,7 +77,7 @@ class RadioResponse(Response):
 class CheckboxResponse(Response):
     __tablename__ = f"db_survey_CheckboxResponse_{activity_id}"
     __mapper_args__ = {
-        "polymorphic_identity": "RadioResponse",
+        "polymorphic_identity": "CheckboxResponse",
     }
 
     id: Mapped[int] = mapped_column(ForeignKey(f"db_survey_defaultResponse_{activity_id}.id"), primary_key=True)
