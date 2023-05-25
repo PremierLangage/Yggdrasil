@@ -111,7 +111,7 @@ from database_utils import get_session, Base, CheckboxResponse
 import json
 
 answer = {}
-for i in range(len(radio)):
+for i in range(len(checkBoxs)):
     answer[ i ] = response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content']
 
 # Default Grade intilisation
