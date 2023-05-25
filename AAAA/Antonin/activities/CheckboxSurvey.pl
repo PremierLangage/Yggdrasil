@@ -40,8 +40,16 @@ text ==#|markdown|
 # - doit remplir la variable globale : answers_csv
 # Format spécifié dans le fichier stats.pl
 before==#|python|
-import json
 from database_utils import get_session, Base, CheckboxResponse
+import json
 
+inputValues = {k[len("question_"):] : {"question": v, "items": [] for k, v in globals().items() if k.startswith("question_")} 
+for k, v in globals().items() if k.startswith("items_"):
+    k = k[len("items_"):]
+    if k in inputValues:
+        inputValues[k]["items"] = v.splitlines()
+
+questions = inputValues.keys()
+number_questions = len(questions)
 ==
 
