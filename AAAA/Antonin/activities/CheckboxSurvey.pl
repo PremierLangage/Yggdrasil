@@ -62,5 +62,12 @@ for i, key in enumerate(inputValues):
     checkBoxs.append(vars(tmp))
 
 if user__role =="teacher" and number_questions != 0:
+    data = { i["question"] : [i["items"], []] for i in inputValues}
+    with get_session(table_class=CheckboxResponse, base=Base) as session:
+        answers = session.query(CheckboxResponse).all()
+    
+    for answer in answers:
+        line_csv = [answer.username,answer.firstname,answer.lastname,answer.email]
+        for i, q in json.loads(str(answer.values)).items()
 ==
 
