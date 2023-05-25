@@ -16,6 +16,8 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     Si une liste de réponse n'est rattachée à aucune question, elle sera perdue
 
+    Si une question n'a aucune réponse attachée, le comportement sera incomplet.
+
     Exemple:
 
     <code>
