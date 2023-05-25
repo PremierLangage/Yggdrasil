@@ -85,6 +85,7 @@ if user__role =="teacher" and number_questions != 0:
             line_csv += [q] + items
         answers_csv += ','.join(line_csv) + '\\n'
 
+
 globals()["data"] = data
 globals()["answers_csv"] = answers_csv
 ==
@@ -96,10 +97,7 @@ test:  {{checkBoxs}}
 {% if False and HAS_ANSWERED != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
 {% else %}
-    {% for i, g in enumerate(checkBoxs) %}
-        {{i}}
-        {{g}}
-        test
+    {% for g in checkBoxs %}
         {{ questions[i]|safe }}
 
         {{ g|component }}
