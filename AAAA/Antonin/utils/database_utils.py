@@ -4,7 +4,7 @@ from typing import List
 from sqlalchemy import create_engine, inspect
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import declarative_base
-from sqlalchemy import Text, Integer, ForeignKey, String
+from sqlalchemy import Text, Integer, ForeignKey, String, PickleType
 from sqlalchemy.orm import Mapped
 from sqlalchemy.orm import mapped_column, relationship
 
@@ -85,7 +85,7 @@ class CheckboxResponse(Response):
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
     
-    value : Mapped[Text] = mapped_column(Text)
+    value : Mapped[PickleType] = mapped_column(PickleType)
 
 
 class InvalidResponseException(Exception):
