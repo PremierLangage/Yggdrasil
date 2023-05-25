@@ -74,7 +74,6 @@ if user__role == "teacher" and number_questions != 0:
             data[questions[int(i)]][1].append(q)
             line_csv.append(q)
         answers_csv += ','.join(line_csv) + '\\n'
-        test = answer
 globals()["data"] = data
 globals()["answers_csv"] = answers_csv
 ==
@@ -82,7 +81,6 @@ globals()["answers_csv"] = answers_csv
 # Bloc html définissant le bloc utilisateur permettant de remplir des données pour les stats
 # C'est la partie jouable de l'exercice
 formstudent==#|html|
-test:  {{test.value}}
 {% if False and HAS_ANSWERED != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
 {% else %}
