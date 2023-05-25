@@ -70,5 +70,25 @@ if user__role =="teacher" and number_questions != 0:
         line_csv = [answer.username,answer.firstname,answer.lastname,answer.email]
         for q, items in json.loads(str(answer.values)).items():
             data[q][1].append(items)
+            line_csv += [q] + items
+        answers_csv += ','.join(line_csv) + '\\n'
+
+globals()["data"] = data
+globals()["answers_csv"] = answers_csv
 ==
 
+# Bloc html définissant le bloc utilisateur permettant de remplir des données pour les stats
+# C'est la partie jouable de l'exercice
+formstudent==#|html|
+test:  {{test.value}}
+{% if False and HAS_ANSWERED != None %}
+        <span class="success-state">Vous avez déjà répondu à ce sondage</span>
+{% else %}
+    {% for i, g in enumerate(checkBoxs) %}
+        {{ questions[i]|safe }}
+
+        {{ g|component }}
+
+    {% endfor %} 
+{% endif %}
+==
