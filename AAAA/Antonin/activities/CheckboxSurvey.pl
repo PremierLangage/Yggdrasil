@@ -35,6 +35,18 @@ text ==#|markdown|
 ---
 ==
 
+question_a = testa
+items_a==
+A
+B
+C
+==
+
+question_b = testb
+items_b==
+Ab
+Bb
+==
 # Role : Traitement donnée, 
 # - doit remplir la variable globale : data
 # - doit remplir la variable globale : answers_csv
