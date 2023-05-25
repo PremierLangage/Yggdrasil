@@ -164,7 +164,7 @@ if user__role == "teacher":
 form==#|html|
 data : {{data}}
 
-{% if user__role != "teacher" %}
+{% if user__role == "teacher" %}
 <style>
     .graph {
         display:flex;
