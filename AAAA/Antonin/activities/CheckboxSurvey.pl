@@ -84,7 +84,6 @@ if user__role =="teacher" and number_questions != 0:
         utils.log(f"combis : {combis}")
         labels = list(map(getValuesAsString, combis))
         utils.log(f"labels : {labels}")
-        
         data[inputValues[i]["question"]] = [labels, []]
 
     with get_session(table_class=CheckboxResponse, base=Base) as session:
