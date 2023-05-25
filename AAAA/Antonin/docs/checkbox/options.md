@@ -2,7 +2,7 @@
 
 -  **`all_possibilities`** : `Boolean`   -   Défaut: `False`
 
-    - Le graphe doit-il contenir toutes les combinaisons possibles (non recommandé si plus de 4 choix possibles)
+    - Les graphes doivent-ils contenir toutes les combinaisons possibles (non recommandé si plus de 4 choix possibles)
 
     Exemple:
 
