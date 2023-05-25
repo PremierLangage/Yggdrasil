@@ -68,6 +68,7 @@ if user__role =="teacher" and number_questions != 0:
     
     for answer in answers:
         line_csv = [answer.username,answer.firstname,answer.lastname,answer.email]
-        for i, q in json.loads(str(answer.values)).items()
+        for i, q in json.loads(str(answer.values)).items():
+            
 ==
 
