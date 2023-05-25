@@ -94,6 +94,7 @@ globals()["answers_csv"] = answers_csv
 # C'est la partie jouable de l'exercice
 formstudent==#|html|
 {{data}}
+
 {% if False and HAS_ANSWERED != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
 {% else %}
