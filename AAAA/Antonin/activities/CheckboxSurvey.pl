@@ -64,7 +64,7 @@ log(inputValues)
 questions = inputValues.keys()
 number_questions = len(questions)
 data = {}
-answers_csv = f"username,firsname,lastname,email,{','.join([','.join([inputValues[key]['question']] + inputValues[key]['items'])])}\\n"
+answers_csv = f"username,firsname,lastname,email,{','.join([','.join([inputValues[key]['question']] + inputValues[key]['items']) for key in inputValues])}\\n"
 
 checkBoxs = []
 for i, key in enumerate(inputValues):
