@@ -110,11 +110,12 @@ evaluator_before == #|py|
 from database_utils import get_session, Base, CheckboxResponse
 import json, utils
 utils.log(response)
-utils.log_print()
+
 answer = {}
 for i, g in range(len(checkBoxsI)):
     answer[ questions[i] ] = response[f"checkbox_{questions[i]}"]['items'][ int(response[f"checkbox_{questions[i]}"]['selection'])-1 ]['content']
-
+utils.log(answer)
+utils.log_print()
 # Default Grade intilisation
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
