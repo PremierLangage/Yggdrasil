@@ -108,7 +108,7 @@ formstudent==#|html|
 # Evaluation de la réponse de l'étudiant
 evaluator_before == #|py|
 from database_utils import get_session, Base, CheckboxResponse
-import json
+import json, utils
 log(response)
 log_print()
 answer = {}
