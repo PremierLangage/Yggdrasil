@@ -75,6 +75,15 @@ for k, v in [(k, v) for k, v in globals().items() if k.startswith("items_")]:
     if k in inputValues:
         inputValues[k]["items"] = v.splitlines()
 
+class Question:
+    def __init__(self, name, items):
+        self.name = name
+        self.items = items
+        
+def get_question(_id: str):
+    
+
+
 questions = list(inputValues.keys())
 questions_name = [inputValues[i]["question"] for i in questions]
 number_questions = len(questions)
