@@ -61,7 +61,8 @@ for k, v in globals().items():
         k = k[len("items_"):]
         if k in inputValues:
             inputValues[k]["items"] = v.splitlines()
-
+log(inputValues)
+log_print()
 questions = inputValues.keys()
 number_questions = len(questions)
 data = {}
