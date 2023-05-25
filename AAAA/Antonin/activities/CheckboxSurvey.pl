@@ -109,8 +109,8 @@ formstudent==#|html|
 evaluator_before == #|py|
 from database_utils import get_session, Base, CheckboxResponse
 import json, utils
-log(response)
-log_print()
+utils.log(response)
+utils.log_print()
 answer = {}
 for i, g in range(len(checkBoxsI)):
     answer[ questions[i] ] = response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content']
