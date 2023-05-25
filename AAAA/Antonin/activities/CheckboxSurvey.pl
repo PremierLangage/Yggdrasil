@@ -94,12 +94,12 @@ globals()["answers_csv"] = answers_csv
 # Bloc html définissant le bloc utilisateur permettant de remplir des données pour les stats
 # C'est la partie jouable de l'exercice
 formstudent==#|html|
-test:  {{test.value}}
+test:  {{checkBoxs}}
 {% if False and HAS_ANSWERED != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
 {% else %}
     {% for i, g in enumerate(checkBoxs) %}
-    
+
         {{ questions[i]|safe }}
 
         {{ g|component }}
