@@ -80,7 +80,7 @@ for i, key in enumerate(inputValues):
 
 if user__role =="teacher" and number_questions != 0:
     for i in inputValues:
-        utils.log(f"combis : {combis}")
+        utils.log(f"items : {inputValues[i]['items']}")
         combis = list(combinations(inputValues[i]["items"], len(inputValues[i]["items"])))
         utils.log(f"combis : {combis}")
         labels = list(map(getValuesAsString, combis))
