@@ -56,7 +56,7 @@ from database_utils import get_session, Base, CheckboxResponse
 import json
 
 inputValues = {k[len("question_"):] : {"question": v, "items": []} for k, v in globals().items() if k.startswith("question_")} 
-for k, v in globals().items():
+for k, v in globals().items().copy():
     log((k, v))
     if k.startswith("items_"):
         k = k[len("items_"):]
