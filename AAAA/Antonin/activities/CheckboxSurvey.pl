@@ -60,14 +60,14 @@ def getValuesAsString(values: list) -> str:
     return ' - '.join(values)
 
 def get_combinations(lst):
-    combinations = []
+    result = []
     n = len(lst)
     
     # Générer les combinaisons de 1 à n éléments
     for r in range(1, n+1):
-        combinations.extend(list(combinations(lst, r)))
+        result.extend(list(combinations(lst, r)))
     
-    return list(map(getValuesAsString,combinations))
+    return list(map(getValuesAsString,result))
 
 inputValues = {k[len("question_"):] : {"question": v, "items": []} for k, v in globals().items() if k.startswith("question_")} 
 for k, v in [(k, v) for k, v in globals().items() if k.startswith("items_")]:
