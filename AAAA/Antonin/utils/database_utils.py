@@ -75,7 +75,7 @@ class RadioResponse(Response):
     value : Mapped[Text] = mapped_column(Text)
 
 class CheckboxResponse(Response):
-    __tablename__ = f"db_survey_RadioResponse_{activity_id}"
+    __tablename__ = f"db_survey_CheckboxResponse_{activity_id}"
     __mapper_args__ = {
         "polymorphic_identity": "RadioResponse",
     }
