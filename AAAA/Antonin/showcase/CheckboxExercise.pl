@@ -31,3 +31,6 @@ Pas grand ...
 Leurs ?
 J'aime bien surtout ceux
 ==
+
+# Si vous voulez afficher toutes les combinaisons de réponses possibles:
+# all_possibilities = True
