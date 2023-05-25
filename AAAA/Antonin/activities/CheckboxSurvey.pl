@@ -80,7 +80,7 @@ for i, key in enumerate(inputValues):
 
 if user__role =="teacher" and number_questions != 0:
     for i in inputValues:
-        labels = list(map(getValuesAsString, combinations(inputValues[i]["items"], len(inputValues[i]["items"])))
+        labels = list(map(getValuesAsString, combinations(inputValues[i]["items"], len(inputValues[i]["items"]))))
         data[inputValues[i]["question"]] = [labels, []]
 
     with get_session(table_class=CheckboxResponse, base=Base) as session:
