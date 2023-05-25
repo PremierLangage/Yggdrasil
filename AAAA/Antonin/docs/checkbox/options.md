@@ -2,7 +2,7 @@
 
 -  **`all_possibilities`** : `Boolean`   -   Défaut: `False`
 
-    - L'utilisateur doit-il choisir une réponse différente par question
+    - Le graphe doit-il contenir toutes les combinaisons possibles (non recommandé si plus de 4 choix possibles)
 
     Exemple:
 
