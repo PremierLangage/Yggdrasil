@@ -57,10 +57,8 @@ answers_csv = f"username,firsname,lastname,email,{','.join([','.join([inputValue
 
 checkBoxs = []
 for i, key in enumerate(inputValues):
-    log("test")
-    log_print()
     tmp = CheckboxGroup(cid=str(i))
-    tmp.items() = [{"id": f"item_{key}_{i}",  "content": i} for i in inputValues[key]["items"]]
+    tmp.items = [{"id": f"item_{key}_{i}",  "content": i} for i in inputValues[key]["items"]]
     globals()[str(i)] = tmp
     checkBoxs.append(vars(tmp))
 
