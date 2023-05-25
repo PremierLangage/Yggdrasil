@@ -35,3 +35,13 @@ text ==#|markdown|
 ---
 ==
 
+# Role : Traitement donnée, 
+# - doit remplir la variable globale : data
+# - doit remplir la variable globale : answers_csv
+# Format spécifié dans le fichier stats.pl
+before==#|python|
+import json
+from database_utils import get_session, Base, RadioResponse
+
+==
+
