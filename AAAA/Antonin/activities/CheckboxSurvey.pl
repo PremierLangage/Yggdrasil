@@ -99,6 +99,7 @@ test:  {{checkBoxs}}
     {% for i, g in enumerate(checkBoxs) %}
         {{i}}
         {{g}}
+        test
         {{ questions[i]|safe }}
 
         {{ g|component }}
