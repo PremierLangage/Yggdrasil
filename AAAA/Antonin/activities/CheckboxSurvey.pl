@@ -129,7 +129,7 @@ evaluator_after == #|py|
 if int(score) >= 0:
     with get_session(table_class = RadioResponse, base=Base) as session:
         session.add(
-            RadioResponse(
+            CheckboxResponse(
                 student_id = user__id if user__id else session__id, 
                 username    = user__username,
                 firstname   = user__firstname,
@@ -138,7 +138,7 @@ if int(score) >= 0:
                 title       = title,
                 text        = text,
                 grade       = score,
-                value       = json.dumps(answer),
+                values       = json.dumps(answer),
                 feedback    = feedback
             ))
         session.commit()
