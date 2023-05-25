@@ -117,7 +117,7 @@ import json, utils
 
 answer = {}
 for i in range(len(checkBoxs)):
-    answer[ questions_name[i] ] = [int(i['checked']) for i in response[f"checkbox_{questions[i]}"]['items']]
+    answer[ questions_name[i] ] = tuple([int(i['checked']) for i in response[f"checkbox_{questions[i]}"]['items']])
 
 # Default Grade intilisation
 score = 100
