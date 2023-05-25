@@ -79,7 +79,10 @@ for i, key in enumerate(inputValues):
     checkBoxs.append(vars(tmp))
 
 if user__role =="teacher" and number_questions != 0:
-    data = { inputValues[i]["question"] : [list(map(getValuesAsString, combinations(inputValues[i]["items"], len(inputValues[i]["items"]))), []] for i in inputValues}
+    for i in inputValues:
+        labels = list(map(getValuesAsString, combinations(inputValues[i]["items"], len(inputValues[i]["items"])))
+        data[inputValues[i]["question"]] = [labels, []]
+
     with get_session(table_class=CheckboxResponse, base=Base) as session:
         answers = session.query(CheckboxResponse).all()
     
