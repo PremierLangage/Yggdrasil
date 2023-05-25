@@ -96,11 +96,11 @@ test:  {{checkBoxs}}
 {% if False and HAS_ANSWERED != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
 {% else %}
-    {% for i in range(len(checkBoxs)) %}
+    {% for i, g in enumerate(checkBoxs) %}
 
-        {{ questions[int(i)]|safe }}
+        {{ questions[i]|safe }}
 
-        {{ checkBoxs[int(i)]|component }}
+        {{ g|component }}
 
     {% endfor %} 
 {% endif %}
