@@ -61,7 +61,7 @@ for k, v in [(k, v) for k, v in globals().items() if k.startswith("items_")]:
     if k in inputValues:
         inputValues[k]["items"] = v.splitlines()
 
-questions = inputValues.keys()
+questions = list(inputValues.keys())
 number_questions = len(questions)
 data = {}
 answers_csv = f"username,firsname,lastname,email,{','.join([','.join([inputValues[key]['question']] + inputValues[key]['items']) for key in inputValues])}\\n"
