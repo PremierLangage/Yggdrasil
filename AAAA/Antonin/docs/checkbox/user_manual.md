@@ -12,7 +12,11 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
 - Une liste de réponses possibles dans une variable **`items_X`**:
 
-    Où une réponse équivaut à une ligne, et l'ensemble de réponse est définis pour une question ayant été définis dans l'exercice avec l'identifiant unique X:
+    Où une réponse équivaut à une ligne, et l'ensemble de réponse est définis pour une question ayant été définis dans l'exercice avec l'identifiant unique X
+
+    Si une liste de réponse n'est rattachée à aucune question, elle sera perdue
+
+
 
     Exemple:
 
@@ -33,3 +37,5 @@ Pour ce faire vous devez définir les variables globales suivantes:
     ==
 
     </code>
+
+
