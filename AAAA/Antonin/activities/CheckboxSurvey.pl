@@ -113,7 +113,7 @@ utils.log(response)
 utils.log_print()
 answer = {}
 for i, g in range(len(checkBoxsI)):
-    answer[ questions[i] ] = response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content']
+    answer[ questions[i] ] = response[f"checkbox_{questions[i]}"]['items'][ int(response[f"checkbox_{questions[i]}"]['selection'])-1 ]['content']
 
 # Default Grade intilisation
 score = 100
