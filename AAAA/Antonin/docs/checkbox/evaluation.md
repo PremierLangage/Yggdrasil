@@ -2,6 +2,14 @@
 
 - Entrées:
 
+    - **get_question( X : str ) -> Question** : Une méthode retournant un objet **Question** à partir d'un identifiant unique `X` définit dans les champs `question_X` et `items_X`
+
+    - **Objet Question**:
+
+        Pour un objet Reponse `r` obtenu avec la ligne `r = get_question("X")`
+
+        - Reponse.name
+
     - **`answer`** : `Dictionnaire`     -   Défaut:     `{}`
 
         - Contient les réponses de l'utilisateur, au format: `clé : valeur`, où:
