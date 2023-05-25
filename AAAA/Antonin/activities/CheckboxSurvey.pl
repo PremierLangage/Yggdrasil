@@ -125,7 +125,7 @@ evaluator==#|py|
 
 evaluator_after == #|py|
 if int(score) >= 0:
-    with get_session(table_class = RadioResponse, base=Base) as session:
+    with get_session(table_class = CheckboxResponse, base=Base) as session:
         session.add(
             CheckboxResponse(
                 student_id = user__id if user__id else session__id, 
