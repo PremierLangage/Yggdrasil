@@ -128,9 +128,23 @@ evaluator_before == #|py|
 from database_utils import get_session, Base, CheckboxResponse
 import json, utils
 
+
 answer = {}
 for i in range(len(checkBoxs)):
     answer[questions[i]] = (questions_name[i], [i['content'] for i in response[f"checkbox_{questions[i]}"]['items'] if i["checked"]])
+
+
+class Question:
+    def __init__(self, name, items, answers):
+        self.name = name
+        self.items = items
+        self.answers = answers
+
+def get_question(_id: str):
+    v = inputValues.get(_id)
+    if not v: return None
+    return Question(v["question"], v["items"], answer[_id][1])
+
 
 # Default Grade intilisation
 score = 100
