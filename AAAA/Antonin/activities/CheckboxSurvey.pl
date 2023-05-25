@@ -57,7 +57,7 @@ import json, utils
 from itertools import combinations
 
 def getValuesAsString(values: list) -> str:
-    return ' - '.join(values)
+    return ' - '.join(map(str, values))
 
 def get_combinations(lst):
     result = []
@@ -98,10 +98,11 @@ if user__role =="teacher" and number_questions != 0:
     for answer in answers:
         line_csv = [answer.username,answer.firstname,answer.lastname,answer.email]
         for q, items in json.loads(str(answer.values)).items():
-            data[q][1].append(items)
+            donnees = getValuesAsString(items)
+            data[q][1].append(donnees)
             line_csv += [q] + items
         answers_csv += ','.join(map(str, line_csv)) + '\\n'
-        
+
 checkBoxsI = list(enumerate(checkBoxs))
 globals()["data"] = data
 globals()["answers_csv"] = answers_csv
