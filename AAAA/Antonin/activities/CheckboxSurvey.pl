@@ -98,9 +98,9 @@ test:  {{checkBoxs}}
 {% else %}
     {% for i in range(len(checkBoxs)) %}
 
-        {{ questions[i]|safe }}
+        {{ questions[int(i)]|safe }}
 
-        {{ checkBoxs[i]|component }}
+        {{ checkBoxs[int(i)]|component }}
 
     {% endfor %} 
 {% endif %}
