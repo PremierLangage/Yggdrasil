@@ -62,6 +62,7 @@ for k, v in [(k, v) for k, v in globals().items() if k.startswith("items_")]:
         inputValues[k]["items"] = v.splitlines()
 
 questions = list(inputValues.keys())
+questions_name = [inputValues[i]["question"] for i in questions]
 number_questions = len(questions)
 data = {}
 answers_csv = f"username,firsname,lastname,email,{','.join([','.join([inputValues[key]['question']] + inputValues[key]['items']) for key in inputValues])}\\n"
@@ -101,7 +102,7 @@ subValues: {{inputValues}}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
 {% else %}
     {% for i, g in checkBoxsI %}
-        <b>{{ questions[i]|safe }}</b>
+        <b>{{ questions_name[i]|safe }}</b>
 
         {{ g|component }}
 
