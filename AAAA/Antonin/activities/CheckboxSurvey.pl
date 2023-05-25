@@ -97,7 +97,8 @@ test:  {{checkBoxs}}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
 {% else %}
     {% for i, g in enumerate(checkBoxs) %}
-
+        {{i}}
+        {{g}}
         {{ questions[i]|safe }}
 
         {{ g|component }}
