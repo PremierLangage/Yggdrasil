@@ -12,3 +12,13 @@ Il contient l'affichage des réponses par question ainsi que l'affichage des deu
 - statistiques de participation
 
 ==
+
+question_1 = Que pensez vous de cet exercice?
+
+items_1 ==
+Très satisfaisant
+Satisfaisant
+Moyennement satisfaisant
+Mediocre
+La couleur bleu
+==
