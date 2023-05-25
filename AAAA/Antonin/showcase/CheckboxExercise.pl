@@ -26,9 +26,8 @@ La couleur bleu
 question_2 = Et que pensez-vous des gens qui ne finissent pas leurs ...
 
 items_2==
-...
-Pas grand ...
-Leurs ?
+Pas grand
+Leurs quoi?
 J'aime bien surtout ceux
 ==
 
