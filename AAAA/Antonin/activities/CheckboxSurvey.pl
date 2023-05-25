@@ -147,7 +147,5 @@ if int(score) >= 0:
         session.commit()
 else :
     feedback = '<span class="error-state">Votre entrée est invalide</span>'
-utils.log(answer)
-utils.log_print()
 grade = (score, feedback)
 ==
