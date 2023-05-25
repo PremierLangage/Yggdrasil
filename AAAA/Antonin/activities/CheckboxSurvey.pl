@@ -85,7 +85,7 @@ if user__role =="teacher" and number_questions != 0:
             line_csv += [q] + items
         answers_csv += ','.join(line_csv) + '\\n'
 
-checkBoxsI = list(enumerate(checkBoxsI))
+checkBoxsI = list(enumerate(checkBoxs))
 globals()["data"] = data
 globals()["answers_csv"] = answers_csv
 ==
