@@ -6,9 +6,14 @@
 
     - **Objet Question**:
 
-        Pour un objet Reponse `r` obtenu avec la ligne `r = get_question("X")`
+        Pour un objet Question `q` obtenu avec la ligne `q = get_question("X")`
 
-        - Reponse.name
+        - **`q.name`** : obtenir le nom de la question
+
+        - **`q.items`** : obtenir les réponses possibles à la question
+
+        - **`q.answers`** : obtenir les réponses de l'utilisateur à la question
+
 
     - **`answer`** : `Dictionnaire`     -   Défaut:     `{}`
 
