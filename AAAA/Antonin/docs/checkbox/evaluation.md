@@ -15,18 +15,6 @@
         - **`q.answers`** : obtenir les réponses de l'utilisateur à la question
 
 
-    - **`answer`** : `Dictionnaire`     -   Défaut:     `{}`
-
-        - Contient les réponses de l'utilisateur, au format: `clé : valeur`, où:
-        
-            - **clé** est l'identifiant de la question
-
-            - **valeur** est un couple contenant:
-
-                - **question** : le nom de la question
-
-                - **items** : les réponses selectionnés à la question
-
     - **`questions`** : `list`     -   Défaut:     `[]`
 
         - Contient les identifiants des questions de l'exercice, dans l'ordre
