@@ -48,7 +48,6 @@ before==#|python|
 from database_utils import get_session, Base, CheckboxResponse
 import json, utils
 
-
 inputValues = {k[len("question_"):] : {"question": v, "items": []} for k, v in globals().items() if k.startswith("question_")} 
 for k, v in [(k, v) for k, v in globals().items() if k.startswith("items_")]:
     k = k[len("items_"):]
