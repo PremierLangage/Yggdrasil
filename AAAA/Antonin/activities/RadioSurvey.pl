@@ -117,6 +117,7 @@ from utils import *
 log(response)
 answer = {}
 for i in range(len(radio)):
+    log(f"radio_{questions[0]}")
     answer[questions[i]] = (questions_name[i], [response[f"radio_{questions[i]}"]["selection"]]["content"])
 log(answer)
 # Default Grade intilisation
