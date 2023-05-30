@@ -120,7 +120,7 @@ for i in range(len(radio)):
     log(f"i : {i}")
     log(f"response : {response}")
     log(f"response[str(i)] : { response[str(i)] }")
-    log(f"int(response[str(i)]['selection'])-1 : {int(response[str(i)]['selection'])-1}")
+    log(f' (questions_name[i], [response[questions[i]]["selection"]]["content"]) : { (questions_name[i], [response[questions[i]]["selection"]]["content"])}')
     answer[[questions[i]] = (questions_name[i], [response[questions[i]]["selection"]]["content"])
     response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content']
 
