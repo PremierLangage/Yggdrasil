@@ -88,7 +88,7 @@ if user__role == "teacher" and number_questions != 0:
         line_csv = [answer.username,answer.firstname,answer.lastname,answer.email]
         for i, q in json.loads(str(answer.value)).items():
             log(f"Answer : {i, q}")
-            log(f"Answer : {questions[int(i)]}")
+            log(f"Answer : {questions_name[int(i)]}")
 
             data[questions_name[int(i)]][1].append(q)
             line_csv.append(q)
