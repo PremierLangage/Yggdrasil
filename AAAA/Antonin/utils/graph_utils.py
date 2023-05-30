@@ -58,7 +58,7 @@ def generer_histogramme(
         id : str, 
         labels : list, 
         title : str             = "Statistiques",
-        backgroundColor : str   = 'rgba(75, 192, 250, 0.5)',
+        backgroundColor : str   = 'rgba(75, 192, 250, 0.42)',
         borderColor : str       = 'rgba(75, 192, 250, 1)',
         borderWidth : int       = 1,
         horizontale = False) -> str:
