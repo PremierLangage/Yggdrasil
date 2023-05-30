@@ -114,12 +114,9 @@ evaluator_before == #|py|
 from database_utils import get_session, Base, RadioResponse
 import json
 from utils import *
-log(response)
 answer = {}
 for i in range(len(radio)):
-    log(f"radio_{questions[0]}")
     answer[questions[i]] = (questions_name[i], response[f"radio_{questions[i]}"]["selection"])
-log(answer)
 # Default Grade intilisation
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
@@ -134,7 +131,6 @@ def get_question(_id: str):
     v = inputValues.get(_id)
     if not v: return None
     return Question(v["question"], v["items"], answer[_id])
-log_print()
 ==
 
 #default evaluator
