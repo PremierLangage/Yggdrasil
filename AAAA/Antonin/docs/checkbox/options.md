@@ -8,7 +8,7 @@
 
     - ```unique_choice = True```
 
-- **graph_horizontal_X** : `Int`   -   Défaut: `0`
+- **`graph_horizontal_X`** : `Int`   -   Défaut: `0`
 
     - Le graphe de la question **`X`** doit-il être affiché avec des barres horizontales
 
