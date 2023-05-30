@@ -120,7 +120,8 @@ for i in range(len(radio)):
     log(f"i : {i}")
     log(f"response : {response}")
     log(f"response[str(i)] : { response[str(i)] }")
-    log(f' (questions_name[i], [response[questions[i]]["selection"]]["content"]) : { (questions_name[i], [response[questions[i]]["selection"]]["content"])}')
+    log(f'{questions_name[i]}')
+    log(f'{response[questions[i]]}')
     answer[questions[i]] = (questions_name[i], [response[questions[i]]["selection"]]["content"])
 
 # Default Grade intilisation
