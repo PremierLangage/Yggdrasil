@@ -67,11 +67,11 @@ data = {}
 answers_csv = f"username,firsname,lastname,email,{','.join(questions)}\\n"
 
 radio = []
-for i in range(len(questions)):
-    tmp = RadioGroup(cid=str(i))
+for i, key in enumerate(inputValues):    
+    tmp = RadioGroup(cid=f"checkbox_{questions[i]}")
     tmp.question = questions_name[i]
-    tmp.items = inputValues[questions[i]]["items"]
-    globals()[str(i)] = tmp
+    tmp.items = {"id": f"item_{key}_{i}", "content":inputValues[questions[i]]["items"]}
+    globals()[f"checkbox_{questions[i]}"] = tmp
     radio.append(vars(tmp))
 
 if user__role == "teacher" and number_questions != 0:
