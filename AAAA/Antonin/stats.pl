@@ -161,7 +161,6 @@ if user__role == "teacher":
         statInputs.append(StatInput("__Participation__", values, labels))
     # Graph generation
     stat = Stat(statInputs)
-    utils.log_print()
     graphContent = stat.get_graph_as_html(containsScript=True)
 ==
 
