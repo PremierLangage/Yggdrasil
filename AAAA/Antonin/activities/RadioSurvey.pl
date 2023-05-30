@@ -116,7 +116,7 @@ import json
 from utils import *
 answer = {}
 for i in range(len(radio)):
-    answer[questions[i]] = (questions_name[i], response[f"radio_{questions[i]}"]["selection"])
+    answer[questions[i]] = response[f"radio_{questions[i]}"]["selection"]
 # Default Grade intilisation
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
@@ -130,7 +130,7 @@ class Question:
 def get_question(_id: str):
     v = inputValues.get(_id)
     if not v: return None
-    return Question(v["question"], v["items"], answer[_id][1])
+    return Question(v["question"], v["items"], answer[_id])
 ==
 
 #default evaluator
