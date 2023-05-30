@@ -114,7 +114,7 @@ evaluator_before == #|py|
 from database_utils import get_session, Base, RadioResponse
 import json
 from utils import *
-
+log(response)
 answer = {}
 for i in range(len(radio)):
     answer[questions[i]] = (questions_name[i], [response[f"radio_{questions[i]}"]["selection"]]["content"])
