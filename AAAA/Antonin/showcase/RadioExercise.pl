@@ -33,6 +33,8 @@ Mediocre
 La couleur bleu
 ==
 
+graph_horizontal_2
+
 items_3==
 Très satisfaisant
 Satisfaisant
