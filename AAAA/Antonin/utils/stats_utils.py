@@ -46,7 +46,7 @@ class StatInput():
         data = d[1]
         if len(d) > 2:
             return StatInput(title, data, labels, bool(int(d[2])))
-        return StatInput(title, data, labels, bool(int(d[2])))
+        return StatInput(title, data, labels)
             
 
 class Stat():
