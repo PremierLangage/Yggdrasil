@@ -37,5 +37,3 @@ Pour ce faire vous devez définir les variables globales suivantes:
     ==
 
     </code>
-
-
