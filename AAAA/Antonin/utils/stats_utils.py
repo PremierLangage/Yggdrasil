@@ -12,8 +12,7 @@ Contact: ofghanirre@gmail.com
 
 from graph_utils import generer_histogramme, SCRIPT
 from typing import List
-import sys
-
+import utils
 
 class StatInput():
     def __init__(self, title: str, data : list, labels : list, horizontale = False):
