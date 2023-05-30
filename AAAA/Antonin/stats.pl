@@ -54,8 +54,7 @@ include_stats_participation = False
 # Values required for the program to work
 # ===============================================
 # Can (should) be redefined in implementations (see doc)
-data % {"test1": [[0,1,2,3], [1,2,2,3,3,3]], "test":  [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"]]}
-graph_horizontal_test = 1
+data % {"test1": [[0,1,2,3], [1,2,2,3,3,3]], "test":  [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"], '1']}
 
 answers_csv="username,firsname,lastname,email,title,statement,grade\\n"
 formstudent==#|html|
