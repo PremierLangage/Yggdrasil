@@ -117,7 +117,7 @@ from utils import *
 
 answer = {}
 for i in range(len(radio)):
-    answer[questions[i]] = (questions_name[i], [response[questions[i]]["selection"]]["content"])
+    answer[questions[i]] = (questions_name[i], [response[f"radio_{questions[i]}"]["selection"]]["content"])
 
 # Default Grade intilisation
 score = 100
