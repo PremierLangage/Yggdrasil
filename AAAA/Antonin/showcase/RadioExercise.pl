@@ -14,7 +14,7 @@ Il contient l'affichage des réponses par question ainsi que l'affichage des deu
 ==
 
 question_1 = Que pensez vous de cet exercice?
-question_2 = Et globalement de PL
+question_a = Et globalement de PL
 question_3 = Êtes vous satisfait de l'affichage des graphes
 
 items_1==
@@ -25,7 +25,7 @@ Mediocre
 La couleur bleu
 ==
 
-items_2==
+items_a==
 Très satisfaisant
 Satisfaisant
 Moyennement satisfaisant
@@ -33,7 +33,7 @@ Mediocre
 La couleur bleu
 ==
 
-graph_horizontal_2 = 1
+graph_horizontal_a = 1
 
 items_3==
 Très satisfaisant
