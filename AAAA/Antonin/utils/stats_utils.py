@@ -39,6 +39,10 @@ class StatInput():
     def to_data(self):
         return {self.title : [self.labels, self.data, self.horizontale]}
 
+    @staticmethod
+    def from_data(data : dict):
+        title, (labels, data, horizontale) = data.items()[0]
+        return StatInput()
 class Stat():
     def __init__(self, data : List[StatInput]):
         """
