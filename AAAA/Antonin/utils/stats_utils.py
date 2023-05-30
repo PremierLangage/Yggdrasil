@@ -12,7 +12,7 @@ Contact: ofghanirre@gmail.com
 
 from graph_utils import generer_histogramme, SCRIPT
 from typing import List
-
+import sys
 
 
 class StatInput():
