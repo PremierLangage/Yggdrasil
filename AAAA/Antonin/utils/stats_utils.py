@@ -39,8 +39,8 @@ class StatInput():
         return {self.title : [self.labels, self.data, self.horizontale]}
 
     @staticmethod
-    def from_data(data : tuple):
-        title, d  = data
+    def from_data(_data : tuple):
+        title, d  = _data
         labels = d[0]
         data = d[1]
         utils.log(data)
