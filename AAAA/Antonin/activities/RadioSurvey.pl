@@ -68,10 +68,10 @@ answers_csv = f"username,firsname,lastname,email,{','.join(questions)}\\n"
 
 radio = []
 for i, key in enumerate(inputValues):    
-    tmp = RadioGroup(cid=f"checkbox_{questions[i]}")
+    tmp = RadioGroup(cid=f"radio_{questions[i]}")
     tmp.question = inputValues[key]["question"]
     tmp.items =  [{"id": f"item_{key}_{i}",  "content": i} for i in inputValues[key]["items"]]
-    globals()[f"checkbox_{questions[i]}"] = tmp
+    globals()[f"radio_{questions[i]}"] = tmp
     radio.append(vars(tmp))
 
 if user__role == "teacher" and number_questions != 0:
@@ -117,12 +117,6 @@ from utils import *
 
 answer = {}
 for i in range(len(radio)):
-    log(f"i : {i}")
-    log(questions[i])
-    log(f"response : {response}")
-    log(f"response[questions[i]] : { response[questions[i]] }")
-    log(f'{questions_name[i]}')
-    log(f'{response[questions[i]]}')
     answer[questions[i]] = (questions_name[i], [response[questions[i]]["selection"]]["content"])
 
 # Default Grade intilisation
