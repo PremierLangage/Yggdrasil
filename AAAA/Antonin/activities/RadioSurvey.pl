@@ -62,7 +62,6 @@ for i in range(len(questions)):
     globals()[str(i)] = tmp
     radio.append(vars(tmp))
 if user__role == "teacher" and number_questions != 0:
-
     labels = items.splitlines()
     data = { q : [labels, []] for q in questions}
     with get_session(table_class=RadioResponse, base=Base) as session:
