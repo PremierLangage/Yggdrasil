@@ -41,7 +41,7 @@ class StatInput():
 
     @staticmethod
     def from_data(data : dict):
-        title, d  = data.items()[0]
+        title, d  = data
         labels = d[0]
         data = d[1]
         if len(d) > 2:
