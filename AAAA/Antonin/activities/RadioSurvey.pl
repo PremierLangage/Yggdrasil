@@ -61,9 +61,7 @@ for title in inputValues:
 questions = list(inputValues.keys())
 questions_name = [inputValues[i]["question"] for i in questions]
 number_questions = len(questions)
-utils.log(inputValues)
-utils.log(questions)
-utils.log(questions_name)
+utils.log(f"InputValues: {inputValues}")
 
 data = {}
 answers_csv = f"username,firsname,lastname,email,{','.join(questions)}\\n"
