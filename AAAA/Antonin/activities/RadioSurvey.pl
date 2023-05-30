@@ -67,15 +67,17 @@ answers_csv = f"username,firsname,lastname,email,{','.join(questions)}\\n"
 radio = []
 for i in range(len(questions)):
     tmp = RadioGroup(cid=str(i))
-    tmp.question = questions[i]
-    tmp.items = []
-    for j, item in enumerate(items.splitlines()):        
-        tmp.items.append({ "id": j+1, "content": item })
+    tmp.question = questions_name[i]
+    tmp.items = inputValues[questions[i]]["items"]
     globals()[str(i)] = tmp
     radio.append(vars(tmp))
 if user__role == "teacher" and number_questions != 0:
-    labels = items.splitlines()
-    data = { q : [labels, []] for q in questions}
+    for i in inputValues:           
+        labels = get_combinations(inputValues[i]["items"]) if all_possibilities != 'False' else []
+        data[inputValues[i]["question"]] = [labels, []]
+        if len(inputValues[i]) > 2:
+            data[inputValues[i]["question"]].append(inputValues[i]["horizontal"])
+
     with get_session(table_class=RadioResponse, base=Base) as session:
         answers = session.query(RadioResponse).all()
     
