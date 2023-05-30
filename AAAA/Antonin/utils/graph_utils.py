@@ -30,12 +30,36 @@ def generate_histogram_data(votes : list, labels : list) -> Tuple[list, list]:
     occurrences = count_occurences(votes, labels)
     return list(occurrences.keys()), list(occurrences.values())
 
+import random
+import colorsys
+
+def generate_color_palette(n, alpha):
+    palette = []
+    random.seed()
+
+    # Générer une couleur de départ aléatoire
+    initial_hue = random.random()  # Valeur de teinte aléatoire entre 0 et 1
+    initial_rgb = colorsys.hsv_to_rgb(initial_hue, 1, 1)
+    palette.append(initial_rgb)
+
+    # Générer les couleurs harmonieuses
+    for _ in range(n - 1):
+        previous_hue = colorsys.rgb_to_hsv(*palette[-1])[0]
+        new_hue = (previous_hue + random.uniform(0.1, 0.4)) % 1.0
+        new_rgb = colorsys.hsv_to_rgb(new_hue, 1, 1)
+        palette.append(new_rgb)
+
+    # Convertir les couleurs en format rgba(r, g, b, a)
+    palette = [f"rgba({int(r * 255)}, {int(g * 255)}, {int(b * 255)}, {alpha})" for r, g, b in palette]
+
+    return palette
+
 def generer_histogramme(
         votes : list, 
         id : str, 
         labels : list, 
         title : str             = "Statistiques",
-        backgroundColor : str   = ['rgba(75, 192, 250, 0.2)', 'rgba(250, 192, 250, 0.2)'],
+        backgroundColor : str   = 'rgba(75, 192, 250, 0.2)',
         borderColor : str       = 'rgba(75, 192, 250, 1)',
         borderWidth : int       = 1,
         horizontale = False) -> str:
@@ -47,8 +71,8 @@ def generer_histogramme(
         'datasets': [{
             'label': 'Fréquence des valeurs',
             'data': frequences,
-            'backgroundColor': backgroundColor,
-            'borderColor': borderColor,
+            'backgroundColor': generate_color_palette(len(valeurs), 0.8),
+            'borderColor':  generate_color_palette(len(valeurs), 1.0),
             'borderWidth': borderWidth
         }],
         'title': title
