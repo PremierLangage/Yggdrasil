@@ -26,7 +26,7 @@ class StatInput():
         self.horizontale = horizontale
     
     def generate_graph(self):
-        return generer_histogramme(self.data, self.generate_hash(self.title), self.labels, title=self.title, horizontale)
+        return generer_histogramme(self.data, self.generate_hash(self.title), self.labels, title=self.title, self.horizontale)
 
     def generate_hash(self, name):
         """ 
