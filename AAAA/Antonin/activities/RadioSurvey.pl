@@ -71,7 +71,7 @@ for i in range(len(questions)):
     tmp.items = inputValues[questions[i]]["items"]
     globals()[str(i)] = tmp
     radio.append(vars(tmp))
-    
+
 if user__role == "teacher" and number_questions != 0:
     for i in inputValues:           
         labels = get_combinations(inputValues[i]["items"]) if all_possibilities != 'False' else []
@@ -120,6 +120,18 @@ for i in range(len(radio)):
 # Default Grade intilisation
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
+
+class Question:
+    def __init__(self, name, items, answer):
+        self.name = name
+        self.items = items
+        self.answer = answer
+
+def get_question(_id: str):
+    v = inputValues.get(_id)
+    if not v: return None
+    return Question(v["question"], v["items"], answer[_id][1])
+
 ==
 
 #default evaluator
