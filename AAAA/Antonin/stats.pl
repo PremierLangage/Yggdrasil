@@ -131,7 +131,7 @@ before==#|python|
 # ===============================================
 before_graph==#|python|
 from collections import Counter
-
+import utils
 if user__role == "teacher":
     # Processing horizontal graph data
     horizontales_data = {k : v for k, v in [(k, v) for k, v in globals().items() if k.startswith("graph_horizontal_")]}
@@ -165,6 +165,7 @@ if user__role == "teacher":
 
         statInputs.append(StatInput("__Participation__", values, labels))
     # Graph generation
+    utils.log_print()
     stat = Stat(statInputs)
 
     graphContent = stat.get_graph_as_html(containsScript=True)
