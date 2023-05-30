@@ -75,7 +75,7 @@ for i in range(len(questions)):
     tmp.items = inputValues[questions[i]]["items"]
     globals()[str(i)] = tmp
     radio.append(vars(tmp))
-
+utils.log_print()
 if user__role == "teacher" and number_questions != 0:
     for i in inputValues:           
         labels = inputValues[i]["items"]
