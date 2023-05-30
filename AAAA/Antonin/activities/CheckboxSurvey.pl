@@ -48,6 +48,20 @@ before==#|python|
 from database_utils import get_session, Base, CheckboxResponse
 import json, utils
 
+def getValuesAsString(values: list) -> str:
+    return ' - '.join(map(str, values))
+
+def get_combinations(lst):
+    result = []
+    n = len(lst)
+    
+    # Générer les combinaisons de 1 à n éléments
+    for r in range(1, n+1):
+        result.extend(list(combinations(lst, r)))
+    
+    return list(map(getValuesAsString,result))
+
+    
 inputValues = {k[len("question_"):] : {"question": v, "items": []} for k, v in globals().items() if k.startswith("question_")} 
 for k, v in [(k, v) for k, v in globals().items() if k.startswith("items_")]:
     k = k[len("items_"):]
