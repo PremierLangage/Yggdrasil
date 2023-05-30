@@ -136,6 +136,7 @@ def get_question(_id: str):
 # Default Grade intilisation
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
+utils.log_print()
 ==
 
 #default evaluator
