@@ -8,6 +8,10 @@
 
     - ```unique_choice = True```
 
+- **graph_horizontal_X** : `Int`   -   Défaut: `0`
+
+    - Le graphe de la question **`X`** doit-il être affiché avec des barres horizontales
+
 [Options stats.pl](https://pl-preprod.u-pem.fr/filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/stats.pl)
 
 -  **`include_stats_score`** : `Boolean`   -   Défaut: `False`
