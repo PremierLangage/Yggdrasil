@@ -47,7 +47,6 @@ all_possibilities = False
 before==#|python|
 from database_utils import get_session, Base, CheckboxResponse
 import json, utils
-from itertools import combinations
 
 
 inputValues = {k[len("question_"):] : {"question": v, "items": []} for k, v in globals().items() if k.startswith("question_")} 
