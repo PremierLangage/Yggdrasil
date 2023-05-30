@@ -134,12 +134,11 @@ import utils
 if user__role == "teacher":
     # Processing horizontal graph data
     horizontales_data = {k[len("graph_horizontal_"):] : v for k, v in [(k, v) for k, v in globals().items() if k.startswith("graph_horizontal_")]}
-    utils.log(horizontales_data)
     for title in data.keys():
-        utils.log(title)
         if title in horizontales_data:
             data[title].append(horizontales_data[title])
     # Processing datas
+    utils.log(data)
     statInputs = [StatInput.from_data(d) for d in data.items()]
     # Generating default graphs
     if (include_stats_score != "False"):
