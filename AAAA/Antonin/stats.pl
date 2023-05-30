@@ -139,6 +139,7 @@ if user__role == "teacher":
             data[keys].append(horizontales_data[title])
     # Processing datas
     statInputs = [StatInput.fromdata(d) for d in data.items()]
+    # Generating default graphs
     if (include_stats_score != "False"):
         values = []
         labels = []
@@ -162,6 +163,7 @@ if user__role == "teacher":
         labels.sort()
 
         statInputs.append(StatInput("__Participation__", values, labels))
+    # Graph generation
     stat = Stat(statInputs)
 
     graphContent = stat.get_graph_as_html(containsScript=True)
