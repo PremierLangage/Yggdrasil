@@ -71,7 +71,7 @@ for k, v in [(k, v) for k, v in globals().items() if k.startswith("items_")]:
 horizontales_data = {k[len("graph_horizontal_"):] : v for k, v in [(k, v) for k, v in globals().items() if k.startswith("graph_horizontal_")]}
 for title in inputValues:
     if title in horizontales_data:
-        data[title].append(horizontales_data[title])
+        inputValues[title]["horizontal"] = horizontales_data[title]
     
 questions = list(inputValues.keys())
 questions_name = [inputValues[i]["question"] for i in questions]
@@ -90,6 +90,8 @@ if user__role =="teacher" and number_questions != 0:
     for i in inputValues:           
         labels = get_combinations(inputValues[i]["items"]) if all_possibilities != 'False' else []
         data[inputValues[i]["question"]] = [labels, []]
+        if len(inputValues[i]) > 2:
+            data[inputValues[i]["question"]].append(inputValues[i]["horizontal"])
 
     with get_session(table_class=CheckboxResponse, base=Base) as session:
         answers = session.query(CheckboxResponse).all()
