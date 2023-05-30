@@ -117,6 +117,7 @@ from utils import *
 
 answer = {}
 for i in range(len(radio)):
+    log(f"i : {i},\n response[str(i)] : { response[str(i)] },\n int(response[str(i)]['selection'])-1 : {int(response[str(i)]['selection'])-1}")
     answer[ i ] = response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content']
 
 # Default Grade intilisation
