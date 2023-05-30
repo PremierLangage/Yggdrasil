@@ -130,7 +130,7 @@ class Question:
 def get_question(_id: str):
     v = inputValues.get(_id)
     if not v: return None
-    return Question(v["question"], v["items"], answer[_id][1])
+    return Question(v["question"], v["items"], answer[_id])
 
 ==
 
