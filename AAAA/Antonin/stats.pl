@@ -138,7 +138,7 @@ if user__role == "teacher":
         if title in horizontales_data:
             data[keys].append(horizontales_data[title])
     # Processing datas
-    statInputs = [StatInput.fromdata(d) for d in data.items()]
+    statInputs = [StatInput.from_data(d) for d in data.items()]
     # Generating default graphs
     if (include_stats_score != "False"):
         values = []
