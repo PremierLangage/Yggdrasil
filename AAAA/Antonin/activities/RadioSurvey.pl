@@ -122,7 +122,6 @@ for i in range(len(radio)):
     log(f"response[str(i)] : { response[str(i)] }")
     log(f' (questions_name[i], [response[questions[i]]["selection"]]["content"]) : { (questions_name[i], [response[questions[i]]["selection"]]["content"])}')
     answer[questions[i]] = (questions_name[i], [response[questions[i]]["selection"]]["content"])
-    response[str(i)]['items'][ int(response[str(i)]['selection'])-1 ]['content']
 
 # Default Grade intilisation
 score = 100
