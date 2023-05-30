@@ -45,8 +45,9 @@ class StatInput():
         labels = d[0]
         data = d[1]
         if len(d) > 2:
-            horizontale = bool(int(d[2]))
-        return StatInput(title, data, labels, horizontale)
+            return StatInput(title, data, labels, bool(int(d[2])))
+        return StatInput(title, data, labels, bool(int(d[2])))
+            
 
 class Stat():
     def __init__(self, data : List[StatInput]):
