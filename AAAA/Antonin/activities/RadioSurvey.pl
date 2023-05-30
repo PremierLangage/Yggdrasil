@@ -71,6 +71,7 @@ for i in range(len(questions)):
     tmp.items = inputValues[questions[i]]["items"]
     globals()[str(i)] = tmp
     radio.append(vars(tmp))
+    
 if user__role == "teacher" and number_questions != 0:
     for i in inputValues:           
         labels = get_combinations(inputValues[i]["items"]) if all_possibilities != 'False' else []
