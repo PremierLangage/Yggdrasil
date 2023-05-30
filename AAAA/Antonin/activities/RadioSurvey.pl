@@ -90,7 +90,7 @@ if user__role == "teacher" and number_questions != 0:
             log(f"Answer : {i, q}")
             log(f"Answer : {questions_name[int(i)]}")
 
-            data[questions_name[int(i)][0]][1].append(q)
+            data[questions_name[int(i)]][1].append(q)
             line_csv.append(q)
         answers_csv += ','.join(line_csv) + '\\n'
 utils.log(f"Data: {data}")
