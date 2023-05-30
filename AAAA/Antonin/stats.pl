@@ -132,6 +132,12 @@ before_graph==#|python|
 from collections import Counter
 
 if user__role == "teacher":
+    # Processing horizontal graph data
+    horizontales_data = {k : v for k, v in [(k, v) for k, v in globals().items() if k.startswith("graph_horizontal_")]}
+    for title in data.keys():
+        if title in horizontales_data:
+            data[keys].append(horizontales_data[title])
+    # Processing datas
     statInputs = [StatInput.fromdata(d) for d in data.items()]
     if (include_stats_score != "False"):
         values = []
