@@ -43,7 +43,7 @@ class StatInput():
         title, d  = data
         labels = d[0]
         data = d[1]
-        print(dat, file = sys.stderr)
+        utils.log(data)
         if len(d) > 2:
             return StatInput(title, data, labels, bool(int(d[2])))
         return StatInput(title, data, labels)
