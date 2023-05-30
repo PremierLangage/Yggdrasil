@@ -118,6 +118,7 @@ from utils import *
 answer = {}
 for i in range(len(radio)):
     log(f"i : {i}")
+    log(questions[i])
     log(f"response : {response}")
     log(f"response[questions[i]] : { response[questions[i]] }")
     log(f'{questions_name[i]}')
