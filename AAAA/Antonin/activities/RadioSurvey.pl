@@ -58,7 +58,8 @@ for title in inputValues:
     if title in horizontales_data:
         inputValues[title]["horizontal"] = horizontales_data[title]
 
-questions = [v for q, v in globals().items() if q.startswith("question_")]
+questions = list(inputValues.keys())
+questions_name = [inputValues[i]["question"] for i in questions]
 number_questions = len(questions)
 data = {}
 answers_csv = f"username,firsname,lastname,email,{','.join(questions)}\\n"
