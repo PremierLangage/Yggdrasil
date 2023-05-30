@@ -33,8 +33,9 @@ def generate_histogram_data(votes : list, labels : list) -> Tuple[list, list]:
 import random
 import colorsys
 
-def generate_color_palette(n, alpha):
+def generate_color_palette(n, alpha, _seed):
     palette = []
+    random.seed(_seed)
     # Générer une couleur de départ aléatoire
     initial_hue = random.random()  # Valeur de teinte aléatoire entre 0 et 1
     initial_rgb = colorsys.hsv_to_rgb(initial_hue, 1, 1)
@@ -62,6 +63,7 @@ def generer_histogramme(
         borderWidth : int       = 1,
         horizontale = False) -> str:
     # Extraire les valeurs
+    seed = random.randint(1, 42000)
     valeurs, frequences = generate_histogram_data(votes, labels)
     # Créer le dictionnaire de données pour Chart.js
     donnees = {
