@@ -47,6 +47,17 @@ before==#|python|
 import json
 from database_utils import get_session, Base, RadioResponse
 
+inputValues = {k[len("question_"):] : {"question": v, "items": []} for k, v in globals().items() if k.startswith("question_")} 
+for k, v in [(k, v) for k, v in globals().items() if k.startswith("items_")]:
+    k = k[len("items_"):]
+    if k in inputValues:
+        inputValues[k]["items"] = v.splitlines()
+# Processing horizontal graph data
+horizontales_data = {k[len("graph_horizontal_"):] : v for k, v in [(k, v) for k, v in globals().items() if k.startswith("graph_horizontal_")]}
+for title in inputValues:
+    if title in horizontales_data:
+        inputValues[title]["horizontal"] = horizontales_data[title]
+
 questions = [v for q, v in globals().items() if q.startswith("question_")]
 number_questions = len(questions)
 data = {}
