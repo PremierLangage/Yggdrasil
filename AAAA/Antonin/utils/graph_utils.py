@@ -44,7 +44,7 @@ def generate_color_palette(n, alpha, _seed):
     # Générer les couleurs harmonieuses
     for _ in range(n - 1):
         previous_hue = colorsys.rgb_to_hsv(*palette[-1])[0]
-        new_hue = (previous_hue + random.uniform(0.05, 0.1)) % 1.0
+        new_hue = (previous_hue + random.uniform(0.1, 0.4)) % 1.0
         new_rgb = colorsys.hsv_to_rgb(new_hue, 1, 1)
         palette.append(new_rgb)
 
