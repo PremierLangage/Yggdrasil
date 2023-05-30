@@ -69,8 +69,9 @@ answers_csv = f"username,firsname,lastname,email,{','.join(questions)}\\n"
 radio = []
 for i, key in enumerate(inputValues):    
     tmp = RadioGroup(cid=f"checkbox_{questions[i]}")
+        utils.log_print()
+
     tmp.question = key["question"]
-    utils.log_print()
     tmp.items =  [{"id": f"item_{key}_{i}",  "content": i} for i in inputValues[key]["items"]]
     globals()[f"checkbox_{questions[i]}"] = tmp
     radio.append(vars(tmp))
