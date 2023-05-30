@@ -69,7 +69,7 @@ def generer_histogramme(
                     type: 'bar',
                     data: donnees,
                     options: {{
-                        indexAxis: {"'x'" if not horizontale else "'y'"},
+                        indexAxis: {"'x'" if horizontale else "'y'"},
                         responsive: true,
                         scales: {{
                             y: {{
