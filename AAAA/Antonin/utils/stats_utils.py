@@ -41,9 +41,13 @@ class StatInput():
 
     @staticmethod
     def from_data(data : dict):
-        title, (labels, data, horizontale) = data.items()[0]
+        title, d  = data.items()[0]
+        labels = d[0]
+        data = d[1]
+        if len(d) > 2:
+            horizontale = bool(int(d[2]))
         return StatInput(title, data, labels, horizontale)
-        
+
 class Stat():
     def __init__(self, data : List[StatInput]):
         """
