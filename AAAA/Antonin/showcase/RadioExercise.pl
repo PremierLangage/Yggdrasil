@@ -33,7 +33,7 @@ Mediocre
 La couleur bleu
 ==
 
-graph_horizontal_2
+graph_horizontal_2 = 1
 
 items_3==
 Très satisfaisant
