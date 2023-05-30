@@ -139,7 +139,7 @@ if user__role == "teacher":
     for title in data.keys():
         utils.log(title)
         if title in horizontales_data:
-            data[keys].append(horizontales_data[title])
+            data[title].append(horizontales_data[title])
     # Processing datas
     statInputs = [StatInput.from_data(d) for d in data.items()]
     # Generating default graphs
