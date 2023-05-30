@@ -132,11 +132,6 @@ before_graph==#|python|
 from collections import Counter
 import utils
 if user__role == "teacher":
-    # Processing horizontal graph data
-    horizontales_data = {k[len("graph_horizontal_"):] : v for k, v in [(k, v) for k, v in globals().items() if k.startswith("graph_horizontal_")]}
-    for title in data.keys():
-        if title in horizontales_data:
-            data[title].append(horizontales_data[title])
     # Processing datas
     utils.log(data)
     statInputs = [StatInput.from_data(d) for d in data.items()]
