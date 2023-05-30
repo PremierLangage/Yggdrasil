@@ -46,7 +46,7 @@ unique_choice = False
 before==#|python|
 import json
 from database_utils import get_session, Base, RadioResponse
-
+import utils
 inputValues = {k[len("question_"):] : {"question": v, "items": []} for k, v in globals().items() if k.startswith("question_")} 
 for k, v in [(k, v) for k, v in globals().items() if k.startswith("items_")]:
     k = k[len("items_"):]
@@ -61,6 +61,10 @@ for title in inputValues:
 questions = list(inputValues.keys())
 questions_name = [inputValues[i]["question"] for i in questions]
 number_questions = len(questions)
+utils.log(inputValues)
+utils.log(questions)
+utils.log(questions_name)
+
 data = {}
 answers_csv = f"username,firsname,lastname,email,{','.join(questions)}\\n"
 
