@@ -137,7 +137,7 @@ if user__role == "teacher":
     horizontales_data = {k[len("graph_horizontal_"):] : v for k, v in [(k, v) for k, v in globals().items() if k.startswith("graph_horizontal_")]}
     utils.log(horizontales_data)
     for title in data.keys():
-        utils
+        utils.log(title)
         if title in horizontales_data:
             data[keys].append(horizontales_data[title])
     # Processing datas
