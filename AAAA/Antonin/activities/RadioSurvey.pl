@@ -71,7 +71,7 @@ for i, key in enumerate(inputValues):
     tmp = RadioGroup(cid=f"checkbox_{questions[i]}")
     utils.log(key)
 
-    tmp.question = key["question"]
+    tmp.question = inputValues[key]["question"]
     utils.log_print()
 
     tmp.items =  [{"id": f"item_{key}_{i}",  "content": i} for i in inputValues[key]["items"]]
