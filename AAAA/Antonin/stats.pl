@@ -132,7 +132,7 @@ before_graph==#|python|
 from collections import Counter
 
 if user__role == "teacher":
-    statInputs = [StatInput(title, values, labels) for title, (labels, values) in data.items()]
+    statInputs = [StatInput(title, values, labels, horizontale) for title, (labels, values, horizontale) in data.items()]
     if (include_stats_score != "False"):
         values = []
         labels = []
