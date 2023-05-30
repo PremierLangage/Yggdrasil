@@ -85,6 +85,7 @@ if user__role == "teacher" and number_questions != 0:
         answers = session.query(RadioResponse).all()
     log(f"Waypoint data: {data}")
     for answer in answers:
+        log(f"Answer : {answer}")
         line_csv = [answer.username,answer.firstname,answer.lastname,answer.email]
         for i, q in json.loads(str(answer.value)).items():
             data[questions[int(i)]][1].append(q)
