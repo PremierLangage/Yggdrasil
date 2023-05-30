@@ -17,7 +17,23 @@ question_1 = Que pensez vous de cet exercice?
 question_2 = Et globalement de PL
 question_3 = Êtes vous satisfait de l'affichage des graphes
 
-items==
+items_1==
+Très satisfaisant
+Satisfaisant
+Moyennement satisfaisant
+Mediocre
+La couleur bleu
+==
+
+items_2==
+Très satisfaisant
+Satisfaisant
+Moyennement satisfaisant
+Mediocre
+La couleur bleu
+==
+
+items_3==
 Très satisfaisant
 Satisfaisant
 Moyennement satisfaisant
