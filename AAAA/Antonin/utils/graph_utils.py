@@ -71,8 +71,8 @@ def generer_histogramme(
         'datasets': [{
             'label': 'Fréquence des valeurs',
             'data': frequences,
-            'backgroundColor': generate_color_palette(len(valeurs), 0.2),
-            'borderColor':  generate_color_palette(len(valeurs), 1.0),
+            'backgroundColor': generate_color_palette(len(valeurs), 0.2, seed),
+            'borderColor':  generate_color_palette(len(valeurs), 1.0, seed),
             'borderWidth': borderWidth
         }],
         'title': title
