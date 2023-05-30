@@ -14,6 +14,7 @@ from graph_utils import generer_histogramme, SCRIPT
 from typing import List
 
 
+
 class StatInput():
     def __init__(self, title: str, data : list, labels : list, horizontale = False):
         """
@@ -34,6 +35,9 @@ class StatInput():
         identification to locate div containing the graphs; Thus they must be unique.
         """
         return hash(name)
+    
+    def to_data(self):
+        return {self.title : [self.labels, self.data, self.horizontale]}
 
 class Stat():
     def __init__(self, data : List[StatInput]):
