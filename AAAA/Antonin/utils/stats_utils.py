@@ -42,7 +42,7 @@ class StatInput():
     @staticmethod
     def from_data(data : dict):
         title, (labels, data, horizontale) = data.items()[0]
-        return StatInput()
+        return StatInput(title, data, labels, horizontale)
 class Stat():
     def __init__(self, data : List[StatInput]):
         """
