@@ -74,7 +74,7 @@ for i in range(len(questions)):
 
 if user__role == "teacher" and number_questions != 0:
     for i in inputValues:           
-        labels = inputValues[i]["items"])
+        labels = inputValues[i]["items"]
         data[inputValues[i]["question"]] = [labels, []]
         if len(inputValues[i]) > 2:
             data[inputValues[i]["question"]].append(inputValues[i]["horizontal"])
