@@ -56,7 +56,7 @@ horizontale = False
 # Values required for the program to work
 # ===============================================
 # Can (should) be redefined in implementations (see doc)
-data % {"test1": StatInput("test1", [1,2,2,3,3,3], [0,1,2,3], True), "test":  StatInput("test", ["coucou", "test", "a", "a"], ["rien", "coucou", "test", "a"], False)}
+data % {}
 answers_csv="username,firsname,lastname,email,title,statement,grade\\n"
 formstudent==#|html|
 <style>
