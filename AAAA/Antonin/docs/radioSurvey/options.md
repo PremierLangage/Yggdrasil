@@ -12,6 +12,19 @@
 
     - Le graphe de la question **`X`** doit-il être affiché avec des barres horizontales
 
+    Exemple:
+
+    `question_test= ma question`
+
+    `items_test==`
+
+    `unique choix`
+
+    `==`
+
+    `graph_horizontal_test = 1`
+
+
 [Options stats.pl](https://pl-preprod.u-pem.fr/filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/stats.pl)
 
 -  **`include_stats_score`** : `Boolean`   -   Défaut: `False`
