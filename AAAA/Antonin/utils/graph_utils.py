@@ -35,8 +35,6 @@ import colorsys
 
 def generate_color_palette(n, alpha):
     palette = []
-    random.seed()
-
     # Générer une couleur de départ aléatoire
     initial_hue = random.random()  # Valeur de teinte aléatoire entre 0 et 1
     initial_rgb = colorsys.hsv_to_rgb(initial_hue, 1, 1)
