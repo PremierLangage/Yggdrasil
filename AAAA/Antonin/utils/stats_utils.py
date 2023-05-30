@@ -40,10 +40,11 @@ class StatInput():
         return {self.title : [self.labels, self.data, self.horizontale]}
 
     @staticmethod
-    def from_data(data : dict):
+    def from_data(data : tuple):
         title, d  = data
         labels = d[0]
         data = d[1]
+        print(dat, file = sys.stderr)
         if len(d) > 2:
             return StatInput(title, data, labels, bool(int(d[2])))
         return StatInput(title, data, labels)
