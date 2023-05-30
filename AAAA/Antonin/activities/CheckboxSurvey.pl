@@ -67,7 +67,12 @@ for k, v in [(k, v) for k, v in globals().items() if k.startswith("items_")]:
     k = k[len("items_"):]
     if k in inputValues:
         inputValues[k]["items"] = v.splitlines()
-
+# Processing horizontal graph data
+horizontales_data = {k[len("graph_horizontal_"):] : v for k, v in [(k, v) for k, v in globals().items() if k.startswith("graph_horizontal_")]}
+for title in inputValues:
+    if title in horizontales_data:
+        data[title].append(horizontales_data[title])
+    
 questions = list(inputValues.keys())
 questions_name = [inputValues[i]["question"] for i in questions]
 number_questions = len(questions)
