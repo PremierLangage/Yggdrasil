@@ -72,7 +72,7 @@ for i, key in enumerate(inputValues):
     utils.log(key)
 
     tmp.question = key["question"]
-        utils.log_print()
+    utils.log_print()
 
     tmp.items =  [{"id": f"item_{key}_{i}",  "content": i} for i in inputValues[key]["items"]]
     globals()[f"checkbox_{questions[i]}"] = tmp
