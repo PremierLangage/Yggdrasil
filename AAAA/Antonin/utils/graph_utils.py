@@ -60,7 +60,7 @@ def generer_histogramme(
         title : str             = "Statistiques",
         backgroundColor : str   = 'rgba(75, 192, 250, 0.42)',
         borderColor : str       = 'rgba(75, 192, 250, 1)',
-        borderWidth : int       = 1,
+        borderWidth : int       = 10,
         horizontale = False) -> str:
     # Extraire les valeurs
     seed = random.randint(1, 42000)
@@ -72,7 +72,7 @@ def generer_histogramme(
             'label': 'Fréquence des valeurs',
             'data': frequences,
             'backgroundColor': generate_color_palette(len(valeurs), 0.8, seed),
-            'borderColor':  generate_color_palette(len(valeurs), 1.0, seed),
+            'borderColor':  generate_color_palette(len(valeurs), 0.1, seed),
             'borderWidth': borderWidth
         }],
         'title': title
