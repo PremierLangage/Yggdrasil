@@ -88,8 +88,7 @@ if user__role == "teacher" and number_questions != 0:
         line_csv = [answer.username,answer.firstname,answer.lastname,answer.email]
         for i, q in json.loads(str(answer.value)).items():
             log(f"Answer : {i, q}")
-            log(f"Answer2 : {questions_name[int(i)]}")
-            log(f"Answer3 : {questions_name[int(i)]}")
+            log(f"Answer2 : {inputValues[i]["question"]]}")
             data[inputValues[i]["question"]][1].append(q)
             line_csv.append(q)
         answers_csv += ','.join(line_csv) + '\\n'
