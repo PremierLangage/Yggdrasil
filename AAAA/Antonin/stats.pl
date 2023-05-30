@@ -55,6 +55,7 @@ include_stats_participation = False
 # ===============================================
 # Can (should) be redefined in implementations (see doc)
 data % {"test1": [[0,1,2,3], [1,2,2,3,3,3]], "test":  [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"]]}
+graph_horizontal_test = 1
 
 answers_csv="username,firsname,lastname,email,title,statement,grade\\n"
 formstudent==#|html|
@@ -166,7 +167,7 @@ if user__role == "teacher":
         statInputs.append(StatInput("__Participation__", values, labels))
     # Graph generation
     stat = Stat(statInputs)
-
+    utils.log_print()
     graphContent = stat.get_graph_as_html(containsScript=True)
 ==
 
