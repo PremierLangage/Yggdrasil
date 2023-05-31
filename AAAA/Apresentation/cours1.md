@@ -1,6 +1,4 @@
 
-Bien sûr, je serais ravi de vous aider à comprendre les principes de base de la programmation en utilisant Python. C'est un langage de programmation populaire, connu pour sa simplicité et sa lisibilité. 
-
 # Leçon 1: Introduction à Python
 
 ## Qu'est-ce que Python ?
