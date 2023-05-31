@@ -37,5 +37,6 @@ else:
     score = 0
 ==
 
+# options
 include_stats_score = True
 include_stats_participation = True
