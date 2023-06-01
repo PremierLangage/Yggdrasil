@@ -106,7 +106,7 @@ formstudent==#|html|
 before_stat==#|python|
 with open("database_utils.py", "r+") as f:
     f.seek(0, 0)
-    f.write(f"activity_id='showcase_checkbox_2'")
+    f.write(f"activity_id='showcase_codeeditor_2'")
 
 from database_utils import get_session, get_session, Base, Response
 from stats_utils import Stat, StatInput
@@ -164,7 +164,7 @@ if user__role == "teacher":
 
 # FORM PLAYER
 form==#|html|
-{% if user__role != "teacher" %}
+{% if user__role == "teacher" %}
 <style>
     .graph {
         display:flex;
