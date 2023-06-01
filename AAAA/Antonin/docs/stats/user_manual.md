@@ -4,7 +4,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     - **key   :** str : nom graphe
 
-    - **value :** list : Couple contenant les labels (valeurs possibles) et les values (valeurs)
+    - **value :** list : Liste contenant les labels (valeurs possibles) et les values (valeurs), ainsi qu'une option spécifiant si le graphe sera horizontal
         
         - **labels :** list : valeurs possibles (seront représentées sur l'histogramme)
 
@@ -12,7 +12,7 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
     Exemple: 
     
-    - `data` % {'test1': [[0,1,2,3], [1,2,2,3,3,3]], "test": [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"]]}
+    - `data` %  {"test1": [[0,1,2,3], [1,2,2,3,3,3]], "test":  [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"], "1"]}
 
 - **`answers_csv`** : string représentant le texte à télécharger au format csv
 
