@@ -1,11 +1,10 @@
-title= Addition Aléatoire
 
-author = Orhan UYAR
+title= Addition Aléatoire (using eval_func)
+
+author = Orhan Uyar
 
 text==
-Exercice 3
 Combien <i>font</i> ***{{ op1 }} + {{ op2 }}*** ?
-try count = {{ c }}
 ==
 
 form==
@@ -18,19 +17,18 @@ settings.oneshot=yes
 settings.allow_reroll=yes
 
 
-evaluator==
+evalfunc==
 import traceback
 import sys
 
-try: 
-    c += 1
-    if int(response['answer']) == op1 + op2:
-        grade = (100, "Bonne réponse")
-    else:
-        grade = (0, "Mauvaise réponse")
-except:
-    print(traceback.format_exc(), file=sys.stderr)
-    grade = (-1, "Merci de rentrer un entier")
+def evalfunc(dic, answers):
+    try: 
+        if int(answers['answer']) == dic['op1'] + dic['op2']:
+            return (100, "Bonne réponse")
+        return (0, "Mauvaise réponse")
+    except:
+        print(traceback.format_exc(), file=sys.stderr)
+        return(-1, "Merci de rentrer un entier")
 ==
 
 
@@ -39,9 +37,8 @@ import random
 random.seed(seed)
 op1 = random.randint(1, 10)
 op2 = random.randint(1, 10)
-c = 0
 ==
 
 @ /utils/sandboxio.py
 @ /builder/before.py [builder.py]
-@ /grader/evaluator.py [grader.py]
+@ /grader/evalfunc.py [grader.py]
