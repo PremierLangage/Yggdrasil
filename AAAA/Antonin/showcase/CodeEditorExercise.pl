@@ -1,6 +1,6 @@
 extends = /AAAA/Antonin/activities/CodeEditorSurvey.pl
 
-title= Dummy Title CodeEditorResponse
+title= Dummy Title CodeEditorResponse | Mode Enseignant
 
 text==
 Ceci est un exemple d'exercice visant à montrer l'utilisation de l'activité PL [`CodeEditorResponse.pl` dont voici la documentation](filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/activities/CodeEditorSurvey.pl).
