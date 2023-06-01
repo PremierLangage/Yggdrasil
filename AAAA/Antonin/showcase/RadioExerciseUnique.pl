@@ -44,9 +44,3 @@ score = 42
 if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
     score = 0
 ==
-
-evaluator==#|py|
-score = 42
-if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
-    score = 0
-==
