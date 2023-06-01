@@ -1,3 +1,6 @@
+@ /utils/sandboxio.py
+grader  =@ /AAAA/dominique/evaluatorwithlog.pl
+builder =@ /builder/before.py
 
 author= Antonin JEAN
 
