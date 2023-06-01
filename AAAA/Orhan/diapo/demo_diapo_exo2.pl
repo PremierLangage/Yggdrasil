@@ -3,7 +3,6 @@ title= Addition Aléatoire
 author = Orhan UYAR
 
 text==
-Exercice 2
 Combien <i>font</i> ***{{ op1 }} + {{ op2 }}*** ?
 try count = {{ c }}
 ==
