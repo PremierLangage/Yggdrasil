@@ -3,6 +3,7 @@ title= Addition Aléatoire
 author = Orhan UYAR
 
 text==
+Exercice 1
 Combien <i>font</i> ***{{ op1 }} + {{ op2 }}*** ?
 try count = {{ c }}
 ==
@@ -41,8 +42,6 @@ op2 = random.randint(1, 10)
 c = 0
 ==
 
-@ ~/utils/sandboxio.py
-@ ~/builder/before.py [builder.py]
-@ ~/grader/evaluator.py [grader.py]
-
-
+@ utils/sandboxio.py
+@ builder/before.py [builder.py]
+@ grader/evaluator.py [grader.py]
