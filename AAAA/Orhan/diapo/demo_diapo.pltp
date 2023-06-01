@@ -1,0 +1,16 @@
+title=Random add
+author=Orhan UYAR
+
+teacher== #|python| 
+test
+==
+@ demo_diapo_exo1.pl
+@ demo_diapo_exo2.pl
+@ demo_diapo_exo3.pl
+
+introduction==
+Des <i>additions</i> **aléatoires**
+==
+
+learning_index = 0
+learning_path = [[0], [1], [0, 1, 2]]
