@@ -106,7 +106,7 @@ formstudent==#|html|
 before_stat==#|python|
 with open("database_utils.py", "r+") as f:
     f.seek(0, 0)
-    f.write(f"activity_id='showcase_radiogroup_3'")
+    f.write(f"activity_id='showcase_radiogroup_4'")
 
 from database_utils import get_session, get_session, Base, Response
 from stats_utils import Stat, StatInput
