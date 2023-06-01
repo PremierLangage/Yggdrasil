@@ -130,7 +130,7 @@ before==#|python|
 before_graph==#|python|
 from collections import Counter
 import utils
-if user__role == "teacher":
+if user__role != "teacher":
     # Processing datas
     statInputs = [StatInput.from_data(d) for d in data.items()]
     # Generating default graphs
