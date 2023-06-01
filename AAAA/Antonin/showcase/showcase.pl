@@ -1,5 +1,5 @@
 @ /utils/sandboxio.py
-grader  =@ /grader/evaluator.pl
+grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 author= Antonin JEAN
