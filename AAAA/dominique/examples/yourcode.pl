@@ -70,7 +70,7 @@ if rval[0]:
 else:
     feedback = rval[2]
 
-feedack = "<br><hr>".join(feedback.split("\n"))
+feedack = "<div style='white-space: pre-wrap'>" + "<br><hr>".join(feedback.split("\n"))+ "</div>"
 
 grade=(100, feedback)
 
@@ -78,3 +78,8 @@ grade=(100, feedback)
 
 
 
+extracss==
+{
+
+}
+==
