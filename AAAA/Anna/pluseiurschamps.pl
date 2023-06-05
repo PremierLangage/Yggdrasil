@@ -21,12 +21,16 @@ inputbox.appearance = outline
 
 
 before==
+import random 
+a = random.randin(567,789789)
+
 ==
  
 
 
 text==
-Saisir votre exercice
+Saisir votre exercice ** {{ a }} **
+
 ==
 
 form==
