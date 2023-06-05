@@ -22,8 +22,10 @@ inputbox.appearance = outline
 
 before==
 ==
+ 
 
-title = Code Editor Component
+
+title = "Code Editor Component"
 
 text==
 Saisir votre exercice
