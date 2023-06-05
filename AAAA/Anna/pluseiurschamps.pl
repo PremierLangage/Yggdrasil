@@ -22,7 +22,7 @@ inputbox.appearance = outline
 
 before==
 import random 
-a = random.randin(567,789789)
+a = random.randint(567,789789)
 
 ==
  
