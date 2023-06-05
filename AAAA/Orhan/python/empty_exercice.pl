@@ -20,7 +20,7 @@ Entre du code python
 ==
 
 form==
-{{editor}}
+{{editor|component}}
 ==
 
 before==
