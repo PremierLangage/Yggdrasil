@@ -62,7 +62,7 @@ def execute(args, instr):
         sortieo,sortiee = p.communicate(input=instr.encode())
         return p.returncode == 0, sortieo.decode(),sortiee.decode() 
     except Exception as e:
-        return False, " ".join(args), type(e)+str(e)
+        return False, " ".join(args), type(e)+"UUUUUU"+str(e)
 
 rval = execute(['python3','student.py'],"")
 if rval[0]:
