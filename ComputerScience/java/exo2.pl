@@ -2,16 +2,17 @@ extends = /template/java.pl
 
 title = méthode carré
 
-text = création d'une méthode qui prend un nombre n et qui retourne n au carré
+text = création d'une méthode statique **square** qui prend un nombre n et qui retourne n au carré
 
 before==
 wrapper = (
-    "public class %s {\n"
+    "public class Main {\n"
+    "%s"
     "    public static void main(String[] args) {\n"
     "        \n"
     "    }\n"
     "}"
-) % classname
+)
 ==
 
 build= wrapper% editor["code"]
@@ -28,8 +29,8 @@ class MainTest {
     @Test
     @DisplayName("test")
     void TestCarre() {
-        var p = 2
-        Assertions.assertEquals(p, 4);
+        var p = 2;
+        Assertions.assertEquals(Main.square(p), 4);
     }
 
 
