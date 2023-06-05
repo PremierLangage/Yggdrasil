@@ -64,8 +64,12 @@ def execute(args, instr):
     except Exception as e:
         return False, " ".join(args), str(e)
 
-
-grade=(100, execute(['python3','student.py'],"")[1])
+rval = execute(['python3','student.py'],"")
+if rval[0]:
+    feedback = rval[1]
+else:
+    feedback = rval[2]
+grade=(100, feedback)
 
 ==
 
