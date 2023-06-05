@@ -13,9 +13,11 @@ Output
 ==
 
 form==
-<code class="langage-python">
-    hello
-</code>
+
+```py
+def func():
+    pass
+```
 ==
 
 before==
