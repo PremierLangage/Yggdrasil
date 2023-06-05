@@ -64,6 +64,8 @@ title=""
 form=""
 feedback = f"""
 
+Ceci est affiché car c'est le feedback 
+<br><br><br>
 title={inputbox.value}     
 text== . . 
 {editor.code} . .  \n== . . 
