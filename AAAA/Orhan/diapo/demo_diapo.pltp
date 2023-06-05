@@ -7,7 +7,7 @@ test
 @ demo_diapo_exo1.pl
 @ demo_diapo_exo2.pl
 @ demo_diapo_exo3.pl
-
+@ ../python/emplty_exercice.pl
 introduction==
 Des <i>additions</i> **aléatoires**
 ==
