@@ -69,6 +69,8 @@ if rval[0]:
     feedback = rval[1]
 else:
     feedback = rval[2]
+feedack = "<br>".join(feedback.split("\n"))
+
 grade=(100, feedback)
 
 ==
