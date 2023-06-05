@@ -41,7 +41,7 @@ form==
 
 title==
 prout 
-"Code Editor Component"
+{{ a }}
 ==
 
 text==
