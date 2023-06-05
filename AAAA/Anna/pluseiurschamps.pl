@@ -36,7 +36,8 @@ form==
 
 
 title==
-Input Component
+prout 
+
 ==
 
 text==
