@@ -9,7 +9,7 @@ Python runner
 ==
 
 text==
-Entre du code python
+Output
 ==
 
 form==
