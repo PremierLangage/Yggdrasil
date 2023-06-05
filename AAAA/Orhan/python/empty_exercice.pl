@@ -4,13 +4,6 @@
 
 author = Orhan Uyar
 
-editor =: CodeEditor
-editor.theme = dark
-editor.language = python
-editor.code ==
-# empty file
-==
-
 title ==
 Python runner
 ==
@@ -20,7 +13,9 @@ Entre du code python
 ==
 
 form==
-{{editor|component}}
+<code class="langage-python">
+    hello
+</code>
 ==
 
 before==
