@@ -10,32 +10,14 @@ grader= @/grader/evaluator.py
 
 
 
-title= Test pour le mini projet 2 AP1 2020/2021 
+title= Editeur executeur de python
 
-soluce=@app2dr.py 
-
-@ input0.txt
-@ input1.txt 
-@ input2.txt
-@ input3.txt
 
 text==
-Placez votre code dans l'éditeur.
-Un certain nombre de tests seront réalisés.
+
 ==
 
 before==
-
-tests=["Prompt : quelle invite de commande ?","Quelle version ?","Version2", "version1" ]
-
-for i,t in enumerate(tests): 
-    filename=f"input{i}.txt"
-    mpl=t+"\n"
-    with open(filename,"r") as f:
-        mpl+= f.read()
-    globals()[f"mplsoluce{i}"]= mpl
-
-
 ==
 
 
@@ -54,11 +36,37 @@ form==
 ==
 
 
-pregrader==
+evaluator==
 
 student=editor.code
 with open("student.py","w") as f:
     f.write(student)
+
+
+import doctest
+import subprocess
+import re
+
+def execute(args, instr):
+    """
+    :param args: the subprocess parameter
+    :param instr: the input file for the subprocess parameter
+    :return:
+        boolean: code de retour 
+        stdout
+        stderr
+    """
+    try:
+        p = subprocess.Popen(" ".join(args), stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,shell= True)
+        sortieo,sortiee = p.communicate(input=instr.encode())
+        return p.returncode == 0, sortieo.decode(),sortiee.decode() 
+    except Exception as e:
+        return False, " ".join(args), str(e)
+
+
+grade=(100, execute(['python3','student.py'],""))
+
 ==
 
 
