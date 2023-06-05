@@ -3,9 +3,9 @@
 @ /utils/sandboxio.py
 
 builder =@ /builder/before.py
-extends= /ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-grader= @/grader/evaluator.py
+
+grader =@/grader/evaluator.py
 
 
 
