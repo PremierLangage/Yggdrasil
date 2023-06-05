@@ -1,6 +1,6 @@
-title= Addition Aléatoire
+title= C'est le DEUX 
 
-author = Orhan UYAR
+author = Orhan UYAR sisi 
 
 text==
 Combien <i>font</i> ***{{ op1 }} + {{ op2 }}*** ?
