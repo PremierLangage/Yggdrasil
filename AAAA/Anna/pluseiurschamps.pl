@@ -25,8 +25,6 @@ before==
  
 
 
-title = "Code Editor Component"
-
 text==
 Saisir votre exercice
 ==
@@ -39,7 +37,7 @@ form==
 
 title==
 prout 
-
+"Code Editor Component"
 ==
 
 text==
