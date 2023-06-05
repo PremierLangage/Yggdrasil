@@ -14,10 +14,14 @@ Output
 
 form==
 
-```py
-def func():
+<code class"code langage-python">
+def fun():
     pass
-```
+
+toto = 10
+hello = "Simple text"
+</code>
+
 ==
 
 before==
