@@ -11,8 +11,11 @@ editor.code ==
 # empty file
 ==
 
+title ==
+Python runner
+==
 
-title==
+text==
 Entre du code python
 ==
 
