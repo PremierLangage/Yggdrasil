@@ -65,7 +65,7 @@ def execute(args, instr):
         return False, " ".join(args), str(e)
 
 
-grade=(100, execute(['python3','student.py'],""))
+grade=(100, execute(['python3','student.py'],"")[1])
 
 ==
 
