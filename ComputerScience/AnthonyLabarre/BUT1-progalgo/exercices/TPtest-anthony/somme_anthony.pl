@@ -3,7 +3,7 @@
 @ /utils/sandboxio.py
 
 # pour importer ses propres modules
-@ ../display_tools.py
+@ Yggdrasil/ComputerScience/AnthonyLabarre/BUT1-progalgo/exercices/tools.py
 
 grader=@ /grader/evaluator.py
 
