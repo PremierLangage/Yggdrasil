@@ -38,9 +38,6 @@ form==
 
 # EVALUATE THE STUDENT ANSWER
 evaluator==
-def lafonction():
-    pass
-
 score = -1
 feedback = '<span class="error-state animated pulse infinite">Réponse obligatoire !</span>'
 
