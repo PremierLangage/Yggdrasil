@@ -117,7 +117,7 @@ for i in range(len(radio)):
     answer[questions[i]] = response[f"radio_{questions[i]}"]["selection"]
 # Default Grade intilisation
 score = 100
-feedback = '<span class="success-state">Réponse enregistrée</span>'
+feedback = f'<span class="success-state">Réponse enregistrée {answer} {unique_choice} {number_questions}</span>'
 
 class Question:
     def __init__(self, name, items, answer):
