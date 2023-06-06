@@ -40,7 +40,7 @@ form==
 evaluator==
 
 feedback = str(globals())
-
+score = 100
 
 def lafonction():
     pass
