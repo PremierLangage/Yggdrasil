@@ -5,7 +5,7 @@ title = méthode carré
 
 text ==
 écrire une méthode statique **square** dans la class Square 
-qui prend un nombre n et qui retourne n au carré 
+qui prend un nombre entier n et qui le retourne au carré 
 ==
 before==
 editor["code"] = (
