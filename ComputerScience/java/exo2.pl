@@ -19,31 +19,38 @@ classname=Square
 junit==
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Assertions;
+import java.lang.reflect.*;
 
 @DisplayName("SquareTest")  
 class SquareTest {
 
     @Test
     @DisplayName("SimpleSquare")
-    void SimpleSquare() {
+    void simpleSquare() {
         var p = 2;
         Assertions.assertEquals(Square.square(p), 4);
     }
 
     @Test
     @DisplayName("NegativeSquare")
-    void NegativeSquare() {
+    void negativeSquare() {
         var p = -2;
         Assertions.assertEquals(Square.square(p), 4);
     }
 
     @Test
     @DisplayName("ZeroSquare")
-    void ZeroSquare() {
+    void zeroSquare() {
         var p = 0;
         Assertions.assertEquals(Square.square(p), 0);
     }
     
+    @Test
+    @DisplayName("Visibility")
+    void visibility() {
+        var p = 0;
+        Assertions.assertEquals(Square.square(p), 0);
+    }
 
 }
 ==
