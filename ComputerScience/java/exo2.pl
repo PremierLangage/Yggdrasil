@@ -6,9 +6,9 @@ title = méthode carré
 text = création d'une méthode statique **square** qui prend un nombre n et qui retourne n au carré
 
 before==
-wrapper = (
+editor["code"] = (
     "public class Main {\n"
-    "%s"
+    
     "    public static void main(String[] args) {\n"
     "        \n"
     "    }\n"
@@ -17,7 +17,7 @@ wrapper = (
 ==
 
 build==
-editor["code"] = wrapper% editor["code"]
+editor["code"] = "toto"
 ==
 classname=Main
 
