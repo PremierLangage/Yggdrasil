@@ -40,7 +40,4 @@ La couleur bleu
 ==
 
 evaluator==#|py|
-score = 42
-if (unique_choice != "False") and (len(answer) != int(number_questions)):
-    score = 0
 ==
