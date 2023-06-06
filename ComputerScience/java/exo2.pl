@@ -4,16 +4,12 @@ extends = /template/java.pl
 title = méthode carré
 
 text ==
-écrire une méthode statique **square** dans la class Main 
+écrire une méthode statique **square** dans la class Square 
 qui prend un nombre n et qui retourne n au carré 
 ==
 before==
 editor["code"] = (
-    "public class Main {\n"
-    
-    "    public static void main(String[] args) {\n"
-    "        \n"
-    "    }\n"
+    "public class Square {\n"
     "}"
 )
 ==
