@@ -116,7 +116,7 @@ answer = {}
 log(response)
 for i in range(len(radio)):
     sel = response[f"radio_{questions[i]}"]["selection"]
-    answer[questions[i]] = ''.join([i["content"] for i in response[f"radio_{questions[i]}"]["items"] if i["id"] == sel else ''])
+    answer[questions[i]] = ''.join([i["content"] for i in response[f"radio_{questions[i]}"]["items"] if i["id"] == sel])
 log(answer)
 log_print()
 # Default Grade intilisation
