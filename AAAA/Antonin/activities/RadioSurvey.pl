@@ -115,7 +115,8 @@ from utils import *
 answer = {}
 log(response)
 for i in range(len(radio)):
-    answer[questions[i]] = response[f"radio_{questions[i]}"]["selection"]
+    sel = response[f"radio_{questions[i]}"]["selection"]
+    answer[questions[i]] = response[f"radio_{questions[i]}"]
 log_print()
 # Default Grade intilisation
 score = 100
