@@ -118,7 +118,7 @@ for i in range(len(radio)):
     answer[questions[i]] = ''.join([i["content"] for i in response[f"radio_{questions[i]}"]["items"] if i["id"] == sel])
 # Default Grade intilisation
 score = 100
-feedback = f'<span class="success-state">Réponse enregistrée {set(answer.values())} {unique_choice} {number_questions}</span>'
+feedback = f'<span class="success-state">Réponse enregistrée</span>'
 
 class Question:
     def __init__(self, name, items, answer):
