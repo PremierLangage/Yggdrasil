@@ -20,9 +20,13 @@ junit==
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Assertions;
 import java.lang.reflect.*;
-
+import org.junit.rules.TestRule;
 @DisplayName("SquareTest")  
 class SquareTest {
+
+    @Rule
+    public StopOnFailureRule stopOnFailureRule = new StopOnFailureRule();
+
 
     @Test
     @DisplayName("SimpleSquare")
