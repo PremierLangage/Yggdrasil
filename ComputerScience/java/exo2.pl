@@ -31,6 +31,7 @@ class SquareTest {
         try{
             Assertions.assertEquals(Square.square(p), 4,"la fonction ne renvoie pas le bon retour");
         }catch(Exception e){
+        }
 
         }
 
