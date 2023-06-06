@@ -39,13 +39,11 @@ form==
 # EVALUATE THE STUDENT ANSWER
 evaluator==
 
-def lafonction():
-    pass
-
 feedback = str(globals())
 score = 100
 
-
+def lafonction():
+    pass
 
 
 grade = (score, feedback)
