@@ -31,7 +31,7 @@ donc pas ajouter les négatifs s'il y en a.
 <br />
 ==
 
-editor.height = 500px
+editor.height = 400px
 editor.code==
 ... sum_of_positives(...){
     /* Votre code ici */
