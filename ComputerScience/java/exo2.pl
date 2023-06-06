@@ -47,7 +47,7 @@ class SquareTest {
     
     @Test
     @DisplayName("Visibility")
-    void visibility() throw NoSuchMethodException {
+    void visibility() throws NoSuchMethodException {
         var method = Square.class.getMethod("square");
         String modifiers = Modifier.toString(method.getModifiers());
         
