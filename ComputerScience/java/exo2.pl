@@ -28,7 +28,7 @@ class SquareTest {
     @DisplayName("SimpleSquare")
     void simpleSquare() {
         var p = 2;
-        Assertions.assertEquals(Square.square(p), 4);
+        Assertions.assertEquals(Square.square(p), 4,"la fonction ne renvoie pas le bon retour");
     }
 
     @Test
