@@ -25,21 +25,21 @@ class MainTest {
 
     @Test
     @DisplayName("SimpleSquare")
-    void TestCarre() {
+    void SimpleSquare() {
         var p = 2;
         Assertions.assertEquals(Main.square(p), 4);
     }
 
     @Test
     @DisplayName("NegativeSquare")
-    void TestCarre() {
+    void NegativeSquare() {
         var p = -2;
         Assertions.assertEquals(Main.square(p), 4);
     }
 
     @Test
     @DisplayName("ZeroSquare")
-    void TestCarre() {
+    void ZeroSquare() {
         var p = 0;
         Assertions.assertEquals(Main.square(p), 0);
     }
