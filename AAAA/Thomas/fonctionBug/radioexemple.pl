@@ -40,7 +40,7 @@ form==
 evaluator==
 
 def lafonction():
-    pass
+    return "thomas"
 
 
 feedback = str(globals())
