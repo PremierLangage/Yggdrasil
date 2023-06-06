@@ -51,7 +51,7 @@ class SquareTest {
         var method = Square.class.getMethod("square");
         String modifiers = Modifier.toString(method.getModifiers());
         
-        Assertions.assertEquals(modifiers.contains("static") , true,"la fonction ne renvoie pas les bonnes valeurs");
+        Assertions.assertEquals(modifiers.contains("static") , true,Square.class.getMethods());
 
     }
 
