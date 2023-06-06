@@ -1,5 +1,6 @@
 extends = /template/java.pl
 
+
 title = méthode carré
 
 text = création d'une méthode statique **square** qui prend un nombre n et qui retourne n au carré
@@ -15,8 +16,9 @@ wrapper = (
 )
 ==
 
-build= wrapper% editor["code"]
-
+build==
+editor["code"] = wrapper% editor["code"]
+==
 classname=Main
 
 junit==
