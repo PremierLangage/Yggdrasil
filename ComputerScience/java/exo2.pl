@@ -48,7 +48,7 @@ class SquareTest {
     @Test
     @DisplayName("Visibility")
     void visibility() {
-        var p = Square.class.getmethod("square");
+        var p = Square.class.getMethod("square");
         String modifiers = p.Modifier.toString(method.getModifiers());
         
         Assertions.assertEquals(modifiers.contains("static") , true,"la fonction ne renvoie pas les bonnes valeurs");
