@@ -14,7 +14,7 @@ editor["code"] = (
 )
 ==
 
-classname=Main
+classname=Square
 
 junit==
 import org.junit.jupiter.api.*;
