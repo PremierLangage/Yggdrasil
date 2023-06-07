@@ -267,6 +267,8 @@ class Grader:
 
         answers = grader.modify_answers()
 
+        print("toto")
+
         ret = grader.compile()
         if ret[0]:  # Student compilation failed:
             feedback = "erreur de compilation :<br/><br/><pre><code>" + ret[2] + "</code></pre>"
