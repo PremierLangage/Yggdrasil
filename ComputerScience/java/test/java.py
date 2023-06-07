@@ -255,6 +255,8 @@ class Grader:
     def grade(cls, context, answers):
         """Grade the answers according to context, exiting the script through sandboxio.output()."""
         grader = cls(context, answers)
+
+        sandboxio.output(0,answers)
         
         ret = grader.compile()
         if ret[0]:  # Student compilation failed:
@@ -274,6 +276,7 @@ class Grader:
         junit = grader.run_junit()
         if junit:
             grade, feedback = junit
+            
             feedback = (
                 "<pre><code>%s</code></pre>"
                 % feedback
