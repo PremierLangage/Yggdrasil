@@ -1,5 +1,5 @@
 
-extends = /AAAA/Antonin/activities/RadioSurvey.pl
+extends = ./Antonin/activities/RadioSurvey.pl
 
 author= DR
 title=
