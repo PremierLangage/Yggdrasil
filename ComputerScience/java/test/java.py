@@ -265,7 +265,7 @@ class Grader:
         """Grade the answers according to context, exiting the script through sandboxio.output()."""
         grader = cls(context, answers)
 
-        answers = grader.modify_answers()
+        #answers = grader.modify_answers()
 
         feedback = "toto"
         sandboxio.output(10, feedback)
