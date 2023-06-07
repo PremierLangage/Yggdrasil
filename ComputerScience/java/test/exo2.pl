@@ -12,7 +12,6 @@ editor["code"] = (
     "public class Square {\n"
     "}"
 )
-==
 
 editor["code"] = (
     "public class Square {\n"
@@ -21,6 +20,7 @@ editor["code"] = (
     "    }\n"
     "}"
 )
+==
 
 stdout_tests==
         basique 4 2
