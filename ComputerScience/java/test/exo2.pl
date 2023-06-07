@@ -14,6 +14,14 @@ editor["code"] = (
 )
 ==
 
+editor["code"] = (
+    "public class Square {\n"
+    "    public static void main(String[] args) {\n"
+    "        \n"
+    "    }\n"
+    "}"
+)
+
 stdout_tests==
         basique 4 2
         negatif 4 -2 
