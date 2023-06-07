@@ -209,6 +209,11 @@ class Grader:
         
         return tests
     
+    def modify_answers(self){
+        if "modify_answers" not in self.context:
+            return
+    }
+    
     
     @staticmethod
     def parse_tests_result(tests):
@@ -256,37 +261,36 @@ class Grader:
         """Grade the answers according to context, exiting the script through sandboxio.output()."""
         grader = cls(context, answers)
 
-        sandboxio.output(0,answers)
+        answers = grader.modify_answers()
+
+        ret = grader.compile()
+        if ret[0]:  # Student compilation failed:
+            feedback = "erreur de compilation :<br/><br/><pre><code>" + ret[2] + "</code></pre>"
+            sandboxio.output(0, feedback)
+        
+        taboos = grader.taboo()
+        if taboos:
+            feedback = "These words are disallowed an cannot be used: " + str(taboos)
+            sandboxio.output(-1, feedback)
+        
+        tests = grader.run_tests()
+        if tests:
+            grade, feedback = cls.parse_tests_result(tests)
+            sandboxio.output(grade, feedback)
+        
+        junit = grader.run_junit()
+        if junit:
+            grade, feedback = junit
+            
+            feedback = (
+                "<pre><code>%s</code></pre>"
+                % feedback
+            )
+            sandboxio.output(grade, feedback)
+        
+        print("Both of the keys 'stdout_tests' and 'junit' are missing. At least one must be "
+              "present for the Grader to be able to grade the student's answer.", file=sys.stderr)
         sys.exit(1)
-        if false:
-            ret = grader.compile()
-            if ret[0]:  # Student compilation failed:
-                feedback = "erreur de compilation :<br/><br/><pre><code>" + ret[2] + "</code></pre>"
-                sandboxio.output(0, feedback)
-            
-            taboos = grader.taboo()
-            if taboos:
-                feedback = "These words are disallowed an cannot be used: " + str(taboos)
-                sandboxio.output(-1, feedback)
-            
-            tests = grader.run_tests()
-            if tests:
-                grade, feedback = cls.parse_tests_result(tests)
-                sandboxio.output(grade, feedback)
-            
-            junit = grader.run_junit()
-            if junit:
-                grade, feedback = junit
-                
-                feedback = (
-                    "<pre><code>%s</code></pre>"
-                    % feedback
-                )
-                sandboxio.output(grade, feedback)
-            
-            print("Both of the keys 'stdout_tests' and 'junit' are missing. At least one must be "
-                "present for the Grader to be able to grade the student's answer.", file=sys.stderr)
-            sys.exit(1)
 
 
 
