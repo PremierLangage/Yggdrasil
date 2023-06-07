@@ -211,7 +211,11 @@ class Grader:
     
     def modify_answers(self){
         if "modify_answers" not in self.context:
-            return
+            exec(dic['modify_answers'],dic)
+            exec("", glob)
+            for key in glob:
+                if key in dic and dic[key] == glob[key]:
+                    del dic[key]
     }
     
     
