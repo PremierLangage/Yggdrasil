@@ -38,7 +38,7 @@ et affiche s'il appartient ou non à la suite : "{{MOT}}"
 
 ==
 
-before==#|Python|
+before==#|python|
 
 import random 
 
