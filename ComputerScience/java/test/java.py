@@ -210,10 +210,10 @@ class Grader:
         return tests
     
     def modify_answers(self,answers):
-        if 'code_before' not in self.context:
+        if 'code_before' in self.context:
             answers="momo"
             answers = self.context['code_before'] + answers 
-        if 'code_after' not in self.context:
+        if 'code_after' in self.context:
             answer= "toto"
             answers = answers+self.context['code_after']
         return answers
