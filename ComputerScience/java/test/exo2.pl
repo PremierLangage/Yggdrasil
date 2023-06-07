@@ -28,15 +28,17 @@ stdout_tests==
         zero 0 0
 ==
 
-modify_answers==
-editor["code"] = "toto"+editor["code"]
+code_before== #|java|
 
 ==
 
+code_after== #|after|
+
+==
 
 classname=Square
-
-toto==
+#junit
+toto ==
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Assertions;
 import java.lang.reflect.*;
