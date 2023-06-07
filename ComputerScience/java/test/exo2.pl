@@ -28,9 +28,11 @@ stdout_tests==
         zero 0 0
 ==
 
-evaluator==
+modify_answers==
+editor["code"] = "toto"+editor["code"]
 
 ==
+
 
 classname=Square
 
