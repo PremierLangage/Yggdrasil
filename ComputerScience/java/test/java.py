@@ -257,7 +257,8 @@ class Grader:
         grader = cls(context, answers)
 
         sandboxio.output(0,answers)
-        return
+        sys.exit(1)
+
         ret = grader.compile()
         if ret[0]:  # Student compilation failed:
             feedback = "erreur de compilation :<br/><br/><pre><code>" + ret[2] + "</code></pre>"
