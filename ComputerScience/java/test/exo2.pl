@@ -1,4 +1,4 @@
-extends = /template/java.pl
+extends = java.pl
 
 
 title = méthode carré
