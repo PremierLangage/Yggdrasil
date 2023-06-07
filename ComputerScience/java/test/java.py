@@ -266,7 +266,7 @@ class Grader:
 
         answers = grader.modify_answers(answers)
 
-        sandboxio.output(-1, answers)
+        sandboxio.output(-1, answers['answer'])
         sys.exit(1)
         
 
