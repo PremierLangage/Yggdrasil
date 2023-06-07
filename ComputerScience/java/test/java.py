@@ -211,9 +211,9 @@ class Grader:
     
     def modify_answers(self,answers):
         if "code_before" not in self.context:
-            answers["answer"] = dic['code_before'] + answers["answer"] 
+            answers = dic['code_before'] + answers 
         if "code_after" not in self.context:
-            answers["answer"] = answers["answer"]+dic['code_after']
+            answers = answers+dic['code_after']
         return answers
     
     
@@ -264,7 +264,7 @@ class Grader:
         """Grade the answers according to context, exiting the script through sandboxio.output()."""
         grader = cls(context, answers)
 
-        answers = grader.modify_answers(answers)
+        answers['answer'] = grader.modify_answers(answers['answer'])
 
         sandboxio.output(-1, answers['answer'])
         sys.exit(1)
