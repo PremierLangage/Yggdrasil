@@ -258,7 +258,7 @@ class Grader:
         
         ret = grader.compile()
         if ret[0]:  # Student compilation failed:
-            feedback = "Compilation error:<br/><br/><pre><code>" + ret[2] + "</code></pre>"
+            feedback = "erreur de compilation :<br/><br/><pre><code>" + ret[2] + "</code></pre>"
             sandboxio.output(0, feedback)
         
         taboos = grader.taboo()
