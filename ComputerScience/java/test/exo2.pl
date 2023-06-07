@@ -29,7 +29,7 @@ stdout_tests==
 ==
 
 code_before== #|java|
-
+    toto
 ==
 
 code_after== #|after|
