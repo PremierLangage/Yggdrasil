@@ -214,7 +214,7 @@ class Grader:
             answers = self.context['code_before'] + answers 
         if "code_after" not in self.context:
             answers = answers+self.context['code_after']
-        return answers
+        return self.context
     
     
     
