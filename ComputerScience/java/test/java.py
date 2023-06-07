@@ -267,9 +267,7 @@ class Grader:
 
         answers = grader.modify_answers()
 
-        feedback = "toto"
-        sandboxio.output(10, feedback)
-        sys.exit(1)
+        
 
         ret = grader.compile()
         if ret[0]:  # Student compilation failed:
