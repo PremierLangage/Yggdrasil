@@ -26,7 +26,7 @@ evaluator==
 
 classname=Square
 
-junit==
+toto==
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Assertions;
 import java.lang.reflect.*;
