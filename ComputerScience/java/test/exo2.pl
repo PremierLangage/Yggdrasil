@@ -29,11 +29,13 @@ stdout_tests==
 ==
 
 code_before== #|java|
-    totojfezlj
+    }
 ==
 
 code_after== #|after|
-
+public class Square {
+    public static void main(String[] args) {
+        System.out.println(Square.square(Integer.parseInt(args[0])));    }
 ==
 
 classname=Square
