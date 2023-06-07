@@ -1,6 +1,16 @@
 
 extends = /AAAA/Antonin/activities/RadioSurvey.pl
 
+author= DR
+title=
+text==
+# Sondage sur la problématique principale 
+
+**Choisisez la problématique principale** que vous avez constatés dans vos enseignement.
+
+==
+
+
 
 question_1 = Quel est le problème principale avec vos étudiants ?
 
