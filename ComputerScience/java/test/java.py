@@ -211,9 +211,9 @@ class Grader:
     
     def modify_answers(self,answers):
         if "code_after" not in self.context:
-            answers = answers+dic['code_after']
+            answers["answer"] = answers+dic['code_after']
         if "code_before" not in self.context:
-            answers = dic['code_before'] + answers 
+            answers["answer"] = dic['code_before'] + answers 
         return answers
     
     
