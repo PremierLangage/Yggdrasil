@@ -258,35 +258,35 @@ class Grader:
 
         sandboxio.output(0,answers)
         sys.exit(1)
-
-        ret = grader.compile()
-        if ret[0]:  # Student compilation failed:
-            feedback = "erreur de compilation :<br/><br/><pre><code>" + ret[2] + "</code></pre>"
-            sandboxio.output(0, feedback)
-        
-        taboos = grader.taboo()
-        if taboos:
-            feedback = "These words are disallowed an cannot be used: " + str(taboos)
-            sandboxio.output(-1, feedback)
-        
-        tests = grader.run_tests()
-        if tests:
-            grade, feedback = cls.parse_tests_result(tests)
-            sandboxio.output(grade, feedback)
-        
-        junit = grader.run_junit()
-        if junit:
-            grade, feedback = junit
+        if false:
+            ret = grader.compile()
+            if ret[0]:  # Student compilation failed:
+                feedback = "erreur de compilation :<br/><br/><pre><code>" + ret[2] + "</code></pre>"
+                sandboxio.output(0, feedback)
             
-            feedback = (
-                "<pre><code>%s</code></pre>"
-                % feedback
-            )
-            sandboxio.output(grade, feedback)
-        
-        print("Both of the keys 'stdout_tests' and 'junit' are missing. At least one must be "
-              "present for the Grader to be able to grade the student's answer.", file=sys.stderr)
-        sys.exit(1)
+            taboos = grader.taboo()
+            if taboos:
+                feedback = "These words are disallowed an cannot be used: " + str(taboos)
+                sandboxio.output(-1, feedback)
+            
+            tests = grader.run_tests()
+            if tests:
+                grade, feedback = cls.parse_tests_result(tests)
+                sandboxio.output(grade, feedback)
+            
+            junit = grader.run_junit()
+            if junit:
+                grade, feedback = junit
+                
+                feedback = (
+                    "<pre><code>%s</code></pre>"
+                    % feedback
+                )
+                sandboxio.output(grade, feedback)
+            
+            print("Both of the keys 'stdout_tests' and 'junit' are missing. At least one must be "
+                "present for the Grader to be able to grade the student's answer.", file=sys.stderr)
+            sys.exit(1)
 
 
 
