@@ -1,17 +1,27 @@
-extends = java.pl
+extends = /template/java.pl
 
 
 title = méthode carré
 
 text ==
 écrire une méthode statique **square** dans la class Square 
-qui prend un nombre entier n et qui le retourne au carré 
+qui prend un nombre entier n et qui le retourne au carré et éxécuter la dans le main
 ==
 before==
 editor["code"] = (
     "public class Square {\n"
     "}"
 )
+==
+
+stdout_tests==
+        basique 4 2
+        negatif 4 -2 
+        zero 0 0
+==
+
+evaluator==
+
 ==
 
 classname=Square
