@@ -9,6 +9,7 @@ title= Showcase du module de statistique sur PL
 
 text==#|markdown|
 Si vous souhaitez prendre en main les exercices PL comprenant le module d'activité vous pouvez cliquer sur les liens plus bas:
+Pour passer en mode étudiant vous pouvez lancer les liens en navigations privée, ou en vous connectant avec un utilisateur n'ayant pas le role enseignant
 
 - CodeEditorExercise:
 
