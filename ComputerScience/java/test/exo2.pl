@@ -16,7 +16,7 @@ editor["code"] = (
 editor["code"] = (
     "public class Square {\n"
     "    public static void main(String[] args) {\n"
-    "        System.out.println(Square.square(args[0]));"
+    "        System.out.println(Square.square(Integer.parseInt(args[0])));"
     "    }\n"
     "}"
 )
