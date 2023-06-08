@@ -76,7 +76,7 @@ for _title in inputValues:
 combinations_data = {k[len("graph_combinations_"):] : v for k, v in [(k, v) for k, v in globals().items() if k.startswith("graph_combinations_")]}
 for _title in inputValues:
     if _title in combinations_data:
-        inputValues[_title]["combinations"] = combinations_data[_title]
+        inputValues[_title]["combinations"] = true
 
 questions = list(inputValues.keys())
 questions_name = [inputValues[i]["question"] for i in questions]
