@@ -112,7 +112,7 @@ if user__role =="teacher" and number_questions != 0:
         answers = session.query(CheckboxResponse).all()
     
     for answer in answers:
-        line_csv = [answer.username,answer.firstname,answer.lastname,answer.email]
+        line_csv = [answer.username,answer.firstname,answer.lastname,answer.email, answer.grade]
         for q, i in json.loads(str(answer.values)).items():
             question, items = i
             if data.get("Représentation choix : " + question):
