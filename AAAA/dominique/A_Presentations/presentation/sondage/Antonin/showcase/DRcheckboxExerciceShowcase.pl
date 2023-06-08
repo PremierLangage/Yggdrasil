@@ -26,17 +26,4 @@ items_1==
  ne sont pas critiques
 ==
 
-
-
 graph_horizontal_1 = 1
-
-question_2 = Et que pensez-vous des gens qui ne finissent pas leurs ...
-
-items_2==
-Pas grand
-Leurs quoi?
-J'aime bien surtout ceux
-==
-
-# Si vous voulez afficher toutes les combinaisons de réponses possibles:
-# all_possibilities = True
