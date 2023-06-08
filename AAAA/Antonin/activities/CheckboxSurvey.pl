@@ -90,8 +90,9 @@ if user__role =="teacher" and number_questions != 0:
     for i in inputValues:           
         labels = get_combinations(inputValues[i]["items"]) if all_possibilities != 'False' else []
         data["Représentation choix : " + inputValues[i]["question"]] = [labels, []]
-        data[inputValues[i]["question"]] = [labels, []]
+        data[inputValues[i]["question"]] = [inputValues[i]["items"], []]
         if len(inputValues[i]) > 2:
+            data["Représentation choix : " + inputValues[i]["question"]].append(inputValues[i]["horizontal"])
             data["Représentation choix : " + inputValues[i]["question"]].append(inputValues[i]["horizontal"])
 
     with get_session(table_class=CheckboxResponse, base=Base) as session:
