@@ -114,7 +114,7 @@ if user__role =="teacher" and number_questions != 0:
             data[question][1] += list(map(str, items))
             line_csv += [question] + [1 if e in items else 0 for e in inputValues[q]["items"]]
         answers_csv += ','.join(map(str, line_csv)) + '\\n'
-
+log(data)
 checkBoxsI = list(enumerate(checkBoxs))
 globals()["data"] = data
 globals()["answers_csv"] = answers_csv
@@ -123,7 +123,6 @@ globals()["answers_csv"] = answers_csv
 # Bloc html définissant le bloc utilisateur permettant de remplir des données pour les stats
 # C'est la partie jouable de l'exercice
 formstudent==#|html|
-{{data}}
 {% if False and HAS_ANSWERED != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
 {% else %}
