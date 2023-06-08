@@ -89,7 +89,7 @@ for i, key in enumerate(inputValues):
 if user__role =="teacher" and number_questions != 0:
     for i in inputValues:           
         labels = get_combinations(inputValues[i]["items"]) if all_possibilities != 'False' else []
-        data[inputValues[i]["question"]] = [labels, []]
+        data["Représentation choix : " + inputValues[i]["question"]] = [labels, []]
         if len(inputValues[i]) > 2:
             data[inputValues[i]["question"]].append(inputValues[i]["horizontal"])
 
