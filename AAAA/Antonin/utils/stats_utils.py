@@ -81,7 +81,7 @@ class CsvStringBuilder():
         self.__is_closed = False
 
     def addLine(self, items : list):
-        if __is_closed:
+        if self.__is_closed:
             raise Exception("CsvStringBuilder has been closed and can not be added")
         self.writer.writerow(items)
         return self
