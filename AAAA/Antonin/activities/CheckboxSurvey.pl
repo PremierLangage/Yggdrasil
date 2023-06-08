@@ -121,7 +121,7 @@ if user__role =="teacher" and number_questions != 0:
         answers_csv.addLine(line_csv)
 checkBoxsI = list(enumerate(checkBoxs))
 globals()["data"] = data
-globals()["answers_csv"] = answers_csv
+globals()["answers_csv"] = answers_csv.closeAndGetString()
 ==
 
 # Bloc html définissant le bloc utilisateur permettant de remplir des données pour les stats
