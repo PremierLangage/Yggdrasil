@@ -63,6 +63,8 @@ questions_name = [inputValues[i]["question"] for i in questions]
 number_questions = len(questions)
 
 data = {}
+header = ["username", "firstname", "lastname", "email"] + questions
+
 answers_csv = f"username,firsname,lastname,email,{','.join(questions)}\\n"
 
 radio = []
