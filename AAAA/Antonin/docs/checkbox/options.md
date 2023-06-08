@@ -38,7 +38,7 @@
 
     `==`
 
-    `graph_horizontal_test = 1`
+    `graph_combinations_test = 1`
 
 [Options stats.pl](https://pl-preprod.u-pem.fr/filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/stats.pl)
 
