@@ -87,7 +87,7 @@ for key in inputValues:
     header.append(inputValues[key]['question'])
     header += inputValues[key]['items']
 answers_csv = CsvStringBuilder(header)
-answers_csv = f"username,firstname,lastname,email,{','.join([','.join([inputValues[key]['question']] + inputValues[key]['items']) for key in inputValues])}\\n"
+#answers_csv = f"username,firstname,lastname,email,{','.join([','.join([inputValues[key]['question']] + inputValues[key]['items']) for key in inputValues])}\\n"
 
 checkBoxs = []
 for i, key in enumerate(inputValues):
@@ -118,7 +118,7 @@ if user__role =="teacher" and number_questions != 0:
                 data["Représentation choix : " + question][1].append(getValuesAsString(items))
             data[question][1] += list(map(str, items))
             line_csv += [question] + [1 if e in items else 0 for e in inputValues[q]["items"]]
-        answers_csv += ','.join(map(str, line_csv)) + '\\n'
+        answers_csv.addLine(line_csv)
 checkBoxsI = list(enumerate(checkBoxs))
 globals()["data"] = data
 globals()["answers_csv"] = answers_csv
