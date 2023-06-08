@@ -29,4 +29,4 @@ items_1==
 graph_horizontal_1 = 1
 
 #graph_combinations_1 = 1
-# pour afficher l'ancien affichage de combinaisons
+#pour afficher l'ancien affichage de combinaison
