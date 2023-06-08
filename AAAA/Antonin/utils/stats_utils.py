@@ -71,7 +71,7 @@ class Stat():
 import csv, io
 
 class CsvStringBuilder():
-    def __init__(self, labelsItems):
+    def __init__(self, labelsItems : list):
         # Créez un objet StringIO
         output = io.StringIO()
         # Créez un objet writer pour écrire dans l'objet StringIO
