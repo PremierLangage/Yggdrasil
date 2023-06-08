@@ -75,7 +75,7 @@ class CsvStringBuilder():
         # Créez un objet StringIO
         self.output = io.StringIO()
         # Créez un objet writer pour écrire dans l'objet StringIO
-        self.writer = csv.writer(self.output)
+        self.writer = csv.writer(self.output, lineterminator='\n')
         self.writer.writerow(labelsItems)
         self.__result_str = None
         self.__is_closed = False
