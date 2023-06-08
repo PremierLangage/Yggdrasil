@@ -74,7 +74,6 @@ class CsvStringBuilder():
         self.data = []
         # Créez un objet writer pour écrire dans l'objet StringIO
         self.data.append(formatLine(labelsItems))
-        self.__result_str = None
         self.__is_closed = False
 
     def addLine(self, items : list):
