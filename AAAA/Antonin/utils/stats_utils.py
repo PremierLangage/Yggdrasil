@@ -75,8 +75,8 @@ class CsvStringBuilder():
         # Créez un objet StringIO
         self.output = io.StringIO()
         # Créez un objet writer pour écrire dans l'objet StringIO
-        self.writer = csv.writer(output)
-        self.writer.writerow(labelsItems)
+        self.writer = csv.writer(self.output)
+        self.writer.writerow(list(map(str, labelsItems)))
         self.__result_str = None
 
     def addLine(self, items : list):
@@ -87,6 +87,6 @@ class CsvStringBuilder():
     
     def closeAndGetString(self):
         if self.result_str == None:
-            self.result_str = output.getvalue()
+            self.result_str = self.output.getvalue()
             self.output.close()
         return self.result_str
