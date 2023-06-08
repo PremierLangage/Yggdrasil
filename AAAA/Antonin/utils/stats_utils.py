@@ -75,12 +75,9 @@ class CsvStringBuilder():
         # Créez un objet writer pour écrire dans l'objet StringIO
         self.data.append(formatLine(labelsItems))
         self.__result_str = None
-        self.__is_closed = False
 
     def addLine(self, items : list):
-        if self.__is_closed:
-            raise Exception("CsvStringBuilder has been closed and can not be added")
-        self.writer.writerow(items)
+        self.data.append(formatLine(labelsItems))
         return self
     
     def closeAndGetString(self):
