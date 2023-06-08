@@ -89,6 +89,7 @@ for key in inputValues:
 
 answers_csv = CsvStringBuilder(header)
 #answers_csv = f"username,firstname,lastname,email,{','.join([','.join([inputValues[key]['question']] + inputValues[key]['items']) for key in inputValues])}\\n"
+
 checkBoxs = []
 for i, key in enumerate(inputValues):
     tmp = CheckboxGroup(cid=f"checkbox_{questions[i]}")
