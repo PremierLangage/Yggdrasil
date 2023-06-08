@@ -63,7 +63,7 @@ questions_name = [inputValues[i]["question"] for i in questions]
 number_questions = len(questions)
 
 data = {}
-answers_csv = CsvStringBuilder(["username", "firstname", "lastname", "email"] + questions)
+answers_csv = CsvStringBuilder(["username", "firstname", "lastname", "email", "grade"] + questions)
 
 radio = []
 for i, key in enumerate(inputValues):    
