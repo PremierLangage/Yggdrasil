@@ -87,4 +87,4 @@ class CsvStringBuilder():
         return self.__str()
 
     def formatLine(self, items):
-        return ','.join(list(map(lambda x : f"'{x}'", items)))
+        return ','.join(list(map(lambda x : f"'{x}'" if type(x) not in [int, float] else f'{x}', items)))
