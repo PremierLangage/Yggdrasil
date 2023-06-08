@@ -94,10 +94,12 @@ for i, key in enumerate(inputValues):
 if user__role =="teacher" and number_questions != 0:
     for i in inputValues:           
         labels = get_combinations(inputValues[i]["items"]) if all_possibilities != 'False' else []
-        if inputValues[i].get("combinations"): data["Représentation choix : " + inputValues[i]["question"]] = [labels, []]
+        if inputValues[i].get("combinations"): 
+            data["Représentation choix : " + inputValues[i]["question"]] = [labels, []]
         data[inputValues[i]["question"]] = [inputValues[i]["items"], []]
         if len(inputValues[i]) > 2:
-            if inputValues[i].get("combinations"): data["Représentation choix : " + inputValues[i]["question"]].append(inputValues[i]["horizontal"])
+            if inputValues[i].get("combinations"): 
+                data["Représentation choix : " + inputValues[i]["question"]].append(inputValues[i]["horizontal"])
             data[inputValues[i]["question"]].append(inputValues[i]["horizontal"])
 
     with get_session(table_class=CheckboxResponse, base=Base) as session:
@@ -107,7 +109,8 @@ if user__role =="teacher" and number_questions != 0:
         line_csv = [answer.username,answer.firstname,answer.lastname,answer.email]
         for q, i in json.loads(str(answer.values)).items():
             question, items = i
-            if inputValues[i].get("combinations"): data["Représentation choix : " + question][1].append(getValuesAsString(items))
+            if inputValues[i].get("combinations"): 
+                data["Représentation choix : " + question][1].append(getValuesAsString(items))
             data[question][1] += list(map(str, items))
             line_csv += [question] + [1 if e in items else 0 for e in inputValues[q]["items"]]
         answers_csv += ','.join(map(str, line_csv)) + '\\n'
