@@ -90,3 +90,6 @@ class CsvStringBuilder():
             self.result_str = self.output.getvalue()
             self.output.close()
         return self.result_str
+
+    def formatLine(self, items):
+        return ''
