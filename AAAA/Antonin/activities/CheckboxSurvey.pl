@@ -82,7 +82,11 @@ questions = list(inputValues.keys())
 questions_name = [inputValues[i]["question"] for i in questions]
 number_questions = len(questions)
 data = {}
-answers_csv = CsvStringBuilder()
+header = ["username", "firstname", "lastname", "email"]
+for key in inputValues:
+    header.append(inputValues[key]['question'])
+    header += inputValues[key]['items']
+answers_csv = CsvStringBuilder(header)
 answers_csv = f"username,firstname,lastname,email,{','.join([','.join([inputValues[key]['question']] + inputValues[key]['items']) for key in inputValues])}\\n"
 
 checkBoxs = []
