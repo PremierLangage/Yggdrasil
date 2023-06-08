@@ -73,12 +73,18 @@ import csv, io
 class CsvStringBuilder():
     def __init__(self, labelsItems : list):
         # Créez un objet StringIO
-        output = io.StringIO()
+        self.output = io.StringIO()
         # Créez un objet writer pour écrire dans l'objet StringIO
-        writer = csv.writer(output)
-        writer.writerow(labelsItems)
+        self.writer = csv.writer(output)
+        self.writer.writerow(labelsItems)
+        self.__result_str = None
+
     def addLine(self, items : list) -> CsvStringBuilder:
         writer.writerow(items)
         return self
     
     def getString(self):
+        if self.result_str == None:
+            self.result_str = output.getvalue()
+            output.close()
+        return self.result_str
