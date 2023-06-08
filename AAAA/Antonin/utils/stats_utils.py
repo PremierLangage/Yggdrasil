@@ -73,11 +73,11 @@ class CsvStringBuilder():
         # Créez un objet StringIO
         self.data = []
         # Créez un objet writer pour écrire dans l'objet StringIO
-        self.data.append(formatLine(labelsItems))
+        self.data.addLine(labelsItems)
         self.__result_str = None
 
     def addLine(self, items : list):
-        self.data.append(formatLine(labelsItems))
+        self.data.append(self.formatLine(labelsItems))
         return self
     
     def __str__(self):
