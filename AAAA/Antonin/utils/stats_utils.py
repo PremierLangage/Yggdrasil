@@ -76,3 +76,6 @@ class CsvStringBuilder():
         output = io.StringIO()
         # Créez un objet writer pour écrire dans l'objet StringIO
         writer = csv.writer(output)
+
+    def addLine(self, items : list) -> CsvStringBuilder:
+        writer.writerow(items)
