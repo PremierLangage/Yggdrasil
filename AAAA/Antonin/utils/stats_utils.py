@@ -71,10 +71,9 @@ class Stat():
 class CsvStringBuilder():
     def __init__(self, labelsItems : list):
         # Créez un objet StringIO
-        self.data = ""
+        self.data = []
         # Créez un objet writer pour écrire dans l'objet StringIO
-        self.writer = csv.writer(self.output, lineterminator='\n')
-        self.writer.writerow(labelsItems)
+        self.data.append(formatLine(labelsItems))
         self.__result_str = None
         self.__is_closed = False
 
