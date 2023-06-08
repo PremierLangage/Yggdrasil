@@ -81,10 +81,10 @@ class CsvStringBuilder():
         return self
     
     def __str__(self):
-        return '\n'.join(self.data)
+        return '\\n'.join(self.data)
 
     def ___repr__(self):
-        return '\n'.join(self.data)
+        return self.__str()
 
     def formatLine(self, items):
         return ','.join(list(map(lambda x : f"'{x}'", items)))
