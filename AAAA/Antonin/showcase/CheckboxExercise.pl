@@ -23,8 +23,6 @@ Mediocre
 La couleur bleu
 ==
 
-graph_combinations_1 = 1
-
 graph_horizontal_1 = 1
 
 question_2 = Et que pensez-vous des gens qui ne finissent pas leurs ...
