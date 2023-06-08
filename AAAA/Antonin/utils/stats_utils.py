@@ -81,11 +81,7 @@ class CsvStringBuilder():
         return self
     
     def closeAndGetString(self):
-        if not self.__is_closed:
-            self.__is_closed = True
-            self.result_str = self.output.getvalue()
-            self.output.close()
-        return self.result_str
+        return '\n'.join(self.data)
 
     def formatLine(self, items):
         return ','.join(list(map(lambda x : f'"{x}"', items)))
