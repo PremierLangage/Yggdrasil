@@ -73,7 +73,7 @@ for _title in inputValues:
     if _title in horizontales_data:
         inputValues[_title]["horizontal"] = horizontales_data[_title]
 # Processing combinations graph data
-horizontales_data = {k[len("graph_horizontal_"):] : v for k, v in [(k, v) for k, v in globals().items() if k.startswith("graph_horizontal_")]}
+combinations_data = {k[len("graph_combinations_"):] : v for k, v in [(k, v) for k, v in globals().items() if k.startswith("graph_horizontal_")]}
 for _title in inputValues:
     if _title in horizontales_data:
         inputValues[_title]["horizontal"] = horizontales_data[_title]
