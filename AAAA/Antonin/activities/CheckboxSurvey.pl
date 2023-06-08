@@ -82,7 +82,7 @@ questions = list(inputValues.keys())
 questions_name = [inputValues[i]["question"] for i in questions]
 number_questions = len(questions)
 data = {}
-header = ["username", "firstname", "lastname", "email"]
+header = ["username", "firstname", "lastname", "email", "grade"]
 for key in inputValues:
     header.append(inputValues[key]['question'])
     header += inputValues[key]['items']
