@@ -77,7 +77,7 @@ class CsvStringBuilder():
         self.__result_str = None
 
     def addLine(self, items : list):
-        self.data.append(self.formatLine(labelsItems))
+        self.data.append(self.formatLine(items))
         return self
     
     def __str__(self):
