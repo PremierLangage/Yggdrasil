@@ -78,6 +78,7 @@ class CsvStringBuilder():
         self.writer = csv.writer(self.output)
         self.writer.writerow(list(map(str, labelsItems)))
         self.__result_str = None
+        self.__is_closed = False
 
     def addLine(self, items : list):
         if self.__result_str is None:
