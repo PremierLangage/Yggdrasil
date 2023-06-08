@@ -80,6 +80,8 @@ class CsvStringBuilder():
         self.__result_str = None
 
     def addLine(self, items : list) -> CsvStringBuilder:
+        if self.__result_str is None:
+            raise Exception("CsvStringBuilder has been closed and can not be added")
         writer.writerow(items)
         return self
     
