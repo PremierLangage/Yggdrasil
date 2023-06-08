@@ -22,6 +22,7 @@ Moyennement satisfaisant
 Mediocre
 La couleur bleu
 ==
+graph_combinations_1 = 1
 
 graph_horizontal_1 = 1
 
