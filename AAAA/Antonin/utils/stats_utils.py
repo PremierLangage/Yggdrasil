@@ -68,8 +68,6 @@ class Stat():
         return result
 
 
-import csv, io
-
 class CsvStringBuilder():
     def __init__(self, labelsItems : list):
         # Créez un objet StringIO
