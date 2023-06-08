@@ -80,7 +80,10 @@ class CsvStringBuilder():
         self.data.append(formatLine(labelsItems))
         return self
     
-    def getString(self):
+    def __str__(self):
+        return '\n'.join(self.data)
+
+    def ___repr__(self):
         return '\n'.join(self.data)
 
     def formatLine(self, items):
