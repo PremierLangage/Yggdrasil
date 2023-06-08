@@ -115,7 +115,6 @@ if user__role =="teacher" and number_questions != 0:
             line_csv += [question] + [1 if e in items else 0 for e in inputValues[q]["items"]]
         answers_csv += ','.join(map(str, line_csv)) + '\\n'
 utils.log(data)
-utils.log_print()
 checkBoxsI = list(enumerate(checkBoxs))
 globals()["data"] = data
 globals()["answers_csv"] = answers_csv
