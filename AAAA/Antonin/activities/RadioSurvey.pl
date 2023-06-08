@@ -90,7 +90,7 @@ if user__role == "teacher" and number_questions != 0:
             line_csv.append(q)
         answers_csv.addLine(line_csv)
 globals()["data"] = data
-globals()["answers_csv"] = answers_csv
+globals()["answers_csv"] = str(answers_csv)
 ==
 
 # Bloc html définissant le bloc utilisateur permettant de remplir des données pour les stats
