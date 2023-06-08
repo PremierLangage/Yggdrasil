@@ -79,14 +79,14 @@ class CsvStringBuilder():
         self.writer.writerow(labelsItems)
         self.__result_str = None
 
-    def addLine(self, items : list) -> CsvStringBuilder:
+    def addLine(self, items : list):
         if self.__result_str is None:
             raise Exception("CsvStringBuilder has been closed and can not be added")
-        writer.writerow(items)
+        self.writer.writerow(items)
         return self
     
     def closeAndGetString(self):
         if self.result_str == None:
             self.result_str = output.getvalue()
-            output.close()
+            self.output.close()
         return self.result_str
