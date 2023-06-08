@@ -85,7 +85,7 @@ class CsvStringBuilder():
         writer.writerow(items)
         return self
     
-    def getString(self):
+    def closeAndGetString(self):
         if self.result_str == None:
             self.result_str = output.getvalue()
             output.close()
