@@ -83,7 +83,7 @@ if user__role == "teacher" and number_questions != 0:
     with get_session(table_class=RadioResponse, base=Base) as session:
         answers = session.query(RadioResponse).all()
     for answer in answers:
-        line_csv = [answer.username,answer.firstname,answer.lastname,answer.email]
+        line_csv = [answer.username,answer.firstname,answer.lastname,answer.email,answer.grade]
         for i, q in json.loads(str(answer.value)).items():
             data[inputValues[i]["question"]][1].append(q)
             line_csv.append(q)
