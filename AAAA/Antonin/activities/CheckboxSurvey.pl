@@ -87,7 +87,7 @@ for key in inputValues:
     header.append(inputValues[key]['question'])
     header += inputValues[key]['items']
 answers_csv = CsvStringBuilder(header)
-answers_csv = f"username,firstname,lastname,email,{','.join([','.join([inputValues[key]['question']] + inputValues[key]['items']) for key in inputValues])}\\n"
+#answers_csv = f"username,firstname,lastname,email,{','.join([','.join([inputValues[key]['question']] + inputValues[key]['items']) for key in inputValues])}\\n"
 
 checkBoxs = []
 for i, key in enumerate(inputValues):
