@@ -24,6 +24,22 @@
 
     `graph_horizontal_test = 1`
 
+- **`graph_combinations_X`** : `Int`   -   Défaut: `0`
+
+    - Les données de la question **`X`** doivent-elles êtres affichées sous format de combinaisons dans un autre graphe en plus de l'original?
+
+    Exemple:
+
+    `question_test= ma question`
+
+    `items_test==`
+
+    `unique choix`
+
+    `==`
+
+    `graph_horizontal_test = 1`
+
 [Options stats.pl](https://pl-preprod.u-pem.fr/filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/stats.pl)
 
 -  **`include_stats_score`** : `Boolean`   -   Défaut: `False`
