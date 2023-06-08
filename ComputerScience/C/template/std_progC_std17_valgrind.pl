@@ -57,5 +57,5 @@ if "astuces" in globals():
 else:
     nb_hints = 0
 
-text+=" {{ editor|component }} "
+#text+=" {{ editor|component }} "
 ==
