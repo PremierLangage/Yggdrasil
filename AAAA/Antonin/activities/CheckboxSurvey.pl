@@ -111,8 +111,8 @@ if user__role =="teacher" and number_questions != 0:
             question, items = i
             if inputValues[i].get("combinations"): 
                 items2 = items.copy()
-                data["Représentation choix : " + question][1].append(getValuesAsString(items))
-            #data[question][1] += list(map(str, items))
+                data["Représentation choix : " + question][1].append(getValuesAsString(items2))
+            data[question][1] += list(map(str, items))
             line_csv += [question] + [1 if e in items else 0 for e in inputValues[q]["items"]]
         answers_csv += ','.join(map(str, line_csv)) + '\\n'
 
