@@ -64,7 +64,6 @@ number_questions = len(questions)
 
 data = {}
 answers_csv = CsvStringBuilder(["username", "firstname", "lastname", "email"] + questions)
-#answers_csv = f"username,firsname,lastname,email,{','.join(questions)}\\n"
 
 radio = []
 for i, key in enumerate(inputValues):    
