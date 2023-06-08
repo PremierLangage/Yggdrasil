@@ -103,7 +103,7 @@ if user__role =="teacher" and number_questions != 0:
         for q, i in json.loads(str(answer.values)).items():
             question, items = i
             data["Représentation choix : " + question][1].append(getValuesAsString(items))
-            data[question][1].append(getValuesAsString(items))
+            data[question][1] + = list(map(str, items))
             line_csv += [question] + [1 if e in items else 0 for e in inputValues[q]["items"]]
         answers_csv += ','.join(map(str, line_csv)) + '\\n'
 
