@@ -92,4 +92,4 @@ class CsvStringBuilder():
         return self.result_str
 
     def formatLine(self, items):
-        return ','.join(items)
+        return ','.join(f'"{items}"')
