@@ -91,7 +91,7 @@ if user__role =="teacher" and number_questions != 0:
         labels = get_combinations(inputValues[i]["items"]) if all_possibilities != 'False' else []
         data["Représentation choix : " + inputValues[i]["question"]] = [labels, []]
         if len(inputValues[i]) > 2:
-            data[inputValues[i]["question"]].append(inputValues[i]["horizontal"])
+            data["Représentation choix : " + inputValues[i]["question"]].append(inputValues[i]["horizontal"])
 
     with get_session(table_class=CheckboxResponse, base=Base) as session:
         answers = session.query(CheckboxResponse).all()
@@ -100,7 +100,7 @@ if user__role =="teacher" and number_questions != 0:
         line_csv = [answer.username,answer.firstname,answer.lastname,answer.email]
         for q, i in json.loads(str(answer.values)).items():
             question, items = i
-            data[question][1].append(getValuesAsString(items))
+            data[["Représentation choix : "  + question][1].append(getValuesAsString(items))
             line_csv += [question] + [1 if e in items else 0 for e in inputValues[q]["items"]]
         answers_csv += ','.join(map(str, line_csv)) + '\\n'
 
