@@ -172,7 +172,6 @@ form==#|html|
     }
 </style>
     <div class="graph">
-        <h4><u>Graphiques:</u></h4>
         {{graphContent|safe}}
     </div>
     <br>
