@@ -18,7 +18,7 @@ author = Thomas Saillard & Antonin Jean
 title= Statistic Activity
 text ==#|markdown|
 # Documentation:
-<div style="display: flex;">
+<div style="display: flex; white-space: pre-line;">
 
 <div>
 
