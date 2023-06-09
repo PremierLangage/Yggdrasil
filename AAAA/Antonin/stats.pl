@@ -21,7 +21,9 @@ text ==#|markdown|
 <div style="display: flex;">
 
 <div>
+
 {{summary}}
+
 </div>
 <div>
 TEST
