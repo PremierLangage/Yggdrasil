@@ -16,7 +16,7 @@ Il contient l'affichage des réponses par question ainsi que l'affichage des deu
 question_1 = Que pensez vous de cet exercice?
 
 items_1==
-Très satisfaisant
+Très' satisfaisant
 Satisfaisant
 Moyennement satisfaisant
 Mediocre
