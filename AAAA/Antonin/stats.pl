@@ -18,8 +18,15 @@ author = Thomas Saillard & Antonin Jean
 title= Statistic Activity
 text ==#|markdown|
 # Documentation:
+<div style="display: flex;">
 
+<div>
 {{summary}}
+</div>
+<div>
+TEST
+</div>
+</div>
 
 ---
 
