@@ -89,5 +89,5 @@ class CsvStringBuilder():
             result = __f.getvalue()
         return result
 
-    def ___repr__(self):
+    def __repr__(self):
         return self.__str()
