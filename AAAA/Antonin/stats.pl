@@ -18,12 +18,10 @@ author = Thomas Saillard & Antonin Jean
 title= Statistic Activity
 text ==#|markdown|
 # Documentation:
-<div style="display: flex; white-space: pre-line;">
+<div style="display: flex;">
 
-<div>
-
+<div style="white-space: pre-line;">
 {{summary}}
-
 </div>
 <div>
 TEST
