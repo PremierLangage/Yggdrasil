@@ -100,7 +100,7 @@ class CsvStringBuilder1():
         self.__result_str = None
 
     def addLine(self, items : list):
-        self.data.append(self.formatLine(items))
+        self.data.append(items)
         return self
     
     def __str__(self):
@@ -110,6 +110,6 @@ class CsvStringBuilder1():
                 writer.writerow(line)
             result = __f.getvalue()
         return result
-        
+
     def ___repr__(self):
         return self.__str()
