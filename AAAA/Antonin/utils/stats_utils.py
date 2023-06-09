@@ -88,3 +88,28 @@ class CsvStringBuilder():
 
     def formatLine(self, items):
         return ','.join(list(map(lambda x : f"'{x}'" if type(x) not in [int, float] else f'{x}', items)))
+
+import io, csv
+
+class CsvStringBuilder1():
+    def __init__(self, labelsItems : list):
+        # Créez un objet StringIO
+        self.data = []
+        # Créez un objet writer pour écrire dans l'objet StringIO
+        self.addLine(labelsItems)
+        self.__result_str = None
+
+    def addLine(self, items : list):
+        self.data.append(self.formatLine(items))
+        return self
+    
+    def __str__(self):
+        with io.StringIO() as __f:
+            writer = csv.writer(__f)
+            for line in self.data:
+                writer.writerow(line)
+            result = __f.getvalue()
+        return result
+        
+    def ___repr__(self):
+        return self.__str()
