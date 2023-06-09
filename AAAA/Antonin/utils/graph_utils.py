@@ -50,7 +50,7 @@ def generate_color_palette(n, alpha, _seed):
 
     # Convertir les couleurs en format rgba(r, g, b, a)
     palette = [f"rgba({int(r * 255)}, {int(g * 255)}, {int(b * 255)}, {alpha})" for r, g, b in palette]
-    return "#98F79F,#80EFA9,#6BE7B3,#59DDBB,#4FD4C2,#4CC9C6,#50BEC8,#5AB3C7,#66A7C4,#719BBD,#7C8FB5,#8483AA,#8A779D,#8E6C8F,#8F6180,#8D5871,#894F62".split(',')
+    return palette
 
 def generer_histogramme(
         votes : list, 
