@@ -17,49 +17,9 @@ user_manual =@ docs/stats/user_manual.md
 author = Thomas Saillard & Antonin Jean
 title= Statistic Activity
 text ==#|markdown|
-<style>
-.ascii-animation { 
-  font-family: monospace;
-  width: 9ch;
-  margin: 0;
-  padding: 0;
-  white-space: pre;
-  overflow: hidden;
-  position: relative;
-}
-.ascii-animation-inner {
-  width: 162ch;
-  animation: pew-pew 10s steps(18, end) infinite;
-  position: relative;
-}
-
-@keyframes pew-pew {
-  0% {
-     left: 0;
-  }
-  100% {
-     left: -162ch;
-  }
-}
-</style>
-
 # Documentation:
-<div style="display: flex;">
-<div style="white-space: pre-line;">
+
 {{summary}}
-</div>
-<div style="display:flex; flex-direction:column;align-content: space-between;">
-    <i> Voici un chat fatigué pour vous tenir compagnie </i>
-    <div class="ascii-animation">
-        <div class="ascii-animation-inner">
-\     /\   /   /\ \     ^^   /   ^^ \     ^^   /   ^^ \     ^^   /   ^^ \     /\   /   /\ \     /\   /   /\ \     /\   /   /\ \     /\   /   /\ \     /\   /   /\ 
- )   ( ') (   ( ') )   ('') (   ('') )   (--) (   (--) )   (--) (   ('') )   ( ') (   ( ') )   ( -) (   ( -) )   ( -) (   ( -) )   ( -) (   ( -) )   ( -) (   ( -)
- (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  )  (  /  )   ) /  ) 
-  \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)|   \(__)|   ((__)| 
-        </div>
-    </div>
-</div>
-</div>
 
 ---
 
