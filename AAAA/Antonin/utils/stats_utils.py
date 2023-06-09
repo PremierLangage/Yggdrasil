@@ -91,7 +91,7 @@ class CsvStringBuilder():
 
 import io, csv
 
-class CsvStringBuilder1():
+class CsvStringBuilder():
     def __init__(self, labelsItems : list):
         # Créez un objet StringIO
         self.data = []
