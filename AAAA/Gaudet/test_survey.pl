@@ -13,7 +13,7 @@ Parfum de glace favori?
 ==
 
 items==
-Vanilla
+Vanille
 Chocolat
 Pistache
 ==
@@ -41,7 +41,7 @@ score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
 
 vos_choix = "<br /><br />"
-vos_choix += "<b>Choix :</b> " + str(group.items[group1.selection]['content']) + "<br />"
+vos_choix += "<b>Choix :</b> " + str(group.items[group.selection]['content']) + "<br />"
 
 feedback += vos_choix
 
