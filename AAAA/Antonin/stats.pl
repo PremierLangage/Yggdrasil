@@ -48,7 +48,7 @@ text ==#|markdown|
 <div style="white-space: pre-line;">
 {{summary}}
 </div>
-<div style="display:flex; flex-direction:column;align-content: space-between">
+<div style="display:flex; flex-direction:column;align-content: space-between;">
     <i> Voici un chat fatigué pour vous tenir compagnie </i>
     <div class="ascii-animation">
         <div class="ascii-animation-inner">
