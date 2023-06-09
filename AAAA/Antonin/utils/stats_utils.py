@@ -83,7 +83,7 @@ class CsvStringBuilder():
     
     def __str__(self):
         with io.StringIO() as __f:
-            writer = csv.writer(__f,  lineterminator="\\\\n",  quotechar="'", quoting=csv.QUOTE_ALL)
+            writer = csv.writer(__f,  lineterminator="\\\\n",  quotechar="'")
             for line in self.data:
                 writer.writerow(line)
             result = __f.getvalue()
