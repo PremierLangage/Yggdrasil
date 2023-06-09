@@ -10,6 +10,8 @@ Pour ce faire vous devez définir les variables globales suivantes:
 
         - **values :** list : valeurs à afficher dans l'histogramme
 
+        - _<Optional>_ **horizontal_display**: Object : spécifie si le graphe doit être affiché en horizontal
+
     Exemple: 
     
     - `data` %  {"test1": [[0,1,2,3], [1,2,2,3,3,3]], "test":  [["rien", "coucou", "test", "a"], ["coucou", "test", "a", "a"], "1"]}
