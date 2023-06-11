@@ -8,6 +8,7 @@ Ecfrire une fonction {name} qui prend un parametre une liste d'entier et qui re
 ==
 
 before==
+import random
 
 name = random.choice(["f","gg","nip","pop","trap","fu","bar","fubar"])
 
