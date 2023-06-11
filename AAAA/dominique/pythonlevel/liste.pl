@@ -3,11 +3,13 @@ title= Manipulation de liste
 
 text==
 
-Ecfrire une fonction qui prend un parametre une liste d'entier et qui retourne une liste composée des entiers {prop}.
+Ecfrire une fonction {name} qui prend un parametre une liste d'entier et qui retourne une liste composée des entiers {prop}.
 
 ==
 
 before==
+
+name = random.choice(["f","gg","nip","pop","trap","fu","bar","fubar"])
 
 a=random.randint(1,4)
 if a==1:
@@ -31,3 +33,4 @@ elif a== 6:
 
 `==
 
+form=
