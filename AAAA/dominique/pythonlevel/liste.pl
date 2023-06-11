@@ -36,5 +36,5 @@ elif a== 6:
 form=
 
 grader=
-builder= /builder/before.py
+@/builder/before.py [builder.py]
 
