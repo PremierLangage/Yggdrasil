@@ -38,4 +38,4 @@ form=
 grader=
 @/builder/before.py [builder.py]
 
-@ lib/utils/sandboxio.py
+@ /lib/utils/sandboxio.py
