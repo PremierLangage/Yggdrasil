@@ -3,8 +3,8 @@ title= Manipulation de liste
 
 text==
 
-Ecfrire une fonction {{name}} qui prend un parametre une liste d'entier 
-et qui retourne une liste composée des entiers {{prop}}.
+Ecfrire une fonction **{{name}}** qui prend un parametre une liste d'entier 
+et qui retourne une liste composée des entiers **{{prop}}**.
 
 ==
 
