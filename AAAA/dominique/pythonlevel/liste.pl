@@ -31,6 +31,6 @@ elif a== 6:
     prop = " positifs ou nuls"
     pred= lambda x: x<= 0 
 
-`==
+==
 
 form=
