@@ -23,7 +23,6 @@ reveal.content = f"""
 ## Alternance PLaTon
 #### Présentation de Soutenance
 #### Antonin JEAN, Master 1  IGM 2022-23
-<img data-src="{igm_logo_igm}" width="100"/>
   </textarea>
 </section>
 
