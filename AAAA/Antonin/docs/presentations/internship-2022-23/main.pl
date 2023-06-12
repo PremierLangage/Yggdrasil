@@ -5,6 +5,8 @@ builder =@ /builder/before.py
 # Chargement des ressources
 igm_logo_igm =$ resources/logo_igm.png
 igm_logo_pl =$ resources/logo_pl.png
+igm_logo_platon =$ resources/logo_igm.png
+
 
 reveal =: RevealViewer
 slide =@ slides.md
