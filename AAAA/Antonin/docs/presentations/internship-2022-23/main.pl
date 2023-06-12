@@ -6,7 +6,7 @@ builder =@ /builder/before.py
 @ resources/logo_igm.png
 
 reveal =: RevealViewer
-slide =@ slides.md
+slide =$ slides.md
 
 title =  Présentation de Soutenance Alternance 2022-2023 Antonin JEAN
 
