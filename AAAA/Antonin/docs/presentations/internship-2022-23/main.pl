@@ -18,10 +18,12 @@ text=
 before==#|python|
 
 reveal.content = f"""
-<section>
+<section data-markdown>
+  <textarea data-template>
     <h1>Alternance PLaTon</h1>
     <h2>Présentation de Soutenance</h2>
     <h3>{igm_logo_platon}</h3>
+  </textarea>
 </section>
 """
 
