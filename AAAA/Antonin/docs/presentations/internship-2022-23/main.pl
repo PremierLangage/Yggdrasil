@@ -218,7 +218,7 @@ slides = f"""
 reveal.content = f"""
 <section data-markdown>
     <textarea data-template>
-        {slides}
+{slides}
     </textarea>
 </section>
 
