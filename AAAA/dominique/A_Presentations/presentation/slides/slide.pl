@@ -4,7 +4,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 reveal =: RevealViewer
-slide =@ slide.md
+slide =@ slides.md
 
 title = Présentation
 
