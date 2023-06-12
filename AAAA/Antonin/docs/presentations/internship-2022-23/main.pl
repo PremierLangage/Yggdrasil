@@ -20,12 +20,10 @@ before==#|python|
 reveal.content = f"""
 <section data-markdown>
     <textarea data-template>
-        <img data-src="{igm_logo_igm}">
+        {{slide}}
     </textarea>
 </section>
-<section>
-<img data-src="https://www.referenseo.com/wp-content/uploads/2019/03/image-attractive-960x540.jpg">
-</section>
+
 """
 
 ==
