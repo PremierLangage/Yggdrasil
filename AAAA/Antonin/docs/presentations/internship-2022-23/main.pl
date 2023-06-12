@@ -18,7 +18,7 @@ text=
 before==#|python|
 
 reveal.content = f"""
-<section data-markdown>
+<section data-markdown data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
   <textarea data-template>
 ## Alternance PLaTon
 #### Présentation de Soutenance
