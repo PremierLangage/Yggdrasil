@@ -2,6 +2,7 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+# Chargement des ressources
 reveal =: RevealViewer
 slide =@ slides.md
 
