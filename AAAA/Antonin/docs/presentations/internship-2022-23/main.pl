@@ -20,7 +20,8 @@ before==#|python|
 reveal.content = f"""
 <section>
     <h1>Alternance PLaTon</h1>
-    <h2> </h2>
+    <h2>Présentation de Soutenance</h2>
+    <h3>{igm_logo_platon}</h3>
 </section>
 
 <section>
