@@ -64,7 +64,7 @@
 
 </div>
 <div style="width: 33%;">
-    <img src="resources/logo_igm.png" />
+    <img src="Yggdrasil/AAAA/Antonin/docs/presentations/internship-2022-23/resources/logo_igm.png" />
 </div>
 </div>
 
