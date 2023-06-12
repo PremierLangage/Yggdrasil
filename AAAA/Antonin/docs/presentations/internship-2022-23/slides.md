@@ -28,9 +28,6 @@
 }
 </style>
 
-
----
-
 <center>
 
 # Alternance PLaTon
