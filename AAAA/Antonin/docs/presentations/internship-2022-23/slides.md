@@ -29,15 +29,15 @@
 </style>
 
 
-<div class="new-slide">New slide</div> ---
+---
+
 <center>
 
 # Alternance PLaTon
 ## Présentation de Soutenance
 ## Antonin JEAN, Master 1  IGM 2022-23
 
-</center>
-<div class="new-slide">New slide</div> ---
+</center>---
 
 # Déroulé de la présentation
 - Présentation de l'entreprise et du cadre
@@ -49,7 +49,7 @@
 - Présentation Avenir de PLaTon
 
 - Conclusion
-<div class="new-slide">New slide</div> ---
+---
 
 # Présentation de l'entreprise et du cadre
 
@@ -78,7 +78,7 @@
 <li>Clément Gaudet</li>
 </ul>
 
-<div class="new-slide">New slide</div> ---
+---
 
 <div class="pannel-between">
 <div>
@@ -103,7 +103,7 @@
 
 - Expériences utilisateurs mitigées
 
-<div class="new-slide">New slide</div> ---
+---
 
 
 <div class="pannel-between">
@@ -137,7 +137,7 @@
 </div>
 </div>
 
-<div class="new-slide">New slide</div> ---
+---
 
 <div class="pannel-between">
 <div>
@@ -168,7 +168,7 @@
 </div>
 </div>
 
-<div class="new-slide">New slide</div> ---
+---
 
 # Présentation des tâches réalisées
 
@@ -181,7 +181,7 @@
     - ### Introduction d'outils pour la travail d'équipe
 
 ### Au cours de mon alternance j'ai pu réaliser des tâches sur PL et PLaTon, avec une ligne directrice : _"réaliser une activité de correction par les paires"_
-<div class="new-slide">New slide</div> ---
+---
 <div class="pannel-between">
 <div>
 
@@ -203,7 +203,7 @@
 - ### Démo de la dernière version réalisée sur un serveur local
 - ### Retrospective sur la tâche
 
-<div class="new-slide">New slide</div> ---
+---
 <div class="pannel-between">
 <div>
 
@@ -224,4 +224,4 @@
 - ### Intégration PLaTon
 
 - ### Démo PL module de statistique
-<div class="new-slide">New slide</div> ---
+---
