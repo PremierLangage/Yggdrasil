@@ -28,11 +28,9 @@ Des solutions propriétaires existent.
 
 ### Notre objectif
 
-#### Un outil d'enseignement adapté !  
-
-#### Facile d'utilisation mais puissant !  
-
-#### Extensisble et partagé !  
+- Un outil d'enseignement adapté !  
+- Facile d'utilisation mais puissant !  
+- Extensisble et partagé !  
 
 ---
 
