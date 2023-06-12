@@ -19,7 +19,7 @@ before==#|python|
 
 reveal.content = f"""
 <section>
-    <h2>Image</h2>
+    <h1>Image</h1>
 </section>
 
 <section>
