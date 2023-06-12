@@ -29,12 +29,19 @@ reveal.content = f"""
 <section data-markdown data-background-gradient="radial-gradient(#283b95, #17b2c3)">
   <textarea data-template>
 # Déroulé de la présentation
+
 - Présentation de l'entreprise et du cadre
+
 - Présentation de PL / PLaTon
+
 - Présentation des tâches réalisées:
+
     - Composant Exercice sur le Front
+
     - Module de Statistique
+
     - Organisation de projet
+
 - Présentation Avenir de PLaTon
 
 - Conclusion
