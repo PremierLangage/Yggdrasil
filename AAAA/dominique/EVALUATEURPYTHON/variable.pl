@@ -42,7 +42,7 @@ constante= random.choice([ast.literal_eval(x) for x in ["66","'@'",'"space-Y"',"
 ==
 
 evaluator==
-eval(student)
+eval(editor.code)
 if name not in globals():
     feedback = f"Vous n'avez défini de variable {name} !"
     grade = 0
