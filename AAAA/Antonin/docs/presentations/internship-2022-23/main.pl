@@ -20,8 +20,7 @@ before==#|python|
 reveal.content = f"""
 <section data-markdown>
     <textarea data-template>
-        <source src="{igm_logo_igm}" type="image"/>
-        <p> image : {igm_logo_igm}</p>
+        <img data-src="{igm_logo_igm}">
     </textarea>
 </section>
 """
