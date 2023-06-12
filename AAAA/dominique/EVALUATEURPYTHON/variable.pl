@@ -34,8 +34,8 @@ globals()[nameX] = random.randint(5,1000)
 globals()[nameY] = random.randint(5,1000)
 globals()[nameZ]= globals()[nameX]+globals()[nameY]
 
-[ast.literal_eval(x) for x in ["66","'@'",'"space-Y"',"0","-1","33.55","foo","bar"]]
-const= random.choice()
+
+const= random.choice([ast.literal_eval(x) for x in ["66","'@'",'"space-Y"',"0","-1","33.55","foo","bar"]])
 
 
 
