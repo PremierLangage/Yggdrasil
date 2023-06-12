@@ -23,6 +23,9 @@ reveal.content = f"""
         <img data-src="{igm_logo_igm}">
     </textarea>
 </section>
+<section>
+<img data-src="{igm_logo_igm}">
+</section>
 """
 
 ==
