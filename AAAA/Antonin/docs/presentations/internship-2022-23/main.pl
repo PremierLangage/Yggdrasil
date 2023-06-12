@@ -21,10 +21,10 @@ reveal.content = f"""
 <section data-markdown>
   <textarea data-template>
 
-## Alternance PLaTon
-#### Présentation de Soutenance
-#### Antonin JEAN, Master 1  IGM 2022-23
-<img class="r-stretch" data-src="{igm_logo_platon}" />
+        ## Alternance PLaTon
+        #### Présentation de Soutenance
+        #### Antonin JEAN, Master 1  IGM 2022-23
+        <img class="r-stretch" data-src="{igm_logo_platon}" />
 
   </textarea>
 </section>
