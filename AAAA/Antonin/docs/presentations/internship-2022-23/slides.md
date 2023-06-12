@@ -64,7 +64,7 @@
 
 </div>
 <div style="width: 33%;">
-    <img src="logo_igm.png" />
+    <img src="{{igm_logo_igm}}" />
 </div>
 </div>
 
