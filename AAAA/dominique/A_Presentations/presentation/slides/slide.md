@@ -26,13 +26,13 @@ Des solutions propriétaires existent.
 
 ---
 
-#### Notre objectif
+### Notre objectif
 
-Un outil d'enseignement adapté !  
+#### Un outil d'enseignement adapté !  
 
-Facile d'utilisation mais puissant !  
+#### Facile d'utilisation mais puissant !  
 
-Extensisble et partagé !  
+#### Extensisble et partagé !  
 
 ---
 
