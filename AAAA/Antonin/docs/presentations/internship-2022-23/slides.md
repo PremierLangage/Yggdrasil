@@ -64,7 +64,7 @@
 
 </div>
 <div style="width: 33%;">
-    <img src="./resources/logo_igm.png" />
+    <img src="resources/logo_igm.png" />
 </div>
 </div>
 
