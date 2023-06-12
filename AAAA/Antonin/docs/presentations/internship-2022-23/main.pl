@@ -40,6 +40,37 @@ reveal.content = f"""
 - Conclusion
   </textarea>
 </section>
+
+<section data-markdown>
+  <textarea data-template>
+# Présentation de l'entreprise et du cadre
+
+## IGM : Institut Gaspard Monge
+
+
+<div class="pannel-around">
+<div> 
+
+
+- ### Institut d'électronique et d'informatique
+- ### Composante de l'Université Gustave Eiffel
+
+</div>
+<div style="width: 33%;">
+    <img data-src="{{igm_logo_igm}}" />
+</div>
+</div>
+
+## Equipe PLaTon
+
+<ul class="pannel-evenly">
+<li>Dominique Revuz</li>
+<li>Thomas Saillard</li>
+<li>Orhan Uyar</li>
+<li>Clément Gaudet</li>
+</ul>
+  </textarea>
+</section>
 """
 
 ==
