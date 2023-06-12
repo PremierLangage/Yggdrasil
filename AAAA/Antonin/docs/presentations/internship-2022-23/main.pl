@@ -26,6 +26,12 @@ reveal.content = f"""
 <img class="r-stretch" src="{igm_logo_platon}" />
   </textarea>
 </section>
+
+<section data-markdown>
+  <textarea data-template>
+    test
+  </textarea>
+</section>
 """
 
 ==
