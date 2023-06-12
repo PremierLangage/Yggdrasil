@@ -34,7 +34,8 @@
 ### Présentation de Soutenance
 ### Antonin JEAN, Master 1  IGM 2022-23
 
-</center>---
+</center>
+---
 
 # Déroulé de la présentation
 - Présentation de l'entreprise et du cadre
