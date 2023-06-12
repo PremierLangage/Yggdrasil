@@ -20,10 +20,12 @@ before==#|python|
 reveal.content = f"""
 <section data-markdown>
   <textarea data-template>
-    <h1>Alternance PLaTon</h1>
-    <h2>Présentation de Soutenance</h2>
-    <h3>{igm_logo_platon}</h3>
-    <img data-src="{igm_logo_platon}" />
+
+## Alternance PLaTon
+#### Présentation de Soutenance
+#### Antonin JEAN, Master 1  IGM 2022-23
+<img data-src="{igm_logo_platon}" />
+
   </textarea>
 </section>
 """
