@@ -114,7 +114,7 @@ form==#|html|
     align-items: center;
 }
 .align-left {
-    position: left !important;
+    text-align: left !important;
 }
 </style>
 
