@@ -17,14 +17,6 @@ text=
 
 before==#|python|
 
-reveal.content = f"""
-<section data-markdown>
-    <textarea data-template>
-{slides}
-    </textarea>
-</section>
-
-"""
 
 ==
 
