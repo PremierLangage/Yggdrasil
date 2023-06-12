@@ -19,14 +19,13 @@ reveal.content = f"""
     </textarea>
 </section>
 <section data-markdown>
-  <textarea data-template>
-    ```js [1-2|3|4]
-    let a = 1;
-    let b = 2;
-    let c = x => 1 + 2 + x;
-    c(3);
-    ```
-  </textarea>
+    <pre><code data-line-numbers data-ln-start-from="7">
+    <tr>
+    <td>Oranges</td>
+    <td>$2</td>
+    <td>18</td>
+    </tr>
+    </code></pre>
 </section>
 """
 
