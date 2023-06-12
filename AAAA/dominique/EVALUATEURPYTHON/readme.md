@@ -2,7 +2,10 @@
 
 Voici une liste d'exercices qui peuvent être utilisés pour évaluer le niveau d'un programmeur Python :
 
-1° **Expression**: ecrire une expression qui calcul le discriminant  $b^²-4ac$ d'un polynome $P(x) = ax² + bx + c$, 
+
+1° **variable** : définir une variable X qui contient la constante '576'. 
+
+1° **Expression**: ecrire une expression qui calcul le discriminant  $b^2-4ac$ d'un polynome $P(x) = ax² + bx + c$, 
 
 1° **Fonctions**: ecrire une fonction $P(a,b,c,x)$ qui calcul la valeur du polynome $P(x) = ax² + bx + c$ en $x$.
 
@@ -25,8 +28,7 @@ La fonction devrait renvoyer une nouvelle liste qui ne contient que les chaînes
 
 1° **Decorateurs** : Écrivez un décorateur qui enregistre le temps d'exécution d'une fonction.
 
-1° **Expressions régulières** : Écrivez une fonction qui utilise une expression régulière pour vérifier si une chaîne est une adresse e-mail valide.
-
+1° **Expressions régulières** : Écrivez une fonction qui utilise une expression régulière $import re$ pour vérifier si une chaîne est une adresse e-mail valide.
 
 1° **Manipulation de fichiers** : Écrivez une fonction qui lit un fichier texte et renvoie le nombre de mots qu'il contient.
 
