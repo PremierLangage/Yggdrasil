@@ -113,6 +113,9 @@ form==#|html|
     padding: 16px;
     align-items: center;
 }
+.align-left {
+    position: left !important;
+}
 </style>
 
 {{ reveal|component }}
