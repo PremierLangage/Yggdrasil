@@ -5,7 +5,7 @@ builder =@ /builder/before.py
 reveal =: RevealViewer
 slide =@ slides.md
 
-title = Présentation
+title =  Présentation de Soutenance Alternance 2022-2023 Antonin JEAN
 
 text= 
 
