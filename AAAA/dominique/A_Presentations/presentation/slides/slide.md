@@ -6,8 +6,7 @@
 
 ---
 
-#  Platform for Learning and Teaching Online
-
+####  Platform for Learning and Teaching Online
 
 Plate-forme d’enseignement gratuite open source CeCILL-B de l’université Gustave Eiffel accessible gratuitement en mode saas.
 Les ressources de la plateforme sont partagées en CC-BY SA 3.0.
