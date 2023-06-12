@@ -35,6 +35,6 @@ reveal.content = f"""
 
 
 form==
-<link rel="stylesheet" href="/static/components/assets/reveal/theme/white.css"/>
+<link rel="stylesheet" href="/static/components/assets/reveal/theme/black.css"/>
 {{ reveal|component }}
 ==
