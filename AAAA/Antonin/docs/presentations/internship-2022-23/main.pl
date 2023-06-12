@@ -19,7 +19,8 @@ before==#|python|
 
 reveal.content = f"""
 <section>
-    <h1>Image</h1>
+    <h1>Alternance PLaTon</h1>
+    <h2> </h2>
 </section>
 
 <section>
