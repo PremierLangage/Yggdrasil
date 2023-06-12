@@ -19,13 +19,14 @@ reveal.content = f"""
     </textarea>
 </section>
 <section data-markdown>
-  <pre><code data-trim data-noescape>
-(def lazy-fib
-  (concat
-   [0 1]
-   ((fn rfib [a b]
-        (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
-  </code></pre>
+  <textarea data-template>
+    ```js [1-2|3|4]
+    let a = 1;
+    let b = 2;
+    let c = x => 1 + 2 + x;
+    c(3);
+    ```
+  </textarea>
 </section>
 """
 
