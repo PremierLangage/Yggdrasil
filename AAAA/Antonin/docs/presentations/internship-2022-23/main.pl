@@ -3,9 +3,9 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 # Chargement des ressources
-igm_logo_igm =$ resources/logo_igm.png
-igm_logo_pl =$ resources/logo_pl.png
-igm_logo_platon =$ resources/logo_platon.png
+img_logo_igm =$ resources/logo_igm.png
+img_logo_pl =$ resources/logo_pl.png
+img_logo_platon =$ resources/logo_platon.png
 
 
 reveal =: RevealViewer
@@ -18,7 +18,7 @@ text=
 before==#|python|
 
 reveal.content = f"""
-<section data-markdown data-background-image="{img_logo_platon}" data-background-position="right" width="100%">
+<section data-markdown data-background-image="{igm_logo_platon}" data-background-position="right" width="100%">
   <textarea data-template>
 ## Alternance PLaTon
 #### Présentation de Soutenance
