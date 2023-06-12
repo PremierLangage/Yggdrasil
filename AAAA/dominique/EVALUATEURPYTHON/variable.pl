@@ -16,9 +16,9 @@ title= Variable
 
 text== 
 
-Déclarez une variable {{name}} contenant la constante {{constante}}. 
+Déclarez une variable **{{name}}** contenant la constante **{{constante}}**. 
 
-Ajouter à la variable {{nameZ}} le contenu des variables {{nameX}} et {{nameY}}.
+Ajouter à la variable **{{nameZ}}** le contenu des variables **{{nameX}}** et **{{nameY}}**.
 
 ==
 
@@ -35,7 +35,7 @@ globals()[nameY] = random.randint(5,1000)
 globals()[nameZ]= globals()[nameX]+globals()[nameY]
 
 
-const= random.choice([ast.literal_eval(x) for x in ["66","'@'",'"space-Y"',"0","-1","33.55","True","False"]])
+constante= random.choice([ast.literal_eval(x) for x in ["66","'@'",'"space-Y"',"0","-1","33.55","True","False"]])
 
 
 
