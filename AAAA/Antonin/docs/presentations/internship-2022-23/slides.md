@@ -65,7 +65,7 @@
 
 </div>
 <div style="width: 33%;">
-    <img src="logo_igm.png" />
+    <img src="./resources/logo_igm.png" />
 </div>
 </div>
 
@@ -86,7 +86,7 @@
 # Présentation de PL
 </div>
 <div style="width: 5%">
-<img src="logo_pl.png" />
+<img src="./resources/logo_pl.png" />
 </div>
 </div>
 - PL est une plateforme d'exerciseur en ligne permettant à des enseignants de produire facilement des ressources pédagogiques jouables
@@ -112,7 +112,7 @@
 # Présentation de PL
 </div>
 <div style="width: 5%">
-<img src="logo_pl.png" />
+<img src="./resources/logo_pl.png" />
 </div>
 </div>
 
@@ -145,7 +145,7 @@
 # Présentation de PLaTon
 </div>
 <div style="width: 5%">
-<img src="logo_platon.png" />
+<img src="./resources/logo_platon.png" />
 </div>
 </div>
 
@@ -164,7 +164,7 @@
 
 </div>
 <div>
-<img src="logo_platon.png">
+<img src="./resources/logo_platon.png">
 </div>
 </div>
 
@@ -188,7 +188,7 @@
 # Front | Composant Exercice
 </div>
 <div style="width: 5%">
-<img src="logo_platon.png" />
+<img src="./resources/logo_platon.png" />
 </div>
 </div>
 
@@ -210,8 +210,8 @@
 # Back | Module de Statitstique
 </div>
 <div style="width: 5%; display: flex;">
-<img src="logo_pl.png" />
-<img src="logo_platon.png" />
+<img src="./resources/logo_pl.png" />
+<img src="./resources/logo_platon.png" />
 </div>
 </div>
 
