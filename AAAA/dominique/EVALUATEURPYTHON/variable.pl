@@ -25,8 +25,10 @@ name = random.choice(["un","A","X","var","name","fun","foo","bar"])
 nameX = random.choice(["un","A","X","var","name","fun","foo","bar"])+"X"
 nameY = random.choice(["un","A","X","var","name","fun","foo","bar"])+"Y"
 nameZ = random.choice(["un","A","X","var","name","fun","sum","add"])+"Z"
-globals()[nameX] = u = random.randint(5,1000)
-globals()[nameY] = v = random.randint(5,1000)
+u = random.randint(5,1000)
+v = random.randint(5,1000)
+globals()[nameX] = u
+globals()[nameY] = v
 globals()[nameZ]= u+v
 
 
