@@ -4,21 +4,14 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 reveal =: RevealViewer
-slide =@ slides.md
+reveal.content =@ slide.md
+
 
 title = Présentation
 
 text= 
 
 before==#|python|
-
-reveal.content = f"""
-<section data-markdown>
-    <textarea data-template>
-        {slide}
-    </textarea>
-</section>
-"""
 
 ==
 
