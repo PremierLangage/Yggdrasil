@@ -12,7 +12,7 @@ reveal =: RevealViewer
 reveal.content ==
 
 <section>
-    blabla
+    {igm_logo_platon}
 </section>
 
 ==
