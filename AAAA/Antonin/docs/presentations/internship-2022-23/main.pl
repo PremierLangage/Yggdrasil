@@ -24,7 +24,7 @@ reveal.content = f"""
 
     <section>
         <h2>Hello</h2>
-        <img class="r-stretch" src="{igm_logo_platon}">   
+        <img class="r-stretch" src="{igm_logo_platon}" width="100%">   
     </section>
  
 """
