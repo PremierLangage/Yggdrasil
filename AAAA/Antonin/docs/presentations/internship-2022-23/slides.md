@@ -28,6 +28,10 @@
 }
 </style>
 
+
+<section data-markdown>
+    <textarea data-template>
+
 <center>
 
 ## Alternance PLaTon
@@ -225,3 +229,7 @@
 
 - ### Démo PL module de statistique
 ---
+
+
+</textarea>
+</section>
