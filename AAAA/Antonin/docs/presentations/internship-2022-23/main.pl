@@ -28,23 +28,23 @@ reveal.content = f"""
 
 <section data-markdown class="align-left">
   <textarea data-template>
-#### Déroulé de la présentation
+### Déroulé de la présentation
 
-- Présentation de l'entreprise et du cadre
+#### - Présentation de l'entreprise et du cadre
 
-- Présentation de PL / PLaTon
+#### - Présentation de PL / PLaTon
 
-- Présentation des tâches réalisées:
+#### - Présentation des tâches réalisées:
 
-    - Composant Exercice sur le Front
+    #### - Composant Exercice sur le Front
 
-    - Module de Statistique
+    #### - Module de Statistique
 
-    - Organisation de projet
+    #### - Organisation de projet
 
-- Présentation Avenir de PLaTon
+#### - Présentation Avenir de PLaTon
 
-- Conclusion
+#### - Conclusion
 
   </textarea>
 </section>
