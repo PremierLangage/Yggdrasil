@@ -23,13 +23,6 @@ reveal.content = f"""
     <h2>Présentation de Soutenance</h2>
     <h3>{igm_logo_platon}</h3>
 </section>
-
-<section>
-    <h2>Hello</h2>
-    <img class="r-stretch" src="{igm_logo_platon}">
-    <p></p>   
-</section>
- 
 """
 
 ==
