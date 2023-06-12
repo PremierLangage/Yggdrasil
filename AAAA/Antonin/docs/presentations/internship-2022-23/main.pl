@@ -65,7 +65,7 @@ reveal.content = f"""
 
 </div>
 <div style="width: 33%;">
-    <img data-src="{igm_logo_igm}" />
+    <img data-src="{img_logo_igm}" />
 </div>
 </div>
 
