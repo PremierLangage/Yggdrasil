@@ -22,15 +22,15 @@ La fonction devrait renvoyer une nouvelle liste qui ne contient que les chaînes
 
 1° **Tests unitaires** : Écrivez une série de tests unitaires pour la fonction que vous avez écrite à l'exercice 3.
 
-1° **Exceptions** : Écrivez un bloc de code qui attrape et gère une exception lorsque vous essayez de diviser par zéro.
-
-1° **Générateurs** : Écrivez un générateur qui produit les nombres impairs de 1 à n.
-
-1° **Decorateurs** : Écrivez un décorateur qui enregistre le temps d'exécution d'une fonction.
+1° **Exceptions** : Écrivez un bloc de code qui attrape et gère une exception lorsque vous essayez de diviser par zéro. Ecrire une fonction qui calcul $G(x)= (x-a)/(x-b)+x/(x-c)$ et qui lève une exception quand la fonction n'est pas définie (x==b) ou (x==c).
 
 1° **Expressions régulières** : Écrivez une fonction qui utilise une expression régulière $import re$ pour vérifier si une chaîne est une adresse e-mail valide.
 
 1° **Manipulation de fichiers** : Écrivez une fonction qui lit un fichier texte et renvoie le nombre de mots qu'il contient.
+
+1° **Générateurs** : Écrivez un générateur qui produit les nombres impairs de 1 à n.
+
+1° **Decorateurs** : Écrivez un décorateur qui enregistre le temps d'exécution d'une fonction.
 
 1° **Classes** : Écrivez une classe Personne avec un constructeur qui prend un nom et un âge, ainsi qu'une méthode pour afficher les informations de la personne.
 
