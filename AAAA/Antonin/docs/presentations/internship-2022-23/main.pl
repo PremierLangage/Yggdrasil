@@ -30,5 +30,35 @@ reveal.content = f"""
 
 
 form==
+<style>
+.new-slide {
+    display: flex;
+    border: solid 8px green;
+    background-color: green;
+    justify-content: center;
+    margin:16px;
+}
+
+.pannel-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px;
+}
+
+.pannel-around {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    align-items: center;
+}
+
+.pannel-between {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+}
+</style>
+
 {{ reveal|component }}
 ==
