@@ -33,14 +33,16 @@ globals()[nameZ]= globals()[nameX]+globals()[nameY]
 constante= random.choice([ast.literal_eval(x) for x in ["66","'@'",'"space-Y"',"0","-1","33.55","True","False"]])
 
 pltest=f"""
->>> {{name}}=={{constante}}
+>>> {name}=={constante}
 True
 """
 
 pltest1=f"""
->>> {{nameZ}}=={{nameX}}+{{nameY}}
+>>> {nameZ}=={nameX}+{nameY}
 True
 """
+
+text += pltest1
 
 ==
 
