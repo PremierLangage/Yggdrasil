@@ -37,17 +37,15 @@ globals()[nameZ]= globals()[nameX]+globals()[nameY]
 
 constante= random.choice([ast.literal_eval(x) for x in ["66","'@'",'"space-Y"',"0","-1","33.55","True","False"]])
 
+pltest=f"""
+>>> {{name}}=={{constante}}
+True
+"""
 
-
-==
-
-evaluator==
-eval(editor.code)
-if name not in globals():
-    feedback = f"Vous n'avez défini de variable {name} !"
-    grade = 0
-
-
-
+pltest1=f"""
+>>> {{nameZ}}=={{nameX}}+{{nameY}}
+True
+"""
 
 ==
+
