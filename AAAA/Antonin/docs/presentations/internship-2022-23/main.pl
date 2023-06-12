@@ -30,7 +30,7 @@ reveal.content = f"""
   <textarea data-template>
 #### Déroulé de la présentation
 
-Présentation de l'entreprise et du cadre
+- Présentation de l'entreprise et du cadre
 
 - Présentation de PL / PLaTon
 
