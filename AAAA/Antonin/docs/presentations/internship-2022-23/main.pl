@@ -18,7 +18,7 @@ text=
 before==#|python|
 
 reveal.content = f"""
-<section data-markdown data-background-image="{img_logo_pl}" data-background-position="right" width="100%">
+<section data-markdown data-background-image="{img_logo_platon}" data-background-position="right" width="100%">
   <textarea data-template>
 ## Alternance PLaTon
 #### Présentation de Soutenance
