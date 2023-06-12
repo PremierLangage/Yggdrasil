@@ -30,9 +30,9 @@
 
 <center>
 
-# Alternance PLaTon
-## Présentation de Soutenance
-## Antonin JEAN, Master 1  IGM 2022-23
+## Alternance PLaTon
+### Présentation de Soutenance
+### Antonin JEAN, Master 1  IGM 2022-23
 
 </center>---
 
