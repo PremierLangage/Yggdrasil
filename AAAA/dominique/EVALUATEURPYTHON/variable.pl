@@ -25,9 +25,9 @@ name = random.choice(["un","A","X","var","name","fun","foo","bar"])
 nameX = random.choice(["un","A","X","var","name","fun","foo","bar"])+"X"
 nameY = random.choice(["un","A","X","var","name","fun","foo","bar"])+"Y"
 nameZ = random.choice(["un","A","X","var","name","fun","sum","add"])+"Z"
-globals()[nameX] = random.randint(5,1000)
-globals()[nameY] = random.randint(5,1000)
-globals()[nameZ]= globals()[nameX]+globals()[nameY]
+globals()[nameX] = u = random.randint(5,1000)
+globals()[nameY] = v = random.randint(5,1000)
+globals()[nameZ]= u+v
 
 
 constante= random.choice([ast.literal_eval(x) for x in ["66","'@'",'"space-Y"',"0","-1","33.55","True","False"]])
