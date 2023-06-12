@@ -18,17 +18,6 @@ reveal.content = f"""
         {slide}
     </textarea>
 </section>
-<section data-markdown>
-  <textarea data-template>
-    <pre><code data-line-numbers data-ln-start-from="7">
-    <tr>
-    <td>Oranges</td>
-    <td>$2</td>
-    <td>18</td>
-    </tr>
-    </code></pre>
-  </textarea>
-</section>
 """
 
 ==
