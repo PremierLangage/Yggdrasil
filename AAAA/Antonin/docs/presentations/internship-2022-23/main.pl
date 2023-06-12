@@ -24,7 +24,7 @@ reveal.content = f"""
     </textarea>
 </section>
 <section>
-<img data-src="{igm_logo_igm}">
+<img data-src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Ffr%2F&psig=AOvVaw3PG2ef5w-H6G4i-RuUa_uq&ust=1686659060039000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOj9_OPcvf8CFQAAAAAdAAAAABAE">
 </section>
 """
 
