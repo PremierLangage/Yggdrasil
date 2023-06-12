@@ -18,7 +18,7 @@ text=
 before==#|python|
 
 reveal.content = f"""
-<section data-background-image="{igm_logo_platon}">
+<section>
     <h2>Image</h2>
 </section>
 
