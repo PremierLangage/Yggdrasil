@@ -3,7 +3,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 # Chargement des ressources
-$ resources/logo_igm.png
+a =$ resources/logo_igm.png
 
 reveal =: RevealViewer
 slide =@ slides.md
