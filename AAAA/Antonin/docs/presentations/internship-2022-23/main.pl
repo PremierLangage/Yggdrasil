@@ -36,11 +36,11 @@ reveal.content = f"""
 
 #### - Présentation des tâches réalisées:
 
-    #### - Composant Exercice sur le Front
+    - Composant Exercice sur le Front
 
-    #### - Module de Statistique
+    - Module de Statistique
 
-    #### - Organisation de projet
+    - Organisation de projet
 
 #### - Présentation Avenir de PLaTon
 
