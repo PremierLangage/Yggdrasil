@@ -28,7 +28,16 @@ reveal.content = f"""
 
 <section data-markdown>
   <textarea data-template>
-    test
+# Déroulé de la présentation
+- Présentation de l'entreprise et du cadre
+- Présentation de PL / PLaTon
+- Présentation des tâches réalisées:
+    - Composant Exercice sur le Front
+    - Module de Statistique
+    - Organisation de projet
+- Présentation Avenir de PLaTon
+
+- Conclusion
   </textarea>
 </section>
 """
