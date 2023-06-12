@@ -29,7 +29,7 @@ reveal.content = f"""
 ==
 
 
-form==
+form==#|html|
 <style>
 .new-slide {
     display: flex;
