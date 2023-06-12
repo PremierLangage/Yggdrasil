@@ -18,7 +18,10 @@ text=
 before==#|python|
 
 reveal.content = f"""
- {igm_logo_platon}
+    <section>
+        <img data-src="{igm_logo_platon}">   
+    </section>
+ 
 """
 
 ==
