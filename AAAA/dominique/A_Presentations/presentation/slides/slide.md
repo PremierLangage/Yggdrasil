@@ -1,3 +1,5 @@
+<section data-markdown>
+    <textarea data-template>
 ### Réussir avec PLaTon  
 
 **Conception**
@@ -46,9 +48,11 @@ Des solutions propriétaires existent.
 
 #### Demo code
 
-```js [712: 1-2|3|4]
+```js [1-2|3|4]
     let a = 1;
     let b = 2;
     let c = x => 1 + 2 + x;
     c(3);
 ```
+    </textarea>
+</section>
