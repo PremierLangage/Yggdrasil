@@ -19,6 +19,7 @@ reveal.content = f"""
     </textarea>
 </section>
 <section data-markdown>
+  <textarea data-template>
     <pre><code data-line-numbers data-ln-start-from="7">
     <tr>
     <td>Oranges</td>
@@ -26,6 +27,7 @@ reveal.content = f"""
     <td>18</td>
     </tr>
     </code></pre>
+  </textarea>
 </section>
 """
 
