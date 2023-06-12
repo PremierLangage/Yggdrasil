@@ -4,6 +4,9 @@
 # un excercice de python avec un editeur un before et une evaluation a la main.
 extends = /AAAA/dominique/python/template/pltest2023.pl
 
+@ /builder/before.py [builder.py]
+
+
 title= Variable 
 
 text== 
