@@ -27,7 +27,7 @@ reveal.content = f"""
   </textarea>
 </section>
 
-<section data-markdown>
+<section data-background-gradient="radial-gradient(#283b95, #17b2c3)">
   <textarea data-template>
 # Déroulé de la présentation
 - Présentation de l'entreprise et du cadre
