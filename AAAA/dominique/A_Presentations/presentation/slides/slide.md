@@ -1,9 +1,9 @@
-## Réussir avec PLaTon  
+### Réussir avec PLaTon  
 
-##### Conception
+***Conception***
 Dominique Revuz, Magdalena kobylanski, Nicolas Borie, David Doyen  
 
-##### Développement
+***Développement***
 Christophe Callet, Quentin Coumes, Mamadou Cisse, Orhan Uyar, Thomas Saillard, Clément Gaudet, Antonin Jean, DR&NB  
 
 ---
