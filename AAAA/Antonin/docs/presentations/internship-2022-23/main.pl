@@ -26,8 +26,8 @@ reveal.content = f"""
   </textarea>
 </section>
 
-<section data-markdown >
-  <textarea data-template class="align-left">
+<section data-markdown class="align-left">
+  <textarea data-template >
 #### Déroulé de la présentation
 
 - Présentation de l'entreprise et du cadre
