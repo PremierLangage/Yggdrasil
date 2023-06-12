@@ -41,3 +41,14 @@ Des solutions propriétaires existent.
 <p align="center" > https://elearning.univ-eiffel.fr/enrol/index.php?id=58</p>
 
 <p align="center" > tinyurl.com/3ur442h5 </p>
+
+---
+
+#### Code exemple
+
+```js [1-2|3|4]
+    let a = 1;
+    let b = 2;
+    let c = x => 1 + 2 + x;
+    c(3);
+```
