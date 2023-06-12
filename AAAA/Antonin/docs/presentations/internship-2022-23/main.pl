@@ -18,7 +18,7 @@ text=
 before==#|python|
 
 reveal.content = f"""
-<section data-markdown>
+<section data-markdown data-background-image="{img_logo_igm}">
   <textarea data-template>
 ## Alternance PLaTon
 #### Présentation de Soutenance
