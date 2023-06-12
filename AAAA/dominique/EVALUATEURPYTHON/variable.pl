@@ -16,9 +16,9 @@ title= Variable
 
 text== 
 
-Déclarez une variable **{{name}}** contenant la constante **{{constante}}**. 
+Définissez une variable **{{name}}** contenant la constante **{{constante}}**. 
 
-Ajouter à la variable **{{nameZ}}** le contenu des variables **{{nameX}}** et **{{nameY}}**.
+Dans la variable **{{nameZ}}** mettez la somme des variables **{{nameX}}** et **{{nameY}}**.
 
 ==
 
@@ -41,6 +41,13 @@ constante= random.choice([ast.literal_eval(x) for x in ["66","'@'",'"space-Y"',"
 
 ==
 
-evaluator== 
+evaluator==
+eval(student)
+if name not in globals():
+    feedback = f"Vous n'avez défini de variable {name} !"
+    grade = 0
+
+
+
 
 ==
