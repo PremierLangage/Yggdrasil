@@ -42,7 +42,7 @@ pltest1=f"""
 True
 """
 
-text += pltest1
+text += globals()
 
 ==
 
