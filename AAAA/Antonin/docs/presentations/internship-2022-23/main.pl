@@ -23,7 +23,7 @@ reveal.content = f"""
     </section>
 
     <section>
-        <img class="r-stretch" data-src="{igm_logo_platon}">   
+        <img class="r-stretch" src="{igm_logo_platon}">   
     </section>
  
 """
