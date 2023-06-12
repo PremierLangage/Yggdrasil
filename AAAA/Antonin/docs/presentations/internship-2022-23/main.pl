@@ -9,14 +9,19 @@ igm_logo_platon =$ resources/logo_platon.png
 
 
 reveal =: RevealViewer
-reveal.content =@ slides.md
+reveal.content ==
+
+<section>
+    blabla
+</section>
+
+==
 
 title =  Présentation de Soutenance Alternance 2022-2023 Antonin JEAN
 
 text= 
 
 before==#|python|
-
 
 ==
 
