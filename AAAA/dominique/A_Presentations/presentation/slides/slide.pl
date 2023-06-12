@@ -15,7 +15,7 @@ before==#|python|
 reveal.content = f"""
 <section data-markdown>
     <textarea data-template>
-        
+        {slide}
     </textarea>
 </section>
 """
