@@ -53,7 +53,7 @@ slides = f"""
 
 </div>
 <div style="width: 33%;">
-    <img data-src="{{igm_logo_igm}}" />
+    <img data-src="{igm_logo_igm}" />
 </div>
 </div>
 
