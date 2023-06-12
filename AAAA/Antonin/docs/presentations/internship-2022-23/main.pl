@@ -35,6 +35,7 @@ reveal.content = f"""
 #### - Présentation de PL / PLaTon
 
 #### - Présentation des tâches réalisées:
+
     #### - Composant Exercice sur le Front
 
     #### - Module de Statistique
