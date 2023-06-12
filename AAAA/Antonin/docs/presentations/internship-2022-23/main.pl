@@ -23,6 +23,7 @@ reveal.content = f"""
     <h1>Alternance PLaTon</h1>
     <h2>Présentation de Soutenance</h2>
     <h3>{igm_logo_platon}</h3>
+    <img data-src="{igm_logo_platon}" />
   </textarea>
 </section>
 """
