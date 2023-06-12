@@ -26,7 +26,7 @@ Des solutions propriétaires existent.
 
 ---
 
-### Notre objectif
+#### Notre objectif
 
 - Un outil d'enseignement adapté !  
 - Facile d'utilisation mais puissant !  
