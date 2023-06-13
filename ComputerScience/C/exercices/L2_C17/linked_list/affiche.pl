@@ -96,7 +96,7 @@ int main(int n, char **v){
 
 checks_args_stdin==#|python|
 [["Exécution simple", ["passage", "da'rguments", "sans effet"], "1 2 3 4 5 6 7 8 9 0 1111"],
-[["Exécution pas plus dur mais aléatoire", "","10\n"+" ".join([str(randint(0,50)) for i in range(10)])+"\n"+" ".join([str(randint(0,20)) for i in range(10)]) ]],
+["Exécution pas plus dur mais aléatoire", "","10\n"+" ".join([str(randint(0,50)) for i in range(10)])+"\n"+" ".join([str(randint(0,20)) for i in range(10)]) ]],
 ]
 ==
 
