@@ -82,11 +82,7 @@ int main(int argc, char* argv[]){
   int i;
   
   for (i=1 ; i+2<argc ; i+=3){
-    c = allocate_cell(argv[i], argv[i+1], atoi(argv[i+2]));
-    printf("Cellule %s %s age : %d\n", c->first_name, c->last_name, c->age);
-    free(c->first_name);
-    free(c->last_name);
-    free(c);
+
   }
 
   return 0;
@@ -103,13 +99,7 @@ checks_args_stdin==#|python|
  ["Test aléatoire 4", [choice(["Pierre", "Paul", "Jacques", "Achraf", "Chan", "David", "Herbert", "Jean-Guy", "Pat", "Sophie", "Octave", "Mélanie", "Jean-Phillipe"]), choice(["Fonfec", "Herbien", "Zétofrey", "Hergébel", "Martin", "Chaouche", "Li", "Strauss", "Chirac", "El Mofty"]), str(randint(1, 100))], ""]]
 ==
 
-astuces==#|python|
-[
-  { "content": """Pour préparer toute la mémoire, il faudra faire 3 appels à `malloc`. Il faut ainsi tout d'abord allouer la cellule puis allouer deux zones de taille adaptée pour chacune des chaînes à recopier."""},
-  { "content": """Une stratégie raisonnable consiste à utiliser les fonctions suivantes : `strlen`, `malloc` puis `strcpy`."""},
-  { "content": """Pour allouer la bonne quantité de mémoire pour une chaîne `s` il faut demander `(strlen(s) + 1)*sizeof(char)` octets. Sans le `+1`, il manquerait de la place pour recopier le caractère de fin de chaîne `\\0`."""},
-]
-==
+
 
 
 
