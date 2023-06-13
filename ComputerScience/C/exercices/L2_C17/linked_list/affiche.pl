@@ -37,10 +37,12 @@ editor.code==#|c|
 #include <stdlib.h>
 #include <string.h>
 
+// ne pas modifier 
 typedef struct _maillon{
     int valeur;
     struct _maillon *suivant;
 } Maillon, *List;
+// les types
 
 void affiche(List l){
   // Votre code ici...
@@ -53,21 +55,17 @@ solution==#|c|
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct cell{
-  char* first_name;
-  char* last_name;
-  int age;
-  struct cell* next;
-}Cell, *List;
+typedef struct _maillon{
+    int valeur;
+    struct _maillon *suivant;
+} Maillon, *List;
 
-Cell* allocate_cell(char* first_name, char* last_name, int age){
-    Cell* n = (Cell*)malloc(sizeof(Cell));
-    if (n == NULL)
-      return NULL;
-    n->first_name = strdup(first_name);
-    n->last_name = strdup(last_name);
-    n->age = age;
-    return n;
+void affiche(List l){
+    while (l != NULL){
+        printf("%d ",l->value);
+        l = l->suivant;
+    }
+    printf("\n");
 }
 ==
 
