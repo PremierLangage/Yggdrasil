@@ -19,7 +19,7 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 author=Dominique Revuz 
 
 
-title= Afficher une liste 
+title= Insertion en Tête de liste 
 
 tag=string|malloc|structure|recopiage|cellule|liste
 
