@@ -27,9 +27,9 @@ tag=string|malloc|structure|recopiage|cellule|liste
 editor.height=350px
 
 text==#|markdown|
-Écrire une fonction **inserEnTete** qui prend en argument une Liste\* l(voir éditeur) et un Maillon* new. 
+Écrire une fonction **ajoutSansDoublons** qui prend en argument une Liste\* l(voir éditeur) et un Maillon* new. 
+Et qui ajoute à la fin de la liste l si le maillon new si la valeur n'est pas déjà présente.
 
-Qui insert en Tete le maillon new dans la liste l. 
 
 
 ==
@@ -62,9 +62,9 @@ typedef struct _maillon {
 } *List,Maillon;
 
 void ajoutSansDoublons(List *l, Maillon *new){
-    if (*l == NULL) insertEnTete(l,new);
-    else if ((*l)->value == new->value) return;
-    else ajoutSansDoublonsRecur(&((*l)->suivant),new);
+    if (*l == NULL) { new->suivant = *l;*l = new; }
+    else if ((*l)->valeur == new->valeur) return;
+    else ajoutSansDoublons(&((*l)->suivant),new);
 }
 
 ==
