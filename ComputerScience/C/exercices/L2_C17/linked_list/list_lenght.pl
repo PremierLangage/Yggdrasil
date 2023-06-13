@@ -42,9 +42,6 @@ typedef struct cel{
 
 typedef Cellule* Liste;
 
-
-
-
 ... nb_cellules(...) {
    /* votre code ici... */
 }
