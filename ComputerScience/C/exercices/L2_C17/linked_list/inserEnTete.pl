@@ -60,13 +60,11 @@ typedef struct _maillon {
     struct _maillon *suivant;
 } *List,Maillon;
 
-void affiche(List l){
-    while (l != NULL){
-        printf("%d ",l->valeur);
-        l = l->suivant;
-    }
-    printf("\n");
+void insertEnTete(List *l, Maillon *new){
+    new->suivant = *l;
+    *l = new;
 }
+
 ==
 
 code_before==#|c|
@@ -74,11 +72,14 @@ code_before==#|c|
 ==
 
 code_after==#|c|
-
-void insertEnTete(List *l, Maillon *new){
-    new->suivant = *l;
-    *l = new;
+void affiche(List l){
+    while (l != NULL){
+        printf("%d ",l->valeur);
+        l = l->suivant;
+    }
+    printf("\n");
 }
+
 
 int main(int n, char **v){
     List l = NULL;
