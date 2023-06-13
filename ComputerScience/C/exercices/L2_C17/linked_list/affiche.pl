@@ -84,7 +84,7 @@ int main(int n, char **v){
     List l = NULL;
     while (scanf("%d",&n) != EOF){
         Maillon *m = malloc(sizeof(Maillon));
-        m->value = n;
+        m->valeur = n;
         insertEnTete(&l,m);
     }
     affiche(l);
