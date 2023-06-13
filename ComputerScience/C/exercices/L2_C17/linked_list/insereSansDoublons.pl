@@ -61,7 +61,7 @@ typedef struct _maillon {
     struct _maillon *suivant;
 } *List,Maillon;
 
-void ajoutSansDoublonsRecur(List *l, Maillon *new){
+void ajoutSansDoublons(List *l, Maillon *new){
     if (*l == NULL) insertEnTete(l,new);
     else if ((*l)->value == new->value) return;
     else ajoutSansDoublonsRecur(&((*l)->suivant),new);
