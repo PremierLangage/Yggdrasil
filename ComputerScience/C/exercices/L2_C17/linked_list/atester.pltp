@@ -10,6 +10,6 @@ le code sur la plateforme.
 
 ==
 
-@affiche.pl 
-@inserEnTete.pl
+@ affiche.pl 
+@ inserEnTete.pl
 @ insereSansDoublons.pl
