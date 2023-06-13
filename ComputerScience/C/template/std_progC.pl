@@ -116,8 +116,8 @@ checks_args_stdin==
  ["Cinquième test aléatoire lui aussi", [str(randint(-100,100))], str(randint(-100,100)) ] ]
 ==
 
-form==
-==
+form=
+
 
 code_before==#|c|
 
