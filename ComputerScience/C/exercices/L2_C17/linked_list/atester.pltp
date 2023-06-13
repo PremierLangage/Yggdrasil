@@ -10,10 +10,13 @@ le code sur la plateforme.
 
 ==
 
+
+
+
+@ tab2exam.pl
+
 @ affiche.pl 
 @ inserEnTete.pl
 @ insereSansDoublons.pl
 
 @ list_lenght.pl
-
-@ /ComputerScience/C/exercices/L2_C17/array/tab2d.pl
