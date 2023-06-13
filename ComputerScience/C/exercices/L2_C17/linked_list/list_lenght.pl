@@ -29,20 +29,22 @@ Ecrire une fonction `nb_cellules`
 qui renvoie le nombre d'éléments d'une liste chainée passée en parametre.  <br>
 <br>
 
-On utilisera les types:  <br>
-<br>
-
-    typedef struct cel{  
-        int val;  
-        struct cel* suivant;  
-    } Cellule;  
-
-    typedef Cellule* Liste;
 
 
 == 
 
 editor.code==
+
+typedef struct cel{  
+    int val;  
+    struct cel* suivant;  
+} Cellule;  
+
+typedef Cellule* Liste;
+
+
+
+
 ... nb_cellules(...) {
    /* votre code ici... */
 }
