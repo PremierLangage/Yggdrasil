@@ -71,7 +71,7 @@ int carre(int n){
 }
 ==
 
-beforeM==#|python|
+before==#|python|
 from random import randint
 
 # Some globals variables
@@ -98,7 +98,7 @@ if "astuces" in globals():
 else:
     nb_hints = 0
 
-#text+=" {{ editor|component }} "
+text+=" {{ editor|component }} "
 ==
 
 # tests are placed inside a list stored in variable : checks_args_stdin
@@ -117,7 +117,6 @@ checks_args_stdin==
 ==
 
 form==
-{{ editor|component }} 
 ==
 
 code_before==#|c|
