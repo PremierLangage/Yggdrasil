@@ -45,7 +45,7 @@ typedef struct _maillon {
 } *List,Maillon;
 // les types
 
-void inserEntete(List *l, Maillon *new){
+void ajoutSansDoublons(List *l, Maillon *new){
   // Votre code ici...
 }
 ==
@@ -61,10 +61,6 @@ typedef struct _maillon {
     struct _maillon *suivant;
 } *List,Maillon;
 
-void insertEnTete(List *l, Maillon *new){
-    new->suivant = *l;
-    *l = new;
-}
 
 ==
 
