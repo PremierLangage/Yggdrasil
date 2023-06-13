@@ -81,6 +81,7 @@ void insertEnTete(List *l, Maillon *new){
 }
 
 int main(int n, char **v){
+    List l;
     while (scanf("%d",&n) != EOF){
         Maillon *m = malloc(sizeof(Maillon));
         m->valeur = n;
