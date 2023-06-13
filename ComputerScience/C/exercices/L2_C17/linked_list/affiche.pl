@@ -16,7 +16,7 @@
 
 extends=/ComputerScience/C/template/std_progC17_clang.pl
 
-author=Dominiqeu Revuz 
+author=Dominique Revuz 
 
 
 title= Afficher une liste 
