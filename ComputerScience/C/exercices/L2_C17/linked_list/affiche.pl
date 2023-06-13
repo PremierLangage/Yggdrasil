@@ -24,6 +24,7 @@ title= Afficher une liste
 tag=string|malloc|structure|recopiage|cellule|liste
 
 editor.height=350px
+editor.language=c
 
 text==#|markdown|
 Écrire une fonction **afficher** qui prend en argument une Liste (voir éditeur).
