@@ -77,16 +77,15 @@ code_after==#|c|
 #include <stdio.h>
 #include <time.h>
 
-int main(int argc, char* argv[]){
-  Cell* c;
-  int i;
-  
-  for (i=1 ; i+2<argc ; i+=3){
-
-  }
-
-  return 0;
+int main(int n, char **v){
+    while (scanf("%d",&n) != EOF){
+        Maillon *m = malloc(sizeof(Maillon));
+        m->value = n;
+        insertEnTete(&l,m);
+    }
+    affiche(&l);
 }
+
 ==
 
 checks_args_stdin==#|python|
