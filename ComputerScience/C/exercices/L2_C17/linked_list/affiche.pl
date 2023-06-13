@@ -81,13 +81,13 @@ void insertEnTete(List *l, Maillon *new){
 }
 
 int main(int n, char **v){
-    List l;
+    List l = NULL;
     while (scanf("%d",&n) != EOF){
         Maillon *m = malloc(sizeof(Maillon));
-        m->valeur = n;
+        m->value = n;
         insertEnTete(&l,m);
     }
-    affiche(&l);
+    affiche(l);
 }
 
 ==
