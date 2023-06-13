@@ -44,7 +44,7 @@ typedef struct _maillon {
 } *List,Maillon;
 // les types
 
-void affiche(List l){
+void inserEntete(List *l, Maillon *new){
   // Votre code ici...
 }
 ==
