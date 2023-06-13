@@ -35,7 +35,7 @@ Qui affiche (printf) les valeurs de la liste séparées par des espaces.
 
 editor.code==#|c|
 #include <stdlib.h>
-#include <string.h>
+#include <stdio.h>
 
 // ne pas modifier 
 typedef struct _maillon {
@@ -53,7 +53,7 @@ solution==#|c|
 #define _DEFAULT_SOURCE
 
 #include <stdlib.h>
-#include <string.h>
+#include <stdio.h>
 
 typedef struct _maillon {
     int valeur;
