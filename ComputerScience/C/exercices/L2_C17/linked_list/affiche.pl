@@ -30,6 +30,8 @@ text==#|markdown|
 
 Qui affiche (printf) les valeurs de la liste séparées par des espaces. 
 
+L'affichage se termine par un passage à la ligne.
+
 
 ==
 
