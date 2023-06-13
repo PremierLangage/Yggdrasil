@@ -38,10 +38,10 @@ editor.code==#|c|
 #include <string.h>
 
 // ne pas modifier 
-typedef struct _maillon{
+typedef struct _maillon {
     int valeur;
     struct _maillon *suivant;
-} Maillon, *List;
+} *List,Maillon;
 // les types
 
 void affiche(List l){
@@ -55,14 +55,14 @@ solution==#|c|
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct _maillon{
+typedef struct _maillon {
     int valeur;
     struct _maillon *suivant;
-} Maillon, *List;
+} *List,Maillon;
 
 void affiche(List l){
     while (l != NULL){
-        printf("%d ",l->value);
+        printf("%d ",l->valeur);
         l = l->suivant;
     }
     printf("\n");
@@ -80,7 +80,7 @@ code_after==#|c|
 int main(int n, char **v){
     while (scanf("%d",&n) != EOF){
         Maillon *m = malloc(sizeof(Maillon));
-        m->value = n;
+        m->valeur = n;
         insertEnTete(&l,m);
     }
     affiche(&l);
