@@ -94,7 +94,7 @@ int main(int n, char **v){
 ==
 
 checks_args_stdin==#|python|
-[["Exécution simple", ["Pierre", "Martin", "12"], "1 2 3 4 5 6 7 8 9 0 1111"],
+[["Exécution simple", [], "1 2 3 4 5 6 7 8 9 0 1111"],
 ]
 ==
 
