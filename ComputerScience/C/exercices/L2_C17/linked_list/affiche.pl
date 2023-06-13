@@ -74,8 +74,11 @@ code_before==#|c|
 ==
 
 code_after==#|c|
-#include <stdio.h>
-#include <time.h>
+
+void insertEnTete(List *l, Maillon *new){
+    new->suivant = *l;
+    *l = new;
+}
 
 int main(int n, char **v){
     while (scanf("%d",&n) != EOF){
