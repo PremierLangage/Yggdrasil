@@ -56,9 +56,6 @@ return compte;
 
 code_before==
 
-#include <stdlib.h>
-#include <stdio.h>
-
 typedef struct cel{  
     int val;  
     struct cel* suivant;  
@@ -71,6 +68,10 @@ typedef Cellule* Liste;
 ==
 
 code_after==
+
+#include <stdlib.h>
+#include <stdio.h>
+
 typedef Cellule* Liste  ;
  Cellule* alloue_Cellule(int x){
 Liste tmp=NULL;
