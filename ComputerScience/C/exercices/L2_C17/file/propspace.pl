@@ -34,7 +34,7 @@ lire son contenu des coups aux échec et afficher les coordonées de chaque coup
 
 chaque ligne est de forme   
     a2-c3   
-ou a et c sont des colones et 2 et 3 des lignes.  
+où a et c sont des colones et 2 et 3 des lignes.  
 
 pour chaque ligne vous appelerez la fonction **void lireCoup(char *coup, Pos *depart, Pos *arrive)**
 
