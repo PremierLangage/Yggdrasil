@@ -101,7 +101,8 @@ Liste lire(){
 
 
 int main(void) {
-	Liste l = lire();
+	Liste l1 = lire();
+	Liste l2 = lire();
     
     printf("la liste contient %d element%s\n",lg,lg<2?"":"s");
 	return 0;
