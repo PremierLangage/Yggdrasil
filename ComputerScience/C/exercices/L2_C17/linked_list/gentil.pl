@@ -71,9 +71,12 @@ c= compile_source("sol1.c")
 if not c[0]:
     import sys
     print(c,file=sys.stderr)
-    
+
 # compilation et création du fichier sol1.o
 # effasser le fichier sol1.c 
+import os
+os.remove("sol1.c")
+
 # attention il faut ajouter sol1.o dans les "flags" de compilation
  
 # même chose pour le deuxième exercice avec sol2
