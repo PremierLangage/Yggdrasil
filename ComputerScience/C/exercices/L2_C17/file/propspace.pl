@@ -25,29 +25,21 @@ author=DR
 
 editor.height=300px
 
-@f1.txt
-@f2.txt
-@f3.txt
-@f4.txt
-@f5.txt
-@f6.txt
-@titi
-@toto
 
 text==#|markdown|
 Écrire un programme C qui prend un argument qui sera toujours le nom d'un 
 fichier positionné dans le répertoire courrant et dont vous aurez les 
 droits de lecture. Votre programme devra ouvrir ce fichier,
-lire son contenu et afficher la proportion d'espaces qu'il contient. 
+lire son contenu des coups aux échec et afficher les coordonées de chaque coup. 
 
-Attention on veut afficher un pourcentage. 
+chaque ligne est de forme 
+a2-c3 
+ou a et c sont des colones et 2 et 3 des lignes.
 
-Un fichier contenant 3 ' ' (espaces) et 3 autres caractères affichera :
+pour chaque ligne vous appelerez la fonction **void lireCoup(char *coup, Pos *depart, Pos *arrive)**
 
-    Proportion d'espaces : 50.00% 
-
-Pour faire un affichage formaté propre, utiliser `printf` avec le format suivant :
-`"... %5.2f%%\n"` (le Nombres à virgule flottante est sur 5 colonnes avec 2 chiffres après la virgule.)
+Pour afficher les coup on utilisera la fonction 
+printCoup(Pos a, Pos b);
 
 ==
 
@@ -56,6 +48,17 @@ code_before==#|c|
 
 editor.code==#|c|
 #include <stdio.h>
+// ne pas toucher au code suivant 
+
+
+void printCoup(Pos a, Pos b);
+
+// jusqu'ici
+
+void lireCoup(char *coup, Pos *depart, Pos *arrive){
+    ...
+}
+
 
 int main(int argc, char* argv[]){
   // Votre code ici 
