@@ -61,7 +61,7 @@ int main(int argc, char* argv[]){
   // Votre code ici 
 
 
-    printf("Proportion d'espaces : %5.2%\n", ...); 
+    printf("Proportion d'espaces : %5.2f%%\n", ... ); 
 
 }
 ==
