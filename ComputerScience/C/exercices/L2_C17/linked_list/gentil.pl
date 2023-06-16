@@ -103,7 +103,7 @@ int rep =Question1();
 int sol= solution()
 if (rep > sol) printf(" Votre réponse est trop grande \n");
 else if (rep < sol) printf(" Votre réponse est trop grande \n");
-else printf("Bravo bonne réponse");
+else printf("Bravo bonne réponse\n");
 
 }
 ==
