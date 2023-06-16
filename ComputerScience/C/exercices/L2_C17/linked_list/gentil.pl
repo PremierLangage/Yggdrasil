@@ -83,3 +83,25 @@ os.remove("sol1.c")
  
 # même chose pour le deuxième exercice avec sol2
 ==
+
+
+
+code_before==
+
+==
+
+solution==
+
+int solution();
+==
+
+code_after==
+int main(){
+
+printf("J'appel votre fonction : Question1() \n");
+int rep =Question1();
+
+
+
+}
+==
