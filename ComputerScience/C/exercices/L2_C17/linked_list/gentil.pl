@@ -75,7 +75,7 @@ def makeO(filename):
     returncode = sp.returncode
     return (returncode, spout, errout)
 
-c= maleO("sol1.c")
+c= makeO("sol1.c")
 if not c[0]:
     import sys
     print(c,file=sys.stderr)
