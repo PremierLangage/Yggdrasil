@@ -59,7 +59,7 @@ return compte;
 
 ==
 
-codebefore==
+code_before==
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -71,7 +71,7 @@ typedef Cellule* Liste  ;
 
 ==
 
-codeafter==
+code_after==
  Cellule* alloue_Cellule(int x){
 Liste tmp=NULL;
 
