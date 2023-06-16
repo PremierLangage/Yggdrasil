@@ -45,8 +45,8 @@ void move(Liste *source, Liste *cible) {
     Maillon *dest = *cible;
 
     if (to_move == NULL) return;
-    if (to_move == dest) return;
-    
+    if (to_move == dest) return; // ptete à exclure du sujet
+
     // on déconnecte to_move de sa liste doublement chainée
     if (to_move->prev) to_move->prev->suiv = to_move->suiv;
     if (to_move->suiv) to_move->suiv->prev = to_move->prev;
@@ -101,10 +101,17 @@ Liste lire(){
     return tmp;
 }
 
+void affiche(Liste l) {
+    for (l != NULL) {
+        printf("%d ", l->valeur);
+    }
+
 
 int main(void) {
 	Liste l1 = lire();
 	Liste l2 = lire();
+
+    move(&l1, &l2);
     
     printf("la liste contient %d element%s\n",lg,lg<2?"":"s");
 	return 0;
