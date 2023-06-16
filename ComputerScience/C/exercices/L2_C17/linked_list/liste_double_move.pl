@@ -13,6 +13,7 @@ typedef struct _maillon {
     int value;
     struct _maillon ∗suiv, ∗prec;
 } Maillon , ∗ Liste;
+```
 
 On souhaite écrire une fonction `void move(Liste *source, Liste *cible);` qui déplace le premier
 maillon de la liste pointé par source devant le maillon pointé par cible.
@@ -21,7 +22,6 @@ maillon de la liste pointé par source devant le maillon pointé par cible.
 Attention : Vous devrez gérer le cas où source pointe sur un pointeur `NULL` en ne faisant rien.
 
 <code>
-
     {{code_before}}
 </code>
 == 
