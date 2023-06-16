@@ -36,8 +36,8 @@ editor.height=300px
 
 text==#|markdown|
 Écrire un programme C qui prend un argument qui sera toujours le nom d'un 
-fichier positionné dans le répertoire courrant et sur dont vous aurez les 
-droits de lecture. Votre programme devra ouvrir ce fichier, le 
+fichier positionné dans le répertoire courrant et dont vous aurez les 
+droits de lecture. Votre programme devra ouvrir ce fichier,
 lire son contenu et afficher la proportion d'espaces qu'il contient. 
 
 Attention on veut afficher un pourcentage. 
@@ -47,7 +47,7 @@ Un fichier contenant 3 ' ' (espaces) et 3 autres caractères affichera :
     Proportion d'espaces : 50.00% 
 
 Pour faire un affichage formaté propre, utiliser `printf` avec le format suivant :
-`"%c: %5.2f%%\n"` (le Nombres à virgule flottante est sur 5 colonnes avec 2 chiffres après la virgule.)
+`"... %5.2f%%\n"` (le Nombres à virgule flottante est sur 5 colonnes avec 2 chiffres après la virgule.)
 
 ==
 
