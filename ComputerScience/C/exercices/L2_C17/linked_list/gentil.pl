@@ -37,14 +37,23 @@ before==
 import gentil
 
 gentil.buildfile("data")
-
-
 # calculer la solution pour ce fichier data
-# crer un fichier 
-# sol.c  contenant 
-# int solution(char *name){ return solution; }
-# compilation et création du fichier sol.o
-# effasser le fichier sol.c 
-# attention il faut ajouter sol.o dans les "flags" de compilation
+sol1 = gentil.Question1()
+sol2 = gentil.Question2()
 
+with open("sol1.c","w") as f:
+    f.write("""
+    int solution(){ 
+    return""")
+    f.write(sol1)
+    f.write(""";}""")
+
+# crer un fichier 
+# sol1.c  contenant 
+# int solution(char *name){ return sol1; }
+# compilation et création du fichier sol1.o
+# effasser le fichier sol1.c 
+# attention il faut ajouter sol1.o dans les "flags" de compilation
+ 
+# même chose pour le deuxième exercice avec sol2
 ==
