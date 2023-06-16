@@ -93,18 +93,17 @@ code_before==
 
 ==
 
-solution==
 
-int solution();
-==
 
 code_after==
 int main(){
 
 printf("J'appel votre fonction : Question1() \n");
 int rep =Question1();
-
-
+int sol= solution()
+if (rep > sol) printf(" Votre réponse est trop grande \n");
+else if (rep < sol) printf(" Votre réponse est trop grande \n");
+else printf("Bravo bonne réponse");
 
 }
 ==
