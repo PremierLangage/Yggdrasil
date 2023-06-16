@@ -73,7 +73,7 @@ int main(int argc, char* argv[]){
   int nbs=0, nbt=0;
   while ((c = fgetc(f)) != EOF)
     { if (c == ' ')  nbs++;
-    nbt++
+    nbt++;
     }
   fclose(f);
   printf("Proportion d'espaces : %5.2%\n", ...); 
