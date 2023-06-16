@@ -40,7 +40,7 @@ Le fichier "gentil.test" contient 1000 chaines et le nombre de mots gentils est 
 </blockquote></details>
 
 ==
-
+lexemple=@exemple
 
 
 before==
