@@ -63,11 +63,8 @@ code_before==
 
 #include <stdlib.h>
 #include <stdio.h>
-typedef struct cel{  
-int val;  
-struct cel* suivant;  
-}Cellule;  
-typedef Cellule* Liste  ;
+
+
 
 ==
 
