@@ -26,6 +26,8 @@
 
 extends=/ComputerScience/C/template/std_progC.pl
 
+editor.language=c
+
 before ==#|python|
 from random import randint
 
