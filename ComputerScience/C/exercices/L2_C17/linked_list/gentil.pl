@@ -96,6 +96,7 @@ code_before==
 
 ==
 
+form= { editor | component }
 
 
 code_after==
