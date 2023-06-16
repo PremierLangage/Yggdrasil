@@ -54,7 +54,10 @@ with open("sol1.c","w") as f:
     else return 253; 
     }""")
 
-
+solution= """
+    int solution(char *name){ 
+    if (strcmp(name,"error") == 0 ) 
+    return"""+sol1+"""; else return 253; }"""
 
 import subprocess 
 
