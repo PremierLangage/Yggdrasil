@@ -2,6 +2,9 @@
 
 extends= /ComputerScience/C/template/std_progC17_clang.pl
 
+@ gentil.py
+
+
 title = Des histoires de mots
 
 text==
