@@ -52,6 +52,8 @@ with open("sol1.c","w") as f:
     else return 253; 
     }""")
 
+
+
 # sol1.c  contenant 
 
 # compilation et création du fichier sol1.o
