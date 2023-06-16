@@ -26,7 +26,7 @@ le code sur la plateforme.
 
 @ section_listes.pl
 @ affiche.pl 
-@ list_lenght.pl
+
 @ inserEnTete.pl
 @ insereSansDoublons.pl
 
