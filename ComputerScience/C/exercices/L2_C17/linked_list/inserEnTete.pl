@@ -26,7 +26,7 @@ tag=string|malloc|structure|recopiage|cellule|liste
 editor.height=350px
 
 text==#|markdown|
-Écrire une fonction **inserEnTete** qui prend en argument une Liste\* l(voir éditeur) et un Maillon* new. 
+Écrire une fonction **insereEnTete** qui prend en argument une Liste\* l(voir éditeur) et un Maillon* new. 
 
 Qui insert en Tete le maillon new dans la liste l. 
 
@@ -44,7 +44,7 @@ typedef struct _maillon {
 } *List,Maillon;
 // les types
 
-void inserEntete(List *l, Maillon *new){
+void insereEntete(List *l, Maillon *new){
   // Votre code ici...
 }
 ==
@@ -60,7 +60,7 @@ typedef struct _maillon {
     struct _maillon *suivant;
 } *List,Maillon;
 
-void insertEnTete(List *l, Maillon *new){
+void insereEnTete(List *l, Maillon *new){
     new->suivant = *l;
     *l = new;
 }
@@ -86,7 +86,7 @@ int main(int n, char **v){
     while (scanf("%d",&n) != EOF){
         Maillon *m = malloc(sizeof(Maillon));
         m->valeur = n;
-        insertEnTete(&l,m);
+        insereEnTete(&l,m);
     }
     affiche(l);
 }
