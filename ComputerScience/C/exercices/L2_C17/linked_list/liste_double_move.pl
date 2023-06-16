@@ -41,12 +41,19 @@ typedef struct _maillon {
 } Maillon , ∗ Liste;
 
 void move(Liste *source, Liste *cible) {
-    int compte=0;
-    while(lst !=NULL){
-        compte+=1;
-        lst=lst->suivant;
+    Maillon *to_move = *source;
+    Maillon *dest = *cible;
+    if (to_move == NULL) return;
+    if (to_move->prec != NULL) abort();
+    if (dest == NULL) {
+        *cible = to_move;
     }
-    return compte;
+    *source = to_move->suiv;
+    if (to_move->suiv) to_move->suiv->prec = NULL;
+    to_move->suiv = dest;
+    to_move->prev = dest->prev;
+    if (dest->prev != NULL) dest->prev->suiv = to_move;
+    dest->prev = to_move;
 }
 
 ==
