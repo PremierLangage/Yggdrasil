@@ -50,7 +50,7 @@ void inserEntete(List *l, Maillon *new){
 ==
 
 solution==#|c|
-#define _DEFAULT_SOURCE
+
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -68,7 +68,7 @@ void insertEnTete(List *l, Maillon *new){
 ==
 
 code_before==#|c|
-
+#define _DEFAULT_SOURCE
 ==
 
 code_after==#|c|
