@@ -61,10 +61,11 @@ typedef struct _maillon {
     struct _maillon *suivant;
 } *Liste,Maillon;
 
-void ajoutSansDoublons(Liste *l, Maillon *new){
-    if (*l == NULL) { new->suivant = *l;*l = new; }
-    else if ((*l)->valeur == new->valeur) return;
-    else ajoutSansDoublons(&((*l)->suivant),new);
+
+Maillon *ajoutSansDoublons(Liste *l, Maillon *new){
+    if (*l == NULL) { new->suivant = *l;*l = new;  return NULL;}
+    else if ((*l)->valeur == new->valeur) return new;
+    else return ajoutSansDoublons(&((*l)->suivant),new);
 }
 
 ==
