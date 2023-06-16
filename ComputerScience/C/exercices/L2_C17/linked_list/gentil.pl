@@ -41,6 +41,7 @@ gentil.buildfile("data")
 sol1 = gentil.Question1()
 sol2 = gentil.Question2()
 
+# crer un fichier 
 with open("sol1.c","w") as f:
     f.write("""
     int solution(){ 
@@ -48,7 +49,8 @@ with open("sol1.c","w") as f:
     f.write(sol1)
     f.write(""";}""")
 
-# crer un fichier 
+
+
 # sol1.c  contenant 
 # int solution(char *name){ return sol1; }
 # compilation et création du fichier sol1.o
