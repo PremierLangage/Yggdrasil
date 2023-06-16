@@ -102,18 +102,26 @@ Liste lire(){
 }
 
 void affiche(Liste l) {
-    for (l != NULL) {
+    for (; l != NULL; l = l->suiv) {
         printf("%d ", l->valeur);
     }
-
+    printf("\n");
+}
 
 int main(void) {
 	Liste l1 = lire();
 	Liste l2 = lire();
 
+    printf("Avant:\n");
+    affiche(l1);
+    affiche(l2);
+
     move(&l1, &l2);
+
+    printf("Après:\n");
+    affiche(l1);
+    affiche(l2);
     
-    printf("la liste contient %d element%s\n",lg,lg<2?"":"s");
 	return 0;
 }
 ==
