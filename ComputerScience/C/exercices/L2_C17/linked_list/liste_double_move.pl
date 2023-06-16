@@ -10,7 +10,7 @@ tag=Liste|Pointeur
 text==#|markdown|
 
     typedef struct _maillon {
-        int value;
+        int valeur;
         struct _maillon ∗suiv, ∗prec;
     } Maillon , ∗ Liste;
 
@@ -25,7 +25,7 @@ Attention : Vous devrez gérer le cas où source pointe sur un pointeur `NULL` e
 
 editor.code==
 typedef struct _maillon {
-    int value;
+    int valeur;
     struct _maillon ∗suiv, ∗prec;
 } Maillon , ∗ Liste;
 
@@ -43,70 +43,66 @@ typedef struct _maillon {
 void move(Liste *source, Liste *cible) {
     Maillon *to_move = *source;
     Maillon *dest = *cible;
+
     if (to_move == NULL) return;
-    if (to_move->prec != NULL) abort();
+    // on déconnecte to_move de sa liste doublement chainée
+    if (to_move->prev) to_move->prev->suiv = to_move->suiv;
+    if (to_move->suiv) to_move->suiv->prev = to_move->prev;
+    
+    // facultatif ?
+    *source = to_move->suiv; 
+    *cible = to_move;
+
     if (dest == NULL) {
-        *cible = to_move;
+        return;
     }
-    *source = to_move->suiv;
-    if (to_move->suiv) to_move->suiv->prec = NULL;
     to_move->suiv = dest;
     to_move->prev = dest->prev;
-    if (dest->prev != NULL) dest->prev->suiv = to_move;
     dest->prev = to_move;
+    if (to_move->prev != NULL) to_move->prev->suiv = to_move;
 }
 
 ==
 
 code_before==
 
-typedef struct cel{  
-    int val;  
-    struct cel* suivant;  
-} Cellule;  
-
-typedef Cellule* Liste;
-
-
-
-==
-
-code_after==
-
 #include <stdlib.h>
 #include <stdio.h>
 
-typedef Cellule* Liste  ;
- Cellule* alloue_Cellule(int x){
-Liste tmp=NULL;
+==
 
-if((tmp=(Liste)malloc(sizeof(Cellule)))!=NULL){
-    tmp->val=x;
-    tmp->suivant=NULL;
+code_after==#|c|
+
+Maillon* alloue_maillon(int x){
+    Maillon *tmp = NULL;
+    if((tmp = malloc(sizeof(Maillon))) != NULL) {
+        tmp->value = x;
+        tmp->suiv = NULL;
+        tmp->prec = NULL;
     }
-return tmp;
+    return tmp;
 }
-void lire(Liste *lst){
-    Liste tmp=NULL;
+
+Liste lire(){
+    Liste tmp = NULL;
     int x;
-    while(scanf("%d",&x)==1){
-        if(*lst==NULL){
-            *lst=alloue_Cellule(x);
-            tmp=*lst;
-            }
-        else{
-            tmp->suivant=alloue_Cellule(x);
-            tmp=tmp->suivant;
-            }
+    while(scanf("%d", &x) == 1) {
+        if (x < 0) break;
+        if(tmp == NULL) {
+            tmp = alloue_maillon(x);
+        } else {
+            tmp->prev = alloue_maillon(x);
+            tmp->prev->suiv = tmp;
+            tmp = tmp->prev;
+        }
     }
-    }
+    return tmp;
+}
 
 
 int main(void) {
-	Liste l=NULL;
-    int lg;
-    lire(&l);
-    lg=nb_cellules(l);
+	Liste l = lire();
+    
     printf("la liste contient %d element%s\n",lg,lg<2?"":"s");
 	return 0;
 }
