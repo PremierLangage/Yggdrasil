@@ -17,7 +17,7 @@
 
 extends=/ComputerScience/C/template/std_progC17_clang.pl
 
-title=Afficher le contenu d'un fichier
+title=Vers l'infini et au-delà
 
 tag=fichier|programme|affichage|lecture
 
