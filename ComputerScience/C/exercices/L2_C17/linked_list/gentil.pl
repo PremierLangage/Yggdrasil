@@ -1,6 +1,8 @@
 
 
+extends= /ComputerScience/C/template/std_progC17_clang.pl
 
+title = Des histoires de mots
 
 text==
 # Mots Méchants Mots Gentils.
@@ -77,7 +79,7 @@ if not c[0]:
 import os
 os.remove("sol1.c")
 
-# attention il faut ajouter sol1.o dans les "flags" de compilation
+# attention il faut ajouter sol1.o dans les "flags" de compilation du C 
  
 # même chose pour le deuxième exercice avec sol2
 ==
