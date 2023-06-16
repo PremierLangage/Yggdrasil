@@ -56,6 +56,22 @@ with open("sol1.c","w") as f:
 
 import subprocess 
 
+def makeO(filename):
+    """
+    compile the source in argument and return 
+    """
+    command_args = ["clang", filename, "-c"] 
+    sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    spout = sp.stdout.decode()
+    errout = sp.stderr.decode()
+    returncode = sp.returncode
+    return (returncode, spout, errout)
+
+c= compile_source("sol1.c")
+if not c[0]:
+    import sys
+    print(c,file=sys.stderr)
+
 # compilation et création du fichier sol1.o
 # effasser le fichier sol1.c 
 # attention il faut ajouter sol1.o dans les "flags" de compilation
