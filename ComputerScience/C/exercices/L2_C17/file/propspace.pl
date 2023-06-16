@@ -38,9 +38,11 @@ text==#|markdown|
 Écrire un programme C qui prend un argument qui sera toujours le nom d'un 
 fichier positionné dans le répertoire courrant et sur dont vous aurez les 
 droits de lecture. Votre programme devra ouvrir ce fichier, le 
-lire son contenu et afficher la proportion d'espaces qu'il contient.
+lire son contenu et afficher la proportion d'espaces qu'il contient. 
 
-Un fichier contenant 3 ' ' (espaces) et 3 autre caractères affichera :
+Attention on veut afficher un pourcentage. 
+
+Un fichier contenant 3 ' ' (espaces) et 3 autres caractères affichera :
 
     Proportion d'espaces : 50.00% 
 
