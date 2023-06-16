@@ -55,7 +55,6 @@ On affichera seulement les lignes pour lesquelles la proportion est non nulle. S
 toutes les lettres minuscules apparaissent, alors on affichera 26 lignes, une pour 
 chacune des lettres de l'alphabet latin.
 
-
 ==
 
 code_before==#|c|
