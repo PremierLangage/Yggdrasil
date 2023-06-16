@@ -25,7 +25,7 @@ Ecrire une fonction question1(char *filename) qui lit dans le fichier filename e
  compte et retourne le nombre de chaines (une par ligne dans le fichier) gentilles.
 
 
-
+Le fichier "gentil.test" contient 1000 chaines et le nombre de mots gentils est 253.
 
 ==
 
