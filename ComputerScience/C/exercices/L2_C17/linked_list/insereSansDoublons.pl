@@ -42,10 +42,10 @@ editor.code==#|c|
 typedef struct _maillon {
     int valeur;
     struct _maillon *suivant;
-} *List,Maillon;
+} *Liste,Maillon;
 // les types
 
-void ajoutSansDoublons(List *l, Maillon *new){
+void ajoutSansDoublons(Liste *l, Maillon *new){
   // Votre code ici...
 }
 ==
@@ -59,9 +59,9 @@ solution==#|c|
 typedef struct _maillon {
     int valeur;
     struct _maillon *suivant;
-} *List,Maillon;
+} *liste,Maillon;
 
-void ajoutSansDoublons(List *l, Maillon *new){
+void ajoutSansDoublons(Liste *l, Maillon *new){
     if (*l == NULL) { new->suivant = *l;*l = new; }
     else if ((*l)->valeur == new->valeur) return;
     else ajoutSansDoublons(&((*l)->suivant),new);
@@ -74,7 +74,7 @@ code_before==#|c|
 ==
 
 code_after==#|c|
-void affiche(List l){
+void affiche(Liste l){
     while (l != NULL){
         printf("%d ",l->valeur);
         l = l->suivant;
@@ -84,7 +84,7 @@ void affiche(List l){
 
 
 int main(int n, char **v){
-    List l = NULL;
+    Liste l = NULL;
     while (scanf("%d",&n) != EOF){
         Maillon *m = malloc(sizeof(Maillon));
         m->valeur = n;
