@@ -70,13 +70,13 @@ solution==#|c|
 int main(int argc, char* argv[]){
   FILE* f=fopen(argv[1], "r");
   int c;
-  int nbs=0, nbt=0;
+  float nbs=0, nbt=0;
   while ((c = fgetc(f)) != EOF)
     { if (c == ' ')  nbs++;
     nbt++;
     }
   fclose(f);
-  printf("Proportion d'espaces : %5.2f%%\n\n", ...); 
+  printf("Proportion d'espaces : %5.2f%%\n\n", (nbs/nbt)*100); 
   return 0;
 }
 ==
