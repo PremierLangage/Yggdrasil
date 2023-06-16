@@ -69,6 +69,7 @@ code_before==
 ==
 
 code_after==
+typedef Cellule* Liste  ;
  Cellule* alloue_Cellule(int x){
 Liste tmp=NULL;
 
