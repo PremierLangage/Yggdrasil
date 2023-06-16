@@ -35,12 +35,6 @@ qui renvoie le nombre d'éléments d'une liste chainée passée en parametre.  <
 
 editor.code==
 
-typedef struct cel{  
-    int val;  
-    struct cel* suivant;  
-} Cellule;  
-
-typedef Cellule* Liste;
 
 ... nb_cellules(...) {
    /* votre code ici... */
@@ -63,6 +57,13 @@ code_before==
 
 #include <stdlib.h>
 #include <stdio.h>
+
+typedef struct cel{  
+    int val;  
+    struct cel* suivant;  
+} Cellule;  
+
+typedef Cellule* Liste;
 
 
 
