@@ -54,7 +54,7 @@ with open("sol1.c","w") as f:
 
 
 
-# sol1.c  contenant 
+import subprocess 
 
 # compilation et création du fichier sol1.o
 # effasser le fichier sol1.c 
