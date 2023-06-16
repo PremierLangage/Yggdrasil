@@ -30,16 +30,16 @@ text==#|markdown|
 Écrire un programme C qui prend un argument qui sera toujours le nom d'un 
 fichier positionné dans le répertoire courrant et dont vous aurez les 
 droits de lecture. Votre programme devra ouvrir ce fichier,
-lire son contenu des coups aux échec et afficher les coordonées de chaque coup. 
+lire son contenu des coups aux échec et afficher les coordonées de chaque coup.   
 
-chaque ligne est de forme 
-a2-c3 
-ou a et c sont des colones et 2 et 3 des lignes.
+chaque ligne est de forme   
+a2-c3   
+ou a et c sont des colones et 2 et 3 des lignes.  
 
 pour chaque ligne vous appelerez la fonction **void lireCoup(char *coup, Pos *depart, Pos *arrive)**
 
-Pour afficher les coup on utilisera la fonction 
-printCoup(Pos a, Pos b);
+Pour afficher les coup on utilisera la fonction prédéfinie 
+**printCoup(Pos a, Pos b);**
 
 ==
 
