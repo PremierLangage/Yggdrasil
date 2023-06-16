@@ -99,6 +99,13 @@ code_before==
 form= {{ editor | component }}
 
 
+editor.code==
+int Question1(){
+// votre code 
+
+}
+==
+
 code_after==
 int main(){
 
