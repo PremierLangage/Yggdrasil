@@ -17,7 +17,12 @@ le code sur la plateforme.
 @ /ComputerScience/C/exercices/L2_C17/expressions/corrige_type1.pl
 @ testopen.pl
 @ /ComputerScience/C/exercices/L2_C17/file/propspace.pl
+
 @ tab2exam.pl
+
+@ section_echec.pl 
+
+
 
 @ section_listes.pl
 @ affiche.pl 
