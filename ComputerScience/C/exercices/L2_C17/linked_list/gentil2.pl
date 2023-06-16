@@ -22,4 +22,6 @@ Par example:
 
 Ecrire une fonction question2(char *filename) qui retourne le nombre de chaines gentilles dans le fichier passé en paramêtre.
 
+
+Le fichier "gentil.test" contient 1000 chaines et le nombre de mots gentils est 50.
 ===
