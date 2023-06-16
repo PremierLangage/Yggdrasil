@@ -76,7 +76,7 @@ int main(int argc, char* argv[]){
     nbt++;
     }
   fclose(f);
-  printf("Proportion d'espaces : %5.2%\n", ...); 
+  printf("Proportion d'espaces : %5.2f%%\n\n", ...); 
   return 0;
 }
 ==
