@@ -8,40 +8,45 @@ tag=Liste|Pointeur
 
 
 text==#|markdown|
-```c 
-typedef struct _maillon {
-    int value;
-    struct _maillon ∗suiv, ∗prec;
-} Maillon , ∗ Liste;
-```
+
+    typedef struct _maillon {
+        int value;
+        struct _maillon ∗suiv, ∗prec;
+    } Maillon , ∗ Liste;
 
 On souhaite écrire une fonction `void move(Liste *source, Liste *cible);` qui déplace le premier
 maillon de la liste pointé par source devant le maillon pointé par cible.
 
 Écrire le code de la fonction **move**.
+
 Attention : Vous devrez gérer le cas où source pointe sur un pointeur `NULL` en ne faisant rien.
 
-<code>
-    {{code_before}}
-</code>
 == 
 
 editor.code==
+typedef struct _maillon {
+    int value;
+    struct _maillon ∗suiv, ∗prec;
+} Maillon , ∗ Liste;
 
-
-... nb_cellules(...) {
+void move(Liste *source, Liste *cible) {
    /* votre code ici... */
 }
 
 ==
 solution==
-int nb_cellules(Liste lst){
-int compte=0;
-while(lst !=NULL){
-    compte+=1;
-    lst=lst->suivant;
+typedef struct _maillon {
+    int value;
+    struct _maillon ∗suiv, ∗prec;
+} Maillon , ∗ Liste;
+
+void move(Liste *source, Liste *cible) {
+    int compte=0;
+    while(lst !=NULL){
+        compte+=1;
+        lst=lst->suivant;
     }
-return compte;
+    return compte;
 }
 
 ==
