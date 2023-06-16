@@ -8,7 +8,7 @@ extends = /ComputerScience/python/template/pltest.pl
 
 @sol.py [build.py]
 @ennonce.md
-@data1
+@data1 [data]
 @exemple 
 
 title= Du lait de poule au Frigo
