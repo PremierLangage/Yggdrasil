@@ -59,7 +59,7 @@ solution==#|c|
 typedef struct _maillon {
     int valeur;
     struct _maillon *suivant;
-} *liste,Maillon;
+} *Liste,Maillon;
 
 void ajoutSansDoublons(Liste *l, Maillon *new){
     if (*l == NULL) { new->suivant = *l;*l = new; }
