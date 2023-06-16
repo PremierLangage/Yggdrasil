@@ -4,6 +4,7 @@ extends= /ComputerScience/C/template/std_progC17_clang.pl
 
 @ gentil.py
 
+@ exemple
 
 title = Des histoires de mots
 
@@ -40,6 +41,7 @@ Le fichier "gentil.test" contient 1000 chaines et le nombre de mots gentils est 
 </blockquote></details>
 
 ==
+
 lexemple=@exemple
 
 
