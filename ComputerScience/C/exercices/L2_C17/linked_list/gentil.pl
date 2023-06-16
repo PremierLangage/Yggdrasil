@@ -52,7 +52,7 @@ with open("sol1.c","w") as f:
     int solution(char *name){ 
     if (strcmp(name,"error") == 0 ) 
     return""")
-    f.write(sol1)
+    f.write(str(sol1))
     f.write(""";
     else return 253; 
     }""")
