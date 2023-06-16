@@ -36,7 +36,7 @@ chaque ligne est de forme
     a2-c3   
 où a et c sont des colones et 2 et 3 des lignes.  
 
-pour chaque ligne vous appelerez la fonction **void lireCoup(char *coup, Pos *depart, Pos *arrive)**
+Pour chaque ligne vous appelerez la fonction **void lireCoup(char *coup, Pos *depart, Pos *arrive)**
 
 Pour afficher les coup on utilisera la fonction prédéfinie 
 **printCoup(Pos a, Pos b);**
