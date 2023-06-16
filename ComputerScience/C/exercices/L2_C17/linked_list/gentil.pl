@@ -32,6 +32,13 @@ Ecrire une fonction question1(char *filename) qui lit dans le fichier filename e
 
 Le fichier "gentil.test" contient 1000 chaines et le nombre de mots gentils est 253.
 
+
+
+<div style="font-size:0.5em">
+<details><summary>Fichier exemple <button onclick="docopy('exemple')">Copy exemple</button></summary><blockquote id="exemple" style="white-space: pre-line" 
+>{{lexemple}}
+</blockquote></details>
+
 ==
 
 
