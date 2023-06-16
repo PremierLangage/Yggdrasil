@@ -96,7 +96,7 @@ code_before==
 
 ==
 
-form= { editor | component }
+form= {{ editor | component }}
 
 
 code_after==
