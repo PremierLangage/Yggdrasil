@@ -49,7 +49,12 @@ code_before==#|c|
 editor.code==#|c|
 #include <stdio.h>
 // ne pas toucher au code suivant 
+typedef struct _ { int i, int j; } Pos, Dir ;
 
+typedef struct _g { int type; int color; } Piece , Game[8][8];
+#define TOUR 3
+#define FOU 4 
+#define REINE 12
 
 void printCoup(Pos a, Pos b);
 
