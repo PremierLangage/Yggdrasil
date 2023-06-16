@@ -47,7 +47,7 @@ Un fichier contenant 3 ' ' (espaces) et 3 autres caractères affichera :
     Proportion d'espaces : 50.00% 
 
 Pour faire un affichage formaté propre, utiliser `printf` avec le format suivant :
-`"%c: %5.2f%%\n"` (le floatant est sur 5 colonnes avec 2 chiffres après la virgule.)
+`"%c: %5.2f%%\n"` (le Nombres à virgule flottante est sur 5 colonnes avec 2 chiffres après la virgule.)
 
 ==
 
