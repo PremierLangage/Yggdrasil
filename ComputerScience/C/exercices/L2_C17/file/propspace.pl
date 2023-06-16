@@ -67,16 +67,40 @@ void lireCoup(char *coup, Pos *depart, Pos *arrive){
 
 
 int main(int argc, char* argv[]){
-  // Votre code ici 
+  Pos un,deux;
 
 
-    printf("Proportion d'espaces : %5.2f%%\n", ... ); 
+    printCoup(un,deux);
 
 }
 ==
 
 solution==#|c|
 #include <stdio.h>
+
+#include <stdio.h>
+// ne pas toucher au code suivant 
+typedef struct _ { int i, int j; } Pos, Dir ;
+
+typedef struct _g { int type; int color; } Piece , Game[8][8];
+#define NOIR 0
+#define BLANC 1
+#define TOUR 3
+#define FOU 4 
+#define REINE 12
+
+void printCoup(Pos a, Pos b);
+// jusqu'ici
+
+
+
+void lireCoup(char *in, POS *debut, POS *arrive)
+{
+    debut->i = in[0]-'a';
+    debut->j = in[1]-'1';
+    arrive->i = in[3]-'a';
+    arrive->j = in[4]-'1';
+}
 
 int main(int argc, char* argv[]){
   FILE* f=fopen(argv[1], "r");
@@ -90,6 +114,7 @@ int main(int argc, char* argv[]){
   printf("Proportion d'espaces : %5.2f%%\n", (nbs/nbt)*100); 
   return 0;
 }
+
 ==
 
 code_after==#|c|
