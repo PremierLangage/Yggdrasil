@@ -45,7 +45,7 @@ typedef struct _maillon {
 } *Liste,Maillon;
 // les types
 
-void ajoutSansDoublons(Liste *l, Maillon *new){
+Maillon * ajoutSansDoublons(Liste *l, Maillon *new){
   // Votre code ici...
 }
 ==
