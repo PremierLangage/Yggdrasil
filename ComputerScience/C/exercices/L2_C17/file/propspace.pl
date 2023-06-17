@@ -83,7 +83,7 @@ solution==#|c|
 #include <stdio.h>
 #include <stdio.h>
 /* ne pas toucher au code suivant */
-typedef struct _ { int i, int j; } Pos, Dir ;
+typedef struct _ { int i; int j; } Pos, Dir ;
 
 typedef struct _g { int type; int color; } Piece , Game[8][8];
 #define NOIR 0
