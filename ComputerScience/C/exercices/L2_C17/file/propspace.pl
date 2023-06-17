@@ -34,15 +34,16 @@ lire son contenu.
 Le contenu sont des coups aux échec où chaque ligne est de la forme   
     a2-c3   
 où a et c sont des colones et 2 et 3 des lignes.  
-Vous devez transformer ces coups en coordonées **Pos** pour les utilisées dans le tableau Game. 
+Vous devez transformer ces coups en coordonées **Pos** pour les utilisées dans le tableau Game.   
 
 
 Pour chaque ligne vous appelerez la fonction **void lireCoup(char *coup, Pos *depart, Pos *arrive)** que vous devez écrire.
 
 
-Pour afficher chaque coups vous utiliserez la fonction *prédéfinie* **printCoup(Pos a, Pos b);**. 
+Pour afficher chaque coups vous utiliserez la fonction *prédéfinie* **printCoup(Pos a, Pos b);**.   
 
-Ne touchez pas au code au dessus de vos fonctions.`
+
+Ne touchez pas au code dans l'editeur qui définie les types.`
 ==
 
 beforeK==
