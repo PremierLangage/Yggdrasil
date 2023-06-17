@@ -81,9 +81,8 @@ int main(int argc, char* argv[]){
 
 solution==#|c|
 #include <stdio.h>
-
 #include <stdio.h>
-// ne pas toucher au code suivant 
+/* ne pas toucher au code suivant */
 typedef struct _ { int i, int j; } Pos, Dir ;
 
 typedef struct _g { int type; int color; } Piece , Game[8][8];
@@ -94,7 +93,7 @@ typedef struct _g { int type; int color; } Piece , Game[8][8];
 #define REINE 12
 
 void printCoup(Pos a, Pos b);
-// jusqu'ici
+/* jusqu'ici */
 
 
 
