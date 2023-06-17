@@ -109,10 +109,13 @@ void lireCoup(char *in, POS *debut, POS *arrive)
 int main(int argc, char* argv[]){
   FILE* f=fopen(argv[1], "r");
   int c;
+  char str[20];
   float nbs=0, nbt=0;
-  while ((c = fgetc(f)) != EOF)
-    { if (c == ' ')  nbs++;
-    nbt++;
+  Pos a,b;
+  while ((c = fgets(str, 10, f) != EOF)
+    { 
+      lireCoup(str,&a,&b);
+      printCoup(a,b);
     }
   fclose(f);
   printf("Proportion d'espaces : %5.2f%%\n", (nbs/nbt)*100); 
@@ -125,7 +128,7 @@ code_after==#|c|
 
 void printCoup(Pos a, Pos b){
   printf("Coup(%d,%d)-(%d,%d)\n",a.i,a.j,b.i,b.j);
-  }
+}
 ==
 
 checks_args_stdin==#|python|
