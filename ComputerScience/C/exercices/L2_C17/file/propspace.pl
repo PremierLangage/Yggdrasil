@@ -52,7 +52,7 @@ def letter():
 with open("data","w") as f :
     for x in range(1000):
       s = letter()+str(random.randint(1,8))+"-"+letter()+str(random.randint(1,8))
-      f.write(s)
+      print(s, file=f)
 
 
 ==
