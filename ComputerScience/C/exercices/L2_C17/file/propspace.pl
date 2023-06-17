@@ -75,15 +75,12 @@ void lireCoup(char *in, Pos *debut, Pos *arrive)
 }
 
 int main(int argc, char* argv[]){
-  Pos a,b;
+/* lire lefichier argv[1] ligne par ligne      */
+/* pour chaque ligne lire le coup      */
+/*  pour chaque coup appeler printCoup */
 
 
-  while (fgets(str, 10, f))
-    { 
-      lireCoup(str,&a,&b);
-      printCoup(a,b);
-    }
-  fclose(f);
+/* fermer le fichier */
   return 0;
 }
 ==
