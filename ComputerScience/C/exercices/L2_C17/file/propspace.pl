@@ -17,7 +17,7 @@
 
 extends=/ComputerScience/C/template/std_progC17_clang.pl
 
-title=Vers l'infini et au-delà
+title= Lire un fichier de Coups
 
 tag=fichier|programme|affichage|lecture
 
