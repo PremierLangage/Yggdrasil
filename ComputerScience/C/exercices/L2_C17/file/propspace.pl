@@ -132,6 +132,7 @@ int main(int argc, char* argv[]){
   while (fgets(str, 10, f))
     { 
       lireCoup(str,&a,&b);
+      printf("(%s)",str);
       printCoup(a,b);
     }
   fclose(f);
