@@ -38,13 +38,16 @@ où a et c sont des colones et 2 et 3 des lignes.
 
 Pour chaque ligne vous appelerez la fonction **void lireCoup(char *coup, Pos *depart, Pos *arrive)**
 
-Pour afficher les coup on utilisera la fonction prédéfinie 
+Pour afficher les coups on utilisera la fonction *prédéfinie* 
 **printCoup(Pos a, Pos b);**
 
 Ne touchez pas au code au dessus de vos fonctions.`
 ==
 
 code_before==#|c|
+
+
+
 ==
 
 editor.code==#|c|
@@ -120,6 +123,9 @@ int main(int argc, char* argv[]){
 
 code_after==#|c|
 
+void printCoup(Pos a, Pos b){
+  printf("Coup(%d,%d)-(%d,%d)\n",a.i,a.j,b.i,b.j);
+  }
 ==
 
 checks_args_stdin==#|python|
