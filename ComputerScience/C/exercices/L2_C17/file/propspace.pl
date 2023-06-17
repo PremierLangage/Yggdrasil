@@ -52,8 +52,9 @@ code_before==#|c|
 
 editor.code==#|c|
 #include <stdio.h>
-// ne pas toucher au code suivant 
-typedef struct _ { int i, int j; } Pos, Dir ;
+#include <stdio.h>
+/* ne pas toucher au code suivant */
+typedef struct _ { int i; int j; } Pos, Dir ;
 
 typedef struct _g { int type; int color; } Piece , Game[8][8];
 #define NOIR 0
@@ -62,20 +63,28 @@ typedef struct _g { int type; int color; } Piece , Game[8][8];
 #define FOU 4 
 #define REINE 12
 
+/* la fonction printCoup est prédéfinie pour ne pas avoir d'embiguité sur le caractères invisibles*/
 void printCoup(Pos a, Pos b);
-// jusqu'ici
+/* jusqu'ici */
 
-void lireCoup(char *coup, Pos *depart, Pos *arrive){
-    ...
+
+
+void lireCoup(char *in, Pos *debut, Pos *arrive)
+{
+...
 }
 
-
 int main(int argc, char* argv[]){
-  Pos un,deux;
+  Pos a,b;
 
 
-    printCoup(un,deux);
-
+  while (fgets(str, 10, f))
+    { 
+      lireCoup(str,&a,&b);
+      printCoup(a,b);
+    }
+  fclose(f);
+  return 0;
 }
 ==
 
@@ -107,7 +116,6 @@ void lireCoup(char *in, Pos *debut, Pos *arrive)
 
 int main(int argc, char* argv[]){
   FILE* f=fopen(argv[1], "r");
-  int c;
   char str[20];
   float nbs=0, nbt=0;
   Pos a,b;
@@ -117,7 +125,6 @@ int main(int argc, char* argv[]){
       printCoup(a,b);
     }
   fclose(f);
-  printf("Proportion d'espaces : %5.2f%%\n", (nbs/nbt)*100); 
   return 0;
 }
 
