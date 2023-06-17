@@ -212,8 +212,8 @@ int main(int argc, char const *argv[])
 ==
 
 checks_args_stdin==#|python|
-[ ["Simple éxécution", ["f1.txt"], ""],
-  ["Fichier vide", ["f3.txt"], ""],
+[ ["Convertir ", [], ""],
+  ["Fichier vide", ["VIDE.txt"], ""],
   ["Test aléatoire 1", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""],
   ["Test aléatoire 2", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""],
   ["Test aléatoire 3", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""] ]
