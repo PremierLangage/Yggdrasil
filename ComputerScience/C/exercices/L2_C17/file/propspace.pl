@@ -148,7 +148,7 @@ void printCoup(Pos a, Pos b){
 ==
 
 checks_args_stdin==#|python|
-[ ["Simple éxécution", "data",""] ]
+[ ["Simple éxécution", ["data"],""] ]
 ==
 
 xx==
