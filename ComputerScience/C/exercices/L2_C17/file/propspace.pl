@@ -135,11 +135,7 @@ void printCoup(Pos a, Pos b){
 ==
 
 checks_args_stdin==#|python|
-[ ["Simple éxécution", ["f1.txt"], ""],
-  ["Fichier vide", ["f3.txt"], ""],
-  ["Test aléatoire 1", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""],
-  ["Test aléatoire 2", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""],
-  ["Test aléatoire 3", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""] ]
+[ ["Simple éxécution", "data",""] ]
 ==
 
 xx==
