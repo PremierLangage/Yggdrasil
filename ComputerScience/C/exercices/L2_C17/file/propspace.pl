@@ -45,6 +45,15 @@ Ne touchez pas au code au dessus de vos fonctions.`
 ==
 
 beforeK==
+import random
+def letter():
+  return random.choice(['a','b','c','d','e','f','g','h'])
+
+with open("data","w") as f :
+    for x in range(1000):
+      s = letter()+str(random.randint(1,8))+"-"+letter()+str(random.randint(1,8))
+      f.write(s)
+
 
 ==
 
