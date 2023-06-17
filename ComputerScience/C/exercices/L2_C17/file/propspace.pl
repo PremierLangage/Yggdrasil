@@ -98,7 +98,7 @@ void printCoup(Pos a, Pos b);
 
 
 
-void lireCoup(char *in, POS *debut, POS *arrive)
+void lireCoup(char *in, Pos *debut, Pos *arrive)
 {
     debut->i = in[0]-'a';
     debut->j = in[1]-'1';
