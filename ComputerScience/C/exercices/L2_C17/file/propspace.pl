@@ -111,7 +111,7 @@ int main(int argc, char* argv[]){
   char str[20];
   float nbs=0, nbt=0;
   Pos a,b;
-  while ((c = fgets(str, 10, f) != EOF)
+  while (fgets(str, 10, f))
     { 
       lireCoup(str,&a,&b);
       printCoup(a,b);
