@@ -36,10 +36,12 @@ droits de lecture.
 Le fichier contient 8 ligne de 8 caractères (plus le passage à la ligne).
 
 Un **V** indique une case vide de l'échiquier. 
-Un **T** indique une TOUR noire un **t** une TOUR blanche.
-Un **F** indique une FOU noir un **f** un FOU blanc.
-Un **R** indique une TOUR noire un **r** une TOUR blanche.
+Un **T** indique une TOUR noire, un **t** une TOUR blanche.
+Un **F** indique un FOU noir, un **f** un FOU blanc.
+Un **R** indique une REINE noire, un **r** une REINE blanche.
 
+Ecrire les deux fonctions **Piece convertir(char l)** et **Game getGame(FILE *f)**
+qui convertisent un char en piece et rempli un Game et le retourne en fonction de ce que contient **f**.
 
 
 Ne touchez pas au code au dessus de vos fonctions.`
@@ -52,86 +54,160 @@ code_before==#|c|
 ==
 
 editor.code==#|c|
-#include <stdio.h>
-#include <stdio.h>
-/* ne pas toucher au code suivant */
-typedef struct _ { int i; int j; } Pos, Dir ;
 
-typedef struct _g { int type; int color; } Piece , Game[8][8];
+/*
+ Votre programme devra ouvrir ce fichier,et il lire un jeu de type **Game** (voir le type dans l'editeur).
+
+Le fichier contient 8 ligne de 8 caractères (plus le passage à la ligne).
+
+Un **V** indique une case vide de l'échiquier.
+Un **T** indique une TOUR noire un **t** une TOUR blanche.
+Un **F** indique une FOU noir un **f** un FOU blanc.
+Un **R** indique une TOUR noire un **r** une TOUR blanche.
+
+*/
+#include <stdio.h>
+
+#define VIDE 0
+#define TOUR 1
+#define FOU 2
+#define REINE 4
 #define NOIR 0
 #define BLANC 1
-#define TOUR 3
-#define FOU 4 
-#define REINE 12
 
-/* la fonction printCoup est prédéfinie pour ne pas avoir d'embiguité sur le caractères invisibles*/
-void printCoup(Pos a, Pos b);
-/* jusqu'ici */
-
-
-
-void lireCoup(char *in, Pos *debut, Pos *arrive)
+typedef struct piece
 {
-...
+    int type;
+    int color;
+} Piece;
+typedef struct
+{
+    Piece board[8][8];
+} Game;
+
+Piece convertir(char c)
+{
+    Piece p;
+    switch (c)
+    {
+
+    case 'T':
+    case 't':
+        p.type = TOUR;
+        p.color = (c == 'T') ? NOIR : BLANC;
+        break;
+    case 'F':
+    case 'f':
+        p.type = FOU;
+        p.color = (c == 'F') ? NOIR : BLANC;
+        break;
+    case 'R':
+    case 'r':
+        p.type = REINE;
+        p.color = (c == 'R') ? NOIR : BLANC;
+        break;
+    case 'V':
+    default:
+        p.type = VIDE;
+        p.color = 0;
+        break;
+    }
+    return p;
 }
 
-int main(int argc, char* argv[]){
-/* lire lefichier argv[1] ligne par ligne      */
-/* pour chaque ligne lire le coup      */
-/*  pour chaque coup appeler printCoup */
-
-
-/* fermer le fichier */
-  return 0;
+void getGame(FILE *f, Game *thegame)
+{
+    int i = 0;
+    int j = 0;
+    char str[10];
+    for (i = 0; fgets(str, 10, f); i++)
+    {
+        printf("\n");
+        for (j = 0; j < 8; j++)
+        {
+            char c = str[j];
+            thegame->board[i][j] = convertir(c);
+            // printf("%c", thegame.board[i][j].type + thegame.board[i][j].color + '0');
+        }
+    }
 }
+
+
 ==
 
 solution==#|c|
-#include <stdio.h>
-#include <stdio.h>
-/* ne pas toucher au code suivant */
-typedef struct _ { int i; int j; } Pos, Dir ;
-
-typedef struct _g { int type; int color; } Piece , Game[8][8];
-#define NOIR 0
-#define BLANC 1
-#define TOUR 3
-#define FOU 4 
-#define REINE 12
-
-void printCoup(Pos a, Pos b);
-/* jusqu'ici */
-
-
-
-void lireCoup(char *in, Pos *debut, Pos *arrive)
-{
-    debut->i = in[0]-'a';
-    debut->j = in[1]-'1';
-    arrive->i = in[3]-'a';
-    arrive->j = in[4]-'1';
-}
-
-int main(int argc, char* argv[]){
-  FILE* f=fopen(argv[1], "r");
-  char str[20];
-  float nbs=0, nbt=0;
-  Pos a,b;
-  while (fgets(str, 10, f))
-    { 
-      lireCoup(str,&a,&b);
-      printCoup(a,b);
-    }
-  fclose(f);
-  return 0;
-}
-
 ==
 
 code_after==#|c|
+void printGame(Game *tg)
+{
+    int i = 0;
+    int j = 0;
+    for (i = 0; i < 8; i++)
+    {
+        for (j = 0; j < 8; j++)
+        {
+            Piece p = tg->board[i][j];
+            switch (p.type)
+            {
+            case VIDE:
+                printf("_");
+                break;
+            case TOUR:
+                printf("%c", (p.color == NOIR) ? 'T' : 't');
+                break;
+            case FOU:
+                printf("%c", (p.color == NOIR) ? 'F' : 'f');
+                break;
+            case REINE:
+                printf("%c", (p.color == NOIR) ? 'R' : 'r');
+                break;
+            default:
+                printf("X=(%d)", p.type);
+                break;
+            }
+        }
+        printf("\n");
+    }
+}
 
-void printCoup(Pos a, Pos b){
-  printf("Coup(%d,%d)-(%d,%d)\n",a.i,a.j,b.i,b.j);
+int main(int argc, char const *argv[])
+{
+    if (argc > 1)
+    {
+        FILE *f = fopen(argv[1], "r");
+        char str[10];
+        Game thegame = {0};
+        if (f == NULL)
+        {
+            printf("Error opening file!\n");
+            return 0;
+        }
+
+        getGame(f, &thegame);
+        fclose(f);
+        printGame(&thegame);
+        return 0;
+    }
+    else
+    {
+        printf("Test de convertir \n");
+        Piece p = convertir('T');
+        printf("T-> Type = %d, Color = %d\n", p.type, p.color);
+        p = convertir('t');
+        printf("t-> Type = %d, Color = %d\n", p.type, p.color);
+        p = convertir('F');
+        printf("F-> Type = %d, Color = %d\n", p.type, p.color);
+        p = convertir('f');
+        printf("f-> Type = %d, Color = %d\n", p.type, p.color);
+        p = convertir('R');
+        printf("R-> Type = %d, Color = %d\n", p.type, p.color);
+        p = convertir('r');
+        printf("r-> Type = %d, Color = %d\n", p.type, p.color);
+        p = convertir('V');
+        printf("V-> Type = %d, Color = %d\n", p.type, p.color);
+        return 0;
+    }
 }
 ==
 
