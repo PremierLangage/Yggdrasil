@@ -42,8 +42,9 @@ Mais il ne faut pas stresser les tentatives ne retire pas beaucoup de points.
 @ inserEnTete.pl
 @ insereSansDoublons.pl
 
-@ section_double.pl
 
+@ section_double.pl
+@ liste_double_move.pl
 
 
 @ zone_51.pl
@@ -51,4 +52,3 @@ Mais il ne faut pas stresser les tentatives ne retire pas beaucoup de points.
 @ gentil.pl
 
 
-@ liste_double_move.pl
