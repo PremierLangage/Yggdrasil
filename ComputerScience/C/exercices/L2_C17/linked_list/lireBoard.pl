@@ -301,27 +301,3 @@ astuces==#|python|
 ]
 ==
 
-
-beforeXX==
-with open("VIDE.txt","w") as f:
-    print("""VVVVVVVV
-VVVVVVVV
-VVVVVVVV
-VVVVVVVV
-VVVVVVVV
-VVVVVVVV
-VVVVVVVV
-VVVVVVVV
-""",file=f)
-
-with open("TROIS.txt","w") as f:
-    print("""VVFVVVVV
-VVVTVVVV
-VVVVRVVV
-VVVVVVVV
-VVVVtVVV
-VVVrVfVV
-VVVVVfVV
-VVVVVVVV
-""",file=f)
-==
