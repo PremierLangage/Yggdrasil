@@ -45,8 +45,12 @@ void move(Liste *source, Liste *cible) {
     Maillon *to_move = *source;
     Maillon *dest = *cible;
 
+    // rien à bouger
     if (to_move == NULL) return;
-    if (to_move == dest) return; // ptete à exclure du sujet
+
+    // cas dégénérés en cas de liste commune, ptete à exclure du sujet ?
+    if (to_move == dest) return; 
+    if (dest != NULL && to_move == dest->prev) return; // rien à faire
 
     // on déconnecte to_move de sa liste doublement chainée
     if (to_move->prev) to_move->prev->suiv = to_move->suiv;
@@ -146,7 +150,9 @@ int main(void) {
 
 checks_args_stdin==#|python|
 [
-    ["Basique", "", "10 0 -1 0 8 6 -1 0"],
+    ["Basique: premier maillon vers premier maillon", "", "10 0 1 -1 8 6 -1 0 0"],
+    ["Basique: autre vers maillons", "", "-1 1 -1 0 0"],
+    ["Vide 2", "", "1 -1 -1 0 0"],
     ["Vide 1", "", "-1 1 -1 0 0"],
     ["Vide 2", "", "1 -1 -1 0 0"],
     ["Aléatoire 1", "", (lambda l1,l2: 
@@ -165,13 +171,3 @@ checks_args_stdin==#|python|
         )(randint(5,100),randint(5,100))]
 ]
 ==
-
-
-
-
-
-
-
-
-
-
