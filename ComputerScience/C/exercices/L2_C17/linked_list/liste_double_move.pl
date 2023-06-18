@@ -131,15 +131,18 @@ int main(void) {
     Maillon *s1 = m1;
     Maillon *s2 = m2;
 
-    printf("Avant:\n");
+    Liste *p1 = m1 == l1 ? &l1 : &m1;
+    Liste *p2 = m2 == l2 ? &l2 : &m2;
+
+    printf("Avant: [%d] [%d]\n", (*p1)->valeur, (*p2)->valeur);
     printf("L1:");
     affiche(l1, s1, s2);
     printf("L2:");
     affiche(l2, s1, s2);
 
-    move(m1 == l1 ? &l1 : &m1, m2 == l2 ? &l2 : &m2);
+    move(p1, p2);
 
-    printf("Après move:\n");
+    printf("Après move: [%d] [%d]\n", (*p1)->valeur, (*p2)->valeur);
     printf("L1:");
     affiche(l1, s1, s2);
     printf("L2:");
