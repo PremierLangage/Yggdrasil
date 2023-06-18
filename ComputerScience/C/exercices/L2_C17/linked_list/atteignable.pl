@@ -120,15 +120,16 @@ typedef struct
     int j;
 } Pos,Dir;
 
+Piece _piece_en(Game *G, Pos p)
+{
+    return G->board[p.i][p.j];
+}
 
 ==
 
 code_after==#|c|
 
-Piece _piece_en(Game *G, Pos p)
-{
-    return G->board[p.i][p.j];
-}
+
 
 void _place_piece(Game *J, int t, int c, Pos p)
 {
