@@ -86,10 +86,6 @@ int sens(int x, int y){
 }
 /* ne pas modifier au dessus */
 
-Dir atteignable(Game *g, Pos d, Pos a)
-{
-return (Dir){0,0};
-}
 ==
 
 solution==#|c|
