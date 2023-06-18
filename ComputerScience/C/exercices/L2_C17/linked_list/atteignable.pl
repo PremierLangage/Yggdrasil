@@ -185,10 +185,11 @@ int main(int argc, char const *argv[])
     a = atteignable(&thegame, (Pos){3, 3}, (Pos){0, 0});
     printf("Dir 0,0 : %d %d\n", a.i, a.j);
     a = atteignable(&thegame, (Pos){3, 3}, (Pos){7, 7});
-    printf("Dir : %d %d\n", a.i, a.j);
+    printf("Dir 7,7 : %d %d\n", a.i, a.j);
     a = atteignable(&thegame, (Pos){3, 3}, (Pos){7, 0});
-    printf("Dir : %d %d\n", a.i, a.j);
-
+    printf("Dir 7,0 : %d %d\n", a.i, a.j);
+    a = atteignable(&thegame, (Pos){3, 3}, (Pos){2,5});
+    printf("Dir 2,5 : %d %d\n", a.i, a.j);
     printf(" Test de attteignable REINE  en 3,3 \n");
     _place_piece(&thegame, REINE, NOIR, (Pos){3, 3});
     printf(" Test depart == arrive \n");
