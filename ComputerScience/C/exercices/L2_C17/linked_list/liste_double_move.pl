@@ -146,8 +146,8 @@ checks_args_stdin==#|python|
     ["Aléatoire 2", "", (lambda l1,l2: 
             " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
             + " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
-            + str(randint(l1))
-            + str(randint(l2))
+            + str(randint(0,l1-1))
+            + str(randint(0,l2-1))
         )(randint(5,100),randint(5,100))]
 ]
 ==
