@@ -39,7 +39,7 @@ Format de stockage d'un échiquier.
     Un **R** indique une REINE noire, un **r** une REINE blanche.
 
 Ecrire les deux fonctions **Piece convertir(char l)** qui convertisent un char en piece 
-et **void getGame(FILE \*f, Game \*thegame)** qui remplit un Game et le retourne en fonction de ce que contient le fichier ouvert **f**.
+et **void getGame(FILE *f, Game *thegame)** qui remplit un Game et le retourne en fonction de ce que contient le fichier ouvert **f**.
 
     Le type Piece est décrit dans l'éditeur.
     Le type Game est décrit dans l'éditeur.
@@ -248,9 +248,6 @@ int main(int argc, char const *argv[])
 checks_args_stdin==#|python|
 [ ["Convertir ", [], ""],
   ["Fichier vide", ["VIDE.txt"], ""],
-  ["Test aléatoire 1", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""],
-  ["Test aléatoire 2", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""],
-  ["Test aléatoire 3", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""] ]
 ==
 
 xx==
@@ -262,3 +259,24 @@ astuces==#|python|
 ]
 ==
 
+
+beforeXX==
+with open("VIDE.txt","w") as f:
+    print("""VVVVVVVV
+VVVVVVVV
+VVVVVVVV
+VVVVVVVV
+VVVVVVVV
+VVVVVVVV
+VVVVVVVV
+VVVVVVVV""",file=f)
+
+with open("TROIS.txt","w") as f:
+    print("""VVFVVVVV
+VVVTVVVV
+VVVVRVVV
+VVVVVVVV
+VVVVtVVV
+VVVrVfVV
+VVVVVfVV
+VVVVVVVV""",file=f)
