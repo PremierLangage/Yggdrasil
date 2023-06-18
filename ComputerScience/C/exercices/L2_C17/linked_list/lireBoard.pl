@@ -42,9 +42,30 @@ Ecrire les deux fonctions **Piece convertir(char l)** qui convertisent un char e
 et **Game getGame(FILE *f)** qui rempli un Game et le retourne en fonction de ce que contient le fichier ouvert **f**.
 
 
+
 Ne touchez pas au code au dessus de vos fonctions.
 
+
+
+<div style="font-size:1em">
+<details><summary>Un exemple de fichier échiquier</summary><blockquote id="odcheste" style="white-space: pre-line" 
+><code><pre>{{odcheste}}</pre></code>
+</blockquote></details>
+</div>
 ==
+
+odcheste==
+VVFVVVVV
+VVVTVVVV
+VVVVRVVV
+VVVVVVVV
+VVVVtVVV
+VVVrVfVV
+VVVVVfVV
+VVVVVVVV
+==
+
+
 
 code_before==#|c|
 
