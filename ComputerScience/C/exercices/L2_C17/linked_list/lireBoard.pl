@@ -87,8 +87,8 @@ editor.code==#|c|
 
 typedef struct piece
 {
-    int type;
-    int color;
+    int type; // TOUR FOU REINE
+    int color; // NOIR BLANC
 } Piece;
 typedef struct
 {
