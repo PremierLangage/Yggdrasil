@@ -197,15 +197,15 @@ int main(int argc, char const *argv[])
     printf((a.i == 0 && a.j == 0) ? "OK\n" : "KO\n");
     printf(" Test de attteignable REINE  en 3,3 \n");
     a = atteignable(&thegame, (Pos){3, 3}, (Pos){0, 0});
-    printf("Dir 0,0 : %d %d\n", a.i, a.j);
+    printf("Dir vers 0,0 : %d %d\n", a.i, a.j);
     a = atteignable(&thegame, (Pos){3, 3}, (Pos){7, 7});
-    printf("Dir 7,7 : %d %d\n", a.i, a.j);
+    printf("Dir vers 7,7 : %d %d\n", a.i, a.j);
     a = atteignable(&thegame, (Pos){3, 3}, (Pos){7, 0});
-    printf("Dir 7,0 : %d %d\n", a.i, a.j);
+    printf("Dir vers 7,0 : %d %d\n", a.i, a.j);
     a = atteignable(&thegame, (Pos){3, 3}, (Pos){4, 5});
-    printf("Dir 4,5 : %d %d\n", a.i, a.j);
+    printf("Dir vers 4,5 : %d %d\n", a.i, a.j);
     a = atteignable(&thegame, (Pos){3, 3}, (Pos){3, 2});
-    printf("Dir 3,2 : %d %d\n", a.i, a.j);
+    printf("Dir vers 3,2 : %d %d\n", a.i, a.j);
     return 0;
 
 }
