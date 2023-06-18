@@ -56,7 +56,7 @@ title = Les echecs
 form=
 
 
-code==#|c|
+ode==#|c|
 
 #define VIDE 0
 #define TOUR 1
