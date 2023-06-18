@@ -31,7 +31,7 @@ text==#|markdown|
 
 Format de stockage d'un échiquier.
 
-    Le fichier contient 8 ligne de 8 caractères (plus le passage à la ligne).
+    Le fichier contient 8 ligne de 8+1 caractères (passage à la ligne).
 
     Un **V** indique une case vide de l'échiquier. 
     Un **T** indique une TOUR noire, un **t** une TOUR blanche.
