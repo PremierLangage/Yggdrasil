@@ -70,12 +70,12 @@ typedef struct
 /* ne pas modifier le code précédent */
 Piece piece_en(Game *G, Pos p)
 {
-  
+;
 }
 
 void place_piece(Game *J, int t, int c, Pos p)
 {
-    
+; 
 }
 ==
 
