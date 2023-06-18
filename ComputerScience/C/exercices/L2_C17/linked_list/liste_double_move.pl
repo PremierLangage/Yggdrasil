@@ -137,8 +137,18 @@ checks_args_stdin==#|python|
 [
     ["Basique", "", "10 0 -1 8 6 -1"],
     ["Vide", "", ""],
-    ["Aléatoire 1", "", " ".join([str(randint(0,100)) for i in range(randint(5,20))])+" -1"],
-    ["Aléatoire 2", "", " ".join([str(randint(0,100)) for i in range(randint(5,100))])+" -1"]
+    ["Aléatoire 1", "", (lambda l1,l2: 
+            " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
+            + " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
+            + str(randint(l1))
+            + str(randint(l2))
+        )(randint(5,20),randint(5,20))],
+    ["Aléatoire 2", "", (lambda l1,l2: 
+            " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
+            + " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
+            + str(randint(l1))
+            + str(randint(l2))
+        )(randint(5,100),randint(5,100))]
 ]
 ==
 
