@@ -248,7 +248,7 @@ int main(int argc, char const *argv[])
 checks_args_stdin==#|python|
 [ ["Convertir ", [], ""],
   ["Echiquier vide", ["VIDE.txt"], ""],
-    ["Quelques piece ", ["TROI.txt"], ""],
+    ["Quelques piece ", ["TROIS.txt"], ""],
 ==
 
 xx==
