@@ -43,9 +43,6 @@ et **Game getGame(FILE *f)** qui rempli un Game et le retourne en fonction de ce
 
     Les pieces sont décritent dans l'éditeur.
 
-Ne touchez pas au code au dessus de vos fonctions.
-
-
 
 <div style="font-size:1em">
 <details><summary>Un exemple de fichier échiquier</summary><blockquote id="odcheste" style="white-space: pre-line" 
