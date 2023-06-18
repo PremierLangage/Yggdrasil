@@ -26,7 +26,7 @@ Attention : Vous devrez gérer le cas où source pointe sur un pointeur `NULL` e
 editor.code==
 typedef struct _maillon {
     int valeur;
-    struct _maillon *suiv, *prec;
+    struct _maillon *suiv, *prev;
 } Maillon , *Liste;
 
 
