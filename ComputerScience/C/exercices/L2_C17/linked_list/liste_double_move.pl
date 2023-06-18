@@ -29,10 +29,37 @@ typedef struct _maillon {
     struct _maillon *suiv, *prev;
 } Maillon , *Liste;
 
-void move(Liste *source, Liste *cible) {
-   /* votre code ici... */
-}
+   /*
 
+void move(Liste *source, Liste *cible) {
+ votre code ici...
+}
+ */
+
+
+void move(Liste *source, Liste *cible) {
+    Maillon *to_move = *source;
+    Maillon *dest = *cible;
+
+    if (to_move == NULL) return;
+    if (to_move == dest) return; // ptete à exclure du sujet
+
+    // on déconnecte to_move de sa liste doublement chainée
+    if (to_move->prev) to_move->prev->suiv = to_move->suiv;
+    if (to_move->suiv) to_move->suiv->prev = to_move->prev;
+    
+    // facultatif ?
+    *source = to_move->suiv; 
+    *cible = to_move;
+
+    if (dest == NULL) {
+        return;
+    }
+    to_move->suiv = dest;
+    to_move->prev = dest->prev;
+    dest->prev = to_move;
+    if (to_move->prev != NULL) to_move->prev->suiv = to_move;
+}
 ==
 solution==
 typedef struct _maillon {
@@ -110,8 +137,8 @@ void affiche(Liste l) {
 }
 
 int main(void) {
-    Liste l1 = lire();
-    Liste l2 = lire();
+	Liste l1 = lire();
+	Liste l2 = lire();
 
     printf("Avant:\n");
     printf("L1:");affiche(l1);
@@ -127,14 +154,12 @@ int main(void) {
 }
 ==
 
+beforeLL==
 
-checks_args_stdin==#|python|
-[
-    ["Basique", "", "10 0 -1 8 6 -1"],
-    ["Vide", "", ""],
-    ["Aléatoire 1", "", " ".join([str(randint(-0,100)) for i in range(randint(5,20))])+" -1"],
-    ["Aléatoire 2", "", " ".join([str(randint(-0,100)) for i in range(randint(5,100))])+" -1"]
-]
+import random
+checks_args_stdin= [ ["Basique", [], "10 0 -1 8 6 -1"], ["Vide", [], ""],["Aléatoire 1", [], " ".join([str(random.randint(0,100)) for i in range(random.randint(5,20))])+" -1"+" ".join([str(random.randint(0,100)) for i in range(random.randint(5,20))])+" -1"],["Aléatoire 2", [], " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,100))])+" -1"+" ".join([str(random.randint(0,100)) for i in range(random.randint(5,20))])+" -1"]]
+
+text += str(checks_args_stdin)
 ==
 
 
