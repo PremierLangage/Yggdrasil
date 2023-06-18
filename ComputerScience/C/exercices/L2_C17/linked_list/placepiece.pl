@@ -78,13 +78,12 @@ typedef struct
 
 Piece piece_en(Game *G, Pos p)
 {
-    return G->board[p.i][p.j];
+  
 }
 
 void place_piece(Game *J, int t, int c, Pos p)
 {
-    J->board[p.i][p.j].type = t;
-    J->board[p.i][p.j].color = c;
+    
 }
 ==
 
