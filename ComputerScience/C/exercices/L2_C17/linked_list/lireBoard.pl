@@ -94,48 +94,12 @@ typedef struct
 
 Piece convertir(char c)
 {
-    Piece p;
-    switch (c)
-    {
-
-    case 'T':
-    case 't':
-        p.type = TOUR;
-        p.color = (c == 'T') ? NOIR : BLANC;
-        break;
-    case 'F':
-    case 'f':
-        p.type = FOU;
-        p.color = (c == 'F') ? NOIR : BLANC;
-        break;
-    case 'R':
-    case 'r':
-        p.type = REINE;
-        p.color = (c == 'R') ? NOIR : BLANC;
-        break;
-    case 'V':
-    default:
-        p.type = VIDE;
-        p.color = 0;
-        break;
-    }
-    return p;
+        return (Piece){0,0};
 }
 
 void getGame(FILE *f, Game *thegame)
 {
-    int i = 0;
-    int j = 0;
-    char str[10];
-    for (i = 0; fgets(str, 10, f); i++)
-    {
-        for (j = 0; j < 8; j++)
-        {
-            char c = str[j];
-            thegame->board[i][j] = convertir(c);
-            // printf("%c", thegame.board[i][j].type + thegame.board[i][j].color + '0');
-        }
-    }
+
 }
 
 
