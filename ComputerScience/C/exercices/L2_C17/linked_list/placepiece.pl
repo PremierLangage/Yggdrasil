@@ -81,6 +81,88 @@ solution==#|c|
 ==
 
 code_after==#|c|
+
+/*
+ Votre programme devra ouvrir ce fichier,et il lire un jeu de type **Game** (voir le type dans l'editeur).
+
+Le fichier contient 8 ligne de 8 caractères (plus le passage à la ligne).
+
+Un **V** indique une case vide de l'échiquier.
+Un **T** indique une TOUR noire un **t** une TOUR blanche.
+Un **F** indique une FOU noir un **f** un FOU blanc.
+Un **R** indique une TOUR noire un **r** une TOUR blanche.
+
+*/
+#include <stdio.h>
+
+#define VIDE 0
+#define TOUR 1
+#define FOU 2
+#define REINE 4
+#define NOIR 0
+#define BLANC 1
+
+typedef struct piece
+{
+    int type;
+    int color;
+} Piece;
+typedef struct
+{
+    Piece board[8][8];
+} Game;
+typedef struct
+{
+    int i;
+    int j;
+} Pos;
+
+Piece convertir(char c)
+{
+    Piece p;
+    switch (c)
+    {
+
+    case 'T':
+    case 't':
+        p.type = TOUR;
+        p.color = (c == 'T') ? NOIR : BLANC;
+        break;
+    case 'F':
+    case 'f':
+        p.type = FOU;
+        p.color = (c == 'F') ? NOIR : BLANC;
+        break;
+    case 'R':
+    case 'r':
+        p.type = REINE;
+        p.color = (c == 'R') ? NOIR : BLANC;
+        break;
+    case 'V':
+    default:
+        p.type = VIDE;
+        p.color = 0;
+        break;
+    }
+    return p;
+}
+
+void getGame(FILE *f, Game *thegame)
+{
+    int i = 0;
+    int j = 0;
+    char str[10];
+    for (i = 0; fgets(str, 10, f); i++)
+    {
+        printf("\n");
+        for (j = 0; j < 8; j++)
+        {
+            char c = str[j];
+            thegame->board[i][j] = convertir(c);
+            // printf("%c", thegame.board[i][j].type + thegame.board[i][j].color + '0');
+        }
+    }
+}
 void printGame(Game *tg)
 {
     int i = 0;
@@ -113,52 +195,73 @@ void printGame(Game *tg)
     }
 }
 
+Piece piece_en(Game *G, Pos p)
+{
+    return G->board[p.i][p.j];
+}
+
+void place_piece(Game *J, int t, int c, Pos p)
+{
+    J->board[p.i][p.j].type = t;
+    J->board[p.i][p.j].color = c;
+}
+
+void printPiece(Piece x)
+{
+    printf("Piece : type = %d, color = %d\n", x.type, x.color);
+    switch (x.type)
+    {
+    case VIDE:
+        printf("VIDE\n");
+        break;
+    case TOUR:
+        printf("TOUR ");
+        printf(x.color == NOIR ? "NOIRE\n" : "BLANCHE\n");
+        break;
+    case FOU:
+        printf("FOU");
+        printf(x.color == NOIR ? "NOIR\n" : "BLANC\n");
+        break;
+    case REINE:
+        printf("REINE");
+        printf(x.color == NOIR ? "NOIRE\n" : "BLANCHE\n");
+        break;
+    default:
+        printf("X=(%d)\n", x.type);
+        break;
+    }
+}
+
 int main(int argc, char const *argv[])
 {
     if (argc > 1)
     {
-        FILE *f = fopen(argv[1], "r");
-        char str[10];
+        // FILE *f = fopen(argv[1], "r");
+        // char str[10];
         Game thegame = {0};
-        if (f == NULL)
-        {
-            printf("Error opening file!\n");
-            return 0;
-        }
+        // if (f == NULL)
+        // {
+        //     printf("Error opening file!\n");
+        //     return 0;
+        // }
 
-        getGame(f, &thegame);
-        fclose(f);
+        // getGame(f, &thegame);
+        // fclose(f);
+        place_piece(&thegame, TOUR, NOIR, (Pos){0, 0});
+        printPiece(piece_en(&thegame, (Pos){0, 0}));
+        for (int i = 0; i < 8; i++)
+        {
+            place_piece(&thegame, TOUR, i % 2 ? NOIR : BLANC, (Pos){i, i});
+        }
         printGame(&thegame);
         return 0;
     }
-    else
-    {
-        printf("Test de convertir \n");
-        Piece p = convertir('T');
-        printf("T-> Type = %d, Color = %d\n", p.type, p.color);
-        p = convertir('t');
-        printf("t-> Type = %d, Color = %d\n", p.type, p.color);
-        p = convertir('F');
-        printf("F-> Type = %d, Color = %d\n", p.type, p.color);
-        p = convertir('f');
-        printf("f-> Type = %d, Color = %d\n", p.type, p.color);
-        p = convertir('R');
-        printf("R-> Type = %d, Color = %d\n", p.type, p.color);
-        p = convertir('r');
-        printf("r-> Type = %d, Color = %d\n", p.type, p.color);
-        p = convertir('V');
-        printf("V-> Type = %d, Color = %d\n", p.type, p.color);
-        return 0;
-    }
+
 }
 ==
 
 checks_args_stdin==#|python|
-[ ["Convertir ", [], ""],
-  ["Fichier vide", ["VIDE.txt"], ""],
-  ["Test aléatoire 1", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""],
-  ["Test aléatoire 2", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""],
-  ["Test aléatoire 3", [choice(["f2.txt", "f4.txt", "f5.txt", "f6.txt", "titi", "toto"])], ""] ]
+[ ["Place piece  ", ["-"], ""],
 ==
 
 xx==
