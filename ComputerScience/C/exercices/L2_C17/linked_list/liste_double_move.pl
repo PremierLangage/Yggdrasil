@@ -157,7 +157,7 @@ int main(void) {
 beforeLL==
 
 import random
-checks_args_stdin= [ ["Basique", [], "10 0 -1 8 6 -1"], ["Vide", [], ""],["Aléatoire 1", [], " ".join([str(random.randint(0,100)) for i in range(random.randint(5,20))])+" -1"+" ".join([str(random.randint(0,100)) for i in range(random.randint(5,20))])+" -1"],["Aléatoire 2", [], " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,100))])+" -1"+" ".join([str(random.randint(0,100)) for i in range(random.randint(5,20))])+" -1"]]
+checks_args_stdin= [ ["Basique", [], "10 0 -1 8 6 -1"], ["Vide", [], ""],["Aléatoire 1", [], " ".join([str(random.randint(0,100)) for i in range(random.randint(5,20))])+" -1 "+" ".join([str(random.randint(0,100)) for i in range(random.randint(5,20))])+" -1"],["Aléatoire 2", [], " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,100))])+" -1 "+" ".join([str(random.randint(0,100)) for i in range(random.randint(5,20))])+" -1"]]
 
 text += str(checks_args_stdin)
 ==
