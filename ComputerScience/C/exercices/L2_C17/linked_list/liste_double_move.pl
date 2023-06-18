@@ -105,9 +105,9 @@ Liste lire(){
     return tmp;
 }
 
-void affiche(Liste l, int hl) {
+void affiche(Liste l, Maillon *m1, Maillon *m2) {
     for (; l != NULL; l = l->suiv, hl--) {
-        if (hl == 0) printf(" [%d] ", l->valeur);
+        if (l == s1 || l == s2) printf(" [%d] ", l->valeur);
         else printf(" %d ", l->valeur);
     }
     printf("\n");
@@ -128,19 +128,22 @@ int main(void) {
     for (int i = 0; i < i2; i++)
         m2 = m2->suiv;
 
+    Maillon *s1 = m1;
+    Maillon *s2 = m2;
+
     printf("Avant:\n");
     printf("L1:");
-    affiche(l1, i1);
+    affiche(l1, s1, s2);
     printf("L2:");
-    affiche(l2, i2);
+    affiche(l2, s1, s2);
 
     move(m1 == l1 ? &l1 : &m1, m2 == l2 ? &l2 : &m2);
 
     printf("Après move:\n");
     printf("L1:");
-    affiche(l1, -1);
+    affiche(l1, s1, s2);
     printf("L2:");
-    affiche(l2, i2+1);
+    affiche(l2, s1, s2);
     
 	return 0;
 }
