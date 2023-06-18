@@ -81,7 +81,7 @@ code_after==#|c|
 Maillon* alloue_maillon(int x){
     Maillon *tmp = NULL;
     if((tmp = malloc(sizeof(Maillon))) != NULL) {
-        tmp->value = x;
+        tmp->valeur = x;
         tmp->suiv = NULL;
         tmp->prev = NULL;
     }
