@@ -9,7 +9,7 @@
 extends=/template/default.pl
 
 
-text==
+text==#|markdown|
 
 La section suivante est consacrée au jeu d'échec.
 
