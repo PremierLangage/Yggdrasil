@@ -14,8 +14,18 @@ text==#|markdown|
         struct _maillon ∗suiv, ∗prev;
     } Maillon , ∗ Liste;
 
-On souhaite écrire une fonction `void move(Liste *source, Liste *cible);` qui déplace le premier
-maillon de la liste pointé par source devant le maillon pointé par cible.
+On souhaite écrire une fonction `void move(Liste *source, Liste *cible);` qui déplace le maillon 
+de la liste pointé par source devant le maillon pointé par cible.
+Le pointeur `*source` pointe alors sur l'élément suivant s'il existe, et `*cible` pointe sur le maillon déplacé (en cas de succès).
+
+Par exemple:
+```
+L1 -> 1  0  10 
+L2 -> 6  8 
+Après move(&L1, &L2)
+L1 -> 0  10 
+L2 -> 1  6  8
+```
 
 Écrire le code de la fonction **move**.
 
@@ -55,7 +65,7 @@ void move(Liste *source, Liste *cible) {
     if (to_move->prev) to_move->prev->suiv = to_move->suiv;
     if (to_move->suiv) to_move->suiv->prev = to_move->prev;
     
-    // facultatif ?
+    // facultatif ? non
     *source = to_move->suiv; 
     *cible = to_move;
 
