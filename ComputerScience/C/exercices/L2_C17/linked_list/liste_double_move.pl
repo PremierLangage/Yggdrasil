@@ -26,8 +26,10 @@ Attention : Vous devrez gérer le cas où source pointe sur un pointeur `NULL` e
 editor.code==
 typedef struct _maillon {
     int valeur;
-    struct _maillon ∗suiv, ∗prec;
-} Maillon , ∗ Liste;
+    struct _maillon *suiv, *prec;
+} Maillon , *Liste;
+
+
 
 void move(Liste *source, Liste *cible) {
    /* votre code ici... */
@@ -36,9 +38,10 @@ void move(Liste *source, Liste *cible) {
 ==
 solution==
 typedef struct _maillon {
-    int value;
-    struct _maillon ∗suiv, ∗prec;
-} Maillon , ∗ Liste;
+    int valeur;
+    struct _maillon *suiv, *prev;
+} Maillon , *Liste;
+
 
 void move(Liste *source, Liste *cible) {
     Maillon *to_move = *source;
