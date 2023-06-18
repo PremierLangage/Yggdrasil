@@ -41,7 +41,9 @@ On souhaite écrire une fonction vérifiant la validité du déplacement d’une
 
 Écrire une fonction **int verif_chemin(Jeu * J, Pos depart, Pos arrivee)** vérifiant que le chemin entre les deux cases depart et arrivee est libre, sauf éventuellement sur la case d’arrivée qui peut contenir une pièce adverse. Elle retourne 1 en cas de chemin valide, 0 sinon.
 
-On suppose que la fonction atteignable définie dans l'exercice précédent existe (ne pas la redéfinir). 
+On suppose que la fonction atteignable définie dans l'exercice précédent existe (ne pas la redéfinir),
+ l'idée est d'utiliser la direction **Dir** pour ne pas traiter trop de cas. 
+
 
 
 Ne touchez pas au code au dessus de vos fonctions.`
