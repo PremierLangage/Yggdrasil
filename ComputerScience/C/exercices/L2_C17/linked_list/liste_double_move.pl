@@ -114,19 +114,23 @@ int main(void) {
     Liste l1 = lire();
     Liste l2 = lire();
 
+    int m1, m2;
+    if (scanf("%d%d", &m1, &m2) != 2)
+        return 1;
+
     printf("Avant:\n");
     printf("L1:");
-    affiche(l1);
+    affiche(l1, m1);
     printf("L2:");
-    affiche(l2);
+    affiche(l2, m2);
 
     move(&l1, &l2);
 
     printf("Après move:\n");
     printf("L1:");
-    affiche(l1);
+    affiche(l1, m1);
     printf("L2:");
-    affiche(l2);
+    affiche(l2, m2);
     
 	return 0;
 }
