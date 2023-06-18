@@ -92,7 +92,7 @@ typedef struct piece
 } Piece;
 typedef struct
 {
-Piece board[8][8];
+    Piece board[8][8];
 } Game;
 
 Piece convertir(char c)
