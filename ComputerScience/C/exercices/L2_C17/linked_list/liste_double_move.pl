@@ -114,23 +114,30 @@ int main(void) {
     Liste l1 = lire();
     Liste l2 = lire();
 
-    int m1, m2;
-    if (scanf("%d%d", &m1, &m2) != 2)
+    int i1, i2;
+    if (scanf("%d%d", &i1, &i2) != 2)
         return 1;
+
+    Maillon *m1 = l1;
+    for (int i = 0; i < i1; i++)
+        m1 = m1->suiv;
+    Maillon *m2 = l2;
+    for (int i = 0; i < i2; i++)
+        m2 = m2->suiv;
 
     printf("Avant:\n");
     printf("L1:");
-    affiche(l1, m1);
+    affiche(l1, i1);
     printf("L2:");
-    affiche(l2, m2);
+    affiche(l2, i2);
 
-    move(&l1, &l2);
+    move(&m1, &m2);
 
     printf("Après move:\n");
     printf("L1:");
-    affiche(l1, m1);
+    affiche(l1, i1);
     printf("L2:");
-    affiche(l2, m2);
+    affiche(l2, i2);
     
 	return 0;
 }
