@@ -200,7 +200,6 @@ void getGame(FILE *f, Game *thegame)
     char str[10];
     for (i = 0; fgets(str, 10, f); i++)
     {
-        printf("\n");
         for (j = 0; j < 8; j++)
         {
             char c = str[j];
