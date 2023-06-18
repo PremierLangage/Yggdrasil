@@ -138,9 +138,9 @@ int main(void) {
 
     printf("Après move:\n");
     printf("L1:");
-    affiche(l1, i1);
+    affiche(l1, -1);
     printf("L2:");
-    affiche(l2, i2);
+    affiche(l2, i2+1);
     
 	return 0;
 }
