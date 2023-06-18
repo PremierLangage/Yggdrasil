@@ -34,7 +34,7 @@ et la reine) située en e4 peut aller. Noter que dans le diagramme de gauche, la
 aller ni en g7, ni en h7. Elle peut néanmoins prendre le cavalier blanc en b2, mais ne peut pas se déplacer
 en b1.  
 
-```c
+<code>
 
 /*
  Votre programme devra ouvrir ce fichier,et il lire un jeu de type **Game** (voir le type dans l'editeur).
@@ -65,7 +65,7 @@ typedef struct
 {
     Piece board[8][8];
 } Game;
-```
+<code>
 ==
 title = Les echecs
 form=
