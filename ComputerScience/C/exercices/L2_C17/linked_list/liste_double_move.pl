@@ -40,7 +40,6 @@ typedef struct _maillon {
     struct _maillon *suiv, *prev;
 } Maillon , *Liste;
 
-
 void move(Liste *source, Liste *cible) {
     Maillon *to_move = *source;
     Maillon *dest = *cible;
