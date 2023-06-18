@@ -29,21 +29,9 @@ editor.height=300px
 
 
 text==#|markdown|
-Écrire un programme C qui prend un argument qui sera toujours le nom d'un 
-fichier positionné dans le répertoire courrant et dont vous aurez les 
-droits de lecture.  
- Votre programme devra ouvrir ce fichier,et il lire un jeu de type **Game** (voir le type dans l'editeur).
-
-Le fichier contient 8 ligne de 8 caractères (plus le passage à la ligne).
-
-Un **V** indique une case vide de l'échiquier. 
-Un **T** indique une TOUR noire, un **t** une TOUR blanche.
-Un **F** indique un FOU noir, un **f** un FOU blanc.
-Un **R** indique une REINE noire, un **r** une REINE blanche.
 
 Ecrire les deux fonctions **place_piece(Game *g, Piece p)** et **Piece piece_en(Game *jeu,Pos case)**
  qui respectivement ajoute la pice p au jeu et lit la piece en position case du jeu.
-
 
 
 Ne touchez pas au code au dessus de vos fonctions.`
@@ -79,7 +67,7 @@ typedef struct
     int i;
     int j;
 } Pos,Dir;
-
+/* ne pas modifier le code précédent */
 Piece piece_en(Game *G, Pos p)
 {
   
