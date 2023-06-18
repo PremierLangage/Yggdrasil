@@ -90,7 +90,7 @@ int sens(int x, int y){
 
 Dir atteignable(Game *g, Pos d, Pos a)
 {
-
+return (Dir){0,0};
 }
 ==
 
