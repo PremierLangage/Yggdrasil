@@ -41,8 +41,8 @@ Format de stockage d'un échiquier.
 Ecrire les deux fonctions **Piece convertir(char l)** qui convertisent un char en piece 
 et **Game getGame(FILE *f)** qui rempli un Game et le retourne en fonction de ce que contient le fichier ouvert **f**.
 
-    Les pieces sont décritent dans l'éditeur.
-
+    Le type Piece est décrit dans l'éditeur.
+    Le type Game est décrit dans l'éditeur.
 
 <div style="font-size:1em">
 <details><summary>Un exemple de fichier échiquier</summary><blockquote id="odcheste" style="white-space: pre-line" 
