@@ -74,7 +74,11 @@ typedef struct
 {
     Piece board[8][8];
 } Game;
-
+typedef struct
+{
+    int i;
+    int j;
+} Pos,Dir;
 
 Piece piece_en(Game *G, Pos p)
 {
