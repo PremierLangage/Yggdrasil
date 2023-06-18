@@ -104,8 +104,8 @@ Liste lire(){
 
 void affiche(Liste l, int hl) {
     for (; l != NULL; l = l->suiv, hl--) {
-        if (hl == 0) printf(" [%d]", l->valeur);
-        else printf(" %d", l->valeur);
+        if (hl == 0) printf(" [%d] ", l->valeur);
+        else printf(" %d ", l->valeur);
     }
     printf("\n");
 }
