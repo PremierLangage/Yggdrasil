@@ -28,7 +28,7 @@ editor.height=300px
 
 text==#|markdown|
 Écrire un programme C qui prend un argument qui sera toujours le nom d'un 
-fichier positionné dans le répertoire courrant et dont vous aurez les 
+fichier positionné dans le répertoire courant et dont vous aurez les 
 droits de lecture. Votre programme devra ouvrir ce fichier,
 lire son contenu. 
 Le contenu sont des coups aux échec où chaque ligne est de la forme   
@@ -37,7 +37,7 @@ où a et c sont des colones et 2 et 3 des lignes.
 Vous devez transformer ces coups en coordonées **Pos** pour les utilisées dans le tableau Game.   
 
 
-Pour chaque ligne vous appelerez la fonction **void lireCoup(char *coup, Pos *depart, Pos *arrive)** que vous devez écrire.
+Pour chaque ligne vous appelerez la fonction **void lireCoup(char \*coup, Pos \*depart, Pos \*arrive)** que vous devez écrire.
 
 
 Pour afficher chaque coups vous utiliserez la fonction *prédéfinie* **printCoup(Pos a, Pos b);**.   
