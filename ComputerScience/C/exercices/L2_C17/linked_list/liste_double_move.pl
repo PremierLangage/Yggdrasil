@@ -22,10 +22,14 @@ Par exemple:
 
     L1 -> 1  0  10 
     L2 -> 6  8 
+
     Après move(&L1, &L2)
     L1 -> 0  10 
     L2 -> 1  6  8
 
+    Après move(&(L2->suiv), &(L1->suiv))
+    L1 -> 0 6 10
+    L2 -> 1 8
 
 Écrire le code de la fonction **move**.
 
