@@ -41,6 +41,15 @@ Voic un code de base pour démarrer dans votre IDE de choix.
 >{{ode}}
 </blockquote></details>
 
+L'échiquier est stocké dans un fichier de la façon suivante :
+Le fichier contient 8 ligne de 8+1 caractères (avec le passage à la ligne).
+
+Un **V** indique une case vide de l'échiquier.
+Un **T** indique une TOUR noire un **t** une TOUR blanche.
+Un **F** indique une FOU noir un **f** un FOU blanc.
+Un **R** indique une TOUR noire un **r** une TOUR blanche.
+
+
 ==
 
 title = Les echecs
@@ -73,4 +82,7 @@ typedef struct {
     int j;
 } Pos, Dir;
 
+/*
+
+*/
 ==
