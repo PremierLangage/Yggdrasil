@@ -122,6 +122,12 @@ Piece _piece_en(Game *G, Pos p)
 {
     return G->board[p.i][p.j];
 }
+Dir atteignable(Game *J, Pos depart, Pos arrivee);
+
+==
+
+code_after==#|c|
+
 
 
 int sens(int x, int y){
@@ -151,12 +157,6 @@ Dir atteignable(Game *J, Pos depart, Pos arrivee)
     }
     return (Dir){sens(depart.i, arrivee.i), sens(depart.j, arrivee.j)};
 }
-
-
-==
-
-code_after==#|c|
-
 
 
 void _place_piece(Game *J, int t, int c, Pos p)
