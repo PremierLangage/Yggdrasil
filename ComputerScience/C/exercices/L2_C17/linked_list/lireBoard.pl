@@ -223,7 +223,7 @@ int main(int argc, char *argv[])
 
         
         getGame(f, &thegame);
-        printf("Fichier lu");
+        printf("Echiquier lu : \n");
         fclose(f);
         printGame(&thegame);
         return 0;
