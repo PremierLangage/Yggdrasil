@@ -260,7 +260,7 @@ int main(int argc, char const *argv[])
 ==
 
 checks_args_stdin==#|python|
-[ ["Place piece  ", ["-"], ""],
+[ ["Place piece  ", [], ""],
 ==
 
 xx==
