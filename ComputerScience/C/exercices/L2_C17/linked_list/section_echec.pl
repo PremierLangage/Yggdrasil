@@ -58,8 +58,6 @@ form=
 
 ode==
 
-#include <stdio.h>
-
 #define VIDE 0
 #define TOUR 1
 #define FOU 2
@@ -72,6 +70,7 @@ typedef struct piece
     int type;
     int color;
 } Piece;
+
 typedef struct
 {
     Piece board[8][8];
@@ -82,7 +81,4 @@ typedef struct {
     int j;
 } Pos, Dir;
 
-/*
-
-*/
 ==
