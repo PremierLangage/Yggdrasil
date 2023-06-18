@@ -220,9 +220,9 @@ int main(int argc, char const *argv[])
             printf("Error opening file!\n");
             return 0;
         }
-        printf(" File opened");
+        printf("Fichier ouvert");
         getGame(f, &thegame);
-        printf(" File red");
+        printf("Fichier lu");
         fclose(f);
         printGame(&thegame);
         return 0;
