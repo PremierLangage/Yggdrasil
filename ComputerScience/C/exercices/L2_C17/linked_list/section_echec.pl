@@ -34,6 +34,8 @@ et la reine) située en e4 peut aller. Noter que dans le diagramme de gauche, la
 aller ni en g7, ni en h7. Elle peut néanmoins prendre le cavalier blanc en b2, mais ne peut pas se déplacer
 en b1.  
 
+![Figure 1](http://igm.univ-mlv.fr/~derycke/l2_c17_rattrapage_fig1.png)
+
 Voic un code de base pour démarrer dans votre IDE de choix.
 
 <div style="font-size:1em">
