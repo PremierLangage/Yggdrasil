@@ -87,6 +87,7 @@ int sens(int x, int y){
     return -1;
 }
 /* ne pas modifier au dessus */
+
 Dir atteignable(Game *g, Pos d, Pos a)
 {
 
