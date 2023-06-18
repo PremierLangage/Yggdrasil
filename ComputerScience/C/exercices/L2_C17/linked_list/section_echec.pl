@@ -28,6 +28,7 @@ La tour se déplace horizontalement ou verticalement d’autant de cases qu’el
 lui en diagonale d’autant de cases qu’il le souhaite. Enfin, la dame se déplace comme la tour et le fou : elle
 peut donc se déplacer verticalement, horizontalement et en diagonale d’autant de cases qu’elle veut.  
 
+---
 
 Par exemple, dans la Figure 1, on a indiqué en couleur toutes les cases où la tour (respectivement le fou
 et la reine) située en e4 peut aller. Noter que dans le diagramme de gauche, la tour noire en b7 ne peut
