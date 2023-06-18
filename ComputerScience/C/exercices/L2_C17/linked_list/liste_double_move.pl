@@ -168,9 +168,23 @@ checks_args_stdin==#|python|
             + " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
             + str(randint(1,l1-1))
             + " "
-            + "1"
+            + "0"
+        )(randint(5,20),randint(5,20))],
+    ["Aléatoire 3", "", (lambda l1,l2: 
+            " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
+            + " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
+            + str(randint(1,l1-1))
+            + " "
+            + str(randint(1,l2-1))
+        )(randint(5,20),randint(5,20))],
+    ["Aléatoire 4", "", (lambda l1,l2: 
+            " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
+            + " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
+            + str(randint(1,l1-1))
+            + " "
+            + str(randint(1,l2-1))
         )(randint(5,100),randint(5,100))],
-    ["Aléatoire 2", "", (lambda l1,l2: 
+    ["Aléatoire 5", "", (lambda l1,l2: 
             " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
             + " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
             + str(randint(1,l1-1))
