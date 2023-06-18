@@ -27,10 +27,10 @@ tag=string|malloc|structure|recopiage|cellule|liste
 editor.height=350px
 
 text==#|markdown|
-Écrire une fonction **ajoutSansDoublons** qui prend en argument une Liste\* **l**(voir éditeur) et un Maillon* **new**. 
-Et qui ajoute à la fin de la liste l si le maillon **new** si la valeur n'est pas déjà présente.
+Écrire une fonction **ajoutSansDoublons** qui prend en argument une Liste\* **l**(voir éditeur) et un Maillon\* **new**. 
+Et qui ajoute à la fin de la liste `l` si le maillon **new** si la valeur n'est pas déjà présente.
 
-La fonction retourne NULL en cas d'ajout et retourne **new** en cas de présence de la valeur.
+La fonction retourne `NULL` en cas d'ajout et retourne **new** en cas de présence de la valeur.
 
 
 ==
