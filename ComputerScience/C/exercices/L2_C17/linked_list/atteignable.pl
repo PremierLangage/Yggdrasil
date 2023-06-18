@@ -142,7 +142,7 @@ int main(int argc, char const *argv[])
     // test de attteignable
     printf(" Test de attteignable Tour Noire en 0,0 \n");
     Game thegame = {0};
-    place_piece(&thegame, TOUR, NOIR, (Pos){0, 0});
+    _place_piece(&thegame, TOUR, NOIR, (Pos){0, 0});
     Dir a = atteignable(&thegame, (Pos){0, 0}, (Pos){0, 7});
     printf("Dir de 0,7 : %d %d\n", a.i, a.j);
     a = atteignable(&thegame, (Pos){0, 0}, (Pos){7, 7});
@@ -150,7 +150,7 @@ int main(int argc, char const *argv[])
     a = atteignable(&thegame, (Pos){0, 0}, (Pos){7, 0});
     printf("Dir de 7,0 : %d %d\n", a.i, a.j);
     printf(" Test de attteignable FOU  en 3,3 \n");
-    place_piece(&thegame, FOU, NOIR, (Pos){3, 3});
+    _place_piece(&thegame, FOU, NOIR, (Pos){3, 3});
     a = atteignable(&thegame, (Pos){3, 3}, (Pos){0, 0});
     printf("Dir 0,0 : %d %d\n", a.i, a.j);
     a = atteignable(&thegame, (Pos){3, 3}, (Pos){7, 7});
@@ -159,7 +159,7 @@ int main(int argc, char const *argv[])
     printf("Dir : %d %d\n", a.i, a.j);
 
     printf(" Test de attteignable REINE  en 3,3 \n");
-    place_piece(&thegame, REINE, NOIR, (Pos){3, 3});
+    _place_piece(&thegame, REINE, NOIR, (Pos){3, 3});
     printf(" Test depart == arrive \n");
     a = atteignable(&thegame, (Pos){3, 3}, (Pos){3, 3});
     printf((a.i == 0 && a.j == 0) ? "OK\n" : "KO\n");
