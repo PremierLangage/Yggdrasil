@@ -24,13 +24,13 @@ Mais il ne faut pas stresser les tentatives ne retire pas beaucoup de points.
 @ lireBoard.pl
 
 
-@ generalites.pl
+# @ generalites.pl
 
 # @ /ComputerScience/C/exercices/L2_C17/expressions/corrige_type1.pl
 # @ testopen.pl
 
 
-# @ tab2exam.pl
+
 
 
 
@@ -38,7 +38,6 @@ Mais il ne faut pas stresser les tentatives ne retire pas beaucoup de points.
 
 @ section_listes.pl
 @ affiche.pl 
-
 @ inserEnTete.pl
 @ insereSansDoublons.pl
 
@@ -47,8 +46,11 @@ Mais il ne faut pas stresser les tentatives ne retire pas beaucoup de points.
 @ liste_double_move.pl
 
 
+
 @ zone_51.pl
 
+
+@ tab2exam.pl
 @ gentil.pl
 
 
