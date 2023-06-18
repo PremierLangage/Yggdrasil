@@ -244,6 +244,8 @@ void printGame(Game *tg)
     }
 }
 
+Game thegame = {0};
+
 int main(int argc, char *argv[])
 {
     printf(" bug ? \n");
@@ -258,7 +260,7 @@ int main(int argc, char *argv[])
             return 0;
         }
         printf("Fichier ouvert\n");
-        Game thegame = {0};
+        
         getGame(f, &thegame);
         printf("Fichier lu");
         fclose(f);
