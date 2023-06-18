@@ -129,11 +129,8 @@ int main(void) {
 }
 ==
 
-before==
-import random
-==
 
-checks_args_stdin==
+checks_args_stdin==#|python|
 [ ["Basique", "", "10 0 -1 8 6 -1"],
   ["Vide", "", ""],
     ["Aléatoire 1", "", " ".join([str(random.randint(-0,100)) for i in range(random.randint(5,20))])+" -1"],
