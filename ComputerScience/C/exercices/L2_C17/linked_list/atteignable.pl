@@ -87,14 +87,9 @@ int sens(int x, int y){
     return -1;
 }
 /* ne pas modifier au dessus */
-Piece piece_en(Game *G, Pos p)
+Dir atteignable(Game *g, Pos d, Pos a)
 {
-  
-}
 
-void place_piece(Game *J, int t, int c, Pos p)
-{
-    
 }
 ==
 
@@ -134,134 +129,55 @@ void place_piece(Game *J, int t, int c, Pos p)
     J->board[p.i][p.j].type = t;
     J->board[p.i][p.j].color = c;
 }
+
 ==
 
 code_after==#|c|
 
-Piece convertir(char c)
-{
-    Piece p;
-    switch (c)
-    {
-
-    case 'T':
-    case 't':
-        p.type = TOUR;
-        p.color = (c == 'T') ? NOIR : BLANC;
-        break;
-    case 'F':
-    case 'f':
-        p.type = FOU;
-        p.color = (c == 'F') ? NOIR : BLANC;
-        break;
-    case 'R':
-    case 'r':
-        p.type = REINE;
-        p.color = (c == 'R') ? NOIR : BLANC;
-        break;
-    case 'V':
-    default:
-        p.type = VIDE;
-        p.color = 0;
-        break;
-    }
-    return p;
-}
-
-void getGame(FILE *f, Game *thegame)
-{
-    int i = 0;
-    int j = 0;
-    char str[10];
-    for (i = 0; fgets(str, 10, f); i++)
-    {
-        printf("\n");
-        for (j = 0; j < 8; j++)
-        {
-            char c = str[j];
-            thegame->board[i][j] = convertir(c);
-            // printf("%c", thegame.board[i][j].type + thegame.board[i][j].color + '0');
-        }
-    }
-}
-void printGame(Game *tg)
-{
-    int i = 0;
-    int j = 0;
-    for (i = 0; i < 8; i++)
-    {
-        for (j = 0; j < 8; j++)
-        {
-            Piece p = tg->board[i][j];
-            switch (p.type)
-            {
-            case VIDE:
-                printf("_");
-                break;
-            case TOUR:
-                printf("%c", (p.color == NOIR) ? 'T' : 't');
-                break;
-            case FOU:
-                printf("%c", (p.color == NOIR) ? 'F' : 'f');
-                break;
-            case REINE:
-                printf("%c", (p.color == NOIR) ? 'R' : 'r');
-                break;
-            default:
-                printf("X=(%d)", p.type);
-                break;
-            }
-        }
-        printf("\n");
-    }
-}
-
-
-void printPiece(Piece x)
-{
-    printf("Piece : type = %d, color = %d\n", x.type, x.color);
-    switch (x.type)
-    {
-    case VIDE:
-        printf("VIDE\n");
-        break;
-    case TOUR:
-        printf("TOUR ");
-        printf(x.color == NOIR ? "NOIRE\n" : "BLANCHE\n");
-        break;
-    case FOU:
-        printf("FOU");
-        printf(x.color == NOIR ? "NOIR\n" : "BLANC\n");
-        break;
-    case REINE:
-        printf("REINE");
-        printf(x.color == NOIR ? "NOIRE\n" : "BLANCHE\n");
-        break;
-    default:
-        printf("X=(%d)\n", x.type);
-        break;
-    }
-}
 
 int main(int argc, char const *argv[])
 {
+    if (argc == 1)
+    {
+        // test de attteignable
+        printf(" Test de attteignable Tour Noire en 0,0 \n");
+        Game thegame = {0};
+        place_piece(&thegame, TOUR, NOIR, (Pos){0, 0});
+        Dir a = atteignable(&thegame, (Pos){0, 0}, (Pos){0, 7});
+        printf("Dir de 0,7 : %d %d\n", a.i, a.j);
+        a = atteignable(&thegame, (Pos){0, 0}, (Pos){7, 7});
+        printf("Dir de 7,7: %d %d\n", a.i, a.j);
+        a = atteignable(&thegame, (Pos){0, 0}, (Pos){7, 0});
+        printf("Dir de 7,0 : %d %d\n", a.i, a.j);
+        printf(" Test de attteignable FOU  en 3,3 \n");
+        place_piece(&thegame, FOU, NOIR, (Pos){3, 3});
+        a = atteignable(&thegame, (Pos){3, 3}, (Pos){0, 0});
+        printf("Dir 0,0 : %d %d\n", a.i, a.j);
+        a = atteignable(&thegame, (Pos){3, 3}, (Pos){7, 7});
+        printf("Dir : %d %d\n", a.i, a.j);
+        a = atteignable(&thegame, (Pos){3, 3}, (Pos){7, 0});
+        printf("Dir : %d %d\n", a.i, a.j);
 
-Game thegame = {0};
-
-printf(" je place la tour noire dans le coin \n");
-place_piece(&thegame, TOUR, NOIR, (Pos){0, 0});
-printf(" il y a une tour noire dans le coin ?\n");
-printPiece(piece_en(&thegame, (Pos){0, 0}));
-printf(" Des tours noire et blanches alignées sur la diagonale ?\n");
-
-for (int i = 0; i < 8; i++)
-{
-    place_piece(&thegame, TOUR, i % 2 ? NOIR : BLANC, (Pos){i, i});
+        printf(" Test de attteignable REINE  en 3,3 \n");
+        place_piece(&thegame, REINE, NOIR, (Pos){3, 3});
+        printf(" Test depart == arrive \n");
+        a = atteignable(&thegame, (Pos){3, 3}, (Pos){3, 3});
+        printf((a.i == 0 && a.j == 0) ? "OK\n" : "KO\n");
+        printf(" Test de attteignable REINE  en 3,3 \n");
+        a = atteignable(&thegame, (Pos){3, 3}, (Pos){0, 0});
+        printf("Dir 0,0 : %d %d\n", a.i, a.j);
+        a = atteignable(&thegame, (Pos){3, 3}, (Pos){7, 7});
+        printf("Dir 7,7 : %d %d\n", a.i, a.j);
+        a = atteignable(&thegame, (Pos){3, 3}, (Pos){7, 0});
+        printf("Dir 7,0 : %d %d\n", a.i, a.j);
+        a = atteignable(&thegame, (Pos){3, 3}, (Pos){4, 5});
+        printf("Dir 4,5 : %d %d\n", a.i, a.j);
+        a = atteignable(&thegame, (Pos){3, 3}, (Pos){3, 2});
+        printf("Dir 3,2 : %d %d\n", a.i, a.j);
+        return 0;
+    
 }
-printGame(&thegame);
-return 0;
 
-}
 ==
 
 checks_args_stdin==#|python|
