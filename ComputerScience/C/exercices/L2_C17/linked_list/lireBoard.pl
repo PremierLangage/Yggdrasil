@@ -256,7 +256,7 @@ int main(int argc, char const *argv[])
             printf("Error opening file!\n");
             return 0;
         }
-        printf("Fichier ouvert");
+        printf("Fichier ouvert\n");
         Game thegame = {0};
         getGame(f, &thegame);
         printf("Fichier lu");
