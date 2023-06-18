@@ -33,7 +33,7 @@ fichier positionné dans le répertoire courrant et dont vous aurez les
 droits de lecture.  
  Votre programme devra ouvrir ce fichier,et il lire un jeu de type **Game** (voir le type dans l'editeur).
 
-Le fichier contient 8 ligne de 8 caractères (plus le passage à la ligne).
+    Le fichier contient 8 ligne de 8 caractères (plus le passage à la ligne).
 
     Un **V** indique une case vide de l'échiquier. 
     Un **T** indique une TOUR noire, un **t** une TOUR blanche.
