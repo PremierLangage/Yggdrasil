@@ -131,7 +131,7 @@ int main(void) {
     printf("L2:");
     affiche(l2, i2);
 
-    move(&m1, &m2);
+    move(m1 == l1 ? &l1 : &m1, m2 == l2 ? &l2 : &m2);
 
     printf("Après move:\n");
     printf("L1:");
