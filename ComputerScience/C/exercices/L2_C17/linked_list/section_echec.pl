@@ -11,7 +11,7 @@ extends=/template/default.pl
 
 text==#|markdown|
 
-La section suivante est consacrée au jeu d'échec.
+### La section suivante est consacrée au **jeu d'échec**.
 
 
 Le jeu d’échecs est un jeu opposant deux joueurs (blanc et noir) qui se joue sur un plateau de $!8 \times 8 !$
