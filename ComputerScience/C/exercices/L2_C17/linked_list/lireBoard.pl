@@ -302,4 +302,4 @@ astuces==#|python|
 ==
 
 @ VIDE.txt
-@ TROIS
+@ TROIS.txt 
