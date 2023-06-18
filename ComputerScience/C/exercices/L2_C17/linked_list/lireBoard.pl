@@ -91,7 +91,9 @@ typedef struct
 {
     Piece board[8][8];
 } Game;
+==
 
+XX==
 Piece convertir(char c)
 {
     return (Piece){0,0};
