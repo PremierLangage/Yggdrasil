@@ -39,7 +39,7 @@ On souhaite écrire une fonction vérifiant la validité du déplacement d’une
     {−1, −1} {0, −1} {1, −1}
 
 
-Écrire une fonction **int verif_chemin(Jeu * J, Pos depart, Pos arrivee)** vérifiant que le chemin entre les deux cases depart et arrivee est libre, sauf éventuellement sur la case d’arrivée qui peut contenir une pièce adverse. Elle retourne 1 en cas de chemin valide, 0 sinon.
+Écrire une fonction **int verif_chemin(Game * J, Pos depart, Pos arrivee)** vérifiant que le chemin entre les deux cases depart et arrivee est libre, sauf éventuellement sur la case d’arrivée qui peut contenir une pièce adverse. Elle retourne 1 en cas de chemin valide, 0 sinon.
 
 On suppose que la fonction atteignable définie dans l'exercice précédent existe (ne pas la redéfinir),
  l'idée est d'utiliser la direction **Dir** pour ne pas traiter trop de cas. 
