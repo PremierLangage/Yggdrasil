@@ -107,7 +107,7 @@ Liste lire(){
 
 void affiche(Liste l, Maillon *m1, Maillon *m2) {
     for (; l != NULL; l = l->suiv, hl--) {
-        if (l == s1 || l == s2) printf(" [%d] ", l->valeur);
+        if (l == m1 || l == m2) printf(" [%d] ", l->valeur);
         else printf(" %d ", l->valeur);
     }
     printf("\n");
