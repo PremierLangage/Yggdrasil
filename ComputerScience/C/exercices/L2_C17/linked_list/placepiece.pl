@@ -234,8 +234,7 @@ void printPiece(Piece x)
 
 int main(int argc, char const *argv[])
 {
-    if (argc > 1)
-    {
+
         // FILE *f = fopen(argv[1], "r");
         // char str[10];
         Game thegame = {0};
