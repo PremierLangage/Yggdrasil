@@ -19,13 +19,13 @@ de la liste pointé par source devant le maillon pointé par cible.
 Le pointeur `*source` pointe alors sur l'élément suivant s'il existe, et `*cible` pointe sur le maillon déplacé (en cas de succès).
 
 Par exemple:
-```
-L1 -> 1  0  10 
-L2 -> 6  8 
-Après move(&L1, &L2)
-L1 -> 0  10 
-L2 -> 1  6  8
-```
+
+    L1 -> 1  0  10 
+    L2 -> 6  8 
+    Après move(&L1, &L2)
+    L1 -> 0  10 
+    L2 -> 1  6  8
+
 
 Écrire le code de la fonction **move**.
 
