@@ -35,13 +35,14 @@ droits de lecture.
 
 Le fichier contient 8 ligne de 8 caractères (plus le passage à la ligne).
 
-Un **V** indique une case vide de l'échiquier. 
-Un **T** indique une TOUR noire, un **t** une TOUR blanche.
-Un **F** indique un FOU noir, un **f** un FOU blanc.
-Un **R** indique une REINE noire, un **r** une REINE blanche.
+    Un **V** indique une case vide de l'échiquier. 
+    Un **T** indique une TOUR noire, un **t** une TOUR blanche.
+    Un **F** indique un FOU noir, un **f** un FOU blanc.
+    Un **R** indique une REINE noire, un **r** une REINE blanche.
 
-Ecrire les deux fonctions **Piece convertir(char l)** et **Game getGame(FILE *f)**
-qui convertisent un char en piece et rempli un Game et le retourne en fonction de ce que contient **f**.
+Ecrire les deux fonctions **Piece convertir(char l)** 
+qui convertisent un char en piece 
+et **Game getGame(FILE *f)** qui rempli un Game et le retourne en fonction de ce que contient le fichier ouvert **f**.
 
 
 Ne touchez pas au code au dessus de vos fonctions.`
