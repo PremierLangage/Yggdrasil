@@ -246,6 +246,7 @@ void printGame(Game *tg)
 
 int main(int argc, char *argv[])
 {
+    printf(" bug ? \n");
     if (argc > 1)
     {
         printf("Fichier pas  ouvert\n");
