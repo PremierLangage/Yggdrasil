@@ -37,6 +37,14 @@ en b1.
 Voic un code de base pour démarrer dans votre IDE de choix.
 
 
+==
+
+title = Les echecs
+form=
+
+
+ode==
+
 #include <stdio.h>
 
 #define VIDE 0
@@ -56,8 +64,3 @@ typedef struct
     Piece board[8][8];
 } Game;
 ==
-
-title = Les echecs
-form=
-
-
