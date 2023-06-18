@@ -129,6 +129,9 @@ int main(void) {
 }
 ==
 
+before==
+import random
+==
 
 checks_args_stdin==
 [ ["Basique", "", "10 0 -1 8 6 -1"],
