@@ -61,8 +61,7 @@ ode==#|c|
 #define NOIR 0
 #define BLANC 1
 
-typedef struct piece
-{
+typedef struct piece {
     int type;
     int color;
 } Piece;
