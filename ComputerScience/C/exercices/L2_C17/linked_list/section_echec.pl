@@ -61,13 +61,12 @@ ode==#|c|
 #define NOIR 0
 #define BLANC 1
 
-typedef struct piece {
+typedef struct {
     int type;
     int color;
 } Piece;
 
-typedef struct
-{
+typedef struct {
     Piece board[8][8];
 } Game;
 
