@@ -134,7 +134,7 @@ int main(void) {
     Liste *p1 = m1 == l1 ? &l1 : &m1;
     Liste *p2 = m2 == l2 ? &l2 : &m2;
 
-    printf("Avant: (source -> %d) (cible -> %d)\n", (*p1)->valeur, (*p2)->valeur);
+    printf("Avant:\n");
     printf("L1:");
     affiche(l1, s1, s2);
     printf("L2:");
@@ -142,7 +142,7 @@ int main(void) {
 
     move(p1, p2);
 
-    printf("Après move: (source -> %d) (cible -> %d)\n", (*p1)->valeur, (*p2)->valeur);
+    printf("Après move:\n");
     printf("L1:");
     affiche(l1, s1, s2);
     printf("L2:");
