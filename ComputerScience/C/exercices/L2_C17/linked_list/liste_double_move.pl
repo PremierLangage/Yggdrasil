@@ -147,7 +147,8 @@ int main(void) {
 checks_args_stdin==#|python|
 [
     ["Basique", "", "10 0 -1 0 8 6 -1 0"],
-    ["Vide", "", ""],
+    ["Vide 1", "", "-1 1 -1 0 0"],
+    ["Vide 2", "", "1 -1 -1 0 0"],
     ["Aléatoire 1", "", (lambda l1,l2: 
             " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
             + " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
