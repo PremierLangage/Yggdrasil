@@ -246,7 +246,9 @@ int main(int argc, char const *argv[])
 
         // getGame(f, &thegame);
         // fclose(f);
+        print(" je place la tour noit dans le coin \n");
         place_piece(&thegame, TOUR, NOIR, (Pos){0, 0});
+        print(" il y a une tour dans le coin ?\n");
         printPiece(piece_en(&thegame, (Pos){0, 0}));
         for (int i = 0; i < 8; i++)
         {
