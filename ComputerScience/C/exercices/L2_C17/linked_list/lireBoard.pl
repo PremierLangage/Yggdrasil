@@ -94,11 +94,12 @@ typedef struct
 
 Piece convertir(char c)
 {
+    return (Piece){0,0};
 }
 
 void getGame(FILE *f, Game *thegame)
 {
-
+;
 }
 
 
