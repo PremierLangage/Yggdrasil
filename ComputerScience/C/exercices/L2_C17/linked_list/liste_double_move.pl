@@ -11,7 +11,7 @@ text==#|markdown|
 
     typedef struct _maillon {
         int valeur;
-        struct _maillon ∗suiv, ∗prec;
+        struct _maillon ∗suiv, ∗prev;
     } Maillon , ∗ Liste;
 
 On souhaite écrire une fonction `void move(Liste *source, Liste *cible);` qui déplace le premier
@@ -83,7 +83,7 @@ Maillon* alloue_maillon(int x){
     if((tmp = malloc(sizeof(Maillon))) != NULL) {
         tmp->value = x;
         tmp->suiv = NULL;
-        tmp->prec = NULL;
+        tmp->prev = NULL;
     }
     return tmp;
 }
