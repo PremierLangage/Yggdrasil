@@ -275,7 +275,8 @@ VVVVVVVV
 VVVVVVVV
 VVVVVVVV
 VVVVVVVV
-VVVVVVVV""",file=f)
+VVVVVVVV
+""",file=f)
 
 with open("TROIS.txt","w") as f:
     print("""VVFVVVVV
@@ -285,5 +286,6 @@ VVVVVVVV
 VVVVtVVV
 VVVrVfVV
 VVVVVfVV
-VVVVVVVV""",file=f)
+VVVVVVVV
+""",file=f)
 ==
