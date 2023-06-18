@@ -154,7 +154,9 @@ int main(void) {
     printf("L2:");
     affiche(l2, s1, s2);
 
-    move(p1, p2);
+    move(&L1, &L2)
+    move(&(L2->suiv), &(L1->suiv))
+    // move(p1, p2);
 
     printf("Après move:\n");
     printf("L1:");
