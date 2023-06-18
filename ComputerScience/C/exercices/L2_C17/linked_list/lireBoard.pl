@@ -248,10 +248,9 @@ Game thegame ;
 
 int main(int argc, char *argv[])
 {
-    printf(" bug ? \n");
     if (argc > 1)
     {
-        printf("Fichier pas  ouvert\n");
+
         FILE *f = fopen(argv[1], "r");
         
         if (f == NULL)
@@ -259,7 +258,7 @@ int main(int argc, char *argv[])
             printf("Error opening file!\n");
             return 0;
         }
-        printf("Fichier ouvert\n");
+
         
         getGame(f, &thegame);
         printf("Fichier lu");
