@@ -75,47 +75,34 @@ typedef struct
     Piece board[8][8];
 } Game;
 
+
+Piece piece_en(Game *G, Pos p)
+{
+    return G->board[p.i][p.j];
+}
+
+void place_piece(Game *J, int t, int c, Pos p)
+{
+    J->board[p.i][p.j].type = t;
+    J->board[p.i][p.j].color = c;
+}
 ==
 
 solution==#|c|
+
+Piece piece_en(Game *G, Pos p)
+{
+    return G->board[p.i][p.j];
+}
+
+void place_piece(Game *J, int t, int c, Pos p)
+{
+    J->board[p.i][p.j].type = t;
+    J->board[p.i][p.j].color = c;
+}
 ==
 
 code_after==#|c|
-
-/*
- Votre programme devra ouvrir ce fichier,et il lire un jeu de type **Game** (voir le type dans l'editeur).
-
-Le fichier contient 8 ligne de 8 caractères (plus le passage à la ligne).
-
-Un **V** indique une case vide de l'échiquier.
-Un **T** indique une TOUR noire un **t** une TOUR blanche.
-Un **F** indique une FOU noir un **f** un FOU blanc.
-Un **R** indique une TOUR noire un **r** une TOUR blanche.
-
-*/
-#include <stdio.h>
-
-#define VIDE 0
-#define TOUR 1
-#define FOU 2
-#define REINE 4
-#define NOIR 0
-#define BLANC 1
-
-typedef struct piece
-{
-    int type;
-    int color;
-} Piece;
-typedef struct
-{
-    Piece board[8][8];
-} Game;
-typedef struct
-{
-    int i;
-    int j;
-} Pos;
 
 Piece convertir(char c)
 {
@@ -195,16 +182,6 @@ void printGame(Game *tg)
     }
 }
 
-Piece piece_en(Game *G, Pos p)
-{
-    return G->board[p.i][p.j];
-}
-
-void place_piece(Game *J, int t, int c, Pos p)
-{
-    J->board[p.i][p.j].type = t;
-    J->board[p.i][p.j].color = c;
-}
 
 void printPiece(Piece x)
 {
