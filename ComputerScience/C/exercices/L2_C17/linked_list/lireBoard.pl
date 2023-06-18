@@ -250,13 +250,14 @@ int main(int argc, char const *argv[])
     if (argc > 1)
     {
         FILE *f = fopen(argv[1], "r");
-        Game thegame = {0};
+        
         if (f == NULL)
         {
             printf("Error opening file!\n");
             return 0;
         }
         printf("Fichier ouvert");
+        Game thegame = {0};
         getGame(f, &thegame);
         printf("Fichier lu");
         fclose(f);
