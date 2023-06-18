@@ -55,17 +55,7 @@ code_before==#|c|
 
 editor.code==#|c|
 
-/*
- Votre programme devra ouvrir ce fichier,et il lire un jeu de type **Game** (voir le type dans l'editeur).
 
-Le fichier contient 8 ligne de 8 caractères (plus le passage à la ligne).
-
-Un **V** indique une case vide de l'échiquier.
-Un **T** indique une TOUR noire un **t** une TOUR blanche.
-Un **F** indique une FOU noir un **f** un FOU blanc.
-Un **R** indique une TOUR noire un **r** une TOUR blanche.
-
-*/
 #include <stdio.h>
 
 #define VIDE 0
