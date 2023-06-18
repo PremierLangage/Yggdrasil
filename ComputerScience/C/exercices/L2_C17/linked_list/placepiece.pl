@@ -93,6 +93,30 @@ void place_piece(Game *J, int t, int c, Pos p)
 
 solution==#|c|
 
+#include <stdio.h>
+
+#define VIDE 0
+#define TOUR 1
+#define FOU 2
+#define REINE 4
+#define NOIR 0
+#define BLANC 1
+
+typedef struct piece
+{
+    int type;
+    int color;
+} Piece;
+typedef struct
+{
+    Piece board[8][8];
+} Game;
+typedef struct
+{
+    int i;
+    int j;
+} Pos,Dir;
+
 Piece piece_en(Game *G, Pos p)
 {
     return G->board[p.i][p.j];
