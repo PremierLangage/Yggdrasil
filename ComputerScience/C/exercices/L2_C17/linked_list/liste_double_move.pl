@@ -151,23 +151,29 @@ int main(void) {
 checks_args_stdin==#|python|
 [
     ["Basique: premier maillon vers premier maillon", "", "10 0 1 -1 8 6 -1 0 0"],
-    ["Basique: autre vers maillons", "", "-1 1 -1 0 0"],
-    ["Vide 2", "", "1 -1 -1 0 0"],
+    ["Basique: autre vers premier maillon", "", "10 0 1 -1 8 6 -1 1 0"],
     ["Vide 1", "", "-1 1 -1 0 0"],
     ["Vide 2", "", "1 -1 -1 0 0"],
     ["Aléatoire 1", "", (lambda l1,l2: 
             " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
             + " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
-            + str(randint(0,l1-1))
+            + "0"
             + " "
-            + str(randint(0,l2-1))
+            + str(randint(1,l2-1))
         )(randint(5,20),randint(5,20))],
     ["Aléatoire 2", "", (lambda l1,l2: 
             " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
             + " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
-            + str(randint(0,l1-1))
+            + str(randint(1,l1-1))
             + " "
-            + str(randint(0,l2-1))
+            + "1"
+        )(randint(5,100),randint(5,100))],
+    ["Aléatoire 2", "", (lambda l1,l2: 
+            " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
+            + " ".join([str(randint(0,100)) for i in range(l1)]) + " -1 "
+            + str(randint(1,l1-1))
+            + " "
+            + str(randint(1,l2-1))
         )(randint(5,100),randint(5,100))]
 ]
 ==
