@@ -244,7 +244,7 @@ void printGame(Game *tg)
     }
 }
 
-Game thegame = {0};
+Game thegame ;
 
 int main(int argc, char *argv[])
 {
