@@ -27,7 +27,7 @@ editor.height=350px
 editor.language=c
 
 text==#|markdown|
-Écrire une fonction **affiche** qui prend en argument une List (voir éditeur).
+Écrire une fonction **affiche** qui prend en argument une `List` (voir éditeur).
 
 Qui affiche (printf) les valeurs de la liste séparées par des espaces. 
 
