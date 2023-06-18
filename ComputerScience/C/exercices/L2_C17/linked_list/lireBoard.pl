@@ -39,7 +39,7 @@ Format de stockage d'un échiquier.
     Un **R** indique une REINE noire, un **r** une REINE blanche.
 
 Ecrire les deux fonctions **Piece convertir(char l)** qui convertisent un char en piece 
-et **Game getGame(FILE *f)** qui rempli un Game et le retourne en fonction de ce que contient le fichier ouvert **f**.
+et **void getGame(FILE *f, Game *thegame)** qui remplit un Game et le retourne en fonction de ce que contient le fichier ouvert **f**.
 
     Le type Piece est décrit dans l'éditeur.
     Le type Game est décrit dans l'éditeur.
@@ -73,6 +73,38 @@ code_before==#|c|
 editor.code==#|c|
 
 
+#include <stdio.h>
+
+#define VIDE 0
+#define TOUR 1
+#define FOU 2
+#define REINE 4
+#define NOIR 0
+#define BLANC 1
+
+typedef struct piece
+{
+    int type; // TOUR FOU REINE
+    int color; // NOIR BLANC
+} Piece;
+typedef struct
+{
+    Piece board[8][8];
+} Game;
+
+Piece convertir(char c)
+{
+}
+
+void getGame(FILE *f, Game *thegame)
+{
+
+}
+
+
+==
+
+solution==#|c|
 #include <stdio.h>
 
 #define VIDE 0
@@ -139,10 +171,6 @@ void getGame(FILE *f, Game *thegame)
     }
 }
 
-
-==
-
-solution==#|c|
 ==
 
 code_after==#|c|
