@@ -37,7 +37,7 @@ en b1.
 Voic un code de base pour démarrer dans votre IDE de choix.
 
 <div style="font-size:1em">
-<details><summary>Fichier exemple <button onclick="docopy('ode')">Copy exemple</button></summary><blockquote id="ode" style="white-space: pre-line" 
+<details><summary>le code pour démarrer </summary><blockquote id="ode" style="white-space: pre-line" 
 >{{ode}}
 </blockquote></details>
 
