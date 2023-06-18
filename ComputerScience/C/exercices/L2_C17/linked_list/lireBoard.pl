@@ -18,7 +18,7 @@
 
 extends=/ComputerScience/C/template/std_progC17_clang.pl
 
-title= Lire un echiquier 
+title=  Lecture d'un échiquier.
 
 tag=fichier|programme|affichage|lecture
 
@@ -28,10 +28,8 @@ editor.height=300px
 
 
 text==#|markdown|
-Écrire un programme C qui prend un argument qui sera toujours le nom d'un 
-fichier positionné dans le répertoire courrant et dont vous aurez les 
-droits de lecture.  
- Votre programme devra ouvrir ce fichier,et il lire un jeu de type **Game** (voir le type dans l'editeur).
+
+Format de stockage d'un échiquier.
 
     Le fichier contient 8 ligne de 8 caractères (plus le passage à la ligne).
 
@@ -44,7 +42,8 @@ Ecrire les deux fonctions **Piece convertir(char l)** qui convertisent un char e
 et **Game getGame(FILE *f)** qui rempli un Game et le retourne en fonction de ce que contient le fichier ouvert **f**.
 
 
-Ne touchez pas au code au dessus de vos fonctions.`
+Ne touchez pas au code au dessus de vos fonctions.
+
 ==
 
 code_before==#|c|
