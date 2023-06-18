@@ -38,7 +38,6 @@ On souhaite écrire une fonction vérifiant la validité du déplacement d’une
     {−1, −1} {0, −1} {1, −1}
 
 
-
 Écrire une fonction **Dir atteignable(Game *g, Pos d, Pos a)**
  qui teste si la piece en position de depart **d** peut être déplacé en position d'arrivée **a** sur un échiquier vide,
  retourne la direction 0,0 si ce n'est pas possible. 
