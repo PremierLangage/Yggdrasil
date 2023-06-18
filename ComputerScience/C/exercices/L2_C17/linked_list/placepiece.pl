@@ -31,10 +31,10 @@ editor.height=300px
 text==#|markdown|
 
 Ecrire les deux fonctions **void place_piece(Game \*g, Piece p)** et **Piece piece_en(Game \*jeu,Pos case)**
- qui respectivement ajoute la pice p au jeu et lit la piece en position case du jeu.
+qui respectivement ajoute la pièce `p` au jeu et lit la piece à la position `case` du jeu.
 
 
-Ne touchez pas au code au dessus de vos fonctions.`
+Ne touchez pas au code au dessus de vos fonctions.
 ==
 
 code_before==#|c|
@@ -53,29 +53,29 @@ editor.code==#|c|
 #define NOIR 0
 #define BLANC 1
 
-typedef struct piece
-{
+typedef struct {
     int type;
     int color;
 } Piece;
-typedef struct
-{
+
+typedef struct {
     Piece board[8][8];
 } Game;
-typedef struct
-{
+
+typedef struct {
     int i;
     int j;
 } Pos,Dir;
 /* ne pas modifier le code précédent */
+
 Piece piece_en(Game *G, Pos p)
 {
-;
+    
 }
 
 void place_piece(Game *J, int t, int c, Pos p)
 {
-; 
+
 }
 ==
 
