@@ -86,7 +86,7 @@ int sens(int x, int y){
     if (x <y ) return 1;
     return -1;
 }
-/* ne pas modifier au dessus *:
+/* ne pas modifier au dessus */
 Piece piece_en(Game *G, Pos p)
 {
   
