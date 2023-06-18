@@ -3,26 +3,35 @@ title= Juin 19 2023
 
 introduction==
 
-Attention les exercices ont deux notes, la completion (réussit ou pas) et la qualité (nombre de tentative nécessaire pour réussir l'exo).
+Attention les exercices ont deux notes, la complétion (réussit ou pas) et la qualité 
+(nombre de tentatives utilisées pour réussir l'exo).
 
 Il est donc **fortement** recommendé d'ouvir un éditeur et de tester sur la machine local avant de chercher à valider 
 le code sur la plateforme.
 
+Mais il ne faut pas stresser les tentatives ne retire pas beaucoup de points.
+
 
 ==
+
+# les echecs 
+@ section_echec.pl 
+@ placepiece.pl
+@ lirecoup.pl
+@ lireBoard.pl
 
 
 @ generalites.pl
 
-@ /ComputerScience/C/exercices/L2_C17/expressions/corrige_type1.pl
+# @ /ComputerScience/C/exercices/L2_C17/expressions/corrige_type1.pl
 @ testopen.pl
 
 
 @ tab2exam.pl
 
-@ section_echec.pl 
 
-@ lirecoup.pl
+
+
 
 @ section_listes.pl
 @ affiche.pl 
