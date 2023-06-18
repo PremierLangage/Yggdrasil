@@ -30,7 +30,7 @@ editor.height=300px
 
 text==#|markdown|
 
-Ecrire les deux fonctions **place_piece(Game *g, Piece p)** et **Piece piece_en(Game *jeu,Pos case)**
+Ecrire les deux fonctions **void place_piece(Game \*g, Piece p)** et **Piece piece_en(Game \*jeu,Pos case)**
  qui respectivement ajoute la pice p au jeu et lit la piece en position case du jeu.
 
 
