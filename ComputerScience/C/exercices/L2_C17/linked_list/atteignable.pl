@@ -125,6 +125,28 @@ Piece _piece_en(Game *G, Pos p)
     return G->board[p.i][p.j];
 }
 
+Dir atteignable(Game *J, Pos depart, Pos arrivee)
+{
+    Piece p = J->board[depart.i][depart.j];
+    switch (p.type)
+    {
+    case TOUR:
+        if (!(depart.i == arrivee.i || depart.j == arrivee.j))
+            return (Dir){0, 0};
+        break;
+    case FOU:
+        if (!((depart.i - arrivee.i == depart.j - arrivee.j) || (depart.i + arrivee.i == depart.j + arrivee.j)))
+            return (Dir){0, 0};
+        break;
+    case REINE:
+        if (!((depart.i == arrivee.i || depart.j == arrivee.j) || (depart.i - arrivee.i == depart.j - arrivee.j) || (depart.i + arrivee.i == depart.j + arrivee.j)))
+            return (Dir){0, 0};
+        break;
+    }
+    return (Dir){sens(depart.i, arrivee.i), sens(depart.j, arrivee.j)};
+}
+
+
 ==
 
 code_after==#|c|
