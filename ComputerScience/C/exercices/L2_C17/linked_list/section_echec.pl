@@ -14,7 +14,7 @@ text==#|markdown|
 La section suivante est consacrée au jeu d'échec.
 
 
-Le jeu d’échecs est un jeu opposant deux joueurs (blanc et noir) qui se joue sur un plateau de 8 × 8
+Le jeu d’échecs est un jeu opposant deux joueurs (blanc et noir) qui se joue sur un plateau de \(8 \times 8 \)
 cases. Il se joue avec différentes pièces, mais seules les tours, les fous et la reine nous intéresseront dans
 cet exercice.  
 
