@@ -40,7 +40,7 @@ Mais il ne faut pas stresser les tentatives ne retire pas beaucoup de points.
 @ affiche.pl 
 @ inserEnTete.pl
 @ insereSansDoublons.pl
-
+@ copieuniqueun.pl
 
 @ section_double.pl
 @ liste_double_move.pl
