@@ -26,9 +26,9 @@ tag=string|malloc|structure|recopiage|cellule|liste
 editor.height=350px
 
 text==#|markdown|
-Écrire une fonction **insereEnTete** qui prend en argument une Liste\* l(voir éditeur) et un Maillon* new. 
+Écrire une fonction **insereEnTete** qui prend en argument une **Liste\*** l(voir éditeur) et un **Maillon\*** new. 
 
-Qui insert en Tete le maillon new dans la liste l. 
+Qui insère en tête le maillon `new` dans la liste `l`. 
 
 
 ==
