@@ -125,6 +125,14 @@ Piece _piece_en(Game *G, Pos p)
     return G->board[p.i][p.j];
 }
 
+
+int sens(int x, int y){
+    if (x==y) return 0;
+    if (x <y ) return 1;
+    return -1;
+}
+
+
 Dir atteignable(Game *J, Pos depart, Pos arrivee)
 {
     Piece p = J->board[depart.i][depart.j];
