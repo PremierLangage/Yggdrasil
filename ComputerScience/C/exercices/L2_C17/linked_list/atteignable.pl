@@ -44,7 +44,7 @@ On souhaite écrire une fonction vérifiant la validité du déplacement d’une
  retourne la direction 0,0 si ce n'est pas possible. 
 
 
-Attention les fonctions sont testées ensemble.
+
 
 Ne touchez pas au code au dessus de vos fonctions.`
 ==
