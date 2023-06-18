@@ -239,28 +239,20 @@ void printPiece(Piece x)
 int main(int argc, char const *argv[])
 {
 
-        // FILE *f = fopen(argv[1], "r");
-        // char str[10];
-        Game thegame = {0};
-        // if (f == NULL)
-        // {
-        //     printf("Error opening file!\n");
-        //     return 0;
-        // }
+Game thegame = {0};
 
-        // getGame(f, &thegame);
-        // fclose(f);
-        printf(" je place la tour noire dans le coin \n");
-        place_piece(&thegame, TOUR, NOIR, (Pos){0, 0});
-        printf(" il y a une tour noire dans le coin ?\n");
-        printPiece(piece_en(&thegame, (Pos){0, 0}));
-        for (int i = 0; i < 8; i++)
-        {
-            place_piece(&thegame, TOUR, i % 2 ? NOIR : BLANC, (Pos){i, i});
-        }
-        printGame(&thegame);
-        return 0;
-    }
+printf(" je place la tour noire dans le coin \n");
+place_piece(&thegame, TOUR, NOIR, (Pos){0, 0});
+printf(" il y a une tour noire dans le coin ?\n");
+printPiece(piece_en(&thegame, (Pos){0, 0}));
+printf(" Des tours noire et blanches alignées sur la diagonale ?\n");
+
+for (int i = 0; i < 8; i++)
+{
+    place_piece(&thegame, TOUR, i % 2 ? NOIR : BLANC, (Pos){i, i});
+}
+printGame(&thegame);
+return 0;
 
 }
 ==
