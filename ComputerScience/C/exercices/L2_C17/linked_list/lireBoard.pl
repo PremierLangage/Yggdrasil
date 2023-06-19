@@ -39,7 +39,7 @@ Format de stockage d'un échiquier.
     Un **R** indique une REINE noire, un **r** une REINE blanche.
 
 Ecrire les deux fonctions **Piece convertir(char l)** qui convertisent un char en piece 
-et **void getGame(FILE *f, Game *thegame)** qui remplit un Game et le retourne en fonction de ce que contient le fichier ouvert **f**.
+et **void getGame(FILE \*f, Game \*thegame)** qui remplit un Game et le retourne en fonction de ce que contient le fichier ouvert **f**.
 
     Le type Piece est décrit dans l'éditeur.
     Le type Game est décrit dans l'éditeur.
