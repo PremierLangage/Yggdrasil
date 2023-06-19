@@ -34,7 +34,7 @@ lire son contenu.
 Le contenu sont des coups aux échec où chaque ligne est de la forme   
     a2-c3   
 où a et c sont des colones et 2 et 3 des lignes.  
-Vous devez transformer ces coups en coordonées **Pos** pour les utilisées dans le tableau Game.   
+Vous devez transformer ces coups en coordonées **Pos** pour les utilisées dans le jeu.   
 
 
 Pour chaque ligne vous appelerez la fonction **void lireCoup(char \*coup, Pos \*depart, Pos \*arrive)** que vous devez écrire.
@@ -71,14 +71,14 @@ editor.code==#|c|
 /* ne pas toucher au code suivant */
 typedef struct _ { int i; int j; } Pos, Dir ;
 
-typedef struct _g { int type; int color; } Piece , Game[8][8];
+typedef struct _g { int type; int color; } Piece;
 #define NOIR 0
 #define BLANC 1
 #define TOUR 3
 #define FOU 4 
 #define REINE 12
 
-/* la fonction printCoup est prédéfinie pour ne pas avoir d'embiguité sur le caractères invisibles*/
+/* la fonction printCoup est prédéfinie pour ne pas avoir d'ambiguité sur le caractères invisibles*/
 void printCoup(Pos a, Pos b);
 /* jusqu'ici */
 
@@ -106,7 +106,7 @@ solution==#|c|
 /* ne pas toucher au code suivant */
 typedef struct _ { int i; int j; } Pos, Dir ;
 
-typedef struct _g { int type; int color; } Piece , Game[8][8];
+typedef struct _g { int type; int color; } Piece;
 #define NOIR 0
 #define BLANC 1
 #define TOUR 3
