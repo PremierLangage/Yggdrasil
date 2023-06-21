@@ -1,7 +1,7 @@
 # Date : 16/06/2022
 # Auteur : Clément Gaudet
 
-title == "test"
+title== "test"
 ==
 doc==
 Ce template permet de faire des exercices pouvant être résolu avec différents langages, au choix
