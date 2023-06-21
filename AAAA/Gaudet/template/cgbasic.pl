@@ -1,8 +1,8 @@
 # Date : 16/06/2022
 # Auteur : Clément Gaudet
 
-title== "test"
-==
+
+
 doc==
 Ce template permet de faire des exercices pouvant être résolu avec différents langages, au choix
 de l'étudiant. 
@@ -21,6 +21,8 @@ La variable showWanted est un booléen indiquant si la réponse attendue est aff
 ==
 grader  =@ ./cgbasicgrader.py
 builder =@ ./cgbuilder.py
+title== "test"
+==
 
 @ ./utils/feedback2.py
 @ ./utils/template.html
