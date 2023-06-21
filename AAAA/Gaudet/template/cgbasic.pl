@@ -21,9 +21,8 @@ La variable showWanted est un booléen indiquant si la réponse attendue est aff
 ==
 grader  =@ ./cgbasicgrader.py
 builder =@ ./cgbuilder.py
-title== "test"
-==
-
+title= "test"
+text = test"
 @ ./utils/feedback2.py
 @ ./utils/template.html
 @ ./utils/langhandlers.py
@@ -36,8 +35,8 @@ editor.theme = dark
 editor.height = 500px
 
 # une interface standard d'exercice avec un editeur pour la réponse
-form==
-{{editor|component}}
+form== editor
+
 ==
 
 languages==
