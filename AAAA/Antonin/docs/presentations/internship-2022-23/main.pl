@@ -26,6 +26,18 @@ reveal.content = f"""
 * Magdalena Kobylanski
 * Nicolas Borie
 * David Doyen
+
+
+***
+
+# PLaTon
+
+* Dominique Revuz
+* Magdalena Kobylanski
+* Nicolas Borie
+* David Doyen
+
+
   </textarea>
 </section>
 
