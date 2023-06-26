@@ -23,6 +23,9 @@ reveal.content = f"""
 # PLaTon
 
 * Dominique Revuz
+* Magdalena Kobylanski
+* Nicolas Borie
+* David Doyen
   </textarea>
 </section>
 
