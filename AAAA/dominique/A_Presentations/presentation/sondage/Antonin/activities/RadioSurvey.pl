@@ -1,4 +1,5 @@
-extends = /AAAA/Antonin/stats.pl
+
+extends = /AAAA/Antonin/modules/Statistics/stats.pl
 # ===============================================
 # Documentation Loading
 evaluation =@ ../docs/radioSurvey/evaluation.md
