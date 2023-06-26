@@ -27,8 +27,7 @@ reveal.content = f"""
 * Nicolas Borie
 * David Doyen
 
-
-***
+---
 
 # PLaTon
 
