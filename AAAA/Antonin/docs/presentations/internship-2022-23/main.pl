@@ -22,7 +22,7 @@ reveal.content = f"""
   <textarea data-template>
 # PLaTon
 
-Dominique Revuz
+* Dominique Revuz
   </textarea>
 </section>
 
