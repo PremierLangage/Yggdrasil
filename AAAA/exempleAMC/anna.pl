@@ -17,6 +17,7 @@ questions==
 *[group=prenom] Quel est le prénom de Diaw
 +Anna
 -Aminata
+-Claire
 
 *+ Clicker sur la bonne conjugaison du verbe  
 >Je suis ( aller / {{allé}} ) au bureau hier
