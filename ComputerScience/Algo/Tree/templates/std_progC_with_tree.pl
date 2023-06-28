@@ -54,4 +54,4 @@ text+=" {{ editor|component }} "
 #  THE FOLLOWING IS C COPY PASTE OF EVALUATOR OF STD_PROGC.PL
 #  with an inclusion of components to draw graphs...
 
-evaluator=@ stdprogcevaluator.py
+# evaluator=@ stdprogcevaluator.py
