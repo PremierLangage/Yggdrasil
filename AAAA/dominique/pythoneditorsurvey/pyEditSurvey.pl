@@ -20,6 +20,8 @@ evaluator==#|py|
 extends = /AAAA/dominique/A_Presentations/presentation/sondage/correctionTemplate.pl
 
 
+
+stopfirsterror= True
 pltest==
 >>> prime(1)
 1
