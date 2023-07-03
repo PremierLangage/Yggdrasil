@@ -1,4 +1,4 @@
-extends = /AAAA/Antonin/modules/Statistics/stats.pl
+extends = /AAAA/Thomas/Sondage-06-07-2023/stats.pl
 
 
 # default evaluator dummy
