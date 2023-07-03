@@ -77,7 +77,7 @@ for k, v in [(k, v) for k, v in globals().items() if k.startswith("items_")]:
     if k in inputValues:
         _v = v.splitlines()
         shuffle(_v) # Shuffling result
-        inputValues[k]["items"] =
+        inputValues[k]["items"] = _v
 # Processing horizontal graph data
 horizontales_data = {k[len("graph_horizontal_"):] : v for k, v in [(k, v) for k, v in globals().items() if k.startswith("graph_horizontal_")]}
 for _title in inputValues:
