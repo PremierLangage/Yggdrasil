@@ -1,4 +1,4 @@
-extends = /AAAA/Antonin/activities/CodeEditorSurvey.pl
+extends = /AAAA/Antonin/modules/Statistics/activities/CodeEditorSurvey.pl
 
 title= ShowCase Code Editor with Stats !
 
