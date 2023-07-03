@@ -9,6 +9,11 @@ summary =@ ../docs/codeEditor/summary.md
 user_manual =@ ../docs/codeEditor/user_manual.md
 # ===============================================
 
+extends = /AAAA/dominique/A_Presentations/presentation/sondage/correctionTemplate.pl
+
+
+
+
 title= Dummy Title CodeEditorSurvey
 
 text ==#|markdown|
@@ -76,23 +81,28 @@ evaluator==#|py|
 
 evaluator_after==#|py|
 
-with get_session(table_class = CodeEditorResponse, base=Base) as session:
-    session.add(
-        CodeEditorResponse(
-            student_id  = user__id if user__id else session__id, 
-            username    = user__username,
-            firstname   = user__firstname,
-            lastname    = user__lastname,
-            email       = user__email,
-            title       = title,
-            text        = text,
-            grade       = score,
-            score       = score,
-            feedback    = feedback,
-            code        = editor.code
-        )
-    )
-    session.commit()
+if user__username == "drevuz2" :
+    # creer un affichage de correction 
 
-grade = (score, feedback+" Merci "+user__username)
+    grade = (100,correction)
+else:
+    with get_session(table_class = CodeEditorResponse, base=Base) as session:
+        session.add(
+            CodeEditorResponse(
+                student_id  = user__id if user__id else session__id, 
+                username    = user__username,
+                firstname   = user__firstname,
+                lastname    = user__lastname,
+                email       = user__email,
+                title       = title,
+                text        = text,
+                grade       = score,
+                score       = score,
+                feedback    = feedback,
+                code        = editor.code
+            )
+        )
+        session.commit()
+
+    grade = (score, feedback+" Merci "+user__username)
 ==
