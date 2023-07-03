@@ -42,3 +42,23 @@ Pour ce faire vous devez définir les variables globales suivantes:
 - Vous pouvez également définir une variable **ponderation**:
 
     Cette dernière est une liste qui aura pour role de définir les valeurs utilisés pour la pondération de l'ordre des éléments de la SortList
+
+    Si il y a plus d'élément que de valeurs présentes dans ponderation, alors la dernière valeur sera utilisé jusqu'à là fin
+
+    Exemple:
+
+    ponderation ==
+
+    13
+
+    8
+
+    5
+    
+    3
+
+    2
+
+    1
+
+    ==
