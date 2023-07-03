@@ -40,7 +40,7 @@ class FeedbackCor:
         template = jinja2.Template(templatestring)
         try:
             x = template.render(feedback=self)
-        except Exception() as a:
+        except Exception as a:
             return str(a)
         return x
 
