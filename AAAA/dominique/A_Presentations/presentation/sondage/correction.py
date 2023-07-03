@@ -14,6 +14,11 @@ class Copie:
         if score > self.grade:
             self.grade = score
 
+    def update(self, code, score):
+        if score > self.grade:
+            self.grade = score
+            self.code = code
+
 
 class FeedbackCor:
     def __init__(self, filename="template.html"):
@@ -25,8 +30,7 @@ class FeedbackCor:
 
     def addCopie(self, user, code, score):
         if user in self.copies:
-            self.copies[user].setCode(code)
-            self.copies[user].setScore(score)
+            self.copies[user].update(code, score)
         else:
             self.copies[user] = Copie(user, code, score)
 
@@ -42,5 +46,8 @@ if __name__ == "__main__":
     feedback = FeedbackCor("cortemplate.html")
     feedback.addCopie("user1", "code1", 10)
     feedback.addCopie("user2", "code2", 20)
+    feedback.addCopie("user3", "code3", 30)
+    feedback.addCopie("user1", "code;UUU1", 100)
+    feedback.addCopie("user1", "XXX", 20)
     feedback.addCopie("user3", "code3", 30)
     print(feedback.render())
