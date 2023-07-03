@@ -1,8 +1,7 @@
 
 extends = /model/opentext.pl
 
-
-builder =@ /builder/bbefore.py
+@ /builder/bbefore.py [builder.py]
 
 @ correction.py
 
