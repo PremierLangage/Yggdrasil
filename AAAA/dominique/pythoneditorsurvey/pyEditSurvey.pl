@@ -20,8 +20,14 @@ evaluator==#|py|
 extends = /AAAA/dominique/A_Presentations/presentation/sondage/correctionTemplate.pl
 
 
-
-
+pltest==
+>>> prime(1)
+1
+>>> prime(2)
+1 2
+>>> prime(3)
+1 2 3 
+==
 
 title= Test de correction de Code 
 
