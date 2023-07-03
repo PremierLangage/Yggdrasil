@@ -54,8 +54,6 @@ ponderation ==
 # L'utilisateur doit-il choisir une réponse différente par question
 all_possibilities = False
 
-
-
 # Role : Traitement donnée, 
 # - doit remplir la variable globale : data
 # - doit remplir la variable globale : answers_csv
