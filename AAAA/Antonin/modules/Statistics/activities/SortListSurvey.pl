@@ -40,7 +40,7 @@ text ==#|markdown|
 # L'utilisateur doit-il choisir une réponse différente par question
 all_possibilities = False
 
-ponderation = 
+ponderation ==
 256
 128
 64
