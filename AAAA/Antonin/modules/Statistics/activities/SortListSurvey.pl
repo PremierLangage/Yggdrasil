@@ -100,7 +100,7 @@ answers_csv = CsvStringBuilder(header)
 
 sortlist = []
 for i, key in enumerate(inputValues):
-    tmp = Sortlistgroup(cid=f"sortlist_{questions[i]}")
+    tmp = SortList(cid=f"sortlist_{questions[i]}")
     tmp.items = [{"id": f"item_{key}_{i}",  "content": i} for i in inputValues[key]["items"]]
     globals()[f"checkbox_{questions[i]}"] = tmp
     sortlist.append(vars(tmp))
