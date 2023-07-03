@@ -64,3 +64,27 @@ Pour ce faire vous devez définir les variables globales suivantes:
     1
 
     ==
+
+    Default:
+    
+    ponderation ==
+
+    256
+
+    128
+
+    64
+
+    32
+
+    16
+
+    8
+
+    4
+
+    2
+
+    1
+    
+    ==
