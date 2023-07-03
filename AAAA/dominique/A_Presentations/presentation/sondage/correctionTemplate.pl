@@ -26,8 +26,7 @@ for x in range(10):
         random.randint(1,10)*10
         )
 
-text = "hoho"+ feedback.render()+ "haha"
-
+text = feedback.render()
 ==
 
 grader=
