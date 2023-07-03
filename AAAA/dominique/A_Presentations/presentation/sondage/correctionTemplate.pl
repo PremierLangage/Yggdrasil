@@ -12,7 +12,7 @@ text= "ceci doit disparaitre"
 form =
 
 
-_before==
+before==
 
 
 import correction
