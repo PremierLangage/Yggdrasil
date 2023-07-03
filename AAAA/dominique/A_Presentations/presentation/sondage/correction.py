@@ -38,7 +38,10 @@ class FeedbackCor:
         with open(self.filename, "r") as tempfile:
             templatestring = tempfile.read()
         template = jinja2.Template(templatestring)
-        x = template.render(feedback=self)
+        try:
+            x = template.render(feedback=self)
+        except Exception() as a:
+            return str(a)
         return x
 
 
