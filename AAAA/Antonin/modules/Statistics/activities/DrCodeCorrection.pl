@@ -59,7 +59,7 @@ editor.code ==
 
 before==#|python|
 from database_utils import CodeEditorResponse
-from correcrion import FeedbackCor
+from correction import FeedbackCor
 feedback= FeedbackCor()
 globals()["data"] = {}
 answers_csv = CsvStringBuilder(["username","firstname","lastname","email","grade"])
