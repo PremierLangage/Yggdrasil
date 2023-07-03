@@ -14,7 +14,7 @@ text= "ceci doit disparaitre"
 form =
 
 
-beforeX==
+_before==
 
 
 import correction
