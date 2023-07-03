@@ -36,10 +36,7 @@ text ==#|markdown|
 ---
 ==
 
-# Flags:
-# L'utilisateur doit-il choisir une réponse différente par question
-all_possibilities = False
-
+# Default ponderation 2^n
 ponderation ==
 256
 128
@@ -51,6 +48,13 @@ ponderation ==
 2
 1
 ==
+
+
+# Flags:
+# L'utilisateur doit-il choisir une réponse différente par question
+all_possibilities = False
+
+
 
 # Role : Traitement donnée, 
 # - doit remplir la variable globale : data
