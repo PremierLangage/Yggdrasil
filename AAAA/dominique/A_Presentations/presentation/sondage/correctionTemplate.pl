@@ -10,8 +10,9 @@ builder =@ /builder/before.py
 
 
 title=
-text=
+text= "ceci doit disparaitre" 
 form =
+
 
 before==
 
