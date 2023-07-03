@@ -16,3 +16,18 @@ Vos étudiants apprennent mal
 Vos étudiants ne sont pas critiques
 Vos étudiants ne sont pas engagés
 ==
+
+ponderation ==
+13
+8
+5
+3
+2
+1
+0
+0
+0
+0
+0
+0
+==
