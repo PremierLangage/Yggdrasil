@@ -4,8 +4,8 @@
 @utils/utils.py
 
 @ /utils/sandboxio.py
-builder =@ statbefore.py
-grader  =@ statevaluator.py
+@ statbefore.py [builder.py]
+@ statevaluator.py [grader.py]
 
 # ===============================================
 # Documentation Loading
