@@ -1,15 +1,4 @@
-
-
 extends = /AAAA/Antonin/modules/Statistics/stats.pl
-
-# ===============================================
-# Documentation Loading
-evaluation =@ ../docs/codeEditor/evaluation.md
-options =@ ../docs/codeEditor/options.md
-summary =@ ../docs/codeEditor/summary.md
-user_manual =@ ../docs/codeEditor/user_manual.md
-# ===============================================
-
 
 
 # default evaluator dummy
