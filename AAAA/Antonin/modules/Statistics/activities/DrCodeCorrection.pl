@@ -84,7 +84,8 @@ else:
                 grade       = score,
                 score       = score,
                 feedback    = feedback,
-                code        = editor.code
+                code        = editor.code,
+                eval = False
             )
         )
         session.commit()
