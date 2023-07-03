@@ -61,6 +61,11 @@ def test_evaluator_clause(name: str, dic : dict):
 
 
 def doPlTest(dic):  
+    if 'stopfirsterror' in dic:
+        stop=bool(dic['stopfirsterror'])
+    else:
+        stop=False
+        
     if "pltest" in dic:
         pltest = dic['pltest']
         tester = PlRunner(student,pltest)
