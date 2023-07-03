@@ -9,6 +9,12 @@ summary =@ ../docs/codeEditor/summary.md
 user_manual =@ ../docs/codeEditor/user_manual.md
 # ===============================================
 
+
+
+# default evaluator dummy
+evaluator==#|py|
+==
+
 extends = /AAAA/dominique/A_Presentations/presentation/sondage/correctionTemplate.pl
 
 
@@ -75,9 +81,7 @@ score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
 ==
 
-# default evaluator dummy
-evaluator==#|py|
-==
+
 
 evaluator_after==#|py|
 
