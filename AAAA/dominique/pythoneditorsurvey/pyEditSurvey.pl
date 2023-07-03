@@ -13,7 +13,7 @@ evaluator==#|py|
 
 extends = /AAAA/dominique/A_Presentations/presentation/sondage/correctionTemplate.pl
 
-
+@ /AAAA/Antonin/modules/Statistics/statbefore.py [builder.py]
 
 stopfirsterror= True
 pltest==
