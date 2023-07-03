@@ -13,12 +13,17 @@ Il contient l'affichage des réponses par question ainsi que l'affichage des deu
 
 ==
 
-question_1 = Que pensez vous de cet exercice?
+question_1 = Triez ces nombres en ordre croissant
 
 items_1==
 1
 2
 3
+5
+-5
+7
+8
+10
 ==
 
 graph_horizontal_1 = 1
