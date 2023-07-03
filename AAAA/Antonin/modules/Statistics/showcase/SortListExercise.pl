@@ -32,3 +32,5 @@ q1 = get_question('1')
 if q1.answers == ["1", "2", "3"]:
     score = 100
 ==
+
+include_stats_score = True
