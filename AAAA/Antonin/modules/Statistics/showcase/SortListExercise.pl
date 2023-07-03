@@ -34,7 +34,7 @@ graph_horizontal_1 = 1
 evaluator==#|py|
 score = 0
 q1 = get_question('1')
-if q1.answers == ["1", "2", "3"]:
+if q1.answers == ["-5","1", "2", "3","5","7","8","10"]:
     score = 100
 ==
 
