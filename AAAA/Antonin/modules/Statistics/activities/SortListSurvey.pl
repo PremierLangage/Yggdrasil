@@ -93,7 +93,7 @@ sortlist = []
 for i, key in enumerate(inputValues):
     tmp = SortList(cid=f"sortlist_{questions[i]}")
     tmp.items = [{"id": f"item_{key}_{i}",  "content": i} for i in inputValues[key]["items"]]
-    globals()[f"checkbox_{questions[i]}"] = tmp
+    globals()[f"sortlist_{questions[i]}"] = tmp
     sortlist.append(vars(tmp))
 
 if user__role =="teacher" and number_questions != 0:
@@ -141,7 +141,7 @@ import json, utils
 
 
 answer = {}
-for i in range(len(checkBoxs)):
+for i in range(len(sortlist)):
     answer[questions[i]] = (questions_name[i], [i['content'] for i in response[f"sortlist_{questions[i]}"]['items']])
 
 
