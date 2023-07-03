@@ -21,32 +21,9 @@ extends = /AAAA/dominique/A_Presentations/presentation/sondage/correctionTemplat
 
 
 
-title= Dummy Title CodeEditorSurvey
+title= Test de correction de Code 
 
 text ==#|markdown|
-# Documentation:
-
-{{summary}}
-
----
-
-## Manuel Utilisateur:
-
-{{user_manual}}
-
----
-
-## Options:
-
-{{options}}
-
----
-
-## Evaluation
-
-{{evaluation}}
-
----
 ==
 
 editor =: CodeEditor
