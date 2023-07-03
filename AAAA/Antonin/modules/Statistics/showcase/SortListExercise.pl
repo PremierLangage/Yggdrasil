@@ -39,5 +39,5 @@ J'aime bien surtout ceux
 evaluator==#|py|
 score = 0
 q1 = get_question('1')
-q1.items
+q1.answers = ["1", "2", "3"]
 ==
