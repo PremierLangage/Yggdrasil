@@ -58,7 +58,7 @@ class CodeEditorResponse(Response):
     
     score : Mapped[int] = mapped_column(Integer)
     code  : Mapped[Text] = mapped_column(Text) 
-    
+
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
 
@@ -79,6 +79,19 @@ class CheckboxResponse(Response):
     __tablename__ = f"db_survey_CheckboxResponse_{activity_id}"
     __mapper_args__ = {
         "polymorphic_identity": "CheckboxResponse",
+    }
+
+    id: Mapped[int] = mapped_column(ForeignKey(f"db_survey_defaultResponse_{activity_id}.id"), primary_key=True)
+
+    def __repr__(self):
+        return f"{self.student_id} a obtenu un score de : {self.grade}."
+    
+    values : Mapped[PickleType] = mapped_column(PickleType)
+
+class SortlistResponse(Response):
+    __tablename__ = f"db_survey_SortlistResponse_{activity_id}"
+    __mapper_args__ = {
+        "polymorphic_identity": "SortlistResponse",
     }
 
     id: Mapped[int] = mapped_column(ForeignKey(f"db_survey_defaultResponse_{activity_id}.id"), primary_key=True)
