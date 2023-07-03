@@ -10,6 +10,7 @@ summary =@ ../docs/codeEditor/summary.md
 user_manual =@ ../docs/codeEditor/user_manual.md
 # ===============================================
 
+@ /AAAA/dominique/pythoneditorsurvey/plteststatsgrader.py [grader.py]
 
 
 # default evaluator dummy
