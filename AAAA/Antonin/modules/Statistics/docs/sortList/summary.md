@@ -1,6 +1,6 @@
 Ici vous pouvez définir une activité de SortList incluant le module de Statistique:
 
-    - exercice SortList : selection de choix multiples répondant à une liste de question
+    - exercice SortList : Ordonnancement de réponses
 
     - affichage de graphe (histogramme) représentant les données pour l'enseignant
 
