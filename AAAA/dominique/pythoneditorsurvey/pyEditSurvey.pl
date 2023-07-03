@@ -1,5 +1,5 @@
 
-extends = 
+extends = /ComputerScience/python/template/pltest.pl
 extends = /AAAA/Antonin/modules/Statistics/stats.pl
 
 # ===============================================
