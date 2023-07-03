@@ -1,5 +1,4 @@
-extends = /AAAA/Antonin/modules/statistics/stats.pl
-
+extends = /AAAA/Antonin/modules/Statistics/stats.pl
 # ===============================================
 # Documentation Loading
 evaluation =@ ../docs/codeEditor/evaluation.md
