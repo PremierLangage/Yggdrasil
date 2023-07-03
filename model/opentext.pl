@@ -11,7 +11,7 @@ text==
 
 ==
 
-form = 
+form = /form/text_editor.html
 
 evaluator==
 grade=(100, "Merci pour votre retour")
