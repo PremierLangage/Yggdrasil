@@ -4,7 +4,7 @@ extends = /AAAA/Antonin/modules/Statistics/activities/SortListSurvey.pl
 question_1 = Vos étudiants sont ils conforme a ces questions ? Classer les dans l'ordre d'importance décroissante.
 
 
-
+graph_horizontal_1 = 1
 
 items_1==
 Vos étudiants ont besoin d’entraînement
