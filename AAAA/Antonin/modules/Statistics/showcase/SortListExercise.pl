@@ -28,7 +28,7 @@ items_1==
 
 graph_horizontal_1 = 1
 
-question_a = Triez ces nombres en ordre croissant
+question_a = Triez ces nombres en ordre décroissant
 
 items_a==
 6
