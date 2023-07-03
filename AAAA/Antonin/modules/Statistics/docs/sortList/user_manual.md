@@ -37,3 +37,8 @@ Pour ce faire vous devez définir les variables globales suivantes:
     ==
 
     </code>
+
+
+- Vous pouvez également définir une variable **ponderation**:
+
+    Cette dernière est une liste qui aura pour role de définir les valeurs utilisés pour la pondération de l'ordre des éléments de la SortList
