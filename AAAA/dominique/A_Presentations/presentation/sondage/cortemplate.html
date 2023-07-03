@@ -10,7 +10,7 @@
     Aucune copies 
 </div>
 {% else %}
-{% for user,code,score in feedback.copies.values() %}
+{% for user,code,score in feedback.getCopies() %}
 
 <span> {{user}} </span>
 <textarea> {{code}} </textarea>
