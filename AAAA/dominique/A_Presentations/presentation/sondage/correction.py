@@ -20,6 +20,7 @@ class Copie:
             self.code = code
 
 
+
 class FeedbackCor:
     def __init__(self, filename="template.html"):
         self.filename = filename  # template jinja
