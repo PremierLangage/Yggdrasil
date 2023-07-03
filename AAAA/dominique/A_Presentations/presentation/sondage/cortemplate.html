@@ -13,7 +13,7 @@
 {% for user,code,score in feedback.getCopies() %}
 
 <span> {{user}} got {{score}} </span>
-<textarea> {{code}} </textarea>
+<textarea disabled> {{code}} </textarea>
 {% endfor %}
 {% endif %}
 
