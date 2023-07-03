@@ -1,4 +1,4 @@
-extends = /AAAA/Antonin/stats.pl
+extends = /AAAA/Antonin/modules/statistics/stats.pl
 
 # ===============================================
 # Documentation Loading
