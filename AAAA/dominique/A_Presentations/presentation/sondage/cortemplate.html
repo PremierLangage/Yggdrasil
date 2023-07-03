@@ -10,7 +10,7 @@
     Aucune copies 
 </div>
 {% else %}
-{% for user,code,score in feedback.copies %}
+{% for user,code,score in feedback.copies.values() %}
          {%  if type=="failure" %}
          <div style="border:1px solid black;padding:1px;margin:1px;background-color:Tomato;border-radius:4px;">
             <button type="button" class="btn btn-block btn-danger"
