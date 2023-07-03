@@ -98,12 +98,12 @@ for key in inputValues:
 answers_csv = CsvStringBuilder(header)
 #answers_csv = f"username,firstname,lastname,email,{','.join([','.join([inputValues[key]['question']] + inputValues[key]['items']) for key in inputValues])}\\n"
 
-checkBoxs = []
+sortlist = []
 for i, key in enumerate(inputValues):
-    tmp = SortListGroup(cid=f"sortlist_{questions[i]}")
+    tmp = SortlistGroup(cid=f"sortlist_{questions[i]}")
     tmp.items = [{"id": f"item_{key}_{i}",  "content": i} for i in inputValues[key]["items"]]
     globals()[f"checkbox_{questions[i]}"] = tmp
-    checkBoxs.append(vars(tmp))
+    sortlist.append(vars(tmp))
 
 if user__role =="teacher" and number_questions != 0:
     for i in inputValues:           
