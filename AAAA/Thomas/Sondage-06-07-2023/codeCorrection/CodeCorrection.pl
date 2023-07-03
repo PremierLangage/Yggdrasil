@@ -8,9 +8,6 @@ evaluator==#|py|
 extends = /AAAA/Thomas/Sondage-06-07-2023/codeCorrection/correctionTemplate.pl
 
 
-
-
-
 title= Test de correction de Code 
 
 text ==#|markdown|
