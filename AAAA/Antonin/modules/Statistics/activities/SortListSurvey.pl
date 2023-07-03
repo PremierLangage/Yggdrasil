@@ -108,6 +108,7 @@ for i, key in enumerate(inputValues):
     sortlist.append(vars(tmp))
 
 if user__role =="teacher" and number_questions != 0:
+    ponderation = [int(i) for i in ponderation.splitlines()]
     for i in inputValues:           
         labels = get_combinations(inputValues[i]["items"]) if all_possibilities != 'False' else []
         data[inputValues[i]["question"]] = [inputValues[i]["items"], []]
