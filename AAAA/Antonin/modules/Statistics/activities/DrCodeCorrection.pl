@@ -75,6 +75,7 @@ evaluator==#|py|
 ==
 
 evaluator_after==#|py|
+
 with get_session(table_class = CodeEditorResponse, base=Base) as session:
     session.add(
         CodeEditorResponse(
@@ -93,5 +94,5 @@ with get_session(table_class = CodeEditorResponse, base=Base) as session:
     )
     session.commit()
 
-grade = (score, feedback)
+grade = (score, feedback+" Merci "+user__username)
 ==
