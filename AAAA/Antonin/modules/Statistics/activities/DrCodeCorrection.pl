@@ -47,7 +47,8 @@ with get_session(table_class=CodeEditorResponse, base=Base) as session:
         answers_csv.addLine([answer.username,answer.firstname,answer.lastname,answer.email,answer.grade,answer.code])
         feedback.addCopie(answer.username,answer.code,answer.grade)
 globals()["answers_csv"] = str(answers_csv)
-text += feedback.render()
+corhtml = feedback.render()
+text += corhtml
 ==
 
 formstudent==#|html|
@@ -68,8 +69,7 @@ evaluator_after==#|py|
 
 if user__username == "drevuz2" :
     # creer un affichage de correction 
-
-    grade = (100,correction)
+    grade = (100,corhtml)
 else:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
         session.add(
