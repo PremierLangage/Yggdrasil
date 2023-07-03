@@ -1,7 +1,7 @@
 
 
 
-@ /builder/bbefore.py[builder.py]
+builder =@ /builder/before.py
 
 @ correction.py
 
