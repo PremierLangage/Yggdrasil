@@ -1,4 +1,4 @@
-extends = /AAAA/Antonin/modules/Statistics/activities/CheckboxSurvey.pl
+extends = /AAAA/Antonin/modules/Statistics/activities/SortListSurvey.pl
 
 title = Exercice d'exemple | Checkbox
 
