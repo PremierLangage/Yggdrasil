@@ -136,7 +136,7 @@ formstudent==#|html|
 
 # Evaluation de la réponse de l'étudiant
 evaluator_before == #|py|
-from database_utils import get_session, Base, CheckboxResponse
+from database_utils import get_session, Base, SortlistResponse
 import json, utils
 
 
@@ -168,9 +168,9 @@ evaluator==#|py|
 
 evaluator_after == #|py|
 if int(score) >= 0:
-    with get_session(table_class = CheckboxResponse, base=Base) as session:
+    with get_session(table_class = SortlistResponse, base=Base) as session:
         session.add(
-            CheckboxResponse(
+            SortlistResponse(
                 student_id = user__id if user__id else session__id, 
                 username    = user__username,
                 firstname   = user__firstname,
