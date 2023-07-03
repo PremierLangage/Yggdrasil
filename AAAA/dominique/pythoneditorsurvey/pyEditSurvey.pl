@@ -2,13 +2,7 @@
 extends = /ComputerScience/python/template/pltest.pl
 extends = /AAAA/Antonin/modules/Statistics/stats.pl
 
-# ===============================================
-# Documentation Loading
-evaluation =@ ../docs/codeEditor/evaluation.md
-options =@ ../docs/codeEditor/options.md
-summary =@ ../docs/codeEditor/summary.md
-user_manual =@ ../docs/codeEditor/user_manual.md
-# ===============================================
+
 
 @ /AAAA/dominique/pythoneditorsurvey/plteststatsgrader.py [grader.py]
 
