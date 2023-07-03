@@ -15,7 +15,7 @@ form =
 
 
 before==
-kjqlhsdfkjdsfhkl
+
 
 import correction
 import random
