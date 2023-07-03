@@ -40,13 +40,6 @@ text ==#|markdown|
 # L'utilisateur doit-il choisir une réponse différente par question
 all_possibilities = False
 
-question_1 = test
-items_1 ==
-a
-b
-c
-==
-
 
 # Role : Traitement donnée, 
 # - doit remplir la variable globale : data
