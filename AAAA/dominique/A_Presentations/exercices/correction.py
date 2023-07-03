@@ -11,6 +11,10 @@ class Copie:
     def setCode(self,code):
         self.code = code 
 
+    def setScore(self, score):
+        if score > self.grade :
+            self.grade = secore 
+
 class FeedbackCor:
     def __init_(self, filename="template.html"):
 
