@@ -128,6 +128,7 @@ if user__role =="teacher" and number_questions != 0:
             data[question][1] += list(map(str, items))
             line_csv += [question] + [1 if e in items else 0 for e in inputValues[q]["items"]]
         answers_csv.addLine(line_csv)
+
 sortlistI = list(enumerate(sortlist))
 globals()["data"] = data
 globals()["answers_csv"] = str(answers_csv)
@@ -156,7 +157,7 @@ import json, utils
 
 answer = {}
 for i in range(len(checkBoxs)):
-    answer[questions[i]] = (questions_name[i], [i['content'] for i in response[f"checkbox_{questions[i]}"]['items'] if i["checked"]])
+    answer[questions[i]] = (questions_name[i], [i['content'] for i in response[f"sortlist_{questions[i]}"]['items'] if i["checked"]])
 
 
 class Question:
