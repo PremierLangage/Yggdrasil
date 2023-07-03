@@ -128,7 +128,7 @@ if user__role =="teacher" and number_questions != 0:
             data[question][1] += list(map(str, items))
             line_csv += [question] + [1 if e in items else 0 for e in inputValues[q]["items"]]
         answers_csv.addLine(line_csv)
-checkBoxsI = list(enumerate(checkBoxs))
+sortlistI = list(enumerate(sortlist))
 globals()["data"] = data
 globals()["answers_csv"] = str(answers_csv)
 ==
@@ -139,7 +139,7 @@ formstudent==#|html|
 {% if False and HAS_ANSWERED != None %}
         <span class="success-state">Vous avez déjà répondu à ce sondage</span>
 {% else %}
-    {% for i, g in checkBoxsI %}
+    {% for i, g in sortlistI %}
         <b>{{ questions_name[i]|safe }}</b>
 
         {{ g|component }}
