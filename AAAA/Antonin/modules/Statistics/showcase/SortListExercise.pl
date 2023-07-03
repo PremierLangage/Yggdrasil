@@ -3,7 +3,7 @@ extends = /AAAA/Antonin/modules/Statistics/activities/SortListSurvey.pl
 title = Exercice d'exemple | SortList
 
 text==#|markdown|
-Ceci est un exemple d'exercice visant à montrer l'utilisation de l'activité PL [`Checkbox.pl` dont voici la documentation](filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/activities/CheckboxSurvey.pl).
+Ceci est un exemple d'exercice visant à montrer l'utilisation de l'activité PL [`SortList.pl` dont voici la documentation](filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/activities/SortListSurvey.pl).
 
 Il contient l'affichage des réponses par question ainsi que l'affichage des deux graphes par défaut optionnels:
 
