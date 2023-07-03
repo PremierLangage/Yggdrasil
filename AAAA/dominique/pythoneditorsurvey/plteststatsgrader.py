@@ -60,8 +60,7 @@ def test_evaluator_clause(name: str, dic : dict):
         sys.exit(1)
 
 
-def doPlTest(dic):
-    
+def doPlTest(dic):  
     if "pltest" in dic:
         pltest = dic['pltest']
         tester = PlRunner(student,pltest)
@@ -107,7 +106,7 @@ if __name__ == "__main__":
     dic['response'] = get_answers()
 
     test_evaluator_clause('evaluator_before', dic)
-    test_evaluator_clause('evaluator', dic)
+    # test_evaluator_clause('evaluator', dic) # no evluator this is a pltest
     test_evaluator_clause('evaluator_after', dic)
     
     if 'grade' not in dic:
