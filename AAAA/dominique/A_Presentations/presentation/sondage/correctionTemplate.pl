@@ -1,4 +1,5 @@
 
+extends = /model/opentext.pl
 
 
 builder =@ /builder/before.py
