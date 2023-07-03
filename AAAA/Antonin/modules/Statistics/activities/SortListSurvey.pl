@@ -46,7 +46,7 @@ all_possibilities = False
 # - doit remplir la variable globale : answers_csv
 # Format spécifié dans le fichier stats.pl
 before==#|python|
-from database_utils import get_session, Base, CheckboxResponse
+from database_utils import get_session, Base, SortlistResponse
 import json, utils
 from random import shuffle
 
@@ -103,8 +103,8 @@ if user__role =="teacher" and number_questions != 0:
         if len(inputValues[i]) > 2:
             data[inputValues[i]["question"]].append(inputValues[i]["horizontal"])
 
-    with get_session(table_class=CheckboxResponse, base=Base) as session:
-        answers = session.query(CheckboxResponse).all()
+    with get_session(table_class=SortlistResponse, base=Base) as session:
+        answers = session.query(SortlistResponse).all()
     
     for answer in answers:
         line_csv = [answer.username,answer.firstname,answer.lastname,answer.email,answer.grade]
