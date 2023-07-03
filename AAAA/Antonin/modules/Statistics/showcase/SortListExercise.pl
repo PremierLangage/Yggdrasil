@@ -31,14 +31,7 @@ graph_horizontal_1 = 1
 question_a = Triez ces nombres en ordre croissant
 
 items_a==
-1
-2
-3
-5
--5
-7
-8
-10
+6 7 4 5 2 1
 ==
 
 # Si vous voulez afficher toutes les combinaisons de réponses possibles:
