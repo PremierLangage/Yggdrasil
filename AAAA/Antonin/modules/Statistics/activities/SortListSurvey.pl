@@ -115,7 +115,6 @@ if user__role =="teacher" and number_questions != 0:
             for elem in range(len(items)):
                 items_result += [items[elem]] * ponderation[elem]
             data[question][1] += list(map(str, items_result))
-            line_csv += [question] + [1 if e in items else 0 for e in inputValues[q]["items"]]
             line_csv += [question] + [inputValues[q]["items"].index(e) for e in items]
 
         answers_csv.addLine(line_csv)
