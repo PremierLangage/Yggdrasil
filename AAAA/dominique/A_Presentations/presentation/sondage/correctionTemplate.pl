@@ -1,5 +1,4 @@
-
-extends = /model/opentext.pl
+@ /utils/sandboxio.py
 
 @ /builder/bbefore.py [builder.py]
 
