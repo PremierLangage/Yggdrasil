@@ -33,4 +33,3 @@ if q1.answers == ["1", "2", "3"]:
     score = 100
 ==
 
-include_stats_score = True
