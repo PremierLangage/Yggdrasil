@@ -68,8 +68,9 @@ with get_session(table_class=CodeEditorResponse, base=Base) as session:
     answers = session.query(CodeEditorResponse).all()
     for answer in answers:
         answers_csv.addLine([answer.username,answer.firstname,answer.lastname,answer.email,answer.grade,answer.code])
-
+        feedback.addCopie(answer.username,answer.grade,answer.code)
 globals()["answers_csv"] = str(answers_csv)
+text += feedback.render()
 ==
 
 formstudent==#|html|
