@@ -40,6 +40,7 @@ text ==#|markdown|
 # L'utilisateur doit-il choisir une réponse différente par question
 all_possibilities = False
 
+ponderation = [256,128,64,32,16,8,4,2,1]
 
 # Role : Traitement donnée, 
 # - doit remplir la variable globale : data
