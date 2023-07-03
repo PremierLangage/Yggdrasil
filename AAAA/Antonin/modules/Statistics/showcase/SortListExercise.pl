@@ -45,7 +45,8 @@ items_a==
 evaluator==#|py|
 score = 0
 q1 = get_question('1')
-if q1.answers == ["-5","1", "2", "3","5","7","8","10"]:
+qa = get_question('a')
+if q1.answers == ["-5","1", "2", "3","5","7","8","10"] and qa.answers == ['7', '6', '5', '4', '2', '1']:
     score = 100
 ==
 
