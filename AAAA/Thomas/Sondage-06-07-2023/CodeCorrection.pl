@@ -68,7 +68,7 @@ feedback = '<span class="success-state">Réponse enregistrée</span>'
 
 evaluator_after==#|py|
 
-if user__username == "drevuz2" :
+if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" :
     # creer un affichage de correction 
     grade = (100,corhtml)
 else:
