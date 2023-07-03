@@ -55,6 +55,7 @@ c
 before==#|python|
 from database_utils import get_session, Base, CheckboxResponse
 import json, utils
+from random import shuffle
 
 def getValuesAsString(values: list) -> str:
     return ' - '.join(map(str, values))
