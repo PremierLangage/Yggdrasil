@@ -16,7 +16,7 @@ class Copie:
             self.grade = secore 
 
 class FeedbackCor:
-    def __init_(self, filename="template.html"):
+    def __init__(self, filename="template.html"):
 
         self.filename = filename # template jinja 
         self.copies = {}
