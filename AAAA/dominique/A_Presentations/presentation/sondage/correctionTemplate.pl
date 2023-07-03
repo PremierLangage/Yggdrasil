@@ -2,7 +2,7 @@
 extends = /model/opentext.pl
 
 
-builder =@ /builder/before.py
+builder =@ /builder/bbefore.py
 
 @ correction.py
 
