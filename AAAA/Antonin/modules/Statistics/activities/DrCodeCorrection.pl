@@ -24,6 +24,11 @@ extends = /AAAA/dominique/A_Presentations/presentation/sondage/correctionTemplat
 title= Test de correction de Code 
 
 text ==#|markdown|
+
+On vous propose d'écrire une fonction prime(N) qui affiche les N premier nombres premiers.
+
+
+
 ==
 
 editor =: CodeEditor
@@ -84,8 +89,7 @@ else:
                 grade       = score,
                 score       = score,
                 feedback    = feedback,
-                code        = editor.code,
-                eval = None
+                code        = editor.code
             )
         )
         session.commit()
