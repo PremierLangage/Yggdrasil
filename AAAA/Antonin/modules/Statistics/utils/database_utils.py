@@ -58,6 +58,7 @@ class CodeEditorResponse(Response):
     
     score : Mapped[int] = mapped_column(Integer)
     code  : Mapped[Text] = mapped_column(Text) 
+    eval : Mapped[Bool] = mapped_column(Bool) 
 
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
