@@ -37,7 +37,7 @@ class FeedbackCor:
         if user in self.copies:
             self.copies[user].update(code, score)
         else:
-            self.copies[user] = Copie(user, code, score)
+            self.copies[user] = Copie(user, code, score, checked)
 
     def render(self):
         with open(self.filename, "r") as tempfile:
