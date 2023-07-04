@@ -56,4 +56,3 @@ form=@ /form/text_editor.html
 
 settings.allow_reroll=1
 
-
