@@ -110,6 +110,11 @@ if __name__ == "__main__":
     dic = get_context()
     dic['response'] = get_answers()
 
+    student = get_answers()['answer']
+    with open("student.py","w") as ost:
+        ost.write(student)
+
+
     test_evaluator_clause('evaluator_before', dic)
     # test_evaluator_clause('evaluator', dic) # no evluator this is a pltest exercice
 
