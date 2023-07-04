@@ -95,8 +95,9 @@
         }
 </style>
 <script>
-function myFunction(x) {
+function myFunction(id) {
   var x = document.getElementById(id);
+  var y = document.getElementById(id);
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -128,7 +129,7 @@ function myFunction(x) {
 </pre>
         </div>
     </div>
-    <div class="actions">
+    <div class="actions" id="copie_actions_{{i}}">
         <button class="valide"> Valide </button>
         <button class="invalide"> Invalide </button>
         <button onclick="myFunction('copie_{{i}}')">Click me</button>
