@@ -1,5 +1,6 @@
 
 extends = /ComputerScience/python/template/pltest.pl
+
 extends = /AAAA/Antonin/modules/Statistics/stats.pl
 
 @ /AAAA/Antonin/modules/Statistics/statbefore.py [builder.py]
@@ -35,6 +36,13 @@ On vous propose d'écrire une fonction prime(N) qui affiche les N premier nombre
 
 
 
+==
+
+editor =: CodeEditor
+editor.theme = white
+editor.language = python
+editor.code ==
+# write your code here
 ==
 
 
