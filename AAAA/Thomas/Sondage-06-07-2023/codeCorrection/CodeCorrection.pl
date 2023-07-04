@@ -38,7 +38,7 @@ formstudent==#|html|
 ==
 
 evaluator_before==#|py|
-# from database_utils import get_session, Base, CodeEditorResponse
+from database_utils import get_session, Base, CodeEditorResponse
 
 # Default Grade intilisation
 score = 100
