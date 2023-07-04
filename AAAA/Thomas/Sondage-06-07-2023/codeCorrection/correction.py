@@ -34,9 +34,28 @@ class FeedbackCor:
     def getCopies(self):
         return [(x.user, x.code, x.grade, x.checked) for x in self.copies.values()]
 
-    def getCopiesAsEnumerate(self):
-        return list(enumerate(self.getCopies()))
-        
+    def getCopiesAsHtml(self):
+        result = []
+        for copie in self.getCopies():
+
+f"""
+<div class="content">
+        <div class="body">
+            <span class="title">Réponse:</span>
+            <div>
+<pre>
+<code class="language-python">{{code}}</code>
+</pre>
+            </div>
+        </div>
+        <div class="actions">
+            <button class="valide"> Valide </button>
+            <button class="invalide"> Invalide </button>
+        </div>
+</div>
+"""
+        ))
+
     def addCopie(self, user, code, score, checked):
         if user in self.copies:
             self.copies[user].update(code, score, checked)
