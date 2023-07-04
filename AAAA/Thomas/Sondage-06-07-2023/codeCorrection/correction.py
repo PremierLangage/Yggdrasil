@@ -63,7 +63,7 @@ class FeedbackCor:
 
     def getCopiesAsHtml(self):
         result = []
-        for i, (user, code, grade, checked) in enumerate(self.getCopies()):
+        for i, copie in enumerate(self.getCopies()):
             result.append(make_hide_block_on_click(str(i), "Contenu", f"""
 <!-- Generated from script -->
 <div class="content">
@@ -71,7 +71,7 @@ class FeedbackCor:
             <span class="title">Réponse:</span>
             <div>
 <pre>
-<code class="language-python">{{code}}</code>
+<code class="language-python">{copie[1]}</code>
 </pre>
             </div>
         </div>
