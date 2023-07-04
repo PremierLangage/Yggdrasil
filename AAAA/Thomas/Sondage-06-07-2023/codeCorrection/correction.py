@@ -6,6 +6,7 @@ class Copie:
         self.user = user
         self.code = code
         self.grade = score
+        self.checked = checked
 
     def setCode(self, code):
         self.code = code
@@ -13,6 +14,9 @@ class Copie:
     def setScore(self, score):
         if score > self.grade:
             self.grade = score
+    
+    def setChecked(self, checked):
+        self.checked = checked
 
     def update(self, code, score, checked):
         if score > self.grade:
