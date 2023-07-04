@@ -124,7 +124,7 @@ function myFunction(id) {
 {% else %}
 <div class="correction-card-list">
 {% for i, (user,code,score,checked) in feedback.getCopiesAsEnumerate() %}
-<div class="correction-card" id="copie_{{i}}">
+<div class="correction-card">
     <div class="header">
         <div class="user-info">
             <span class="name">{{user}}</span>
