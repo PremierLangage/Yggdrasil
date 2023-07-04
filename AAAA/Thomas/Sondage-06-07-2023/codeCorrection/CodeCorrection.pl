@@ -52,9 +52,9 @@ evaluator==#|py|
 
 evaluator_after==#|py|
 grade = (score, feedback)
-# if response['thomas']:
-#     form = response['thomas']
-#     grade = (100, corhtml)
+if response['thomas']:
+    form = response['thomas']
+    grade = (100, corhtml)
 # else:
 #     if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" :
 #         # creer un affichage de correction 
