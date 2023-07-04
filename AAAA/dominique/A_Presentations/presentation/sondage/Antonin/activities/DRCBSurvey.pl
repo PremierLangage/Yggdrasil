@@ -2,7 +2,7 @@
 extends= /AAAA/Antonin/modules/Statistics/activities/CheckboxSurvey.pl
 
 
-title = Vos Etudiants CB
+title = Vos Etudiants plusieurs choix
 
 text==
 
