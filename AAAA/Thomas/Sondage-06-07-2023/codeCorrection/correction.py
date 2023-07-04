@@ -14,7 +14,7 @@ class Copie:
         if score > self.grade:
             self.grade = score
 
-    def update(self, code, score):
+    def update(self, code, score, checked):
         if score > self.grade:
             self.grade = score
             self.code = code
