@@ -1,98 +1,103 @@
 
 <!--  template pour les correction -->
 <style>
-        .correction-card-list {
-            display:flex;
-            flex-direction: column;
-        }
+    .correction-card-list {
+        display:flex;
+        flex-direction: column;
+    }
 
-        .correction-card {
-            --primary-color: #000000;
-            --secondary-color: #f0f8ff;
-            --selected-color: #91daff5d;
-            color: var(--primary-color);
-            border-top: solid 1px var(--secondary-color);
-            border-left: outset 4px var(--secondary-color);
-            /* border-bottom: ridge 16px var(--secondary-color); */
-
-            display: grid;
-            grid-template-columns: 5fr 1fr;
-            grid-template-rows: 1fr;
-            grid-column-gap: 2px;
-            grid-row-gap: 0px;
+    @keyframes on-select{
+        0% {
             background-color: white;
-            transition: background-color 1s;
-            margin-bottom: 16px;
+            border-left: outset 8px var(--secondary-color);
         }
-
-        .correction-card:hover {
+        100% {
             background-color: var(--selected-color);
-            transition: background-color 1s;
+            border-left: outset 8px var(--selected-color);
         }
+    }
 
-        .correction-card > .content { 
-            grid-area: 1 / 1 / 2 / 2; 
-            display: flex;
-            flex-direction:column;
-            margin: 16px;
-        }
+    .correction-card {
+        --primary-color: #000000;
+        --secondary-color: #f0f8ff;
+        --selected-color: #91daff5d;
+        color: var(--primary-color);
+        border-left: outset 8px var(--secondary-color);
+        padding: 16px;
+    }
 
-        .correction-card > .content > .header {
-            display: flex;
-            justify-content: space-between;
-            font-weight: bold;
-            padding-bottom: 16px;
-            border-bottom: ridge 2px var(--secondary-color);
-        }
+    .correction-card:hover {
+        background-color: var(--selected-color);
+        border-left: outset 8px var(--selected-color);
+        animation: on-select 1s;
+    }
+    
+    .correction-card > .content { 
+        display: flex;
+        flex-direction:column;
+        margin: 16px;
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 2px;
+        grid-row-gap: 0px;
+    }
 
-        .correction-card > .content > .header > .user-info > .name {
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 3ch;
-        }
+    .correction-card > .header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        padding-bottom: 16px;
+    }
 
-        .correction-card > .content > .header > .user-info > .id {
-            opacity: 0.42;
-            font-style: italic;
-        }
+    .correction-card >  .header > .user-info > .name {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 3ch;
+    }
 
-        .correction-card > .content > .body {
-            padding: 8px;
-        }
+    .correction-card > .header > .user-info > .id {
+        opacity: 0.42;
+        font-style: italic;
+    }
 
-        .correction-card > .content > .body > .title {
-            font-size: 2.5ch;
-        }
+    .correction-card > .content > .body {
+        padding: 8px;
+        grid-area: 1 / 1 / 2 / 2; 
+    }
 
-        .correction-card > .actions { 
-            grid-area: 1 / 2 / 2 / 3;
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            background-color: var(--secondary-color);
-            padding: 16px;
-        }
+    .correction-card > .content > .body > .title {
+        font-size: 2.5ch;
+    }
 
-        .correction-card > .actions > button {
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            cursor:pointer;
-        }
+    .correction-card > .content > .actions { 
+        grid-area: 1 / 2 / 2 / 3;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
 
-        .correction-card > .actions > button:hover {
-            opacity: 0.8;
-        }
+    .correction-card  > .content > .actions > button {
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor:pointer;
+        margin-bottom:8px;
+    }
 
-        .correction-card > .actions > button.valide {
-            background-color: #4CAF50;
-        }
+    .correction-card > .content > .actions > button:hover {
+        opacity: 0.8;
+    }
 
-        .correction-card > .actions > button.invalide {
-            background-color: #f44336;
-        }
+    .correction-card > .content > .actions > button.valide {
+        background-color: #4CAF50;
+    }
+
+    .correction-card > .content > .actions > button.invalide {
+        background-color: #f44336;
+    }
 </style>
 <script>
 function myFunction(id) {
