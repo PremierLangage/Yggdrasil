@@ -112,6 +112,9 @@ if __name__ == "__main__":
 
     test_evaluator_clause('evaluator_before', dic)
     # test_evaluator_clause('evaluator', dic) # no evluator this is a pltest exercice
+
+    doPlTest(dic)
+
     test_evaluator_clause('evaluator_after', dic)
     
     if 'grade' not in dic:
