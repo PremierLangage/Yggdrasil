@@ -29,7 +29,8 @@ def make_hide_block_on_click(nameblock, title, content, order="Voir/Réduire "):
 
 
 class Copie:
-    def __init__(self, user, code, score, checked):
+    def __init__(self, id, user, code, score, checked):
+        self.id = id
         self.user = user
         self.code = code
         self.grade = score
