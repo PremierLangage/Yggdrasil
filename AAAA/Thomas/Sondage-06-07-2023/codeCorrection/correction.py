@@ -81,7 +81,7 @@ class FeedbackCor:
         </div>
 </div>
 <!-- End of generated script -->
-""", copie]))
+""", copie)])
         return result
 
     def addCopie(self, user, code, score, checked):
