@@ -19,7 +19,7 @@ editor.code ==
 before==#|python|
 from database_utils import CodeEditorResponse
 from correction import FeedbackCor
-feedback= FeedbackCor()
+_feedback= FeedbackCor()
 globals()["data"] = {}
 answers_csv = CsvStringBuilder(["username","firstname","lastname","email","grade"])
 with get_session(table_class=CodeEditorResponse, base=Base) as session:
@@ -27,9 +27,9 @@ with get_session(table_class=CodeEditorResponse, base=Base) as session:
     answers = session.query(CodeEditorResponse).all()
     for answer in answers:
         answers_csv.addLine([answer.username,answer.firstname,answer.lastname,answer.email,answer.grade,answer.code])
-        feedback.addCopie(answer.username,answer.code,answer.grade, answer.checked)
+        _feedback.addCopie(answer.username,answer.code,answer.grade, answer.checked)
 globals()["answers_csv"] = str(answers_csv)
-corhtml = feedback.render()
+corhtml = _feedback.render()
 text += corhtml
 ==
 
@@ -55,7 +55,7 @@ if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" 
     # creer un affichage de correction 
     grade = (100,corhtml)
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
-        users = map(lambda x : x[0], feedback.get_copies())
+        users = map(lambda x : x[0], _feedback.get_copies())
         modified_copies = [(k, v) for k, v in response.items() if k in users]
         grade = (100, str(modified_copies))
     #     for user, checked in modified_copies:
