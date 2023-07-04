@@ -53,6 +53,7 @@ class FeedbackCor:
             <button class="invalide"> Invalide </button>
         </div>
 </div>
+<!-- end of genered script -->
 """))
 
     def addCopie(self, user, code, score, checked):
