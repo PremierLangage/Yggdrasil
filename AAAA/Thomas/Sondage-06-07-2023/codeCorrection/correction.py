@@ -36,7 +36,7 @@ class FeedbackCor:
 
     def addCopie(self, user, code, score, checked):
         if user in self.copies:
-            self.copies[user].update(code, score)
+            self.copies[user].update(code, score, checked)
         else:
             self.copies[user] = Copie(user, code, score, checked)
 
