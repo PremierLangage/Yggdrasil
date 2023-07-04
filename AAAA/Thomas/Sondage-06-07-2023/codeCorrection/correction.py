@@ -67,12 +67,12 @@ class FeedbackCor:
             result.append([make_hide_block_on_click(str(i), "Contenu", f"""
 <!-- Generated from script -->
 <script>
-function assignCheckValue(checkedValue) {
+function assignCheckValue(checkedValue) {{
     var x = document.createElement('input');
     x.setAttribute('id', "form_{copie[0]}")
     x.setAttribute('style', "display:none;");
     x.setAttribute('value', checkedValue);
-}
+}}
 </script>
 <div class="content">
         <div class="body">
