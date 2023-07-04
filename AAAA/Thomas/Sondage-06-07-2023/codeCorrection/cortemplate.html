@@ -96,6 +96,7 @@
 </style>
 <script>
 function myFunction(x) {
+  var x = document.getElementById(id);
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -130,7 +131,7 @@ function myFunction(x) {
     <div class="actions">
         <button class="valide"> Valide </button>
         <button class="invalide"> Invalide </button>
-        <button onclick="myFunction(this)">Click me</button>
+        <button onclick="myFunction({{i}})">Click me</button>
     </div>
 </div>
 {% endfor %}
