@@ -5,9 +5,10 @@
 <div style="border:1px solid black;padding:0%;margin:1%;background-color:LightGreen;border-radius:4px;">
     Aucune copies 
 </div>
-<input type='button' id="form_thomas" value="Je suis la valeur"/>
+<input type='button' id="form_1_good" value=""/>
+<input type='button' id="form_1_bad" value=""/>
 {% else %}
-{% for user,code,score in feedback.getCopies() %}
+{% for user,code,score,checked in feedback.getCopies() %}
 
 <span> {{user}} got {{score}} </span>
 <pre><code class="language-python">{{code}}</code></pre>
