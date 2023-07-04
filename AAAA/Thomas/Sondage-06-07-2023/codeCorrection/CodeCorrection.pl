@@ -27,7 +27,7 @@ with get_session(table_class=CodeEditorResponse, base=Base) as session:
     answers = session.query(CodeEditorResponse).all()
     for answer in answers:
         answers_csv.addLine([answer.username,answer.firstname,answer.lastname,answer.email,answer.grade,answer.code])
-        feedback.addCopie(answer.username,answer.code,answer.grade)
+        feedback.addCopie(answer.username,answer.code,answer.grade, answer.checked)
 globals()["answers_csv"] = str(answers_csv)
 corhtml = feedback.render()
 text += corhtml
