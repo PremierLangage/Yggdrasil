@@ -55,8 +55,8 @@ if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" 
     # creer un affichage de correction 
     grade = (100,corhtml)
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
-       users = [x for x in _feedback['copies']]
-       # modified_copies = [(k, v) for k, v in response.items() if k in users]
+        users = [x for x in _feedback['copies']]
+        modified_copies = [(k, v) for k, v in response.items() if k in users] # on filtre les response qui ne correspondent pas a un utilisateur
         grade = (100, str(_feedback))
     #     for user, checked in modified_copies:
     #         session.query(CodeEditorResponse).filter(CodeEditorResponse.username == user).update({'checked': checked})
