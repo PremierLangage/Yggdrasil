@@ -66,6 +66,13 @@ class FeedbackCor:
         for i, copie in enumerate(self.getCopies()):
             result.append([make_hide_block_on_click(str(i), "Contenu", f"""
 <!-- Generated from script -->
+<script>
+function(checkedValue) {
+    var x = document.createElement('input');
+    x.setAttribute('value', checkedValue);
+}
+</script>
+<input style='display:none' id="form_copie_{copie[0]}" value=""/>
 <div class="content">
         <div class="body">
             <span class="title">Réponse:</span>
@@ -80,7 +87,6 @@ class FeedbackCor:
             <button class="invalide"> Invalide </button>
         </div>
 </div>
-<input style='display:none' id="form_copie_{copie[0]}" value=""/>
 <!-- End of generated script -->
 """), copie])
         return result
