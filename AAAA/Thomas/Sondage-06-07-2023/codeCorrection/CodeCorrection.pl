@@ -51,7 +51,6 @@ evaluator==#|py|
 
 
 evaluator_after==#|py|
-grade = (score, feedback)
 if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" :
     # creer un affichage de correction 
     grade = (100,corhtml)
