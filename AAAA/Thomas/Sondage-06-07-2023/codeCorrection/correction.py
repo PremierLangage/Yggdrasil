@@ -67,7 +67,7 @@ class FeedbackCor:
             result.append([make_hide_block_on_click(str(i), "Contenu", f"""
 <!-- Generated from script -->
 <script>
-function(checkedValue) {
+function assignCheckValue(checkedValue) {
     var x = document.createElement('input');
     x.setAttribute('id', "form_{copie[0]}")
     x.setAttribute('style', "display:none;");
@@ -84,8 +84,8 @@ function(checkedValue) {
             </div>
         </div>
         <div class="actions">
-            <button class="valide"> Valide </button>
-            <button class="invalide"> Invalide </button>
+            <button class="valide" onclick="assignCheckValue(1)"> Valide </button>
+            <button class="invalide" onclick="assignCheckValue(0)"> Invalide </button>
         </div>
 </div>
 <!-- End of generated script -->
