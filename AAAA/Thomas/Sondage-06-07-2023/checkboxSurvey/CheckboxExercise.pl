@@ -1,4 +1,4 @@
-extends = /AAAA/Thomas/Sondage-06-07-2023/checkboxSurvey/CheckboxExercise.pl
+extends = /AAAA/Thomas/Sondage-06-07-2023/checkboxSurvey/CheckboxSurvey.pl
 
 title = Exercice d'exemple | Checkbox
 
@@ -16,11 +16,14 @@ Il contient l'affichage des réponses par question ainsi que l'affichage des deu
 question_1 = Que pensez vous de cet exercice?
 
 items_1==
-Très satisfaisant
-Satisfaisant
-Moyennement satisfaisant
-Mediocre
-La couleur bleu
+Vos étudiants ont besoin d’entraînement
+Vos étudiants n'apprennent pas le cours
+Vos étudiants s'ennuient
+Vos étudiants se perdent
+Vos étudiants sont très hétérogènes en niveaux
+Vos étudiants apprennent mal 
+Vos étudiants ne sont pas critiques
+Vos étudiants ne sont pas engagés
 ==
 
 graph_combinations_1 = 1
