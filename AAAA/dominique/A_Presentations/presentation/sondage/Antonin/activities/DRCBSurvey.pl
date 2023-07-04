@@ -1,5 +1,5 @@
 
-extends= /AAAA/dominique/A_Presentations/presentation/sondage/Antonin/activities/CheckboxSurvey.pl
+extends= /AAAA/Antonin/modules/Statistics/activities/CheckboxSurvey.pl
 
 
 title = Vos Etudiants CB
