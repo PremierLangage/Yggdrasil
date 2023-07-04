@@ -60,7 +60,8 @@ def test_evaluator_clause(name: str, dic : dict):
         sys.exit(1)
 
 
-def doPlTest(dic):  
+def doPlTest(dic):
+    outstr=""
     if 'stopfirsterror' in dic:
         stop=bool(dic['stopfirsterror'])
     else:
