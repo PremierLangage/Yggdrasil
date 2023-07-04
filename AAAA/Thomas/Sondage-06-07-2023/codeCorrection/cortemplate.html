@@ -100,11 +100,10 @@
 <div style="border:1px solid black;padding:0%;margin:1%;background-color:LightGreen;border-radius:4px;">
     Aucune copies 
 </div>
-<input type='button' id="form_1_good" value=""/>
-<input type='button' id="form_1_bad" value=""/>
 {% else %}
-<div class="correction-card-list">
+<div class="correction-card-list" id="test">
 {% for copieHtml, (user, code, score, checked)in feedback.getCopiesAsHtml() %}
+<input type='button' id="form_1_good" value=""/>
 <div class="correction-card">
     <div class="header">
         <div class="user-info">
