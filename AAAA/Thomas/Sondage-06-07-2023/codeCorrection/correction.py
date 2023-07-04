@@ -52,10 +52,10 @@ class FeedbackCor:
 
 if __name__ == "__main__":
     feedback = FeedbackCor("cortemplate.html")
-    feedback.addCopie("user1", "code1", 10)
-    feedback.addCopie("user2", "code2", 20)
-    feedback.addCopie("user3", "code3", 30)
-    feedback.addCopie("user1", "code;UUU1", 100)
-    feedback.addCopie("user1", "XXX", 20)
-    feedback.addCopie("user3", "code3", 30)
+    feedback.addCopie("user1", "code1", 10, None)
+    feedback.addCopie("user2", "code2", 20, None)
+    feedback.addCopie("user3", "code3", 30, None)
+    feedback.addCopie("user1", "code;UUU1", 100, None)
+    feedback.addCopie("user1", "XXX", 20, None)
+    feedback.addCopie("user3", "code3", 30, None)
     print(feedback.render())
