@@ -107,7 +107,7 @@
 <input type='button' id="form_1_bad" value=""/>
 {% else %}
 <div class="correction-card-list">
-{% for copieHtml in feedback.getCopiesAsHtml() %}
+{% for copieHtml, (user, code, score, checked)in feedback.getCopiesAsHtml() %}
 <div class="correction-card">
     <div class="header">
         <div class="user-info">
