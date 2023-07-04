@@ -4,7 +4,7 @@ from typing import List
 from sqlalchemy import create_engine, inspect
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import declarative_base
-from sqlalchemy import Text, Integer, Boolean, ForeignKey, String, PickleType
+from sqlalchemy import Text, Integer, ForeignKey, String, PickleType
 from sqlalchemy.orm import Mapped
 from sqlalchemy.orm import mapped_column, relationship
 
