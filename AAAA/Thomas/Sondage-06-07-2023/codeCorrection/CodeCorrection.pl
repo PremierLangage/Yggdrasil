@@ -52,7 +52,7 @@ evaluator==#|py|
 
 evaluator_after==#|py|
 grade = (score, feedback)
-if response['thomas']:
+if response.get('thomas'):
     form = response['thomas']
     grade = (100, corhtml)
 # else:
