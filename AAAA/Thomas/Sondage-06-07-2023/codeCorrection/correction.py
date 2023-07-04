@@ -22,6 +22,7 @@ class Copie:
         if score > self.grade:
             self.grade = score
             self.code = code
+        self.checked = checked
 
 
 
