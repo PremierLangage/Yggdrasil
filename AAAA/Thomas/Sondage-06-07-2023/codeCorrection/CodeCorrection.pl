@@ -54,30 +54,29 @@ feedback = '<span class="success-state">Réponse enregistrée</span>'
 
 evaluator_after==#|py|
 if response['thomas']:
-
-
-
-if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" :
-    # creer un affichage de correction 
-    grade = (100,corhtml)
+    form = response['thomas']
 else:
-    with get_session(table_class = CodeEditorResponse, base=Base) as session:
-        session.add(
-            CodeEditorResponse(
-                student_id  = user__id if user__id else session__id, 
-                username    = user__username,
-                firstname   = user__firstname,
-                lastname    = user__lastname,
-                email       = user__email,
-                title       = title,
-                text        = text,
-                grade       = score,
-                score       = score,
-                feedback    = feedback,
-                code        = editor.code
+    if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" :
+        # creer un affichage de correction 
+        grade = (100,corhtml)
+    else:
+        with get_session(table_class = CodeEditorResponse, base=Base) as session:
+            session.add(
+                CodeEditorResponse(
+                    student_id  = user__id if user__id else session__id, 
+                    username    = user__username,
+                    firstname   = user__firstname,
+                    lastname    = user__lastname,
+                    email       = user__email,
+                    title       = title,
+                    text        = text,
+                    grade       = score,
+                    score       = score,
+                    feedback    = feedback,
+                    code        = editor.code
+                )
             )
-        )
-        session.commit()
+            session.commit()
 
-    grade = (score, feedback+" Merci "+user__username)
+        grade = (score, feedback+" Merci "+user__username)
 ==
