@@ -13,7 +13,7 @@ Il contient l'affichage des réponses par question ainsi que l'affichage des deu
 
 ==
 
-question_1 = Que pensez vous de cet exercice?
+question_1 = Que se passe-t-il avec vos étudiants ? 
 
 items_1==
 Vos étudiants ont besoin d’entraînement
@@ -27,16 +27,8 @@ Vos étudiants ne sont pas engagés
 ==
 
 graph_combinations_1 = 1
-
 graph_horizontal_1 = 1
 
-question_2 = Et que pensez-vous des gens qui ne finissent pas leurs ...
-
-items_2==
-Pas grand
-Leurs quoi?
-J'aime bien surtout ceux
-==
 
 # Si vous voulez afficher toutes les combinaisons de réponses possibles:
 # all_possibilities = True
