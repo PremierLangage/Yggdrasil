@@ -2,7 +2,7 @@
 extends= /AAAA/dominique/A_Presentations/presentation/sondage/Antonin/activities/CheckboxSurvey.pl
 
 
-title = Vos Etudiants
+title = Vos Etudiants CB
 
 text==
 
