@@ -69,10 +69,10 @@ class FeedbackCor:
 <script>
 function(checkedValue) {
     var x = document.createElement('input');
+    x.setAttribute('style', "display:none;")
     x.setAttribute('value', checkedValue);
 }
 </script>
-<input style='display:none' id="form_copie_{copie[0]}" value=""/>
 <div class="content">
         <div class="body">
             <span class="title">Réponse:</span>
