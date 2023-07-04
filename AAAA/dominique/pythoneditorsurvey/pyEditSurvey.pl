@@ -13,7 +13,9 @@ evaluator==#|py|
 
 extends = /AAAA/dominique/A_Presentations/presentation/sondage/correctionTemplate.pl
 
-@ /AAAA/Antonin/modules/Statistics/statbefore.py [builder.py]
+#@ /AAAA/Antonin/modules/Statistics/statbefore.py [builder.py]
+
+@ plteststatsgrader.py [builder.py]
 
 stopfirsterror= True
 pltest==
@@ -57,7 +59,7 @@ with get_session(table_class=CodeEditorResponse, base=Base) as session:
         feedback.addCopie(answer.username,answer.code,answer.grade)
 globals()["answers_csv"] = str(answers_csv)
 corhtml = feedback.render()
-text += corhtml
+text 
 ==
 
 formstudent==#|html|
