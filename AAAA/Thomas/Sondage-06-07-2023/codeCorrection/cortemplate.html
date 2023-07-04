@@ -121,7 +121,7 @@ function myFunction(x) {
             </div>
             <span class="score">Score: {{score}}</span>
         </div>
-        <div class="body" id="{{i}}">
+        <div class="body" id="copie_{{i}}">
             <span class="title">Réponse:</span>
 <pre>
 <code class="language-python">{{code}}</code>
@@ -131,7 +131,7 @@ function myFunction(x) {
     <div class="actions">
         <button class="valide"> Valide </button>
         <button class="invalide"> Invalide </button>
-        <button onclick="myFunction({{i}})">Click me</button>
+        <button onclick="myFunction('copie_{{i}}'')">Click me</button>
     </div>
 </div>
 {% endfor %}
