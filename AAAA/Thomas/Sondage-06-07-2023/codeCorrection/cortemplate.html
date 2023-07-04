@@ -32,7 +32,7 @@
         animation: on-select 1s;
     }
     
-    .correction-card > .content { 
+    .content { 
         display: flex;
         flex-direction:column;
         margin: 16px;
@@ -43,40 +43,40 @@
         grid-row-gap: 0px;
     }
 
-    .correction-card > .header {
+    .header {
         display: flex;
         justify-content: space-between;
         font-weight: bold;
         padding-bottom: 16px;
     }
 
-    .correction-card >  .header > .user-info > .name {
+     .header > .user-info > .name {
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 3ch;
     }
 
-    .correction-card > .header > .user-info > .id {
+    .header > .user-info > .id {
         opacity: 0.42;
         font-style: italic;
     }
 
-    .correction-card > .content > .body {
+    .content > .body {
         padding: 8px;
         grid-area: 1 / 1 / 2 / 2; 
     }
 
-    .correction-card > .content > .body > .title {
+    .content > .body > .title {
         font-size: 2.5ch;
     }
 
-    .correction-card > .content > .actions { 
+    .content > .actions { 
         grid-area: 1 / 2 / 2 / 3;
         display: flex;
         justify-content: flex-end;
         flex-direction: column;
     }
 
-    .correction-card  > .content > .actions > button {
+    .content > .actions > button {
         border: none;
         color: white;
         padding: 8px 16px;
@@ -87,15 +87,15 @@
         margin-bottom:8px;
     }
 
-    .correction-card > .content > .actions > button:hover {
+    .content > .actions > button:hover {
         opacity: 0.8;
     }
 
-    .correction-card > .content > .actions > button.valide {
+    .content > .actions > button.valide {
         background-color: #4CAF50;
     }
 
-    .correction-card > .content > .actions > button.invalide {
+    .content > .actions > button.invalide {
         background-color: #f44336;
     }
 </style>
