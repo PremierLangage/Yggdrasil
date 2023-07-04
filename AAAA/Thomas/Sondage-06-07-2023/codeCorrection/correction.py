@@ -55,6 +55,7 @@ class FeedbackCor:
 </div>
 <!-- end of genered script -->
 """))
+        return result
 
     def addCopie(self, user, code, score, checked):
         if user in self.copies:
