@@ -1,5 +1,5 @@
 import jinja2
-
+import ../utils/utils.py
 
 class Copie:
     def __init__(self, user, code, score, checked):
