@@ -29,8 +29,7 @@ def make_hide_block_on_click(nameblock, title, content, order="Voir/Réduire "):
 
 
 class Copie:
-    def __init__(self, id, user, code, score, checked):
-        self.id = id
+    def __init__(self, user, code, score, checked):
         self.user = user
         self.code = code
         self.grade = score
@@ -94,11 +93,11 @@ function assignCheckValue(checkedValue) {{
 """), copie])
         return result
 
-    def addCopie(self, id, user, code, score, checked):
+    def addCopie(self, user, code, score, checked):
         if user in self.copies:
             self.copies[user].update(code, score, checked)
         else:
-            self.copies[user] = Copie(id, user, code, score, checked)
+            self.copies[user] = Copie(user, code, score, checked)
 
     def render(self):
         with open(self.filename, "r") as tempfile:
