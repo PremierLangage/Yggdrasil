@@ -94,7 +94,16 @@
             background-color: #f44336;
         }
 </style>
-
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 {% if not feedback.copies %}
 <div style="border:1px solid black;padding:0%;margin:1%;background-color:LightGreen;border-radius:4px;">
     Aucune copies 
@@ -103,7 +112,7 @@
 <input type='button' id="form_1_bad" value=""/>
 {% else %}
 <div class="correction-card-list">
-{% for user,code,score,checked in feedback.getCopies() %}
+{% for user,code,score,checked in feedback.getCopiesAsEnumerate() %}
 <div class="correction-card">
     <div class="content">
         <div class="header">
