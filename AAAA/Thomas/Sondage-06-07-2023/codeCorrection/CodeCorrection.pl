@@ -60,7 +60,7 @@ if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" 
         # grade = (100, str(_feedback))
         for user, checked in modified_copies:
             grade = (100, f"{user}, {checked}, {type(checked)}")
-            session.query(CodeEditorResponse).filter(CodeEditorResponse.username == user).update({'checked': checked})
+           # session.query(CodeEditorResponse).filter(CodeEditorResponse.username == user).update({'checked': checked})
         # session.commit()
 
 
