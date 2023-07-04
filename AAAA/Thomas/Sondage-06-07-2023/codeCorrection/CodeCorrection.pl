@@ -55,8 +55,8 @@ if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" 
     # creer un affichage de correction 
     grade = (100,corhtml)
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
-         users = map(lambda x : x[0], feedback.get_copies())
-    #     modified_copies = [(k, v) for k, v in response.items() if k in users]
+        users = map(lambda x : x[0], feedback.get_copies())
+        modified_copies = [(k, v) for k, v in response.items() if k in users]
     #     for user, checked in modified_copies:
     #         session.query(CodeEditorResponse).filter(CodeEditorResponse.username == user).update({'checked': checked})
     #     session.commit()
