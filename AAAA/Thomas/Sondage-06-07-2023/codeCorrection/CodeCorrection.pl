@@ -54,13 +54,14 @@ evaluator_after==#|py|
 if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" :
     # creer un affichage de correction 
     grade = (100,corhtml)
+    modified_copies = [i for k, v in response.items() if k in ]
 
 else:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
         session.add(
             CodeEditorResponse(
                 student_id  = user__id if user__id else session__id, 
-                username    = user__username,
+                username    = user__username if user__id else user__username + "_" + str(session__id),
                 firstname   = user__firstname,
                 lastname    = user__lastname,
                 email       = user__email,
