@@ -66,7 +66,6 @@ def doPlTest(dic):
         stop=bool(dic['stopfirsterror'])
     else:
         stop=False
-        
     if "pltest" in dic:
         pltest = dic['pltest']
         tester = PlRunner(student,pltest)
@@ -93,8 +92,6 @@ def doPlTest(dic):
     if "feedback" in dic: # FIXME feedback devrai être un dictionnaire.
         outstr += dic["feedback"]+" valeur de stop "+ str(stop)
     output(a,outstr)
-
-
 
 
 
