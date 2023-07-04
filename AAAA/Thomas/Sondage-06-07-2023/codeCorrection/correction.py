@@ -70,7 +70,6 @@ class FeedbackCor:
 function assignCheckValue(checkedValue) {{
     var x = document.createElement('input');
     x.setAttribute('id', "form_{copie[0]}")
-    x.setAttribute('style', "display:none;");
     x.setAttribute('value', checkedValue);
     document.getElementById("test").appendChild(x);
 }}
