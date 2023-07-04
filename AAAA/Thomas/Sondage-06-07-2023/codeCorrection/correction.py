@@ -36,8 +36,8 @@ class FeedbackCor:
 
     def getCopiesAsHtml(self):
         result = []
-        for copie in self.getCopies():
-
+        for i, copie in enumerate(self.getCopies()):
+            result.append(make_hide_block_on_click(i, Contenu, 
 f"""
 <div class="content">
         <div class="body">
@@ -53,8 +53,7 @@ f"""
             <button class="invalide"> Invalide </button>
         </div>
 </div>
-"""
-        ))
+"""))
 
     def addCopie(self, user, code, score, checked):
         if user in self.copies:
