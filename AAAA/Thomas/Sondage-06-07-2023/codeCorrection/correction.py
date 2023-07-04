@@ -94,11 +94,11 @@ function assignCheckValue(checkedValue) {{
 """), copie])
         return result
 
-    def addCopie(self, user, code, score, checked):
+    def addCopie(self, id, user, code, score, checked):
         if user in self.copies:
             self.copies[user].update(code, score, checked)
         else:
-            self.copies[user] = Copie(user, code, score, checked)
+            self.copies[user] = Copie(id, user, code, score, checked)
 
     def render(self):
         with open(self.filename, "r") as tempfile:
