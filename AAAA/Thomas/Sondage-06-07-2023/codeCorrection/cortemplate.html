@@ -5,8 +5,8 @@
 <div style="border:1px solid black;padding:0%;margin:1%;background-color:LightGreen;border-radius:4px;">
     Aucune copies 
 </div>
-<input type='button' id="form_1_good" value=""/>
-<input type='button' id="form_1_bad" value=""/>
+<!--input type='button' id="form_1_good" value=""/>
+<input type='button' id="form_1_bad" value=""/-->
 {% else %}
 {% for user,code,score,checked in feedback.getCopies() %}
 {% if checked >= 0 %}
