@@ -54,6 +54,7 @@ evaluator_after==#|py|
 if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" :
     # creer un affichage de correction 
     grade = (100,corhtml)
+    users = map( feedback.get_values()
     modified_copies = [i for k, v in response.items() if k in ]
 
 else:
