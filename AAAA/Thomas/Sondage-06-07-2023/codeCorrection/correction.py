@@ -34,6 +34,8 @@ class FeedbackCor:
     def getCopies(self):
         return [(x.user, x.code, x.grade, x.checked) for x in self.copies.values()]
 
+    def getCopiesAsEnumerate(self):
+        return list(enumerate(self.getCopies()))
     def addCopie(self, user, code, score, checked):
         if user in self.copies:
             self.copies[user].update(code, score, checked)
