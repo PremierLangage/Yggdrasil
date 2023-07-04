@@ -127,9 +127,9 @@ function myFunction(id) {
 <div class="correction-card" id="copie_{{i}}">
 <div class="header">
     <div class="user-info">
-        <span class="name">Antonin JEAN</span><span class="id">#04578</span>
+        <span class="name">{{user}}</span>
     </div>
-    <span class="score">Score: 100</span>
+    <span class="score">Score: {{score}}</span>
 </div>
 <div class="content">
     <div class="body">
@@ -143,18 +143,6 @@ function myFunction(id) {
     <div class="actions" id="copie_{{i}}_actions">
         <button class="valide"> Valide </button>
         <button class="invalide"> Invalide </button>
-    </div>
-</div>
-
-<div class="content">
-    <div class="body">
-        <span class="title">Réponse:</span>
-
-    </div>
-</div>
-    <div class="actions" id="copie_{{i}}_actions">
-            <button class="valide"> Valide </button>
-            <button class="invalide"> Invalide </button>
     </div>
 </div>
 {% endfor %}
