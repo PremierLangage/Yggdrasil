@@ -1,12 +1,106 @@
 
 <!--  template pour les correction -->
+<style>
+        .correction-card-list {
+            display:flex;
+            flex-direction: column;
+        }
+
+        .correction-card {
+            --primary-color: #000000;
+            --secondary-color: #f0f8ff;
+            --selected-color: #91daff5d;
+            color: var(--primary-color);
+            border-top: solid 1px var(--secondary-color);
+            border-left: outset 4px var(--secondary-color);
+            border-bottom: ridge 16px var(--secondary-color);
+
+            display: grid;
+            grid-template-columns: 5fr 1fr;
+            grid-template-rows: 1fr;
+            grid-column-gap: 2px;
+            grid-row-gap: 0px;
+            width:99%;
+            transition: width 1s;
+            margin-bottom: 16px;
+        }
+
+        .correction-card:hover {
+            width: 100%;
+            transition: width 1s;
+        }
+
+        .correction-card > .content { 
+            grid-area: 1 / 1 / 2 / 2; 
+            display: flex;
+            flex-direction:column;
+            margin: 16px;
+        }
+
+        .correction-card > .content > .header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            padding-bottom: 16px;
+            border-bottom: ridge 2px var(--secondary-color);
+        }
+
+        .correction-card > .content > .header > .user-info > .name {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 3ch;
+        }
+
+        .correction-card > .content > .header > .user-info > .id {
+            opacity: 0.42;
+            font-style: italic;
+        }
+
+        .correction-card > .content > .body {
+            padding: 8px;
+        }
+
+        .correction-card > .content > .body > .title {
+            font-size: 2.5ch;
+        }
+
+        .correction-card > .actions { 
+            grid-area: 1 / 2 / 2 / 3;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            background-color: var(--secondary-color);
+            padding: 16px;
+        }
+
+        .correction-card > .actions > button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor:pointer;
+        }
+
+        .correction-card > .actions > button:hover {
+            opacity: 0.8;
+        }
+
+        .correction-card > .actions > button.valide {
+            background-color: #4CAF50;
+        }
+
+        .correction-card > .actions > button.invalide {
+            background-color: #f44336;
+        }
+    </style>
 
 {% if not feedback.copies %}
 <div style="border:1px solid black;padding:0%;margin:1%;background-color:LightGreen;border-radius:4px;">
     Aucune copies 
 </div>
-<!--input type='button' id="form_1_good" value=""/>
-<input type='button' id="form_1_bad" value=""/-->
+<input type='button' id="form_1_good" value=""/>
+<input type='button' id="form_1_bad" value=""/>
 {% else %}
 {% for user,code,score,checked in feedback.getCopies() %}
 {% if checked >= 0 %}
