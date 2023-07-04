@@ -54,7 +54,7 @@ evaluator_after==#|py|
 if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" :
     # creer un affichage de correction 
     grade = (100,corhtml)
-    
+
 else:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
         session.add(
