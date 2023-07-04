@@ -1,7 +1,7 @@
 
 extends = /ComputerScience/python/template/pltest.pl
 
-form=
+
 
 extends = /AAAA/Antonin/modules/Statistics/stats.pl
 
