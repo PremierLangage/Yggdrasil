@@ -112,7 +112,7 @@ function myFunction() {
 <input type='button' id="form_1_bad" value=""/>
 {% else %}
 <div class="correction-card-list">
-{% for user,code,score,checked in feedback.getCopiesAsEnumerate() %}
+{% for i, (user,code,score,checked) in feedback.getCopiesAsEnumerate() %}
 <div class="correction-card">
     <div class="content">
         <div class="header">
