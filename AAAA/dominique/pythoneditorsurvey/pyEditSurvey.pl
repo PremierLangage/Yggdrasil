@@ -2,7 +2,7 @@
 extends = /ComputerScience/python/template/pltest.pl
 extends = /AAAA/Antonin/modules/Statistics/stats.pl
 
-
+@ /AAAA/Antonin/modules/Statistics/statbefore.py [builder.py]
 
 @ /AAAA/dominique/pythoneditorsurvey/plteststatsgrader.py [grader.py]
 
@@ -13,9 +13,9 @@ evaluator==#|py|
 
 extends = /AAAA/dominique/A_Presentations/presentation/sondage/correctionTemplate.pl
 
-#@ /AAAA/Antonin/modules/Statistics/statbefore.py [builder.py]
 
-@ plteststatsgrader.py [builder.py]
+
+
 
 stopfirsterror= True
 pltest==
@@ -35,13 +35,6 @@ On vous propose d'écrire une fonction prime(N) qui affiche les N premier nombre
 
 
 
-==
-
-editor =: CodeEditor
-editor.theme = white
-editor.language = python
-editor.code ==
-# write your code here
 ==
 
 
