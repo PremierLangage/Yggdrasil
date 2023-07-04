@@ -80,7 +80,7 @@ class FeedbackCor:
             <button class="invalide"> Invalide </button>
         </div>
 </div>
-<!-- end of genered script -->
+<!-- End of generated script -->
 """, copie))
         return result
 
