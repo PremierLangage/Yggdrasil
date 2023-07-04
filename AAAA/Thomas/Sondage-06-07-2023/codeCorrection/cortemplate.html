@@ -123,7 +123,7 @@ function myFunction(id) {
 <input type='button' id="form_1_bad" value=""/>
 {% else %}
 <div class="correction-card-list">
-{% for html in feedback.getCopiesAsHtml() %}
+{% for copieHtml in feedback.getCopiesAsHtml() %}
 <div class="correction-card">
     <div class="header">
         <div class="user-info">
@@ -131,20 +131,7 @@ function myFunction(id) {
         </div>
         <span class="score">Score: {{score}}</span>
     </div>
-    <div class="content">
-        <div class="body">
-            <span class="title">Réponse:</span>
-            <div>
-<pre>
-<code class="language-python">{{code}}</code>
-</pre>
-            </div>
-        </div>
-        <div class="actions">
-            <button class="valide"> Valide </button>
-            <button class="invalide"> Invalide </button>
-        </div>
-    </div>
+    {{copieHtml}}
 </div>
 {% endfor %}
 </div>
