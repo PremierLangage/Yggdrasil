@@ -80,6 +80,7 @@ class FeedbackCor:
             <button class="invalide"> Invalide </button>
         </div>
 </div>
+<input style='display:none' id="form_1_bad" value=""/>
 <!-- End of generated script -->
 """), copie])
         return result
