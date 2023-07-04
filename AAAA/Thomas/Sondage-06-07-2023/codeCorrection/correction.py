@@ -2,7 +2,7 @@ import jinja2
 
 
 class Copie:
-    def __init__(self, user, code, score):
+    def __init__(self, user, code, score, checked):
         self.user = user
         self.code = code
         self.grade = score
