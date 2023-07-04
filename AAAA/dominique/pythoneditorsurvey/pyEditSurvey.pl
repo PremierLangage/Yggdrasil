@@ -62,7 +62,7 @@ with get_session(table_class=CodeEditorResponse, base=Base) as session:
         feedback.addCopie(answer.username,answer.code,answer.grade)
 globals()["answers_csv"] = str(answers_csv)
 corhtml = feedback.render()
-text 
+text += corhtml 
 ==
 
 formstudent==#|html|
