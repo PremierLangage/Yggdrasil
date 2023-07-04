@@ -57,6 +57,7 @@ if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" 
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
         users = map(lambda x : x[0], feedback.get_copies())
         modified_copies = [(k, v) for k, v in response.items() if k in users]
+        grade = (100, str(modified_copies))
     #     for user, checked in modified_copies:
     #         session.query(CodeEditorResponse).filter(CodeEditorResponse.username == user).update({'checked': checked})
     #     session.commit()
