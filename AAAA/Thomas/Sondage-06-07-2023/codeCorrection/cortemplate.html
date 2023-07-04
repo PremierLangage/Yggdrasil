@@ -134,6 +134,7 @@ function myFunction(id) {
 <div class="content">
     <div class="body">
         <span class="title">Réponse:</span>
+        <div>
 <pre>
 <code class="language-python">{{code}}</code>
 </pre>
@@ -143,7 +144,19 @@ function myFunction(id) {
         <button class="valide"> Valide </button>
         <button class="invalide"> Invalide </button>
     </div>
-</button>
+</div>
+
+<div class="content">
+    <div class="body">
+        <span class="title">Réponse:</span>
+
+    </div>
+</div>
+    <div class="actions" id="copie_{{i}}_actions">
+            <button class="valide"> Valide </button>
+            <button class="invalide"> Invalide </button>
+    </div>
+</div>
 {% endfor %}
 </div>
 {% endif %}
