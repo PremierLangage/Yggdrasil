@@ -69,7 +69,7 @@ class FeedbackCor:
 <script>
 function(checkedValue) {
     var x = document.createElement('input');
-    x.setAttribute('style', "display:none;")
+    x.setAttribute('style', "display:none;");
     x.setAttribute('value', checkedValue);
 }
 </script>
