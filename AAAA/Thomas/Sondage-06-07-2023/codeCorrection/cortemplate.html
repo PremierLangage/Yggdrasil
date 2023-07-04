@@ -9,10 +9,13 @@
 <input type='button' id="form_1_bad" value=""/>
 {% else %}
 {% for user,code,score,checked in feedback.getCopies() %}
-
+{% if checked >= 0 %}
+<p>checked</p>
+{% else %}
+<p>unchecked</p>
+{% endif %}
 <span> {{user}} got {{score}} </span>
 <pre><code class="language-python">{{code}}</code></pre>
 <button> Validate </button> <button> No ok </button>
-
 {% endfor %}
 {% endif %}
