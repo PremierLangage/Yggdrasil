@@ -27,7 +27,7 @@ def make_hide_block_on_click(nameblock, title, content, order="Voir/Réduire "):
 
     return src_ans
 
-    
+
 class Copie:
     def __init__(self, user, code, score, checked):
         self.user = user
@@ -64,7 +64,7 @@ class FeedbackCor:
     def getCopiesAsHtml(self):
         result = []
         for i, copie in enumerate(self.getCopies()):
-            result.append(make_hide_block_on_click(i, Contenu, f"""
+            result.append(make_hide_block_on_click(i, "Contenu", f"""
 <!-- Generated from script -->
 <div class="content">
         <div class="body">
