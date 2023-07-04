@@ -62,6 +62,7 @@ else:
         grade = (100,corhtml)
     else:
         with get_session(table_class = CodeEditorResponse, base=Base) as session:
+            feedback = str(CodeEditorResponse)
             # session.add(
             #     CodeEditorResponse(
             #         student_id  = user__id if user__id else session__id, 
