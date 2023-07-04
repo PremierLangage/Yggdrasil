@@ -102,17 +102,7 @@
 <input type='button' id="form_1_good" value=""/>
 <input type='button' id="form_1_bad" value=""/>
 {% else %}
-{% for user,code,score,checked in feedback.getCopies() %}
-{% if checked >= 0 %}
-<p>checked</p>
-{% else %}
-<p>unchecked</p>
-{% endif %}
-<span> {{user}} got {{score}} </span>
-<pre><code class="language-python">{{code}}</code></pre>
-<button> Validate </button> <button> No ok </button>
-{% endfor %}
-{% endif %}
+
 <div class="correction-card-list">
 {% for user,code,score,checked in feedback.getCopies() %}
 <div class="correction-card">
@@ -126,7 +116,7 @@
         <div class="body">
             <span class="title">Réponse:</span>
 <pre>
-    <code class="language-python">{{code}}</code>
+<code class="language-python">{{code}}</code>
 </pre>
         </div>
     </div>
@@ -137,3 +127,4 @@
 </div>
 {% endfor %}
 </div>
+{% endif %}
