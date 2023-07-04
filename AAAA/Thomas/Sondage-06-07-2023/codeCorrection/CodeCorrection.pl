@@ -74,5 +74,5 @@ else:
         )
         session.commit()
 
-    grade = (score, feedback+" Merci "+user__username + response.__str__())
+    grade = (score, feedback+" Merci "+user__username)
 ==
