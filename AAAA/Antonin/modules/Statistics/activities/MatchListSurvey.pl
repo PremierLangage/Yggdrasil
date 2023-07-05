@@ -57,7 +57,7 @@ left = list(matches_solution.keys())
 right = list(set([item for sublist in matches_solution.values() for item in sublist])) #flatten list
 for elem in left:
     matchList.nodes.append({
-        "id": f"source_{hash(elem)}",
+        "id": f"source_{elem}",
         "content": elem,
         "source": True,
         "multiple": multiple
@@ -65,7 +65,7 @@ for elem in left:
 
 for elem in right:
     matchList.nodes.append({
-        "id": f"target_{hash(elem)}",
+        "id": f"target_{elem}",
         "content": elem,
         "target": True,
         "multiple": multiple
@@ -96,7 +96,7 @@ score = 100
 
 def in_links(solution_source, solution_target, links):
     for e in links:
-        if e['source'] == f"source_{hash(solution_source)}" and  e['target'] == f"target_{hash(solution_target)}":
+        if e['source'] == f"source_{solution_source}" and  e['target'] == f"target_{solution_target}":
             return 0
     return 1
 
