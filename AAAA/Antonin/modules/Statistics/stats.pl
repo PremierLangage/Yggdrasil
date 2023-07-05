@@ -164,7 +164,7 @@ if user__role == "teacher":
 
 # FORM PLAYER
 form==#|html|
-{% if user__role == "teacher" %}
+{% if user__mail == "dominique.revuz@univ-eiffel.fr" %}
 <style>
     .graph {
         display:flex;
