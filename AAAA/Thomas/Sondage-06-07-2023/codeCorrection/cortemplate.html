@@ -107,7 +107,7 @@ function hideOrShowContent(contentId) {
 }
 
 function assignCheckValue(checkedValue, formid) {
-    document.getElementById(`form_${formid}`).remove();
+    document.getElementById(`form_${formid}`)?.remove();
     var x = document.createElement('input');
     x.setAttribute('id', `form_${formid}`)
     x.setAttribute('style', "display:none;");
