@@ -33,12 +33,12 @@ function assignCheckValue(checkedValue, formid) {
                 <span> Total Copie : {{feedback.getCopiesTotal()}} </span>
             </div>
             <div class="stats-list">
-                <span> Vérifiées : {{totalVerifiees}} </span>
-                <span> Non Vérifiées : {{totalVerifiees}} </span>
+                <span> Vérifiées : {{feedback.getCopiesVerifiees()}} </span>
+                <span> Non Vérifiées : {{feedback.getCopiesNonVerifiees()}} </span>
             </div>
             <div class="stats-list">
-                <span> Validées: {{totalValidees}} </span>
-                <span> Non Validées : {{totalNonValidees}} </span>
+                <span> Validées: {{feedback.getCopiesValidees()}} </span>
+                <span> Non Validées : {{feedback.getCopiesNonValidees()}} </span>
             </div>
         </div>
     </div>  
