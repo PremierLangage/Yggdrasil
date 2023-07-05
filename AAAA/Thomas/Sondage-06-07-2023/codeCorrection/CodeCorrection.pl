@@ -71,7 +71,8 @@ if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" 
         answers = session.query(CodeEditorResponse).all()
         for answer in answers:
             _feedback.addCopie(answer.firstname, answer.lastname, answer.username,answer.code,answer.grade, answer.checked)
-        grade = (score, _feedback.render())
+        grade = (score,"")
+        text = _feedback.render()
 
 else:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
