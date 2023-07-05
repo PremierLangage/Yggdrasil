@@ -17,7 +17,7 @@ def make_hide_block_on_click(nameblock, title, content, order="Voir/Réduire "):
 
     # The script ennabling the hide/unhide
     src_ans += '''<script type="text/javascript">'''
-    src_ans += '''$(document).ready(hideOrShowContent(''' + nameblock + '''));'''
+    src_ans += '''$(document).ready(hideOrShowContent("''' + nameblock + '''"));'''
     src_ans += '''</script>'''
 
     return src_ans
