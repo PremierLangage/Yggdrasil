@@ -94,9 +94,15 @@ formstudent==#|html|
 evaluator_before==#|py|
 from database_utils import get_session, Base, MatchListResponse
 
-# Default Grade intilisation
+# Default Grade initilisation
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
+
+class Reponse:
+    def __init__(self, name, items, answers):
+        self.name = name
+        self.items = items
+        self.answers = answers
 ==
 
 # default evaluator dummy
