@@ -97,8 +97,9 @@ import sys
 # Default Grade initialisation
 score = 100
 
-print(matches_solution, file=sys.stderr)
-print(matchList.links, file=sys.stderr)
+log(matches_solution)
+log(matchList.links)
+log_print()
 
 def in_links(solution_source, solution_target, links):
     for e in links:
