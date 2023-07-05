@@ -5,6 +5,7 @@ title= MatchList Probleme Etudiants
 text==
 Relier chaque problème "vos étudiants" à sa solution 
 ==
+teacher_name=revuz
 
 matches==
 ont besoin d’entraînement, exercice répétable aléatoires
