@@ -27,7 +27,7 @@ function assignCheckValue(checkedValue, formid) {
     <div class="correction-card-list">
         {% for firstname, lastname, user, code, score, checked in feedback.getCopies() %}
         <script>
-            $(document).ready(hideOrShowContent({{user}}))
+            $(document).ready(hideOrShowContent("{{user}}"))
         </script>
         <div class="correction-card">
             <div class="header" id="{{user}}">
