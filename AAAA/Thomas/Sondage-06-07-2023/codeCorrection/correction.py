@@ -17,7 +17,7 @@ def make_hide_block_on_click(nameblock, title, content, order="Voir/Réduire "):
     src_ans += '''<script type="text/javascript">'''
     src_ans += f'''
 function (){{
-  $("#{nameblock} _div").hide();
+  $("#{nameblock}_div").hide();
   $("#{nameblock}").click(function(){{
     $("#{nameblock}_div").toggle();
   }});
