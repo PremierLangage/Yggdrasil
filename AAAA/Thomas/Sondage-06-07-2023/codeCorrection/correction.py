@@ -67,7 +67,6 @@ class FeedbackCor:
         result = []
         for i, copie in enumerate(self.getCopies()):
             result.append([make_hide_block_on_click(str(i), "Contenu", f"""
-
 <div class="content">
         <div class="body">
             <span class="title">Réponse:</span>
