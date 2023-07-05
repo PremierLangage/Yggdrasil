@@ -43,6 +43,7 @@ function assignCheckValue(checkedValue, formid) {
         </div>
     </div>  
     <div class="correction-card-list">
+    {% if feedback.getCopies() %}
         {% for firstname, lastname, user, code, score, checked in feedback.getCopies() %}
         <script>
             $(document).ready(function() {hideOrShowContent("{{user}}");})
@@ -98,6 +99,15 @@ function assignCheckValue(checkedValue, formid) {
             </div>
         </div>
         {% endfor %}
+    {% else %}
+        <div class="empty-list">
+                <span class="empty-list-icon material-symbols-outlined">
+                    playlist_remove
+                </span>
+                <span class="empty-list-title">Pas de copies pour l'instant</span>
+                <span class="empty-list-subtitle">Recharger la page plus tard pour actualiser le contenu...</span>
+        </div>
+    {% endif %}
     </div>
 </div>
 <!-- STYLE PROPERTIES  -->
