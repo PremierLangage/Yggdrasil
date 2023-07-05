@@ -49,7 +49,8 @@ multiple = multiple != "False"
 matches_item = {}
 for item in [m.split(",") for m in matches.splitlines()]:
     matches_item[item[0]] = item[1:]
-
+left = list(set(matches_item.keys()))
+right = 
 
 
 # Data filling:
