@@ -53,8 +53,8 @@ multiple = multiple != "False"
 matches_solution = {}
 for item in [m.split(",") for m in matches.splitlines()]:
     matches_solution[item[0]] = item[1:]
-left = list(map(lambda x : f"source_{hash(x)}", list(matches_solution.keys()).copy()))
-right = list(map(lambda x : f"target_{hash(x)}", list(set([item for sublist in matches_solution.values() for item in sublist])).copy())) #flatten list
+left = list(matches_solution.keys())
+right = list(set([item for sublist in matches_solution.values() for item in sublist])) #flatten list
 for elem in left:
     matchList.nodes.append({
         "id": f"source_{hash(elem)}",
@@ -96,7 +96,7 @@ score = 100
 
 def in_links(solution_source, solution_target, links):
     for e in links:
-        if e['source'] == solution_source and e['target'] == solution_target:
+        if e['source'] == f"source_{hash(solution_source)}" and  e['target'] == f"target_{hash(solution_target)}":
             return 0
     return 1
 
@@ -105,7 +105,7 @@ for k, v in matches_solution.items():
     for t in v:
         nombre_erreurs += in_links(k, t, matchList.links)
 
-feedback = f'<span class="success-state">Réponse enregistrée<br>score:{nombre_erreurs}<br>{matchList.links}<br>{matches_solution}</span>'
+feedback = f'<span class="success-state">Réponse enregistrée\n{matchList.links}\n{matches_solution}</span>'
 ==
 
 # default evaluator dummy
