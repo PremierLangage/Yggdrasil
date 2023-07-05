@@ -17,7 +17,7 @@ editor.code ==
 ==
 
 before==#|python|
-if user__name == teacher_name:
+if user__lastname == teacher_name:
     from database_utils import CodeEditorResponse
     from correction import FeedbackCor
     _feedback= FeedbackCor()
