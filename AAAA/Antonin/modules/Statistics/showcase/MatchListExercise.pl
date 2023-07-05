@@ -22,7 +22,10 @@ b,1,4
 multiple = True
 
 evaluator==#|py|
-score = 100
+if nombre_erreur == 0:
+    score = 100
+else:
+    score = 0
 ==
 
 # options
