@@ -14,24 +14,10 @@ def make_hide_block_on_click(nameblock, title, content, order="Voir/Réduire "):
     src_ans += '<div id="' + nameblock + '_div">'
     src_ans += content
     src_ans += '</div>'
-    src_ans += '''<script type="text/javascript">'''
-    src_ans += f'''
-function (){{
-  $("#{nameblock}_div").hide();
-  $("#{nameblock}").click(function(){{
-    $("#{nameblock}_div").toggle();
-  }});
-}});
-'''
 
     # The script ennabling the hide/unhide
     src_ans += '''<script type="text/javascript">'''
-    src_ans += '''$(document).ready(function(){'''
-    src_ans += '''  $("#''' + nameblock + '''_div").hide();'''
-    src_ans += '''  $("#''' + nameblock + '''").click(function(){'''
-    src_ans += '''    $("#''' + nameblock + '''_div").toggle();'''
-    src_ans += '''  });'''
-    src_ans += '''});'''
+    src_ans += '''$(document).ready(hideOrShowContent(''' + nameblock + '''));'''
     src_ans += '''</script>'''
 
     return src_ans
