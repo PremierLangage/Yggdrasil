@@ -48,8 +48,7 @@ b,1
 before==#|python|
 from database_utils import MatchListResponse
 # match component filling:
-import sys
-print(dir(match), file=sys.stderr)
+match.nodes = []
 multiple = multiple != "False"
 matches_item = {}
 for item in [m.split(",") for m in matches.splitlines()]:
