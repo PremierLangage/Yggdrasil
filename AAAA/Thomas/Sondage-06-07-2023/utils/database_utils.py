@@ -37,6 +37,10 @@ class Response(Base):
     grade : Mapped[int] = mapped_column(Integer)
     feedback : Mapped[Text] = mapped_column(Text)
 
+    # Checked by teacher
+    checked : Mapped[int] = mapped_column(Integer)
+
+
     # For polymorphism
     type: Mapped[str] = mapped_column(String)
 
@@ -59,7 +63,6 @@ class CodeEditorResponse(Response):
     
     score : Mapped[int] = mapped_column(Integer)
     code  : Mapped[Text] = mapped_column(Text) 
-    checked : Mapped[int] = mapped_column(Integer)
 
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
