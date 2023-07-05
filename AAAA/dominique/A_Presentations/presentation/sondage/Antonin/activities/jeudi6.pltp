@@ -50,10 +50,11 @@ title = Mes Etudiants sur platon
 @ /AAAA/dominique/A_Presentations/presentation/sondage/Antonin/showcase/DRcodeEditorShowcase.pl
 
 
+
 # Exercice de controle ;)
 
 
 @ sections/control.pl 
 
 
-@ /AAAA/dominique/A_Presentations/presentation/sondage/Antonin/activities/match.pl
+@ DRMatchListSurvey.pl
