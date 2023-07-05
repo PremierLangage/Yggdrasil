@@ -2,10 +2,10 @@ extends = /AAAA/Antonin/modules/Statistics/stats.pl
 
 # ===============================================
 # Documentation Loading
-evaluation =@ ../docs/codeEditor/evaluation.md
-options =@ ../docs/codeEditor/options.md
-summary =@ ../docs/codeEditor/summary.md
-user_manual =@ ../docs/codeEditor/user_manual.md
+evaluation =@ ../docs/matchList/evaluation.md
+options =@ ../docs/matchList/options.md
+summary =@ ../docs/matchList/summary.md
+user_manual =@ ../docs/matchList/user_manual.md
 # ===============================================
 
 title= Dummy Title MatchListSurvey
