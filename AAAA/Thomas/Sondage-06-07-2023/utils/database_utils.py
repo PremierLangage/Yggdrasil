@@ -38,7 +38,7 @@ class Response(Base):
     feedback : Mapped[Text] = mapped_column(Text)
 
     # Checked by teacher
-    checked : Mapped[int] = mapped_column(Integer)
+    checked : Mapped[int] = mapped_column(Integer, default=-1)
 
 
     # For polymorphism
