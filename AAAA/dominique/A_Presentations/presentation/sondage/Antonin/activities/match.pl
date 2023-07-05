@@ -15,7 +15,7 @@ se perdent, Ontologies support
 sont très hétérogènes en niveaux, Etayage
 apprennent mal, analyse de parcours
 ne sont pas critiques, Evaluation par les pairs
-ne sont pas engagés, ludification
+ne sont pas engagés, ludification et réussite
 ==
 
 targets ==
