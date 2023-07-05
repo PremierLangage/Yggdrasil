@@ -73,6 +73,7 @@ function assignCheckValue(checkedValue, formid) {
 <!-- ENDIF -->      {% endif %}
                 </div>
             </div>
+            
 <!-- CONTENT -->
             <div class="content" id="{{user}}_div">
                 <div class="body">
@@ -97,6 +98,7 @@ function assignCheckValue(checkedValue, formid) {
                     </button>
                 </div>
             </div>
+            <script>$("#{{user}}_div").toggle();</script>
         </div>
         {% endfor %}
     {% else %}
