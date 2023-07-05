@@ -19,6 +19,4 @@ ne sont pas engagés, ludification et réussite
 ==
 
 targets ==
-Allemagne
-Portugal
 ==
