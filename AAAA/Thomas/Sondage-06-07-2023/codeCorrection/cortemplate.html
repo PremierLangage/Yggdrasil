@@ -107,6 +107,11 @@
     <div class="header">
         <div class="user-info">
             <span class="name">{{user}}</span>
+            {% if checked %}
+            <span>checked</span>
+            {% else %}
+            <span>unchecked</span>
+            {% endif %}
         </div>
         <span class="score">Score: {{score}}</span>
     </div>
