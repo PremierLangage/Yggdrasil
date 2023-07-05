@@ -117,13 +117,15 @@ before==#|python|
 # needs to be overwriten
 ==
 
+teacher_name=dummy name to change
+
 # ===============================================
 # Graph generation
 # ===============================================
 before_graph==#|python|
 from collections import Counter
 import utils
-if user__role == "teacher":
+if user__name == teacher_name:
     # Processing datas
     statInputs = [StatInput.from_data(d) for d in data.items()]
     # Generating default graphs
