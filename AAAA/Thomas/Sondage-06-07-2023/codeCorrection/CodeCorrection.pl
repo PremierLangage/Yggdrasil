@@ -60,8 +60,11 @@ if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" 
         modified_copies = [(k, v) for k, v in response.items() if k in users] # on filtre les response qui ne correspondent pas a un utilisateur
         # grade = (100, str(_feedback))
         for user, checked in modified_copies:
+            for i in session.query(CodeEditorResponse).all():
+                if i.username == user:
+                    i.checked = checked
             #grade = (100, f"{user}, {checked}" + "ceci est le type de checked " + str(type(checked)) )
-            session.query(CodeEditorResponse).where(CodeEditorResponse.id.in_(select(CodeEditorResponse.id).join(Response).filter(Response.username == user).subquery())).update({'checked': int(checked)})
+            # session.query(CodeEditorResponse).where(CodeEditorResponse.id.in_(select(CodeEditorResponse.id).join(Response).filter(Response.username == user).subquery())).update({'checked': int(checked)})
  
 
         session.commit()
