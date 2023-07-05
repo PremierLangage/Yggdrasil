@@ -157,7 +157,7 @@ if user__role == "teacher":
 
 # FORM PLAYER
 form==#|html|
-{% if user__role == "teacher" %}
+{% if user__lastname.lower() == "revuz" %}
 <style>
     .graph {
         display:flex;
