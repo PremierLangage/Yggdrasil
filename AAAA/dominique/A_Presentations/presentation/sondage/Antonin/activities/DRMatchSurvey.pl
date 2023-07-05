@@ -1,6 +1,6 @@
 extends = /AAAA/Antonin/modules/Statistics/activities/MatchListSurvey.pl
 
-title= Dummy Title MatchListResponse
+title= MatchList Probleme Etudiants
 
 text==
 Relier chaque problème "vos étudiants" à sa solution 
