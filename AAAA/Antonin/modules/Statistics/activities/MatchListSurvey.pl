@@ -93,7 +93,6 @@ formstudent==#|html|
 
 evaluator_before==#|py|
 from database_utils import get_session, Base, MatchListResponse
-import sys
 # Default Grade initialisation
 score = 100
 
