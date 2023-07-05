@@ -36,7 +36,7 @@ text ==#|markdown|
 ---
 ==
 
-match =: MatchList
+matchList =: MatchList
 multiple = False
 
 matches==
@@ -49,7 +49,7 @@ before==#|python|
 from database_utils import MatchListResponse
 import random
 # match component filling:
-match.nodes = []
+matchList.nodes = []
 multiple = multiple != "False"
 matches_item = {}
 for item in [m.split(",") for m in matches.splitlines()]:
@@ -57,20 +57,20 @@ for item in [m.split(",") for m in matches.splitlines()]:
 left = list(matches_item.keys())
 right = list(set([item for sublist in matches_item.values() for item in sublist])) #flatten list
 for elem in left:
-    match.nodes.append({
+    matchList.nodes.append({
         "id": f"source_{hash(elem)}",
         "content": elem,
         "source": True
     })
 
 for elem in right:
-    match.nodes.append({
+    matchList.nodes.append({
         "id": f"target_{hash(elem)}",
         "content": elem,
         "target": True
     })
 
-random.shuffle(match.nodes)
+random.shuffle(matchList.nodes)
 
 # Data filling:
 globals()["data"] = {}
@@ -84,7 +84,7 @@ globals()["answers_csv"] = str(answers_csv)
 ==
 
 formstudent==#|html|
-{{ match|component }}
+{{ matchList|component }}
 ==
 
 evaluator_before==#|py|
