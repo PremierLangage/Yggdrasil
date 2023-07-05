@@ -18,7 +18,7 @@ Mais il ne faut pas stresser les tentatives ne retire pas beaucoup de points.
 ==
 
 # les echecs 
-@ section_echec.pl 
+@ section_echec.pl section_listes.pl
 @ placepiece.pl
 @ lirecoup.pl
 @ lireBoard.pl
