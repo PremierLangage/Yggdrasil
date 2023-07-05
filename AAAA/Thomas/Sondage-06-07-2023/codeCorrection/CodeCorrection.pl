@@ -3,7 +3,7 @@ extends = /AAAA/Thomas/Sondage-06-07-2023/stats.pl
 extends = /AAAA/Thomas/Sondage-06-07-2023/codeCorrection/correctionTemplate.pl
 
 
-title= Test de correction de Code 
+title= Test de correction de Code {{activity__id}}
 
 text ==#|markdown|
 ==
