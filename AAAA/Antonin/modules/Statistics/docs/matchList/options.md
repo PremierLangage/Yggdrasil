@@ -2,7 +2,7 @@
 
 -  **`multiple`** : `Boolean`   -   Défaut: `False`
 
-    - Afficher le graphe représentant le score des utilisateurs
+    - Permettre plusieurs cibles par source ?
 
     Exemple:
 
