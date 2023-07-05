@@ -73,9 +73,11 @@ if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" 
             _feedback.addCopie(answer.firstname, answer.lastname, answer.username,answer.code,answer.grade, answer.checked)
         grade = (score,"")
         text = _feedback.render()
-        text += """<script>$(document).ready(function() {
-   $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
-});</script>"""
+        text += """
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        """
 
 else:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
