@@ -26,7 +26,8 @@ function assignCheckValue(checkedValue, formid) {
     </h2>
 
     <div class="correction-card-list">
-        {% for copieHtml, (firstname, lastname, user, code, score, checked) in feedback.getCopiesAsHtml() %}
+        {% for copieHtml in feedback.getCopiesAsHtml() %}
+            {{copieHtml}}
         {% endfor %}
     </div>
 </div>
