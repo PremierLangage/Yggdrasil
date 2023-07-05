@@ -100,7 +100,7 @@
 <script>
 function assignCheckValue(checkedValue, formid) {{
     var x = document.createElement('input');
-    x.setAttribute('id', `form_{formid}`)
+    x.setAttribute('id', `form_${formid}`)
     x.setAttribute('style', "display:none;");
     x.setAttribute('value', checkedValue);
     document.getElementById("test").appendChild(x);
