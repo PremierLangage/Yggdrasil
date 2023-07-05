@@ -73,7 +73,9 @@ if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" 
             _feedback.addCopie(answer.firstname, answer.lastname, answer.username,answer.code,answer.grade, answer.checked)
         grade = (score,"")
         text = _feedback.render()
-        text += "<script>alert('hahahahah');</script>"
+        text += """<script>$(document).ready(function() {
+   $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+});</script>"""
 
 else:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
