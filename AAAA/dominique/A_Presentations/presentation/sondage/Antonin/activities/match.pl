@@ -21,4 +21,4 @@ ne sont pas engagés, ludification et réussite
 targets ==
 ==
 
-scoring = CorrectItems
+scoring =CorrectItems
