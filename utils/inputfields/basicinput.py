@@ -534,7 +534,7 @@ class MatchList(SingleComponent):
         elif self.scoring == "Custom":
             score = custom_scoring(nbright, nbwrong, nbsol=len(self.sol), nbitems=len(self.items))
         else:
-            raise ValueError(f"'{scoring}' is not a valid scoring")
+            raise ValueError(f"'{self.scoring}' is not a valid scoring")
 
         return score
 
