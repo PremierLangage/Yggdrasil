@@ -70,7 +70,7 @@ class FeedbackCor:
     def getCopiesValidees(self):
         return len(list(filter(lambda x: x[5] == 1, self.getCopies())))
 
-    def getCopiesValidees(self):
+    def getCopiesNonValidees(self):
         return len(list(filter(lambda x: x[5] == 0, self.getCopies())))
 
     def getCopiesAsHtml(self):
