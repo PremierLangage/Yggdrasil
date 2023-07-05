@@ -66,13 +66,16 @@ if user__lastname.lower() == teacher_name :
             #grade = (100, f"{user}, {checked}" + "ceci est le type de checked " + str(type(checked)) )
             # session.query(CodeEditorResponse).where(CodeEditorResponse.id.in_(select(CodeEditorResponse.id).join(Response).filter(Response.username == user).subquery())).update({'checked': int(checked)})
         session.commit()
+        text = "<script>location.reload();</script>"
+        """
         _feedback = FeedbackCor()
         answers = session.query(CodeEditorResponse).all()
         for answer in answers:
             _feedback.addCopie(answer.firstname, answer.lastname, answer.username,answer.code,answer.grade, answer.checked)
         grade = (score,"")
         text = _feedback.render()
-#        text = "<script>location.reload();</script>"
+#        
+        """
 else:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
         session.add(
