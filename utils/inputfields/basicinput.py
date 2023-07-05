@@ -394,7 +394,7 @@ class SortList(SingleComponent):
         elif self.scoring == "KendallTau":
             score = kendall_tau(order)         
         else:
-            raise ValueError(f"'{scoring}' is not a valid scoring")
+            raise ValueError(f"'{self.scoring}' is not a valid scoring")
 
         return score
 
