@@ -66,9 +66,7 @@ if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" 
     _feedback = FeedbackCor()
         answers = session.query(CodeEditorResponse).all()
         for answer in answers:
-            answers_csv.addLine([answer.username,answer.firstname,answer.lastname,answer.email,answer.grade,answer.code])
             _feedback.addCopie(answer.username,answer.code,answer.grade, answer.checked)
-    globals()["answers_csv"] = str(answers_csv)
 
 else:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
