@@ -20,10 +20,9 @@ ne sont pas engagés, ludification et réussite
 multiple = True
 
 evaluator==#|py|
-if nombre_erreurs == 0:
-    score = 100
-else:
-    score = 0
+score = max(0, (8 - nombre_erreurs)) * 100 / 8
+8 100
+x  ?
 ==
 
 # options
