@@ -105,7 +105,7 @@ evaluator==#|py|
 evaluator_after==#|py|
 with get_session(table_class = MatchListResponse, base=Base) as session:
     session.add(
-        CodeEditorResponse(
+        MatchListResponse(
             student_id  = user__id if user__id else session__id, 
             username    = user__username,
             firstname   = user__firstname,
