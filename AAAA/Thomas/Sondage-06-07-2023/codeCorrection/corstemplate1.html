@@ -1,7 +1,6 @@
 <script>
 function hideOrShowContent(contentId) {
     console.log("HideorShowContent:" + contentId);
-    $("#" + contentId + "_div").hide();
     $("#" + contentId).click(function(){
         $("#" + contentId + "_div").toggle();
     });
