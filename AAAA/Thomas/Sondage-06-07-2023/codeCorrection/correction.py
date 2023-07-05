@@ -72,8 +72,8 @@ class FeedbackCor:
             </div>
         </div>
         <div class="actions">
-            <button class="valide" onclick="assignCheckValue(1, '{copie[2]}')"> Valide </button>
-            <button class="invalide" onclick="assignCheckValue(0, '{copie[2]}')"> Invalide </button>
+            <button class="valide" onclick="assignCheckValue(1, '{i}')"> Valide </button>
+            <button class="invalide" onclick="assignCheckValue(0, '{i}')"> Invalide </button>
         </div>
 </div>
 <!-- End of generated script -->
