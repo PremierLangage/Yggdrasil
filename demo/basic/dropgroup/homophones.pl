@@ -4,6 +4,8 @@ title= DragDrop
 
 
 question ==
+# Drag and Drop
+
 Compléter les phrases suivantes avec les étiquettes proposées.
 ==
 
