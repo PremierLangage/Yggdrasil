@@ -60,14 +60,16 @@ for elem in left:
     matchList.nodes.append({
         "id": f"source_{hash(elem)}",
         "content": elem,
-        "source": True
+        "source": True,
+        "multiple": multiple
     })
 
 for elem in right:
     matchList.nodes.append({
         "id": f"target_{hash(elem)}",
         "content": elem,
-        "target": True
+        "target": True,
+        "multiple": multiple
     })
 
 random.shuffle(matchList.nodes)
