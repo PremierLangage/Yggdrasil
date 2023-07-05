@@ -61,7 +61,7 @@ class FeedbackCor:
     def getCopiesAsHtml(self):
         result = []
         for i, copie in enumerate(self.getCopies()):
-            result.append([make_hide_block_on_click(str(i), "Contenu", f"""
+            result.append([make_hide_block_on_click(copie[2], "Contenu", f"""
 <div class="content">
         <div class="body">
             <span class="title">Réponse:</span>
@@ -72,8 +72,8 @@ class FeedbackCor:
             </div>
         </div>
         <div class="actions">
-            <button class="valide" onclick="assignCheckValue(1, '{i}')"> Valide </button>
-            <button class="invalide" onclick="assignCheckValue(0, '{i}')"> Invalide </button>
+            <button class="valide" onclick="assignCheckValue(1, '{copie[2]}')"> Valide </button>
+            <button class="invalide" onclick="assignCheckValue(0, '{copie[2]}')"> Invalide </button>
         </div>
 </div>
 <!-- End of generated script -->
