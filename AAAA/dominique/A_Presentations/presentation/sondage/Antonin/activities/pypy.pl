@@ -13,6 +13,7 @@ Som(3) retourne 6.
 
 ==
 
+stopfirsterror= True
 
 pltest==
 >>> Som(3) == 6
@@ -36,3 +37,5 @@ def Som(n):
     return s 
 
 ==
+
+stop
