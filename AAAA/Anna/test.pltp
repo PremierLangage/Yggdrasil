@@ -31,9 +31,9 @@ Les exercices de cette page d'exercices sont présentés pour vous donenr une id
 
 @ /ComputerScience/C/examples/barbe.pl
 
-@ /AAAA/dominique/Doctestexo/modeldoctest.pl
+#@ /AAAA/dominique/Doctestexo/modeldoctest.pl
 
-@ /ComputerScience/C/examples/matrix_rank.pl
+#@ /ComputerScience/C/examples/matrix_rank.pl
 
 @ /ComputerScience/C/examples/chemical_equation.pl
 
