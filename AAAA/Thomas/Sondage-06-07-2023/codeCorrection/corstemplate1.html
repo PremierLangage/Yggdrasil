@@ -24,7 +24,6 @@ function assignCheckValue(checkedValue, formid) {
         <span class="material-symbols-outlined">fact_check</span>
             Liste des Copies 
     </h2>
-
     <div class="correction-card-list">
         {% for firstname, lastname, user, code, score, checked in feedback.getCopies() %}
         <div class="correction-card">
