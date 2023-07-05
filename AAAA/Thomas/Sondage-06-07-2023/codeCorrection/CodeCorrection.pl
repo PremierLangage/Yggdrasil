@@ -70,7 +70,7 @@ if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" 
         _feedback = FeedbackCor()
         answers = session.query(CodeEditorResponse).all()
         for answer in answers:
-            _feedback.addCopie(answer.username,answer.code,answer.grade, answer.checked)
+            _feedback.addCopie(answer.firstname, answer.lastname, answer.username,answer.code,answer.grade, answer.checked)
         grade = (score, _feedback.render())
 
 else:
