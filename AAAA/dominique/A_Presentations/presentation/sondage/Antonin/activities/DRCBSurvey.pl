@@ -10,6 +10,7 @@ text==
 
 ==
 
+teacher_name=revuz
 
 question_1= Cochez toutes les cases qui sont vraies pour vos etudiants.
 
