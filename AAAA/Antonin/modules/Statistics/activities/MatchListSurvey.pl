@@ -45,6 +45,10 @@ matches==
 before==#|python|
 from database_utils import MatchListResponse
 # match component filling:
+multiple = multiple != "False"
+matches_item = {}
+for item in [m.split(",") for m in matches.splitlines()]:
+    matches_item[item[0]] = item[1:]
 
 
 
