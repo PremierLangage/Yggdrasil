@@ -33,6 +33,7 @@ include_stats_participation = True
 # FORM PLAYER
 form==#|html|
 {% if user == "drevuz2" %}
+{% else %}
 <style>
     .graph {
         display:flex;
@@ -73,6 +74,7 @@ form==#|html|
             download(filename, text);
         }, false);
     </script>
+
     {{formstudent|safe}}
 {% endif %}
 ==
