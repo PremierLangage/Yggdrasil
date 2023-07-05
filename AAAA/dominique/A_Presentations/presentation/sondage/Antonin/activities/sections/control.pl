@@ -1,7 +1,7 @@
 
 
 
-
+extends= section.pl
 
 title = Control
 
