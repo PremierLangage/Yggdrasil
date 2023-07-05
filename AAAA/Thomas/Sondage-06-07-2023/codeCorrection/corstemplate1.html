@@ -1,3 +1,128 @@
 <style>
-    
+@keyframes on-select{
+    0% {
+        border-left: outset 8px var(--secondary-color);
+    }
+    100% {
+        border-left: outset 8px var(--selected-color);
+    }
+}
+
+.main {
+    --primary-color: #1e4674;
+    --secondary-color: #f0f8ff;
+    --selected-color: #3376c2;
+    --background-color: #edf9ff5d;
+    --card-background-color: white;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+.title {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main > .correction-card-list {
+    padding:16px;
+    display:flex;
+    flex-direction: column;
+    flex-grow: grow;
+    gap: 1rem;
+}
+
+.correction-card {
+    background-color: var(--card-background-color);
+    border-left: outset 8px var(--secondary-color);
+    padding: 1vmax;
+    padding-left: 1.5vmax;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.correction-card:hover {
+    border-left: outset 8px var(--selected-color);
+    animation: on-select 1s;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.header > div > .user-info > .name {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.header > div > .user-info > .id {
+    opacity: 0.42;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.header > div > .score {
+    border-left: outset 4px var(--selected-color);
+    padding-left: 8px;
+}
+
+.header > .icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.content { 
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin: 16px;
+    gap: 3rem;
+}
+
+.content > .body {
+    padding: 8px;
+    overflow: auto;
+    white-space: pre-line;
+}
+
+.content > .body > .title {
+    font-size: 2.5ch;
+}
+
+.content > .actions { 
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width:100%;
+}
+
+.content > .actions > button {
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor:pointer;
+    margin-bottom:8px;
+    flex-basis: 10rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.content > .actions > button:hover {
+    opacity: 0.8;
+}
+
+.content > .actions > button.valide {
+    background-color: #4CAF50;
+}
+
+.content > .actions > button.invalide {
+    background-color: #f44336;
+}
 </style>
