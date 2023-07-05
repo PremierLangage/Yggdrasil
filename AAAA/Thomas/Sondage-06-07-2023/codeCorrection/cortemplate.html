@@ -100,23 +100,20 @@
 <script>
 function hideOrShowContent(contentId) {
     console.log("HideorShowContent:" + contentId);
-//    $("#" + contentId + "_div").hide();
+    $("#" + contentId + "_div").hide();
     $("#" + contentId).click(function(){
         $("#" + contentId + "_div").toggle();
     });
 }
 
 function assignCheckValue(checkedValue, formid) {
-    document.getElementById(`form_${formid}`)?.remove();
     var x = document.createElement('input');
     x.setAttribute('id', `form_${formid}`)
     x.setAttribute('style', "display:none;");
     x.setAttribute('value', checkedValue);
     document.getElementById("test").appendChild(x);
-    console.log("assignCheckValue:" + formid);
-    $("#" + formid + "_div").toggle();
+    console.log("assignCheckValue:" +formid);
 }
-
 </script>
 {% if not feedback.copies %}
 <div style="border:1px solid black;padding:0%;margin:1%;background-color:LightGreen;border-radius:4px;">
@@ -133,7 +130,20 @@ function assignCheckValue(checkedValue, formid) {
         </div>
         <span class="score">Score: {{score}}</span>
     </div>
-    {{copieHtml}}
+    <div class="content">
+        <div class="body">
+            <span class="title">Réponse:</span>
+            <div>
+<pre>
+<code class="language-python">{{code}}</code>
+</pre>
+            </div>
+        </div>
+        <div class="actions">
+            <button class="valide" onclick="assignCheckValue(1, '{{user}')"> Valide </button>
+            <button class="invalide" onclick="assignCheckValue(0, '{{user}}')"> Invalide </button>
+        </div>
+</div>
 </div>
 {% endfor %}
 </div>
