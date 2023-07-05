@@ -36,7 +36,7 @@ text ==#|markdown|
 ---
 ==
 
-match =: MatchList
+match =: Matchlist
 multiple = False
 
 matches==
