@@ -39,17 +39,18 @@ function assignCheckValue(checkedValue, formid) {
                     </div>
                 </div>
                 <div class="icon">
-<!-- IF CHECK -->
-                    Check
-                    <span class="material-symbols-outlined">
-                        manage_search
-                    </span>
-<!-- ELSE -->
-                    Already Checked
-                    <span class="material-symbols-outlined">
-                        check_circle
-                    </span>
-<!-- ENDIF -->
+<!-- IF CHECK -->   {% if checked %}
+                        Vérifiée
+                        <span class="material-symbols-outlined">
+                            check_circle
+                        </span>
+<!-- ELSE -->       {% else %}
+                        Non Vérifiée
+                        <span class="material-symbols-outlined">
+                            manage_search
+                        </span>
+<!-- ENDIF -->      {% endif %}
+
                 </div>
             </div>
 <!-- CONTENT -->
