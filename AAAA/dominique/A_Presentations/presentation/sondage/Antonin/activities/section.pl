@@ -12,7 +12,9 @@ grade=(100, "Passez &agrave; l'exercice suivant")
 
 
 
-title= Groupe 
-text=
+title= Groupe d'exercices
+text==
+Une indication sur le groupe .
+==
 form=
 
