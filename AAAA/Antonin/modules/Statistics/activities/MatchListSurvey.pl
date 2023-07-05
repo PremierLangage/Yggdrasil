@@ -37,6 +37,10 @@ text ==#|markdown|
 ==
 
 match =: MatchList
+multiple = False
+
+matches==
+==
 
 before==#|python|
 from database_utils import MatchListResponse
