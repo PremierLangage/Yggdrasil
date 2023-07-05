@@ -21,8 +21,6 @@ multiple = True
 
 evaluator==#|py|
 score = max(0, (8 - nombre_erreurs)) * 100 / 8
-8 100
-x  ?
 ==
 
 # options
