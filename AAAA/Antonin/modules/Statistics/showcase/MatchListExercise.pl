@@ -16,7 +16,7 @@ Il contient l'affichage des deux graphes par défaut optionnels:
 matches==
 test,1
 a,2,3
-b,1
+b,1,4
 ==
 
 multiple = True
