@@ -53,11 +53,11 @@ import random
 matchList.nodes = []
 matchList.links = []
 multiple = multiple != "False"
-matches_item = {}
+matches_solution = {}
 for item in [m.split(",") for m in matches.splitlines()]:
-    matches_item[item[0]] = item[1:]
-left = list(matches_item.keys())
-right = list(set([item for sublist in matches_item.values() for item in sublist])) #flatten list
+    matches_solution[item[0]] = item[1:]
+left = list(matches_solution.keys())
+right = list(set([item for sublist in matches_solution.values() for item in sublist])) #flatten list
 for elem in left:
     matchList.nodes.append({
         "id": f"source_{hash(elem)}",
@@ -94,15 +94,20 @@ formstudent==#|html|
 evaluator_before==#|py|
 from database_utils import get_session, Base, MatchListResponse
 
-# Default Grade initilisation
+# Default Grade initialisation
 score = 100
 feedback = '<span class="success-state">Réponse enregistrée</span>'
 
-class Reponse:
-    def __init__(self, name, items, answers):
-        self.name = name
-        self.items = items
-        self.answers = answers
+def in_links(solution_source, solution_target, links):
+    for e in links:
+        if e['source'] == solution_source and  e['target'] == solution_target:
+            return 1
+    return 0
+
+nombre_erreurs = 0
+for k, v in matches_solution.items():
+    for t in v:
+        nombre_erreurs += in_links(k, t, matchList.links)
 ==
 
 # default evaluator dummy
