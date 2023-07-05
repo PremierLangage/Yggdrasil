@@ -72,7 +72,7 @@ if editor.codes[0]['defaultCode'] == editor.code:
     feedback = '<span class="error-state">Vous n\'avez rien saisis, annulation de l\'envois de la réponse</span>'
     score = -1
 else:
-    with get_session(table_class = CodeEditorResponse, base=Base) as session:
+    with get_session(table_class = MatchListResponse, base=Base) as session:
         session.add(
             CodeEditorResponse(
                 student_id  = user__id if user__id else session__id, 
