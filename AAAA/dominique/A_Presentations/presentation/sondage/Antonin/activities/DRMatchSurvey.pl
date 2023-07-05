@@ -14,9 +14,14 @@ Il contient l'affichage des deux graphes par défaut optionnels:
 ==
 
 matches==
-test,1
-a,2,3
-b,1,4
+ont besoin d’entraînement, exercice répétable aléatoires
+n'apprennent pas le cours, Quizz pré-cours
+s'ennuient, Activité hors programme 
+se perdent, Ontologies support
+sont très hétérogènes en niveaux, Etayage
+apprennent mal, analyse de parcours
+ne sont pas critiques, Evaluation par les pairs
+ne sont pas engagés, ludification et réussite
 ==
 
 multiple = True
