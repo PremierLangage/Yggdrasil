@@ -14,7 +14,7 @@ Démonstration des outils PLATON
 title = Mes Etudiants sur platon 
 
 
-@ section.pl 
+@ sections/sondages.pl 
 
 @ /AAAA/dominique/A_Presentations/presentation/sondage/Antonin/activities/DRCBSurvey.pl
 
@@ -25,7 +25,7 @@ title = Mes Etudiants sur platon
 @ /AAAA/dominique/A_Presentations/presentation/sondage/Antonin/activities/CodeEditorSurvey.pl
 
 
-
+@ sections/repetables.pl 
 @ /demo/math/expr/derivative.pl
 
 @ /demo/math/expr/distance_points.pl
