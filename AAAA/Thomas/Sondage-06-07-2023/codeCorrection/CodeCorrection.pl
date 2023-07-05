@@ -50,7 +50,6 @@ feedback = '<span class="success-state">Réponse enregistrée</span>'
 evaluator==#|py|
 ==
 
-
 evaluator_after==#|py|
 from correction import FeedbackCor
 
@@ -74,7 +73,6 @@ if user__lastname.lower() == teacher_name :
         grade = (score,"")
         text = _feedback.render()
 #        text = "<script>location.reload();</script>"
-
 else:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
         session.add(
