@@ -40,6 +40,8 @@ match =: MatchList
 multiple = False
 
 matches==
+test,1
+a,2,3
 ==
 
 before==#|python|
