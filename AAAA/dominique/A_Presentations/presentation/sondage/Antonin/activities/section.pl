@@ -7,7 +7,7 @@
 evaluator==
 text = ""
 
-grade=(100, "Passez à l'exercice suivant")
+grade=(100, "Passez &agrave; l'exercice suivant")
 ==
 
 
