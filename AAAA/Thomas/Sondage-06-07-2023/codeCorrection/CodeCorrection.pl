@@ -74,7 +74,6 @@ if user__lastname.lower() == teacher_name :
             _feedback.addCopie(answer.firstname, answer.lastname, answer.username,answer.code,answer.grade, answer.checked)
         grade = (score,"")
         text = _feedback.render()
-#        
         """
 else:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
