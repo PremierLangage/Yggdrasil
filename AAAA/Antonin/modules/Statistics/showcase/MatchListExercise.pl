@@ -19,6 +19,7 @@ a,2,3
 b,1
 ==
 
+multiple = True
 
 evaluator==#|py|
 score = 100
