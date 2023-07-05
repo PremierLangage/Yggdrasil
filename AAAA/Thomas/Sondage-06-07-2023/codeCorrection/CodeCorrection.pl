@@ -52,9 +52,9 @@ evaluator==#|py|
 
 evaluator_after==#|py|
 from correction import FeedbackCor
+
 if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" :
     # creer un affichage de correction 
-    grade = (100,corhtml)
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
         users = [x for x in _feedback['copies']]
         modified_copies = [(k, v) for k, v in response.items() if k in users] # on filtre les response qui ne correspondent pas a un utilisateur
@@ -67,7 +67,7 @@ if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" 
         answers = session.query(CodeEditorResponse).all()
         for answer in answers:
             _feedback.addCopie(answer.username,answer.code,answer.grade, answer.checked)
-    grade = (100, _feedback.render())
+    grade = (score, _feedback.render())
 
 else:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
