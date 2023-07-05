@@ -13,7 +13,6 @@ Som(3) retourne 6.
 
 ==
 
-stopfirsterror= True
 
 pltest0==
 >>> Som(3) == 6
