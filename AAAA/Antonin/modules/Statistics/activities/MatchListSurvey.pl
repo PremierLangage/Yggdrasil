@@ -70,6 +70,7 @@ for elem in right:
         "target": True
     })
 
+random.shuffle(match.nodes)
 
 # Data filling:
 globals()["data"] = {}
