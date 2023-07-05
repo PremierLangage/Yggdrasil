@@ -12,7 +12,7 @@ grade=(100, "Passez à l'exercice suivant")
 
 
 
-title= Section 
+title= Groupe 
 text=
 form=
 
