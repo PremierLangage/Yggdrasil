@@ -14,6 +14,11 @@
 
         `"source": string,` : identifiant de l'objet au format `source_X` où `X` est le nom d'une balise source
 
+        `"target": string,` : identifiant de l'objet au format `target_X` où `X` est le nom d'une balise cible
+
+        `}`
+
+
 - Sortie:
 
     - **`score`** : `int`     -   Défaut:     `100`
