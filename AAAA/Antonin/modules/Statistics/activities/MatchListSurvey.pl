@@ -36,7 +36,7 @@ text ==#|markdown|
 ---
 ==
 
-editor =: MatchList
+matchList =: MatchList
 editor.theme = white
 editor.language = python
 editor.code ==
