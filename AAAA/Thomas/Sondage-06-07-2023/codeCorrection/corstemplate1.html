@@ -102,6 +102,15 @@ function assignCheckValue(checkedValue, formid) {
     background-color: var(--background-color);
     color: var(--primary-color);
 }
+
+.header-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
 .title {
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -109,12 +118,40 @@ function assignCheckValue(checkedValue, formid) {
     gap: 1rem;
 }
 
+.main > .container {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.main > .header-title > .stats {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: var(--card-background-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.main > .header-title > .stats > .stats-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: var(--selected-color)
+}
+
+
 .main > .correction-card-list {
+    grid-area: 1 / 2 / 2 / 3;
     padding:16px;
     display:flex;
-    flex-direction: column;
     flex-grow: grow;
     gap: 1rem;
+    flex-direction: column;
 }
 
 .correction-card {
