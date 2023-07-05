@@ -67,16 +67,7 @@ class FeedbackCor:
         result = []
         for i, copie in enumerate(self.getCopies()):
             result.append([make_hide_block_on_click(str(i), "Contenu", f"""
-<!-- Generated from script -->
-<script>
-function assignCheckValue(checkedValue) {{
-    var x = document.createElement('input');
-    x.setAttribute('id', "form_{copie[2]}")
-    x.setAttribute('style', "display:none;");
-    x.setAttribute('value', checkedValue);
-    document.getElementById("test").appendChild(x);
-}}
-</script>
+
 <div class="content">
         <div class="body">
             <span class="title">Réponse:</span>
@@ -87,8 +78,8 @@ function assignCheckValue(checkedValue) {{
             </div>
         </div>
         <div class="actions">
-            <button class="valide" onclick="assignCheckValue(1)"> Valide </button>
-            <button class="invalide" onclick="assignCheckValue(0)"> Invalide </button>
+            <button class="valide" onclick="assignCheckValue(1, '{copie[2]}')"> Valide </button>
+            <button class="invalide" onclick="assignCheckValue(0, '{copie[2]}')"> Invalide </button>
         </div>
 </div>
 <!-- End of generated script -->
