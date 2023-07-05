@@ -93,10 +93,12 @@ formstudent==#|html|
 
 evaluator_before==#|py|
 from database_utils import get_session, Base, MatchListResponse
-
+import sys
 # Default Grade initialisation
 score = 100
 
+print(matches_solution, file=sys.stderr)
+print(matchList.links, file=sys.stderr)
 
 def in_links(solution_source, solution_target, links):
     for e in links:
