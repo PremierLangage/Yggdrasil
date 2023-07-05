@@ -45,6 +45,9 @@ matches==
 before==#|python|
 from database_utils import MatchListResponse
 
+
+
+# Data filling:
 globals()["data"] = {}
 answers_csv = CsvStringBuilder(["username","firstname","lastname","email","grade"])
 with get_session(table_class=MatchListResponse, base=Base) as session:
