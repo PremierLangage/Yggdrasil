@@ -2,8 +2,9 @@ extends = /AAAA/Thomas/Sondage-06-07-2023/stats.pl
 
 extends = /AAAA/Thomas/Sondage-06-07-2023/codeCorrection/correctionTemplate.pl
 
-
 title= Test de correction de Code
+
+teacher_name=saillard
 
 text ==#|markdown|
 ==
@@ -15,9 +16,8 @@ editor.code ==
 # write your code here
 ==
 
-
 before==#|python|
-if user__role == 'teacher':
+if user__name == teacher_name:
     from database_utils import CodeEditorResponse
     from correction import FeedbackCor
     _feedback= FeedbackCor()
@@ -50,7 +50,6 @@ feedback = '<span class="success-state">Réponse enregistrée</span>'
 evaluator==#|py|
 ==
 
-teacher_name=saillard
 
 evaluator_after==#|py|
 from correction import FeedbackCor
