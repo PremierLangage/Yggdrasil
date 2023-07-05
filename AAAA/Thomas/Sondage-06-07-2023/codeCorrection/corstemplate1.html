@@ -20,10 +20,28 @@ function assignCheckValue(checkedValue, formid) {
 <!-- HTML TEMPLATE -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 <div class="main">
-    <h2 class="title">
-        <span class="material-symbols-outlined">fact_check</span>
+    <div class="header-title">
+        <h2 class="title">
+            <span class="material-symbols-outlined">fact_check</span>
             Liste des Copies 
-    </h2>
+        </h2>
+        <div class="stats">
+            <h2 class="title">
+                Statistiques
+            </h2>
+            <div class="stats-list">
+                <span> Total Copie : {{totalCopie}} </span>
+            </div>
+            <div class="stats-list">
+                <span> Vérifiées : {{totalVerifiees}} </span>
+                <span> Non Vérifiées : {{totalVerifiees}} </span>
+            </div>
+            <div class="stats-list">
+                <span> Validées: {{totalValidees}} </span>
+                <span> Non Validées : {{totalNonValidees}} </span>
+            </div>
+        </div>
+    </div>  
     <div class="correction-card-list">
         {% for firstname, lastname, user, code, score, checked in feedback.getCopies() %}
         <script>
