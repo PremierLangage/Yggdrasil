@@ -97,7 +97,7 @@ for i, key in enumerate(inputValues):
     globals()[f"checkbox_{questions[i]}"] = tmp
     checkBoxs.append(vars(tmp))
 
-if user__role =="teacher" and number_questions != 0:
+if user__role == "teacher" and number_questions != 0:
     for i in inputValues:           
         labels = get_combinations(inputValues[i]["items"]) if all_possibilities != 'False' else []
         if inputValues[i].get("combinations"): 
