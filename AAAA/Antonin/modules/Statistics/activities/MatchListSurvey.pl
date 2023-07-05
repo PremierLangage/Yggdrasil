@@ -116,7 +116,7 @@ evaluator==#|py|
 
 evaluator_after==#|py|
 if matchList.links == []:
-    feedback = '<span class="error-state">Vous n\'avez rien saisis, annulation de l\'envois de la réponse</span>'
+    feedback = '<span class="error-state">Vous n\'avez rien saisis, annulation de l\'envois de la reponse</span>'
     score = -1
 else:
     with get_session(table_class = MatchListResponse, base=Base) as session:
