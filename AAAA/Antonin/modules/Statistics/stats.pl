@@ -4,16 +4,9 @@
 @utils/utils.py
 
 @ /utils/sandboxio.py
-@ statbefore.py [builder.py]
-@ statevaluator.py [grader.py]
+builder =@ statbefore.py
+grader  =@ statevaluator.py
 
-# ===============================================
-# Documentation Loading
-evaluation =@ docs/stats/evaluation.md
-options =@ docs/stats/options.md
-summary =@ docs/stats/summary.md
-user_manual =@ docs/stats/user_manual.md
-# ===============================================
 author = Thomas Saillard & Antonin Jean
 title= Statistic Activity
 text ==#|markdown|
@@ -124,13 +117,15 @@ before==#|python|
 # needs to be overwriten
 ==
 
+teacher_name=dummy name to change
+
 # ===============================================
 # Graph generation
 # ===============================================
 before_graph==#|python|
 from collections import Counter
 import utils
-if user__role == "teacher":
+if user__lastname.lower() == teacher_name:
     # Processing datas
     statInputs = [StatInput.from_data(d) for d in data.items()]
     # Generating default graphs
@@ -164,7 +159,7 @@ if user__role == "teacher":
 
 # FORM PLAYER
 form==#|html|
-{% if user == "drevuz2" %}
+{% if user__lastname.lower() == teacher_name %}
 <style>
     .graph {
         display:flex;
