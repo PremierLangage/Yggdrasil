@@ -105,7 +105,7 @@ for k, v in matches_solution.items():
     for t in v:
         nombre_erreurs += in_links(k, t, matchList.links)
 
-feedback = f'<span class="success-state">Réponse enregistrée\n{matchList.links}\n{matches_solution}</span>'
+feedback = f'<span class="success-state">Réponse enregistrée<br>score:{nombre_erreurs}<br>{matchList.links}{matches_solution}</span>'
 ==
 
 # default evaluator dummy
