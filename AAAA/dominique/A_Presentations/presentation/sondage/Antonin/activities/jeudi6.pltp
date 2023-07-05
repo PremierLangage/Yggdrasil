@@ -26,4 +26,6 @@ title = Mes Etudiants sur platon
 
 @ /AAAA/dominique/TESTAP1/testapp1.pl # fizz buzz
 
-@ /Mathematics/Colin/Formation_Dom/distance.pl
+# @ /Mathematics/Colin/Formation_Dom/distance.pl.  C'est casé.
+
+@ /AAAA/dominique/A_Presentations/presentation/sondage/Antonin/showcase/DRcodeEditorShowcase.pl
