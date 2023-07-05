@@ -63,7 +63,7 @@ if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" 
             #grade = (100, f"{user}, {checked}" + "ceci est le type de checked " + str(type(checked)) )
             session.query(CodeEditorResponse).where(CodeEditorResponse.id.in_(session.query(CodeEditorResponse.id).join(Response).filter(Response.username == user).subquery())).update({'checked': int(checked)})
         session.commit()
-    _feedback = FeedbackCor()
+        _feedback = FeedbackCor()
         answers = session.query(CodeEditorResponse).all()
         for answer in answers:
             _feedback.addCopie(answer.username,answer.code,answer.grade, answer.checked)
