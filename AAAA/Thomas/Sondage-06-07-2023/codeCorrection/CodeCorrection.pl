@@ -28,7 +28,7 @@ if user__role == 'teacher':
         answers = session.query(CodeEditorResponse).all()
         for answer in answers:
             answers_csv.addLine([answer.username,answer.firstname,answer.lastname,answer.email,answer.grade,answer.code])
-            _feedback.addCopie(answer.username,answer.code,answer.grade, answer.checked)
+            _feedback.addCopie(answer.firstname, answer.lastname, answer.username,answer.code,answer.grade, answer.checked)
     globals()["answers_csv"] = str(answers_csv)
     corhtml = _feedback.render()
     text += corhtml
