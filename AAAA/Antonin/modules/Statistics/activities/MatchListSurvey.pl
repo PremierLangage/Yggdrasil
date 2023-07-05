@@ -67,6 +67,8 @@ for elem in right:
         "content": elem,
         "target": True
     })
+import sys
+print(dir(match), file=sys.stderr)
 
 # Data filling:
 globals()["data"] = {}
