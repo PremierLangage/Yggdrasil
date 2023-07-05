@@ -2,4 +2,4 @@
 
 @ correction.py
 
-@ cortemplate1.html [template.html]
+@ corstemplate1.html [template.html]
