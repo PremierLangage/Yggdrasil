@@ -36,8 +36,6 @@ title = Mes Etudiants sur platon
 
 # @ /Mathematics/Colin/Formation_Dom/distance.pl.  C'est casé.
 
-@ /AAAA/dominique/A_Presentations/presentation/sondage/Antonin/showcase/DRcodeEditorShowcase.pl
-
 
 # Démos 
 @ /demo/basic/checkbox_rw/multiples_de_3.pl
@@ -46,4 +44,8 @@ title = Mes Etudiants sur platon
 
 #Demo correction 
 
+
+
+# Stats sur un exo éditor 
+@ /AAAA/dominique/A_Presentations/presentation/sondage/Antonin/showcase/DRcodeEditorShowcase.pl
 
