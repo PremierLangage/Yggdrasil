@@ -102,15 +102,12 @@ class SortlistResponse(Response):
     values : Mapped[PickleType] = mapped_column(PickleType)
 
 class MatchListResponse(Response):
-    __tablename__ = f"db_survey_CodeEditorResponse_{activity_id}"
+    __tablename__ = f"db_survey_MatchListResponse_{activity_id}"
     __mapper_args__ = {
-        "polymorphic_identity": "CodeEditorResponse",
+        "polymorphic_identity": "MatchListResponse",
     }
 
     id: Mapped[int] = mapped_column(ForeignKey(f"db_survey_defaultResponse_{activity_id}.id"), primary_key=True)
-    
-    score : Mapped[int] = mapped_column(Integer)
-    code  : Mapped[Text] = mapped_column(Text) 
 
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
