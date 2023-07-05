@@ -54,6 +54,7 @@ evaluator_after==#|py|
 from correction import FeedbackCor
 
 if user__lastname.lower() == teacher_name :
+    grade = (score,"")
     # creer un affichage de correction 
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
         users = [x for x in _feedback['copies']]
@@ -72,7 +73,6 @@ if user__lastname.lower() == teacher_name :
         answers = session.query(CodeEditorResponse).all()
         for answer in answers:
             _feedback.addCopie(answer.firstname, answer.lastname, answer.username,answer.code,answer.grade, answer.checked)
-        grade = (score,"")
         text = _feedback.render()
         """
 else:
