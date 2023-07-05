@@ -68,7 +68,11 @@ class FeedbackCor:
         return self.getCopiesTotal() - self.getCopiesVerifiees()
 
     def getCopiesValidees(self):
-        
+        return len(list(filter(lambda x: x[5] == 1)))
+
+    def getCopiesValidees(self):
+        return len(list(filter(lambda x: x[5] == 0)))
+
     def getCopiesAsHtml(self):
         result = []
         for i, copie in enumerate(self.getCopies()):
