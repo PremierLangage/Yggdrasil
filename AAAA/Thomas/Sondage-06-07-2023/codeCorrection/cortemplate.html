@@ -102,11 +102,11 @@
 </div>
 {% else %}
 <div class="correction-card-list" id="test">
-{% for copieHtml, (user, code, score, checked)in feedback.getCopiesAsHtml() %}
+{% for copieHtml, (name, lastname, user, code, score, checked)in feedback.getCopiesAsHtml() %}
 <div class="correction-card">
     <div class="header">
         <div class="user-info">
-            <span class="name">{{user}}</span>
+            <span class="name">{{name}} {{lastname}} #{{user}}</span>
             <span>checked : {{checked}}</span>
         </div>
         <span class="score">Score: {{score}}</span>
