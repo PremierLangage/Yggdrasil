@@ -9,7 +9,7 @@ Il contient l'affichage des deux graphes par défaut optionnels:
 
 - statistiques des scores 
 
-- statistiques de participatio
+- statistiques de participation
 
 ==
 
