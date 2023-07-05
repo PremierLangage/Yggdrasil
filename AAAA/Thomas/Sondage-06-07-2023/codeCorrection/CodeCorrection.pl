@@ -50,7 +50,7 @@ feedback = '<span class="success-state">Réponse enregistrée</span>'
 evaluator==#|py|
 ==
 
-teacher_name=revuz
+teacher_name=jean
 
 
 
