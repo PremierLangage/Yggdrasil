@@ -57,7 +57,7 @@ teacher_name=saillard
 evaluator_after==#|py|
 from correction import FeedbackCor
 
-if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" :
+if user__lastname.lower() == teacher_name :
     # creer un affichage de correction 
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
         users = [x for x in _feedback['copies']]
