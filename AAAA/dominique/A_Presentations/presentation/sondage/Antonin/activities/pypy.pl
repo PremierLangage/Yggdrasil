@@ -15,17 +15,17 @@ Som(3) retourne 6.
 
 stopfirsterror= True
 
-pltest1==
+pltest0==
 >>> Som(3) == 6
 True
 >>> Som(4) == 10
 True
 ==
-pltest2==
+pltest1==
 >>> Som(5) == 15
 True
 ==
-pltest3==
+pltest2==
 >>> import random #
 >>> a=random.randint(80,100) #
 >>> Som(a)== (a*(a+1))//2
