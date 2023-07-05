@@ -125,7 +125,7 @@ teacher_name=dummy name to change
 before_graph==#|python|
 from collections import Counter
 import utils
-if user__lastname == teacher_name:
+if user__lastname.lower() == teacher_name:
     # Processing datas
     statInputs = [StatInput.from_data(d) for d in data.items()]
     # Generating default graphs
@@ -159,7 +159,7 @@ if user__lastname == teacher_name:
 
 # FORM PLAYER
 form==#|html|
-{% if user__lastname.lower() == "jean" %}
+{% if user__lastname.lower() == teacher_name %}
 <style>
     .graph {
         display:flex;
