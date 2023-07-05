@@ -98,20 +98,23 @@
 </style>
 <!-- Generated from script -->
 <script>
-function assignCheckValue(checkedValue, formid) {
-    var x = document.createElement('input');
-    x.setAttribute('id', `form_${formid}`)
-    x.setAttribute('style', "display:none;");
-    x.setAttribute('value', checkedValue);
-    document.getElementById("test").appendChild(x);
-}
-
 function hideOrShowContent(contentId) {
     $("#" + contentId + "_div").hide();
     $("#" + contentId).click(function(){
         $("#" + contentId + "_div").toggle();
     });
 }
+
+function assignCheckValue(checkedValue, formid) {
+    var x = document.createElement('input');
+    x.setAttribute('id', `form_${formid}`)
+    x.setAttribute('style', "display:none;");
+    x.setAttribute('value', checkedValue);
+    document.getElementById("test").appendChild(x);
+    hideOrShowContent(formid);
+}
+
+
 </script>
 {% if not feedback.copies %}
 <div style="border:1px solid black;padding:0%;margin:1%;background-color:LightGreen;border-radius:4px;">
