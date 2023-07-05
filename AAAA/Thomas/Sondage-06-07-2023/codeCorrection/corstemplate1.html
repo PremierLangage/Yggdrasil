@@ -44,8 +44,9 @@ function assignCheckValue(checkedValue, formid) {
     </div>  
     <div class="correction-card-list">
     {% if feedback.getCopies() %}
-        <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js" integrity="sha512-UsuvR/LRT1kQthy0F2+lc93U0HuKMQAcwcIVBqnGJOZCycza2xYO+0QAatJNl89B5IHl9HO3PexXG/1eR7W9JA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         {% for firstname, lastname, user, code, score, checked in feedback.getCopies() %}
         <script>
             $(document).ready(function() {hideOrShowContent("{{user}}");})
