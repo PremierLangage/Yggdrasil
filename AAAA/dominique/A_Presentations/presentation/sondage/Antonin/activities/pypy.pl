@@ -21,4 +21,18 @@ True
 True
 >>> Som(5) == 15
 True
+>>> import random #
+>>> a=random.randint(80,100) #
+>>> Som(a)== (a*(a+1))//2
+True
+==
+
+solution==
+
+def Som(n):
+    s = 0
+    for i in range(0,n+1):
+        s += i
+    return s 
+
 ==
