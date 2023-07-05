@@ -74,6 +74,7 @@ if user__lastname.lower() == teacher_name :
             _feedback.addCopie(answer.firstname, answer.lastname, answer.username,answer.code,answer.grade, answer.checked)
         grade = (score,"")
         text = _feedback.render()
+        text = "<script>reload();</script>"
     """
             <script>
         console.log('ahah');</script>
