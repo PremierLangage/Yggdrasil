@@ -12,7 +12,7 @@ function assignCheckValue(checkedValue, formid) {
     x.setAttribute('id', `form_${formid}`)
     x.setAttribute('style', "display:none;");
     x.setAttribute('value', checkedValue);
-    document.getElementById("test").appendChild(x);
+    document.getElementById(formid).appendChild(x);
     console.log("assignCheckValue:" +formid);
 }
 </script>
@@ -169,7 +169,6 @@ function assignCheckValue(checkedValue, formid) {
 
 .content > .body {
     padding: 8px;
-    overflow: auto;
 }
 
 .content > .body > .title {
