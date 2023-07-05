@@ -2,7 +2,7 @@
 extends = /model/basic/matchlist.pl
 
 question ==
-Relier chaque problème à sa solution 
+Relier chaque problème "vos étudiants" à sa solution 
 ==
 
 multiple = True
