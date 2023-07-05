@@ -71,7 +71,7 @@ class FeedbackCor:
 <script>
 function assignCheckValue(checkedValue) {{
     var x = document.createElement('input');
-    x.setAttribute('id', "form_{copie[0]}")
+    x.setAttribute('id', "form_{copie[2]}")
     x.setAttribute('style', "display:none;");
     x.setAttribute('value', checkedValue);
     document.getElementById("test").appendChild(x);
@@ -82,7 +82,7 @@ function assignCheckValue(checkedValue) {{
             <span class="title">Réponse:</span>
             <div>
 <pre>
-<code class="language-python">{copie[1]}</code>
+<code class="language-python">{copie[3]}</code>
 </pre>
             </div>
         </div>
