@@ -42,4 +42,4 @@ def Som(n):
 
 ==
 
-stopfirsterror = True
+stopfirsterror = 1
