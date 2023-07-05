@@ -19,9 +19,6 @@ function assignCheckValue(checkedValue, formid) {
 
 <!-- HTML TEMPLATE -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
 <div class="main">
     <div class="header-title">
         <h2 class="title main-title">
@@ -47,6 +44,8 @@ function assignCheckValue(checkedValue, formid) {
     </div>  
     <div class="correction-card-list">
     {% if feedback.getCopies() %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
         {% for firstname, lastname, user, code, score, checked in feedback.getCopies() %}
         <script>
             $(document).ready(function() {hideOrShowContent("{{user}}");})
@@ -111,6 +110,7 @@ function assignCheckValue(checkedValue, formid) {
                 <span class="empty-list-subtitle">Recharger la page plus tard pour actualiser le contenu...</span>
         </div>
     {% endif %}
+    <script>hljs.highlightAll();</script>
     </div>
 </div>
 <!-- STYLE PROPERTIES  -->
