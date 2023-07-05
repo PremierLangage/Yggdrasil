@@ -52,8 +52,6 @@ evaluator==#|py|
 
 teacher_name=saillard
 
-
-
 evaluator_after==#|py|
 from correction import FeedbackCor
 
