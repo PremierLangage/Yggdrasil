@@ -65,8 +65,6 @@ if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" 
                     i.checked = checked
             #grade = (100, f"{user}, {checked}" + "ceci est le type de checked " + str(type(checked)) )
             # session.query(CodeEditorResponse).where(CodeEditorResponse.id.in_(select(CodeEditorResponse.id).join(Response).filter(Response.username == user).subquery())).update({'checked': int(checked)})
- 
-
         session.commit()
         _feedback = FeedbackCor()
         answers = session.query(CodeEditorResponse).all()
