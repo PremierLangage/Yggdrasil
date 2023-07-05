@@ -530,7 +530,9 @@ class MatchList(SingleComponent):
         if self.scoring == "AllOrNothing":
             score = all_or_nothing(nbright, nbwrong)
         elif self.scoring == "RightMinusWrong":
-            score = right_minus_wrong(nbright, nbwrong, nbsol=len(self.sol))          
+            score = right_minus_wrong(nbright, nbwrong, nbsol=len(self.sol))      
+        elfi self.scoring == "Dominique"
+            score = 10*nbright    
         elif self.scoring == "Custom":
             score = custom_scoring(nbright, nbwrong, nbsol=len(self.sol), nbitems=len(self.items))
         else:
