@@ -105,6 +105,13 @@ function assignCheckValue(checkedValue, formid) {
     x.setAttribute('value', checkedValue);
     document.getElementById("test").appendChild(x);
 }
+
+function hideOrShowContent(contentId) {
+    $("#" + contentId + "_div").hide();
+    $("#" + contentId).click(function(){
+        $("#" + contentId + "_div").toggle();
+    });
+}
 </script>
 {% if not feedback.copies %}
 <div style="border:1px solid black;padding:0%;margin:1%;background-color:LightGreen;border-radius:4px;">
