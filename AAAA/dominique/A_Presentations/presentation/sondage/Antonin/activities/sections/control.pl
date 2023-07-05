@@ -1,11 +1,11 @@
 
 
-extends= section.pl
 
 
-title = Sondages
+
+title = Control
 
 text==
-Les exercices qui suivent montre la capcité de sondage dynamique de PL.
+Exercice pour tester si les etudiants suivent en amphi.
 
 ==
