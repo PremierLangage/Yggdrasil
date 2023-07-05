@@ -96,9 +96,6 @@ from database_utils import get_session, Base, MatchListResponse
 # Default Grade initialisation
 score = 100
 
-log(matches_solution)
-log(matchList.links)
-log_print()
 
 def in_links(solution_source, solution_target, links):
     for e in links:
@@ -111,7 +108,7 @@ for k, v in matches_solution.items():
     for t in v:
         nombre_erreurs += in_links(k, t, matchList.links)
 
-feedback = f'<span class="success-state">Réponse enregistrée {nombre_erreurs}</span>'
+feedback = f'<span class="success-state">Réponse enregistrée\n{matchList.links}\n{matches_solution}</span>'
 ==
 
 # default evaluator dummy
