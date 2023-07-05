@@ -99,7 +99,7 @@ score = 100
 
 def in_links(solution_source, solution_target, links):
     for e in links:
-        if e['source'] == solution_source and  e['target'] == solution_target:
+        if e['source'] == f"source_{hash(solution_source)}" and  e['target'] == f"target_{hash(solution_target)}":
             return 0
     return 1
 
