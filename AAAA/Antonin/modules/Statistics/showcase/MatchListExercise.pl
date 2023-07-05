@@ -3,7 +3,7 @@ extends = /AAAA/Antonin/modules/Statistics/activities/MatchListSurvey.pl
 title= Dummy Title MatchListResponse
 
 text==
-Ceci est un exemple d'exercice visant à montrer l'utilisation de l'activité PL [MatchListResponse.pl` dont voici la documentation](filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/activities/MatchListSurvey.pl).
+Ceci est un exemple d'exercice visant à montrer l'utilisation de l'activité PL [`MatchListResponse.pl` dont voici la documentation](filebrowser/option?name=test_pl&path=Yggdrasil/AAAA/Antonin/activities/MatchListSurvey.pl).
 
 Il contient l'affichage des deux graphes par défaut optionnels:
 
