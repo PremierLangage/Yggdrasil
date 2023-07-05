@@ -47,6 +47,7 @@ b,1
 
 before==#|python|
 from database_utils import MatchListResponse
+import random
 # match component filling:
 match.nodes = []
 multiple = multiple != "False"
