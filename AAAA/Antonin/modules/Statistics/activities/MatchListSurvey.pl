@@ -8,7 +8,7 @@ summary =@ ../docs/codeEditor/summary.md
 user_manual =@ ../docs/codeEditor/user_manual.md
 # ===============================================
 
-title= Dummy Title CodeEditorSurvey
+title= Dummy Title MatchListSurvey
 
 text ==#|markdown|
 # Documentation:
@@ -36,7 +36,7 @@ text ==#|markdown|
 ---
 ==
 
-editor =: CodeEditor
+editor =: MatchList
 editor.theme = white
 editor.language = python
 editor.code ==
