@@ -51,6 +51,7 @@ evaluator==#|py|
 
 
 evaluator_after==#|py|
+from correction import FeedbackCor
 if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" :
     # creer un affichage de correction 
     grade = (100,corhtml)
@@ -62,6 +63,12 @@ if user__firstname.lower() == "thomas" and user__lastname.lower() == "saillard" 
             #grade = (100, f"{user}, {checked}" + "ceci est le type de checked " + str(type(checked)) )
             session.query(CodeEditorResponse).where(CodeEditorResponse.id.in_(session.query(CodeEditorResponse.id).join(Response).filter(Response.username == user).subquery())).update({'checked': int(checked)})
         session.commit()
+    _feedback = FeedbackCor()
+        answers = session.query(CodeEditorResponse).all()
+        for answer in answers:
+            answers_csv.addLine([answer.username,answer.firstname,answer.lastname,answer.email,answer.grade,answer.code])
+            _feedback.addCopie(answer.username,answer.code,answer.grade, answer.checked)
+    globals()["answers_csv"] = str(answers_csv)
 
 else:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
