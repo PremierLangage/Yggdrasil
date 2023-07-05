@@ -44,6 +44,7 @@ matches==
 
 before==#|python|
 from database_utils import MatchListResponse
+# match component filling:
 
 
 
@@ -59,7 +60,7 @@ globals()["answers_csv"] = str(answers_csv)
 ==
 
 formstudent==#|html|
-{{ editor|component }}
+{{ match|component }}
 ==
 
 evaluator_before==#|py|
