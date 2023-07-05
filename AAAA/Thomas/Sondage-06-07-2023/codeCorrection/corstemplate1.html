@@ -27,7 +27,54 @@ function assignCheckValue(checkedValue, formid) {
 
     <div class="correction-card-list">
         {% for firstname, lastname, user, code, score, checked in feedback.getCopies() %}
-            
+        <div class="correction-card">
+            <div class="header">
+                <div>
+                    <div class="user-info">
+                        <span class="name">{{firstname}} {{lastname}}</span>
+                        <span class="id">#{{user}}</span>
+                    </div>
+                    <div class="score">
+                        Score : {{score}}
+                    </div>
+                </div>
+                <div class="icon">
+<!-- IF CHECK -->
+                    Check
+                    <span class="material-symbols-outlined">
+                        manage_search
+                    </span>
+<!-- ELSE -->
+                    Already Checked
+                    <span class="material-symbols-outlined">
+                        check_circle
+                    </span>
+<!-- ENDIF -->
+                </div>
+            </div>
+<!-- CONTENT -->
+            <div class="content">
+                <div class="body">
+                    <code class="language-python">
+                       {{code}}
+                    </code>
+                </div>
+                <div class="actions">
+                    <button class="valide" onclick="assignCheckValue(1, '{copie[2]}')">
+                        <span class="material-symbols-outlined">
+                            check_circle
+                        </span>
+                        Valide 
+                    </button>
+                    <button class="invalide" onclick="assignCheckValue(0, '{copie[2]}')">
+                        <span class="material-symbols-outlined">
+                            cancel
+                        </span>
+                        Invalide 
+                    </button>
+                </div>
+            </div>
+        </div>
         {% endfor %}
     </div>
 </div>
