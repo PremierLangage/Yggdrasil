@@ -8,10 +8,15 @@ Relier chaque problème la solution
 multiple = True
 
 matches ==
-Paris,France
-Marseille,France
-Milan,Italie
-Barcelone,Espagne
+ont besoin d’entraînement, exercice répétable aléatoires
+n'apprennent pas le cours, Quizz pré-cours
+s'ennuient, Activité hors programme 
+se perdent, Ontologies support
+sont très hétérogènes en niveaux, Etayage
+apprennent mal, 
+ne sont pas critiques, Evaluation par les pairs
+ne sont pas engagés
+
 ==
 
 targets ==
