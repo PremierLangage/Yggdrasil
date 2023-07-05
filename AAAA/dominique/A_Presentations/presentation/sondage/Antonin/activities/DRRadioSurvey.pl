@@ -10,7 +10,7 @@ Donnez votre avis sur ce qui est le plus important !
 
 
 
-question_1 = Vos étudiants sont ils conforme a ces questions ? Classer les dans l'ordre d'importance décroissante.
+question_1 = Cochez le choix le plus important pour vous.
 
 
 graph_horizontal_1 = 1
