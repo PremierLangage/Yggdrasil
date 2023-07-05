@@ -107,16 +107,13 @@ function hideOrShowContent(contentId) {
 }
 
 function assignCheckValue(checkedValue, formid) {
-    document.getElementById(`form_${formid}`)?.remove();
     var x = document.createElement('input');
     x.setAttribute('id', `form_${formid}`)
     x.setAttribute('style', "display:none;");
     x.setAttribute('value', checkedValue);
     document.getElementById("test").appendChild(x);
-    console.log("assignCheckValue:" + formid);
-    $("#" + formid + "_div").toggle();
+    console.log("assignCheckValue:" +formid);
 }
-
 </script>
 {% if not feedback.copies %}
 <div style="border:1px solid black;padding:0%;margin:1%;background-color:LightGreen;border-radius:4px;">
