@@ -53,7 +53,7 @@ title = Mes Etudiants sur platon
 # Exercice de controle ;)
 
 
-@ sections/section.pl sections/control.pl 
+@ sections/control.pl 
 
 
 @ /AAAA/dominique/A_Presentations/presentation/sondage/Antonin/activities/match.pl
