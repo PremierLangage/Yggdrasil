@@ -39,13 +39,13 @@ text ==#|markdown|
 match =: MatchList
 
 before==#|python|
-from database_utils import CodeEditorResponse
+from database_utils import MatchListResponse
 
 globals()["data"] = {}
 answers_csv = CsvStringBuilder(["username","firstname","lastname","email","grade"])
-with get_session(table_class=CodeEditorResponse, base=Base) as session:
+with get_session(table_class=MatchListResponse, base=Base) as session:
 
-    answers = session.query(CodeEditorResponse).all()
+    answers = session.query(MatchListResponse).all()
     for answer in answers:
         answers_csv.addLine([answer.username,answer.firstname,answer.lastname,answer.email,answer.grade])
 globals()["answers_csv"] = str(answers_csv)
