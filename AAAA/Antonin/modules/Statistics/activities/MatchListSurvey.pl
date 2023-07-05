@@ -37,11 +37,6 @@ text ==#|markdown|
 ==
 
 match =: MatchList
-editor.theme = white
-editor.language = python
-editor.code ==
-# write your code here
-==
 
 
 before==#|python|
