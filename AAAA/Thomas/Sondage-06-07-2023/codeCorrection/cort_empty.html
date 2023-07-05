@@ -1,0 +1,269 @@
+
+<script>
+function hideOrShowContent(contentId) {
+    console.log("HideorShowContent:" + contentId);
+    $("#" + contentId + "_div").hide();
+    $("#" + contentId).click(function(){
+        $("#" + contentId + "_div").toggle();
+    });
+}
+
+function assignCheckValue(checkedValue, formid) {
+    var x = document.createElement('input');
+    x.setAttribute('id', `form_${formid}`)
+    x.setAttribute('style', "display:none;");
+    x.setAttribute('value', checkedValue);
+    document.getElementById(formid).appendChild(x);
+    console.log("assignCheckValue:" +formid);
+}
+</script>
+
+<!-- HTML TEMPLATE -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<div class="main">
+    <div class="header-title">
+        <h2 class="title main-title">
+            <span class="main-icon material-symbols-outlined">fact_check</span>
+            Liste des Copies 
+        </h2>
+        <div class="stats">
+            <h2 class="title">
+                Statistiques
+            </h2>
+            <div class="stats-list">
+                <span> Total Copie : {{feedback.getCopiesTotal()}} </span>
+            </div>
+            <div class="stats-list">
+                <span> Vérifiées : {{feedback.getCopiesVerifiees()}} </span>
+                <span> Non Vérifiées : {{feedback.getCopiesNonVerifiees()}} </span>
+            </div>
+            <div class="stats-list">
+                <span> Validées: {{feedback.getCopiesValidees()}} </span>
+                <span> Non Validées : {{feedback.getCopiesNonValidees()}} </span>
+            </div>
+        </div>
+    </div>  
+    <div class="correction-card-list">
+    {% if feedback.getCopies() %}
+        {% for firstname, lastname, user, code, score, checked in feedback.getCopies() %}
+        <script>
+            $(document).ready(function() {hideOrShowContent("{{user}}");})
+        </script>
+        <div class="correction-card">
+            <div class="content" id="{{user}}_div">
+                <div class="body">
+                    <pre>
+                    <code class="language-plaintext">
+{{code}}
+                    </code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    {% else %}
+        <div class="empty-list">
+                <span class="empty-list-icon material-symbols-outlined">
+                    playlist_remove
+                </span>
+                <span class="empty-list-title">Pas de réponse pour l'instant</span>
+                <span class="empty-list-subtitle">Recharger la page plus tard pour actualiser le contenu...</span>
+        </div>
+    {% endif %}
+    </div>
+</div>
+<!-- STYLE PROPERTIES  -->
+<style>
+@keyframes on-select{
+    0% {
+        border-left: outset 8px var(--secondary-color);
+    }
+    100% {
+        border-left: outset 8px var(--selected-color);
+    }
+}
+
+.main {
+    --primary-color: #1e4674;
+    --secondary-color: #f0f8ff;
+    --selected-color: #3376c2;
+    --background-color: #edf9ff5d;
+    --card-background-color: white;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.header-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-title {
+    font-size: 2rem;
+}
+
+span.main-icon {
+    font-size: 3rem;
+}
+
+
+
+.main > .container {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.main > .header-title > .stats {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: var(--card-background-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.main > .header-title > .stats > .stats-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: var(--selected-color)
+}
+
+
+.main > .correction-card-list {
+    grid-area: 1 / 2 / 2 / 3;
+    padding:16px;
+    display:flex;
+    flex-grow: grow;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+
+
+.correction-card {
+    background-color: var(--card-background-color);
+    border-left: outset 8px var(--secondary-color);
+    padding: 1vmax;
+    padding-left: 1.5vmax;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.correction-card:hover {
+    border-left: outset 8px var(--selected-color);
+    animation: on-select 1s;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.header > div > .user-info > .name {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.header > div > .user-info > .id {
+    opacity: 0.42;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.header > div > .score {
+    border-left: outset 4px var(--selected-color);
+    padding-left: 8px;
+}
+
+.header > .icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.content { 
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin: 16px;
+    gap: 3rem;
+}
+
+.content > .body {
+    padding: 8px;
+    overflow: auto;
+}
+
+.content > .body > .title {
+    font-size: 2.5ch;
+}
+
+.content > .actions { 
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width:100%;
+}
+
+.content > .actions > button {
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor:pointer;
+    margin-bottom:8px;
+    flex-basis: 10rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.content > .actions > button:hover {
+    opacity: 0.8;
+}
+
+.content > .actions > button.valide {
+    background-color: #4CAF50;
+}
+
+.content > .actions > button.invalide {
+    background-color: #f44336;
+}
+
+.empty-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.empty-list > .empty-list-icon {
+    font-size: 8rem;
+}
+
+.empty-list > .empty-list-title {
+    font-size: 2rem;
+}
+
+.empty-list > .empty-list-subtitle {
+    font-size: 1rem;
+}
+</style>
