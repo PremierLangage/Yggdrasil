@@ -44,8 +44,8 @@ function assignCheckValue(checkedValue, formid) {
     </div>  
     <div class="correction-card-list">
     {% if feedback.getCopies() %}
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script-->
         {% for firstname, lastname, user, code, score, checked in feedback.getCopies() %}
         <script>
             $(document).ready(function() {hideOrShowContent("{{user}}");})
@@ -110,7 +110,6 @@ function assignCheckValue(checkedValue, formid) {
                 <span class="empty-list-subtitle">Recharger la page plus tard pour actualiser le contenu...</span>
         </div>
     {% endif %}
-    <script>hljs.highlightAll();alert("dis wola");</script>
     </div>
 </div>
 <!-- STYLE PROPERTIES  -->
