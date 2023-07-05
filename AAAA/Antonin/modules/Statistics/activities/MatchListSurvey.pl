@@ -83,7 +83,6 @@ else:
                 title       = title,
                 text        = text,
                 grade       = score,
-                score       = score,
                 feedback    = feedback,
             )
         )
