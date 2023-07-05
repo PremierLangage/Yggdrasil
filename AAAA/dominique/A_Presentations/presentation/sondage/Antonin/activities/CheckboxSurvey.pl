@@ -9,6 +9,8 @@ user_manual =@ ../docs/checkbox/user_manual.md
 
 title= Dummy Title CheckboxSurvey
 
+teacher_name=revuz
+
 text ==#|markdown|
 # Documentation:
 
