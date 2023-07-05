@@ -51,7 +51,19 @@ for item in [m.split(",") for m in matches.splitlines()]:
     matches_item[item[0]] = item[1:]
 left = list(matches_item.keys())
 right = list(set([item for sublist in matches_item.values() for item in sublist])) #flatten list
+for elem in left:
+    match.nodes.append({
+        "id": f"source_{hash(elem)}",
+        "content": elem,
+        "source": True
+    })
 
+for elem in right:
+    match.nodes.append({
+        "id": f"target_{hash(elem)}",
+        "content": elem,
+        "target": True
+    })
 
 # Data filling:
 globals()["data"] = {}
