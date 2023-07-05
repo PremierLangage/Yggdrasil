@@ -8,6 +8,7 @@ text==
 
 ==
 
+teacher_name=revuz
 
 
 question_1 = Vos étudiants sont ils conforme a ces questions ? Classer les dans l'ordre d'importance décroissante.
