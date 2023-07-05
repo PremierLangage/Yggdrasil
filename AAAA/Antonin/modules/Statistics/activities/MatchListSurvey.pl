@@ -53,8 +53,8 @@ multiple = multiple != "False"
 matches_solution = {}
 for item in [m.split(",") for m in matches.splitlines()]:
     matches_solution[item[0]] = item[1:]
-left = list(matches_solution.keys())
-right = list(set([item for sublist in matches_solution.values() for item in sublist])) #flatten list
+left = list(map(lambda x : f"source_{hash(x)}", matches_solution.keys())
+right = list(map(lambda x : f"target_{hash(x)}", set([item for sublist in matches_solution.values() for item in sublist])) #flatten list
 for elem in left:
     matchList.nodes.append({
         "id": f"source_{hash(elem)}",
