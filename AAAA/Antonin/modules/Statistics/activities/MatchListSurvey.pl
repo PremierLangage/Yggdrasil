@@ -101,8 +101,8 @@ feedback = '<span class="success-state">Réponse enregistrée</span>'
 def in_links(solution_source, solution_target, links):
     for e in links:
         if e['source'] == solution_source and  e['target'] == solution_target:
-            return 1
-    return 0
+            return 0
+    return 1
 
 nombre_erreurs = 0
 for k, v in matches_solution.items():
