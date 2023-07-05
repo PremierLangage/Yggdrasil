@@ -48,6 +48,8 @@ b,1
 before==#|python|
 from database_utils import MatchListResponse
 # match component filling:
+import sys
+print(dir(match), file=sys.stderr)
 multiple = multiple != "False"
 matches_item = {}
 for item in [m.split(",") for m in matches.splitlines()]:
@@ -67,8 +69,7 @@ for elem in right:
         "content": elem,
         "target": True
     })
-import sys
-print(dir(match), file=sys.stderr)
+
 
 # Data filling:
 globals()["data"] = {}
