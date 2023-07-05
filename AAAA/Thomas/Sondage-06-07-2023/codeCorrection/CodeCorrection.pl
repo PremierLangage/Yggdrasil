@@ -17,20 +17,21 @@ editor.code ==
 
 
 before==#|python|
-from database_utils import CodeEditorResponse
-from correction import FeedbackCor
-_feedback= FeedbackCor()
-globals()["data"] = {}
-answers_csv = CsvStringBuilder(["username","firstname","lastname","email","grade"])
-with get_session(table_class=CodeEditorResponse, base=Base) as session:
+if user__role == 'teacher':
+    from database_utils import CodeEditorResponse
+    from correction import FeedbackCor
+    _feedback= FeedbackCor()
+    globals()["data"] = {}
+    answers_csv = CsvStringBuilder(["username","firstname","lastname","email","grade"])
+    with get_session(table_class=CodeEditorResponse, base=Base) as session:
 
-    answers = session.query(CodeEditorResponse).all()
-    for answer in answers:
-        answers_csv.addLine([answer.username,answer.firstname,answer.lastname,answer.email,answer.grade,answer.code])
-        _feedback.addCopie(answer.username,answer.code,answer.grade, answer.checked)
-globals()["answers_csv"] = str(answers_csv)
-corhtml = _feedback.render()
-text += corhtml
+        answers = session.query(CodeEditorResponse).all()
+        for answer in answers:
+            answers_csv.addLine([answer.username,answer.firstname,answer.lastname,answer.email,answer.grade,answer.code])
+            _feedback.addCopie(answer.username,answer.code,answer.grade, answer.checked)
+    globals()["answers_csv"] = str(answers_csv)
+    corhtml = _feedback.render()
+    text += corhtml
 ==
 
 formstudent==#|html|
