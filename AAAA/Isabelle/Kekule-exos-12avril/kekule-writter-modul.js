@@ -12,7 +12,7 @@
 // cela sauve dans la variable smiles le code smile
 // cela sauve en écriture dnas le variable textarea le code smile
 var a;
-$document.ready(
+document.ready(
     function() {
         setTimeout(function(){ a = new Kekule.Editor.Composer(document.getElementById('composer'))}, 1000)
        
