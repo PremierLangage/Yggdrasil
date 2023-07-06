@@ -6,6 +6,10 @@ Relier chaque pays à sa capitale.
 
 
 Title= Les Capitales
+title = Capitales
+text==
+# Los capitales
+==
 
 nbmatches = 4
 
