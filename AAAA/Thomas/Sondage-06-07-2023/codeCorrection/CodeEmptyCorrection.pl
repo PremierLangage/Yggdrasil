@@ -14,7 +14,7 @@ editor =: CodeEditor
 editor.theme = white
 editor.language = plaintext
 editor.code ==
-# write your code here
+Écrivez votre question ici
 ==
 
 before==#|python|
