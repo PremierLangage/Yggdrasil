@@ -3,11 +3,12 @@
 // evite de rajouter une section extrajs
 // le composer utilise Kekule
 // il met les bon boutons autours de la boite
+/*
 var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
 composer.setCommonToolButtons(["undo", "redo","zoomIn", "zoomOut"]);
 composer.setChemToolButtons(["manipulate", "erase", "bond", 'atomAndFormula', 'ring', 'charge']);
 composer.setAllowedObjModifierCategories(["general", "chemStruct", "glyph", "style", "misc"]);
-
+*/
 
 // fonction qui permet de lire dans la variable mol ce qui est dessiné
 // cela sauve dans la variable smiles le code smile
