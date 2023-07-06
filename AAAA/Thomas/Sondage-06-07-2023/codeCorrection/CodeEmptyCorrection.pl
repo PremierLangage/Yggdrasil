@@ -11,9 +11,9 @@ text ==#|markdown|
 
 editor =: CodeEditor
 editor.theme = white
-editor.language = python
+editor.language = plaintext
 editor.code ==
-# write your code here
+Écrivez votre question ici
 ==
 
 before==#|python|
