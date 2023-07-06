@@ -4,6 +4,9 @@ question ==
 Relier chaque pays à sa capitale.
 ==
 
+
+Title= Les Capitales
+
 nbmatches = 4
 
 matches ==
