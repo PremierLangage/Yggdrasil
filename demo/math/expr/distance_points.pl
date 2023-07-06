@@ -1,6 +1,6 @@
 extends = /model/math/expr.pl
 
-title = Calculer la distance entre deux points du plan
+Title = Calculer la distance entre deux points du plan
 
 before ==
 xA = randint(-5, 5)
