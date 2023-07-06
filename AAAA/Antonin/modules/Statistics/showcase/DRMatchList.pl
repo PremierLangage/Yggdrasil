@@ -6,28 +6,6 @@ text==
 Relier chaque problème "vos étudiants" à sa solution 
 ==
 
-matches==
-test,1
-a,2,3
-b,1,4
-==
-
-multiple = True
-
-evaluator==#|py|
-if nombre_erreurs == 0:
-    score = 100
-else:
-    score = 0
-==
-
-# options
-include_stats_score = True
-include_stats_participation = True
-
-
-
-
 teacher_name=revuz
 
 matches==
@@ -50,55 +28,3 @@ score = max(0, (8 - nombre_erreurs)) * 100 / 8
 # options
 include_stats_score = True
 include_stats_participation = True
-
-
-
-
-# FORM PLAYER
-form==#|html|
-{% if user == "drevuz2" %}
-{% else %}
-<style>
-    .graph {
-        display:flex;
-        flex-direction:column;
-    }
-</style>
-    <div class="graph">
-        {{graphContent|safe}}
-    </div>
-    <br>
-    {{ corrections }}
-    <br>
-    <div class="exercise__actions text-center">
-        <div class="btn btn-primary c_btn" id="dwn-btn"> 
-            <i class="fas fa-download"></i>
-            <span class="ion-hide-md-down">Téléchargement des choix des élèves</span>
-        </div>
-    </div>
-    <script>
-        function download(filename, text) {
-            var element = document.createElement('a');
-            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-            element.setAttribute('download', filename);
-
-            element.style.display = 'none';
-            document.body.appendChild(element);
-
-            element.click();
-            document.body.removeChild(element);
-        }
-
-        // Start file download.
-        document.getElementById("dwn-btn").addEventListener("click", function(){
-            // Generate download of hello.txt file with some content
-            var text = "{{answers_csv}}";
-            var filename = "answers.csv";
-            
-            download(filename, text);
-        }, false);
-    </script>
-
-    {{formstudent|safe}}
-{% endif %}
-==
