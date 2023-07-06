@@ -1,4 +1,3 @@
-
 extends = /AAAA/Antonin/modules/Statistics/activities/MatchListSurvey.pl
 
 title= MatchList Probleme Etudiants
@@ -6,6 +5,29 @@ title= MatchList Probleme Etudiants
 text==
 Relier chaque problème "vos étudiants" à sa solution 
 ==
+
+matches==
+test,1
+a,2,3
+b,1,4
+==
+
+multiple = True
+
+evaluator==#|py|
+if nombre_erreurs == 0:
+    score = 100
+else:
+    score = 0
+==
+
+# options
+include_stats_score = True
+include_stats_participation = True
+
+
+
+
 teacher_name=revuz
 
 matches==
