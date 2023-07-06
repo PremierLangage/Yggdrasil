@@ -33,7 +33,7 @@ if user__lastname.lower() == teacher_name:
 ==
 
 formstudent==#|html|
-{{ editor|component }}
+{{ inputbox|component }}
 ==
 
 evaluator_before==#|py|
@@ -84,7 +84,7 @@ else:
                 grade       = score,
                 score       = score,
                 feedback    = feedback,
-                code        = editor.code,
+                code        = inputbox.value,
                 checked     = -1
             )
         )
