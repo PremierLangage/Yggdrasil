@@ -11,7 +11,11 @@
 // fonction qui permet de lire dans la variable mol ce qui est dessiné
 // cela sauve dans la variable smiles le code smile
 // cela sauve en écriture dnas le variable textarea le code smile
-var a = new Kekule.Editor.Composer(document.getElementById('composer'));
+$document.ready(
+    function() {
+        var a = new Kekule.Editor.Composer(document.getElementById('composer'));
+    }
+)
 
 function getSmile() {
     
