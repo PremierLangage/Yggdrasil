@@ -11,12 +11,12 @@
 // fonction qui permet de lire dans la variable mol ce qui est dessiné
 // cela sauve dans la variable smiles le code smile
 // cela sauve en écriture dnas le variable textarea le code smile
-var a;
-setTimeout(function(){ a = new Kekule.Editor.Composer(document.getElementById('composer'))}, 300)
+var composer;
+setTimeout(function(){ composer = new Kekule.Editor.Composer(document.getElementById('composer'))}, 300)
 
 function getSmile() {
     
-    var mol = a.exportObjs(Kekule.Molecule)[0];
+    var mol = composer.exportObjs(Kekule.Molecule)[0];
     //portObjs(Kekule.Molecule)[0];
     var smiles = Kekule.IO.saveFormatData(mol, 'smi');
     console.log(smiles)
