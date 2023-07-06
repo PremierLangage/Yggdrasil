@@ -19,7 +19,7 @@ editor.code ==
 before==#|python|
 if user__lastname.lower() == teacher_name:
     from database_utils import CodeEditorResponse
-    from correction import FeedbackCor
+    from .correction import FeedbackCor
     _feedback= FeedbackCor()
     globals()["data"] = {}
     answers_csv = CsvStringBuilder(["username","firstname","lastname","email","grade"])
