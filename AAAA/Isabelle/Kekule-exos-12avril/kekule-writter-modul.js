@@ -11,9 +11,9 @@
 // cela sauve en écriture dnas le variable textarea le code smile
 function getSmile() {
     var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
-    composer.setCommonToolButtons(["undo", "redo","zoomIn", "zoomOut"]);
-    composer.setChemToolButtons(["manipulate", "erase", "bond", 'atomAndFormula', 'ring', 'charge']);
-    composer.setAllowedObjModifierCategories(["general", "chemStruct", "glyph", "style", "misc"]);
+  //  composer.setCommonToolButtons(["undo", "redo","zoomIn", "zoomOut"]);
+  //  composer.setChemToolButtons(["manipulate", "erase", "bond", 'atomAndFormula', 'ring', 'charge']);
+   // composer.setAllowedObjModifierCategories(["general", "chemStruct", "glyph", "style", "misc"]);
     var mol = composer.exportObjs(Kekule.Molecule)[0];
     portObjs(Kekule.Molecule)[0];
     var smiles = Kekule.IO.saveFormatData(mol, 'smi');
