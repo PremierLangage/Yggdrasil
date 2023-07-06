@@ -17,15 +17,12 @@ $document.ready(
 )
 
 function getSmile() {
-    
-    var a = new Kekule.Editor.Composer(document.getElementById('composer'));
-    
-
+    var a = new Kekule.Editor.Composer($document.getElementById('composer'));
     var mol = a.exportObjs(Kekule.Molecule)[0];
     //portObjs(Kekule.Molecule)[0];
     var smiles = Kekule.IO.saveFormatData(mol, 'smi');
     console.log(smiles)
-    var textarea = document.getElementById("smiles");
+    var textarea = $document.getElementById("smiles");
     textarea.value = smiles;
 }
 
