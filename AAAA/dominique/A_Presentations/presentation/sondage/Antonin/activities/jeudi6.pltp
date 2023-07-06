@@ -45,7 +45,6 @@ title = Mes Etudiants sur platon
 #Demo correction 
 
 
-
 # Stats sur un exo éditor 
 @ /AAAA/dominique/A_Presentations/presentation/sondage/Antonin/showcase/DRcodeEditorShowcase.pl
 
@@ -61,5 +60,6 @@ title = Mes Etudiants sur platon
 
 @ /AAAA/Antonin/modules/Statistics/showcase/DRMatchList.pl
 
+@ /AAAA/Thomas/Sondage-06-07-2023/codeCorrection/CodeCorrection.pl
 
 @ /AAAA/Thomas/Sondage-06-07-2023/codeCorrection/CodeEmptyCorrection.pl
