@@ -2,4 +2,4 @@
 
 @ correction.py
 
-@ cort_empty.html [template.html]
+@ cortemplate.html [template.html]
