@@ -17,6 +17,7 @@ function getSmile() {
     var mol = composer.exportObjs(Kekule.Molecule)[0];
     portObjs(Kekule.Molecule)[0];
     var smiles = Kekule.IO.saveFormatData(mol, 'smi');
+    console.log(smiles)
     var textarea = document.getElementById("smiles");
     textarea.value = smiles;
 }
