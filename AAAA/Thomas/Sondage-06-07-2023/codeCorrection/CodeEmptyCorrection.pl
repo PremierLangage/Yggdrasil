@@ -1,6 +1,6 @@
 extends = /AAAA/Thomas/Sondage-06-07-2023/stats.pl
 
-extends = /AAAA/Thomas/Sondage-06-07-2023/codeCorrection/correctionTemplate.pl
+extends = /AAAA/Thomas/Sondage-06-07-2023/codeCorrection/emptyTemplate.pl
 
 title= Test de correction de Code
 
