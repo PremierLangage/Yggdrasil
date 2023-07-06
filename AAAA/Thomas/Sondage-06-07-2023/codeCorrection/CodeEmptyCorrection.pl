@@ -9,12 +9,10 @@ teacher_name=saillard
 text ==#|markdown|
 ==
 
-editor =: CodeEditor
-editor.theme = white
-editor.language = plaintext
-editor.code ==
-Écrivez votre question ici
-==
+inputbox =: Input
+inputbox.type = text
+inputbox.placeholder = Question
+inputbox.appearance = outline
 
 before==#|python|
 if user__lastname.lower() == teacher_name:
