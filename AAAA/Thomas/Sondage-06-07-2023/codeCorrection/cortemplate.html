@@ -123,18 +123,11 @@ function assignCheckValue(checkedValue, formid) {
 <div class="correction-card-list" id="test">
 {% for firstname, lastname, user, code, score, checked in feedback.getCopies() %}
 <div class="correction-card">
-    <div class="header">
-        <div class="user-info">
-            <span class="name">{{firstname}} {{lastname}} #{{user}}</span>
-            <span>checked : {{checked}}</span>
-        </div>
-        <span class="score">Score: {{score}}</span>
-    </div>
     <div class="content">
         <div class="body">
             <div>
 <pre>
-<code class="language-python">{{code}}</code>
+<code class="language-plaintext">{{code}}</code>
 </pre>
             </div>
         </div>
