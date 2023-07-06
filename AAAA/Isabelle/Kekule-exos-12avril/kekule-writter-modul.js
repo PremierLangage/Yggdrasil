@@ -12,9 +12,9 @@
 // cela sauve dans la variable smiles le code smile
 // cela sauve en écriture dnas le variable textarea le code smile
 function getSmile() {
-    var composer = new Kekule.Editor.Composer(document.getElementById('composer'));
+    var a = new Kekule.Editor.Composer(document.getElementById('composer'));
 
-    var mol = composer.exportObjs(Kekule.Molecule)[0];
+    var mol = a.exportObjs(Kekule.Molecule)[0];
     //portObjs(Kekule.Molecule)[0];
     var smiles = Kekule.IO.saveFormatData(mol, 'smi');
     console.log(smiles)
