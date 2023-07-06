@@ -13,12 +13,12 @@
 // cela sauve en écriture dnas le variable textarea le code smile
 $document.ready(
     function() {
-        var a = new Kekule.Editor.Composer(document.getElementById('composer'));
     }
 )
 
 function getSmile() {
     
+    var a = new Kekule.Editor.Composer(document.getElementById('composer'));
 
     var mol = a.exportObjs(Kekule.Molecule)[0];
     //portObjs(Kekule.Molecule)[0];
