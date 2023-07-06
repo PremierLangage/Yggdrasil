@@ -4,7 +4,7 @@ extends = /AAAA/Thomas/Sondage-06-07-2023/codeCorrection/emptyTemplate.pl
 
 title= Test de correction de Code
 
-teacher_name=saillard
+teacher_name=revuz
 
 text ==#|markdown|
 ==
