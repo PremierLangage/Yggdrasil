@@ -19,6 +19,7 @@ $document.ready(
 function getSmile() {
     
     var a = new Kekule.Editor.Composer(document.getElementById('composer'));
+    
 
     var mol = a.exportObjs(Kekule.Molecule)[0];
     //portObjs(Kekule.Molecule)[0];
