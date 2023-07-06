@@ -1,25 +1,25 @@
 extends = /AAAA/Thomas/Sondage-06-07-2023/stats.pl
 
-extends = /AAAA/Thomas/Sondage-06-07-2023/codeCorrection/correctionEmptyTemplate.pl
+extends = /AAAA/Thomas/Sondage-06-07-2023/codeCorrection/correctionTemplate.pl
 
-title= Sondage
+title= Test de correction de Code
 
-teacher_name=saillard
+teacher_name=revuz
 
 text ==#|markdown|
 ==
 
 editor =: CodeEditor
 editor.theme = white
-editor.language = plaintext
+editor.language = python
 editor.code ==
-Écrivez votre question ici
+# write your code here
 ==
 
 before==#|python|
 if user__lastname.lower() == teacher_name:
     from database_utils import CodeEditorResponse
-    from .correction import FeedbackCor
+    from correction import FeedbackCor
     _feedback= FeedbackCor()
     globals()["data"] = {}
     answers_csv = CsvStringBuilder(["username","firstname","lastname","email","grade"])
@@ -65,6 +65,13 @@ if user__lastname.lower() == teacher_name :
                     i.checked = checked
         session.commit()
         text = "<script>location.reload();</script>"
+        """
+        _feedback = FeedbackCor()
+        answers = session.query(CodeEditorResponse).all()
+        for answer in answers:
+            _feedback.addCopie(answer.firstname, answer.lastname, answer.username,answer.code,answer.grade, answer.checked)
+        text = _feedback.render()
+        """
 else:
     with get_session(table_class = CodeEditorResponse, base=Base) as session:
         session.add(
