@@ -6,7 +6,7 @@ text==
 Relier chaque problème "vos étudiants" à sa solution 
 ==
 
-teacher_name=revuz
+teacher_name=saillard
 
 matches==
 ont besoin d’entraînement, exercice répétable aléatoires
