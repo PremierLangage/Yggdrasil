@@ -41,7 +41,7 @@ from database_utils import get_session, Base, CodeEditorResponse, Response
 
 # Default Grade intilisation
 score = 100
-feedback = '<span class="success-state">Question enregistrée</span>'
+feedback = '<span class="success-state">Question enregistree</span>'
 ==
 
 # default evaluator dummy
