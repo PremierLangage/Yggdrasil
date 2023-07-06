@@ -1,7 +1,7 @@
 extends = /model/math/expr.pl
 
 Title = Calculer la distance entre deux points du plan
-
+title = Distance Euclidienne
 before ==
 xA = randint(-5, 5)
 yA = randint(-5, 5)
