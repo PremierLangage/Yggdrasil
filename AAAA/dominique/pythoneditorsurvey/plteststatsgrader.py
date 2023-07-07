@@ -89,6 +89,12 @@ def doPlTest(dic):
         outstr += dic["feedback"]+" valeur de stop "+ str(stop)
     output(a,outstr)
 
+def _get_student_code(exercise_context: dict):
+    if "editor" not in exercise_context:
+        raise test.GraderError(missing_editor)
+    editor_id = exercise_context["editor"].cid
+    answers = get_answers()
+    return answers[editor_id]["code"]
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
@@ -100,10 +106,9 @@ if __name__ == "__main__":
     dic = get_context()
     dic['response'] = get_answers()
     import sys
-    print(get_answers(), file=sys.stderr)
-    student = get_answers()['answer']
+    student_answer = _get_student_code(get_context())
     with open("student.py","w") as ost:
-        ost.write(student)
+        ost.write(student_answer)
 
 
     test_evaluator_clause('evaluator_before', dic)
