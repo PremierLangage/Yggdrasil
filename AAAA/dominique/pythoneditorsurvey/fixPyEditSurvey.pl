@@ -1,3 +1,5 @@
+grader==
+==
 extends = /AAAA/Antonin/modules/Statistics/activities/CodeEditorSurvey.pl
 
 @ /AAAA/dominique/pythoneditorsurvey/plteststatsgrader.py [grader.py]
