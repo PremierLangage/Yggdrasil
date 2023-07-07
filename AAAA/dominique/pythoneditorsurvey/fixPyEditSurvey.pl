@@ -40,7 +40,3 @@ globals()["answers_csv"] = str(answers_csv)
 corhtml = feedbackCor.render()
 text += corhtml 
 ==
-
-# default evaluator dummy
-evaluator==#|py|
-==
