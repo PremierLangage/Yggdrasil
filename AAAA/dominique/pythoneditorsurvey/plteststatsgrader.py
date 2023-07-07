@@ -106,9 +106,9 @@ if __name__ == "__main__":
     dic = get_context()
     dic['response'] = get_answers()
     import sys
-    student_answer = _get_student_code(get_context())
+    student = _get_student_code(get_context())
     with open("student.py","w") as ost:
-        ost.write(student_answer)
+        ost.write(student)
 
 
     test_evaluator_clause('evaluator_before', dic)
