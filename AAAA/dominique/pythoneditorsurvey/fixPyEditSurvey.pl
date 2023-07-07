@@ -1,4 +1,4 @@
-grader==
+before==
 ==
 extends = /AAAA/Antonin/modules/Statistics/activities/CodeEditorSurvey.pl
 
