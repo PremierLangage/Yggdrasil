@@ -26,7 +26,7 @@ On vous propose d'écrire une fonction prime(N) qui affiche les N premier nombre
 
 ==
 
-before +==
+before +=
 corhtml = feedback.render()
 text += corhtml 
 ==
