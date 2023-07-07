@@ -4,10 +4,6 @@ extends = /AAAA/Antonin/modules/Statistics/activities/CodeEditorSurvey.pl
 
 @ /AAAA/dominique/pythoneditorsurvey/plteststatsgrader.py [grader.py]
 
-# default evaluator dummy
-evaluator==#|py|
-==
-
 extends = /AAAA/dominique/A_Presentations/presentation/sondage/correctionTemplate.pl
 
 stopfirsterror= True
@@ -28,7 +24,23 @@ On vous propose d'écrire une fonction prime(N) qui affiche les N premier nombre
 
 ==
 
-before +=
+before==#|python|
+from database_utils import CodeEditorResponse
+from correction import FeedbackCor
+feedback= FeedbackCor()
+globals()["data"] = {}
+answers_csv = CsvStringBuilder(["username","firstname","lastname","email","grade"])
+with get_session(table_class=CodeEditorResponse, base=Base) as session:
+
+    answers = session.query(CodeEditorResponse).all()
+    for answer in answers:
+        answers_csv.addLine([answer.username,answer.firstname,answer.lastname,answer.email,answer.grade,answer.code])
+        feedback.addCopie(answer.username,answer.code,answer.grade)
+globals()["answers_csv"] = str(answers_csv)
 corhtml = feedback.render()
 text += corhtml 
+==
+
+# default evaluator dummy
+evaluator==#|py|
 ==
