@@ -3,7 +3,7 @@
 
 extends = /AAAA/Antonin/modules/Statistics/activities/CodeEditorSurvey.pl
 extends = /AAAA/dominique/A_Presentations/presentation/sondage/correctionTemplate.pl
-@ /ComputerScience/python/template/pltestgrader.py [grader.py]
+@ /AAAA/dominique/pythoneditorsurvey/plteststatsgrader.py [grader.py]
 
 
 stopfirsterror= True
