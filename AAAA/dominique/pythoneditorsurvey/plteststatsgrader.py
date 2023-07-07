@@ -90,10 +90,6 @@ def doPlTest(dic):
     output(a,outstr)
 
 
-
-
-
-
 if __name__ == "__main__":
     if len(sys.argv) < 5:
         msg = ("Sandbox did not call grader properly:\n"
@@ -103,7 +99,8 @@ if __name__ == "__main__":
     
     dic = get_context()
     dic['response'] = get_answers()
-
+    import sys
+    print(get_answers(), file=sys.stderr)
     student = get_answers()['answer']
     with open("student.py","w") as ost:
         ost.write(student)
