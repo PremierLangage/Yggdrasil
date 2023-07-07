@@ -3,6 +3,7 @@ before==
 extends = /AAAA/Antonin/modules/Statistics/activities/CodeEditorSurvey.pl
 
 @ /ComputerScience/python/template/pltest_doc.py [pltest_doc.py]
+@ /ComputerScience/python/template/feedback2.py [feedback2.py]
 
 extends = /AAAA/dominique/A_Presentations/presentation/sondage/correctionTemplate.pl
 
