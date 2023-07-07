@@ -2,9 +2,10 @@ before==
 ==
 extends = /AAAA/Antonin/modules/Statistics/activities/CodeEditorSurvey.pl
 
+extends = /AAAA/dominique/A_Presentations/presentation/sondage/correctionTemplate.pl
+
 @ /AAAA/dominique/pythoneditorsurvey/plteststatsgrader.py [grader.py]
 
-extends = /AAAA/dominique/A_Presentations/presentation/sondage/correctionTemplate.pl
 
 stopfirsterror= True
 pltest==
