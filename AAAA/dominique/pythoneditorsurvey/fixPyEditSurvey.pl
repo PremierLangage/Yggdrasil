@@ -27,7 +27,7 @@ On vous propose d'écrire une fonction prime(N) qui affiche les N premier nombre
 before==#|python|
 from database_utils import CodeEditorResponse
 from correction import FeedbackCor
-feedback= FeedbackCor()
+feedbackCor= FeedbackCor()
 globals()["data"] = {}
 answers_csv = CsvStringBuilder(["username","firstname","lastname","email","grade"])
 with get_session(table_class=CodeEditorResponse, base=Base) as session:
@@ -35,9 +35,9 @@ with get_session(table_class=CodeEditorResponse, base=Base) as session:
     answers = session.query(CodeEditorResponse).all()
     for answer in answers:
         answers_csv.addLine([answer.username,answer.firstname,answer.lastname,answer.email,answer.grade,answer.code])
-        feedback.addCopie(answer.username,answer.code,answer.grade)
+        feedbackCor.addCopie(answer.username,answer.code,answer.grade)
 globals()["answers_csv"] = str(answers_csv)
-corhtml = feedback.render()
+corhtml = feedbackCor.render()
 text += corhtml 
 ==
 
