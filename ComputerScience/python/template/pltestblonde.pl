@@ -1,7 +1,5 @@
 
 
-
-
 # Ceci est un template pour faire des exercices avec la balise de correction pltest
 doc==
 pour cela vous utiliser la syntaxe de doctest par exemple pour tester une fonction f 
