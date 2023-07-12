@@ -9,7 +9,7 @@ before==
 
 from gendec import question
 import random
-random.rand(10)
+random.random(10)
 text, sol = question()
 texti=text
 nbq=0
