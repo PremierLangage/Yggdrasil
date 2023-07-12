@@ -33,8 +33,8 @@ form==
 
 evaluator==
 nbq += 1
-
-if sol == inputbox.value:
+ok = (sol == inputbox.value)
+if ok:
     nbbr += 1 
     grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
 else:
@@ -44,6 +44,7 @@ else:
 from gendec import question
 
 text, sol = question()
+
 ==
 
 
