@@ -46,7 +46,7 @@ else:
 from gendec import question
 
 texti, sol = question()
-text = texti + feedback
+text = texti + "<br><br><br>Question précédente : <br>"+feedback
 ==
 
 
