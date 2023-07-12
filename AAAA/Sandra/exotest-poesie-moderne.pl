@@ -1,4 +1,4 @@
-extends = /model/basic/atchlist.pl
+extends = /model/basic/matchlist.pl
 
 pairs ==
 Les Fleurs du Mal§Baudelaire
