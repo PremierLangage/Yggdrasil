@@ -8,7 +8,8 @@ text=
 before==
 
 from gendec import question
-
+import random
+random.rand(10)
 text, sol = question()
 texti=text
 nbq=0
@@ -33,7 +34,7 @@ form==
 
 evaluator==
 nbq += 1
-ok = (sol == inputbox.value)
+ok = sol == inputbox.value
 if ok:
     nbbr += 1 
     feedback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>'
