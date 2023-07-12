@@ -43,7 +43,7 @@ else:
     feedback = f'<span class="error-state">Bad answer</span> <br/><span >{texti}<br> la bonne réponse  était : **{sol}** <br>  Nombre de réponses correctes {nbbr}/{nbq} </span>'
     grade = (0, " ")
 
-
+random.seed(10)
 from gendec import question
 
 texti, sol = question()
