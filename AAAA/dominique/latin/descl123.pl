@@ -10,7 +10,7 @@ before==
 from gendec import question
 
 text, sol = question()
-
+texti=text
 nbq=0
 nbbr=0
 
@@ -39,15 +39,14 @@ if ok:
     feedback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>'
     grade = (100," ")
 else:
-    feedback = f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {sol}  {nbbr}/{nbq} </span>'
+    feedback = f'<span class="error-state">Bad answer</span> <br/><span >{texti}<br> la bonne réponse  était : {sol}  {nbbr}/{nbq} </span>'
     grade = (0, " ")
 
 
 from gendec import question
 
-text, sol = question()
-
-text +== feedback
+texti, sol = question()
+text = texti + feedback
 ==
 
 
