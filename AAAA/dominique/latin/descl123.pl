@@ -39,7 +39,7 @@ if ok:
     feedback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>'
     grade = (100," ")
 else:
-    feedback = f'<span class="error-state">Bad answer</span> <br/><span >{texti}<br> la bonne réponse  était : {sol} <br>  Nombre de réponses correctes {nbbr}/{nbq} </span>'
+    feedback = f'<span class="error-state">Bad answer</span> <br/><span >{texti}<br> la bonne réponse  était : **{sol}** <br>  Nombre de réponses correctes {nbbr}/{nbq} </span>'
     grade = (0, " ")
 
 
