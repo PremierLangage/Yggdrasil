@@ -36,9 +36,11 @@ nbq += 1
 ok = (sol == inputbox.value)
 if ok:
     nbbr += 1 
-    grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
+    feedback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>'
+    grade = (100," ")
 else:
-    grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {sol}  {nbbr}/{nbq} </span>')
+    feedback = f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {sol}  {nbbr}/{nbq} </span>'
+    grade = (0, " ")
 
 
 from gendec import question
