@@ -1,0 +1,378 @@
+
+#*****************************************************************************
+#  Copyright (C) 2023 Dominique Revuz 
+#
+# This is a implementation of a standard template of programming exercice 
+# for haskell language 
+# This is based on the C lanaguage exercice
+#*****************************************************************************
+
+
+@ /ComputerScience/C/template/std_progC_utils.py
+@ /utils/sandboxio.py
+grader  =@ /grader/evaluator.py
+builder =@ /builder/before.py
+
+title=Standard haskell programming Janvier 2023
+
+hints % { "cid": "hints", "selector": "c-hint" }
+hints.label=<b>Besoin d'aide ? Libérez un indice...</b>
+hints.confirmMessage==
+L'usage d'indices affecte la note d'autonomie !
+==
+
+hints.shouldConfirm=false
+hints.confirmTitle=Êtes vous sur de vouloir un indice ?
+hints.confirmOkTitle=Oui
+hints.confirmNoTitle=Non
+hints.moreHintTitle=Encore un!
+
+text==
+**This text shoud be overwrited when inheriting from the Standard Haskell
+Programming exercise template.**
+
+
+In this template example, we ask the user to program a "hello world" haskell program.
+That prints the current date and says hello.
+
+==
+
+editor =: CodeEditor
+editor.theme=dark
+editor.language = haskell
+# editor.height=350px
+
+editor.code==#|hs|
+import System.Environment
+
+main = do
+    getArgs >>= print
+    getProgName >>= print
+    getEnvironment >>= print
+
+==
+
+before ==#|python|
+from random import randint
+
+# Some globals variables
+nb_attempt=0
+
+# Place here your favorite C compiler
+compiler="ghc"
+# PLace here the compilation flags
+cflags=[]
+# Place here library flags
+libflags=[]
+
+if "taboo" in globals(): 
+    text+='<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+    text+="<b>Taboo :</b> attention, il y aura un refus de compilation si vous proposez un code qui utilise les mots suivants (ne les mentionnez pas ni en fonction, ni en nom de variable) : "
+    text+=str(taboo)
+    text+='</div> <br />\n'
+
+if "astuces" in globals():
+    hints.items = eval(astuces)
+    text+='<br><br>'
+    text+=" {{ hints|component}} \n<br>"
+    nb_hints = len(hints.items)
+else:
+    nb_hints = 0
+
+text+=" {{ editor|component }} "
+==
+
+# tests are placed inside a list stored in variable : checks_args_stdin
+# each test must have the following shape :
+# ["name of the test", [list of arguments of the test], stdin of the test ]
+# During the test execution, subprocess will execute :
+# ./prog [list of argument]  
+# and a tube will place the content stdin inside the standard input of the
+# process...
+checks_args_stdin==
+ [["Premier test exemple (1 et 1)", ["1"], "1"],
+ ["Second test exemple (12 et -7)", ["12"], "-7"],
+ ["Troisième test aléatoire", [str(randint(-100,100))], str(randint(-100,100)) ],
+ ["Quatrième test aléatoire", [str(randint(-100,100))], str(randint(-100,100)) ],
+ ["Cinquième test aléatoire lui aussi", [str(randint(-100,100))], str(randint(-100,100)) ] ]
+==
+
+form==
+
+==
+
+code_before==#|haskell|
+
+==
+
+solution==#|haskell|
+
+
+main = putStrLn "Hello, world!"
+
+==
+
+code_after==#|haskell|
+
+==
+
+evaluator==#|python|
+import subprocess
+from std_progC_utils import make_hide_block_on_click, terminal_code, subnlbybr
+
+# principals signals
+signals = {
+    2: "SIGINT",
+    3: "SIGQUIT",
+    4: "SIGILL",
+    6: "SIGABRT",
+    8: "SIGFPE",
+    9: "SIGKILL",
+    11: "SIGSEGV",
+    13: "SIGPIPE",
+    14: "SIGALRM",
+    15: "SIGTERM"
+};
+
+TEACHER="src_teacher.hs"
+STUDENT="src_student.hs"
+
+def control_returncode(rc, output):
+    """
+    Update the output of the terminal if UNIX did kill the process
+    """
+    if -rc in signals:
+        output = "Process exited with UNIX signal ("+str(-rc)+") "+signals[-rc]
+    else:
+        output = "Process exited with UNIX signal ("+str(-rc)+")"
+
+# Update nb attempt
+nb_attempt += 1 # count each try....
+
+# Pre-process before executing the checks
+def prepare_code_to_file(src_code, filename):
+    """
+    Place inside file named `filename`
+    """
+    src_final = code_before
+    src_final += "\n\n"
+    src_final += src_code
+    src_final += "\n\n"
+    src_final += code_after
+    src_final += "\n\n"
+    with open(filename, 'w') as f:
+        f.write(src_final)
+
+
+
+# The two file to proceed the checks
+prepare_code_to_file(editor.code, STUDENT)
+prepare_code_to_file(solution, TEACHER)
+
+def compile_source(src_name, prog_name, compiler, cflags=[], libflags=[]):
+    """
+    compile the source in argument and return 
+    """
+    command_args = [compiler, src_name, "-o", prog_name] + cflags + libflags
+    sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    spout = sp.stdout.decode()
+    errout = sp.stderr.decode()
+    returncode = sp.returncode
+    return (returncode, spout, errout)
+
+# Compile the teacher solution
+returncode, spout, errout =compile_source(TEACHER, "./teacher_prog", compiler, cflags, libflags)
+
+if len(spout) + len(errout) == 0:
+    teachercoderror=''
+    returncode, spout, errout = compile_source(STUDENT, "./student_prog", compiler, cflags, libflags)
+else:
+    teachercoderror="<h1> Error du code prof </h1>"
+
+# Compilation ok
+if len(spout) + len(errout) == 0:
+    grade_compil = 100
+    text_compil = 'Compilation réussie'
+    compil_state = 'success'
+    class_state = 'success'
+else:
+    # Compilation Aborted
+    if "error:" in errout:
+        grade_compil = 0
+        text_compil = 'Compilation échouée'
+        compil_state = 'error'
+        class_state = 'error'
+    # So there must have some warning
+    else:
+        nb_w_compil = (spout+errout).count('warning')
+        grade_compil = max(0, 100 - (nb_w_compil*10) )
+        text_compil = 'Compilation réussie avec ' + str(nb_w_compil) + ' warning'
+        if nb_w_compil > 1:
+            text_compil += 's'
+        compil_state = 'warning'
+        class_state = 'warning'
+
+if "taboo" in globals(): 
+    import re
+    pat = re.compile(taboo, re.IGNORECASE)
+    if pat.search(editor.code):
+        compil_state = 'taboo-error'
+        class_state = 'error'
+        text_compil = 'Compilation échouée non respect du taboo : '+taboo+' '
+        grade_compil = 0
+
+# begin of feedback
+feedback = '<p style="margin-bottom: 5px;"><b><u>Compilation :</u> ' + str(grade_compil) + '%</b> '
+if compil_state != 'success':
+    feedback += '(cliquer au dessous pour dérouler les détails)</p>'
+feedback += '<div class="' + class_state + '-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+if compil_state == 'taboo-error':
+    feedback += "<b>Refus de compilation :</b> non respect du taboo : "+taboo
+elif compil_state != 'success':
+    feedback += make_hide_block_on_click("compil_ans", text_compil + ' avec flags ' + ' '.join(cflags), terminal_code(spout+errout), "")
+else:
+    feedback += make_hide_block_on_click("compil_ans", text_compil + ' avec flags ' + ' '.join(cflags), "C'était parfait, le compilateur n'a rien dit...", "")
+feedback += '</div>'
+
+# We replace the compil state to error to disable tests
+if compil_state == 'taboo-error':
+    compil_state = 'error'
+
+# Tests
+nb_good = 0
+nb_bad = 0
+grade_checks = 0
+
+feedback_checks = ""
+
+# data test generation : must be in a separate place
+# since it need a new eval at each attempt to be really
+# random !!!
+from random import *
+checks_data = eval(checks_args_stdin)
+
+if compil_state != 'error':
+    for test_c in checks_data:
+        f_in=open("stdin_content", "w")
+        f_in.write(test_c[2])
+        f_in.close()
+        # Use the teacher solution to generated expected output of the test
+        command_args = " ".join(["./teacher_prog"] + list(map(lambda x: "'"+x+"'", test_c[1])) )
+        sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, timeout=1)
+        try: 
+            expected_ouput = sp.stdout.decode().replace(' ', '&nbsp;') + sp.stderr.decode().replace(' ', '&nbsp;')
+        except:
+            expected_ouput = "Impossible de décoder la sortie standard"
+        if -sp.returncode in signals:
+            expected_ouput += "Process exited with UNIX signal ("+str(-sp.returncode)+") "+signals[-sp.returncode]
+        elif sp.returncode < 0:
+            expected_ouput += "Process exited with UNIX signal ("+str(-sp.returncode)+")"
+
+        # Now execute the student programm
+        command_args = " ".join(["./student_prog"] + list(map(lambda x: "'"+x+"'", test_c[1])) )
+        sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, timeout=1)
+        try: 
+            spout = sp.stdout.decode().replace(' ', '&nbsp;') + sp.stderr.decode().replace(' ', '&nbsp;')
+        except:
+            spout = "Impossible de décoder la sortie standard"
+        if -sp.returncode in signals:
+            spout += "Processus terminé avec le signal UNIX ("+str(-sp.returncode)+") "+signals[-sp.returncode]
+        elif sp.returncode < 0:
+            spout += "Processus terminé avec le signal UNIX ("+str(-sp.returncode)+")"
+
+        if spout == expected_ouput:
+            nb_good += 1
+            feedback_checks += '<div class="success-state" style="margin: 2px;padding: 5px; border: 1px solid #155724 transparent;">'
+            terminal_log = "Platon@debian~$> ./a.out " + " ".join(test_c[1]) + "\n"
+            terminal_log += expected_ouput
+            if len(test_c[2]) > 0:
+                stdin_explain = "Contenu de l'entrée standard durant l'exécution : <br />"
+                stdin_explain += subnlbybr(test_c[2])
+                if test_c[2][-1] != '\n':
+                    stdin_explain += "<br />"
+            else:
+                stdin_explain = ""
+            feedback_checks += make_hide_block_on_click("details_check"+str(nb_good+nb_bad), test_c[0], stdin_explain + terminal_code(terminal_log), "")
+            feedback_checks += '</div>'
+        else:
+            nb_bad += 1
+            feedback_checks += '<div class="error-state" style="margin: 2px;padding: 5px; border: 1px solid #155724 transparent;">'
+            term_tot = "Attendu : <br />"
+            terminal_log = "Platon@debian~$> ./a.out " + " ".join(test_c[1]) + "\n"
+            terminal_log += expected_ouput
+            if len(test_c[2]) > 0:
+                stdin_explain = "Contenu de l'entrée standard durant l'exécution : <br />"
+                stdin_explain += subnlbybr(test_c[2])
+                if test_c[2][-1] != '\n':
+                    stdin_explain += "<br />"
+            else:
+                stdin_explain = ""
+            term_tot += terminal_code(terminal_log)
+            term_tot += "Obtenu : <br />"
+            terminal_log = "Platon@debian~$> ./a.out " + " ".join(test_c[1]) + "\n"
+            terminal_log += spout
+            term_tot += terminal_code(terminal_log)
+            feedback_checks += make_hide_block_on_click("details_check"+str(nb_good+nb_bad), test_c[0], stdin_explain + term_tot, "")
+            feedback_checks += '</div>'
+
+    grade_checks = min([((nb_good*100) // (nb_good+nb_bad)) , (100 // (2**nb_bad))])
+feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Tests :</u> ' + str(grade_checks) + '%</b> (cliquer sur les tests pour afficher/réduire leurs détails)</p>'
+
+if compil_state == 'error':
+    feedback += '<div class="error-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+    feedback += '<b>Erreur à la compilation :</b> Pas de test lancé</div>'
+else:
+    feedback += feedback_checks
+
+# Calcul de la partie : note d'autonomie
+if nb_hints > 0:
+    count_hint = 0
+    for e in hints.items:
+        if 'consumed' in e:
+            count_hint += 1
+    grade_alone = 50 + (50*(nb_hints - count_hint) // (nb_hints))
+    feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Autonomie :</u> ' + str(grade_alone) + '%</b></p>'
+    if count_hint == 0:
+        feedback += '<div class="success-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+        feedback += 'Sans indice</div>'
+    else: 
+        feedback += '<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+        if count_hint == 1:
+            feedback += '1 indice utilisé</div>'
+        else:
+            feedback += str(count_hint)+' indices utilisés</div>'
+else:
+    grade_alone = 100
+
+grade_attempt = 50 + (200 // (3+nb_attempt))
+
+feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Efficacité :</u> ' + str(grade_attempt) + '%</b></p>'
+
+if nb_attempt == 1:
+    feedback += '<div class="success-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+    feedback += '1 tentative</div>'
+    all_grade = [(grade_compil * grade_checks * grade_attempt * grade_alone) // 1000000]
+else:
+    feedback += '<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
+    feedback += str(nb_attempt)+' tentatives</div>'
+    all_grade.append((grade_compil * grade_checks * grade_attempt * grade_alone) // 1000000)
+
+
+# overall grade !
+
+feedback = '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Note actuelle :</u> ' + str(max(all_grade)) + '/100</b></p>' + feedback
+
+grade=((grade_compil * grade_checks * grade_attempt * grade_alone) // 1000000, teachercoderror+feedback)
+==
+
+
+
+
+
+
+
+
+
+
+
+
