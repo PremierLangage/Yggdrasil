@@ -5,13 +5,13 @@ title = Point objet et point image en optique géométrique
 lang = fr
 
 before ==
-import random
+from random import choice randint 
 from sympy import Rational
 angle=random.choice([Rational(1,2),1,Rational(3,2),Rational(1,4),Rational(3,4),Rational(5,4)])*sp.pi
 valangle=float(angle.evalf())
 latexangle=latex(angle)
 d0,d1,d2,d3=-5,-2,2,5
-import random
+
 
 locobj=randint(1,3)
 if locobj==1:
