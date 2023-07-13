@@ -1,4 +1,4 @@
-extends =  /mpodel/basic/textinput.pl 
+extends =  /model/basic/textinput.pl 
 
 @ grec_voc_1.csv [data.csv]
 
