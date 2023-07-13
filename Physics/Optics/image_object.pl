@@ -6,6 +6,7 @@ lang = fr
 
 before ==
 import random
+import Rational
 angle=random.choice([Rational(1,2),1,Rational(3,2),Rational(1,4),Rational(3,4),Rational(5,4)])*sp.pi
 valangle=float(angle.evalf())
 latexangle=latex(angle)
