@@ -6,7 +6,7 @@ lang = fr
 
 before ==
 import random
-from sympy import Rational
+from sympy import *
 import sympy as sp
 from random import randint
 angle=random.choice([Rational(1,2),1,Rational(3,2),Rational(1,4),Rational(3,4),Rational(5,4)])*sp.pi
