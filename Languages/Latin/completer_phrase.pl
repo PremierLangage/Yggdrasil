@@ -1,4 +1,4 @@
-extends = /model/basic.pl
+extends = /model/basic/basic.pl
 
 title = Comparaison de nombres (DragDrop)
 
