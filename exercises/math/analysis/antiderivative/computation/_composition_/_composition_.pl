@@ -43,7 +43,7 @@ $! F(x) = !$
 solution ==
 Les primitives de cette fonction sont les fonctions de la forme $$ x \mapsto {{ sol|latex }} + k $$
 
-où $k$ est une constante réelle.
+où $$k$$ est une constante réelle.
 ==
 
 equality = "UpToConstant"
