@@ -17,7 +17,7 @@ Voici ce qu'a répondu la compilation.
 
 code="""
 publique Class Main{
-
+System.out.println("Bravo!");
 }
 """
 editor['code']=code
@@ -27,5 +27,5 @@ editor['code']=code
 
 
 stdout_tests==
-"No argument" Bravo
+"No argument" Bravo!
 ==
