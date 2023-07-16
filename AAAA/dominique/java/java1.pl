@@ -4,8 +4,8 @@ extends = /template/java.pl
 title = Première méthode
 text ==
 
-Ecrire dans la classe {{classname}} une méthode {{name}} qui prend un *int* en paramêtre et retourne sont carré.
-
+Ecrire dans la classe **{{classname}}** une méthode **{{name}}** qui prend un *int* en paramêtre et retourne sont carré.
+ 
 
 == 
 
@@ -18,7 +18,7 @@ name = random.choice(['maMethode','m','square','fois','prise'])
 editor["code"] = """
 public class %s {
     public static void main(String[] args) {
-        int %s (int x){
+        int %s(int x){
 
         }
         
