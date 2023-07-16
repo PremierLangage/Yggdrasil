@@ -291,7 +291,7 @@ class PreGrader(Grader):
         self.code = code 
 
     @classmethod
-    def grade(cls, context, answers):
+    def grade(cls, context, answers, output_json):
         """Grade the answers according to context, exiting the script through sandboxio.output()."""
         grader = cls(context, answers)
         
