@@ -3,6 +3,7 @@ form =@ /form/text_editor.html
 @ graderjavaerror.py [grader.py]
 @ builderjavaerror.py [builder.py]
 @ /utils/sandboxio.py
+@ java.py
 
 before==
 editor["code"] = (
