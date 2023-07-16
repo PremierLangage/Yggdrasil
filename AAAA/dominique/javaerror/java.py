@@ -290,11 +290,12 @@ class PreGrader(Grader):
         # this grader is used in a before 
 
 if __name__ == "__main__":
-    answers = sandboxio.get_answers()
+
     context = sandboxio.get_context()
     if "pregrade" in context:
-        Pregrader.grade(context, answers)
+        Pregrader.grade(context, None)
     else:
+        answers = sandboxio.get_answers()
         # standar grader 
         Grader.grade(context, answers)
 
