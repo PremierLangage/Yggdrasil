@@ -24,26 +24,27 @@ class Grader:
     """Grader for Java exercises."""
     
     
-    def __init__(self, context, answers):
-        self.context = context
-        self.answers = answers
-        
-        try:
-            key = self.context["editor"]["id"]
-        except KeyError:
-            print("'editor.id' was not found in the context", file=sys.stderr)
-            sys.exit(1)
-        
-        try:
-            self.code = self.answers[key]
-        except KeyError:
-            print(
-                "answer corresponding to 'editor.id' (currently '" + key + "') was not found.<br/>"
-                + "This is probably that none of your <input></input> in 'form' have "
-                + "'form_'" + key + "' as id.",
-                file=sys.stderr)
-            sys.exit(1)
-    
+    def __init__(self, context, answers, mode=None):
+        if mode==None:
+            self.context = context
+            
+            try:
+                key = self.context["editor"]["id"]
+            except KeyError:
+                print("'editor.id' was not found in the context", file=sys.stderr)
+                sys.exit(1)
+            
+            try:
+                self.code = answers[key]
+            except KeyError:
+                print(
+                    "answer corresponding to 'editor.id' (currently '" + key + "') was not found.<br/>"
+                    + "This is probably that none of your <input></input> in 'form' have "
+                    + "'form_'" + key + "' as id.",
+                    file=sys.stderr)
+                sys.exit(1)
+        else:
+            self.code = answers    
     
     def taboo(self):
         """Returns the list the words in the iterable 'taboo' (if it exists in the context)
