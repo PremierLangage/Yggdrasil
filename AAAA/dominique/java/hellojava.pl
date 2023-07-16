@@ -1,7 +1,7 @@
 
 extends= /template/java.pl
 
-title= Sorties
+title= Causer à l'utilisateur 
 
 text==
 
