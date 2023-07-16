@@ -309,10 +309,9 @@ class PreGrader(Grader):
 if __name__ == "__main__":
     import sys
     if len(sys.argv) < 3:
-    msg = ("Sandbox did not call builder properly:\n"
-            +"Usage: python3 builder.py [input_json] [output_json]")
-    print(msg, file=sys.stderr)
-    sys.exit(1)
+        msg = "Sandbox did not call builder properly:\nUsage: python3 builder.py [input_json] [output_json]"
+        print(msg, file=sys.stderr)
+        sys.exit(1)
     context = sandboxio.get_context()
     if len(sys.argv) < 5 :
         PreGrader.grade(context, context['code'], sys.argv[2])
