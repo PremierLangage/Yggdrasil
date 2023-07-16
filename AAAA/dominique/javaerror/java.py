@@ -288,7 +288,9 @@ class PreGrader(Grader):
     @classmethod
     def grade(cls,context):
         # this grader is used in a before 
-
+         print("Both of the keys 'pregrader' and 'junit' are missing. At least the two must be "
+              "present for the PreGrader .", file=sys.stderr)
+        sys.exit(1)
 if __name__ == "__main__":
 
     context = sandboxio.get_context()
