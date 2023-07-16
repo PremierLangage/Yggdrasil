@@ -1,7 +1,7 @@
 
 form =@ /form/text_editor.html
-@ /grader/java.py [grader.py]
-@ /builder/before.py [builder.py]
+@ graderjavaerror.py [grader.py]
+@ builderjavaerror.py [builder.py]
 @ /utils/sandboxio.py
 
 before==
@@ -14,6 +14,7 @@ editor["code"] = (
 ) % classname
 
 
+
 ==
 
 editor.language = java
@@ -21,4 +22,4 @@ editor.id = answer
 
 classname = Main
 
-
+stdout
