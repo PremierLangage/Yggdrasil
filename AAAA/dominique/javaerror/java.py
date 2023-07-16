@@ -295,7 +295,7 @@ if __name__ == "__main__":
 
     context = sandboxio.get_context()
     if "pregrade" in context:
-        Pregrader.grade(context)
+        PreGrader.grade(context)
     else:
         answers = sandboxio.get_answers()
         # standar grader 
