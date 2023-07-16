@@ -15,6 +15,7 @@ publique Class Main{
 
 }
 """
+editor['code']=code
 
 ==
 
