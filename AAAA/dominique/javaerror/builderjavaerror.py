@@ -17,14 +17,22 @@ if __name__ == "__main__":
                 +"Usage: python3 builder.py [input_json] [output_json]")
         print(msg, file=sys.stderr)
         sys.exit(1)
-    context = sandboxio.get_context()
+    dic = sandboxio.get_context()
 
+    if 'before' in dic:
+        glob = {}
+        #dic['StopBeforeExec'] = StopBeforeExec
+        #exec(add_try_clause(dic['before'], StopBeforeExec), dic)
+        exec(dic['before'],dic)
+        exec("", glob)
+        for key in glob:
+            if key in dic and dic[key] == glob[key]:
+                del dic[key]
+    else:
+        print(("Builder 'before' need a script declared in the key 'before'. "
+               + "See documentation related to this builder."),
+              file = sys.stderr)
+        sys.exit(1)
 
-
-
-
-
-
-    
-    java.PreGrader.grade(context, context['code'])
+    java.PreGrader.grade(dic, dic['code'])
 
