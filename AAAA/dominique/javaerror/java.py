@@ -299,7 +299,8 @@ class PreGrader(Grader):
         if ret[0]:  # Student compilation failed:
             feedback = "Compilation error:<br/><br/><pre><code>" + ret[2] + "</code></pre>"
             sandboxio.output(0, feedback)
-
+        else:
+            sandboxio.output(100," Bravo le code compile maintenant.")
 
 
 
