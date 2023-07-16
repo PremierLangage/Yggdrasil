@@ -297,11 +297,9 @@ class PreGrader(Grader):
         
         ret = grader.compile()
         if ret[0]:  # Student compilation failed:
-            context['text'] += "Compilation error:<br/><br/><pre><code>" + ret[2] + "</code></pre>"
+            return "Compilation error:<br/><br/><pre><code>" + ret[2] + "</code></pre>"
         else:
-            context['text'] += "Bizare ce code n'a pas d'erreur de syntaxe !"
-        with open(output_json, "w+") as f:
-            f.write(jsonpickle.encode(context, unpicklable=False))
+            return "Bizare ce code n'a pas d'erreur de syntaxe !"
 
 
 
