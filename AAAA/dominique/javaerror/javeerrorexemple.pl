@@ -1,6 +1,9 @@
 
 extends= javaerror.pl 
 
+@ java.py [builder.py]
+
+
 title = this is an exemple 
 text=
 
