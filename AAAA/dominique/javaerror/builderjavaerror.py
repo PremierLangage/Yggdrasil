@@ -34,5 +34,9 @@ if __name__ == "__main__":
               file = sys.stderr)
         sys.exit(1)
 
-    java.PreGrader.grade(dic, dic['code'])
+    dic['text'] += java.PreGrader.grade(dic, dic['code'])
 
+    with open(output_json, "w+") as f:
+        f.write(jsonpickle.encode(dic, unpicklable=False))
+    
+    sys.exit(0)
