@@ -44,7 +44,7 @@ class PointTest {
     @DisplayName("%s")
     void testCarre() {
         var p = new %s();
-        Assertions.assertEquals(p.%s(6), 36);
+        Assertions.assertEquals(36,p.%s(6));
     }
 
 }
