@@ -28,7 +28,7 @@ Il faut corriger le code dans l'editeur pour que le test puisse avoir lieux.
 Voici ce qu'a répondu la compilation.
 """
 
-editor['code']=code
+editor["code"]=code
 
 
 ==
