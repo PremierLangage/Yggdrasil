@@ -24,29 +24,30 @@ public class %s {
         
     }
 }""" % (classname,name)
-==
 
-junit==
+
+
+
+
+
+
+junit= """
+
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Assertions;
 
-@DisplayName("Point Test")
+@DisplayName("%s" " Test")
 class PointTest {
     
     @Test
-    @DisplayName("Get X")
-    void testGetX() {
-        var p = new Point(2, 3);
-        Assertions.assertEquals(p.getX(), 2);
+    @DisplayName("%s")
+    void testCarre() {
+        var p = new %s();
+        Assertions.assertEquals(p.%s(6), 36);
     }
 
-    @Test
-    @DisplayName("Get Y")
-    void testGetY() {
-        var p = new Point(2, 3);
-        Assertions.assertEquals(p.getY(), 3);
-    }
 }
+""" % (classname,name,classname,name)
 ==
 
 
