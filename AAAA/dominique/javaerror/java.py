@@ -27,7 +27,6 @@ class Grader:
     def __init__(self, context, answers, mode=None):
         if mode==None:
             self.context = context
-            
             try:
                 key = self.context["editor"]["id"]
             except KeyError:
@@ -44,7 +43,7 @@ class Grader:
                     file=sys.stderr)
                 sys.exit(1)
         else:
-            self.code = answers    
+            self.code = mode    
     
     def taboo(self):
         """Returns the list the words in the iterable 'taboo' (if it exists in the context)
