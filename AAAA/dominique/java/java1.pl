@@ -23,7 +23,7 @@ public class %s {
         }
         
     }
-}""" % classname
+}""" % classname,name
 ==
 
 junit==
