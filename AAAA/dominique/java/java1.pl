@@ -37,7 +37,7 @@ junit= """
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Assertions;
 
-@DisplayName("%s" " Test")
+@DisplayName("%s Test")
 class PointTest {
     
     @Test
