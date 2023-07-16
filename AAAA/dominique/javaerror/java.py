@@ -298,17 +298,22 @@ class PreGrader(Grader):
         ret = grader.compile()
         if ret[0]:  # Student compilation failed:
             feedback = "Compilation error:<br/><br/><pre><code>" + ret[2] + "</code></pre>"
-            sandboxio.output(0, feedback)
-        else:
-            sandboxio.output(100," Bravo le code compile maintenant.")
+        with open(output_json, "w+") as f:
+            f.write(jsonpickle.encode(dic, unpicklable=False))
+
 
 
 
 if __name__ == "__main__":
     import sys
+    if len(sys.argv) < 3:
+    msg = ("Sandbox did not call builder properly:\n"
+            +"Usage: python3 builder.py [input_json] [output_json]")
+    print(msg, file=sys.stderr)
+    sys.exit(1)
     context = sandboxio.get_context()
     if len(sys.argv) < 5 :
-        PreGrader.grade(context, context['code'])
+        PreGrader.grade(context, context['code'], sys.argv[2])
     else:
         answers = sandboxio.get_answers()
         # standar grader 
