@@ -6,7 +6,7 @@ extends= javaerror.pl
 
 title = this is an exemple 
 text=
-pregrade=
+pregrader=
 before==
 
 text = """
