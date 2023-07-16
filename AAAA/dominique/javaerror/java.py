@@ -307,7 +307,7 @@ class PreGrader(Grader):
 if __name__ == "__main__":
     import sys
     context = sandboxio.get_context()
-    if len(sys.argv):
+    if len(sys.argv) < 5 :
         PreGrader.grade(context, context['code'])
     else:
         answers = sandboxio.get_answers()
