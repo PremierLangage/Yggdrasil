@@ -1,7 +1,7 @@
 
 extends= javaerror.pl 
 
-@ java.py [builder.py]
+@ builderjavaerror.py [builder.py]
 
 
 title = this is an exemple 
