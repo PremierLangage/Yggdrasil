@@ -7,6 +7,7 @@ extends= javaerror.pl
 title = this is an exemple 
 text=
 pregrader=
+code=
 before==
 
 text = """
@@ -25,4 +26,6 @@ editor['code']=code
 ==
 
 
-
+stdout_tests==
+"No argument" Bravo
+==
