@@ -2,6 +2,7 @@
 extends= javaerror.pl 
 
 title = this is an exemple 
+text=
 
 before==
 
