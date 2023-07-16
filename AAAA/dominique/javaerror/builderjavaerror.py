@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
     dic['text'] += java.PreGrader.grade(dic, dic['code'])
 
-    with open(output_json, "w+") as f:
+    with open(sys.argv[2], "w+") as f:
         f.write(jsonpickle.encode(dic, unpicklable=False))
     
     sys.exit(0)
