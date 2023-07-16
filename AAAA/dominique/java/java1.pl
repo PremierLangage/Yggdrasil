@@ -1,5 +1,5 @@
 
-extends = ~/template/java.pl
+extends = /template/java.pl
 
 title = Première méthode
 text ==
