@@ -305,10 +305,10 @@ class PreGrader(Grader):
 
 
 if __name__ == "__main__":
-
+    import sys
     context = sandboxio.get_context()
-    if "pregrade" in context:
-        PreGrader.grade(context)
+    if len(sys.argv):
+        PreGrader.grade(context, context['code'])
     else:
         answers = sandboxio.get_answers()
         # standar grader 
