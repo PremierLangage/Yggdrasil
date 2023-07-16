@@ -15,12 +15,12 @@ classname = random.choice(['Maclass','Main','Principale','Platon','PL'])
 name = random.choice(['maMethode','m','square','fois','prise'])
 
 
-editor["code"] = f"""
-public class {classname} {
+editor["code"] = """
+public class %s {
     public static void main(String[] args) {
         
     }
-}"""
+}""" % classname
 ==
 
 junit==
