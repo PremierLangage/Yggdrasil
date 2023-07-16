@@ -15,7 +15,6 @@ classname = random.choice(['Maclass','Main','Principale','Platon','PL'])
 name = random.choice(['maMethode','m','square','fois','prise'])
 
 
-before=
 editor["code"] = f"""
 public class {classname} {
     public static void main(String[] args) {
