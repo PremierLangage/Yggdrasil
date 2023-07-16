@@ -11,7 +11,7 @@ Ecrire dans la classe **{{classname}}** une méthode **{{name}}** qui prend un *
 
 before==
 import random
-classname = random.choice(['Maclass','Main','Principale','Platon','PL'])
+classname = random.choice(['Maclass','Exercice1','Principale','Platon','PL'])
 name = random.choice(['maMethode','m','square','fois','prise'])
 
 
