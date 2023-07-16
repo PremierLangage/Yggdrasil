@@ -22,4 +22,4 @@ editor.id = answer
 
 classname = Main
 
-stdout
+
