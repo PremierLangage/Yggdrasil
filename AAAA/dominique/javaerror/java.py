@@ -286,14 +286,14 @@ class Grader:
 
 class PreGrader(Grader):
     @classmethod
-    def grade(cls,context,answer):
+    def grade(cls,context):
         # this grader is used in a before 
 
 if __name__ == "__main__":
 
     context = sandboxio.get_context()
     if "pregrade" in context:
-        Pregrader.grade(context, None)
+        Pregrader.grade(context)
     else:
         answers = sandboxio.get_answers()
         # standar grader 
