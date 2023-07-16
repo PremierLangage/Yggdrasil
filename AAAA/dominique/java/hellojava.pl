@@ -16,3 +16,8 @@ Pour cela on utilise la fonction **println** de la class **java.lang.System**.
 
 ==
 
+classname = HelloWorld
+stdout_tests==
+"No argument" Hello
+James "Hello James" Hello
+==
