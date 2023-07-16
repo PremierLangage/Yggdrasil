@@ -28,7 +28,7 @@ classname = Bienvenue
 # Name expectedresultonstdout args
 stdout_tests==
 "No argument" Hello
-James Hello
+James Hello Bande de moules
 ==
 
 
