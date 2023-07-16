@@ -18,6 +18,9 @@ name = random.choice(['maMethode','m','square','fois','prise'])
 editor["code"] = """
 public class %s {
     public static void main(String[] args) {
+        int %s (int x){
+
+        }
         
     }
 }""" % classname
