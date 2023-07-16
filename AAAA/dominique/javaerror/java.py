@@ -24,26 +24,27 @@ class Grader:
     """Grader for Java exercises."""
     
     
-    def __init__(self, context, answers, mode=None):
-        if mode==None:
-            self.context = context
-            try:
-                key = self.context["editor"]["id"]
-            except KeyError:
-                print("'editor.id' was not found in the context", file=sys.stderr)
-                sys.exit(1)
-            
-            try:
-                self.code = answers[key]
-            except KeyError:
-                print(
-                    "answer corresponding to 'editor.id' (currently '" + key + "') was not found.<br/>"
-                    + "This is probably that none of your <input></input> in 'form' have "
-                    + "'form_'" + key + "' as id.",
-                    file=sys.stderr)
-                sys.exit(1)
-        else:
-            self.code = mode    
+    def __init__(self, context, answers):
+
+        self.context = context
+        
+        
+        try:
+            key = self.context["editor"]["id"]
+        except KeyError:
+            print("'editor.id' was not found in the context", file=sys.stderr)
+            sys.exit(1)
+        
+        try:
+            self.code = answers[key]
+        except KeyError:
+            print(
+                "answer corresponding to 'editor.id' (currently '" + key + "') was not found.<br/>"
+                + "This is probably that none of your <input></input> in 'form' have "
+                + "'form_'" + key + "' as id.",
+                file=sys.stderr)
+            sys.exit(1)
+    
     
     def taboo(self):
         """Returns the list the words in the iterable 'taboo' (if it exists in the context)
@@ -285,21 +286,27 @@ class Grader:
         sys.exit(1)
 
 class PreGrader(Grader):
+    def __init__(self, context, code):
+        self.context = context
+        self.code = code 
     @classmethod
-    def grade(cls,context):
-        # this grader is used in a before 
-        print("Both of the keys 'pregrader' and 'junit' are missing. At least the two must be "
-              "present for the PreGrader .", file=sys.stderr)
-        sys.exit(1)
+    def grade(cls, context, answers):
+        """Grade the answers according to context, exiting the script through sandboxio.output()."""
+        grader = cls(context, answers)
+        
+        ret = grader.compile()
+        if ret[0]:  # Student compilation failed:
+            feedback = "Compilation error:<br/><br/><pre><code>" + ret[2] + "</code></pre>"
+            sandboxio.output(0, feedback)
 
 
 
 
 if __name__ == "__main__":
-    import sys
+
     context = sandboxio.get_context()
-    if len(sys.argv) < 5:# l'appel du grader à 5 parametres
-        PreGrader.grade(context,context['code'],mode='before')
+    if "pregrade" in context:
+        PreGrader.grade(context)
     else:
         answers = sandboxio.get_answers()
         # standar grader 
