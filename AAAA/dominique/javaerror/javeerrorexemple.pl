@@ -27,6 +27,7 @@ public class Kio {
     int Dammm(int x){
     return x*x;
     }
+}
 ==
 
 
