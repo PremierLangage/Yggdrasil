@@ -12,7 +12,7 @@ stdout_tests==
 
 
 
-code==
+code12==
 publique Class Main{
 System.out.println("Bravo!");
 }
