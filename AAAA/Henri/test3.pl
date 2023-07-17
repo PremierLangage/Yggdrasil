@@ -10,6 +10,7 @@ group2 =: CheckboxGroup
 before==#|py|
 import random
 
+group1.horizontal = true
 group1.items = []
 for i in range(4):
     group1.items.append({
@@ -17,6 +18,7 @@ for i in range(4):
         "content": str(i)
     })
 
+group2.horizontal = true
 group2.items = []
 for i in range(4):
     group2.items.append({
@@ -27,10 +29,11 @@ for i in range(4):
 
 title = CYK
 
-text==
-Pair ?
+text==#|markdown|
+**Pair ?**
 {{ group1|component }}
-Pair aussi ?
+
+** Pair aussi ? **
 {{ group2|component }}
 ==
 
