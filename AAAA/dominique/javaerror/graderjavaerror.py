@@ -14,3 +14,4 @@ if __name__ == "__main__":
     java.Grader.grade(context, answers)
 
     sandboxio.save_context(context)
+    sys.exit(0)
