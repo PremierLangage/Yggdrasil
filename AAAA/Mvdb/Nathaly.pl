@@ -16,7 +16,7 @@ choices==
 %-100% Nathaly est vil.
 %20% On ne peut pas déduire le type de Nathaly.
 %20% Nathaly est métis.
-%-100% Nathaly n'est pas métis.
+%-100% Le père et la mère de Nathaly sont du même type.
 %-100% On ne peut pas décider si Nathaly est métis.
 ==
 
