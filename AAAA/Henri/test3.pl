@@ -29,10 +29,10 @@ title = CYK
 
 text==
 Pair ?
+{{ group1|component }}
 ==
 
 form==
-{{ group1|component }}
 
 {{ group2|component }}
 ==
