@@ -12,6 +12,12 @@ choices==
 %20% Nathaly est un homme.
 %-100% Nathaly est une femme.
 %-100% On ne peut pas déduire le sexe de Nathaly.
+%-100% Nathaly est franc.
+%-100% Nathaly est vil.
+%20% On ne peut pas déduire le type de Nathaly.
+%20% Nathaly est métis.
+%-100% Nathaly n'est pas métis.
+%-100% On ne peut pas décider si Nathaly est métis.
 ==
 
 doc == 
