@@ -260,17 +260,17 @@ class Grader:
         ret = grader.compile()
         if ret[0]:  # Student compilation failed:
             feedback = "Compilation error:<br/><br/><pre><code>" + ret[2] + "</code></pre>"
-            sandboxio.output(0, feedback)
+            sandboxio.output(0, feedback, context)
             return
         taboos = grader.taboo()
         if taboos:
             feedback = "These words are disallowed an cannot be used: " + str(taboos)
-            sandboxio.output(-1, feedback)
+            sandboxio.output(-1, feedback, context)
             return
         tests = grader.run_tests()
         if tests:
             grade, feedback = cls.parse_tests_result(tests)
-            sandboxio.output(grade, feedback)
+            sandboxio.output(grade, feedback, context)
             return
         junit = grader.run_junit()
         if junit:
@@ -279,7 +279,7 @@ class Grader:
                 "<pre><code>%s</code></pre>"
                 % feedback
             )
-            sandboxio.output(grade, feedback)
+            sandboxio.output(grade, feedback, context)
             return
         print("Both of the keys 'stdout_tests' and 'junit' are missing. At least one must be "
               "present for the Grader to be able to grade the student's answer.", file=sys.stderr)
