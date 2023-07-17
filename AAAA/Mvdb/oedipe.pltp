@@ -10,17 +10,21 @@ On s'intéresse à une espèce extraterrestre qui fonctionne selon les règles s
 - On ne peut pas distinguer les hommes des femmes.
 - Tous les individus ont un père et une mère.
 
-Les extraterrestes sont de deux types possibles : francs ou vils.
+Les extraterrestes sont de deux types possibles : *francs* ou *vils*.
 
 - Les francs disent toujours la vérité : toutes leurs affirmations sont vraies.
+
     Par exemple, si XG-32 est franc et dit "Toto est un chien bleu", alors on peut déduire que Toto est un chien et que Toto est bleu.
 
 - Les vils mentent toujours : toutes leurs affirmations sont fausses.
+
     Par exemple, si XG-32 est vil et dit "Toto est un chien bleu", on peut déduire que Toto n'est pas un chien bleu. 
     C'est-à-dire que soit Toto n'est pas un chien, soit Toto n'est pas bleu, soit Toto n'est ni un chien ni bleu.
 
 - Les enfants de parents francs sont francs et les enfants de parents vils sont vils.
-- En cas de couples mixtes, les enfants héritent du caractère franc ou vil de leur parent *de sexe opposé*.
+
+- En cas de couples mixtes, les enfants héritent du caractère franc ou vil de leur parent **de sexe opposé**.
+
     Par exemple, un garçon issu d'une mère franche et d'un père vil sera franc, c'est à dire du même type que sa mère.
 
 Finalement, les enfants de couples mixtes sont dits "métis".
