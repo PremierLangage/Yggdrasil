@@ -11,9 +11,6 @@ group2 =: CheckboxGroup
 before==#|py|
 import random
 
-words = good + bad
-random.shuffle(words)
-
 group1.items = []
 for i in range(4):
     group1.items.append({
@@ -45,6 +42,20 @@ evaluator==#|py|
 right = 0
 total = 0
 for item in group1.items:
+    total += 1
+    checked = item['checked']
+    content = item['content']
+    if int(content) % 2 == 0:
+        item['css'] = 'success-border animated pulse infinite'
+        if checked:
+            right += 1
+            item['css'] = 'success-border'
+    elif checked:
+        item['css'] = 'error-border'
+    else:
+        right += 1
+
+for item in group2.items:
     total += 1
     checked = item['checked']
     content = item['content']
