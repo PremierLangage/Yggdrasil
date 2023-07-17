@@ -35,7 +35,9 @@ before==
 
 basetext = """
 Il faut corriger le code dans l'editeur pour que le test puisse avoir lieux.
-Voici ce qu'a répondu la compilation.
+Voici ce qu'a répondu la compilation.   
+
+
 """
 text = basetext
 
