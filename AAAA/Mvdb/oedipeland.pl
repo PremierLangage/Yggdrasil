@@ -17,16 +17,6 @@ items==
 Chocolat
 Pistache
 ==
-
-text ==
-Parfum de glace detesté?
-==
-
-items==
-Vanille
-+ Chocolat
-Pistache
-==
 ############################################
 
 group =: RadioGroup
