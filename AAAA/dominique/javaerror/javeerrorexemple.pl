@@ -7,7 +7,7 @@ text=
 
 
 stdout_tests==
-"No argument" Bravo!
+"Test de compilationt" Bravo!
 ==
 
 
