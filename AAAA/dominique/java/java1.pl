@@ -4,8 +4,8 @@ extends = /template/java.pl
 title = Première méthode
 text ==
 
-Ecrire dans la classe **{{classname}}** une méthode **{{name}}** qui prend un *int* en paramêtre et retourne sont carré.
- 
+Ecrire dans la classe **{{classname}}** une méthode **{{name}}** qui prend un *int* en paramêtre et retourne le carré de son paramètre.
+
 
 == 
 
@@ -25,12 +25,6 @@ public class %s {
     return x*x;
     }
 }""" % (classname,name)
-
-
-
-
-
-
 
 junit= """
 
