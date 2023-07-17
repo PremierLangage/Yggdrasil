@@ -18,6 +18,17 @@ System.out.println("Bravo!");
 }
 ==
 
+code==
+public class %s {
+    public static void main(String[] args) {
+        
+        
+    }
+    int %s(int x){
+    return x*x;
+    }
+==
+
 
 before==
 
@@ -31,6 +42,5 @@ editor["code"]=code
 
 
 ==
-
 
 
