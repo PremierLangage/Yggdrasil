@@ -12,6 +12,4 @@ if __name__ == "__main__":
     context['trys']=int(context['trys'])+1
     context['text'] = context['basetext']+"trys:"+str(context['trys'])
     java.Grader.grade(context, answers)
-
-    sandboxio.save_context(context)
     sys.exit(0)
