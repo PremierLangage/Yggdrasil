@@ -1,5 +1,4 @@
 @ /utils/sandboxio.py
-@ cyk.py
 
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
