@@ -30,11 +30,12 @@ title = CYK
 text==
 Pair ?
 {{ group1|component }}
+Pair aussi ?
+{{ group2|component }}
 ==
 
 form==
 
-{{ group2|component }}
 ==
 
 evaluator==#|py|
