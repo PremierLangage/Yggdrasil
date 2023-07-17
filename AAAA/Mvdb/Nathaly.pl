@@ -5,17 +5,13 @@ Multiple Choice
 ==
 
 text==
-Parmi ces ingrédients, choisissez tout ceux qui permettent de réaliser des crêpes au chocolat.
+Nathaly affirme "Mon père est vil." Que peut-on déduire ?
 ==
 
 choices==
-%-100.0%Jambon
-%25.0%Oeuf
-%-100.0%Levure
-%25.0%Farine
-%-100.0%Viande
-%25.0%Chocolat
-%25.0%Sucre
+%20% Nathaly est un homme.
+%-100% Nathaly est une femme.
+%-100% On ne peut pas déduire le sexe de Nathaly.
 ==
 
 doc == 
