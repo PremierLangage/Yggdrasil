@@ -5,6 +5,8 @@ form =@ /form/text_editor.html
 @ /utils/sandboxio.py
 @ java.py
 
+trys=0
+
 before==
 editor["code"] = (
     "public class %s {\n"
