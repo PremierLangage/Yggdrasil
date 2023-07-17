@@ -13,3 +13,5 @@ if __name__ == "__main__":
     context['text'] = context['basetext']
     java.Grader.grade(context, answers)
 
+    sandboxio.save_context(context)
+    
