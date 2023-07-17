@@ -12,13 +12,13 @@ stdout_tests==
 
 
 
-code12==
+code==
 publique Class Main{
 System.out.println("Bravo!");
 }
 ==
 
-code==
+codeXX==
 public class Main {
     public static void main(String[] args) {
         
