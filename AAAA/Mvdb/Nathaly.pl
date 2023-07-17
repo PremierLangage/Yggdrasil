@@ -1,7 +1,7 @@
 extends = /gift/templates/qmultichoice.pl
 
 title==
-Multiple Choice 
+Nathaly
 ==
 
 text==
