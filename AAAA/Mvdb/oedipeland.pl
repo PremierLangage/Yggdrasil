@@ -19,7 +19,7 @@ Pistache
 ==
 ############################################
 
-group =: RadioGroup
+group =: CheckboxGroup
 
 before==#|python|
 vos_choix = ""
