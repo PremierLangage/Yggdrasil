@@ -10,7 +10,7 @@ group2 =: CheckboxGroup
 before==#|py|
 import random
 
-group1.horizontal = true
+group1.horizontal = True
 group1.items = []
 for i in range(4):
     group1.items.append({
@@ -18,7 +18,7 @@ for i in range(4):
         "content": str(i)
     })
 
-group2.horizontal = true
+group2.horizontal = True
 group2.items = []
 for i in range(4):
     group2.items.append({
