@@ -1,2 +1,2 @@
 
-title == Oedipe-land! 
+title = Oedipe-land! 
