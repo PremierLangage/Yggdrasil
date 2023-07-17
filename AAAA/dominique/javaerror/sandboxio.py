@@ -10,6 +10,8 @@ def get_answers():
     return answers
 
 
+
+singular_context= None
 def get_context():
     """Return the dictionnary containing the context of the exercise."""
     with open(sys.argv[1], "r") as f:
