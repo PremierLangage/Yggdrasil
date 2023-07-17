@@ -13,11 +13,20 @@ Parfum de glace favori?
 ==
 
 items==
-Vanille
++ Vanille
 Chocolat
 Pistache
 ==
 
+text ==
+Parfum de glace detesté?
+==
+
+items==
+Vanille
++ Chocolat
+Pistache
+==
 ############################################
 
 group =: RadioGroup
