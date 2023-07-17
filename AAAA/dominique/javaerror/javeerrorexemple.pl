@@ -24,7 +24,7 @@ public class Kio {
         
         
     }
-    int %s(int x){
+    int Dammm(int x){
     return x*x;
     }
 ==
