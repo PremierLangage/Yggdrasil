@@ -19,7 +19,7 @@ System.out.println("Bravo!");
 ==
 
 code==
-public class %s {
+public class Kio {
     public static void main(String[] args) {
         
         
