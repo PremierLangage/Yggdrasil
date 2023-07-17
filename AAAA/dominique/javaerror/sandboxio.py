@@ -41,9 +41,9 @@ def output(grade, feedback, context=None):
     with open(sys.argv[4], "w+") as f:
         print(str(feedback), file=f)
     
-    print(int(grade))
+    #print(int(grade))
     
-    sys.exit(0)
+    #sys.exit(0)
 
 def buildsave(filename,dic):
     with open(filename, "w+") as f:
