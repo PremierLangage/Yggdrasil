@@ -12,13 +12,15 @@ import jsonpickle
 
 if __name__ == "__main__":
     import sys
-
+    if len(sys.argv) < 3:
+        msg = ("Sandbox did not call builder properly:\n"
+                +"Usage: python3 builder.py [input_json] [output_json]")
+        print(msg, file=sys.stderr)
+        sys.exit(1)
     dic = sandboxio.get_context()
 
     if 'before' in dic:
         glob = {}
-        #dic['StopBeforeExec'] = StopBeforeExec
-        #exec(add_try_clause(dic['before'], StopBeforeExec), dic)
         exec(dic['before'],dic)
         exec("", glob)
         for key in glob:
