@@ -31,13 +31,20 @@ Deux parties:
  une partie Tests :
     -> les tests ont 
         -> un numéro 
-        -> un affichage [ soit un texte, soit une ligne de code] 
+        -> un affichage [ soit un texte, soit la ligne de code python ] 
         -> un etat [success, failure, error ]
 
 
 Comment utiliser feedback2 
 
-    pour chaque test 
+    pour chaque test on vas appeller une des méthodes 
+    addTest* 
+    Avec (le nom du test, ce qui est attendu , ce que l'on obtenu). 
+
+Une fois les test finis ont récupère soit du HTML avec render 
+soit du json pour utiliser avec angular 
+
+
 """
 
 # class CompositeFeedback():
@@ -124,6 +131,7 @@ class FeedBack():
         x= template.render(feedback=self)
         return  x 
 
+    def toJson(self):
 
 
 
