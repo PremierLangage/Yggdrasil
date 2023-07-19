@@ -76,7 +76,7 @@ if __name__ == "__main__":
     numgroup=0
     if "pltest" in dic:
         pltest = dic['pltest']
-        lfb = Feedback()
+        lfb = bob.Feedback()
         tester = PlRunner(student,pltest, fb=lfb)
         testname = dic['testname'] if 'testname' in dic else "Groupe de test un"
         a, b = tester.runpltest(testname, numgroup)
