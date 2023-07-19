@@ -100,6 +100,7 @@ if __name__ == "__main__":
         a, b = testi.runpltest(testname,numgroup)
         i=i+1
         numgroup = numgroup + 1
+        b += "<div>"+lfb.toJson()+"</div>"
 
     outstr +=  b
     if "feedback" in dic: # FIXME feedback devrai être un dictionnaire.
