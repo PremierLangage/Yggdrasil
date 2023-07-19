@@ -8,7 +8,7 @@
 import sys, jsonpickle,re
 from sandboxio import output, get_context, get_answers
 from pltest_doc import PlRunner
-from bob import Feedback 
+import bob 
 
 class StopBeforeExec(Exception):
     pass
