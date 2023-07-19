@@ -93,7 +93,8 @@ if __name__ == "__main__":
     i=1
     while "pltest"+str(i) in dic and (a or stop ) :
         outstr += b
-        testi = PlRunner(student,dic["pltest"+str(i)])
+        lfb = FeedBack()
+        testi = PlRunner(student,dic["pltest"+str(i)],fb=lfb)
         tname='testname'+str(i)
         testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
         a, b = testi.runpltest(testname,numgroup)
