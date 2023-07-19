@@ -80,7 +80,7 @@ if __name__ == "__main__":
         tester = PlRunner(student,pltest, fb=lfb)
         testname = dic['testname'] if 'testname' in dic else "Groupe de test un"
         a, b = tester.runpltest(testname, numgroup)
-        b += "<div>"+str(lfb.toJson())+"<div>"
+        b += "<div>"+lfb.toJson()+"</div>"
     elif "pltest0" in dic:
         pltest = dic['pltest0']
         tester = PlRunner(student,pltest)
