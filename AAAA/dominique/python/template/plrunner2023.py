@@ -18,20 +18,6 @@ def subnlbybr(str):
        return "&nbsp;".join(str.split(" "))
     return None
 
-#from runsql import buildtest
-
-
-
-
-
-#class SQLPlRunner(PlRunner):
-#    def __init__(self,student,soluce,fb = None):
-#        super().__init__()
-#        self.student= "from runsql import * \n" 
-#        self.pltest= buildtest(soluce,studentcode)
-
-
-
 class PlRunner(doctest.DocTestRunner):
     def __init__(self,studentcode,pltest,fb = None):
         self.optionflags= doctest.NORMALIZE_WHITESPACE
