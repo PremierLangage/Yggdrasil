@@ -82,7 +82,7 @@ if __name__ == "__main__":
 
     elif "pltest0" in dic:
         pltest = dic['pltest0']
-        tester = PlRunner(student,pltest, fb=lbf)
+        tester = PlRunner(student,pltest, fb=lfb)
         testname = dic['testname0'] if 'testname0' in dic else "Groupe de test 0"
         a, b = tester.runpltest(testname, numgroup)
     else:
