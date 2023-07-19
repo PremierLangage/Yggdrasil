@@ -4,7 +4,7 @@
 
 
 
-@ feedback2023.py [bob.py]
+
 @ feedback2023.py [feedback2.py] # utilisé par pltest_doc 
 @ plrunner2023.py [pltest_doc.py] # utilisé par grader 
 @ pltest_grader2023.py [grader.py]
