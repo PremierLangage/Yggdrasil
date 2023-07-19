@@ -132,7 +132,16 @@ class FeedBack():
         return  x 
 
     def toJson(self):
-        pass
-        
-
+        r = {"name":self.name, # Nom géénral du test pas très utile défault =""
+            "gok": self.globalok, # Si l'ensemble des test est OK permet de faire un affichage feux d'artifices 
+            "globalfeedback": self.globalfeedback, # le feu d'artifice 
+            "tests" : self.tests # les tests 
+        } 
+        return json.dumps(r) 
+        # pour info chaque tests contient 
+        # (TYPE, numerodutest, testname, got, want)
+        # TYPE: success, error, failure 
+        # if testname == "" utiliser le numero du test pour l'affichage 
+        # got ce que le test a recu de la part du code étudiant
+        # want ce qui était attendu 
 
