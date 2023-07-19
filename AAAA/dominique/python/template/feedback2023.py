@@ -137,7 +137,7 @@ class FeedBack():
             "globalfeedback": self.globalfeedback, # le feu d'artifice 
             "tests" : self.tests # les tests 
         } 
-        return json.dumps(r) 
+        return json.dumps(r)
         # pour info chaque tests contient 
         # (TYPE, numerodutest, testname, got, want)
         # TYPE: success, error, failure, syntax
