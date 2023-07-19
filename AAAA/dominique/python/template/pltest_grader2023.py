@@ -8,7 +8,7 @@
 import sys, jsonpickle,re
 from sandboxio import output, get_context, get_answers
 from pltest_doc import PlRunner
-import bob 
+from feedback2 import FeedBack 
 
 class StopBeforeExec(Exception):
     pass
@@ -76,7 +76,7 @@ if __name__ == "__main__":
     numgroup=0
     if "pltest" in dic:
         pltest = dic['pltest']
-        lfb = bob.Feedback()
+        lfb = FeedBack()
         tester = PlRunner(student,pltest, fb=lfb)
         testname = dic['testname'] if 'testname' in dic else "Groupe de test un"
         a, b = tester.runpltest(testname, numgroup)
