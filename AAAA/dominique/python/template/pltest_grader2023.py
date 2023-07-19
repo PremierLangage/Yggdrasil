@@ -72,14 +72,6 @@ if __name__ == "__main__":
         stop=False
 
     outstr=""
-#    if "pltestbuilder" in dic:
-#        if "soluce" not in dic:
-#                print(" illegal use of pltestbuilder sql soluce is empty", file=sys.stderr)
-#                sys.exit(1)
-#        import pltestbuilder
-#        tester = SQLPlRunner(student,dic["soluce"])
-#        a, b = tester.runpltest(1)
-#    elif
 
     numgroup=0
     if "pltest" in dic:
