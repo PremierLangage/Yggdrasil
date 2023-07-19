@@ -72,22 +72,23 @@ if __name__ == "__main__":
         stop=False
 
     outstr=""
-
+    lfb = FeedBack()
     numgroup=0
     if "pltest" in dic:
         pltest = dic['pltest']
-        lfb = FeedBack()
         tester = PlRunner(student,pltest, fb=lfb)
         testname = dic['testname'] if 'testname' in dic else "Groupe de test un"
         a, b = tester.runpltest(testname, numgroup)
-        b += "<div>"+lfb.toJson()+"</div>"
+
     elif "pltest0" in dic:
         pltest = dic['pltest0']
-        tester = PlRunner(student,pltest)
+        tester = PlRunner(student,pltest, fb=lbf)
         testname = dic['testname0'] if 'testname0' in dic else "Groupe de test 0"
         a, b = tester.runpltest(testname, numgroup)
     else:
         a,b= True, ""
+
+    b += "<div>"+lfb.toJson()+"</div>"
     numgroup=1
     i=1
     while "pltest"+str(i) in dic and (a or stop ) :
