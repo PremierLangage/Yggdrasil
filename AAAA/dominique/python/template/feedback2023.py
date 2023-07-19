@@ -140,7 +140,7 @@ class FeedBack():
         return json.dumps(r) 
         # pour info chaque tests contient 
         # (TYPE, numerodutest, testname, got, want)
-        # TYPE: success, error, failure 
+        # TYPE: success, error, failure, syntax
         # if testname == "" utiliser le numero du test pour l'affichage 
         # got ce que le test a recu de la part du code étudiant
         # want ce qui était attendu 
