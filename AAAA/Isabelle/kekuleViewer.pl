@@ -35,7 +35,7 @@ ex: CCN
 
 #let generator = new Kekule.Calculator.ObStructure2DGenerator();
 var Kekulewindow.OpenBabel.enable(() => {
-  kekulewindow.getEditor().setChemObjData('{"format": "smi", "data": "C1CCCCC1"}');
+  kekule.getEditor().setChemObjData('{"format": "smi", "data": "C1CCCCC1"}');
 });
 
 extrajs==
