@@ -25,7 +25,7 @@ form ==
 #</script>
 <h2> SMILES </h2>
 <textarea rows="1" cols="50" id="smiles"  style="font-size: 12pt">
-exemple : CCN
+CCN
 </textarea>
 <div id="kekule" style="width:300px;height:300px"
 		 data-widget="Kekule.ChemWidget.Viewer2D" data-enable-toolbar="false"
@@ -37,7 +37,7 @@ extrajs==
 Kekule.Indigo.enable();
 function load_kekule() {
   chemViewer = new Kekule.ChemWidget.Viewer(document.getElementById('kekule'));
-chemViewer.setRenderType(Kekule.Render.RendererType.R3D);
+  chemViewer.setRenderType(Kekule.Render.RendererType.R3D);
 }
 function display_kekule(smi) {
   var mol = Kekule.IO.loadFormatData(smi, "smi");  
