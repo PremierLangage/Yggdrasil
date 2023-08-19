@@ -33,7 +33,7 @@ ex: CCN
 </div>
 ==
 
-let generator = new Kekule.Calculator.ObStructure2DGenerator();
+#let generator = new Kekule.Calculator.ObStructure2DGenerator();
 Kekule.OpenBabel.enable(() => {
   kekule.getEditor().setChemObjData('{"format": "smi", "data": "C1CCCCC1"}');
 });
