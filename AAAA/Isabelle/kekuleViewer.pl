@@ -25,8 +25,11 @@ form ==
 #</script>
 <h2> SMILES </h2>
 <textarea rows="1" cols="50" id="smiles"  style="font-size: 12pt">
-CCN
+ex: CCN
 </textarea>
+Kekule.OpenBabel.enable(() => {
+  composer.getEditor().setChemObjData('{"format": "smi", "data": "C1CCCCC1"}');
+});
 <div id="kekule" style="width:300px;height:300px"
 		 data-widget="Kekule.ChemWidget.Viewer2D" data-enable-toolbar="false"
 </div>
