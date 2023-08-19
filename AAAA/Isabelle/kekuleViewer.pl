@@ -28,14 +28,14 @@ form ==
 ex: CCN
 </textarea>
 
-<div id="kekule" style="width:300px;height:300px"
+<div id="kekulewindow" style="width:300px;height:300px"
 		 data-widget="Kekule.ChemWidget.Viewer2D" data-enable-toolbar="false"
 </div>
 ==
 
 #let generator = new Kekule.Calculator.ObStructure2DGenerator();
 Kekule.OpenBabel.enable(() => {
-  kekule.getEditor().setChemObjData('{"format": "smi", "data": "C1CCCCC1"}');
+  kekulewindow.getEditor().setChemObjData('{"format": "smi", "data": "C1CCCCC1"}');
 });
 
 extrajs==
