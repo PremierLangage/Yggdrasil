@@ -25,7 +25,7 @@ form ==
 #</script>
 <h2> SMILES </h2>
 <textarea rows="1" cols="50" id="smiles"  style="font-size: 12pt">
-exemple : CCN(c1cc(C)ccc1C)S(=O)(=O)c1cc(C(N)=O)n(C)c1
+exemple : CCN
 </textarea>
 <div id="kekule" style="width:300px;height:300px"
 		 data-widget="Kekule.ChemWidget.Viewer2D" data-enable-toolbar="false"
@@ -40,8 +40,13 @@ function load_kekule() {
   chemViewer.setRenderType(Kekule.Render.RendererType.R3D);
 }
 function display_kekule(smi) {
-  var mol = Kekule.IO.loadFormatData(smi, 'mol');  
-  chemViewer.setChemObj(mol);
+  var mol = Kekule.IO.loadFormatData(smi, "smi");  
+  let generator = new Kekule.Calculator.Obstructure2DGenerator();
+  generator.setSourceMol(mol);
+  generator.executeSync(function() {
+    let newMol = generator.getGeneratedMol();
+    generator.setChemObj(newMol);
+  }); 
 }
 function display() {
   var smi = document.getElementById("smiles").value;
