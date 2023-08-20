@@ -47,9 +47,10 @@ molecule.kekulize();  // turn it to classic Kekule form with single-double bonds
 // molecule.hucklize();  // a reversed operation, turn back into the aromatic bonds form
 var composer = Kekule.Widget.getWidgetById(composerWidgetId);
 composer.setChemObj(molecule);
+
 <div id="chemViewer" style="width:500px;height:400px" 
         data-widget="Kekule.ChemWidget.Viewer" 
-        data-chem-obj="url(#molecule)">
+        data-chem-obj="molecule">
 </div>
 
 function getSmile() {
