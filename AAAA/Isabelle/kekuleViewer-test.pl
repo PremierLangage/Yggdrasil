@@ -45,8 +45,8 @@ var context = painter.createContext(parentElem, dim.width, dim.height); // creat
 painter.draw(context, {'x': dim.width / 2, 'y': dim.height / 2});
 
 </script>
-
-
+<br>
+<h2> SUITE </h2>
 
 
 <div id="composer" style="width:500px;height:500px" data-widget="Kekule.Editor.Composer" 
