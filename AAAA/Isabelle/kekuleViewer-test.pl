@@ -31,10 +31,13 @@ CCN
 <div id="kekule" style="width:300px;height:300px"
 		 data-widget="Kekule.ChemWidget.Viewer2D" data-enable-toolbar="false"
 </div>
+<div id="chemViewer" style="width:500px;height:400px" 
+        data-widget="Kekule.ChemWidget.Viewer" 
+        data-chem-obj="url(#molecule)">
+</div>
+<span id="viewer2D1" style="display:block" data-widget="Kekule.ChemWidget.Viewer2D"
+  data-chem-obj="url(../../chemFiles/benzene.mol)" data-predefined-setting="basic" data-auto-size="true"></span>
 
-var chemViewer = new Kekule.ChemWidget.Viewer(document);
-chemViewer.setDimension('500px', '400px');
-chemViewer.appendToElem(document.getElementById('parent')).setChemObj(molecule);
 ==
 
 evaluator ==
