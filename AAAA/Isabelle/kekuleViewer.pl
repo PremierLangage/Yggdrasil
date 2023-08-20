@@ -52,10 +52,11 @@ function display_kekule(smi) {
   var mol = Kekule.IO.loadFormatData(smi, "smi");  
   let generator = new Kekule.Calculator.Obstructure2DGenerator();
   generator.setSourceMol(mol);
-  generator.executeSync(function() {
-    let newMol = generator.getGeneratedMol();
-    generator.setChemObj(newMol);
-  }); 
+#  generator.executeSync(function() {
+#    let newMol = generator.getGeneratedMol();
+#    generator.setChemObj(newMol);
+#  });
+  kekule.getEditor().setChemObjData('{"format": "smi", "data": "C1CCCCC1"}');
 }
 function display() {
   var smi = document.getElementById("smiles").value;
