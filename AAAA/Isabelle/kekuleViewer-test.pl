@@ -48,6 +48,24 @@ molecule.kekulize();  // turn it to classic Kekule form with single-double bonds
 var composer = Kekule.Widget.getWidgetById(composerWidgetId);
 composer.setChemObj(molecule);
 
+var renderType = Kekule.Render.RendererType.R2D  // do 2D or 3D drawing
+
+// parent element, we will draw inside it
+var parentElem = document.getElementById('parent');
+// clear parent elem
+Kekule.DomUtils.clearChildContent(parentElem);
+
+// create painter, bind with molecule
+var painter = new Kekule.Render.ChemObjPainter(renderType, mol);
+
+// create context inside parentElem
+var dim = Kekule.HtmlElementUtils.getElemOffsetDimension(parentElem); // get width/height of parent element
+var context = painter.createContext(parentElem, dim.width, dim.height); // create context fulfill parent element
+
+// at last, draw the molecule at the center of context
+painter.draw(context, {'x': dim.width / 2, 'y': dim.height / 2});
+
+
 <div id="chemViewer" style="width:500px;height:400px" 
         data-widget="Kekule.ChemWidget.Viewer" 
         data-chem-obj="molecule">
