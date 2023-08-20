@@ -30,6 +30,10 @@ CCN
 <div id="kekule" style="width:300px;height:300px"
 		 data-widget="Kekule.ChemWidget.Viewer2D" data-enable-toolbar="false"
 </div>
+Kekule.OpenBabel.enable();
+let smiles = "C1CCCCC1";
+let mol = Kekule.IO.loadFormatData(smiles, "smi");
+composer.setChemObj(mol);
 ==
 
 evaluator ==
