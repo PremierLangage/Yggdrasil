@@ -27,13 +27,14 @@ form ==
 <textarea rows="1" cols="50" id="smiles"  style="font-size: 12pt">
 CCN
 </textarea>
+
 <div id="kekule" style="width:300px;height:300px"
 		 data-widget="Kekule.ChemWidget.Viewer2D" data-enable-toolbar="false"
 </div>
-Kekule.OpenBabel.enable();
-let smiles = "C1CCCCC1";
-let mol = Kekule.IO.loadFormatData(smiles, "smi");
-composer.setChemObj(mol);
+
+var chemViewer = new Kekule.ChemWidget.Viewer(document);
+chemViewer.setDimension('500px', '400px');
+chemViewer.appendToElem(document.getElementById('parent')).setChemObj(molecule);
 ==
 
 evaluator ==
