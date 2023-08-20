@@ -41,10 +41,11 @@ composer.setChemObj(molecule);
         data-widget="Kekule.ChemWidget.Viewer" 
         data-chem-obj="url(#molecule)">
 </div>
+
+==
 #<span id="viewer2D1" style="display:block" data-widget="Kekule.ChemWidget.Viewer2D"
 #  data-chem-obj="url(../../chemFiles/benzene.mol)" data-predefined-setting="basic" data-auto-size="true"></span>
 
-==
 
 evaluator ==
 grade=(100,"Bonne réponse")
