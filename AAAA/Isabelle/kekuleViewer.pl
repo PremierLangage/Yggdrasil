@@ -65,6 +65,9 @@ function display() {
 $(window).on('load', function(){
       console.log("OK");
       load_kekule();
+var Kekulewindow.OpenBabel.enable(() => {
+  kekule.getEditor().setChemObjData('{"format": "smi", "data": "C1CCCCC1"}');
+});     
 #      display();
 #      $('textarea').on('change', display);
 });
