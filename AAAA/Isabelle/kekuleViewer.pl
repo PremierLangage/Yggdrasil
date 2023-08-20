@@ -45,7 +45,7 @@ extrajs==
 
 Kekule.Indigo.enable();
 function load_kekule() {
-  chemViewer = new Kekule.ChemWidget.Viewer(document.getElementById('kekule'));
+  chemViewer = new Kekule.ChemWidget.Viewer(document.getElementById('kekulewindow'));
   chemViewer.setRenderType(Kekule.Render.RendererType.R3D);
 }
 function display_kekule(smi) {
