@@ -31,21 +31,36 @@ CCN
 <div id="kekule" style="width:300px;height:300px"
 		 data-widget="Kekule.ChemWidget.Viewer2D" data-enable-toolbar="false"
 </div>
+
+==
+#<span id="viewer2D1" style="display:block" data-widget="Kekule.ChemWidget.Viewer2D"
+#  data-chem-obj="url(../../chemFiles/benzene.mol)" data-predefined-setting="basic" data-auto-size="true"></span>
+#<div id="chemViewer" style="width:500px;height:400px" 
+#        data-widget="Kekule.ChemWidget.Viewer" 
+#        data-chem-obj="url(#molecule)">
+#</div>
+
+extrajs==
+<script>
 var molecule = Kekule.IO.loadFormatData('c1ccccc1', 'smi');  // benzene loaded from SMILES by Indigo are in aromatic bond form defaultly
 molecule.kekulize();  // turn it to classic Kekule form with single-double bonds
 // molecule.hucklize();  // a reversed operation, turn back into the aromatic bonds form
 var composer = Kekule.Widget.getWidgetById(composerWidgetId);
 composer.setChemObj(molecule);
-
 <div id="chemViewer" style="width:500px;height:400px" 
         data-widget="Kekule.ChemWidget.Viewer" 
         data-chem-obj="url(#molecule)">
 </div>
 
-==
-#<span id="viewer2D1" style="display:block" data-widget="Kekule.ChemWidget.Viewer2D"
-#  data-chem-obj="url(../../chemFiles/benzene.mol)" data-predefined-setting="basic" data-auto-size="true"></span>
+function getSmile() {
+    var mol = composer.exportObjs(Kekule.Molecule)[0];
+    var smiles = Kekule.IO.saveFormatData(mol, 'smi');
+    var textarea = document.getElementById("smiles");
+    textarea.value = smiles;
+}
 
+</script>
+==
 
 evaluator ==
 grade=(100,"Bonne réponse")
