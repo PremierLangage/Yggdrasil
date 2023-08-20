@@ -24,7 +24,8 @@ form ==
 <textarea rows="1" cols="50" id="smiles"  style="font-size: 12pt">
 CCN
 </textarea>
-
+<div id="composer" style="width:500px;height:500px" data-widget="Kekule.Editor.Composer" data-chem-obj="url(#molecule)"></div>
+<br>
 <div id="kekule" style="width:300px;height:300px"
 		 data-widget="Kekule.ChemWidget.Viewer2D" data-enable-toolbar="false"
 </div>
@@ -81,4 +82,5 @@ function getSmile() {
 evaluator ==
 grade=(100,"Bonne réponse")
 ==
+
 
