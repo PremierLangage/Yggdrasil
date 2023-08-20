@@ -65,8 +65,8 @@ function display() {
 $(window).on('load', function(){
       console.log("OK");
       load_kekule();
-      display();
-      $('textarea').on('change', display);
+#      display();
+#      $('textarea').on('change', display);
 });
 </script>
 ==
