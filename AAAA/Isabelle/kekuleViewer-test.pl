@@ -24,10 +24,35 @@ form ==
 <textarea rows="1" cols="50" id="smiles"  style="font-size: 12pt">
 CCN
 </textarea>
+
+<script>
+var mol = Kekule.IO.loadFormatData('c1ccccc1', 'smi');
+var renderType = Kekule.Render.RendererType.R2D//R3D  // do 2D or 3D drawing
+
+// parent element, we will draw inside it
+var parentElem = document.getElementById('parent');
+// clear parent elem
+Kekule.DomUtils.clearChildContent(parentElem);
+
+// create painter, bind with molecule
+var painter = new Kekule.Render.ChemObjPainter(renderType, mol);
+
+// create context inside parentElem
+var dim = Kekule.HtmlElementUtils.getElemOffsetDimension(parentElem); // get width/height of parent element
+var context = painter.createContext(parentElem, dim.width, dim.height); // create context fulfill parent element
+
+// at last, draw the molecule at the center of context
+painter.draw(context, {'x': dim.width / 2, 'y': dim.height / 2});
+
+</script>
+
+
+
+
 <div id="composer" style="width:500px;height:500px" data-widget="Kekule.Editor.Composer" 
         data-chem-obj="url(#molecule)"></div>
 <br>
-<div id="kekule" style="width:300px;height:300px"
+<div id="chemviewer" style="width:300px;height:300px"
 		 data-widget="Kekule.ChemWidget.Viewer2D" data-enable-toolbar="false" 
          data-chem-obj="url(#molecule)">
 </div>
