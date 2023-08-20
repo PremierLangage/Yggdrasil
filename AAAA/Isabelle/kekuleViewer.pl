@@ -56,7 +56,6 @@ function display_kekule(smi) {
 #    let newMol = generator.getGeneratedMol();
 #    generator.setChemObj(newMol);
 #  });
-  kekule.getEditor().setChemObjData('{"format": "smi", "data": "C1CCCCC1"}');
 }
 function display() {
   var smi = document.getElementById("smiles").value;
