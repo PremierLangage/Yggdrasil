@@ -19,7 +19,7 @@ Dans la fonction Main de la class Bienvenue ajoutez la ligne suivante :
 
 L'idée est que System.out est un canal de sortie de votre programme et que vous écrivez dedans en utilisant sa méthode println.
 
-La méthode println recopie ses paramètre dans le canal et ajoute un caractère de fin de ligne '\n'.
+La méthode println recopie ses paramètres sous forme de string dans le canal et ajoute un caractère de fin de ligne '\n'.
 ==
 
 classname = Bienvenue
@@ -34,7 +34,7 @@ James Hello Bande de moules
 
 doc==
 The first and second arguments of each line must be the repectively the name of the test
-and the expected output, any other argument will be given to the student's programm.
+and the expected output, any other argument will be given to the student's program standard input.
 
 If the line start with the character '!', the test will be set as hidden (only the name is
 displayed in the feedback).
