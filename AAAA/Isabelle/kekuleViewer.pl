@@ -36,9 +36,9 @@ ex: CCN
 # regarder le site https://partridgejiang.github.io/Kekule.js/documents/tutorial/content/chemViewer.html
 # à regarder aussi https://github.com/partridgejiang/Kekule.js/issues/215
 #let generator = new Kekule.Calculator.ObStructure2DGenerator();
-var Kekulewindow.OpenBabel.enable(() => {
-  kekule.getEditor().setChemObjData('{"format": "smi", "data": "C1CCCCC1"}');
-});
+#var Kekulewindow.OpenBabel.enable(() => {
+#  kekule.getEditor().setChemObjData('{"format": "smi", "data": "C1CCCCC1"}');
+#});
 
 extrajs==
 <script>
