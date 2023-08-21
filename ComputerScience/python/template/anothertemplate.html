@@ -1,26 +1,21 @@
 
-
-
-
 <!-- default template used by the feedback code can be bypassed in  feedback class see documentation -->
+{% if feedback.tests %}
 {% if feedback.globalok %}
-<div style="border:1px solid black;padding:0%;margin:1%;background-color:LightGreen;border-radius:4px;">
-<button type="button" class="btn btn-block btn-success"
-   data-toggle="collapse" data-target="#suite{{feedback.testgroupenum}}">
-{{feedback.name}} success
-</button>
+::: success {{feedback.name}}
 <div id="suite{{feedback.testgroupenum}}" class="collapse">
 <div class="card card-success;" style="background-color: LightGreen;">
+:::
 {% else %}
+::: failure Vous avez fait une ou plusieurs erreurs
 <div style="border:1px solid black;padding:1%;margin:1%;background-color:Tomato;border-radius:4px;">
    <button type="button" class="btn btn-block  btn-danger"
       aria-expanded="true" aria-controls="suite{{feedback.testgroupenum}}"
       data-toggle="collapse" data-target="#suite{{feedback.testgroupenum}}">
-   {{feedback.name}}  Failure
+   {{feedback.name}}  - {{feedback.failtext}}
    </button>
    <div id="suite{{feedback.testgroupenum}}" class="show">
       <div class="card card-danger;" style="background-color: Tomato;">
-         {% endif %}   
          {% for type,num,text,got,want in feedback.tests %}
          {%  if type=="failure" %}
          <div style="border:1px solid black;padding:1px;margin:1px;background-color:Tomato;border-radius:4px;">
@@ -97,8 +92,8 @@
       </div>
    </div>
 </div>
-
-
-
+:::
+{%  endif %}
+{%  endif %}
 
 
