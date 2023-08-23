@@ -62,7 +62,7 @@ function getSmile() {
 
 
 evaluator==
-answer = smiles
+var answer = smiles
 if answer == "CCCCC(C)C" :
     grade=(100, 'Bonne réponse')
 else:
