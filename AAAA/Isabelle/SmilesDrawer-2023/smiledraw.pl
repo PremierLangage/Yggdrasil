@@ -17,7 +17,8 @@ lang = fr
 
 # ici, on va utiliser le formulaire décrit dans smiledraw-formulaire.html
 text=@smiledraw-formulaire.html
-
+form ==
+==
 #script=@smiledraw.js
 
 evaluator ==
