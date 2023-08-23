@@ -16,7 +16,7 @@ Dessin d'une molecule.
 #question=@smiledraw-formulaire.html
 
 # ici, on va utiliser le formulaire décrit dans smiledraw-formulaire.html
-form=@smiledraw-formulaire1.html
+form=@smiledraw-formulaire.html
 
 #script=@smiledraw.js
 
