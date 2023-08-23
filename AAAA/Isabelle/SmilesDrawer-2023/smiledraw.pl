@@ -20,6 +20,9 @@ form=@smiledraw-formulaire.html
 
 #script=@smiledraw.js
 
+text ==
+Dessin fait d'une molecule.
+==
 evaluator ==
 grade=(100,"Bonne réponse")
 ==
