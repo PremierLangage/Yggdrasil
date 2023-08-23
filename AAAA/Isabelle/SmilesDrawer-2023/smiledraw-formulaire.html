@@ -1,6 +1,18 @@
-<!--# recupère le module de smiles-drawer-->
+<!DOCTYPE html>
+<html>
 
-<script type="text/javascript" src="https://unpkg.com/smiles-drawer@2.0.1/dist/smiles-drawer.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <img id="imgExample" data-smiles-options="{ 'width': 400, 'height': 400 }" />
+
+    <div style="background-color: #000">
+        <svg id="svgExample" />
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/smiles-drawer@2.0.1/dist/smiles-drawer.min.js"></script>
     <script>
         let moleculeOptions = {};
         let reactionOptions = {};
@@ -9,6 +21,6 @@
         sd.draw('OC(C(=O)O[C@H]1C[N+]2(CCCOC3=CC=CC=C3)CCC1CC2)(C1=CC=CS1)C1=CC=CS1', '#imgExample')
         sd.draw('C=CCBr.[Na+].[I-]>CC(=O)C>C=CCI.[Na+].[Br-]', '#svgExample', 'dark')
     </script>
-   <script>
-        SmiDrawer.apply();
-    </script>
+</body>
+
+</html>
