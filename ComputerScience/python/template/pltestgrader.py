@@ -102,7 +102,7 @@ if __name__ == "__main__":
     outstr +=  b
     if "feedback" in dic: # FIXME feedback devrai être un dictionnaire.
         outstr += dic["feedback"]+" valeur de stop "+ str(stop)
-    output(a,str(a)+outstr)
+    output(a,outstr)
 
 
 
