@@ -11,7 +11,7 @@ before ==
 lang = fr
 
 text ==
-Dessiner la molécule de votre choix.
+Dessiner la molécule donnée en exemple.
 ==
 form=@smiledraw-formulaire.html
 
@@ -59,7 +59,13 @@ function getSmile() {
 
 </script>
 ==
-evaluator ==
-grade=(100,"Bonne réponse")
+
+
+evaluator==
+answer = eval(response['answer'])
+if answer == expected:
+    grade=(100, 'Bonne réponse')
+else:
+    grade=(0, 'Vous avez répondu {0}, la bonne réponse était {1}'.format(answer, expected))
 ==
 
