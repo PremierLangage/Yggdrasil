@@ -13,6 +13,7 @@ lang = fr
 text ==
 Dessiner la molécule de votre choix.
 ==
+form=@smiledraw-formulaire.html
 
 form ==
 <script src="https://unpkg.com/kekule/dist/kekule.js?modules=chemWidget,algorithm"></script>
