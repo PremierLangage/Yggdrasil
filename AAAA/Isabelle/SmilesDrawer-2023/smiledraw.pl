@@ -10,12 +10,13 @@ before ==
 
 lang = fr
 
-text ==
-Dessin d'une molecule.
-==
+#text ==
+#Dessin d'une molecule.
+#==
+
 
 # ici, on va utiliser le formulaire décrit dans smiledraw-formulaire.html
-form=@smiledraw-formulaire.html
+text=@smiledraw-formulaire.html
 
 #script=@smiledraw.js
 
