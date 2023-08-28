@@ -90,7 +90,7 @@ if __name__ == "__main__":
         i = i+1
     
     # do the tests in the list
-
+    a= True # Tout c'est bien passé jsuque la ;)
     for i,testgroupid in enumerate(listoftests):
         pltest= dic[testgroupid]
         lfb = FeedBack()
