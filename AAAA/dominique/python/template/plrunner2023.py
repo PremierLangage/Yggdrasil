@@ -116,6 +116,8 @@ class PlRunner(doctest.DocTestRunner):
         self.fb.doTextOutput()
         
     def grade(self):
+        if self.total == 0 :
+            return 0
         if self.fb.globalok :
            return 100
         if self.total:
