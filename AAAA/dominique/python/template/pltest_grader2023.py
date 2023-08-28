@@ -74,11 +74,15 @@ if __name__ == "__main__":
 
     listoftests= []
     if "pltest" in dic:
-        listoftests.append("pltest")
+        if "pltest0" in dic:
+            print("add either pltest or pltest0..N , or change the template ", file=sys.stderr)
+            sys.exit(1)
+        dic["pltest0"]=dic["pltest"]
+        listoftests.append("pltest0")
     elif "pltest0" in dic:
         listoftests.append("pltest0")
     else:
-        print("add  either pltest or pltest0..N , or change the template ", file=sys.stderr)
+        print("add either pltest or pltest0..N , or change the template ", file=sys.stderr)
         sys.exit(1)
     i=1
     while "pltest"+str(i) in dic :
@@ -87,34 +91,13 @@ if __name__ == "__main__":
     
     # do the tests in the list
 
-    for testgroupid in listoftests:
+    for i,testgroupid in enumerate(listoftests):
         pltest= dic[testgroupid]
+        lfb = FeedBack()
         testi = PlRunner(student,dic[testgroupid],fb=lfb)
         tname='testname'+str(i)
         testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
         
-    if "pltest" in dic:
-        pltest = dic['pltest']
-        tester = PlRunner(student,pltest, fb=lfb)
-        testname = dic['testname'] if 'testname' in dic else "Groupe de test un"
-        g, b = tester.runpltest(testname, numgroup)
-        a = ( g == 100 )
-    elif "pltest0" in dic:
-        pltest = dic['pltest0']
-        tester = PlRunner(student,pltest, fb=lfb)
-        testname = dic['testname0'] if 'testname0' in dic else "Groupe de test 0"
-        g, b = tester.runpltest(testname, numgroup)
-        a = ( g == 100 )
-    else:
-        a,b= True, ""
-
-    if "demo" in dic:
-        b += "<div>"+lfb.toJson()+"</div>"
-    numgroup=1
-    i=1
-    while "pltest"+str(i) in dic and (a or stop ) :
-        outstr += b
-        lfb = FeedBack()
         testi = PlRunner(student,dic["pltest"+str(i)],fb=lfb)
         tname='testname'+str(i)
         testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
