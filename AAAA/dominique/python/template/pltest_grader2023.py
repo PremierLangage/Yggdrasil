@@ -98,7 +98,8 @@ if __name__ == "__main__":
         testi = PlRunner(student,dic["pltest"+str(i)],fb=lfb)
         tname='testname'+str(i)
         testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
-        a, b = testi.runpltest(testname,numgroup)
+        r, b = testi.runpltest(testname,numgroup)
+        a = a and r
         i=i+1
         numgroup = numgroup + 1
         if "demo" in dic:
