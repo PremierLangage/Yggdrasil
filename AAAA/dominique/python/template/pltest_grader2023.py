@@ -99,7 +99,7 @@ if __name__ == "__main__":
         tname='testname'+str(i)
         testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
         r, b = testi.runpltest(testname,numgroup)
-        a = a and r
+        a = a and r # au moins un test a échoué
         i=i+1
         numgroup = numgroup + 1
         if "demo" in dic:
