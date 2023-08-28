@@ -102,6 +102,7 @@ if __name__ == "__main__":
         
         runner = PlRunner(student,dic[testgroupid],fb=lfb)
         r, b = runner.runpltest(testname,i+1)
+        outstr +=  b # Ajout au feedbakc final 
         nbpts += r
         a = a and r == 100 # si au moins un test a échoué r != 100
 
@@ -109,8 +110,7 @@ if __name__ == "__main__":
             break
         if "demo" in dic:
             b += "<div>"+lfb.toJson()+"</div>"
-
-    outstr +=  b
+        
     if "feedback" in dic: # FIXME feedback devrai être un dictionnaire.
         outstr += dic["feedback"]+" valeur de stop :"+ str(stop)
 
