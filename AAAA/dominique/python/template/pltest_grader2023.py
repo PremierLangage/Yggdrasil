@@ -92,11 +92,10 @@ if __name__ == "__main__":
     a= True # Tout c'est bien passé jsuque la ;)
     outstr="" # pas de feedback poiur le moment 
     lfb = None # une structure feedback pour chaque test
-    
+
     for i,testgroupid in enumerate(listoftests):
         pltest= dic[testgroupid]
         lfb = FeedBack()
-        
         tname='testname'+str(i)
         testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
         
