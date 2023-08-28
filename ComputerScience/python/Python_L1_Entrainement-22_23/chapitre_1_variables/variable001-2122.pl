@@ -19,13 +19,13 @@ code==
 pim,pam,pom=0,0,0
 ==
 
-# comme ca cela se passera bien
+# comme ça: cela se passera bien
 pltest==
 >>> pim # Pim vaut un
 1
->>> pam != pam  #
+>>> pam == pam  #
 True
->>> pam # Verifiont la valeur de pam
+>>> pam # Verifions la valeur de pam
 2
 >>> pom
 3
