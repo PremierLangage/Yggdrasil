@@ -5,7 +5,8 @@ title= Initialisation d'une variable (1).
 
 tag=variable|affectation 
 
-extends=/ComputerScience/python/template/pltest.pl
+extends=/AAAA/dominique/python/template/pltest2023.pl
+#extends=/ComputerScience/python/template/pltest.pl
 @ /utils/sandboxio.py
 
 text==
