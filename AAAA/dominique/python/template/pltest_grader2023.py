@@ -63,9 +63,6 @@ if __name__ == "__main__":
             output(0, "Le mot clef "+mc+" est proscrit.")
             sys.exit(1)
 
-    if "pltest" not in dic and "pltest0" not in dic :
-        print("add  either pltest or pltest0..N , or change the template ", file=sys.stderr)
-        sys.exit(1)
     if 'stopfirsterror' in dic:
         stop=bool(dic['stopfirsterror'])
     else:
@@ -74,6 +71,20 @@ if __name__ == "__main__":
     outstr=""
     lfb = FeedBack()
     numgroup=0
+
+    listoftests= []
+    if "pltest" in dic:
+        listoftests.append("pltest")
+    elif "pltest0" in dic:
+        listoftests.append("pltest0")
+    else:
+        print("add  either pltest or pltest0..N , or change the template ", file=sys.stderr)
+        sys.exit(1)
+    i=1
+    while "pltest"+str(i) in dic :
+        listoftests.append("pltest"+str(i))
+        i = i+1
+    
     if "pltest" in dic:
         pltest = dic['pltest']
         tester = PlRunner(student,pltest, fb=lfb)
@@ -110,8 +121,11 @@ if __name__ == "__main__":
     if "feedback" in dic: # FIXME feedback devrai être un dictionnaire.
         outstr += dic["feedback"]+" valeur de stop :"+ str(stop)
 
-    
-    output(a,outstr)
+    if a:
+        grade= 100
+    else:
+
+    output(grade,outstr)
 
 
 
