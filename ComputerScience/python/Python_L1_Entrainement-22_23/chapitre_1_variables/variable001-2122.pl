@@ -19,6 +19,8 @@ code==
 pim,pam,pom=0,0,0
 ==
 
+before=
+
 # comme ça: cela se passera bien
 pltest==
 >>> pim # Pim vaut un
