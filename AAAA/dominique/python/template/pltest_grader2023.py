@@ -92,7 +92,7 @@ if __name__ == "__main__":
     a= True # Tout c'est bien passé jsuque la ;)
     outstr="" # pas de feedback poiur le moment 
     lfb = None # une structure feedback pour chaque test
-
+    nbgt = len(listoftests) 
     for i,testgroupid in enumerate(listoftests):
         pltest= dic[testgroupid]
         lfb = FeedBack()
@@ -102,6 +102,7 @@ if __name__ == "__main__":
         runner = PlRunner(student,dic[testgroupid],fb=lfb)
         r, b = runner.runpltest(testname,i+1)
         a = a and r == 100 # si au moins un test a échoué r != 100
+
         if stop and r <100: # si sortir au premier groupe de tests échoué 
             break
         if "demo" in dic:
@@ -113,7 +114,8 @@ if __name__ == "__main__":
 
     if a:
         grade= 100
-
+    else:
+        grade= 
 
     output(grade,outstr)
 
