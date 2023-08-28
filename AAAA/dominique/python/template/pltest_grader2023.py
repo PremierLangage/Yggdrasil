@@ -84,7 +84,8 @@ if __name__ == "__main__":
         pltest = dic['pltest0']
         tester = PlRunner(student,pltest, fb=lfb)
         testname = dic['testname0'] if 'testname0' in dic else "Groupe de test 0"
-        a, b = tester.runpltest(testname, numgroup)
+        g, b = tester.runpltest(testname, numgroup)
+        a = ( g == 100 )
     else:
         a,b= True, ""
 
