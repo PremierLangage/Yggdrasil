@@ -39,4 +39,4 @@ False
 
 
 
-
+stopfirsterror=True
