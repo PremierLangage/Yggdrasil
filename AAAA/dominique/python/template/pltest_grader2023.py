@@ -117,7 +117,7 @@ if __name__ == "__main__":
     if a:
         grade= 100
     else:
-        grade= nbpts/nbpts
+        grade= nbpts/nbgt
 
     output(grade,outstr)
 
