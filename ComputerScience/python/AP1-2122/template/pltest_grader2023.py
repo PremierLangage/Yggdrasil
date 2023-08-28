@@ -2,11 +2,13 @@
 
 
 
+
 #!/usr/bin/env python3
 # coding: utf-8
 import sys, jsonpickle,re
 from sandboxio import output, get_context, get_answers
 from pltest_doc import PlRunner
+from feedback2 import FeedBack 
 
 class StopBeforeExec(Exception):
     pass
@@ -61,52 +63,63 @@ if __name__ == "__main__":
             output(0, "Le mot clef "+mc+" est proscrit.")
             sys.exit(1)
 
-    if "pltest" not in dic and "pltest0" not in dic :
-        print("add  either pltest or pltest0..N , or change the template ", file=sys.stderr)
-        sys.exit(1)
     if 'stopfirsterror' in dic:
         stop=bool(dic['stopfirsterror'])
     else:
         stop=False
 
-    outstr=""
-#    if "pltestbuilder" in dic:
-#        if "soluce" not in dic:
-#                print(" illegal use of pltestbuilder sql soluce is empty", file=sys.stderr)
-#                sys.exit(1)
-#        import pltestbuilder
-#        tester = SQLPlRunner(student,dic["soluce"])
-#        a, b = tester.runpltest(1)
-#    elif
 
-    numgroup=0
+
+    # build liste
+    listoftests= []
     if "pltest" in dic:
-        pltest = dic['pltest']
-        tester = PlRunner(student,pltest)
-        testname = dic['testname'] if 'testname' in dic else "Groupe de test un"
-        a, b = tester.runpltest(testname, numgroup)
+        if "pltest0" in dic:
+            print("add either pltest or pltest0..N , or change the template ", file=sys.stderr)
+            sys.exit(1)
+        dic["pltest0"]=dic["pltest"]
+        listoftests.append("pltest0")
     elif "pltest0" in dic:
-        pltest = dic['pltest0']
-        tester = PlRunner(student,pltest)
-        testname = dic['testname0'] if 'testname0' in dic else "Groupe de test 0"
-        a, b = tester.runpltest(testname, numgroup)
+        listoftests.append("pltest0")
     else:
-        a,b= True, ""
-    numgroup=1
+        print("add either pltest or pltest0..N , or change the template ", file=sys.stderr)
+        sys.exit(1)
     i=1
-    while "pltest"+str(i) in dic and (a or stop ) :
-        outstr += b
-        testi = PlRunner(student,dic["pltest"+str(i)])
+    while "pltest"+str(i) in dic :
+        listoftests.append("pltest"+str(i))
+        i = i+1
+    
+    # do the tests from the list
+    a= True # Tout c'est bien passé jsuque la ;)
+    outstr="" # pas de feedback poiur le moment 
+    lfb = None # une structure feedback pour chaque test
+    nbgt = len(listoftests) 
+    nbpts=0
+    for i,testgroupid in enumerate(listoftests):
+        pltest= dic[testgroupid]
+        lfb = FeedBack()
         tname='testname'+str(i)
         testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
-        a, b = testi.runpltest(testname,numgroup)
-        i=i+1
-        numgroup = numgroup + 1
+        
+        runner = PlRunner(student,dic[testgroupid],fb=lfb)
+        r, b = runner.runpltest(testname,i+1)
+        outstr +=  b # Ajout au feedbakc final 
+        nbpts += r
+        a = a and r == 100 # si au moins un test a échoué r != 100
 
-    outstr +=  b
+        if stop and r <100: # si sortir au premier groupe de tests échoué 
+            break
+        if "demo" in dic:
+            b += "<div>"+lfb.toJson()+"</div>"
+        
     if "feedback" in dic: # FIXME feedback devrai être un dictionnaire.
-        outstr += dic["feedback"]+" valeur de stop "+ str(stop)
-    output(a,"score:"+str(a)+outstr)
+        outstr += dic["feedback"]+" valeur de stop :"+ str(stop)
+
+    if a:
+        grade= 100
+    else:
+        grade= nbpts/nbgt
+
+    output(grade,outstr)
 
 
 
