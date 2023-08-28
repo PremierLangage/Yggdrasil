@@ -68,10 +68,9 @@ if __name__ == "__main__":
     else:
         stop=False
 
-    outstr=""
-    lfb = FeedBack()
-    numgroup=0
 
+
+    # build liste
     listoftests= []
     if "pltest" in dic:
         if "pltest0" in dic:
@@ -89,8 +88,11 @@ if __name__ == "__main__":
         listoftests.append("pltest"+str(i))
         i = i+1
     
-    # do the tests in the list
+    # do the tests from the list
     a= True # Tout c'est bien passé jsuque la ;)
+    outstr="" # pas de feedback poiur le moment 
+    lfb = None # une structure feedback pour chaque test
+    
     for i,testgroupid in enumerate(listoftests):
         pltest= dic[testgroupid]
         lfb = FeedBack()
