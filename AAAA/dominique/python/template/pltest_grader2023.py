@@ -85,6 +85,14 @@ if __name__ == "__main__":
         listoftests.append("pltest"+str(i))
         i = i+1
     
+    # do the tests in the list
+
+    for testgroupid in listoftests:
+        pltest= dic[testgroupid]
+        testi = PlRunner(student,dic[testgroupid],fb=lfb)
+        tname='testname'+str(i)
+        testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
+        
     if "pltest" in dic:
         pltest = dic['pltest']
         tester = PlRunner(student,pltest, fb=lfb)
