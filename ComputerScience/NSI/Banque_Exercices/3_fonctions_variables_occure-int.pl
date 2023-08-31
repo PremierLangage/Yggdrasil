@@ -36,17 +36,14 @@ editor.code==
 ==
 
 pltest==
->>> comparaison(7)
+>>> comparaison({{inconnugrand}})
 'Trop grand !'
->>> comparaison(-5)
+>>> comparaison({{inconnupetit}})
 'Trop petit !'
 ==
 
 
-pltest1==
->>> val_abs(4) == 4
-True
-==
+
 
 Xeditor.code==
 
