@@ -13,7 +13,7 @@ def afficheboucle(n):
         res += str(i) + '\n'
     return res
 
-pltest2 = f"""
+pltest1 = f"""
 >>> afficheboucle({n})
 {afficheboucle(n)}
 """
@@ -37,7 +37,10 @@ Par exemple:
 
 ==
 
-pltest1==
+editor.code==
+==
+
+pltest0==
 >>> afficheboucle(5)
 '0\n1\n2\n3\n4\n'
 ==
