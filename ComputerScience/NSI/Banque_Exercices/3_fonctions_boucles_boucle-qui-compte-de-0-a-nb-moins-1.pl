@@ -13,9 +13,10 @@ def afficheboucle(n):
         res += str(i) + '\n'
     return res
 
-pltest1 = f"""
+pltest1=f"""
 >>> afficheboucle({n})
-{afficheboucle(n)}"""
+{afficheboucle(n)}
+"""
 
 ==
 
