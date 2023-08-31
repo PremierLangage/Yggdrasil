@@ -8,9 +8,7 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = Liste des multiples
 
-text=
-
-textf==  
+text==
 
 Ecrire un programme qui lit un  entier strictement positif et affiche la chaine de caractères formée des n premiers (à partir de 1) multiples de {XX}.
 
