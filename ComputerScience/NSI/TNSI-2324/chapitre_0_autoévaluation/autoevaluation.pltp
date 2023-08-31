@@ -60,9 +60,9 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 
 #### Applications simple ###
 
-@/ComputerScience/NSI/Banque_Exercices/1_variables_rectanglefixe.pl
+#@/ComputerScience/NSI/Banque_Exercices/1_variables_rectanglefixe.pl
 
-@/ComputerScience/NSI/Banque_Exercices/1_variables_rectangle.pl
+#@/ComputerScience/NSI/Banque_Exercices/1_variables_rectangle.pl
 
 #@/ComputerScience/NSI/Banque_Exercices/1_variables_rectanglediagonale.pl
 
@@ -79,7 +79,7 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 #@/ComputerScience/pythonBanque_Exercices/1_variables_tri_trois_valeurs.pl
 
 # Exercice avec des boucles for 
-@ /ComputerScience/NSI/Banque_Exercices/2_boucles_boucle-qui-compte-de-0-a-nb-moins-1-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_boucles_boucle-qui-compte-de-0-a-nb-moins-1.pl
 
 @ /ComputerScience/NSI/Banque_Exercices/2_boucles_boucle-qui-compte-de-1-a-nb-2021.pl
 @ /ComputerScience/NSI/Banque_Exercices/2_boucles_dynafor-2021.pl
