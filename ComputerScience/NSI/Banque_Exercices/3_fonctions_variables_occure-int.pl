@@ -8,7 +8,7 @@ extends = /ComputerScience/python/template/pltest.pl
 title=Distinguer un nombre !
 tag=function|variable|if|elif|else|conditionnelles
 
-beforef==
+before==
 inconnu = 6
 ==
 
