@@ -14,6 +14,9 @@ Créer trois variables `pim`, `pam` et `pom` contenant respectivement 1, 2 et 3.
 
 ==
 
+editor.code==
+==
+
 code==
 pim,pam,pom=0,0,0
 ==
