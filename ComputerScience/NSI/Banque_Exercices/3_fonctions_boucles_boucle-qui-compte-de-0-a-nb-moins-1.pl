@@ -13,7 +13,7 @@ def afficheboucle(n):
         res += str(i) + '\n'
     return res
 
-pltest0 = f"""
+pltest2 = f"""
 >>> afficheboucle({n})
 {afficheboucle(n)}
 """
@@ -24,6 +24,7 @@ text==
 `0` à `nb-1` (chacun suivi d'un retour à la ligne), à l'exclusion de tout autre caractère.
 
 Par exemple:
+
     >>> print(afficheboucle(5))
     0
     1
@@ -36,7 +37,7 @@ Par exemple:
 
 ==
 
-pltest==
+pltest1==
 >>> afficheboucle(5)
 '0\n1\n2\n3\n4\n'
 ==
