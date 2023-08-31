@@ -23,6 +23,9 @@ Voici un exemple d'utilisation.
 ``['X', 'X']``
 ==
 
+editor.code==
+==
+
 tag=dictionary
 
 samplesol==
