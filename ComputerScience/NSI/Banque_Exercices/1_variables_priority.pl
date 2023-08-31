@@ -3,7 +3,7 @@
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
-extends = /model/basic/multinput.pl
+extends = /model/basic/inputgroup.pl
 
 nbechec%0
 
