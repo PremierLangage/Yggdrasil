@@ -12,6 +12,9 @@ Quand un élémént est en double, seule la première occurrence est copiée.
 Par exemple, `ignoredoublons([3, 1, 2, 2, 1, 3])` renvoie `[3, 1, 2]`
 ==
 
+editor.code==
+==
+
 tag=append|elementAccess|inlist
 
 taboo=set
