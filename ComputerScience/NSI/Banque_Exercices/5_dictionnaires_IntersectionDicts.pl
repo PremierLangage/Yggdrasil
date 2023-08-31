@@ -13,6 +13,9 @@ Ecrire une fonction ``intersectDicts(dict1,dict2)``. Elle trouve le élements en
 les mets dans un dictionnaire et puis le retourne.
 ==
 
+editor.code==
+==
+
 tag=dictionary
 
 samplesol==
