@@ -15,6 +15,9 @@ Ecrire une fonction ``liste_neg(d)`` qui prend en paramètre un dictionnaire ``d
 et renvoie la liste des clés dont les valeurs associées sont strictement négatives.
 ==
 
+editor.code==
+==
+
 tag=dictionary|ForIn|algo
 
 samplesol==
