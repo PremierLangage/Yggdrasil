@@ -3,6 +3,7 @@ title= Auto-évaluation début de terminale
 introduction==
 
 Bonjour,
+
 ceci est votre première feuille d'exercices à faire en autonomie.
 
 L'objectif de cette feuille est de se remettre dans le rythme rapidemenet et de s'évaluer sur ses connaissances de première.
@@ -37,8 +38,6 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 
 @/ComputerScience/NSI/Banque_Exercices/1_variables_echange_deux_variables.pl
 
-#Ne fonctionne pas
-#@/ComputerScience/python/Banque_Exercices/1_variables_expressionaleatoires.pl
 
 #### Compréhension des expressions ####
 
@@ -49,6 +48,10 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 #@/ComputerScience/python/Banque_Exercices/1_variables_operateursbooleens.pl
 
 @/ComputerScience/NSI/Banque_Exercices/1_variables_bascule.pl
+
+@/ComputerScience/NSI/Banque_Exercices/3_fonctions_carre.pl
+
+@/ComputerScience/NSI/Banque_Exercices/3_fonctions_Volume_sphere.pl
 
 @/ComputerScience/NSI/Banque_Exercices/3_fonctions_variables_occure-int.pl
 
@@ -87,18 +90,11 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 @ /ComputerScience/NSI/Banque_Exercices/2_boucles_dynafor2-2021.pl
 
 
-# @ /ComputerScience/python/AP1-1920/drafts/OCE/Suite_raison_aleatoire.pl
-# @ /ComputerScience/python/AP1-1920/drafts/AntoineMeyer/exercises/boucles/suite-geometrique.pl
-# @ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/suite-geometrique.pl
 # Faire une boucle croissante 
-# @ /ComputerScience/python/AP1-1920/drafts/zip/boucle1/bouclecroissant.pl
 @ /ComputerScience/NSI/Banque_Exercices/2_boucles_bouclecroissant.pl
 
 # Faire une boucle diviser 
-# @ /ComputerScience/python/AP1-1920/drafts/zip/boucle1/boucledivise.pl
 @ /ComputerScience/NSI/Banque_Exercices/2_boucles_boucledivise.pl
-
-
 
 # Faire une boucle avec des if
 @ /ComputerScience/NSI/Banque_Exercices/2_boucles_boucleif-2122.pl
@@ -113,7 +109,7 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 # Exercice sur les boucles répétable sans taboo #
 #  @  /ComputerScience/python/1NSI-2122/chapitre_3_boucles/loop_exo.pl
 
-@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_carre.pl
+
 
 @ /ComputerScience/NSI/Banque_Exercices/3_fonctions_valeurabsolue.pl
 
@@ -123,7 +119,7 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 
 @ /ComputerScience/NSI/Banque_Exercices/3_fonctions_10_mais_pas_3.pl
 
-@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_Volume_sphere.pl
+
 
 @ /ComputerScience/NSI/Banque_Exercices/3_fonctions_Lance_de_des.pl
 
