@@ -12,6 +12,7 @@ Ecrivez une fonction `comparaison` ayant un unique paramètre `nombre` utilisant
 - "Trop petit !", si `nombre` est plus petit que 6.
 - "Tout juste !", si `nombre` est exactement 6.
 - "Trop grand !", si `nombre` est plus grand que 6.
+
 Exemples :
 
 	>>> comparaison(7)
