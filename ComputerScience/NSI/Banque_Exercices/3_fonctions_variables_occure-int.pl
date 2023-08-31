@@ -2,6 +2,7 @@
 
 
 extends = /ComputerScience/python/template/pltest.pl
+@ /ComputerScience/python/template/before.py [builder.py]
 
 # author = Zip
 title=Distinguer un nombre !
