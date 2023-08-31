@@ -16,6 +16,7 @@ def afficheboucle(n):
 pltest0 = f"""
 >>> afficheboucle({n})
 {afficheboucle(n)}
+"""
 ==
 
 text==
