@@ -12,7 +12,7 @@ Initialisez la variable `X` avec la chaîne de caractères Toto.
 
 ==
 
-code==
+editor.code==
 
 ==
 
