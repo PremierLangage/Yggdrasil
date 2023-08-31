@@ -9,6 +9,9 @@ retourne une liste avec deux éléments : d'abord une liste des éléménts pair
 Par exemple, ``pair_impair([1, 7, 8, 9, 0, 7, 1, 4])`` doit renvoyer ``[[8, 0, 4], [1, 7, 9, 7, 1]]``.
 ==
 
+editor.code==
+==
+
 tag=elementAccess|append|listCreate
 
 
