@@ -17,13 +17,9 @@ def listemultiples(n):
 
 y = listemultiples(4)
 
-pltest0 = f""">>> listemultiples(4)
-{listemultiples(4)}
-"""
+pltest0 = f">>> listemultiples(4)\n{listemultiples(4)!r}"
 
-pltest1 = f""">>> listemultiples({n})
-{listemultiples(n)}
-"""
+pltest1 = f">>> listemultiples({n})\n{listemultiples(n)!r}"
 
 ==
 
