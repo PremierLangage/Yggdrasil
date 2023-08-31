@@ -13,7 +13,7 @@ def afficheboucle(n):
         res += str(i) + '\n'
     return res
 
-pltest1=f">>> afficheboucle({n})\n{afficheboucle(n)}"
+pltest1=f">>> afficheboucle({n})\n{afficheboucle(n)!r}"
 
 ==
 
