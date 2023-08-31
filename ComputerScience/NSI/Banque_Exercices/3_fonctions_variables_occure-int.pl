@@ -13,7 +13,7 @@ inconnu = 6
 ==
 
 
-textf==
+text==
 Ecrivez une fonction `comparaison` ayant un unique paramètre `nombre` utilisant un **if elif else** retournant la chaîne de caractères:
 
 - "Trop petit !", si `nombre` est plus petit que {inconnu}.
