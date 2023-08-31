@@ -9,7 +9,7 @@ extends = /ComputerScience/python/template/pltest.pl
 
 
 
-code.editor==
+editor.code==
 
 ==
 
@@ -38,7 +38,7 @@ def entierchaine(n, m):
 
 pltest1=f"""
 >>> entierchaine({n},{m})
-{entierchaine(n, n)}
+{entierchaine(n, m)}
 """
 ==
 
