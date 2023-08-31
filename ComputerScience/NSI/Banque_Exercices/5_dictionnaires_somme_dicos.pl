@@ -23,6 +23,9 @@ Par exemple:
 ``{'a': 1, 'b': 12, 'c': 20}``
 ==
 
+editor.code==
+==
+
 tag=dictionary|ForIn|algo
 
 samplesol==
