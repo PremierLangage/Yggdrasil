@@ -12,6 +12,13 @@ before==
 inconnu = 6
 inconnugrand = 7
 inconnupetit = 5
+
+pltest="""
+>>> comparaison({{inconnugrand}})
+'Trop grand !'
+>>> comparaison({{inconnupetit}})
+'Trop petit !'
+""".format()
 ==
 
 
@@ -35,12 +42,7 @@ editor.code==
 
 ==
 
-pltest==
->>> comparaison({{inconnugrand}})
-'Trop grand !'
->>> comparaison({{inconnupetit}})
-'Trop petit !'
-==
+
 
 
 
