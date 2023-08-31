@@ -35,7 +35,8 @@ code==
 extends=/ComputerScience/python/template/pltest.pl
 
 
-
+editor.code==
+==
 
 
 
