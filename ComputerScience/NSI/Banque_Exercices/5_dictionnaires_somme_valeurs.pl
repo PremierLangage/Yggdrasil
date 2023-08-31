@@ -14,6 +14,9 @@ Ecrire une fonction ``somme_si_pair(d)`` qui prend en paramètre un dictionnaire
 et renvoie la somme des valeurs associées aux clés paires.
 ==
 
+editor.code==
+==
+
 tag=dictionary|ForIn|algo
 
 samplesol==
