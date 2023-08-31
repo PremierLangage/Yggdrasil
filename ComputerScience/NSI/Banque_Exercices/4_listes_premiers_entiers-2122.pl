@@ -1,6 +1,9 @@
 title=Premiers entiers
 extends=/ComputerScience/python/template/pltest.pl
 
+editor.code==
+==
+
 text==
 
 Ecrire une fonction ``premiers_entiers`` qui accepte un entier ``a`` et 
