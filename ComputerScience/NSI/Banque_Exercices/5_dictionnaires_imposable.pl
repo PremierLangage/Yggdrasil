@@ -21,6 +21,9 @@ Voici un exemple d'exécution :
 ``['Tiancheng Wu', 'Jean-Marie Leroy']``
 ==
 
+editor.code==
+==
+
 before==
 import random
 accu = []
