@@ -33,7 +33,7 @@ from random import randint
 n = randint(-100, 100)
 m = randint(-100, 100)
 
-def entierchaine(n, n):
+def entierchaine(n, m):
     return n + m, str(n)+str(m)
 
 pltest1=f"""
