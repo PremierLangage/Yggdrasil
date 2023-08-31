@@ -5,8 +5,9 @@ tag=function|InstructionsRepetitives|ForInRange
 title = Liste des multiples
 
 before==#|python|
-from random import choice
+from random import choice, randint
 x = choice([13,17,23,27,51])
+n = randint(10,30)
 
 def listemultiples(n):
     res = ""
@@ -15,6 +16,14 @@ def listemultiples(n):
     return res
 
 y = listemultiples(4)
+
+pltest0 = f""">>> listemultiples(4)
+{listemultiples(4)}
+"""
+
+pltest1 = f""">>> listemultiples({n})
+{listemultiples(n)}
+"""
 
 ==
 
@@ -27,4 +36,7 @@ Exemple:
     >>> listemultiples(4)
     {{y}}
 
+==
+
+editor.code ==
 ==
