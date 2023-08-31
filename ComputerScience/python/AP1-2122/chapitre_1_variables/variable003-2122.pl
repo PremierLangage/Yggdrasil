@@ -36,6 +36,7 @@ extends=/ComputerScience/python/template/pltest.pl
 
 
 editor.code==
+# Ceci est un commentaire python 
 ==
 
 
