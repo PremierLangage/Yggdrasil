@@ -12,6 +12,9 @@ La fonction **ne doit pas modifier les deux listes** en paramètre. On ne peut p
 Par exemple, ``fusion([1,1],[2,2])`` doit retourner ``[1, 1, 2, 2]``.
 ==
 
+editor.code==
+==
+
 taboo=extend
 
 tag=append|elementAccess|reference|listCopy
