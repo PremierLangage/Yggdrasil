@@ -12,23 +12,21 @@ tag=function|variable|if|elif|else|conditionnelles
 
 before==
 from random import randint
-inconnu = randint(5, 70)
-inconnugrand = inconnu + randint(1,20)
-inconnupetit = inconnu - randint(1,20)
-inconnugrand1 = inconnu + randint(1,20)
-inconnupetit1 = inconnu - randint(1,20)
+n = randint(5, 70)
+m = randint(5, 7)
 
-pltest=f"""
->>> comparaison({inconnugrand})
-'Trop grand !'
->>> comparaison({inconnupetit})
-'Trop petit !'
->>> comparaison({inconnu})
-'Tout juste !'
->>> comparaison({inconnugrand1})
-'Trop grand !'
->>> comparaison({inconnupetit1})
-'Trop petit !'
+def division(n, m):
+    if m == 0:
+        return 'Division par 0'
+    else:
+        reelle = f'{n} / {m} = {n/m}'
+        euclidienne = f'{n} = {m} * {n//m} + {n%m}'
+        return reelle, euclidienne
+
+
+pltest1=f"""
+>>> division({n}, {m})
+{division(n, m)}
 """
 ==
 
@@ -44,9 +42,9 @@ Si **m** est égal à 0, alors votre fonction doit renvoyer "Division par 0".
 **Exemple :**
 
     >>> division(10, 4)
-    '10 / 4 = 2.5', '10 = 4 * 2 + 2'
+    ('10 / 4 = 2.5', '10 = 4 * 2 + 2')
     >>> division(1, 4)
-    '1 / 4 = 0.25', '1 = 4 * 0 + 1'
+    ('1 / 4 = 0.25', '1 = 4 * 0 + 1')
     >>> division(10, 0)
     'Division par 0'
 
@@ -57,7 +55,14 @@ editor.code==
 
 ==
 
-
+pltest==
+>>> division(10, 4)
+('10 / 4 = 2.5', '10 = 4 * 2 + 2')
+>>> division(1, 4)
+('1 / 4 = 0.25', '1 = 4 * 0 + 1')
+>>> division(10, 0)
+'Division par 0'
+==
 
 
 
