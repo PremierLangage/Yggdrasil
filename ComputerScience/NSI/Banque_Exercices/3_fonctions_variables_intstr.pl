@@ -39,6 +39,7 @@ def entierchaine(n, n):
 pltest1=f"""
 >>> entierchaine({n},{m})
 {entierchaine(n, n)}
+"""
 ==
 
 
