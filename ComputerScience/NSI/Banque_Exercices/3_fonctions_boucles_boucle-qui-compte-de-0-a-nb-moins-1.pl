@@ -5,7 +5,7 @@ title = Boucle qui compte de 0 à `nb - 1`
 
 before==#|python|
 from random import randint
-n = randint(20, 25)
+n = randint(10, 15)
 
 def afficheboucle(n):
     res = ''
@@ -13,10 +13,10 @@ def afficheboucle(n):
         res += str(i) + '\n'
     return res
 
-#pltest1 = f"""
-#>>> afficheboucle({n})
-#{afficheboucle(n)}
-#"""
+pltest1 = f"""
+>>> afficheboucle({n})
+{afficheboucle(n)}
+"""
 ==
 
 text==
