@@ -3,7 +3,6 @@
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
-extends = /model/basic/inputgroup.pl
 
 nbechec%0
 
@@ -25,7 +24,8 @@ solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
-    inp = TextInput()
+    inp = Input()
+    globals()[f"input{i}"] = inp
     inputs.append(inp)
 ==
 
