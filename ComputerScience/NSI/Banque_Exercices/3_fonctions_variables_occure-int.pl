@@ -48,8 +48,8 @@ Test 4 |-2
 
 extends = /ComputerScience/python/template/pltest.pl
 # author = Zip
-tag=function
-title = Valeur absolue
+title=Distinguer un nombre !
+tag=function|variable|if|elif|else|conditionnelles
 
 text==
 Ecrivez une fonction `comparaison` ayant un unique paramètre `nombre` utilisant un **if elif else** retournant la chaîne de caractères:
