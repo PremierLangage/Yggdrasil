@@ -1,6 +1,9 @@
 title=Est-ce qu'il y a un impair ?
 extends=/ComputerScience/python/template/pltest.pl
 
+editor.code==
+==
+
 text==
 
 Ecrire une fonction ``exist_impairs`` qui prend une liste en paramètre 
