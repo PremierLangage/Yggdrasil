@@ -28,7 +28,7 @@ pltest="""
 """ % (d.day, d.month, d.year)
 ==
 
-code==
+editor.code==
 
 ==
 
