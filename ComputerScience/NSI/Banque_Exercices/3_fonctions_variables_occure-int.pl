@@ -9,14 +9,23 @@ title=Distinguer un nombre !
 tag=function|variable|if|elif|else|conditionnelles
 
 before==
-inconnu = 6
-inconnugrand = 7
-inconnupetit = 5
+from random import randint
+inconnu = randint(5, 70)
+inconnugrand = inconnu + randint(1,20)
+inconnupetit = inconnu - randint(1,20)
+inconnugrand1 = inconnu + randint(1,20)
+inconnupetit1 = inconnu - randint(1,20)
 
 pltest=f"""
 >>> comparaison({inconnugrand})
 'Trop grand !'
 >>> comparaison({inconnupetit})
+'Trop petit !'
+>>> comparaison({inconnu})
+'Tout juste !'
+>>> comparaison({inconnugrand1})
+'Trop grand !'
+>>> comparaison({inconnupetit1})
 'Trop petit !'
 """
 ==
