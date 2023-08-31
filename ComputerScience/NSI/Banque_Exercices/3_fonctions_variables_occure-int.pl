@@ -13,12 +13,12 @@ inconnu = 6
 inconnugrand = 7
 inconnupetit = 5
 
-pltest="""
->>> comparaison({{inconnugrand}})
+pltest=f"""
+>>> comparaison({inconnugrand})
 'Trop grand !'
->>> comparaison({{inconnupetit}})
+>>> comparaison({inconnupetit})
 'Trop petit !'
-""".format()
+"""
 ==
 
 
