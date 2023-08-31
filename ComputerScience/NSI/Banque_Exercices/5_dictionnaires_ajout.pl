@@ -14,6 +14,9 @@ Ecrire une fonction ``ajoute_dico(d, cle)`` qui ajoute au dictionnaire ``d`` la 
 La fonction renverra ``True`` si l'entrée a été ajoutée, ``False`` sinon.
 ==
 
+editor.code==
+==
+
 tag=dictionary
 
 samplesol==
