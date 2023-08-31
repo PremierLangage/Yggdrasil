@@ -15,6 +15,9 @@ Par exemple, si on avait une liste `l = [2, 6, 5, 8, 9]`, alors après l'appel `
 
 ==
 
+editor.code==
+==
+
 tag=reference|elementAccess|pop
 
 samplesol==
