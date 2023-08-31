@@ -92,19 +92,19 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 # @ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/suite-geometrique.pl
 # Faire une boucle croissante 
 # @ /ComputerScience/python/AP1-1920/drafts/zip/boucle1/bouclecroissant.pl
-@ /ComputerScience/NSI/Banque_Exercices/2_conditionnelles_boucles_bouclecroissant.pl
+@ /ComputerScience/NSI/Banque_Exercices/2_boucles_bouclecroissant.pl
 
 # Faire une boucle diviser 
 # @ /ComputerScience/python/AP1-1920/drafts/zip/boucle1/boucledivise.pl
-@ /ComputerScience/NSI/Banque_Exercices/2_conditionnelles_boucles_boucledivise.pl
+@ /ComputerScience/NSI/Banque_Exercices/2_boucles_boucledivise.pl
 
 
 
 # Faire une boucle avec des if
-@ /ComputerScience/NSI/Banque_Exercices/2_conditionnelles_boucles_boucleif-2122.pl
+@ /ComputerScience/NSI/Banque_Exercices/2_boucles_boucleif-2122.pl
 
 # Faire une boucle avec des chaines de caractères 
-@ /ComputerScience/NSI/Banque_Exercices/2_conditionnelles_boucles_bouclestr.pl
+@ /ComputerScience/NSI/Banque_Exercices/2_boucles_bouclestr.pl
 
 # Exercice avec des boucles while
 # @ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/dynawhile.pl
