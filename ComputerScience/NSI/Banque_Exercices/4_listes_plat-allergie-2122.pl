@@ -17,6 +17,9 @@ et de supprimer les ingrédients présents sur la liste d'allergies.
 **Les paramètres ne doivent pas être modifiés à la sortie de la fonction.**
 ==
 
+editor.code==
+==
+
 tag=elementAccess|in|append
 
 samplesol==
