@@ -18,10 +18,10 @@ En effet en python c'est la constante qui nous donne une indication de type.
 Ainsi :
 
 si
-``` 
-nom = "Dominique"  
-age= 120
-```
+
+    nom = "Dominique"  
+    age= 120
+
 **nom** est une chaine 
 **age** est un entier.
 
