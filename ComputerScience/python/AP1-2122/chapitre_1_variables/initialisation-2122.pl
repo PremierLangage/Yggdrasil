@@ -18,11 +18,9 @@ text==
 
 
 
-En effet en python c'est la constante qui nous donne une indication de type.
+En effet en python c'est la constante avec laquelle vous initialiser une référence qui nous donne une indication de type.
 
-Ainsi :
-
-si
+Ainsi si:
 
     nom = "Dominique"  
     age= 120
