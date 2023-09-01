@@ -17,16 +17,28 @@ Initialisez les variables jour, mois, annee avec la date du jour.
 before==
 import datetime
 d=datetime.datetime.now()
-pltest="""
+pltest0="""
 >>> jour #  le jour 
 %d
 >>> mois # le mois
 %d
->>> annee # l'ann&eacute;e 
+>>> annee # l'année 
 %d
 >>>
 """ % (d.day, d.month, d.year)
 ==
+
+testname1="Affectation multiple"
+pltest1==
+>>> with open("student.py") as f:
+...   s = f.read() #
+>>> s.count("=") # Un seul égal dans la solution 
+1
+==
+
+
+
+
 
 code==
 
