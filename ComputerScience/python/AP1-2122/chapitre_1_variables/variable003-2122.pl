@@ -10,10 +10,10 @@ text==
 
 Initialisez les variables jour, mois, annee avec la date du jour.
 
-Utiliser un seul caractère = dans votre code en utilisant le principe de l'affectation multiple.
+Utiliser un seul caractère = dans votre code en utilisant le principe de l'affectation parallèle.
 
 
-Sur google Cherchez "python3 affectation multiple". 
+Sur google Cherchez "python3 affectation parallèle". 
 Attention a=b=3 et a,b = 2,4 ne donne pas les mêmes résultats.
 
 
