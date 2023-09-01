@@ -14,7 +14,7 @@ Utiliser un seul caractère = dans votre code en utilisant le principe de l'affe
 
 
 Sur google Cherchez "python3 affectation parallèle". 
-Attention a=b=3 et a,b = 2,4 ne donne pas les mêmes résultats.
+Attention a=b=3 (multiple) et a,b = 2,4 (parallèle) ne donne pas les mêmes résultats.
 
 
 
