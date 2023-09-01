@@ -25,11 +25,9 @@ Ainsi si:
     nom = "Dominique"  
     age= 120
 
+alors
 **nom** est une chaine 
 **age** est un entier.
-
-
-
 ==
 
 editor.height = 80
