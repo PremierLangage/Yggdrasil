@@ -43,7 +43,7 @@ corrects = {  # mots aléatoires
 # mot qui resemble a des mots clefs 
     "abc","front","back","encore","boucle","Null","NONE","TRUE","top","up","bottom","stop"
 }
-}
+
 incorrects = set(
     kwlist  # les mots-clés de Python
 ) | {  # mots aléatoires avec des chiffres au début
