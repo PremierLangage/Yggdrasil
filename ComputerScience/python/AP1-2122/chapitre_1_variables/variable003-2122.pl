@@ -12,8 +12,8 @@ Initialisez les variables jour, mois, annee avec la date du jour.
 
 Utiliser un seul caractère = dans votre code en utisant le principe de l'affectation multiple.
 
-<a href="https://docs.python.org/fr/3/tutorial/inputoutput.html"> la doc de print </a>
-Ou google "print python3" 
+
+Sur google Cherchez "python3 affectation multiple" 
 ==
 
 @ /builder/before.py [builder.py]
