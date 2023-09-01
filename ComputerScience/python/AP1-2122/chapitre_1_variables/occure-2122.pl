@@ -30,7 +30,7 @@ lettre=input()
 text==
 Ecrivez un programme utilisant des **if elif else** emboités et 
 une unique variable **lettre** qui lit un seul caractère au clavier 
-et affiche s'il appartient ou non à la suite : "{{MOT}}"
+et affiche s'il appartient ou non à la suite de caractères : "{{MOT}}"
 
 ==
 
