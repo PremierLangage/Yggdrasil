@@ -26,7 +26,7 @@ for i in range(N):
     inp = Input()
     globals()[f"input{i}"] = inp
     inputs.append(inp)
-lkhlkuh
+
 ==
 
 evaluator== #|python|
