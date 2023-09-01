@@ -18,7 +18,7 @@ ope2 = [random.choice(list({'+','*','-','//'}-{ope[n]})) for n in range(N)]
 
 res = [ eval(op1[n]+ope[n]+op2[n]+ope2[n]+op3[n]) for n in range(N)]
 
-text += beurk= op1+op2+ope+ope2+res
+= beurk= op1+op2+ope+ope2+res
 solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
 inputs = []
@@ -26,6 +26,7 @@ for i in range(N):
     inp = Input()
     globals()[f"input{i}"] = inp
     inputs.append(inp)
+lkhlkuh
 ==
 
 evaluator== #|python|
