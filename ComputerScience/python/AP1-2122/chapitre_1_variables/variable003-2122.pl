@@ -10,6 +10,9 @@ text==
 
 Initialisez les variables jour, mois, annee avec la date du jour.
 
+Utiliser un seul caractère = dans votre code en utisant le principe de l'affectation multiple.
+
+
 ==
 
 @ /builder/before.py [builder.py]
