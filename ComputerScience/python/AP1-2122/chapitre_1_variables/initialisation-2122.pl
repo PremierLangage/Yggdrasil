@@ -10,9 +10,17 @@ tag=initialisation|variable|type
 title = Initialisation et constantes
 
 text==
- Initialisez la variable **{{var}}** avec une valeur quelconque
+ Initialisez la variable **{{var}}** avec une valeur de votre choix mais
  de type **{{type_var}}** 
 
+En effet en python c'est la constante qui nous donne une indication de type.
+
+Ainsi :
+
+**nom = "Dominique"**
+nom est une chaine 
+**age= 120**
+age est un entier.
 
 
 
@@ -23,8 +31,8 @@ editor.height = 80
 before== #|python| 
 import random 
 random.seed(seed)
-type_var = random.choice(["int","str","float","bool",None])
-var = random.choice(["a", "b", "c", "X", "Y","PIERRE","feuille","ciseaux"])
+type_var = random.choice(["int","str","float","bool","int","str","float","bool","int","str","float","bool",None])
+var = random.choice(["a", "b", "c", "X", "Y","PIERRE","feuille","ciseaux", "Eiffel","Gustave","univ_eiffel_fr"])
 
 pltest0="""
 >>> "{}" in globals() # La variable {} est elle d&eacute;finie ?
