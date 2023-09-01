@@ -21,6 +21,9 @@ else:
 code==
 # lecture au clavier, affectation
 nombre=int(input())
+print("Trop grand !")
+print("Trop petit !")
+print("Tout juste !")
 ==
 
 text==
