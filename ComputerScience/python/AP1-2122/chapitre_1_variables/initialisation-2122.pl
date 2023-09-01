@@ -10,8 +10,13 @@ tag=initialisation|variable|type
 title = Initialisation et constantes
 
 text==
- Initialisez la variable **{{var}}** avec une valeur de votre choix mais
+
+## Initialisez la variable **{{var}}** avec une valeur de votre choix mais
  de type **{{type_var}}** 
+
+
+
+
 
 En effet en python c'est la constante qui nous donne une indication de type.
 
