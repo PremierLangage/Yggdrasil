@@ -19,7 +19,7 @@ Ainsi :
 
 si
 ``` 
-nom = "Dominique"
+nom = "Dominique"  
 age= 120
 ```
 **nom** est une chaine 
