@@ -9,7 +9,8 @@ tag=InstructionsRepetitives|While
 title = Suite de Syracuse
 
 code==
-... = input("Un nombre : ")
+# utilisez l'input suivant : 
+input("Un nombre : ")
 
 ==
 
