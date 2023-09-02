@@ -31,6 +31,8 @@ Ecrire un programme qui lit un entier naturel et qui calcule et affiche les él�
 
 **Le code ne doit rien faire quand l'entrée n'est pas valide !**
 
+
+<a href="https://fr.wikipedia.org/wiki/Conjecture_de_Syracuse"> Plus d'info sur Syracuse.</a>
 ==
 
 soluce==
