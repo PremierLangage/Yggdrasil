@@ -19,9 +19,10 @@ before==
 ==
 
 text==  
-On appelle suite de Syracuse une suite d’entiers naturels définie de la manière suivante : On
-part d’un nombre entier plus grand que zéro ; s’il est pair, on le divise par 2 ;
- s’il est impair, on le multiplie par 3 et on ajoute 1.
+On appelle suite de Syracuse une suite d’entiers naturels définie de la manière suivante :  
+    On part d’un nombre entier plus grand que zéro  
+    s’il est pair, on le divise par 2 ;
+    s’il est impair, on le multiplie par 3 et on ajoute 1.
 
 Cette suite atteint 1 quelle que soit la valeur initiale. (Ceci n'a jamais été démontré !!!)
 
