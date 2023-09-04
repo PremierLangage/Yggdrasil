@@ -62,7 +62,7 @@
 
 ** Selectionner les déclarations correctes.
 + L'indentation en C est très importante car on peut mettre des espaces, <br /> des tabulations et des retours à la ligne un peu partout.
-+ Un programme C est une collection de fonctions qui s'articulent <br /> autour d'un main.
++ Un programme C est une collection de fonctions qui s'articulent <br /> autour d'une fonction main.
 - Un programme C est composé de classes modélisant des objets.
 - Le langage C est un langage fonctionnel.
 - Le langage C utilise principalement des balises ouvrantes et fermantes.
