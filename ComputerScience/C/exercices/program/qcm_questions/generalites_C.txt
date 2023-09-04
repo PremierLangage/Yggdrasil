@@ -80,7 +80,7 @@
 
 
 ** Selectionner les déclarations correctes à propos des variables en C.
-+ Un programme C peut utiliser autant de variables que possible <br /> si la mémoire est suffisante.
++ Un programme C peut utiliser autant de variables que nécessaire <br /> si la mémoire est suffisante.
 + Deux variables locales peuvent porter le même nom si elle ne sont pas <br /> dans les mêmes fonctions.
 - Un programme C ne peut pas utiliser plus de 1024 variables.
 - Un programme C exploite toujours exactement deux variables : *argc* et *argv*.
