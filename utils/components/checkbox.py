@@ -5,7 +5,7 @@ from scoring import *
 
 
 
-class CustomCheckbox:
+class CustomCheckbox(Component):
 
     def __init__(self, **kwargs):
         self.selector = 'c-checkbox-group'
