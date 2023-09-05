@@ -15,23 +15,9 @@ nom = random.choice(['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose',
 mplsoluce0="Test tiré aléatoirement \n{}\n".format(nom)
 soluce=f'{variable}="{nom}"\nprint("bonjour", {variable})'
 # code=f'{variable}="{nom}" # NE PAS EFFACER CETTE LIGNE\n'
-grader=f"""#|python|
-# Ouvre un "groupe de tests" de titre donné
-begin_test_group("Test")
-# Dans cet exemple on veut faire un test pour chaque permutation de (1, 2, 3)
-# On utilise ici un style "verbeux" avec plusieurs appels
-set_title(f"Test")
-# Fixe les variables globales disponibles pour les prochaines exécution
-
-# Lance l'exécution du programme dans les conditions spécifiées
-run()
-# Vérifie la sortie standard obtenue
-assert_output('bonjour ' + {nom} + '\n')
-# Vérifie que les variables globales n'ont pas changé
-assert_no_global_change()
-# Clôt le précédent groupe de tests
-end_test_group()
-"""
+grader=f"#|python|\n
+# Ouvre un "groupe de tests" de titre donné\n
+begin_test_group("Test")\n# Dans cet exemple on veut faire un test pour chaque permutation de (1, 2, 3)\n# On utilise ici un style "verbeux" avec plusieurs appels\nset_title(f"Test")\n# Fixe les variables globales disponibles pour les prochaines exécution\nset_globals({variable}={nom})\n# Lance l'exécution du programme dans les conditions spécifiées\nrun()\n# Vérifie la sortie standard obtenue\nassert_output('bonjour ' + {nom} + '\n')\n# Vérifie que les variables globales n'ont pas changé\nassert_no_global_change()\n# Clôt le précédent groupe de tests\nend_test_group()"
 
 ==
 
