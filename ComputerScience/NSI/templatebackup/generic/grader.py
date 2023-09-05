@@ -21,7 +21,7 @@
 
 import inspect
 import test
-
+import sandboxio
 
 def _get_student_code(exercise_context: dict):
     if "editor" not in exercise_context:
