@@ -2,7 +2,7 @@
 # author emmanuel brunache
 
 # Heritage d'un type d'exercice 
-extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
+extends = /ComputerScience/NSI/templatebackup/generic/generic.pl
 @ /builder/before.py [builder.py]
 title = Affichage
 
