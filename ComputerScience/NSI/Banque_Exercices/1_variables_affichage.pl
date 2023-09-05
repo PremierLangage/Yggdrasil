@@ -13,6 +13,7 @@ import random
 variable = random.choice(['prenom', 'nom', 'surnom', 'blaze', 'sobriquet'])
 nom = random.choice(['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé'])
 mplsoluce0="Test tiré aléatoirement \n{}\n".format(nom)
+soluce=f'print("bonjour", {variable})'
 ==
 
 text==  
@@ -23,9 +24,7 @@ Afficher le texte 'bonjour {{variable}}' où {{variable}} est bien entendu rempl
 
 
 
-soluce==
-print("bonjour", variable)
-==
+
 
 
 
