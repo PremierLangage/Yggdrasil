@@ -24,6 +24,8 @@ set_title(f"Test")
 # Fixe les variables globales disponibles pour les prochaines exécution
 set_globals({variable}='{nom}')
 # Lance l'exécution du programme dans les conditions spécifiées
+run()
+# Vérifie la sortie standard obtenue
 
 # Vérifie que les variables globales n'ont pas changé
 assert_no_global_change()
