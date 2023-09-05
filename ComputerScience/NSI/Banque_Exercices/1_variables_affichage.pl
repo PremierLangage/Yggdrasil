@@ -19,7 +19,7 @@ mplsoluce0="Test tiré aléatoirement \n{}\n".format(nom)
 grader=f"""#|python|
 # Ouvre un "groupe de tests" de titre donné
 for nom in ['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé']: 
-    begin_test_group("Test " + n)
+    begin_test_group("Test " + nom)
     # Dans cet exemple on veut faire un test pour chaque permutation de (1, 2, 3)
     # On utilise ici un style "verbeux" avec plusieurs appels
     set_title(f"Test")
