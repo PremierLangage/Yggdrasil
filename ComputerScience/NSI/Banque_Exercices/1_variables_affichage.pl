@@ -33,7 +33,7 @@ for nom in ['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé'
 
 ==
 
-editor =:
+
 
 
 text==  
