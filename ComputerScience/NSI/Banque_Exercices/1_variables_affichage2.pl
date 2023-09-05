@@ -25,7 +25,7 @@ for nom in ['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé'
         # Lance l'exécution du programme dans les conditions spécifiées
         run()
         # Vérifie la sortie standard obtenue
-        assert_output("bonjour, je m'appelle " + nom + " et j'ai " + age + ' ans\\n')
+        assert_output("bonjour, je m'appelle " + nom + " et j'ai " + str(age) + ' ans\\n')
         # Vérifie que les variables globales n'ont pas changé
         assert_no_global_change()
         # Clôt le précédent groupe de tests
