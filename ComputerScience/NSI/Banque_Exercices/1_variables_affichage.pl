@@ -10,8 +10,9 @@ tag= print|variable|operation
 
 before==#|python|
 import random
-variable = random.choice(['prenom', 'nom', 'surnom', 'blaze', 'sobriquet'])
+variable = random.choice(['prenom', 'name', 'surnom', 'blaze', 'sobriquet'])
 nom = random.choice(['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé'])
+globals()[variable] = nom
 mplsoluce0="Test tiré aléatoirement \n{}\n".format(nom)
 soluce=f'variable="{nom}"\nprint("bonjour", variable)'
 ==
