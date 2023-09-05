@@ -13,7 +13,7 @@ import random
 variable = random.choice(['prenom', 'nom', 'surnom', 'blaze', 'sobriquet'])
 nom = random.choice(['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé'])
 mplsoluce0="Test tiré aléatoirement \n{}\n".format(nom)
-soluce='print("bonjour", variable)'
+soluce=f'variable={nom}\nprint("bonjour", variable)'
 ==
 
 text==  
