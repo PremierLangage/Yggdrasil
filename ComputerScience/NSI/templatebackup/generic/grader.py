@@ -28,8 +28,8 @@ def _get_student_code(exercise_context: dict):
         raise test.GraderError(missing_editor)
     editor_id = exercise_context["editor"].cid
     answers = sandboxio.get_answers()
-    print(answers[editor_id])
-    return answers[editor_id]["code"]
+    print(answers['answer'])
+    return answers['answer']
 
 
 def grade_this(code: str, tests: str, context: dict):
