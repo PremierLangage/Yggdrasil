@@ -28,7 +28,7 @@ def _get_student_code(exercise_context: dict):
         raise test.GraderError(missing_editor)
     editor_id = exercise_context["editor"].cid
     answers = sandboxio.get_answers()
-    print(answers['answer'])
+    # print(answers['answer'])
     return answers['answer']
 
 
