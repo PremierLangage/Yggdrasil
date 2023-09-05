@@ -4,7 +4,7 @@
 # Heritage d'un type d'exercice 
 extends = /ComputerScience/NSI/templatebackup/generic/generic.pl
 @ /builder/before.py [builder.py]
-title = Affichage
+title = Affichage 2 variables
 
 tag= print|variable|operation
 
