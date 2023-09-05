@@ -33,10 +33,3 @@ editor.code==
 ==
 
 extends=/ComputerScience/python/template/pltest.pl
-
-
-
-
-
-
-
