@@ -15,7 +15,7 @@ variable = random.choice(['prenom', 'name', 'surnom', 'blaze', 'sobriquet'])
 nom = random.choice(['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé'])
 mplsoluce0="Test tiré aléatoirement \n{}\n".format(nom)
 soluce=f'{variable}="{nom}"\nprint("bonjour", {variable})'
-stdout_tests=f"""print("bonjour", {variable})"""
+stdout_tests=f"""print("bonjour", {nom})"""
 # code=f'{variable}="{nom}" # NE PAS EFFACER CETTE LIGNE\n'
 with open("student.py","w") as sf:
         sf.write(f'{variable}="{nom}"')
