@@ -1,6 +1,6 @@
 # author = Antoine Meyer
 
-extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
+extends = /ComputerScience/NSI/templatebackup/generic/generic.pl
 
 title = Échange de deux variables
 
