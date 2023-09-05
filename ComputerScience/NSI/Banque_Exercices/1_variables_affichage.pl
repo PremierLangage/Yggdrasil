@@ -33,8 +33,6 @@ for nom in ['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé'
 
 ==
 
-form=@ /python/form/editorform.html
-
 
 text==  
 Supposons que la variable `{{variable}}` soit initrialisée avec une valeur de type chaine de caractère.
