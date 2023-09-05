@@ -20,7 +20,8 @@ editor.code ==
 ==
 
 # le formulaire de l'exercice contient uniquement l'éditeur
-form=@ /python/form/editorform.html
+# form=@ /python/form/editorform.html
+form=@ /form/text_editor.html
 
 # définition de la procédure de validation
 grader==
