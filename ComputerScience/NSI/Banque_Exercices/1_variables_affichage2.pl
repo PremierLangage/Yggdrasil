@@ -13,7 +13,6 @@ import random
 variable = random.choice(['prenom', 'name', 'surnom', 'blaze', 'sobriquet'])
 tabnom = ['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé']
 grader=f"""#|python|
-# Ouvre un "groupe de tests" de titre donné
 for nom in ['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé']:
     for age in [14, 15, 16, 17, 18]:
         begin_test_group("Test " + nom)
