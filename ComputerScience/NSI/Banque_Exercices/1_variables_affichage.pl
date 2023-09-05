@@ -13,7 +13,7 @@ import random
 variable = random.choice(['prenom', 'name', 'surnom', 'blaze', 'sobriquet'])
 nom = random.choice(['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé'])
 mplsoluce0="Test tiré aléatoirement \n{}\n".format(nom)
-soluce=f'{variable}="{nom}"\nprint("bonjour", {variable})'
+# soluce=f'{variable}="{nom}"\nprint("bonjour", {variable})'
 # code=f'{variable}="{nom}" # NE PAS EFFACER CETTE LIGNE\n'
 grader=f"""#|python|
 # Ouvre un "groupe de tests" de titre donné
