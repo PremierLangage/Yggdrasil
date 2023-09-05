@@ -12,10 +12,6 @@ before==#|python|
 import random
 variable = random.choice(['prenom', 'name', 'surnom', 'blaze', 'sobriquet'])
 tabnom = ['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé']
-nom = random.choice(['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé'])
-mplsoluce0="Test tiré aléatoirement \n{}\n".format(nom)
-# soluce=f'{variable}="{nom}"\nprint("bonjour", {variable})'
-# code=f'{variable}="{nom}" # NE PAS EFFACER CETTE LIGNE\n'
 grader=f"""#|python|
 # Ouvre un "groupe de tests" de titre donné
 for nom in ['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé']: 
