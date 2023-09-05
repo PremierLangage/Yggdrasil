@@ -37,9 +37,9 @@ for nom in ['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé'
 
 
 text==  
-Supposons que la variable {{variable}} soit initrialisée avec une valeur de type chaine de caractère.
+Supposons que la variable `{{variable}}` soit initrialisée avec une valeur de type chaine de caractère.
 
-Afficher le texte 'bonjour {{variable}}' où {{variable}} est bien entendu remplacé par sa valeur
+Afficher le texte 'bonjour {{variable}}' où `{{variable}}` est bien entendu remplacé par sa valeur
 ==
 
 
