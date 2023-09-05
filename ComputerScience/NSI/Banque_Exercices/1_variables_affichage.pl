@@ -22,7 +22,7 @@ for nom in ['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé'
     begin_test_group("Test " + nom)
     # Dans cet exemple on veut faire un test pour chaque permutation de (1, 2, 3)
     # On utilise ici un style "verbeux" avec plusieurs appels
-    set_title(f"Test")
+    # set_title(f"Test")
     # Fixe les variables globales disponibles pour les prochaines exécution
     set_globals({variable}=nom)
     # Lance l'exécution du programme dans les conditions spécifiées
