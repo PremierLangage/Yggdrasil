@@ -2,8 +2,7 @@
 # author emmanuel brunache
 
 # Heritage d'un type d'exercice 
-# extends=/ComputerScience/python/template/soluce.pl
-extends = /template/python.pl
+extends = /ComputerScience/python/AP1-1920/templates/generic/generic.pl
 @ /builder/before.py [builder.py]
 title = Affichage
 
@@ -15,11 +14,28 @@ variable = random.choice(['prenom', 'name', 'surnom', 'blaze', 'sobriquet'])
 nom = random.choice(['Jade', 'Louise', 'Emma', 'Alice', 'Ambre', 'Lina', 'Rose', 'Chloé'])
 mplsoluce0="Test tiré aléatoirement \n{}\n".format(nom)
 soluce=f'{variable}="{nom}"\nprint("bonjour", {variable})'
-stdout_tests=f"""bonjour {nom}"""
 # code=f'{variable}="{nom}" # NE PAS EFFACER CETTE LIGNE\n'
-with open("student.py","w") as sf:
-        sf.write(f'{variable}="{nom}"')
+grader=f"""#|python|
+# Ouvre un "groupe de tests" de titre donné
+begin_test_group("Test")
+# Dans cet exemple on veut faire un test pour chaque permutation de (1, 2, 3)
+# On utilise ici un style "verbeux" avec plusieurs appels
+set_title(f"Test")
+# Fixe les variables globales disponibles pour les prochaines exécution
+set_globals({variable}={nom})
+# Lance l'exécution du programme dans les conditions spécifiées
+run()
+# Vérifie la sortie standard obtenue
+assert_output('bonjour ' + {nom} + '\n')
+# Vérifie que les variables globales n'ont pas changé
+assert_no_global_change()
+# Clôt le précédent groupe de tests
+end_test_group()
+"""
+
 ==
+
+
 
 text==  
 Supposons que la variable {{variable}} soit initrialisée avec une valeur de type chaine de caractère.
