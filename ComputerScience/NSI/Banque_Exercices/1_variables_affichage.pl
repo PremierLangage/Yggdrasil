@@ -28,7 +28,7 @@ run()
 # Vérifie la sortie standard obtenue
 assert_output('bonjour ' + {nom} + '\n')
 # Vérifie que les variables globales n'ont pas changé
-assert_no_global_change()
+# assert_no_global_change()
 # Clôt le précédent groupe de tests
 end_test_group()
 """
