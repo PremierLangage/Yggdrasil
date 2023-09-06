@@ -290,16 +290,16 @@ class AutoInput(TextInput):
             self.data['autocomplete'] = items.splitlines()
         else:
             self.data['autocomplete'] = items
-
-    def eval(self):
-        """
-        Evaluate the input field.
-        """
-        if self.sol == self.data['value']:
-            self.score = 100
-        else:
-            self.score = 0
-        return self.score
+    # mail du 6 semptembre 
+    # def eval(self):
+    #     """
+    #     Evaluate the input field.
+    #     """
+    #     if self.sol == self.data['value']:
+    #         self.score = 100
+    #     else:
+    #         self.score = 0
+    #     return self.score
 
 class NumInput(SingleComponent):
 
