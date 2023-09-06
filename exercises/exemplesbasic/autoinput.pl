@@ -275,5 +275,5 @@ before==
 for x in sol.split("\n"):
     if x not in items.split("\n"):
         question += "not "+x 
-
+        items += x +"\n"
 ==
