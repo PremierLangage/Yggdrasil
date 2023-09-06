@@ -5,63 +5,109 @@ extends = /model/basic/autoinput.pl
 
 
 valeurs==
-Albanie	Tirana
-Allemagne	Berlin
-Andorre	Andorre-la-Vieille
-Arménie	Erevan
-Autriche	Vienne
-Azerbaïdjan	Bakou
-Belgique	Bruxelles
-Biélorussie	Minsk
-Bosnie-Herzégovine	Sarajevo
-Bulgarie	Sofia
-Croatie	Zagreb
-Danemark	Copenhague
-Espagne	Madrid
-Estonie	Tallinn
-Finlande	Helsinki
-France	Paris
-Géorgie	Tbilissi
-Grèce	Athènes
-Hongrie	Budapest
-Irlande	Dublin
-Islande	Reykjavik
-Italie	Rome
-Lettonie	Riga
-Liechtenstein	Vaduz
-Lituanie	Vilnius
-Luxembourg	Luxembourg
-Macédoine	Skopje
-Malte	La Valette
-Moldavie	Chisinau
-Monaco	Communauté de Monaco
-Monténégro	Podgorica
-Norvège	Oslo
-Pays-Bas	Amsterdam
-Pologne	Varsovie
-Portugal	Lisbonne
-République Tchèque	Prague
-Roumanie	Bucarest
-Royaume-Uni	Londres
-Russie	Moscou
-Saint-Marin	Ville de Saint Marin
-Serbie	Belgrade
-Slovaquie	Bratislava
-Slovénie	Ljubljana
-Suède	Stockholm
-Suisse	Berne
-Turquie	Ankara
-Ukraine	Kiev
-Vatican	Vatican
+Tirana
+Berlin
+Andorre-la-Vieille
+Erevan
+Vienne
+Bakou
+Bruxelles
+Minsk
+Sarajevo
+Sofia
+Zagreb
+Copenhague
+Madrid
+Tallinn
+Helsinki
+Paris
+Tbilissi
+Athènes
+Budapest
+Dublin
+Reykjavik
+Rome
+Riga
+Vaduz
+Vilnius
+Luxembourg
+Skopje
+LaValette
+Chisinau
+Monaco
+Podgorica
+Oslo
+Amsterdam
+Varsovie
+Lisbonne
+Prague
+Bucarest
+Londres
+Moscou
+Saint Marin
+Belgrade
+Bratislava
+Ljubljana
+Stockholm
+Berne
+Ankara
+Kiev
+Vatican
 ==
 
 
 sol ==
-
+Tirana
+Berlin
+Andorre-la-Vieille
+Erevan
+Vienne
+Bakou
+Bruxelles
+Minsk
+Sarajevo
+Sofia
+Zagreb
+Copenhague
+Madrid
+Tallinn
+Helsinki
+Paris
+Tbilissi
+Athènes
+Budapest
+Dublin
+Reykjavik
+Rome
+Riga
+Vaduz
+Vilnius
+Luxembourg
+Skopje
+LaValette
+Chisinau
+Monaco
+Podgorica
+Oslo
+Amsterdam
+Varsovie
+Lisbonne
+Prague
+Bucarest
+Londres
+Moscou
+Saint Marin
+Belgrade
+Bratislava
+Ljubljana
+Stockholm
+Berne
+Ankara
+Kiev
+Vatican
 ==
 
 items ==
-
 
 ==
 
@@ -70,4 +116,5 @@ prefix = "Réponse :"
 # Question and input block
 
 question ==
+Citez une capitales européennes
 ==
