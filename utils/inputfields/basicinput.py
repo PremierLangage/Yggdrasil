@@ -278,7 +278,7 @@ class AutoInput(TextInput):
 
     def __init__(self, **kwargs):
 # modif to get elments for eval
-        super(TextInput, self).__init__(**kwargs)
+        super().__init__(**kwargs)
         if 'data' not in kwargs:
             self.data = {'selector': 'c-input', 'cid': str(uuid4())}
         for k, v in kwargs.items():
