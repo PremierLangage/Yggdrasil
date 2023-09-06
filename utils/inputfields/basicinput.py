@@ -223,7 +223,7 @@ class TextInput(SingleComponent):
             self.score = 100
         else:
             if self.data['value'] in self.sol:
-                self.scoe =50
+                self.score =50
             else:
                 self.score = 0
         return self.score      
