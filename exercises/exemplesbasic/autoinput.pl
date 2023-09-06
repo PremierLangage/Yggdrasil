@@ -267,6 +267,10 @@ prefix = "Réponse :"
 # Question and input block
 
 question ==
+
+#un exemple avec plein de bonnes réponses
+
+
 Citez une capitale européennes
 ==
 
