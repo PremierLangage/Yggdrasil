@@ -277,7 +277,7 @@ def edit_distance(s1, s2):
 class AutoInput(TextInput):
 
     def __init__(self, **kwargs):
-        super(**kwargs)
+        super(TextInput, self).__init___(**kwargs)
         if 'data' not in kwargs:
             self.data = {'selector': 'c-input', 'cid': str(uuid4())}
         for k, v in kwargs.items():
