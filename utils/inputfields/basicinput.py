@@ -219,12 +219,13 @@ class TextInput(SingleComponent):
         """
         Evaluate the input field.
         """
-        if any([samestrings(self.data['value'], item, **self.evalparam) for item in self.sol]):
+        # direct 
+        if self.data['value'] in self.sol:
+            self.score =100
+        # Evaluation plus floue ;)
+        elif any([samestrings(self.data['value'], item, **self.evalparam) for item in self.sol]):
             self.score = 100
         else:
-            if self.data['value'] in self.sol:
-                self.score =50
-            else:
                 self.score = 0
         return self.score      
 
