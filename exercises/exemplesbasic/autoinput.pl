@@ -276,6 +276,7 @@ Citez une capitale européennes
 
 before==
 
+# je n'ai pas le temps de vérifier que toutes les réponses sont dans la liste des items.
 for x in sol.split("\n"):
     if x not in items.split("\n"):
         # question += "not "+x 
