@@ -4,58 +4,6 @@ extends = /model/basic/autoinput.pl
 # Specific keys
 
 
-valeurs==
-Tirana
-Berlin
-Andorre-la-Vieille
-Erevan
-Vienne
-Bakou
-Bruxelles
-Minsk
-Sarajevo
-Sofia
-Zagreb
-Copenhague
-Madrid
-Tallinn
-Helsinki
-Paris
-Tbilissi
-Athènes
-Budapest
-Dublin
-Reykjavik
-Rome
-Riga
-Vaduz
-Vilnius
-Luxembourg
-Skopje
-LaValette
-Chisinau
-Monaco
-Podgorica
-Oslo
-Amsterdam
-Varsovie
-Lisbonne
-Prague
-Bucarest
-Londres
-Moscou
-Saint Marin
-Belgrade
-Bratislava
-Ljubljana
-Stockholm
-Berne
-Ankara
-Kiev
-Vatican
-==
-
-
 sol ==
 Tirana
 Berlin
@@ -224,7 +172,7 @@ City of Brussels
 Luxembourg
 Helsinki
 Stockholm
-Warsaw
+Varsovie
 Vilnius
 Rome
 Bern
@@ -320,4 +268,12 @@ prefix = "Réponse :"
 
 question ==
 Citez une capitale européennes
+==
+
+before==
+
+for x in sol:
+    if x not in items:
+        question += "not "+x 
+
 ==
