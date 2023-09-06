@@ -272,8 +272,8 @@ Citez une capitale européennes
 
 before==
 
-for x in sol:
-    if x not in items:
+for x in sol.split("\n"):
+    if x not in items.split("\n"):
         question += "not "+x 
 
 ==
