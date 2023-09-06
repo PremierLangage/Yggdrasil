@@ -222,7 +222,10 @@ class TextInput(SingleComponent):
         if any([samestrings(self.data['value'], item, **self.evalparam) for item in self.sol]):
             self.score = 100
         else:
-            self.score = 0
+            if self.data['value'] in self.sol:
+                self.scoe =50
+            else:
+                self.score = 0
         return self.score      
 
     def display_feedback(self):
