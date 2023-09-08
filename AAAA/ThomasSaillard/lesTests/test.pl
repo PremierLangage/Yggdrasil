@@ -3,7 +3,7 @@
 
 title = Les tests 
 
-statement==
+text==
 
 Ce test a pour objectif de tester les capacités du model pltest2022.
 
