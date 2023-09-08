@@ -24,7 +24,7 @@ l'équipe.
 
 
 Si vous n'avez pas de python installé sur votre machine et vous voulez tester quelque chose si suffit de clicker sur 
-<a href="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"> pyodide </a>
+<a href="https://pyodide.org/en/stable/console.html"> pyodide </a>
 
 ==
 
