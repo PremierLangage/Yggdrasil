@@ -11,7 +11,7 @@ text==#|markdown|
 
 editor =: CodeEditor
 editor.theme=dark
-editor.language=asm
+editor.language=Assembly
 
 editor.code==#|asm|
 section .text
