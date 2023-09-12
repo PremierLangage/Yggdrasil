@@ -34,9 +34,6 @@ Ne pas oublier de faire l'import du module re !
 text==
 Ecrire une fonction **debut(motif,text)** qui retourne si *True* ou *False* le motif est présent 
 au début du texte.  
-
-Ne pas oublier de faire l'import du module re !
-
 ==
 
 before==
