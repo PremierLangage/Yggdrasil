@@ -8,8 +8,6 @@ text==
 
 Ecrire une fonction **number(motif,texte)** qui retourne le nombre d'occurrence du motif dans le texte.  
 
-Ne pas oublier de faire l'import du module re !
-
 ==
 
 
