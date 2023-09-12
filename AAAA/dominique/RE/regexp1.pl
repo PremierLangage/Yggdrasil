@@ -3,13 +3,13 @@
 extends=/ComputerScience/python/AP1-2122/template/pltest2023.pl
 
 
-title = la Méthode match du module re
+title = La méthode match
 
 text==
 
 # Sachant que 
 
-
+Le module des expressions régulière propose quatre fonctions de recherche :
 
     Méthode     Objectif     
     match()     Détermine si la RE fait correspond dès le début de la chaîne. 
