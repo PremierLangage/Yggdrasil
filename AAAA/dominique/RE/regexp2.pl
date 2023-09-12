@@ -30,9 +30,11 @@ Ne pas oublier de faire l'import du module re !
 pltest==
 >>> present("[Tt]oto","toto est la") #  [Tt]oto au début de "toto est la" 
 True
->>> present("[Tt]oto","IL est la toto au milieu ") #  [Tt]oto "IL est la Toto"
+>>> present("[Tt]oto","IL est la toto au milieu ") #  [Tt]oto "IL est la toToto"
 True
 >>> debut("[Tt]oto","Non non pas de confiture.") #  [Tt]oto absent de "Non non pas de confiture."
 False
 ==
+
+
 
