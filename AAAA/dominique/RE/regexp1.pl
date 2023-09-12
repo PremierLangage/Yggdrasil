@@ -2,6 +2,7 @@
 
 extends=/ComputerScience/python/AP1-2122/template/pltest2023.pl
 
+@ /builder/before.py [builder.py]
 
 title = La méthode match
 
