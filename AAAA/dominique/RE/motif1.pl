@@ -1,5 +1,5 @@
 
-
+extends= regexp1.pl
 
 title= Ecrire un motif RE
 
@@ -23,3 +23,4 @@ text==
 ==
 
 
+@ exemple
