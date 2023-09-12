@@ -188,20 +188,34 @@ evaluator_after == #|py|
 if int(score) >= 0:
     with get_session(table_class = SortlistResponse, base=Base) as session:
         session.add(
-            SortlistResponse(
-                student_id = user__id if user__id else session__id, 
-                username    = user__username,
-                firstname   = user__firstname,
-                lastname    = user__lastname,
-                email       = user__email,
-                title       = title,
-                text        = text,
-                grade       = score,
-                feedback    = feedback,
-                values       = json.dumps(answer)
-            ))
+        SortlistResponse(
+            student_id = user__id if user__id else session__id, 
+            username    = user__username,
+            firstname   = user__firstname,
+            lastname    = user__lastname,
+            email       = user__email,
+            title       = title,
+            text        = text,
+            grade       = score,
+            feedback    = feedback,
+            values       = json.dumps(answer)
+        ))
         session.commit()
 else :
     feedback = '<span class="error-state">Votre entrée est invalide</span>'
 grade = (score, feedback)
 ==
+
+     session.add(
+             Resonse(
+             student_id = user__id if user__id else session__id, 
+             username    = "testuser",
+             firstname   = "firstname user",
+             lastname    = "lastname user",
+             email       = "mail@user.fr",
+             title       = "le titre",
+             text        = "le text",
+             grade       = 100,
+             feedback    = "le feedback",
+         ))
+     session.commit() 
