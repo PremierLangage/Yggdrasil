@@ -5,8 +5,8 @@ extends=/ComputerScience/python/AP1-2122/template/pltest2023.pl
 
 title = La méthode match
 
-text==
 
+doc==
 # Sachant que 
 
 Le module des expressions régulière propose quatre fonctions de recherche :
@@ -17,7 +17,11 @@ Le module des expressions régulière propose quatre fonctions de recherche :
     findall()   Trouve toutes les sous-chaînes qui correspondent à la RE et les renvoie sous la forme d'une liste. 
     finditer()  Trouve toutes les sous-chaînes qui correspondent à la RE et les renvoie sous la forme d'un itérateur. 
 
+Utilisable soit réalisés sur une expression compilé soit en fournissant le motif en premier paramètre.
 
+==
+
+text==
 Ecrire une fonction **debut(motif,text)** qui retourne si *True* ou *False* le motif est présent 
 au début du texte.  
 
@@ -25,7 +29,11 @@ Ne pas oublier de faire l'import du module re !
 
 ==
 
+before==
 
+text = doc + text
+
+==
 
 pltest==
 >>> debut("[Tt]oto","toto est la") #  [Tt]oto au début de "toto est la" 
