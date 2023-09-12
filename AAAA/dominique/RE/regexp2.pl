@@ -1,8 +1,7 @@
 
 
 
-extends=/ComputerScience/python/AP1-2122/template/pltest2023.pl
-
+extends=regexp1.pl 
 
 title = La méthode match
 
@@ -10,7 +9,7 @@ text==
 
 # Sachant que 
 
-Dans le module des expressions régulière les expressions ont quatre fonction de recherche :
+Dans le module des expressions régulière propose quatre fonctions de recherche :
 
     Méthode     Objectif     
     match()     Détermine si la RE fait correspond dès le début de la chaîne. 
@@ -24,6 +23,7 @@ Ecrire une fonction **present(motif,texte)** qui retourne si *True* ou *False* l
 Ne pas oublier de faire l'import du module re !
 
 ==
+
 
 
 
