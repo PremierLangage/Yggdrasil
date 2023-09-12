@@ -22,8 +22,10 @@ Le module des expressions régulière propose quatre fonctions de recherche :
 
 Utilisables soit sur une expression compilé, exp.match(texte),
  soit en fournissant le motif en premier paramètre match(motif,texte).  
- 
 
+
+
+Ne pas oublier de faire l'import du module re !
 
 
 
