@@ -14,4 +14,12 @@ doc==
 
 text==
 
+
+<div style="font-size:1em">
+<details><summary>Fichier exemple <button onclick="docopy('exemple')">Copy exemple</button></summary><blockquote id="exemple" style="white-space: pre-line" 
+>{{lexemple}}
+</blockquote>
+</details>
 ==
+
+
