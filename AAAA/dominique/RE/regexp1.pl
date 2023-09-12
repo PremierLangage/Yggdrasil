@@ -3,7 +3,7 @@
 extends=/ComputerScience/python/AP1-2122/template/pltest2023.pl
 
 
-titre = la Méthode match du module re
+title = la Méthode match du module re
 
 text==
 # Sachant que 
