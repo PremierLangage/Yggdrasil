@@ -20,7 +20,7 @@ Dans le module des expressions régulière les expressions ont quatre fonction d
     finditer()  Trouve toutes les sous-chaînes qui correspondent à la RE et les renvoie sous la forme d'un itérateur. 
 
 
-Ecrire une fonction **number(motif,texte)** qui retourne le nombre d'occurrence du motif est dans le texte.  
+Ecrire une fonction **number(motif,texte)** qui retourne le nombre d'occurrence du motif dans le texte.  
 
 Ne pas oublier de faire l'import du module re !
 
