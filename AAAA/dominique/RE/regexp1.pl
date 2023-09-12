@@ -18,7 +18,14 @@ Le module des expressions régulière propose quatre fonctions de recherche :
     findall()   Trouve toutes les sous-chaînes qui correspondent à la RE et les renvoie sous la forme d'une liste. 
     finditer()  Trouve toutes les sous-chaînes qui correspondent à la RE et les renvoie sous la forme d'un itérateur. 
 
-Utilisable soit réalisés sur une expression compilé soit en fournissant le motif en premier paramètre.
+
+
+Utilisables soit sur une expression compilé, exp.match(texte),
+ soit en fournissant le motif en premier paramètre match(motif,texte).  
+ 
+
+
+
 
 ==
 
