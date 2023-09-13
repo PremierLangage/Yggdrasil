@@ -24,3 +24,4 @@ text==
 
 
 @ exemple.py
+lexemple =@exemple.py
