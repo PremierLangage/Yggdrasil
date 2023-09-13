@@ -19,3 +19,5 @@ def run(dir, exp, extension=".py"):
 if __name__ == "__main__":
     exp =  re.compile(input("Motif à rechercher : "))
     run(pathlib.Path.cwd(),exp)
+
+
