@@ -35,7 +35,7 @@ pltest2 =
 """
 ==
 
-editor.code ==
+editor.code ==#|py|
 def f(n):
     return 2*n
 
