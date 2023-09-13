@@ -58,7 +58,7 @@ True
 
 
 testname2=Tests de base sans commentaires
-pltest2==
+pltest2==#|py|
 >>> def _hid(): pass#
 >>> 'k' in globals()
 True
@@ -68,7 +68,7 @@ True
 
 
 testname1=Hidden Tests
-pltest1==
+pltest1==#|py|
 >>> f(10) == 20#
 True
 >>> f(12)#
