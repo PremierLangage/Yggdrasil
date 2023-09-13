@@ -2,6 +2,7 @@
 
 
 import re
+import pathlib
 
 doc = "Commande qui regarde dans le répertoire courrant si il existe un fichier .py qui contient le motif passé en parametre"
 
