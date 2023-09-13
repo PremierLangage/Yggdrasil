@@ -8,7 +8,6 @@ from feedback2 import FeedBack
 class StopBeforeExec(Exception):
     pass
 
-
 def add_try_clause(code, excpt):
     """Add a try/except clause, excepting 'excpt' around code."""
     code = code.replace('\t', '    ')
