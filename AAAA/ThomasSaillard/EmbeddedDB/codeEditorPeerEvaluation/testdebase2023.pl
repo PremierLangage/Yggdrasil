@@ -49,7 +49,7 @@ s='chaine'
 
 testname0= Tests elementaires
 
-pltest0==
+pltest0==#|py|
 >>> f(10) == 20
 True
 >>> f(12)
