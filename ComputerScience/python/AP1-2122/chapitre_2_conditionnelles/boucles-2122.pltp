@@ -20,6 +20,14 @@ Si un exercice vous semble faux vous pouvez demander de l'aide sur le forum d'en
 
 *Rappel : Votre cours est toujours votre première source d'information ...*
 
+
+Sinon 
+```python
+for i in range(4,5):
+    print(i)
+```
+affiche 4 
+
 ==
 
 # Exercice avec des boucles for 
