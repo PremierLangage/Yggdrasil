@@ -12,9 +12,9 @@ title = f"Suite géométrique de raison {val2}"
 
 soluce=f"""
 a=int(input("Entrez un nombre : "))
-for i in range({val2}):
+for i in range({val1}):
     print(i+1,a)
-    a = a * {val1}
+    a = a * {val2}
 """
 
 
@@ -37,7 +37,10 @@ Rappel: $%U_{n+1} = U_n*R%$ où $%R%$ est la raison.
 
 code== #|python|
 # écrivez votre code ici
-??=input("Entrez un nombre : ")
+U0 =int(input("Entrez un nombre : "))
+
+
+
 ==
 
 taboo=while
