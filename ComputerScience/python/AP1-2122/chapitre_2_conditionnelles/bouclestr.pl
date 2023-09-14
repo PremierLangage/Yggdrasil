@@ -14,7 +14,7 @@ textf==
 
 Ecrire un programme qui lit un  entier strictement positif et affiche la chaine de caractères formée des n premiers (à partir de 1) multiples de {XX}.
 
-Si n vaut 4 on affiche {YY}.
+Si n vaut 4 on affiche **{YY}**.
 
 
 Si l'entier est négatif, on ne fait rien.
