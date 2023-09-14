@@ -76,7 +76,7 @@ exemple_de_questions==
 ==
 
 
-title= Cher enseignant vous n'avez pas changer le "title" 
+title= Cher enseignant vous n'avez pas changé la balise "title" 
 
 before == #|python|
 import sys
