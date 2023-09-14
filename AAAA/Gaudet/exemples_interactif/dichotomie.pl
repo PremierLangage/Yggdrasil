@@ -62,6 +62,18 @@ testcases==
 solutionpourtests==
 
 N=int(input())
-
+top = N-1
+bottom = 0
+while True:
+    essai= bottom + (top+bottom)//2
+    print(essai)
+    r = input()
+    if r== '<':
+        bottom, top = bottom,essai-1
+    elif r=='>':
+        bottom, top = essai+1, top
+    else:
+        print("Victoire")
+        break
 
 
