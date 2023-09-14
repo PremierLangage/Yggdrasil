@@ -13,9 +13,24 @@ try:
 except ImportError:
     import _thread as thread
 
+def cdquit():
+    thread.interrupt_main() # raises KeyboardInterrupt
 
 def runtest_with_timout(runner,name, number):
-    
+    try:
+        timer = threading.Timer(duree, cdquit)
+        timer.start()
+        try:
+            result = runner.runpltest(name,number)
+            # result = (grade,feedback)
+        finally:
+            timer.cancel()
+        return result
+    except KeyboardInterrupt:
+        runner.
+        return False # result of execute code is False if it's ends after timeout
+
+        
 
 
 class StopBeforeExec(Exception):
@@ -109,7 +124,8 @@ if __name__ == "__main__":
         testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
         
         runner = PlRunner(student,dic[testgroupid],fb=lfb)
-        r, b = runner.runpltest(testname,i+1)
+        r,b = runtest_with_timout(runner,testname,i+1)
+        # r, b = runner.runpltest(testname,i+1)
         outstr +=  b # Ajout au feedbakc final 
         nbpts += r
         a = a and r == 100 # si au moins un test a échoué r != 100
