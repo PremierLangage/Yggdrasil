@@ -22,10 +22,11 @@ Si un exercice vous semble faux vous pouvez demander de l'aide sur le forum d'en
 
 
 Sinon 
-```python
+<pre>
+python
 for i in range(4,5):
     print(i)
-```
+</pre>
 affiche 4 
 
 ==
