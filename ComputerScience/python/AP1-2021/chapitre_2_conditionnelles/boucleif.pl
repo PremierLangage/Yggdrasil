@@ -27,6 +27,7 @@ for i in range(12):
        nb+=1
 print("Il y a",nb,"multiples {multi}")
 """
+==
 
 mplsoluce0==
 essai 1
