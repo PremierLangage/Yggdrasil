@@ -14,7 +14,7 @@
 #            https://creativecommons.org/licenses/by-sa/3.0/fr/
 #*****************************************************************************
 
-# Ceci est un fichier de questions de type QCM au format AMX.txtq
+# Ceci est un fichier de questions de type QCM au format AMX.txt
 # Les questions portent sur des généralités à propos du langage C
 
 
@@ -57,7 +57,7 @@
 + Les sources ont besoin d'être compilées pour être utilisées.
 - On peut obtenir les sources à partir de l'exécutable.
 - Les sources sont des fichiers binaires non lisibles par un humain.
-- Un ordinateur exploite les sources directement via un interprèteur.
+- Un ordinateur exploite les sources C directement via un interprèteur.
 
 
 ** Selectionner les déclarations correctes.
