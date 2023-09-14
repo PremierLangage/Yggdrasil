@@ -17,6 +17,8 @@ def cdquit():
     thread.interrupt_main() # raises KeyboardInterrupt
 
 def runtest_with_timout(runner,name, number, duree=1):
+    if duree == 0:
+        return runner.runpltest(name,number)
     try:
         timer = threading.Timer(duree, cdquit)
         timer.start()
