@@ -65,7 +65,7 @@ N=int(input())
 top = N-1
 bottom = 0
 while True:
-    essai= bottom + (top+bottom)//2
+    essai= bottom + (top-bottom)//2
     print(essai)
     r = input()
     if r== '<':
