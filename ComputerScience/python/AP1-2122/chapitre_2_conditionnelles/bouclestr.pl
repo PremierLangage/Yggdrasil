@@ -42,8 +42,8 @@ if n>0:
     print(s)
 ==
 plsoluce==
-court|2 
-Moins court| 3 
+court| 4 
+Moins court| 7 
 tres court |0
 tres tres court |-42
 long | 110
