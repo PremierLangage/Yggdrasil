@@ -12,7 +12,7 @@ text=
 
 textf==  
 
-Ecrire un programme qui lit un entier *n* strictement positif et affiche la chaine de caractères formée des *n* premiers (à partir de 1) multiples de {XX}.
+Ecrire un programme qui lit un entier *n* strictement positif et affiche la chaine de caractères formée des *n* premiers (à partir de 1) multiples de {XX} séparé par des '_'.
 
 Si n vaut 4 on affiche **{YY}**.
 
@@ -25,9 +25,9 @@ import random
 
 XX= random.choice([13,17,23,27,51])
 soluce= f"XX={XX}\n"+soluce2
-YY=""
-for i in range(1,4+1):
-    YY+=str((i)*XX)
+YY=str(XX)
+for i in range(1,4):
+        YY+= "_"+str((i)*XX)
 text = textf.format(XX=XX,YY=YY)
 
 ==
