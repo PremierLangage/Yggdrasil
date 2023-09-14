@@ -18,6 +18,7 @@ OUI si l'entier appartient à l'intervale $% I %$ suivant et NON sinon.
 <br/>
 ##   $%I = {{s}}%$
 
+Chouette des maths. 
 
 ==
  
