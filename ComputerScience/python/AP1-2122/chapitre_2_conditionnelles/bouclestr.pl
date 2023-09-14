@@ -12,7 +12,7 @@ text=
 
 textf==  
 
-Ecrire un programme qui lit un entier *n* strictement positif et affiche la chaine de caractères formée des *n* premiers (à partir de 1) multiples de {XX} séparé par des '_'.
+Ecrire un programme qui lit un entier *n* strictement positif et affiche la chaine de caractères formée des *n* premiers multiples de {XX} (à partir de {XX}) séparé par des '_'.
 
 Si n vaut 4 on affiche **{YY}**.
 
@@ -35,10 +35,10 @@ text = textf.format(XX=XX,YY=YY)
 # Attention: XX doit etre modifie selon le chiffre affiche dans l'exo pour etre valide
 soluce2==
 n=int(input())
-s=""
+s=str(XX)
 if n>0:
-    for i in range(n):
-        s+=str(i*XX)
+    for i in range(1,n):
+        s+="_"+str(i*XX)
     print(s)
 ==
 plsoluce==
