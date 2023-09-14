@@ -30,7 +30,7 @@ if __name__ == "__main__":
     if "soluce" not in dic and not os.exist("soluce.py"):
         print("No soluce or file soluce.py  necessary for this template " , file=sys.stderr)
         sys.exit(1)
-    if "soluce" in dic:
+    if not os.exist("soluce.py") and "soluce" in dic:
         with open("soluce.py","w") as sol:
             sol.write(dic['soluce'])
     lestest=[]
@@ -48,6 +48,7 @@ if __name__ == "__main__":
                 continue # Skip
             mpvalue=dic[xname].split("\n")
             lestest.append([mpvalue[0],"\n".join(mpvalue[1:])])
+    
     student = get_answers()['answer']
     with open("student.py","w") as sf:
         sf.write(student)
