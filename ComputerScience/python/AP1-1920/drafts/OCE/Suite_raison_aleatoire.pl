@@ -10,6 +10,15 @@ val2=random.randint(2,5)
 
 title = f"Suite géométrique de raison {val2}"
 
+soluce=f"""
+a=int(input("Entrez un nombre : "))
+for i in range({val2}):
+    print(i+1,a)
+    a = a * val1
+"""
+
+
+
 ==
 
 title=Suite géométrique de raison Entière
@@ -35,15 +44,7 @@ taboo=while
 needed=for
 
 
-before==
 
-soluce=f"""
-a=int(input("Entrez un nombre : "))
-for i in range({val2}):
-    print(i+1,a)
-    a = a * val1
-"""
-==
 
 plsoluce==
 Suite constante | 0
