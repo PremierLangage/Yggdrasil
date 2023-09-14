@@ -29,8 +29,9 @@ Cette suite atteint 1 quelle que soit la valeur initiale. (Ceci n'a jamais été
 
 Ecrire un programme qui lit un entier naturel et qui calcule et affiche les éléments de la suite jusqu'a atteindre la valeur 1 (incluse).
 
-La suite n'est pas définie pour les nombres négatif ou nul. 
-Dans ce cas la il faut afficher : "indéfinie".
+**La suite n'est pas définie pour les nombres négatif ou nul**.   
+Dans ce cas la il faut afficher : "indéfinie".   
+Attention l'absence de ce test crée une boucle infinie? (a démontrer ...).
 
 
 <a href="https://fr.wikipedia.org/wiki/Conjecture_de_Syracuse"> Plus d'info sur Syracuse.</a>
