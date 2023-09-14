@@ -16,7 +16,7 @@ except ImportError:
 def cdquit():
     thread.interrupt_main() # raises KeyboardInterrupt
 
-def runtest_with_timout(runner,name, number):
+def runtest_with_timout(runner,name, number, duree=1):
     try:
         timer = threading.Timer(duree, cdquit)
         timer.start()
@@ -27,8 +27,8 @@ def runtest_with_timout(runner,name, number):
             timer.cancel()
         return result
     except KeyboardInterrupt:
-        runner.
-        return False # result of execute code is False if it's ends after timeout
+        runner.fb.addTestError(name,"","Trop de temps de calcul plsu de "+str(duree)+" secondes")
+        return 0,result[1] # result of execute code is False if it's ends after timeout
 
         
 
