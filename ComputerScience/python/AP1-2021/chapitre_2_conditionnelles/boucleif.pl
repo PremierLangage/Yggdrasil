@@ -6,28 +6,28 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = nombres divisibles
 
-before=
+before==
 
-text==  
+text= f"""  
 
-Ecrire un programme qui lit 12 entiers et affiche combien parmi eux sont divisibles par 7
+Ecrire un programme qui lit 12 entiers et affiche combien parmi eux sont divisibles par {multi}
 
 (Remarque: on utilise l=int(input()) pour lire un chiffre dans ce programme)
-==
-code==
+"""
+
+code=f'''print("Il y a",nb,"multiples {multi}")'''
 
 
 
-print("Il y a",nb,"multiples de 7")
-==
-soluce==
+soluce=f"""
 nb=0
 for i in range(12):
     l=int(input())
     if l%7==0:
        nb+=1
-print("Il y a",nb,"multiples de 7")
-==
+print("Il y a",nb,"multiples {multi}")
+"""
+
 mplsoluce0==
 essai 1
 2 
