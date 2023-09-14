@@ -43,6 +43,7 @@ if n>0:
 ==
 plsoluce==
 court|2 
+Moins court| 3 
 tres court |0
 tres tres court |-42
 long | 110
