@@ -8,6 +8,7 @@ title = nombres divisibles
 
 before==
 
+multi = random.choice([5,7,11,13])
 text= f"""  
 
 Ecrire un programme qui lit 12 entiers et affiche combien parmi eux sont divisibles par {multi}
