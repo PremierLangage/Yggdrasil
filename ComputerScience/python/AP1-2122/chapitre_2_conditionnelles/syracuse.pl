@@ -52,9 +52,10 @@ else:
 
 ==
 plsoluce==
-Test | 22
-de zéro | 0
-de neg |-3
+Test basique | 22
+Controle du zéro | 0
+Controle cas négatif | -3
+Test plus long | 2000
 ==
 
 
