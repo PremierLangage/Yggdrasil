@@ -6,6 +6,8 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = nombres divisibles
 
+text=
+
 before==
 import random
 multi = random.choice([5,7,11,13])
