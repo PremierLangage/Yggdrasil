@@ -10,4 +10,8 @@ text==
 ==
 
 form=
-grader=`
+grader==
+
+grade= 100,"Ok vous avez lu :)"
+
+==
