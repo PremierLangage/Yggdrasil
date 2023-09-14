@@ -19,6 +19,3 @@ editor.fontsize=14
 form=@ /form/text_editor.html
 
 settings.allow_reroll=1
-
-
-
