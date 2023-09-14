@@ -57,3 +57,11 @@ testcases==
 [(100, randint(39, 61)), "Valeur au milieu 0-99"],
 [(1000000000, randint(0, 1000000000)), "N tres grand"]]
 ==
+
+
+solutionpourtests==
+
+N=int(input())
+
+
+
