@@ -1,4 +1,8 @@
 
+
+
+extends=/template/default.pl
+
 title = Plus DUR !
 
 
