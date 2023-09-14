@@ -6,7 +6,7 @@ extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 title = nombres divisibles
 
-text=
+text= Défini dans before
 
 before==
 import random
