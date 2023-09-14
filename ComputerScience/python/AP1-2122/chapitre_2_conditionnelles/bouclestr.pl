@@ -26,7 +26,7 @@ import random
 XX= random.choice([13,17,23,27,51])
 soluce= f"XX={XX}\n"+soluce2
 YY=str(XX)
-for i in range(1,4):
+for i in range(2,4):
         YY+= "_"+str((i)*XX)
 text = textf.format(XX=XX,YY=YY)
 
