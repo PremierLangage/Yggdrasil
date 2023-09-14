@@ -17,11 +17,10 @@ title=Suite géométrique de raison Entière
 
 text==  
 En utilisant une boucle de type "for ... in range(...):",  
-écrire un programme qui demande à l'utilisateur un entier et à partir de cet entier,  
+écrire un programme qui demande à l'utilisateur l'entier $%U_0%$ et à partir de cet entier,  
 affiche les {{val1}} premiers termes de la suite géométrique de raison {{val2}}.  
 
 Rappel: $%U_{n+1} = U_n*R%$ où $%R%$ est la raison.
-
 
 ==
 
