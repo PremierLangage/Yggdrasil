@@ -5,14 +5,16 @@ tag=InstructionsRepetitives|ForInRange
 title = Suite géométrique
 
 text==
-``
-Objectif: identifier le rôle de parametre de `a`,`b` et `nb`.
+
+**Objectif: identifier dans votre code le rôle de paramètres de `a`,`b` et `nb`**. 
+Ceci pour nous préparer à ecrire des fonctions.
+
 
 On suppose qu'il existe deux variables `a` et `b` désignant des nombres flottants quelconques, et une variable `nb` désignant un entier positif quelconque. 
 Écrire un programme dont l'exécution affiche sur la sortie standard les `nb` premiers termes de la suite géométrique de premier terme `a` et de raison `b`
 (chacun suivi d'un retour à la ligne), à l'exclusion de tout autre caractère.
 
-On rappelle la définition de la suite :
+On rappelle la définition de la suite ``
 
 $%
 \begin{cases}
