@@ -16,9 +16,16 @@ title=Suite géométrique de raison Entière
 
 
 text==  
-En utilisant une boucle de type "for...in...range", écrire un programme qui demande à l'utilisateur un entier et à partir de cet entier, 
-affiche une suite de {{val1}} entiers dont chaque terme soit égal à {{val2}} fois le terme précédent.
+En utilisant une boucle de type "for ... in range(...):",  
+écrire un programme qui demande à l'utilisateur un entier et à partir de cet entier,  
+affiche les {{val1}} premiers termes de la suite géométrique de raison {{val2}}.  
+
+Rappel: $$U^{n+1} = U^n*R$$ où $R^$ est la raison.
+
+
 ==
+
+
 
 code== #|python|
 # écrivez votre code ici
