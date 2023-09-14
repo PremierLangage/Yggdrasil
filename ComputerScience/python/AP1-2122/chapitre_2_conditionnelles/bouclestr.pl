@@ -12,7 +12,7 @@ text=
 
 textf==  
 
-Ecrire un programme qui lit un entier *n* strictement positif et affiche la chaine de caractères formée des n premiers (à partir de 1) multiples de {XX}.
+Ecrire un programme qui lit un entier *n* strictement positif et affiche la chaine de caractères formée des *n* premiers (à partir de 1) multiples de {XX}.
 
 Si n vaut 4 on affiche **{YY}**.
 
