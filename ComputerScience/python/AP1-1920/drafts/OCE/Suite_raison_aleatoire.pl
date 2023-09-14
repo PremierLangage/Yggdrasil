@@ -1,4 +1,4 @@
-# author=OCE
+# author=OCE corrigé par DR 2023
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/template/loopsoluce.pl
 @ /builder/before.py [builder.py]
@@ -13,7 +13,7 @@ title = f"Suite géométrique de raison {val2}"
 soluce=f"""
 a=int(input("Entrez un nombre : "))
 for i in range({val1}):
-    print(i+1,a)
+    print(a)
     a = a * {val2}
 """
 
