@@ -41,18 +41,10 @@ for i in range(val2):
     a = a * val1
 ==
 
-mplsoluce0==
-test 1
-5
-12
-3
-==
-
-mplsoluce1==
-test 2
-2
-10
-3
+plsoluce==
+Suite constante | 0
+Départ à 1 | 1
+Départ Géant | 972548156
 ==
 
 
