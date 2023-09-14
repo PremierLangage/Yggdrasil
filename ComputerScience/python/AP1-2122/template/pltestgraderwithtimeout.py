@@ -110,7 +110,16 @@ if __name__ == "__main__":
     while "pltest"+str(i) in dic :
         listoftests.append("pltest"+str(i))
         i = i+1
-    
+
+
+    if "timeout" in  dic:
+        try:
+            timeout=int(dic["timeout"])
+        except Exception :
+            timeout = 1
+    else:
+        timeout=0
+
     # do the tests from the list
     a= True # Tout c'est bien passé jsuque la ;)
     outstr="" # pas de feedback poiur le moment 
@@ -124,7 +133,7 @@ if __name__ == "__main__":
         testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
         
         runner = PlRunner(student,dic[testgroupid],fb=lfb)
-        r,b = runtest_with_timout(runner,testname,i+1)
+        r,b = runtest_with_timout(runner,testname,i+1, timeout)
         # r, b = runner.runpltest(testname,i+1)
         outstr +=  b # Ajout au feedbakc final 
         nbpts += r
