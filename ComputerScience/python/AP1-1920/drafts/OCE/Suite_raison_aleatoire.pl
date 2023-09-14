@@ -34,11 +34,15 @@ code== #|python|
 taboo=while
 needed=for
 
-soluce==#|python|
+
+before==
+
+soluce=f"""
 a=int(input("Entrez un nombre : "))
-for i in range(val2):
+for i in range({val2}):
     print(i+1,a)
     a = a * val1
+"""
 ==
 
 plsoluce==
