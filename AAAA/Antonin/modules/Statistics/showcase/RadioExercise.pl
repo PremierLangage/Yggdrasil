@@ -43,9 +43,6 @@ Mediocre
 La couleur bleu
 ==
 
-before +=#|py|
-formstudent += "<br> coucou"
-==
 
 evaluator==#|py|
 score = 42
