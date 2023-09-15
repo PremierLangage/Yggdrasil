@@ -49,5 +49,9 @@ if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
     score = 0
 ==
 
+formstudent +==
+coucou
+==
+
 include_stats_score = True
 include_stats_participation = True
