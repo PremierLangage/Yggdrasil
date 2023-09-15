@@ -43,14 +43,14 @@ Mediocre
 La couleur bleu
 ==
 
+before +=#|py|
+formstudent += "<br> coucou"
+==
+
 evaluator==#|py|
 score = 42
 if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
     score = 0
-==
-
-formstudent +=
-coucou
 ==
 
 include_stats_score = True
