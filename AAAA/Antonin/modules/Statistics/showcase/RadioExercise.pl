@@ -49,7 +49,7 @@ if (unique_choice != "False") and (len(answer) != int(NUMBER_QUESTIONS)):
     score = 0
 ==
 
-formstudent +==
+formstudent +=
 coucou
 ==
 
