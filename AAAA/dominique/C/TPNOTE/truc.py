@@ -1,0 +1,55 @@
+
+
+import random 
+def liste_croissante():
+    u=1
+    return [ u:= u + random.randint(2,100) for i in range(20)]
+
+def liste_decroissante():
+    l = liste_croissante()
+    l.reverse()
+    return l
+
+def liste_constante():
+    u = random.randint(56,178)
+    return [ u for i in range(67)]
+
+def indetermine():
+    return liste_croissante()+liste_constante()+liste_decroissante()
+
+
+
+def mkmplsoluce(dir):
+
+    """
+    Produit des fichiers de solution pour les tests de la forme :
+    ```
+    Nom du test 
+    entrée
+    sur 
+    plusieurs 
+    lignes
+    ```
+    """
+
+    if dir == 1 : # croissante
+        text = "Croissante\n"
+        for x in liste_croissante():
+            text += str(x) + "\n"   
+    elif dir == 2 : # décroissante 
+        text = "Décroissante\n"
+        for x in liste_decroissante():
+            text += str(x) + "\n"
+    elif dir == 3 : # constante
+        text = "Constante\n"
+        for x in liste_constante():
+            text += str(x) + "\n"
+    elif dir == 4 : # indéterminée
+        text = "Indéterminée\n"
+        for x in indetermine():
+            text += str(x) + "\n"
+
+    return text
+
+def listofmplsoluce():
+    return random.shuffle([mkmplsoluce(i) for i in range(1,5)])
