@@ -31,14 +31,16 @@ INDETERMINEE = "indéterminée"
 ==
 
 before==
+
 import random
-N=random.randint(4,10)
-mplsoluce4="Test aléatoire\n"
-v=40
-for i in range(N):
-    v += random.randint(1,6)
-    mplsoluce4 += str(v)+"\n"
-mplsoluce4 += str(v-10)+"\n"
+u=1
+crois=[ u:= u + random.randint(2,100) for i in range(20)]
+decrois = [ u:= u + random.randint(2,100) for i in range(20)].reverse()
+u = random.randint(56,178)
+constante = [ u for i in range(67)]
+inde = crois+decrois+constante 
+
+
 ==
 
 # dr soluce qui marche avec des chaines ;)
