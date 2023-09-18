@@ -64,8 +64,8 @@ else:
 
 
 before==
-
-for i,t in enumerate(listofmplsoluce()):
+import truc
+for i,t in enumerate(truc.listofmplsoluce()):
     globals()[f"mplsoluce{i}"]= t
 
 
