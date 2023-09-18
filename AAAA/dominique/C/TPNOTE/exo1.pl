@@ -1,13 +1,7 @@
-
-
-
-
 author= DR
+extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
-# Heritage d'un type d'exercice 
-extends=/python/AP1-2122/template/pltest2023.pl
-
-tag=InstructionsRepetitives|ForInRange
+tag=tpnote
 
 title = Analyse d'une suite Finie d'entiers
 
@@ -19,6 +13,9 @@ Votre programme doit lire une suite d'entiers positifs et s'arreter sur le premi
 Puis doit afficher "croissante", "décroissante","constante", "indéterminée" en fonction de la proprété correspondante 
 de la suite des entiers possitifs lus.
 
+Pour une suite constante n'affichera que "constante".
+
+Si la suite d'entier est vide affiche "indéterminée". 
 ==
 
 code==
@@ -29,6 +26,40 @@ CONSTANTE= "constante"
 INDETERMINEE = "indéterminée"
 
 ==
+
+soluce==
+
+CROISSANTE = "croissante"
+DECROISSANTE= "décroissante"
+CONSTANTE= "constante"
+INDETERMINEE = "indéterminée"
+
+l = int(input())
+if l <=0:
+    print(INDETERMINEE)
+else:
+    cr=True
+    dc=True
+    cc=True
+    while True:
+        n = int(input())
+        if n<= 0:
+            break:
+        if n < l:
+            cr = False
+        if n >l:
+            dc = False
+        l = n
+    if cc:
+        print(CONSTANTE)
+    elif cr: 
+        print(CROISSANTE)
+    elif dc:
+        print(DECROISSANTE)
+    else:
+        print(INDETERMINEE)
+==
+
 
 before==
 
@@ -41,73 +72,10 @@ u = random.randint(56,178)
 constante = [ u for i in range(67)]
 inde = crois+decrois+constante 
 
+pltest = f""">>> c = {crois}
+
 
 ==
-
-# dr soluce qui marche avec des chaines ;)
-soluce==
-nb=1
-prev=input("Valeur :")
-next=input("Valeur :")
-while prev<next:
-    prev,next = next, input("Valeur :")
-    nb+=1
-
-print("Vous avez entré",nb,"valeur(s) en ordre croissant")
-==
-
-
-zipsoluce==
-nb=1
-prec=int(input())
-suiv=int(input())
-while suiv> prec:
-    nb+=1
-    prec=suiv
-    suiv=int(input())
-print("Vous avez entré",nb,"valeur(s) en ordre croissant")
-==
-mplsoluce0==
-5 Valeurs
-2 
-3
-5
-14
-77
-0
-==
-mplsoluce1==
-Une seul
-4
-1
-==
-mplsoluce2==
-Plateau
-4
-4
-1
-==
-
-mplsoluce3==
-Départ négatif
--4
-4
-2
-2
-==
-
-
-mplsoluce5==
-Des chaines
-annanas
-bannana
-papel
-mango
-==
-
-
-
-
 
 
 
