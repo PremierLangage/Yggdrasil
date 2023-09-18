@@ -51,6 +51,8 @@ else:
             cr = False
         if n >l:
             dc = False
+        if n != l:
+            cc = False
         l = n
     if cc:
         print(CONSTANTE)
