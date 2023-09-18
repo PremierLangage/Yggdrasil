@@ -65,16 +65,9 @@ else:
 
 before==
 
-import random
-u=1
-crois=[ u:= u + random.randint(2,100) for i in range(20)]
-decrois = [ u:= u + random.randint(2,100) for i in range(20)]
-decrois.reverse()
-u = random.randint(56,178)
-constante = [ u for i in range(67)]
-inde = crois+decrois+constante 
+for i,t in enumerate(listofmplsoluce()):
+    globals(f"mplsoluce{i}")= t
 
-pltest = f""">>> c = {crois}
 
 
 ==
