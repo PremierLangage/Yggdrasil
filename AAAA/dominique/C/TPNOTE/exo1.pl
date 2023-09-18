@@ -6,6 +6,8 @@ tag=tpnote
 title = Analyse d'une suite Finie d'entiers
 
 
+@ truc.py 
+
 text==  
 
 Votre programme doit lire une suite d'entiers positifs et s'arreter sur le premier entier négatif ou nul. 
