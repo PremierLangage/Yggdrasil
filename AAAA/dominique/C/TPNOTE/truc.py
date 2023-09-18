@@ -1,9 +1,10 @@
 
 
-import random 
+import random
+
 def liste_croissante():
     u=1
-    return [ u:= u + random.randint(2,100) for i in range(20)]
+    return [ u:= u + random.randint(2,100) for i in range(random.randint(5,15))]
 
 def liste_decroissante():
     l = liste_croissante()
@@ -12,7 +13,7 @@ def liste_decroissante():
 
 def liste_constante():
     u = random.randint(56,178)
-    return [ u for i in range(67)]
+    return [ u for i in range(22)]
 
 def indetermine():
     return liste_croissante()+liste_constante()+liste_decroissante()
@@ -52,4 +53,9 @@ def mkmplsoluce(dir):
     return text
 
 def listofmplsoluce():
-    return random.shuffle([mkmplsoluce(i) for i in range(1,5)])
+    l =[mkmplsoluce(i) for i in range(1,5)]
+    random.shuffle(l)
+    return l
+
+
+print(listofmplsoluce())
