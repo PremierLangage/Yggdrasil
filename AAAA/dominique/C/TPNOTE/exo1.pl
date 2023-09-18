@@ -46,7 +46,7 @@ else:
     while True:
         n = int(input())
         if n<= 0:
-            break:
+            break
         if n < l:
             cr = False
         if n >l:
