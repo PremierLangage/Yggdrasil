@@ -4,7 +4,11 @@ import random
 
 def liste_croissante():
     u=1
-    return [ u:= u + random.randint(2,100) for i in range(random.randint(5,15))]
+    l=[]
+    for i in range(random.randint(5,15)):
+        u += random.randint(2,100)
+        l.append(u)
+    return l
 
 def liste_decroissante():
     l = liste_croissante()
@@ -58,4 +62,4 @@ def listofmplsoluce():
     return l
 
 
-print(listofmplsoluce())
+
