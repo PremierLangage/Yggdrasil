@@ -1,6 +1,9 @@
 
 #!/usr/bin/env python3
 # coding: utf-8
+
+# Ce grader permet de rajouter du code utilisable par les étudiants dans befor (sans e)
+
 import sys, jsonpickle,re
 from sandboxio import output, get_context, get_answers
 from pltest_doc import PlRunner
