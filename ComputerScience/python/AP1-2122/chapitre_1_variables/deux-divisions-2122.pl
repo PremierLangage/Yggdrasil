@@ -47,6 +47,8 @@ Si **n**=1 et **m**=4, alors votre programme doit afficher
 Si **n**=9 et **m**=0, alors votre programme doit afficher
 
 Division par 0
+
+Chaque égalité est sur une ligne différente (print différent), l'affichage est fait en utilisant des virugles entre les valeurs. 
 ==
 
 before==#|python|
