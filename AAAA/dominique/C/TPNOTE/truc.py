@@ -53,7 +53,7 @@ def mkmplsoluce(dir):
         text = "Indéterminée\n"
         for x in indetermine():
             text += str(x) + "\n"
-
+    text += "-3\n"
     return text
 
 def listofmplsoluce():
