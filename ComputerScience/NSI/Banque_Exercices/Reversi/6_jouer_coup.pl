@@ -1,6 +1,6 @@
 @ /builder/before.py [builder.py]
 extends = func.pl
-@ /ComputerScience/NSI/Banque_Exercices/Reversi/pltestgrader_before.py [grader.py]
+@ /ComputerScience/NSI/Banque_Exercices/Reversi/pltestgrader_before.py [grader.py] # grader permettant d'ajouter des fonctions disponibles pour les eleves dans befor
 
 funcname= jouer_coup
 title= Jouer un coup
