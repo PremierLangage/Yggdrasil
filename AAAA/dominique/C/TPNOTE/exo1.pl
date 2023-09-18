@@ -66,7 +66,7 @@ else:
 before==
 
 for i,t in enumerate(listofmplsoluce()):
-    globals(f"mplsoluce{i}")= t
+    globals()(f"mplsoluce{i}")= t
 
 
 
