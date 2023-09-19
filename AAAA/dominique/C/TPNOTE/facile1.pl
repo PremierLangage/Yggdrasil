@@ -33,6 +33,7 @@ print('{txt2}')
 
 
 before ==
+import random
 div1=random.choice([3, 5, 7, 11,5])
 div2=random.choice([4, 2, 8, 4,2])
 
