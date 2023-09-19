@@ -65,6 +65,6 @@ int main(int c, char **v){
 
 /* PL:checks_args_stdin==
 [["Test 1", ["11"], "3 4 5 6 7 7 67 88 263 -2"],
-["Test Yveline", ["78"], "263 134 121 111 98 87 65 43 21 -2"],
+["Test Yveline", ["78"], ""],
 ]
 PL:== */
