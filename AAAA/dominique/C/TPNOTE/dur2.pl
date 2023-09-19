@@ -24,7 +24,7 @@ Affiche "vide" si le premier élément est négatif ou nul.
 
 code==
 
-lcz, ldc = 0
+lcz, ldc = 0,0
 
 print(f"Plus longue partie constante {lcz}")
 print(f"Plus longue partie croissante {ldc}")
