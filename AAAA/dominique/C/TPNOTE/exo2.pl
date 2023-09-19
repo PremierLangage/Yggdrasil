@@ -13,9 +13,13 @@ text==
 
 Votre programme doit lire une suite d'entiers positifs et s'arreter sur le premier entier négatif ou nul. 
 
-Puis doit afficher le nombre d'élèments de la plus grande section constante (la même valeur) par exemple 1 si il sont tous différents.
+Puis doit afficher le nombre d'élèments de la plus grande section constante (la même valeur) par exemple 0 si il sont tous différents.
+Puis doit afficher le nombre d'élèments de la plus grande section croissante (la même valeur) par exemple 0 si la suite est purement décroissante ou constante.
 
+Exemple:
+3 3 12 -1
 
+Affiche "vide" si le premier élément est négatif ou nul.
 ==
 
 code==
@@ -30,15 +34,12 @@ print(f"Plus longue partie croissante {ldc}")
 
 soluce==
 
-PAIRS = "pairs"
-IMPAIRS= "impairs"
-MULTI3= "multiple de trois"
-AUCUNES = "aucunes"
+lcz, ldc = 0
 
 
 l = int(input())
 if l <=0:
-    print(AUCUNES)
+    print("vide")
 else:
     cr=True
     dc=True
@@ -62,6 +63,12 @@ else:
         print(DECROISSANTE)
     else:
         print(INDETERMINEE)
+
+    print(f"Plus longue partie constante {lcz}")
+    print(f"Plus longue partie croissante {ldc}")
+
+
+
 ==
 
 
