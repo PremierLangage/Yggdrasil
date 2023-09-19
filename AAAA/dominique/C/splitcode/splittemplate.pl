@@ -12,7 +12,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 beforeZ==
 from parsecode import splitcode
 
-sdfzefzgrezgz
+beforeZ
 
 text += str(splitcode("source.c"))
 
@@ -24,7 +24,7 @@ for k,v in splitcode("source.c").items():
 before01==
 from parsecode import splitcode
 
-sdfzefzgrezgz
+before01
 
 text += str(splitcode("source.c"))
 
