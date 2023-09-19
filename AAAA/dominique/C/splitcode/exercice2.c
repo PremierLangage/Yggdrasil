@@ -88,8 +88,10 @@ int main(){
 // PL:==
 
 /* PL:checks_args_stdin==
-[["test de l'enonce ",[],"3 3 12 -1 "],
-["Test <<<<<croissant>>>>>", [], "3 4 5 6 7 7 67 88 263 -2"],
-["Test <<<<<Décroissant>>>>>", [], "263 134 121 111 98 87 65 43 21 -2"],
+[["test de l'ennonce ",[],"3 3 12 -1 "],
+["Test  croissant ", [], "3 4 5 6 7 7 67 88 263 -2"],
+["Test Décroissant ", [], "263 134 121 111 98 87 65 43 21 -2"],
+["Test un plateau", [], "263 134 121 111 111 111 111 111 98 87 65 43 21 -2"],
+
 ]
 PL:== */
