@@ -80,7 +80,7 @@ int main(){
 // PL:==
 
 /* PL:checks_args_stdin==
-[["Test <<<<<croissant>>>>>", [], "3 4 5 6 7 7 67 88 263 -2"],
-["Test <<<<<Décroissant>>>>>", [], "263 134 121 111 98 87 65 43 21 -2"],
+[["Test  Croissant ", [], "3 4 5 6 7 7 67 88 263 -2"],
+["Test  Décroissant ", [], "263 134 121 111 98 87 65 43 21 -2"],
 ]
 PL:== */
