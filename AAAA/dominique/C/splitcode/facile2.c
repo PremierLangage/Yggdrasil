@@ -52,8 +52,8 @@ void dotest(){
 
 int main(int c, char **v){
     srand(atoi(v[1]));
-    printf("eval_f(1.0,1,1,1) = %.2f\n",eval_f(1.0,1,1,1));
-    printf("eval_f(2.0,1,2,3) = %.2f\n",eval_f(2.0,1,2,3));
+    printf("eval_f(1.0,1,-1,1) = %.2f\n",eval_f(1.0,1,-1,1));
+    printf("eval_f(2.0,2,-1,-1) = %.2f\n",eval_f(2.0,2,-1,-1));
     dotest();
     dotest();
     dotest();
