@@ -15,6 +15,6 @@ from parsecode import splitcode
 title = "beforeZ"
 
 for k,v in splitcode("sujet.c").items():
-    globals()[key]=v
+    globals()[k]=v
 ==
 
