@@ -14,3 +14,25 @@ Ecrire une fonction **eval_f(x,a,b,c)** qui retourne la valeur de f en x.
 
 
 ==
+
+
+
+before==
+
+for i in range(5):
+    if i% 2==1:
+        a=random.random()
+        b=random.random()
+        c=random.random()
+    else:
+        a=random.randint(1,5)
+        b=random.randint(-5,5)
+        c=random.randint(-5,5)
+    x=random.random()
+    globals()[f"pltest{i}"]= f""">>> eval_f({x},{a},{b},{c}) 
+{ a*x*x+b*x+c}
+"""
+
+==
+
+        
