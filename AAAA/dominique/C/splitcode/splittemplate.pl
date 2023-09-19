@@ -14,4 +14,5 @@ from parsecode import splitcode
 
 splitcode("source.c")
 
+text += str(splitcode("source.c"))
 ==
