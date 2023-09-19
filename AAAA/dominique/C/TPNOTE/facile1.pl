@@ -16,6 +16,7 @@ Si *a* est plus grand que *b* les deux entiers sont échangés.
 
 Puis affiche pour chaque entier x de l'interval $%[a,b[%$ (fermé a gauche ouvert à droite, c-a-d, a dans l'ensemble et b ne l'est pas).  
 
+Sur une ligne pour chaque x: 
 Si x est divisible par {div1} affiche {txt1}   
 si x est divisible par {div2} affiche {txt2}    
 si x est divisible par  {div1} **et** {div2} affiche "KOuak"   
