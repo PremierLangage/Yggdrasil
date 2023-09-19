@@ -20,7 +20,13 @@ def liste_constante():
     return [ u for i in range(22)]
 
 def indetermine():
-    return liste_croissante()+liste_constante()+liste_decroissante()
+    r=  random.randint(1,3) 
+    if r==1:
+        return liste_croissante()+liste_constante()+liste_decroissante()
+    elif r==2:
+        return liste_constante()+liste_decroissante()+liste_croissante()
+    elif r==3:
+        return liste_decroissante()+liste_croissante()
 
 
 
