@@ -68,8 +68,8 @@ for i in range(5):
 fsoluce==
 div1={div1}
 div2={div2}
-txt1={txt1}
-txt2={txt2}
+txt1='{txt1}'
+txt2='{txt2}'
 a=int(input())
 b=int(input())
 if a> b:
