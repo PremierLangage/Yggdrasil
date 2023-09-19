@@ -55,7 +55,7 @@ def splitcode(arg):
                     state=None
                 else:
                     multi +=  line
-
+    mqhfuypr
     return(dict)
 
 
