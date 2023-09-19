@@ -14,12 +14,7 @@ from parsecode import splitcode
 
 title = "beforeZ"
 
-text += str(splitcode("sujet.c"))
-
 for k,v in splitcode("sujet.c").items():
     globals()[key]=v
 ==
 
-
-
-==
