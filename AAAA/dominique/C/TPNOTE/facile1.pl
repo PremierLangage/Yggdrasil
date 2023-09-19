@@ -1,7 +1,7 @@
 
 
 author= DR
-extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
+extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 
 tag=tpnote
 
