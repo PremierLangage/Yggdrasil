@@ -52,8 +52,8 @@ b= random.randint(a+div2+div1,a+(div2+div1)*2)
 
 
 for i in range(5):
-    a=random.randint(1,10)
-    b= random.randint(a+div2+div1,a+(div2+div1)*2*(i+1))+1
+    a=random.randint(i+2,5*(i+1))
+    b= random.randint(a+div2+div1,a+(div2+div1)*2*(i+1))
     globals()[f"mplsoluce{i}"]= f""" test N°{i+1}
     {a}
     {b}
