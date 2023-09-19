@@ -115,7 +115,8 @@ class FeedBack():
 
     def render(self,hack=None):
         if hack==None:
-            hack = "TT"
+            hack = makehack()
+        self.hack = hack
         with open(self.filename,"r") as tempfile:
             templatestring = tempfile.read()
         template = jinja2.Template(templatestring)
