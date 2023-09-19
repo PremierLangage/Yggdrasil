@@ -40,7 +40,7 @@ Comment utiliser feedback2
 
 # class CompositeFeedback():
 
-def hack():
+def makehack():
     import random
     return  "".join([random.choice("aqwzsxedcrfvtgbyhnujkilopm") for i in range(3)])
 
