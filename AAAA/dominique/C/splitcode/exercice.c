@@ -13,6 +13,7 @@ Pour une suite constante n'affichera que "constante".
 
 Si la suite d'entier est vide affiche "indéterminée". 
 
+N'oubliez pas le caractère "\n" en fin de ligne.
 PL:== */
 
 
