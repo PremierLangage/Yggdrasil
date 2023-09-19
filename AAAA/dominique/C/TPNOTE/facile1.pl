@@ -36,7 +36,8 @@ before ==
 div1=random.choice([3, 5, 7, 11,5])
 div2=random.choice([4, 2, 8, 4,2])
 
-
+txt1 = random.choice(["Fizz","Cola","Ice","Bap","Tap","You!"])
+txt2= random.choice(["Tip","Shou","Wham","Bang","Zip"])
 
 text = ftext.format(div1=7, div2=13, txt1="Fizz",txt2="Buzz")
 code= fcode.format(txt1="Fizz",txt2="Buzz")
