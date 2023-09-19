@@ -1,5 +1,4 @@
 
-
 /* PL:title="Analyse d'une suite d'entiers." */
 /* PL:text==
 
@@ -26,7 +25,7 @@ PL:== */
 // PL:solution==
 
 void exo(){
-    char *stab[]={"croissante", "décroissante","constante", "indéterminée"};
+    //char *stab[]={"croissante", "décroissante","constante", "indéterminée"};
     int n;
     int l;
     int croissante=1;
@@ -72,8 +71,9 @@ PL:== */
 
 // PL:code_after==
 
-void main(){
+int main(){
     exo();
+    return 0;
 }
 
 
