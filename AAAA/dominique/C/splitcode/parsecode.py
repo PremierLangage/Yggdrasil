@@ -18,10 +18,11 @@
 
 import re
 import sys
-state = None
-dict={}
+
 
 def splitcode(arg):
+    state = None
+    dict={}
     with open(arg,"r") as f:
         for line in f.readlines():
             if state == None:
