@@ -41,8 +41,6 @@ Comment utiliser feedback2
 # class CompositeFeedback():
 
 def hack():
-''' fonction outil pour créer un tag aléatoire de 3 lettres".
-'''
     import random
     return  "".join([random.choice("aqwzsxedcrfvtgbyhnujkilopm") for i in range(3)])
 
