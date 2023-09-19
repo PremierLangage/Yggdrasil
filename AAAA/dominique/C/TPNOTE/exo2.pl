@@ -13,37 +13,32 @@ text==
 
 Votre programme doit lire une suite d'entiers positifs et s'arreter sur le premier entier négatif ou nul. 
 
-Puis doit afficher un par ligne dans cet ordre "pairs","impairs","multiples de trois","aucunes" en fonction de la propriété valide pour tout 
-les entiers lus.
+Puis doit afficher le nombre d'élèments de la plus grande section constante (la même valeur) par exemple 1 si il sont tous différents.
 
-Exemple:   
-6 12 -1   
-
-Affichera:  
-pairs  
-mutiples de trois   
 
 ==
 
 code==
 
-CROISSANTE = "croissante"
-DECROISSANTE= "décroissante"
-CONSTANTE= "constante"
-INDETERMINEE = "indéterminée"
+lcz, ldc = 0
+
+print(f"Plus longue partie constante {lcz}")
+print(f"Plus longue partie croissante {ldc}")
+
 
 ==
 
 soluce==
 
-CROISSANTE = "croissante"
-DECROISSANTE= "décroissante"
-CONSTANTE= "constante"
-INDETERMINEE = "indéterminée"
+PAIRS = "pairs"
+IMPAIRS= "impairs"
+MULTI3= "multiple de trois"
+AUCUNES = "aucunes"
+
 
 l = int(input())
 if l <=0:
-    print(INDETERMINEE)
+    print(AUCUNES)
 else:
     cr=True
     dc=True
@@ -52,7 +47,7 @@ else:
         n = int(input())
         if n<= 0:
             break
-        if n < l:
+        if n % 2 == :
             cr = False
         if n >l:
             dc = False
