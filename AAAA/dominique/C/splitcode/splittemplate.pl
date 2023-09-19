@@ -13,8 +13,11 @@ beforeZ==
 from parsecode import splitcode
 
 title = "beforeZ"
+splitcode("sujet.c")
 
-for k,v in splitcode("sujet.c").items():
-    globals()[k]=v
+#for k,v in splitcode("sujet.c").items():
+#    globals()[k]=v
+
+
 ==
 
