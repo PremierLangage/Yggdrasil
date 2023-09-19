@@ -1,6 +1,5 @@
 
 
-
 /* PL:title= Facile  */
 /* PL:text==
 
@@ -20,14 +19,14 @@ PL:== */
 // PL:==
 // PL:solution==
 
-float exo(float x, int a , int b , int c){
+float eval_f(float x, int a , int b , int c){
     return a*x*x+b*b*x+c*c*c;
 }
 
 // PL:==
 
 /* PL:code==
-void exo(){
+void eval_f(){
     
 printf("Plus longue partie constante %d\n",...);
 printf("Plus longue partie croissante %d\n",...);
@@ -46,14 +45,14 @@ void dotest(){
     f =rand() % 100;
     g =rand() % 10;
     j = 2.0 * (rand()% 100);
-    printf("exo(%.2f,%d,%d,%d) = %.2f\n",j,e,f,g,exo(j,e,f,g));
+    printf("eval_f(%.2f,%d,%d,%d) = %.2f\n",j,e,f,g,eval_f(j,e,f,g));
 }
 
 
 int main(int c, char **v){
     srand(atoi(v[1]));
-    printf("exo(1.0,1,1,1) = %.2f\n",exo(1.0,1,1,1));
-    printf("exo(2.0,1,2,3) = %.2f\n",exo(2.0,1,2,3));
+    printf("eval_f(1.0,1,1,1) = %.2f\n",eval_f(1.0,1,1,1));
+    printf("eval_f(2.0,1,2,3) = %.2f\n",eval_f(2.0,1,2,3));
     dotest();
     dotest();
     dotest();
