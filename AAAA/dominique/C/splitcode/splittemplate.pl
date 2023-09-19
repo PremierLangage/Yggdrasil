@@ -24,7 +24,7 @@ for k,v in splitcode("source.c").items():
 before01==
 from parsecode import splitcode
 
-before01qsdqsffdsq
+
 
 text += str(splitcode("source.c"))
 
