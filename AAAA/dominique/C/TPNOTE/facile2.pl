@@ -18,7 +18,7 @@ Ecrire une fonction **eval_f(x,a,b,c)** qui retourne la valeur de f en x.
 
 
 before==
-
+import random
 for i in range(5):
     if i% 2==1:
         a=random.random()
