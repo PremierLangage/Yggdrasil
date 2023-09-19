@@ -71,7 +71,7 @@ int carre(int n){
 }
 ==
 
-before==#|python|
+beforeK==#|python|
 from random import randint
 
 # Some globals variables
