@@ -75,7 +75,7 @@ b=int(input())
 if a> b:
     a,b = b,a
 
-for i in range(a,b):
+for x in range(a,b):
     if i% {div1} ==0 and i% {div2} == 0:
         print("KOuak")
     elif i% {div1} ==0 :
