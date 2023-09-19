@@ -68,4 +68,7 @@ def listofmplsoluce():
     return l
 
 
+def mpsolucesplateau():
+    return [mkmplsoluce(4) for i in range(1,5)]
+    
 
