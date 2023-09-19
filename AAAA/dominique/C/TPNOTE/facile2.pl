@@ -4,7 +4,7 @@ author= DR
 extends=/ComputerScience/python/AP1-1920/templates/pltest.pl
 
 
-title = Evaluation d'une fonciton en un point
+title = Evaluation d'une fonction en un point
 
 text==
 
