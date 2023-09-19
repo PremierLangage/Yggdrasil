@@ -6,7 +6,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 
 @ parsecode.py 
 
-@ exercice.c [source.c]
+@ exercice.c [sujet.c]
 
 
 beforeZ==
@@ -14,9 +14,9 @@ from parsecode import splitcode
 
 title = "beforeZ"
 
-text += str(splitcode("source.c"))
+text += str(splitcode("sujet.c"))
 
-for k,v in splitcode("source.c").items():
+for k,v in splitcode("sujet.c").items():
     globals()[key]=v
 ==
 
