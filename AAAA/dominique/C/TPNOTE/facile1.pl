@@ -44,11 +44,25 @@ code= fcode.format(div1=div1, div2=div2, txt1=txt1,txt2=txt2)
 
 text = txt + "<pre>" + fsoluce.format(div1=div1, div2=div2, txt1=txt1,txt2=txt2)+"</pre>"
 
+soluce = fsoluce.format(div1=div1, div2=div2, txt1=txt1,txt2=txt2)
+
 a=random.randint(1,10)
 b= random.randint(a+div2+div1,a+(div2+div1)*2)
 
 
+for i in range(5):
+    a=random.randint(1,10)
+    b= random.randint(a+div2+div1,a+(div2+div1)*2)
+    globals()[f"mplsoluce{i}"]= f""" test N°{i+1}
+    {a}
+    {b}
+    """
+
+
+
+
 ==
+
 
 fsoluce==
 div1={div1}
