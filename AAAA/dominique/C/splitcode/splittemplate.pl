@@ -12,7 +12,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 beforeZ==
 from parsecode import splitcode
 
-beforeZqsdffsqfqs
+title = "beforeZ"
 
 text += str(splitcode("source.c"))
 
