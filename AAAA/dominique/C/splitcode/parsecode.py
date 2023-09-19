@@ -25,7 +25,6 @@ def splitcode(arg):
     dict={}
     with open(arg,"r") as f:
         for line in f.readlines():
-            raise Exception(line)
             if state == None:
                 if line.startswith("/* PL:title"):
                     globals()['title']= line[6:-3]
