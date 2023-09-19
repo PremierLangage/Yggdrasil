@@ -74,7 +74,7 @@ for i,t in enumerate(truc.mpsolucesplateau()):
 
 mplsoluce4="""vide
 -1
-"
+"""
 
 ==
 
