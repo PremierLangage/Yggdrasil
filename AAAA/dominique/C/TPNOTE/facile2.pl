@@ -24,11 +24,12 @@ for i in range(5):
         a=random.random()
         b=random.random()
         c=random.random()
+        x=round(random.random()*3)
     else:
         a=random.randint(1,5)
         b=random.randint(-5,5)
         c=random.randint(-5,5)
-    x=random.random()
+        x=random.random()
     globals()[f"pltest{i}"]= f""">>> eval_f({x},{a},{b},{c}) 
 { a*x*x+b*x+c}
 """
