@@ -10,6 +10,7 @@ title = Enumerer des entiers
 text=
 ftext==
 
+
 Votre programme lit deux entiers *a*,*b*.
 Si *a* est plus grand que *b* les deux entiers sont échangés.
 
@@ -23,7 +24,7 @@ SINON affiche x !
 ==
 
 
-before =
+before ==
 
 text = ftext.format(div1=7, div2=13, txt1="Fizz",txt2="Buzz")
 
