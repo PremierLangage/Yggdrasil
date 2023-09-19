@@ -12,7 +12,6 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 beforeZ==
 from parsecode import splitcode
 
-title = "beforeZ"
 splitcode("sujet.c")
 
 for k,v in splitcode("sujet.c").items():
