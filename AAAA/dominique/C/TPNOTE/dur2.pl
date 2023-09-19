@@ -70,9 +70,9 @@ else:
 before==
 import truc
 for i,t in enumerate(truc.mpsolucesplateau()):
-    globals()[f"mplsoluce{i}"]= t
+    globals()[f"mplsoluce{i+1}"]= t
 
-mplsoluce4="""vide
+mplsoluce1="""vide
 -1
 """
 
