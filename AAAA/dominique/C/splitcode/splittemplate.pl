@@ -21,12 +21,5 @@ for k,v in splitcode("sujet.c").items():
 ==
 
 
-before01==
-from parsecode import splitcode
 
-
-title = "Prout"
-
-for k,v in splitcode("source.c").items():
-    globals()[key]=v
 ==
