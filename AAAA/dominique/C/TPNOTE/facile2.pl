@@ -24,7 +24,7 @@ for i in range(5):
         a=random.random()
         b=random.random()
         c=random.random()
-        x=round(random.random()*3)
+        x=round(random.random()*3,2)
     else:
         a=random.randint(1,5)
         b=random.randint(-5,5)
