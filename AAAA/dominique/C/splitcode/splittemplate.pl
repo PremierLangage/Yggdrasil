@@ -19,3 +19,15 @@ text += str(splitcode("source.c"))
 for k,v in splitcode("source.c").items():
     globals()[key]=v
 ==
+
+
+before01==
+from parsecode import splitcode
+
+sdfzefzgrezgz
+
+text += str(splitcode("source.c"))
+
+for k,v in splitcode("source.c").items():
+    globals()[key]=v
+==
