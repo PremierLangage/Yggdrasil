@@ -22,7 +22,7 @@ import random
 for i in range(5):
     if i==0:
         a,b,c,x= 1,1,1,1
-    if i% 2==1:
+    elif i% 2==1:
         a=random.random()
         b=random.random()
         c=random.random()
