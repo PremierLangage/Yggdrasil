@@ -43,7 +43,7 @@ txt2= random.choice(["Tip","Shou","Wham","Bang","Zip"])
 text = ftext.format(div1=div1, div2=div2, txt1=txt1,txt2=txt2)
 code= fcode.format(div1=div1, div2=div2, txt1=txt1,txt2=txt2)
 
-text = txt + "<pre>" + fsoluce.format(div1=div1, div2=div2, txt1=txt1,txt2=txt2)+"</pre>"
+text = text + "<pre>" + fsoluce.format(div1=div1, div2=div2, txt1=txt1,txt2=txt2)+"</pre>"
 
 soluce = fsoluce.format(div1=div1, div2=div2, txt1=txt1,txt2=txt2)
 
