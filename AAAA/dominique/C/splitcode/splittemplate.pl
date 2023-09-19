@@ -12,7 +12,10 @@ extends=/ComputerScience/C/template/std_progC.pl
 before==
 from parsecode import splitcode
 
-splitcode("source.c")
+
 
 text += str(splitcode("source.c"))
+
+for k,v in splitcode("source.c").items():
+    globals()[key]=v
 ==
