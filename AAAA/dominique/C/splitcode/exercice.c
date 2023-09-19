@@ -1,5 +1,5 @@
 
-/* PL:title="Analyse d'une suite d'entiers." */
+/* PL:title= Analyse d'une suite d'entiers. */
 /* PL:text==
 
 Ecrire une fonction *exo* qui ne prend pas de paramètre et ne renvoie rien.
