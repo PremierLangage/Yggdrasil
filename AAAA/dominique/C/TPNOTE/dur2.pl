@@ -72,7 +72,7 @@ import truc
 for i,t in enumerate(truc.mpsolucesplateau()):
     globals()[f"mplsoluce{i+1}"]= t
 
-mplsoluce1="""vide
+mplsoluce0="""vide
 -1
 """
 
