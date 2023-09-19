@@ -70,7 +70,7 @@ import truc
 for i,t in enumerate(truc.listofmplsoluce()):
     globals()[f"mplsoluce{i+1}"]= t
 
-mplsoluce0="""vide
+mplsoluce0="""Liste Vide
 -199
 """
 
