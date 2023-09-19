@@ -11,8 +11,13 @@ Votre fonction **exo** doit lire une suite d'entiers positifs et s'arreter sur l
 Puis doit afficher le nombre d'élèments de la plus grande section constante (la même valeur) par exemple 0 si il sont tous différents.
 Puis doit afficher le nombre d'élèments de la plus grande section croissante (la même valeur) par exemple 0 si la suite est purement décroissante ou constante.
 
-Exemple:
-3 3 12 -1
+Exemple:   
+3 3 12 -1   
+affichera  
+Plus longue partie constante 1
+Plus longue partie croissante 2
+
+
 
 Affiche "vide" si le premier élément est négatif ou nul.
 
@@ -83,7 +88,8 @@ int main(){
 // PL:==
 
 /* PL:checks_args_stdin==
-[["Test <<<<<croissant>>>>>", [], "3 4 5 6 7 7 67 88 263 -2"],
+[["test de l'enonce ",[],"3 3 12 -1 "],
+["Test <<<<<croissant>>>>>", [], "3 4 5 6 7 7 67 88 263 -2"],
 ["Test <<<<<Décroissant>>>>>", [], "263 134 121 111 98 87 65 43 21 -2"],
 ]
 PL:== */
