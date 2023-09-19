@@ -27,8 +27,8 @@ def splitcode(arg):
         for line in f.readlines():
             if state == None:
                 if line.startswith("/* PL:title"):
-                    globals()['title']= line[6+7:-3]
-                    dict['title']= line[6+7:-3]
+                    #globals()['title']= line[6+7:-3]
+                    dict['title']= line[6+7:-4]
                 elif line.startswith("/* PL:"):
                     state= "info"
                     name =  line[6:-3]
@@ -42,7 +42,7 @@ def splitcode(arg):
                 continue                
             elif state == "info":        
                 if line.startswith("PL:== */"):
-                    globals()[name]= multi
+                    #globals()[name]= multi
                     dict[name]= multi
                     state=None
                     multi=""
@@ -50,7 +50,7 @@ def splitcode(arg):
                     multi +=  line
             else:     
                 if line.startswith("// PL:=="):
-                    globals()[name]= multi
+                    #globals()[name]= multi
                     dict[name]= multi
                     state=None
                 else:
