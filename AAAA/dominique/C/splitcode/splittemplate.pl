@@ -9,7 +9,7 @@ extends=/ComputerScience/C/template/std_progC.pl
 @ exercice.c [source.c]
 
 
-before==
+beforeA==
 from parsecode import splitcode
 
 
