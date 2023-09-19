@@ -46,16 +46,24 @@ text = txt + "<pre>" + fsoluce.format(div1=div1, div2=div2, txt1=txt1,txt2=txt2)
 ==
 
 fsoluce==
-div1=7
-div2=13
-txt1=
-txt2=
+div1={div1}
+div2={div2}
+txt1={txt1}
+txt2={txt2}
 a=int(input())
 b=int(input())
 if a> b:
     a,b = b,a
 
 for i in range(a,b):
-    if i%
+    if i% {div1} ==0 and i% {div2} == 0:
+        print("KOuak")
+    elif i% {div1} ==0 :
+        print("{txt1}")
+    elif i% {div2} ==0 :
+        print("{txt2}")   
+    else:
+        print(x)
+==
 
 
