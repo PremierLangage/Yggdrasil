@@ -10,7 +10,7 @@ text==
 
 Soit la fonction de $%\mathbb{R} \in \mathbb{R}%$ define par $%f(x) = ax^2+bx+c %$.
 
-Ecrire une fonction $%eval_f(x,a,b,c)%$ qui retourne la valeur de f en x.
+Ecrire une fonction **eval_f(x,a,b,c)** qui retourne la valeur de f en x.
 
 
 ==
