@@ -68,8 +68,11 @@ else:
 before==
 import truc
 for i,t in enumerate(truc.listofmplsoluce()):
-    globals()[f"mplsoluce{i}"]= t
+    globals()[f"mplsoluce{i+1}"]= t
 
+mplsoluce0="""vide
+-199
+"""
 
 
 ==
