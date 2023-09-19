@@ -24,10 +24,34 @@ SINON affiche x !
 
 ==
 
+fcode==
 
-before ==
-
-text = ftext.format(div1=7, div2=13, txt1="Fizz",txt2="Buzz")
+print('{txt1}')
+print('{txt2}')
 
 ==
+
+
+before ==
+div1=random.choice([3, 5, 7, 11,5])
+div2=random.choice([4, 2, 8, 4,2])
+
+
+
+text = ftext.format(div1=7, div2=13, txt1="Fizz",txt2="Buzz")
+code= fcode.format(txt1="Fizz",txt2="Buzz")
+==
+
+soluce==
+div1=7
+div2=13
+txt1=
+a=int(input())
+b=int(input())
+if a> b:
+    a,b = b,a
+
+for i in range(a,b):
+    if i%
+
 
