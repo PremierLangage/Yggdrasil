@@ -43,6 +43,11 @@ text = ftext.format(div1=div1, div2=div2, txt1=txt1,txt2=txt2)
 code= fcode.format(div1=div1, div2=div2, txt1=txt1,txt2=txt2)
 
 text = txt + "<pre>" + fsoluce.format(div1=div1, div2=div2, txt1=txt1,txt2=txt2)+"</pre>"
+
+a=random.randint(1,10)
+b= random.randint(a+div2+div1,a+(div2+div1)*2)
+
+
 ==
 
 fsoluce==
