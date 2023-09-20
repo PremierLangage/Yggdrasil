@@ -8,7 +8,7 @@ Ecrire une fonction **suite** qui ne prend pas de paramètre et ne renvoie rien.
 
 Votre fonction **suite** doit lire une suite d'entiers positifs et s'arreter sur le premier entier négatif ou nul. 
 
-Elle affichera "Vide" si le premier élément saisie est négatif ou nul.
+Elle affichera "Vide" si le premier élément saisie est négatif ou nul et s'arrêtera à ce stade.
 
 Sinon, elle affichera ensuite la longueur de la plus grande section constante (*i.e.* $0$ si il sont tous différents, 
 $1$ si elle contient au plus deux éléments consécutifs sont égaux, etc.)
