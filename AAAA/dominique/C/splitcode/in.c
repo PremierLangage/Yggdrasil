@@ -67,5 +67,5 @@ int main(int argc, char **argv){
 /* PL:checks_args_stdin==
 [["Test simple, ["as","qjskhdfkjqshfls has jjj"], ""],
 ["Test pas plus dur ", ["kkkkkkkkk","kkkkkkkkkkkkkkkkkkkk"], ""],
-["Test trop longue extension ", ["abscdefghjkil","abscdefghjk"], ""],]
+["Test mot plus long que le text ", ["abscdefghjkil","abscdefghjk"], ""],]
 PL:== */
