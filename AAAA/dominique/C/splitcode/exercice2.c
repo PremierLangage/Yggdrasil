@@ -16,7 +16,7 @@ Sinon, elle affichera ensuite la longueur de la plus grande section constante (*
 Enfin, elle affichera la longueur de la plus longue section croissante (*i.e.* 0 si la suite est purement
 décroissante ou constante, 1 s'il y a exactement au plus deux éléments rangés par ordre croissants, etc.)
 Ici, les inégalités seront prises au sens large.
-<br />
+
 <br />
 
 **Exemple 1 :**   
@@ -24,7 +24,6 @@ La saisie de 3 3 12 -1 affichera :
 Plus longue partie constante : 1
 Plus longue partie croissante : 2
 
-<br />
 <br />
 
 **Exemple 2 :**   
