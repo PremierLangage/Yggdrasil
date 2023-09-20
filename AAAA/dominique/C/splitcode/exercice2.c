@@ -8,7 +8,9 @@ Ecrire une fonction **suite** qui ne prend pas de paramètre et ne renvoie rien.
 
 Votre fonction **suite** doit lire une suite d'entiers positifs et s'arreter sur le premier entier négatif ou nul. 
 
-Elle affichera ensuite la longueur de la plus grande section constante (*i.e.* $0$ si il sont tous différents, 
+Elle affichera "Vide" si le premier élément saisie est négatif ou nul.
+
+Sinon, elle affichera ensuite la longueur de la plus grande section constante (*i.e.* $0$ si il sont tous différents, 
 $1$ si elle contient au plus deux éléments consécutifs sont égaux, etc.)
 
 Enfin, elle affichera la longueur de la plus longue section croissante (*i.e.* $0$ si la suite est purement
@@ -24,7 +26,6 @@ Plus longue partie croissante : 2
 
 
 
-Affiche "vide" si le premier élément est négatif ou nul.
 
 PL:== */
 
@@ -46,7 +47,7 @@ void suite(){
     int nlsc=0;
     scanf("%d",&l);
     if (l <0){
-        printf("vide\n");
+        printf("Vide\n");
         return;
     }
     while (scanf("%d",&n)==1 && n>0)
@@ -65,8 +66,8 @@ void suite(){
         }  else nlds = 0; 
         l=n;
     }
-printf("Plus longue partie constante %d\n",lds);
-printf("Plus longue partie croissante %d\n",lsc);
+printf("Plus longue partie constante : %d\n",lds);
+printf("Plus longue partie croissante : %d\n",lsc);
 
 }
 
