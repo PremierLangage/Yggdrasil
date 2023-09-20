@@ -39,7 +39,7 @@ PL:== */
 // PL:code_after==
 
 
-void dotest(){
+void randomtest(){
     int e,f,g;
     float j;
     e =rand() % 100;
@@ -54,10 +54,10 @@ int main(int c, char **v){
     srand(atoi(v[1]));
     printf("eval_f(1.0,1,-1,1) = %.2f\n",eval_f(1.0,1,-1,1));
     printf("eval_f(2.0,2,-1,-1) = %.2f\n",eval_f(2.0,2,-1,-1));
-    dotest();
-    dotest();
-    dotest();
-    dotest();
+    randomtest();
+    randomtest();
+    randomtest();
+    randomtest();
     return 0;
 }
 
