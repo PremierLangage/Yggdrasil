@@ -1,13 +1,13 @@
 
 
 
-/* PL:title= une chaine dans une autre  */
+/* PL:title= Une chaine dans une autre  */
 /* PL:text==
 
-Ecrire une fonction **in** qui prend deux chaine en parametre: val, text.
-Qui vérifie si oui on non la chaine val apparait dans la chaine text.
+Ecrire une fonction **in** qui prend deux chaines de caratères en parametre: *val*, *text*.
+Celle-ci vérifiera si la chaine *val* apparait dans la chaine *text*.
 Votre fonction retourne 1 si c'est le cas, 0 sinon.
-La chaine vide "" est toujours dans une autre chaine.
+Par convention, la chaine vide "" apparait toujours dans une autre chaine.
 PL:== */
 
 
