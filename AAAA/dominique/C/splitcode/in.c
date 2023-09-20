@@ -11,9 +11,10 @@ Votre fonction retournera 1 si c'est le cas, 0 sinon.
 
 Par convention, la chaine vide "" apparait toujours dans une autre chaine.
 
-**Exemple :**
+**Exemples :**
 
 *in("script", "souscripteur")* renverra *1*.
+
 *in("dit", "ordinateur")* renverra *0*.
 PL:== */
 
