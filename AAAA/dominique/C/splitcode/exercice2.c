@@ -24,6 +24,9 @@ La saisie de 3 3 12 -1 affichera :
 Plus longue partie constante : 1
 Plus longue partie croissante : 2
 
+<br />
+<br />
+
 **Exemple 2 :**   
 La saisie de 1 3 12 -1 affichera :
 Plus longue partie constante : 0
