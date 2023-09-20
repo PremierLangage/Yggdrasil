@@ -13,7 +13,7 @@ Ecrire une fonction **place** qui prend deux paramêtres une liste et une valeur
 Qui ajoute en place $%v%$ **{{position}}** dans la liste $%l%$.
 
 
-{{globals()}}
+
 ==
 
 before==
@@ -49,6 +49,8 @@ pltest= f"""
 {f(f([1,1],2),34)}
 
 """
+
+bob=globals().copy()
 ==
 
 
