@@ -8,14 +8,19 @@ Ecrire une fonction **suite** qui ne prend pas de paramètre et ne renvoie rien.
 
 Votre fonction **suite** doit lire une suite d'entiers positifs et s'arreter sur le premier entier négatif ou nul. 
 
-Puis doit afficher le nombre d'élèments de la plus grande section constante (la même valeur) par exemple 0 si il sont tous différents.
-Puis doit afficher le nombre d'élèments de la plus grande section croissante (la même valeur) par exemple 0 si la suite est purement décroissante ou constante.
+Elle affichera ensuite la longueur de la plus grande section constante (*i.e.* $0$ si il sont tous différents, 
+$1$ si elle contient au plus deux éléments consécutifs sont égaux, etc.)
 
-Exemple:   
-3 3 12 -1   
-affichera  
-Plus longue partie constante 1
-Plus longue partie croissante 2
+Enfin, elle affichera la longueur de la plus longue section croissante (*i.e.* $0$ si la suite est purement
+décroissante ou constante, $1$ s'il y a exactement au plus deux éléments rangés par ordre croissants, etc.)
+Ici, les inégalités seront prises au sens large.
+<br />
+<br />
+
+**Exemple 1 :**   
+La saisie de $3$ $3$ $12$ $-1$ affichera :
+Plus longue partie constante : 1
+Plus longue partie croissante : 2
 
 
 
