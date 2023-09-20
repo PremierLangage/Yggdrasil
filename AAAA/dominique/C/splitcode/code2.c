@@ -1,5 +1,5 @@
 
-// PL:enonce==
+// PL:text==
 La fonction insertion dans un arbre binaire de recherche utilisant le type de noeud suivant:
 typedef struct _noeud {
     struct _noeud *gauche;
