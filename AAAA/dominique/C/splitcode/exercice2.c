@@ -3,10 +3,10 @@
 /* PL:title= Analyse d'une suite d'entiers. */
 /* PL:text==
 
-Ecrire une fonction **exo** qui ne prend pas de paramètre et ne renvoie rien.
+Ecrire une fonction **suite** qui ne prend pas de paramètre et ne renvoie rien.
 
 
-Votre fonction **exo** doit lire une suite d'entiers positifs et s'arreter sur le premier entier négatif ou nul. 
+Votre fonction **suite** doit lire une suite d'entiers positifs et s'arreter sur le premier entier négatif ou nul. 
 
 Puis doit afficher le nombre d'élèments de la plus grande section constante (la même valeur) par exemple 0 si il sont tous différents.
 Puis doit afficher le nombre d'élèments de la plus grande section croissante (la même valeur) par exemple 0 si la suite est purement décroissante ou constante.
@@ -32,7 +32,7 @@ PL:== */
 // PL:==
 // PL:solution==
 
-void exo(){
+void suite(){
     int n;
     int l;
     int lsc=0;
@@ -68,7 +68,7 @@ printf("Plus longue partie croissante %d\n",lsc);
 // PL:==
 
 /* PL:code==
-void exo(){
+void suite(){
     
 printf("Plus longue partie constante %d\n",...);
 printf("Plus longue partie croissante %d\n",...);
@@ -80,7 +80,7 @@ PL:== */
 // PL:code_after==
 
 int main(){
-    exo();
+    suite();
     return 0;
 }
 
