@@ -6,7 +6,10 @@ extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 @ parsecode.py 
 
+editor.code==
+/* votre code */
 
+==
 
 
 beforeZ==
