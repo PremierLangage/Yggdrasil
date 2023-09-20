@@ -4,7 +4,7 @@
 /* PL:title= Facile  */
 /* PL:text==
 
-Ecrire une fonction **eval_f** qui  prend en paramètre un flottant et 3 entiers et qui retourne un flottant.
+Ecrire une fonction **eval_f** qui prend en paramètre un flottant et 3 entiers (dans cet ordre) et qui retourne un flottant.
  
 
 Votre fonction **eval_f** calcule la valeur de la fonction $% f(x) = abx+bcx+acx %$ pour x = x0.
