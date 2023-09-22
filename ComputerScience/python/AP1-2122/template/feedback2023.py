@@ -74,6 +74,7 @@ class FeedBack():
         """
         self.numtest += 1
         self.globalok = False
+        want = "&#9248;".join(want.split(" "))
         self.tests.append((FAILURE, self.numtest, text, got, want))
 
     def addTestError(self, text, error, para):
