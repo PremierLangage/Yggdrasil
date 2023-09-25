@@ -13,7 +13,9 @@ Ecrire une fonction **{{funcname}}** qui vérifie le doctest suivant :
 ==
 
 befor ==
-
+from file import *
+from pile import *
+from liste_chainee import *
 ==
 
 editor.code==
