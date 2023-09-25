@@ -1,4 +1,7 @@
 extends = /ComputerScience/NSI/templates/pltest/pltest2023.pl
+extends = file.py
+extends = pile.py
+extends = liste_chainee.py
 
 title= Distribution 
 
