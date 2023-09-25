@@ -21,7 +21,6 @@ from pile import *
 from liste_chainee import *
 ==
 
-taboo = len|append|pop
 
 editor.code==
 ==
