@@ -16,3 +16,11 @@ pltest==
 >>> pile_vide_a(5)
 ['a', 'a', 'a', 'a', 'a']
 ==
+
+soluce == 
+def pile_vide_a(n):
+    p = pile_vide()
+    for i in range(n):
+        empiler(p, 'a')
+    return p
+== 
