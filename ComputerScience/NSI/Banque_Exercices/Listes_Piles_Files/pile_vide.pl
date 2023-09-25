@@ -8,13 +8,15 @@ doctest==
     la fonction pile_vide_a(n) retourne une pile avec n fois le caractere 'a'
     exemple:
     >>> afficher(pile_vide_a(5))
-    |5|5|5|5|5
+    |a|a|a|a|a
 
 ==
 
 pltest==
 >>> pile_vide_a(5)
 ['a', 'a', 'a', 'a', 'a']
+>>> pile_vide_a(7)
+['a', 'a', 'a', 'a', 'a', 'a', 'a']
 ==
 
 soluce == 
