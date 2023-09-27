@@ -17,10 +17,10 @@ doctest==
 taboo = len|append|pop|taille
 
 pltest==
->>> ma_liste_chainee = [0, 1, 5, 6, 10, 3, 2] #
->>> sup_pair(ma_file) # Ne renvoie rien
->>> ma_file # file modifiee
-[1, 5, 3]
+>>> ma_liste_chainee = ["c", ["c", ["c", ["c", ["o", ["o", ["c", ["a", [None]]]]]]]]] #
+>>> sup_doublons(ma_liste_chainee) # Ne renvoie rien
+>>> ma_liste_chainee # file modifiee
+["c", ["o", ["c", ["a", [None]]]]]
 ==
 
 soluce == 
