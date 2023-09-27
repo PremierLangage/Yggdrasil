@@ -1,7 +1,7 @@
 extends = func.pl
 
 funcname=pile_mot
-title= Initiation d'une pile
+title= Initiation d'une pile à partir d'une expression
 
 doctest==
 
