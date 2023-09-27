@@ -117,7 +117,7 @@ before==#|python|
 # needs to be overwriten
 ==
 
-teacher_name=dummy name to change
+teacher_name=revuz
 
 # ===============================================
 # Graph generation
