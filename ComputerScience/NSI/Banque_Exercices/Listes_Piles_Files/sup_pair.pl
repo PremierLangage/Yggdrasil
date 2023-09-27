@@ -19,7 +19,7 @@ taboo = len|append|pop|taille
 pltest==
 >>> ma_file = [0, 1, 5, 6, 10, 3, 2] #
 >>> sup_pair(ma_file) # Ne renvoie rien
->>> ma_file # file modifiée
+>>> ma_file # file modifiee
 [1, 5, 3]
 ==
 
