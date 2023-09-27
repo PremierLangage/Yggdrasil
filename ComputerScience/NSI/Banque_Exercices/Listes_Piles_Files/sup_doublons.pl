@@ -19,7 +19,7 @@ taboo = len|append|pop
 pltest==
 >>> ma_liste_chainee = [["c", ["c", ["c", ["c", ["o", ["o", ["c", ["a", None]]]]]]]]] #
 >>> sup_doublons(ma_liste_chainee) # Ne renvoie rien
->>> ma_liste_chainee # file modifiee
+>>> afficher(ma_liste_chainee) # file modifiee
 [['c', ['o', ['c', ['a', None]]]]]
 ==
 
