@@ -1,0 +1,41 @@
+extends = func.pl
+
+funcname=retourne
+title= Initiation d'une pile
+
+doctest==
+
+    la fonction retourne(p) renvoie une nouvelle copie de la pile p retournée.
+    exemple:
+    >>> afficher(ma_pile)
+    |b|o|n|j|o|u|r
+    >>> afficher(retourne(ma_pile))
+    |r|u|o|j|n|o|b
+
+==
+
+
+taboo = len|append|pop|taille
+
+pltest==
+>>> ma_pile = ['b', 'o', 'n', 'j', 'o', 'u', 'r'] #
+>>> pile_mot(ma_pile)
+['r', 'u', 'o', 'j', 'n', 'o', 'b']
+>>> ma_pile = ['h', 'e', 'l', 'l', 'o'] #
+>>> pile_mot('hello')
+['o', 'l', 'l', 'e', 'h']
+==
+
+soluce == 
+def retourne(p):
+    q = pile_vide()
+    res = pile_vide()
+    while not est_vide(p):
+        e = depiler(p)
+        empiler(q, e)
+        empiler(sauv, e)
+    while not est_vide(q):
+        empiler(p, depiler(q))
+    return res
+== 
+
