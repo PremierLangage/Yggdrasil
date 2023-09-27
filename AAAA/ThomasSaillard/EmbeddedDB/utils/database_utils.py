@@ -116,17 +116,6 @@ class MatchListResponse(Response):
     def __repr__(self):
         return f"{self.student_id} a obtenu un score de : {self.grade}."
 
-class PeerEvaluationResponse(Response):
-    __tablename__ = f"db_survey_MatchListResponse_{activity_id}"
-    __mapper_args__ = {
-        "polymorphic_identity": "MatchListResponse",
-    }
-
-    id: Mapped[int] = mapped_column(ForeignKey(f"db_survey_defaultResponse_{activity_id}.id"), primary_key=True)
-
-    def __repr__(self):
-        return f"{self.student_id} a obtenu un score de : {self.grade}."
-
 class InvalidResponseException(Exception):
     pass
 
