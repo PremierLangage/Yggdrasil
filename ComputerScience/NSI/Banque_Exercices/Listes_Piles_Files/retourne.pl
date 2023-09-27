@@ -5,13 +5,14 @@ title= Initiation d'une pile
 
 doctest==
 
-    la fonction retourne(p) renvoie une nouvelle copie de la pile p retournée.
+    la fonction retourne(p) renvoie une copie de la pile p retournée.
     exemple:
     >>> afficher(ma_pile)
     |b|o|n|j|o|u|r
     >>> afficher(retourne(ma_pile))
     |r|u|o|j|n|o|b
-
+    >>> afficher(ma_pile)
+    |b|o|n|j|o|u|r
 ==
 
 
