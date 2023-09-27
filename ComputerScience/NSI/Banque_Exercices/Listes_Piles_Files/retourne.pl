@@ -9,7 +9,8 @@ doctest==
     exemple:
     >>> afficher(ma_pile)
     |b|o|n|j|o|u|r
-    >>> afficher(retourne(ma_pile))
+    >>> ma_nouvelle_pile = retourne(ma_pile)
+    >>> afficher(ma_nouvelle_pile)
     |r|u|o|j|n|o|b
     >>> afficher(ma_pile)
     |b|o|n|j|o|u|r
