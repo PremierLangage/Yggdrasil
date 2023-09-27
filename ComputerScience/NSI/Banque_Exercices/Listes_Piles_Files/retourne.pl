@@ -18,11 +18,11 @@ doctest==
 taboo = len|append|pop|taille
 
 pltest==
->>> ma_pile = ['b', 'o', 'n', 'j', 'o', 'u', 'r'] #
+>>> ma_pile = ['b', 'o', 'n', 'j', 'o', 'u', 'r'] 
 >>> retourne(ma_pile)
 ['r', 'u', 'o', 'j', 'n', 'o', 'b']
->>> ma_pile = ['h', 'e', 'l', 'l', 'o'] #
->>> retourne('hello')
+>>> ma_pile = ['h', 'e', 'l', 'l', 'o'] 
+>>> retourne(ma_pile)
 ['o', 'l', 'l', 'e', 'h']
 ==
 
@@ -33,7 +33,7 @@ def retourne(p):
     while not est_vide(p):
         e = depiler(p)
         empiler(q, e)
-        empiler(sauv, e)
+        empiler(res, e)
     while not est_vide(q):
         empiler(p, depiler(q))
     return res
