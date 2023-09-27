@@ -19,10 +19,10 @@ taboo = len|append|pop|taille
 
 pltest==
 >>> ma_pile = ['b', 'o', 'n', 'j', 'o', 'u', 'r'] #
->>> pile_mot(ma_pile)
+>>> retourne(ma_pile)
 ['r', 'u', 'o', 'j', 'n', 'o', 'b']
 >>> ma_pile = ['h', 'e', 'l', 'l', 'o'] #
->>> pile_mot('hello')
+>>> retourne('hello')
 ['o', 'l', 'l', 'e', 'h']
 ==
 
