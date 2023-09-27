@@ -31,10 +31,15 @@ class Response(Base):
     # Exercise Informations:
     title : Mapped[str] = mapped_column(String)
     text : Mapped[Text] = mapped_column(Text)   
+    # FIXME exo_id : Mapped[int] = mapped_column(Integer) # How to get it ?
+
 
     # Grade value:
     grade : Mapped[int] = mapped_column(Integer)
     feedback : Mapped[Text] = mapped_column(Text)
+    # FIXME duration : Mapped[TIME-INTERVAL?]= mapped_column(TIME_INTERVAL??) # THOMAS HOW TO COMPUTE TIME TAKEN
+
+
 
     # For polymorphism
     type: Mapped[str] = mapped_column(String)
