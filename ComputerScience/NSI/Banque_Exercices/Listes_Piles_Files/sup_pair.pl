@@ -4,45 +4,34 @@ funcname=sup_pair
 title= Suppression des éléments pairs d'une file
 
 doctest==
-
-    la fonction sup_pair(f) renvoie une copie de la pile p retournée.
+    la fonction sup_pair(f) ne renvoie rien mais enlève les éléments pairs de la file f (sans modifier le reste).
     exemple:
-    >>> afficher(ma_pile)
-    |b|o|n|j|o|u|r
-    >>> ma_nouvelle_pile = retourne(ma_pile)
-    >>> afficher(ma_nouvelle_pile)
-    |r|u|o|j|n|o|b
-    >>> afficher(ma_pile)
-    |b|o|n|j|o|u|r
+    >>> afficher(ma_file)
+    0|1|5|6|10|3|2
+    >>> sup_pair(ma_file)
+    >>> afficher(ma_file)
+    1|5|3
 ==
 
 
 taboo = len|append|pop|taille
 
 pltest==
->>> ma_pile = ['b', 'o', 'n', 'j', 'o', 'u', 'r'] #
->>> retourne(ma_pile) # renvoie d'une pile retournee
-['r', 'u', 'o', 'j', 'n', 'o', 'b']
->>> ma_pile # pile initiale non modifiee
-['b', 'o', 'n', 'j', 'o', 'u', 'r']
->>> ma_pile = ['h', 'e', 'l', 'l', 'o'] #
->>> retourne(ma_pile)  # renvoie d'une pile retournee
-['o', 'l', 'l', 'e', 'h']
->>> ma_pile # pile initiale non modifiee
-['h', 'e', 'l', 'l', 'o']
+>>> ma_file = [0, 1, 5, 6, 10, 3, 2] #
+>>> sup_pair(ma_file) # Ne renvoie rien
+>>> ma_file # file modifiée
+[1, 5, 3]
 ==
 
 soluce == 
-def retourne(p):
-    q = pile_vide()
-    res = pile_vide()
-    while not est_vide(p):
-        e = depiler(p)
-        empiler(q, e)
-        empiler(res, e)
-    while not est_vide(q):
-        empiler(p, depiler(q))
-    return res
+def sup_pair(f):
+    sauv = file_vide()
+    while not est_vide(f):
+        elem = defiler(f)
+        if elem % 2 != 0:
+            enfiler(sauv, elem)
+    while not est_vide(sauv):
+        enfiler(f, defiler(sauv))
 == 
 
 
