@@ -18,10 +18,10 @@ doctest==
 taboo = len|append|pop|taille
 
 pltest==
->>> ma_pile = ['b', 'o', 'n', 'j', 'o', 'u', 'r'] 
+>>> ma_pile = ['b', 'o', 'n', 'j', 'o', 'u', 'r'] #
 >>> retourne(ma_pile)
 ['r', 'u', 'o', 'j', 'n', 'o', 'b']
->>> ma_pile = ['h', 'e', 'l', 'l', 'o'] 
+>>> ma_pile = ['h', 'e', 'l', 'l', 'o'] #
 >>> retourne(ma_pile)
 ['o', 'l', 'l', 'e', 'h']
 ==
