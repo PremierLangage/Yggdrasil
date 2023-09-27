@@ -1,7 +1,7 @@
 extends = func.pl
 
 funcname=retourne
-title= Initiation d'une pile
+title= Retournement d'une pile
 
 doctest==
 
