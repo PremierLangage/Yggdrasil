@@ -21,9 +21,13 @@ pltest==
 >>> ma_pile = ['b', 'o', 'n', 'j', 'o', 'u', 'r'] #
 >>> retourne(ma_pile)
 ['r', 'u', 'o', 'j', 'n', 'o', 'b']
+>>> ma_pile
+['b', 'o', 'n', 'j', 'o', 'u', 'r']
 >>> ma_pile = ['h', 'e', 'l', 'l', 'o'] #
->>> retourne(ma_pile)
+>>> retourne(ma_pile) 
 ['o', 'l', 'l', 'e', 'h']
+>>> ma_pile # pile initiale non modifiée
+['h', 'e', 'l', 'l', 'o']
 ==
 
 soluce == 
