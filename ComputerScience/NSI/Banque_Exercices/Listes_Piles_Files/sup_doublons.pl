@@ -14,7 +14,7 @@ doctest==
 ==
 
 
-taboo = len|append|pop|taille
+taboo = len|append|pop
 
 pltest==
 >>> ma_liste_chainee = ["c", ["c", ["c", ["c", ["o", ["o", ["c", ["a", [None]]]]]]]]] #
@@ -25,13 +25,14 @@ pltest==
 
 soluce == 
 def sup_doublons(liste_chainee):
-    sauv = file_vide()
-    while not est_vide(f):
-        elem = defiler(f)
-        if elem % 2 != 0:
-            enfiler(sauv, elem)
-    while not est_vide(sauv):
-        enfiler(f, defiler(sauv))
+    i = 0
+    while i < taille(liste_chainee) - 1:
+        anc = get_valeur_maillon_indice(liste_chainee, i)
+        if anc == get_valeur_maillon_indice(liste_chainee, i + 1):
+            supprimer_apres(liste_chainee, get_maillon_indice(liste_chainee, i))
+        else:
+            i += 1
+
 == 
 
 
