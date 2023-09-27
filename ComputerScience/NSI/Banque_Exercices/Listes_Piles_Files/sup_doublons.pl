@@ -24,7 +24,7 @@ pltest==
 ==
 
 soluce == 
-def sup_pair(f):
+def sup_doublons(liste_chainee):
     sauv = file_vide()
     while not est_vide(f):
         elem = defiler(f)
