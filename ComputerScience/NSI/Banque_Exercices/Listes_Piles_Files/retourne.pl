@@ -19,14 +19,14 @@ taboo = len|append|pop|taille
 
 pltest==
 >>> ma_pile = ['b', 'o', 'n', 'j', 'o', 'u', 'r'] #
->>> retourne(ma_pile)
+>>> retourne(ma_pile) # renvoie d'une pile retournee
 ['r', 'u', 'o', 'j', 'n', 'o', 'b']
->>> ma_pile
+>>> ma_pile # pile initiale non modifiee
 ['b', 'o', 'n', 'j', 'o', 'u', 'r']
 >>> ma_pile = ['h', 'e', 'l', 'l', 'o'] #
->>> retourne(ma_pile) 
+>>> retourne(ma_pile)  # renvoie d'une pile retournee
 ['o', 'l', 'l', 'e', 'h']
->>> ma_pile # pile initiale non modifiée
+>>> ma_pile # pile initiale non modifiee
 ['h', 'e', 'l', 'l', 'o']
 ==
 
