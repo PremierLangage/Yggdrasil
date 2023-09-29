@@ -80,7 +80,7 @@ nb_attempt=0
 # Place here your favorite C compiler
 compiler="gcc"
 # PLace here the compilation flags
-cflags=["-Wall", "-ansi"]
+cflags=["-Wall"]
 # Place here library flags
 libflags=[]
 
