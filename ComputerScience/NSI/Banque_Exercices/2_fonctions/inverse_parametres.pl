@@ -7,7 +7,8 @@ text==
 
 Ecrire une fonction **inverse_parametres** qui vérifie le doctest suivant :
 
-    La fonction inverse_parametres(param1, param2) renvoie ces paramètres dans l'ordre inverse.
+    La fonction inverse_parametres(param1, param2) renvoie ces paramètres 
+    dans l'ordre inverse.
 
     >>> inverse_parametres("bonjour", "au revoir")
     ("au revoir", "bonjour")
