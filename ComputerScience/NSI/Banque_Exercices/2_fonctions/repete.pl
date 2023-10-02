@@ -31,6 +31,8 @@ pltest==
 ''
 >>> repete(3, "")
 '\n\n\n'
+>>> repete(2, "ca va ? Pas trop dur ?")
+'ca va ? Pas trop dur ?\nca va ? Pas trop dur ?\n'
 ==
 
 
