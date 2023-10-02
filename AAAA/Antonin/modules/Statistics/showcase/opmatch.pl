@@ -1,5 +1,5 @@
+extends = /AAAA/Antonin/modules/Statistics/activities/MatchListSurvey.pl
 
-extends = /AAAA/ThomasSaillard/EmbeddedDB/activities/MatchListSurvey.pl
 
 title= MatchList Probleme Etudiants
 
