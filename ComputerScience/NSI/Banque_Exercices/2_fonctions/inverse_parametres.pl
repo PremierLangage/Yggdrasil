@@ -11,7 +11,7 @@ Ecrire une fonction **inverse_parametres** qui vérifie le doctest suivant :
     dans l'ordre inverse.
 
     >>> inverse_parametres("bonjour", "au revoir")
-    ("au revoir", "bonjour")
+    ('au revoir', 'bonjour')
     >>> inverse_parametres(1, 2)
     (2, 1)
 
@@ -29,7 +29,7 @@ editor.code==
 
 pltest==
 >>> inverse_parametres("bonjour", "au revoir")
-("au revoir", "bonjour")
+('au revoir', 'bonjour')
 >>> inverse_parametres(1, 2)
 (2, 1)
 ==
