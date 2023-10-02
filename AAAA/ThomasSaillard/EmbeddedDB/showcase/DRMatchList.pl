@@ -9,7 +9,8 @@ Relier chaque problème "vos étudiants" à sa solution
 teacher_name=revuz
 
 before==
-
+import random
+random.seed(0)
 a,b = 3,5
 matcl=[]
 for op in ['+','-','/','//','%','*','**']:
