@@ -8,7 +8,19 @@ Relier chaque problème "vos étudiants" à sa solution
 
 teacher_name=revuz
 
-matches==
+before==
+
+a,b = 3,5
+matcl=[]
+for op in ['+','-','/','//','%','*','**']:
+    matcl.append( str(a)+op+str(b)+','+str(eval(str(a)+op+str(b))))
+    matcl.append(str(b)+op+str(a)+','+str(eval(str(b)+op+str(a))))
+
+matches = "\n".join(random.sample(matcl,8))
+
+==
+
+Xmatches==
 ont besoin d’entraînement, exercice répétable aléatoires
 n'apprennent pas le cours, Quizz pré-cours
 s'ennuient, Activité hors programme 
