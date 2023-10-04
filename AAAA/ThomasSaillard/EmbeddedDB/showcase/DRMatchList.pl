@@ -8,7 +8,7 @@ Relier chaque problème "vos étudiants" à sa solution
 
 teacher_name=revuz
 
-Xbefore==
+before==
 import random
 random.seed(0)
 a,b = 3,5
