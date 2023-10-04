@@ -43,7 +43,7 @@ multiple = False
 matches==
 ==
 
-before==#|python|
+before_post==#|python|
 from database_utils import MatchListResponse
 import random
 # match component filling:
