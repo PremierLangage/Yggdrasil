@@ -23,7 +23,7 @@ matches = "\n".join(random.sample(matcl,8))
 ==
 
 
-Xmatches==
+matches==
 5/3,1.6666666666666667
 3+5,8
 5**3,125
@@ -33,7 +33,7 @@ Xmatches==
 3**5,243
 ==
 
-matches==
+Xmatches==
 ont besoin d’entraînement, exercice répétable aléatoires
 n'apprennent pas le cours, Quizz pré-cours
 s'ennuient, Activité hors programme 
