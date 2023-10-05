@@ -64,10 +64,7 @@ evaluator==#|python|
 import html
 
 from std_progC_utils import make_hide_block_on_click
-#from nasmtools import Source, Program
-import nasmtools
-Source = nasmtools.Source
-Program = nasmtools.Program
+from nasmtools import Source, Program
 
 # Create files and build files
 srcs = {
