@@ -66,9 +66,6 @@ import html
 from std_progC_utils import make_hide_block_on_click
 from nasmtools import Source, Program
 
-# Update nb attempt
-nb_attempt += 1 # count each try....
-
 # Create files and build files
 srcs = {
     src: Source(src + '.asm', sources[src]).write()
@@ -174,21 +171,8 @@ if student_compile.error():
 else:
     feedback += feedback_checks
 
-grade_attempt = 50 + (200 // (3+nb_attempt))
-
-feedback += '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Efficacité :</u> ' + str(grade_attempt) + '%</b></p>'
-
-if nb_attempt == 1:
-    feedback += '<div class="success-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
-    feedback += '1 tentative</div>'
-    all_grade = [(grade_compil * grade_checks * grade_attempt) // 10000]
-else:
-    feedback += '<div class="warning-state" style="padding: 5px; border: 1px solid #155724 transparent;">'
-    feedback += str(nb_attempt)+' tentatives</div>'
-    all_grade.append((grade_compil * grade_checks * grade_attempt) // 10000)
-
 # overall grade !
 feedback = '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Note actuelle :</u> ' + str(max(all_grade)) + '/100</b></p>' + feedback
 
-grade=((grade_compil * grade_checks * grade_attempt ) // 10000, feedback)
+grade=((grade_compil * grade_checks ) // 100, feedback)
 ==
