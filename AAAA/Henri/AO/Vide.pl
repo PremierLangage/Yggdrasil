@@ -1,5 +1,5 @@
 @ /ComputerScience/C/template/std_progC_utils.py
-@ nasmtools.py
+@ ./nasmtools.py
 
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
