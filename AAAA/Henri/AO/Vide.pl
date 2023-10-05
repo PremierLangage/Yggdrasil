@@ -1,4 +1,5 @@
 @ /utils/sandboxio.py
+@ nasmtools.py
 grader  =@ /grader/evaluator.py
 
 author=Henri Derycke
