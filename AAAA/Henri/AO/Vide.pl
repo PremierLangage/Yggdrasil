@@ -1,5 +1,7 @@
-@ /utils/sandboxio.py
+@ /ComputerScience/C/template/std_progC_utils.py
 @ nasmtools.py
+
+@ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 
 author=Henri Derycke
