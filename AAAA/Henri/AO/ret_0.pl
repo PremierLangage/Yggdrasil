@@ -1,0 +1,2 @@
+extends=./Vide.pl
+
