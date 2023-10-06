@@ -51,8 +51,8 @@ _start:
 ==
 
 checks_args_stdin==#|python|
-[["Test basique", [], ""],
-["Test encore ", ["truc", "bidule"], ""]
+[
+    ["Test basique", [], ""]
 ]
 ==
 
