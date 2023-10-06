@@ -140,4 +140,6 @@ class Program:
             ouput += "Process exited with UNIX signal ("+str(-sp.returncode)+") "+signals[-sp.returncode]
         elif sp.returncode < 0:
             ouput += "Process exited with UNIX signal ("+str(-sp.returncode)+")"
+        else:
+            output += "Process exited with return code " + str(sp.returncode)
         return ouput
