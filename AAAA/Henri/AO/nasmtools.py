@@ -19,12 +19,12 @@ signals = {
 }
 
 class CompileResult:
-    def __init__(self, returncode=0, spout="", errout="", taboo=False, cflags=[]):
+    def __init__(self, returncode=0, spout="", errout="", taboo=False, flags=[]):
         self.returncode = returncode
         self.spout = spout
         self.errout = errout
         self.taboo = taboo
-        self.cflags = cflags
+        self.flags = flags
 
     def success(self):
         return not self.taboo_error() and len(self.spout) + len(self.errout) == 0
@@ -67,9 +67,9 @@ class CompileResult:
         if self.taboo_error():
             feedback += "<b>Refus de compilation :</b> non respect du taboo : " + self.taboo
         elif not self.success():
-            feedback += make_hide_block_on_click("compil_ans", self.texte() + ' avec flags ' + ' '.join(self.cflags), "<pre>" + html.escape(self.spout+self.errout) + "</pre>", "")
+            feedback += make_hide_block_on_click("compil_ans", self.texte() + ' avec flags ' + ' '.join(self.flags), "<pre>" + html.escape(self.spout+self.errout) + "</pre>", "")
         else:
-            feedback += make_hide_block_on_click("compil_ans", self.texte() + ' avec flags ' + ' '.join(self.cflags), "C'était parfait, le compilateur n'a rien dit...", "")
+            feedback += make_hide_block_on_click("compil_ans", self.texte() + ' avec flags ' + ' '.join(self.flags), "C'était parfait, le compilateur n'a rien dit...", "")
         feedback += '</div>'
         return feedback
 
@@ -114,7 +114,7 @@ class Source:
         returncode = sp.returncode
         if returncode == 0:
             self.built = True
-        return CompileResult(returncode, spout, errout, cflags=cflags)
+        return CompileResult(returncode, spout, errout, flags=flags)
 
 class Program:
     def __init__(self, name, sources):
