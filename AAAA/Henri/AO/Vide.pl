@@ -28,7 +28,7 @@ sources.main==
 
 checks_args_stdin==#|python|
 [
-    ["Test basique", [], ""]
+    ["Exécution simple", [], ""]
 ]
 ==
 
