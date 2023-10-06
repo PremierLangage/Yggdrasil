@@ -17,11 +17,6 @@ editor.theme=dark
 editor.language=Assembly
 
 editor.code==#|asm|
-section .text
-global _start
-
-_start:
-    ; compléter
 ==
 
 student_source = main
@@ -36,14 +31,7 @@ headers % {}
 sources % {}
 
 # Correction
-sources.main==#|asm|
-section .text
-global _start
-
-_start:
-    mov eax, 1
-    mov ebx, 0
-    int 0x80
+sources.main==
 ==
 
 checks_args_stdin==#|python|
