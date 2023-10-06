@@ -4,14 +4,6 @@
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
 
-author=Henri Derycke
-
-title= Exemple d'assembleur
-
-text==#|markdown|
-Écrire un programme qui ne fait rien
-==
-
 editor =: CodeEditor
 editor.theme=dark
 editor.language=Assembly
