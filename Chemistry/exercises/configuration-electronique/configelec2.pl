@@ -80,7 +80,6 @@ try:
         nbsuccess += 1
         grade = (100, success_feedback)
     else :
-#        print("La réponse que vous avez donnée est :", response['txt_answer'].lower(), file=sys.stderr)
         grade = (0, failure_feedback)
         print("Réessayez avec le nouvel élément donné ci-dessus")
     exec(before)
@@ -89,5 +88,5 @@ except:
     grade = (-1, "Merci de rentrer une configuration comme dans l'exemple")
 ==
 
-
+#        print("La réponse que vous avez donnée est :", response['txt_answer'].lower(), file=sys.stderr)
 
