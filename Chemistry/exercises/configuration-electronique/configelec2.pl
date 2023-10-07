@@ -50,6 +50,7 @@ failure_feedback==
 <div style="background-color:darkred;color:white;padding:4px">
     Mauvaise réponse. Voir correction ci-dessous <br>
     Réssayez avec la question ci-dessus!
+<br>  
 </div>
 ==
 
@@ -79,7 +80,7 @@ try:
         nbsuccess += 1
         grade = (100, success_feedback)
     else :
-        print("La réponse que vous avez donnée est :", response['txt_answer'].lower(), file=sys.stderr)
+#        print("La réponse que vous avez donnée est :", response['txt_answer'].lower(), file=sys.stderr)
         grade = (0, failure_feedback)
         print("Réessayez avec le nouvel élément donné ci-dessus")
     exec(before)
