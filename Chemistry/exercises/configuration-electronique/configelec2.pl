@@ -1,4 +1,4 @@
-title= Configuration Electronique 
+title= Configuration Electronique 2
 
 author= I. Navizet & DR
 
