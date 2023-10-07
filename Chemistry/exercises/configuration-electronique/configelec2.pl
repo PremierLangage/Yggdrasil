@@ -78,7 +78,7 @@ try:
     if verif.verif(s,Z) :
         nbsuccess += 1
         grade = (100, success_feedback)
-    else:
+    else :
         print("La réponse que vous avez donnée est :", response['txt_answer'].lower(), file=sys.stderr)
         grade = (0, failure_feedback)
         print("Réessayez avec le nouvel élément donné ci-dessus")
