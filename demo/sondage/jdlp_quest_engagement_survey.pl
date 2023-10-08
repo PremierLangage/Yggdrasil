@@ -206,6 +206,27 @@ form==
 <br />
 <br />
 
+{{ question5 }}
+
+{{ group5|component }}
+
+<br />
+<br />
+
+{{ question6 }}
+
+{{ group6|component }}
+
+<br />
+<br />
+
+{{ question7 }}
+
+{{ group7|component }}
+
+<br />
+<br />
+
 {{ question8 }}
 
 {{ group8|component }}
@@ -215,7 +236,7 @@ form==
 # EVALUATE THE STUDENT ANSWER
 evaluator == #|py|
 score = 100
-feedback = '<span class="success-state">Réponses enregistrées, merci beaucoup !</span>'
+feedback = '<span class="success-state">Réponses enregistrées, merci beaucoup ! Reremplir et revalider le questionnaire aura pour effet de mettre à jour vos réponses personnelles.</span>'
 
 grade = (score, feedback)
 ==
