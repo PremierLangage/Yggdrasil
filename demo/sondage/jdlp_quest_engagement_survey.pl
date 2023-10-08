@@ -83,12 +83,61 @@ Le niveau des apprenants en début de formation, les bases du second degré non 
 Les contenus de la formation pas suffisement adaptés aux jeunes.
 ==
 
+question5==
+<span style="font-size:1.2em">S'il fallait ne garder le critère le plus important qui rend un activité pédagogiques engageante, ce serait ? 
+==
+
+items5==
++ L'alignement de l'activité sur les objectifs de la formation.
++ La capacité de l'enseignant à motiver les apprenants.
++ Le coté motivant de l'activité (au sens de Viau : signifiante, diversifiée, challenge, authentique, engagement cognitif, contient des choix, interaction, interdisciplinaire, consignes claires, suffisement ancré dans le temps).
++ L'enseignant est une pointure remarquable de la discipline enseignée.
++ La qualité de l'évaluation et sa restitution.
++ Le niveau général des élèves avant de réaliser l'activité.
+==
+
+question6==
+<span style="font-size:1.2em">Parmi les mesures suivantes, laquelle aura le plus d'impact sur l'engagement des apprenants ?
+==
+
+items6==
++ Impliquer les apprenants dans les choix des contenus et pilotage de la formation.
++ Faire évaluer les enseignements et proposer un retour sur ces enquêtes.
++ Concevoir un programme pédagogique parfaitement aligné sur les objectifs de formation.
++ Communiquer sur le pourquoi et justifier systématiquement les activités soumises aux apprenants.
++ Proposer un maximum d'activité para-scolaire favorisant l'esprit de corps (associations étudiantes, club, sport, etc).
+==
+
+question7==
+<span style="font-size:1.2em">Quel facteur vous coute le plus d'énergie et de temps en tant qu'enseignant ?
+==
+
+items7==
+Des apprenants de niveau mauvais voire inadapté à la formation qu'ils suivent.
+Des apprenants réfractaires, rebelles qui remettent systématiquement en question l'utilité des dispositifs pédagogiques.
+Les conditions et les moyens de travail (équipement, ratio élèves / profs, temps face à face, etc)
+Le suivi quotidien des élèves, gérer leurs problèmes et leurs besoins dans le para-scolaire.
+==
+
+question8==
+<span style="font-size:1.2em">Parmi les mesures suivantes, laquelle aura <b>le plus d'impact sur l'engagement</b> des apprenants ?
+==
+
+items8==
+Favoriser les résultats académiques des élèves ayant des preuves explicites d'engagement.
+Encourager personnellement (oralement et publiquement) les élèves ayant des preuves explicites d'engagement.
+Priser (goodies, avantage de bouche, subventions) les élèves ayant des preuves explicites d'engagement.
+Expliquer juste régulièrement qu'il y a forte corélation entre engagement et soft skill. Ainsi, les élèves engagés réalisent souvent de meilleurs carrières que les autres une fois diplômé.
+==
+
 ############################################
 
 group1 =: RadioGroup
 group2 =: CheckboxGroup
 group3 =: CheckboxGroup
 group4 =: RadioGroup
+
+group8 =: RadioGroup
 
 before==#|python|
 
@@ -108,6 +157,11 @@ for i, item in enumerate(items3.splitlines()):
 
 for i, item in enumerate(items4.splitlines()):
     group4.items.append({ "id": i, "content": item })
+
+
+
+for i, item in enumerate(items8.splitlines()):
+    group8.items.append({ "id": i, "content": item })
 ==
 
 form==
