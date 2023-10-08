@@ -91,7 +91,7 @@ for i, item in enumerate(items1.splitlines()):
 for i, item in enumerate(items2.splitlines()):
     group2.items.append({ "id": i, "content": item })
 
-for i, item in enumerate(items.splitlines()):
+for i, item in enumerate(items3.splitlines()):
     group3.items.append({ "id": i, "content": item })
 ==
 
