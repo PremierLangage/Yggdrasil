@@ -191,6 +191,13 @@ form==
 
 {{ group4|component }}
 
+<br />
+<br />
+
+{{ question8 }}
+
+{{ group8|component }}
+
 ==
 
 # EVALUATE THE STUDENT ANSWER
