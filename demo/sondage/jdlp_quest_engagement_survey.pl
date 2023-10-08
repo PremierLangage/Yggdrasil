@@ -31,7 +31,7 @@ offrira une base pour plus de discussions.</span>
 ==
 
 question1==
-<span style="font-size:1.2em"><b>Si on définit la réussite d'un cours comme un compromis de savoirs et de savoir-faire transmis en moyenne aux apprenants; 
+<span style="font-size:1.2em"><b>Si on définit la réussite d'un cours comme un compromis de savoirs et de savoir-faire acquis en moyenne par chaque apprenant; 
 quel est, selon votre avis, le facteur le plus impactant pour la réussite d'un cours ?</b></span>
 ==
 
