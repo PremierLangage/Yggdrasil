@@ -69,7 +69,7 @@ Réseaux
 ############################################
 
 group1 =: RadioGroup
-group2 =: RadioGroup
+group2 =: CheckboxGroup
 group3 =: RadioGroup
 
 before==#|python|
@@ -99,6 +99,8 @@ form==
 {{ question2 }}
 
 {{ group2|component }}
+
+<br />
 
 {{ question3 }}
 
