@@ -84,16 +84,16 @@ Les contenus de la formation pas suffisement adaptés aux jeunes.
 ==
 
 question5==
-<span style="font-size:1.2em">S'il fallait ne garder le critère le plus important qui rend un activité pédagogiques engageante, ce serait ? </span>
+<span style="font-size:1.2em">S'il fallait ne garder que <b>le critère le plus important</b> qui rend un activité pédagogiques engageante, ce serait ? </span>
 ==
 
 items5==
-+ L'alignement de l'activité sur les objectifs de la formation.
-+ La capacité de l'enseignant à motiver les apprenants.
-+ Le coté motivant de l'activité (au sens de Viau : signifiante, diversifiée, challenge, authentique, engagement cognitif, contient des choix, interaction, interdisciplinaire, consignes claires, suffisement ancré dans le temps).
-+ L'enseignant est une pointure remarquable de la discipline enseignée.
-+ La qualité de l'évaluation et sa restitution.
-+ Le niveau général des élèves avant de réaliser l'activité.
+L'alignement de l'activité sur les objectifs de la formation.
+La capacité de l'enseignant à motiver les apprenants.
+Le coté motivant de l'activité (au sens de Viau : signifiante, diversifiée, challenge, authentique, <br />engagement cognitif, contient des choix, interaction, interdisciplinaire, consignes claires, suffisement ancré dans le temps).
+L'enseignant est une pointure remarquable de la discipline enseignée.
+La qualité de l'évaluation et sa restitution.
+Le niveau général des élèves avant de réaliser l'activité.
 ==
 
 question6==
