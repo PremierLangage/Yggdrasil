@@ -133,10 +133,8 @@ Expliquer juste régulièrement qu'il y a forte corélation entre engagement et 
 ############################################
 
 group1 =: RadioGroup
-#group2 =: CheckboxGroup
-#group3 =: CheckboxGroup
-group2 =: RadioGroup
-group3 =: RadioGroup
+group2 =: CheckboxGroup
+group3 =: CheckboxGroup
 group4 =: RadioGroup
 group5 =: RadioGroup
 group6 =: RadioGroup
