@@ -60,14 +60,15 @@ group2 =: RadioGroup
 group3 =: RadioGroup
 
 before==#|python|
-vos_choix = ""
 
 group1.items = []
 group2.items = []
 group3.items = []
 
-for i, item in enumerate(items.splitlines()):
+for i, item in enumerate(items1.splitlines()):
     group1.items.append({ "id": i, "content": item })
+
+for i, item in enumerate(items.splitlines()):
     group2.items.append({ "id": i, "content": item })
     group3.items.append({ "id": i, "content": item })
 ==
