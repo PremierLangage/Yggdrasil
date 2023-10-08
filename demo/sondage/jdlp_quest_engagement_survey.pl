@@ -125,7 +125,7 @@ question8==
 
 items8==
 Favoriser les résultats académiques des élèves faisant preuve d'engagement.
-Encourager personnellement (oralement et publiquement) les élèves faisant preuve d'engagement.
+Encourager personnellement et publiquement les élèves faisant preuve d'engagement.
 Priser (goodies, avantage de bouche, prix divers) les élèves faisant preuve d'engagement.
 Expliquer juste régulièrement qu'il y a forte corélation entre engagement et soft skill. <br />Ainsi, les élèves engagés réalisent souvent de meilleurs carrières que les autres une fois diplômé.
 ==
