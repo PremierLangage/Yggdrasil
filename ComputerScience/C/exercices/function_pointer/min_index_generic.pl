@@ -20,7 +20,7 @@ author=Nicolas Borie
 title=Index du minimum générique
 tag=function|type|pointer|array|function_pointer
 
-text==
+text==#|markdown|
 Écrire une fonction C **min_index** dont le prototype est presque le même que 
 la fonction qsort. La 
 fonction prendra donc en argument un tableau générique (son adresse, son nombre 
