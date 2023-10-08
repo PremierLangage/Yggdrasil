@@ -102,6 +102,8 @@ form==
 {{ group1|component }}
 
 <br />
+<hr>
+<br />
 
 {{ question2 }}
 
