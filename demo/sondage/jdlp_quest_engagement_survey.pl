@@ -177,7 +177,7 @@ for i, item in enumerate(items8.splitlines()):
     group8.items.append({ "id": i, "content": item })
 ==
 
-form==
+form==#|html|
 
 {{ question1 }}
 
@@ -199,7 +199,7 @@ form==
 
 <br />
 <br />
-
+<!--
 {{ question4 }}
 
 {{ group4|component }}
@@ -231,7 +231,7 @@ form==
 {{ question8 }}
 
 {{ group8|component }}
-
+-->
 ==
 
 # EVALUATE THE STUDENT ANSWER
