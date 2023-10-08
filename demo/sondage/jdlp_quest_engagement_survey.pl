@@ -136,6 +136,7 @@ group1 =: RadioGroup
 group2 =: CheckboxGroup
 group3 =: CheckboxGroup
 group4 =: RadioGroup
+group5 =: RadioGroup
 
 group8 =: RadioGroup
 
@@ -145,7 +146,9 @@ group1.items = []
 group2.items = []
 group3.items = []
 group4.items = []
-
+group5.items = []
+group6.items = []
+group7.items = []
 group8.items = []
 
 for i, item in enumerate(items1.splitlines()):
@@ -160,7 +163,14 @@ for i, item in enumerate(items3.splitlines()):
 for i, item in enumerate(items4.splitlines()):
     group4.items.append({ "id": i, "content": item })
 
+for i, item in enumerate(items5.splitlines()):
+    group5.items.append({ "id": i, "content": item })
 
+for i, item in enumerate(items6.splitlines()):
+    group6.items.append({ "id": i, "content": item })
+
+for i, item in enumerate(items7.splitlines()):
+    group7.items.append({ "id": i, "content": item })
 
 for i, item in enumerate(items8.splitlines()):
     group8.items.append({ "id": i, "content": item })
