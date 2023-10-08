@@ -21,6 +21,6 @@ Cette activité de type sondage, préliminaire aux discussions, se focalise prin
 dans les formations ainsi que l'engagement des élèves dans leur cursus.
 ==
 
-anonymous_vote = False
+anonymous_vote=False
 
 @ /demo/sondage/jdlp_engagement_survey.pltp
