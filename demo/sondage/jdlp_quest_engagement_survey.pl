@@ -88,6 +88,7 @@ Les contenus de la formation pas suffisement adaptés aux jeunes.
 group1 =: RadioGroup
 group2 =: CheckboxGroup
 group3 =: CheckboxGroup
+group4 =: RadioGroup
 
 before==#|python|
 
@@ -103,6 +104,9 @@ for i, item in enumerate(items2.splitlines()):
 
 for i, item in enumerate(items3.splitlines()):
     group3.items.append({ "id": i, "content": item })
+
+for i, item in enumerate(items4.splitlines()):
+    group4.items.append({ "id": i, "content": item })
 ==
 
 form==
@@ -124,6 +128,13 @@ form==
 {{ question3 }}
 
 {{ group3|component }}
+
+<br />
+<br />
+
+{{ question4 }}
+
+{{ group4|component }}
 
 ==
 
