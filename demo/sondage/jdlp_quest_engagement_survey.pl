@@ -29,9 +29,19 @@ Avant toutes discussions qui pourraient influencer votre jugement, essayer de r�
 <br />
 ==
 
-question1=<b>Quel est votre premier choix d'option ?</b>
+question1==
+<span style="font-size:2em"><b>Si on définit la réussite d'un cours comme un compromis de savoirs et de savoir-faire transmis en moyenne aux apprenants; 
+quel est, selon votre avis, le facteur le plus impactant pour la réussite d'un cours ?</b></span>
+==
 
-item1
+items1==
+L'expertise disciplinaire de l'enseignant sur le domaine enseignée.
+La qualité de l'activité pédagogique (alignement, supports, organisation, déroulé, etc).
+Les conditions d'apprentissage (locaux, horraires, temps face à face, nombre d'apprenants)
+L'engagement des apprenants dans leur formation.
+Les compétances d'animation pédagogiques de l'enseignant.
+Le niveau des élèves en début de formation, leur maîtrise des bases.
+==
 
 question2=<b>Quel est votre second choix d'option ?</b>
 
