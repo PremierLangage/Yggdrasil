@@ -21,11 +21,11 @@ builder =@ /builder/before.py
 ################### Modifier ici ###########################
 author=JDLP 2023
 
-title=
+title=Questionnaire préliminaire
 
 text==#|html|
-<span style="font-size:1.2em">Questionnaire préliminaire : merci de répondre le plus naturellement possible... La somme des tendances offrira une base
-pour plus de discussions.</span>
+<span style="font-size:1.2em">Merci de répondre le plus naturellement possible avec vos impressions spontannées. La somme des tendances 
+offrira une base pour plus de discussions.</span>
 
 <br />
 ==
