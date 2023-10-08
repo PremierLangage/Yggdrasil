@@ -199,7 +199,7 @@ form==#|html|
 
 <br />
 <br />
-<!--
+
 {{ question4 }}
 
 {{ group4|component }}
@@ -231,7 +231,7 @@ form==#|html|
 {{ question8 }}
 
 {{ group8|component }}
--->
+
 ==
 
 # EVALUATE THE STUDENT ANSWER
