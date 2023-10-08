@@ -45,7 +45,8 @@ Le niveau des élèves en début de formation, leur maîtrise des bases.
 ==
 
 question2==
-<span style="font-size:1.2em"><b>Quelles raisons</b> limitent la réussite des apprenants dans les formations dans lesquelles vous intervenez ?</span>
+<span style="font-size:1.2em"><b>Quelles raisons</b> limitent la réussite des apprenants dans les formations dans lesquelles vous intervenez ?
+(plusieurs réponses possibles)</span>
 ==
 
 items2==
