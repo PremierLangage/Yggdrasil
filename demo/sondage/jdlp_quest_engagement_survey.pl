@@ -97,19 +97,19 @@ Le niveau général des élèves avant de réaliser l'activité.
 ==
 
 question6==
-<span style="font-size:1.2em">Parmi les mesures suivantes, laquelle aura le plus d'impact sur l'engagement des apprenants ?</span>
+<span style="font-size:1.2em">Parmi les mesures suivantes, laquelle aura <b>le plus d'impact sur l'engagement</b> des apprenants ?</span>
 ==
 
 items6==
-+ Impliquer les apprenants dans les choix des contenus et pilotage de la formation.
-+ Faire évaluer les enseignements et proposer un retour sur ces enquêtes.
-+ Concevoir un programme pédagogique parfaitement aligné sur les objectifs de formation.
-+ Communiquer sur le pourquoi et justifier systématiquement les activités soumises aux apprenants.
-+ Proposer un maximum d'activité para-scolaire favorisant l'esprit de corps (associations étudiantes, club, sport, etc).
+Impliquer les apprenants dans les choix des contenus et pilotage de la formation.
+Faire évaluer les enseignements et proposer un retour sur ces enquêtes.
+Concevoir un programme pédagogique parfaitement aligné sur les objectifs de formation.
+Communiquer sur le pourquoi et justifier systématiquement les activités soumises aux apprenants.
+Proposer un maximum d'activité para-scolaire favorisant l'esprit de corps (associations étudiantes, club, sport, etc).
 ==
 
 question7==
-<span style="font-size:1.2em">Quel facteur vous coute le plus d'énergie et de temps en tant qu'enseignant ?</span>
+<span style="font-size:1.2em">Quel facteur vous coute <b>le plus d'énergie et de temps</b> en tant qu'enseignant ?</span>
 ==
 
 items7==
@@ -137,7 +137,8 @@ group2 =: CheckboxGroup
 group3 =: CheckboxGroup
 group4 =: RadioGroup
 group5 =: RadioGroup
-
+group6 =: RadioGroup
+group7 =: RadioGroup
 group8 =: RadioGroup
 
 before==#|python|
