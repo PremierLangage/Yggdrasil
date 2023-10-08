@@ -77,7 +77,7 @@ Une partie des contenus pédagogiques (matières et ou options) est au choix des
 
 group1 =: RadioGroup
 group2 =: CheckboxGroup
-group3 =: RadioGroup
+group3 =: CheckboxGroup
 
 before==#|python|
 
