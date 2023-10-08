@@ -58,14 +58,20 @@ Les contenus ne sont plus adaptés. <br />Les jeunes ont évolués trop vite par
 La promotion a trop d'hétérogénéïté et les moyens ne sont <br />pas suffisant pour vraiment adapté le parcours à chaque profil.
 ==
 
-
-question3=<b>Quel est votre troisième choix d'option ?</b>
-
-items==
-Géomatique
-Logiciel
-Réseaux
+question3==
+<span style="font-size:1.2em">Parmi <b>les dispositifs suivants</b>, lesquels sont utilisés dans vos formations ? (plusieurs réponses possibles)</span>
 ==
+
+items3==
+L'évaluation des enseignements par les apprenants.
+Des valorisations régulées de l'implication des apprenants dans la vie de la formation.
+Un référecentiel de compétences diffusé dès le début de la formation (voire aux candidats).
+Des rétroactions régulières pour garantir l'allignement du programme de formation sur le référentiel.
+Un accompagnement institutionnel fort des associations élèves, voire des associations ciblées sur vos formations.
+Une implication des apprenants dans le pilotage de vos formations (exemple : conseil de perfectionnement).
+Une partie des contenus pédagogiques (matières et ou options) est au choix des apprenants.
+==
+
 
 ############################################
 
