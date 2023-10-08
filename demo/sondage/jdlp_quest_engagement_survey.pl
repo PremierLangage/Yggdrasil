@@ -50,7 +50,7 @@ question2==
 ==
 
 items2==
-Les élèves ne sont pas toujours disponibles (transports, travail à coté de l'activité étudiante, contraintes fammilliales ou autres contraintes externes).
+Les élèves ne sont pas toujours disponibles <br />(transports, travail à coté de l'activité étudiante, contraintes fammilliales ou autres contraintes externes).
 Les jeunes ne trouvent pas ce qu'ils sont venus chercher. Ils prétendent que les situations professionelles des <br />métiers finaux préparés sont décorrélées des activités pédagogiques de la formation.
 Les élèves ne sont pas à leur place, il y a une inadéquation entre leurs profils et la formation qu'ils suivent.
 Les élèves n'ont pas suffisement envie de réussir. Ils manquent de motivation et finissent par décrocher.
