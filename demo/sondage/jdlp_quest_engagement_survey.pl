@@ -146,6 +146,8 @@ group2.items = []
 group3.items = []
 group4.items = []
 
+group8.items = []
+
 for i, item in enumerate(items1.splitlines()):
     group1.items.append({ "id": i, "content": item })
 
