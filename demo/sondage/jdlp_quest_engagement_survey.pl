@@ -72,6 +72,16 @@ Une implication des apprenants dans le pilotage de vos formations (exemple : con
 Une partie des contenus pédagogiques (matières et ou options) est au choix des apprenants.
 ==
 
+question4==
+<span style="font-size:1.2em">Quelle est, selon votre ressenti, <b>la plus grande cause d'échec</b> de vos élèves ? (il ne faut en garder qu'un...)
+==
+
+items4==
+Le manque de moyens (équipements, ratio élèves / profs, temps face à face, etc)
+La démotivation et le manque d'investissement des élèves.
+Le niveau des apprenants en début de formation, les bases du second degré non acquises.
+Les contenus de la formation pas suffisement adaptés aux jeunes.
+==
 
 ############################################
 
@@ -102,13 +112,13 @@ form==
 {{ group1|component }}
 
 <br />
-<hr>
 <br />
 
 {{ question2 }}
 
 {{ group2|component }}
 
+<br />
 <br />
 
 {{ question3 }}
