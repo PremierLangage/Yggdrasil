@@ -73,7 +73,7 @@ Une partie des contenus pédagogiques (matières et ou options) est au choix des
 ==
 
 question4==
-<span style="font-size:1.2em">Quelle est, selon votre ressenti, <b>la plus grande cause d'échec</b> de vos élèves ? (il ne faut en garder qu'un...)
+<span style="font-size:1.2em">Quelle est, selon votre ressenti, <b>la plus grande cause d'échec</b> de vos élèves ? (il ne faut en garder qu'un...)</span>
 ==
 
 items4==
@@ -84,7 +84,7 @@ Les contenus de la formation pas suffisement adaptés aux jeunes.
 ==
 
 question5==
-<span style="font-size:1.2em">S'il fallait ne garder le critère le plus important qui rend un activité pédagogiques engageante, ce serait ? 
+<span style="font-size:1.2em">S'il fallait ne garder le critère le plus important qui rend un activité pédagogiques engageante, ce serait ? </span>
 ==
 
 items5==
@@ -97,7 +97,7 @@ items5==
 ==
 
 question6==
-<span style="font-size:1.2em">Parmi les mesures suivantes, laquelle aura le plus d'impact sur l'engagement des apprenants ?
+<span style="font-size:1.2em">Parmi les mesures suivantes, laquelle aura le plus d'impact sur l'engagement des apprenants ?</span>
 ==
 
 items6==
@@ -109,7 +109,7 @@ items6==
 ==
 
 question7==
-<span style="font-size:1.2em">Quel facteur vous coute le plus d'énergie et de temps en tant qu'enseignant ?
+<span style="font-size:1.2em">Quel facteur vous coute le plus d'énergie et de temps en tant qu'enseignant ?</span>
 ==
 
 items7==
@@ -120,7 +120,7 @@ Le suivi quotidien des élèves, gérer leurs problèmes et leurs besoins dans l
 ==
 
 question8==
-<span style="font-size:1.2em">Parmi les mesures suivantes, laquelle aura <b>le plus d'impact sur l'engagement</b> des apprenants ?
+<span style="font-size:1.2em">Parmi les mesures suivantes, laquelle aura <b>le plus d'impact sur l'engagement</b> des apprenants ?</span>
 ==
 
 items8==
