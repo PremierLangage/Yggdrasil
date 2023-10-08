@@ -24,13 +24,13 @@ author=JDLP 2023
 title=
 
 text==
-Avant toutes discussions qui pourraient influencer votre jugement, essayer de répondre aux questions suivantes.
+<span style="font-size:1.2em">Questionnaire préliminaire</span>
 
 <br />
 ==
 
 question1==
-<span style="font-size:2em"><b>Si on définit la réussite d'un cours comme un compromis de savoirs et de savoir-faire transmis en moyenne aux apprenants; 
+<span style="font-size:1.2em"><b>Si on définit la réussite d'un cours comme un compromis de savoirs et de savoir-faire transmis en moyenne aux apprenants; 
 quel est, selon votre avis, le facteur le plus impactant pour la réussite d'un cours ?</b></span>
 ==
 
