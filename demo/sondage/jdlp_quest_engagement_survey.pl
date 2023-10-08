@@ -44,7 +44,19 @@ Les compétances d'animation pédagogiques de l'enseignant.
 Le niveau des élèves en début de formation, leur maîtrise des bases.
 ==
 
-question2=<b>Quel est votre second choix d'option ?</b>
+question2==
+<span style="font-size:1.2em"><b>Quelles raisons</b> limitent la réussite des apprenants dans les formations dans lesquelles vous intervenez ?</span>
+==
+
+items2==
+L'expertise disciplinaire de l'enseignant sur le domaine enseignée.
+La qualité de l'activité pédagogique (alignement, supports, organisation, déroulé, etc).
+Les conditions d'apprentissage (locaux, horraires, temps face à face, nombre d'apprenants)
+L'engagement des apprenants dans leur formation.
+Les compétances d'animation pédagogiques de l'enseignant.
+Le niveau des élèves en début de formation, leur maîtrise des bases.
+==
+
 
 question3=<b>Quel est votre troisième choix d'option ?</b>
 
@@ -69,8 +81,10 @@ group3.items = []
 for i, item in enumerate(items1.splitlines()):
     group1.items.append({ "id": i, "content": item })
 
-for i, item in enumerate(items.splitlines()):
+for i, item in enumerate(items2.splitlines()):
     group2.items.append({ "id": i, "content": item })
+
+for i, item in enumerate(items.splitlines()):
     group3.items.append({ "id": i, "content": item })
 ==
 
