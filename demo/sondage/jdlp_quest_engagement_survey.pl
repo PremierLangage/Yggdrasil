@@ -32,7 +32,7 @@ offrira une base pour plus de discussions.</span>
 
 question1==
 <span style="font-size:1.2em">Si on définit la réussite d'un cours comme un compromis de savoirs et de savoir-faire acquis en moyenne par chaque apprenant; 
-quel est, selon votre avis, <b>le facteur le plus impactant</b> pour la réussite d'un cours ?</span>
+quel est, selon votre avis, <b>le facteur le plus impactant</b> pour la réussite d'un cours ? (Désolé, il ne faut en choisir qu'un!)</span>
 ==
 
 items1==
@@ -49,12 +49,12 @@ question2==
 ==
 
 items2==
-L'expertise disciplinaire de l'enseignant sur le domaine enseignée.
-La qualité de l'activité pédagogique (alignement, supports, organisation, déroulé, etc).
-Les conditions d'apprentissage (locaux, horraires, temps face à face, nombre d'apprenants)
-L'engagement des apprenants dans leur formation.
-Les compétances d'animation pédagogiques de l'enseignant.
-Le niveau des élèves en début de formation, leur maîtrise des bases.
+Les élèves ne sont pas toujours disponibles (transports, travail à coté de l'activité étudiante, contraintes fammilliales ou autres contraintes externes).
+Les jeunes ne trouvent pas ce qu'ils sont venus chercher. Ils prétendent que les situations professionelles des métiers finaux préparés sont décorrélées des activités pédagogiques de la formation.
+Les élèves ne sont pas à leur place, il y a une inadéquation entre leurs profils et la formation qu'ils suivent.
+Les élèves n'ont pas suffisement envie de réussir. Ils manquent de motivation et finissent par décrocher.
+Les contenus ne sont plus adaptés. Les jeunes ont évolués trop vite par rapport aux formations.
+La promotion a trop d'hétérogénéïté et les moyens ne sont pas suffisant pour vraiment adapté le parcours à chaque profil.
 ==
 
 
