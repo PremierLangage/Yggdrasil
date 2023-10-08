@@ -74,11 +74,13 @@ for i, item in enumerate(items.splitlines()):
     group3.items.append({ "id": i, "content": item })
 ==
 
-form==#|xhtml|
+form==
 
 {{ question1 }}
 
 {{ group1|component }}
+
+<br />
 
 {{ question2 }}
 
