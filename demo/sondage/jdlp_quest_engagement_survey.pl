@@ -30,7 +30,7 @@ offrira une base pour plus de discussions.</span>
 <br />
 ==
 
-question1==
+question1==#|html|
 <span style="font-size:1.2em">Si on définit la réussite d'un cours comme un compromis de savoirs et de savoir-faire acquis en moyenne par chaque apprenant; 
 quel est, selon votre avis, <b>le facteur le plus impactant</b> pour la réussite d'un cours ? (Désolé, il ne faut en choisir qu'un!)</span>
 ==
@@ -44,7 +44,7 @@ Les compétances d'animation pédagogiques de l'enseignant.
 Le niveau des élèves en début de formation, leur maîtrise des bases.
 ==
 
-question2==
+question2==#|html|
 <span style="font-size:1.2em"><b>Quelles raisons</b> limitent la réussite des apprenants dans les formations dans lesquelles vous intervenez ?
 (plusieurs réponses possibles)</span>
 ==
@@ -58,7 +58,7 @@ Les contenus ne sont plus adaptés. <br />Les jeunes ont évolués trop vite par
 La promotion a trop d'hétérogénéïté et les moyens ne sont <br />pas suffisant pour vraiment adapté le parcours à chaque profil.
 ==
 
-question3==
+question3==#|html|
 <span style="font-size:1.2em">Parmi <b>les dispositifs suivants</b>, lesquels sont utilisés dans vos formations ? (plusieurs réponses possibles)</span>
 ==
 
@@ -72,7 +72,7 @@ Une implication des apprenants dans le pilotage de vos formations (exemple : con
 Une partie des contenus pédagogiques (matières et ou options) est au choix des apprenants.
 ==
 
-question4==
+question4==#|html|
 <span style="font-size:1.2em">Quelle est, selon votre ressenti, <b>la plus grande cause d'échec</b> de vos élèves ? (il ne faut en garder qu'un...)</span>
 ==
 
@@ -83,7 +83,7 @@ Le niveau des apprenants en début de formation, les bases du second degré non 
 Les contenus de la formation pas suffisement adaptés aux jeunes.
 ==
 
-question5==
+question5==#|html|
 <span style="font-size:1.2em">S'il fallait ne garder que <b>le critère le plus important</b> qui rend un activité pédagogiques engageante, ce serait ? </span>
 ==
 
@@ -96,7 +96,7 @@ La qualité de l'évaluation et sa restitution.
 Le niveau général des élèves avant de réaliser l'activité.
 ==
 
-question6==
+question6==#|html|
 <span style="font-size:1.2em">Parmi les mesures suivantes, laquelle aura <b>le plus d'impact sur l'engagement</b> des apprenants ?</span>
 ==
 
@@ -108,7 +108,7 @@ Communiquer sur le pourquoi et justifier systématiquement les activités soumis
 Proposer un maximum d'activité para-scolaire favorisant l'esprit de corps (associations étudiantes, club, sport, etc).
 ==
 
-question7==
+question7==#|html|
 <span style="font-size:1.2em">Quel facteur vous coute <b>le plus d'énergie et de temps</b> en tant qu'enseignant ?</span>
 ==
 
@@ -119,7 +119,7 @@ Les conditions et les moyens de travail (équipement, ratio élèves / profs, te
 Le suivi quotidien des élèves, gérer leurs problèmes et leurs besoins dans le para-scolaire.
 ==
 
-question8==
+question8==#|html|
 <span style="font-size:1.2em">Parmi les mesures suivantes, laquelle aura <b>le plus d'impact sur l'engagement</b> des apprenants ?</span>
 ==
 
