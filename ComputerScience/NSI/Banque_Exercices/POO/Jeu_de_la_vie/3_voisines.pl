@@ -5,27 +5,9 @@ title= Méthode voisines
 
 text==
 
-Ecrire la méthode `voisines` de la classe `Jeu_de_la_vie` ayant un seul attribut `plateau`: liste de `n` liste 
-de `n` cellules (instances de la classe `Cellule`) ainsi que son constructeur comme 
-paramètres:
-
-- le nombre `n` de cellules sur un côté du plateau (il est carré)
-- une liste des coordonnées des cellules vivantes initialement.
-
-On créera un jeu avec le code suivant:
-
-    >>> Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)])
-
-
-Ce dernir devrait correspondre au plateau suivant (0 pour mort, 1 pour vivant):
-
-    0 0 0 0 0 0 0
-    0 0 0 0 0 0 0
-    0 0 0 0 0 0 0
-    0 0 0 0 1 0 0
-    0 0 0 0 1 0 0
-    0 0 0 0 1 0 0
-    0 0 0 0 0 0 0
+Ecrire la méthode `voisines` de la classe `Jeu_de_la_vie` ayant comme 
+paramètres `i` le numéro de ligne et `j` le numéro de colonne et 
+renvoyant une liste des cellules voisines
 
 ==
 
