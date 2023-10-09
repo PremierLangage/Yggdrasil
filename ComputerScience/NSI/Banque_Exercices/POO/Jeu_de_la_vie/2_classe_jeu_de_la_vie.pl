@@ -48,7 +48,7 @@ pltest==
 True
 >>> jeu.plateau[4][3].vivant
 False
->>> jeu = Jeu_de_la_vie(7, [(1, 0)]) #
+>>> jeu = Jeu_de_la_vie(7, [(1, 0)])
 >>> jeu.plateau[1][0].vivant
 True
 >>> jeu.plateau[3][4].vivant
