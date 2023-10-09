@@ -27,9 +27,15 @@ pltest==
 >>> compare_chaine("au revoir", "bonjour")
 'au revoir'
 >>> compare_chaine("liberte", "bonjour")
-None
 >>> compare_chaine("", "bonjour")
 'bonjour'
 ==
 
 
+soluce==
+def compare_chaine(expr1, expr2):
+    if len(expr1) > len(expr2):
+        return expr1
+    elif len(expr1) < len(expr2):
+        return expr2
+==
