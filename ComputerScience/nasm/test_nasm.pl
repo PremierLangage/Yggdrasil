@@ -53,21 +53,21 @@ process = subprocess.run(['nasm', '-f', 'elf64', 'hello_world.asm', '-o', 'hello
 stdout = process.stdout
 ce = process.returncode
 
-ans = "compilation avec nasm : " + stdout.decode() + "(code Unix de retour : " + ce + ")"
+ans = "compilation avec nasm : " + stdout.decode() + "(code Unix de retour : " + str(ce) + ")"
 ans += "\n<br>"
 
 process = subprocess.run(['ld', 'hello.o', '-o', 'hello_w'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 stdout = process.stdout
 ce = process.returncode
 
-ans += "linkage avec ld : " + stdout.decode() + "(code Unix de retour : " + ce + ")"
+ans += "linkage avec ld : " + stdout.decode() + "(code Unix de retour : " + str(ce) + ")"
 ans += "\n<br>"
 
 process = subprocess.run(['./hello_w'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 stdout = process.stdout
 ce = process.returncode
 
-ans += "exécution : " + stdout.decode() + "(code Unix de retour : " + ce + ")"
+ans += "exécution : " + stdout.decode() + "(code Unix de retour : " + str(ce) + ")"
 
 grade = (100, ans)
 ==
