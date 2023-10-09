@@ -41,25 +41,25 @@ form==
 ==
 
 evaluator==#|python|
-from subprocess import Popen, PIPE, run
+import subprocess
 
 f = open('hello_world.asm', 'w')
 f.write(editor.code)
 f.close()
 
-process = run(['nasm', '-f', 'elf64', 'hello_world.asm', '-o', 'hello.o'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+process = subprocess.run(['nasm', '-f', 'elf64', 'hello_world.asm', '-o', 'hello.o'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 stdout = process.stdout
 
 ans = "compilation avec nasm : " + stdout.decode()
 ans += "\n<br>"
 
-process = run(['ld hello.o -o hello_world'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+process = subprocess.run(['ld hello.o -o hello_world'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 stdout = process.stdout
 
 ans += "linkage avec ld : " + stdout.decode()
 ans += "\n<br>"
 
-process = run(['./hello_world'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+process = subprocess.run(['./hello_world'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 stdout = process.stdout
 
 ans += 'exécution : ' + stdout.decode()
