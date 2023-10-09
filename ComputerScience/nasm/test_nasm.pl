@@ -67,7 +67,7 @@ process = subprocess.run(['./hello_w'], stdout=subprocess.PIPE, stderr=subproces
 stdout = process.stdout
 ce = process.returncode
 
-ans += "exécution : " + stdout.decode() + "(code Unix de retour : " + str(ce) + ")"
+ans += "ex&eacute;cution : " + stdout.decode() + "(code Unix de retour : " + str(ce) + ")"
 
 grade = (100, ans)
 ==
