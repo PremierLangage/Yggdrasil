@@ -54,4 +54,6 @@ soluce==
 class Jeu_de_la_vie:
     def __init__(self, taille, liste_vivantes):
         self.plateau = [[Cellule(False) for i in range(taille)] for i in range(taille)]
+        for i, j in liste_vivantes:
+            self.plateau[i][j].vivant = True
 ==
