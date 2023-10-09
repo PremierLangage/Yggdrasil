@@ -5,11 +5,12 @@ title= Longueur chaine parité
 text==
 Ecrire une fonction **longueur_chaine_paire** qui vérifie le doctest suivant :
 
-    La fonction longueur_chaine_paire(expr) renvoie True si la chaine expr est de longueur paire, False sinon.
+    La fonction longueur_chaine_paire(expr) renvoie True si la chaine expr est 
+    de longueur paire, False sinon.
 
     >>> longueur_chaine_paire("au revoir")
     False
-    >>> compare_chaine("fraternite")
+    >>> longueur_chaine_paire("fraternite")
     True
 
 
