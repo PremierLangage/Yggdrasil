@@ -26,8 +26,8 @@ Si vous voulez des précisions ou en savoir plus allez sur la page Wikipédia du
 ==
 
 # Fonctions de base 
-@ 1_init_plateau.pl
-@ 2_coup_possible.pl
+@ 1_classe_cellule.pl
+@ 2_classe_jeu_de_la_vie.pl
 @ 3_jouer_coup.pl
 @ 4_victoire.pl
 @ 5_entree_joueurs.pl
