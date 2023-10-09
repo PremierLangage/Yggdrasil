@@ -14,7 +14,7 @@ On créera un jeu avec le code suivant:
     >>> Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)])
 
 
-Ce dernir devrair correspondre au plateau suivant:
+Ce dernir devrait correspondre au plateau suivant (0 pour mort, 1 pour vivant):
 
     0 0 0 0 0 0 0
     0 0 0 0 0 0 0
@@ -23,12 +23,16 @@ Ce dernir devrair correspondre au plateau suivant:
     0 0 0 0 1 0 0
     0 0 0 0 1 0 0
     0 0 0 0 0 0 0
-    
+
 ==
 
 befor ==
 import os
 import time
+
+class Cellule:
+    def __init__(self, etat):
+        self.vivant = etat
 ==
 
 
@@ -36,16 +40,15 @@ editor.code==
 ==
 
 pltest==
->>> cell = Cellule(True)
->>> cell.vivant
+>>> jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)])
+>>> jeu.plateau[3][4].vivant
 True
->>> cell2 = Cellule(False)
->>> cell2.vivant
+>>> jeu.plateau[4][3].vivant
 False
 ==
 
 soluce==
-class Cellule:
-    def __init__(self, etat):
-        self.vivant = etat
+class Jeu_de_la_vie:
+    def __init__(self, taille, liste_vivantes):
+        self.plateau = [[Cellule(False) for i in range(taille)] for i in range(taille)]
 ==
