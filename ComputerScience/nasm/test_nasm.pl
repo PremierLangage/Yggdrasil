@@ -35,7 +35,7 @@ before==
 title = Test NASM 
 
 text==
-Wesh, ça marche ou bien ?
+Mais quelle idée ce NASM sérieux ???
 ==
 
 form==
