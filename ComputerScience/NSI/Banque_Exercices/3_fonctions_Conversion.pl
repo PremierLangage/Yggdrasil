@@ -19,6 +19,10 @@ Exemple:
 
     >>> conv(20, "CF")
     68.0
+    >>> conv(122, "FC")
+    50.0
+    >>> conv(122, "z")
+    122
 ==
 Zeditor.code==
 def conv(t,n):
