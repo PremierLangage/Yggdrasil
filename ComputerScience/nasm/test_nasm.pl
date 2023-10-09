@@ -35,7 +35,7 @@ before==
 title = Test NASM 
 
 text==
-Mais quelle idée ce NASM sérieux ???
+Mais quelle idée ce NASM sérieux ??? Il faut valider pour compiler avec NASM, puis linker avec LD puis exécuter ce Hello World !
 ==
 
 form==
