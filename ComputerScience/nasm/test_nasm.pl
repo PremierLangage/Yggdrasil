@@ -47,19 +47,19 @@ f = open('hello_world.asm', 'w')
 f.write(editor.code)
 f.close()
 
-process = run(['nasm', '-f', 'elf64', 'hello_world.asm', '-o', 'hello.o'], stdout=PIPE, stderr=PIPE, shell=True)
+process = run(['nasm', '-f', 'elf64', 'hello_world.asm', '-o', 'hello.o'], shell=True)
 stdout = process.stdout
 
 ans = "compilation avec nasm : " + stdout.decode()
 ans += "\n<br>"
 
-process = run(['ld hello.o -o hello_world'], stdout=PIPE, stderr=PIPE, shell=True)
+process = run(['ld hello.o -o hello_world'], shell=True)
 stdout = process.stdout
 
 ans += "linkage avec ld : " + stdout.decode()
 ans += "\n<br>"
 
-process = run(['./hello_world'], stdout=PIPE, stderr=PIPE, shell=True)
+process = run(['./hello_world'], shell=True)
 stdout = process.stdout
 
 ans += 'exécution : ' + stdout.decode()
