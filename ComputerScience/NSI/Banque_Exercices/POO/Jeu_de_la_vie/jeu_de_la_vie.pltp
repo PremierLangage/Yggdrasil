@@ -27,14 +27,8 @@ Si vous voulez des précisions ou en savoir plus allez sur la page Wikipédia du
 
 # Fonctions de base 
 @ 1_classe_cellule.pl
-@ 2_classe_jeu_de_la_vie.pl
-@ 3_jouer_coup.pl
-@ 4_victoire.pl
-@ 5_entree_joueurs.pl
-@ 6_affiche_plateau.pl
-@ 7_entree_coup.pl
-@ 8_tour.pl
-@ 9_jeu_de_nim.pl
+# @ 2_classe_jeu_de_la_vie.pl
+
 
 
 reserve==
