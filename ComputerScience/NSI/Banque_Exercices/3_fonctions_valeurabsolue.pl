@@ -6,7 +6,7 @@ tag=function
 title = Valeur absolue
 
 text==
-Écrivez une fonction `val_abs`  qui renvoie la valeur absolue de son paramètre
+Écrivez une fonction `val_abs`  qui renvoie la [valeur absolue](https://fr.wikipedia.org/wiki/Valeur_absolue#D%C3%A9finition) de son paramètre
 
 Exemples :
 
