@@ -27,6 +27,12 @@ pltest==
 >>> cell.vivant
 True
 >>> cell2 = Cellule(False)
->>> cell.vivant
+>>> cell2.vivant
 False
+==
+
+soluce==
+class Cellule:
+    def __init__(self, etat):
+        self.vivant = etat
 ==
