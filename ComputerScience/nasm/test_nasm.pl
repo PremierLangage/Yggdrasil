@@ -54,7 +54,7 @@ print(stdout)
 ans = "compilation avec nasm : " + stdout.decode()
 ans += "\n<br>"
 
-process = subprocess.run(['ld hello.o -o hello_w'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+process = subprocess.run(['ld', 'hello.o', '-o', 'hello_w'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 stdout = process.stdout
 print(stdout)
 
