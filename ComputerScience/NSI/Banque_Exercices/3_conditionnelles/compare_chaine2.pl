@@ -1,6 +1,6 @@
 extends = /ComputerScience/NSI/templates/pltest/pltest2023.pl
 
-title= Repete 
+title= Compare chaine 
 
 text==
 Ecrire une fonction **compare_chaine** qui vérifie le doctest suivant :
