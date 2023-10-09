@@ -35,6 +35,7 @@ before==
 title = Test NASM 
 
 text==
+Wesh, ça marche ou bien ?
 ==
 
 form==
