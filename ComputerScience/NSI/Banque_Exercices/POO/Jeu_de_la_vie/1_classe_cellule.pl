@@ -1,7 +1,7 @@
 extends = /ComputerScience/NSI/templates/pltest/pltest2023.pl
 
 
-title= Distribution 
+title= Classe Cellule 
 
 text==
 
