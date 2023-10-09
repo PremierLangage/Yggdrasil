@@ -51,21 +51,18 @@ f.close()
 
 process = subprocess.run(['nasm', '-f', 'elf64', 'hello_world.asm', '-o', 'hello.o'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 stdout = process.stdout
-text += str(stdout.decode())
 
 ans = "compilation avec nasm : " + stdout.decode()
 ans += "\n<br>"
 
 process = subprocess.run(['ld', 'hello.o', '-o', 'hello_w'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 stdout = process.stdout
-text += str(stdout.decode())
 
 ans += "linkage avec ld : " + stdout.decode()
 ans += "\n<br>"
 
 process = subprocess.run(['./hello_w'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 stdout = process.stdout
-text += str(stdout.decode())
 
 ans += "exécution : " + stdout.decode()
 
