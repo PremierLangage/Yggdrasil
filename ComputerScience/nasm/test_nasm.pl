@@ -63,6 +63,7 @@ ans += "\n<br>"
 
 process = subprocess.run(['./hello_w'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 stdout = process.stdout
+print(stdout)
 
 ans += 'exécution : ' + stdout.decode()
 
