@@ -60,12 +60,24 @@ editor.code==
 ==
 
 pltest==
->>> Jeu_de_la_vie.nb_voisines = nb_voisines #
->>> jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)]) #
->>> jeu.nb_voisines(0,0)
-0
->>> jeu.nb_voisines(4,3)
-3
+>>> Cellule.futur_etat = futur_etat #
+>>> cell = Cellule(True) #
+>>> cell2 = Cellule(False) #
+>>> cell.futur_etat(2)
+>>> cell.futur
+True
+>>> cell.futur_etat(1)
+>>> cell.futur
+False
+>>> cell.futur_etat(4)
+>>> cell.futur
+False
+>>> cell2.futur_etat(4)
+>>> cell2.futur
+False
+>>> cell2.futur_etat(3)
+>>> cell2.futur
+True
 ==
 
 soluce==
