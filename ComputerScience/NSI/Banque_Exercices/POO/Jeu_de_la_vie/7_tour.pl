@@ -1,7 +1,7 @@
 extends = /ComputerScience/NSI/templates/pltest/pltest2023.pl
 
 
-title= Méthode mise à jour état
+title= Méthode tour
 
 text==
 
