@@ -65,23 +65,16 @@ editor.code==
 ==
 
 pltest==
->>> Cellule.futur_etat = futur_etat #
+>>> Cellule.maj_etat = maj_etat #
 >>> cell = Cellule(True) #
+>>> cell.futur = False #
 >>> cell2 = Cellule(False) #
->>> cell.futur_etat(2)
->>> cell.futur
-True
->>> cell.futur_etat(1)
->>> cell.futur
+>>> cell2.futur = True #
+>>> cell.maj_etat()
+>>> cell.vivant
 False
->>> cell.futur_etat(4)
->>> cell.futur
-False
->>> cell2.futur_etat(4)
->>> cell2.futur
-False
->>> cell2.futur_etat(3)
->>> cell2.futur
+>>> cell2.maj_etat()
+>>> cell2.vivant
 True
 ==
 
