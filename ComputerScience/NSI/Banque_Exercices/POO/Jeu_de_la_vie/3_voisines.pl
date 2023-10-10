@@ -8,11 +8,11 @@ text==
 Ecrire la méthode `voisines` de la classe `Jeu_de_la_vie` ayant comme 
 paramètre une cellule et renvoyant une liste des cellules voisines.
 
-    >>> cell.i, cell.j
+    >>> cell.i, cell.j # cell est une cellule existante
     (0, 0)
-    >>> len(jeu.voisines(cell))
+    >>> len(jeu.voisines(cell)) # jeu.voisines(cell) renvoie une liste de taille 3
     3
-    >>> jeu.voisines(cell)[0].vivant
+    >>> jeu.voisines(cell)[0].vivant # le type de jeu.voisines(cell)[0] est donc Cellule, on peut donc demander la valeur de l'attribut vivant.
     False
 
 ==
