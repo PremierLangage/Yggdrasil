@@ -82,12 +82,14 @@ True
 
 soluce==
 def futur_etat(self, nb):
-    if not self.vivant and nb == 3:
+    if (not self.vivant) and nb == 3:
         self.futur = True
+        print("pouet")
     if self.vivant and nb >= 2 and nb <=3:
         self.futur = True
     else:
         self.futur = False
+        print("pouet2")
 ==
 
 
