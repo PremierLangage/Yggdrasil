@@ -14,10 +14,10 @@ la règle suivante :
 
 On pourra bien entendu utiliser les méthodes précédentes.
 
-    >>> cell.vivant
-    False
-    >>> cell.futur_etat(3)
-    >>> cell.futur
+    >>> cell.vivant # cell existe
+    False # cell est morte
+    >>> cell.futur_etat(3) # je calcule son futur etat si son nombre de voisines vivantes est 3
+    >>> cell.futur # après application de la méthode, son etat futur est alors True
     True
 
 ==
