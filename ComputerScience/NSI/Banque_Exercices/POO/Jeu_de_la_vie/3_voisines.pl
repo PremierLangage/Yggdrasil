@@ -32,6 +32,7 @@ class Jeu_de_la_vie:
 
 
 editor.code==
+def voisines(self,...
 ==
 
 pltest==
