@@ -13,6 +13,7 @@ Ecrire la classe `Cellule` ayant 4 attributs :
 - `j` son numéro de ligne
 
 Son constructeur aura trois paramètres:
+
 - l'état initial de la cellule. 
 - son numéro de ligne et son numéro de colonne.
 
