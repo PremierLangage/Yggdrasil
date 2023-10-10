@@ -78,11 +78,13 @@ def affiche(self):
     try:
         os.system('cls')
         os.system('clear')
+    except:
+        pass
     ...
 ==
 
 pltest==
->>> Jeu_de_la_vie.tour = tour #
+>>> Jeu_de_la_vie.affiche = affiche #
 >>> jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)]) #
 >>> jeu.affiche()
 ==
@@ -92,6 +94,8 @@ def affiche(self):
     try:
         os.system('cls')
         os.system('clear')
+    except:
+        pass
     def remp(ligne):
         l =[]
         for cell in ligne:
