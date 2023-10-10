@@ -12,6 +12,7 @@ On suppose que l'on a definie TAILLE comme suit:
 
  \#define TAILLE 341
 
+mais pas nécessairement avec l'entier 341.
 
 Si nbe == TAILLE, la fonction ne fait rien et retourne 0.
 
