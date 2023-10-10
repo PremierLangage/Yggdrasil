@@ -11,7 +11,7 @@ renvoyant une liste des cellules voisines.
 
     >>> len(jeu.voisines(0,0))
     3
-    >>> jeu.voisines(0,0)[0]
+    >>> jeu.voisines(0,0)[0].vivant
     False
 
 ==
