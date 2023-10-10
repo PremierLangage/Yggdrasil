@@ -22,7 +22,7 @@ import os
 import time
 
 class Cellule:
-    def __init__(self, etat):
+    def __init__(self, etat, i, j):
         self.vivant = etat
         self.futur = None
         self.i = i
