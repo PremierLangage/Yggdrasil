@@ -1,20 +1,20 @@
 extends = /ComputerScience/NSI/templates/pltest/pltest2023.pl
 
 
-title= Méthode nombre de voisines
+title= Méthode nombre de voisines vivantes
 
 text==
 
 Ecrire la méthode `nb_voisines` de la classe `Jeu_de_la_vie` ayant comme 
 paramètre une cellule et 
-renvoyant le nombre de cellules vivantes voisines.
+renvoyant le nombre de cellules **vivantes** voisines.
 
 On pourra bien entendu utiliser les méthodes précédentes.
 
-    >>> cell.i, cell.j
+    >>> cell.i, cell.j # cell est une cellule existante
     (0, 0)
-    >>> jeu.nb_voisines(cell)
-    0
+    >>> jeu.nb_voisines(cell) 
+    0 # cell n'a donc aucune voisine vivante
 
 ==
 
