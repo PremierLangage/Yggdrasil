@@ -73,12 +73,9 @@ editor.code==
 pltest==
 >>> Jeu_de_la_vie.tour = tour #
 >>> jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)]) #
->>> cell1 = jeu.plateau[0][0] #
->>> cell2 = jeu.plateau[4][3] #
->>> jeu.nb_voisines(cell1)
-0
->>> jeu.nb_voisines(cell2)
-3
+>>> jeu.tour()
+>>> jeu.plateau[4][3].vivant
+True
 ==
 
 soluce==
