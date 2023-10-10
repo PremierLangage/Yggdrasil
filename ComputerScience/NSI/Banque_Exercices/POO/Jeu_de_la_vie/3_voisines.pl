@@ -9,8 +9,10 @@ Ecrire la méthode `voisines` de la classe `Jeu_de_la_vie` ayant comme
 paramètres `i` le numéro de ligne et `j` le numéro de colonne et 
 renvoyant une liste des cellules voisines.
 
-    >>> jeu.voisines(0,0)
-    []
+    >>> len(jeu.voisines(0,0))
+    3
+    >>> jeu.voisines(0,0)[0]
+    False
 
 ==
 
