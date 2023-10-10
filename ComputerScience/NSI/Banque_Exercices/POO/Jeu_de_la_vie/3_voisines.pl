@@ -43,7 +43,7 @@ pltest==
 5
 >>> len(jeu.voisines(6,6)) # test nombre de voisins
 3
->>> str(type(jeu.voisines(6,6)[0])) # type voisin
+>>> jeu.voisines(6,6)[0].vivant
 3
 ==
 
