@@ -8,8 +8,9 @@ Ecrire une fonction ajoutTrie(int *tab,int nbe, int valeur)
 qui ajoute la valeur dans le tableau trié tab de taille TAILLE contenant nbe déjà nbe elements.
 
 On suppose que l'on a definie TAILLE comme suit:
- \#define TAILLE 341
-
+```C
+#define TAILLE 341
+```
 Si nbe == TAILLE, la fonction ne fait rien et retourne 0.
 Sinon la valeur est insérée dans le tableau de sorte que le tableau reste trié en ordre croissant
 dans ce cas la fonction retourne 1.
