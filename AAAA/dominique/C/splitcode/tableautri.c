@@ -9,9 +9,9 @@ qui ajoute la valeur dans le tableau trié tab de taille TAILLE contenant nbe d�
 
 On suppose que l'on a definie TAILLE comme suit:
 
-```C
-#define TAILLE 341
-```
+
+ \#define TAILLE 341
+
 
 Si nbe == TAILLE, la fonction ne fait rien et retourne 0.
 Sinon la valeur est insérée dans le tableau de sorte que le tableau reste trié en ordre croissant
