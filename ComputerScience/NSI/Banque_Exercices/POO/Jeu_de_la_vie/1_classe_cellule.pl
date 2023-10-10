@@ -21,7 +21,7 @@ L'attribut `futur` sera mis à None initialement
 
 On créera une cellule avec le code suivant:
 
-    >>> Cellule(True)
+    >>> Cellule(True, 1, 3) # cellule vivante à la ligne 1 et à la colonne 3
 
 ==
 
