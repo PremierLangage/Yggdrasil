@@ -5,11 +5,9 @@ title= Méthode affiche
 
 text==
 
-Ecrire la méthode `tour` de la classe `Jeu_de_la_vie` n'ayant aucun paramètre et 
-réalisant un tour du jeu de la vie. C'est à dire:
-
-- Pour chaque cellule du plateau, calculer le futur etat de la cellule en respectant les règles du jeu
-- Pour chaque cellule du plateau, mettre à jour l'état de la cellule.
+Ecrire la méthode `affiche` de la classe `Jeu_de_la_vie` n'ayant aucun paramètre et 
+effacant le terminal et affichant la plateau en utilisant des 1 pour les cellules vivantes
+et de 0 pour les cellules mortes
 
 On pourra bien entendu utiliser les méthodes précédentes.
 
@@ -64,11 +62,23 @@ class Jeu_de_la_vie:
             if cell.vivant:
                 cpt += 1
         return cpt
+    
+    def tour(self):
+        for ligne in self.plateau:
+            for cellule in ligne:
+                cellule.futur_etat(self.nb_voisines(cellule))
+        for ligne in self.plateau:
+            for cellule in ligne:
+                cellule.maj_etat()
 ==
 
 
 editor.code==
-
+def tour(self):
+    try:
+        os.system('cls')
+        os.system('clear')
+    ...
 ==
 
 pltest==
