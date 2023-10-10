@@ -37,7 +37,7 @@ class Jeu_de_la_vie:
         self.plateau = [[Cellule(False) for i in range(taille)] for i in range(taille)]
         for i, j in liste_vivantes:
             self.plateau[i][j].vivant = True
-            
+
     def voisines(self, i, j):
         lst = [(i - 1, j - 1), (i, j - 1), (i + 1, j - 1), (i - 1, j), (i + 1, j), (i - 1, j + 1), (i, j + 1), (i + 1, j + 1)]
         res = []
@@ -69,12 +69,13 @@ pltest==
 ==
 
 soluce==
-def nb_voisines(self, i, j):
-    cpt = 0
-    for cell in self.voisines(i, j):
-        if cell.vivant:
-            cpt += 1
-    return cpt
+def futur_etat(self, nb):
+    if not self.vivant and nb == 3:
+        self.futur = True
+    if self.vivant and nb >= 2 and nb <=3:
+        self.futur = True
+    else:
+        self.futur = False
 ==
 
 
