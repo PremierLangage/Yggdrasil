@@ -111,7 +111,7 @@ editor.code==
 pltest==
 >>> Jeu_de_la_vie.jouer = jouer #
 >>> jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4), (4, 3)]) #
->>> jeu.jouer(100,0.001) #
+>>> jeu.jouer(100,0.001) 
 0000000
 0000000
 0000000
