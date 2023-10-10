@@ -5,9 +5,13 @@ title= Classe Jeu de la Vie
 
 text==
 
-Ecrire la classe `Jeu_de_la_vie` ayant un seul attribut `plateau`: liste de `n` liste 
-de `n` cellules (instances de la classe `Cellule`) ainsi que son constructeur comme 
-paramètres:
+Ecrire la classe `Jeu_de_la_vie` ayant deux attributs:
+
+- `plateau` : liste de `n` liste de `n` cellules (instances 
+de la classe `Cellule`) 
+- `taille` : le nombre de cellules sur un côté du plateau (il est carré)
+
+Son constructeur aura comme paramètres:
 
 - le nombre `n` de cellules sur un côté du plateau (il est carré)
 - une liste des coordonnées des cellules vivantes initialement.
