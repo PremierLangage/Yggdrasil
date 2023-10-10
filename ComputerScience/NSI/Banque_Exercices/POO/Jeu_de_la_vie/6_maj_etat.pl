@@ -69,9 +69,9 @@ editor.code==
 
 pltest==
 >>> Cellule.maj_etat = maj_etat #
->>> cell = Cellule(True) #
+>>> cell = Cellule(True, 0, 0) #
 >>> cell.futur = False #
->>> cell2 = Cellule(False) #
+>>> cell2 = Cellule(False, 1, 1) #
 >>> cell2.futur = True #
 >>> cell.maj_etat()
 >>> cell.vivant
