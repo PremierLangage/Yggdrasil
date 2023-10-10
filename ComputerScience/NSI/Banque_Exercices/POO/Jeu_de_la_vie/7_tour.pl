@@ -82,7 +82,7 @@ soluce==
 def tour(self):
     for ligne in self.plateau:
         for cellule in ligne:
-            cellule.futur_etat(self.nb_voisines(cellules))
+            cellule.futur_etat(self.nb_voisines(cellule))
     for ligne in self.plateau:
         for cellule in ligne:
             cellule.maj_etat()
