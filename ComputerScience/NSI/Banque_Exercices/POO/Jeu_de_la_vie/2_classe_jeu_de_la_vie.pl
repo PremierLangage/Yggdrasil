@@ -40,6 +40,7 @@ import time
 class Cellule:
     def __init__(self, etat):
         self.vivant = etat
+        self.futur = None
 ==
 
 
