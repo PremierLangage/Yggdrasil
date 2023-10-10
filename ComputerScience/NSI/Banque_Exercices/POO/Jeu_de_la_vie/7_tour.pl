@@ -85,7 +85,7 @@ True
 ==
 
 soluce==
-def tout(self):
+def tour(self):
     for ligne in self.plateau:
         for cellule in ligne:
             cellule.futur_etat(self.nb_voisines(cellules))
