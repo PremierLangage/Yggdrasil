@@ -85,7 +85,6 @@ class Jeu_de_la_vie:
     
     def affiche(self):
         try:
-            os.system('cls')
             os.system('clear')
         except:
             pass
