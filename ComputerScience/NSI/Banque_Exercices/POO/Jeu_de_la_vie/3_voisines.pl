@@ -35,15 +35,15 @@ editor.code==
 ==
 
 pltest==
->>> Jeu_de_la_vie.voisines = voisines
->>> jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)])
+>>> Jeu_de_la_vie.voisines = voisines #
+>>> jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)]) #
 >>> len(jeu.voisines(0,0)) # test nombre de voisins
 3
 >>> len(jeu.voisines(1,0)) # test nombre de voisins
 5
 >>> len(jeu.voisines(6,6)) # test nombre de voisins
 3
->>> type(jeu.voisines(6,6)[0]) # type voisin
+>>> str(type(jeu.voisines(6,6)[0])) # type voisin
 3
 ==
 
