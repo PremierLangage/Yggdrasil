@@ -45,7 +45,7 @@ editor.code==
 ==
 
 pltest==
->>> Jeu_de_la_vie.voisines = voisines #
+>>> Jeu_de_la_vie.nb_voisines = nb_voisines #
 >>> jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)]) #
 >>> jeu.nb_voisines(0,0)
 0
