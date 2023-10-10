@@ -12,9 +12,14 @@ et de 0 pour les cellules mortes
 On pourra bien entendu utiliser les méthodes précédentes.
 
     >>> jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)]) #
-    >>> jeu.tour()
-    >>> jeu.plateau[4][3].vivant
-    True
+    >>> jeu.affiche()
+    0000000
+    0000000
+    0000000
+    0000100
+    0000100
+    0000100
+    0000000
 
 ==
 
