@@ -57,11 +57,14 @@ False
 True
 >>> jeu.plateau[3][4].vivant
 False
+>>> jeu.taille
+7
 ==
 
 soluce==
 class Jeu_de_la_vie:
     def __init__(self, taille, liste_vivantes):
+        self.taille = taille
         self.plateau = [[Cellule(False) for i in range(taille)] for i in range(taille)]
         for i, j in liste_vivantes:
             self.plateau[i][j].vivant = True
