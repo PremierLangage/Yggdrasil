@@ -23,6 +23,7 @@ import time
 class Cellule:
     def __init__(self, etat):
         self.vivant = etat
+        self.futur = None
 
 class Jeu_de_la_vie:
     def __init__(self, taille, liste_vivantes):
