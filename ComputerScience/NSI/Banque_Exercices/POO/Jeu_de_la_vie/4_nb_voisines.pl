@@ -6,12 +6,14 @@ title= Méthode nombre de voisines
 text==
 
 Ecrire la méthode `nb_voisines` de la classe `Jeu_de_la_vie` ayant comme 
-paramètres `i` le numéro de ligne et `j` le numéro de colonne et 
+paramètre une cellule et 
 renvoyant le nombre de cellules vivantes voisines.
 
 On pourra bien entendu utiliser les méthodes précédentes.
 
-    >>> jeu.nb_voisines(0,0)
+    >>> cell.i, cell.j
+    (0, 0)
+    >>> jeu.nb_voisines(cell)
     0
 
 ==
@@ -52,16 +54,18 @@ editor.code==
 pltest==
 >>> Jeu_de_la_vie.nb_voisines = nb_voisines #
 >>> jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)]) #
->>> jeu.nb_voisines(0,0)
+>>> cell1 = jeu.tableau[0][0] #
+>>> cell2 = jeu.tableau[4][0] #
+>>> jeu.nb_voisines(cell1)
 0
->>> jeu.nb_voisines(4,3)
+>>> jeu.nb_voisines(cell2)
 3
 ==
 
 soluce==
-def nb_voisines(self, i, j):
+def nb_voisines(self, cellule):
     cpt = 0
-    for cell in self.voisines(i, j):
+    for cell in self.voisines(cellule):
         if cell.vivant:
             cpt += 1
     return cpt
