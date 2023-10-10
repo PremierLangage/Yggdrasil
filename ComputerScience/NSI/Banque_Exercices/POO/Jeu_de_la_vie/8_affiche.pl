@@ -87,6 +87,13 @@ pltest==
 >>> Jeu_de_la_vie.affiche = affiche #
 >>> jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)]) #
 >>> jeu.affiche()
+0000000
+0000000
+0000000
+0000100
+0000100
+0000100
+0000000
 ==
 
 soluce==
@@ -104,7 +111,7 @@ def affiche(self):
             else:
                 l.append("0")
         return l
-    res = [ ','.join(remp(ligne)) for ligne in self.plateau]
+    res = [ ''.join(remp(ligne)) for ligne in self.plateau]
     res = '\n'.join(res)
     print(res)
 ==
