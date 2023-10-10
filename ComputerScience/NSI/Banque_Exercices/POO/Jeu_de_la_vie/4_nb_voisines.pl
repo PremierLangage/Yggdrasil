@@ -54,8 +54,8 @@ editor.code==
 pltest==
 >>> Jeu_de_la_vie.nb_voisines = nb_voisines #
 >>> jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)]) #
->>> cell1 = jeu.tableau[0][0] #
->>> cell2 = jeu.tableau[4][0] #
+>>> cell1 = jeu.plateau[0][0] #
+>>> cell2 = jeu.plateau[4][0] #
 >>> jeu.nb_voisines(cell1)
 0
 >>> jeu.nb_voisines(cell2)
