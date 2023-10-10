@@ -74,7 +74,7 @@ class Jeu_de_la_vie:
 
 
 editor.code==
-def tour(self):
+def affiche(self):
     try:
         os.system('cls')
         os.system('clear')
@@ -90,13 +90,21 @@ True
 ==
 
 soluce==
-def tour(self):
-    for ligne in self.plateau:
-        for cellule in ligne:
-            cellule.futur_etat(self.nb_voisines(cellule))
-    for ligne in self.plateau:
-        for cellule in ligne:
-            cellule.maj_etat()
+def affiche(self):
+    try:
+        os.system('cls')
+        os.system('clear')
+    def remp(ligne):
+        l =[]
+        for cell in ligne:
+            if cell.vivant:
+                l.append("1")
+            else:
+                l.append("0")
+        return l
+    res = [ ','.join(remp(ligne)) for ligne in self.plateau]
+    res = '\n'.join(res)
+    print(res)
 ==
 
 
