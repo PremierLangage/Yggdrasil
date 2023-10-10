@@ -1,4 +1,5 @@
 
+extends = /model/math/input0.pl
 extends = /model/basic/matchlist.pl
 
 before==
