@@ -84,9 +84,7 @@ def affiche(self):
 pltest==
 >>> Jeu_de_la_vie.tour = tour #
 >>> jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)]) #
->>> jeu.tour()
->>> jeu.plateau[4][3].vivant
-True
+>>> jeu.affiche()
 ==
 
 soluce==
