@@ -6,12 +6,13 @@ title= Méthode voisines
 text==
 
 Ecrire la méthode `voisines` de la classe `Jeu_de_la_vie` ayant comme 
-paramètres `i` le numéro de ligne et `j` le numéro de colonne et 
-renvoyant une liste des cellules voisines.
+paramètre une cellule et renvoyant une liste des cellules voisines.
 
-    >>> len(jeu.voisines(0,0))
+    >>> cell.i, cell.j
+    (0, 0)
+    >>> len(jeu.voisines(cell))
     3
-    >>> jeu.voisines(0,0)[0].vivant
+    >>> jeu.voisines(cell)[0].vivant
     False
 
 ==
@@ -54,7 +55,8 @@ False
 ==
 
 soluce==
-def voisines(self, i, j):
+def voisines(self, cell):
+    i, j = cell.i, cell.j
     lst = [(i - 1, j - 1), (i, j - 1), (i + 1, j - 1), (i - 1, j), (i + 1, j), (i - 1, j + 1), (i, j + 1), (i + 1, j + 1)]
     res = []
     for x, y in lst:
