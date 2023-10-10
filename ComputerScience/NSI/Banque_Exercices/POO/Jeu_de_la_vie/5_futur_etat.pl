@@ -64,8 +64,8 @@ editor.code==
 
 pltest==
 >>> Cellule.futur_etat = futur_etat #
->>> cell = Cellule(True) #
->>> cell2 = Cellule(False) #
+>>> cell = Cellule(True, 1, 1) #
+>>> cell2 = Cellule(False, 2, 2) #
 >>> cell.futur_etat(2)
 >>> cell.futur
 True
