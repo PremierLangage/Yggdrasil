@@ -44,13 +44,16 @@ def voisines(self,...
 pltest==
 >>> Jeu_de_la_vie.voisines = voisines #
 >>> jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)]) #
->>> len(jeu.voisines(0,0)) # test nombre de voisins
+>>> cell1 = jeu.plateau[0][0] #
+>>> cell2 = jeu.plateau[1][0] #
+>>> cell1 = jeu.plateau[6][6] #
+>>> len(jeu.voisines(cell1)) # test nombre de voisins
 3
->>> len(jeu.voisines(1,0)) # test nombre de voisins
+>>> len(jeu.voisines(cell2)) # test nombre de voisins
 5
->>> len(jeu.voisines(6,6)) # test nombre de voisins
+>>> len(jeu.voisines(cell3)) # test nombre de voisins
 3
->>> jeu.voisines(6,6)[0].vivant
+>>> jeu.voisines(cell3)[0].vivant
 False
 ==
 
