@@ -21,17 +21,21 @@ import os
 import time
 
 class Cellule:
-    def __init__(self, etat):
+    def __init__(self, etat, i, j):
         self.vivant = etat
         self.futur = None
+        self.i = i
+        self.j = j
 
 class Jeu_de_la_vie:
     def __init__(self, taille, liste_vivantes):
         self.taille = taille
-        self.plateau = [[Cellule(False) for i in range(taille)] for i in range(taille)]
+        self.plateau = [[Cellule(False, i, j) for j in range(taille)] for i in range(taille)]
         for i, j in liste_vivantes:
             self.plateau[i][j].vivant = True
-    def voisines(self, i, j):
+
+    def voisines(self, cell):
+        i, j = cell.i, cell.j
         lst = [(i - 1, j - 1), (i, j - 1), (i + 1, j - 1), (i - 1, j), (i + 1, j), (i - 1, j + 1), (i, j + 1), (i + 1, j + 1)]
         res = []
         for x, y in lst:
