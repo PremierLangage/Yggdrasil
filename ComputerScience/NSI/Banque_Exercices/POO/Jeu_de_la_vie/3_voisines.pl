@@ -46,7 +46,7 @@ pltest==
 >>> jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)]) #
 >>> cell1 = jeu.plateau[0][0] #
 >>> cell2 = jeu.plateau[1][0] #
->>> cell1 = jeu.plateau[6][6] #
+>>> cell3 = jeu.plateau[6][6] #
 >>> len(jeu.voisines(cell1)) # test nombre de voisins
 3
 >>> len(jeu.voisines(cell2)) # test nombre de voisins
