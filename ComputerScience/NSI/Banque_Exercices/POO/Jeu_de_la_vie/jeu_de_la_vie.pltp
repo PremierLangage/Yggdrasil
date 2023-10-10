@@ -23,11 +23,25 @@ L'état d'une cellule au tour suivant dépend de l'état de ses huit voisins dir
 
 Si vous voulez des précisions ou en savoir plus allez sur la page Wikipédia du jeu de la vie.
 
+# Une fois finie
+
+Vous pouvez jouer le code en mettant les deux classes complètes dans un fichier et en ajoutant le code ci-dessous:
+
+    jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4), (4, 3)])
+    jeu.jouer(100,0.3)
+
 ==
 
 # Fonctions de base 
 @ 1_classe_cellule.pl
-# @ 2_classe_jeu_de_la_vie.pl
+@ 2_classe_jeu_de_la_vie.pl
+@ 3_voisines.pl
+@ 4_nb_voisines.pl
+@ 5_futur_etat.pl
+@ 6_maj_etat.pl
+@ 7_tour.pl
+@ 8_affiche.pl
+@ 9_jouer.pl
 
 
 
