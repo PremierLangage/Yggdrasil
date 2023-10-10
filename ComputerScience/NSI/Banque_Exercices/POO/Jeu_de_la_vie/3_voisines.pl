@@ -44,7 +44,7 @@ pltest==
 >>> len(jeu.voisines(6,6)) # test nombre de voisins
 3
 >>> jeu.voisines(6,6)[0].vivant
-3
+False
 ==
 
 soluce==
