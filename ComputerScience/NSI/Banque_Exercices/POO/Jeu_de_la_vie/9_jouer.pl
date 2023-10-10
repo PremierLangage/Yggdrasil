@@ -1,7 +1,7 @@
 extends = /ComputerScience/NSI/templates/pltest/pltest2023.pl
 
 
-title= Méthode affiche
+title= Méthode jouer
 
 text==
 
