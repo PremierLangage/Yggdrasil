@@ -5,16 +5,17 @@ title= Méthode tour
 
 text==
 
-Ecrire la méthode `maj_etat` de la classe `Cellule` n'ayant aucun paramètre et faisant passer l'attribut `vivant` à la valeur de l'attribut `futur`.
+Ecrire la méthode `tour` de la classe `Jeu_de_la_vie` n'ayant aucun paramètre et 
+réalisant un tour du jeu de la vie. C'est à dire:
+
+- Pour chaque cellule du plateau, calculer le futur etat de la cellule en respectant les règles du jeu
+- Pour chaque cellule du plateau, mettre à jour l'état de la cellule.
 
 On pourra bien entendu utiliser les méthodes précédentes.
 
-    >>> cell.vivant
-    False
-    >>> cell.futur
-    True
-    >>> cell.maj_etat()
-    >>> cell.vivant
+    >>> jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4)]) #
+    >>> jeu.tour()
+    >>> jeu.plateau[4][3].vivant
     True
 
 ==
