@@ -68,15 +68,16 @@ void printTab(int *t, int size)
     printf("\n");
 }
 
-int main(int c, char **v)
+int main(int c, char *v[])
 {
     int n;
     int i = 0;
     int tab[TAILLE];
+    int pas= atoi(v[1]);
     while (scanf("%d", &n) == 1)
     {
         i += ajoutTrie(tab, i, n);
-        if (i % 7 == 0)
+        if (i % pas == 0)
             printTab(tab, i);
     }
     return 0;
