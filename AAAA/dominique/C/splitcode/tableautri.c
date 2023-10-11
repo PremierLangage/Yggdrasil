@@ -86,6 +86,5 @@ int main(int c, char **v)
 /* PL:checks_args_stdin==
 [["Test 1", [""], "5 4 7 190 8 14 17 16 161 16 16 13 11"],
 ["Test Yveline", [""], "4 538 98 876 65 54 43 1 883 8 798739 66 23 14 17 98 900 1000 12"],
-["Test aléatoire", [""], " ".join([random.randint(-101,10000) for x in range(1003)])]
 ]
 PL:== */
