@@ -116,6 +116,8 @@ try:
     context['text'] = '<pre>' + html.escape(json.dumps(f, indent=2)) + '</pre>'
     with open(sys.argv[2], 'w') as f:
         json.dump(context, f)
+except Exception as e:
+    print(e, file=sys.stderr)
 ==
 
 grader==#|py|
