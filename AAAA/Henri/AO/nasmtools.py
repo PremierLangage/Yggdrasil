@@ -2,8 +2,6 @@
 import subprocess
 import html
 
-from std_progC_utils import make_hide_block_on_click
-
 # principals signals
 signals = {
     2: "SIGINT",
@@ -27,13 +25,13 @@ class CompileResult:
         self.flags = flags
 
     def success(self):
-        return not self.taboo_error() and len(self.spout) + len(self.errout) == 0
+        return self.returncode == 0 and not self.taboo_error() and len(self.spout) + len(self.errout) == 0
 
     def warning(self):
-        return not self.taboo_error() and not self.success() and "error:" not in self.errout
+        return self.returncode == 0 and not self.taboo_error() and not self.success() and "error:" not in self.errout
 
     def error(self):
-        return self.taboo_error() or "error:" in self.errout
+        return self.returncode != 0 or self.taboo_error() or "error:" in self.errout
 
     def taboo_error(self):
         return bool(self.taboo)
@@ -67,9 +65,9 @@ class CompileResult:
         if self.taboo_error():
             feedback += "<b>Refus de compilation :</b> non respect du taboo : " + self.taboo
         elif not self.success():
-            feedback += make_hide_block_on_click("compil_ans", self.texte() + ' avec flags ' + ' '.join(self.flags), "<pre>" + html.escape(self.spout+self.errout) + "</pre>", "")
+            feedback += self.texte() + ' avec flags <code>' + ' '.join(self.flags) + "</code><pre>" + html.escape(self.spout+self.errout) + "</pre>"
         else:
-            feedback += make_hide_block_on_click("compil_ans", self.texte() + ' avec flags ' + ' '.join(self.flags), "C'était parfait, le compilateur n'a rien dit...", "")
+            feedback += self.texte() + ' avec flags <code>' + ' '.join(self.flags) + "</code><br/>C'était parfait, le compilateur n'a rien dit..."
         feedback += '</div>'
         return feedback
 
@@ -81,7 +79,8 @@ class CompileResult:
         return CompileResult(
             other.returncode,
             self.spout + other.spout,
-            self.errout + other.errout
+            self.errout + other.errout,
+            flags=other.flags
         )
 
     def __bool__(self):
@@ -108,38 +107,49 @@ class Source:
 
     def build(self, compiler="nasm", flags=["-g", "-felf32"]):
         command_args = [compiler, self.name, "-o", self.name + ".o"] + flags
-        sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        spout = sp.stdout.decode()
-        errout = sp.stderr.decode()
-        returncode = sp.returncode
-        if returncode == 0:
-            self.built = True
-        return CompileResult(returncode, spout, errout, flags=flags)
+        try:
+            sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            spout = sp.stdout.decode()
+            errout = sp.stderr.decode()
+            returncode = sp.returncode
+            if returncode == 0:
+                self.built = True
+            return CompileResult(returncode, spout, errout, flags=flags)
+        except Exception as e:
+            return CompileResult(-1, "", str(e), flags=flags)
 
 class Program:
     def __init__(self, name, sources):
         self.name = name
         self.sources = sources
 
-    def link(self, compiler="ld", ldflags=["-melf_i386", "-emain"]):
+    def link(self, compiler="ld", ldflags=["-melf_i386", "-emain", "--fatal-warnings"]):
         command_args = [compiler, "-o", self.name] + ldflags + [ src.name + '.o' for src in self.sources ]
-        sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        spout = sp.stdout.decode()
-        errout = sp.stderr.decode()
-        returncode = sp.returncode
-        return CompileResult(returncode, spout, errout)
+        try:
+            sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            spout = sp.stdout.decode()
+            errout = sp.stderr.decode()
+            returncode = sp.returncode
+            if returncode == 0:
+                self.built = True
+            return CompileResult(returncode, spout, errout, flags=ldflags)
+        except Exception as e:
+            return CompileResult(-1, "", str(e), flags=ldflags)
 
     def run(self, argv):
         command_args = ['./' + self.name] + argv
-        sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
+        try:
+            sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
+        except Exception as e:
+            return str(e)
         try: 
-            ouput = sp.stdout.decode() + sp.stderr.decode()
+            output = sp.stdout.decode() + sp.stderr.decode()
         except:
-            ouput = "Impossible de décoder la sortie standard"
+            output = "Impossible de décoder la sortie standard"
         if -sp.returncode in signals:
-            ouput += "Process exited with UNIX signal ("+str(-sp.returncode)+") "+signals[-sp.returncode]
+            output += "Process exited with UNIX signal ("+str(-sp.returncode)+") "+signals[-sp.returncode]
         elif sp.returncode < 0:
-            ouput += "Process exited with UNIX signal ("+str(-sp.returncode)+")"
+            output += "Process exited with UNIX signal ("+str(-sp.returncode)+")"
         else:
             output += "Process exited with return code " + str(sp.returncode)
-        return ouput
+        return output
