@@ -110,10 +110,9 @@ import sys
 try:
     with open(sys.argv[1],'r') as f:
         context = json.load(f)
+    context['text'] = json.dumps(context)
     with open(sys.argv[2], 'w+') as f:
         json.dump(context, f)
-    text = context
-    print(context)
 except Exception as e:
     print(e, file=sys.stderr)
 ==
