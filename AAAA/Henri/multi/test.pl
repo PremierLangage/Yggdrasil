@@ -1,4 +1,4 @@
-extends = ./multi.pl
+extends = ./multi_edit.pl
 
 title = Truc
 
