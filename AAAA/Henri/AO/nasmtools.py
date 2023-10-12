@@ -115,7 +115,7 @@ class Source:
                 self.built = True
             return CompileResult(returncode, spout, errout, flags=flags)
         except Exception as e:
-            return CompileResult(-1, "", "" + e, flags=flags)
+            return CompileResult(-1, "", str(e), flags=flags)
 
 class Program:
     def __init__(self, name, sources):
@@ -131,14 +131,14 @@ class Program:
             returncode = sp.returncode
             return CompileResult(returncode, spout, errout)
         except Exception as e:
-            return CompileResult(-1, "", "" + e)
+            return CompileResult(-1, "", str(e))
 
     def run(self, argv):
         command_args = ['./' + self.name] + argv
         try:
             sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
         except Exception as e:
-            return "" + e
+            return str(e)
         try: 
             output = sp.stdout.decode() + sp.stderr.decode()
         except:
