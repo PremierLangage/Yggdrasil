@@ -132,7 +132,7 @@ class Program:
             returncode = sp.returncode
             if returncode == 0:
                 self.built = True
-            return CompileResult(returncode, spout, errout)
+            return CompileResult(returncode, spout, errout, flags=ldflags)
         except Exception as e:
             return CompileResult(-1, "", str(e), flags=ldflags)
 
