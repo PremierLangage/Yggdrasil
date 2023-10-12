@@ -31,7 +31,7 @@ class CompileResult:
         return self.returncode == 0 and not self.taboo_error() and not self.success() and "error:" not in self.errout
 
     def error(self):
-        return self.returncode != 0 and self.taboo_error() or "error:" in self.errout
+        return self.returncode != 0 or self.taboo_error() or "error:" in self.errout
 
     def taboo_error(self):
         return bool(self.taboo)
