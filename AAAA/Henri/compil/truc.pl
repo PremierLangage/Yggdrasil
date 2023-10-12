@@ -31,6 +31,15 @@ nasm -felf32 main.asm -o main.o
 ld -m elf_i386 -e main main.o -o main
 ==
 
+files.main_c % {}
+files.main_c.lang = c
+files.main_c.readonly = 1
+files.main_c.code == #|c|
+int main() {
+    return 0;
+}
+==
+
 
 form==#|html|
 <link rel="stylesheet" href="https://hderycke.frama.io/sharecode/lib/codemirror.css">
@@ -47,7 +56,7 @@ form==#|html|
 </div>
 <script>
     let fileid = 0;
-    function addCM(id, content) {
+    function addCM(id, content, readonly) {
         const uid = fileid++;
         const div = document.createElement('div');
         document.getElementById("section_code").appendChild(div);
@@ -66,12 +75,13 @@ form==#|html|
         // id pour PL (angular?)
         textarea.id = "form_code" + id;
         textarea.value = content;
-        
+
         const editor = CodeMirror.fromTextArea(
             div.appendChild(textarea),
             {
                 lineNumbers: true,
                 styleActiveLine: true,
+                readOnly: readonly,
             }
         );
 
@@ -87,7 +97,7 @@ form==#|html|
 <script>
     {% for file in files %}
     {
-        const editor = addCM("{{ file }}", `{{ files[file].code }}`);
+        const editor = addCM("{{ file }}", `{{ files[file].code }}`, {{ files[file].readonly == 1 ? true : false }});
         editor.setOption('mode', "{{ files[file].lang }}");
     }
     {% endfor %}
