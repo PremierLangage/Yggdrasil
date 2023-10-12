@@ -23,7 +23,6 @@ solved=[ False for n in range(N)]
 isfloat = [ False for n in range(N)]
 inputs = []
 for i in range(N):
-     
     X = Input()
     globals()[f"input{i}"] = X
     inputs.append(X)

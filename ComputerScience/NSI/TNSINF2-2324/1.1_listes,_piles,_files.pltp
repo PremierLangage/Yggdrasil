@@ -1,0 +1,25 @@
+title= Listes, piles, files
+
+introduction==
+
+Bonjour,
+
+Ceci est votre premier véritable DM.
+
+Pour ces exercices vous devrez utiliser les interfaces du cours des listes chainees, des piles et des files.
+
+Et vous pouvez faire ceci sans importer quoi que ce soit (pas besoin de faire `from pile import *`).
+
+Bonne chance.
+
+N'oubliez pas que votre principale ressource est votre cours.
+
+
+==
+
+
+@ ../Banque_Exercices/Listes_Piles_Files/pile_de_a.pl
+@ ../Banque_Exercices/Listes_Piles_Files/pile_mot.pl
+@ ../Banque_Exercices/Listes_Piles_Files/retourne.pl
+@ ../Banque_Exercices/Listes_Piles_Files/sup_pair.pl
+@ ../Banque_Exercices/Listes_Piles_Files/sup_doublons.pl

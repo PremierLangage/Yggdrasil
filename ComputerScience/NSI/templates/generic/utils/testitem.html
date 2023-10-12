@@ -1,0 +1,55 @@
+            <div style="border:1px solid black;
+                        padding:1px;
+                        margin:3px;
+                        background-color:{% if not test.status %}Tomato{% else %}LightGreen{% endif %};
+                        border-radius:4px;">
+                <button type="button"
+                        class="btn btn-block {%  if not test.status %}btn-danger{% else %}btn-success{% endif %}"
+                        {%  if not test.status %}aria-expanded="true" aria-controls="{{ test.make_id() }}"{% endif %}
+                        data-toggle="collapse"
+                        data-target="#{{ test.make_id() }}">
+                    <b>
+                        {{ test.title }} :
+                        {%  if not test.status %}échec{% else %}succès{% endif %}
+                    </b>
+                </button>
+                <div id="{{ test.make_id() }}"
+                     class="{%  if not test.status %}show{% else %}collapse{% endif %}">
+                    <div class="card {% if not test.status %}card-danger{% else %}card-success{% endif %};">
+                        <p>
+                            <b>
+                                Contexte d'exécution :
+                            </b>
+                        </p>
+                        <p>
+                            {{ test.context() }}
+                        </p>
+                        <p>
+                            <b>
+                                Effets du programme :
+                            </b>
+                        </p>
+                        <p>
+                            {{ test.results() }}
+                        </p>
+                        {% for assertion in test.assertions %}
+                        {% if assertion.status and assertion.params.report_success %}
+                        <div class="card card-success;"
+                             style="background-color:LightGreen;">
+                            <b>
+                                {{ assertion.__str__() }}
+                            </b>
+                        </div>
+                        {% elif not assertion.status %}
+                        <div class="card card-danger;"
+                             style="color:white; background-color:Tomato;">
+                            <b>
+                                {{ assertion.__str__() }}
+                            </b>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+

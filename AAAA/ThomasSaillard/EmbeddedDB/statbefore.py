@@ -59,7 +59,6 @@ if __name__ == "__main__":
     test_before_clause('before_stat', dic)
     test_before_clause('before', dic)
     test_before_clause('before_post', dic)
-    
     test_before_clause('before_graph', dic)
 
     with open(output_json, "w+") as f:

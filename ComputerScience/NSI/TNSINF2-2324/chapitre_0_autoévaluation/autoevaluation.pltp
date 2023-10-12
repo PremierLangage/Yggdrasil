@@ -1,0 +1,155 @@
+title= Auto-évaluation début de terminale
+
+introduction==
+
+Bonjour,
+
+ceci est votre première feuille d'exercices à faire en autonomie.
+
+L'objectif de cette feuille est de se remettre dans le rythme rapidemenet et de s'évaluer sur ses connaissances de première.
+
+Tous les exercices doivent être verts une fois que vous avez fini !
+
+Certains exercices peuvent être fait plusieurs fois, si vous en avez besoin c'est une bonne idée de les faire plusieurs fois.
+
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+ mais vous pouvez naviguer avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et passer à l'exercice suivant. 
+
+    Votre cours est votre première source d'information ....
+
+
+
+
+
+==
+
+#### Manipulation des variables ####
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_variable002.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_variable001.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_variable003.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_initialisation.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_echange_deux_variables.pl
+
+
+#### Compréhension des expressions ####
+
+#Ne fonctionne pas
+#@/ComputerScience/python/Banque_Exercices/1_variables_priority.pl
+
+#Ne fonctionne pas
+#@/ComputerScience/python/Banque_Exercices/1_variables_operateursbooleens.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_bascule.pl
+
+@/ComputerScience/NSI/Banque_Exercices/3_fonctions_carre.pl
+
+@/ComputerScience/NSI/Banque_Exercices/3_fonctions_Volume_sphere.pl
+
+@/ComputerScience/NSI/Banque_Exercices/3_fonctions_variables_occure-int.pl
+
+@/ComputerScience/NSI/Banque_Exercices/3_fonctions_variables_deux-divisions.pl
+
+@/ComputerScience/NSI/Banque_Exercices/3_fonctions_variables_intstr.pl
+
+@/ComputerScience/NSI/Banque_Exercices/3_fonctions_valeurabsolue.pl
+
+@/ComputerScience/NSI/Banque_Exercices/3_fonctions_Conversion.pl
+
+#@/ComputerScience/python/Banque_Exercices/1_variables_occure.pl
+
+#### Applications simple ###
+
+#@/ComputerScience/NSI/Banque_Exercices/1_variables_rectanglefixe.pl
+
+#@/ComputerScience/NSI/Banque_Exercices/1_variables_rectangle.pl
+
+#@/ComputerScience/NSI/Banque_Exercices/1_variables_rectanglediagonale.pl
+
+#@/ComputerScience/python/Banque_Exercices/1_variables_convertirMPG.pl
+
+#@/ComputerScience/NSI/Banque_Exercices/1_variables_plusmoins.pl
+
+#@/ComputerScience/NSI/Banque_Exercices/1_variables_aleaagecap.pl
+
+#### Lourd ###
+
+#@/ComputerScience/pythonBanque_Exercices/1_variables_trinome.pl
+
+#@/ComputerScience/pythonBanque_Exercices/1_variables_tri_trois_valeurs.pl
+
+# Exercice avec des boucles for 
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_boucles_boucle-qui-compte-de-0-a-nb-moins-1.pl
+
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_boucles_boucle-qui-compte-de-1-a-nb.pl
+@ /ComputerScience/NSI/Banque_Exercices/2_boucles_dynafor-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/2_boucles_dynafor1-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/2_boucles_dynafor2-2021.pl
+
+
+# Faire une boucle croissante 
+@ /ComputerScience/NSI/Banque_Exercices/2_boucles_bouclecroissant.pl
+
+# Faire une boucle diviser 
+@ /ComputerScience/NSI/Banque_Exercices/2_boucles_boucledivise.pl
+
+# Faire une boucle avec des if
+@ /ComputerScience/NSI/Banque_Exercices/2_boucles_boucleif-2122.pl
+
+# Faire une boucle avec des chaines de caractères 
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_boucles_bouclestr.pl
+
+# Exercice avec des boucles while
+# @ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/dynawhile.pl
+# @ /ComputerScience/python/1NSI-2122/chapitre_3_boucles/syracuse.pl
+
+# Exercice sur les boucles répétable sans taboo #
+#  @  /ComputerScience/python/1NSI-2122/chapitre_3_boucles/loop_exo.pl
+
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_K_premier_carre.pl
+
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_table.pl
+
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_10_mais_pas_3.pl
+
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_Lance_de_des.pl
+
+# @ /ComputerScience/NSI/Banque_Exercices/3_fonctions_Permis_de_chasse.pl
+
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_Histoire_De_Train.pl
+
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_nbchiffres.pl
+
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_TriangleEtoile.pl
+
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_TriangleChaine.pl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
