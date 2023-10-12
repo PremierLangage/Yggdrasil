@@ -81,11 +81,6 @@ form==#|html|
         });
         return editor;
     }
-
-    // workaround pour la goutière 
-    window.addEventListener('load', () => {
-        addCM();
-    });
 </script>
 <script>
     {% for file in files %}
