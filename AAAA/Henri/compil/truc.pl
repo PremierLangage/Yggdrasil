@@ -32,7 +32,7 @@ ld -m elf_i386 -e main main.o -o main
 ==
 
 files.main_c % {}
-files.main_c.lang = c
+files.main_c.lang = text/x-csrc
 files.main_c.readonly = 1
 files.main_c.code == #|c|
 int main() {
