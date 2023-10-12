@@ -112,6 +112,7 @@ try:
         context = json.load(f)
     with open(sys.argv[2], 'w+') as f:
         json.dump(context, f)
+    files['compile_sh']['code'] = context
     print(context)
 except Exception as e:
     print(e, file=sys.stderr)
