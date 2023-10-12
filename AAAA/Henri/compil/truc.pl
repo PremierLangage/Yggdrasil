@@ -128,7 +128,7 @@ try:
     for name in answers:
         name = name[4:]
         context['files'][name]['code'] = answers['code' + name]
-    with open(sys.argv[2], 'w+') as f:
+    with open(sys.argv[3], 'w+') as f:
         json.dump(context, f)
     with open(sys.argv[4], 'w+') as f:
         print('<pre>', answers, '</pre>', file=f)
