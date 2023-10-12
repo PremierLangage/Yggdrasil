@@ -111,8 +111,10 @@ try:
     with open(sys.argv[1], 'r') as f:
         context = json.load(f)
     print(context)
-    #with open(sys.argv[2], 'w+') as f:
+    # with open(sys.argv[2], 'w+') as f:
     #    print(context, file=f)
+except Exception as e:
+    print(e, file=sys.stderr)
 ==
 
 grader==#|py|
