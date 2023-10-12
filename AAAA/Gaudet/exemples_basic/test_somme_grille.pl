@@ -72,3 +72,4 @@ testcases==
 ('5\n1\n1\n2\n3\n4\n5\n', '15', 'Grille 3'),
 ('1\n5\n1\n2\n3\n4\n5\n', '15', 'Grille 4')]
 ==
+

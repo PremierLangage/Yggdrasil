@@ -20,7 +20,9 @@ form ==
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://unpkg.com/kekule/dist/kekule.js?modules=chemWidget,algorithm,render,openbabel,indigo"></script>
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/kekule/dist/themes/default/kekule.css" />
-
+<script type="text/javascript">
+{{script|safe}}
+</script>
 <h2> SMILES </h2>
 <textarea rows="1" cols="50" id="smiles"  style="font-size: 12pt">
 exemple : CCN(c1cc(C)ccc1C)S(=O)(=O)c1cc(C(N)=O)n(C)c1
@@ -38,7 +40,7 @@ function load_kekule() {
   chemViewer.setRenderType(Kekule.Render.RendererType.R3D);
 }
 function display_kekule(smi) {
-  var mol = Kekule.IO.loadFormatData(smi, "smi");  
+  var mol = Kekule.IO.loadFormatData(smi, "mol");  
   chemViewer.setChemObj(mol);
 }
 function display() {

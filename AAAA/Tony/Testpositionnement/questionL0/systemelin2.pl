@@ -1,11 +1,12 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Solution de système linéaire
+
 question==
-Lesquels de ces vecteurs sont solutions du système $!\left \{
+Lesquels de ces vecteurs sont solutions du système $!\left \\{
 \begin{array}{rcl}
-x+y+z&=&0 \\
-y+z&=&0\\
+x+y+z&=&0 \\\\
+y+z&=&0\\\\
 2y+2z&=&0
 \end{array}
 \right.!$?
@@ -26,5 +27,6 @@ $!(1,1,2)!$
 $!(-1,0,2)!$
 ==
 
-scoring = RightMinusWrong
+scoring = CorrectItems
 
+reroll = False

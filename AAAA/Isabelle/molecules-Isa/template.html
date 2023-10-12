@@ -1,0 +1,31 @@
+<style type='text/css'> {{style|safe}} </style>
+<!-- https://peter-ertl.com/jsme/JSME_2017-02-26/doc.html -->
+<script type="text/javascript" language="javascript" src="https://peter-ertl.com/jsme/JSME_2017-02-26/jsme/jsme.nocache.js"></script>
+<script type="text/javascript">
+{{script|safe}}
+// called after JME plugin is initialized
+function jsmeOnLoad() {
+    dimension = '{{dimension}}';
+    push_editor('JME1', `{{molecule}}`);
+    editor = document['JME2'] = new JSApplet.JSME('JME2', "500px", "240px", {
+        "options" : "query,hydrogens",
+    });
+    submit.prop('disabled', true);
+}
+function onAfterSubmitPL() {
+    console.log("coucou"); 
+}
+</script>
+<!-- FORM -->
+<div class='form-container'>
+    <div id='answers'>
+        <div class='answer' id='JME1'></div>
+        <div class='answer-btn--arrow'>→</div>
+    </div>
+    <button class='btn btn-secondary answer-btn--add' onclick='push_answer()'>Ajouter</button>
+    <div id="JME2"></div>
+    <input type="hidden" id="form_answer" value=''/>
+</div>
+
+
+

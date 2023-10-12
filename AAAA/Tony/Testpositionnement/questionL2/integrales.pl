@@ -1,8 +1,9 @@
 extends= /model/basic/checkbox_rw.pl
 
+title = Calcul d'intégrales
  
 question==
-Quelles intégrales valent $!\frac{5}{6}!$?
+Quelles intégrales valent $!\frac{2}{3}!$?
 ==
  
 
@@ -21,5 +22,6 @@ $!\int_0^1 x\cos(x^2)dx!$
 ==
 
 scoring = CorrectItems
-  
+
+reroll = False
  

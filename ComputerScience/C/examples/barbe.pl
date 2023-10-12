@@ -37,11 +37,11 @@ import random
 
 group.items = []
 
-simg1 = '<table><tr><td><img src="'+str(url_phot_1)+'" alt="le style1" /></td><td>La moustache suspendue assymétrique</td></tr></table>'
-simg2 = '<table><tr><td><img src="'+str(url_phot_2)+'" alt="le style2" /></td><td>La taille de stéréoisomérie (zusammen)</td></tr></table>'
-simg3 = '<table><tr><td><img src="'+str(url_phot_3)+'" alt="le style3" /></td><td>La taille de stéréoisomérie (entgegen)</td></tr></table>'
-simg4 = '<table><tr><td><img src="'+str(url_phot_4)+'" alt="le style4" /></td><td>Le pneu de moto traversant</td></tr></table>'
-simg5 = '<table><tr><td><img src="'+str(url_phot_5)+'" alt="le style5" /></td><td>La stache du ranger Canado-américain</td></tr></table>'
+simg1 = '<table><tr><td><img src="'+str(url_phot_1)+'" alt="le style1" class="miniface" /></td><td>La moustache suspendue assymétrique</td></tr></table>'
+simg2 = '<table><tr><td><img src="'+str(url_phot_2)+'" alt="le style2" class="miniface" /></td><td>La taille de stéréoisomérie (zusammen)</td></tr></table>'
+simg3 = '<table><tr><td><img src="'+str(url_phot_3)+'" alt="le style3" class="miniface" /></td><td>La taille de stéréoisomérie (entgegen)</td></tr></table>'
+simg4 = '<table><tr><td><img src="'+str(url_phot_4)+'" alt="le style4" class="miniface" /></td><td>Le pneu de moto traversant</td></tr></table>'
+simg5 = '<table><tr><td><img src="'+str(url_phot_5)+'" alt="le style5" class="miniface" /></td><td>La stache du ranger Canado-américain</td></tr></table>'
 
 
 group.items.append({"id": "y1", "content": simg1})
@@ -67,6 +67,9 @@ Pour aider tous les coiffeurs et barbeurs en panne d'inspiration, tenter de dét
 quelle sera la dernière manière taille à la mode pour la barbe pour l'année 2056.
 
 <br>
+
+
+
 
 ==
 

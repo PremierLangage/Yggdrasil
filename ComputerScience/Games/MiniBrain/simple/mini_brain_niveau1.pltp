@@ -24,8 +24,8 @@ possède 1 accumulateur et 5 registres numérotés de `#0` à `#4`. Par commodit
 l'accumulateur `a` est aussi le registre de numéro `#-1`. 
 
 Lorsque l'on allume le Mini Brain, par dáfault, les registres et 
-l'accumulator contiennent tous la valeur zéro. Un programme est alors 
-chargé dans la mémoire interne de Mini Brain. La première instruction à 
+l'accumulateur contiennent tous la valeur zéro. Un programme est alors 
+chargé dans la mémoire interne du Mini Brain. La première instruction à 
 être exécutée (et donc la valeur originelle du compteur ordinal ou 
 pointeur d'instruction) est l'instruction 1. Chaque ligne contient 
 une instruction ou bien une valeur.

@@ -1,0 +1,56 @@
+
+
+
+title= Jeu de la vie 
+
+introduction==
+
+# Jeux de la vie
+
+Ce devoir à la maison est à réaliser entièrement sur cette plateforme.
+
+Je vous propose un mini projet individuel visant à reproduire le jeu de la vie proposé par Conway en 1970. 
+Le jeu de la vie est ce qu'on appelle un automate cellulaire : c'est un « tableau » dont l'état de chaque case ou cellule dépent de l'état des cases voisines. 
+À chaque « tour » de jeu, on met à jour l'ensemble des cases en fonction de leurs voisines et on recommence.
+
+Dans le jeu de la vie, chaque cellule peut avoir deux états :
+
+- vivante ;
+- morte.
+
+L'état d'une cellule au tour suivant dépend de l'état de ses huit voisins directs. Il y a deux règles simples qui s'appliquent :
+
+- une cellule morte possédant exactement trois voisines vivantes devient vivante : elle naît ;
+- une cellule vivante possédant deux ou trois voisines vivantes le reste, sinon elle meurt.
+
+Si vous voulez des précisions ou en savoir plus allez sur la page Wikipédia du jeu de la vie.
+
+# Une fois finie
+
+Vous pouvez jouer le code en mettant les deux classes complètes dans un fichier et en ajoutant le code ci-dessous:
+
+    jeu = Jeu_de_la_vie(7, [(3, 4), (4, 4), (5, 4), (4, 3)])
+    jeu.jouer(100,0.3)
+
+==
+
+# Fonctions de base 
+@ 1_classe_cellule.pl
+@ 2_classe_jeu_de_la_vie.pl
+@ 3_voisines.pl
+@ 4_nb_voisines.pl
+@ 5_futur_etat.pl
+@ 6_maj_etat.pl
+@ 7_tour.pl
+@ 8_affiche.pl
+@ 9_jouer.pl
+
+
+
+reserve==
+
+# Programme 
+
+@ programme.pl 
+==
+

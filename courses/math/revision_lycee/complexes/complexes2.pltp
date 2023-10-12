@@ -1,10 +1,10 @@
-title = Nombres complexes 2 (point de vue algébrique)
+title = Nombres complexes : Module et argument
 
 introduction ==
 Objectifs :
 
 * Représenter un nombre complexe par un point. Déterminer l’affixe d'un point.
-* Déterminer le module et les arguments d’un nombre complexe.
+* Déterminer le module et un argument d’un nombre complexe.
 ==
 
 @ /exercises/math/complex_numbers/geometrical/setpoint_from_affix.pl

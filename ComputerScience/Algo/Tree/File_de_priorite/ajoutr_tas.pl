@@ -17,8 +17,12 @@
 
 extends=/ComputerScience/C/template/std_progC.pl
 
+@/builder/bbefore.py
 
-#author=Marc Zipstein
+
+
+
+author=Marc Zipstein
 title=Ajout dans un tas dynamique
 tag=recherche
 
@@ -42,33 +46,20 @@ Ceci écite des allocations_désallocations succéssives.
 
 editor.code==#|c|
 int ajoute  (Tas *t,int val){
-  int enfant,parent,tmp;
-
-  if(t->taille==t->max){
-        int *tmp;
-	if((tmp=realloc(t->arbre,(t->max +BLOC)*sizeof(int)))==NULL)
-	  return 0;
-	else{
-	  t->arbre=tmp;
-	t->max+=BLOC;
-	}
-  }
-    t->arbre[t->taille]=val;
-    t->taille ++;
-    enfant=t->taille -1;
-    parent=(enfant -1)/2;
-    while (enfant>0 && t->arbre[enfant]<t->arbre[parent]){
-      tmp= t->arbre[enfant];
-      t->arbre[enfant]=t->arbre[parent];
-      t->arbre[parent]=tmp;
-      enfant=parent;
-      parent=(parent-1)/2;
-    }
+ 
     return 1;
 }
 ==
 
 solution==#|c|
+
+void swap(int *a, int *b){
+  int tmp=*a;
+  *a=*b;
+  *b=tmp;
+  }
+
+
 int ajoute  (Tas *t,int val){
   int enfant,parent,tmp;
 
@@ -76,21 +67,17 @@ int ajoute  (Tas *t,int val){
         int *tmp;
 	if((tmp=realloc(t->arbre,(t->max +BLOC)*sizeof(int)))==NULL)
 	  return 0;
-	else{
+
 	  t->arbre=tmp;
 	t->max+=BLOC;
-	}
   }
     t->arbre[t->taille]=val;
     t->taille ++;
     enfant=t->taille -1;
-    parent=(enfant -1)/2;
-    while (enfant>0 && t->arbre[enfant]<t->arbre[parent]){
-      tmp= t->arbre[enfant];
-      t->arbre[enfant]=t->arbre[parent];
-      t->arbre[parent]=tmp;
-      enfant=parent;
-      parent=(parent-1)/2;
+    while (enfant>0 && t->arbre[enfant]< t->arbre[enfant/2]){
+      swap(&(t->arbre[enfant]),&(t->arbre[enfant/2]));
+    /* swap(t->arbre+enfant, t->arbre+enfant/2); */
+      enfant=enfant/2;
     }
     return 1;
 }
@@ -109,10 +96,16 @@ typedef struct{
   int max;
 }Tas;
 
+int estTas(int tab[], int taille){
+    int i;
+    for(i=1; i<taille; i++){
+        if(tab[i] < tab[i/2]){
+            return 0;
+        }
+    }
+    return 1;
+}
 
-==
-
-code_after==#|c|
 
 void affiche(Tas t){
   int i;
@@ -133,6 +126,25 @@ int init(Tas *t){
   return 0;
 }
 
+
+
+
+int nbrealloc=0;
+void *dobob(void *p, int size){
+    nbrealloc ++;
+    return realloc(p, size);
+}
+
+int getNbrealloc(){
+    return nbrealloc;
+}
+
+#define realloc(p, size) dobob(p, size)
+
+==
+
+code_after==#|c|
+
 int main(int argvc,char* argv[]){
     Tas t;
     int x;
@@ -142,6 +154,7 @@ int main(int argvc,char* argv[]){
     while(1==    scanf("%d",&x)){
         ajoute(&t,x);
         affiche(t);
+        if (! estTas(t.arbre, t.taille)) {fprintf(stderr, " n'est pas un tas "); break;}
     }
 
   return 0;
@@ -154,6 +167,8 @@ int main(int argvc,char* argv[]){
 checks_args_stdin==#|python|
 	[["Arbre feuille","","4"],
 	 ["arbre à 3 mots","","12  5 2"],
+   ["arbre à N mots","","15 14 13 12 11 10 9 8 7 6 5 4 3 2 1"],
+   
      ["Arbre aléatoire II", []," ".join([ str(randint(1,100)) for i in range(10) ])]
 ]
 ==

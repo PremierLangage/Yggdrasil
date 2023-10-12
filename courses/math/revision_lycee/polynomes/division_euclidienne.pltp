@@ -1,0 +1,9 @@
+title = Polynômes : Division euclidienne
+
+introduction ==
+Objectif : Effectuer la division euclidienne de eux polynômes.
+==
+
+@ /exercises/math/algebra/polynomials/arithmetic/euclidean_division/compute_/compute_344_232.pl
+@ /exercises/math/algebra/polynomials/arithmetic/euclidean_division/compute_/compute_434_222.pl
+@ /exercises/math/algebra/polynomials/arithmetic/euclidean_division/compute_/compute_534_322.pl

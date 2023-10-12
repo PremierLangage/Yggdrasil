@@ -1,0 +1,74 @@
+title= 1 - Variables, Types et Variables
+
+introduction==
+
+Bonjour,
+
+Ceci est votre première feuille d'exercices à faire en autonomie.
+
+Tous les exercices doivent être verts une fois que vous avez fini !
+
+Certains exercices peuvent être fait plusieurs fois, si vous en avez besoin c'est une bonne idée de les faire plusieurs fois.
+
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+ mais vous pouvez naviguer avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et passer à l'exercice suivant. 
+
+Votre [cours](https://premiere-nsi.vercel.app/T1_Langage_et_programmation/1.1_Valeurs%2C%20types%20et%20variables/cours/) est votre première source d'information ....
+
+
+==
+
+#### Manipulation des variables ####
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_variable002.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_variable001.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_variable003.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_initialisation.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_initialisation.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_initialisation.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_echange_deux_variables.pl
+
+#Ne fonctionne pas
+#@/ComputerScience/python/Banque_Exercices/1_variables_expressionaleatoires.pl
+
+#### Affichage ####
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_affichage.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_affichage2.pl
+
+
+#### Compréhension des expressions ####
+
+#Ne fonctionne pas
+#@/ComputerScience/python/Banque_Exercices/1_variables_priority.pl
+
+#Ne fonctionne pas
+# @/ComputerScience/python/Banque_Exercices/1_variables_operateursbooleens.pl
+
+# @/ComputerScience/NSI/Banque_Exercices/1_variables_occure-int.pl
+
+# @/ComputerScience/NSI/Banque_Exercices/1_variables_bascule.pl
+
+# @/ComputerScience/NSI/Banque_Exercices/1_variables_deux-divisions.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_aleaagecapsimple.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_intstr.pl
+
+#@/ComputerScience/python/Banque_Exercices/1_variables_occure.pl
+
+#### Applications simple ###
+
+# @/ComputerScience/NSI/Banque_Exercices/1_variables_rectanglefixe.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_rectangle.pl

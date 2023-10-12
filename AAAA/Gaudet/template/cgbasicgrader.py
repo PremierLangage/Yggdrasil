@@ -41,17 +41,19 @@ if __name__ == "__main__":
     from random import *
     from pathlib import *
     testcases = eval(context['testcases'])
+    showWanted = eval(context.get('showWanted', True))
     testSuccess = 0
 
     for test, want, name in testcases:
+        wantedText = want.strip() if showWanted else 'Caché'
         try:
-            
             # If input is the name of a file, it loads the file into the stdin
             if len(test)<22:
                 q = Path(test)
                 if q.exists() :
                     with q.open() as f:
                         test = f.read()
+            
             proc = subprocess.run(handler.exec_cmd, input=test, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                 text=True, timeout=1)
         except subprocess.TimeoutExpired:
@@ -62,12 +64,12 @@ if __name__ == "__main__":
                     feedback.addTestSuccess(name, proc.stdout.strip(), want.strip())
                     testSuccess += 1
                 else:
-                    feedback.addTestFailure(name, proc.stdout.strip(), want.strip())
+                    feedback.addTestFailure(name, proc.stdout.strip(), wantedText)
             else:
-                feedback.addTestError(name, "Erreur à l'exécution (code de retour " + str(proc.returncode) + ")\nSortie d'erreur : " + proc.stderr, want)
+                feedback.addTestError(name, "Erreur à l'exécution (code de retour " + str(proc.returncode) + ")\nSortie d'erreur : " + proc.stderr, wantedText)
     
     # Execute 'postevaluator' script if it's set for question 2
-    if 'postevaluator' in context and context['changeText'] == False:
+    if 'postevaluator' in context and ('changeText' not in context or not context['changeText']):
         if testSuccess * 100 // len(testcases) == 100:
             glob = {}
             exec(context['postevaluator'], context)
@@ -77,7 +79,6 @@ if __name__ == "__main__":
             for key in glob:
                 if key in context and context[key] == glob[key] and key != 'text':
                     del context[key]
-
 
     # Final feedback
     output(testSuccess * 100 // len(testcases), feedback.render(), context)

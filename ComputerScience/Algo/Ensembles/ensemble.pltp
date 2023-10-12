@@ -1,0 +1,61 @@
+
+
+title= ENSEMBLES
+
+
+introduction ==
+
+En mathématiques, un ensemble est une collection d'objets distincts et bien définis, appelés éléments, qui sont considérés comme une entité unique. Les éléments d'un ensemble peuvent être des nombres, des lettres, des objets physiques ou des concepts abstraits.
+
+Un ensemble est généralement représenté entre accolades {}. Par exemple, {1, 2, 3} est un ensemble qui contient les nombres entiers 1, 2 et 3. L'ordre dans lequel les éléments sont énumérés n'a pas d'importance et chaque élément ne doit apparaître qu'une seule fois.
+
+Un ensemble peut être décrit de manière explicite ou de manière implicite. Une description explicite consiste à lister tous les éléments de l'ensemble, comme dans l'exemple ci-dessus. Une description implicite utilise une propriété commune à tous les éléments de l'ensemble pour les décrire. Par exemple, l'ensemble des nombres entiers pairs peut être décrit implicitement comme {x | x est un nombre entier pair}.
+
+Les ensembles peuvent être manipulés à l'aide d'opérations ensemblistes telles que l'union, l'intersection et la différence. L'union de deux ensembles A et B, notée A ∪ B, est l'ensemble de tous les éléments qui sont soit dans A, soit dans B, soit dans les deux. L'intersection de deux ensembles A et B, notée A ∩ B, est l'ensemble de tous les éléments qui sont à la fois dans A et dans B. La différence de deux ensembles A et B, notée A \ B, est l'ensemble de tous les éléments qui sont dans A mais pas dans B.
+
+Les ensembles peuvent également être comparés en termes de leur taille ou cardinalité. Si deux ensembles ont le même nombre d'éléments, ils sont dits équipotents ou de même cardinalité. L'ensemble vide, qui ne contient aucun élément, est noté ∅ et est considéré comme un sous-ensemble de tous les ensembles.
+
+Les ensembles ont de nombreuses applications dans divers domaines des mathématiques, de la logique, de l'informatique et de la théorie des ensembles.
+ Ils sont également largement utilisés en dehors des mathématiques, par exemple en théorie de la probabilité, 
+ en statistiques et en informatique pour la manipulation de données.
+
+
+En informatique, les ensembles sont également utilisés pour représenter des collections d'objets, mais avec quelques différences par rapport à la notion mathématique d'ensemble.
+
+En informatique, un ensemble est une structure de données qui permet de stocker un ensemble d'éléments sans ordre et sans doublons. Contrairement aux tableaux ou aux listes, les ensembles ne permettent pas d'accéder à un élément par sa position ou son index, mais uniquement de savoir si un élément est présent dans l'ensemble ou non.
+
+Les ensembles peuvent être implémentés de différentes manières en informatique, mais deux approches courantes sont l'utilisation de tableaux de hachage et d'arbres équilibrés.
+
+Dans un tableau de hachage, chaque élément est associé à une clé unique qui est utilisée pour stocker l'élément dans le tableau. La fonction de hachage convertit la clé en une position dans le tableau, de sorte que l'ajout, la recherche et la suppression d'un élément peuvent être effectués en temps constant en moyenne.
+
+Dans un arbre équilibré, les éléments sont stockés dans les nœuds de l'arbre et sont triés selon une relation d'ordre. Les arbres équilibrés sont des structures de données efficaces pour les opérations de recherche, d'ajout et de suppression en temps logarithmique.
+
+Les ensembles sont largement utilisés en informatique pour représenter des ensembles de valeurs uniques, tels que des clés de base de données, des identificateurs de fichiers ou des adresses IP uniques. Les ensembles peuvent également être utilisés pour la modélisation de problèmes algorithmiques et pour la résolution de problèmes de combinatoire.
+
+En résumé, les ensembles en informatique sont des structures de données qui permettent de stocker des collections d'éléments uniques sans ordre spécifique. Les ensembles peuvent être implémentés à l'aide de tableaux de hachage ou d'arbres équilibrés et sont largement utilisés dans de nombreuses applications informatiques.
+
+
+Dans les exercices suivants nous utiliserons l'interface Ensemble suivante :
+
+```
+typedef ... *ENSEMBLE;  
+int ajoute(ENSEMBLE *, int valeur); // retourne 1 si la valeur a été ajouté à l'ensemble, sinon retourne zéro pour indiqué qu'elle était déjà présente .  
+int retire(ENSEMBLE *, int valeur); // retourne 1 si la valeur a été retiré à l'ensemble, sinon retourne zéro pour indiqué qu'elle était déjà absente .  
+int appartient(ENSEMBLE *, int valeur); // retourne 1 si la valeur est présente dans l'ensemble, sinon retourne zéro  
+ENSEMBLE*union(ENSEMBLE*,ENSEMBLE*); // Alloue et construit l'ensemble qui forme l'union des deux ensembles. Accepte NULL comme deuxième paramêtre  
+ENSEMBLE*intersection(ENSEMBLE*,ENSEMBLE*); // Alloue et construit l'ensemble qui forme l'union des deux ensembles.  
+ENSEMBLE*difference(ENSEMBLE*A,ENSEMBLE*B); // Alloue et construit l'ensemble qui forme la difference des deux ensembles éléments de A qui ne sont pas dans B.  
+ENSEMBLE*differenceSymetrique(ENSEMBLE*,ENSEMBLE*); // Alloue et construit l'ensemble qui forme la differenceSymetrique des deux ensembles (union moins l'intersection).  
+int egalité(ENSEMBLE*,ENSEMBLE*);// vrai si les deux ensembles sont égaux  
+int print(ENSEMBLE *);  
+int taille(ENSEMBLE *);  
+// pour chaque type d'ensemble il existe une fonction d'allocation avec des paramêtre spécifiques 
+ENSEMBLE *alloue_type_ensemble(...)  
+```
+
+
+==
+
+
+
+@ /ComputerScience/Algo/Ensembles/tableaudynamiques.pl

@@ -52,8 +52,28 @@ async def evalscript(student, N, n):
 ==
 
 testcases==
-[[(100, randint(0, 24)), "Valeur basse"],
-[(100, randint(76, 100)), "Valeur haute"],
-[(100, randint(39, 61)), "Valeur au milieu"],
+[[(100, randint(0, 24)), "Valeur basse 0-99"],
+[(100, randint(76, 100)), "Valeur haute 0-99"],
+[(100, randint(39, 61)), "Valeur au milieu 0-99"],
 [(1000000000, randint(0, 1000000000)), "N tres grand"]]
 ==
+
+
+solutionpourtests==
+
+N=int(input())
+top = N-1
+bottom = 0
+while True:
+    essai= bottom + (top-bottom)//2
+    print(essai)
+    r = input()
+    if r== '<':
+        bottom, top = bottom,essai-1
+    elif r=='>':
+        bottom, top = essai+1, top
+    else:
+        print("Victoire")
+        break
+==
+

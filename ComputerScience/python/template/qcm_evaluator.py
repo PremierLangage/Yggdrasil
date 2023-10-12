@@ -97,6 +97,11 @@ if __name__ == "__main__":
     a=0
     
     studentdic = get_answers()
+
+    if "done" in dic:
+        output(dic['done'], dic['outstr'],dic)
+        sys.exit(0)   
+
     a, t= calculategrade(dic['pairs'],studentdic,('uncrosedfalse' in dic and dic['uncrosedfalse'] ))
     grade= (100*a)/t
     dic['evaluation']= grade
@@ -124,8 +129,8 @@ if __name__ == "__main__":
             dic["text"]=" Passez à l'exercice suivant "
             dic["form"]= ""
 
-    badpairs=dic['badpairs']
-    goodpairs=dic['goodpairs']
+    badpairs=dic['badpairs'] if 'badpairs' in dic else []
+    goodpairs=dic['goodpairs'] if 'goodpairs' in dic else []
     
     
     if "nb" not in dic:
@@ -144,7 +149,8 @@ if __name__ == "__main__":
         dic['form'] += """<TR><td><input id="form_answer_"""+str(i)+"""\"  type="checkbox"  placeholder="" required>  """+p[0]+"</td></TR>"
     dic['form'] += "</table></div>"
 
-
+    dic['done'] = grade
+    dic['outstr']= outstr
     output(grade,outstr,dic)
 
 

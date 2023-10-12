@@ -4,9 +4,9 @@ introduction==
 Un premier contact
 
 ==
-@ /ComputerScience/C_Initiation/programme_1/instructions.pl
-@ /ComputerScience/C_Initiation/programme_1/GCC.pl
-@ /ComputerScience/C_Initiation/programme_1/type_affectation.pl
+#@ /ComputerScience/C_Initiation/programme_1/instructions.pl
+#@ /ComputerScience/C_Initiation/programme_1/GCC.pl
+#@ /ComputerScience/C_Initiation/programme_1/type_affectation.pl
 @ /ComputerScience/C_Initiation/programme_1/hello.pl
 @ /ComputerScience/C_Initiation/programme_1/div_main.pl
 @ /ComputerScience/C_Initiation/programme_1/moyenne.pl

@@ -1,5 +1,6 @@
 extends= /model/basic/checkbox_rw.pl
 
+title = Etude de fonction
  
 question==
 Soit $!f!$ la fonction définie par $!f(x)=\ln(x^2+1)!$
@@ -22,5 +23,7 @@ $!f!$ change de variations deux fois.
 ==
 
 scoring = CorrectItems
+
+reroll = False
  
  

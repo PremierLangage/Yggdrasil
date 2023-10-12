@@ -1,0 +1,30 @@
+
+title=Ch 7 : Feuille d'exercices sur les dictionnaires
+
+introduction==
+Ceci est votre 7 feuille d'exercices Python en libre service.
+
+Cette fiche PLaTon concerne la manipulation des dictionnaires
+
+Tous les exercices doivent être verts une fois que vous avez fini !
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+mais vous pouvez naviger avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide sur le salon d'entraide PLaTon sous Discord de la L1 
+et passer à l'exercice suivant. 
+
+Pour ceux qui s'ennuient: il y a des exercices un peu plus difficiles à la fin.
+==
+
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/ajout.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/charlie.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/somme_valeurs.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/creer_dico.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/liste_cles_condition.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/somme_dicos.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/imposable.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/tous_clesValeurs.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/IntersectionDicts.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_7_dictionnaires/fusionerDicts.pl

@@ -19,14 +19,14 @@
 #extends=/ComputerScience/Algo/Tree/templates/zipsprogCwithtree.pl
 extends=/ComputerScience/C/template/std_progC.pl
 #author=Marc Zipstein
-title=Extraire le maximum dans un arbre binaire de recherche
+title= maximum d'un arbre binaire de recherche
 tag=recherche
 
 editor.height=300px
 
 text== 
-Écrire une fonction C **extraire_maximum** qui extrait le maximumun d'un **arbre binaire de recherche**.
-La fonction renvoie 1 en cas d'extraction réussie et 0 sinon.La valeur extraite est transmise par adresse.
+Écrire une fonction C ** maximum** qui retourne le maximumun d'un **arbre binaire de recherche**.
+La fonction renvoie 1 en cas d'extraction réussie et 0 sinon.La valeur du max est réciupérée par un passage par adresse.
 
 On utilisera le type   
 typedef struct node{  
@@ -35,37 +35,30 @@ typedef struct node{
   struct node * right;  
 }Node, *Tree;  
 
+
+
 ==
 
 editor.code==#|c|
 
-int extraire_maximum(...){
- 
-}
+int maximum(Tree t,... max){
+
+  }
+
 
 ==
 
 solution==#|c|
 
-int extraire_maximum(Tree *t,int *min){
-  Tree a,tmp;
-  if(*t==NULL)
+int maximum(Tree t,int *max){
+  if(t==NULL)
     return 0;
-  a=*t;
-  if(a->right==NULL){
-    *min=(*t)->value;
-    *t=(*t)->left;
-    free(a);
-    return 1;
-  }
-  while(a->right->right!=NULL)
-    a=a-right;
-  *min=a->left->value;
-  tmp=a->right;
-  a->right=a->right->left;
-  free(tmp);
+  while(t->right)
+    t=t->right;
+  *max= t->value ;
   return 1;
 }
+
 
 
 ==
@@ -150,22 +143,14 @@ char *arbre_vers_code(Tree t){
    
 int main(int argc, char* argv[]){
   Tree t=NULL;
-char *code;
-int x;
+   int x;
 
 
   build_tree(&t);
- 
-   code=arbre_vers_code(t);
-    
-  fprintf(stderr,"arbre avant %s\n",code) ;
-
- extraire_maximum(&t,&x);
-   
-   code=arbre_vers_code(t);
-    
-  fprintf(stderr,"arbre après %s\n",code) ;
- 
+  if (maximum(t,&x)==1)
+    fprintf(stderr,"maximum = %d\n",x) ;
+  else
+    fprintf(stderr," arbre vide \n");
   return 0;
 }
 ==

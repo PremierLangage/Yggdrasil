@@ -5,7 +5,7 @@ text==
 On étudie la reaction de **{{reaction}}** du **{{nomreactif}}** par la soude.  
     $${{reactif}} + OH^- \rightarrow {{produit1}} + {{produit2}} $$
 la réaction est de premier ordre par rapport à chaqun des réactifs et la concentration initiale de chacun d'eux est {{CO}}. 
-La constante de vitesse de la réactif vaut {{K}}.
+La constante de vitesse de la réaction vaut {{K}}.
 Calculez la concentration restante de soude au bout de {{tb1}} minutes en partant d'une concentration de {{CO}}.
 
 ==

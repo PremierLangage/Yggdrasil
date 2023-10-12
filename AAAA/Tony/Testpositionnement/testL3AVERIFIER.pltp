@@ -1,0 +1,30 @@
+title = Test de positionnement de fin de L3
+
+introduction ==  
+Ce test est conçu pour la durée d'une heure. Son objectif est de voir où vous en êtes personnellement : il est donc individuel et à faire le plus consciencieusement possible afin d'évaluer réellement votre niveau. Pour cela, il est indispensable que vous preniez
+une feuille pour effectuer vos calculs et que vous restiez l'heure entière. Il est normal que vous ne réussissiez pas tout. Faites simplement le maximum possible. Si vous ne savez pas répondre à une question passez-la.
+==
+@ questionL0/systemelin.pl  
+@ questionL0/etudefn.pl   
+@ questionL0/suites.pl 
+
+@ questionL1/edo1.pl
+
+@ questionL2/integrales.pl 
+@ questionL2/equivalent.pl
+@ questionL2/ev.pl
+@ questionL2/integralegeneralisees.pl
+@ questionL2/series.pl 
+
+@ questionL3/deriveepartielle.pl 
+@ questionL3/diagonalisable.pl 
+@ questionL3/prodscal.pl 
+@ questionL3/seriesentieres.pl
+@ questionL3/seriesfourier.pl  
+@ questionL3/cvdominee.pl 
+@ questionL3/preuveetoilee.pl 
+@ questionL2/nageur.pl 
+
+
+
+

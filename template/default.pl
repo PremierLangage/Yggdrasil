@@ -35,7 +35,7 @@ form=@ /form/text_editor.html
 @ /grader/evaluator.py [grader.py]
 
 evaluator==
-grade=(100,"Passez à la question suivante. ")
+grade=(100,"Passez  &agrave; la question suivante. ")
 ==
 
 

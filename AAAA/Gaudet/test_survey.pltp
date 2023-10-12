@@ -1,0 +1,9 @@
+title=Questionnaire glace
+
+introduction==
+Voici un simple questionnaire pour formuler vos préférences de glace.
+==
+
+anonymous_vote = False
+
+@ test_survey.pl

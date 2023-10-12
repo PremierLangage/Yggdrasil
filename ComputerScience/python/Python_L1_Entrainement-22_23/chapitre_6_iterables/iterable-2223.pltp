@@ -1,0 +1,48 @@
+title=Ch 6 : Exercices sur les Itérables
+
+introduction==
+Ceci est votre sixème feuille d'exercices Python en libre service.
+
+Cette fiche PLaTon concerne la manipulation des itérables : listes, tuples, chaînes de caractères, fichiers, ...
+
+Tous les exercices doivent être verts une fois que vous avez fini !
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+mais vous pouvez naviger avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide sur le salon d'entraide PLaTon sous Discord de la L1 
+et passer à l'exercice suivant. 
+
+Pour ceux qui s'ennuient: il y a des exercices un peu plus difficiles à la fin.
+==
+
+# String
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_6_iterables/compter-e-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_6_iterables/lireuneliste-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_6_iterables/renverser-chaine-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_6_iterables/remplace-k-par-g-2021.pl
+
+# Fichiers
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_6_iterables/head-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_6_iterables/wcl-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_6_iterables/compter-phrase-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_6_iterables/grep-2021.pl
+
+# Listes
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_6_iterables/fusion-list-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_6_iterables/decoupe-2021.pl
+
+# Range
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_6_iterables/progression-arithmetique-2021.pl
+
+# Difficile
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_6_iterables/_difficile.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_6_iterables/str-rotate-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_6_iterables/str-occu-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_6_iterables/head-repeat-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_6_iterables/corriger-tuple-2021.pl

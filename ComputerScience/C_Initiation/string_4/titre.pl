@@ -1,6 +1,6 @@
 
-#author= Zip&DR
-author=
+
+author= 
 
 title=Mise en titre
 
@@ -13,7 +13,7 @@ On définit un mot comme étant une suite de caractères commençant par une let
 et une phrase comme une suite de mots séparés par des espaces.<br>
 Dans un titre, tous les mots commencent par une majuscule.<br><br>
 Ecrire une fonction `void met_en_titre(char s[])` qui reçoit une phrase sous forme d'une chaîne de caractères
-et la <u> transforme en titre </u>.
+et la <u> transforme en titre</u>.
 ==
 
 codebefore==
@@ -21,18 +21,16 @@ codebefore==
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 50
+
 ==
 
 editor.code==
-
 void met_en_titre(char s[]){
 /* A compléter */
-} 
- 
+}
 ==
 
 solution==
-
 void met_en_titre(char s[]){
   char preced=' ';
   int i=0;
@@ -43,6 +41,7 @@ void met_en_titre(char s[]){
   }
 }
 ==
+
 codeafter==
 int main(void){
   char s[MAX];
@@ -60,6 +59,7 @@ tests==
  ["aleatoire",""," ".join(["".join([chr(random.randint(97, 122)) for i in range(random.randint(2,10))]) + " " +"".join([ chr(random.randint(65, 90)) for i in range(random.randint(0,1))]) for j in range(5)])],
   ]
 ==
+
 
 
 

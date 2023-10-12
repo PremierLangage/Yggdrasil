@@ -1,0 +1,28 @@
+title= Feuille d'exercices sur les fonctions
+
+introduction==
+
+Bonjour,
+ceci est votre première feuille d'exercice sur les fonctions.
+
+Tout les exercices doivent être verts une fois que vous avez fini !
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+mais vous pouvez naviger avec le menu de gauche.
+
+
+
+==
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_affiche_bonjour.pl
+# @ retourne_bonjour.pl
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_positif.pl
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_carre.pl
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_rectangle.pl
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_Conversion.pl
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_tri2valeurs.pl
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_table.pl
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_estpremier.pl
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_tri3valeurs.pl
+@ /ComputerScience/NSI/Banque_Exercices/3_fonctions_TriangleEtoile.pl
+
+

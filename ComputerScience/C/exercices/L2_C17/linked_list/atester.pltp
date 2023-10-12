@@ -1,0 +1,49 @@
+
+title= Juin 19 2023
+
+introduction==
+
+Il est particulièrement conseillé de lire tous les textes.
+
+
+Attention les exercices ont deux notes, la complétion (réussit ou pas) et la qualité 
+(nombre de tentatives utilisées pour réussir l'exo).
+
+Il est donc **fortement** recommendé d'ouvir un éditeur et de tester sur la machine local avant de chercher à valider 
+le code sur la plateforme.
+
+Mais il ne faut pas stresser les tentatives ne retire pas beaucoup de points.
+
+
+==
+
+# les echecs 
+@ section_echec.pl section_listes.pl
+@ placepiece.pl
+@ lirecoup.pl
+@ lireBoard.pl
+
+
+
+@ section_listes.pl
+@ affiche.pl 
+@ inserEnTete.pl
+@ insereSansDoublons.pl
+@ copieuniqueun.pl
+
+@ section_double.pl
+@ liste_double_move.pl
+
+
+
+@ zone_51.pl
+
+
+@ tab2exam.pl
+@ gentil.pl
+
+
+# @ generalites.pl
+
+# @ /ComputerScience/C/exercices/L2_C17/expressions/corrige_type1.pl
+# @ testopen.pl

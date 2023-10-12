@@ -40,7 +40,7 @@ Les exercices de cette page d'exercices sont présentés pour vous donenr une id
 
 # programming python
 @ /ComputerScience/C/examples/pair.pl
-@ /AAAA/Anna/Gab_completing.pl
+#@ /AAAA/Anna/Gab_completing.pl
 @ /ComputerScience/C/exercices/program/random_instructions/set_instructions.pl
 
 # SQL
@@ -57,3 +57,5 @@ Les exercices de cette page d'exercices sont présentés pour vous donenr une id
 
 @ /ComputerScience/logic/diagram/eval_diagram_4.pl
 @/AAAA/Anna/Select_set.pl
+
+@ /AAAA/dominique/latin/descl123.pl

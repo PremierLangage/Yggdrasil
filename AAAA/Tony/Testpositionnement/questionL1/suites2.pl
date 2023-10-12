@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Convergence de suites 
+
 question==
 Lesquelles de ces suites convergent?
 ==
@@ -21,3 +22,5 @@ $!\left(\frac{1}{2}\right)^n+(-1)^n!$
 ==
 
 scoring = CorrectItems
+
+reroll = False

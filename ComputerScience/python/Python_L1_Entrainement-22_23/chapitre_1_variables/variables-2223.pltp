@@ -1,0 +1,77 @@
+
+
+
+title= Ch 1 : Nommage Variables, Input et Affectation Conditionnelles 
+
+introduction==
+
+Ceci est votre première feuille d'exercices Python en libre service.
+
+Les exercices suivants concernent les concepts de bases sur le nommage des variables et les affectations conditionnelles (expressions booléennes).
+
+Ils doivent être verts une fois que vous avez fini !
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+mais vous pouvez naviger avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide sur le salon d'entraide PLaTon sous Discord de la L1 
+et passer à l'exercice suivant. 
+
+==
+
+#### Manipulation des variables ####
+
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/variable001-2122.pl
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/variable002-2122.pl
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/variable003-2122.pl
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/initialisation-2122.pl
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/echange_deux_variables-2122.pl
+
+# IL faut réécrire celui la 
+#@/ComputerScience/python/AP1-2122/chapitre_1_variables/expressionaleatoires-2122.pl
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/aleaagecap-2122.pl
+
+
+#### Compréhension des expressions ####
+
+# IL faut réécrire celui la 
+#@/ComputerScience/python/AP1-2122/chapitre_1_variables/priority-2122.pl
+
+#@/ComputerScience/python/AP1-2122/chapitre_1_variables/operateursbooleens-2122.pl
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/occure-int-2122.pl
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/bascule-2122.pl
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/deux-divisions-2122.pl
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/intstr-2122.pl
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/occure-2122.pl
+
+#### Applications simple ###
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/rectanglefixe-2122.pl
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/rectangle-2122.pl
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/rectanglediagonale-2122.pl
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/convertirMPG_2122.pl
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/plusmoins-2122.pl
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/aleaagecap-2122.pl
+
+#### Lourd ###
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/trinome-2122.pl
+
+@/ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_1_variables/tri_trois_valeurs-2122.pl
+

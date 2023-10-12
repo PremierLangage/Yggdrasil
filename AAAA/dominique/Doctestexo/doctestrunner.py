@@ -20,13 +20,13 @@ class PldoubleRunner(doctest.DocTestRunner):
         if not self.runf1test():
             if self.etat != "fail":
                 return 0,self.etat
-            return 10," <span class="error-state"> Votre test est en échec pour la permière version </span>"
+            return 10,' <span class="error-state"> Votre test est en échec pour la permière version </span>'
         if not self.runf2test():
             if self.etat != "pass":
                 return 0,self.etat
-            return 25,"<span class="error-state">Votre test pass pour la deuxi&eacute;me version ce qui n'est pas voulu </span>"
+            return 25,'<span class="error-state">Votre test passe pour la deuxi&eacute;me version ce qui ne faut pas ! </span>'
 
-        return 100, "<span class="success-state">Bravo ! Bientôt tester pro.</span>"
+        return 100, '<span class="success-state">Bravo ! Bientôt testeur pro.</span>'
 
     def runf1test(self):
         """

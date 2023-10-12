@@ -1,0 +1,110 @@
+
+
+
+
+
+title = Devoir Maison ;) 
+
+
+introduction==
+
+le devoir maison se déroule en deux parties.
+
+
+Une partie en binome sur elearning.  
+Une partie individuelle sur Premierlangage.
+
+Vous êtes actuellement sur la partie individuel sur premier langage, 
+cette partie consiste à écrire un certain nombre de fonctions qui seront utiles dans la partie en binome.
+
+
+Pour l'evaluation nous n'utilisertons ni le nombre de tentatives ni le nombre d'indices.
+# Objectif
+
+Ecrire un jeu mine sweeper (démineur).  
+https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu_vid%C3%A9o)
+
+
+Pour pouvoir vous proposer des tests automatiques de votre code nous définisons un certain nombre d'éléments sur le stockage et l'encodage de l'information.
+
+Deux versions du code vous sont demandées:  
+- Le jeu sous forme d'un tableau et d'entiers non liés.   
+- Le jeu dans un structure C   
+
+
+
+
+# Le jeu sous forme d'un tableau 
+
+int hauteur;  
+int largeur;  
+int mines;  
+int **terrain;  
+// où terrain est un vecteur (tableau de pointeurs vers des tableaux d’entiers).  
+Les entiers  stockés dans le terrain indiquent:  
+0 Case non découverte sans mine  
+9 case non découverte avec une mine  
+1 à 8 case découverte sans mine, l'entier indique le nombre de mines des cases avoisinantes, -11 si zéro mines.  
+-9 une mine avec un drapeau placé dessus  
+-10 une case sans mine avec un drapeau placé dessus.  
+
+
+
+## Modalités de stockage du jeu / repésentation en mémoire
+
+Format en mémoire ou sur disque d’une partie  
+
+Format fichier (les # sont des commentaires non présents dans le fichier)  
+5 5 5  # la taille du terrain hauteur puis largeur puis nombre de mines  
+0 9 9 9 1 # première ligne  
+0 3 -9 0 0  
+0 1 1 0 -11  
+0 0 0 0 0  
+0 0 0 0 9 # Dernière ligne  
+
+Si la partie n’est pas finie :  
+Si une case est pas découverte :  
+
+    9 si il y a une mine   
+    -9 si il y a une mine et un drapeau  
+    -10 si il y a un drapeau  
+    0 sinon  
+
+Si une case est découverte:  
+
+    de 1 à 8 pour le nombre de mines autour de la case  
+    -11 pour 0 mines (zéro était déjà pris).
+
+D'autres exercices seront ajoutés au fur et à mesure.
+
+
+
+==
+
+@ DMexo1.pl  # print_t
+
+@ DMexo_hasmine.pl
+
+@ DMexo2.pl # nbmines_t
+
+@ DMexo3.pl  # nvictoire 
+
+@ DMexoD.pl # drapeau 
+
+@ DMexoP.pl # pied 
+
+@ section.pl
+
+@ DMG1.pl # Print_g 
+
+@ DMG2.pl #  hasmine_g 
+
+@ DMG3.pl # Victoire
+
+@ DMG_D.pl # Drapeau Click Droit 
+
+
+@ DMG_P.pl # Click gauche 
+
+
+

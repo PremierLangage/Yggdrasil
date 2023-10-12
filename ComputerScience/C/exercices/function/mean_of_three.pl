@@ -23,7 +23,7 @@ title=La moyenne de trois entiers
 tag=function
 
 
-text==
+text==#|markdown|
 Écrire une fonction **mean_of_3** qui prend trois entiers en
 paramètres et retourne la moyenne (de type double) de ces trois entiers.
 ==

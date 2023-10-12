@@ -81,7 +81,7 @@ title= Cher enseignant vous n'avez pas changer le "title"
 before == #|python|
 import random as rd
 from radio import Radio
-from checkbox import Checkbox
+from checkbox import CustomCheckbox
 from customtextselect import CustomTextSelect
 from AMC import parse_AMC_TXT
 
@@ -121,7 +121,7 @@ for i, q in enumerate(list_questions):
         if 'ordered' not in q['options']:
             comp[i].shuffle()
     elif q['type'] == "Checkbox":
-        comp.append(Checkbox())
+        comp.append(CustomCheckbox())
         statement.append(q['text'])
         comp[i].set_items(q['items'])
         comp[i].set_sol(q['index'])

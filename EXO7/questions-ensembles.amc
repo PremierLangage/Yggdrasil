@@ -1,0 +1,288 @@
+
+** Soit $%A=\{x\in \mathbb{R}\mid (x+8)^2=9^2\}%$. Sous quelle forme peut-on encore écrire l'ensemble $%A%$ ?
+ 
++ $%A=\{1,-17\}%$
+- $%A=\{1\}%$
+- $%A=\varnothing%$
+- $%A=\{-17\}%$
+
+
+
+** Soit $%E=\{a,b,c\}%$. Quelle écriture est correcte ?
+ 
++ $%a\in E%$
+- $%\{a\}\in E%$
+- $%a\subset E%$
+- $%\{a,b\}\in E%$
+
+
+
+** Soit $%A=\{1,2\}%$, $%B=\left\{\{1\},\{2\}\right\}%$ et $%C=\left\{\{1\},\{1,2\}\right\}%$. Cochez la bonne réponse :
+ 
++ $%A\in C%$
+- $%A=B%$
+- $%A\subset B%$
+- $%A\subset C%$
+
+
+
+** Soit $%A=[1,3]%$ et $%B=[2,4]%$. Quelle est l'intersection de $%A%$ et $%B%$ ?
+ 
++ $%A\cap B=[2,3]%$
+- $%A\cap B=\varnothing%$
+- $%A\cap B=[1,4]%$
+- $%A\cap B=A%$
+
+
+
+** Soit $%A=[-1,3]%$ et $%B=[0,4]%$. Cochez la bonne réponse :
+ 
++ $%A\cup B=[-1,4]%$
+- $%A\cup B=\varnothing%$
+- $%A\cup B=[0,3]%$
+- $%A\cup B=[-1,0]%$
+
+
+
+** Soit $%A=\{a,b,c\}%$ et $%B=\{1,2\}%$. Cochez la bonne réponse :
+ 
++ $%(a,1)\in A\times B%$
+- $%\{a,1\}\in A\times B%$
+- $%\{(a,1)\}\in A\times B%$
+- $%\{a,1\}\subset A\times B%$
+
+
+
+** On désigne par $%\mathrm{C}^k_n%$ le nombre de choix de $%k%$ éléments parmi $%n%$. Combien fait $%\displaystyle \sum _{k=0}^{100}(-1)^k\mathrm{C}^k_{100}%$ ?
+ 
++ $%0%$
+- $%100%$
+- $%101%$
+- $%5000%$
+
+
+
+** On désigne par $%\mathrm{C}^k_n%$ le nombre de choix de $%k%$ éléments parmi $%n%$. Combien fait $%\displaystyle \sum _{k=0}^{10}\mathrm{C}^k_{10}%$ ?
+ 
++ $%1024%$
+- $%10%$
+- $%100%$
+- $%50%$
+
+
+
+** On considère l'application $%f:\{1,2,3,4\}\to \{1,2,3,4\}%$ définie par
+\[f(1)=2,\quad f(2)=3,\quad f(3)=4,\quad f(4)=2.\]
+Quelle est la bonne réponse ?
+ 
++ $%f^{-1}(\{2\})=\{1,4\}%$
+- $%f^{-1}(\{2\})=\{1\}%$
+- $%f^{-1}(\{2\})=\{3\}%$
+- $%f^{-1}(\{2\})=\{4\}%$
+
+
+
+** On considère l'application $%f:\mathbb{N}\to \mathbb{N}%$ définie par
+\[\forall n\in \mathbb{N},\; f(n)=n+1.\]
+Quelle est la bonne réponse ?
+ 
++ $%f%$ est injective et non surjective.
+- $%f%$ est surjective et non injective.
+- $%f%$ est bijective.
+- $%f%$ n'est ni injective ni surjective.
+
+
+
+** Soit $%A%$ et $%B%$ deux ensembles. L'écriture $%A\varsubsetneq B%$ signifie que $%A%$ est inclus dans $%B%$ et que $%A\neq B%$. On suppose que $%A\cap B=A\cup B%$. Que peut-on dire de $%A%$ et $%B%$ ?
+ 
++ $%A=B%$
+- $%A\varsubsetneq B%$
+- $%B\varsubsetneq A%$
+- $%A\neq B%$
+
+
+
+** Soit $%A%$ une partie d'un ensemble $%E%$ telle que $%A\neq E%$. On note $%\overline{A}%$ le complémentaire de $%A%$ dans $%E%$. Quelles sont les bonnes réponses ?
+ 
++ $%A\cap \overline{A}=\varnothing%$
++ $%A\cup\overline{A}=E%$
+- $%A\cap \overline{A}=E%$
+- $%A\cup \overline{A}=A%$
+
+
+
+** Soient $%A,B%$ deux parties d'un ensemble $%E%$. On note $%\overline{A}%$ le complémentaire de $%A%$ dans $%E%$. Quelle est la bonne réponse ?
+ 
++ $%\overline{A\cup B}=\overline{A}\cap \overline{B}%$
+- $%\overline{A\cup B}=\overline{A}\cup \overline{B}%$
+- $%\overline{A\cup B}=A\cap B%$
+- $%\overline{A\cup B}=\overline{A}\cup B%$
+
+
+
+** Soient $%A,B%$ deux parties d'un ensemble $%E%$. On note $%\overline{A}%$ le complémentaire de $%A%$ dans $%E%$. Quelle est la bonne réponse ?
+ 
++ $%\overline{A\cap B}=\overline{A}\cup \overline{B}%$
+- $%\overline{A\cap B}=\overline{A}\cap \overline{B}%$
+- $%\overline{A\cap B}=\overline{A}\cap B%$
+- $%\overline{A\cap B}=\overline{A}\cap B%$
+
+
+
+** Pour tout $%n\in \mathbb{N} ^*%$, on pose $%E_n=\{1,2,\dots ,n\}%$. On note $%\mathscr{P}(E_n)%$ l'ensemble des parties de $%E_n%$. Quelles sont les bonnes réponses ?
+ 
++ $%\mathscr{P}(E_2)=\{\varnothing ,\{1\},\{2\},E_2\}%$
++ $%\mathrm{Card}(\mathscr{P}(E_n))=2^n%$
+- $%\mathscr{P}(E_2)=\{\{1\},\{2\}\}%$
+- $%\mathrm{Card}(\mathscr{P}(E_n))=n%$
+
+
+
+** On considère l'application $%f:\mathbb{R}\to \mathbb{R}%$ définie par
+\[\forall x\in \mathbb{R},\; f(x)=x^2+1.\]
+Quelle est la bonne réponse ?
+ 
++ $%f(\mathbb{R})=[1,+\infty [%$
+- $%f(\mathbb{R})=\mathbb{R}%$
+- $%f(\mathbb{R})=[0,+\infty [%$
+- $%f(\mathbb{R})=]1,+\infty [%$
+
+
+
+** On considère l'application $%f:\mathbb{R}\to \mathbb{R}%$ définie par
+\[\forall x\in \mathbb{R},\; f(x)=x^2+1.\]
+Quelles sont les bonnes réponses ?
+ 
++ $%f^{-1}([1,5])=[-2,2]%$
++ $%f^{-1}([0,5])=[-2,2]%$
+- $%f^{-1}([1,5])=[0,2]%$
+- $%f^{-1}([0,5])=[0,2]%$
+
+
+
+** On considère l'application $%f:\mathbb{R}\to \mathbb{R}%$ définie par
+\[\forall x\in \mathbb{R},\; f(x)=\cos (\pi x).\]
+Quelles sont les bonnes réponses ?
+ 
++ $%f(\{0,2\})=\{1\}%$
++ $%f([0,2])=[-1,1]%$
+- $%f(\{0,2\})=\{0\}%$
+- $%f([0,2])=[1,1]%$
+
+
+
+** On considère l'application $%f:\mathbb{R}\times \mathbb{R}\to \mathbb{R}%$ définie par
+\[f(x,y)=x^2+y^2.\]
+Quelles sont les bonnes réponses ?
+ 
++ $%f^{-1}(\{0\})=\{(0,0)\}%$
++ $%f^{-1}(\{1\})%$ est le cercle de centre $%(0,0)%$ et de rayon $%1%$
+- $%f^{-1}(\{1\})=\{(1,0)\}%$
+- $%f^{-1}(\{0\})=\{(0,1)\}%$
+
+
+
+** On considère l'application $%f:\mathbb{R}\setminus\{2\}\to \mathbb{R}\setminus \{1\}%$ définie par
+\[\forall x\in \mathbb{R}\setminus\{2\},\; f(x)=\frac{x+1}{x-2}.\]
+Quelle est la bonne réponse ?
+ 
++ $%f%$ est bijective et $%\displaystyle f^{-1}(x)=\frac{2x+1}{x-1}%$.
+- $%f%$ n'est pas bijective.
+- $%f%$ est bijective et $%\displaystyle f^{-1}(x)=\frac{x-2}{x+1}%$.
+- $%f%$ est bijective et $%\displaystyle f^{-1}(x)=\frac{-x+1}{-x-2}%$.
+
+
+
+** Soit $%A=\{(x,y)\in \mathbb{R}^2\mid 2x-y=1\}%$ et $%B=\{(t+1,2t+1)\mid t\in \mathbb{R}\}%$. Que peut-on dire de $%A%$ et $%B%$ ?
+ 
++ $%A=B%$
+- $%A\varsubsetneq B%$
+- $%B\varsubsetneq A%$
+- $%A\neq B%$
+
+
+
+** Soient $%E%$ et $%F%$ deux ensembles non vides et $%f%$ une application de $%E%$ dans $%F%$. Soient $%A,B%$ deux sous-ensembles de $%E%$. Quelles sont les bonnes réponses ?
+ 
++ $%f(A\cup B)=f(A)\cup f(B)%$
++ $%f(A\cap B)\subset f(A)\cap f(B)%$
+- $%f(A\cup B)\varsubsetneq f(A)\cup f(B)%$
+- $%f(A\cap B)=f(A)\cap f(B)%$
+
+
+
+** Soient $%E%$ et $%F%$ deux ensembles non vides et $%f%$ une application de $%E%$ dans $%F%$. Soit $%A%$ un sous-ensemble de $%E%$. Quelles sont les bonnes réponses ?
+ 
++ $%A\subset f^{-1}(f(A))%$
+- $%A=f^{-1}(f(A))%$
+- $%f^{-1}(f(A))\subset A%$
+- $%f^{-1}(f(A))=E\setminus A%$
+
+
+
+** Soient $%E%$ et $%F%$ deux ensembles non vides et $%f%$ une application de $%E%$ dans $%F%$. Soit $%B%$ un sous-ensemble de $%F%$. Quelles sont les bonnes réponses ?
+ 
++ $%f(f^{-1}(B))\subset B%$
+- $%B=f(f^{-1}(B))%$
+- $%B\subset f(f^{-1}(B))%$
+- $%f(f^{-1}(B))=F\setminus B%$
+
+
+
+** Soit $%E%$ un ensemble et $%A\subset E%$ avec $%A\neq E%$. Comment choisir $%X\subset E%$ de sorte que
+\[A\cap X=A\quad \mbox{et}\quad A\cup X=E \; ?\]
+ 
++ $%X=E%$
+- $%X=A%$
+- $%X=\varnothing%$
+- $%X%$ n'existe pas
+
+
+
+** Soit $%E%$ un ensemble et $%A\subset E%$ avec $%A\neq E%$. On note $%\overline{A}%$ le complémentaire de $%A%$ dans $%E%$. Comment choisir $%X\subset E%$ de sorte que
+\[A\cap X=\varnothing \quad \mbox{et}\quad A\cup X=E \; ?\]
+ 
++ $%X=\overline{A}%$
+- $%X=A%$
+- $%X=E%$
+- $%X=\varnothing%$
+
+
+
+** Soit $%E%$ un ensemble à $%n%$ éléments et $%a\in E%$. On note $%\mathscr{P}_a(E)%$ l'ensemble des parties de $%E%$ qui contiennent $%a%$. Quel est le cardinal de $%\mathscr{P}_a(E)%$ ?
+ 
++ $%\mathrm{Card}(\mathscr{P}_a(E))=2^{n-1}%$
+- $%\mathrm{Card}(\mathscr{P}_a(E))=n-1%$
+- $%\mathrm{Card}(\mathscr{P}_a(E))=n%$
+- $%\mathrm{Card}(\mathscr{P}_a(E))=2^n%$
+
+
+
+** On note $%\mathrm{C}^k_n%$ le nombre de choix de $%k%$ éléments parmi $%n%$. Combien fait $%\displaystyle \sum _{k=0}^{100}(-1)^k2^{-k}\mathrm{C}^k_{100}%$ ?
+ 
++ $%2^{-100}%$
+- $%0%$
+- $%2^{100}%$
+- $%100%$
+
+
+
+** Soit $%E%$ un ensemble à $%n%$ éléments et $%A\subset E%$ une partie à $%p < n%$ éléments. On note $%\mathscr{H}(E)%$ l'ensemble des parties de $%E%$ qui contiennent un et un seul élément de $%A%$. Quel est le cardinal de $%\mathscr{H}(E)%$ ?
+ 
++ $%\mathrm{Card}(\mathscr{H}(E))=p2^{n-p}%$
+- $%\mathrm{Card}(\mathscr{H}(E))=p%$
+- $%\mathrm{Card}(\mathscr{H}(E))=p2^p%$
+- $%\mathrm{Card}(\mathscr{H}(E))=p2^n%$
+
+
+
+** Soit $%f:[-1,1]\to [-1,1]%$ l'application définie par
+\[\forall x\in [-1,1],\; f(x)=\frac{2x}{1+x^2}.\]
+Quelle sont les bonnes réponses ?
+ 
++ $%f%$ est bijective et $%\displaystyle f^{-1}(x)=\frac{x}{1+\sqrt{1-x^2}}%$.
+- $%f%$ est injective mais non surjective.
+- $%f%$ est surjective mais non injective.
+- $%f%$ n'est ni injective ni surjective.
+
+

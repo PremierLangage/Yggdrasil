@@ -8,9 +8,10 @@ text=
 before==
 
 from gendec import question
-
+import random
+random.seed(10)
 text, sol = question()
-
+texti=text
 nbq=0
 nbbr=0
 
@@ -33,17 +34,20 @@ form==
 
 evaluator==
 nbq += 1
-
-if sol == inputbox.value:
+ok = sol == inputbox.value.strip()
+if ok:
     nbbr += 1 
-    grade = (100, f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>')
+    feedback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>'
+    grade = (100," ")
 else:
-    grade = (0, f'<span class="error-state">Bad answer</span> <br/><span >{text}<br> la bonne réponse  était : {sol}  {nbbr}/{nbq} </span>')
-
-
+    feedback = f'<span class="error-state">Bad answer</span> <br/><span >{texti}<br> la bonne réponse  était : **{sol}** <br>  Nombre de réponses correctes {nbbr}/{nbq} </span>'
+    grade = (0, " ")
+import random
+random.seed(10)
 from gendec import question
 
-text, sol = question()
+texti, sol = question()
+text = texti + "<br><br><br>Question précédente : <br>"+feedback
 ==
 
 

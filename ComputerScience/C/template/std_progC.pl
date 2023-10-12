@@ -34,7 +34,7 @@
 @ std_progC_utils.py
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
-builder =@ /builder/before.py
+builder =@ /builder/bbefore.py
 
 title=Standard C Programming exercise template (summer 2021)
 
@@ -71,7 +71,7 @@ int carre(int n){
 }
 ==
 
-before ==#|python|
+before==#|python|
 from random import randint
 
 # Some globals variables
@@ -80,7 +80,7 @@ nb_attempt=0
 # Place here your favorite C compiler
 compiler="gcc"
 # PLace here the compilation flags
-cflags=["-Wall", "-ansi"]
+cflags=["-Wall"]
 # Place here library flags
 libflags=[]
 
@@ -116,9 +116,8 @@ checks_args_stdin==
  ["Cinquième test aléatoire lui aussi", [str(randint(-100,100))], str(randint(-100,100)) ] ]
 ==
 
-form==
+form=
 
-==
 
 code_before==#|c|
 

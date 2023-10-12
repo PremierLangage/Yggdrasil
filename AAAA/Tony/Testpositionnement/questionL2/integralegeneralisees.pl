@@ -1,5 +1,6 @@
 extends= /model/basic/checkbox_rw.pl
 
+title = Intégrales généralisées
  
 question==
  Lesquelles de ces integrales généralisées convergent?
@@ -23,4 +24,5 @@ $!\int_0^{1}\frac{\ln(1+t)}{t(\cos(t)-1)}dt!$
 
 scoring = CorrectItems
 
+reroll = False
    

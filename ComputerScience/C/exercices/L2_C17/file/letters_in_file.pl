@@ -35,8 +35,8 @@ editor.height=300px
 
 text==#|markdown|
 Écrire une fonction qui prend en argument un fichier ouvert et qui fait un résumé 
-des pourcentages d'occurence de chacunes des lettres minuscules parmi toutes les 
-lettres minuscules. Ainsi, pour chaque lettre, il faudra calculer son pourcentage 
+des pourcentages d'occurence de chacunes des lettres **minuscules** parmi toutes les 
+lettres **minuscules**. Ainsi, pour chaque lettre, il faudra calculer son pourcentage 
 de présence parmi toutes les lettres.
 
 Pour un fichier de contenu :
@@ -54,7 +54,6 @@ Pour faire un affichage formaté propre, utiliser `printf` avec le format suivan
 On affichera seulement les lignes pour lesquelles la proportion est non nulle. Si 
 toutes les lettres minuscules apparaissent, alors on affichera 26 lignes, une pour 
 chacune des lettres de l'alphabet latin.
-
 
 ==
 

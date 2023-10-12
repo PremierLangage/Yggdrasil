@@ -66,8 +66,11 @@ import subprocess
 from utils_bash import display_as_shell_this, frame_message
 
 cmd = '''df -H | grep -e "/$" | sed -e "s/[' '\\t\\n]/\\n/g" | grep -e "G$" | sort -rn | head -1'''
+cmd2 = '''df -h | grep -e "/$" | sed -e "s/[' '\\t\\n]/\\n/g" | grep -e "G$" | sort -rn | head -1'''
 sp = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
 solution = sp.communicate()[0].decode().replace(' ', '').replace('\n', '')
+sp2 = subprocess.Popen(cmd2,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+solution2 = sp2.communicate()[0].decode().replace(' ', '').replace('\n', '')
 # errout = sp.stderr.decode()
 # returncode = sp.returncode
 student_ans = (inputbox.value).replace(' ', '').replace('\n', '')
@@ -82,7 +85,7 @@ else:
     tenta += ')'
 feedback='<br><p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Efficacité :</u> ' + str(grade_attempt) + '%</b> '+tenta+'</p>'
 
-if student_ans == solution:
+if student_ans == solution or student_ans == solution2:
     grade = (grade_attempt, frame_message("C'est bien cela !", "ok")+feedback)
 else:
     grade = (0, frame_message("Ce n'est pas la bonne réponse...", "error")+feedback)

@@ -1,4 +1,4 @@
-extends = /model/quiz/AMC.pl
+extends = /model/quiz/AMC_TXT.pl
 
 intro ==
 Ce quiz est composé de 3 questions.

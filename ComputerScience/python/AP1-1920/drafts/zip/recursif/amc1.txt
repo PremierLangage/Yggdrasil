@@ -1,9 +1,11 @@
 Latex:1
 
 *1000  décimal c'est de l'ordre de
-+$2^{10}$
++$%2^{10}%$
 -5
 -2^4
+-$%99999^{1/3}%$
+
 *une année de 365 jours , c'est combien de millisecondes
 + en gros $%2^{35}%$
 - en gros $%2^{100}%$
@@ -14,14 +16,15 @@ Latex:1
 -$%\lg(n)^8 \gt n%$
 -$%\sqrt{n} \lt \lg(n)%$
 
-*On dispose d'une fonction qui affiche toutes les permutations de l'ensemble des entiers de & à $%n%$.
+*On dispose d'une fonction qui affiche toutes les permutations de l'ensemble des entiers de 1 à $%n%$.
 Quelle est au minimum sa complexité?
 +$%\mathcal O(n!)%$
 -$%\mathcal {O}(n^2)%$
 -$%\mathcal {O}(n)%$
--$%\mathcal {O}\lg(n)%$
+-$%\mathcal {O}\lg(n)%``
 
-*quelle est la complexité du programme suvant:
+*quelle est la complexité du programme suivant:
+```
 def f(n):
     s=0
     for i in range(n):
@@ -29,20 +32,21 @@ def f(n):
 somme=0
 for i in range(n):
         somme+=2*f(n)
+```
 Quelle est sa complexité?
 +$%\mathcal O(n!)%$
 -$%\mathcal {O}(n^2)%$
 -$%\mathcal {O}(n)%$
 -$%\mathcal {O}\lg(n)%$
 
-*on dispose d'un ordinateur effetuant un milliard de traitement par seconde et d'un probleme necessitant $%2^n%$
+*on dispose d'un ordinateur effectuant un milliard de traitement par seconde et d'un probleme necessitant $%2^n%$
 traitements. Pour quelle valeur de n le temps de calcul serait supérieur à l'age de l'univers - 16 milliards d'années (de 365 jours)!
 +89
 -1024
 -500 000
 -4
 
-*on dispose d'un ordinateur effetuant un milliard de traitement par seconde et d'un probleme necessitant $%n!%
+*on dispose d'un ordinateur effectuant un milliard de traitement par seconde et d'un probleme necessitant $%n!%$
 traitements. Pour quelle valeur de n le temps de calcul serait supérieur à l'age de l'univers - 16 milliards d'années (de 365 jours)!
 +28
 -1024

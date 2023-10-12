@@ -3,6 +3,8 @@ from uuid import uuid4
 from components import Component
 from scoring import *
 
+
+
 class CustomCheckbox(Component):
 
     def __init__(self, **kwargs):
@@ -10,6 +12,10 @@ class CustomCheckbox(Component):
         self.decorator = 'Checkbox'
         super().__init__(**kwargs)
         self.statement =''
+
+    def setitems(self,items):
+        self.set_items(items)
+
 
     def set_items(self, items):
         """
@@ -128,3 +134,7 @@ class CustomCheckbox(Component):
         selector = self.selector
         cid = self.cid
         return f"<{selector} cid='{cid}'></{selector}>"
+
+
+class Checkbox(CustomCheckbox):
+    pass

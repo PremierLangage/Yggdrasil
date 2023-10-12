@@ -1,0 +1,273 @@
+
+** Soit $%\displaystyle f(x)=\frac{2}{x}%$ et $%g(x)=2\sqrt{x}%$. On note $%\mathscr{C}_f%$ (resp. $%\mathscr{C}_g%$) la courbe représentative de $%f%$ (resp. $%g%$). Quelles sont les bonnes réponses ?
+ 
++ Une équation de la tangente à $%\mathscr{C}_f%$ au point $%(1,2)%$ est $%y=-2x+4%$.
++ Une équation de la tangente à $%\mathscr{C}_g%$ au point $%(1,2)%$ est $%y=x+1%$.
+- Une équation de la tangente à $%\mathscr{C}_f%$ au point $%(1,2)%$ est $%y=-2x+2%$.
+- Une équation de la tangente à $%\mathscr{C}_g%$ au point $%(1,2)%$ est $%y=x+2%$.
+
+
+
+** Etant donné que $%\displaystyle f(3)=1%$ et $%f'(3)=5%$. Une équation de la tangente à $%\mathscr{C}_f%$ au point $%(3,1)%$ est :
+ 
++ $%y=5(x-3)+1=5x-14%$
+- $%y=1(x-3)+5=x+2%$
+- $%y=1(x-3)-5=x-8%$
+- $%y=5(x-3)-1=5x-16%$
+
+
+
+** Soit $%\displaystyle f(x)=|x-1|%$. On note $%f'_d(a)%$ (resp. $%f'_g(a)%$) pour désigner la dérivée à droite (resp. à gauche) en $%a%$. Quelles sont les bonnes réponses ?
+ 
++ $%f%$ est dérivable en $%0%$ et $%f'(0)=-1%$.
++ $%f%$ n'est pas dérivable en $%1%$ car $%f'_d(1)=1%$ et $%f'_g(1)=-1%$.
+- $%f'_d(1)=1%$ et $%f'_g(1)=1%$
+- $%f%$ est dérivable en $%1%$ et $%f'(1)=1%$.
+
+
+
+** Soit $%\displaystyle f(x)=\sqrt[3]{(x-2)^2}%$. Quelles sont les bonnes réponses ?
+ 
++ $%f%$ est continue et non dérivable en $%2%$.
++ La tangente à $%\mathscr{C}_f%$ en $%2%$ est une droite verticale.
+- $%f%$ est continue et dérivable en $%2%$.
+- La tangente à $%\mathscr{C}_f%$ en $%2%$ est une droite horizontale.
+
+
+
+** Quelles sont les bonnes réponses ?
+ 
++ La dérivée de $%f(x)=(2x+1)^2%$ est $%f'(x)=4(2x+1)%$.
++ La dérivée de $%f(x)=\mathrm{e}^{x^2-2x}%$ est $%f'(x)=2(x-1)\mathrm{e}^{x^2-2x}%$.
+- La dérivée de $%f(x)=(2x+1)^2%$ est $%f'(x)=2(2x+1)%$.
+- La dérivée de $%f(x)=\mathrm{e}^{x^2-2x}%$ est $%f'(x)=2\mathrm{e}^{x^2-2x}%$.
+
+
+
+** Quelles sont les bonnes réponses ?
+ 
++ La dérivée de $%f(x)=\sin [(2x+1)^2]%$ est $%f'(x)=4(2x+1)\cos [(2x+1)^2]%$.
++ La dérivée de $%f(x)=\tan (1+x^2)%$ est $%\displaystyle f'(x)=\frac{2x}{\cos ^2(1+x^2)}%$.
+- La dérivée de $%f(x)=\sin [(2x+1)^2]%$ est $%f'(x)=2\cos [(2x+1)^2]%$.
+- La dérivée de $%f(x)=\tan (1+x^2)%$ est $%\displaystyle f'(x)=1+\tan ^2(1+x^2)%$.
+
+
+
+** Quelles sont les bonnes réponses ?
+ 
++ La dérivée de $%f(x)=\arcsin (1-2x^2)%$ est $%\displaystyle f'(x)=\frac{-2x}{|x|\sqrt{1-x^2}}%$.
++ La dérivée de $%f(x)=\arccos (x^2-1)%$ est $%\displaystyle f'(x)=\frac{-2x}{|x|\sqrt{2-x^2}}%$.
+- La dérivée de $%f(x)=\arcsin (1-2x^2)%$ est $%\displaystyle f'(x)=\frac{1}{\sqrt{1-2x^2}}%$.
+- La dérivée de $%f(x)=\arccos (x^2-1)%$ est $%\displaystyle f'(x)=\frac{2x}{\sqrt{x^2-1}}%$.
+
+
+
+** Soit $%\displaystyle f(x)=x^2-\mathrm{e}^{x^2-1}%$. Quelles sont les bonnes réponses ?
+ 
++ $%f%$ admet un minimum local en $%0%$.
+- $%f%$ admet un maximum local en $%0%$.
+- $%f%$ admet un point d'inflexion en $%0%$.
+- la tangente à $%\mathscr{C}_f%$ en $%0%$ est une droite verticale.
+
+
+
+** Soit $%\displaystyle f(x)=x^4-x^3+1%$. Quelles sont les bonnes réponses ?
+ 
++ $%f%$ admet un minimum local au point $%\displaystyle \frac{3}{4}%$.
++ $%f%$ admet un point d'inflexion au point $%0%$.
+- $%f%$ admet un maximum local au point $%0%$.
+- $%f%$ admet un minimum local au point $%0%$.
+
+
+
+** Soit $%\displaystyle f(x)=\frac{1}{1+x}%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle f''(x)=\frac{2}{(1+x)^3}%$
++ pour $%n\in \mathbb{N}^*%$, $%\displaystyle f^{(n)}(x)=\frac{(-1)^nn!}{(1+x)^{n+1}}%$
+- $%\displaystyle f''(x)=\frac{-2}{(1+x)^3}%$
+- pour $%n\in \mathbb{N}^*%$, $%\displaystyle f^{(n)}(x)=\frac{n}{(1+x)^{n+1}}%$
+
+
+
+** Soit $%\displaystyle f(x)=x^2\mathrm{e}^x%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle f''(x)=(x^2+4x+2)\mathrm{e}^x%$
++ Pour $%n\in \mathbb{N}^*%$, $%\displaystyle f^{(n)}(x)=(x^2+2nx+n^2-n)\mathrm{e}^x%$.
+- $%\displaystyle f''(x)=2\mathrm{e}^x%$
+- Pour $%n\in \mathbb{N}^*%$, $%\displaystyle f^{(n)}(x)=(x^2+2nx+n)\mathrm{e}^x%$.
+
+
+
+** Soit $%\displaystyle f(x)=x\ln (1+x)%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle f'(x)=\ln (1+x)+\frac{x}{1+x}%$
++ Pour $%n\geqslant 2%$, $%\displaystyle f^{(n)}(x)=\frac{(-1)^{n}(n-2)!}{(1+x)^n}\left(x+n\right)%$.
+- $%\displaystyle f'(x)=(x)'[\ln (1+x)]'=1\times \frac{1}{1+x}%$
+- Pour $%n\geqslant 2%$, $%\displaystyle f^{(n)}(x)=n\times \frac{1}{(1+x)^n}%$.
+
+
+
+** Soit $%\displaystyle f(x)=x^4-3x^3+3x^2-x%$. Quelles sont les bonnes réponses ?
+ 
++ Il existe $%a\in ]0,1[%$ tel que $%f'(a)=0%$.
++ Il existe $%a\in ]0,1[%$ où la tangente à $%\mathscr{C}_f%$ en $%a%$ est une droite horizontale.
+- Il existe $%a\in ]0,1[%$ où la tangente à $%\mathscr{C}_f%$ en $%a%$ est une droite verticale.
+- $%\mathscr{C}_f%$ admet un point d'inflexion en $%0%$.
+
+
+
+** Soit $%a,b\in \mathbb{R}%$ et $%f(x)=\left\{\begin{array}{cl}\displaystyle \mathrm{e}^{x^2+x}&\mbox{si }x\leqslant 0\\ \\ a \arctan x+b &\mbox{si }x>0.\end{array}\right.%$
+Quelles valeurs faut-il donner à $%a%$ et $%b%$ pour que $%f%$ soit dérivable sur $%\mathbb{R}%$ ?
+ 
++ $%a=1%$ et $%b=1%$
+- $%a=1%$ et $%b=0%$
+- $%a=0%$ et $%b=1%$
+- $%a=0%$ et $%b=0%$
+
+
+
+** Soit $%f(x)=\left\{\begin{array}{cl}\displaystyle x+x^2\sin \frac{1}{x}&\mbox{si }x\neq 0\\ \\ 0&\mbox{si }x=0.\end{array}\right.%$
+Quelles sont les bonnes réponses ?
+ 
++ $%f%$ est dérivable en $%0%$ est $%f'(0)=1%$.
++ Pour $%x\neq 0%$, $%\displaystyle f'(x)=1+2x\sin \frac{1}{x}-\cos \frac{1}{x}%$.
+- $%f%$ n'est pas dérivable en $%0%$.
+- $%f%$ est dérivable en $%0%$ est $%f'(0)=0%$.
+
+
+
+** Soit $%\displaystyle f(x)=\mathrm{e}^{3x^4-4x^3}%$. Quelles sont les bonnes réponses ?
+ 
++ $%f%$ admet un minimum en $%1%$.
++ Il existe $%a\in ]0,1[%$ tel que $%f''(a)=0%$.
+- $%\forall x\in \mathbb{R}%$, $%f''(x)>0%$
+- $%f%$ admet un maximum en $%1%$.
+
+
+
+** Soit $%\displaystyle f(x)=\frac{x^2+1}{x+1}%$. Quel est l'ensemble $%S%$ des points $%x_0%$ où la tangente à $%\mathscr{C}_f%$ est parallèle à la droite d'équation $%y=x%$ ?
+ 
++ $%S=\varnothing%$
+- $%S=\{-1\}%$
+- $%S=\{0\}%$
+- $%S=\{0,1\}%$
+
+
+
+** Soit $%\displaystyle f(x)=\frac{x+3}{x+2}%$. Quel est l'ensemble $%S%$ des points $%x_0%$ où la tangente à $%\mathscr{C}_f%$ est perpendiculaire à la droite d'équation $%y=x%$ ?
+ 
++ $%S=\{-1,-3\}%$
+- $%S=\{-2\}%$
+- $%S=\{-3\}%$
+- $%S=\varnothing%$
+
+
+
+** On considère $%\displaystyle f(x)=x^2-x%$ sur l'intervalle $%[0,1]%$. Quelles sont les bonnes réponses ?
+ 
++ $%f%$ vérifie les hypothèses du théorème de Rolle et une valeur vérifiant la conclusion de ce théorème est $%\displaystyle \frac{1}{2}%$.
++ $%f%$ vérifie les hypothèses du théorème des accroissements finis et une valeur vérifiant la conclusion de ce théorème est $%\displaystyle \frac{1}{2}%$.
+- $%f%$ ne vérifie pas les hypothèses du théorème de Rolle.
+- $%f%$ ne vérifie pas les hypothèses du théorème des accroissements finis.
+
+
+
+** Soit $%f(x)=\left\{\begin{array}{ll}x^2\ln (x^2)&\mbox{si }x\neq 0\\ 0&\mbox{si }x=0.\end{array} \right.%$
+Quelles sont les bonnes réponses ?
+ 
++ $%f%$ est de classe $%\mathscr{C}^1%$ sur $%\mathbb{R}%$.
++ $%\forall x\in \mathbb{R}^*%$, $%\displaystyle f''(x)=2\ln x^2+6%$
+- $%f%$ est deux fois dérivables sur $%\mathbb{R}%$.
+- $%f%$ est de classe $%\mathscr{C}^2%$ sur $%\mathbb{R}%$.
+
+
+
+** Soit $%f(x)=\arctan x+\arctan \frac{1}{x}%$ définie sur $%\mathbb{R}^*%$. Quelles sont les bonnes réponses ?
+ 
++ $%\forall x\in \mathbb{R}^*%$, $%f'(x)=0%$
++ $%\displaystyle f(x)=\frac{\pi}{2}%$ si $%x>0%$ et $%\displaystyle f(x)=-\frac{\pi}{2}%$ si $%x<0%$
+- $%\forall x\in \mathbb{R}^*%$, $%\displaystyle f(x)=\frac{\pi}{2}%$
+- La fonction $%f%$ est paire.
+
+
+
+** Soit $%f%$ une fonction continue sur $%[-1,1]%$ telle que $%f(0)=\pi%$ et, pour tout $%x\in ]-1,1[%$, $%\displaystyle f'(x)=\frac{1}{\sqrt{1-x^2}}%$. Comment peut-on exprimer $%f%$ ?
+ 
++ $%f(x)=\arcsin (x)+\pi%$
++ $%\displaystyle f(x)=-\arccos x+\frac{3\pi}{2}%$
+- $%f(x)=\sqrt{1-x^2}-1+\pi%$
+- Une telle fonction $%f%$ n'existe pas.
+
+
+
+** Soit $%\displaystyle f(x)=x^3+x^2+x-\frac{13}{12}%$. Quelles sont les bonnes réponses ?
+ 
++ L'équation $%f(x)=0%$ admet une solution dans $%]0,1[%$.
++ Le théorème de Rolle s'applique à une primitive de $%f%$ sur $%[0,1]%$.
+- $%\displaystyle f(0)=-\frac{13}{12}<0%$ et $%\displaystyle f(1)=-\frac{1}{12}<0%$, donc $%f(x)=0%$  n'a pas de solution dans $%]0,1[%$.
+- Le théorème de Rolle s'applique à $%f%$ sur $%[0,1]%$.
+
+
+
+** Soit $%f(x)=\tan (x)%$. Quelles sont les bonnes réponses ?
+ 
++ $%f(0)=0=f(\pi)%$ mais il n'existe pas de $%c\in ]0,\pi[%$ tel que $%f'(c)=0%$.
++ Le théorème de Rolle ne s'applique pas à $%f%$ sur $%[0,\pi]%$.
+- $%f(0)=0=f(\pi)%$ et donc il existe $%c\in ]0,\pi[%$ tel que $%f'(c)=0%$.
+- Le théorème de Rolle ne s'applique pas à $%f%$ sur $%[0,\pi]%$ car $%f(0)\neq f(\pi)%$.
+
+
+
+** Soit $%\displaystyle f:\mathbb{R}\to \mathbb{R}%$ telle que $%f(x)=x^3+3x+1%$. Quelles sont les bonnes réponses ?
+ 
++ $%\forall x\in \mathbb{R}%$, $%f'(x)>0%$
++ $%f%$ est une bijection et $%\displaystyle (f^{-1})'(1)=\frac{1}{3}%$.
+- $%f%$ est une bijection et $%\displaystyle (f^{-1})'(1)=\frac{1}{f'(1)}=\frac{1}{6}%$.
+- $%f%$ est une bijection et $%\displaystyle (f^{-1})'(x)=\frac{1}{f'(x)}%$.
+
+
+
+** Soit $%f%$ une fonction réelle continue sur $%[a,b]%$, dérivable sur $%]a,b[%$ et telle que $%f(a)=f(b)=0%$. Soit $%\alpha \notin [a,b]%$ et $%\displaystyle g(x)=\frac{f(x)}{x-\alpha }%$.
+ 
++ On peut appliquer le théorème de Rolle à $%g%$ sur $%[a,b]%$.
++ Il existe $%c\in ]a,b[%$ tel que $%\displaystyle f'(c)=\frac{f(c)}{c-\alpha}%$.
++ Il existe $%c\in ]a,b[%$ tel que la tangente à $%\mathscr{C}_f%$ en $%c%$ passe par $%(\alpha ,0)%$.
+- La dérivée de $%g%$ est $%\displaystyle g'(x)=\frac{f'(x)}{(x-\alpha )^2}%$.
+
+
+
+** Soit $%n\geqslant 2%$ un entier et $%\displaystyle f(x)=\frac{1+x^n}{(1+x)^n}%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle f'(x)=\frac{n(x^{n-1}-1)}{(1+x)^{n+1}}%$ et $%f%$ admet un minimum en $%1%$.
++ $%\forall x\geqslant 0,\; (1+x)^n\leqslant 2^{n-1}(1+x^n)%$.
+- $%f'(1)\neq 0%$ et donc $%f%$ n'admet pas d'extremum en $%1%$.
+- Le théorème de Rolle s'applique à $%f%$ sur $%[-1,1]%$ car $%f(-1)=f(1)%$.
+
+
+
+** Soit $%f(x)=\mathrm{e}^x%$. Quelles sont les bonnes réponses ?
+ 
++ $%f%$ est convexe sur $%\mathbb{R}%$.
++ $%\forall t\in [0,1]%$ et $%\forall x,y\in \mathbb{R}^{+*}%$, on a : $%t\ln x+(1-t)\ln y\leqslant \ln \left[tx+(1-t)y\right]%$.
+- $%f''(x)%$ s'annule au moins une fois sur $%\mathbb{R}%$.
+- $%f%$ est concave sur $%\mathbb{R}%$.
+
+
+
+** Soit $%f(x)=\ln (x)%$. Quelles sont les bonnes réponses ?
+ 
++ $%f%$ est concave sur $%\mathbb{R}^{+*}%$.
++ $%\forall t\in [0,1]%$ et $%\forall x,y\in \mathbb{R}%$, on a : $%\mathrm{e}^{tx+(1-t)y}\leqslant t\mathrm{e}^x+(1-t)\mathrm{e}^y%$.
+- $%f''(x)%$ s'annule au moins une fois sur $%\mathbb{R}^{+*}%$.
+- $%f%$ est convexe sur $%\mathbb{R}^{+*}%$.
+
+
+
+** Soit $%f(x)=\arcsin (1-2x^2)%$ définie sur $%[-1,1]%$. Quelles sont les bonnes réponses ?
+ 
++ $%f'_d(0)=-2%$ et $%f'_g(0)=2%$
++ La fonction $%f%$ est paire avec $%\displaystyle f(x)=-2\arcsin x+\frac{\pi}{2}%$ si $%x\in [0,1]%$.
+- $%\forall x\in [-1,1]%$, $%\displaystyle f'(x)=\frac{-2}{\sqrt{1-x^2}}%$
+- $%\forall x\in [-1,1]%$, $%\displaystyle f(x)=-2\arcsin x+\frac{\pi}{2}%$
+
+

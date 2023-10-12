@@ -40,6 +40,11 @@ Comment utiliser feedback2
 
 # class CompositeFeedback():
 
+def makehack():
+    import random
+    return  "".join([random.choice("aqwzsxedcrfvtgbyhnujkilopm") for i in range(3)])
+
+
 
 class FeedBack():
     def __init__(self,name="",filename="template.html"):
@@ -113,7 +118,10 @@ class FeedBack():
     def __str__(self):
         return self.render()
 
-    def render(self):
+    def render(self,hack=None):
+        if hack==None:
+            hack = makehack()
+        self.hack = hack
         with open(self.filename,"r") as tempfile:
             templatestring = tempfile.read()
         template = jinja2.Template(templatestring)

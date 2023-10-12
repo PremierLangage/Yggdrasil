@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Pourcentage
+
 question==
 Je pèse $!25 \%!$ de plus que toi combien de pourcents pèses-tu de moins que moi ? 
 ==
@@ -20,5 +21,6 @@ $!15 \%!$
 $!10 \%!$ 
 ==
 
-scoring = CorrectItems 
- 
+scoring = AllOrNothing 
+
+reroll = False

@@ -521,12 +521,12 @@ def is_poly_factorized(expr, x, domain='R'):
             else:
                 return False
         # check if the factor is irreducible
-        p = sp.poly(a, x)
+        p = sp.Poly(a, x)
         if domain == 'R':
             if p.degree() > 2 or (p.degree() == 2 and p.discriminant() > 0):
                 return False
         elif domain == 'C':
-            if p.degree() > 2:
+            if p.degree() > 1:
                 return False
     return True
 
@@ -657,7 +657,6 @@ def eval_poly(strans, sol, var='', domain='R', form='', checkratsimp=True, imagi
         x = sp.poly(sol).gens[0]
     else:
         x = sp.Symbol(var)
-    x = sp.poly(sol).gens[0]
     local_dict.update({imaginary_unit: sp.I})
     try:
         ans = latex2sympy(strans, local_dict)

@@ -1,0 +1,46 @@
+
+
+title= Ch 3 : Feuille d'exercices sur les boucles et boucles imbriquées 
+
+introduction==
+
+Ceci est votre troisième feuille d'exercices Python en libre service.
+
+Les exercices suivants concernent le concept de boucle imbriquées (c'est-à-dire les boucles de boucles).
+
+Ils doivent être verts une fois que vous avez fini !
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+mais vous pouvez naviger avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide sur le salon d'entraide PLaTon sous Discord de la L1 
+et passer à l'exercice suivant. 
+
+==
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_3_boucles/factorielle.pl
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_3_boucles/bouclefact.pl
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_3_boucles/boucle2croissant.pl
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_3_boucles/boucletriangle.pl
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_3_boucles/CouplesXY.pl
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_3_boucles/Pointsdudisque.pl
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_3_boucles/TripletPythagore.pl
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_3_boucles/Flechettes.pl
+
+# a mettre en dernier puisque difficile
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_3_boucles/tableau_entier.pl
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_3_boucles/table_multiplication.pl
+
+# Ce dernier exercicie est jugé trop difficile dans son énoncée dans le distanciel
+# @ /ComputerScience/python/AP1-2021/chapitre_3_boucles/arrondiReel.pl
+
+

@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Problème
+
 question==
 Un nageur plonge d'un pont et remonte le courant d’une rivière sur 1 km. Il croise à cet
 endroit un bouchon emporté par le courant, et continue sa remontée de la rivière pendant une heure. Il fait alors demi-tour et descend la rivière jusqu'au pont dont il était parti, qu'il atteint
@@ -23,3 +24,5 @@ La vitesse du courant est supérieure à 1 km/heure
 ==
 
 scoring = CorrectItems
+
+reroll = False

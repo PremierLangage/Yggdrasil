@@ -83,10 +83,6 @@ Node * allocate_node(int val){
   return n;
 }
 
-==
-
-code_after==#|c|
-
 int ajoute(Tree *t,int valeur){
   if (*t == NULL){
     if ((*t=allocate_node(valeur))==NULL)
@@ -113,6 +109,18 @@ int build_tree(Tree* t){
     }
     return 1;
 }
+
+int nbrealloc=0;
+void *dobob(void *p, int size){
+    nbrealloc++;
+    return realloc(p,size);
+}
+
+#define realloc dobob
+==
+
+code_after==#|c|
+
 
 int main(int argc, char* argv[]){
   Tree t=NULL;

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <img id="imgExample" data-smiles-options="{ 'width': 200, 'height': 200 }" />
+
+    <div style="background-color: #000">
+        <svg id="svgExample" />
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/smiles-drawer@2.0.1/dist/smiles-drawer.min.js"></script>
+    <script>
+        let moleculeOptions = {};
+        let reactionOptions = {};
+
+        let sd = new SmiDrawer(moleculeOptions, reactionOptions);
+        sd.draw('OCC=O', '#imgExample')
+        sd.draw('C=CCBr.[Na+].[I-]>CC(=O)C>C=CCI.[Na+].[Br-]', '#svgExample', 'white')
+    </script>
+</body>
+
+</html>

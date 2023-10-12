@@ -50,7 +50,7 @@ Fork me please, do not modify me please !
 # PANNEAU DE CONTROLE ICI
 #****************************************************************************
 title=Notion de fichiers en Unix
-questions=@ /AAAA/OCE/ProgC_QCM_1.txt
+questions=@ /ComputerScience/OperatingSystem/exercises/MCQ/notion_de_fichier.txt
 nb_question=5
 feedback=True
 min_options=4

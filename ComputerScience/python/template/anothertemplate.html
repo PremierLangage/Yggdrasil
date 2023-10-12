@@ -6,30 +6,30 @@
 {% if feedback.globalok %}
 <div style="border:1px solid black;padding:0%;margin:1%;background-color:LightGreen;border-radius:4px;">
 <button type="button" class="btn btn-block btn-success"
-   data-toggle="collapse" data-target="#suite{{feedback.testgroupenum}}">
+   data-toggle="collapse" data-target="#suite{{feedback.testgroupenum}}{{feedback.hack}}">
 {{feedback.name}} success
 </button>
-<div id="suite{{feedback.testgroupenum}}" class="collapse">
+<div id="suite{{feedback.testgroupenum}}{{feedback.hack}}" class="collapse">
 <div class="card card-success;" style="background-color: LightGreen;">
 {% else %}
 <div style="border:1px solid black;padding:1%;margin:1%;background-color:Tomato;border-radius:4px;">
    <button type="button" class="btn btn-block  btn-danger"
-      aria-expanded="true" aria-controls="suite{{feedback.testgroupenum}}"
-      data-toggle="collapse" data-target="#suite{{feedback.testgroupenum}}">
+      aria-expanded="true" aria-controls="suite{{feedback.testgroupenum}}{{feedback.hack}}"
+      data-toggle="collapse" data-target="#suite{{feedback.testgroupenum}}{{feedback.hack}}">
    {{feedback.name}}  Failure
    </button>
-   <div id="suite{{feedback.testgroupenum}}" class="show">
+   <div id="suite{{feedback.testgroupenum}}{{feedback.hack}}" class="show">
       <div class="card card-danger;" style="background-color: Tomato;">
          {% endif %}   
          {% for type,num,text,got,want in feedback.tests %}
          {%  if type=="failure" %}
          <div style="border:1px solid black;padding:1px;margin:1px;background-color:Tomato;border-radius:4px;">
             <button type="button" class="btn btn-block btn-danger"
-               aria-expanded="true" aria-controls="demo{{feedback.testgroupenum}}{{num}}"
-               data-toggle="collapse" data-target="#demo{{feedback.testgroupenum}}{{num}}">
+               aria-expanded="true" aria-controls="demo{{feedback.testgroupenum}}{{num}}{{feedback.hack}}"
+               data-toggle="collapse" data-target="#demo{{feedback.testgroupenum}}{{num}}{{feedback.hack}}">
             {{ text }} Failure
             </button>
-            <div id="demo{{feedback.testgroupenum}}{{num}}" class="show">
+            <div id="demo{{feedback.testgroupenum}}{{num}}{{feedback.hack}}" class="show">
                <div class="card card-danger;" style="background-color: Tomato;">
                   <br/> Attendu: 
                   <pre style="background: #DDD"><code>{{want}}</code></pre>
@@ -47,10 +47,10 @@
          {% if type=="success" %}
          <div style="border:1px white;padding:1px;margin:1px;background-color:LightGreen;border-radius:4px;">
             <button type="button" class="btn btn-block btn-success"
-               data-toggle="collapse" data-target="#demo{{feedback.testgroupenum}}{{num}}">
+               data-toggle="collapse" data-target="#demo{{feedback.testgroupenum}}{{num}}{{feedback.hack}}">
             {{text}} success
             </button>
-            <div id="demo{{feedback.testgroupenum}}{{num}}" class="collapse">
+            <div id="demo{{feedback.testgroupenum}}{{num}}{{feedback.hack}}" class="collapse">
                <div class="card card-success;" style="background-color: LightGreen;">
                    {% if want %}
                   <br/> Attendu: 
@@ -67,10 +67,10 @@
          {% if type=="error"  %}
          <div style="border:2px solid yellow;padding:1px;margin:1px;background-color:Tomato;border-radius:4px;">
             <button type="button" class="btn btn-block btn-danger"
-               data-toggle="collapse" data-target="#demo{{feedback.testgroupenum}}{{num}}">
+               data-toggle="collapse" data-target="#demo{{feedback.testgroupenum}}{{num}}{{feedback.hack}}">
             {{ text }} - Error 
             </button>
-            <div id="demo{{feedback.testgroupenum}}{{num}}" class="show">
+            <div id="demo{{feedback.testgroupenum}}{{num}}{{feedback.hack}}" class="show">
                <div class="card card-danger" style="background-color: Tomato;">
                   <br/> Attendu: 
                   <pre style="background: #DDD"><code>{{want}}</code></pre>
@@ -83,10 +83,10 @@
          {% if  type=="syntax" %}
          <div style="border:2px solid black;padding:1px;margin:1px;background-color:Tomato;border-radius:4px;">
             <button type="button" class="btn btn-block btn-danger"
-               data-toggle="collapse" data-target="#demo{{feedback.testgroupenum}}{{num}}">
+               data-toggle="collapse" data-target="#demo{{feedback.testgroupenum}}{{num}}{{feedback.hack}}">
             {{ text}} ///// {{ want }}
             </button>
-            <div id="demo{{feedback.testgroupenum}}{{num}}" class="show">
+            <div id="demo{{feedback.testgroupenum}}{{num}}{{feedback.hack}}" class="show">
                <div class="card card-danger" style="background-color: black; ">
                   <p style="color: yellow;">{{got}} </p>
                </div>

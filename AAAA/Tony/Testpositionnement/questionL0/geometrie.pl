@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Equation de droite
+
 question==
 Parmi ces droites, lesquelles ont une pente strictement positive ? 
 ==
@@ -21,3 +22,5 @@ la droite passant par $!(1,2)!$ et d'ordonnée à l'origine $!3!$
 ==
 
 scoring = CorrectItems
+
+reroll = False

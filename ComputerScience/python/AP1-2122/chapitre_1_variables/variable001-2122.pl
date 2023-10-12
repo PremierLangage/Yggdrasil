@@ -4,8 +4,7 @@
 title= Initialisation d'une variable (1).
 
 tag=variable|affectation 
-
-extends=/ComputerScience/python/template/pltest.pl
+extends=/ComputerScience/python/AP1-2122/template/pltest2023.pl
 @ /utils/sandboxio.py
 
 text==
@@ -32,7 +31,7 @@ True
 
 
 pltest1==
->>> pim == 2
+>>> pim != 2
 True
 ==
 

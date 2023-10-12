@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Nombres complexes
+
 question==
 Quels complexes ont leur partie réelle strictement positive?
 ==
@@ -21,3 +22,6 @@ $!\frac{1+i}{1-i}!$
 ==
 
 scoring = CorrectItems
+
+reroll = False
+#settings.allow_reroll = false 

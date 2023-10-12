@@ -39,7 +39,11 @@ corrects = {  # mots aléatoires
 } | {  # mots aléatoires séparés par des "_"
     mot_aleatoire(randint(4, 10)) +  "_" + mot_aleatoire(randint(4, 10)) 
     for _ in range(15)
+} | {
+# mot qui resemble a des mots clefs 
+    "abc","front","back","encore","boucle","Null","NONE","TRUE","top","up","bottom","stop"
 }
+
 incorrects = set(
     kwlist  # les mots-clés de Python
 ) | {  # mots aléatoires avec des chiffres au début

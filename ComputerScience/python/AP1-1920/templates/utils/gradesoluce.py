@@ -112,7 +112,7 @@ def unitTestWithOutput(testname, studentfilename, outputstr, input_str, feedback
 def removewhitespace(s):
     return re.sub(r'\s', '', s)  # elimination des espaces 
 
-def runsolucetests(tests, feedback, studentfilename=None, solucefilename=None, flags=0x1):
+def runsolucetests(tests, feedback, studentfilename=None, solucefilename=None, flags=True):
     """
     :param tests: a list of tests (name, input_str)
     :param: feedback: feedback object to pass to tester

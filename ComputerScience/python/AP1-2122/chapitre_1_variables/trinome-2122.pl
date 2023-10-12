@@ -4,6 +4,7 @@ title = Trinôme du second degré
 
 tag= expression|variable|polynome|trinome|int|float|type
 
+
 text==
 On suppose qu'il existe trois variables `a`, `b` et `c` de valeurs `int` ou `float`.
 Écrire un programme dont l'exécution crée une variable `nb_solutions` dont la valeur 

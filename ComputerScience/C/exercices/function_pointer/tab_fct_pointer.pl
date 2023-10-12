@@ -41,7 +41,6 @@ if "taboo" in globals():
     text+=str(taboo)
     text+='</div> <br />\n'
 
-
 text+=" {{ editor|component }} "
 ==
 

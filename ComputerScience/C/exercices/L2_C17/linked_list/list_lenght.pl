@@ -28,21 +28,15 @@ text==
 Ecrire une fonction `nb_cellules`
 qui renvoie le nombre d'éléments d'une liste chainée passée en parametre.  <br>
 <br>
+<code>
 
-On utilisera les types:  <br>
-<br>
-
-    typedef struct cel{  
-        int val;  
-        struct cel* suivant;  
-    } Cellule;  
-
-    typedef Cellule* Liste;
-
-
+    {{code_before}}
+</code>
 == 
 
 editor.code==
+
+
 ... nb_cellules(...) {
    /* votre code ici... */
 }
@@ -60,19 +54,25 @@ return compte;
 
 ==
 
-codebefore==
+code_before==
 
-#include <stdlib.h>
-#include <stdio.h>
 typedef struct cel{  
-int val;  
-struct cel* suivant;  
-}Cellule;  
-typedef Cellule* Liste  ;
+    int val;  
+    struct cel* suivant;  
+} Cellule;  
+
+typedef Cellule* Liste;
+
+
 
 ==
 
-codeafter==
+code_after==
+
+#include <stdlib.h>
+#include <stdio.h>
+
+typedef Cellule* Liste  ;
  Cellule* alloue_Cellule(int x){
 Liste tmp=NULL;
 

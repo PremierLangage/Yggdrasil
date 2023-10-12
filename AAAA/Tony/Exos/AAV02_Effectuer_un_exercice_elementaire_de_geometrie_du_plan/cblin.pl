@@ -16,4 +16,4 @@ a,b = randint(1,5),randint(1,5)
 sol = [a*p1 + b*p2 , a*q1 + b*q2]
 ==
  
-
+reroll = False

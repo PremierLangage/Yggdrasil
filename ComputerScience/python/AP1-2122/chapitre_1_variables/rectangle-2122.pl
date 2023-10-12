@@ -9,7 +9,7 @@ title = Rectangle dimensions variables
 tag= print|input|operation
 
 text==  
-Ecrire un programme qui lit les dimensions d'un rectangle au clavier puis calcule et affiche son périmètre et sa surface sous la forme :
+Ecrire un programme qui lit (avec input) les dimensions hauteur largeur d'un rectangle au clavier puis calcule et affiche son périmètre et sa surface sous la forme :
 
 Le périmètre est ?? et la surface est ?? !
 

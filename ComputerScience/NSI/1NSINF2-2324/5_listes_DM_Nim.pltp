@@ -1,0 +1,87 @@
+
+
+
+title= Jeu de Nim 
+
+introduction==
+
+# Jeux de Nim
+
+Ce devoir à la maison est à réaliser entièrement sur cette plateforme.
+
+L’objectif de ce devoir est d’implémenter un jeu de stratégie popularisé 
+par l'émission de télévision "[Fort Boyard](https://o.fortboyard.tv/voir_epreuve2.php?epreuve=batonnets&type=C#Description)".
+
+C'est un jeu à deux joueurs faisant partie d'une famille de jeux rassemblés sous le terme générique de “jeux de Nim”.
+
+
+## Régles du Jeu
+
+### Principe général
+
+Dans ce jeux, on dispose sur la table entre les deux adversaires une collection d’objets 
+identiques (jetons, cartes, allumettes…). Chaque joueur ou joueuse, à tour de rôle, retire 
+un certain nombre d’objets. La première personne qui retire le dernier objet a perdu.
+
+Les N objets sont disposés sur une même rangée. Chaque joueur peut, à son tour, 
+retirer entre un et k objets.
+
+### Exemple
+
+Voici un exemple de partie où l’on a choisi de jouer avec des allumettes, avec N = 21. 
+On fixe k = 3, ce qui signifie que chaque joueur peut retirer entre 1 et 3 allumettes :
+
+Situation initiale, la joueuse 1 commence, il y a 21 allumettes :
+![21 allumettes](https://html.brunache.ovh/static/21-allumettes-1.png)
+La joueuse 1 a pris 1 allumette, il en reste 21 − 1 = 20 :
+![20 allumettes](https://html.brunache.ovh/static/20-allumettes-2.png)
+Le joueur 2 a pris 2 allumettes, il en reste 20 − 2 = 18 ; 
+![18 allumettes](https://html.brunache.ovh/static/18-allumettes-1.png)
+La joueuse 1 a pris 2 allumettes, il en reste 18 − 2 = 16 ;
+![16 allumettes](https://html.brunache.ovh/static/16-allumettes-2.png)
+Le joueur 2 a pris 3 allumettes, il en reste 16 − 3 = 13 ;
+![13 allumettes](https://html.brunache.ovh/static/13-allumettes-1.png)
+La joueuse 1 a pris 1 allumette, il en reste 13 − 1 = 12 ;
+![12 allumettes](https://html.brunache.ovh/static/12-allumettes-2.png)
+Le joueur 2 a pris 1 allumette, il en reste 12 − 1 = 11 ;
+![11 allumettes](https://html.brunache.ovh/static/11-allumettes-1.png)
+La joueuse 1 a pris 3 allumettes, il en reste 11 − 3 = 8 ;
+![8 allumettes](https://html.brunache.ovh/static/8-allumettes-2.png)
+Le joueur 2 a pris 2 allumettes, il en reste 8 − 2 = 6 ;
+![6 allumettes](https://html.brunache.ovh/static/6-allumettes-1.png)
+La joueuse 1 a pris 2 allumettes, il en reste 6 − 2 = 4 ;
+![4 allumettes](https://html.brunache.ovh/static/4-allumettes-2.png)
+Le joueur 2 a pris 1 allumette, il en reste 4 − 1 = 3 ;
+![3 allumettes](https://html.brunache.ovh/static/3%20alumettes.png)
+La joueuse 1 a pris 2 allumettes, il en reste 3 − 2 = 1.
+
+Dans cet exemple, le joueur 2 est obligé de prendre la dernière allumette, il a donc perdu.
+
+## Travail demandé
+
+Réaliser toutes les étapes.
+
+Si vous arrivez à la fin, recopiez toutes les fonctions dans un même fichier dans visual studio code, 
+et lancez le jeu avec la commande `jeu_de_nim(21,3)` par exemple.
+
+==
+
+# Fonctions de base 
+@ /ComputerScience/NSI/Banque_Exercices/Nim/1_init_plateau.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/2_coup_possible.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/3_jouer_coup.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/4_victoire.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/5_entree_joueurs.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/6_affiche_plateau.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/7_entree_coup.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/8_tour.pl
+@ /ComputerScience/NSI/Banque_Exercices/Nim/9_jeu_de_nim.pl
+
+
+reserve==
+
+# Programme 
+
+@ programme.pl 
+==
+

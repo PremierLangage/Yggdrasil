@@ -1,6 +1,8 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+
+title = Limites
+
 question==
 Parmi ces limites, lesquelles valent $!+\infty!$? 
 ==
@@ -21,6 +23,8 @@ $!\lim\limits_{x\rightarrow +\infty} \frac{x^2+2}{2x-x^2}!$
 ==
 
 scoring = CorrectItems
+
+reroll = False
 
  
  

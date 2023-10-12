@@ -1,19 +1,45 @@
 
 #author=Marc zipstein
-title=Les arbres binaires en C
+title=Les arbres binaires de Recherche C
 
 introduction==
 
-Des exercices sur les arbres binaires de recherche, sans doublons;
+Des exercices de programmation des arbres binaires de recherche, sans doublons en langage C.
+
+
+Le type utilisé est :
+
+
+  typedef struct node{  
+    int value;  
+    struct node * left;  
+    struct node * right;  
+  } Node, *Tree;  
+
+Bon travail.
+
+
+
+Fonctionnement des tests :
+
+l'exercice a une solution (une implémentation de la fonction demandé) et compare un programme utilisant votre code  et un utilisant la solution.
+
+Ce n'est pas toujours le même programme qui fait le test d'un exercice à l'autre. 
+
+
+
+
 ==
 
 @ /ComputerScience/Algo/Tree/Arbre_de_recherche/appartient.pl
 
 @ /ComputerScience/Algo/Tree/Arbre_de_recherche/ajout_abr.pl
 
+@ /ComputerScience/Algo/Tree/Arbre_de_recherche/maximum.pl
+
 @ /ComputerScience/Algo/Tree/Arbre_de_recherche/minimum_abr.pl
 
-@ /ComputerScience/Algo/Tree/Arbre_de_recherche/maximum.pl
+
 
 @ /ComputerScience/Algo/Tree/Arbre_de_recherche/extraction.pl
 

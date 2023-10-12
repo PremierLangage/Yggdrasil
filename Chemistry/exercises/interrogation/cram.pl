@@ -6,7 +6,7 @@ path=data.csv
 
 title=Représentation de CRAM 
 text==
-Donnez les produits de la réaction suivante : <i>{{reaction|safe}}</i>
+Donnez les produits de la réaction du <i>{{nom|safe}}</i> dans les conditions suivantes : <i>{{reaction|safe}}</i>
 ==
 evaluator==
 answer = eval(response['answer'])

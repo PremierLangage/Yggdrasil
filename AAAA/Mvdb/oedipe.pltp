@@ -1,0 +1,49 @@
+title = Découverte Platon et Logique
+
+introduction==
+
+http://gerard.cohenzardi.pagesperso-orange.fr/page16.html
+
+# Règles du jeu
+
+On s'intéresse à une espèce extraterrestre qui fonctionne selon les règles suivantes :
+
+- Les extraterrestres sont de deux sexes possibles : homme ou femme.
+- On ne peut pas distinguer les hommes des femmes.
+- Tous les individus ont un père et une mère.
+
+Les extraterrestes sont de deux types possibles : *francs* ou *vils*.
+
+- Les francs disent toujours la vérité : toutes leurs affirmations sont vraies.
+
+    Par exemple, si XG-32 est franc et dit "Toto est un chien bleu", alors on peut déduire que Toto est un chien et que Toto est bleu.
+
+- Les vils mentent toujours : toutes leurs affirmations sont fausses.
+
+    Par exemple, si XG-32 est vil et dit "Toto est un chien bleu", on peut déduire que Toto n'est pas un chien bleu. 
+    C'est-à-dire que soit Toto n'est pas un chien, soit Toto n'est pas bleu, soit Toto n'est ni un chien ni bleu.
+
+- Les enfants de parents francs sont francs et les enfants de parents vils sont vils.
+
+- En cas de couples mixtes, les enfants héritent du caractère franc ou vil de leur parent **de sexe opposé**.
+
+    Par exemple, un garçon issu d'une mère franche et d'un père vil sera franc, c'est à dire du même type que sa mère.
+
+Finalement, les enfants de couples mixtes sont dits *métis*.
+
+# Objectif
+
+Le but de l'exercice est :
+
+1. de vous habituer à manipuler Platon.
+2. de vous faire refléchir à des petites questions de logique.
+
+Cliquez sur **Commencer** lorsque vous êtes sûr d'avoir bien compris les règles du jeu. 
+
+Chacune des pages suivantes vous décrit un petit scénario impliquant un ou plusieurs personnages.
+A chaque fois, le but est de déterminer les caractéristiques (sexe, type, parents, etc.) des personnages que l'on peut logiquement déduire, en cochant **toutes** les affirmations vraies.
+
+==
+
+@ Nathaly.pl
+

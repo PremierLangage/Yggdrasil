@@ -10,6 +10,14 @@ text==
 
 Initialisez les variables jour, mois, annee avec la date du jour.
 
+Utiliser un seul caractère = dans votre code en utilisant le principe de l'affectation parallèle.
+
+
+Sur google Cherchez "python3 affectation parallèle". 
+Attention a=b=3 (multiple) et a,b = 2,4 (parallèle) ne donne pas les mêmes résultats.
+
+
+
 ==
 
 @ /builder/before.py [builder.py]
@@ -17,7 +25,7 @@ Initialisez les variables jour, mois, annee avec la date du jour.
 before==
 import datetime
 d=datetime.datetime.now()
-pltest="""
+pltest0="""
 >>> jour #  le jour 
 %d
 >>> mois # le mois
@@ -28,6 +36,18 @@ pltest="""
 """ % (d.day, d.month, d.year)
 ==
 
+testname1="Affectation multiple"
+pltest1==
+>>> with open("student.py") as f:
+...   s = f.read() #
+>>> s.count("=") # Un seul égal dans la solution 
+1
+==
+
+
+
+
+
 code==
 
 ==
@@ -35,7 +55,9 @@ code==
 extends=/ComputerScience/python/template/pltest.pl
 
 
-
+editor.code==
+# Ceci est un commentaire python 
+==
 
 
 

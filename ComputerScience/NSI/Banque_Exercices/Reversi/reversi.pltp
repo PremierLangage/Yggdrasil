@@ -1,0 +1,96 @@
+
+
+
+title= Reversi
+
+introduction==
+
+# Reversi
+
+Ce devoir à la maison est à réaliser entièrement sur cette plateforme.
+
+L’objectif de ce devoir est d’implémenter un jeu de stratégie [Reversi](https://fr.wikipedia.org/wiki/Othello_(jeu)).
+
+
+## Régles du Jeu
+
+### Principe général
+
+Il se joue sur un tablier unicolore de n cases sur n (ou n est un nombre pair), appelé othellier. 
+Les joueurs disposent de n² pions bicolores, noirs d'un côté et blancs de l'autre. En début de partie, 
+quatre pions sont déjà placés au centre de l'othellier : 
+
+![image](https://upload.wikimedia.org/wikipedia/commons/2/20/Othello-Standard-Board.jpg)
+ 
+Chaque joueur, noir et blanc, pose l'un après l'autre un pion de sa couleur sur l'othellier selon des 
+règles précises. Le jeu s'arrête quand un joueur ne peut plus poser de pion. On compte alors le nombre de pions. 
+Le joueur ayant le plus grand nombre de pions de sa couleur sur l'othellier a gagné.
+
+### Exemple
+
+Blanc commence toujours la partie. Puis les joueurs jouent à tour de rôle, chacun étant tenu de capturer des pions adverses 
+lors de son mouvement. Si un joueur ne peut pas capturer de pion(s) adverse(s), la partie s'arrête. Le gagnant en fin de partie 
+est celui qui possède le plus de pions.
+
+La capture de pions survient lorsqu'un joueur place un de ses pions à l'extrémité d'un alignement de pions adverses 
+contigus et dont l'autre extrémité est déjà occupée par un de ses propres pions. Les alignements considérés peuvent 
+être une colonne, une ligne, ou une diagonale. Si le pion nouvellement placé vient fermer plusieurs alignements, il 
+capture tous les pions adverses des lignes ainsi fermées. La capture se traduit par le retournement des pions capturés.
+ Ces retournements n'entraînent pas d'effet de capture en cascade : seul le pion nouvellement posé est pris en compte.
+
+
+## Travail demandé
+
+La structure de données est la suivante. Le jeu est intégralement modélisé par un dictionnaire 
+
+    jeu = {
+        "plateau": [
+            [None, None, None, 'joueur1', 'joueur2', None, None, None],
+            [None, None, None, 'joueur1', 'joueur2', 'joueur2', None, None],
+            ...
+            ...
+            [None, None, None, None, None, None, None, None]
+            ],
+        "joueur actif": "joueur1",
+        "joueur1": {
+                "nom": "joueur1",
+                "couleur": "white",
+                "score": 2 
+            },
+        "joueur2": {
+                "nom": "joueur2",
+                "couleur": "red",
+                "score": 2 
+            },
+        "parametres":{
+            'framerate': 10,
+            'plateau' : 8,
+            'taille_fenetre' : 640
+            }
+        }
+
+Réaliser toutes les étapes.
+
+Si vous arrivez à la fin, recopiez toutes les fonctions dans le fichier donné dans moodle, 
+et lancez le jeu.
+
+==
+
+# Fonctions de base 
+@ 1_initialise_jeu.pl
+@ 2_autre_joueur.pl
+@ 3_coup_possible_direction.pl
+@ 4_coup_possible.pl
+@ 5_coups_possibles.pl
+@ 6_jouer_coup.pl
+@ 7_fin_de_jeu.pl
+
+
+
+reserve==
+
+# Programme 
+
+@ programme.pl 
+==
+

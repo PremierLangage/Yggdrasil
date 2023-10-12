@@ -7,12 +7,17 @@ tag=function # N'oubliez pas de remplir ce champs svp
 
 text==
 Ecrire un programme qui écrit le successeur de l'entier envoyé en entrée
+1
+2\n
+3
 ==
 
 languages==
 C
 python
 ==
+
+showWanted = False
 
 testcases==
 [('1', '2', 'Test 1'),
@@ -28,8 +33,8 @@ pltestcases==
 
 before==
 
-pltescases += "44|45| Un autre test "
+#pltestcases += "44|45| Un autre test "
 # ou
-testcase.append( ('66', '67', 'Autre test'))
+#testcases.append( ('66', '67', 'Autre test'))
 ==
 

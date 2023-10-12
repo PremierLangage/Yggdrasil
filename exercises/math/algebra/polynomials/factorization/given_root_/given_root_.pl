@@ -5,14 +5,17 @@
 extends = /model/math/poly.pl
 
 poly_form = "factorized"
-
+poly_var = "X"
 param.degree = 2
 param.roots = "int"
 param.givenroot = "int"
 
+title = Factorisation (racine donnée)
+
+
 before ==
 from sympy import factor, content
-var('x')
+x = Symbol('X')
 
 q, r, s = sample([1, 2, 3, 4, 5], 3)
 q=choice([-1,1])*q
@@ -44,13 +47,13 @@ expr = P.expand()
 
 question ==
 Factoriser le polynôme
-$$P(x)= {{ expr|latex }}$$
-en remarquant que $! P( {{ x1 |latex }} )=0 !$.
+$$P(X)= {{ expr|latex }}$$
+en remarquant que $! {{ x1 |latex }} !$ est une racine du polynôme.
 ==
 
 
 solution ==
-Une factorisation de cette expression est $! {{ sol|latex }} !$.
+Une factorisation de ce polynôme est $! {{ sol|latex }} !$.
 ==
 
 

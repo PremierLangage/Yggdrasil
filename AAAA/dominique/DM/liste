@@ -1,0 +1,26 @@
+
+
+# Fonciton outils
+check_t()
+read_t()
+
+# Version avec H,L,t 
+
+hasmine_t(i,j) Arthur
+nbmines_t(i,j)  DR 
+print_t()  DR
+
+victory_t() // le nombre de drapeau == nombre de mine + bien placés 
+P_t(i,j)   click gauche   Julien 
+Drapeau_t(i,j)   click droit mise d'un drapeau Julien 
+
+# Version avec Game 
+
+
+
+
+# Entrées sorties
+
+read_t() lecture d'un fichier
+save_t ()  
+verif_t()  // récupération d'un fichier de jeu vérification qu'il est correct (légal)

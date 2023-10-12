@@ -1,0 +1,17 @@
+règle : Verbe être "est/es" ou la conjonction "et" 
+
+description: L'écriture phonétique fait écrire indifférement est/et/es alors que cela impacte le sens. 
+La conjugaison du verbe être à l'indicatif nous donne "tu es" pour la deuxième personne et "il est" pour la troisième. 
+La conjonction de coordination "et" relie deux noms, deux phrases, deux verbes, deux adjectifs ou adverbes. 
+C'est l'homogénéité grammatical ;), le connecteur "et" doit liés des éléments de langage de même type.
+
+
+mauvais : Il et vert de peur.
+bon : Il est vert de peur.
+explication : C'est le verbe être à indicatif. La phrase nécessite un verbe.
+
+mauvais : Il est elle sont heureux.
+bon :  Il et elle sont heureux.
+explication : Conjonction de coordination entre deux pronoms. Paul et Marie sont heureux.
+
+

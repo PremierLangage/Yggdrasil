@@ -1,0 +1,4230 @@
+
+** Une question avec une balise html <a>lien</a>.
+Et ici des maths $%b<a%$ et $%a<b<c>b>a%$, ici (a<b<c) la une formule :
+\[a<b<i>a'\]
+ 
++ $%a<b%$ <b>en gras</b>
+- 1000
+- 2048
+- $%\int 10^{10} \%%$
+
+
+
+** Combien font $%2^{10}%$ ?
+ 
++ 1024
+- 1000
+- 2048
+- $%\int 10^{10}%$
+
+
+
+** Sachant que $%2+2=2\times 2%$, 
+est-ce que $%3+3 = 3\times 3%$ ?
+Répondez par vrai ou faux !
+ 
++ Faux.
+- Vrai.
+
+
+
+** Test de question avec titre. Et une fonction $%f : \mathbb{R} \to \mathbb{C}%$.
+ 
++ Coucou 2.
+- Coucou 1.
+
+
+
+** Test de question avec titre et je ne sais pas. Et avec tags. Variante de la question précédente.
+ 
++ Coucou $%x^{B}%$.
+- Coucou $%x^{A}%$.
+
+
+
+** Test de question avec explications et classification, type de questionnaire. [Ceci n'est pas un titre]
+Ceci est une equation :
+\[\sum_{i=1}^n \frac{i}{n}=\int\]
+Une image (toujours en fin de d'énoncé) : 
+ 
++ Coucou $%\frac{x}{y}%$.
+- Pas coucou $%\frac{y}{x}%$.
+
+
+
+** Combien font $%2^{10}%$ ?
+ 
++ 1024
+- 1000
+- 2048
+- $%\int 10^{10} \%%$
+
+
+
+** Combien font $%2^{10}%$ ?
+ 
++ 1024
+- 1000
+- 2048
+- $%\int 10^{10}%$
+
+
+
+** Sachant que $%2+2=2\times 2%$, 
+est-ce que $%3+3 = 3\times 3%$ ?
+Répondez par vrai ou faux !
+ 
++ Faux.
+- Vrai.
+
+
+
+** Test de question avec titre. Et une fonction $%f : \mathbb{R} \to \mathbb{C}%$.
+ 
++ Coucou 2.
+- Coucou 1.
+
+
+
+** Test de question avec titre et je ne sais pas. Et avec tags. Variante de la question précédente.
+ 
++ Coucou $%x^{B}%$.
+- Coucou $%x^{A}%$.
+
+
+
+** Test de question avec explications et classification, type de questionnaire. [Ceci n'est pas un titre]
+Ceci est une equation :
+\[\sum_{i=1}^n \frac{i}{n}=\int\]
+Une image (toujours en fin de d'énoncé) : 
+ 
++ Coucou $%\frac{x}{y}%$.
+- Pas coucou $%\frac{y}{x}%$.
+
+
+
+** Quels arguments sont valides pour justifier que la fonction $%x \mapsto \sin(x)%$ n'est pas une fonction croissante sur $%\mathbb{R}%$ ?
+ 
++ $%\sin(\frac{3\pi}{4}) > \sin(\pi)%$ et pourtant $%\frac{3\pi}{4} < \pi%$.
+- $%\sin(\pi) = \sin(0)%$ et pourtant $%\pi \neq 0%$.
+- $%\sin(\frac\pi2) > \sin(0)%$ et pourtant $%0 < \frac\pi2%$.
+- On a $%|\sin x| \leqslant |x|%$ pour tout $%x\in\mathbb{R}%$.
+
+
+
+** Soient $%f,g%$ deux fonctions définies sur $%\mathbb{R}%$. Quelles sont les assertions vraies ?
+ 
++ $%f-2g%$ est une fonction définie sur $%\mathbb{R}%$.
++ $%f^2 \times g%$ est une fonction définie sur $%\mathbb{R}%$.
+- $%\frac{f}{g^2}%$ est une fonction définie sur $%\mathbb{R}%$.
+- $%\sqrt{f+g}%$ est une fonction définie sur $%\mathbb{R}%$.
+
+
+
+** Quelles sont les assertions vraies concernant le domaine de définition des fonctions suivantes ? (Rappel : le domaine de définition de $%f%$ est le plus grand ensemble $%D_f \subset \mathbb{R}%$ sur lequel $%f%$ est définie.)
+ 
++ Le domaine de définition de $%\exp(\frac{1}{x^2+1})%$ est $%\mathbb{R}%$.
+- Le domaine de définition de $%\sqrt{x^2-1}%$ est $%[1,+\infty[%$.
+- Le domaine de définition de $%\frac{1}{\sqrt{(x-1)(x-3)}}%$ est $%]1,3[%$.
+- Le domaine de définition de $%\ln(x^3-8)%$ est $%[2,+\infty[%$.
+
+
+
+** Quels arguments sont valables pour montrer que $%f : \mathbb{R} \to \mathbb{R}%$ est décroissante ?
+ 
++ On a $%x \leqslant y%$ qui implique $%f(x) \geqslant f(y)%$.
++ On a $%x \geqslant y%$ qui implique $%f(x) \leqslant f(y)%$.
+- On a $%x \leqslant y%$ qui implique $%f(x) \leqslant f(y)%$.
+- On a $%x \geqslant y%$ qui implique $%f(x) \geqslant f(y)%$.
+
+
+
+** Soit $%f : \mathbb{R} \to \mathbb{R}%$. Quelles sont les assertions vraies ?
+ 
++ $%\exists  M > 0 \quad \forall x \in \mathbb{R} \quad f(x) \leqslant M%$  implique $%f%$ majorée.
+- $%\forall  M > 0 \quad \exists x \in \mathbb{R} \quad f(x) \leqslant M%$  implique $%f%$ majorée.
+- $%\forall  x \in \mathbb{R} \quad \exists  M > 0 \quad f(x) \geqslant M%$  implique $%f%$ majorée.
+- $%\exists  M > 0 \quad \exists x \in \mathbb{R} \quad f(x) \geqslant M%$  implique $%f%$ majorée.
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ Une fonction périodique et croissante est constante.
++ Si $%f : \mathbb{R} \to ]0,+\infty[%$ est croissante, alors $%1/f%$ est décroissante.
+- La fonction $%x \mapsto \frac{1}{x}%$ est décroissante car sa dérivée $%x \mapsto -\frac{1}{x^2}%$ est partout négative.
+- Si $%f%$ et $%g%$ sont croissantes, alors $%f-g%$ est croissante.
+
+
+
+** Soit $%f(x) = \ln(x-1)%$ et $%g(x) = \sqrt{x+1}%$. 
+Quelles sont les assertions vraies concernant les domaines de définition ? (Rappel : le domaine de définition de $%f%$ est le plus grand ensemble $%D_f \subset \mathbb{R}%$ sur lequel $%f%$ est définie.)
+ 
++ $%D_f \cup D_g = [-1,+\infty[%$.
++ Pour la fonction $%f \times g%$, $%D_{f\times g} = ]1,+\infty[%$.
+- Pour la composition $%f \circ g%$, $%D_{f\circ g} = [-1,+\infty[%$.
+- Pour la composition $%g \circ f%$, $%D_{g\circ f} = ]1,+\infty[%$.
+
+
+
+** Soit $%f : \mathbb{R} \to \mathbb{R}%$ une fonction à valeurs strictement positives. Quels arguments sont valables pour montrer que $%f%$ est croissante ?
+ 
++ Pour tout $%x\in\mathbb{R}%$, pour tout $%h>0%$, on a $%\frac{f(x+h)}{f(x)} \geqslant 1%$.
+- Pour tout $%x\in\mathbb{R}%$, on a $%f(x+1) \geqslant f(x)%$.
+- Pour tout $%x\in\mathbb{R}%$, on a $%\frac{f(x+1)}{f(x)} \geqslant 1%$.
+- Pour tout $%x\in\mathbb{R}%$, il existe $%h>0%$ tel que $%f(x+h) \geqslant f(x)%$.
+
+
+
+** Soient $%f,g : \mathbb{R} \to \mathbb{R}%$. Quelles sont les assertions vraies ?
+ 
++ Si $%f%$ bornée et $%g%$ majorée alors $%f-g%$ est minorée.
+- Si $%f%$ est bornée et $%g%$ majorée alors $%f-g%$ est bornée.
+- Si $%f%$ et $%g%$ sont minorées, alors $%f \times g%$ est minorée.
+- Si $%f%$ et $%g%$ sont minorées, alors $%|f \times g|%$ est bornée.
+
+
+
+** Soient $%f : ]-\infty,0[ \to ]0,1[%$ et $%g : ]-2,2[ \to ]0,+\infty[%$.
+Quelles sont les assertions vraies ?
+ 
++ Le domaine de définition de $%x \mapsto \frac{g(x+1)}{f(x)}%$ est $%]-3,0[%$.
++ Le domaine de définition de $%x \mapsto \frac{f(x) \times g(x)}{f(x)+g(x)}%$ est $%]-2,0[%$.
+- Le domaine de définition de $%x \mapsto g\big(f(2x)\big)%$ est $%]-1,1[%$.
+- Le domaine de définition de $%x \mapsto g\big( \ln (f(x)) \big)%$ est $%]0,+\infty[%$.
+
+
+
+** Quelles fonctions sont continues en $%x=0%$ ?
+ 
++ $%x \mapsto |x|%$ (valeur absolue).
++ $%x \mapsto \sqrt{x}%$ (racine carrée).
+- $%x \mapsto E(x)%$ (partie entière).
+- $%x \mapsto \frac 1x%$ (inverse).
+
+
+
+** Parmi les fonctions suivantes, lesquelles sont continues sur $%\mathbb{R}%$ ?
+ 
++ $%x \mapsto \cos(x)-\sin(x)%$
++ $%x \mapsto \frac{1}{\exp(x)}%$
++ $%x \mapsto \ln(\exp(3x))%$
+- $%x \tan(x)%$
+
+
+
+** Quelles sont les propriétés vraies ?
+ 
++ La somme de deux fonctions continues est continue.
++ Le produit de deux fonctions continues est continue.
++ L'inverse d'une fonction continue ne s'annulant pas est continue.
+- Le quotient de deux fonctions continues est continue.
+
+
+
+** Parmi les propriétés suivantes, quelles sont celles qui implique que $%f%$ est continue en $%x_ 0%$ ?
+ 
++ $%\lim_{x\to x_0} f(x) = f(x_0)%$
++ $%\forall arepsilon >0 \quad \exists \delta > 0 \qquad
+|x-x_0| \leqslant \delta \implies |f(x)-f(x_0)| \leqslant arepsilon%$
++ $%\big| f(x) - f(x_0) \big| \to 0%$ lorsque $%x \to x_0%$
+- $%\exists \delta > 0 \quad \forall arepsilon >0 \qquad
+|x-x_0| < \delta \implies |f(x)-f(x_0)| < arepsilon%$
+
+
+
+** Parmi les fonctions suivantes, lesquelles sont continues sur $%\mathbb{R}%$ ?
+ 
++ $%x \mapsto P(x)%$, où $%P%$ est un polynôme.
++ $%x \mapsto |f(x)|%$, où $%f%$ est une fonction continue.
++ $%x \mapsto \frac{1}{f(x)}%$, où $%f%$ est une fonction continue ne s'annulant pas.
+- La fonction $%f%$ définie par $%f(x) = 0%$, si $%x\in \mathbb{Q}%$ et par $%f(x)=1%$ sinon.
+
+
+
+** En posant $%f(0)=0%$, quelles fonctions deviennent continues sur $%\mathbb{R}%$ ?
+ 
++ $%f(x) = x \ln( |x|)%$
+- $%f(x) = \frac 1x%$
+- $%f(x) = \frac{\sin(x)}{x}%$
+- $%f(x) = e^{1/x}%$
+
+
+
+** Parmi les propriétés suivantes, quelles sont celles qui impliquent que $%f%$ est continue en $%x_ 0%$ ?
+ 
++ $%f(x)^3 \to f(x_0)^3%$ (lorsque $%x \to x_0%$)
++ $%\exp(f(x)) \to \exp(f(x_0))%$ (lorsque $%x \to x_0%$)
+- $%f(x)^2 \to f(x_0)^2%$ (lorsque $%x \to x_0%$)
+- $%E(f(x)) \to E(f(x_0))%$ (lorsque $%x \to x_0%$)
+
+
+
+** Soit $%f : \mathbb{R} \to \mathbb{R}%$ une fonction et $%(u_n)_{n\in\mathbb{N}}%$ une suite. Quelles sont les assertions vraies ?
+ 
++ Si $%u_n \to \ell%$ et $%f%$ continue en $%\ell%$, alors $%f(u_n)%$ admet une limite.
++ Si $%u_n \to \ell%$ et $%f(u_n)%$ n'a pas de limite, alors $%f%$ n'est pas continue en $%\ell%$.
++ Si pour toute suite qui vérifie $%u_n \to \ell%$, on a $%f(u_n) \to f(\ell)%$, alors $%f%$ est continue en $%\ell%$.
+- Si $%f(u_n) \to f(\ell)%$ et $%f%$ est continue en $%\ell%$, alors $%u_n \to \ell%$.
+
+
+
+** Quelles assertions peut-on déduire du théorème des valeurs intermédiaires ?
+ 
++ $%\sin(x) - x^2 + 1%$ s'annule sur $%[0,\pi]%$.
++ $%x^5-37%$ s'annule sur $%[2,3]%$.
++ $%\ln(x+1)-x+1%$ s'annule sur $%[0,+\infty[%$.
+- $%e^x+e^{-x}%$ s'annule sur $%[-1,1]%$.
+
+
+
+** Soit $%f(x)=x^2-7%$. On applique la méthode de dichotomie sur l'intervalle $%[2 ; 3]%$. 
+On calcule $%f(2,125)=-1,9375%$ ; $%f(2,5) = -0,75%$ ; $%f(2,625) = -0,109375%$ ; $%f(2,75) = 0,5625%$. Quelles sont les assertions vraies ?
+ 
++ $%f%$ s'annule sur $%[2,5 ; 3]%$.
++ $%2,6 \leqslant \sqrt{7} \leqslant 2,8%$
+- $%f%$ s'annule sur $%[2 ; 2,5]%$ et sur $%[2,5 ; 3]%$.
+- $%f%$ s'annule sur $%[2,75 ; 3]%$.
+
+
+
+** Soit $%f : [a,b] \to \mathbb{R}%$ une fonction continue (avec $%a < b%$). Quelles assertions sont une conséquence du théorème des valeurs intermédiaires ?
+ 
++ Si $%f(a) < k < f(b)%$ alors $%f(x)-k%$ s'annule sur $%[a,b]%$.
+- Si $%f(a) \cdot f(b) > 0%$ alors $%f%$ s'annule sur $%[a,b]%$.
+- Pour $%I \subset \mathbb{R}%$, si $%f(I)%$ est un intervalle alors $%I%$ est un intervalle.
+- Si $%c \in ]a,b[%$ alors $%f(c) \in ]f(a),f(b)[%$.
+
+
+
+** Soit $%f : [0,1] \to \mathbb{R}%$ une fonction continue avec $%f(0)<0%$ et $%f(1)>0%$.
+Par dichotomie on construit deux suites $%(a_n)%$ et $%(b_n)%$, avec $%a_0 = 0%$ et $%b_0 = 1%$. Quelles sont les assertions vraies ?
+ 
++ $%f%$ s'annule sur $%[a_n,b_n]%$ (quel que soit $%n\ge0%$).
+- Si $%f(\frac12)>0%$ alors $%a_1 = \frac12%$ et $%b_1 = \frac12%$.
+- $%(a_n)%$ et $%(b_n)%$ sont des suites croissantes.
+- $%a_n \to 0%$ ou $%b_n \to 0%$.
+
+
+
+** Soit $%f : [a,b] \to \mathbb{R}%$ une fonction continue (avec $%a < b%$). Quelles assertions sont vraies ?
+ 
++ Si $%f(a) \cdot f(b) < 0%$ et $%f%$ strictement décroissante, alors $%f%$ s'annule une unique fois sur $%[a,b]%$.
+- Si $%f(a) \cdot f(b) < 0%$ et $%f%$ croissante alors $%f%$ s'annule une unique fois sur $%[a,b]%$.
+- Si $%f(a) \cdot f(b) < 0%$ et $%f%$ n'est pas strictement monotone alors $%f%$ s'annule au moins deux fois sur $%[a,b]%$.
+- Si $%f(a) \cdot f(b) < 0%$ alors $%f%$ s'annule un nombre fini de fois sur $%[a,b]%$.
+
+
+
+** Soit $%f : [0,1] \to \mathbb{R}%$ une fonction continue avec $%f(0)>0%$ et $%f(1)<0%$.
+Par dichotomie on construit deux suites $%(a_n)%$ et $%(b_n)%$, avec $%a_0 = 0%$ et $%b_0 = 1%$. Quelles sont les assertions vraies ?
+ 
++ $%(a_n)%$ et $%(b_n)%$ sont des suites adjacentes.
++ Si $%f(a_n)<0%$ et $%f\big(\frac{a_n+b_n}{2}\big) >0%$ alors $%a_{n+1} =\frac{a_n+b_n}{2}%$ et $%b_{n+1}=b_n%$.
++ Pour $%n=10%$, $%a_{10}%$ approche une solution de $%(f=0)%$ à moins de $%\frac{1}{1000}%$.
+- $%(f=0)%$ admet une unique solution sur $%[a_n,b_n]%$.
+
+
+
+** Soit $%f : [a,b] \to \mathbb{R}%$ continue. Quelles sont les assertions vraies ?
+ 
++ $%f%$ est bornée sur $%]a,b[%$.
+- $%f%$ admet un maximum sur $%]a,b[%$.
+- $%f%$ admet un maximum en $%a%$ ou en $%b%$.
+- $%f%$ admet un maximum ou un minimum sur $%[a,b]%$ mais pas les deux.
+
+
+
+** Soit $%f : \mathbb{R} \to \mathbb{R}%$ une fonction continue telle que : elle est strictement croissante sur $%]-\infty,0]%$ ; strictement décroissante sur $%[0,1]%$ ; strictement croissante sur $%[1,+\infty[%$. En plus $%\lim_{x\to-\infty} f = - \infty%$, $%f(0)=2%$, $%f(1) = 1%$ et $%\lim_{x\to+\infty} f = 3%$. Quelles sont les assertions vraies ?
+ 
++ La restriction $%f_| : ]-\infty,0] \to ]-\infty,2]%$ est bijective.
++ La restriction $%f_| : [0,1] \to [1,2]%$ est bijective.
+- La restriction $%f_| : [1,+\infty[ \to [1,+\infty[%$ est bijective.
+- La restriction $%f_| : ]0,+\infty] \to [1,3[%$ est bijective.
+
+
+
+** Soit $%f(x) = x \sin(\pi x) - \ln(x) - 1%$ définie sur $%]0,1]%$.
+Quelles sont les assertions vraies ?
+ 
++ $%f%$ est minorée.
++ Il existe $%c \in ]0,1]%$ tel que $%f(c)=0%$.
+- $%f%$ est bornée et atteint ses bornes.
+- $%f%$ est majorée.
+
+
+
+** Soit $%f : [a,b] \to [c,d]%$ continue avec $%a < b%$, $%c < d%$, $%f(a)=c%$, $%f(b)=d%$. Quelles propriétés impliquent $%f%$ bijective ?
+ 
++ $%f%$ injective.
++ $%f%$ strictement croissante.
+- $%f%$ surjective.
+- $%f%$ croissante.
+
+
+
+** Soit $%I%$ un intervalle de $%\mathbb{R}%$ et soit $%f : I \to \mathbb{R}%$ une fonction continue. Soit $%J=f(I)%$. Quelles sont les assertions vraies ?
+ 
++ $%J%$ est un intervalle.
++ Si $%I%$ est fermé borné, alors $%J%$ est fermé borné.
+- Si $%I%$ est majoré, alors $%J%$ est majoré.
+- Si $%I%$ est borné, alors $%J%$ est borné.
+
+
+
+** Soit $%f : I \to J%$ une fonction continue, où $%I%$ et $%J%$ sont des intervalles de $%\mathbb{R}%$. Quelles sont les assertions vraies ?
+ 
++ Si $%f%$ surjective et strictement croissante, alors $%f%$ est bijective.
++ Si $%f%$ bijective, alors sa bijection réciproque $%f^{-1}%$ est continue.
++ Si $%f%$ bijective et $%J%$ est un intervalle fermé et borné, alors $%I%$ est un intervalle fermé et borné.
+- Si $%f%$ bijective et $%I=\mathbb{R}%$, alors $%J%$ n'est pas un intervalle borné.
+
+
+
+** Soit $%\displaystyle f(x)=\frac{2}{x}%$ et $%g(x)=2\sqrt{x}%$. On note $%\mathscr{C}_f%$ (resp. $%\mathscr{C}_g%$) la courbe représentative de $%f%$ (resp. $%g%$). Quelles sont les bonnes réponses ?
+ 
++ Une équation de la tangente à $%\mathscr{C}_f%$ au point $%(1,2)%$ est $%y=-2x+4%$.
++ Une équation de la tangente à $%\mathscr{C}_g%$ au point $%(1,2)%$ est $%y=x+1%$.
+- Une équation de la tangente à $%\mathscr{C}_f%$ au point $%(1,2)%$ est $%y=-2x+2%$.
+- Une équation de la tangente à $%\mathscr{C}_g%$ au point $%(1,2)%$ est $%y=x+2%$.
+
+
+
+** Etant donné que $%\displaystyle f(3)=1%$ et $%f'(3)=5%$. Une équation de la tangente à $%\mathscr{C}_f%$ au point $%(3,1)%$ est :
+ 
++ $%y=5(x-3)+1=5x-14%$
+- $%y=1(x-3)+5=x+2%$
+- $%y=1(x-3)-5=x-8%$
+- $%y=5(x-3)-1=5x-16%$
+
+
+
+** Soit $%\displaystyle f(x)=|x-1|%$. On note $%f'_d(a)%$ (resp. $%f'_g(a)%$) pour désigner la dérivée à droite (resp. à gauche) en $%a%$. Quelles sont les bonnes réponses ?
+ 
++ $%f%$ est dérivable en $%0%$ et $%f'(0)=-1%$.
++ $%f%$ n'est pas dérivable en $%1%$ car $%f'_d(1)=1%$ et $%f'_g(1)=-1%$.
+- $%f'_d(1)=1%$ et $%f'_g(1)=1%$
+- $%f%$ est dérivable en $%1%$ et $%f'(1)=1%$.
+
+
+
+** Soit $%\displaystyle f(x)=\sqrt[3]{(x-2)^2}%$. Quelles sont les bonnes réponses ?
+ 
++ $%f%$ est continue et non dérivable en $%2%$.
++ La tangente à $%\mathscr{C}_f%$ en $%2%$ est une droite verticale.
+- $%f%$ est continue et dérivable en $%2%$.
+- La tangente à $%\mathscr{C}_f%$ en $%2%$ est une droite horizontale.
+
+
+
+** Quelles sont les bonnes réponses ?
+ 
++ La dérivée de $%f(x)=(2x+1)^2%$ est $%f'(x)=4(2x+1)%$.
++ La dérivée de $%f(x)=\mathrm{e}^{x^2-2x}%$ est $%f'(x)=2(x-1)\mathrm{e}^{x^2-2x}%$.
+- La dérivée de $%f(x)=(2x+1)^2%$ est $%f'(x)=2(2x+1)%$.
+- La dérivée de $%f(x)=\mathrm{e}^{x^2-2x}%$ est $%f'(x)=2\mathrm{e}^{x^2-2x}%$.
+
+
+
+** Quelles sont les bonnes réponses ?
+ 
++ La dérivée de $%f(x)=\sin [(2x+1)^2]%$ est $%f'(x)=4(2x+1)\cos [(2x+1)^2]%$.
++ La dérivée de $%f(x)=\tan (1+x^2)%$ est $%\displaystyle f'(x)=\frac{2x}{\cos ^2(1+x^2)}%$.
+- La dérivée de $%f(x)=\sin [(2x+1)^2]%$ est $%f'(x)=2\cos [(2x+1)^2]%$.
+- La dérivée de $%f(x)=\tan (1+x^2)%$ est $%\displaystyle f'(x)=1+\tan ^2(1+x^2)%$.
+
+
+
+** Quelles sont les bonnes réponses ?
+ 
++ La dérivée de $%f(x)=\arcsin (1-2x^2)%$ est $%\displaystyle f'(x)=\frac{-2x}{|x|\sqrt{1-x^2}}%$.
++ La dérivée de $%f(x)=\arccos (x^2-1)%$ est $%\displaystyle f'(x)=\frac{-2x}{|x|\sqrt{2-x^2}}%$.
+- La dérivée de $%f(x)=\arcsin (1-2x^2)%$ est $%\displaystyle f'(x)=\frac{1}{\sqrt{1-2x^2}}%$.
+- La dérivée de $%f(x)=\arccos (x^2-1)%$ est $%\displaystyle f'(x)=\frac{2x}{\sqrt{x^2-1}}%$.
+
+
+
+** Soit $%\displaystyle f(x)=x^2-\mathrm{e}^{x^2-1}%$. Quelles sont les bonnes réponses ?
+ 
++ $%f%$ admet un minimum local en $%0%$.
+- $%f%$ admet un maximum local en $%0%$.
+- $%f%$ admet un point d'inflexion en $%0%$.
+- la tangente à $%\mathscr{C}_f%$ en $%0%$ est une droite verticale.
+
+
+
+** Soit $%\displaystyle f(x)=x^4-x^3+1%$. Quelles sont les bonnes réponses ?
+ 
++ $%f%$ admet un minimum local au point $%\displaystyle \frac{3}{4}%$.
++ $%f%$ admet un point d'inflexion au point $%0%$.
+- $%f%$ admet un maximum local au point $%0%$.
+- $%f%$ admet un minimum local au point $%0%$.
+
+
+
+** Soit $%\displaystyle f(x)=\frac{1}{1+x}%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle f''(x)=\frac{2}{(1+x)^3}%$
++ pour $%n\in \mathbb{N}^*%$, $%\displaystyle f^{(n)}(x)=\frac{(-1)^nn!}{(1+x)^{n+1}}%$
+- $%\displaystyle f''(x)=\frac{-2}{(1+x)^3}%$
+- pour $%n\in \mathbb{N}^*%$, $%\displaystyle f^{(n)}(x)=\frac{n}{(1+x)^{n+1}}%$
+
+
+
+** Soit $%\displaystyle f(x)=x^2\mathrm{e}^x%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle f''(x)=(x^2+4x+2)\mathrm{e}^x%$
++ Pour $%n\in \mathbb{N}^*%$, $%\displaystyle f^{(n)}(x)=(x^2+2nx+n^2-n)\mathrm{e}^x%$.
+- $%\displaystyle f''(x)=2\mathrm{e}^x%$
+- Pour $%n\in \mathbb{N}^*%$, $%\displaystyle f^{(n)}(x)=(x^2+2nx+n)\mathrm{e}^x%$.
+
+
+
+** Soit $%\displaystyle f(x)=x\ln (1+x)%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle f'(x)=\ln (1+x)+\frac{x}{1+x}%$
++ Pour $%n\geqslant 2%$, $%\displaystyle f^{(n)}(x)=\frac{(-1)^{n}(n-2)!}{(1+x)^n}\left(x+n\right)%$.
+- $%\displaystyle f'(x)=(x)'[\ln (1+x)]'=1\times \frac{1}{1+x}%$
+- Pour $%n\geqslant 2%$, $%\displaystyle f^{(n)}(x)=n\times \frac{1}{(1+x)^n}%$.
+
+
+
+** Soit $%\displaystyle f(x)=x^4-3x^3+3x^2-x%$. Quelles sont les bonnes réponses ?
+ 
++ Il existe $%a\in ]0,1[%$ tel que $%f'(a)=0%$.
++ Il existe $%a\in ]0,1[%$ où la tangente à $%\mathscr{C}_f%$ en $%a%$ est une droite horizontale.
+- Il existe $%a\in ]0,1[%$ où la tangente à $%\mathscr{C}_f%$ en $%a%$ est une droite verticale.
+- $%\mathscr{C}_f%$ admet un point d'inflexion en $%0%$.
+
+
+
+** Soit $%a,b\in \mathbb{R}%$ et $%f(x)=\left\{\begin{array}{cl}\displaystyle \mathrm{e}^{x^2+x}&\mbox{si }x\leqslant 0\\ \\ a \arctan x+b &\mbox{si }x>0.\end{array}\right.%$
+Quelles valeurs faut-il donner à $%a%$ et $%b%$ pour que $%f%$ soit dérivable sur $%\mathbb{R}%$ ?
+ 
++ $%a=1%$ et $%b=1%$
+- $%a=1%$ et $%b=0%$
+- $%a=0%$ et $%b=1%$
+- $%a=0%$ et $%b=0%$
+
+
+
+** Soit $%f(x)=\left\{\begin{array}{cl}\displaystyle x+x^2\sin \frac{1}{x}&\mbox{si }x\neq 0\\ \\ 0&\mbox{si }x=0.\end{array}\right.%$
+Quelles sont les bonnes réponses ?
+ 
++ $%f%$ est dérivable en $%0%$ est $%f'(0)=1%$.
++ Pour $%x\neq 0%$, $%\displaystyle f'(x)=1+2x\sin \frac{1}{x}-\cos \frac{1}{x}%$.
+- $%f%$ n'est pas dérivable en $%0%$.
+- $%f%$ est dérivable en $%0%$ est $%f'(0)=0%$.
+
+
+
+** Soit $%\displaystyle f(x)=\mathrm{e}^{3x^4-4x^3}%$. Quelles sont les bonnes réponses ?
+ 
++ $%f%$ admet un minimum en $%1%$.
++ Il existe $%a\in ]0,1[%$ tel que $%f''(a)=0%$.
+- $%\forall x\in \mathbb{R}%$, $%f''(x)>0%$
+- $%f%$ admet un maximum en $%1%$.
+
+
+
+** Soit $%\displaystyle f(x)=\frac{x^2+1}{x+1}%$. Quel est l'ensemble $%S%$ des points $%x_0%$ où la tangente à $%\mathscr{C}_f%$ est parallèle à la droite d'équation $%y=x%$ ?
+ 
++ $%S=\varnothing%$
+- $%S=\{-1\}%$
+- $%S=\{0\}%$
+- $%S=\{0,1\}%$
+
+
+
+** Soit $%\displaystyle f(x)=\frac{x+3}{x+2}%$. Quel est l'ensemble $%S%$ des points $%x_0%$ où la tangente à $%\mathscr{C}_f%$ est perpendiculaire à la droite d'équation $%y=x%$ ?
+ 
++ $%S=\{-1,-3\}%$
+- $%S=\{-2\}%$
+- $%S=\{-3\}%$
+- $%S=\varnothing%$
+
+
+
+** On considère $%\displaystyle f(x)=x^2-x%$ sur l'intervalle $%[0,1]%$. Quelles sont les bonnes réponses ?
+ 
++ $%f%$ vérifie les hypothèses du théorème de Rolle et une valeur vérifiant la conclusion de ce théorème est $%\displaystyle \frac{1}{2}%$.
++ $%f%$ vérifie les hypothèses du théorème des accroissements finis et une valeur vérifiant la conclusion de ce théorème est $%\displaystyle \frac{1}{2}%$.
+- $%f%$ ne vérifie pas les hypothèses du théorème de Rolle.
+- $%f%$ ne vérifie pas les hypothèses du théorème des accroissements finis.
+
+
+
+** Soit $%f(x)=\left\{\begin{array}{ll}x^2\ln (x^2)&\mbox{si }x\neq 0\\ 0&\mbox{si }x=0.\end{array} \right.%$
+Quelles sont les bonnes réponses ?
+ 
++ $%f%$ est de classe $%\mathscr{C}^1%$ sur $%\mathbb{R}%$.
++ $%\forall x\in \mathbb{R}^*%$, $%\displaystyle f''(x)=2\ln x^2+6%$
+- $%f%$ est deux fois dérivables sur $%\mathbb{R}%$.
+- $%f%$ est de classe $%\mathscr{C}^2%$ sur $%\mathbb{R}%$.
+
+
+
+** Soit $%f(x)=\arctan x+\arctan \frac{1}{x}%$ définie sur $%\mathbb{R}^*%$. Quelles sont les bonnes réponses ?
+ 
++ $%\forall x\in \mathbb{R}^*%$, $%f'(x)=0%$
++ $%\displaystyle f(x)=\frac{\pi}{2}%$ si $%x>0%$ et $%\displaystyle f(x)=-\frac{\pi}{2}%$ si $%x<0%$
+- $%\forall x\in \mathbb{R}^*%$, $%\displaystyle f(x)=\frac{\pi}{2}%$
+- La fonction $%f%$ est paire.
+
+
+
+** Soit $%f%$ une fonction continue sur $%[-1,1]%$ telle que $%f(0)=\pi%$ et, pour tout $%x\in ]-1,1[%$, $%\displaystyle f'(x)=\frac{1}{\sqrt{1-x^2}}%$. Comment peut-on exprimer $%f%$ ?
+ 
++ $%f(x)=\arcsin (x)+\pi%$
++ $%\displaystyle f(x)=-\arccos x+\frac{3\pi}{2}%$
+- $%f(x)=\sqrt{1-x^2}-1+\pi%$
+- Une telle fonction $%f%$ n'existe pas.
+
+
+
+** Soit $%\displaystyle f(x)=x^3+x^2+x-\frac{13}{12}%$. Quelles sont les bonnes réponses ?
+ 
++ L'équation $%f(x)=0%$ admet une solution dans $%]0,1[%$.
++ Le théorème de Rolle s'applique à une primitive de $%f%$ sur $%[0,1]%$.
+- $%\displaystyle f(0)=-\frac{13}{12}<0%$ et $%\displaystyle f(1)=-\frac{1}{12}<0%$, donc $%f(x)=0%$  n'a pas de solution dans $%]0,1[%$.
+- Le théorème de Rolle s'applique à $%f%$ sur $%[0,1]%$.
+
+
+
+** Soit $%f(x)=\tan (x)%$. Quelles sont les bonnes réponses ?
+ 
++ $%f(0)=0=f(\pi)%$ mais il n'existe pas de $%c\in ]0,\pi[%$ tel que $%f'(c)=0%$.
++ Le théorème de Rolle ne s'applique pas à $%f%$ sur $%[0,\pi]%$.
+- $%f(0)=0=f(\pi)%$ et donc il existe $%c\in ]0,\pi[%$ tel que $%f'(c)=0%$.
+- Le théorème de Rolle ne s'applique pas à $%f%$ sur $%[0,\pi]%$ car $%f(0)\neq f(\pi)%$.
+
+
+
+** Soit $%\displaystyle f:\mathbb{R}\to \mathbb{R}%$ telle que $%f(x)=x^3+3x+1%$. Quelles sont les bonnes réponses ?
+ 
++ $%\forall x\in \mathbb{R}%$, $%f'(x)>0%$
++ $%f%$ est une bijection et $%\displaystyle (f^{-1})'(1)=\frac{1}{3}%$.
+- $%f%$ est une bijection et $%\displaystyle (f^{-1})'(1)=\frac{1}{f'(1)}=\frac{1}{6}%$.
+- $%f%$ est une bijection et $%\displaystyle (f^{-1})'(x)=\frac{1}{f'(x)}%$.
+
+
+
+** Soit $%f%$ une fonction réelle continue sur $%[a,b]%$, dérivable sur $%]a,b[%$ et telle que $%f(a)=f(b)=0%$. Soit $%\alpha \notin [a,b]%$ et $%\displaystyle g(x)=\frac{f(x)}{x-\alpha }%$.
+ 
++ On peut appliquer le théorème de Rolle à $%g%$ sur $%[a,b]%$.
++ Il existe $%c\in ]a,b[%$ tel que $%\displaystyle f'(c)=\frac{f(c)}{c-\alpha}%$.
++ Il existe $%c\in ]a,b[%$ tel que la tangente à $%\mathscr{C}_f%$ en $%c%$ passe par $%(\alpha ,0)%$.
+- La dérivée de $%g%$ est $%\displaystyle g'(x)=\frac{f'(x)}{(x-\alpha )^2}%$.
+
+
+
+** Soit $%n\geqslant 2%$ un entier et $%\displaystyle f(x)=\frac{1+x^n}{(1+x)^n}%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle f'(x)=\frac{n(x^{n-1}-1)}{(1+x)^{n+1}}%$ et $%f%$ admet un minimum en $%1%$.
++ $%\forall x\geqslant 0,\; (1+x)^n\leqslant 2^{n-1}(1+x^n)%$.
+- $%f'(1)\neq 0%$ et donc $%f%$ n'admet pas d'extremum en $%1%$.
+- Le théorème de Rolle s'applique à $%f%$ sur $%[-1,1]%$ car $%f(-1)=f(1)%$.
+
+
+
+** Soit $%f(x)=\mathrm{e}^x%$. Quelles sont les bonnes réponses ?
+ 
++ $%f%$ est convexe sur $%\mathbb{R}%$.
++ $%\forall t\in [0,1]%$ et $%\forall x,y\in \mathbb{R}^{+*}%$, on a : $%t\ln x+(1-t)\ln y\leqslant \ln \left[tx+(1-t)y\right]%$.
+- $%f''(x)%$ s'annule au moins une fois sur $%\mathbb{R}%$.
+- $%f%$ est concave sur $%\mathbb{R}%$.
+
+
+
+** Soit $%f(x)=\ln (x)%$. Quelles sont les bonnes réponses ?
+ 
++ $%f%$ est concave sur $%\mathbb{R}^{+*}%$.
++ $%\forall t\in [0,1]%$ et $%\forall x,y\in \mathbb{R}%$, on a : $%\mathrm{e}^{tx+(1-t)y}\leqslant t\mathrm{e}^x+(1-t)\mathrm{e}^y%$.
+- $%f''(x)%$ s'annule au moins une fois sur $%\mathbb{R}^{+*}%$.
+- $%f%$ est convexe sur $%\mathbb{R}^{+*}%$.
+
+
+
+** Soit $%f(x)=\arcsin (1-2x^2)%$ définie sur $%[-1,1]%$. Quelles sont les bonnes réponses ?
+ 
++ $%f'_d(0)=-2%$ et $%f'_g(0)=2%$
++ La fonction $%f%$ est paire avec $%\displaystyle f(x)=-2\arcsin x+\frac{\pi}{2}%$ si $%x\in [0,1]%$.
+- $%\forall x\in [-1,1]%$, $%\displaystyle f'(x)=\frac{-2}{\sqrt{1-x^2}}%$
+- $%\forall x\in [-1,1]%$, $%\displaystyle f(x)=-2\arcsin x+\frac{\pi}{2}%$
+
+
+
+** Soit $%A=\{x\in \mathbb{R}\mid (x+8)^2=9^2\}%$. Sous quelle forme peut-on encore écrire l'ensemble $%A%$ ?
+ 
++ $%A=\{1,-17\}%$
+- $%A=\{1\}%$
+- $%A=\varnothing%$
+- $%A=\{-17\}%$
+
+
+
+** Soit $%E=\{a,b,c\}%$. Quelle écriture est correcte ?
+ 
++ $%a\in E%$
+- $%\{a\}\in E%$
+- $%a\subset E%$
+- $%\{a,b\}\in E%$
+
+
+
+** Soit $%A=\{1,2\}%$, $%B=\left\{\{1\},\{2\}\right\}%$ et $%C=\left\{\{1\},\{1,2\}\right\}%$. Cochez la bonne réponse :
+ 
++ $%A\in C%$
+- $%A=B%$
+- $%A\subset B%$
+- $%A\subset C%$
+
+
+
+** Soit $%A=[1,3]%$ et $%B=[2,4]%$. Quelle est l'intersection de $%A%$ et $%B%$ ?
+ 
++ $%A\cap B=[2,3]%$
+- $%A\cap B=\varnothing%$
+- $%A\cap B=[1,4]%$
+- $%A\cap B=A%$
+
+
+
+** Soit $%A=[-1,3]%$ et $%B=[0,4]%$. Cochez la bonne réponse :
+ 
++ $%A\cup B=[-1,4]%$
+- $%A\cup B=\varnothing%$
+- $%A\cup B=[0,3]%$
+- $%A\cup B=[-1,0]%$
+
+
+
+** Soit $%A=\{a,b,c\}%$ et $%B=\{1,2\}%$. Cochez la bonne réponse :
+ 
++ $%(a,1)\in A\times B%$
+- $%\{a,1\}\in A\times B%$
+- $%\{(a,1)\}\in A\times B%$
+- $%\{a,1\}\subset A\times B%$
+
+
+
+** On désigne par $%\mathrm{C}^k_n%$ le nombre de choix de $%k%$ éléments parmi $%n%$. Combien fait $%\displaystyle \sum _{k=0}^{100}(-1)^k\mathrm{C}^k_{100}%$ ?
+ 
++ $%0%$
+- $%100%$
+- $%101%$
+- $%5000%$
+
+
+
+** On désigne par $%\mathrm{C}^k_n%$ le nombre de choix de $%k%$ éléments parmi $%n%$. Combien fait $%\displaystyle \sum _{k=0}^{10}\mathrm{C}^k_{10}%$ ?
+ 
++ $%1024%$
+- $%10%$
+- $%100%$
+- $%50%$
+
+
+
+** On considère l'application $%f:\{1,2,3,4\}\to \{1,2,3,4\}%$ définie par
+\[f(1)=2,\quad f(2)=3,\quad f(3)=4,\quad f(4)=2.\]
+Quelle est la bonne réponse ?
+ 
++ $%f^{-1}(\{2\})=\{1,4\}%$
+- $%f^{-1}(\{2\})=\{1\}%$
+- $%f^{-1}(\{2\})=\{3\}%$
+- $%f^{-1}(\{2\})=\{4\}%$
+
+
+
+** On considère l'application $%f:\mathbb{N}\to \mathbb{N}%$ définie par
+\[\forall n\in \mathbb{N},\; f(n)=n+1.\]
+Quelle est la bonne réponse ?
+ 
++ $%f%$ est injective et non surjective.
+- $%f%$ est surjective et non injective.
+- $%f%$ est bijective.
+- $%f%$ n'est ni injective ni surjective.
+
+
+
+** Soit $%A%$ et $%B%$ deux ensembles. L'écriture $%A\varsubsetneq B%$ signifie que $%A%$ est inclus dans $%B%$ et que $%A\neq B%$. On suppose que $%A\cap B=A\cup B%$. Que peut-on dire de $%A%$ et $%B%$ ?
+ 
++ $%A=B%$
+- $%A\varsubsetneq B%$
+- $%B\varsubsetneq A%$
+- $%A\neq B%$
+
+
+
+** Soit $%A%$ une partie d'un ensemble $%E%$ telle que $%A\neq E%$. On note $%\overline{A}%$ le complémentaire de $%A%$ dans $%E%$. Quelles sont les bonnes réponses ?
+ 
++ $%A\cap \overline{A}=\varnothing%$
++ $%A\cup\overline{A}=E%$
+- $%A\cap \overline{A}=E%$
+- $%A\cup \overline{A}=A%$
+
+
+
+** Soient $%A,B%$ deux parties d'un ensemble $%E%$. On note $%\overline{A}%$ le complémentaire de $%A%$ dans $%E%$. Quelle est la bonne réponse ?
+ 
++ $%\overline{A\cup B}=\overline{A}\cap \overline{B}%$
+- $%\overline{A\cup B}=\overline{A}\cup \overline{B}%$
+- $%\overline{A\cup B}=A\cap B%$
+- $%\overline{A\cup B}=\overline{A}\cup B%$
+
+
+
+** Soient $%A,B%$ deux parties d'un ensemble $%E%$. On note $%\overline{A}%$ le complémentaire de $%A%$ dans $%E%$. Quelle est la bonne réponse ?
+ 
++ $%\overline{A\cap B}=\overline{A}\cup \overline{B}%$
+- $%\overline{A\cap B}=\overline{A}\cap \overline{B}%$
+- $%\overline{A\cap B}=\overline{A}\cap B%$
+- $%\overline{A\cap B}=\overline{A}\cap B%$
+
+
+
+** Pour tout $%n\in \mathbb{N} ^*%$, on pose $%E_n=\{1,2,\dots ,n\}%$. On note $%\mathscr{P}(E_n)%$ l'ensemble des parties de $%E_n%$. Quelles sont les bonnes réponses ?
+ 
++ $%\mathscr{P}(E_2)=\{\varnothing ,\{1\},\{2\},E_2\}%$
++ $%\mathrm{Card}(\mathscr{P}(E_n))=2^n%$
+- $%\mathscr{P}(E_2)=\{\{1\},\{2\}\}%$
+- $%\mathrm{Card}(\mathscr{P}(E_n))=n%$
+
+
+
+** On considère l'application $%f:\mathbb{R}\to \mathbb{R}%$ définie par
+\[\forall x\in \mathbb{R},\; f(x)=x^2+1.\]
+Quelle est la bonne réponse ?
+ 
++ $%f(\mathbb{R})=[1,+\infty [%$
+- $%f(\mathbb{R})=\mathbb{R}%$
+- $%f(\mathbb{R})=[0,+\infty [%$
+- $%f(\mathbb{R})=]1,+\infty [%$
+
+
+
+** On considère l'application $%f:\mathbb{R}\to \mathbb{R}%$ définie par
+\[\forall x\in \mathbb{R},\; f(x)=x^2+1.\]
+Quelles sont les bonnes réponses ?
+ 
++ $%f^{-1}([1,5])=[-2,2]%$
++ $%f^{-1}([0,5])=[-2,2]%$
+- $%f^{-1}([1,5])=[0,2]%$
+- $%f^{-1}([0,5])=[0,2]%$
+
+
+
+** On considère l'application $%f:\mathbb{R}\to \mathbb{R}%$ définie par
+\[\forall x\in \mathbb{R},\; f(x)=\cos (\pi x).\]
+Quelles sont les bonnes réponses ?
+ 
++ $%f(\{0,2\})=\{1\}%$
++ $%f([0,2])=[-1,1]%$
+- $%f(\{0,2\})=\{0\}%$
+- $%f([0,2])=[1,1]%$
+
+
+
+** On considère l'application $%f:\mathbb{R}\times \mathbb{R}\to \mathbb{R}%$ définie par
+\[f(x,y)=x^2+y^2.\]
+Quelles sont les bonnes réponses ?
+ 
++ $%f^{-1}(\{0\})=\{(0,0)\}%$
++ $%f^{-1}(\{1\})%$ est le cercle de centre $%(0,0)%$ et de rayon $%1%$
+- $%f^{-1}(\{1\})=\{(1,0)\}%$
+- $%f^{-1}(\{0\})=\{(0,1)\}%$
+
+
+
+** On considère l'application $%f:\mathbb{R}\setminus\{2\}\to \mathbb{R}\setminus \{1\}%$ définie par
+\[\forall x\in \mathbb{R}\setminus\{2\},\; f(x)=\frac{x+1}{x-2}.\]
+Quelle est la bonne réponse ?
+ 
++ $%f%$ est bijective et $%\displaystyle f^{-1}(x)=\frac{2x+1}{x-1}%$.
+- $%f%$ n'est pas bijective.
+- $%f%$ est bijective et $%\displaystyle f^{-1}(x)=\frac{x-2}{x+1}%$.
+- $%f%$ est bijective et $%\displaystyle f^{-1}(x)=\frac{-x+1}{-x-2}%$.
+
+
+
+** Soit $%A=\{(x,y)\in \mathbb{R}^2\mid 2x-y=1\}%$ et $%B=\{(t+1,2t+1)\mid t\in \mathbb{R}\}%$. Que peut-on dire de $%A%$ et $%B%$ ?
+ 
++ $%A=B%$
+- $%A\varsubsetneq B%$
+- $%B\varsubsetneq A%$
+- $%A\neq B%$
+
+
+
+** Soient $%E%$ et $%F%$ deux ensembles non vides et $%f%$ une application de $%E%$ dans $%F%$. Soient $%A,B%$ deux sous-ensembles de $%E%$. Quelles sont les bonnes réponses ?
+ 
++ $%f(A\cup B)=f(A)\cup f(B)%$
++ $%f(A\cap B)\subset f(A)\cap f(B)%$
+- $%f(A\cup B)\varsubsetneq f(A)\cup f(B)%$
+- $%f(A\cap B)=f(A)\cap f(B)%$
+
+
+
+** Soient $%E%$ et $%F%$ deux ensembles non vides et $%f%$ une application de $%E%$ dans $%F%$. Soit $%A%$ un sous-ensemble de $%E%$. Quelles sont les bonnes réponses ?
+ 
++ $%A\subset f^{-1}(f(A))%$
+- $%A=f^{-1}(f(A))%$
+- $%f^{-1}(f(A))\subset A%$
+- $%f^{-1}(f(A))=E\setminus A%$
+
+
+
+** Soient $%E%$ et $%F%$ deux ensembles non vides et $%f%$ une application de $%E%$ dans $%F%$. Soit $%B%$ un sous-ensemble de $%F%$. Quelles sont les bonnes réponses ?
+ 
++ $%f(f^{-1}(B))\subset B%$
+- $%B=f(f^{-1}(B))%$
+- $%B\subset f(f^{-1}(B))%$
+- $%f(f^{-1}(B))=F\setminus B%$
+
+
+
+** Soit $%E%$ un ensemble et $%A\subset E%$ avec $%A\neq E%$. Comment choisir $%X\subset E%$ de sorte que
+\[A\cap X=A\quad \mbox{et}\quad A\cup X=E \; ?\]
+ 
++ $%X=E%$
+- $%X=A%$
+- $%X=\varnothing%$
+- $%X%$ n'existe pas
+
+
+
+** Soit $%E%$ un ensemble et $%A\subset E%$ avec $%A\neq E%$. On note $%\overline{A}%$ le complémentaire de $%A%$ dans $%E%$. Comment choisir $%X\subset E%$ de sorte que
+\[A\cap X=\varnothing \quad \mbox{et}\quad A\cup X=E \; ?\]
+ 
++ $%X=\overline{A}%$
+- $%X=A%$
+- $%X=E%$
+- $%X=\varnothing%$
+
+
+
+** Soit $%E%$ un ensemble à $%n%$ éléments et $%a\in E%$. On note $%\mathscr{P}_a(E)%$ l'ensemble des parties de $%E%$ qui contiennent $%a%$. Quel est le cardinal de $%\mathscr{P}_a(E)%$ ?
+ 
++ $%\mathrm{Card}(\mathscr{P}_a(E))=2^{n-1}%$
+- $%\mathrm{Card}(\mathscr{P}_a(E))=n-1%$
+- $%\mathrm{Card}(\mathscr{P}_a(E))=n%$
+- $%\mathrm{Card}(\mathscr{P}_a(E))=2^n%$
+
+
+
+** On note $%\mathrm{C}^k_n%$ le nombre de choix de $%k%$ éléments parmi $%n%$. Combien fait $%\displaystyle \sum _{k=0}^{100}(-1)^k2^{-k}\mathrm{C}^k_{100}%$ ?
+ 
++ $%2^{-100}%$
+- $%0%$
+- $%2^{100}%$
+- $%100%$
+
+
+
+** Soit $%E%$ un ensemble à $%n%$ éléments et $%A\subset E%$ une partie à $%p < n%$ éléments. On note $%\mathscr{H}(E)%$ l'ensemble des parties de $%E%$ qui contiennent un et un seul élément de $%A%$. Quel est le cardinal de $%\mathscr{H}(E)%$ ?
+ 
++ $%\mathrm{Card}(\mathscr{H}(E))=p2^{n-p}%$
+- $%\mathrm{Card}(\mathscr{H}(E))=p%$
+- $%\mathrm{Card}(\mathscr{H}(E))=p2^p%$
+- $%\mathrm{Card}(\mathscr{H}(E))=p2^n%$
+
+
+
+** Soit $%f:[-1,1]\to [-1,1]%$ l'application définie par
+\[\forall x\in [-1,1],\; f(x)=\frac{2x}{1+x^2}.\]
+Quelle sont les bonnes réponses ?
+ 
++ $%f%$ est bijective et $%\displaystyle f^{-1}(x)=\frac{x}{1+\sqrt{1-x^2}}%$.
+- $%f%$ est injective mais non surjective.
+- $%f%$ est surjective mais non injective.
+- $%f%$ n'est ni injective ni surjective.
+
+
+
+** Soit $%f(x)= \frac{x^2+3x+2}{x^2-2x-1}%$ et $% g(x)= \sqrt{x^2-1}%$. On notera $%D_f%$ et $%D_g%$ le domaine de définition de $%f%$ et  de $%g%$ respectivement. Quelles sont les assertions vraies ?
+ 
++ $%D_f=\mathbb{R} \backslash \{ 1-\sqrt 2, 1+\sqrt 2\}%$
++ $%D_g=]-\infty, -1]\cup [1, +\infty[%$
+- $%D_f=]1-\sqrt 2, 1+\sqrt 2[%$
+- $%D_g=[-1,1]%$
+
+
+
+** Soit $% f(x)= \sqrt{\frac{1-x}{2-x}} %$ et $%g(x)=\frac{\sqrt{1-x}}{\sqrt{2-x}}%$. On notera $%D_f%$ et $%D_g%$ le domaine de définition de $%f%$ et $%g%$ respectivement. Quelles sont les assertions vraies ?
+ 
++ $%D_f=]-\infty, 1] \cup ]2,+\infty[%$
++ $%D_g=]-\infty, 1]%$
+- $%D_f= [1,2[%$
+- $%D_g=]-\infty, 2[%$
+
+
+
+** Soit $% f(x)= \ln(\frac{2+x}{2-x}) %$ et $%g(x)=x^x%$. On notera $%D_f%$ et $%D_g%$ le domaine de définition des fonctions $%f%$ et $%g%$ respectivement. Quelles sont les assertions vraies ?
+ 
++ $%D_f=]-2,2[%$
++ $%D_g=]0,+\infty[%$
+- $%D_f=\mathbb{R}\backslash\{2\}%$
+- $%D_g=\mathbb{R}%$
+
+
+
+** Soit $%f(x)= \arcsin (2x), \, g(x)= \arccos (x^2-1) %$ et $%h(x)= \arctan \sqrt{x}%$. On notera $%D_f,D_g%$ et $%D_h%$  le domaine de définition de $%f, g%$ et $%h%$ respectivement. Quelles sont les assertions vraies ?
+ 
++ $%D_g=[-\sqrt 2, \sqrt 2]%$
++ $%D_h=[0,+\infty[%$
+- $%D_f=[-1,1]%$
+- $%D_g=[-1,1]%$
+
+
+
+** Soit $%A=\arcsin (\sin \frac{15\pi}{7})%$, $%B=\arccos (\cos \frac{21\pi}{11})%$ et $%C=\arctan (\tan \frac{17\pi}{13})%$.  Quelles sont les assertions vraies ?
+ 
++ $%A=\frac{\pi}{7}%$
++ $%C=\frac{4\pi}{13}%$
+- $%A=\frac{15\pi}{7}%$
+- $%B=-\frac{\pi}{11}%$
+
+
+
+** Soit $%f(x)=  \arcsin (\cos  x)%$ et  $% g(x)= \arccos (\sin x) %$. Quelles sont les assertions vraies ?
+ 
++ $%g%$ est périodique de période $%2\pi%$.
++ $%f%$ est une fonction paire.
+- $%f%$ est périodique de période $%\pi%$.
+- $%g%$ est une fonction impaire.
+
+
+
+** Soit $%(E)%$ l'équation : $%\ln (x^2-1) = \ln (x-1) + \ln 2%$. Quelles sont les assertions vraies ?
+ 
++ $%(E)%$ est définie sur  $%]1,+\infty[%$.
++ $%(E)%$ n'admet pas de solution.
+- $%(E)%$ est définie sur  $%]-\infty, -1[ \cup  ]1,+\infty[%$.
+- $%(E)%$ admet une unique solution $%x=1%$.
+
+
+
+** Soit $%(E)%$ l'équation : $%e^{2x}+e^x-2=0%$. Quelles sont les assertions vraies ?
+ 
++ $%(E)%$ est définie sur $%\mathbb{R}%$.
++ $%(E)%$ admet une unique solution $%x=0%$.
+- Le domaine de définition de $%(E)%$ est $%\mathbb{R}^+%$.
+- $%(E)%$ admet deux solutions distinctes.
+
+
+
+** Soit $%f(x)=\sqrt[3]{1-x^3}%$. Quelles sont les assertions vraies ?
+ 
++ $%f%$ est définie sur $%\mathbb{R}%$.
++ $%f%$ est une bijection de $%\mathbb{R}%$ dans $%\mathbb{R}%$.
++ L'application réciproque de $%f%$ est $%f%$.
+- $%f%$ est croissante.
+
+
+
+** Soit $%f(x)=\frac{\ln x}{x}%$.  Quelles sont les assertions vraies ?
+ 
++ $%f%$ est définie sur $%]0,+\infty[%$.
++ $%f%$ est une bijection de $%]0,e]%$ dans $%]-\infty, \frac{1}{e}]%$.
++ $%f%$ est une bijection de $%[e,+\infty[%$ dans $%]0, \frac{1}{e}]%$.
+- $%f%$ est croissante sur $%]0,+\infty[%$.
+
+
+
+** Soit $%f(x)= \sqrt[3]{1-x^2}%$ et $% g(x)= e^{\frac{1}{x}}\sqrt[4]{1-|x|} %$. On notera $%D_f%$ et $%D_g%$ le domaine de définition de $%f%$ et $%g%$ respectivement. Quelles sont les assertions vraies ?
+ 
++ $%D_f=\mathbb{R}%$
++ $%D_g=[-1,0[\cup ]0,1]%$
+- $%D_f=[-1,1]%$
+- $%D_g= \mathbb{R}^*%$
+
+
+
+** Soit $%(E)%$ l'équation : $% 4^x-3^x=3^{x+1}- 2^{2x+1}%$. Quelles sont les assertions vraies ?
+ 
++ $%(E)%$ est définie sur $%\mathbb{R}%$.
++ $%(E)%$ admet une unique solution $%x=1%$.
+- $%(E)%$ admet deux solutions distinctes.
+- $%(E)%$ n'admet pas de solution.
+
+
+
+** Soit $%(E)%$ l'inéquation : $% \ln |1+x|-\ln |2x+1| \leqslant \ln 2%$. Quelles sont les assertions vraies ?
+ 
++ L'ensemble des solutions de $%(E)%$ est : $%]-\infty, -1[ \cup ]-1,-\frac{3}{5}] \cup [-\frac{1}{3}, + \infty[%$.
+- Le domaine de définition de $%(E)%$ est  $%]-\frac{1}{2}, +\infty[%$.
+- L'ensemble des solutions de $%(E)%$ est : $% ]-1,-\frac{3}{5}] \cup ]-\frac{1}{3}, + \infty[%$.
+- L'ensemble des solutions de $%(E)%$ est $%]-\infty, -1[ \cup ]-1,-\frac{3}{5}]  %$.
+
+
+
+** Soit   $%f(x)= \sin x -x%$ et $%g(x)= e^x-1-x%$  Quelles sont les assertions vraies ?
+ 
++ $%f(x) \leqslant  0, \,   \forall x\geqslant 0%$
++ $%g(x) \geqslant   0, \,   \forall x\geqslant 0%$
++ $%g(x) \geqslant   0, \,  \forall x \in \mathbb{R}%$
+- $%f(x) \leqslant  0, \,  \forall x \in \mathbb{R}%$
+
+
+
+** Soit $%f(x)=\arcsin x + \arccos x%$.  Quelles sont les assertions vraies ?
+ 
++ Le domaine de définition de $%f%$ est $%[-1,1]%$.
++ $%\forall x\in [-1,1], \, f(x)=\frac{\pi}{2}%$
++ $%f%$ est une fonction constante.
+- $%\forall x\in [-1,1], \, f(x)= x%$
+
+
+
+** Soit   $%f(x)= \arctan x + \arctan (\frac{1}{x})%$.  Quelles sont les assertions vraies ?
+ 
++ Le domaine de définition de $%f%$ est $%\mathbb{R}^*%$.
++ $%\forall x>0, \, f(x)= \frac{\pi}{2}%$ 
+- $%f%$ est une fonction constante.
+- $%\forall x\in \mathbb{R}^*, \, f(x)=\frac{\pi}{2}%$
+
+
+
+** Soit $% f(x)= \frac{2x+1}{x-1}%$. Quelles sont les assertions vraies ?
+ 
++ $%y=2%$ est une asymptote à la courbe de $%f%$ en $%+\infty%$.
++ La courbe de $%f%$ admet une asymptote verticale $%(x=1)%$.
++ Le point de coordonnées $%(1,2)%$ est un centre de symétrie du graphe de $%f%$.
+- Le point de coordonnées $%(1,1)%$ est un centre de symétrie du graphe de $%f%$.
+
+
+
+** Soit $%f(x)= (-1)^{E(x)}%$, où  $%E(x)%$ est la partie entière de $%x%$. Quelles sont les assertions vraies ?
+ 
++ $%f%$ est périodique de période $%2%$.
++ $%f%$ est bornée.
+- $%f%$ est périodique de période $%1%$.
+- $%f%$ est une fonction paire.
+
+
+
+** Soit $%f(x)=\sqrt{\frac{x^3}{x-1}}%$.  Quelles sont les assertions vraies ?
+ 
++ Le domaine de définition de $%f%$ est $%]-\infty, 0]\cup ]1,+\infty[%$.
++ $%y=x+\frac{1}{2}%$ est une asymptote à la courbe de $%f%$ en $%+\infty%$.
++ $%y=-x-\frac{1}{2}%$ est une asymptote en $%-\infty%$.
+- $%y=x-\frac{1}{2}%$ est une asymptote à la courbe de $%f%$ en $%+\infty%$.
+
+
+
+** Soit $%f(x)=x+ \sqrt{ 1-x^2}%$.  Quelles sont les assertions vraies ?
+ 
++ Le domaine de définition de $%f%$ est $%[-1,1]%$.
++ $%f%$ établit une bijection de $%[-1,\frac{1}{\sqrt 2}]%$ dans $%[-1,\sqrt 2]%$.
+- $%f%$ est croissante sur $%[-1,1]%$.
+- $%f%$ établit une bijection de $%[0,1]%$ dans $%[1,\sqrt 2]%$.
+
+
+
+** Soit $%(E)%$ l'équation : $% x^x=(\sqrt x)^{x+1}%$.  Quelles sont les assertions vraies ?
+ 
++ Le domaine de définition de $%(E)%$ est $%]0,+\infty[%$.
++ $%(E)%$ admet une unique solution.
+- $%(E)%$ n'admet pas de solution.
+- $%(E)%$ admet deux solutions distinctes.
+
+
+
+** Soit $%(S)%$ le système d'équations : $%\left\{\begin{array}{ccl}2^x&=&y^2\\2^{x+1}&=&y^{2+x} \end{array}\right.%$.  On note $%E%$ l'ensemble des $%(x,y)%$ qui vérifient $%(S)%$. Quelles sont les assertions vraies ?
+ 
++ Le cardinal de $%E%$ est $%2%$.
+- $%(S)%$ est défini  pour tout $% (x,y) \in \mathbb{R} ^2%$.
+- Le cardinal de $%E%$ est $%1%$.
+- Le cardinal de $%E%$ est $%4%$.
+
+
+
+** Soit $%(E)%$ l'équation : $% \cos 2x = \sin x %$. on note $%\cal{S}%$ l'ensemble des solutions de $%(E)%$. Quelles sont les assertions vraies ?
+ 
++ Le domaine de définition de $%(E)%$  est  $%\mathbb{R}%$.
+- $%{\cal{S}} = \{\frac{\pi}{6}  +\frac{ 2k\pi}{3}, \, k\in \mathbb{Z} \}  %$
+- $%{\cal{S}} =  \{ -\frac{\pi}{2} +2k\pi, \,  k\in \mathbb{Z} \} %$
+- $%{\cal{S}} =  \{ -\frac{\pi}{2} +k\pi, \,  k\in \mathbb{Z} \}%$
+
+
+
+** Soit $%f%$ une fonction définie par l'équation $%(E)%$ : $% \arcsin f(x) + \arcsin x = \frac{\pi}{2}%$. on notera $%D_f%$ le domaine de définition de $%f%$. Quelles sont les assertions vraies ?
+ 
++ $%\forall x \in [0,1], \, f(x)= \sqrt{1-x^2}%$
++ $%f%$ est une bijection de $%[0,1]%$ dans $%[0,1]%$.
+- $%D_f= [-1,1]%$
+- $%\forall x \in [-1,1], \, f(x)= -\sqrt{1-x^2}%$
+
+
+
+** Soit $%f(x)= \arcsin (\frac{2x}{1+x^2})%$. On notera $%D_f%$ le domaine de définition de $%f%$. Quelles sont les assertions vraies ?
+ 
++ $%D_f=\mathbb{R}%$
++ Si $%x \in [-1,1] %$, $%f(x) = 2 \arctan x%$
++ Si $%x \geqslant 1 %$, $%f(x) = -2 \arctan x+\pi%$
+- $%D_f=[-1,1]%$
+
+
+
+** Soit $%f(x)= \arccos (\frac{1-x^2}{1+x^2})%$. On notera $%D_f%$ le domaine de définition de $%f%$. Quelles sont les assertions vraies ?
+ 
++ $%D_f= \mathbb{R}%$
++ $% f(x)= 2\arctan x+2\pi, \, \forall x\leqslant 0%$
++ $%f(x)  = -2\arctan |x|+2\pi, \, \forall x \in \mathbb{R}%$
+- $%D_f=[-1,1]%$
+
+
+
+** Soit $%f(x)= \arcsin (\sin x) + \arccos (\cos x)%$. On notera $%D_f%$ le domaine de définition de $%f%$.  Quelles sont les assertions vraies ?
+ 
++ $%\forall x \in [-\frac{\pi}{2}, 0], \,  f(x) = 0%$
++ $%\forall x \in [-\pi, -\frac{\pi}{2}], \,  f(x) = -\pi -2x%$ 
+- $%D_f=[-1,1]%$
+- $%\forall x \in \mathbb{R}, \, f(x)=2x%$
+
+
+
+** Soit $%f(x)= \exp ( \frac{\ln^2 |x|}{\ln^2 |x|+1})%$. On notera $%D_f%$ le domaine de définition de $%f%$.  Quelles sont les assertions vraies ?
+ 
++ $%f%$ est paire.
++ $%f%$ est une bijection de $%]0,1]%$ dans $%[1,e[%$.
+- $%D_f=]0,+\infty[%$
+- $%f%$ est croissante sur $%]0,+\infty[%$.
+
+
+
+** Soit $%f(x)= x^x(1-x)^{1-x}%$. On notera $%D_f%$ le domaine de définition de $%f%$.  Quelles sont les assertions vraies ?
+ 
++ $%D_f=]0,1[%$
++ L'ensemble des valeurs de $%f%$ est $%[\frac{1}{2},1[%$.
++ $%f%$ est une bijection de $%[\frac{1}{2},1[ %$ dans $%[\frac{1}{2},1[%$.
+- $%f%$ est croissante $%]0,1[%$.
+
+
+
+** Soit $%f(x)= (1+\frac{1}{x})^x%$. Quelles sont les assertions vraies ?
+ 
++ $%\forall x >0, 1 < f(x) < e%$ 
++ $%\forall x <-1, f(x) > e%$
+- $%D_f=]0,+\infty[%$
+- $%\forall x >0, f(x) > e%$ 
+
+
+
+** Soit $%\vec{u}(1,1,1), \vec{v}(1,-1,0)%$ et $%\vec{w}(0,1,1)%$ trois vecteurs. Quelles sont les assertions vraies ?
+ 
++ $%\vec{u}%$ et $%\vec{v}%$ sont orthogonaux.
++ $%(O,\vec{u},\vec{v},\vec{w})%$ est un repère de l'espace.
+- $%\vec{v}%$ et $%\vec{w}%$ sont colinéaires.
+- $%(O,\vec{u},\vec{v},\vec{w})%$ est un repère orthonormé de l'espace.
+
+
+
+** Soit $%A(1,1,1), B(0,1,1)%$ et $%C(1,0,1)%$ trois points. Quelles sont les assertions vraies ?
+ 
++ $%A,B%$ et $%C%$ forment un triangle d'aire $%\frac{1}{2}%$.
+- $%A%$, $%B%$ et $%C%$ sont alignés.
+- $%A,B%$ et $%C%$ forment un triangle d'aire $%\frac{1}{3}%$.
+- Les vecteurs $%\overrightarrow{AB}%$ et  $%\overrightarrow{AC}%$ sont colinéaires.
+
+
+
+** Soit $%\vec{u}(-1,1,1), \vec{v}(0,1,2)%$ et $%\vec{w}(1,0,-1)%$ trois vecteurs. Quelles sont les assertions vraies ?
+ 
++ L'aire du parallélogramme engendré par $%\vec{u}%$ et  $%\vec{v}%$ est : $% \sqrt 6%$.
++ Le volume du parallélépipède engendré par $%\vec{u}%$, $%\vec{v}%$ et  $%\vec{w}%$ est $%2%$.
+- L'aire du parallélogramme engendré par $%\vec{u}%$ et  $%\vec{v}%$ est : $%\sqrt 3%$.
+- Le volume du parallélépipède engendré par $%\vec{u}%$, $%\vec{v}%$ et  $%\vec{w}%$ est $%1%$.
+
+
+
+** Soit $%P%$ le plan passant par $%A(1,1,0)%$ et  de vecteur normal $%\vec{n}(1,-1,1)%$. Quelles sont les assertions vraies ?
+ 
++ Une équation cartésienne de $%P%$ est $%x-y+z=0%$.
++ Une représentation paramétrique de $%P%$ est :
+\[\left\{\begin{array}{ccl}x&=&t-s\\y&=&t\\ z&=&s,\quad (t,s\in \mathbb{R}) \end{array}\right.\]
++ Une représentation paramétrique de $%P%$ est :
+\[\left\{\begin{array}{ccl}x&=&t\\y&=&s\\ z&=&s-t,\quad (t,s \in \mathbb{R})\end{array}\right.\]
+- Une équation cartésienne de $%P%$ est $%x-y+z=1%$.
+
+
+
+** Soit $%P%$ le plan passant par $%A(-1,1,1)%$ et dirigé par les vecteurs
+$%\vec{u}(0,1,1)%$ et $%\vec{v}(1,0,1)%$. Quelles sont les assertions vraies ?
+ 
++ Une représentation paramétrique de $%P%$ est :
+\[\left\{\begin{array}{ccl}x&=&-1+s\\y&=&1+t\\ z&=&1+t+s,\quad (t,s\in \mathbb{R}) \end{array}\right.\]
++ Une équation cartésienne de $%P%$ est $%x+y-z=-1%$.
+- Une représentation paramétrique de $%P%$ est :
+\[\left\{\begin{array}{ccl}x&=&-1+t\\y&=&1+s\\ z&=&-1+t+s,\quad (t,s\in \mathbb{R})\end{array}\right.\]
+- Une équation cartésienne de $%P%$ est $%x+y+z=-1%$.
+
+
+
+** Soit $%P%$ le plan passant par les points $%A(0,1,0)%$, $%B(1,-1,0)%$ et $%C(0,1,1)%$. Quelles sont les assertions vraies ?
+ 
++ Une représentation paramétrique de $%P%$ est :
+\[\left\{\begin{array}{ccl}x&=&s\\y&=&1-2s\\ z&=&t,\quad (t,s\in \mathbb{R})\end{array}\right.\]
++ Une équation cartésienne de $%P%$ est $%2x+y=1%$.
+- Une représentation paramétrique de $%P%$ est :
+\[\left\{\begin{array}{ccl}x&=&t\\y&=&s\\ z&=&1+2s,\quad (t,s\in \mathbb{R})\end{array}\right.\]
+- Une équation cartésienne de $%P%$ est $%2x+z=1%$.
+
+
+
+** Soit $%D%$ la droite passant par le point $%A(2,-1,1)%$ et dirigée par le vecteur $%\vec{u}(-1,1,0)%$. Quelles sont les assertions vraies ?
+ 
++ Une représentation paramétrique de $%D%$ est :
+\[\left\{\begin{array}{ccl}x&=&2-t\\y&=&-1+t\\ z&=&1,\quad (t\in \mathbb{R}) \end{array}\right.\]
++ Une représentation cartésienne de $%D%$ est : 
+\[\left\{\begin{array}{ccl}x+y&=&1\\z&=&1 \end{array}\right.\]
+- Une représentation paramétrique de $%D%$ est :
+\[\left\{\begin{array}{ccl}x&=&2-t\\y&=&-1+t\\ z&=&-t,\quad (t\in \mathbb{R})\end{array}\right.\]
+- Une représentation cartésienne de $%D%$ est : 
+\[\left\{\begin{array}{ccl}x+y&=&0\\z&=&1 \end{array}\right.\]
+
+
+
+** Soit $%D%$ la droite passant par le point $%A(-1,1,2)%$ et perpendiculaire au plan d'équation cartésienne : $%x+y+z=1%$. Quelles sont les assertions vraies ?
+ 
++ Une représentation paramétrique de $%D%$ est :
+\[\left\{\begin{array}{ccl}x&=&-1+t\\y&=&1+t\\ z&=&2+t,\quad (t\in \mathbb{R}) \end{array}\right.\]
++ Une représentation paramétrique de $%D%$ est :
+\[\left\{\begin{array}{ccl}x&=&-1-t\\y&=&1-t\\ z&=&2-t,\quad (t\in \mathbb{R}) \end{array}\right.\]
++ Une représentation cartésienne de $%D%$ est : 
+\[\left\{\begin{array}{ccl}x-y&=&-2\\y-z&=&-1 \end{array}\right.\]
+- Une représentation cartésienne de $%D%$ est : 
+\[\left\{\begin{array}{ccl}x+y&=&2\\x+z&=&1 \end{array}\right.\]
+
+
+
+** Soit $%a%$ et $%b%$ deux réels, $%D%$ et $%D'%$ deux droites de représentations paramétriques :
+\[D: \left\{\begin{array}{ccl}x&=&1+2t\\y&=&t\\ z&=&-1+at,\quad (t\in \mathbb{R}) \end{array}\right. D': \left\{\begin{array}{ccl}x&=&-3+bt\\y&=&-t\\ z&=&1+t,\quad (t\in \mathbb{R}) \end{array}\right. 
+\] Quelles sont les assertions vraies ?
+ 
++ $%D%$ et $%D'%$ sont parallèles si et seulement si $%a=-1%$ et $%b=-2%$.
++ $%D%$ et $%D'%$ sont orthogonales  si et seulement si $%a=1-2b, \, b \in \mathbb{R}%$.
+- $%D%$ et $%D'%$ sont parallèles si et seulement si $%a=2%$ et $%b=3%$.
+- $%D%$ et $%D'%$ sont orthogonales  si et seulement si $%a=1%$ et $%b=0%$.
+
+
+
+** Soit $%P : x+y-z=0%$,  $%P' : x-y=2%$ et $%P'' : y-z=3%$ trois plans. L'intersection de ces trois plans est :
+ 
++ Un point.
++ Le point de coordonnées $%(-3,-5,-8)%$.
+- Vide.
+- Une droite.
+
+
+
+** Soit $%P : x-y-z=-2%$,  $%P' : x+z=2%$ deux plans et $%D%$ la droite :
+$%\left\{\begin{array}{ccl}x&=&1+t\\y&=&2+2t\\ z&=&1-t,\quad (t\in \mathbb{R})\end{array}\right.%$ Quelles sont les assertions vraies ?
+ 
++ $%D\subset P'%$
++ $%D=P\cap P'%$
+- $%D\cap P=\emptyset%$
+- $%D\cap P'=\emptyset%$
+
+
+
+** Soit $%P : x+y-z=1%$,  $%P' : x+z=-1%$ deux plans et $%Q%$ le plan passant par $%A(1,1,1)%$ et perpendiculaire à $%P%$ et à $%P'%$. Quelles sont les assertions vraies ?
+ 
++ Une équation cartésienne de $%Q%$ est $%x-2y-z+2=0%$.
++ Une représentation paramétrique de $%Q%$ est :
+\[\left\{\begin{array}{ccl}x&=&1+t+s\\y&=&1+t\\ z&=&1-t+s,\quad (t,s \in \mathbb{R}) \end{array}\right.\]
+- Une équation cartésienne de $%Q%$ est $%x+2y-z+2=0%$.
+- Une représentation paramétrique de $%Q%$ est :
+\[\left\{\begin{array}{ccl}x&=&1-t\\y&=&1+t-s\\ z&=&1+t+s,\quad (t,s \in \mathbb{R}) \end{array}\right.\]
+
+
+
+** On considère la droite $%D : \left\{\begin{array}{ccl}x&=&1-t\\y&=&t\\ z&=&-1+2t,\quad (t \in \mathbb{R}) \end{array}\right.%$ et le plan $%P%$  passant par $%A(0,1,1)%$ et perpendiculaire à $%D%$.  Quelles sont les assertions vraies ?
+ 
++ Une équation cartésienne de $%P%$ est $%x-y-2z+3=0%$.
++ Une représentation paramétrique de $%P%$ est :
+\[\left\{\begin{array}{ccl}x&=&t\\y&=&3+t-2s\\ z&=&s,\quad (t,s \in \mathbb{R}) \end{array}\right.\]
+- Une équation cartésienne de $%P%$ est $%x-2y-2z+2=0%$.
+- Une représentation paramétrique de $%P%$ est :
+\[\left\{\begin{array}{ccl}x&=&t\\y&=&2+t-2s\\ z&=&s,\quad (t,s \in \mathbb{R}) \end{array}\right.\]
+
+
+
+** On considère les deux plans  $%P : \left\{\begin{array}{ccl}x&=&1+t+s\\y&=&-1+t\\ z&=&2+t-s,\quad (t,s  \in \mathbb{R})  \end{array}\right.%$ et 
+$%P': \left\{\begin{array}{ccl}x&=&3+2t\\y&=&t+s\\ z&=&2+2s,\quad (t,s  \in \mathbb{R}) \end{array}\right.%$  Quelles sont les assertions vraies ?
+ 
++ $%P=P'%$
+- $%P\cap P'%$ est une droite.
+- $%P%$ et $%P'%$ sont perpendiculaires.
+- $%P\cap P' = \emptyset%$ 
+
+
+
+** Soit $%P%$ et $%P'%$ deux plans non parallèles d'équations :  $%ax+by+cz+d =0%$ et $%a'x+b'y+c'z+d' =0%$ respectivement. Soit $%D=P\cap P'%$ et $%Q%$ un plan contenant $%D%$. Quelles sont les assertions vraies ?
+ 
++ Une équation cartésienne de $%Q%$ est  de la forme : $%\alpha(ax+by+cz+d)+\beta(a'x+b'y+c'z+d')=0,%$  où $% \alpha, \beta \in \mathbb{R}%$  tels que  $%(\alpha a+ \beta a', \alpha b+ \beta b', \alpha c+ \beta c', \alpha d+ \beta d') \neq (0,0,0,0)%$.
++ Si $%Q\neq P'%$, une équation cartésienne de $%Q%$ est de la forme : 
+$%(ax+by+cz+d)+\alpha(a'x+b'y+c'z+d')=0, %$ où $% \alpha \in \mathbb{R}%$  tel que $% (a+ \alpha a',  b+ \alpha b', c+ \alpha c',  d+ \alpha d') \neq (0,0,0,0)%$.
+- Une équation cartésienne de $%Q%$ est $%ax+by+cz+d =0%$.
+- Une équation cartésienne de $%Q%$ est $%a'x+b'y+c'z+d' =0%$.
+
+
+
+** Soit $%D%$ la droite d'équations :  $% \left\{\begin{array}{ccl}x+z&=&1\\x-y&=&-1 \end{array}\right.%$ et $%P%$ le plan contenant $%D%$ et perpendiculaire au plan $%Q%$ d'équation : $%x-z+3=0%$.  Une équation cartésienne de $%P%$ est :
+ 
++ $%x+z=1%$
+- $%x+y=0%$
+- $%y+z=1%$
+- $%x-y=-1%$
+
+
+
+** Soit $%D%$ la droite d'équations :  $% \left\{\begin{array}{ccl}x-y&=&-1\\y-z&=&0 \end{array}\right.%$ et $%P%$ le plan contenant $%D%$ et parallèle à la droite d'équations  $%D' : \left\{\begin{array}{ccl}x+z&=&0\\x-y&=&2 \end{array}\right.%$. 
+Une équation cartésienne de $%P%$ est :
+ 
++ $%x-y=-1%$
+- $%x-z=1%$
+- $%x-y=0%$
+- $%y-z=0%$
+
+
+
+** Soit $%(P_n), n\in \mathbb{N}%$, la famille de plans d'équations : $%n^2x+(2n-1)y+nz=3%$. On note $%E%$ l'intersection de ces plans, c'est-à-dire $%E= \{M(x,y,z) \in \mathbb{R}^3; \, M\in P_n, \forall n\in \mathbb{N} \}%$. Quelles sont les assertions vraies ?
+ 
++ $%E%$ est le point de coordonnées $%(0,-3,6)%$.
+- $%E=\emptyset%$
+- $%E%$ est un plan d'équation $%x+y+z=3%$.
+- $%E%$ est une droite d'équation $% \left\{\begin{array}{ccl}x+y+z&=&3\\y&=&-3 \end{array}\right.%$.
+
+
+
+** On considère les droites $%D_1 : \left\{\begin{array}{ccl}x&=&z-1\\y&=&2z+1 \end{array}\right.%$ et  
+$%D_2 : \left\{\begin{array}{ccl}y&=&3x\\z&=&1 \end{array}\right.%$. Soit $%P_1%$ et $%P_2%$ des plans parallèles contenant $%D_1%$ et $%D_2%$ respectivement.    Quelles sont les assertions vraies ?
+ 
++ Une équation cartésienne de $%P_1%$ est $% 3x-y-z+4=0%$.
++ Une équation cartésienne de $%P_2%$ est $% 3x-y-z+1=0%$.
+- Une équation cartésienne de $%P_1%$ est $% 4x-y-z+5=0%$.
+- Une équation cartésienne de $%P_2%$ est $% 4x-y-z+1=0%$.
+
+
+
+** Soit  $%D_1 : \left\{\begin{array}{ccl}y&=&x+2\\z&=&x \end{array}\right.%$,   
+$%D_2 : \left\{\begin{array}{ccl}y&=&2x+1\\z&=&2x-1 \end{array}\right.%$ et $%\Delta%$ une droite parallèle au plan $%(xOy)%$ et rencontrant les droites $%D_1%$, $%D_2%$ et l'axe $%(Oz)%$. 
+Quelles sont les assertions vraies ?
+ 
++ Une équation cartésienne de $%\Delta%$ est : 
+$% \left\{\begin{array}{ccl}y&=&0\\z&=&-2 \end{array}\right.%$ ou 
+$% \left\{\begin{array}{ccl}y&=&3x\\z&=&1 \end{array}\right.%$.
++ $%\Delta%$ est contenu dans le plan $%z=-2%$ ou $%z=1%$.
+- Une équation cartésienne de $%\Delta%$ est : 
+$% \left\{\begin{array}{ccl}y&=&1\\z&=&-1 \end{array}\right.%$ ou 
+$% \left\{\begin{array}{ccl}x+y+z&=&0\\z&=&1 \end{array}\right.%$.
+- $%\Delta%$ est contenu dans le plan $%z=-1%$ ou $%z=1%$.
+
+
+
+** Soit $%A(1,1,1)%$ et $%P%$ le plan d'équation cartésienne : $%x+y+z+1=0%$. La distance de $%A%$ à $%P%$ est :
+ 
++ $%\frac{4}{\sqrt 3}%$
+- $%\frac{1}{\sqrt 3}%$
+- $%\frac{2}{\sqrt 3}%$
+- $%\sqrt 3%$
+
+
+
+** Soit $%A(-1,1,0)%$ et $%P%$ le plan passant par $%B(1,0,1)%$ et dirigé par les vecteurs $%\vec{u}(1,1,1)%$ et $%\vec{v}(1,0,-1)%$. La distance de $%A%$ à $%P%$ est :
+ 
++ $%\frac{5}{\sqrt 6}%$
+- $%\frac{1}{\sqrt 6}%$
+- $%\sqrt 6%$
+- $%\frac{4}{\sqrt 6}%$
+
+
+
+** Soit $%A(2,0,1)%$ et $%D%$ la droite d'équations :
+\[\left\{\begin{array}{ccl}x+y-z&=&1\\x-y&=&-1 \end{array}\right.\]
+La distance de $%A%$ à $%D%$ est :
+ 
++ $%\frac{3}{\sqrt 2}%$
+- $%\frac{1}{\sqrt 2}%$
+- $%\sqrt 3%$
+- $%\sqrt 2%$
+
+
+
+** On considère les droites $%D_1 : \left\{\begin{array}{ccl}x&=&1+t\\y&=&-t\\ z&=&1+t,\quad (t \in \mathbb{R})  \end{array}\right.%$ et 
+$%D_2 : \left\{\begin{array}{ccl}y&=&2\\x-z&=&2 \end{array}\right.%$
+La distance entre $%D_1%$ et $%D_2%$ est :
+ 
++ $%\sqrt 2%$
+- $%0%$
+- $%\frac{1}{\sqrt 2}%$
+- Les droites se rapprochent autant que l'on veut sans se toucher.
+
+
+
+** Soit $%D%$ la droite passant par le point $%A(1,-1,0)%$ et dirigée par le vecteur $%\vec{u}(1,1,-1)%$. Soit $%M(1,-1,3)%$ un point et $%H%$ le projeté orthogonal de $%M%$ sur $%D%$. Les coordonnées de $%H%$ sont :
+ 
++ $%H(0,-2,1)%$
+- $%H(0,1,1)%$
+- $%H(1,2,1)%$
+- $%H(1,-2,1)%$
+
+
+
+** On considère les droites $%D_1 : \left\{\begin{array}{ccl}x+y-z&=&1\\x-y&=&-1 \end{array}\right.%$,  
+$%D_2 : \left\{\begin{array}{ccl}x-y+z&=&-1\\x-z&=&1 \end{array}\right.%$
+et $%\Delta%$ la perpendiculaire commune à $%D_1%$ et $%D_2%$. Quelles sont les assertions vraies ?
+ 
++ Une représentation cartésienne de $%\Delta%$ est :
+\[\left\{\begin{array}{ccl}x+7y-4z-7&=&0\\x-4y+7z+7&=&0 \end{array}\right.\]
++ $%\Delta%$ est contenu dans le plan d'équation $%x-4y+7z+7=0%$.
+- Une représentation cartésienne de $%\Delta%$ est :
+\[\left\{\begin{array}{ccl}x+5y-4z-5&=&0\\x-4y+5z+5&=&0 \end{array}\right.\]
+- $%\Delta%$ est contenu dans le plan d'équation $% x+5y-4z-5=0%$.
+
+
+
+** Soit  $%A(1,1,1)%$ un point,  $%D%$ la droite  $% : \left\{\begin{array}{ccl}x&=&1+z\\y&=&z \end{array}\right.%$ et $%P%$ un plan contenant $%D%$ et tel que la distance de $%A%$ à $%P%$ soit égale à   $%\frac{1}{\sqrt 2}%$. Une équation cartésienne de $%P%$ est :
+ 
++ $%x-z=1%$ ou $%x-y=1%$
+- $%x+z+1=0%$ ou $%x+y+1=0%$
+- $%x-z+1=0%$ ou $%x-y=0%$
+- $%z=1%$ ou $%x=1%$
+
+
+
+** Soit  $%P_1 : z+3=0%$ et $%P_2 : 2x+y+2z-1=0%$ des plans et $%\pi%$  un plan bissecteur de $%P_1%$ et $%P_2%$, c'est-à-dire :   $%M \in \pi%$  si et seulement si $%M%$ est  à la même distance de $%P_1%$ et de  $%P_2%$. Une équation cartésienne de $%\pi%$ est :
+ 
++ $%2x+y-z-10=0%$ ou $%2x+y+5z+8=0%$
+- $%x+y-z-1=0%$ ou $%x+y+z+1=0%$
+- $%2x+y+z+8=0%$ ou $%2x-y+5z+7=0%$
+- $%x+y-z-4=0%$ ou $%x+y+3z-8=0%$
+
+
+
+** Soit  $%E%$ l'ensemble des points situés à la même distance  des axes de coordonnées. Quelles sont les assertions vraies ?
+ 
++ $%E%$ est une réunion de droites.
++ $%M(x,y,z) \in E \Leftrightarrow |x|=|y|=|z|%$
+- $%E%$ est une droite.
+- $%M(x,y,z) \in E \Leftrightarrow x=y=z%$
+
+
+
+** Soit  $%D%$ la droite : $%\left\{\begin{array}{ccl}x&=&-1+3t\\y&=&1\\z&=&-1-t, \quad t\in \mathbb{R}  \end{array}\right.%$ et $%P%$ un plan contenant $%D%$ à une distance de $%1%$ de l'origine. Une équation cartésienne de $%P%$ est :
+ 
++ $%y=1%$ ou $%4x+3y+12z+13=0%$
+- $%y=1%$
+- $%y=1%$ ou $%x=1%$
+- $%x=1%$ ou $%y=1%$ ou $%z=1%$
+
+
+
+** On considère les points $%A(3,0)%$ et $%B(0,4)%$. Quelle est la distance $%d%$ entre $%A%$ et $%B%$ ?
+ 
++ $%d=5%$
+- $%d=3%$
+- $%d=4%$
+- $%d=3+4=7%$
+
+
+
+** On considère les vecteurs $%\vec{u}=(2,-1)%$ et $%\vec{v}=(1,-4)%$. Quelles sont les bonnes réponses ?
+ 
++ La norme de $%\vec{u}%$ est $%\|\vec{u}\|=\sqrt{5}%$.
++ Le produit scalaire de $%\vec{u}%$ et $%\vec{v}%$ est $%\vec{u}\cdot \vec{v}=6%$.
+- La norme de $%\vec{u}%$ est $%\|\vec{u}\|=2-1=1%$.
+- Le produit scalaire de $%\vec{u}%$ et $%\vec{v}%$ est $%\vec{u}\cdot \vec{v}=(2-1)+(1-4)=-3%$.
+
+
+
+** On considère les points $%A(1,1)%$, $%B(-1,1)%$ et $%C(1,-1)%$. Quelles sont les bonnes réponses ?
+ 
++ Les vecteurs $%\overrightarrow{AB}%$ et $%\overrightarrow{AC}%$ sont orthogonaux.
+- Les vecteurs $%\overrightarrow{AB}%$ et $%\overrightarrow{AC}%$ sont égaux.
+- $%\overrightarrow{AB}=-\overrightarrow{AC}%$
+- Les vecteurs $%\overrightarrow{AB}%$ et $%\overrightarrow{AC}%$ sont colinéaires.
+
+
+
+** Dans un repère orthonormé direct, on considère le point $%A%$ de coordonnées polaires $%r=2%$ et $%\displaystyle \theta =\frac{\pi}{6}%$. Quelles sont les coordonnées cartésiennes $%(x,y)%$ de $%A%$ ?
+ 
++ $%x=\sqrt{3}%$ et $%y=1%$
+- $%x=2%$ et $%y=2%$
+- $%x=1%$ et $%y=\sqrt{3}%$
+- $%x=1%$ et $%y=1%$
+
+
+
+** Dans un repère orthonormé direct, on considère le point $%A(1,1)%$. Quelles sont les coordonnées polaires $%(r,\theta)%$ de $%A%$ ?
+ 
++ $%r=\sqrt{2}%$ et $%\displaystyle \theta =\frac{\pi}{4}+2k\pi%$, $%k\in \mathbb{Z}%$
+- $%r=1%$ et $%\theta =1%$
+- $%r=2%$ et $%\theta =0%$
+- $%r=\sqrt{2}%$ et $%\theta =0+2k\pi%$, $%k\in \mathbb{Z}%$
+
+
+
+** On considère les points $%A(0,1)%$, $%B(2,3)%$ et $%C(1,1)%$. Quelles sont les bonnes réponses ?
+ 
++ Les droites $%(AB)%$ et $%(OC)%$ sont parallèles.
+- Les droites $%(AB)%$ et $%(OC)%$ sont confondues.
+- Les droites $%(AB)%$ et $%(OC)%$ sont perpendiculaires.
+- Les droites $%(AB)%$ et $%(OC)%$ sont sécantes.
+
+
+
+** On considère les points $%A(-1,-1)%$, $%B(-1,1)%$, $%C(1,2)%$ et $%D(1,0)%$. Quelles sont les bonnes réponses ?
+ 
++ Les droites $%(AB)%$ et $%(CD)%$ sont parallèles.
++ $%(ABCD)%$ est un parallélogramme.
+- Les droites $%(AB)%$ et $%(CD)%$ sont sécantes.
+- Les droites $%(AB)%$ et $%(CD)%$ sont perpendiculaires.
+
+
+
+** Soit $%D%$ la droite passant par l'origine et par le point $%A(1,1)%$. Quelles sont les bonnes réponses ?
+ 
++ $%\vec{u}(1,1)%$ est un vecteur directeur de $%D%$.
++ $%y=x%$ est une équation cartésienne de $%D%$.
+- $%\vec{u}(1,1)%$ est un vecteur normal à $%D%$.
+- $%x+y=0%$ est une équation cartésienne de $%D%$.
+
+
+
+** Soit $%D%$ la droite passant par les points $%A(1,-1)%$ et $%B(1,1)%$. Quelles sont les bonnes réponses ?
+ 
++ $%\vec{u}(0,1)%$ est un vecteur directeur de $%D%$.
++ Le point $%C(1,0)%$ appartient à $%D%$.
+- $%\vec{u}(0,1)%$ est un vecteur normal à $%D%$.
+- Le point $%C(1,0)%$ n'appartient pas à $%D%$.
+
+
+
+** Soit $%D%$ la droite passant par les points $%A(1,-1)%$ et $%B(1,0)%$. Quelles sont les bonnes réponses ?
+ 
++ Une équation cartésienne de $%D%$ est : $%x-1=0%$.
++ $%\vec{u}(1,0)%$ est un vecteur normal à $%D%$.
+- Une équation cartésienne de $%D%$ est : $%x-y+1=0%$.
+- $%\vec{u}(1,0)%$ est un vecteur directeur de $%D%$.
+
+
+
+** Dans le plan muni d'un repère orthonormé direct $%(O,\vec{i},\vec{j})%$, on considère les vecteurs $%\displaystyle \vec{u}=\left(1,1\right)%$ et $%\displaystyle \vec{v}=\left(1,\sqrt{3}\right)%$. Quel est la mesure $%\alpha \in [0,2\pi[%$ de l'angle orienté entre $%\vec{u}%$ et $%\vec{v}%$ ?
+ 
++ $%\displaystyle \alpha =\frac{\pi}{12}%$
+- $%\displaystyle \alpha =\frac{\pi}{4}%$
+- $%\displaystyle \alpha =\frac{\pi}{3}%$
+- $%\displaystyle \alpha =\frac{7\pi}{12}%$
+
+
+
+** Dans le plan muni d'une base orthonormée $%(\vec{i},\vec{j})%$, on considère les vecteurs $%\displaystyle \vec{u}=\left(\frac{1}{\sqrt{2}},a\right)%$ et $%\displaystyle \vec{v}=\left(a,-\frac{1}{\sqrt{2}}\right)%$. Comment choisir le réel $%a%$ pour que $%(\vec{u},\vec{v})%$ soit une base orthonormée ?
+ 
++ $%\displaystyle a=\frac{1}{\sqrt{2}}%$
++ $%\displaystyle a=-\frac{1}{\sqrt{2}}%$
+- $%\displaystyle a=\sqrt{2}%$
+- $%\displaystyle a=-\sqrt{2}%$
+
+
+
+** Dans le plan muni d'une base orthonormée $%(\vec{i},\vec{j})%$, on considère les vecteurs $%\displaystyle \vec{u}=\left(\frac{1}{2},a\right)%$ et $%\displaystyle \vec{v}=\left(-\frac{\sqrt{3}}{2},b\right)%$. Comment choisir les réels $%a%$ et $%b%$ pour que $%(\vec{u},\vec{v})%$ soit une base orthonormée ?
+ 
++ $%\displaystyle a=\frac{\sqrt{3}}{2}%$ et $%\displaystyle b=\frac{1}{2}%$
++ $%\displaystyle a=-\frac{\sqrt{3}}{2}%$ et $%\displaystyle b=-\frac{1}{2}%$
+- $%\displaystyle a=\frac{\sqrt{3}}{2}%$ et $%\displaystyle b=-\frac{1}{2}%$
+- $%\displaystyle a=-\frac{\sqrt{3}}{2}%$ et $%\displaystyle b=\frac{1}{2}%$
+
+
+
+** Dans le plan muni d'une base orthonormée $%(\vec{i},\vec{j})%$, on considère deux vecteurs $%\displaystyle \vec{u}%$ et $%\displaystyle \vec{v}%$. On suppose que $%\|\vec{u}\|=3%$, $%\|\vec{v}\|=3%$ et que l'angle entre ces deux vecteurs est $%\displaystyle \frac{\pi}{3}%$. Quelle est la norme de $%\vec{u}+\vec{v}%$ ?
+ 
++ $%\displaystyle \|\vec{u}+\vec{v}\|=3\sqrt{3}%$
+- $%\displaystyle \|\vec{u}+\vec{v}\|=6%$
+- $%\displaystyle \|\vec{u}+\vec{v}\|=3%$
+- $%\displaystyle \|\vec{u}+\vec{v}\|=9%$
+
+
+
+** On considère les points $%A(1,1)%$, $%B(-1,1)%$ et $%C(1,-1)%$. Quelles sont les bonnes réponses ?
+ 
++ $%ABC%$ est un triangle rectangle en $%A%$.
++ $%ABC%$ est un triangle isocèle en $%A%$.
+- Les points $%A%$, $%B%$ et $%C%$ sont alignés.
+- $%ABC%$ est un triangle équilatéral.
+
+
+
+** Soit $%D%$ la droite définie par le paramétrage :
+\[\left\{\begin{array}{ccl}x&=&1+t\\ y&=&2-t,\quad t\in \mathbb{R}.
+\end{array}\right.\]
+Quelles sont les bonnes réponses ?
+ 
++ Une équation cartésienne de $%D%$ est : $%x+y-3=0%$.
+- Le point $%A(1,1)%$ appartient à $%D%$.
+- $%\vec{u}=(1,-1)%$ est un vecteur normal à $%D%$.
+- $%\vec{u}(1,1)%$ est un vecteur directeur de $%D%$.
+
+
+
+** Dans le plan rapporté à un repère orthonormé, on considère la droite $%D%$ passant par les points $%A(1,1)%$ et $%B(2,3)%$. Quelles sont les bonnes réponses ?
+ 
++ Une équation cartésienne de $%D%$ est : $%2x-y-1=0%$.
++ La distance du point $%N(-1,2)%$ à la droite $%D%$ est $%\sqrt{5}%$.
+- $%\vec{u}=(1,2)%$ est un vecteur normal à $%D%$.
+- Le point $%C(1,2)%$ appartient à $%D%$.
+
+
+
+** Dans le plan rapporté à un repère orthonormé, on considère les points $%\displaystyle A(1,2)%$, $%B(2,1)%$ et $%C(-2,1)%$. Quelle est la distance $%d%$ du point $%C%$ à la droite $%(AB)%$ ?
+ 
++ $%d=2\sqrt{2}%$
+- $%d=\sqrt{2}%$
+- $%d=3%$
+- $%d=\sqrt{10}%$
+
+
+
+** Dans le plan rapporté à un repère orthonormé, on considère la droite $%D%$ d\'efinie par le paramétrage :
+\[\left\{\begin{array}{ccl}x&=&1+t\\ y&=&2-t,\quad t\in \mathbb{R}.
+\end{array}\right.\]
+Quelle est la distance $%d%$ du point $%M(2,3)%$ à la droite $%D%$ ?
+ 
++ $%d=\sqrt{2}%$
+- $%d=\sqrt{3}%$
+- $%d=1%$
+- $%d=2%$
+
+
+
+** Dans le plan muni d'un repère orthonormé $%(O,\vec{i},\vec{j})%$, on considère les points $%\displaystyle A(a,b)%$ et $%\displaystyle B(1,1)%$. Comment choisir les réels $%a%$ et $%b%$ pour que l'aire du triangle de sommets $%O,A,B%$ soit égale à $%1%$ ?
+ 
++ $%\displaystyle a=2%$ et $%\displaystyle b=0%$
++ $%\displaystyle a=2+b%$ et $%\displaystyle b\in \mathbb{R}%$
+- $%\displaystyle a=1%$ et $%\displaystyle b=0%$
+- $%\displaystyle a=0%$ et $%\displaystyle b=1%$
+
+
+
+** Dans le plan muni d'un repère orthonormé direct $%(O,\vec{i},\vec{j})%$, on considère les vecteurs $%\displaystyle \vec{u}=\left(\frac{1}{2},a\right)%$ et $%\displaystyle \vec{v}=\left(-\frac{\sqrt{3}}{2},b\right)%$. Comment choisir les réels $%a%$ et $%b%$ pour que $%(\vec{u},\vec{v})%$ soit une base orthonormée directe ?
+ 
++ $%\displaystyle a=\frac{\sqrt{3}}{2}%$ et $%\displaystyle b=\frac{1}{2}%$
+- $%\displaystyle a=\frac{\sqrt{3}}{2}%$ et $%\displaystyle b=-\frac{1}{2}%$
+- $%\displaystyle a=-\frac{\sqrt{3}}{2}%$ et $%\displaystyle b=\frac{1}{2}%$
+- $%\displaystyle a=-\frac{\sqrt{3}}{2}%$ et $%\displaystyle b=-\frac{1}{2}%$
+
+
+
+** Dans le plan muni d'un repère orthonormé $%(O,\vec{i},\vec{j})%$, on considère les points $%\displaystyle A(a,b)%$ et $%\displaystyle B(1,1)%$. Comment choisir les réels $%a%$ et $%b%$ pour que le triangle de sommets $%O,A,B%$ soit rectangle et isocèle en $%A%$ ?
+ 
++ $%\displaystyle a=1%$ et $%\displaystyle b=0%$
++ $%\displaystyle a=0%$ et $%\displaystyle b=1%$
+- $%\displaystyle a=-1%$ et $%\displaystyle b=-1%$
+- $%\displaystyle a=1%$ et $%\displaystyle b=-1%$
+
+
+
+** Soit $%D%$ la droite définie par l'équation cartésienne : $%x-2y=4%$. Quelles sont les coordonnées $%(a,b)%$ du projeté orthogonal $%H(a,b)%$ du point $%M(1,1)%$ sur $%D%$ ?
+ 
++ $%(a,b)=(2,-1)%$
+- $%(a,b)=(4,0)%$
+- $%(a,b)=(6,1)%$
+- $%(a,b)=(1,1)%$
+
+
+
+** On considère trois points $%A%$, $%B%$ et $%C%$ du plan tels que
+\[(AB)\; : \; x-2y+3=0\quad \mbox{ et }\quad (AC)\; : \; 2x-y-3=0.\]
+Quelles sont les bonnes réponses ?
+ 
++ Les coordonnées de $%A%$ sont $%A(3,3)%$.
+- Les points $%A%$, $%B%$ et $%C%$ sont alignés.
+- Le point $%B%$ appartient à $%(AC)%$.
+- Le point $%C%$ appartient à $%(AB)%$.
+
+
+
+** Dans le plan rapporté à un repère orthonormé, on considère le point $%\displaystyle A(1,2)%$ et on note $%D%$ une droite passant par $%A%$ et qui est à distance $%1%$ de l'origine. Une équation cartésienne de $%D%$ est
+ 
++ $%D\; :\; x=1%$
++ $%D\; :\; 3x-4y+5=0%$
+- $%D\; :\; x+2y=0%$
+- $%D\; :\; y=2x%$
+
+
+
+** Dans le plan rapporté à un repère orthonormé, on considère la droite $%\Delta%$ d'équation $%y=x%$ et on note $%D%$ une droite perpendiculaire à $%\Delta%$ et qui est à distance $%1%$ de l'origine. Une équation cartésienne de $%D%$ est
+ 
++ $%D\; :\; x+y+\sqrt{2}=0%$
++ $%D\; :\; x+y-\sqrt{2}=0%$
+- $%D\; :\; x-y+\sqrt{2}=0%$
+- $%D\; :\; x-y-\sqrt{2}=0%$
+
+
+
+** Dans le plan rapporté à un repère orthonormé, on considère la droite $%\Delta%$ d'équation $%x=y%$ et on note $%D%$ une droite parallèle à $%\Delta%$ et qui est à distance $%1%$ de l'origine. Une équation cartésienne de $%D%$ est
+ 
++ $%D\; :\; x-y+\sqrt{2}=0%$
++ $%D\; :\; x-y-\sqrt{2}=0%$
+- $%D\; :\; x+y+\sqrt{2}=0%$
+- $%D\; :\; x+y-\sqrt{2}=0%$
+
+
+
+** Dans le plan rapporté à un repère orthonormé, on considère la droite $%\Delta%$ d'équation $%x=y%$ et on note $%D%$ une droite perpendiculaire à $%\Delta%$ et qui est à distance $%0%$ de l'origine. Une représentation paramétrique de $%D%$ est
+ 
++ $%D\; :\; x=t,\; y=-t%$ et $%t\in \mathbb{R}%$
++ $%D\; :\; x=-2t,\; y=2t%$ et $%t\in \mathbb{R}%$
+- $%D\; :\; x=t,\; y=t%$ et $%t\in \mathbb{R}%$
+- $%D\; :\; x=3t,\; y=3t%$ et $%t\in \mathbb{R}%$
+
+
+
+** Dans le plan rapporté à un repère orthonormé, on considère la droite $%\Delta%$ d'équation $%y=x%$ et on note $%D%$ une droite parallèle à $%\Delta%$ et qui est à distance $%0%$ de l'origine. Une représentation paramétrique de $%D%$ est
+ 
++ $%D\; :\; x=t,\; y=t%$ et $%t\in \mathbb{R}%$
++ $%D\; :\; x=-t,\; y=-t%$ et $%t\in \mathbb{R}%$
+- $%D\; :\; x=t,\; y=-t%$ et $%t\in \mathbb{R}%$
+- $%D\; :\; x=2t,\; y=-2t%$ et $%t\in \mathbb{R}%$
+
+
+
+** Le projeté orthogonal de l'origine $%O%$ sur une droite $%D%$ du plan est le point $%H(1,1)%$. Quelles sont les bonnes réponses ?
+ 
++ La distance entre $%O%$ et $%D%$ est $%\sqrt{2}%$.
++ Une équation cartésienne de $%D%$ est $%x+y-2=0%$.
+- La distance entre $%O%$ et $%D%$ est $%0%$.
+- Une équation cartésienne de $%D%$ est $%y=x%$.
+
+
+
+** Soit $%f(x)= \frac{x^2+2x+1}{x^2-x-1}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to +\infty} f(x)=1%$
++ $%\lim_{x\to -\infty} f(x)=1%$
+- $%\lim_{x\to +\infty} f(x)=-1%$
+- $%\lim_{x\to -\infty} f(x)=-1%$
+
+
+
+** Soit $%f(x)= \frac{x^2-1}{2x^2-x-1}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to 1} f(x)=\frac{2}{3}%$
++ $%\lim_{x\to (-\frac{1}{2})^+} f(x)=+\infty%$
+- $%\lim_{x\to 1} f(x)=0%$
+- $%\lim_{x\to -\frac{1}{2}} f(x) = +\infty%$
+
+
+
+** Soit $%f(x)= \frac{1}{x+1}+ \frac{3x}{(x+1)(x^2-x+1)}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to -1} f(x)=0%$
+- $%\lim_{x\to -1^+} f(x)=+\infty%$
+- $%\lim_{x\to -1^-} f(x)=-\infty%$
+- $%\lim_{x\to -1} f(x)=-2%$
+
+
+
+** Soit $%f(x)= \frac{\sqrt {x+1}-\sqrt {2x}}{x-1}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to +\infty} f(x)=0%$
++ $%\lim_{x\to 1} f(x)=-\frac{1}{2\sqrt 2}%$
+- $%\lim_{x\to +\infty} f(x)=+\infty%$
+- $%f%$ n'admet pas de limite en $%1%$.
+
+
+
+** Soit $%f(x)= \sqrt{x^2+x+1}+x%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to -\infty} f(x)=-\frac{1}{2}%$
+- $%\lim_{x\to -\infty} f(x)=+\infty%$
+- $%\lim_{x\to -\infty} f(x)=-\infty%$
+- $%f%$ n'admet pas de limite en $%-\infty%$.
+
+
+
+** Soit $%f(x)= x\ln x -x^2+1%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to +\infty} f(x)=-\infty%$
++ $%\lim_{x\to 0^+} f(x)=1%$
+- $%\lim_{x\to +\infty} f(x)=+\infty%$
+- $%\lim_{x\to 0^+} f(x)=0%$
+
+
+
+** Soit $%f(x)= e^{2x}-x^7+x^2-1%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to +\infty} f(x)=+\infty%$
++ $%\lim_{x\to -\infty} f(x)=+\infty%$
+- $%\lim_{x\to +\infty} f(x)=-\infty%$
+- $%\lim_{x\to -\infty} f(x)=-\infty%$
+
+
+
+** Soit $%f(x)= (x^5-x^3+1)e^{-x}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to +\infty} f(x)=0%$
++ $%\lim_{x\to -\infty} f(x)=-\infty%$
+- $%\lim_{x\to +\infty} f(x)=+\infty%$
+- $%\lim_{x\to -\infty} f(x)=+\infty%$
+
+
+
+** Soit $%f(x)= \sin x \cdot  \sin\frac{1}{x}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to 0} f(x)=0%$
++ $%\lim_{x\to +\infty} f(x)=0%$
+- $%f%$ n'admet pas de limite en $%0%$.
+- $%f%$ n'admet pas de limite en $%+\infty%$.
+
+
+
+** Soit $%f(x)= e^{-x}\cos(e^{2x})%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to +\infty} f(x)=0%$
++ $%\lim_{x\to -\infty} f(x)=+\infty%$
+- $%f%$ n'admet pas de limite en $%+\infty%$.
+- $%f%$ n'admet pas de limite en $%-\infty%$.
+
+
+
+** Soit $%a\in \mathbb{R}%$, $%I%$ un intervalle contenant $%a%$ et $%f%$ une fonction définie sur $%I \setminus\{a\}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to a} f(x)=l \, (l\in \mathbb{R})%$ si et seulement si  $%\forall arepsilon >0,  \exists \alpha > 0, \forall x \in I\setminus\{a\}, |x-a| < \alpha \Rightarrow |f(x)-l|<arepsilon%$
++ $%\lim_{x\to a} f(x)=-\infty%$ si et seulement si $%\forall A < 0,  \exists \alpha > 0, \forall x \in I\setminus\{a\}, |x-a| < \alpha \Rightarrow f(x) < A%$
+- $%\lim_{x\to a} f(x)=l \, (l\in \mathbb{R})%$ si et seulement si $%\forall arepsilon >0,  \exists \alpha > 0, \forall x  \in I\setminus\{a\}, |x-a|<arepsilon \Rightarrow |f(x)-l|<\alpha %$
+- $%\lim_{x\to a} f(x)=+\infty%$ si et seulement si $%\forall A > 0,  \exists \alpha > 0, \forall x \in I\setminus\{a\}, f(x) > A \Rightarrow |x-a| < \alpha%$
+
+
+
+** Soit  $%f%$ une fonction définie sur $%\mathbb{R}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to +\infty} f(x)=l \, (l\in \mathbb{R})%$  si et seulement si $%\forall arepsilon >0,  \exists A >0, \forall x \in \mathbb{R}, x\geqslant A \Rightarrow |f(x)-l|\leqslant arepsilon%$
++ $%\lim_{x\to -\infty} f(x)=+\infty%$  si et seulement si $% \forall A >0,  \exists B <0, \forall x \in \mathbb{R}, x\leqslant B \Rightarrow f(x)\geqslant A%$
+- $%\lim_{x\to +\infty} f(x)=l \, (l\in \mathbb{R})%$  si et seulement si $% \forall arepsilon >0,  \exists A >0, \forall x \in \mathbb{R}, |f(x)-l|<arepsilon \Rightarrow x>A%$
+- $%\lim_{x\to -\infty} f(x)=-\infty%$  si et seulement si $%  \exists B<0, \forall A < 0,   \forall x \in \mathbb{R}, x < B \Rightarrow f(x) < A%$
+
+
+
+** Soit $%f(x)= \frac{\sqrt x}{\sqrt{x+\sqrt{x}}}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to 0^+} f(x)=0%$
++ $%\lim_{x\to +\infty} f(x)=1%$
+- $%\lim_{x\to 0^+} f(x)=+\infty%$
+- $%f%$ n'admet pas de limite en $%+\infty%$.
+
+
+
+** Soit $%f(x)= x-\frac{|x|}{x}%$. Quelles sont les assertions vraies ?
+ 
++ $%f%$ n'admet pas de limite en $%0%$.
+- $%\lim_{x\to 0} f(x)=0%$
+- $%\lim_{x\to +\infty} f(x)=0%$
+- $%\lim_{x\to -\infty} f(x)=+\infty%$
+
+
+
+** Soit $%f(x)= \frac{x}{|x-1|}-\frac{3x-1}{|x^2-1|}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to 1} f(x)=0%$
++ $%\lim_{x\to -1} f(x)=+\infty%$
+- $%\lim_{x\to 1} f(x)=1%$
+- $%f%$ n'admet pas de limite en $%-1%$.
+
+
+
+** Soit $%f(x)= \sin x%$. Quelles sont les assertions vraies ?
+ 
++ $%f%$ n'admet pas de limite en $%+\infty%$.
++ $%f%$ n'admet pas de limite en $%-\infty%$.
+- $%\lim_{x\to +\infty} f(x)=1%$
+- $%\lim_{x\to -\infty} f(x)=-1%$
+
+
+
+** Soit $%f(x)= \frac{\ln(1+x)}{x}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to 0} f(x)=1%$
+- $%\lim_{x\to 0} f(x)=0%$
+- $%\lim_{x\to 0} f(x)=+\infty%$
+- $%f%$ n'admet pas de limite en $%0%$.
+
+
+
+** Soit $%f(x)= \frac{\sin x}{x}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to 0} f(x)=1%$
+- $%f%$ n'admet pas de limite en $%0%$.
+- $%\lim_{x\to 0} f(x)=0%$
+- $%\lim_{x\to 0} f(x)=+\infty%$
+
+
+
+** Soit $%f(x)= \frac{\sin(3x)}{\sin(4x)}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to 0} f(x)=\frac{3}{4}%$
+- $%f%$ n'admet pas de limite en $%0%$
+- $%\lim_{x\to 0} f(x)= \frac{4}{3}%$
+- $%\lim_{x\to 0} f(x)=0%$
+
+
+
+** Soit $%f(x)= \frac{\cos x-1}{x^2}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to 0} f(x)=-\frac{1}{2}%$
+- $%f%$ n'admet pas de limite en $%0%$.
+- $%\lim_{x\to 0} f(x)=+\infty%$
+- $%\lim_{x\to 0} f(x)=\frac{1}{2}%$
+
+
+
+** Soit $%f(x)= xE(\frac{1}{x})%$, où $%E%$ désigne la partie entière. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to 0} f(x)=1%$
+- $%\lim_{x\to 0} f(x)=0%$
+- $%\lim_{x\to 0} f(x)=+\infty%$
+- $%f%$ n'admet pas de limite en $%0%$.
+
+
+
+** Soit $%f(x)= xE(\frac{1}{x})%$, où $%E%$ désigne la partie entière. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to +\infty} f(x)=0%$
++ $%\lim_{x\to -\infty} f(x)=+\infty%$
+- $%\lim_{x\to +\infty} f(x)=+\infty%$
+- $%\lim_{x\to -\infty} f(x)=0%$
+
+
+
+** Soit  $%f%$ une fonction définie sur $%[0,1]%$ par : $%f(x)=\left\{\begin{array}{cc}x-1,& \mbox{si} \, x \in \mathbb{R} \setminus \mathbb{Q}\\ 1,&  \mbox{si} \, x \in \mathbb{Q}  \end{array}\right.%$. Quelles sont les assertions vraies ?
+ 
++ $%f%$ n'admet pas de limite en $%0%$.
+- $%\lim_{x\to 0} f(x)=1%$
+- $%\lim_{x\to 0} f(x)=0%$
+- $%\lim_{x\to 0} f(x)=-1%$
+
+
+
+** Soit  $%f%$ une fonction définie sur $%]0,1[%$ par :  
+$%f(x)=1%$, si $%x \in \mathbb{R} \setminus \mathbb{Q}%$ et $%f(x)=\frac{1}{m},%$ si $%x= \frac{n}{m},%$ où  $%n, m \in \mathbb{N}^*%$ tels que $% \frac{n}{m}%$ soit une fraction irréductible. Quelles sont les assertions vraies ?
+ 
++ $%f%$ n'admet pas de limite en $%1^-%$.
+- $%\lim_{x\to 1^-} f(x)=0%$
+- $%\lim_{x\to 1^-} f(x)=1%$
+- $%\lim_{x\to 1^-} f(x)=+\infty%$
+
+
+
+** Soit  $%f:\mathbb{R} \to \mathbb{R}%$ une fonction croissante. Quelles sont les assertions vraies ?
+ 
++ $%f%$ admet une  limite en $%+\infty%$.
++ Si $%f%$ est majorée, $%f%$ admet une  limite finie en $%+\infty%$.
++ Si $%f%$ est non majorée, $%\lim_{x\to +\infty } f(x)=+\infty%$.
+- $%f%$ n'admet pas de limite en $%+\infty%$.
+
+
+
+** Soit $%f(x)= \frac{\sqrt{x+1}-1}{\sqrt[3]{x+1}-1}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to 0} f(x)=\frac{3}{2}%$
+- $%\lim_{x\to 0} f(x)=0%$
+- $%f%$ n'admet pas de limite en $%0%$.
+- $%\lim_{x\to 0} f(x)=+\infty%$
+
+
+
+** Soit  $%f(x)=x+\sqrt[5]{1-x^5}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to +\infty} f(x)=0%$
++ $%\lim_{x\to -\infty} f(x)=0%$
+- $%\lim_{x\to +\infty } f(x)=+\infty%$
+- $%\lim_{x\to -\infty } f(x)=-\infty%$
+
+
+
+** Soit  $%f(x)=\sqrt{x^3+2x^2+3}-ax\sqrt{x+b}, \, a,b \in \mathbb{R}%$. $%f%$ admet une limite  finie en $%+\infty%$  si et seulement si  :
+ 
++ $%a=1%$ et $%b=2%$
+- $% a>0 %$ et $%b>0%$
+- $%a=1%$ et $%b>0%$ 
+- $%a=1%$ et $%b=0%$
+
+
+
+** Soit  $%f%$ la fonction définie sur $%]\frac{3}{2}, +\infty[ \setminus \{2\}%$  par : $%f(x)=\left\{\begin{array}{cc}a\frac{\sqrt{x-1}-1}{x-2},& \mbox{si} \, x<2  \\ \frac{\sqrt{2x-3}-b}{x-2},&  \mbox{si} \, x >2  \end{array}\right.%$. $%f%$ admet une limite  finie quand $%x%$ tend vers $%2%$ si et seulement si :
+ 
++ $%a=2%$ et $%b=1%$
+- $%a>0%$ et $%b >0%$ 
+- $%a=2%$ et  $%b >0%$ 
+- $%a=0%$ et $%b=1%$
+
+
+
+** Soit  $%f(x)=\frac{(2x)^x}{x^{(2x)}}%$. Quelles sont les assertions vraies ?
+ 
++ $%\lim_{x\to +\infty } f(x)=0%$
+- $%\lim_{x\to +\infty} f(x)=+\infty%$
+- $%f%$ n'admet pas de limite en $%+\infty%$.
+- $%\lim_{x\to +\infty} f(x)=1%$
+
+
+
+** Soit $%P%$ une assertion vraie et $%Q%$ une assertion fausse. Quelles sont les assertions vraies ?
+ 
++ $%P%$ ou $%Q%$
++ non($%P%$ et $%Q%$)
+- $%P%$ et $%Q%$
+- non($%P%$) ou $%Q%$
+
+
+
+** Par quoi peut-on compléter les pointillés pour avoir les deux assertions vraies ?
+\[x\geqslant 2 \quad \ldots \quad x^2 \geqslant 4  \qquad \qquad |y| \leqslant 3 \quad \ldots \quad 0 \leqslant y \leqslant 3\]
+ 
++ $%\implies%$ et $%\Longleftarrow%$
+- $%\Longleftarrow%$ et $%\implies%$
+- $%\implies%$ et $%\implies%$
+- $%\Longleftarrow%$ et $%\implies%$
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ $%\forall n \in \mathbb{N} \quad n^2-n \geqslant 0%$
++ $%\forall x \in \mathbb{R} \quad |x^3-x| \geqslant 0%$
++ $%\forall n \in \mathbb{N} \setminus \{0,1\} \quad n^2-3 \geqslant 0%$
+- $%\forall x \in \mathbb{R} \quad x^2-x \geqslant 0%$
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ $%\exists x>0 \quad \sqrt{x} = x%$
++ $%\exists z \in \mathbb{C} \quad z^2 = -4%$
+- $%\exists x <0 \quad \exp(x) < 0%$
+- $%\exists n \in \mathbb{N} \quad n^2 = 17%$
+
+
+
+** Un groupe de coureurs $%C%$ chronomètre ses temps : $%t(c)%$ désigne le temps (en secondes) du coureur $%c%$.
+Dans ce groupe Valentin et Chloé ont réalisé le meilleur temps de $%47%$ secondes. Tom est déçu car il est arrivé troisième, avec un temps de $%55%$ secondes.
+À partir de ces informations, quelles sont les assertions dont on peut déduire qu'elles sont vraies ?
+ 
++ $%\forall c \in C \quad t(c) \geqslant 47%$
++ $%\exists c \in C \quad t(c) > 47%$
+- $%\exists c \in C \quad 47 < t(c) < 55%$
+- $%\forall c \in C \quad t(c) \leqslant 55%$
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ La négation de "$%\exists x > 0 \quad \ln(x^2) \neq x%$" est "$%\forall x > 0 \quad \ln(x^2) = x%$".
+- La négation de "$%\forall x > 0 \quad \ln(x) \leqslant x%$" est "$%\exists x \leqslant 0 \quad  \ln(x) \leqslant x%$".
+- La négation de "$%\forall x \geqslant 0 \quad \exp(x) \geqslant x%$" est "$%\exists x \geqslant 0 \quad  \exp(x) \leqslant x%$".
+- La négation de "$%\exists x > 0 \quad \exp(x) >  x%$" est "$%\forall x > 0 \quad \exp(x) < x%$".
+
+
+
+** Soit $%P%$ une assertion fausse, $%Q%$ une assertion vraie et $%R%$ une assertion fausse. Quelles sont les assertions vraies ?
+ 
++ non($%P%$ et $%Q%$ et $%R%$)
++ ($%P%$ ou $%Q%$) et ($%Q%$ ou $%R%$)
+- $%Q%$ et ($%P%$ ou $%R%$)
+- $%P%$ ou ($%Q%$ et $%R%$)
+
+
+
+** Soient $%P%$ et $%Q%$ deux assertions. Quelles sont les assertions toujours vraies (que $%P%$ et $%Q%$ soient vraies ou fausses)  ?
+ 
++ non($%P%$) ou $%P%$
++ ($%P%$ ou $%Q%$) ou ($%P%$ ou non($%Q%$))
+- $%P%$ et non($%P%$)
+- non($%Q%$) ou $%P%$
+
+
+
+** Par quoi peut-on compléter les pointillés pour avoir une assertion vraie ?
+\[|x^2| < 5 \quad \ldots \quad -\sqrt{5} < x < \sqrt{5}\]
+ 
++ $%\Longleftarrow%$
++ $%\implies%$
++ $%\iff%$
+- Aucune des réponses ci-dessus ne convient.
+
+
+
+** À quoi est équivalent $%P \implies Q%$ ?
+ 
++ non($%P%$) ou $%Q%$
+- non($%P%$) ou non($%Q%$)
+- non($%P%$) et non($%Q%$)
+- $%P%$ et non($%Q%$)
+
+
+
+** Soit $%f : ]0,+\infty[ \to \mathbb{R}%$ la fonction définie par $%f(x) = \frac{1}{x}%$. Quelles sont les assertions vraies ?
+ 
++ $%\forall x \in ]0,+\infty[ \quad \exists y \in \mathbb{R} \qquad y = f(x)%$
++ $%\exists x \in ]0,+\infty[ \quad \exists y \in \mathbb{R} \qquad y = f(x)%$
+- $%\exists x \in ]0,+\infty[ \quad \forall y \in \mathbb{R} \qquad y = f(x)%$
+- $%\forall x \in ]0,+\infty[ \quad \forall y \in \mathbb{R} \qquad y = f(x)%$
+
+
+
+** Le disque centré à l'origine de rayon $%1%$ est défini par 
+\[D = \left\{ (x,y) \in \mathbb{R}^2 \mid x^2+y^2 \leqslant 1\right\}.\]
+Quelles sont les assertions vraies ?
+ 
++ $%\exists x \in [-1,1] \quad \exists y \in [-1,1] \qquad (x,y) \in D%$
++ $%\exists x \in [-1,1] \quad \forall y \in [-1,1] \qquad (x,y) \in D%$
++ $%\forall x \in [-1,1] \quad \exists y \in [-1,1] \qquad (x,y) \in D%$
+- $%\forall x \in [-1,1] \quad \forall y \in [-1,1] \qquad (x,y) \in D%$
+
+
+
+** On définit l'assertion "ou exclusif", noté "xou" en disant que "$%P%$ xou $%Q%$" est vraie lorsque $%P%$ est vraie, ou $%Q%$ est vraie, mais pas lorsque les deux sont vraies en même temps. Quelles sont les assertions vraies ?
+ 
++ Si "$%P%$ ou $%Q%$" est fausse alors "$%P%$ xou $%Q%$" aussi.
++ "$%P%$ xou $%Q%$" est équivalent à "($%P%$ ou $%Q%$) et (non($%P%$) ou non($%Q%$))"
+- Si "$%P%$ ou $%Q%$" est vraie alors "$%P%$ xou $%Q%$" aussi.
+- "$%P%$ xou $%Q%$" est équivalent à "($%P%$ ou $%Q%$) ou (non($%P%$) ou non($%Q%$))"
+
+
+
+** Soient $%P%$ et $%Q%$ deux assertions. Quelles sont les assertions toujours vraies (que $%P%$, $%Q%$ soient vraies ou fausses)  ?
+ 
++ ($%P \implies Q%$) ou ($%Q \implies P%$)
++ ($%P \implies Q%$) ou ($%P%$ et non($%Q%$))
++ $%P%$ ou ($%P \implies Q%$)
+- ($%P \iff Q%$) ou (non($%P%$) $%\iff%$ non($%Q%$))
+
+
+
+** À quoi est équivalent $%P \Longleftarrow Q%$ ?
+ 
++ non($%Q%$) ou $%P%$
+- non($%Q%$) et $%P%$
+- non($%P%$) ou $%Q%$
+- non($%P%$) et $%Q%$
+
+
+
+** Soit $%f : \mathbb{R} \to \mathbb{R}%$ la fonction définie par $%f(x)=\exp(x)-1%$.
+Quelles sont les assertions vraies ?
+ 
++ $%\forall x,x' \in \mathbb{R}  \qquad x \neq x' \implies f(x) \neq f(x')%$
++ $%\forall x,x' \in \mathbb{R}  \qquad x \neq x' \Longleftarrow f(x) \neq f(x')%$
++ $%\forall x,x' \in \mathbb{R}  \qquad  f(x)\times f(x') < 0 \implies x\times x' < 0%$
+- $%\forall x,x' \in \mathbb{R}  \qquad x \neq x' \implies (\exists y \in \mathbb{R} \quad f(x) < y < f(x'))%$
+
+
+
+** On considère l'ensemble 
+\[E = \left\{ (x,y) \in \mathbb{R}^2 \mid 0 \leqslant x \leqslant 1 \text{ et } y \geqslant \sqrt{x}  \right\}.\]
+Quelles sont les assertions vraies ?
+ 
++ $%\forall y \geqslant 0 \quad \exists x \in [0,1] \qquad (x,y) \in E%$
++ $%\exists y \geqslant 0 \quad \forall x \in [0,1] \qquad (x,y) \in E%$
+- $%\forall x \in [0,1] \quad \exists y \geqslant 0 \qquad (x,y) \notin E%$
+- $%\forall x \in [0,1] \quad \forall y \geqslant 0 \qquad (x,y) \notin E%$
+
+
+
+** Soit $%f : ]0,+\infty[ \to ]0,+\infty[%$ une fonction.
+Quelles sont les assertions vraies ?
+ 
++ La négation de "$%\forall x,x' > 0 \quad f(x) = f(x') \implies x = x'%$" est "$%\exists x,x' > 0 \quad x \neq x'%$ et $%f(x) = f(x')%$".
+- La négation de "$%\forall x > 0 \quad \exists y > 0 \quad y \neq f(x)%$" est "$%\exists x > 0 \quad \exists y > 0 \quad y = f(x)%$".
+- La négation de "$%\exists x > 0 \quad \forall y > 0 \quad y \times f(x)>0%$" est "$%\forall x > 0 \quad \exists y > 0 \quad y\times f(x) < 0%$".
+- La négation de "$%\forall x,x' > 0 \quad x \neq x' \implies f(x) \neq f(x')%$" est "$%\exists x,x' > 0 \quad x = x'%$ et $%f(x) = f(x')%$".
+
+
+
+** Je veux montrer que $%\frac{n(n+1)}{2}%$ est un entier, quelque soit $%n\in\mathbb{N}%$.  Quelles sont les démarches possibles ?
+ 
++ Séparer le cas $%n%$ pair, du cas $%n%$ impair.
+- Montrer que la fonction $%x \mapsto x(x+1)%$ est paire.
+- Par l'absurde, supposer que $%\frac{n(n+1)}{2}%$ est un réel, puis chercher une contradiction.
+- Le résultat est faux, je cherche un contre-exemple.
+
+
+
+** Je veux montrer par récurrence l'assertion $%H_n : 2^n > 2n-1%$, pour tout entier $%n%$ assez grand. Quelle étape d'initialisation est valable ?
+ 
++ Je commence à $%n=2%$.
++ Je commence à $%n=3%$.
+- Je commence à $%n=0%$.
+- Je commence à $%n=1%$.
+
+
+
+** Je veux montrer par récurrence l'assertion $%H_n : 2^n > 2n-1%$, pour tout entier $%n%$ assez grand. Pour l'étape d'hérédité je suppose $%H_n%$ vraie, quelle(s) inégalité(s) dois-je maintenant démontrer ?
+ 
++ $%2^{n+1} > 2n+1%$
+- $%2^{n} > 2n-1%$
+- $%2^{n} > 2(n+1)-1%$
+- $%2^{n}+1 > 2(n+1)-1%$
+
+
+
+** Chercher un contre-exemple à une assertion du type 
+"$%\forall x \in E%$ l'assertion $%P(x)%$ est vraie" revient à prouver l'assertion :
+ 
++ $%\exists x \in E \quad%$ l'assertion $%P(x)%$ est fausse.
+- $%\exists! x \in E \quad%$ l'assertion $%P(x)%$ est fausse.
+- $%\forall x \notin E \quad%$ l'assertion $%P(x)%$ est fausse.
+- $%\forall x \in E \quad%$ l'assertion $%P(x)%$ est fausse.
+
+
+
+** J'effectue le raisonnement suivant avec deux fonctions $%f,g : \mathbb{R} \to \mathbb{R}%$.
+\[\forall x \in \mathbb{R} \quad f(x)\times g(x) = 0\] 
+\[\implies \forall x \in \mathbb{R} \quad \big(f(x) = 0 \text{ ou } g(x) = 0\big)\]
+\[\implies \big(\forall x \in \mathbb{R} \quad f(x) = 0\big) \ \text{ ou } \ \big(\forall x \in \mathbb{R} \quad g(x) = 0\big)\]
+ 
++ Ce raisonnement est faux car la seconde implication est fausse.
+- Ce raisonnement est valide.
+- Ce raisonnement est faux car la première implication est fausse.
+- Ce raisonnement est faux car la première et la seconde implication sont fausses.
+
+
+
+** Je souhaite montrer par récurrence une certaine assertion $%H_n%$, pour tout entier $%n\ge0%$.
+Quels sont les débuts valables pour la rédaction de l'étape d'hérédité ?
+ 
++ Je fixe $%n\ge0%$, je suppose $%H_n%$ vraie, et je montre que $%H_{n+1}%$ est vraie.
+- Je suppose $%H_n%$ vraie pour tout $%n\ge0%$, et je montre que $%H_{n+1}%$ est vraie.
+- Je suppose $%H_{n-1}%$ vraie pour tout $%n\ge1%$, et je montre que $%H_{n}%$ est vraie.
+- Je fixe $%n\ge0%$ et je montre que $%H_{n+1}%$ est vraie.
+
+
+
+** Je veux montrer que $%e^x > x%$ pour tout $%x%$ réel avec $%x \geqslant 1%$.
+L'initialisation est vraie pour $%x=1%$, car $%e^1 = 2,718\ldots >1%$.
+Pour l'hérédité, je suppose $%e^x>x%$ et je calcule :
+\[e^{x+1} = e^x \times e > x  \times e \geqslant x \times 2 \geqslant x + 1.\]
+Je conclus par le principe de récurrence.
+Pour quelles raisons cette preuve n'est pas valide ?
+ 
++ Car $%x%$ est un réel.
+- Car il faudrait commencer l'initialisation à $%x=0%$.
+- Car l'inégalité $%e^x > x%$ est fausse pour $%x\le0%$.
+- Car la suite d'inégalités est fausse.
+
+
+
+** Pour montrer que l'assertion 
+"$%\forall n \in \mathbb{N} \quad n^2 > 3n-1%$" est fausse,
+quels sont les arguments valables ?
+ 
++ L'assertion est fausse, car pour $%n=1%$ l'inégalité est fausse.
++ L'assertion est fausse, car pour $%n=2%$ l'inégalité est fausse.
++ L'assertion est fausse, car pour $%n=1%$ et $%n=2%$ l'inégalité est fausse.
+- L'assertion est fausse, car pour $%n=0%$ l'inégalité est fausse.
+
+
+
+** Le raisonnement par contraposée est basé
+sur le fait que "$%P \implies Q%$" est équivalent à:
+ 
++ "non($%Q%$) $%\implies%$ non($%P%$)".
+- "non($%P%$) $%\implies%$ non($%Q%$)".
+- "non($%P%$) ou $%Q%$".
+- "$%P%$ ou non($%Q%$)".
+
+
+
+** Par quelle phrase puis-je remplacer la proposition logique "$%P \Longleftarrow Q%$" ?
+ 
++ "$%P%$ si $%Q%$"
++ "$%Q%$ est une condition suffisante pour obtenir $%P%$"
+- "$%P%$ seulement si $%Q%$"
+- "$%Q%$ est une condition nécessaire pour obtenir $%P%$"
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ La réciproque de "$%P \implies Q%$" est "$%Q \implies P%$"
+- La négation de "$%P \implies Q%$" est "non($%Q%$) ou $%P%$"
+- La contraposée de "$%P \implies Q%$" est "non($%P%$) $%\implies%$ non($%Q%$)"
+- L'assertion "$%P \implies Q%$" est équivalente à "non($%P%$) ou non($%Q%$)"
+
+
+
+** Je veux montrer que $%\sqrt{13} \notin \mathbb{Q}%$ par un raisonnement par l'absurde. Quel schéma de raisonnement est adapté ?
+ 
++ Je suppose que $%\sqrt{13}%$ est rationnel et je cherche une contradiction.
++ J'écris $%\sqrt{13} = \frac{p}{q}%$ (avec $%p,q%$ entiers) et je cherche une contradiction.
+- Je suppose que $%\sqrt{13}%$ est irrationnel et je cherche une contradiction.
+- J'écris $%13 = \frac{p}{q}%$ (avec $%p,q%$ entiers) et je cherche une contradiction.
+
+
+
+** Soit $%z=(1-2i)^2%$. Quelles sont les assertions vraies ?
+ 
++ $%z=-3-4i%$
++ Le module de $%z%$ est $%5%$.
+- $%z=5-4i%$
+- Le conjugué de $%z%$ est : $%\overline{z}=3+4i%$.
+
+
+
+** Soit $%z=\frac{i+1}{1-i\sqrt 3}%$. Quelles sont les assertions vraies ?
+ 
++ $%|z|=\frac{1}{\sqrt 2}%$
++ $%z\overline{z} =\frac{1}{2}%$
++ Un argument de $%z%$ est : $%\frac{7\pi}{12}%$.
+- Le conjugué de $%z%$ est : $%\overline{z}=\frac{i-1}{1+i\sqrt 3}%$.
+
+
+
+** Soit $%z%$ un nombre complexe de module $%2%$ et d'argument $%\frac{\pi}{4}%$. L'écriture algébrique de $%z%$ est :
+ 
++ $%z= \sqrt 2+i\sqrt 2%$
+- $%z= \sqrt 2-i\sqrt 2%$
+- $%z= 2+2i%$
+- $%z= 2-2i%$
+
+
+
+** Soit $%\theta \in \mathbb{R}%$. $%e^{i\theta}\in \mathbb{R}%$  si et seulement si :
+ 
++ $%\theta  =k\pi%$, $%k \in \mathbb{Z}%$
+- $%\theta  =0%$ 
+- $%\theta  =2\pi%$
+- $%\theta  = 2k\pi%$, $%k \in \mathbb{Z}%$
+
+
+
+** Soit $%\theta%$ un réel.  Quelles sont les assertions vraies ?
+ 
++ $%\cos^2\theta= \frac{1+\cos(2\theta)}{2}%$
++ $%\sin^2\theta= \frac{1-\cos(2\theta)}{2}%$
+- $%\cos^2\theta= \frac{1-\cos(2\theta)}{2}%$
+- $%\sin^2\theta= \frac{1+\cos(2\theta)}{2}%$
+
+
+
+** Soit $%\theta%$ un réel.  Quelles sont les assertions vraies ?
+ 
++ $%\cos(2\theta)= \cos^2\theta -\sin^2 \theta%$
++ $%\sin(2\theta)= 2\cos\theta \sin \theta%$
+- $%\cos(2\theta)= 2\cos\theta \sin \theta%$
+- $%\sin(2\theta)= \cos^2\theta -\sin^2 \theta%$
+
+
+
+** Soit $%z=\frac{(1-i)^{10}}{(1+i\sqrt 3)^4}%$. Quelles sont les assertions vraies ?
+ 
++ $%|z|=2%$
++ $%\arg z = \frac{\pi}{6} \, [2\pi]%$
+- $%|z|=\frac{1}{2}%$
+- $%\arg z = -\frac{\pi}{6} \, [2\pi]%$
+
+
+
+** Soit $%z=\frac{\cos \theta + i \sin \theta}{\cos \phi - i \sin \phi}%$, $%\theta, \phi \in \mathbb{R}%$. 
+Quelles sont les assertions vraies ?
+ 
++ $%\arg z = \theta + \phi \, [2\pi]%$
++ $%z = \cos (\theta+\phi) + i \sin (\theta + \phi)%$
++ $%|z|=1%$
+- $%|z|=2%$
+
+
+
+** Soit $%z_1%$ et $%z_2%$ deux nombres complexes. Alors, $%|z_1+z_2|^2 + |z_1-z_2|^2%$ est égal à :
+ 
++ $% 2|z_1|^2 +2|z_2|^2%$
+- $%|z_1|^2+|z_2|^2%$
+- $%|z_1|^2-|z_2|^2%$
+- $% 2|z_1|^2 -2|z_2|^2%$
+
+
+
+** Soit $%\theta%$ un réel.  Quelles sont les assertions vraies ?
+ 
++ $%\cos^3\theta= \frac{1}{4}(\cos(3\theta) + 3\cos \theta)%$
++ $%\sin^3\theta= \frac{1}{4}(3\sin \theta - \sin(3\theta))%$
+- $%\cos^3\theta= \frac{1}{8}(\cos(3\theta) +3\cos \theta)%$
+- $%\sin^3\theta= \frac{1}{4}(3\sin \theta + \sin(3\theta))%$
+
+
+
+** Soit $%\theta%$ un réel.  Quelles sont les assertions vraies ?
+ 
++ $%\cos(5\theta)= \cos^5\theta -10\cos^3\theta \sin^2\theta + 5\cos \theta\sin^4 \theta%$
++ $%\sin(5\theta)= 5\cos^4\theta \sin\theta-10\cos^2\theta \sin^3\theta + \sin^5\theta%$
+- $%\cos(5\theta)= \cos^5\theta +10\cos^3\theta \sin^2\theta + 5\cos \theta\sin^4 \theta%$
+- $%\sin(5\theta)= 5\cos^4\theta \sin\theta+10\cos^2\theta \sin^3\theta + \sin^5\theta%$
+
+
+
+** Par définition, si  $%x,y \in \mathbb{R}, \, e^{x+iy} = e^x \cdot e^{iy}= e^x (\cos y +i \sin y)%$.
+Soit $%z=e^{e^{i\theta}}%$, où $%\theta%$ est un réel. Quelles sont les assertions vraies ?
+ 
++ $%|z|=e^{\cos \theta} %$
++ $%\arg z = \sin \theta \, [2\pi]%$
+- $%|z|=1 %$
+- $%\arg z = \theta \,  [2\pi]%$
+
+
+
+** Soit $%z=1+ e^{i\theta},\theta \in ]-\pi,\pi[%$. Quelles sont les assertions vraies ?
+ 
++ $%|z|=2\cos(\frac{\theta}{2}) %$
++ $%\arg z =  \frac{\theta}{2} \, [2\pi]%$
+- $%|z|=2 %$
+- $%\arg z = \theta \, [2\pi]%$
+
+
+
+** Soit $%z=e^{i\theta} + e^{i\phi} ,\theta, \phi \in \mathbb{R}%$ tels que $%-\pi < \theta - \phi < \pi%$. Quelles sont les assertions vraies ?
+ 
++ $%|z|=2\cos (\frac{ \theta -\phi}{2}) %$
++ $%\arg z = \frac{\theta+ \phi}{2} \, [2\pi]%$
+- $%|z|=2 %$
+- $%\arg z = \theta +\phi  \, [2\pi]%$
+
+
+
+** Soit $%x\in \mathbb{R}\backslash \{2k\pi, k \in \mathbb{Z}\}%$, $%n \in \mathbb{N}^*%$, 
+$%S_1= \sum_{k=0}^{n} \cos(kx)%$ et $%S_2= \sum_{k=0}^{n} \sin(kx)%$. Quelles sont les assertions vraies ?
+ 
++ $%S_1= \cos (\frac{nx}{2})\cdot  \frac{\sin (\frac{n+1}{2})x}{\sin (\frac{x}{2})}%$
++ $%S_2=\sin (\frac{nx}{2}) \cdot  \frac{\sin (\frac{n+1}{2})x}{\sin (\frac{x}{2})}%$
+- $%S_1= \sin (\frac{nx}{2}) \cdot  \frac{\sin (\frac{n+1}{2})x}{\sin (\frac{x}{2})}%$
+- $%S_2= \cos (\frac{nx}{2}) \cdot  \frac{\sin (\frac{n+1}{2})x}{\sin (\frac{x}{2})}%$
+
+
+
+** Les racines carrées de $%i%$ sont :
+ 
++ $%\frac{1+i}{\sqrt 2}%$ et $%-\frac{1+i}{\sqrt 2}%$
++ $%e^{\frac{i\pi}{4}}%$ et $%-e^{\frac{i\pi}{4}}%$
+- $%\frac{1+i}{2}%$ et $%-\frac{1+i}{2}%$
+- $%e^{\frac{i\pi}{4}}%$ et $%e^{\frac{-i\pi}{4}}%$ 
+
+
+
+** On considère l'équation : $%(E) : \, z^2+z+1=0%$, $%z\in \mathbb{C}%$.   Quelles sont les assertions vraies ?
+ 
++ Les solutions de $%(E)%$ sont : $%z_1= \frac{-1+i\sqrt3}{2}%$ et $%z_2= -\frac{1+i\sqrt3}{2}%$.
++ Les solutions de $%(E)%$ sont : $%z_1= e^{\frac{2i\pi}{3}}%$ et $%z_2=e^{\frac{-2i\pi}{3}}%$.
++ Si $%z%$ est une solution de $%(E)%$, alors $%|z|=1%$.
+- Les solutions de $%(E)%$ sont : $%z_1= \frac{-1+\sqrt5}{2}%$ et $%z_2= -\frac{1+\sqrt5}{2}%$.
+
+
+
+** Les racines cubiques de $%1+i%$ sont :
+ 
++ $%z_k=\sqrt[6]{2}e^{i(\frac{\pi}{12}+\frac{2k\pi}{3})}, k=0,1,2%$
++ $%z_k=\sqrt[6]{2}e^{i(\frac{\pi}{12}-\frac{2k\pi}{3})}, k=0,1,2%$ 
+- $%z_k=\sqrt[3]{2}e^{i(\frac{\pi}{12}+\frac{2k\pi}{3})}, k=0,1,2%$
+- $%z_k=\sqrt[3]{2}e^{i(\frac{\pi}{12}-\frac{2k\pi}{3})}, k=0,1,2%$
+
+
+
+** Soit $%z\in \mathbb{C}%$ tel que $%|z-2|=1%$.  Quelles sont les assertions vraies ?
+ 
++ $%z=2+e^{i\theta}%$, $%\theta \in \mathbb{R}%$
++ Le point du plan d'affixe $%z%$ appartient au cercle de rayon $%1%$ et de centre le point d'affixe $%2%$.
+- $%z=3%$
+- $%z=1%$
+
+
+
+** On considère l'équation : $%(E) : \, z^2-2iz-1-i=0%$, $%z\in \mathbb{C}%$.   Quelles sont les assertions vraies ?
+ 
++ Le discriminant de l'équation est : $%\Delta = 4i%$.
++ les solutions de $%(E)%$ sont : $%z_1=\frac{\sqrt 2+ (2+\sqrt 2)i}{2}%$ et $%z_2=\frac{-\sqrt 2+ (2-\sqrt 2)i}{2}%$.
+- Le discriminant de l'équation est : $%\Delta = 8+4i%$.
+- les solutions de $%(E)%$ sont :  $%z_1=\frac{\sqrt 2+ (1+\sqrt 2)i}{2}%$ et $%z_2=\frac{\sqrt 2+ (1-\sqrt 2)i}{2}%$.
+
+
+
+** On considère l'équation : $%(E) : \, z^2 = \frac{1+i}{\sqrt 2}%$, $%z\in \mathbb{C}%$.   Quelles sont les assertions vraies ?
+ 
++ Les solutions de $%(E)%$ sont :  $%z=e^{i\frac{\pi}{8}}%$ et $%z=-e^{i\frac{\pi}{8}}%$.
++ $%\cos(\frac{\pi}{8})= \frac{1}{2}\sqrt{2+\sqrt2}%$ et 
+$%\sin(\frac{\pi}{8})= \frac{1}{2}\sqrt{2-\sqrt2}%$
+- Si $%z%$ est une solution de $%(E)%$, $%\arg z = \frac{\pi}{8} [2\pi]%$.
+- $%\cos(\frac{\pi}{8})= \frac{1}{2}\sqrt{2-\sqrt2}%$ et 
+$%\sin(\frac{\pi}{8})= \frac{1}{2}\sqrt{2+\sqrt2}%$
+
+
+
+** Les racines cubiques de $%-8%$ sont :
+ 
++ $%z_k= 2e^{i\frac{(2k+1)\pi}{3}}%$, $%k=1,2,3%$
++ $%z_k= 2e^{i\frac{(2k-1)\pi}{3}}%$, $%k=0,1,2%$
++ $%z_1= -2, z_2=2e^{i\frac{\pi}{3}}%$ et $%z_3=2e^{-i\frac{\pi}{3}}%$
+- $%z_k= -2e^{i\frac{(2k+1)\pi}{3}}%$, $%k=0,1,2%$
+
+
+
+** On considère l'équation : $%(E) : \, z^5= \frac{1+i}{\sqrt 3-i}%$, $%z\in \mathbb{C}%$.   Quelles sont les assertions vraies ?
+ 
++ Si $%z%$ est une solution de $%(E)%$, $%|z|=\frac{1}{\sqrt[10] 2}%$.
++ Si $%z%$ est une solution de $%(E)%$, $%\arg z=\frac{\pi}{12} + \frac{2k\pi}{5} \, [2\pi], \, k \in \mathbb{Z}%$.
+- Si $%z%$ est une solution de $%(E)%$, $%|z|=\frac{1}{\sqrt[5]{ 2}}%$.
+- Si $%z%$ est une solution de $%(E)%$, $%\arg z=\frac{\pi}{12} \, [2\pi]%$.
+
+
+
+** Soit $%z\in \mathbb{C}%$ tel que $%|z-1|=|z+1|%$ .  Quelles sont les assertions vraies ?
+ 
++ $%z=ia%$, $%a\in \mathbb{R}%$
++ Le point du plan d'affixe $%z%$ appartient à la médiatrice du segment $%[A,B]%$, où $%A%$ et $%B%$ sont les points d'affixe $%-1%$ et $%1%$ respectivement.
+- $%z=0%$
+- Le point du plan d'affixe $%z%$ appartient au cercle de rayon $%1%$ et de centre le point d'affixe $%0%$.
+
+
+
+** On considère l'équation $%(E) :  \, (z^2+1)^2+z^2=0, \, z\in \mathbb{C}%$. L'ensemble des solutions de $%(E)%$ est :
+ 
++ $%\{ \pm \frac{1+\sqrt5}{2}i \, ,\,  \pm \frac{1-\sqrt5}{2}i\}%$
+- $%\{\pm \frac{1+\sqrt5}{2} \, , \,  \pm \frac{1-\sqrt5}{2}\}%$
+- $%\{\pm \frac{1+\sqrt3}{2}i \, , \,  \pm \frac{1-\sqrt3}{2}i\}%$
+- $%\{\pm \frac{1+\sqrt3}{2} \, , \,  \pm \frac{1-\sqrt3}{2}\}%$
+
+
+
+** On considère l'équation $%(E) : \, z^8= \overline{z}, \, z\in \mathbb{C}%$. Quelles sont les assertions vraies ?
+ 
++ Si $%z%$ est une solution de $%(E)%$, alors $%z=0%$ ou $%|z|=1%$.
++ Les solutions non nulles de $%(E)%$ sont les racines $%9%$-ièmes de l'unité.
+- Si $%z%$ est une solution de $%(E)%$, alors $%z=0%$.
+- L'équation $%(E)%$ admet $%8%$ solutions distinctes.
+
+
+
+** Soit $%n%$ un entier $%\geqslant 2%$, $%z_1,z_2, \dots, z_n%$ les racines $%n%$-ièmes de l'unité. Quelles sont les assertions vraies ?
+ 
++ $%z^n-1=(z-z_1)(z-z_2)\dots (z-z_n)%$
++ $%z_1.z_2, \dots z_n = (-1)^{n-1}%$ 
++ $%z_1+z_2+ \dots + z_n = 0%$ 
+- $%z_1+z_2+ \dots + z_n = 1%$ 
+
+
+
+** Soit $%E%$ l'ensemble des points $%M%$ d'affixe $%z%$ tels que : $%|\frac{z-1}{1+iz}|=\sqrt 2%$. Quelles sont les assertions vraies ?
+ 
++ $%E%$ est un cercle.
++ $%E%$ est le  cercle de rayon $%2%$ et de centre le point d'affixe $%-1+2i%$.
+- $%E%$ est une droite.
+- $%E=\emptyset%$
+
+
+
+** Soit $%E%$ l'ensemble des points $%M%$ d'affixe $%z%$ tels que : $%z+\frac{1}{z} \in \mathbb{R}%$. Quelles sont les assertions vraies ?
+ 
++ $% E = \mathbb{R}^* \cup \{z\in \mathbb{C}; \, |z|=1\}%$
++ $%E%$ contient le cercle unité.
+- $%E = \mathbb{R}^*%$
+- $%E%$ est le cercle unité.
+
+
+
+** Soit $%E%$ l'ensemble des points $%M%$ d'affixe $%z%$ tels que $%M%$ et les points $%A%$ et $%B%$ d'affixe $%i%$ et $%iz%$ respectivement 
+soient alignés. Quelles sont les assertions vraies ?
+ 
++ $%E%$ est le cercle de rayon $%\frac{1}{\sqrt 2}%$  et de centre le point d'affixe $%\frac{1}{2}(1+i)%$.
+- $%E%$ est la droite passant par les points d'affixe $%i%$ et $%-1+i%$ respectivement.
+- $%E%$ est le cercle de rayon $%\frac{1}{2}%$  et de centre le point d'affixe $%1+i%$.
+- $%E%$ est la droite passant par les points d'affixe $%-i%$ et $%1-i%$ respectivement.
+
+
+
+** Soit $%P(X) = 2X^5+3X^2+X%$ et $%Q(X) = 3X^2-2X+3%$.
+Quelles sont les assertions vraies concernant le polynôme produit $%P(X)\times Q(X)%$ ?
+ 
++ Le coefficient du monôme $%X^3%$ est $%-3%$.
++ Le produit est la somme de $%7%$ monômes ayant un coefficient non nuls.
+- Le coefficient dominant est $%5%$.
+- Le coefficient du terme constant est $%3%$.
+
+
+
+** Soit $%P(X) = X^3-3X^2+2%$ et $%Q(X) = X^3-X+1%$.
+Quelles sont les assertions vraies ?
+ 
++ Le polynôme $%P(X) + Q(X)%$ est de degré $%3%$.
+- Le polynôme $%P(X) \times Q(X)%$ est de degré $%9%$.
+- Le coefficient du monôme $%X^2%$ dans le produit $%P(X) \times Q(X)%$ est $%3%$.
+- Le polynôme $%P(X) - Q(X)%$ est de degré $%3%$.
+
+
+
+** Soient $%P(X)%$ et $%Q(X)%$ deux polynômes unitaires de degré $%n\ge1%$.
+Quelles sont les assertions vraies ?
+ 
++ $%P+Q%$ est un polynôme de degré $%n%$.
++ $%P \times Q%$ est un polynôme de degré $%n+n=2n%$.
+- $%P-Q%$ est un polynôme de degré $%n%$.
+- $%P/Q%$ est un polynôme de degré $%n-n=0%$.
+
+
+
+** Soit $%P%$ un polynôme de degré $%\geqslant 2%$.
+Quelles sont les assertions vraies, quel que soit le polynôme $%P%$ ?
+ 
++ $%\deg( P(X) \times (X^2-X+1) ) = \deg P(X) + 2%$
++ $%\deg( P(X^2) ) = 2\deg P(X)%$
+- $%\deg( P(X) + (X^2-X+1) ) = \deg P(X)%$
+- $%\deg( P(X)^2 ) = (\deg P(X))^2%$
+
+
+
+** Soit $%P(X) = \sum_{k=0}^n a_k X^k%$. On associe le polynôme dérivé :
+$%P'(X) = \sum_{k=1}^n ka_k X^{k-1}%$.
+ 
++ Si $%P'(X)%$ est de degré $%7%$, alors $%P(X)%$ est de degré $%8%$.
+- Le polynôme dérivé de $%P(X) = X^5-2X^2+1%$ est $%P'(X)=5X^4-2X%$.
+- Le seul polynôme qui vérifie $%P'(X)=0%$ est $%P(X)=1%$.
+- Si le coefficient constant de $%P%$ est nul, alors c'est aussi le cas pour $%P'%$.
+
+
+
+** Soit $%P(X) = X^n + a_{n-1}X^{n-1} + \cdots + a_1X+a_0%$ un polynôme de $%\mathbb{R}[X]%$ de degré $%n \geqslant 1%$. À ce polynôme $%P%$ on associe un nouveau polynôme $%Q%$, défini par $%Q(X) = P(X - \frac{a_{n-1}}{n})%$.
+Quelles sont les assertions vraies ?
+ 
++ Si $%P(X) = X^3-3X^2+2%$ alors $%Q(X) = X^3-3X%$.
++ Le coefficient du monôme $%X^{n-1}%$ de $%Q%$ est toujours nul.
+- Si $%P(X) = X^2+3X+1%$ alors $%Q(X) = X^2-2X%$.
+- Le coefficient constant du polynôme $%Q%$ est toujours nul.
+
+
+
+** Soit $%P(X) = \sum_{k=0}^n a_k X^k%$. On associe le polynôme dérivé :
+$%P'(X) = \sum_{k=1}^n ka_k X^{k-1}%$. Quelles sont les assertions vraies ?
+ 
++ Si $%P%$ est de degré $%n\ge1%$ alors $%P'%$ est de degré $%n-1%$.
++ Si $%P'=P%$ alors $%P=0%$.
+- Si $%P'(X) = nX^{n-1}%$ alors $%P(X) = X^n%$.
+- Si $%P'-Q'=0%$ alors $%P-Q=0%$.
+
+
+
+** Soit $%A(X) = \sum_{i=0}^n a_i X^i%$.
+Soit $%B(X) = \sum_{j=0}^m b_j X^j%$.
+Soit $%C(X) = A(X) \times B(X) = \sum_{k=0}^{m+n} c_k X^k%$.
+Quelles sont les assertions vraies ?
+ 
++ $%c_k = \sum_{i+j=k} a_ib_j%$
++ $%c_k = \sum_{i=0}^k a_ib_{k-i}%$
+- $%c_k = a_k b_k%$
+- $%c_k = \sum_{i=0}^k a_ib_i%$
+
+
+
+** Soient $%A,B%$ deux polynômes, avec $%B%$ non nul. 
+Soit $%A = B \times Q + R%$ la division euclidienne de $%A%$ par $%B%$.
+ 
++ Un tel $%Q%$ existe toujours.
++ S'il existe, $%Q%$ est unique.
++ On a toujours $%\deg Q \leqslant \deg A%$.
+- On a toujours $%\deg Q \leqslant \deg B%$.
+
+
+
+** Soient $%A,B%$ deux polynômes, avec $%B%$ non nul. 
+Soit $%A = B \times Q + R%$ la division euclidienne de $%A%$ par $%B%$.
+ 
++ Un tel $%R%$ existe toujours.
++ S'il existe, $%R%$ est unique.
++ On a toujours $%\deg R < \deg B%$ (ou bien $%R%$ est nul).
+- On a toujours $%\deg R < \deg A%$ (ou bien $%R%$ est nul).
+
+
+
+** Soient $%A(X) = 2 X^4 + 3 X^3 - 8 X^2 - 2 X + 1%$ et $%B(X) = X^2+3X+1%$. Soit $%A = BQ+R%$ la division euclidienne de $%A%$ par $%B%$.
+ 
++ Le coefficient constant de $%R%$ est $%2%$.
+- Le coefficient du monôme $%X^2%$ de $%Q%$ est $%1%$.
+- Le coefficient du monôme $%X%$ de $%Q%$ est $%3%$.
+- Le coefficient du monôme $%X%$ de $%R%$ est $%2%$.
+
+
+
+** Soient $%A(X) = X^6 - 7 X^5 + 10 X^4 + 5 X^3 - 23 X^2 + 5%$ et $%B(X) = X^3-5X^2+1%$. Soit $%A = BQ+R%$ la division euclidienne de $%A%$ par $%B%$.
+ 
++ Le coefficient du monôme $%X%$ de $%Q%$ est $%0%$.
++ Le coefficient constant de $%R%$ est $%1%$.
+- Le coefficient du monôme $%X^2%$ de $%Q%$ est $%0%$.
+- Le coefficient du monôme $%X%$ de $%R%$ est $%-1%$.
+
+
+
+** Soient $%A(X) = X^4 - 2 X^3 - 4 X^2 + 2 X + 3%$ et 
+$%B(X) = X^4 - 2 X^3 - 3 X^2%$ des polynômes de $%\mathbb{R}[X]%$.
+Notons $%D%$ le pgcd de $%A%$ et $%B%$.
+Quelles sont les affirmations vraies  ?
+ 
++ $%X+1%$ divise $%D%$.
++ $%D(X) = (X-3)(X+1)%$.
+- $%X-1%$ divise $%D%$.
+- $%D(X) = (X-3)(X+1)^2%$.
+
+
+
+** Quelles sont les affirmations vraies pour des polynômes de $%\mathbb{R}[X]%$ ?
+ 
++ Le pgcd de $%(X-1)^2(X^2-1)^3%$ et
+$%(X-1)^4(X+1)^5%$ est $%(X-1)^4(X+1)^3%$.
++ Le ppcm de $%(X-1)^2(X^2-1)^3%$ et
+$%(X-1)^4(X+1)^5%$ est $%(X-1)^5(X+1)^5%$.
+- Le pgcd de $%(X-1)^2(X-3)^3(X^2+X+1)^3%$ et
+$%(X-1)^2(X-2)(X-3)(X^2+X+1)^2%$ est $%(X-1)^2(X-3)(X^2+X+1)%$.
+- Le ppcm de $%(X-1)^2(X-3)^3(X^2+X+1)^3%$ et
+$%(X-1)^2(X-2)(X-3)(X^2+X+1)^2%$ est $%(X-1)^2(X-2)(X-3)^3(X^2+X+1)^2%$.
+
+
+
+** Soit $%A%$ un polynôme de degré $%n\ge1%$. Soit $%B%$ un polynôme de degré $%m\ge1%$, avec $%m \leqslant n%$.
+Soit $%A = B \times Q + R%$ la division euclidienne de $%A%$ par $%B%$. On note
+$%q = \deg Q%$ et $%r = \deg R%$ (avec $%r=-\infty%$ si $%R=0%$).
+Quelles sont les assertions vraies (quelque soient $%A%$ et $%B%$) ?
+ 
++ $%q = n-m%$
++ $%r < m%$
+- $%r=0 \implies A%$ divise $%B%$.
+- $%n = mq + r%$
+
+
+
+** Soit $%n\ge2%$. Soit $%A(X) = X^{2n}+X^{2n-2}%$. Soit $%B(X) = X^{n}+X^{n-1}%$. Soit $%A = BQ + R%$ la division euclidienne de $%A%$ par $%B%$.
+ 
++ Le coefficient de $%X^n%$ de $%Q%$ est $%1%$.
++ Le coefficient de $%X^{n-2}%$ de $%Q%$ est $%2%$.
++ $%R%$ est constitué d'un seul monôme.
+- Le coefficient de $%X^{n-1}%$ de $%Q%$ est $%1%$.
+
+
+
+** Soit $%A(X) = X^4-X^2%$. Soit $%B(X) = X^2+X-2%$.
+Soit $%D%$ le pgcd de $%A%$ et $%B%$ dans $%\mathbb{R}[X]%$.
+ 
++ Il existe $%U,V \in \mathbb{R}[X]%$ tels que $%AU+BV = X-1%$.
++ Il existe $%u \in \mathbb{R}%$ et $%V \in \mathbb{R}[X]%$ tels que $%Au+BV = X-1%$.
+- $%D(X) = 1%$
+- Il existe $%U\in \mathbb{R}[X]%$ et $%v \in \mathbb{R}%$ tels que $%AU+Bv = X-1%$.
+
+
+
+** Soit $%P \in \mathbb{R}[X]%$ un polynôme de degré $%8%$.
+Quelles sont les affirmations vraies ?
+ 
++ $%P%$ admet au plus $%8%$ racines réelles (comptées avec multiplicité).
+- $%P%$ admet exactement $%8%$ racines réelles (comptées avec multiplicité).
+- $%P%$ admet au moins une racine réelle.
+- $%P%$ admet au moins $%8%$ racines réelles (comptées avec multiplicité).
+
+
+
+** Soit $%P(X) = X^7 - 5 X^5 - 5 X^4 + 4 X^3 + 13 X^2 + 12 X + 4%$.
+ 
++ $%-1%$ est une racine de $%P%$.
++ $%2%$ est une racine de $%P%$.
+- $%0%$ est une racine de $%P%$.
+- $%1%$ est une racine de $%P%$.
+
+
+
+** Quelles sont les affirmations vraies ?
+ 
++ $%2X^2-3X+2%$ est irréductible sur $%\mathbb{R}%$.
+- $%2X^2+3X+1%$ est irréductible sur $%\mathbb{Q}%$.
+- $%2X^2-X+3%$ est irréductible sur $%\mathbb{C}%$.
+- $%X^3+X^2+X+4%$ est irréductible sur $%\mathbb{R}%$.
+
+
+
+** Soit $%P \in \mathbb{R}[X]%$ un polynôme de degré $%2n+1%$ ($%n\in\mathbb{N}^*%$).
+Quelles sont les affirmations vraies ?
+ 
++ $%P%$ peut admettre une racine complexe, qui ne soit pas réelle.
++ $%P%$ admet au moins une racines réelle.
++ $%P%$ peut avoir $%2n+1%$ racines réelles distinctes.
+- $%P%$ admet au moins deux racines réelles (comptées avec multiplicités).
+
+
+
+** Soit $%P(X) = X^6 + 4 X^5 + X^4 - 10 X^3 - 4 X^2 + 8 X%$.
+ 
++ $%1%$ est une racine double.
+- $%-1%$ est une racine double.
+- $%0%$ est une racine double.
+- $%-2%$ est une racine double.
+
+
+
+** Soit $%P \in \mathbb{Q}[X]%$ un polynôme de degré $%n%$.
+ 
++ $%P%$ peut avoir des racines dans $%\mathbb{R}%$, mais pas dans $%\mathbb{Q}%$.
++ Si $%z\in \mathbb{C}\setminus\mathbb{R}%$ est une racine de $%P%$, alors $%\bar z%$ aussi.
+- Les facteurs irréductibles de $%P%$ sur $%\mathbb{Q}%$ sont de degré $%1%$ ou $%2%$.
+- Les racines réelles de $%P%$ sont de la forme $%\alpha + \beta\sqrt{\gamma}%$, $%\alpha,\beta,\gamma \in \mathbb{Q}%$.
+
+
+
+** Soit $%P \in \mathbb{K}[X]%$ un polynôme de degré $%n\ge1%$.
+Quelles sont les affirmations vraies ?
+ 
++ $%a%$ racine de $%P%$ $%\iff%$ $%X-a%$ divise $%P%$.
++ $%a%$ racine de $%P%$ de multiplicité $%\geqslant k%$ $%\iff%$ $%(X-a)^k%$ divise $%P%$.
++ La somme des multiplicités des racines est $%\leqslant n%$.
+- $%a%$ racine de $%P%$ de multiplicité $%\geqslant k%$ $%\iff%$ 
+$%P(a) = 0%$, $%P'(a)=0%$, ..., $%P^{(k)}(a)=0%$.
+
+
+
+** Quelles sont les affirmations vraies ?
+ 
++ Les éléments simples sur $%\mathbb{R}%$ peuvent être de la forme $%\frac{a}{(X-\alpha)^k}%$, $%a,\alpha \in \mathbb{R}%$.
+- Les éléments simples sur $%\mathbb{C}%$ sont de la forme $%\frac{a}{X-\alpha}%$, $%a,\alpha \in \mathbb{C}%$.
+- Les éléments simples sur $%\mathbb{C}%$ sont de la forme $%\frac{a}{(X-\alpha)^k}%$, $%a,\alpha \in \mathbb{R}%$, $%k\in\mathbb{N}^*%$.
+- Les éléments simples sur $%\mathbb{R}%$ peuvent être de la forme $%\frac{aX+b}{X-\alpha}%$, $%a,b,\alpha \in \mathbb{R}%$.
+
+
+
+** Soient $%P(X)=X-1%$, $%Q(X)=(X+1)^2(X^2+X+1)%$. On décompose la fraction $%F = \frac{P}{Q}%$ sur $%\mathbb{R}%$.
+ 
++ La partie polynomiale est nulle.
++ Il peut y avoir un élément simple $%\frac{aX+b}{X^2+X+1}%$ mais pas  $%\frac{aX+b}{(X^2+X+1)^2}%$.
+- Il peut y avoir un élément simple $%\frac{a}{X-1}%$.
+- Il peut y avoir un élément simple $%\frac{a}{X+1}%$ mais pas  $%\frac{a}{(X+1)^2}%$.
+
+
+
+** Soit $%\frac{P(X)}{Q(X)}%$ une fraction rationnelle. On note $%E(X)%$ sa partie polynomiale (appelée aussi partie entière).
+ 
++ Si $%\deg P < \deg Q%$ alors $%E(X) = 0%$.
++ Si $%\deg P \geqslant \deg Q%$ alors $%\deg E(X) = \deg P - \deg Q%$.
++ Si $%P(X) = X^5+X-2%$ et $%Q(X) = X^2-1%$ alors $%E(X) = X^3+X%$.
+- Si $%P(X) = X^3+X+2%$ et $%Q(X) = X^2-1%$ alors $%E(X) = X+1%$.
+
+
+
+** Soit $%P(X)=3X%$ et $%Q(X) = (X-2)(X-1)^2(X^2-X+1)%$.
+On écrit 
+\[\frac{P(X)}{Q(X)} = \frac{a}{X-2} + \frac{b}{X-1} +  \frac{c}{(X-1)^2}
++ \frac{dX+e}{X^2-X+1}.\]
+Quelles sont les affirmations vraies ?
+ 
++ En multipliant par $%(X-1)^2%$, puis en évaluant en $%X=1%$, j'obtiens $%c=-3%$.
++ En multipliant par $%X%$, puis en faisant tendre $%X \to +\infty%$, j'obtiens la relation $%a+b+d=0%$.
+- En multipliant par $%X-2%$, puis en évaluant en $%X=2%$, j'obtiens $%a=1%$.
+- En évaluant en $%X=0%$, j'obtiens la relation $%a+b+c+e=0%$.
+
+
+
+** Soit $%F(X) = \dfrac{1}{(X^2+1)X^3}%$.
+On écrit 
+\[F(X) = \frac{a}{X} + \frac{b}{X^2} +  \frac{c}{X^3}
++ \frac{dX+e}{X^2+1}.\]
+Quelles sont les affirmations vraies ?
+ 
++ $%c=1%$
++ $%e=0%$
+- $%b=1%$
+- $%a=1%$
+
+
+
+** Soit $%F(X) = \dfrac{X-1}{X(X^2+1)^2}%$.
+On écrit 
+\[F(X) = \frac{a}{X} + \frac{bX+c}{X^2+1} +  \frac{dX+e}{(X^2+1)^2}.\]
+Quelles sont les affirmations vraies ?
+ 
++ $%a=-1%$
+- $%d=0%$ et $%e=0%$
+- $%b=0%$ et $%c=0%$
+- $%b=0%$ et $%d=0%$
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ $%\frac{14}{12}+\frac{12}{14} = \frac{85}{42}%$
++ $%\frac{36}{5} - 3 = \frac{21}{5}%$
++ $%\frac{14}{15}/\frac{21}{35} = \frac{14}{9}%$
+- $%\frac{4}{16}+\frac{4}{20} = \frac{9}{16}%$
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ Le nombre dont l'écriture décimale est $%0,090909\ldots%$ est un nombre rationnel.
++ $%9,99999\ldots = 10%$
+- $%\frac{1}{7} = 0,142142142\ldots%$
+- $%\frac{1}{5} = 0,202020\ldots%$
+
+
+
+** Soient $%x%$ et $%y%$ deux nombres rationnels strictement positifs.
+Parmi les nombres réels suivants, lesquels sont aussi des nombres rationnels ?
+ 
++ $%\frac{x-y}{x+y}%$
++ $%x-y^2%$
++ $%(\sqrt{x}-\sqrt{y})(\sqrt{x}+\sqrt{y})%$
+- $%\frac{\sqrt{x}}{\sqrt{y}}%$
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ La somme de deux nombres rationnels est un nombre rationnel.
++ Le produit de deux nombres rationnels est un nombre rationnel.
+- La somme de deux nombres irrationnels est un nombre irrationnel.
+- Le produit de deux nombres irrationnels est un nombre irrationnel.
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ L'écriture décimale de $%\frac{n}{n+1}%$ est finie ou périodique (quelque soit $%n\in\mathbb{N}%$).
++ Un nombre réel qui admet une écriture décimale finie est un nombre rationnel.
+- L'écriture décimale de $%\sqrt{3}%$ est finie ou périodique.
+- Un nombre réel qui admet une écriture décimale infinie est un nombre irrationnel.
+
+
+
+** Je veux montrer que $%\log 13%$, est un nombre irrationnel. On rappelle que $%\log 13%$ est le réel tel que $%10^{\log 13} = 13%$. Quelle démarche puis-je adopter ?
+ 
++ Je suppose par l'absurde que $%\log 13 = \frac pq%$, avec $%p,q \in \mathbb{N}^*%$ et je cherche une contradiction après avoir écrit $%13^q = 10^p%$.
+- Par division je calcule l'écriture décimale de $%\log 13%$ et je montre qu'elle est périodique.
+- Je prouve par récurrence que $%\log n%$ est irrationnel pour $%n\ge2%$.
+- Il est faux que $%\log 3%$ soit un nombre irrationnel.
+
+
+
+** Comment s'appelle les propriétés suivantes de $%\mathbb{R}%$ ?
+ 
++ $%(a+b)+c=a+(b+c)%$ est l'associativité de l'addition.
++ $%a \times b = b\times a%$ est la commutativité de la multiplication.
+- $%(a \times b) \times c=a \times (b \times c)%$ est la distributivité de la multiplication.
+- $%a \times (b+c) = a\times b + a \times c%$ est l'intégrité.
+
+
+
+** Soient $%x,y \in \mathbb{R}%$ tels que $%x \leqslant 2y%$.
+Quelles sont les assertions vraies ?
+ 
++ $%2x \leqslant x+2y%$
++ $%-2y \leqslant -x%$
+- $%x^2 \leqslant 2xy%$
+- $%y\leqslant \frac{x}{2}%$
+
+
+
+** Notation : $%E(x)%$ désigne la partie entière du réel $%x%$.
+Quelles sont les assertions vraies ?
+ 
++ $%E(-3,33) = -4%$
+- $%E(7,9) = 8%$
+- $%E(\frac{5}{3}) = 5%$
+- $%E(x)=0 \implies x=0%$
+
+
+
+** Pour $%x\in\mathbb{R}%$, on définit $%f(x)= x - |x|%$.
+Quelles sont les assertions vraies ?
+ 
++ $%\forall x \in \mathbb{R} \quad f(x)\le0%$
++ $%\forall x >0 \quad f(x) =  0%$
+- $%\forall x \in \mathbb{R} \quad f(x)\ge0%$
+- $%\forall x < 0 \quad f(x) =  -2x%$
+
+
+
+** Quelles sont les assertions vraies concernant le maximum de nombres réels ?
+ 
++ $%\max(a,b) \geqslant a%$ et $%\max(a,b) \geqslant b%$
++ $%\max( \max(a,b), c ) = \max(a,b,c)%$
++ $%\min(a, \max(a,b)) = a%$
+- $%\max(a,b) > a%$ ou $%\max(a,b) > b%$
+
+
+
+** Notation : $%E(x)%$ désigne la partie entière du réel $%x%$.
+Quelles sont les assertions qui caractérisent la partie entière ?
+ 
++ $%E(x)%$ est le plus grand entier inférieur ou égal à $%x%$.
++ $%E(x)%$ est l'entier tel que $%E(x) \leqslant x < E(x)+1%$
+- $%E(x)%$ est le plus petit entier supérieur ou égal à $%x%$.
+- $%E(x)%$ est l'entier tel que $%x \leqslant E(x) < x+1%$
+
+
+
+** Pour $%x\in \mathbb{R}%$, on définit $%G(x) = E(10x)%$.
+ 
++ $%G(x)=G(y) \implies |x-y| \leqslant \frac{1}{10}%$
+- $%G(\frac23) = 66%$
+- $%\forall x>0 \quad G(x) \geqslant 1%$
+- $%G(x)=10 \iff x \in\{10,11,12,\ldots,19\}%$
+
+
+
+** Quelles sont les assertions vraies pour $%x\in\mathbb{R}%$ ?
+ 
++ $%x\neq 0 \iff |x|>0%$
++ $%\sqrt{x^2} = |x|%$
++ $%x+|x|=0 \iff x \leqslant 0%$
+- $%|x|>1 \iff x \geqslant 1%$
+
+
+
+** Quelles propriétés découlent de la propriété d’Archimède des réels (c'est-à-dire $%\mathbb{R}%$ est archimédien) ?
+ 
++ $%\forall x>0 \quad \exists n \in\mathbb{N} \quad n>x%$
++ $%\forall arepsilon >0 \quad \exists n \in \mathbb{N} \quad 0 < \frac 1n < arepsilon%$
++ $%\forall x>0 \quad \forall y>0 \quad \exists n \in \mathbb{N} \quad nx >y%$
+- $%\exists x>0 \quad \forall n \in\mathbb{N} \quad x>n%$
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ $%\max(x,y) = \frac{x+y + |x-y|}{2}%$
+- $%\max(x,y) = \frac{x+y-|x|-|y|}{2}%$
+- $%\max(x,y) = \frac{x+y-|x+y|}{2}%$
+- $%\max(x,y) = \frac{|x+y|-x-y}{2}%$
+
+
+
+** Quelles sont les assertions vraies, pour tout $%x,y\in\mathbb{R}%$ ?
+ 
++ $%|x| \leqslant |x-y|+|y|%$
++ $%|x-y| \leqslant |x| + |y|%$
+- $%|x-y| \leqslant |x|-|y|%$
+- $%|x+y| \geqslant |x| + |y|%$
+
+
+
+** On définit la partie fractionnaire d'un réel $%x%$, par $%F(x) = x -E(x)%$.
+ 
++ Si $%F(x)=F(y)%$ alors $%x-y \in \mathbb{Z}%$.
+- $%F(x) = 0 \iff 0 \leqslant x <1%$
+- Si $%7 \leqslant x <8%$ alors $%F(x) = 7%$.
+- Si $%x=-0,2%$ alors $%F(x) = -0,2%$.
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ $%x \in ]5;7[ \iff |x-6|<1%$
+- $%x \in ]5;7[ \iff |x-1|<6%$
+- $%x \in [0,999 \, ; \, 1,001] \iff |x+1|<0,001%$
+- $%x \in [0,999 \, ; \, 1,001] \iff |x+1|\leqslant 0,001%$
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ $%[a,b[\cap ]a,b] = ]a,b[%$
+- $%[3,7] \cup [8,10] = [3,10]%$
+- $%[-3,5] \cap [2,7] = [-3,7]%$
+- $%[a,b[\cup ]a,b] = ]a,b[%$
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ $%x \in [x_0,x_0+arepsilon] \implies |x-x_0| \leqslant arepsilon%$
++ $%|x-y|=1 \iff y=x+1%$ ou $%y=x-1%$
+- $%x-x_0 \leqslant arepsilon \implies x \in [x_0,x_0+arepsilon]%$
+- $%|x| > A \iff x > A%$ ou  $%x < A%$
+
+
+
+** Soient $%x,y \in \mathbb{R}%$ avec $%x<y%$.
+ 
++ Il existe $%c\in\mathbb{Q}%$ tel que $%x < c < y%$.
++ Il existe $%c\in\mathbb{R}\setminus\mathbb{Q}%$ tel que $%x < c <y%$.
++ Il existe une infinité de $%c\in\mathbb{Q}%$ tels que $%x < c < y%$.
+- Il existe $%c\in\mathbb{Z}%$ tel que $%x < c < y%$.
+
+
+
+** Quelles sont les assertions vraies ?
+ 
++ Il existe $%x\in\mathbb{Q}%$ tel que $%x-\sqrt2 < 10^{-10}%$.
++ Il existe $%x\in\mathbb{R}\setminus\mathbb{Q}%$ tel que $%x-\frac43 < 10^{-10}%$.
++ Il existe une suite de nombres rationnels dont la limite est $%\sqrt 2%$.
++ Il existe une suite de nombres irrationnels dont la limite est $%\frac43%$.
+
+
+
+** Pour $%n\geqslant 1%$ on définit l'intervalle $%I_n = [0,\frac1n]%$. 
+Quelles sont les assertions vraies ?
+ 
++ Si $%x \in I_n%$ pour tout $%n\ge1%$, alors $%x=0%$.
+- Pour tout $%n\geqslant 1%$, $%I_n \subset I_{n+1}%$.
+- L'union de tous les $%I_n%$ (pour $%n%$ parcourant $%\mathbb{N}^*%$) est $%[0,+\infty[%$.
+- Pour $%n < m%$ alors $%I_n \cap I_{n+1} \cap \ldots \cap I_m = I_n%$.
+
+
+
+** Pour $%n\geqslant 1%$ on définit l'intervalle $%I_n = [0,n]%$. 
+Quelles sont les assertions vraies ?
+ 
++ Pour tout $%n\geqslant 1%$, $%I_n \subset I_{n+1}%$.
++ L'union de tous les $%I_n%$ (pour $%n%$ parcourant $%\mathbb{N}^*%$) est $%[0,+\infty[%$.
++ Pour $%n < m%$ alors $%I_n \cap I_{n+1} \cap \ldots \cap I_m = I_n%$.
+- Si $%x \in I_n%$ pour tout $%n\ge1%$, alors $%x=0%$.
+
+
+
+** Soient $%I%$ et $%J%$ deux intervalles de $%\mathbb{R}%$. Quelles sont les assertions vraies ?
+ 
++ $%I \cap J%$ est un intervalle (éventuellement réduit à un point ou vide).
++ Si $%I \cap J \neq \varnothing%$ alors $%I \cup J%$ est un intervalle.
++ Si $%I \subset J%$ alors $%I \cup J%$ est un intervalle.
+- $%I \cup J%$ est un intervalle.
+
+
+
+** Soit $%I%$ un intervalle ouvert de $%\mathbb{R}%$. Soient $%x,y \in\mathbb{R}%$ avec $%x < y%$.
+Quelles sont les assertions vraies ?
+ 
++ Si $%x,y\in I%$, il existe $%c\in I%$ tel que $%x < c < y%$.
++ Si $%x,y\in I%$, alors pour tout $%c%$ tel que $%x < c < y%$, on a $%c \in I%$.
++ Si $%x \notin I%$ et $%y\in I%$, il existe $%c\in I%$ tel que $%x < c < y%$.
+- Si $%x \notin I%$ et $%y\in I%$, il existe $%c\notin I%$ tel que $%x < c < y%$.
+
+
+
+** Le maximum d'un ensemble $%E%$, s'il existe, est le réel $%m \in E%$ tel que pour tout $%x\in E%$, on a $%x \leqslant m%$.
+ 
++ Si $%E = [-3,-1]%$ alors $%-1%$ est le maximum de $%E%$.
++ L'ensemble $%E = [-3,-1[%$ n'admet pas de maximum.
+- Si $%E = [3,7]%$ alors $%8%$ est un maximum de $%E%$.
+- L'ensemble $%E = [-3,2[ \  \cap \  ]-1,1]%$ n'admet pas de maximum.
+
+
+
+** On dit que $%M \in \mathbb{R}%$ est un majorant d'un ensemble $%E \subset \mathbb{R}%$ si pour tout $%x\in E%$, on a $%x \leqslant M%$.
+ 
++ Si $%E = [3,7]%$ alors $%8%$ est un majorant de $%E%$.
++ Si $%E = [-3,-1[%$ alors tout $%M \geqslant -1%$ est un majorant de $%E%$.
+- Si $%E = ]0,+\infty[%$ alors tout $%M \geqslant 0%$ est un majorant de $%E%$.
+- Si $%E = [2,3] \cup [5,10]%$ alors tout $%M \geqslant 3%$ est un majorant de $%E%$.
+
+
+
+** On dit que $%M \in \mathbb{R}%$ est un majorant d'un ensemble $%E \subset \mathbb{R}%$ si pour tout $%x\in E%$, on a $%x \leqslant M%$.
+ 
++ Un intervalle non vide et borné admet au moins deux majorants.
++ Un ensemble qui admet un majorant, en admet une infinité.
+- Un intervalle non vide et différent de $%\mathbb{R}%$ admet toujours un majorant.
+- L'ensemble $%\mathbb{N}%$ admet une infinité de majorants.
+
+
+
+** Soit $%(u_n)%$ une suite réelle et $%\ell \in \mathbb{R}%$. Comment traduire $%\displaystyle \lim _{n\to +\infty}u_n=\ell%$ ?
+ 
++ $%\forall \varepsilon >0,\; \exists n_0\in \mathbb{N},\; \forall n\in \mathbb{N},\; n>n_0\Rightarrow |u_n-\ell|<\varepsilon%$
+- $%\forall \varepsilon >0,\; \forall n\in \mathbb{N},\; |u_n-\ell|<\varepsilon%$
+- $%\forall \varepsilon >0,\; \exists n\in \mathbb{N},\; |u_n-\ell|<\varepsilon%$
+- $%\exists \varepsilon >0,\; \exists n_0\in \mathbb{N},\; \forall n\in \mathbb{N},\; n>n_0\Rightarrow |u_n-\ell|<\varepsilon%$
+
+
+
+** Soit $%(u_n)%$ une suite réelle. Comment traduire $%\displaystyle \lim _{n\to +\infty}u_n=+\infty%$ ?
+ 
++ $%\forall A>0,\; \exists n_0\in \mathbb{N},\; \forall n\in \mathbb{N},\; n>n_0\Rightarrow u_n>A%$
+- $%\forall A>0,\; \forall n\in \mathbb{N},\; u_n>A%$
+- $%\forall A>0,\; \exists n\in \mathbb{N},\; u_n>A%$
+- $%\exists A>0,\; \exists n_0\in \mathbb{N},\; \forall n\in \mathbb{N},\; n>n_0\Rightarrow u_n>A%$
+
+
+
+** Soit $%\displaystyle u_n=\frac{n^2+1}{2n^2-1}%$ et $%\displaystyle v_n=\frac{2n+1}{n^2-1}%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle \lim _{n\to +\infty}u_n=\frac{1}{2}%$ et $%\displaystyle \lim _{n\to +\infty}v_n=0%$ 
+- $%\displaystyle \lim _{n\to +\infty}u_n=2%$ et $%\displaystyle \lim _{n\to +\infty}v_n=0%$
+- $%\displaystyle \lim _{n\to +\infty}u_n=\frac{1}{2}%$ et $%\displaystyle \lim _{n\to +\infty}v_n=2%$
+- $%\displaystyle \lim _{n\to +\infty}u_n=2%$ et $%\displaystyle \lim _{n\to +\infty}v_n=+\infty%$
+
+
+
+** Soit $%\displaystyle u_n=\sqrt{n+1}-\sqrt{n}%$ et $%\displaystyle v_n=\cos\left(\frac{n^2+1}{n^2-1}\pi\right)%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle \lim _{n\to +\infty}u_n=0%$ et $%\displaystyle \lim _{n\to +\infty}v_n=-1%$
+- $%\displaystyle \lim _{n\to +\infty}u_n=1%$ et $%\displaystyle \lim _{n\to +\infty}v_n=-1%$ 
+- $%\displaystyle \lim _{n\to +\infty}u_n=1%$ et $%\displaystyle \lim _{n\to +\infty}v_n=1%$
+- $%\displaystyle \lim _{n\to +\infty}u_n=0%$ et $%\displaystyle \lim _{n\to +\infty}v_n%$ n'existe pas
+
+
+
+** Soit $%\displaystyle u_n=3^n-2^n%$ et $%\displaystyle v_n=3^n-(-3)^n%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle \lim _{n\to +\infty}u_n=+\infty%$ et $%\displaystyle \lim _{n\to +\infty}v_n%$ n'existe pas
+- $%\displaystyle \lim _{n\to +\infty}u_n=+\infty%$ et $%\displaystyle \lim _{n\to +\infty}v_n=+\infty%$ 
+- $%\displaystyle \lim _{n\to +\infty}u_n=0%$ et $%\displaystyle \lim _{n\to +\infty}v_n=0%$
+- $%\displaystyle \lim _{n\to +\infty}u_n=0%$ et $%\displaystyle \lim _{n\to +\infty}v_n=-\infty%$
+
+
+
+** Soit $%\displaystyle u_n=n\ln\left(1+\frac{1}{n}\right)%$ et $%\displaystyle v_n=\left(1+\frac{1}{n}\right)^n%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle \lim _{n\to +\infty}u_n=1%$ et $%\displaystyle \lim _{n\to +\infty}v_n=\mathrm{e}%$
+- $%\displaystyle \lim _{n\to +\infty}u_n=+\infty%$ et $%\displaystyle \lim _{n\to +\infty}v_n=1%$
+- $%\displaystyle \lim _{n\to +\infty}u_n=0%$ et $%\displaystyle \lim _{n\to +\infty}v_n=1%$
+- $%\displaystyle \lim _{n\to +\infty}u_n=1%$ et $%\displaystyle \lim _{n\to +\infty}v_n=1%$
+
+
+
+** Soit $%\displaystyle u_n=\frac{\cos n}{2n+1}%$ et $%\displaystyle v_n=\frac{2n+\cos n}{2n+1}%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle \lim _{n\to +\infty}u_n=0%$ et $%\displaystyle \lim _{n\to +\infty}v_n=1%$
+- $%\displaystyle \lim _{n\to +\infty}u_n%$ et $%\displaystyle \lim _{n\to +\infty}v_n%$ n'existent pas
+- $%\displaystyle \lim _{n\to +\infty}u_n=0%$ et $%\displaystyle \lim _{n\to +\infty}v_n=+\infty%$
+- $%\displaystyle \lim _{n\to +\infty}u_n=1%$ et $%\displaystyle \lim _{n\to +\infty}v_n=1%$
+
+
+
+** Soit $%\displaystyle u_n=1+\frac{1}{2}+\frac{1}{2^2}+\dots +\frac{1}{2^n}%$. Quelles sont les bonnes réponses ?
+ 
++ La suite $%(u_n)%$ est strictement croissante.
++ $%\displaystyle \lim _{n\to +\infty}u_n=2%$
+- La suite $%(u_n)%$ est divergente.
+- $%\displaystyle \lim _{n\to +\infty}u_n=+\infty%$
+
+
+
+** Soit $%\displaystyle u_n=\ln \left(1+n\mathrm{e}^{-n}\right)%$. Quelles sont les bonnes réponses ?
+ 
++ La suite $%(u_n)%$ est bornée.
++ $%\displaystyle \lim _{n\to +\infty}u_n=0%$
+- $%\displaystyle \lim _{n\to +\infty}u_n=+\infty%$
+- La suite $%(u_n)%$ est divergente.
+
+
+
+** Soit $%\displaystyle u_n=\sqrt[n]{3+\cos n}%$. Quelles sont les bonnes réponses ?
+ 
++ La suite $%(u_n)%$ est bornée.
++ $%\displaystyle \lim _{n\to +\infty}u_n=1%$
+- La suite $%(u_n)%$ est croissante.
+- La suite $%(u_n)%$ est divergente.
+
+
+
+** Soit $%\displaystyle u_n=\frac{2^{n+1}-3^{n+1}}{2^n+3^n}%$ et $%\displaystyle v_n=\frac{n2^{2n}-3^n}{n2^{2n}+3^n}%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle \lim _{n\to +\infty}u_n=-3%$ et $%\displaystyle \lim _{n\to +\infty}v_n=1%$
+- $%\displaystyle \lim _{n\to +\infty}u_n=+\infty%$ et $%\displaystyle \lim _{n\to +\infty}v_n=+          \infty%$
+- $%\displaystyle \lim _{n\to +\infty}u_n=-3%$ et $%\displaystyle \lim _{n\to +\infty}v_n=+\infty%$
+- $%\displaystyle \lim _{n\to +\infty}u_n=-\infty%$ et $%\displaystyle \lim _{n\to +\infty}v_n=1%$
+
+
+
+** Soit $%\displaystyle u_n=\left(1-\frac{1}{n}\right)^n%$ et $%\displaystyle v_n=\left(1+\frac{(-1)^{n}}{n}\right)^n%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle \lim _{n\to +\infty}u_n=\mathrm{e}^{-1}%$
++ La suite $%(v_n)%$ est divergente.
+- $%\displaystyle \lim _{n\to +\infty}v_n=\mathrm{e}^{-1}%$
+- La suite $%(u_n)%$ est divergente.
+
+
+
+** Soit $%\displaystyle u_n=\frac{2n^2+1}{n^2+1}%$. Quelles sont les bonnes réponses ?
+ 
++ $%\exists \varepsilon >0,\; \forall n\in \mathbb{N},\; |u_n-2|<\varepsilon%$
++ $%\forall n\in \mathbb{N},\; n>10\Rightarrow |u_n-2|<10^{-2}%$
++ $%\forall \varepsilon >0,\; \exists n_0\in \mathbb{N},\; \forall n\in \mathbb{N},\; n>n_0\Rightarrow |u_n-2|<\varepsilon%$
+- $%\forall \varepsilon >0,\; \forall n\in \mathbb{N},\; |u_n-2|<\varepsilon%$
+
+
+
+** Soient $%\displaystyle u_n=\sqrt{n^2+4n-1}-n%$ et $%\displaystyle v_n=\frac{4n-1}{\sqrt{n^2+4n-1}+n}%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle \lim _{n\to +\infty}u_n=2%$ et $%\displaystyle \lim _{n\to +\infty}v_n=2%$
+- $%\displaystyle \lim _{n\to +\infty}u_n=+\infty%$ et $%\displaystyle \lim _{n\to +\infty}v_n=0%$ 
+- $%\displaystyle \lim _{n\to +\infty}u_n=0%$ et $%\displaystyle \lim _{n\to +\infty}v_n=2%$
+- $%\displaystyle \lim _{n\to +\infty}u_n=+\infty%$ et $%\displaystyle \lim _{n\to +\infty}v_n=0%$
+
+
+
+** Soit $%\displaystyle u_n=1+\frac{1}{2^2}+\frac{1}{3^2}+\dots +\frac{1}{n^2}%$. Quelles sont les bonnes réponses ?
+ 
++ Pour tout $%n\geqslant 1%$, on a $%\displaystyle u_n\leqslant 2-\frac{1}{n}%$.
++ La suite $%(u_n)%$ est convergente et $%\displaystyle \lim _{n\to +\infty}u_n\leqslant 2%$.
+- La suite $%(u_n)%$ est divergente.
+- $%\displaystyle \lim _{n\to +\infty}u_n=+\infty%$
+
+
+
+** Soit $%\displaystyle u_n=\sin\left(\frac{2n\pi}{3}\right)%$ et $%\displaystyle v_n=\sin\left(\frac{3}{2n\pi}\right)%$. Quelles sont les bonnes réponses ?
+ 
++ La suite $%(u_n)%$ diverge et la suite $%(v_n)%$ converge.
++ La suite $%(u_n)%$ n'a pas de limite et $%\displaystyle \lim _{n\to +\infty}v_n=0%$.
+- Les suites $%(u_n)%$ et $%(v_n)%$ sont divergentes.
+- $%\displaystyle \lim _{n\to +\infty}u_n=0%$ et $%\displaystyle \lim _{n\to +\infty}v_n=0%$
+
+
+
+** Soit $%\displaystyle u_n=\frac{1}{1^2}+\frac{1}{2^2}+\frac{1}{3^2}+\dots+\frac{1}{n^2}%$ et $%\displaystyle v_n=u_n+\frac{1}{n}%$. Quelles sont les bonnes réponses ?
+ 
++ Les suites $%(u_n)%$ et $%(v_n)%$ sont adjacentes.
++ Les suites $%(u_n)%$ et $%(v_n)%$ convergent vers la même limite finie.
+- Si les limites existent, alors $%\displaystyle \lim _{n\to +\infty}u_n<\lim _{n\to +\infty}v_n%$.
+- Les suites $%(u_n)%$ et $%(v_n)%$ sont divergentes.
+
+
+
+** Soit $%(u_n)%$ une suite réelle. On suppose que $%\displaystyle |u_{n+1}-1|\leqslant \frac{1}{2}|u_n-1|%$ pour tout $%n\geqslant 0%$. Que peut-on en déduire ?
+ 
++ Pour tout $%n\geqslant 1%$, $%\displaystyle |u_n-1|\leqslant \frac{1}{2^n}|u_0-1|%$.
++ $%\displaystyle \lim _{n\to +\infty}u_n=1%$
+- La suite $%(u_n)%$ est convergente et $%\displaystyle \lim _{n\to +\infty}u_n=0%$.
+- La suite $%(u_n)%$ est divergente.
+
+
+
+** Soit $%(u_n)%$ une suite réelle. On suppose que $%\displaystyle u_n\geqslant \sqrt{n}%$ pour tout $%n\geqslant 0%$. Que peut-on en déduire ?
+ 
++ La suite $%(u_n)%$ n'est pas majorée.
++ $%\displaystyle \lim _{n\to +\infty}u_n=+\infty%$
+- La suite $%(u_n)%$ est croissante.
+- La suite $%(u_n)%$ est convergente.
+
+
+
+** Soit $%\displaystyle u_n=\sum _{k=1}^n\frac{1}{k(k+1)}%$. Quelles sont les bonnes réponses ?
+ 
++ Pour tout $%n\geqslant 1%$, $%\displaystyle u_n=1-\frac{1}{n+1}%$.
++ $%(u_n)%$ est convergente et $%\displaystyle \lim _{n\to +\infty}u_n=1%$.
+- La suite $%(u_n)%$ est croissante non majorée.
+- La suite $%(u_n)%$ est divergente.
+
+
+
+** Soient $%a%$ et $%b%$ deux réels tels que $%a>b>0%$. On pose $%\displaystyle u_n=\frac{a^n-b^n}{a^n+b^n}%$ et $%\displaystyle v_n=\frac{na^{2n}-b^{2n}}{a^{2n}+b^{2n}}%$. Quelles sont les bonnes réponses ?
+ 
++ $%\displaystyle \lim _{n\to +\infty}u_n=1%$ et $%(v_n)%$ est divergente.
++ $%\displaystyle \lim _{n\to +\infty}u_n=1%$ et $%\displaystyle \lim _{n\to +\infty}v_n=+\infty%$
+- Les suites $%(u_n)%$ et $%(v_n)%$ sont divergentes.
+- $%\displaystyle \lim _{n\to +\infty}u_n=0%$ et $%\displaystyle \lim _{n\to +\infty}v_n=+\infty%$
+
+
+
+** Soit $%\displaystyle u_n=\left|\frac{1}{n}-\frac{2}{n}+\frac{3}{n}-\dots+\frac{(-1)^{n-1}n}{n}\right|%$. Quelles sont les bonnes réponses ?
+ 
++ Les suites $%(u_{2n})%$ et $%(u_{2n+1})%$ convergent vers la même limite.
++ $%\displaystyle \lim _{n\to +\infty}u_n=\frac{1}{2}%$
+- La suite $%(u_n)%$ est monotone.
+- La suite $%(u_n)%$ est divergente.
+
+
+
+** On considère les suites de termes généraux $%\displaystyle u_n=\sum _{k=1}^n\frac{(-1)^k}{k}%$, $%\displaystyle v_n=\sum _{k=1}^{2n}\frac{(-1)^k}{k}%$ et $%\displaystyle w_n=\sum _{k=1}^{2n+1}\frac{(-1)^k}{k}%$. Quelles sont les bonnes réponses ?
+ 
++ Les suites $%(v_n)%$ et $%(w_n)%$ sont convergentes.
++ La suite $%(u_n)%$ est convergente.
+- La suite $%(u_n)%$ est divergente.
+- L'une au moins des suites $%(v_n)%$ ou $%(w_n)%$ est divergente.
+
+
+
+** Soit $%a>0%$. On définit par récurrence une suite $%(u_n)_{n\geqslant 0}%$ par $%u_0>0%$ et, pour $%n\geqslant 0%$, $%\displaystyle u_{n+1}= \frac{u_n^2+a^2}{2u_n}%$. Que peut-on en déduire ?
+ 
++ $%\forall n\in \mathbb{N}^*%$, $%u_n \geqslant a%$, et $%(u_n)_{n\geqslant 1}%$ est décroissante.
++ Pour tout $%n\in \mathbb{N}%$, $%\displaystyle \left|u_{n+1}-a\right|\leqslant \frac{\left|u_1-a\right|}{2^n}%$.
+- Le terme $%u_n%$ n'est pas défini pour tout $%n\in \mathbb{N}%$.
+- La suite $%(u_n)%$ est divergente.
+
+
+
+** Soient $%(u_n)%$ et $%(v_n)%$ deux suites réelles. On suppose que $%(v_n)%$ est croissante non majorée et que $%\displaystyle v_n < u_n%$ pour tout $%n\geqslant 0%$. Que peut-on en déduire ?
+ 
++ La suite $%(u_n)%$ est divergente.
++ $%\displaystyle \lim _{n\to +\infty}u_n=+\infty%$
+- $%\displaystyle \lim _{n\to +\infty}v_n<\lim _{n\to +\infty}u_n%$
+- $%\displaystyle \lim _{n\to +\infty}v_n\leqslant u_0%$
+
+
+
+** Soit $%(u_n)%$ une suite croissante. On suppose que $%\displaystyle u_{n+1}-u_n\leqslant \frac{1}{2^n}%$ pour tout $%n\geqslant 0%$. Que peut-on en déduire ?
+ 
++ $%(u_n)%$ est bornée et $%u_0\leqslant u_n\leqslant u_0+2%$.
++ $%(u_n)%$ est convergente et $%\displaystyle u_0\leqslant \lim _{n\to +\infty}u_n\leqslant u_0+2%$.
+- $%(u_n)%$ est divergente.
+- $%\displaystyle \lim _{n\to +\infty}u_n=+\infty%$
+
+
+
+** Soit $%(u_n)_{n\geqslant 0}%$ la suite définie par $%u_0\geqslant 0%$ et $%\displaystyle u_{n+1}= \ln(1+u_n)%$. Que peut-on en déduire ?
+ 
++ $%\forall n\in \mathbb{N}^*%$, $%u_n \geqslant 0%$, et $%(u_n)%$ est décroissante
++ $%\displaystyle \lim _{n\to +\infty}u_n=0%$
+- Une telle suite $%(u_n)%$ n'existe pas.
+- $%\displaystyle \lim _{n\to +\infty}u_n=+\infty%$
+
+
+
+** Soit $%(u_n)%$ une suite croissante. On suppose que $%\displaystyle 0\leqslant u_{n+1}\leqslant \frac{1}{2}u_n+\frac{1}{2^n}%$ pour tout $%n\geqslant 0%$. Quelles sont les bonnes réponses ?
+ 
++ $%(u_n)%$ est majorée.
++ $%(u_n)%$ est convergente et $%\displaystyle 0\leqslant \lim _{n\to +\infty}u_n\leqslant 2%$.
++ $%u_n=0%$ pour tout $%n\geqslant 1%$.
+- $%(u_n)%$ est divergente.
+
+
+
+** Soit $%(u_n)%$ une suite croissante. On suppose que $%\displaystyle u_n+\frac{1}{n+1}\leqslant u_{n+1}%$ pour tout $%n\geqslant 0%$. Quelles sont les bonnes réponses ?
+ 
++ $%(u_n)%$ est divergente.
+- $%(u_n)%$ est majorée.
+- $%(u_n)%$ est convergente et $%\displaystyle \lim _{n\to +\infty}u_n\geqslant 0%$.
+- $%u_n=0%$ pour tout $%n\geqslant 1%$.
+
+
+
+** On admet que $%\forall x \in [0,1[%$, $%\ln (1+x)\leqslant x\leqslant -\ln (1-x)%$. Soit $%\displaystyle u_n=\sum _{k=1}^n\frac{1}{n+k}%$, $%n\geqslant 1%$. Quelles sont les bonnes réponses ?
+ 
++ Pour tout $%n\geqslant 1%$, $%\displaystyle \ln \left(\frac{2n+1}{n+1}\right)\leqslant u_n\leqslant \ln (2)%$.
++ $%(u_n)%$ est convergente et $%\displaystyle \lim _{n\to +\infty}u_n=\ln (2)%$.
+- La suite $%(u_n)%$ est croissante non majorée.
+- $%\displaystyle \lim _{n\to +\infty}u_n=+\infty%$
+
+
+
+** Parmi les affirmations suivantes, lesquelles sont vraies ?
+ 
++ $%A%$ et $%B%$ ne peuvent pas être incompatibles car $%\mathbb{P}(A)+\mathbb{P}(B)=1.1>1%$.
++ Il est impossible que $%A%$ et $%B%$ soient indépendants si $%A%$ implique $%B%$.
++ $%\Omega%$ est indépendant de tout autre événement.
++ Deux événements quelconques (mais non impossibles) ne peuvent être simultanément incompatibles et indépendants.
+- $%A%$ est inclus dans $%B%$ car $%\mathbb{P}(A)\leqslant \mathbb{P}(B)%$.
+
+
+
+** Supposons maintenant que $%\mathbb{P}(A\cup B)=4/5%$. $%A%$ et $%B%$ sont-ils indépendants ?
+ 
++ Oui.
+- Non.
+- On ne peut pas se prononcer car on ne dispose pas de $%\mathbb{P}(A\cap B)%$.
+- On ne peut pas se prononcer car on ne dispose pas de détails sur l'expérience, sur $%\Omega%$, $%A%$ et $%B%$.
+
+
+
+** Soit $%\omega\in\Omega%$. Et supposons que $%B\subset A%$ (dans cette question seulement). Parmi les propositions suivantes, laquelle/lesquelles désigne(nt) un événement ?
+ 
++ $%\{\omega\}%$
++ $%A\backslash B%$
+- $%\omega%$
+- $%(\omega)%$
+- $%B\backslash A%$
+- $%A|B%$
+
+
+
+** Parmi les affirmations suivantes, lesquelles n'ont aucun sens (c'est-à-dire ne sont pas correctes au niveau du langage mathématique) ?
+ 
++ Dans certaines circonstances, on a $%\mathbb{P}(A\cup B)=\mathbb{P}(A)\cup\mathbb{P}(B)%$.
++ Si $%C%$ est un autre événement impliqué par $%A%$, on a $%A\cup C\cap B=A\cap B%$.
++ On a $%A\subset A+B%$.
++ $%\{A,B\} \subset \Omega%$
+
+
+
+** Dans ce cadre, le(s)quel(s) des 2 espaces $%\Omega%$ ci-dessous peu(ven)t être considéré(s) pour cette expérience ?
+ 
++ Les deux peuvent convenir.
+- Seulement $%\Omega=\{%$ permis obtenu \ , \ permis non obtenu  $%\}%$.
+- Seulement $%\Omega=\{%$\ il y a eu une tentative \ , \ il y a eu deux tentatives $%\}%$.
+- Aucun des deux n'est un univers adéquat.
+
+
+
+** On suppose désormais qu'un espace $%\Omega%$ convenable a été choisi (mais on ne le détaille pas ici ; il permet en tout cas de définir les événements adéquats des questions suivantes). La probabilité d'obtenir le permis au plus tard à la seconde tentative vaut :
+ 
++ Environ $%53\%%$
+- $%1/2%$
+- $%2/3%$
+- Environ $%23\%%$
+
+
+
+** Peut-on définir les événements $%A=%$"la seconde tentative a échoué sachant que la première a échoué"
+et $%B=%$"la première tentative a échoué et la seconde a réussi" ?
+ 
++ Non pour $%A%$, oui pour $%B%$.
+- Oui pour $%A%$, oui pour $%B%$.
+- Oui pour $%A%$, non pour $%B%$.
+- Non pour $%A%$, non pour $%B%$.
+
+
+
+** Que vaut la probabilité d'avoir tenté l'épreuve une seconde fois sachant qu'on a obtenu le permis au final ?
+ 
++ $%0,375%$
+- Zéro.
+- $%0,1875%$
+- Une autre valeur que les réponses précédentes.
+- La question n'a pas de sens.
+
+
+
+** Les événements $%R=%$"le permis est obtenu à l'issue de l'expérience" et $%T=%$"Une deuxième tentative a eu lieu" sont-ils :
+ 
++ Ni l'un ni l'autre.
+- Indépendants.
+- Incompatibles.
+- Indépendants et incompatibles.
+
+
+
+** Dans cette question et les suivantes, on note $%\Omega%$ l'ensemble de tous les sous-ensembles de 30 SMS (distincts). Combien d'éléments $%\Omega%$ contient-il ?
+ 
++ $%C_{2000}^{30}%$
+- $%A_{2000}^{30}%$
+- 1971
+- $%2000!/30!%$
+
+
+
+** A-t-on équiprobabilité dans cette situation ?
+ 
++ Oui.
+- Non.
+
+
+
+** On considère maintenant que vous faites partie des personnes qui ont envoyé un SMS. Quelle est la probabilité que vous soyez sélectionné(e) ?
+ 
++ $%1.5\%%$
+- $%0.03\%%$
+- $%0.15\%%$
+- Environ $%1.2\%%$.
+
+
+
+** Votre ami(e) fait également partie des personnes ayant envoyé un SMS. Quelle est la probabilité qu'au moins l'un(e) d'entre vous soit tiré(e) au sort ?
+ 
++ Environ 3\% (mais pas 3\%).
+- Deux fois la réponse à la question précédente.
+- Environ 0,3\% (mais pas 0,3\%).
+- Une autre valeur.
+
+
+
+** Parmi les descriptions ci-dessous, laquelle/lesquelles désigne(nt) une partition de $%\Omega%$ ?
+ 
++ $%\{B_1,B_2,B_3\}%$
++ $%\{A_1\cup A_2,A_3\}%$
+- $%\{S_2,S_3,S_4,S_5,S_6\}%$
+
+
+
+** Parmi les affirmations suivantes, laquelle/lesquelles est/sont erronée(s) ou n'a/n'ont aucun sens ?
+ 
++ $%(A_1\cup A_2\cup A_3)^c=B_1\cap B_2%$
++ $%(A_1\cup A_2)\cap(B_1\cup A_3)=(A_1\cap B_1)\cup (A_2\cap B_1)%$
++ $%\mathbb{P}(B_j|A_i)=\mathbb{P}(B_j)%$ \ $%(\forall (i,j)\in \{1,2,3\}^2)%$
+- $%\mathbb{P}(\Omega)=\cup_{i=1}^3\mathbb{P}(A_i)%$
+- $%S_3=(A_1\cap B_1)\cup(A_1\cap B_2)%$
+- $%S_5^c=A_3\cup B_3%$
+
+
+
+** Que vaut la probabilité de $%S_5%$ ?
+ 
++ $%8/9%$
+- $%5/6%$
+- $%7/9%$
+
+
+
+** Que vaut la probabilité de $%S_5\backslash S_2%$ ?
+ 
++ $%7/9%$
+- $%2/3%$
+- $%6/9%$
+- L'énoncé ne veut rien dire
+
+
+
+** Que vaut la probabilité conditionnelle de $%S_5%$ sachant $%S_2%$ ?
+ 
++ $%1%$
+- $%1/8%$
+- $%8/9%$
+- L'énoncé ne veut rien dire
+
+
+
+** Soit $%n%$ un entier non nul et $%k%$ un entier compris entre $%1%$ et $%n%$. On considère un tableau contenant $%n%$ cases vides. Quel est le nombre de façons différentes de noircir $%k%$ de ces cases ?
+ 
++ Aucune des réponses précédentes.
+- $%k%$
+- $%n-k%$
+- $%1-n%$
+
+
+
+** Soit $%n%$ un entier non nul et $%k%$ un entier compris entre $%1%$ et $%n%$. On lance $%n%$ fois une pièce équilibrée. Quelle est la probabilité d'obtenir exactement $%k%$ piles ?
+ 
++ $%n!/(2^n \, k!(n-k)!)%$
+- $%C_n^k p^n(1-p)^{n-k}%$
+- $%\displaystyle\frac{k!}{n!(n-k)!}(1/2)^k(1/2)^{n-k}%$
+
+
+
+** Quelle est la probabilité que $%N%$ vaille 3 ?
+ 
++ Aucune des réponses précédentes.
+- Elle vaut $%(1/4)^3\simeq 1.56\%%$.
+- On ne peut pas savoir, car on ne connaît pas la loi de $%N%$.
+
+
+
+** Quelle est la probabilité qu'il y ait au moins 4 joueurs absents durant le mois de juin ?
+ 
++ Elle vaut environ $%35\%%$.
+- Elle vaut exactement $%1-\sum_{k=0}^3 (1/4)^k%$.
+- Elle vaut environ $%19\%%$.
+- On ne peut pas répondre car la loi de $%N%$ n'est pas connue.
+
+
+
+** Les familles d'événements 
+\[
+( \; \{N=0\}\, , \, \{N=1\}\, , \ldots , \, \{N=12\} \; ) \makebox[1.5cm][c]{ et } 
+( \;\{N\leqslant 0\}\, , \, \{N\leqslant 1\}\, , \ldots , \, \{N\leqslant 12\}\; )
+\] 
+constituent-elles des partitions de l'univers $%\Omega%$ associé à cette expérience ?
+ 
++ Oui pour la première, non pour la seconde.
+- Non pour la première, oui pour la seconde.
+- Non pour les deux familles.
+- On ne peut pas le savoir car on ne connaît pas l'univers $%\Omega%$ en question.
+
+
+
+** Que valent l'espérance et le premier quartile de $%N%$ ?
+ 
++ Ils valent respectivement $%3%$ et $%2%$.
+- Ils valent respectivement $%3%$ et $%1%$.
+- Ils valent respectivement $%4%$ et $%1%$.
+- On ne peut toujours pas le dire car on ne connaît toujours pas la loi de $%N%$ !
+
+
+
+** Quelle est la loi du nombre $%N%$ de fois que cette personne fait face (avant de finir par faire pile) ?
+ 
++ C'est une loi géométrique sur $%\mathbb{N}%$ de paramètre $%1/2%$.
+- C'est une loi binomiale de paramètres $%10%$ et $%1/2%$.
+- C'est une loi binomiale négative de paramètres $%10%$ et $%1/2%$.
+- C'est une loi géométrique sur $%\mathbb{N}^*%$ de paramètre $%1/2%$.
+- C'est une loi de Poisson de paramètre $%1/2%$.
+
+
+
+** Que valent $%\mathbb{E}(N)%$, $%\operatorname{Var}(N)%$, $%\mathbb{E}(N^2)%$ ?
+ 
++ $%\mathbb{E}(N)=1 %$, $%\operatorname{Var}(N)=2%$,  $%\mathbb{E}(N^2)=3%$.
+- $%\mathbb{E}(N)=1 %$, $%\operatorname{Var}(N)=2%$,  $%\mathbb{E}(N^2)=1%$.
+- $%\mathbb{E}(N)=2 %$, $%\operatorname{Var}(N)=2%$,  $%\mathbb{E}(N^2)=6%$.
+- $%\mathbb{E}(N)=2 %$, $%\operatorname{Var}(N)=2%$,  mais le calcul de $%\mathbb{E}(N^2)%$ est trop compliqué.
+- Aucune des réponses ci-dessus.
+
+
+
+** Que valent $%\mathbb{P}(N\geqslant 2)%$ et la médiane de $%N%$ ?
+ 
++ $%\mathbb{P}(N\geqslant 2)=1/4%$ et la médiane de $%N%$ vaut $%0%$.
+- $%\mathbb{P}(N\geqslant 2)=1/2%$ et la médiane de $%N%$ vaut $%1%$.
+- $%\mathbb{P}(N\geqslant 2)=3/4%$ et la médiane de $%N%$ vaut $%1%$.
+- Aucune des réponses ci-dessus.
+
+
+
+** Quel est le montant moyen que ce joueur devra donner à son voisin de table ?
+ 
++ 10 euros.
+- 5 euros.
+- 20 euros.
+- Aucune des réponses ci-dessus.
+
+
+
+** Quelle est la loi de $%X%$ ?
+ 
++ Aucune des réponses ci-dessus.
+- $%X%$ suit la loi uniforme sur $%\{1,2,\ldots,12\}%$.
+- $%X%$ suit la loi uniforme sur $%\{2,3,\ldots,12\}%$.
+- $%X%$ suit la loi binomiale de paramètres 12 et $%1/6%$.
+
+
+
+** Que valent l'espérance et la médiane de $%X%$ ?
+ 
++ Elles valent toutes les deux 7.
+- L'espérance de $%X%$ vaut $%6.5%$ et la médiane vaut $%7%$.
+- Elles valent d'autres valeurs que celles proposées ci-dessus.
+
+
+
+** Que valent $%\mathbb{P}(X\geqslant 4)%$ et la variance de $%X%$ ?
+ 
++ $%\mathbb{P}(X\geqslant 4)=11/12%$ et $%\mathbb{V}ar(X)\simeq 5.8%$.
+- $%\mathbb{P}(X\geqslant 4)=3/4%$ et $%\mathbb{V}ar(X)=329/6%$.
+- $%\mathbb{P}(X\geqslant 4)=1/4%$ et $%\mathbb{V}ar(X)=35/6%$.
+- $%\mathbb{P}(X\geqslant 4)=14/36%$ et $%\mathbb{V}ar(X)=35/6%$.
+
+
+
+** Soit $%X%$ une variable aléatoire à valeurs dans $%\mathbb{N}%$ vérifiant $%\mathbb{P}(X\geqslant 3)=64\%%$. Que peut-on dire de la médiane de $%X%$ ?
+ 
++ Elle est supérieure ou égale à 3.
+- Elle vaut 3.
+- Elle est inférieure ou égale à 3.
+- On manque d'informations pour affirmer l'une des propositions ci-dessus.
+
+
+
+** Soit $%X%$ une variable aléatoire réelle d'espérance $%2%$ et de variance $%2%$. Peut-on calculer l'espérance de $%Y=2X^2+1%$ ?
+ 
++ Oui, elle vaut 13.
+- Non, car on ne connait pas $%\mathbb{E}(X^2)%$.
+- Oui, elle vaut 5.
+
+
+
+** Quelles valeurs la constante $%a%$ a-t-elle le droit de prendre ?
+ 
++ Toutes les valeurs de $%]0,1/2[%$.
+- Toutes les valeurs de $%]0,1[%$ car $%\mathbb{P}(X=0)+\mathbb{P}(X=1)+\mathbb{P}(X=2)=1%$.
+- Seulement la valeur $%a=1/4%$.
+- Une autre réponse que les précédentes.
+
+
+
+** Quel est le graphe de la fonction de répartition de $%X%$ parmi les graphes suivants ?
+\qimage{img-proba-01}
+ 
++ Le second.
+- Le premier.
+- Le troisième.
+
+
+
+** Que valent l'espérance et la variance de $%X%$ ?
+ 
++ $%\mathbb{E}(X)=1%$ et $%\operatorname{Var}(X)=2a%$.
+- $%\mathbb{E}(X)=1%$ et $%\operatorname{Var}(X)=1+2a%$.
+- $%\mathbb{E}(X)=2a%$ et $%\operatorname{Var}(X)=4a^2%$.
+
+
+
+** On pose $%Y=4-2X%$. \emph{Sans déterminer la loi de $%Y%$}, peut-on calculer l'espérance et l'écart-type de $%Y%$ ?
+ 
++ Oui, ils valent respectivement $%2%$ et $%\sqrt{8a}%$.
+- Oui, ils valent respectivement $%2%$ et $%\sqrt{4(1-a)}%$.
+- Oui, ils valent respectivement $%4(1-a)%$ et $%4a%$.
+- Oui, mais aucune des propositions précédentes n'est correcte.
+- Non, il nous faut nécessairement la loi pour calculer ces caractéristiques de $%Y%$.
+
+
+
+** Parmi les expressions ci-dessous, lesquelles permettent de définir des densités de lois continues ? (Ci-dessous, les lettres $%c%$ et $%c'%$ désignent des constantes qu'il n'est pas obligatoire de calculer, mais qui ont la valeur adéquate pour que les fonctions en question soient des densités, si elles le peuvent.)
+ 
+- $%f_1(x) = \displaystyle\frac {c} x \, \mathbb{I}_{[1,+\infty[}(x)%$
+- $%f_2(x) = c' \, x^{24} \, \mathbb{I}_{[-100,100]}(x)%$
+- $%f_3(x) = \frac 4{15} x^3 \, \mathbb{I}_{[-1,2]}(x)%$
+- $%f_4(x) = \frac {\pi}2 \sin(\pi x) \, \mathbb{I}_{[0,1]}(x)%$
+
+
+
+** Soit $%X%$ le temps de trajet quotidien de Katrin, en heures, variable aléatoire de densité définie par 
+\[ f_X(x) = x\, e^{-x} \mathbb{I}_{[0,+\infty[}(x) \]
+Laquelle des affirmations suivantes est vraie ?
+ 
++ $%\mathbb{P}(X>1)\simeq 73.6\%%$ et on ne peut pas facilement déterminer la médiane de $%X%$.
+- $%\mathbb{E}(X)=1%$ et $%\mathbb{P}(X>1)\simeq 63.2\%%$.
+- $%\mathbb{E}(X)=2%$ et $%\mathbb{P}(X>1)\simeq 26.4\%%$.
+- $%\mathbb{E}(X)%$ vaut $%+\infty%$ (c'est-à-dire $%X%$ n'admet pas d'espérance) et $%\mathbb{P}(X>1)\simeq 26.4\%%$.
+
+
+
+** Si on considère $%X%$ une variable aléatoire dont la densité est la fonction représentée ci-dessous, laquelle/lesquelles de ces affirmations est/sont vraie(s) ? 
+\qimage{img-proba-02}
+ 
++ $%\mathbb{P}(X<2) > \mathbb{P}(X>-1)%$
++ $%\mathbb{P}(X>x) < 1/2%$ pour tout $%x>0%$.
+- La médiane de $%X%$ est positive.
+- $%\mathbb{P}( \, \ln(X+3) >0 \, ) < 1/2%$
+
+
+
+** On suppose que le temps d'attente (en minutes) d'un bus est une variable aléatoire de densité définie par 
+\[ f_X(x)= \frac{2}{15}\left(1-\frac{x}{15}\right)\mathbb{I}_{[0,15]}(x) \]
+Si l'on suppose que ces temps d'attente pendant 10 jours sont indépendants et de même loi (celle définie précédemment), quelle est la probabilité qu'on ait, durant ces 10 jours, a attendre plus de 10 minutes au moins 3 fois ?
+ 
++ Environ $%9\%%$.
+- Environ $%5\%%$.
+- Environ $%21\%%$.
+- Environ $%90\%%$.
+- On ne peut pas répondre à la question, il manque des éléments pour mener le calcul.
+
+
+
+** On considère que la quantité de pain (en centaines de kg) qu'une boulangerie vend en une journée est une variable aléatoire de loi de densité définie par 
+\[
+f_X(x) = \left\{  \begin{array}[c]{cl} x & \mbox{ si $%0\leqslant x\leqslant 1%$} \\ 2-x & \mbox{ si $%1\leqslant x\leqslant 2%$} \\ 0 & \mbox{ sinon}    \end{array} \right. 
+\]
+On introduit les événements $%A%$="la boulangerie vendra demain au moins 100kg de pain" et $%B%$="la boulangerie vendra demain entre 50 et 150kg de pain". Les événements $%A%$ et $%B%$ sont ils indépendants ?
+ 
++ Oui.
+- Non.
+
+
+
+** Soit $%X%$ une variable aléatoire de loi $%{\cal N}(0,1)%$. On pose $%Y=X^2%$ (on dit que la loi de $%Y%$ est la loi du $%\chi^2%$ à 1 degré de liberté).  On a bien sûr $%f_Y(x)=0%$ si $%x<0%$ car $%Y%$ est une variable positive, mais quelle est l'expression de la densité de $%Y%$ pour $%x>0%$ ? (Ci-dessous, $%\varphi%$ désigne la densité de la loi $%{\cal N}(0,1)%$ bien sûr.)
+ 
++ $%f_Y(x) = \varphi(\sqrt{x}) / \sqrt{x}%$
+- $%f_Y(x) = 2x\varphi(x^2)%$
+- $%f_Y(x) = \varphi(\sqrt{x})%$
+- $%f_Y(x) = (\varphi(x))^2%$
+
+
+
+** Soit $%X%$ une variable aléatoire de loi $%{\cal N}(30,25)%$. Lesquelles (ou laquelle) des affirmations suivantes sont vraies ?
+ 
++ Le premier quartile de $%X%$ est environ égal à $%26.7%$ et $%\mathbb{P}(X<30)=1/2%$.
++ $%\mathbb{P}(|X-30|>20)\simeq 0%$ et la loi de $%Y=2X+10%$ est $%{\cal N}(70,100)%$.
+- $%X%$ a environ 5\% de chances d'être entre $%-20%$ et $%80%$, et $%\mathbb{P}(X>30)=1/2%$.
+- La loi de $%Y=2X%$ est $%{\cal N}(60,50)%$ et $%\mathbb{P}(20\leqslant X\leqslant 40)\simeq 95\%%$.
+
+
+
+** Quelle(s) affirmation(s), parmi les suivantes, sont vraies ?
+ 
++ Si $%X%$ est de loi continue, alors sa fonction de répartition est nécessairement continue sur $%\mathbb{R}%$.
+- Si $%X%$ est de loi continue, alors sa fonction de densité est nécessairement continue sur $%\mathbb{R}%$.
+- Si $%X%$ est une variable aléatoire de loi $%{\cal E}xp(\lambda)%$, alors $%2X%$ est de loi $%{\cal E}xp(2\lambda)%$.
+- Si $%X%$ est une variable aléatoire de loi uniforme sur $%[0,1]%$, alors $%2X%$ est de loi de densité $%f(x)=\mathbb{I}_{[0,2]}(x)%$.
+
+
+
+** On suppose que $%X%$ désigne le montant du gain (en euros) que rapporte un employé à son entreprise en un mois, et que $%X%$ est de loi $%{\cal N}(500,(150)^2)%$. L'entreprise verse à l'employé une prime $%Y%$ égale à $%0%$ si ce gain est inférieur à 700 euros, et, si le gain $%X%$ excède 700 euros, à la moitié de l'excès en question.  Laquelle des affirmations suivantes est vraie ?
+ 
++ La loi de $%Y%$ n'est pas une loi continue et l'employé a environ $%2,3\%%$ de chances d'avoir une prime supérieure à 50 euros.
+- La loi de $%Y%$ est une loi continue et l'employé a environ $%2,3\%%$ de chances d'avoir une prime supérieure à 50 euros.
+- La loi de $%Y%$ est une loi continue et l'employé a environ $%17\%%$ de chances d'avoir une prime supérieure à 50 euros.
+- La loi de $%Y%$ n'est pas une loi continue et l'employé a environ $%17\%%$ de chances d'avoir une prime supérieure à 50 euros.
+
+
+
+** Soit l'équation $%E : x^n=27%$.
+ 
++ $%E%$ a au moins une solution réelle quel que  soit $%n \geqslant 1%$.
++ $%E%$ a au moins $%n%$  solutions complexes quel que  soit $%n \geqslant 1%$.
++ $%E%$ a exactement $%n%$ solutions complexes quel que  soit $%n \geqslant 1%$.
+- $%E%$ a une unique  solution réelle quel que  soit $%n \geqslant 1%$.
+- $%E%$ a $%n%$ solutions réelles quel que  soit $%n \geqslant 1%$.
+
+
+
+** Soit $%f:\mathbb{R} \to \mathbb{R}%$, $%x \mapsto x^2+1%$.
+ 
++ $%f%$ n'est pas injective.
++ $%f%$ n'est pas surjective.
++ La restriction de $%f%$, $%f_| : [1,2] \to [2,5]%$ est bijective.
+- $%f%$ est injective.
+- $%f%$ est surjective.
+
+
+
+** Soit $%f:\mathbb{C} \to \mathbb{C}%$, $%z \mapsto z^2+1%$.
+ 
++ $%f%$ n'est pas injective.
++ $%f%$ est surjective.
++ La restriction de $%f%$, $%f_| : [1,2] \to [2,5]%$ est bijective.
+- $%f%$ est injective.
+- $%f%$ n'est pas surjective.
+
+
+
+** Pour $%x,y \in \mathbb{R}%$ et $%z=x+iy%$, on pose $%e^z=e^x \times
+e^{iy}=e^{x+iy}%$.
+ 
++ $%|e^z|=e^x%$.
++ Arg $%e^z = y%$.
+- $%|e^z|= \sqrt{x^2+y^2}%$.
+- Arg $%e^z=x+y%$.
+- La fonction $%f:\mathbb{C} \to \mathbb{C}%$, $%z \mapsto e^z%$ est injective.
+
+
+
+** Par quoi peut on compléter les pointillés pour que les
+\textbf{deux} assertions suivantes soient vraies :
+\[ z\in \mathbb{C} \ \ z=\overline{z} \ldots\ldots z\in \mathbb{R} \quad ; \quad z\in \mathbb{C} \ \ z^3=-1 \ldots\ldots z=-1\]
+ 
++ $%\implies%$ et $%\Longleftarrow%$.
++ $%\iff%$ et $%\Longleftarrow%$.
+- $%\iff%$ et $%\iff%$.
+- $%\Longleftarrow%$ et $%\iff%$.
+- $%\implies%$ et $%\implies%$.
+
+
+
+** Soit la suite $%(x_n)_{n\in\mathbb{N}^*}%$ définie par $%x_n =
+\frac{(-1)^n}{n}%$.
+ 
++ $%\forall N \in \mathbb{N}^ * \quad \exists n \geqslant N \qquad  x_n < 0%$.
++ $%\forall arepsilon > 0\ \ \exists N \in \mathbb{N}^* \ \ \forall n \in \mathbb{N}^* \ \ (n\geqslant N \implies |x_n|\leqslant arepsilon)%$.
+- $%\exists N > 0 \quad \forall n \in \mathbb{N}^* \qquad (n \geqslant N \implies x_n \geqslant 0)%$.
+- $%\exists arepsilon >0 \quad \forall n \in \mathbb{N}^* \qquad x_n \leqslant arepsilon%$.
+- $%\exists n \in \mathbb{N}^* \qquad x_n =0%$.
+
+
+
+** Soit $%E%$ un ensemble, $%A,B \subset E%$, soit $%A\Delta B = (A\cup B)\setminus(A\cap B)%$.
+Les assertions suivantes sont-elles vraies quels que soient $%A%$ et
+$%B%$ inclus dans $%E%$ ?
+ 
++ $%A\Delta B = (A\setminus B) \cup (B\setminus A)%$.
++ Si $%E%$ est un ensemble fini, $%\operatorname{Card}(A\Delta B) \leqslant \operatorname{Card} A+\operatorname{Card} B%$.
+- $%A\Delta B = (E \setminus A) \cap (E \setminus B)%$.
+- Si $%B\subset A%$ alors $% A\Delta B = A%$.
+- Si $%E%$ est un ensemble fini, $%\operatorname{Card}(A\Delta B) < \operatorname{Card} A+ \operatorname{Card} B%$.
+
+
+
+** Soit la suite $%(x_n)_{n\in \mathbb{N}}%$ définie par $%x_0=1%$ puis pour
+$%n \geqslant 1%$ $%x_n=\frac {x_{n-1}}{n}%$.
+ 
++ $%\forall n\in \mathbb{N} \qquad x_n > 0%$.
++ $%\forall n \in \mathbb{N} \qquad x_{n+1} \leqslant x_n%$.
+- $%\exists N \in \mathbb{N} \quad \exists c \in \mathbb{R} \quad \forall n \in \mathbb{N} \qquad (n \geqslant N \implies x_n = c)%$.
+- $%\forall n \in \mathbb{N} \qquad x_n \geqslant \frac{1}{2}\frac{1}{n!}%$.
+- $%\forall n \in \mathbb{N} \qquad x_n \leqslant \frac{1}{2}\frac{1}{n!}%$.
+
+
+
+** On lance de façon aléatoire deux dés identiques à $%6%$
+faces (numérotées de $%1%$ à $%6%$). On ne tient pas compte de
+l'ordre, par exemple le tirage $%1%$ puis $%5%$ est le même que $%5%$
+puis $%1%$, mais les tirages $%3%$ puis $%3%$, et $%3%$ puis $%4%$ sont
+distincts.
+ 
++ Il y a $%30%$ tirages distincts possibles.
++ La somme des deux chiffres a strictement plus de chances d'être $%7%$ que $%2%$.
+- Il y a $%36%$ tirages distincts possibles.
+- Il y a $%21%$ tirages distincts possibles.
+- La somme des deux chiffres a strictement plus de chances d'être $%\geqslant 11%$ que $%\leqslant 3%$.
+
+
+
+** Soit $%E%$ un ensemble fini de cardinal $%n%$, soit $%A\subset E%$ un
+ensemble à $%p%$ éléments, et  $%B \subset E%$ un ensemble à
+$%q%$ éléments. On note $%\mathcal{S} = \{ (a,b) \in A \times B \mid a\neq b \}%$ et
+$%\mathcal{T} = \{ (I,b) \text{ avec } I\subset A \mid \operatorname{Card} I =r \text{ et } b\in B \}%$.
+ 
++ Si $%A \cap B = \emptyset%$ alors $%\operatorname{Card} \mathcal{S} = pq%$.
++ $%\operatorname{Card} \mathcal{T} = C_p^r \times q%$.
+- Si $%A \cap B = \emptyset%$ alors $%\operatorname{Card} \mathcal{S} = p+q%$.
+- Si $%A \subset B%$ alors $%\mathcal{S} = \emptyset%$.
+- $%\operatorname{Card} \mathcal{T} = C_n^p \times r%$.
+
+
+
+** Les propositions suivantes sont-elles vraies quels que soient $%\ell
+\geqslant 2%$ et $%p_1,\ldots,p_\ell%$  des nombres premiers $%> 2%$ ?
+ 
++ $%\prod_{i=1}^\ell p_i%$ est un nombre impair.
+- $%p_1p_2\ldots p_\ell%$ est un nombre premier.
+- Le carré de $%p_1%$ est un nombre premier.
+- $%p_1p_2\ldots p_\ell + 1%$ est un nombre premier.
+- $%\sum_{i=1}^\ell p_i%$ est un nombre impair.
+
+
+
+**  
++ Soit $%n\in \mathbb{N}%$ un entier, alors $%(n+1)(n+2)(n+3)(n+4)%$
+est divisible par $%24%$.
++ La somme et le produit de deux nombres pairs est un nombre pair.
+- Soit $%n \geqslant 6%$ un entier pair alors $%\frac{n}{2}%$ est impair.
+- $%a|b%$ et $%a'|b' \quad \implies  \quad aa'|bb'%$.
+- $%a|b%$ et $%a'|b' \quad \implies  \quad a+a'| b+b'%$.
+
+
+
+**  
++ Le pgcd de $%924%$, $%441%$  et $%504%$   est $%21%$.
++ Soit $%n \geqslant 2%$ alors $%n%$ et $%n+1%$ sont premiers entre eux.
++ Soit $%n \geqslant 2%$ un entier, le pgcd de $%\{ in^i \text{ pour } i=1,\ldots ,100 \}%$ est $%n%$.
+- $%627%$ et $%308%$ sont premiers entre eux.
+- Si $%p \geqslant 3%$ est premier, alors $%p!%$ est premier.
+
+
+
+** Soient $%a,b,c \geqslant 1%$ des entiers.
+ 
++ $%ab = \operatorname{pgcd}(a,b)\times \operatorname{ppcm}(a,b)%$.
++ $%\operatorname{ppcm}(a,b,c)%$ est divisible par $%c%$.
+- $%abc = \operatorname{pgcd}(a,b,c)\times \operatorname{ppcm}(a,b,c)%$.
+- $%\operatorname{ppcm}(1932,345)= 19320%$.
+- $%\operatorname{ppcm}(5,10,15)= 15%$.
+
+
+
+**  
++ Sachant que $%7%$ divise $%86419746 \times 111%$ alors $%7%$ divise $%86419746%$.
++ Si $%a = bq + r%$ est la division euclidienne de $%a%$ par $%b%$ alors $%\operatorname{pgcd}(a,b) = \operatorname{pgcd} (b,r)%$.
++ Il existe $%u,v \in \mathbb{Z}%$ tels que $%195u+2380v=5%$.
+- Soit $%a,b,c \geqslant 1%$ des entiers. Si $%a|bc%$ et $%a%$ ne divise pas $%b%$ alors $%a|c%$.
+- Sachant qu'il existe $%u,v%$ tels que $%2431u+65520v = 39%$
+alors $%\operatorname{pgcd}(2431,65520)=39%$.
+
+
+
+**  
++ $%\exists P \in \mathbb{Z}[X] \quad \forall x \in \mathbb{R} \qquad P(x) > 0%$.
++ $%\forall P \in \mathbb{Q}[X] \qquad  x\in \mathbb{Q} \implies P(x) \in \mathbb{Q}%$.
++ $%\forall P \in \mathbb{C}[X] \text{ de degré}\geqslant 1 \quad
+\exists z\in \mathbb{C}\  \qquad  P(z) = 0%$.
+- $%\forall P \in \mathbb{Z}[X] \quad \exists x \in \mathbb{R} \qquad |P(x)| < 1%$.
+- Tout polynôme de degré $%2%$ ne s'annulant pas, prend uniquement des valeurs positives.
+
+
+
+** Soit $%P,Q \in\mathbb{C}[X]%$ des polynômes non nuls  $%P = \sum_{i=0}^na_iX^i%$, soit $%I_P = \{i \in \mathbb{N}  \mid a_i \neq 0\}%$, soit $%\text{val}(P) = \min I_P%$.
+ 
++ $%\text{val}(-X^7+X^3+7X^2)=2%$.
++ $%\text{val}(P+Q) \geqslant \text{val}(P)%$.
++ $%\text{val}(P\times Q) \geqslant \text{val}(P)+\text{val}(Q)%$.
++ Si $%Q|P%$ alors $%\text{val}(P/Q) = \text{val}(P) - \text{val}(Q)%$.
+- $%\text{val}(k.P) =  k \cdot \text{val}(P)%$ où $%k \in \mathbb{N}^*%$.
+
+
+
+**  
++ $%X^4+X^3-X^2-X%$ est divisible par $%X(X-1)%$.
++ Le quotient de $%X^5+2X^3+X^2+2X+1%$ par $%X^2+1%$ est $%X^3+X+1%$.
++ $%X-1%$ divise $%X^n-1%$ pour $%n \geqslant 1%$.
+- Le reste la division euclidienne de $%X^3+X^2+3%$ par $%X-1%$ est $%X+4%$.
+- $%X+1%$ divise $%X^n+1%$ pour $%n \geqslant 1%$.
+
+
+
+**  
++ Soit $%P\in \mathbb{C}[X]%$. $%X-a%$ divise $%P%$ ssi $%P(a)=0%$.
++ Soit $%P\in \mathbb{R}[X]%$ de degré impair. Il existe $%x \in \mathbb{R}%$ tel que $%P(x) = 0%$.
++ Soit $%P\in \mathbb{R}[X]%$, les racines de $%P^2%$ sont d'ordre au moins $%2%$.
+- Soit $%P\in \mathbb{R}[X]%$, $%x%$ est racine simple ssi $%P(x) = 0%$.
+- Un polynôme  $%P\in \mathbb{C}[X]%$ de degré $%n%$ a $%n%$ racines réelles.
+
+
+
+**  
++ $%X^2+7%$ est irréductible dans $%\mathbb{Q}[X]%$.
++ Dans $%\mathbb{Z}[X]%$, $%\operatorname{pgcd}(X^4+X^3+X^2+X,X^3-X^2-X+1) = X+1%$.
+- $%X^4+1%$ est irréductible dans $%\mathbb{R}[X]%$.
+- $%X^2+7%$ est irréductible dans $%\mathbb{C}[X]%$.
+- Dans $%\mathbb{Z}[X]%$, $%\operatorname{pgcd}(X(X-1)^2(X^2+1) ,X^2(X-1)(X^2-1) ) = X(X-1)%$.
+
+
+
+**  
++ $%(x\in \mathbb{Q} \text{ et }  y\in\mathbb{Q}) \implies x+y \in \mathbb{Q}%$
++ $%\forall x \in \mathbb{R} \setminus \mathbb{Q} \quad \forall y \in \mathbb{R} \setminus \mathbb{Q} \qquad x < y \implies (\exists z \in \mathbb{Q} \quad x<z<y)%$
++ $%(\forall x \in \mathbb{R} \setminus \mathbb{Q}) \quad (\forall y \in \mathbb{R} \setminus \mathbb{Q}) \qquad x < y \implies (\exists z \in \mathbb{R} \setminus
+\mathbb{Q} \quad  x<z<y)%$
+- $%(x\in \mathbb{R} \setminus \mathbb{Q} \text{ et } y\in\mathbb{R} \setminus \mathbb{Q}) \implies x+y \in \mathbb{R} \setminus \mathbb{Q}%$
+- Pour $%n\geqslant 3%$, $%n \text{ impair } \implies \sqrt{n}\in \mathbb{R} \setminus \mathbb{Q}%$
+
+
+
+** Soient $%A,B,C%$ des parties de $%\mathbb{R}%$
+ 
++ Si $%\max A%$ existe alors $%\sup A%$ existe.
++ Pour $%A, B%$ majorées et $%C \subset A\cap B%$ alors $%\sup C \leqslant \sup A%$ et $%\sup C \leqslant \sup B%$.
++ Si $%B = \left\lbrace \frac{E(x)}x  \ | x>0 \right\rbrace%$ alors $%\inf B = 0%$ et $%\sup B =1%$.
+- Si $%\sup A%$ existe alors $%\max A%$ existe.
+- Si $%A = \left\lbrace \frac{(-1)^n}n + 1 \ | \ n\in \mathbb{N}^* \right\rbrace%$ alors $%\inf A = 0%$ et $%\sup A =1%$.
+
+
+
+**  
++ Si $%u_n= n\sin(\frac 1 n)%$ alors $%(u_n)%$ tend vers $%1%$.
++ $%u_n = \sin(n)%$, il existe une sous-suite de $%(u_n)%$ convergente.
+- Si $%u_n=\ln (\ln(n))%$ alors $%(u_n)%$ a une limite finie.
+- $%u_n = \frac{(\ln n)^2}{\sqrt n}%$ alors $%(u_n)%$ tend vers $%+\infty%$.
+- $%u_n = 1+\frac12 +\frac14 +\frac18 + \cdots +\frac{1}{2^n}%$ alors $%(u_n)%$ diverge.
+
+
+
+** Soit $%f(x) = 2x(1-x)%$ et la suite définie par $%u_0 \in [0,1]%$ et $%u_{n+1} = f(u_n)%$.
+ 
++ $%\forall n\in \mathbb{N} \qquad u_n \in [0,1]%$.
++ Si $%(u_n)%$ converge vers $%\ell%$ alors $%\ell=0%$ ou $%\ell=\frac12%$.
++ $%u_0 \in]0,1[%$ alors $%(u_n)%$ ne converge pas vers $%0%$.
+- Quelque soit $%u_0%$ dans $%[0,1]%$, $%(u_n)%$ est monotone.
+- Si $%(u_n)%$ converge vers $%\ell%$ alors $%\ell=0%$ ou $%\ell=1%$.
+
+
+
+**  
++ La fonction $%\sqrt{\sqrt{x}}\ln x%$ est prolongeable par continuité en $%0%$.
+- La somme, le produit et le quotient de deux fonctions continues est continue.
+- Il existe $%a,b \geqslant 0%$ tels que fonction définie par $%f(x) = -e^x%$ si $%x<0%$ et $%f(x) = ax^2+b%$ si $%x\geqslant 0%$ soit continue.
+- Toute fonction impaire de $%\mathbb{R}%$ dans $%\mathbb{R}%$ est continue en $%0%$.
+- La fonction $%\frac{\sqrt{|x|}}{x}%$ est prolongeable par continuité en $%0%$.
+
+
+
+**  
++ La méthode de dichotomie est basée sur le théorème des valeurs intermédiaires.
++ Pour $%f : \mathbb{R}^+ \longrightarrow \mathbb{R}%$ continue admettant une limite finie en $%+\infty%$, $%f%$ est bornée.
+- Tout polynôme de degré $%\geqslant 3%$ a au moins une racine réelle.
+- La fonction $%f(x) = \frac{1}{x^3(x^2+1)}%$ admet au moins une racine réelle dans $%]-1,+1[%$.
+- Pour $%f : \mathbb{R}^+ \longrightarrow \mathbb{R}%$ continue admettant une limite finie qui vaut $%f(0)%$ en $%+\infty%$ alors $%f%$ est bornée et atteint ses bornes.
+
+
+
+**  
++ La fonction $%f(x) = x\sin\frac1x%$ est continue et dérivable en $%0%$.
++ La fonction définie par $%x\mapsto 0%$ si $%x\in\mathbb{Q}%$ et $%x\mapsto x^2%$ si $%x\notin\mathbb{Q}%$ est dérivable en $%0%$.
++ Si $%f(x) = P(x)e^x%$ avec $%P%$ un polynôme alors pour tout $%n\in \mathbb{N}%$ il existe un polynôme $%Q_n%$ tel que $%f^{(n)}(x) = Q_n(x)e^x%$.
+- La fonction $%f(x) = 1/x%$ est décroissante sur $%\mathbb{R}^*%$.
+- Si $%f(x) = \sqrt x \ln x%$ si $%x\in \mathbb{R}^*%$ et $%f(0)=0%$ alors $%f%$ est dérivable en $%0%$.
+
+
+
+**  
++ Si $%f%$ est une fonction continue sur $%[a,b]%$ et dérivable sur $%]a,b[%$ et $%f'(x)%$ tend vers $%\ell%$ quand  $%x%$ tend vers $%a%$
+alors $%f%$ est dérivable en $%a%$ et $%f'(a) = \ell%$.
++ Si $%f%$ est dérivable sur $%\mathbb{R}%$ et $%\lim f(x) = +1%$ quand $%x\rightarrow +\infty%$ et $%\lim f(x) = +1%$ quand $%x\rightarrow -\infty%$ alors il existe $%c \in \mathbb{R}%$ tel que $%f'(c)=0%$.
++ $%\forall x > 0\ e^x \leqslant xe^x+1%$.
+- Si $%f%$ est dérivable sur $%[a,b]%$ avec $%f(a) = f(b)%$ il existe un unique $%c \in ]a,b[%$ tel que $%f'( c ) = 0%$.
+- Soit $%f(x) = \ln x%$ si $%x>0%$ et $%f(0)= 0%$. Pour $%x>0%$ il existe $%c\in]0,x[%$ tel que $%\ln x = \frac xc%$.
+
+
+
+**  
++ $%\forall n \in \mathbb{N} \ \lim_{x\rightarrow +\infty} \frac{e^x}{x^n} = +\infty%$.
++ $%\forall x \in \mathbb{R} \  \operatorname{ch} x \geqslant \operatorname{sh} x%$.
++ $%\frac{\operatorname{ch} x}{\operatorname{sh} x}%$ tend vers $%1%$ quand $%x%$ tend vers $%+\infty%$.
++ $%\operatorname{ch} 2x = 1 + 2\operatorname{sh}^2 x%$.
+- $%\operatorname{th}(a+b) = \frac{\operatorname{th} a+ \operatorname{th} b}{1- \operatorname{th} a \operatorname{th} b}%$.
+
+
+
+**  
++ Si $%f%$ est une fonction continue bijective croissante alors $%f^{-1}%$ est croissante.
+- Un fonction continue $%\mathbb{R} \longrightarrow \mathbb{R}%$ strictement décroissante est bijective.
+- Si $%f%$ est une fonction continue bijective ne s'annulant jamais alors $%(\frac 1 f)^{-1} = f%$.
+- $%\operatorname{arcsin} (\sin x) = x%$ pour tout $%x \in [0, 2\pi[%$.
+- Si $%f(x) = \operatorname{arctan} (x^2)%$ alors $%f'(x) = \frac{1}{1+x^4}%$.
+
+

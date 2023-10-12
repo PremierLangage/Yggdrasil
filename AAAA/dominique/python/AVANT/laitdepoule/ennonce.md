@@ -1,4 +1,4 @@
---- Jour 17 : Rien de tel que trop ---
+
 
 Les elfes ont encore acheté trop de lait de poule - 150 litres cette fois. Pour tout mettre dans votre réfrigérateur, vous devrez le déplacer dans des contenants plus petits. Vous faites l'inventaire des capacités des conteneurs disponibles.
 

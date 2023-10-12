@@ -57,22 +57,24 @@
 + Les sources ont besoin d'être compilées pour être utilisées.
 - On peut obtenir les sources à partir de l'exécutable.
 - Les sources sont des fichiers binaires non lisibles par un humain.
-- Un ordinateur exploite les sources directement via un interprèteur.
+- Un ordinateur exploite les sources C directement via un interprèteur.
 
 
 ** Selectionner les déclarations correctes.
-+ L'indentation en C est très importante car on peut mettre des espaces, <br /> des tabulations et des retours à la ligne un peu partout.
-+ Un programme C est une collection de fonctions qui s'articulent <br /> autour d'un main.
++ L'indentation en C est très importante car on peut mettre des espaces, <br /> des tabulations et des retours à la ligne un peu partout mais pas syntaxique.
++ Un programme C est une collection de fonctions qui s'articulent <br /> autour d'une fonction main.
 - Un programme C est composé de classes modélisant des objets.
 - Le langage C est un langage fonctionnel.
 - Le langage C utilise principalement des balises ouvrantes et fermantes.
 - On ne peut pas faire de programme C sans commencer par inclure <br /> la bibliothèque `<stdio.h>`.
+- Le langage C n'est pas utilisé pour programmer les micro-controleurs.
 
 
 ** Selectionner les déclarations correctes à propos de l'utilisation du C.
 + La quasi totalité des systèmes d'explitation sont écrit en C.
 + Beaucoup de calculs haute performance sont fait en C.
 + Le langage C est réputé pour produire des programmes efficaces.
++ La complexité théorique des algorithmes est en général atteinable qu'en C.
 - Le langage C est omniprésent pour faire des sites web.
 - Le langage C ne peut pas utiliser plus de 50% des capacités d'un ordinateur.
 - Le langage C est pratique pour dévelloper des applications mobiles.
@@ -80,7 +82,7 @@
 
 
 ** Selectionner les déclarations correctes à propos des variables en C.
-+ Un programme C peut utiliser autant de variables que possible <br /> si la mémoire est suffisante.
++ Un programme C peut utiliser autant de variables que nécessaire <br /> si la mémoire est suffisante.
 + Deux variables locales peuvent porter le même nom si elle ne sont pas <br /> dans les mêmes fonctions.
 - Un programme C ne peut pas utiliser plus de 1024 variables.
 - Un programme C exploite toujours exactement deux variables : *argc* et *argv*.

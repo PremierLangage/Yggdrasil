@@ -1,0 +1,43 @@
+title= 1 - Variables et boucles
+
+introduction==
+
+Bonjour,
+
+ceci est votre première feuille d'exercices à faire en autonomie.
+
+Tous les exercices doivent être verts une fois que vous avez fini !
+
+Certains exercices peuvent être fait plusieurs fois, si vous en avez besoin c'est une bonne idée de les faire plusieurs fois.
+
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+ mais vous pouvez naviguer avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et passer à l'exercice suivant. 
+
+    Votre cours est votre première source d'information ....
+
+
+
+
+
+==
+
+#### Manipulation des variables ####
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_variable002.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_variable001.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_variable003.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_initialisation.pl
+
+@/ComputerScience/NSI/Banque_Exercices/1_variables_echange_deux_variables.pl
+
+@/ComputerScience/NSI/Banque_Exercices/2_boucles_boucle-qui-compte-de-0-a-nb-moins-1-2021.pl
+
+@/ComputerScience/NSI/Banque_Exercices/2_boucles_boucle-qui-compte-de-1-a-nb-2021.pl
+
+@/ComputerScience/NSI/Banque_Exercices/2_boucles_marinsdeliledesein.pl

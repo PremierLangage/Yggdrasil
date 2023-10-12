@@ -1,0 +1,645 @@
+// question: 0  name: Switch category to $course$/top
+$CATEGORY: $course$/top
+
+
+// question: 0  name: Switch category to $course$/top/Défaut pour EXTM0072
+$CATEGORY: $course$/top/Défaut pour EXTM0072
+
+
+// question: 4001385  name: procédé
+
+
+// question: 3998020  name: Inégalités (produit scalaire)
+::Inégalités (produit scalaire)::[html]<p>Soient $$E$$ un espace euclidien. On note $$\langle\cdot,\cdot\rangle$$ son produit scalaire et $$\|\cdot\|$$ sa norme associée. Donner le nom correct à chacune des identités ou inégalités suivantes</p>{
+	=<p>$$(\langle x,y\rangle)^2\leqslant \|x\|^2\|y\|^2$$</p> -> Inégalité de Cauchy-Schwarz
+	=<p>$$\|x+y\|\leqslant \|x\|+\|y\|$$</p> -> Inégalité de Minkowski
+	=<p>$$\|x+y\|^2+\|x-y\|^2\=2(\|x\|^2+\|y\|^2)$$</p> -> Identité du parallélogramme
+	=<p>$$\langle x,y\rangle\=\frac14(\|x+y\|^2-\|x-y\|^2)$$</p> -> Identité de polarisation
+}
+
+
+// question: 3765204  name: application multi-linéaires
+::application multi-linéaires::[html]<p>Soit $$f$$ l' application de $$\mathbb\{R\}^3$$ 
+dans $$\mathbb\{R\}$$ définie par</p>\n<p>$$f(x_1, x_2,x_3)\= 2x_1x_2x_3, \qquad (x_1,x_2,x_3)\in \mathbb\{R\}^3$$.</p>\n<p>Cocher les affirmations justes.
+</p>{
+	~%33.33333%<p>$$f$$ est linéaire par rapport à la variable $$x_1$$.</p>
+	~%-33.33333%<p>$$f$$ est linéaire</p>
+	~%33.33333%<p>$$f$$ est linéaire par rapport à la variable $$x_3$$.</p>
+	~%33.33333%<p>$$f$$ est 3-linéaire.</p>
+}
+
+
+// question: 3841918  name: Calcul de déterminants simples
+::Calcul de déterminants simples::[html]<p>Parmi les égalités suivantes, cocher celles qui sont justes.</p>{
+	~%-33.33333%<p>$$\det\left(\begin\{array\}\{ccc\} 5&amp;0&amp;0 \\0&amp;6&amp;0\\0&amp;0&amp;2 \end\{array\}\right)\=5+6+2$$</p>
+	~%-33.33333%<p>$$\det\left(\begin\{array\}\{cc\} 3&amp;4 \\2&amp;1 \end\{array\}\right)\=3\times 1+ 4\times 2$$</p>
+	~%-33.33333%<p>$$\det\left(\begin\{array\}\{cc\} 3&amp;4 \\2&amp;1 \end\{array\}\right)\=3\times 4+ 2\times 1$$</p>
+	~%100%<p>$$\det\left(\begin\{array\}\{ccc\} 5&amp;0&amp;0 \\0&amp;6&amp;0\\0&amp;0&amp;2 \end\{array\}\right)\=60$$</p>
+}
+
+
+// question: 3933640  name: CNS pour la trigonalisation
+::CNS pour la trigonalisation::[html]<p>Soit $$A$$ une matrice de $$\mathcal\{M\}_n(\mathbb\{K\})$$.</p>\n<p>Cocher les assertions justes.</p>{
+	~%50%<p>$$A$$ est trigonalisable si et seulement si il existe $$\lambda_1,\ldots, \lambda_n$$ dans $$\mathbb\{K\}$$ tel que le polynôme caractéristique $$\mathcal\{X\}_A$$ s'écrit</p>\n<p>$$\mathcal\{X\}_A\=(\lambda_1-X)(\lambda_2-X)\cdots (\lambda_n-X).$$</p>
+	~%50%<p>Si $$A$$ est diagonalisable alors $$A$$ est trigonalisable.</p>
+	~%-100%<p>$$A$$ est trigonalisable si et seulement si  ses sous-espaces propres sont en somme directe.</p>
+}
+
+
+// question: 3674115  name: Compréhension pour une permutation particulière
+::Compréhension pour une permutation particulière::[html]<p>Dans $$S_4$$, $$\sigma\=\left( \begin\{array\}\{cccc\}1&amp;2&amp;3&amp;4\\2&amp;4&amp;1&amp;3\end\{array\}\right)$$ désigne</p>{
+	~%33.33333%<p>une matrice à deux lignes et 4 colonnes</p>
+	~%-33.33333%<p>le cycle $$(2413)$$</p>
+	~%33.33333%<p>le cycle $$(1243)$$</p>
+	~%33.33333%<p>le cycle $$(2431)$$</p>
+	~%-33.33333%<p>la bijection de $$\{1,2,3,4\}$$ dans $$\{1,2,3,4\}$$ telle que $$\sigma(1)\=2$$ et $$\sigma(2)\=3$$</p>
+}
+
+
+// question: 3852403  name: def d'une valeur propre
+::def d'une valeur propre::[html]<p>Cochez les réponses justes.</p>\n<p>$$\lambda\in \{\mathbb K\}$$ est une valeur propre d'un endomorphisme $$f$$ sur un espace vectoriel  $$E$$ si et seulement si \:</p>\n<p> </p>\n<p> </p>{
+	~%-33.33333%<p>$$\forall x\in E, \, f(x)\=\lambda x$$</p>
+	~%-33.33333%<p>$$\exists x\in E, \, f(x)\=\lambda x$$</p>
+	~%100%<p>$$\{\rm Ker\}(f-\lambda Id_E)\neq \{0\}$$</p>
+	~%-66.66667%<p>$$\lambda\neq 0$$</p>
+}
+
+
+// question: 4001389  name: definition de l'adjoint
+::definition de l'adjoint::[html]<p>Soit $$E$$ un espace euclidien de dimension finie. Cocher les assertions justes</p>{
+	~%50%<p>Tout endomorphisme défini sur $$E$$ admet un endomorphisme adjoint.</p>
+	~%50%<p>Si $$f$$ et $$g$$ sont des endomorphismes de $$E$$ tels que pour tous vecteurs $$x,y\in E$$, $$\langle f(x),y\rangle\= \langle g(y),x\rangle$$</p>\n<p>alors $$g$$ est l'adjoint de $$f$$ et $$f$$ est l'adjoint de $$g$$.</p>\n<p> </p>\n<p> </p>
+	~%-50%<p>Soit $$f$$ et $$g$$ des endomorphisme et $$f^*$$ et $$g^*$$ leurs adjoints respectifs. Alors $$f^*\circ g^*$$ est l'adjoint de $$f\circ g$$.</p>
+	~%-50%<p>Soit $$f$$ un endomorphisme et $$f^*$$ son adjoint. Etant donnée une base quelconque $$\mathcal B$$ de $$E$$, la matrice de $$f^*$$ dans $$ \mathcal B$$ est la transposée de la matrice de $$f$$ dans $$ \mathcal B$$.</p>
+}
+
+
+// question: 3674267  name: Définition de la signature
+::Définition de la signature::[html]<p>La signature d'une permutation $$\sigma$$, notée $$\varepsilon(\sigma)$$, est égale à\:</p>{
+	~%-33.33333%<p>-1 ou 0 ou 1</p>
+	~%100%<p>$$(-1)^\{I(\sigma)\}$$ où $$I(\sigma)$$ est un entier qui désigne le cardinal de l'ensemble des inversions de $$\sigma$$</p>
+	~%-33.33333%<p>$$(-1)^\{I(\sigma)\}$$ où $$I(\sigma)$$ est un entier qui désigne la  longueur de la permutation $$\sigma$$</p>
+	~%-33.33333%<p>$$(-1)^\{I(\sigma)\}$$ où $$I(\sigma)$$ désigne l'ensemble des inversions de la permutation $$\sigma$$</p>
+}
+
+
+// question: 3672988  name: Définition du groupe symétrique
+::Définition du groupe symétrique::[html]<p>Le groupe symétrique, noté $$S_n$$, désigne</p>{
+	~%100%<p>l'ensemble des bijections de $$\{1,\ldots,n\}$$ dans $$\{1,\ldots,n\}$$</p>
+	~%-50%<p>l'ensemble des symétries de $$\{1,\ldots,n\}$$ dans $$\{1,\ldots,n\}$$</p>
+	~%-50%<p>l'ensemble des symétries du plan</p>
+}
+
+
+// question: 3673166  name: Définition d'une transposition
+::Définition d'une transposition::[html]<p>Une transposition est \:</p>{
+	~%33.33333%<p>une permutation particulière</p>
+	~%33.33333%<p>une bijection de $$\{1,\ldots,n\}$$ dans $$\{1,\ldots,n\}$$ qui échange uniquement deux éléments de $$\{1,\ldots,n\}$$</p>
+	~%33.33333%<p>un cycle de longueur 2</p>
+}
+
+
+// question: 3852404  name: def vecteur propre
+::def vecteur propre::[html]<p>Cocher les réponses justes.</p>\n<p>Si $$X\in \{\mathbb K\}^n$$ est vecteur propre d'une matrice $$A$$ carrée de taille $$n$$ alors</p>{
+	~%50%<p>$$X$$ est différent de 0</p>
+	~%50%<p>$$X $$ appartient à un sous  espace propre de la matrice $$A$$</p>
+	~%-50%<p>$$X$$ est dans le spectre de $$A$$</p>
+	~%-50%<p>Pour tout $$\lambda\in \{\mathbb K\}$$, $$AX\=\lambda X$$.</p>
+}
+
+
+// question: 3841875  name: det de matrices et d'endomorphismes 1
+::det de matrices et d'endomorphismes 1::[html]<p>Soient $$\mathcal\{E\}\=(e_1,\ldots, e_n)$$ et $$\mathcal\{F\}\=(f_1,\ldots, f_n)$$ deux bases d'un espace vectoriel $$E$$ de dimension $$n$$. Soit $$g$$ un endomorphisme de $$E$$.</p>\n<p>On note $$A\=\mathrm\{Mat\}_\{\mathcal E\}(g)$$ et $$B\=\mathrm\{Mat\}_\{\mathcal F\}(g)$$.</p>\n<p>Cocher les propositions justes</p>{
+	~%100%<p>$$det(g) \=\det(A)$$</p>
+	~%-50%<p>$$det(A)\neq det(B)$$</p>
+}
+
+
+// question: 3851251  name: Déterminant 3x3
+::Déterminant 3x3::[html]<p>Cocher les assertions justes</p>{
+	~%-50%<p>$$\left|\begin\{array\}\{ccc\}2&amp;0&amp;0\\4&amp;5&amp;0\\1&amp;6&amp;3\end\{array\}\right|\=2+3+5$$.</p>
+	~%-50%<p>$$\left|\begin\{array\}\{ccc\}2&amp;0&amp;1\\4&amp;5&amp;0\\1&amp;6&amp;3\end\{array\}\right|\=2\times5\times3$$.</p>
+	~%50%<p>$$tr\left(\begin\{array\}\{ccc\}2&amp;0&amp;1\\4&amp;5&amp;0\\1&amp;6&amp;3\end\{array\}\right)\=3+5+2$$</p>
+	~%50%<p>$$\left|\begin\{array\}\{ccc\}2&amp;0&amp;1\\4&amp;5&amp;0\\1&amp;6&amp;3\end\{array\}\right|\=5\times\left|\begin\{array\}\{cc\}2&amp;1\\1&amp;3\end\{array\}\right|-6\times\left|\begin\{array\}\{cc\}2&amp;1\\4&amp;0\end\{array\}\right|$$.</p>
+}
+
+
+// question: 3841922  name: déterminant de l'inverse
+::déterminant de l'inverse::[html]<p>Soit $A$ une matrice carrée inversible.</p>\n<p>Cocher les réponses justes.</p>{
+	~%-75%<p>$$\det(A^\{-1\})+ \det(A)\=0$$</p>
+	~%50%<p>$$\det(A^\{-1\})\= \frac\{1\}\{\det(A)\}$$</p>
+	~%50%<p>$$\det(A^\{-1\})\= \left(\det(A)\right)^\{-1\}$$</p>
+}
+
+
+// question: 3841874  name: déterminant d'une application linéaire
+::déterminant d'une application linéaire::[html]<p>Soient $$\mathcal\{E\}\=(e_1,\ldots, e_n)$$ et $$\mathcal\{F\}\=(f_1,\ldots, f_n)$$ deux bases d'un espace vectoriel $$E$$ de dimension $$n$$. Soit $$u_1,\ldots ,u_n$$ une famille de vecteurs de $$E$$. Soit $$g$$ un endomorphisme de $$E$$.</p>\n<p>Cocher les propositions justes</p>{
+	~%50%<p>$$\det(g)\=\det_\{\mathcal E\}(g(e_1),\ldots, g(e_n))$$.</p>
+	~%-50%<p>Si $$\det(g)\=\det_\{\mathcal E\}(g(e_1),\ldots, g(e_n))$$, alors $$\det(g)\neq \det_\{\mathcal F\}(g(f_1),\ldots, g(f_n))$$.</p>
+	~%50%<p>$$\det_\{\mathcal E\}(g(u_1),\ldots , g(u_n))\= \det(g) \det_\{\mathcal E\}(u_1,\ldots , u_n).$$</p>
+}
+
+
+// question: 3841919  name: déterminants-bases-liberté
+::déterminants-bases-liberté::[html]<p>Soient $$\mathcal\{E\}\=(e_1,\ldots, e_n)$$ une base d'un espace vectoriel $$E$$ de dimension $$n$$,  et $$u_1,\ldots, u_n$$ une famille de vecteurs de $$E$$. </p>\n<p>Cocher les propositions justes.</p>{
+	~%-50%<p>Si $$\det_\{\mathcal E\}(u_1,\ldots,u_n)\= 0$$ alors $$(u_1,\ldots,u_n)$$ est une base de $$E$$.</p>
+	~%50%<p>Si $$\det_\{\mathcal E\}(u_1,\ldots,u_n)\= 2$$ alors $$(u_1,\ldots,u_n)$$ est une base de $$E$$.</p>
+	~%50%<p>Si $$\det_\{\mathcal E\}(u_1,\ldots,u_n)\neq 0$$ alors $$(u_1,\ldots,u_n)$$ est une famille libre de vecteurs de $$E$$.</p>
+}
+
+
+// question: 3841873  name: déterminants et bases
+::déterminants et bases::[html]<p>Soient $$\mathcal\{E\}\=(e_1,\ldots, e_n)$$ et $$\mathcal\{F\}\=(f_1,\ldots, f_n)$$ deux bases d'un espace vectoriel de dimension $$n$$.</p>\n<p>Cocher les propositions justes</p>{
+	~%-33.33333%<p>On de connait pas la valeur de $$\det_\{\mathcal E\} (\mathcal E)$$, cela dépend de la base $$\mathcal E$$.</p>
+	~%33.33333%<p>$$\det_\{\mathcal E\} (\mathcal\{ E\})\=\det_\{\mathcal E\} (e_1,\ldots, e_n) .$$</p>
+	~%33.33333%<p>$$\det_\{\mathcal E\} (e_1,\ldots, e_n)\=1.$$</p>
+	~%33.33333%<p>$$\det_\{\mathcal E\} (f_1,\ldots, f_n)\det_\{\mathcal F\} (e_1,\ldots, e_n)\=1.$$</p>
+}
+
+
+// question: 3851250  name: Développement suivant une colonne
+::Développement suivant une colonne::[html]<p>Cocher les assertions justes</p>{
+	~%-50%<p>$$\left|\begin\{array\}\{ccc\}1&amp;2&amp;3\\4&amp;5&amp;6\\7&amp;8&amp;9\end\{array\}\right|\=3\times\left|\begin\{array\}\{cc\}4&amp;5\\7&amp;8\end\{array\}\right|+6\times\left|\begin\{array\}\{cc\}1&amp;2\\7&amp;8\end\{array\}\right|+9\times\left|\begin\{array\}\{cc\}1&amp;2\\4&amp;5\end\{array\}\right|$$</p>
+	~%100%<p>$$\left|\begin\{array\}\{ccc\}1&amp;2&amp;3\\4&amp;5&amp;6\\7&amp;8&amp;9\end\{array\}\right|\=3\times\left|\begin\{array\}\{cc\}4&amp;5\\7&amp;8\end\{array\}\right|-6\times\left|\begin\{array\}\{cc\}1&amp;2\\7&amp;8\end\{array\}\right|+9\times\left|\begin\{array\}\{cc\}1&amp;2\\4&amp;5\end\{array\}\right|$$</p>
+	~%-50%<p>$$\left|\begin\{array\}\{ccc\}1&amp;2&amp;3\\4&amp;5&amp;6\\7&amp;8&amp;9\end\{array\}\right|\=-3\times\left|\begin\{array\}\{cc\}4&amp;5\\7&amp;8\end\{array\}\right|+6\times\left|\begin\{array\}\{cc\}1&amp;2\\7&amp;8\end\{array\}\right|-9\times\left|\begin\{array\}\{cc\}1&amp;2\\4&amp;5\end\{array\}\right|$$</p>
+}
+
+
+// question: 3915531  name: Endomorphisme diagonalisable
+::Endomorphisme diagonalisable::[html]<p>Soit $$E$$ un $$\mathbb\{K\}$$-espace vectoriel de dimension $$n$$ et $$f$$ un endomprohisme de $$E$$. Soit $$\mathcal\{B\}$$ une base de $$E$$ et $$A\=\mathcal\{M\}at_\{\mathcal\{B\}\}(f)$$. </p>\n<p>Cocher les assertions justes. </p>{
+	~%50%<p>$$f$$ est diagonalisable si et seulement si $$A$$ est une matrice diagonalisable.</p>
+	~%-50%<p>$$f$$ est diagonalisable si et seulement si $$A$$ est une matrice diagonale.</p>
+	~%50%<p>$$f$$ est diagonalisable si et seulement si il existe une base $$\mathcal\{B\}'$$ telle que $$\mathcal\{M\}at_\{\mathcal\{B\}'\}(f)$$ est diagonale.</p>
+}
+
+
+// question: 4001429  name: endomorphismes autoadjoint
+::endomorphismes autoadjoint::[html]<p>Soit $$\mathcal B$$ une base orthonormée d'un espace euclidien $$E$$ de dimension finie. On note $$g^*$$ l'adjoint d'un endomorphisme $$g$$ sur $$E$$</p>\n<p>Cocher les réponses justes.</p>{
+	~%100%<p>$$f$$ est un endomorphisme autoadjoint si et seulement si la matrice de $$f$$ dans la base $$B$$ est symétrique.</p>
+	~%-100%<p>$$f$$ est un endomorphisme autoadjoint si et seulement si $$(f^*)^*\=f$$</p>
+}
+
+
+// question: 4041727  name: endomorphismes orthogonaux
+::endomorphismes orthogonaux::[html]<p>Soit $$E$$ un espace euclidien et $$f\:E\to E$$ un endomorphisme orthogonal.</p>\n<p>Cocher les assertions justes.</p>{
+	~%25%<p>Pour tout $$x\in E$$, $$\|f(x)\|\=\|x\|$$</p>
+	~%25%<p>$$f$$ est bijectif</p>
+	~%25%<p>$$det(f)\=1$$ ou $$det(f)\=-1$$</p>
+	~%25%<p>L'image par $$f$$ d'une base orthonormée est une base orthonormée.</p>
+}
+
+
+// question: 3933641  name: endomorphisme trigonalisable
+::endomorphisme trigonalisable::[html]<p>Soit $$f$$ un endomorphisme d'un $$\mathbb\{K\}$$ espace vectoriel $$E$$ de dimension finie.</p>\n<p>Cocher les assertions justes.</p>{
+	~%33.33333%<p>Si $$f$$ est trigonalisable alors pour toute base $$\mathcal\{B\}$$ de $$E$$, il existe une matrice $$P$$ inversible telle que $$P\{\mathcal Mat\}_\{\mathcal\{B\}\}<br />(f)P^\{-1\}$$ est triangulaire.</p>
+	~%33.33333%<p>$$f$$ est trigonalisable si il existe une  base $$\mathcal\{B\}$$ de $$E$$ et une matrice $$P$$ inversible telle que $$P\{\mathcal Mat\}_\{\mathcal\{B\}\}(f)P^\{-1\}$$ est triangulaire inférieure.</p>
+	~%33.33333%<p>$$f$$ est trigonalisable si il existe une  base $$\mathcal\{B\}$$ de $$E$$  telle que $$\{\mathcal Mat\}_\{\mathcal\{B\}\}(f)$$ est triangulaire.</p>
+	~%-66.66667%<p>$$f$$ est trigonalisable si et seulement si pour toute  base $$\mathcal\{B\}$$ de $$E$$, $$\{\mathcal Mat\}_\{\mathcal\{B\}\}(f)$$ est triangulaire.</p>
+	####<p> </p>\n<p> </p>
+}
+
+
+// question: 3933660  name: endomorphisme trigonalisable ou diagonalisable et dimension
+::endomorphisme trigonalisable ou diagonalisable et dimension::[html]<p>Soit $$f$$ un endomorphisme sur un $$\mathbb R$$ espace vectoriel de dimension 3.</p>\n<p>Cocher les assertions justes</p>{
+	~%25%<p>Si $$Ker(f+3Id)\neq\{0\}$$ et  $$Ker(f-2Id)\neq\{0\}$$  alors $$f$$ est trigonalisable.</p>
+	~%25%<p>Si $$\det (f)\=0$$ et $$f$$ admets deux valeurs propres distinctes non nulles alors $$f$$ est diagonalisable.</p>
+	~%-50%<p>Si $$\det(f)\neq 0$$ alors $$f$$ est trigonalisable.</p>\n<p> </p>
+	~%25%<p>Si le polynôme caractéristique de $$f$$ admet une racine d'ordre de multiplicité 2 alors $$f$$ est trigonalisable</p>
+	~%25%<p>Si $$det(f)\=0$$, $$det(f-Id)\=0$$ et $$det(f+2Id)\=0$$ alors $$f$$ est diagonalisable.</p>
+	~%-50%<p>Si toutes les racines du polynôme caractéristique de $$f$$ ne sont pas simples alors $$f$$ n'est pas diagonalisable.</p>
+}
+
+
+// question: 3765205  name: Forme bilinéaire alternée
+::Forme bilinéaire alternée::[html]<p>Soit $$E$$ un espace vectoriel, $$u$$, $$v$$ deux vecteurs de $$E$$, et $$f\:E\times E\to \mathbb R$$ une forme bilinéaire <strong>alternée. </strong></p>\n<p>Cocher les assertions justes.</p>{
+	~%50%<p>$$f(u,u)\=0$$</p>
+	~%-50%<p>$$f(u,v)\=f(v,u)$$</p>
+	~%50%<p>$$f(u,v)\=-f(v,u)$$</p>
+	~%-50%<p>$$f(u,v)\=f(u)-f(v)$$</p>
+}
+
+
+// question: 3841917  name: formule du déterminant d'une matrice
+::formule du déterminant d'une matrice::[html]<p>Soit $$A$$ une matrice carrée de taille $$n$$ dont on note $$a_\{ij\}, i,j\in \{1,\ldots n\}$$ ses coefficients. </p>\n<p>On note $$S_n$$ l'ensemble des permutations de $$\{1,\ldots n\}$$ et $$ \varepsilon(\sigma)$$ la signature d'une permutation $$\sigma\in S_n$$.</p>\n<p>Cocher les réponses justes.</p>\n<p> </p>\n<p> </p>{
+	~%100%<p>$$\det(A)\=\sum_\{\sigma\in S_n\} \varepsilon(\sigma) a_\{\sigma(1) 1\}\cdots a_\{\sigma(n) n\}$$</p>
+	~%-75%<p>$$\det(A)\=\sum_\{\sigma\in S_n\} \varepsilon(\sigma) a_\{\sigma(1) \}\cdots a_\{\sigma(n) \}$$</p>
+	~%-75%<p>$$\det(A)\=\sum_\{i\=1\}^n \varepsilon(\sigma) a_\{\sigma(1) 1\}\cdots a_\{\sigma(n) n\}$$</p>
+	~%-75%<p>$$\det(A)\=\sum_\{\sigma\in S_n\}(-1)^n a_\{\sigma(1) 1\}\cdots a_\{\sigma(n) n\}$$</p>
+}
+
+
+// question: 3852397  name: inverse d'une matrice et comatrice
+::inverse d'une matrice et comatrice::[html]<p>Soit $$ A$$ une matrice inversible carrée inversible. On note $$\{\rm Com\}(A)$$ la comatrice de $$A$$.</p>\n<p>Cocher les égalités justes.</p>{
+	~%50%<p>$$A^\{-1\}\= \frac 1\{\det A\}\, ^t(\{\rm Com\}A)$$</p>
+	~%50%<p>$$A^\{-1\}\= \frac 1\{\det \,^tA\}\, ^t(\{\rm Com\}A)$$</p>
+	~%-50%<p>$$A^\{-1\}\= \frac 1\{^t(\det A)\}\, (\{\rm Com\}A)$$</p>
+	~%-50%<p>$$A^\{-1\}\= \frac 1\{\det A\} (\{\rm Com\}A)$$</p>
+}
+
+
+// question: 3852405  name: inversibilité et spectre
+::inversibilité et spectre::[html]<p>Soit $$f$$ un endomorphisme sur un espace vectoriel $$E$$. On note $$Id_E$$ l'application identique sur $$E$$.</p>\n<p>Cocher les assertions justes</p>{
+	~%33.33333%<p>$$f$$ est inversible si et seulement si 0 n'est pas dans le spectre de $$f$$</p>
+	~%33.33333%<p>Si 2 est une valeur du spectre de $$f$$ alors l'endomorphisme $$f-2Id_E$$ n'est pas inversible</p>
+	~%33.33333%<p>Si $$3$$ n'est pas dans le spectre de $$f$$ alors l'endomorphisme $$f-3Id_E$$ est injectif.</p>
+}
+
+
+// question: 3765201  name: la signature est un morphisme de groupe
+::la signature est un morphisme de groupe::[html]<p>Soit $$\sigma$$ et $$\tau$$ deux permutations. Parmi les propositions suivantes à propos de la signature $$\varepsilon$$, lesquelles sont vraies ?</p>{
+	~%50%<p>$$\varepsilon(\sigma\circ \tau)\= \varepsilon(\sigma)\varepsilon( \tau)$$</p>
+	~%50%<p>$$\varepsilon(\sigma\circ \tau)\= \varepsilon( \tau)\varepsilon(\sigma)$$</p>
+	~%-50%<p>$$\varepsilon(\sigma\circ \tau)\= \varepsilon(\sigma)+\varepsilon( \tau)$$</p>
+	~%-50%<p>$$\varepsilon(\sigma+ \tau)\= \varepsilon(\sigma)+\varepsilon( \tau)$$</p>
+}
+
+
+// question: 3852400  name: matrice de passage , représentation d'endomorphisme
+::matrice de passage , représentation d'endomorphisme::[html]<p>Soit $$\{\mathcal E\}$$ et $$\{\mathcal F\}$$ deux bases d'un espace vectoriel $E$. Soit $$g$$ un endomorphisme.</p>\n<p>On note $$A$$ la matrice de $$g$$ dans la base $$\{\mathcal E\}$$ et $$B$$ la matrice de $$g$$ dans la base $$\{\mathcal F\}$$.</p>\n<p>On note $$P$$ la matrice de passage de $$\{\mathcal E\}$$ vers $$\{\mathcal F\}$$.</p>\n<p>Cocher les assertions justes.</p>{
+	~%-50%<p>$$P$$ est la matrice de l'application identique $$Id_E$$ de la base $$\{\mathcal E\}$$ vers la base $$\{\mathcal F\}$$.</p>
+	~%-50%<p>$$B\=PAP^\{-1\}$$</p>
+	~%50%<p>$$P^\{-1\}$$ est la matrice de passage de $$\{\mathcal F\}$$ vers $$\{\mathcal E\}$$.</p>
+	~%50%<p>$$A$$ et $$B$$ sont des matrices semblables</p>
+}
+
+
+// question: 3915524  name: Matrice diagonalisable et polynôme caractéristique
+::Matrice diagonalisable et polynôme caractéristique::[html]<p>Soit $$A\in\mathcal\{K\}_n(\mathbb\{K\})$$ et $$\chi_A$$ son polynôme caractéristique.</p>\n<p>Cocher les assertions justes.</p>{
+	~%-33.33333%<p>$$A$$ est diagonalisable si et seulement si $$\chi_A$$ est scindé.</p>
+	~%-33.33333%<p>$$A$$ est diagonalisable si et seulement si $$\chi_A$$ est scindé à racines simples</p>
+	~%100%<p>Si $$\chi_A$$ est scindé à racines simples alors $$A$$ est diagonalisable.</p>
+	~%-33.33333%<p>$$A$$ est diagonalisable si et seulement si $$\chi_A$$ est de degré $$n$$.</p>
+}
+
+
+// question: 3974120  name: matrice nilpotente
+::matrice nilpotente::[html]<p>Soit $$A$$ une matrice carrée de taille $$n$$ à coefficients réels.</p>\n<p>Cocher les réponses justes</p>{
+	~%33.33333%<p>$$A$$ est nilpotente s'il existe un entier $$p$$ tel que $$A^p\=0$$.</p>
+	~%33.33333%<p>$$A$$ est nilpotente si et seulement si $$A^n\=0$$.</p>
+	~%33.33333%<p>Si $$A$$ est nilpotente alors $$A$$ est trigonalisable.</p>
+}
+
+
+// question: 4041715  name: Matrice orthogonale
+::Matrice orthogonale::[html]<p>Soit $$A\in\mathcal\{M\}_n(\mathbb\{R\})$$. On suppose que $$A$$ est orthogonale.</p>\n<p>Cocher les assertions justes.</p>{
+	~%20%<p>$$A$$ est inversible</p>
+	~%20%<p>$$\{\}^tAA\=I_n$$</p>
+	~%-25%<p>$$\{\}^tAA\=A$$</p>
+	~%20%<p>Les colonnes de $$A$$ forment une base orthonormée de $$\mathbb\{R\}^n$$.</p>
+	~%-25%<p>$$\{\}^tA\=A$$</p>
+	~%20%<p>Les lignes de $$A$$ forment une base orthonormée de $$\mathbb\{R\}^n$$.</p>
+	~%20%<p>$$\{\}^tA\=A^\{-1\}$$</p>
+}
+
+
+// question: 3915535  name: Matrices diagonalisables 2
+::Matrices diagonalisables 2::[html]<p>Soit $$A\in\mathcal\{M\}_(\mathbb\{K\})$$. </p>\n<p>Cocher les assertions justes.</p>{
+	~%-33.33333%<p>$$A$$ est diagonalisable si et seulement si $$A$$ est diagonale.</p>
+	~%-33.33333%<p>$$A$$ est diagonalisable si et seulement si $$A$$ est inversible.</p>
+	~%33.33333%<p>$$A$$ est diagonalisable si et seulement si $$\mathbb\{K\}^n$$ admet une base de vecteurs propres pour $$A$$.</p>
+	~%33.33333%<p>$$A$$ est diagonalisable si et seulement si la somme des sous-espaces propres pour $$A$$ est égale à $$\mathbb\{K\}^n$$.</p>
+	~%33.33333%<p>$$A$$ est diagonalisable si et seulement si il existe $$D\in\mathcal\{M\}_n(\mathbb\{K\})$$ diagonale et $$P\in\mathcal\{M\}_n(\mathbb\{K\})$$ inversible telles que $$A\=PDP^\{-1\}$$.</p>
+}
+
+
+// question: 3851249  name: Mineurs
+::Mineurs::[html]<p>Soit $$A\=(a_\{ij\})\in\mathcal\{M\}_n(\mathbb\{K\})$$.</p>\n<p>Cocher les assertions justes.</p>{
+	~%100%<p>Le mineur de $$a_\{ij\}$$ est le déterminant de la matrice extraite de $$A$$ obtenue en supprimant la i-ème ligne et la j-ème colonne.</p>
+	~%-50%<p>Le mineur de $$a_\{ij\}$$ est le déterminant de la matrice extraite de $$A$$ obtenue en supprimant la j-ème ligne et la i-ème colonne.</p>
+	~%-50%<p>Le cofacteur de $$a_\{ij\}$$ est le déterminant de la matrice extraite de $$A$$ obtenue en supprimant la i-ème ligne et la j-ème colonne.</p>
+}
+
+
+// question: 4001384  name: opérations sur l'orthogonal
+::opérations sur l'orthogonal::[html]<p>Soit $$F$$ et $$G$$ deux sous-espaces vectoriel d'un espace euclidien $$E$$ de dimension finie. Cocher les assertions qui sont toujours vraies.</p>\n<p> </p>\n<p> </p>{
+	~%-50%<p>$$(F+G)^\perp\=F^\perp+ G^\perp.$$</p>
+	~%50%<p>$$(F+G)^\perp\= F^\perp \cap G^\perp.$$</p>
+	~%50%<p>$$(F\cup G)^\perp\= (F+G)^\perp.$$</p>
+	~%-50%<p>$$(F\cap G)^\perp\= F^\perp\cap G^\perp$$.</p>
+	####<p> </p>\n<p> </p>
+}
+
+
+// question: 4001301  name: orthogonal d'un ensemble
+::orthogonal d'un ensemble::[html]<p>Soit $$A$$ un sous-ensemble d'un espace Euclidien $$E$$ de dimension finie. On note $$A^\perp$$ l'orthogonal de $$A$$</p>\n<p>Cocher les assertions justes. </p>{
+	~%-50%<p>$$A\=\{y\in E\,|\, \exists x\in A, \langle x,y \rangle\=0\}$$.</p>
+	~%50%<p>$$A^\perp\=\{y\in E\,|\, \forall x\in A, \langle x,y \rangle\=0\}$$.</p>
+	~%50%<p>$$A^\{\perp\}\=(\{\rm Vect\} A)^\perp$$.</p>
+	~%-50%<p>$$\left(A^\{\perp\}\right)^\{\perp\}\=A$$.</p>
+}
+
+
+// question: 3674268  name: Parité d'une permutation
+::Parité d'une permutation::[html]<p>On note $$I(\sigma)$$ le nombre d'inversions d'un permutation $$\sigma$$ de $$S_4$$. La permutation $\sigma$ est paire si et seulement si</p>{
+	~%-50%<p>$$\sigma(1)\=2$$ et $$\sigma(2)\=4$$</p>
+	~%100%<p>$$I(\sigma)$$ est un multiple de 2</p>
+	~%-50%<p>$$I(\sigma)\=2$$</p>
+}
+
+
+// question: 3974119  name: polynôme annulateur et polynôme caractéristique
+::polynôme annulateur et polynôme caractéristique::[html]<p>Soit $$A$$ une matrice à coefficients réels et $$P$$ un polynôme annulateur de $$A$$ (à coefficients réels).</p>\n<p>Cocher les bonnes réponses.</p>{
+	~%-33.33333%<p>Si $$\lambda$$ est une racine de $$P$$ alors $$\lambda$$ est une racine de $$\chi_A $$.</p>
+	~%33.33333%<p>Si $$\lambda$$ est valeur propre de $$A$$ alors $$\lambda$$ est une racine de $$P$$.</p>
+	~%33.33333%<p>Si $$P$$ est scindé et à racines simples  alors $$\chi_A$$ est scindé.</p>
+	~%-33.33333%<p>Si $$\chi_A$$ est scindé alors $$P$$ est scindé.</p>
+	~%-33.33333%<p>Le théorème de Cayley-Hamilton implique que tout polynôme annulateur de $$A$$ est divisible par $$\chi_A$$.</p>
+	~%33.33333%<p>Si $$A$$ est diagonalisable et admet $$k$$ valeurs propres distinctes alors il existe un polynôme annulateur de $$A$$ de degré exactement $$k$$.</p>\n<p> </p>
+}
+
+
+// question: 3954580  name: Polynôme annulateur et projection
+::Polynôme annulateur et projection::[html]<p>Soit $$E$$ un espace vectoriel de dimension finie et $$f$$ un endomorphisme de $$E$$ qui vérifie $$f\circ f\=f$$. On suppose que  $$f\neq Id_\{E\}$$ et $$f\neq0$$.</p>\n<p>Cocher les assertions justes</p>{
+	~%33.33333%<p>$$f$$ est diagonalisable</p>
+	~%33.33333%<p>$$P(X)\=X^2-X$$ est un polynôme annulateur de $$f$$.</p>
+	~%-50%<p>$$P(X)\=X-1$$ est un polynôme annulateur de $$f$$.</p>
+	~%33.33333%<p>Les valeurs propres de $$f$$ sont 0 et 1.</p>
+	~%-50%<p>$$P(X)\=X$$ est un polynôme annulateur de $$f$$.</p>
+}
+
+
+// question: 3954578  name: Polynôme annulateur (exemple)
+::Polynôme annulateur (exemple)::[html]<p>Soit $$A\in\mathcal\{M\}_n(\mathbb\{R\})$$ telle que $$A^3\=A$$.</p>\n<p>Cocher les assertions vraies.</p>{
+	~%-50%<p>Le polynôme $$P(X)\=X^3+X$$ est un polynôme annulateur de $$A$$.</p>
+	~%50%<p>Le polynôme $$P(X)\=X^3-X$$ est un polynôme annulateur de $$A$$.</p>
+	~%50%<p>Le polynôme $$P(X)\=X^4-X^2$$ est un polynôme annulateur de $$A$$.</p>
+	~%-50%<p>$$A$$ n'admet aucun polynôme annulateur.<em><br /></em></p>
+}
+
+
+// question: 3915518  name: Polynôme caractéristique
+::Polynôme caractéristique::[html]<p>Soit $$A\in\mathcal\{M\}_n(\mathbb\{K\})$$. On note $$\chi_A$$ son polynôme caractéristique.</p>\n<p>Cocher les assertions justes</p>{
+	~%50%<p>$$\chi_A(X)\=det(A-XI_n)$$</p>
+	~%-50%<p>$$\chi_A(X)\=det(A)$$</p>
+	~%50%<p>$$\chi_A(X)$$ est de degré $$n$$</p>
+	~%-50%<p>$$\chi_A(X)$$ est de degré strictement inférieur à $$n$$</p>
+}
+
+
+// question: 4001386  name: Procédé d'orthogonalisation de Schmidt
+::Procédé d'orthogonalisation de Schmidt::[html]<p>A partir d'une famille libre de 3 vecteurs $$(e_1,e_2,e_3)$$ , on a construit par le procédé d'orthogonalisation deux premiers vecteurs $$f_1$$ et $$f_2$$ orthogonaux tels que $$\{\rm Vect\}(e_1)\=\{\rm Vect\}(f_1)$$, et $$\{\rm Vect\}(e_1,e_2)\=\{\rm Vect\}(f_1,f_2)$$. On souhaite construire un troisième vecteur $$f_3$$ tel que $$(f_1,f_2,f_3)$$ forment une famille orthogonale et $$\{\rm Vect\}(e_1,e_2,e_3)\=\{\rm Vect\}(f_1,f_2,f_3)$$. Parmi les expressions suivantes, cochez celles qui donne une expression possible pour le vecteur $$f_3$$.</p>\n<p> </p>{
+	~%50%<p>$$f_3\=e_3-\langle e_3,f_2 \rangle\frac\{f_2\}\{\|f_2\|^2\} -\langle e_3, f_1 \rangle\frac\{f_1\}\{\|f_1\|^2\}$$.</p>
+	~%-50%<p>$$f_3\=e_3- \langle e_3,f_2 \rangle \{f_2\} - \langle e_3, f_1 \rangle \{f_1\}$$.</p>
+	~%-50%<p>$$f_3\=e_3- \langle e_3,e_2 \rangle\frac\{e_2\}\{\|e_2\|^2\} - \langle e_3, e_1 \rangle \frac\{e_1\}\{\|e_1\|^2\}$$.</p>
+	~%50%<p>$$f_3\=e_3- \left\langle e_3, \frac\{f_2\}\{\|f_2\|\}\right\rangle \frac\{f_2\}\{\|f_2\|\} - \left\langle e_3,\frac\{f_1\}\{\|f_1\|\} \right\rangle \frac\{f_1\}\{\|f_1\|\}$$.</p>
+}
+
+
+// question: 3998018  name: Produit scalaire (définition)
+::Produit scalaire (définition)::[html]<p>Soit $$\varphi$$ un produit scalaire sur un espace vectoriel réel $$E$$. Parmi les propriétés suivantes, lesquelles sont vérifiées par $$\varphi$$?</p>{
+	~%25%<p>$$\varphi$$ est symétrique</p>
+	~%-25%<p>$$\varphi$$ est antisymétrique</p>
+	~%25%<p>$$\varphi$$ est bilinéaire</p>
+	~%-25%<p>$$\varphi$$ est alternée</p>
+	~%25%<p>$$\varphi$$ est définie postive</p>
+	~%-25%<p>$$\forall x,y\in E$$, $$\varphi(x,y)\geqslant0$$.</p>
+	~%25%<p>$$\forall x\in E$$, $$\varphi(x,x)\geqslant0$$.</p>
+}
+
+
+// question: 4041723  name: projection/distance
+::projection/distance::[html]<p>Soit $$E$$ un espace euclidien et $$F$$ un sous-espace vectoriel de $$E$$. On note $$p$$ la projection orthogonale sur $$F$$.</p>\n<p>Cocher les assertions justes.</p>{
+	~%33.33333%<p>Si $$x\in F$$, alors $$p(x)\=x$$.</p>
+	~%-33.33333%<p>Si $$x\in F$$, alors $$p(x)\=0$$.</p>
+	~%33.33333%<p>La distance de $$x$$ à $$F$$ est donnée par $$d(x,F)\=\|x-p(x)\|$$</p>
+	~%-33.33333%<p>La distance de $$x$$ à $$F$$ est donnée par $$d(x,F)\=\|p(x)\|$$</p>
+	~%33.33333%<p>$$x$$ et $$x-p(x)$$ sont orthogonaux.</p>
+}
+
+
+// question: 4041698  name: Projections
+::Projections::[html]<p>Soit $$E$$ un espace vectoriel et $$f\:E\to E$$ un projecteur.</p>\n<p>Cocher les assertions justes.</p>{
+	~%50%<p>$$f\circ f\=f$$</p>
+	~%-50%<p>$$f\circ f\=Id_E$$</p>
+	~%50%<p>$$f$$ est diagonalisable</p>
+	~%-50%<p>$$f$$ est trigonalisable mais pas diagonalisable</p>
+}
+
+
+// question: 3841920  name: propriétés des det 1
+::propriétés des det 1::[html]<p>Soit $$A$$ une matrice carrée de taille 3 (3 lignes, 3 colonnes).</p>\n<p>Cocher les réponses justes.</p>{
+	~%-50%<p>$$\det(2A)\=2 \det(A)$$</p>
+	~%100%<p>$$\det(2A)\=8 \det(A)$$</p>
+	~%-50%<p>$$\det(2A)\= \left(\det(A)\right)^2$$</p>
+}
+
+
+// question: 3841921  name: propriétés des déterminants 2
+::propriétés des déterminants 2::[html]<p>Soient $$A$$ et $$B$$  des matrices carrées de taille 3 (3 lignes, 3 colonnes).</p>\n<p>Cocher les réponses justes.</p>{
+	~%33.33333%<p>$$\det(AB)\=\det(BA)$$</p>
+	~%-50%<p>$$\det(A+B)\=\det(A)+\det(B)$$</p>
+	~%33.33333%<p>$$\det(A+B)\=\det(B+A)$$</p>
+	~%-50%<p>$$\det(2AB)\=2 \det(A)\det(B)$$</p>
+	~%33.33333%<p>$$\det(2AB)\=\det(2A)\det(B)$$</p>
+}
+
+
+// question: 3674213  name: Reconnaître une inversion
+::Reconnaître une inversion::[html]<p>Parmi les couples suivants, quels sont ceux qui sont des inversions pour la permutation $$\left(\begin\{array\}\{ccccc\}1&amp;2&amp;3&amp;4&amp;5\\5&amp;2&amp;4&amp;1&amp;3\end\{array\}\right)$$ \:</p>{
+	~%50%<p>(3,4)</p>
+	~%-50%<p>(4,5)</p>
+	~%-50%<p>(5,2)</p>
+	~%50%<p>(1,3)</p>
+}
+
+
+// question: 3998025  name: Représentation matricielle d'une forme bilinéaire symétrique
+::Représentation matricielle d'une forme bilinéaire symétrique::[html]<p>Soit $$E$$ une espace vectoriel réel de dimension $$n$$ et $$\varphi$$ une forme bilinéaire symmétrique sur $$E\times E$$. Soit $$\mathcal\{B\}$$ une base de $$E$$. Soient $$x$$ et $$y$$ deux vecteurs de $$E$$ dont les coordonnées respectives dans $$\mathcal\{B\}$$ sont $$(x_1\cdots,x_n)$$ et $$(y_1\cdots,y_n)$$. Enfin, on note $$A$$ la matrice de $$\varphi$$ dans la base $$\mathcal\{B\}$$ et $$X\=\left(\begin\{array\}\{c\}x_1\\\cdot\\\cdot\\\cdot\\x_n\end\{array\}\right)$$ et $$Y\=\left(\begin\{array\}\{c\}y_1\\\cdot\\\cdot\\\cdot\\y_n\end\{array\}\right)$$. Cocher la formule correcte.</p>{
+	=<p>$$\varphi(x,y)\= \{\}^tXAY$$</p>
+	~<p>$$\varphi(x,y)\=XAY$$</p>
+	~<p>$$\varphi(x,y)\=AXY$$</p>
+	~<p>$$\varphi(x,y)\= \{\}^tX\{\}^tA^tY$$</p>
+}
+
+
+// question: 3765202  name: signature d'un cycle
+::signature d'un cycle::[html]<p>La signature d'un cycle de longueur p est</p>{
+	~%50%<p>$$(-1)^\{p-1\}$$</p>
+	~%-50%<p>$$(-1)^\{p\}$$</p>
+	~%50%<p>$$(-1)^\{p+1\}$$</p>
+	~%-50%<p>$$p$$</p>
+}
+
+
+// question: 3765203  name: signature d'un produit de permutations
+::signature d'un produit de permutations::[html]<p>quelle est la signature de $$\sigma\=(1,3)(1,4)(2,5)$$ ?</p>\n<p> </p>{
+	=<p>-1</p>
+	~<p>1</p>
+	~<p>0</p>
+}
+
+
+// question: 3852401  name: sommes directes
+::sommes directes::[html]<p>Soit $$E_1$$ et $$E_2$$ deux sous-espaces vectoriels d'un espace vectoriel $$E$$.</p>\n<p>Cochez les assertions justes.</p>\n<p>$$E_1$$ et $$E_2$$ sont en somme directe si et seulement si</p>\n<p> </p>\n<p> </p>{
+	~%100%<p>Le vecteur nul ne peut pas s'écrire comme la somme de deux vecteurs non nuls, l'un dans $$E_1$$ et l'autre dans $$E_2$$</p>
+	~%-50%<p>L'intersection des ensembles $$E_1$$ et $$E_2$$ est vide</p>
+	~%-50%<p>Tout vecteur de $$E_1+E_2$$ peut s'écrire comme la somme d'un vecteur dans $$E_1$$ et d'un vecteur dans $$E_2$$</p>
+}
+
+
+// question: 3852406  name: Sous espaces propres en somme directe
+::Sous espaces propres en somme directe::[html]<p>Soit $$\lambda$$ et $$\mu$$ deux valeurs propres distinctes d'un endomorphisme $$f$$ sur une espace vectoriel $$E$$.</p>\n<p>On note $$E_\{\lambda\}(f)$$ et $$E_\{\mu\}(f)$$ les deux sous-espaces propres associés à ces valeurs propres.</p>\n<p>Soit $$x\in E_\{\lambda\}(f)$$,  $$x'\in E_\{\lambda\}(f)$$ et $$y\in E_\{\mu\}(f)$$,  $$y'\in E_\{\mu\}(f)$$.</p>\n<p>Cocher les assertions justes</p>{
+	~%33.33333%<p>Si  $$x+y\=x'+y'$$ alors $$x\=x'$$ et $$y\=y'$$.</p>
+	~%33.33333%<p>Si $$x+y\=0$$ alors $$x\=0$$ et $$y\=0$$.</p>
+	~%-33.33333%<p>Si $$y\in E_\{\lambda\}(f)$$ alors $$y\=x$$ ou $$y\=x'$$.</p>
+	~%33.33333%<p>Si $$y\in E_\{\lambda\}(f)$$ alors $$y\=0$$.</p>
+}
+
+
+// question: 3974122  name: sous espaces vectoriel des matrices symétriques et antisymétriques.
+::sous espaces vectoriel des matrices symétriques et antisymétriques.::[html]<p>Soit $$\{\mathcal S\}_n(\{\mathbb R\})$$ l'ensemble des matrices symétriques de taille $$n\times n$$ à coefficients réels.</p>\n<p>Soit $$\{\mathcal A\}_n(\{\mathbb R\})$$ l'ensemble des matrices antisymétriques de taille $$n\times n$$ à coefficients réels.</p>\n<p>Cocher les réponses justes</p>{
+	~%50%<p>$$\{\mathcal S\}_n(\{\mathbb R\})$$ et $$\{\mathcal A\}_n(\{\mathbb R\})$$ sont deux sous espaces vectoriels supplémentaires dans $$\{\mathcal M\}_n(\{\mathbb R\})$$.</p>
+	~%-50%<p>$$\{\mathcal S\}_n(\{\mathbb R\})$$ est un sous espace vectoriel de dimension $$\frac\{n(n-1)\}\{2\}$$.</p>
+	~%50%<p>$$\{\mathcal A\}_n(\{\mathbb R\})$$ est un sous espace vectoriel de dimension $$\frac\{n(n-1)\}\{2\}$$.</p>
+	~%-50%<p>$$\{\mathcal S\}_n(\{\mathbb R\})$$ et $$\{\mathcal A\}_n(\{\mathbb R\})$$ ont même dimension.</p>
+}
+
+
+// question: 3841872  name: sous espaces vectoriels de d'applications p-linéaires
+::sous espaces vectoriels de d'applications p-linéaires::[html]<p>Soit $$E$$ un $$\mathbb\{K\}$$-espace vectoriel, On note $$ \mathcal\{L\}_p(E,\mathbb\{K\})$$ l'ensemble  des formes $$p$$-linéaires, $$ \mathcal\{A\}_p(E,\mathbb\{K\})$$ l'ensemble  des formes $$p$$-linéaires alternées, et $$ \mathcal\{F\}(E^p,\mathbb\{K\})$$ l'ensemble  des applications de $$E^p$$ dans $$K$$.</p>\n<p> </p>\n<p>Cocher les propositions qui sont justes.</p>\n<p> </p>\n<p> </p>\n<p> </p>{
+	~%-33.33333%<p>L'ensemble $$ \mathcal\{L\}_p(E,\mathbb\{K\})$$ est un sous-espace vectoriel de $$ \mathcal\{A\}_p(E,\mathbb\{K\})$$.</p>
+	~%25%<p>L'ensemble $$ \mathcal\{A\}_p(E,\mathbb\{K\})$$ est un sous-espace vectoriel de $$ \mathcal\{L\}_p(E,\mathbb\{K\})$$.</p>
+	~%25%<p>L'ensemble $$ \mathcal\{L\}_p(E,\mathbb\{K\})$$ est un sous-espace vectoriel de $$ \mathcal\{F\}(E^p,\mathbb\{K\})$$</p>
+	~%25%<p>Si $$\Phi_0\in \mathcal\{A\}_p(E,\mathbb\{K\})$$ et $$\Phi_0\neq 0$$  alors</p>\n<p>$$\forall \Phi\in \mathcal\{A\}_p(E,\mathbb\{K\}), \exists \lambda\in \mathbb\{K\}\,\text\{tel que \}\, \Phi\=\lambda\Phi_0.$$</p>
+	~%25%<p>Le sous-espace vectoriel  $$ \mathcal\{A\}_p(E,\mathbb\{K\})$$ est de dimension 1.</p>
+}
+
+
+// question: 3915521  name: Spectre et polynôme caractéristique: matrice/endomorphisme
+::Spectre et polynôme caractéristique\: matrice/endomorphisme::[html]<p>Soit $$E$$ un $$\mathbb\{K\}$$-espace vectoriel de dimension $$n$$ et $$f$$ un endomprohisme de $$E$$. Soit $$\mathcal\{B\}$$ une base de $$E$$ et $$A\=\mathcal\{M\}at_\{\mathcal\{B\}\}(f)$$. </p>\n<p>Cocher les assertions justes.</p>{
+	~%50%<p>$$f$$ et $$A$$ ont même spectre</p>
+	~%50%<p>$$f$$ et $$A$$ ont même polynôme caractéristique</p>
+	~%-50%<p>Les spectres de $$f$$ et $$A$$ n'ont pas de lien.</p>
+	~%-50%<p>$$f$$ et $$A$$ ont même spectre, mais leur polynômes caractéristiques sont différents.</p>
+}
+
+
+// question: 3933637  name: suite récurrentes linéaires
+::suite récurrentes linéaires::[html]<p>Soit $$(u_n)_\{n\in\mathbb N\}$$ la suite définie par récurrence par $$u_0\=3, u_1\=2, u_2\= 1$$ et pour tout $$n\geq 0$$, $$u_\{n+3\}\=6 u_\{n+2\}+2 u_n$$.</p>\n<p>Soit $$(U_n)_\{n\in\mathbb N\}$$ la suite de vecteurs de $$\mathbb\{R\}^3$$ définie par $$U_n\:\= \left(\begin\{array\}\{c\}u_n\\ u_\{n+1\}\\ u_\{n+2\} \end\{array\}\right),\qquad \forall n\in \mathbb\{N\}.$$</p>\n<p>Cocher les assertions justes parmi les suivantes.</p>{
+	~%50%<p>Pour tout $$n\in \mathbb\{N\}$$, $$U_\{n+1\}\=A U_n$$ avec $$A\=\left(\begin\{array\}\{ccc\}0&amp;1&amp;0\\0&amp;0&amp;1\\ 2&amp;0&amp;6 \end\{array\}\right).$$</p>
+	~%-25%<p>Pour tout $$n\in \mathbb\{N\}$$, $$U_\{n+1\}\=A U_n$$ avec $$A\=\left(\begin\{array\}\{ccc\}0&amp;0&amp;2\\1&amp;0&amp;0\\ 0&amp;1&amp;6 \end\{array\}\right).$$</p>
+	~%-25%<p>Pour tout $$n\in \mathbb\{N\}$$, $$U_\{n\}\=A^\{n-1\} U_0$$ avec $$A\=\left(\begin\{array\}\{ccc\}0&amp;1&amp;0\\0&amp;0&amp;1\\ 2&amp;0&amp;6 \end\{array\}\right),$$ et $$U_0\:\= \left(\begin\{array\}\{c\}3\\ 2\\ 1 \end\{array\}\right)$$.</p>
+	~%-25%<p>Pour tout $$n\in \mathbb\{N\}$$, $$U_\{n\}\=A^n U_0$$ avec $$A\=\left(\begin\{array\}\{ccc\}0&amp;1&amp;0\\0&amp;0&amp;1\\ 2&amp;0&amp;6 \end\{array\}\right),$$ et</p>\n<p>$$U_0\:\= \left(\begin\{array\}\{c\}1\\ 2\\ 3 \end\{array\}\right)$$.</p>
+	~%-25%<p>Pour tout $$n\in \mathbb\{N\}$$, $$U_\{n+3\}\=6 U_\{n+2\}+2 U_\{n\}$$.</p>
+	~%50%<p>Pour tout $$n\in \mathbb\{N\}$$, $$u_\{n\}$$ est la première coordonnées du vecteur $$A^nU_0$$ où $$A\=\left(\begin\{array\}\{ccc\}0&amp;1&amp;0\\0&amp;0&amp;1\\ 2&amp;0&amp;6 \end\{array\}\right),$$ et $$U_0\:\= \left(\begin\{array\}\{c\}3\\ 2\\ 1 \end\{array\}\right)$$.</p>
+}
+
+
+// question: 3852399  name: Système de Cramer
+::Système de Cramer::[html]<p>Si $$x,y\in \{\mathbb R\}$$ sont les solutions du système</p>\n<p>$$\left\{\begin\{array\}\{c\} 2x+5y\=-12\\ 3x-2y\=4\end\{array\}\right.$$ alors la valeur de $$x$$ est donnée par</p>\n<p> </p>{
+	~%100%<p>$$x\=\frac\{\left|\begin\{array\}\{cc\}-12&amp;5\\4&amp;-2\end\{array\}\right|\}\{\left|\begin\{array\}\{cc\}2&amp;5\\3&amp;-2\end\{array\}\right|\}$$</p>
+	~%-50%<p>$$x\=\frac\{\left|\begin\{array\}\{cc\}2&amp;-12\\3&amp;4\end\{array\}\right|\}\{\left|\begin\{array\}\{cc\}2&amp;5\\3&amp;-2\end\{array\}\right|\}$$</p>
+	~%-50%<p>$$x\=\frac\{\left|\begin\{array\}\{cc\}2&amp;5\\3&amp;-2\end\{array\}\right|\}\{\left|\begin\{array\}\{cc\}-12&amp;5\\4&amp;-2\end\{array\}\right|\}$$</p>
+}
+
+
+// question: 3974118  name: Travail à partir d'un polynôme annulateur
+::Travail à partir d'un polynôme annulateur::[html]<p>Soit $$f$$ un endomorphisme d'un $$\mathbb R$$ espace vectoriel $$E$$ de dimension finie tel que</p>\n<p>$$f\circ f-2f +Id_E\=0$$.</p>\n<p>Cocher les réponses justes \:</p>{
+	~%25%<p>La seule valeur propre de $$f$$ est 1.</p>
+	~%-50%<p>$$f\=Id_E.$$</p>
+	~%-50%<p>$$f$$ est diagonalisable.</p>
+	~%25%<p>Il existe une base $$\mathcal B$$ de $$E$$ telle que $$\{\mathcal M\}at_\{\mathcal B\}(f)$$ est une matrice triangulaire inférieure.</p>
+	~%25%<p>$$f$$ est bijective.</p>
+	~%25%<p>$$f^\{-1\}\=2Id_E-f$$.</p>
+}
+
+
+// question: 3933639  name: Trigonalisation dans C ou R
+::Trigonalisation dans C ou R::[html]<p>Cocher les assertions justes.</p>{
+	~%100%<p> Toutes les matrices de $$\mathcal\{M\}_n(\mathbb\{C\})$$ sont semblables à une matrice triangulaire.</p>
+	~%-50%<p>Toutes les matrices de $$\mathcal\{M\}_n(\mathbb\{R\})$$ sont trigonalisables dans $$\mathcal\{M\}_n(\mathbb\{R\})$$.</p>
+	~%-50%<p>Seules les matrices de $$\mathcal\{M\}_n(\mathbb\{C\})$$ qui n'ont que des coefficients réels ne sont pas trigonalisables dans $$\mathcal\{M\}_n(\mathbb\{C\})$$.</p>
+}
+
+
+// question: 3674199  name: cardinal de S_n
+
+
+// question: 3998022  name: Base canonique et produit scalaire usuel
+::Base canonique et produit scalaire usuel::[html]<p>La base canonique de $$\mathbb\{R\}^3$$ est une base orthonormée pour le produit scalaire usuel $$\langle (x,y,z),(x',y',z')\rangle\=xx'+yy'+zz'$$?</p>{TRUE}
+
+
+// question: 3674198  name: Cardinal de S_2
+::Cardinal de S_2::[html]<p>$$S_2$$ est un ensemble à 2 éléments</p>{TRUE}
+
+
+// question: 3852398  name: comatrice et determinant
+::comatrice et determinant::[html]<p>Soit $$A$$ une matrice  carrée de taille $$n$$ et $$\{\rm Com A\}$$ sa comatrice. On note $$I_n$$ la matrice identité de taille $$n$$.</p>\n<p> </p>\n<p>L'assertion suivante est-elle juste ou fausse ?</p>\n<p>$$A \,^t(\{\rm Com A\})\=(\det A) I_n$$  si et seulement si $$A$$ est inversible.</p>{FALSE}
+
+
+// question: 3673156  name: Définition d'un cycle
+::Définition d'un cycle::[html]<p>Un cycle est une permutation particulière</p>{TRUE}
+
+
+// question: 3672992  name: Définition d'une permutation
+::Définition d'une permutation::[html]<p>Une permutation est une bijection de $$\{1,\ldots,n\}$$ dans $$\{1,\ldots,n\}$$.</p>{TRUE}
+
+
+// question: 3841916  name: det endomorphisme et matrice 2
+::det endomorphisme et matrice 2::[html]<p>Soient $$\mathcal\{E\}\=(e_1,\ldots, e_n)$$ et $$\mathcal\{F\}\=(f_1,\ldots, f_n)$$ deux bases d'un espace vectoriel $$E$$ de dimension $$n$$. Soit $$g$$ et $$h$$  des endomorphisme de $$E$$.</p>\n<p>La proposition suivante est-elle vraie ou fausse ?</p>\n<p>Si $$\mathrm\{Mat\}_\{\mathcal E\}(g)\= \mathrm\{Mat\}_\{\mathcal F\}(h)$$ alors $$\det(g)\=\det(h)$$.</p>{TRUE}
+
+
+// question: 3851248  name: Déterminant et transposée
+::Déterminant et transposée::[html]<p>Soit $$A\=(a_\{ij\})$$ une matrice carrée de taille $$n$$. On note $$\varepsilon(\sigma)$$ la signature de la permutation $$\sigma\in S_n$$.</p>\n<p>L'égalité suivante est-elles vraie ou fausse?</p>\n<p>$$\sum_\{\sigma\in S_n\} \varepsilon(\sigma) a_\{\sigma(1) 1\}\cdots a_\{\sigma(n) n\}\=\sum_\{\sigma\in S_n\} \varepsilon(\sigma) a_\{1 \sigma(1)\}\cdots a_\{n \sigma(n)\}$$</p>{TRUE}
+
+
+// question: 3915528  name: Endomorphisme diagonalisable
+::Endomorphisme diagonalisable::[html]<p>Soit $$E$$ un $$\mathbb\{K\}$$-espace vectoriel de dimension $$n$$ et $$f$$ un endomprohisme de $$E$$. Soit $$\mathcal\{B\}$$ une base de $$E$$ et $$A\=\mathcal\{M\}at_\{\mathcal\{B\}\}(f)$$. </p>\n<p>Alors $$f$$ est diagonalisable si et seulement si $$A$$ est une matrice diagonale.</p>{FALSE}
+
+
+// question: 3933638  name: Exemple de matrice diagonalisable
+::Exemple de matrice diagonalisable::[html]<p>L'assertion suivante est-elle juste ou fausse ?</p>\n<p>La matrice $$\left(\begin\{array\}\{cc\}1&amp;2\\0&amp;2\end\{array\}\right)$$ est diagonalisable.</p>{TRUE}
+
+
+// question: 3852402  name: Injectivité et surjectivité d'un endomorphisme
+::Injectivité et surjectivité d'un endomorphisme::[html]<p>Soit $$g$$ un endomorphisme  sur un espace vectoriel de dimension finie.</p>\n<p>L'assertion suivante est-elle vraie ou fausse ?</p>\n<p>Si $$g$$ est surjective alors $$\{\rm Ker\}\, g\=\{0\}$$.</p>{TRUE}
+
+
+// question: 3954582  name: Matrices complexes trigonalisables
+::Matrices complexes trigonalisables::[html]<p>Toutes les matrices de $$\mathcal\{M\}_n(\mathbb\{C\})$$ sont trigonalisables.</p>{TRUE}
+
+
+// question: 3915525  name: Matrices diagonalisables
+::Matrices diagonalisables::[html]<p>Toutes les matrices de $$\mathcal\{M\}_n(\mathbb\{K\})$$ sont diagonalisables.</p>{FALSE}
+
+
+// question: 3954583  name: matrices réelles trigonalisables
+::matrices réelles trigonalisables::[html]<p>Toutes les matrices de $$\mathcal\{M\}_n(\mathbb\{R\})$$ sont trigonalisables.</p>{FALSE}
+
+
+// question: 4041696  name: matrice symétrique diagonalisable
+::matrice symétrique diagonalisable::[html]<p>Toute matrice symétrique réelle est diagonalisable.</p>{TRUE}
+
+
+// question: 4001471  name: orthogonal et supplémentaires
+::orthogonal et supplémentaires::[html]<p>Soit $$F$$ un sous espace vectoriel d'un espace euclidien $$E$$ de dimension finie et $$F^\perp$$ son orthogonal. L'assertion suivante est-elle juste ?</p>\n<p>Puisque $$F\oplus F^\perp \=E$$, si un vecteur $$z$$  de $$E$$ s'écrit $$z\=x+y$$ avec $$x\in F$$ alors $$y$$ est un vecteur de $$F^\perp$$.</p>{FALSE}
+
+
+// question: 4001304  name: orthogonalité et Pythagore
+::orthogonalité et Pythagore::[html]<p>Est-il vrai que si  $$x$$ est un élément de $$F$$ et $$y$$ un élément de l'orthogonal de $$F$$, alors</p>\n<p>$$\|x-y\|^2\= \|x\|^2+\|y\|^2 $$ ?</p>{TRUE}
+
+
+// question: 3954579  name: Polynôme annulateur scindé à racine simple
+::Polynôme annulateur scindé à racine simple::[html]<p>Une matrice est diagonalisable si et seulement si elle admet un polynôme annulateur scindé à racines simples.</p>{TRUE}
+
+
+// question: 4041718  name: projection orthogonale
+::projection orthogonale::[html]<p>Soit $$E$$ un espace euclidien et $$p\:E\to E$$ une projection. Alors $$p$$ est une projection orthogonale si et seulement si $$p$$ est autoadjointe. </p>{TRUE}
+
+
+// question: 3954577  name: Racine d'un polynôme annulateur et valeur propre
+::Racine d'un polynôme annulateur et valeur propre::[html]<p>Soit $$A\in\mathcal\{M\}_n(\mathbb\{R\})$$ et $$P$$ un polynomôme annulateur de $$A$$. Si $$P(\lambda)\=0$$, alors $$\lambda$$ est une valeur propre de $$A$$.</p>{FALSE}
+
+
+// question: 3998026  name: Symétrique et linéaire à gauche
+::Symétrique et linéaire à gauche::[html]<p>Soit $$E$$ une espace vectoriel sur $$\mathbb\{K\}$$ et $$\varphi\:E\times E\to\mathbb\{K\}$$. Si $$\varphi$$ est symétrique et linéaire par rapport à la première variable, alors $$\varphi$$ est bilinéaire.</p>{TRUE}
+
+
+// question: 3954581  name: Toujours un polynôme annulateur
+::Toujours un polynôme annulateur::[html]<p>Toutes les matrices admettent un polynôme annulateur.</p>{TRUE}
+
+
+// question: 3933642  name: Valeur propre et trigonalisation
+::Valeur propre et trigonalisation::[html]<p>Soit $$A$$ une matrice de $$\{\mathcal M\}_n(\{\mathbb R\})$$.</p>\n<p>L'assertion suivante est-elle juste ?</p>\n<p>Si $$A$$ est trigonalisable dans $$\{\mathcal M\}_n(\{\mathbb R\})$$, alors $$A$$ admet une valeur propre réelle.</p>{TRUE}
+
+

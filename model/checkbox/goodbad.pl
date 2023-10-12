@@ -43,4 +43,3 @@ else:
     checkbox.setdata_from_rw(good, bad, nb , nbtrue)
 
 ==
-

@@ -55,10 +55,7 @@ questions==
 =**[group=operateurs_jf,nbg=3,nbb=4]Lesquels de ces opérateurs ne sont ni des opérateurs logiques ni des opérateurs de comparaison?
 -=["<","<=","==","!=","and","or","not"]
 +=["=","+","*"]
-
 ==
-
-
 before==#|python|
 # Le même parseur que AMC2 sinon ça va encore chialer grave !!!
 from AMC import parse_AMC_TXT
@@ -85,24 +82,24 @@ for i, q in enumerate(list_questions):
     q=buildquestion(q) # Gestion de l'aléa 
     if q['type'] == "Radio":
         newcomp = CustomRadio()
-        
-        newcomp['text']=q['text']
-        newcomp.setitems(q['items'])
-        newcomp.setsol_from_index(q['index'])
+        newcomp.text = q['text']
+        #newcomp['text']=q['text']
+        newcomp.set_items(q['items'])
+        #newcomp.setsol_from_index(q['index'])
         if 'ordered' not in q['options']:
             newcomp.shuffle()
         comp.append(newcomp)
     elif q['type'] == "Checkbox":
         newcomp = CustomCheckbox()
-        newcomp['text']=q['text']
+        newcomp.text = q['text']
         newcomp.setitems(q['items'])
-        newcomp.setsol_from_index(q['index'])
+        #newcomp.setsol_from_index(q['index'])
         if 'ordered' not in q['options']:
             newcomp.shuffle()
         comp.append(newcomp)
     elif  q['type'] == 'TextSelect':
         newcomp = CustomTextSelect()
-        newcomp['text']= q['text']
+        newcomp.text = q['text']
         newcomp.setdata_from_textDR(q['items'][0])
         comp.append(newcomp)
 

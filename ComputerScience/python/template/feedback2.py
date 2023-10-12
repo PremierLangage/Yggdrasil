@@ -1,4 +1,4 @@
-#!rusr/bin/env python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 #   feedback2.py
@@ -40,6 +40,12 @@ Comment utiliser feedback2
 
 # class CompositeFeedback():
 
+def makehack():
+
+    import random
+    return  "".join([random.choice("aqwzsxedcrfvtgbyhnujkilopm") for i in range(3)])
+
+
 
 class FeedBack():
     def __init__(self,name="",filename="template.html"):
@@ -71,6 +77,7 @@ class FeedBack():
         """
         self.numtest += 1
         self.globalok = False
+        want = "&#9248;".join(want.split(" "))
         self.tests.append((FAILURE, self.numtest, text, got, want))
 
     def addTestError(self, text, error, para):
@@ -113,12 +120,17 @@ class FeedBack():
     def __str__(self):
         return self.render()
 
-    def render(self):
+    def render(self,hack=None):
+        if hack==None:
+            hack = makehack()
+        self.hack = hack
         with open(self.filename,"r") as tempfile:
             templatestring = tempfile.read()
         template = jinja2.Template(templatestring)
         x= template.render(feedback=self)
         return  x 
+
+
 
 
 

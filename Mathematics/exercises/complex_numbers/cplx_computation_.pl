@@ -14,7 +14,7 @@ jinja_keys = ["question", "text1", "text2", "solution", "input_prefix", "inputbl
 
 complex_form = cartesian
 
-before ==
+before == #|python|
 from sympy import conjugate
 
 n = 5

@@ -2,8 +2,12 @@
 # avec le theme par défaut
 # je rajoute io dans les modules 
 # test rajoute des deux lignes script id='srcMod' et la ligne composerSrc...-->
+
 <script src="https://unpkg.com/kekule/dist/kekule.js?modules=io,chemWidget,algorithm"></script>
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/kekule/dist/themes/default/kekule.css" />
+<script type="text/javascript">
+{{script|safe}}
+</script>
 <div id="composer" style="width:500px;height:500px" data-widget="Kekule.Editor.Composer" data-chem-obj="url(#molecule)"></div>
 <br>
 <input value="Get Smiles" onclick="getSmile()" type="button">

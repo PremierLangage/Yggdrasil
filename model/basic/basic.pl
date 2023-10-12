@@ -25,6 +25,7 @@ from plcsv import csv_choice, csv_sample, csv_col
 title =
 form = 
 text = 
+reroll = True
 
 tplpage =@ /model/tplpage/basic.html
 style.basic =@ /model/css/basic.css.html

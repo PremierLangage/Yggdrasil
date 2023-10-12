@@ -8,11 +8,11 @@ Dans quels cas créez-vous des getter pour vos champs private
 
 ==
 good==
-   - quand un algo a besoin d'accéder à un champ de la classe
-   - presque jamais
+   - uniquement quand un algo a besoin d'accéder à un champ de la classe
 ==
 
 bad==
+   - presque jamais
    - jamais 
    - tout le temps
 ==

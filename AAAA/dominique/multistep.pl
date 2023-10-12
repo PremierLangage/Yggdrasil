@@ -2,6 +2,7 @@
 @ /utils/components/scoring.py
 @ /utils/components/radio.py [radio.py]
 @ /utils/components/checkbox.py [customcheckbox.py]
+@ /utils/components/checkbox.py [checkbox.py]
 @ /utils/components/textselect.py [customtextselect.py]
 
 
@@ -14,8 +15,15 @@
 settings.cumulative % false
 
 
-questions=@ /AAAA/Justine/justine_questions.txt
+questions==
+*   Lorsque vous disposez d'un bloc constitué de plus d'une ligne dans un if, comment indiquez vous la fin du bloc ?
++On diminue l'indentation à la ligne suivant le bloc, pour revenir à une indentation identique à celle de la ligne possédant l'instruction if
+-On utilise une accolade } après la dernière ligne du bloc if
+-On ne met pas le caractère : à la dernière ligne du bloc if
+-On met une majuscule à la première lettre de la ligne suivant la fin du bloc if
 
+
+==
 
 title= Quizz
 
@@ -72,36 +80,18 @@ intro ==
 Ce quiz contient {{nbstep}} questions.
 ==
 
-XX==
-
-==
+@ /AAAA/dominique/01_MULTISTEP/jinjafilter.py
 
 evaluator==
-from jinja2 import Environment, BaseLoader
+from jinjafilter import setFilter
+
+env = setFilter()
+
 
 def format_feedback_lightscore(score,feedback):
     if score==-1:
-        tpl="""<div class="alert {}"><strong>{}</strong> <br> {}</div>"""
-        return tpl.format('alert-info',score, feedback)
-    tpl="""<div class="alert alert-secondary"><strong>Score : {} / 100 <br> </strong> {}</div>"""
-    return tpl.format(score,feedback)
-
-
-def component(l):
-    if isinstance(l,dict):
-        selector = l["selector"]
-        cid = l["cid"]
-    else:
-        selector = l.selector
-        cid = l.cid
-    return "<%s cid='%s'></%s>" % (selector, cid, selector)
-
-
-env = Environment(loader=BaseLoader())
-env.globals.update({
-    "component":    component
-})
-env.filters["component"] = component
+        return f"""<div class="alert alert-info "><strong>{score}</strong> <br> {feedback}</div>"""
+    return  f"""<div class="alert alert-secondary"><strong>Score : {score} / 100 <br> </strong> {feedback}</div>"""
 
 
 def evaluate(q):
@@ -140,7 +130,7 @@ if step<nbstep:
     q=list_questions[step]
     title = str(step)+str(q)
     if q['type'] == "Radio":
-        radio = CustomRadio() 
+        radio = Radio() 
         radio.setitems(q['items'])
         radio.setsol_from_index(q['index'])
         if 'ordered' not in q['options']:

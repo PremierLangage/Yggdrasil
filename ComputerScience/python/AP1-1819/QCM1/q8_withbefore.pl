@@ -13,7 +13,7 @@ text=""" Qu'affiche le programme suivant :
 
     print(len('{}')*{})""".format(chaine,entier)
 
-good=str(len(chaine)*entier)
+good=str(len(chaine)*entier)+"\n"+'vrai\ntrue\nright\neffectivement'
 bad=chaine*entier
 bad+='\n'
 bad += chaine+str(entier)
@@ -21,8 +21,6 @@ bad += '\n0'
 ==
 
 text= Indiquez les lignes qui sont des commentaires en python :
-
-
 
 nb=4
 nbtrues=1

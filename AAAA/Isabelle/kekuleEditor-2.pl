@@ -21,8 +21,10 @@ Dessiner la molécule de votre choix.
 form ==
 <script src="https://unpkg.com/kekule/dist/kekule.js?modules=io,chemWidget,algorithm"></script>
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/kekule/dist/themes/default/kekule.css" />
-
-
+<!-- le code {{script|safe}} est du langage jinja qui veut dire que le script "script" qui est dans exo.pl est safe -->
+<script type="text/javascript">
+{{script|safe}}
+</script>
 <div id="composer" style="width:500px;height:500px" data-widget="Kekule.Editor.Composer" data-chem-obj="url(#molecule)"></div>
 <br>
 <input value="Get Smiles" onclick="getSmile()" type="button">
@@ -54,6 +56,11 @@ function getSmile() {
 evaluator ==
 grade=(100,"Bonne réponse")
 ==
+
+
+
+
+
 
 
 

@@ -27,20 +27,23 @@ editor.height=300px
 text== 
 Écrire une fonction C **extraire_minimum** qui extrait le minimumun d'un **arbre binaire de recherche**.
 La fonction renvoie 1 en cas d'extraction réussie et 0 sinon.La valeur extraite est transmise par adresse.
+Le noeud extrait est libéré avec la fonction free.  
 
 On utilisera le type   
-typedef struct node{  
-  int value;  
-  struct node * left;  
-  struct node * right;  
-}Node, *Tree;  
+
+  typedef struct node{  
+    int value;  
+    struct node * left;  
+    struct node * right;  
+  }Node, *Tree;  
 
 ==
 
 editor.code==#|c|
 
-int extraire_minimum(;..){
+int extraire_minimum(Tree *t,int *min){
 
+return 0;
 }
 
 ==
@@ -97,7 +100,6 @@ Node * allocate_node(int val){
 
 code_after==#|c|
 
-
 int ajoute(Tree *t,int valeur){
   if (*t == NULL){
     if ((*t=allocate_node(valeur))==NULL)
@@ -146,7 +148,13 @@ char *arbre_vers_code(Tree t){
   s[strlen(s)]= 0;
   return s;
 }
-   
+
+int nbfree=0;
+
+void free(void *dummy){
+  nbfree++;
+  }
+
 int main(int argc, char* argv[]){
   Tree t=NULL;
 char *code;
@@ -165,6 +173,7 @@ int x;
     
   fprintf(stderr,"arbre après %s\n",code) ;
  
+  printf("Nombre de libérations : %d \n",nbfree);
   return 0;
 }
 ==

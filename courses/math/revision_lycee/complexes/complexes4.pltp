@@ -1,0 +1,18 @@
+title = Nombres complexes : Equations du second degré
+
+
+introduction ==
+Objectif :
+
+* Calculer les racines carrées d'un nombre complexe.
+* Calculer les solutions d'une équation du second degré à coefficients complexes.
+==
+
+@ /exercises/math/complex_numbers/equation_deg2/sqrt_complex.pl
+
+@ /exercises/math/complex_numbers/equation_deg2/discriminant.pl
+
+@ /exercises/math/complex_numbers/equation_deg2/solve/solve_int1.pl
+
+@ /exercises/math/complex_numbers/equation_deg2/solve/solve_int2.pl
+

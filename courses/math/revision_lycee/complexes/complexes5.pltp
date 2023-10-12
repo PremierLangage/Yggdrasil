@@ -1,0 +1,17 @@
+title = Nombres complexes : Linéarisation d'expressions trigonométriques
+
+introduction ==
+Objectif : Linéariser des expressions trigonométriques.
+==
+
+
+
+#@ /Mathematics/exercises/complex_numbers/cplx_computation_add_sub.pl
+
+#@ /Mathematics/exercises/complex_numbers/cplx_computation_addconj_subconj.pl
+
+@ /exercises/math/complex_numbers/lindev/linearization/linearization_1.pl
+
+@ /exercises/math/complex_numbers/lindev/linearization/linearization_2.pl
+
+@ /exercises/math/complex_numbers/lindev/linearization/linearization_3.pl

@@ -16,7 +16,7 @@ def randomNfromlist(n,tr,fl, nbtrues):
         nbtrues=min(n,random.randint(1,len(tr)-1)) # at  least one good answer ???
     random.shuffle(tr)
     if nbtrues > len(tr):
-        print(" Not enough True answers nbtrues= ", nbtrues, file=sys.stderr)
+        print(f" Not enough True answers {nbtrues} > {len(tr)} ", file=sys.stderr)
         sys.exit(1)
     tr=tr[0:nbtrues]
     n=max(n-nbtrues,0)

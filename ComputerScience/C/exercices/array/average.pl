@@ -21,7 +21,6 @@ author=Nicolas Borie
 title=Moyenne des éléments d'un tableau
 tag=array|fonction|parcours|simple
 
-
 text==
 Écrire une fonction C **average_array** qui prend en argument un
 tableau d'entiers (pointeur vers sa première case) ainsi que sa taille puis retourne 

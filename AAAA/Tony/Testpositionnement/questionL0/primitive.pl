@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Primitives
+
 question==
 Quelles phrases sont vraies?
 ==
@@ -21,4 +22,6 @@ $!\frac{1}{x}!$ est une primitive de $!\ln(x)!$
 ==
 
 scoring = CorrectItems 
- 
+
+
+reroll = False

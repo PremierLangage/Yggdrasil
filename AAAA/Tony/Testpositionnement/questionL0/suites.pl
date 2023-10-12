@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Convergence de suites
+
 question==
 Lesquelles de ces suites convergent?
 ==
@@ -22,4 +23,5 @@ $!2n+11!$
 
 scoring = CorrectItems
 
+reroll = False
  

@@ -52,6 +52,7 @@ solution==
 # dépend de la question tirée
 # Dans cet exo, les solutions sont hardcodées dans le builder
 # voici une solution avec sed qui fait une ligne par mot : sale !
-sed Germinal.txt -e "s/\W/\n/g" | grep -e "^[a-z]\{19\}$" | sort -u
+# sed Germinal.txt -e "s/\W/\n/g" | grep -e "^[a-z]\{19\}$" | sort -u
+# cat Germinal.txt | sed -e "s/\W/\n/g" | grep -e "^[a-z]\{17\}$" | sort | uniq
 ==
 

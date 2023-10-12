@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title = Monotonie de suites
+
 question==
 Lesquelles de ces suites sont monotones?
 ==
@@ -21,3 +22,5 @@ $!\frac{(-1)^n}{2^n}!$
 ==
 
 scoring = CorrectItems
+
+reroll = False

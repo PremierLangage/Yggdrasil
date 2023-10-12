@@ -1,6 +1,7 @@
 extends= /model/basic/checkbox_rw.pl
 
- 
+title =  Calcul d'intégrales
+
 question==
  Quelles intégrales valent $!0!$?
 ==
@@ -21,4 +22,6 @@ $!\int_{-1}^1 t^2+tdt!$
 ==
 
 scoring = CorrectItems
+
+reroll = False
   

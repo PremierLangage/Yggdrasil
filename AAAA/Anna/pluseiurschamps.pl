@@ -21,12 +21,16 @@ inputbox.appearance = outline
 
 
 before==
-==
+import random 
+a = random.randint(567,789789)
 
-title = Code Editor Component
+==
+ 
+
 
 text==
-Saisir votre exercice
+Saisir votre exercice ** {{ a }} **
+
 ==
 
 form==
@@ -36,11 +40,20 @@ form==
 
 
 title==
-Input Component
+prout 
+{{ a }}
 ==
 
 text==
+
+# C'est du markdwon
+
+## petit titre 
+
 Enter the result of ** {{ a }} + {{ b }} ** inside the input box.
+
+
+
 ==
 
 
@@ -51,6 +64,8 @@ title=""
 form=""
 feedback = f"""
 
+Ceci est affiché car c'est le feedback 
+<br><br><br>
 title={inputbox.value}     
 text== . . 
 {editor.code} . .  \n== . . 

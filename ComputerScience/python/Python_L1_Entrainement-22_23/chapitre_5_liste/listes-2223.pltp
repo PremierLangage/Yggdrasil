@@ -1,0 +1,53 @@
+title= Ch 5 : Exercices sur les Listes
+
+introduction==
+
+Ceci est votre cinquième feuille d'exercices Python en libre service.
+
+Les exercices suivants concernent le concept de boucle.
+
+Ils doivent être verts une fois que vous avez fini !
+
+A priori les exercices sont dans un ordre bien choisi et une fois l'exercice réussi vous passez au suivant,
+mais vous pouvez naviger avec le menu de gauche.
+
+Si un exercice vous semble faux vous pouvez demander de l'aide sur le salon d'entraide PLaTon sous Discord de la L1 
+et passer à l'exercice suivant. 
+==
+
+
+# Création de liste
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/premiers_entiers-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/repete-2021.pl
+
+# Parcours des éléments de liste
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/existe_impair-2021.pl
+@ liststat-2021.pl
+
+# Construction de liste
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/fibo-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/extends-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/pair_impair-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/plat-allergie-2021.pl
+
+# Manipulation de liste par référence
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/ajoute_liste-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/extends_list-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/remplace_pair-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/supprime_pair-2021.pl
+
+# Un peu d'algo (algo??) sur les listes 
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/doublons-2021.pl
+
+# Exos durs (math, algo, ...)
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/_difficle.pl
+
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/EntierGauss-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/histogramme-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/zip-list-2021.pl
+@ /ComputerScience/python/Python_L1_Entrainement-22_23/chapitre_5_liste/soussuite-2021.pl
+
+
+
+
+

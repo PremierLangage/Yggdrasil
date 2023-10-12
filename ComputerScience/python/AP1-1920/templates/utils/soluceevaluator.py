@@ -1,7 +1,7 @@
 
 #!/usr/bin/env python3
 # coding: utf-8
-import sys, json, jsonpickle, time, random
+import sys, json, jsonpickle, time, random, os
 from sandboxio import output, get_context, get_answers
 
 from gradesoluce import *
@@ -27,10 +27,10 @@ if __name__ == "__main__":
     if "plsoluce" not in dic and "mplsoluce0" not in dic :
         print("No plsoluce or mplsoluce0 in dic  necessary for this template " , file=sys.stderr)
         sys.exit(1)
-    if "soluce" not in dic and not os.exist("soluce.py"):
+    if "soluce" not in dic and not  os.path.exists("soluce.py"):
         print("No soluce or file soluce.py  necessary for this template " , file=sys.stderr)
         sys.exit(1)
-    if "soluce" in dic:
+    if not  os.path.exists("soluce.py") and "soluce" in dic:
         with open("soluce.py","w") as sol:
             sol.write(dic['soluce'])
     lestest=[]
@@ -48,6 +48,7 @@ if __name__ == "__main__":
                 continue # Skip
             mpvalue=dic[xname].split("\n")
             lestest.append([mpvalue[0],"\n".join(mpvalue[1:])])
+    
     student = get_answers()['answer']
     with open("student.py","w") as sf:
         sf.write(student)

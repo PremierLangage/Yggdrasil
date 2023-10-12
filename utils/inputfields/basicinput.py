@@ -219,10 +219,14 @@ class TextInput(SingleComponent):
         """
         Evaluate the input field.
         """
-        if any([samestrings(self.data['value'], item, **self.evalparam) for item in self.sol]):
+        # direct 
+        if self.data['value'] in self.sol:
+            self.score =100
+        # Evaluation plus floue ;)
+        elif any([samestrings(self.data['value'], item, **self.evalparam) for item in self.sol]):
             self.score = 100
         else:
-            self.score = 0
+                self.score = 0
         return self.score      
 
     def display_feedback(self):
@@ -277,6 +281,8 @@ def edit_distance(s1, s2):
 class AutoInput(TextInput):
 
     def __init__(self, **kwargs):
+# modif to get elments for eval
+        super().__init__(**kwargs)
         if 'data' not in kwargs:
             self.data = {'selector': 'c-input', 'cid': str(uuid4())}
         for k, v in kwargs.items():
@@ -290,16 +296,16 @@ class AutoInput(TextInput):
             self.data['autocomplete'] = items.splitlines()
         else:
             self.data['autocomplete'] = items
-
-    def eval(self):
-        """
-        Evaluate the input field.
-        """
-        if self.sol == self.data['value']:
-            self.score = 100
-        else:
-            self.score = 0
-        return self.score
+    # mail du 6 semptembre 
+    # def eval(self):
+    #     """
+    #     Evaluate the input field.
+    #     """
+    #     if self.sol == self.data['value']:
+    #         self.score = 100
+    #     else:
+    #         self.score = 0
+    #     return self.score
 
 class NumInput(SingleComponent):
 
