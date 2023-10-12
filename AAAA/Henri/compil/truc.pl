@@ -114,7 +114,7 @@ try:
     with open(sys.argv[1], 'r') as f:
         context = json.load(f)
     context['text'] = '<pre>' + html.escape(json.dumps(f, indent=2)) + '</pre>'
-    with open(sys.argv[2], 'w+') as f:
+    with open(sys.argv[2], 'w') as f:
         json.dump(context, f)
 ==
 
