@@ -1,5 +1,6 @@
 @ /ComputerScience/C/template/std_progC_utils.py
 @ nasmtools.py
+@ nasm
 
 @ /utils/sandboxio.py
 grader  =@ /grader/evaluator.py
@@ -41,6 +42,9 @@ import html
 
 from std_progC_utils import make_hide_block_on_click
 from nasmtools import Source, Program
+
+import os
+os.chmod('./nasm', 0755)
 
 # Create files and build files
 srcs = {
