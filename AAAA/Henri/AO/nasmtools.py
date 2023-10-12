@@ -130,10 +130,11 @@ class Program:
     def run(self, argv):
         command_args = ['./' + self.name] + argv
         sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
+        output = ""
         try: 
-            ouput = sp.stdout.decode() + sp.stderr.decode()
+            ouput += sp.stdout.decode() + sp.stderr.decode()
         except:
-            ouput = "Impossible de décoder la sortie standard"
+            ouput += "Impossible de décoder la sortie standard"
         if -sp.returncode in signals:
             ouput += "Process exited with UNIX signal ("+str(-sp.returncode)+") "+signals[-sp.returncode]
         elif sp.returncode < 0:
