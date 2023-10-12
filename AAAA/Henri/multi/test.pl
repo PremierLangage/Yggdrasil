@@ -1,1 +1,1 @@
-extend = ./multi.pl
+extends = ./multi.pl
