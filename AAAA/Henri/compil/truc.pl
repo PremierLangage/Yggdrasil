@@ -108,10 +108,10 @@ builder==#|py|
 import json 
 import sys
 try:
-    with open(sys.argv[1], 'r') as f:
-        context = f.read()
+    with open(sys.argv[1],'r') as f:
+        context = json.load(f)
     with open(sys.argv[2], 'w+') as f:
-        print(context, file=f)
+        json.dump(context, f)
     print(context)
 except Exception as e:
     print(e, file=sys.stderr)
