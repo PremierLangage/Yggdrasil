@@ -94,7 +94,7 @@ if not student_compile.error():
 
         terminal_log = (
               "<pre>" 
-            + html.escape("Platon@debian~$> ./a.out " + " ".join(test_c[1])) + "\n"
+            + html.escape("Platon@debian~$> ./student_prog " + " ".join(test_c[1])) + "\n"
             + html.escape(expected_ouput)
             + "</pre>"
         )
@@ -127,7 +127,7 @@ if not student_compile.error():
                     + "Attendu: " + terminal_log
                     + "Obtenu: " + (
                         "<pre>" 
-                        + html.escape("Platon@debian~$> ./a.out " + " ".join(test_c[1])) + "\n"
+                        + html.escape("Platon@debian~$> ./student_prog " + " ".join(test_c[1])) + "\n"
                         + html.escape(spout)
                         + "</pre>"
                     ), 
