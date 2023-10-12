@@ -47,7 +47,7 @@ form==#|html|
 </div>
 <script>
     let fileid = 0;
-    function addCM(id) {
+    function addCM(id, content) {
         const uid = fileid++;
         const div = document.createElement('div');
         document.getElementById("section_code").appendChild(div);
@@ -72,6 +72,7 @@ form==#|html|
         );
         // id pour PL (angular?)
         textarea.id = "form_code" + id;
+        textarea.value = content;
 
         // nécessaire pour synchroniser la valeur de l'éditeur et de la textarea
         editor.on("changes", (cm) => cm.save());
