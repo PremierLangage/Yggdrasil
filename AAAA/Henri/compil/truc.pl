@@ -31,15 +31,6 @@ nasm -felf32 main.asm -o main.o
 ld -m elf_i386 -e main main.o -o main
 ==
 
-files.main_c % {}
-files.main_c.lang = text/x-csrc
-files.main_c.readonly = 1
-files.main_c.code == #|c|
-int main() {
-    return 0;
-}
-==
-
 
 form==#|html|
 <link rel="stylesheet" href="https://hderycke.frama.io/sharecode/lib/codemirror.css">
