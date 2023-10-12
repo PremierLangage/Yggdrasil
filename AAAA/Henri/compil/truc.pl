@@ -56,7 +56,7 @@ form==#|html|
 </div>
 <script>
     let fileid = 0;
-    function addCM(id, content, readonly) {
+    function addCM({id, lang, content, readonly}) {
         const uid = fileid++;
         const div = document.createElement('div');
         document.getElementById("section_code").appendChild(div);
@@ -97,24 +97,15 @@ form==#|html|
 <script>
     {% for file in files %}
     {
-        const editor = addCM("{{ file }}", `{{ files[file].code }}`, {{ files[file].readonly }});
-        editor.setOption('mode', "{{ files[file].lang }}");
+        const editor = addCM({{ { 
+            "id": file, 
+            "content": files[file].code,
+            "readonly": files[file].readonly
+        }|tojson }});
+        editor.setOption('mode', {{ files[file].lang|json }});
     }
     {% endfor %}
 </script>
-==
-
-builder==#|py|
-import json 
-import sys
-try:
-    with open(sys.argv[1],'r') as f:
-        context = json.load(f)
-    context['text'] = json.dumps(context)
-    with open(sys.argv[2], 'w+') as f:
-        json.dump(context, f)
-except Exception as e:
-    print(e, file=sys.stderr)
 ==
 
 grader==#|py|
@@ -125,6 +116,7 @@ try:
         context = json.load(f)
     with open(sys.argv[2], 'r') as f:
         answers = json.load(f)
+    # report current answers
     for name in answers:
         name = name[4:]
         context['files'][name]['code'] = answers['code' + name]
