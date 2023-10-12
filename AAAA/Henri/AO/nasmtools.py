@@ -25,13 +25,13 @@ class CompileResult:
         self.flags = flags
 
     def success(self):
-        return not self.taboo_error() and len(self.spout) + len(self.errout) == 0
+        return self.returncode == 0 and not self.taboo_error() and len(self.spout) + len(self.errout) == 0
 
     def warning(self):
-        return not self.taboo_error() and not self.success() and "error:" not in self.errout
+        return self.returncode == 0 and not self.taboo_error() and not self.success() and "error:" not in self.errout
 
     def error(self):
-        return self.taboo_error() or "error:" in self.errout
+        return self.returncode != 0 and self.taboo_error() or "error:" in self.errout
 
     def taboo_error(self):
         return bool(self.taboo)
@@ -129,6 +129,8 @@ class Program:
             spout = sp.stdout.decode()
             errout = sp.stderr.decode()
             returncode = sp.returncode
+            if returncode == 0:
+                self.built = True
             return CompileResult(returncode, spout, errout)
         except Exception as e:
             return CompileResult(-1, "", str(e))
