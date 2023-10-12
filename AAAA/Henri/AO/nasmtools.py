@@ -65,9 +65,9 @@ class CompileResult:
         if self.taboo_error():
             feedback += "<b>Refus de compilation :</b> non respect du taboo : " + self.taboo
         elif not self.success():
-            feedback += self.texte() + ' avec flags ' + ' '.join(self.flags), "<pre>" + html.escape(self.spout+self.errout) + "</pre>"
+            feedback += self.texte() + ' avec flags ' + ' '.join(self.flags) + "<pre>" + html.escape(self.spout+self.errout) + "</pre>"
         else:
-            feedback += self.texte() + ' avec flags ' + ' '.join(self.flags), "C'était parfait, le compilateur n'a rien dit..."
+            feedback += self.texte() + ' avec flags ' + ' '.join(self.flags) + "<br/>C'était parfait, le compilateur n'a rien dit..."
         feedback += '</div>'
         return feedback
 
