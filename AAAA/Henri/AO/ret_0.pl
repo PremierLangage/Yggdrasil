@@ -21,9 +21,9 @@ student_source = main
 # Correction
 sources.main==#|asm|
 section .text
-global _start
+global main
 
-_start:
+main:
     mov eax, 1
     mov ebx, 0
     int 0x80
