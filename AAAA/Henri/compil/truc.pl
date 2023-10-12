@@ -121,8 +121,13 @@ grader==#|py|
 import json 
 import sys
 try:
+    with open(sys.argv[1], 'r') as f:
+        context = json.load(f)
     with open(sys.argv[2], 'r') as f:
         answers = json.load(f)
+    for name in answers:
+        name = name[4:]
+        context['files'][name]['code'] = answers['code' + name]
     with open(sys.argv[4], 'w+') as f:
         print('<pre>', answers, '</pre>', file=f)
 except Exception as e:
