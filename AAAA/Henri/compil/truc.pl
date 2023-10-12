@@ -100,7 +100,7 @@ form==#|html|
         const editor = addCM({{ { 
             "id": file, 
             "content": files[file].code,
-            "readonly": files[file].readonly
+            "readonly": files[file].readonly == 1
         }|tojson }});
         editor.setOption('mode', {{ files[file].lang|tojson }});
     }
