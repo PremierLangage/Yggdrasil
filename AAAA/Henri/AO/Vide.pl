@@ -94,7 +94,7 @@ if not student_compile.error():
 
         terminal_log = (
               "<pre>" 
-            + html.escape("Platon@debian~$> ./a.out " + " ".join(test_c[1])) + "\n"
+            + html.escape("Platon@debian~$> ./student_prog " + " ".join(test_c[1])) + "\n"
             + html.escape(expected_ouput)
             + "</pre>"
         )
@@ -127,7 +127,7 @@ if not student_compile.error():
                     + "Attendu: " + terminal_log
                     + "Obtenu: " + (
                         "<pre>" 
-                        + html.escape("Platon@debian~$> ./a.out " + " ".join(test_c[1])) + "\n"
+                        + html.escape("Platon@debian~$> ./student_prog " + " ".join(test_c[1])) + "\n"
                         + html.escape(spout)
                         + "</pre>"
                     ), 
@@ -148,7 +148,7 @@ else:
     feedback += feedback_checks
 
 # overall grade !
-feedback = '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Note actuelle :</u> ' + str(max(all_grade)) + '/100</b></p>' + feedback
+feedback = '<p style="margin-bottom: 5px; margin-top: 5px;"><b><u>Note actuelle :</u> ' + str((grade_compil * grade_checks ) // 100) + '/100</b></p>' + feedback
 
 grade=((grade_compil * grade_checks ) // 100, feedback)
 ==
