@@ -133,7 +133,7 @@ class Program:
                 self.built = True
             return CompileResult(returncode, spout, errout)
         except Exception as e:
-            return CompileResult(-1, "", str(e))
+            return CompileResult(-1, "", str(e), flags=ldflags)
 
     def run(self, argv):
         command_args = ['./' + self.name] + argv
