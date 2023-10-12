@@ -109,9 +109,9 @@ import json
 import sys
 try:
     with open(sys.argv[1], 'r') as f:
-        context = json.load(f)
+        context = f.read()
     with open(sys.argv[2], 'w+') as f:
-        json.dump(f, context)
+        print(context, file=f)
     print(context)
 except Exception as e:
     print(e, file=sys.stderr)
