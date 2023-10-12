@@ -55,9 +55,7 @@ form==#|html|
 <div id="section_code">
 </div>
 <script>
-    let fileid = 0;
     function addCM({id, lang, content, readonly}) {
-        const uid = fileid++;
         const div = document.createElement('div');
         document.getElementById("section_code").appendChild(div);
 
