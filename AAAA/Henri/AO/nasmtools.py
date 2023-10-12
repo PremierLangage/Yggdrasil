@@ -79,7 +79,8 @@ class CompileResult:
         return CompileResult(
             other.returncode,
             self.spout + other.spout,
-            self.errout + other.errout
+            self.errout + other.errout,
+            flags=other.flags
         )
 
     def __bool__(self):
