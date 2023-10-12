@@ -63,6 +63,10 @@ form==#|html|
         div.appendChild(selectLang);
 
         const textarea = document.createElement('textarea');
+        // id pour PL (angular?)
+        textarea.id = "form_code" + id;
+        textarea.value = content;
+        
         const editor = CodeMirror.fromTextArea(
             div.appendChild(textarea),
             {
@@ -70,9 +74,6 @@ form==#|html|
                 styleActiveLine: true,
             }
         );
-        // id pour PL (angular?)
-        textarea.id = "form_code" + id;
-        textarea.value = content;
 
         // nécessaire pour synchroniser la valeur de l'éditeur et de la textarea
         editor.on("changes", (cm) => cm.save());
