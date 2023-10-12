@@ -79,6 +79,7 @@ form==#|html|
         selectLang.addEventListener('change', () => {
             editor.setOption('mode', selectLang.value);
         });
+        return editor;
     }
 
     // workaround pour la goutière 
@@ -88,7 +89,10 @@ form==#|html|
 </script>
 <script>
     {% for file in files %}
-    addCM({{ file }});
+    {
+        const editor = addCM({{ file }});
+        editor.setOption('mode', {{ files[file].lang }});
+    }
     {% endfor %}
 </script>
 ==
