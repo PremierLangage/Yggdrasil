@@ -4,6 +4,34 @@ text==
 Test de dépot ?
 ==
 
+files % {}
+
+files.main_asm % {}
+files.main_asm.lang = x86
+files.main_asm.code == #|asm|
+section .text
+global main
+main:
+    ; compléter
+==
+files.main_asm.solution == #|asm|
+section .text
+global main
+main:
+    mov eax, 1
+    mov ebx, 0
+    int 0x80
+==
+
+files.compile_sh % {}
+files.compile_sh.lang = sh
+files.compile_sh.readonly = 1
+files.compile_sh.code == #|shell|
+nasm -felf32 main.asm -o main.o
+ld -m elf_i386 -e main main.o -o main
+==
+
+
 form==#|html|
 <link rel="stylesheet" href="https://hderycke.frama.io/sharecode/lib/codemirror.css">
 <script src="https://hderycke.frama.io/sharecode/lib/codemirror.js"></script>
@@ -14,7 +42,7 @@ form==#|html|
 <script src="https://hderycke.frama.io/sharecode/mode/python/python.js"></script>
 <script src="https://hderycke.frama.io/sharecode/mode/markdown/markdown.js"></script>
 
-<button onclick="addCM()">+</button>
+<!--<button onclick="addCM()">+</button>-->
 <div id="section_code">
 </div>
 <script>
@@ -43,7 +71,7 @@ form==#|html|
             }
         );
         // id pour PL (angular?)
-        textarea.id = "form_code" + uid;
+        textarea.id = "form_code" + id;
 
         // nécessaire pour synchroniser la valeur de l'éditeur et de la textarea
         editor.on("changes", (cm) => cm.save());
@@ -57,6 +85,11 @@ form==#|html|
     window.addEventListener('load', () => {
         addCM();
     });
+</script>
+<script>
+    {% for file in files %}
+    addCM({{ file }});
+    {% endfor %}
 </script>
 ==
 
