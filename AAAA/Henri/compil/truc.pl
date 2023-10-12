@@ -102,7 +102,7 @@ form==#|html|
             "content": files[file].code,
             "readonly": files[file].readonly
         }|tojson }});
-        editor.setOption('mode', {{ files[file].lang|json }});
+        editor.setOption('mode', {{ files[file].lang|tojson }});
     }
     {% endfor %}
 </script>
