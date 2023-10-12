@@ -97,7 +97,7 @@ form==#|html|
 <script>
     {% for file in files %}
     {
-        const editor = addCM("{{ file }}", `{{ files[file].code }}`, {{ files[file].readonly == 1 }});
+        const editor = addCM("{{ file }}", `{{ files[file].code }}`, {{ files[file].readonly }});
         editor.setOption('mode', "{{ files[file].lang }}");
     }
     {% endfor %}
