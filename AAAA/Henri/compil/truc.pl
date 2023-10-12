@@ -19,7 +19,7 @@ form==#|html|
 </div>
 <script>
     let fileid = 0;
-    function addCM() {
+    function addCM(id) {
         const uid = fileid++;
         const div = document.createElement('div');
         document.getElementById("section_code").appendChild(div);
@@ -34,15 +34,16 @@ form==#|html|
         }
         div.appendChild(selectLang);
 
+        const textarea = document.createElement('textarea');
         const editor = CodeMirror.fromTextArea(
-            div.appendChild(document.createElement('textarea')), 
+            div.appendChild(textarea),
             {
                 lineNumbers: true,
                 styleActiveLine: true,
             }
         );
         // id pour PL (angular?)
-        editor.getInputField().id = "form_code" + uid;
+        textarea.id = "form_code" + uid;
 
         // nécessaire pour synchroniser la valeur de l'éditeur et de la textarea
         editor.on("changes", (cm) => cm.save());
