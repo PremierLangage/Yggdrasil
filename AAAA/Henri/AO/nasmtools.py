@@ -2,8 +2,6 @@
 import subprocess
 import html
 
-from std_progC_utils import make_hide_block_on_click
-
 # principals signals
 signals = {
     2: "SIGINT",
@@ -67,9 +65,9 @@ class CompileResult:
         if self.taboo_error():
             feedback += "<b>Refus de compilation :</b> non respect du taboo : " + self.taboo
         elif not self.success():
-            feedback += make_hide_block_on_click("compil_ans", self.texte() + ' avec flags ' + ' '.join(self.flags), "<pre>" + html.escape(self.spout+self.errout) + "</pre>", "")
+            feedback += self.texte() + ' avec flags ' + ' '.join(self.flags), "<pre>" + html.escape(self.spout+self.errout) + "</pre>"
         else:
-            feedback += make_hide_block_on_click("compil_ans", self.texte() + ' avec flags ' + ' '.join(self.flags), "C'était parfait, le compilateur n'a rien dit...", "")
+            feedback += self.texte() + ' avec flags ' + ' '.join(self.flags), "C'était parfait, le compilateur n'a rien dit..."
         feedback += '</div>'
         return feedback
 
