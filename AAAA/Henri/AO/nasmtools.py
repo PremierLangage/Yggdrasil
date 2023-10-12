@@ -122,7 +122,7 @@ class Program:
         self.name = name
         self.sources = sources
 
-    def link(self, compiler="ld", ldflags=["-melf_i386", "-emain"]):
+    def link(self, compiler="ld", ldflags=["-melf_i386", "-emain", "--fatal-warnings"]):
         command_args = [compiler, "-o", self.name] + ldflags + [ src.name + '.o' for src in self.sources ]
         try:
             sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
