@@ -124,7 +124,7 @@ try:
     with open(sys.argv[2], 'r') as f:
         answers = json.load(f)
     with open(sys.argv[4], 'w+') as f:
-        print(answers, file=f)
+        print('<pre>', answers, '</pre>', file=f)
 except Exception as e:
     print(e, file=sys.stderr)
 print(100)
