@@ -106,6 +106,18 @@ form==#|html|
 </script>
 ==
 
+builder==#|py|
+import json 
+import sys
+import html
+try:
+    with open(sys.argv[1], 'r') as f:
+        context = json.load(f)
+    context['text'] = '<pre>' + html.escape(json.dumps(f, indent=2)) + '</pre>'
+    with open(sys.argv[2], 'w+') as f:
+        json.dump(context, f)
+==
+
 grader==#|py|
 import json 
 import sys
