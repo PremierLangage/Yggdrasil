@@ -105,7 +105,7 @@ class Source:
                 f.write(self.after)
         return self
 
-    def build(self, compiler="nasm", flags=["-g", "-felf32"]):
+    def build(self, compiler="./nasm", flags=["-g", "-felf32"]):
         command_args = [compiler, self.name, "-o", self.name + ".o"] + flags
         try:
             sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
