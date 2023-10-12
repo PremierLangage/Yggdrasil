@@ -71,7 +71,7 @@ form==#|html|
 
         const textarea = document.createElement('textarea');
         // id pour PL (angular?)
-        textarea.id = "form_code" + id;
+        textarea.id = "form_" + id;
         textarea.value = content;
 
         const editor = CodeMirror.fromTextArea(
@@ -130,7 +130,7 @@ try:
         answers = json.load(f)
     # report current answers
     for name in answers:
-        name = name[4:]
+        # name = name[4:]
         context['files'][name]['code'] = answers['code' + name]
     with open(sys.argv[3], 'w+') as f:
         json.dump(context, f)
