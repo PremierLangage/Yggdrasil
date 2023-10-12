@@ -85,8 +85,8 @@ form==#|html|
 <script>
     {% for file in files %}
     {
-        const editor = addCM({{ file }});
-        editor.setOption('mode', {{ files[file].lang }});
+        const editor = addCM("{{ file }}");
+        editor.setOption('mode', "{{ files[file].lang }}");
     }
     {% endfor %}
 </script>
