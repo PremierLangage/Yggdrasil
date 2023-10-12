@@ -106,13 +106,16 @@ class Source:
 
     def build(self, compiler="nasm", flags=["-g", "-felf32"]):
         command_args = [compiler, self.name, "-o", self.name + ".o"] + flags
-        sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        spout = sp.stdout.decode()
-        errout = sp.stderr.decode()
-        returncode = sp.returncode
-        if returncode == 0:
-            self.built = True
-        return CompileResult(returncode, spout, errout, flags=flags)
+        try:
+            sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            spout = sp.stdout.decode()
+            errout = sp.stderr.decode()
+            returncode = sp.returncode
+            if returncode == 0:
+                self.built = True
+            return CompileResult(returncode, spout, errout, flags=flags)
+        except Exception as e:
+            return CompileResult(-1, "", "" + e, flags=flags)
 
 class Program:
     def __init__(self, name, sources):
@@ -121,15 +124,21 @@ class Program:
 
     def link(self, compiler="ld", ldflags=["-melf_i386", "-emain"]):
         command_args = [compiler, "-o", self.name] + ldflags + [ src.name + '.o' for src in self.sources ]
-        sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        spout = sp.stdout.decode()
-        errout = sp.stderr.decode()
-        returncode = sp.returncode
-        return CompileResult(returncode, spout, errout)
+        try:
+            sp = subprocess.run(command_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            spout = sp.stdout.decode()
+            errout = sp.stderr.decode()
+            returncode = sp.returncode
+            return CompileResult(returncode, spout, errout)
+        except Exception as e:
+            return CompileResult(-1, "", "" + e)
 
     def run(self, argv):
         command_args = ['./' + self.name] + argv
-        sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
+        try:
+            sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
+        except Exception as e:
+            return "" + e
         try: 
             output = sp.stdout.decode() + sp.stderr.decode()
         except:
