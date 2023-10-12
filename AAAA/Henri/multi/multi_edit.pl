@@ -40,6 +40,7 @@ form==#|html|
                 styleActiveLine: true,
                 readOnly: readonly,
                 value: textarea.value,
+                mode: lang,
             }
         );
 
@@ -58,9 +59,9 @@ form==#|html|
         const editor = addCM({{ { 
             "id": file, 
             "content": files[file].code,
-            "readonly": files[file].readonly == "1"
+            "readonly": files[file].readonly == "1",
+            "lang": files[file].lang
         }|tojson }});
-        editor.setOption('mode', {{ files[file].lang|tojson }});
     }
     {% endfor %}
 </script>
