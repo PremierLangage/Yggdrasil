@@ -15,9 +15,11 @@ editor.code==
 beforeA==
 from parsecode import splitcode
 
-keys = splitcode("sujet.c").keys()
+keys = ""
+
 
 for k,v in splitcode("sujet.c").items():
+    keys += k
     globals()[k]=v
 
 
