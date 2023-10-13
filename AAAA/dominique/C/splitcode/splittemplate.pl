@@ -15,7 +15,7 @@ editor.code==
 beforeZ==
 from parsecode import splitcode
 
-splitcode("sujet.c")
+# splitcode("sujet.c")
 
 for k,v in splitcode("sujet.c").items():
     globals()[k]=v
