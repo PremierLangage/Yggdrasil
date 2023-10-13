@@ -4,8 +4,7 @@
 /* PL:title= tableau de pascal  */
 
 /* PL:title= Tableau Trie  */
-/* PL:text== 
-
+/* PL:text==
 Ecrire une fonction pascal(int n) qui affiche le tableau de pascal de taille n.
 Le tableau de pascal est un tableau de n lignes et n colonnes.
 La première ligne est composée de 1, la deuxième de 1 1, la troisième de 1 2 1, etc.
