@@ -31,7 +31,7 @@ def splitcode(arg):
                     dict['title']= line[6+7:-4]
                 elif line.startswith("/* PL:"):
                     state= "info"
-                    name =  (line.strip())[6:-3]
+                    name =  (line.strip())[6:-2]
                     # print(f"Starting info state :<{name}>")
                     multi="\n"
                 elif line.startswith("// PL:"):
