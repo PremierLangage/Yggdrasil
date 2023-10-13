@@ -96,7 +96,8 @@ int main(int c, char **v)
 // PL:==
 
 /* PL:checks_args_stdin==
-[["Test 1", ["11"], ""],
+[["Test 5", ["5"], ""],
+["Test 11", ["11"], ""],
 ["Test 2003", ["20"], ""],
 
 ]
