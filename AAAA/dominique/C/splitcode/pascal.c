@@ -3,7 +3,7 @@
 /* PL:title= tableau de pascal  */
 /* PL:text==
 
-Ecrire une fonction pascal(int n) qui affiche le tableau de pascal de taille n.
+Ecrire une fonction **void pascal(int n)** qui affiche le tableau de pascal de taille n.
 Le tableau de pascal est un tableau de n lignes et n colonnes.
 
 Chaque case du tableau est la somme des deux cases situées au dessus d'elle et au dessus et à gauche.
