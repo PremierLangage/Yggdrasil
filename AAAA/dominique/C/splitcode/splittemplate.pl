@@ -19,7 +19,7 @@ keys = ""
 
 
 for k,v in splitcode("sujet.c").items():
-    keys += str(k)
+    keys += " "+ str(k)
     globals()[k]=v
 
 
