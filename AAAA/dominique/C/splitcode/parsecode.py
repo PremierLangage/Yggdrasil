@@ -22,7 +22,7 @@ import sys
 
 def splitcode(arg):
     state = None
-    dict={"error":"Y a pas d'erreur"}
+    dict={}
     with open(arg,"r") as f:
         for line in f.readlines():
             if state == None:
@@ -31,16 +31,12 @@ def splitcode(arg):
                     dict['title']= line[6+7:-4]
                 elif line.startswith("/* PL:"):
                     state= "info"
-                    name =  line[6:-3]
+                    name =  (line.strip())[6:-3]
                     # print(f"Starting info state :<{name}>")
                     multi="\n"
                 elif line.startswith("// PL:"):
                     state= "code"
-                    
-                    name = line[6:].strip()
-                    while name[-1] in " =":
-                        name=name[:-1]
-                    dict['error'] += f"<{name}>" 
+                    name =  line[6:-3]
                     # print(f"Starting code state :<{name}>")
                     multi="\n"
                 continue                
