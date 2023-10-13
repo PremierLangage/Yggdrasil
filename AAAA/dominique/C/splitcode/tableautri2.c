@@ -39,7 +39,7 @@ int ajoutTrie(int *tab, int nbe, int valeur)
         return 0;
     }
     int i = 0;
-    while (i < nbe && tab[i] < valeur)
+    while (i < nbe && tab[i] > valeur)
     {
         i++;
     }
