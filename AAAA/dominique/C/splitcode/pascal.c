@@ -5,8 +5,8 @@
 
 Ecrire une fonction pascal(int n) qui affiche le tableau de pascal de taille n.
 Le tableau de pascal est un tableau de n lignes et n colonnes.
-La première ligne est composée de 1, la deuxième de 1 1, la troisième de 1 2 1, etc.
-Chaque case du tableau est la somme des deux cases situées au dessus d'elle et audessus et à gauche.
+
+Chaque case du tableau est la somme des deux cases situées au dessus d'elle et au dessus et à gauche.
 
     tab[0][0] = 1  
     tab[0][1] = 1  
@@ -18,7 +18,6 @@ Par exemple, le tableau de pascal de taille 5 est :
     1 2 1
     1 3 3 1
     1 4 6 4 1
-    1 5 10 10 5 1
 
 Attention a ne pas écrire d'espace après le dernier élément de chaque ligne.
 
