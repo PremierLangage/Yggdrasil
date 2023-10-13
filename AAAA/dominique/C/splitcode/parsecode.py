@@ -22,7 +22,7 @@ import sys
 
 def splitcode(arg):
     state = None
-    dict={"error":""}
+    dict={"error":"Y a pas d'erreur"}
     with open(arg,"r") as f:
         for line in f.readlines():
             if state == None:
