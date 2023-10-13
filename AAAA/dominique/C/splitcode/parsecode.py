@@ -40,7 +40,7 @@ def splitcode(arg):
                     name = line[6:].strip()
                     while name[-1] in " =":
                         name=name[:-1]
-                    dict['error'] += name
+                    dict['error'] += f"<{name}>" 
                     # print(f"Starting code state :<{name}>")
                     multi="\n"
                 continue                
