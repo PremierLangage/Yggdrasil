@@ -15,14 +15,14 @@ editor.code==
 beforeA==
 from parsecode import splitcode
 
-# splitcode("sujet.c")
+keys = splitcode("sujet.c").keys()
 
 for k,v in splitcode("sujet.c").items():
     globals()[k]=v
 
 
 
-raise Exception(str(globals()['text']))
+raise Exception(str(keys))
 
 
 ==
