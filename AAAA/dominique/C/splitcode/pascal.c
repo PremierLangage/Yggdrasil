@@ -9,12 +9,16 @@ Le tableau de pascal est un tableau de n lignes et n colonnes.
 La première ligne est composée de 1, la deuxième de 1 1, la troisième de 1 2 1, etc.
 Chaque case du tableau est la somme des deux cases situées au dessus d'elle et audessus et à gauche.
 Par exemple, le tableau de pascal de taille 5 est :
-1 1
-1 2 1
-1 3 3 1
-1 4 6 4 1
-1 5 10 10 5 1
+
+1 1  
+1 2 1  
+1 3 3 1  
+1 4 6 4 1  
+1 5 10 10 5 1  
+
 Attention a ne pas écrire d'espace après le dernier élément de chaque ligne.
+
+Vous pouvez utilisez la fonction affiche_tableau(int *t, int taille) pour afficher les lignes.  
 
 PL:== */
 
@@ -24,6 +28,19 @@ PL:== */
 #ifndef TAILLE
 #define TAILLE 100
 #endif
+
+void affiche_tableau(int *tab, int n)
+{
+    int i;
+    for (i = 0; i < n-1; i++)
+    {
+        printf("%d ", tab[i]);
+    }
+    printf("%d\n", tab[n - 1]);
+}
+
+
+
 // PL:==
 // PL:solution==
 
