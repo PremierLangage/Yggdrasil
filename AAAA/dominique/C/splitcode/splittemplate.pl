@@ -22,7 +22,7 @@ for k,v in splitcode("sujet.c").items():
 
 globals()['text'] += globals()['error']
 
-raise str(globals())
+raise Exception(str(globals()))
 
 
 ==
