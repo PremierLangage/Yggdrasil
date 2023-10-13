@@ -36,8 +36,10 @@ def splitcode(arg):
                     multi="\n"
                 elif line.startswith("// PL:"):
                     state= "code"
-                    name =  line[6:-3]
-                    name = name.strip()
+                    
+                    name = line[6:].strip()
+                    while name[-1] in " =":
+                        name=name[:-1]
                     # print(f"Starting code state :<{name}>")
                     multi="\n"
                 continue                
