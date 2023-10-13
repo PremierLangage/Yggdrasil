@@ -21,6 +21,7 @@ Attention a ne pas écrire d'espace après le dernier élément de chaque ligne.
 
 Vous pouvez utilisez la fonction affiche_tableau(int *t, int taille) pour afficher les lignes.  
 
+
 PL:== */
 
 // PL:code_before==
