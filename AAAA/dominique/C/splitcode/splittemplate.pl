@@ -20,9 +20,9 @@ from parsecode import splitcode
 for k,v in splitcode("sujet.c").items():
     globals()[k]=v
 
-globals()['text'] += globals()['error']
 
-raise Exception(str(globals()))
+
+raise Exception(str(globals()['error']))
 
 
 ==
