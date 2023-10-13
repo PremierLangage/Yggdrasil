@@ -12,7 +12,7 @@ editor.code==
 ==
 
 
-beforeZ==
+beforeA==
 from parsecode import splitcode
 
 # splitcode("sujet.c")
