@@ -22,5 +22,8 @@ for k,v in splitcode("sujet.c").items():
 
 globals()['text'] += globals()['error']
 
+sdfgkhldfsgjkhdl
+
+
 ==
 
