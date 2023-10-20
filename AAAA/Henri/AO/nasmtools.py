@@ -142,15 +142,5 @@ class Program:
             sp = subprocess.run(command_args, stdin=stdin, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
             self.returncode = sp.returncode
         except Exception as e:
-            return "Impossible d'exécuter le programme: " + str(e)
-        try: 
-            output = sp.stdout.decode() + sp.stderr.decode()
-        except:
-            output = "Impossible de décoder la sortie standard"
-        if -sp.returncode in signals:
-            output += "Process exited with UNIX signal ("+str(-sp.returncode)+") "+signals[-sp.returncode]
-        elif sp.returncode < 0:
-            output += "Process exited with UNIX signal ("+str(-sp.returncode)+")"
-        else:
-            output += "Process exited with return code " + str(sp.returncode)
-        return output
+            return False, "Impossible d'exécuter le programme: " + str(e)
+        return True, sp
