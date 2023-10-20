@@ -55,6 +55,11 @@ ct = theo_dict['contraposée du théorème']
 cr = theo_dict['contraposée de la réciproque du théorème']
 
 donne, quest = random.sample(list(names.keys()), 2) 
+
+group.items = []
+for k in names:
+    group.items.append({'id': k, 'content': theo_dict[k]})
+random.shuffle(group.items)
 ==
 
 title=Réciproque et contraposée
