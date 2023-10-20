@@ -26,10 +26,10 @@ import random
 
 all_theo =[{
     'contexte' : "Soit $%p%$ et $%q%$ deux propositions logiques.",
-    'théorème' : "$p \implies q$",
-    'réciproque du théoème' : "$q \implies p$",
-    'contraposée du théorème' : "$(non q) \implies (non p)$",
-    'contraposée de la réciproque du théorème' : "$(non p) \implies (non q)$"
+    'théorème' : "$%p \implies q%$",
+    'réciproque du théoème' : "$%q \implies p%$",
+    'contraposée du théorème' : "$%(non q) \implies (non p)%$",
+    'contraposée de la réciproque du théorème' : "$%(non p) \implies (non q)%$"
 }]
 
 theo_dict = random.choice(all_theo)
