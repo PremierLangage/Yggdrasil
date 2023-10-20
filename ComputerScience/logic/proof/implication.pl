@@ -58,7 +58,7 @@ cr = theo_dict['contraposée de la réciproque du théorème']
 title=Réciproque et contraposée
 
 text==
-{{ prev }}. Si est le du théorème (qui est en fait une équivalence), quelle est donc 
+{{ prev }} Si est le du théorème (qui est en fait une équivalence), quelle est donc 
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
