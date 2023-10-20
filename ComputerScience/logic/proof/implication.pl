@@ -61,7 +61,7 @@ for k in names:
 random.shuffle(group.items)
 ==
 
-title=Réciproque et contraposée
+title=Réciproque, contraposée et contraposée de la réciproque d'une équivalence 
 
 text==
 {{ prev }} Si {{ theo_dict[donne] }} est {{ names[donne] }} du théorème (qui est en fait une équivalence), quelle est donc {{ names[quest] }} ?
