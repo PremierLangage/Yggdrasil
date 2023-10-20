@@ -141,7 +141,7 @@ class Program:
         try:
             sp = subprocess.run(command_args, stdin=stdin, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
         except Exception as e:
-            raise e
+            return str(e)
         try: 
             output = sp.stdout.decode() + sp.stderr.decode()
         except:
