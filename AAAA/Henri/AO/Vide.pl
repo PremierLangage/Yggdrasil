@@ -38,7 +38,6 @@ form ==
 
 evaluator==#|python|
 import html
-import io
 
 from std_progC_utils import make_hide_block_on_click
 from nasmtools import Source, Program
