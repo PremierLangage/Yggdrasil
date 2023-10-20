@@ -28,14 +28,14 @@ all_theo =[{
     'contexte' : "Soit $%p%$ et $%q%$ deux propositions logiques.",
     'théorème' : "$%p \implies q%$",
     'réciproque du théoème' : "$%q \implies p%$",
-    'contraposée du théorème' : "$%(\not q) \implies (\not p)%$",
-    'contraposée de la réciproque du théorème' : "$%(\not p) \implies (\not q)%$"
+    'contraposée du théorème' : "$%(\neg q) \implies (\neg p)%$",
+    'contraposée de la réciproque du théorème' : "$%(\neg p) \implies (\neg q)%$"
 },{
     'contexte' : "Soit $%p%$ et $%q%$ deux propositions logiques.",
     'théorème' : "$%q \implies p%$",
     'réciproque du théoème' : "$%p \implies q%$",
-    'contraposée du théorème' : "$%(\not p) \implies (\not q)%$",
-    'contraposée de la réciproque du théorème' : "$%(\not q) \implies (\not p)%$"
+    'contraposée du théorème' : "$%(\neg p) \implies (\neg q)%$",
+    'contraposée de la réciproque du théorème' : "$%(\neg q) \implies (\neg p)%$"
 }
 ]
 
