@@ -40,7 +40,6 @@ all_theo =[{
 ]
 
 names={
-    'contexte' : "le contexte",
     'théorème' : "l'énoncé du théorème",
     'réciproque du théoème' : "la réciproque du théorème",
     'contraposée du théorème' : "la contraposée du théorème",
