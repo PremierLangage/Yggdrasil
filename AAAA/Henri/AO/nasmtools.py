@@ -140,6 +140,7 @@ class Program:
         command_args = ['./' + self.name] + argv
         try:
             sp = subprocess.run(command_args, stdin=stdin, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
+            self.returncode = sp.returncode
         except Exception as e:
             return "Impossible d'exécuter le programme: " + str(e)
         try: 
