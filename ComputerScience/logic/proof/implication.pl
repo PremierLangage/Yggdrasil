@@ -53,12 +53,14 @@ th = theo_dict['théorème']
 rt = theo_dict['réciproque du théoème']
 ct = theo_dict['contraposée du théorème']
 cr = theo_dict['contraposée de la réciproque du théorème']
+
+donne, quest = random.sample(list(names.keys()), 2) 
 ==
 
 title=Réciproque et contraposée
 
 text==
-{{ prev }} Si est le du théorème (qui est en fait une équivalence), quelle est donc 
+{{ prev }} Si {{ theo_dict[donne] }} est {{ names[donne] }} du théorème (qui est en fait une équivalence), quelle est donc {{ names[quest] }} ?
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
