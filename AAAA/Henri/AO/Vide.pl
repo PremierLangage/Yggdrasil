@@ -94,7 +94,7 @@ if not student_compile.error():
 
         terminal_log = (
               "<pre>" 
-            + html.escape("Platon@debian~$> ./student_prog " + " ".join(test_c[1])) + "\n"
+            + html.escape("Platon@debian~$> ./{{ pgr_student.name }} " + " ".join(test_c[1])) + "\n"
             + html.escape(expected_ouput)
             + "</pre>"
         )
