@@ -92,7 +92,7 @@ for item in group.items:
 
 if score == 0:
     for k in names:
-    feedback += '<br /> ' + names[k] + ' était ' + theo_dict[k] + '.<br />'
+        feedback += '<br /> ' + names[k] + ' était ' + theo_dict[k] + '.<br />'
 
 
 grade = (score, feedback)
