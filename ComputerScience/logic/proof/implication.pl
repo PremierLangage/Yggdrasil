@@ -40,7 +40,7 @@ prev = theo_dict['contexte']
 title=Réciproque et contraposée
 
 text==
-prev
+{{ prev }}
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
