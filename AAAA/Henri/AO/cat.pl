@@ -21,6 +21,9 @@ extern ecrire
 
 main:
     ; compléter
+    mov eax, 1
+    mov ebx, 0
+    int 0x80
 ==
 
 student_source = main
