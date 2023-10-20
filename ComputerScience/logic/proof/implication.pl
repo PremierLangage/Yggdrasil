@@ -81,13 +81,13 @@ feedback = '<span class="error-state animated pulse infinite">Bad answer</span>'
 for item in group.items:
     item['css'] = ''
     if item['id'] == S:
-        if S == R:
+        if S == quest:
             item['css'] = 'success-border'
             score = 100
             feedback = '<span class="success-state animated pulse infinite">Good answer</span>'
         else:
             item['css'] = 'error-border'
-    elif item['id'] == R:
+    elif item['id'] == quest:
         item['css'] = 'success-border animated pulse infinite'
 
 grade = (score, feedback)
