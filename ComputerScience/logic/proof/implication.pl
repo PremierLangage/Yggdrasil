@@ -34,8 +34,8 @@ all_theo =[{
     'contexte' : "Soit $%p%$ et $%q%$ deux propositions logiques.",
     'théorème' : "$%q \implies p%$",
     'réciproque du théoème' : "$%p \implies q%$",
-    'contraposée du théorème' : "$%(non p) \implies (non q)%$",
-    'contraposée de la réciproque du théorème' : "$%(non q) \implies (non p)%$"
+    'contraposée du théorème' : "$%(\not p) \implies (\not q)%$",
+    'contraposée de la réciproque du théorème' : "$%(\not q) \implies (\not p)%$"
 }
 ]
 
