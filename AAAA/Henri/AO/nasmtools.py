@@ -140,8 +140,8 @@ class Program:
         command_args = ['./' + self.name] + argv
         try:
             sp = subprocess.run(command_args, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
-            sb.stdin.write(stdin)
-            sb.stdin.close()
+            sp.stdin.write(stdin)
+            sp.stdin.close()
         except Exception as e:
             raise e
         try: 
