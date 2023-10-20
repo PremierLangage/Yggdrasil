@@ -87,10 +87,10 @@ if not student_compile.error():
         f_in.write(test_c[2])
         f_in.close()
         # Use the teacher solution to generated expected output of the test
-        expected_ouput = pgr_teacher.run(test_c[1])
+        expected_ouput = pgr_teacher.run(test_c[1], io.StringIO(test_c[2]))
 
         # Now execute the student programm
-        spout = pgr_student.run(test_c[1])
+        spout = pgr_student.run(test_c[1], io.StringIO(test_c[2]))
 
         terminal_log = (
               "<pre>" 
