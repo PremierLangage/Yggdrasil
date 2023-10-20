@@ -88,6 +88,8 @@ ecrire:
 
 checks_args_stdin==#|python|
 [
-    ["Test basique", [], ""],
+    ["Test 1", [], ""],
+    ["Test 2", [], "Bim badamboum"],
+    ["Test 3", [], "Bim badamboum\n" * 500],
 ]
 ==
