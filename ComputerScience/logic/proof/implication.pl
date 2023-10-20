@@ -25,7 +25,7 @@ before==#|python|
 import random
 
 all_theo =[{
-    'contexte' : "Soit $p$ et $q$ deux propositions logiques.",
+    'contexte' : "Soit $%p%$ et $%q%$ deux propositions logiques.",
     'théorème' : "$p \implies q$",
     'réciproque du théoème' : "$q \implies p$",
     'contraposée du théorème' : "$(non q) \implies (non p)$",
