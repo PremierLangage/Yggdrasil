@@ -136,10 +136,10 @@ class Program:
         except Exception as e:
             return CompileResult(-1, "", str(e), flags=ldflags)
 
-    def run(self, argv):
+    def run(self, argv, stdin):
         command_args = ['./' + self.name] + argv
         try:
-            sp = subprocess.run(command_args, stdin=open("stdin_content", "r"), stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
+            sp = subprocess.run(command_args, stdin=stdin, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
         except Exception as e:
             return str(e)
         try: 
