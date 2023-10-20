@@ -30,7 +30,14 @@ all_theo =[{
     'réciproque du théoème' : "$%q \implies p%$",
     'contraposée du théorème' : "$%(non q) \implies (non p)%$",
     'contraposée de la réciproque du théorème' : "$%(non p) \implies (non q)%$"
-}]
+},{
+    'contexte' : "Soit $%p%$ et $%q%$ deux propositions logiques.",
+    'théorème' : "$%q \implies p%$",
+    'réciproque du théoème' : "$%p \implies q%$",
+    'contraposée du théorème' : "$%(non p) \implies (non q)%$",
+    'contraposée de la réciproque du théorème' : "$%(non q) \implies (non p)%$"
+}
+]
 
 theo_dict = random.choice(all_theo)
 prev = theo_dict['contexte']
