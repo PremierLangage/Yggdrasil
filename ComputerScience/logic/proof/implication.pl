@@ -92,7 +92,7 @@ for item in group.items:
 
 if score == 0:
     feedback += '<br />'
-    for k in list(names.keys()):
+    for k in reversed(list(names.keys())):
         feedback += '<br /> ' + names[k] + ' était ' + theo_dict[k] + '.<br />'
 
 
