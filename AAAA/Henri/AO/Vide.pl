@@ -84,11 +84,14 @@ checks_data = eval(checks_args_stdin)
 
 if not student_compile.error():
     for test_c in checks_data:
+        f_in=open("stdin_content", "w")
+        f_in.write(test_c[2])
+        f_in.close()
         # Use the teacher solution to generated expected output of the test
-        expected_ouput = pgr_teacher.run(test_c[1], (test_c[2]))
+        expected_ouput = pgr_teacher.run(test_c[1], open("stdin_content"))
 
         # Now execute the student programm
-        spout = pgr_student.run(test_c[1], (test_c[2]))
+        spout = pgr_student.run(test_c[1], open("stdin_content"))
 
         terminal_log = (
               "<pre>" 
