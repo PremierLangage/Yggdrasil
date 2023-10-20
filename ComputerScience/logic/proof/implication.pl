@@ -32,12 +32,15 @@ all_theo =[{
     'contraposée de la réciproque du théorème' : "$(non p) \implies (non q)$"
 }]
 
+theo_dict = random.choice(all_theo)
+prev = theo_dict['contexte']
+
 ==
 
 title=Réciproque et contraposée
 
 text==
-
+prev
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
