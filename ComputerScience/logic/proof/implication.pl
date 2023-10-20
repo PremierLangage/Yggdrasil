@@ -40,8 +40,8 @@ all_theo =[{
     'contexte' : "Soit ABC un triangle donc la mesure des cotés opposés aux trois sommets sont $%a, b%$ et $%c%$." ,
     'théorème' : "Si Le triangle est rectangle en C, alors $% a^2 + b^2 = c^2%$",
     'réciproque du théoème' : "Si $% a^2 + b^2 = c^2%$, alors Le triangle est rectangle en C",
-    'contraposée du théorème' : "Si $% a^2 + b^2 \neq c^2%$, alors Le triangle n'est pas rectangle en C",
-    'contraposée de la réciproque du théorème' : "Si Le triangle n'est pas rectangle en C, alors $% a^2 + b^2 \neq c^2%$"
+    'contraposée du théorème' : "Si $% a^2 + b^2 \ne c^2%$, alors Le triangle n'est pas rectangle en C",
+    'contraposée de la réciproque du théorème' : "Si Le triangle n'est pas rectangle en C, alors $% a^2 + b^2 \ne c^2%$"
 }
 
 ]
@@ -71,7 +71,7 @@ random.shuffle(group.items)
 title=Réciproque et contraposée d'une implication logique 
 
 text==
-{{ prev }} Si {{ theo_dict[donne] }} est {{ names[donne] }} (qui est en fait une équivalence), quelle est donc {{ names[quest] }} ?
+{{ prev }} {{ theo_dict[donne] }} est {{ names[donne] }} (qui est en fait une équivalence), quelle est donc {{ names[quest] }} ?
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
