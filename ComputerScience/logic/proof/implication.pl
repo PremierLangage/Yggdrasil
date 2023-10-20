@@ -39,6 +39,14 @@ all_theo =[{
 }
 ]
 
+names={
+    'contexte' : "le contexte",
+    'théorème' : "l'énoncé du théorème",
+    'réciproque du théoème' : "la réciproque du théorème",
+    'contraposée du théorème' : "la contraposée du théorème",
+    'contraposée de la réciproque du théorème' : "la contraposée de la réciproque du théorème"
+}
+
 theo_dict = random.choice(all_theo)
 prev = theo_dict['contexte']
 th = theo_dict['théorème']
@@ -50,7 +58,7 @@ cr = theo_dict['contraposée de la réciproque du théorème']
 title=Réciproque et contraposée
 
 text==
-{{ prev }}
+{{ prev }}. Si {{  }} est le du théorème (qui est en fait une équivalence), quelle est donc 
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
