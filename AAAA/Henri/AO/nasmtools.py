@@ -139,8 +139,7 @@ class Program:
     def run(self, argv, stdin):
         command_args = ['./' + self.name] + argv
         try:
-            sp = subprocess.run(command_args, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
-            sp.communicate(stdin)
+            sp = subprocess.run(command_args, stdin=stdin, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=1)
         except Exception as e:
             raise e
         try: 
