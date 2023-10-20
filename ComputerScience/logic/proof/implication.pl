@@ -34,7 +34,10 @@ all_theo =[{
 
 theo_dict = random.choice(all_theo)
 prev = theo_dict['contexte']
-
+th = theo_dict['théorème']
+rt = theo_dict['réciproque du théoème']
+ct = theo_dict['contraposée du théorème']
+cr = theo_dict['contraposée de la réciproque du théorème']
 ==
 
 title=Réciproque et contraposée
