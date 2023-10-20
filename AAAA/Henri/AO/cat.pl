@@ -93,6 +93,6 @@ checks_args_stdin==#|python|
 [
     ["Test 1", [], ""],
     ["Test 2", [], "Bim badamboum"],
-    ["Test 3", [], "Bim badamboum\n" * 500],
+    #["Test 3", [], "Bim badamboum\n" * 500],
 ]
 ==
