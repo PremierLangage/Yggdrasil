@@ -73,7 +73,7 @@ form==
 ==
 
 # EVALUATE THE STUDENT ANSWER
-evaluator==
+evaluator==#|python|
 S = group.selection
 score = 0
 feedback = '<span class="error-state animated pulse infinite">Bad answer</span>'
@@ -89,6 +89,11 @@ for item in group.items:
             item['css'] = 'error-border'
     elif item['id'] == quest:
         item['css'] = 'success-border animated pulse infinite'
+
+if score == 0:
+    for k in names:
+    feedback += '<br /> ' + names[k] + ' était ' + theo_dict[k] + '.<br />'
+
 
 grade = (score, feedback)
 ==
