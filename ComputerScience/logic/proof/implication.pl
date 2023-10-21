@@ -104,9 +104,10 @@ for item in group.items:
         item['css'] = 'success-border animated pulse infinite'
 
 if score == 0:
-    feedback += '<br />'
+    feedback += '<br /><div class="error-state">'
     for k in reversed(list(names.keys())):
         feedback += '<br /> ' + names[k] + ' était ' + theo_dict[k] + '.<br />'
+    feedback += '</div>'
 
 
 grade = (score, feedback)
