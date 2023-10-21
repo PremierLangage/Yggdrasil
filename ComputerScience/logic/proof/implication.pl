@@ -103,7 +103,7 @@ for item in group.items:
             item['css'] = 'success-border'
             score = 100
             feedback = '<span class="success-state animated pulse infinite" style="padding: 5px;">Bonne r&eacute;ponse</span>'
-            feedback += '<br /><br /><div class="success-state">'
+            feedback += '<br /><br /><div class="success-state" style="padding: 5px;">'
             for k in reversed(list(names.keys())):
                 feedback += '<br /> ' + names[k] + ' était : ' + theo_dict[k] + '.<br />'
             feedback += '</div>'
@@ -113,7 +113,7 @@ for item in group.items:
         item['css'] = 'success-border animated pulse infinite'
 
 if score == 0:
-    feedback += '<br /><br /><div class="error-state">'
+    feedback += '<br /><br /><div class="error-state" style="padding: 5px;">'
     for k in reversed(list(names.keys())):
         feedback += '<br /> ' + names[k] + ' était : ' + theo_dict[k] + '.<br />'
     feedback += '</div>'
