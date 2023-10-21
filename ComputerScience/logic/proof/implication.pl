@@ -79,6 +79,8 @@ for k in names:
 random.shuffle(group.items)
 ==
 
+author=Nicolas Borie
+
 title=Réciproque et contraposée d'une implication logique 
 
 text==
