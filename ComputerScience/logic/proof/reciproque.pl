@@ -37,8 +37,7 @@ list_imply_bad=["Si Jacques est titulaire du permis voiture en France, alors Jac
 "Si Akim est le père d'un garçon et d'une fille, alors Akim a au moins deux enfants."]
 
 nb_good = random.randint(2, 4)
-nb_good = 4
-nb_bad = 4
+nb_bad = 6 - nb_good
 group.items = []
 for ind in random.sample(list(range(len(list_imply_good))), nb_good):
     group.items.append({"id": str(ind), "content": list_imply_good[ind]})
