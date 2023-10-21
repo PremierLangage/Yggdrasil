@@ -35,7 +35,7 @@ list_imply_bad=["Si Jacques est titulaire du permis voiture en France, alors Jac
 "Si les extra-terrestres n'existent pas, alors personnes ne peut les avoir rencontré.",
 "Si un phénomène est impossible, alors personne ne peut l'avoir vu.",
 "Si Akim est le père d'un garçon et d'une fille, alors Akim a au moins deux enfants.",
-"Si `L` est une liste d'entiers Python triée de manière croissante, alors `L[0]` est le minimum de la liste et `L[-1]` le maximum."]
+"Si `L` est une liste d'entiers Python triée de manière croissante, alors `L[0]` est le minimum de la liste et `L[-1]` est le maximum."]
 
 total = 6
 nb_good = random.randint(2, 4)
