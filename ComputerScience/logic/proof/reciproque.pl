@@ -36,7 +36,7 @@ list_imply_bad=["Si Jacques est titulaire du permis voiture en France, alors Jac
 "Si un phénomène est impossible, alors personne ne peut l'avoir vu.",
 "Si Akim est le père d'un garçon et d'une fille, alors Akim a au moins deux enfants."]
 
-nb_good = rindom.randint(2, 4)
+nb_good = random.randint(2, 4)
 nb_good = 4
 nb_bad = 4
 group.items = []
