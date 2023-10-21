@@ -53,6 +53,11 @@ author=Nicolas Borie
 title=Réciproque ou simple implication
 
 text==
+Dans cet exercice, on vous propose des implications qui peuvent être mathématiques, 
+informatiques ou logiques. Ces propositions sont à considérer comme correctes. On 
+rappelle que pour une implication du type $%P \\implies Q%$, sa réciproque 
+désigne l'implication $%Q \\implies P%$.
+
 Parmi les implications suivantes, sélectionner celles dont la réciproque est vraie.
 ==
 
