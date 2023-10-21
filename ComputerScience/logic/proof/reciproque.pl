@@ -78,8 +78,8 @@ for item in group.items:
 
 
 if total == 0:
-    grade = (100, 'Right')
+    grade = (100, '<span class="success-state animated pulse infinite" style="padding: 5px;">Bonne r&eacute;ponse</span>')
 else:
-    grade = ((right / total) * 100, f"{right} / {total}")
+    grade = ((right / total) * 100, '<span class="error-state animated pulse infinite" style="padding: 5px;">Mauvaise r&eacute;ponse</span>')
 ==
 
