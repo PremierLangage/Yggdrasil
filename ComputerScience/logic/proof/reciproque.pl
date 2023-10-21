@@ -64,17 +64,17 @@ form==
 # EVALUATE THE STUDENT ANSWER
 evaluator==#|python|
 right = 0
-total = 0
 for item in group.items:
     checked = item['checked']
     if int(item['id']) < 20:
-        total += 1
         item['css'] = 'success-border animated pulse infinite'
         if checked:
             right += 1
             item['css'] = 'success-border'
     elif checked:
         item['css'] = 'error-border'
+    else:
+        right += 1
 
 
 if total == 0:
