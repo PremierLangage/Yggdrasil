@@ -27,7 +27,8 @@ import random
 
 list_imply_good=["Si un nombre $%n%$ est pair, alors le reste de la division euclidienne de $%n%$ par $%2%$ est $%0%$.",
 "Si le reste de la division euclidienne de $%n%$ par $%7%$ est non nul, alors $%n%$ n'est pas un multiple de $%7%$.",
-"Si Marc a réussi l'examen du permis voiture en France, alors Marc a le droit de conduire une voiture en France."]
+"Si Marc a réussi l'examen du permis voiture en France, alors Marc a le droit de conduire une voiture en France.",
+"Si la suite- $%(U_n)_{n \in \mathbb{N}}%$ est bornée, alors la suite $%(U_n)_{n \in \mathbb{N}}%$ est minorée et majorée."]
 
 list_imply_bad=["Si Jacques est titulaire du permis voiture en France, alors Jacques a au moins 18 ans.",
 "S'il y a un nombre impair de participants à la soirée, c'est qu'un moins une personne à minima n'est pas venu en couple.",
@@ -35,13 +36,14 @@ list_imply_bad=["Si Jacques est titulaire du permis voiture en France, alors Jac
 "Si un phénomène est impossible, alors personne ne peut l'avoir vu.",
 "Si Akim est le père d'un garçon et d'une fille, alors Akim a au moins deux enfants."]
 
-nb_good = randint(2, 4)
+nb_good = rindom.randint(2, 4)
+nb_good = 4
+nb_bad = 4
 group.items = []
-for i in range(4):
-    group.items.append({
-        "id": str(i),
-        "content": str(random.randint(0, 100))
-    })
+for ind in random.sample(list(range(len(list_imply_good))), nb_good):
+    group.items.append({"id": str(ind), "content": list_imply_good[ind]})
+for ind in random.sample(list(range(len(list_imply_bad))), nb_bad):
+    group.items.append({"id": str(20+ind), "content": list_imply_bad[ind]})
 
 random.shuffle(group.items)
 ==
