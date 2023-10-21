@@ -97,7 +97,7 @@ for item in group.items:
         if S == quest:
             item['css'] = 'success-border'
             score = 100
-            feedback = '<span class="success-state animated pulse infinite">Bonne r&eacute;ponse</span>'
+            feedback = '<span class="success-state animated pulse infinite" style="padding: 5px;">Bonne r&eacute;ponse</span>'
         else:
             item['css'] = 'error-border'
     elif item['id'] == quest:
