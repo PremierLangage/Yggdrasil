@@ -45,9 +45,9 @@ all_theo =[{
 },{
     'contexte' : "Soit $%5%$ points du plan tel que les triplets $%O, A, B%$ et $%O, P, Q%$ soient alignés (c'est à dire une configuration de type Thalès).",
     'théorème' : "Si les droites $%(AP)%$ et $%(BQ)%$ sont parallèles, alors on a l'égalité des rapports $% \\frac{OA}{OP} = \\frac{OB}{OQ} = \\frac{AB}{PQ} %$",
-    'réciproque du théoème' : "Si on a l'égalité des rapports $%\frac{OA}{OP} = \frac{OB}{OQ} = \frac{AB}{PQ}%$, alors les droites $%(AP)%$ et $%(BQ)%$ sont parallèles",
-    'contraposée du théorème' : "Si on n'a pas l'égalité des rapports $%\frac{OA}{OP} = \frac{OB}{OQ} = \frac{AB}{PQ}%$, alors les droites $%(AP)%$ et $%(BQ)%$ ne peuvent pas être parallèles",
-    'contraposée de la réciproque du théorème' : "Si les droites $%(AP)%$ et $%(BQ)%$ ne sont pas parallèles, alors on ne peut pas avoir l'égalité des rapports $%\frac{OA}{OP} = \frac{OB}{OQ} = \frac{AB}{PQ}%$"
+    'réciproque du théoème' : "Si on a l'égalité des rapports $% \\frac{OA}{OP} = \\frac{OB}{OQ} = \\frac{AB}{PQ}%$, alors les droites $%(AP)%$ et $%(BQ)%$ sont parallèles",
+    'contraposée du théorème' : "Si on n'a pas l'égalité des rapports $% \\frac{OA}{OP} = \\frac{OB}{OQ} = \\frac{AB}{PQ}%$, alors les droites $%(AP)%$ et $%(BQ)%$ ne peuvent pas être parallèles",
+    'contraposée de la réciproque du théorème' : "Si les droites $%(AP)%$ et $%(BQ)%$ ne sont pas parallèles, alors on ne peut pas avoir l'égalité des rapports $% \\frac{OA}{OP} = \\frac{OB}{OQ} = \\frac{AB}{PQ} %$"
 }
 
 ]
