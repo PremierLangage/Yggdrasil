@@ -31,11 +31,11 @@ all_theo =[{
     'contraposée du théorème' : "$% \lnot q \implies \lnot p %$",
     'contraposée de la réciproque du théorème' : "$% \lnot p \implies \lnot q %$"
 },{
-    'contexte' : "Soit $%p%$ et $%q%$ deux propositions logiques.",
-    'théorème' : "$%q \implies p%$",
-    'réciproque du théoème' : "$%p \implies q%$",
-    'contraposée du théorème' : "$% \lnot p \implies \lnot q %$",
-    'contraposée de la réciproque du théorème' : "$% \lnot q \implies \lnot p %$"
+    'contexte' : "Soit $%A%$ et $%B%$ deux propositions logiques.",
+    'théorème' : "$%B \implies A%$",
+    'réciproque du théoème' : "$%A \implies B%$",
+    'contraposée du théorème' : "$% \lnot A \implies \lnot B %$",
+    'contraposée de la réciproque du théorème' : "$% \lnot B \implies \lnot A %$"
 },{
     'contexte' : "Soit $%ABC%$ un triangle donc la mesure des cotés opposés aux trois sommets sont $%a, b%$ et $%c%$." ,
     'théorème' : "Si Le triangle est rectangle en C, alors $% a^2 + b^2%$ vaut $%c^2%$",
@@ -43,11 +43,11 @@ all_theo =[{
     'contraposée du théorème' : "Si $% a^2 + b^2%$ ne vaut pas $%c^2%$, alors Le triangle n'est pas rectangle en C",
     'contraposée de la réciproque du théorème' : "Si Le triangle n'est pas rectangle en C, alors $% a^2 + b^2%$ ne vaut pas $%c^2%$ "
 },{
-    'contexte' : "" ,
-    'théorème' : "Si Le triangle est rectangle en C, alors $% a^2 + b^2%$ vaut $%c^2%$",
-    'réciproque du théoème' : "Si $% a^2 + b^2%$ vaut $%c^2%$, alors Le triangle est rectangle en C",
-    'contraposée du théorème' : "Si $% a^2 + b^2%$ ne vaut pas $%c^2%$, alors Le triangle n'est pas rectangle en C",
-    'contraposée de la réciproque du théorème' : "Si Le triangle n'est pas rectangle en C, alors $% a^2 + b^2%$ ne vaut pas $%c^2%$ "
+    'contexte' : "Soit $%5%$ points du plan tel que les triplets $%O, A, B%$ et $%O, P, Q%$ soient alignés (c'est à dire une configuration de type Thalès).,
+    'théorème' : "Si les droites $%(AP)%$ et $%(BQ)%$ sont parallèles, alors on a l'égalité des rapports $%\frac{OA}{OP} = \frac{OB}{OQ} = \frac{AB}{PQ}%$",
+    'réciproque du théoème' : "Si on a l'égalité des rapports $%\frac{OA}{OP} = \frac{OB}{OQ} = \frac{AB}{PQ}%$, alors les droites $%(AP)%$ et $%(BQ)%$ sont parallèles",
+    'contraposée du théorème' : "Si on n'a pas l'égalité des rapports $%\frac{OA}{OP} = \frac{OB}{OQ} = \frac{AB}{PQ}%$, alors les droites $%(AP)%$ et $%(BQ)%$ ne peuvent pas être parallèles",
+    'contraposée de la réciproque du théorème' : "Si les droites $%(AP)%$ et $%(BQ)%$ ne sont pas parallèles, alors on ne peut pas avoir l'égalité des rapports $%\frac{OA}{OP} = \frac{OB}{OQ} = \frac{AB}{PQ}%$"
 }
 
 ]
