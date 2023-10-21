@@ -48,8 +48,13 @@ all_theo =[{
     'réciproque du théoème' : "Si on a l'égalité des rapports $% \\frac{OA}{OP} = \\frac{OB}{OQ} = \\frac{AB}{PQ}%$, alors les droites $%(AP)%$ et $%(BQ)%$ sont parallèles",
     'contraposée du théorème' : "Si on n'a pas l'égalité des rapports $% \\frac{OA}{OP} = \\frac{OB}{OQ} = \\frac{AB}{PQ}%$, alors les droites $%(AP)%$ et $%(BQ)%$ ne peuvent pas être parallèles",
     'contraposée de la réciproque du théorème' : "Si les droites $%(AP)%$ et $%(BQ)%$ ne sont pas parallèles, alors on ne peut pas avoir l'égalité des rapports $% \\frac{OA}{OP} = \\frac{OB}{OQ} = \\frac{AB}{PQ} %$"
+},{
+    'contexte' : "Soit $%n%$ un entier n'aturel, on s'intéresse à la parité de $%n%$.",
+    'théorème' : "Si $%n%$ est pair, alors le reste de la division euclidienne de $%n%$ par $%2%$ est $%0%$",
+    'réciproque du théoème' : "Si le reste de la division euclidienne de $%n%$ par $%2%$ est $%0%$, alors $%n%$ est pair",
+    'contraposée du théorème' : "Si le reste de la division euclidienne de $%n%$ par $%2%$ n'est pas $%0%$, alors $%n%$ n'est pas pair",
+    'contraposée de la réciproque du théorème' : "Si $%n%$ n'est pas pair, alors le reste de la division euclidienne de $%n%$ par $%2%$ ne peut pas être $%0%$"
 }
-
 ]
 
 names={
