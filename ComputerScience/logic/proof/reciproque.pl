@@ -67,7 +67,7 @@ total = 0
 for item in group.items:
     checked = item['checked']
     content = int(item['content'])
-    if content % 2 == 0:
+    if item['id'] < 20:
         total += 1
         item['css'] = 'success-border animated pulse infinite'
         if checked:
