@@ -58,6 +58,7 @@ informatiques ou logiques. Ces propositions sont à considérer comme correctes.
 rappelle que pour une implication du type $%P \\implies Q%$, sa réciproque 
 désigne l'implication $%Q \\implies P%$.
 
+
 Parmi les implications suivantes, sélectionner celles dont la réciproque est vraie.
 ==
 
