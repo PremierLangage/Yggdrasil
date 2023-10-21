@@ -37,7 +37,13 @@ all_theo =[{
     'contraposée du théorème' : "$% \lnot p \implies \lnot q %$",
     'contraposée de la réciproque du théorème' : "$% \lnot q \implies \lnot p %$"
 },{
-    'contexte' : "Soit ABC un triangle donc la mesure des cotés opposés aux trois sommets sont $%a, b%$ et $%c%$." ,
+    'contexte' : "Soit $%ABC%$ un triangle donc la mesure des cotés opposés aux trois sommets sont $%a, b%$ et $%c%$." ,
+    'théorème' : "Si Le triangle est rectangle en C, alors $% a^2 + b^2%$ vaut $%c^2%$",
+    'réciproque du théoème' : "Si $% a^2 + b^2%$ vaut $%c^2%$, alors Le triangle est rectangle en C",
+    'contraposée du théorème' : "Si $% a^2 + b^2%$ ne vaut pas $%c^2%$, alors Le triangle n'est pas rectangle en C",
+    'contraposée de la réciproque du théorème' : "Si Le triangle n'est pas rectangle en C, alors $% a^2 + b^2%$ ne vaut pas $%c^2%$ "
+},{
+    'contexte' : "" ,
     'théorème' : "Si Le triangle est rectangle en C, alors $% a^2 + b^2%$ vaut $%c^2%$",
     'réciproque du théoème' : "Si $% a^2 + b^2%$ vaut $%c^2%$, alors Le triangle est rectangle en C",
     'contraposée du théorème' : "Si $% a^2 + b^2%$ ne vaut pas $%c^2%$, alors Le triangle n'est pas rectangle en C",
