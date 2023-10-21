@@ -22,22 +22,36 @@ builder =@ /builder/before.py
 group =: CheckboxGroup
 
 # GENERATE A RANDOM QUESTION
-before==
+before==#|python|
 import random
+
+list_imply_good=["Si un nombre $%n%$ est pair, alors le reste de la division euclidienne de $%n%$ par $%2%$ est $%0%$.",
+"Si le reste de la division euclidienne de $%n%$ par $%7%$ est non nul, alors $%n%$ n'est pas un multiple de $%7%$.",
+"Si Marc a réussi l'examen du permis voiture en France, alors Marc a le droit de conduire une voiture en France."]
+
+list_imply_bad=["Si Jacques est titulaire du permis voiture en France, alors Jacques a au moins 18 ans.",
+"S'il y a un nombre impair de participants à la soirée, c'est qu'un moins une personne à minima n'est pas venu en couple.",
+"Si les extra-terrestres n'existent pas, alors personnes ne peut les avoir rencontré.",
+"Si un phénomène est impossible, alors personne ne peut l'avoir vu.",
+"Si Akim est le père d'un garçon et d'une fille, alors Akim a au moins deux enfants."]
+
+nb_good = randint(2, 4)
 group.items = []
 for i in range(4):
     group.items.append({
         "id": str(i),
         "content": str(random.randint(0, 100))
     })
+
+random.shuffle(group.items)
 ==
 
 author=Nicolas Borie
 
-title = Checkbox Group Component
+title=Réciproque ou simple implication
 
 text==
-Select even numbers.
+Parmi les implications suivantes, sélectionner celles dont la réciproque est vraie.
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
@@ -46,7 +60,7 @@ form==
 ==
 
 # EVALUATE THE STUDENT ANSWER
-evaluator==
+evaluator==#|python|
 right = 0
 total = 0
 for item in group.items:
