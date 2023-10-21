@@ -77,7 +77,7 @@ for item in group.items:
         right += 1
 
 
-if total == 0:
+if right == total:
     grade = (100, '<span class="success-state animated pulse infinite" style="padding: 5px;">Bonne r&eacute;ponse</span>')
 else:
     grade = ((right / total) * 100, '<span class="error-state animated pulse infinite" style="padding: 5px;">Mauvaise r&eacute;ponse</span>')
