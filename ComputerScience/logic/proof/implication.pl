@@ -89,7 +89,7 @@ form==
 evaluator==#|python|
 S = group.selection
 score = 0
-feedback = '<span class="error-state animated pulse infinite">Bad answer</span>'
+feedback = '<span class="error-state animated pulse infinite">Mauvaise r&eacute;ponse</span>'
 
 for item in group.items:
     item['css'] = ''
@@ -97,7 +97,7 @@ for item in group.items:
         if S == quest:
             item['css'] = 'success-border'
             score = 100
-            feedback = '<span class="success-state animated pulse infinite">Good answer</span>'
+            feedback = '<span class="success-state animated pulse infinite">Bonne r&eacute;ponse</span>'
         else:
             item['css'] = 'error-border'
     elif item['id'] == quest:
