@@ -34,6 +34,9 @@ sortlist.items %= #|json|
 # RANDOMIZATION
 before== #|python|
 import random
+
+url_img = str(url_img_triangle)
+
 import uuid
 answer = []
 for e in sortlist.items:
@@ -51,7 +54,7 @@ title=Réordonner une preuve
 text==#|markdown|
 Soit ABC un triangle tel que l'angle
 
-<img src="{{ str(url_img_triangle) }}" alt="image de l'énoncé avec le triangle ABC"/>
+<img src="{{ url_img }}" alt="image de l'énoncé avec le triangle ABC"/>
 ==
 
 form={{ sortlist|component }}
