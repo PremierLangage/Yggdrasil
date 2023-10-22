@@ -37,12 +37,12 @@ str_url = str(targets[target])
 R = str(target)
 
 contents = [
-    "la formule $% \\quad 1^3 + 2^3 + 3^3 + 4^3 + 5^3 + \\dots = (1 + 2 + 3 + 4 + 5 + \\dots )^2%$",
-    "la formule $% \\quad 1 + 2 + 3 + 4 + 5 + \\dots + n = \\frac{n(n+1)}{2}%$",
-    "",
-    "",
-    "",
-    ""
+    "La formule $% \\quad 1^3 + 2^3 + 3^3 + 4^3 + 5^3 + \\dots = (1 + 2 + 3 + 4 + 5 + \\dots )^2%$",
+    "La formule $% \\quad 1 + 2 + 3 + 4 + 5 + \\dots + n = \\frac{n(n+1)}{2}%$",
+    "La formule $% \\quad 1 + 2 + 3 + 4 + 5 + \\dots + n = \\frac{n^2}{2} + \\frac{n}{2}%$",
+    "La formule $% \\quad 1 + 3 + 5 + 7 + 9 + \\dots + (2n+1) = n^2%$",
+    "Le théorème de pythagore avec son égalité $% a^2 + b^2 = c^2 %$",
+    "La formule $% \\quad 1^2 + 2^2 + 3^2 + 4^2 + 5^2 + \\dots = \\frac{n(n+1)(n+\\frac{1/2})}{3}%$"
 ]
 
 group.items = []
