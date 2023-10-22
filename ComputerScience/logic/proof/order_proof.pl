@@ -25,9 +25,9 @@ sortlist =: SortList
 
 sortlist.items %= #|json|
 [
-    { "id": "", "content": "First Item" },
-    { "id": "", "content": "Second Item" },
-    { "id": "", "content": "Third Item" }
+    { "id": "", "content": "Dans tout triangle, la somme de la mesure des angles est 180 degrés." },
+    { "id": "", "content": "Appliqué au triangle ABC, on en déduit " },
+    { "id": "", "content": "" }
 ]
 ==
 
@@ -37,13 +37,6 @@ import random
 
 url_img = str(url_img_triangle)
 
-import uuid
-answer = []
-for e in sortlist.items:
-    # generate random id because students can
-    # guest the answer if ids like 1, 2, 3 are used
-    e["id"] = uuid.uuid4()
-    answer.append(e["id"])
 random.shuffle(sortlist.items)
 ==
 
