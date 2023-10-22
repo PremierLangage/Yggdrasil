@@ -52,7 +52,7 @@ for i in range(len(targets)):
 random.shuffle(group.items)
 ==
 
-title=Preuve visuelle de résultat
+title=Preuve visuelle en mathématiques
 
 text==#|markdown|
 Voici un schéma qui est une preuve visuelle d'un résultat mathématique. Selectionner le 
