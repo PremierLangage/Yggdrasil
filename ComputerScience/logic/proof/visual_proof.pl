@@ -51,10 +51,13 @@ for i in range(len(targets)):
 random.shuffle(group.items)
 ==
 
-title = Radio Group Component
+title=Preuve visuelle de résultat
 
-text==
-Select the result of **{{ A }}** x **{{ B }}**.
+text==#|markdown|
+Voici un schéma qui est une preuve visuelle d'un résultat mathématique. Selectionner le 
+phénomène justifié graphiquement par le dessin.
+
+<img src="{{ targets[traget] }}" alt="Une preuve sous forme d'un schéma" />
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
