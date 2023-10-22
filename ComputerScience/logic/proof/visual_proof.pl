@@ -38,7 +38,7 @@ R = str(target)
 
 contents = [
     "la formule $% \\quad 1^3 + 2^3 + 3^3 + 4^3 + 5^3 + \\dots = (1 + 2 + 3 + 4 + 5 + \\dots )^2%$",
-    "",
+    "la formule $% \\quad 1 + 2 + 3 + 4 + 5 + \\dots + n = \\frac{n(n+1)}{2}%$",
     "",
     "",
     "",
