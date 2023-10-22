@@ -52,6 +52,8 @@ for i in range(len(targets)):
 random.shuffle(group.items)
 ==
 
+author=Nicolas Borie
+
 title=Preuve visuelle en mathématiques
 
 text==#|markdown|
