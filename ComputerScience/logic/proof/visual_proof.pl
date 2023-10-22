@@ -58,7 +58,7 @@ text==#|markdown|
 Voici un schéma qui est une preuve visuelle d'un résultat mathématique. Selectionner le 
 phénomène justifié graphiquement par le dessin.
 
-<img src="{{ str_url }}" alt="Une preuve sous forme d'un schéma" width="50%s"/>
+<img src="{{ str_url }}" alt="Une preuve sous forme d'un schéma" width="50%;"/>
 ==
 
 # PRESENT THE QUESTION TO THE STUDENT
