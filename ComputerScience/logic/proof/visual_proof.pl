@@ -42,7 +42,7 @@ contents = [
     "La formule $% \\quad 1 + 2 + 3 + 4 + 5 + \\dots + n = \\frac{n^2}{2} + \\frac{n}{2}%$",
     "La formule $% \\quad 1 + 3 + 5 + 7 + 9 + \\dots + (2n+1) = n^2%$",
     "Le théorème de pythagore avec son égalité $% a^2 + b^2 = c^2 %$",
-    "La formule $% \\quad 1^2 + 2^2 + 3^2 + 4^2 + 5^2 + \\dots = \\frac{ n ( n+1 ) ( n+\\frac{1}{2} ) }{3}%$"
+    "La formule $% \\quad 1^2 + 2^2 + 3^2 + 4^2 + 5^2 + \\dots + n^2 = \\frac{ n ( n+1 ) ( n+\\frac{1}{2} ) }{3}%$"
 ]
 
 group.items = []
@@ -81,7 +81,7 @@ for item in group.items:
             feedback = '<span class="success-state animated pulse infinite" style="padding: 5px;">Bonne r&eacute;ponse</span>'
         else:
             item['css'] = 'error-border'
-    elif item['id'] == quest:
+    elif item['id'] == R:
         item['css'] = 'success-border animated pulse infinite'
 
 grade = (score, feedback)
