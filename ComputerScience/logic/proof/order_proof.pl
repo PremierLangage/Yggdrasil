@@ -18,6 +18,8 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+url_img_triangle =$ /ComputerScience/logic/proof/img/triangle.png
+
 # DECLARATION
 sortlist =: SortList
 
@@ -46,7 +48,11 @@ author=Nicolas Borie
 
 title=Réordonner une preuve
 
-text=Drag and Drop the items to sort the list
+text==#|markdown|
+Soit ABC un triangle tel que l'angle
+
+{{ url_img_triangle }}
+==
 
 form={{ sortlist|component }}
 
