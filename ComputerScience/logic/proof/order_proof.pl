@@ -51,7 +51,7 @@ title=Réordonner une preuve
 text==#|markdown|
 Soit ABC un triangle tel que l'angle
 
-{{ url_img_triangle }}
+<img src="{{ str(url_img_triangle) }}" alt="image de l'énoncé avec le triangle ABC"/>
 ==
 
 form={{ sortlist|component }}
