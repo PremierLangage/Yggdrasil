@@ -25,9 +25,15 @@ text=f"""
 
 Programmer une fonction **oui_mais(n)** qui teste si un entier n est divisible par {tx1} mais pas par {tx2}. <br>
 """
-
+val = 17
 pltest= f"""
->>> oui_mais(17) == ((17 % {nb1} ==0) and (17 % {nb2} != 0))# Facile
+>>> oui_mais({val}) == (({val} % {nb1} ==0) and ({val} % {nb2} != 0))# Facile
+True
+"""
+for i in range(4):
+    val = random.randint(3,700)
+    global()[f"pltest{i}"]=f"""
+>>> oui_mais({val}) == (({val} % {nb1} ==0) and ({val} % {nb2} != 0))# Facile
 True
 """
 
