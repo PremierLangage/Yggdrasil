@@ -25,12 +25,12 @@ sortlist =: SortList
 
 sortlist.items %= #|json|
 [
-    { "id": "1", "content": "Hypothèse : $%ABC%$ est un triangle dont la mesure des angles est $%x, 2x%$ et $%3x%$ ($%x%$ étant inconnu)."},
-    { "id": "2", "content": "Dans tout triangle, la somme de la mesure des angles est 180 degrés."},
-    { "id": "3", "content": "Appliqué au triangle ABC, on en déduit l'équation $% 3x + 2x + x = 180%$."},
-    { "id": "4", "content": "Résolvant l'équation, on obtient $%6x = 180%$ et donc $%x = 30%$."},
-    { "id": "5", "content": "Cette valeur de $%x%$ reporté au contexte fait que le triangle $%ABC%$ a un angle de mesure $%3x = 90%$ degrés."},
-    { "id": "6", "content": "Conclusion : Le triangle $%ABC%$ est bien rectangle en $%A%$."}
+    { "id": "0", "content": "Hypothèse : $%ABC%$ est un triangle dont la mesure des angles est $%x, 2x%$ et $%3x%$ ($%x%$ étant inconnu)."},
+    { "id": "1", "content": "Dans tout triangle, la somme de la mesure des angles est 180 degrés."},
+    { "id": "2", "content": "Appliqué au triangle ABC, on en déduit l'équation $% 3x + 2x + x = 180%$."},
+    { "id": "3", "content": "Résolvant l'équation, on obtient $%6x = 180%$ et donc $%x = 30%$."},
+    { "id": "4", "content": "Cette valeur de $%x%$ reporté au contexte fait que le triangle $%ABC%$ a un angle de mesure $%3x = 90%$ degrés."},
+    { "id": "5", "content": "Conclusion : Le triangle $%ABC%$ est bien rectangle en $%A%$."}
 ]
 ==
 
@@ -63,7 +63,7 @@ evaluator== #|python|
 errors = 0
 for i, e in enumerate(sortlist.items):
     e['css'] = 'success-state animated fadeIn'
-    if e['id'] != answer[i]:
+    if e['id'] != str(i):
         e['css'] = 'error-state animated fadeIn'
         errors += 1
 
