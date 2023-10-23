@@ -48,6 +48,18 @@ author=Nicolas Borie
 title=Réordonner une preuve
 
 text==#|markdown|
+Pour recherche le maximum dans une liste Python d'entier, un élève a produit la fonction suivante :
+
+```Python
+def max_liste(L):
+    if L == []:
+        return None
+    max_courrant = L[0]
+    for e in L:
+        if e > max_courrant:
+            max_courrant = e
+    return max_courrant
+```
 
 ==
 
