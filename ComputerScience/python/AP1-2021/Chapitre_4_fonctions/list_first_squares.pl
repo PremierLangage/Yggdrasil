@@ -14,7 +14,7 @@ code==
 #
 #
 #
-?? = ??(input("Saisisez un entier :"))
+?? = ??(input("Saisissez un entier :"))
 #
 ==
 
@@ -48,7 +48,7 @@ def premiers_carres(k) :
         sum+=carre(i)
     return sum
 
-n = int(input())
+n = int(input("Saisissez un entier :"))
 print(premiers_carres(n))
 ==
 before==
