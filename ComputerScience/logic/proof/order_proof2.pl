@@ -23,14 +23,25 @@ url_img_triangle =$ /ComputerScience/logic/proof/img/triangle.png
 # DECLARATION
 sortlist =: SortList
 
+editor =: CodeEditor
+editor.theme = dark
+editor.language = python
+editor.code==#|python|
+def max_liste(L):
+    if L == []:
+        return None
+    max_courrant = L[0]
+    for e in L:
+        if e > max_courrant:
+            max_courrant = e
+    return max_courrant
+==
+
+
 sortlist.items %= #|json|
 [
-    { "id": "0", "content": "Hypothèse : $%ABC%$ est un triangle dont la mesure des angles est $%x, 2x%$ et $%3x%$ ($%x%$ étant inconnu)."},
-    { "id": "1", "content": "Dans tout triangle, la somme de la mesure des angles est 180 degrés."},
-    { "id": "2", "content": "Appliqué au triangle ABC, on en déduit l'équation $% 3x + 2x + x = 180%$."},
-    { "id": "3", "content": "Résolvant l'équation, on obtient $%6x = 180%$ et donc $%x = 30%$."},
-    { "id": "4", "content": "Cette valeur de $%x%$ reportée au contexte fait que le triangle $%ABC%$ a un angle de mesure $%3x = 90%$ degrés en $%A%$."},
-    { "id": "5", "content": "Conclusion : Le triangle $%ABC%$ est bien rectangle en $%A%$."}
+    { "id": "0", "content": "Hypothèse : L est une liste Python contenant un nombre fini d'élément."},
+    { "id": "1", "content": "Dans tout triangle, la somme de la mesure des angles est 180 degrés."}
 ]
 ==
 
@@ -50,17 +61,7 @@ title=Réordonner une preuve
 text==#|markdown|
 Pour recherche le maximum dans une liste Python d'entier, un élève a produit la fonction suivante :
 
-```{#mycode .Python}
-def max_liste(L):
-    if L == []:
-        return None
-    max_courrant = L[0]
-    for e in L:
-        if e > max_courrant:
-            max_courrant = e
-    return max_courrant
-```
-
+{{ editor|component }}
 ==
 
 form={{ sortlist|component }}
