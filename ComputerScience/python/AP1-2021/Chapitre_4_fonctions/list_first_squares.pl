@@ -48,7 +48,7 @@ def premiers_carres(k) :
         sum+=carre(i)
     return sum
 
-n = int(input("Saisissez un entier :"))
+n = int(input())
 print(premiers_carres(n))
 ==
 before==
