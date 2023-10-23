@@ -48,7 +48,10 @@ def carre(n):
 ==
 editor.height=145
 
-
+code==
+def carre(n):
+    return n*6
+==
 
 
 
