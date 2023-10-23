@@ -50,7 +50,7 @@ title=Réordonner une preuve
 text==#|markdown|
 Pour recherche le maximum dans une liste Python d'entier, un élève a produit la fonction suivante :
 
-```Python
+```.mycode{Python}
 def max_liste(L):
     if L == []:
         return None
