@@ -53,6 +53,8 @@ issue de B a pour mesure $% 2x %$ et l'angle issue de C a pour mesure $% 3x %$.
 prouver que le le triangle ABC est un triangle rectangle.
 
 <center><img src="{{ url_img }}" alt="image de l'énoncé avec le triangle ABC" style="width: 50%;"/></center>
+
+Un joyeux géomètre a produit une preuve mais a tout mélangé. Essayez de remettre en ordre sa preuve.
 ==
 
 form={{ sortlist|component }}
