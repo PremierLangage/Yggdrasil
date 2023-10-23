@@ -121,3 +121,11 @@ def coefficients_binome(n):
     pass
 
 ==
+code==
+def factoriel(n):
+    pass
+
+def coefficients_binome(n):
+    pass
+
+==
