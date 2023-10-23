@@ -70,9 +70,9 @@ for i, e in enumerate(sortlist.items):
         errors += 1
 
 if errors == 0:
-    grade = (100, '<span class="success-state animated pulse infinite">Good answer</span>')
+    grade = (100, '<span class="success-state animated pulse infinite" style="padding: 5px;">Bonne r&eacute;ponse</span>')
 else:
-    grade = (0, f'<span class="error-state animated pulse infinite">{ errors } wrong answers</span>')
+    grade = (0, f'<span class="error-state animated pulse infinite" style="padding: 5px;">{ errors } r&eacute;ponse mal plac&eacute;e(s)</span>')
 ==
 
 
