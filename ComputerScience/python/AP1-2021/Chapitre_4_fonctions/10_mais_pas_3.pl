@@ -25,7 +25,12 @@ text=f"""
 Programmer une fonction **oui_mais(n)** qui teste si un entier n est divisible par {tx1} mais pas par {tx2}. <br>
 """
 
+pltest1= f"""
+>>> oui_mais(17) == ((17 % {nb1} ==0) and (17 % {nb2} != 0))# Facile
+True
+"""
 
+code += f"""def oui_mais(n):\n return ((17 % n ==0) and (17 % n != 0))\n"""
 
 ==
 
@@ -34,29 +39,11 @@ Programmer une fonction **oui_mais(n)** qui teste si un entier n est divisible p
 ==
 
 code==
-# utiliser la ligne suivante pour l'
-int(input())
+
 
 ==
 
 needed=def
-
-
-
-soluce==#|python|
-def dix_mais_pas_trois(n):
-    return n%10==0 and n%3!=0
-
-n = int(input("Saisie : "))
-print(dix_mais_pas_trois(n))
-==
-
-plsoluce==
-Test1 | 2
-Test2 | 3
-Test3 | 30
-Test4 | 40
-==
 
 
 
