@@ -51,7 +51,7 @@ Soit ABC un triangle tel que l'angle issue de C a pour mesure $% x %$, l'angle
 issue de B a pour mesure $% 2x %$ et l'angle issue de C a pour mesure $% 3x %$.
 prouver que le le triangle ABC est un triangle rectangle.
 
-<img src="{{ url_img }}" alt="image de l'énoncé avec le triangle ABC" style="width: 50%;"/>
+<center><img src="{{ url_img }}" alt="image de l'énoncé avec le triangle ABC" style="width: 50%;"/></center>
 ==
 
 form={{ sortlist|component }}
