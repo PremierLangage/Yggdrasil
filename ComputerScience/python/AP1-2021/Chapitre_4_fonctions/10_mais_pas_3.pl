@@ -1,8 +1,6 @@
 
-#author=OCE
+extends=/ComputerScience/python/AP1-2122/template/pltest2023.pl
 
-# Heritage d'un type d'exercice 
-extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 @ /builder/bbefore.py [builder.py]
 
 title = 
@@ -21,28 +19,29 @@ if nb1 % nb2 == 0 :
     tx1, tx2 = tx2 , tx1
 
 title = f"Divisible par {tx1} mais pas par {tx2}."
+
+text=f"""  
+
+Programmer une fonction **oui_mais(n)** qui teste si un entier n est divisible par {tx1} mais pas par {tx2}. <br>
+"""
+
+
+
+==
+
+
+
 ==
 
 code==
-# On utilisera pour les entrées 
-input("Saisie : ")
+# utiliser la ligne suivante pour l'
+int(input())
 
 ==
 
 needed=def
 
-text==  
 
-Programmer une fonction qui teste si un entier est divisible par 10 mais pas par 3. <br>
-
-Puis écrivez un programme qui récupère un entier au clavier, 
-appelle la fonction et affiche le résultat booléen.
-
-
-On utilisera pour les entrées 
-**input("Saisie : ")**
-
-==
 
 soluce==#|python|
 def dix_mais_pas_trois(n):
