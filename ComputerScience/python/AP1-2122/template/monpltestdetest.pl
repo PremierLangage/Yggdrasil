@@ -70,6 +70,8 @@ pltest2==
 True
 >>> ('g' in globals() == True ) and (type(g)== type(_hid))
 True
+>>> (type(f)== type(_hid))
+True
 ==
 
 
