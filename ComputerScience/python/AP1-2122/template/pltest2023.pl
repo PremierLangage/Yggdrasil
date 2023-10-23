@@ -14,7 +14,8 @@
 
 editor.fontsize=14
 # une interface standard d'exercice avec un editeur pour la réponse
-form=@ /form/text_editor.html
+#form=@ /form/text_editor.html
+form=@ /python/form/editorform.html
 
 settings.allow_reroll=1
 
