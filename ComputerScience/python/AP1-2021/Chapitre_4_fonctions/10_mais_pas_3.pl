@@ -21,9 +21,8 @@ if nb1 % nb2 == 0 :
 
 title = f"Divisible par {tx1} mais pas par {tx2}."
 
-text=f"""  
-
-Programmer une fonction **oui_mais(n)** qui teste si un entier n est divisible par {tx1} mais pas par {tx2}. <br>
+text=f"""Programmer une fonction **oui_mais(n)** qui teste 
+si un entier n est divisible par {tx1} mais pas par {tx2}. <br>
 """
 val = 17
 pltest= f"""
