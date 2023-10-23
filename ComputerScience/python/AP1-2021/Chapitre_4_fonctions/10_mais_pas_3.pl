@@ -7,12 +7,12 @@ title =
 
 before==
 import random
-nombres=[0,"un","deux","trois","quatre","cinq","six","sept","huit","neuf","dix"]
-nb1= random.randint(2,10)
+nombres=[0,"un","deux","trois","quatre","cinq","six","sept","huit","neuf","dix","onze","douze"]
+nb1= random.randint(2,13)
 tx1 = nombres[nb1]
 nb2=nb1
 while nb1==nb2:
-    nb2 = random.randint(2,10)
+    nb2 = random.randint(2,12)
     tx2= nombres[nb2]
 if nb1 % nb2 == 0 :
     nb1,nb2= nb2,nb1
