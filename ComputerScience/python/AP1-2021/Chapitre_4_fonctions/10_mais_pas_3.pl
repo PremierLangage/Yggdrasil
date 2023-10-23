@@ -3,7 +3,7 @@ extends=/ComputerScience/python/AP1-2122/template/pltest2023.pl
 
 @ /builder/bbefore.py [builder.py]
 
-title = 
+title = Divisible et indivisible 
 text = 
 
 before==
