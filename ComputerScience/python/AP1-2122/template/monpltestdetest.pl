@@ -77,7 +77,7 @@ testname1=Hidden Tests
 pltest1==
 >>> f(10) == 20#
 True
->>> f(12)#
+>>> f(13)#
 24
 >>> 'k' in globals()#
 True
