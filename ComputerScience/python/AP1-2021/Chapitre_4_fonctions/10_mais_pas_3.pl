@@ -26,7 +26,7 @@ text=f"""
 Programmer une fonction **oui_mais(n)** qui teste si un entier n est divisible par {tx1} mais pas par {tx2}. <br>
 """
 
-pltest1= f"""
+pltest= f"""
 >>> oui_mais(17) == ((17 % {nb1} ==0) and (17 % {nb2} != 0))# Facile
 True
 """
