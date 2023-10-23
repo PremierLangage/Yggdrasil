@@ -8,7 +8,7 @@ text =
 
 before==
 import random
-nombres=[0,"un","deux","trois","quatre","cinq","six","sept","huit","neuf","dix","onze","douze"]
+nombres=[0,"un","deux","trois","quatre","cinq","six","sept","huit","neuf","dix","onze","douze","treize"]
 nb1= random.randint(2,13)
 tx1 = nombres[nb1]
 nb2=nb1
