@@ -59,7 +59,7 @@ x="O est un peu neuneu"
 
 mplsoluce0==
 Test avec une valeur paire
-2
+4
 ==
 
 mplsoluce1==
