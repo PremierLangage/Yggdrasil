@@ -36,7 +36,7 @@ for i in range(4):
 True
 """
 
-code += f"""def oui_mais(n):\n return ((17 % n ==0) and (17 % n != 0))\n"""
+code += f"""def oui_mais(n):\n return ((n % {nb1} ==0) and (nombres % {nb2} != 0))\n"""
 
 
 
