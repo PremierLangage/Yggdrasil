@@ -10,14 +10,17 @@ title =
 before==
 import random
 nombres=[0,"un","deux","trois","quatre","cinq","six","sept","huit","neuf","dix"]
-nb1= random.randint(1,10)
+nb1= random.randint(2,10)
 tx1 = nombres[nb1]
 nb2=nb1
 while nb1==nb2:
-    nb2 = random.randint(1,10)
+    nb2 = random.randint(2,10)
     tx2= nombres[nb2]
+if nb1 % nb2 == 0 :
+    nb1,nb2= nb2,nb1
+    tx1, tx2 = tx2 , tx1
 
-title = f"Divisible par {tx1} mais pas apr {tx2}"
+title = f"Divisible par {tx1} mais pas par {tx2}."
 ==
 
 code==
