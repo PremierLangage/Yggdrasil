@@ -41,6 +41,8 @@ code += f"""def oui_mais(n):\n return ((17 % n ==0) and (17 % n != 0))\n"""
 
 code==
 
+# du cod entier
+
 
 ==
 
