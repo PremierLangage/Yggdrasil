@@ -3,9 +3,22 @@
 
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
-@ /builder/none.py [builder.py]
+@ /builder/bbefore.py [builder.py]
 
-title = Dix mais pas trois
+title = Divisible par {tx1} mais pas apr {tx2}
+
+before==
+import random
+nombres=[0,"un","deux","trois","quatre","cinq","six","sept","huit","neuf","dix"]
+nb1= random.randint(1,10)
+tx1 = nombres[nb1]
+nb2=nb1
+while nb1==nb2:
+    nb2 = random.randint(1,10)
+    tx2= nombres[nb2]
+
+
+==
 
 code==
 # On utilisera pour les entrées 
