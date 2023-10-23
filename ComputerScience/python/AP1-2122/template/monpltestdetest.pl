@@ -68,7 +68,7 @@ pltest2==
 >>> def _hid(): pass#
 >>> 'k' in globals()
 True
->>> ('g' in globals() == True ) and (type(g)== 'function')
+>>> ('g' in globals() == True ) and (type(g)== type(f))
 True
 ==
 
