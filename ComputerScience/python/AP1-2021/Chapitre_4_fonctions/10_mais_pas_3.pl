@@ -32,7 +32,7 @@ True
 """
 for i in range(4):
     val = random.randint(3,700)
-    global()[f"pltest{i}"]=f"""
+    globals()[f"pltest{i}"]=f"""
 >>> oui_mais({val}) == (({val} % {nb1} ==0) and ({val} % {nb2} != 0))# Facile
 True
 """
