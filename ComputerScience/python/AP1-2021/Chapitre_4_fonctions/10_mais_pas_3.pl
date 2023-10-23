@@ -5,7 +5,7 @@
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
 @ /builder/bbefore.py [builder.py]
 
-title = Divisible par {tx1} mais pas apr {tx2}
+title = 
 
 before==
 import random
@@ -17,7 +17,7 @@ while nb1==nb2:
     nb2 = random.randint(1,10)
     tx2= nombres[nb2]
 
-
+title = f"Divisible par {tx1} mais pas apr {tx2}"
 ==
 
 code==
