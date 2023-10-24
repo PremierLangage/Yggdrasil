@@ -30,6 +30,10 @@ tableau.
 editor.code==#|c|
 void apply_square_array(int* array, int nb_term){
   /* votre code ici... */
+
+...
+
+
 }
 ==
 
