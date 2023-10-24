@@ -25,7 +25,7 @@ float eval_f(float x, int a , int b , int c){
 
 // PL:==
 
-/* PL:code==
+/* PL:editor.code==
 void eval_f(){
     
 printf("Plus longue partie constante %d\n",...);
