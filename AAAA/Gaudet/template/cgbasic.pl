@@ -35,8 +35,8 @@ editor.theme = dark
 editor.height = 500px
 
 # une interface standard d'exercice avec un editeur pour la réponse
-form== editor
-
+form==
+{{editor}}
 ==
 
 languages==
