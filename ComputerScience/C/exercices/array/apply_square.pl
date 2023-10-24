@@ -82,7 +82,7 @@ int main(int argc, char* argv[]){
 ==
 
 checks_args_stdin==#|python|
-[["Exécution simple", ["1"], ""],
+[["Exécution simple", ["2"], ""],
  ["Quelques éléments", ["12", "-3", "52", "0", "41"], ""],
  ["Tableau vide", [], ""],
  ["Test aléatoire 1", [str(randint(-100, 100)) for i in range(randint(5, 10))], ""],
