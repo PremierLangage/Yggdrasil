@@ -42,3 +42,21 @@ Les balises optionnelles :
 
 settings.requirements=title,text,soluce
 
+evaluator==#|python|
+import subprocess
+
+with open('student.R', 'w') as f:
+    f.write(editor.code)
+
+with open('teacher.R', 'w') as f:
+    f.write(soluce)
+
+
+process = subprocess.run(['Rscript', 'hello_world.R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+stdout = process.stdout
+ce = process.returncode
+
+ans = "ex&eacute;cution : " + stdout.decode() + "(code Unix de retour : " + str(ce) + ")"
+
+grade = (100, ans)
+==
