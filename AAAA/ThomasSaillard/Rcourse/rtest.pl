@@ -28,7 +28,7 @@ form==
 evaluator==#|python|
 import subprocess
 
-f = open('hello_world.asm', 'w')
+f = open('hello_world.R', 'w')
 f.write(editor.code)
 f.close()
 
