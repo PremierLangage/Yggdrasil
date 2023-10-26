@@ -11,8 +11,6 @@ extends = /model/math/set.pl
 param.roots = int
 
 wobracket = True
-eededeedde
-edde
 
 
 before ==
