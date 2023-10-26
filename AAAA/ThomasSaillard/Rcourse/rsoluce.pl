@@ -52,10 +52,12 @@ with open('teacher.R', 'w') as f:
     f.write(soluce)
 
 def run_test(test : str):
-    splited = test.splitlines()
+    splited = test.split('\n', 1)
     name = splited[0]
     inputs = splited[1:]
     
+
+
 
 
 
