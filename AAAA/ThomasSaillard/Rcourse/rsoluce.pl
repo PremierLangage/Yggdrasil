@@ -63,6 +63,12 @@ def run_test(test : str):
     stderr = process.stderr
     returncode = process.returncode
 
+    process = subprocess.run(['Rscript', 'student.R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    stdout = process.stdout
+    stderr = process.stderr
+    returncode = process.returncode
+
+
 
 
 
