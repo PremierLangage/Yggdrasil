@@ -15,10 +15,10 @@ print("Hello World")
 before==
 ==
 
-title = Test NASM 
+title = Test R 
 
 text==
-Mais quelle idée ce NASM sérieux ??? Il faut valider pour compiler avec NASM, puis linker avec LD puis exécuter ce Hello World !
+C'est un petit "Hello World" écrit en R, fun fact: c'est exactement comme un "Hello World" en python
 ==
 
 form==
