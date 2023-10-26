@@ -5,7 +5,15 @@ Rsoluce.pl est un modèle permettant d'executer des programmes R.
 Le but de ce modèle est de prendre un code `bon` du professeur et de le comparer à celui de l'élève via 
 différents tests écrits par le professeur.
 
-La seule balise à définir obligatoirement : 
+Les balises à définir obligatoirement : 
+
+    title==
+    Titre de l'éxercice
+    ==
+
+    text==
+    Énoncé de l'éxercice
+    ==
 
     soluce==
     Un script R répondant à l'éxercice.
