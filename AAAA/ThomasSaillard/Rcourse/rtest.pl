@@ -32,7 +32,7 @@ f = open('hello_world.R', 'w')
 f.write(editor.code)
 f.close()
 
-process = subprocess.run(['nasm', '-f', 'elf64', 'hello_world.asm', '-o', 'hello.o'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+process = subprocess.run(['Rscript', 'hello_world.R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 stdout = process.stdout
 ce = process.returncode
 
