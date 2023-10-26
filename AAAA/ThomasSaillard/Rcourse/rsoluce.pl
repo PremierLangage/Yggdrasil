@@ -38,6 +38,27 @@ Les balises optionnelles :
     Le timeout est un chiffre ou un nombre flotant compris entre 0 et 4 il sera appliqué au code
     de l'élève ainsi qu'au code du professeur.
 
+    code_before ==
+
+    ==
+
+    La balise `code_before` permet de renseigner un code qui sera ajouter avant le code de l'élève ainsi que
+    le code de la solution.
+
+    code_after ==
+
+    ==
+
+    La balises `code_after` fait comme la balise `code_before` mais concatène à la fin de code
+    de l'élève ou de la solution.
+
+    grade==
+
+    ==
+
+    Pour les plus experts la balise grade permet de rensigner une fonction python `grade`
+    qui va générer la note de l'élève. Notez que l'exemple si dessus est la fonction utilisée par défaut.
+
 ==
 
 settings.requirements=title,text,soluce
