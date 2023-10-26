@@ -36,7 +36,7 @@ process = subprocess.run(['Rscript', 'hello_world.R'], stdout=subprocess.PIPE, s
 stdout = process.stdout
 ce = process.returncode
 
-ans += "ex&eacute;cution : " + stdout.decode() + "(code Unix de retour : " + str(ce) + ")"
+ans = "ex&eacute;cution : " + stdout.decode() + "(code Unix de retour : " + str(ce) + ")"
 
 grade = (100, ans)
 ==
