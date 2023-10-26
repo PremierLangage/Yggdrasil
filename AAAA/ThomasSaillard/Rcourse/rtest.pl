@@ -8,7 +8,7 @@ editor =: CodeEditor
 editor.theme = dark
 editor.language = r
 editor.code ==
-# Simple Hello World in R
+# Simple Hello World en R
 print("Hello World")
 ==
 
