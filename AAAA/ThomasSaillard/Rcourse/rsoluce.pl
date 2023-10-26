@@ -59,14 +59,16 @@ def run_test(test : str):
         inputs = splited[1:]
     
     process = subprocess.run(['Rscript', 'teacher.R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    stdout = process.stdout
-    stderr = process.stderr
-    returncode = process.returncode
+    teacher_stdout = process.stdout
+    teacher_stderr = process.stderr
+    teacher_returncode = process.returncode
 
     process = subprocess.run(['Rscript', 'student.R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    stdout = process.stdout
-    stderr = process.stderr
-    returncode = process.returncode
+    student_stdout = process.stdout
+    student_stderr = process.stderr
+    student_returncode = process.returncode
+
+
 
 
 
