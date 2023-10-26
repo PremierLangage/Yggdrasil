@@ -35,7 +35,7 @@ Les balises optionnelles :
 
     timeout_X= 4
 
-    Le timeout est un chiffre compris entre 1 et 4 inclus il sera appliqué au code
+    Le timeout est un chiffre ou un nombre flotant compris entre 0 et 4 il sera appliqué au code
     de l'élève ainsi qu'au code du professeur.
 
 ==
@@ -58,15 +58,21 @@ def run_test(test : str):
     if len(splited) > 1:
         inputs = splited[1:]
     
-    process = subprocess.run(['Rscript', 'teacher.R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    teacher_stdout = process.stdout
-    teacher_stderr = process.stderr
-    teacher_returncode = process.returncode
+    try :
+        process = subprocess.run(['Rscript', 'teacher.R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        teacher_stdout = process.stdout
+        teacher_stderr = process.stderr
+        teacher_returncode = process.returncode
+    except TimeoutExpired as e:
+        teacher_timeout = True
 
-    process = subprocess.run(['Rscript', 'student.R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    student_stdout = process.stdout
-    student_stderr = process.stderr
-    student_returncode = process.returncode
+    try :
+        process = subprocess.run(['Rscript', 'student.R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        student_stdout = process.stdout
+        student_stderr = process.stderr
+        student_returncode = process.returncode
+    except TimeoutExpired as e:
+        teacher_timeout = True
 
     return 
 
