@@ -54,7 +54,9 @@ with open('teacher.R', 'w') as f:
 def run_test(test : str):
     splited = test.split('\n', 1)
     name = splited[0]
-    inputs = splited[1:]
+    inputs = ""
+    if len(splited) > 1:
+        inputs = splited[1:]
     
 
 
