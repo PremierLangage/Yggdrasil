@@ -58,9 +58,12 @@ def run_test(test : str):
     if len(splited) > 1:
         inputs = splited[1:]
     
-    process = subprocess.run(['Rscript', 'hello_world.R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    process = subprocess.run(['Rscript', 'teacher.R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     stdout = process.stdout
-    ce = process.returncode
+    stderr = process.stderr
+    returncode = process.returncode
+
+
 
 
 
