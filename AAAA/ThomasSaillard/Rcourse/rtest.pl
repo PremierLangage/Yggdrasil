@@ -6,7 +6,7 @@ builder =@ /builder/before.py
 
 editor =: CodeEditor
 editor.theme = dark
-editor.language = assembly
+editor.language = R
 editor.code ==
 # Simple Hello World in R
 print("Hello World")
