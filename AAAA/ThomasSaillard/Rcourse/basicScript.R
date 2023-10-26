@@ -1,4 +1,3 @@
-
 # Comments in R start with a '#'
 
 # 1. Variables and Data Types
