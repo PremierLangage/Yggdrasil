@@ -51,7 +51,17 @@ with open('student.R', 'w') as f:
 with open('teacher.R', 'w') as f:
     f.write(soluce)
 
+def run_test(test : str):
+    splited = test.splitlines()
+    name = splited[0]
+    inputs = splited[1:]
+    
 
+
+
+tags = locals()
+for tag in tag if tag.startswith("test_"):
+    
 process = subprocess.run(['Rscript', 'hello_world.R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 stdout = process.stdout
 ce = process.returncode
