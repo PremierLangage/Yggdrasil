@@ -12,15 +12,21 @@ La seule balise à définir obligatoirement :
     ==
 
 Les balises optionnelles : 
-    testX==
+    test_X==
     Nom du test
     entrée 1
     entrée 2 
     entrée 3
     ==
 
+    Les test seront éxécutés dans l'order lexicographique. 
     Notez que les entrées sont passées au programme par l'entrée standart.
     Il peut ne pas y avoir d'entrée du tout.
     Dans le cas où aucun test n'a été défini les deux scripts seront quand même
     éxécutés et comparés sans aucune entrée.
+
+    timeout_X= 4
+
+    Le timeout est un chiffre compris entre 1 et 4 inclus il sera appliqué au code
+    de l'élève ainsi qu'au code du professeur.
 
