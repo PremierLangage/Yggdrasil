@@ -68,16 +68,10 @@ def run_test(test : str):
     student_stderr = process.stderr
     student_returncode = process.returncode
 
+    return 
 
 
-
-
-
-
-
-
-
-tags = locals()
+tags = globals()
 for tag in tag if tag.startswith("test_"):
     
 process = subprocess.run(['Rscript', 'hello_world.R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
