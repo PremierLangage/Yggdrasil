@@ -30,3 +30,7 @@ Les balises optionnelles :
     Le timeout est un chiffre compris entre 1 et 4 inclus il sera appliqué au code
     de l'élève ainsi qu'au code du professeur.
 
+==
+
+settings.requirements=title,text,soluce
+
