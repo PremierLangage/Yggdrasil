@@ -188,6 +188,8 @@ if len(tags) == 0:
 
 def default_grade(nb_success, nb_fail_timeout, nb_fail_stdout, nb_fail_stderr, nb_fail_exit_code):
     nb_tests = nb_success + nb_fail_timeout + nb_fail_stdout + nb_fail_stderr + nb_fail_exit_code
+    if nb_tests == 0:
+        return 0
     return round(100 * nb_success / nb_tests)
 
 local_dic = dict()
