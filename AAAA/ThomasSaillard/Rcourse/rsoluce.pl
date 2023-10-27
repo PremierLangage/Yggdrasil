@@ -72,6 +72,7 @@ Les balises optionnelles :
 settings.requirements=title,text,soluce
 
 before==#|python|
+attemps = 0
 ==
 
 evaluator==#|python|
