@@ -118,6 +118,7 @@ def split_name_inputs(name_inputs : str) -> tuple[str, str]:
         inputs = "\n".join(splited[1:] + ["\n"])
     return name, inputs
 
+
 def run_script(script : str, inputs : str, flags : list[str] = ["--vanilla"], timeout : int = 4):
     process_timeout = False
     try:
