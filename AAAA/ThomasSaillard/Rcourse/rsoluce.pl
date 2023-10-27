@@ -140,12 +140,10 @@ def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack()):
         feedback.addTestSuccess(name, f"exit code: {student_exit_code}\n\nstdout:\n{student_stdout}\n\nstderr:\n{student_stderr}",
                                 f"exit code: {teacher_exit_code}\n\nstdout:\n{teacher_stdout}\n\nstderr:\n{teacher_stderr}")
 
-class Test:
-    
-    def __init__(self, stdout, stderr, 
 
-
-def grade(tests: list[Test]): 
+def grade(nb_success, nb_fail_timeout, nb_fail_stdout, nb_fail_stderr, nb_fail_exit_code):
+    nb_tests = nb_success + nb_fail_timeout + nb_fail_stdout + nb_fail_stderr + nb_fail_exit_code
+    round(100 * nb_sucess / nb_tests)
 
 
 
