@@ -137,7 +137,7 @@ def run_script(script : str, inputs : str, flags : list = ["--vanilla"], timeout
         stdout += "\n"
     return stdout, stderr, exit_code, process_timeout
 
-def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack()):
+def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack(), nb_success, nb_fail_timeout, nb_fail_stdout, nb_fail_stderr, nb_fail_exit_code):
     name, inputs = split_name_inputs(test)
 
     concatenate_code_to_file(editor.code, "student.R")
@@ -182,9 +182,9 @@ for tag in tags:
     if f"timeout_{tag.removeprefix('test_')}" in globals():
         timeout = globals()[f"timeout_{tag.removeprefix('test_')}"]
     else: timeout = 4
-    run_test(globals()[tag], timeout, feedback)
+    run_test(globals()[tag], timeout, feedback, nb_success, nb_fail_timeout, nb_fail_stdout, nb_fail_stderr, nb_fail_exit_code)
 if len(tags) == 0:
-    run_test("Test par défaut", 4, feedback)
+    run_test("Test par défaut", 4, feedback, nb_success, nb_fail_timeout, nb_fail_stdout, nb_fail_stderr, nb_fail_exit_code)
 
 def default_grade(nb_success, nb_fail_timeout, nb_fail_stdout, nb_fail_stderr, nb_fail_exit_code):
     nb_tests = nb_success + nb_fail_timeout + nb_fail_stdout + nb_fail_stderr + nb_fail_exit_code
