@@ -180,6 +180,8 @@ for tag in tags:
         timeout = globals()[f"timeout_{tag.removeprefix('test_')}"]
     else: timeout = 4
     run_test(globals()[tag], timeout, feedback)
+if len(tags) == 0:
+    run_test("Test par défaut", 4, feedback)
 
 def default_grade(nb_success, nb_fail_timeout, nb_fail_stdout, nb_fail_stderr, nb_fail_exit_code):
     nb_tests = nb_success + nb_fail_timeout + nb_fail_stdout + nb_fail_stderr + nb_fail_exit_code
