@@ -122,7 +122,7 @@ def split_name_inputs(name_inputs : str) -> tuple:
     return name, inputs
 
 
-def run_script(script : str, inputs : str, flags : list[str] = ["--vanilla"], timeout : int = 4):
+def run_script(script : str, inputs : str, flags : list = ["--vanilla"], timeout : int = 4):
     process_timeout = False
     try:
         process = run(['Rscript', script] + flags, input=inputs, capture_output=True, timeout=timeout, text=True)
