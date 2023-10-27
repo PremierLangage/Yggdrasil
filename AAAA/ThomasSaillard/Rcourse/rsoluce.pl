@@ -71,7 +71,8 @@ Les balises optionnelles :
 
 ==
 
-@/ComputerScience/python/template/feedback2.py
+@ utils/feedback2.py
+@ utils/template.html
 
 settings.requirements=title,text,soluce
 
