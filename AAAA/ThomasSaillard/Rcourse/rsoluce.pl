@@ -83,6 +83,12 @@ from subprocess import TimeoutExpired, run
 
 attemps += 1
 
+nb_success = 0
+nb_fail_timeout = 0
+nb_fail_stdout = 0
+nb_fail_stderr = 0
+nb_fail_exit_code = 0
+
 def concatenate_code_to_file(code_to_execute : str, file : str):
     code = f"{code_before}\n{code_to_execute}\n{code_after}"
     with open(file, 'w') as f:
@@ -141,6 +147,8 @@ def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack()):
     else:
         feedback.addTestSuccess(name, f"exit code: {student_exit_code}\n\nstdout:\n{student_stdout}\n\nstderr:\n{student_stderr}",
                                 f"exit code: {teacher_exit_code}\n\nstdout:\n{teacher_stdout}\n\nstderr:\n{teacher_stderr}")
+
+
 
 
 def default_grade(nb_success, nb_fail_timeout, nb_fail_stdout, nb_fail_stderr, nb_fail_exit_code):
