@@ -128,7 +128,7 @@ def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack()):
         if not ignore_teacher_timeout:
             feedback.addGlobalFeedback("Attention, le code du professeur a dépassé le temps limite. Il est possible \
                                        que ce soit une erreur. \nSi vous êtes sûr de votre code, vous pouvez ignorer cette\
-                                        erreur en définissant la variable ignore_teacher_timeout à True.")
+                                        erreur en définissant la variable ignore_teacher_timeout à True.\n")
 
         feedback.addTestSuccess(name, "Error : timeout", "Error : timeout")
     elif student_timeout:
@@ -151,8 +151,8 @@ local_dic = dict()
 try:
     exec(grade + "\ng = grade(1, 1, 0, 0, 0)", None, d)
 except Exception as e:
-    
     d["g"] = default_grade(1, 1, 0, 0, 0)
+    feedback.addGlobalFeedback("Attention")
 
 ans = "ex&eacute;cution : " + stdout.decode() + "(code Unix de retour : " + str(ce) + ")"
 
