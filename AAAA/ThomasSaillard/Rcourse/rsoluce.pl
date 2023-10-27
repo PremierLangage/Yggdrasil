@@ -6,7 +6,7 @@ Le but de ce modèle est de prendre un code `bon` du professeur et de le compare
 différents tests écrits par le professeur.
 
 Par défaut un test est considéré comme réussi si la sortie standard est la même pour le code de l'élève et celui 
-de la solution et le code d'erreur renvoyé est 0. 
+de la solution, que le code d'erreur renvoyé est 0 et que le code de l'élève n'ai pas timeout. 
 Ce comportement peut être modifié par les balises suivantes : 
     - compare_stderr = True
         Compare la sortie d'erreur des deux codes
