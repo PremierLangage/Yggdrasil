@@ -137,7 +137,7 @@ def run_script(script : str, inputs : str, flags : list = ["--vanilla"], timeout
         stdout += "\n"
     return stdout, stderr, exit_code, process_timeout
 
-def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack(), nb_success, nb_fail_timeout, nb_fail_stdout, nb_fail_stderr, nb_fail_exit_code):
+def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack(), nb_success = 0, nb_fail_timeout= 0, nb_fail_stdout= 0, nb_fail_stderr= 0, nb_fail_exit_code= 0):
     name, inputs = split_name_inputs(test)
 
     concatenate_code_to_file(editor.code, "student.R")
