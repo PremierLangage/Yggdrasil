@@ -71,49 +71,55 @@ Les balises optionnelles :
 
 settings.requirements=title,text,soluce
 
+
 evaluator==#|python|
-import subprocess
+from feedback2 import FeedBack
+from subprocess import TimeoutExpired, run 
 
-with open('student.R', 'w') as f:
-    f.write(editor.code)
 
-with open('teacher.R', 'w') as f:
-    f.write(soluce)
+def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack()):
+    name, inputs = split_name_inputs(test)
 
-def run_test(test : str):
-    splited = test.split('\n', 1)
-    name = splited[0]
-    inputs = ""
-    if len(splited) > 1:
-        inputs = splited[1:]
+    concatenate_code_to_file(code, "student.R")
+    student_stdout, student_stderr, student_exit_code, student_timeout = run_script("student.R", inputs, timeout=timeout)
+    if not compare_exit_code and student_exit_code :
+        feedback.addTestFailure(name, f"Code de sortie différent de 0 :\n{student_stderr}", "")
+        return
     
-    try :
-        process = subprocess.run(['Rscript', 'teacher.R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        teacher_stdout = process.stdout
-        teacher_stderr = process.stderr
-        teacher_returncode = process.returncode
-    except TimeoutExpired as e:
-        teacher_timeout = True
-
-    try :
-        process = subprocess.run(['Rscript', 'student.R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        student_stdout = process.stdout
-        student_stderr = process.stderr
-        student_returncode = process.returncode
-    except TimeoutExpired as e:
-        teacher_timeout = True
-
-    return 
+    concatenate_code_to_file(soluce, "teacher.R")
+    teacher_stdout, teacher_stderr, teacher_exit_code, teacher_timeout = run_script("teacher.R", inputs, timeout=timeout)
 
 
-tags = globals()
-for tag in tag if tag.startswith("test_"):
-    
-process = subprocess.run(['Rscript', 'hello_world.R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-stdout = process.stdout
-ce = process.returncode
+    if teacher_timeout and student_timeout:
+        if not ignore_teacher_timeout:
+            feedback.addGlobalFeedback("Attention, le code du professeur a dépassé le temps limite. Il est possible \
+                                       que ce soit une erreur. \nSi vous êtes sûr de votre code, vous pouvez ignorer cette\
+                                        erreur en définissant la variable ignore_teacher_timeout à True.")
+
+        feedback.addTestSuccess(name, "Error : timeout", "Error : timeout")
+    elif student_timeout:
+        feedback.addTestFailure(name, "Error : timeout", teacher_stdout)
+    elif teacher_stdout != student_stdout\
+            or (compare_stderr and teacher_stderr != student_stderr)\
+            or (compare_exit_code and teacher_exit_code != student_exit_code):
+        feedback.addTestFailure(name, f"exit code: {student_exit_code}\n\nstdout:\n{student_stdout}\n\nstderr:\n{student_stderr}",
+                                f"exit code: {teacher_exit_code}\n\nstdout:\n{teacher_stdout}\n\nstderr:\n{teacher_stderr}") 
+    else:
+        feedback.addTestSuccess(name, f"exit code: {student_exit_code}\n\nstdout:\n{student_stdout}\n\nstderr:\n{student_stderr}",
+                                f"exit code: {teacher_exit_code}\n\nstdout:\n{teacher_stdout}\n\nstderr:\n{teacher_stderr}")
+
 
 ans = "ex&eacute;cution : " + stdout.decode() + "(code Unix de retour : " + str(ce) + ")"
 
 grade = (100, ans)
 ==
+
+code_before==
+==
+
+code_after==
+==
+
+compare_stderr = False
+compare_exit_code = False
+ignore_teacher_timeout = False
