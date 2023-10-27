@@ -79,6 +79,8 @@ evaluator==#|python|
 from feedback2 import FeedBack
 from subprocess import TimeoutExpired, run 
 
+attemps += 1
+
 def concatenate_code_to_file(code_to_execute : str, file : str):
     code = f"{code_before}\n{code_to_execute}\n{code_after}"
     with open(file, 'w') as f:
