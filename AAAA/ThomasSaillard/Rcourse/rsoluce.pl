@@ -109,6 +109,7 @@ def concatenate_code_to_file(code_to_execute : str, file : str):
     with open(file, 'w') as f:
         f.write(code)
 
+
 def split_name_inputs(name_inputs : str) -> tuple[str, str]:
 
     splited = name_inputs.splitlines()
