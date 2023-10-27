@@ -146,7 +146,6 @@ def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack()):
                                 f"exit code: {teacher_exit_code}\n\nstdout:\n{teacher_stdout}\n\nstderr:\n{teacher_stderr}") 
     else:
         nb_success += 1
-        nb_sucess
         feedback.addTestSuccess(name, f"exit code: {student_exit_code}\n\nstdout:\n{student_stdout}\n\nstderr:\n{student_stderr}",
                                 f"exit code: {teacher_exit_code}\n\nstdout:\n{teacher_stdout}\n\nstderr:\n{teacher_stderr}")
 
