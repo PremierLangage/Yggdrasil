@@ -87,11 +87,7 @@ form = {{editor|component}}
 
 before==#|python|
 attemps = 0
-nb_success = 0
-nb_fail_timeout = 0
-nb_fail_stdout = 0
-nb_fail_stderr = 0
-nb_fail_exit_code = 0
+
 ==
 
 evaluator==#|python|
@@ -100,11 +96,11 @@ from subprocess import TimeoutExpired, run
 
 attemps += 1
 
-nb_success = 0
-nb_fail_timeout = 0
-nb_fail_stdout = 0
-nb_fail_stderr = 0
-nb_fail_exit_code = 0
+globals()["nb_success"] = 0
+globals()["nb_fail_timeout"] = 0
+globals()["nb_fail_stdout"] = 0
+globals()["nb_fail_stderr"] = 0
+globals()["nb_fail_exit_code"] = 0
 
 feedback = FeedBack()
 
