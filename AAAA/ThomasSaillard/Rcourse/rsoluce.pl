@@ -63,7 +63,7 @@ Les balises optionnelles :
     grade==
     def grade(nb_success : int, nb_fail_timeout : int, nb_fail_stdout : int, nb_fail_stderr : int, nb_fail_exit_code : int):
         nb_tests = nb_success + nb_fail_timeout + nb_fail_stdout + nb_fail_stderr + nb_fail_exit_code
-        return round(100 * nb_sucess / nb_tests)
+        return round(100 * nb_success / nb_tests)
     ==
 
     Pour les plus experts la balise grade permet de rensigner une fonction python `grade`
@@ -135,7 +135,7 @@ def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack()):
             feedback.addGlobalFeedback("Attention, le code du professeur a dépassé le temps limite. Il est possible \
                                        que ce soit une erreur. \nSi vous êtes sûr de votre code, vous pouvez ignorer cette\
                                         erreur en définissant la variable ignore_teacher_timeout à True.\n")
-
+        nb_success += 1
         feedback.addTestSuccess(name, "Error : timeout", "Error : timeout")
     elif student_timeout:
         feedback.addTestFailure(name, "Error : timeout", teacher_stdout)
@@ -145,6 +145,8 @@ def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack()):
         feedback.addTestFailure(name, f"exit code: {student_exit_code}\n\nstdout:\n{student_stdout}\n\nstderr:\n{student_stderr}",
                                 f"exit code: {teacher_exit_code}\n\nstdout:\n{teacher_stdout}\n\nstderr:\n{teacher_stderr}") 
     else:
+        nb_success += 1
+        nb_sucess
         feedback.addTestSuccess(name, f"exit code: {student_exit_code}\n\nstdout:\n{student_stdout}\n\nstderr:\n{student_stderr}",
                                 f"exit code: {teacher_exit_code}\n\nstdout:\n{teacher_stdout}\n\nstderr:\n{teacher_stderr}")
 
