@@ -77,7 +77,9 @@ editor =: CodeEditor
 editor.theme = dark
 editor.language = R
 
-form = {{editor}}
+form ==
+{{editor}}
+==
 
 before==#|python|
 attemps = 0
