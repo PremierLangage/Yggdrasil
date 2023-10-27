@@ -110,7 +110,7 @@ def concatenate_code_to_file(code_to_execute : str, file : str):
         f.write(code)
 
 
-def split_name_inputs(name_inputs : str) -> tuple[str, str]:
+def split_name_inputs(name_inputs : str) -> tuple:
 
 
 
