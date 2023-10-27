@@ -154,9 +154,8 @@ except Exception as e:
     local_dic["g"] = default_grade(nb_success, nb_fail_timeout, nb_fail_stdout, nb_fail_stderr, nb_fail_exit_code)
     feedback.addGlobalFeedback("Attention, il y a une erreur dans la fonction grade fournie.\nLa fonction grade par défaut est donc utilisée.")
 
-ans = "ex&eacute;cution : " + stdout.decode() + "(code Unix de retour : " + str(ce) + ")"
 
-grade = (100, ans)
+grade = (local_dic["g"], feedback.render())
 ==
 
 code_before==
