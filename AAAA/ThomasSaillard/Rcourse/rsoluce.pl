@@ -164,7 +164,7 @@ def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack()):
             or (compare_stderr and teacher_stderr != student_stderr)\
             or (compare_exit_code and teacher_exit_code != student_exit_code):
         if teacher_exit_code != student_exit_code : 
-            teacher_exit_code += 1
+            nb_fail_exit_code += 1
         elif teacher_stderr != student_stderr : 
             nb_fail_stderr += 1
         else : 
