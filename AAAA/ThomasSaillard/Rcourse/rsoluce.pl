@@ -71,6 +71,8 @@ Les balises optionnelles :
 
 ==
 
+@/ComputerScience/python/template/feedback2.py
+
 settings.requirements=title,text,soluce
 
 editor =: CodeEditor
