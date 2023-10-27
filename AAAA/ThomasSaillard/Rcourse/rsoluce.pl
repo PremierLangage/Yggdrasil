@@ -126,7 +126,7 @@ def run_script(script : str, inputs : str, flags : list[str] = ["--vanilla"], ti
 def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack()):
     name, inputs = split_name_inputs(test)
 
-    concatenate_code_to_file(code, "student.R")
+    concatenate_code_to_file(editor.code, "student.R")
     student_stdout, student_stderr, student_exit_code, student_timeout = run_script("student.R", inputs, timeout=timeout)
     if not compare_exit_code and student_exit_code :
         feedback.addTestFailure(name, f"Code de sortie différent de 0 :\n{student_stderr}", "")
