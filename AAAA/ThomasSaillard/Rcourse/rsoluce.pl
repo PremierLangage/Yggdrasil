@@ -73,6 +73,9 @@ Les balises optionnelles :
 
 settings.requirements=title,text,soluce
 
+editor =: CodeEditor
+editor.theme = dark
+
 before==#|python|
 attemps = 0
 ==
