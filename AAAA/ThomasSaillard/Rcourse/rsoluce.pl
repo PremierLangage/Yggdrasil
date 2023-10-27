@@ -152,7 +152,7 @@ try:
     exec(grade + "\ng = grade(1, 1, 0, 0, 0)", None, d)
 except Exception as e:
     d["g"] = default_grade(1, 1, 0, 0, 0)
-    feedback.addGlobalFeedback("Attention")
+    feedback.addGlobalFeedback("Attention, il y a une erreur dans la fonction grade fournie.\nLa fonction grade par défaut est donc utilisée.")
 
 ans = "ex&eacute;cution : " + stdout.decode() + "(code Unix de retour : " + str(ce) + ")"
 
