@@ -5,7 +5,13 @@ Rsoluce.pl est un modèle permettant d'executer des programmes R.
 Le but de ce modèle est de prendre un code `bon` du professeur et de le comparer à celui de l'élève via 
 différents tests écrits par le professeur.
 
-Par défaut un test est considéré comme réussi si 
+Par défaut un test est considéré comme réussi si la sortie standard est la même pour le code de l'élève et celui 
+de la solution et le code d'erreur renvoyé est 0. 
+Ce comportement peut être modifié par les balises suivantes : 
+    - compare_stderr = True
+        Compare la sortie d'erreur des deux codes
+    - compare_exit_code = True
+        Compare le code d'erreur des deux codes
 
 Les balises à définir obligatoirement : 
 
