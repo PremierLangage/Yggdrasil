@@ -81,6 +81,7 @@ form = {{editor|component}}
 
 before==#|python|
 attemps = 0
+
 ==
 
 grader==#|python|
