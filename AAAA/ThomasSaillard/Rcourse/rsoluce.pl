@@ -73,6 +73,7 @@ Les balises optionnelles :
 
 @ /ComputerScience/python/AP1-1920/templates/utils/feedback2.py
 @ /ComputerScience/python/AP1-1920/templates/utils/template.html
+@ /utils/sandboxio.py
 builder =@ /builder/before.py
 
 
