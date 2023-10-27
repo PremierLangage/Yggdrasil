@@ -15,6 +15,10 @@ Fibonacci <- function(n) {
 ==
 
 
+code_before==#|r|
+num_terms <- 5000
+==
+
 soluce ==#|r|
 Fibonacci<- function(n) {
   if (n <= 0) {
@@ -37,3 +41,11 @@ Fibonacci<- function(n) {
   }
 }
 ==
+
+code_after==#|r|
+fib_sequence <- Fibonacci(num_terms)
+cat("Fibonacci sequence with", num_terms, "terms: ")
+cat(fib_sequence, sep = ", ")
+==
+
+
