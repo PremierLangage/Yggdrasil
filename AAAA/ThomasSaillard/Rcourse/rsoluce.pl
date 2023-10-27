@@ -75,6 +75,7 @@ settings.requirements=title,text,soluce
 
 editor =: CodeEditor
 editor.theme = dark
+editor.language = R
 
 before==#|python|
 attemps = 0
