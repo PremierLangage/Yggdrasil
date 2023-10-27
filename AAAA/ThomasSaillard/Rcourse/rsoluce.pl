@@ -61,7 +61,9 @@ Les balises optionnelles :
     de l'élève ou de la solution.
 
     grade==
-
+    def grade(nb_success : int, nb_fail_timeout : int, nb_fail_stdout : int, nb_fail_stderr : int, nb_fail_exit_code : int):
+        nb_tests = nb_success + nb_fail_timeout + nb_fail_stdout + nb_fail_stderr + nb_fail_exit_code
+        return round(100 * nb_sucess / nb_tests)
     ==
 
     Pour les plus experts la balise grade permet de rensigner une fonction python `grade`
@@ -143,7 +145,7 @@ def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack()):
 
 def grade(nb_success, nb_fail_timeout, nb_fail_stdout, nb_fail_stderr, nb_fail_exit_code):
     nb_tests = nb_success + nb_fail_timeout + nb_fail_stdout + nb_fail_stderr + nb_fail_exit_code
-    round(100 * nb_sucess / nb_tests)
+    return round(100 * nb_sucess / nb_tests)
 
 
 
