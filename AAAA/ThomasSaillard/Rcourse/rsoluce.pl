@@ -143,14 +143,16 @@ def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack()):
                                 f"exit code: {teacher_exit_code}\n\nstdout:\n{teacher_stdout}\n\nstderr:\n{teacher_stderr}")
 
 
-if "grade" in globals():
+def default_grade(nb_success, nb_fail_timeout, nb_fail_stdout, nb_fail_stderr, nb_fail_exit_code):
+    nb_tests = nb_success + nb_fail_timeout + nb_fail_stdout + nb_fail_stderr + nb_fail_exit_code
+    return round(100 * nb_success / nb_tests)
 
-else:
-    def grade(nb_success, nb_fail_timeout, nb_fail_stdout, nb_fail_stderr, nb_fail_exit_code):
-        nb_tests = nb_success + nb_fail_timeout + nb_fail_stdout + nb_fail_stderr + nb_fail_exit_code
-        return round(100 * nb_success / nb_tests)
-
-
+local_dic = dict()
+try:
+    exec(grade + "\ng = grade(1, 1, 0, 0, 0)", None, d)
+except Exception as e:
+    
+    d["g"] = default_grade(1, 1, 0, 0, 0)
 
 ans = "ex&eacute;cution : " + stdout.decode() + "(code Unix de retour : " + str(ce) + ")"
 
