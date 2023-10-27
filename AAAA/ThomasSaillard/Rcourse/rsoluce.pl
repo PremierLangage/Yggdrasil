@@ -104,6 +104,7 @@ nb_fail_exit_code = 0
 
 feedback = FeedBack()
 
+
 def concatenate_code_to_file(code_to_execute : str, file : str):
     code = f"{code_before}\n{code_to_execute}\n{code_after}"
     with open(file, 'w') as f:
