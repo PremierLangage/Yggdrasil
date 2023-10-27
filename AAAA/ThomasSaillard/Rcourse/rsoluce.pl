@@ -83,7 +83,7 @@ before==#|python|
 attemps = 0
 ==
 
-evaluator==#|python|
+grader==#|python|
 from feedback2 import FeedBack
 from subprocess import TimeoutExpired, run 
 
