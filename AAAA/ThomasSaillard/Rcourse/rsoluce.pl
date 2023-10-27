@@ -138,10 +138,14 @@ def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack()):
         nb_success += 1
         feedback.addTestSuccess(name, "Error : timeout", "Error : timeout")
     elif student_timeout:
+        nb_fail_timeout += 1
         feedback.addTestFailure(name, "Error : timeout", teacher_stdout)
     elif teacher_stdout != student_stdout\
             or (compare_stderr and teacher_stderr != student_stderr)\
             or (compare_exit_code and teacher_exit_code != student_exit_code):
+        if teacher_exit_code != student_exit_code : nb_fail_exit_code += 1
+        elif teacher_stderr != student_stderr : nb_fail_stderr += 1
+        else : nb_fail_stdout += 1
         feedback.addTestFailure(name, f"exit code: {student_exit_code}\n\nstdout:\n{student_stdout}\n\nstderr:\n{student_stderr}",
                                 f"exit code: {teacher_exit_code}\n\nstdout:\n{teacher_stdout}\n\nstderr:\n{teacher_stderr}") 
     else:
