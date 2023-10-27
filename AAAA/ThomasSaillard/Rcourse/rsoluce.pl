@@ -73,7 +73,7 @@ Les balises optionnelles :
 
 @ /ComputerScience/python/AP1-1920/templates/utils/feedback2.py
 @ /ComputerScience/python/AP1-1920/templates/utils/template.html
-#builder =@ /builder/before.py
+builder =@ /builder/before.py
 
 
 settings.requirements=title,text,soluce
@@ -84,7 +84,7 @@ editor.language = r
 
 form = {{editor|component}}
 
-builder==#|python|
+before==#|python|
 attemps = 0
 
 ==
