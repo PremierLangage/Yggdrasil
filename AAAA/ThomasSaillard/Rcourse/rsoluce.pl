@@ -75,7 +75,7 @@ settings.requirements=title,text,soluce
 
 editor =: CodeEditor
 editor.theme = dark
-editor.language = R
+editor.language = r
 
 form = {{editor|component}}
 
