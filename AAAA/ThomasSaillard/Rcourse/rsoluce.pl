@@ -71,11 +71,40 @@ Les balises optionnelles :
 
 settings.requirements=title,text,soluce
 
+before==#|python|
+==
 
 evaluator==#|python|
 from feedback2 import FeedBack
 from subprocess import TimeoutExpired, run 
 
+def concatenate_code_to_file(code_to_execute : str, file : str):
+    code = f"{code_before}\n{code_to_execute}\n{code_after}"
+    with open(file, 'w') as f:
+        f.write(code)
+
+def split_name_inputs(name_inputs : str) -> tuple[str, str]:
+    splited = name_inputs.splitlines()
+    name = splited[0]
+    inputs = ""
+    if len(splited) > 1:
+        inputs = "\n".join(splited[1:] + ["\n"])
+    return name, inputs
+
+def run_script(script : str, inputs : str, flags : list[str] = ["--vanilla"], timeout : int = 4):
+    process_timeout = False
+    try:
+        process = run(['Rscript', script] + flags, input=inputs, capture_output=True, timeout=timeout, text=True)
+        print(process)
+    except TimeoutExpired as e:
+        process_timeout = True
+    finally:
+        stdout = process.stdout
+        stderr = process.stderr
+        exit_code = process.returncode
+    if not stdout.endswith("\n"):
+        stdout += "\n"
+    return stdout, stderr, exit_code, process_timeout
 
 def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack()):
     name, inputs = split_name_inputs(test)
@@ -107,6 +136,16 @@ def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack()):
     else:
         feedback.addTestSuccess(name, f"exit code: {student_exit_code}\n\nstdout:\n{student_stdout}\n\nstderr:\n{student_stderr}",
                                 f"exit code: {teacher_exit_code}\n\nstdout:\n{teacher_stdout}\n\nstderr:\n{teacher_stderr}")
+
+class Test:
+    
+    def __init__(self, stdout, stderr, 
+
+
+def grade(tests: list[Test]): 
+
+
+
 
 
 ans = "ex&eacute;cution : " + stdout.decode() + "(code Unix de retour : " + str(ce) + ")"
