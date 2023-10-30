@@ -92,6 +92,47 @@ attemps = 0
 
 evaluator==#|python|
 
+attemps = 0
+
+#Exemple for fibonacci
+
+code_before = "num_terms <- 50"
+
+code_after = """
+fib_sequence <- Fibonacci(num_terms)
+cat("Fibonacci sequence with", num_terms, "terms: ")
+cat(fib_sequence, sep = ", ")
+"""
+
+soluce = """
+Fibonacci<- function(n) {
+  if (n <= 0) {
+    return(NULL)  # Return NULL for invalid input
+  } else if (n == 1) {
+    return(0)     # The first Fibonacci number is 0
+  } else if (n == 2) {
+    return(c(0, 1))  # The second Fibonacci number is 1
+  } else {
+    # Initialize the sequence with the first two numbers
+    sequence <- c(0, 1)
+    
+    # Generate the Fibonacci sequence
+    for (i in 3:n) {
+      next_term <- sequence[i - 1] + sequence[i - 2]
+      sequence <- c(sequence, next_term)
+    }
+    
+    return(sequence)
+  }
+}
+"""
+
+code = """
+Fibonacci <- function(n) {
+
+}
+"""
+
 compare_stderr = False
 compare_exit_code = False
 ignore_teacher_timeout = False
