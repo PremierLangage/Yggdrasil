@@ -194,7 +194,7 @@ def default_grade(nb_success, nb_fail_timeout, nb_fail_stdout, nb_fail_stderr, n
 
 local_dic = dict()
 try:
-    exec(grade + f"\ng = grade({nb_success}, {nb_fail_timeout}, {nb_fail_stdout}, {nb_fail_stderr}, {nb_fail_exit_code})", None, local_dic)
+    exec(custom_grade + f"\ng = grade({nb_success}, {nb_fail_timeout}, {nb_fail_stdout}, {nb_fail_stderr}, {nb_fail_exit_code})", None, local_dic)
 except Exception as e:
     local_dic["g"] = default_grade(nb_success, nb_fail_timeout, nb_fail_stdout, nb_fail_stderr, nb_fail_exit_code)
     feedback.addGlobalFeedback("Attention, il y a une erreur dans la fonction `grade` fournie.\nLa fonction grade par défaut est donc utilisée.")
@@ -207,6 +207,9 @@ code_before==
 ==
 
 code_after==
+==
+
+custom_grade==
 ==
 
 compare_stderr = False
