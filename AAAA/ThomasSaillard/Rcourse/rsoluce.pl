@@ -1,4 +1,5 @@
 
+
 doc==
 Rsoluce.pl est un modèle permettant d'executer des programmes R.
 
@@ -20,7 +21,7 @@ Les balises à définir obligatoirement :
     ==
 
     text==
-    Énoncé de l'éxercice
+    énoncé de l'éxercice
     ==
 
     soluce==
@@ -91,52 +92,6 @@ attemps = 0
 ==
 
 evaluator==#|python|
-
-attemps = 0
-
-#Exemple for fibonacci
-
-code_before = "num_terms <- 50"
-
-code_after = """
-fib_sequence <- Fibonacci(num_terms)
-cat("Fibonacci sequence with", num_terms, "terms: ")
-cat(fib_sequence, sep = ", ")
-"""
-
-soluce = """
-Fibonacci<- function(n) {
-  if (n <= 0) {
-    return(NULL)  # Return NULL for invalid input
-  } else if (n == 1) {
-    return(0)     # The first Fibonacci number is 0
-  } else if (n == 2) {
-    return(c(0, 1))  # The second Fibonacci number is 1
-  } else {
-    # Initialize the sequence with the first two numbers
-    sequence <- c(0, 1)
-    
-    # Generate the Fibonacci sequence
-    for (i in 3:n) {
-      next_term <- sequence[i - 1] + sequence[i - 2]
-      sequence <- c(sequence, next_term)
-    }
-    
-    return(sequence)
-  }
-}
-"""
-
-code = """
-Fibonacci <- function(n) {
-
-}
-"""
-
-compare_stderr = False
-compare_exit_code = False
-ignore_teacher_timeout = False
-
 from feedback2 import FeedBack
 from subprocess import TimeoutExpired, run 
 
@@ -157,9 +112,6 @@ def concatenate_code_to_file(code_to_execute : str, file : str):
 
 
 def split_name_inputs(name_inputs : str) -> tuple:
-
-
-
     splited = name_inputs.splitlines()
     name = splited[0]
     inputs = ""
@@ -172,7 +124,6 @@ def run_script(script : str, inputs : str, flags : list = ["--vanilla"], timeout
     process_timeout = False
     try:
         process = run(['Rscript', script] + flags, input=inputs, capture_output=True, timeout=timeout, text=True)
-        print(process)
     except TimeoutExpired as e:
         process_timeout = True
     finally:
@@ -225,8 +176,8 @@ def run_test(test : str, timeout : int = 4, feedback : FeedBack = FeedBack(), nb
 
 tags = [i for i in globals() if i.startswith('test_')]
 for tag in tags:
-    if f"timeout_{tag.removeprefix('test_')}" in globals():
-        timeout = globals()[f"timeout_{tag.removeprefix('test_')}"]
+    if f"timeout_{tag[len('test_'):]}" in globals():
+        timeout = globals()[f"timeout_{tag[len('test_'):]}"]
     else: timeout = 4
     run_test(globals()[tag], timeout, feedback, nb_success, nb_fail_timeout, nb_fail_stdout, nb_fail_stderr, nb_fail_exit_code)
 if len(tags) == 0:
