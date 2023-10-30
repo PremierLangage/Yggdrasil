@@ -1,11 +1,12 @@
 
-extends =/AAAA/ThomasSaillard/Rcourse/rsoluce.pl
 
-title= Exercice Fibonnaci en R
+extends = rsoluce.pl
+
+title = Exercice Fibonacci en R
 
 text==
-Le but de cet exercice est d'écrire une fonction `Fibonnaci` en R qui prend en argument un entier
-et renvoie un vecteur ou une liste contenant la suite de Fibonnaci.
+Le but de cet exercice est d'écrire une fonction `Fibonacci` en R qui prend en argument un entier
+et renvoie un vecteur ou une liste contenant la suite de Fibonacci.
 ==
 
 editor.code ==#|r|
@@ -14,9 +15,8 @@ Fibonacci <- function(n) {
 }
 ==
 
-
 code_before==#|r|
-num_terms <- 5000
+num_terms <- as.integer(readLines(con = file("stdin"), n = 1))
 ==
 
 soluce ==#|r|
@@ -37,6 +37,7 @@ Fibonacci<- function(n) {
       sequence <- c(sequence, next_term)
     }
     
+
     return(sequence)
   }
 }
@@ -48,4 +49,24 @@ cat("Fibonacci sequence with", num_terms, "terms: ")
 cat(fib_sequence, sep = ", ")
 ==
 
+test_1==
+Premier élément
+1
+==
+
+
+test_2==
+Entrée invalide
+-1
+==
+
+test_3==
+Suite des premiers 100 éléments
+100
+==
+
+test_4==
+Big test
+500
+==
 
