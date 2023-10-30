@@ -91,6 +91,11 @@ attemps = 0
 ==
 
 evaluator==#|python|
+
+compare_stderr = False
+compare_exit_code = False
+ignore_teacher_timeout = False
+
 from feedback2 import FeedBack
 from subprocess import TimeoutExpired, run 
 
