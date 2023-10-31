@@ -16,7 +16,6 @@ sort <- function(vector) {
 ==
 
 code_before==#|r|
-starting_number <- as.integer(readLines(con = file("stdin"), n = 1))
 ==
 
 soluce ==#|r|
