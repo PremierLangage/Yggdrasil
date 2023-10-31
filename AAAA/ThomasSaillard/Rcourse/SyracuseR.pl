@@ -49,7 +49,7 @@ print(paste("Syracuse sequence for", starting_number, "is:", paste(result, colla
 ==
 
 before_tests==#|py|
-test_2 = "Test aléatoire\n"
+test_2 = "Test al&eacute;atoire\n"
 
 from random import randint
 
