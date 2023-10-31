@@ -70,7 +70,7 @@ Les balises optionnelles :
     Pour les plus experts la balise grade permet de rensigner une fonction python `grade`
     qui va générer la note de l'élève. Notez que l'exemple si dessus est la fonction utilisée par défaut.
 
-    test_builder==#|py|
+    before_tests==#|py|
     ==
 
     Dans cette balise vous pouvez écrire du code python permettant de générer les tests. Ceci est particulièrement intéressant 
