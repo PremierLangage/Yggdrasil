@@ -10,7 +10,7 @@ Dans cette exercice la complexité de l'algorithme sera prise en compte
 ==
 
 editor.code ==#|r|
-Syracuse <- function(n) {
+sort <- function(vector) {
 
 }
 ==
