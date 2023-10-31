@@ -46,7 +46,7 @@ print(sort(integer_vector))
 ==
 
 before_tests==#|py|
-test_2 = "Test al&eacute;atoire\n"
+test_2 = "Test al&eacute;atoire 200 &eacute;l&eacute;ments\n"
 
 from random import randint
 
@@ -55,7 +55,7 @@ test_2 = test_2
 ==
 
 test_1==
-Test suite 
-250 -> 125 -> 376 -> 188 -> 94 -> 47 -> 142 -> 71 -> 214 -> 107 -> 322 -> 161 -> 484 -> 242 -> 121 -> 364 -> 182 -> 91 -> 274 -> 137 -> 412
+Test facile 
+250 125 376 188 94 47 142 71 214 107 322 161 484 242 121 364 182 91 274 137 412
 ==
 
