@@ -52,13 +52,13 @@ test_4 = "Test al&eacute;atoire 10000 &eacute;l&eacute;ments\n"
 
 from random import randint
 
-test_2 += " ".join(sample(range(1, 100_000), 200)
+test_2 += " ".join(sample(range(1, 100_000), 200))
 test_2 = test_2
 
-test_3 += " ".join(sample(range(1, 100_000), 2_000)
+test_3 += " ".join(sample(range(1, 100_000), 2_000))
 test_3 = test_3
 
-test_4 += " ".join(sample(range(1, 100_000), 10_000)
+test_4 += " ".join(sample(range(1, 100_000), 10_000))
 test_4 = test_4
 ==
 
