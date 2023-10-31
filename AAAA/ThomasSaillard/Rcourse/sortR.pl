@@ -27,7 +27,7 @@ sort <- function(vector) {
         lower <- vector[vector < pivot]
         upper <- vector[vector > pivot]
         equal <- vector[vector == pivot]
-        return(c(quick_sort_numeric_vector(lower), equal, quick_sort_numeric_vector(upper)))
+        return(c(sort(lower), equal, sort(upper)))
     }
 }
 ==
