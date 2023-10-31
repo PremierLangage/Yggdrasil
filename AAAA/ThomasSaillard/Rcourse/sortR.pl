@@ -47,6 +47,8 @@ print(sort(integer_vector))
 
 before_tests==#|py|
 test_2 = "Test al&eacute;atoire 200 &eacute;l&eacute;ments\n"
+test_3 = "Test al&eacute;atoire 2000 &eacute;l&eacute;ments\n"
+test_3 = "Test al&eacute;atoire 40000 &eacute;l&eacute;ments\n"
 
 from random import randint
 
