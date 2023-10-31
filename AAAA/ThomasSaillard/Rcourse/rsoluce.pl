@@ -118,7 +118,7 @@ def concatenate_code_to_file(code_to_execute : str, file : str):
 
 def split_name_inputs(name_inputs : str) -> tuple:
     splited = name_inputs.splitlines()
-    name = splited[0].encode()
+    name = splited[0]
     inputs = ""
     if len(splited) > 1:
         inputs = "\n".join(splited[1:] + ["\n"])
