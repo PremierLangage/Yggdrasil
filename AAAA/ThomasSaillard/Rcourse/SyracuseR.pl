@@ -48,6 +48,14 @@ result <- Syracuse(starting_number)
 print(paste("Syracuse sequence for", starting_number, "is:", paste(result, collapse = " -> ")))
 ==
 
+before_tests==#|py|
+test_2 = "Test aléatoire\n"
+
+from random import randint
+
+test_2 += str(randint(600, 3000))
+==
+
 test_1==
 Test suite 
 500
