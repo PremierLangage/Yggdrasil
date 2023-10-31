@@ -61,7 +61,7 @@ Les balises optionnelles :
     La balises `code_after` fait comme la balise `code_before` mais concatène à la fin de code
     de l'élève ou de la solution.
 
-    grade==
+    custom_grade==
     def grade(nb_success : int, nb_fail_timeout : int, nb_fail_stdout : int, nb_fail_stderr : int, nb_fail_exit_code : int):
         nb_tests = nb_success + nb_fail_timeout + nb_fail_stdout + nb_fail_stderr + nb_fail_exit_code
         return round(100 * nb_success / nb_tests)
@@ -70,6 +70,11 @@ Les balises optionnelles :
     Pour les plus experts la balise grade permet de rensigner une fonction python `grade`
     qui va générer la note de l'élève. Notez que l'exemple si dessus est la fonction utilisée par défaut.
 
+    test_builder==#|py|
+    ==
+
+    Dans cette balise vous pouvez écrire du code python permettant de générer les tests. Ceci est particulièrement intéressant 
+    pour pouvoir ajouter de l'aléatoire dans les tests.
 ==
 
 @ /ComputerScience/python/AP1-1920/templates/utils/feedback2.py
