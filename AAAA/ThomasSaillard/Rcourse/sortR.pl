@@ -34,12 +34,14 @@ sort <- function(vector) {
 
 code_after==#|r|
 input <- readLines(con = file("stdin"), n = 1)
+close("stdin")
 
 # Split the input string into individual elements
 elements <- unlist(strsplit(input, " "))
 
 # Convert elements to integers
 integer_vector <- as.integer(elements)
+
 
 print(sort(integer_vector))
 ==
