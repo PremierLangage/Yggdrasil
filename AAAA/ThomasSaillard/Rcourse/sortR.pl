@@ -34,7 +34,7 @@ sort <- function(vector) {
 
 code_after==#|r|
 input <- readLines(con = file("stdin"), n = 1)
-closeAllConnections()
+closeAllConnections() # If not getting a warning 
 
 # Split the input string into individual elements
 elements <- unlist(strsplit(input, " "))
