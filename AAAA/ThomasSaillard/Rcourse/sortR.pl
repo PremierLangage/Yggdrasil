@@ -50,16 +50,13 @@ test_2 = "Test al&eacute;atoire 200 &eacute;l&eacute;ments\n"
 test_3 = "Test al&eacute;atoire 2000 &eacute;l&eacute;ments\n"
 test_4 = "Test al&eacute;atoire 10000 &eacute;l&eacute;ments\n"
 
-from random import randint
+from random import sample
 
-test_2 += " ".join(sample(range(1, 100_000), 200))
-test_2 = test_2
+test_2 += " ".join(str(i) for i in sample(range(1, 100_000), 200))
 
-test_3 += " ".join(sample(range(1, 100_000), 2_000))
-test_3 = test_3
+test_3 += " ".join(str(i) for i in sample(range(1, 100_000), 2_000))
 
-test_4 += " ".join(sample(range(1, 100_000), 10_000))
-test_4 = test_4
+test_4 += " ".join(str(i) for i in sample(range(1, 100_000), 10_000))
 ==
 
 test_1==
