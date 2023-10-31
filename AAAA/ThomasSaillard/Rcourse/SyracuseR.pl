@@ -54,6 +54,7 @@ test_2 = "Test aléatoire\n"
 from random import randint
 
 test_2 += str(randint(600, 3000))
+test_2 = test_2.encode()
 ==
 
 test_1==
