@@ -48,12 +48,18 @@ print(sort(integer_vector))
 before_tests==#|py|
 test_2 = "Test al&eacute;atoire 200 &eacute;l&eacute;ments\n"
 test_3 = "Test al&eacute;atoire 2000 &eacute;l&eacute;ments\n"
-test_3 = "Test al&eacute;atoire 10000 &eacute;l&eacute;ments\n"
+test_4 = "Test al&eacute;atoire 10000 &eacute;l&eacute;ments\n"
 
 from random import randint
 
-test_2 += str(randint(600, 3000))
+test_2 += " ".join(sample(range(1, 100_000), 200)
 test_2 = test_2
+
+test_3 += " ".join(sample(range(1, 100_000), 2_000)
+test_3 = test_3
+
+test_4 += " ".join(sample(range(1, 100_000), 10_000)
+test_4 = test_4
 ==
 
 test_1==
