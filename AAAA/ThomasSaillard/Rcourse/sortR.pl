@@ -20,32 +20,29 @@ starting_number <- as.integer(readLines(con = file("stdin"), n = 1))
 ==
 
 soluce ==#|r|
-Syracuse <- function(n) {
-  # Create an empty vector to store the sequence
-  sequence <- c()
-  
-  # Continue generating the sequence until n becomes 1
-  while (n != 1) {
-    sequence <- c(sequence, n)  # Append the current value to the sequence
-    
-    # Apply the Collatz rules
-    if (n %% 2 == 0) {
-      n <- n / 2
+sort <- function(vector) {
+    if (length(vector) <= 1) {
+        return(vector)
     } else {
-      n <- 3 * n + 1
+        pivot <- vector[1]
+        lower <- vector[vector < pivot]
+        upper <- vector[vector > pivot]
+        equal <- vector[vector == pivot]
+        return(c(quick_sort_numeric_vector(lower), equal, quick_sort_numeric_vector(upper)))
     }
-  }
-  
-  # Append the final value (1) to the sequence
-  sequence <- c(sequence, 1)
-  
-  return(sequence)
 }
 ==
 
 code_after==#|r|
-result <- Syracuse(starting_number)
-print(paste("Syracuse sequence for", starting_number, "is:", paste(result, collapse = " -> ")))
+input <- readLines(con = file("stdin"), n = 1)
+
+# Split the input string into individual elements
+elements <- unlist(strsplit(input, " "))
+
+# Convert elements to integers
+integer_vector <- as.integer(elements)
+
+print(sort(integer_vector))
 ==
 
 before_tests==#|py|
