@@ -8,7 +8,7 @@ editor.language = assembly
 editor.code ==
 ; Define variables in the data section
 SECTION .DATA
-    hello:     db 'Henri aime boire!',10
+    hello:     db 'Hello World!',10
     helloLen:  equ $-hello
 
 ; Code goes in the text section
