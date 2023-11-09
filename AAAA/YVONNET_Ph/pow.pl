@@ -27,6 +27,14 @@ True
 9
 ==
 
+pltest1==
+>>> f==f#
+True
+>>> f(5)#super !
+25
+>>> f(3)#Ceci est le test 2
+9
+==
 
 editor.code==
 
