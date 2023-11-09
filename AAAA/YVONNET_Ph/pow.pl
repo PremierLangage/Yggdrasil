@@ -32,6 +32,10 @@ pltest1==
 True
 >>> f(5)#super !
 25
+>>> from random import randint#
+>>> a=randint(1,100)#
+>>> f(a)==a*a
+True
 >>> f(3)#Ceci est le test 2
 9
 ==
