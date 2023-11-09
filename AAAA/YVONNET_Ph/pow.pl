@@ -17,7 +17,7 @@ text==
 Ecrivez une fonction f qui retourne le carré de son paramètre.
 ==
 
-
+# Un '#' seul immédiatement après le test est invisible en cas de succès
 pltest==
 >>> f==f#
 True
