@@ -19,7 +19,7 @@ Ecrivez une fonction f qui retourne le carré de son paramètre.
 
 
 pltest==
->>> f(2)
+>>> f(2)#super !
 4
 >>> f(3)#Ceci est le test 2
 9
