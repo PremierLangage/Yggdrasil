@@ -41,7 +41,8 @@ True
 ==
 
 editor.code==
-
+def f(x):
+    return x*x
 ==
 editor.height=145
 
