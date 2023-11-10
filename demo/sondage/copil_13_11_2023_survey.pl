@@ -24,19 +24,20 @@ author=L'équipe PLaTon/PL
 title=PLaTon/PL : Où en est-on ? Où va-t-on ?
 
 text==#|html|
-<span style="font-size:1.2em">Merci de répondre le plus naturellement possible avec vos impressions spontannées. La somme des tendances 
-offrira une base pour plus de discussions.</span>
+<span style="font-size:1.2em">Voici un petit questionnaire préliminaire aux discussions.</span>
 
 <br />
 ==
 
 question1==#|html|
-<span style="font-size:1.2em">Question 1</span>
+<span style="font-size:1.2em">Quel age a le projet PLaTon actuellement ?</span>
 ==
 
 items1==
-1
-2
+3 ans
+4 ans
+5 ans
+6 ans
 ==
 
 question2==#|html|
