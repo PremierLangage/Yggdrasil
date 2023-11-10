@@ -41,35 +41,40 @@ items1==
 ==
 
 question2==#|html|
-<span style="font-size:1.2em"><b>Quelles raisons</b> limitent la réussite des apprenants dans les formations dans lesquelles vous intervenez ?
-(plusieurs réponses possibles)</span>
+<span style="font-size:1.2em">Combien il y a-t-il d'utilisateurs actifs ces deux derniers mois (depuis la rentrée de septembre 2023) ?</span>
 ==
 
 items2==
-1
-2
+118
+236
+341
+519
 ==
 
 question3==#|html|
-<span style="font-size:1.2em">Parmi <b>les dispositifs suivants</b>, lesquels sont utilisés dans vos formations ? (plusieurs réponses possibles)</span>
+<span style="font-size:1.2em">Combien d'exercices sont actuellement dans les ressources ?</span>
 ==
 
 items3==
-1
-2
+475
+871
+1327
+2885
 ==
 
 question4==#|html|
-<span style="font-size:1.2em">Quelle est, selon votre ressenti, <b>la plus grande cause d'échec</b> de vos élèves ? (il ne faut en garder qu'un...)</span>
+<span style="font-size:1.2em">Combien de fois la plateforme PL a été solicitée pour faire des évaluations< et noter effectivement une proposition de réponse ?/span>
 ==
 
 items4==
-1
-2
+12 421
+97 703
+767 970
+1 522 029
 ==
 
 question5==#|html|
-<span style="font-size:1.2em">S'il fallait ne garder que <b>le critère le plus important</b> qui rend un activité pédagogiques engageante, ce serait ? </span>
+<span style="font-size:1.2em"></span>
 ==
 
 items5==
