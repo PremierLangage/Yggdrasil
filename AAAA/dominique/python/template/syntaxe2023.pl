@@ -17,13 +17,14 @@
 
 
 title= test de syntaxe
+text=
 
 before ==
 from pltest_doc import *
-
+from feedback2 import feedback
 code='print("Hello World"\n'
 
-
+lfb = FeedBack()
 # with open("student.py","w") as ost:
 #        ost.write(code)
 
