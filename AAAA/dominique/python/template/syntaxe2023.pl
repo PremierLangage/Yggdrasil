@@ -16,8 +16,14 @@
 @ /builder/before.py [builder.py]
 
 before ==
+from pltest_doc import *
 
-text += "\n# vous n'avez pas défini de before"
+code='print("Hello World"\n'
+
+
+with open("student.py","w") as ost:
+        ost.write(code)
+text = "\n Corriger ce code puis valider."
 
 ==
 
