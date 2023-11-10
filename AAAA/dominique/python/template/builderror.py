@@ -44,7 +44,7 @@ print()
         letest= f""">>> f(True)\n{tic}\n"""
         return code,letest, "Mauvais nom de variable peut être."
 
- 
+    fname, = choice(["access","append","livi","push","pull","foo","bar","fubar","glop","pasglop"])
     if type=="TypeError":
         r =randint(1,10)
         r=3
@@ -55,43 +55,36 @@ print()
             hint="\nChaines et entiers ne font pas bon ménage."
             return code,letest,hint
         elif r== 2:
-            name, value = choice([("fonc",2),("truc",3),("machin",5)])
+            value = randint(3,18)
             code = f"""
 #pas de solution a l'erreur suivante 
 # Faite que la fonction retourne un entier 
-def {name}():\n   return "{randomText()}"+{value}\n """
-            letest = f""">>> type({name}()) == type(3)\nTrue\n"""
+def {fname}():\n   return "{randomText()}"+{value}\n """
+            letest = f""">>> type({fname}()) == type(3)\nTrue\n"""
             hint="\nChaines et entiers ne font pas bon ménage."
             return code,letest,hint
         elif r==3:
-            fname, = choice(["access","append","livi","push","pull","foo","bar","fubar","glop","pasglop"])
             if randint(1,10) <7:
-                code = f"""
-    def {fname}(l):\n   return l["index 0"] """
+                code = f"""def {fname}(l):\n   return l["index 0"] """
                 letest = f""">>> {fname}([3,17,567]) == 3 \nTrue\n"""
                 hint="\nLes indices dans les listes sont des entiers."
                 return code,letest,hint
             else:
-                code = f"""
-    def {fname}(l):\n   return l["{fname}"] """
+                code = f"""def {fname}(l):\n   return l["{fname}"] """
                 letest = f""">>> {fname}([3,17,567]) == 3 \nTrue\n"""
                 hint="\nLes indices dans les listes sont des entiers.\nUtilisez l'indice 0."
                 return code,letest,hint
         elif r==4:
-
+                tic = randomText()
+                toc = randomText()
+                code = f"""def {fname}(l):\n   return "{tic}"*" "*"" "{toc}" "
+                letest = f""">>> {fname}() == 3 \n"{tic} {toc}"\n"""
+                hint="\nLes chaine d'additinne mais en se multiplies pas\n"
+                return code,letest,hint
 
 
 __doc__="""
-2. **Concaténation de types incompatibles :**
-    ```python
-    result = "Hello, " + 42
-    ```
 
-3. **Utilisation d'une liste comme index (nécessite un nombre entier) :**
-    ```python
-    my_list = [1, 2, 3]
-    result = my_list["index"]
-    ```
 
 4. **Utilisation d'une chaîne de caractères comme opérande dans une multiplication :**
     ```python
