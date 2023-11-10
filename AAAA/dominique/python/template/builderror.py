@@ -1,21 +1,32 @@
-import random
+from random import *
 
 
 def randomText():
-    return random.choice(["Hello World","Hello World!","Bienvenu !","Salut","Welcome !","Vitaj !","Üdvözöljük","Καλώς ορίσατε"])
+    return  choice(["Hello World","Hello World!","Bienvenu !","Salut","Welcome !","Vitaj !","Üdvözöljük","Καλώς ορίσατε"])
+
+ERRORLIST=["SyntaxeError","IndentationError","NameError",]
 
 def randomError():
-    return random.choice(["SyntaxeError","IndentationError",])
+    return  choice(ERRORLIST)
 
 def builderror(type=None):
     tic = randomText()
-    type = randomError()
+    if type in range(len(ERRORLIST)):
+        type = ERRORLIST[type]
+    else:
+        type = randomError()
     if type=="SyntaxeError":
         code = f"""def f():\n   print("{tic}"\nprint()\n"""
         letest= f""">>> f()\n{tic}\n"""
         return code,letest, "Parenthèse sur la ligne au dessus."
     if type=="IndentationError":
-        code = f"""def f():\nprint("{tic}"\nprint()\n"""
-        letest= f""">>> f()\n{tic}\n"""
-        return code,letest, "PROBLÈME D'INDENTATION IL MANQUE UNE TAB."
-    
+        if randint(1,10) <7:
+            code = f"""def f():\nprint("{tic}"\nprint()\n"""
+            letest= f""">>> f()\n{tic}\n"""
+            return code,letest, "PROBLÈME D'INDENTATION IL MANQUE UNE TAB."
+        else:
+
+    if type=="NameError":
+    code = f"""def f(n):\n   if p: # p parametre de la fonction\n   print("{tic}"\nprint()\n"""
+    letest= f""">>> f(True)\n{tic}\n"""
+    return code,letest, "PROBLÈME D'INDENTATION IL MANQUE UNE TAB."
