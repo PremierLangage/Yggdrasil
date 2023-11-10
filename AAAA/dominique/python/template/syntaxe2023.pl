@@ -43,8 +43,8 @@ lfb = FeedBack()
 text = "\n Corriger ce code puis valider."
 
 
-text += str(response)
-#r,b = PlRunner(response,"\n>>> a=1\n",fb=lfb).runpltest("Compilation",0)
+code = str(response['answer'])
+#r,b = PlRunner(code,"\n>>> a=1\n",fb=lfb).runpltest("Compilation",0)
 if r:
     grade= (100,b)
 else:
