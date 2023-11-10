@@ -112,4 +112,4 @@ def printList(l):
 17
 89
 """
-        hint = "les listes sont indicées de 0,n-1"
+        hint = "\nles listes sont indicées de 0,n-1"
