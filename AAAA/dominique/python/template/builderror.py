@@ -44,7 +44,7 @@ print()
         letest= f""">>> f(True)\n{tic}\n"""
         return code,letest, "Mauvais nom de variable peut être."
 
-    fname, = choice(["access","append","livi","push","pull","foo","bar","fubar","glop","pasglop"])
+    fname = choice(["access","append","livi","push","pull","foo","bar","fubar","glop","pasglop"])
     if type=="TypeError":
         r =randint(1,10)
         r=5
