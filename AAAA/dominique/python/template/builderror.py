@@ -51,7 +51,10 @@ print()
         if r==1:
             name, value = choice([("quatre",2),("cinq",3),("Sept",5)])
             op = choice("+/-")
-            code = f"""def {name}():\n   return "2"{op}{value}\n """
+            if value %2 :
+                code = f"""def {name}():\n   return "2"{op}{value}\n """
+            else:
+                code = f"""def {name}():\n   return {value}{op}"2"\n """
             letest = f""">>> {name}()\n{value}\n"""
             hint="\nChaines et entiers ne font pas bon ménage."
             return code,letest,hint
