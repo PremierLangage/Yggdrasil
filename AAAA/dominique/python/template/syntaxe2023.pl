@@ -31,7 +31,7 @@ lfb = FeedBack()
 #        ost.write(code)
 
 text = "\n Corriger ce code puis valider."
-r,b = PlRunner(code,"\n>>> a=1\n",fb=lfb).runpltest("Compilation",0)
+r,b = PlRunner(code,letest,fb=lfb).runpltest("Compilation",0)
 
 
 
