@@ -74,21 +74,26 @@ items4==
 ==
 
 question5==#|html|
-<span style="font-size:1.2em"></span>
+<span style="font-size:1.2em">Combien de fiches d'exercices ont été déployé sur la plate forme pour des apprenants ?</span>
 ==
 
 items5==
-1
-2
+53
+130
+217
+308
 ==
 
 question6==#|html|
-<span style="font-size:1.2em">Parmi les mesures suivantes, laquelle aura <b>le plus d'impact sur l'engagement</b> des apprenants ?</span>
+<span style="font-size:1.2em">Que s'est faire la plateforme PL actuellement ?</span>
 ==
 
 items6==
-1
-2
+L'analogue de question directe avec visualisation de la répartition des réponses des utilisateurs en direct.
+Des questionnaires orthographiques comme le Projet Voltaire.
+Des questionnaires rempli de manière annonyme pour proposer des évaluations des enseignements.
+Exploitez des réponses des apprenants produites dans les langages C, Python, Java, Haskell, NASM, bash
+Proposer des dashboards aux élèves pour qu'ils se situent dans leur promotion 
 ==
 
 question7==#|html|
@@ -116,9 +121,7 @@ group2 =: RadioGroup
 group3 =: RadioGroup
 group4 =: RadioGroup
 group5 =: RadioGroup
-group6 =: RadioGroup
-group7 =: RadioGroup
-group8 =: RadioGroup
+group6 =: CheckboxGroup
 
 before==#|python|
 
@@ -128,8 +131,6 @@ group3.items = []
 group4.items = []
 group5.items = []
 group6.items = []
-group7.items = []
-group8.items = []
 
 for i, item in enumerate(items1.splitlines()):
     group1.items.append({ "id": i, "content": item })
@@ -149,11 +150,6 @@ for i, item in enumerate(items5.splitlines()):
 for i, item in enumerate(items6.splitlines()):
     group6.items.append({ "id": i, "content": item })
 
-for i, item in enumerate(items7.splitlines()):
-    group7.items.append({ "id": i, "content": item })
-
-for i, item in enumerate(items8.splitlines()):
-    group8.items.append({ "id": i, "content": item })
 ==
 
 form==#|html|
@@ -197,19 +193,6 @@ form==#|html|
 
 {{ group6|component }}
 
-<br />
-<br />
-
-{{ question7 }}
-
-{{ group7|component }}
-
-<br />
-<br />
-
-{{ question8 }}
-
-{{ group8|component }}
 
 ==
 
