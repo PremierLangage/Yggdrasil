@@ -113,3 +113,4 @@ def printList(l):
 89
 """
         hint = "\nles listes sont indicées de 0,n-1"
+        return code,letest,hint
