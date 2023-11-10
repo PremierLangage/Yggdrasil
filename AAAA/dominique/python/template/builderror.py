@@ -92,7 +92,7 @@ def {fname}():\n   return "{randomText()}"+{value}\n """
             hint="\nIl est possible de concatener des listes.\n"
             return code,letest,hint
     if type == "ValueError":
-        code=f"""print(int("{randomText()}"))\n# peut probable de corriger cela n'a pas de sens\n"""
+        code=f"""print(int("{randomText()}"))\n# peu probable de corriger cela n'a pas de sens\n"""
         hint ="\n Un programme vide fonctionnera très bien ici ! \n"
         letest = ">>> True # Je vous ai dit que l'on ne peut pas corriger \nTrue"
         return code,letest,hint
