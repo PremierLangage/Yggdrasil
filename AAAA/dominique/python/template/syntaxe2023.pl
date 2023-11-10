@@ -22,7 +22,7 @@ text=
 before ==
 from pltest_doc import *
 from feedback2 import FeedBack
-code='print("Hello World"\n'
+code='print("Hello World"\nz=3\n'
 
 lfb = FeedBack()
 # with open("student.py","w") as ost:
