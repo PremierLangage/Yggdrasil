@@ -31,6 +31,8 @@ lfb = FeedBack()
 text = "\n Corriger ce code puis valider."
 r,b = PlRunner(code,"\n>>> a=1\n",fb=lfb).runpltest("Compilation",0)
 
+letest = "\n>>> f()\nHello Word\n"
+
 text += b
 ==
 
@@ -44,7 +46,7 @@ text = "\n Corriger ce code puis valider."
 
 
 code = str(response['answer'])
-r,b = PlRunner(code,"\n>>> f()\n'Hello Word'\n",fb=lfb).runpltest("Compilation",0)
+r,b = PlRunner(code,letest,fb=lfb).runpltest("Compilation",0)
 
 text+= b+b+b+b
 if r:
