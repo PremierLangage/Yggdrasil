@@ -15,6 +15,7 @@ def builderror(type=None):
         type = ERRORLIST[type]
     else:
         type = choice(ERRORLIST)
+
     if type=="SyntaxeError":
         code = f"""def f():\n   print("{tic}"\nprint()\n"""
         letest= f""">>> f()\n{tic}\n"""
