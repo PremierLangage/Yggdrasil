@@ -98,14 +98,15 @@ def {fname}():\n   return "{randomText()}"+{value}\n """
         return code,letest,hint
 
     if type == "IndexError" :
-        code = """
+        if randint(1,10) <7:
+            code = """
 def printList(l):
     i=0
     while i <= len(l):
         print(l[i])
         i=i+1
 """
-        letest= """
+            letest= """
 >>> printList([0,1])
 0
 1
@@ -113,5 +114,20 @@ def printList(l):
 17
 89
 """
-        hint = "\nles listes sont indicées de 0,n-1"
-        return code,letest,hint
+            hint = "\nles listes sont indicées de 0,n-1"
+            return code,letest,hint
+        else:
+            code = """
+def addList(l,value):
+    l[len(l)] = value
+"""
+            letest= """
+>>> printList([0],1)
+0
+1
+>>> printList([17],89])
+17
+89
+"""
+            hint = "\nles listes sont indicées de 0,n-1\n utilisez append pour ajouter à la fin."
+            return code,letest,hint
