@@ -46,8 +46,7 @@ print()
 
     fname = choice(["access","append","livi","push","pull","foo","bar","fubar","glop","pasglop"])
     if type=="TypeError":
-        r =randint(1,10)
-        r=1
+        r =randint(1,5)
         if r==1:
             name, value = choice([("quatre",2),("cinq",3),("Sept",5)])
             op = choice("+/-")
@@ -92,35 +91,3 @@ def {fname}():\n   return "{randomText()}"+{value}\n """
             letest = f""">>> {fname}([0,1,2])\n[0, 1, 2, {value}]\n"""
             hint="\nIl est possible de concatener des listes.\n"
             return code,letest,hint
-        elif r==6:
-            #Division entre types incompatibles
-            value = randint(3,88)
-__doc__="""
-
-    ```python
-    result = 10 / "2"
-    ```
-
-7. **Utilisation d'une chaîne de caractères comme index dans une liste :**
-    ```python
-    my_list = [1, 2, 3]
-    result = my_list["index"]
-    ```
-
-8. **Utilisation de `range` avec des chaînes de caractères :**
-    ```python
-    result = list(range("abc"))
-    ```
-
-9. **Soustraction entre types incompatibles :**
-    ```python
-    result = 5 - "2"
-    ```
-
-10. **Utilisation d'un dictionnaire comme index (nécessite un type hashable) :**
-    ```python
-    my_dict = {"key": "value"}
-    result = my_dict["key", "another_key"]
-    ```
-
-Ces exemples illustrent différents scénarios où une `TypeError` peut se produire en raison d'opérations entre types de données incompatibles en Python."""
