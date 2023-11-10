@@ -2,7 +2,7 @@ import random
 
 
 def randomText():
-    random.choice(["Hello World","Hello World!","Bienvenu !","Salut","Welcome !","Vitaj !","Üdvözöljük","Καλώς ορίσατε"])
+    return random.choice(["Hello World","Hello World!","Bienvenu !","Salut","Welcome !","Vitaj !","Üdvözöljük","Καλώς ορίσατε"])
 
 def builderror(type=None):
     if type:
