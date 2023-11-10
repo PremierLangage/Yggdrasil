@@ -91,7 +91,7 @@ def {fname}():\n   return "{randomText()}"+{value}\n """
             return code,letest,hint
         elif r==6:
             #Division entre types incompatibles
-
+            value = randint(3,88)
 __doc__="""
 
     ```python
