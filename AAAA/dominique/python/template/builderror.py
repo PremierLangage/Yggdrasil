@@ -50,7 +50,8 @@ print()
         r=5
         if r==1:
             name, value = choice([("quatre",2),("cinq",3),("Sept",5)])
-            code = f"""def {name}():\n   return "2"+{value}\n """
+            op = choice("+/-")
+            code = f"""def {name}():\n   return "2"{op}{value}\n """
             letest = f""">>> {name}()\n{value}\n"""
             hint="\nChaines et entiers ne font pas bon ménage."
             return code,letest,hint
@@ -83,19 +84,16 @@ def {fname}():\n   return "{randomText()}"+{value}\n """
                 return code,letest,hint
         elif r==5:
             # Concaténation de listes avec pas une liste 
-                code = f"""# L est une liste \ndef {fname}(l):\n   return l + 3\n"""
-                letest = f""">>> {fname}([0,1,2])\n[0, 1, 2, 3]\n"""
-                hint="\nLes chaines s'additionnent mais ne se multiplient pas\n"
-                return code,letest,hint
+            value = randint(3,88)
+            code = f"""# L est une liste \ndef {fname}(l):\n   return l + {value}\n"""
+            letest = f""">>> {fname}([0,1,2])\n[0, 1, 2, {value}]\n"""
+            hint="\nIl est possible de concatener des listes.\n"
+            return code,letest,hint
+        elif r==6:
+            #Division entre types incompatibles
+
 __doc__="""
 
-5. **:**
-    ```python
-    list1 = [1, 2, 3]
-    list2 = list1 + 4
-    ```
-
-6. **Division entre types incompatibles :**
     ```python
     result = 10 / "2"
     ```
