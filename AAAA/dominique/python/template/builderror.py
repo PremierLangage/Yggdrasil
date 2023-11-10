@@ -68,7 +68,7 @@ def {name}():\n   return "{randomText()}"+{value}\n """
             code = f"""
 def {fname}(l):\n   return l["index 0"] """
             letest = f""">>> {fname}([3,17,567]) == 3 \nTrue\n"""
-            hint="\nLe indice dans les listes sont des entiers."
+            hint="\nLes indices dans les listes sont des entiers."
             return code,letest,hint
 
 __doc__="""
