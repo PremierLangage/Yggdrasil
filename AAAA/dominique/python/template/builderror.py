@@ -11,8 +11,6 @@ def builderror(errortype):
     tic = randomText()
     if errortype in  ERRORLIST:
         pass
-    elif errortype in [x for x in range(len(ERRORLIST))]:
-        errortype = ERRORLIST[errortype]
     else:
         errortype = choice(ERRORLIST)
 
