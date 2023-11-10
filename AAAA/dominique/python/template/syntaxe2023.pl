@@ -50,7 +50,6 @@ text = "\n Corriger ce code puis valider."
 code = str(response['answer'])
 r,b = PlRunner(code,letest,fb=lfb).runpltest("Compilation",0)
 
-text+= b+b+b+b
 if r:
     grade= (100,b)
 else:
