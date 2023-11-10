@@ -100,8 +100,10 @@ def {fname}():\n   return "{randomText()}"+{value}\n """
     if type == "IndexError" :
         code = """
 def printList(l):
-    for i in range(len(l)+1):
+    i=0
+    while i < len(l):
         print(l[i])
+        i=i+1
 """
         letest= """
 >>> printList([0,1])
