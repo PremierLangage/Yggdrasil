@@ -46,13 +46,15 @@ print()
 
  
     if type=="TypeError":
-        if randint(1,10)==1:
+        r =randint(1,10)
+        r==2
+        if r==1:
             name, value = choice([("quatre",2),("cinq",3),("Sept",5)])
             code = f"""def {name}():\n   return "2"+{value}\n """
             letest = f""">>> {name}()\n{value}\n"""
             hint="\nChaines et entiers ne font pas bon ménage."
             return code,letest,hint
-        elif randint(1,10)== 2:
+        elif r== 2:
             name, value = choice([("fonc",2),("truc",3),("machin",5)])
             code = f"""
 #pas de solution a l'erreur suivante \n
