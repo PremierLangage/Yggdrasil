@@ -64,7 +64,7 @@ def {name}():\n   return "{randomText()}"+{value}\n """
             hint="\nChaines et entiers ne font pas bon ménage."
             return code,letest,hint
 
-
+__doc__="""
 2. **Concaténation de types incompatibles :**
     ```python
     result = "Hello, " + 42
@@ -114,4 +114,4 @@ def {name}():\n   return "{randomText()}"+{value}\n """
     result = my_dict["key", "another_key"]
     ```
 
-Ces exemples illustrent différents scénarios où une `TypeError` peut se produire en raison d'opérations entre types de données incompatibles en Python.
+Ces exemples illustrent différents scénarios où une `TypeError` peut se produire en raison d'opérations entre types de données incompatibles en Python."""
