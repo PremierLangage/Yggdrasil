@@ -26,7 +26,7 @@ from builderror import builderror
 
 
 
-code, letest, hint = builderror("SyntaxeError")
+code, letest, hint = builderror(num)
 
 lfb = FeedBack()
 # with open("student.py","w") as ost:
