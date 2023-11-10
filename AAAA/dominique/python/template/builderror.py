@@ -57,11 +57,18 @@ print()
         elif r== 2:
             name, value = choice([("fonc",2),("truc",3),("machin",5)])
             code = f"""
-#pas de solution a l'erreur suivante \n
+#pas de solution a l'erreur suivante 
 # Faite que la fonction retourne un entier 
 def {name}():\n   return "{randomText()}"+{value}\n """
             letest = f""">>> type({name}()) == type(3)\nTrue\n"""
             hint="\nChaines et entiers ne font pas bon ménage."
+            return code,letest,hint
+        elif r==3:
+            fname, = choice(["access","append","livi","push","pull","foo","bar","fubar","glop","pasglop"])
+            code = f"""
+def {fname}(l):\n   return l["index 0"] """
+            letest = f""">>> {fname}([3,17,567]) == 3 \nTrue\n"""
+            hint="\nLe indice dans les listes sont des entiers."
             return code,letest,hint
 
 __doc__="""
