@@ -4,7 +4,7 @@ from random import *
 def randomText():
     return  choice(["Hello World","Hello World!","Bienvenu !","Salut","Welcome !","Vitaj !","Üdvözöljük","Καλώς ορίσατε"])
 
-ERRORLIST=["SyntaxeError","IndentationError","NameError","TypeError"]
+ERRORLIST=["SyntaxeError","IndentationError","NameError","TypeError","ValueError","IndexError"]
 
 def randomError():
     return  choice(ERRORLIST)
@@ -91,3 +91,25 @@ def {fname}():\n   return "{randomText()}"+{value}\n """
             letest = f""">>> {fname}([0,1,2])\n[0, 1, 2, {value}]\n"""
             hint="\nIl est possible de concatener des listes.\n"
             return code,letest,hint
+
+    if type == "ValueError":
+        code=f"""print(int("{randomText()}"))\n# peut probable de corriger cela n'a pas de sens\n"""
+        hint ="\n Un programme vide fonctionnera très bien ici ! \n"
+        letest = ">>> True # Je vous ai dit que l'on ne peut pas corriger \nTrue"
+        return code,letest,hint
+
+    it type == "IndexError" :
+        code = """
+def printList(l):
+    for i in range(0,len(l)+1):
+        print(l[i])
+"""
+        letest= """
+>>> printList([0,1])
+0
+1
+>>> printList([17,89])
+17
+89
+"""
+        hint = "les listes sont indicées de 0,n-1"
