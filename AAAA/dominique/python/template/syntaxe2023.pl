@@ -15,6 +15,9 @@
 @ /utils/sandboxio.py
 @ /builder/before.py [builder.py]
 
+
+title= test de syntaxe
+
 before ==
 from pltest_doc import *
 
