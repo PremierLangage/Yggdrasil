@@ -47,7 +47,7 @@ print()
     fname, = choice(["access","append","livi","push","pull","foo","bar","fubar","glop","pasglop"])
     if type=="TypeError":
         r =randint(1,10)
-        r=3
+        r=5
         if r==1:
             name, value = choice([("quatre",2),("cinq",3),("Sept",5)])
             code = f"""def {name}():\n   return "2"+{value}\n """
@@ -77,21 +77,19 @@ def {fname}():\n   return "{randomText()}"+{value}\n """
         elif r==4:
                 tic = randomText()
                 toc = randomText()
-                code = f"""def {fname}(l):\n   return "{tic}"*" "*"" "{toc}" "
-                letest = f""">>> {fname}() == 3 \n"{tic} {toc}"\n"""
-                hint="\nLes chaine d'additinne mais en se multiplies pas\n"
+                code = f"""def {fname}(l):\n   return "{tic}"*" "*"" "{toc}" """
+                letest = f""">>> {fname}()\n>>> {tic} {toc}\n"""
+                hint="\nLes chaines s'additionnent mais ne se multiplient pas\n"
                 return code,letest,hint
-
-
+        elif r==5:
+            # Concaténation de listes avec pas une liste 
+                code = f"""# L est une liste \ndef {fname}(l):\n   return l + 3\n"""
+                letest = f""">>> {fname}([0,1,2])\n[0, 1, 2, 3]\n"""
+                hint="\nLes chaines s'additionnent mais ne se multiplient pas\n"
+                return code,letest,hint
 __doc__="""
 
-
-4. **Utilisation d'une chaîne de caractères comme opérande dans une multiplication :**
-    ```python
-    result = "abc" * "def"
-    ```
-
-5. **Concaténation de listes avec un entier :**
+5. **:**
     ```python
     list1 = [1, 2, 3]
     list2 = list1 + 4
