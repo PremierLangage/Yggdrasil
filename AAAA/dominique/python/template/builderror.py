@@ -35,7 +35,7 @@ def builderror(type=None):
 print()
             """
             letest= f""">>> f(0)\n{tic}\n"""
-            return code,letest, "il manque des TABs."
+            return code,letest, "trop et pas asser de TABs."
         
     if type=="NameError":
         code = f"""def f(n):\n   if p: # p parametre de la fonction\n   print("{tic}"\nprint()\n"""
