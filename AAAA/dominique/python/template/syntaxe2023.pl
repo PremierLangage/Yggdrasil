@@ -44,7 +44,7 @@ from feedback2 import FeedBack
 lfb = FeedBack()
 
 
-text = "\n Corriger ce code puis valider."
+text = "\n Corriger ce code puis valider." + hint
 
 
 code = str(response['answer'])
