@@ -37,7 +37,7 @@ print()
             return code,letest, "trop et pas asser de TABs."
 
     if type=="NameError":
-        code = f"""def f(n):\n   if p: # p parametre de la fonction\n   print("{tic}")\nprint()\n"""
+        code = f"""def f(n):\n   if p: # parametre de la fonction\n   print("{tic}")\nprint()\n"""
         letest= f""">>> f(True)\n{tic}\n"""
         return code,letest, "PROBLÈME D'INDENTATION IL MANQUE UNE TAB."
 
