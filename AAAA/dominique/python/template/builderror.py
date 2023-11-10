@@ -4,23 +4,23 @@ from random import *
 def randomText():
     return  choice(["Hello World","Hello World!","Bienvenu !","Salut","Welcome !","Vitaj !","Üdvözöljük","Καλώς ορίσατε"])
 
-ERRORLIST=["SyntaxeError","IndentationError","NameError","TypeError","ValueError","IndexError"]
+ERRORLIST=["SyntaxeError","IndentationError","NameError","errortypeError","ValueError","IndexError"]
 
 
-def builderror(type=None):
+def builderror(errortype):
     tic = randomText()
-    if type in  ERRORLIST:
+    if errortype in  ERRORLIST:
         pass
-    elif type in [x for x in range(len(ERRORLIST))]:
-        type = ERRORLIST[type]
+    elif errortype in [x for x in range(len(ERRORLIST))]:
+        errortype = ERRORLIST[errortype]
     else:
-        type = choice(ERRORLIST)
+        errortype = choice(ERRORLIST)
 
-    if type=="SyntaxeError":
+    if errortype=="SyntaxeError":
         code = f"""def f():\n   print("{tic}"\nprint()\n"""
         letest= f""">>> f()\n{tic}\n"""
         return code,letest, "Parenthèse sur la ligne au dessus."
-    if type=="IndentationError":
+    if errortype=="IndentationError":
         if randint(1,10) <7:
             code = f"""def f():\nprint("{tic}")\nprint()\n"""
             letest= f""">>> f()\n{tic}\n"""
@@ -37,14 +37,14 @@ print()
             letest= f""">>> f(0)\n{tic}\n"""
             return code,letest, "trop et pas asser de TABs."
 
-    if type=="NameError":
+    if errortype=="NameError":
         p=choice("abcdeghijklmopqrstuvxyz")
         code = f"""def f(n):\n   if {p}: # parametre de la fonction\n       print("{tic}")\nprint()\n"""
         letest= f""">>> f(True)\n{tic}\n"""
         return code,letest, "Mauvais nom de variable peut être."
 
     fname = choice(["access","append","livi","push","pull","foo","bar","fubar","glop","pasglop"])
-    if type=="TypeError":
+    if errortype=="errortypeError":
         r =randint(1,5)
         if r==1:
             name, value = choice([("quatre",2),("cinq",3),("Sept",5)])
@@ -62,7 +62,7 @@ print()
 #pas de solution a l'erreur suivante 
 # Faite que la fonction retourne un entier 
 def {fname}():\n   return "{randomText()}"+{value}\n """
-            letest = f""">>> type({fname}()) == type(3)\nTrue\n"""
+            letest = f""">>> errortype({fname}()) == errortype(3)\nTrue\n"""
             hint="\nChaines et entiers ne font pas bon ménage."
             return code,letest,hint
         elif r==3:
@@ -90,13 +90,13 @@ def {fname}():\n   return "{randomText()}"+{value}\n """
             letest = f""">>> {fname}([0,1,2])\n[0, 1, 2, {value}]\n"""
             hint="\nIl est possible de concatener des listes.\n"
             return code,letest,hint
-    if type == "ValueError":
+    if errortype == "ValueError":
         code=f"""print(int("{randomText()}"))\n# peu probable de corriger cela n'a pas de sens\n"""
         hint ="\n Un programme vide fonctionnera très bien ici ! \n"
         letest = ">>> True # Je vous ai dit que l'on ne peut pas corriger \nTrue"
         return code,letest,hint
 
-    if type == "IndexError" :
+    if errortype == "IndexError" :
         if randint(1,10) <7:
             code = """
 def printList(l):
