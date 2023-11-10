@@ -19,9 +19,9 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 ################### Modifier ici ###########################
-author=JDLP 2023
+author=L'équipe PLaTon/PL
 
-title=Questionnaire préliminaire
+title=PLaTon/PL : Où on est ? Où va-t-on ?
 
 text==#|html|
 <span style="font-size:1.2em">Merci de répondre le plus naturellement possible avec vos impressions spontannées. La somme des tendances 
