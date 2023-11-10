@@ -1,5 +1,5 @@
 
-extends= /AAAA/dominique/python/template/pltest2023.pl
+extends= /AAAA/dominique/python/template/syntaxe2023.pl
 
 pltest==
 >>> _=1# Ok c'est bon 
