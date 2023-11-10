@@ -1,5 +1,8 @@
 
-extends= ../template/syntaxe2023.pl
+
 
 num="SyntaxeError"
+extends= ../template/syntaxe2023.pl
+
+
 
