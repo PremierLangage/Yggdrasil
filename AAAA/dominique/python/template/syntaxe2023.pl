@@ -8,7 +8,7 @@
 
 @ feedback2023.py [feedback2.py] # utilisé par pltest_doc 
 @ plrunner2023.py [pltest_doc.py] # utilisé par grader 
-@ pltest_grader2023.py [grader.py]
+@ /grader/evaluator.py [grader.py]
 @ template2023.html [template.html] # utilisé par feedback2
 # 
 
@@ -32,16 +32,21 @@ text = "\n Corriger ce code puis valider."
 r,b = PlRunner(code,"\n>>> a=1\n",fb=lfb).runpltest("Compilation",0)
 
 text += b
-
-
-
-
 ==
 
-pltest==
->>> _=3# Test de compilation 
-==
+before ==
+from pltest_doc import *
+from feedback2 import FeedBack
 
+
+lfb = FeedBack()
+
+
+text = "\n Corriger ce code puis valider."
+r,b = PlRunner(code,"\n>>> a=1\n",fb=lfb).runpltest("Compilation",0)
+
+text += b
+==
 
 
 
