@@ -21,7 +21,7 @@ text=
 
 before ==
 from pltest_doc import *
-from feedback2 import feedback
+from feedback2 import FeedBack
 code='print("Hello World"\n'
 
 lfb = FeedBack()
