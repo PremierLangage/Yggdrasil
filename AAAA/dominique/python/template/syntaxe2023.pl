@@ -16,7 +16,7 @@
 @ /builder/before.py [builder.py]
 
 
-title= test de syntaxe
+title= Erreurs de compilation
 text=
 
 before ==
