@@ -26,7 +26,18 @@ def builderror(type=None):
             return code,letest, "PROBLÈME D'INDENTATION IL MANQUE UNE TAB."
         else:
 
+            code = f"""
+            def f(n):
+               if n%2==0:
+               print("{tic}")
+               else:
+               print("{randomText()}")
+            print()
+            """
+            letest= f""">>> f(1)\n{tic}\n"""
+            return code,letest, "il manque des TABs."
+        
     if type=="NameError":
-    code = f"""def f(n):\n   if p: # p parametre de la fonction\n   print("{tic}"\nprint()\n"""
-    letest= f""">>> f(True)\n{tic}\n"""
-    return code,letest, "PROBLÈME D'INDENTATION IL MANQUE UNE TAB."
+        code = f"""def f(n):\n   if p: # p parametre de la fonction\n   print("{tic}"\nprint()\n"""
+        letest= f""">>> f(True)\n{tic}\n"""
+        return code,letest, "PROBLÈME D'INDENTATION IL MANQUE UNE TAB."
