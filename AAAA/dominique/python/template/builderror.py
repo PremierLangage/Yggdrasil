@@ -47,7 +47,7 @@ print()
  
     if type=="TypeError":
         r =randint(1,10)
-        r=2
+        r=3
         if r==1:
             name, value = choice([("quatre",2),("cinq",3),("Sept",5)])
             code = f"""def {name}():\n   return "2"+{value}\n """
@@ -65,11 +65,21 @@ def {name}():\n   return "{randomText()}"+{value}\n """
             return code,letest,hint
         elif r==3:
             fname, = choice(["access","append","livi","push","pull","foo","bar","fubar","glop","pasglop"])
-            code = f"""
-def {fname}(l):\n   return l["index 0"] """
-            letest = f""">>> {fname}([3,17,567]) == 3 \nTrue\n"""
-            hint="\nLes indices dans les listes sont des entiers."
-            return code,letest,hint
+            if randint(1,10) <7:
+                code = f"""
+    def {fname}(l):\n   return l["index 0"] """
+                letest = f""">>> {fname}([3,17,567]) == 3 \nTrue\n"""
+                hint="\nLes indices dans les listes sont des entiers."
+                return code,letest,hint
+            else:
+                code = f"""
+    def {fname}(l):\n   return l["{fname}"] """
+                letest = f""">>> {fname}([3,17,567]) == 3 \nTrue\n"""
+                hint="\nLes indices dans les listes sont des entiers.\nUtilisez l'indice 0."
+                return code,letest,hint
+        elif r==4:
+
+
 
 __doc__="""
 2. **Concaténation de types incompatibles :**
