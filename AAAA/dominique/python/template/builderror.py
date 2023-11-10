@@ -97,7 +97,7 @@ def {fname}():\n   return "{randomText()}"+{value}\n """
         letest = ">>> True # Je vous ai dit que l'on ne peut pas corriger \nTrue"
         return code,letest,hint
 
-    it type == "IndexError" :
+    if type == "IndexError" :
         code = """
 def printList(l):
     for i in range(len(l)+1):
