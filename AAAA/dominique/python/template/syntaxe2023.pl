@@ -24,10 +24,9 @@ from pltest_doc import *
 from feedback2 import FeedBack
 from builderror import builderror
 
-if "num" not in globals():
-    num=None
 
-code, letest, hint = builderror(num)
+
+code, letest, hint = builderror("SyntaxeError")
 
 lfb = FeedBack()
 # with open("student.py","w") as ost:
