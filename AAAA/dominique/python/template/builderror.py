@@ -6,8 +6,6 @@ def randomText():
 
 ERRORLIST=["SyntaxeError","IndentationError","NameError","TypeError","ValueError","IndexError"]
 
-def randomError():
-    return  choice(ERRORLIST)
 
 def builderror(type=None):
     tic = randomText()
@@ -16,7 +14,7 @@ def builderror(type=None):
     elif type in range(len(ERRORLIST)):
         type = ERRORLIST[type]
     else:
-        type = randomError()
+        type = choice(ERRORLIST)
     if type=="SyntaxeError":
         code = f"""def f():\n   print("{tic}"\nprint()\n"""
         letest= f""">>> f()\n{tic}\n"""
