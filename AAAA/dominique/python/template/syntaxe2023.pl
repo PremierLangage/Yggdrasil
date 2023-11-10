@@ -22,7 +22,9 @@ text=
 before ==
 from pltest_doc import *
 from feedback2 import FeedBack
-code='def f():\n   print("Hello World"\nz=3\n'
+from builderror import builderror
+
+code, letest = builderror(None)
 
 lfb = FeedBack()
 # with open("student.py","w") as ost:
@@ -31,7 +33,7 @@ lfb = FeedBack()
 text = "\n Corriger ce code puis valider."
 r,b = PlRunner(code,"\n>>> a=1\n",fb=lfb).runpltest("Compilation",0)
 
-letest = "\n>>> f()\nHello Word\n"
+
 
 text += b
 ==
