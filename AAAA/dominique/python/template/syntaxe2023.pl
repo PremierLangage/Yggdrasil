@@ -38,6 +38,9 @@ text += b
 
 ==
 
+pltest==
+>>> _=3# Test de compilation 
+==
 
 
 
