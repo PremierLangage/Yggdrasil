@@ -37,15 +37,15 @@ text += b
 before ==
 from pltest_doc import *
 from feedback2 import FeedBack
-
-
 lfb = FeedBack()
 
 
 text = "\n Corriger ce code puis valider."
 r,b = PlRunner(code,"\n>>> a=1\n",fb=lfb).runpltest("Compilation",0)
-
-text += b
+if r:
+    grade= (100,b)
+else:
+    grade= (0,b)
 ==
 
 
