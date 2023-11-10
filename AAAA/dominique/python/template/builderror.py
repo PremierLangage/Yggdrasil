@@ -27,12 +27,12 @@ def builderror(type=None):
         else:
 
             code = f"""
-            def f(n):
-               if n%2==0:
-               print("{tic}")
-               else:
-               print("{randomText()}")
-            print()
+    def f(n):
+    if n%2==0:
+    print("{tic}")
+    else:
+    print("{randomText()}")
+print()
             """
             letest= f""">>> f(0)\n{tic}\n"""
             return code,letest, "il manque des TABs."
