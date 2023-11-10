@@ -34,7 +34,7 @@ def builderror(type=None):
                print("{randomText()}")
             print()
             """
-            letest= f""">>> f(1)\n{tic}\n"""
+            letest= f""">>> f(0)\n{tic}\n"""
             return code,letest, "il manque des TABs."
         
     if type=="NameError":
