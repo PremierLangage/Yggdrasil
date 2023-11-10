@@ -24,7 +24,7 @@ from pltest_doc import *
 from feedback2 import FeedBack
 from builderror import builderror
 
-code, letest = builderror(None)
+code, letest, hint = builderror(None)
 
 lfb = FeedBack()
 # with open("student.py","w") as ost:
