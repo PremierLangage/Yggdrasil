@@ -47,7 +47,7 @@ print()
  
     if type=="TypeError":
         r =randint(1,10)
-        r==2
+        r=2
         if r==1:
             name, value = choice([("quatre",2),("cinq",3),("Sept",5)])
             code = f"""def {name}():\n   return "2"+{value}\n """
