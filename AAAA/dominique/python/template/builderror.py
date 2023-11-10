@@ -47,7 +47,7 @@ print()
     fname = choice(["access","append","livi","push","pull","foo","bar","fubar","glop","pasglop"])
     if type=="TypeError":
         r =randint(1,10)
-        r=5
+        r=1
         if r==1:
             name, value = choice([("quatre",2),("cinq",3),("Sept",5)])
             op = choice("+/-")
