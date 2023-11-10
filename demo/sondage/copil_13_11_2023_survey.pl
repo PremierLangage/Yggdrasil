@@ -21,7 +21,7 @@ builder =@ /builder/before.py
 ################### Modifier ici ###########################
 author=L'équipe PLaTon/PL
 
-title=PLaTon/PL : Où on est ? Où va-t-on ?
+title=PLaTon/PL : Où en est-on ? Où va-t-on ?
 
 text==#|html|
 <span style="font-size:1.2em">Merci de répondre le plus naturellement possible avec vos impressions spontannées. La somme des tendances 
@@ -31,17 +31,12 @@ offrira une base pour plus de discussions.</span>
 ==
 
 question1==#|html|
-<span style="font-size:1.2em">Si on définit la réussite d'un cours comme un compromis de savoirs et de savoir-faire acquis en moyenne par chaque apprenant; 
-quel est, selon votre avis, <b>le facteur le plus impactant</b> pour la réussite d'un cours ? (Désolé, il ne faut en choisir qu'un!)</span>
+<span style="font-size:1.2em">Question 1</span>
 ==
 
 items1==
-L'expertise disciplinaire de l'enseignant sur le domaine enseignée.
-La qualité de l'activité pédagogique (alignement, supports, organisation, déroulé, etc).
-Les conditions d'apprentissage (locaux, horraires, temps face à face, nombre d'apprenants)
-L'engagement des apprenants dans leur formation.
-Les compétances d'animation pédagogiques de l'enseignant.
-Le niveau des élèves en début de formation, leur maîtrise des bases.
+1
+2
 ==
 
 question2==#|html|
@@ -50,12 +45,8 @@ question2==#|html|
 ==
 
 items2==
-Les élèves ne sont pas toujours disponibles <br />(transports, travail à coté de l'activité étudiante, contraintes fammilliales ou autres contraintes externes).
-Les jeunes ne trouvent pas ce qu'ils sont venus chercher. Ils prétendent que les situations professionelles des <br />métiers finaux préparés sont décorrélées des activités pédagogiques de la formation.
-Les élèves ne sont pas à leur place, <br />il y a une inadéquation entre leurs profils et la formation qu'ils suivent.
-Les élèves n'ont pas suffisement envie de réussir. <br />Ils manquent de motivation et finissent par décrocher.
-Les contenus ne sont plus adaptés. <br />Les jeunes ont évolués trop vite par rapport aux formations.
-La promotion a trop d'hétérogénéïté et les moyens ne sont <br />pas suffisant pour vraiment adapté le parcours à chaque profil.
+1
+2
 ==
 
 question3==#|html|
@@ -63,13 +54,8 @@ question3==#|html|
 ==
 
 items3==
-L'évaluation des enseignements par les apprenants.
-Des valorisations régulées de l'implication des apprenants dans la vie de la formation.
-Un référecentiel de compétences diffusé dès le début de la formation (voire aux candidats).
-Des rétroactions régulières pour garantir l'allignement du programme de formation sur le référentiel.
-Un accompagnement institutionnel fort des associations élèves, voire des associations ciblées sur vos formations.
-Une implication des apprenants dans le pilotage de vos formations (exemple : conseil de perfectionnement).
-Une partie des contenus pédagogiques (matières et ou options) est au choix des apprenants.
+1
+2
 ==
 
 question4==#|html|
@@ -77,10 +63,8 @@ question4==#|html|
 ==
 
 items4==
-Le manque de moyens (équipements, ratio élèves / profs, temps face à face, etc)
-La démotivation et le manque d'investissement des élèves.
-Le niveau des apprenants en début de formation, les bases du second degré non acquises.
-Les contenus de la formation pas suffisement adaptés aux jeunes.
+1
+2
 ==
 
 question5==#|html|
@@ -88,12 +72,8 @@ question5==#|html|
 ==
 
 items5==
-L'alignement de l'activité sur les objectifs de la formation.
-La capacité de l'enseignant à motiver les apprenants.
-Le coté motivant de l'activité (au sens de Viau : signifiante, diversifiée, challenge, authentique, <br />engagement cognitif, contient des choix, interaction, interdisciplinaire, consignes claires, suffisement ancré dans le temps).
-L'enseignant est une pointure remarquable de la discipline enseignée.
-La qualité de l'évaluation et sa restitution.
-Le niveau général des élèves avant de réaliser l'activité.
+1
+2
 ==
 
 question6==#|html|
@@ -101,11 +81,8 @@ question6==#|html|
 ==
 
 items6==
-Impliquer les apprenants dans les choix des contenus et pilotage de la formation.
-Faire évaluer les enseignements et proposer un retour sur ces enquêtes.
-Concevoir un programme pédagogique parfaitement aligné sur les objectifs de formation.
-Communiquer sur le pourquoi et justifier systématiquement les activités soumises aux apprenants.
-Proposer un maximum d'activité para-scolaire favorisant l'esprit de corps (associations étudiantes, club, sport, etc).
+1
+2
 ==
 
 question7==#|html|
@@ -113,10 +90,8 @@ question7==#|html|
 ==
 
 items7==
-Des apprenants de niveau mauvais voire inadapté à la formation qu'ils suivent.
-Des apprenants réfractaires, rebelles qui remettent systématiquement en question l'utilité des dispositifs pédagogiques.
-Les conditions et les moyens de travail (équipement, ratio élèves / profs, temps face à face, etc)
-Le suivi quotidien des élèves, gérer leurs problèmes et leurs besoins dans le para-scolaire.
+1
+2
 ==
 
 question8==#|html|
@@ -124,10 +99,8 @@ question8==#|html|
 ==
 
 items8==
-Favoriser les résultats académiques des élèves faisant preuve d'engagement.
-Encourager personnellement et publiquement les élèves faisant preuve d'engagement.
-Priser (goodies, avantage de bouche, prix divers) les élèves faisant preuve d'engagement.
-Expliquer juste régulièrement qu'il y a forte corélation entre engagement et soft skill. <br />Ainsi, les élèves engagés réalisent souvent de meilleurs carrières que les autres une fois diplômé.
+1
+2
 ==
 
 ############################################
