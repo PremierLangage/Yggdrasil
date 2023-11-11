@@ -212,7 +212,7 @@ form==#|html|
 # EVALUATE THE STUDENT ANSWER
 evaluator == #|py|
 score = 100
-feedback = '<span class="success-state">Réponses enregistrées, merci beaucoup ! Reremplir et revalider le questionnaire aura pour effet de mettre à jour vos réponses personnelles.</span>'
+feedback = '<span class="success-state" style="padding: 8px;">Réponses enregistrées, merci beaucoup !</span>'
 
 grade = (score, feedback)
 ==
