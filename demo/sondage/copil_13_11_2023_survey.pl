@@ -86,7 +86,7 @@ items4==
 question5==#|html|
 <span style="font-size:1.4em; color:black">Combien de fiches d'exercices ont été déployé sur la plate forme pour des apprenants ?</span>
 
-<center><img src="{{ url_img_3 }}" alt="images d'exercices de PL" style="width:40%" /></center>
+<center><img src="{{ url_img_3 }}" alt="miniature d'un PLTP" style="width:40%" /></center>
 ==
 
 items5==
