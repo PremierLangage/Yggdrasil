@@ -26,7 +26,7 @@ author=L'équipe PLaTon/PL
 title=PLaTon/PL : Où en est-on ? Où va-t-on ?
 
 text==#|html|
-<span style="font-size:1.2em">Voici un petit questionnaire préliminaire aux discussions.</span>
+<span style="font-size:1.2em">Voici un petit questionnaire préliminaire avant d'entamer des discussions.</span>
 
 <br />
 ==
