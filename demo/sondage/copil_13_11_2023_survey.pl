@@ -20,6 +20,7 @@ builder =@ /builder/before.py
 
 url_img_1 =$ /demo/sondage/nb_users.png
 url_img_2 =$ /demo/sondage/exos.png
+url_img_3 =$ /demo/sondage/pltp_img.png
 
 ################### Modifier ici ###########################
 author=L'équipe PLaTon/PL
