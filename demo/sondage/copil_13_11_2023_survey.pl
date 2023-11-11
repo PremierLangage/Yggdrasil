@@ -18,6 +18,8 @@
 grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
+url_img_1 =$ /demo/sondage/nb_users.png
+
 ################### Modifier ici ###########################
 author=L'équipe PLaTon/PL
 
@@ -44,6 +46,8 @@ items1==
 
 question2==#|html|
 <span style="font-size:1.2em">Combien il y a-t-il d'utilisateurs actifs ces deux derniers mois (depuis la rentrée de septembre 2023) ?</span>
+
+<img src="{{ url_img_1 }}" alt="nombre d'utilisateur depuis toujours" />
 ==
 
 items2==
