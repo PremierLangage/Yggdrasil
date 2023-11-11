@@ -69,7 +69,7 @@ items3==
 ==
 
 question4==#|html|
-<span style="font-size:1.2em">Combien de fois la plateforme PL a été solicitée pour faire des évaluations< et noter effectivement une proposition de réponse ?/span>
+<span style="font-size:1.2em">Combien de fois la plateforme PL a été solicitée pour faire des évaluations< et noter effectivement une proposition de réponse ?</span>
 ==
 
 items4==
