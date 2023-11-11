@@ -47,7 +47,7 @@ items1==
 question2==#|html|
 <span style="font-size:1.2em">Combien il y a-t-il d'utilisateurs actifs ces deux derniers mois (depuis la rentrée de septembre 2023) ?</span>
 
-<img src="{{ url_img_1 }}" alt="nombre d'utilisateur depuis toujours" width="200px" />
+<img src="{{ url_img_1 }}" alt="nombre d'utilisateur depuis toujours" style="width:30%" />
 ==
 
 items2==
