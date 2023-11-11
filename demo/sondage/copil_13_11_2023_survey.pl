@@ -72,7 +72,7 @@ items3==
 ==
 
 question4==#|html|
-<span style="font-size:1.4em; color:black">Combien de fois la plateforme PL a été solicitée pour faire des évaluations< et noter effectivement une proposition de réponse ?</span>
+<span style="font-size:1.4em; color:black">Combien de fois la plateforme PL a-t-elle été solicitée pour procéder à une évaluation et noter effectivement une proposition de réponse d'apprenant ?</span>
 ==
 
 items4==
