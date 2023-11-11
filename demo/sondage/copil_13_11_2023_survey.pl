@@ -32,7 +32,7 @@ text==#|html|
 ==
 
 question1==#|html|
-<span style="font-size:1.3em; color:black">Quel age a le projet PLaTon/PL actuellement ?</span>
+<span style="font-size:1.4em; color:black">Quel age a le projet PLaTon/PL actuellement ?</span>
 
 <center><span style="font-size:2.5em">... 2016 2017 2018 2019 2020 2021 2022 2023 2024 ...</span></center>
 ==
