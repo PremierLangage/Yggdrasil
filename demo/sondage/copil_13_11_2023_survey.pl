@@ -19,6 +19,7 @@ grader  =@ /grader/evaluator.py
 builder =@ /builder/before.py
 
 url_img_1 =$ /demo/sondage/nb_users.png
+url_img_2 =$ /demo/sondage/exos.png
 
 ################### Modifier ici ###########################
 author=L'équipe PLaTon/PL
@@ -59,6 +60,8 @@ items2==
 
 question3==#|html|
 <span style="font-size:1.4em; color:black">Combien d'exercices sont actuellement dans les ressources ?</span>
+
+<center><img src="{{ url_img_2 }}" alt="images d'exercices de PL" style="width:80%" /></center>
 ==
 
 items3==
