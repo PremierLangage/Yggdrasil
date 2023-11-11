@@ -45,7 +45,7 @@ items1==
 ==
 
 question2==#|html|
-<span style="font-size:1.2em; color:black">Combien il y a-t-il d'utilisateurs actifs ces deux derniers mois (depuis la rentrée de septembre 2023) ?</span>
+<span style="font-size:1.4em; color:black">Combien il y a-t-il d'utilisateurs actifs ces deux derniers mois (depuis la rentrée de septembre 2023) ?</span>
 
 <center><img src="{{ url_img_1 }}" alt="nombre d'utilisateur depuis toujours" style="width:40%" /></center>
 ==
@@ -58,7 +58,7 @@ items2==
 ==
 
 question3==#|html|
-<span style="font-size:1.2em">Combien d'exercices sont actuellement dans les ressources ?</span>
+<span style="font-size:1.4em; color:black">Combien d'exercices sont actuellement dans les ressources ?</span>
 ==
 
 items3==
@@ -69,7 +69,7 @@ items3==
 ==
 
 question4==#|html|
-<span style="font-size:1.2em">Combien de fois la plateforme PL a été solicitée pour faire des évaluations< et noter effectivement une proposition de réponse ?</span>
+<span style="font-size:1.4em; color:black">Combien de fois la plateforme PL a été solicitée pour faire des évaluations< et noter effectivement une proposition de réponse ?</span>
 ==
 
 items4==
@@ -80,7 +80,7 @@ items4==
 ==
 
 question5==#|html|
-<span style="font-size:1.2em">Combien de fiches d'exercices ont été déployé sur la plate forme pour des apprenants ?</span>
+<span style="font-size:1.4em; color:black">Combien de fiches d'exercices ont été déployé sur la plate forme pour des apprenants ?</span>
 ==
 
 items5==
@@ -91,19 +91,20 @@ items5==
 ==
 
 question6==#|html|
-<span style="font-size:1.2em">Que s'est faire la plateforme PL actuellement ?</span>
+<span style="font-size:1.4em; color:black">Que s'est faire la plateforme PL actuellement ?</span>
 ==
 
 items6==
 L'analogue de question directe avec visualisation de la répartition des réponses des utilisateurs en direct.
 Des questionnaires orthographiques comme le Projet Voltaire.
 Des questionnaires rempli de manière annonyme pour proposer des évaluations des enseignements.
-Exploitez des réponses des apprenants produites dans les langages C, Python, Java, Haskell, NASM, bash
-Proposer des dashboards aux élèves pour qu'ils se situent dans leur promotion 
+Exploitez des réponses des apprenants produites dans les langages C, Python, Java, Haskell, NASM, bash.
+Proposer des dashboards aux élèves pour qu'ils se situent dans leur promotion. 
+Des blinds tests en durée limité, inclure des images, des vidéos ou autres incrustations issue du web.
 ==
 
 question7==#|html|
-<span style="font-size:1.2em">Quel facteur vous coute <b>le plus d'énergie et de temps</b> en tant qu'enseignant ?</span>
+<span style="font-size:1.4em">Quel facteur vous coute <b>le plus d'énergie et de temps</b> en tant qu'enseignant ?</span>
 ==
 
 items7==
