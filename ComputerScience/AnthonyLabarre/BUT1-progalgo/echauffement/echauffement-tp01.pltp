@@ -16,7 +16,6 @@ introduction ==
 # Expressions booléennes: étant données des affectations de variables, évaluer des expressions booléennes
 @../exercices/expressions_booleennes.pl
 
-        
 # TODO Suite de calculs ou d'instructions, et donner le résultat ("que fait le code suivant")
 
 # TODO corrigez le code suivant pour obtenir le(s) bon(s) résultat(s) (input, oubli de transtypage)
