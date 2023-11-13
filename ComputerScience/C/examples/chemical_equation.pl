@@ -11,11 +11,11 @@ positifs les plus petits possibles.
 builder =@ /builder/none.py
 
 form==
-<input type="text" id="form_co" size="1" value="{{ '?' }}" > $%CO%$ + 
-<input type="text" id="form_fe3o4" size="1" value="{{ '?' }}" > 
+<input type="text" id="form_co" size="1" width="20px" value="{{ '?' }}" > $%CO%$ + 
+<input type="text" id="form_fe3o4" size="1" width="20px" value="{{ '?' }}" > 
 $%Fe_3 O_4 \quad \longrightarrow \quad%$ 
-<input type="text" id="form_co2" size="1" value="{{ '?' }}" > $%CO_2%$ + 
-<input type="text" id="form_fe" size="1" value="{{ '?' }}" > $%Fe%$
+<input type="text" id="form_co2" size="1" width="20px" value="{{ '?' }}" > $%CO_2%$ + 
+<input type="text" id="form_fe" size="1" width="20px" value="{{ '?' }}" > $%Fe%$
 ==
 
 grader==
