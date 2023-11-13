@@ -233,7 +233,10 @@ form==#|html|
 # EVALUATE THE STUDENT ANSWER
 evaluator == #|py|
 score = 100
-feedback = '<span class="success-state" style="padding: 8px;">Réponses enregistrées, merci beaucoup !</span>'
+feedback = '<span class="success-state" style="padding: 8px;">Réponses enregistrées, merci beaucoup !</span><br /><br />' + q_feedback 
+
+text=""
+form=""
 
 grade = (score, feedback)
 ==
