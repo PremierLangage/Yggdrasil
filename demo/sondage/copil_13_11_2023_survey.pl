@@ -25,7 +25,7 @@ url_img_3 =$ /demo/sondage/pltp_img.png
 ################### Modifier ici ###########################
 author=L'équipe PLaTon/PL
 
-title=PLaTon/PL : Où en est-on ? Où va-t-on ?
+title=PLaTon/PL : Où en est-on ?
 
 text==#|html|
 <span style="font-size:1.2em">Voici un petit questionnaire préliminaire avant d'entamer des discussions.</span>
