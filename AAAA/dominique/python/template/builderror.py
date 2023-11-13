@@ -60,7 +60,7 @@ print()
 #pas de solution a l'erreur suivante 
 # Faite que la fonction retourne un entier 
 def {fname}():\n   return "{randomText()}"+{value}\n """
-            letest = f""">>> errortype({fname}()) == errortype(3)\nTrue\n"""
+            letest = f""">>> type({fname}()) == type(3)\nTrue\n"""
             hint="\nChaines et entiers ne font pas bon ménage."
             return code,letest,hint
         elif r==3:
