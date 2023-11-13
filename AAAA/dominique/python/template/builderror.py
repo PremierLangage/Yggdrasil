@@ -19,26 +19,33 @@ def builderror(errortype):
         if r==1:
             code = f"""def f():\n   print("{tic}"\nprint()\n"""
             letest= f""">>> f()\n{tic}\n"""
+            hint = "\nParenthèse sur la ligne au dessus."
         elif r==2:
             code = f"a = 1, b = 2"
             letest= ">>> a==1 and b==2\nTrue"
+            hint = "\nUtiliser une affectation multiple"
         elif r==3:
             code = f"def f():\n   print '{tic}' \n"
             letest=f">>> f()\n{tic}\n"
+            hint = "\nPrint est une fonction\n"
         elif r==4:
             code=f"""numbers = (1, 2, 3,),"""
             letest=f""">>> numbers==(1, 2, 3)\nTrue\n"""
+            hint="\nLa virgule\n"
         elif r==5:
             code = f"""def f():\n   print('{tic}")\nprint()\n"""
             letest= f""">>> f()\n{tic}\n"""
+            hint="\nGuillemets != apostrophe\n"
         elif r==6:
             code = f"""def f()\n   print("{tic}")\nprint()\n"""
             letest= f""">>> f()\n{tic}\n"""
+            hint="\nDeux points : \n"
         elif r==7:
             code = f"""def f():\n   return  (1, 2, 3,))\nprint()\n"""
             letest= f""">>> f()== (1, 2, 3)\nTrue\n"""
+            hint="\nParenthèses\n"
         
-        return code,letest, "Parenthèse sur la ligne au dessus."
+        return code,letest, hint
 
     if errortype=="IndentationError":
         if randint(1,10) <7:
