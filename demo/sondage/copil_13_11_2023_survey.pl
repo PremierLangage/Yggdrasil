@@ -136,7 +136,7 @@ q_feedback==#|html|
 <li>Il y a <b>2885 fichiers exercices</b> (extension .pl) dans le serveur d'exercices de PL (Yggdrazil).</li>
 <li>Les sandbox de PL ont évaluées <b>767 970 réponses</b> de manière effective (avec note sur 100).</li>
 <li><b>308 fiches d'exercices</b> différentes ont été déployées sur la plate forme pour des apprenants. Certaines, bien avancées, sont redéployées chaque année.</li>
-<li>Depuis le dernier déployement de début novembre (il y a deux semaines), PL sait faire l'intégralité des propositions sauf la partie anonymisation des questionnaires sondages.</li><br />
+<li>Depuis le dernier déployement de début novembre (il y a deux semaines), PL sait faire l'intégralité des propositions sauf la partie anonymisation des questionnaires sondages.</li>
 • L'analogue de question directe avec visualisation de la répartition des réponses des utilisateurs en direct.<br />
 • Des questionnaires orthographiques comme le Projet Voltaire.<br />
 • Des questionnaires pour proposer des évaluations des enseignements (l'anonymisation est à finaliser).<br />
