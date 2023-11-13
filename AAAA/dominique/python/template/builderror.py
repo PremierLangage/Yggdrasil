@@ -27,8 +27,10 @@ def builderror(errortype):
             letest=f">>> f()\n{tic}\n"
         elif r==4:
             code=f"""numbers = (1, 2, 3,),"""
-            letest=f""">>> numbers==(1, 2, 3,)\nTrue\n"
-
+            letest=f""">>> numbers==(1, 2, 3,)\nTrue\n"""
+        elif r==5:
+            code = f"""def f():\n   print('{tic}")\nprint()\n"""
+            letest= f""">>> f()\n{tic}\n"""
         return code,letest, "Parenthèse sur la ligne au dessus."
 
     if errortype=="IndentationError":
