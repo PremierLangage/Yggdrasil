@@ -129,17 +129,17 @@ items8==
 2
 ==
 
-q_feedback==
+q_feedback==#|html|
 <ul>
-<li>Le projet PLaTon/PL a actuellement 6 ans.</li>
-<li>Ces deux derniers mois, il y a eu 519 utilisateurs actifs enseignants.</li>
-<li>Il y a 2885 fichiers exercices (extension .pl) dans le serveur d'exercices de PL (Yggdrazil).</li>
-<li>Les sandbox de PL ont évaluées 767 970 réponses de manière effective (avec note sur 100).</li>
-<li>308 fiches d'exercices différentes ont été déployées sur la plate forme pour des apprenants. Certaines, bien avancées, sont redéployées chaque année.</li>
+<li>Le projet PLaTon/PL a actuellement <b>6 ans</b>.</li>
+<li>Ces deux derniers mois, il y a eu <b>519 utilisateurs actifs</b> apprenants.</li>
+<li>Il y a <b>2885 fichiers exercices</b> (extension .pl) dans le serveur d'exercices de PL (Yggdrazil).</li>
+<li>Les sandbox de PL ont évaluées <b>767 970 réponses</b> de manière effective (avec note sur 100).</li>
+<li><b>308 fiches d'exercices</b> différentes ont été déployées sur la plate forme pour des apprenants. Certaines, bien avancées, sont redéployées chaque année.</li>
 <li>Depuis le dernier déployement de début novembre (il y a deux semaines), PL sait faire l'intégralité des propositions sauf la partie anonymisation des questionnaires sondages.</li><br />
 • L'analogue de question directe avec visualisation de la répartition des réponses des utilisateurs en direct.<br />
 • Des questionnaires orthographiques comme le Projet Voltaire.<br />
-• Des questionnaires remplis de manière annonyme pour proposer des évaluations des enseignements.<br />
+• Des questionnaires pour proposer des évaluations des enseignements (l'anonymisation est à finaliser).<br />
 • Évaluer des réponses dans les langages C, Python, Java, Haskell, NASM, bash, R.<br />
 • Proposer des dashboards aux élèves pour qu'ils se situent dans leur promotion. <br />
 • Des blinds tests en durée limité, inclure des images, des vidéos ou autres incrustations issue du web.<br />
