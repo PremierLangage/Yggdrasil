@@ -15,7 +15,7 @@ def builderror(errortype):
         errortype = choice(ERRORLIST)
 
     if errortype=="SyntaxeError":
-        r=randint(1,10)
+        r=randint(1,7)
         if r==1:
             code = f"""def f():\n   print("{tic}"\nprint()\n"""
             letest= f""">>> f()\n{tic}\n"""
@@ -27,13 +27,17 @@ def builderror(errortype):
             letest=f">>> f()\n{tic}\n"
         elif r==4:
             code=f"""numbers = (1, 2, 3,),"""
-            letest=f""">>> numbers==(1, 2, 3,)\nTrue\n"""
+            letest=f""">>> numbers==(1, 2, 3)\nTrue\n"""
         elif r==5:
             code = f"""def f():\n   print('{tic}")\nprint()\n"""
             letest= f""">>> f()\n{tic}\n"""
         elif r==6:
             code = f"""def f()\n   print("{tic}")\nprint()\n"""
             letest= f""">>> f()\n{tic}\n"""
+        elif r==7:
+            code = f"""def f():\n   return  (1, 2, 3,))\nprint()\n"""
+            letest= f""">>> f()== (1, 2, 3)\nTrue\n"""
+        
         return code,letest, "Parenthèse sur la ligne au dessus."
 
     if errortype=="IndentationError":
