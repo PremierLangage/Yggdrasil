@@ -103,10 +103,12 @@ question6==#|html|
 items6==
 L'analogue de question directe avec visualisation de la répartition des réponses des utilisateurs en direct.
 Des questionnaires orthographiques comme le Projet Voltaire.
-Des questionnaires rempli de manière annonyme pour proposer des évaluations des enseignements.
-Exploitez des réponses des apprenants produites dans les langages C, Python, Java, Haskell, NASM, bash.
+Des questionnaires remplis de manière annonyme pour proposer des évaluations des enseignements.
+Évaluer des réponses dans les langages C, Python, Java, Haskell, NASM, bash, R.
 Proposer des dashboards aux élèves pour qu'ils se situent dans leur promotion. 
 Des blinds tests en durée limité, inclure des images, des vidéos ou autres incrustations issue du web.
+Des QCM aux format AMC-txt, GIFT moodle, Vrai/Faux, numérique, quizz MediaWiki, appareillement, augmenté d'aléatoire.
+Des exercices de langues sur le modèle de duolinguo.
 ==
 
 question7==#|html|
@@ -125,6 +127,25 @@ question8==#|html|
 items8==
 1
 2
+==
+
+q_feedback==
+<ul>
+<li>Le projet PLaTon/PL a actuellement 6 ans.</li>
+<li>Ces deux derniers mois, il y a eu 519 utilisateurs actifs enseignants.</li>
+<li>Il y a 2885 fichiers exercices (extension .pl) dans le serveur d'exercices de PL (Yggdrazil).</li>
+<li>Les sandbox de PL ont évaluées 767 970 réponses de manière effective (avec note sur 100).</li>
+<li>308 fiches d'exercices différentes ont été déployées sur la plate forme pour des apprenants. Certaines, bien avancées, sont redéployées chaque année.</li>
+<li>Depuis le dernier déployement de début novembre (il y a deux semaines), PL sait faire l'intégralité des propositions sauf la partie anonymisation des questionnaires sondages.</li><br />
+• L'analogue de question directe avec visualisation de la répartition des réponses des utilisateurs en direct.<br />
+• Des questionnaires orthographiques comme le Projet Voltaire.<br />
+• Des questionnaires remplis de manière annonyme pour proposer des évaluations des enseignements.<br />
+• Évaluer des réponses dans les langages C, Python, Java, Haskell, NASM, bash, R.<br />
+• Proposer des dashboards aux élèves pour qu'ils se situent dans leur promotion. <br />
+• Des blinds tests en durée limité, inclure des images, des vidéos ou autres incrustations issue du web.<br />
+• Des QCM aux format AMC-txt, GIFT moodle, Vrai/Faux, numérique, quizz MediaWiki, appareillement, augmenté d'aléatoire.<br />
+• Des exercices de langues sur le modèle de duolinguo.<br />
+</ul>
 ==
 
 ############################################
