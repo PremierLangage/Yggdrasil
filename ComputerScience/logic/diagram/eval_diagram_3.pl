@@ -78,7 +78,7 @@ text==#|markdown|
 </style>
 ==
 
-form==#|markdown|
+form==
 Évaluer l'unique sortie <b>f</b> de ce circuit logique dont voici les valeurs des 
 variables en entrées.<br>
 
