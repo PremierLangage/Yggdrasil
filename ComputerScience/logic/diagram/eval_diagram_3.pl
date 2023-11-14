@@ -78,14 +78,10 @@ text==#|markdown|
 </style>
 ==
 
-form==
+form==#|markdown|
 Évaluer l'unique sortie <b>f</b> de ce circuit logique dont voici les valeurs des 
 variables en entrées.<br>
-
-{% for k,v in eval_point %} 
-  <b>{{k}}</b> : <b>{{v}}</b>, 
-{% endfor %}
-
+{% for k,v in eval_point.items() %} <b>{{k}}</b> : <b>{{v}}</b>, {% endfor %}
 <center>
 <table>
 <tr>
