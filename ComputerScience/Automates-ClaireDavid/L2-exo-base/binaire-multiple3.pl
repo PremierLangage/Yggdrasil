@@ -42,7 +42,7 @@ Donnez un automate reconnaissant les mots qui sont la représentation en binaire
             <br>Par exemple l'entier $!41 = 2^5+2^3+2^0!$ est représenté par 101001 ou 0101001 ou 00101001 ... <br>
 {% if attempt < maxattempt and score != 100 %}
 <p class="warning-state">
-Il vous reste {{ maxattempt - attempt }} tentative(s) !{{grade}}
+Il vous reste {{ maxattempt - attempt }} tentative(s) !
 </p>
 {% endif %}
 ==
