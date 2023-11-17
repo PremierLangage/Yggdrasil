@@ -1,7 +1,7 @@
 
 
 
-extends= splittemplate.pl
+extends= template/splittemplate.pl
 
 @ facile2.c   [sujet.c]
 
