@@ -43,7 +43,7 @@ float eval_f(float x, int a , int b , int c){
 
 // PL:==
 
-// en théorie ceci soit apparaitre dans l'iteur de l'élève
+// en théorie ceci soit apparaitre dans l'editeur de l'élève
 // mais il y a un BUG donc cela ne marche pas
 /* PL:code==
 void eval_f(){
