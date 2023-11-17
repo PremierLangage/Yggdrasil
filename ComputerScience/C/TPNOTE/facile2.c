@@ -82,8 +82,8 @@ int main(int c, char **v){
     return 0;
 }
 
-
 // PL:==
+
 // Cette balide permet de définir les tests a faire 
 // chaque test est une liste (ou tuple) 
 // [ 'nom du test', ['arguments', 'appel','du', 'programme','de','test'], "entrée standard "]
