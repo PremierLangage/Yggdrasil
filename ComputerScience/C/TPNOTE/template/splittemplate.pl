@@ -25,7 +25,7 @@ for k,v in splitwithre("sujet.c").items():
 
 
 
- raise Exception(keys)
+# raise Exception(keys)
 
 
 ==
