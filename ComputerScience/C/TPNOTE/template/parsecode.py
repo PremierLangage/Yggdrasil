@@ -59,6 +59,57 @@ def splitcode(arg):
 
     return(dict)
 
+import re
+
+
+
+SINGLEVALUE=re.compile(r"^/\* PL:(\w*)\s*=\s*([^=].*)\s*\*/$")
+SINGLEVALUE2=re.compile(r"^// PL:(\w*)\s*=\s*(.*)\s*$")
+MULISTARTTXT=re.compile(r"^/\* PL:(\w*)\s*==\s*$")
+MULTUENDTXT=re.compile(r"^PL:==\s*\*/$")
+MULTISTATCODE=re.compile(r"^// PL:(\w+)\s*==\s*$")
+MULTIENDCODE=re.compile(r"^// PL:==$") # // PL:==
+
+
+def splitwithre(arg):
+    state = None
+    dict={"error":" no "}
+    with open(arg,"r") as f:
+        for line in f.readlines():
+            # Attention à l'ordre des tests
+            if MULISTARTTXT.match(line):
+                name = MULISTARTTXT.match(line).group(1)
+                state = "txt"
+                dict[name]=""
+            elif MULTIENDCODE.match(line):
+                state = None
+            elif MULTUENDTXT.match(line):
+                state = None
+            elif MULTISTATCODE.match(line):
+                name = MULTISTATCODE.match(line).group(1)
+                state = "code"
+                dict[name]=""
+            elif SINGLEVALUE.match(line):
+                dict[SINGLEVALUE.match(line).group(1)]=SINGLEVALUE.match(line).group(2)
+            elif SINGLEVALUE2.match(line):
+                dict[SINGLEVALUE2.match(line).group(1)]=SINGLEVALUE2.match(line).group(2)
+            elif state == "txt" or state == "code":
+                dict[name] += line
+            else:
+                pass
+    return dict
+
+if __name__ == "__main__":
+    import sys
+    print(sys.argv)
+    if len(sys.argv) == 2:
+        splitwithre(sys.argv[1])
+    else:
+        print("Usage: python3 parseccode.py <file>")
+        sys.exit(1)
+
+
+
 
 if __name__ == "__main__":
     import sys
