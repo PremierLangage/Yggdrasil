@@ -139,8 +139,8 @@ def question():
         laliste= list(csv.DictReader(f))
 
 
-    #    return createquestion(random.choice(laliste))
+    return createquestion(random.choice(laliste))
         
-    return createquestion(laliste[53])
+    # return createquestion(laliste[53])
     
 
