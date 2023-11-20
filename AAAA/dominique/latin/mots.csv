@@ -1,74 +1,74 @@
 descl,nom,genitif,genre,sens
-1,nauta, ae, m ,le marin
-1,poeta, ae, m ,le poète
-1,agricola, ae, m ,le paysan
-1,scriba, ae, m ,Le scribe
-1,incola, ae, m ,L'habitant
-1,advena, ae, m ,L'étranger
-1,rosa, ae, f ,la rose
-1,Roma, ae, f ,Rome
-1,villa, ae, f ,la ferme
-1,ara, ae, f ,L'autel
-1,pecunia, ae, f ,L'argent
-1,domina, ae, f ,la maîtresse de maison
-1,puella, ae, f ,la jeune fille
-1,ancilla, ae, f ,la servante
-1,filia, ae, f ,la fille
-1,dea, ae, f ,la déesse
-1,regina, ae, f ,la reine
-1,patria, ae, f ,la patrie
-1,sententia, ae, f ,La sentence ou la phrase
-1,pugna, ae, f ,la bataille
-1,victoria, ae, f ,la victoire
-1,cura, ae, f ,soin ou souci 
-2,ager, agr, m, champ,
-2,agnus, agn, m, agneau,
-2,amicus, amic, m, ami,
-2,annus,ann, m, année, an,
-2,asinus, asin, m, âne,
-2,avus, av, m, grand-père,
-2,bellum, bell, n, guerre,
-2,caelum, cael, n, ciel,
-2,campus, camp, m, plaine,
-2,consilium, consili, n, projet, conseil,
-2,deus, de, m, dieu,
-2,dominus, domin, m, maître (de maison), propriétaire,
-2,equus, equ, m, cheval,
-2,filius, fili, m, fils,
-2,forum, for, n, place publique,
-2,hortus, hort, m, jardin,
-2,liber, libr, m, livre,
-2,locus, loc, m, lieu,
-2,lupus, lup, m, loup,
-2,medicus, medic, m, médecin,
-2,murus, mur, m, mur,
-2,oppidum, oppid n, place forte,
-2,periculum, pericul, n, péril, danger,
-2,populus, popul, m, peuple,
-2,populus, popul, f, peuplier,
-2,rivus, riv, m, ruisseau,
-2,Romanus, roman, m, un Romain,
-2,Senatus, Senat, m, Sénat,
-2,servus, serv, m, esclave,
-2,signum, sign, n, signe, signal,
-2,socius, soci, m, allié,
-2,spatium, spati, n , espace,
-2,templum, templ, n, temple
-3,acus, us, f,l’aiguille
-3,arcus, us, m,l’arc
-3,artus, us, m,l’articulation ou le membre
-3,casus, us, m,le hasard l’évènement
-3,cornu, us, n,la corne
-3,currus, us, m,le char
-3,cursus, us, m,la course
-3,exercitus, us, m,l’armée
-3,habitus, us, m,la manière d'être ; l'apparence ; la disposition
-3,impetus, us, m,l’élan; l’assaut
-3,lacus, us, m,le lac; bassin
-3,manus, us, f,la main
-3,partus, us, m,l’enfantement
-3,portus, us, m,le port
-3,quercus, us, f,le chêne
-3,senatus, us, m,le sénat
-3,specus, us, m,la grotte
-3,tribus, us, f,la tribu 
+1,nauta,ae,m ,le marin
+1,poeta,ae,m ,le poète
+1,agricola,ae,m ,le paysan
+1,scriba,ae,m ,Le scribe
+1,incola,ae,m ,L'habitant
+1,advena,ae,m ,L'étranger
+1,rosa,ae,f ,la rose
+1,Roma,ae,f ,Rome
+1,villa,ae,f ,la ferme
+1,ara,ae,f ,L'autel
+1,pecunia,ae,f ,L'argent
+1,domina,ae,f ,la maîtresse de maison
+1,puella,ae,f ,la jeune fille
+1,ancilla,ae,f ,la servante
+1,filia,ae,f ,la fille
+1,dea,ae,f ,la déesse
+1,regina,ae,f ,la reine
+1,patria,ae,f ,la patrie
+1,sententia,ae,f ,La sentence ou la phrase
+1,pugna,ae,f ,la bataille
+1,victoria,ae,f ,la victoire
+1,cura,ae,f ,soin ou souci 
+2,ager,agr,m,champ,
+2,agnus,agn,m,agneau,
+2,amicus,amic,m,ami,
+2,annus,ann,m,année,an,
+2,asinus,asin,m,âne,
+2,avus,av,m,grand-père,
+2,bellum,bell,n,guerre,
+2,caelum,cael,n,ciel,
+2,campus,camp,m,plaine,
+2,consilium,consili,n,projet,conseil,
+2,deus,de,m,dieu,
+2,dominus,domin,m,maître (de maison),propriétaire,
+2,equus,equ,m,cheval,
+2,filius,fili,m,fils,
+2,forum,for,n,place publique,
+2,hortus,hort,m,jardin,
+2,liber,libr,m,livre,
+2,locus,loc,m,lieu,
+2,lupus,lup,m,loup,
+2,medicus,medic,m,médecin,
+2,murus,mur,m,mur,
+2,oppidum,oppid n,place forte,
+2,periculum,pericul,n,péril,danger,
+2,populus,popul,m,peuple,
+2,populus,popul,f,peuplier,
+2,rivus,riv,m,ruisseau,
+2,Romanus,roman,m,un Romain,
+2,Senatus,Senat,m,Sénat,
+2,servus,serv,m,esclave,
+2,signum,sign,n,signe,signal,
+2,socius,soci,m,allié,
+2,spatium,spati,n ,espace,
+2,templum,templ,n,temple
+3,acus,us,f,l’aiguille
+3,arcus,us,m,l’arc
+3,artus,us,m,l’articulation ou le membre
+3,casus,us,m,le hasard l’évènement
+3,cornu,us,n,la corne
+3,currus,us,m,le char
+3,cursus,us,m,la course
+3,exercitus,us,m,l’armée
+3,habitus,us,m,la manière d'être ; l'apparence ; la disposition
+3,impetus,us,m,l’élan; l’assaut
+3,lacus,us,m,le lac; bassin
+3,manus,us,f,la main
+3,partus,us,m,l’enfantement
+3,portus,us,m,le port
+3,quercus,us,f,le chêne
+3,senatus,us,m,le sénat
+3,specus,us,m,la grotte
+3,tribus,us,f,la tribu 
