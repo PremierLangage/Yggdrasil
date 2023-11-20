@@ -33,8 +33,8 @@ if "aleacode" in globals():
     exec(cc,globals())
     if "latexcode" not in globals():
         latexcode = "x^2+x^3+ax+bx+cx"
-    text = text.format({"latexcode":latexcode})
-    solution = solution % globals()
+    #text = text.format({"latexcode":latexcode})
+    #solution = solution % globals()
 
 # raise Exception(keys)
 
