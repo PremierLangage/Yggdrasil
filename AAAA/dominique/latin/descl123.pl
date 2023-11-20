@@ -35,12 +35,15 @@ form==
 evaluator==
 nbq += 1
 ok = ( sol == inputbox.value.strip())
+feedback =""
+if len(sol) != len(inputbox.value.strip()):
+    feedback += "eqal "
 if ok:
     nbbr += 1 
-    feedback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>'
+    feedback += f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>'
     grade = (100," ")
 else:
-    feedback = f'<span class="error-state">Bad answer</span> <br/><span >{texti}<br> la bonne réponse  était : **{sol}** <br>  Nombre de réponses correctes {nbbr}/{nbq} </span>'
+    feedback += f'<span class="error-state">Bad answer</span> <br/><span >{texti}<br> la bonne réponse  était : **{sol}** <br>  Nombre de réponses correctes {nbbr}/{nbq} </span>'
     grade = (0, " ")
 import random
 random.seed(10)
