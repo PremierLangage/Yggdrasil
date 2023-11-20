@@ -86,7 +86,7 @@ def declinaison2(row,cas,nombre=0):
     """
     if row['genre']=='n' :
         return deuxn[cas][nombre](row['genitif'])
-    else: # le féminin c'est comme le masculin 
+    else: #  le masculin 
         return deuxm[cas][nombre](row['genitif'])
 
 def declinaison3(row,cas,nombre=0):
@@ -143,5 +143,4 @@ def question():
         
     return createquestion(laliste[53])
     
-    
-    return 0
+
