@@ -24,7 +24,7 @@ pltest0==
 True
 ==
 
-pltest0==
+pltest1==
 >>> True
 False
 ==
