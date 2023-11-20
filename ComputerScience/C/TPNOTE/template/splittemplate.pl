@@ -31,7 +31,7 @@ text += "§"+aleacode.split("\n")[2]+"§"
 
 if "aleacode" in globals():
     exec("\n\n\n"+aleacode,globals())
-    text = text % globals()
+    text = text.format(globals())
     solution = solution % globals()
 
 # raise Exception(keys)
