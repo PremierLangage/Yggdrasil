@@ -138,8 +138,10 @@ def question():
     with open("mots.csv","r") as f:
         laliste= list(csv.DictReader(f))
 
-    
-    return createquestion(random.choice(laliste))
+
+    #    return createquestion(random.choice(laliste))
+        
+    return createquestion(laliste[53])
     
     
     return 0
