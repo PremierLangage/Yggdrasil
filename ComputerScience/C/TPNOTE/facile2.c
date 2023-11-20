@@ -75,7 +75,9 @@ import random
 posibilities = [("x*(a*a+b+c)","x*(a^2+b+c)")]
 # choix d'une expression
 pcode,latexcode = random.choice(posibilities)
-print(latexcode)
+latexcode=" Hahah "
+pcode="3x"
+
 #
 solution = f"""#define PCODE {pcode}\n"""+solution
 
