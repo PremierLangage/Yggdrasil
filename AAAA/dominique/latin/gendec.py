@@ -117,7 +117,7 @@ def declinaison(row, cas, nombre):
     return fifi(row,cas,nombre)
 
 
-def createquestion(row):
+def createquestion(row, indice):
     if random.randint(1,2) == 1:
         nombre=0
         nombres="Singulier"
@@ -131,7 +131,7 @@ def createquestion(row):
     
     sol = declinaison(row, cas, nombre)
 
-    return tx,sol 
+    return tx,sol,(indice,row,cas,nombre) 
 
 
 def question():
@@ -140,6 +140,7 @@ def question():
 
     indice = random.randint(0,len(laliste)-1) # 
     ligne =  laliste[indice]
+
     return createquestion(ligne)
         
     # return createquestion(laliste[53])
