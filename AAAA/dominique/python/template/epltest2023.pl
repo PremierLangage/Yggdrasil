@@ -19,6 +19,16 @@ text += "\n# vous n'avez pas défini de before"
 
 == 
 
+pltest0==
+>>> True
+True
+==
+
+pltest0==
+>>> True
+False
+==
+
 
 evaluator==#|python|
 
@@ -32,7 +42,7 @@ while "pltest"+str(i) in globals() :
 
 grade=(100,"Bravo)
 student =  response['answer']
-a= True # Tout c'est bien passé jsuque la ;)
+a= True # Tout c'est bien passé jusque la ;)
 outstr="" # pas de feedback pour le moment 
 lfb = None # une structure feedback differente pour chaque test
 nbgt = len(listoftests) 
