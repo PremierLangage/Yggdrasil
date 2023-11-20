@@ -63,8 +63,8 @@ for i,pltest in enumerate(listoftests):
     if "demo" in dic:
         b += "<div>"+lfb.toJson()+"</div>"
     
-if "feedback" in dic: # FIXME feedback devrai être un dictionnaire.
-    outstr += dic["feedback"]+" valeur de stop :"+ str(stop)
+if "feedback" in globals(): # FIXME feedback devrai être un dictionnaire.
+    outstr +=  feedback +" valeur de stop :"+ str(stop)
 
 if a:
     grade= 100
