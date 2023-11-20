@@ -19,6 +19,8 @@ text += "\n# vous n'avez pas défini de before"
 
 == 
 
+testname0= "ça Compile ok !"
+
 pltest0==
 >>> True
 True
