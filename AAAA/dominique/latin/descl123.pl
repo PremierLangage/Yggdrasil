@@ -10,7 +10,7 @@ before==
 from gendec import question
 import random
 #random.seed(10)
-text, sol = question()
+text, sol, q = question()
 texti=text
 nbq=0
 nbbr=0
@@ -41,9 +41,11 @@ if ok:
     nbbr += 1 
     feedback += f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>'
     grade = (100," ")
+    # save to bdd (q,100) 
 else:
     feedback += f'<span class="error-state">Bad answer</span> <br/><span >{texti}<br> la bonne réponse  était : **{sol}** <br>  Nombre de réponses correctes {nbbr}/{nbq} </span>'
     grade = (0, " ")
+    # save to bdd (q,0) 
 #import random
 #random.seed(10)
 #from gendec import question
