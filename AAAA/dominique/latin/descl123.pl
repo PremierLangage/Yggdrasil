@@ -55,7 +55,7 @@ else:
 #from gendec import question
 
 #texti, sol = question()
-text += feedback
+text = feedback
 ==
 
 
