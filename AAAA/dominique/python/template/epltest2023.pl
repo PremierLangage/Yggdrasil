@@ -58,7 +58,7 @@ for i,pltest in enumerate(listoftests):
     tname='testname'+str(i)
     testname = tname if 'testname'+str(i) in globals() else "Groupe de test "+str(i+1)
     
-    runner = PlRunner(student,pltest,fb=lfb)
+    runner = PlRunner(student,globals()[pltest],fb=lfb)
     r, b = runner.runpltest(testname,i+1)
     outstr +=  b # Ajout au feedbakc final 
     nbpts += r
