@@ -20,9 +20,49 @@ text += "\n# vous n'avez pas défini de before"
 == 
 
 
-evaluator==
+evaluator==#[python]
 
-grade=(1000,"Bravo")
+from pltest_doc import PlRunner 
+
+listoftests=[]
+i=0
+while "pltest"+str(i) in globals() :
+    listoftests.append("pltest"+str(i))
+    i = i+1
+
+
+a= True # Tout c'est bien passé jsuque la ;)
+outstr="" # pas de feedback poiur le moment 
+lfb = None # une structure feedback pour chaque test
+nbgt = len(listoftests) 
+nbpts=0
+for i,testgroupid in enumerate(listoftests):
+    pltest= dic[testgroupid]
+    lfb = FeedBack()
+    tname='testname'+str(i)
+    testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
+    
+    runner = PlRunner(student,dic[testgroupid],fb=lfb)
+    r, b = runner.runpltest(testname,i+1)
+    outstr +=  b # Ajout au feedbakc final 
+    nbpts += r
+    a = a and r == 100 # si au moins un test a échoué r != 100
+
+    if stop and r <100: # si sortir au premier groupe de tests échoué 
+        break
+    if "demo" in dic:
+        b += "<div>"+lfb.toJson()+"</div>"
+    
+if "feedback" in dic: # FIXME feedback devrai être un dictionnaire.
+    outstr += dic["feedback"]+" valeur de stop :"+ str(stop)
+
+if a:
+    grade= 100
+else:
+    grade= nbpts/nbgt
+
+
+grade=(100,"Bravo")
 
 ==
 
