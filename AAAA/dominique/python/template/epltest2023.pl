@@ -20,9 +20,9 @@ text += "\n# vous n'avez pas défini de before"
 == 
 
 
-evaluator==#[python]
+evaluator==#|python|
 
-from pltest_doc import PlRunner 
+from pltest_doc import PlRunner
 
 listoftests=[]
 i=0
@@ -30,17 +30,17 @@ while "pltest"+str(i) in globals() :
     listoftests.append("pltest"+str(i))
     i = i+1
 
-
+grade=(100, response['answer'])
+euh="""
 a= True # Tout c'est bien passé jsuque la ;)
-outstr="" # pas de feedback poiur le moment 
-lfb = None # une structure feedback pour chaque test
+outstr="" # pas de feedback pour le moment 
+lfb = None # une structure feedback differente pour chaque test
 nbgt = len(listoftests) 
 nbpts=0
-for i,testgroupid in enumerate(listoftests):
-    pltest= dic[testgroupid]
+for i,pltest in enumerate(listoftests):
     lfb = FeedBack()
     tname='testname'+str(i)
-    testname = dic[tname] if tname in dic else "Groupe de test "+str(i+1)
+    testname = tname if 'testname'+str(i) in globals() else "Groupe de test "+str(i+1)
     
     runner = PlRunner(student,dic[testgroupid],fb=lfb)
     r, b = runner.runpltest(testname,i+1)
@@ -63,7 +63,7 @@ else:
 
 
 grade=(100,"Bravo")
-
+"""
 ==
 
 
