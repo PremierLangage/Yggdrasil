@@ -31,7 +31,7 @@ if "aleacode" in globals():
 
 # raise Exception(keys)
 
-editor['code']= "cac boudin" 
+code= "cac boudin" 
 
 ==
 
