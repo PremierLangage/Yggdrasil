@@ -85,9 +85,9 @@ def declinaison2(row,cas,nombre=0):
         nombre =0 singulier =1 pluriel
     """
     if row['genre']=='n' :
-        return deuxn[cas][nombre](row['truc'])
+        return deuxn[cas][nombre](row['genitif'])
     else: # le féminin c'est comme le masculin 
-        return deuxm[cas][nombre](row['truc'])
+        return deuxm[cas][nombre](row['genitif'])
 
 def declinaison3(row,cas,nombre=0):
     """
