@@ -40,7 +40,6 @@ while "pltest"+str(i) in globals() :
     listoftests.append("pltest"+str(i))
     i = i+1
 
-grade=(100,"Bravo)
 student =  response['answer']
 a= True # Tout c'est bien passé jusque la ;)
 outstr="" # pas de feedback pour le moment 
