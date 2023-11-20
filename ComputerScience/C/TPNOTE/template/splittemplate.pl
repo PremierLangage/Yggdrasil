@@ -24,9 +24,9 @@ for k,v in splitwithre("sujet.c").items():
     keys += " "+ str(k)
     globals()[k]=v
 
-text += "§"+aleacode.split("\n")[0]+"§"
-text += "§"+aleacode.split("\n")[1]+"§"
-text += "§"+aleacode.split("\n")[2]+"§"
+text += latexcode
+text += pcode
+
 
 
 if "aleacode" in globals():
