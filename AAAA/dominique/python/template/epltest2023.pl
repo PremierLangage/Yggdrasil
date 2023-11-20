@@ -60,7 +60,7 @@ for i,pltest in enumerate(listoftests):
 
     if stop and r <100: # si sortir au premier groupe de tests échoué 
         break
-    if "demo" in globals:
+    if "demo" in globals():
         b += "<div>"+lfb.toJson()+"</div>"
     
 if "feedback" in globals(): # FIXME feedback devrai être un dictionnaire.
