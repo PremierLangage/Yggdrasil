@@ -71,7 +71,7 @@ int main(int argc, char **v){
 // PL:==
 /* PL:aleacode==
 # ligne 1
-a=2
+a = 2
 # this python code is executed in the buider to generate the code 
 # to be compared to the student code
 a=1
