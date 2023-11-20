@@ -14,7 +14,7 @@ editor.code==
 
 
 
-beforeA==
+before_splitcode==
 from parsecode import splitcode,splitwithre
 
 keys = ""
