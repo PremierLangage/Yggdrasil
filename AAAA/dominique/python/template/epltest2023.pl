@@ -1,7 +1,8 @@
 
 
 
-
+title= Pltest avec evaluator
+text= Changer ce text
 
 @ feedback2023.py [feedback2.py] # utilisé par pltest_doc 
 @ plrunner2023.py [pltest_doc.py] # utilisé par grader 
