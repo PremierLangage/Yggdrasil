@@ -37,7 +37,9 @@ nbq += 1
 ok = ( sol == inputbox.value.strip())
 feedback =""
 if len(sol) != len(inputbox.value.strip()):
-    feedback += "eqal "
+    feedback += "not eqal "
+    for i in inputbox.value.strip():
+        feedback += "("+i+")"
 if ok:
     nbbr += 1 
     feedback += f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>'
