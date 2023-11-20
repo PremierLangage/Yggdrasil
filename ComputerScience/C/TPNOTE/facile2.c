@@ -75,13 +75,13 @@ a=2
 # this python code is executed in the buider to generate the code 
 # to be compared to the student code
 a=1
+#
 import random 
-
 # expression en python et en latex 
 posibilities = [("x*(a*a+b+c)","x*(a^2+b+c)")]
 # choix d'une expression
 pcode,latexcode = random.choice(posibilities)
-
+#
 solution = f"""#define PCODE {pcode}\n"""+solution
 
 PL:== */
