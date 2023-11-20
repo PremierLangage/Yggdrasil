@@ -25,7 +25,7 @@ pltest=f"""
 >>> type({var})=={type_var} # V&eacute;rification du type = 
 True
 """
-
+import CodeEditor
 editor["code"]=f"""{var}= """
 
 ==
