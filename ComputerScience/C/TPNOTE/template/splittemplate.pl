@@ -12,6 +12,7 @@ editor.code==
 
 ==
 
+form @= /ComputerScience/python/form/text_editor.html
 
 beforeA==
 from parsecode import splitcode,splitwithre
