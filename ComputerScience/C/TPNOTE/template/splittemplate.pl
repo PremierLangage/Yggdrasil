@@ -24,6 +24,8 @@ for k,v in splitwithre("sujet.c").items():
     keys += " "+ str(k)
     globals()[k]=v
 
+text += aleacode
+
 if "aleacode" in globals():
     eval(aleacode)
     text = text % globals()
