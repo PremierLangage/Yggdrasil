@@ -84,6 +84,8 @@ solution = f"""#define PCODE {pcode}\n"""+solution
 PL:== */
 
 
+// PL:latexcode="Merdred"
+
 
 /* PL:checks_args_stdin==
 [["Test 1", ["11"], ""],
