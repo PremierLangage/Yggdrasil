@@ -57,7 +57,7 @@ nbpts=0
 for i,pltest in enumerate(listoftests):
     lfb = FeedBack()
     tname='testname'+str(i)
-    testname = tname if 'testname'+str(i) in globals() else "Groupe de test "+str(i+1)
+    testname =  globals()[tname] if tname in globals() else "Groupe de test "+str(i+1)
     
     runner = PlRunner(student,globals()[pltest],fb=lfb)
     r, b = runner.runpltest(testname,i+1)
