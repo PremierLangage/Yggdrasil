@@ -25,7 +25,7 @@ True
 ==
 
 pltest1==
->>> True
+>>> a==9999
 False
 ==
 
@@ -52,7 +52,6 @@ outstr="" # pas de feedback pour le moment
 lfb = None # une structure feedback differente pour chaque test
 nbgt = len(listoftests) 
 nbpts=0
-outstr=str(listoftests)
 for i,pltest in enumerate(listoftests):
     lfb = FeedBack()
     tname='testname'+str(i)
@@ -73,7 +72,7 @@ if "feedback" in globals(): # FIXME feedback devrai être un dictionnaire.
     outstr +=  feedback +" valeur de stop :"+ str(stop)
 
 if a:
-    grade= 100,oustr+" Pff"
+    grade= 100,oustr
 else:
     grade= nbpts/nbgt, "Pif et "+ outstr+" Pifou"
 
