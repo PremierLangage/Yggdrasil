@@ -31,10 +31,14 @@ False
 
 demo= HH
 
+
+stop=1
+
 evaluator==#|python|
 
 from pltest_doc import PlRunner
 from feedback2 import FeedBack
+
 
 listoftests=[]
 i=0
