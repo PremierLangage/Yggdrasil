@@ -34,7 +34,7 @@ form==
 
 evaluator==
 nbq += 1
-ok = sol == inputbox.value.strip()
+ok = ( sol == inputbox.value.strip())
 if ok:
     nbbr += 1 
     feedback = f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>'
