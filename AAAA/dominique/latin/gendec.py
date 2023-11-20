@@ -140,7 +140,7 @@ def question():
 
     indice = random.randint(0,len(laliste)-1) # 
     ligne =  laliste[indice]
-    return createquestion()
+    return createquestion(ligne)
         
     # return createquestion(laliste[53])
     
