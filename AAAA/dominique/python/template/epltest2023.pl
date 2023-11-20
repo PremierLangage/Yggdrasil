@@ -74,7 +74,7 @@ if "feedback" in globals(): # FIXME feedback devrai être un dictionnaire.
     outstr +=  feedback +" valeur de stop :"+ str(stop)
 
 if a:
-    grade= 100,oustr
+    grade= 100,outstr
 else:
     grade= nbpts/nbgt, "Pif et "+ outstr+" Pifou"
 
