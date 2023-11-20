@@ -19,7 +19,7 @@ text += "\n# vous n'avez pas défini de before"
 
 == 
 
-testname0= "ça Compile ok !"
+testname0= "&ccedil;a Compile ok !"
 
 pltest0==
 >>> True
