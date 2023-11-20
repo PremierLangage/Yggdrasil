@@ -25,6 +25,9 @@ for k,v in splitwithre("sujet.c").items():
     globals()[k]=v
 
 text += "<"+aleacode.split("\n")[0]+">"
+text += "<"+aleacode.split("\n")[1]+">"
+text += "<"+aleacode.split("\n")[2]+">"
+
 
 if "aleacode" in globals():
     eval("\n\n\n"+aleacode,globals())
