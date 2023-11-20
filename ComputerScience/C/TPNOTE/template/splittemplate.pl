@@ -23,8 +23,10 @@ for k,v in splitwithre("sujet.c").items():
     keys += " "+ str(k)
     globals()[k]=v
 
-
-
+if "aleacode" in globals():
+    text = text % globals()
+    solution = solution % globals()
+    
 # raise Exception(keys)
 
 
