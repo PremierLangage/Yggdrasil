@@ -72,7 +72,9 @@ int main(int argc, char **v){
 /* PL:aleacode==
 # this python code is executed in the buider to generate the code 
 # to be compared to the student code
+
 import random 
+
 # expression en python et en latex 
 posibilities = [("x*(a*a+b+c)","x*(a^2+b+c)")]
 # choix d'une expression
