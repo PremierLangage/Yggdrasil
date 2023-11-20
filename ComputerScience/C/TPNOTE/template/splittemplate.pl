@@ -26,7 +26,7 @@ for k,v in splitwithre("sujet.c").items():
 
 text += aleacode
 
-if "aleacode" in globals():
+if "Xaleacode" in globals():
     eval(aleacode)
     text = text % globals()
     solution = solution % globals()
