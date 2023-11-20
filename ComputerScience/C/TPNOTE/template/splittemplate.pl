@@ -30,7 +30,7 @@ text += "§"+aleacode.split("\n")[2]+"§"
 
 
 if "aleacode" in globals():
-    eval("\n\n\n"+aleacode,globals())
+    exec("\n\n\n"+aleacode,globals())
     text = text % globals()
     solution = solution % globals()
 
