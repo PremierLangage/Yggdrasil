@@ -30,8 +30,8 @@ while "pltest"+str(i) in globals() :
     listoftests.append("pltest"+str(i))
     i = i+1
 
-grade=(100, response['answer'])
-euh="""
+grade=(100,"Bravo)
+student =  response['answer']
 a= True # Tout c'est bien passé jsuque la ;)
 outstr="" # pas de feedback pour le moment 
 lfb = None # une structure feedback differente pour chaque test
