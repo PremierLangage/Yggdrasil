@@ -16,5 +16,5 @@ Exprimer $! y !$ en fonction $! x !$.
 ==
 
 prefix ==
- y =
+$! y = !$
 ==
