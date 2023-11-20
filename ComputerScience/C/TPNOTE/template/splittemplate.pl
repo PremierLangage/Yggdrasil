@@ -30,7 +30,8 @@ text += pcode
 
 
 if "aleacode" in globals():
-    exec("\n\n\n"+aleacode,globals())
+    r=compile(aleacode, " Code alea du fichier c","exec")
+    exec(r,globals())
 
     text = text.format({"latexcode":latexcode})
     solution = solution % globals()
