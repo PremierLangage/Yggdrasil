@@ -40,6 +40,9 @@ if len(sol) != len(inputbox.value.strip()):
     feedback += "not eqal "
     for i in inputbox.value.strip():
         feedback += "("+i+")"
+    feedback += "|"
+    for i in sol : 
+        feedback += "("+i+")"
 if ok:
     nbbr += 1 
     feedback += f'<span class="success-state">Good 👏👏👏 </span> <span > {nbbr}/{nbq} </span>'
