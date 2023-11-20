@@ -29,7 +29,7 @@ text += "§"+aleacode.split("\n")[1]+"§"
 text += "§"+aleacode.split("\n")[2]+"§"
 
 
-if "Xaleacode" in globals():
+if "aleacode" in globals():
     eval("\n\n\n"+aleacode,globals())
     text = text % globals()
     solution = solution % globals()
