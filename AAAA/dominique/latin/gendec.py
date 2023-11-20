@@ -70,10 +70,6 @@ troisn={"nominatif":(lambda s:s+'u', lambda s:s+'ua'),
         }
 
 
-
-def genitif(row):
-    # affiche le genetif en fonction de la ligne choisie dans le fichier csv
-
 def declinaison1(row,cas,nombre=0):
     """
         cas appartient a  CAS
@@ -129,8 +125,10 @@ def createquestion(row):
         nombre=1
         nombres="Pluriel"
     cas= random.choice(CAS)
+
     tx = f"""Donnez la déclinaison du mot **{row['nom']}**  genitif {row['genitif']} pour le genre : {row['genre']}  qui veut dire __{row['sens']}__  
     pour le *{cas}* au *{nombres}*"""
+    
     sol = declinaison(row, cas, nombre)
 
     return tx,sol 
