@@ -24,8 +24,7 @@ for k,v in splitwithre("sujet.c").items():
     keys += " "+ str(k)
     globals()[k]=v
 
-text += latexcode
-text += pcode
+
 
 
 
