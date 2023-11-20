@@ -33,7 +33,7 @@ False
 evaluator==#|python|
 
 from pltest_doc import PlRunner
-from feedback2 import Feedback
+from feedback2 import FeedBack
 
 listoftests=[]
 i=0
