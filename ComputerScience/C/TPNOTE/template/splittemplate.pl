@@ -30,6 +30,7 @@ if "aleacode" in globals():
 
 # raise Exception(keys)
 
+editor.code= "cac boudin" 
 
 ==
 
