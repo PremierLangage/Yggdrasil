@@ -25,14 +25,14 @@ for k,v in splitwithre("sujet.c").items():
     globals()[k]=v
 
 text += "<"+aleacode.split("\n")[0]+">"
-
+"""
 if "aleacode" in globals():
     eval(aleacode,globals())
     text = text % globals()
     solution = solution % globals()
 
 # raise Exception(keys)
-
+"""
 code= "cac boudin" 
 
 ==
