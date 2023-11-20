@@ -31,7 +31,8 @@ text += pcode
 
 if "aleacode" in globals():
     exec("\n\n\n"+aleacode,globals())
-    text = text.format(globals())
+
+    text = text.format({"latexcode":latexcode})
     solution = solution % globals()
 
 # raise Exception(keys)
