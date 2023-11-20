@@ -52,6 +52,7 @@ outstr="" # pas de feedback pour le moment
 lfb = None # une structure feedback differente pour chaque test
 nbgt = len(listoftests) 
 nbpts=0
+outstr=str(listoftests)
 for i,pltest in enumerate(listoftests):
     lfb = FeedBack()
     tname='testname'+str(i)
