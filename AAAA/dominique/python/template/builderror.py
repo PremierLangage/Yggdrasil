@@ -148,10 +148,19 @@ def addList(l,value):
     l[len(l)] = value
 """
             letest= """
->>> printList([0],1)
+def printList(l):
+    i=0
+    while i <= len(l):
+        print(l[i])
+        i=i+1
+>>> l=[0]
+>>> addList(l,1)
+>>> printList(l)
 0
 1
->>> printList([17],89)
+>>> l=[17]
+>>> addList(l,89)
+>>> printList(l)
 17
 89
 """
