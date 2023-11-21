@@ -68,6 +68,8 @@ for i, e in enumerate(sortlist.items):
     if e['id'] != str(i):
         e['css'] = 'error-state animated fadeIn'
         errors += 1
+    else:
+        e['content'] = '<span style="color: darkgreen;">'+e['content']+'</span>' 
 
 if errors == 0:
     grade = (100, '<span class="success-state animated pulse infinite" style="padding: 5px;">Bonne r&eacute;ponse</span>')
