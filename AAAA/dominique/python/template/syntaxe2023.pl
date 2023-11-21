@@ -1,7 +1,7 @@
 
 
 
-
+title= Erreurs de syntaxe
 
 @ builderror.py
 
