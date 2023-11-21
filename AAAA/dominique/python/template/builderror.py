@@ -151,7 +151,7 @@ def addList(l,value):
 >>> printList([0],1)
 0
 1
->>> printList([17],89])
+>>> printList([17,89])
 17
 89
 """
