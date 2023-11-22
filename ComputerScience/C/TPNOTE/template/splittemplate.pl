@@ -40,5 +40,7 @@ if "aleacode" in globals():
 
 code= "cac boudin" 
 
+passage = True
+
 ==
 
