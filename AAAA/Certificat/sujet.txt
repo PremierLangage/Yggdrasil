@@ -1,0 +1,7 @@
+
+Un marchant de fruits et légumes a acheté l’ensemble de sa marchandise à 2 francs le kilo.
+Il vend les tomates à 5 francs le kilo. Celles-ci représentent le tiers de la marchandise. Le quart de sa marchandise sont des pommes vendues à 4 francs le kilo. Le reste est vendu au prix coûtant.
+La totalité de sa marchandise lui permet de réaliser un bénéfice de 198 francs.
+Quelle quantité de fruits et légumes en kilo a-t-il acheté au départ ? 
+
+
