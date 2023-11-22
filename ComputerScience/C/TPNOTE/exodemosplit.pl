@@ -8,7 +8,7 @@ extends= template/splittemplate.pl
 title= facile 2 
 
 
-before_after==
+before_zafter==
 
 if "passage" in globals():
     text += "passage"
