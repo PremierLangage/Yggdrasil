@@ -71,13 +71,13 @@ int main(int argc, char **argv)
     switch(argv[1][0])
     {
     case 'a':
-        init(&p,12,2018);
+        init(&p,12,2017);
         init(&q,18,2018);
         printf("Test a %s\n", test(&p,q)? "True":"False");
     break;
     case 'b':
         init(&p,18,2018);
-        init(&q,11,2018);
+        init(&q,11,2019);
         printf("Test b %s\n", test(&p,q)? "True":"False");
     break;
     case 'c':
@@ -157,15 +157,15 @@ structlist = [
 ]
 
 proppcodechampchamp2 = [
-("""Le camping car est plus vieux et avec plus de places""", "p->annee_achat < q.annee_achat || (p->annee_achat == q.annee_achat && p->nb_places > q.nb_places)","nb_places","annee_achat"),
+("""Le camping car est plus vieux et avec plus de places""", "p->annee_achat < q.annee_achat || (p->annee_achat == q.annee_achat && p->nb_places > q.nb_places)","annee_achat","nb_places"),
 
-("""Le livre de science fiction est plus vieux et plus long""", "p->annee_parution < q.annee_parution || (p->annee_parution == q.annee_parution && p->nb_pages > q.nb_pages)","nb_pages","annee_parution"),
+("""Le livre de science fiction est plus vieux et plus long""", "p->annee_parution < q.annee_parution || (p->annee_parution == q.annee_parution && p->nb_pages > q.nb_pages)","annee_parution","nb_pages"),
 
-("""Le sous marin est plus vieux et plus puissant""", "p->annee_achat < q.annee_achat || (p->annee_achat == q.annee_achat && p->puissance > q.puissance)","puissance","annee_achat"),
+("""Le sous marin est plus vieux et plus puissant""", "p->annee_achat < q.annee_achat || (p->annee_achat == q.annee_achat && p->puissance > q.puissance)","annee_achat","puissance"),
 
-("""L'avion est plus vieux et plus puissant""", "p->annee_achat < q.annee_achat || (p->annee_achat == q.annee_achat && p->puissance > q.puissance)","puissance","annee_achat"),
+("""L'avion est plus vieux et plus puissant""", "p->annee_achat < q.annee_achat || (p->annee_achat == q.annee_achat && p->puissance > q.puissance)","annee_achat","puissance"),
 
-("""Le traité de philosophie est plus vieux et plus long """, "p->annee_edition < q.annee_edition || (p->annee_edition == q.annee_edition && p->nb_pages > q.nb_pages)","nb_pages","annee_edition"),
+("""Le traité de philosophie est plus vieux et plus long """, "p->annee_edition < q.annee_edition || (p->annee_edition == q.annee_edition && p->nb_pages > q.nb_pages)","annee_edition","nb_pages"),
 ]
      
 l = list(zip(structlist,proppcodechampchamp2, namelabels))
