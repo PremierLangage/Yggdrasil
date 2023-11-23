@@ -5,7 +5,7 @@
 
 // PL:author=DR
 
-/* PL:title= Facile  */
+// PL:title= Tiens des structures
 /* PL:text==
 
 Voici la structure suivante:
