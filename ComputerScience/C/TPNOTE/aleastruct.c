@@ -31,7 +31,12 @@ PL:== */
 
 #ifndef STRUCTNAME
 #define STRUCTNAME Truc
+typedef struct _ {
+    int age;
+    int puiss;
+} Truc;
 #define CHAMP age
+
 #define PCODE (p->age < q.age)
 #endif
 // PL:==
@@ -52,22 +57,28 @@ PL:== */
 
 // PL:code_after==
 
-void init(STRUCTNAME *z, int x)
+void init(STRUCTNAME *z, int x, int y)
 {
     z->CHAMP = x;
+    z->CHAMP2 = y;
 }
 
 
 
 int main(int argc, char **v){
     STRUCTNAME p,q;
-    init(&p,12);
-    init(&q,18);
-    printf("Test 1 ", test(&p,q));
-    init(&p,18);
-    init(&q,11);
-    printf("Test 2 ", test(&p,q));
-
+    init(&p,12,2018);
+    init(&q,18,2018);
+    printf("Test 1 %s\n", test(&p,q)? "True":"False");
+    init(&p,18,2018);
+    init(&q,11,2018);
+    printf("Test 2 %s\n", test(&p,q)? "True":"False");
+    init(&p,11,2018);
+    init(&q,11,2019);
+    printf("Test egal %s\n", test(&p,q)? "True":"False");
+    init(&p,11,2019);
+    init(&q,11,2018);
+    printf("Test egal %s\n", test(&p,q)? "True":"False");
     return 0;
 }
 
