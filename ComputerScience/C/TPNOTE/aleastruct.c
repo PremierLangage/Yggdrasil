@@ -77,55 +77,55 @@ import random
 namelabels=[("CampingCar","cc"),("TraitePhilosophique","tp"),("SousMarin","sm"),("Avion","av"),("AuteurSF","asf")]
 structlist = [
 """
-// camping car 
-typedef struct cc {
-    int nb_places;
-    int puissance;
-    char immatriculation[8];
-    int annee_achat; // AAAA
-    char marque[8];
-} CampingCar;
+    // camping car 
+    typedef struct cc {
+        int nb_places;
+        int puissance;
+        char immatriculation[8];
+        int annee_achat; // AAAA
+        char marque[8];
+    } CampingCar;
 """,
 """
-// traité de phylosophie 
-typedef struct tp {
-    int nb_pages;
-    char titre[128];
-    char auteur[128];
-    int annee_parution; // AAAA
-    char editeur[128];
-} TraitePhilosophique;
+    // traité de phylosophie 
+    typedef struct tp {
+        int nb_pages;
+        char titre[128];
+        char auteur[128];
+        int annee_parution; // AAAA
+        char editeur[128];
+    } TraitePhilosophique;
 """,
 """
-// Sous marin
-typedef struct sm {
-    int nb_torpilles;
-    int puissance;
-    char immatriculation[8];
-    int annee_achat; // AAAA
-    int propulsion; // 0 = diesel, 1 = nucléaire
-} SousMarin;
+    // Sous marin
+    typedef struct sm {
+        int nb_torpilles;
+        int puissance;
+        char immatriculation[8];
+        int annee_achat; // AAAA
+        int propulsion; // 0 = diesel, 1 = nucléaire
+    } SousMarin;
 """,
 """
-// Avions
-typedef struct av {
-    int nb_places;
-    int puissance;
-    char immatriculation[8];
-    int annee_achat; // AAAA
-    int type; // 0 = avion, 1 = hélicoptère
-} Avion;
+    // Avions
+    typedef struct av {
+        int nb_places;
+        int puissance;
+        char immatriculation[8];
+        int annee_achat; // AAAA
+        int type; // 0 = avion, 1 = hélicoptère
+    } Avion;
 """,
 
 """
-// Auteurs de sciencefiction 
-typedef struct asf {
-    int nb_pages;
-    char titre[128];
-    char auteur[128];
-    int annee_parution; // AAAA
-    char editeur[128];
-} AuteurSF;
+    // Auteurs de sciencefiction 
+    typedef struct asf {
+        int nb_pages;
+        char titre[128];
+        char auteur[128];
+        int annee_parution; // AAAA
+        char editeur[128];
+    } AuteurSF;
 """
 ]
 
