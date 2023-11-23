@@ -74,7 +74,7 @@ int main(int argc, char **v){
 # to be compared to the student code
 import random 
 # expression en python et en latex 
-posibilities = [("x*(a*a+b*c)","$%f(x)=x*(a^2+b*c)%$"),]
+posibilities = [("x*(a*a+b*c)","f(x)=x*(a^2+b*c)"),]
 # choix d'une expression
 pcode,latexcode = random.choice(posibilities)
 
