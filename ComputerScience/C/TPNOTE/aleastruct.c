@@ -119,7 +119,7 @@ structlist = [
         int nb_pages;
         char titre[128];
         char auteur[128];
-        int annee_parution; // AAAA
+        int annee_edition; // AAAA
         char editeur[128];
     } TraitePhilosophique;
 """,
@@ -165,7 +165,7 @@ proppcodechampchamp2 = [
 
 ("""L'avion est plus vieux et plus puissant""", "p->annee_achat < q.annee_achat || (p->annee_achat == q.annee_achat && p->puissance > q.puissance)","puissance","annee_achat"),
 
-("""Le traité de philosophie est plus vieux et plus long """, "p->annee_parution < q.annee_parution || (p->annee_parution == q.annee_parution && p->nb_pages > q.nb_pages)","nb_pages","annee_parution"),
+("""Le traité de philosophie est plus vieux et plus long """, "p->annee_edition < q.annee_edition || (p->annee_edition == q.annee_edition && p->nb_pages > q.nb_pages)","nb_pages","annee_edition"),
 ]
      
 l = list(zip(structlist,proppcodechampchamp2, namelabels))
@@ -194,9 +194,9 @@ PL:== */
 
 
 /* PL:checks_args_stdin==
-[["Test a", ["a"], ""],
-["Test b", ["b"], ""],
-["Test c", ["c"], ""],
-["Test d", ["d"], ""],
+[["Test p > q ", ["a"], ""],
+["Test p < q ", ["b"], ""],
+["Test même premier champ >", ["c"], ""],
+["Test même premier champ <", ["d"], ""],
 ]
 PL:== */
