@@ -76,8 +76,8 @@ int main(int argc, char **argv)
         printf("Test a %s\n", test(&p,q)? "True":"False");
     break;
     case 'b':
-        init(&p,18,2018);
-        init(&q,11,2019);
+        init(&p,11,2018);
+        init(&q,18,2019);
         printf("Test b %s\n", test(&p,q)? "True":"False");
     break;
     case 'c':
