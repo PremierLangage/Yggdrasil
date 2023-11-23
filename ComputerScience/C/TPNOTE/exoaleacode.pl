@@ -16,13 +16,5 @@ float eval_f(float x, int a, int b, int c){
 before_zz==
 
 
-text += """
-
-
-
-
-
-
-""" + solution
 
 ==
