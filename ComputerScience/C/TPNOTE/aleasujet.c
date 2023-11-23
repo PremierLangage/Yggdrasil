@@ -78,7 +78,7 @@ posibilities = [("x*(a*a+b*c)","x*(a^2+b*c)"),]
 # choix d'une expression
 pcode,latexcode = random.choice(posibilities)
 
-solution = f"""#define PCODE {pcode}\n"""+solution
+solution = f"""#define PCODE """+pcode+"\n"+solution
 
 PL:== */
 
