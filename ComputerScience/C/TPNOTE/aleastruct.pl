@@ -17,7 +17,7 @@ editor.code==
 before_zb==
 
 text = text % globals()
-solution = ff+solution
+code_before = ff+code_before
 
 text += ff
 
