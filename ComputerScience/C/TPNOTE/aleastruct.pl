@@ -18,9 +18,9 @@ before_zb==
 
 
 
-solution = ff+solution 
 text = text.format(struct=struct,structname=structname,propriete=propriete)
 text += ff
+solution = ff+solution 
 
 
 ==
