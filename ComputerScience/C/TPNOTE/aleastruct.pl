@@ -17,8 +17,11 @@ editor.code==
 before_zb==
 
 
+
 solution = ff+solution 
 text = text.format(struct=struct,structname=structname,propriete=propriete)
+text += ff
+
 
 ==
 
