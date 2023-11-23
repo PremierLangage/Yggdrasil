@@ -22,6 +22,10 @@ qui verifie que
 
  est vraie pour p par rapport à q.
 
+```
+    {ff}
+```
+
 PL:== */
 
 
