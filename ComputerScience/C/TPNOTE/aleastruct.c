@@ -67,18 +67,27 @@ void init(STRUCTNAME *z, int x, int y)
 
 int main(int argc, char **v){
     STRUCTNAME p,q;
-    init(&p,12,2018);
-    init(&q,18,2018);
-    printf("Test 1 %s\n", test(&p,q)? "True":"False");
-    init(&p,18,2018);
-    init(&q,11,2018);
-    printf("Test 2 %s\n", test(&p,q)? "True":"False");
+    switch(argv[1][0])
+    {
+    case 'a':
+        init(&p,12,2018);
+        init(&q,18,2018);
+        printf("Test a %s\n", test(&p,q)? "True":"False");
+    break;
+    case 'b':
+        init(&p,18,2018);
+        init(&q,11,2018);
+        printf("Test b %s\n", test(&p,q)? "True":"False");
+    break;
+    case 'c':
     init(&p,11,2018);
     init(&q,11,2019);
-    printf("Test egal %s\n", test(&p,q)? "True":"False");
+    printf("Test c %s\n", test(&p,q)? "True":"False");
+    break;
+    case 'd':   
     init(&p,11,2019);
     init(&q,11,2018);
-    printf("Test egal %s\n", test(&p,q)? "True":"False");
+    printf("Test d %s\n", test(&p,q)? "True":"False");
     return 0;
 }
 
@@ -183,7 +192,9 @@ PL:== */
 
 
 /* PL:checks_args_stdin==
-[["Test 1", ["11"], ""],
-["Test Yveline", ["78"], ""],
+[["Test a", ["a"], ""],
+["Test b", ["b"], ""],
+["Test c", ["c"], ""],
+["Test d", ["d"], ""],
 ]
 PL:== */
