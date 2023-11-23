@@ -16,6 +16,9 @@ editor.code==
 
 before_zz==
 
+if "struct" not in globals():
+    struct= prout
+
 solution = ff+solution 
 text = text.format(globals())
 
