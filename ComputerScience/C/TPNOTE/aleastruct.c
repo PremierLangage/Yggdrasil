@@ -55,9 +55,12 @@ void init(STRUCTNAME *z, int x)
 
 int main(int argc, char **v){
     STRUCTNAME p,q;
-    init(&p);
-    init(&q);
+    init(&p,12);
+    init(&q,18);
     printf("Test 1 ", test(&p,q));
+    init(&p,18);
+    init(&q,11);
+    printf("Test 2 ", test(&p,q));
 
     return 0;
 }
