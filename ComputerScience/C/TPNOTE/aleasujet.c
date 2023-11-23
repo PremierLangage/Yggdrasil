@@ -8,7 +8,7 @@
 Ecrire une fonction **eval_f** qui prend en paramètre un flottant et 3 entiers (dans cet ordre) et qui retourne un flottant.
  
 
-Votre fonction **eval_f** calcule la valeur de la fonction $%f(x)={latexcode}%$.
+Votre fonction **eval_f** calcule la valeur de la fonction {latexcode}.
 
 PL:== */
 
