@@ -16,12 +16,14 @@ editor.code==
 
 before_zb==
 
+text = ff
+==
 
-
+ 
+beurk==
 text = text.format(struct=struct,structname=structname,propriete=propriete)
 text += ff
-solution = ff+solution 
-
+solution = ff+solution
 
 ==
 
