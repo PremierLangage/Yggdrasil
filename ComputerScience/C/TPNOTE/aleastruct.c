@@ -26,12 +26,13 @@ PL:== */
 #ifndef STRUCT
 #define STRUCT Truc
 #define CHAMP age
+#define PCODE (p->age < q.age)
 #endif
 // PL:==
 // PL:solution==
 
 int test(STRUCT *p, STRUCT q){
-    return {pcode} ;
+    return PCODE ;
 }
 
 // PL:==
