@@ -20,7 +20,7 @@ if "aleacode" in globals():
         latexcode = "$%f(x)=x^2+x^3+ax+bx+cx%$"
 
 
-    text = text.format(struct=struct)
+    text = text.format(**(globals()))
 
 
 
