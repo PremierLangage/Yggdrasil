@@ -18,7 +18,7 @@ before_zb==
 
 
 solution = ff+solution 
-text = text.format()
+text = text.format(struct=struct,structname=structname,propriete=propriete)
 
 ==
 
