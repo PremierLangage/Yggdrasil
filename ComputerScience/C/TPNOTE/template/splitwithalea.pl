@@ -27,7 +27,7 @@ if "aleacode" in globals():
     text = text.format({"latexcode":latexcode, "pcode":pcode})
 
 
-    #solution = solution % globals()
+    # solution = solution % globals()
 
 
 
