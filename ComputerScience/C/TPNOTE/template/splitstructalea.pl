@@ -19,6 +19,9 @@ if "aleacode" in globals():
 
 
     text = text.format(**(globals()))
+    code_before = ff+code_before
+
+
 
 
 
