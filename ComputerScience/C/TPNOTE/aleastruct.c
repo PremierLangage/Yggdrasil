@@ -145,7 +145,7 @@ l = list(zip(structlist,proppcodechampchamp2, namelabels))
 
 x = random.randint(0, len(l)-1)
 
-for i,(struct, (prop, pcode, champ, champ2),(structname,label)) in enumerate(l):
+for i,(struct, proppropriete, pcode, champ, champ2),(structname,label)) in enumerate(l):
     if i==x:
         break
 
