@@ -8,11 +8,12 @@
 /* PL:title= Facile  */
 /* PL:text==
 
-Voici la structure {structname}:
+Voici la structure suivante:
 
-    {struct}
+    {struct};
+
 on nous demande d'ecrire la fonction de test 
-   int test({struct} *p,{struct} q);
+   int test({structname} *p,{structname} q);
 
 qui verifie la propriété {propriete} est vraie.
 
@@ -25,7 +26,6 @@ PL:== */
 
 #ifndef STRUCTNAME
 #define STRUCTNAME Truc
-#define CHAMP age
 #define PCODE (p->age < q.age)
 #endif
 // PL:==
@@ -46,30 +46,19 @@ PL:== */
 
 // PL:code_after==
 
-
-void randomtest(){
-    int e,f,g;
-    float j;
-    e =rand() % 10 - 5 ;
-    f =rand() % 10 - 5 ;
-    g =rand() % 10 - 5 ;
-    j = 1.56712 * (rand()% 10);
-    printf("eval_f(%.2f,%d,%d,%d) = %.2f\n",j,e,f,g,eval_f(j,e,f,g));
+void init(STRUCTNAME *z, int x)
+{
+    z->CHAMP = x;
 }
 
 
+
 int main(int argc, char **v){
-    if (argc < 2){
-        printf("usage %s seed\n",v[0]);
-        exit(1);
-    }
-    srand(atoi(v[1]));
-    printf("eval_f(1.0,1,-1,1) = %.2f\n",eval_f(1.0,1,-1,1));
-    printf("eval_f(2.0,2,-1,-1) = %.2f\n",eval_f(2.0,2,-1,-1));
-    randomtest();
-    randomtest();
-    randomtest();
-    randomtest();
+    STRUCTNAME p,q;
+    init(&p);
+    init(&q);
+    printf("Test 1 ", test(&p,q));
+
     return 0;
 }
 
