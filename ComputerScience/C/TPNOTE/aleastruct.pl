@@ -2,7 +2,7 @@
 
 
 
-extends = template/splitstructalea.pl
+extends = ./template/splitstructalea.pl
 
 
 @ aleastruct.c [sujet.c]
