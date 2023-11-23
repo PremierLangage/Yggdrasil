@@ -119,7 +119,7 @@ structlist = [
         int nb_pages;
         char titre[128];
         char auteur[128];
-        int annee_edition; // AAAA
+        int annee_edition;  
         char editeur[128];
     } TraitePhilosophique;
 """,
@@ -129,7 +129,7 @@ structlist = [
         int nb_torpilles;
         int puissance;
         char immatriculation[8];
-        int annee_achat; // AAAA
+        int annee_achat;  
         int propulsion; // 0 = diesel, 1 = nucléaire
     } SousMarin;
 """,
@@ -139,7 +139,7 @@ structlist = [
         int nb_places;
         int puissance;
         char immatriculation[8];
-        int annee_achat; // AAAA
+        int annee_achat;  
         int type; // 0 = avion, 1 = hélicoptère
     } Avion;
 """,
@@ -150,7 +150,7 @@ structlist = [
         int nb_pages;
         char titre[128];
         char auteur[128];
-        int annee_parution; // AAAA
+        int annee_parution; 
         char editeur[128];
     } AuteurSF;
 """
