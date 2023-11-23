@@ -4,3 +4,4 @@
 extends = template/splitwithalea.pl
 
 
+@ aleasujet.c [sujet.c]
