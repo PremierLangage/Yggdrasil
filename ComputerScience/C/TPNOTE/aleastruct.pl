@@ -5,13 +5,20 @@
 extends = template/splitwithalea.pl
 
 
-@ struct.c [sujet.c]
+@ aleastruct.c [sujet.c]
 
 editor.code==
-...   f(... *p, ... q){
+...  test(... *p, ... q){
 // vode code 
 
 }
+==
+
+before_zz==
+
+solution = ff+solution 
+text = text.format(globals())
+
 ==
 
 
