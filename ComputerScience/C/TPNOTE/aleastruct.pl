@@ -14,13 +14,4 @@ editor.code==
 }
 ==
 
-before_zb==
-
-
-
-
-text += "<small>"+ff+"</small>"
-
-==
-
 
