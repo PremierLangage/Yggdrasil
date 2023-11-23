@@ -23,7 +23,7 @@ if "aleacode" in globals():
         pcode="x*x+x*x*x+a*x+b*x+c*x"
     
 
-    # text = text.format({"latexcode":latexcode})
+    text = text.format({"latexcode":latexcode})
 
 
     # solution = solution % globals()
