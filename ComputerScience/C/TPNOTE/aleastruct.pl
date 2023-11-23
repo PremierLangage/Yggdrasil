@@ -18,6 +18,9 @@ before_zb==
 
 text = text % globals()
 solution = ff+solution
+
+text += ff
+
 ==
 
  
