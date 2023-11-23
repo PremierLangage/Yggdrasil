@@ -84,7 +84,10 @@ posibilities = [("x*(a*a+b*c)","f(x)=x(a^2+bc)"),
 ]
 # choix d'une expression
 if "pcode" not in globals():
-  pcode,latexcode = random.choice(posibilities)
+    if "number" in globals() and int(number) in range(len(posibilities)):
+        pcode, latexcode = posibilities[int(number)]
+    else:
+        pcode,latexcode = random.choice(posibilities)
 
 solution = f"""#define PCODE """+pcode+"\n"+solution
 PL:== */
