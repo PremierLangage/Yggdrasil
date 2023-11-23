@@ -65,7 +65,8 @@ void init(STRUCTNAME *z, int x, int y)
 
 
 
-int main(int argc, char **argv){
+int main(int argc, char **argv)
+{
     STRUCTNAME p,q;
     switch(argv[1][0])
     {
@@ -89,6 +90,7 @@ int main(int argc, char **argv){
     init(&q,11,2018);
     printf("Test d %s\n", test(&p,q)? "True":"False");
     return 0;
+    }
 }
 
 
