@@ -172,9 +172,7 @@ l = list(zip(structlist,proppcodechampchamp2, namelabels))
 
 x = random.randint(0, len(l)-1)
 
-for i,(struct, (propriete, pcode, champ, champ2),(structname,label)) in enumerate(l):
-    if i==x:
-        break
+struct, (propriete, pcode, champ, champ2),(structname,label) = l[x]
 
 
 ff = f"""
