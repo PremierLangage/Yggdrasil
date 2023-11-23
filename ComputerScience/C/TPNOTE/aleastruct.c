@@ -13,9 +13,14 @@ Voici la structure suivante:
     {struct}
 
 on nous demande d'ecrire la fonction de test 
+
    int test({structname} *p,{structname} q);
 
-qui verifie la propriété {propriete} est vraie.
+qui verifie que 
+
+    {propriete}
+    
+ est vraie puur p par rapport à q.
 
 PL:== */
 
