@@ -4,7 +4,7 @@
 extends = template/splitwithalea.pl
 
 
-number = 0
+number = 4
 
 @ aleasujet.c [sujet.c]
 
