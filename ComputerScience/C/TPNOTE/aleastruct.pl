@@ -24,4 +24,6 @@ text = text.format(globals())
 
 ==
 
-title = Structures
+title=
+text=
+
