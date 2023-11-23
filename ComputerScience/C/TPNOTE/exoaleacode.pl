@@ -15,6 +15,14 @@ float eval_f(float x, int a, int b, int c){
 
 before_zz==
 
-editor['code']= solution
+
+text += """
+
+
+
+
+
+
+""" + solution
 
 ==
