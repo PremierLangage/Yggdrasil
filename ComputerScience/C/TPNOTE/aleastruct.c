@@ -23,15 +23,15 @@ PL:== */
 #include <stdio.h>
 #include <stdlib.h>
 
-#ifndef STRUCT
-#define STRUCT Truc
+#ifndef STRUCTNAME
+#define STRUCTNAME Truc
 #define CHAMP age
 #define PCODE (p->age < q.age)
 #endif
 // PL:==
 // PL:solution==
 
-int test(STRUCT *p, STRUCT q){
+int test(STRUCTNAME *p, STRUCTNAME q){
     return PCODE ;
 }
 
