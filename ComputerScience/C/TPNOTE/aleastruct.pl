@@ -5,7 +5,7 @@
 extends = template/splitwithalea.pl
 
 
-@ aleasujet.c [sujet.c]
+@ struct.c [sujet.c]
 
 editor.code==
 ...   f(... *p, ... q){
