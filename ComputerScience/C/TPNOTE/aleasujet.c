@@ -79,8 +79,8 @@ import random
 posibilities = [("x*(a*a+b*c)","f(x)=x(a^2+bc)"),
 ("a*x*x+b*x+c","f(x)=ax^2+bx+c)"),
 ("a*x+b*x+c*x","f(x)=ax+bx+cx)"),
-("(a+x)**2+(b+c)**3","f(x)=(a+x)^2+(b+c)^3"),
-("(a*b)**2+(b-c)**5","f(x)=(ax)^2+(b-c)^5"),
+("(a+x)*(a+x)+(b+c)*(b+c)*(b+c)","f(x)=(a+x)^2+(b+c)^3"),
+("(a*b)*(a*b)*(a*b)+(b-c)*(b-c)","f(x)=(ax)^3+(b-c)^2"),
 ]
 # choix d'une expression
 if "pcode" not in globals():
