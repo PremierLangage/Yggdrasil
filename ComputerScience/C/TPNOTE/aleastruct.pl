@@ -24,6 +24,4 @@ text = text.format(globals())
 
 ==
 
-title=
-text=
-form=
+
