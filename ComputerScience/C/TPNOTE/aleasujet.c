@@ -74,14 +74,19 @@ int main(int argc, char **v){
 # to be compared to the student code
 import random 
 # expression en python et en latex 
+# C'est ici qu'il faut avoir des idées 
+
 posibilities = [("x*(a*a+b*c)","f(x)=x(a^2+bc)"),
-""
+("a*x*x+b*x+c","f(x)=ax^2+bx+c)"),
+("a*x+b*x+c*x","f(x)=ax+bx+cx)"),
+("(a+x)**2+(b+c)**3","f(x)=(a+x)^2+(b+c)^3"),
+("(a*b)**2+(b-c)**5","f(x)=(ax)^2+(b-c)^5"),
 ]
 # choix d'une expression
-pcode,latexcode = random.choice(posibilities)
+if "pcode" not in globals():
+  pcode,latexcode = random.choice(posibilities)
 
 solution = f"""#define PCODE """+pcode+"\n"+solution
-
 PL:== */
 
 
