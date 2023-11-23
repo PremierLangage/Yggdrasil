@@ -6,4 +6,8 @@ extends = template/splitwithalea.pl
 
 @ aleasujet.c [sujet.c]
 
-debug=cocou
+editor.code="""
+float eval_f(float x, int a, int b, intc){
+// print("eval")
+}
+"""
