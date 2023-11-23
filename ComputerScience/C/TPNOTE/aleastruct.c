@@ -65,7 +65,7 @@ void init(STRUCTNAME *z, int x, int y)
 
 
 
-int main(int argc, char **v){
+int main(int argc, char **argv){
     STRUCTNAME p,q;
     switch(argv[1][0])
     {
