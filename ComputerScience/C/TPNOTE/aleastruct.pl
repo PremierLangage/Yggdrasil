@@ -18,7 +18,7 @@ before_zb==
 
 
 solution = ff+solution 
-text = text.format(**(globals()))
+text = text.format()
 
 ==
 
