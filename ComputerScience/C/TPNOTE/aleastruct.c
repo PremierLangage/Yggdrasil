@@ -10,7 +10,7 @@
 
 Voici la structure suivante:
 
-    {struct};
+    {struct}
 
 on nous demande d'ecrire la fonction de test 
    int test({structname} *p,{structname} q);
@@ -26,6 +26,7 @@ PL:== */
 
 #ifndef STRUCTNAME
 #define STRUCTNAME Truc
+#define CHAMP age
 #define PCODE (p->age < q.age)
 #endif
 // PL:==
@@ -68,23 +69,99 @@ int main(int argc, char **v){
 
 // PL:==
 /* PL:aleacode==
-# this python code is executed in the buider to generate the code 
-# to be compared to the student code
-import random 
-# expression en python et en latex 
-# C'est ici qu'il faut avoir des idées 
 
-posibilities = [("x*(a*a+b*c)","f(x)=x(a^2+bc)"),
-("a*x*x+b*x+c","f(x)=ax^2+bx+c)"),
-("a*x+b*x+c*x","f(x)=ax+bx+cx)"),
-("(a+x)**2+(b+c)**3","f(x)=(a+x)^2+(b+c)^3"),
-("(a*b)**2+(b-c)**5","f(x)=(ax)^2+(b-c)^5"),
+
+import random
+
+
+namelabels=[("CampingCar","cc"),("TraitePhilosophique","tp"),("SousMarin","sm"),("Avion","av"),("AuteurSF","asf")]
+structlist = [
+"""
+// camping car 
+typedef struct cc {
+    int nb_places;
+    int puissance;
+    char immatriculation[8];
+    int annee_achat; // AAAA
+    char marque[8];
+} CampingCar;
+""",
+"""
+// traité de phylosophie 
+typedef struct tp {
+    int nb_pages;
+    char titre[128];
+    char auteur[128];
+    int annee_parution; // AAAA
+    char editeur[128];
+} TraitePhilosophique;
+""",
+"""
+// Sous marin
+typedef struct sm {
+    int nb_torpilles;
+    int puissance;
+    char immatriculation[8];
+    int annee_achat; // AAAA
+    int propulsion; // 0 = diesel, 1 = nucléaire
+} SousMarin;
+""",
+"""
+// Avions
+typedef struct av {
+    int nb_places;
+    int puissance;
+    char immatriculation[8];
+    int annee_achat; // AAAA
+    int type; // 0 = avion, 1 = hélicoptère
+} Avion;
+""",
+
+"""
+// Auteurs de sciencefiction 
+typedef struct asf {
+    int nb_pages;
+    char titre[128];
+    char auteur[128];
+    int annee_parution; // AAAA
+    char editeur[128];
+} AuteurSF;
+"""
 ]
-# choix d'une expression
-if "pcode" not in globals():
-  pcode,latexcode = random.choice(posibilities)
 
-solution = f"""#define PCODE """+pcode+"\n"+solution
+proppcodechampchamp2 = [
+("""Le camping car est plus vieux et avec plus de places""", "p->annee_achat < q.annee_achat || (p->annee_achat == q.annee_achat && p->nb_places > q.nb_places)","nb_places","annee_achat"),
+
+("""Le livre de science fiction est plus vieux et plus long""", "p->annee_parution < q.annee_parution || (p->annee_parution == q.annee_parution && p->nb_pages > q.nb_pages)","nb_pages","annee_parution"),
+
+("""Le sous marin est plus vieux et plus puissant""", "p->annee_achat < q.annee_achat || (p->annee_achat == q.annee_achat && p->puissance > q.puissance)","puissance","annee_achat"),
+
+("""L'avion est plus vieux et plus puissant""", "p->annee_achat < q.annee_achat || (p->annee_achat == q.annee_achat && p->puissance > q.puissance)","puissance","annee_achat"),
+
+("""Le traité de philosophie est plus vieux et plus long """, "p->annee_parution < q.annee_parution || (p->annee_parution == q.annee_parution && p->nb_pages > q.nb_pages)","nb_pages","annee_parution"),
+]
+     
+l = list(zip(structlist,proppcodechampchamp2, namelabels))
+
+x = random.randint(0, len(l)-1)
+
+for i,(struct, (prop, pcode, champ, champ2),(structname,label)) in enumerate(l):
+    if i==x:
+        break
+
+
+ff = f"""
+#define STRUCTNAME {structname} 
+{struct}
+#define CHAMP {champ}
+#define CHAMP2 {champ2}
+#define PCODE {pcode}
+""" 
+
+
+
+
+
 PL:== */
 
 
