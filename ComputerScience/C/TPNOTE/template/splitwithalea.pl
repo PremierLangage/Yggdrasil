@@ -7,7 +7,7 @@ extends= splittemplate.pl
 
 
 
-
+debug=cocou
 
 before_zaftersplit==
 
