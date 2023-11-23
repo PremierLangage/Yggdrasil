@@ -16,10 +16,10 @@ editor.code==
 
 before_zb==
 
-text = text % globals()
 
 
-text += ff
+
+text += "<small>"+ff+"</small>"
 
 ==
 
