@@ -10,6 +10,8 @@ Ecrire une fonction **eval_f** qui prend en paramètre un flottant et 3 entiers 
 
 Votre fonction **eval_f** calcule la valeur de la fonction {latexcode}.
 
+Rappel: $%z^y%$ est z à la puissance y. 
+
 PL:== */
 
 
@@ -30,10 +32,7 @@ float eval_f(float x, int a , int b , int c){
 // PL:==
 
 /* PL:code==
-void eval_f(){
-    
-printf("Plus longue partie constante %d\n",...);
-printf("Plus longue partie croissante %d\n",...);
+float eval_f(){
 
 }
 
@@ -75,7 +74,7 @@ int main(int argc, char **v){
 # to be compared to the student code
 import random 
 # expression en python et en latex 
-posibilities = [("x*(a*a+b+c)","x*(a^2+b+c)")]
+posibilities = [("x*(a*a+b*c)","x*(a^2+b*c)"),]
 # choix d'une expression
 pcode,latexcode = random.choice(posibilities)
 
