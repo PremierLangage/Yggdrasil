@@ -8,7 +8,7 @@
 Ecrire une fonction **eval_f** qui prend en paramètre un flottant et 3 entiers (dans cet ordre) et qui retourne un flottant.
  
 
-Votre fonction **eval_f** calcule la valeur de la fonction $%{latexcode}%$.
+Votre fonction **eval_f** calcule la valeur de la fonction $%{latexcode}%$, ou $%x%$ est un flottant et a,b,c des entiers.
 
 Rappel: $%z^y%$ est z à la puissance y. 
 
@@ -74,7 +74,9 @@ int main(int argc, char **v){
 # to be compared to the student code
 import random 
 # expression en python et en latex 
-posibilities = [("x*(a*a+b*c)","f(x)=x(a^2+bc)"),]
+posibilities = [("x*(a*a+b*c)","f(x)=x(a^2+bc)"),
+""
+]
 # choix d'une expression
 pcode,latexcode = random.choice(posibilities)
 
