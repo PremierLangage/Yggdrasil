@@ -8,7 +8,7 @@ author = Christophe Callé
 title = Initialisation de variable en Python
 
 
-
+text=
 
 before== #|python| 
 

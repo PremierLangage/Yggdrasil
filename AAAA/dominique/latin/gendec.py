@@ -85,9 +85,9 @@ def declinaison2(row,cas,nombre=0):
         nombre =0 singulier =1 pluriel
     """
     if row['genre']=='n' :
-        return deuxn[cas][nombre](row['truc'])
-    else: # le féminin c'est comme le masculin 
-        return deuxm[cas][nombre](row['truc'])
+        return deuxn[cas][nombre](row['genitif'])
+    else: #  le masculin 
+        return deuxm[cas][nombre](row['genitif'])
 
 def declinaison3(row,cas,nombre=0):
     """
@@ -117,7 +117,7 @@ def declinaison(row, cas, nombre):
     return fifi(row,cas,nombre)
 
 
-def createquestion(row):
+def createquestion(row, indice):
     if random.randint(1,2) == 1:
         nombre=0
         nombres="Singulier"
@@ -125,19 +125,24 @@ def createquestion(row):
         nombre=1
         nombres="Pluriel"
     cas= random.choice(CAS)
-    tx = f"""Donnez la déclinaison du mot **{row['nom']}** qui veut dire __{row['sens']}__  
+
+    tx = f"""Donnez la déclinaison du mot **{row['nom']},{row['genitif']},{row['genre']}**  qui veut dire __{row['sens']}__  
     pour le *{cas}* au *{nombres}*"""
+    
     sol = declinaison(row, cas, nombre)
 
-    return tx,sol 
+    return tx,sol,(indice,row,cas,nombre) 
 
 
 def question():
     with open("mots.csv","r") as f:
         laliste= list(csv.DictReader(f))
 
+    indice = random.randint(0,len(laliste)-1) # 
+    ligne =  laliste[indice]
+
+    return createquestion(ligne)
+        
+    # return createquestion(laliste[53])
     
-    return createquestion(random.choice(laliste))
-    
-    
-    return 0
+

@@ -41,7 +41,7 @@ pltest2 =
 """
 ==
 
-editor.code ==
+code ==
 def f(n):
     return 2*n
 
@@ -68,7 +68,9 @@ pltest2==
 >>> def _hid(): pass#
 >>> 'k' in globals()
 True
->>> 'g' in globals() == True and type(g)== 'function'
+>>> ('g' in globals()) and (type(g)== type(_hid))
+True
+>>> (type(f)== type(_hid)) and 'f' in globals()
 True
 ==
 
@@ -77,7 +79,7 @@ testname1=Hidden Tests
 pltest1==
 >>> f(10) == 20#
 True
->>> f(12)#
+>>> f(13)#
 24
 >>> 'k' in globals()#
 True

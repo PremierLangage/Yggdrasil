@@ -2,7 +2,7 @@ extends = /model/math/expr.pl
 
 title = Addition de fractions
 
-before ==
+before ==#|python|
 from sympy import numer, denom
 
 f = [(choice([1, 3, 5, 7]), 2),

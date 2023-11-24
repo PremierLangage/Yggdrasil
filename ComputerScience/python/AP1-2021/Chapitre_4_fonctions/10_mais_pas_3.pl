@@ -1,47 +1,51 @@
 
-#author=OCE
+extends=/ComputerScience/python/AP1-2122/template/pltest2023.pl
 
-# Heritage d'un type d'exercice 
-extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
-@ /builder/none.py [builder.py]
+@ /builder/bbefore.py [builder.py]
 
-title = Dix mais pas trois
+title = Divisible et indivisible 
+text = 
 
-code==
-# On utilisera pour les entrées 
-input("Saisie : ")
+before==
+import random
+nombres=[0,"un","deux","trois","quatre","cinq","six","sept","huit","neuf","dix","onze","douze","treize"]
+nb1= random.randint(2,12)
+tx1 = nombres[nb1]
+nb2=nb1
+while nb1==nb2:
+    nb2 = random.randint(2,12)
+    tx2= nombres[nb2]
+if nb1 % nb2 == 0 :
+    nb1,nb2= nb2,nb1
+    tx1, tx2 = tx2 , tx1
+
+title = f"Divisible par {tx1} mais pas par {tx2}."
+
+text=f"""Programmer une fonction **oui_mais(n)** qui teste 
+si un entier n est divisible par {tx1} mais pas par {tx2}. <br>
+"""
+val = 17
+pltest0= f"""
+>>> oui_mais({val}) == (({val} % {nb1} ==0) and ({val} % {nb2} != 0))# Facile
+True
+"""
+for i in range(4):
+    val = random.randint(3,700)
+    globals()[f"pltest{i}"]=f"""
+>>> oui_mais({val}) == (({val} % {nb1} ==0) and ({val} % {nb2} != 0))# Facile {val}
+True
+"""
+
 
 ==
 
-needed=def
+editor.code==
 
-text==  
-
-Programmer une fonction qui teste si un entier est divisible par 10 mais pas par 3. <br>
-
-Puis écrivez un programme qui récupère un entier au clavier, 
-appelle la fonction et affiche le résultat booléen.
-
-
-On utilisera pour les entrées 
-**input("Saisie : ")**
+# du cod entier
+def oui_mais(n):\n return ((17 % n ==0) and (17 % n != 0))\n
 
 ==
 
-soluce==#|python|
-def dix_mais_pas_trois(n):
-    return n%10==0 and n%3!=0
-
-n = int(input("Saisie : "))
-print(dix_mais_pas_trois(n))
-==
-
-plsoluce==
-Test1 | 2
-Test2 | 3
-Test3 | 30
-Test4 | 40
-==
 
 
 

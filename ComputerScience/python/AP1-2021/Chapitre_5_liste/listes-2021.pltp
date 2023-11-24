@@ -5,17 +5,28 @@ introduction==
 Des fonctions de manipulation de liste.
 
 
-	def malongueur(l):
-	    n = 0
-	    for e in l:
-	        n = n + 1 
-	    return n
-	
+	# en utilisant les indices 
+	def somme(l):
+		s=0
+		i = 0 
+		while i < len(l):
+			s = s + l[i]
+			i = i + 1 
+		return s
+
+	# Plus rapide 
+	# Parcours avec une boucle for
 	def somme(l):
 	   s = 0
-	   for e in l:
+	   for e in l: 
 	       s = s + e
 	   return s
+
+	# Plus rapide 
+	# en utilisant la fonction prédéfinie sum
+	def somme(l):
+		return sum(l)
+
 
 
 Pour ceux qui s'ennuient: il y a des exercices un peu plus difficiles à la fin.

@@ -1,5 +1,6 @@
 @ /ComputerScience/C/template/std_progC_utils.py
 @ nasmtools.py
+@ /utils/sandboxio.py
 
 grader  =@ /grader/evaluator.py
 
@@ -86,14 +87,14 @@ if not student_compile.error():
         f_in.write(test_c[2])
         f_in.close()
         # Use the teacher solution to generated expected output of the test
-        expected_ouput = pgr_teacher.run(test_c[1])
+        expected_ouput = pgr_teacher.run(test_c[1], open("stdin_content"))
 
         # Now execute the student programm
-        spout = pgr_student.run(test_c[1])
+        spout = pgr_student.run(test_c[1], open("stdin_content"))
 
         terminal_log = (
               "<pre>" 
-            + html.escape("Platon@debian~$> ./student_prog " + " ".join(test_c[1])) + "\n"
+            + html.escape("Platon@debian~$> ./{{ pgr_student.name }} " + " ".join(test_c[1])) + "\n"
             + html.escape(expected_ouput)
             + "</pre>"
         )

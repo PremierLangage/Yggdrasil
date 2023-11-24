@@ -18,40 +18,40 @@ L'équipe d'AP1.
 
 
 ==
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/carre.pl
+@  carre.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/valeurabsolue.pl
+@  valeurabsolue.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/K_premier_carre.pl
+@  list_first_squares.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/table.pl
+# @  table.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/10_mais_pas_3.pl
+@  10_mais_pas_3.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/Volume_sphere.pl
+@  Volume_sphere.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/Lance_de_des.pl
+@  Lance_de_des.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/Conversion.pl
+@  Conversion.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/Permis_de_chasse.pl
+@  Permis_de_chasse.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/Histoire_De_Train.pl
+@  Histoire_De_Train.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/nbchiffres.pl
+@  nbchiffres.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/TriangleEtoile.pl
+@  TriangleEtoile.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/TriangleChaine.pl
+@  TriangleChaine.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/difficile.pl
+@  difficile.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/syracuse.pl
+@  syracuse.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/Coeffbin.pl
+@  Coeffbin.pl
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/Lapin.pl
+@  Lapin.pl
 
 
 
-@ /ComputerScience/python/AP1-1920/chapters/2-fonctions/vosremarques.pl
+@  vosremarques.pl

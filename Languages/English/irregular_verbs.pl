@@ -76,9 +76,9 @@ verb_total += 1
 if inputbox.value == preterit:
     good_total += 1
     validated.append(index_verb)
-    grade = (0, '<span class="success-state">Good 👏👏👏</span>')
+    grade = (0, '<span class="success-state">Good answer !</span>')
 else:
-    grade = (0, '<span class="error-state">No, it is <b>' + preterit + '</b>, Bad answer 👎👎👎</span>')
+    grade = (0, '<span class="error-state">No, it is <b>' + preterit + '</b>, Bad answer !</span>')
 
 if good_total == 20:
     countdown.hidden = True

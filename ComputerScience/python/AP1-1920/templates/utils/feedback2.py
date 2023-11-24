@@ -128,8 +128,3 @@ class FeedBack():
         x= template.render(feedback=self)
         return  x 
 
-
-
-
-
-
