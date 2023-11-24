@@ -6,7 +6,8 @@ extends= splittemplate.pl
 @ facile1.c [sujet.c]
 
 
-title = facile1
+title = Evaluation de l'Image d'une fonction 
+
 
 
 

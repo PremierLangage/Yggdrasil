@@ -30,6 +30,7 @@ Plus longue partie croissante : 2   <br />
 La saisie de 1 3 12 -1 affichera :  <br />
 Plus longue partie constante : 0    <br />
 Plus longue partie croissante : 2   <br />
+
 PL:== */
 
 

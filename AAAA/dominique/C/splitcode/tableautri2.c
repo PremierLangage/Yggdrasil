@@ -2,7 +2,7 @@
 
 
 
-/* PL:title= Tableau Trie  */
+/* PL:title= Tableau Trie décroissant */
 /* PL:text==
 
 Ecrire une fonction de prototype **int ajoutTrie(int \*tab,int nbe, int valeur);**
@@ -18,7 +18,7 @@ mais pas nécessairement avec l'entier 341.
 Si nbe == TAILLE, la fonction ne fait rien et retourne 0.
 
 
-Sinon la valeur est insérée dans le tableau de sorte que le tableau reste trié en ordre **décroissant**
+Sinon la valeur est insérée dans le tableau de sorte que le tableau reste trié en **ordre décroissant**
 dans ce cas la fonction retourne 1.
 
 PL:== */

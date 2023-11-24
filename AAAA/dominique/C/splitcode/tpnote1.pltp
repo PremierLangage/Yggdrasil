@@ -2,6 +2,13 @@
 extends = tpnote.pltp
 
 
-@ facile1.pl 
 
-title = Groupe 1 
+title = TP Note  Programmation C 16h15 
+
+
+
+
+@ facile1.pl 
+@ exercice1.pl 
+@ tableautri1.pl
+@ pascal.pl

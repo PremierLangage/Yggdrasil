@@ -14,6 +14,13 @@ Pour une suite constante n'affichera que "constante".
 Si la suite d'entier est vide affiche "indéterminée". 
 
 N'oubliez pas le caractère "\n" en fin de ligne.
+
+Exemple avec les valeurs 55 77 99 1000   
+le programme affiche  
+croissante   
+
+
+
 PL:== */
 
 
@@ -64,7 +71,7 @@ void exo(){
 
 /* PL:code==
 void exo(){
-    char *stab[]={"croissante", "décroissante","constante", "indéterminée"};
+// "croissante", "décroissante","constante", "indéterminée"
 
 }
 

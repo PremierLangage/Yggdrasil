@@ -6,13 +6,19 @@
 Ecrire une fonction **void pascal(int n)** qui affiche le tableau de pascal de taille n.
 Le tableau de pascal est un tableau de n lignes et n colonnes.
 
-Chaque case du tableau est la somme des deux cases situées au dessus d'elle et au dessus et à gauche.
+Chaque case du tableau est:
 
-    tab[0][0] = 1  
-    tab[0][1] = 1  
-    tab[i][j] = tab[i-1][j-1] + tab[i-1][j] pour i > 0 et j > 0 et i > j.
+    Zéro si i < j 
+    Un si i==0 ou i == j
 
-Par exemple, le tableau de pascal de taille 5 est :
+et la somme des deux cases situées au dessus d'elle et au dessus et à gauche.
+
+    tab[1][0] = 1  
+    tab[1][1] = 1  
+    tab[i][j] = tab[i-1][j-1] + tab[i-1][j] si i > 0 et j > 0 et i > j.
+
+
+Par exemple, le tableau de pascal de taille 5 est (les zéros ne sont pas affichés) :
 
     1 1
     1 2 1
@@ -20,6 +26,8 @@ Par exemple, le tableau de pascal de taille 5 est :
     1 4 6 4 1
 
 Attention a ne pas écrire d'espace après le dernier élément de chaque ligne.
+
+Ne pas afficher la première ligne pour i=0. 
 
 Vous pouvez utilisez la fonction qui existe :  void affiche_tableau(int *t, int taille) pour afficher les lignes .
 

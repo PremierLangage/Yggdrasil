@@ -6,4 +6,6 @@ extends= splittemplate.pl
 
 
 
+title = Evaluation de l'Image d'une fonction 
+
 
