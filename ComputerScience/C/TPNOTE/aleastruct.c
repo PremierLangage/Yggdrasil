@@ -145,7 +145,6 @@ structlist = [
         int type; // 0 = avion, 1 = hélicoptère
     } Avion;
 """,
-
 """
     // Auteurs de sciencefiction 
     typedef struct asf {
