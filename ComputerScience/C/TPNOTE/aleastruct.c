@@ -159,15 +159,15 @@ structlist = [
 ]
 
 proppcodechampchamp2 = [
-("""Le camping car est plus vieux ou a plus de places""", "(p->annee_achat < q.annee_achat || p->nb_places > q.nb_places)","annee_achat","nb_places"),
+("""Le camping car p est plus vieux ou a plus de places""", "(p->annee_achat < q.annee_achat || p->nb_places > q.nb_places)","annee_achat","nb_places"),
 
-("""Le livre de science fiction est plus vieux ou est plus long """, "(p->annee_parution < q.annee_parution || p->nb_pages > q.nb_pages)","annee_parution","nb_pages"),
+("""Le livre de science fiction p est plus vieux ou est plus long """, "(p->annee_parution < q.annee_parution || p->nb_pages > q.nb_pages)","annee_parution","nb_pages"),
 
-("""Le sous marin est plus vieux ou est plus puissant""", "p->annee_achat < q.annee_achat || p->puissance > q.puissance ","annee_achat","puissance"),
+("""Le sous marin p est plus vieux ou est plus puissant""", "p->annee_achat < q.annee_achat || p->puissance > q.puissance ","annee_achat","puissance"),
 
-("""L'avion est plus vieux ou est plus puissant""", "(p->annee_achat < q.annee_achat ||   p->puissance > q.puissance)","annee_achat","puissance"),
+("""L'avion p est plus vieux ou est plus puissant""", "(p->annee_achat < q.annee_achat ||   p->puissance > q.puissance)","annee_achat","puissance"),
 
-("""Le traité de philosophie est plus vieux ou est pluslong """, "(p->annee_edition < q.annee_edition || p->nb_pages > q.nb_pages)","annee_edition","nb_pages"),
+("""Le traité de philosophie p est plus vieux ou est pluslong """, "(p->annee_edition < q.annee_edition || p->nb_pages > q.nb_pages)","annee_edition","nb_pages"),
 ]
      
 l = list(zip(structlist,proppcodechampchamp2, namelabels))
