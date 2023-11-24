@@ -167,7 +167,7 @@ proppcodechampchamp2 = [
 
 ("""L'avion p est plus vieux ou est plus puissant""", "(p->annee_achat < q.annee_achat ||   p->puissance > q.puissance)","annee_achat","puissance"),
 
-("""Le traité de philosophie p est plus vieux ou est pluslong """, "(p->annee_edition < q.annee_edition || p->nb_pages > q.nb_pages)","annee_edition","nb_pages"),
+("""Le traité de philosophie p est plus vieux ou est plus long """, "(p->annee_edition < q.annee_edition || p->nb_pages > q.nb_pages)","annee_edition","nb_pages"),
 ]
      
 l = list(zip(structlist,proppcodechampchamp2, namelabels))
