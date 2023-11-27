@@ -137,7 +137,7 @@ structlist = [
         char auteur[128];
         int annee_parution; 
         char editeur[128];
-        int type ; // % 2 ==0 : roman, % 2 == 1 :nouvelle
+        int model ; // % 2 ==0 : roman, % 2 == 1 :nouvelle
     } AuteurSF;
 """
 ]
