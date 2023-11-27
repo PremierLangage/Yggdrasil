@@ -9,8 +9,7 @@ Ecrire une fonction **eval_f** qui prend en paramètre un flottant et 3 entiers 
  
 
 Votre fonction **eval_f** calcule la valeur de la fonction $%{latexcode}%$, où $%x%$ est un flottant et a,b,c des entiers.
-
-Rappel: $%z^y%$ est z à la puissance y. 
+ 
 
 PL:== */
 
