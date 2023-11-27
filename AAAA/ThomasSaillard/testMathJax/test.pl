@@ -15,7 +15,7 @@ Affichage de MathJax : $% \frac{a}{b} %$
 form==
 ==
 
-evaluator==
+grader==
 grade=(100," ")
 ==
 
