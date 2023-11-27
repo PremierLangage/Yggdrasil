@@ -1,0 +1,15 @@
+
+
+title= TP NOTE 3    29 Novembre 23 
+
+extends = /AAAA/dominique/C/splitcode/tpnote.pltp
+
+
+@ ../eval_f/eval_f3.pl
+
+@ ../struct/struct3.pl
+
+@ ../structtab/struct_tab3.pl
+
+@ /AAAA/dominique/C/splitcode/tableautri2.pl
+
