@@ -12,7 +12,7 @@ Voici la structure suivante:
 
     {struct}
 
-on nous demande d'ecrire la fonction de test 
+On nous demande d'ecrire la fonction de test 
 
     int test({structname} *p,{structname} q);
 
