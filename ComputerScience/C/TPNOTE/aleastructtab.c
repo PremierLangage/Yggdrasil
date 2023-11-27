@@ -189,7 +189,7 @@ for(int i=0;i< taille; i++)
         sum += p[i].nb_pages;
 return sum;
 }
-""", "nb_places","type"),
+""", "nb_pages","type"),
 ]
      
 l = list(zip(structlist,proppcode, namelabels))
