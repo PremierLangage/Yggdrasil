@@ -8,18 +8,17 @@
 Ecrire une fonction de prototype **int ajoutTrie(int \*tab,int nbe, int valeur);**
 qui ajoute la *valeur* dans le tableau trié tab de taille TAILLE contenant déjà nbe elements.
 
-On suppose que l'on a definie TAILLE comme suit:
-
-
- \#define TAILLE 341
-
-mais pas nécessairement avec l'entier 341.
+On suppose que TAILLE est une constante déja définie dans le code.
 
 Si nbe == TAILLE, la fonction ne fait rien et retourne 0.
 
 
 Sinon la valeur est insérée dans le tableau de sorte que le tableau reste trié en **ordre décroissant**
-dans ce cas la fonction retourne 1.
+dans ce cas la fonction retourne 1.   
+
+
+
+Attention : un tableau trié en ordre décroissant a les plus petits éléments à la fin.
 
 PL:== */
 
