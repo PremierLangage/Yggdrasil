@@ -9,11 +9,11 @@
 // PL:title= Test sur un tableau de structures
 /* PL:text==
 
-Voici la structure suivante:
+Voici la structure suivante :
 
     {struct}
 
-on nous demande d'ecrire la fonction de **test** qui prend en paramêtre un tableau de {structname} qui calcule et retourne la valeur suivante: 
+on nous demande d'écrire la fonction de **test** qui prend en paramêtre un tableau de {structname} qui calcule et retourne la valeur suivante : 
 
     {propriete}
 
