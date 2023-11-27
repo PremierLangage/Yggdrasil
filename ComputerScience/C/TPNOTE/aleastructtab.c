@@ -185,11 +185,11 @@ return sum;
 ("""   Nombre de pages total des nouvelles (pas des romans).""", """{
 int sum = 0;
 for(int i=0;i< taille; i++)
-    if (p[i].type % 2 == 1)
+    if (p[i].model % 2 == 1)
         sum += p[i].nb_pages;
 return sum;
 }
-""", "nb_pages","type"),
+""", "nb_pages","model"),
 ]
      
 l = list(zip(structlist,proppcode, namelabels))
