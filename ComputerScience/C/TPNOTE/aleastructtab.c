@@ -6,14 +6,14 @@
 
 // PL:author=DR
 
-// PL:title= Tiens des structures
+// PL:title= Test sur un tableau de structures
 /* PL:text==
 
 Voici la structure suivante:
 
     {struct}
 
-on nous demande d'ecrire la fonction de test qui calcul et retourne la valeur suivante: 
+on nous demande d'ecrire la fonction de **test** qui prend en paramêtre un tableau de {structname} qui calcul et retourne la valeur suivante: 
 
     {propriete}
 
@@ -41,16 +41,17 @@ typedef struct _ {
 // PL:==
 // PL:solution==
 
-int test(STRUCTNAME *p, STRUCTNAME q){
-    return PCODE ;
-}
+int test(STRUCTNAME *p,int taille)
+
+PCODE
+
 
 // PL:==
 
 /* PL:code==
-float eval_f(){
+int test(STRUCTNAME *p,int taille)
 
-}
+
 
 PL:== */
 
@@ -67,12 +68,13 @@ void init(STRUCTNAME *z, int x, int y)
 int main(int argc, char **argv)
 {
     STRUCTNAME *p;
-    int taille=rand()%10+10;
+    srand(atoi(argv[1]));
+    int taille=rand()%10+100;
     p = malloc(taille*sizeof(STRUCTNAME));
     for(int i=0;i< taille; i++)
-        init(p+i,1000+rand()%1000,rand()%2);
+        init(p+i,1000+rand()%1000,rand()%2+(rand()%100)*10);
 
-    printf("Calcul de la propriété %s\n",test(p,taille));
+    printf("Calcul de la propriété %d\n",test(p,taille));
 }
 
 
@@ -128,7 +130,7 @@ structlist = [
 """,
 
 """
-    // Auteurs de sciencefiction 
+    // Auteurs de science fiction 
     typedef struct asf {
         int nb_pages;
         char titre[128];
@@ -141,50 +143,65 @@ structlist = [
 ]
 
 proppcode  = [
-("""j'ai besoin de la somme totale des place dans 
-le tableau des CampingCar ayant une puissance > à 200 """, """
+("""   Somme totale des places des CampingCar
+     ayant une puissance > à 200 """, """
 {int sum=0;
 for(int i=0;i< taille; i++)
-    if (p[i]->puissance > 200)
-        sum += p[i]->nb_places
+    if (p[i].puissance > 200)
+        sum += p[i].nb_places;
 return sum;
-}""", "nb_places","puissance"),
+}
+""", "nb_places","puissance"),
 
-("""j'ai besoin du nombre total de pages dans les TraitePhilosophique 
-du tableau ayant une année d'édition > 2018 """, """
+("""   Nombre total de pages dans les TraitePhilosophique 
+    ayant une année d'édition > 2018 """, """
 {int sum=0;
 for(int i=0;i< taille; i++)
-    if (p[i]->annee_edition > 2018)
-        sum += p[i]->nb_pages;
+    if (p[i].annee_edition > 2018)
+        sum += p[i].nb_pages;
 return sum;}
 """, "nb_pages","annee_edition"),
 
-("""j'ai besoin de l'indice dans le tableau du SousMarin avec le plus grand nombre de torpiles""", """
-{int indice = 0; int max = p[0]->nb_torpilles;
+("""   L'indice dans le tableau du SousMarin
+     avec le plus grand nombre de torpiles""", """
+{int indice = 0; int max = p[0].nb_torpilles;
 for(int i=1;i< taille; i++)
-        if (p[i]->nb_torpilles > max){
-            max = p[i]->nb_torpilles;
+        if (p[i].nb_torpilles > max){
+            max = p[i].nb_torpilles;
             indice = i;
         }
 return indice;}
 """, "nb_torpilles","puissance"),
 
-("""Nombre de place total dans les Hélicoptères du tableau.""", """{
+("""   Nombre de place total dans les Hélicoptères du tableau.""", """{
 int sum = 0;
 for(int i=0;i< taille; i++)
-    if (p[i]->type % 2 == 1)
-        sum += p[i]->nb_places;
+    if (p[i].type % 2 == 1)
+        sum += p[i].nb_places;
+return sum;
+}
+""", "nb_places","type"),
+
+("""   Nombre de pages total des nouvelles de sgg.""", """{
+int sum = 0;
+for(int i=0;i< taille; i++)
+    if (p[i].type % 2 == 1)
+        sum += p[i].nb_pages;
 return sum;
 }
 """, "nb_places","type"),
 ]
      
-l = list(zip(structlist,proppcodechampchamp2, namelabels))
+l = list(zip(structlist,proppcode, namelabels))
 
-x = random.randint(0, len(l)-1)
+if 'number' in globals():
+    x=int(number)
+else:
+    x = random.randint(0, len(l)-1)
 
 struct, (propriete, pcode, champ, champ2),(structname,label) = l[x]
 
+pcode = " ".join(pcode.split('\n'))
 
 ff = f"""
 #define STRUCTNAME {structname} 
@@ -201,9 +218,9 @@ PL:== */
 
 
 /* PL:checks_args_stdin==
-[["Test p > q ", ["a"], ""],
-["Test p < q ", ["b"], ""],
-["Test même premier champ >", ["c"], ""],
-["Test même premier champ <", ["d"], ""],
+[["Test 1 ", ["1"], ""],
+["Test 2 ", ["2"], ""],
+["Test 3 ", ["3"], ""],
+["Test 4 ", ["4"], ""],
 ]
 PL:== */
