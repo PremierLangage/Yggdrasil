@@ -1,9 +1,4 @@
 
-
- 
- 
- # The template default will no be neccessary in the futur 
-
 title= TestMathJax
 
 text== 
