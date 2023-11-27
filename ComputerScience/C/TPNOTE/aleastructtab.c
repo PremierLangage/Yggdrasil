@@ -182,7 +182,7 @@ return sum;
 }
 """, "nb_places","type"),
 
-("""   Nombre de pages total des nouvelles de sgg.""", """{
+("""   Nombre de pages total des nouvelles (pas des romans).""", """{
 int sum = 0;
 for(int i=0;i< taille; i++)
     if (p[i].type % 2 == 1)
