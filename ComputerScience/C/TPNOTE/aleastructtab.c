@@ -19,7 +19,7 @@ on nous demande d'écrire la fonction de **test** qui prend en paramètre un tab
 
 Vous placerez le pointeur avant la taille dans les paramètres de la fonction.
 
-
+    Rappel un tableau en paramètre c'est un pointeur et une taille entière.
 
 PL:== */
 
