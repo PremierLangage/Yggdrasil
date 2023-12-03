@@ -1,7 +1,6 @@
 
 
-num=1
-
+num=SyntaxeError
 extends= ../template/syntaxe2023.pl
 
 
