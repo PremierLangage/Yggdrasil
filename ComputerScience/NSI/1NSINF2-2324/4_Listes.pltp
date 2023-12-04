@@ -22,24 +22,33 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 
 ==
 
+# Création de liste
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/premiers_entiers-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/repete-2021.pl
 
-#### Compréhension des expressions ####
+# Parcours des éléments de liste
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/existe_impair-2021.pl
+@ liststat-2021.pl
 
+# Construction de liste
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/fibo-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/extends-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/pair_impair-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/plat-allergie-2021.pl
 
-@/ComputerScience/NSI/Banque_Exercices/3_fonctions_variables_occure-int.pl
+# Manipulation de liste par référence
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/ajoute_liste-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/extends_list-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/remplace_pair-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/supprime_pair-2021.pl
 
-@/ComputerScience/NSI/Banque_Exercices/3_fonctions_variables_intstr.pl
+# Un peu d'algo (algo??) sur les listes 
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/doublons-2021.pl
 
-@/ComputerScience/NSI/Banque_Exercices/3_conditionnelles/compare_chaine2.pl
+# Exos durs (math, algo, ...)
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/_difficle.pl
 
-@/ComputerScience/NSI/Banque_Exercices/3_conditionnelles/compare_chaine.pl
-
-@/ComputerScience/NSI/Banque_Exercices/3_conditionnelles/longueur_chaine_paire.pl
-
-@/ComputerScience/NSI/Banque_Exercices/3_fonctions_valeurabsolue.pl
-
-@/ComputerScience/NSI/Banque_Exercices/3_fonctions_Conversion.pl
-
-@/ComputerScience/NSI/Banque_Exercices/3_fonctions_variables_deux-divisions.pl
-
-
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/EntierGauss-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/histogramme-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/zip-list-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_Listes/soussuite-2021.pl
