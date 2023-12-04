@@ -23,32 +23,32 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 ==
 
 # Création de liste
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/premiers_entiers-2121.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/repete-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/premiers_entiers-2122.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/repete-2122.pl
 
 # Parcours des éléments de liste
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/existe_impair-2121.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/liststat-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/existe_impair-2122.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/liststat-2122.pl
 
 # Construction de liste
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/fibo-2121.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/extends-2121.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/pair_impair-2121.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/plat-allergie-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/fibo-2122.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/extends-2122.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/pair_impair-2122.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/plat-allergie-2122.pl
 
 # Manipulation de liste par référence
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/ajoute_liste-2121.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/extends_list-2121.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/remplace_pair-2121.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/supprime_pair-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/ajoute_liste-2122.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/extends_list-2122.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/remplace_pair-2122.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/supprime_pair-2122.pl
 
 # Un peu d'algo (algo??) sur les listes 
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/doublons-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/doublons-2122.pl
 
 # Exos durs (math, algo, ...)
 @ /ComputerScience/NSI/Banque_Exercices/5_listes/_difficle.pl
 
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/EntierGauss-2121.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/histogramme-2121.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/zip-list-2121.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_listes/soussuite-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/EntierGauss-2122.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/histogramme-2122.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/zip-list-2122.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/soussuite-2122.pl
