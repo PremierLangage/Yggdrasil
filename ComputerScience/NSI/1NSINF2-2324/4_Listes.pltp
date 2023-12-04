@@ -23,32 +23,32 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 ==
 
 # Création de liste
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/premiers_entiers-2021.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/repete-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/premiers_entiers-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/repete-2121.pl
 
 # Parcours des éléments de liste
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/existe_impair-2021.pl
-@ liststat-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/existe_impair-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/liststat-2121.pl
 
 # Construction de liste
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/fibo-2021.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/extends-2021.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/pair_impair-2021.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/plat-allergie-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/fibo-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/extends-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/pair_impair-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/plat-allergie-2121.pl
 
 # Manipulation de liste par référence
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/ajoute_liste-2021.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/extends_list-2021.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/remplace_pair-2021.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/supprime_pair-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/ajoute_liste-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/extends_list-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/remplace_pair-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/supprime_pair-2121.pl
 
 # Un peu d'algo (algo??) sur les listes 
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/doublons-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/doublons-2121.pl
 
 # Exos durs (math, algo, ...)
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/_difficle.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/_difficle.pl
 
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/EntierGauss-2021.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/histogramme-2021.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/zip-list-2021.pl
-@ /ComputerScience/NSI/Banque_Exercices/5_Listes/soussuite-2021.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/EntierGauss-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/histogramme-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/zip-list-2121.pl
+@ /ComputerScience/NSI/Banque_Exercices/5_listes/soussuite-2121.pl
