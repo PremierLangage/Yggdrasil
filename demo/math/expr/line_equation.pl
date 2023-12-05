@@ -3,7 +3,7 @@ extends = /model/math/expr.pl
 title = Déterminer l'équation d'une droite
 
 
-before ==
+before==
 from plmpl import fig2svg, easyplot
 import matplotlib.pyplot as plt
 
