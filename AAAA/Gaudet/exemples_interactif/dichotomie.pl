@@ -61,34 +61,19 @@ testcases==
 
 solutionpourtests==
 
-#include <stdio.h>
-
-int main() {
-    int N;
-    scanf("%d", &N);
-
-    int top = N - 1;
-    int bottom = 0;
-    int essai;
-
-    while (1) {
-        essai = bottom + (top - bottom) / 2;
-        printf("%d\n", essai);
-
-        char r;
-        scanf(" %c", &r);
-
-        if (r == '<') {
-            top = essai - 1;
-        } else if (r == '>') {
-            bottom = essai + 1;
-        } else {
-            break;
-        }
-    }
-
-    return 0;
-}
-
+N=int(input())
+top = N-1
+bottom = 0
+while True:
+    essai= bottom + (top-bottom)//2
+    print(essai)
+    r = input()
+    if r== '<':
+        bottom, top = bottom,essai-1
+    elif r=='>':
+        bottom, top = essai+1, top
+    else:
+        print("Victoire")
+        break
 ==
 
