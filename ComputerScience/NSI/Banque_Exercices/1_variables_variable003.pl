@@ -8,7 +8,7 @@ tag=variable | affectation
 
 text==
 
-Initialisez les variables `jour`, `mois`, `annee` avec la date du jour.
+Initialisez les variables (de type nombres entiers) `jour`, `mois`, `annee` avec la date du jour.
 
 ==
 
