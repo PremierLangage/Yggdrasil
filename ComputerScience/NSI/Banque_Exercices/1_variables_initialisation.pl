@@ -14,9 +14,8 @@ text==
  de type **{{type_var}}** 
 ==
 
-editor.height = 80
 
-editor.code==
+editor.code ==
 
 ==
 
