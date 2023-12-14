@@ -18,7 +18,7 @@ editor.code==
 ==
 
 code==
-pim,pam,pom=0,0,0
+pim, pam, pom = 0, 0, 0
 ==
 
 # comme ca cela se passera bien
