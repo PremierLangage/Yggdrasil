@@ -1,6 +1,6 @@
 # author = Antoine Meyer
 
-extends = /ComputerScience/NSI/templatebackup/generic/generic.pl
+extends = /ComputerScience/NSI/templates/generic/generic.pl
 
 title = Échange de deux variables
 
