@@ -15,7 +15,9 @@ text==
 ==
 
 editor.height = 80
+
 editor.code==
+
 ==
 
 before== #|python| 
