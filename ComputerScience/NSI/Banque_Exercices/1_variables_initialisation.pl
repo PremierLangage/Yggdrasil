@@ -22,7 +22,7 @@ editor.code ==
 before== #|python| 
 import random 
 random.seed(seed)
-type_var = random.choice(["int","str","float","bool",None])
+type_var = random.choice(["int","str","float","bool"])
 var = random.choice(["a", "b", "c", "X", "Y","PIERRE","feuille","ciseaux"])
 
 pltest0="""
