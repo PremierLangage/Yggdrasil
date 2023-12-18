@@ -32,27 +32,49 @@ Voici un exemple de partie où l’on a choisi de jouer avec des allumettes, ave
 On fixe k = 3, ce qui signifie que chaque joueur peut retirer entre 1 et 3 allumettes :
 
 Situation initiale, la joueuse 1 commence, il y a 21 allumettes :
+
 ![21 allumettes](https://html.brunache.ovh/static/21-allumettes-1.png)
+
 La joueuse 1 a pris 1 allumette, il en reste 21 − 1 = 20 :
+
 ![20 allumettes](https://html.brunache.ovh/static/20-allumettes-2.png)
+
 Le joueur 2 a pris 2 allumettes, il en reste 20 − 2 = 18 ; 
+
 ![18 allumettes](https://html.brunache.ovh/static/18-allumettes-1.png)
+
 La joueuse 1 a pris 2 allumettes, il en reste 18 − 2 = 16 ;
+
 ![16 allumettes](https://html.brunache.ovh/static/16-allumettes-2.png)
+
 Le joueur 2 a pris 3 allumettes, il en reste 16 − 3 = 13 ;
+
 ![13 allumettes](https://html.brunache.ovh/static/13-allumettes-1.png)
+
 La joueuse 1 a pris 1 allumette, il en reste 13 − 1 = 12 ;
+
 ![12 allumettes](https://html.brunache.ovh/static/12-allumettes-2.png)
+
 Le joueur 2 a pris 1 allumette, il en reste 12 − 1 = 11 ;
+
 ![11 allumettes](https://html.brunache.ovh/static/11-allumettes-1.png)
+
 La joueuse 1 a pris 3 allumettes, il en reste 11 − 3 = 8 ;
+
 ![8 allumettes](https://html.brunache.ovh/static/8-allumettes-2.png)
+
 Le joueur 2 a pris 2 allumettes, il en reste 8 − 2 = 6 ;
+
 ![6 allumettes](https://html.brunache.ovh/static/6-allumettes-1.png)
+
 La joueuse 1 a pris 2 allumettes, il en reste 6 − 2 = 4 ;
+
 ![4 allumettes](https://html.brunache.ovh/static/4-allumettes-2.png)
+
 Le joueur 2 a pris 1 allumette, il en reste 4 − 1 = 3 ;
+
 ![3 allumettes](https://html.brunache.ovh/static/3%20alumettes.png)
+
 La joueuse 1 a pris 2 allumettes, il en reste 3 − 2 = 1.
 
 Dans cet exemple, le joueur 2 est obligé de prendre la dernière allumette, il a donc perdu.
