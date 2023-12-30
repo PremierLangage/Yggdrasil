@@ -42,7 +42,7 @@ pltest==
 
 soluce==
 class Feuille:
-    def __init__(self, valeur, lettre):
+    def __init__(self, lettre, valeur):
         self.valeur = valeur
         self.lettre = lettre
 ==
