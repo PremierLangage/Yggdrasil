@@ -21,15 +21,16 @@ la lettre la plus fréquente à la moins fréquente
 ==
 
 befor ==
-import os
-import time
+def creer_occurences(texte):
+    d = {}
+    for caractere in texte:
+        d[caractere] = d.get(caractere, 0) + 1
+    return d
 
-class Cellule:
-    def __init__(self, etat, i, j):
-        self.vivant = etat
-        self.futur = None
-        self.i = i
-        self.j = j
+class Feuille:
+    def __init__(self, lettre, valeur):
+        self.valeur = valeur
+        self.lettre = lettre
 
 class Jeu_de_la_vie:
     def __init__(self, taille, liste_vivantes):
