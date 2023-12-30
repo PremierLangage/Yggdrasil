@@ -5,18 +5,18 @@ title= Liste de feuilles triées
 
 text==
 
-Ecrire la fonction `creer_liste_triée(occuremces)` ayant en entrée un dictionnaire des 
+Ecrire la fonction `creer_liste_triée(occurences)` ayant en entrée un dictionnaire des 
 occurences des lettres et retournant une liste de feuilles (de la classe `Feuille`) triées de
 la lettre la plus fréquente à la moins fréquente
 
 
 
-    >>> cell.i, cell.j # cell est une cellule existante
-    (0, 0)
-    >>> len(jeu.voisines(cell)) # jeu.voisines(cell) renvoie une liste de taille 3
+    >>> occurences = creer_occurences("c'est un test")
+    >>> occurences_triees = creer_liste_triée(occurences)
+    >>> occurences_triees[0].valeur
     3
-    >>> jeu.voisines(cell)[0].vivant # le type de jeu.voisines(cell)[0] est donc Cellule, on peut donc demander la valeur de l'attribut vivant.
-    False
+    >>> occurences_triees[0].lettre
+    't'
 
 ==
 
@@ -32,12 +32,11 @@ class Feuille:
         self.valeur = valeur
         self.lettre = lettre
 
-class Jeu_de_la_vie:
-    def __init__(self, taille, liste_vivantes):
-        self.taille = taille
-        self.plateau = [[Cellule(False, i, j) for j in range(taille)] for i in range(taille)]
-        for i, j in liste_vivantes:
-            self.plateau[i][j].vivant = True
+class Arbre:
+    def __init__(self, valeur):
+        self.valeur = valeur
+        self.droite = None
+        self.gauche = None
 ==
 
 
