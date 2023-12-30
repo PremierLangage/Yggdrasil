@@ -26,7 +26,7 @@ editor.code==
 ==
 
 pltest==
->>> occ_dict = create_occurences("ceci est un essai") #
+>>> occ_dict = create_occurences("ceci est un essai")
 >>> occ_dict['c']
 2
 >>> occ_dict[' ']
