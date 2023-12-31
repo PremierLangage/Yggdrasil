@@ -6,8 +6,21 @@ title= Table d'encodage de Huffman
 
 text==
 
-Ecrire la fonction `arbre_huffman(lst)` ayant en entrée `lst` : une liste d'arbres et de feuilles triée (où les valeurs des arbres ou des feuilles sont 
-classés dans l'odre décroissant)
+Ecrire la fonction `table_encodage(arbre)` ayant en entrée `arbre` un arbre de huffman et retournant un dictionnaire 
+ayant comme clé les lettres des feuilles de l'arbre et comme valeur le codage correspondant en lisant l'arbre comme ceci:
+
+- on ajoute un 0 quand on descend à gauche 
+- on ajoute un 1 quand on descend à droite
+
+ainsi, quand l'arbre est le suivant:
+
+            _____13________
+           /               \
+       ____5_            ___8________
+      /      \          /            \
+    e: 2    t: 3    ___4__         __4__(2,': 1,c: 1),(2,n: 1,u: 1)
+                   /      \       /     \
+                " ": 2   s: 2    2
 
 et qui réalise les actions suivantes:
 
