@@ -5,12 +5,12 @@ title= Liste de feuilles triées
 
 text==
 
-Ecrire la fonction `creer_liste_triée(occurences)` ayant en entrée un dictionnaire des 
+Ecrire la fonction `creer_liste_triee(occurences)` ayant en entrée un dictionnaire des 
 occurences des lettres et retournant une liste de feuilles (de la classe `Feuille`) triées de
 la lettre la plus fréquente à la moins fréquente
 
     >>> occurences = creer_occurences("c'est un test")
-    >>> occurences_triees = creer_liste_triée(occurences)
+    >>> occurences_triees = creer_liste_triee(occurences)
     >>> occurences_triees[0].valeur
     3
     >>> occurences_triees[0].lettre
@@ -44,7 +44,7 @@ editor.code==
 
 pltest==
 >>> occurences = creer_occurences("c'est un test")
->>> occurences_triees = creer_liste_triée(occurences)
+>>> occurences_triees = creer_liste_triee(occurences)
 >>> occurences_triees[0].valeur
 3
 >>> occurences_triees[0].lettre
@@ -52,7 +52,7 @@ pltest==
 ==
 
 soluce==
-def creer_liste_triée(occurences):
+def creer_liste_triee(occurences):
     lst = []
     while len(occurences) != 0:
         m = -1
