@@ -113,8 +113,17 @@ True
 ==
 
 soluce==
-def table_encodage(arbre):
-    ...
+def table_encodage(arbre, code = ""):
+    d = {}
+    if isinstance(arbre, Feuille):
+        d[arbre.lettre] = code
+        d[code] = arbre.lettre
+        return d
+    if arbre.gauche is not None:
+        d.update(table_encodage(arbre.gauche, code + "0"))
+    if arbre.droite is not None:
+        d.update(table_encodage(arbre.droite, code + "1"))
+    return d
 ==
 
 
