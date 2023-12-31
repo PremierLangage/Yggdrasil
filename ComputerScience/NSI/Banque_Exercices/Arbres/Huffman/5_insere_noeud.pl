@@ -80,9 +80,9 @@ soluce==
 def insere(lst, noeud):
     if len(lst) != 0:
         i = len(lst) - 1
-        while noeud.valeur > lst[i].valeur and i > 0:
+        while noeud.valeur > lst[i].valeur and i >= 0:
             i -= 1
-        lst.insert(i, noeud)  
+        lst.insert(i + 1, noeud)  
     else:
         lst.insert(0, noeud)
 ==
