@@ -62,18 +62,25 @@ editor.code==
 pltest==
 >>> occurences = creer_occurences("c'est un test")
 >>> occurences_triees = creer_liste_triee(occurences)
+>>> insere(occurences_triees, Feuille('z', 5))
 >>> occurences_triees[0].valeur
-3
+5
 >>> occurences_triees[0].lettre
-'t'
+'z'
+>>> insere(occurences_triees, Arbre(4))
+>>> occurences_triees[0].valeur
+5
+>>> occurences_triees[1].valeur
+4
+>>> occurences_triees[2].valeur
+3
 ==
 
 soluce==
-def range_classe(lst, noeud):
+def insere(lst, noeud):
     if len(lst) != 0:
         i = len(lst) - 1
         while noeud.valeur > lst[i].valeur and i > 0:
-            # print(i, lst[i].valeur)
             i -= 1
         lst.insert(i, noeud)  
     else:
