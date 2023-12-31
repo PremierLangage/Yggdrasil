@@ -86,7 +86,7 @@ True
 ==
 
 soluce==
-def create_tree(lst):
+def arbre_huffman(lst):
     i = 0
     while len(lst) > 1:
         i += 1
