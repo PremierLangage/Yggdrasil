@@ -16,10 +16,18 @@ et qui insère le noeud (`Arbre`ou `Feuille`) dans la liste de manière à ce qu
 
     >>> occurences = creer_occurences("c'est un test")
     >>> occurences_triees = creer_liste_triee(occurences)
+    >>> insere(occurences_triees, Feuille('z', 5))
     >>> occurences_triees[0].valeur
-    3
+    5
     >>> occurences_triees[0].lettre
-    't'
+    'z'
+    >>> insere(occurences_triees, Arbre(4))
+    >>> occurences_triees[0].valeur
+    5
+    >>> occurences_triees[1].valeur
+    4
+    >>> occurences_triees[2].valeur
+    3
 
 ==
 
