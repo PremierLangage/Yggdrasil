@@ -9,8 +9,6 @@ Ecrire la fonction `creer_liste_triée(occurences)` ayant en entrée un dictionn
 occurences des lettres et retournant une liste de feuilles (de la classe `Feuille`) triées de
 la lettre la plus fréquente à la moins fréquente
 
-
-
     >>> occurences = creer_occurences("c'est un test")
     >>> occurences_triees = creer_liste_triée(occurences)
     >>> occurences_triees[0].valeur
@@ -54,13 +52,16 @@ pltest==
 ==
 
 soluce==
-def voisines(self, cell):
-    i, j = cell.i, cell.j
-    lst = [(i - 1, j - 1), (i, j - 1), (i + 1, j - 1), (i - 1, j), (i + 1, j), (i - 1, j + 1), (i, j + 1), (i + 1, j + 1)]
-    res = []
-    for x, y in lst:
-        if x >= 0 and x < self.taille and y >= 0 and y < self.taille:
-            res.append(self.plateau[x][y])
-    return res
+def creer_liste_triée(occurences):
+    lst = []
+    while len(occurences) != 0:
+        m = -1
+        for k, v in occurences.items():
+            if v > m:
+                m = v
+                km = k
+        lst.append(Feuille(km, m))
+        del occurences[km]
+    return lst
 ==
 
