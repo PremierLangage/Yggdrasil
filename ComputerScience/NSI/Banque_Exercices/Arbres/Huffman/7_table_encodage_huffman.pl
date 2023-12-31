@@ -28,19 +28,14 @@ le codage de `e` est `00`.
 
 le codage de `s` est `101`.
 
-Cette fonction est récursive, et utilise `isinstance` pour déterminer si le noeud actuel est une `Feuille` ou un `Arbre`
+Cette fonction est *récursive*, et utilise [`isinstance`](https://www.programiz.com/python-programming/methods/built-in/isinstance) pour déterminer si le noeud actuel est une `Feuille` ou un `Arbre`
 
 
 
     >>> occurences = creer_occurences("c'est un test")
     >>> occurences_triees = creer_liste_triee(occurences)
     >>> arbre_h = arbre_huffman(occurences_triees)
-    >>> arbre_h.valeur
-    13
-    >>> arbre_h.droite.valeur
-    8
-    >>> arbre_h.gauche.valeur
-    5
+    >>> 
 
 ==
 
