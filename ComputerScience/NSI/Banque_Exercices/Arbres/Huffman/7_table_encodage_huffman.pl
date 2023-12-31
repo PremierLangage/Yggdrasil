@@ -118,10 +118,8 @@ def table_encodage(arbre, code = ""):
         d[arbre.lettre] = code
         d[code] = arbre.lettre
         return d
-    if arbre.gauche is not None:
-        d.update(table_encodage(arbre.gauche, code + "0"))
-    if arbre.droite is not None:
-        d.update(table_encodage(arbre.droite, code + "1"))
+    d.update(table_encodage(arbre.gauche, code + "0"))
+    d.update(table_encodage(arbre.droite, code + "1"))
     return d
 ==
 
