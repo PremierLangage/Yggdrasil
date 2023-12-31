@@ -2,7 +2,7 @@
 extends = /ComputerScience/NSI/templates/pltest/pltest2023.pl
 
 
-title= Arbre de huffman
+title= Table d'encodage de Huffman
 
 text==
 
@@ -83,7 +83,7 @@ def arbre_huffman(lst):
         insere(lst, nouveau_noeud)
     return lst[0]
 
-def table_encodage(arbre)
+
 ==
 
 
@@ -102,17 +102,8 @@ True
 ==
 
 soluce==
-def arbre_huffman(lst):
-    i = 0
-    while len(lst) > 1:
-        i += 1
-        noeud1 = lst.pop()
-        noeud2 = lst.pop()
-        nouveau_noeud = Arbre(noeud1.valeur + noeud2.valeur)
-        nouveau_noeud.gauche = noeud1
-        nouveau_noeud.droite = noeud2
-        insere(lst, nouveau_noeud)
-    return lst[0]
+def table_encodage(arbre):
+    ...
 ==
 
 
