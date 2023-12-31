@@ -106,10 +106,9 @@ pltest==
 >>> occurences = creer_occurences("c'est un test")
 >>> occurences_triees = creer_liste_triee(occurences)
 >>> arbre_h = arbre_huffman(occurences_triees)
->>> arbre_h.valeur
-13
->>> arbre_h.droite.valeur == 8 or arbre_h.droite.valeur == 5
-True
+>>> table_encodage(arbre_h)
+{'e': '00', '00': 'e', 't': '01', '01': 't', ' ': '100', '100': ' ', 's': '101', '101': 's', "'": '1100', '1100': "'", 'c': '1101', '1101': 'c', 'n': '1110', '1110': 'n', 'u': '1111', '1111': 'u'}
+
 ==
 
 soluce==
