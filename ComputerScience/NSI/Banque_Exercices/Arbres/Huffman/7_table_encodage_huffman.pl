@@ -16,20 +16,19 @@ ainsi, quand l'arbre est le suivant:
 
             _____13________
            /               \
-       ____5_            ___8________
-      /      \          /            \
-    e: 2    t: 3    ___4__         __4__(2,': 1,c: 1),(2,n: 1,u: 1)
-                   /      \       /     \
-                " ": 2   s: 2    2
+       ____5_            ___8_____________
+      /      \          /                 \
+    e: 2    t: 3    ___4__           _____4_____
+                   /      \         /           \
+                " ": 2   s: 2    __2__         __2__
+                                /     \       /     \
+                              ': 1   c: 1   n: 1    u: 1
 
-et qui réalise les actions suivantes:
+le codage de `e` est `00`.
 
-    tant que lst n'a pas qu'un seul élément
-        récupère les deux derniers noeuds (`Arbre` ou `Feuille`) de la liste (normalement ce sont ceux qui ont les valeurs les plus petites)
-        crée un nouveau noeud (de la classe `Arbre`) dont la valeur est la somme des valeurs des deux noeuds récupérés et donc les fils sont les deux noeuds récupérés
-        insère ce nouveau noeud dans la liste (on appellera la fonction insere de la question précédente (même si on ne l'a pas faite))
+le codage de `s` est `101`.
 
-et qui retournera l'arbre résultant située au seul emplacement 0 de la liste `lst`. On appelle cet arbre arbre de Huffman.
+Cette fonction est récursive, et utilise `isinstance` pour déterminer si le noeud actuel est une `Feuille` ou un `Arbre`
 
 
 
