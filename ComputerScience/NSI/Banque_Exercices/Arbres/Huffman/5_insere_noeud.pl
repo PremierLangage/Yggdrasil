@@ -69,17 +69,15 @@ pltest==
 ==
 
 soluce==
-def creer_liste_triee(occurences):
-    lst = []
-    while len(occurences) != 0:
-        m = -1
-        for k, v in occurences.items():
-            if v > m:
-                m = v
-                km = k
-        lst.append(Feuille(km, m))
-        del occurences[km]
-    return lst
+def range_classe(lst, noeud):
+    if len(lst) != 0:
+        i = len(lst) - 1
+        while noeud.valeur > lst[i].valeur and i > 0:
+            # print(i, lst[i].valeur)
+            i -= 1
+        lst.insert(i, noeud)  
+    else:
+        lst.insert(0, noeud)
 ==
 
 
