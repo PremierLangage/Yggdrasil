@@ -25,8 +25,10 @@ et qui retournera l'arbre résultant située au seul emplacement 0 de la liste `
     >>> arbre_h = arbre_huffman(occurences_triees)
     >>> arbre_h.valeur
     13
-    >>> arbre_h.droite.valeur == 8 or arbre_h.droite.valeur == 5
-    True
+    >>> arbre_h.droite.valeur
+    8
+    >>> arbre_h.gauche.valeur
+    5
 
 ==
 
