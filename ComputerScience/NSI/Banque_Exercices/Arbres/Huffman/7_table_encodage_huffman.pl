@@ -24,18 +24,22 @@ ainsi, quand l'arbre est le suivant:
                                 /     \       /     \
                               ': 1   c: 1   n: 1    u: 1
 
-le codage de `e` est `00`.
+le codage de `e` est `00` (deux fois à gauche)
 
 le codage de `s` est `101`.
+
+Pour permettre le décodage, on ajoutera dans le dictionnaire les codages comme clés et les lettres comme valeurs.
 
 Cette fonction est *récursive*, et utilise [`isinstance`](https://www.programiz.com/python-programming/methods/built-in/isinstance) pour déterminer si le noeud actuel est une `Feuille` ou un `Arbre`
 
 
+Exemple : 
 
     >>> occurences = creer_occurences("c'est un test")
     >>> occurences_triees = creer_liste_triee(occurences)
     >>> arbre_h = arbre_huffman(occurences_triees)
-    >>> 
+    >>> table_encodage(arbre_h)
+    {'e': '00', '00': 'e', 't': '01', '01': 't', ' ': '100', '100': ' ', 's': '101', '101': 's', "'": '1100', '1100': "'", 'c': '1101', '1101': 'c', 'n': '1110', '1110': 'n', 'u': '1111', '1111': 'u'}
 
 ==
 
