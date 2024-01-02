@@ -1,5 +1,5 @@
 extends = /ComputerScience/NSI/templates/pltest/pltest2023.pl
-
+@ solution.py
 
 title= Occurences caractères
 
@@ -19,6 +19,12 @@ Exemple:
 befor ==
 import os
 import time
+==
+
+before== #|python| 
+from solution import *
+from random import choice
+texte = choice(textes)
 ==
 
 
