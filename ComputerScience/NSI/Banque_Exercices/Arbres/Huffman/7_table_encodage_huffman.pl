@@ -7,7 +7,7 @@ title= Table d'encodage de Huffman
 text==
 
 Ecrire la fonction `table_encodage(arbre)` ayant en entrée `arbre` un arbre de huffman et retournant un dictionnaire 
-ayant comme clé les lettres des feuilles de l'arbre et comme valeur le codage correspondant en lisant l'arbre comme ceci:
+ayant comme clé les lettres des feuilles de l'arbre et comme valeur le codage (de type `str`) correspondant en lisant l'arbre comme ceci:
 
 - on ajoute un 0 quand on descend à gauche 
 - on ajoute un 1 quand on descend à droite
