@@ -26,11 +26,11 @@ before== #|python|
 from solution import *
 from random import choice
 texte = choice(textes)
-pltest1 = """
->>> texte = \"\"\"""" + texte + """\"\"\"
+pltest1 = f"""
+>>> texte = \"\"\"{texte}\"\"\"
 >>> creer_occurences(texte)
-{}
-""".format(creer_occurences(texte))
+{creer_occurences(texte)}
+"""
 ==
 
 
