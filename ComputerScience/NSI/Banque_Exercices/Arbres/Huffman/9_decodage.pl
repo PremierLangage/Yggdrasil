@@ -102,7 +102,7 @@ pltest==
 >>> arbre_h = arbre_huffman(occurences_triees) #
 >>> encodage = table_encodage(arbre_h) #
 >>> decodage('11011100001010110011111110100010010101', encodage)
-'c'est un test'
+"c'est un test"
 ==
 
 soluce==
