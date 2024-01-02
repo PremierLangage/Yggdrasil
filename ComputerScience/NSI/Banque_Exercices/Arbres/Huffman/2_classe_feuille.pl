@@ -1,5 +1,6 @@
 extends = /ComputerScience/NSI/templates/pltest/pltest2023.pl
-
+@ /builder/before.py [builder.py]
+@ solution.py
 
 title= Classe Feuille 
 
@@ -28,6 +29,19 @@ import os
 import time
 ==
 
+before== #|python| 
+from solution import *
+from random import choice, randint, seed
+val = randint(1, 100)
+lettre = 'abcdefghijklmnopqrstuvwxyz'[randint(0,23)]
+pltest += f"""
+>>> b = Feuille({lettre}, {val})
+>>> b.lettre
+{lettre}
+>>> b.valeur
+{val}
+"""
+==
 
 editor.code==
 ==
