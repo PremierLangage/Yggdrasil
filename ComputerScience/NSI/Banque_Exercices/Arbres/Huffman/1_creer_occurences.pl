@@ -24,14 +24,18 @@ import time
 
 before== #|python| 
 from solution import *
-from random import choice, randint
+from random import choice, randint, seed
+seed(2024)
 texte = choice(textes)
 texte = textes[2]
-lettre = choice(repr(texte))
+lettre1 = choice(repr(texte))
+lettre2 = choice(repr(texte))
 pltest += f"""
 >>> dict = creer_occurences({repr(texte)}) #
->>> dict[{repr(lettre)}]
-{creer_occurences(texte)[lettre]}
+>>> dict[{repr(lettre1)}]
+{creer_occurences(texte)[lettre1]}
+>>> dict[{repr(lettre2)}]
+{creer_occurences(texte)[lettre2]}
 """
 ==
 
