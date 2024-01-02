@@ -35,9 +35,9 @@ from random import choice, randint, seed
 val = randint(1, 100)
 lettre = 'abcdefghijklmnopqrstuvwxyz'[randint(0,23)]
 pltest += f"""
->>> b = Feuille({lettre}, {val})
+>>> b = Feuille({lettre!r}, {val})
 >>> b.lettre
-{lettre}
+{lettre!r}
 >>> b.valeur
 {val}
 """
