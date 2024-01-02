@@ -25,6 +25,10 @@ before== #|python|
 from solution import *
 from random import choice
 texte = choice(textes)
+pltest += """
+>>> creer_occurences({})
+{}
+""".format(texte, creer_occurences(texte))
 ==
 
 
