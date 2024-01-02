@@ -1,4 +1,5 @@
 extends = /ComputerScience/NSI/templates/pltest/pltest2023.pl
+@ /builder/before.py [builder.py]
 @ solution.py
 
 title= Occurences caractères
