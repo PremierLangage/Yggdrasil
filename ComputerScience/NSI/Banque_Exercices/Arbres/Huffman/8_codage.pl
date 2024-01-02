@@ -16,7 +16,7 @@ Exemple :
     >>> arbre_h = arbre_huffman(occurences_triees)
     >>> encodage = table_encodage(arbre_h)
     >>> codage("c'est un test", encodage)
-    '11101111100101010011001101000110010101'
+    '11011100001010110011111110100010010101'
 ==
 
 befor ==
