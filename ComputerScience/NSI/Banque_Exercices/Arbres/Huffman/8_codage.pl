@@ -88,10 +88,10 @@ editor.code==
 ==
 
 pltest==
->>> occurences = creer_occurences("c'est un test")
->>> occurences_triees = creer_liste_triee(occurences)
->>> arbre_h = arbre_huffman(occurences_triees)
->>> encodage = table_encodage(arbre_h)
+>>> occurences = creer_occurences("c'est un test") #
+>>> occurences_triees = creer_liste_triee(occurences) #
+>>> arbre_h = arbre_huffman(occurences_triees) #
+>>> encodage = table_encodage(arbre_h) #
 >>> codage("c'est un test", encodage)
 '11011100001010110011111110100010010101'
 ==
