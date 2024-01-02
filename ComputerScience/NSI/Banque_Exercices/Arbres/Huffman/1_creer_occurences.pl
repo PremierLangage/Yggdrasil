@@ -26,8 +26,9 @@ before== #|python|
 from solution import *
 from random import choice
 texte = choice(textes)
+texte = textes[2]
 pltest1 = f"""
->>> texte = \"\"\"{texte}\"\"\"
+>>> texte = \"\"\"{repr(texte)}\"\"\"
 >>> creer_occurences(texte)
 {creer_occurences(texte)}
 """
