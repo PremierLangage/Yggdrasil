@@ -25,7 +25,7 @@ import time
 before== #|python| 
 from solution import *
 from random import choice, randint, seed
-seed(2024)
+# seed(2024)
 texte = choice(textes)
 texte = textes[2]
 lettre1 = choice(repr(texte))
