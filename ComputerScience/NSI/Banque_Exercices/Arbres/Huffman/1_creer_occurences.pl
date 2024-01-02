@@ -30,7 +30,7 @@ texte = textes[2]
 lettre = choice(repr(texte))
 pltest1 = f"""
 >>> dict = creer_occurences({repr(texte)})
->>> dict[{lettre}]
+>>> dict[{repr(lettre)}]
 {creer_occurences(texte)[lettre]}
 """
 ==
