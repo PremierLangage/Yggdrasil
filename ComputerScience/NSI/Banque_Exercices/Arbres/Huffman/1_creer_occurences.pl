@@ -24,12 +24,14 @@ import time
 
 before== #|python| 
 from solution import *
-from random import choice
+from random import choice, randint
 texte = choice(textes)
 texte = textes[2]
+lettre = choice({repr(texte)})
 pltest1 = f"""
->>> creer_occurences({repr(texte)})
-{creer_occurences(texte)}
+>>> dict = creer_occurences({repr(texte)})
+>>> dict[{lettre}]
+{creer_occurences(texte)[lettre]}
 """
 ==
 
