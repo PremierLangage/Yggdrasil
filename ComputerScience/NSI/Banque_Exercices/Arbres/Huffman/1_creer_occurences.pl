@@ -25,7 +25,7 @@ before== #|python|
 from solution import *
 from random import choice
 texte = choice(textes)
-pltest += """
+pltest1 = """
 >>> creer_occurences({})
 {}
 """.format(texte, creer_occurences(texte))
@@ -35,7 +35,7 @@ pltest += """
 editor.code==
 ==
 
-pltest==
+pltest0==
 >>> occ_dict = creer_occurences("ceci est un essai")
 >>> occ_dict['c']
 2
