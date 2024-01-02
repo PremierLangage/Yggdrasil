@@ -27,7 +27,7 @@ from solution import *
 from random import choice, randint
 texte = choice(textes)
 texte = textes[2]
-lettre = choice({repr(texte)})
+lettre = choice(repr(texte))
 pltest1 = f"""
 >>> dict = creer_occurences({repr(texte)})
 >>> dict[{lettre}]
