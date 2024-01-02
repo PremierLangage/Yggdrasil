@@ -27,10 +27,10 @@ from solution import *
 from random import choice
 texte = choice(textes)
 pltest1 = """
->>> texte = \"\"\"{}\"\"\"
+>>> texte = \"\"\"""" + texte + """\"\"\"
 >>> creer_occurences(texte)
 {}
-""".format(texte, creer_occurences(texte))
+""".format(creer_occurences(texte))
 ==
 
 
