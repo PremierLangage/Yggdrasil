@@ -28,8 +28,8 @@ from random import choice, randint
 texte = choice(textes)
 texte = textes[2]
 lettre = choice(repr(texte))
-pltest1 = f"""
->>> dict = creer_occurences({repr(texte)})
+pltest += f"""
+>>> dict = creer_occurences({repr(texte)}) #
 >>> dict[{repr(lettre)}]
 {creer_occurences(texte)[lettre]}
 """
@@ -39,7 +39,7 @@ pltest1 = f"""
 editor.code==
 ==
 
-pltest0==
+pltest==
 >>> occ_dict = creer_occurences("ceci est un essai")
 >>> occ_dict['c']
 2
