@@ -30,7 +30,7 @@ texte = textes[2]
 pltest1 = f"""
 >>> texte = \"\"\"{repr(texte)}\"\"\"
 >>> creer_occurences(texte)
-{repr(creer_occurences(repr(texte)))}
+{creer_occurences(texte)}
 """
 ==
 
