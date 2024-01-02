@@ -28,8 +28,7 @@ from random import choice
 texte = choice(textes)
 texte = textes[2]
 pltest1 = f"""
->>> texte = {repr(texte)}
->>> creer_occurences(texte)
+>>> creer_occurences({repr(texte)})
 {creer_occurences(texte)}
 """
 ==
