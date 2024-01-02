@@ -1,3 +1,4 @@
+title = Codage de Huffman
 text ==
 
 L'objectif de cet exercice est de créer un [codage de huffman](https://fr.wikipedia.org/wiki/Codage_de_Huffman). Il faut donc commencer par bien lire l'article wikipédia en lien.
