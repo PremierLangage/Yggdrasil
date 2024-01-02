@@ -27,7 +27,8 @@ from solution import *
 from random import choice
 texte = choice(textes)
 pltest1 = """
->>> creer_occurences("{}")
+>>> texte = \"\"\"{}\"\"\"
+>>> creer_occurences(texte)
 {}
 """.format(texte, creer_occurences(texte))
 ==
