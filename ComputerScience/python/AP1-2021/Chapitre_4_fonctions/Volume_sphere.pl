@@ -60,6 +60,7 @@ Negatif_reel
 mplsoluce2==
 Nul
 0
+1
 ==
 
 
