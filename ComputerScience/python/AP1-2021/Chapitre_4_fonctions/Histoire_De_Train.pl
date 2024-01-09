@@ -13,7 +13,7 @@ Un train parti de la gare de Ouceti se dirige vers Arras. Ce train circule à la
  et la gare d'Ouceti est située à une distance $%d_O%$ de celle d’Arras.
 .<br>
 –Écrire une fonction `temps_mis` qui reçoit la vitesse du train et la distance et qui renvoie le temps mis pour parcourir cette distance;<br>
-alerté par les cris, Superman qui trainait à quelques $%d_S% kms de là se dirige à vitesse $%V%$ vers moi. Serai-je sauvé ?<br>
+alerté par les cris, Superman qui trainait à quelques $%d_S%$ kms de là se dirige à vitesse $%V%$ vers moi. Serai-je sauvé ?<br>
 -Écrire une fonction `sauvetage` qui renvoie le booléen True si Superman arrive à temps et False sinon. cette fonction reçoit:
 quatre réels $%v_t, d_O,V,d_S%$,
 <br>
