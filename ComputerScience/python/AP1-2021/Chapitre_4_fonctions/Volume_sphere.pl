@@ -1,4 +1,4 @@
-#author=OCE
+author=OCE
 
 # Heritage d'un type d'exercice 
 extends=/ComputerScience/python/AP1-1920/templates/plsoluce.pl
