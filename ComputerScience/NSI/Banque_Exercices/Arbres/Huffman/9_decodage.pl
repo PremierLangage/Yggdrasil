@@ -1,6 +1,7 @@
 
 extends = /ComputerScience/NSI/templates/pltest/pltest2023.pl
-
+@ /builder/before.py [builder.py]
+@ solution.py
 
 title= Décodage
 
@@ -20,6 +21,24 @@ Exemple :
     >>> encodage = table_encodage(arbre_h)
     >>> decodage('11011100001010110011111110100010010101', encodage)
     "c'est un test"
+==
+
+before== #|python| 
+from solution import *
+from random import choice, randint, seed
+texte = choice(textes[1:])
+occurences = creer_occurences(texte)
+occurences_triees = creer_liste_triee(occurences)
+arbre_h = arbre_huffman(occurences_triees)
+encodage = table_encodage(arbre_h)
+
+pltest += f"""
+>>> occurences = creer_occurences({repr(texte)})
+>>> occurences_triees = creer_liste_triee(occurences)
+>>> arbre_h = arbre_huffman(occurences_triees)
+>>> arbre_h.valeur
+{arbre_h.valeur}
+"""
 ==
 
 befor ==
