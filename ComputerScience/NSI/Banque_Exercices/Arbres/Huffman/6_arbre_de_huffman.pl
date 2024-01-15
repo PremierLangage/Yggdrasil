@@ -1,6 +1,7 @@
 
 extends = /ComputerScience/NSI/templates/pltest/pltest2023.pl
-
+@ /builder/before.py [builder.py]
+@ solution.py
 
 title= Arbre de huffman
 
@@ -30,6 +31,22 @@ et qui retournera l'arbre résultant située au seul emplacement 0 de la liste `
     >>> arbre_h.gauche.valeur
     5
 
+==
+
+before== #|python| 
+from solution import *
+from random import choice, randint, seed
+texte = choice(textes[1:])
+occurences = creer_occurences(texte)
+occurences_triees = creer_liste_triee(occurences)
+arbre_h = arbre_huffman(occurences_triees)
+pltest += f"""
+>>> occurences = creer_occurences({repr(texte)})
+>>> occurences_triees = creer_liste_triee(occurences)
+>>> arbre_h = arbre_huffman(occurences_triees)
+>>> arbre_h.valeur
+{arbre_h.valeur}
+"""
 ==
 
 befor ==
