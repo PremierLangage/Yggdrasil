@@ -21,10 +21,14 @@ la lettre la plus fréquente à la moins fréquente
 before== #|python| 
 from solution import *
 from random import choice, randint, seed
-val = randint(1, 100)
+texte = choice(textes[1:])
+occurences = creer_occurences(texte)
+occurences_triees = creer_liste_triee(occurences)
+val = occurences_triees[0].valeur
 pltest += f"""
->>> b = Arbre({val})
->>> b.valeur
+>>> occurences = creer_occurences({texte})
+>>> occurences_triees = creer_liste_triee(occurences)
+>>> occurences_triees[0].valeur
 {val}
 """
 ==
