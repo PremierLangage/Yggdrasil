@@ -31,13 +31,16 @@ occurences = creer_occurences(texte)
 occurences_triees = creer_liste_triee(occurences)
 arbre_h = arbre_huffman(occurences_triees)
 encodage = table_encodage(arbre_h)
-
+code = codage(texte, encodage)
+decode = decodage(code, encodage)
 pltest += f"""
 >>> occurences = creer_occurences({repr(texte)})
 >>> occurences_triees = creer_liste_triee(occurences)
 >>> arbre_h = arbre_huffman(occurences_triees)
->>> arbre_h.valeur
-{arbre_h.valeur}
+>>> encodage = table_encodage(arbre_h)
+>>> code = codage({repr(texte)}, encodage)
+>>> decode = decodage(code, encodage)
+{repr(texte)}
 """
 ==
 
