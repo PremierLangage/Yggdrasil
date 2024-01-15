@@ -18,6 +18,17 @@ la lettre la plus fréquente à la moins fréquente
 
 ==
 
+before== #|python| 
+from solution import *
+from random import choice, randint, seed
+val = randint(1, 100)
+pltest += f"""
+>>> b = Arbre({val})
+>>> b.valeur
+{val}
+"""
+==
+
 befor ==
 def creer_occurences(texte):
     d = {}
