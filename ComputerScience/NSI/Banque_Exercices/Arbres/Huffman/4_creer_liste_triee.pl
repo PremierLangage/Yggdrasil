@@ -27,7 +27,7 @@ occurences = creer_occurences(texte)
 occurences_triees = creer_liste_triee(occurences)
 val = occurences_triees[0].valeur
 pltest += f"""
->>> occurences = creer_occurences({texte})
+>>> occurences = creer_occurences({repr(texte)})
 >>> occurences_triees = creer_liste_triee(occurences)
 >>> occurences_triees[0].valeur
 {val}
