@@ -90,7 +90,6 @@ if __name__ == "__main__":
         i = i+1
     
     # do the tests from the list
-    a= True # Tout c'est bien passé jsuque la ;)
     outstr="" # pas de feedback poiur le moment 
     lfb = None # une structure feedback pour chaque test
     nbgt = len(listoftests) 
