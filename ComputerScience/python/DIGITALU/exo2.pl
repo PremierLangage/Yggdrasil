@@ -39,37 +39,44 @@ On vous demande de créer les fonctions **A,B,C,D,E,F** avec des comportement di
 ==
 
 pltest0==
->>> type(A) == type(1)
-True
+>>> A()
+177
 ==
 
 pltest1==
->>> type(B) == type(0.78)
-True
+>>> B(123)
+246
+>>> B(0)
+0
 ==
 
 
 pltest2==
->>> type(C) == type("une chaine")
-True
+>>> C(3,4)
+7
+>>> C(100,45)
+145
 ==
 
 pltest3==
->>> type(D) == type([])
+>>> D(2,3,5)
+30
+>>> D(7,11,134) == 7*11*134
 True
 ==
 
 
 pltest4==
->>> type(E) == type(None)
+>>> E(3,4) == (7,12)
+True
+>>> E(11,11) = (22,121)
 True
 ==
 
 pltest5==
->>> def _x_():#
-...    pass#
-...
->>> type(F) == type(_x_) # Test type de fonction
+>>> F(1,2,3) == [1,2,3]
+True
+>>> F(2,3,1767) == [2,3,1767]
 True
 ==
 
