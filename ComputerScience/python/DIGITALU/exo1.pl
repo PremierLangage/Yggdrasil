@@ -59,7 +59,10 @@ True
 ==
 
 pltest5==
->>> type(F) == type(eval("def f():\n  pass\n"))
+>>> def _x_():
+...    pass
+...
+>>> type(F) == type(_x_) # Test type de fonction
 True
 ==
 
