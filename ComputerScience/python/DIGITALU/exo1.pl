@@ -4,6 +4,11 @@ extends = /AAAA/dominique/python/template/pltest2023.pl
 
 title = Des variables 
 
+
+
+tag= type | variable
+
+
 remarque ==
 
 Le type int (entier)
