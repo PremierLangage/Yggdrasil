@@ -60,7 +60,7 @@ True
 
 pltest5==
 >>> def _x_():#
-...    pass
+...    pass#
 ...
 >>> type(F) == type(_x_) # Test type de fonction
 True
