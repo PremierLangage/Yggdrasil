@@ -8,10 +8,10 @@ remarque ==
 
 Le type int (entier)
 Le type float (flottant)
-Le type str (chaîne de caractères)
-Le type bool (booléen)
-Le type list (liste)
-Le type complex (complexe)
+Le type str (chaîne de caractères)  
+Le type bool (booléen)  
+Le type list (liste)  
+Le type complex (complexe)  
 
 ==
 
@@ -23,10 +23,10 @@ text==
 On vous demande de créer les variables A,B,C,D,E,F avec des contenus de type différents:
 
 A doit être un **int** par exemple: 1   
-B doit être un **float** 
+B doit être un **float**  
 C doit être une **str** une chaine de caractère  
-D doit être une **list** une liste (vide par exemple)
-E doit être de type **NoneType** 
+D doit être une **list** une liste (vide par exemple)  
+E doit être de type **NoneType**  
 F doit être une **fonction** , initialiser C avec le nom d'une fonction écrite avant.
 
 ==
