@@ -31,4 +31,36 @@ F doit être une **fonction** , initialiser C avec le nom d'une fonction écrite
 
 ==
 
+pltest0==
+>>> type(A) == type(1)
+True
+==
+
+pltest1==
+>>> type(B) == type(0.78)
+True
+==
+
+
+pltest2==
+>>> type(C) == type("une chaine")
+True
+==
+
+pltest3==
+>>> type(D) == type([])
+True
+==
+
+
+pltest4==
+>>> type(E) == type(None)
+True
+==
+
+pltest5==
+>>> type(F) == type(eval("def f():\n  pass\n"))
+True
+==
+
 
