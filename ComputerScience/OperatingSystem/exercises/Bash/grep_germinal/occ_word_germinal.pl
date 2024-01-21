@@ -26,8 +26,12 @@ tag=bash|unix|terminal|grep|regex
 before==#|python|
 import random
 
-things = [("mine", "73\n"), ("maison", "115\n"), ("charbon", "75\n"), 
-          ("voiture", "25\n"), ("père", "164\n"), ("pain", "156\n")]
+things = [("mine", "73\n"), 
+          ("maison", "115\n"), 
+          ("charbon", "75\n"), 
+          ("voiture", "25\n"), 
+          ("père", "164\n"), 
+          ("pain", "156\n")]
 (name_thing, expected_stdout) = random.choice(things)
 ==
 
