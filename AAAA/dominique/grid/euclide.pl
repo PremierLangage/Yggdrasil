@@ -43,7 +43,13 @@ random.shuffle(sortlist.items)
 
 # FORM
 title = Elements d'Euclide (300 av. J.-C.)
-text = Rangez les Postulats du livre I dans l'ordre classique.
+text ==
+ Rangez les Postulats du livre I dans l'ordre classique.
+
+<quote>the Elements became known to Western Europe via the Arabs and the Moors. There, the Elements became the foundation of mathematical education. More than 1000 editions of the Elements are known. In all probability, it is, next to the Bible, the most widely spread book in the civilization of the Western world. »</quote>
+
+
+==
 form = {{ sortlist|component }}
 
 
