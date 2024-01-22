@@ -34,8 +34,8 @@ random.shuffle(sortlist.items)
 ==
 
 # FORM
-title = Sort List Component
-text = *Drag and Drop the items to sort the list*
+title = Biblical sorting
+text = *Triez dans l'ordfre de création*
 form = {{ sortlist|component }}
 
 
