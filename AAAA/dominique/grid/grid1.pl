@@ -33,7 +33,8 @@ grid.items = [
             'Choice with index 2',
             'Choice with index 3',
         ]
-    }    {
+    },
+   {
         'title': '<<trOisème evaluation top',
         'description': 'This feature is preview feature',
         'choices': [
