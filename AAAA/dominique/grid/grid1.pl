@@ -49,8 +49,7 @@ Complet your evaluation
 form==
 {{ grid|component }}
 ==
-
-# EVALUATE THE STUDENT ANSWER
+# Compute the feedback 
 evaluator==
 
 feedback = ""
