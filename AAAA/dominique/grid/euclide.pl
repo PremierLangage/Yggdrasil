@@ -42,8 +42,8 @@ random.shuffle(sortlist.items)
 ==
 
 # FORM
-title = Sort List Component
-text = *Drag and Drop the items to sort the list*
+title = Elements d'Euclide (300 av. J.-C.)
+text = Rangez les Postulats du livre I dans l'ordre classique.
 form = {{ sortlist|component }}
 
 
