@@ -30,9 +30,9 @@ On vous demande de créer les fonctions **A,B,C,D,E,F** avec des comportement di
 
 **A** doit être une fonction qui renvois 177.  
 **B** doit être une fonction avec un parametre qui renvois le double du paramètre.  
-**C** doit être une fonction qui renvois la somme des ces deux paramètres.  
-**D** doit être une fonction qui renvois le produit de ces trois paramètres.  
-**E** doit être une fonction qui renvois la somme et le produit de ces deux paramètres.
+**C** doit être une fonction qui renvois la somme de ses deux paramètres.  
+**D** doit être une fonction qui renvois le produit de ses trois paramètres.  
+**E** doit être une fonction qui renvois la somme et le produit de ces deux paramètres (deux valeurs).
 **F** doit être une fonction qui renvois la liste créée avec ses trois paramètres.
 
 
