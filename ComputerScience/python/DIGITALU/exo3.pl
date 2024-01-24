@@ -4,7 +4,7 @@
 extends = /AAAA/dominique/python/template/pltest2023.pl
 
 
-title = Des fonctions 
+title = Des fonctions et des listes
 
 
 
@@ -30,10 +30,10 @@ text==
 On vous demande de créer les fonctions **A,B,C,D,E,F** avec des comportement différents:
 
 **A** doit être une fonction qui renvois la liste vide.  
-**B** doit être une fonction avec une liste en parametre qui renvois la somme des elements de la liste.
+**B** doit être une fonction avec une liste en parametre qui renvois la somme des elements de la liste.  
 **C** doit être une fonction qui renvois la concatenation de deux listes passées en parametre.  
 **D** doit être une fonction qui renvois pour le parametre n la liste [0,...,n-1].  
-**E** doit être une fonction qui renvois  pour le parametre n la liste [1,...,n].
+**E** doit être une fonction qui renvois  pour le parametre n la liste [1,...,n].  
 **F** doit être une fonction qui renvois  pour les parametres n et p  la liste [1+p,2+p,...,n+p].
 
 
