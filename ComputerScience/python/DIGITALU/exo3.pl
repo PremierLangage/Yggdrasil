@@ -29,56 +29,61 @@ text==
 
 On vous demande de créer les fonctions **A,B,C,D,E,F** avec des comportement différents:
 
-**A** doit être une fonction qui renvois 177.  
-**B** doit être une fonction avec un parametre qui renvois le double du paramètre.  
-**C** doit être une fonction qui renvois la somme des ces deux paramètres.  
-**D** doit être une fonction qui renvois le produit de ces trois paramètres.  
-**E** doit être une fonction qui renvois la somme et le produit de ces deux paramètres.
-**F** doit être une fonction qui renvois la liste créée avec ses trois paramètres.
+**A** doit être une fonction qui renvois la liste vide.  
+**B** doit être une fonction avec une liste en parametre qui renvois la somme des elements de la liste.
+**C** doit être une fonction qui renvois la concatenation de deux listes passées en parametre.  
+**D** doit être une fonction qui renvois pour le parametre n la liste [0,...,n-1].  
+**E** doit être une fonction qui renvois  pour le parametre n la liste [1,...,n].
+**F** doit être une fonction qui renvois  pour les parametres n et p  la liste [1+p,2+p,...,n+p].
 
 
 ==
 
 pltest0==
 >>> A()
-177
+[]
 ==
 
 pltest1==
->>> B(123)
-246
->>> B(0)
+>>> B([1,2,3])
+6
+>>> B([])
 0
+>>> B([4,5])
+9
 ==
 
 
 pltest2==
->>> C(3,4)
-7
->>> C(100,45)
-145
+>>> C([1,2,3],[4,5])
+[1, 2, 3, 4, 5]
+>>> C([1,2],[4,5])
+[1, 2, 4, 5]
 ==
 
 pltest3==
->>> D(2,3,5)
-30
->>> D(7,11,134) == 7*11*134
-True
+>>> D(5)
+[0, 1, 2, 3, 4]
+>>> D(8)
+[0, 1, 2, 3, 4, 5, 6, 7]
 ==
 
 
 pltest4==
->>> E(3,4) == (7,12)
-True
->>> E(11,11) = (22,121)
-True
+>>> E(8)
+[1, 2, 3, 4, 5, 6, 7, 8]
+>>> E(11)
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+==
+
+
 ==
 
 pltest5==
->>> F(1,2,3) == [1,2,3]
-True
->>> F(2,3,1767) == [2,3,1767]
-True
+>>> F(11,3)
+[4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+>>> F(6,6)
+[7, 8, 9, 10, 11, 12]
 ==
 
 
