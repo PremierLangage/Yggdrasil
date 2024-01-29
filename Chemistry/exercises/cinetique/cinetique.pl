@@ -47,7 +47,6 @@ def expected(value, precision):
 try: 
     value = float(response['answer'])
 
-
     if expected(value, 0.02 ):
         grade = (100, "Bonne réponse "+str(ref))
     elif expected(value, 0.05 ):
@@ -57,7 +56,7 @@ try:
 except:
     print(" Beurk ", file=sys.stderr)
     print(traceback.format_exc(), file=sys.stderr)
-    grade = (-1, f"Merci de rentrer un float. {ref}")
+    grade = (-1, f"Merci de rentrer un float.")
 ==
 
 lefeedback==
