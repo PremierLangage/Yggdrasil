@@ -39,7 +39,7 @@ pltest += f"""
 >>> arbre_h = arbre_huffman(occurences_triees)
 >>> encodage = table_encodage(arbre_h)
 >>> code = codage({repr(texte)}, encodage)
->>> decode = decodage(code, encodage)
+>>> decodage(code, encodage)
 {repr(texte)}
 """
 ==
