@@ -55,7 +55,7 @@ try:
 except:
     print(" Beurk ", file=sys.stderr)
     print(traceback.format_exc(), file=sys.stderr)
-    grade = (-1, "Merci de rentrer un float")
+    grade = (-1, f"Merci de rentrer un float. {abs(value-ref)/ref}")
 ==
 
 lefeedback==
