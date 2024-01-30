@@ -239,7 +239,6 @@ def make_form(sample_meta):
     return ans
 
 
-make_next = true
 if make_next:
     make_next=False
     if current_index < number_of_sample:
