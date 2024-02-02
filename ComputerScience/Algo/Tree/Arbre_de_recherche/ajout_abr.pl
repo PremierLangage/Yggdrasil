@@ -16,7 +16,7 @@
 #*****************************************************************************
 
 
-extends= appartient.pl
+extends=/ComputerScience/C/template/std_progC.pl
 
 author=Marc Zipstein & DR
 title=Ajouter dans un arbre binaire de recherche
@@ -45,6 +45,21 @@ int ajoute(Tree *t,int val){
  
  return 0;
 }
+
+==
+
+
+code_before==#|c|
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+typedef struct node{
+  int value;
+  struct node * left;
+  struct node * right;
+}Node, *Tree;
+
+
 
 ==
 
