@@ -37,7 +37,7 @@ typedef struct NOEUD {
 
 typedef struct NOEUD *ARBRE;
 '''
-
+text+= code_before
 
 PL:== */
 
