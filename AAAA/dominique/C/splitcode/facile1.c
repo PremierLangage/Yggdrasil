@@ -63,6 +63,37 @@ int main(int c, char **v){
 
 // PL:==
 
+// PL:beforeB==
+
+varval='valeur'
+varfg='fils_gauche'
+varfd='fils_droit'
+varnoeud='Noeud'
+
+code_before=f'''
+#include <stdio.h>
+#include <stdlib.h>
+
+
+#define VALEUR {varval}
+#define FG  {varfg}
+#define FD  {varfd}
+#define NOEUD {varnoeud}
+
+typedef struct NOEUD {
+    int VALEUR;
+    struct NOEUD *FG;
+    struct NOEUD *FD;
+} NOEUD;
+
+typedef struct NOEUD *ARBRE;
+'''
+
+
+// PL:==
+
+
+
 /* PL:checks_args_stdin==
 [["Test 1", ["11"], ""],
 ["Test Yveline", ["78"], ""],
