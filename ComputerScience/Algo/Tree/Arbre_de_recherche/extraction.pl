@@ -211,9 +211,8 @@ void free(void *dummy){
 
 int main(int argc, char* argv[]){
   Tree t=NULL;
-char *code;
-int x;
-
+  char *code;
+  
 
   build_tree(&t);
  
