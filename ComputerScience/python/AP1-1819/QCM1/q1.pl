@@ -4,7 +4,7 @@ extends=/ComputerScience/python/template/qcm_template.pl
 title=Question 1
 
 
-text=Parmi les conversion suivantes, lesquelles sont licites (autorisées, possible).
+text=Parmi les conversions suivantes, lesquelles sont licites (autorisées, possible).
 
 nb=4
 nbtrues=2
