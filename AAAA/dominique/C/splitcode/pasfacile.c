@@ -168,4 +168,5 @@ QUESTIONS=["Pas de question","Écrire la fonction **int hauteur(Arbre a)**.",
 ]
 
 text = QUESTIONS[VERSION]
+title = "Bande de moule"
 PL:== */
