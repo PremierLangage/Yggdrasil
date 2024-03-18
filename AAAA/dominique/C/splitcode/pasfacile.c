@@ -128,19 +128,18 @@ int main(int argc, char const *argv[])
 
     if (i< 2) { printf("arbre parcourt préfixe : "); printTree(a);}
 
-    switch(FUNCNUM){
-        case 1:
+#if FUNCNUM == 1
             printf("Arbre °%d Hauteur de l'arbre %d\n",i, hauteur(a));
-            break;
-        case 2:
+#fi
+#if FUNCNUM == 2
             printf("Arbre °%d Nombre de feuilles = %d\n",i, nb_feuilles(a));
-            break;
-        case 3:
+#fi
+#if FUNCNUM == 3
             printf("Arbre °%d Nombre de fils uniques = %d\n",i, nb_fils_unique(a));
-            break;
-        case 4:
+#fi
+#if FUNCNUM == 4
             printf("Arbre °%d est strictement binaire: %s\n",i, est_strictement_binaire(a)?" Vrai ":" Faux ");
-            break;
+#fi
     }
     }
 
