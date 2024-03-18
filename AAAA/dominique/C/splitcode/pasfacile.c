@@ -67,7 +67,7 @@ typedef struct noeud {
    int valeur;
    struct noeud * fg, * fd;
 } Noeud, * Arbre;
-Au hasard, une question parmi les suivantes :
+Au hasard, une question parmi les suivantes
 
 PL:== */ 
 
@@ -161,3 +161,5 @@ PL:== */
 import random
 VERSION=randint(1,4)
 cflags.append(f"-DFUNCNUM={VERSION}")
+QUESTIONS=["Pas de question","Écrire la fonction **int hauteur(Arbre a)**.",
+"Écrire la fonction **int nb_feuilles(Arbre a)**
