@@ -164,7 +164,7 @@ QUESTIONS=["Pas de question","Écrire la fonction **int hauteur(Arbre a)**.",
 "Écrire la fonction **int est_strictement_binaire(Arbre a)** qui vérifie que tout les noeuds on un nombre pair de fils."
 ]
 
-code_before += globals()["sol"+str(VERSION)]
+solution = globals()["sol"+str(VERSION)]
 
 text = QUESTIONS[VERSION]
 
