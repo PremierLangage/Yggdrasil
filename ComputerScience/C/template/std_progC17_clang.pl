@@ -37,7 +37,10 @@ nb_attempt=0
 # Place here your favorite C compiler
 compiler="clang"
 # PLace here the compilation flags
-cflags=["-Wall", "-std=c17"]
+if 'cflag' in globals():
+    cflags.extends(["-Wall", "-std=c17"])
+else:
+    cflags=["-Wall", "-std=c17"]
 # Place here library flags
 libflags=[]
 
