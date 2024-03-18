@@ -158,3 +158,6 @@ PL:== */
 
 
 /* PL:beforeA==
+import random
+VERSION=randint(1,4)
+cflags.append(f"-DFUNCNUM={VERSION}")
