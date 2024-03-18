@@ -22,10 +22,8 @@ for k,v in splitcode("sujet.c").items():
     keys += " "+ str(k)
     globals()[k]=v
 
-
-
 #raise Exception(keys)
 
-text = "Prout"
+
 ==
 
