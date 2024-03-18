@@ -24,8 +24,8 @@ for k,v in splitcode("sujet.c").items():
 
 
 
-raise Exception(keys)
+#raise Exception(keys)
 
-
+text = "Prout"
 ==
 
