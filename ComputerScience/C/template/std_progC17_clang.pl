@@ -37,7 +37,7 @@ nb_attempt=0
 # Place here your favorite C compiler
 compiler="clang"
 # PLace here the compilation flags
-if 'cflag' in globals():
+if 'cflags' in globals():
     cflags.extends(["-Wall", "-std=c17","-DHA=2"])
 else:
     cflags=["-Wall", "-std=c17","-DHA=1"]
