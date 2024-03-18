@@ -167,7 +167,6 @@ QUESTIONS=["Pas de question","Écrire la fonction **int hauteur(Arbre a)**.",
 code_before += globals()["sol"+str(VERSION)]
 
 text = QUESTIONS[VERSION]
-title = "Bande de moules"
 
 
 PL:== */
