@@ -40,7 +40,7 @@ compiler="clang"
 if 'cflags' in globals():
     cflags += ["-Wall", "-std=c17","-DHA=2"]
 else:
-    cflags=["-Wall", "-std=c17""]
+    cflags=["-Wall", "-std=c17"]
 # Place here library flags
 libflags=[]
 
