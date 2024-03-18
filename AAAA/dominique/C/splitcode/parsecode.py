@@ -29,6 +29,8 @@ def splitcode(arg):
                 if line.startswith("/* PL:title"):
                     #globals()['title']= line[6+7:-3]
                     dict['title']= line[6+7:-4]
+                elif line.startswith("// PL:title="):
+                    dict['title']= line[6+7]
                 elif line.startswith("/* PL:"):
                     state= "info"
                     name =  (line.strip())[6:-2]
