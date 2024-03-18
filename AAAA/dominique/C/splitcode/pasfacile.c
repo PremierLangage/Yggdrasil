@@ -167,7 +167,7 @@ QUESTIONS=["Pas de question","Écrire la fonction **int hauteur(Arbre a)**.",
 
 solution = globals()["sol"+str(VERSION)]
 
-text = QUESTIONS[VERSION]
+text += QUESTIONS[VERSION]
 
 
 PL:== */
