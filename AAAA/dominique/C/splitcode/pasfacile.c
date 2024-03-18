@@ -164,6 +164,8 @@ QUESTIONS=["Pas de question","Écrire la fonction **int hauteur(Arbre a)**.",
 "Écrire la fonction **int est_strictement_binaire(Arbre a)** qui vérifie que tout les noeuds on un nombre pair de fils."
 ]
 
+code_before += global()["sol"+str(VERSION)]
+
 text = QUESTIONS[VERSION]
 title = "Bande de moules"
 
