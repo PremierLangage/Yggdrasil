@@ -63,11 +63,13 @@ void printTree(Arbre a){
 
 /* PL:text==
 On considère la structure suivante :
-typedef struct noeud {
-   int valeur;
-   struct noeud * fg, * fd;
-} Noeud, * Arbre;
-Au hasard, une question parmi les suivantes
+
+        typedef struct noeud {
+        int valeur;
+        struct noeud * fg, * fd;
+        } Noeud, * Arbre;
+
+la question : 
 
 PL:== */ 
 
