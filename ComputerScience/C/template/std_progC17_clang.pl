@@ -38,9 +38,9 @@ nb_attempt=0
 compiler="clang"
 # PLace here the compilation flags
 if 'cflags' in globals():
-    cflags.extends(["-Wall", "-std=c17","-DHA=2"])
+    cflags += ["-Wall", "-std=c17","-DHA=2"]
 else:
-    cflags=["-Wall", "-std=c17","-DHA=1"]
+    cflags=["-Wall", "-std=c17""]
 # Place here library flags
 libflags=[]
 
