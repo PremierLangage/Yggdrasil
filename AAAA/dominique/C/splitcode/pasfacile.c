@@ -61,7 +61,7 @@ void printTree(Arbre a){
 
 // PL:==
 
-/* PL:statement=
+/* PL:text=
 On considère la structure suivante :
 typedef struct noeud {
    int valeur;
@@ -167,5 +167,5 @@ QUESTIONS=["Pas de question","Écrire la fonction **int hauteur(Arbre a)**.",
 "Écrire la fonction **int est_strictement_binaire(Arbre a)** qui vérifie que tout les noeuds on un nombre pair de fils."
 ]
 
-text += QUESTIONS[VERSION]
+text = QUESTIONS[VERSION]
 PL:== */
