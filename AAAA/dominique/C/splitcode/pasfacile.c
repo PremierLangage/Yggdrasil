@@ -151,7 +151,7 @@ int main(int argc, char const *argv[])
 
 
 /* PL:checks_args_stdin==
-[["Test1" ,["12"]],"stdin"], ["Test2" ,["33"]],"stdin"],["Test3" ,["3945"]],"stdin"],["Test4" ,["1418"]],"stdin"]]
+[["Test1" ,["12"],"stdin"], ["Test2" ,["33"],"stdin"],["Test3" ,["3945"],"stdin"],["Test4" ,["1418"],"stdin"]]
 PL:== */
 
 
