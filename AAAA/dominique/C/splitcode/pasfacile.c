@@ -69,7 +69,7 @@ On considère la structure suivante :
         struct noeud * fg, * fd;
         } Noeud, * Arbre;
 
-vous devez : 
+vous devez seulement : 
 
 PL:== */ 
 
