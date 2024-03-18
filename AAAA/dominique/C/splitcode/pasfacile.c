@@ -158,7 +158,7 @@ PL:== */
 /* PL:beforeB==
 import random
 VERSION=random.randint(1,4)
-cflags=[f"-DFUNCNUM={VERSION}","-DHX=2"]
+cflags=[f"-DFUNCNUM={VERSION}"]
 QUESTIONS=["Pas de question","Écrire la fonction **int hauteur(Arbre a)**.",
 "Écrire la fonction **int nb_feuilles(Arbre a)** qui compte le nombre de noeuds qui sont des feuilles.",
 "Écrire la fonction **int nb_fils_unique(Arbre a)** qui compte le nombre de noeuds qui sont des noeuds interne à un seul fils.",
