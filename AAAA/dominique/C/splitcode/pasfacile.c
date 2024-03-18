@@ -61,7 +61,7 @@ void printTree(Arbre a){
 
 // PL:==
 
-/* PL:text=
+/* PL:text==
 On considère la structure suivante :
 typedef struct noeud {
    int valeur;
