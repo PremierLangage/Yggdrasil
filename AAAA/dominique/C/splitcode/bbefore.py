@@ -50,7 +50,7 @@ if __name__ == "__main__":
         dobuilderclause(beef,dic)
 
     # the before with no suffixes is the last one 
-    if 'beforeB' in dic:
+    if 'beforesplit' in dic:
         dobuilderclause('beforeB',dic)
 
     if 'before' in dic:
