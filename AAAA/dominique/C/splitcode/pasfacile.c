@@ -155,7 +155,7 @@ int main(int argc, char const *argv[])
 PL:== */
 
 
-/* PL:beforeB==
+/* PL:beforesplit==
 import random
 VERSION=random.randint(1,4)
 cflags=[f"-DFUNCNUM={VERSION}"]
