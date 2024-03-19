@@ -51,7 +51,7 @@ if __name__ == "__main__":
 
     # the before with no suffixes is the last one 
     if 'aftersplit' in dic:
-        dobuilderclause('beforeB',dic)
+        dobuilderclause('aftersplit',dic)
 
     if 'before' in dic:
         dobuilderclause('before',dic)
