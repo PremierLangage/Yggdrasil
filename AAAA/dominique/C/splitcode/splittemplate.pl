@@ -24,6 +24,6 @@ for k,v in splitcode("sujet.c").items():
 
 #raise Exception(keys)
 
-
+exec(aftersplit)
 ==
 
