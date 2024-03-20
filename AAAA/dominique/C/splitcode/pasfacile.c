@@ -121,12 +121,21 @@ int est_strictement_binaire(Arbre a){
 // PL:code_after==
 int main(int argc, char const *argv[])
 {
-
+    Arbre a = NULL;
     int test= atoi(argv[1]);
     srand(atoi(argv[2]));
-    for(int i=0;i < 5 ; i++){
-
-    Arbre a = BuildTree(10+rand() % (50*i+1));
+    for(int i=0;i < 1 ; i++){
+        switch(test){
+            case 1: a=NULL; break;
+            case 2: a = malloc(sizeof(Noeud));
+                    a->valeur = rand() % 100;
+                    a->fg = NULL; a->fd = NULL;
+                    break;
+            case 3: a= BuildTree(25);break;
+            case 4: a= BuildTree(100); break;
+            case 5: a= BuildTree(100); break;
+        }
+     
 
     if (i< 2) { printf("arbre parcourt préfixe : "); printTree(a);}
 
