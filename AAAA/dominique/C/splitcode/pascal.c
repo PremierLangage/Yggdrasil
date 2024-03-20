@@ -1,6 +1,6 @@
 
 
-/* PL:title= tableau de pascal  */
+// PL:title= tableau de pascal
 /* PL:text==
 
 Ecrire une fonction **void pascal(int n)** qui affiche le tableau de pascal de taille n.
