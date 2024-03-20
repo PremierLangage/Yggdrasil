@@ -137,7 +137,7 @@ int main(int argc, char const *argv[])
         }
      
 
-    if (i< 2) { printf("arbre parcourt préfixe : "); printTree(a);}
+    if (test==3) { printf("arbre parcourt préfixe : "); printTree(a);}
 
 
 #if FUNCNUM == 1
