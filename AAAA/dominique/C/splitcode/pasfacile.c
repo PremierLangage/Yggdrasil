@@ -161,7 +161,7 @@ int main(int argc, char const *argv[])
 
 
 /* PL:checks_args_stdin==
-[["Test1 vide" ,["1", "12"],"1"], ["Test2 arbre une feuille" ,["2","33"],"2"],["Test3" ,["3","3945"],""],["Test4" ,["4", "1418"],""]]
+[["Test1 vide" ,["1", "12"],"1"], ["Test2 arbre une feuille" ,["2","33"],"2"],["Test3" ,["3","3945"],""],["Test4" ,["4", "1418"],""],["Test4" ,["4", "78"],""]]
 PL:== */
 
 
