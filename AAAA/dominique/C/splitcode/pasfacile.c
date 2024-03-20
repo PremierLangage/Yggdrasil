@@ -122,7 +122,8 @@ int est_strictement_binaire(Arbre a){
 int main(int argc, char const *argv[])
 {
 
-    srand(atoi(argv[1]));
+    int test= atoi(argv[1]);
+    srand(atoi(argv[2]));
     for(int i=0;i < 5 ; i++){
 
     Arbre a = BuildTree(10+rand() % (50*i+1));
