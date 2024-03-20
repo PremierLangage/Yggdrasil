@@ -23,7 +23,7 @@ for k,v in splitcode("sujet.c").items():
     globals()[k]=v
 
 #raise Exception(keys)
-
-exec(aftersplit)
+if 'aftersplit' in globals() :
+    exec(aftersplit)
 ==
 
