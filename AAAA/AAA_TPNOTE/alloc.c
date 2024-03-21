@@ -8,6 +8,7 @@
 
 // PL:code_before==
 #include <stdio.h>
+#include <stdlib.h>
 
 
 typedef struct noeud {
@@ -19,19 +20,21 @@ typedef struct _arbre {
    Noeud * noeuds;
 } Arbre;
 
-#define malloc dralloc 
-#define realloc drealloc
+
 
 int nbm=0;
 int ma[100];
 void* dralloc(int n){
     ma[nbm++]=n;
-    return (void *) (-1);
+    return (void *) malloc(n);
 }
 void *drealloc(void *p, int n){
-    return malloc(n);
+    ma[nbm++]=n;
+    return realloc(p,n);
 }
 
+#define malloc dralloc 
+#define realloc drealloc
 
 // PL:==
 
@@ -58,6 +61,7 @@ PL:== */
 
 // PL:solution==
 
+
 Arbre *createTree(int n){
     Arbre *a = (Arbre *)malloc(sizeof(Arbre));
     a->taille = n;
@@ -73,13 +77,25 @@ Arbre *reallocTree(Arbre *a, int n){
 
 // PL:== 
 
+/* PL:badsoluce==
+
+
+Arbre *createTree(int n){
+    Arbre *a =0;
+    return a;
+}
+
+Arbre *reallocTree(Arbre *a, int n){
+    return a;
+}
+
+PL:== */
 
 // PL:code_after==
 int main(int argc, char const *argv[])
 {
     Arbre *a = createTree(10);
     a = reallocTree(a,20);
-
     if (ma[0]!=sizeof(Arbre) || ma[1]!=10*sizeof(Noeud) || ma[2]!=20*sizeof(Noeud)){
         printf("Erreur d'allocation \n");
     }
@@ -93,8 +109,7 @@ int main(int argc, char const *argv[])
 
 
 /* PL:checks_args_stdin==
-[["Test1 vide" ,["1", "12"],"1"]]
+[["Test allocation" ,[],"1"]]
 PL:== */
-
 
 
