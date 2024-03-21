@@ -14,8 +14,7 @@ typedef struct noeud {
    int f,g;
 } Noeud;
 
-
-typedef struct noeud {
+typedef struct _arbre {
    int valeur;
    Noeud * noeuds;
 } Arbre;
@@ -43,7 +42,7 @@ On considère les structures suivantes pour représenter un arbre binaire:
     int f,g;
     } Noeud;
 
-    typedef struct noeud {
+    typedef struct _arbre {
     int taille;
     Noeud * noeuds;
     } Arbre;
