@@ -6,6 +6,7 @@
 
 
 
+
 // PL:title= Arbres N-aire fils gauche frère droit 
 
 
@@ -43,10 +44,20 @@ PL:== */
 
 // PL:solution==
 
-int nb_impairs(Arbre a){
+int hauteur(Arbre a){
+    int g, d;
     if (!a)
-        return 0;
-    return (a->valeur%2) + nb_impairs(a->fils) + nb_impairs(a->frere);
+        return -1;
+    g = hauteur(a->fils);
+    Arbre f = a->frere;
+    int max= -1;
+    while (f){
+        d = hauteur(f->frere);
+        if (d > max)
+            max = d;
+        f = f->frere;
+    }
+    return 1 + ((g > max)? g: max);
 }
 
 
@@ -55,12 +66,14 @@ int nb_impairs(Arbre a){
 /* PL:badsoluce==
 
 
-int nb_impairs(Arbre a){
+int hauteur(Arbre a){
+    int g, d;
     if (!a)
-        return 0;
-    return 1+ nb_impairs(a->fils) + nb_impairs(a->frere);
+        return -1;
+    g = hauteur(a->fils);
+    d = hauteur(a->frere);
+    return 1 + ((g > d)? g: d);
 }
-
 PL:== */
 
 // PL:code_after==
@@ -98,12 +111,12 @@ int main(int argc, char const *argv[])
     switch(atoi(argv[1])){
         case 1: 
             a = NULL;
-            printf("Nombre de valeurs impairs %d\n",nb_impairs(a));
+            printf("Hauteur d'un arbre vide %d\n",hauteur(a));
             break;
         case 2:
             srand(atoi(argv[2]));
             a = BuildRandomTree(atoi(argv[3]));
-            printf("Nombre de valeurs impairs %d\n",nb_impairs(a));
+            printf("Hauteur d'un arbre %d\n",hauteur(a));
             break;
     }
 
