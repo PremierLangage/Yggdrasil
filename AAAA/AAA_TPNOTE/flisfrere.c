@@ -23,17 +23,18 @@ typedef struct noeud {
 
 /* PL:text==
 On considère la structure  suivante pour représenter un arbre N-aire:
+
     typedef struct noeud {
     int valeur;
     struct noeud * fils, * frere;
     } Noeud, * Arbre;
 
-L'idée est que chaque noeud a un fils ainé et des frères cad des noeuds qui ont le même père.
+L'idée est que chaque noeud a un fils ainé et ce fils a des frères cad des noeuds qui ont le même père.
 
 vous devez ecrire la fonction suivante : 
 Compter le nombre de noeuds ayant une valeur impaire dans l'arbre.
-
     int nb_impairs(Arbre a); 
+
 
 PL:== */ 
 
