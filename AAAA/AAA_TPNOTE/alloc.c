@@ -40,18 +40,14 @@ On considère les structures suivantes pour représenter un arbre binaire:
     int f,g;
     } Noeud;
 
-
     typedef struct noeud {
     int taille;
     Noeud * noeuds;
     } Arbre;
 
 
-vous devez seulement ecrire une fonction 
-
-Arbre *createTree(int n) qui alloue un arbre de taille N .
-et une fonction
-Arbre *reallocTree(Arbre *a, int n) qui réalloue a la taille N l'arbre passé en parametre.
+vous devez seulement ecrire une fonction **Arbre *createTree(int n)** qui alloue un arbre de taille N .
+et une fonction **Arbre *reallocTree(Arbre *a, int n)** qui réalloue à la taille N l'arbre passé en parametre.
 
 PL:== */ 
 
