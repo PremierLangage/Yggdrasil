@@ -96,13 +96,13 @@ int nb_feuilles(Arbre a){
 // PL:== 
 
 // PL:sol3==
-int nb_fils_unique(Arbre a){
+int nb_fils_uniques(Arbre a){
    if (!a)
        return 0;
    if (a->fg && a->fd)
-       return nb_fils_unique(a->fg) + nb_fils_unique(a->fd);
+       return nb_fils_uniques(a->fg) + nb_fils_uniques(a->fd);
    if (a->fg || a->fd)
-       return 1 + nb_fils_unique(a->fg) + nb_fils_unique(a->fd);
+       return 1 + nb_fils_uniques(a->fg) + nb_fils_uniques(a->fd);
    else
        return 0;
 }
@@ -147,7 +147,7 @@ int main(int argc, char const *argv[])
             printf("Arbre °%d Nombre de feuilles = %d\n",i, nb_feuilles(a));
 #endif
 #if FUNCNUM == 3
-            printf("Arbre °%d Nombre de fils uniques = %d\n",i, nb_fils_unique(a));
+            printf("Arbre °%d Nombre de fils uniques = %d\n",i, nb_fils_uniques(a));
 #endif
 #if FUNCNUM == 4
             printf("Arbre °%d est strictement binaire: %s\n",i, est_strictement_binaire(a)?" Vrai ":" Faux ");
@@ -171,7 +171,7 @@ VERSION=random.randint(1,4)
 cflags=[f"-DFUNCNUM={VERSION}"]
 QUESTIONS=["Pas de question","Écrire la fonction **int hauteur(Arbre a)**.",
 "Écrire la fonction **int nb_feuilles(Arbre a)** qui compte le nombre de noeuds qui sont des feuilles.",
-"Écrire la fonction **int nb_fils_unique(Arbre a)** qui compte le nombre de noeuds qui sont des noeuds interne à un seul fils.",
+"Écrire la fonction **int nb_fils_uniques(Arbre a)** qui compte le nombre de noeuds qui sont des noeuds internes à un seul fils.",
 "Écrire la fonction **int est_strictement_binaire(Arbre a)** qui vérifie que tout les noeuds on un nombre pair de fils."
 ]
 
