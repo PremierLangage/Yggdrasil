@@ -15,7 +15,7 @@ typedef struct noeud {
 } Noeud;
 
 typedef struct _arbre {
-   int valeur;
+    int taille;
    Noeud * noeuds;
 } Arbre;
 
@@ -95,5 +95,6 @@ int main(int argc, char const *argv[])
 /* PL:checks_args_stdin==
 [["Test1 vide" ,["1", "12"],"1"]]
 PL:== */
+
 
 
