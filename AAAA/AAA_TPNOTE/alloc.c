@@ -20,13 +20,16 @@ typedef struct noeud {
    Noeud * noeuds;
 } Arbre;
 
+#define malloc dralloc 
+#define realloc drealloc
+
 int nbm=0;
 int ma[100];
-void* malloc(int n){
+void* dralloc(int n){
     ma[nbm++]=n;
     return (void *) (-1);
 }
-void *realloc(void *p, int n){
+void *drealloc(void *p, int n){
     return malloc(n);
 }
 
