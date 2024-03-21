@@ -109,7 +109,7 @@ int main(int argc, char const *argv[])
 
 
 /* PL:checks_args_stdin==
-[["Test allocation" ,[],"1"]]
+[["Test allocation" ,[],""]]
 PL:== */
 
 
