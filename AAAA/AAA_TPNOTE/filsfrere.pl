@@ -6,6 +6,6 @@ builder =@ bbefore.py
 
 @ filsfrere.c [sujet.c]
 
-title = Allocation 
+title = Arbre fils gauche, frère droit 
 
 
