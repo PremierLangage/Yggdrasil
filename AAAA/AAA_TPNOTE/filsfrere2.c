@@ -38,6 +38,7 @@ vous devez ecrire la fonction suivante :
     int hauteur(Arbre a); 
 
 Qui retourne la plus grande distance entre une feuille et la racine.
+La branche de la famille avec le plus de générations.
 
 
 PL:== */ 
