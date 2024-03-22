@@ -33,6 +33,12 @@ void *drealloc(void *p, int n){
     return realloc(p,n);
 }
 
+void *cdrealloc(size_t x, size_t y){
+    ma[nbm++]=x*y;
+    return calloc(x,y);
+}
+
+#define calloc cdralloc 
 #define malloc dralloc 
 #define realloc drealloc
 
