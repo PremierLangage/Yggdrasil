@@ -28,6 +28,3 @@ def kendall_tau(order):
     n = len(order)
     tau,_ = kendalltau(order, list(range(n)))
     return int(round(max([0,tau])*100))
-
-
-
