@@ -1,0 +1,74 @@
+
+# AMC-TXT source
+PaperSize: A4
+Lang: FR
+CompleteMulti: 0
+#DefaultScoringM: haut=2
+PackageOptions: noshufflegroups
+LaTex-Preambule: \geometry{hmargin=2cm,headheight=2cm,headsep=.3cm,footskip=1cm,top=2.5cm,bottom=2cm}
+LaTeX-BeginDocument: \def\multiSymbole{$ $}
+Title: Evaluation de SVT n°4 : Régimes et équilibres alimentaires
+
+Presentation: Colorier en noir la case correspondante à la proposition correcte pour chaque phrase.
+
+*([shuffle=true,group=p1]PARTIE I : Quelques connaissances du cours
+
+**[columns=2]Les aliments contiennent : 
++ Des lipides
+- Des acides
++ Des sels minéraux
+
+**[columns=2]La dépense énergétique minimum de notre corps est : 
++ Le métabolisme de base
+- Les besoins énergétiques
+- L'IMC
+
+**[columns=2]Les aliments nous apportent de : 
++ La matière
+- Du diabète 
++ De l'énergie
+
+**[columns=2]Les besoins énergétiques d’une personne varient suivant : 
++ Le sexe
++ Les activités physiques
+- Les aliments consommés
+
+**[columns=2]Manger équilibré signifie : 
++ Equilibrer nos apports et nos dépenses
+- Manger ce qui nous fait envie
+- Manger plus que ce qu’on dépense
+
+**[columns=2]Manger en excès par rapport à ses besoins peut aboutir à : 
+- Des carences
++ Des maladies cardio-vasculaires
+- Un manque de nutriments
+
+**[columns=2]L'IMC signifie : 
+- Indice de Maladies cardio-vasculaires
++ Indice de Masse Corporelle
+- Indice de Matière et de Composition
+
+*)
+
+*([shuffle=true,group=p2]PARTIE II : Le gouter de Vanessa
+
+
+**[columns=2]Dans le gouter de Vanessa, l'aliment le plus énergétique est :
+- les pruneaux
++ Les biscuits
+- les deux sont identiques.
+
+
+**[columns=2]Par rapport aux biscuits, les pruneaux contiennent  : 
++ moins de protides
+- plus de glucides
++ moins de lipides
+
+
+
+**[columns=2]Les dépenses énergétiques journalières d'une adolescente sont en moyenne de 10 000 kJ. Vanessa a consommé 3 200 kJ au petit-déjeuner, 3 500 kJ à midi et 2 400 kJ au diner. Elle a donc mangé équilibré :
+- Faux
++ Vrai
+
+*)
+
