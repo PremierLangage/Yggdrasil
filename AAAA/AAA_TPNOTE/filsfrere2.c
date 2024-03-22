@@ -33,9 +33,7 @@ On considère la structure  suivante pour représenter un arbre N-aire:
 
 L'idée est que chaque noeud a un fils ainé et ce fils a des frères cad des noeuds qui ont le même père.
 
-vous devez ecrire la fonction suivante : 
-
-    int hauteur(Arbre a); 
+vous devez ecrire la fonction suivante :   ** int hauteur(Arbre a); **
 
 Qui retourne la plus grande distance entre une feuille et la racine.
 La branche de la famille avec le plus de générations.
