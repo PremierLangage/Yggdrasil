@@ -5,9 +5,7 @@ title= Fichier de questions
 
 onepergroup=true
 
-text==
-énoncé du QCM 
-==
+text=
 
 questions=
 @ question1.txt
