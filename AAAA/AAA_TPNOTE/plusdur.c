@@ -175,6 +175,9 @@ void affiche_niveau(Arbre a, int n){
 /* PL:text4==
 Ecrire la fonction **int est_complet(Arbre a)** qui renvoie 1 si l'arbre est complet, 0 sinon.
 
+On appellera arbre binaire complet tout arbre qui est localement complet et dont toutes les feuilles ont la même profondeur.
+Un arbre est localement complet si il n'a pas de noeuds avec un seul fils.
+
 PL:== */
 // PL:sol4==
 int est_complet_aux(Arbre a){
