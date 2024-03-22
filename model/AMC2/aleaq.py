@@ -139,10 +139,4 @@ def buildquestion(questionp):
         print("Problème dans votre question ", str(question))
         print(e)
         raise e
-    
-
-
-
-
-
 
