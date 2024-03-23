@@ -123,7 +123,7 @@ int main(int argc, char const *argv[])
         exit(1);
     }
 
-        printf("Allocation correcte\n");
+    printf("Allocation correcte\n");
     return 0;
 }
 
