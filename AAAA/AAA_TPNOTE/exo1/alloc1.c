@@ -81,7 +81,7 @@ Arbre *createTree(int n){
 Arbre *reallocTree(Arbre *a, int n){
     a->filsgauche =  (int *)realloc(a->filsgauche, n*sizeof(Arbre)) ;
     a->filsdroits =  (int *)realloc(a->filsdroits, n*sizeof(Arbre)) ;
-    a->valeurs =  (int *)realloc(a->valeurs, n*sizeof(Arbre)) ;
+    a->valeurs =     (int *)realloc(a->valeurs, n*sizeof(Arbre)) ;
     a->current = n;
     a->taille = n;
     return a;
