@@ -72,7 +72,7 @@ PL:== */
 Arbre *createTree(int n){
     Arbre *a = (Arbre *)malloc(sizeof(Arbre));
     a->taille = n;
-    a->current=0;
+    a->currentSize=0;
     a->filsgauche =  (int *)calloc(n,sizeof(Arbre)) ;
     a->filsdroits =  (int *)calloc(n,sizeof(Arbre)) ;
     a->valeurs =  (int *)calloc(n,sizeof(Arbre)) ;
@@ -83,7 +83,7 @@ Arbre *reallocTree(Arbre *a, int n){
     a->filsgauche =  (int *)realloc(a->filsgauche, n*sizeof(Arbre)) ;
     a->filsdroits =  (int *)realloc(a->filsdroits, n*sizeof(Arbre)) ;
     a->valeurs =     (int *)realloc(a->valeurs, n*sizeof(Arbre)) ;
-    a->current = n;
+    a->currentSize = n;
     a->taille = n;
     return a;
 }
