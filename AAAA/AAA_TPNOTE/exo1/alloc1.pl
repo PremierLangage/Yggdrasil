@@ -6,7 +6,7 @@
 
 
 
-extends= splittemplate.pl
+extends= ../splittemplate.pl
 
 builder =@ bbefore.py
 
