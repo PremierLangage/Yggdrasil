@@ -116,7 +116,7 @@ int main(int argc, char const *argv[])
         if (ma[i]!=sizeof(int)*10){
         printf("Erreur d'allocation \n");
         exit(1);
-    }
+        }
     }
     for(i=4;i<7;i++){
         if (ma[i]!=sizeof(int)*20){
