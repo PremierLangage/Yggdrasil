@@ -8,7 +8,7 @@
 
 extends= ../splittemplate.pl
 
-builder =@ bbefore.py
+builder =@ ../bbefore.py
 
 @ alloc1.c [sujet.c]
 
