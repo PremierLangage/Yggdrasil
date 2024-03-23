@@ -108,8 +108,19 @@ int main(int argc, char const *argv[])
 {
     Arbre *a = createTree(10);
     a = reallocTree(a,20);
-    if (ma[0]!=sizeof(Arbre) || ma[1]!=10*sizeof(Noeud) || ma[2]!=20*sizeof(Noeud)){
+    if (ma[0]!=sizeof(Arbre))
         printf("Erreur d'allocation \n");
+        exit(1);
+    }
+    for(int i=1;i<4;i++){
+        if (ma[i]!=sizeof(int)*10)
+        printf("Erreur d'allocation \n");
+        exit(1);
+    }
+    for(i=4;i<7;i++){
+        if (ma[i]!=sizeof(int)*10)
+        printf("Erreur d'allocation \n");
+        exit(1);
     }
     else{
         printf("Allocation correcte\n");
