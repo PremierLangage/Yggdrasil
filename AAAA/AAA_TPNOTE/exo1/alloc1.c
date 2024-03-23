@@ -122,9 +122,8 @@ int main(int argc, char const *argv[])
         printf("Erreur d'allocation \n");
         exit(1);
     }
-    else{
+
         printf("Allocation correcte\n");
-    }
     return 0;
 }
 
