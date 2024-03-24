@@ -107,7 +107,7 @@ qui affiche les noeuds de l'arbre au niveau n.
 
 Niveau = distance racine -> noeud.
 
-Remarque: dans certains test la fonction 
+Remarque: dans certains test la fonction printTree est utilisé pour aficher les arbres.
 
     void printTree(Arbre a){
         if (!a)
@@ -118,7 +118,7 @@ Remarque: dans certains test la fonction
         printTree(a->fd);
         }
     }
-est utilisé pour afficher les arbres. 
+
 
 PL:== */ 
 
