@@ -126,9 +126,9 @@ int main(int argc, char const *argv[])
 
 /* PL:checks_args_stdin==
 [["Test vide" ,["1"],""],
-["Test pas grand" ,["1","1111","2"],""],
-["Test plus grand" ,["1","111","100"],""],
-["Test encore plus grand" ,["1","888","1000"],""],
+["Test pas grand" ,["2","1111","2"],""],
+["Test plus grand" ,["2","111","100"],""],
+["Test encore plus grand" ,["2","888","1000"],""],
 ]
 PL:== */
 
