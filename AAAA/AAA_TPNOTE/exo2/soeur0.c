@@ -31,13 +31,15 @@ On considère la structure  suivante pour représenter un arbre N-aire:
     struct noeud * fille, * soeur;
     } Noeud, * Arbre;
 
-L'idée est que chaque noeud a une fille ainée et cette fille a des soeurs cad des noeuds qui ont la même mère.
+L'idée est que chaque noeud a une fille ainée et cette fille a des soeurs 
+cad des noeuds qui ont la même mère.
 
-vous devez ecrire la fonction suivante : 
+Vous devez écrire la fonction suivante : 
 
    int nombre_soeurs(Arbre a); 
 
 Qui retourne la somme des nombres de soeurs de chaque fille ainée.
+
 
 PL:== */ 
 
