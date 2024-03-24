@@ -120,7 +120,7 @@ int main(int argc, char const *argv[])
 
     printf("int t[]={");
     for(int i=0;i<10; i++)
-        printf("%d, ",i,ma[i]);
+        printf("%d, ",ma[i]);
     printf("};");
 
     if (ma[0]!=sizeof(Arbre)){
