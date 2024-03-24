@@ -103,7 +103,9 @@ On considère la structure suivante :
 
 
 Écrire une fonction **void affiche_niveau(Arbre a, int n)**
-qui affiche les noeuds de l'arbre au niveau n. Niveau distance racine -> noeud.
+qui affiche les noeuds de l'arbre au niveau n. 
+
+Niveau = distance racine -> noeud.
 
 Remarque: dans certains test la fonction 
 
