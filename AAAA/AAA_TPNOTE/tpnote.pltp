@@ -24,8 +24,8 @@ Dans certains exercice pour vous aider les arbres utilisés sont affiché (quand
 
 ==
 
-@ alloc.pl
-@ filsfrere.pl
-@ filsfrere2.pl
-@ pasfacile.pl
-@ plusdur.pl
+@ exo1/alloc.pl
+@ exo2/filsfrere.pl
+@ exo3/filsfrere2.pl
+@ exo4/pasfacile.pl
+# @ plusdur.pl
