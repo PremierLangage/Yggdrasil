@@ -116,13 +116,14 @@ est utilisé pour afficher les arbres pour vous aider au débugage.
 
 PL:== */ 
 
-/* PL:text1==
+/* PL:text==
 Écrire une fonction **int plus_courte_branche(Arbre a)** 
 qui renvoie la longueur de la branche la plus courte de l'arbre.
 
 Celle-ci vas d'une feuille a la racine. 
 
 PL:== */ 
+
 // PL:solution==
 int plus_courte_branche(Arbre a){
    int g, d;
@@ -138,66 +139,6 @@ int plus_courte_branche(Arbre a){
        return d + 1;
    return 1 + ((g < d)? g: d); /* Deux fils */
 }
-// PL:== 
-/* PL:text2==
-Écrire une fonction **int affiche_hauteur(Arbre a, int h)** 
-qui affiche les noeuds de l'arbre à la hauteur h.
-Hauteur = distance aux feuilles. 
-PL:== */ 
-// PL:sol2==
-int affiche_hauteur(Arbre a, int h){
-   int g, d, lh;
-   if (!a){
-       return -1;
-   }
-   g = affiche_hauteur(a->fg, h);
-   d = affiche_hauteur(a->fd, h);
-   lh = 1+ ((g > d)? g: d);
-   if (h == lh)
-       printf("%d ", a->valeur);
-    return lh;
-}
-
-
-/* PL:text3==
-Écrire une fonction **void affiche_niveau(Arbre a, int n)**
-qui affiche les noeuds de l'arbre au niveau n.
-PL:== */ 
-// PL:sol3==
-void affiche_niveau(Arbre a, int n){
-   if (!a || n < 0)
-       return ;
-   if (n == 0){
-       printf("%d ", a->valeur);
-       return ;
-   }
-   affiche_niveau(a->fg, n - 1);
-   affiche_niveau(a->fd, n - 1);
-}
-
-// PL:== 
-/* PL:text4==
-Ecrire la fonction **int est_complet(Arbre a)** qui renvoie 1 si l'arbre est complet, 0 sinon.
-
-On appellera arbre binaire complet tout arbre qui est localement complet et dont toutes les feuilles ont la même profondeur.
-Un arbre est localement complet si il n'a pas de noeuds avec un seul fils.
-
-PL:== */
-// PL:sol4==
-int est_complet_aux(Arbre a){
-   int g, d;
-   if (!a)
-       return -1;
-   g = est_complet_aux(a->fg);
-   d = est_complet_aux(a->fd);
-   if (g == -2 || d == -2 || g != d)
-       return -2;
-   return d + 1;
-}
-int est_complet(Arbre a){
-   return est_complet_aux(a) != -2;
-}
-
 // PL:== 
 
 // PL:code_after==
@@ -238,28 +179,8 @@ int main(int argc, char const *argv[])
     
 
 
-#if FUNCNUM == 1
-            printf("Arbre %d la plus courte branche est de longueur %d\n",i, plus_courte_branche(a));
-
-#endif
-#if FUNCNUM == 2
-        if (taille > 20) a=BuildTree(taille,1);
-        printf("\nArbre °%d Taille %d ",i, taille);
-        printf("\nNiveau %d : ",i);
-        affiche_niveau(a,i);
-
-#endif
-#if FUNCNUM == 3
-            printf("\nArbre °%d Taille %d ",i, taille);
-            printf("\nHauteur %d : ",i);
-            affiche_hauteur(a,i);
-#endif
-#if FUNCNUM == 4
-            printf("Arbre °%d est complet: %s\n",i, est_complet(a)?" Vrai ":" Faux ");
-#endif
-
-    }
-printf("\n");
+    printf("Arbre %d la plus courte branche est de longueur %d\n",i, plus_courte_branche(a));
+    printf("\n");
     return 0;
 }
 
@@ -272,14 +193,6 @@ PL:== */
 
 
 /* PL:aftersplit==
-import random
-VERSION=random.randint(1,4)
-cflags=[f"-DFUNCNUM={VERSION}"]
-
-solution = globals()["sol"+str(VERSION)]
-
-text += globals()["text"+str(VERSION)]
-statement = text
 
 PL:== */
 
