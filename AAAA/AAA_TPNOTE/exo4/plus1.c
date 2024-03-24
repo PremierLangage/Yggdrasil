@@ -234,7 +234,7 @@ int main(int argc, char const *argv[])
     }
     
 
-
+#define FUNCNUM 2
 #if FUNCNUM == 1
             printf("Arbre %d la plus courte branche est de longueur %d\n",i, plus_courte_branche(a));
 
