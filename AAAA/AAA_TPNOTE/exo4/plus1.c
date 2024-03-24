@@ -239,14 +239,14 @@ int main(int argc, char const *argv[])
             printf("Arbre %d la plus courte branche est de longueur %d\n",i, plus_courte_branche(a));
 
 #endif
-#if FUNCNUM == 2
+#if FUNCNUM == 3
         if (taille > 20) a=BuildTree(taille,1);
         printf("\nArbre °%d Taille %d ",i, taille);
         printf("\nNiveau %d : ",i);
         affiche_niveau(a,i);
 
 #endif
-#if FUNCNUM == 3
+#if FUNCNUM == 2
             printf("\nArbre °%d Taille %d ",i, taille);
             printf("\nHauteur %d : ",i);
             affiche_hauteur(a,i);
