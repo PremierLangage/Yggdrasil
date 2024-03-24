@@ -154,7 +154,7 @@ int affiche_hauteur(Arbre a, int h){
        printf("%d ", a->valeur);
     return lh;
 }
-
+// PL:== 
 
 /* PL:text3==
 Écrire une fonction **void affiche_niveau(Arbre a, int n)**
@@ -220,42 +220,24 @@ int main(int argc, char const *argv[])
         return 1;
     }
     srand(atoi(argv[1]));
-    int taille=1;
-    Arbre a;
-    for(int i=0;i < 5 ; i++){
-        taille = (i+1)*10 + rand() % 10;
-    if (i==0) a= unArbre();
-    else a = BuildTree(taille,1);
+    int taille=2;
+    int i=atoi(argv[1]);
+    Arbre a=NULL;
+    if (i==0) a= NULL;
+    else if (i==1) a= unArbre();
+    else a = BuildTree(taille * (5*i),i % 2);
 
    if (taille < 20) 
     { printf("\nArbre °%d parcours préfixe : ",i);
      printTree(a);
      printf("\n");
     }
-    
+    printf("\nArbre °%d Taille %d ",i, taille);
+    printf("\nNiveau %d : ",i);
+    affiche_niveau(a,i);
 
 
-#if FUNCNUM == 1
-            printf("Arbre %d la plus courte branche est de longueur %d\n",i, plus_courte_branche(a));
 
-#endif
-#if FUNCNUM == 2
-        if (taille > 20) a=BuildTree(taille,1);
-        printf("\nArbre °%d Taille %d ",i, taille);
-        printf("\nNiveau %d : ",i);
-        affiche_niveau(a,i);
-
-#endif
-#if FUNCNUM == 3
-            printf("\nArbre °%d Taille %d ",i, taille);
-            printf("\nHauteur %d : ",i);
-            affiche_hauteur(a,i);
-#endif
-#if FUNCNUM == 4
-            printf("Arbre °%d est complet: %s\n",i, est_complet(a)?" Vrai ":" Faux ");
-#endif
-
-    }
 printf("\n");
     return 0;
 }
@@ -264,14 +246,14 @@ printf("\n");
 
 
 /* PL:checks_args_stdin==
-[["Test1" ,["12"],""], ["Test2" ,["33"],""],["Test3" ,["3945"],""],["Test4" ,["1418"],""]]
+[["Test arbre vide " ,["0"],""], ["Test 8 Noeud" ,["1"],""],["Test " ,["2"],""],["Test 125" ,["3"],""],["Test plus" ,["4"],""]]
 PL:== */
 
 
 /* PL:aftersplit==
 import random
-VERSION=random.randint(1,4)
-cflags=[f"-DFUNCNUM={VERSION}"]
+VERSION=2
+
 
 solution = globals()["sol"+str(VERSION)]
 
