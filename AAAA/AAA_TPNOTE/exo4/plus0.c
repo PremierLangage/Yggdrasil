@@ -148,7 +148,7 @@ Arbre unArbre(){
                 cn(3,cn(1,NULL,NULL),NULL), // un fils + une feuille Niveau 2 et 3
                 cn(7,NULL,NULL)), // une feuille Niveau 2 Hauteur 0 
             cn(15, // Noeud a 2 fils Niveau 1 Hauteur 1
-                cn(12,NULL,NULL), // une feuille    Niveau 2 Hauteur 0
+                cn(12,NULL,cn(8,NULL,NULL)), // une feuille    Niveau 2 Hauteur 0
                 cn(20,NULL,NULL))  // une feuille   Niveau 2 Hauteur 0
                 );
 }
