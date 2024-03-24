@@ -224,7 +224,7 @@ int main(int argc, char const *argv[])
     int i=atoi(argv[1]);
     Arbre a;
     if (i==0) a= unArbre();
-    else a = BuildTree(taille * (5*i),1);
+    else a = BuildTree(taille * (5*i),i % 2);
 
    if (taille < 20) 
     { printf("\nArbre °%d parcours préfixe : ",i);
