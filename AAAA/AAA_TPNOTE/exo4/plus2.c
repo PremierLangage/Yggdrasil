@@ -124,47 +124,6 @@ est utilisé pour afficher les arbres.
 
 PL:== */ 
 
-/* PL:text1==
-Écrire une fonction **int plus_courte_branche(Arbre a)** 
-qui renvoie la longueur de la branche la plus courte de l'arbre.
-PL:== */ 
-// PL:sol1==
-int plus_courte_branche(Arbre a){
-   int g, d;
-   if (!a)
-       return -1;
-    if(!a->fg && !a->fd)
-        return 0;
-   g = plus_courte_branche(a->fg);
-   d = plus_courte_branche(a->fd);
-   if (-1 == d) /* Une feuille ou un unique fils gauche */
-       return g + 1;
-   if (-1 == g) /* Un unique fils droit */
-       return d + 1;
-   return 1 + ((g < d)? g: d); /* Deux fils */
-}
-// PL:== 
-/* PL:text2==
-Écrire une fonction **int affiche_hauteur(Arbre a, int h)** 
-qui affiche les noeuds de l'arbre à la hauteur h.
-Hauteur = distance aux feuilles. 
-PL:== */ 
-// PL:sol2==
-int affiche_hauteur(Arbre a, int h){
-   int g, d, lh;
-   if (!a){
-       return -1;
-   }
-   g = affiche_hauteur(a->fg, h);
-   d = affiche_hauteur(a->fd, h);
-   lh = 1+ ((g > d)? g: d);
-   if (h == lh)
-       printf("%d ", a->valeur);
-    return lh;
-}
-// PL:== 
-
-
 // PL:solution==
 void affiche_niveau(Arbre a, int n){
    if (!a || n < 0)
@@ -240,10 +199,7 @@ int main(int argc, char const *argv[])
     printf("\nArbre °%d Taille %d ",i, taille);
     printf("\nNiveau %d : ",i);
     affiche_niveau(a,i);
-
-
-
-printf("\n");
+    printf("\n");
     return 0;
 }
 
@@ -255,15 +211,4 @@ printf("\n");
 PL:== */
 
 
-/* PL:aftersplit==
-import random
-VERSION=2
-
-
-solution = globals()["sol"+str(VERSION)]
-
-text += globals()["text"+str(VERSION)]
-statement = text
-
-PL:== */
 
