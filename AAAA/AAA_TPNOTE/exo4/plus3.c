@@ -125,10 +125,8 @@ Remarque: dans certains test la fonction printTree est utilisé pour aficher les
 PL:== */ 
 
 
-/* PL:text4==
 
-PL:== */
-// PL:sol4==
+// PL:solution==
 int est_complet_aux(Arbre a){
    int g, d;
    if (!a)
@@ -180,10 +178,11 @@ int main(int argc, char const *argv[])
      printTree(a);
      printf("\n");
     }
-    printf("\nArbre °%d Taille %d ",i, taille);
-    printf("\nNiveau %d : ",i);
-    affiche_niveau(a,i);
-    printf("\n");
+    printf("\nl' Arbre °%d Taille %d ",i, taille);
+    if (est_complet(a))
+        printf(" est complet. \n");
+    else 
+        printf("n'est pas complet \n");
     return 0;
 }
 
