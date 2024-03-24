@@ -69,9 +69,7 @@ On considère la structure suivante :
         struct noeud * fg, * fd;
         } Noeud, * Arbre;
 
-vous devez écrire la fonction  : 
-
-    **int nb_feuilles(Arbre a)**
+vous devez écrire la fonction   **int nb_feuilles(Arbre a)**
 
 Qui calcul la nombre de feuille contenues dans l'arbre.
 PL:== */ 
