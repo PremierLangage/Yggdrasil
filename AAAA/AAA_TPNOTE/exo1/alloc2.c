@@ -29,6 +29,7 @@ typedef struct _arbre {
 
 int nbm=0;
 int ma[100];
+
 void* dralloc(int n){
     ma[nbm++]=n;
     return (void *) malloc(n);
