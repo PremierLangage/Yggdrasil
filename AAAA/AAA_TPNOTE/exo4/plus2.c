@@ -100,6 +100,14 @@ On considère la structure suivante :
     struct noeud * fg, * fd;
     } Noeud, * Arbre;
 
+
+
+Écrire une fonction **void affiche_niveau(Arbre a, int n)**
+qui affiche les noeuds de l'arbre au niveau n.
+
+
+
+
 Remarque: dans certains test la fonction 
 
     void printTree(Arbre a){
@@ -156,11 +164,8 @@ int affiche_hauteur(Arbre a, int h){
 }
 // PL:== 
 
-/* PL:text3==
-Écrire une fonction **void affiche_niveau(Arbre a, int n)**
-qui affiche les noeuds de l'arbre au niveau n.
-PL:== */ 
-// PL:sol3==
+
+// PL:solution==
 void affiche_niveau(Arbre a, int n){
    if (!a || n < 0)
        return ;
