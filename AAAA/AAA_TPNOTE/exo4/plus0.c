@@ -100,6 +100,12 @@ On considère la structure suivante :
     struct noeud * fg, * fd;
     } Noeud, * Arbre;
 
+Écrire une fonction **int plus_courte_branche(Arbre a)** 
+qui renvoie la longueur de la branche la plus courte de l'arbre.
+
+Celle-ci vas d'une feuille a la racine. 
+
+
 Remarque: dans certains test la fonction 
 
     void printTree(Arbre a){
@@ -114,13 +120,6 @@ Remarque: dans certains test la fonction
 
 est utilisé pour afficher les arbres pour vous aider au débugage. 
 
-PL:== */ 
-
-/* PL:text==
-Écrire une fonction **int plus_courte_branche(Arbre a)** 
-qui renvoie la longueur de la branche la plus courte de l'arbre.
-
-Celle-ci vas d'une feuille a la racine. 
 
 PL:== */ 
 
