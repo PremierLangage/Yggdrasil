@@ -222,8 +222,9 @@ int main(int argc, char const *argv[])
     srand(atoi(argv[1]));
     int taille=1;
     int i=atoi(argv[1]);
-    Arbre a;
-    if (i==0) a= unArbre();
+    Arbre a=NULL;
+    if (i==0) a= NULL;
+    else if (i==1) a= unArbre();
     else a = BuildTree(taille * (5*i),i % 2);
 
    if (taille < 20) 
@@ -233,28 +234,11 @@ int main(int argc, char const *argv[])
     }
     
 
-#define FUNCNUM 2
-#if FUNCNUM == 1
-            printf("Arbre %d la plus courte branche est de longueur %d\n",i, plus_courte_branche(a));
-
-#endif
-#if FUNCNUM == 3
-        if (taille > 20) a=BuildTree(taille,1);
-        printf("\nArbre °%d Taille %d ",i, taille);
-        printf("\nNiveau %d : ",i);
-        affiche_niveau(a,i);
-
-#endif
-#if FUNCNUM == 2
             printf("\nArbre °%d Taille %d ",i, taille);
             printf("\nHauteur %d : ",i);
             affiche_hauteur(a,i);
-#endif
-#if FUNCNUM == 4
-            printf("Arbre °%d est complet: %s\n",i, est_complet(a)?" Vrai ":" Faux ");
-#endif
 
-    }
+
 printf("\n");
     return 0;
 }
