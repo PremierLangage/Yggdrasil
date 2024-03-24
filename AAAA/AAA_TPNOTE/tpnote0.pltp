@@ -1,0 +1,41 @@
+
+
+
+
+
+title = TP NOTE 
+
+introduction ==
+
+Les exercices sont indépendants. Normalement ils sont de diffculté croissante, mais cela peut dépendre de vous donc ne bloquer pas sur un exercice, vous pouvez revenir sur un exo, pensez a utiliser le bouton sauvegarde.
+
+
+
+# Rappels
+Rappel vous n'avez pas le droit d'avoir un téléphone sur vous,(ou de tout autre dispositif de stockage d’émission ou de réception d’informations), pas de montres l'heure est accessible sur la machine.. 
+
+Pas de communications visuelles ou sonores avec votre voisin.
+
+
+# Extraits du règlement des examens
+
+Les étudiants ne conservent avec eux que le matériel autorisé pour l’épreuve. Les vêtements d’extérieur, sacs, porte-documents, cartables, doivent être déposés à l’entrée dans la salle. Il en est de même des téléphones portables (ou de tout autre dispositif de stockage d’émission ou de réception d’informations) qui doivent être éteints.
+L’identité de l’étudiant qui compose est vérifiée par la présentation de la carte d’étudiant ou, à défaut, d’une pièce avec photographie justifiant son identité.
+L’étudiant doit se présenter avant le début de l’épreuve (ouverture des enveloppes contenant le sujet). En cas de grève des transports ou d’intempéries, les surveillants ont la possibilité de retarder l’ouverture des enveloppes contenant les sujets.
+Le délai d'acceptation d'un étudiant retardataire pour une épreuve d'examen est de 1/3 de la durée de l’épreuve avec un maximum de 1 heure. A l’inverse, nul ne peut sortir de la salle d’examen avant ce délai. Un retard ne donne pas lieu à une compensation de durée de l’épreuve.
+
+
+**Les étudiants soupçonnés de fraude, de tentative de fraude ou de trouble à l'ordre public relèvent de la section disciplinaire de l’université.**
+
+
+## Le plagiat
+Il s’agit d’une forme de contrefaçon qui consiste, pour son auteur, à intégrer dans sa production (musique, livre ou tout document) l’intégralité ou des extraits de l’œuvre d’un autre auteur sans avoir obtenu son autorisation. Toutefois lorsque l’étudiant se borne à effectuer de « courtes citations » de textes, destinées à illustrer ses propos, l’autorisation de l’auteur n’est pas nécessaire. Il revient néanmoins à l’étudiant de citer cette source. Une reprise partielle ou intégrale des textes sans citation et sans guillemet est constitutive d’une fraude.
+
+==
+
+
+@ exo1/alloc0.pl
+@ exo2/ffauth0.pl
+@ exo3/binaire0.pl
+@ exo4/plus0.pl
+# @ plusdur.pl
