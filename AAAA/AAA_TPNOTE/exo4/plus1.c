@@ -221,11 +221,10 @@ int main(int argc, char const *argv[])
     }
     srand(atoi(argv[1]));
     int taille=1;
+    int i=atoi(argv[1]);
     Arbre a;
-    for(int i=0;i < 5 ; i++){
-        taille = (i+1)*10 + rand() % 10;
     if (i==0) a= unArbre();
-    else a = BuildTree(taille,1);
+    else a = BuildTree(taille * (5*i),1);
 
    if (taille < 20) 
     { printf("\nArbre °%d parcours préfixe : ",i);
@@ -264,7 +263,7 @@ printf("\n");
 
 
 /* PL:checks_args_stdin==
-[["Test1" ,["12"],""], ["Test2" ,["33"],""],["Test3" ,["3945"],""],["Test4" ,["1418"],""]]
+[["Test1" ,["1"],""], ["Test2" ,["2"],""],["Test3" ,["3"],""],["Test4" ,["4"],""]]
 PL:== */
 
 
