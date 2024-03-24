@@ -247,7 +247,7 @@ printf("\n");
 
 
 /* PL:checks_args_stdin==
-[["Test arbre vide " ,["1"],""], ["Test 8 Noeud" ,["2"],""],["Test 125" ,["3"],""],["Test plus" ,["4"],""]]
+[["Test arbre vide " ,["0"],""], ["Test 8 Noeud" ,["1"],""],["Test " ,["2"],""],["Test 125" ,["3"],""],["Test plus" ,["4"],""]]
 PL:== */
 
 
