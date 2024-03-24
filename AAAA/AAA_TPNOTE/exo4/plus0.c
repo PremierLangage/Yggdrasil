@@ -175,8 +175,6 @@ int main(int argc, char const *argv[])
      printTree(a);
      printf("\n");
     }
-    
-
 
     printf("Arbre %d la plus courte branche est de longueur %d\n",i, plus_courte_branche(a));
     printf("\n");
