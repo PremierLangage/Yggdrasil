@@ -71,28 +71,16 @@ On considère la structure suivante :
         struct noeud * fg, * fd;
         } Noeud, * Arbre;
 
-vous devez écrire la fonction   **int nb_fils_uniques(Arbre a)**
+vous devez écrire la fonction   **int est_strictement_binaire(Arbre a)**
 
-Qui calcul la nombre de feuille contenues dans l'arbre.
+Qui vérifie que l'arbre n'a que des Noeuds avec 0 ou 2 fils.
+
 PL:== */ 
 
 
 
 
 // PL:solution==
-int nb_fils_uniques(Arbre a){
-   if (!a)
-       return 0;
-   if (a->fg && a->fd)
-       return nb_fils_uniques(a->fg) + nb_fils_uniques(a->fd);
-   if (a->fg || a->fd)
-       return 1 + nb_fils_uniques(a->fg) + nb_fils_uniques(a->fd);
-   else
-       return 0;
-}
-// PL:== 
-
-// PL:sol4==
 int est_strictement_binaire(Arbre a){
    if (!a)
        return 1;
@@ -125,7 +113,7 @@ int main(int argc, char const *argv[])
 
 
 
-            printf("Arbre °%d Nombre de feuilles = %d\n",i, nb_fils_uniques(a));
+            printf("Arbre °%d Nombre de feuilles = %d\n",i, est_strictement_binaire(a));
 
     }
 
