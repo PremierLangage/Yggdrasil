@@ -1,9 +1,9 @@
 
 
 
-extends= splittemplate.pl
+extends= ../splittemplate.pl
 
-builder =@ bbefore.py
+builder =@ ../bbefore.py
 
 @ fifi1.c [sujet.c]
 
