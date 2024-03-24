@@ -113,7 +113,7 @@ int main(int argc, char const *argv[])
 
 
 
-            printf("Arbre °%d Nombre de feuilles = %d\n",i, est_strictement_binaire(a));
+            printf("Arbre °%d est strictement binaire = %s\n",i, est_strictement_binaire(a)? "Vrai" : "Faux");
 
     }
 
