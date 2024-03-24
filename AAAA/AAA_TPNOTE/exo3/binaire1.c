@@ -71,24 +71,15 @@ On considère la structure suivante :
 
 vous devez écrire la fonction  : 
 
-int hauteur(Arbre a)
+int nb_feuilles(Arbre a)
 
-Qui calcul la longueur du chemin le plus long de la racine à une feuille.
+Qui calcul la nombre de feuille contenues dans l'arbre.
 PL:== */ 
 
 
-// PL:solution ==
-int hauteur(Arbre a){
-   int g, d;
-   if (!a)
-       return -1;
-   g = hauteur(a->fg);
-   d = hauteur(a->fd);
-   return 1 + ((g > d)? g: d);
-}
-// PL:== 
 
-// PL:sol2==
+
+// PL:solution==
 int nb_feuilles(Arbre a){
    if (!a)
        return 0;
