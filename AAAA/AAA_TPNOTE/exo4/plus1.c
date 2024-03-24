@@ -270,8 +270,8 @@ PL:== */
 
 /* PL:aftersplit==
 import random
-VERSION=random.randint(1,4)
-cflags=[f"-DFUNCNUM={VERSION}"]
+VERSION=2
+
 
 solution = globals()["sol"+str(VERSION)]
 
