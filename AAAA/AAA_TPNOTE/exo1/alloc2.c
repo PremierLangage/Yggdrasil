@@ -117,8 +117,11 @@ int main(int argc, char const *argv[])
     Arbre *a = createTree(10);
     a = reallocTree(a,20);
 
+
+    printf("int t[]={");
     for(int i=0;i<10; i++)
-        printf("%d : %d \n",i,ma[i]);
+        printf("%d, ",i,ma[i]);
+    printf("};");
 
     if (ma[0]!=sizeof(Arbre)){
         printf("Erreur d'allocation 1\n");
