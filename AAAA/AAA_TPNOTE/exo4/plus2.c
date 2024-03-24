@@ -103,7 +103,7 @@ On considère la structure suivante :
 
 
 Écrire une fonction **void affiche_niveau(Arbre a, int n)**
-qui affiche les noeuds de l'arbre au niveau n.
+qui affiche les noeuds de l'arbre au niveau n. Niveau distance racine -> noeud.
 
 Remarque: dans certains test la fonction 
 
@@ -116,7 +116,6 @@ Remarque: dans certains test la fonction
         printTree(a->fd);
         }
     }
-
 est utilisé pour afficher les arbres. 
 
 PL:== */ 
