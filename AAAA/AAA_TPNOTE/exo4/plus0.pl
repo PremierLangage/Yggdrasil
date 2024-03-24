@@ -8,7 +8,7 @@ extends= splittemplate.pl
 
 builder =@ bbefore.py
 
-@ plusdur.c [sujet.c]
+@ plus0.c [sujet.c]
 
 title = qsfdsqd
 
