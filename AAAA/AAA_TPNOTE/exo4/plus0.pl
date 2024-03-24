@@ -10,7 +10,7 @@ builder =@ ../bbefore.py
 
 @ plus0.c [sujet.c]
 
-title = qsfdsqd
+title = Plus dur
 
 
 
