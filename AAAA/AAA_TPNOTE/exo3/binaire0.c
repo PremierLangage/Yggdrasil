@@ -68,9 +68,7 @@ On considère la structure suivante :
         struct noeud * fg, * fd;
         } Noeud, * Arbre;
 
-vous devez écrire la fonction  : 
-
-int hauteur(Arbre a)
+vous devez écrire la fonction **int hauteur(Arbre a)**
 
 Qui calcul la longueur du chemin le plus long de la racine à une feuille.
 PL:== */ 
