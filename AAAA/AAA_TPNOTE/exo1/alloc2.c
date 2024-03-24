@@ -115,7 +115,7 @@ PL:== */
 int main(int argc, char const *argv[])
 {
     Arbre *a = createTree(10);
-    a = reallocTree(a,20);
+
 
     int t[]={32, 40, 40, 80, 80, 80, 160, 0, 0, 0, };
 
@@ -130,6 +130,7 @@ int main(int argc, char const *argv[])
         exit(1);
         }
     }
+    a = reallocTree(a,20);
     for(int i=4;i<7;i++){
         if (ma[i]!=t[i]){
         printf("Erreur de réallocation 3\n");
