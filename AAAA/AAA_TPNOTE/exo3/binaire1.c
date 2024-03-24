@@ -3,7 +3,7 @@
 
 
 
-// PL:title= Echauffement un arbre binaire 
+// PL:title= nb_feuilles
 
 
 // PL:code_before==
