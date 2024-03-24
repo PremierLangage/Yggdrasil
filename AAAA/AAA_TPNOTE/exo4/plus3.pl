@@ -12,7 +12,7 @@ builder =@ ../bbefore.py
 
 @ plus3.c [sujet.c]
 
-title = Courrage
+title = Courage
 
 
 
