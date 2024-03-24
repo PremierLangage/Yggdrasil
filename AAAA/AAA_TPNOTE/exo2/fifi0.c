@@ -73,7 +73,7 @@ int  addTree(Arbre *a, int val){
         (*a)->frere = NULL;
         return 1;
     }
-    if (rand()%2)
+    if (rand()%3==1)
         return addTree(&(*a)->fils, val);
     else
         return addTree(&(*a)->frere, val);
