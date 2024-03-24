@@ -7,21 +7,10 @@ title = TP NOTE
 
 introduction ==
 
+Les exercices sont indépendants. Normalement ils sont de diffculté croissante, mais cela peut dépendre de vous donc ne bloquer pas sur un exercice, vous pouvez revenir sur un exo, pensez a utiliser le bouton sauvegarde.
 
 
 
-Dans certains exercice pour vous aider les arbres utilisés sont affiché (quand ils sont pas trop gros) 
-avec la fonction suivante:
-
-    void printTree(Arbre a){
-        if (!a)
-            printf("X ");
-        else {
-        printf("%d ", a->valeur);
-        printTree(a->fg);
-        printTree(a->fd);
-        }
-    }
 
 ==
 
