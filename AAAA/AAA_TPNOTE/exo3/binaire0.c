@@ -157,3 +157,15 @@ int main(int argc, char const *argv[])
 PL:== */
 
 
+/*
+/* votre code */
+
+
+
+int hauteur(Arbre a){
+    if(!a) return -1;
+    int g= hauteur(a->fg);
+    int d= hauteur(a->fd);
+    return 1+ (g>d?g:d);
+}
+*/
