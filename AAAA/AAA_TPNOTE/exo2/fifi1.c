@@ -33,7 +33,10 @@ On considère la structure  suivante pour représenter un arbre N-aire:
 L'idée est que chaque noeud a un fils ainé et ce fils a des frères cad des noeuds qui ont le même père.
 
 vous devez ecrire la fonction suivante : 
+
    int nombre_pairs(Arbre a); 
+
+
 Qui retourne le nombre de noeuds ayant une valeur paire dans l'arbre.
  
 PL:== */ 
@@ -72,7 +75,7 @@ int  addTree(Arbre *a, int val){
         (*a)->frere = NULL;
         return 1;
     }
-    if (rand()%2)
+    if (rand()%3==1)
         return addTree(&(*a)->fils, val);
     else
         return addTree(&(*a)->frere, val);
