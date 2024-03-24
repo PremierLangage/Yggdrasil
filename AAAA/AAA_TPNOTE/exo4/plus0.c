@@ -119,8 +119,11 @@ PL:== */
 /* PL:text1==
 Écrire une fonction **int plus_courte_branche(Arbre a)** 
 qui renvoie la longueur de la branche la plus courte de l'arbre.
+
+Celle-ci vas d'une feuille a la racine. 
+
 PL:== */ 
-// PL:sol1==
+// PL:solution==
 int plus_courte_branche(Arbre a){
    int g, d;
    if (!a)
