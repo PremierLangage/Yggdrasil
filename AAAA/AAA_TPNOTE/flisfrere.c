@@ -32,10 +32,9 @@ On considère la structure  suivante pour représenter un arbre N-aire:
 L'idée est que chaque noeud a un fils ainé et ce fils a des frères cad des noeuds qui ont le même père.
 
 vous devez ecrire la fonction suivante : 
-Compter le nombre de noeuds ayant une valeur impaire dans l'arbre.
-    int nb_impairs(Arbre a); 
-
-
+   int nb_impairs(Arbre a); 
+Qui retourne le nombre de noeuds ayant une valeur impaire dans l'arbre.
+ 
 PL:== */ 
 
 
