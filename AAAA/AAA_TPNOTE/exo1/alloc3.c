@@ -66,7 +66,6 @@ On considère less structures suivantes pour représenter un arbre binaire:
 
 vous devez ecrire les deux fonctions:
 
-
 - une fonction **Arbre *createTree(int n)** qui alloue un arbre de taille N 
 - une fonction **Arbre \*reallocTree(Arbre *a, int n)** qui réalloue à la taille N l'arbre passé en parametre.
 
