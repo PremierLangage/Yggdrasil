@@ -171,7 +171,7 @@ int main(int argc, char const *argv[])
     else a = BuildTree(taille,1);
 
    if (taille < 20) 
-    { printf("\nArbre °%d parcours préfixe : ",i);
+    { printf("\nArbre °%d PrintTree: ",i);
      printTree(a);
      printf("\n");
     }
