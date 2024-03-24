@@ -5,7 +5,7 @@
 
 
 
-// PL:title= Echauffement un arbre binaire 
+// PL:title= est_strictement_binaire
 
 
 // PL:code_before==
