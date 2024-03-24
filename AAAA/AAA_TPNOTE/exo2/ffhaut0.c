@@ -116,7 +116,7 @@ int main(int argc, char const *argv[])
         case 2:
             srand(atoi(argv[2]));
             a = BuildRandomTree(atoi(argv[3]));
-            printf("Hauteur d'un arbre %d\n",hauteur(a));
+            printf("Hauteur de l'arbre :%d\n",hauteur(a));
             break;
     }
 
