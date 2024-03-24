@@ -10,7 +10,8 @@ introduction ==
 
 
 
-Dans certains exercice pour vous aider les arbres utilisés sont affiché (quand ils sont pas trop gros) avec la fonction suivante:
+Dans certains exercice pour vous aider les arbres utilisés sont affiché (quand ils sont pas trop gros) 
+avec la fonction suivante:
 
     void printTree(Arbre a){
         if (!a)
