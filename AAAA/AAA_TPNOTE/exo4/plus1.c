@@ -220,7 +220,7 @@ int main(int argc, char const *argv[])
         return 1;
     }
     srand(atoi(argv[1]));
-    int taille=1;
+    int taille=2;
     int i=atoi(argv[1]);
     Arbre a=NULL;
     if (i==0) a= NULL;
@@ -234,9 +234,9 @@ int main(int argc, char const *argv[])
     }
     
 
-            printf("\nArbre °%d Taille %d ",i, taille);
-            printf("\nHauteur %d : ",i);
-            affiche_hauteur(a,i);
+            printf("\nArbre °%d Taille %d ",i, taille * (5*i));
+            printf("\nHauteur %d : ",2);
+            affiche_hauteur(a,2);
 
 
 printf("\n");
