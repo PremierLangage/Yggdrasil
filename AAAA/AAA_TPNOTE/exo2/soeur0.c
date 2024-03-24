@@ -106,12 +106,12 @@ int main(int argc, char const *argv[])
     switch(atoi(argv[1])){
         case 1: 
             a = NULL;
-            printf("Nombre de valeurs soeurs %d\n",nombre_soeurs(a));
+            printf("Nombre de soeurs %d\n",nombre_soeurs(a));
             break;
         case 2:
             srand(atoi(argv[2]));
             a = BuildRandomTree(atoi(argv[3]));
-            printf("Nombre de valeurs soeurs %d\n",nombre_soeurs(a));
+            printf("Nombre de soeurs %d\n",nombre_soeurs(a));
             break;
     }
 
