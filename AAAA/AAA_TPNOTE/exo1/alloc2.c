@@ -51,15 +51,16 @@ void *clloc(size_t x, size_t y){
 // PL:==
 
 /* PL:text==
-On considère la structure suivantes pour représenter un arbre binaire:
+On considère less structures suivantes pour représenter un arbre binaire:
 
+    typedef struct truc Truc; // définie dans un autre fichier.
 
     typedef struct _arbre {
         int taille;
         int currentSize;
         int  * filsgauche;
         int  * filsdroits;
-        int  * valeurs;
+        Truc  ** valeurs;
     } Arbre;
 
 
