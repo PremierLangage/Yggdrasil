@@ -6,7 +6,7 @@
 
 title = TP NOTE 
 
-introduction ==
+introduction==
 
 Les exercices sont indépendants. Normalement ils sont de diffculté croissante, mais cela peut dépendre de vous donc ne bloquer pas sur un exercice, vous pouvez revenir sur un exo, pensez a utiliser le bouton sauvegarde.
 
@@ -34,7 +34,6 @@ Il s’agit d’une forme de contrefaçon qui consiste, pour son auteur, à int�
 
 ==
 
-==
 
 @ exo1/alloc2.pl
 @ exo2/fifi0.pl
