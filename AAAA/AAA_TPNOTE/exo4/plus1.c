@@ -154,7 +154,7 @@ int affiche_hauteur(Arbre a, int h){
        printf("%d ", a->valeur);
     return lh;
 }
-
+// PL:== 
 
 /* PL:text3==
 Écrire une fonction **void affiche_niveau(Arbre a, int n)**
