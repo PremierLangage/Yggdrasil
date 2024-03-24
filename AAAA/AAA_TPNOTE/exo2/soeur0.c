@@ -64,7 +64,7 @@ int  nombre_soeurs(Arbre a){
 int nombre_pairs(Arbre a){
     if (!a)
         return 0;
-    return 1+ nombre_pairs(a->fils) + nombre_pairs(a->frere);
+    return 1+ nombre_pairs(a->fille) + nombre_pairs(a->soeur);
 }
 
 PL:== */
@@ -76,14 +76,14 @@ int  addTree(Arbre *a, int val){
     if (!*a){
         *a = malloc(sizeof(Noeud));
         (*a)->valeur = val;
-        (*a)->fils = NULL;
-        (*a)->frere = NULL;
+        (*a)->fille = NULL;
+        (*a)->soeur = NULL;
         return 1;
     }
-    if (rand()%2)
-        return addTree(&(*a)->fils, val);
+    if (rand()%3==1)
+        return addTree(&(*a)->fille, val);
     else
-        return addTree(&(*a)->frere, val);
+        return addTree(&(*a)->soeur, val);
 }
 
 
@@ -93,7 +93,7 @@ Arbre BuildRandomTree(int n){
     Arbre a = malloc(sizeof(Noeud));
     a->valeur = rand() % 100;
     for (int i=0; i<n; i++)
-        addTree(&(a->fils), rand()%100);
+        addTree(&(a->fille), rand()%100);
     return a;
 }
 
