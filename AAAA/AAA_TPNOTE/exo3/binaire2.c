@@ -4,8 +4,7 @@
 
 
 
-// PL:title= Echauffement un arbre binaire 
-
+// PL:title= nb_fils_uniques
 
 // PL:code_before==
 #include <stdio.h>
