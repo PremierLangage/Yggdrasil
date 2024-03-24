@@ -71,7 +71,7 @@ On considère la structure suivante :
 
 vous devez écrire la fonction  : 
 
-int nb_feuilles(Arbre a)
+    **int nb_feuilles(Arbre a)**
 
 Qui calcul la nombre de feuille contenues dans l'arbre.
 PL:== */ 
@@ -127,7 +127,7 @@ int main(int argc, char const *argv[])
                     break;
             case 3: a= BuildTree(25);break;
             case 4: a= BuildTree(100); break;
-            case 5: a= BuildTree(100); break;
+            case 5: a= BuildTree(300); break;
         }
      
 
