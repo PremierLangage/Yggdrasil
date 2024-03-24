@@ -105,9 +105,6 @@ On considère la structure suivante :
 Écrire une fonction **void affiche_niveau(Arbre a, int n)**
 qui affiche les noeuds de l'arbre au niveau n.
 
-
-
-
 Remarque: dans certains test la fonction 
 
     void printTree(Arbre a){
