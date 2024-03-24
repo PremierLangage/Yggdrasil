@@ -6,7 +6,7 @@ extends= ../splittemplate.pl
 
 builder =@ ../bbefore.py
 
-@ alloc2.c [sujet.c]
+@ alloc3.c [sujet.c]
 
 title = Allocation 
 
