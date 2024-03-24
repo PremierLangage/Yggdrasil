@@ -134,7 +134,7 @@ int main(int argc, char const *argv[])
         }
     }
     for(int i=4;i<7;i++){
-        if (ma[i]!=t[i]{
+        if (ma[i]!=t[i]){
         printf("Erreur de réallocation 3\n");
         exit(1);
         }
