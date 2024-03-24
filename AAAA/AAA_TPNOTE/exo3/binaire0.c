@@ -2,7 +2,7 @@
 
 
 
-// PL:title= Echauffement un arbre binaire 
+// PL:title= hauteur
 
 
 // PL:code_before==
