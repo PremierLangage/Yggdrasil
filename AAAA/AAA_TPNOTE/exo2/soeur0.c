@@ -36,7 +36,7 @@ cad des noeuds qui ont la même mère.
 
 Vous devez écrire la fonction suivante : 
 
-   int nombre_soeurs(Arbre a); 
+   **int nombre_soeurs(Arbre a);**
 
 Qui retourne la somme des nombres de soeurs de chaque fille ainée.
 
