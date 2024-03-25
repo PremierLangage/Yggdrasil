@@ -85,39 +85,6 @@ int hauteur(Arbre a){
 }
 // PL:== 
 
-// PL:sol2==
-int nb_feuilles(Arbre a){
-   if (!a)
-       return 0;
-   if (a->fg==NULL && a->fd == NULL)
-       return 1;
-   return nb_feuilles(a->fg) + nb_feuilles(a->fd);
-}
-// PL:== 
-
-// PL:sol3==
-int nb_fils_uniques(Arbre a){
-   if (!a)
-       return 0;
-   if (a->fg && a->fd)
-       return nb_fils_uniques(a->fg) + nb_fils_uniques(a->fd);
-   if (a->fg || a->fd)
-       return 1 + nb_fils_uniques(a->fg) + nb_fils_uniques(a->fd);
-   else
-       return 0;
-}
-// PL:== 
-
-// PL:sol4==
-int est_strictement_binaire(Arbre a){
-   if (!a)
-       return 1;
-   if ((!a->fg && a->fd) || (a->fg && !a->fd))
-       return 0;
-   return est_strictement_binaire(a->fg) && est_strictement_binaire(a->fd);
-}
-// PL:== 
-
 // PL:code_after==
 int main(int argc, char const *argv[])
 {
