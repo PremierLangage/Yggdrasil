@@ -83,6 +83,9 @@ int hauteur(Arbre a){
    d = hauteur(a->fd);
    return 1 + ((g > d)? g: d);
 }
+
+
+
 // PL:== 
 
 // PL:code_after==
