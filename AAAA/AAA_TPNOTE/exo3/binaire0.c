@@ -121,16 +121,3 @@ int main(int argc, char const *argv[])
 [["Test1 vide" ,["1", "12"],"1"], ["Test2 arbre une feuille" ,["2","33"],"2"],["Test3" ,["3","3945"],""],["Test4" ,["4", "1418"],""],["Test5" ,["4", "78"],""],["Test6" ,["4", "10"],""]]
 PL:== */
 
-
-/*
-
-
-
-
-int hauteur(Arbre a){
-    if(!a) return -1;
-    int g= hauteur(a->fg);
-    int d= hauteur(a->fd);
-    return 1+ (g>d?g:d);
-}
-*/
