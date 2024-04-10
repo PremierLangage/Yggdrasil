@@ -1,11 +1,11 @@
 
-
+@ /builder/before.py
 
 title=Description
 text=test pour afficher la seed
 form=coucou
 type=description
-evaluator==
+before==
 text = seed
 ==
 grader==
