@@ -1,5 +1,5 @@
 
-@ /builder/before.py
+builder =@ /builder/before.py
 
 title=Description
 text=test pour afficher la seed
