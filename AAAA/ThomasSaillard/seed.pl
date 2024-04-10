@@ -1,7 +1,11 @@
 
 title=Description
-text=test pour afficher la seeed
+text=test pour afficher la seed
 type=description
-evaluator==
+builder==
 text = seed
 ==
+evaluator==
+
+==
+
