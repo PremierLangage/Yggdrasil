@@ -44,14 +44,15 @@ def splitcode(arg):
                     name =  (line.strip())[6:-2]
                     # print(f"Starting info state :<{name}>")
                     multi="\n"
-                elif line.startswith("// PL:") and not "==" in line:
-                    name,value = splitLine(line)
-                    dict[name]= value
-                elif line.startswith("// PL:"):
-                    state= "code"
-                    name =  line[6:-3]
-                    # print(f"Starting code state :<{name}>")
-                    multi="\n"
+                elif line.startswith("// PL:"): 
+                    if not "==" in line:
+                        name,value = splitLine(line)
+                        dict[name]= value
+                    else:
+                        state= "code"
+                        name =  line[6:-3]
+                        # print(f"Starting code state :<{name}>")
+                        multi="\n"
                 continue                
             elif state == "info":        
                 if line.startswith("PL:== */"):
