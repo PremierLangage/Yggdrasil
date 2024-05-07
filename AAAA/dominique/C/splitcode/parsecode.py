@@ -20,6 +20,16 @@ import re
 import sys
 
 
+
+def splitLine(line):
+    line = line.strip()
+    name,value = line[6:].split("=",1)
+    name = name.strip()
+    value = value.strip()
+
+    return name,value
+
+
 def splitcode(arg):
     state = None
     dict={"error":" no "}
