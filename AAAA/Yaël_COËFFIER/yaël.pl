@@ -12,17 +12,17 @@ def somme(l):
     return sum(l)
 
 l = []
-a = input()
-while a:
+n = int(input())
+for i in range(n):
+    a = int(input())
     l.append(a)
-    a = input()
 
 print(somme(l))
 ==
 
 mplsoluce0==
 monpremiertest
-2
+3
 4
 6
 8
