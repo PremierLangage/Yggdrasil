@@ -29,6 +29,7 @@ monpremiertest
 ==
 
 before ==
+from random import randint
 mplsoluce1 = "test aléatoire\n"
 n = randint(2, 12)
 mplsoluce1 += str(n) + "\n"
