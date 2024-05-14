@@ -14,6 +14,8 @@ def somme(l):
 l = []
 while a:=int(input()):
     l.append(a)
+
+print(somme(l))
 ==
 
 mplsoluce0==
