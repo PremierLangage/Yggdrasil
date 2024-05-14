@@ -5,3 +5,8 @@ title = Bob
 text ==
 Ecrire une fonction somme() qui prend une liste et qui retourne la somme des éléments de la liste.
 ==
+
+soluce ==
+def somme(l):
+    return sum(l)
+==
