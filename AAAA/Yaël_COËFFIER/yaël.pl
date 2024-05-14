@@ -12,10 +12,20 @@ def somme(l):
     return sum(l)
 
 l = []
-while a:=int(input()):
+a = input()
+while a:
     l.append(a)
+    a = input()
 
 print(somme(l))
 ==
 
 mplsoluce0==
+monpremiertest
+2
+4
+6
+8
+==
+
+before =
