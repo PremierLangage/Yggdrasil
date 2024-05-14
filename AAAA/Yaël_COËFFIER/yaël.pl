@@ -28,4 +28,9 @@ monpremiertest
 8
 ==
 
-before =
+before ==
+mplsoluce1 = "test aléatoire\n"
+n = randint(2, 12)
+mplsoluce1 += str(n) + "\n"
+for i in range(n):
+    mplsoluce1 += str(randint(100, 2000)) + "\n"
