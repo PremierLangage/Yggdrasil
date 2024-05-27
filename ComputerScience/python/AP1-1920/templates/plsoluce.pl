@@ -40,6 +40,7 @@ pour avoir une entrée multi ligne
 settings.requirements=title,text,soluce
 
 # une interface standard d'exercice avec un editeur pour la réponse
+title="oui"
 form=@ /python/form/editorform.html
 
 settings.allow_reroll=1
