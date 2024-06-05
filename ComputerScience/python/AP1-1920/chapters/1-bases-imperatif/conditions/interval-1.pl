@@ -1,5 +1,5 @@
 
 extends= interval_inputs.pl
 
-niveau % 1
+niveau % 2
 
