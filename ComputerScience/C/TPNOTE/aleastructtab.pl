@@ -1,9 +1,10 @@
 
 
-
+title=Exo3
 
 
 extends = ./template/splitstructalea.pl
+
 
 
 @ aleastructtab.c [sujet.c]
@@ -14,5 +15,4 @@ editor.code==
 
 
 ==
-
 

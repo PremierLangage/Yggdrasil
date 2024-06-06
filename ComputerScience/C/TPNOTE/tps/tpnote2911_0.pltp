@@ -1,17 +1,16 @@
 
 
 
-title= TP NOTE 0    29 Novembre 2023 
+title= TP NOTE 0    29 Novembre 23 
 
-introduction==
+extends = /AAAA/dominique/C/splitcode/tpnote.pltp
 
-
-
-
-==
 
 @ ../eval_f/eval_f0.pl
 
 @ ../struct/struct0.pl
 
+@ ../structtab/struct_tab0.pl
+
+@ /AAAA/dominique/C/splitcode/tableautri2.pl
 

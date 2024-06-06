@@ -4,4 +4,4 @@ extends= splittemplate.pl
 @ tableautri.c [sujet.c]
 
 
-title= Tableau Trié Insertion 
+title= Tableau Trié Insertion croissant 

@@ -2,13 +2,12 @@
 
 
 
-
 extends= splittemplate.pl
 
 builder =@ bbefore.py
 
-@ alloc0.c [sujet.c]
+@ pasfacile.c [sujet.c]
 
-title = Allocation 
+title = EUh ?
 
 

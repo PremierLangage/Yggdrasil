@@ -1,6 +1,9 @@
 
 
 
+
+title= Exo1
+
 extends = template/splitwithalea.pl
 
 

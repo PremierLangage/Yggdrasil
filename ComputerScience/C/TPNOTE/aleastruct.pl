@@ -1,6 +1,6 @@
 
 
-
+title= Exo2
 
 extends = ./template/splitstructalea.pl
 

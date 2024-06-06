@@ -2,7 +2,6 @@
 
 
 
-
 extends=/ComputerScience/C/template/std_progC17_clang.pl
 
 @ parsecode.py 
@@ -13,25 +12,18 @@ editor.code==
 ==
 
 
-
-before_splitcode==
-from parsecode import splitcode,splitwithre
+beforeA==
+from parsecode import splitcode
 
 keys = ""
 
 
-for k,v in splitwithre("sujet.c").items():
+for k,v in splitcode("sujet.c").items():
     keys += " "+ str(k)
     globals()[k]=v
 
-
-
-
-
-# raise Exception(keys)
-
-
-
-
+#raise Exception(keys)
+if 'aftersplit' in globals() :
+    exec(aftersplit)
 ==
 
