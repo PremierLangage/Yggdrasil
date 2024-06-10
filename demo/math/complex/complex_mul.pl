@@ -13,8 +13,9 @@ On considère les nombres complexes $! z_1 = {{ z1|latex }} !$ et $! z_2 = {{ z2
 Calculer $! z_1 \times z_2 !$ (sous forme algébrique).
 ==
 
-#complex_form = cartesian
+complex_form = cartesian
 
 solution ==
 $! z_1 \times z_2  = ( {{ z1|latex }} ) \times ( {{ z2|latex }} ) = {{ sol|latex }} !$
 ==
+
