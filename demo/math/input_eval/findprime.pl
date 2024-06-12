@@ -31,6 +31,6 @@ else:
         score = 0
         feedback = "La réponse doit être un nombre premier."
     else:
-        score = 96
+        score = 100
         feedback = "ouoiuoi"
 ==
