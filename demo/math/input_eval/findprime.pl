@@ -12,6 +12,7 @@ Donner un nombre premier compris entre {{ a }} et {{ b }} (au sens large).
 ==
 
 evaluator ==
+from random import randint
 from latex2sympy import latex2sympy
 from sympy import isprime
 
