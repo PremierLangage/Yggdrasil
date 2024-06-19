@@ -1,4 +1,4 @@
- @ /AAAA/ThomasSaillard/lesTests/aventurier.jpg
+@ /AAAA/ThomasSaillard/lesTests/aventurier.jpg
 
 
 title = Les tests 
