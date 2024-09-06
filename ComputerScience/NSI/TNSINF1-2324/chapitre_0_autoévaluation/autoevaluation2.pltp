@@ -18,24 +18,24 @@ Si un exercice vous semble faux vous pouvez demander de l'aide à M. Brunache et
 
 # Création de liste
 @ ../../Banque_Exercices/5_listes/premiers_entiers-2122.pl
-@ ../../Banque_Exercices/4_listes_repete-2122.pl
+@ ../../Banque_Exercices/5_listes/repete-2122.pl
 
 # Parcours des éléments de liste
-@ ../../Banque_Exercices/4_listes_existe_impair-2122.pl
-@ ../../Banque_Exercices/4_listes_liststat-2122.pl
+@ ../../Banque_Exercices/5_listes/existe_impair-2122.pl
+@ ../../Banque_Exercices/5_listes/liststat-2122.pl
 
 # Construction de liste
-@ ../../Banque_Exercices/4_listes_extends-2122.pl
-@ ../../Banque_Exercices/4_listes_pair_impair-2122.pl
-@ ../../Banque_Exercices/4_listes_plat-allergie-2122.pl
+@ ../../Banque_Exercices/5_listes/extends-2122.pl
+@ ../../Banque_Exercices/5_listes/pair_impair-2122.pl
+@ ../../Banque_Exercices/5_listes/plat-allergie-2122.pl
 
 # Manipulation de liste par référence
-@ ../../Banque_Exercices/4_listes_ajoute_liste-2122.pl
-@ ../../Banque_Exercices/4_listes_remplace_pair-2122.pl
-@ ../../Banque_Exercices/4_listes_supprime_pair-2122.pl
+@ ../../Banque_Exercices/5_listes/ajoute_liste-2122.pl
+@ ../../Banque_Exercices/5_listes/remplace_pair-2122.pl
+@ ../../Banque_Exercices/5_listes/supprime_pair-2122.pl
 
 # Un peu d'algo (algo??) sur les listes 
-@ ../../Banque_Exercices/4_listes_doublons-2122.pl
+@ ../../Banque_Exercices/5_listes/doublons-2122.pl
 
 # Exos durs (math, algo, ...)
 # @ ../../Banque_Exercices/4_listes__difficle.pl
