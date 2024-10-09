@@ -29,7 +29,7 @@ def strfromz(Z):
             else:
                 s=s+orbitales[indice]+str(Z)
                 Z=0
-            indice+=1    
+            indice+=1
     return s
 
 import sys
