@@ -81,7 +81,7 @@ try:
         grade = (100, success_feedback)
     else :
         grade = (0, failure_feedback)
-        print("Réessayez avec le nouvel élément donné ci-dessus")
+        print("Réessayez avec le nouvel élément donné ci-dessus", file=sys.stderr)
     exec(before)
 except:
     print(traceback.format_exc(), file=sys.stderr)
