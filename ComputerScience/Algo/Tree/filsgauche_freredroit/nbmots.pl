@@ -31,7 +31,7 @@ On représente un lexique avec un arbre fils gauche frère droit. On utilise le 
         char lettre;
         struct noeud *filsg,*frered;
 }Noeud,*Arbre;
-Les noeuds freressont ordonnés dans l'ordre ascii,  
+Les noeuds freres sont ordonnés dans l'ordre ascii,  
 On ne traite  pas les accents- on confond "interne" et "interné"
 un mot est une suite de moins de 257 caratères (telle que lue par scanf("%256s,mot))
 Le caratère de fin de mot est conservé dans l'arbre.
