@@ -56,7 +56,7 @@ Egaux <=> même forme même valeurs sur les noeuds.
 # Arbinaires de recherche 
 
 Pour les algo de recherche il faut toujours qu'il y ai une option d'appel de la fonction 
-qui affiche les valeur des noeuds visités. Ce qui permet de vérifier la complexité.
+qui affiche les valeurs des noeuds visités. Ce qui permet de vérifier la complexité.
 
 ## Ajouter 
 
@@ -64,7 +64,7 @@ qui affiche les valeur des noeuds visités. Ce qui permet de vérifier la comple
 
 ## Contient une valeur 
 
-Vérifier que la complexité est la bonnne en faisant afficher les noeuds visité.
+Vérifier que la complexité est la bonnne en faisant afficher les noeuds visités.
 
 
 ## Vérifirer qu'un arbre binaire est de recherche
@@ -85,14 +85,14 @@ Complex a étudier :)
 
 # Arbres lexicographiques 
 
-le caractère de fin de mot doit être stocké dans l'arbre et c'est le plus peti dans l'ordre
+le caractère de fin de mot doit être stocké dans l'arbre et c'est le plus petit dans l'ordre alphabétique
 
 
 ## Fils gauche & frère droits 
 
-Frère droits ordonnées
+Frère droits ordonnées avec les lexicographiques
 
-# Ternaire de recherche 
+# Lexicorgraphiques Ternaire de recherche 
 
 La ième lettre est égale a la lettre du noeud descend au milieux 
 Si plus petit a gauche si plus grand a droite 
